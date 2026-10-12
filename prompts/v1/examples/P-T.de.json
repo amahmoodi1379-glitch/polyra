@@ -1,0 +1,164 @@
+{
+  "texts": [
+    {
+      "code": "de-a1-t001",
+      "title": "In der Bäckerei",
+      "kind": "dialogue",
+      "level": "A1",
+      "band": 1,
+      "placement_ok": false,
+      "sentences": [
+        {
+          "speaker": "A",
+          "text": "Guten Morgen! Was möchten Sie?",
+          "tts_text": null,
+          "translation_fa": "صبح بخیر! چه می‌خواهید؟",
+          "tokens": [
+            { "surface": "Guten Morgen", "kind": "word", "code": "guten Morgen", "meaning_fa": "صبح بخیر" },
+            { "surface": "Was", "kind": "word", "code": "was", "meaning_fa": "چه" },
+            { "surface": "möchten", "kind": "word", "code": "möchten", "meaning_fa": "می‌خواهید" },
+            { "surface": "Sie", "kind": "word", "code": "Sie", "meaning_fa": "شما (رسمی)" }
+          ]
+        },
+        {
+          "speaker": "B",
+          "text": "Ich möchte zwei Brötchen, bitte.",
+          "tts_text": null,
+          "translation_fa": "دو تا نان کوچک می‌خواهم، لطفاً.",
+          "tokens": [
+            { "surface": "Ich", "kind": "word", "code": "ich", "meaning_fa": "من" },
+            { "surface": "möchte", "kind": "word", "code": "möchten", "meaning_fa": "می‌خواهم" },
+            { "surface": "zwei", "kind": "word", "code": "zwei", "meaning_fa": "دو" },
+            { "surface": "Brötchen", "kind": "word", "code": "Brötchen", "meaning_fa": "نان کوچک" },
+            { "surface": "bitte", "kind": "word", "code": "bitte", "meaning_fa": "لطفاً" }
+          ]
+        },
+        {
+          "speaker": "A",
+          "text": "Sonst noch etwas?",
+          "tts_text": null,
+          "translation_fa": "چیز دیگری هم می‌خواهید؟",
+          "tokens": [
+            { "surface": "Sonst", "kind": "word", "code": "sonst", "meaning_fa": "دیگر" },
+            { "surface": "noch", "kind": "word", "code": "noch", "meaning_fa": "هم" },
+            { "surface": "etwas", "kind": "word", "code": "etwas", "meaning_fa": "چیزی" }
+          ]
+        },
+        {
+          "speaker": "B",
+          "text": "Ja, einen Kaffee mit Milch.",
+          "tts_text": null,
+          "translation_fa": "بله، یک قهوه با شیر.",
+          "tokens": [
+            { "surface": "Ja", "kind": "word", "code": "ja", "meaning_fa": "بله" },
+            { "surface": "einen", "kind": "word", "code": "ein", "meaning_fa": "یک" },
+            { "surface": "Kaffee", "kind": "word", "code": "Kaffee", "meaning_fa": "قهوه" },
+            { "surface": "mit", "kind": "word", "code": "mit", "meaning_fa": "با" },
+            { "surface": "Milch", "kind": "word", "code": "Milch", "meaning_fa": "شیر" }
+          ]
+        },
+        {
+          "speaker": "A",
+          "text": "Das macht 4 Euro 50.",
+          "tts_text": "Das macht vier Euro fünfzig.",
+          "translation_fa": "می‌شود چهار یورو و پنجاه سنت.",
+          "tokens": [
+            { "surface": "Das", "kind": "word", "code": "das", "meaning_fa": "این" },
+            { "surface": "macht", "kind": "word", "code": "machen", "meaning_fa": "می‌شود" },
+            { "surface": "4", "kind": "number", "code": null, "meaning_fa": "چهار" },
+            { "surface": "Euro", "kind": "word", "code": "Euro", "meaning_fa": "یورو" },
+            { "surface": "50", "kind": "number", "code": null, "meaning_fa": "پنجاه (سنت)" }
+          ]
+        },
+        {
+          "speaker": "B",
+          "text": "Hier, bitte. Danke und tschüss!",
+          "tts_text": null,
+          "translation_fa": "بفرمایید. ممنون و خداحافظ!",
+          "tokens": [
+            { "surface": "Hier", "kind": "word", "code": "hier", "meaning_fa": "اینجا" },
+            { "surface": "bitte", "kind": "word", "code": "bitte", "meaning_fa": "بفرمایید" },
+            { "surface": "Danke", "kind": "word", "code": "danke", "meaning_fa": "ممنون" },
+            { "surface": "und", "kind": "word", "code": "und", "meaning_fa": "و" },
+            { "surface": "tschüss", "kind": "word", "code": "tschüss", "meaning_fa": "خداحافظ" }
+          ]
+        },
+        {
+          "speaker": "A",
+          "text": "Danke, schönen Tag noch!",
+          "tts_text": null,
+          "translation_fa": "ممنون، روز خوبی داشته باشید!",
+          "tokens": [
+            { "surface": "Danke", "kind": "word", "code": "danke", "meaning_fa": "ممنون" },
+            { "surface": "schönen", "kind": "word", "code": "schön", "meaning_fa": "خوب" },
+            { "surface": "Tag", "kind": "word", "code": "Tag", "meaning_fa": "روز" },
+            { "surface": "noch", "kind": "word", "code": "noch", "meaning_fa": "(در ادامه)" }
+          ]
+        }
+      ],
+      "key_words": ["Brötchen"],
+      "question_sets": {
+        "reading": {
+          "A": [
+            {
+              "type": "mcq",
+              "prompt": "مشتری چند نان کوچک می‌خرد؟",
+              "options": ["یکی", "دو تا", "سه تا", "چهار تا"],
+              "correct": 1,
+              "explanation_fa": "مشتری می‌گوید: «Ich möchte zwei Brötchen.»"
+            },
+            {
+              "type": "find",
+              "prompt": "کدام جمله قیمت را می‌گوید؟",
+              "correct_sentence": 4,
+              "explanation_fa": "در «Das macht 4 Euro 50.» قیمت آمده."
+            }
+          ],
+          "B": [
+            {
+              "type": "tf",
+              "prompt": "مشتری قهوه را بدون شیر می‌خواهد.",
+              "correct": false,
+              "explanation_fa": "مشتری می‌گوید: «einen Kaffee mit Milch»، یعنی با شیر."
+            },
+            {
+              "type": "order",
+              "prompt": "این اتفاق‌ها را به ترتیب متن مرتب کن.",
+              "items": ["مشتری قهوه می‌خواهد.", "فروشنده قیمت را می‌گوید.", "فروشنده سلام می‌کند.", "مشتری نان سفارش می‌دهد."],
+              "correct_order": [2, 3, 0, 1],
+              "explanation_fa": "اول سلام، بعد نان، بعد قهوه و آخر قیمت."
+            }
+          ]
+        },
+        "listening": {
+          "A": [
+            {
+              "type": "num",
+              "prompt": "مشتری چقدر پول می‌دهد؟",
+              "answer": "4,50",
+              "accepted": ["4,50", "4.50", "4,50 €", "4 Euro 50"],
+              "explanation_fa": "فروشنده می‌گوید: «Das macht 4 Euro 50.»"
+            },
+            {
+              "type": "mcq",
+              "prompt": "مشتری غیر از نان چه می‌خواهد؟",
+              "options": ["آب", "قهوه با شیر", "چای", "قهوه بدون شیر"],
+              "correct": 1,
+              "explanation_fa": "مشتری می‌گوید: «einen Kaffee mit Milch»."
+            }
+          ],
+          "B": [
+            { "type": "dict", "sentence": 2 },
+            {
+              "type": "tf",
+              "prompt": "فروشنده در آخر برای مشتری روز خوبی آرزو می‌کند.",
+              "correct": true,
+              "explanation_fa": "فروشنده می‌گوید: «schönen Tag noch»."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "issues": []
+}

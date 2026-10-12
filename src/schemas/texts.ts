@@ -1,8 +1,11 @@
 import { z } from "zod";
 import { filled, issues, levelCode, optionalText, sentenceCore } from "./common";
 
-/** One question of a text (PRD §14.3). Indexes start at 0. Cross-field rules are checked on import. */
-const explanation = { explanation_fa: optionalText };
+/**
+ * One question of a text (PRD §14.3). Indexes start at 0. Cross-field rules are checked on import.
+ * `prompt_fa` is the Persian translation of a band 3 or 4 question, which the learner can open (§7.3).
+ */
+const explanation = { explanation_fa: optionalText, prompt_fa: optionalText };
 export const question = z.discriminatedUnion("type", [
   z.object({ type: z.literal("mcq"), prompt: filled, options: z.array(filled).min(2), correct: z.number().int(), ...explanation }),
   z.object({ type: z.literal("tf"), prompt: filled, correct: z.boolean(), ...explanation }),
@@ -46,4 +49,7 @@ export const textRecord = z.object({
   question_sets: z.object({ reading: questionSet, listening: questionSet }),
 });
 
-export const textAnswer = z.object({ text: z.unknown(), issues });
+export type TextRecord = z.output<typeof textRecord>;
+export type TextSentence = z.output<typeof textSentence>;
+
+export const textsAnswer = z.object({ texts: z.array(z.unknown()), issues });

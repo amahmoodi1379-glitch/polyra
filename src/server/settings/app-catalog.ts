@@ -34,7 +34,6 @@ export const appSettingDefaults: Record<string, unknown> = {
     "P-C": 200,
     "P-W": 50,
     "P-S": 10,
-    "P-T": 2,
     "P-X": 20,
     "P-QA": 100,
     "P-E": 5,
@@ -98,6 +97,70 @@ export const appSettingDefaults: Record<string, unknown> = {
     { label: "b، d، g آخر کلمه", kind: "rule" },
     { label: "-ig و -ng", kind: "rule" },
   ],
+  /** Text length in words per band (PRD §7.1); the import refuses a text outside its band. */
+  "prompt.text_bands": { "1": [30, 60], "2": [60, 120], "3": [150, 300], "4": [300, 500] },
+  /** Texts per P-T batch, per band (PRD §14.9: 1 to 3); long texts go one at a time. */
+  "prompt.texts_per_batch": { "1": 3, "2": 2, "3": 1, "4": 1 },
+  /** Bands each level's texts use (PRD §7.1, §7.8); A2 alternates between its two bands. */
+  "prompt.text_level_bands": { A1: [1], A2: [1, 2], B1: [3], B2: [4] },
+  /**
+   * Kinds of text per band (PRD §7.1), as code and Persian name; `speakers` marks a conversation whose
+   * sentences each have a speaker. The next text takes the kind its level and band has least of.
+   */
+  "prompt.text_kinds": {
+    "1": [
+      { kind: "dialogue", name_fa: "دیالوگ دونفره", speakers: true },
+      { kind: "voice_message", name_fa: "پیام صوتی", speakers: false },
+      { kind: "announcement", name_fa: "اعلام ایستگاه یا فرودگاه", speakers: false },
+      { kind: "menu", name_fa: "منو", speakers: false },
+      { kind: "ad", name_fa: "آگهی کوتاه", speakers: false },
+    ],
+    "2": [
+      { kind: "phone_call", name_fa: "مکالمه تلفنی", speakers: true },
+      { kind: "email", name_fa: "ایمیل کوتاه", speakers: false },
+      { kind: "schedule", name_fa: "برنامه زمانی", speakers: false },
+    ],
+    "3": [
+      { kind: "long_dialogue", name_fa: "گفتگوی طولانی", speakers: true },
+      { kind: "news", name_fa: "خبر ساده", speakers: false },
+      { kind: "letter", name_fa: "نامه", speakers: false },
+    ],
+    "4": [
+      { kind: "interview", name_fa: "مصاحبه", speakers: true },
+      { kind: "report", name_fa: "گزارش", speakers: false },
+      { kind: "article", name_fa: "مقاله کوتاه", speakers: false },
+    ],
+  },
+  /** Everyday topics the texts rotate through, so a level does not fill up with one subject. */
+  "prompt.text_topics": [
+    "زندگی روزمره",
+    "خانواده و دوستان",
+    "غذا و رستوران",
+    "خرید",
+    "شهر و مسیر",
+    "مسافرت",
+    "کار",
+    "مدرسه و دانشگاه",
+    "خانه",
+    "سلامت",
+    "ورزش",
+    "آب‌وهوا",
+    "حمل‌ونقل",
+    "تفریح و فرهنگ",
+    "طبیعت",
+  ],
+  /**
+   * The first A1 texts of a language use only the first words of the teaching order (PRD §7.5,
+   * §14.9): 3 texts from 40 words (short dialogues of 30 to 40 words), 7 from 100, 10 from 200. Texts
+   * after these use every word of their level and below.
+   */
+  "prompt.first_texts": [
+    { texts: 3, words: 40, length: [30, 40], kind: "dialogue" },
+    { texts: 7, words: 100 },
+    { texts: 10, words: 200 },
+  ],
+  /** Texts of each level marked placement_ok (PRD §11.2); A1 starts after the first texts above. */
+  "prompt.placement_texts": 4,
   "targets.fr": levelTargets,
   "targets.de": levelTargets,
   terms_fa: "",

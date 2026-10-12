@@ -6,6 +6,7 @@ import { conjugation } from "./kinds/conjugation";
 import { grammar } from "./kinds/grammar";
 import { phonics } from "./kinds/phonics";
 import { sentences } from "./kinds/sentences";
+import { texts } from "./kinds/texts";
 import { translations } from "./kinds/translations";
 import type { ContentKind, PlanOptions } from "./kinds/types";
 import { unitList } from "./kinds/unit-list";
@@ -32,6 +33,7 @@ export const contentKinds = {
   translations,
   conjugation,
   phonics,
+  texts,
 } satisfies Record<string, ContentKind>;
 
 export type KindSlug = keyof typeof contentKinds;

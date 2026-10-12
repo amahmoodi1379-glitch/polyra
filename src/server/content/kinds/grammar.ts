@@ -8,6 +8,7 @@ import { levelRank } from "../languages";
 import { problem, zodProblems, type Problem } from "../problems";
 import { emptyRound, type RoundResult } from "../report";
 import { loadVocabulary, type LoadedVocabulary } from "../vocabulary";
+import { allowedWords } from "./allowed";
 import { addTargets, checkTarget, lengthFlags, mapSentence, storeSentence, tidy, type SentenceInput } from "./sentence-store";
 import { example, labelOf, languageValues, lines, params, trace } from "./shared";
 import type { ContentKind, Tx } from "./types";
@@ -18,8 +19,6 @@ type Counts = { targets: number; transforms: number; translations: number };
 /** The first units of a language use only the first words (PRD §14.9). */
 const FIRST_UNITS = 20;
 const FIRST_WORDS = 150;
-/** Above this many allowed words the meanings are left out so the prompt fits (PRD §14.9). */
-const LIST_WITH_MEANINGS = 600;
 
 const editable = new Set(["draft", "needs_review"]);
 const openStates = ["prompt_made", "pasted"] as const;
@@ -47,19 +46,7 @@ async function unitsInProgress(language: string) {
  * below. Also used for short translations (P-TR).
  */
 export async function grammarVocabulary(language: string, unit: Pick<UnitRow, "level">, index: number) {
-  const words = await db.word.findMany({
-    where: { language, status: { not: "retired" }, dup_of_id: null },
-    select: { code: true, pos: true, meaning_fa: true, level: true, intro_order: true, no_card: true, register: true },
-  });
-  const ordered = words
-    .filter((word) => !word.no_card && word.register === "standard")
-    .sort((a, b) => levelRank(a.level) - levelRank(b.level) || (a.intro_order ?? 1e9) - (b.intro_order ?? 1e9));
-  const allowed =
-    index < FIRST_UNITS
-      ? [...ordered.slice(0, FIRST_WORDS), ...words.filter((word) => word.no_card)]
-      : words.filter((word) => levelRank(word.level) <= levelRank(unit.level));
-  const withMeaning = allowed.length <= LIST_WITH_MEANINGS;
-  return lines(allowed.map((word) => [word.code, word.pos, ...(withMeaning ? [word.meaning_fa ?? "—"] : [])].join(" | ")));
+  return allowedWords(language, index < FIRST_UNITS ? { first: FIRST_WORDS } : { level: unit.level });
 }
 
 /** The next grammar unit that has no lesson yet, in teaching order. */

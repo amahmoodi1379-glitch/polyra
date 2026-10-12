@@ -1,0 +1,163 @@
+{
+  "texts": [
+    {
+      "code": "fr-a1-t001",
+      "title": "Au café",
+      "kind": "dialogue",
+      "level": "A1",
+      "band": 1,
+      "placement_ok": false,
+      "sentences": [
+        {
+          "speaker": "A",
+          "text": "Bonjour, madame !",
+          "tts_text": null,
+          "translation_fa": "سلام، خانم!",
+          "tokens": [
+            { "surface": "Bonjour", "kind": "word", "code": "bonjour", "meaning_fa": "سلام" },
+            { "surface": "madame", "kind": "word", "code": "madame", "meaning_fa": "خانم" }
+          ]
+        },
+        {
+          "speaker": "B",
+          "text": "Bonjour ! Je voudrais un café, s'il vous plaît.",
+          "tts_text": null,
+          "translation_fa": "سلام! یک قهوه می‌خواهم، لطفاً.",
+          "tokens": [
+            { "surface": "Bonjour", "kind": "word", "code": "bonjour", "meaning_fa": "سلام" },
+            { "surface": "Je", "kind": "word", "code": "je", "meaning_fa": "من" },
+            { "surface": "voudrais", "kind": "word", "code": "vouloir", "meaning_fa": "می‌خواهم (مؤدبانه)" },
+            { "surface": "un", "kind": "word", "code": "un", "meaning_fa": "یک" },
+            { "surface": "café", "kind": "word", "code": "café", "meaning_fa": "قهوه" },
+            { "surface": "s'il vous plaît", "kind": "word", "code": "s'il vous plaît", "meaning_fa": "لطفاً" }
+          ]
+        },
+        {
+          "speaker": "A",
+          "text": "Un petit café ?",
+          "tts_text": null,
+          "translation_fa": "یک قهوه کوچک؟",
+          "tokens": [
+            { "surface": "Un", "kind": "word", "code": "un", "meaning_fa": "یک" },
+            { "surface": "petit", "kind": "word", "code": "petit", "meaning_fa": "کوچک" },
+            { "surface": "café", "kind": "word", "code": "café", "meaning_fa": "قهوه" }
+          ]
+        },
+        {
+          "speaker": "B",
+          "text": "Non, un grand café avec du lait.",
+          "tts_text": null,
+          "translation_fa": "نه، یک قهوه بزرگ با شیر.",
+          "tokens": [
+            { "surface": "Non", "kind": "word", "code": "non", "meaning_fa": "نه" },
+            { "surface": "un", "kind": "word", "code": "un", "meaning_fa": "یک" },
+            { "surface": "grand", "kind": "word", "code": "grand", "meaning_fa": "بزرگ" },
+            { "surface": "café", "kind": "word", "code": "café", "meaning_fa": "قهوه" },
+            { "surface": "avec", "kind": "word", "code": "avec", "meaning_fa": "با" },
+            { "surface": "du", "kind": "word", "code": "du", "meaning_fa": "(مقداری)" },
+            { "surface": "lait", "kind": "word", "code": "lait", "meaning_fa": "شیر" }
+          ]
+        },
+        {
+          "speaker": "A",
+          "text": "D'accord. C'est 3 euros.",
+          "tts_text": "D'accord. C'est trois euros.",
+          "translation_fa": "باشه. می‌شود سه یورو.",
+          "tokens": [
+            { "surface": "D'accord", "kind": "word", "code": "d'accord", "meaning_fa": "باشه" },
+            { "surface": "C'", "kind": "word", "code": "ce", "meaning_fa": "این" },
+            { "surface": "est", "kind": "word", "code": "être", "meaning_fa": "است" },
+            { "surface": "3", "kind": "number", "code": null, "meaning_fa": "سه" },
+            { "surface": "euros", "kind": "word", "code": "euro", "meaning_fa": "یورو" }
+          ]
+        },
+        {
+          "speaker": "B",
+          "text": "Voilà. Merci, au revoir !",
+          "tts_text": null,
+          "translation_fa": "بفرمایید. ممنون، خداحافظ!",
+          "tokens": [
+            { "surface": "Voilà", "kind": "word", "code": "voilà", "meaning_fa": "بفرمایید" },
+            { "surface": "Merci", "kind": "word", "code": "merci", "meaning_fa": "ممنون" },
+            { "surface": "au revoir", "kind": "word", "code": "au revoir", "meaning_fa": "خداحافظ" }
+          ]
+        },
+        {
+          "speaker": "A",
+          "text": "Merci, bonne journée, madame !",
+          "tts_text": null,
+          "translation_fa": "ممنون، روز خوبی داشته باشید، خانم!",
+          "tokens": [
+            { "surface": "Merci", "kind": "word", "code": "merci", "meaning_fa": "ممنون" },
+            { "surface": "bonne", "kind": "word", "code": "bon", "meaning_fa": "خوب" },
+            { "surface": "journée", "kind": "word", "code": "journée", "meaning_fa": "روز" },
+            { "surface": "madame", "kind": "word", "code": "madame", "meaning_fa": "خانم" }
+          ]
+        }
+      ],
+      "key_words": ["lait"],
+      "question_sets": {
+        "reading": {
+          "A": [
+            {
+              "type": "mcq",
+              "prompt": "خانم چه قهوه‌ای می‌خواهد؟",
+              "options": ["یک قهوه کوچک", "یک قهوه بزرگ با شیر", "یک قهوه بزرگ بدون شیر", "دو قهوه کوچک"],
+              "correct": 1,
+              "explanation_fa": "خانم می‌گوید: «Non, un grand café avec du lait.»"
+            },
+            {
+              "type": "find",
+              "prompt": "کدام جمله قیمت قهوه را می‌گوید؟",
+              "correct_sentence": 4,
+              "explanation_fa": "در «C'est 3 euros.» قیمت آمده: سه یورو."
+            }
+          ],
+          "B": [
+            {
+              "type": "tf",
+              "prompt": "گارسون اول می‌پرسد که آیا قهوه کوچک می‌خواهد.",
+              "correct": true,
+              "explanation_fa": "گارسون می‌پرسد: «Un petit café ?»"
+            },
+            {
+              "type": "order",
+              "prompt": "این اتفاق‌ها را به ترتیب متن مرتب کن.",
+              "items": ["خانم خداحافظی می‌کند.", "خانم قهوه سفارش می‌دهد.", "گارسون قیمت را می‌گوید.", "گارسون سلام می‌کند."],
+              "correct_order": [3, 1, 2, 0],
+              "explanation_fa": "اول سلام، بعد سفارش، بعد قیمت و آخر خداحافظی."
+            }
+          ]
+        },
+        "listening": {
+          "A": [
+            {
+              "type": "num",
+              "prompt": "قهوه چند یورو است؟",
+              "answer": "3",
+              "accepted": ["3", "trois"],
+              "explanation_fa": "گارسون می‌گوید: «C'est 3 euros.»"
+            },
+            {
+              "type": "mcq",
+              "prompt": "گارسون در آخر چه می‌گوید؟",
+              "options": ["روز خوبی داشته باشید", "خوش آمدید", "دوباره بیایید", "ببخشید"],
+              "correct": 0,
+              "explanation_fa": "گارسون می‌گوید: «bonne journée»، یعنی روز خوبی داشته باشید."
+            }
+          ],
+          "B": [
+            { "type": "dict", "sentence": 2 },
+            {
+              "type": "tf",
+              "prompt": "خانم قهوه کوچک می‌خواهد.",
+              "correct": false,
+              "explanation_fa": "خانم می‌گوید: «Non, un grand café»، یعنی قهوه بزرگ می‌خواهد."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "issues": []
+}

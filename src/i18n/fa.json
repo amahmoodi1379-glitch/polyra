@@ -103,7 +103,8 @@
         "grammar": "{count} واحد دستوری {level} هنوز درس ندارند؛ بعدی: «{title}»",
         "translations": "{count} درس {level} کمتر از {goal} ترجمه کوتاه دارند؛ بعدی: «{title}»",
         "conjugation": "{count} جدول صرف {level} لازم است",
-        "phonics": "{count} درس تلفظ مانده؛ بعدی: «{label}»"
+        "phonics": "{count} درس تلفظ مانده؛ بعدی: «{label}»",
+        "texts": "{count} متن {level} مانده تا {goal} متن"
       },
       "actions": {
         "words": "ساخت {size} کلمه بعدی",
@@ -116,7 +117,10 @@
         "grammar": "ساخت درس بعدی",
         "translations": "ساخت ترجمه کوتاه",
         "conjugation": "ساخت {size} جدول بعدی",
-        "phonics": "ساخت درس تلفظ بعدی"
+        "phonics": "ساخت درس تلفظ بعدی",
+        "texts": "ساخت {size} متن بعدی",
+        "textsOne": "ساخت متن بعدی",
+        "conjugationOne": "ساخت جدول بعدی"
       },
       "allDone": "فعلاً کاری نمانده. هر وقت خواستی از «ساخت محتوا» دسته تازه بساز."
     },
@@ -143,7 +147,7 @@
       "unfinished": "کارهای نیمه‌تمام",
       "unfinishedStep": "قدم {step} از {total}",
       "continue": "ادامه",
-      "soon": "ساخت متن، جدول صرف، آواشناسی، عبارت‌ها و تمرین‌های گفتن و نوشتن هم به‌زودی همین‌جا اضافه می‌شود.",
+      "soon": "ساخت عبارت‌ها و تمرین‌های گفتن و نوشتن هم به‌زودی همین‌جا اضافه می‌شود.",
       "kinds": {
         "wordList": {
           "name": "فهرست کلمه‌ها",
@@ -184,12 +188,21 @@
           "status": "{count} جدول صرف {level} هنوز ساخته نشده.",
           "action": "ساخت {size} جدول بعدی",
           "needsVerbs": "اول اطلاعات کلمه‌ها ساخته شود.",
-          "needsUnits": "زمان‌های بعدی منتظر فهرست واحدهای دستوری سطحشان هستند."
+          "needsUnits": "زمان‌های بعدی منتظر فهرست واحدهای دستوری سطحشان هستند.",
+          "actionOne": "ساخت جدول بعدی"
         },
         "phonics": {
           "name": "درس تلفظ",
           "status": "{count} درس تلفظ مانده؛ بعدی: «{label}».",
           "action": "ساخت درس تلفظ بعدی"
+        },
+        "texts": {
+          "name": "متن شنیداری و خواندن",
+          "status": "{count} متن {level} مانده تا {goal} متن.",
+          "action": "ساخت {size} متن بعدی",
+          "actionOne": "ساخت متن بعدی",
+          "needsUnits": "اول فهرست واحدهای دستوری سطح {level} ساخته شود.",
+          "needsWords": "اول اطلاعات دست‌کم {count} کلمه {level} ساخته شود."
         }
       },
       "nothing": {
@@ -200,7 +213,8 @@
         "grammar": "همه واحدهای فهرست درس دارند.",
         "translations": "همه درس‌ها ترجمه کوتاه کافی دارند.",
         "conjugation": "همه فعل‌ها جدول صرف دارند.",
-        "phonics": "همه درس‌های تلفظ فهرست ساخته شده‌اند."
+        "phonics": "همه درس‌های تلفظ فهرست ساخته شده‌اند.",
+        "texts": "همه سطح‌ها به تعداد هدف متن دارند."
       },
       "summary": {
         "wordList": "{count} کلمه پرکاربرد، رتبه {first} تا {last}",
@@ -210,7 +224,9 @@
         "grammar": "درس کامل واحد «{title}»، سطح {level}",
         "translations": "{count} ترجمه کوتاه برای درس «{title}»، سطح {level}",
         "conjugation": "{count} جدول صرف، سطح {level}",
-        "phonics": "درس تلفظ «{label}»، نوع {kind}"
+        "phonics": "درس تلفظ «{label}»، نوع {kind}",
+        "texts": "{count} متن {level}، رده {band}: {list}",
+        "textLine": "{kind} درباره {topic}"
       },
       "phonicsKinds": {
         "contrast": "دو صدای شبیه",
@@ -227,7 +243,8 @@
         "P_G": "درس دستور",
         "P_TR": "ترجمه کوتاه",
         "P_X": "جدول صرف",
-        "P_H": "درس تلفظ"
+        "P_H": "درس تلفظ",
+        "P_T": "متن شنیداری و خواندن"
       },
       "stepOf": "قدم {step} از {total}",
       "steps": {
@@ -434,7 +451,22 @@
       "wrongSpellingsCount": "«{text}» باید دقیقاً دو املای غلط داشته باشد.",
       "wrongSpellingSame": "یکی از املاهای غلط «{text}» با خود کلمه یکی است.",
       "pairSame": "دو کلمه جفت «{text}» یکی هستند.",
-      "liaisonIndex": "شماره کلمه در جمله «{text}» بیرون از جمله است یا آخرین کلمه را نشان می‌دهد."
+      "liaisonIndex": "شماره کلمه در جمله «{text}» بیرون از جمله است یا آخرین کلمه را نشان می‌دهد.",
+      "textNotPlanned": "متن «{code}» در این دسته خواسته نشده بود؛ کد باید یکی از این‌ها باشد: {codes}.",
+      "textLength": "متن {count} کلمه دارد، ولی باید بین {min} و {max} کلمه باشد.",
+      "speakers": "در گفتگو هر جمله باید گوینده (speaker) داشته باشد و دست‌کم دو گوینده لازم است.",
+      "questionCount": "«{field}» {count} سؤال دارد، ولی باید بین {min} و {max} سؤال باشد.",
+      "questionType": "سؤال نوع {type} در «{field}» مجاز نیست؛ نوع‌های مجاز: {allowed}.",
+      "optionsCount": "«{field}» باید دقیقاً {count} مورد داشته باشد.",
+      "answerOutOfRange": "جواب درست در «{field}» به گزینه یا جمله‌ای اشاره می‌کند که وجود ندارد.",
+      "orderInvalid": "«{field}» باید ۴ یا ۵ مورد داشته باشد و ترتیب درست هر مورد را دقیقاً یک بار بیاورد.",
+      "matchInvalid": "در «{field}» هر مورد ستون اول باید دقیقاً یک جفت در ستون دوم داشته باشد و هیچ مورد ستون دوم دو بار نیاید.",
+      "clozeInvalid": "جاهای خالی «{field}» باید از ۱ به ترتیب شماره بخورند، به تعداد جواب‌ها باشند و هر جواب در بانک کلمات باشد.",
+      "numInvalid": "جواب «{field}» باید رقم داشته باشد و خودش هم در accepted آمده باشد.",
+      "dictNumber": "جمله دیکته در «{field}» عدد رقمی دارد؛ عدد با سؤال num سنجیده می‌شود.",
+      "ctxWord": "کلمه «{text}» که در «{field}» پرسیده شده، در متن نیامده.",
+      "questionRepeat": "سؤال «{text}» هم در مجموعه A و هم در B آمده؛ دو مجموعه باید سؤال‌های متفاوت داشته باشند.",
+      "keyWordUnknown": "کلمه کلیدی «{code}» در فهرست کلمه‌ها یا در خود متن نیست؛ کنار گذاشته شد."
     },
     "fields": {
       "meaning_fa": "معنی فارسی",
@@ -468,7 +500,7 @@
       "distractors": "گزینه‌های غلط",
       "hint": "راهنما",
       "target": "هدف",
-      "type": "نوع هدف",
+      "type": "نوع",
       "unit_code": "کد واحد",
       "title_fa": "عنوان",
       "scope_fa": "محدوده",
@@ -509,7 +541,28 @@
       "wrong_spellings": "املاهای غلط",
       "minimal_pairs": "جفت کلمه‌ها",
       "liaison_sentences": "جمله‌های liaison",
-      "liaison_after_word_index": "جای liaison"
+      "liaison_after_word_index": "جای liaison",
+      "texts": "متن‌ها",
+      "title": "عنوان",
+      "band": "رده",
+      "placement_ok": "مناسب تعیین سطح",
+      "speaker": "گوینده",
+      "key_words": "کلمه‌های کلیدی",
+      "question_sets": "سؤال‌ها",
+      "prompt": "پرسش",
+      "options": "گزینه‌ها",
+      "correct": "جواب درست",
+      "correct_order": "ترتیب درست",
+      "left": "ستون اول",
+      "right": "ستون دوم",
+      "pairs": "جفت‌ها",
+      "text_with_gaps": "متن با جای خالی",
+      "bank": "بانک کلمات",
+      "answers": "جواب‌ها",
+      "correct_sentence": "جمله جواب",
+      "word": "کلمه",
+      "answer": "جواب",
+      "explanation_fa": "توضیح جواب"
     },
     "pos": {
       "noun": "اسم",
@@ -523,6 +576,12 @@
       "num": "عدد",
       "interj": "صوت",
       "phrase": "عبارت"
-    }
+    },
+    "tracks": {
+      "reading": "خواندن",
+      "listening": "شنیداری"
+    },
+    "questionSet": "مجموعه {set} {track}",
+    "questionItem": "سؤال {n} مجموعه {set} {track}"
   }
 }

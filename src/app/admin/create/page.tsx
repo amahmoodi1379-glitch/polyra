@@ -51,6 +51,7 @@ export default async function CreatePage({ searchParams }: PageProps<"/admin/cre
   const translations = status.translationsNext;
   const tables = status.tables;
   const sounds = status.phonicsNext;
+  const texts = status.texts;
   const rows: Row[] = [
     {
       slug: "word-list",
@@ -129,7 +130,9 @@ export default async function CreatePage({ searchParams }: PageProps<"/admin/cre
             ? t("admin.create.kinds.conjugation.needsUnits")
             : t("admin.create.nothing.conjugation"),
       action: tables.next
-        ? t("admin.create.kinds.conjugation.action", { size: Math.min(sizes["P-X"] ?? 20, tables.next.count) })
+        ? Math.min(sizes["P-X"] ?? 20, tables.next.count) === 1
+          ? t("admin.create.kinds.conjugation.actionOne")
+          : t("admin.create.kinds.conjugation.action", { size: Math.min(sizes["P-X"] ?? 20, tables.next.count) })
         : null,
       level: tables.next?.level,
     },
@@ -140,6 +143,25 @@ export default async function CreatePage({ searchParams }: PageProps<"/admin/cre
         ? t("admin.create.kinds.phonics.status", { count: sounds.count, label: sounds.label })
         : t("admin.create.nothing.phonics"),
       action: sounds ? t("admin.create.kinds.phonics.action") : null,
+    },
+    {
+      slug: "texts",
+      name: t("admin.create.kinds.texts.name"),
+      status:
+        texts.state === "ready"
+          ? t("admin.create.kinds.texts.status", { count: texts.left, level: texts.level, goal: texts.goal })
+          : texts.state === "needsUnits"
+            ? t("admin.create.kinds.texts.needsUnits", { level: texts.level })
+            : texts.state === "needsWords"
+              ? t("admin.create.kinds.texts.needsWords", { level: texts.level, count: texts.count })
+              : t("admin.create.nothing.texts"),
+      action:
+        texts.state === "ready"
+          ? texts.size === 1
+            ? t("admin.create.kinds.texts.actionOne")
+            : t("admin.create.kinds.texts.action", { size: texts.size })
+          : null,
+      level: texts.state === "ready" ? texts.level : undefined,
     },
   ];
   // One clear next step: the first kind on the main path that has work.
@@ -172,7 +194,11 @@ export default async function CreatePage({ searchParams }: PageProps<"/admin/cre
                   <div className="flex min-w-0 flex-1 flex-col">
                     <span className="text-ink truncate font-bold">
                       {t(`admin.batch.kind.${batch.prompt_kind}` as MessageKey)}
-                      {params.level && params.level.length === 2 ? <span className="lat text-ink-2 ms-2 font-semibold">{params.level}</span> : null}
+                      {params.level && params.level.length === 2 ? (
+                        <span className="text-ink-2 ms-2 font-semibold">
+                          <bdi className="lat">{params.level}</bdi>
+                        </span>
+                      ) : null}
                     </span>
                     <span className="text-ink-3 text-[13px]">
                       {t("admin.create.unfinishedStep", { step: batchStep(batch), total: 4 })} · {formatAgoFa(batch.updated_at, now)}

@@ -105,7 +105,10 @@ async function languageRows(language: LanguageCode, sizes: Record<string, number
       action: {
         start: "conjugation",
         level: tables.level,
-        label: t("admin.workbench.actions.conjugation", { size: Math.min(sizes["P-X"] ?? 20, tables.count) }),
+        label:
+          Math.min(sizes["P-X"] ?? 20, tables.count) === 1
+            ? t("admin.workbench.actions.conjugationOne")
+            : t("admin.workbench.actions.conjugation", { size: Math.min(sizes["P-X"] ?? 20, tables.count) }),
       },
     });
   }
@@ -115,6 +118,18 @@ async function languageRows(language: LanguageCode, sizes: Record<string, number
       key: "phonics",
       text: t("admin.workbench.rows.phonics", { count: sounds.count, label: sounds.label }),
       action: { start: "phonics", label: t("admin.workbench.actions.phonics") },
+    });
+  }
+  const texts = status.texts;
+  if (texts.state === "ready") {
+    rows.push({
+      key: "texts",
+      text: t("admin.workbench.rows.texts", { count: texts.left, level: texts.level, goal: texts.goal }),
+      action: {
+        start: "texts",
+        level: texts.level,
+        label: texts.size === 1 ? t("admin.workbench.actions.textsOne") : t("admin.workbench.actions.texts", { size: texts.size }),
+      },
     });
   }
   if (status.candidates + status.suspects > 0) {
