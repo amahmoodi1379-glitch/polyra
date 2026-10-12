@@ -32,7 +32,7 @@ function pickLanguage(requested: string | undefined, scope: string | null): Lang
 }
 
 export default async function CreatePage({ searchParams }: PageProps<"/admin/create">) {
-  const admin = await requireAdmin("/admin/create");
+  const admin = await requireAdmin();
   const query = await searchParams;
   const language = pickLanguage(typeof query.lang === "string" ? query.lang : undefined, admin.admin_language);
   const error = typeof query.error === "string" ? query.error : null;

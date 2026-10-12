@@ -31,6 +31,9 @@ COPY --from=build --chown=node:node /app/public ./public
 COPY --from=build --chown=node:node /app/prisma ./prisma
 COPY --from=build --chown=node:node /app/scripts ./scripts
 COPY --from=build --chown=node:node /app/src ./src
+# Read at run time: the seed loads the frequency lists, the panel reads the prompt templates.
+COPY --from=build --chown=node:node /app/data ./data
+COPY --from=build --chown=node:node /app/prompts ./prompts
 COPY --from=build --chown=node:node --chmod=755 /app/docker-entrypoint.sh ./docker-entrypoint.sh
 
 # Uploaded audio lives here; on the host this folder is a mounted disk.

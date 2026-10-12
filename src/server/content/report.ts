@@ -29,8 +29,11 @@ export type RoundResult = {
   duplicates: number;
 };
 
-/** Stored in import_batch.report. Counts add up over the rounds; `rejected` is the latest round's. */
-export type ImportReport = RoundResult & { rounds: number; issues: string[] };
+/**
+ * Stored in import_batch.report. Counts add up over the rounds; `rejected` is the latest round's.
+ * `dismissed` counts rejected records the admin chose not to fix.
+ */
+export type ImportReport = RoundResult & { rounds: number; issues: string[]; dismissed?: number };
 
 export function emptyRound(): RoundResult {
   return {
@@ -63,5 +66,6 @@ export function mergeRound(report: ImportReport | null, round: RoundResult, issu
     suspects: report.suspects + round.suspects,
     duplicates: report.duplicates + round.duplicates,
     issues: [...report.issues, ...issues],
+    dismissed: report.dismissed,
   };
 }

@@ -144,10 +144,16 @@ export function cleanPaste(raw: string, rootKey?: string): PasteResult {
   return { state: "empty" };
 }
 
-/** The part of a continuation that belongs to the JSON: inside a fence if there is one. */
-function continuationBody(raw: string) {
+/**
+ * Where the JSON of a continuation may be. A chatbot that goes on exactly where it stopped ends its
+ * code block in the continuation, so the JSON is before the first ``` fence; one that opens a new code
+ * block puts it inside the fence. Both are tried, and the whole text last.
+ */
+function continuationBodies(raw: string) {
   const text = tidy(raw);
-  return (text.includes("```") ? unfence(text) : text).trim();
+  const fence = text.indexOf("```");
+  const bodies = fence < 0 ? [text] : [text.slice(0, fence), unfence(text), text];
+  return [...new Set(bodies.map((body) => body.trim()).filter(Boolean))];
 }
 
 /** Drops the last, unfinished element of a cut answer: back to the last "}" or "]" that closed one. */
@@ -183,28 +189,34 @@ function overlap(a: string, b: string) {
  */
 export function joinPaste(first: string, continuation: string, rootKey?: string): PasteResult {
   const head = first.trimEnd();
-  const tail = continuationBody(continuation);
-  if (!tail) return { state: "cut", text: head };
+  const tails = continuationBodies(continuation);
+  if (tails.length === 0) return { state: "cut", text: head };
 
-  const restarted = cleanPaste(continuation, rootKey);
   const trimmed = trimToLastComplete(head);
-  const tailStart = tail.search(/[{["]/);
-  const tailFromJson = tailStart >= 0 ? tail.slice(tailStart) : tail;
-  const candidates = [
-    head + tail,
-    head + tail.slice(overlap(head, tail)),
-    trimmed + tailFromJson,
-    `${trimmed},${tailFromJson}`,
-    head + tailFromJson,
-  ];
-
-  const results = candidates.map((candidate) => cleanPaste(candidate, rootKey));
-  const joined = results.find((result) => result.state === "ok");
-  if (joined) return joined;
+  const results: PasteResult[] = [];
+  for (const tail of tails) {
+    const tailStart = tail.search(/[{["]/);
+    const tailFromJson = tailStart >= 0 ? tail.slice(tailStart) : tail;
+    const candidates = [
+      head + tail,
+      head + tail.slice(overlap(head, tail)),
+      trimmed + tailFromJson,
+      `${trimmed},${tailFromJson}`,
+      head + tailFromJson,
+    ];
+    for (const candidate of candidates) {
+      const result = cleanPaste(candidate, rootKey);
+      if (result.state === "ok") return result;
+      results.push(result);
+    }
+  }
+  const restarted = cleanPaste(continuation, rootKey);
   if (restarted.state === "ok") return restarted;
 
   // Still not complete: keep the longest join that is merely cut, for another «ادامه بده».
-  const stillCut = results.find((result) => result.state === "cut");
+  const stillCut = results
+    .filter((result): result is Extract<PasteResult, { state: "cut" }> => result.state === "cut")
+    .reduce<Extract<PasteResult, { state: "cut" }> | null>((longest, result) => (!longest || result.text.length > longest.text.length ? result : longest), null);
   if (stillCut) return stillCut;
-  return { state: "broken", text: head + tail };
+  return { state: "broken", text: head + tails[0] };
 }

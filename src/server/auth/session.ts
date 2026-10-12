@@ -4,6 +4,7 @@ import { cache } from "react";
 import { db } from "@/server/db";
 import { engineNumber } from "@/server/settings/read";
 import { createDevice, findUserByToken, hashToken } from "./devices";
+import { PATH_HEADER } from "./path-header";
 
 /** Session cookie (PRD §15.5): HttpOnly and Secure, kept for a year and renewed on every sign-in. */
 export const SESSION_COOKIE = "polyra_session";
@@ -48,10 +49,16 @@ export async function endSession() {
   store.delete(SESSION_COOKIE);
 }
 
-/** For admin pages: the signed-in admin, or a redirect to the login page. */
-export async function requireAdmin(nextPath = "/admin") {
+/** The admin page that was asked for (set by the proxy), so login can return there. */
+async function askedAdminPath() {
+  const path = (await headers()).get(PATH_HEADER);
+  return path && /^\/admin(?:[/?]|$)/.test(path) ? path : "/admin";
+}
+
+/** For admin pages: the signed-in admin, or a redirect to the login page and back. */
+export async function requireAdmin(nextPath?: string) {
   const user = await getCurrentUser();
-  if (!user) redirect(`/login?next=${encodeURIComponent(nextPath)}`);
+  if (!user) redirect(`/login?next=${encodeURIComponent(nextPath ?? (await askedAdminPath()))}`);
   if (!user.is_admin) redirect("/no-access");
   return user;
 }

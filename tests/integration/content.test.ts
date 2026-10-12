@@ -60,7 +60,7 @@ describe("word list (P-C, PRD §14.5 and §13.9)", () => {
       items: [
         { lemma: "être", keep: true, pos: "verb", level: "A1", no_card: false, reason: null },
         { lemma: "voiture", keep: true, pos: "noun", level: "A1", no_card: false, reason: null },
-        { lemma: "suis", keep: false, pos: null, level: null, no_card: false, reason: "شکل صرف‌شده" },
+        { lemma: "suis", keep: false, pos: null, level: "A0", no_card: false, reason: "شکل صرف‌شده" },
         { lemma: "maison", keep: true, pos: "nom", level: "A1", no_card: false, reason: null },
         { lemma: "au", keep: true, pos: "prep", level: "A1", no_card: true, reason: null },
       ],

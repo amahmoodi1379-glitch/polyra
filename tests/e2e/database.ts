@@ -8,3 +8,6 @@ export function e2eDatabaseUrl() {
 
 /** Admin accounts created by prepare-db, one per browser project. */
 export const E2E_ADMINS = { phone: "09120000001", desktop: "09120000003" } as const;
+
+/** The French frequency list of the browser-test database (prepare-db). */
+export const E2E_FREQUENCY = ["être", "maison", "une", "manger", "petit", "aller"] as const;

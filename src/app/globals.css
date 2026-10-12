@@ -164,6 +164,8 @@
   --font-sans: "Vazirmatn Variable", Vazirmatn, Tahoma, "Segoe UI", sans-serif;
   --font-ui: "Vazirmatn Variable", Vazirmatn, Tahoma, "Segoe UI", sans-serif;
   --font-lat: "Fraunces Variable", Fraunces, Georgia, "Times New Roman", serif;
+  /* Pasted chatbot answers; Persian inside them falls through to Vazirmatn. */
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, "Vazirmatn Variable", Vazirmatn, monospace;
 
   --radius-xs: 6px;
   --radius-sm: 10px;
@@ -233,6 +235,18 @@
 
   .num {
     font-variant-numeric: tabular-nums;
+  }
+
+  /* Chevron of a <details> summary: points along the reading direction when closed, down when open. */
+  .disclose-chevron {
+    rotate: 90deg;
+    transition: rotate 160ms var(--ease-out);
+  }
+  [dir="ltr"] .disclose-chevron {
+    rotate: -90deg;
+  }
+  details[open] > summary .disclose-chevron {
+    rotate: 0deg;
   }
 }
 

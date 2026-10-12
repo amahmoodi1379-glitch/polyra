@@ -77,16 +77,17 @@ export const wordList: ContentKind = {
 
     for (const [index, record] of records.entries()) {
       const label = labelOf(record, ["lemma"], index);
+      // A row the chatbot left out needs no part of speech or level, so nothing else is checked.
+      if (typeof record === "object" && record !== null && (record as { keep?: unknown }).keep === false) {
+        round.dropped++;
+        continue;
+      }
       const parsed = wordListItem.safeParse(record, { reportInput: true });
       if (!parsed.success) {
         round.rejected.push({ label, record, problems: zodProblems(parsed.error) });
         continue;
       }
       const item = parsed.data;
-      if (!item.keep) {
-        round.dropped++;
-        continue;
-      }
       const missing = [!item.pos && "pos", !item.level && "level"].filter((field): field is string => Boolean(field));
       if (missing.length > 0) {
         round.rejected.push({ label, record, problems: missing.map((field) => problem("missing", { field })) });

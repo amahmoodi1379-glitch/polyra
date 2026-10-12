@@ -55,6 +55,14 @@ describe("joinPaste", () => {
     expect(joinPaste(first, "```json\n" + json.slice(cutAt - 20) + "\n```")).toMatchObject({ state: "ok", value: answer });
   });
 
+  it("handles a continuation that closes the code block and adds a note after it", () => {
+    const pasted = cleanPaste("Here you go:\n```json\n" + first, "words");
+    expect(pasted.state).toBe("cut");
+    if (pasted.state !== "cut") return;
+    const rest = json.slice(cutAt) + "\n```\n\nTell me if you need more.";
+    expect(joinPaste(pasted.text, rest, "words")).toMatchObject({ state: "ok", value: answer });
+  });
+
   it("handles a continuation that restarts the unfinished record", () => {
     const recordStart = json.lastIndexOf("{", cutAt);
     expect(joinPaste(first, json.slice(recordStart))).toMatchObject({ state: "ok", value: answer });

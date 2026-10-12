@@ -229,6 +229,39 @@ export async function submitQa(batchId: number, parts: string[]): Promise<Submit
   return { state: "imported", rejected: 0 };
 }
 
+/** Keeps the received part of a cut answer: the next paste is its continuation. */
+export async function cutAnswer(batchId: number): Promise<string | null> {
+  const batch = await db.importBatch.findUnique({ where: { id: batchId }, select: { state: true, raw_output: true } });
+  return batch?.state === "pasted" ? batch.raw_output : null;
+}
+
+/** Throws away a cut answer so the whole answer can be pasted again. */
+export async function resetCut(batchId: number) {
+  await db.importBatch.updateMany({ where: { id: batchId, state: "pasted" }, data: { state: "prompt_made", raw_output: null } });
+}
+
+/**
+ * The admin moves on without fixing the rejected records. They were never imported, so nothing is
+ * lost: skeleton words and words short of sentences come back in the next batch of their kind.
+ */
+export async function dismissRejected(batchId: number) {
+  const batch = await db.importBatch.findUniqueOrThrow({ where: { id: batchId } });
+  const report = batchReport(batch);
+  if (!report || report.rejected.length === 0) return;
+  const next: ImportReport = { ...report, rejected: [], dismissed: (report.dismissed ?? 0) + report.rejected.length };
+  await db.importBatch.update({ where: { id: batchId }, data: { report: next as unknown as Prisma.InputJsonValue } });
+}
+
+/** The chatbot this admin used last, so the picker starts on it. */
+export async function lastChatbot(adminId: number): Promise<string | null> {
+  const last = await db.importBatch.findFirst({
+    where: { created_by: adminId, model_name: { not: null } },
+    orderBy: { updated_at: "desc" },
+    select: { model_name: true },
+  });
+  return last?.model_name ?? null;
+}
+
 /** A batch nothing was imported from can be thrown away; its list rows become free again. */
 export async function cancelBatch(batchId: number) {
   const batch = await db.importBatch.findUniqueOrThrow({ where: { id: batchId } });
