@@ -18,6 +18,9 @@ export type BatchPlan = {
 
 export type PlanOptions = { level?: string };
 
+/** One part of an answer that is a single object with several lists, like a grammar unit (P-G). */
+export type AnswerPart = { key: string; single?: boolean };
+
 /** One content kind on the four-step path: picks the next batch and imports its answers. */
 export type ContentKind = {
   kind: PromptKind;
@@ -25,10 +28,15 @@ export type ContentKind = {
   template: string;
   /** Top-level key of the answer that holds the records, e.g. "words". */
   rootKey: string;
+  /**
+   * For an answer made of several parts: every part, in order. Records are taken from each part, and
+   * `importRecords` gets the part of each record. Without it the answer is one list under rootKey.
+   */
+  parts?: AnswerPart[];
   /** Picks the next batch, or null when there is nothing left to make. */
   plan(language: LanguageCode, options: PlanOptions): Promise<BatchPlan | { nothing: string }>;
   /** Called inside the batch's transaction right after it is created (e.g. to reserve list rows). */
   reserve?(tx: Tx, batch: ImportBatch): Promise<void>;
-  /** Imports the records of one pasted answer. */
-  importRecords(tx: Tx, batch: ImportBatch, records: unknown[]): Promise<RoundResult>;
+  /** Imports the records of one pasted answer; `parts[i]` is the part record i came from. */
+  importRecords(tx: Tx, batch: ImportBatch, records: unknown[], parts: string[]): Promise<RoundResult>;
 };

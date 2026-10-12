@@ -1,0 +1,113 @@
+{
+  "unit": {
+    "unit_code": "de-a1-perfekt-haben-regelmaessig",
+    "title_fa": "گذشته با haben (فعل‌های باقاعده)",
+    "level": "A1",
+    "lesson_fa": "برای گفتن کاری که تمام شده، آلمانی دو تکه می‌خواهد: فعل haben در زمان حال و «صفت مفعولی» فعل اصلی. صفت مفعولی فعل‌های باقاعده این‌طور ساخته می‌شود: ge + ریشه + t، مثلاً spielen می‌شود gespielt. haben جای دوم جمله می‌نشیند و صفت مفعولی به آخر جمله می‌رود: Ich habe Fußball gespielt.",
+    "build_table": [
+      ["ضمیر", "haben", "صفت مفعولی (آخر جمله)"],
+      ["ich", "habe", "gespielt"],
+      ["du", "hast", "gemacht"],
+      ["er / sie / es", "hat", "gekauft"],
+      ["wir", "haben", "gelernt"],
+      ["ihr", "habt", "gekocht"],
+      ["sie / Sie", "haben", "gewohnt"]
+    ],
+    "example_sentences": [
+      {
+        "text": "Gestern habe ich Fußball gespielt.",
+        "tts_text": null,
+        "translation_fa": "دیروز فوتبال بازی کردم.",
+        "tokens": [
+          { "surface": "Gestern", "kind": "word", "code": "gestern", "meaning_fa": "دیروز" },
+          { "surface": "habe", "kind": "word", "code": "haben", "meaning_fa": "(فعل کمکی گذشته)" },
+          { "surface": "ich", "kind": "word", "code": "ich", "meaning_fa": "من" },
+          { "surface": "Fußball", "kind": "word", "code": "Fußball", "meaning_fa": "فوتبال" },
+          { "surface": "gespielt", "kind": "word", "code": "spielen", "meaning_fa": "بازی کردم" }
+        ]
+      },
+      {
+        "text": "Wir haben eine Pizza gemacht.",
+        "tts_text": null,
+        "translation_fa": "ما یک پیتزا درست کردیم.",
+        "tokens": [
+          { "surface": "Wir", "kind": "word", "code": "wir", "meaning_fa": "ما" },
+          { "surface": "haben", "kind": "word", "code": "haben", "meaning_fa": "(فعل کمکی گذشته)" },
+          { "surface": "eine", "kind": "word", "code": "ein", "meaning_fa": "یک" },
+          { "surface": "Pizza", "kind": "word", "code": "Pizza", "meaning_fa": "پیتزا" },
+          { "surface": "gemacht", "kind": "word", "code": "machen", "meaning_fa": "درست کردیم" }
+        ]
+      }
+    ],
+    "rule_line_fa": "گذشته = haben در جای دوم + ge…t در آخر جمله.",
+    "common_mistake_fa": "در فارسی فعل گذشته یک کلمه است؛ برای همین فارسی‌زبان‌ها گاهی صفت مفعولی را کنار haben می‌گذارند و می‌گویند Ich habe gespielt Fußball. صفت مفعولی همیشه آخر جمله می‌رود.",
+    "category_sets": null,
+    "can_do_fa": "حالا می‌توانی بگویی دیروز چه کردی."
+  },
+  "targets": [
+    {
+      "sentence": {
+        "text": "Du hast gestern Deutsch gelernt.",
+        "tts_text": null,
+        "translation_fa": "تو دیروز آلمانی یاد گرفتی.",
+        "tokens": [
+          { "surface": "Du", "kind": "word", "code": "du", "meaning_fa": "تو" },
+          { "surface": "hast", "kind": "word", "code": "haben", "meaning_fa": "(فعل کمکی گذشته)" },
+          { "surface": "gestern", "kind": "word", "code": "gestern", "meaning_fa": "دیروز" },
+          { "surface": "Deutsch", "kind": "word", "code": "Deutsch", "meaning_fa": "زبان آلمانی" },
+          { "surface": "gelernt", "kind": "word", "code": "lernen", "meaning_fa": "یاد گرفتی" }
+        ]
+      },
+      "marked_text": "Du {{hast}} gestern Deutsch gelernt.",
+      "blanks": 1,
+      "accepted": ["hast"],
+      "distractors": ["habe", "hat", "bist"],
+      "hint": "(haben)",
+      "accepted_full": null
+    },
+    {
+      "sentence": {
+        "text": "Wir haben Brot gekauft und Tee gekocht.",
+        "tts_text": null,
+        "translation_fa": "ما نان خریدیم و چای درست کردیم.",
+        "tokens": [
+          { "surface": "Wir", "kind": "word", "code": "wir", "meaning_fa": "ما" },
+          { "surface": "haben", "kind": "word", "code": "haben", "meaning_fa": "(فعل کمکی گذشته)" },
+          { "surface": "Brot", "kind": "word", "code": "Brot", "meaning_fa": "نان" },
+          { "surface": "gekauft", "kind": "word", "code": "kaufen", "meaning_fa": "خریدیم" },
+          { "surface": "und", "kind": "word", "code": "und", "meaning_fa": "و" },
+          { "surface": "Tee", "kind": "word", "code": "Tee", "meaning_fa": "چای" },
+          { "surface": "gekocht", "kind": "word", "code": "kochen", "meaning_fa": "درست کردیم" }
+        ]
+      },
+      "marked_text": "Wir {{haben}} Brot gekauft und Tee {{gekocht}}.",
+      "blanks": 2,
+      "accepted": [["haben"], ["gekocht"]],
+      "distractors": [["habt", "hat", "sind"], ["kochen", "gekochen", "kocht"]],
+      "hint": null,
+      "accepted_full": null
+    }
+  ],
+  "transforms": [
+    {
+      "instruction_fa": "جمله را به گذشته ببر.",
+      "source": "Ich spiele Fußball.",
+      "accepted_outputs": ["Ich habe Fußball gespielt."]
+    }
+  ],
+  "translations": [
+    {
+      "prompt_fa": "دیروز یک کیک درست کردم.",
+      "accepted_outputs": ["Gestern habe ich einen Kuchen gemacht.", "Ich habe gestern einen Kuchen gemacht."],
+      "tokens": [
+        { "surface": "Gestern", "kind": "word", "code": "gestern", "meaning_fa": "دیروز" },
+        { "surface": "habe", "kind": "word", "code": "haben", "meaning_fa": "(فعل کمکی گذشته)" },
+        { "surface": "ich", "kind": "word", "code": "ich", "meaning_fa": "من" },
+        { "surface": "einen", "kind": "word", "code": "ein", "meaning_fa": "یک" },
+        { "surface": "Kuchen", "kind": "word", "code": "Kuchen", "meaning_fa": "کیک" },
+        { "surface": "gemacht", "kind": "word", "code": "machen", "meaning_fa": "درست کردم" }
+      ]
+    }
+  ],
+  "issues": []
+}

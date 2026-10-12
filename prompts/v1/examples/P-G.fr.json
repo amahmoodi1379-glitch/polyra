@@ -1,0 +1,118 @@
+{
+  "unit": {
+    "unit_code": "fr-a1-passe-compose-avoir-er",
+    "title_fa": "گذشته با avoir (فعل‌های -er)",
+    "level": "A1",
+    "lesson_fa": "برای گفتن کاری که تمام شده، فرانسوی دو تکه می‌خواهد: فعل avoir در زمان حال و «صفت مفعولی» فعل اصلی. صفت مفعولی فعل‌های -er آسان است: -er آخر مصدر -é می‌شود، مثلاً manger می‌شود mangé. پس «دیروز یک سیب خوردم» می‌شود Hier, j'ai mangé une pomme. فقط avoir با فاعل عوض می‌شود و mangé همیشه همان می‌ماند.",
+    "build_table": [
+      ["ضمیر", "avoir", "صفت مفعولی"],
+      ["j'", "ai", "mangé"],
+      ["tu", "as", "parlé"],
+      ["il / elle", "a", "regardé"],
+      ["nous", "avons", "écouté"],
+      ["vous", "avez", "travaillé"],
+      ["ils / elles", "ont", "joué"]
+    ],
+    "example_sentences": [
+      {
+        "text": "Hier, j'ai mangé une pomme.",
+        "tts_text": null,
+        "translation_fa": "دیروز یک سیب خوردم.",
+        "tokens": [
+          { "surface": "Hier", "kind": "word", "code": "hier", "meaning_fa": "دیروز" },
+          { "surface": "j'", "kind": "word", "code": "je", "meaning_fa": "من" },
+          { "surface": "ai", "kind": "word", "code": "avoir", "meaning_fa": "(فعل کمکی گذشته)" },
+          { "surface": "mangé", "kind": "word", "code": "manger", "meaning_fa": "خوردم" },
+          { "surface": "une", "kind": "word", "code": "un", "meaning_fa": "یک" },
+          { "surface": "pomme", "kind": "word", "code": "pomme", "meaning_fa": "سیب" }
+        ]
+      },
+      {
+        "text": "Nous avons regardé un film.",
+        "tts_text": null,
+        "translation_fa": "ما یک فیلم تماشا کردیم.",
+        "tokens": [
+          { "surface": "Nous", "kind": "word", "code": "nous", "meaning_fa": "ما" },
+          { "surface": "avons", "kind": "word", "code": "avoir", "meaning_fa": "(فعل کمکی گذشته)" },
+          { "surface": "regardé", "kind": "word", "code": "regarder", "meaning_fa": "تماشا کردیم" },
+          { "surface": "un", "kind": "word", "code": "un", "meaning_fa": "یک" },
+          { "surface": "film", "kind": "word", "code": "film", "meaning_fa": "فیلم" }
+        ]
+      }
+    ],
+    "rule_line_fa": "گذشته = avoir در زمان حال + صفت مفعولی (-er می‌شود -é).",
+    "common_mistake_fa": "در فارسی فعل گذشته یک کلمه است؛ برای همین فارسی‌زبان‌ها گاهی avoir را جا می‌اندازند و می‌گویند je mangé. avoir همیشه لازم است: j'ai mangé.",
+    "category_sets": null,
+    "can_do_fa": "حالا می‌توانی بگویی دیروز چه کردی."
+  },
+  "targets": [
+    {
+      "sentence": {
+        "text": "Hier, tu as parlé avec Marie.",
+        "tts_text": null,
+        "translation_fa": "دیروز با ماری حرف زدی.",
+        "tokens": [
+          { "surface": "Hier", "kind": "word", "code": "hier", "meaning_fa": "دیروز" },
+          { "surface": "tu", "kind": "word", "code": "tu", "meaning_fa": "تو" },
+          { "surface": "as", "kind": "word", "code": "avoir", "meaning_fa": "(فعل کمکی گذشته)" },
+          { "surface": "parlé", "kind": "word", "code": "parler", "meaning_fa": "حرف زدی" },
+          { "surface": "avec", "kind": "word", "code": "avec", "meaning_fa": "با" },
+          { "surface": "Marie", "kind": "name", "code": null, "meaning_fa": null }
+        ]
+      },
+      "marked_text": "Hier, tu {{as parlé}} avec Marie.",
+      "blanks": 1,
+      "accepted": ["as parlé"],
+      "distractors": ["a parlé", "es parlé", "parles"],
+      "hint": "(parler)",
+      "accepted_full": null
+    },
+    {
+      "sentence": {
+        "text": "Nous avons écouté de la musique et nous avons dansé.",
+        "tts_text": null,
+        "translation_fa": "موسیقی گوش دادیم و رقصیدیم.",
+        "tokens": [
+          { "surface": "Nous", "kind": "word", "code": "nous", "meaning_fa": "ما" },
+          { "surface": "avons", "kind": "word", "code": "avoir", "meaning_fa": "(فعل کمکی گذشته)" },
+          { "surface": "écouté", "kind": "word", "code": "écouter", "meaning_fa": "گوش دادیم" },
+          { "surface": "de", "kind": "word", "code": "de", "meaning_fa": "(بخشی از)" },
+          { "surface": "la", "kind": "word", "code": "la", "meaning_fa": "(حرف تعریف)" },
+          { "surface": "musique", "kind": "word", "code": "musique", "meaning_fa": "موسیقی" },
+          { "surface": "et", "kind": "word", "code": "et", "meaning_fa": "و" },
+          { "surface": "nous", "kind": "word", "code": "nous", "meaning_fa": "ما" },
+          { "surface": "avons", "kind": "word", "code": "avoir", "meaning_fa": "(فعل کمکی گذشته)" },
+          { "surface": "dansé", "kind": "word", "code": "danser", "meaning_fa": "رقصیدیم" }
+        ]
+      },
+      "marked_text": "Nous {{avons écouté}} de la musique et nous {{avons dansé}}.",
+      "blanks": 2,
+      "accepted": [["avons écouté"], ["avons dansé"]],
+      "distractors": [["avez écouté", "sommes écouté", "écoutons"], ["avons danser", "avons dansée", "dansons"]],
+      "hint": null,
+      "accepted_full": null
+    }
+  ],
+  "transforms": [
+    {
+      "instruction_fa": "جمله را به گذشته ببر.",
+      "source": "Je mange une pomme.",
+      "accepted_outputs": ["J'ai mangé une pomme."]
+    }
+  ],
+  "translations": [
+    {
+      "prompt_fa": "دیروز تلویزیون تماشا کردم.",
+      "accepted_outputs": ["Hier, j'ai regardé la télévision.", "Hier, j'ai regardé la télé.", "J'ai regardé la télévision hier.", "J'ai regardé la télé hier."],
+      "tokens": [
+        { "surface": "Hier", "kind": "word", "code": "hier", "meaning_fa": "دیروز" },
+        { "surface": "j'", "kind": "word", "code": "je", "meaning_fa": "من" },
+        { "surface": "ai", "kind": "word", "code": "avoir", "meaning_fa": "(فعل کمکی گذشته)" },
+        { "surface": "regardé", "kind": "word", "code": "regarder", "meaning_fa": "تماشا کردم" },
+        { "surface": "la", "kind": "word", "code": "la", "meaning_fa": "(حرف تعریف)" },
+        { "surface": "télévision", "kind": "word", "code": "télévision", "meaning_fa": "تلویزیون" }
+      ]
+    }
+  ],
+  "issues": []
+}

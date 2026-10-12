@@ -49,6 +49,8 @@ export type BatchView = {
   } | null;
   /** Items of this batch still waiting for the admin's decision (PRD §13.9), counted live. */
   open: { candidates: number; suspects: number; duplicates: number };
+  /** A grammar unit's practice sentences so far and how many the prompt asked for (P-G sends them in parts). */
+  targets: { have: number; want: number } | null;
   fixPrompt: string | null;
   qaPrompt: string | null;
   qaDone: boolean;
@@ -487,6 +489,19 @@ function ReportStep({ view, state }: { view: BatchView; state: StepState }) {
           >
             {t("admin.batch.report.dismiss")}
           </Button>
+        </div>
+      ) : null}
+
+      {view.targets && view.targets.have < view.targets.want && !rejected ? (
+        <div className="bg-tint/60 flex flex-col gap-4 rounded-[18px] p-4 sm:p-5">
+          <p className="text-ink text-[14.5px] leading-7">{t("admin.batch.grammar.more", view.targets)}</p>
+          <PasteBox
+            label={t("admin.batch.grammar.moreLabel")}
+            placeholder={t("admin.batch.paste.placeholder")}
+            submit={t("admin.batch.grammar.moreSubmit")}
+            primary={false}
+            action={(text) => pasteAnswer(view.id, { text, mode: "fix", chatbot: "" })}
+          />
         </div>
       ) : null}
 

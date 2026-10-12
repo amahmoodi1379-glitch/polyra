@@ -3,6 +3,7 @@ import { ArrowLeft, ClipboardPaste } from "lucide-react";
 import { PageHeader } from "@/components/admin/page-header";
 import { Button } from "@/components/ui/button";
 import { t } from "@/i18n";
+import { isolateLatin } from "@/lib/bidi";
 import { requireAdmin } from "@/server/auth/session";
 import { batchStep, hasQa, type KindSlug } from "@/server/content/batches";
 import { isLanguage, languageCodes, type LanguageCode } from "@/server/content/languages";
@@ -75,6 +76,14 @@ async function languageRows(language: LanguageCode, sizes: Record<string, number
       action: { start: "units", level: unitLevel, label: t("admin.workbench.actions.units") },
     });
   }
+  const grammar = status.grammarNext;
+  if (grammar) {
+    rows.push({
+      key: "grammar",
+      text: t("admin.workbench.rows.grammar", { count: grammar.count, level: grammar.level, title: grammar.title }),
+      action: { start: "grammar", level: grammar.level, label: t("admin.workbench.actions.grammar") },
+    });
+  }
   if (status.candidates + status.suspects > 0) {
     rows.push({
       key: "review",
@@ -119,7 +128,7 @@ export default async function WorkbenchPage() {
                   className="border-line flex flex-col gap-3 border-b px-5 py-4 last:border-b-0 sm:flex-row sm:items-center sm:gap-6 sm:px-6"
                 >
                   <div className="flex min-w-0 flex-1 flex-col gap-0.5">
-                    <p className="text-ink text-[15.5px] font-bold">{row.text}</p>
+                    <p className="text-ink text-[15.5px] font-bold">{isolateLatin(row.text)}</p>
                     {row.note ? <p className="text-ink-3 text-[13.5px]">{row.note}</p> : null}
                   </div>
                   {row.action ? <RowAction action={row.action} language={language} primary={index === 0} /> : null}

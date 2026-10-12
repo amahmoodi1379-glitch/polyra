@@ -1,12 +1,18 @@
 import type { Problem } from "./problems";
 
 /** What a record became in the database, so QA findings and reports can point at it. */
-export type EntityRef = { type: "word" | "sentence" | "grammar_unit"; id: number };
+export type EntityRef = {
+  type: "word" | "sentence" | "grammar_unit" | "transform_item" | "translate_item";
+  id: number;
+};
 
-/** A record that was imported; `record` is what the chatbot sent, reused for the QA prompt. */
-export type AcceptedRecord = { label: string; entity: EntityRef | null; record: unknown };
+/**
+ * A record that was imported; `record` is what the chatbot sent, reused for the QA prompt. `part` is
+ * the answer part it came from, for answers made of several parts (a grammar unit's targets).
+ */
+export type AcceptedRecord = { label: string; entity: EntityRef | null; record: unknown; part?: string };
 /** A record that was not imported, with every reason (PRD §13.3 "مسدودکننده"). */
-export type RejectedRecord = { label: string; record: unknown; problems: Problem[] };
+export type RejectedRecord = { label: string; record: unknown; problems: Problem[]; part?: string };
 /** Imported, but worth a look (PRD §13.3 "هشدار"). */
 export type Flag = { label: string; problem: Problem; entity?: EntityRef };
 

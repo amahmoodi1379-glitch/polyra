@@ -79,14 +79,17 @@ function tryParse(text: string): { ok: true; value: unknown } | { ok: false } {
   }
 }
 
-function isAnswer(value: unknown, rootKey: string | undefined): value is Record<string, unknown> {
+/** The main key of an answer, or any of its parts' keys for an answer made of several parts. */
+export type AnswerKeys = string | readonly string[];
+
+function isAnswer(value: unknown, rootKey: AnswerKeys | undefined): value is Record<string, unknown> {
   if (!value || typeof value !== "object" || Array.isArray(value)) return false;
-  if (rootKey) return rootKey in value;
+  if (rootKey) return (typeof rootKey === "string" ? [rootKey] : rootKey).some((key) => key in value);
   return Object.keys(value).length > 0;
 }
 
 /** Objects that carry the answer's own key anywhere between `from` and `to`, outermost first. */
-function keyedObjects(text: string, from: number, to: number, rootKey: string) {
+function keyedObjects(text: string, from: number, to: number, rootKey: AnswerKeys) {
   const found: { value: unknown; text: string }[] = [];
   for (let start = text.indexOf("{", from); start >= 0 && start < to; start = text.indexOf("{", start + 1)) {
     const scanned = scan(text, start);
@@ -108,7 +111,7 @@ function keyedObjects(text: string, from: number, to: number, rootKey: string) {
  * answer's main key (`words`, `items`, ...), objects without it are ignored, and an answer hidden
  * behind a stray "{" in the chatbot's words is still found.
  */
-export function cleanPaste(raw: string, rootKey?: string): PasteResult {
+export function cleanPaste(raw: string, rootKey?: AnswerKeys): PasteResult {
   const text = unfence(tidy(raw));
   const answers: { value: unknown; text: string }[] = [];
   let cut: string | null = null;
@@ -187,7 +190,7 @@ function overlap(a: string, b: string) {
  * or starting the whole answer again. Each way is tried and the first that makes complete JSON wins;
  * if the joined text is still cut, it is returned as cut so the admin can paste one more part.
  */
-export function joinPaste(first: string, continuation: string, rootKey?: string): PasteResult {
+export function joinPaste(first: string, continuation: string, rootKey?: AnswerKeys): PasteResult {
   const head = first.trimEnd();
   const tails = continuationBodies(continuation);
   if (tails.length === 0) return { state: "cut", text: head };

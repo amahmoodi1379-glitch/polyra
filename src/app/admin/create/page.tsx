@@ -5,6 +5,7 @@ import { LanguageTabs } from "@/components/admin/language-tabs";
 import { PageHeader } from "@/components/admin/page-header";
 import { Button } from "@/components/ui/button";
 import { t, type MessageKey } from "@/i18n";
+import { isolateLatin } from "@/lib/bidi";
 import { formatAgoFa } from "@/lib/format";
 import { cn } from "@/lib/utils";
 import { requireAdmin } from "@/server/auth/session";
@@ -46,6 +47,7 @@ export default async function CreatePage({ searchParams }: PageProps<"/admin/cre
   const info = status.wordsWithoutInfo[0];
   const short = status.wordsWithoutSentences[0];
   const unitLevel = status.levelsWithoutUnits[0];
+  const grammar = status.grammarNext;
   const rows: Row[] = [
     {
       slug: "word-list",
@@ -85,6 +87,17 @@ export default async function CreatePage({ searchParams }: PageProps<"/admin/cre
       status: unitLevel ? t("admin.create.kinds.units.status", { level: unitLevel }) : t("admin.create.nothing.units"),
       action: unitLevel ? t("admin.create.kinds.units.action", { level: unitLevel }) : null,
       level: unitLevel,
+    },
+    {
+      slug: "grammar",
+      name: t("admin.create.kinds.grammar.name"),
+      status: grammar
+        ? t("admin.create.kinds.grammar.status", { count: grammar.count, level: grammar.level, title: grammar.title })
+        : status.hasUnits
+          ? t("admin.create.nothing.grammar")
+          : t("admin.create.kinds.grammar.needsUnits"),
+      action: grammar ? t("admin.create.kinds.grammar.action") : null,
+      level: grammar?.level,
     },
   ];
   // One clear next step: the first kind on the main path that has work.
@@ -145,7 +158,7 @@ export default async function CreatePage({ searchParams }: PageProps<"/admin/cre
             >
               <div className="flex min-w-0 flex-1 flex-col gap-0.5">
                 <h3 className="text-ink text-[16px] font-extrabold">{row.name}</h3>
-                <p className={cn("text-[14.5px]", row.action ? "text-ink-2" : "text-ink-3")}>{row.status}</p>
+                <p className={cn("text-[14.5px]", row.action ? "text-ink-2" : "text-ink-3")}>{isolateLatin(row.status)}</p>
               </div>
               {row.action ? (
                 <form action={startBatch} className="shrink-0">

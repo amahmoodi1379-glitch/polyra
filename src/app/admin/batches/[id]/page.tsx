@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { t, type MessageKey } from "@/i18n";
+import { isolateLatin } from "@/lib/bidi";
 import { requireAdmin } from "@/server/auth/session";
 import {
   batchFindings,
@@ -24,6 +25,16 @@ import { BatchFlow, type BatchView, type CountKey } from "./batch-flow";
 export const metadata: Metadata = { title: t("admin.create.title") };
 
 const countKeys: CountKey[] = ["added", "updated", "skipped", "dropped", "rejected"];
+
+/** Practice sentences a grammar unit has, against the number its prompt asks for. */
+async function unitTargets(unitId: unknown) {
+  if (typeof unitId !== "number") return null;
+  const [have, counts] = await Promise.all([
+    db.sentenceTarget.count({ where: { target_type: "grammar", target_id: unitId, status: { not: "retired" } } }),
+    appSetting<{ targets: number }>("prompt.grammar_counts"),
+  ]);
+  return { have, want: counts.targets };
+}
 const isLevel = (value: string) => /^[ABC][12]$/.test(value);
 
 export default async function BatchPage({ params }: PageProps<"/admin/batches/[id]">) {
@@ -73,6 +84,7 @@ export default async function BatchPage({ params }: PageProps<"/admin/batches/[i
       accepted: report.accepted.map((item) => item.label),
     },
     open: await openCounts(batch.language, batch.id),
+    targets: batch.prompt_kind === "P_G" ? await unitTargets(info.unit_id) : null,
     fixPrompt: fixPrompt(batch),
     qaPrompt: qaPrompt(batch),
     qaDone: batch.state === "qa_done" || batch.state === "reviewed",
@@ -93,7 +105,7 @@ export default async function BatchPage({ params }: PageProps<"/admin/batches/[i
             ) : null}
             <span className="text-ink-3 text-[15px] font-bold">{language}</span>
           </h1>
-          {info.summary[0] ? <p className="text-ink-2 max-w-[62ch]">{info.summary[0]}</p> : null}
+          {info.summary[0] ? <p className="text-ink-2 max-w-[62ch]">{isolateLatin(info.summary[0])}</p> : null}
           {info.summary[1] ? (
             <p className="text-ink-3 max-w-[70ch] text-[14.5px]">
               <bdi dir="ltr" className="lat">

@@ -2,6 +2,7 @@ import type { ImportBatch, Prisma, PromptKind } from "@/generated/prisma/client"
 import { qaAnswer, qaFinding } from "@/schemas/qa";
 import { db } from "@/server/db";
 import { appSetting } from "@/server/settings/read";
+import { grammar } from "./kinds/grammar";
 import { sentences } from "./kinds/sentences";
 import type { ContentKind, PlanOptions } from "./kinds/types";
 import { unitList } from "./kinds/unit-list";
@@ -10,7 +11,7 @@ import { words } from "./kinds/words";
 import { languageInfo, type LanguageCode } from "./languages";
 import { cleanPaste, joinPaste, type PasteResult } from "./paste";
 import { describeProblem } from "./problems";
-import { mergeRound, type EntityRef, type ImportReport } from "./report";
+import { mergeRound, type AcceptedRecord, type EntityRef, type ImportReport } from "./report";
 import { fillTemplate, PROMPT_VERSION, readTemplate } from "./template";
 
 /**
@@ -24,6 +25,7 @@ export const contentKinds = {
   units: unitList,
   words,
   sentences,
+  grammar,
 } satisfies Record<string, ContentKind>;
 
 export type KindSlug = keyof typeof contentKinds;
@@ -108,8 +110,33 @@ export async function setChatbot(batchId: number, name: string) {
   return true;
 }
 
+/** The keys an answer of this kind is recognised by. */
+function answerKeys(kind: ContentKind) {
+  return kind.parts ? kind.parts.map((part) => part.key) : kind.rootKey;
+}
+
+/** The records of an answer, with the part each came from; null when the answer has none of its keys. */
+export function answerRecords(kind: ContentKind, answer: Record<string, unknown>): { records: unknown[]; parts: string[] } | null {
+  const parts = kind.parts ?? [{ key: kind.rootKey }];
+  const records: unknown[] = [];
+  const from: string[] = [];
+  let found = false;
+  for (const part of parts) {
+    const value = answer[part.key];
+    if (value === undefined || value === null) continue;
+    const list = part.single ? [value] : value;
+    if (!Array.isArray(list)) return null;
+    found = true;
+    for (const record of list) {
+      records.push(record);
+      from.push(part.key);
+    }
+  }
+  return found ? { records, parts: from } : null;
+}
+
 /** Joins the pasted parts in order: the first answer and each «ادامه بده» continuation. */
-export function joinParts(parts: string[], rootKey: string): PasteResult {
+export function joinParts(parts: string[], rootKey: string | readonly string[]): PasteResult {
   const filled = parts.filter((part) => part.trim() !== "");
   if (filled.length === 0) return { state: "empty" };
   let result = cleanPaste(filled[0], rootKey);
@@ -137,22 +164,22 @@ export async function submitAnswer(batchId: number, parts: string[], mode: "answ
   if (!found) throw new Error(`No importer for ${batch.prompt_kind}`);
   const { kind } = found;
 
-  const pasted = joinParts(parts, kind.rootKey);
+  const pasted = joinParts(parts, answerKeys(kind));
   if (pasted.state === "cut" && mode === "answer") {
     await db.importBatch.update({ where: { id: batchId }, data: { raw_output: pasted.text, state: "pasted" } });
   }
   if (pasted.state !== "ok") return { state: pasted.state };
 
   const answer = pasted.value as Record<string, unknown>;
-  const records = answer[kind.rootKey];
-  if (!Array.isArray(records)) return { state: "wrong_answer" };
+  const content = answerRecords(kind, answer);
+  if (!content) return { state: "wrong_answer" };
   const issues = Array.isArray(answer.issues)
     ? answer.issues.map((item) => (typeof item === "string" ? item : JSON.stringify(item)))
     : [];
 
   const report = await db.$transaction(
     async (tx) => {
-      const round = await kind.importRecords(tx, batch, records);
+      const round = await kind.importRecords(tx, batch, content.records, content.parts);
       const merged = mergeRound(batchReport(batch), round, issues);
       const rawOutput = mode === "answer" ? pasted.text : `${batch.raw_output ?? ""}\n\n${pasted.text}`;
       await tx.importBatch.update({
@@ -175,17 +202,49 @@ export function fixPrompt(batch: ImportBatch): string | null {
   const report = batchReport(batch);
   const found = kindOf(batch.prompt_kind);
   if (!report || report.rejected.length === 0 || !found) return null;
+  const multi = Boolean(found.kind.parts);
   const rejected = report.rejected
     .map((item, index) =>
       [
-        `رکورد ${index + 1}:`,
+        multi && item.part ? `رکورد ${index + 1} (بخش ${item.part}):` : `رکورد ${index + 1}:`,
         JSON.stringify(item.record, null, 2),
         "دلیل:",
         ...item.problems.map((problem) => `- ${describeProblem(problem, "chatbot")}`),
       ].join("\n"),
     )
     .join("\n\n");
-  return fillTemplate(readTemplate("fix.md", batch.prompt_version), { root: found.kind.rootKey, rejected });
+  const root = found.kind.parts
+    ? `${found.kind.parts.map((part) => part.key).join("، ")}؛ هر رکورد زیر کلید بخش خودش`
+    : found.kind.rootKey;
+  return fillTemplate(readTemplate("fix.md", batch.prompt_version), { root, rejected });
+}
+
+/** Accepted records back in the answer's own structure, for the QA prompt. */
+function qaContent(kind: ContentKind, accepted: AcceptedRecord[]) {
+  if (!kind.parts) return { [kind.rootKey]: accepted.map((item) => item.record) };
+  const content: Record<string, unknown> = {};
+  for (const part of kind.parts) {
+    const records = accepted.filter((item) => item.part === part.key).map((item) => item.record);
+    if (records.length > 0) content[part.key] = part.single ? records[records.length - 1] : records;
+  }
+  return content;
+}
+
+/** The accepted record a QA finding's path points at, e.g. "targets[3].distractors[1]". */
+function locate(kind: ContentKind, accepted: AcceptedRecord[], path: string): AcceptedRecord | undefined {
+  for (const part of kind.parts ?? [{ key: kind.rootKey }]) {
+    if (part.single) {
+      if (path === part.key || path.startsWith(`${part.key}.`) || path.startsWith(`${part.key}[`)) {
+        return accepted.findLast((item) => item.part === part.key);
+      }
+      continue;
+    }
+    const index = path.match(new RegExp(`^${part.key}\\[(\\d+)\\]`))?.[1];
+    if (index === undefined) continue;
+    const records = kind.parts ? accepted.filter((item) => item.part === part.key) : accepted;
+    return records[Number(index)];
+  }
+  return undefined;
 }
 
 /** The QA prompt holds every imported record, in the same structure as the answer (PRD §14.8). */
@@ -193,7 +252,7 @@ export function qaPrompt(batch: ImportBatch): string | null {
   const report = batchReport(batch);
   const found = kindOf(batch.prompt_kind);
   if (!report || report.accepted.length === 0 || !found || !hasQa(batch.prompt_kind)) return null;
-  const content = JSON.stringify({ [found.kind.rootKey]: report.accepted.map((item) => item.record) }, null, 1);
+  const content = JSON.stringify(qaContent(found.kind, report.accepted), null, 1);
   return fillTemplate(readTemplate("P-QA.md", batch.prompt_version), {
     language: languageInfo[batch.language as LanguageCode]?.name_fa ?? batch.language,
     level: batchParams(batch).level,
@@ -213,13 +272,11 @@ export async function submitQa(batchId: number, parts: string[]): Promise<Submit
   const answer = qaAnswer.safeParse(pasted.value);
   if (!answer.success) return { state: "wrong_answer" };
 
-  const pathPattern = new RegExp(`^${found.kind.rootKey}\\[(\\d+)\\]`);
   const findings: QaFindingRow[] = [];
   for (const raw of answer.data.findings) {
     const parsed = qaFinding.safeParse(raw);
     if (!parsed.success) continue;
-    const index = Number(parsed.data.path.match(pathPattern)?.[1] ?? -1);
-    const accepted = report.accepted[index];
+    const accepted = locate(found.kind, report.accepted, parsed.data.path);
     findings.push({ ...parsed.data, label: accepted?.label ?? null, entity: accepted?.entity ?? null });
   }
   await db.importBatch.update({

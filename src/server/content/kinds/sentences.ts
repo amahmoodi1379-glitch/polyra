@@ -1,15 +1,13 @@
-import { createHash } from "node:crypto";
-import type { Prisma } from "@/generated/prisma/client";
-import { checkTokens, fold, type TokenProblem } from "@/engine/tokens";
 import { t } from "@/i18n";
-import { sentenceRecord, type SentenceRecord, type SentenceTargetRecord } from "@/schemas/sentences";
+import { sentenceRecord, type SentenceTargetRecord } from "@/schemas/sentences";
 import { db } from "@/server/db";
 import { appSetting, engineNumber } from "@/server/settings/read";
 import { levelRank } from "../languages";
 import { problem, zodProblems, type Problem } from "../problems";
-import { emptyRound, type Flag } from "../report";
+import { emptyRound } from "../report";
 import { loadVocabulary, type LoadedVocabulary } from "../vocabulary";
-import { batchSize, example, labelOf, languageValues, lines, params, trace } from "./shared";
+import { addTargets, checkTarget, lengthFlags, mapSentence, storeSentence } from "./sentence-store";
+import { batchSize, example, labelOf, languageValues, lines, params } from "./shared";
 import type { ContentKind, Tx } from "./types";
 
 type SentencesParams = { level: string; word_ids: number[] };
@@ -20,84 +18,6 @@ const cardWord = { meaning_fa: { not: null }, no_card: false, register: "standar
 const FIRST_WORDS = 30;
 /** Above this many allowed words the meanings are left out so the prompt fits (PRD §14.9). */
 const LIST_WITH_MEANINGS = 600;
-const MAX_SENTENCE = 200;
-const MAX_OPTION = 80;
-const OUT_OF_LIST_SHARE = 0.1;
-
-/** Same sentence = same text after tidying spaces, apostrophes and case (PRD §14.9). */
-export function sentenceHash(text: string) {
-  const clean = fold(text).replace(/\s+/g, " ").trim();
-  return createHash("sha256").update(clean).digest("hex");
-}
-
-const blankPattern = /\{\{(.*?)\}\}/g;
-const isStrings = (value: unknown): value is string[] => Array.isArray(value) && value.every((item) => typeof item === "string");
-const tidy = (text: string) => text.normalize("NFC").replace(/[’ʼ]/g, "'").replace(/\s+/g, " ").trim();
-
-function tokenProblem(item: TokenProblem): Problem {
-  switch (item.type) {
-    case "not_found":
-      return problem("tokenNotFound", { surface: item.surface });
-    case "uncovered":
-      return problem("tokenUncovered", { piece: item.piece });
-    case "name_not_capital":
-      return problem("nameNotCapital", { surface: item.surface });
-    case "number_without_digit":
-      return problem("numberWithoutDigit", { surface: item.surface });
-  }
-}
-
-/** Blank rules of one target (PRD §13.3 "هدف جمله"). */
-export function checkTarget(target: SentenceTargetRecord, text: string, path: string): Problem[] {
-  const problems: Problem[] = [];
-  const blanks = [...target.marked_text.matchAll(blankPattern)].map((match) => match[1].trim());
-  if (blanks.length !== target.blanks) {
-    problems.push(problem("blanksCount", { field: `${path}.marked_text`, found: blanks.length, expected: target.blanks }));
-    return problems;
-  }
-  if (tidy(target.marked_text.replace(blankPattern, "$1")) !== tidy(text)) {
-    problems.push(problem("markedTextMismatch", { field: `${path}.marked_text` }));
-  }
-  // One blank: flat lists. Two blanks: a list per blank.
-  const acceptedPerBlank = target.blanks === 1 ? [target.accepted] : target.accepted;
-  const distractorsPerBlank = target.blanks === 1 ? [target.distractors] : target.distractors;
-  blanks.forEach((blank, index) => {
-    const accepted = acceptedPerBlank[index];
-    const distractors = distractorsPerBlank[index];
-    const suffix = target.blanks === 1 ? "" : `[${index}]`;
-    if (!isStrings(accepted)) {
-      problems.push(problem("wrongType", { field: `${path}.accepted${suffix}` }));
-      return;
-    }
-    if (!isStrings(distractors)) {
-      problems.push(problem("wrongType", { field: `${path}.distractors${suffix}` }));
-      return;
-    }
-    const acceptedSet = new Set(accepted.map((value) => fold(value.trim())));
-    if (!acceptedSet.has(fold(blank))) problems.push(problem("blankNotAccepted", { text: blank, field: `${path}.accepted${suffix}` }));
-    if (distractors.length !== 3) problems.push(problem("distractorsCount", { field: `${path}.distractors${suffix}` }));
-    const folded = distractors.map((value) => fold(value.trim()));
-    if (new Set(folded).size !== folded.length) problems.push(problem("distractorsRepeat", { field: `${path}.distractors${suffix}` }));
-    for (const [k, value] of folded.entries()) {
-      if (acceptedSet.has(value)) problems.push(problem("distractorAccepted", { value: distractors[k] }));
-    }
-  });
-  return problems;
-}
-
-/** Length warnings (PRD §13.3 "همه"). */
-function lengthFlags(sentence: SentenceRecord, label: string): Flag[] {
-  const flags: Flag[] = [];
-  if (sentence.text.length > MAX_SENTENCE) flags.push({ label, problem: problem("tooLong", { field: "text", max: MAX_SENTENCE }) });
-  for (const target of sentence.targets) {
-    const options = [...target.accepted, ...target.distractors].flat();
-    if (options.some((option) => option.length > MAX_OPTION)) {
-      flags.push({ label, problem: problem("tooLong", { field: "distractors", max: MAX_OPTION }) });
-      break;
-    }
-  }
-  return flags;
-}
 
 async function resolveTarget(tx: Tx, language: string, target: SentenceTargetRecord, vocabulary: LoadedVocabulary) {
   if (target.type === "word") return vocabulary.byCode(target.target)?.id ?? null;
@@ -204,8 +124,8 @@ export const sentences: ContentKind = {
       const problems: Problem[] = [];
       if (sentence.targets.length === 0) problems.push(problem("noTargets"));
 
-      const mapping = checkTokens(sentence.text, sentence.tokens, vocabulary);
-      if (!mapping.ok) problems.push(...mapping.problems.map(tokenProblem));
+      const mapping = mapSentence(sentence, vocabulary);
+      problems.push(...mapping.problems);
 
       const targetIds: number[] = [];
       for (const [k, target] of sentence.targets.entries()) {
@@ -214,88 +134,23 @@ export const sentences: ContentKind = {
         if (id === null) problems.push(problem("targetUnknown", { code: target.target }));
         targetIds.push(id ?? 0);
       }
-      if (problems.length > 0 || !mapping.ok) {
+      if (problems.length > 0 || !mapping.rows) {
         round.rejected.push({ label, record, problems });
         continue;
       }
-      round.warnings.push(...lengthFlags(sentence, label));
+      round.warnings.push(...lengthFlags(sentence.text, sentence.targets, label));
 
-      const hash = sentenceHash(sentence.text);
-      const existingId =
-        seenInAnswer.get(hash) ??
-        (await tx.sentence.findUnique({ where: { language_text_hash: { language, text_hash: hash } }, select: { id: true } }))?.id;
-
-      let sentenceId: number;
-      if (existingId) {
-        // The same sentence again: keep it, only add targets it does not have yet (PRD §14.9).
-        sentenceId = existingId;
-        round.skipped++;
-      } else {
-        const wordRows = mapping.rows.filter((row) => row.kind === "word");
-        const levels = wordRows.map((row) => (row.word_id ? vocabulary.byId(row.word_id)?.level : null)).filter(Boolean) as string[];
-        const outside = wordRows.filter((row) => {
-          const word = row.word_id ? vocabulary.byId(row.word_id) : undefined;
-          return !word || levelRank(word.level) > levelRank(level);
-        }).length;
-        if (wordRows.length > 0 && outside / wordRows.length >= OUT_OF_LIST_SHARE) {
-          round.warnings.push({ label, problem: problem("outOfList", { share: Math.round((100 * outside) / wordRows.length) }) });
-        }
-        const created = await tx.sentence.create({
-          data: {
-            language,
-            text: sentence.text,
-            tts_text: sentence.tts_text,
-            translation_fa: sentence.translation_fa,
-            text_hash: hash,
-            level: levels.reduce<string | null>((top, value) => (top && levelRank(top) >= levelRank(value) ? top : value), null),
-            ...trace(batch),
-            words: {
-              create: mapping.rows.map((row) => ({
-                position: row.position,
-                kind: row.kind,
-                word_id: row.word_id,
-                surface: row.surface,
-                spans: row.spans,
-                meaning_fa_ctx: row.meaning_fa_ctx,
-                suspect: row.suspect,
-                code_given: row.code_given,
-                candidate_reason: row.candidate_reason,
-              })),
-            },
-          },
-        });
-        sentenceId = created.id;
-        round.added++;
-        round.candidates += mapping.rows.filter((row) => row.candidate_reason).length;
-        round.suspects += mapping.rows.filter((row) => row.suspect).length;
-      }
-      seenInAnswer.set(hash, sentenceId);
-
-      const present = await tx.sentenceTarget.findMany({
-        where: { sentence_id: sentenceId },
-        select: { target_type: true, target_id: true, marked_text: true },
-      });
-      const has = new Set(present.map((row) => `${row.target_type}|${row.target_id}|${tidy(row.marked_text)}`));
-      for (const [k, target] of sentence.targets.entries()) {
-        const key = `${target.type}|${targetIds[k]}|${tidy(target.marked_text)}`;
-        if (has.has(key)) continue;
-        has.add(key);
-        await tx.sentenceTarget.create({
-          data: {
-            language,
-            sentence_id: sentenceId,
-            target_type: target.type,
-            target_id: targetIds[k],
-            marked_text: target.marked_text,
-            blanks: target.blanks,
-            accepted: target.accepted as Prisma.InputJsonValue,
-            distractors: target.distractors as Prisma.InputJsonValue,
-            hint: target.hint,
-            accepted_full: (target.accepted_full ?? undefined) as Prisma.InputJsonValue | undefined,
-            ...trace(batch),
-          },
-        });
-      }
+      // The same sentence again: keep it, only add targets it does not have yet (PRD §14.9).
+      const stored = await storeSentence(tx, batch, { sentence, rows: mapping.rows, vocabulary, level, label }, round, seenInAnswer);
+      if (stored.isNew) round.added++;
+      else round.skipped++;
+      const sentenceId = stored.id;
+      await addTargets(
+        tx,
+        batch,
+        sentenceId,
+        sentence.targets.map((target, k) => ({ type: target.type, id: targetIds[k], target })),
+      );
       round.accepted.push({ label: sentence.text, entity: { type: "sentence", id: sentenceId }, record });
     }
     return round;
