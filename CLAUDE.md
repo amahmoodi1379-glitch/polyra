@@ -28,11 +28,13 @@ Visual quality and UX are top priority; avoid generic "AI-looking" design. When 
 would help, ask the owner to generate it and give a ready-made prompt.
 
 ## Design
-- Direction: "Geometry" was retired (owner found it childish). Two replacement directions await the owner's
-  pick (`design/prototypes/directions-v3.html`); the recommended one, "Certificate" (security paper, navy
-  intaglio ink, guilloche, holographic foil), is built on every screen in `design/prototypes/polyra-app.html`.
-  Its contract lives in `.impeccable/surfaces/`. Prototypes load Motion from a CDN and fonts from Google
-  Fonts only because they are hosted previews; the app self-hosts everything (rule 9).
+- Direction: "Jelly". The owner rejected Geometry, Certificate and Tehran modernism and fixed the brand palette
+  to six colors: #D81E5B, #A8134A, #F0527F, #FDE7EF, #2B1020, #1FB5A8 (roles in `DECISIONS.md`; wrong answer
+  #A8134A, correct #1FB5A8). Start is a shape-shifting WebGL jelly with the "polyra" wordmark in a moving
+  gradient and no "شروع" label; it is the only playful element, the rest stays calm. Built on every screen in
+  `design/prototypes/polyra-jelly.html`; its contract lives in `.impeccable/surfaces/`. Older prototypes in
+  `design/prototypes/` are history. Prototypes load Motion from a CDN and fonts from Google Fonts only because
+  they are hosted previews; the app self-hosts everything (rule 9).
 - Design skills in `.claude/skills`: `impeccable` (Apache 2.0, from pbakaus/impeccable) for UI craft,
   critique and polish; `motion-design` (MIT, from LottieFiles/motion-design-skill) for timing and easing.
   Use them for every UI task. Build both light and dark themes, RTL and LTR, and respect reduced motion.
