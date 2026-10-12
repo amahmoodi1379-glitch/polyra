@@ -7,7 +7,7 @@ import { OTP_RULES, requestOtp, verifyOtp } from "@/server/auth/otp";
 import { clientIp, startSession } from "@/server/auth/session";
 import { db } from "@/server/db";
 import { logError } from "@/server/errors";
-import { getSmsProvider } from "@/server/sms/provider";
+import { getSmsProvider, SmsSendError } from "@/server/sms/provider";
 import { findOrCreateUser } from "@/server/users";
 
 export type LoginState =
@@ -24,6 +24,10 @@ function authSecret() {
 function safeNext(value: FormDataEntryValue | null) {
   const next = typeof value === "string" ? value : "";
   return next.startsWith("/") && !next.startsWith("//") ? next : "/";
+}
+
+function failedMessage(error: unknown, code: string) {
+  return t(error instanceof SmsSendError ? "login.errors.smsFailed" : "errors.withCode", { code });
 }
 
 const minutes = (seconds: number) => Math.max(1, Math.ceil(seconds / 60));
@@ -48,7 +52,7 @@ export async function sendCode(_prev: LoginState, form: FormData): Promise<Login
     return await sendCodeTo(phone);
   } catch (error) {
     const code = await logError("login.sendCode", error);
-    return { step: "phone", phoneInput: raw, error: t("errors.withCode", { code }) };
+    return { step: "phone", phoneInput: raw, error: failedMessage(error, code) };
   }
 }
 
@@ -59,7 +63,7 @@ export async function resendCode(prev: LoginState): Promise<LoginState> {
     return next.step === "code" ? next : { ...prev, error: next.error };
   } catch (error) {
     const code = await logError("login.resendCode", error);
-    return { ...prev, error: t("errors.withCode", { code }) };
+    return { ...prev, error: failedMessage(error, code) };
   }
 }
 

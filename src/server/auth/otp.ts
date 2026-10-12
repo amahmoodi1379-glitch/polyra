@@ -97,7 +97,7 @@ export async function requestOtp(
       test_code: sms.isMock ? code : null,
     },
   });
-  await sms.send(phone, `کد ورود polyra: ${code}`);
+  await sms.sendLoginCode(phone, code);
   return { ok: true, expiresAt, testCode: sms.isMock ? code : null };
 }
 

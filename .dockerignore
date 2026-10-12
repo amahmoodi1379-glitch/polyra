@@ -1,0 +1,17 @@
+.git
+.next
+node_modules
+src/generated
+test-results
+playwright-report
+storage
+design
+.claude
+.impeccable
+docs
+tests
+*.tsbuildinfo
+.env*
+!.env.example
+playwright.config.ts
+vitest.config.ts
