@@ -32,7 +32,8 @@ would help, ask the owner to generate it and give a ready-made prompt.
   to six colors: #D81E5B, #A8134A, #F0527F, #FDE7EF, #2B1020, #1FB5A8 (roles in `DECISIONS.md`; wrong answer
   #A8134A, correct #1FB5A8). Start is a shape-shifting WebGL jelly with the "polyra" wordmark in a moving
   gradient and no "شروع" label; it is the only playful element, the rest stays calm. Built on every screen in
-  `design/prototypes/polyra-jelly.html`; its contract lives in `.impeccable/surfaces/`. Older prototypes in
+  `design/prototypes/polyra-jelly.html`. The design system (tokens, components, motion, rules) is `DESIGN.md`
+  with `.impeccable/design.json`; the prototype's contract lives in `.impeccable/surfaces/`. Older prototypes in
   `design/prototypes/` are history. Prototypes load Motion from a CDN and fonts from Google Fonts only because
   they are hosted previews; the app self-hosts everything (rule 9).
 - Design skills in `.claude/skills`: `impeccable` (Apache 2.0, from pbakaus/impeccable) for UI craft,

@@ -53,24 +53,11 @@ new item is introduced before it is tested, and the first attempt is never penal
 - Name: Polyra (پلریا).
 - No emoji anywhere. (PRD §2)
 - No gamification devices such as leagues or XP. (PRD §1)
-- Owner's words on the feel: refined, chic, modern, "scientific and business-like"; colors that do
-  not tire the eye over time; not childish. Matte, glass, and moving-liquid materials are welcome,
-  with liquid only on the Start card (owner decision). Dark mode must stay as attractive as light.
-  Sound matters. Each skill should have a meaningful, weighty icon, not an arbitrary shape.
-
-## Evidence on Hand
-
-- Real content examples exist only inside the PRD (sample words, sentences). No logo, no
-  illustrations, no photography, no testimonials yet. Do not invent user numbers or results.
-
-## Product Principles
-
-1. Fewest choices: the learner presses Start; the engine decides.
-2. Honesty: an "I don't know" button on every exercise; no penalty on the first try; real time
-   estimates.
-3. Calm seriousness: an adult learning tool, not a game.
-4. Sound and the target language are the heroes of every screen.
-
-## Accessibility & Inclusion
-
-Large touch targets, reduced-motion support, both themes, Persian digits in Persian UI.
+- Brand palette fixed by the owner to six colors: #D81E5B, #A8134A, #F0527F, #FDE7EF, #2B1020,
+  #1FB5A8 (`DECISIONS.md`). Wrong answers deep raspberry #A8134A, correct answers teal #1FB5A8.
+- The Start button is a moving, shape-changing jelly with "polyra" written on it in a shifting
+  gradient, with no "شروع" label (owner's words: «بامزه‌تر»). It is the only playful element; the
+  rest stays calm and refined so the app never feels childish (owner rejected earlier worlds as
+  childish). Dark mode must stay as attractive as light.
+- Sound matters (button and answer sounds on by default, switchable). Each skill has a meaningful,
+  weighty icon, not an arbitrary shape.

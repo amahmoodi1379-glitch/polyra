@@ -1,0 +1,733 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-12T17:30:58Z",
+  "title": "Design System: Polyra",
+  "extensions": {
+    "colorMeta": {
+      "raspberry": {
+        "role": "primary",
+        "displayName": "Raspberry",
+        "canonical": "#D81E5B",
+        "oklch": "oklch(57.4% 0.215 10.0)",
+        "tonalRamp": [
+          "#1D0106",
+          "#490119",
+          "#78082E",
+          "#AB1246",
+          "#DE2760",
+          "#F96584",
+          "#FEA9B5",
+          "#FEE8EB"
+        ]
+      },
+      "raspberry-deep": {
+        "role": "primary",
+        "displayName": "Deep Raspberry",
+        "canonical": "#A8134A",
+        "oklch": "oklch(47.6% 0.180 7.4)",
+        "tonalRamp": [
+          "#1E0007",
+          "#48021B",
+          "#770A32",
+          "#A9154B",
+          "#D0416A",
+          "#F7658A",
+          "#FDA9B8",
+          "#FEE8EB"
+        ]
+      },
+      "raspberry-light": {
+        "role": "primary",
+        "displayName": "Light Raspberry",
+        "canonical": "#F0527F",
+        "oklch": "oklch(66.4% 0.195 6.9)",
+        "tonalRamp": [
+          "#1E0007",
+          "#48021C",
+          "#770A33",
+          "#A9164C",
+          "#D53869",
+          "#FD5E8A",
+          "#FDA9B9",
+          "#FEE8EC"
+        ]
+      },
+      "blush": {
+        "role": "neutral",
+        "displayName": "Blush",
+        "canonical": "#FDE7EF",
+        "oklch": "oklch(94.8% 0.026 353.5)",
+        "tonalRamp": [
+          "#14070C",
+          "#2E1F25",
+          "#4B3A41",
+          "#6A585F",
+          "#8B777E",
+          "#AC98A0",
+          "#D3BEC5",
+          "#FEE8F0"
+        ]
+      },
+      "aubergine": {
+        "role": "neutral",
+        "displayName": "Aubergine",
+        "canonical": "#2B1020",
+        "oklch": "oklch(22.1% 0.051 345.5)",
+        "tonalRamp": [
+          "#190210",
+          "#351929",
+          "#533546",
+          "#735264",
+          "#947184",
+          "#B792A5",
+          "#DEB7CB",
+          "#FFE7F3"
+        ]
+      },
+      "teal": {
+        "role": "secondary",
+        "displayName": "Teal",
+        "canonical": "#1FB5A8",
+        "oklch": "oklch(69.8% 0.117 185.5)",
+        "tonalRamp": [
+          "#000F0D",
+          "#032B27",
+          "#0B4A44",
+          "#016D64",
+          "#169086",
+          "#20B6A9",
+          "#58DDCF",
+          "#B8FFF5"
+        ]
+      },
+      "blush-ground": {
+        "role": "neutral",
+        "displayName": "Blush Ground",
+        "canonical": "#FFF6F9",
+        "oklch": "oklch(98.1% 0.010 354.9)",
+        "tonalRamp": [
+          "#0F090B",
+          "#282224",
+          "#453E40",
+          "#635B5E",
+          "#837B7D",
+          "#A49C9F",
+          "#CAC1C4",
+          "#F5ECEF"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "canonical": "#FFFFFF",
+        "oklch": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#7D7D7D",
+          "#9E9E9E",
+          "#C4C4C4",
+          "#EEEEEE"
+        ]
+      },
+      "blush-deep": {
+        "role": "neutral",
+        "displayName": "Blush Deep",
+        "canonical": "#F9D5E2",
+        "oklch": "oklch(90.7% 0.043 354.2)",
+        "tonalRamp": [
+          "#18030C",
+          "#341B25",
+          "#523641",
+          "#72545F",
+          "#93737F",
+          "#B594A0",
+          "#DCB9C6",
+          "#FEE8EF"
+        ]
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#F0DDE5",
+        "oklch": "oklch(91.5% 0.023 350.1)",
+        "tonalRamp": [
+          "#13070C",
+          "#2D1F26",
+          "#4A3B41",
+          "#68585F",
+          "#89787F",
+          "#AA99A0",
+          "#D1BEC6",
+          "#FCE8F1"
+        ]
+      },
+      "hairline-strong": {
+        "role": "neutral",
+        "displayName": "Hairline Strong",
+        "canonical": "#E2C4D1",
+        "oklch": "oklch(84.9% 0.038 349.9)",
+        "tonalRamp": [
+          "#16050D",
+          "#321C27",
+          "#4F3843",
+          "#6F5561",
+          "#907480",
+          "#B295A2",
+          "#D8BBC7",
+          "#FEE7F1"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Ink Soft",
+        "canonical": "#5E3F50",
+        "oklch": "oklch(40.9% 0.050 345.5)",
+        "tonalRamp": [
+          "#190310",
+          "#351929",
+          "#533546",
+          "#735264",
+          "#947284",
+          "#B692A5",
+          "#DDB8CB",
+          "#FFE7F3"
+        ]
+      },
+      "ink-faint": {
+        "role": "neutral",
+        "displayName": "Ink Faint",
+        "canonical": "#7A5A6C",
+        "oklch": "oklch(50.7% 0.049 344.2)",
+        "tonalRamp": [
+          "#180310",
+          "#341A2A",
+          "#523546",
+          "#725364",
+          "#937284",
+          "#B693A6",
+          "#DCB8CC",
+          "#FEE7F3"
+        ]
+      },
+      "raspberry-text": {
+        "role": "primary",
+        "displayName": "Raspberry Text",
+        "canonical": "#C21852",
+        "oklch": "oklch(52.9% 0.200 9.4)",
+        "tonalRamp": [
+          "#1D0106",
+          "#490119",
+          "#78062F",
+          "#AB1047",
+          "#D83463",
+          "#F96485",
+          "#FEA8B6",
+          "#FFE8EB"
+        ]
+      },
+      "teal-text": {
+        "role": "secondary",
+        "displayName": "Teal Text",
+        "canonical": "#0E8077",
+        "oklch": "oklch(54.1% 0.092 186.1)",
+        "tonalRamp": [
+          "#000F0D",
+          "#032B27",
+          "#0A4A44",
+          "#156C64",
+          "#288F85",
+          "#51B1A7",
+          "#79D8CD",
+          "#B7FFF6"
+        ]
+      },
+      "teal-wash": {
+        "role": "secondary",
+        "displayName": "Teal Wash",
+        "canonical": "#DDF5F2",
+        "oklch": "oklch(95.2% 0.025 187.7)",
+        "tonalRamp": [
+          "#000F0D",
+          "#152826",
+          "#304442",
+          "#4E6260",
+          "#6D8280",
+          "#8DA4A1",
+          "#B3CAC7",
+          "#DCF4F1"
+        ]
+      },
+      "raspberry-wash": {
+        "role": "primary",
+        "displayName": "Raspberry Wash",
+        "canonical": "#FBE0EA",
+        "oklch": "oklch(93.2% 0.032 353.3)",
+        "tonalRamp": [
+          "#15060C",
+          "#301D25",
+          "#4E3941",
+          "#6D565F",
+          "#8E767F",
+          "#B097A0",
+          "#D6BCC6",
+          "#FEE7F0"
+        ]
+      },
+      "gender-feminine": {
+        "role": "tertiary",
+        "displayName": "Feminine Plum",
+        "canonical": "#8E3BB0",
+        "oklch": "oklch(51.7% 0.186 314.5)",
+        "tonalRamp": [
+          "#160020",
+          "#39034C",
+          "#5F0C7C",
+          "#832FA4",
+          "#A552C8",
+          "#C875ED",
+          "#E2ACFB",
+          "#F7E8FE"
+        ]
+      },
+      "gender-masculine": {
+        "role": "tertiary",
+        "displayName": "Masculine Blue",
+        "canonical": "#2962C4",
+        "oklch": "oklch(51.5% 0.165 260.5)",
+        "tonalRamp": [
+          "#000826",
+          "#001F57",
+          "#02388E",
+          "#1E57B8",
+          "#3F79DD",
+          "#659DFC",
+          "#A5C5FC",
+          "#E6EFFE"
+        ]
+      },
+      "gender-neuter": {
+        "role": "tertiary",
+        "displayName": "Neuter Ochre",
+        "canonical": "#A66C0C",
+        "oklch": "oklch(57.9% 0.121 71.4)",
+        "tonalRamp": [
+          "#130900",
+          "#341F02",
+          "#583809",
+          "#815201",
+          "#A96F13",
+          "#CD913F",
+          "#F5B767",
+          "#FEEBD6"
+        ]
+      },
+      "night-surface": {
+        "role": "neutral",
+        "displayName": "Night Surface",
+        "canonical": "#381A2B",
+        "oklch": "oklch(26.7% 0.054 346.3)",
+        "tonalRamp": [
+          "#1A0210",
+          "#361829",
+          "#543446",
+          "#745164",
+          "#967184",
+          "#B891A5",
+          "#DFB7CB",
+          "#FFE7F3"
+        ]
+      },
+      "night-tint": {
+        "role": "neutral",
+        "displayName": "Night Tint",
+        "canonical": "#45213A",
+        "oklch": "oklch(30.7% 0.066 339.9)",
+        "tonalRamp": [
+          "#1B0014",
+          "#38152E",
+          "#57314B",
+          "#774F69",
+          "#986E8A",
+          "#BB8FAC",
+          "#E2B4D2",
+          "#FEE7F5"
+        ]
+      },
+      "night-ink": {
+        "role": "neutral",
+        "displayName": "Night Ink",
+        "canonical": "#FDE7EF",
+        "oklch": "oklch(94.8% 0.026 353.5)",
+        "tonalRamp": [
+          "#14070C",
+          "#2E1F25",
+          "#4B3A41",
+          "#6A585F",
+          "#8B777E",
+          "#AC98A0",
+          "#D3BEC5",
+          "#FEE8F0"
+        ]
+      },
+      "night-ink-soft": {
+        "role": "neutral",
+        "displayName": "Night Ink Soft",
+        "canonical": "#DCC0CD",
+        "oklch": "oklch(83.5% 0.036 348.2)",
+        "tonalRamp": [
+          "#16050E",
+          "#311D27",
+          "#4E3843",
+          "#6E5661",
+          "#8E7581",
+          "#B096A2",
+          "#D7BBC8",
+          "#FEE7F2"
+        ]
+      },
+      "night-ink-faint": {
+        "role": "neutral",
+        "displayName": "Night Ink Faint",
+        "canonical": "#B994A8",
+        "oklch": "oklch(70.7% 0.052 344.8)",
+        "tonalRamp": [
+          "#190210",
+          "#35192A",
+          "#533446",
+          "#735264",
+          "#947184",
+          "#B792A6",
+          "#DEB7CC",
+          "#FEE7F3"
+        ]
+      },
+      "night-raspberry-text": {
+        "role": "primary",
+        "displayName": "Night Raspberry Text",
+        "canonical": "#F27AA0",
+        "oklch": "oklch(72.7% 0.152 1.5)",
+        "tonalRamp": [
+          "#1D0009",
+          "#470321",
+          "#750C3B",
+          "#9D2D58",
+          "#C35077",
+          "#E97298",
+          "#FBA9C0",
+          "#FFE8ED"
+        ]
+      },
+      "night-teal-text": {
+        "role": "secondary",
+        "displayName": "Night Teal Text",
+        "canonical": "#3FD3C5",
+        "oklch": "oklch(78.7% 0.123 185.7)",
+        "tonalRamp": [
+          "#000F0D",
+          "#002B27",
+          "#044A45",
+          "#0C6C64",
+          "#208F85",
+          "#2CB5A9",
+          "#4DDED0",
+          "#BAFEF5"
+        ]
+      },
+      "night-gender-feminine": {
+        "role": "tertiary",
+        "displayName": "Night Feminine Plum",
+        "canonical": "#D9A2EE",
+        "oklch": "oklch(78.9% 0.120 316.4)",
+        "tonalRamp": [
+          "#16001F",
+          "#390449",
+          "#582669",
+          "#78458A",
+          "#9965AD",
+          "#BC86D0",
+          "#E3ACF8",
+          "#F8E8FE"
+        ]
+      },
+      "night-gender-masculine": {
+        "role": "tertiary",
+        "displayName": "Night Masculine Blue",
+        "canonical": "#9DBBF5",
+        "oklch": "oklch(79.1% 0.089 263.3)",
+        "tonalRamp": [
+          "#00052D",
+          "#0B204E",
+          "#263E6F",
+          "#435C90",
+          "#617DB3",
+          "#819ED7",
+          "#A6C4FF",
+          "#E6EFFF"
+        ]
+      },
+      "night-gender-neuter": {
+        "role": "tertiary",
+        "displayName": "Night Neuter Ochre",
+        "canonical": "#E9B75E",
+        "oklch": "oklch(80.7% 0.121 80.0)",
+        "tonalRamp": [
+          "#120900",
+          "#312101",
+          "#543B05",
+          "#79570D",
+          "#A37403",
+          "#C6953A",
+          "#EDBB62",
+          "#FFECCE"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "\"polyra\" on the jelly only, with a slow-moving gradient fill."
+      },
+      "headword": {
+        "displayName": "Headword",
+        "purpose": "The word being introduced on the word card."
+      },
+      "display": {
+        "displayName": "Display",
+        "purpose": "Persian screen titles."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Persian meaning under a headword; feedback titles."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Sheet titles."
+      },
+      "target-sentence": {
+        "displayName": "Target Sentence",
+        "purpose": "French or German exercise sentences."
+      },
+      "target-text": {
+        "displayName": "Target Text",
+        "purpose": "Examples and answer options in the language being learned."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Persian running text and list rows."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Field labels, card headings, hints."
+      },
+      "level": {
+        "displayName": "Level",
+        "purpose": "CEFR levels such as A2, always in Fraunces."
+      }
+    },
+    "shadows": [
+      {
+        "name": "card-lift",
+        "value": "0 1px 2px rgba(43,16,32,.05), 0 10px 26px -14px rgba(120,20,60,.28)",
+        "purpose": "Cards, skill cards, answer options, score tiles (day)."
+      },
+      {
+        "name": "card-lift-night",
+        "value": "0 1px 2px rgba(0,0,0,.3), 0 12px 28px -14px rgba(0,0,0,.6)",
+        "purpose": "The same lift at night."
+      },
+      {
+        "name": "sheet-rise",
+        "value": "0 -1px 0 rgba(43,16,32,.04), 0 -18px 44px -22px rgba(120,20,60,.4)",
+        "purpose": "Bottom sheets and the feedback sheet."
+      },
+      {
+        "name": "raspberry-glow",
+        "value": "0 10px 22px -10px rgba(216,30,91,.6)",
+        "purpose": "Primary buttons and the play button only."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "Entrances and settling."
+      },
+      {
+        "name": "ease-standard",
+        "value": "cubic-bezier(.2,0,0,1)",
+        "purpose": "Color and opacity state changes."
+      },
+      {
+        "name": "spring-overshoot",
+        "value": "cubic-bezier(.34,1.56,.64,1)",
+        "purpose": "Switch knob, tick pop, toast."
+      },
+      {
+        "name": "sheet-spring",
+        "value": "spring visualDuration 0.45s, bounce 0.22",
+        "purpose": "Feedback sheet and bottom sheets rising."
+      },
+      {
+        "name": "jelly-press",
+        "value": "spring k 260, damping 13",
+        "purpose": "Jelly squash under the finger."
+      },
+      {
+        "name": "jelly-lift",
+        "value": "spring k 200, damping 14; target 1.18 at 140ms; session opens at 480ms",
+        "purpose": "Jelly swell when the session starts."
+      },
+      {
+        "name": "button-squash",
+        "value": "520ms keyframes scale(1.05,.92) > (.97,1.04) > (1.01,.99) > 1",
+        "purpose": "Primary button press."
+      },
+      {
+        "name": "station-drop",
+        "value": "900ms keyframes, 280ms delay",
+        "purpose": "Station drop falling in at session end."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "column",
+        "value": "440px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one main action of a screen, in the sticky bottom block.",
+      "html": "<button class=\"ds-btn-primary\">یاد گرفتم، برو تمرین</button>",
+      "css": ".ds-btn-primary{min-height:58px;width:100%;padding:0 24px;border:0;border-radius:20px;font:800 16px/1 Vazirmatn,Tahoma,sans-serif;color:#fff;background:linear-gradient(180deg,#F0527F -40%,#D81E5B 55%,#A8134A 140%);box-shadow:0 10px 22px -10px rgba(216,30,91,.6),inset 0 1px 0 rgba(255,255,255,.38),inset 0 -2px 0 rgba(120,8,48,.25);cursor:pointer;transition:filter .2s,transform .2s} .ds-btn-primary:hover{filter:brightness(1.05)} .ds-btn-primary:active{transform:scale(1.03,.94)} .ds-btn-primary:focus-visible{outline:2px solid #F0527F;outline-offset:3px}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "A real but lesser action, such as skipping a level.",
+      "html": "<button class=\"ds-btn-secondary\">پرش از این سطح</button>",
+      "css": ".ds-btn-secondary{min-height:54px;width:100%;border:0;border-radius:18px;background:#FDE7EF;color:#C21852;font:800 15px/1 Vazirmatn,Tahoma,sans-serif;cursor:pointer;transition:background-color .2s} .ds-btn-secondary:hover,.ds-btn-secondary:active{background:#F9D5E2} .ds-btn-secondary:focus-visible{outline:2px solid #F0527F;outline-offset:3px}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "The quiet alternative under a primary button.",
+      "html": "<button class=\"ds-btn-ghost\">این را بلدم</button>",
+      "css": ".ds-btn-ghost{min-height:44px;padding:0 14px;border:0;border-radius:14px;background:none;color:#5E3F50;font:700 14px/1 Vazirmatn,Tahoma,sans-serif;cursor:pointer} .ds-btn-ghost:hover,.ds-btn-ghost:active{background:#FDE7EF;color:#2B1020} .ds-btn-ghost:focus-visible{outline:2px solid #F0527F;outline-offset:3px}"
+    },
+    {
+      "name": "Level Chip",
+      "kind": "chip",
+      "refersTo": "chip-level",
+      "description": "The learner's overall level in the top bar.",
+      "html": "<span class=\"ds-chip-level\">A2</span>",
+      "css": ".ds-chip-level{display:inline-grid;place-items:center;min-width:38px;height:28px;padding:0 8px;border-radius:10px;background:#FDE7EF;color:#C21852;font:600 15px/1 Fraunces,Georgia,serif;font-variation-settings:'SOFT' 100}"
+    },
+    {
+      "name": "Skill Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "One of the four skills on home: duotone icon, name, level, progress.",
+      "html": "<button class=\"ds-skill\"><svg viewBox=\"0 0 24 24\" width=\"34\" height=\"34\"><path fill=\"#D81E5B\" d=\"M9.4 3H18.6A2.4 2.4 0 0 1 21 5.4V14.6A2.4 2.4 0 0 1 18.6 17H18.2V5.8H7V5.4A2.4 2.4 0 0 1 9.4 3Z\"/><rect x=\"3\" y=\"7\" width=\"14\" height=\"14\" rx=\"2.4\" fill=\"#FBDCE7\" stroke=\"#D81E5B\" stroke-width=\"1.1\"/></svg><span class=\"ds-skill-nm\">واژگان</span><span class=\"ds-skill-lv\">A2</span><span class=\"ds-bar\"><i style=\"width:60%\"></i></span></button>",
+      "css": ".ds-skill{width:92px;display:flex;flex-direction:column;align-items:center;gap:6px;padding:20px 4px 16px;border:0;border-radius:22px;background:#fff;color:#2B1020;box-shadow:0 1px 2px rgba(43,16,32,.05),0 10px 26px -14px rgba(120,20,60,.28);cursor:pointer;transition:transform .25s cubic-bezier(.16,1,.3,1)} .ds-skill:active{transform:scale(.95)} .ds-skill:focus-visible{outline:2px solid #F0527F;outline-offset:3px} .ds-skill-nm{font:700 12.5px/1.3 Vazirmatn,Tahoma,sans-serif} .ds-skill-lv{font:600 18px/1 Fraunces,Georgia,serif;font-variation-settings:'SOFT' 100} .ds-bar{width:64%;height:6px;border-radius:3px;background:#FDE7EF;position:relative;overflow:hidden} .ds-bar i{position:absolute;inset-block:0;inset-inline-start:0;border-radius:3px;background:linear-gradient(90deg,#F0527F,#D81E5B)}"
+    },
+    {
+      "name": "Answer Option",
+      "kind": "custom",
+      "refersTo": "answer-option",
+      "description": "A choice in an exercise; turns teal when right and deep raspberry when wrong.",
+      "html": "<div class=\"ds-opts\"><button class=\"ds-opt ds-opt-wrong\">plage</button><button class=\"ds-opt ds-opt-ok\">gare</button><button class=\"ds-opt\">banque</button></div>",
+      "css": ".ds-opts{display:grid;grid-template-columns:repeat(2,140px);gap:10px} .ds-opt{min-height:76px;border:0;border-radius:20px;background:#fff;color:#2B1020;font:500 24px/1 Fraunces,Georgia,serif;font-variation-settings:'SOFT' 100,'opsz' 36;box-shadow:0 1px 2px rgba(43,16,32,.05),0 10px 26px -14px rgba(120,20,60,.28),inset 0 0 0 1px #F0DDE5;cursor:pointer;transition:background-color .25s,box-shadow .25s} .ds-opt:hover{box-shadow:0 1px 2px rgba(43,16,32,.05),0 10px 26px -14px rgba(120,20,60,.28),inset 0 0 0 1px #E2C4D1} .ds-opt:focus-visible{outline:2px solid #F0527F;outline-offset:3px} .ds-opt-ok{background:#DDF5F2;color:#0E8077;box-shadow:inset 0 0 0 2px #1FB5A8} .ds-opt-wrong{background:#FBE0EA;color:#A8134A;box-shadow:inset 0 0 0 2px #A8134A}"
+    },
+    {
+      "name": "Segmented Control",
+      "kind": "input",
+      "refersTo": "segmented",
+      "description": "A choice of two or three, such as the theme in settings.",
+      "html": "<div class=\"ds-seg\"><button class=\"ds-seg-on\">خودکار</button><button>روز</button><button>شب</button></div>",
+      "css": ".ds-seg{display:grid;grid-template-columns:repeat(3,96px);gap:4px;padding:4px;border-radius:16px;background:#FDE7EF} .ds-seg button{min-height:42px;border:0;border-radius:12px;background:none;color:#5E3F50;font:700 14px/1 Vazirmatn,Tahoma,sans-serif;cursor:pointer;transition:background-color .2s,color .2s} .ds-seg button:hover{color:#2B1020} .ds-seg button:focus-visible{outline:2px solid #F0527F;outline-offset:-2px} .ds-seg .ds-seg-on{background:#fff;color:#C21852;box-shadow:0 2px 8px -3px rgba(120,20,60,.35)}"
+    },
+    {
+      "name": "Switch",
+      "kind": "input",
+      "description": "On and off settings such as sounds and haptics.",
+      "html": "<label class=\"ds-switch\"><input type=\"checkbox\" checked><i></i></label>",
+      "css": ".ds-switch{position:relative;display:inline-block;width:52px;height:32px} .ds-switch input{position:absolute;inset:0;opacity:0;margin:0;cursor:pointer} .ds-switch i{position:absolute;inset:0;border-radius:16px;background:#E2C4D1;transition:background-color .25s;pointer-events:none} .ds-switch i::after{content:'';position:absolute;top:3px;left:3px;width:26px;height:26px;border-radius:50%;background:#fff;box-shadow:0 2px 5px rgba(43,16,32,.25);transition:transform .45s cubic-bezier(.34,1.56,.64,1)} .ds-switch input:checked+i{background:#D81E5B} .ds-switch input:checked+i::after{transform:translateX(20px)} .ds-switch input:focus-visible+i{outline:2px solid #F0527F;outline-offset:2px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Jelly on the Desk",
+    "overview": "A calm, well-lit study desk with one irresistible object on it: a glossy raspberry jelly with the word \"polyra\" on it. The jelly is alive. It breathes, shifts shape, squashes under the finger and starts the day's session. Everything else on the desk is tidy and quiet: soft blush paper, white cards, aubergine ink, generous corners. The fun lives in one place so the rest of the app can stay serious about learning without ever feeling childish.\n\nThe audience is Persian-speaking adults who study in short daily gaps on a phone. The interface is right-to-left Persian by default and must flip cleanly to left-to-right for other interface languages. French and German text is always set in a soft serif so the language being learned looks like a beautiful book, not a game. Density is low on the learner's daily loop: one decision per screen, big targets, the answer area at the thumb.\n\nThe owner rejected three earlier worlds: flat geometry (childish), the engraved certificate and Tehran modernism. The owner then fixed the palette to six colors and asked for the jelly Start button. Treat both as permanent.",
+    "keyCharacteristics": [
+      "Six brand colors only; every other value is a tint, shade or wash of one of them.",
+      "One living material (the jelly). It appears on Start and, small and still, on the station drop.",
+      "Persian in Vazirmatn, the target language in Fraunces with its SOFT axis turned up.",
+      "Day and night designed separately; night is aubergine, not grey.",
+      "Soft, tinted shadows and generous radii (20 to 28px); no hard edges, no hard offset shadows.",
+      "Sound, light haptics and spring motion on every touch, all switchable, all reduced-motion aware."
+    ],
+    "rules": [
+      {
+        "name": "The Six Colors Rule",
+        "body": "The owner's six colors (#D81E5B, #A8134A, #F0527F, #FDE7EF, #2B1020, #1FB5A8) are the whole brand. New values are only tints, shades or washes of these, plus the three gender colors.",
+        "section": "colors"
+      },
+      {
+        "name": "The Teal Means Right Rule",
+        "body": "Teal appears only for correct answers and protection (the streak freeze). Never as decoration, never as a link color.",
+        "section": "colors"
+      },
+      {
+        "name": "The Wrong Is Not Red Rule",
+        "body": "A wrong answer is deep raspberry (#A8134A) with a wash, never a pure red and never shaking the whole screen. Mistakes are part of learning (PRD: the first attempt is never penalized).",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Voices Rule",
+        "body": "Persian is always Vazirmatn, the language being learned is always Fraunces. Latin text is isolated (`direction: ltr; unicode-bidi: isolate`) so it never scrambles inside a Persian line.",
+        "section": "typography"
+      },
+      {
+        "name": "The No Uppercase Rule",
+        "body": "No uppercase eyebrows, no letter-spaced kicker labels above headings.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Living Thing Rule",
+        "body": "Only the jelly moves on its own. Everything else moves only in response to a touch or a state change.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Glass Is Furniture Rule",
+        "body": "Blur is used only for bars that content scrolls under (top bar, session bar, bottom action block). No decorative glass cards.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** keep every color inside the six brand colors, their tints and washes, plus the three gender colors.",
+      "**Do** use teal only for \"right\" and the streak freeze, and deep raspberry (#A8134A) for \"wrong\".",
+      "**Do** set the language being learned in Fraunces SOFT and isolate it as left-to-right text.",
+      "**Do** design night separately: aubergine ground (#2B1020), #381A2B surfaces, lighter text tints.",
+      "**Do** give every touch a response: a short squash or spring, a soft sound and a light buzz, each switchable in settings and silent under reduced motion.",
+      "**Do** keep touch targets at 44px or more, and the main action in the bottom block at the thumb.",
+      "**Do** self-host Vazirmatn and Fraunces in the app; prototypes may use Google Fonts only as previews."
+    ],
+    "donts": [
+      "**Don't** add a second living or self-moving element next to the jelly; the rest of the screen stays calm.",
+      "**Don't** write «شروع» on the jelly or replace it with a regular button.",
+      "**Don't** use emoji, mascots, confetti, XP, leagues or badges (PRD §1, §2).",
+      "**Don't** return to the rejected worlds: flat geometric skill shapes, engraved certificate paper, Tehran modernism, or a cool grey and cobalt \"business\" palette.",
+      "**Don't** use gradient text anywhere except the jelly wordmark.",
+      "**Don't** use uppercase eyebrows, hard offset shadows, or decorative glass cards.",
+      "**Don't** show a gender color without its written article."
+    ]
+  }
+}
