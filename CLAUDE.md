@@ -49,7 +49,7 @@ Local setup: PostgreSQL running, `cp .env.example .env`, `npm install` (also gen
 | `npm run dev` | App on http://localhost:3000 (learner app at `/`, panel at `/admin`) |
 | `npm run lint` / `npm run typecheck` | ESLint (includes the engine-isolation rule) / route types + `tsc` |
 | `npm test` | Vitest unit and integration tests (`tests/unit`, `tests/integration`) |
-| `npm run test:e2e` | Playwright on phone and desktop sizes; needs `npm run build` first. Set `PW_CHROMIUM_PATH` to use a preinstalled Chromium |
+| `npm run test:e2e` | Playwright on phone and desktop sizes; needs `npm run build` first. Starts its own server on the test database (`E2E_DATABASE_URL`, else `TEST_DATABASE_URL`), wiped and seeded each run. Set `PW_CHROMIUM_PATH` to use a preinstalled Chromium |
 | `npm run db:migrate` | New versioned migration from `prisma/schema.prisma` (development only) |
 | `npm run db:deploy` | Apply migrations on a server |
 | `npm run seed` | Languages, engine and general settings, one admin and one tester (`SEED_ADMIN_PHONE`, `SEED_TESTER_PHONE`) |
@@ -59,6 +59,8 @@ Local setup: PostgreSQL running, `cp .env.example .env`, `npm install` (also gen
 - `prisma/schema.prisma`: PRD §4. Models are PascalCase, tables and columns keep the PRD names.
 - `src/engine`: pure functions (PRD §15.3). `src/server`: database, auth, SMS, storage, settings.
 - `src/server/settings/engine-catalog.ts`: every §9.8 key with default, range and Persian description.
+- `src/server/auth`: SMS codes (§15.5 limits), devices and the session cookie; `requireAdmin()` guards `/admin`.
+- `src/app/login`, `src/app/admin`: login flow and the teacher panel shell (`admin-nav.tsx` holds the menu).
 - `src/i18n/fa.json`: every Persian interface string; `t("key", vars)` from `@/i18n`.
 - `src/components/ui`: shadcn/ui sources, converted to logical (start/end) classes for RTL.
 - Next.js 16 differs from older versions; read `node_modules/next/dist/docs/` before using an API (see `AGENTS.md`).

@@ -1,10 +1,12 @@
 import "dotenv/config";
 import { defineConfig, devices } from "@playwright/test";
+import { e2eDatabaseUrl } from "./tests/e2e/database";
 
 const port = Number(process.env.E2E_PORT ?? 3100);
 
 export default defineConfig({
   testDir: "tests/e2e",
+  globalSetup: "./tests/e2e/global-setup.ts",
   fullyParallel: false,
   retries: process.env.CI ? 1 : 0,
   reporter: process.env.CI ? "github" : "list",
@@ -23,7 +25,9 @@ export default defineConfig({
   webServer: {
     command: `npm run start -- --port ${port}`,
     port,
-    reuseExistingServer: !process.env.CI,
+    // Always our own server, so it is surely connected to the browser-test database.
+    reuseExistingServer: false,
+    env: { DATABASE_URL: e2eDatabaseUrl(), SMS_PROVIDER: "mock" },
     timeout: 120_000,
   },
 });
