@@ -27,7 +27,7 @@ const openStates = ["prompt_made", "pasted"] as const;
 type UnitRow = { id: number; unit_code: string; title_fa: string; scope_fa: string | null; level: string; order_no: number | null };
 
 /** Units in teaching order: level first, then the order of the unit list. */
-async function unitsInOrder(language: string) {
+export async function unitsInOrder(language: string) {
   const units = await db.grammarUnit.findMany({
     where: { language, status: { not: "retired" } },
     select: { id: true, unit_code: true, title_fa: true, scope_fa: true, level: true, order_no: true, lesson_fa: true },
@@ -86,6 +86,7 @@ export const grammar: ContentKind = {
   template: "P-G.md",
   rootKey: "unit",
   parts: [{ key: "unit", single: true }, { key: "targets" }, { key: "transforms" }, { key: "translations" }],
+  matches: (batch, answer) => sameUnit(batch, (answer.unit as { unit_code?: unknown } | null | undefined)?.unit_code),
 
   async plan(language, options) {
     const next = await nextUnit(language, options.level);
@@ -117,7 +118,7 @@ export const grammar: ContentKind = {
 
   async importRecords(tx, batch, records, parts) {
     const round = emptyRound();
-    const { unit_id, unit_code } = params<GrammarParams>(batch);
+    const { unit_id } = params<GrammarParams>(batch);
     const unit = await tx.grammarUnit.findUnique({ where: { id: unit_id } });
     const vocabulary = await loadVocabulary(tx, batch.language);
     const seen = new Map<string, number>();
@@ -130,7 +131,7 @@ export const grammar: ContentKind = {
         continue;
       }
       const context: Context = { tx, batch, unit, vocabulary, round, seen, reject };
-      if (part === "unit") await importUnit(context, record, unit_code);
+      if (part === "unit") await importUnit(context, record);
       else if (part === "transforms") await importTransform(context, record, index);
       else if (part === "translations") await importTranslation(context, record, index);
       else await importTarget(context, record, index);
@@ -138,6 +139,11 @@ export const grammar: ContentKind = {
     return round;
   },
 };
+
+/** An answer names its unit by unit_code; a fix answer may leave it out. */
+export function sameUnit(batch: Parameters<ContentKind["importRecords"]>[1], code: unknown) {
+  return code === undefined || code === null || (typeof code === "string" && code.trim() === params<GrammarParams>(batch).unit_code);
+}
 
 type Context = {
   tx: Tx;
@@ -160,13 +166,12 @@ function mapAll(sentences: SentenceInput[], vocabulary: LoadedVocabulary) {
   return { rows, problems };
 }
 
-async function importUnit({ tx, batch, unit, vocabulary, round, seen, reject }: Context, record: unknown, expected: string) {
+async function importUnit({ tx, batch, unit, vocabulary, round, seen, reject }: Context, record: unknown) {
   const label = labelOf(record, ["title_fa", "unit_code"], 0);
   const parsed = unitRecord.safeParse(record, { reportInput: true });
   if (!parsed.success) return reject(label, zodProblems(parsed.error, "unit"));
   const data = parsed.data;
   const problems: Problem[] = [];
-  if (data.unit_code !== expected) problems.push(problem("unitCodeMismatch", { value: data.unit_code, expected }));
   if (data.level !== unit.level) problems.push(problem("levelMismatch", { value: data.level, level: unit.level }));
   if (!editable.has(unit.status)) problems.push(problem("locked", { code: unit.unit_code }));
   const mapped = mapAll(data.example_sentences, vocabulary);

@@ -33,6 +33,11 @@ export type ContentKind = {
    * `importRecords` gets the part of each record. Without it the answer is one list under rootKey.
    */
   parts?: AnswerPart[];
+  /**
+   * For a batch made for one item (a grammar unit): false when the pasted answer names another item,
+   * so it is refused as a whole instead of being stored under the wrong one.
+   */
+  matches?(batch: ImportBatch, answer: Record<string, unknown>): boolean;
   /** Picks the next batch, or null when there is nothing left to make. */
   plan(language: LanguageCode, options: PlanOptions): Promise<BatchPlan | { nothing: string }>;
   /** Called inside the batch's transaction right after it is created (e.g. to reserve list rows). */

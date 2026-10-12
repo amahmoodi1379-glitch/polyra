@@ -136,13 +136,13 @@ describe("grammar unit (P-G, PRD §14.6)", () => {
     expect(await testDb.translateItem.count()).toBe(1);
   });
 
-  it("refuses an answer written for another unit", async () => {
+  it("refuses a whole answer written for another unit, so nothing lands under the wrong unit", async () => {
     await setup();
     const batch = await grammarBatch();
     const answer = example();
     answer.unit.unit_code = "fr-a1-autre";
-    await submitAnswer(batch.id, [fence(answer)], "answer");
-    const report = batchReport(await testDb.importBatch.findUniqueOrThrow({ where: { id: batch.id } }))!;
-    expect(report.rejected).toEqual([expect.objectContaining({ part: "unit", problems: [expect.objectContaining({ key: "unitCodeMismatch" })] })]);
+    expect(await submitAnswer(batch.id, [fence(answer)], "answer")).toEqual({ state: "wrong_answer" });
+    expect(await testDb.sentenceTarget.count()).toBe(0);
+    expect((await testDb.importBatch.findUniqueOrThrow({ where: { id: batch.id } })).report).toBeNull();
   });
 });

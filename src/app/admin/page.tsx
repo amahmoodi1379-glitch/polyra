@@ -84,6 +84,19 @@ async function languageRows(language: LanguageCode, sizes: Record<string, number
       action: { start: "grammar", level: grammar.level, label: t("admin.workbench.actions.grammar") },
     });
   }
+  const translations = status.translationsNext;
+  if (translations) {
+    rows.push({
+      key: "translations",
+      text: t("admin.workbench.rows.translations", {
+        count: translations.count,
+        level: translations.level,
+        goal: translations.want,
+        title: translations.title,
+      }),
+      action: { start: "translations", level: translations.level, label: t("admin.workbench.actions.translations") },
+    });
+  }
   if (status.candidates + status.suspects > 0) {
     rows.push({
       key: "review",

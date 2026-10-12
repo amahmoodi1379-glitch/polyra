@@ -48,6 +48,7 @@ export default async function CreatePage({ searchParams }: PageProps<"/admin/cre
   const short = status.wordsWithoutSentences[0];
   const unitLevel = status.levelsWithoutUnits[0];
   const grammar = status.grammarNext;
+  const translations = status.translationsNext;
   const rows: Row[] = [
     {
       slug: "word-list",
@@ -98,6 +99,22 @@ export default async function CreatePage({ searchParams }: PageProps<"/admin/cre
           : t("admin.create.kinds.grammar.needsUnits"),
       action: grammar ? t("admin.create.kinds.grammar.action") : null,
       level: grammar?.level,
+    },
+    {
+      slug: "translations",
+      name: t("admin.create.kinds.translations.name"),
+      status: translations
+        ? t("admin.create.kinds.translations.status", {
+            count: translations.count,
+            level: translations.level,
+            goal: translations.want,
+            title: translations.title,
+          })
+        : status.hasLessons
+          ? t("admin.create.nothing.translations")
+          : t("admin.create.kinds.translations.needsLessons"),
+      action: translations ? t("admin.create.kinds.translations.action") : null,
+      level: translations?.level,
     },
   ];
   // One clear next step: the first kind on the main path that has work.

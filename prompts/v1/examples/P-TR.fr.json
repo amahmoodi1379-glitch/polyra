@@ -1,0 +1,38 @@
+{
+  "unit_code": "fr-a1-passe-compose-avoir-er",
+  "translations": [
+    {
+      "prompt_fa": "دیروز با مادرم صحبت کردم.",
+      "accepted_outputs": [
+        "Hier, j'ai parlé avec ma mère.",
+        "J'ai parlé avec ma mère hier.",
+        "Hier, j'ai parlé à ma mère.",
+        "J'ai parlé à ma mère hier."
+      ],
+      "tokens": [
+        { "surface": "Hier", "kind": "word", "code": "hier", "meaning_fa": "دیروز" },
+        { "surface": "j'", "kind": "word", "code": "je", "meaning_fa": "من" },
+        { "surface": "ai", "kind": "word", "code": "avoir", "meaning_fa": "(فعل کمکی گذشته)" },
+        { "surface": "parlé", "kind": "word", "code": "parler", "meaning_fa": "صحبت کردم" },
+        { "surface": "avec", "kind": "word", "code": "avec", "meaning_fa": "با" },
+        { "surface": "ma", "kind": "word", "code": "mon", "meaning_fa": "ـم (مال من)" },
+        { "surface": "mère", "kind": "word", "code": "mère", "meaning_fa": "مادر" }
+      ]
+    },
+    {
+      "prompt_fa": "ما یک فیلم تماشا کردیم.",
+      "accepted_outputs": [
+        "Nous avons regardé un film.",
+        "On a regardé un film."
+      ],
+      "tokens": [
+        { "surface": "Nous", "kind": "word", "code": "nous", "meaning_fa": "ما" },
+        { "surface": "avons", "kind": "word", "code": "avoir", "meaning_fa": "(فعل کمکی گذشته)" },
+        { "surface": "regardé", "kind": "word", "code": "regarder", "meaning_fa": "تماشا کردیم" },
+        { "surface": "un", "kind": "word", "code": "un", "meaning_fa": "یک" },
+        { "surface": "film", "kind": "word", "code": "film", "meaning_fa": "فیلم" }
+      ]
+    }
+  ],
+  "issues": []
+}

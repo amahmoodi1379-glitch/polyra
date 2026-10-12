@@ -4,6 +4,7 @@ import { db } from "@/server/db";
 import { appSetting } from "@/server/settings/read";
 import { grammar } from "./kinds/grammar";
 import { sentences } from "./kinds/sentences";
+import { translations } from "./kinds/translations";
 import type { ContentKind, PlanOptions } from "./kinds/types";
 import { unitList } from "./kinds/unit-list";
 import { wordList } from "./kinds/word-list";
@@ -26,6 +27,7 @@ export const contentKinds = {
   words,
   sentences,
   grammar,
+  translations,
 } satisfies Record<string, ContentKind>;
 
 export type KindSlug = keyof typeof contentKinds;
@@ -172,7 +174,7 @@ export async function submitAnswer(batchId: number, parts: string[], mode: "answ
 
   const answer = pasted.value as Record<string, unknown>;
   const content = answerRecords(kind, answer);
-  if (!content) return { state: "wrong_answer" };
+  if (!content || (kind.matches && !kind.matches(batch, answer))) return { state: "wrong_answer" };
   const issues = Array.isArray(answer.issues)
     ? answer.issues.map((item) => (typeof item === "string" ? item : JSON.stringify(item)))
     : [];

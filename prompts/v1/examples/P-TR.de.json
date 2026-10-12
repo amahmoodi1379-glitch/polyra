@@ -1,0 +1,31 @@
+{
+  "unit_code": "de-a1-perfekt-haben-regelmaessig",
+  "translations": [
+    {
+      "prompt_fa": "ما موسیقی گوش دادیم.",
+      "accepted_outputs": [
+        "Wir haben Musik gehört."
+      ],
+      "tokens": [
+        { "surface": "Wir", "kind": "word", "code": "wir", "meaning_fa": "ما" },
+        { "surface": "haben", "kind": "word", "code": "haben", "meaning_fa": "(فعل کمکی گذشته)" },
+        { "surface": "Musik", "kind": "word", "code": "Musik", "meaning_fa": "موسیقی" },
+        { "surface": "gehört", "kind": "word", "code": "hören", "meaning_fa": "گوش دادیم" }
+      ]
+    },
+    {
+      "prompt_fa": "دیروز فوتبال بازی کردی؟",
+      "accepted_outputs": [
+        "Hast du gestern Fußball gespielt?"
+      ],
+      "tokens": [
+        { "surface": "Hast", "kind": "word", "code": "haben", "meaning_fa": "(فعل کمکی گذشته)" },
+        { "surface": "du", "kind": "word", "code": "du", "meaning_fa": "تو" },
+        { "surface": "gestern", "kind": "word", "code": "gestern", "meaning_fa": "دیروز" },
+        { "surface": "Fußball", "kind": "word", "code": "Fußball", "meaning_fa": "فوتبال" },
+        { "surface": "gespielt", "kind": "word", "code": "spielen", "meaning_fa": "بازی کردی" }
+      ]
+    }
+  ],
+  "issues": []
+}
