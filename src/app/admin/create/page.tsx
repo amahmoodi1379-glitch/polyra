@@ -50,6 +50,7 @@ export default async function CreatePage({ searchParams }: PageProps<"/admin/cre
   const grammar = status.grammarNext;
   const translations = status.translationsNext;
   const tables = status.tables;
+  const sounds = status.phonicsNext;
   const rows: Row[] = [
     {
       slug: "word-list",
@@ -131,6 +132,14 @@ export default async function CreatePage({ searchParams }: PageProps<"/admin/cre
         ? t("admin.create.kinds.conjugation.action", { size: Math.min(sizes["P-X"] ?? 20, tables.next.count) })
         : null,
       level: tables.next?.level,
+    },
+    {
+      slug: "phonics",
+      name: t("admin.create.kinds.phonics.name"),
+      status: sounds
+        ? t("admin.create.kinds.phonics.status", { count: sounds.count, label: sounds.label })
+        : t("admin.create.nothing.phonics"),
+      action: sounds ? t("admin.create.kinds.phonics.action") : null,
     },
   ];
   // One clear next step: the first kind on the main path that has work.

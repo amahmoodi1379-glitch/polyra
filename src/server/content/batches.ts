@@ -4,6 +4,7 @@ import { db } from "@/server/db";
 import { appSetting } from "@/server/settings/read";
 import { conjugation } from "./kinds/conjugation";
 import { grammar } from "./kinds/grammar";
+import { phonics } from "./kinds/phonics";
 import { sentences } from "./kinds/sentences";
 import { translations } from "./kinds/translations";
 import type { ContentKind, PlanOptions } from "./kinds/types";
@@ -30,6 +31,7 @@ export const contentKinds = {
   grammar,
   translations,
   conjugation,
+  phonics,
 } satisfies Record<string, ContentKind>;
 
 export type KindSlug = keyof typeof contentKinds;

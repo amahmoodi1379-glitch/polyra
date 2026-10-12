@@ -4,6 +4,7 @@ import { appSetting, engineNumber } from "@/server/settings/read";
 import { hasQa } from "./batches";
 import { nextTables } from "./kinds/conjugation";
 import { nextUnit } from "./kinds/grammar";
+import { missingLessons } from "./kinds/phonics";
 import { nextTranslationUnit } from "./kinds/translations";
 import { levelRank } from "./languages";
 import { openCounts } from "./resolve";
@@ -29,6 +30,8 @@ export type ContentStatus = {
   translationsNext: { title: string; level: string; count: number; want: number } | null;
   /** Conjugation tables still to make (P-X): the first level that needs them. */
   tables: { next: LevelCount | null; waitingForUnits: boolean; hasVerbs: boolean };
+  /** Phonics lessons of the teacher's list still to make (P-H). */
+  phonicsNext: { label: string; count: number } | null;
   waitingQa: number;
   unfinished: number;
   /** Open items on the resolve page, as groups (one word in many sentences counts once). */
@@ -44,7 +47,7 @@ export async function contentStatus(language: string): Promise<ContentStatus> {
   const levels = await appSetting<string[]>(`levels.${language}`);
   const goal = await engineNumber("publish.word_goal_targets");
 
-  const [frequencyLeft, wordCount, skeletons, cardWords, targetCounts, unitLevels, lessons, batches, open, grammar, translations, tables] =
+  const [frequencyLeft, wordCount, skeletons, cardWords, targetCounts, unitLevels, lessons, batches, open, grammar, translations, tables, sounds] =
     await Promise.all([
       db.frequencyItem.count({ where: { language, used_in_batch_id: null } }),
       db.word.count({ where: { language, status: { not: "retired" } } }),
@@ -65,6 +68,7 @@ export async function contentStatus(language: string): Promise<ContentStatus> {
       nextUnit(language),
       nextTranslationUnit(language),
       nextTables(language),
+      missingLessons(language),
     ]);
 
   const counts = new Map(targetCounts.map((row) => [row.target_id, row._count]));
@@ -89,6 +93,7 @@ export async function contentStatus(language: string): Promise<ContentStatus> {
       ? { title: translations.unit.title_fa, level: translations.unit.level, count: translations.waiting, want: translations.want }
       : null,
     tables,
+    phonicsNext: sounds[0] ? { label: sounds[0].label, count: sounds.length } : null,
     waitingQa: batches.filter((batch) => batch.state === "imported" && hasQa(batch.prompt_kind as PromptKind)).length,
     unfinished: batches.filter((batch) => isOpen(batch.state)).length,
     ...open,

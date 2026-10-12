@@ -109,6 +109,14 @@ async function languageRows(language: LanguageCode, sizes: Record<string, number
       },
     });
   }
+  const sounds = status.phonicsNext;
+  if (sounds) {
+    rows.push({
+      key: "phonics",
+      text: t("admin.workbench.rows.phonics", { count: sounds.count, label: sounds.label }),
+      action: { start: "phonics", label: t("admin.workbench.actions.phonics") },
+    });
+  }
   if (status.candidates + status.suspects > 0) {
     rows.push({
       key: "review",

@@ -102,7 +102,8 @@
         "duplicates": "{count} کلمه تکراری منتظر تصمیم",
         "grammar": "{count} واحد دستوری {level} هنوز درس ندارند؛ بعدی: «{title}»",
         "translations": "{count} درس {level} کمتر از {goal} ترجمه کوتاه دارند؛ بعدی: «{title}»",
-        "conjugation": "{count} جدول صرف {level} لازم است"
+        "conjugation": "{count} جدول صرف {level} لازم است",
+        "phonics": "{count} درس تلفظ مانده؛ بعدی: «{label}»"
       },
       "actions": {
         "words": "ساخت {size} کلمه بعدی",
@@ -114,7 +115,8 @@
         "decide": "تصمیم بگیر",
         "grammar": "ساخت درس بعدی",
         "translations": "ساخت ترجمه کوتاه",
-        "conjugation": "ساخت {size} جدول بعدی"
+        "conjugation": "ساخت {size} جدول بعدی",
+        "phonics": "ساخت درس تلفظ بعدی"
       },
       "allDone": "فعلاً کاری نمانده. هر وقت خواستی از «ساخت محتوا» دسته تازه بساز."
     },
@@ -183,6 +185,11 @@
           "action": "ساخت {size} جدول بعدی",
           "needsVerbs": "اول اطلاعات کلمه‌ها ساخته شود.",
           "needsUnits": "زمان‌های بعدی منتظر فهرست واحدهای دستوری سطحشان هستند."
+        },
+        "phonics": {
+          "name": "درس تلفظ",
+          "status": "{count} درس تلفظ مانده؛ بعدی: «{label}».",
+          "action": "ساخت درس تلفظ بعدی"
         }
       },
       "nothing": {
@@ -192,7 +199,8 @@
         "sentences": "کلمه‌ای نیست که جمله کم داشته باشد.",
         "grammar": "همه واحدهای فهرست درس دارند.",
         "translations": "همه درس‌ها ترجمه کوتاه کافی دارند.",
-        "conjugation": "همه فعل‌ها جدول صرف دارند."
+        "conjugation": "همه فعل‌ها جدول صرف دارند.",
+        "phonics": "همه درس‌های تلفظ فهرست ساخته شده‌اند."
       },
       "summary": {
         "wordList": "{count} کلمه پرکاربرد، رتبه {first} تا {last}",
@@ -201,7 +209,13 @@
         "sentences": "جمله برای {count} کلمه سطح {level}، برای هر کدام {goal} جمله",
         "grammar": "درس کامل واحد «{title}»، سطح {level}",
         "translations": "{count} ترجمه کوتاه برای درس «{title}»، سطح {level}",
-        "conjugation": "{count} جدول صرف، سطح {level}"
+        "conjugation": "{count} جدول صرف، سطح {level}",
+        "phonics": "درس تلفظ «{label}»، نوع {kind}"
+      },
+      "phonicsKinds": {
+        "contrast": "دو صدای شبیه",
+        "rule": "قاعده خواندن",
+        "liaison": "وصل شدن کلمه‌ها"
       }
     },
     "batch": {
@@ -212,7 +226,8 @@
         "P_S": "جمله‌های کلمه‌ها",
         "P_G": "درس دستور",
         "P_TR": "ترجمه کوتاه",
-        "P_X": "جدول صرف"
+        "P_X": "جدول صرف",
+        "P_H": "درس تلفظ"
       },
       "stepOf": "قدم {step} از {total}",
       "steps": {
@@ -415,7 +430,11 @@
       "formsMissing": "شکل این ضمیرها نیامده یا خالی است: {keys}.",
       "unitUnknown": "واحد دستوری «{code}» در فهرست واحدها نیست.",
       "secondSourceDiffers": "با منبع دوم صرف فرق دارد: {persons}.",
-      "secondSourceUnknown": "منبع دوم صرف این فعل یا این زمان را ندارد؛ با دقت بیشتری بخوان."
+      "secondSourceUnknown": "منبع دوم صرف این فعل یا این زمان را ندارد؛ با دقت بیشتری بخوان.",
+      "wrongSpellingsCount": "«{text}» باید دقیقاً دو املای غلط داشته باشد.",
+      "wrongSpellingSame": "یکی از املاهای غلط «{text}» با خود کلمه یکی است.",
+      "pairSame": "دو کلمه جفت «{text}» یکی هستند.",
+      "liaisonIndex": "شماره کلمه در جمله «{text}» بیرون از جمله است یا آخرین کلمه را نشان می‌دهد."
     },
     "fields": {
       "meaning_fa": "معنی فارسی",
@@ -481,7 +500,16 @@
       "forms": "شکل‌ها",
       "accepted_variants": "شکل‌های دیگر درست",
       "review_card": "کارت مرور",
-      "tables": "جدول‌ها"
+      "tables": "جدول‌ها",
+      "lesson": "درس",
+      "sound_label": "نام درس",
+      "graphemes": "حروف",
+      "tip_fa": "توضیح تلفظ",
+      "example_words": "کلمه‌های مثال",
+      "wrong_spellings": "املاهای غلط",
+      "minimal_pairs": "جفت کلمه‌ها",
+      "liaison_sentences": "جمله‌های liaison",
+      "liaison_after_word_index": "جای liaison"
     },
     "pos": {
       "noun": "اسم",

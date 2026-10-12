@@ -2,7 +2,7 @@ import type { Problem } from "./problems";
 
 /** What a record became in the database, so QA findings and reports can point at it. */
 export type EntityRef = {
-  type: "word" | "sentence" | "grammar_unit" | "transform_item" | "translate_item" | "conjugation_table";
+  type: "word" | "sentence" | "grammar_unit" | "transform_item" | "translate_item" | "conjugation_table" | "phonics_lesson";
   id: number;
 };
 

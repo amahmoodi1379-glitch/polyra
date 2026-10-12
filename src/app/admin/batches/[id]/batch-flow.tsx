@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
 import { formatNumber, t } from "@/i18n";
+import { isolateLatin } from "@/lib/bidi";
 import { cn } from "@/lib/utils";
 import { startBatch } from "../../create/actions";
 import { chooseChatbot, pasteAnswer, pasteQa, skipRejected, startOver, throwAway, type PasteOutcome } from "./actions";
@@ -526,7 +527,7 @@ function ReportStep({ view, state }: { view: BatchView; state: StepState }) {
               <ul className="flex flex-col gap-2.5">
                 {report.warnings.map((warning, index) => (
                   <li key={index} className="flex flex-col text-[14px] leading-6 sm:flex-row sm:gap-3">
-                    <span className="lat text-ink shrink-0 self-start font-semibold sm:min-w-32">{warning.label}</span>
+                    <RecordLabel text={warning.label} className="text-ink shrink-0 self-start font-semibold sm:min-w-32" />
                     <span className="text-ink-2">{warning.text}</span>
                   </li>
                 ))}
@@ -546,8 +547,8 @@ function ReportStep({ view, state }: { view: BatchView; state: StepState }) {
             <Disclosure summary={t("admin.batch.report.accepted", { count: report.accepted.length })}>
               <ul className="flex flex-wrap gap-1.5">
                 {report.accepted.slice(0, 400).map((label, index) => (
-                  <li key={index} className="lat bg-tint text-ink rounded-[10px] px-2.5 py-0.5 text-[14px] leading-7">
-                    {label}
+                  <li key={index} className="bg-tint text-ink rounded-[10px] px-2.5 py-0.5 text-[14px] leading-7">
+                    <RecordLabel text={label} />
                   </li>
                 ))}
               </ul>
@@ -559,10 +560,21 @@ function ReportStep({ view, state }: { view: BatchView; state: StepState }) {
   );
 }
 
+const latinFirst = /^[^\p{L}]*\p{Script=Latin}/u;
+
+/** A record's name: a French or German one runs left to right, a Persian one (a lesson name) stays RTL. */
+function RecordLabel({ text, className }: { text: string; className?: string }) {
+  return latinFirst.test(text) ? (
+    <span className={cn("lat", className)}>{text}</span>
+  ) : (
+    <span className={className}>{isolateLatin(text)}</span>
+  );
+}
+
 function RejectedItem({ item }: { item: { label: string; problems: string[] } }) {
   return (
     <li className="flex flex-col gap-1.5 px-4 py-3.5">
-      <span className="lat text-ink w-fit text-[15.5px] font-semibold">{item.label}</span>
+      <RecordLabel text={item.label} className="text-ink w-fit text-[15.5px] font-semibold" />
       <ul className="flex flex-col gap-1">
         {item.problems.map((text, index) => (
           <li key={index} className="text-ink-2 flex gap-2.5 text-[14px] leading-6">
@@ -633,7 +645,7 @@ function QaStep({ view, state }: { view: BatchView; state: StepState }) {
                   <ul className="border-line divide-line flex flex-col divide-y rounded-[18px] border">
                     {items.map((finding, index) => (
                       <li key={index} className="flex flex-col gap-1 px-4 py-3.5 text-[14px] leading-6">
-                        {finding.label ? <span className="lat text-ink w-fit text-[15.5px] font-semibold">{finding.label}</span> : null}
+                        {finding.label ? <RecordLabel text={finding.label} className="text-ink w-fit text-[15.5px] font-semibold" /> : null}
                         <p className="text-ink-2">{finding.problem}</p>
                         {finding.suggestion ? (
                           <p className="text-ink-3">{t("admin.batch.qa.suggestion", { text: finding.suggestion })}</p>
