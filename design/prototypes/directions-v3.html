@@ -1,0 +1,606 @@
+<title>Polyra Directions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=Markazi+Text:wght@400..700&family=Reem+Kufi:wght@400..700&family=Vazirmatn:wght@300..800&display=swap">
+<style>
+/* Board: a neutral ground so the two directions can be compared side by side; each phone frame
+   carries its own world's tokens (.A Tehran modernism, .B certificate), both themes. */
+:root{
+  --board:#E6E7EA; --board-ink:#14161B; --board-ink2:#50545E; --board-line:#D2D4D9; --board-card:#F4F5F7;
+  /* A: Tehran modernism */
+  --a-paper:#EDEEF0; --a-sheet:#FFFFFF; --a-ink:#121318; --a-ink2:#4A4D57; --a-ink3:#666A75; --a-line:#DCDEE3;
+  --a-deep:#141B5E; --a-blue:#2638B8; --a-blue-text:#2638B8; --a-verm:#C5432A; --a-ochre:#A97C17; --a-teal:#1D7468;
+  --a-l0:#2236D6; --a-l1:#6A80FF; --a-l2:#EE5B3B; --a-l3:#F3C35B;
+  --a-on-deep:#FFFFFF; --a-on-deep2:#C9CEF5;
+  /* B: certificate / security print */
+  --b-paper:#ECEFEA; --b-sheet:#F8F9F6; --b-ink:#13213B; --b-ink2:#435069; --b-ink3:#5F6A80; --b-line:#D2D8D1;
+  --b-navy:#13213B; --b-guil:#2C6A5F; --b-seal:#8A2634; --b-on-navy:#F1F3F7; --b-on-navy2:#B9C3D6; --b-navy-line:#7FA9A0;
+  --b-f0:#C9CFD8; --b-f1:#E6ECF2; --b-amt:.62; --b-tint:1;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --board:#08090B; --board-ink:#EDEEF1; --board-ink2:#A3A7B1; --board-line:#23252B; --board-card:#111216;
+  --a-paper:#0D0E12; --a-sheet:#17181E; --a-ink:#ECEDF1; --a-ink2:#A9ACB7; --a-ink3:#8A8E99; --a-line:#282A33;
+  --a-deep:#0F1440; --a-blue:#4B5EF0; --a-blue-text:#8E9BFF; --a-verm:#F07459; --a-ochre:#E2B24D; --a-teal:#4EC0AC;
+  --a-l0:#2F45F0; --a-l1:#7E91FF; --a-l2:#FF6A48; --a-l3:#F7CB66;
+  --a-on-deep:#FFFFFF; --a-on-deep2:#AEB6EE;
+  --b-paper:#0A0D12; --b-sheet:#121821; --b-ink:#E7ECF3; --b-ink2:#A7B1C3; --b-ink3:#8893A7; --b-line:#232B37;
+  --b-navy:#0F1A30; --b-guil:#7FB3A7; --b-seal:#E8919B; --b-on-navy:#EEF1F6; --b-on-navy2:#9FAAC0; --b-navy-line:#5E8F86;
+  --b-f0:#8D95A3; --b-f1:#C2CAD6; --b-amt:.7; --b-tint:.86;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --board:#08090B; --board-ink:#EDEEF1; --board-ink2:#A3A7B1; --board-line:#23252B; --board-card:#111216;
+  --a-paper:#0D0E12; --a-sheet:#17181E; --a-ink:#ECEDF1; --a-ink2:#A9ACB7; --a-ink3:#8A8E99; --a-line:#282A33;
+  --a-deep:#0F1440; --a-blue:#4B5EF0; --a-blue-text:#8E9BFF; --a-verm:#F07459; --a-ochre:#E2B24D; --a-teal:#4EC0AC;
+  --a-l0:#2F45F0; --a-l1:#7E91FF; --a-l2:#FF6A48; --a-l3:#F7CB66;
+  --a-on-deep:#FFFFFF; --a-on-deep2:#AEB6EE;
+  --b-paper:#0A0D12; --b-sheet:#121821; --b-ink:#E7ECF3; --b-ink2:#A7B1C3; --b-ink3:#8893A7; --b-line:#232B37;
+  --b-navy:#0F1A30; --b-guil:#7FB3A7; --b-seal:#E8919B; --b-on-navy:#EEF1F6; --b-on-navy2:#9FAAC0; --b-navy-line:#5E8F86;
+  --b-f0:#8D95A3; --b-f1:#C2CAD6; --b-amt:.7; --b-tint:.86;
+  color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--board);color:var(--board-ink);font:15px/1.7 Vazirmatn,Tahoma,sans-serif}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer;margin:0}
+::selection{background:color-mix(in oklab,var(--a-blue) 30%,transparent)}
+.board{max-width:1080px;margin-inline:auto;padding-inline:16px;padding-block:28px 64px;display:flex;flex-direction:column;gap:44px}
+.intro{display:flex;flex-direction:column;gap:10px;max-width:62ch}
+.intro h1{margin:0;font-size:26px;font-weight:700;line-height:1.4;text-wrap:balance}
+.intro p{margin:0;color:var(--board-ink2)}
+.theme{display:inline-grid;grid-template-columns:repeat(3,auto);padding:3px;border-radius:12px;background:var(--board-card);border:1px solid var(--board-line);align-self:flex-start}
+.theme button{min-height:36px;padding-inline:14px;border-radius:9px;font-size:13px;font-weight:600;color:var(--board-ink2)}
+.theme button[aria-pressed="true"]{background:var(--board);color:var(--board-ink)}
+
+.dir{display:flex;flex-direction:column;gap:18px}
+.dir-head{display:flex;flex-direction:column;gap:6px;max-width:64ch}
+.dir-head h2{margin:0;font-size:22px;font-weight:700;line-height:1.4}
+.dir-head p{margin:0;color:var(--board-ink2)}
+.facts{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13px;color:var(--board-ink2)}
+.chips{display:flex;gap:6px;align-items:center}
+.chip-c{width:22px;height:22px;border-radius:6px;border:1px solid color-mix(in oklab,var(--board-ink) 12%,transparent)}
+.risk{font-size:13px;color:var(--board-ink2);max-width:64ch}
+.risk b{color:var(--board-ink);font-weight:600}
+.frames{display:flex;gap:20px;overflow-x:auto;padding-block:4px 10px;scroll-snap-type:x mandatory;margin-inline:-16px;padding-inline:16px}
+.frames>*{scroll-snap-align:center;flex:0 0 auto}
+.swipe{display:none;font-size:13px;color:var(--board-ink2);margin-top:-8px}
+@media (max-width:760px){.swipe{display:block}}
+.canon{border-top:1px solid var(--board-line);padding-top:20px;display:flex;flex-direction:column;gap:6px;max-width:64ch}
+.canon h3{margin:0;font-size:16px;font-weight:600}
+.canon p{margin:0;font-size:14px;color:var(--board-ink2)}
+
+/* phone frame shared */
+.phone{width:min(360px,calc(100vw - 32px));height:760px;border-radius:38px;overflow:hidden;position:relative;display:flex;flex-direction:column;
+  box-shadow:0 1px 0 color-mix(in oklab,var(--board-ink) 8%,transparent),0 24px 48px -24px rgba(0,0,0,.35);isolation:isolate}
+.phone .scr{flex:1;display:flex;flex-direction:column;gap:16px;padding:18px 18px 22px;min-height:0}
+.ico{width:24px;height:24px;flex-shrink:0}
+.li{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.lat{direction:ltr;unicode-bidi:isolate}
+.liq{position:absolute;inset:0;width:100%;height:100%;display:block}
+.rm-note{position:absolute;inset-inline:12px;bottom:10px;font-size:11px;opacity:.8}
+
+/* ============ A · Tehran modernism ============ */
+.A{background:var(--a-paper);color:var(--a-ink);font-family:Vazirmatn,Tahoma,sans-serif}
+.A .lat{font-family:Archivo,'Helvetica Neue',Arial,sans-serif;font-stretch:112%}
+.A .tb{display:flex;align-items:center;justify-content:space-between;gap:6px;min-height:44px}
+.A .lang{display:flex;align-items:center;gap:8px;min-height:44px;font-weight:600;font-size:15px}
+.A .lang-tile{width:30px;height:30px;border-radius:8px;background:var(--a-ink);color:var(--a-paper);display:grid;place-items:center;font:600 13px/1 Archivo,sans-serif;font-stretch:118%}
+.A .lvl{min-height:26px;padding-inline:8px;border-radius:7px;border:1.5px solid var(--a-ink);font:600 13px/1 Archivo,sans-serif;font-stretch:118%;display:inline-grid;place-items:center}
+.A .tb-r{display:flex;align-items:center;gap:2px}
+.A .stat{display:flex;align-items:center;gap:4px;min-height:44px;padding-inline:6px;font-weight:600;font-size:14px}
+.A .stat .li{width:19px;height:19px}
+.A .stat.str .li{color:var(--a-verm)}
+.A .stat.frz .li{color:var(--a-blue-text)}
+.A .gear{width:40px;height:44px;display:grid;place-items:center}
+
+.A .start{position:relative;height:236px;border-radius:22px;overflow:hidden;background:var(--a-deep);color:var(--a-on-deep);text-align:right;display:block}
+.A .start .knock{position:absolute;inset:0;width:100%;height:100%}
+.A .start .knock .cover{fill:var(--a-deep)}
+.A .start .top{position:absolute;inset-inline:20px;top:18px;display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.A .start .sub{font-size:13px;line-height:1.7;color:var(--a-on-deep2);max-width:28ch}
+.A .start .sub b{display:block;color:var(--a-on-deep);font-weight:600;font-size:15px}
+.A .go{width:48px;height:48px;border-radius:14px;background:var(--a-on-deep);color:var(--a-deep);display:grid;place-items:center;flex-shrink:0}
+.A .go .li{stroke-width:2.2}
+.A .row{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:13px}
+.A .quick{min-height:40px;font-weight:600;color:var(--a-ink);text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:6px;text-decoration-color:var(--a-verm)}
+.A .plan{color:var(--a-ink3)}
+.A .plan b{color:var(--a-ink);font-weight:600}
+.A .skills{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:var(--a-sheet);border-radius:18px;border:1px solid var(--a-line)}
+.A .sk{position:relative;display:flex;flex-direction:column;align-items:center;gap:6px;padding:16px 4px 14px;text-align:center}
+.A .sk+.sk{border-inline-start:1px solid var(--a-line)}
+.A .sk .ico{width:30px;height:30px;color:var(--a-ink)}
+.A .sk .nm{font-size:12.5px;font-weight:600;line-height:1.3}
+.A .sk .lv{font:600 15px/1 Archivo,sans-serif;font-stretch:118%}
+.A .sk .bar{width:56%;height:3px;border-radius:3px;background:var(--a-line);overflow:hidden}
+.A .sk .bar i{display:block;height:100%;width:var(--p);background:var(--k);margin-inline-start:auto}
+.A .sk .more{position:absolute;top:6px;inset-inline-end:6px;width:22px;height:22px;display:grid;place-items:center;color:var(--a-ink3)}
+.A .k1{--k:var(--a-blue)} .A .k2{--k:var(--a-verm)} .A .k3{--k:var(--a-teal)} .A .k4{--k:var(--a-ochre)}
+.A .ico .acc{fill:var(--k)}
+.A .ico .ink{fill:currentColor}
+.A .links{display:flex;flex-direction:column;border-top:1px solid var(--a-line)}
+.A .links a{display:flex;align-items:center;gap:12px;min-height:50px;border-bottom:1px solid var(--a-line);font-size:14px;color:inherit;text-decoration:none}
+.A .links a span{flex:1}
+.A .links .cnt{font:600 13px/1 Vazirmatn;color:var(--a-ink3)}
+.A .links .badge{min-width:22px;height:22px;padding-inline:6px;border-radius:6px;background:var(--a-verm);color:#fff;font-size:12px;font-weight:700;display:grid;place-items:center}
+
+/* A · word card */
+.A .sbar{display:flex;align-items:center;gap:6px}
+.A .ib{width:40px;height:40px;display:grid;place-items:center;color:var(--a-ink2)}
+.A .track{flex:1;height:4px;border-radius:4px;background:var(--a-line);overflow:hidden}
+.A .track i{display:block;height:100%;width:30%;background:var(--a-ink);margin-inline-start:auto}
+.A .wd{display:flex;flex-direction:column;gap:6px;padding-top:18px}
+.A .gender{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--a-ink2)}
+.A .gender .sq{width:10px;height:10px;background:var(--a-verm);border-radius:2px}
+.A .gender .lat{font-weight:600;font-size:16px;color:var(--a-verm)}
+.A .word{margin:0;font:560 88px/1 Archivo,sans-serif;font-stretch:116%;letter-spacing:-.035em;text-align:right}
+.A .mean{margin:0;font-weight:700;font-size:28px;line-height:1.5}
+.A .scr h4{margin:0}
+.A .aud{display:flex;align-items:center;gap:8px;padding-top:6px}
+.A .play{width:58px;height:58px;border-radius:16px;background:var(--a-blue);color:#fff;display:grid;place-items:center}
+.A .play .li{width:26px;height:26px}
+.A .pill{min-height:42px;padding-inline:14px;border-radius:12px;border:1px solid var(--a-line);background:var(--a-sheet);font-size:13px;font-weight:600;display:flex;align-items:center;gap:6px}
+.A .ex{background:var(--a-sheet);border-radius:18px;border:1px solid var(--a-line);padding:16px;display:flex;flex-direction:column;gap:6px}
+.A .ex .h{display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:var(--a-ink3);font-weight:600}
+.A .ex p{margin:0}
+.A .ex .fr{font-size:21px;line-height:1.45;text-align:left;font-weight:450}
+.A .ex .fr u{text-decoration-color:var(--a-verm);text-decoration-thickness:2px;text-underline-offset:5px}
+.A .ex .fa{font-size:14px;color:var(--a-ink2)}
+.A .col{display:flex;flex-direction:column;font-size:14px}
+.A .col div{display:flex;justify-content:space-between;align-items:baseline;min-height:40px;border-bottom:1px solid var(--a-line)}
+.A .col .lat{font-size:17px;font-weight:450}
+.A .col span:not(.lat){color:var(--a-ink2)}
+.A .cta{margin-top:auto;display:flex;flex-direction:column;gap:2px}
+.A .primary{min-height:56px;border-radius:16px;background:var(--a-ink);color:var(--a-paper);font-weight:600;font-size:16px}
+.A .ghost{min-height:40px;font-weight:600;font-size:14px;color:var(--a-ink2)}
+
+/* ============ B · Certificate ============ */
+.B{background:var(--b-paper);color:var(--b-ink);font-family:Vazirmatn,Tahoma,sans-serif}
+.B .lat{font-family:'Bodoni Moda',Didot,'Times New Roman',serif}
+.B .tb{display:flex;align-items:center;justify-content:space-between;gap:6px;min-height:44px}
+.B .lang{display:flex;align-items:center;gap:8px;min-height:44px;font-weight:600;font-size:15px}
+.B .lang-tile{width:30px;height:30px;border-radius:50%;border:1px solid var(--b-ink);display:grid;place-items:center;font:500 14px/1 'Bodoni Moda',serif;font-style:italic;position:relative}
+.B .lang-tile::after{content:"";position:absolute;inset:2px;border-radius:50%;border:.5px solid var(--b-ink3)}
+.B .tb-r{display:flex;align-items:center;gap:2px}
+.B .stat{display:flex;align-items:center;gap:4px;min-height:44px;padding-inline:6px;font-weight:600;font-size:14px}
+.B .stat .li{width:19px;height:19px;stroke-width:1.5}
+.B .stat.str .li{color:var(--b-seal)}
+.B .stat.frz .li{color:var(--b-guil)}
+.B .gear{width:40px;height:44px;display:grid;place-items:center}
+.B .start{position:relative;height:236px;border-radius:20px;overflow:hidden;background:var(--b-navy);color:var(--b-on-navy);text-align:right;display:block}
+.B .start .waves{position:absolute;inset:0;width:100%;height:100%}
+.B .start .waves path{fill:none;stroke:var(--b-navy-line);stroke-width:.6;opacity:.32}
+.B .foil{position:absolute;inset:auto;inset-inline-end:16px;top:50%;width:150px;height:150px;margin-top:-75px;border-radius:50%;overflow:hidden;box-shadow:0 0 0 1px color-mix(in oklab,var(--b-on-navy) 22%,transparent)}
+.B .rosette{position:absolute;inset-inline-end:16px;top:50%;width:150px;height:150px;margin-top:-75px;pointer-events:none}
+.B .rosette path{fill:none;stroke:var(--b-navy);stroke-width:.55;opacity:.62}
+.B .start .txt{position:absolute;inset-inline-start:20px;top:22px;bottom:20px;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;max-width:52%}
+.B .start h3{margin:0;font-family:'Markazi Text',Vazirmatn,serif;font-weight:600;font-size:62px;line-height:1}
+.B .start .sub{font-size:13px;line-height:1.7;color:var(--b-on-navy2)}
+.B .start .sub b{display:block;color:var(--b-on-navy);font-weight:600;font-size:15px}
+.B .go{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding-inline:14px 10px;border-radius:999px;border:1px solid color-mix(in oklab,var(--b-on-navy) 45%,transparent);font-size:13px;font-weight:600}
+.B .go .li{width:18px;height:18px}
+.B .row{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:13px}
+.B .quick{min-height:40px;font-weight:600;color:var(--b-ink);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:6px;text-decoration-style:double;text-decoration-color:var(--b-guil)}
+.B .plan{color:var(--b-ink3)}
+.B .plan b{color:var(--b-seal);font-weight:600}
+.B .skills{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-block:1px solid var(--b-line);position:relative}
+.B .skills::before{content:"";position:absolute;inset-inline:0;top:3px;border-top:.5px solid var(--b-line)}
+.B .sk{position:relative;display:flex;flex-direction:column;align-items:center;gap:6px;padding:18px 4px 14px;text-align:center}
+.B .sk+.sk{border-inline-start:.5px solid var(--b-line)}
+.B .medal{width:48px;height:48px;display:grid;place-items:center;position:relative;color:var(--b-ink)}
+.B .medal svg.ring{position:absolute;inset:0;width:100%;height:100%}
+.B .medal svg.ring path{fill:none;stroke:var(--b-guil);stroke-width:.6}
+.B .medal .ico{width:24px;height:24px}
+.B .ico .ink,.B .ico .acc{stroke:currentColor;stroke-width:.9;stroke-linejoin:round}
+.B .ico .ink{fill:url(#hatchB)}
+.B .ico .ink,.B .ico .acc{stroke-width:1}
+.B .ico .acc{fill:currentColor}
+.B .sk .nm{font-size:12.5px;font-weight:600}
+.B .sk .lv{font:500 17px/1 'Bodoni Moda',serif}
+.B .sk .bar{width:58%;height:3px;border-block:.5px solid var(--b-ink3);position:relative}
+.B .sk .bar i{position:absolute;inset-block:-.5px;inset-inline-start:0;width:var(--p);background:var(--b-ink)}
+.B .sk .more{position:absolute;top:6px;inset-inline-end:6px;width:22px;height:22px;display:grid;place-items:center;color:var(--b-ink3)}
+.B .links{display:flex;flex-direction:column}
+.B .links a{display:flex;align-items:center;gap:12px;min-height:50px;border-bottom:.5px solid var(--b-line);font-size:14px;color:inherit;text-decoration:none}
+.B .links a span{flex:1}
+.B .links .cnt{font:500 15px/1 'Bodoni Moda',serif;color:var(--b-ink3)}
+.B .links .badge{min-width:24px;height:24px;border-radius:50%;border:1px solid var(--b-seal);color:var(--b-seal);font-size:12px;font-weight:700;display:grid;place-items:center}
+.B .sbar{display:flex;align-items:center;gap:6px}
+.B .ib{width:40px;height:40px;display:grid;place-items:center;color:var(--b-ink2)}
+.B .track{flex:1;height:3px;border-block:.5px solid var(--b-ink3);position:relative}
+.B .track i{position:absolute;inset-block:-.5px;inset-inline-start:0;width:30%;background:var(--b-ink)}
+.B .wd{display:flex;flex-direction:column;gap:2px;padding-top:14px}
+.B .gender{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--b-ink2)}
+.B .gender .lat{font-style:italic;font-size:19px;color:var(--b-seal)}
+.B .word{margin:0;font:500 96px/1.05 'Bodoni Moda',serif;font-variation-settings:"opsz" 96;letter-spacing:-.02em;text-align:right}
+.B .mean{margin:0;font-family:'Markazi Text',Vazirmatn,serif;font-weight:600;font-size:34px;line-height:1.4}
+.B .aud{display:flex;align-items:center;gap:8px;padding-top:8px}
+.B .play{width:58px;height:58px;border-radius:50%;background:var(--b-navy);color:var(--b-on-navy);display:grid;place-items:center;position:relative}
+.B .play::after{content:"";position:absolute;inset:3px;border-radius:50%;border:.5px solid color-mix(in oklab,var(--b-on-navy) 50%,transparent)}
+.B .play .li{width:24px;height:24px;stroke-width:1.5}
+.B .pill{min-height:42px;padding-inline:14px;border-radius:999px;border:.5px solid var(--b-ink3);font-size:13px;font-weight:600;display:flex;align-items:center;gap:6px}
+.B .ex{border-block:.5px solid var(--b-line);padding-block:14px;display:flex;flex-direction:column;gap:6px}
+.B .ex .h{display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:var(--b-ink3);font-weight:600}
+.B .ex p{margin:0}
+.B .ex .fr{font-size:23px;line-height:1.4;text-align:left}
+.B .ex .fr em{font-style:italic;color:var(--b-seal)}
+.B .ex .fa{font-size:14px;color:var(--b-ink2)}
+.B .col{display:flex;flex-direction:column;font-size:14px}
+.B .col div{display:flex;justify-content:space-between;align-items:baseline;min-height:40px;border-bottom:.5px dashed var(--b-line)}
+.B .col .lat{font-size:18px}
+.B .col span:not(.lat){color:var(--b-ink2)}
+.B .cta{margin-top:auto;display:flex;flex-direction:column;gap:2px}
+.B .primary{min-height:56px;border-radius:999px;background:var(--b-navy);color:var(--b-on-navy);font-weight:600;font-size:16px;position:relative}
+.B .primary::after{content:"";position:absolute;inset:3px;border-radius:999px;border:.5px solid color-mix(in oklab,var(--b-on-navy) 40%,transparent)}
+.B .ghost{min-height:40px;font-weight:600;font-size:14px;color:var(--b-ink2)}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- Skill icons, 24-unit grid, one solid ink body plus one accent part each. -->
+    <symbol id="i-vocab" viewBox="0 0 24 24">
+      <path class="acc" d="M9.4 3H18.6A2.4 2.4 0 0 1 21 5.4V14.6A2.4 2.4 0 0 1 18.6 17H18.2V5.8H7V5.4A2.4 2.4 0 0 1 9.4 3Z"/>
+      <path class="ink" fill-rule="evenodd" d="M5.4 7H14.6A2.4 2.4 0 0 1 17 9.4V18.6A2.4 2.4 0 0 1 14.6 21H5.4A2.4 2.4 0 0 1 3 18.6V9.4A2.4 2.4 0 0 1 5.4 7ZM9.15 10.2H10.85L13.3 18.4H11.55L11.05 16.6H8.95L8.45 18.4H6.7ZM10 12.6L9.35 15.1H10.65Z"/>
+    </symbol>
+    <symbol id="i-gram" viewBox="0 0 24 24">
+      <rect class="acc" x="9" y="2.5" width="6" height="6" rx="1.7"/>
+      <path class="ink" d="M11.1 8.5H12.9V11.1H19.4V15.5H17.6V12.9H6.4V15.5H4.6V11.1H11.1Z"/>
+      <rect class="ink" x="2.5" y="15.5" width="6" height="6" rx="1.7"/>
+      <rect class="ink" x="15.5" y="15.5" width="6" height="6" rx="1.7"/>
+    </symbol>
+    <symbol id="i-listen" viewBox="0 0 24 24">
+      <path class="acc" d="M3 13A9 9 0 0 1 21 13H19A7 7 0 0 0 5 13Z"/>
+      <rect class="ink" x="2.5" y="12.3" width="5.6" height="9.2" rx="2.2"/>
+      <rect class="ink" x="15.9" y="12.3" width="5.6" height="9.2" rx="2.2"/>
+    </symbol>
+    <symbol id="i-read" viewBox="0 0 24 24">
+      <path class="acc" d="M11.2 6.2C8.8 4.6 5.7 4.1 2.5 4.6V18.8C5.7 18.3 8.8 18.8 11.2 20.4Z"/>
+      <path class="ink" fill-rule="evenodd" d="M12.8 6.2C15.2 4.6 18.3 4.1 21.5 4.6V18.8C18.3 18.3 15.2 18.8 12.8 20.4ZM14.8 9.3V10.5L19.5 9.9V8.7ZM14.8 12.5V13.7L19.5 13.1V11.9Z"/>
+    </symbol>
+    <!-- line icons for chrome -->
+    <symbol id="l-chain" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></symbol>
+    <symbol id="l-snow" viewBox="0 0 24 24"><path d="M12 3v18M4.2 7.5l15.6 9M4.2 16.5l15.6-9M9.5 4.5 12 7l2.5-2.5M9.5 19.5 12 17l2.5 2.5"/></symbol>
+    <symbol id="l-gear" viewBox="0 0 24 24"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></symbol>
+    <symbol id="l-chev" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5"/></symbol>
+    <symbol id="l-arrow" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+    <symbol id="l-dots" viewBox="0 0 24 24"><path d="M6 12h.01M12 12h.01M18 12h.01"/></symbol>
+    <symbol id="l-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="l-mute" viewBox="0 0 24 24"><path d="M11 5 6 9H2v6h4l5 4V5zM22 9l-6 6M16 9l6 6"/></symbol>
+    <symbol id="l-spk" viewBox="0 0 24 24"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></symbol>
+    <symbol id="l-mic" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M19 10v1a7 7 0 0 1-14 0v-1M12 18v4"/></symbol>
+    <symbol id="l-book" viewBox="0 0 24 24"><path d="M5 4h11l3 3v13H5z"/><path d="M9 10l6 6M15 10l-6 6"/></symbol>
+    <symbol id="l-stack" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5z"/><path d="m3 13 9 5 9-5"/></symbol>
+    <symbol id="l-type" viewBox="0 0 24 24"><path d="M5 6V4h14v2M12 4v16M9 20h6"/></symbol>
+    <symbol id="l-back" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></symbol>
+  </defs>
+</svg>
+
+<main class="board" dir="rtl" lang="fa">
+  <section class="intro">
+    <h1>پلریا: دو جهت تازه برای حال‌وهوای اپ</h1>
+    <p>هر دو جهت آیکن‌های معنادار دارند که خودم کشیده‌ام (کارت کلمه، درخت جمله، هدفون، کتاب باز) و مایع واقعی و متحرک روی کارت «شروع». ترتیب و کار صفحه‌ها همان است؛ فقط دنیای ظاهری فرق دارد.</p>
+    <div class="theme" role="group" aria-label="حالت نمایش">
+      <button type="button" data-t="auto" aria-pressed="true">خودکار</button>
+      <button type="button" data-t="light" aria-pressed="false">روز</button>
+      <button type="button" data-t="dark" aria-pressed="false">شب</button>
+    </div>
+  </section>
+
+  <!-- ========== Direction A ========== -->
+  <section class="dir" aria-labelledby="a-title">
+    <div class="dir-head">
+      <h2 id="a-title">جهت ۱: مدرنیسم تهران</h2>
+      <p>از گرافیک مدرن ایران (مرتضی ممیز، رضا عابدینی): حروف درشت و محکم فارسی، رنگ کم ولی قاطع، خط‌کشی دقیق. مایع داخل حروف «شروع» جریان دارد، مثل جوهر داخل یک پوستر.</p>
+    </div>
+    <div class="facts">
+      <span class="chips" aria-label="رنگ‌ها"><i class="chip-c" style="background:var(--a-deep)"></i><i class="chip-c" style="background:var(--a-blue)"></i><i class="chip-c" style="background:var(--a-verm)"></i><i class="chip-c" style="background:var(--a-ochre)"></i><i class="chip-c" style="background:var(--a-teal)"></i><i class="chip-c" style="background:var(--a-paper)"></i></span>
+      <span>لاجوردی، شنگرفی، اُخرایی، سبزآبی، روی کاغذ خاکستری سرد</span>
+      <span>قلم: Reem Kufi برای تیترهای فارسی، Archivo برای فرانسوی و آلمانی</span>
+    </div>
+
+    <div class="frames">
+      <!-- A home -->
+      <div class="phone A" dir="rtl" lang="fa">
+        <div class="scr">
+          <div class="tb">
+            <button class="lang" type="button"><span class="lang-tile">Fr</span>فرانسوی<span class="lvl lat">A2</span></button>
+            <div class="tb-r">
+              <span class="stat str"><svg class="li"><use href="#l-chain"/></svg>۱۲</span>
+              <span class="stat frz"><svg class="li"><use href="#l-snow"/></svg>۲</span>
+              <button class="gear" type="button" aria-label="تنظیمات"><svg class="li"><use href="#l-gear"/></svg></button>
+            </div>
+          </div>
+
+          <button class="start" type="button" aria-label="شروع جلسه">
+            <canvas class="liq" data-kind="ink"></canvas>
+            <svg class="knock" aria-hidden="true">
+              <defs><mask id="mA"><rect width="100%" height="100%" fill="#fff"/><text direction="ltr" x="100%" y="100%" dx="-16" dy="-50" text-anchor="end" font-family="Reem Kufi" font-weight="700" font-size="128">شروع</text></mask></defs>
+              <rect class="cover" width="100%" height="100%" mask="url(#mA)"/>
+            </svg>
+            <span class="top">
+              <span class="sub"><b>جلسه امروز</b>۱۵ دقیقه · ۱۸ مرور و ۶ مطلب جدید</span>
+              <span class="go"><svg class="li"><use href="#l-arrow"/></svg></span>
+            </span>
+          </button>
+
+          <div class="row">
+            <button class="quick" type="button">امروز وقت کم دارم</button>
+            <span class="plan">۲ روز رایگان مانده · <b>اشتراک</b></span>
+          </div>
+
+          <div class="skills">
+            <button class="sk k1" type="button"><span class="more"><svg class="li" style="width:18px;height:18px;stroke-width:2.6"><use href="#l-dots"/></svg></span><svg class="ico"><use href="#i-vocab"/></svg><span class="nm">واژگان</span><span class="lv lat">A2</span><span class="bar" style="--p:62%"><i></i></span></button>
+            <button class="sk k2" type="button"><span class="more"><svg class="li" style="width:18px;height:18px;stroke-width:2.6"><use href="#l-dots"/></svg></span><svg class="ico"><use href="#i-gram"/></svg><span class="nm">دستور</span><span class="lv lat">A2</span><span class="bar" style="--p:18%"><i></i></span></button>
+            <button class="sk k3" type="button"><span class="more"><svg class="li" style="width:18px;height:18px;stroke-width:2.6"><use href="#l-dots"/></svg></span><svg class="ico"><use href="#i-listen"/></svg><span class="nm">شنیداری</span><span class="lv lat">A1</span><span class="bar" style="--p:84%"><i></i></span></button>
+            <button class="sk k4" type="button"><span class="more"><svg class="li" style="width:18px;height:18px;stroke-width:2.6"><use href="#l-dots"/></svg></span><svg class="ico"><use href="#i-read"/></svg><span class="nm">خواندن</span><span class="lv lat">A2</span><span class="bar" style="--p:40%"><i></i></span></button>
+          </div>
+
+          <nav class="links" aria-label="پیوندها">
+            <a href="#a-title"><svg class="li"><use href="#l-book"/></svg><span>دفترچه اشتباهات</span><b class="badge">۷</b><svg class="li" style="width:18px;height:18px;color:var(--a-ink3)"><use href="#l-back"/></svg></a>
+            <a href="#a-title"><svg class="li"><use href="#l-stack"/></svg><span>کلمه‌های من</span><b class="cnt">۲۴۰</b><svg class="li" style="width:18px;height:18px;color:var(--a-ink3)"><use href="#l-back"/></svg></a>
+            <a href="#a-title"><svg class="li"><use href="#l-type"/></svg><span>الفبا و تلفظ</span><b class="cnt">درس ۳ از ۱۴</b><svg class="li" style="width:18px;height:18px;color:var(--a-ink3)"><use href="#l-back"/></svg></a>
+          </nav>
+        </div>
+      </div>
+
+      <!-- A word card -->
+      <div class="phone A" dir="rtl" lang="fa">
+        <div class="scr">
+          <div class="sbar">
+            <button class="ib" type="button" aria-label="بستن جلسه"><svg class="li"><use href="#l-x"/></svg></button>
+            <span class="track"><i></i></span>
+            <button class="ib" type="button" aria-label="الان نمی‌توانم گوش بدهم"><svg class="li"><use href="#l-mute"/></svg></button>
+          </div>
+          <div class="wd">
+            <span class="gender"><i class="sq"></i><span class="lat" lang="fr">une</span>مؤنث</span>
+            <p class="word lat" lang="fr">gare</p>
+            <p class="mean">ایستگاه قطار</p>
+            <div class="aud">
+              <button class="play" type="button" aria-label="پخش دوباره"><svg class="li"><use href="#l-spk"/></svg></button>
+              <button class="pill" type="button">آهسته</button>
+              <button class="pill" type="button"><svg class="li" style="width:18px;height:18px"><use href="#l-mic"/></svg>صدای خودت</button>
+            </div>
+          </div>
+          <div class="ex">
+            <div class="h"><span>مثال</span><svg class="li" style="width:18px;height:18px;color:var(--a-blue-text)"><use href="#l-spk"/></svg></div>
+            <p class="fr lat" lang="fr">Je t’attends à la <u>gare</u>.</p>
+            <p class="fa">توی ایستگاه منتظرت هستم.</p>
+          </div>
+          <div class="col">
+            <div><span class="lat" lang="fr">à la gare</span><span>در ایستگاه</span></div>
+            <div><span class="lat" lang="fr">la gare routière</span><span>ترمینال اتوبوس</span></div>
+          </div>
+          <div class="cta">
+            <button class="primary" type="button">یاد گرفتم، برو تمرین</button>
+            <button class="ghost" type="button">این را بلدم</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="swipe">کارت کلمه کنار همین صفحه است؛ قاب را به کنار بکش.</p>
+    <p class="risk"><b>ریسک:</b> قلم کوفی خیلی شخصیت دارد؛ اگر جز تیترهای کوتاه جای دیگری بیاید، سنگین می‌شود. برای همین فقط برای «شروع» و تیترهای اصلی است.</p>
+  </section>
+
+  <!-- ========== Direction B ========== -->
+  <section class="dir" aria-labelledby="b-title">
+    <div class="dir-head">
+      <h2 id="b-title">جهت ۲: سند و گواهی</h2>
+      <p>از اسکناس، گذرنامه و مدرک‌های DELF و Goethe: خطوط ظریف حکاکی‌شده، مهر سطح، و یک برگه هولوگرام که مثل مایع رنگ عوض می‌کند. هر سطح مثل یک مدرک به دست می‌آید.</p>
+    </div>
+    <div class="facts">
+      <span class="chips" aria-label="رنگ‌ها"><i class="chip-c" style="background:var(--b-navy)"></i><i class="chip-c" style="background:var(--b-guil)"></i><i class="chip-c" style="background:var(--b-seal)"></i><i class="chip-c" style="background:linear-gradient(135deg,#d7e3f0,#e9d9f2,#d6f0e6,#f3e7cf)"></i><i class="chip-c" style="background:var(--b-paper)"></i></span>
+      <span>جوهر سرمه‌ای، سبز حکاکی، قرمز مهر، هولوگرام، روی کاغذ امنیتی</span>
+      <span>قلم: Markazi Text برای تیترهای فارسی، Bodoni Moda برای فرانسوی و آلمانی</span>
+    </div>
+
+    <div class="frames">
+      <!-- B home -->
+      <div class="phone B" dir="rtl" lang="fa">
+        <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+          <pattern id="hatchB" width="2" height="2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="2" style="stroke:var(--b-ink)" stroke-width=".7"/></pattern>
+        </defs></svg>
+        <div class="scr">
+          <div class="tb">
+            <button class="lang" type="button"><span class="lang-tile">Fr</span>فرانسوی<svg class="li" style="width:16px;height:16px;color:var(--b-ink3)"><use href="#l-chev"/></svg></button>
+            <div class="tb-r">
+              <span class="stat str"><svg class="li"><use href="#l-chain"/></svg>۱۲</span>
+              <span class="stat frz"><svg class="li"><use href="#l-snow"/></svg>۲</span>
+              <button class="gear" type="button" aria-label="تنظیمات"><svg class="li"><use href="#l-gear"/></svg></button>
+            </div>
+          </div>
+
+          <button class="start" type="button" aria-label="شروع جلسه">
+            <svg class="waves" aria-hidden="true" data-waves></svg>
+            <canvas class="liq foil" data-kind="foil"></canvas>
+            <svg class="rosette" viewBox="-75 -75 150 150" aria-hidden="true" data-rosette></svg>
+            <span class="txt">
+              <span class="sub"><b>جلسه امروز</b>۱۵ دقیقه · ۱۸ مرور و ۶ مطلب جدید</span>
+              <h3>شروع</h3>
+              <span class="go">بزن بریم<svg class="li"><use href="#l-arrow"/></svg></span>
+            </span>
+          </button>
+
+          <div class="row">
+            <button class="quick" type="button">امروز وقت کم دارم</button>
+            <span class="plan">سطح <span class="lat" style="font-size:16px;color:var(--b-ink)">A2</span> · ۲ روز رایگان مانده · <b>اشتراک</b></span>
+          </div>
+
+          <div class="skills">
+            <button class="sk" type="button"><span class="more"><svg class="li" style="width:18px;height:18px;stroke-width:2.4"><use href="#l-dots"/></svg></span><span class="medal"><svg class="ring" viewBox="-24 -24 48 48" data-medal></svg><svg class="ico"><use href="#i-vocab"/></svg></span><span class="nm">واژگان</span><span class="lv lat">A2</span><span class="bar" style="--p:62%"><i></i></span></button>
+            <button class="sk" type="button"><span class="more"><svg class="li" style="width:18px;height:18px;stroke-width:2.4"><use href="#l-dots"/></svg></span><span class="medal"><svg class="ring" viewBox="-24 -24 48 48" data-medal></svg><svg class="ico"><use href="#i-gram"/></svg></span><span class="nm">دستور</span><span class="lv lat">A2</span><span class="bar" style="--p:18%"><i></i></span></button>
+            <button class="sk" type="button"><span class="more"><svg class="li" style="width:18px;height:18px;stroke-width:2.4"><use href="#l-dots"/></svg></span><span class="medal"><svg class="ring" viewBox="-24 -24 48 48" data-medal></svg><svg class="ico"><use href="#i-listen"/></svg></span><span class="nm">شنیداری</span><span class="lv lat">A1</span><span class="bar" style="--p:84%"><i></i></span></button>
+            <button class="sk" type="button"><span class="more"><svg class="li" style="width:18px;height:18px;stroke-width:2.4"><use href="#l-dots"/></svg></span><span class="medal"><svg class="ring" viewBox="-24 -24 48 48" data-medal></svg><svg class="ico"><use href="#i-read"/></svg></span><span class="nm">خواندن</span><span class="lv lat">A2</span><span class="bar" style="--p:40%"><i></i></span></button>
+          </div>
+
+          <nav class="links" aria-label="پیوندها">
+            <a href="#b-title"><svg class="li" style="stroke-width:1.4"><use href="#l-book"/></svg><span>دفترچه اشتباهات</span><b class="badge">۷</b><svg class="li" style="width:18px;height:18px;color:var(--b-ink3)"><use href="#l-back"/></svg></a>
+            <a href="#b-title"><svg class="li" style="stroke-width:1.4"><use href="#l-stack"/></svg><span>کلمه‌های من</span><b class="cnt lat">240</b><svg class="li" style="width:18px;height:18px;color:var(--b-ink3)"><use href="#l-back"/></svg></a>
+            <a href="#b-title"><svg class="li" style="stroke-width:1.4"><use href="#l-type"/></svg><span>الفبا و تلفظ</span><b class="cnt" style="font-family:Vazirmatn;font-size:13px">درس ۳ از ۱۴</b><svg class="li" style="width:18px;height:18px;color:var(--b-ink3)"><use href="#l-back"/></svg></a>
+          </nav>
+        </div>
+      </div>
+
+      <!-- B word card -->
+      <div class="phone B" dir="rtl" lang="fa">
+        <div class="scr">
+          <div class="sbar">
+            <button class="ib" type="button" aria-label="بستن جلسه"><svg class="li" style="stroke-width:1.5"><use href="#l-x"/></svg></button>
+            <span class="track"><i></i></span>
+            <button class="ib" type="button" aria-label="الان نمی‌توانم گوش بدهم"><svg class="li" style="stroke-width:1.5"><use href="#l-mute"/></svg></button>
+          </div>
+          <div class="wd">
+            <span class="gender"><span class="lat" lang="fr">une</span>مؤنث</span>
+            <p class="word lat" lang="fr">gare</p>
+            <p class="mean">ایستگاه قطار</p>
+            <div class="aud">
+              <button class="play" type="button" aria-label="پخش دوباره"><svg class="li"><use href="#l-spk"/></svg></button>
+              <button class="pill" type="button">آهسته</button>
+              <button class="pill" type="button"><svg class="li" style="width:18px;height:18px;stroke-width:1.5"><use href="#l-mic"/></svg>صدای خودت</button>
+            </div>
+          </div>
+          <div class="ex">
+            <div class="h"><span>مثال</span><svg class="li" style="width:18px;height:18px;stroke-width:1.5;color:var(--b-guil)"><use href="#l-spk"/></svg></div>
+            <p class="fr lat" lang="fr">Je t’attends à la <em>gare</em>.</p>
+            <p class="fa">توی ایستگاه منتظرت هستم.</p>
+          </div>
+          <div class="col">
+            <div><span class="lat" lang="fr">à la gare</span><span>در ایستگاه</span></div>
+            <div><span class="lat" lang="fr">la gare routière</span><span>ترمینال اتوبوس</span></div>
+          </div>
+          <div class="cta">
+            <button class="primary" type="button">یاد گرفتم، برو تمرین</button>
+            <button class="ghost" type="button">این را بلدم</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="swipe">کارت کلمه کنار همین صفحه است؛ قاب را به کنار بکش.</p>
+    <p class="risk"><b>ریسک:</b> اگر خطوط حکاکی زیاد شود، حس اداری و رسمی می‌دهد. برای همین خطوط فقط در کارت «شروع» و دور آیکن‌ها هستند و بقیه صفحه ساده می‌ماند.</p>
+  </section>
+
+  <section class="canon">
+    <h3>راه سوم: سبک رایج اپ‌های آموزشی</h3>
+    <p>زمینه سفید، یک رنگ اصلی، کارت‌های گرد و آیکن‌های خطی ساده، مثل Babbel. آشنا و بی‌خطر است، ولی شبیه بقیه می‌شود.</p>
+  </section>
+</main>
+
+<script>
+(() => {
+  const root = document.documentElement;
+  const reduced = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // theme toggle (page-level preview only)
+  const tBtns = document.querySelectorAll('.theme button');
+  tBtns.forEach(b => b.addEventListener('click', () => {
+    const t = b.dataset.t;
+    if (t === 'auto') root.removeAttribute('data-theme'); else root.setAttribute('data-theme', t);
+    tBtns.forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+    try { localStorage.setItem('polyra-dir-theme', t); } catch (e) {}
+    liquids.forEach(l => l.readColors());
+  }));
+
+  // guilloche: a woven ring is N phase-shifted copies of a wavy circle
+  function ring(r0, amp, lobes, copies, steps) {
+    let d = '';
+    for (let c = 0; c < copies; c++) {
+      const ph = c * 2 * Math.PI / (lobes * copies);
+      for (let i = 0; i <= steps; i++) {
+        const t = i / steps * 2 * Math.PI;
+        const r = r0 + amp * Math.cos(lobes * (t + ph));
+        d += (i ? 'L' : 'M') + (r * Math.cos(t)).toFixed(2) + ' ' + (r * Math.sin(t)).toFixed(2);
+      }
+      d += 'Z';
+    }
+    return d;
+  }
+  document.querySelectorAll('[data-rosette]').forEach(s => {
+    s.innerHTML = `<path d="${ring(64, 6, 30, 7, 720)}"/><path d="${ring(46, 9, 16, 9, 600)}"/><path d="${ring(27, 6, 10, 8, 420)}"/><circle r="12" style="fill:none;stroke:var(--b-navy);stroke-width:.6;opacity:.6"/>`;
+  });
+  document.querySelectorAll('[data-medal]').forEach(s => {
+    s.innerHTML = `<path d="${ring(21, 1.6, 24, 3, 480)}"/><circle r="17.2" style="fill:none;stroke:var(--b-guil);stroke-width:.5"/>`;
+  });
+  document.querySelectorAll('[data-waves]').forEach(s => {
+    const W = 400, H = 240; let d = '';
+    for (let i = 0; i < 26; i++) {
+      const y0 = -10 + i * 10;
+      for (let x = 0; x <= W; x += 4) {
+        const y = y0 + 7 * Math.sin(x / 26 + i * .42) + 3 * Math.sin(x / 9.5 - i * .21);
+        d += (x ? 'L' : 'M') + x + ' ' + y.toFixed(1);
+      }
+    }
+    s.setAttribute('viewBox', `0 0 ${W} ${H}`); s.setAttribute('preserveAspectRatio', 'xMidYMid slice');
+    s.innerHTML = `<path d="${d}"/>`;
+  });
+
+  // liquid: one WebGL fragment shader, two materials (ink marbling, holographic foil)
+  const FS = `precision highp float;
+uniform vec2 r; uniform float t; uniform vec2 m; uniform float k;
+uniform vec3 c0; uniform vec3 c1; uniform vec3 c2; uniform vec3 c3; uniform float amt; uniform float tint;
+float h(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
+float n(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);
+ return mix(mix(h(i),h(i+vec2(1.,0.)),f.x),mix(h(i+vec2(0.,1.)),h(i+vec2(1.,1.)),f.x),f.y);}
+float fbm(vec2 p){float v=0.,a=.5;for(int i=0;i<5;i++){v+=a*n(p);p=p*2.02+vec2(1.7,9.2);a*=.5;}return v;}
+void main(){
+ vec2 uv=gl_FragCoord.xy/r.y;
+ if(k<.5){
+  float T=t*.19;
+  vec2 q=vec2(fbm(uv*1.5+vec2(0.,T)),fbm(uv*1.5+vec2(5.2,1.3)-T*.8));
+  vec2 w=vec2(fbm(uv*1.5+2.7*q+vec2(1.7,9.2)+T*.5+m*.5),fbm(uv*1.5+2.7*q+vec2(8.3,2.8)-T*.45));
+  float f=fbm(uv*1.5+3.*w);
+  vec3 col=mix(c0,c1,smoothstep(.28,.78,f));
+  col=mix(col,c2,smoothstep(.44,.74,w.y)*.95);
+  col=mix(col,c3,smoothstep(.5,.8,q.x)*.85);
+  gl_FragColor=vec4(col,1.);
+ } else {
+  float T=t*.24;
+  float th=fbm(uv*2.3+vec2(T*.7,-T*.5))*1.35+uv.x*.55+uv.y*.4+m.x*.7+m.y*.35+T*.3;
+  vec3 ir=.5+.5*cos(6.2832*(th+vec3(0.,.33,.67)));
+  vec3 col=mix(c0,ir*.55+c1*.45,amt);
+  float band=pow(max(0.,sin(uv.x*2.4+uv.y*1.3-T*2.4+m.x)),16.);
+  col+=band*.32;
+  gl_FragColor=vec4(col*tint,1.);
+ }
+}`;
+  const VS = 'attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}';
+  const hex = s => { s = s.trim().replace('#', ''); if (s.length === 3) s = s.split('').map(c => c + c).join(''); const n = parseInt(s, 16); return [(n >> 16 & 255) / 255, (n >> 8 & 255) / 255, (n & 255) / 255]; };
+  const liquids = [];
+  function makeLiquid(cv) {
+    const kind = cv.dataset.kind === 'foil' ? 1 : 0;
+    const gl = cv.getContext('webgl', { antialias: false, alpha: false, powerPreference: 'low-power' });
+    const host = cv.closest('.start');
+    if (!gl) { cv.style.background = kind ? 'linear-gradient(135deg,#cfd8e6,#e7d6ef,#d3ecdf,#efe3c9)' : 'linear-gradient(135deg,#2236d6,#6a80ff 50%,#ee5b3b)'; return; }
+    const sh = (type, src) => { const s = gl.createShader(type); gl.shaderSource(s, src); gl.compileShader(s); return s; };
+    const pr = gl.createProgram(); gl.attachShader(pr, sh(gl.VERTEX_SHADER, VS)); gl.attachShader(pr, sh(gl.FRAGMENT_SHADER, FS)); gl.linkProgram(pr); gl.useProgram(pr);
+    const buf = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, buf); gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 3, -1, -1, 3]), gl.STATIC_DRAW);
+    const loc = gl.getAttribLocation(pr, 'p'); gl.enableVertexAttribArray(loc); gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
+    const U = {}; ['r', 't', 'm', 'k', 'c0', 'c1', 'c2', 'c3', 'amt', 'tint'].forEach(n => U[n] = gl.getUniformLocation(pr, n));
+    gl.uniform1f(U.k, kind);
+    const st = { cv, gl, U, kind, m: [0, 0], tm: [0, 0], visible: true };
+    st.readColors = () => {
+      const cs = getComputedStyle(cv);
+      const g = n => hex(cs.getPropertyValue(n));
+      if (kind === 0) { gl.uniform3fv(U.c0, g('--a-l0')); gl.uniform3fv(U.c1, g('--a-l1')); gl.uniform3fv(U.c2, g('--a-l2')); gl.uniform3fv(U.c3, g('--a-l3')); }
+      else { gl.uniform3fv(U.c0, g('--b-f0')); gl.uniform3fv(U.c1, g('--b-f1')); gl.uniform3fv(U.c2, [1, 1, 1]); gl.uniform3fv(U.c3, [1, 1, 1]); gl.uniform1f(U.amt, parseFloat(cs.getPropertyValue('--b-amt'))); gl.uniform1f(U.tint, parseFloat(cs.getPropertyValue('--b-tint'))); }
+      draw(performance.now());
+    };
+    const size = () => { const d = Math.min(devicePixelRatio || 1, 1.5); const w = Math.round(cv.clientWidth * d), h = Math.round(cv.clientHeight * d); if (cv.width !== w || cv.height !== h) { cv.width = w; cv.height = h; gl.viewport(0, 0, w, h); gl.uniform2f(U.r, w, h); } };
+    function draw(now) { size(); st.m[0] += (st.tm[0] - st.m[0]) * .06; st.m[1] += (st.tm[1] - st.m[1]) * .06; gl.uniform2f(U.m, st.m[0], st.m[1]); gl.uniform1f(U.t, reduced() ? 6 : now / 1000 + 4); gl.drawArrays(gl.TRIANGLES, 0, 3); }
+    st.draw = draw;
+    host.addEventListener('pointermove', e => { const b = host.getBoundingClientRect(); st.tm = [(e.clientX - b.left) / b.width - .5, (e.clientY - b.top) / b.height - .5]; });
+    host.addEventListener('pointerleave', () => { st.tm = [0, 0]; });
+    new IntersectionObserver(es => es.forEach(e => { st.visible = e.isIntersecting; })).observe(cv);
+    liquids.push(st);
+    st.readColors();
+    if (reduced()) { const n = host.querySelector('.rm-note') || document.createElement('span'); n.className = 'rm-note'; n.textContent = 'حرکت در تنظیمات گوشی‌ات کم شده؛ برای همین مایع ثابت است.'; host.appendChild(n); }
+  }
+  document.querySelectorAll('canvas.liq').forEach(makeLiquid);
+  let last = 0;
+  (function loop(now) {
+    requestAnimationFrame(loop);
+    if (reduced() || document.hidden || now - last < 33) return;
+    last = now;
+    liquids.forEach(l => { if (l.visible) l.draw(now); });
+  })(0);
+  addEventListener('resize', () => liquids.forEach(l => l.draw(performance.now())));
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => liquids.forEach(l => l.readColors()));
+  try { const t = localStorage.getItem('polyra-dir-theme'); if (t && t !== 'auto') document.querySelector(`.theme [data-t="${t}"]`).click(); } catch (e) {}
+  if (document.fonts) document.fonts.ready.then(() => liquids.forEach(l => l.draw(performance.now())));
+})();
+</script>
