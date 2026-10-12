@@ -1,10 +1,11 @@
 import "dotenv/config";
 import { normalizeMobile } from "@/lib/phone";
 import { db } from "@/server/db";
+import { seedFrequency } from "./frequency";
 import { seedSettings } from "./settings";
 
 /**
- * `npm run seed`: settings, languages, one admin and one tester account (PRD §15.7).
+ * `npm run seed`: settings, languages, frequency lists, one admin and one tester account (PRD §15.7).
  * Synthetic content (fixtures/synthetic) joins this script when the engine phase starts.
  * Phones come from SEED_ADMIN_PHONE and SEED_TESTER_PHONE. In development they have made-up
  * defaults; on a server (NODE_ENV=production) an account is made only when its variable is set.
@@ -13,6 +14,9 @@ import { seedSettings } from "./settings";
 async function main() {
   const settings = await seedSettings(db);
   console.log(`Settings: ${settings.engineSettings} engine, ${settings.appSettings} general.`);
+  for (const [language, count] of Object.entries(await seedFrequency(db))) {
+    console.log(`Frequency list ${language}: ${count} words.`);
+  }
 
   const lengthSetting = await db.engineSetting.findUniqueOrThrow({ where: { key: "session.default_length" } });
   const defaultLength = Number(lengthSetting.value);

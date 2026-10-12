@@ -1,0 +1,45 @@
+{
+  "words": [
+    {
+      "code": "Auto",
+      "lemma": "Auto",
+      "pos": "noun",
+      "gender": "das",
+      "number": "sg",
+      "plural": "Autos",
+      "meaning_fa": "ماشین، خودرو",
+      "level": "A1",
+      "register": "standard",
+      "concept_fa": "ماشین",
+      "no_card": false,
+      "homophones": [],
+      "note_fa": null,
+      "mastery": "produce",
+      "sense_of": null,
+      "parts": null,
+      "family": null,
+      "collocations": [{ "text": "mit dem Auto", "translation_fa": "با ماشین" }]
+    },
+    {
+      "code": "Karre",
+      "lemma": "Karre",
+      "pos": "noun",
+      "gender": "die",
+      "number": "sg",
+      "plural": "Karren",
+      "meaning_fa": "ماشین (محاوره‌ای)",
+      "level": "A2",
+      "register": "familier",
+      "concept_fa": "ماشین",
+      "no_card": false,
+      "homophones": [],
+      "note_fa": "فقط در مکالمه دوستانه به کار می‌رود.",
+      "mastery": "produce",
+      "sense_of": null,
+      "parts": null,
+      "family": null,
+      "collocations": []
+    }
+  ],
+  "issues": []
+}

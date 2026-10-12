@@ -29,6 +29,19 @@ export const appSettingDefaults: Record<string, unknown> = {
   pace_estimate_fa: {},
   /** Chatbot names the admin picks from in step 1 of the four-step path (PRD §13.9). */
   chatbot_names: ["ChatGPT", "Claude", "Gemini"],
+  /** Records per batch for each prompt (PRD §14.9); made smaller when answers keep getting cut. */
+  "batch.sizes": {
+    "P-C": 200,
+    "P-W": 50,
+    "P-S": 10,
+    "P-T": 2,
+    "P-X": 20,
+    "P-QA": 100,
+    "P-E": 5,
+    "P-WR": 5,
+  },
+  /** Sentence length in words for vocabulary sentences (P-S), per level. */
+  "prompt.sentence_length": { A1: "4 تا 10", A2: "5 تا 12", B1: "6 تا 15", B2: "6 تا 18" },
   "targets.fr": levelTargets,
   "targets.de": levelTargets,
   terms_fa: "",

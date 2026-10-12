@@ -77,7 +77,18 @@ describe("checkTokens", () => {
     const result = checkTokens("Je veux manger une pomme.", [w("Je", "je"), w("veux", "vouloir"), w("une", "un"), w("pomme", "pomme")], fr);
     expect(result).toMatchObject({ ok: false });
     if (result.ok) return;
-    expect(result.problems.map((problem) => problem.type)).toContain("not_found");
+    // The exact missing word is named, not a chain of follow-on errors.
+    expect(result.problems).toEqual([{ type: "uncovered", piece: "manger" }]);
+  });
+
+  it("rejects tokens given out of sentence order", () => {
+    const result = checkTokens("Je veux manger.", [w("Je", "je"), w("manger", "manger"), w("veux", "vouloir")], fr);
+    expect(result).toMatchObject({ ok: false });
+    if (result.ok) return;
+    expect(result.problems).toEqual([
+      { type: "not_found", position: 2, surface: "veux" },
+      { type: "uncovered", piece: "veux" },
+    ]);
   });
 
   it("rejects a name without a capital letter and a number without digits", () => {

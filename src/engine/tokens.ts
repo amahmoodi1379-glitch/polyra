@@ -92,7 +92,7 @@ export function splitPieces(text: string): Piece[] {
 }
 
 /** Case-insensitive comparison form that keeps accents. */
-function fold(text: string) {
+export function fold(text: string) {
   return text.normalize("NFC").toLocaleLowerCase("und").replace(/[’ʼ`´]/gu, "'");
 }
 
@@ -141,13 +141,15 @@ export function checkTokens(text: string, tokens: TokenInput[], vocabulary: Voca
   const covered = pieces.map(() => false);
   const problems: TokenProblem[] = [];
   const rows: MappedRow[] = [];
-  let cursor = 0;
+  // Tokens go in sentence order: each one starts after the previous token's first part. (A split
+  // verb's later parts lie further on, so the next token may come back before them.)
+  let floor = 0;
 
   tokens.forEach((token, position) => {
-    while (cursor < pieces.length && covered[cursor]) cursor++;
+    let at = floor;
+    while (at < pieces.length && covered[at]) at++;
     const segments = token.surface.split(gap).filter((segment) => segment.trim() !== "");
     const spans: [number, number][] = [];
-    let at = cursor;
     let found = segments.length > 0;
 
     segments.forEach((segment, index) => {
@@ -157,15 +159,16 @@ export function checkTokens(text: string, tokens: TokenInput[], vocabulary: Voca
         found = false;
         return;
       }
-      // The first segment must continue the sentence where the previous token stopped; later
-      // segments of a split verb may come further on.
-      const start = index === 0 ? at : findRun(pieces, covered, wanted, at);
-      if (start < 0 || !matchesAt(pieces, covered, wanted, start)) {
+      // Normally a token continues exactly where the previous one stopped. If it matches further
+      // on, the pieces skipped in between stay uncovered and are reported as missing words.
+      const start = findRun(pieces, covered, wanted, at);
+      if (start < 0) {
         found = false;
         return;
       }
       for (let k = start; k < start + wanted.length; k++) covered[k] = true;
       spans.push([pieces[start].start, pieces[start + wanted.length - 1].end]);
+      if (index === 0) floor = start + wanted.length;
       at = start + wanted.length;
     });
 

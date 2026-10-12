@@ -1,0 +1,65 @@
+{
+  "sentences": [
+    {
+      "text": "Je veux manger une pomme.",
+      "tts_text": null,
+      "translation_fa": "می‌خواهم یک سیب بخورم.",
+      "tokens": [
+        { "surface": "Je", "kind": "word", "code": "je", "meaning_fa": "من" },
+        { "surface": "veux", "kind": "word", "code": "vouloir", "meaning_fa": "می‌خواهم" },
+        { "surface": "manger", "kind": "word", "code": "manger", "meaning_fa": "خوردن" },
+        { "surface": "une", "kind": "word", "code": "un", "meaning_fa": "یک" },
+        { "surface": "pomme", "kind": "word", "code": "pomme", "meaning_fa": "سیب" }
+      ],
+      "targets": [
+        {
+          "type": "word",
+          "target": "manger",
+          "marked_text": "Je veux {{manger}} une pomme.",
+          "blanks": 1,
+          "accepted": ["manger"],
+          "distractors": ["boire", "dormir", "parler"],
+          "hint": null,
+          "accepted_full": null
+        },
+        {
+          "type": "word",
+          "target": "pomme",
+          "marked_text": "Je veux manger une {{pomme}}.",
+          "blanks": 1,
+          "accepted": ["pomme"],
+          "distractors": ["table", "voiture", "chaise"],
+          "hint": null,
+          "accepted_full": null
+        }
+      ]
+    },
+    {
+      "text": "Marie habite à Paris depuis 3 ans.",
+      "tts_text": null,
+      "translation_fa": "ماری سه سال است در پاریس زندگی می‌کند.",
+      "tokens": [
+        { "surface": "Marie", "kind": "name", "code": null, "meaning_fa": null },
+        { "surface": "habite", "kind": "word", "code": "habiter", "meaning_fa": "زندگی می‌کند" },
+        { "surface": "à", "kind": "word", "code": "à", "meaning_fa": "در" },
+        { "surface": "Paris", "kind": "name", "code": null, "meaning_fa": null },
+        { "surface": "depuis", "kind": "word", "code": "depuis", "meaning_fa": "از ... پیش" },
+        { "surface": "3", "kind": "number", "code": null, "meaning_fa": "سه" },
+        { "surface": "ans", "kind": "word", "code": "an", "meaning_fa": "سال" }
+      ],
+      "targets": [
+        {
+          "type": "word",
+          "target": "habiter",
+          "marked_text": "Marie {{habite}} à Paris depuis 3 ans.",
+          "blanks": 1,
+          "accepted": ["habite"],
+          "distractors": ["habites", "habitons", "habitent"],
+          "hint": "(habiter)",
+          "accepted_full": null
+        }
+      ]
+    }
+  ],
+  "issues": []
+}
