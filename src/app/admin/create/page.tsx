@@ -49,6 +49,7 @@ export default async function CreatePage({ searchParams }: PageProps<"/admin/cre
   const unitLevel = status.levelsWithoutUnits[0];
   const grammar = status.grammarNext;
   const translations = status.translationsNext;
+  const tables = status.tables;
   const rows: Row[] = [
     {
       slug: "word-list",
@@ -115,6 +116,21 @@ export default async function CreatePage({ searchParams }: PageProps<"/admin/cre
           : t("admin.create.kinds.translations.needsLessons"),
       action: translations ? t("admin.create.kinds.translations.action") : null,
       level: translations?.level,
+    },
+    {
+      slug: "conjugation",
+      name: t("admin.create.kinds.conjugation.name"),
+      status: tables.next
+        ? t("admin.create.kinds.conjugation.status", { count: tables.next.count, level: tables.next.level })
+        : !tables.hasVerbs
+          ? t("admin.create.kinds.conjugation.needsVerbs")
+          : tables.waitingForUnits
+            ? t("admin.create.kinds.conjugation.needsUnits")
+            : t("admin.create.nothing.conjugation"),
+      action: tables.next
+        ? t("admin.create.kinds.conjugation.action", { size: Math.min(sizes["P-X"] ?? 20, tables.next.count) })
+        : null,
+      level: tables.next?.level,
     },
   ];
   // One clear next step: the first kind on the main path that has work.

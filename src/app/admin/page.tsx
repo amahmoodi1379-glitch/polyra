@@ -97,6 +97,18 @@ async function languageRows(language: LanguageCode, sizes: Record<string, number
       action: { start: "translations", level: translations.level, label: t("admin.workbench.actions.translations") },
     });
   }
+  const tables = status.tables.next;
+  if (tables) {
+    rows.push({
+      key: "conjugation",
+      text: t("admin.workbench.rows.conjugation", { count: tables.count, level: tables.level }),
+      action: {
+        start: "conjugation",
+        level: tables.level,
+        label: t("admin.workbench.actions.conjugation", { size: Math.min(sizes["P-X"] ?? 20, tables.count) }),
+      },
+    });
+  }
   if (status.candidates + status.suspects > 0) {
     rows.push({
       key: "review",

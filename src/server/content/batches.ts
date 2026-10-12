@@ -2,6 +2,7 @@ import type { ImportBatch, Prisma, PromptKind } from "@/generated/prisma/client"
 import { qaAnswer, qaFinding } from "@/schemas/qa";
 import { db } from "@/server/db";
 import { appSetting } from "@/server/settings/read";
+import { conjugation } from "./kinds/conjugation";
 import { grammar } from "./kinds/grammar";
 import { sentences } from "./kinds/sentences";
 import { translations } from "./kinds/translations";
@@ -28,6 +29,7 @@ export const contentKinds = {
   sentences,
   grammar,
   translations,
+  conjugation,
 } satisfies Record<string, ContentKind>;
 
 export type KindSlug = keyof typeof contentKinds;

@@ -46,6 +46,22 @@ export const appSettingDefaults: Record<string, unknown> = {
   "prompt.grammar_counts": { targets: 40, transforms: 8, translations: 8 },
   /** Longest short translation in words, per level (P-G and P-TR, PRD §14.6). */
   "prompt.translation_length": { A1: 10, A2: 10, B1: 14, B2: 14 },
+  /**
+   * Tenses that get a conjugation table, per level (PRD §6.6, §16.2: set by the teacher). A verb gets
+   * every tense of its level and below; a lower-level verb gets the higher tenses when that level comes.
+   */
+  "conjugation.tenses.fr": {
+    A1: ["présent", "passé composé"],
+    A2: ["imparfait", "futur simple"],
+    B1: ["conditionnel présent", "plus-que-parfait", "subjonctif présent"],
+    B2: ["conditionnel passé", "futur antérieur", "subjonctif passé"],
+  },
+  "conjugation.tenses.de": {
+    A1: ["Präsens", "Perfekt"],
+    A2: ["Präteritum"],
+    B1: ["Futur I", "Plusquamperfekt", "Konjunktiv II"],
+    B2: ["Konjunktiv I", "Konjunktiv II Vergangenheit"],
+  },
   "targets.fr": levelTargets,
   "targets.de": levelTargets,
   terms_fa: "",

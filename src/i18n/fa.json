@@ -101,7 +101,8 @@
         "review": "{candidates} کاندید و {suspects} نگاشت مشکوک",
         "duplicates": "{count} کلمه تکراری منتظر تصمیم",
         "grammar": "{count} واحد دستوری {level} هنوز درس ندارند؛ بعدی: «{title}»",
-        "translations": "{count} درس {level} کمتر از {goal} ترجمه کوتاه دارند؛ بعدی: «{title}»"
+        "translations": "{count} درس {level} کمتر از {goal} ترجمه کوتاه دارند؛ بعدی: «{title}»",
+        "conjugation": "{count} جدول صرف {level} لازم است"
       },
       "actions": {
         "words": "ساخت {size} کلمه بعدی",
@@ -112,7 +113,8 @@
         "resolve": "حل کن",
         "decide": "تصمیم بگیر",
         "grammar": "ساخت درس بعدی",
-        "translations": "ساخت ترجمه کوتاه"
+        "translations": "ساخت ترجمه کوتاه",
+        "conjugation": "ساخت {size} جدول بعدی"
       },
       "allDone": "فعلاً کاری نمانده. هر وقت خواستی از «ساخت محتوا» دسته تازه بساز."
     },
@@ -174,6 +176,13 @@
           "status": "{count} درس {level} کمتر از {goal} ترجمه کوتاه دارند؛ بعدی: «{title}».",
           "action": "ساخت ترجمه برای درس بعدی",
           "needsLessons": "اول درس دستور ساخته شود."
+        },
+        "conjugation": {
+          "name": "جدول صرف",
+          "status": "{count} جدول صرف {level} هنوز ساخته نشده.",
+          "action": "ساخت {size} جدول بعدی",
+          "needsVerbs": "اول اطلاعات کلمه‌ها ساخته شود.",
+          "needsUnits": "زمان‌های بعدی منتظر فهرست واحدهای دستوری سطحشان هستند."
         }
       },
       "nothing": {
@@ -182,7 +191,8 @@
         "words": "همه کلمه‌های فهرست اطلاعات دارند.",
         "sentences": "کلمه‌ای نیست که جمله کم داشته باشد.",
         "grammar": "همه واحدهای فهرست درس دارند.",
-        "translations": "همه درس‌ها ترجمه کوتاه کافی دارند."
+        "translations": "همه درس‌ها ترجمه کوتاه کافی دارند.",
+        "conjugation": "همه فعل‌ها جدول صرف دارند."
       },
       "summary": {
         "wordList": "{count} کلمه پرکاربرد، رتبه {first} تا {last}",
@@ -190,7 +200,8 @@
         "words": "{count} کلمه سطح {level}",
         "sentences": "جمله برای {count} کلمه سطح {level}، برای هر کدام {goal} جمله",
         "grammar": "درس کامل واحد «{title}»، سطح {level}",
-        "translations": "{count} ترجمه کوتاه برای درس «{title}»، سطح {level}"
+        "translations": "{count} ترجمه کوتاه برای درس «{title}»، سطح {level}",
+        "conjugation": "{count} جدول صرف، سطح {level}"
       }
     },
     "batch": {
@@ -200,7 +211,8 @@
         "P_W": "اطلاعات کلمه‌ها",
         "P_S": "جمله‌های کلمه‌ها",
         "P_G": "درس دستور",
-        "P_TR": "ترجمه کوتاه"
+        "P_TR": "ترجمه کوتاه",
+        "P_X": "جدول صرف"
       },
       "stepOf": "قدم {step} از {total}",
       "steps": {
@@ -397,7 +409,13 @@
       "notReturned": "«{lemma}» در جواب نیامد؛ در دسته بعدی دوباره می‌آید.",
       "unitGone": "واحد این دسته دیگر در فهرست واحدها نیست.",
       "listRepeat": "«{field}» مورد تکراری دارد.",
-      "unknownWords": "{count} کلمه این ترجمه در فهرست واژگان نیست."
+      "unknownWords": "{count} کلمه این ترجمه در فهرست واژگان نیست.",
+      "verbUnknown": "«{code}» در فهرست کلمه‌ها فعل نیست.",
+      "tenseUnknown": "زمان «{value}» در فهرست زمان‌ها نیست؛ یکی از این‌ها: {allowed}.",
+      "formsMissing": "شکل این ضمیرها نیامده یا خالی است: {keys}.",
+      "unitUnknown": "واحد دستوری «{code}» در فهرست واحدها نیست.",
+      "secondSourceDiffers": "با منبع دوم صرف فرق دارد: {persons}.",
+      "secondSourceUnknown": "منبع دوم صرف این فعل یا این زمان را ندارد؛ با دقت بیشتری بخوان."
     },
     "fields": {
       "meaning_fa": "معنی فارسی",
@@ -457,7 +475,13 @@
       "sentence": "جمله",
       "unit": "واحد",
       "transforms": "تبدیل‌ها",
-      "translations": "ترجمه‌های کوتاه"
+      "translations": "ترجمه‌های کوتاه",
+      "verb": "فعل",
+      "tense": "زمان",
+      "forms": "شکل‌ها",
+      "accepted_variants": "شکل‌های دیگر درست",
+      "review_card": "کارت مرور",
+      "tables": "جدول‌ها"
     },
     "pos": {
       "noun": "اسم",

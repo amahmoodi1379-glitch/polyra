@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Conjugation data for the second-source check; loaded at run time on the server, never bundled.
+  serverExternalPackages: ["french-verbs", "german-verbs"],
 };
 
 export default nextConfig;

@@ -526,7 +526,7 @@ function ReportStep({ view, state }: { view: BatchView; state: StepState }) {
               <ul className="flex flex-col gap-2.5">
                 {report.warnings.map((warning, index) => (
                   <li key={index} className="flex flex-col text-[14px] leading-6 sm:flex-row sm:gap-3">
-                    <span className="lat text-ink shrink-0 font-semibold sm:min-w-32">{warning.label}</span>
+                    <span className="lat text-ink shrink-0 self-start font-semibold sm:min-w-32">{warning.label}</span>
                     <span className="text-ink-2">{warning.text}</span>
                   </li>
                 ))}

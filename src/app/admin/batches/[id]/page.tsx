@@ -76,10 +76,10 @@ export default async function BatchPage({ params }: PageProps<"/admin/batches/[i
         .filter((count, _, all) => count.value > 0 || (count.key === "added" && all.every((other) => !other.value))),
       rejected: report.rejected.map((item) => ({
         label: item.label,
-        problems: item.problems.map((problem) => describeProblem(problem)),
+        problems: item.problems.map((problem) => isolateLatin(describeProblem(problem))),
       })),
       dismissed: report.dismissed ?? 0,
-      warnings: report.warnings.map((flag) => ({ label: flag.label, text: describeProblem(flag.problem) })),
+      warnings: report.warnings.map((flag) => ({ label: flag.label, text: isolateLatin(describeProblem(flag.problem)) })),
       issues: report.issues,
       accepted: report.accepted.map((item) => item.label),
     },

@@ -1,0 +1,29 @@
+{
+  "tables": [
+    {
+      "verb": "machen",
+      "tense": "Präsens",
+      "unit_code": "de-a1-praesens-regelmaessig",
+      "forms": { "ich": "mache", "du": "machst", "er_sie_es": "macht", "wir": "machen", "ihr": "macht", "sie_Sie": "machen" },
+      "accepted_variants": {},
+      "review_card": true
+    },
+    {
+      "verb": "fahren",
+      "tense": "Präsens",
+      "unit_code": "de-a1-praesens-vokalwechsel",
+      "forms": { "ich": "fahre", "du": "fährst", "er_sie_es": "fährt", "wir": "fahren", "ihr": "fahrt", "sie_Sie": "fahren" },
+      "accepted_variants": {},
+      "review_card": true
+    },
+    {
+      "verb": "aufstehen",
+      "tense": "Perfekt",
+      "unit_code": "de-a1-perfekt-sein",
+      "forms": { "ich": "bin aufgestanden", "du": "bist aufgestanden", "er_sie_es": "ist aufgestanden", "wir": "sind aufgestanden", "ihr": "seid aufgestanden", "sie_Sie": "sind aufgestanden" },
+      "accepted_variants": {},
+      "review_card": true
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,29 @@
+{
+  "tables": [
+    {
+      "verb": "aller",
+      "tense": "présent",
+      "unit_code": "fr-a1-present-aller",
+      "forms": { "je": "vais", "tu": "vas", "il_elle_on": "va", "nous": "allons", "vous": "allez", "ils_elles": "vont" },
+      "accepted_variants": {},
+      "review_card": true
+    },
+    {
+      "verb": "manger",
+      "tense": "passé composé",
+      "unit_code": "fr-a1-passe-compose-avoir-er",
+      "forms": { "je": "ai mangé", "tu": "as mangé", "il_elle_on": "a mangé", "nous": "avons mangé", "vous": "avez mangé", "ils_elles": "ont mangé" },
+      "accepted_variants": {},
+      "review_card": false
+    },
+    {
+      "verb": "partir",
+      "tense": "passé composé",
+      "unit_code": "fr-a1-passe-compose-etre",
+      "forms": { "je": "suis parti", "tu": "es parti", "il_elle_on": "est parti", "nous": "sommes partis", "vous": "êtes partis", "ils_elles": "sont partis" },
+      "accepted_variants": { "je": "suis partie", "tu": "es partie", "il_elle_on": "est partie", "nous": "sommes parties", "vous": ["êtes parti", "êtes partie", "êtes parties"], "ils_elles": "sont parties" },
+      "review_card": true
+    }
+  ],
+  "issues": []
+}
