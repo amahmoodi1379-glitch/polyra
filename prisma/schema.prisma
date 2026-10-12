@@ -1,0 +1,1552 @@
+// Polyra data model. Source of truth: docs/PRD.md §4.
+// Table and column names follow §4 exactly; models are PascalCase and mapped to those tables.
+// Every column that §4 does not list is recorded in DECISIONS.md with the PRD section that needs it.
+// Times are stored in UTC (timestamptz). Tehran calendar days use the date type (PRD §15.6).
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Value lists
+// ─────────────────────────────────────────────────────────────────────────────
+
+enum ContentStatus {
+  draft
+  needs_review
+  approved
+  published
+  retired
+
+  @@map("content_status")
+}
+
+enum Pos {
+  noun
+  verb
+  adj
+  adv
+  prep
+  pron
+  det
+  conj
+  num
+  interj
+  phrase
+
+  @@map("pos")
+}
+
+/// French: m, f, mf. German: der, die, das (PRD §5.1).
+enum Gender {
+  m
+  f
+  mf
+  der
+  die
+  das
+
+  @@map("gender")
+}
+
+enum GrammaticalNumber {
+  sg
+  pl_only
+
+  @@map("grammatical_number")
+}
+
+enum Register {
+  standard
+  familier
+  argot
+  formal
+
+  @@map("register")
+}
+
+enum Mastery {
+  produce
+  recognize
+
+  @@map("mastery")
+}
+
+enum TokenKind {
+  word
+  name
+  number
+  other
+
+  @@map("token_kind")
+}
+
+/// Why a sentence_word row waits for the admin (PRD §13.3, §13.9).
+enum CandidateReason {
+  /// kind = word and the code is not in the vocabulary
+  missing
+  /// kind = name but the surface equals a vocabulary lemma or plural
+  name_matches_word
+
+  @@map("candidate_reason")
+}
+
+enum TargetType {
+  word
+  grammar
+
+  @@map("target_type")
+}
+
+enum Track {
+  reading
+  listening
+
+  @@map("track")
+}
+
+enum QuestionSet {
+  A
+  B
+
+  @@map("question_set")
+}
+
+enum QuestionType {
+  mcq
+  tf
+  order
+  match
+  cloze
+  find
+  ctx
+  num
+  dict
+
+  @@map("question_type")
+}
+
+enum PhonicsKind {
+  contrast
+  rule
+  liaison
+
+  @@map("phonics_kind")
+}
+
+enum MediaType {
+  audio
+  video
+
+  @@map("media_type")
+}
+
+enum AudioKind {
+  word
+  sentence
+  text
+  phonics
+  dialogue
+
+  @@map("audio_kind")
+}
+
+enum AudioSource {
+  tts
+  human
+
+  @@map("audio_source")
+}
+
+enum PromptKind {
+  P_C  @map("P-C")
+  P_U  @map("P-U")
+  P_W  @map("P-W")
+  P_S  @map("P-S")
+  P_F  @map("P-F")
+  P_G  @map("P-G")
+  P_T  @map("P-T")
+  P_X  @map("P-X")
+  P_H  @map("P-H")
+  P_TR @map("P-TR")
+  P_D  @map("P-D")
+  P_E  @map("P-E")
+  P_WR @map("P-WR")
+  P_QA @map("P-QA")
+
+  @@map("prompt_kind")
+}
+
+enum ImportState {
+  prompt_made
+  pasted
+  imported
+  qa_done
+  reviewed
+
+  @@map("import_state")
+}
+
+enum OtpPurpose {
+  login
+  change_phone
+
+  @@map("otp_purpose")
+}
+
+enum StartMode {
+  zero
+  placement
+
+  @@map("start_mode")
+}
+
+enum PaceMode {
+  normal
+  slow
+
+  @@map("pace_mode")
+}
+
+enum Skill {
+  vocab
+  grammar
+  listening
+  reading
+
+  @@map("skill")
+}
+
+enum ItemType {
+  word
+  grammar_unit
+  conjugation
+
+  @@map("item_type")
+}
+
+enum Probation {
+  none
+  single
+  sample
+
+  @@map("probation")
+}
+
+enum ItemSource {
+  normal
+  tap
+  key_word
+  colloquial
+  i_know
+  pretest
+  placement
+
+  @@map("item_source")
+}
+
+enum NotebookRefType {
+  word
+  word_gender
+  conjugation
+  grammar_target
+
+  @@map("notebook_ref_type")
+}
+
+enum QueueSource {
+  tap
+  key_word
+  colloquial
+
+  @@map("queue_source")
+}
+
+enum SessionScope {
+  mixed
+  quick
+  vocab
+  grammar
+  listening
+  reading
+  notebook
+  phonics
+  writing
+  extra
+
+  @@map("session_scope")
+}
+
+enum SessionEndReason {
+  finished
+  expired
+  replaced
+
+  @@map("session_end_reason")
+}
+
+enum ReviewKind {
+  intro
+  pretest
+  review
+  followup
+  practice
+  drill
+  text_attempt
+  phonics
+  placement
+  exam
+  self
+  dialogue
+  errorfix
+
+  @@map("review_kind")
+}
+
+enum ReviewResult {
+  correct
+  near
+  wrong
+  idk
+  self_ok
+  self_near
+  self_no
+
+  @@map("review_result")
+}
+
+enum ResultReason {
+  accent
+  case
+  gender
+  typo
+
+  @@map("result_reason")
+}
+
+enum ReportReason {
+  my_answer_ok
+  answer_wrong
+  audio
+  translation
+  other
+
+  @@map("report_reason")
+}
+
+enum ReportPriority {
+  normal
+  high
+
+  @@map("report_priority")
+}
+
+enum ReportStatus {
+  open
+  fixed
+  rejected
+
+  @@map("report_status")
+}
+
+enum NoticeKind {
+  report_fixed
+
+  @@map("notice_kind")
+}
+
+enum OrderStatus {
+  pending
+  paid
+  failed
+  expired
+
+  @@map("order_status")
+}
+
+enum SubscriptionSource {
+  payment
+  manual
+
+  @@map("subscription_source")
+}
+
+/// percent: value is 1..100. amount: value is a fixed discount in toman (PRD §12.3).
+enum DiscountType {
+  percent
+  amount
+
+  @@map("discount_type")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// §4.1 Content
+// Authored content carries the common fields: id, language, status, suspended,
+// prompt_version, model_name, import_batch_id, module_code, created_at, updated_at.
+// ─────────────────────────────────────────────────────────────────────────────
+
+model Language {
+  code               String  @id @db.VarChar(8)
+  live               Boolean @default(false)
+  coming_soon_fa     String?
+  support_contact_fa String?
+
+  @@map("language")
+}
+
+model LevelRelease {
+  id          Int      @id @default(autoincrement())
+  language    String   @db.VarChar(8)
+  level       String   @db.VarChar(8)
+  released_at DateTime @default(now()) @db.Timestamptz(3)
+  released_by Int?
+
+  @@unique([language, level])
+  @@map("level_release")
+}
+
+model Concept {
+  id              Int           @id @default(autoincrement())
+  language        String        @db.VarChar(8)
+  status          ContentStatus @default(draft)
+  suspended       Boolean       @default(false)
+  prompt_version  String?
+  model_name      String?
+  import_batch_id Int?
+  module_code     String?
+  created_at      DateTime      @default(now()) @db.Timestamptz(3)
+  updated_at      DateTime      @updatedAt @db.Timestamptz(3)
+
+  name_fa String
+
+  words Word[]
+
+  @@unique([language, name_fa])
+  @@map("concept")
+}
+
+model Word {
+  id              Int           @id @default(autoincrement())
+  language        String        @db.VarChar(8)
+  status          ContentStatus @default(draft)
+  suspended       Boolean       @default(false)
+  prompt_version  String?
+  model_name      String?
+  import_batch_id Int?
+  module_code     String?
+  created_at      DateTime      @default(now()) @db.Timestamptz(3)
+  updated_at      DateTime      @updatedAt @db.Timestamptz(3)
+
+  code           String
+  lemma          String
+  pos            Pos
+  gender         Gender?
+  number         GrammaticalNumber?
+  plural         String?
+  register       Register           @default(standard)
+  concept_id     Int?
+  /// Empty only for draft skeletons made from a word list (PRD §13.9).
+  meaning_fa     String?
+  level          String             @db.VarChar(8)
+  intro_order    Int?
+  no_card        Boolean            @default(false)
+  mastery        Mastery            @default(produce)
+  /// Code of the base word when this entry is a new sense of it (PRD §5.1).
+  sense_of       String?
+  /// Codes of the words a phrase is made of (pos = phrase only).
+  parts          String[]
+  /// Lemmas of words that sound exactly the same.
+  homophones     String[]
+  image          String?
+  audio_id       Int?
+  human_audio_id Int?
+  note_fa        String?
+  frequency_rank Int?
+
+  // Not in §4; required by other sections (see DECISIONS.md).
+  /// Closed family label such as couleur or Farbe (PRD §5.1, §5.8).
+  family            String?
+  /// Up to three {text, translation_fa} pairs (PRD §5.1, §5.2).
+  collocations      Json?
+  /// The chatbot's produce/recognize suggestion, kept for comparison (PRD §13.4).
+  mastery_suggested Mastery?
+  /// The teacher changed mastery by hand; rank-based defaults no longer touch it (PRD §13.4).
+  mastery_manual    Boolean  @default(false)
+  /// Imported with a lemma that already exists; waits for "new sense" or "duplicate" (PRD §13.9).
+  dup_of_id         Int?
+
+  concept            Concept?           @relation(fields: [concept_id], references: [id])
+  sentence_words     SentenceWord[]
+  form_exceptions    FormException[]
+  conjugation_tables ConjugationTable[]
+
+  @@unique([language, code])
+  @@index([language, lemma])
+  @@index([language, level, intro_order])
+  @@index([language, status])
+  @@map("word")
+}
+
+model ConjugationTable {
+  id              Int           @id @default(autoincrement())
+  language        String        @db.VarChar(8)
+  status          ContentStatus @default(draft)
+  suspended       Boolean       @default(false)
+  prompt_version  String?
+  model_name      String?
+  import_batch_id Int?
+  module_code     String?
+  created_at      DateTime      @default(now()) @db.Timestamptz(3)
+  updated_at      DateTime      @updatedAt @db.Timestamptz(3)
+
+  word_id           Int
+  tense             String
+  unit_code         String?
+  /// Pronoun key to form, e.g. {"je": "vais", ...} (PRD §14.4).
+  forms             Json
+  accepted_variants Json    @default("{}")
+  review_card       Boolean @default(false)
+
+  word Word @relation(fields: [word_id], references: [id])
+
+  @@unique([word_id, tense])
+  @@index([language, status])
+  @@map("conjugation_table")
+}
+
+model Sentence {
+  id              Int           @id @default(autoincrement())
+  language        String        @db.VarChar(8)
+  status          ContentStatus @default(draft)
+  suspended       Boolean       @default(false)
+  prompt_version  String?
+  model_name      String?
+  import_batch_id Int?
+  module_code     String?
+  created_at      DateTime      @default(now()) @db.Timestamptz(3)
+  updated_at      DateTime      @updatedAt @db.Timestamptz(3)
+
+  text           String
+  tts_text       String?
+  translation_fa String
+  audio_id       Int?
+  human_audio_id Int?
+  /// Highest level among the sentence's words; computed on import and edit.
+  level          String? @db.VarChar(8)
+  text_hash      String
+
+  words   SentenceWord[]
+  targets SentenceTarget[]
+
+  @@unique([language, text_hash])
+  @@index([language, status])
+  @@map("sentence")
+}
+
+model SentenceWord {
+  id             Int       @id @default(autoincrement())
+  sentence_id    Int
+  kind           TokenKind @default(word)
+  /// Empty for kind = word means a candidate.
+  word_id        Int?
+  surface        String
+  /// Character ranges [[start, end], ...] in sentence.text; several for split phrases.
+  spans          Json
+  meaning_fa_ctx String?
+  suspect        Boolean   @default(false)
+
+  // Not in §4; required by §13.3 and §13.9 (see DECISIONS.md).
+  /// Token order in the sentence, starting at 0.
+  position         Int
+  /// The code the chatbot gave, kept so a candidate can become a draft word.
+  code_given       String?
+  candidate_reason CandidateReason?
+
+  sentence Sentence @relation(fields: [sentence_id], references: [id], onDelete: Cascade)
+  word     Word?    @relation(fields: [word_id], references: [id])
+
+  @@unique([sentence_id, position])
+  @@index([word_id])
+  @@map("sentence_word")
+}
+
+model FormException {
+  id         Int      @id @default(autoincrement())
+  surface    String
+  word_id    Int
+  created_at DateTime @default(now()) @db.Timestamptz(3)
+
+  word Word @relation(fields: [word_id], references: [id], onDelete: Cascade)
+
+  @@unique([word_id, surface])
+  @@map("form_exception")
+}
+
+model SentenceTarget {
+  id              Int           @id @default(autoincrement())
+  language        String        @db.VarChar(8)
+  status          ContentStatus @default(draft)
+  suspended       Boolean       @default(false)
+  prompt_version  String?
+  model_name      String?
+  import_batch_id Int?
+  module_code     String?
+  created_at      DateTime      @default(now()) @db.Timestamptz(3)
+  updated_at      DateTime      @updatedAt @db.Timestamptz(3)
+
+  sentence_id   Int
+  target_type   TargetType
+  /// word.id or grammar_unit.id depending on target_type.
+  target_id     Int
+  marked_text   String
+  blanks        Int        @default(1)
+  accepted      Json
+  distractors   Json
+  hint          String?
+  accepted_full Json?
+
+  sentence Sentence @relation(fields: [sentence_id], references: [id], onDelete: Cascade)
+
+  @@index([target_type, target_id])
+  @@index([sentence_id])
+  @@index([language, status])
+  @@map("sentence_target")
+}
+
+model GrammarUnit {
+  id              Int           @id @default(autoincrement())
+  language        String        @db.VarChar(8)
+  status          ContentStatus @default(draft)
+  suspended       Boolean       @default(false)
+  prompt_version  String?
+  model_name      String?
+  import_batch_id Int?
+  module_code     String?
+  created_at      DateTime      @default(now()) @db.Timestamptz(3)
+  updated_at      DateTime      @updatedAt @db.Timestamptz(3)
+
+  unit_code            String  @unique
+  order_no             Int?
+  title_fa             String
+  scope_fa             String?
+  can_do_fa            String?
+  level                String  @db.VarChar(8)
+  lesson_fa            String?
+  build_table          Json?
+  example_sentence_ids Int[]
+  rule_line_fa         String?
+  common_mistake_fa    String?
+  category_sets        Json?
+
+  transform_items TransformItem[]
+  translate_items TranslateItem[]
+
+  @@index([language, level, order_no])
+  @@index([language, status])
+  @@map("grammar_unit")
+}
+
+model TransformItem {
+  id              Int           @id @default(autoincrement())
+  language        String        @db.VarChar(8)
+  status          ContentStatus @default(draft)
+  suspended       Boolean       @default(false)
+  prompt_version  String?
+  model_name      String?
+  import_batch_id Int?
+  module_code     String?
+  created_at      DateTime      @default(now()) @db.Timestamptz(3)
+  updated_at      DateTime      @updatedAt @db.Timestamptz(3)
+
+  grammar_unit_id  Int
+  instruction_fa   String
+  source_sentence  String
+  accepted_outputs String[]
+
+  grammar_unit GrammarUnit @relation(fields: [grammar_unit_id], references: [id], onDelete: Cascade)
+
+  @@index([grammar_unit_id])
+  @@map("transform_item")
+}
+
+model TranslateItem {
+  id              Int           @id @default(autoincrement())
+  language        String        @db.VarChar(8)
+  status          ContentStatus @default(draft)
+  suspended       Boolean       @default(false)
+  prompt_version  String?
+  model_name      String?
+  import_batch_id Int?
+  module_code     String?
+  created_at      DateTime      @default(now()) @db.Timestamptz(3)
+  updated_at      DateTime      @updatedAt @db.Timestamptz(3)
+
+  grammar_unit_id  Int
+  prompt_fa        String
+  accepted_outputs String[]
+  /// Token mapping of the first accepted output (PRD §8b.3).
+  tokens           Json
+
+  grammar_unit GrammarUnit @relation(fields: [grammar_unit_id], references: [id], onDelete: Cascade)
+
+  @@index([grammar_unit_id])
+  @@map("translate_item")
+}
+
+model Text {
+  id              Int           @id @default(autoincrement())
+  language        String        @db.VarChar(8)
+  status          ContentStatus @default(draft)
+  suspended       Boolean       @default(false)
+  prompt_version  String?
+  model_name      String?
+  import_batch_id Int?
+  module_code     String?
+  created_at      DateTime      @default(now()) @db.Timestamptz(3)
+  updated_at      DateTime      @updatedAt @db.Timestamptz(3)
+
+  code                      String
+  level                     String    @db.VarChar(8)
+  band                      Int
+  kind                      String
+  title                     String
+  sentence_ids              Int[]
+  speakers                  Json?
+  media_type                MediaType @default(audio)
+  video_url                 String?
+  audio_id                  Int?
+  sentence_offsets_ms       Int[]
+  human_audio_id            Int?
+  human_sentence_offsets_ms Int[]
+  duration_sec              Float?
+  word_count                Int?
+  key_word_ids              Int[]
+  placement_ok              Boolean   @default(false)
+  difficulty_score          Float?
+  order_override            Int?
+
+  questions Question[]
+
+  @@unique([language, code])
+  @@index([language, level])
+  @@index([language, status])
+  @@map("text")
+}
+
+model Question {
+  id              Int           @id @default(autoincrement())
+  language        String        @db.VarChar(8)
+  status          ContentStatus @default(draft)
+  suspended       Boolean       @default(false)
+  prompt_version  String?
+  model_name      String?
+  import_batch_id Int?
+  module_code     String?
+  created_at      DateTime      @default(now()) @db.Timestamptz(3)
+  updated_at      DateTime      @updatedAt @db.Timestamptz(3)
+
+  text_id        Int
+  track          Track
+  set            QuestionSet
+  order_no       Int
+  type           QuestionType
+  payload        Json
+  explanation_fa String?
+
+  text Text @relation(fields: [text_id], references: [id], onDelete: Cascade)
+
+  @@index([text_id, track, set, order_no])
+  @@map("question")
+}
+
+model Dialogue {
+  id              Int           @id @default(autoincrement())
+  language        String        @db.VarChar(8)
+  status          ContentStatus @default(draft)
+  suspended       Boolean       @default(false)
+  prompt_version  String?
+  model_name      String?
+  import_batch_id Int?
+  module_code     String?
+  created_at      DateTime      @default(now()) @db.Timestamptz(3)
+  updated_at      DateTime      @updatedAt @db.Timestamptz(3)
+
+  code         String
+  level        String @db.VarChar(8)
+  title_fa     String
+  situation_fa String
+  /// [{sentence_id, choices: [{sentence_id}], correct, why_fa}] (PRD §8b.4).
+  turns        Json
+
+  @@unique([language, code])
+  @@index([language, level])
+  @@map("dialogue")
+}
+
+model ErrorfixItem {
+  id              Int           @id @default(autoincrement())
+  language        String        @db.VarChar(8)
+  status          ContentStatus @default(draft)
+  suspended       Boolean       @default(false)
+  prompt_version  String?
+  model_name      String?
+  import_batch_id Int?
+  module_code     String?
+  created_at      DateTime      @default(now()) @db.Timestamptz(3)
+  updated_at      DateTime      @updatedAt @db.Timestamptz(3)
+
+  level          String   @db.VarChar(8)
+  marked_text    String
+  translation_fa String
+  unit_codes     String[]
+  errors         Json
+
+  // Not in §4; §14.4 imports it (see DECISIONS.md).
+  /// Token mapping of the corrected text.
+  tokens Json?
+
+  @@index([language, level])
+  @@map("errorfix_item")
+}
+
+model WritingTask {
+  id              Int           @id @default(autoincrement())
+  language        String        @db.VarChar(8)
+  status          ContentStatus @default(draft)
+  suspended       Boolean       @default(false)
+  prompt_version  String?
+  model_name      String?
+  import_batch_id Int?
+  module_code     String?
+  created_at      DateTime      @default(now()) @db.Timestamptz(3)
+  updated_at      DateTime      @updatedAt @db.Timestamptz(3)
+
+  level           String   @db.VarChar(8)
+  prompt_fa       String
+  min_words       Int
+  max_words       Int
+  checklist_fa    String[]
+  useful_phrases  Json
+  model_answer    String
+  model_answer_fa String
+
+  @@index([language, level])
+  @@map("writing_task")
+}
+
+model Module {
+  id       Int     @id @default(autoincrement())
+  code     String  @unique
+  language String  @db.VarChar(8)
+  name_fa  String
+  separate Boolean @default(false)
+
+  @@map("module")
+}
+
+model PhonicsLesson {
+  id              Int           @id @default(autoincrement())
+  language        String        @db.VarChar(8)
+  status          ContentStatus @default(draft)
+  suspended       Boolean       @default(false)
+  prompt_version  String?
+  model_name      String?
+  import_batch_id Int?
+  module_code     String?
+  created_at      DateTime      @default(now()) @db.Timestamptz(3)
+  updated_at      DateTime      @updatedAt @db.Timestamptz(3)
+
+  order_no          Int?
+  kind              PhonicsKind
+  sound_label       String
+  graphemes         String[]
+  tip_fa            String
+  /// Each word: {text, meaning_fa, wrong_spellings[2], audio_id, human_audio_id}.
+  example_words     Json        @default("[]")
+  /// Each pair: {a, b, a_fa, b_fa, a_audio_id, b_audio_id, ...}.
+  minimal_pairs     Json        @default("[]")
+  /// Each sentence: {text, liaison_after_word_index[], audio_id, human_audio_id}.
+  liaison_sentences Json        @default("[]")
+
+  @@index([language, order_no])
+  @@map("phonics_lesson")
+}
+
+model AudioAsset {
+  id          Int         @id @default(autoincrement())
+  kind        AudioKind
+  url         String
+  source      AudioSource
+  voice       String?
+  duration_ms Int?
+  stale       Boolean     @default(false)
+  uploaded_by Int?
+  listened_by Int?
+  listened_at DateTime?   @db.Timestamptz(3)
+  created_at  DateTime    @default(now()) @db.Timestamptz(3)
+
+  @@map("audio_asset")
+}
+
+model FrequencyItem {
+  id               Int    @id @default(autoincrement())
+  language         String @db.VarChar(8)
+  rank             Int
+  lemma            String
+  used_in_batch_id Int?
+
+  @@unique([language, rank])
+  @@index([language, lemma])
+  @@map("frequency_item")
+}
+
+model ImportBatch {
+  id             Int         @id @default(autoincrement())
+  language       String      @db.VarChar(8)
+  prompt_kind    PromptKind
+  prompt_version String
+  model_name     String?
+  prompt_text    String
+  raw_output     String?
+  report         Json?
+  qa_findings    Json?
+  state          ImportState @default(prompt_made)
+  created_by     Int?
+  created_at     DateTime    @default(now()) @db.Timestamptz(3)
+
+  // Not in §4; needed to resume a half-finished batch (PRD §13.9, see DECISIONS.md).
+  /// What the prompt was built for: level, chosen word codes, unit, kind, and so on.
+  params     Json?
+  updated_at DateTime @updatedAt @db.Timestamptz(3)
+
+  @@index([language, state])
+  @@map("import_batch")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// §4.2 Users
+// ─────────────────────────────────────────────────────────────────────────────
+
+model User {
+  id                 Int       @id @default(autoincrement())
+  /// Cleared when the account is deleted (PRD §15.5).
+  phone              String?   @unique
+  created_at         DateTime  @default(now()) @db.Timestamptz(3)
+  session_length_min Int
+  is_admin           Boolean   @default(false)
+  admin_language     String?   @db.VarChar(8)
+  is_tester          Boolean   @default(false)
+  deleted_at         DateTime? @db.Timestamptz(3)
+
+  auth_devices          AuthDevice[]
+  enrollments           Enrollment[]
+  skill_levels          SkillLevel[]
+  item_states           ItemState[]
+  confusion_pairs       ConfusionPair[]
+  text_states           TextState[]
+  phonics_states        PhonicsState[]
+  sentence_drill_states SentenceDrillState[]
+  speak_states          SpeakState[]
+  dialogue_states       DialogueState[]
+  errorfix_states       ErrorfixState[]
+  writing_entries       WritingEntry[]
+  notebook_entries      NotebookEntry[]
+  new_word_queue        NewWordQueue[]
+  daily_counters        DailyCounter[]
+  sessions              Session[]
+  review_logs           ReviewLog[]
+  placement_runs        PlacementRun[]
+  level_exams           LevelExam[]
+  content_reports       ContentReport[]
+  user_notices          UserNotice[]
+  orders                Order[]
+  subscriptions         Subscription[]
+
+  @@map("user")
+}
+
+model OtpCode {
+  id         Int        @id @default(autoincrement())
+  phone      String
+  code_hash  String
+  purpose    OtpPurpose @default(login)
+  expires_at DateTime   @db.Timestamptz(3)
+  attempts   Int        @default(0)
+  ip         String?
+  created_at DateTime   @default(now()) @db.Timestamptz(3)
+
+  // Not in §4; see DECISIONS.md.
+  /// Set when the code is accepted, so it cannot be used twice.
+  used_at   DateTime? @db.Timestamptz(3)
+  /// Plain code, stored only by the mock SMS provider for the test-codes page (PRD §13.2).
+  test_code String?
+
+  @@index([phone, created_at])
+  @@index([ip, created_at])
+  @@map("otp_code")
+}
+
+model AuthDevice {
+  id                 Int      @id @default(autoincrement())
+  user_id            Int
+  refresh_token_hash String   @unique
+  user_agent         String?
+  last_seen_at       DateTime @default(now()) @db.Timestamptz(3)
+
+  // Not in §4; see DECISIONS.md.
+  created_at DateTime @default(now()) @db.Timestamptz(3)
+
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@index([user_id])
+  @@map("auth_device")
+}
+
+model Enrollment {
+  id                   Int        @id @default(autoincrement())
+  user_id              Int
+  language             String     @db.VarChar(8)
+  created_at           DateTime   @default(now()) @db.Timestamptz(3)
+  trial_started_at     DateTime?  @db.Timestamptz(3)
+  trial_ends_at        DateTime?  @db.Timestamptz(3)
+  start_mode           StartMode?
+  placement_done       Boolean    @default(false)
+  phonics_auto         Boolean    @default(false)
+  phonics_done         Boolean    @default(false)
+  phonics_skips        Int        @default(0)
+  last_spread_date     DateTime?  @db.Date
+  pace_mode            PaceMode   @default(normal)
+  pretest_mode         Boolean    @default(false)
+  streak_count         Int        @default(0)
+  streak_last_date     DateTime?  @db.Date
+  /// Tehran date of the week (Saturday) whose forgiveness day is used.
+  streak_forgiven_week DateTime?  @db.Date
+  freeze_count         Int        @default(0)
+  freeze_checked_week  DateTime?  @db.Date
+  leveldown_asked_at   DateTime?  @db.Timestamptz(3)
+  shorten_asked_at     DateTime?  @db.Timestamptz(3)
+  longer_asked_at      DateTime?  @db.Timestamptz(3)
+  text_prompt_date     DateTime?  @db.Date
+  install_prompt_count Int        @default(0)
+  writing_done_week    DateTime?  @db.Date
+  path_done_at         DateTime?  @db.Timestamptz(3)
+
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@unique([user_id, language])
+  @@map("enrollment")
+}
+
+model SkillLevel {
+  id          Int     @id @default(autoincrement())
+  user_id     Int
+  language    String  @db.VarChar(8)
+  skill       Skill
+  level       String  @db.VarChar(8)
+  known_below String? @db.VarChar(8)
+
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@unique([user_id, language, skill])
+  @@map("skill_level")
+}
+
+model ItemState {
+  id                Int        @id @default(autoincrement())
+  user_id           Int
+  language          String     @db.VarChar(8)
+  item_type         ItemType
+  item_id           Int
+  step              Int        @default(0)
+  /// {due, stability, difficulty, reps, lapses, state, last_review} (PRD §9.1).
+  fsrs              Json
+  probation         Probation  @default(none)
+  source            ItemSource @default(normal)
+  introduced_at     DateTime?  @db.Timestamptz(3)
+  first_review_done Boolean    @default(false)
+  typed_once        Boolean    @default(false)
+  deferred_until    DateTime?  @db.Timestamptz(3)
+  frozen            Boolean    @default(false)
+  near_streak       Int        @default(0)
+  fail_count        Int        @default(0)
+  rounds_count      Int        @default(0)
+
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@unique([user_id, item_type, item_id])
+  @@index([user_id, language])
+  @@map("item_state")
+}
+
+model ConfusionPair {
+  id            Int       @id @default(autoincrement())
+  user_id       Int
+  language      String    @db.VarChar(8)
+  word_id       Int
+  other_word_id Int
+  count         Int       @default(0)
+  last_at       DateTime  @db.Timestamptz(3)
+  card_shown_at DateTime? @db.Timestamptz(3)
+
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@unique([user_id, word_id, other_word_id])
+  @@map("confusion_pair")
+}
+
+model TextState {
+  id              Int       @id @default(autoincrement())
+  user_id         Int
+  text_id         Int
+  track           Track
+  attempts_done   Int       @default(0)
+  first_score     Float?
+  scores          Json      @default("[]")
+  last_attempt_at DateTime? @db.Timestamptz(3)
+  next_attempt_at DateTime? @db.Timestamptz(3)
+  partial         Json?
+  partial_until   DateTime? @db.Timestamptz(3)
+  used_in_test    Boolean   @default(false)
+
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@unique([user_id, text_id, track])
+  @@map("text_state")
+}
+
+model PhonicsState {
+  id          Int       @id @default(autoincrement())
+  user_id     Int
+  lesson_id   Int
+  rounds_done Int       @default(0)
+  last_score  Float?
+  next_at     DateTime? @db.Timestamptz(3)
+  done        Boolean   @default(false)
+
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@unique([user_id, lesson_id])
+  @@map("phonics_state")
+}
+
+model SentenceDrillState {
+  id          Int       @id @default(autoincrement())
+  user_id     Int
+  sentence_id Int
+  count       Int       @default(0)
+  last_at     DateTime? @db.Timestamptz(3)
+
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@unique([user_id, sentence_id])
+  @@map("sentence_drill_state")
+}
+
+model SpeakState {
+  id            Int       @id @default(autoincrement())
+  user_id       Int
+  sentence_id   Int
+  count         Int       @default(0)
+  correct_count Int       @default(0)
+  last_rating   String?
+  next_at       DateTime? @db.Timestamptz(3)
+
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@unique([user_id, sentence_id])
+  @@map("speak_state")
+}
+
+model DialogueState {
+  id              Int       @id @default(autoincrement())
+  user_id         Int
+  dialogue_id     Int
+  attempts_done   Int       @default(0)
+  scores          Json      @default("[]")
+  next_attempt_at DateTime? @db.Timestamptz(3)
+
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@unique([user_id, dialogue_id])
+  @@map("dialogue_state")
+}
+
+model ErrorfixState {
+  id               Int       @id @default(autoincrement())
+  user_id          Int
+  errorfix_item_id Int
+  attempts_done    Int       @default(0)
+  results          Json      @default("[]")
+  next_attempt_at  DateTime? @db.Timestamptz(3)
+
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@unique([user_id, errorfix_item_id])
+  @@map("errorfix_state")
+}
+
+model WritingEntry {
+  id              Int      @id @default(autoincrement())
+  user_id         Int
+  writing_task_id Int
+  text            String
+  checklist_ticks Json     @default("[]")
+  created_at      DateTime @default(now()) @db.Timestamptz(3)
+
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@index([user_id])
+  @@map("writing_entry")
+}
+
+model NotebookEntry {
+  id                Int             @id @default(autoincrement())
+  user_id           Int
+  language          String          @db.VarChar(8)
+  ref_type          NotebookRefType
+  ref_id            Int
+  added_at          DateTime        @default(now()) @db.Timestamptz(3)
+  until             DateTime        @db.Timestamptz(3)
+  correct_count     Int             @default(0)
+  last_correct_date DateTime?       @db.Date
+
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@index([user_id, language])
+  @@map("notebook_entry")
+}
+
+model NewWordQueue {
+  id       Int         @id @default(autoincrement())
+  user_id  Int
+  language String      @db.VarChar(8)
+  word_id  Int
+  source   QueueSource
+  added_at DateTime    @default(now()) @db.Timestamptz(3)
+
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@unique([user_id, word_id])
+  @@index([user_id, language])
+  @@map("new_word_queue")
+}
+
+model DailyCounter {
+  id                     Int      @id @default(autoincrement())
+  user_id                Int
+  language               String   @db.VarChar(8)
+  date_tehran            DateTime @db.Date
+  new_words              Int      @default(0)
+  words_cap_today        Int?
+  cap_prompt_shown       Boolean  @default(false)
+  queue_words            Int      @default(0)
+  new_units              Int      @default(0)
+  new_conj               Int      @default(0)
+  new_text_sec_reading   Int      @default(0)
+  new_text_sec_listening Int      @default(0)
+  i_know                 Int      @default(0)
+  pretest_passed         Int      @default(0)
+  text_session_done      Boolean  @default(false)
+  active_sec             Int      @default(0)
+
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@unique([user_id, language, date_tehran])
+  @@map("daily_counter")
+}
+
+model Session {
+  id                 String            @id @default(uuid()) @db.Uuid
+  user_id            Int
+  language           String            @db.VarChar(8)
+  scope              SessionScope
+  planned_length_min Int
+  is_text_session    Boolean           @default(false)
+  no_audio           Boolean           @default(false)
+  plan               Json
+  position           Int               @default(0)
+  next_seq           Int               @default(1)
+  created_at         DateTime          @default(now()) @db.Timestamptz(3)
+  last_answer_at     DateTime?         @db.Timestamptz(3)
+  ended_at           DateTime?         @db.Timestamptz(3)
+  end_reason         SessionEndReason?
+
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@index([user_id, language, ended_at])
+  @@map("session")
+}
+
+model ReviewLog {
+  /// The answer_id the client creates (PRD §15.4).
+  id                 String        @id @db.Uuid
+  /// Emptied when the account is deleted; the row stays anonymous.
+  user_id            Int?
+  language           String        @db.VarChar(8)
+  session_id         String?       @db.Uuid
+  kind               ReviewKind
+  item_type          String?
+  item_id            Int?
+  exercise_code      String?
+  step_before        Int?
+  step_after         Int?
+  sentence_id        Int?
+  sentence_target_id Int?
+  question_id        Int?
+  question_set       QuestionSet?
+  result             ReviewResult
+  result_reason      ResultReason?
+  raw_answer         String?
+  chosen_word_id     Int?
+  first_typing       Boolean       @default(false)
+  latency_ms         Int?
+  fsrs_rating        Int?
+  seq                Int?
+  ts                 DateTime      @default(now()) @db.Timestamptz(3)
+
+  user User? @relation(fields: [user_id], references: [id], onDelete: SetNull)
+
+  @@index([user_id, language, ts])
+  @@index([session_id, seq])
+  @@index([item_type, item_id])
+  @@map("review_log")
+}
+
+model PlacementRun {
+  id           Int       @id @default(autoincrement())
+  user_id      Int
+  language     String    @db.VarChar(8)
+  state        String
+  started_at   DateTime  @default(now()) @db.Timestamptz(3)
+  finished_at  DateTime? @db.Timestamptz(3)
+  result       Json?
+  sample_state Json?
+
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@index([user_id, language])
+  @@map("placement_run")
+}
+
+model LevelExam {
+  id       Int      @id @default(autoincrement())
+  user_id  Int
+  language String   @db.VarChar(8)
+  skill    Skill
+  level    String   @db.VarChar(8)
+  taken_at DateTime @default(now()) @db.Timestamptz(3)
+  score    Int
+  passed   Boolean
+
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@index([user_id, language, skill])
+  @@map("level_exam")
+}
+
+model ContentReport {
+  id            Int            @id @default(autoincrement())
+  user_id       Int?
+  review_log_id String?        @db.Uuid
+  item_type     String
+  item_id       Int
+  exercise_code String?
+  sentence_id   Int?
+  reason        ReportReason
+  raw_answer    String?
+  note          String?
+  priority      ReportPriority @default(normal)
+  status        ReportStatus   @default(open)
+  resolved_by   Int?
+  created_at    DateTime       @default(now()) @db.Timestamptz(3)
+
+  user User? @relation(fields: [user_id], references: [id], onDelete: SetNull)
+
+  @@index([status, priority])
+  @@index([item_type, item_id])
+  @@map("content_report")
+}
+
+model UserNotice {
+  id         Int        @id @default(autoincrement())
+  user_id    Int
+  language   String     @db.VarChar(8)
+  kind       NoticeKind
+  payload    Json       @default("{}")
+  created_at DateTime   @default(now()) @db.Timestamptz(3)
+  seen_at    DateTime?  @db.Timestamptz(3)
+
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@index([user_id, language, seen_at])
+  @@map("user_notice")
+}
+
+model Event {
+  id       BigInt   @id @default(autoincrement())
+  user_id  Int?
+  language String?  @db.VarChar(8)
+  name     String
+  props    Json?
+  ts       DateTime @default(now()) @db.Timestamptz(3)
+
+  @@index([name, ts])
+  @@map("event")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// §4.3 Sales and administration
+// ─────────────────────────────────────────────────────────────────────────────
+
+model Plan {
+  id            Int      @id @default(autoincrement())
+  language      String   @db.VarChar(8)
+  name_fa       String
+  duration_days Int
+  price_toman   Int
+  badge_fa      String?
+  module_codes  String[]
+  sort_order    Int      @default(0)
+  active        Boolean  @default(true)
+
+  @@index([language, active, sort_order])
+  @@map("plan")
+}
+
+model DiscountCode {
+  id                Int          @id @default(autoincrement())
+  /// Stored upper-case; lookups are case-insensitive (PRD §12.3).
+  code              String       @unique
+  type              DiscountType
+  value             Int
+  valid_from        DateTime?    @db.Timestamptz(3)
+  valid_to          DateTime?    @db.Timestamptz(3)
+  max_uses_total    Int?
+  max_uses_per_user Int          @default(1)
+  plan_ids          Int[]
+  active            Boolean      @default(true)
+
+  uses DiscountUse[]
+
+  @@map("discount_code")
+}
+
+model DiscountUse {
+  id       Int @id @default(autoincrement())
+  code_id  Int
+  user_id  Int
+  order_id Int
+
+  code DiscountCode @relation(fields: [code_id], references: [id])
+
+  @@unique([order_id])
+  @@index([code_id, user_id])
+  @@map("discount_use")
+}
+
+model Order {
+  id               Int         @id @default(autoincrement())
+  user_id          Int
+  plan_id          Int
+  language         String      @db.VarChar(8)
+  amount_toman     Int
+  discount_code_id Int?
+  final_amount     Int
+  status           OrderStatus @default(pending)
+  gateway          String
+  authority        String?
+  gateway_ref      String?
+  created_at       DateTime    @default(now()) @db.Timestamptz(3)
+  paid_at          DateTime?   @db.Timestamptz(3)
+  last_verify_at   DateTime?   @db.Timestamptz(3)
+
+  user User @relation(fields: [user_id], references: [id])
+
+  @@index([user_id])
+  @@index([status, created_at])
+  @@map("order")
+}
+
+model Subscription {
+  id         Int                @id @default(autoincrement())
+  user_id    Int
+  language   String             @db.VarChar(8)
+  plan_id    Int?
+  starts_at  DateTime           @db.Timestamptz(3)
+  ends_at    DateTime           @db.Timestamptz(3)
+  source     SubscriptionSource
+  order_id   Int?
+  granted_by Int?
+  note       String?
+
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@index([user_id, language, ends_at])
+  @@map("subscription")
+}
+
+model TrialLedger {
+  id         Int      @id @default(autoincrement())
+  phone_hash String
+  language   String   @db.VarChar(8)
+  started_at DateTime @default(now()) @db.Timestamptz(3)
+
+  @@unique([phone_hash, language])
+  @@map("trial_ledger")
+}
+
+model EngineSetting {
+  key            String   @id
+  value          Json
+  default_value  Json
+  min_value      Float?
+  max_value      Float?
+  description_fa String
+  updated_by     Int?
+  updated_at     DateTime @updatedAt @db.Timestamptz(3)
+
+  @@map("engine_setting")
+}
+
+model AppSetting {
+  key        String   @id
+  value      Json
+  updated_by Int?
+  updated_at DateTime @updatedAt @db.Timestamptz(3)
+
+  @@map("app_setting")
+}
+
+model AdminLog {
+  id        Int      @id @default(autoincrement())
+  admin_id  Int?
+  action    String
+  entity    String
+  entity_id String?
+  before    Json?
+  after     Json?
+  ts        DateTime @default(now()) @db.Timestamptz(3)
+
+  @@index([entity, entity_id, ts])
+  @@index([ts])
+  @@map("admin_log")
+}
+
+model ErrorLog {
+  /// Short readable code the owner can copy, e.g. E7K2QF.
+  id         String   @id
+  ts         DateTime @default(now()) @db.Timestamptz(3)
+  where      String
+  message    String
+  stack      String?
+  user_id    Int?
+  request_id String?
+
+  @@index([ts])
+  @@map("error_log")
+}

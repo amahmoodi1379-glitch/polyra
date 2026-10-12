@@ -1,0 +1,248 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/*
+ * Polyra design tokens. Source: DESIGN.md (the "Jelly" direction).
+ * Six owner colors: #D81E5B #A8134A #F0527F #FDE7EF #2B1020 #1FB5A8.
+ * Day ground is a lighter blush; night ground is aubergine.
+ * Correct answers are teal, wrong answers deep raspberry (never a generic red).
+ */
+
+/* "dark:" follows the system unless the person picked a theme in settings. */
+@custom-variant dark {
+  @media (prefers-color-scheme: dark) {
+    &:where(:root:not([data-theme="light"]) *) {
+      @slot;
+    }
+  }
+  &:where([data-theme="dark"] *) {
+    @slot;
+  }
+}
+
+:root {
+  --ground: #fff6f9;
+  --surface: #ffffff;
+  --tint: #fde7ef;
+  --tint-2: #f9d5e2;
+  --line: #f0dde5;
+  --line-2: #e2c4d1;
+  --ink: #2b1020;
+  --ink-2: #5e3f50;
+  --ink-3: #7a5a6c;
+  --brand: #d81e5b;
+  --brand-press: #a8134a;
+  --brand-soft: #f0527f;
+  --on-brand: #ffffff;
+  --brand-text: #c21852;
+  --teal: #1fb5a8;
+  --ok: #0e8077;
+  --ok-soft: #ddf5f2;
+  --bad: #a8134a;
+  --bad-soft: #fbe0ea;
+  --idk: #5e3f50;
+  --idk-soft: #f3e7ec;
+  --g-f: #8e3bb0;
+  --g-m: #2962c4;
+  --g-n: #a66c0c;
+  --glass: rgb(255 246 249 / 0.84);
+  --scrim: rgb(43 16 32 / 0.38);
+  --shadow-1: 0 1px 2px rgb(43 16 32 / 0.05), 0 10px 26px -14px rgb(120 20 60 / 0.28);
+  --shadow-2: 0 -1px 0 rgb(43 16 32 / 0.04), 0 -18px 44px -22px rgb(120 20 60 / 0.4);
+  --btn-glow: 0 10px 22px -10px rgb(216 30 91 / 0.6);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-std: cubic-bezier(0.2, 0, 0, 1);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #2b1020;
+    --surface: #381a2b;
+    --tint: #45213a;
+    --tint-2: #552845;
+    --line: #4a2a3d;
+    --line-2: #61394f;
+    --ink: #fde7ef;
+    --ink-2: #dcc0cd;
+    --ink-3: #b994a8;
+    --brand-text: #f27aa0;
+    --ok: #3fd3c5;
+    --ok-soft: #1d3a3b;
+    --bad: #f27aa0;
+    --bad-soft: #4d1a33;
+    --idk: #dcc0cd;
+    --idk-soft: #45213a;
+    --g-f: #d9a2ee;
+    --g-m: #9dbbf5;
+    --g-n: #e9b75e;
+    --glass: rgb(56 26 43 / 0.86);
+    --scrim: rgb(10 2 7 / 0.6);
+    --shadow-1: 0 1px 2px rgb(0 0 0 / 0.3), 0 12px 28px -14px rgb(0 0 0 / 0.6);
+    --shadow-2: 0 -1px 0 rgb(255 255 255 / 0.04), 0 -18px 44px -20px rgb(0 0 0 / 0.7);
+    --btn-glow: 0 10px 24px -10px rgb(216 30 91 / 0.75);
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --ground: #2b1020;
+  --surface: #381a2b;
+  --tint: #45213a;
+  --tint-2: #552845;
+  --line: #4a2a3d;
+  --line-2: #61394f;
+  --ink: #fde7ef;
+  --ink-2: #dcc0cd;
+  --ink-3: #b994a8;
+  --brand-text: #f27aa0;
+  --ok: #3fd3c5;
+  --ok-soft: #1d3a3b;
+  --bad: #f27aa0;
+  --bad-soft: #4d1a33;
+  --idk: #dcc0cd;
+  --idk-soft: #45213a;
+  --g-f: #d9a2ee;
+  --g-m: #9dbbf5;
+  --g-n: #e9b75e;
+  --glass: rgb(56 26 43 / 0.86);
+  --scrim: rgb(10 2 7 / 0.6);
+  --shadow-1: 0 1px 2px rgb(0 0 0 / 0.3), 0 12px 28px -14px rgb(0 0 0 / 0.6);
+  --shadow-2: 0 -1px 0 rgb(255 255 255 / 0.04), 0 -18px 44px -20px rgb(0 0 0 / 0.7);
+  --btn-glow: 0 10px 24px -10px rgb(216 30 91 / 0.75);
+  color-scheme: dark;
+}
+
+/* Tailwind theme: Polyra names first, then the names shadcn/ui components expect. */
+@theme inline {
+  --color-ground: var(--ground);
+  --color-surface: var(--surface);
+  --color-tint: var(--tint);
+  --color-tint-2: var(--tint-2);
+  --color-line: var(--line);
+  --color-line-2: var(--line-2);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-brand: var(--brand);
+  --color-brand-press: var(--brand-press);
+  --color-brand-soft: var(--brand-soft);
+  --color-on-brand: var(--on-brand);
+  --color-brand-text: var(--brand-text);
+  --color-teal: var(--teal);
+  --color-ok: var(--ok);
+  --color-ok-soft: var(--ok-soft);
+  --color-bad: var(--bad);
+  --color-bad-soft: var(--bad-soft);
+  --color-idk: var(--idk);
+  --color-idk-soft: var(--idk-soft);
+  --color-gender-f: var(--g-f);
+  --color-gender-m: var(--g-m);
+  --color-gender-n: var(--g-n);
+  --color-scrim: var(--scrim);
+  --color-glass: var(--glass);
+
+  --color-background: var(--ground);
+  --color-foreground: var(--ink);
+  --color-card: var(--surface);
+  --color-card-foreground: var(--ink);
+  --color-popover: var(--surface);
+  --color-popover-foreground: var(--ink);
+  --color-primary: var(--brand);
+  --color-primary-foreground: var(--on-brand);
+  --color-secondary: var(--tint);
+  --color-secondary-foreground: var(--brand-text);
+  --color-muted: var(--tint);
+  --color-muted-foreground: var(--ink-3);
+  --color-accent: var(--tint);
+  --color-accent-foreground: var(--ink);
+  --color-destructive: var(--bad);
+  --color-border: var(--line);
+  --color-input: var(--line-2);
+  --color-ring: var(--brand-soft);
+
+  --font-sans: "Vazirmatn Variable", Vazirmatn, Tahoma, "Segoe UI", sans-serif;
+  --font-ui: "Vazirmatn Variable", Vazirmatn, Tahoma, "Segoe UI", sans-serif;
+  --font-lat: "Fraunces Variable", Fraunces, Georgia, "Times New Roman", serif;
+
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 22px;
+  --radius-3xl: 28px;
+
+  --shadow-soft: var(--shadow-1);
+  --shadow-sheet: var(--shadow-2);
+  --shadow-glow: var(--btn-glow);
+
+  --ease-out-expo: var(--ease-out);
+  --ease-std: var(--ease-std);
+}
+
+@layer base {
+  html,
+  body {
+    min-height: 100%;
+  }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--font-ui);
+    font-size: 15px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  * {
+    border-color: var(--line);
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--brand-soft) 32%, transparent);
+    color: var(--ink);
+  }
+
+  input,
+  textarea {
+    caret-color: var(--brand);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--brand-soft);
+    outline-offset: 3px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+}
+
+@layer utilities {
+  /* Target-language text: always left-to-right and set in the soft serif, even inside Persian. */
+  .lat {
+    font-family: var(--font-lat);
+    font-variation-settings: "SOFT" 100, "WONK" 0;
+    direction: ltr;
+    unicode-bidi: isolate;
+  }
+
+  .num {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

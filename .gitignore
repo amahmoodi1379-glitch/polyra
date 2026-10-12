@@ -1,2 +1,35 @@
 /.impeccable/questions/
 /.impeccable/review/
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+/test-results/
+/playwright-report/
+/blob-report/
+
+# next.js
+/.next/
+/out/
+/build
+
+# generated
+/src/generated/
+
+# misc
+.DS_Store
+*.pem
+npm-debug.log*
+
+# env files (secrets live in the host's settings, never in git)
+.env*
+!.env.example
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# local uploads in development
+/storage/
