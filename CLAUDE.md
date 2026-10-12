@@ -27,5 +27,13 @@ Simple Persian, no jargon. Ask whenever less than 95% sure, always with a recomm
 Visual quality and UX are top priority; avoid generic "AI-looking" design. When a custom image
 would help, ask the owner to generate it and give a ready-made prompt.
 
+## Design
+- Direction: "Geometry" (see `DECISIONS.md`). Reference prototype: `design/prototypes/geometry-v2.html`.
+  It loads Motion from a CDN and fonts from Google Fonts only because it is a hosted preview; the app
+  self-hosts everything (rule 9).
+- Design skills in `.claude/skills`: `impeccable` (Apache 2.0, from pbakaus/impeccable) for UI craft,
+  critique and polish; `motion-design` (MIT, from LottieFiles/motion-design-skill) for timing and easing.
+  Use them for every UI task. Build both light and dark themes, RTL and LTR, and respect reduced motion.
+
 ## Commands
 To be filled in when the project skeleton exists (PRD §15.9 lists the planned ones).
