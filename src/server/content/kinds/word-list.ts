@@ -3,6 +3,7 @@ import { fold } from "@/engine/tokens";
 import { t } from "@/i18n";
 import { wordListItem } from "@/schemas/words";
 import { db } from "@/server/db";
+import { freeCode } from "../codes";
 import { lastIntroOrder } from "../intro-order";
 import { problem, zodProblems } from "../problems";
 import { emptyRound } from "../report";
@@ -10,15 +11,6 @@ import { batchSize, example, labelOf, languageValues, params, trace } from "./sh
 import type { ContentKind } from "./types";
 
 type WordListParams = { first_rank: number; last_rank: number; count: number };
-
-/** A code that is free in this language: the lemma, else lemma-pos, else lemma-pos-2 ... */
-function freeCode(lemma: string, pos: string, taken: Set<string>) {
-  const candidates = [lemma, `${lemma}-${pos}`];
-  for (let n = 2; n < 50; n++) candidates.push(`${lemma}-${pos}-${n}`);
-  const code = candidates.find((candidate) => !taken.has(candidate))!;
-  taken.add(code);
-  return code;
-}
 
 /**
  * P-C (PRD §14.5): the next 200 unused rows of the frequency list. Every kept lemma becomes a draft

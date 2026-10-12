@@ -18,3 +18,10 @@ export function levelRank(level: string | null | undefined) {
   const index = levelOrder.indexOf(level as (typeof levelOrder)[number]);
   return index < 0 ? levelOrder.length : index;
 }
+
+/** Which language a panel page works in: the URL, else the admin's language, else French. */
+export function pickLanguage(requested: unknown, scope: string | null): LanguageCode {
+  if (typeof requested === "string" && isLanguage(requested)) return requested;
+  if (scope && isLanguage(scope)) return scope;
+  return "fr";
+}

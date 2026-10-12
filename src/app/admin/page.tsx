@@ -79,16 +79,14 @@ async function languageRows(language: LanguageCode, sizes: Record<string, number
     rows.push({
       key: "review",
       text: t("admin.workbench.rows.review", { candidates: status.candidates, suspects: status.suspects }),
-      action: null,
-      note: t("admin.batch.report.resolveSoon"),
+      action: { href: `/admin/resolve?lang=${language}`, label: t("admin.workbench.actions.resolve") },
     });
   }
   if (status.duplicates) {
     rows.push({
       key: "duplicates",
       text: t("admin.workbench.rows.duplicates", { count: status.duplicates }),
-      action: null,
-      note: t("admin.batch.report.resolveSoon"),
+      action: { href: `/admin/resolve?lang=${language}#duplicates`, label: t("admin.workbench.actions.decide") },
     });
   }
   return { rows, empty: status.wordCount === 0 && open.length === 0 };

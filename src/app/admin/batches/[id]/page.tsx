@@ -16,6 +16,7 @@ import {
 } from "@/server/content/batches";
 import { isLanguage } from "@/server/content/languages";
 import { describeProblem } from "@/server/content/problems";
+import { openCounts } from "@/server/content/resolve";
 import { db } from "@/server/db";
 import { appSetting } from "@/server/settings/read";
 import { BatchFlow, type BatchView, type CountKey } from "./batch-flow";
@@ -70,10 +71,8 @@ export default async function BatchPage({ params }: PageProps<"/admin/batches/[i
       warnings: report.warnings.map((flag) => ({ label: flag.label, text: describeProblem(flag.problem) })),
       issues: report.issues,
       accepted: report.accepted.map((item) => item.label),
-      candidates: report.candidates,
-      suspects: report.suspects,
-      duplicates: report.duplicates,
     },
+    open: await openCounts(batch.language, batch.id),
     fixPrompt: fixPrompt(batch),
     qaPrompt: qaPrompt(batch),
     qaDone: batch.state === "qa_done" || batch.state === "reviewed",

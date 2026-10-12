@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import { LanguageTabs } from "@/components/admin/language-tabs";
 import { PageHeader } from "@/components/admin/page-header";
 import { Button } from "@/components/ui/button";
 import { t, type MessageKey } from "@/i18n";
@@ -8,7 +9,7 @@ import { formatAgoFa } from "@/lib/format";
 import { cn } from "@/lib/utils";
 import { requireAdmin } from "@/server/auth/session";
 import { batchParams, batchStep, type KindSlug } from "@/server/content/batches";
-import { isLanguage, languageCodes, type LanguageCode } from "@/server/content/languages";
+import { pickLanguage } from "@/server/content/languages";
 import { contentStatus } from "@/server/content/status";
 import { db } from "@/server/db";
 import { appSetting } from "@/server/settings/read";
@@ -24,17 +25,10 @@ type Row = {
   level?: string;
 };
 
-/** Which language this page works in: the URL, else the panel's language, else French. */
-function pickLanguage(requested: string | undefined, scope: string | null): LanguageCode {
-  if (requested && isLanguage(requested)) return requested;
-  if (scope && isLanguage(scope)) return scope;
-  return "fr";
-}
-
 export default async function CreatePage({ searchParams }: PageProps<"/admin/create">) {
   const admin = await requireAdmin();
   const query = await searchParams;
-  const language = pickLanguage(typeof query.lang === "string" ? query.lang : undefined, admin.admin_language);
+  const language = pickLanguage(query.lang, admin.admin_language);
   const error = typeof query.error === "string" ? query.error : null;
 
   const [status, sizes, open] = await Promise.all([
@@ -101,7 +95,7 @@ export default async function CreatePage({ searchParams }: PageProps<"/admin/cre
       <PageHeader
         title={t("admin.create.title")}
         lead={t("admin.create.lead")}
-        actions={admin.admin_language === "all" ? <LanguageTabs current={language} /> : null}
+        actions={admin.admin_language === "all" ? <LanguageTabs current={language} path="/admin/create" /> : null}
       />
 
       {error ? (
@@ -169,25 +163,5 @@ export default async function CreatePage({ searchParams }: PageProps<"/admin/cre
         <p className="text-ink-3 px-1 text-[13.5px]">{t("admin.create.soon")}</p>
       </section>
     </>
-  );
-}
-
-function LanguageTabs({ current }: { current: LanguageCode }) {
-  return (
-    <nav aria-label={t("admin.create.language")} className="bg-tint grid grid-cols-2 gap-1 rounded-[16px] p-1">
-      {languageCodes.map((code) => (
-        <Link
-          key={code}
-          href={`/admin/create?lang=${code}`}
-          aria-current={code === current ? "page" : undefined}
-          className={cn(
-            "flex h-9 min-w-24 items-center justify-center rounded-[12px] px-4 text-[13.5px] font-bold transition-[background-color,color,box-shadow] duration-150",
-            code === current ? "bg-surface dark:bg-tint-2 text-brand-text shadow-[var(--shadow-1)]" : "text-ink-2 hover:text-ink",
-          )}
-        >
-          {t(`common.languages.${code}`)}
-        </Link>
-      ))}
-    </nav>
   );
 }

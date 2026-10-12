@@ -1,3 +1,4 @@
+import { Fragment, createElement, type ReactNode } from "react";
 import fa from "./fa.json";
 
 /**
@@ -41,5 +42,19 @@ export function t(key: MessageKey, vars?: MessageVars, locale: Locale = defaultL
     const value = vars[name];
     if (value === undefined) return match;
     return typeof value === "number" ? formatNumber(value, locale) : value;
+  });
+}
+
+/**
+ * Like t, but a placeholder can be a React node, such as a French word set in the Latin face inside a
+ * Persian sentence. Returns the pieces in order, ready to render.
+ */
+export function tRich(key: MessageKey, vars: Record<string, ReactNode>, locale: Locale = defaultLocale): ReactNode[] {
+  const template = lookup(locales[locale].messages, key) ?? lookup(locales[defaultLocale].messages, key) ?? key;
+  return template.split(/(\{\w+\})/).map((part, index) => {
+    const name = /^\{(\w+)\}$/.exec(part)?.[1];
+    if (!name || !(name in vars)) return part;
+    const value = vars[name];
+    return createElement(Fragment, { key: index }, typeof value === "number" ? formatNumber(value, locale) : value);
   });
 }

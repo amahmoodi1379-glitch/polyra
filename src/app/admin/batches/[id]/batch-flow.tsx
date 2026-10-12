@@ -46,10 +46,9 @@ export type BatchView = {
     warnings: { label: string; text: string }[];
     issues: string[];
     accepted: string[];
-    candidates: number;
-    suspects: number;
-    duplicates: number;
   } | null;
+  /** Items of this batch still waiting for the admin's decision (PRD §13.9), counted live. */
+  open: { candidates: number; suspects: number; duplicates: number };
   fixPrompt: string | null;
   qaPrompt: string | null;
   qaDone: boolean;
@@ -430,7 +429,8 @@ function ReportStep({ view, state }: { view: BatchView; state: StepState }) {
     return <Step n={3} title={t("admin.batch.steps.report")} state="locked" note={t("admin.batch.qa.waitImport")} />;
   }
   const rejected = report.rejected.length;
-  const needsYou = report.candidates + report.suspects > 0 || report.duplicates > 0;
+  const { open } = view;
+  const needsYou = open.candidates + open.suspects + open.duplicates > 0;
 
   return (
     <Step n={3} title={t("admin.batch.steps.report")} state={state}>
@@ -491,12 +491,16 @@ function ReportStep({ view, state }: { view: BatchView; state: StepState }) {
       ) : null}
 
       {needsYou ? (
-        <div className="bg-tint flex flex-col gap-1 rounded-[16px] px-4 py-3.5 text-[14.5px] leading-7">
-          {report.candidates + report.suspects > 0 ? (
-            <p className="text-ink">{t("admin.batch.report.review", { candidates: report.candidates, suspects: report.suspects })}</p>
-          ) : null}
-          {report.duplicates ? <p className="text-ink">{t("admin.batch.report.duplicates", { count: report.duplicates })}</p> : null}
-          <p className="text-ink-3 text-[13.5px]">{t("admin.batch.report.resolveSoon")}</p>
+        <div className="bg-tint flex flex-col items-start gap-3 rounded-[16px] px-4 py-3.5 text-[14.5px] leading-7 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex flex-col">
+            {open.candidates + open.suspects > 0 ? (
+              <p className="text-ink">{t("admin.batch.report.review", { candidates: open.candidates, suspects: open.suspects })}</p>
+            ) : null}
+            {open.duplicates ? <p className="text-ink">{t("admin.batch.report.duplicates", { count: open.duplicates })}</p> : null}
+          </div>
+          <Button asChild variant="secondary" size="sm" className="shrink-0">
+            <Link href={`/admin/resolve?lang=${view.language}`}>{t("admin.batch.report.resolve")}</Link>
+          </Button>
         </div>
       ) : null}
 
