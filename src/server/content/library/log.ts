@@ -11,7 +11,7 @@ export type LogAction = "edit" | "status" | "delete" | "order" | "revert";
 export type LogEntry = {
   action: LogAction;
   entity: string;
-  entityId: number;
+  entityId: number | string;
   before: Record<string, unknown> | null;
   after: Record<string, unknown> | null;
 };

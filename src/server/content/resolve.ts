@@ -5,6 +5,7 @@ import { appSetting } from "@/server/settings/read";
 import { posValues } from "@/schemas/common";
 import { freeCode, readCode, senseCode } from "./codes";
 import { lastIntroOrder, placeAfter } from "./intro-order";
+import { refreshDifficulty } from "./text-difficulty";
 import type { Tx } from "./kinds/types";
 
 /**
@@ -181,6 +182,7 @@ async function linkRows(tx: Tx, rows: OpenRow[], word: { id: number; lemma: stri
     data: { kind: "word", word_id: word.id, candidate_reason: null, suspect: false },
   });
   for (const surface of new Set(rows.map((row) => row.surface))) await confirmForm(tx, word.id, surface, word.lemma);
+  await refreshDifficulty(tx, { sentenceIds: rows.map((row) => row.sentence_id) });
 }
 
 async function findWord(tx: Tx, language: string, id: number) {
@@ -204,6 +206,7 @@ export async function resolveCandidate(language: string, key: string, action: Ca
         where: { id: { in: rows.map((row) => row.id) } },
         data: { kind: "name", word_id: null, candidate_reason: null, suspect: false },
       });
+      await refreshDifficulty(tx, { sentenceIds: rows.map((row) => row.sentence_id) });
       return true;
     }
     if (action.type === "listed") {
@@ -285,6 +288,7 @@ export async function resolveDuplicate(language: string, wordId: number, isNewSe
     await tx.sentenceWord.updateMany({ where: { word_id: word.id }, data: { word_id: existing.id } });
     await tx.sentenceTarget.updateMany({ where: { target_type: "word", target_id: word.id }, data: { target_id: existing.id } });
     await tx.word.update({ where: { id: word.id }, data: { status: "retired", dup_of_id: null, intro_order: null } });
+    await refreshDifficulty(tx, { wordIds: [existing.id] });
     return true;
   });
 }

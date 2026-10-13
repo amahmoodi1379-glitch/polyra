@@ -10,7 +10,7 @@ export function LanguageTabs({ current, path }: { current: LanguageCode; path: s
       {languageCodes.map((code) => (
         <Link
           key={code}
-          href={`${path}?lang=${code}`}
+          href={`${path}${path.includes("?") ? "&" : "?"}lang=${code}`}
           aria-current={code === current ? "page" : undefined}
           className={cn(
             "flex h-9 min-w-24 items-center justify-center rounded-[12px] px-4 text-[13.5px] font-bold transition-[background-color,color,box-shadow] duration-150",

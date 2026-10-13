@@ -3,10 +3,11 @@ import { Prisma } from "@/generated/prisma/client";
 import { filled, gender, grammaticalNumber, levelCode, mastery, optionalText, pos, register } from "@/schemas/common";
 import { db } from "@/server/db";
 import { engineNumber } from "@/server/settings/read";
-import { lastIntroOrder } from "../../intro-order";
+import { lastIntroOrder, rearrangeLevel } from "../../intro-order";
 import { checkWord } from "../../kinds/words";
 import { languageInfo, type LanguageCode } from "../../languages";
 import { problem, type Problem } from "../../problems";
+import { refreshDifficulty } from "../../text-difficulty";
 import { errorsOf, logEdit, parseValues, textOrNull, wordInfo, type WordInfo } from "./shared";
 import { viewOf, type Editor } from "./types";
 
@@ -171,6 +172,10 @@ export const wordEditor: Editor<WordValues, WordContext> = {
       };
       if (await logEdit(tx, adminId, "words", id, row, data)) {
         await tx.word.update({ where: { id }, data: { ...data, collocations: data.collocations ?? Prisma.DbNull } });
+        if (values.level !== row.level) {
+          await rearrangeLevel(tx, language, values.level);
+          await refreshDifficulty(tx, { wordIds: [id] });
+        }
       }
       return { state: "saved" as const, values: { ...values, collocations }, notes: [] };
     });

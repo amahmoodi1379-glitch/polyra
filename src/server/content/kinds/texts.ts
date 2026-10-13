@@ -8,6 +8,7 @@ import type { LanguageCode } from "../languages";
 import { problem, zodProblems, type Problem } from "../problems";
 import { emptyRound, type ImportReport } from "../report";
 import { allowedTypes, checkQuestionSets, questionRange, tracks } from "../text-check";
+import { overrideForNewText, refreshDifficulty } from "../text-difficulty";
 import { loadVocabulary } from "../vocabulary";
 import { allowedWords } from "./allowed";
 import { openStates, readyWords, unitLines, wordCount } from "./targets";
@@ -287,7 +288,8 @@ export const texts: ContentKind = {
       };
       const saved = existing
         ? await tx.text.update({ where: { id: existing.id }, data })
-        : await tx.text.create({ data: { language: batch.language, code: spec.code, ...data } });
+        : await tx.text.create({ data: { language: batch.language, code: spec.code, order_override: await overrideForNewText(tx, batch.language, spec.level), ...data } });
+      await refreshDifficulty(tx, { textIds: [saved.id] });
       // A draft text that comes again gets its new questions in place of the old ones.
       if (existing) await tx.question.deleteMany({ where: { text_id: saved.id } });
       await tx.question.createMany({

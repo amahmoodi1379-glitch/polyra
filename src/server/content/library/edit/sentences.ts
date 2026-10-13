@@ -3,10 +3,12 @@ import type { Prisma } from "@/generated/prisma/client";
 import { t } from "@/i18n";
 import { filled, optionalText } from "@/schemas/common";
 import { db } from "@/server/db";
+import type { Tx } from "../../kinds/types";
 import { wordCount } from "../../kinds/targets";
 import { checkTarget, sentenceHash, type TargetInput } from "../../kinds/sentence-store";
 import { levelRank } from "../../languages";
 import { problem, type Problem } from "../../problems";
+import { refreshDifficulty } from "../../text-difficulty";
 import { loadVocabulary } from "../../vocabulary";
 import { logChange, plain, same } from "../log";
 import { sentenceUses } from "../status";
@@ -50,7 +52,7 @@ const perBlank = (value: unknown, blanks: number): string[][] => {
   return blanks === 1 ? [list.map(String)] : Array.from({ length: blanks }, (_, index) => ((list[index] ?? []) as string[]).map(String));
 };
 const clean = (list: string[]) => list.map((item) => item.trim()).filter(Boolean);
-const targetColumns = (target: StoredTarget) => ({
+export const targetColumns = (target: StoredTarget) => ({
   id: target.id,
   marked_text: target.marked_text,
   accepted: target.accepted,
@@ -59,7 +61,7 @@ const targetColumns = (target: StoredTarget) => ({
   accepted_full: target.accepted_full ?? null,
   status: target.status,
 });
-const wordColumns = (row: Record<string, unknown>) => ({
+export const wordColumns = (row: Record<string, unknown>) => ({
   position: row.position,
   kind: row.kind,
   word_id: row.word_id,
@@ -70,6 +72,43 @@ const wordColumns = (row: Record<string, unknown>) => ({
   code_given: row.code_given,
   candidate_reason: row.candidate_reason,
 });
+
+/**
+ * What a changed sentence does to its audio and its texts (PRD §13.7, §13.8): a new text makes both
+ * voices stale; a new spoken form only the machine one. Texts made of the sentence get their word
+ * count again, their audio goes stale and a published one is suspended until new audio comes.
+ * Returns the notes the teacher sees. Also used when «برگردان» puts an old text back.
+ */
+export async function afterSentenceChange(
+  tx: Tx,
+  adminId: number | null,
+  sentence: { id: number; language: string; audio_id: number | null; human_audio_id: number | null },
+  change: { textChanged: boolean; ttsChanged: boolean },
+) {
+  const notes: string[] = [];
+  if (change.textChanged) await staleAudio(tx, [sentence.audio_id, sentence.human_audio_id]);
+  else if (change.ttsChanged) await staleAudio(tx, [sentence.audio_id]);
+  if (!change.textChanged) return notes;
+  const texts = await tx.text.findMany({ where: { language: sentence.language, sentence_ids: { has: sentence.id } } });
+  for (const item of texts) {
+    const lines = await tx.sentence.findMany({ where: { id: { in: item.sentence_ids } }, select: { text: true } });
+    const after = { word_count: lines.reduce((sum, line) => sum + wordCount(line.text), 0), suspended: item.suspended || item.status === "published" };
+    const changed = Object.entries(after).filter(([key, value]) => !same(item[key as keyof typeof item], value));
+    if (changed.length > 0) {
+      await tx.text.update({ where: { id: item.id }, data: after });
+      await logChange(tx, adminId, {
+        action: "edit",
+        entity: "text",
+        entityId: item.id,
+        before: Object.fromEntries(changed.map(([key]) => [key, item[key as keyof typeof item]])),
+        after: Object.fromEntries(changed),
+      });
+    }
+    await staleAudio(tx, [item.audio_id, item.human_audio_id]);
+    if (item.status === "published" && !item.suspended) notes.push(t("admin.library.form.textOfSentenceSuspended", { title: item.title }));
+  }
+  return notes;
+}
 
 /**
  * A sentence (PRD §13.7): its text, spoken form, translation, word table and fill-in targets. A new
@@ -232,30 +271,8 @@ export const sentenceEditor: Editor<SentenceValues, SentenceContext> = {
         await tx.sentenceTarget.update({ where: { id: targetId }, data: next as Prisma.SentenceTargetUpdateInput });
       }
 
-      // Audio: a new text makes both voices stale; a new spoken form only the machine one (PRD §13.8).
-      const notes: string[] = [];
-      if (textChanged) await staleAudio(tx, [row.audio_id, row.human_audio_id]);
-      else if (data.tts_text !== row.tts_text) await staleAudio(tx, [row.audio_id]);
-      if (textChanged) {
-        const texts = await tx.text.findMany({ where: { language, sentence_ids: { has: id } } });
-        for (const item of texts) {
-          const lines = await tx.sentence.findMany({ where: { id: { in: item.sentence_ids } }, select: { text: true } });
-          const after = { word_count: lines.reduce((sum, line) => sum + wordCount(line.text), 0), suspended: item.suspended || item.status === "published" };
-          const changed = Object.entries(after).filter(([key, value]) => !same(item[key as keyof typeof item], value));
-          if (changed.length > 0) {
-            await tx.text.update({ where: { id: item.id }, data: after });
-            await logChange(tx, adminId, {
-              action: "edit",
-              entity: "text",
-              entityId: item.id,
-              before: Object.fromEntries(changed.map(([key]) => [key, item[key as keyof typeof item]])),
-              after: Object.fromEntries(changed),
-            });
-          }
-          await staleAudio(tx, [item.audio_id, item.human_audio_id]);
-          if (item.status === "published" && !item.suspended) notes.push(t("admin.library.form.textOfSentenceSuspended", { title: item.title }));
-        }
-      }
+      const notes = await afterSentenceChange(tx, adminId, { ...row, language }, { textChanged, ttsChanged: data.tts_text !== row.tts_text });
+      if (wordsChanged || textChanged) await refreshDifficulty(tx, { sentenceIds: [id] });
 
       const finalTargets = values.targets
         .filter((edit) => !edit.retire)

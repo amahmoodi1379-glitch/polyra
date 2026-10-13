@@ -61,6 +61,8 @@ Local setup: PostgreSQL running, `cp .env.example .env`, `npm install` (also gen
 - `src/server/settings/engine-catalog.ts`: every §9.8 key with default, range and Persian description.
 - `src/server/auth`: SMS codes (§15.5 limits), devices and the session cookie; `requireAdmin()` guards `/admin`.
 - `src/app/login`, `src/app/admin`: login flow and the teacher panel shell (`admin-nav.tsx` holds the menu).
+- `src/server/content/library`: «همه محتوا» lists, status changes, edit forms (`edit/`), delete, the change log
+  (`log.ts` writes, `history.ts` shows, `revert.ts` puts back). `src/server/content/order.ts`: the «ترتیب» page.
 - `src/i18n/fa.json`: every Persian interface string; `t("key", vars)` from `@/i18n`.
 - `src/components/ui`: shadcn/ui sources, converted to logical (start/end) classes for RTL.
 - Next.js 16 differs from older versions; read `node_modules/next/dist/docs/` before using an API (see `AGENTS.md`).

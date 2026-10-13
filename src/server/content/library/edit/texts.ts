@@ -48,10 +48,10 @@ export type TextContext = {
   audio: { stale: boolean; has: boolean };
 };
 
-type StoredQuestion = { id: number; track: TrackName; set: QuestionSet; order_no: number; type: QuestionType; payload: unknown; explanation_fa: string | null; status: ContentStatus };
+export type StoredQuestion = { id: number; track: TrackName; set: QuestionSet; order_no: number; type: QuestionType; payload: unknown; explanation_fa: string | null; status: ContentStatus };
 
 const questionColumns = { id: true, track: true, set: true, order_no: true, type: true, payload: true, explanation_fa: true, status: true } as const;
-const comparable = (rows: StoredQuestion[]) =>
+export const comparable = (rows: StoredQuestion[]) =>
   rows.map(({ id, track, set, order_no, type, payload, explanation_fa, status }) => ({ id, track, set, order_no, type, payload, explanation_fa, status }));
 
 function questionSetsOf(rows: StoredQuestion[]): QuestionSets {

@@ -58,6 +58,6 @@ test("an admin makes a word list: copy, paste a cut answer, fix the rejected rec
 
   // The workbench now asks for the information of the five new words.
   await page.getByRole("link", { name: "برگشت به میز کار" }).click();
-  await expect(page.getByText("۵ کلمه A1 هنوز اطلاعات ندارند")).toBeVisible();
+  await expect(page.getByText(/۵ کلمه \u2066?A1\u2069? هنوز اطلاعات ندارند/)).toBeVisible();
   await expect(page.getByRole("button", { name: "ساخت ۵ کلمه بعدی" })).toBeVisible();
 });

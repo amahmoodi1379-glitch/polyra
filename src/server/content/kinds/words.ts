@@ -40,12 +40,12 @@ export function checkWord(word: Pick<WordRecord, "pos" | "gender" | "number" | "
   const problems: Problem[] = [];
   const genders: readonly string[] = languageInfo[language].genders;
   if (word.pos === "noun") {
-    if (!word.gender) problems.push(problem("nounNeedsGender"));
+    if (!word.gender) problems.push(problem("nounNeedsGender", { field: "gender" }));
     else if (!genders.includes(word.gender)) {
-      problems.push(problem("genderForLanguage", { value: word.gender, allowed: genders.join("، ") }));
+      problems.push(problem("genderForLanguage", { value: word.gender, allowed: genders.join("، "), field: "gender" }));
     }
     word.number ??= "sg";
-    if (language === "de" && word.number === "sg" && !word.plural) problems.push(problem("germanPlural"));
+    if (language === "de" && word.number === "sg" && !word.plural) problems.push(problem("germanPlural", { field: "plural" }));
   } else {
     // Gender and number belong to nouns only; anything else the chatbot sent is dropped.
     word.gender = null;
