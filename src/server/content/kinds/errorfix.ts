@@ -19,6 +19,24 @@ const MARKS: [number, number] = [2, 3];
 const markPattern = /\{\{([^{}|]*)\|([^{}|]*)\}\}/g;
 const oneWord = (text: string) => text.trim() !== "" && !/\s/.test(text.trim());
 
+/** The marked mistakes in order: what was written and what it should be. */
+export function marksOf(marked: string) {
+  return [...marked.matchAll(markPattern)].map(([, wrong, right]) => ({ wrong: wrong.trim(), right: right.trim() }));
+}
+
+/** Two or three marks, each one word that really changes, and one explanation per mark (PRD §8b.5). */
+export function checkMarks(marks: { wrong: string; right: string }[], explanations: number): Problem[] {
+  const problems: Problem[] = [];
+  if (marks.length < MARKS[0] || marks.length > MARKS[1]) problems.push(problem("marksCount", { field: "marked_text", count: marks.length }));
+  for (const mark of marks) {
+    if (!oneWord(mark.wrong) || !oneWord(mark.right) || fold(mark.wrong) === fold(mark.right)) {
+      problems.push(problem("markInvalid", { text: `${mark.wrong}|${mark.right}`, field: "marked_text" }));
+    }
+  }
+  if (marks.length > 0 && explanations !== marks.length) problems.push(problem("errorsCount", { count: explanations, expected: marks.length, field: "errors" }));
+  return problems;
+}
+
 /** The text with every mistake corrected: what the learner should end with. */
 export function correctedText(marked: string) {
   return marked.replace(markPattern, (_, __, right: string) => right.trim());
@@ -93,14 +111,8 @@ export const errorfix: ContentKind = {
       const item = parsed.data;
       const problems: Problem[] = [];
       if (item.level !== level) problems.push(problem("levelMismatch", { value: item.level, level }));
-      const marks = [...item.marked_text.matchAll(markPattern)].map(([, wrong, right]) => ({ wrong: wrong.trim(), right: right.trim() }));
-      if (marks.length < MARKS[0] || marks.length > MARKS[1]) problems.push(problem("marksCount", { field: "marked_text", count: marks.length }));
-      for (const mark of marks) {
-        if (!oneWord(mark.wrong) || !oneWord(mark.right) || fold(mark.wrong) === fold(mark.right)) {
-          problems.push(problem("markInvalid", { text: `${mark.wrong}|${mark.right}` }));
-        }
-      }
-      if (marks.length > 0 && item.errors.length !== marks.length) problems.push(problem("errorsCount", { count: item.errors.length, expected: marks.length }));
+      const marks = marksOf(item.marked_text);
+      problems.push(...checkMarks(marks, item.errors.length));
       const unknown = item.unit_codes.filter((code) => !units.has(code));
       for (const code of unknown) problems.push(problem("unitUnknown", { code }));
       const text = correctedText(item.marked_text);

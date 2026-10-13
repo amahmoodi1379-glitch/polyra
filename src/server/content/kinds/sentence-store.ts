@@ -91,7 +91,7 @@ export function checkTarget(target: TargetInput, text: string, path: string): Pr
     const folded = distractors.map((value) => fold(value.trim()));
     if (new Set(folded).size !== folded.length) problems.push(problem("distractorsRepeat", { field: at(`distractors${suffix}`) }));
     for (const [k, value] of folded.entries()) {
-      if (acceptedSet.has(value)) problems.push(problem("distractorAccepted", { value: distractors[k] }));
+      if (acceptedSet.has(value)) problems.push(problem("distractorAccepted", { value: distractors[k], field: at(`distractors${suffix}`) }));
     }
   });
   return problems;

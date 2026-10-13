@@ -37,7 +37,7 @@ export async function missingLessons(language: string) {
 }
 
 /** Checks Zod cannot do: the counts of each kind and the wrong spellings (PRD §13.3). */
-function checkLesson(lesson: PhonicsLessonRecord, kind: PhonicsKind): Problem[] {
+export function checkLesson(lesson: PhonicsLessonRecord, kind: PhonicsKind): Problem[] {
   const problems: Problem[] = [];
   if (lesson.kind !== kind) problems.push(problem("badValue", { value: lesson.kind, field: "kind" }));
   const size = sizes[kind];

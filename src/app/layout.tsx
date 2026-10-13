@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "@fontsource-variable/vazirmatn";
 import "@fontsource-variable/fraunces/full.css";
 import "./globals.css";
+import { DirectionProvider } from "@/components/direction";
 import { defaultLocale, locales, t } from "@/i18n";
 
 export const metadata: Metadata = {
@@ -23,7 +24,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   const locale = locales[defaultLocale];
   return (
     <html lang={locale.lang} dir={locale.dir}>
-      <body className="min-h-dvh">{children}</body>
+      <body className="min-h-dvh">
+        <DirectionProvider dir={locale.dir}>{children}</DirectionProvider>
+      </body>
     </html>
   );
 }

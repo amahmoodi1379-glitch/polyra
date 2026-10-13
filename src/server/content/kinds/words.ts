@@ -36,7 +36,7 @@ type Row = {
 type Checked = { index: number; label: string; record: unknown; word: WordRecord; problems: Problem[] };
 
 /** Language rules Zod cannot see (PRD §13.3, §14.2). Also fills defaults the PRD implies. */
-function checkWord(word: WordRecord, language: LanguageCode): Problem[] {
+export function checkWord(word: Pick<WordRecord, "pos" | "gender" | "number" | "plural" | "level" | "mastery" | "parts">, language: LanguageCode): Problem[] {
   const problems: Problem[] = [];
   const genders: readonly string[] = languageInfo[language].genders;
   if (word.pos === "noun") {
