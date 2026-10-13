@@ -7,21 +7,26 @@ import { isolateLatin } from "@/lib/bidi";
 import { requireAdmin } from "@/server/auth/session";
 import { batchStep, hasQa, type KindSlug } from "@/server/content/batches";
 import { isLanguage, languageCodes, type LanguageCode } from "@/server/content/languages";
+import { typeCounts } from "@/server/content/library/list";
+import { librarySlugs } from "@/server/content/library/slugs";
 import { contentStatus } from "@/server/content/status";
 import { db } from "@/server/db";
 import { appSetting } from "@/server/settings/read";
+import { libraryHref } from "./content/links";
 import { startBatch } from "./create/actions";
 
 type Action = { start: KindSlug; level?: string; label: string } | { href: string; label: string };
 type WorkRow = { key: string; text: string; action: Action | null; note?: string };
 
 async function languageRows(language: LanguageCode, sizes: Record<string, number>) {
-  const [status, open] = await Promise.all([
+  const [status, open, reviewing, approved] = await Promise.all([
     contentStatus(language),
     db.importBatch.findMany({
       where: { language, state: { in: ["prompt_made", "pasted", "imported"] } },
       orderBy: { updated_at: "asc" },
     }),
+    typeCounts(language, "needs_review"),
+    typeCounts(language, "approved"),
   ]);
   const unfinished = open.filter((batch) => batchStep(batch) < 4);
   const waitingQa = open.filter((batch) => batch.state === "imported" && hasQa(batch.prompt_kind) && batchStep(batch) === 4);
@@ -157,6 +162,24 @@ async function languageRows(language: LanguageCode, sizes: Record<string, number
       key: "review",
       text: t("admin.workbench.rows.review", { candidates: status.candidates, suspects: status.suspects }),
       action: { href: `/admin/resolve?lang=${language}`, label: t("admin.workbench.actions.resolve") },
+    });
+  }
+  const toReview = librarySlugs.reduce((sum, slug) => sum + reviewing[slug], 0);
+  if (toReview) {
+    // The type with the most items waiting opens first; the library's type tabs lead to the rest.
+    const type = librarySlugs.reduce((best, slug) => (reviewing[slug] > reviewing[best] ? slug : best));
+    rows.push({
+      key: "needsReview",
+      text: t("admin.workbench.rows.needsReview", { count: toReview }),
+      action: { href: libraryHref({ language, type, status: "needs_review" }), label: t("admin.workbench.actions.review") },
+    });
+  }
+  const toPublish = librarySlugs.reduce((sum, slug) => sum + approved[slug], 0);
+  if (toPublish) {
+    rows.push({
+      key: "publish",
+      text: t("admin.workbench.rows.publish", { count: toPublish }),
+      action: { href: `/admin/publish?lang=${language}`, label: t("admin.workbench.actions.publish") },
     });
   }
   if (status.duplicates) {

@@ -63,6 +63,8 @@ Local setup: PostgreSQL running, `cp .env.example .env`, `npm install` (also gen
 - `src/app/login`, `src/app/admin`: login flow and the teacher panel shell (`admin-nav.tsx` holds the menu).
 - `src/server/content/library`: «همه محتوا» lists, status changes, edit forms (`edit/`), delete, the change log
   (`log.ts` writes, `history.ts` shows, `revert.ts` puts back). `src/server/content/order.ts`: the «ترتیب» page.
+- `src/server/content/publish`: «انتشار» (PRD §13.5). `checks.ts` holds every type's publish conditions,
+  `run.ts` publishes the ready ones with their child rows, `levels.ts` the level checklist, level release and language live.
 - `src/i18n/fa.json`: every Persian interface string; `t("key", vars)` from `@/i18n`.
 - `src/components/ui`: shadcn/ui sources, converted to logical (start/end) classes for RTL.
 - Next.js 16 differs from older versions; read `node_modules/next/dist/docs/` before using an API (see `AGENTS.md`).

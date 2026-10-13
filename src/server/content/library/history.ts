@@ -2,6 +2,7 @@ import type { AdminLog, Prisma } from "@/generated/prisma/client";
 import { formatNumber, t, type MessageKey } from "@/i18n";
 import fa from "@/i18n/fa.json";
 import { movedRows } from "@/lib/arrange";
+import { isolateLatin } from "@/lib/bidi";
 import { formatMobileFa } from "@/lib/phone";
 import { wordDiff, type DiffPart } from "@/lib/text-diff";
 import { db } from "@/server/db";
@@ -15,11 +16,12 @@ import { entityOf, isLibrarySlug, librarySlugs, type LibrarySlug } from "./slugs
 
 /**
  * «لاگ تغییرها» (PRD §13.2): `admin_log`, newest first, each row in plain Persian: what item, what
- * kind of change, who and when, and each changed field before and after.
+ * kind of change, who and when, and each changed field before and after. Publishing, opening a level
+ * and showing a language (`/admin/publish`) are logged too, but cannot be put back from here.
  */
 
 export const LOG_PAGE_SIZE = 30;
-export const logKinds = [...librarySlugs, "order"] as const;
+export const logKinds = [...librarySlugs, "order", "publish"] as const;
 export type LogKind = (typeof logKinds)[number];
 export const isLogKind = (value: unknown): value is LogKind => logKinds.includes(value as LogKind);
 
@@ -43,7 +45,11 @@ export type LogPage = { items: LogItem[]; total: number; page: number; pages: nu
 
 const slugOfEntity = Object.fromEntries(Object.entries(entityOf).map(([slug, entity]) => [entity, slug])) as Record<string, LibrarySlug>;
 const orderListOf = Object.fromEntries(Object.entries(orderEntity).map(([list, entity]) => [entity, list])) as Record<string, OrderList>;
-const isOrderRow = (row: Pick<AdminLog, "entity_id">) => !/^\d+$/.test(row.entity_id ?? "");
+/** The rows `/admin/publish` writes: one per publish run, level opened or closed, language shown or hidden. */
+const publishEntities = ["publish", "level_release", "language"];
+const isPublishRow = (row: Pick<AdminLog, "entity">) => publishEntities.includes(row.entity);
+const isOrderRow = (row: Pick<AdminLog, "entity" | "entity_id">) => !isPublishRow(row) && !/^\d+$/.test(row.entity_id ?? "");
+const isItemRow = (row: Pick<AdminLog, "entity" | "entity_id">) => !isPublishRow(row) && !isOrderRow(row);
 
 /** The `entity_id` values order rows can have: a language, or language and level. */
 async function orderKeys() {
@@ -57,6 +63,7 @@ async function orderKeys() {
 
 async function whereOf(kind: LogKind | null): Promise<Prisma.AdminLogWhereInput> {
   if (!kind) return {};
+  if (kind === "publish") return { entity: { in: publishEntities } };
   const keys = await orderKeys();
   if (kind === "order") return { entity: { in: Object.values(orderEntity) }, entity_id: { in: keys } };
   return { entity: entityOf[kind], NOT: { entity_id: { in: keys } } };
@@ -96,9 +103,22 @@ function titleOf(entity: string, row: Record<string, unknown>): Shown {
   }
 }
 
+type PublishAfter = { items?: Partial<Record<LibrarySlug, number[]>>; children?: { sentences?: number; questions?: number; targets?: number } };
+const PUBLISH_TITLES = 3;
+
+/** The items a page names: each item row's own item, and the first few items of each publish run. */
+function itemKeys(rows: AdminLog[]) {
+  return rows.flatMap((row) => {
+    if (isItemRow(row)) return [{ entity: row.entity, id: Number(row.entity_id) }];
+    if (row.entity !== "publish") return [];
+    const items = (row.after as PublishAfter | null)?.items ?? {};
+    return librarySlugs.flatMap((slug) => (items[slug] ?? []).slice(0, PUBLISH_TITLES).map((id) => ({ entity: entityOf[slug], id })));
+  });
+}
+
 /** The items of a page, read in one query per table. */
-async function itemsOf(rows: AdminLog[]) {
-  const ids = (entity: string) => [...new Set(rows.filter((row) => row.entity === entity && !isOrderRow(row)).map((row) => Number(row.entity_id)))];
+async function itemsOf(keys: { entity: string; id: number }[]) {
+  const ids = (entity: string) => [...new Set(keys.filter((key) => key.entity === entity).map((key) => key.id))];
   const pick = { id: true, language: true } as const;
   const found = await Promise.all([
     db.word.findMany({ where: { id: { in: ids("word") } }, select: { ...pick, lemma: true } }),
@@ -251,6 +271,52 @@ function orderLines(row: AdminLog, titles: Map<string, Shown>): ChangeLine[] {
   return lines;
 }
 
+const SHORT_TITLE = 40;
+const shortTitle = (text: string) => (text.length > SHORT_TITLE ? `${text.slice(0, SHORT_TITLE - 1).trimEnd()}…` : text);
+
+/** A publish run: how many of each type, with the first few by name, and the rows that went with them. */
+function publishLines(row: AdminLog, items: Map<string, Record<string, unknown>>): ChangeLine[] {
+  const after = (row.after ?? {}) as PublishAfter;
+  const lines = librarySlugs.flatMap((slug): ChangeLine[] => {
+    const ids = after.items?.[slug] ?? [];
+    if (ids.length === 0) return [];
+    const names = ids.slice(0, PUBLISH_TITLES).map((id) => {
+      const item = items.get(`${entityOf[slug]}:${id}`);
+      const title = item ? titleOf(entityOf[slug], item) : null;
+      return title ? shortTitle(title.text) : t("admin.log.unknownItem", { id: formatNumber(id) });
+    });
+    const list = isolateLatin(names.join("، "));
+    const more = ids.length - names.length;
+    return [
+      {
+        key: slug,
+        label: t(`admin.library.types.${slug}`),
+        note: more > 0 ? t("admin.log.publish.itemsMore", { count: ids.length, list, more }) : t("admin.log.publish.items", { count: ids.length, list }),
+      },
+    ];
+  });
+  const children = after.children ?? {};
+  const parts = (["sentences", "questions", "targets"] as const)
+    .filter((key) => (children[key] ?? 0) > 0)
+    .map((key) => t(`admin.log.publish.children.${key}`, { count: children[key]! }));
+  if (parts.length > 0) lines.push({ key: "children", label: t("admin.log.publish.childrenLabel"), note: parts.join("، ") });
+  return lines;
+}
+
+/** The title of a publish, level or language row. */
+function publishTitle(row: AdminLog): string {
+  const [language, level] = (row.entity_id ?? "").split(":");
+  const name = t(`common.languages.${language === "de" ? "de" : "fr"}`);
+  if (row.entity === "level_release") {
+    const open = Boolean((row.after as { released?: unknown } | null)?.released);
+    return t(open ? "admin.log.publish.levelOpened" : "admin.log.publish.levelClosed", { level });
+  }
+  if (row.entity === "language") return t((row.after as { live?: boolean } | null)?.live ? "admin.log.publish.shown" : "admin.log.publish.hidden", { language: name });
+  const items = (row.after as PublishAfter | null)?.items ?? {};
+  const count = librarySlugs.reduce((sum, slug) => sum + (items[slug]?.length ?? 0), 0);
+  return count > 0 ? t("admin.log.publish.title", { count }) : t("admin.log.publish.titleChildren");
+}
+
 export async function listLog(kind: LogKind | null, page: number): Promise<LogPage> {
   const where = await whereOf(kind);
   const total = await db.adminLog.count({ where });
@@ -258,7 +324,7 @@ export async function listLog(kind: LogKind | null, page: number): Promise<LogPa
   const current = Math.min(Math.max(1, page), pages);
   const rows = await db.adminLog.findMany({ where, orderBy: { id: "desc" }, skip: (current - 1) * LOG_PAGE_SIZE, take: LOG_PAGE_SIZE });
   const [items, latest, titles, admins] = await Promise.all([
-    itemsOf(rows),
+    itemsOf(itemKeys(rows)),
     latestRows(rows),
     orderTitles(rows),
     db.user.findMany({ where: { id: { in: [...new Set(rows.map((row) => row.admin_id).filter((id): id is number => id !== null))] } }, select: { id: true, phone: true } }),
@@ -270,6 +336,23 @@ export async function listLog(kind: LogKind | null, page: number): Promise<LogPa
     page: current,
     pages,
     items: rows.map((row): LogItem => {
+      if (isPublishRow(row)) {
+        const language = (row.entity_id ?? "").split(":")[0];
+        const phone = row.admin_id !== null ? phones.get(row.admin_id) : null;
+        return {
+          id: row.id,
+          ts: row.ts.toISOString(),
+          action: row.action,
+          actionLabel: t(`admin.log.actions.${row.action}` as MessageKey),
+          kindLabel: language === "fr" || language === "de" ? t(`common.languages.${language}`) : language,
+          title: shown(isolateLatin(publishTitle(row)), "fa"),
+          href: `/admin/publish?${new URLSearchParams({ lang: language })}`,
+          language,
+          who: phone ? t("admin.log.by", { who: formatMobileFa(phone) }) : t("admin.log.byUnknown"),
+          lines: row.entity === "publish" ? publishLines(row, items) : [],
+          revert: "no",
+        };
+      }
       const order = isOrderRow(row);
       const list = orderListOf[row.entity];
       const [orderLanguage, orderLevel] = (row.entity_id ?? "").split(":");

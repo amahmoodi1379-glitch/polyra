@@ -93,6 +93,9 @@ const actionLook: Record<string, string> = {
   order: "bg-tint text-brand-text",
   revert: "border border-line-2 text-ink-2",
   delete: "bg-bad-soft text-bad",
+  publish: "text-ok bg-[color-mix(in_oklab,var(--ok),transparent_86%)]",
+  release: "text-ok bg-[color-mix(in_oklab,var(--ok),transparent_86%)]",
+  live: "text-ok bg-[color-mix(in_oklab,var(--ok),transparent_86%)]",
 };
 
 function Entry({ item }: { item: LogItem }) {

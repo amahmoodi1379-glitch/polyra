@@ -525,9 +525,9 @@ export async function listItems(slug: LibrarySlug, language: string, filters: Li
   }
 }
 
-/** How many items each type has in one language, retired ones aside. */
-export async function typeCounts(language: string): Promise<Record<LibrarySlug, number>> {
-  const where = { language, status: { not: "retired" as const } };
+/** How many items each type has in one language: retired ones aside, or only those in one status. */
+export async function typeCounts(language: string, status?: ContentStatusValue): Promise<Record<LibrarySlug, number>> {
+  const where = { language, status: status ?? { not: "retired" as const } };
   const [words, sentences, units, tables, transforms, translations, texts, dialogues, errorfix, writing, phonics] = await Promise.all([
     db.word.count({ where }),
     db.sentence.count({ where }),
