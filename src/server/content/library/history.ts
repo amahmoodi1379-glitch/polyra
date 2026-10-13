@@ -6,13 +6,14 @@ import { isolateLatin } from "@/lib/bidi";
 import { formatMobileFa } from "@/lib/phone";
 import { wordDiff, type DiffPart } from "@/lib/text-diff";
 import { db } from "@/server/db";
+import { settingLog } from "@/server/settings/history";
 import { appSetting } from "@/server/settings/read";
 import { parseSlot } from "../audio/slots";
 import { correctedText } from "../kinds/errorfix";
 import { languageCodes } from "../languages";
 import { orderEntity, type OrderList } from "../order";
 import type { Voice } from "./list";
-import { latestRows, revertible } from "./revert";
+import { isSettingRow, latestRows, revertible, settingEntities } from "./revert";
 import { entityOf, isLibrarySlug, librarySlugs, type LibrarySlug } from "./slugs";
 
 /**
@@ -22,7 +23,7 @@ import { entityOf, isLibrarySlug, librarySlugs, type LibrarySlug } from "./slugs
  */
 
 export const LOG_PAGE_SIZE = 30;
-export const logKinds = [...librarySlugs, "order", "publish"] as const;
+export const logKinds = [...librarySlugs, "order", "publish", "settings"] as const;
 export type LogKind = (typeof logKinds)[number];
 export const isLogKind = (value: unknown): value is LogKind => logKinds.includes(value as LogKind);
 
@@ -49,8 +50,8 @@ const orderListOf = Object.fromEntries(Object.entries(orderEntity).map(([list, e
 /** The rows `/admin/publish` writes: one per publish run, level opened or closed, language shown or hidden. */
 const publishEntities = ["publish", "level_release", "language"];
 const isPublishRow = (row: Pick<AdminLog, "entity">) => publishEntities.includes(row.entity);
-const isOrderRow = (row: Pick<AdminLog, "entity" | "entity_id">) => !isPublishRow(row) && !/^\d+$/.test(row.entity_id ?? "");
-const isItemRow = (row: Pick<AdminLog, "entity" | "entity_id">) => !isPublishRow(row) && !isOrderRow(row);
+const isOrderRow = (row: Pick<AdminLog, "entity" | "entity_id">) => !isPublishRow(row) && !isSettingRow(row) && !/^\d+$/.test(row.entity_id ?? "");
+const isItemRow = (row: Pick<AdminLog, "entity" | "entity_id">) => !isPublishRow(row) && !isSettingRow(row) && !isOrderRow(row);
 
 /** The `entity_id` values order rows can have: a language, or language and level. */
 async function orderKeys() {
@@ -65,6 +66,7 @@ async function orderKeys() {
 async function whereOf(kind: LogKind | null): Promise<Prisma.AdminLogWhereInput> {
   if (!kind) return {};
   if (kind === "publish") return { entity: { in: publishEntities } };
+  if (kind === "settings") return { entity: { in: settingEntities } };
   const keys = await orderKeys();
   if (kind === "order") return { entity: { in: Object.values(orderEntity) }, entity_id: { in: keys } };
   return { entity: entityOf[kind], NOT: { entity_id: { in: keys } } };
@@ -362,6 +364,19 @@ export async function listLog(kind: LogKind | null, page: number): Promise<LogPa
           who: phone ? t("admin.log.by", { who: formatMobileFa(phone) }) : t("admin.log.byUnknown"),
           lines: row.entity === "publish" ? publishLines(row, items) : [],
           revert: "no",
+        };
+      }
+      const setting = isSettingRow(row) ? settingLog(row) : null;
+      if (setting) {
+        const phone = row.admin_id !== null ? phones.get(row.admin_id) : null;
+        return {
+          id: row.id,
+          ts: row.ts.toISOString(),
+          action: row.action,
+          actionLabel: t(`admin.log.actions.${row.action}` as MessageKey),
+          ...setting,
+          who: phone ? t("admin.log.by", { who: formatMobileFa(phone) }) : t("admin.log.byUnknown"),
+          revert: !revertible(row) ? "no" : latest.has(row.id) ? "ready" : "later",
         };
       }
       const order = isOrderRow(row);

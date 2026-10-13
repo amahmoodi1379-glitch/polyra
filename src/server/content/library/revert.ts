@@ -3,6 +3,8 @@ import { db } from "@/server/db";
 import type { Tx } from "../kinds/types";
 import { levelOrder } from "../languages";
 import { isOrderList, orderEntity, orderState, writeOrder, type OrderList, type OrderState } from "../order";
+import { ENGINE_ENTITY, engineDef, revertEngineRow } from "@/server/settings/engine";
+import { APP_ENTITY, fieldOfLog, LANGUAGE_TEXT_ENTITY, revertGeneralRow } from "@/server/settings/general";
 import { refreshDifficulty } from "../text-difficulty";
 import { afterSentenceChange, targetColumns, wordColumns } from "./edit/sentences";
 import { comparable, type StoredQuestion } from "./edit/texts";
@@ -17,7 +19,7 @@ import { entityOf, type LibrarySlug } from "./slugs";
  * is itself logged and can be reverted. Deleting a draft is final, as its confirmation says.
  */
 
-export type RevertBlock = "final" | "later" | "changed" | "gone";
+export type RevertBlock = "final" | "later" | "changed" | "gone" | "invalid";
 export type RevertResult = { state: "reverted"; notes: string[] } | { state: "blocked"; reason: RevertBlock };
 
 type Values = Record<string, unknown>;
@@ -85,11 +87,19 @@ function orderTarget(row: Pick<AdminLog, "entity" | "entity_id">): { list: Order
   return { list, language, level: level && (levelOrder as readonly string[]).includes(level) ? level : null };
 }
 
-const isOrderRow = (row: Pick<AdminLog, "entity_id">) => !/^\d+$/.test(row.entity_id ?? "");
+/** Rows of «تنظیمات موتور» and «تنظیمات عمومی»: one key or field each, `{ value }` before and after. */
+export const settingEntities = [ENGINE_ENTITY, APP_ENTITY, LANGUAGE_TEXT_ENTITY];
+export const isSettingRow = (row: Pick<AdminLog, "entity">) => settingEntities.includes(row.entity);
+const isOrderRow = (row: Pick<AdminLog, "entity" | "entity_id">) => !isSettingRow(row) && !/^\d+$/.test(row.entity_id ?? "");
+const settingKnown = (row: Pick<AdminLog, "entity" | "entity_id">) =>
+  row.entity === ENGINE_ENTITY ? Boolean(engineDef(row.entity_id ?? "")) : Boolean(fieldOfLog(row.entity, row.entity_id));
 
 /** Whether a row's kind of change can be put back at all; the full check runs when it is clicked. */
 export const revertible = (row: Pick<AdminLog, "action" | "entity" | "entity_id" | "before">) =>
-  row.action !== "delete" && row.action !== "audio" && row.before !== null && (isOrderRow(row) ? orderTarget(row) !== null : Boolean(slugOfEntity[row.entity]));
+  row.action !== "delete" &&
+  row.action !== "audio" &&
+  row.before !== null &&
+  (isSettingRow(row) ? settingKnown(row) : isOrderRow(row) ? orderTarget(row) !== null : Boolean(slugOfEntity[row.entity]));
 
 /** The newest log row of each item, so a page of the log can tell which rows are still the last word. */
 export async function latestRows(rows: Pick<AdminLog, "entity" | "entity_id">[]) {
@@ -217,6 +227,16 @@ async function revertOrder(tx: Tx, row: AdminLog, adminId: number): Promise<Reve
   return { state: "reverted", notes: [] };
 }
 
+/** Puts back one setting (PRD §9.8: «برگرد به قبل» from the log) while it holds what the change wrote. */
+async function revertSetting(tx: Tx, row: AdminLog, adminId: number): Promise<RevertResult> {
+  const before = (row.before as { value?: unknown } | null)?.value ?? null;
+  const after = (row.after as { value?: unknown } | null)?.value ?? null;
+  const field = row.entity === ENGINE_ENTITY ? null : fieldOfLog(row.entity, row.entity_id);
+  const state =
+    row.entity === ENGINE_ENTITY ? await revertEngineRow(tx, row.entity_id!, before, after, adminId) : field ? await revertGeneralRow(tx, field, before, after, adminId) : "gone";
+  return state === "reverted" ? { state, notes: [] } : { state: "blocked", reason: state };
+}
+
 export async function revertChange(logId: number, adminId: number): Promise<RevertResult> {
   return db.$transaction(async (tx) => {
     const row = await tx.adminLog.findUnique({ where: { id: logId } });
@@ -224,6 +244,7 @@ export async function revertChange(logId: number, adminId: number): Promise<Reve
     if (!revertible(row)) return { state: "blocked" as const, reason: "final" as const };
     const later = await tx.adminLog.count({ where: { entity: row.entity, entity_id: row.entity_id, id: { gt: row.id } } });
     if (later > 0) return { state: "blocked" as const, reason: "later" as const };
+    if (isSettingRow(row)) return revertSetting(tx, row, adminId);
     return isOrderRow(row) ? revertOrder(tx, row, adminId) : revertItem(tx, row, adminId);
   });
 }

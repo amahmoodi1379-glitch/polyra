@@ -59,6 +59,9 @@ Local setup: PostgreSQL running, `cp .env.example .env`, `npm install` (also gen
 - `prisma/schema.prisma`: PRD §4. Models are PascalCase, tables and columns keep the PRD names.
 - `src/engine`: pure functions (PRD §15.3). `src/server`: database, auth, SMS, storage, settings.
 - `src/server/settings/engine-catalog.ts`: every §9.8 key with default, range and Persian description.
+  `engine-rules.ts` checks a value and the rules between keys (shared by page and server), `engine.ts` saves and
+  reverts. `general-fields.ts` lists the «تنظیمات عمومی» fields and their checks, `general.ts` stores them,
+  `history.ts` writes their log lines. Pages: `src/app/admin/settings/{engine,general}`.
 - `src/server/auth`: SMS codes (§15.5 limits), devices and the session cookie; `requireAdmin()` guards `/admin`.
 - `src/app/login`, `src/app/admin`: login flow and the teacher panel shell (`admin-nav.tsx` holds the menu).
 - `src/server/content/library`: «همه محتوا» lists, status changes, edit forms (`edit/`), delete, the change log
