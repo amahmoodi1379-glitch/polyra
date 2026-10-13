@@ -132,6 +132,26 @@ async function languageRows(language: LanguageCode, sizes: Record<string, number
       },
     });
   }
+  const phraseList = status.phrases;
+  if (phraseList.state === "ready") {
+    rows.push({
+      key: "phrases",
+      text: t("admin.workbench.rows.phrases", { count: phraseList.count, level: phraseList.level, goal: phraseList.goal }),
+      action: { start: "phrases", level: phraseList.level, label: t("admin.workbench.actions.phrases") },
+    });
+  }
+  for (const [key, next] of [
+    ["dialogues", status.dialogues],
+    ["errorfix", status.errorfix],
+    ["writing", status.writing],
+  ] as const) {
+    if (next.state !== "ready") continue;
+    rows.push({
+      key,
+      text: t(`admin.workbench.rows.${key}`, { count: next.left, level: next.level, goal: next.goal }),
+      action: { start: key, level: next.level, label: t(`admin.workbench.actions.${key}`, { size: next.size }) },
+    });
+  }
   if (status.candidates + status.suspects > 0) {
     rows.push({
       key: "review",

@@ -1,0 +1,8 @@
+{
+  "phrases": [
+    { "lemma": "avoir besoin de", "parts": ["avoir", "besoin"], "level": "A2" },
+    { "lemma": "prendre une décision", "parts": ["prendre", "décision"], "level": "A2" },
+    { "lemma": "faire les courses", "parts": ["faire", "course"], "level": "A2" }
+  ],
+  "issues": []
+}

@@ -4,6 +4,7 @@ import { useEffect, useId, useOptimistic, useRef, useState, useTransition, type 
 import Link from "next/link";
 import { Check, CircleAlert, LoaderCircle, Plus, Search } from "lucide-react";
 import type { Pos } from "@/generated/prisma/client";
+import { joinDots } from "@/components/admin/join-dots";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { formatNumber, t, tRich, type MessageKey } from "@/i18n";
@@ -190,16 +191,6 @@ function Meta({ meaning, sentences }: { meaning?: string | null; sentences?: num
   ].filter((part) => part !== null);
   if (parts.length === 0) return null;
   return <p className="text-ink-3 -mt-2.5 text-[14px] leading-6">{joinDots(parts)}</p>;
-}
-
-/** Pieces of a line apart by a small dot; a "·" character would read as a Persian zero. */
-function joinDots(parts: ReactNode[]) {
-  return parts.map((part, index) => (
-    <span key={index}>
-      {index > 0 ? <span aria-hidden className="bg-line-2 mx-2 inline-block size-1 rounded-full align-middle" /> : null}
-      {part}
-    </span>
-  ));
 }
 
 /** One sentence the item came from, with the word marked, and its translation. */

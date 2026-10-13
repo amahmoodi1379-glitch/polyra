@@ -3,8 +3,11 @@ import { qaAnswer, qaFinding } from "@/schemas/qa";
 import { db } from "@/server/db";
 import { appSetting } from "@/server/settings/read";
 import { conjugation } from "./kinds/conjugation";
+import { dialogues } from "./kinds/dialogues";
+import { errorfix } from "./kinds/errorfix";
 import { grammar } from "./kinds/grammar";
 import { phonics } from "./kinds/phonics";
+import { phrases } from "./kinds/phrases";
 import { sentences } from "./kinds/sentences";
 import { texts } from "./kinds/texts";
 import { translations } from "./kinds/translations";
@@ -12,6 +15,7 @@ import type { ContentKind, PlanOptions } from "./kinds/types";
 import { unitList } from "./kinds/unit-list";
 import { wordList } from "./kinds/word-list";
 import { words } from "./kinds/words";
+import { writing } from "./kinds/writing";
 import { languageInfo, type LanguageCode } from "./languages";
 import { cleanPaste, joinPaste, type PasteResult } from "./paste";
 import { describeProblem } from "./problems";
@@ -34,6 +38,10 @@ export const contentKinds = {
   conjugation,
   phonics,
   texts,
+  phrases,
+  dialogues,
+  errorfix,
+  writing,
 } satisfies Record<string, ContentKind>;
 
 export type KindSlug = keyof typeof contentKinds;

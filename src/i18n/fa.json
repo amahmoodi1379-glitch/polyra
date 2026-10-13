@@ -104,7 +104,11 @@
         "translations": "{count} درس {level} کمتر از {goal} ترجمه کوتاه دارند؛ بعدی: «{title}»",
         "conjugation": "{count} جدول صرف {level} لازم است",
         "phonics": "{count} درس تلفظ مانده؛ بعدی: «{label}»",
-        "texts": "{count} متن {level} مانده تا {goal} متن"
+        "texts": "{count} متن {level} مانده تا {goal} متن",
+        "phrases": "{count} عبارت {level} مانده تا {goal} عبارت",
+        "dialogues": "{count} گفتگوی {level} مانده تا {goal} گفتگو",
+        "errorfix": "{count} متن غلط‌یابی {level} مانده تا {goal} متن",
+        "writing": "{count} تمرین نوشتن {level} مانده تا {goal} تمرین"
       },
       "actions": {
         "words": "ساخت {size} کلمه بعدی",
@@ -120,7 +124,11 @@
         "phonics": "ساخت درس تلفظ بعدی",
         "texts": "ساخت {size} متن بعدی",
         "textsOne": "ساخت متن بعدی",
-        "conjugationOne": "ساخت جدول بعدی"
+        "conjugationOne": "ساخت جدول بعدی",
+        "phrases": "ساخت فهرست عبارت‌ها",
+        "dialogues": "ساخت گفتگوی بعدی",
+        "errorfix": "ساخت {size} متن غلط‌یابی",
+        "writing": "ساخت {size} تمرین نوشتن"
       },
       "allDone": "فعلاً کاری نمانده. هر وقت خواستی از «ساخت محتوا» دسته تازه بساز."
     },
@@ -147,7 +155,6 @@
       "unfinished": "کارهای نیمه‌تمام",
       "unfinishedStep": "قدم {step} از {total}",
       "continue": "ادامه",
-      "soon": "ساخت عبارت‌ها و تمرین‌های گفتن و نوشتن هم به‌زودی همین‌جا اضافه می‌شود.",
       "kinds": {
         "wordList": {
           "name": "فهرست کلمه‌ها",
@@ -203,6 +210,34 @@
           "actionOne": "ساخت متن بعدی",
           "needsUnits": "اول فهرست واحدهای دستوری سطح {level} ساخته شود.",
           "needsWords": "اول اطلاعات دست‌کم {count} کلمه {level} ساخته شود."
+        },
+        "phrases": {
+          "name": "عبارت‌های پرکاربرد",
+          "status": "{count} عبارت {level} مانده تا {goal} عبارت.",
+          "action": "ساخت فهرست عبارت‌های {level}",
+          "needsWords": "اول اطلاعات کلمه‌های {level} ساخته شود."
+        },
+        "dialogues": {
+          "name": "گفتگوی موقعیتی",
+          "status": "{count} گفتگوی {level} مانده تا {goal} گفتگو.",
+          "action": "ساخت گفتگوی بعدی",
+          "needsUnits": "اول فهرست واحدهای دستوری سطح {level} ساخته شود.",
+          "needsWords": "اول اطلاعات دست‌کم {count} کلمه {level} ساخته شود.",
+          "anySituation": "یک موقعیت روزمره"
+        },
+        "errorfix": {
+          "name": "غلط‌یابی",
+          "status": "{count} متن غلط‌یابی {level} مانده تا {goal} متن.",
+          "action": "ساخت {size} متن غلط‌یابی",
+          "needsUnits": "اول فهرست واحدهای دستوری سطح {level} ساخته شود.",
+          "needsWords": "اول اطلاعات کلمه‌های {level} ساخته شود."
+        },
+        "writing": {
+          "name": "نوشتن هدایت‌شده",
+          "status": "{count} تمرین نوشتن {level} مانده تا {goal} تمرین.",
+          "action": "ساخت {size} تمرین نوشتن",
+          "needsUnits": "اول فهرست واحدهای دستوری سطح {level} ساخته شود.",
+          "needsWords": "اول اطلاعات کلمه‌های {level} ساخته شود."
         }
       },
       "nothing": {
@@ -214,7 +249,11 @@
         "translations": "همه درس‌ها ترجمه کوتاه کافی دارند.",
         "conjugation": "همه فعل‌ها جدول صرف دارند.",
         "phonics": "همه درس‌های تلفظ فهرست ساخته شده‌اند.",
-        "texts": "همه سطح‌ها به تعداد هدف متن دارند."
+        "texts": "همه سطح‌ها به تعداد هدف متن دارند.",
+        "phrases": "همه سطح‌ها به تعداد هدف عبارت دارند.",
+        "dialogues": "همه سطح‌ها به تعداد هدف گفتگو دارند.",
+        "errorfix": "همه سطح‌ها به تعداد هدف متن غلط‌یابی دارند.",
+        "writing": "همه سطح‌ها به تعداد هدف تمرین نوشتن دارند."
       },
       "summary": {
         "wordList": "{count} کلمه پرکاربرد، رتبه {first} تا {last}",
@@ -226,7 +265,11 @@
         "conjugation": "{count} جدول صرف، سطح {level}",
         "phonics": "درس تلفظ «{label}»، نوع {kind}",
         "texts": "{count} متن {level}، رده {band}: {list}",
-        "textLine": "{kind} درباره {topic}"
+        "textLine": "{kind} درباره {topic}",
+        "phrases": "{count} عبارت پرکاربرد سطح {level}",
+        "dialogues": "یک گفتگوی {level}، موقعیت: {situation}",
+        "errorfix": "{count} متن غلط‌یابی سطح {level}",
+        "writing": "{count} تمرین نوشتن سطح {level}"
       },
       "phonicsKinds": {
         "contrast": "دو صدای شبیه",
@@ -244,7 +287,11 @@
         "P_TR": "ترجمه کوتاه",
         "P_X": "جدول صرف",
         "P_H": "درس تلفظ",
-        "P_T": "متن شنیداری و خواندن"
+        "P_T": "متن شنیداری و خواندن",
+        "P_F": "عبارت‌های پرکاربرد",
+        "P_D": "گفتگوی موقعیتی",
+        "P_E": "غلط‌یابی",
+        "P_WR": "نوشتن هدایت‌شده"
       },
       "stepOf": "قدم {step} از {total}",
       "steps": {
@@ -466,7 +513,13 @@
       "dictNumber": "جمله دیکته در «{field}» عدد رقمی دارد؛ عدد با سؤال num سنجیده می‌شود.",
       "ctxWord": "کلمه «{text}» که در «{field}» پرسیده شده، در متن نیامده.",
       "questionRepeat": "سؤال «{text}» هم در مجموعه A و هم در B آمده؛ دو مجموعه باید سؤال‌های متفاوت داشته باشند.",
-      "keyWordUnknown": "کلمه کلیدی «{code}» در فهرست کلمه‌ها یا در خود متن نیست؛ کنار گذاشته شد."
+      "keyWordUnknown": "کلمه کلیدی «{code}» در فهرست کلمه‌ها یا در خود متن نیست؛ کنار گذاشته شد.",
+      "notPhrase": "«{lemma}» یک کلمه است، نه عبارت.",
+      "marksCount": "«{field}» باید ۲ یا ۳ غلط علامت‌خورده داشته باشد، ولی {count} تا دارد.",
+      "markInvalid": "در غلط «{text}» شکل غلط و درست باید فرق داشته باشند و هر کدام یک کلمه باشند.",
+      "errorsCount": "متن {expected} غلط دارد ولی {count} توضیح در errors آمده.",
+      "wordRange": "بازه تعداد کلمه (min_words و max_words) باید بین {min} و {max} باشد.",
+      "modelLength": "جواب نمونه {count} کلمه دارد، ولی باید بین {min} و {max} کلمه باشد."
     },
     "fields": {
       "meaning_fa": "معنی فارسی",
@@ -562,7 +615,22 @@
       "correct_sentence": "جمله جواب",
       "word": "کلمه",
       "answer": "جواب",
-      "explanation_fa": "توضیح جواب"
+      "explanation_fa": "توضیح جواب",
+      "dialogue": "گفتگو",
+      "turns": "نوبت‌ها",
+      "line": "جمله طرف مقابل",
+      "choices": "گزینه‌ها",
+      "why_fa": "دلیل جواب درست",
+      "situation_fa": "موقعیت",
+      "unit_codes": "واحدهای دستوری",
+      "errors": "توضیح غلط‌ها",
+      "tasks": "تمرین‌ها",
+      "checklist_fa": "چک‌لیست",
+      "useful_phrases": "عبارت‌های کمکی",
+      "model_answer": "جواب نمونه",
+      "model_answer_fa": "ترجمه جواب نمونه",
+      "min_words": "حداقل کلمه",
+      "max_words": "حداکثر کلمه"
     },
     "pos": {
       "noun": "اسم",
@@ -582,6 +650,7 @@
       "listening": "شنیداری"
     },
     "questionSet": "مجموعه {set} {track}",
-    "questionItem": "سؤال {n} مجموعه {set} {track}"
+    "questionItem": "سؤال {n} مجموعه {set} {track}",
+    "turnItem": "نوبت {n}"
   }
 }

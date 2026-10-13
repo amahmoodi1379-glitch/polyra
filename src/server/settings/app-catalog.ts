@@ -161,6 +161,18 @@ export const appSettingDefaults: Record<string, unknown> = {
   ],
   /** Texts of each level marked placement_ok (PRD §11.2); A1 starts after the first texts above. */
   "prompt.placement_texts": 4,
+  /**
+   * Situations for the situational dialogues (P-D, PRD §8b.4), per level; each new dialogue of a level
+   * takes the next one in turn. The teacher can change them in the general settings.
+   */
+  "prompt.dialogue_situations": {
+    A1: ["کافه", "نانوایی", "معرفی خودت به یک همکلاسی", "پرسیدن ساعت و روز", "سوپرمارکت", "ایستگاه اتوبوس", "خرید میوه از بازار", "هتل: گرفتن کلید اتاق", "رستوران: سفارش غذا", "تلفن به دوست برای قرار"],
+    A2: ["مطب دکتر", "داروخانه", "خرید لباس", "باجه بلیت قطار", "پرسیدن آدرس در خیابان", "هتل: مشکل اتاق", "اداره پست", "تاکسی", "دعوت دوست به مهمانی", "کتابخانه", "آرایشگاه", "اجاره دوچرخه"],
+    B1: ["مصاحبه کاری", "اجاره آپارتمان", "پس دادن جنس معیوب به فروشگاه", "باز کردن حساب بانکی", "گم کردن کیف و رفتن به پلیس", "ثبت‌نام در کلاس زبان", "صحبت با همسایه درباره سروصدا", "برنامه‌ریزی سفر با دوست", "تعمیر گوشی", "تأخیر پرواز در فرودگاه"],
+    B2: ["جلسه کاری درباره یک پروژه", "مذاکره درباره قرارداد اجاره", "شکایت از صورت‌حساب", "گفتگو با استاد درباره پایان‌نامه", "مصاحبه برای بورس تحصیلی", "تماس با بیمه بعد از تصادف", "بحث درباره یک خبر با همکار", "درخواست مرخصی از مدیر", "مشاوره با وکیل", "گفتگو با پزشک درباره نتیجه آزمایش"],
+  },
+  /** Word range of a guided writing task's answer, per level (PRD §8b.6). */
+  "prompt.writing_words": { B1: [60, 120], B2: [150, 250] },
   "targets.fr": levelTargets,
   "targets.de": levelTargets,
   terms_fa: "",

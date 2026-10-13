@@ -3,10 +3,15 @@ import { db } from "@/server/db";
 import { appSetting, engineNumber } from "@/server/settings/read";
 import { hasQa } from "./batches";
 import { nextTables } from "./kinds/conjugation";
+import { nextDialogue } from "./kinds/dialogues";
+import { nextErrorfix } from "./kinds/errorfix";
 import { nextUnit } from "./kinds/grammar";
 import { missingLessons } from "./kinds/phonics";
+import { nextPhrases, type PhrasesNext } from "./kinds/phrases";
 import { nextTexts, type TextsNext } from "./kinds/texts";
+import type { LevelNext } from "./kinds/targets";
 import { nextTranslationUnit } from "./kinds/translations";
+import { nextWriting } from "./kinds/writing";
 import { levelRank } from "./languages";
 import { openCounts } from "./resolve";
 
@@ -35,6 +40,12 @@ export type ContentStatus = {
   phonicsNext: { label: string; count: number } | null;
   /** The next texts to make (P-T), or what they wait for. */
   texts: TextsNext;
+  /** The next level's phrase list (P-F), or what it waits for. */
+  phrases: PhrasesNext;
+  /** The next situational dialogue (P-D), find-the-mistake batch (P-E) and writing batch (P-WR). */
+  dialogues: LevelNext;
+  errorfix: LevelNext;
+  writing: LevelNext;
   waitingQa: number;
   unfinished: number;
   /** Open items on the resolve page, as groups (one word in many sentences counts once). */
@@ -50,7 +61,7 @@ export async function contentStatus(language: string): Promise<ContentStatus> {
   const levels = await appSetting<string[]>(`levels.${language}`);
   const goal = await engineNumber("publish.word_goal_targets");
 
-  const [frequencyLeft, wordCount, skeletons, cardWords, targetCounts, unitLevels, lessons, batches, open, grammar, translations, tables, sounds, texts] =
+  const [frequencyLeft, wordCount, skeletons, cardWords, targetCounts, unitLevels, lessons, batches, open, grammar, translations, tables, sounds, texts, phraseList, dialogue, mistakes, tasks] =
     await Promise.all([
       db.frequencyItem.count({ where: { language, used_in_batch_id: null } }),
       db.word.count({ where: { language, status: { not: "retired" } } }),
@@ -73,6 +84,10 @@ export async function contentStatus(language: string): Promise<ContentStatus> {
       nextTables(language),
       missingLessons(language),
       nextTexts(language),
+      nextPhrases(language),
+      nextDialogue(language),
+      nextErrorfix(language),
+      nextWriting(language),
     ]);
 
   const counts = new Map(targetCounts.map((row) => [row.target_id, row._count]));
@@ -99,6 +114,10 @@ export async function contentStatus(language: string): Promise<ContentStatus> {
     tables,
     phonicsNext: sounds[0] ? { label: sounds[0].label, count: sounds.length } : null,
     texts,
+    phrases: phraseList,
+    dialogues: dialogue,
+    errorfix: mistakes,
+    writing: tasks,
     waitingQa: batches.filter((batch) => batch.state === "imported" && hasQa(batch.prompt_kind as PromptKind)).length,
     unfinished: batches.filter((batch) => isOpen(batch.state)).length,
     ...open,

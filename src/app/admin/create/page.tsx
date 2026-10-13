@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import { joinDots } from "@/components/admin/join-dots";
 import { LanguageTabs } from "@/components/admin/language-tabs";
 import { PageHeader } from "@/components/admin/page-header";
 import { Button } from "@/components/ui/button";
@@ -11,6 +12,7 @@ import { cn } from "@/lib/utils";
 import { requireAdmin } from "@/server/auth/session";
 import { batchParams, batchStep, type KindSlug } from "@/server/content/batches";
 import { pickLanguage } from "@/server/content/languages";
+import type { LevelNext } from "@/server/content/kinds/targets";
 import { contentStatus } from "@/server/content/status";
 import { db } from "@/server/db";
 import { appSetting } from "@/server/settings/read";
@@ -25,6 +27,29 @@ type Row = {
   action: string | null;
   level?: string;
 };
+
+type LevelKind = "dialogues" | "errorfix" | "writing";
+
+/** A row for a kind counted against the level targets (P-D, P-E, P-WR). */
+function levelRow(slug: LevelKind, next: LevelNext, action: (next: LevelNext & { state: "ready" }) => string): Row {
+  const name = t(`admin.create.kinds.${slug}.name`);
+  switch (next.state) {
+    case "ready":
+      return {
+        slug,
+        name,
+        status: t(`admin.create.kinds.${slug}.status`, { count: next.left, level: next.level, goal: next.goal }),
+        action: action(next),
+        level: next.level,
+      };
+    case "needsUnits":
+      return { slug, name, status: t(`admin.create.kinds.${slug}.needsUnits`, { level: next.level }), action: null };
+    case "needsWords":
+      return { slug, name, status: t(`admin.create.kinds.${slug}.needsWords`, { level: next.level, count: next.count }), action: null };
+    case "done":
+      return { slug, name, status: t(`admin.create.nothing.${slug}`), action: null };
+  }
+}
 
 export default async function CreatePage({ searchParams }: PageProps<"/admin/create">) {
   const admin = await requireAdmin();
@@ -52,6 +77,7 @@ export default async function CreatePage({ searchParams }: PageProps<"/admin/cre
   const tables = status.tables;
   const sounds = status.phonicsNext;
   const texts = status.texts;
+  const phraseList = status.phrases;
   const rows: Row[] = [
     {
       slug: "word-list",
@@ -163,6 +189,21 @@ export default async function CreatePage({ searchParams }: PageProps<"/admin/cre
           : null,
       level: texts.state === "ready" ? texts.level : undefined,
     },
+    {
+      slug: "phrases",
+      name: t("admin.create.kinds.phrases.name"),
+      status:
+        phraseList.state === "ready"
+          ? t("admin.create.kinds.phrases.status", { count: phraseList.count, level: phraseList.level, goal: phraseList.goal })
+          : phraseList.state === "needsWords"
+            ? t("admin.create.kinds.phrases.needsWords", { level: phraseList.level })
+            : t("admin.create.nothing.phrases"),
+      action: phraseList.state === "ready" ? t("admin.create.kinds.phrases.action", { level: phraseList.level }) : null,
+      level: phraseList.state === "ready" ? phraseList.level : undefined,
+    },
+    levelRow("dialogues", status.dialogues, (next) => t("admin.create.kinds.dialogues.action", { size: next.size })),
+    levelRow("errorfix", status.errorfix, (next) => t("admin.create.kinds.errorfix.action", { size: next.size })),
+    levelRow("writing", status.writing, (next) => t("admin.create.kinds.writing.action", { size: next.size })),
   ];
   // One clear next step: the first kind on the main path that has work.
   const primary = rows.find((row) => row.action && row.slug !== "units")?.slug ?? rows.find((row) => row.action)?.slug;
@@ -201,7 +242,7 @@ export default async function CreatePage({ searchParams }: PageProps<"/admin/cre
                       ) : null}
                     </span>
                     <span className="text-ink-3 text-[13px]">
-                      {t("admin.create.unfinishedStep", { step: batchStep(batch), total: 4 })} · {formatAgoFa(batch.updated_at, now)}
+                      {joinDots([t("admin.create.unfinishedStep", { step: batchStep(batch), total: 4 }), formatAgoFa(batch.updated_at, now)])}
                     </span>
                   </div>
                   <Button asChild variant="secondary" size="sm">
@@ -241,7 +282,6 @@ export default async function CreatePage({ searchParams }: PageProps<"/admin/cre
             </li>
           ))}
         </ol>
-        <p className="text-ink-3 px-1 text-[13.5px]">{t("admin.create.soon")}</p>
       </section>
     </>
   );

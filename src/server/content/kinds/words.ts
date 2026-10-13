@@ -99,7 +99,9 @@ export const words: ContentKind = {
         ...languageValues(language),
         level,
         max: String(size),
-        items: batch.map((word) => `${word.lemma} | ${word.pos} | no_card=${word.no_card}`).join("\n"),
+        items: batch
+          .map((word) => `${word.lemma} | ${word.pos} | no_card=${word.no_card}` + (word.parts.length > 0 ? ` | parts=${word.parts.join(", ")}` : ""))
+          .join("\n"),
         existing: lines(existing),
         example: example("P-W", language),
       },

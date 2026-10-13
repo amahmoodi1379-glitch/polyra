@@ -4,12 +4,13 @@ import { textRecord, textSentence, type TextSentence } from "@/schemas/texts";
 import { db } from "@/server/db";
 import type { LevelTargets } from "@/server/settings/app-catalog";
 import { appSetting } from "@/server/settings/read";
-import { levelRank, type LanguageCode } from "../languages";
+import type { LanguageCode } from "../languages";
 import { problem, zodProblems, type Problem } from "../problems";
 import { emptyRound, type ImportReport } from "../report";
 import { allowedTypes, checkQuestionSets, questionRange, tracks } from "../text-check";
 import { loadVocabulary } from "../vocabulary";
 import { allowedWords } from "./allowed";
+import { openStates, readyWords, unitLines, wordCount } from "./targets";
 import { mapSentence, storeSentence } from "./sentence-store";
 import { example, labelOf, languageValues, lines, params, trace } from "./shared";
 import type { ContentKind } from "./types";
@@ -24,7 +25,6 @@ export type TextSpec = { code: string; level: string; band: number; kind: string
 type TextParams = { level: string; band: number; length: Range; words: number | null; texts: TextSpec[] };
 
 const editable = new Set(["draft", "needs_review"]);
-const openStates = ["prompt_made", "pasted"] as const;
 
 async function textSettings(language: string) {
   const [levels, targets, bands, perBatch, levelBands, kinds, topics, tiers, placement] = await Promise.all([
@@ -61,15 +61,6 @@ function tierOf(tiers: Tier[], index: number) {
     if (index < end) return { ...tier, end };
   }
   return null;
-}
-
-/** Card words that already have their meaning, at the level or below: what a text can be made of. */
-async function readyWords(language: string, level: string) {
-  const words = await db.word.findMany({
-    where: { language, meaning_fa: { not: null }, no_card: false, register: "standard", dup_of_id: null, status: { not: "retired" } },
-    select: { level: true },
-  });
-  return { upTo: words.filter((word) => levelRank(word.level) <= levelRank(level)).length, at: words.filter((word) => word.level === level).length };
 }
 
 export type TextsNext =
@@ -114,8 +105,6 @@ export async function nextTexts(language: string): Promise<TextsNext> {
   return (await planTexts(language)).next;
 }
 
-const wordCount = (sentences: { text: string }[]) =>
-  sentences.reduce((sum, sentence) => sum + sentence.text.split(/\s+/).filter((piece) => /[\p{L}\p{N}]/u.test(piece)).length, 0);
 
 /** The question rules for the prompt, in the words the chatbot reads. */
 function questionRules(band: number, placement: boolean) {
@@ -164,14 +153,6 @@ export const texts: ContentKind = {
 
     const length = tier?.length ?? settings.bands[String(band)] ?? [30, 60];
     const nameOf = (kind: string) => kinds.find((entry) => entry.kind === kind);
-    const units = await db.grammarUnit.findMany({
-      where: { language, status: { not: "retired" } },
-      select: { unit_code: true, title_fa: true, level: true, order_no: true },
-    });
-    const unitLines = units
-      .filter((unit) => levelRank(unit.level) <= levelRank(level))
-      .sort((a, b) => levelRank(a.level) - levelRank(b.level) || (a.order_no ?? 1e9) - (b.order_no ?? 1e9))
-      .map((unit) => [unit.unit_code, unit.title_fa, unit.level].join(" | "));
     const typeList = (track: (typeof tracks)[number]) => allowedTypes(track, band).join("، ");
 
     return {
@@ -190,7 +171,7 @@ export const texts: ContentKind = {
           })
           .join("\n"),
         allowed: await allowedWords(language, tier ? { first: tier.words } : { level }),
-        units: lines(unitLines),
+        units: lines(await unitLines(language, level)),
         counts: questionRules(band, specs.some((spec) => spec.placement_ok)),
         reading: typeList("reading"),
         listening: typeList("listening"),
@@ -259,7 +240,7 @@ export const texts: ContentKind = {
       const speakers = sentences.map((sentence) => sentence.speaker);
       if (kind?.speakers && (speakers.some((speaker) => !speaker) || new Set(speakers).size < 2)) problems.push(problem("speakers"));
 
-      const words = wordCount(sentences);
+      const words = sentences.reduce((sum, sentence) => sum + wordCount(sentence.text), 0);
       if (sentences.length === text.sentences.length && (words < length[0] || words > length[1])) {
         problems.push(problem("textLength", { count: words, min: length[0], max: length[1] }));
       }

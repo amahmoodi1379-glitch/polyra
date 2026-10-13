@@ -1,0 +1,253 @@
+{
+  "dialogue": {
+    "code": "de-a1-d001",
+    "level": "A1",
+    "title_fa": "سفارش در کافه",
+    "situation_fa": "در یک کافه هستی. فروشنده سفارشت را می‌پرسد.",
+    "turns": [
+      {
+        "line": {
+          "speaker": "B",
+          "text": "Guten Tag! Was möchten Sie?",
+          "tts_text": null,
+          "translation_fa": "روز بخیر! چه میل دارید؟",
+          "tokens": [
+            { "surface": "Guten Tag", "kind": "word", "code": "guten Tag", "meaning_fa": "روز بخیر" },
+            { "surface": "Was", "kind": "word", "code": "was", "meaning_fa": "چه" },
+            { "surface": "möchten", "kind": "word", "code": "möchten", "meaning_fa": "میل دارید" },
+            { "surface": "Sie", "kind": "word", "code": "Sie", "meaning_fa": "شما" }
+          ]
+        },
+        "choices": [
+          {
+            "text": "Einen Tee, bitte.",
+            "tts_text": null,
+            "translation_fa": "یک چای، لطفاً.",
+            "tokens": [
+              { "surface": "Einen", "kind": "word", "code": "ein", "meaning_fa": "یک" },
+              { "surface": "Tee", "kind": "word", "code": "Tee", "meaning_fa": "چای" },
+              { "surface": "bitte", "kind": "word", "code": "bitte", "meaning_fa": "لطفاً" }
+            ]
+          },
+          {
+            "text": "Ich bin ein Tee.",
+            "tts_text": null,
+            "translation_fa": "من یک چای هستم.",
+            "tokens": [
+              { "surface": "Ich", "kind": "word", "code": "ich", "meaning_fa": "من" },
+              { "surface": "bin", "kind": "word", "code": "sein", "meaning_fa": "هستم" },
+              { "surface": "ein", "kind": "word", "code": "ein", "meaning_fa": "یک" },
+              { "surface": "Tee", "kind": "word", "code": "Tee", "meaning_fa": "چای" }
+            ]
+          },
+          {
+            "text": "Hey, gib mir Tee!",
+            "tts_text": null,
+            "translation_fa": "هی، چای بده به من!",
+            "tokens": [
+              { "surface": "Hey", "kind": "word", "code": "hey", "meaning_fa": "هی" },
+              { "surface": "gib", "kind": "word", "code": "geben", "meaning_fa": "بده" },
+              { "surface": "mir", "kind": "word", "code": "ich", "meaning_fa": "به من" },
+              { "surface": "Tee", "kind": "word", "code": "Tee", "meaning_fa": "چای" }
+            ]
+          }
+        ],
+        "correct": 0,
+        "why_fa": "سفارش مؤدبانه همین است؛ «من یک چای هستم» بی‌معنی است و «هی، چای بده» بی‌ادبانه است."
+      },
+      {
+        "line": {
+          "speaker": "B",
+          "text": "Mit Zucker?",
+          "tts_text": null,
+          "translation_fa": "با شکر؟",
+          "tokens": [
+            { "surface": "Mit", "kind": "word", "code": "mit", "meaning_fa": "با" },
+            { "surface": "Zucker", "kind": "word", "code": "Zucker", "meaning_fa": "شکر" }
+          ]
+        },
+        "choices": [
+          {
+            "text": "Ja, ich bin zwanzig.",
+            "tts_text": null,
+            "translation_fa": "بله، بیست سالم است.",
+            "tokens": [
+              { "surface": "Ja", "kind": "word", "code": "ja", "meaning_fa": "بله" },
+              { "surface": "ich", "kind": "word", "code": "ich", "meaning_fa": "من" },
+              { "surface": "bin", "kind": "word", "code": "sein", "meaning_fa": "هستم" },
+              { "surface": "zwanzig", "kind": "word", "code": "zwanzig", "meaning_fa": "بیست" }
+            ]
+          },
+          {
+            "text": "Nein, danke.",
+            "tts_text": null,
+            "translation_fa": "نه، ممنون.",
+            "tokens": [
+              { "surface": "Nein", "kind": "word", "code": "nein", "meaning_fa": "نه" },
+              { "surface": "danke", "kind": "word", "code": "danke", "meaning_fa": "ممنون" }
+            ]
+          },
+          {
+            "text": "Nein, ich Zucker.",
+            "tts_text": null,
+            "translation_fa": "نه، من شکر.",
+            "tokens": [
+              { "surface": "Nein", "kind": "word", "code": "nein", "meaning_fa": "نه" },
+              { "surface": "ich", "kind": "word", "code": "ich", "meaning_fa": "من" },
+              { "surface": "Zucker", "kind": "word", "code": "Zucker", "meaning_fa": "شکر" }
+            ]
+          }
+        ],
+        "correct": 1,
+        "why_fa": "فروشنده درباره شکر پرسیده؛ سن تو بی‌ربط است و «من شکر» جمله ناقص و بی‌معنی است."
+      },
+      {
+        "line": {
+          "speaker": "B",
+          "text": "Möchten Sie auch etwas essen?",
+          "tts_text": null,
+          "translation_fa": "چیزی هم میل دارید بخورید؟",
+          "tokens": [
+            { "surface": "Möchten", "kind": "word", "code": "möchten", "meaning_fa": "میل دارید" },
+            { "surface": "Sie", "kind": "word", "code": "Sie", "meaning_fa": "شما" },
+            { "surface": "auch", "kind": "word", "code": "auch", "meaning_fa": "هم" },
+            { "surface": "etwas", "kind": "word", "code": "etwas", "meaning_fa": "چیزی" },
+            { "surface": "essen", "kind": "word", "code": "essen", "meaning_fa": "بخورید" }
+          ]
+        },
+        "choices": [
+          {
+            "text": "Ja, ich möchtest ein Croissant.",
+            "tts_text": null,
+            "translation_fa": "بله، (غلط) یک کروسان می‌خواهم.",
+            "tokens": [
+              { "surface": "Ja", "kind": "word", "code": "ja", "meaning_fa": "بله" },
+              { "surface": "ich", "kind": "word", "code": "ich", "meaning_fa": "من" },
+              { "surface": "möchtest", "kind": "word", "code": "möchten", "meaning_fa": "می‌خواهم (شکل غلط)" },
+              { "surface": "ein", "kind": "word", "code": "ein", "meaning_fa": "یک" },
+              { "surface": "Croissant", "kind": "word", "code": "Croissant", "meaning_fa": "کروسان" }
+            ]
+          },
+          {
+            "text": "Ich wohne in Berlin.",
+            "tts_text": null,
+            "translation_fa": "در برلین زندگی می‌کنم.",
+            "tokens": [
+              { "surface": "Ich", "kind": "word", "code": "ich", "meaning_fa": "من" },
+              { "surface": "wohne", "kind": "word", "code": "wohnen", "meaning_fa": "زندگی می‌کنم" },
+              { "surface": "in", "kind": "word", "code": "in", "meaning_fa": "در" },
+              { "surface": "Berlin", "kind": "name", "code": null, "meaning_fa": null }
+            ]
+          },
+          {
+            "text": "Ja, ein Croissant, bitte.",
+            "tts_text": null,
+            "translation_fa": "بله، یک کروسان، لطفاً.",
+            "tokens": [
+              { "surface": "Ja", "kind": "word", "code": "ja", "meaning_fa": "بله" },
+              { "surface": "ein", "kind": "word", "code": "ein", "meaning_fa": "یک" },
+              { "surface": "Croissant", "kind": "word", "code": "Croissant", "meaning_fa": "کروسان" },
+              { "surface": "bitte", "kind": "word", "code": "bitte", "meaning_fa": "لطفاً" }
+            ]
+          }
+        ],
+        "correct": 2,
+        "why_fa": "با ich شکل درست möchte است، نه möchtest؛ جای زندگی‌ات هم جواب این سؤال نیست."
+      },
+      {
+        "line": {
+          "speaker": "B",
+          "text": "Das macht 5 Euro.",
+          "tts_text": "Das macht fünf Euro.",
+          "translation_fa": "می‌شود پنج یورو.",
+          "tokens": [
+            { "surface": "Das", "kind": "word", "code": "das", "meaning_fa": "این" },
+            { "surface": "macht", "kind": "word", "code": "machen", "meaning_fa": "می‌شود" },
+            { "surface": "5", "kind": "number", "code": null, "meaning_fa": "پنج" },
+            { "surface": "Euro", "kind": "word", "code": "Euro", "meaning_fa": "یورو" }
+          ]
+        },
+        "choices": [
+          {
+            "text": "Hier, bitte.",
+            "tts_text": null,
+            "translation_fa": "بفرمایید.",
+            "tokens": [
+              { "surface": "Hier", "kind": "word", "code": "hier", "meaning_fa": "اینجا" },
+              { "surface": "bitte", "kind": "word", "code": "bitte", "meaning_fa": "بفرمایید" }
+            ]
+          },
+          {
+            "text": "Das ist doof!",
+            "tts_text": null,
+            "translation_fa": "مسخره است!",
+            "tokens": [
+              { "surface": "Das", "kind": "word", "code": "das", "meaning_fa": "این" },
+              { "surface": "ist", "kind": "word", "code": "sein", "meaning_fa": "است" },
+              { "surface": "doof", "kind": "word", "code": "doof", "meaning_fa": "مسخره" }
+            ]
+          },
+          {
+            "text": "Ich bin fünf Euro.",
+            "tts_text": null,
+            "translation_fa": "من پنج یورو هستم.",
+            "tokens": [
+              { "surface": "Ich", "kind": "word", "code": "ich", "meaning_fa": "من" },
+              { "surface": "bin", "kind": "word", "code": "sein", "meaning_fa": "هستم" },
+              { "surface": "fünf", "kind": "word", "code": "fünf", "meaning_fa": "پنج" },
+              { "surface": "Euro", "kind": "word", "code": "Euro", "meaning_fa": "یورو" }
+            ]
+          }
+        ],
+        "correct": 0,
+        "why_fa": "پول را می‌دهی و می‌گویی بفرمایید؛ «مسخره است» بی‌ادبانه است و «من پنج یورو هستم» بی‌معنی."
+      },
+      {
+        "line": {
+          "speaker": "B",
+          "text": "Danke! Schönen Tag noch!",
+          "tts_text": null,
+          "translation_fa": "ممنون! روز خوبی داشته باشید!",
+          "tokens": [
+            { "surface": "Danke", "kind": "word", "code": "danke", "meaning_fa": "ممنون" },
+            { "surface": "Schönen", "kind": "word", "code": "schön", "meaning_fa": "خوب" },
+            { "surface": "Tag", "kind": "word", "code": "Tag", "meaning_fa": "روز" },
+            { "surface": "noch", "kind": "word", "code": "noch", "meaning_fa": "(در ادامه)" }
+          ]
+        },
+        "choices": [
+          {
+            "text": "Gute Nacht, Mama!",
+            "tts_text": null,
+            "translation_fa": "شب بخیر، مامان!",
+            "tokens": [
+              { "surface": "Gute Nacht", "kind": "word", "code": "gute Nacht", "meaning_fa": "شب بخیر" },
+              { "surface": "Mama", "kind": "word", "code": "Mama", "meaning_fa": "مامان" }
+            ]
+          },
+          {
+            "text": "Guten Tag!",
+            "tts_text": null,
+            "translation_fa": "روز بخیر!",
+            "tokens": [
+              { "surface": "Guten Tag", "kind": "word", "code": "guten Tag", "meaning_fa": "روز بخیر" }
+            ]
+          },
+          {
+            "text": "Danke, gleichfalls. Tschüss!",
+            "tts_text": null,
+            "translation_fa": "ممنون، همچنین. خداحافظ!",
+            "tokens": [
+              { "surface": "Danke", "kind": "word", "code": "danke", "meaning_fa": "ممنون" },
+              { "surface": "gleichfalls", "kind": "word", "code": "gleichfalls", "meaning_fa": "همچنین" },
+              { "surface": "Tschüss", "kind": "word", "code": "tschüss", "meaning_fa": "خداحافظ" }
+            ]
+          }
+        ],
+        "correct": 2,
+        "why_fa": "موقع رفتن جواب «روز خوبی داشته باشید» را با «همچنین» و خداحافظی می‌دهی؛ سلام کردن یا «شب بخیر مامان» به این موقعیت نمی‌خورد."
+      }
+    ]
+  },
+  "issues": []
+}

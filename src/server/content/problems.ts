@@ -15,8 +15,12 @@ export const problem = (key: ProblemKey, vars?: Problem["vars"]): Problem => ({ 
 type FieldKey = keyof typeof fa.content.fields;
 
 const questionPath = /(?:^|\.)question_sets\.(reading|listening)\.(A|B)(?:\[(\d+)\])?(?:\.(.+))?$/;
+const turnPath = /(?:^|\.)turns\[(\d+)\](?:\.(.+))?$/;
 
-/** "tokens[3].surface" -> "surface": the admin sees the field's Persian name. A text's question says where it is. */
+/**
+ * "tokens[3].surface" -> "surface": the admin sees the field's Persian name. A text's question and a
+ * dialogue's turn also say which one it is.
+ */
 function fieldLabel(path: string): string {
   const question = path.match(questionPath);
   if (question) {
@@ -24,6 +28,11 @@ function fieldLabel(path: string): string {
     const vars = { track: t(`content.tracks.${track as "reading" | "listening"}`), set, n: Number(index ?? 0) + 1 };
     const place = index === undefined ? t("content.questionSet", vars) : t("content.questionItem", vars);
     return rest ? `${place}، ${fieldLabel(rest)}` : place;
+  }
+  const turn = path.match(turnPath);
+  if (turn) {
+    const place = t("content.turnItem", { n: Number(turn[1]) + 1 });
+    return turn[2] ? `${place}، ${fieldLabel(turn[2])}` : place;
   }
   const last = path.split(".").pop()?.replace(/\[\d+\]$/, "") ?? path;
   return last in fa.content.fields ? t(`content.fields.${last as FieldKey}`) : last;
