@@ -1,4 +1,6 @@
 import "dotenv/config";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
 import { defineConfig, devices } from "@playwright/test";
 import { e2eDatabaseUrl } from "./tests/e2e/database";
 
@@ -27,7 +29,8 @@ export default defineConfig({
     port,
     // Always our own server, so it is surely connected to the browser-test database.
     reuseExistingServer: false,
-    env: { DATABASE_URL: e2eDatabaseUrl(), SMS_PROVIDER: "mock" },
+    // Recordings the tests upload go to a scratch folder, not the development uploads.
+    env: { DATABASE_URL: e2eDatabaseUrl(), SMS_PROVIDER: "mock", STORAGE_DIR: join(tmpdir(), "polyra-e2e-storage") },
     timeout: 120_000,
   },
 });

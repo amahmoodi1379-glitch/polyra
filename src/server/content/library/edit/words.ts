@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { Prisma } from "@/generated/prisma/client";
+import { spokenWord } from "@/lib/spoken";
 import { filled, gender, grammaticalNumber, levelCode, mastery, optionalText, pos, register } from "@/schemas/common";
 import { db } from "@/server/db";
 import { engineNumber } from "@/server/settings/read";
@@ -8,7 +9,7 @@ import { checkWord } from "../../kinds/words";
 import { languageInfo, type LanguageCode } from "../../languages";
 import { problem, type Problem } from "../../problems";
 import { refreshDifficulty } from "../../text-difficulty";
-import { errorsOf, logEdit, parseValues, textOrNull, wordInfo, type WordInfo } from "./shared";
+import { errorsOf, logEdit, parseValues, staleAudio, textOrNull, wordInfo, type WordInfo } from "./shared";
 import { viewOf, type Editor } from "./types";
 
 const listOf = z.array(z.string()).transform((list) => list.map((item) => item.trim()).filter(Boolean));
@@ -172,6 +173,8 @@ export const wordEditor: Editor<WordValues, WordContext> = {
       };
       if (await logEdit(tx, adminId, "words", id, row, data)) {
         await tx.word.update({ where: { id }, data: { ...data, collocations: data.collocations ?? Prisma.DbNull } });
+        // The audio says the word with its article (src/lib/spoken.ts); a new spoken form makes it stale.
+        if (spokenWord({ ...row, ...data }) !== spokenWord(row)) await staleAudio(tx, [row.audio_id, row.human_audio_id]);
         if (values.level !== row.level) {
           await rearrangeLevel(tx, language, values.level);
           await refreshDifficulty(tx, { wordIds: [id] });

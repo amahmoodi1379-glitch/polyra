@@ -40,10 +40,12 @@ export async function logEdit(
   return true;
 }
 
-/** Marks audio files stale when the text they speak changed (PRD §13.7, §13.8). */
+/** Marks audio files stale when the text they speak changed (PRD §13.7, §13.8); true if a fresh one was among them. */
 export async function staleAudio(tx: Tx, ids: (number | null | undefined)[]) {
   const live = ids.filter((id): id is number => typeof id === "number");
-  if (live.length > 0) await tx.audioAsset.updateMany({ where: { id: { in: live } }, data: { stale: true } });
+  if (live.length === 0) return false;
+  const { count } = await tx.audioAsset.updateMany({ where: { id: { in: live }, stale: false }, data: { stale: true } });
+  return count > 0;
 }
 
 export type WordInfo = { code: string; lemma: string; meaning_fa: string | null; level: string; pos: string };

@@ -5,7 +5,6 @@ import { levelOrder } from "../languages";
 import { isOrderList, orderEntity, orderState, writeOrder, type OrderList, type OrderState } from "../order";
 import { refreshDifficulty } from "../text-difficulty";
 import { afterSentenceChange, targetColumns, wordColumns } from "./edit/sentences";
-import { staleAudio } from "./edit/shared";
 import { comparable, type StoredQuestion } from "./edit/texts";
 import { logChange, same } from "./log";
 import { childTables, setChildStatus, type ChildTable } from "./status";
@@ -90,14 +89,15 @@ const isOrderRow = (row: Pick<AdminLog, "entity_id">) => !/^\d+$/.test(row.entit
 
 /** Whether a row's kind of change can be put back at all; the full check runs when it is clicked. */
 export const revertible = (row: Pick<AdminLog, "action" | "entity" | "entity_id" | "before">) =>
-  row.action !== "delete" && row.before !== null && (isOrderRow(row) ? orderTarget(row) !== null : Boolean(slugOfEntity[row.entity]));
+  row.action !== "delete" && row.action !== "audio" && row.before !== null && (isOrderRow(row) ? orderTarget(row) !== null : Boolean(slugOfEntity[row.entity]));
 
 /** The newest log row of each item, so a page of the log can tell which rows are still the last word. */
 export async function latestRows(rows: Pick<AdminLog, "entity" | "entity_id">[]) {
   if (rows.length === 0) return new Set<number>();
   const latest = await db.adminLog.groupBy({
     by: ["entity", "entity_id"],
-    where: { OR: rows.map((row) => ({ entity: row.entity, entity_id: row.entity_id })) },
+    // Audio rows are not changes «برگردان» puts back, so they never stand in front of one.
+    where: { OR: rows.map((row) => ({ entity: row.entity, entity_id: row.entity_id })), action: { not: "audio" } },
     _max: { id: true },
   });
   return new Set(latest.map((row) => row._max.id!));
@@ -189,9 +189,6 @@ async function revertItem(tx: Tx, row: AdminLog, adminId: number): Promise<Rever
 
   const columns = Object.fromEntries(Object.entries(before).filter(([key]) => !childKeys.has(key)));
   const notes: string[] = [];
-  // Questions of a published text changed again: the same rule as an edit (PRD §13.7).
-  const questionsBack = row.entity === "text" && "question" in before && item.status === "published";
-  if (questionsBack) columns.suspended = true;
   if (Object.keys(columns).length > 0) await model.update({ where: { id }, data: writable(row.entity, columns) });
   for (const key of Object.keys(before).filter((name) => childKeys.has(name))) {
     await writeChildren(tx, modeOf(row.action, before[key]), key, item, before[key], after[key]);
@@ -202,9 +199,8 @@ async function revertItem(tx: Tx, row: AdminLog, adminId: number): Promise<Rever
     if ("text" in before || "sentence_word" in before) await refreshDifficulty(tx, { sentenceIds: [id] });
   }
   if (row.entity === "word" && "level" in before) await refreshDifficulty(tx, { wordIds: [id] });
-  if (questionsBack) await staleAudio(tx, [item.audio_id as number | null, item.human_audio_id as number | null]);
 
-  await logChange(tx, adminId, { action: "revert", entity: row.entity, entityId: id, before: after, after: { ...before, ...(questionsBack ? { suspended: true } : {}) } });
+  await logChange(tx, adminId, { action: "revert", entity: row.entity, entityId: id, before: after, after: before });
   return { state: "reverted", notes };
 }
 

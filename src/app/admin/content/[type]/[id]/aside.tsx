@@ -13,7 +13,7 @@ type Line = { label: string; value: ReactNode };
 type Linked = { id: number; type: LibrarySlug; text: string; voice: Voice; sub?: string };
 
 /** Where the item came from, and what it is part of or made of (PRD §13.2). */
-export function ItemAside({ slug, language, view, context }: { slug: LibrarySlug; language: string; view: ItemView; context: unknown }) {
+export function ItemAside({ slug, language, view, context, top }: { slug: LibrarySlug; language: string; view: ItemView; context: unknown; top?: ReactNode }) {
   const info: Line[] = [
     { label: t("admin.library.item.created"), value: formatDateTimeFa(new Date(view.createdAt)) },
     { label: t("admin.library.item.updated"), value: formatDateTimeFa(new Date(view.updatedAt)) },
@@ -34,6 +34,7 @@ export function ItemAside({ slug, language, view, context }: { slug: LibrarySlug
 
   return (
     <aside className="flex flex-col gap-4 xl:sticky xl:top-8">
+      {top}
       {related.lines.length > 0 || related.groups.length > 0 ? (
         <Card title={t("admin.library.item.related")}>
           {related.lines.length > 0 ? <Lines lines={related.lines} /> : null}
@@ -114,17 +115,9 @@ function relatedOf(slug: LibrarySlug, context: unknown): { lines: Line[]; groups
     }
     case "sentences": {
       const c = context as ContextOf<"sentences">;
-      const audio = c.audio.stale
-        ? t("admin.library.sentences.audioStale")
-        : c.audio.human
-          ? t("admin.library.sentences.audioHuman")
-          : c.audio.machine
-            ? t("admin.library.sentences.audioMachine")
-            : t("admin.library.sentences.audioNone");
       return {
         lines: [
           { label: t("admin.library.sentences.level"), value: c.level ? <bdi className="lat">{c.level}</bdi> : "—" },
-          { label: t("admin.library.sentences.audio"), value: audio },
         ],
         groups: [
           {
@@ -175,10 +168,6 @@ function relatedOf(slug: LibrarySlug, context: unknown): { lines: Line[]; groups
           { label: t("content.fields.code"), value: <bdi className="lat">{c.code}</bdi> },
           { label: t("content.fields.kind"), value: t("admin.library.texts.kindLine", { kind: c.kindName, band: formatNumber(c.band) }) },
           ...(c.wordCount ? [{ label: t("admin.library.texts.sentences"), value: t("admin.library.texts.words", { count: formatNumber(c.wordCount) }) }] : []),
-          {
-            label: t("admin.library.sentences.audio"),
-            value: c.audio.stale ? t("admin.library.sentences.audioStale") : c.audio.has ? t("admin.library.sentences.audioMachine") : t("admin.library.sentences.audioNone"),
-          },
         ],
         groups: [],
       };

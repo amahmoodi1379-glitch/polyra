@@ -7,6 +7,7 @@ import { formatMobileFa } from "@/lib/phone";
 import { wordDiff, type DiffPart } from "@/lib/text-diff";
 import { db } from "@/server/db";
 import { appSetting } from "@/server/settings/read";
+import { parseSlot } from "../audio/slots";
 import { correctedText } from "../kinds/errorfix";
 import { languageCodes } from "../languages";
 import { orderEntity, type OrderList } from "../order";
@@ -247,6 +248,16 @@ function changeLines(row: AdminLog): ChangeLine[] {
   return keys.flatMap((key) => fieldLines(key, fieldLabel(key), before[key], after[key]));
 }
 
+/** An audio row: which recording of the item, and whether it was put in, replaced or taken out. */
+function audioLines(row: AdminLog): ChangeLine[] {
+  const before = (row.before ?? {}) as { slot?: string; which?: string; asset?: number | null; offsets?: number[] };
+  const after = (row.after ?? {}) as { asset?: number | null };
+  const slot = parseSlot(before.slot ?? "");
+  const part = slot?.kind === "phonics" ? ` (${t(`admin.audio.parts.${slot.part}`, { number: slot.index + 1 })})` : "";
+  const what = before.offsets ? "synced" : before.asset == null ? "added" : after.asset == null ? "removed" : "replaced";
+  return [{ key: "audio", label: t(before.which === "human" ? "admin.log.audio.human" : "admin.log.audio.machine") + part, note: t(`admin.log.audio.${what}`) }];
+}
+
 /** What an order save moved: each moved row with its old and new place. */
 function orderLines(row: AdminLog, titles: Map<string, Shown>): ChangeLine[] {
   const before = (row.before ?? {}) as { order?: number[]; manual?: boolean };
@@ -387,9 +398,11 @@ export async function listLog(kind: LogKind | null, page: number): Promise<LogPa
         lines:
           row.action === "delete"
             ? [{ key: "deleted", label: "", note: deletedSentences ? t("admin.log.deletedWithSentences", { count: deletedSentences }) : t("admin.log.deleted") }]
-            : order
-              ? orderLines(row, titles)
-              : changeLines(row),
+            : row.action === "audio"
+              ? audioLines(row)
+              : order
+                ? orderLines(row, titles)
+                : changeLines(row),
         revert: !revertible(row) ? "no" : latest.has(row.id) ? "ready" : "later",
       };
     }),

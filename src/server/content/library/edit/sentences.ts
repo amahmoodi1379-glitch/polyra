@@ -42,7 +42,6 @@ export type SentenceContext = {
   words: Record<string, WordInfo>;
   targets: TargetInfo[];
   uses: UseRef[];
-  audio: { machine: boolean; human: boolean; stale: boolean };
 };
 
 type StoredTarget = { id: number; marked_text: string; blanks: number; accepted: unknown; distractors: unknown; hint: string | null; accepted_full: unknown; status: string };
@@ -75,9 +74,10 @@ export const wordColumns = (row: Record<string, unknown>) => ({
 
 /**
  * What a changed sentence does to its audio and its texts (PRD §13.7, §13.8): a new text makes both
- * voices stale; a new spoken form only the machine one. Texts made of the sentence get their word
- * count again, their audio goes stale and a published one is suspended until new audio comes.
- * Returns the notes the teacher sees. Also used when «برگردان» puts an old text back.
+ * files stale; a new spoken form only the machine one. Texts made of the sentence get their word
+ * count again and their files go stale; until a new file comes the phone's voice reads them, so a
+ * published text stays live (DECISIONS.md: phone voice). Returns the notes the teacher sees. Also
+ * used when «برگردان» puts an old text back.
  */
 export async function afterSentenceChange(
   tx: Tx,
@@ -92,7 +92,7 @@ export async function afterSentenceChange(
   const texts = await tx.text.findMany({ where: { language: sentence.language, sentence_ids: { has: sentence.id } } });
   for (const item of texts) {
     const lines = await tx.sentence.findMany({ where: { id: { in: item.sentence_ids } }, select: { text: true } });
-    const after = { word_count: lines.reduce((sum, line) => sum + wordCount(line.text), 0), suspended: item.suspended || item.status === "published" };
+    const after = { word_count: lines.reduce((sum, line) => sum + wordCount(line.text), 0) };
     const changed = Object.entries(after).filter(([key, value]) => !same(item[key as keyof typeof item], value));
     if (changed.length > 0) {
       await tx.text.update({ where: { id: item.id }, data: after });
@@ -104,8 +104,7 @@ export async function afterSentenceChange(
         after: Object.fromEntries(changed),
       });
     }
-    await staleAudio(tx, [item.audio_id, item.human_audio_id]);
-    if (item.status === "published" && !item.suspended) notes.push(t("admin.library.form.textOfSentenceSuspended", { title: item.title }));
+    if (await staleAudio(tx, [item.audio_id, item.human_audio_id])) notes.push(t("admin.library.form.textOfSentenceStale", { title: item.title }));
   }
   return notes;
 }
@@ -113,7 +112,7 @@ export async function afterSentenceChange(
 /**
  * A sentence (PRD §13.7): its text, spoken form, translation, word table and fill-in targets. A new
  * text runs the mapping check again (PRD §14.1), may not equal another sentence (PRD §14.9), makes its
- * audio stale and, in a published text, suspends that text until new audio comes.
+ * audio stale, and the audio of the texts it is in.
  */
 export const sentenceEditor: Editor<SentenceValues, SentenceContext> = {
   async load(id) {
@@ -122,11 +121,7 @@ export const sentenceEditor: Editor<SentenceValues, SentenceContext> = {
       include: { words: true, targets: { where: { status: { not: "retired" } }, orderBy: { id: "asc" } } },
     });
     if (!row) return null;
-    const [vocabulary, uses, audio] = await Promise.all([
-      loadVocabulary(db, row.language),
-      sentenceUses(db, row.language, [id]),
-      row.audio_id ? db.audioAsset.findUnique({ where: { id: row.audio_id }, select: { stale: true } }) : null,
-    ]);
+    const [vocabulary, uses] = await Promise.all([loadVocabulary(db, row.language), sentenceUses(db, row.language, [id])]);
     const tokens = tokensForEdit(row.words, vocabulary);
     const wordIds = row.targets.filter((target) => target.target_type === "word").map((target) => target.target_id);
     const unitIds = row.targets.filter((target) => target.target_type === "grammar").map((target) => target.target_id);
@@ -179,7 +174,6 @@ export const sentenceEditor: Editor<SentenceValues, SentenceContext> = {
           ...useDialogues.map((item) => ({ id: item.id, title: item.title_fa, voice: "fa" as const, type: "dialogues" as const })),
           ...useUnits.map((item) => ({ id: item.id, title: item.title_fa, voice: "fa" as const, type: "units" as const })),
         ],
-        audio: { machine: Boolean(row.audio_id), human: Boolean(row.human_audio_id), stale: Boolean(audio?.stale) },
       },
     };
   },

@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { t } from "@/i18n";
 import { isolateLatin } from "@/lib/bidi";
 import { requireAdmin } from "@/server/auth/session";
+import { audioCounts, audioTypes } from "@/server/content/audio/lists";
 import { batchStep, hasQa, type KindSlug } from "@/server/content/batches";
 import { isLanguage, languageCodes, type LanguageCode } from "@/server/content/languages";
 import { typeCounts } from "@/server/content/library/list";
@@ -19,7 +20,7 @@ type Action = { start: KindSlug; level?: string; label: string } | { href: strin
 type WorkRow = { key: string; text: string; action: Action | null; note?: string };
 
 async function languageRows(language: LanguageCode, sizes: Record<string, number>) {
-  const [status, open, reviewing, approved] = await Promise.all([
+  const [status, open, reviewing, approved, audio] = await Promise.all([
     contentStatus(language),
     db.importBatch.findMany({
       where: { language, state: { in: ["prompt_made", "pasted", "imported"] } },
@@ -27,6 +28,7 @@ async function languageRows(language: LanguageCode, sizes: Record<string, number
     }),
     typeCounts(language, "needs_review"),
     typeCounts(language, "approved"),
+    audioCounts(language),
   ]);
   const unfinished = open.filter((batch) => batchStep(batch) < 4);
   const waitingQa = open.filter((batch) => batch.state === "imported" && hasQa(batch.prompt_kind) && batchStep(batch) === 4);
@@ -180,6 +182,22 @@ async function languageRows(language: LanguageCode, sizes: Record<string, number
       key: "publish",
       text: t("admin.workbench.rows.publish", { count: toPublish }),
       action: { href: `/admin/publish?lang=${language}`, label: t("admin.workbench.actions.publish") },
+    });
+  }
+  // Audio (PRD §13.9): stale files to record again, and files nobody has listened to yet.
+  const audioTotal = (tab: "stale" | "listen") => audioTypes.reduce((sum, type) => sum + audio[tab][type], 0);
+  if (audioTotal("stale")) {
+    rows.push({
+      key: "audioStale",
+      text: t("admin.workbench.rows.audioStale", { count: audioTotal("stale") }),
+      action: { href: `/admin/audio?lang=${language}&tab=stale`, label: t("admin.workbench.actions.audioStale") },
+    });
+  }
+  if (audioTotal("listen")) {
+    rows.push({
+      key: "audioListen",
+      text: t("admin.workbench.rows.audioListen", { count: audioTotal("listen") }),
+      action: { href: `/admin/audio?lang=${language}&tab=listen`, label: t("admin.workbench.actions.audioListen") },
     });
   }
   if (status.duplicates) {

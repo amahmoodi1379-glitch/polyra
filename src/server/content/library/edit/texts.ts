@@ -1,6 +1,5 @@
 import { z } from "zod";
 import { Prisma, type ContentStatus, type QuestionSet, type QuestionType, type Track as TrackName } from "@/generated/prisma/client";
-import { t } from "@/i18n";
 import { filled } from "@/schemas/common";
 import type { QuestionRecord } from "@/schemas/texts";
 import { db } from "@/server/db";
@@ -9,7 +8,7 @@ import type { Tx } from "../../kinds/types";
 import { problem, type Problem } from "../../problems";
 import { plain, same } from "../log";
 import { allowedTypes, checkQuestionSets, questionRange, setNames, tracks, type SetName, type Track } from "../../text-check";
-import { errorsOf, logEdit, parseValues, staleAudio, wordInfo, type WordInfo } from "./shared";
+import { errorsOf, logEdit, parseValues, wordInfo, type WordInfo } from "./shared";
 import { viewOf, type Editor } from "./types";
 
 type TextKindEntry = { kind: string; name_fa: string; speakers: boolean };
@@ -45,7 +44,6 @@ export type TextContext = {
   textWords: WordInfo[];
   allowed: Record<Track, QuestionRecord["type"][]>;
   ranges: Record<Track, Record<SetName, [number, number]>>;
-  audio: { stale: boolean; has: boolean };
 };
 
 export type StoredQuestion = { id: number; track: TrackName; set: QuestionSet; order_no: number; type: QuestionType; payload: unknown; explanation_fa: string | null; status: ContentStatus };
@@ -74,18 +72,14 @@ async function textSentences(tx: Tx | typeof db, ids: number[]) {
 
 /**
  * A text (PRD §7, §13.2): title, placement, key words, speakers and its four question sets, with the
- * same checks as import (PRD §13.3). Sentences are edited on their own page. Editing the questions of
- * a published text makes its audio stale and suspends it until new audio comes (PRD §13.7).
+ * same checks as import (PRD §13.3). Sentences are edited on their own page. Questions are not in the
+ * audio, so changing them leaves the audio and a published text as they are (DECISIONS.md: phone voice).
  */
 export const textEditor: Editor<TextValues, TextContext> = {
   async load(id) {
     const row = await db.text.findUnique({ where: { id }, include: { questions: { where: { status: { not: "retired" } }, select: questionColumns } } });
     if (!row) return null;
-    const [kinds, sentences, audio] = await Promise.all([
-      appSetting<Record<string, TextKindEntry[]>>("prompt.text_kinds"),
-      textSentences(db, row.sentence_ids),
-      row.audio_id ? db.audioAsset.findUnique({ where: { id: row.audio_id }, select: { stale: true } }) : null,
-    ]);
+    const [kinds, sentences] = await Promise.all([appSetting<Record<string, TextKindEntry[]>>("prompt.text_kinds"), textSentences(db, row.sentence_ids)]);
     const kind = (kinds[String(row.band)] ?? []).find((entry) => entry.kind === row.kind);
     const wordIds = [...new Set(sentences.flatMap((sentence) => sentence.words.map((word) => word.word_id)).filter((wordId): wordId is number => wordId !== null))];
     const listWords = await db.word.findMany({ where: { id: { in: [...wordIds, ...row.key_word_ids] } }, select: { id: true, code: true, lemma: true, meaning_fa: true, level: true, pos: true } });
@@ -123,7 +117,6 @@ export const textEditor: Editor<TextValues, TextContext> = {
         ranges: Object.fromEntries(
           tracks.map((track) => [track, Object.fromEntries(setNames.map((set) => [set, questionRange(row.band, set, row.placement_ok)]))]),
         ) as TextContext["ranges"],
-        audio: { stale: Boolean(audio?.stale), has: Boolean(row.audio_id || row.human_audio_id) },
       },
     };
   },
@@ -194,8 +187,7 @@ export const textEditor: Editor<TextValues, TextContext> = {
         removed.length > 0 || next.some((question) => question.id === 0 || !same(comparable([question]), comparable([known.get(question.id)!])));
 
       const draftLike = row.status === "draft" || row.status === "needs_review";
-      const suspend = questionsChanged && row.status === "published";
-      const data = { title: values.title, placement_ok: values.placement_ok, key_word_ids: keyWordIds, speakers, ...(suspend ? { suspended: true } : {}) };
+      const data = { title: values.title, placement_ok: values.placement_ok, key_word_ids: keyWordIds, speakers };
       let extra: { before: Record<string, unknown>; after: Record<string, unknown> } | undefined;
       if (questionsChanged) {
         for (const question of removed) {
@@ -220,13 +212,12 @@ export const textEditor: Editor<TextValues, TextContext> = {
       }
       if (await logEdit(tx, adminId, "texts", id, row, data, extra)) {
         await tx.text.update({ where: { id }, data: { ...data, speakers: speakers ?? Prisma.DbNull } });
-        if (suspend) await staleAudio(tx, [row.audio_id, row.human_audio_id]);
       }
       const codes = new Map(keyRows.map((word) => [word.id, word.code]));
       return {
         state: "saved" as const,
         values: { ...values, speakers, key_words: keyWordIds.map((wordId) => codes.get(wordId)!), question_sets: questionSetsOf(next) },
-        notes: suspend ? [t("admin.library.form.textSuspended")] : [],
+        notes: [],
       };
     });
   },

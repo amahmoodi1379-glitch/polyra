@@ -14,6 +14,9 @@ import { questionRange, setNames, tracks } from "../text-check";
  * The publish conditions of every content type (PRD §5.10, §6.7, §7.7, §13.5). An item counts the
  * items it depends on as ready when they are `approved` or `published`, so a word and its sentences
  * can be published in one run. Each unmet condition is one plain Persian line.
+ *
+ * Audio is not a condition: the phone's voice reads anything without a file, and a teacher adds files
+ * where they are needed (DECISIONS.md: phone voice). Files that exist are heard before a level opens.
  */
 
 export type CheckedItem = { slug: LibrarySlug; id: number; title: string; voice: Voice; level: string | null; status: ContentStatus; reasons: string[] };
@@ -30,19 +33,16 @@ const listOf = (items: Iterable<string>, max = 4) => {
   return all.length > max ? t("admin.publish.reasons.andMore", { list: shown, count: all.length - max }) : shown;
 };
 
-type AudioState = "ok" | "missing" | "stale";
 type SentenceFacts = {
   id: number;
   status: ContentStatus;
   translation: string;
-  audio: AudioState;
   words: { word_id: number | null; kind: TokenKind; candidate: boolean; suspect: boolean }[];
 };
 type WordFacts = { lemma: string; level: string; status: ContentStatus };
 
-/** Loads what the checks share once: audio, sentences and the words they use. */
+/** Loads what the checks share once: sentences and the words they use. */
 class Loader {
-  private audioRows = new Map<number, { stale: boolean }>();
   private sentenceRows = new Map<number, SentenceFacts | null>();
   private wordRows = new Map<number, WordFacts | null>();
 
@@ -50,21 +50,6 @@ class Loader {
     readonly tx: Tx,
     readonly language: string,
   ) {}
-
-  async loadAudio(ids: (number | null | undefined)[]) {
-    const wanted = [...new Set(ids.filter((id): id is number => typeof id === "number" && !this.audioRows.has(id)))];
-    if (wanted.length === 0) return;
-    const rows = await this.tx.audioAsset.findMany({ where: { id: { in: wanted } }, select: { id: true, stale: true } });
-    for (const row of rows) this.audioRows.set(row.id, { stale: row.stale });
-  }
-
-  /** Human audio plays first; machine audio is the fallback (PRD §13.8). */
-  audio(human: number | null | undefined, machine: number | null | undefined): AudioState {
-    const own = human != null ? this.audioRows.get(human) : undefined;
-    const tts = machine != null ? this.audioRows.get(machine) : undefined;
-    if ((own && !own.stale) || (tts && !tts.stale)) return "ok";
-    return own || tts ? "stale" : "missing";
-  }
 
   async sentences(ids: number[]) {
     const wanted = [...new Set(ids.filter((id) => !this.sentenceRows.has(id)))];
@@ -75,19 +60,15 @@ class Loader {
           id: true,
           status: true,
           translation_fa: true,
-          audio_id: true,
-          human_audio_id: true,
           words: { select: { word_id: true, kind: true, candidate_reason: true, suspect: true } },
         },
       });
-      await this.loadAudio(rows.flatMap((row) => [row.audio_id, row.human_audio_id]));
       for (const id of wanted) this.sentenceRows.set(id, null);
       for (const row of rows) {
         this.sentenceRows.set(row.id, {
           id: row.id,
           status: row.status,
           translation: row.translation_fa.trim(),
-          audio: this.audio(row.human_audio_id, row.audio_id),
           words: row.words.map((word) => ({ word_id: word.word_id, kind: word.kind, candidate: Boolean(word.candidate_reason), suspect: word.suspect })),
         });
       }
@@ -115,8 +96,6 @@ class Loader {
 class SentenceIssues {
   gone = 0;
   noTranslation = 0;
-  noAudio = 0;
-  staleAudio = 0;
   candidates = 0;
   suspects = 0;
   unready = new Set<string>();
@@ -127,8 +106,6 @@ class SentenceIssues {
       return;
     }
     if (!facts.translation) this.noTranslation++;
-    if (facts.audio === "missing") this.noAudio++;
-    if (facts.audio === "stale") this.staleAudio++;
     this.addTokens(facts.words, loader);
   }
 
@@ -151,8 +128,6 @@ class SentenceIssues {
     };
     if (this.gone) lines.push(reason("sentenceGone", { count: this.gone }));
     count("noTranslation", this.noTranslation);
-    count("noAudio", this.noAudio);
-    count("staleAudio", this.staleAudio);
     if (this.candidates) lines.push(reason("candidates", { count: this.candidates }));
     if (this.suspects) lines.push(reason("suspects", { count: this.suspects }));
     if (this.unready.size) lines.push(reason("wordsNotReady", { words: listOf(this.unready) }));
@@ -168,10 +143,6 @@ const storedTokens = (value: unknown) =>
     candidate: Boolean(row.candidate_reason),
     suspect: Boolean(row.suspect),
   }));
-
-function audioReason(state: AudioState, missingKey = "noAudio", staleKey = "staleAudio") {
-  return state === "ok" ? [] : [reason(state === "missing" ? missingKey : staleKey)];
-}
 
 type Ready = { units: Map<string, { id: number; status: ContentStatus; level: string }> };
 
@@ -192,8 +163,6 @@ async function words(loader: Loader, scope: CheckScope): Promise<CheckedItem[]> 
       status: true,
       no_card: true,
       dup_of_id: true,
-      audio_id: true,
-      human_audio_id: true,
     },
   });
   if (rows.length === 0) return [];
@@ -204,14 +173,12 @@ async function words(loader: Loader, scope: CheckScope): Promise<CheckedItem[]> 
     _count: true,
   });
   const counts = new Map(targets.map((row) => [row.target_id, row._count]));
-  await loader.loadAudio(rows.flatMap((row) => [row.audio_id, row.human_audio_id]));
   return rows.map((word) => {
     const reasons: string[] = [];
     if (word.dup_of_id) reasons.push(reason("duplicate"));
     if (!word.meaning_fa) reasons.push(reason("noMeaning"));
     if (word.pos === "noun" && !word.gender) reasons.push(reason("noGender"));
     if (language === "de" && word.pos === "noun" && word.number === "sg" && !word.plural) reasons.push(reason("noPlural"));
-    reasons.push(...audioReason(loader.audio(word.human_audio_id, word.audio_id)));
     const count = counts.get(word.id) ?? 0;
     if (!word.no_card && count < min) reasons.push(reason("wordTargets", { count, min }));
     return { slug: "words", id: word.id, title: word.lemma, voice: "target", level: word.level, status: word.status, reasons };
@@ -255,7 +222,7 @@ async function units(loader: Loader, scope: CheckScope): Promise<CheckedItem[]> 
       const examples = (await loader.sentences(unit.example_sentence_ids)).filter(ready);
       if (examples.length < 3) reasons.push(reason("examples", { count: examples.length }));
       const own = targets.filter((row) => row.target_id === unit.id).map((row) => row.sentence_id);
-      const counted = (await loader.sentences(own)).filter(ready).filter((facts) => facts.audio === "ok");
+      const counted = (await loader.sentences(own)).filter(ready);
       if (counted.length < min) reasons.push(reason("unitTargets", { count: counted.length, min }));
       // Every word of its sentences is of the unit's level or lower (PRD §6.7).
       const above = new Set<string>();
@@ -338,25 +305,15 @@ async function texts(loader: Loader, scope: CheckScope): Promise<CheckedItem[]> 
       status: true,
       placement_ok: true,
       sentence_ids: true,
-      audio_id: true,
-      human_audio_id: true,
-      sentence_offsets_ms: true,
-      human_sentence_offsets_ms: true,
       questions: { where: { status: { not: "retired" } }, select: { track: true, set: true } },
     },
   });
   await loader.sentences(rows.flatMap((row) => row.sentence_ids));
-  await loader.loadAudio(rows.flatMap((row) => [row.audio_id, row.human_audio_id]));
   return Promise.all(
     rows.map(async (text) => {
       const issues = new SentenceIssues();
       for (const facts of await loader.sentences(text.sentence_ids)) issues.add(facts, loader);
       const reasons = issues.reasons(false);
-      // A whole-text file with the start of every sentence (PRD §7.7): the human one or the machine one.
-      const count = text.sentence_ids.length;
-      const human = loader.audio(text.human_audio_id, null) === "ok" && text.human_sentence_offsets_ms.length === count;
-      const machine = loader.audio(null, text.audio_id) === "ok" && text.sentence_offsets_ms.length === count;
-      if (!human && !machine) reasons.push(reason(loader.audio(text.human_audio_id, text.audio_id) === "stale" ? "textAudioStale" : "textAudio"));
       for (const track of tracks) {
         for (const set of setNames) {
           const found = text.questions.filter((question) => question.track === track && question.set === set).length;
@@ -416,36 +373,15 @@ async function writing(loader: Loader, scope: CheckScope): Promise<CheckedItem[]
   return rows.map((row) => ({ slug: "writing", id: row.id, title: row.prompt_fa, voice: "fa", level: row.level, status: row.status, reasons: [] }));
 }
 
-type Voiced = Record<string, unknown>;
-/** The recordings a phonics lesson needs: each example word, both sides of each pair, each liaison sentence. */
-function phonicsAudio(lesson: { example_words: unknown; minimal_pairs: unknown; liaison_sentences: unknown }) {
-  const list = (value: unknown) => (Array.isArray(value) ? (value as Voiced[]) : []);
-  const ids = (item: Voiced, prefix = "") => [item[`${prefix}human_audio_id`] as number | null, item[`${prefix}audio_id`] as number | null] as const;
-  return [
-    ...list(lesson.example_words).map((item) => ids(item)),
-    ...list(lesson.minimal_pairs).flatMap((item) => [ids(item, "a_"), ids(item, "b_")]),
-    ...list(lesson.liaison_sentences).map((item) => ids(item)),
-  ];
-}
-
 async function phonics(loader: Loader, scope: CheckScope): Promise<CheckedItem[]> {
   // Phonics lessons belong to the language, and they open with A1.
   if (scope.level && scope.level !== "A1") return [];
   const rows = await loader.tx.phonicsLesson.findMany({
     where: { language: loader.language, status: { in: scope.statuses } },
     orderBy: [{ order_no: { sort: "asc", nulls: "last" } }, { id: "asc" }],
-    select: { id: true, sound_label: true, status: true, example_words: true, minimal_pairs: true, liaison_sentences: true },
+    select: { id: true, sound_label: true, status: true },
   });
-  await loader.loadAudio(rows.flatMap((row) => phonicsAudio(row).flat()));
-  return rows.map((row) => {
-    const states = phonicsAudio(row).map(([human, machine]) => loader.audio(human, machine));
-    const missing = states.filter((state) => state === "missing").length;
-    const stale = states.filter((state) => state === "stale").length;
-    const reasons: string[] = [];
-    if (missing) reasons.push(reason("recordingsMissing", { count: missing }));
-    if (stale) reasons.push(reason("recordingsStale", { count: stale }));
-    return { slug: "phonics", id: row.id, title: row.sound_label, voice: "fa", level: null, status: row.status, reasons };
-  });
+  return rows.map((row) => ({ slug: "phonics", id: row.id, title: row.sound_label, voice: "fa", level: null, status: row.status, reasons: [] }));
 }
 
 /** Every item of the scope, checked, in the library's type order. */

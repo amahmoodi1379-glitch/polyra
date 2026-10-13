@@ -3,10 +3,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ChevronRight } from "lucide-react";
 import { LevelChip, StatusChip } from "@/components/admin/status-chip";
+import { ItemAudioPanel } from "@/components/admin/audio/item-audio";
 import { Voiced } from "@/components/admin/voiced";
 import { t } from "@/i18n";
 import { cn } from "@/lib/utils";
 import { requireAdmin } from "@/server/auth/session";
+import { itemAudio } from "@/server/content/audio/view";
 import { editors } from "@/server/content/library/edit";
 import type { ItemView } from "@/server/content/library/edit/types";
 import { isLibrarySlug, type LibrarySlug } from "@/server/content/library/slugs";
@@ -43,6 +45,10 @@ export default async function ItemPage({ params }: PageProps<"/admin/content/[ty
   const { slug, id, loaded } = item;
   const { view, language } = loaded;
   const levels = await appSetting<string[]>(`levels.${language}`);
+  // Audio (PRD §13.8): a word's or a sentence's sits at the side, a text's and a lesson's under the form.
+  const audio = view.status === "retired" ? null : await itemAudio(slug, id);
+  const audioPanel = audio ? <ItemAudioPanel audio={audio} language={language} /> : null;
+  const audioAside = audio?.kind === "single";
 
   return (
     <>
@@ -75,8 +81,11 @@ export default async function ItemPage({ params }: PageProps<"/admin/content/[ty
       </header>
 
       <div className="grid grid-cols-[minmax(0,1fr)] items-start gap-6 xl:grid-cols-[minmax(0,1fr)_300px] xl:gap-8">
-        <ItemForm slug={slug} id={id} language={language} values={loaded.values} context={loaded.context} levels={levels} readOnly={view.status === "retired"} />
-        <ItemAside slug={slug} language={language} view={view} context={loaded.context} />
+        <div className="flex min-w-0 flex-col gap-6">
+          <ItemForm slug={slug} id={id} language={language} values={loaded.values} context={loaded.context} levels={levels} readOnly={view.status === "retired"} />
+          {audioAside ? null : audioPanel}
+        </div>
+        <ItemAside slug={slug} language={language} view={view} context={loaded.context} top={audioAside ? audioPanel : null} />
       </div>
     </>
   );

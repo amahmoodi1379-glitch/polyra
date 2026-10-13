@@ -175,7 +175,7 @@ describe("editing and «برگردان» (PRD §13.2)", () => {
     expect(((await testDb.conjugationTable.findUniqueOrThrow({ where: { id: table.id } })).forms as Record<string, string>).il_elle_on).toBe("est");
   });
 
-  it("brings a text's questions back, removes an added one, and keeps a published text suspended", async () => {
+  it("brings a text's questions back and removes an added one; a published text stays up with its file", async () => {
     const text = await importedText();
     const loaded = (await textEditor.load(text.id))!;
     const sets = structuredClone(loaded.values.question_sets);
@@ -190,20 +190,17 @@ describe("editing and «برگردان» (PRD §13.2)", () => {
     expect(questions).toHaveLength(8);
     expect((questions.find((question) => question.id === text.questions[0].id)!.payload as { prompt: string }).prompt).toBe("خانم چه قهوه‌ای می‌خواهد؟");
 
-    // Published: an edit suspends it (PRD §13.7), and so does putting the questions back.
-    await testDb.text.update({ where: { id: text.id }, data: { status: "published" } });
+    // Published with a file: changing a question neither takes the text down nor makes its file stale.
+    const file = await testDb.audioAsset.create({ data: { kind: "text", url: "test://text.mp3", source: "human", duration_ms: 9000 } });
+    await testDb.text.update({ where: { id: text.id }, data: { status: "published", human_audio_id: file.id, human_sentence_offsets_ms: [0, 4000] } });
     const again = (await textEditor.load(text.id))!;
     const changed = structuredClone(again.values.question_sets);
     changed.reading.A[0] = { ...changed.reading.A[0], prompt: "خانم چه می‌خواهد؟" } as (typeof changed.reading.A)[0];
     expect((await textEditor.save(text.id, { ...again.values, question_sets: changed }, ADMIN)).state).toBe("saved");
-    await testDb.text.update({ where: { id: text.id }, data: { suspended: false } });
-    const edit = await lastLog();
-    expect(edit.after).toEqual(expect.objectContaining({ suspended: true }));
-    // The text was unsuspended by hand after the edit, so the edit no longer matches it.
-    expect(await revertChange(edit.id, ADMIN)).toEqual({ state: "blocked", reason: "changed" });
-    await testDb.text.update({ where: { id: text.id }, data: { suspended: true } });
-    expect(await revertChange(edit.id, ADMIN)).toEqual({ state: "reverted", notes: [] });
-    expect((await testDb.text.findUniqueOrThrow({ where: { id: text.id } })).suspended).toBe(true);
+    expect((await testDb.text.findUniqueOrThrow({ where: { id: text.id } })).suspended).toBe(false);
+    expect(await revertChange((await lastLog()).id, ADMIN)).toEqual({ state: "reverted", notes: [] });
+    expect((await testDb.text.findUniqueOrThrow({ where: { id: text.id } })).suspended).toBe(false);
+    expect((await testDb.audioAsset.findUniqueOrThrow({ where: { id: file.id } })).stale).toBe(false);
   });
 });
 

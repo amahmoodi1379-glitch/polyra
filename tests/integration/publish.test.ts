@@ -94,13 +94,13 @@ describe("publish conditions (PRD §13.5)", () => {
     const silent = await sentence("Le pain.", [pain.id], { audio_id: null, translation_fa: " " });
 
     const { ready, blocked } = await previewPublish("fr");
-    expect(ready.filter((item) => item.slug === "words").map((item) => item.id)).toEqual([pain.id, oui.id]);
+    // Audio is not a condition: the phone's voice reads what has no file, and a stale file is not played.
+    expect(ready.filter((item) => item.slug === "words").map((item) => item.id)).toEqual([pain.id, lait.id, oui.id]);
     expect(ready.filter((item) => item.slug === "sentences")).toHaveLength(12);
     expect(blocked.map((item) => [item.id, item.reasons])).toEqual([
-      [eau.id, [why("noGender"), why("noAudio"), why("wordTargets", { count: 2, min: 5 })]],
-      [lait.id, [why("staleAudio")]],
+      [eau.id, [why("noGender"), why("wordTargets", { count: 2, min: 5 })]],
       [unready.id, [why("wordsNotReady", { words: "chat" })]],
-      [silent.id, [why("noTranslation"), why("noAudio")]],
+      [silent.id, [why("noTranslation")]],
     ]);
   });
 
@@ -132,7 +132,7 @@ describe("publish conditions (PRD §13.5)", () => {
       },
     });
 
-    const { blocked } = await previewPublish("fr");
+    const { ready, blocked } = await previewPublish("fr");
     const reasons = Object.fromEntries(blocked.map((item) => [`${item.slug}:${item.id}`, item.reasons]));
     expect(reasons[`units:${unit.id}`]).toEqual([
       why("noLesson"),
@@ -142,8 +142,9 @@ describe("publish conditions (PRD §13.5)", () => {
       why("wordsAboveLevel", { level: "A1", words: "néanmoins" }),
     ]);
     expect(reasons[`tables:${table.id}`]).toEqual([why("emptyForms", { count: 1 }), why("verbNotReady", { verb: "être" }), why("unitNotReady", { units: "fr-a1-etre" })]);
-    expect(reasons[`texts:${cafe.id}`]).toEqual([why("textAudio"), why("questions", { track: t("admin.publish.tracks.listening"), set: "A", count: 1, min: 2, max: 8 })]);
-    expect(reasons[`phonics:${lesson.id}`]).toEqual([why("recordingsMissing", { count: 1 }), why("recordingsStale", { count: 1 })]);
+    // A text without a matching file and a lesson with a missing and a stale recording are not held back for it.
+    expect(reasons[`texts:${cafe.id}`]).toEqual([why("questions", { track: t("admin.publish.tracks.listening"), set: "A", count: 1, min: 2, max: 8 })]);
+    expect(ready.some((item) => item.slug === "phonics" && item.id === lesson.id)).toBe(true);
   });
 });
 
