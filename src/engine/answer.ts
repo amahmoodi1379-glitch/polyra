@@ -341,8 +341,8 @@ export const pairKey = (a: number, b: number) => (a < b ? [a, b] : [b, a]);
  */
 export function applyConfusion(
   pairs: readonly ConfusionE[],
-  word: WordC,
-  other: WordC | undefined,
+  word: Pick<WordC, "id" | "lemma">,
+  other: Pick<WordC, "id" | "lemma"> | undefined,
   ctx: AnswerCtx,
   knownAtStart: (a: number, b: number) => boolean,
 ): ConfusionOutcome {

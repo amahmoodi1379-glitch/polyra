@@ -133,6 +133,11 @@ export const SHAPE = {
   warmups: 3,
   /** A conjugation table has six persons (§6.6). */
   persons: 6,
+  /** A pack of new material: up to three words, or up to three conjugation cards (§10.2). */
+  packWords: 3,
+  packConj: 3,
+  /** Pack choice: progress bar plus 0.1 for every pack the skill already got this session (§10.2). */
+  packWeight: 0.1,
   /** Reshuffles before an arrangement that still reads in order is given up. */
   shuffleTries: 10,
 } as const;
