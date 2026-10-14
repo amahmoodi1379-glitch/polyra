@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
+import { genderClass } from "@/components/learn/gender";
 import { Icon } from "@/components/learn/icons";
 import { Mixed } from "@/components/learn/mixed";
 import { squish } from "@/components/learn/motion";
@@ -8,7 +9,7 @@ import { sfx } from "@/components/learn/sfx";
 import { Sheet } from "@/components/learn/sheet";
 import { say, usePlaying } from "@/components/learn/speak";
 import { useToast } from "@/components/learn/toast";
-import type { Gender, Speak } from "@/engine/content";
+import type { Speak } from "@/engine/content";
 import type { SentenceView, WordView } from "@/engine/ex";
 import type { LessonView, TableView, WordCard } from "@/engine/session";
 import { t } from "@/i18n";
@@ -19,8 +20,7 @@ import { cn } from "@/lib/utils";
  * «این دو را قاطی می‌کنی». The same word card opens from «کلمه‌های من» (PRD §3.10).
  */
 
-export const genderClass = (gender: Gender | null) =>
-  gender === "m" || gender === "der" ? "g-m" : gender === "f" || gender === "die" ? "g-f" : gender === "das" ? "g-n" : gender === "mf" ? "g-x" : undefined;
+export { genderClass };
 
 /** The word as written, with its article in the colour of its gender (DESIGN.md, «Gender»). */
 export function WordText({ word }: { word: WordView }) {
@@ -35,7 +35,13 @@ export function WordText({ word }: { word: WordView }) {
 export function Headword({ word, animate }: { word: WordView; animate?: boolean }) {
   const letters = [...word.lemma];
   return (
-    <p className="headword lat" lang={word.speak.lang} dir="ltr" aria-label={word.display} style={{ "--len": Math.max(4, letters.length + (word.article ? 2 : 0)) } as CSSProperties}>
+    <p
+      className="headword lat"
+      lang={word.speak.lang}
+      dir="ltr"
+      aria-label={word.display}
+      style={{ "--len": Math.max(4, letters.length + (word.article ? 2 : 0)) } as CSSProperties}
+    >
       {word.article ? <span className={cn("art", genderClass(word.gender))}>{word.article}</span> : null}
       {letters.map((char, index) => (
         <span key={index} aria-hidden="true" style={animate ? { animationDelay: `${0.06 + index * 0.05}s` } : undefined}>
@@ -326,11 +332,13 @@ export function LessonFace({ id, lesson }: { id: string; lesson: LessonView }) {
 export function TableFace({ id, table, muted }: { id: string; table: TableView; muted: boolean }) {
   return (
     <div className="lesson">
-      <div className="verb-head">
-        <span className="lat" dir="ltr">
+      <div className="verb-head" dir="ltr">
+        <span className="lat" lang={table.speak?.lang}>
           {table.verb}
         </span>
-        <span className="tense">{table.tense}</span>
+        <span className="tense" lang={table.speak?.lang}>
+          {table.tense}
+        </span>
       </div>
       <ConjTable table={table} />
       {table.speak ? (

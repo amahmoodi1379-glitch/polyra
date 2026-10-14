@@ -2,7 +2,7 @@ import { applyConfusion, applyRound, applySingle, newItemState, strongestPartner
 import type { Ex, RawAnswer } from "../ex";
 import { grade, type GradeOutcome, type Graded } from "../grade";
 import type { NotebookOp } from "../notebook";
-import { flag, num } from "../settings";
+import { flag, num, type Settings } from "../settings";
 import { parseItemKey, type ConfusionE, type ItemStateE } from "../state";
 import type { Lang } from "../text";
 import { advance, type Advanced } from "./advance";
@@ -67,6 +67,18 @@ const RATING = { again: 1, hard: 2, good: 3, easy: 4 } as const;
  * device, PRD §10.12).
  */
 export const shownEx = (plan: SessionPlan, card: Card, alt?: boolean): Ex | null => ((alt ?? plan.noAudio) && card.alt ? card.alt : (card.ex ?? null));
+
+/**
+ * Whether the browser shows a card's version without sound (PRD §10.12): sound is off for the whole
+ * session or since «الان نمی‌توانم گوش بدهم», the device has no voice for the sound, or the sound was
+ * not ready `audio.wait_sec` after the card appeared (T63). A card without such a version keeps its
+ * play button, so the session never waits on a file.
+ */
+export function wantsAlt(plan: SessionPlan, card: Card, why: { muted: boolean; noVoice: boolean; waitedSec: number | null }, settings: Settings): boolean {
+  if (!card.alt || !card.ex?.audio) return false;
+  if (plan.noAudio || why.muted || why.noVoice) return true;
+  return why.waitedSec !== null && why.waitedSec >= num(settings, "audio.wait_sec");
+}
 
 export function playCard(plan: SessionPlan, cardId: string, answer: RawAnswer, timing: { latencyMs: number; elapsedSec: number; alt?: boolean }, env: PlayEnv): PlayResult {
   const card = plan.queue[0];
@@ -139,7 +151,9 @@ export function playCard(plan: SessionPlan, cardId: string, answer: RawAnswer, t
       }
     }
     // The last question of a scored round carries the round's rating and step change (PRD §9.10, «مرور نمره‌دار»).
-    const scored = round?.scored ? { stepBefore: round.stepBefore, stepAfter: round.stepAfter, rating: round.rating ? RATING[round.rating] : null, firstTyping: round.firstTyping } : {};
+    const scored = round?.scored
+      ? { stepBefore: round.stepBefore, stepAfter: round.stepAfter, rating: round.rating ? RATING[round.rating] : null, firstTyping: round.firstTyping }
+      : {};
     const log: PlayLog = { ...base, kind: "review", result: graded.result, reason: graded.reason, raw: graded.raw, stepBefore: plan.states[key]?.step ?? 1, ...scored };
     return { done: true, card, ex, graded, log, single: null, round, state: null, roundState, notebook, pair: null, advanced };
   }

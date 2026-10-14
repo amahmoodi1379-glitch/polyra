@@ -60,7 +60,8 @@ export function Feedback({
   }, []);
 
   const answer = verdict.result === "correct" ? null : rightAnswer(ex);
-  const item = card.item.startsWith("t:") ? null : parseItemKey(card.item);
+  // The exercise names its word or unit, also when the card serves a grammar sentence from the notebook.
+  const item = ex.item.startsWith("t:") ? null : parseItemKey(ex.item);
   const word = item?.type === "word" ? plan.words[item.id] : undefined;
   const lesson = item?.type === "grammar_unit" ? plan.lessons[item.id] : undefined;
   const missed = verdict.result === "wrong" || verdict.result === "idk";
@@ -116,13 +117,7 @@ export function Feedback({
           </p>
         ) : null}
         {sentence?.translation && verdict.result !== "correct" ? <p className="fb-tr">{sentence.translation}</p> : null}
-        <button
-          ref={next}
-          type="button"
-          className="primary jelly-press"
-          onPointerDown={(event) => squish(event.currentTarget)}
-          onClick={onContinue}
-        >
+        <button ref={next} type="button" className="primary jelly-press" onPointerDown={(event) => squish(event.currentTarget)} onClick={onContinue}>
           {t("learn.session.continue")}
         </button>
       </div>

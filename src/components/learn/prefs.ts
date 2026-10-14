@@ -56,4 +56,3 @@ const subscribe = (listener: () => void) => {
 export function usePrefs(): Prefs {
   return useSyncExternalStore(subscribe, prefs.get, () => defaults);
 }
-

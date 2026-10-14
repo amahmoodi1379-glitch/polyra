@@ -4,4 +4,4 @@ export { buildSession, isDue, spreadBacklog, type BuildEffects, type BuildOption
 export { colloquialFor, conjCandidates, introducedCardWords, nextNewWords, nextUnit } from "./newmaterial";
 export { interleave, orderEntries } from "./order";
 export { makeEnv, wordCard, lessonView, tableView } from "./views";
-export { playCard, shownEx, type PlayEnv, type PlayLog, type PlayResult } from "./play";
+export { playCard, shownEx, wantsAlt, type PlayEnv, type PlayLog, type PlayResult } from "./play";

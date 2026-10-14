@@ -1,8 +1,9 @@
 import { expect, test } from "@playwright/test";
 
-test("home page is Persian, right-to-left and shows the wordmark", async ({ page }) => {
+test("the app is Persian and right-to-left, and a visitor signs in first", async ({ page }) => {
   await page.goto("/");
+  await expect(page).toHaveURL(/\/login\?next=%2F$/);
   await expect(page.locator("html")).toHaveAttribute("dir", "rtl");
   await expect(page.locator("html")).toHaveAttribute("lang", "fa");
-  await expect(page.getByText("polyra", { exact: true })).toBeVisible();
+  await expect(page.getByLabel("شماره موبایل")).toBeVisible();
 });

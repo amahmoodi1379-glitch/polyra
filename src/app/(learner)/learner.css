@@ -1102,8 +1102,8 @@
     font-variation-settings: "SOFT" 100, "WONK" 1, "opsz" 96;
   }
   & .verb-head .tense {
-    font-size: 13px;
-    font-weight: 700;
+    font: italic 500 15px/1.3 var(--font-lat);
+    font-variation-settings: "SOFT" 100;
     color: var(--ink-3);
     padding: 3px 10px;
     border-radius: 10px;
@@ -2047,6 +2047,9 @@
   & .search input:focus {
     box-shadow: inset 0 0 0 2px var(--brand-soft);
   }
+  & .search input::-webkit-search-cancel-button {
+    appearance: none;
+  }
   & .search .i {
     position: absolute;
     inset-inline-start: 14px;
@@ -2055,6 +2058,8 @@
     color: var(--ink-3);
   }
   & .entries {
+    margin: 0;
+    list-style: none;
     display: flex;
     flex-direction: column;
     border-radius: 22px;
@@ -2073,8 +2078,17 @@
     text-align: start;
     width: 100%;
   }
-  & .entry + .entry {
+  & :is(.entry + .entry, .entries > li + li) {
     border-top: 1px solid var(--line);
+  }
+  & .entry .kind {
+    flex-shrink: 0;
+    padding: 3px 10px;
+    border-radius: 10px;
+    background: var(--tint);
+    color: var(--brand-text);
+    font-size: 12px;
+    font-weight: 700;
   }
   & .entry .lat {
     font: 500 21px/1.25 var(--font-lat);
@@ -2506,6 +2520,15 @@
   & .toast.show {
     transform: translate(-50%, 0);
     opacity: 1;
+  }
+  /* In a session the answers sit low, so the message drops over the bar instead. */
+  &:has(.sbar) .toast {
+    bottom: auto;
+    top: calc(env(safe-area-inset-top, 0px) + 6px);
+    transform: translate(-50%, -16px);
+  }
+  &:has(.sbar) .toast.show {
+    transform: translate(-50%, 0);
   }
 
   & .vh {

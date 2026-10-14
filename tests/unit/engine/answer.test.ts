@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { applyConfusion, applyRound, applySingle, newItemState, type AnswerCtx, type AnswerKind, type RoundAnswer } from "@/engine/answer";
-import { isNewCard, rateCard } from "@/engine/fsrs";
+import { emptyCard, isNewCard, rateCard, retrievability } from "@/engine/fsrs";
 import type { Graded } from "@/engine/grade";
 import { applyNotebook } from "@/engine/notebook";
 import { updatePace } from "@/engine/pace";
@@ -283,5 +283,16 @@ describe("pace (PRD §9.10)", () => {
 
   it("T84: first typings are left out before counting (24 of 30 is 80%: not slow)", () => {
     expect(updatePace("normal", reviews(24, 30), defaults).mode).toBe("normal");
+  });
+});
+
+describe("a phone clock behind the server (PRD §15.4)", () => {
+  it("rating a card before its last review counts as rating it at that moment, not an error", () => {
+    const reviewed = new Date("2026-03-21T08:00:00Z");
+    const card = rateCard(rateCard(emptyCard(reviewed), "good", reviewed, defaults), "good", reviewed, defaults);
+    const behind = new Date("2026-03-19T08:00:00Z");
+    expect(() => rateCard(card, "good", behind, defaults)).not.toThrow();
+    expect(rateCard(card, "good", behind, defaults)).toEqual(rateCard(card, "good", reviewed, defaults));
+    expect(retrievability(card, behind, defaults)).toBe(retrievability(card, reviewed, defaults));
   });
 });

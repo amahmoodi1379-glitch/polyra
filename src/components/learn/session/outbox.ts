@@ -133,13 +133,25 @@ export function send(item: AnswerRequest) {
 
 export const waiting = (sessionId?: string) => load().filter((item) => !sessionId || item.sessionId === sessionId).length;
 
-/** Sends anything left from an earlier visit, and again whenever the connection comes back. */
+/**
+ * Sends anything left from an earlier visit, and again whenever the connection comes back. The bar
+ * also follows the browser's own word on the connection, so it shows before the next answer fails.
+ */
 export function OutboxSync() {
   useEffect(() => {
-    const online = () => void flush();
+    const online = () => {
+      setOffline(false);
+      void flush();
+    };
+    const lost = () => setOffline(true);
     window.addEventListener("online", online);
+    window.addEventListener("offline", lost);
+    if (!navigator.onLine) setOffline(true);
     if (waiting() > 0) void flush();
-    return () => window.removeEventListener("online", online);
+    return () => {
+      window.removeEventListener("online", online);
+      window.removeEventListener("offline", lost);
+    };
   }, []);
   return null;
 }

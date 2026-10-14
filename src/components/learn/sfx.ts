@@ -8,12 +8,31 @@ import { prefs } from "./prefs";
  * Daniel Belyi) inside the approved prototype `design/prototypes/polyra-jelly.html`. Both follow the settings.
  */
 
-type Tone = { kind: "tone"; waveform: OscillatorType; frequency: number; glideTo?: number; glideTime?: number; detune?: number; offset?: number; attack: number; decay: number; peak: number };
+type Tone = {
+  kind: "tone";
+  waveform: OscillatorType;
+  frequency: number;
+  glideTo?: number;
+  glideTime?: number;
+  detune?: number;
+  offset?: number;
+  attack: number;
+  decay: number;
+  peak: number;
+};
 type Noise = { kind: "noise"; filterType: BiquadFilterType; filterFrequency: number; filterQ?: number; offset?: number; attack: number; decay: number; peak: number };
 type Shimmer = { delay: number; feedback: number; wet: number; lowpass: number };
 type Recipe = { masterGain: number; layers: (Tone | Noise)[]; shimmer?: Shimmer };
 
-const sine = (frequency: number, attack: number, decay: number, peak: number, extra: Partial<Tone> = {}): Tone => ({ kind: "tone", waveform: "sine", frequency, attack, decay, peak, ...extra });
+const sine = (frequency: number, attack: number, decay: number, peak: number, extra: Partial<Tone> = {}): Tone => ({
+  kind: "tone",
+  waveform: "sine",
+  frequency,
+  attack,
+  decay,
+  peak,
+  ...extra,
+});
 const noise = (filterType: BiquadFilterType, filterFrequency: number, filterQ: number, attack: number, decay: number, peak: number, offset?: number): Noise => ({
   kind: "noise",
   filterType,
@@ -142,7 +161,10 @@ function hiss(ctx: AudioContext, into: AudioNode, layer: Noise, at: number) {
   filter.type = layer.filterType;
   filter.frequency.value = layer.filterFrequency;
   if (layer.filterQ !== undefined) filter.Q.value = layer.filterQ;
-  source.connect(filter).connect(envelope(ctx, layer, at)).connect(into);
+  source
+    .connect(filter)
+    .connect(envelope(ctx, layer, at))
+    .connect(into);
   source.start(at);
   source.stop(at + length);
 }
@@ -195,7 +217,11 @@ export function sfx(name: SoundName, volume = 0.55) {
   const recipe: Recipe = recipes[name];
   try {
     if (ctx.state === "running") render(ctx, recipe, volume);
-    else void ctx.resume().then(() => ctx.state === "running" && render(ctx, recipe, volume), () => {});
+    else
+      void ctx.resume().then(
+        () => ctx.state === "running" && render(ctx, recipe, volume),
+        () => {},
+      );
   } catch {
     // Sound is a nicety; never let it break a tap.
   }

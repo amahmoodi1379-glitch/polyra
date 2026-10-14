@@ -49,7 +49,7 @@ Local setup: PostgreSQL running, `cp .env.example .env`, `npm install` (also gen
 | `npm run dev` | App on http://localhost:3000 (learner app at `/`, panel at `/admin`) |
 | `npm run lint` / `npm run typecheck` | ESLint (includes the engine-isolation rule) / route types + `tsc` |
 | `npm test` | Vitest unit and integration tests (`tests/unit`, `tests/integration`) |
-| `npm run test:e2e` | Playwright on phone and desktop sizes; needs `npm run build` first. Starts its own server on the test database (`E2E_DATABASE_URL`, else `TEST_DATABASE_URL`), wiped and seeded each run. Set `PW_CHROMIUM_PATH` to use a preinstalled Chromium |
+| `npm run test:e2e` | Playwright on phone and desktop sizes; needs `npm run build` first. Starts its own server on the test database (`E2E_DATABASE_URL`, else `TEST_DATABASE_URL`), wiped and seeded each run, and a second server for `learner.spec.ts` on `<that database>_learner` with the French demo. Set `PW_CHROMIUM_PATH` to use a preinstalled Chromium |
 | `npm run db:migrate` | New versioned migration from `prisma/schema.prisma` (development only) |
 | `npm run db:deploy` | Apply migrations on a server |
 | `npm run seed` | Languages, engine and general settings, one admin and one tester (`SEED_ADMIN_PHONE`, `SEED_TESTER_PHONE`) |
@@ -92,7 +92,15 @@ Local setup: PostgreSQL running, `cp .env.example .env`, `npm install` (also gen
   the browser and the server run the same functions. `src/server/learn`: `content.ts` (what a learner or tester may
   see, cached 30s), `learner.ts` (the snapshot the engine needs), `session.ts` (start, resume, close, preview),
   `answer.ts` (one answer: checked, graded again, written), `finish.ts` (end screen), `home.ts`, `enroll.ts`. Routes:
-  `src/app/api/learn/*`. Demo content: `fixtures/demo-fr` (data and `build.ts`), loaded by `src/server/content/demo.ts`.
+  `src/app/api/learn/*` (`tap` queues a touched word, PRD §5.9, via `tap.ts`). `lists.ts` feeds the reading pages.
+  Demo content: `fixtures/demo-fr` (data and `build.ts`), loaded by `src/server/content/demo.ts`.
+- Learner app (`src/app/(learner)`, styles in `learner.css` under `.lx`): `/start` and `/start/[lang]` (onboarding),
+  `/learn/[lang]` (home: `home.tsx` with the WebGL jelly `src/components/learn/jelly.tsx`, skill tiles and sheets),
+  `/learn/[lang]/session` (`src/components/learn/session/player.tsx`: the browser runs `playCard`, answers go through
+  `outbox.ts`, a localStorage queue that survives a lost connection; `exercise.tsx` draws every answer kind,
+  `cards.tsx` the word card, lesson and tables, `feedback.tsx`, `end.tsx`, `keyboard.tsx` the in-app keyboard),
+  and the reading pages `notebook`, `words`, `words/[id]`, `lessons`, `lessons/[id]`. Sounds, haptics and motion:
+  `src/components/learn/{sfx,motion,speak}.ts`; Latin words inside Persian text: `mixed.tsx`.
 - `src/i18n/fa.json`: every Persian interface string; `t("key", vars)` from `@/i18n`.
 - `src/components/ui`: shadcn/ui sources, converted to logical (start/end) classes for RTL.
 - Next.js 16 differs from older versions; read `node_modules/next/dist/docs/` before using an API (see `AGENTS.md`).

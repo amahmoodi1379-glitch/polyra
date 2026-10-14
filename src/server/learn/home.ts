@@ -46,12 +46,7 @@ export type HomeData = {
 };
 
 /** The quiet button at the top (PRD §3.8). Payment comes in a later phase, so it only reports. */
-export type PlanLine =
-  | { kind: "tester" }
-  | { kind: "trialNotStarted" }
-  | { kind: "trial"; hours: number }
-  | { kind: "subscription"; days: number }
-  | { kind: "none" };
+export type PlanLine = { kind: "tester" } | { kind: "trialNotStarted" } | { kind: "trial"; hours: number } | { kind: "subscription"; days: number } | { kind: "none" };
 
 async function planLine(user: Learner, enrollment: { language: string; trial_started_at: Date | null; trial_ends_at: Date | null }, now: Date): Promise<PlanLine> {
   if (user.is_admin || user.is_tester) return { kind: "tester" };

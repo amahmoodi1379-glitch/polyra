@@ -10,7 +10,7 @@ import { emptyCard, rateCard, retrievability, withDue } from "@/engine/fsrs";
 import { seeded } from "@/engine/random";
 import { backlogThreshold, buildSession, nextSkill, sessionCaps, type BuildOptions, type BuildResult } from "@/engine/session/build";
 import { nextNewWords } from "@/engine/session/newmaterial";
-import { playCard, shownEx, type PlayEnv } from "@/engine/session/play";
+import { playCard, shownEx, wantsAlt, type PlayEnv } from "@/engine/session/play";
 import type { Card, SessionPlan } from "@/engine/session/types";
 import type { Settings } from "@/engine/settings";
 import { itemKey, type ItemStateE, type ItemType, type LearnerSnapshot, type NotebookE, type QueueE, type SkillName } from "@/engine/state";
@@ -445,6 +445,55 @@ describe("other kinds of session (PRD §10.4, §10.8, §10.12)", () => {
     expect(exercises(plan).filter((ex) => ex.audio)).toEqual([]);
     const withSound = planOf(buildSession(content, learner(15, { items, notebook }), s, NOW, TODAY, opts({ lengthMin: 15 })));
     for (const card of withSound.queue) if (card.ex?.audio && card.t === "ex") expect(card.alt?.audio ?? false).toBe(false);
+  });
+
+  it("sound turned off in the middle: every card with sound has a version without, rounds too, and the version shown is graded", () => {
+    const withUnit = [...items, learned("grammar_unit", 1, s, { step: 2, introDaysAgo: 4 })];
+    const plan = planOf(buildSession(content, learner(15, { items: withUnit, notebook }), s, NOW, TODAY, opts({ lengthMin: 15 })));
+    const sound = plan.queue.filter((card) => card.ex?.audio);
+    expect(sound.length).toBeGreaterThan(0);
+    for (const card of sound) {
+      expect(card.alt, `${card.id} ${card.ex?.code}`).toBeTruthy();
+      expect(card.alt!.audio).toBe(false);
+      expect(card.alt!.item).toBe(card.ex!.item);
+    }
+    const rounds = plan.queue.filter((card) => card.t === "round");
+    expect(rounds.length).toBeGreaterThan(0);
+    for (const card of rounds) if (card.ex?.audio) expect(card.alt?.audio).toBe(false);
+
+    // The browser says it showed the version without sound; the server grades that one.
+    const at = plan.queue.findIndex((card) => card.ex?.audio && card.alt);
+    let current = plan;
+    for (let i = 0; i < at; i++) {
+      const card = current.queue[0];
+      const shown = shownEx(current, card);
+      const result = playCard(current, card.id, shown ? rightAnswer(shown) : { seen: true }, { latencyMs: 3000, elapsedSec: 3 * (i + 1) }, playEnv(content, s));
+      if (!result.done) throw new Error("not done");
+      current = result.advanced.plan;
+    }
+    const card = current.queue[0];
+    expect(card.ex?.audio).toBe(true);
+    expect(shownEx(current, card, true)).toBe(card.alt);
+    expect(shownEx(current, card)).toBe(card.ex);
+    const silent = playCard(current, card.id, rightAnswer(card.alt!), { latencyMs: 3000, elapsedSec: 100, alt: true }, playEnv(content, s));
+    expect(silent).toMatchObject({ done: true, graded: { result: "correct" }, log: { code: card.alt!.code } });
+    expect(silent.done && silent.ex).toBe(card.alt);
+  });
+
+  it("T63: a sound not ready after `audio.wait_sec` brings the version without sound; the session goes on", () => {
+    const plan = planOf(buildSession(content, learner(15, { items, notebook }), s, NOW, TODAY, opts({ lengthMin: 15 })));
+    const card = plan.queue.find((item) => item.ex?.audio && item.alt)!;
+    const ready = { muted: false, noVoice: false, waitedSec: null };
+    expect(wantsAlt(plan, card, ready, s)).toBe(false);
+    expect(wantsAlt(plan, card, { ...ready, waitedSec: 4.9 }, s)).toBe(false);
+    expect(wantsAlt(plan, card, { ...ready, waitedSec: 5 }, s)).toBe(true);
+    expect(wantsAlt(plan, card, { ...ready, waitedSec: 2 }, settings({ "audio.wait_sec": 2 }))).toBe(true);
+    expect(wantsAlt(plan, card, { ...ready, muted: true }, s)).toBe(true);
+    expect(wantsAlt(plan, card, { ...ready, noVoice: true }, s)).toBe(true);
+    // A card without sound, or without a version without it, is shown as it is.
+    const silent = plan.queue.find((item) => item.ex && !item.ex.audio)!;
+    expect(wantsAlt(plan, silent, { ...ready, waitedSec: 30 }, s)).toBe(false);
+    expect(wantsAlt(plan, { ...card, alt: null }, { ...ready, waitedSec: 30 }, s)).toBe(false);
   });
 
   it("the same seed builds the same session, and playing a card twice gives the same result", () => {

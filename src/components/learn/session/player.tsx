@@ -9,10 +9,12 @@ import { buzz, sfx } from "@/components/learn/sfx";
 import { hush, needsVoice, useDeviceVoice } from "@/components/learn/speak";
 import { useToast } from "@/components/learn/toast";
 import type { Gloss, RawAnswer } from "@/engine/ex";
-import { playCard, shownEx, type Card, type PlayResult, type Scope, type SessionPlan } from "@/engine/session";
+import { playCard, shownEx, wantsAlt, type Card, type PlayResult, type Scope, type SessionPlan } from "@/engine/session";
+import { num } from "@/engine/settings";
 import type { Lang } from "@/engine/text";
 import { tehranDate } from "@/engine/time";
 import { t } from "@/i18n";
+import { reportError } from "@/lib/report-error";
 import { cn } from "@/lib/utils";
 import type { Bundle, EndSummary } from "@/server/learn/session";
 import { ConfusionFace, LessonFace, TableFace, WordFace } from "./cards";
@@ -82,6 +84,8 @@ export function Player({ language, languageName, scope: firstScope }: { language
   const [summary, setSummary] = useState<EndSummary | null>(null);
   const [muted, setMuted] = useState(false);
   const [tipIds, setTipIds] = useState<string[]>([]);
+  // Cards whose sound file did not arrive in time, with the seconds waited (PRD §10.12).
+  const [waited, setWaited] = useState<Record<string, number>>({});
   const seq = useRef(0);
   const elapsed = useRef(0);
   const shownAt = useRef(0);
@@ -178,7 +182,8 @@ export function Player({ language, languageName, scope: firstScope }: { language
 
   const card = phase.k === "play" && plan ? (plan.queue[0] ?? null) : null;
   // The version without sound: the learner cannot listen now, or this phone has no voice for the language (PRD §10.12).
-  const altFor = (target: Card) => !!target.alt && !!plan && (plan.noAudio || muted || (voice === false && needsVoice(target.ex?.listen)));
+  const altFor = (target: Card) =>
+    !!plan && !!bundle && wantsAlt(plan, target, { muted, noVoice: voice === false && needsVoice(target.ex?.listen), waitedSec: waited[target.id] ?? null }, bundle.settings);
   const alt = card ? altFor(card) : false;
   const ex = card && plan && card.t !== "intro" && card.t !== "lesson" && card.t !== "table" && card.t !== "confusion" ? shownEx(plan, card, alt) : null;
 
@@ -192,6 +197,34 @@ export function Player({ language, languageName, scope: firstScope }: { language
     enter(screen.current);
     window.scrollTo({ top: 0 });
   }, [card?.id]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // A sound file not ready `audio.wait_sec` after its card appeared: the version without sound comes instead (T63).
+  const soundUrl = card?.alt && plan && !plan.noAudio && !muted ? (card.ex?.listen?.url ?? null) : null;
+  useEffect(() => {
+    if (!card || !soundUrl || !bundle) return;
+    const id = card.id;
+    const wait = num(bundle.settings, "audio.wait_sec");
+    let settled = false;
+    const audio = new Audio();
+    const late = () => {
+      if (settled) return;
+      settled = true;
+      setWaited((all) => ({ ...all, [id]: wait }));
+    };
+    const timer = window.setTimeout(late, wait * 1000);
+    audio.preload = "auto";
+    audio.addEventListener("canplaythrough", () => {
+      settled = true;
+      window.clearTimeout(timer);
+    });
+    audio.addEventListener("error", late);
+    audio.src = soundUrl;
+    return () => {
+      settled = true;
+      window.clearTimeout(timer);
+      audio.removeAttribute("src");
+    };
+  }, [card?.id, soundUrl]); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     if (voice !== false || voiceWarned.current || !plan || plan.noAudio) return;
@@ -234,13 +267,21 @@ export function Player({ language, languageName, scope: firstScope }: { language
     const latencyMs = Math.max(0, Math.round(performance.now() - shownAt.current));
     const elapsedSec = elapsed.current + latencyMs / 1000;
     const at = new Date();
-    const result = playCard(
-      plan,
-      card.id,
-      raw,
-      { latencyMs, elapsedSec, alt },
-      { ctx: { settings: bundle.settings, now: at, today: tehranDate(at), latency: plan.latency }, language, wordsWithLemma: (lemma) => lexicon.get(lemma) ?? [] },
-    );
+    let result: PlayResult;
+    try {
+      result = playCard(
+        plan,
+        card.id,
+        raw,
+        { latencyMs, elapsedSec, alt },
+        { ctx: { settings: bundle.settings, now: at, today: tehranDate(at), latency: plan.latency }, language, wordsWithLemma: (lemma) => lexicon.get(lemma) ?? [] },
+      );
+    } catch (error) {
+      // The session on the server is untouched: «دوباره امتحان کن» picks it up from the last saved answer.
+      void reportError(error);
+      setPhase({ k: "state", which: "failed" });
+      return null;
+    }
     if (!result.done) return result.outcome;
     elapsed.current = elapsedSec;
     stored.set(`polyra.elapsed.${bundle.id}`, String(elapsedSec));
@@ -308,7 +349,9 @@ export function Player({ language, languageName, scope: firstScope }: { language
         <button type="button" className="icon-btn" aria-label={t("learn.session.close")} onClick={home}>
           <Icon name="l-x" />
         </button>
-        {progress === null ? <div className="track" aria-hidden="true" /> : (
+        {progress === null ? (
+          <div className="track" aria-hidden="true" />
+        ) : (
           <div className="track" role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(progress * 100)}>
             <span style={{ "--p": `${Math.round(progress * 100)}%` } as CSSProperties} />
           </div>
@@ -482,7 +525,7 @@ export function Player({ language, languageName, scope: firstScope }: { language
   return (
     <Frame>
       {bar(progress)}
-      <div className={cn("screen-body", verdict && "answered")} ref={screen} key={card.id}>
+      <div className={cn("screen-body", verdict && "answered")} ref={screen} key={card.id} data-card={card.id}>
         {body}
       </div>
       {cta}

@@ -56,7 +56,10 @@ export function EndScreen({
   const correct = summary?.correct ?? local.correct;
   const wrong = summary?.wrong ?? local.wrong;
   const today = summary
-    ? [summary.newWordsToday > 0 ? t("learn.end.todayWords", { n: summary.newWordsToday }) : null, summary.newUnitsToday > 0 ? t("learn.end.todayUnits", { n: summary.newUnitsToday }) : null].filter(Boolean)
+    ? [
+        summary.newWordsToday > 0 ? t("learn.end.todayWords", { n: summary.newWordsToday }) : null,
+        summary.newUnitsToday > 0 ? t("learn.end.todayUnits", { n: summary.newUnitsToday }) : null,
+      ].filter(Boolean)
     : [];
   const stationInfo = summary?.station;
 
@@ -85,7 +88,8 @@ export function EndScreen({
                 <div className="fact">
                   <Icon name="i-vocab" />
                   <p className="num">
-                    {today.length > 0 ? t("learn.end.today", { parts: today.join(t("learn.home.and")) }) : null} {summary.knownWords > 0 ? t("learn.end.known", { n: summary.knownWords }) : null}
+                    {today.length > 0 ? t("learn.end.today", { parts: today.join(t("learn.home.and")) }) : null}{" "}
+                    {summary.knownWords > 0 ? t("learn.end.known", { n: summary.knownWords }) : null}
                   </p>
                 </div>
               ) : null}

@@ -77,7 +77,11 @@ export const isNewCard = (card: FsrsCard): boolean => card.state === State.New;
  * Rates a card. After the first rating of a new item the next review is pulled in to
  * `new.first_interval_days` (PRD §9.1), unless the caller says not to (probation cards, §9.7).
  */
-export function rateCard(card: FsrsCard, rating: FsrsRating, now: Date, settings: Settings, firstCap = true): FsrsCard {
+/** A phone whose clock is behind the last review must not break the card: for the card, time does not run backwards. */
+const notBefore = (card: FsrsCard, now: Date) => (card.last_review && Date.parse(card.last_review) > now.getTime() ? new Date(card.last_review) : now);
+
+export function rateCard(card: FsrsCard, rating: FsrsRating, at: Date, settings: Settings, firstCap = true): FsrsCard {
+  const now = notBefore(card, at);
   const wasNew = isNewCard(card);
   const next = scheduler(settings).next(fromStored(card), now, ratingNumber[rating]).card;
   const firstDays = optionalNum(settings, "new.first_interval_days");
@@ -91,7 +95,7 @@ export function rateCard(card: FsrsCard, rating: FsrsRating, now: Date, settings
 /** Probability of recall right now; 0 for a card that was never rated (PRD §9.1). */
 export function retrievability(card: FsrsCard, now: Date, settings: Settings): number {
   if (isNewCard(card)) return 0;
-  return scheduler(settings).get_retrievability(fromStored(card), now, false);
+  return scheduler(settings).get_retrievability(fromStored(card), notBefore(card, now), false);
 }
 
 /** The same card with a new due date, every other value untouched. */

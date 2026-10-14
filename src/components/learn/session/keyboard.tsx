@@ -28,7 +28,11 @@ const subscribe = (listener: () => void) => {
 
 /** Whether this device types with a finger: the app's keyboard is shown instead of the phone's. */
 export function useTouchKeyboard() {
-  return useSyncExternalStore(subscribe, () => window.matchMedia(coarse).matches, () => false);
+  return useSyncExternalStore(
+    subscribe,
+    () => window.matchMedia(coarse).matches,
+    () => false,
+  );
 }
 
 type Props = { language: string; onKey: (text: string) => void; onErase: () => void; disabled?: boolean };

@@ -27,7 +27,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     // The theme script may set data-theme before React hydrates.
     <html lang={locale.lang} dir={locale.dir} suppressHydrationWarning>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        {/* Runs once while the page is parsed; the client keeps it inert so React does not warn (Next.js «Preventing Flash»). */}
+        <script type={typeof window === "undefined" ? "text/javascript" : "text/plain"} suppressHydrationWarning dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body className="min-h-dvh">
         <DirectionProvider dir={locale.dir}>{children}</DirectionProvider>

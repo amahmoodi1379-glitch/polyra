@@ -56,7 +56,14 @@ export const springIn = (el: Element | null | undefined) =>
 
 /** Content of a new card settling in. */
 export const enter = (el: Element | null | undefined, delay = 0) =>
-  run(el, [{ opacity: 0, transform: "translateY(8px)" }, { opacity: 1, transform: "none" }], { duration: 420, delay, easing: "cubic-bezier(.16,1,.3,1)", fill: "backwards" });
+  run(
+    el,
+    [
+      { opacity: 0, transform: "translateY(8px)" },
+      { opacity: 1, transform: "none" },
+    ],
+    { duration: 420, delay, easing: "cubic-bezier(.16,1,.3,1)", fill: "backwards" },
+  );
 
 /** The station drop at session end: falls in, squashes and settles (900ms). */
 export const dropIn = (el: Element | null | undefined) =>

@@ -1,4 +1,4 @@
-import { hasCard, type Content } from "@/engine/content";
+import { hasCard, type Content, type Gender } from "@/engine/content";
 import { wordView, type BuildEnv } from "@/engine/build";
 import type { WordView } from "@/engine/ex";
 import { openEntries } from "@/engine/notebook";
@@ -71,7 +71,7 @@ export async function myLesson(user: Learner, language: LanguageCode, unitId: nu
   return lessonView(viewEnv(content, new Set()), unit);
 }
 
-export type NotebookLine = { key: string; kind: NotebookRef; target: string; article: string | null; gender: string | null; fa: string; addedAt: string; correct: number };
+export type NotebookLine = { key: string; kind: NotebookRef; target: string; article: string | null; gender: Gender | null; fa: string; addedAt: string; correct: number };
 
 /** Open notebook entries, newest mistake first, each as the learner would recognise it (PRD §9.5). */
 export async function notebookLines(user: Learner, language: LanguageCode, now = new Date()): Promise<NotebookLine[]> {

@@ -7,6 +7,19 @@ export function e2eDatabaseUrl() {
 }
 
 /**
+ * The learner tests run on their own server and database with the French demo, so the demo words never
+ * meet the content the panel tests make (`<e2e database>_learner`).
+ */
+export function learnerDatabaseUrl() {
+  const url = new URL(e2eDatabaseUrl());
+  url.pathname = `${url.pathname}_learner`;
+  return url.toString();
+}
+
+/** Tester accounts of the learner database: one per browser project. */
+export const E2E_TESTERS = { "learner-phone": "09120000031", "learner-desktop": "09120000033" } as const;
+
+/**
  * Admin accounts created by prepare-db: one per browser project, and one each for the order, publish,
  * audio, settings, errors and users tests, since a phone may ask for only 3 codes in 10 minutes (PRD §15.5).
  */

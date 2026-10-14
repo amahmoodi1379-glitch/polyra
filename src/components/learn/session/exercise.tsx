@@ -55,7 +55,16 @@ function Ask({ ex, languageName }: { ex: Ex; languageName: string }) {
 }
 
 /** What the question shows above the answers, from whatever `ex.q` carries. */
-function Prompt({ id, ex, language, muted, tip, fills, onTap, onBlank }: Pick<ExerciseProps, "id" | "ex" | "language" | "muted" | "tip" | "onTap"> & { fills?: Fill[]; onBlank?: (i: number) => void }) {
+function Prompt({
+  id,
+  ex,
+  language,
+  muted,
+  tip,
+  fills,
+  onTap,
+  onBlank,
+}: Pick<ExerciseProps, "id" | "ex" | "language" | "muted" | "tip" | "onTap"> & { fills?: Fill[]; onBlank?: (i: number) => void }) {
   const { q } = ex;
   const translation = q.sentence?.translation ?? q.translation ?? null;
   return (
@@ -83,9 +92,13 @@ function Prompt({ id, ex, language, muted, tip, fills, onTap, onBlank }: Pick<Ex
       {q.meaning ? <p className={q.lemma ? "prompt-sub" : "prompt-fa"}>{q.meaning}</p> : null}
       {q.standard ? <p className="prompt-sub">{tRich("learn.session.standard", { word: lat(q.standard, language) })}</p> : null}
       {q.verb ? (
-        <div className="verb-head">
+        <div className="verb-head" dir="ltr">
           {lat(q.verb, language)}
-          {q.tense ? <span className="tense">{q.tense}</span> : null}
+          {q.tense ? (
+            <span className="tense" lang={language}>
+              {q.tense}
+            </span>
+          ) : null}
         </div>
       ) : null}
       {q.pronoun ? (
@@ -164,15 +177,7 @@ function Options({
   return (
     <div className={cn("opts", optionsStack(options) && "stack")} role="group" aria-label={label}>
       {options.map((option) => {
-        const state = !answered
-          ? option.id === chosen
-            ? "sel"
-            : undefined
-          : option.id === correct
-            ? "is-correct"
-            : option.id === chosen
-              ? "is-wrong"
-              : "is-dim";
+        const state = !answered ? (option.id === chosen ? "sel" : undefined) : option.id === correct ? "is-correct" : option.id === chosen ? "is-wrong" : "is-dim";
         return (
           <button
             key={option.id}
@@ -859,11 +864,7 @@ function TableEx(props: ExerciseProps & { spec: Extract<AnswerSpec, { kind: "tab
         )}
         {!spec.bank && !verdict ? (
           touch ? (
-            <Keyboard
-              language={language}
-              onKey={(text) => set(active, cells[active] + text)}
-              onErase={() => set(active, [...cells[active]].slice(0, -1).join(""))}
-            />
+            <Keyboard language={language} onKey={(text) => set(active, cells[active] + text)} onErase={() => set(active, [...cells[active]].slice(0, -1).join(""))} />
           ) : (
             <SpecialRow
               language={language}

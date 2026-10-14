@@ -15,6 +15,7 @@ import { forgetContent, loadContent } from "@/server/learn/content";
 import { startFromZero } from "@/server/learn/enroll";
 import { homeData } from "@/server/learn/home";
 import { startSession, type Bundle } from "@/server/learn/session";
+import { queueTappedWord } from "@/server/learn/tap";
 import { saveItemState } from "@/server/learn/writes";
 import { engineSettings } from "@/server/settings/read";
 import { rightAnswer } from "../../fixtures/synthetic/drive";
@@ -97,7 +98,19 @@ async function learned(userId: number, type: ItemType, id: number, { step = 2, d
   await saveItemState(testDb, { userId, language: "fr" }, state);
 }
 
-const LEARNER_TABLES = ["review_log", "session", "item_state", "notebook_entry", "new_word_queue", "daily_counter", "confusion_pair", "skill_level", "enrollment", "trial_ledger", "admin_log"];
+const LEARNER_TABLES = [
+  "review_log",
+  "session",
+  "item_state",
+  "notebook_entry",
+  "new_word_queue",
+  "daily_counter",
+  "confusion_pair",
+  "skill_level",
+  "enrollment",
+  "trial_ledger",
+  "admin_log",
+];
 
 beforeAll(async () => {
   const rows = await testDb.$queryRawUnsafe<{ tablename: string }[]>("SELECT tablename FROM pg_tables WHERE schemaname = 'public' AND tablename <> '_prisma_migrations'");
@@ -257,6 +270,26 @@ describe("the teacher's unit order (PRD §6.3)", () => {
     const lesson = bundle.plan.queue.find((card) => card.t === "lesson");
     expect(lesson?.item).toBe(`u:${order[4]}`);
     expect(await testDb.itemState.count({ where: { user_id: user.id, item_type: "grammar_unit", item_id: { in: order.slice(0, 2) } } })).toBe(2);
+  });
+});
+
+describe("a touched word (PRD §5.9)", () => {
+  it("goes to the new-word queue once, only when unknown, standard and in a level the learner may see", async () => {
+    const user = await enrolled();
+    const words = await testDb.word.findMany({ where: { language: "fr", no_card: false, register: "standard" }, orderBy: { intro_order: "asc" }, select: { id: true } });
+    const [fresh, known] = [words.at(-1)!.id, words.at(-2)!.id];
+    await learned(user.id, "word", known);
+
+    expect(await queueTappedWord(user, "fr", fresh, NOW)).toBe(true);
+    expect(await queueTappedWord(user, "fr", fresh, NOW)).toBe(false);
+    expect(await queueTappedWord(user, "fr", known, NOW)).toBe(false);
+    expect(await testDb.newWordQueue.findMany({ where: { user_id: user.id }, select: { word_id: true, source: true } })).toEqual([{ word_id: fresh, source: "tap" }]);
+
+    // The demo is approved, not released: a learner who is not a tester does not see it; nor does someone who has not started French.
+    const learner = await enrolled({});
+    expect(await queueTappedWord(learner, "fr", fresh, NOW)).toBe(false);
+    const stranger = await person({ is_tester: true });
+    expect(await queueTappedWord(stranger, "fr", fresh, NOW)).toBe(false);
   });
 });
 

@@ -59,7 +59,9 @@ function startLine(data: HomeData): string {
   if (data.locked) return t("learn.home.subLocked");
   if (start.resume) return t("learn.home.subResume", { minutes: start.minutes });
   if (start.empty) return t("learn.home.subEmpty");
-  const parts = [start.reviews > 0 ? t("learn.home.subReviews", { n: start.reviews }) : null, start.newItems > 0 ? t("learn.home.subNew", { n: start.newItems }) : null].filter(Boolean);
+  const parts = [start.reviews > 0 ? t("learn.home.subReviews", { n: start.reviews }) : null, start.newItems > 0 ? t("learn.home.subNew", { n: start.newItems }) : null].filter(
+    Boolean,
+  );
   if (parts.length === 0) return t("learn.start.minutes", { n: start.minutes });
   return t("learn.home.sub", { minutes: start.minutes, parts: parts.join(t("learn.home.and")) });
 }
