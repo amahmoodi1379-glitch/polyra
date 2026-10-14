@@ -83,7 +83,7 @@ export function playSession(
     const { answer, latencyMs } = policy(card, ex, rng);
     const at = new Date(now.getTime() + elapsed * 1000);
     elapsed += latencyMs / 1000;
-    const ctx = { settings, now: at, today, latency: learner.latency };
+    const ctx = { settings, now: at, today, latency: plan.latency };
     let result = playCard(plan, card.id, answer, { latencyMs, elapsedSec: elapsed }, { ctx, language: content.language, wordsWithLemma });
     if (!result.done) result = playCard(plan, card.id, { idk: true }, { latencyMs, elapsedSec: elapsed }, { ctx, language: content.language, wordsWithLemma });
     if (!result.done) throw new Error("idk is always graded");

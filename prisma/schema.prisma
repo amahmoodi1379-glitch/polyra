@@ -1036,6 +1036,10 @@ model Enrollment {
   writing_done_week    DateTime?  @db.Date
   path_done_at         DateTime?  @db.Timestamptz(3)
 
+  // Not in §4; see DECISIONS.md.
+  /// Forgiveness days used in `streak_forgiven_week`, for `streak.forgive_per_week` above 1 (PRD §3.9).
+  streak_forgiven_count Int @default(0)
+
   user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
 
   @@unique([user_id, language])

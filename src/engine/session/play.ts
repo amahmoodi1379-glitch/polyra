@@ -134,7 +134,9 @@ export function playCard(plan: SessionPlan, cardId: string, answer: RawAnswer, t
         advanced = { ...advanced, plan: { ...advanced.plan, states: { ...advanced.plan.states, [key]: round.state } } };
       }
     }
-    const log: PlayLog = { ...base, kind: "review", result: graded.result, reason: graded.reason, raw: graded.raw, stepBefore: plan.states[key]?.step ?? 1 };
+    // The last question of a scored round carries the round's rating and step change (PRD §9.10, «مرور نمره‌دار»).
+    const scored = round?.scored ? { stepBefore: round.stepBefore, stepAfter: round.stepAfter, rating: round.rating ? RATING[round.rating] : null, firstTyping: round.firstTyping } : {};
+    const log: PlayLog = { ...base, kind: "review", result: graded.result, reason: graded.reason, raw: graded.raw, stepBefore: plan.states[key]?.step ?? 1, ...scored };
     return { done: true, card, ex, graded, log, single: null, round, state: null, roundState, notebook, pair: null, advanced };
   }
 

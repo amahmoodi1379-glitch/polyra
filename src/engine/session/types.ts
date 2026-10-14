@@ -104,6 +104,7 @@ export type Counters = {
   rescuePending: boolean;
   /** Practice cards added per item (PRD §9.2, `practice.max_per_item`). */
   practice: Record<string, number>;
+  /** Right (or nearly right) and wrong answers for the end screen; «نمی‌دانم» is neither. */
   correct: number;
   wrong: number;
 };
@@ -131,6 +132,8 @@ export type SessionPlan = {
   pairs: ConfusionE[];
   /** Pairs that existed when the session was built, as "a:b": only these can show their card (PRD §10.7). */
   pairsAtStart: string[];
+  /** The learner's answer times at the build, so both sides judge «fast» the same way (PRD §9.2). */
+  latency: Record<string, { median: number; count: number }>;
   /** Answers of each round so far, by block. */
   rounds: Record<string, { item: string; step: number; last: number; answers: RoundAnswer[] }>;
   counters: Counters;

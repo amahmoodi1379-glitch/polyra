@@ -644,6 +644,7 @@ function assemble(
     tables,
     pairs: [...pairs.values()],
     pairsAtStart: [...pairs.keys()],
+    latency: learner.latency,
     rounds,
     counters: { answered: 0, ok: 0, wrongStreak: 0, rescuePending: false, practice: {}, correct: 0, wrong: 0 },
     summary: { reviews, newItems: summary.newWords + summary.newUnits + summary.newConj, ...summary },

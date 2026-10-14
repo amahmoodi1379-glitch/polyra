@@ -80,9 +80,10 @@ export function advance(plan: SessionPlan, event: AdvanceEvent, settings: Settin
 
   const scored = event.result !== "seen" && (card.kind === "review" || card.kind === "followup");
   const failed = event.result === "wrong" || event.result === "idk";
-  if (event.result !== "seen" && card.t !== "g0") {
-    if (failed) counters.wrong++;
-    else counters.correct++;
+  // The end screen's right and wrong (PRD §3.9); «نمی‌دانم» is neither (PRD §3.5).
+  if (card.t !== "g0") {
+    if (event.result === "wrong") counters.wrong++;
+    else if (event.result === "correct" || event.result === "near") counters.correct++;
   }
   if (scored) {
     counters.answered++;

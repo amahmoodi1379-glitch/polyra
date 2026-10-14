@@ -54,6 +54,7 @@ Local setup: PostgreSQL running, `cp .env.example .env`, `npm install` (also gen
 | `npm run db:deploy` | Apply migrations on a server |
 | `npm run seed` | Languages, engine and general settings, one admin and one tester (`SEED_ADMIN_PHONE`, `SEED_TESTER_PHONE`) |
 | `npm run make-admin -- 09121234567 fr` | Make a phone an admin (first admin; later ones from the panel) |
+| `npm run demo -- load` | French demo content for the tester account (`remove` takes it and testers' progress on it out, `status`) |
 
 ## Code map
 - `prisma/schema.prisma`: PRD §4. Models are PascalCase, tables and columns keep the PRD names.
@@ -87,6 +88,11 @@ Local setup: PostgreSQL running, `cp .env.example .env`, `npm install` (also gen
   word file import (check first, then import; `csvOrder` sets the lesson order from the file).
 - «کاربران» (`src/app/admin/users`): `src/server/accounts.ts` searches by phone, lists teachers and testers, sets
   `is_admin`/`is_tester` and adds accounts; its log rows (entity `user`) show in the change log under «کاربران».
+- Learner sessions (PRD §10, §15.4): `src/engine/session` builds and plays a plan (`build.ts`, `play.ts`, `advance.ts`);
+  the browser and the server run the same functions. `src/server/learn`: `content.ts` (what a learner or tester may
+  see, cached 30s), `learner.ts` (the snapshot the engine needs), `session.ts` (start, resume, close, preview),
+  `answer.ts` (one answer: checked, graded again, written), `finish.ts` (end screen), `home.ts`, `enroll.ts`. Routes:
+  `src/app/api/learn/*`. Demo content: `fixtures/demo-fr` (data and `build.ts`), loaded by `src/server/content/demo.ts`.
 - `src/i18n/fa.json`: every Persian interface string; `t("key", vars)` from `@/i18n`.
 - `src/components/ui`: shadcn/ui sources, converted to logical (start/end) classes for RTL.
 - Next.js 16 differs from older versions; read `node_modules/next/dist/docs/` before using an API (see `AGENTS.md`).

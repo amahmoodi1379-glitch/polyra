@@ -1,3 +1,4 @@
+import type { SettingValue, Settings } from "@/engine/settings";
 import { db } from "@/server/db";
 import { appSettingDefaults } from "./app-catalog";
 import { engineCatalog } from "./engine-catalog";
@@ -16,4 +17,12 @@ export async function appSetting<T>(key: string): Promise<T> {
   const value = row?.value ?? appSettingDefaults[key];
   if (value === undefined) throw new Error(`App setting ${key} is unknown`);
   return value as T;
+}
+
+/** Every engine number at once, for the engine's pure functions (PRD §9.8). */
+export async function engineSettings(): Promise<Settings> {
+  const rows = await db.engineSetting.findMany({ select: { key: true, value: true } });
+  const out: Record<string, SettingValue> = Object.fromEntries(engineCatalog.map((def) => [def.key, def.default as SettingValue]));
+  for (const row of rows) out[row.key] = row.value as SettingValue;
+  return out;
 }
