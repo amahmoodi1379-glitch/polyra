@@ -5,6 +5,7 @@ import { movedRows } from "@/lib/arrange";
 import { isolateLatin } from "@/lib/bidi";
 import { formatMobileFa } from "@/lib/phone";
 import { wordDiff, type DiffPart } from "@/lib/text-diff";
+import { ACCOUNT_ENTITY } from "@/server/accounts";
 import { db } from "@/server/db";
 import { settingLog } from "@/server/settings/history";
 import { appSetting } from "@/server/settings/read";
@@ -23,7 +24,7 @@ import { entityOf, isLibrarySlug, librarySlugs, type LibrarySlug } from "./slugs
  */
 
 export const LOG_PAGE_SIZE = 30;
-export const logKinds = [...librarySlugs, "order", "publish", "settings"] as const;
+export const logKinds = [...librarySlugs, "order", "publish", "settings", "users"] as const;
 export type LogKind = (typeof logKinds)[number];
 export const isLogKind = (value: unknown): value is LogKind => logKinds.includes(value as LogKind);
 
@@ -50,8 +51,10 @@ const orderListOf = Object.fromEntries(Object.entries(orderEntity).map(([list, e
 /** The rows `/admin/publish` writes: one per publish run, level opened or closed, language shown or hidden. */
 const publishEntities = ["publish", "level_release", "language"];
 const isPublishRow = (row: Pick<AdminLog, "entity">) => publishEntities.includes(row.entity);
-const isOrderRow = (row: Pick<AdminLog, "entity" | "entity_id">) => !isPublishRow(row) && !isSettingRow(row) && !/^\d+$/.test(row.entity_id ?? "");
-const isItemRow = (row: Pick<AdminLog, "entity" | "entity_id">) => !isPublishRow(row) && !isSettingRow(row) && !isOrderRow(row);
+/** The rows «کاربران» writes: access turned on or off, an account added (and the first admin, from the command line). */
+const isAccountRow = (row: Pick<AdminLog, "entity">) => row.entity === ACCOUNT_ENTITY;
+const isOrderRow = (row: Pick<AdminLog, "entity" | "entity_id">) => !isPublishRow(row) && !isSettingRow(row) && !isAccountRow(row) && !/^\d+$/.test(row.entity_id ?? "");
+const isItemRow = (row: Pick<AdminLog, "entity" | "entity_id">) => !isPublishRow(row) && !isSettingRow(row) && !isAccountRow(row) && !isOrderRow(row);
 
 /** The `entity_id` values order rows can have: a language, or language and level. */
 async function orderKeys() {
@@ -67,6 +70,7 @@ async function whereOf(kind: LogKind | null): Promise<Prisma.AdminLogWhereInput>
   if (!kind) return {};
   if (kind === "publish") return { entity: { in: publishEntities } };
   if (kind === "settings") return { entity: { in: settingEntities } };
+  if (kind === "users") return { entity: ACCOUNT_ENTITY };
   const keys = await orderKeys();
   if (kind === "order") return { entity: { in: Object.values(orderEntity) }, entity_id: { in: keys } };
   return { entity: entityOf[kind], NOT: { entity_id: { in: keys } } };
@@ -330,6 +334,27 @@ function publishTitle(row: AdminLog): string {
   return count > 0 ? t("admin.log.publish.title", { count }) : t("admin.log.publish.titleChildren");
 }
 
+/** An account row: each access flag, the panel language and the phone, before and after. */
+function accountLines(row: AdminLog): ChangeLine[] {
+  const before = (row.before ?? {}) as Record<string, unknown>;
+  const after = (row.after ?? {}) as Record<string, unknown>;
+  const value = (key: string, raw: unknown): Shown => {
+    if (raw === undefined) return null;
+    if (key === "phone") return typeof raw === "string" ? shown(formatMobileFa(raw), "fa") : null;
+    if (key === "admin_language")
+      return raw === "fr" || raw === "de" ? shown(t(`common.languages.${raw}`), "fa") : raw === "all" ? shown(t("admin.users.languages.all"), "fa") : null;
+    return shown(t(raw ? "admin.log.yes" : "admin.log.no"), "fa");
+  };
+  return (["is_admin", "admin_language", "is_tester", "phone"] as const)
+    .filter((key) => key in after || key in before)
+    .map((key) => {
+      const label = t(`admin.users.fields.${key}`);
+      // A new account has no «before»: just what it was made with.
+      if (!row.before) return { key, label, note: value(key, after[key])?.text ?? t("admin.log.empty") };
+      return { key, label, before: value(key, before[key]), after: value(key, after[key]) };
+    });
+}
+
 export async function listLog(kind: LogKind | null, page: number): Promise<LogPage> {
   const where = await whereOf(kind);
   const total = await db.adminLog.count({ where });
@@ -340,7 +365,18 @@ export async function listLog(kind: LogKind | null, page: number): Promise<LogPa
     itemsOf(itemKeys(rows)),
     latestRows(rows),
     orderTitles(rows),
-    db.user.findMany({ where: { id: { in: [...new Set(rows.map((row) => row.admin_id).filter((id): id is number => id !== null))] } }, select: { id: true, phone: true } }),
+    db.user.findMany({
+      where: {
+        id: {
+          in: [
+            ...new Set(
+              [...rows.map((row) => row.admin_id), ...rows.filter(isAccountRow).map((row) => Number(row.entity_id))].filter((id): id is number => id !== null && !Number.isNaN(id)),
+            ),
+          ],
+        },
+      },
+      select: { id: true, phone: true },
+    }),
   ]);
   const phones = new Map(admins.map((admin) => [admin.id, admin.phone]));
 
@@ -363,6 +399,23 @@ export async function listLog(kind: LogKind | null, page: number): Promise<LogPa
           language,
           who: phone ? t("admin.log.by", { who: formatMobileFa(phone) }) : t("admin.log.byUnknown"),
           lines: row.entity === "publish" ? publishLines(row, items) : [],
+          revert: "no",
+        };
+      }
+      if (isAccountRow(row)) {
+        const phone = row.admin_id !== null ? phones.get(row.admin_id) : null;
+        const account = phones.get(Number(row.entity_id));
+        return {
+          id: row.id,
+          ts: row.ts.toISOString(),
+          action: row.action,
+          actionLabel: t(`admin.log.actions.${row.action}` as MessageKey),
+          kindLabel: t("admin.log.entities.user"),
+          title: shown(account ? formatMobileFa(account) : t("admin.users.deletedAccount"), "fa"),
+          href: account ? `/admin/users/${row.entity_id}` : null,
+          language: null,
+          who: phone ? t("admin.log.by", { who: formatMobileFa(phone) }) : row.admin_id === null ? t("admin.log.byCommandLine") : t("admin.log.byUnknown"),
+          lines: accountLines(row),
           revert: "no",
         };
       }

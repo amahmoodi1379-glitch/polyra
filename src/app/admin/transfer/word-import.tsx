@@ -131,7 +131,7 @@ export function WordImport({ language, languageName }: { language: string; langu
               <bdi dir="ltr" className="min-w-0 truncate">
                 {state.name}
               </bdi>
-              <span aria-hidden>·</span>
+              <span className="bg-line-2 mx-0.5 size-1 shrink-0 rounded-full" aria-hidden />
               {languageName}
             </p>
             {state.step === "done" ? (

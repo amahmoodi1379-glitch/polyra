@@ -13,6 +13,11 @@ export function formatDateTimeFa(date: Date): string {
   }).format(date);
 }
 
+/** ۲۱ مهر ۱۴۰۵ — Persian calendar, Tehran time, without the hour. */
+export function formatDateFa(date: Date): string {
+  return new Intl.DateTimeFormat("fa-IR", { timeZone: tehran, day: "numeric", month: "long", year: "numeric" }).format(date);
+}
+
 /** «همین الان», «۳ دقیقه پیش», «۲ ساعت پیش», then the date. */
 export function formatAgoFa(date: Date, now: Date): string {
   const seconds = Math.round((now.getTime() - date.getTime()) / 1000);

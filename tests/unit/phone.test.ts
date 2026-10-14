@@ -19,6 +19,6 @@ describe("mobile numbers", () => {
   });
 
   it("formats for display in Persian digits", () => {
-    expect(formatMobileFa("+989121234567")).toBe("۰۹۱۲ ۱۲۳ ۴۵۶۷");
+    expect(formatMobileFa("+989121234567")).toBe("\u2066۰۹۱۲ ۱۲۳ ۴۵۶۷\u2069");
   });
 });

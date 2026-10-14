@@ -80,6 +80,13 @@ Local setup: PostgreSQL running, `cp .env.example .env`, `npm install` (also gen
   reads `src/server/errors-list.ts`; `src/server/error-report.ts` builds the text copied for Claude Code.
 - «سلامت محتوا» (PRD §13.11): `src/server/content/health/usable.ts` is the pure usable-sentence count, `sentences.ts`
   loads it per level; its button opens P-S with `PlanOptions.wordIds`.
+- «راهنمای پنل»: `src/app/admin/guide` (texts in `admin.guide` of fa.json, written in the small markup of
+  `src/lib/guide-markup.ts`; `links.ts` maps `{{page}}` names to panel pages). Public «درباره»: `src/app/about`.
+- «خروجی و ورود فایل» (`src/app/admin/transfer`, downloads from `file/route.ts`): `src/lib/csv.ts` reads and writes
+  CSV; `src/server/content/transfer/export.ts` turns every list into CSV or JSON; `words-csv.ts` is the PRD §14.7
+  word file import (check first, then import; `csvOrder` sets the lesson order from the file).
+- «کاربران» (`src/app/admin/users`): `src/server/accounts.ts` searches by phone, lists teachers and testers, sets
+  `is_admin`/`is_tester` and adds accounts; its log rows (entity `user`) show in the change log under «کاربران».
 - `src/i18n/fa.json`: every Persian interface string; `t("key", vars)` from `@/i18n`.
 - `src/components/ui`: shadcn/ui sources, converted to logical (start/end) classes for RTL.
 - Next.js 16 differs from older versions; read `node_modules/next/dist/docs/` before using an API (see `AGENTS.md`).

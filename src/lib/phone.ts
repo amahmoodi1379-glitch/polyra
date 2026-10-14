@@ -25,9 +25,12 @@ export function normalizeMobile(input: string): string | null {
   return `+98${digits}`;
 }
 
-/** 0912 345 6789, in Persian digits, for display. */
+/**
+ * 0912 345 6789, in Persian digits, for display. The number is a left-to-right isolate: inside a
+ * Persian sentence the three groups would otherwise show in reverse order (6789 345 0912).
+ */
 export function formatMobileFa(e164: string): string {
   const local = `0${e164.replace(/^\+98/, "")}`;
   const grouped = `${local.slice(0, 4)} ${local.slice(4, 7)} ${local.slice(7)}`;
-  return grouped.replace(/\d/g, (d) => String.fromCharCode(PERSIAN_ZERO + Number(d)));
+  return `\u2066${grouped.replace(/\d/g, (d) => String.fromCharCode(PERSIAN_ZERO + Number(d)))}\u2069`;
 }

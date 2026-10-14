@@ -8,7 +8,7 @@ export function e2eDatabaseUrl() {
 
 /**
  * Admin accounts created by prepare-db: one per browser project, and one each for the order, publish,
- * audio, settings and errors tests, since a phone may ask for only 3 codes in 10 minutes (PRD §15.5).
+ * audio, settings, errors and users tests, since a phone may ask for only 3 codes in 10 minutes (PRD §15.5).
  */
 export const E2E_ADMINS = {
   phone: "09120000001",
@@ -18,6 +18,7 @@ export const E2E_ADMINS = {
   audio: "09120000009",
   settings: "09120000011",
   errors: "09120000013",
+  users: "09120000015",
 } as const;
 
 /** The French frequency list of the browser-test database (prepare-db). */

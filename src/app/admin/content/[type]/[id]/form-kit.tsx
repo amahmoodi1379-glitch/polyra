@@ -194,21 +194,7 @@ export function TextField({
   );
 }
 
-export function AreaField({
-  name,
-  voice,
-  label,
-  rows,
-  nullable,
-  after,
-}: {
-  name: string;
-  voice: Voice;
-  label?: MessageKey;
-  rows?: number;
-  nullable?: boolean;
-  after?: ReactNode;
-}) {
+export function AreaField({ name, voice, label, rows, nullable, after }: { name: string; voice: Voice; label?: MessageKey; rows?: number; nullable?: boolean; after?: ReactNode }) {
   const [value, set, errors] = useField<string | null>(name);
   const id = useId();
   return (
@@ -328,7 +314,7 @@ export function SegmentedField({ name, options, label, after }: { name: string; 
 }
 
 /** On or off, as a switch that reads well in both directions. */
-export function Toggle({ checked, onChange, label, id }: { checked: boolean; onChange: (value: boolean) => void; label: string; id?: string }) {
+export function Toggle({ checked, onChange, label, id, disabled }: { checked: boolean; onChange: (value: boolean) => void; label: string; id?: string; disabled?: boolean }) {
   return (
     <button
       id={id}
@@ -336,9 +322,10 @@ export function Toggle({ checked, onChange, label, id }: { checked: boolean; onC
       role="switch"
       aria-checked={checked}
       aria-label={label}
+      disabled={disabled}
       onClick={() => onChange(!checked)}
       className={cn(
-        "relative h-8 w-[52px] shrink-0 rounded-full transition-colors duration-200",
+        "relative h-8 w-[52px] shrink-0 rounded-full transition-colors duration-200 disabled:cursor-not-allowed disabled:opacity-45",
         checked ? "bg-brand" : "bg-line-2",
       )}
     >
@@ -434,13 +421,13 @@ export function ListField({ name, voice, label, max, ordered }: { name: string; 
           return (
             <li key={index} className="flex flex-col gap-1">
               <span className="flex items-center gap-1.5">
-                <TextBox
-                  value={item}
-                  voice={voice}
-                  invalid={own.length > 0}
-                  onChange={(next) => set(list.map((old, k) => (k === index ? next : old)))}
+                <TextBox value={item} voice={voice} invalid={own.length > 0} onChange={(next) => set(list.map((old, k) => (k === index ? next : old)))} />
+                <RowTools
+                  index={index}
+                  count={list.length}
+                  onMove={ordered ? (from, to) => set(move(list, from, to)) : undefined}
+                  onRemove={(at) => set(list.filter((_, k) => k !== at))}
                 />
-                <RowTools index={index} count={list.length} onMove={ordered ? (from, to) => set(move(list, from, to)) : undefined} onRemove={(at) => set(list.filter((_, k) => k !== at))} />
               </span>
               {own.length > 0 ? <span className="text-bad text-[13px] font-bold">{own[0].message}</span> : null}
             </li>
@@ -456,8 +443,7 @@ export function ListField({ name, voice, label, max, ordered }: { name: string; 
 export function PairListField({ name, label, max }: { name: string; label?: MessageKey; max?: number }) {
   const [value, set, errors] = useField<{ text: string; translation_fa: string }[]>(name);
   const list = value ?? [];
-  const update = (index: number, key: "text" | "translation_fa", next: string) =>
-    set(list.map((item, k) => (k === index ? { ...item, [key]: next } : item)));
+  const update = (index: number, key: "text" | "translation_fa", next: string) => set(list.map((item, k) => (k === index ? { ...item, [key]: next } : item)));
   return (
     <Field name={name} label={label} errors={errors.filter((error) => !/\[\d+\]/.test(error.path))} wide>
       <ol className="flex flex-col gap-2">

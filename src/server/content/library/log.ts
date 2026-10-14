@@ -6,7 +6,7 @@ import type { Tx } from "../kinds/types";
  * and `after` hold only the columns that changed (plus child rows such as a sentence's word mapping
  * under their own key), so the change log can show them and "برگردان" can put `before` back.
  */
-export type LogAction = "edit" | "status" | "delete" | "order" | "revert" | "publish" | "release" | "live" | "audio" | "import";
+export type LogAction = "edit" | "status" | "delete" | "order" | "revert" | "publish" | "release" | "live" | "audio" | "import" | "access" | "account";
 
 export type LogEntry = {
   action: LogAction;

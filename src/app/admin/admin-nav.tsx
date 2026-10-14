@@ -19,6 +19,7 @@ import {
   Settings2,
   SlidersHorizontal,
   TriangleAlert,
+  Users,
   type LucideIcon,
 } from "lucide-react";
 import { Wordmark } from "@/components/brand/wordmark";
@@ -44,6 +45,7 @@ function navGroups(showTestCodes: boolean): NavGroup[] {
       ],
     },
     { label: "admin.nav.quality", items: [{ href: "/admin/health", label: "admin.nav.health", icon: Activity }] },
+    { label: "admin.nav.people", items: [{ href: "/admin/users", label: "admin.nav.users", icon: Users }] },
     {
       label: "admin.nav.settings",
       items: [
