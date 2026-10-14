@@ -34,11 +34,13 @@ export function stopPlaying() {
   emit();
 }
 
-/** Plays a file, or the part of it from `fromMs` up to `untilMs`. */
-export function playFile(id: string, url: string, fromMs = 0, untilMs?: number) {
+/** Plays a file, or the part of it from `fromMs` up to `untilMs`; `rate` below 1 is slower. */
+export function playFile(id: string, url: string, fromMs = 0, untilMs?: number, rate = 1) {
   stopPlaying();
   audio ??= new Audio();
   const player = audio;
+  player.defaultPlaybackRate = rate;
+  player.playbackRate = rate;
   current = id;
   emit();
   player.onended = () => finish(id);
@@ -64,11 +66,12 @@ export function playFile(id: string, url: string, fromMs = 0, untilMs?: number) 
 }
 
 /** Reads a text with the device's own voice for the language, as the app does when there is no file. */
-export function speakText(id: string, text: string, language: string) {
+export function speakText(id: string, text: string, language: string, rate = 1) {
   stopPlaying();
   if (typeof speechSynthesis === "undefined") return;
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = voiceTag[language] ?? language;
+  utterance.rate = rate;
   const voice = speechSynthesis.getVoices().find((item) => item.lang.toLowerCase().startsWith(language));
   if (voice) utterance.voice = voice;
   utterance.onend = () => finish(id);

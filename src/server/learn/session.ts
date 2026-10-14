@@ -195,12 +195,15 @@ export async function previewSession(user: Learner, language: string, now = new 
   let built = buildSession(ctx.content, learner, ctx.settings, now, ctx.today, options);
   if (built.kind === "ask_word_cap") built = buildSession(ctx.content, learner, ctx.settings, now, ctx.today, { ...options, cap: "none" });
   const quick = buildSession(ctx.content, learner, ctx.settings, now, ctx.today, { ...options, scope: "quick" });
+  // «برای امروز چیزی نمانده» offers more practice on today's items when there are any (PRD §10.8).
+  const extra = built.kind !== "plan" && buildSession(ctx.content, learner, ctx.settings, now, ctx.today, { ...options, scope: "extra" }).kind === "plan";
   return {
     minutes: learner.sessionLength,
     reviews: built.kind === "plan" ? built.plan.summary.reviews : 0,
     newItems: built.kind === "plan" ? built.plan.summary.newItems : 0,
     empty: built.kind !== "plan",
     quick: quick.kind === "plan",
+    extra,
     learner,
     ctx,
   };

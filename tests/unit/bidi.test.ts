@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { isolateLatin } from "@/lib/bidi";
+import { isolateLatin, splitLatin } from "@/lib/bidi";
 
 describe("Latin inside Persian text", () => {
   it("isolates each Latin run with its leading hyphen", () => {
@@ -11,5 +11,15 @@ describe("Latin inside Persian text", () => {
       "فرق دارد: \u2066nous: avons faits ≠ avons fait\u2069، \u2066vous: avez fait\u2069.",
     );
     expect(isolateLatin("نیامده: il_elle_on، sie_Sie.")).toBe("نیامده: \u2066il_elle_on\u2069، \u2066sie_Sie\u2069.");
+  });
+
+  it("splits the same runs into pieces for their own typeface", () => {
+    expect(splitLatin("منفی با ne pas دور فعل")).toEqual([
+      { text: "منفی با ", latin: false },
+      { text: "ne pas", latin: true },
+      { text: " دور فعل", latin: false },
+    ]);
+    expect(splitLatin("-er")).toEqual([{ text: "-er", latin: true }]);
+    expect(splitLatin("")).toEqual([]);
   });
 });

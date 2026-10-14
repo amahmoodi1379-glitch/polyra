@@ -294,7 +294,7 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
     if (!round) return null;
     // The lesson comes again before the round of a unit that failed its first round or is stuck (PRD §6.2, §9.2).
     const lesson = isNewCard(state.fsrs) || (state.roundsCount >= num(settings, "grammar.unlock_after_rounds") && state.step < 2);
-    return { t: "round", key, step: round.step, questions: round.questions, lesson, cost: exCost(settings, round.questions) + (lesson ? num(settings, "time.grammar_lesson") : 0) };
+    return { t: "round", key, step: round.step, questions: round.questions, alts: round.alts, lesson, cost: exCost(settings, round.questions) + (lesson ? num(settings, "time.grammar_lesson") : 0) };
   };
   const reviewBudget = share("review") * budget;
   let spent = 0;
@@ -537,7 +537,7 @@ function newUnitEntry(ctx: Ctx, unit: UnitC): Entry | null {
     if (ex) g0.push(ex);
   }
   const cost = num(settings, "time.grammar_lesson") + g0.length * num(settings, "time.g0") + exCost(settings, round.questions);
-  return { t: "newunit", key: itemKey("grammar_unit", unit.id), unit, g0, questions: round.questions, step: round.step, cost };
+  return { t: "newunit", key: itemKey("grammar_unit", unit.id), unit, g0, questions: round.questions, alts: round.alts, step: round.step, cost };
 }
 
 /** Turns the chosen entries into the saved plan with its cards in order (PRD §10.7). */
@@ -576,7 +576,7 @@ function assemble(
           item: entry.key,
           kind: "review",
           ex,
-          alt: null,
+          alt: entry.alts[i] ?? null,
           block,
           step: entry.step,
           ...(fresh ? { fresh } : {}),

@@ -129,7 +129,8 @@ export function pickTargetEx(env: BuildEnv, unit: UnitC, target: TargetC, step: 
 
 // ───────────────────────────── grammar round ─────────────────────────────
 
-export type Round = { unitId: number; step: number; questions: Ex[] };
+/** `alts`: for each question that needs sound, the same sentence without it (PRD §10.12). */
+export type Round = { unitId: number; step: number; questions: Ex[]; alts: (Ex | null)[] };
 
 /** The sentences a round may use at this step, in the order of PRD §6.5 (rule 2). */
 function roundSources(env: BuildEnv, unit: UnitC, step: number): GrammarSource[] {
@@ -176,18 +177,19 @@ function rotation(env: BuildEnv, unit: UnitC, step: number, audio: boolean): str
 }
 
 /** Five questions of one unit at one step, each with another code where possible (PRD §6.5). */
-function roundAt(env: BuildEnv, unit: UnitC, step: number, audio: boolean): Ex[] {
+function roundAt(env: BuildEnv, unit: UnitC, step: number, audio: boolean): { ex: Ex; alt: Ex | null }[] {
   const codes = rotation(env, unit, step, audio);
   if (codes.length === 0) return [];
-  const questions: Ex[] = [];
+  const questions: { ex: Ex; alt: Ex | null }[] = [];
   let turn = 0;
   // G3a sorts items into the unit's categories: one question, no sentence (rule 5).
   if (codes.includes("G3a") && grammarCodeFits(env, "G3a", { sets: true }, unit)) {
     const ex = buildGrammarEx(env, unit, "G3a", { sets: true });
-    if (ex) questions.push(ex);
+    if (ex) questions.push({ ex, alt: null });
   }
   const sentenceCodes = codes.filter((code) => code !== "G3a");
   if (sentenceCodes.length === 0) return questions;
+  const silentCodes = sentenceCodes.filter((code) => !exerciseDef(code).audio);
   const usedSentences = new Set<number>();
   for (const source of roundSources(env, unit, step)) {
     if (questions.length >= SHAPE.roundSize) break;
@@ -200,9 +202,12 @@ function roundAt(env: BuildEnv, unit: UnitC, step: number, audio: boolean): Ex[]
       if (!ex && code === "G3c" && "target" in source) ex = buildGrammarEx(env, unit, "G1a", source);
     }
     if (!ex) continue;
+    // A question that needs sound keeps a silent version of the same sentence for «الان نمی‌توانم گوش بدهم».
+    let alt: Ex | null = null;
+    for (let i = 0; ex.audio && i < silentCodes.length && !alt; i++) alt = buildGrammarEx(env, unit, silentCodes[(turn + i) % silentCodes.length], source);
     turn++;
     if ("target" in source) usedSentences.add(source.target.sentenceId);
-    questions.push(ex);
+    questions.push({ ex, alt });
   }
   return shuffle(env.rng, questions);
 }
@@ -215,7 +220,7 @@ export function buildRound(env: BuildEnv, unit: UnitC, step: number, opts: { aud
   const last = lastStepOfUnit(env, unit);
   for (const at of stepOrder(Math.min(step, last), last, "review")) {
     const questions = roundAt(env, unit, at, opts.audio);
-    if (questions.length >= SHAPE.roundMin) return { unitId: unit.id, step: at, questions };
+    if (questions.length >= SHAPE.roundMin) return { unitId: unit.id, step: at, questions: questions.map((item) => item.ex), alts: questions.map((item) => item.alt) };
   }
   return null;
 }

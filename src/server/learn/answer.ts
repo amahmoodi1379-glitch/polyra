@@ -30,6 +30,8 @@ export const answerSchema = z.object({
   at: z.iso.datetime(),
   /** What the browser showed, to catch a difference (PRD §15.4, step 4). */
   shown: z.string().max(20).nullable(),
+  /** The browser showed the card's version without sound (PRD §10.12). */
+  alt: z.boolean().optional(),
 });
 export type AnswerRequest = z.infer<typeof answerSchema>;
 
@@ -72,7 +74,7 @@ export async function submitAnswer(user: Learner, request: AnswerRequest, server
         plan,
         request.cardId,
         request.answer as RawAnswer,
-        { latencyMs: request.latencyMs, elapsedSec: request.elapsedSec },
+        { latencyMs: request.latencyMs, elapsedSec: request.elapsedSec, alt: request.alt },
         { ctx: { settings: ctx.settings, now: at, today, latency: plan.latency }, language: ctx.content.language, wordsWithLemma: (lemma) => lexicon.get(lemma) ?? [] },
       );
       // The browser sends only final answers; a synonym or Persian letters never reach the server.

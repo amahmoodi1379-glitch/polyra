@@ -40,6 +40,15 @@ const eslintConfig = defineConfig([
       ],
     },
   },
+  {
+    // Word pictures are small files the panel already sized, served from /media; the image
+    // optimizer would add a server step for nothing. A signed-out answer leaves the app on purpose.
+    files: ["src/components/learn/**/*.{ts,tsx}"],
+    rules: {
+      "@next/next/no-img-element": "off",
+      "@next/next/no-location-assign-relative-destination": "off",
+    },
+  },
   globalIgnores([".next/**", "out/**", "build/**", "next-env.d.ts", "src/generated/**", "design/**", ".claude/**", ".impeccable/**"]),
 ]);
 

@@ -61,14 +61,18 @@ export type PlayResult =
 
 const RATING = { again: 1, hard: 2, good: 3, easy: 4 } as const;
 
-/** The exercise the learner actually saw: the version without sound in a no-sound session. */
-export const shownEx = (plan: SessionPlan, card: Card): Ex | null => (plan.noAudio && card.alt ? card.alt : (card.ex ?? null));
+/**
+ * The exercise the learner actually saw: the version without sound in a no-sound session, or when the
+ * browser says it showed it (`alt`: «الان نمی‌توانم گوش بدهم» pressed mid-session, or no voice on the
+ * device, PRD §10.12).
+ */
+export const shownEx = (plan: SessionPlan, card: Card, alt?: boolean): Ex | null => ((alt ?? plan.noAudio) && card.alt ? card.alt : (card.ex ?? null));
 
-export function playCard(plan: SessionPlan, cardId: string, answer: RawAnswer, timing: { latencyMs: number; elapsedSec: number }, env: PlayEnv): PlayResult {
+export function playCard(plan: SessionPlan, cardId: string, answer: RawAnswer, timing: { latencyMs: number; elapsedSec: number; alt?: boolean }, env: PlayEnv): PlayResult {
   const card = plan.queue[0];
   if (!card || card.id !== cardId) throw new Error(`Card ${cardId} is not the next card`);
   const { ctx } = env;
-  const ex = shownEx(plan, card);
+  const ex = shownEx(plan, card, timing.alt);
   const key = card.item;
   const parsed = key.startsWith("t:") ? null : parseItemKey(key);
   const base: PlayLog = {

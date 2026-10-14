@@ -4,6 +4,7 @@ import "@fontsource-variable/fraunces/full.css";
 import "./globals.css";
 import { DirectionProvider } from "@/components/direction";
 import { defaultLocale, locales, t } from "@/i18n";
+import { themeScript } from "@/lib/theme-script";
 
 export const metadata: Metadata = {
   title: { default: "polyra", template: "%s · polyra" },
@@ -23,7 +24,11 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   const locale = locales[defaultLocale];
   return (
-    <html lang={locale.lang} dir={locale.dir}>
+    // The theme script may set data-theme before React hydrates.
+    <html lang={locale.lang} dir={locale.dir} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body className="min-h-dvh">
         <DirectionProvider dir={locale.dir}>{children}</DirectionProvider>
       </body>

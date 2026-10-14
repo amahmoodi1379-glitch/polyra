@@ -37,10 +37,34 @@ export type HomeData = {
   streak: { count: number; today: boolean; freezes: number };
   start: { minutes: number; reviews: number; newItems: number; empty: boolean; resume: boolean };
   quick: boolean;
+  /** «تمرین بیشتر روی کلمه‌های امروز», offered when the day is done (PRD §10.8). */
+  extra: boolean;
+  plan: PlanLine;
   locked: boolean;
   skills: SkillTile[];
   links: { notebook: number; words: number; lessons: number };
 };
+
+/** The quiet button at the top (PRD §3.8). Payment comes in a later phase, so it only reports. */
+export type PlanLine =
+  | { kind: "tester" }
+  | { kind: "trialNotStarted" }
+  | { kind: "trial"; hours: number }
+  | { kind: "subscription"; days: number }
+  | { kind: "none" };
+
+async function planLine(user: Learner, enrollment: { language: string; trial_started_at: Date | null; trial_ends_at: Date | null }, now: Date): Promise<PlanLine> {
+  if (user.is_admin || user.is_tester) return { kind: "tester" };
+  const subscription = await db.subscription.findFirst({
+    where: { user_id: user.id, language: enrollment.language, ends_at: { gt: now } },
+    orderBy: { ends_at: "desc" },
+    select: { ends_at: true },
+  });
+  if (subscription) return { kind: "subscription", days: Math.ceil((subscription.ends_at.getTime() - now.getTime()) / 86_400_000) };
+  if (!enrollment.trial_started_at) return { kind: "trialNotStarted" };
+  if (enrollment.trial_ends_at && now < enrollment.trial_ends_at) return { kind: "trial", hours: Math.ceil((enrollment.trial_ends_at.getTime() - now.getTime()) / 3_600_000) };
+  return { kind: "none" };
+}
 
 export async function homeData(user: Learner, language: LanguageCode, now = new Date()): Promise<HomeData | null> {
   const enrollment = await db.enrollment.findUnique({ where: { user_id_language: { user_id: user.id, language } } });
@@ -105,6 +129,8 @@ export async function homeData(user: Learner, language: LanguageCode, now = new 
     streak: { count: streak.streakCount, today: doneToday(streak, today), freezes: streak.freezeCount },
     start: { minutes: preview.minutes, reviews: preview.reviews, newItems: preview.newItems, empty: preview.empty, resume: !!open && open.scope === "mixed" },
     quick: preview.quick,
+    extra: preview.extra,
+    plan: await planLine(user, enrollment, now),
     locked: !(await canPractice(db, user, enrollment, now)),
     skills,
     links: {

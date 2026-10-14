@@ -45,6 +45,19 @@
   --g-f: #8e3bb0;
   --g-m: #2962c4;
   --g-n: #a66c0c;
+  /* Learner app: duotone skill icons, the jelly's body and rim, and the wordmark's moving fill. */
+  --ico-body: #fbdce7;
+  --ico-line: #d81e5b;
+  --ico-acc: #d81e5b;
+  --j-a: #d81e5b;
+  --j-b: #f0527f;
+  --j-c: #a8134a;
+  --j-t: #1fb5a8;
+  --j-dark: 0;
+  --w1: #ffffff;
+  --w2: #fde7ef;
+  --w3: #bff3ec;
+  --w4: #ffc9da;
   --glass: rgb(255 246 249 / 0.84);
   --scrim: rgb(43 16 32 / 0.38);
   --shadow-1: 0 1px 2px rgb(43 16 32 / 0.05), 0 10px 26px -14px rgb(120 20 60 / 0.28);
@@ -76,6 +89,10 @@
     --g-f: #d9a2ee;
     --g-m: #9dbbf5;
     --g-n: #e9b75e;
+    --ico-body: #5a2846;
+    --ico-line: #f0527f;
+    --ico-acc: #f0527f;
+    --j-dark: 1;
     --glass: rgb(56 26 43 / 0.86);
     --scrim: rgb(10 2 7 / 0.6);
     --shadow-1: 0 1px 2px rgb(0 0 0 / 0.3), 0 12px 28px -14px rgb(0 0 0 / 0.6);
@@ -105,6 +122,10 @@
   --g-f: #d9a2ee;
   --g-m: #9dbbf5;
   --g-n: #e9b75e;
+  --ico-body: #5a2846;
+  --ico-line: #f0527f;
+  --ico-acc: #f0527f;
+  --j-dark: 1;
   --glass: rgb(56 26 43 / 0.86);
   --scrim: rgb(10 2 7 / 0.6);
   --shadow-1: 0 1px 2px rgb(0 0 0 / 0.3), 0 12px 28px -14px rgb(0 0 0 / 0.6);

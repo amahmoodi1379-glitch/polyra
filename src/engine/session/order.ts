@@ -15,8 +15,8 @@ export type Entry =
   | (Base & { t: "single"; kind: PlayKind; ex: Ex; alt: Ex | null; step: number; note?: { refType: NotebookRef; refId: number } })
   | (Base & { t: "newword"; word: WordC; ex: Ex; alt: Ex | null })
   | (Base & { t: "newconj"; table: ConjC; ex: Ex })
-  | (Base & { t: "round"; step: number; questions: Ex[]; lesson: boolean })
-  | (Base & { t: "newunit"; unit: UnitC; g0: Ex[]; questions: Ex[]; step: number });
+  | (Base & { t: "round"; step: number; questions: Ex[]; alts: (Ex | null)[]; lesson: boolean })
+  | (Base & { t: "newunit"; unit: UnitC; g0: Ex[]; questions: Ex[]; alts: (Ex | null)[]; step: number });
 
 /** Spreads `items` evenly between the elements of `base`. */
 export function interleave<T>(base: T[], items: T[]): T[] {
