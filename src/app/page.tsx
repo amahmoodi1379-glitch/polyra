@@ -11,11 +11,11 @@ export default function HomePage() {
         <h1 className="text-ink text-2xl leading-snug font-extrabold">{t("home.building")}</h1>
         <p className="text-ink-2">{t("home.buildingHint")}</p>
       </div>
-      <Link
-        href="/admin"
-        className="text-brand-text hover:bg-tint -ms-3 inline-flex min-h-11 w-fit items-center rounded-[14px] px-3 font-bold transition-colors"
-      >
+      <Link href="/admin" className="text-brand-text hover:bg-tint -ms-3 inline-flex min-h-11 w-fit items-center rounded-[14px] px-3 font-bold transition-colors">
         {t("home.adminLink")}
+      </Link>
+      <Link href="/about" className="text-ink-3 hover:text-ink w-fit text-[13.5px] underline-offset-4 hover:underline">
+        {t("about.link")}
       </Link>
     </main>
   );
