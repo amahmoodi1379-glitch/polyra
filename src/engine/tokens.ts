@@ -93,7 +93,10 @@ export function splitPieces(text: string): Piece[] {
 
 /** Case-insensitive comparison form that keeps accents. */
 export function fold(text: string) {
-  return text.normalize("NFC").toLocaleLowerCase("und").replace(/[’ʼ`´]/gu, "'");
+  return text
+    .normalize("NFC")
+    .toLocaleLowerCase("und")
+    .replace(/[’ʼ`´]/gu, "'");
 }
 
 /** Letters only, without accents or case, for the "same first letters" rule. */
