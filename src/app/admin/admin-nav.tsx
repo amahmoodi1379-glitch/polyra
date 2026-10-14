@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useOptimistic, useTransition } from "react";
 import {
+  ArrowDownUp,
   AudioLines,
   BookCheck,
   BookOpen,
@@ -39,6 +40,7 @@ function navGroups(showTestCodes: boolean): NavGroup[] {
         { href: "/admin/order", label: "admin.nav.order", icon: ListOrdered },
         { href: "/admin/audio", label: "admin.nav.audio", icon: AudioLines },
         { href: "/admin/publish", label: "admin.nav.publish", icon: BookCheck },
+        { href: "/admin/transfer", label: "admin.nav.transfer", icon: ArrowDownUp },
       ],
     },
     { label: "admin.nav.quality", items: [{ href: "/admin/health", label: "admin.nav.health", icon: Activity }] },
@@ -149,10 +151,7 @@ export function AccountRow({ phone }: { phone: string }) {
         {phone}
       </span>
       <form action={signOut}>
-        <button
-          type="submit"
-          className="text-ink-2 hover:bg-tint hover:text-ink flex min-h-10 items-center gap-2 rounded-[12px] px-3 text-[14px] transition-colors"
-        >
+        <button type="submit" className="text-ink-2 hover:bg-tint hover:text-ink flex min-h-10 items-center gap-2 rounded-[12px] px-3 text-[14px] transition-colors">
           <LogOut className="size-[17px] shrink-0 rtl:-scale-x-100" strokeWidth={1.75} aria-hidden />
           {t("admin.logout")}
         </button>
