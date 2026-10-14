@@ -1,37 +1,35 @@
 import { randomInt } from "node:crypto";
+import { errorCode, errorSeed } from "@/lib/error-code";
 import { db } from "@/server/db";
 
-/** Letters and digits that cannot be confused when read aloud or retyped (no 0/O, 1/I/L). */
-const ALPHABET = "23456789ABCDEFGHJKMNPQRSTUVWXYZ";
+const SUFFIX = "23456789ABCDEFGHJKMNPQRSTUVWXYZ";
+const suffix = () => Array.from({ length: 4 }, () => SUFFIX[randomInt(SUFFIX.length)]).join("");
 
-function newCode() {
-  let code = "E";
-  for (let i = 0; i < 6; i++) code += ALPHABET[randomInt(ALPHABET.length)];
-  return code;
-}
+/** Longest message and stack kept, so one runaway error cannot fill the table. */
+const MESSAGE_MAX = 4000;
+const STACK_MAX = 16000;
 
 /**
- * Records a server error in `error_log` and returns its short code. The panel's errors page lists
- * these with a copy button so the owner can hand the exact error to Claude Code (PRD §13.2, §15.9).
+ * Records an error in `error_log` and returns its short code (PRD §15.9). The same error always gets
+ * the same code: its first row is stored under the code itself and each repeat under "code-XXXX", so
+ * the errors page shows one entry with its count. `seed` overrides what decides the code (a server
+ * render error uses its digest, which is all the browser knows of it).
  */
-export async function logError(
-  where: string,
-  error: unknown,
-  context: { userId?: number | null; requestId?: string | null } = {},
-): Promise<string> {
-  const message = error instanceof Error ? error.message : String(error);
-  const stack = error instanceof Error ? (error.stack ?? null) : null;
-  console.error(`[${where}]`, error);
+export async function logError(where: string, error: unknown, context: { userId?: number | null; requestId?: string | null; seed?: string } = {}): Promise<string> {
+  const message = (error instanceof Error ? error.message : String(error)).slice(0, MESSAGE_MAX);
+  const stack = error instanceof Error ? (error.stack?.slice(0, STACK_MAX) ?? null) : null;
+  const code = errorCode(context.seed ?? errorSeed(where, message));
+  console.error(`[${where}] ${code}`, error);
   for (let attempt = 0; attempt < 3; attempt++) {
-    const id = newCode();
     try {
+      const taken = attempt > 0 || (await db.errorLog.findUnique({ where: { id: code }, select: { id: true } })) !== null;
       await db.errorLog.create({
-        data: { id, where, message, stack, user_id: context.userId ?? null, request_id: context.requestId ?? null },
+        data: { id: taken ? `${code}-${suffix()}` : code, where, message, stack, user_id: context.userId ?? null, request_id: context.requestId ?? null },
       });
-      return id;
+      return code;
     } catch (writeError) {
       if (attempt === 2) console.error("[logError] could not write error_log", writeError);
     }
   }
-  return "E------";
+  return code;
 }

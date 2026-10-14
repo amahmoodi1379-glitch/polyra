@@ -73,6 +73,13 @@ Local setup: PostgreSQL running, `cp .env.example .env`, `npm install` (also gen
   `store.ts` (save, remove, heard, text sync and join), `view.ts`, `lists.ts` (the `/admin/audio` tabs), `match.ts`
   (bulk upload names). `src/components/admin/audio`: player, recorder, browser preparation (a Web Worker), slot
   controls, text sync. Files are stored on disk by `src/server/storage.ts` and served from `/media`.
+- Errors (PRD §15.9): `src/server/errors.ts` `logError()` stores a row and returns its short code (`src/lib/error-code.ts`;
+  repeats share the code). `src/instrumentation.ts` sends uncaught server errors there through `src/server/request-error.ts` (render errors are coded from their
+  digest), `src/instrumentation-client.ts` and `src/lib/report-error.ts` send browser errors to `/api/errors`. Error screens:
+  `src/components/error-screen.tsx` from `src/app/{error,global-error}.tsx` and `src/app/admin/error.tsx`. The «خطاها» page
+  reads `src/server/errors-list.ts`; `src/server/error-report.ts` builds the text copied for Claude Code.
+- «سلامت محتوا» (PRD §13.11): `src/server/content/health/usable.ts` is the pure usable-sentence count, `sentences.ts`
+  loads it per level; its button opens P-S with `PlanOptions.wordIds`.
 - `src/i18n/fa.json`: every Persian interface string; `t("key", vars)` from `@/i18n`.
 - `src/components/ui`: shadcn/ui sources, converted to logical (start/end) classes for RTL.
 - Next.js 16 differs from older versions; read `node_modules/next/dist/docs/` before using an API (see `AGENTS.md`).

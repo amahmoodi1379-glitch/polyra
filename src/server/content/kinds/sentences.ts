@@ -13,9 +13,19 @@ import type { ContentKind, Tx } from "./types";
 type SentencesParams = { level: string; word_ids: number[] };
 
 /** Card words: standard words with a meaning that are not no_card (colloquial ones have no sentences, PRD §5.4). */
-const cardWord = { meaning_fa: { not: null }, no_card: false, register: "standard", dup_of_id: null, status: { not: "retired" } } as const;
+export const cardWord = { meaning_fa: { not: null }, no_card: false, register: "standard", dup_of_id: null, status: { not: "retired" } } as const;
 /** The first words of a language get sentences made only from themselves (PRD §14.9). */
 const FIRST_WORDS = 30;
+
+type OrderedCard = { id: number; level: string; intro_order: number | null; no_card: boolean; register: string };
+
+/** The first card words a learner meets, from words that are not retired and not duplicates (PRD §14.9). */
+export function firstWordIds(words: OrderedCard[]): Set<number> {
+  const ordered = words
+    .filter((word) => !word.no_card && word.register === "standard")
+    .sort((a, b) => levelRank(a.level) - levelRank(b.level) || (a.intro_order ?? 1e9) - (b.intro_order ?? 1e9));
+  return new Set(ordered.slice(0, FIRST_WORDS).map((word) => word.id));
+}
 /** Above this many allowed words the meanings are left out so the prompt fits (PRD §14.9). */
 const LIST_WITH_MEANINGS = 600;
 
@@ -26,7 +36,8 @@ async function resolveTarget(tx: Tx, language: string, target: SentenceTargetRec
 }
 
 /**
- * P-S (PRD §14.5): sentences for the next 10 card words that have fewer than 8 targets. Each
+ * P-S (PRD §14.5): sentences for the next 10 card words that have fewer than 8 targets, or for the
+ * words «سلامت محتوا» sends (`wordIds`, PRD §13.11), however many sentences they have. Each
  * sentence's word mapping is checked (PRD §14.1) and stored as sentence_word rows; unknown codes
  * become candidates and implausible mappings suspects, for the admin to resolve (PRD §13.9).
  */
@@ -41,8 +52,9 @@ export const sentences: ContentKind = {
     const lengths = await appSetting<Record<string, string>>("prompt.sentence_length");
     const size = await batchSize("P-S", 10);
 
+    const chosen = options.wordIds?.length ? options.wordIds : null;
     const candidates = await db.word.findMany({
-      where: { language, ...cardWord, ...(options.level ? { level: options.level } : {}) },
+      where: { language, ...cardWord, ...(chosen ? { id: { in: chosen } } : options.level ? { level: options.level } : {}) },
       orderBy: [{ intro_order: { sort: "asc", nulls: "last" } }, { id: "asc" }],
       select: { id: true, code: true, pos: true, meaning_fa: true, level: true, intro_order: true },
     });
@@ -56,12 +68,14 @@ export const sentences: ContentKind = {
       ).map((row) => [row.target_id, row._count]),
     );
     const needy = candidates
-      .filter((word) => (counts.get(word.id) ?? 0) < goal)
+      .filter((word) => chosen || (counts.get(word.id) ?? 0) < goal)
       .sort((a, b) => levelRank(a.level) - levelRank(b.level) || (a.intro_order ?? 1e9) - (b.intro_order ?? 1e9));
     const level = needy.find((word) => levels.includes(word.level))?.level;
     if (!level) return { nothing: t("admin.create.nothing.sentences") };
     const batch = needy.filter((word) => word.level === level).slice(0, size);
-    const lastOrder = Math.max(...batch.map((word) => word.intro_order ?? 0));
+    // Words chosen on «سلامت محتوا» have sentences that use later words: their new sentences may use
+    // only words met before the first of them, so each sentence is usable for every target.
+    const cutOrder = chosen ? Math.min(...batch.map((word) => word.intro_order ?? 1e9)) : Math.max(...batch.map((word) => word.intro_order ?? 0));
 
     // The allowed list: no_card words, plus every word introduced before these targets (PRD §14.9).
     const all = await db.word.findMany({
@@ -69,10 +83,7 @@ export const sentences: ContentKind = {
       orderBy: [{ intro_order: { sort: "asc", nulls: "last" } }, { id: "asc" }],
       select: { id: true, code: true, pos: true, meaning_fa: true, level: true, intro_order: true, no_card: true, register: true },
     });
-    const ordered = all
-      .filter((word) => !word.no_card && word.register === "standard")
-      .sort((a, b) => levelRank(a.level) - levelRank(b.level) || (a.intro_order ?? 1e9) - (b.intro_order ?? 1e9));
-    const firstWords = new Set(ordered.slice(0, FIRST_WORDS).map((word) => word.id));
+    const firstWords = firstWordIds(all);
     const targetIds = new Set(batch.map((word) => word.id));
     const early = batch.every((word) => firstWords.has(word.id));
     const allowed = all.filter((word) => {
@@ -81,7 +92,7 @@ export const sentences: ContentKind = {
       if (word.register !== "standard") return false;
       if (early) return firstWords.has(word.id);
       const rank = levelRank(word.level) - levelRank(level);
-      return rank < 0 || (rank === 0 && (word.intro_order ?? 1e9) < lastOrder);
+      return rank < 0 || (rank === 0 && (word.intro_order ?? 1e9) < cutOrder);
     });
     const withMeaning = allowed.length <= LIST_WITH_MEANINGS;
     const line = (word: { code: string; pos: string; meaning_fa: string | null }, meaning = true) =>
@@ -98,10 +109,7 @@ export const sentences: ContentKind = {
         length: lengths[level] ?? "4 تا 10",
         example: example("P-S", language),
       },
-      summary: [
-        t("admin.create.summary.sentences", { count: batch.length, level, goal }),
-        batch.map((word) => word.code).join("، "),
-      ],
+      summary: [t("admin.create.summary.sentences", { count: batch.length, level, goal }), batch.map((word) => word.code).join("، ")],
       level,
     };
   },

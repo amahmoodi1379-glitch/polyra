@@ -16,7 +16,11 @@ export type BatchPlan = {
   level: string;
 };
 
-export type PlanOptions = { level?: string };
+export type PlanOptions = {
+  level?: string;
+  /** P-S only: make sentences for exactly these words (from «سلامت محتوا», PRD §13.11). */
+  wordIds?: number[];
+};
 
 /** One part of an answer that is a single object with several lists, like a grammar unit (P-G). */
 export type AnswerPart = { key: string; single?: boolean };

@@ -31,13 +31,15 @@ type Props = Omit<ComponentProps<typeof Button>, "onClick" | "children"> & {
   onCopied?: () => void;
   /** Runs when the browser refused, so the page can show the text to copy by hand. */
   onFailed?: () => void;
+  /** What to do instead when the browser refuses; by default, how to copy a prompt by hand. */
+  failedText?: string;
 };
 
 /**
  * Copies a long prompt in one tap. The label turns into "کپی شد" for a moment; both labels share
  * one grid cell so the button keeps its width.
  */
-export function CopyButton({ text, label, onCopied, onFailed, className, ...props }: Props) {
+export function CopyButton({ text, label, onCopied, onFailed, failedText, className, ...props }: Props) {
   const [state, setState] = useState<"idle" | "copied" | "failed">("idle");
   const timer = useRef<ReturnType<typeof setTimeout>>(undefined);
   useEffect(() => () => clearTimeout(timer.current), []);
@@ -75,7 +77,7 @@ export function CopyButton({ text, label, onCopied, onFailed, className, ...prop
       <span role="status" className="sr-only">
         {copied ? t("common.copied") : ""}
       </span>
-      {state === "failed" ? <p className="text-bad text-[13.5px] leading-6">{t("admin.batch.prompt.copyFailed")}</p> : null}
+      {state === "failed" ? <p className="text-bad text-[13.5px] leading-6">{failedText ?? t("admin.batch.prompt.copyFailed")}</p> : null}
     </div>
   );
 }
