@@ -13,6 +13,8 @@ COPY prisma ./prisma
 RUN npm ci --include=dev
 
 COPY . .
+# Git does not keep an empty folder, so a fresh clone may have no public/; the runtime stage copies it.
+RUN mkdir -p public
 # The database is not reachable while building; the address below only lets modules load, and no
 # page reads data at build time. The real address comes from the host at run time.
 RUN DATABASE_URL=postgresql://build:build@127.0.0.1:1/build NEXT_TELEMETRY_DISABLED=1 npm run build
