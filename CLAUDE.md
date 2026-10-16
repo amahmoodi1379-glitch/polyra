@@ -56,6 +56,9 @@ Local setup: PostgreSQL running, `cp .env.example .env`, `npm install` (also gen
 | `npm run make-admin -- 09121234567 fr` | Make a phone an admin (first admin; later ones from the panel) |
 | `npm run demo -- load` | French demo content for the tester account (`remove` takes it and testers' progress on it out, `status`) |
 
+Deploy: Runflare builds `main` (`docs/deploy-runflare.md`). Work on the session branch and move `main` forward
+(fast-forward) only when unit, database and browser tests are all green.
+
 ## Code map
 - `prisma/schema.prisma`: PRD §4. Models are PascalCase, tables and columns keep the PRD names.
 - `src/engine`: pure functions (PRD §15.3). `src/server`: database, auth, SMS, storage, settings.
