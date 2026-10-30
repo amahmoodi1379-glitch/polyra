@@ -43,6 +43,8 @@ export type BuildEffects = {
   lastSpreadDate: string | null;
   wordsCapToday: number;
   capPromptShown: boolean;
+  /** Due items with no exercise to show, a content problem the server logs for the teacher. */
+  unbuildable: string[];
 };
 
 export type BuildResult =
@@ -67,18 +69,49 @@ const time = (settings: Settings, ex: Ex | null | undefined) => (ex ? num(settin
 const exCost = (settings: Settings, list: (Ex | null | undefined)[]) =>
   list.reduce((sum, ex) => sum + (ex ? (ex.code === "G0" ? num(settings, "time.g0") : time(settings, ex)) : 0), 0);
 
-/** Due (PRD §9.1): due by the end of today, not resting, not frozen. */
+/** Due (PRD §9.1): due by the end of today and not resting. A frozen card is never due (`activeCards`). */
 export function isDue(state: ItemStateE, now: Date, today: string): boolean {
-  if (state.frozen) return false;
   if (state.deferredUntil && Date.parse(state.deferredUntil) > now.getTime()) return false;
   return Date.parse(state.fsrs.due) < tehranDayStart(addDays(today, 1)).getTime();
 }
 
-/** Items the visible content still has, so a retired word never comes back in a session. */
-function stillThere(content: Content, state: ItemStateE): boolean {
-  if (state.itemType === "word") return content.words.has(state.itemId);
-  if (state.itemType === "grammar_unit") return content.units.some((unit) => unit.id === state.itemId);
-  return content.conjugations.some((table) => table.id === state.itemId);
+type CardRef = Pick<ItemStateE, "itemType" | "itemId">;
+
+/**
+ * Which cards still take part (PRD §13.5–§13.7, «frozen»): the item is published and not suspended,
+ * its level is open, a word has a card and a table is a review card. Any other card is frozen: never
+ * due, never counted or practised, and back by itself when its item is. Nothing is written for it.
+ */
+export function activeCards(content: Content): (card: CardRef) => boolean {
+  const open = new Set(content.openLevels);
+  const units = new Map(content.units.map((unit) => [unit.id, unit]));
+  const unitByCode = new Map(content.units.map((unit) => [unit.unitCode, unit]));
+  const tables = new Map(content.conjugations.map((table) => [table.id, table]));
+  return (card) => {
+    if (card.itemType === "word") {
+      const word = content.words.get(card.itemId);
+      return !!word && !word.noCard && open.has(word.level);
+    }
+    if (card.itemType === "grammar_unit") {
+      const unit = units.get(card.itemId);
+      return !!unit && open.has(unit.level);
+    }
+    const table = tables.get(card.itemId);
+    if (!table?.reviewCard) return false;
+    // A table belongs to the level of its unit; one without a unit to the level of its verb.
+    const level = table.unitCode ? unitByCode.get(table.unitCode)?.level : content.words.get(table.wordId)?.level;
+    return !!level && open.has(level);
+  };
+}
+
+/** The card a notebook entry practises: its word, its table, or the unit of its grammar target. */
+export function noteCard(content: Content, note: NotebookE): CardRef | null {
+  if (note.refType === "conjugation") return { itemType: "conjugation", itemId: note.refId };
+  if (note.refType === "grammar_target") {
+    const target = content.targets.get(note.refId);
+    return target ? { itemType: "grammar_unit", itemId: target.targetId } : null;
+  }
+  return { itemType: "word", itemId: note.refId };
 }
 
 /** The new-material caps of a session length (PRD §10.5), halved in slow pace (PRD §9.10). */
@@ -231,6 +264,7 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
   const env = makeEnv(content, learner, settings, seeded(opts.seed, "build"));
   const items = indexItems(learner.items);
   const states = new Map(learner.items.map((item) => [itemKey(item.itemType, item.itemId), item]));
+  const active = activeCards(content);
   const ctx: Ctx = { content, learner, settings, now, today, env, audio: !opts.noAudio, items, states };
 
   // Step 1: pace, backlog and the word cap (PRD §10.2).
@@ -240,7 +274,7 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
     settings,
   );
   const threshold = backlogThreshold(settings, learner.sessionLength);
-  const dueStates = learner.items.filter((state) => isDue(state, now, today) && stillThere(content, state));
+  const dueStates = learner.items.filter((state) => isDue(state, now, today) && active(state));
   const withR = dueStates.map((state) => ({ key: itemKey(state.itemType, state.itemId), r: retrievability(state.fsrs, now, settings) }));
   let spread: BuildEffects["spread"] = [];
   let lastSpreadDate = learner.enrollment.lastSpreadDate;
@@ -269,11 +303,11 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
       wordsBlocked = true;
       capPromptShown = true;
     } else {
-      const effects = { paceMode: pace.mode, backlog, becameSlow: pace.becameSlow, spread, lastSpreadDate, wordsCapToday, capPromptShown: true };
+      const effects = { paceMode: pace.mode, backlog, becameSlow: pace.becameSlow, spread, lastSpreadDate, wordsCapToday, capPromptShown: true, unbuildable: [] };
       return { kind: "ask_word_cap", learned: learner.today.newWords, canMore: wordsCapToday < hard, effects };
     }
   }
-  const effects: BuildEffects = { paceMode: pace.mode, backlog, becameSlow: pace.becameSlow, spread, lastSpreadDate, wordsCapToday, capPromptShown };
+  const effects: BuildEffects = { paceMode: pace.mode, backlog, becameSlow: pace.becameSlow, spread, lastSpreadDate, wordsCapToday, capPromptShown, unbuildable: [] };
 
   const entries: Entry[] = [];
   const planItems: Record<string, PlanItem> = {};
@@ -292,6 +326,11 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
   // ── Reviews (step 4), R ascending, with the round cap; a grammar session is bound by its time only (DECISIONS.md) ──
   const roundCap = scope === "grammar" ? Number.POSITIVE_INFINITY : Math.ceil((num(settings, "cap.rounds_per_5min") * lengthMin) / 5);
   let rounds = 0;
+  // Without sound some items may have nothing to show; with sound every due item should.
+  const unbuildable = (key: string) => {
+    if (ctx.audio) effects.unbuildable.push(key);
+    return null;
+  };
   const dueEntry = (key: string): Entry | null => {
     const state = states.get(key)!;
     const { type, id } = parseItemKey(key);
@@ -299,7 +338,7 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
       if (!wantWords) return null;
       const word = content.words.get(id)!;
       const built = wordItem(ctx, word, state.step, false);
-      if (!built.primary) return null;
+      if (!built.primary) return unbuildable(key);
       const alt = altOf(ctx, built.primary, () => pickWordEx(env, word, state.step, "review", { audio: false }));
       return { t: "single", key, kind: "review", ex: built.primary, alt, step: state.step, cost: exCost(settings, [built.primary, built.item.followup]), planItem: built.item };
     }
@@ -307,7 +346,7 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
       if (!wantGrammar) return null;
       const table = content.conjugations.find((item) => item.id === id)!;
       const built = conjItem(ctx, table, state.step, false);
-      if (!built.primary) return null;
+      if (!built.primary) return unbuildable(key);
       return {
         t: "single",
         key,
@@ -322,7 +361,7 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
     if (!wantGrammar || rounds >= roundCap) return null;
     const unit = content.units.find((item) => item.id === id)!;
     const round = buildRound(env, unit, state.step, { audio: ctx.audio });
-    if (!round) return null;
+    if (!round) return unbuildable(key);
     // The lesson comes again before the round of a unit that failed its first round or is stuck (PRD §6.2, §9.2).
     const lesson = isNewCard(state.fsrs) || (state.roundsCount >= num(settings, "grammar.unlock_after_rounds") && state.step < 2);
     return { t: "round", key, step: round.step, questions: round.questions, alts: round.alts, lesson, cost: exCost(settings, round.questions) + (lesson ? num(settings, "time.grammar_lesson") : 0) };
@@ -354,7 +393,7 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
       if (!target) return null;
       const unit = content.units.find((item) => item.id === target.targetId);
       const state = unit ? states.get(itemKey("grammar_unit", unit.id)) : undefined;
-      if (!unit || !state || inPlan.has(itemKey("grammar_unit", unit.id))) return null;
+      if (!unit || !state || !active(state) || inPlan.has(itemKey("grammar_unit", unit.id))) return null;
       const ex = pickTargetEx(env, unit, target, state.step, { audio: ctx.audio });
       if (!ex) return null;
       return {
@@ -373,7 +412,7 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
       const key = itemKey("conjugation", note.refId);
       const table = content.conjugations.find((item) => item.id === note.refId);
       const state = states.get(key);
-      if (!table || !state || inPlan.has(key)) return null;
+      if (!table || !state || !active(state) || inPlan.has(key)) return null;
       const built = conjItem(ctx, table, state.step, false);
       const ex = pickConjEx(env, table, state.step, "practice", { audio: ctx.audio });
       if (!ex) return null;
@@ -393,7 +432,7 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
     const key = itemKey("word", note.refId);
     const word = content.words.get(note.refId);
     const state = states.get(key);
-    if (!word || !state || inPlan.has(key)) return null;
+    if (!word || !state || !active(state) || inPlan.has(key)) return null;
     const built = wordItem(ctx, word, state.step, false);
     const ex = note.refType === "word_gender" ? buildWordEx(env, word, "W2d") : pickWordEx(env, word, state.step, "practice", { audio: ctx.audio });
     if (!ex) return null;
@@ -419,7 +458,7 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
   if (scope === "extra") {
     for (const key of learner.touchedToday) {
       const state = states.get(key);
-      if (!state || !stillThere(content, state) || inPlan.has(key)) continue;
+      if (!state || !active(state) || inPlan.has(key)) continue;
       const { type, id } = parseItemKey(key);
       let entry: Entry | null = null;
       if (type === "word") {

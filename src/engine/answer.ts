@@ -37,7 +37,6 @@ export function newItemState(itemType: ItemType, itemId: number, now: Date, sour
     firstReviewDone: false,
     typedOnce: false,
     deferredUntil: null,
-    frozen: false,
     nearStreak: 0,
     failCount: 0,
     roundsCount: 0,

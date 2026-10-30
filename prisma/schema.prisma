@@ -1075,7 +1075,6 @@ model ItemState {
   first_review_done Boolean    @default(false)
   typed_once        Boolean    @default(false)
   deferred_until    DateTime?  @db.Timestamptz(3)
-  frozen            Boolean    @default(false)
   near_streak       Int        @default(0)
   fail_count        Int        @default(0)
   rounds_count      Int        @default(0)

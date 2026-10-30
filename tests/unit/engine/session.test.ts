@@ -8,7 +8,7 @@ import { newItemState } from "@/engine/answer";
 import type { Ex } from "@/engine/ex";
 import { emptyCard, rateCard, retrievability, withDue } from "@/engine/fsrs";
 import { seeded } from "@/engine/random";
-import { backlogThreshold, buildSession, nextSkill, sessionCaps, type BuildOptions, type BuildResult } from "@/engine/session/build";
+import { activeCards, backlogThreshold, buildSession, nextSkill, noteCard, sessionCaps, type BuildOptions, type BuildResult } from "@/engine/session/build";
 import { nextNewWords } from "@/engine/session/newmaterial";
 import { insertLater, mayFollow } from "@/engine/session/advance";
 import { playCard, shownEx, wantsAlt, type PlayEnv } from "@/engine/session/play";
@@ -420,6 +420,58 @@ describe("changes in the middle of a session (PRD §9.10, §10.7)", () => {
     const end = played.results.find((result) => result.round && result.card.item === "u:1");
     expect(end?.round).toMatchObject({ scored: true, stepBefore: 2, stepAfter: 3 });
     expect(played.learner.items.find((item) => item.itemType === "grammar_unit")).toMatchObject({ step: 3, roundsCount: 1 });
+  });
+
+  it("a due unit with nothing to ask is left out and reported for the teacher; without sound it is not", () => {
+    const bare = { ...content, unitTargets: new Map([...content.unitTargets].filter(([id]) => id !== 1)), transforms: content.transforms.filter((item) => item.unitId !== 1), translates: content.translates.filter((item) => item.unitId !== 1) };
+    const items = [learned("grammar_unit", 1, s, { step: 2 })];
+    const built = buildSession(bare, learner(15, { items }), s, NOW, TODAY, opts({ scope: "grammar" }));
+    expect(built.effects.unbuildable).toEqual(["u:1"]);
+    expect(built.kind === "plan" && built.plan.queue.some((card) => card.item === "u:1")).toBe(false);
+    expect(buildSession(bare, learner(15, { items }), s, NOW, TODAY, opts({ scope: "grammar", noAudio: true })).effects.unbuildable).toEqual([]);
+  });
+});
+
+describe("frozen cards (PRD §13.5–§13.7)", () => {
+  const s = settings();
+  const base = syntheticContent();
+  const a1 = cardWords(base).filter((id) => base.words.get(id)!.level === "A1");
+  const a2 = cardWords(base).filter((id) => base.words.get(id)!.level === "A2");
+  const unitA2 = base.units.find((unit) => unit.level === "A2")!;
+  const table = base.conjugations.find((item) => item.reviewCard)!;
+
+  it("a card is frozen when its item is gone, has no card, is a table without review card, or its level is closed", () => {
+    const closed = syntheticContent({ openLevels: ["A1"] });
+    const live = activeCards(closed);
+    expect(live({ itemType: "word", itemId: a1[0] })).toBe(true);
+    expect(live({ itemType: "word", itemId: a2[0] })).toBe(false);
+    expect(live({ itemType: "grammar_unit", itemId: unitA2.id })).toBe(false);
+    const open = activeCards(base);
+    expect(open({ itemType: "word", itemId: a2[0] })).toBe(true);
+    expect(open({ itemType: "word", itemId: 999_999 })).toBe(false);
+    expect(open({ itemType: "word", itemId: [...base.words.values()].find((word) => word.noCard)!.id })).toBe(false);
+    expect(open({ itemType: "conjugation", itemId: table.id })).toBe(true);
+    const off = { ...base, conjugations: base.conjugations.map((item) => (item.id === table.id ? { ...item, reviewCard: false } : item)) };
+    expect(activeCards(off)({ itemType: "conjugation", itemId: table.id })).toBe(false);
+    // A table belongs to its unit's level.
+    const unitOf = base.units.find((unit) => unit.unitCode === table.unitCode)!;
+    expect(activeCards(syntheticContent({ openLevels: base.levels.filter((level) => level !== unitOf.level) }))({ itemType: "conjugation", itemId: table.id })).toBe(false);
+  });
+
+  it("a frozen card is not due, not practised from the notebook, and comes back when its level opens again", () => {
+    const items = [...a1.slice(0, 3), ...a2.slice(0, 3)].map((id) => learned("word", id, s));
+    const notebook: NotebookE[] = [a2[0], a1[0]].map((id) => ({ refType: "word", refId: id, addedAt: plusDays(NOW, -1).toISOString(), until: plusDays(NOW, 20).toISOString(), correctCount: 0, lastCorrectDate: null }));
+    const closed = syntheticContent({ openLevels: ["A1"] });
+    const shownItems = (content: Content, scope: BuildOptions["scope"]) => new Set(planOf(buildSession(content, learner(15, { items, notebook }), s, NOW, TODAY, opts({ scope }))).queue.map((card) => card.item));
+    const frozen = shownItems(closed, "mixed");
+    for (const id of a2.slice(0, 3)) expect(frozen.has(itemKey("word", id))).toBe(false);
+    for (const id of a1.slice(0, 3)) expect(frozen.has(itemKey("word", id))).toBe(true);
+    expect([...shownItems(closed, "notebook")]).toEqual([itemKey("word", a1[0])]);
+    const back = shownItems(base, "mixed");
+    for (const id of a2.slice(0, 3)) expect(back.has(itemKey("word", id))).toBe(true);
+    // A grammar target's entry belongs to its unit.
+    const target = [...base.targets.values()].find((item) => item.type === "grammar")!;
+    expect(noteCard(base, { ...notebook[0], refType: "grammar_target", refId: target.id })).toEqual({ itemType: "grammar_unit", itemId: target.targetId });
   });
 });
 

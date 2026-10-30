@@ -1,7 +1,7 @@
 import { hasCard, levelIndex } from "@/engine/content";
 import { grammarLevel, grammarProgress, indexItems, overallLevel, vocabProgress } from "@/engine/levels";
 import { openEntries } from "@/engine/notebook";
-import { isDue } from "@/engine/session/build";
+import { activeCards, isDue, noteCard } from "@/engine/session/build";
 import { introducedCardWords } from "@/engine/session/newmaterial";
 import { num } from "@/engine/settings";
 import type { SkillName } from "@/engine/state";
@@ -80,7 +80,8 @@ export async function homeData(user: Learner, language: LanguageCode, now = new 
 
   const vocabSkill = learner.skills.find((skill) => skill.skill === "vocab")!;
   const vocab = vocabProgress(content, items, vocabSkill, settings);
-  const dueOf = (type: string) => learner.items.filter((item) => item.itemType === type && isDue(item, now, today)).length;
+  const live = activeCards(content);
+  const dueOf = (type: string) => learner.items.filter((item) => item.itemType === type && isDue(item, now, today) && live(item)).length;
   const fromStart = levelIndex(content, vocabSkill.knownBelow) <= 0;
   const introduced = introducedCardWords(content, learner.items);
   const gate = num(settings, "gate.grammar_words");
@@ -129,7 +130,10 @@ export async function homeData(user: Learner, language: LanguageCode, now = new 
     locked: !(await canPractice(db, user, enrollment, now)),
     skills,
     links: {
-      notebook: openEntries(learner.notebook, now).length,
+      notebook: openEntries(learner.notebook, now).filter((note) => {
+        const card = noteCard(content, note);
+        return !!card && live(card);
+      }).length,
       words: learner.items.filter((item) => item.itemType === "word" && content.words.get(item.itemId) && hasCard(content.words.get(item.itemId)!)).length,
       lessons: learner.items.filter((item) => item.itemType === "grammar_unit").length,
     },

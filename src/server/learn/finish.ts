@@ -1,6 +1,6 @@
 import { hasCard, levelIndex } from "@/engine/content";
 import { grammarLevel, indexItems, vocabLevelUp } from "@/engine/levels";
-import { isDue } from "@/engine/session/build";
+import { activeCards, isDue } from "@/engine/session/build";
 import { num } from "@/engine/settings";
 import { finishDay } from "@/engine/streak";
 import { addDays, tehranDate, tehranDayStart } from "@/engine/time";
@@ -103,7 +103,8 @@ export async function finishSession(tx: Tx, row: Session, plan: StoredPlan, ctx:
   for (const word of content.words.values()) if (hasCard(word) && (introduced.has(word.id) || levelIndex(content, word.level) < below)) knownWords++;
 
   const tomorrow = addDays(today, 1);
-  const dueTomorrow = items.filter((item) => isDue(item, tehranDayStart(tomorrow), tomorrow)).length;
+  const active = activeCards(content);
+  const dueTomorrow = items.filter((item) => isDue(item, tehranDayStart(tomorrow), tomorrow) && active(item)).length;
   const counts = dailyOf(daily, today);
 
   const end: EndSummary = {

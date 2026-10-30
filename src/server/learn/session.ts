@@ -9,6 +9,7 @@ import { parseItemKey, type LearnerSnapshot } from "@/engine/state";
 import { tehranDate } from "@/engine/time";
 import type { Prisma, Session } from "@/generated/prisma/client";
 import { db } from "@/server/db";
+import { logError } from "@/server/errors";
 import { engineSettings } from "@/server/settings/read";
 import { canPractice, startTrialIfFirst } from "./access";
 import { learnerContent, type Audience } from "./content";
@@ -161,6 +162,10 @@ export async function startSession(user: Learner, request: StartRequest, now = n
   if (!learner) return { kind: "not_enrolled" };
   const id = randomUUID();
   const built = buildSession(ctx.content, learner, ctx.settings, now, ctx.today, { scope, lengthMin: learner.sessionLength, noAudio: request.noAudio, cap: request.cap, seed: id });
+  if (built.effects.unbuildable.length > 0) {
+    // The learner never notices (the item waits); the teacher sees it on «خطاها» (PRD §15.9).
+    void logError("learn.build", new Error(`Due items with no exercise (${language}): ${built.effects.unbuildable.join(", ")}`), { userId: user.id });
+  }
   if (built.kind === "plan") {
     const stored: StoredPlan = { ...built.plan, start: startInfo(ctx.content, learner, ctx.settings) };
     const row = await db.$transaction(async (tx) => {

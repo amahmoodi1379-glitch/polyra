@@ -20,7 +20,6 @@ export type ItemStateE = {
   firstReviewDone: boolean;
   typedOnce: boolean;
   deferredUntil: string | null;
-  frozen: boolean;
   nearStreak: number;
   failCount: number;
   roundsCount: number;

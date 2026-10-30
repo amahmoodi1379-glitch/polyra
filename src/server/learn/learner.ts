@@ -71,7 +71,6 @@ export function itemStateOf(row: {
   first_review_done: boolean;
   typed_once: boolean;
   deferred_until: Date | null;
-  frozen: boolean;
   near_streak: number;
   fail_count: number;
   rounds_count: number;
@@ -87,7 +86,6 @@ export function itemStateOf(row: {
     firstReviewDone: row.first_review_done,
     typedOnce: row.typed_once,
     deferredUntil: row.deferred_until?.toISOString() ?? null,
-    frozen: row.frozen,
     nearStreak: row.near_streak,
     failCount: row.fail_count,
     roundsCount: row.rounds_count,
@@ -105,7 +103,6 @@ export function itemStateRow(state: ItemStateE) {
     first_review_done: state.firstReviewDone,
     typed_once: state.typedOnce,
     deferred_until: state.deferredUntil ? new Date(state.deferredUntil) : null,
-    frozen: state.frozen,
     near_streak: state.nearStreak,
     fail_count: state.failCount,
     rounds_count: state.roundsCount,
