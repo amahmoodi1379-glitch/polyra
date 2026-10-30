@@ -1,3 +1,4 @@
+import { isCardRegister } from "@/engine/content";
 import type { Mastery, Prisma } from "@/generated/prisma/client";
 import { fold } from "@/engine/tokens";
 import { t } from "@/i18n";
@@ -176,15 +177,15 @@ export const words: ContentKind = {
         if (!base || fold(base.lemma) !== fold(word.lemma)) item.problems.push(problem("senseOfUnknown", { code: word.sense_of }));
       }
     }
-    // A colloquial word needs a standard word with the same concept (PRD §13.3).
+    // A colloquial word needs a card word with the same concept (PRD §13.3).
     const standardConcepts = new Set(
-      rows.filter((row) => row.register === "standard" && row.concept_id).map((row) => concepts.get(row.concept_id!)),
+      rows.filter((row) => isCardRegister(row.register) && row.concept_id).map((row) => concepts.get(row.concept_id!)),
     );
     for (const item of checked) {
-      if (item.problems.length === 0 && item.word.register === "standard") standardConcepts.add(item.word.concept_fa);
+      if (item.problems.length === 0 && isCardRegister(item.word.register)) standardConcepts.add(item.word.concept_fa);
     }
     for (const item of checked) {
-      if (item.word.register !== "standard" && !standardConcepts.has(item.word.concept_fa)) {
+      if (!isCardRegister(item.word.register) && !standardConcepts.has(item.word.concept_fa)) {
         item.problems.push(problem("colloquialWithoutStandard", { code: item.word.code, concept: item.word.concept_fa }));
       }
     }

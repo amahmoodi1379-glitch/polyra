@@ -1,8 +1,8 @@
 import { randomUUID } from "node:crypto";
-import { applyRound, newItemState } from "@/engine/answer";
 import type { Content } from "@/engine/content";
 import { grammarLevel, grammarProgress, indexItems, vocabProgress } from "@/engine/levels";
 import { buildSession, type BuildEffects, type BuildOptions } from "@/engine/session/build";
+import { closeRounds } from "@/engine/session/play";
 import type { Scope, SessionPlan } from "@/engine/session/types";
 import { num, type Settings } from "@/engine/settings";
 import { parseItemKey, type LearnerSnapshot } from "@/engine/state";
@@ -230,11 +230,7 @@ export async function closeSession(row: Session, reason: "finished" | "expired" 
     const plan = row.plan as unknown as StoredPlan;
     const who = { userId: row.user_id, language: row.language };
     if (reason !== "finished") {
-      for (const [block, round] of Object.entries(plan.rounds)) {
-        if (round.answers.length === 0 || !plan.queue.some((card) => card.block === block)) continue;
-        const { id } = parseItemKey(round.item);
-        const before = plan.states[round.item] ?? newItemState("grammar_unit", id, endedAt);
-        const outcome = applyRound(before, round.step, round.answers, { settings: ctx.settings, now: endedAt, today: tehranDate(endedAt), latency: plan.latency }, round.last);
+      for (const outcome of closeRounds(plan, { settings: ctx.settings, now: endedAt, today: tehranDate(endedAt), latency: plan.latency })) {
         if (outcome.scored) {
           const isNew = await saveItemState(client, who, outcome.state);
           if (isNew) await addDaily(client, who, tehranDate(endedAt), { new_units: 1 });

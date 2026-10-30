@@ -1,3 +1,4 @@
+import { CARD_REGISTERS, isCardRegister } from "@/engine/content";
 import type { ContentStatus, TokenKind } from "@/generated/prisma/client";
 import { t, type MessageKey } from "@/i18n";
 import { isolateLatin } from "@/lib/bidi";
@@ -163,10 +164,21 @@ async function words(loader: Loader, scope: CheckScope): Promise<CheckedItem[]> 
       status: true,
       no_card: true,
       dup_of_id: true,
+      register: true,
+      concept_id: true,
     },
   });
   if (rows.length === 0) return [];
   const min = await engineNumber("publish.word_min_targets");
+  // A colloquial word has no sentences; it needs its card word of the same concept ready (PRD §5.4, DECISIONS.md).
+  const concepts = rows.filter((row) => !isCardRegister(row.register) && row.concept_id).map((row) => row.concept_id!);
+  const twins = concepts.length
+    ? await tx.word.findMany({
+        where: { language, concept_id: { in: concepts }, register: { in: [...CARD_REGISTERS] }, dup_of_id: null, status: { in: readyStatuses } },
+        select: { concept_id: true },
+      })
+    : [];
+  const twinReady = new Set(twins.map((row) => row.concept_id));
   const targets = await tx.sentenceTarget.groupBy({
     by: ["target_id"],
     where: { target_type: "word", target_id: { in: rows.map((row) => row.id) }, status: { not: "retired" }, sentence: { status: { in: readyStatuses } } },
@@ -180,7 +192,9 @@ async function words(loader: Loader, scope: CheckScope): Promise<CheckedItem[]> 
     if (word.pos === "noun" && !word.gender) reasons.push(reason("noGender"));
     if (language === "de" && word.pos === "noun" && word.number === "sg" && !word.plural) reasons.push(reason("noPlural"));
     const count = counts.get(word.id) ?? 0;
-    if (!word.no_card && count < min) reasons.push(reason("wordTargets", { count, min }));
+    if (!isCardRegister(word.register)) {
+      if (!word.concept_id || !twinReady.has(word.concept_id)) reasons.push(reason("noStandardTwin"));
+    } else if (!word.no_card && count < min) reasons.push(reason("wordTargets", { count, min }));
     return { slug: "words", id: word.id, title: word.lemma, voice: "target", level: word.level, status: word.status, reasons };
   });
 }

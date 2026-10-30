@@ -2,8 +2,11 @@
  * A learner kept in memory, for engine tests and the simulator: what the server keeps in the
  * database, changed the same way after every card.
  */
+import type { Content } from "../../src/engine/content";
+import { indexItems, levelsAfter } from "../../src/engine/levels";
 import { applyNotebook } from "../../src/engine/notebook";
-import type { PlayResult } from "../../src/engine/session/play";
+import { closeRounds, type PlayResult } from "../../src/engine/session/play";
+import type { SessionPlan } from "../../src/engine/session/types";
 import type { ItemHistory, LearnerSnapshot } from "../../src/engine/state";
 import type { Settings } from "../../src/engine/settings";
 
@@ -71,8 +74,9 @@ export function record(learner: LearnerSnapshot, result: Extract<PlayResult, { d
       else next.today.newConj++;
     }
     next.items = [...next.items.filter((item) => !(item.itemType === state.itemType && item.itemId === state.itemId)), state];
-    if (!next.touchedToday.includes(key)) next.touchedToday = [...next.touchedToday, key];
   };
+  // Today's items, as the server reads them from today's review log (every card but a notebook sentence).
+  if (!key.startsWith("t:") && !next.touchedToday.includes(key)) next.touchedToday = [...next.touchedToday, key];
   if (result.state) upsert(result.state);
   if (result.roundState) upsert(result.roundState);
   if (result.notebook.length) next.notebook = applyNotebook(next.notebook, result.notebook, now, today, settings);
@@ -99,4 +103,29 @@ export function record(learner: LearnerSnapshot, result: Extract<PlayResult, { d
     next.paceReviews = [...next.paceReviews, { ok: result.round.s >= 0.6, firstTyping: false }].slice(-200);
   }
   return next;
+}
+
+/** A session left before its end, closed as the server closes it (`closeSession`): rounds left half-way are scored or noted. */
+export function closeLeft(learner: LearnerSnapshot, plan: SessionPlan, settings: Settings, at: Date, today: string): LearnerSnapshot {
+  let next = learner;
+  for (const outcome of closeRounds(plan, { settings, now: at, today, latency: plan.latency })) {
+    if (outcome.scored) {
+      const state = outcome.state;
+      const isNew = !next.items.some((item) => item.itemType === state.itemType && item.itemId === state.itemId);
+      next = {
+        ...next,
+        items: [...next.items.filter((item) => !(item.itemType === state.itemType && item.itemId === state.itemId)), state],
+        today: isNew ? { ...next.today, newUnits: next.today.newUnits + 1 } : next.today,
+      };
+    }
+    if (outcome.notebook.length) next = { ...next, notebook: applyNotebook(next.notebook, outcome.notebook, at, today, settings) };
+  }
+  return next;
+}
+
+/** A finished session moves the skill levels up, as `finishSession` does. */
+export function finishLevels(learner: LearnerSnapshot, content: Content, settings: Settings): LearnerSnapshot {
+  const moved = levelsAfter(content, indexItems(learner.items), learner.skills, settings);
+  if (!moved.vocab && !moved.grammar) return learner;
+  return { ...learner, skills: learner.skills.map((skill) => ({ ...skill, level: (skill.skill === "vocab" ? moved.vocab : skill.skill === "grammar" ? moved.grammar : null) ?? skill.level })) };
 }

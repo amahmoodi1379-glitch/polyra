@@ -18,6 +18,7 @@
     "seed": "tsx scripts/seed/index.ts",
     "make-admin": "tsx scripts/make-admin.ts",
     "demo": "tsx scripts/demo.ts",
+    "simulate": "tsx scripts/simulate.ts",
     "postinstall": "prisma generate"
   },
   "dependencies": {

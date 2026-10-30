@@ -2,7 +2,7 @@ import { newItemState, strongestPartner } from "../answer";
 import { buildG0, buildWordEx, type BuildEnv } from "../build";
 import { genderButtons, levelIndex, type ConjC, type Content, type UnitC, type WordC } from "../content";
 import type { Ex } from "../ex";
-import { exerciseDef, SHAPE } from "../exercises";
+import { exerciseDef, SHAPE, type TimeKey } from "../exercises";
 import { isNewCard, retrievability } from "../fsrs";
 import { grammarProgress, grammarLevel, indexItems, vocabProgress, type ItemIndex } from "../levels";
 import { notebookOrder, openEntries } from "../notebook";
@@ -66,6 +66,7 @@ type Ctx = {
 };
 
 const time = (settings: Settings, ex: Ex | null | undefined) => (ex ? num(settings, exerciseDef(ex.code).time) : 0);
+const TIME_KEYS: TimeKey[] = ["time.choice", "time.type_word", "time.type_sentence", "time.arrange"];
 const exCost = (settings: Settings, list: (Ex | null | undefined)[]) =>
   list.reduce((sum, ex) => sum + (ex ? (ex.code === "G0" ? num(settings, "time.g0") : time(settings, ex)) : 0), 0);
 
@@ -253,6 +254,12 @@ function conjItem(ctx: Ctx, table: ConjC, step: number, isNew: boolean): { prima
   };
 }
 
+/**
+ * A speed bound, not tuning (DECISIONS.md): after this many due items in a row that do not fit the
+ * time left, the rest of a long backlog waits without being built.
+ */
+const MISSES = 24;
+
 const altOf = (ctx: Ctx, ex: Ex, rebuild: () => Ex | null) => (ex.audio && ctx.audio ? rebuild() : null);
 
 // ───────────────────────────── the build ─────────────────────────────
@@ -261,6 +268,8 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
   const { scope } = opts;
   const lengthMin = scope === "quick" ? num(settings, "quick.minutes") : opts.lengthMin;
   const budget = lengthMin * 60;
+  /** The shortest exercise: below it nothing more fits. */
+  const minCost = Math.min(...TIME_KEYS.map((key) => num(settings, key)));
   const env = makeEnv(content, learner, settings, seeded(opts.seed, "build"));
   const items = indexItems(learner.items);
   const states = new Map(learner.items.map((item) => [itemKey(item.itemType, item.itemId), item]));
@@ -371,15 +380,24 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
   const leftover: string[] = [];
   const dueKeys = [...eligible].sort((a, b) => a.r - b.r).map((item) => item.key);
   if (scope !== "notebook" && scope !== "extra") {
+    let misses = 0;
     for (const key of dueKeys) {
+      const room = (scope === "quick" ? budget : reviewBudget) - spent;
+      // Once not even the shortest exercise fits, or many in a row have not, the rest wait without being built (a long backlog).
+      if (room < minCost || misses >= MISSES) {
+        leftover.push(key);
+        continue;
+      }
       const entry = dueEntry(key);
       if (!entry) continue;
-      if (spent + entry.cost <= (scope === "quick" ? budget : reviewBudget)) {
+      if (entry.cost <= room) {
         add(entry);
         if (entry.t === "round") rounds++;
         spent += entry.cost;
+        misses = 0;
       } else {
         leftover.push(key);
+        misses++;
       }
     }
   }
@@ -444,6 +462,10 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
     const noteBudget = scope === "notebook" ? budget : scope === "quick" ? budget - used : share("notebook") * budget;
     let noteSpent = 0;
     for (const note of entriesOpen) {
+      if (noteBudget - noteSpent < minCost) {
+        noteLeft.push(note);
+        continue;
+      }
       const entry = noteEntry(note);
       if (!entry) continue;
       if (noteSpent + entry.cost <= noteBudget) {
@@ -504,6 +526,8 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
     let left = budget - used;
     const known = (wordId: number) => env.known(wordId) || chosenWords.includes(wordId);
     let queueUsed = 0;
+    /** What a pack may cost: the time left and a little more (PRD §10.2, `session.overrun`). */
+    const room = () => left * (1 + num(settings, "session.overrun"));
 
     const vocabPack = (): Entry[] | null => {
       if (wordRoom <= 0) return null;
@@ -513,11 +537,15 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
         [...chosenWords].reverse().concat(learner.recentIntroWordIds),
       );
       const out: Entry[] = [];
+      let total = 0;
       for (const word of words) {
         const built = wordItem(ctx, word, 1, true);
         if (!built.primary) continue;
         const alt = altOf(ctx, built.primary, () => pickWordEx(env, word, 1, "review", { audio: false }));
         const cost = num(settings, "time.intro_card") + exCost(settings, [built.primary, built.item.followup]);
+        // "Up to three": a short session in backlog mode still gets the one or two that fit (PRD §10.6 example, T21).
+        if (total + cost > room()) break;
+        total += cost;
         out.push({ t: "newword", key: itemKey("word", word.id), word, ex: built.primary, alt, cost, planItem: built.item });
       }
       return out.length ? out : null;
@@ -533,10 +561,13 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
       if (conjRoom <= 0) return null;
       const tables = conjCandidates(content, chosenUnits, chosenConj, known).slice(0, Math.min(SHAPE.packConj, conjRoom));
       const out: Entry[] = [];
+      let total = 0;
       for (const table of tables) {
         const built = conjItem(ctx, table, 1, true);
         if (!built.primary) continue;
         const cost = num(settings, "time.intro_card") + exCost(settings, [built.primary, built.item.followup]);
+        if (total + cost > room()) break;
+        total += cost;
         out.push({ t: "newconj", key: itemKey("conjugation", table.id), table, ex: built.primary, cost, planItem: built.item });
       }
       return out.length ? out : null;
@@ -547,7 +578,7 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
       first = false;
       const pack = skill === "vocab" ? vocabPack() : grammarPack();
       const cost = pack?.reduce((sum, entry) => sum + entry.cost, 0) ?? 0;
-      if (!pack || cost > left * (1 + num(settings, "session.overrun"))) {
+      if (!pack || cost > room()) {
         skills.delete(skill);
         continue;
       }
@@ -575,14 +606,21 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
 
   // ── What is left (step 8): more reviews, then more notebook ──
   if (scope !== "notebook" && scope !== "extra") {
+    let misses = 0;
     for (const key of leftover) {
+      if (budget - used < minCost || misses >= MISSES) break;
+      // A notebook entry may have taken the item meanwhile: one card per item (rule 14).
+      if (inPlan.has(key)) continue;
       const entry = dueEntry(key);
-      if (entry && used + entry.cost <= budget) {
+      if (!entry) continue;
+      if (used + entry.cost <= budget) {
         add(entry);
         if (entry.t === "round") rounds++;
-      }
+        misses = 0;
+      } else misses++;
     }
     for (const note of noteLeft) {
+      if (budget - used < minCost) break;
       const entry = noteEntry(note);
       if (entry && !inPlan.has(entry.key) && used + entry.cost <= budget) add(entry);
     }

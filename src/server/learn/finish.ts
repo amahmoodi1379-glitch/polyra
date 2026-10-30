@@ -1,5 +1,5 @@
 import { hasCard, levelIndex } from "@/engine/content";
-import { grammarLevel, indexItems, vocabLevelUp } from "@/engine/levels";
+import { indexItems, levelsAfter } from "@/engine/levels";
 import { activeCards, isDue } from "@/engine/session/build";
 import { num } from "@/engine/settings";
 import { finishDay } from "@/engine/streak";
@@ -59,23 +59,16 @@ export async function finishSession(tx: Tx, row: Session, plan: StoredPlan, ctx:
   const index = indexItems(items);
   const skills = skillsOf(skillRows, content.levels[0]);
   const vocab = skills.find((skill) => skill.skill === "vocab")!;
-  const up = vocabLevelUp(content, index, vocab, settings);
-  if (up) {
-    vocab.level = up;
+  const moved = levelsAfter(content, index, skills, settings);
+  for (const skill of ["vocab", "grammar"] as const) {
+    const level = moved[skill];
+    const row = skills.find((item) => item.skill === skill)!;
+    if (!level) continue;
+    row.level = level;
     await tx.skillLevel.upsert({
-      where: { user_id_language_skill: { ...where, skill: "vocab" } },
-      create: { ...where, skill: "vocab", level: up, known_below: vocab.knownBelow },
-      update: { level: up },
-    });
-  }
-  const grammar = skills.find((skill) => skill.skill === "grammar")!;
-  const reached = grammarLevel(content, index);
-  if (levelIndex(content, reached) > levelIndex(content, grammar.level)) {
-    grammar.level = reached;
-    await tx.skillLevel.upsert({
-      where: { user_id_language_skill: { ...where, skill: "grammar" } },
-      create: { ...where, skill: "grammar", level: reached, known_below: grammar.knownBelow },
-      update: { level: reached },
+      where: { user_id_language_skill: { ...where, skill } },
+      create: { ...where, skill, level, known_below: row.knownBelow },
+      update: { level },
     });
   }
 

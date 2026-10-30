@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { CARD_REGISTERS, isCardRegister } from "@/engine/content";
 import { Prisma } from "@/generated/prisma/client";
 import { spokenWord } from "@/lib/spoken";
 import { filled, gender, grammaticalNumber, levelCode, mastery, optionalText, pos, register } from "@/schemas/common";
@@ -133,9 +134,9 @@ export const wordEditor: Editor<WordValues, WordContext> = {
         if (unknown.length > 0) problems.push(problem("partsUnknown", { codes: unknown.join("، "), field: "parts" }));
       }
       if (values.meaning_fa && !values.concept_fa) problems.push(problem("missing", { field: "concept_fa" }));
-      if (values.register !== "standard" && values.concept_fa) {
+      if (!isCardRegister(values.register) && values.concept_fa) {
         const standard = await tx.word.count({
-          where: { language, id: { not: id }, register: "standard", status: { not: "retired" }, concept: { name_fa: values.concept_fa } },
+          where: { language, id: { not: id }, register: { in: [...CARD_REGISTERS] }, status: { not: "retired" }, concept: { name_fa: values.concept_fa } },
         });
         if (standard === 0) problems.push(problem("colloquialWithoutStandard", { code: row.code, concept: values.concept_fa, field: "concept_fa" }));
       }

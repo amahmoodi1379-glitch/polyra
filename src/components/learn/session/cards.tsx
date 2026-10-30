@@ -201,6 +201,7 @@ export function WordFace({ id, card, muted, autoplay, animate }: { id: string; c
       <div className={cn("word", animate && "enter")}>
         {card.knownMeaning ? <p className="known-as">{t("learn.session.knownAs", { meaning: card.knownMeaning })}</p> : null}
         <Headword word={word} animate={animate} />
+        {word.register && word.register !== "standard" ? <p className="known-as">{t(`learn.session.register.${word.register}`)}</p> : null}
         <p className="meaning">{word.meaning}</p>
         {word.meanings.length > 1 ? <p className="note">{word.meanings.slice(1).join("، ")}</p> : null}
         {word.noteFa ? (

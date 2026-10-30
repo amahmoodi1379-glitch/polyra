@@ -1,3 +1,4 @@
+import { isCardRegister } from "@/engine/content";
 import { db } from "@/server/db";
 import { levelRank } from "../languages";
 import { lines } from "./shared";
@@ -18,7 +19,7 @@ export async function allowedWords(language: string, scope: { first: number } | 
   let allowed: typeof words;
   if ("first" in scope) {
     const ordered = words
-      .filter((word) => !word.no_card && word.register === "standard")
+      .filter((word) => !word.no_card && isCardRegister(word.register))
       .sort((a, b) => levelRank(a.level) - levelRank(b.level) || (a.intro_order ?? 1e9) - (b.intro_order ?? 1e9));
     allowed = [...ordered.slice(0, scope.first), ...words.filter((word) => word.no_card)];
   } else {

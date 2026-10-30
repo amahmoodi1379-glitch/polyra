@@ -219,5 +219,17 @@ export function playCard(plan: SessionPlan, cardId: string, answer: RawAnswer, t
     firstTyping: single.firstTyping,
     rating: single.rating ? RATING[single.rating] : null,
   };
-  return { done: true, card, ex, graded, log, single, round: null, state: single.state, roundState: null, notebook: single.notebook, pair, advanced };
+  // A practice moves neither FSRS nor the step: there is nothing to write.
+  return { done: true, card, ex, graded, log, single, round: null, state: kind === "practice" ? null : single.state, roundState: null, notebook: single.notebook, pair, advanced };
+}
+
+/**
+ * A session closed before its end (left, replaced or expired): each round left half-way is scored
+ * when it has enough answers, and its wrong sentences go to the notebook even when it is not (PRD
+ * §6.5 rule 8, §10.8). The server writes what comes back.
+ */
+export function closeRounds(plan: SessionPlan, ctx: AnswerCtx): RoundOutcome[] {
+  return Object.entries(plan.rounds)
+    .filter(([block, round]) => round.answers.length > 0 && plan.queue.some((card) => card.block === block))
+    .map(([, round]) => applyRound(plan.states[round.item] ?? newItemState("grammar_unit", parseItemKey(round.item).id, ctx.now), round.step, round.answers, ctx, round.last));
 }

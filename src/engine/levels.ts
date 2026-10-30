@@ -87,6 +87,17 @@ export function vocabLevelUp(content: Content, items: ItemIndex, vocab: SkillLev
   return knownOk && stableOk ? next : null;
 }
 
+/** The skill levels a finished session moves up (PRD §9.6, §6.2): vocabulary by its rule, grammar to its newest unit. Null: no change. */
+export function levelsAfter(content: Content, items: ItemIndex, skills: readonly SkillLevelE[], settings: Settings): { vocab: string | null; grammar: string | null } {
+  const vocab = skills.find((skill) => skill.skill === "vocab");
+  const grammar = skills.find((skill) => skill.skill === "grammar");
+  const reached = grammarLevel(content, items);
+  return {
+    vocab: vocab ? vocabLevelUp(content, items, vocab, settings) : null,
+    grammar: grammar && levelIndex(content, reached) > levelIndex(content, grammar.level) ? reached : null,
+  };
+}
+
 export type GrammarProgress = { level: string; total: number; opened: number; stable: number; progress: number; station: number; stations: number };
 
 /** Grammar level: the level of the newest unit the learner opened (PRD §6.2); the lowest when none. */

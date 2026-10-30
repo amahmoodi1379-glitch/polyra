@@ -170,6 +170,19 @@ describe("backlog (PRD §10.6)", () => {
     expect(second.effects.backlog).toBe(true);
   });
 
+  it("a backlog session with little time left for new material still gets the one or two new words that fit (PRD §10.6 example)", () => {
+    const content = syntheticContent({ perLevel: { words: [800, 100, 100, 100], units: [8, 4, 4, 4] } });
+    // 5% for new material: under a pack of three words (90 seconds), over one.
+    const s = settings({ "backlog.share.review": 0.85, "backlog.share.notebook": 0.1, "backlog.share.new": 0.05 });
+    const ids = cardWords(content);
+    const items = ids.slice(0, 400).map((id, i) => learned("word", id, s, { step: 1 + (i % 5), introDaysAgo: 3 + (i % 40) }));
+    const notebook: NotebookE[] = ids.slice(0, 20).map((id) => ({ refType: "word", refId: id, addedAt: plusDays(NOW, -1).toISOString(), until: plusDays(NOW, 20).toISOString(), correctCount: 0, lastCorrectDate: null }));
+    const built = buildSession(content, learner(10, { items, notebook }), s, NOW, TODAY, opts());
+    expect(built.effects.backlog).toBe(true);
+    expect(planOf(built).summary.newWords).toBeGreaterThan(0);
+    expect(planOf(built).summary.newWords).toBeLessThan(3);
+  });
+
   it("no backlog below the threshold: the normal shares and no spread", () => {
     const content = syntheticContent();
     const s = settings();

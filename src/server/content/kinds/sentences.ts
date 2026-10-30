@@ -1,3 +1,5 @@
+import { CARD_REGISTERS, isCardRegister } from "@/engine/content";
+import type { Prisma } from "@/generated/prisma/client";
 import { t } from "@/i18n";
 import { sentenceRecord, type SentenceTargetRecord } from "@/schemas/sentences";
 import { db } from "@/server/db";
@@ -12,8 +14,8 @@ import type { ContentKind, Tx } from "./types";
 
 type SentencesParams = { level: string; word_ids: number[] };
 
-/** Card words: standard words with a meaning that are not no_card (colloquial ones have no sentences, PRD §5.4). */
-export const cardWord = { meaning_fa: { not: null }, no_card: false, register: "standard", dup_of_id: null, status: { not: "retired" } } as const;
+/** Card words: words of a card register with a meaning that are not no_card (colloquial ones have no sentences, PRD §5.4). */
+export const cardWord = { meaning_fa: { not: null }, no_card: false, register: { in: [...CARD_REGISTERS] }, dup_of_id: null, status: { not: "retired" } } satisfies Prisma.WordWhereInput;
 /** The first words of a language get sentences made only from themselves (PRD §14.9). */
 const FIRST_WORDS = 30;
 
@@ -22,7 +24,7 @@ type OrderedCard = { id: number; level: string; intro_order: number | null; no_c
 /** The first card words a learner meets, from words that are not retired and not duplicates (PRD §14.9). */
 export function firstWordIds(words: OrderedCard[]): Set<number> {
   const ordered = words
-    .filter((word) => !word.no_card && word.register === "standard")
+    .filter((word) => !word.no_card && isCardRegister(word.register))
     .sort((a, b) => levelRank(a.level) - levelRank(b.level) || (a.intro_order ?? 1e9) - (b.intro_order ?? 1e9));
   return new Set(ordered.slice(0, FIRST_WORDS).map((word) => word.id));
 }
@@ -89,7 +91,7 @@ export const sentences: ContentKind = {
     const allowed = all.filter((word) => {
       if (targetIds.has(word.id)) return false;
       if (word.no_card) return true;
-      if (word.register !== "standard") return false;
+      if (!isCardRegister(word.register)) return false;
       if (early) return firstWords.has(word.id);
       const rank = levelRank(word.level) - levelRank(level);
       return rank < 0 || (rank === 0 && (word.intro_order ?? 1e9) < cutOrder);

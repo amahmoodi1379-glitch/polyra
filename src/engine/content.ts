@@ -179,11 +179,18 @@ export function indexContent(base: Omit<Content, "wordByCode" | "wordTargets" | 
 
 export const levelIndex = (content: Pick<Content, "levels">, level: string | null | undefined) => (level ? content.levels.indexOf(level) : -1);
 
-/** A word with a vocabulary card: standard register and not `no_card` (PRD §9.6). */
-export const hasCard = (word: WordC) => !word.noCard && word.register === "standard";
+/** Registers whose words have their own vocabulary card and sentences (PRD §9.6); the server filters on the same list. */
+export const CARD_REGISTERS: readonly WordC["register"][] = ["standard"];
+/** Registers of colloquial words, taught beside a card word of the same concept (PRD §5.4). */
+export const COLLOQUIAL_REGISTERS: readonly WordC["register"][] = ["familier", "argot"];
+
+export const isCardRegister = (register: string) => (CARD_REGISTERS as readonly string[]).includes(register);
+
+/** A word with a vocabulary card: a card register and not `no_card` (PRD §9.6). */
+export const hasCard = (word: WordC) => !word.noCard && isCardRegister(word.register);
 
 /** A colloquial word (PRD §5.4). */
-export const isColloquial = (word: WordC) => word.register === "familier" || word.register === "argot";
+export const isColloquial = (word: WordC) => COLLOQUIAL_REGISTERS.includes(word.register);
 
 /** The article and the text a noun is shown with (PRD §5.1, "نمایش اسم"). */
 export function nounArticle(word: WordC, lang: Lang): string | null {

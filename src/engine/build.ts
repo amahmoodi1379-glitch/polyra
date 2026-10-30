@@ -3,7 +3,6 @@ import {
   genderAnswer,
   genderButtons,
   hasCard,
-  isColloquial,
   levelIndex,
   nounArticle,
   PRONOUNS,
@@ -63,7 +62,7 @@ export function wordView(word: WordC, content: Content): WordView {
     plural: word.plural,
     image: word.image,
     noteFa: word.noteFa,
-    colloquial: isColloquial(word),
+    register: word.register,
     speak: word.speak,
   };
 }
@@ -149,30 +148,115 @@ const distractorsOf = (target: TargetC): string[] => (target.blanks === 1 ? (tar
 
 const meaningsOverlap = (a: WordC, b: WordC) => a.meanings.some((meaning) => b.meanings.includes(meaning));
 
+/**
+ * Up to `count` items of `list` that `ok` accepts (it also sees those taken so far), in random order:
+ * a few random draws first, then the rest of the list shuffled when they come up short. The
+ * options of an exercise never need the whole bank shuffled.
+ */
+const DRAWS = 24;
+function drawSome<T>(rng: Rng, list: readonly T[], count: number, ok: (item: T, taken: readonly T[]) => boolean): T[] {
+  const taken: T[] = [];
+  const tried = new Set<T>();
+  for (let i = 0; i < Math.min(DRAWS, list.length) && taken.length < count; i++) {
+    const item = list[Math.floor(rng() * list.length)];
+    if (tried.has(item)) continue;
+    tried.add(item);
+    if (ok(item, taken)) taken.push(item);
+  }
+  if (taken.length < count) {
+    for (const item of shuffle(rng, list)) {
+      if (taken.length >= count) break;
+      if (!tried.has(item) && ok(item, taken)) taken.push(item);
+    }
+  }
+  return taken;
+}
+
+/** Lists made once per content (and per learner for `introduced`), for drawing options. */
+type Pools = {
+  /** Card words by part of speech, each split into [introduced, not introduced], and all of them split the same way. */
+  byPos: Map<string, [WordC[], WordC[]]>;
+  all: [WordC[], WordC[]];
+  introduced: WordC[];
+};
+const poolCache = new WeakMap<Content, WeakMap<ReadonlySet<number>, Pools>>();
+function pools(env: BuildEnv): Pools {
+  let perLearner = poolCache.get(env.content);
+  if (!perLearner) poolCache.set(env.content, (perLearner = new WeakMap()));
+  let found = perLearner.get(env.introduced);
+  if (found) return found;
+  found = { byPos: new Map(), all: [[], []], introduced: [] };
+  for (const word of env.content.words.values()) {
+    if (env.introduced.has(word.id)) found.introduced.push(word);
+    if (!hasCard(word)) continue;
+    const side = env.introduced.has(word.id) ? 0 : 1;
+    let pos = found.byPos.get(word.pos);
+    if (!pos) found.byPos.set(word.pos, (pos = [[], []]));
+    pos[side].push(word);
+    found.all[side].push(word);
+  }
+  perLearner.set(env.introduced, found);
+  return found;
+}
+
+/** Words with a picture and bank sentences up to each level (index), for W2c and W3c; words by concept and by meaning. */
+type ContentPool = { pictured: WordC[]; bankUpTo: SentenceC[][]; byConcept: Map<number, WordC[]>; byMeaning: Map<string, WordC[]> };
+const contentPools = new WeakMap<Content, ContentPool>();
+function contentPool(content: Content): ContentPool {
+  let found = contentPools.get(content);
+  if (found) return found;
+  const bank = [...content.sentences.values()].filter((sentence) => sentence.bank);
+  const byConcept = new Map<number, WordC[]>();
+  const byMeaning = new Map<string, WordC[]>();
+  const add = <K,>(map: Map<K, WordC[]>, key: K, word: WordC) => {
+    const list = map.get(key);
+    if (list) list.push(word);
+    else map.set(key, [word]);
+  };
+  for (const word of content.words.values()) {
+    if (word.conceptId !== null) add(byConcept, word.conceptId, word);
+    for (const meaning of new Set(word.meanings)) add(byMeaning, meaning, word);
+  }
+  found = {
+    pictured: [...content.words.values()].filter((word) => !!word.image),
+    bankUpTo: content.levels.map((_, i) => bank.filter((sentence) => levelIndex(content, sentence.level) <= i)),
+    byConcept,
+    byMeaning,
+  };
+  contentPools.set(content, found);
+  return found;
+}
+
 /** Three words whose meaning or form serve as wrong options for this word (PRD §5.5). */
 function wrongWords(env: BuildEnv, word: WordC, field: "meaning" | "lemma"): WordC[] | null {
   const ceiling = levelIndex(env.content, env.vocabLevel);
-  const usable = (other: WordC) =>
+  const shown = (other: WordC) => (field === "meaning" ? other.meanings[0] : other.lemma);
+  const usable = (other: WordC, taken: readonly WordC[]) =>
     other.id !== word.id &&
     other.lemma.toLowerCase() !== word.lemma.toLowerCase() &&
     (other.conceptId === null || other.conceptId !== word.conceptId) &&
     !meaningsOverlap(word, other) &&
     other.meanings.length > 0 &&
-    levelIndex(env.content, other.level) <= Math.max(ceiling, levelIndex(env.content, word.level));
-  const shown = (other: WordC) => (field === "meaning" ? other.meanings[0] : other.lemma);
+    levelIndex(env.content, other.level) <= Math.max(ceiling, levelIndex(env.content, word.level)) &&
+    shown(other) !== shown(word) &&
+    !taken.some((item) => shown(item) === shown(other));
   const chosen: WordC[] = [];
-  const taken = new Set([shown(word)]);
-  const add = (other: WordC | undefined) => {
-    if (!other || chosen.length >= SHAPE.wrongOptions || !usable(other) || taken.has(shown(other))) return;
-    chosen.push(other);
-    taken.add(shown(other));
-  };
   const partner = env.confusionPartner(word.id);
-  if (partner !== null) add(env.content.words.get(partner));
-  const all = shuffle(env.rng, [...env.content.words.values()].filter(hasCard));
-  const ranked = (list: WordC[]) => [...list.filter((other) => env.introduced.has(other.id)), ...list.filter((other) => !env.introduced.has(other.id))];
-  for (const other of ranked(all.filter((other) => other.pos === word.pos))) add(other);
-  for (const other of ranked(all.filter((other) => other.pos !== word.pos))) add(other);
+  const partnerWord = partner !== null ? env.content.words.get(partner) : undefined;
+  if (partnerWord && usable(partnerWord, chosen)) chosen.push(partnerWord);
+  // Same part of speech first, words the learner has met before the others; random inside each.
+  const { byPos, all } = pools(env);
+  const same = byPos.get(word.pos) ?? [[], []];
+  const tiers: [WordC[], boolean][] = [
+    [same[0], true],
+    [same[1], true],
+    [all[0], false],
+    [all[1], false],
+  ];
+  for (const [list, samePos] of tiers) {
+    if (chosen.length >= SHAPE.wrongOptions) break;
+    chosen.push(...drawSome(env.rng, list, SHAPE.wrongOptions - chosen.length, (other, taken) => (samePos || other.pos !== word.pos) && usable(other, [...chosen, ...taken])));
+  }
   return chosen.length === SHAPE.wrongOptions ? chosen : null;
 }
 
@@ -322,11 +406,10 @@ function typedSpec(accepted: string[], opts: Partial<Extract<AnswerSpec, { kind:
 
 /** Other published words that are the same concept or share a Persian meaning (PRD §5.6, "مترادف"). */
 function synonymsOf(env: BuildEnv, word: WordC): string[] {
+  const { byConcept, byMeaning } = contentPool(env.content);
+  const near = [...(word.conceptId !== null ? (byConcept.get(word.conceptId) ?? []) : []), ...word.meanings.flatMap((meaning) => byMeaning.get(meaning) ?? [])];
   const out = new Set<string>();
-  for (const other of env.content.words.values()) {
-    if (other.id === word.id || other.lemma.toLowerCase() === word.lemma.toLowerCase()) continue;
-    if ((word.conceptId !== null && other.conceptId === word.conceptId) || meaningsOverlap(word, other)) out.add(other.lemma);
-  }
+  for (const other of near) if (other.id !== word.id && other.lemma.toLowerCase() !== word.lemma.toLowerCase()) out.add(other.lemma);
   return [...out];
 }
 
@@ -366,10 +449,7 @@ export function buildWordEx(env: BuildEnv, word: WordC, code: string): Ex | null
     }
     case "W2c": {
       if (!word.image) return null;
-      const others = shuffle(
-        env.rng,
-        [...content.words.values()].filter((other) => other.id !== word.id && other.image && other.image !== word.image && !meaningsOverlap(word, other)),
-      ).slice(0, SHAPE.wrongOptions);
+      const others = drawSome(env.rng, contentPool(content).pictured, SHAPE.wrongOptions, (other) => other.id !== word.id && other.image !== word.image && !meaningsOverlap(word, other));
       if (others.length < SHAPE.wrongOptions) return null;
       const toChoice = (item: WordC): Choice => ({ id: `w${item.id}`, text: item.meanings[0], lang: "fa", wordId: item.id, image: item.image });
       const { options, correct } = choiceSet(env, toChoice(word), others.map(toChoice));
@@ -431,20 +511,17 @@ export function buildWordEx(env: BuildEnv, word: WordC, code: string): Ex | null
       if (!sentence) return null;
       const length = sentence.translationFa.length;
       const ceiling = levelIndex(content, sentence.level);
-      const others = shuffle(
+      const wrong = drawSome(
         env.rng,
-        [...content.sentences.values()].filter(
-          (other) =>
-            other.bank &&
-            other.id !== sentence.id &&
-            other.translationFa !== sentence.translationFa &&
-            levelIndex(content, other.level) <= ceiling &&
-            !other.tokens.some((token) => token.wordId === word.id) &&
-            Math.abs(other.translationFa.length - length) <= SHAPE.translationLength * length,
-        ),
+        contentPool(content).bankUpTo[ceiling] ?? [],
+        SHAPE.wrongOptions,
+        (other, taken) =>
+          other.id !== sentence.id &&
+          other.translationFa !== sentence.translationFa &&
+          !other.tokens.some((token) => token.wordId === word.id) &&
+          Math.abs(other.translationFa.length - length) <= SHAPE.translationLength * length &&
+          !taken.some((item) => item.translationFa === other.translationFa),
       );
-      const wrong: SentenceC[] = [];
-      for (const other of others) if (wrong.length < SHAPE.wrongOptions && !wrong.some((item) => item.translationFa === other.translationFa)) wrong.push(other);
       if (wrong.length < SHAPE.wrongOptions) return null;
       const { options, correct } = choiceSet(
         env,
@@ -455,14 +532,16 @@ export function buildWordEx(env: BuildEnv, word: WordC, code: string): Ex | null
       return baseEx(env, code, key, q, { kind: "choice", options, correct }, { sentenceId: sentence.id, after });
     }
     case "W3d": {
-      const companions: WordC[] = [];
-      for (const id of shuffle(env.rng, [...env.introduced])) {
-        const other = content.words.get(id);
-        if (!other || other.id === word.id || companions.length >= SHAPE.pairCompanions) continue;
-        if (other.lemma.toLowerCase() === word.lemma.toLowerCase() || meaningsOverlap(word, other)) continue;
-        if (companions.some((item) => item.lemma.toLowerCase() === other.lemma.toLowerCase() || meaningsOverlap(item, other))) continue;
-        companions.push(other);
-      }
+      const companions = drawSome(
+        env.rng,
+        pools(env).introduced,
+        SHAPE.pairCompanions,
+        (other, taken) =>
+          other.id !== word.id &&
+          other.lemma.toLowerCase() !== word.lemma.toLowerCase() &&
+          !meaningsOverlap(word, other) &&
+          !taken.some((item) => item.lemma.toLowerCase() === other.lemma.toLowerCase() || meaningsOverlap(item, other)),
+      );
       if (companions.length < SHAPE.pairCompanions) return null;
       const group = [word, ...companions];
       const left = shuffle(env.rng, group).map((item) => wordChoice(item, "lemma"));
@@ -525,7 +604,8 @@ export function buildWordEx(env: BuildEnv, word: WordC, code: string): Ex | null
 
 /** A colloquial word's two exercises (PRD §5.4). */
 export function buildColloquialEx(env: BuildEnv, word: WordC, code: string): Ex | null {
-  const standard = [...env.content.words.values()].find((other) => other.id !== word.id && other.conceptId !== null && other.conceptId === word.conceptId && hasCard(other));
+  const twins = word.conceptId !== null ? (contentPool(env.content).byConcept.get(word.conceptId) ?? []) : [];
+  const standard = twins.find((other) => other.id !== word.id && hasCard(other));
   if (!standard) return null;
   const key = itemKey("word", word.id);
   const q: Question = { meaning: word.meanings[0], standard: displayWord(standard, env.content.language) };

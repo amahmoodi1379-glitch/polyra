@@ -1,3 +1,4 @@
+import { CARD_REGISTERS } from "@/engine/content";
 import { db } from "@/server/db";
 import type { LevelTargets } from "@/server/settings/app-catalog";
 import { appSetting } from "@/server/settings/read";
@@ -15,7 +16,7 @@ export const openStates = ["prompt_made", "pasted"] as const;
 /** Card words that have their meaning: up to a level (for "the first N words") and at the level. */
 export async function readyWords(language: string, level: string) {
   const words = await db.word.findMany({
-    where: { language, meaning_fa: { not: null }, no_card: false, register: "standard", dup_of_id: null, status: { not: "retired" } },
+    where: { language, meaning_fa: { not: null }, no_card: false, register: { in: [...CARD_REGISTERS] }, dup_of_id: null, status: { not: "retired" } },
     select: { level: true },
   });
   return { upTo: words.filter((word) => levelRank(word.level) <= levelRank(level)).length, at: words.filter((word) => word.level === level).length };

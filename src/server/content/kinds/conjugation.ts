@@ -1,3 +1,4 @@
+import { CARD_REGISTERS } from "@/engine/content";
 import type { Prisma } from "@/generated/prisma/client";
 import { fold } from "@/engine/tokens";
 import { t } from "@/i18n";
@@ -21,7 +22,7 @@ const pairKey = (wordId: number, tense: string) => `${wordId}|${fold(tense)}`;
 
 /** Verbs that get tables: card-ready verbs of the language (their meaning is in), auxiliaries included. */
 const verbFilter = (language: string) =>
-  ({ language, pos: "verb", meaning_fa: { not: null }, register: "standard", dup_of_id: null, status: { not: "retired" } }) as const;
+  ({ language, pos: "verb", meaning_fa: { not: null }, register: { in: [...CARD_REGISTERS] }, dup_of_id: null, status: { not: "retired" } }) satisfies Prisma.WordWhereInput;
 
 /**
  * Every (verb, tense) that still has no table (PRD §6.6), in the order they are needed: the level of a

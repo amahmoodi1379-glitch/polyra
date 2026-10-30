@@ -15,7 +15,19 @@ export type SyntheticOptions = {
   openLevels?: string[];
   /** The level of the words in grammar sentences; the lowest level by default. */
   unitWordsLevel?: string;
+  /** Words and units of each level instead of an even spread (the simulator's A1 600/50, then 300/30, PRD §15.7). */
+  perLevel?: { words: number[]; units: number[] };
 };
+
+/** The level of the `n`th item (from 1) when each level holds `sizes[i]` of them. */
+function levelAt(levels: string[], sizes: number[], n: number): string {
+  let end = 0;
+  for (let i = 0; i < levels.length; i++) {
+    end += sizes[i] ?? 0;
+    if (n <= end) return levels[i];
+  }
+  return levels[levels.length - 1];
+}
 
 const POS: Pos[] = ["noun", "noun", "verb", "adj", "noun", "adv", "noun", "verb"];
 const FAMILIES = ["couleur", "jour", "nombre", null, null, null, null, null, null, null];
@@ -30,8 +42,8 @@ function lemmaOf(i: number): string {
 }
 
 export function syntheticContent(opts: SyntheticOptions = {}): Content {
-  const count = opts.words ?? 300;
-  const unitCount = opts.units ?? 12;
+  const count = opts.perLevel ? opts.perLevel.words.reduce((a, b) => a + b, 0) : (opts.words ?? 300);
+  const unitCount = opts.perLevel ? opts.perLevel.units.reduce((a, b) => a + b, 0) : (opts.units ?? 12);
   const language = opts.language ?? "fr";
   const levels = opts.levels ?? ["A1", "A2", "B1", "B2"];
   const perLevel = Math.ceil(count / levels.length);
@@ -52,7 +64,7 @@ export function syntheticContent(opts: SyntheticOptions = {}): Content {
       register: "standard",
       conceptId: null,
       meanings: [`معنی ${i}`],
-      level: levels[Math.min(levels.length - 1, Math.floor((i - 1) / perLevel))],
+      level: opts.perLevel ? levelAt(levels, opts.perLevel.words, i) : levels[Math.min(levels.length - 1, Math.floor((i - 1) / perLevel))],
       introOrder: i,
       noCard: i % 25 === 0,
       mastery: "produce",
@@ -122,7 +134,7 @@ export function syntheticContent(opts: SyntheticOptions = {}): Content {
   const units: UnitC[] = [];
   const transforms: TransformC[] = [];
   for (let u = 1; u <= unitCount; u++) {
-    const level = levels[Math.min(levels.length - 1, Math.floor(((u - 1) * levels.length) / unitCount))];
+    const level = opts.perLevel ? levelAt(levels, opts.perLevel.units, u) : levels[Math.min(levels.length - 1, Math.floor(((u - 1) * levels.length) / unitCount))];
     const pool = words.filter((word) => word.level === (opts.unitWordsLevel ?? levels[0]) && !word.noCard);
     const exampleIds: number[] = [];
     for (let k = 0; k < 30; k++) {

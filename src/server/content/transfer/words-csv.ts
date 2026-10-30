@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { isCardRegister } from "@/engine/content";
 import type { Mastery, Prisma } from "@/generated/prisma/client";
 import { fold } from "@/engine/tokens";
 import { arrange } from "@/lib/arrange";
@@ -205,12 +206,12 @@ export async function importWordsCsv(input: { language: LanguageCode; text: stri
       else parsed.push({ row, label, target, record: result.data });
     }
 
-    // Pass 2: a colloquial word needs a standard word with the same concept (PRD §13.3).
+    // Pass 2: a colloquial word needs a card word with the same concept (PRD §13.3).
     const conceptOf = new Map(words.filter((word) => word.concept).map((word) => [word.id, word.concept!.name_fa]));
-    const standard = new Set(words.filter((word) => word.register === "standard" && word.concept_id).map((word) => conceptOf.get(word.id)));
-    for (const item of parsed) if (item.record.meaning_fa && item.record.register === "standard") standard.add(item.record.concept_fa);
+    const standard = new Set(words.filter((word) => isCardRegister(word.register) && word.concept_id).map((word) => conceptOf.get(word.id)));
+    for (const item of parsed) if (item.record.meaning_fa && isCardRegister(item.record.register)) standard.add(item.record.concept_fa);
     const kept = parsed.filter((item) => {
-      if (!item.record.meaning_fa || item.record.register === "standard" || standard.has(item.record.concept_fa)) return true;
+      if (!item.record.meaning_fa || isCardRegister(item.record.register) || standard.has(item.record.concept_fa)) return true;
       reject(item.row, item.label, [problem("colloquialWithoutStandard", { code: item.record.code, concept: item.record.concept_fa ?? "" })]);
       return false;
     });

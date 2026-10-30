@@ -1,4 +1,4 @@
-import type { Gender, Pos, Speak } from "./content";
+import type { Gender, Pos, Speak, WordC } from "./content";
 
 /**
  * One exercise, fully built by the server when the session is made (PRD §10.7, "بسته جلسه"): what
@@ -19,7 +19,8 @@ export type WordView = {
   plural: string | null;
   image: string | null;
   noteFa: string | null;
-  colloquial: boolean;
+  /** Colloquial and formal words carry a label on their card (PRD §5.4). */
+  register: WordC["register"];
   speak: Speak;
 };
 

@@ -55,6 +55,7 @@ Local setup: PostgreSQL running, `cp .env.example .env`, `npm install` (also gen
 | `npm run seed` | Languages, engine and general settings, one admin and one tester (`SEED_ADMIN_PHONE`, `SEED_TESTER_PHONE`) |
 | `npm run make-admin -- 09121234567 fr` | Make a phone an admin (first admin; later ones from the panel) |
 | `npm run demo -- load` | French demo content for the tester account (`remove` takes it and testers' progress on it out, `status`) |
+| `npm run simulate` | PRD §16.3 simulator: synthetic learners through the real engine, checked against the pass marks (`-- --quick` for a fast look, `--seed=x`). Long random test: `RANDOM_USERS=400 RANDOM_DAYS=30 npx vitest run tests/unit/engine/random.test.ts` |
 
 Deploy: Runflare builds `main` (`docs/deploy-runflare.md`). Work on the session branch and move `main` forward
 (fast-forward) only when unit, database and browser tests are all green.
@@ -62,6 +63,9 @@ Deploy: Runflare builds `main` (`docs/deploy-runflare.md`). Work on the session 
 ## Code map
 - `prisma/schema.prisma`: PRD §4. Models are PascalCase, tables and columns keep the PRD names.
 - `src/engine`: pure functions (PRD §15.3). `src/server`: database, auth, SMS, storage, settings.
+- Engine checks (PRD §16.3): `src/engine/invariants.ts` (`checkInvariants`, the rules that never break). Synthetic content
+  and learners in `fixtures/synthetic` (`index.ts` content, `drive.ts` plays a session, `human.ts` the simulator's learner,
+  `learner.ts` state helpers); `tests/unit/engine/random.test.ts` the random test; `scripts/simulate.ts` the simulator.
 - `src/server/settings/engine-catalog.ts`: every §9.8 key with default, range and Persian description.
   `engine-rules.ts` checks a value and the rules between keys (shared by page and server), `engine.ts` saves and
   reverts. `general-fields.ts` lists the «تنظیمات عمومی» fields and their checks, `general.ts` stores them,

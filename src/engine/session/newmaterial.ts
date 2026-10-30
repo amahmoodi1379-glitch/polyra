@@ -106,10 +106,11 @@ export function nextUnit(content: Content, units: Map<number, ItemStateE>, setti
   return null;
 }
 
-/** Conjugation cards that may be made (PRD §6.6): review card, its unit opened, its verb known. */
+/** Conjugation cards that may be made (PRD §6.6): review card, its unit opened and in an open level, its verb known. */
 export function conjCandidates(content: Content, units: Map<number, ItemStateE>, conj: Map<number, ItemStateE>, known: (wordId: number) => boolean): ConjC[] {
-  const opened = new Set(content.units.filter((unit) => units.has(unit.id)).map((unit) => unit.unitCode));
-  return content.conjugations.filter((table) => table.reviewCard && !conj.has(table.id) && (!table.unitCode || opened.has(table.unitCode)) && known(table.wordId));
+  const opened = new Set(content.units.filter((unit) => units.has(unit.id) && content.openLevels.includes(unit.level)).map((unit) => unit.unitCode));
+  const levelOpen = (table: ConjC) => (table.unitCode ? opened.has(table.unitCode) : content.openLevels.includes(content.words.get(table.wordId)?.level ?? ""));
+  return content.conjugations.filter((table) => table.reviewCard && !conj.has(table.id) && levelOpen(table) && known(table.wordId));
 }
 
 /** Colloquial words that join the queue when their standard word first reaches step 4, `stable.step` (PRD §5.4). */

@@ -104,6 +104,20 @@ describe("publish conditions (PRD §13.5)", () => {
     ]);
   });
 
+  it("publishes a colloquial word without sentences once its standard word is ready", async () => {
+    const car = await testDb.concept.create({ data: { language: "fr", name_fa: "ماشین" } });
+    const eat = await testDb.concept.create({ data: { language: "fr", name_fa: "خوردن" } });
+    const voiture = await word("voiture", { gender: "f", concept_id: car.id });
+    await practice(voiture, 5);
+    const bagnole = await word("bagnole", { gender: "f", register: "familier", concept_id: car.id });
+    await word("manger", { pos: "verb", gender: null, concept_id: eat.id, status: "draft" });
+    const bouffer = await word("bouffer", { pos: "verb", gender: null, register: "familier", concept_id: eat.id });
+
+    const { ready, blocked } = await previewPublish("fr");
+    expect(ready.filter((item) => item.slug === "words").map((item) => item.id)).toEqual([voiture.id, bagnole.id]);
+    expect(blocked.map((item) => [item.id, item.reasons])).toEqual([[bouffer.id, [why("noStandardTwin")]]]);
+  });
+
   it("checks units, tables, texts and phonics lessons", async () => {
     const unit = await testDb.grammarUnit.create({ data: { language: "fr", unit_code: "fr-a1-present", title_fa: "زمان حال", level: "A1", status: "approved" } });
     const hard = await word("néanmoins", { level: "B1" });

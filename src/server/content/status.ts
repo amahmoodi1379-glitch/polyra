@@ -1,3 +1,4 @@
+import { CARD_REGISTERS } from "@/engine/content";
 import type { PromptKind } from "@/generated/prisma/client";
 import { db } from "@/server/db";
 import { appSetting, engineNumber } from "@/server/settings/read";
@@ -67,7 +68,7 @@ export async function contentStatus(language: string): Promise<ContentStatus> {
       db.word.count({ where: { language, status: { not: "retired" } } }),
       db.word.groupBy({ by: ["level"], where: { language, meaning_fa: null, status: "draft", dup_of_id: null }, _count: true }),
       db.word.findMany({
-        where: { language, meaning_fa: { not: null }, no_card: false, register: "standard", dup_of_id: null, status: { not: "retired" } },
+        where: { language, meaning_fa: { not: null }, no_card: false, register: { in: [...CARD_REGISTERS] }, dup_of_id: null, status: { not: "retired" } },
         select: { id: true, level: true },
       }),
       db.sentenceTarget.groupBy({
