@@ -168,14 +168,18 @@ export type SubmitResult =
   | { state: "cut" }
   | { state: "empty" }
   | { state: "broken" }
-  | { state: "wrong_answer" };
+  | { state: "wrong_answer" }
+  /** The batch moved on (or was thrown away) in another tab since the page was opened. */
+  | { state: "stale" };
 
 /**
  * Steps 2 and 3: imports a pasted answer, or a fix answer for rejected records. A cut answer is
- * kept so the admin can come back and paste the continuation later.
+ * kept so the admin can come back and paste the continuation later. A whole answer is taken only
+ * before anything was imported, a fix only after.
  */
 export async function submitAnswer(batchId: number, parts: string[], mode: "answer" | "fix"): Promise<SubmitResult> {
-  const batch = await db.importBatch.findUniqueOrThrow({ where: { id: batchId } });
+  const batch = await db.importBatch.findUnique({ where: { id: batchId } });
+  if (!batch || (mode === "answer") === Boolean(batch.report)) return { state: "stale" };
   const found = kindOf(batch.prompt_kind);
   if (!found) throw new Error(`No importer for ${batch.prompt_kind}`);
   const { kind } = found;
@@ -188,13 +192,16 @@ export async function submitAnswer(batchId: number, parts: string[], mode: "answ
 
   const answer = pasted.value as Record<string, unknown>;
   const content = answerRecords(kind, answer);
-  if (!content || (kind.matches && !kind.matches(batch, answer))) return { state: "wrong_answer" };
+  if (!content || (kind.matches && !(await kind.matches(batch, answer, content.records)))) return { state: "wrong_answer" };
   const issues = Array.isArray(answer.issues)
     ? answer.issues.map((item) => (typeof item === "string" ? item : JSON.stringify(item)))
     : [];
 
   const report = await db.$transaction(
     async (tx) => {
+      // Claims the batch: a paste of the same answer in another tab waits here and then finds it moved on.
+      const claimed = await tx.importBatch.updateMany({ where: { id: batchId, updated_at: batch.updated_at }, data: { updated_at: new Date() } });
+      if (claimed.count === 0) return null;
       const round = await kind.importRecords(tx, batch, content.records, content.parts);
       const merged = mergeRound(batchReport(batch), round, issues);
       const rawOutput = mode === "answer" ? pasted.text : `${batch.raw_output ?? ""}\n\n${pasted.text}`;
@@ -210,7 +217,7 @@ export async function submitAnswer(batchId: number, parts: string[], mode: "answ
     },
     { timeout: 120_000, maxWait: 10_000 },
   );
-  return { state: "imported", rejected: report.rejected.length };
+  return report ? { state: "imported", rejected: report.rejected.length } : { state: "stale" };
 }
 
 /** The fix prompt holds only the rejected records and why (PRD §13.9 step 3). */
@@ -278,10 +285,10 @@ export function qaPrompt(batch: ImportBatch): string | null {
 
 /** Step 4: stores the QA findings next to the records they point at. */
 export async function submitQa(batchId: number, parts: string[]): Promise<SubmitResult> {
-  const batch = await db.importBatch.findUniqueOrThrow({ where: { id: batchId } });
-  const report = batchReport(batch);
-  const found = kindOf(batch.prompt_kind);
-  if (!report || !found) throw new Error("QA before import");
+  const batch = await db.importBatch.findUnique({ where: { id: batchId } });
+  const report = batch && batchReport(batch);
+  const found = batch && kindOf(batch.prompt_kind);
+  if (!report || !found) return { state: "stale" };
 
   const pasted = joinParts(parts, "findings");
   if (pasted.state !== "ok") return { state: pasted.state };
@@ -318,8 +325,8 @@ export async function resetCut(batchId: number) {
  * lost: skeleton words and words short of sentences come back in the next batch of their kind.
  */
 export async function dismissRejected(batchId: number) {
-  const batch = await db.importBatch.findUniqueOrThrow({ where: { id: batchId } });
-  const report = batchReport(batch);
+  const batch = await db.importBatch.findUnique({ where: { id: batchId } });
+  const report = batch && batchReport(batch);
   if (!report || report.rejected.length === 0) return;
   const next: ImportReport = { ...report, rejected: [], dismissed: (report.dismissed ?? 0) + report.rejected.length };
   await db.importBatch.update({ where: { id: batchId }, data: { report: next as unknown as Prisma.InputJsonValue } });
@@ -337,8 +344,8 @@ export async function lastChatbot(adminId: number): Promise<string | null> {
 
 /** A batch nothing was imported from can be thrown away; its list rows become free again. */
 export async function cancelBatch(batchId: number) {
-  const batch = await db.importBatch.findUniqueOrThrow({ where: { id: batchId } });
-  if (batch.report) return false;
+  const batch = await db.importBatch.findUnique({ where: { id: batchId } });
+  if (!batch || batch.report) return false;
   await db.$transaction([
     db.frequencyItem.updateMany({ where: { used_in_batch_id: batchId }, data: { used_in_batch_id: null } }),
     db.importBatch.delete({ where: { id: batchId } }),

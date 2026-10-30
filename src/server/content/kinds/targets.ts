@@ -1,4 +1,5 @@
 import { CARD_REGISTERS } from "@/engine/content";
+import type { PromptKind } from "@/generated/prisma/client";
 import { db } from "@/server/db";
 import type { LevelTargets } from "@/server/settings/app-catalog";
 import { appSetting } from "@/server/settings/read";
@@ -11,7 +12,13 @@ export type LevelNext =
   | { state: "needsWords"; level: string; count: number }
   | { state: "done" };
 
-export const openStates = ["prompt_made", "pasted"] as const;
+const openStates = ["prompt_made", "pasted"] as const;
+
+/** The params of a kind's batches still waiting for their answer: the next batch does not ask for the same items. */
+export async function openParams<T>(language: string, kind: PromptKind): Promise<Partial<T>[]> {
+  const open = await db.importBatch.findMany({ where: { language, prompt_kind: kind, state: { in: [...openStates] } }, select: { params: true } });
+  return open.map((batch) => (batch.params ?? {}) as Partial<T>);
+}
 
 /** Card words that have their meaning: up to a level (for "the first N words") and at the level. */
 export async function readyWords(language: string, level: string) {

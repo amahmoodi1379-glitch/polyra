@@ -9,8 +9,9 @@ import { problem, zodProblems, type Problem } from "../problems";
 import { emptyRound, type RoundResult } from "../report";
 import { loadVocabulary, type LoadedVocabulary } from "../vocabulary";
 import { allowedWords } from "./allowed";
-import { addTargets, checkTarget, lengthFlags, mapSentence, storeSentence, tidy, type SentenceInput } from "./sentence-store";
+import { addTargets, checkTarget, lengthFlags, mapSentence, storeSentence, targetOptions, tidy, type SentenceInput } from "./sentence-store";
 import { example, labelOf, languageValues, lines, params, trace } from "./shared";
+import { openParams } from "./targets";
 import type { ContentKind, Tx } from "./types";
 
 type GrammarParams = { level: string; unit_id: number; unit_code: string };
@@ -21,7 +22,6 @@ const FIRST_UNITS = 20;
 const FIRST_WORDS = 150;
 
 const editable = new Set(["draft", "needs_review"]);
-const openStates = ["prompt_made", "pasted"] as const;
 
 type UnitRow = { id: number; unit_code: string; title_fa: string; scope_fa: string | null; level: string; order_no: number | null };
 
@@ -36,8 +36,8 @@ export async function unitsInOrder(language: string) {
 
 /** Units somebody already started a P-G batch for; the next batch skips them. */
 async function unitsInProgress(language: string) {
-  const open = await db.importBatch.findMany({ where: { language, prompt_kind: "P_G", state: { in: [...openStates] } }, select: { params: true } });
-  return new Set(open.map((batch) => (batch.params as Partial<GrammarParams> | null)?.unit_id).filter((id): id is number => typeof id === "number"));
+  const open = await openParams<GrammarParams>(language, "P_G");
+  return new Set(open.map((params) => params.unit_id).filter((id): id is number => typeof id === "number"));
 }
 
 /**
@@ -195,7 +195,7 @@ async function importTarget({ tx, batch, unit, vocabulary, round, seen, reject }
   const mapped = mapSentence(target.sentence, vocabulary);
   const problems = [...mapped.problems, ...checkTarget(target, target.sentence.text, "")];
   if (problems.length > 0 || !mapped.rows) return reject(label, problems);
-  round.warnings.push(...lengthFlags(target.sentence.text, [target], label));
+  round.warnings.push(...lengthFlags(label, { sentences: [target.sentence.text], options: targetOptions([target]) }));
 
   const stored = await storeSentence(tx, batch, { sentence: target.sentence, rows: mapped.rows, vocabulary, level: unit.level, label }, round, seen);
   const added = await addTargets(tx, batch, stored.id, [{ type: "grammar", id: unit.id, target }]);
@@ -257,6 +257,7 @@ export async function importTranslation({ tx, batch, unit, vocabulary, round, re
   }
   const unknown = mapped.rows.filter((row) => row.kind === "word" && (!row.word_id || row.candidate_reason)).length;
   if (unknown > 0) round.warnings.push({ label, problem: problem("unknownWords", { count: unknown }) });
+  round.warnings.push(...lengthFlags(label, { sentences: item.accepted_outputs }));
   const created = await tx.translateItem.create({
     data: {
       language: batch.language,

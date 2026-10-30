@@ -6,14 +6,14 @@ import { db } from "@/server/db";
 import { appSetting } from "@/server/settings/read";
 import { problem, zodProblems, type Problem } from "../problems";
 import { emptyRound } from "../report";
-import { example, languageValues, params, trace } from "./shared";
-import type { ContentKind } from "./types";
+import { example, languageValues, params, texts, trace } from "./shared";
+import { openParams } from "./targets";
+import type { ContentKind, Tx } from "./types";
 
 export type PlannedLesson = { label: string; kind: PhonicsKind };
 type PhonicsParams = { level: string; label: string; kind: PhonicsKind; order_no: number };
 
 const editable = new Set(["draft", "needs_review"]);
-const openStates = ["prompt_made", "pasted"] as const;
 const same = (a: string, b: string) => fold(a).replace(/\s+/g, " ").trim() === fold(b).replace(/\s+/g, " ").trim();
 
 /** How many items each kind needs (PRD §8.1, §13.3). */
@@ -28,12 +28,42 @@ export async function missingLessons(language: string) {
   const [planned, made, open] = await Promise.all([
     appSetting<PlannedLesson[]>(`phonics.lessons.${language}`),
     db.phonicsLesson.findMany({ where: { language }, select: { sound_label: true } }),
-    db.importBatch.findMany({ where: { language, prompt_kind: "P_H", state: { in: [...openStates] } }, select: { params: true } }),
+    openParams<PhonicsParams>(language, "P_H"),
   ]);
-  const taken = [...made.map((row) => row.sound_label), ...open.map((batch) => (batch.params as Partial<PhonicsParams> | null)?.label ?? "")];
+  const taken = [...made.map((row) => row.sound_label), ...open.map((params) => params.label ?? "")];
   return planned
     .map((lesson, index) => ({ ...lesson, order_no: index + 1 }))
     .filter((lesson) => !taken.some((label) => same(label, lesson.label)));
+}
+
+/**
+ * Labels renamed in place in the teacher's list: the list keeps its length and at one place an old
+ * label is gone and a new one came. Lessons are matched to the list by label, so a renamed entry
+ * renames its lesson too; otherwise the planner would offer the made lesson again.
+ */
+export function renamedLessons(before: PlannedLesson[], after: PlannedLesson[]): { from: string; to: string }[] {
+  if (before.length !== after.length) return [];
+  return before.flatMap((old, index) => {
+    const next = after[index];
+    const gone = !after.some((lesson) => same(lesson.label, old.label));
+    const fresh = !before.some((lesson) => same(lesson.label, next.label));
+    return gone && fresh ? [{ from: old.label, to: next.label }] : [];
+  });
+}
+
+/** Gives the lessons of these renamed list entries their new labels. */
+export async function renameLessonRows(tx: Tx, language: string, renames: { from: string; to: string }[]) {
+  if (renames.length === 0) return;
+  const rows = await tx.phonicsLesson.findMany({ where: { language }, select: { id: true, sound_label: true } });
+  for (const { from, to } of renames) {
+    for (const row of rows.filter((lesson) => same(lesson.sound_label, from))) await tx.phonicsLesson.update({ where: { id: row.id }, data: { sound_label: to } });
+  }
+}
+
+/** The teacher's list with one entry renamed, or null when no entry has that label. */
+export function renameInList(list: PlannedLesson[], from: string, to: string): PlannedLesson[] | null {
+  if (!list.some((lesson) => same(lesson.label, from))) return null;
+  return list.map((lesson) => (same(lesson.label, from) ? { ...lesson, label: to } : lesson));
 }
 
 /** Checks Zod cannot do: the counts of each kind and the wrong spellings (PRD §13.3). */
@@ -73,6 +103,11 @@ export const phonics: ContentKind = {
   template: "P-H.md",
   rootKey: "lesson",
   parts: [{ key: "lesson", single: true }],
+  /** The lesson is for this batch's sound, when the answer names one. */
+  matches: (batch, answer) => {
+    const [label] = texts(answer.lesson, ["sound_label"]);
+    return label === undefined || same(label, params<PhonicsParams>(batch).label);
+  },
 
   async plan(language) {
     const [next] = await missingLessons(language);

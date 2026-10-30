@@ -97,19 +97,28 @@ export function checkTarget(target: TargetInput, text: string, path: string): Pr
   return problems;
 }
 
-/** Length warnings (PRD §13.3 "همه"). */
-export function lengthFlags(text: string, targets: TargetInput[], label: string): Flag[] {
+/**
+ * A word target's blank holds that word (PRD §6.4): some piece of the sentence mapped to the word lies
+ * inside a blank, so "manger" cannot be practised with the blank on "pomme".
+ */
+export function blankHoldsWord(markedText: string, text: string, rows: MappedRow[], wordId: number): boolean {
+  const blanks = [...markedText.matchAll(blankPattern)].map((match) => fold(match[1]));
+  return rows.some((row) => row.word_id === wordId && row.spans.some(([start, end]) => blanks.some((blank) => blank.includes(fold(text.slice(start, end))))));
+}
+
+/**
+ * Length warnings for every kind (PRD §13.3 "همه"): a sentence over 200 characters, an option over 80;
+ * at most one warning of each per item.
+ */
+export function lengthFlags(label: string, { sentences = [], options = [], optionField = "distractors" }: { sentences?: string[]; options?: string[]; optionField?: string }): Flag[] {
   const flags: Flag[] = [];
-  if (text.length > MAX_SENTENCE) flags.push({ label, problem: problem("tooLong", { field: "text", max: MAX_SENTENCE }) });
-  for (const target of targets) {
-    const options = [...target.accepted, ...target.distractors].flat();
-    if (options.some((option) => option.length > MAX_OPTION)) {
-      flags.push({ label, problem: problem("tooLong", { field: "distractors", max: MAX_OPTION }) });
-      break;
-    }
-  }
+  if (sentences.some((text) => text.length > MAX_SENTENCE)) flags.push({ label, problem: problem("tooLong", { field: "text", max: MAX_SENTENCE }) });
+  if (options.some((option) => option.length > MAX_OPTION)) flags.push({ label, problem: problem("tooLong", { field: optionField, max: MAX_OPTION }) });
   return flags;
 }
+
+/** The answers and wrong options of these targets: the options a learner chooses from. */
+export const targetOptions = (targets: TargetInput[]) => targets.flatMap((target) => [...target.accepted, ...target.distractors].flat());
 
 /**
  * Stores a sentence whose mapping passed, or finds the same sentence already stored (it is never made

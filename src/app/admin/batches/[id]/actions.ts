@@ -23,6 +23,7 @@ const failure: Record<Exclude<SubmitResult["state"], "imported" | "cut">, Messag
   empty: "admin.batch.paste.empty",
   broken: "admin.batch.paste.broken",
   wrong_answer: "admin.batch.paste.wrongAnswer",
+  stale: "admin.batch.paste.stale",
 };
 
 function outcome(result: SubmitResult): PasteOutcome {

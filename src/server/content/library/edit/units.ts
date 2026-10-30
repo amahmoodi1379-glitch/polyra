@@ -4,6 +4,7 @@ import { filled, levelCode, optionalText } from "@/schemas/common";
 import { db } from "@/server/db";
 import { engineNumber } from "@/server/settings/read";
 import { problem, type Problem } from "../../problems";
+import { levelOutside } from "../../kinds/shared";
 import { errorsOf, logEdit, parseValues } from "./shared";
 import { viewOf, type Editor } from "./types";
 
@@ -92,6 +93,8 @@ export const unitEditor: Editor<UnitValues, UnitContext> = {
     return db.$transaction(async (tx) => {
       const row = await tx.grammarUnit.findUnique({ where: { id } });
       if (!row) return { state: "gone" as const };
+      const outside = await levelOutside(row.language, clean.level);
+      if (outside.length > 0) return { state: "invalid" as const, errors: errorsOf(outside) };
       if (await logEdit(tx, adminId, "units", id, row, clean)) {
         await tx.grammarUnit.update({
           where: { id },

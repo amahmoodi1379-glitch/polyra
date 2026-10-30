@@ -10,11 +10,11 @@ import { problem, zodProblems, type Problem } from "../problems";
 import { emptyRound } from "../report";
 import { allowedWords } from "./allowed";
 import { example, labelOf, languageValues, lines, params, trace } from "./shared";
+import { openParams } from "./targets";
 import type { ContentKind } from "./types";
 
 type PhrasesParams = { level: string; count: number };
 
-const openStates = ["prompt_made", "pasted"] as const;
 const same = (text: string) => fold(text).replace(/\s+/g, " ").trim();
 /** A phrase is more than one word: a space, an apostrophe or a hyphen between letters. */
 const severalWords = (lemma: string) => /\p{L}[\s'’-]+\p{L}/u.test(lemma.trim());
@@ -33,11 +33,11 @@ export async function nextPhrases(language: string, wanted?: string): Promise<Ph
     appSetting<string[]>(`levels.${language}`),
     appSetting<Record<string, LevelTargets>>(`targets.${language}`),
     db.word.groupBy({ by: ["level"], where: { language, pos: "phrase", status: { not: "retired" } }, _count: true }),
-    db.importBatch.findMany({ where: { language, prompt_kind: "P_F", state: { in: [...openStates] } }, select: { params: true } }),
+    openParams<PhrasesParams>(language, "P_F"),
     db.word.groupBy({ by: ["level"], where: { language, meaning_fa: { not: null }, pos: { not: "phrase" }, status: { not: "retired" } }, _count: true }),
   ]);
   const count = new Map(have.map((row) => [row.level, row._count]));
-  const busy = new Set(open.map((batch) => (batch.params as Partial<PhrasesParams> | null)?.level));
+  const busy = new Set(open.map((params) => params.level));
   const short = levels.filter((level) => !busy.has(level) && (count.get(level) ?? 0) < (targets[level]?.phrases ?? 0));
   const level = wanted && short.includes(wanted) ? wanted : short[0];
   if (!level) return { state: "done" };

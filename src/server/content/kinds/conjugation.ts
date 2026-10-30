@@ -10,6 +10,7 @@ import { levelRank, type LanguageCode } from "../languages";
 import { problem, zodProblems, type Problem } from "../problems";
 import { emptyRound } from "../report";
 import { batchSize, example, labelOf, languageValues, lines, trace } from "./shared";
+import { openParams } from "./targets";
 import type { ContentKind } from "./types";
 
 type Pair = { word_id: number; tense: string };
@@ -17,7 +18,6 @@ type ConjugationParams = { level: string; items: Pair[] };
 export type TenseList = Record<string, string[]>;
 
 const editable = new Set(["draft", "needs_review"]);
-const openStates = ["prompt_made", "pasted"] as const;
 const pairKey = (wordId: number, tense: string) => `${wordId}|${fold(tense)}`;
 
 /** Verbs that get tables: card-ready verbs of the language (their meaning is in), auxiliaries included. */
@@ -36,12 +36,12 @@ export async function missingTables(language: string) {
     appSetting<TenseList>(`conjugation.tenses.${language}`),
     db.word.findMany({ where: verbFilter(language), select: { id: true, code: true, lemma: true, level: true, intro_order: true } }),
     db.conjugationTable.findMany({ where: { language }, select: { word_id: true, tense: true } }),
-    db.importBatch.findMany({ where: { language, prompt_kind: "P_X", state: { in: [...openStates] } }, select: { params: true } }),
+    openParams<ConjugationParams>(language, "P_X"),
     db.grammarUnit.groupBy({ by: ["level"], where: { language, status: { not: "retired" } } }),
   ]);
   const done = new Set(tables.map((row) => pairKey(row.word_id, row.tense)));
-  for (const batch of open) {
-    for (const pair of (batch.params as Partial<ConjugationParams> | null)?.items ?? []) done.add(pairKey(pair.word_id, pair.tense));
+  for (const params of open) {
+    for (const pair of params.items ?? []) done.add(pairKey(pair.word_id, pair.tense));
   }
   const withUnits = new Set(unitLevels.map((row) => row.level));
   const tenseList = levels.flatMap((level) => (tenses[level] ?? []).map((tense) => ({ tense, level })));

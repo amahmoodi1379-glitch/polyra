@@ -2,6 +2,7 @@ import { afterAll, beforeEach, describe, expect, it } from "vitest";
 import {
   batchFindings,
   batchReport,
+  cancelBatch,
   createBatch,
   fixPrompt,
   qaPrompt,
@@ -95,6 +96,21 @@ describe("word list (P-C, PRD §14.5 and §13.9)", () => {
     expect(await testDb.word.findFirst({ where: { code: "maison" } })).toMatchObject({ intro_order: 4, frequency_rank: 4 });
   });
 
+  it("refuses a level outside the language's list of levels", async () => {
+    await frequency("fr", ["voiture", "néanmoins"]);
+    const batch = await batchFor("word-list");
+    const answer = {
+      items: [
+        { lemma: "voiture", keep: true, pos: "noun", level: "A1", no_card: false, reason: null },
+        { lemma: "néanmoins", keep: true, pos: "adv", level: "C1", no_card: false, reason: null },
+      ],
+      issues: [],
+    };
+    expect(await submitAnswer(batch.id, [json(answer)], "answer")).toEqual({ state: "imported", rejected: 1 });
+    const report = batchReport(await testDb.importBatch.findUniqueOrThrow({ where: { id: batch.id } }))!;
+    expect(describeProblem(report.rejected[0].problems[0])).toBe("سطح «C1» در فهرست سطح‌های این زبان (A1، A2، B1، B2) نیست.");
+  });
+
   it("keeps a cut answer and imports it once the continuation arrives", async () => {
     await frequency("fr", ["voiture", "maison"]);
     const batch = await batchFor("word-list");
@@ -112,6 +128,65 @@ describe("word list (P-C, PRD §14.5 and §13.9)", () => {
     const result = await submitAnswer(batch.id, [answer.slice(0, cutAt), answer.slice(cutAt)], "answer");
     expect(result).toEqual({ state: "imported", rejected: 0 });
     expect(await testDb.word.count()).toBe(2);
+  });
+});
+
+describe("an answer for another batch, or a batch that moved on", () => {
+  const voiture = { lemma: "voiture", keep: true, pos: "noun", level: "A1", no_card: false, reason: null };
+
+  it("refuses rows of another part of the frequency list, and a whole answer pasted a second time", async () => {
+    await frequency("fr", ["voiture", "maison"]);
+    const batch = await batchFor("word-list");
+    const other = { items: [{ ...voiture, lemma: "chien" }, { ...voiture, lemma: "chat" }], issues: [] };
+    expect(await submitAnswer(batch.id, [json(other)], "answer")).toEqual({ state: "wrong_answer" });
+    expect(await testDb.word.count()).toBe(0);
+
+    // The same answer sent from two tabs at once is imported once.
+    const answer = json({ items: [{ ...voiture, lemma: "Voiture" }], issues: [] });
+    const results = await Promise.all([submitAnswer(batch.id, [answer], "answer"), submitAnswer(batch.id, [answer], "answer")]);
+    expect(results.map((result) => result.state).sort()).toEqual(["imported", "stale"]);
+    expect(await submitAnswer(batch.id, [answer], "answer")).toEqual({ state: "stale" });
+    expect(await testDb.word.count()).toBe(1);
+  });
+
+  it("refuses a fix before anything was imported, and anything for a batch thrown away", async () => {
+    await frequency("fr", ["voiture"]);
+    const batch = await batchFor("word-list");
+    const answer = json({ items: [voiture], issues: [] });
+    expect(await submitAnswer(batch.id, [answer], "fix")).toEqual({ state: "stale" });
+    expect(await submitQa(batch.id, ['{"findings": []}'])).toEqual({ state: "stale" });
+    await testDb.frequencyItem.updateMany({ data: { used_in_batch_id: null } });
+    await testDb.importBatch.delete({ where: { id: batch.id } });
+    expect(await submitAnswer(batch.id, [answer], "answer")).toEqual({ state: "stale" });
+  });
+
+  it("does not ask a second batch for the words an open batch holds, until it is thrown away", async () => {
+    await testDb.word.create({ data: { language: "fr", code: "voiture", lemma: "voiture", pos: "noun", level: "A1", intro_order: 1 } });
+    const first = await batchFor("words");
+    expect(await createBatch({ slug: "words", language: "fr", adminId: 1 })).toHaveProperty("nothing");
+    expect(await cancelBatch(first.id)).toBe(true);
+    expect((await batchFor("words")).params).toMatchObject({ word_ids: first.params && (first.params as { word_ids: number[] }).word_ids });
+  });
+
+  it("refuses word records and sentences made for other words", async () => {
+    await testDb.word.create({ data: { language: "fr", code: "voiture", lemma: "voiture", pos: "noun", level: "A1", intro_order: 1 } });
+    const words = await batchFor("words");
+    const chien = wordRecord({ code: "chien", lemma: "chien", gender: "m", meaning_fa: "سگ", concept_fa: "سگ" });
+    expect(await submitAnswer(words.id, [json({ words: [chien], issues: [] })], "answer")).toEqual({ state: "wrong_answer" });
+    // The chatbot may change a code; the lemma still names the word.
+    const renamed = wordRecord({ code: "voiture-f", lemma: "voiture", meaning_fa: "ماشین", concept_fa: "ماشین" });
+    expect(await submitAnswer(words.id, [json({ words: [renamed], issues: [] })], "answer")).toEqual({ state: "imported", rejected: 0 });
+
+    await testDb.word.updateMany({ where: { code: "voiture-f" }, data: { status: "approved" } });
+    const sentences = await batchFor("sentences");
+    const sentence = {
+      text: "Le chien mange.",
+      translation_fa: "سگ می‌خورد.",
+      tokens: [{ surface: "Le", code: "le" }, { surface: "chien", code: "chien" }, { surface: "mange", code: "manger" }],
+      targets: [{ type: "word", target: "chien", marked_text: "Le {{chien}} mange.", blanks: 1, accepted: ["chien"], distractors: ["chat", "lit", "pain"] }],
+    };
+    expect(await submitAnswer(sentences.id, [json({ sentences: [sentence], issues: [] })], "answer")).toEqual({ state: "wrong_answer" });
+    expect(await testDb.sentence.count()).toBe(0);
   });
 });
 
@@ -264,6 +339,22 @@ describe("vocabulary sentences (P-S) and the QA round", () => {
     distractors,
     hint: null,
     accepted_full: null,
+  });
+
+  it("rejects a word target whose blank is on another word, and takes a blank that holds the word with its article", async () => {
+    await vocabulary();
+    const batch = await batchFor("sentences");
+    const sentence = (targets: unknown[]) => ({ text: "Je veux manger une pomme.", translation_fa: "می‌خواهم یک سیب بخورم.", tokens, targets });
+    const answer = {
+      sentences: [
+        sentence([target("manger", "Je veux manger une {{pomme}}.", "pomme", ["table", "voiture", "chaise"])]),
+        sentence([target("pomme", "Je veux manger {{une pomme}}.", "une pomme", ["une table", "une chaise", "un lit"])]),
+      ],
+      issues: [],
+    };
+    expect(await submitAnswer(batch.id, [json(answer)], "answer")).toEqual({ state: "imported", rejected: 1 });
+    const report = batchReport(await testDb.importBatch.findUniqueOrThrow({ where: { id: batch.id } }))!;
+    expect(report.rejected[0].problems).toEqual([{ key: "blankNotTarget", vars: { code: "manger", field: "targets[0].marked_text" } }]);
   });
 
   it("maps words, flags candidates, rejects broken targets, and attaches QA findings to sentences", async () => {

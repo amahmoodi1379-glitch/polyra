@@ -3,11 +3,12 @@ import { fold } from "@/engine/tokens";
 import { t } from "@/i18n";
 import { wordListItem } from "@/schemas/words";
 import { db } from "@/server/db";
+import { appSetting } from "@/server/settings/read";
 import { freeCode } from "../codes";
 import { lastIntroOrder } from "../intro-order";
 import { problem, zodProblems } from "../problems";
 import { emptyRound } from "../report";
-import { batchSize, example, labelOf, languageValues, params, trace } from "./shared";
+import { batchSize, example, labelOf, languageValues, levelProblem, namesAsked, params, texts, trace } from "./shared";
 import type { ContentKind } from "./types";
 
 type WordListParams = { first_rank: number; last_rank: number; count: number };
@@ -21,6 +22,11 @@ export const wordList: ContentKind = {
   kind: "P_C",
   template: "P-C.md",
   rootKey: "items",
+  /** Some row is a lemma of this batch's part of the frequency list. */
+  async matches(batch, _answer, records) {
+    const asked = await db.frequencyItem.findMany({ where: { language: batch.language, used_in_batch_id: batch.id }, select: { lemma: true } });
+    return namesAsked(records, new Set(asked.map((item) => fold(item.lemma))), (record) => texts(record, ["lemma"]).map((lemma) => fold(lemma.trim())));
+  },
 
   async plan(language) {
     const size = await batchSize("P-C", 200);
@@ -63,6 +69,7 @@ export const wordList: ContentKind = {
       ]),
     );
     const existing = await tx.word.findMany({ where: { language }, select: { code: true, lemma: true, pos: true } });
+    const levels = await appSetting<string[]>(`levels.${language}`);
     const taken = new Set(existing.map((word) => word.code));
     const known = new Set(existing.map((word) => `${fold(word.lemma)}|${word.pos}`));
     const nextOrder = new Map<string, number>();
@@ -81,8 +88,9 @@ export const wordList: ContentKind = {
       }
       const item = parsed.data;
       const missing = [!item.pos && "pos", !item.level && "level"].filter((field): field is string => Boolean(field));
-      if (missing.length > 0) {
-        round.rejected.push({ label, record, problems: missing.map((field) => problem("missing", { field })) });
+      const problems = [...missing.map((field) => problem("missing", { field })), ...(item.level ? levelProblem(levels, item.level) : [])];
+      if (problems.length > 0) {
+        round.rejected.push({ label, record, problems });
         continue;
       }
       const pos = item.pos as Pos;

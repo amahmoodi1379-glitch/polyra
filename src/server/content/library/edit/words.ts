@@ -10,6 +10,7 @@ import { checkWord } from "../../kinds/words";
 import { languageInfo, type LanguageCode } from "../../languages";
 import { problem, type Problem } from "../../problems";
 import { refreshDifficulty } from "../../text-difficulty";
+import { levelOutside } from "../../kinds/shared";
 import { errorsOf, logEdit, parseValues, staleAudio, textOrNull, wordInfo, type WordInfo } from "./shared";
 import { viewOf, type Editor } from "./types";
 
@@ -115,7 +116,7 @@ export const wordEditor: Editor<WordValues, WordContext> = {
       const row = await tx.word.findUnique({ where: { id } });
       if (!row) return { state: "gone" as const };
       const language = row.language as LanguageCode;
-      const problems: Problem[] = checkWord(values, language);
+      const problems: Problem[] = [...checkWord(values, language), ...(await levelOutside(language, values.level))];
       if (values.pos !== "noun") {
         values.gender = null;
         values.number = null;
@@ -133,6 +134,8 @@ export const wordEditor: Editor<WordValues, WordContext> = {
         const unknown = values.parts.filter((code) => !known.has(code));
         if (unknown.length > 0) problems.push(problem("partsUnknown", { codes: unknown.join("، "), field: "parts" }));
       }
+      // A word without meaning leaves the app, so a meaning can be changed but not cleared.
+      if (row.meaning_fa && !values.meaning_fa) problems.push(problem("meaningCleared", { field: "meaning_fa" }));
       if (values.meaning_fa && !values.concept_fa) problems.push(problem("missing", { field: "concept_fa" }));
       if (!isCardRegister(values.register) && values.concept_fa) {
         const standard = await tx.word.count({

@@ -185,10 +185,16 @@ describe("word file import (PRD §14.7)", () => {
     expect(log.entity_id).toBe("fr:A1");
   });
 
-  it("refuses a file without the needed columns, an empty one and a huge one", async () => {
+  it("refuses a file without the needed columns, an empty one, a huge one and one saved in another encoding", async () => {
     expect(await run(file([row("chat")], ["code", "lemma", "meaning_fa"]))).toEqual({ state: "invalid", reason: "columns", missing: ["pos", "level"] });
     expect(await run(toCsv([header]))).toEqual({ state: "invalid", reason: "empty" });
     expect(await run("x".repeat(3_000_001))).toEqual({ state: "invalid", reason: "tooBig" });
+    expect(await run(file([row("chat", { meaning_fa: "\uFFFD\uFFFD" })]))).toEqual({ state: "invalid", reason: "encoding" });
+  });
+
+  it("saves Persian text with ی and ک, without invisible marks", async () => {
+    await run(file([row("chat", { meaning_fa: "\u200Fگربه كوچك\u00A0", note_fa: "يادداشت" })]));
+    expect(await testDb.word.findFirstOrThrow({ where: { code: "chat" } })).toMatchObject({ meaning_fa: "گربه کوچک", note_fa: "یادداشت" });
   });
 
   it("reports columns it does not know and reads a spreadsheet saved with semicolons", async () => {

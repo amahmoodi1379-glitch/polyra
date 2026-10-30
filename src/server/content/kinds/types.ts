@@ -38,10 +38,10 @@ export type ContentKind = {
    */
   parts?: AnswerPart[];
   /**
-   * For a batch made for one item (a grammar unit): false when the pasted answer names another item,
-   * so it is refused as a whole instead of being stored under the wrong one.
+   * False when the pasted answer was made for another batch (another grammar unit, other words, the
+   * next part of the frequency list), so it is refused as a whole instead of being stored here.
    */
-  matches?(batch: ImportBatch, answer: Record<string, unknown>): boolean;
+  matches?(batch: ImportBatch, answer: Record<string, unknown>, records: unknown[]): boolean | Promise<boolean>;
   /** Picks the next batch, or null when there is nothing left to make. */
   plan(language: LanguageCode, options: PlanOptions): Promise<BatchPlan | { nothing: string }>;
   /** Called inside the batch's transaction right after it is created (e.g. to reserve list rows). */

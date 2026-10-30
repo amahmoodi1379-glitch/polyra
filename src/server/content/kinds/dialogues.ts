@@ -4,13 +4,15 @@ import { t } from "@/i18n";
 import { dialogueRecord, dialogueTurn } from "@/schemas/speaking";
 import { db } from "@/server/db";
 import { appSetting } from "@/server/settings/read";
+import { turnSentenceIds } from "../library/list";
+import { dropUnusedSentences } from "../library/status";
 import { problem, zodProblems, type Problem } from "../problems";
 import { emptyRound } from "../report";
 import { loadVocabulary } from "../vocabulary";
 import { allowedWords } from "./allowed";
-import { mapSentence, storeSentence, type SentenceInput } from "./sentence-store";
+import { lengthFlags, mapSentence, storeSentence, type SentenceInput } from "./sentence-store";
 import { example, languageValues, lines, params, trace } from "./shared";
-import { nextLevel, openStates, unitLines, type LevelNext } from "./targets";
+import { nextLevel, openParams, unitLines, type LevelNext } from "./targets";
 import type { ContentKind } from "./types";
 
 type DialogueParams = { level: string; code: string; situation: string };
@@ -27,9 +29,9 @@ const same = (text: string) => fold(text).replace(/\s+/g, " ").trim();
 async function dialogueCounts(language: string) {
   const [made, open] = await Promise.all([
     db.dialogue.findMany({ where: { language, status: { not: "retired" } }, select: { level: true, code: true } }),
-    db.importBatch.findMany({ where: { language, prompt_kind: "P_D", state: { in: [...openStates] } }, select: { params: true } }),
+    openParams<DialogueParams>(language, "P_D"),
   ]);
-  const planned = open.map((batch) => batch.params as DialogueParams);
+  const planned = open as DialogueParams[];
   const all = [...made, ...planned.filter((spec) => !made.some((row) => row.code === spec.code))];
   const counts = new Map<string, number>();
   for (const row of all) counts.set(row.level, (counts.get(row.level) ?? 0) + 1);
@@ -137,6 +139,8 @@ export const dialogues: ContentKind = {
         continue;
       }
 
+      const choices = turns.flatMap((turn) => turn.choices.map((choice) => choice.text));
+      round.warnings.push(...lengthFlags(code, { sentences: sentences.map((sentence) => sentence.text), options: choices, optionField: "choices" }));
       let next = 0;
       const store = async () => {
         const k = next++;
@@ -154,6 +158,8 @@ export const dialogues: ContentKind = {
       const saved = existing
         ? await tx.dialogue.update({ where: { id: existing.id }, data })
         : await tx.dialogue.create({ data: { language: batch.language, code, ...data } });
+      // A draft dialogue that comes again: the sentences only its old turns used go.
+      if (existing) await dropUnusedSentences(tx, batch.language, turnSentenceIds(existing.turns));
       if (existing) round.updated++;
       else round.added++;
       round.accepted.push({ label: `${code} · ${dialogue.title_fa}`, entity: { type: "dialogue", id: saved.id }, record, part: "dialogue" });

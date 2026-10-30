@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { parseCsv, toCsv } from "@/lib/csv";
+import { decodeCsv, parseCsv, toCsv } from "@/lib/csv";
 import { csvOrder } from "@/server/content/transfer/words-csv";
 
 describe("CSV files", () => {
@@ -42,6 +42,15 @@ describe("CSV files", () => {
       ["code", "note"],
       ["aujourd", 'l"ami'],
     ]);
+  });
+
+  it("reads UTF-8 and Excel's UTF-16 text, and refuses a file saved in another encoding", () => {
+    const utf8 = new TextEncoder().encode("\uFEFFcode,meaning_fa\nété,تابستان");
+    expect(decodeCsv(utf8)).toBe("code,meaning_fa\nété,تابستان");
+    const utf16 = new Uint8Array([0xff, 0xfe, ...[..."é\tی"].flatMap((char) => [char.charCodeAt(0) & 0xff, char.charCodeAt(0) >> 8])]);
+    expect(decodeCsv(utf16)).toBe("é\tی");
+    // «تابستان» as Excel's plain «CSV» writes it on a Persian Windows (Windows-1256).
+    expect(decodeCsv(new Uint8Array([0xca, 0xc7, 0xc8, 0xd3, 0xca, 0xc7, 0xe4]))).toBeNull();
   });
 });
 

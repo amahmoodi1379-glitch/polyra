@@ -1,5 +1,6 @@
 import type { Pos } from "@/generated/prisma/client";
 import { fold } from "@/engine/tokens";
+import { cleanText } from "@/lib/clean-text";
 import { db } from "@/server/db";
 import { appSetting } from "@/server/settings/read";
 import { posValues } from "@/schemas/common";
@@ -295,7 +296,7 @@ export async function resolveDuplicate(language: string, wordId: number, isNewSe
 
 /** Vocabulary search for "choose the right word": lemma, code or meaning; exact matches first. */
 export async function searchVocabulary(language: string, query: string): Promise<WordRef[]> {
-  const text = query.trim();
+  const text = cleanText(query).trim();
   if (!text) return [];
   const words = await db.word.findMany({
     where: {

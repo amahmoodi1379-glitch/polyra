@@ -6,6 +6,7 @@ import { CircleAlert, CircleCheck, FileSpreadsheet, LoaderCircle, Upload } from 
 import { Button } from "@/components/ui/button";
 import { formatNumber, t } from "@/i18n";
 import { isolateLatin } from "@/lib/bidi";
+import { decodeCsv } from "@/lib/csv";
 import { cn } from "@/lib/utils";
 import { wordsCsv, type CsvReply } from "./actions";
 
@@ -44,7 +45,11 @@ export function WordImport({ language, languageName }: { language: string; langu
       setProblem(t("admin.transfer.import.notCsv"));
       return;
     }
-    const text = await file.text();
+    const text = decodeCsv(new Uint8Array(await file.arrayBuffer()));
+    if (text === null) {
+      setProblem(t("admin.transfer.import.invalid.encoding"));
+      return;
+    }
     setState({ step: "checking", name: file.name, text });
     const reply = await wordsCsv(language, text, false);
     if (reply.state === "checked") setState({ step: "checked", name: file.name, text, report: reply });

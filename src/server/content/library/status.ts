@@ -61,6 +61,20 @@ export async function sentenceUses(tx: Tx, language: string, ids: number[]) {
   return used;
 }
 
+/**
+ * Of these sentences, the drafts nothing uses any more (no target, text, dialogue or unit example)
+ * are deleted: the sentences of a deleted text or dialogue, or the ones a re-imported one replaced.
+ */
+export async function dropUnusedSentences(tx: Tx, language: string, ids: number[]): Promise<number[]> {
+  if (ids.length === 0) return [];
+  const uses = await sentenceUses(tx, language, ids);
+  const targeted = new Set((await tx.sentenceTarget.findMany({ where: { sentence_id: { in: ids } }, select: { sentence_id: true } })).map((row) => row.sentence_id));
+  const drafts = await tx.sentence.findMany({ where: { id: { in: ids.filter((id) => !targeted.has(id) && !uses.has(id)) }, status: { in: ["draft", "needs_review"] } }, select: { id: true } });
+  const dropped = drafts.map((row) => row.id);
+  if (dropped.length > 0) await tx.sentence.deleteMany({ where: { id: { in: dropped } } });
+  return dropped;
+}
+
 /** Child rows that go with an item when it is retired: a word's or a unit's targets, a text's questions. */
 async function children(tx: Tx, slug: LibrarySlug, id: number): Promise<Partial<Record<ChildTable, ChildRow[]>>> {
   const live = { status: { not: "retired" as const } };

@@ -150,6 +150,13 @@ describe("editing and «برگردان» (PRD §13.2)", () => {
     expect((await testDb.word.findUniqueOrThrow({ where: { id: pain.id } })).meaning_fa).toBe("نان");
   });
 
+  it("saves an edit with the Persian ی and ک and without invisible marks", async () => {
+    const pain = await word("pain", { concept_id: null });
+    const loaded = (await wordEditor.load(pain.id))!;
+    await wordEditor.save(pain.id, { ...loaded.values, meaning_fa: "\u200Fنان كوچك", concept_fa: "نان", note_fa: "يك\u00A0نان" }, ADMIN);
+    expect(await testDb.word.findUniqueOrThrow({ where: { id: pain.id } })).toEqual(expect.objectContaining({ meaning_fa: "نان کوچک", note_fa: "یک نان" }));
+  });
+
   it("refuses when the item changed without a log row, and writes JSON back as it was", async () => {
     const etre = await word("être", { pos: "verb", gender: null });
     await testDb.grammarUnit.create({ data: { language: "fr", unit_code: "fr-a1-etre", title_fa: "فعل être", level: "A1", order_no: 1 } });

@@ -7,6 +7,7 @@ import { checkMarks, correctedText, marksOf } from "../../kinds/errorfix";
 import { tidy } from "../../kinds/sentence-store";
 import { problem } from "../../problems";
 import { loadVocabulary } from "../../vocabulary";
+import { levelOutside } from "../../kinds/shared";
 import { errorsOf, logEdit, parseValues, type WordInfo } from "./shared";
 import { mapForEdit, tokenEdit, tokensForEdit, tokenWords, type TokenEdit } from "./tokens";
 import { viewOf, type Editor } from "./types";
@@ -65,7 +66,7 @@ export const errorfixEditor: Editor<ErrorfixValues, ErrorfixContext> = {
       const row = await tx.errorfixItem.findUnique({ where: { id } });
       if (!row) return { state: "gone" as const };
       const marks = marksOf(values.marked_text);
-      const problems = checkMarks(marks, values.errors.length);
+      const problems = [...checkMarks(values.marked_text, values.errors.length), ...(await levelOutside(row.language, values.level))];
       values.errors.forEach((item, index) => {
         if (!item.why_fa) problems.push(problem("missing", { field: `errors[${index}].why_fa` }));
       });

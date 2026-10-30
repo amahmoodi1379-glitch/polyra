@@ -4,6 +4,7 @@ import { filled, levelCode } from "@/schemas/common";
 import { db } from "@/server/db";
 import { problem, type Problem } from "../../problems";
 import { turnSentenceIds } from "../list";
+import { levelOutside } from "../../kinds/shared";
 import { errorsOf, logEdit, parseValues } from "./shared";
 import { viewOf, type Editor } from "./types";
 
@@ -60,7 +61,7 @@ export const dialogueEditor: Editor<DialogueValues, DialogueContext> = {
       const row = await tx.dialogue.findUnique({ where: { id } });
       if (!row) return { state: "gone" as const };
       const stored = (row.turns ?? []) as StoredTurn[];
-      const problems: Problem[] = [];
+      const problems: Problem[] = await levelOutside(row.language, values.level);
       // Turns are not added or removed here: each one is a set of sentences made by the prompt.
       if (values.turns.length !== stored.length) problems.push(problem("badValue", { value: values.turns.length, field: "turns" }));
       const turns = stored.map((turn, index) => {

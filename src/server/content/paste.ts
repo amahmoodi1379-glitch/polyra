@@ -3,6 +3,7 @@
  * removes whatever surrounds the JSON (greetings, ``` fences, notes after it), notices an answer that
  * was cut off, and joins a cut answer with its continuation. Pure functions, no database.
  */
+import { cleanText } from "@/lib/clean-text";
 
 export type PasteResult =
   | { state: "ok"; value: unknown; text: string }
@@ -19,9 +20,12 @@ function unfence(raw: string) {
   return fence ? fence[1] : raw;
 }
 
-/** Characters chat apps put in that break JSON: byte-order mark, zero-width spaces, non-breaking spaces. */
+/**
+ * The answer cleaned as every saved text is (`cleanText`), which also drops what chat apps put in
+ * that breaks JSON: a byte-order mark, zero-width and non-breaking spaces.
+ */
 function tidy(raw: string) {
-  return raw.replace(/^﻿/, "").replace(/[​⁠]/g, "").replace(/\r\n?/g, "\n");
+  return cleanText(raw).replace(/\r\n?/g, "\n");
 }
 
 type Scan = { end: number; depth: number; inString: boolean };

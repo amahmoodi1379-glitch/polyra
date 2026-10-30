@@ -1,8 +1,10 @@
 import type { Prisma } from "@/generated/prisma/client";
 import { db } from "@/server/db";
+import { renamedLessons, renameLessonRows, type PlannedLesson } from "@/server/content/kinds/phonics";
 import type { Tx } from "@/server/content/kinds/types";
 import { logChange, same } from "@/server/content/library/log";
 import { t } from "@/i18n";
+import { cleanDeep } from "@/lib/clean-text";
 import { appSettingDefaults } from "./app-catalog";
 import type { SettingError } from "./engine-rules";
 import {
@@ -90,8 +92,9 @@ export async function generalSettingsView(): Promise<GeneralFieldView[]> {
 
 export type GeneralSaveResult = { state: "saved"; changed: string[]; values: Record<string, GeneralValue> } | { state: "invalid"; errors: SettingError[] };
 
-/** Saves the fields a teacher changed, all or none. */
-export async function saveGeneralSettings(changes: Record<string, unknown>, adminId: number): Promise<GeneralSaveResult> {
+/** Saves the fields a teacher changed, all or none, cleaned as every saved text is. */
+export async function saveGeneralSettings(raw: Record<string, unknown>, adminId: number): Promise<GeneralSaveResult> {
+  const changes = cleanDeep(raw);
   const errors: SettingError[] = [];
   for (const [id, value] of Object.entries(changes)) {
     const field = generalField(id);
@@ -110,6 +113,7 @@ export async function saveGeneralSettings(changes: Record<string, unknown>, admi
       values[id] = editedShape(field, after);
       if (same(before, after)) continue;
       await writeStored(tx, field, after, adminId);
+      if (field.kind === "lessons") await renameLessonRows(tx, field.key.split(".").at(-1)!, renamedLessons((before ?? []) as PlannedLesson[], after as PlannedLesson[]));
       await logChange(tx, adminId, { action: "edit", ...logTarget(field), before: { value: before ?? null }, after: { value: after } });
       changed.push(id);
     }

@@ -1,5 +1,6 @@
 import type { ContentStatus, Prisma } from "@/generated/prisma/client";
 import { t } from "@/i18n";
+import { cleanText } from "@/lib/clean-text";
 import { pronounKeys } from "@/schemas/conjugation";
 import { db } from "@/server/db";
 import { appSetting, engineNumber } from "@/server/settings/read";
@@ -46,7 +47,8 @@ function statusWhere(language: string, status: StatusFilter): Where {
   return { language, status: { not: "retired" } };
 }
 
-const like = (q: string) => ({ contains: q, mode: "insensitive" as const });
+/** A search typed with the Arabic ي or ك still finds the saved Persian letters. */
+const like = (q: string) => ({ contains: cleanText(q), mode: "insensitive" as const });
 const openRow = { OR: [{ candidate_reason: { not: null } }, { suspect: true }] } satisfies Prisma.SentenceWordWhereInput;
 const byLevel = <T extends { level: string | null }>(a: T, b: T) => levelRank(a.level) - levelRank(b.level);
 

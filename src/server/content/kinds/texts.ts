@@ -9,10 +9,11 @@ import { problem, zodProblems, type Problem } from "../problems";
 import { emptyRound, type ImportReport } from "../report";
 import { allowedTypes, checkQuestionSets, questionRange, tracks } from "../text-check";
 import { overrideForNewText, refreshDifficulty } from "../text-difficulty";
+import { dropUnusedSentences } from "../library/status";
 import { loadVocabulary } from "../vocabulary";
 import { allowedWords } from "./allowed";
-import { openStates, readyWords, unitLines, wordCount } from "./targets";
-import { mapSentence, storeSentence } from "./sentence-store";
+import { openParams, readyWords, unitLines, wordCount } from "./targets";
+import { lengthFlags, mapSentence, storeSentence } from "./sentence-store";
 import { example, labelOf, languageValues, lines, params, trace } from "./shared";
 import type { ContentKind } from "./types";
 
@@ -46,9 +47,9 @@ async function textSettings(language: string) {
 async function textsSoFar(language: string) {
   const [made, open] = await Promise.all([
     db.text.findMany({ where: { language, status: { not: "retired" } }, select: { code: true, level: true, band: true, kind: true, placement_ok: true } }),
-    db.importBatch.findMany({ where: { language, prompt_kind: "P_T", state: { in: [...openStates] } }, select: { params: true } }),
+    openParams<TextParams>(language, "P_T"),
   ]);
-  const planned = open.flatMap((batch) => (batch.params as Partial<TextParams> | null)?.texts ?? []);
+  const planned = open.flatMap((params) => params.texts ?? []);
   const codes = new Set([...made, ...planned].map((text) => text.code));
   // A planned text that is already in (a batch pasted twice) counts once.
   return { all: [...made, ...planned.filter((text) => !made.some((row) => row.code === text.code))], codes };
@@ -256,6 +257,7 @@ export const texts: ContentKind = {
         continue;
       }
 
+      round.warnings.push(...lengthFlags(spec.code, { sentences: sentences.map((sentence) => sentence.text) }));
       const sentenceIds: number[] = [];
       for (const [k, sentence] of sentences.entries()) {
         const stored = await storeSentence(tx, batch, { sentence, rows: mapped[k].rows!, vocabulary, level: spec.level, label: spec.code }, round, seen);
@@ -290,8 +292,11 @@ export const texts: ContentKind = {
         ? await tx.text.update({ where: { id: existing.id }, data })
         : await tx.text.create({ data: { language: batch.language, code: spec.code, order_override: await overrideForNewText(tx, batch.language, spec.level), ...data } });
       await refreshDifficulty(tx, { textIds: [saved.id] });
-      // A draft text that comes again gets its new questions in place of the old ones.
-      if (existing) await tx.question.deleteMany({ where: { text_id: saved.id } });
+      // A draft text that comes again gets its new questions and sentences in place of the old ones.
+      if (existing) {
+        await tx.question.deleteMany({ where: { text_id: saved.id } });
+        await dropUnusedSentences(tx, batch.language, existing.sentence_ids.filter((id) => !sentenceIds.includes(id)));
+      }
       await tx.question.createMany({
         data: checked.questions.map(({ track, set, order_no, question }) => {
           const { type, explanation_fa, prompt_fa, ...rest } = question;

@@ -3,6 +3,7 @@ import { isCardRegister } from "@/engine/content";
 import type { Mastery, Prisma } from "@/generated/prisma/client";
 import { fold } from "@/engine/tokens";
 import { arrange } from "@/lib/arrange";
+import { cleanText } from "@/lib/clean-text";
 import { parseCsv } from "@/lib/csv";
 import { optionalText } from "@/schemas/common";
 import { wordRecord } from "@/schemas/words";
@@ -33,7 +34,7 @@ const editable = new Set(["draft", "needs_review"]);
 
 export type CsvRowProblem = { row: number; label: string; problems: string[] };
 export type CsvReport =
-  | { state: "invalid"; reason: "empty" | "tooBig" | "columns"; missing?: string[] }
+  | { state: "invalid"; reason: "empty" | "tooBig" | "columns" | "encoding"; missing?: string[] }
   | {
       state: "checked" | "imported";
       added: number;
@@ -122,7 +123,9 @@ class DryRun extends Error {
 export async function importWordsCsv(input: { language: LanguageCode; text: string; adminId: number | null; dryRun: boolean }): Promise<CsvReport> {
   const { language, text, adminId, dryRun } = input;
   if (text.length > CSV_MAX_CHARS) return { state: "invalid", reason: "tooBig" };
-  const table = parseCsv(text);
+  // A replacement character: the file was read as UTF-8 but saved in another encoding.
+  if (text.includes("\uFFFD")) return { state: "invalid", reason: "encoding" };
+  const table = parseCsv(cleanText(text));
   if (table.length < 2) return { state: "invalid", reason: "empty" };
   const header = table[0].map((name) => name.trim().toLowerCase());
   const missing = required.filter((column) => !header.includes(column));

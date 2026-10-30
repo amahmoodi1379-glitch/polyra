@@ -96,7 +96,7 @@ describe("situational dialogues (P-D, PRD §8b.4)", () => {
 });
 
 describe("find-the-mistake texts (P-E, PRD §8b.5)", () => {
-  it("starts at B1, checks the marks and the units, and stores each corrected text once", async () => {
+  it("starts at B1, checks the marks, stray braces and the units, and stores each corrected text once", async () => {
     await units("fr", [
       ["fr-a1-passe-compose-avoir-er", "A1"],
       ["fr-a1-adjectifs-possessifs", "A1"],
@@ -114,12 +114,12 @@ describe("find-the-mistake texts (P-E, PRD §8b.5)", () => {
     const answer = example("P-E", "fr");
     const [good, second] = answer.items;
     answer.items.push(
-      { ...second, marked_text: "Ma sœur {{est|est}} arrivée hier soir. Elle est très fatiguée après le voyage.", unit_codes: ["fr-b2-nope"] },
+      { ...second, marked_text: "Ma sœur {{est|est}} arrivée {{hier}} soir. Elle est très fatiguée après le voyage.", unit_codes: ["fr-b2-nope"] },
       { ...good },
     );
     expect(await submitAnswer(batch.id, [fence(answer)], "answer")).toEqual({ state: "imported", rejected: 1 });
     const report = batchReport(await testDb.importBatch.findUniqueOrThrow({ where: { id: batch.id } }))!;
-    expect(report.rejected[0].problems.map((found) => found.key)).toEqual(["marksCount", "markInvalid", "errorsCount", "unitUnknown"]);
+    expect(report.rejected[0].problems.map((found) => found.key)).toEqual(["strayBraces", "marksCount", "markInvalid", "errorsCount", "unitUnknown"]);
     expect(report.added).toBe(2);
     expect(report.skipped).toBe(1);
     const item = await testDb.errorfixItem.findFirstOrThrow({ orderBy: { id: "asc" } });

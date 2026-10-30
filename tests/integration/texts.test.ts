@@ -155,6 +155,24 @@ describe("texts with questions (P-T, PRD §7, §14.3)", () => {
     expect(locked.rejected.at(-1)?.problems).toEqual([{ key: "locked", vars: { code: "de-a1-t001" } }]);
   });
 
+  it("takes a draft text again with new sentences, and the sentences it no longer uses go", async () => {
+    await words("fr", "A1", 40);
+    await unit("fr", "A1");
+    const batch = await textBatch("fr");
+    expect(await submitAnswer(batch.id, [fence(example("fr"))], "answer")).toMatchObject({ state: "imported" });
+    const before = await testDb.text.findFirstOrThrow();
+    const old = await testDb.sentence.findFirstOrThrow({ where: { text: "Bonjour, madame !" } });
+
+    const again = example("fr");
+    again.texts[0].sentences[0].text = "Bonjour madame !";
+    expect(await submitAnswer(batch.id, [fence(again)], "fix")).toMatchObject({ state: "imported" });
+    const after = await testDb.text.findFirstOrThrow();
+    expect(after.sentence_ids.slice(1)).toEqual(before.sentence_ids.slice(1));
+    expect(after.sentence_ids[0]).not.toBe(old.id);
+    expect(await testDb.sentence.findUnique({ where: { id: old.id } })).toBeNull();
+    expect(await testDb.sentence.count()).toBe(7);
+  });
+
   it("alternates the two A2 bands and marks the first texts of a level for placement", async () => {
     const targets = { A1: { texts: 0 }, A2: { texts: 120 }, B1: { texts: 100 }, B2: { texts: 80 } };
     await testDb.appSetting.create({ data: { key: "targets.fr", value: targets } });

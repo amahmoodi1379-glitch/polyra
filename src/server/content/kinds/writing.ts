@@ -6,7 +6,7 @@ import { problem, zodProblems, type Problem } from "../problems";
 import { emptyRound } from "../report";
 import { allowedWords } from "./allowed";
 import { batchSize, example, labelOf, languageValues, lines, params, trace } from "./shared";
-import { nextLevel, openStates, unitLines, wordCount, type LevelNext } from "./targets";
+import { nextLevel, openParams, unitLines, wordCount, type LevelNext } from "./targets";
 import type { ContentKind } from "./types";
 
 type WritingParams = { level: string; count: number };
@@ -43,12 +43,11 @@ export async function writingRange(level: string): Promise<Range> {
 async function writingCounts(language: string) {
   const [made, open] = await Promise.all([
     db.writingTask.groupBy({ by: ["level"], where: { language, status: { not: "retired" } }, _count: true }),
-    db.importBatch.findMany({ where: { language, prompt_kind: "P_WR", state: { in: [...openStates] } }, select: { params: true } }),
+    openParams<WritingParams>(language, "P_WR"),
   ]);
   const counts = new Map(made.map((row) => [row.level, row._count]));
-  for (const batch of open) {
-    const { level, count } = batch.params as WritingParams;
-    counts.set(level, (counts.get(level) ?? 0) + count);
+  for (const { level, count } of open) {
+    if (level && count) counts.set(level, (counts.get(level) ?? 0) + count);
   }
   return counts;
 }

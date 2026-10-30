@@ -3,6 +3,7 @@ import { filled, levelCode } from "@/schemas/common";
 import { db } from "@/server/db";
 import { checkWriting, writingRange } from "../../kinds/writing";
 import { problem } from "../../problems";
+import { levelOutside } from "../../kinds/shared";
 import { errorsOf, logEdit, parseValues } from "./shared";
 import { viewOf, type Editor } from "./types";
 
@@ -52,6 +53,7 @@ export const writingEditor: Editor<WritingValues, WritingContext> = {
     return db.$transaction(async (tx) => {
       const row = await tx.writingTask.findUnique({ where: { id } });
       if (!row) return { state: "gone" as const };
+      problems.push(...(await levelOutside(row.language, values.level)));
       const twin = await tx.writingTask.findFirst({
         where: { language: row.language, level: values.level, prompt_fa: values.prompt_fa, id: { not: id }, status: { not: "retired" } },
         select: { id: true },

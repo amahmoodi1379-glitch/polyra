@@ -3,7 +3,7 @@ import type { Tx } from "../kinds/types";
 import { turnSentenceIds } from "./list";
 import { logChange, plain } from "./log";
 import { entityOf, type LibrarySlug } from "./slugs";
-import { sentenceUses } from "./status";
+import { dropUnusedSentences, sentenceUses } from "./status";
 
 export type DeleteResult = { state: "deleted" } | { state: "notDraft" } | { state: "inUse" } | { state: "gone" };
 
@@ -64,20 +64,6 @@ async function inUse(tx: Tx, slug: LibrarySlug, row: Row): Promise<boolean> {
   return false;
 }
 
-/** Sentences of a text or dialogue that nothing else uses: they go with it. */
-async function ownSentences(tx: Tx, language: string, ids: number[], ownerId: number, kind: "texts" | "dialogues") {
-  if (ids.length === 0) return [];
-  const uses = await sentenceUses(tx, language, ids);
-  const targeted = new Set((await tx.sentenceTarget.findMany({ where: { sentence_id: { in: ids } }, select: { sentence_id: true } })).map((row) => row.sentence_id));
-  return ids.filter((sentenceId) => {
-    if (targeted.has(sentenceId)) return false;
-    const used = uses.get(sentenceId);
-    if (!used) return true;
-    const others = used.texts.length + used.dialogues.length + used.units.length - (used[kind].includes(ownerId) ? 1 : 0);
-    return others === 0;
-  });
-}
-
 /** Deletes a draft for good, with its own child rows, and logs what it was. */
 export async function deleteItem(slug: LibrarySlug, id: number, adminId: number): Promise<DeleteResult> {
   return db.$transaction(async (tx) => {
@@ -85,10 +71,6 @@ export async function deleteItem(slug: LibrarySlug, id: number, adminId: number)
     if (!row) return { state: "gone" as const };
     if (row.status !== "draft") return { state: "notDraft" as const };
     if (await inUse(tx, slug, row)) return { state: "inUse" as const };
-
-    let sentences: number[] = [];
-    if (slug === "texts") sentences = await ownSentences(tx, row.language, row.sentence_ids as number[], id, "texts");
-    if (slug === "dialogues") sentences = await ownSentences(tx, row.language, turnSentenceIds(row.turns), id, "dialogues");
 
     const where = { where: { id } };
     switch (slug) {
@@ -127,7 +109,9 @@ export async function deleteItem(slug: LibrarySlug, id: number, adminId: number)
         await tx.phonicsLesson.delete(where);
         break;
     }
-    if (sentences.length > 0) await tx.sentence.deleteMany({ where: { id: { in: sentences } } });
+    // The sentences of a text or dialogue go with it when nothing else uses them.
+    const own = slug === "texts" ? (row.sentence_ids as number[]) : slug === "dialogues" ? turnSentenceIds(row.turns) : [];
+    const sentences = await dropUnusedSentences(tx, row.language, own);
     await logChange(tx, adminId, {
       action: "delete",
       entity: entityOf[slug],

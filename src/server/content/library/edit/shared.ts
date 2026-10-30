@@ -1,4 +1,5 @@
 import type { z } from "zod";
+import { cleanDeep } from "@/lib/clean-text";
 import { db } from "@/server/db";
 import type { Tx } from "../../kinds/types";
 import { describeProblem, zodProblems, type Problem } from "../../problems";
@@ -9,9 +10,9 @@ import type { FieldError } from "./types";
 export const errorsOf = (problems: Problem[]): FieldError[] =>
   problems.map((item) => ({ path: typeof item.vars?.field === "string" ? item.vars.field : "", message: describeProblem(item) }));
 
-/** The form's values checked against their shape; a wrong shape is told in plain Persian. */
+/** The form's values, cleaned (`cleanText`) and checked against their shape; a wrong shape is told in plain Persian. */
 export function parseValues<S extends z.ZodType>(schema: S, raw: unknown): { ok: true; values: z.output<S> } | { ok: false; errors: FieldError[] } {
-  const parsed = schema.safeParse(raw, { reportInput: true });
+  const parsed = schema.safeParse(cleanDeep(raw), { reportInput: true });
   return parsed.success ? { ok: true, values: parsed.data } : { ok: false, errors: errorsOf(zodProblems(parsed.error)) };
 }
 

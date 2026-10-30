@@ -71,3 +71,17 @@ function guessSeparator(text: string) {
   const best = counts.reduce((top, item) => (item.count > top.count ? item : top));
   return best.count > 0 ? best.separator : ",";
 }
+
+/**
+ * A file's bytes as text: UTF-8, or UTF-16 when it starts with that byte order mark (Excel's «Unicode
+ * text»). Null when the bytes are not UTF-8, which is how Excel's plain «CSV» saves Persian on Windows.
+ */
+export function decodeCsv(bytes: Uint8Array): string | null {
+  if (bytes[0] === 0xff && bytes[1] === 0xfe) return new TextDecoder("utf-16le").decode(bytes);
+  if (bytes[0] === 0xfe && bytes[1] === 0xff) return new TextDecoder("utf-16be").decode(bytes);
+  try {
+    return new TextDecoder("utf-8", { fatal: true }).decode(bytes);
+  } catch {
+    return null;
+  }
+}

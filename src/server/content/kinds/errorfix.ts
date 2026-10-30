@@ -9,7 +9,7 @@ import { loadVocabulary } from "../vocabulary";
 import { allowedWords } from "./allowed";
 import { mapSentence, tidy } from "./sentence-store";
 import { batchSize, example, labelOf, languageValues, lines, params, trace } from "./shared";
-import { nextLevel, openStates, unitLines, type LevelNext } from "./targets";
+import { nextLevel, openParams, unitLines, type LevelNext } from "./targets";
 import type { ContentKind } from "./types";
 
 type ErrorfixParams = { level: string; count: number };
@@ -24,9 +24,14 @@ export function marksOf(marked: string) {
   return [...marked.matchAll(markPattern)].map(([, wrong, right]) => ({ wrong: wrong.trim(), right: right.trim() }));
 }
 
-/** Two or three marks, each one word that really changes, and one explanation per mark (PRD §8b.5). */
-export function checkMarks(marks: { wrong: string; right: string }[], explanations: number): Problem[] {
+/**
+ * Two or three marks, each one word that really changes, one explanation per mark, and no braces
+ * left outside a mark (a `{{x}}` without "|" would show in the text) (PRD §8b.5).
+ */
+export function checkMarks(marked: string, explanations: number): Problem[] {
   const problems: Problem[] = [];
+  const marks = marksOf(marked);
+  if (/[{}]/.test(marked.replace(markPattern, ""))) problems.push(problem("strayBraces", { field: "marked_text" }));
   if (marks.length < MARKS[0] || marks.length > MARKS[1]) problems.push(problem("marksCount", { field: "marked_text", count: marks.length }));
   for (const mark of marks) {
     if (!oneWord(mark.wrong) || !oneWord(mark.right) || fold(mark.wrong) === fold(mark.right)) {
@@ -45,12 +50,11 @@ export function correctedText(marked: string) {
 async function errorfixCounts(language: string) {
   const [made, open] = await Promise.all([
     db.errorfixItem.groupBy({ by: ["level"], where: { language, status: { not: "retired" } }, _count: true }),
-    db.importBatch.findMany({ where: { language, prompt_kind: "P_E", state: { in: [...openStates] } }, select: { params: true } }),
+    openParams<ErrorfixParams>(language, "P_E"),
   ]);
   const counts = new Map(made.map((row) => [row.level, row._count]));
-  for (const batch of open) {
-    const { level, count } = batch.params as ErrorfixParams;
-    counts.set(level, (counts.get(level) ?? 0) + count);
+  for (const { level, count } of open) {
+    if (level && count) counts.set(level, (counts.get(level) ?? 0) + count);
   }
   return counts;
 }
@@ -112,7 +116,7 @@ export const errorfix: ContentKind = {
       const problems: Problem[] = [];
       if (item.level !== level) problems.push(problem("levelMismatch", { value: item.level, level }));
       const marks = marksOf(item.marked_text);
-      problems.push(...checkMarks(marks, item.errors.length));
+      problems.push(...checkMarks(item.marked_text, item.errors.length));
       const unknown = item.unit_codes.filter((code) => !units.has(code));
       for (const code of unknown) problems.push(problem("unitUnknown", { code }));
       const text = correctedText(item.marked_text);

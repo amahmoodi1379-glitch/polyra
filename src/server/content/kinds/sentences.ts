@@ -8,8 +8,9 @@ import { levelRank } from "../languages";
 import { problem, zodProblems, type Problem } from "../problems";
 import { emptyRound } from "../report";
 import { loadVocabulary, type LoadedVocabulary } from "../vocabulary";
-import { addTargets, checkTarget, lengthFlags, mapSentence, storeSentence } from "./sentence-store";
-import { batchSize, example, labelOf, languageValues, lines, params } from "./shared";
+import { addTargets, blankHoldsWord, checkTarget, lengthFlags, mapSentence, storeSentence, targetOptions } from "./sentence-store";
+import { batchSize, example, labelOf, languageValues, lines, namesAsked, params, texts } from "./shared";
+import { openParams } from "./targets";
 import type { ContentKind, Tx } from "./types";
 
 type SentencesParams = { level: string; word_ids: number[] };
@@ -47,6 +48,18 @@ export const sentences: ContentKind = {
   kind: "P_S",
   template: "P-S.md",
   rootKey: "sentences",
+  /** Some sentence maps or targets a word this batch asked for. */
+  async matches(batch, _answer, records) {
+    const asked = await db.word.findMany({ where: { id: { in: params<SentencesParams>(batch).word_ids } }, select: { code: true } });
+    const codes = new Set(asked.map((word) => word.code));
+    const listed = (record: unknown, key: string) => {
+      const list = record && typeof record === "object" ? (record as Record<string, unknown>)[key] : null;
+      return Array.isArray(list) ? list : [];
+    };
+    return namesAsked(records, codes, (record) =>
+      [...listed(record, "targets").flatMap((target) => texts(target, ["target"])), ...listed(record, "tokens").flatMap((token) => texts(token, ["code"]))].map((code) => code.trim()),
+    );
+  },
 
   async plan(language, options) {
     const goal = await engineNumber("publish.word_goal_targets");
@@ -69,8 +82,10 @@ export const sentences: ContentKind = {
         })
       ).map((row) => [row.target_id, row._count]),
     );
+    // Words an open batch already asks for wait for its answer, unless the admin chose them.
+    const held = new Set((await openParams<SentencesParams>(language, "P_S")).flatMap((open) => open.word_ids ?? []));
     const needy = candidates
-      .filter((word) => chosen || (counts.get(word.id) ?? 0) < goal)
+      .filter((word) => chosen || ((counts.get(word.id) ?? 0) < goal && !held.has(word.id)))
       .sort((a, b) => levelRank(a.level) - levelRank(b.level) || (a.intro_order ?? 1e9) - (b.intro_order ?? 1e9));
     const level = needy.find((word) => levels.includes(word.level))?.level;
     if (!level) return { nothing: t("admin.create.nothing.sentences") };
@@ -142,13 +157,16 @@ export const sentences: ContentKind = {
         problems.push(...checkTarget(target, sentence.text, `targets[${k}]`));
         const id = await resolveTarget(tx, language, target, vocabulary);
         if (id === null) problems.push(problem("targetUnknown", { code: target.target }));
+        else if (target.type === "word" && mapping.rows && !blankHoldsWord(target.marked_text, sentence.text, mapping.rows, id)) {
+          problems.push(problem("blankNotTarget", { code: target.target, field: `targets[${k}].marked_text` }));
+        }
         targetIds.push(id ?? 0);
       }
       if (problems.length > 0 || !mapping.rows) {
         round.rejected.push({ label, record, problems });
         continue;
       }
-      round.warnings.push(...lengthFlags(sentence.text, sentence.targets, label));
+      round.warnings.push(...lengthFlags(label, { sentences: [sentence.text], options: targetOptions(sentence.targets) }));
 
       // The same sentence again: keep it, only add targets it does not have yet (PRD §14.9).
       const stored = await storeSentence(tx, batch, { sentence, rows: mapping.rows, vocabulary, level, label }, round, seenInAnswer);

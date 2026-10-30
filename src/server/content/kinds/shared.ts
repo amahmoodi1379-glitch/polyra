@@ -1,7 +1,14 @@
 import type { ImportBatch } from "@/generated/prisma/client";
 import { appSetting } from "@/server/settings/read";
 import { languageInfo, type LanguageCode } from "../languages";
+import { problem, type Problem } from "../problems";
 import { readTemplate } from "../template";
+
+/** A level must be one of the language's levels (general settings), not just any CEFR code. */
+export const levelProblem = (levels: string[], level: string, field = "level"): Problem[] =>
+  levels.includes(level) ? [] : [problem("levelOutside", { value: level, levels: levels.join("، "), field })];
+
+export const levelOutside = async (language: string, level: string, field = "level") => levelProblem(await appSetting<string[]>(`levels.${language}`), level, field);
 
 export async function batchSize(kind: string, fallback: number) {
   const sizes = await appSetting<Record<string, number>>("batch.sizes");
@@ -26,6 +33,19 @@ export function trace(batch: ImportBatch) {
 export function params<T>(batch: ImportBatch): T {
   return (batch.params ?? {}) as T;
 }
+
+/** The text fields `keys` of a record (an object from a chatbot answer), the ones that are strings. */
+export function texts(record: unknown, keys: string[]): string[] {
+  if (!record || typeof record !== "object") return [];
+  return keys.map((key) => (record as Record<string, unknown>)[key]).filter((value): value is string => typeof value === "string");
+}
+
+/**
+ * Whether an answer was made for this batch (`ContentKind.matches`): at least one record names
+ * something the batch asked for, or there are no records (the chatbot says why in `issues`).
+ */
+export const namesAsked = (records: unknown[], asked: Set<string>, names: (record: unknown) => string[]) =>
+  records.length === 0 || records.some((record) => names(record).some((name) => asked.has(name)));
 
 /** A short label for a record in the report: its lemma, code or text, else its position. */
 export function labelOf(record: unknown, keys: string[], index: number) {

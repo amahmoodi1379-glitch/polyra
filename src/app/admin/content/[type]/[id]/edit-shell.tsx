@@ -54,7 +54,7 @@ export function EditShell({
 
   const save = () =>
     startTransition(async () => {
-      const result = await saveItem(slug, id, values);
+      const result = await saveItem(slug, id, values, saved);
       if (result.state === "saved") {
         setValues(result.values);
         setSaved(result.values);
@@ -70,7 +70,8 @@ export function EditShell({
           document.querySelector(`[data-field="${first}"]`)?.scrollIntoView({ behavior: "smooth", block: "center" });
         });
       } else {
-        setNotice({ tone: "failed", text: t(result.state === "gone" ? "admin.library.form.gone" : "admin.library.result.failed") });
+        const key = result.state === "gone" ? "admin.library.form.gone" : result.state === "changed" ? "admin.library.form.changed" : "admin.library.result.failed";
+        setNotice({ tone: "failed", text: t(key) });
       }
     });
 

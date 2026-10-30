@@ -2,7 +2,9 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { afterAll, beforeEach, describe, expect, it } from "vitest";
 import { batchReport, createBatch, qaPrompt, submitAnswer } from "@/server/content/batches";
+import { phonicsEditor } from "@/server/content/library/edit/phonics";
 import { contentStatus } from "@/server/content/status";
+import { saveGeneralSettings } from "@/server/settings/general";
 import { resetDb, testDb } from "./db";
 
 beforeEach(resetDb);
@@ -48,6 +50,41 @@ describe("phonics lessons (P-H, PRD §8.1, §14.4)", () => {
     expect(lesson.minimal_pairs).toHaveLength(6);
     expect(lesson.liaison_sentences).toEqual([]);
     expect(qaPrompt(await testDb.importBatch.findUniqueOrThrow({ where: { id: batch.id } }))).toContain('"lesson"');
+  });
+
+  it("refuses a lesson made for another sound", async () => {
+    await lessonList();
+    const batch = await lessonBatch();
+    const answer = example("fr");
+    answer.lesson.sound_label = "liaison و enchaînement";
+    expect(await submitAnswer(batch.id, [fence(answer)], "answer")).toEqual({ state: "wrong_answer" });
+    answer.lesson.sound_label = "U و OU ";
+    expect(await submitAnswer(batch.id, [fence(answer)], "answer")).toMatchObject({ state: "imported" });
+  });
+
+  it("keeps a renamed lesson matched with the teacher's list, whichever side renames it", async () => {
+    await lessonList();
+    const batch = await lessonBatch();
+    expect(await submitAnswer(batch.id, [fence(example("fr"))], "answer")).toMatchObject({ state: "imported" });
+    const lesson = await testDb.phonicsLesson.findFirstOrThrow();
+
+    // Renamed in its form: the list entry follows, and the lesson is not offered again.
+    const loaded = (await phonicsEditor.load(lesson.id))!;
+    expect(await phonicsEditor.save(lesson.id, { ...loaded.values, sound_label: "u / ou" }, 1)).toMatchObject({ state: "saved" });
+    const list = await testDb.appSetting.findUniqueOrThrow({ where: { key: "phonics.lessons.fr" } });
+    expect((list.value as { label: string }[]).map((entry) => entry.label)).toEqual(["u / ou", "liaison و enchaînement"]);
+    expect((await contentStatus("fr")).phonicsNext).toEqual({ label: "liaison و enchaînement", count: 1 });
+
+    // Renamed in the general settings: the lesson follows. A new entry renames nothing.
+    const renamed = [
+      { label: "[y] و [u]", kind: "contrast" },
+      { label: "liaison و enchaînement", kind: "liaison" },
+    ];
+    expect(await saveGeneralSettings({ "phonics.lessons.fr": renamed }, 1)).toMatchObject({ state: "saved" });
+    expect((await testDb.phonicsLesson.findUniqueOrThrow({ where: { id: lesson.id } })).sound_label).toBe("[y] و [u]");
+    expect(await saveGeneralSettings({ "phonics.lessons.fr": [...renamed, { label: "e muet", kind: "rule" }] }, 1)).toMatchObject({ state: "saved" });
+    expect((await testDb.phonicsLesson.findUniqueOrThrow({ where: { id: lesson.id } })).sound_label).toBe("[y] و [u]");
+    expect((await contentStatus("fr")).phonicsNext).toEqual({ label: "liaison و enchaînement", count: 2 });
   });
 
   it("rejects a lesson short of pairs or with a wrong spelling equal to the word", async () => {

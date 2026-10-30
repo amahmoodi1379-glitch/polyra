@@ -3,7 +3,11 @@ import type { PhonicsKind, Prisma } from "@/generated/prisma/client";
 import { fold } from "@/engine/tokens";
 import { filled } from "@/schemas/common";
 import { db } from "@/server/db";
-import { checkLesson } from "../../kinds/phonics";
+import { appSettingDefaults } from "@/server/settings/app-catalog";
+import { APP_ENTITY } from "@/server/settings/general-fields";
+import { checkLesson, renameInList, type PlannedLesson } from "../../kinds/phonics";
+import type { Tx } from "../../kinds/types";
+import { logChange } from "../log";
 import { problem } from "../../problems";
 import { errorsOf, logEdit, parseValues, staleAudio } from "./shared";
 import { viewOf, type Editor } from "./types";
@@ -37,6 +41,17 @@ function carryAudio<T extends Stored>(items: T[], old: Stored[], keyOf: (item: S
     return { ...item, ...audio };
   });
   return { merged, stale: left.flatMap(audioIds) };
+}
+
+/** A lesson renamed here renames its entry in the teacher's list (general settings), so the two still match. */
+async function renameListEntry(tx: Tx, language: string, from: string, to: string, adminId: number) {
+  const setting = `phonics.lessons.${language}`;
+  const stored = await tx.appSetting.findUnique({ where: { key: setting } });
+  const before = (stored?.value ?? appSettingDefaults[setting] ?? []) as PlannedLesson[];
+  const after = renameInList(before, from, to);
+  if (!after) return;
+  await tx.appSetting.upsert({ where: { key: setting }, update: { value: after, updated_by: adminId }, create: { key: setting, value: after, updated_by: adminId } });
+  await logChange(tx, adminId, { action: "edit", entity: APP_ENTITY, entityId: setting, before: { value: before }, after: { value: after } });
 }
 
 /**
@@ -100,6 +115,7 @@ export const phonicsEditor: Editor<PhonicsValues, PhonicsContext> = {
       if (await logEdit(tx, adminId, "phonics", id, row, data)) {
         await tx.phonicsLesson.update({ where: { id }, data });
         await staleAudio(tx, [...words.stale, ...pairs.stale, ...sentences.stale]);
+        if (key(row.sound_label) !== key(values.sound_label)) await renameListEntry(tx, row.language, row.sound_label, values.sound_label, adminId);
       }
       return { state: "saved" as const, values, notes: [] };
     });

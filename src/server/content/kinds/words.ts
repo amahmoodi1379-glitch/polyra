@@ -10,7 +10,8 @@ import { languageInfo, type LanguageCode } from "../languages";
 import { defaultMastery, PRODUCE_LEVELS } from "../mastery";
 import { problem, zodProblems, type Problem } from "../problems";
 import { emptyRound } from "../report";
-import { batchSize, example, labelOf, languageValues, lines, params, trace } from "./shared";
+import { batchSize, example, labelOf, languageValues, levelProblem, lines, namesAsked, params, texts, trace } from "./shared";
+import { openParams } from "./targets";
 import type { ContentKind, Tx } from "./types";
 
 type WordsParams = { level: string; word_ids: number[] };
@@ -68,10 +69,19 @@ export const words: ContentKind = {
   kind: "P_W",
   template: "P-W.md",
   rootKey: "words",
+  /** Some record has the code or lemma of a word this batch asked for. */
+  async matches(batch, _answer, records) {
+    const asked = await db.word.findMany({ where: { id: { in: params<WordsParams>(batch).word_ids } }, select: { code: true, lemma: true } });
+    const names = new Set(asked.flatMap((word) => [fold(word.code), fold(word.lemma)]));
+    return namesAsked(records, names, (record) => texts(record, ["code", "lemma"]).map((text) => fold(text.trim())));
+  },
 
   async plan(language, options) {
     const levels = await appSetting<string[]>(`levels.${language}`);
-    const pending = await db.word.groupBy({ by: ["level"], where: { language, ...skeleton }, _count: true });
+    // Words an open batch already asks for wait for its answer.
+    const held = (await openParams<WordsParams>(language, "P_W")).flatMap((open) => open.word_ids ?? []);
+    const waiting = { language, ...skeleton, id: { notIn: held } };
+    const pending = await db.word.groupBy({ by: ["level"], where: waiting, _count: true });
     const withWork = new Set(pending.map((row) => row.level));
     const level =
       (options.level && withWork.has(options.level) ? options.level : null) ??
@@ -80,7 +90,7 @@ export const words: ContentKind = {
 
     const size = await batchSize("P-W", 50);
     const batch = await db.word.findMany({
-      where: { language, level, ...skeleton },
+      where: { ...waiting, level },
       orderBy: [{ intro_order: { sort: "asc", nulls: "last" } }, { id: "asc" }],
       take: size,
     });
@@ -121,7 +131,7 @@ export const words: ContentKind = {
     const round = emptyRound();
     const language = batch.language as LanguageCode;
     const { word_ids } = params<WordsParams>(batch);
-    const produceRank = await engineNumber("mastery.produce_rank");
+    const [produceRank, levels] = await Promise.all([engineNumber("mastery.produce_rank"), appSetting<string[]>(`levels.${language}`)]);
 
     const rows: Row[] = await tx.word.findMany({
       where: { language },
@@ -158,7 +168,7 @@ export const words: ContentKind = {
         continue;
       }
       const word = parsed.data;
-      const problems = checkWord(word, language);
+      const problems = [...checkWord(word, language), ...levelProblem(levels, word.level)];
       codeCount.set(word.code, (codeCount.get(word.code) ?? 0) + 1);
       if ((codeCount.get(word.code) ?? 0) > 1) problems.push(problem("repeatedInAnswer", { code: word.code }));
       checked.push({ index, label, record, word, problems });
