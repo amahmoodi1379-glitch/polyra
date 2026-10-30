@@ -7,7 +7,7 @@ import { isNewCard, retrievability } from "../fsrs";
 import { grammarProgress, grammarLevel, indexItems, vocabProgress, type ItemIndex } from "../levels";
 import { notebookOrder, openEntries } from "../notebook";
 import { paced, updatePace, type PaceMode } from "../pace";
-import { buildRound, CONJ_LAST_STEP, lastStepOfUnit, lastStepOfWord, pickConjEx, pickTargetEx, pickWordEx, type Purpose } from "../pick";
+import { buildRound, CONJ_LAST_STEP, lastStepOfUnit, lastStepOfWord, pickConjEx, pickTargetEx, pickUnitEx, pickWordEx, type Purpose } from "../pick";
 import { seeded, shuffle } from "../random";
 import { num, type Settings } from "../settings";
 import { itemKey, parseItemKey, type ConfusionE, type ItemStateE, type ItemType, type LearnerSnapshot, type NotebookE, type SkillName } from "../state";
@@ -84,10 +84,12 @@ function stillThere(content: Content, state: ItemStateE): boolean {
 /** The new-material caps of a session length (PRD §10.5), halved in slow pace (PRD §9.10). */
 export function sessionCaps(settings: Settings, lengthMin: number, mode: PaceMode) {
   const perSession = Math.ceil((num(settings, "new.words_per_5min") * lengthMin) / 5);
+  // No setting lets a session or the soft cap pass the hard daily cap (PRD §10.5).
+  const wordsHard = num(settings, "new.words_daily_hard");
   return {
-    words: paced(perSession, mode, settings),
-    wordsSoft: paced(Math.max(num(settings, "new.words_daily_soft"), perSession), mode, settings),
-    wordsHard: num(settings, "new.words_daily_hard"),
+    words: Math.min(wordsHard, paced(perSession, mode, settings)),
+    wordsSoft: Math.min(wordsHard, paced(Math.max(num(settings, "new.words_daily_soft"), perSession), mode, settings)),
+    wordsHard,
     units: Math.ceil((num(settings, "new.units_per_10min") * lengthMin) / 10),
     unitsDaily: paced(num(settings, "new.units_daily"), mode, settings),
     conj: paced(num(settings, "new.conj_per_session"), mode, settings),
@@ -127,26 +129,53 @@ export function spreadBacklog(due: { key: string; r: number }[], threshold: numb
 
 // ───────────────────────────── per-item exercises ─────────────────────────────
 
+/**
+ * The item's history as if `shown` had just come, so an exercise made in advance is chosen the way it
+ * would be when it comes: not the code or the sentence just seen, the least seen code first (PRD §9.3,
+ * steps 4 and 5).
+ */
+function afterShown(env: BuildEnv, key: string, shown: (Ex | null)[]): BuildEnv {
+  const seen = shown.filter((ex): ex is Ex => !!ex);
+  if (seen.length === 0) return env;
+  return {
+    ...env,
+    history: (other) => {
+      const base = env.history(other);
+      if (other !== key) return base;
+      const codeCounts = { ...base.codeCounts };
+      for (const ex of seen) codeCounts[ex.code] = (codeCounts[ex.code] ?? 0) + 1;
+      const sentences = seen.flatMap((ex) => (ex.sentenceId === null ? [] : [ex.sentenceId]));
+      return { codeCounts, lastCode: seen.at(-1)!.code, recentSentences: [...sentences, ...base.recentSentences] };
+    },
+  };
+}
+
 function wordItem(ctx: Ctx, word: WordC, step: number, isNew: boolean): { primary: Ex | null; item: PlanItem } {
   const { env, audio } = ctx;
   const last = lastStepOfWord(word);
   const key = itemKey("word", word.id);
   const state = ctx.states.get(key);
-  const pick = (at: number, purpose: Purpose, formOnly = false, withAudio = audio) => pickWordEx(env, word, at, purpose, { formOnly, audio: withAudio });
-  const alt = (ex: Ex | null, at: number, purpose: Purpose, formOnly = false) => (ex && ex.audio && audio ? pick(at, purpose, formOnly, false) : null);
+  const pick = (shown: (Ex | null)[], at: number, purpose: Purpose, formOnly = false, withAudio = audio) =>
+    pickWordEx(afterShown(env, key, shown), word, at, purpose, { formOnly, audio: withAudio });
+  const alt = (shown: (Ex | null)[], ex: Ex | null, at: number, purpose: Purpose, formOnly = false) => (ex && ex.audio && audio ? pick(shown, at, purpose, formOnly, false) : null);
 
   let primary: Ex | null;
   if (state && state.probation !== "none") {
     // The first real review of a probation card is typed: W5a, or a step-3 meaning exercise (PRD §9.7).
-    primary = word.mastery === "recognize" ? pick(3, "review") : (buildWordEx(env, word, "W5a") ?? pick(step, "review"));
+    primary = word.mastery === "recognize" ? pick([], 3, "review") : (buildWordEx(env, word, "W5a") ?? pick([], step, "review"));
   } else {
-    primary = pick(step, "review");
+    primary = pick([], step, "review");
   }
   const nextStep = Math.min(last, step + 1);
-  const followup = step < last ? pick(nextStep, "followup") : null;
-  const followupForm = pick(last, "followup", true);
+  const followup = step < last ? pick([primary], nextStep, "followup") : null;
+  const followupForm = pick([primary], last, "followup", true);
+  // Two practices after wrong answers: the first follows the review, the second the first practice.
   const fallStep = Math.max(1, step - 1);
-  const fallback = [pick(fallStep, "practice"), pick(fallStep, "practice")].filter((ex): ex is Ex => !!ex);
+  const first = pick([primary], fallStep, "practice");
+  const practices = [
+    { ex: first, shown: [primary] },
+    { ex: pick([primary, first], fallStep, "practice"), shown: [primary, first] },
+  ].filter((practice) => practice.ex);
   const gender = genderButtons(word, ctx.content.language) ? buildWordEx(env, word, "W2d") : null;
   return {
     primary,
@@ -155,11 +184,11 @@ function wordItem(ctx: Ctx, word: WordC, step: number, isNew: boolean): { primar
       isNew,
       last,
       followup,
-      followupAlt: alt(followup, nextStep, "followup"),
+      followupAlt: alt([primary], followup, nextStep, "followup"),
       followupForm,
-      followupFormAlt: alt(followupForm, last, "followup", true),
-      fallback,
-      fallbackAlt: fallback.map((ex) => alt(ex, fallStep, "practice")),
+      followupFormAlt: alt([primary], followupForm, last, "followup", true),
+      fallback: practices.map((practice) => practice.ex!),
+      fallbackAlt: practices.map((practice) => alt(practice.shown, practice.ex, fallStep, "practice")),
       gender,
     },
   };
@@ -167,15 +196,17 @@ function wordItem(ctx: Ctx, word: WordC, step: number, isNew: boolean): { primar
 
 function conjItem(ctx: Ctx, table: ConjC, step: number, isNew: boolean): { primary: Ex | null; item: PlanItem } {
   const { env, audio } = ctx;
-  const pick = (at: number, purpose: Purpose) => pickConjEx(env, table, at, purpose, { audio });
-  const primary = pick(step, "review");
-  const followup = step < CONJ_LAST_STEP ? pick(step + 1, "followup") : null;
+  const key = itemKey("conjugation", table.id);
+  const pick = (shown: (Ex | null)[], at: number, purpose: Purpose) => pickConjEx(afterShown(env, key, shown), table, at, purpose, { audio });
+  const primary = pick([], step, "review");
+  const followup = step < CONJ_LAST_STEP ? pick([primary], step + 1, "followup") : null;
   const fallStep = Math.max(1, step - 1);
-  const fallback = [pick(fallStep, "practice"), pick(fallStep, "practice")].filter((ex): ex is Ex => !!ex);
+  const first = pick([primary], fallStep, "practice");
+  const fallback = [first, pick([primary, first], fallStep, "practice")].filter((ex): ex is Ex => !!ex);
   return {
     primary,
     item: {
-      key: itemKey("conjugation", table.id),
+      key,
       isNew,
       last: CONJ_LAST_STEP,
       followup,
@@ -258,8 +289,8 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
   const wantWords = scope !== "grammar";
   const wantGrammar = scope !== "vocab";
 
-  // ── Reviews (step 4), R ascending, with the round cap ──
-  const roundCap = Math.ceil((num(settings, "cap.rounds_per_5min") * lengthMin) / 5);
+  // ── Reviews (step 4), R ascending, with the round cap; a grammar session is bound by its time only (DECISIONS.md) ──
+  const roundCap = scope === "grammar" ? Number.POSITIVE_INFINITY : Math.ceil((num(settings, "cap.rounds_per_5min") * lengthMin) / 5);
   let rounds = 0;
   const dueEntry = (key: string): Entry | null => {
     const state = states.get(key)!;
@@ -395,11 +426,16 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
         const word = content.words.get(id)!;
         const built = wordItem(ctx, word, state.step, false);
         const ex = pickWordEx(env, word, state.step, "practice", { audio: ctx.audio });
-        if (ex) entry = { t: "single", key, kind: "practice", ex, alt: null, step: state.step, cost: time(settings, ex), planItem: built.item };
+        if (ex) entry = { t: "single", key, kind: "practice", ex, alt: altOf(ctx, ex, () => pickWordEx(env, word, state.step, "practice", { audio: false })), step: state.step, cost: time(settings, ex), planItem: built.item };
       } else if (type === "conjugation") {
         const table = content.conjugations.find((item) => item.id === id)!;
         const ex = pickConjEx(env, table, state.step, "practice", { audio: ctx.audio });
         if (ex) entry = { t: "single", key, kind: "practice", ex, alt: null, step: state.step, cost: time(settings, ex) };
+      } else {
+        // A unit gets one question of its step, like a notebook sentence (PRD §10.8, «هر کدام با یک تمرین»).
+        const unit = content.units.find((item) => item.id === id)!;
+        const ex = pickUnitEx(env, unit, state.step, { audio: ctx.audio });
+        if (ex) entry = { t: "single", key, kind: "practice", ex, alt: altOf(ctx, ex, () => pickUnitEx(env, unit, state.step, { audio: false })), step: state.step, cost: time(settings, ex) };
       }
       if (entry && used + entry.cost <= budget) add(entry);
     }

@@ -214,7 +214,7 @@ export async function loadLearner(
         first_typing: false,
         ts: { gte: new Date(now.getTime() - num(settings, "pace.window_days") * 86_400_000) },
       },
-      select: { result: true },
+      select: { fsrs_rating: true },
     }),
     client.reviewLog.findMany({
       where: { user_id: userId, language, ts: { gte: tehranDayStart(today), lt: tehranDayStart(addDays(today, 1)) }, kind: { in: ["review", "followup", "practice", "intro"] } },
@@ -254,7 +254,8 @@ export async function loadLearner(
     history,
     sentenceSeen: new Map(seen.map((row) => [row.sentence_id, Number(row.n)])),
     latency: Object.fromEntries(latency.map((row) => [row.exercise_code, { median: Number(row.median), count: Number(row.n) }])),
-    paceReviews: pace.map((row) => ({ ok: row.result === "correct" || row.result === "near", firstTyping: false })),
+    // A rating above «again» is a right or nearly right review; for a round it is the round's result, not its last question's (PRD §9.10).
+    paceReviews: pace.map((row) => ({ ok: (row.fsrs_rating ?? 0) >= 2, firstTyping: false })),
     recentIntroWordIds: items
       .filter((row) => row.item_type === "word" && row.introduced_at)
       .sort((a, b) => b.introduced_at!.getTime() - a.introduced_at!.getTime())

@@ -105,9 +105,16 @@ export function startInfo(content: Content, learner: Pick<LearnerSnapshot, "item
 /** The open session of a language, if any. */
 export const openSession = (userId: number, language: string) => db.session.findFirst({ where: { user_id: userId, language, ended_at: null }, orderBy: { created_at: "desc" } });
 
-/** When an open session stops being resumable (PRD §10.8): 6 hours after its last answer or its build. */
+/** A session takes no answer more than a day after its build (PRD §15.4, step 9). */
+export const SESSION_LIFE_MS = 24 * 3_600_000;
+
+/**
+ * When an open session stops being resumable (PRD §10.8): `session.resume_hours` after its last answer
+ * or its build, and never past its one day.
+ */
 export function expiresAt(row: Pick<Session, "created_at" | "last_answer_at">, settings: Settings): Date {
-  return new Date((row.last_answer_at ?? row.created_at).getTime() + num(settings, "session.resume_hours") * 3_600_000);
+  const resume = (row.last_answer_at ?? row.created_at).getTime() + num(settings, "session.resume_hours") * 3_600_000;
+  return new Date(Math.min(resume, row.created_at.getTime() + SESSION_LIFE_MS));
 }
 
 /** What a build writes before the session starts (PRD §10.2, step 1): pace, the spread backlog, the word cap. */
@@ -211,7 +218,7 @@ export async function previewSession(user: Learner, language: string, now = new 
 
 /**
  * Closes a session (PRD §10.8). A round with three answers or more is scored as it stands (PRD §6.5,
- * rule 8); the rest of the queue has no effect. The first close of a language starts its free period.
+ * rule 8), and any round's answers count in the notebook; the rest of the queue has no effect. The first close of a language starts its free period.
  */
 export async function closeSession(row: Session, reason: "finished" | "expired" | "replaced", endedAt: Date, ctx: LearnContext, tx?: Prisma.TransactionClient) {
   const run = async (client: Prisma.TransactionClient) => {
@@ -223,9 +230,11 @@ export async function closeSession(row: Session, reason: "finished" | "expired" 
         const { id } = parseItemKey(round.item);
         const before = plan.states[round.item] ?? newItemState("grammar_unit", id, endedAt);
         const outcome = applyRound(before, round.step, round.answers, { settings: ctx.settings, now: endedAt, today: tehranDate(endedAt), latency: plan.latency }, round.last);
-        if (!outcome.scored) continue;
-        const isNew = await saveItemState(client, who, outcome.state);
-        if (isNew) await addDaily(client, who, tehranDate(endedAt), { new_units: 1 });
+        if (outcome.scored) {
+          const isNew = await saveItemState(client, who, outcome.state);
+          if (isNew) await addDaily(client, who, tehranDate(endedAt), { new_units: 1 });
+        }
+        // Even an unscored round sends its wrong sentences to the notebook (PRD §6.5, rule 8).
         await applyNotebookOps(client, who, outcome.notebook, endedAt, tehranDate(endedAt), ctx.settings);
       }
     }

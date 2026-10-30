@@ -37,15 +37,58 @@ export type Advanced = {
   finished: boolean;
 };
 
+const EXERCISES = new Set<Card["t"]>(["ex", "g0", "round"]);
+
 /**
- * Puts a card at least `gap` cards later, never inside a block: a position inside one moves to
- * after it. When fewer cards are left, the card goes last.
+ * Whether `card` may come right after `prev` (PRD §16.3, rule 14): never two exercises of one item in
+ * a row, except an introduction (intro card, table, lesson) and its first exercise, and the questions
+ * of one block.
  */
-export function insertLater(queue: Card[], card: Card, gap: number): Card[] {
+export function mayFollow(prev: Card | undefined, card: Card): boolean {
+  if (!prev || prev.item !== card.item || !EXERCISES.has(card.t)) return true;
+  return prev.t === "intro" || prev.t === "table" || prev.t === "lesson" || (!!card.block && prev.block === card.block);
+}
+
+/** Whether `card` fits before `queue[index]`, with `prev` the card shown just before the queue. */
+function fitsAt(queue: Card[], index: number, card: Card, prev: Card): boolean {
+  const after = queue[index];
+  if (after?.block && index > 0 && queue[index - 1].block === after.block) return false;
+  return mayFollow(index === 0 ? prev : queue[index - 1], card) && (!after || mayFollow(card, after));
+}
+
+/**
+ * Puts a card at least `gap` cards later (PRD §10.7), never inside a block and never next to another
+ * card of its item (rule 14): the first place from `gap` on, else the nearest one before it, so with
+ * fewer cards left it goes last. `prev` is the card shown just before the queue. Null when no place
+ * fits; the card is then left out.
+ */
+export function insertLater(queue: Card[], card: Card, gap: number, prev: Card): Card[] | null {
+  const start = Math.min(gap, queue.length);
+  const up = Array.from({ length: queue.length - start + 1 }, (_, i) => start + i);
+  const down = Array.from({ length: start }, (_, i) => start - 1 - i);
+  for (const index of [...up, ...down]) {
+    if (!fitsAt(queue, index, card, prev)) continue;
+    const out = [...queue];
+    out.splice(index, 0, card);
+    return out;
+  }
+  return null;
+}
+
+/**
+ * A change to the queue (rescue, dropped new material, the time guard) can bring two cards of one
+ * item together; the second moves to the next place that fits, or is left out. Only a followup or a
+ * practice added during the session can be such a card: the plan has one entry per item.
+ */
+function keepApart(queue: Card[], prev: Card): Card[] {
   const out = [...queue];
-  let index = Math.min(gap, out.length);
-  while (index > 0 && index < out.length && out[index].block && out[index - 1].block === out[index].block) index++;
-  out.splice(index, 0, card);
+  for (let index = 0; index < out.length; index++) {
+    const card = out[index];
+    if (card.block || mayFollow(out[index - 1] ?? prev, card)) continue;
+    const rest = out.slice(index + 1);
+    out.splice(index, out.length - index, ...(insertLater(rest, card, 1, out[index - 1] ?? prev) ?? rest));
+    index--;
+  }
   return out;
 }
 
@@ -115,24 +158,22 @@ export function advance(plan: SessionPlan, event: AdvanceEvent, settings: Settin
       front.push(make({ t: "intro", item: card.item, reason: "again" }));
     }
     if (event.confusion && !out.leech) front.push(make({ t: "confusion", item: card.item, pair: event.confusion }));
-    const later = (ex: Ex | null | undefined, alt: Ex | null | undefined, kind: Card["kind"], gap: number) => {
-      if (!ex) return;
-      queue = insertLater(queue, make({ t: "ex", item: card.item, kind, ex, alt: alt ?? null }), gap);
+    // The card goes after the cards put in front of the queue; a card with no place is left out.
+    const prev = front.at(-1) ?? card;
+    const later = (ex: Ex | null | undefined, alt: Ex | null | undefined, kind: Card["kind"], gap: number): boolean => {
+      const placed = ex ? insertLater(queue, make({ t: "ex", item: card.item, kind, ex, alt: alt ?? null }), gap, prev) : null;
+      if (placed) queue = placed;
+      return !!placed;
     };
     if (out.followup && item) {
       if (out.followupFormOnly) later(item.followupForm, item.followupFormAlt, "followup", gapFollow);
       else later(item.followup, item.followupAlt, "followup", gapFollow);
     }
     const used = counters.practice[card.item] ?? 0;
-    if (out.practice && item && used < maxPractice) {
-      const ex = item.fallback[used % Math.max(1, item.fallback.length)];
-      if (ex) {
-        later(ex, item.fallbackAlt[used % Math.max(1, item.fallback.length)], "practice", gapPractice);
-        counters.practice[card.item] = used + 1;
-      }
-    } else if (out.genderPractice && item?.gender && used < maxPractice) {
-      later(item.gender, null, "practice", gapPractice);
-      counters.practice[card.item] = used + 1;
+    if (used < maxPractice && item) {
+      const at = used % Math.max(1, item.fallback.length);
+      const placed = out.practice ? later(item.fallback[at], item.fallbackAlt[at], "practice", gapPractice) : out.genderPractice && later(item.gender, null, "practice", gapPractice);
+      if (placed) counters.practice[card.item] = used + 1;
     }
   }
   queue = [...front, ...queue];
@@ -165,6 +206,7 @@ export function advance(plan: SessionPlan, event: AdvanceEvent, settings: Settin
   // Time guard: past 1.3 times the budget the remaining followups go (PRD §10.7, §9.11).
   if (event.elapsedSec > num(settings, "session.time_guard") * plan.budgetSec) queue = queue.filter((other) => other.kind !== "followup");
 
+  queue = keepApart(queue, card);
   const next: SessionPlan = { ...plan, queue, rounds, counters, nextCard, doneCount: plan.doneCount + 1 };
   return { plan: next, roundDone, rescued, droppedNew, finished: queue.length === 0 };
 }

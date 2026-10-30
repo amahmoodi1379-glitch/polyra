@@ -14,6 +14,7 @@ import { submitAnswer, sessionEnd } from "@/server/learn/answer";
 import { forgetContent, loadContent } from "@/server/learn/content";
 import { startFromZero } from "@/server/learn/enroll";
 import { homeData } from "@/server/learn/home";
+import { loadLearner } from "@/server/learn/learner";
 import { startSession, type Bundle } from "@/server/learn/session";
 import { queueTappedWord } from "@/server/learn/tap";
 import { saveItemState } from "@/server/learn/writes";
@@ -227,6 +228,78 @@ describe("closing a session early (PRD §10.8)", () => {
     const daily = await testDb.dailyCounter.findFirst({ where: { user_id: user.id } });
     expect(daily?.new_words ?? 0).toBe(0);
   });
+
+  it("a session answered every five hours still ends a day after its build (PRD §10.8, §15.4 step 9)", async () => {
+    const user = await enrolled();
+    const bundle = await started(user);
+    let plan = bundle.plan;
+    let seq = bundle.nextSeq;
+    for (const hours of [5, 10, 15, 20]) {
+      const at = new Date(NOW.getTime() + hours * 3_600_000);
+      const card = plan.queue[0];
+      const { raw, result } = answerFor(bundle, plan, card, at);
+      expect(await submitAnswer(user, request(bundle, seq++, card, raw, at), at)).toMatchObject({ kind: "ok" });
+      plan = result.advanced.plan;
+    }
+    // The next answer, a day and an hour after the build, is dropped and the session ends at its day.
+    const late = new Date(NOW.getTime() + 25 * 3_600_000);
+    const { raw } = answerFor(bundle, plan, plan.queue[0], late);
+    expect(await submitAnswer(user, request(bundle, seq, plan.queue[0], raw, late), late)).toEqual({ kind: "gone" });
+    expect(await testDb.session.findUniqueOrThrow({ where: { id: bundle.id } })).toMatchObject({ end_reason: "expired", ended_at: new Date(NOW.getTime() + 24 * 3_600_000) });
+    // «شروع» builds a new session instead of resuming the old one.
+    expect((await started(user, late)).id).not.toBe(bundle.id);
+  });
+
+  it("a round left after two answers is not scored, but its wrong sentence goes to the notebook (PRD §6.5, rule 8)", async () => {
+    const user = await enrolled();
+    const unit = await testDb.grammarUnit.findFirstOrThrow({ where: { language: "fr" }, orderBy: { id: "asc" } });
+    await learned(user.id, "grammar_unit", unit.id, { step: 2 });
+    const bundle = await started(user, NOW, "grammar");
+    let plan = bundle.plan;
+    let seq = bundle.nextSeq;
+    const first = plan.queue.findIndex((card) => card.t === "round" && card.item === `u:${unit.id}`);
+    expect(first).toBeGreaterThan(-1);
+    for (let i = 0; i < first + 2; i++) {
+      const card = plan.queue[0];
+      const at = new Date(NOW.getTime() + (i + 1) * 5000);
+      // The round's first question is answered with «نمی‌دانم», the second right.
+      const { raw, result } = answerFor(bundle, plan, card, at, i === first ? { idk: true } : undefined);
+      expect(await submitAnswer(user, request(bundle, seq++, card, raw, at), at)).toMatchObject({ kind: "ok" });
+      plan = result.advanced.plan;
+    }
+    const wrong = shownEx(bundle.plan, bundle.plan.queue[first])!;
+    expect(wrong.targetId).not.toBeNull();
+
+    await startSession(user, { language: "fr", scope: "vocab", noAudio: false, cap: null }, new Date(NOW.getTime() + 600_000));
+    expect((await testDb.session.findUniqueOrThrow({ where: { id: bundle.id } })).end_reason).toBe("replaced");
+    const state = await testDb.itemState.findFirstOrThrow({ where: { user_id: user.id, item_type: "grammar_unit", item_id: unit.id } });
+    expect(state).toMatchObject({ step: 2, rounds_count: 0 });
+    const notes = await testDb.notebookEntry.findMany({ where: { user_id: user.id } });
+    expect(notes.map((note) => [note.ref_type, note.ref_id])).toEqual([["grammar_target", wrong.targetId]]);
+  });
+});
+
+describe("pace (PRD §9.10, «سرعت کم»)", () => {
+  it("a round counts by its own result, not by its last question", async () => {
+    const user = await enrolled();
+    const settings = await engineSettings();
+    // A passed round whose last question was wrong, a failed round whose last question was right, and a first typing.
+    const row = (rating: number, result: "correct" | "wrong", firstTyping = false) => ({
+      id: randomUUID(),
+      user_id: user.id,
+      language: "fr",
+      kind: "review" as const,
+      item_type: "grammar_unit",
+      item_id: 1,
+      result,
+      fsrs_rating: rating,
+      first_typing: firstTyping,
+      ts: plusDays(NOW, -1),
+    });
+    await testDb.reviewLog.createMany({ data: [row(3, "wrong"), row(1, "correct"), row(2, "wrong", true)] });
+    const learner = await loadLearner(testDb, user.id, "fr", "A1", NOW, tehranDate(NOW), settings);
+    expect(learner?.paceReviews.map((review) => review.ok).sort()).toEqual([false, true]);
+  });
 });
 
 describe("the line under «شروع» (PRD §10.2)", () => {
@@ -285,11 +358,32 @@ describe("a touched word (PRD §5.9)", () => {
     expect(await queueTappedWord(user, "fr", known, NOW)).toBe(false);
     expect(await testDb.newWordQueue.findMany({ where: { user_id: user.id }, select: { word_id: true, source: true } })).toEqual([{ word_id: fresh, source: "tap" }]);
 
+    // A no_card word, and a word below the learner's known level, are known already (PRD §5.7).
+    const noCard = await testDb.word.findFirstOrThrow({ where: { language: "fr", no_card: true }, select: { id: true } });
+    expect(await queueTappedWord(user, "fr", noCard.id, NOW)).toBe(false);
+    const below = words.at(-3)!.id;
+    expect((await testDb.word.findUniqueOrThrow({ where: { id: below } })).level).toBe("A1");
+    expect(await testDb.skillLevel.updateMany({ where: { user_id: user.id, skill: "vocab" }, data: { known_below: "A2" } })).toEqual({ count: 1 });
+    expect(await queueTappedWord(user, "fr", below, NOW)).toBe(false);
+
     // The demo is approved, not released: a learner who is not a tester does not see it; nor does someone who has not started French.
     const learner = await enrolled({});
     expect(await queueTappedWord(learner, "fr", fresh, NOW)).toBe(false);
     const stranger = await person({ is_tester: true });
     expect(await queueTappedWord(stranger, "fr", fresh, NOW)).toBe(false);
+  });
+
+  it("comes first in the next session and keeps «tap» as its source", async () => {
+    const user = await enrolled();
+    const words = await testDb.word.findMany({ where: { language: "fr", no_card: false, register: "standard" }, orderBy: { intro_order: "asc" }, select: { id: true } });
+    const fresh = words.at(-1)!.id;
+    expect(await queueTappedWord(user, "fr", fresh, NOW)).toBe(true);
+    const bundle = await started(user);
+    expect(bundle.plan.queue.find((card) => card.t === "intro")?.item).toBe(`w:${fresh}`);
+    await playAll(user, bundle);
+    expect(await testDb.itemState.findFirstOrThrow({ where: { user_id: user.id, item_type: "word", item_id: fresh } })).toMatchObject({ source: "tap" });
+    expect(await testDb.newWordQueue.count({ where: { user_id: user.id } })).toBe(0);
+    expect(await testDb.dailyCounter.findFirstOrThrow({ where: { user_id: user.id } })).toMatchObject({ queue_words: 1 });
   });
 });
 

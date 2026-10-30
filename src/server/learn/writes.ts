@@ -18,7 +18,8 @@ export async function saveItemState(tx: Tx, who: Who, state: ItemStateE): Promis
   const where = { user_id_item_type_item_id: { user_id: who.userId, item_type: state.itemType, item_id: state.itemId } };
   const found = await tx.itemState.findUnique({ where, select: { id: true } });
   if (found) {
-    await tx.itemState.update({ where: { id: found.id }, data: itemStateRow(state) });
+    // Where an item came from is written once, when it is made (PRD §4, `item_state.source`); undefined leaves it.
+    await tx.itemState.update({ where: { id: found.id }, data: { ...itemStateRow(state), source: undefined } });
     return false;
   }
   await tx.itemState.create({ data: { user_id: who.userId, language: who.language, item_type: state.itemType, item_id: state.itemId, ...itemStateRow(state) } });

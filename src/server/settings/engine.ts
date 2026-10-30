@@ -3,6 +3,7 @@ import { db } from "@/server/db";
 import type { Prisma } from "@/generated/prisma/client";
 import type { Tx } from "@/server/content/kinds/types";
 import { logChange, same } from "@/server/content/library/log";
+import { applyProduceRank } from "@/server/content/mastery";
 import { engineCatalog, settingGroups, type EngineSettingDef, type SettingGroup } from "./engine-catalog";
 import { checkRelations, checkValue, engineDef, type EngineValue, type SettingError } from "./engine-rules";
 
@@ -55,6 +56,7 @@ export async function writeEngineValue(tx: Tx, key: string, before: EngineValue,
     },
   });
   await logChange(tx, adminId, { action, entity: ENGINE_ENTITY, entityId: key, before: { value: before }, after: { value: after } });
+  if (key === "mastery.produce_rank") await applyProduceRank(tx, Number(after));
 }
 
 export type EngineSaveResult = { state: "saved"; changed: string[] } | { state: "invalid"; errors: SettingError[] };

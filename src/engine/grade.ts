@@ -27,6 +27,9 @@ export type GradeContext = {
   wordsWithLemma?: (lemma: string) => number[];
 };
 
+/** The exercises whose wrong answer can name another word, for confusion pairs (PRD §9.9). */
+const PAIR_CODES = new Set(["W1a", "W1b", "W2a", "W2b", "W2c", "W3b", "W5a", "W6a"]);
+
 const graded = (result: Graded["result"], raw: string, reason: ResultReason | null = null, chosenWordId: number | null = null): Graded => ({
   result,
   reason,
@@ -75,20 +78,20 @@ function gradeTyped(spec: Extract<AnswerSpec, { kind: "type" }>, answer: { text:
 
   // A typed word that is another word of the list (PRD §9.9, W5a and W6a).
   let chosen: number | null = null;
-  if ((ex.code === "W5a" || ex.code === "W6a") && ctx.wordsWithLemma) {
+  if (PAIR_CODES.has(ex.code) && ctx.wordsWithLemma) {
     const target = parseItemKey(ex.item).id;
     chosen = ctx.wordsWithLemma(given.toLowerCase()).find((id) => id !== target) ?? null;
   }
   return graded("wrong", raw, null, chosen);
 }
 
-function gradeTable(spec: Extract<AnswerSpec, { kind: "table" }>, rows: string[], language: Lang): Graded {
+function gradeTable(spec: Extract<AnswerSpec, { kind: "table" }>, rows: string[], language: Lang): GradeOutcome {
+  if (rows.some(hasPersianLetter)) return { result: "persian" };
   const raw = rows.join(" | ");
   let near: ResultReason | null = null;
   for (const [i, row] of spec.rows.entries()) {
     if (!row.accepted) continue;
     const given = rows[i] ?? "";
-    if (hasPersianLetter(given)) return graded("wrong", raw);
     const multi = row.accepted.some((form) => form.includes(" "));
     const match = matchAny(
       cleanAnswer(given, multi),
@@ -114,7 +117,7 @@ export function grade(ex: Ex, answer: RawAnswer, ctx: GradeContext): GradeOutcom
       const option = spec.options.find((item) => item.id === answer.choice);
       const raw = option?.text ?? answer.choice;
       if (answer.choice === spec.correct) return graded("correct", raw);
-      const chosen = isWord && option?.wordId && option.wordId !== target ? option.wordId : null;
+      const chosen = isWord && PAIR_CODES.has(ex.code) && option?.wordId && option.wordId !== target ? option.wordId : null;
       return graded("wrong", raw, null, chosen);
     }
     case "choice2": {

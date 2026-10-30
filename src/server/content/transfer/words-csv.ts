@@ -11,6 +11,7 @@ import { levelWords, numberLevel } from "../intro-order";
 import { checkWord } from "../kinds/words";
 import type { Tx } from "../kinds/types";
 import { languageInfo, levelRank, type LanguageCode } from "../languages";
+import { defaultMastery } from "../mastery";
 import { changes, logChange, plain } from "../library/log";
 import { orderEntity, orderKey } from "../order";
 import { describeProblem, problem, zodProblems, type Problem } from "../problems";
@@ -28,7 +29,6 @@ import { wordCsvColumns } from "./export";
 export const CSV_MAX_CHARS = 3_000_000;
 const required = ["code", "lemma", "pos", "level"] as const;
 const editable = new Set(["draft", "needs_review"]);
-const lowLevels = new Set(["A1", "A2"]);
 
 export type CsvRowProblem = { row: number; label: string; problems: string[] };
 export type CsvReport =
@@ -230,15 +230,7 @@ export async function importWordsCsv(input: { language: LanguageCode; text: stri
     for (const item of kept) {
       const { record, target } = item;
       const rank = target?.frequency_rank ?? null;
-      const mastery: Mastery = target?.mastery_manual
-        ? target.mastery
-        : lowLevels.has(record.level) || record.pos === "phrase"
-          ? "produce"
-          : rank !== null
-            ? rank <= produceRank
-              ? "produce"
-              : "recognize"
-            : (target?.mastery ?? "produce");
+      const mastery: Mastery = target?.mastery_manual ? target.mastery : defaultMastery(record, rank, produceRank, target?.mastery ?? null);
       const fields = {
         code: record.code,
         lemma: record.lemma,

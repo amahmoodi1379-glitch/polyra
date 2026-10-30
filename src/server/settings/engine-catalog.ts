@@ -211,7 +211,7 @@ export const engineCatalog: EngineSettingDef[] = [
     description_fa: "طول پیش‌فرض جلسه (دقیقه).",
   },
   int("quick.minutes", 5, 3, 15, "session", "طول جلسه «امروز وقت کم دارم» (دقیقه)."),
-  int("session.resume_hours", 6, 1, 48, "session", "جلسه نیمه‌کاره تا چند ساعت قابل ادامه است."),
+  int("session.resume_hours", 6, 1, 24, "session", "جلسه نیمه‌کاره تا چند ساعت قابل ادامه است (هیچ جلسه‌ای بیش از یک روز باز نمی‌ماند)."),
   ratio("session.overrun", 0.3, "session", "مطلب جدید تا چه حد می‌تواند از زمان باقی‌مانده جلسه بیرون بزند."),
   num("session.time_guard", 1.3, 1, 3, "session", "اگر جلسه از این ضریبِ زمانش طولانی‌تر شد، تمرین‌های اضافه حذف شوند."),
   int("cap.rounds_per_5min", 1, 0, 5, "session", "حداکثر دور مرور دستور به ازای هر ۵ دقیقه جلسه."),

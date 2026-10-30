@@ -6,6 +6,7 @@ import { db } from "@/server/db";
 import { appSetting, engineNumber } from "@/server/settings/read";
 import { lastIntroOrder, placeAfter } from "../intro-order";
 import { languageInfo, type LanguageCode } from "../languages";
+import { defaultMastery, PRODUCE_LEVELS } from "../mastery";
 import { problem, zodProblems, type Problem } from "../problems";
 import { emptyRound } from "../report";
 import { batchSize, example, labelOf, languageValues, lines, params, trace } from "./shared";
@@ -16,7 +17,6 @@ type WordsParams = { level: string; word_ids: number[] };
 /** A draft made from the word list that still has no meaning (PRD §13.9). */
 const skeleton = { meaning_fa: null, status: "draft", dup_of_id: null } as const;
 const editable = new Set(["draft", "needs_review"]);
-const lowLevels = new Set(["A1", "A2"]);
 
 type Row = {
   id: number;
@@ -51,7 +51,7 @@ export function checkWord(word: Pick<WordRecord, "pos" | "gender" | "number" | "
     word.gender = null;
     word.number = null;
   }
-  if (lowLevels.has(word.level) && word.mastery === "recognize") {
+  if (PRODUCE_LEVELS.has(word.level) && word.mastery === "recognize") {
     problems.push(problem("masteryLowLevel", { field: "mastery" }));
   }
   if (word.pos === "phrase" && (!word.parts || word.parts.length === 0)) problems.push(problem("missing", { field: "parts" }));
@@ -237,15 +237,7 @@ export const words: ContentKind = {
       const sameLemma = rows.find((row) => row.id !== target?.id && fold(row.lemma) === fold(word.lemma));
       const isDuplicate = !target && !word.sense_of && fold(word.code) === fold(word.lemma) && Boolean(sameLemma);
       const rank = target?.frequency_rank ?? null;
-      const mastery: Mastery = target?.mastery_manual
-        ? target.mastery
-        : lowLevels.has(word.level) || word.pos === "phrase"
-          ? "produce"
-          : rank !== null
-            ? rank <= produceRank
-              ? "produce"
-              : "recognize"
-            : (word.mastery ?? "produce");
+      const mastery: Mastery = target?.mastery_manual ? target.mastery : defaultMastery(word, rank, produceRank, word.mastery ?? null);
 
       const data = {
         code: word.code,

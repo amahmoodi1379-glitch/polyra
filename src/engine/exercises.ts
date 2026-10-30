@@ -90,6 +90,9 @@ export const codesAt = (family: ExerciseFamily, step: number) => exerciseDefs.fi
 /** Grammar rounds from step 5 on are typed; their first round is the unit's first typing (PRD §9.2). */
 export const TYPED_ROUND_FROM_STEP = 5;
 
+/** A unit's step 6 asks its transform and translate items, not its sentences; without them the ladder ends a step lower (PRD §6.5). */
+export const TRANSFORM_STEP = 6;
+
 /** Exercises a phrase never gets (PRD §5.1). */
 export const PHRASE_EXCLUDED = new Set(["W2d", "W3a", "W4a", "W4b", "W4c"]);
 /** Typing exercises a recognize word never gets, plus W4a and W4c (PRD §5.3). */

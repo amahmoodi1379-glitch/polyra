@@ -1,5 +1,5 @@
 import type { WordC } from "./content";
-import { exerciseDef, SHAPE } from "./exercises";
+import { exerciseDef, SHAPE, TYPED_ROUND_FROM_STEP } from "./exercises";
 import { emptyCard, isNewCard, rateCard, withDue, type FsrsRating } from "./fsrs";
 import type { Graded, ResultReason } from "./grade";
 import type { NotebookOp } from "./notebook";
@@ -144,14 +144,17 @@ export function applySingle(input: SingleInput, ctx: AnswerCtx): SingleOutcome {
   }
   const failed = result === "wrong" || result === "idk";
   const genderSlip = result === "near" && reason === "gender";
-  // What the answer says for the notebook (§9.5): a right answer counts, a wrong one starts over.
+  // What the answer says for the notebook (§9.5): a right or nearly right answer counts (DECISIONS.md), a
+  // wrong one starts over. Only a review or a followup makes an entry; a practice starts an open one over.
   const noteAnswer = () => {
-    if (failed) out.notebook.push({ op: "wrong", refType: ref, refId: id });
-    else if (result === "correct") {
-      out.notebook.push({ op: "correct", refType: ref, refId: id });
-      if (input.gender && ref === "word") out.notebook.push({ op: "correct", refType: "word_gender", refId: id });
+    const miss = kind === "practice" ? "restart" : "wrong";
+    if (failed) {
+      out.notebook.push({ op: miss, refType: ref, refId: id });
+      return;
     }
-    if (genderSlip) out.notebook.push({ op: "wrong", refType: "word_gender", refId: id });
+    out.notebook.push({ op: "correct", refType: ref, refId: id });
+    if (genderSlip) out.notebook.push({ op: miss, refType: "word_gender", refId: id });
+    else if (input.gender && ref === "word") out.notebook.push({ op: "correct", refType: "word_gender", refId: id });
   };
 
   if (kind === "practice") {
@@ -302,7 +305,7 @@ export function applyRound(state: ItemStateE, step: number, answers: RoundAnswer
 
   const s = answers.filter((answer) => answer.result === "correct" || answer.result === "near").length / answers.length;
   let next: ItemStateE = { ...state, roundsCount: state.roundsCount + 1, firstReviewDone: true };
-  const typedRound = step >= 5;
+  const typedRound = step >= TYPED_ROUND_FROM_STEP;
   let firstTyping = false;
   let rating: FsrsRating;
 
@@ -352,12 +355,27 @@ export function applyConfusion(
   const pair: ConfusionE = found
     ? { ...found, count: found.count + 1, lastAt: ctx.now.toISOString() }
     : { wordId: a, otherWordId: b, count: 1, lastAt: ctx.now.toISOString(), cardShownAt: null };
-  const gapMs = num(ctx.settings, "confusion.card_gap_days") * 86_400_000;
-  const rested = !pair.cardShownAt || ctx.now.getTime() - Date.parse(pair.cardShownAt) >= gapMs;
-  const showCard = flag(ctx.settings, "feature.confusion_card") && pair.count >= num(ctx.settings, "confusion.min_count") && rested && knownAtStart(a, b);
+  const showCard = flag(ctx.settings, "feature.confusion_card") && pair.count >= num(ctx.settings, "confusion.min_count") && rested(pair, ctx) && knownAtStart(a, b);
   if (showCard) pair.cardShownAt = ctx.now.toISOString();
   const rest = pairs.filter((item) => item !== found);
   return { pairs: [...rest, pair], pair, showCard };
+}
+
+/** A pair's card comes at most once in `confusion.card_gap_days` (PRD §9.9). */
+const rested = (pair: ConfusionE, ctx: AnswerCtx) => !pair.cardShownAt || ctx.now.getTime() - Date.parse(pair.cardShownAt) >= num(ctx.settings, "confusion.card_gap_days") * 86_400_000;
+
+/**
+ * The pair card after a leech (PRD §9.11, step 2): the word's strongest pair with `confusion.min_count`
+ * or more, known when the session was built and not shown in the last `confusion.card_gap_days`. The
+ * pair is marked shown, so the same session does not show it again.
+ */
+export function leechPair(pairs: readonly ConfusionE[], wordId: number, ctx: AnswerCtx, knownAtStart: (a: number, b: number) => boolean): { pairs: ConfusionE[]; partner: number | null } {
+  if (!flag(ctx.settings, "feature.confusion_card")) return { pairs: [...pairs], partner: null };
+  const usable = pairs.filter((pair) => knownAtStart(pair.wordId, pair.otherWordId) && rested(pair, ctx));
+  const partner = strongestPartner(usable, wordId, num(ctx.settings, "confusion.min_count"));
+  if (partner === null) return { pairs: [...pairs], partner: null };
+  const [a, b] = pairKey(wordId, partner);
+  return { pairs: pairs.map((pair) => (pair.wordId === a && pair.otherWordId === b ? { ...pair, cardShownAt: ctx.now.toISOString() } : pair)), partner };
 }
 
 /** The strongest pair a word has, for wrong options and the leech card (PRD §5.5, §9.9). */

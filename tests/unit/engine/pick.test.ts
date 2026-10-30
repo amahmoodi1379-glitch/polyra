@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { buildWordEx } from "@/engine/build";
+import { grade } from "@/engine/grade";
 import type { ItemHistory } from "@/engine/state";
 import { buildRound, pickWordEx, stepOrder } from "@/engine/pick";
 import { content, env, frenchSet, sentence, settings, target, unit, word } from "./kit";
@@ -75,6 +76,32 @@ describe("exercise choice (PRD §9.3)", () => {
     }
     const follow = codesOver((seed) => pickWordEx(env(data2, { seed }), rec, 3, "followup", { formOnly: true, audio: true })?.code);
     expect(follow).toEqual(new Set(["W3a"]));
+  });
+});
+
+describe("colloquial words (PRD §5.4)", () => {
+  const set = frenchSet();
+  const bouffer = word(40, "bouffer", "لمباندن", { pos: "verb", register: "familier", conceptId: 900 });
+  const manger = word(41, "manger", "خوردن", { pos: "verb", conceptId: 900 });
+  const data = content({ ...set, words: [...set.words, bouffer, manger] });
+
+  it("K1 takes its wrong options like W2a, never the standard twin, and a wrong one makes no confusion pair (PRD §5.5, §9.9)", () => {
+    for (const seed of ["k1", "k2", "k3"]) {
+      const ex = pickWordEx(env(data, { seed }), bouffer, 1, "review", { audio: true })!;
+      expect(ex.code).toBe("K1");
+      if (ex.a.kind !== "choice") throw new Error("K1 is a choice");
+      const { options, correct } = ex.a;
+      expect(options.map((option) => option.wordId)).not.toContain(manger.id);
+      const wrong = options.find((option) => option.id !== correct)!;
+      expect(wrong.wordId).not.toBeNull();
+      expect(grade(ex, { choice: wrong.id }, { language: "fr" })).toMatchObject({ result: "wrong", chosenWordId: null });
+    }
+  });
+
+  it("a right K2 on the last step has no followup: there is no form exercise to give", () => {
+    expect(pickWordEx(env(data), bouffer, 2, "followup", { formOnly: true, audio: true })).toBeNull();
+    const codes = codesOver((seed) => pickWordEx(env(data, { seed }), bouffer, 1, "followup", { audio: true })?.code, 20);
+    expect(codes).toEqual(new Set(["K1"]));
   });
 });
 

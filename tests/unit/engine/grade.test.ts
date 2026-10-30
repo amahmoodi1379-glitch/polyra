@@ -101,6 +101,8 @@ describe("conjugation tables (PRD §6.6)", () => {
     expect(grade(ex, { rows: right }, fr)).toMatchObject({ result: "correct" });
     expect(grade(ex, { rows: ["mange", "manges", "mange", "mangeons", "mangéz", "mangent"] }, fr)).toMatchObject({ result: "near", reason: "accent" });
     expect(grade(ex, { rows: ["mange", "manges", "mange", "mangons", "mangez", "mangent"] }, fr)).toMatchObject({ result: "wrong" });
+    // Persian letters in any row: the keyboard message, not a wrong answer (PRD §5.6).
+    expect(grade(ex, { rows: ["mange", "manges", "mange", "mangeons", "ئشدلثظ", "mangent"] }, fr)).toEqual({ result: "persian" });
   });
 
   it("C2 only grades the empty rows", () => {

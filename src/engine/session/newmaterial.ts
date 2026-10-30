@@ -37,7 +37,7 @@ function ready(word: WordC, ctx: NewWordContext): boolean {
   return true;
 }
 
-/** Queue rows that may still be introduced today, in order (PRD §5.8, row 1). */
+/** Queue rows that may still be introduced today, in order (PRD §5.8, row 1): words with a card, not known, in an open level. */
 export function queueWords(ctx: NewWordContext): WordC[] {
   const expire = num(ctx.settings, "queue.expire_days") * 86_400_000;
   const room = Math.max(0, num(ctx.settings, "queue.daily") - ctx.learner.today.queueWords - (ctx.queueUsed ?? 0));
@@ -45,7 +45,7 @@ export function queueWords(ctx: NewWordContext): WordC[] {
     .filter((row) => ctx.now.getTime() - Date.parse(row.addedAt) < expire)
     .sort((a, b) => QUEUE_ORDER[a.source] - QUEUE_ORDER[b.source] || Date.parse(a.addedAt) - Date.parse(b.addedAt))
     .map((row) => ctx.content.words.get(row.wordId))
-    .filter((word): word is WordC => !!word && !ctx.taken(word.id) && ctx.content.openLevels.includes(word.level) && ready(word, ctx))
+    .filter((word): word is WordC => !!word && !word.noCard && !ctx.taken(word.id) && !ctx.known(word.id) && ctx.content.openLevels.includes(word.level) && ready(word, ctx))
     .slice(0, room);
 }
 
@@ -112,9 +112,10 @@ export function conjCandidates(content: Content, units: Map<number, ItemStateE>,
   return content.conjugations.filter((table) => table.reviewCard && !conj.has(table.id) && (!table.unitCode || opened.has(table.unitCode)) && known(table.wordId));
 }
 
-/** Colloquial words that join the queue when their standard word first reaches step 4 (PRD §5.4). */
-export function colloquialFor(content: Content, word: WordC, stepBefore: number, stepAfter: number): WordC[] {
-  if (stepBefore >= 4 || stepAfter < 4 || word.conceptId === null || !hasCard(word)) return [];
+/** Colloquial words that join the queue when their standard word first reaches step 4, `stable.step` (PRD §5.4). */
+export function colloquialFor(content: Content, word: WordC, stepBefore: number, stepAfter: number, settings: Settings): WordC[] {
+  const stable = num(settings, "stable.step");
+  if (stepBefore >= stable || stepAfter < stable || word.conceptId === null || !hasCard(word)) return [];
   return [...content.words.values()].filter((other) => other.conceptId === word.conceptId && isColloquial(other));
 }
 

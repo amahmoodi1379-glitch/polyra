@@ -9,7 +9,7 @@ import type { Prisma } from "@/generated/prisma/client";
 import { db } from "@/server/db";
 import { logError } from "@/server/errors";
 import { finishSession } from "./finish";
-import { bundleOf, closeSession, expiresAt, learnContext, type Bundle, type EndSummary, type Learner, type StoredPlan } from "./session";
+import { bundleOf, closeSession, expiresAt, learnContext, SESSION_LIFE_MS, type Bundle, type EndSummary, type Learner, type StoredPlan } from "./session";
 import { addDaily, applyNotebookOps, saveConfusion, saveItemState, type DailyAdd } from "./writes";
 
 /**
@@ -42,9 +42,6 @@ export type AnswerResponse =
   | { kind: "gone" }
   | { kind: "invalid" };
 
-/** Answers older than this after the session's build are dropped (PRD §15.4, step 9). */
-const LATE_MS = 24 * 3_600_000;
-
 export async function submitAnswer(user: Learner, request: AnswerRequest, serverNow = new Date()): Promise<AnswerResponse> {
   if (await db.reviewLog.findUnique({ where: { id: request.answerId }, select: { id: true } })) return { kind: "duplicate" };
   const first = await db.session.findUnique({ where: { id: request.sessionId } });
@@ -60,9 +57,11 @@ export async function submitAnswer(user: Learner, request: AnswerRequest, server
       await tx.$queryRaw`SELECT id FROM session WHERE id = ${request.sessionId}::uuid FOR UPDATE`;
       if (await tx.reviewLog.findUnique({ where: { id: request.answerId }, select: { id: true } })) return { kind: "duplicate" };
       const row = await tx.session.findUniqueOrThrow({ where: { id: request.sessionId } });
-      if (row.ended_at || serverNow.getTime() - row.created_at.getTime() > LATE_MS) return { kind: "gone" };
-      if (at >= expiresAt(row, ctx.settings)) {
-        await closeSession(row, "expired", expiresAt(row, ctx.settings), ctx, tx);
+      if (row.ended_at) return { kind: "gone" };
+      // Too late to resume, or arriving more than a day after the build (PRD §10.8, §15.4 step 9): the session ends.
+      const expires = expiresAt(row, ctx.settings);
+      if (at >= expires || serverNow.getTime() - row.created_at.getTime() > SESSION_LIFE_MS) {
+        await closeSession(row, "expired", expires, ctx, tx);
         return { kind: "gone" };
       }
       const plan = row.plan as unknown as StoredPlan;
@@ -118,8 +117,13 @@ export async function submitAnswer(user: Learner, request: AnswerRequest, server
         if (!isNew) continue;
         if (state.itemType === "word") {
           add.new_words = (add.new_words ?? 0) + 1;
-          const queued = await tx.newWordQueue.deleteMany({ where: { user_id: user.id, word_id: state.itemId } });
-          if (queued.count > 0) add.queue_words = (add.queue_words ?? 0) + 1;
+          // A word from the queue leaves it and keeps where it came from (PRD §4, `item_state.source`).
+          const queued = await tx.newWordQueue.findUnique({ where: { user_id_word_id: { user_id: user.id, word_id: state.itemId } } });
+          if (queued) {
+            await tx.newWordQueue.delete({ where: { id: queued.id } });
+            await tx.itemState.updateMany({ where: { user_id: user.id, item_type: "word", item_id: state.itemId }, data: { source: queued.source } });
+            add.queue_words = (add.queue_words ?? 0) + 1;
+          }
         } else if (state.itemType === "grammar_unit") add.new_units = (add.new_units ?? 0) + 1;
         else add.new_conj = (add.new_conj ?? 0) + 1;
       }
@@ -134,7 +138,7 @@ export async function submitAnswer(user: Learner, request: AnswerRequest, server
       // A standard word that first reaches step 4 queues its colloquial words (PRD §5.4).
       if (result.single && card.item.startsWith("w:")) {
         const word = ctx.content.words.get(parseItemKey(card.item).id);
-        const extra = word ? colloquialFor(ctx.content, word, result.single.stepBefore, result.single.stepAfter) : [];
+        const extra = word ? colloquialFor(ctx.content, word, result.single.stepBefore, result.single.stepAfter, ctx.settings) : [];
         if (extra.length > 0) {
           const taken = new Set(
             (await tx.itemState.findMany({ where: { user_id: user.id, item_type: "word", item_id: { in: extra.map((item) => item.id) } }, select: { item_id: true } })).map(

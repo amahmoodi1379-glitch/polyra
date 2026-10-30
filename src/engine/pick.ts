@@ -1,7 +1,7 @@
 import { buildConjEx, buildColloquialEx, buildGrammarEx, buildWordEx, grammarCodeFits, knownShare, type BuildEnv, type GrammarSource } from "./build";
 import { isColloquial, type ConjC, type TargetC, type UnitC, type WordC } from "./content";
 import type { Ex } from "./ex";
-import { codesAt, exerciseDef, SHAPE, type ExerciseFamily } from "./exercises";
+import { codesAt, exerciseDef, SHAPE, TRANSFORM_STEP, type ExerciseFamily } from "./exercises";
 import { pickOne, shuffle, type Rng } from "./random";
 import { num } from "./settings";
 import { itemKey, type ItemHistory } from "./state";
@@ -20,7 +20,7 @@ export function lastStepOfWord(word: WordC): number {
 
 export function lastStepOfUnit(env: Pick<BuildEnv, "content">, unit: UnitC): number {
   const typedSix = env.content.transforms.some((item) => item.unitId === unit.id) || env.content.translates.some((item) => item.unitId === unit.id);
-  return typedSix ? 6 : 5;
+  return typedSix ? TRANSFORM_STEP : TRANSFORM_STEP - 1;
 }
 
 export const CONJ_LAST_STEP = 4;
@@ -68,9 +68,10 @@ export function pickExercise(args: PickArgs): Ex | null {
   const keep = (code: string) => {
     const info = exerciseDef(code);
     if (!args.audio && info.audio) return false;
+    // A followup on the last step is a form exercise; only words have them (PRD §9.3, step 2).
+    if (purpose === "followup" && args.formOnly) return family === "word" && !info.meaning;
     if (family !== "word") return true;
     if (purpose === "review") return info.meaning;
-    if (purpose === "followup" && args.formOnly) return !info.meaning;
     return true;
   };
   for (const step of stepOrder(args.step, args.last, purpose)) {
@@ -127,6 +128,26 @@ export function pickTargetEx(env: BuildEnv, unit: UnitC, target: TargetC, step: 
   });
 }
 
+/** One question of a unit at its step, from the first sentence a round would take (PRD §10.8, «تمرین بیشتر»). */
+export function pickUnitEx(env: BuildEnv, unit: UnitC, step: number, opts: { audio: boolean }): Ex | null {
+  const last = lastStepOfUnit(env, unit);
+  const at = Math.min(step, last);
+  for (const source of roundSources(env, unit, at)) {
+    const ex = pickExercise({
+      family: "grammar",
+      step: at,
+      last,
+      purpose: "practice",
+      history: env.history(itemKey("grammar_unit", unit.id)),
+      rng: env.rng,
+      audio: opts.audio,
+      build: (code) => buildGrammarEx(env, unit, code, source),
+    });
+    if (ex) return ex;
+  }
+  return null;
+}
+
 // ───────────────────────────── grammar round ─────────────────────────────
 
 /** `alts`: for each question that needs sound, the same sentence without it (PRD §10.12). */
@@ -135,7 +156,7 @@ export type Round = { unitId: number; step: number; questions: Ex[]; alts: (Ex |
 /** The sentences a round may use at this step, in the order of PRD §6.5 (rule 2). */
 function roundSources(env: BuildEnv, unit: UnitC, step: number): GrammarSource[] {
   const { content } = env;
-  if (step === 6) {
+  if (step === TRANSFORM_STEP) {
     const transforms = shuffle(
       env.rng,
       content.transforms.filter((item) => item.unitId === unit.id),

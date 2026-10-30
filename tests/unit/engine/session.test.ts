@@ -10,6 +10,7 @@ import { emptyCard, rateCard, retrievability, withDue } from "@/engine/fsrs";
 import { seeded } from "@/engine/random";
 import { backlogThreshold, buildSession, nextSkill, sessionCaps, type BuildOptions, type BuildResult } from "@/engine/session/build";
 import { nextNewWords } from "@/engine/session/newmaterial";
+import { insertLater, mayFollow } from "@/engine/session/advance";
 import { playCard, shownEx, wantsAlt, type PlayEnv } from "@/engine/session/play";
 import type { Card, SessionPlan } from "@/engine/session/types";
 import type { Settings } from "@/engine/settings";
@@ -17,7 +18,7 @@ import { itemKey, type ItemStateE, type ItemType, type LearnerSnapshot, type Not
 import { addDays, plusDays, tehranDate, tehranDayStart } from "@/engine/time";
 import type { Content } from "@/engine/content";
 import { syntheticContent } from "../../../fixtures/synthetic";
-import { always, applyEffects, playSession, rightAnswer, wrongAnswer, type Policy } from "../../../fixtures/synthetic/drive";
+import { always, applyEffects, playSession, rightAnswer, withAccuracy, wrongAnswer, type Policy } from "../../../fixtures/synthetic/drive";
 import { freshLearner, newDay } from "../../../fixtures/synthetic/learner";
 import { content as kitContent, defaults, settings, word } from "./kit";
 
@@ -85,6 +86,8 @@ describe("new material on the first day (PRD §10.10, example 1)", () => {
     expect([10, 15, 20, 30].map((min) => sessionCaps(defaults, min, "slow").words)).toEqual([5, 8, 10, 15]);
     expect([10, 30].map((min) => sessionCaps(defaults, min, "slow").wordsSoft)).toEqual([10, 15]);
     expect(sessionCaps(defaults, 15, "slow")).toMatchObject({ unitsDaily: 2, conj: 2, conjDaily: 3, wordsHard: 50 });
+    // Settings that would put a session over the hard cap stop at it.
+    expect(sessionCaps(settings({ "new.words_per_5min": 10, "new.words_daily_hard": 40 }), 30, "normal")).toMatchObject({ words: 40, wordsSoft: 40, wordsHard: 40 });
 
     const plan = planOf(buildSession(syntheticContent(), learner(30), defaults, NOW, TODAY, opts({ lengthMin: 30 })));
     expect(plan.summary.newWords).toBe(30);
@@ -256,6 +259,12 @@ describe("which new material (PRD §5.8, §10.2)", () => {
       { wordId: 172, source: "colloquial", addedAt: plusDays(NOW, -20).toISOString() },
     ];
     expect(nextNewWords({ ...ctx, learner: { ...later, queue: mixed } }, 3, []).words.map((item) => item.id)).toEqual([171, 170, 172]);
+    // A queued word that became known (a placement, PRD §5.7) or lost its card stays out.
+    const noCard = [...content.words.values()].find((item) => item.noCard)!;
+    const withNoCard: QueueE[] = [...mixed, { wordId: noCard.id, source: "tap", addedAt: plusDays(NOW, -2).toISOString() }];
+    const filtered = nextNewWords({ ...ctx, learner: { ...later, queue: withNoCard }, known: (id) => id === 171 }, 4, []);
+    expect(filtered.fromQueue).toBe(2);
+    expect(filtered.words.slice(0, 2).map((item) => item.id)).toEqual([170, 172]);
   });
 
   it("T52: a learner at A2 with A1 words left gets the A1 words first", () => {
@@ -362,6 +371,42 @@ describe("changes in the middle of a session (PRD §9.10, §10.7)", () => {
     expect(started.size).toBeLessThan(plan.summary.newWords);
   });
 
+  it("rule 14: a followup or a practice goes at least its gap later, after a block, last when fewer cards are left, never next to its item", () => {
+    const c = (id: string, item: string, extra: Partial<Card> = {}): Card => ({ id, t: "ex", item, kind: "review", ...extra });
+    const ids = (queue: Card[] | null) => queue?.map((card) => card.id) ?? null;
+    const prev = c("p", "w:1");
+    const add = c("n", "w:1", { kind: "followup" });
+    const five = ["a", "b", "c", "d", "e"].map((id, i) => c(id, `w:${i + 2}`));
+    expect(ids(insertLater(five, add, 4, prev))).toEqual(["a", "b", "c", "d", "n", "e"]);
+    const block = [c("a", "w:2"), c("b", "w:3"), c("i", "w:7", { t: "intro", block: "b1" }), c("x", "w:7", { block: "b1" }), c("e", "w:6")];
+    expect(ids(insertLater(block, add, 3, prev))).toEqual(["a", "b", "i", "x", "n", "e"]);
+    expect(ids(insertLater(five.slice(0, 2), add, 4, prev))).toEqual(["a", "b", "n"]);
+    // The last card is a practice of the same word: the nearest place before it.
+    expect(ids(insertLater([c("a", "w:2"), c("b", "w:3"), c("x", "w:1", { kind: "practice" })], add, 4, prev))).toEqual(["a", "n", "b", "x"]);
+    // Nothing left after the answer: no place, the card is left out; after an intro card it may come.
+    expect(insertLater([], add, 4, prev)).toBeNull();
+    expect(ids(insertLater([], add, 4, c("i", "w:1", { t: "intro" })))).toEqual(["n"]);
+    expect(mayFollow(c("i", "u:1", { t: "lesson", block: "b2" }), c("g", "u:1", { t: "g0", block: "b2" }))).toBe(true);
+    expect(mayFollow(c("r1", "u:1", { t: "round", block: "b2" }), c("r2", "u:1", { t: "round", block: "b2" }))).toBe(true);
+    expect(mayFollow(c("k", "w:1", { t: "confusion" }), add)).toBe(false);
+  });
+
+  it("rule 14 in played sessions: never two exercises of one item in a row; a practice with no place is left out and not counted", () => {
+    for (const seed of ["r1", "r2", "r3", "r4", "r5", "r6", "r7", "r8"]) {
+      const played = playSession(content, learner(10, { items: due(14) }), s, NOW, opts({ seed }), withAccuracy(0.6), seeded(seed));
+      const shown = played.results.map((result) => result.card);
+      shown.forEach((card, i) => expect(mayFollow(shown[i - 1], card), `${seed} #${i}: ${shown[i - 1]?.t} ${card.t} ${card.item}`).toBe(true));
+    }
+    const plan0 = planOf(buildSession(content, learner(10, { items: due(10) }), s, NOW, TODAY, opts()));
+    const last = plan0.queue.find((card) => card.t === "ex" && card.kind === "review" && !card.block)!;
+    const alone = { ...plan0, queue: [last] };
+    const played = playCard(alone, last.id, wrongAnswer(shownEx(alone, last)!), { latencyMs: 5000, elapsedSec: 5 }, playEnv(content, s));
+    if (!played.done) throw new Error("graded");
+    expect(played.single?.practice).toBe(true);
+    expect(played.advanced).toMatchObject({ finished: true, plan: { queue: [] } });
+    expect(played.advanced.plan.counters.practice[last.item]).toBeUndefined();
+  });
+
   it("a due grammar unit comes as one round block and is scored when the round ends", () => {
     const words = cardWords(content)
       .slice(0, 22)
@@ -437,6 +482,27 @@ describe("other kinds of session (PRD §10.4, §10.8, §10.12)", () => {
     const grammar = planOf(buildSession(content, learner(15, { items: withUnit }), s, NOW, TODAY, opts({ scope: "grammar", lengthMin: 15 })));
     expect(grammar.queue.every((card) => !card.item.startsWith("w:"))).toBe(true);
     expect(grammar.queue.some((card) => card.t === "round")).toBe(true);
+  });
+
+  it("the grammar button is bound by its time, not by the round cap of a mixed session (DECISIONS.md)", () => {
+    const units = [1, 2, 3, 4, 5, 6].map((id) => learned("grammar_unit", id, s, { step: 2 }));
+    const roundsIn = (scope: "grammar" | "mixed") =>
+      new Set(planOf(buildSession(content, learner(10, { items: [...items, ...units] }), s, NOW, TODAY, opts({ scope }))).queue.filter((card) => card.t === "round").map((card) => card.block)).size;
+    // Ten minutes: a mixed session takes at most two rounds; the grammar button as many as its time holds.
+    expect(roundsIn("mixed")).toBeLessThanOrEqual(2);
+    expect(roundsIn("grammar")).toBeGreaterThan(2);
+  });
+
+  it("«تمرین بیشتر» gives a unit touched today one question of its step, which changes nothing", () => {
+    const unit = learned("grammar_unit", 1, s, { step: 2 });
+    const before = learner(15, { items: [...items, unit], touchedToday: ["u:1"] });
+    const played = playSession(content, before, s, NOW, opts({ scope: "extra" }), always(false), seeded("extra-unit"));
+    const plan = planOf(played.build);
+    expect(plan.queue).toHaveLength(1);
+    expect(plan.queue[0]).toMatchObject({ t: "ex", item: "u:1", kind: "practice", ex: { step: 2 } });
+    expect(played.results).toHaveLength(1);
+    expect(played.learner.items.find((item) => item.itemType === "grammar_unit")).toEqual(unit);
+    expect(played.learner.notebook).toEqual([]);
   });
 
   it("«الان نمی‌توانم گوش بدهم»: no exercise that needs sound", () => {

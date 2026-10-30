@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { applyConfusion, applyRound, applySingle, newItemState, type AnswerCtx, type AnswerKind, type RoundAnswer } from "@/engine/answer";
+import { applyConfusion, applyRound, applySingle, leechPair, newItemState, type AnswerCtx, type AnswerKind, type RoundAnswer } from "@/engine/answer";
 import { emptyCard, isNewCard, rateCard, retrievability } from "@/engine/fsrs";
 import type { Graded } from "@/engine/grade";
 import { applyNotebook } from "@/engine/notebook";
@@ -77,7 +77,12 @@ describe("single-exercise items (PRD §9.2)", () => {
 
   it("T09: right word, wrong gender: near, Hard, same step, W2d practice, word_gender notebook, near streak unchanged", () => {
     const out = single(seasoned(5, { typedOnce: true, nearStreak: 1 }), "review", "W5a", g("near", "gender"), { gender: true });
-    expect(out).toMatchObject({ rating: "hard", stepAfter: 5, genderPractice: true, practice: false, notebook: [{ op: "wrong", refType: "word_gender", refId: 1 }] });
+    expect(out).toMatchObject({ rating: "hard", stepAfter: 5, genderPractice: true, practice: false });
+    // The word itself was right: it counts towards leaving the notebook; the gender gets its own entry.
+    expect(out.notebook).toEqual([
+      { op: "correct", refType: "word", refId: 1 },
+      { op: "wrong", refType: "word_gender", refId: 1 },
+    ]);
     expect(out.state.nearStreak).toBe(1);
   });
 
@@ -86,6 +91,31 @@ describe("single-exercise items (PRD §9.2)", () => {
     const out = single(state, "followup", "W3a", g("wrong"));
     expect(out).toMatchObject({ rating: null, stepAfter: 2, notebook: [{ op: "wrong", refType: "word", refId: 1 }] });
     expect(out.state.fsrs).toEqual(state.fsrs);
+  });
+
+  it("a wrong practice makes no notebook entry; it starts an open one over (PRD §9.5)", () => {
+    const today = tehranDate(NOW);
+    const out = single(seasoned(3), "practice", "W2a", g("wrong"));
+    expect(out).toMatchObject({ rating: null, stepAfter: 3, notebook: [{ op: "restart", refType: "word", refId: 1 }] });
+    expect(applyNotebook([], out.notebook, NOW, today, defaults)).toEqual([]);
+    const open: NotebookE = { refType: "word", refId: 1, addedAt: "2026-10-10T00:00:00Z", until: "2026-10-17T00:00:00Z", correctCount: 1, lastCorrectDate: addDays(today, -1) };
+    expect(applyNotebook([open], out.notebook, NOW, today, defaults)).toEqual([
+      { ...open, correctCount: 0, lastCorrectDate: null, until: new Date(NOW.getTime() + 7 * 86_400_000).toISOString() },
+    ]);
+    // A wrong gender in a practice does the same for the gender entry.
+    const gender = single(seasoned(5, { typedOnce: true }), "practice", "W5a", g("near", "gender"), { gender: true });
+    expect(gender.notebook).toEqual([
+      { op: "correct", refType: "word", refId: 1 },
+      { op: "restart", refType: "word_gender", refId: 1 },
+    ]);
+  });
+
+  it("a nearly right answer (an accent) counts towards leaving the notebook, like a right one (DECISIONS.md)", () => {
+    const out = single(seasoned(5, { typedOnce: true }), "practice", "W5a", g("near", "accent"), { gender: true });
+    expect(out.notebook).toEqual([
+      { op: "correct", refType: "word", refId: 1 },
+      { op: "correct", refType: "word_gender", refId: 1 },
+    ]);
   });
 
   it("T53 (step): a right review borrowed from step 3 still moves step 4 to 5", () => {
@@ -262,6 +292,19 @@ describe("confusion pairs (PRD §9.9)", () => {
     // The card waits seven days before it shows again; with the feature off it never shows.
     expect(applyConfusion(second.pairs, cousine, cuisine, ctx({ settings: on }), () => true)).toMatchObject({ showCard: false, pair: { count: 3 } });
     expect(applyConfusion(first.pairs, cuisine, cousine, ctx(), () => true).showCard).toBe(false);
+  });
+
+  it("a leech brings its strongest pair's card, at most once in seven days, only for a pair known at the start (PRD §9.11)", () => {
+    const pair = (other: number, count: number, cardShownAt: string | null = null): ConfusionE => ({ wordId: 20, otherWordId: other, count, lastAt: "2026-10-01T00:00:00Z", cardShownAt });
+    const pairs = [pair(21, 3, "2026-10-12T00:00:00Z"), pair(22, 2), pair(23, 1)];
+    const known = () => true;
+    const out = leechPair(pairs, 20, ctx({ settings: on }), known);
+    // 21 is stronger but its card came two days ago; 23 has only one mistake.
+    expect(out.partner).toBe(22);
+    expect(out.pairs.find((item) => item.otherWordId === 22)?.cardShownAt).toBe(NOW.toISOString());
+    expect(leechPair(out.pairs, 20, ctx({ settings: on }), known).partner).toBeNull();
+    expect(leechPair(pairs, 20, ctx({ settings: on }), (a, b) => b !== 22).partner).toBeNull();
+    expect(leechPair(pairs, 20, ctx(), known).partner).toBeNull();
   });
 
   it("T86 (pairs): two senses of one lemma never make a pair", () => {

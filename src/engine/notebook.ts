@@ -9,8 +9,10 @@ import { plusDays } from "./time";
  */
 
 export type NotebookOp =
-  /** A wrong or «نمی‌دانم» answer: make the entry or start it over. */
+  /** A wrong or «نمی‌دانم» answer in a review or a followup: make the entry or start it over. */
   | { op: "wrong"; refType: NotebookRef; refId: number }
+  /** A wrong or «نمی‌دانم» answer in a practice: starts an open entry over, never makes one (PRD §9.5). */
+  | { op: "restart"; refType: NotebookRef; refId: number }
   /** A right answer: counts towards leaving the notebook (DECISIONS.md: any right answer counts). */
   | { op: "correct"; refType: NotebookRef; refId: number }
   /** The item became a leech: its entries go. */
@@ -28,7 +30,9 @@ export function applyNotebook(entries: readonly NotebookE[], ops: readonly Noteb
     const found = list.find((entry) => same(entry, op.refType, op.refId));
     if (op.op === "remove") {
       list = list.filter((entry) => !same(entry, op.refType, op.refId));
-    } else if (op.op === "wrong") {
+    } else if (op.op === "restart" && !found) {
+      continue;
+    } else if (op.op === "wrong" || op.op === "restart") {
       const fresh: NotebookE = { refType: op.refType, refId: op.refId, addedAt: found?.addedAt ?? now.toISOString(), until, correctCount: 0, lastCorrectDate: null };
       if (found) {
         list = list.map((entry) => (entry === found ? fresh : entry));

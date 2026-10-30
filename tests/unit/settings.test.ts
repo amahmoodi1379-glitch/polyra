@@ -16,8 +16,8 @@ describe("engine settings (PRD §9.8, §13.2)", () => {
   });
 
   it("refuses a number outside its range, a fraction where a whole number goes, and a wrong type", () => {
-    expect(checkValue(def("session.resume_hours"), 48)).toBeNull();
-    expect(checkValue(def("session.resume_hours"), 49)).toBe("باید بین ۱ و ۴۸ باشد.");
+    expect(checkValue(def("session.resume_hours"), 24)).toBeNull();
+    expect(checkValue(def("session.resume_hours"), 25)).toBe("باید بین ۱ و ۲۴ باشد.");
     expect(checkValue(def("session.resume_hours"), 6.5)).toBe("عدد بدون اعشار بنویس.");
     expect(checkValue(def("session.resume_hours"), "6")).toBe("یک عدد بنویس.");
     expect(checkValue(def("fsrs.request_retention"), 0.98)).toBe("باید بین ۷۰٪ و ۹۷٪ باشد.");

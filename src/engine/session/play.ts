@@ -1,8 +1,8 @@
-import { applyConfusion, applyRound, applySingle, newItemState, strongestPartner, type AnswerCtx, type RoundOutcome, type SingleOutcome } from "../answer";
+import { applyConfusion, applyRound, applySingle, leechPair, newItemState, type AnswerCtx, type RoundOutcome, type SingleOutcome } from "../answer";
 import type { Ex, RawAnswer } from "../ex";
 import { grade, type GradeOutcome, type Graded } from "../grade";
 import type { NotebookOp } from "../notebook";
-import { flag, num, type Settings } from "../settings";
+import { num, type Settings } from "../settings";
 import { parseItemKey, type ConfusionE, type ItemStateE } from "../state";
 import type { Lang } from "../text";
 import { advance, type Advanced } from "./advance";
@@ -161,7 +161,7 @@ export function playCard(plan: SessionPlan, cardId: string, answer: RawAnswer, t
   // A notebook sentence of a unit: one practice question (PRD §9.5).
   if (key.startsWith("t:")) {
     const failed = graded.result === "wrong" || graded.result === "idk";
-    const notebook: NotebookOp[] = graded.result === "near" ? [] : [{ op: failed ? "wrong" : "correct", refType: "grammar_target", refId: Number(key.slice(2)) }];
+    const notebook: NotebookOp[] = graded.result === "near" ? [] : [{ op: failed ? "restart" : "correct", refType: "grammar_target", refId: Number(key.slice(2)) }];
     const advanced = advance(plan, { cardId, result: graded.result, elapsedSec: timing.elapsedSec }, ctx.settings);
     const log: PlayLog = { ...base, kind: "practice", result: graded.result, reason: graded.reason, raw: graded.raw };
     return { done: true, card, ex, graded, log, single: null, round: null, state: null, roundState: null, notebook, pair: null, advanced };
@@ -174,29 +174,35 @@ export function playCard(plan: SessionPlan, cardId: string, answer: RawAnswer, t
   const item = plan.items[key];
   const gender = ex.code === "W2d" || (ex.a.kind === "type" && !!ex.a.gender);
   const kind = card.kind ?? "review";
-  const applied = applySingle({ state: before, kind, code: ex.code, graded, latencyMs: timing.latencyMs, last: item?.last ?? 6, gender }, ctx);
+  // Only a practice can have no plan item (a unit or a table in «تمرین بیشتر»), and a practice moves no step.
+  const applied = applySingle({ state: before, kind, code: ex.code, graded, latencyMs: timing.latencyMs, last: item?.last ?? before.step, gender }, ctx);
   // «تمرین بیشتر» changes nothing: no notebook, no extra practice (PRD §10.8).
   const extra = plan.scope === "extra";
   const single: SingleOutcome = extra ? { ...applied, notebook: [], practice: false, genderPractice: false } : applied;
 
-  // Another word chosen by mistake: a confusion pair (PRD §9.9).
+  // Another word chosen by mistake, in any exercise but «تمرین بیشتر»: a confusion pair (PRD §9.9, DECISIONS.md).
   let pairs = plan.pairs;
   let pair: ConfusionE | null = null;
   let confusion: [number, number] | null = null;
-  if (type === "word" && single.result === "wrong" && graded.chosenWordId && kind !== "practice" && !extra) {
+  // Only pairs that existed when the session was built show their card (PRD §10.7).
+  const atStart = new Set(plan.pairsAtStart);
+  const knownAtStart = (a: number, b: number) => atStart.has(`${a}:${b}`);
+  if (type === "word" && single.result === "wrong" && graded.chosenWordId && !extra) {
     const self = plan.words[id]?.word;
     const other = plan.words[graded.chosenWordId]?.word ?? { id: graded.chosenWordId, lemma: `#${graded.chosenWordId}` };
     if (self) {
-      const known = new Set(plan.pairsAtStart);
-      const result = applyConfusion(pairs, self, other, ctx, (a, b) => known.has(`${a}:${b}`));
+      // A leech shows its own pair card instead (PRD §9.11), so this one is only counted.
+      const result = applyConfusion(pairs, self, other, ctx, single.leech ? () => false : knownAtStart);
       pairs = result.pairs;
       pair = result.pair;
       if (result.showCard && result.pair) confusion = [result.pair.wordId, result.pair.otherWordId];
     }
   }
   let leechPartner: number | null = null;
-  if (single.leech && type === "word" && flag(ctx.settings, "feature.confusion_card")) {
-    leechPartner = strongestPartner(pairs, id, num(ctx.settings, "confusion.min_count"));
+  if (single.leech && type === "word") {
+    const result = leechPair(pairs, id, ctx, knownAtStart);
+    pairs = result.pairs;
+    leechPartner = result.partner;
   }
 
   let advanced = advance(plan, { cardId, result: single.result, single, confusion, leechPartner, elapsedSec: timing.elapsedSec }, ctx.settings);

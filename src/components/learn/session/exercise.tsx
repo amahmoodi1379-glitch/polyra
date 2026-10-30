@@ -349,6 +349,24 @@ function useTyping(language: string, disabled: boolean) {
   return { touch, value, setValue, field, insert, erase, keyboard };
 }
 
+/** «کیبورد را عوض کن» after letters typed in Persian (PRD §5.6): the answer is not graded and can be fixed. */
+function usePersianNote() {
+  const [note, setNote] = useState<string | null>(null);
+  const heard = (outcome: Retry | null) => {
+    if (outcome?.result !== "persian") return;
+    sfx("droplet", 0.4);
+    setNote(t("learn.session.persian"));
+  };
+  return { note, heard, clear: () => setNote(null) };
+}
+
+const Note = ({ text }: { text: string | null }) =>
+  text ? (
+    <p className="msg" role="alert">
+      {text}
+    </p>
+  ) : null;
+
 function TypeEx(props: ExerciseProps & { spec: Extract<AnswerSpec, { kind: "type" }> }) {
   const { ex, spec, verdict, submit, language } = props;
   const typing = useTyping(language, !!verdict);
@@ -413,11 +431,7 @@ function TypeEx(props: ExerciseProps & { spec: Extract<AnswerSpec, { kind: "type
             }
           }}
         />
-        {message ? (
-          <p className="msg" role="alert">
-            {message}
-          </p>
-        ) : null}
+        <Note text={message} />
         {spec.gender ? (
           <div className="genders" role="group" aria-label={t("learn.session.genderLabel")}>
             {spec.gender.buttons.map((button) => (
@@ -460,10 +474,17 @@ function LettersEx(props: ExerciseProps & { spec: Extract<AnswerSpec, { kind: "l
   const { ex, spec, verdict, submit, language } = props;
   const touch = useTouchKeyboard();
   const [letters, setLetters] = useState<string[]>([]);
+  const persian = usePersianNote();
   const full = letters.length === spec.hidden.length;
-  const put = (text: string) => setLetters((before) => (before.length < spec.hidden.length && text.trim() ? [...before, text] : before));
-  const erase = () => setLetters((before) => before.slice(0, -1));
-  const check = () => full && !verdict && submit({ letters });
+  const put = (text: string) => {
+    persian.clear();
+    setLetters((before) => (before.length < spec.hidden.length && text.trim() ? [...before, text] : before));
+  };
+  const erase = () => {
+    persian.clear();
+    setLetters((before) => before.slice(0, -1));
+  };
+  const check = () => full && !verdict && persian.heard(submit({ letters }));
   useEffect(() => {
     if (touch || verdict) return;
     const onKey = (event: KeyboardEvent) => {
@@ -497,6 +518,7 @@ function LettersEx(props: ExerciseProps & { spec: Extract<AnswerSpec, { kind: "l
       </p>
       <div className="ex-grow" />
       <div className={cn("cta", touch && "with-kb")}>
+        <Note text={persian.note} />
         {verdict ? null : (
           <div className="row">
             {ex.idk ? (
@@ -734,6 +756,7 @@ function TableEx(props: ExerciseProps & { spec: Extract<AnswerSpec, { kind: "tab
   const open = spec.rows.map((row, index) => (row.accepted ? index : -1)).filter((index) => index >= 0);
   const [cells, setCells] = useState<string[]>(() => spec.rows.map(() => ""));
   const [active, setActive] = useState(open[0] ?? 0);
+  const persian = usePersianNote();
   const inputs = useRef(new Map<number, HTMLInputElement>());
   const given = ex.q.rows ?? [];
   const usedBank = useMemo(() => {
@@ -742,7 +765,11 @@ function TableEx(props: ExerciseProps & { spec: Extract<AnswerSpec, { kind: "tab
     return counts;
   }, [cells, open]);
   const full = open.every((index) => cells[index].trim().length > 0);
-  const set = (index: number, value: string) => setCells((before) => before.map((cell, i) => (i === index ? value : cell)));
+  const set = (index: number, value: string) => {
+    persian.clear();
+    setCells((before) => before.map((cell, i) => (i === index ? value : cell)));
+  };
+  const send = () => persian.heard(submit({ rows: cells }));
   const rowOk = (index: number) => {
     const accepted = spec.rows[index].accepted;
     if (!accepted) return null;
@@ -818,7 +845,7 @@ function TableEx(props: ExerciseProps & { spec: Extract<AnswerSpec, { kind: "tab
                     event.preventDefault();
                     const next = open.find((other) => other > index);
                     if (next !== undefined) inputs.current.get(next)?.focus();
-                    else if (full) submit({ rows: cells });
+                    else if (full) send();
                   }}
                 />
               )}
@@ -828,6 +855,7 @@ function TableEx(props: ExerciseProps & { spec: Extract<AnswerSpec, { kind: "tab
       </div>
       <div className="ex-grow" />
       <div className={cn(spec.bank ? "answers" : "cta", !spec.bank && touch && "with-kb")}>
+        <Note text={persian.note} />
         {spec.bank && !verdict ? (
           <div className="bank lat" lang={language}>
             {bankView.map(({ form, index, used }) =>
@@ -859,7 +887,7 @@ function TableEx(props: ExerciseProps & { spec: Extract<AnswerSpec, { kind: "tab
                 {t("learn.session.idk")}
               </button>
             ) : null}
-            <Check disabled={!full} onClick={() => submit({ rows: cells })} />
+            <Check disabled={!full} onClick={send} />
           </div>
         )}
         {!spec.bank && !verdict ? (

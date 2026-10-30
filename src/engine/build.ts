@@ -530,11 +530,9 @@ export function buildColloquialEx(env: BuildEnv, word: WordC, code: string): Ex 
   const key = itemKey("word", word.id);
   const q: Question = { meaning: word.meanings[0], standard: displayWord(standard, env.content.language) };
   if (code === "K1") {
-    const wrong = shuffle(
-      env.rng,
-      [...env.content.words.values()].filter((other) => other.id !== word.id && other.id !== standard.id && other.lemma !== word.lemma && !meaningsOverlap(word, other)),
-    ).slice(0, SHAPE.wrongOptions);
-    if (wrong.length < SHAPE.wrongOptions) return null;
+    // The standard twin shares the concept, so it is never a wrong option.
+    const wrong = wrongWords(env, word, "lemma");
+    if (!wrong) return null;
     const { options, correct } = choiceSet(
       env,
       wordChoice(word, "lemma"),

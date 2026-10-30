@@ -19,7 +19,7 @@ describe("«تنظیمات موتور» (PRD §9.8, §13.2)", () => {
   it("saves nothing when one value is out of range or breaks a rule between keys", async () => {
     expect(await saveEngineSettings({ "session.resume_hours": 99, "quick.minutes": 5 }, ADMIN)).toEqual({
       state: "invalid",
-      errors: [{ key: "session.resume_hours", message: "باید بین ۱ و ۴۸ باشد." }],
+      errors: [{ key: "session.resume_hours", message: "باید بین ۱ و ۲۴ باشد." }],
     });
     const broken = await saveEngineSettings({ "share.review": 0.6 }, ADMIN);
     expect(broken.state).toBe("invalid");
@@ -40,7 +40,7 @@ describe("«تنظیمات موتور» (PRD §9.8, §13.2)", () => {
       ["engine_setting", "session.resume_hours", { value: 6 }, { value: 8 }],
     ]);
     const row = await testDb.engineSetting.findUniqueOrThrow({ where: { key: "session.resume_hours" } });
-    expect([row.default_value, row.min_value, row.max_value, row.updated_by]).toEqual([6, 1, 48, ADMIN]);
+    expect([row.default_value, row.min_value, row.max_value, row.updated_by]).toEqual([6, 1, 24, ADMIN]);
   });
 
   it("puts a key back, unless it changed again or the old value no longer fits", async () => {
@@ -56,6 +56,23 @@ describe("«تنظیمات موتور» (PRD §9.8, §13.2)", () => {
 
     await saveEngineSettings({ "share.review": 0.45, "share.new": 0.3 }, ADMIN);
     expect(await revertChange(review.id, ADMIN)).toEqual({ state: "blocked", reason: "later" });
+  });
+
+  it("T110: a new `mastery.produce_rank` moves the ranked B1 and B2 words no teacher set by hand, and «برگردان» moves them back", async () => {
+    const word = (code: string, extra: Record<string, unknown>) =>
+      testDb.word.create({ data: { language: "fr", code, lemma: code, pos: "noun", gender: "m", level: "B1", meaning_fa: code, ...extra } });
+    const common = await word("commun", { frequency_rank: 1500, mastery: "produce", mastery_suggested: "recognize" });
+    const rare = await word("rare", { frequency_rank: 4000, mastery: "recognize" });
+    const manual = await word("manuel", { frequency_rank: 1500, mastery: "produce", mastery_manual: true });
+    const early = await word("tôt", { frequency_rank: 1500, mastery: "produce", level: "A2" });
+    const unranked = await word("inconnu", { mastery: "produce" });
+    const mastery = async () => Object.fromEntries((await testDb.word.findMany({ select: { code: true, mastery: true } })).map((row) => [row.code, row.mastery]));
+
+    await saveEngineSettings({ "mastery.produce_rank": 1000 }, ADMIN);
+    expect(await mastery()).toEqual({ [common.code]: "recognize", [rare.code]: "recognize", [manual.code]: "produce", [early.code]: "produce", [unranked.code]: "produce" });
+    const [row] = await logRows();
+    expect(await revertChange(row.id, ADMIN)).toEqual({ state: "reverted", notes: [] });
+    expect((await mastery())[common.code]).toBe("produce");
   });
 
   it("shows the change in «تاریخچه تغییرها» under «تنظیمات»", async () => {
