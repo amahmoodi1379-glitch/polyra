@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { filled, issues, levelCode, optionalText, sentenceCore, token } from "./common";
+import { filled, levelCode, optionalText, sentenceCore, token } from "./common";
 
 /** unit_code: lowercase Latin letters, digits and hyphens, e.g. fr-a1-passe-compose-avoir-er. */
 export const unitCode = z.string().trim().regex(/^[a-z]{2}-[a-c][12]-[a-z0-9]+(?:-[a-z0-9]+)*$/);
@@ -53,18 +53,4 @@ export const unitRecord = z.object({
   common_mistake_fa: filled,
   category_sets: z.array(categorySet).nullish().transform((value) => value ?? null),
   can_do_fa: optionalText,
-});
-
-export const unitListAnswer = z.object({ units: z.array(z.unknown()), issues });
-export const grammarUnitAnswer = z.object({
-  unit: z.unknown(),
-  targets: z.array(z.unknown()).nullish().transform((list) => list ?? []),
-  transforms: z.array(z.unknown()).nullish().transform((list) => list ?? []),
-  translations: z.array(z.unknown()).nullish().transform((list) => list ?? []),
-  issues,
-});
-export const translationsAnswer = z.object({
-  unit_code: unitCode,
-  translations: z.array(z.unknown()),
-  issues,
 });

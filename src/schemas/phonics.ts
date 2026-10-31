@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { filled, issues } from "./common";
+import { filled } from "./common";
 
 export const phonicsLessonRecord = z.object({
   kind: z.enum(["contrast", "rule", "liaison"]),
@@ -20,5 +20,3 @@ export const phonicsLessonRecord = z.object({
     .transform((list) => list ?? []),
 });
 export type PhonicsLessonRecord = z.output<typeof phonicsLessonRecord>;
-
-export const phonicsAnswer = z.object({ lesson: z.unknown(), issues });

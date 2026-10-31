@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { filled, issues, levelCode, sentenceCore, token } from "./common";
+import { filled, levelCode, sentenceCore, token } from "./common";
 
 /** Situational dialogue (P-D, PRD §14.4 and §8b.4). */
 const line = sentenceCore.extend({ speaker: z.string().trim().nullish().transform((value) => value || null) });
@@ -16,7 +16,6 @@ export const dialogueRecord = z.object({
   situation_fa: filled,
   turns: z.array(z.unknown()),
 });
-export const dialogueAnswer = z.object({ dialogue: z.unknown(), issues });
 
 /** Find-the-mistake text (P-E, PRD §14.4 and §8b.5). */
 export const errorfixRecord = z.object({
@@ -28,7 +27,6 @@ export const errorfixRecord = z.object({
   tokens: z.array(token).min(1),
 });
 export type ErrorfixRecord = z.output<typeof errorfixRecord>;
-export const errorfixAnswer = z.object({ items: z.array(z.unknown()), issues });
 
 /** Guided writing task (P-WR, PRD §14.4 and §8b.6). */
 export const writingRecord = z.object({
@@ -42,4 +40,3 @@ export const writingRecord = z.object({
   model_answer_fa: filled,
 });
 export type WritingRecord = z.output<typeof writingRecord>;
-export const writingAnswer = z.object({ tasks: z.array(z.unknown()), issues });

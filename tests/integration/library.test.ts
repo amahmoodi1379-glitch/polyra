@@ -120,6 +120,20 @@ describe("deleting a draft (PRD §13.7)", () => {
     expect(row.before).toEqual(expect.objectContaining({ code: "pain", meaning_fa: "معنی" }));
     expect(await revertChange(row.id, ADMIN)).toEqual({ state: "blocked", reason: "final" });
   });
+
+  it("keeps a draft word that a short translation or a find-the-mistake text names in its word rows", async () => {
+    const chat = await word("chat");
+    const chien = await word("chien");
+    const unit = await testDb.grammarUnit.create({ data: { language: "fr", unit_code: "fr-a1-x", title_fa: "واحد", level: "A1" } });
+    await testDb.translateItem.create({
+      data: { language: "fr", grammar_unit_id: unit.id, prompt_fa: "گربه.", accepted_outputs: ["Le chat."], tokens: [{ surface: "chat", kind: "word", word_id: chat.id }] },
+    });
+    await testDb.errorfixItem.create({
+      data: { language: "fr", level: "A1", marked_text: "Le {{chiens}}.", translation_fa: "سگ.", errors: [], tokens: [{ surface: "chien", kind: "word", word_id: chien.id }] },
+    });
+    expect(await deleteItem("words", chat.id, ADMIN)).toEqual({ state: "inUse" });
+    expect(await deleteItem("words", chien.id, ADMIN)).toEqual({ state: "inUse" });
+  });
 });
 
 describe("editing and «برگردان» (PRD §13.2)", () => {

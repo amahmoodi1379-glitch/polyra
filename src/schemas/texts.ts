@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { filled, issues, levelCode, optionalText, sentenceCore } from "./common";
+import { filled, levelCode, optionalText, sentenceCore } from "./common";
 
 /**
  * One question of a text (PRD §14.3). Indexes start at 0. Cross-field rules are checked on import.
@@ -51,5 +51,3 @@ export const textRecord = z.object({
 
 export type TextRecord = z.output<typeof textRecord>;
 export type TextSentence = z.output<typeof textSentence>;
-
-export const textsAnswer = z.object({ texts: z.array(z.unknown()), issues });

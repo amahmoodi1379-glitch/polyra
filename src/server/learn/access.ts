@@ -1,4 +1,4 @@
-import { createHash } from "node:crypto";
+import { createHmac } from "node:crypto";
 import type { Prisma } from "@/generated/prisma/client";
 import { db } from "@/server/db";
 
@@ -9,8 +9,15 @@ import { db } from "@/server/db";
 
 type Client = Prisma.TransactionClient | typeof db;
 
-/** The phone number as the trial ledger keeps it: a hash, so the number itself can be deleted (PRD §15.5). */
-export const phoneHash = (phone: string) => createHash("sha256").update(`polyra-trial:${phone}`).digest("hex");
+/**
+ * The phone number as the trial ledger keeps it, so the number itself can be deleted (PRD §15.5). It is
+ * an HMAC with a server secret (PRD §4): a plain hash of an 11-digit number is undone by trying them all.
+ */
+export function phoneHash(phone: string) {
+  const secret = process.env.PHONE_HASH_SECRET;
+  if (!secret) throw new Error("PHONE_HASH_SECRET is not set");
+  return createHmac("sha256", secret).update(phone).digest("hex");
+}
 
 export async function canPractice(
   client: Client,

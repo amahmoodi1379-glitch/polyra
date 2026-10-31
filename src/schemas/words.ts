@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { filled, gender, grammaticalNumber, issues, levelCode, mastery, optionalText, pos, register } from "./common";
+import { filled, gender, grammaticalNumber, levelCode, mastery, optionalText, pos, register } from "./common";
 
 /** One row of the word-list answer (P-C, PRD §14.4). */
 export const wordListItem = z.object({
@@ -54,8 +54,3 @@ export const phraseListItem = z.object({
   level: levelCode,
 });
 export type PhraseListItem = z.output<typeof phraseListItem>;
-
-/** Top level of each answer. Records are checked one by one so a bad record never sinks the batch. */
-export const wordListAnswer = z.object({ items: z.array(z.unknown()), issues });
-export const wordsAnswer = z.object({ words: z.array(z.unknown()), issues });
-export const phrasesAnswer = z.object({ phrases: z.array(z.unknown()), issues });

@@ -2,7 +2,7 @@ import { z } from "zod";
 
 /**
  * Building blocks shared by the JSON structures of PRD §14. Keys are English and exactly as in the
- * PRD; the import step turns every problem into plain Persian (src/server/content/describe.ts).
+ * PRD; the import step turns every problem into plain Persian (src/server/content/problems.ts).
  */
 
 export const levelCode = z.string().regex(/^(A1|A2|B1|B2|C1|C2)$/);
@@ -10,8 +10,8 @@ export const levelCode = z.string().regex(/^(A1|A2|B1|B2|C1|C2)$/);
 export const posValues = ["noun", "verb", "adj", "adv", "prep", "pron", "det", "conj", "num", "interj", "phrase"] as const;
 export const pos = z.enum(posValues);
 
-export const frenchGenders = ["m", "f", "mf"] as const;
-export const germanGenders = ["der", "die", "das"] as const;
+const frenchGenders = ["m", "f", "mf"] as const;
+const germanGenders = ["der", "die", "das"] as const;
 export const gender = z.enum([...frenchGenders, ...germanGenders]);
 
 export const grammaticalNumber = z.enum(["sg", "pl_only"]);
@@ -44,9 +44,3 @@ export const sentenceCore = z.object({
   translation_fa: filled,
   tokens: z.array(token).min(1),
 });
-
-/** Every importable answer has an `issues` list where the chatbot explains what it could not do. */
-export const issues = z
-  .array(z.unknown())
-  .nullish()
-  .transform((list) => (list ?? []).map((item) => (typeof item === "string" ? item : JSON.stringify(item))));

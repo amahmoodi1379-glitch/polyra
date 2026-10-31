@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { filled, issues } from "./common";
+import { filled } from "./common";
 
 /** Pronoun keys of the six forms (PRD §14.4). */
 export const pronounKeys = {
@@ -19,5 +19,3 @@ export const conjugationRecord = z.object({
   review_card: z.boolean().nullish().transform((value) => value ?? false),
 });
 export type ConjugationRecord = z.output<typeof conjugationRecord>;
-
-export const conjugationAnswer = z.object({ tables: z.array(z.unknown()), issues });

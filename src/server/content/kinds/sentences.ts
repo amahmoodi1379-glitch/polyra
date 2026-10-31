@@ -89,7 +89,9 @@ export const sentences: ContentKind = {
       .sort((a, b) => levelRank(a.level) - levelRank(b.level) || (a.intro_order ?? 1e9) - (b.intro_order ?? 1e9));
     const level = needy.find((word) => levels.includes(word.level))?.level;
     if (!level) return { nothing: t("admin.create.nothing.sentences") };
-    const batch = needy.filter((word) => word.level === level).slice(0, size);
+    // The quality check reads at most «P-QA» sentences at once (PRD §14.9), so one batch asks for no more.
+    const fit = Math.max(1, Math.floor((await batchSize("P-QA", 100)) / goal));
+    const batch = needy.filter((word) => word.level === level).slice(0, Math.min(size, fit));
     // Words chosen on «سلامت محتوا» have sentences that use later words: their new sentences may use
     // only words met before the first of them, so each sentence is usable for every target.
     const cutOrder = chosen ? Math.min(...batch.map((word) => word.intro_order ?? 1e9)) : Math.max(...batch.map((word) => word.intro_order ?? 0));

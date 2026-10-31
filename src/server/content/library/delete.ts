@@ -48,6 +48,9 @@ async function inUse(tx: Tx, slug: LibrarySlug, row: Row): Promise<boolean> {
       tx.conjugationTable.count({ where: { word_id: id } }),
       tx.word.count({ where: { language: row.language, id: { not: id }, OR: [{ sense_of: code }, { parts: { has: code } }, { dup_of_id: id }] } }),
       tx.text.count({ where: { language: row.language, key_word_ids: { has: id } } }),
+      // Short translations and find-the-mistake texts keep their word rows as JSON.
+      tx.translateItem.count({ where: { language: row.language, tokens: { array_contains: [{ word_id: id }] } } }),
+      tx.errorfixItem.count({ where: { language: row.language, tokens: { array_contains: [{ word_id: id }] } } }),
     ]);
     return counts.some((count) => count > 0);
   }

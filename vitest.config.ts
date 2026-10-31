@@ -22,7 +22,7 @@ export default defineConfig({
           globalSetup: ["tests/integration/global-setup.ts"],
           // One database for all integration files, so they run one after another.
           fileParallelism: false,
-          env: { DATABASE_URL: testDatabaseUrl, AUTH_SECRET: "test-secret", SMS_PROVIDER: "mock" },
+          env: { DATABASE_URL: testDatabaseUrl, AUTH_SECRET: "test-secret", PHONE_HASH_SECRET: "test-secret", SMS_PROVIDER: "mock" },
         },
       },
     ],

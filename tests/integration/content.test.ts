@@ -599,4 +599,12 @@ describe("vocabulary sentences (P-S) and the QA round", () => {
     const codes = await testDb.word.findMany({ where: { id: { in: params.word_ids } }, select: { code: true } });
     expect(codes.map((word) => word.code).sort()).toEqual(["manger", "pomme", "vouloir"]);
   });
+
+  it("asks for no more sentences than one quality check reads", async () => {
+    await vocabulary();
+    // 8 sentences a word and a check of at most 20 sentences: two words a batch.
+    await testDb.appSetting.create({ data: { key: "batch.sizes", value: { "P-S": 10, "P-QA": 20 } } });
+    const batch = await batchFor("sentences");
+    expect((batch.params as { word_ids: number[] }).word_ids).toHaveLength(2);
+  });
 });

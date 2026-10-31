@@ -1470,6 +1470,9 @@ model Order {
 
   user User @relation(fields: [user_id], references: [id])
 
+  /// A gateway's payment is applied once, however often its return address is opened (PRD §12.4 step 5).
+  @@unique([gateway, authority])
+  @@unique([gateway, gateway_ref])
   @@index([user_id])
   @@index([status, created_at])
   @@map("order")
