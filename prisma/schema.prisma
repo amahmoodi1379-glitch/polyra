@@ -1039,6 +1039,8 @@ model Enrollment {
   // Not in §4; see DECISIONS.md.
   /// Forgiveness days used in `streak_forgiven_week`, for `streak.forgive_per_week` above 1 (PRD §3.9).
   streak_forgiven_count Int @default(0)
+  /// Pace went to slow and the end of a finished session has not said so yet (PRD §3.11 row 6, §9.10).
+  slow_notice_due       Boolean @default(false)
 
   user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
 

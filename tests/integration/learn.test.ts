@@ -302,6 +302,57 @@ describe("pace (PRD §9.10, «سرعت کم»)", () => {
   });
 });
 
+describe("the end screen's one message (PRD §3.11)", () => {
+  it("offers shorter sessions after three left in a row, and says pace went slow at the next end", async () => {
+    const user = await enrolled();
+    await testDb.user.update({ where: { id: user.id }, data: { session_length_min: 30 } });
+    const before = (minutes: number, scope: "mixed" | "vocab" | "quick", end_reason: "expired" | "replaced" | "finished", doneCount: number) =>
+      testDb.session.create({
+        data: {
+          user_id: user.id,
+          language: "fr",
+          scope,
+          planned_length_min: 30,
+          plan: { doneCount, plannedCount: 20 },
+          created_at: new Date(NOW.getTime() - minutes * 60_000),
+          ended_at: new Date(NOW.getTime() - (minutes - 10) * 60_000),
+          end_reason,
+        },
+      });
+    await before(300, "mixed", "expired", 2);
+    await before(200, "vocab", "replaced", 0);
+    // «امروز وقت کم دارم» neither counts nor breaks the run.
+    await before(150, "quick", "finished", 20);
+    await before(100, "mixed", "expired", 9);
+    // Forty wrong reviews this week: the next build goes to slow pace (PRD §9.10).
+    await testDb.reviewLog.createMany({
+      data: Array.from({ length: 40 }, () => ({
+        id: randomUUID(),
+        user_id: user.id,
+        language: "fr",
+        kind: "review" as const,
+        item_type: "word",
+        item_id: 1,
+        result: "wrong" as const,
+        fsrs_rating: 1,
+        ts: plusDays(NOW, -1),
+      })),
+    });
+    const enrollment = () => testDb.enrollment.findFirstOrThrow({ where: { user_id: user.id } });
+
+    // Shorter sessions come first; the slow-pace note waits for the next end.
+    expect((await playAll(user, await started(user)))?.message).toEqual({ kind: "shorter", from: 30, to: 20 });
+    expect(await enrollment()).toMatchObject({ pace_mode: "slow", slow_notice_due: true, shorten_asked_at: expect.any(Date) });
+
+    const later = plusDays(NOW, 1);
+    expect((await playAll(user, await started(user, later), later))?.message).toEqual({ kind: "slowPace" });
+    expect((await enrollment()).slow_notice_due).toBe(false);
+
+    const after = plusDays(NOW, 2);
+    expect((await playAll(user, await started(user, after), after))?.message).toBeNull();
+  }, 60_000);
+});
+
 describe("the line under «شروع» (PRD §10.2)", () => {
   it("T106: the home screen's dry run with a large backlog writes nothing; a real start spreads it", async () => {
     const user = await enrolled();

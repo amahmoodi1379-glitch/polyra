@@ -2,11 +2,13 @@ import { hasCard, levelIndex } from "@/engine/content";
 import { indexItems, levelsAfter } from "@/engine/levels";
 import { activeCards, isDue } from "@/engine/session/build";
 import { num } from "@/engine/settings";
+import { leftInARow, mayOfferShorter, pickSessionMessage, shorterLength, type ClosedSession } from "@/engine/messages";
 import { finishDay } from "@/engine/streak";
 import { addDays, tehranDate, tehranDayStart } from "@/engine/time";
-import type { Prisma, Session } from "@/generated/prisma/client";
+import type { Enrollment, Prisma, Session } from "@/generated/prisma/client";
+import { SESSION_LENGTHS } from "./enroll";
 import { asDate, dailyOf, dateOnly, enrollmentOf, itemStateOf, skillsOf } from "./learner";
-import { closeSession, startInfo, type EndSummary, type LearnContext, type StoredPlan } from "./session";
+import { closeSession, startInfo, type EndMessage, type EndSummary, type LearnContext, type StoredPlan } from "./session";
 
 /**
  * The end of a finished session (PRD §3.9): the streak and its freezes, skill levels, the station
@@ -100,6 +102,8 @@ export async function finishSession(tx: Tx, row: Session, plan: StoredPlan, ctx:
   const dueTomorrow = items.filter((item) => isDue(item, tehranDayStart(tomorrow), tomorrow) && active(item)).length;
   const counts = dailyOf(daily, today);
 
+  const message = await endMessage(tx, row, enrollment, ctx, at);
+
   const end: EndSummary = {
     correct: plan.counters.correct,
     wrong: plan.counters.wrong,
@@ -110,7 +114,41 @@ export async function finishSession(tx: Tx, row: Session, plan: StoredPlan, ctx:
     station,
     streak,
     tomorrow: dueTomorrow,
+    message,
   };
   await tx.session.update({ where: { id: row.id }, data: { plan: { ...plan, end } as unknown as Prisma.InputJsonValue } });
   return end;
+}
+
+/**
+ * The one message of this end screen (PRD §3.11), and the note that it was shown. Shorter sessions
+ * follow sessions left in a row since the last time it was asked; «امروز وقت کم دارم» is not about the
+ * session length, so it neither counts nor breaks the run (DECISIONS.md).
+ */
+async function endMessage(tx: Tx, row: Session, enrollment: Enrollment, ctx: LearnContext, at: Date): Promise<EndMessage | null> {
+  const applying: EndMessage[] = [];
+  if (mayOfferShorter(enrollment.shorten_asked_at, at, ctx.settings)) {
+    const since = enrollment.shorten_asked_at ?? new Date(0);
+    const previous = await tx.$queryRaw<ClosedSession[]>`
+      SELECT end_reason AS "endReason", COALESCE((plan->>'doneCount')::int, 0) AS "doneCount", COALESCE((plan->>'plannedCount')::int, 0) AS "plannedCount"
+      FROM session
+      WHERE user_id = ${row.user_id} AND language = ${row.language} AND id <> ${row.id}::uuid AND ended_at IS NOT NULL
+        AND scope <> 'quick' AND created_at < ${row.created_at} AND created_at > ${since}
+      ORDER BY created_at DESC
+      LIMIT ${num(ctx.settings, "abandon.sessions")}`;
+    if (leftInARow(previous, ctx.settings)) {
+      const user = await tx.user.findUniqueOrThrow({ where: { id: row.user_id }, select: { session_length_min: true } });
+      applying.push({ kind: "shorter", from: user.session_length_min, to: shorterLength(user.session_length_min, SESSION_LENGTHS) });
+    }
+  }
+  if (enrollment.slow_notice_due && enrollment.pace_mode === "slow") applying.push({ kind: "slowPace" });
+
+  const message = pickSessionMessage(applying);
+  if (message) {
+    await tx.enrollment.update({
+      where: { id: enrollment.id },
+      data: message.kind === "shorter" ? { shorten_asked_at: at } : { slow_notice_due: false },
+    });
+  }
+  return message;
 }

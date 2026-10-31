@@ -1,17 +1,18 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState, useTransition } from "react";
+import { changeSessionLength } from "@/app/(learner)/actions";
 import { Icon } from "@/components/learn/icons";
 import { Mixed } from "@/components/learn/mixed";
 import { dropIn, enter, squish } from "@/components/learn/motion";
 import { buzz, sfx } from "@/components/learn/sfx";
 import { formatNumber, t, tRich } from "@/i18n";
-import type { EndSummary } from "@/server/learn/session";
+import type { EndMessage, EndSummary } from "@/server/learn/session";
 
 /**
  * The end of a session (PRD §3.9), in its order: right and wrong, what was new today, «حالا
- * می‌توانی…», a station passed, the streak and tomorrow's reviews. The counts of this device show at
- * once; the rest waits for the server's answer.
+ * می‌توانی…», a station passed, the streak, tomorrow's reviews and at most one message (PRD §3.11).
+ * The counts of this device show at once; the rest waits for the server's answer.
  */
 
 export function EndScreen({
@@ -146,6 +147,8 @@ export function EndScreen({
               <p className="num">{summary.tomorrow > 0 ? t("learn.end.tomorrow", { n: summary.tomorrow }) : t("learn.end.tomorrowNone")}</p>
             </div>
           </div>
+
+          {summary.message ? <EndNote message={summary.message} /> : null}
         </>
       ) : (
         <div className="facts">
@@ -180,5 +183,56 @@ export function EndScreen({
         </button>
       </div>
     </>
+  );
+}
+
+/** The one message of the end screen (PRD §3.11) with its buttons; it goes once it is answered. */
+function EndNote({ message }: { message: EndMessage }) {
+  const [state, setState] = useState<"open" | "shortened" | "closed">("open");
+  const [pending, start] = useTransition();
+  if (state === "closed") return null;
+  const offer = message.kind === "shorter" && message.to !== null ? { from: message.from, to: message.to } : null;
+  if (state === "shortened" && offer) {
+    return (
+      <div className="end-note" role="status">
+        <p className="num">{t("learn.end.message.shortened", { n: offer.to })}</p>
+      </div>
+    );
+  }
+  const text = offer
+    ? t("learn.end.message.shorter", { from: offer.from, to: offer.to })
+    : message.kind === "shorter"
+      ? t("learn.end.message.busy")
+      : t("learn.end.message.slowPace");
+  return (
+    <div className="end-note">
+      <p className="num">{text}</p>
+      <div className="row">
+        {offer ? (
+          <>
+            <button
+              type="button"
+              className="secondary"
+              disabled={pending}
+              onClick={() =>
+                start(async () => {
+                  await changeSessionLength(offer.to);
+                  setState("shortened");
+                })
+              }
+            >
+              {t("learn.end.message.yes")}
+            </button>
+            <button type="button" className="ghost" disabled={pending} onClick={() => setState("closed")}>
+              {t("learn.end.message.no")}
+            </button>
+          </>
+        ) : (
+          <button type="button" className="secondary" onClick={() => setState("closed")}>
+            {t("learn.end.message.ok")}
+          </button>
+        )}
+      </div>
+    </div>
   );
 }

@@ -36,7 +36,10 @@ export type EndSummary = {
   station: { skill: "vocab" | "grammar"; level: string; number: number; total: number; count: number } | null;
   streak: { counted: boolean; count: number; freezeEarned: boolean; freezes: number };
   tomorrow: number;
+  /** At most one message (PRD §3.11). «shorter» without `to` reminds a 10-minute learner of «امروز وقت کم دارم». */
+  message: EndMessage | null;
 };
+export type EndMessage = { kind: "shorter"; from: number; to: number | null } | { kind: "slowPace" };
 
 /** What `session.plan` holds: the engine's plan and two notes of the server's. */
 export type StoredPlan = SessionPlan & { start?: StartInfo; end?: EndSummary };
@@ -118,11 +121,16 @@ export function expiresAt(row: Pick<Session, "created_at" | "last_answer_at">, s
   return new Date(Math.min(resume, row.created_at.getTime() + SESSION_LIFE_MS));
 }
 
-/** What a build writes before the session starts (PRD §10.2, step 1): pace, the spread backlog, the word cap. */
+/**
+ * What a build writes before the session starts (PRD §10.2, step 1): pace, the spread backlog, the word
+ * cap. Going to slow pace leaves a note for the end of the next finished session (PRD §3.11 row 6); back
+ * at normal pace the note is no longer true.
+ */
 async function writeEffects(tx: Prisma.TransactionClient, userId: number, language: string, effects: BuildEffects, today: string) {
+  const notice = effects.becameSlow ? { slow_notice_due: true } : effects.paceMode === "normal" ? { slow_notice_due: false } : {};
   await tx.enrollment.update({
     where: { user_id_language: { user_id: userId, language } },
-    data: { pace_mode: effects.paceMode, last_spread_date: effects.lastSpreadDate ? asDate(effects.lastSpreadDate) : null },
+    data: { pace_mode: effects.paceMode, last_spread_date: effects.lastSpreadDate ? asDate(effects.lastSpreadDate) : null, ...notice },
   });
   const byDay = new Map<string, Map<string, number[]>>();
   for (const item of effects.spread) {

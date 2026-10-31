@@ -102,7 +102,8 @@ Deploy: Runflare builds `main` (`docs/deploy-runflare.md`). Work on the session 
 - Learner sessions (PRD §10, §15.4): `src/engine/session` builds and plays a plan (`build.ts`, `play.ts`, `advance.ts`);
   the browser and the server run the same functions. `src/server/learn`: `content.ts` (what a learner or tester may
   see, cached 30s), `learner.ts` (the snapshot the engine needs), `session.ts` (start, resume, close, preview),
-  `answer.ts` (one answer: checked, graded again, written), `finish.ts` (end screen), `home.ts`, `enroll.ts`. Routes:
+  `answer.ts` (one answer: checked, graded again, written), `finish.ts` (end screen, with the one PRD §3.11 message picked by
+  `src/engine/messages.ts`), `home.ts`, `enroll.ts`. Routes:
   `src/app/api/learn/*` (`tap` queues a touched word, PRD §5.9, via `tap.ts`). `lists.ts` feeds the reading pages.
   Demo content: `fixtures/demo-fr` (data and `build.ts`), loaded by `src/server/content/demo.ts`.
 - Learner app (`src/app/(learner)`, styles in `learner.css` under `.lx`): `/start` and `/start/[lang]` (onboarding),

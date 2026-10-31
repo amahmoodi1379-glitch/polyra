@@ -1836,6 +1836,24 @@
   & .fact.wait p {
     color: var(--ink-3);
   }
+  & .end-note {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 22px;
+    background: var(--surface);
+    box-shadow: var(--shadow-1);
+  }
+  & .end-note p {
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.75;
+    text-wrap: pretty;
+  }
+  & .end-note .secondary {
+    min-width: 104px;
+  }
   & .station {
     display: flex;
     align-items: center;
