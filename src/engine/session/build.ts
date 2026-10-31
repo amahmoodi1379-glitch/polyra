@@ -1,6 +1,7 @@
 import { newItemState, strongestPartner } from "../answer";
 import { buildG0, buildWordEx, type BuildEnv } from "../build";
 import { genderButtons, levelIndex, type ConjC, type Content, type UnitC, type WordC } from "../content";
+import { buildDrillEx, drillGate, drillKey, drillOrder } from "../drill";
 import type { Ex } from "../ex";
 import { exerciseDef, SHAPE, type TimeKey } from "../exercises";
 import { isNewCard, retrievability } from "../fsrs";
@@ -18,8 +19,8 @@ import type { Card, PlanItem, Scope, SessionPlan } from "./types";
 import { lessonView, makeEnv, tableView, wordCard } from "./views";
 
 /**
- * Builds a session (PRD §10.2–§10.9) for the vocabulary and grammar skills. Texts, phonics, sentence
- * listening, production and placement samples come in later phases and are left out here.
+ * Builds a session (PRD §10.2–§10.9): vocabulary, grammar and sentence listening (§7.6). Texts,
+ * phonics, production and placement samples are added by their own phases.
  */
 
 export type BuildOptions = {
@@ -150,6 +151,14 @@ export function nextSkill(
   const score = (skill: SkillName) => (progress[skill] ?? 0) + SHAPE.packWeight * (packs[skill] ?? 0);
   return SKILL_ORDER.filter((skill) => skills.has(skill)).sort((a, b) => score(a) - score(b) || SKILL_ORDER.indexOf(a) - SKILL_ORDER.indexOf(b))[0] ?? null;
 }
+
+/**
+ * Listening's place in the pick while it has only sentence drills. Its bar counts texts (PRD §9.6), so
+ * drills alone would keep it at zero and take most packs; it stands one pack above the weakest other
+ * skill instead, so a drill pack takes its turn after that skill's (DECISIONS.md).
+ */
+export const drillStandIn = (others: ReadonlySet<SkillName>, progress: Partial<Record<SkillName, number>>) =>
+  Math.min(...[...others].map((skill) => progress[skill] ?? 0)) + SHAPE.packWeight;
 
 /** Backlog spread (PRD §10.6): keep the weakest `threshold`, move the rest over the next days. */
 export function spreadBacklog(due: { key: string; r: number }[], threshold: number, today: string, settings: Settings) {
@@ -329,8 +338,46 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
     used += entry.cost;
   };
 
-  const wantWords = scope !== "grammar";
-  const wantGrammar = scope !== "vocab";
+  const wantWords = scope !== "grammar" && scope !== "listening";
+  const wantGrammar = scope !== "vocab" && scope !== "listening";
+
+  // Sentence listening (PRD §7.6): the suitable sentences in order, found as far as they are taken; none without sound.
+  const fromStart = (() => {
+    const vocab = learner.skills.find((skill) => skill.skill === "vocab");
+    return !vocab?.knownBelow || levelIndex(content, vocab.knownBelow) <= 0;
+  })();
+  const drillAt =
+    ctx.audio && (scope === "mixed" || scope === "listening") && !drillGate(fromStart, introducedCardWords(content, learner.items), settings)
+      ? lazyList(drillOrder(env, new Map(learner.drills.map((drill) => [drill.sentenceId, drill])), now))
+      : () => undefined;
+  const drillsOpen = drillAt(0) !== undefined;
+  const drillTaken = new Set<number>();
+  /** Up to `count` drills that fit `room`, skipping sentences any exercise of the plan already uses. */
+  const nextDrills = (count: number, room: number): Entry[] => {
+    if (!drillsOpen) return [];
+    const used = new Set<number>(drillTaken);
+    for (const entry of entries) for (const ex of entryExercises(entry)) if (ex.sentenceId !== null) used.add(ex.sentenceId);
+    const out: Entry[] = [];
+    let total = 0;
+    for (let i = 0, pick = drillAt(0); pick && out.length < count; pick = drillAt(++i)) {
+      const { sentence, code } = pick;
+      if (used.has(sentence.id)) continue;
+      const ex = buildDrillEx(env, sentence, code);
+      if (!ex) continue;
+      const cost = time(settings, ex);
+      if (total + cost > room) break;
+      total += cost;
+      used.add(sentence.id);
+      out.push({ t: "drill", key: drillKey(sentence.id), ex, cost });
+    }
+    return out;
+  };
+  const addDrills = (list: Entry[]) => {
+    for (const entry of list) {
+      add(entry);
+      if (entry.t === "drill" && entry.ex.sentenceId !== null) drillTaken.add(entry.ex.sentenceId);
+    }
+  };
 
   // ── Reviews (step 4), R ascending, with the round cap; a grammar session is bound by its time only (DECISIONS.md) ──
   const roundCap = scope === "grammar" ? Number.POSITIVE_INFINITY : Math.ceil((num(settings, "cap.rounds_per_5min") * lengthMin) / 5);
@@ -379,7 +426,7 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
   let spent = 0;
   const leftover: string[] = [];
   const dueKeys = [...eligible].sort((a, b) => a.r - b.r).map((item) => item.key);
-  if (scope !== "notebook" && scope !== "extra") {
+  if (scope !== "notebook" && scope !== "extra" && scope !== "listening") {
     let misses = 0;
     for (const key of dueKeys) {
       const room = (scope === "quick" ? budget : reviewBudget) - spent;
@@ -458,7 +505,7 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
     return { t: "single", key, kind: "practice", ex, alt, step: state.step, cost: time(settings, ex), note: { refType: note.refType, refId: note.refId }, planItem: built.item };
   };
   const noteLeft: NotebookE[] = [];
-  if (scope !== "extra") {
+  if (scope !== "extra" && scope !== "listening") {
     const noteBudget = scope === "notebook" ? budget : scope === "quick" ? budget - used : share("notebook") * budget;
     let noteSpent = 0;
     for (const note of entriesOpen) {
@@ -506,7 +553,6 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
   const summary = { newWords: 0, newUnits: 0, newConj: 0 };
   if (scope === "mixed" || scope === "vocab" || scope === "grammar") {
     const vocab = learner.skills.find((skill) => skill.skill === "vocab") ?? { skill: "vocab" as const, level: content.levels[0], knownBelow: content.levels[0] };
-    const fromStart = !vocab.knownBelow || levelIndex(content, vocab.knownBelow) <= 0;
     const grammarOpen = !fromStart || introducedCardWords(content, learner.items) >= num(settings, "gate.grammar_words");
     let wordRoom = wordsBlocked ? 0 : Math.max(0, Math.min(caps.words, wordsCapToday - learner.today.newWords));
     let unitRoom = Math.max(0, Math.min(caps.units, caps.unitsDaily - learner.today.newUnits));
@@ -514,14 +560,18 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
     const chosenWords: number[] = [];
     const chosenUnits = new Map(items.units);
     const chosenConj = new Map(items.conjugations);
+    const skills = new Set<SkillName>();
+    if (scope !== "grammar") skills.add("vocab");
+    if (scope !== "vocab" && grammarOpen) skills.add("grammar");
     const progress: Partial<Record<SkillName, number>> = {
       vocab: vocabProgress(content, items, vocab, settings).progress,
       grammar: grammarProgress(content, items, grammarLevel(content, items), settings).progress,
     };
-    const packs: Partial<Record<SkillName, number>> = { vocab: 0, grammar: 0 };
-    const skills = new Set<SkillName>();
-    if (scope !== "grammar") skills.add("vocab");
-    if (scope !== "vocab" && grammarOpen) skills.add("grammar");
+    if (scope === "mixed" && drillsOpen) {
+      progress.listening = drillStandIn(skills, progress);
+      skills.add("listening");
+    }
+    const packs: Partial<Record<SkillName, number>> = { vocab: 0, grammar: 0, listening: 0 };
     let first = true;
     let left = budget - used;
     const known = (wordId: number) => env.known(wordId) || chosenWords.includes(wordId);
@@ -576,13 +626,17 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
     while (left > 0 && skills.size > 0) {
       const skill = nextSkill(skills, progress, packs, first)!;
       first = false;
-      const pack = skill === "vocab" ? vocabPack() : grammarPack();
+      const pack = skill === "vocab" ? vocabPack() : skill === "grammar" ? grammarPack() : nullIfEmpty(nextDrills(SHAPE.packDrills, room()));
       const cost = pack?.reduce((sum, entry) => sum + entry.cost, 0) ?? 0;
       if (!pack || cost > room()) {
         skills.delete(skill);
         continue;
       }
       for (const entry of pack) {
+        if (entry.t === "drill") {
+          addDrills([entry]);
+          continue;
+        }
         add(entry);
         if (entry.t === "newword") {
           chosenWords.push(entry.word.id);
@@ -604,8 +658,11 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
     }
   }
 
-  // ── What is left (step 8): more reviews, then more notebook ──
-  if (scope !== "notebook" && scope !== "extra") {
+  // ── «شنیداری» (PRD §10.4): sentence drills fill the session until texts come ──
+  if (scope === "listening") addDrills(nextDrills(Number.POSITIVE_INFINITY, budget - used));
+
+  // ── What is left (step 8): more reviews, then more notebook, then sentence drills ──
+  if (scope !== "notebook" && scope !== "extra" && scope !== "listening") {
     let misses = 0;
     for (const key of leftover) {
       if (budget - used < minCost || misses >= MISSES) break;
@@ -626,9 +683,34 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
     }
   }
 
+  if (scope === "mixed") addDrills(nextDrills(Number.POSITIVE_INFINITY, budget - used));
+
   if (entries.length === 0) return { kind: "nothing_left", effects };
   const plan = assemble(ctx, opts, budget, entries, planItems, summary);
   return { kind: "plan", plan, effects };
+}
+
+/** The exercises an entry already holds, to keep a drill off a sentence the plan uses. */
+function entryExercises(entry: Entry): Ex[] {
+  if (entry.t === "single" || entry.t === "newword" || entry.t === "newconj" || entry.t === "drill") return [entry.ex];
+  if (entry.t === "newunit") return [...entry.g0, ...entry.questions];
+  return entry.questions;
+}
+
+const nullIfEmpty = <T,>(list: T[]): T[] | null => (list.length > 0 ? list : null);
+
+/** The items of `source` by position, each one taken from it only when first asked for. */
+function lazyList<T>(source: Iterator<T>): (index: number) => T | undefined {
+  const seen: T[] = [];
+  let done = false;
+  return (index) => {
+    while (!done && seen.length <= index) {
+      const next = source.next();
+      if (next.done) done = true;
+      else seen.push(next.value);
+    }
+    return seen[index];
+  };
 }
 
 /** Stands for an item chosen in this session, so the unlock rules see it as opened. */
@@ -672,6 +754,8 @@ function assemble(
     const block = `b${n + 1}`;
     if (entry.t === "single") {
       queue.push({ id: id(), t: "ex", item: entry.key, kind: entry.kind, ex: entry.ex, alt: entry.alt ?? null, ...(entry.note ? { note: entry.note } : {}) });
+    } else if (entry.t === "drill") {
+      queue.push({ id: id(), t: "drill", item: entry.key, ex: entry.ex });
     } else if (entry.t === "newword") {
       queue.push({ id: id(), t: "intro", item: entry.key, block, fresh: true });
       queue.push({ id: id(), t: "ex", item: entry.key, kind: "review", ex: entry.ex, alt: entry.alt ?? null, block, fresh: true });
@@ -714,6 +798,7 @@ function assemble(
   const pairs = new Map<string, ConfusionE>();
   const minCount = num(settings, "confusion.min_count");
   for (const key of keys) {
+    if (key.startsWith("l:")) continue;
     if (key.startsWith("t:")) {
       const target = content.targets.get(Number(key.slice(2)));
       const unit = target && content.units.find((item) => item.id === target.targetId);
@@ -739,7 +824,7 @@ function assemble(
       if (table) tables[table.id] = tableView(content, table);
     }
   }
-  const reviews = entries.filter((entry) => entry.t === "single" || entry.t === "round").length;
+  const reviews = entries.filter((entry) => entry.t === "single" || entry.t === "round" || entry.t === "drill").length;
   return {
     version: 1,
     scope: opts.scope,

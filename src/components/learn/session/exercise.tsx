@@ -6,6 +6,8 @@ import { pop, shake, squish } from "@/components/learn/motion";
 import { buzz, sfx } from "@/components/learn/sfx";
 import { say } from "@/components/learn/speak";
 import type { Speak } from "@/engine/content";
+import { scoreDictation } from "@/engine/dictation";
+import { exerciseDef } from "@/engine/exercises";
 import type { AnswerSpec, Choice, Ex, Gloss, RawAnswer } from "@/engine/ex";
 import type { Graded } from "@/engine/grade";
 import { cleanAnswer, matchAny, type Lang } from "@/engine/text";
@@ -36,7 +38,10 @@ export type ExerciseProps = {
   onTap?: (gloss: Gloss) => void;
 };
 
-const iconOf = (ex: Ex): IconName => (ex.item.startsWith("w:") ? "i-vocab" : "i-gram");
+/** Sentence listening (PRD §7.6): the sentence is heard, and its text and translation come only with the answer. */
+const isDrill = (ex: Ex) => exerciseDef(ex.code).family === "drill";
+
+const iconOf = (ex: Ex): IconName => (isDrill(ex) ? "i-listen" : ex.item.startsWith("w:") ? "i-vocab" : "i-gram");
 const lat = (text: string, language: string) => (
   <span className="lat" lang={language} dir="ltr">
     {text}
@@ -61,12 +66,14 @@ function Prompt({
   language,
   muted,
   tip,
+  verdict,
   fills,
   onTap,
   onBlank,
-}: Pick<ExerciseProps, "id" | "ex" | "language" | "muted" | "tip" | "onTap"> & { fills?: Fill[]; onBlank?: (i: number) => void }) {
+}: Pick<ExerciseProps, "id" | "ex" | "language" | "muted" | "tip" | "verdict" | "onTap"> & { fills?: Fill[]; onBlank?: (i: number) => void }) {
   const { q } = ex;
-  const translation = q.sentence?.translation ?? q.translation ?? null;
+  const hidden = isDrill(ex) && !verdict;
+  const translation = hidden ? null : (q.sentence?.translation ?? q.translation ?? null);
   return (
     <>
       {ex.listen ? (
@@ -113,7 +120,7 @@ function Prompt({
         </p>
       ) : null}
       {q.promptFa ? <p className="prompt-fa md">{q.promptFa}</p> : null}
-      {q.sentence ? <SentenceLine view={q.sentence} fills={fills} language={language} small={q.sentence.text.length > 48} onTap={onTap} onBlank={onBlank} /> : null}
+      {q.sentence && !hidden ? <SentenceLine view={q.sentence} fills={fills} language={language} small={q.sentence.text.length > 48} onTap={onTap} onBlank={onBlank} /> : null}
       {translation ? <p className="tr">{translation}</p> : null}
       {q.hint ? <p className="prompt-sub">{t("learn.session.hint", { hint: q.hint })}</p> : null}
     </>
@@ -908,6 +915,80 @@ function TableEx(props: ExerciseProps & { spec: Extract<AnswerSpec, { kind: "tab
   );
 }
 
+// ───────────────────────────── dictation (L3) ─────────────────────────────
+
+/** The heard sentence written down (PRD §7.3, §7.6); after the answer each word is marked right or missed. */
+function DictationEx(props: ExerciseProps & { spec: Extract<AnswerSpec, { kind: "dictation" }> }) {
+  const { ex, spec, verdict, submit, language } = props;
+  const typing = useTyping(language, !!verdict);
+  const { value, setValue, field, touch } = typing;
+  const persian = usePersianNote();
+  useEffect(() => {
+    if (!touch) field.current?.focus({ preventScroll: true });
+  }, [touch, field]);
+  useEffect(() => {
+    if (verdict && !good(verdict)) shake(field.current);
+  }, [verdict, field]);
+  const marks = useMemo(() => (verdict ? scoreDictation(value, spec.words, language).marks : null), [verdict, value, spec.words, language]);
+  const ready = value.trim().length > 0;
+  const check = () => ready && !verdict && persian.heard(submit({ text: value }));
+  return (
+    <>
+      <Ask ex={ex} languageName={props.languageName} />
+      <Prompt {...props} />
+      {marks ? (
+        <p className="dictation lat" lang={language} dir="ltr" aria-label={t("learn.session.dictationMarks")}>
+          {spec.words.map((word, index) => (
+            <span key={index} className={cn(marks[index] === true && "ok", marks[index] === false && "bad")}>
+              {word.text}
+            </span>
+          ))}
+        </p>
+      ) : null}
+      <div className="ex-grow" />
+      <div className={cn("cta", touch && "with-kb")}>
+        <textarea
+          ref={field}
+          className={cn("answer-field lat", verdict && (good(verdict) ? "ok" : "bad"))}
+          lang={language}
+          dir="ltr"
+          rows={2}
+          value={value}
+          readOnly={!!verdict}
+          inputMode={touch ? "none" : "text"}
+          autoComplete="off"
+          autoCorrect="off"
+          autoCapitalize="off"
+          spellCheck={false}
+          enterKeyHint="done"
+          aria-label={t(`learn.ask.${ex.code}` as MessageKey, { language: props.languageName })}
+          placeholder={t("learn.session.typeHere")}
+          onChange={(event) => {
+            setValue(event.target.value);
+            persian.clear();
+          }}
+          onKeyDown={(event) => {
+            if (event.key === "Enter" && !event.shiftKey) {
+              event.preventDefault();
+              check();
+            }
+          }}
+        />
+        <Note text={persian.note} />
+        {verdict ? null : (
+          <div className="row">
+            <button type="button" className="ghost" onClick={() => submit({ idk: true })}>
+              {t("learn.session.idk")}
+            </button>
+            <Check disabled={!ready} onClick={check} />
+          </div>
+        )}
+        {verdict ? null : typing.keyboard}
+      </div>
+    </>
+  );
+}
+
 export function Exercise(props: ExerciseProps) {
   const spec = props.ex.a;
   switch (spec.kind) {
@@ -929,37 +1010,47 @@ export function Exercise(props: ExerciseProps) {
       return <SortEx {...props} spec={spec} />;
     case "table":
       return <TableEx {...props} spec={spec} />;
+    case "dictation":
+      return <DictationEx {...props} spec={spec} />;
   }
 }
 
 /** The right answer as text, for the feedback sheet. */
-export function rightAnswer(ex: Ex): string | null {
+/** The right answer for the feedback sheet; a Persian one (W1a, W3c, L1) is set right to left. */
+export function rightAnswer(ex: Ex): { text: string; fa: boolean } | null {
   const spec = ex.a;
+  const target = (text: string | null | undefined) => (text ? { text, fa: false } : null);
   switch (spec.kind) {
-    case "choice":
-      return spec.options.find((option) => option.id === spec.correct)?.text ?? null;
+    case "choice": {
+      const option = spec.options.find((item) => item.id === spec.correct);
+      return option ? { text: option.text, fa: option.lang === "fa" } : null;
+    }
     case "choice2":
-      return ex.q.sentence?.text ?? spec.correct.map((id, i) => spec.groups[i].find((option) => option.id === id)?.text).join(" … ");
+      return target(ex.q.sentence?.text ?? spec.correct.map((id, i) => spec.groups[i].find((option) => option.id === id)?.text).join(" … "));
     case "spot":
-      return ex.q.sentence?.text ?? null;
+      return target(ex.q.sentence?.text);
     case "type":
-      return spec.gender ? `${spec.gender.correct} ${spec.accepted[0]}` : spec.accepted[0];
+      return target(spec.gender ? `${spec.gender.correct} ${spec.accepted[0]}` : spec.accepted[0]);
     case "letters":
-      return spec.word;
+      return target(spec.word);
     case "tiles":
-      return spec.orders[0].join(ex.code === "W4a" ? "" : " ");
+      return target(spec.orders[0].join(ex.code === "W4a" ? "" : " "));
     case "pairs": {
       const left = spec.left.find((choice) => choice.id === spec.target);
       const right = spec.right.find((choice) => choice.id === spec.pairs[spec.target]);
-      return left && right ? `${left.text} = ${right.text}` : null;
+      return left && right ? target(`${left.text} = ${right.text}`) : null;
     }
     case "sort":
       return null;
     case "table":
-      return spec.rows
-        .filter((row) => row.accepted)
-        .map((row) => `${row.pronoun} ${row.accepted![0]}`)
-        .join("، ");
+      return target(
+        spec.rows
+          .filter((row) => row.accepted)
+          .map((row) => `${row.pronoun} ${row.accepted![0]}`)
+          .join("، "),
+      );
+    case "dictation":
+      return target(ex.q.sentence?.text);
   }
 }
 

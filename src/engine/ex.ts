@@ -1,4 +1,5 @@
 import type { Gender, Pos, Speak, WordC } from "./content";
+import type { DictWord } from "./dictation";
 
 /**
  * One exercise, fully built by the server when the session is made (PRD §10.7, "بسته جلسه"): what
@@ -100,7 +101,9 @@ export type AnswerSpec =
   /** G3a: each item belongs to one category. */
   | { kind: "sort"; items: { id: string; text: string; set: number }[] }
   /** C2 (fill from a bank) and C4 (type every row): null accepted means the row is given. */
-  | { kind: "table"; rows: { pronoun: string; accepted: string[] | null }[]; bank: string[] | null };
+  | { kind: "table"; rows: { pronoun: string; accepted: string[] | null }[]; bank: string[] | null }
+  /** L3 and Q-dict: the heard sentence written down, scored word by word (PRD §7.3). */
+  | { kind: "dictation"; words: DictWord[] };
 
 export type Ex = {
   id: string;

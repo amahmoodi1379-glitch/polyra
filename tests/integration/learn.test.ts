@@ -5,7 +5,7 @@ import { hasCard } from "@/engine/content";
 import type { RawAnswer } from "@/engine/ex";
 import { emptyCard, rateCard, withDue } from "@/engine/fsrs";
 import { playCard, shownEx } from "@/engine/session/play";
-import type { Card } from "@/engine/session/types";
+import type { Card, Scope } from "@/engine/session/types";
 import type { ItemStateE, ItemType } from "@/engine/state";
 import { plusDays, tehranDate } from "@/engine/time";
 import { demoStatus, loadDemo, removeDemo } from "@/server/content/demo";
@@ -44,7 +44,7 @@ async function enrolled(extra: { is_tester?: boolean; is_admin?: boolean } = { i
   return user;
 }
 
-async function started(user: Person, now = NOW, scope: "mixed" | "vocab" | "grammar" = "mixed"): Promise<Bundle> {
+async function started(user: Person, now = NOW, scope: Scope = "mixed"): Promise<Bundle> {
   const result = await startSession(user, { language: "fr", scope, noAudio: false, cap: null }, now);
   if (result.kind !== "session") throw new Error(`Expected a session, got ${result.kind}`);
   return result.bundle;
@@ -107,6 +107,7 @@ const LEARNER_TABLES = [
   "new_word_queue",
   "daily_counter",
   "confusion_pair",
+  "sentence_drill_state",
   "skill_level",
   "enrollment",
   "trial_ledger",
@@ -435,6 +436,51 @@ describe("a touched word (PRD §5.9)", () => {
     expect(await testDb.itemState.findFirstOrThrow({ where: { user_id: user.id, item_type: "word", item_id: fresh } })).toMatchObject({ source: "tap" });
     expect(await testDb.newWordQueue.count({ where: { user_id: user.id } })).toBe(0);
     expect(await testDb.dailyCounter.findFirstOrThrow({ where: { user_id: user.id } })).toMatchObject({ queue_words: 1 });
+  });
+});
+
+describe("sentence listening (PRD §7.6)", () => {
+  it("opens the listening button, and each showing counts once, right or wrong", async () => {
+    const user = await enrolled();
+    const closed = await homeData(user, "fr", NOW);
+    expect(closed!.skills.find((tile) => tile.skill === "listening")!.lock).toEqual({ kind: "words", need: 30, left: 30 });
+    expect((await startSession(user, { language: "fr", scope: "listening", noAudio: false, cap: null }, NOW)).kind).toBe("nothing_left");
+
+    const words = await testDb.word.findMany({ where: { language: "fr", no_card: false }, select: { id: true } });
+    for (const { id } of words) await learned(user.id, "word", id, { dueInDays: 5 });
+    const home = await homeData(user, "fr", NOW);
+    const tile = home!.skills.find((item) => item.skill === "listening")!;
+    expect(tile.lock).toBeNull();
+
+    const bundle = await started(user, NOW, "listening");
+    expect(bundle.plan.queue.length).toBeGreaterThan(0);
+    expect(bundle.plan.queue.every((card) => card.t === "drill" && card.ex?.code === "L1")).toBe(true);
+    const card = bundle.plan.queue[0];
+    const at = new Date(NOW.getTime() + 5000);
+    const { raw } = answerFor(bundle, bundle.plan, card, at, { idk: true });
+    const body = request(bundle, bundle.nextSeq, card, raw, at);
+    expect(await submitAnswer(user, body, at)).toMatchObject({ kind: "ok" });
+    expect(await submitAnswer(user, body, new Date(at.getTime() + 1000))).toEqual({ kind: "duplicate" });
+    const sentenceId = card.ex!.sentenceId!;
+    expect(await testDb.sentenceDrillState.findMany({ where: { user_id: user.id }, select: { sentence_id: true, count: true } })).toEqual([{ sentence_id: sentenceId, count: 1 }]);
+    expect(await testDb.reviewLog.findUniqueOrThrow({ where: { id: body.answerId } })).toMatchObject({
+      kind: "drill",
+      item_type: null,
+      item_id: null,
+      exercise_code: "L1",
+      sentence_id: sentenceId,
+      result: "idk",
+      fsrs_rating: null,
+    });
+    // No item moved and nothing went to the notebook.
+    expect(await testDb.notebookEntry.count({ where: { user_id: user.id } })).toBe(0);
+    expect(await testDb.itemState.count({ where: { user_id: user.id, step: { not: 2 } } })).toBe(0);
+
+    // The snapshot carries it: the sentence waits three days, then comes as L2.
+    const settings = await engineSettings();
+    const later = plusDays(NOW, 4);
+    const snapshot = await loadLearner(testDb, user.id, "fr", "A1", later, tehranDate(later), settings);
+    expect(snapshot!.drills).toEqual([{ sentenceId, count: 1, lastAt: at.toISOString() }]);
   });
 });
 

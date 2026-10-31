@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { SCOPES } from "@/engine/session";
 import { getCurrentUser } from "@/server/auth/session";
 import { isLanguage } from "@/server/content/languages";
 import { startSession } from "@/server/learn/session";
@@ -7,7 +8,7 @@ export const dynamic = "force-dynamic";
 
 const schema = z.object({
   language: z.string().refine(isLanguage),
-  scope: z.enum(["mixed", "quick", "vocab", "grammar", "notebook", "extra"]),
+  scope: z.enum(SCOPES),
   noAudio: z.boolean().default(false),
   cap: z.enum(["more", "none"]).nullable().default(null),
 });

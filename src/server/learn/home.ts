@@ -1,8 +1,11 @@
 import { hasCard, levelIndex } from "@/engine/content";
+import { drillCounts, drillGate } from "@/engine/drill";
 import { grammarLevel, grammarProgress, indexItems, overallLevel, vocabProgress } from "@/engine/levels";
 import { openEntries } from "@/engine/notebook";
+import { seeded } from "@/engine/random";
 import { activeCards, isDue, noteCard } from "@/engine/session/build";
 import { introducedCardWords } from "@/engine/session/newmaterial";
+import { makeEnv } from "@/engine/session/views";
 import { num } from "@/engine/settings";
 import type { SkillName } from "@/engine/state";
 import { catchUp, doneToday } from "@/engine/streak";
@@ -22,8 +25,8 @@ export type SkillTile = {
   skill: SkillName;
   level: string;
   progress: number;
-  /** Why it is grey (PRD §10.3): words still needed, or a later version of the app. */
-  lock: { kind: "words"; need: number; left: number } | { kind: "later" } | null;
+  /** Why it is grey (PRD §10.3): words still needed, no sentence to hear yet, or a later version of the app. */
+  lock: { kind: "words"; need: number; left: number } | { kind: "more" } | { kind: "later" } | null;
   station: number;
   stations: number;
   introduced: number;
@@ -88,6 +91,10 @@ export async function homeData(user: Learner, language: LanguageCode, now = new 
   const grammarOpen = !fromStart || introduced >= gate;
   const gLevel = grammarLevel(content, items);
   const grammar = grammarProgress(content, items, gLevel, settings);
+  // Sentence listening (PRD §7.6): open after its word gate while a suitable sentence makes an exercise.
+  const drillWait = drillGate(fromStart, introduced, settings);
+  const drills = drillCounts(makeEnv(content, learner, settings, seeded("home", user.id)), learner.drills, now);
+  const listening = learner.skills.find((skill) => skill.skill === "listening")!;
 
   const skills: SkillTile[] = [
     {
@@ -112,10 +119,21 @@ export async function homeData(user: Learner, language: LanguageCode, now = new 
       stable: grammar.stable,
       due: dueOf("grammar_unit") + dueOf("conjugation"),
     },
-    // Listening and reading come with texts in the next phase.
-    ...(["listening", "reading"] as const).map(
-      (skill): SkillTile => ({ skill, level: content.levels[0], progress: 0, lock: { kind: "later" }, station: 0, stations: 0, introduced: 0, stable: 0, due: 0 }),
-    ),
+    {
+      skill: "listening",
+      level: listening.level,
+      // The bar counts texts (PRD §9.6); sentence listening alone leaves it empty.
+      progress: 0,
+      lock: drillWait ? { kind: "words", ...drillWait } : drills.playable ? null : { kind: "more" },
+      station: 0,
+      stations: 0,
+      introduced: drills.heard,
+      stable: drills.done,
+      // Sentences have no due date (PRD §7.6); texts bring theirs.
+      due: 0,
+    },
+    // Reading comes with texts.
+    { skill: "reading", level: content.levels[0], progress: 0, lock: { kind: "later" }, station: 0, stations: 0, introduced: 0, stable: 0, due: 0 },
   ];
 
   const open = await openSession(user.id, language);

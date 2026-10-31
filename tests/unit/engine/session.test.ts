@@ -8,7 +8,7 @@ import { newItemState } from "@/engine/answer";
 import type { Ex } from "@/engine/ex";
 import { emptyCard, rateCard, retrievability, withDue } from "@/engine/fsrs";
 import { seeded } from "@/engine/random";
-import { activeCards, backlogThreshold, buildSession, nextSkill, noteCard, sessionCaps, type BuildOptions, type BuildResult } from "@/engine/session/build";
+import { activeCards, backlogThreshold, buildSession, drillStandIn, nextSkill, noteCard, sessionCaps, type BuildOptions, type BuildResult } from "@/engine/session/build";
 import { nextNewWords } from "@/engine/session/newmaterial";
 import { insertLater, mayFollow } from "@/engine/session/advance";
 import { playCard, shownEx, wantsAlt, type PlayEnv } from "@/engine/session/play";
@@ -246,6 +246,24 @@ describe("which new material (PRD §5.8, §10.2)", () => {
     // Ties go vocabulary, grammar, listening, reading; without vocabulary the first pack is the lowest.
     expect(nextSkill(new Set<SkillName>(["reading", "listening", "grammar"]), {}, {}, false)).toBe("grammar");
     expect(nextSkill(new Set<SkillName>(["reading", "listening"]), { listening: 0.2, reading: 0.1 }, {}, true)).toBe("reading");
+  });
+
+  it("sentence drills take their turn one pack after the weakest other skill (DECISIONS.md)", () => {
+    const others = new Set<SkillName>(["vocab", "grammar"]);
+    const progress: Partial<Record<SkillName, number>> = { vocab: 0.2, grammar: 0.25 };
+    progress.listening = drillStandIn(others, progress);
+    expect(progress.listening).toBeCloseTo(0.3);
+    const skills = new Set<SkillName>([...others, "listening"]);
+    const packs: Partial<Record<SkillName, number>> = {};
+    const order: string[] = [];
+    for (let first = true; order.length < 7; first = false) {
+      const skill = nextSkill(skills, progress, packs, first)!;
+      order.push(skill);
+      packs[skill] = (packs[skill] ?? 0) + 1;
+    }
+    expect(order).toEqual(["vocab", "grammar", "vocab", "listening", "grammar", "vocab", "listening"]);
+    // Only vocabulary open: two word packs, then drills every other turn.
+    expect(drillStandIn(new Set<SkillName>(["vocab"]), { vocab: 0 })).toBeCloseTo(0.1);
   });
 
   it("T51: words from the tap queue come first, at most 5 a day, and count in the daily cap", () => {
@@ -581,7 +599,9 @@ describe("other kinds of session (PRD §10.4, §10.8, §10.12)", () => {
   it("sound turned off in the middle: every card with sound has a version without, rounds too, and the version shown is graded", () => {
     const withUnit = [...items, learned("grammar_unit", 1, s, { step: 2, introDaysAgo: 4 })];
     const plan = planOf(buildSession(content, learner(15, { items: withUnit, notebook }), s, NOW, TODAY, opts({ lengthMin: 15 })));
-    const sound = plan.queue.filter((card) => card.ex?.audio);
+    // A sentence drill has none: it leaves the session instead (PRD §10.12).
+    for (const card of plan.queue) if (card.t === "drill") expect(card.alt).toBeUndefined();
+    const sound = plan.queue.filter((card) => card.ex?.audio && card.t !== "drill");
     expect(sound.length).toBeGreaterThan(0);
     for (const card of sound) {
       expect(card.alt, `${card.id} ${card.ex?.code}`).toBeTruthy();

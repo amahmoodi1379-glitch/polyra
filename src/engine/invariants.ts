@@ -6,7 +6,7 @@ import { mayFollow } from "./session/advance";
 import { shownEx, type PlayResult } from "./session/play";
 import type { Card, SessionPlan } from "./session/types";
 import { exerciseOn, flag, num, type Settings } from "./settings";
-import { itemKey, parseItemKey, type ItemStateE, type LearnerSnapshot } from "./state";
+import { isItemKey, itemKey, parseItemKey, type ItemStateE, type LearnerSnapshot } from "./state";
 
 /**
  * The rules that never break (PRD §16.3, «قانون‌های همیشگی»), checked on a learner and a session.
@@ -40,12 +40,13 @@ export function checkInvariants(input: InvariantInput): Violation[] {
   return out;
 }
 
-/** The content item a card belongs to; a notebook sentence of a unit (`t:`) belongs to its unit. */
+/** The content item a card belongs to; a notebook sentence of a unit (`t:`) belongs to its unit. A drilled sentence has none. */
 function cardRef(content: Content, card: Card): Pick<ItemStateE, "itemType" | "itemId"> | null {
   if (card.item.startsWith("t:")) {
     const target = content.targets.get(Number(card.item.slice(2)));
     return target ? { itemType: "grammar_unit", itemId: target.targetId } : null;
   }
+  if (!isItemKey(card.item)) return null;
   const { type, id } = parseItemKey(card.item);
   return { itemType: type, itemId: id };
 }
@@ -82,8 +83,10 @@ function checkBuild(input: InvariantInput, build: NonNullable<InvariantInput["bu
 
   plan.queue.forEach((card, index) => {
     // 8. Only visible content in open levels, never a frozen card.
+    // A drilled sentence is a bank sentence of the learner's content (PRD §7.6).
     const ref = cardRef(content, card);
-    if (!ref || !active(ref)) out.push({ rule: 8, detail: `${card.item} is not active content` });
+    const shownOk = card.t === "drill" ? !!content.sentences.get(card.ex?.sentenceId ?? -1)?.bank : !!ref && active(ref);
+    if (!shownOk) out.push({ rule: 8, detail: `${card.item} is not active content` });
     // 10. No exercise with sound in a session without sound.
     const shown = shownEx(plan, card);
     if (plan.noAudio && shown?.audio) out.push({ rule: 10, detail: `${card.item} ${shown.code} needs sound` });

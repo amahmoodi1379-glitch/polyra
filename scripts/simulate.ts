@@ -22,7 +22,7 @@ import { makeEnv } from "../src/engine/session";
 import { buildSession, type BuildOptions } from "../src/engine/session/build";
 import type { Card, Scope } from "../src/engine/session/types";
 import type { Settings } from "../src/engine/settings";
-import { parseItemKey, type LearnerSnapshot } from "../src/engine/state";
+import { isItemKey, parseItemKey, type LearnerSnapshot } from "../src/engine/state";
 import { plusDays, tehranDate, tehranDayStart } from "../src/engine/time";
 import { engineCatalog } from "../src/server/settings/engine-catalog";
 import { syntheticContent } from "../fixtures/synthetic";
@@ -155,7 +155,9 @@ function newWordsLeft(content: Content, learner: LearnerSnapshot): boolean {
  * fewer, and its one or two codes are not a fault of the choice.
  */
 function candidates(env: BuildEnv, content: Content, card: Card, ex: Ex): number {
-  const { type, id } = parseItemKey(card.item);
+  // A notebook sentence (`t:`) is an exercise of its unit.
+  if (!isItemKey(ex.item)) return 0;
+  const { type, id } = parseItemKey(ex.item);
   const step = exerciseDef(ex.code).step;
   const family = exerciseDef(ex.code).family;
   if (type === "word") {
@@ -255,7 +257,7 @@ function runLearner(pattern: Pattern, index: number, content: Content, settings:
           if (!pattern.start) {
             const shown = played.results.map((result) => result.ex).filter((ex) => !!ex);
             if (shown.some((ex) => ex.typed)) stats.firstSession.push(`learner ${index}: typed exercise`);
-            if (played.results.some((result) => !result.card.item.startsWith("w:"))) stats.firstSession.push(`learner ${index}: grammar`);
+            if (played.results.some((result) => !result.card.item.startsWith("w:"))) stats.firstSession.push(`learner ${index}: grammar or listening`);
           }
         }
         // The learner before this session, as the build saw it, for the codes each card could have had.
@@ -264,9 +266,10 @@ function runLearner(pattern: Pattern, index: number, content: Content, settings:
         played.results.forEach((result, at) => {
           const ex = result.ex;
           const seconds = played.latencies[at] / 1000;
-          const skill = result.card.item.startsWith("w:") ? "vocab" : "grammar";
+          const skill = result.card.t === "drill" ? "listening" : result.card.item.startsWith("w:") ? "vocab" : "grammar";
           stats.seconds[skill] = (stats.seconds[skill] ?? 0) + seconds;
-          if (ex && ex.code !== "G0") {
+          // A drill's code follows its count, not the choice (PRD §7.6).
+          if (ex && ex.code !== "G0" && result.card.t !== "drill") {
             const def = exerciseDef(ex.code);
             const slot = `${result.card.item}:${def.step}:${result.card.kind ?? result.card.t}`;
             let count = possible.get(slot);
@@ -429,7 +432,10 @@ function buildTime(settings: Settings): number {
   return median(times);
 }
 
-/** A small A1-only course that strong 30-minute learners finish (PRD §16.3, «اجرای فقط‌A1»). */
+/**
+ * A small A1-only course that strong 30-minute learners finish (PRD §16.3, «اجرای فقط‌A1»): once no
+ * word and no sentence to hear is left, coming back the same day after the session finds nothing.
+ */
 function a1OnlyRun(settings: Settings): { errors: string[]; nothingLeft: boolean } {
   const content = syntheticContent({ levels: ["A1"], words: 120, units: 4 });
   const errors: string[] = [];
@@ -439,13 +445,16 @@ function a1OnlyRun(settings: Settings): { errors: string[]; nothingLeft: boolean
     const rng = seeded(seed, "answers");
     const person = human({ content, settings, seed, ability: () => 0.95 });
     let learner = freshLearner("fr", { sessionLength: 30 });
-    for (let day = 0; day < 60; day++) {
+    for (let day = 0; day < 90; day++) {
       const now = plusDays(START, day);
+      const opts: BuildOptions = { scope: "mixed", lengthMin: 30, noAudio: false, cap: null, seed: `${seed}:${day}` };
       try {
-        let played = playSession(content, learner, settings, now, { scope: "mixed", lengthMin: 30, noAudio: false, cap: null, seed: `${seed}:${day}` }, person.policy, rng);
-        if (played.build.kind === "ask_word_cap") played = playSession(content, played.learner, settings, now, { scope: "mixed", lengthMin: 30, noAudio: false, cap: "more", seed: `${seed}:${day}` }, person.policy, rng);
+        let played = playSession(content, learner, settings, now, opts, person.policy, rng);
+        if (played.build.kind === "ask_word_cap") played = playSession(content, played.learner, settings, now, { ...opts, cap: "more" }, person.policy, rng);
         learner = played.learner;
-        if (played.build.kind === "nothing_left" && !newWordsLeft(content, learner)) nothingLeft = true;
+        const later = new Date(now.getTime() + 3 * 3_600_000);
+        const again = played.build.kind === "nothing_left" ? played.build : buildSession(content, learner, settings, later, tehranDate(later), { ...opts, seed: `${opts.seed}:again` });
+        if (again.kind === "nothing_left" && !newWordsLeft(content, learner)) nothingLeft = true;
       } catch (error) {
         errors.push(`A1-only learner ${index} day ${day}: ${(error as Error).message}`);
         break;

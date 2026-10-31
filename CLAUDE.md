@@ -99,6 +99,9 @@ Deploy: Runflare builds `main` (`docs/deploy-runflare.md`). Work on the session 
   word file import (check first, then import; `csvOrder` sets the lesson order from the file).
 - «کاربران» (`src/app/admin/users`): `src/server/accounts.ts` searches by phone, lists teachers and testers, sets
   `is_admin`/`is_tester` and adds accounts; its log rows (entity `user`) show in the change log under «کاربران».
+- Sentence listening (PRD §7.6): `src/engine/drill.ts` (suitable sentences, L1–L3, the gate and the home counts),
+  `src/engine/dictation.ts` (word-by-word dictation scoring for L3 and later Q-dict); plan items `l:<sentence id>`,
+  written to `sentence_drill_state` by `answer.ts`.
 - Learner sessions (PRD §10, §15.4): `src/engine/session` builds and plays a plan (`build.ts`, `play.ts`, `advance.ts`);
   the browser and the server run the same functions. `src/server/learn`: `content.ts` (what a learner or tester may
   see, cached 30s), `learner.ts` (the snapshot the engine needs), `session.ts` (start, resume, close, preview),

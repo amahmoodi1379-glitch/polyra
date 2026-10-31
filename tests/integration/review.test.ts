@@ -191,6 +191,8 @@ describe("the review queue and what it shows", () => {
     expect(used.screens[0]).toMatchObject({ kind: "sentence", sentence: { text: "pomme mûre." } });
     const exercises = used.screens.flatMap((screen) => (screen.kind === "exercise" ? [screen.ex] : []));
     expect(exercises.map((ex) => ex.code)).toEqual(expect.arrayContaining(["W6a", "W6b"]));
+    // Heard alone (PRD §7.6): with only two sentences there are no three other translations for L1.
+    expect(exercises.filter((ex) => ex.code.startsWith("L")).map((ex) => ex.code)).toEqual(["L2", "L3"]);
     // Every exercise of the sentence is about this sentence, not another one of the word.
     for (const ex of exercises) expect(ex.sentenceId).toBe(line.id);
 

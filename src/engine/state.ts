@@ -52,6 +52,9 @@ export type DailyE = {
 export type SkillName = "vocab" | "grammar" | "listening" | "reading";
 export type SkillLevelE = { skill: SkillName; level: string; knownBelow: string | null };
 
+/** A bank sentence's listening drill (PRD §7.6, `sentence_drill_state`). */
+export type DrillStateE = { sentenceId: number; count: number; lastAt: string | null };
+
 export type ConfusionE = { wordId: number; otherWordId: number; count: number; lastAt: string; cardShownAt: string | null };
 
 export type EnrollmentE = {
@@ -89,6 +92,8 @@ export type LearnerSnapshot = {
   queue: QueueE[];
   today: DailyE;
   confusions: ConfusionE[];
+  /** Sentences drilled before (PRD §7.6). */
+  drills: DrillStateE[];
   history: Map<string, ItemHistory>;
   /** How often the learner has seen each sentence in any exercise. */
   sentenceSeen: Map<number, number>;
@@ -104,8 +109,14 @@ export type LearnerSnapshot = {
 
 export const itemKey = (type: ItemType, id: number) => `${type === "word" ? "w" : type === "grammar_unit" ? "u" : "c"}:${id}`;
 
+const KEY_TYPES: Record<string, ItemType> = { w: "word", u: "grammar_unit", c: "conjugation" };
+
+/** A plan key of an item with a card (`w:`, `u:`, `c:`); other keys are a grammar target (`t:`) or a drilled sentence (`l:`). */
+export const isItemKey = (key: string) => key.split(":")[0] in KEY_TYPES;
+
 export function parseItemKey(key: string): { type: ItemType; id: number } {
   const [prefix, id] = key.split(":");
-  const type: ItemType = prefix === "w" ? "word" : prefix === "u" ? "grammar_unit" : "conjugation";
+  const type = KEY_TYPES[prefix];
+  if (!type) throw new Error(`${key} is not the key of an item with a card`);
   return { type, id: Number(id) };
 }

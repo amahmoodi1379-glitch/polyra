@@ -184,7 +184,7 @@ export async function loadLearner(
   if (!user || !enrollment) return null;
 
   // What the answer log says (PRD §5.7, §9.2, §9.3, §9.10).
-  const [counts, recent, seen, latency, pace, touched] = await Promise.all([
+  const [counts, recent, seen, latency, pace, touched, drills] = await Promise.all([
     client.$queryRaw<{ item_type: string; item_id: number; exercise_code: string; n: bigint }[]>`
       SELECT item_type, item_id, exercise_code, count(*) AS n FROM review_log
       WHERE user_id = ${userId} AND language = ${language} AND kind::text IN ('review', 'followup', 'practice') AND exercise_code IS NOT NULL AND item_id IS NOT NULL
@@ -218,6 +218,9 @@ export async function loadLearner(
       select: { item_type: true, item_id: true },
       distinct: ["item_type", "item_id"],
     }),
+    client.$queryRaw<{ sentence_id: number; count: number; last_at: Date | null }[]>`
+      SELECT d.sentence_id, d.count, d.last_at FROM sentence_drill_state d JOIN sentence s ON s.id = d.sentence_id
+      WHERE d.user_id = ${userId} AND s.language = ${language}`,
   ]);
 
   const history = new Map<string, ItemHistory>();
@@ -248,6 +251,7 @@ export async function loadLearner(
     queue: queue.map((row): QueueE => ({ wordId: row.word_id, source: row.source, addedAt: row.added_at.toISOString() })),
     today: dailyOf(daily, today),
     confusions: confusions.map(confusionOf),
+    drills: drills.map((row) => ({ sentenceId: row.sentence_id, count: row.count, lastAt: row.last_at?.toISOString() ?? null })),
     history,
     sentenceSeen: new Map(seen.map((row) => [row.sentence_id, Number(row.n)])),
     latency: Object.fromEntries(latency.map((row) => [row.exercise_code, { median: Number(row.median), count: Number(row.n) }])),

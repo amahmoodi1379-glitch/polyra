@@ -30,7 +30,7 @@ type Scope = "mixed" | "quick" | "vocab" | "grammar" | "extra";
 type Open = null | "level" | "streak" | "settings" | "lang" | SkillName;
 
 const skillIcon: Record<SkillName, IconName> = { vocab: "i-vocab", grammar: "i-gram", listening: "i-listen", reading: "i-read" };
-const playable = (tile: SkillTile) => !tile.lock && (tile.skill === "vocab" || tile.skill === "grammar");
+const playable = (tile: SkillTile) => !tile.lock && tile.skill !== "reading";
 const percent = (value: number) => ({ "--p": `${Math.round(Math.max(0, Math.min(1, value)) * 100)}%` }) as CSSProperties;
 const monogram = (code: string) => code.charAt(0).toUpperCase() + code.slice(1);
 const lat = (text: string) => <span className="lat">{text}</span>;
@@ -68,6 +68,7 @@ function startLine(data: HomeData): string {
 
 function lockText(tile: SkillTile) {
   if (tile.lock?.kind === "words") return t("learn.home.lockWords", { n: tile.lock.left });
+  if (tile.lock?.kind === "more") return t("learn.home.lockMore");
   return t("learn.home.lockLater");
 }
 
@@ -337,7 +338,8 @@ export function Home({ data, languageName, languages, account, lengths, freeze }
 
 function SkillDetails({ tile, locked, onPractice, onClose }: { tile: SkillTile; locked: boolean; onPractice: (scope: Scope) => void; onClose: () => void }) {
   const name = t(`learn.skill.${tile.skill}`);
-  const words = tile.skill === "vocab";
+  // Listening counts heard sentences until texts come (PRD §7.6).
+  const ledger = tile.skill === "vocab" ? "words" : tile.skill === "grammar" ? "units" : "sentences";
   return (
     <>
       <div className="ss-head">
@@ -346,7 +348,13 @@ function SkillDetails({ tile, locked, onPractice, onClose }: { tile: SkillTile; 
         <span className="lv lat">{tile.level}</span>
       </div>
       {tile.lock ? (
-        <p className="soon num">{tile.lock.kind === "words" ? t("learn.skillSheet.lockedWords", { need: tile.lock.need, left: tile.lock.left }) : t("learn.skillSheet.later")}</p>
+        <p className="soon num">
+          {tile.lock.kind === "words"
+            ? t("learn.skillSheet.lockedWords", { skill: name, need: tile.lock.need, left: tile.lock.left })
+            : tile.lock.kind === "more"
+              ? t("learn.skillSheet.lockedMore")
+              : t("learn.skillSheet.later")}
+        </p>
       ) : (
         <dl className="ledger num">
           {tile.stations > 0 ? (
@@ -356,17 +364,19 @@ function SkillDetails({ tile, locked, onPractice, onClose }: { tile: SkillTile; 
             </div>
           ) : null}
           <div>
-            <dt>{words ? t("learn.skillSheet.introducedWords") : t("learn.skillSheet.introducedUnits")}</dt>
+            <dt>{t(`learn.skillSheet.${ledger}.introduced`)}</dt>
             <dd>{formatNumber(tile.introduced)}</dd>
           </div>
           <div>
-            <dt>{words ? t("learn.skillSheet.stableWords") : t("learn.skillSheet.stableUnits")}</dt>
+            <dt>{t(`learn.skillSheet.${ledger}.stable`)}</dt>
             <dd>{formatNumber(tile.stable)}</dd>
           </div>
-          <div>
-            <dt>{t("learn.skillSheet.due")}</dt>
-            <dd>{formatNumber(tile.due)}</dd>
-          </div>
+          {ledger === "sentences" ? null : (
+            <div>
+              <dt>{t(`learn.skillSheet.${ledger}.due`)}</dt>
+              <dd>{formatNumber(tile.due)}</dd>
+            </div>
+          )}
         </dl>
       )}
       <div className="ss-foot">

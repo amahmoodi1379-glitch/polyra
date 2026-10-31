@@ -7,7 +7,8 @@ import { indexItems, levelsAfter } from "../../src/engine/levels";
 import { applyNotebook } from "../../src/engine/notebook";
 import { closeRounds, type PlayResult } from "../../src/engine/session/play";
 import type { SessionPlan } from "../../src/engine/session/types";
-import type { ItemHistory, LearnerSnapshot } from "../../src/engine/state";
+import { afterDrill } from "../../src/engine/drill";
+import { isItemKey, type ItemHistory, type LearnerSnapshot } from "../../src/engine/state";
 import type { Settings } from "../../src/engine/settings";
 
 export function freshLearner(language: string, opts: { sessionLength?: number; vocabLevel?: string; knownBelow?: string } = {}): LearnerSnapshot {
@@ -37,6 +38,7 @@ export function freshLearner(language: string, opts: { sessionLength?: number; v
     queue: [],
     today: { date: "", newWords: 0, wordsCapToday: null, capPromptShown: false, queueWords: 0, newUnits: 0, newConj: 0, activeSec: 0 },
     confusions: [],
+    drills: [],
     history: new Map(),
     sentenceSeen: new Map(),
     latency: {},
@@ -75,8 +77,8 @@ export function record(learner: LearnerSnapshot, result: Extract<PlayResult, { d
     }
     next.items = [...next.items.filter((item) => !(item.itemType === state.itemType && item.itemId === state.itemId)), state];
   };
-  // Today's items, as the server reads them from today's review log (every card but a notebook sentence).
-  if (!key.startsWith("t:") && !next.touchedToday.includes(key)) next.touchedToday = [...next.touchedToday, key];
+  // Today's items, as the server reads them from today's review log (cards of items, not a notebook sentence or a drill).
+  if (isItemKey(key) && !next.touchedToday.includes(key)) next.touchedToday = [...next.touchedToday, key];
   if (result.state) upsert(result.state);
   if (result.roundState) upsert(result.roundState);
   if (result.notebook.length) next.notebook = applyNotebook(next.notebook, result.notebook, now, today, settings);
@@ -84,15 +86,23 @@ export function record(learner: LearnerSnapshot, result: Extract<PlayResult, { d
     const pair = result.pair;
     next.confusions = [...next.confusions.filter((item) => !(item.wordId === pair.wordId && item.otherWordId === pair.otherWordId)), pair];
   }
+  if (result.drill !== null) {
+    const sentenceId = result.drill;
+    const before = next.drills.find((drill) => drill.sentenceId === sentenceId) ?? null;
+    next.drills = [...next.drills.filter((drill) => drill.sentenceId !== sentenceId), afterDrill(sentenceId, before, now)];
+  }
   const ex = result.ex;
-  if (ex && result.log.kind !== "intro") {
-    const history: ItemHistory = next.history.get(key) ?? { codeCounts: {}, lastCode: null, recentSentences: [] };
-    next.history.set(key, {
-      codeCounts: { ...history.codeCounts, [ex.code]: (history.codeCounts[ex.code] ?? 0) + 1 },
-      lastCode: ex.code,
-      recentSentences: ex.sentenceId ? [ex.sentenceId, ...history.recentSentences].slice(0, 15) : history.recentSentences,
-    });
-    if (ex.sentenceId) next.sentenceSeen.set(ex.sentenceId, (next.sentenceSeen.get(ex.sentenceId) ?? 0) + 1);
+  // Like the server's queries: every answer counts its sentence as seen; history and answer times are the items' own.
+  if (ex && result.log.kind !== "intro" && ex.sentenceId) next.sentenceSeen.set(ex.sentenceId, (next.sentenceSeen.get(ex.sentenceId) ?? 0) + 1);
+  if (ex && (result.log.kind === "review" || result.log.kind === "followup" || result.log.kind === "practice")) {
+    if (isItemKey(key)) {
+      const history: ItemHistory = next.history.get(key) ?? { codeCounts: {}, lastCode: null, recentSentences: [] };
+      next.history.set(key, {
+        codeCounts: { ...history.codeCounts, [ex.code]: (history.codeCounts[ex.code] ?? 0) + 1 },
+        lastCode: ex.code,
+        recentSentences: ex.sentenceId ? [ex.sentenceId, ...history.recentSentences].slice(0, 15) : history.recentSentences,
+      });
+    }
     const known = next.latency[ex.code] ?? { median: latencyMs, count: 0 };
     next.latency[ex.code] = { median: (known.median * known.count + latencyMs) / (known.count + 1), count: known.count + 1 };
   }

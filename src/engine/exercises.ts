@@ -1,11 +1,11 @@
 /**
- * Every exercise code of the ladders (PRD §5.3, §5.4, §6.5, §6.6) and what the engine needs to know
+ * Every exercise code of the ladders (PRD §5.3, §5.4, §6.5, §6.6, §7.6) and what the engine needs to know
  * about it: its step, whether it tests meaning or only form (§5.3), whether the learner types,
  * whether it needs sound, and which `time.*` estimate it costs (§10.1).
  */
 
-export type ExerciseFamily = "word" | "colloquial" | "grammar" | "conjugation";
-export type TimeKey = "time.choice" | "time.type_word" | "time.type_sentence" | "time.arrange";
+export type ExerciseFamily = "word" | "colloquial" | "grammar" | "conjugation" | "drill";
+export type TimeKey = "time.choice" | "time.type_word" | "time.type_sentence" | "time.arrange" | "time.l1" | "time.l2" | "time.l3";
 
 export type ExerciseDef = {
   code: string;
@@ -75,6 +75,10 @@ export const exerciseDefs: ExerciseDef[] = [
   def("C2", "conjugation", 2, true, "time.arrange"),
   def("C3", "conjugation", 3, true, "time.type_word", { typed: true, recall: true }),
   def("C4", "conjugation", 4, true, "time.type_sentence", { typed: true, recall: true }),
+  // Sentence listening: the first, second and third time a sentence comes (PRD §7.6).
+  def("L1", "drill", 1, true, "time.l1", { audio: true }),
+  def("L2", "drill", 2, true, "time.l2", { audio: true }),
+  def("L3", "drill", 3, true, "time.l3", { typed: true, audio: true }),
 ];
 
 const byCode = new Map(exerciseDefs.map((item) => [item.code, item]));
@@ -139,6 +143,8 @@ export const SHAPE = {
   /** A pack of new material: up to three words, or up to three conjugation cards (§10.2). */
   packWords: 3,
   packConj: 3,
+  /** Listening's pack before texts: three sentence drills (§10.2). */
+  packDrills: 3,
   /** Pack choice: progress bar plus 0.1 for every pack the skill already got this session (§10.2). */
   packWeight: 0.1,
   /** Reshuffles before an arrangement that still reads in order is given up. */

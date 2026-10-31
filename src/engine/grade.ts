@@ -1,3 +1,4 @@
+import { scoreDictation } from "./dictation";
 import type { AnswerSpec, Ex, RawAnswer } from "./ex";
 import { parseItemKey } from "./state";
 import { cleanAnswer, hasPersianLetter, matchAny, matchText, oneLetterOff, stripArticle, words, type Lang, type TextMatch } from "./text";
@@ -109,7 +110,6 @@ export function grade(ex: Ex, answer: RawAnswer, ctx: GradeContext): GradeOutcom
   if ("idk" in answer) return graded("idk", "");
   const spec = ex.a;
   const isWord = ex.item.startsWith("w:");
-  const target = parseItemKey(ex.item).id;
 
   switch (spec.kind) {
     case "choice": {
@@ -117,7 +117,7 @@ export function grade(ex: Ex, answer: RawAnswer, ctx: GradeContext): GradeOutcom
       const option = spec.options.find((item) => item.id === answer.choice);
       const raw = option?.text ?? answer.choice;
       if (answer.choice === spec.correct) return graded("correct", raw);
-      const chosen = isWord && PAIR_CODES.has(ex.code) && option?.wordId && option.wordId !== target ? option.wordId : null;
+      const chosen = isWord && PAIR_CODES.has(ex.code) && option?.wordId && option.wordId !== parseItemKey(ex.item).id ? option.wordId : null;
       return graded("wrong", raw, null, chosen);
     }
     case "choice2": {
@@ -159,5 +159,10 @@ export function grade(ex: Ex, answer: RawAnswer, ctx: GradeContext): GradeOutcom
     case "table":
       if (!("rows" in answer)) return graded("wrong", "");
       return gradeTable(spec, answer.rows, ctx.language);
+    case "dictation": {
+      if (!("text" in answer)) return graded("wrong", "");
+      if (hasPersianLetter(answer.text)) return { result: "persian" };
+      return graded(scoreDictation(answer.text, spec.words, ctx.language).ok ? "correct" : "wrong", answer.text);
+    }
   }
 }

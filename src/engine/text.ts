@@ -109,3 +109,6 @@ export function oneLetterOff(a: string, b: string): boolean {
 
 /** Splits a cleaned multi-word answer into words. */
 export const words = (text: string) => text.split(" ").filter(Boolean);
+
+/** A piece with a letter or a digit: a word, not a dash or a sign standing alone. */
+export const hasWordChar = (piece: string) => /[\p{L}\p{N}]/u.test(piece);

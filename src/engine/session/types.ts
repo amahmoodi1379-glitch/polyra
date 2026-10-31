@@ -9,7 +9,8 @@ import type { ConfusionE, ItemStateE, NotebookRef } from "../state";
  * always agree on what comes next. Every card the learner finishes is one numbered event (`seq`).
  */
 
-export type Scope = "mixed" | "quick" | "vocab" | "grammar" | "notebook" | "extra";
+export const SCOPES = ["mixed", "quick", "vocab", "grammar", "listening", "notebook", "extra"] as const;
+export type Scope = (typeof SCOPES)[number];
 
 export type CardKind =
   /** Intro card of a new word (step 0), or the same card shown again. */
@@ -25,14 +26,16 @@ export type CardKind =
   /** A new conjugation card: the whole table with sound (PRD §6.6). */
   | "table"
   /** «این دو را قاطی می‌کنی» (PRD §9.9). */
-  | "confusion";
+  | "confusion"
+  /** A sentence heard alone (L1–L3, PRD §7.6); its item is `l:<sentence id>`. */
+  | "drill";
 
 export type PlayKind = "review" | "followup" | "practice";
 
 export type Card = {
   id: string;
   t: CardKind;
-  /** Item key (`w:12`, `u:3`, `c:5`); a confusion card names its first word. */
+  /** Item key (`w:12`, `u:3`, `c:5`, a notebook target `t:7`, a drilled sentence `l:9`); a confusion card names its first word. */
   item: string;
   kind?: PlayKind;
   ex?: Ex;
@@ -137,6 +140,6 @@ export type SessionPlan = {
   /** Answers of each round so far, by block. */
   rounds: Record<string, { item: string; step: number; last: number; answers: RoundAnswer[] }>;
   counters: Counters;
-  /** What the end screen and the start button show (PRD §3.2, §3.9). */
+  /** What the end screen and the start button show (PRD §3.2, §3.9); sentence drills count as reviews (DECISIONS.md). */
   summary: { reviews: number; newItems: number; newWords: number; newUnits: number; newConj: number };
 };

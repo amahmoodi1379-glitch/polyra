@@ -7,7 +7,7 @@ import { say } from "@/components/learn/speak";
 import type { Ex } from "@/engine/ex";
 import type { Graded } from "@/engine/grade";
 import type { Card, SessionPlan } from "@/engine/session";
-import { parseItemKey } from "@/engine/state";
+import { isItemKey, parseItemKey } from "@/engine/state";
 import { t, tRich } from "@/i18n";
 import { MiniPlay, WordText } from "./cards";
 import { rightAnswer } from "./exercise";
@@ -62,7 +62,7 @@ export function Feedback({
 
   const answer = verdict.result === "correct" ? null : rightAnswer(ex);
   // The exercise names its word or unit, also when the card serves a grammar sentence from the notebook.
-  const item = ex.item.startsWith("t:") ? null : parseItemKey(ex.item);
+  const item = isItemKey(ex.item) ? parseItemKey(ex.item) : null;
   const word = item?.type === "word" ? plan.words[item.id] : undefined;
   const lesson = item?.type === "grammar_unit" ? plan.lessons[item.id] : undefined;
   const missed = verdict.result === "wrong" || verdict.result === "idk";
@@ -91,9 +91,13 @@ export function Feedback({
         {answer ? (
           <p className="fb-answer">
             {verdict.result === "idk" ? t("learn.fb.idkAnswer") : t("learn.fb.answer")}{" "}
-            <span className="lat" lang={language} dir="ltr">
-              {answer}
-            </span>
+            {answer.fa ? (
+              <span className="fa">{answer.text}</span>
+            ) : (
+              <span className="lat" lang={language} dir="ltr">
+                {answer.text}
+              </span>
+            )}
           </p>
         ) : null}
         {why ? <p className="fb-why">{why}</p> : null}
@@ -117,7 +121,7 @@ export function Feedback({
             <Mixed text={lesson.ruleLine} />
           </p>
         ) : null}
-        {sentence?.translation && verdict.result !== "correct" ? <p className="fb-tr">{sentence.translation}</p> : null}
+        {sentence?.translation && verdict.result !== "correct" && sentence.translation !== answer?.text ? <p className="fb-tr">{sentence.translation}</p> : null}
         <button ref={next} type="button" className="primary jelly-press" onPointerDown={(event) => squish(event.currentTarget)} onClick={onContinue}>
           {t("learn.session.continue")}
         </button>

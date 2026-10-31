@@ -130,6 +130,14 @@ export async function submitAnswer(user: Learner, request: AnswerRequest, server
       await addDaily(tx, who, today, add);
       await applyNotebookOps(tx, who, result.notebook, at, today, ctx.settings);
       if (result.pair) await saveConfusion(tx, who, result.pair);
+      // One more showing of a drilled sentence, whatever the answer (PRD §7.6).
+      if (result.drill !== null) {
+        await tx.sentenceDrillState.upsert({
+          where: { user_id_sentence_id: { user_id: user.id, sentence_id: result.drill } },
+          create: { user_id: user.id, sentence_id: result.drill, count: 1, last_at: at },
+          update: { count: { increment: 1 }, last_at: at },
+        });
+      }
       if (card.t === "confusion" && card.pair) {
         const [a, b] = card.pair[0] < card.pair[1] ? card.pair : [card.pair[1], card.pair[0]];
         await tx.confusionPair.updateMany({ where: { user_id: user.id, word_id: a, other_word_id: b }, data: { card_shown_at: at } });

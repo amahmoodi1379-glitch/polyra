@@ -64,13 +64,15 @@ describe("checkTokens", () => {
     expect(result.rows[1].spans).toEqual([[3, 7]]);
   });
 
-  it("accepts names and digit numbers without codes", () => {
+  it("T69: accepts names and digit numbers without codes or candidates", () => {
     const result = checkTokens(
       "Marie habite à Paris depuis 3 ans.",
       [w("Marie", null, "name"), w("habite", "habiter"), w("à", "à"), w("Paris", null, "name"), w("depuis", "depuis"), w("3", null, "number"), w("ans", "an")],
       fr,
     );
     expect(result.ok).toBe(true);
+    if (!result.ok) return;
+    expect(result.rows.every((row) => row.candidate_reason === null)).toBe(true);
   });
 
   it("rejects a sentence when a word is missing from tokens", () => {

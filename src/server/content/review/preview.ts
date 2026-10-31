@@ -1,4 +1,5 @@
 import { buildColloquialEx, buildConjEx, buildG0, buildGrammarEx, buildWordEx, sentenceViewOf, type BuildEnv, type GrammarSource } from "@/engine/build";
+import { buildDrillEx, DRILL_CODES, drillReady } from "@/engine/drill";
 import { hasCard, isColloquial, levelIndex, type Content, type SentenceC, type TargetC, type UnitC, type WordC } from "@/engine/content";
 import type { Ex, SentenceView } from "@/engine/ex";
 import { exerciseDefs, type ExerciseFamily } from "@/engine/exercises";
@@ -100,6 +101,11 @@ export async function previewItem(slug: LibrarySlug, language: string, id: numbe
       const sentence = content.sentences.get(id);
       if (!sentence) return { state: "none", reason: "missing" };
       const screens: Screen[] = [{ kind: "sentence", sentence: sentenceViewOf(sentence, content, { translation: true }) }];
+      // A bank sentence as it is heard alone, each of its three showings that its text allows (PRD §7.6).
+      const heard = reviewEnv(content, settings, sentence.level, `${seed}:drill`);
+      DRILL_CODES.forEach((code, count) => {
+        if (drillReady(heard, sentence, { sentenceId: id, count, lastAt: null }, new Date()) === code) screens.push(...built([buildDrillEx(heard, sentence, code)]));
+      });
       for (const target of [...content.targets.values()].filter((item) => item.sentenceId === id)) {
         if (target.type === "word") {
           const word = content.words.get(target.targetId);

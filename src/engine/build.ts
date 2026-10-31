@@ -20,6 +20,7 @@ import { exerciseDef, PHRASE_EXCLUDED, RECOGNIZE_EXCLUDED, SHAPE } from "./exerc
 import { shuffle, type Rng } from "./random";
 import { exerciseOn, num, type Settings } from "./settings";
 import { itemKey, type ItemHistory } from "./state";
+import { hasWordChar } from "./text";
 
 /**
  * Builds one exercise from the content (PRD §5.3, §5.5, §5.7, §6.5, §6.6). Every builder returns
@@ -264,6 +265,32 @@ function choiceSet(env: BuildEnv, correct: Choice, wrong: Choice[]): { options: 
   return { options: shuffle(env.rng, [correct, ...wrong]), correct: correct.id };
 }
 
+/**
+ * The sentence's translation and three wrong ones (PRD §5.5, W3c; also L1, §7.6): bank sentences up to
+ * its level, a different translation at most 40% longer or shorter, none repeated. `ok` adds a rule.
+ */
+export function translationChoices(env: BuildEnv, sentence: SentenceC, ok: (other: SentenceC) => boolean = () => true): { options: Choice[]; correct: string } | null {
+  const { content } = env;
+  const length = sentence.translationFa.length;
+  const wrong = drawSome(
+    env.rng,
+    contentPool(content).bankUpTo[levelIndex(content, sentence.level)] ?? [],
+    SHAPE.wrongOptions,
+    (other, taken) =>
+      other.id !== sentence.id &&
+      other.translationFa !== sentence.translationFa &&
+      ok(other) &&
+      Math.abs(other.translationFa.length - length) <= SHAPE.translationLength * length &&
+      !taken.some((item) => item.translationFa === other.translationFa),
+  );
+  if (wrong.length < SHAPE.wrongOptions) return null;
+  return choiceSet(
+    env,
+    { id: `s${sentence.id}`, text: sentence.translationFa, lang: "fa" },
+    wrong.map((other) => ({ id: `s${other.id}`, text: other.translationFa, lang: "fa" as const })),
+  );
+}
+
 /** Every written form of the language, so a made-up misspelling is never a real word (PRD §5.5). */
 const formCache = new WeakMap<Content, Set<string>>();
 function realForms(content: Content): Set<string> {
@@ -360,7 +387,7 @@ function wordCodeAllowed(env: BuildEnv, word: WordC, code: string): boolean {
   return true;
 }
 
-function baseEx(env: BuildEnv, code: string, key: string, q: Question, a: AnswerSpec, extra: Partial<Ex> = {}): Ex {
+export function baseEx(env: BuildEnv, code: string, key: string, q: Question, a: AnswerSpec, extra: Partial<Ex> = {}): Ex {
   const info = exerciseDef(code);
   return {
     id: env.nextId(),
@@ -509,27 +536,10 @@ export function buildWordEx(env: BuildEnv, word: WordC, code: string): Ex | null
     case "W3c": {
       const sentence = allowedSentences(env, word, content.wordSentences.get(word.id) ?? [])[0];
       if (!sentence) return null;
-      const length = sentence.translationFa.length;
-      const ceiling = levelIndex(content, sentence.level);
-      const wrong = drawSome(
-        env.rng,
-        contentPool(content).bankUpTo[ceiling] ?? [],
-        SHAPE.wrongOptions,
-        (other, taken) =>
-          other.id !== sentence.id &&
-          other.translationFa !== sentence.translationFa &&
-          !other.tokens.some((token) => token.wordId === word.id) &&
-          Math.abs(other.translationFa.length - length) <= SHAPE.translationLength * length &&
-          !taken.some((item) => item.translationFa === other.translationFa),
-      );
-      if (wrong.length < SHAPE.wrongOptions) return null;
-      const { options, correct } = choiceSet(
-        env,
-        { id: `s${sentence.id}`, text: sentence.translationFa, lang: "fa" },
-        wrong.map((other) => ({ id: `s${other.id}`, text: other.translationFa, lang: "fa" as const })),
-      );
+      const set = translationChoices(env, sentence, (other) => !other.tokens.some((token) => token.wordId === word.id));
+      if (!set) return null;
       const q = { sentence: sentenceView(sentence, content, { translation: false }) };
-      return baseEx(env, code, key, q, { kind: "choice", options, correct }, { sentenceId: sentence.id, after });
+      return baseEx(env, code, key, q, { kind: "choice", ...set }, { sentenceId: sentence.id, after });
     }
     case "W3d": {
       const companions = drawSome(
@@ -687,14 +697,13 @@ export function tileWords(text: string): string[] {
     .replace(/[’]/g, "'")
     .split(/\s+/)
     .filter(Boolean)
-    .flatMap((word) => {
-      const parts = word.split(/(?<=')/);
-      return parts.filter(Boolean);
-    });
+    .flatMap((word) => word.split(/(?<=')/))
+    // A dash or a sign alone is not a word to place.
+    .filter(hasWordChar);
 }
 
 /** Tiles are lower case, except German nouns and names, so the first word's capital does not give it away. */
-function tileCase(sentence: SentenceC, content: Content): (tile: string) => string {
+export function tileCase(sentence: SentenceC, content: Content): (tile: string) => string {
   const keep = new Set<string>();
   for (const token of sentence.tokens) {
     const word = token.wordId !== null ? content.words.get(token.wordId) : undefined;

@@ -35,6 +35,8 @@ export function rightAnswer(ex: Ex): RawAnswer {
       return { firstSort: Object.fromEntries(spec.items.map((item) => [item.id, item.set])) };
     case "table":
       return { rows: spec.rows.map((row) => row.accepted?.[0] ?? "") };
+    case "dictation":
+      return { text: spec.words.map((word) => word.text).join(" ") };
   }
 }
 
@@ -65,6 +67,7 @@ export function slipAnswer(ex: Ex, rng: Rng): RawAnswer {
   if (spec.kind === "letters") return { letters: spec.hidden.map(() => "q") };
   if (spec.kind === "table") return { rows: spec.rows.map((row) => (row.accepted ? "qx" : "")) };
   if (spec.kind === "tiles") return { tiles: [...spec.orders[0]].reverse() };
+  if (spec.kind === "dictation") return { text: spec.words.slice(0, Math.ceil(spec.words.length / 2)).map((word) => word.text).join(" ") };
   return wrongAnswer(ex);
 }
 
