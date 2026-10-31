@@ -6,6 +6,7 @@ import { wordRecord, type WordRecord } from "@/schemas/words";
 import { db } from "@/server/db";
 import { spokenWord } from "@/lib/spoken";
 import { appSetting, engineNumber } from "@/server/settings/read";
+import { repeatedWord } from "../codes";
 import { lastIntroOrder, placeAfter } from "../intro-order";
 import { languageInfo, type LanguageCode } from "../languages";
 import { defaultMastery, PRODUCE_LEVELS } from "../mastery";
@@ -28,6 +29,7 @@ type Row = {
   code: string;
   lemma: string;
   pos: string;
+  gender: string | null;
   status: string;
   level: string;
   register: string;
@@ -143,6 +145,7 @@ export const words: ContentKind = {
         code: true,
         lemma: true,
         pos: true,
+        gender: true,
         status: true,
         level: true,
         register: true,
@@ -248,7 +251,7 @@ export const words: ContentKind = {
         target = holder;
       }
 
-      const sameLemma = rows.find((row) => row.id !== target?.id && fold(row.lemma) === fold(word.lemma));
+      const sameLemma = repeatedWord(rows.filter((row) => row.id !== target?.id), word);
       const isDuplicate = !target && !word.sense_of && fold(word.code) === fold(word.lemma) && Boolean(sameLemma);
       const rank = target?.frequency_rank ?? null;
       const mastery: Mastery = target?.mastery_manual ? target.mastery : defaultMastery(word, rank, produceRank, word.mastery ?? null);
@@ -345,6 +348,7 @@ const rowSelect = {
   code: true,
   lemma: true,
   pos: true,
+  gender: true,
   status: true,
   level: true,
   register: true,

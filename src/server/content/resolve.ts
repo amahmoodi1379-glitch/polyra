@@ -178,7 +178,7 @@ async function confirmForm(tx: Tx, wordId: number, surface: string, lemma: strin
 }
 
 /** The decisions «حل کردن» logs (PRD §13.1), each with the word or text it was about. */
-type Decision = "candidate_add" | "candidate_word" | "candidate_name" | "suspect_confirm" | "suspect_word" | "new_sense" | "duplicate";
+type Decision = "candidate_add" | "candidate_word" | "candidate_name" | "suspect_confirm" | "suspect_word" | "new_sense" | "different_word" | "duplicate";
 
 /** One log row per decision: on the word it settled on, or on the first sentence for a name. */
 async function logDecision(tx: Tx, adminId: number | null, decision: Decision, rows: OpenRow[], target: { entity: "word" | "sentence"; id: number }, extra: Record<string, unknown> = {}) {
@@ -286,19 +286,28 @@ export async function resolveSuspect(language: string, key: string, action: Susp
   });
 }
 
+/** «معنی دیگر», «کلمه دیگر» or «تکراری» for a word imported with a lemma that already exists. */
+export type DuplicateDecision = "sense" | "different" | "duplicate";
+
 /**
  * A word imported with a lemma that already exists (PRD §13.9). "New sense" gives it the code
- * lemma-2 and points sense_of at the existing word; "duplicate" retires it and moves anything that
+ * lemma-2 and points sense_of at the existing word; "different" keeps it as a word of its own (a
+ * homograph such as «la tour» next to «le tour»); "duplicate" retires it and moves anything that
  * already used it over to the existing word.
  */
-export async function resolveDuplicate(language: string, wordId: number, isNewSense: boolean, adminId: number | null = null): Promise<boolean> {
+export async function resolveDuplicate(language: string, wordId: number, decision: DuplicateDecision, adminId: number | null = null): Promise<boolean> {
   return db.$transaction(async (tx) => {
     const word = await tx.word.findFirst({ where: { id: wordId, language, dup_of_id: { not: null }, status: { not: "retired" } } });
     if (!word) return false;
     const existing = await tx.word.findUnique({ where: { id: word.dup_of_id! } });
     if (!existing) return false;
 
-    if (isNewSense) {
+    if (decision === "different") {
+      await tx.word.update({ where: { id: word.id }, data: { dup_of_id: null } });
+      await logDecision(tx, adminId, "different_word", [], { entity: "word", id: word.id }, { word: existing.lemma });
+      return true;
+    }
+    if (decision === "sense") {
       const taken = new Set((await tx.word.findMany({ where: { language }, select: { code: true } })).map((row) => row.code));
       const code = senseCode(existing.lemma, taken);
       await tx.word.update({

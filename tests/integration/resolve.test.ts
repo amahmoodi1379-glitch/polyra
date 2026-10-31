@@ -129,8 +129,15 @@ describe("duplicate words (PRD §13.9)", () => {
     expect(duplicates).toEqual([{ word: expect.objectContaining({ id: dup.id, meaning_fa: "آینه" }), existing: expect.objectContaining({ id: base.id, meaning_fa: "بستنی" }) }]);
     expect(await openCounts("fr", 7)).toEqual({ candidates: 0, suspects: 0, duplicates: 1 });
 
-    expect(await resolveDuplicate("fr", dup.id, true)).toBe(true);
+    expect(await resolveDuplicate("fr", dup.id, "sense")).toBe(true);
     expect(await testDb.word.findUniqueOrThrow({ where: { id: dup.id } })).toMatchObject({ code: "glace-2", sense_of: "glace-noun", dup_of_id: null });
+  });
+
+  it("keeps a homograph as a word of its own", async () => {
+    const { dup } = await pair();
+    expect(await resolveDuplicate("fr", dup.id, "different", 1)).toBe(true);
+    expect(await testDb.word.findUniqueOrThrow({ where: { id: dup.id } })).toMatchObject({ code: "glace", sense_of: null, dup_of_id: null, status: "draft" });
+    expect((await openItems("fr")).duplicates).toEqual([]);
   });
 
   it("retires a real duplicate and moves its sentences to the existing word", async () => {
@@ -139,7 +146,7 @@ describe("duplicate words (PRD §13.9)", () => {
     await testDb.sentenceTarget.create({
       data: { language: "fr", sentence_id: s.id, target_type: "word", target_id: dup.id, marked_text: "La {{glace}} fond.", accepted: ["glace"], distractors: ["a", "b", "c"] },
     });
-    expect(await resolveDuplicate("fr", dup.id, false, 1)).toBe(true);
+    expect(await resolveDuplicate("fr", dup.id, "duplicate", 1)).toBe(true);
     expect(await testDb.word.findUniqueOrThrow({ where: { id: dup.id } })).toMatchObject({ status: "retired", dup_of_id: null });
     // The decision is in the change log, on the retired word, with what moved.
     expect(await testDb.adminLog.findFirstOrThrow({ where: { action: "resolve" } })).toMatchObject({

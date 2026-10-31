@@ -11,7 +11,7 @@ import { Input } from "@/components/ui/input";
 import { formatNumber, t, tRich, type MessageKey } from "@/i18n";
 import { cn } from "@/lib/utils";
 import { posValues } from "@/schemas/common";
-import type { CandidateAction, CandidateGroup, DuplicatePair, OpenItems, SentenceRef, SuspectGroup, WordRef } from "@/server/content/resolve";
+import type { CandidateAction, CandidateGroup, DuplicateDecision, DuplicatePair, OpenItems, SentenceRef, SuspectGroup, WordRef } from "@/server/content/resolve";
 import { settleCandidate, settleDuplicate, settleSuspect, type ResolveOutcome } from "./actions";
 
 type Settle = (id: string, run: () => Promise<ResolveOutcome>) => void;
@@ -339,7 +339,7 @@ function SuspectItem({ group, language, settle }: { group: SuspectGroup; languag
 
 function DuplicateItem({ pair, language, settle }: { pair: DuplicatePair; language: string; settle: (run: () => Promise<ResolveOutcome>) => void }) {
   const lemma = <Lat language={language}>{pair.existing.lemma}</Lat>;
-  const decide = (isNewSense: boolean) => settle(() => settleDuplicate(language, pair.word.id, isNewSense));
+  const decide = (decision: DuplicateDecision) => settle(() => settleDuplicate(language, pair.word.id, decision));
   return (
     <>
       <Question>
@@ -352,14 +352,17 @@ function DuplicateItem({ pair, language, settle }: { pair: DuplicatePair; langua
         <WordLine label={t("admin.resolve.duplicates.new")} word={pair.word} language={language} fresh />
       </dl>
       <Actions>
-        <Button variant="secondary" onClick={() => decide(true)}>
-          {t("admin.resolve.duplicates.yes")}
+        <Button variant="secondary" onClick={() => decide("sense")}>
+          {t("admin.resolve.duplicates.sense")}
         </Button>
-        <Button variant="outline" onClick={() => decide(false)}>
-          {t("admin.resolve.duplicates.no")}
+        <Button variant="secondary" onClick={() => decide("different")}>
+          {t("admin.resolve.duplicates.different")}
+        </Button>
+        <Button variant="outline" onClick={() => decide("duplicate")}>
+          {t("admin.resolve.duplicates.duplicate")}
         </Button>
       </Actions>
-      <p className="text-ink-3 -mt-1.5 text-[13.5px] leading-6">{t("admin.resolve.duplicates.noHint")}</p>
+      <p className="text-ink-3 -mt-1.5 text-[13.5px] leading-6">{t("admin.resolve.duplicates.hint")}</p>
     </>
   );
 }

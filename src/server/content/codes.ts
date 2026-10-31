@@ -1,3 +1,5 @@
+import { fold } from "@/engine/tokens";
+
 /** Word codes are unique per language (PRD §4); these pick the first free one. */
 
 /** For a new word: the lemma, else lemma-pos, else lemma-pos-2 ... */
@@ -23,4 +25,21 @@ export function readCode(code: string, posValues: readonly string[]) {
   const match = /^(.+?)-([a-z]+)(?:-\d+)?$/.exec(code);
   if (match && posValues.includes(match[2])) return { lemma: match[1], pos: match[2] };
   return { lemma: code.replace(/-\d+$/, ""), pos: null };
+}
+
+type Named = { lemma: string; pos: string; gender?: string | null; status?: string };
+
+/**
+ * The word a new one would repeat (PRD §13.9 «تکراری»): same lemma, same part of speech and, for a
+ * noun, the same gender. «Essen» and «essen», «le tour» and «la tour» are two words; a retired word
+ * is not repeated.
+ */
+export function repeatedWord<T extends Named>(words: T[], word: Named): T | undefined {
+  return words.find(
+    (other) =>
+      other.status !== "retired" &&
+      fold(other.lemma) === fold(word.lemma) &&
+      other.pos === word.pos &&
+      (word.pos !== "noun" || !other.gender || !word.gender || other.gender === word.gender),
+  );
 }

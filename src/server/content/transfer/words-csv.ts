@@ -9,6 +9,7 @@ import { optionalText } from "@/schemas/common";
 import { wordRecord } from "@/schemas/words";
 import { db } from "@/server/db";
 import { appSetting, engineNumber } from "@/server/settings/read";
+import { repeatedWord } from "../codes";
 import { levelWords, numberLevel } from "../intro-order";
 import { checkWord } from "../kinds/words";
 import type { Tx } from "../kinds/types";
@@ -265,7 +266,7 @@ export async function importWordsCsv(input: { language: LanguageCode; text: stri
           report.updated++;
         } else report.unchanged++;
       } else {
-        const sameLemma = words.find((word) => fold(word.lemma) === fold(record.lemma));
+        const sameLemma = repeatedWord(words, record);
         const isDuplicate = fold(record.code) === fold(record.lemma) && Boolean(sameLemma);
         const created = await tx.word.create({
           data: { ...fields, language, status: "draft", dup_of_id: isDuplicate ? sameLemma!.id : null },

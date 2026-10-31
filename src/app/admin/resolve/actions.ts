@@ -9,6 +9,7 @@ import {
   resolveSuspect,
   searchVocabulary,
   type CandidateAction,
+  type DuplicateDecision,
   type SuspectAction,
   type WordRef,
 } from "@/server/content/resolve";
@@ -39,9 +40,9 @@ export async function settleSuspect(language: string, key: string, action: Suspe
   return run("resolve.suspect", (adminId) => resolveSuspect(language, key, action, adminId));
 }
 
-export async function settleDuplicate(language: string, wordId: number, isNewSense: boolean) {
+export async function settleDuplicate(language: string, wordId: number, decision: DuplicateDecision) {
   if (!isLanguage(language)) return "gone" as const;
-  return run("resolve.duplicate", (adminId) => resolveDuplicate(language, wordId, isNewSense, adminId));
+  return run("resolve.duplicate", (adminId) => resolveDuplicate(language, wordId, decision, adminId));
 }
 
 export async function findWords(language: string, query: string): Promise<WordRef[]> {

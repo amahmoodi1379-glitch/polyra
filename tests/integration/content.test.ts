@@ -388,6 +388,27 @@ describe("word records (P-W)", () => {
     });
   });
 
+  it("does not take a noun and a verb, or two genders, spelled alike for the same word", async () => {
+    await testDb.word.create({ data: { language: "de", code: "Essen", lemma: "Essen", pos: "noun", gender: "das", level: "A1", meaning_fa: "غذا" } });
+    await testDb.word.create({ data: { language: "de", code: "See", lemma: "See", pos: "noun", gender: "der", level: "A1", meaning_fa: "دریاچه" } });
+    await skeletons("de", [["Tür", "noun"]]);
+    const batch = await batchFor("words", "de");
+    const answer = {
+      words: [
+        wordRecord({ code: "Tür", lemma: "Tür", gender: "die", plural: "Türen", meaning_fa: "در", concept_fa: "در" }),
+        wordRecord({ code: "essen", lemma: "essen", pos: "verb", gender: null, plural: null, meaning_fa: "خوردن", concept_fa: "خوردن" }),
+        wordRecord({ code: "see", lemma: "See", gender: "die", plural: "Seen", meaning_fa: "دریا", concept_fa: "دریا" }),
+      ],
+      issues: [],
+    };
+    expect(await submitAnswer(batch.id, [json(answer)], "answer")).toEqual({ state: "imported", rejected: 0 });
+    const words = await testDb.word.findMany({ where: { code: { in: ["essen", "see"] } }, orderBy: { code: "asc" } });
+    expect(words.map((word) => [word.code, word.dup_of_id])).toEqual([
+      ["essen", null],
+      ["see", null],
+    ]);
+  });
+
   it("refuses to overwrite an approved word and marks a repeated lemma for the admin", async () => {
     await testDb.word.create({
       data: { language: "fr", code: "glace-1", lemma: "glace", pos: "noun", level: "A1", meaning_fa: "بستنی", status: "approved" },
