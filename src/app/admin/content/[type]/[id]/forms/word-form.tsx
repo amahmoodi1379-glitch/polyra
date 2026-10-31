@@ -4,6 +4,7 @@ import { useState } from "react";
 import { X } from "lucide-react";
 import { FindWord } from "@/components/admin/find-word";
 import { t, type MessageKey } from "@/i18n";
+import { isolateLatin } from "@/lib/bidi";
 import { posValues } from "@/schemas/common";
 import type { WordInfo } from "@/server/content/library/edit/shared";
 import type { WordContext } from "@/server/content/library/edit/words";
@@ -69,6 +70,7 @@ export function WordForm({ context, levels }: { context: WordContext; levels: st
 
       <Section title={t("admin.library.words.more")}>
         {pos === "phrase" ? <PartsField initial={context.parts} /> : null}
+        {context.senses.length > 0 || values.sense_of ? <SenseField context={context} /> : null}
         <PairListField name="collocations" max={3} />
         <ListField name="homophones" voice="target" />
         <TextField name="family" voice="target" nullable />
@@ -76,6 +78,20 @@ export function WordForm({ context, levels }: { context: WordContext; levels: st
       </Section>
     </>
   );
+}
+
+/**
+ * Which word this entry is a new sense of (PRD §5.1 `sense_of`): one of the words with the same
+ * lemma, or none. A base word no longer in the list stays shown so it can be cleared.
+ */
+function SenseField({ context }: { context: WordContext }) {
+  const [value] = useField<string | null>("sense_of");
+  const options: Option[] = context.senses.map((word) => ({
+    value: word.code,
+    label: isolateLatin(t("admin.library.words.senseChoice", { code: word.code, meaning: word.meaning_fa ?? "—", level: word.level })),
+  }));
+  if (value && !context.senses.some((word) => word.code === value)) options.push({ value, label: value, latin: true });
+  return <SelectField name="sense_of" options={options} nullable />;
 }
 
 /** The list words a phrase is made of, chosen by search (PRD §5.1 `parts`). */

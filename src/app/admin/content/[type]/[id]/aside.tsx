@@ -98,7 +98,6 @@ function relatedOf(slug: LibrarySlug, context: unknown): { lines: Line[]; groups
         lines: [
           { label: t("admin.library.words.code"), value: <bdi className="lat">{c.code}</bdi> },
           ...(c.frequencyRank ? [{ label: t("admin.library.words.frequency"), value: formatNumber(c.frequencyRank) }] : []),
-          ...(c.senseOf ? [{ label: t("admin.library.words.senseOf"), value: <bdi className="lat">{c.senseOf}</bdi> }] : []),
           { label: t("admin.library.words.targets"), value: t("admin.library.words.targetsOf", { count: formatNumber(c.targets), goal: formatNumber(c.goal) }) },
         ],
         groups: [
@@ -138,13 +137,7 @@ function relatedOf(slug: LibrarySlug, context: unknown): { lines: Line[]; groups
           { label: t("admin.library.units.counts.translations"), value: formatNumber(c.counts.translations) },
           { label: t("admin.library.units.counts.tables"), value: formatNumber(c.counts.tables) },
         ],
-        groups: [
-          {
-            title: t("admin.library.units.examples"),
-            items: c.examples.map((sentence) => ({ id: sentence.id, type: "sentences", text: sentence.text, voice: "target", sub: sentence.translation_fa })),
-            empty: t("admin.library.units.noExamples"),
-          },
-        ],
+        groups: [],
       };
     }
     case "transforms":

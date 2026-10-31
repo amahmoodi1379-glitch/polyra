@@ -1,6 +1,7 @@
 import { Prisma, type AdminLog, type ContentStatus, type QuestionType } from "@/generated/prisma/client";
 import { db } from "@/server/db";
 import type { Tx } from "../kinds/types";
+import { rearrangeLevel } from "../intro-order";
 import { levelOrder } from "../languages";
 import { isOrderList, orderEntity, orderState, writeOrder, type OrderList, type OrderState } from "../order";
 import { ENGINE_ENTITY, engineDef, revertEngineRow } from "@/server/settings/engine";
@@ -222,6 +223,10 @@ async function revertItem(tx: Tx, row: AdminLog, adminId: number): Promise<Rever
     await refreshSentenceLevels(tx, { wordIds: [id] });
     await refreshDifficulty(tx, { wordIds: [id] });
   }
+  if (row.entity === "word" && ("sense_of" in before || "parts" in before)) {
+    await rearrangeLevel(tx, item.language as string, ((before.level ?? item.level) as string));
+  }
+  if (row.entity === "text" && "level" in before) await refreshDifficulty(tx, { textIds: [id] });
 
   await logChange(tx, adminId, { action: "revert", entity: row.entity, entityId: id, before: after, after: before });
   return { state: "reverted", notes };

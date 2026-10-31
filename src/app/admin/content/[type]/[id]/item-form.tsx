@@ -40,7 +40,7 @@ export function ItemForm({
       case "sentences":
         return <SentenceForm context={c} />;
       case "units":
-        return <UnitForm levels={levels} />;
+        return <UnitForm context={c} levels={levels} />;
       case "tables":
         return <TableForm context={c} />;
       case "transforms":

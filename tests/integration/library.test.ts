@@ -5,6 +5,7 @@ import { batchReport, createBatch, submitAnswer } from "@/server/content/batches
 import { deleteItem } from "@/server/content/library/delete";
 import { tableEditor } from "@/server/content/library/edit/tables";
 import { textEditor } from "@/server/content/library/edit/texts";
+import { unitEditor } from "@/server/content/library/edit/units";
 import { wordEditor } from "@/server/content/library/edit/words";
 import { listLog } from "@/server/content/library/history";
 import { revertChange } from "@/server/content/library/revert";
@@ -241,6 +242,76 @@ describe("editing and «برگردان» (PRD §13.2)", () => {
     expect(await revertChange((await lastLog()).id, ADMIN)).toEqual({ state: "reverted", notes: [] });
     expect((await testDb.text.findUniqueOrThrow({ where: { id: text.id } })).suspended).toBe(false);
     expect((await testDb.audioAsset.findUniqueOrThrow({ where: { id: file.id } })).stale).toBe(false);
+  });
+});
+
+describe("fields the import fills and the form can change (PRD §5.1, §6, §7.1)", () => {
+  const errorPaths = (result: { state: string; errors?: { path: string }[] }) => (result.state === "invalid" ? result.errors!.map((error) => error.path) : result.state);
+
+  it("makes a word a new sense of one with the same lemma, after it in the order; refuses a loop or a lemma apart", async () => {
+    await word("bon", { intro_order: 1 });
+    const sense = await word("glace-2", { lemma: "glace", meaning_fa: "آینه", level: "A1", intro_order: 2 });
+    const base = await word("glace", { gender: "f", meaning_fa: "بستنی", intro_order: 3 });
+    const loaded = (await wordEditor.load(sense.id))!;
+    expect(loaded.context.senses).toEqual([{ code: "glace", meaning_fa: "بستنی", level: "A1" }]);
+    const values = { ...loaded.values, concept_fa: "آینه" };
+
+    expect(errorPaths(await wordEditor.save(sense.id, { ...values, sense_of: "bon" }, ADMIN))).toEqual(["sense_of"]);
+    expect((await wordEditor.save(sense.id, { ...values, sense_of: "glace" }, ADMIN)).state).toBe("saved");
+    const order = async () => (await testDb.word.findMany({ orderBy: { intro_order: "asc" }, select: { code: true } })).map((row) => row.code);
+    expect(await order()).toEqual(["bon", "glace", "glace-2"]);
+
+    // The base cannot become a sense of its own sense, nor take a lemma its sense does not have.
+    const baseValues = { ...(await wordEditor.load(base.id))!.values, concept_fa: "بستنی" };
+    expect(errorPaths(await wordEditor.save(base.id, { ...baseValues, sense_of: "glace-2" }, ADMIN))).toEqual(["sense_of"]);
+    expect(errorPaths(await wordEditor.save(base.id, { ...baseValues, lemma: "glacé" }, ADMIN))).toEqual(["lemma"]);
+
+    expect(await revertChange((await lastLog()).id, ADMIN)).toMatchObject({ state: "reverted" });
+    expect((await testDb.word.findUniqueOrThrow({ where: { id: sense.id } })).sense_of).toBeNull();
+  });
+
+  it("puts a unit's examples in order, takes one out and adds one of its own practice sentences only", async () => {
+    const unit = await testDb.grammarUnit.create({ data: { language: "fr", unit_code: "fr-a1-etre", title_fa: "فعل être", level: "A1" } });
+    const ids: number[] = [];
+    for (const text of ["Je suis là.", "Tu es là.", "Il est là.", "Nous sommes là.", "Vous êtes là.", "Ils sont là.", "Elles sont là."]) {
+      ids.push((await testDb.sentence.create({ data: { language: "fr", text, translation_fa: "این‌جا.", text_hash: text, level: "A1" } })).id);
+    }
+    const [s1, s2, s3, s4, s5, s6, other] = ids;
+    await testDb.grammarUnit.update({ where: { id: unit.id }, data: { example_sentence_ids: [s1, s2, s3] } });
+    for (const sentenceId of [s4, s5, s6]) {
+      await testDb.sentenceTarget.create({
+        data: { language: "fr", sentence_id: sentenceId, target_type: "grammar", target_id: unit.id, marked_text: "x", accepted: [], distractors: [] },
+      });
+    }
+    const loaded = (await unitEditor.load(unit.id))!;
+    expect(loaded.values.example_sentence_ids).toEqual([s1, s2, s3]);
+    expect(loaded.context.practice).toEqual([s4, s5, s6]);
+
+    expect((await unitEditor.save(unit.id, { ...loaded.values, example_sentence_ids: [s3, s1, s4] }, ADMIN)).state).toBe("saved");
+    expect((await testDb.grammarUnit.findUniqueOrThrow({ where: { id: unit.id } })).example_sentence_ids).toEqual([s3, s1, s4]);
+    // The sentence taken out stays in the bank, so «برگردان» can bring it back.
+    expect(await testDb.sentence.count({ where: { id: s2 } })).toBe(1);
+    expect(errorPaths(await unitEditor.save(unit.id, { ...loaded.values, example_sentence_ids: [s3, s1, other] }, ADMIN))).toEqual(["example_sentence_ids"]);
+    expect(errorPaths(await unitEditor.save(unit.id, { ...loaded.values, example_sentence_ids: [s3, s1, s4, s5, s6] }, ADMIN))).toEqual(["example_sentence_ids"]);
+
+    // A published unit keeps at least three.
+    await testDb.grammarUnit.update({ where: { id: unit.id }, data: { status: "published" } });
+    expect(errorPaths(await unitEditor.save(unit.id, { ...loaded.values, example_sentence_ids: [s3, s1] }, ADMIN))).toEqual(["example_sentence_ids"]);
+
+    await testDb.grammarUnit.update({ where: { id: unit.id }, data: { status: "draft" } });
+    expect(await revertChange((await lastLog()).id, ADMIN)).toMatchObject({ state: "reverted" });
+    expect((await testDb.grammarUnit.findUniqueOrThrow({ where: { id: unit.id } })).example_sentence_ids).toEqual([s1, s2, s3]);
+  });
+
+  it("moves a text to another level of its band only, and puts it back", async () => {
+    const text = await importedText();
+    const loaded = (await textEditor.load(text.id))!;
+    expect(loaded.context.levels).toEqual(["A1", "A2"]);
+    expect(errorPaths(await textEditor.save(text.id, { ...loaded.values, level: "B1" }, ADMIN))).toEqual(["level"]);
+    expect((await textEditor.save(text.id, { ...loaded.values, level: "A2" }, ADMIN)).state).toBe("saved");
+    expect(await testDb.text.findUniqueOrThrow({ where: { id: text.id } })).toMatchObject({ level: "A2", code: text.code, order_override: null });
+    expect(await revertChange((await lastLog()).id, ADMIN)).toMatchObject({ state: "reverted" });
+    expect((await testDb.text.findUniqueOrThrow({ where: { id: text.id } })).level).toBe("A1");
   });
 });
 

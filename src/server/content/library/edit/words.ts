@@ -1,11 +1,13 @@
 import { z } from "zod";
 import { CARD_REGISTERS, isCardRegister } from "@/engine/content";
+import { fold } from "@/engine/tokens";
 import { Prisma } from "@/generated/prisma/client";
 import { spokenWord } from "@/lib/spoken";
 import { filled, gender, grammaticalNumber, levelCode, mastery, optionalText, pos, register } from "@/schemas/common";
 import { db } from "@/server/db";
 import { engineNumber } from "@/server/settings/read";
 import { lastIntroOrder, rearrangeLevel } from "../../intro-order";
+import type { Tx } from "../../kinds/types";
 import { checkWord } from "../../kinds/words";
 import { languageInfo, type LanguageCode } from "../../languages";
 import { problem, type Problem } from "../../problems";
@@ -33,14 +35,17 @@ const schema = z.object({
   note_fa: optionalText,
   family: optionalText,
   parts: listOf,
+  sense_of: optionalText,
   collocations: z.array(z.object({ text: z.string(), translation_fa: z.string() })),
 });
 export type WordValues = z.output<typeof schema>;
 export type SentenceUse = { id: number; text: string; translation_fa: string };
+export type SenseChoice = { code: string; meaning_fa: string | null; level: string };
 export type WordContext = {
   code: string;
   genders: string[];
-  senseOf: string | null;
+  /** Other words with the same lemma: the ones this entry can be a new sense of (PRD §5.1). */
+  senses: SenseChoice[];
   frequencyRank: number | null;
   masterySuggested: string | null;
   masteryManual: boolean;
@@ -51,16 +56,55 @@ export type WordContext = {
   tables: { id: number; tense: string }[];
 };
 
+/** Words of the list with this lemma (compared as PRD §13.3's duplicate check does), other than `id`. */
+async function sameLemma(tx: Tx | typeof db, language: string, lemma: string, id: number) {
+  const rows = await tx.word.findMany({
+    where: { language, id: { not: id }, status: { not: "retired" }, lemma: { equals: lemma, mode: "insensitive" } },
+    select: { code: true, lemma: true, meaning_fa: true, level: true, sense_of: true },
+    orderBy: { id: "asc" },
+  });
+  return rows.filter((row) => fold(row.lemma) === fold(lemma));
+}
+
+/**
+ * What keeps a new-sense link sound (PRD §5.1, §13.3): the base word has the same lemma and is not
+ * itself, directly or along a chain, a new sense of this word; and a base word keeps the lemma of the
+ * senses that point at it.
+ */
+async function senseProblems(tx: Tx, row: { id: number; code: string; language: string }, values: { lemma: string; sense_of: string | null }) {
+  const problems: Problem[] = [];
+  const others = await sameLemma(tx, row.language, values.lemma, row.id);
+  const byCode = new Map(others.map((other) => [other.code, other]));
+  if (values.sense_of) {
+    const seen = new Set<string>();
+    let at = byCode.get(values.sense_of);
+    if (!at) problems.push(problem("senseOfUnknown", { code: values.sense_of, field: "sense_of" }));
+    while (at?.sense_of && !seen.has(at.code)) {
+      seen.add(at.code);
+      if (at.sense_of === row.code) {
+        problems.push(problem("senseOfLoop", { code: values.sense_of, field: "sense_of" }));
+        break;
+      }
+      at = byCode.get(at.sense_of);
+    }
+  }
+  const senses = await tx.word.findMany({ where: { language: row.language, sense_of: row.code, status: { not: "retired" } }, select: { code: true, lemma: true } });
+  const apart = senses.filter((sense) => fold(sense.lemma) !== fold(values.lemma));
+  if (apart.length > 0) problems.push(problem("senseLemmaApart", { codes: apart.map((sense) => sense.code).join("، "), field: "lemma" }));
+  return problems;
+}
+
 /**
  * A word or phrase (PRD §5.1, §13.7): meaning, gender and plural apply at once; a level change puts
- * the word at the end of its new level; turning «نوشتنی / شناختنی» by hand marks it «دستی» so the
- * rank-based default no longer changes it (PRD §13.4).
+ * the word at the end of its new level, and a new level, parts or base word put it back after the
+ * words it follows (PRD §5.8); turning «نوشتنی / شناختنی» by hand marks it «دستی» so the rank-based
+ * default no longer changes it (PRD §13.4).
  */
 export const wordEditor: Editor<WordValues, WordContext> = {
   async load(id) {
     const row = await db.word.findUnique({ where: { id }, include: { concept: true } });
     if (!row) return null;
-    const [targets, goal, uses, tables] = await Promise.all([
+    const [targets, goal, uses, tables, senses] = await Promise.all([
       db.sentenceTarget.count({ where: { target_type: "word", target_id: id, status: { not: "retired" } } }),
       engineNumber("publish.word_goal_targets"),
       db.sentenceWord.findMany({
@@ -71,6 +115,7 @@ export const wordEditor: Editor<WordValues, WordContext> = {
         orderBy: { sentence_id: "asc" },
       }),
       db.conjugationTable.findMany({ where: { word_id: id }, select: { id: true, tense: true }, orderBy: { id: "asc" } }),
+      sameLemma(db, row.language, row.lemma, id),
     ]);
     return {
       language: row.language,
@@ -91,12 +136,13 @@ export const wordEditor: Editor<WordValues, WordContext> = {
         note_fa: row.note_fa,
         family: row.family,
         parts: row.parts,
+        sense_of: row.sense_of,
         collocations: (row.collocations ?? []) as WordValues["collocations"],
       },
       context: {
         code: row.code,
         genders: [...languageInfo[row.language as LanguageCode].genders],
-        senseOf: row.sense_of,
+        senses: senses.map(({ code, meaning_fa, level }) => ({ code, meaning_fa, level })),
         frequencyRank: row.frequency_rank,
         masterySuggested: row.mastery_suggested,
         masteryManual: row.mastery_manual,
@@ -137,6 +183,7 @@ export const wordEditor: Editor<WordValues, WordContext> = {
       }
       // A word without meaning leaves the app, so a meaning can be changed but not cleared.
       if (row.meaning_fa && !values.meaning_fa) problems.push(problem("meaningCleared", { field: "meaning_fa" }));
+      if (values.sense_of !== row.sense_of || fold(values.lemma) !== fold(row.lemma)) problems.push(...(await senseProblems(tx, row, values)));
       if (values.meaning_fa && !values.concept_fa) problems.push(problem("missing", { field: "concept_fa" }));
       if (!isCardRegister(values.register) && values.concept_fa) {
         const standard = await tx.word.count({
@@ -172,6 +219,7 @@ export const wordEditor: Editor<WordValues, WordContext> = {
         note_fa: values.note_fa,
         family: values.family,
         parts: values.parts,
+        sense_of: values.sense_of,
         // An empty list keeps its stored form ([] from import, null from earlier edits), so it is no change.
         collocations: collocations.length > 0 ? collocations : Array.isArray(row.collocations) ? [] : null,
         intro_order: values.level !== row.level ? (await lastIntroOrder(tx, language, values.level)) + 1 : row.intro_order,
@@ -180,8 +228,8 @@ export const wordEditor: Editor<WordValues, WordContext> = {
         await tx.word.update({ where: { id }, data: { ...data, collocations: data.collocations ?? Prisma.DbNull } });
         // The audio says the word with its article (src/lib/spoken.ts); a new spoken form makes it stale.
         if (spokenWord({ ...row, ...data }) !== spokenWord(row)) await staleAudio(tx, [row.audio_id, row.human_audio_id]);
+        if (values.level !== row.level || values.sense_of !== row.sense_of || values.parts.join() !== row.parts.join()) await rearrangeLevel(tx, language, values.level);
         if (values.level !== row.level) {
-          await rearrangeLevel(tx, language, values.level);
           await refreshSentenceLevels(tx, { wordIds: [id] });
           await refreshDifficulty(tx, { wordIds: [id] });
         }

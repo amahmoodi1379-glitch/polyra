@@ -1,16 +1,18 @@
 "use client";
 
-import { Plus, X } from "lucide-react";
-import { t } from "@/i18n";
+import { useState } from "react";
+import Link from "next/link";
+import { PenLine, Plus, X } from "lucide-react";
+import { formatNumber, t } from "@/i18n";
 import { cn } from "@/lib/utils";
-import type { UnitValues } from "@/server/content/library/edit/units";
-import { AddButton, AreaBox, AreaField, Field, RowTools, Section, SegmentedField, TextBox, TextField, levelOptions, rowErrors, useField } from "../form-kit";
+import type { UnitContext, UnitValues } from "@/server/content/library/edit/units";
+import { AddButton, AreaBox, AreaField, Field, RowTools, Section, SegmentedField, TextBox, TextField, levelOptions, move, rowErrors, useField, useForm } from "../form-kit";
 
 const cellLook =
   "bg-surface border-line-2 text-ink h-10 w-full min-w-28 rounded-[10px] border px-2.5 text-[15px] outline-none transition-[border-color,box-shadow] focus-visible:border-brand-soft focus-visible:ring-[3px] focus-visible:ring-ring/30";
 
-/** A grammar unit (PRD §6): titles, the lesson, its build table and category sets. */
-export function UnitForm({ levels }: { levels: string[] }) {
+/** A grammar unit (PRD §6): titles, the lesson, its examples, build table and category sets. */
+export function UnitForm({ context, levels }: { context: UnitContext; levels: string[] }) {
   return (
     <>
       <Section>
@@ -24,6 +26,9 @@ export function UnitForm({ levels }: { levels: string[] }) {
         <TextField name="rule_line_fa" voice="fa" nullable />
         <AreaField name="common_mistake_fa" voice="fa" rows={2} nullable />
       </Section>
+      <Section title={t("admin.library.units.examples")} lead={t("admin.library.units.examplesLead")} columns={1}>
+        <Examples context={context} />
+      </Section>
       <Section title={t("admin.library.units.table")} lead={t("admin.library.units.tableLead")} columns={1}>
         <BuildTable />
       </Section>
@@ -31,6 +36,85 @@ export function UnitForm({ levels }: { levels: string[] }) {
         <CategorySets />
       </Section>
     </>
+  );
+}
+
+/** PRD §6: 3 to 4 examples, put in order, taken out or added from the unit's practice sentences. */
+const MAX_EXAMPLES = 4;
+
+function Examples({ context }: { context: UnitContext }) {
+  const { language } = useForm();
+  const [ids, setIds, errors] = useField<number[]>("example_sentence_ids");
+  const [adding, setAdding] = useState(false);
+  const list = ids ?? [];
+  const lines = new Map(context.sentences.map((sentence) => [sentence.id, sentence]));
+  const choices = context.practice.filter((id) => !list.includes(id));
+  const line = (id: number) => {
+    const sentence = lines.get(id);
+    return (
+      <span className="flex min-w-0 flex-1 flex-col">
+        <span dir="ltr" lang={language} className="lat text-ink self-start text-[17px] leading-snug">
+          {sentence?.text ?? formatNumber(id)}
+        </span>
+        {sentence ? <span className="text-ink-3 text-[13px] leading-6">{sentence.translation_fa}</span> : null}
+      </span>
+    );
+  };
+  return (
+    <Field name="example_sentence_ids" label="admin.library.units.examples" help={null} hideLabel errors={errors} wide>
+      {list.length > 0 ? (
+        <ol className="flex flex-col">
+          {list.map((id, index) => (
+            <li key={id} className="border-line flex items-start gap-3 border-b py-3 last:border-b-0">
+              <span className="text-ink-3 w-5 shrink-0 pt-1 text-center text-[12.5px] tabular-nums">{formatNumber(index + 1)}</span>
+              {line(id)}
+              <Link
+                href={`/admin/content/sentences/${id}`}
+                className="text-ink-3 hover:bg-tint hover:text-ink grid size-9 shrink-0 place-items-center rounded-[10px] transition-colors"
+              >
+                <PenLine className="size-4" strokeWidth={1.75} aria-hidden />
+                <span className="sr-only">{t("admin.library.units.openExample")}</span>
+              </Link>
+              <RowTools index={index} count={list.length} onMove={(from, to) => setIds(move(list, from, to))} onRemove={(at) => setIds(list.filter((_, k) => k !== at))} />
+            </li>
+          ))}
+        </ol>
+      ) : (
+        <p className="text-ink-3 text-[14px]">{t("admin.library.units.noExamples")}</p>
+      )}
+      {list.length >= MAX_EXAMPLES ? null : choices.length === 0 ? (
+        <p className="text-ink-3 text-[13px] leading-6">{t("admin.library.units.noPractice")}</p>
+      ) : adding ? (
+        <div className="border-line-2 flex flex-col rounded-[16px] border">
+          <div className="flex items-center justify-between gap-3 ps-4 pe-1.5 pt-1.5">
+            <span className="text-ink text-[13.5px] font-bold">{t("admin.library.units.pickExample")}</span>
+            <button type="button" onClick={() => setAdding(false)} className="text-ink-3 hover:bg-tint hover:text-ink grid size-9 place-items-center rounded-[10px]">
+              <X className="size-4" strokeWidth={2} aria-hidden />
+              <span className="sr-only">{t("admin.library.cancel")}</span>
+            </button>
+          </div>
+          <ul className="flex max-h-80 flex-col overflow-y-auto px-1.5 pb-1.5">
+            {choices.map((id) => (
+              <li key={id}>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setIds([...list, id]);
+                    setAdding(false);
+                  }}
+                  className="hover:bg-tint flex w-full items-start gap-3 rounded-[12px] px-2.5 py-2.5 text-start transition-colors"
+                >
+                  <Plus className="text-brand-text mt-1 size-4 shrink-0" strokeWidth={2} aria-hidden />
+                  {line(id)}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : (
+        <AddButton onClick={() => setAdding(true)} label={t("admin.library.units.addExample")} />
+      )}
+    </Field>
   );
 }
 

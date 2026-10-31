@@ -16,10 +16,12 @@ import {
   RowTools,
   Section,
   Segmented,
+  SegmentedField,
   SelectBox,
   TextBox,
   TextField,
   ToggleField,
+  levelOptions,
   move,
   useField,
   useForm,
@@ -36,6 +38,7 @@ export function TextForm({ context }: { context: TextContext }) {
     <>
       <Section>
         <TextField name="title" voice="target" wide />
+        {context.levels.length > 1 ? <SegmentedField name="level" options={levelOptions(context.levels)} /> : null}
         <ToggleField name="placement_ok" wide />
       </Section>
       <Section title={t("admin.library.texts.sentences")} lead={t("admin.library.texts.sentencesLead")} columns={1}>

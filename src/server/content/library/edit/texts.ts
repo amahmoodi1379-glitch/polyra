@@ -1,12 +1,13 @@
 import { z } from "zod";
 import { Prisma, type ContentStatus, type QuestionSet, type QuestionType, type Track as TrackName } from "@/generated/prisma/client";
-import { filled } from "@/schemas/common";
+import { filled, levelCode } from "@/schemas/common";
 import type { QuestionRecord } from "@/schemas/texts";
 import { db } from "@/server/db";
 import { appSetting } from "@/server/settings/read";
 import type { Tx } from "../../kinds/types";
 import { problem, type Problem } from "../../problems";
 import { plain, same } from "../log";
+import { overrideForNewText, refreshDifficulty } from "../../text-difficulty";
 import { allowedTypes, checkQuestionSets, questionRange, setNames, tracks, type SetName, type Track } from "../../text-check";
 import { errorsOf, logEdit, parseValues, wordInfo, type WordInfo } from "./shared";
 import { viewOf, type Editor } from "./types";
@@ -20,6 +21,7 @@ export type QuestionSets = Record<Track, Record<SetName, QuestionEdit[]>>;
 const questionList = z.array(z.looseObject({ id: z.number().int().nullable().optional(), type: z.string() }));
 const schema = z.object({
   title: filled,
+  level: levelCode,
   placement_ok: z.boolean(),
   key_words: z.array(z.string()).transform((list) => [...new Set(list.map((code) => code.trim()).filter(Boolean))]),
   speakers: z.array(z.string().nullable()).nullable(),
@@ -28,12 +30,14 @@ const schema = z.object({
     listening: z.object({ A: questionList, B: questionList }),
   }),
 });
-export type TextValues = { title: string; placement_ok: boolean; key_words: string[]; speakers: (string | null)[] | null; question_sets: QuestionSets };
+export type TextValues = { title: string; level: string; placement_ok: boolean; key_words: string[]; speakers: (string | null)[] | null; question_sets: QuestionSets };
 
 export type TextSentenceLine = { id: number; text: string; translation_fa: string; status: string; hasNumber: boolean; open: number };
 export type TextContext = {
   code: string;
   band: number;
+  /** The levels this text's band is written for (PRD §7.1: band 1 is A1 to A2). */
+  levels: string[];
   kind: string;
   kindName: string;
   hasSpeakers: boolean;
@@ -61,6 +65,12 @@ function questionSetsOf(rows: StoredQuestion[]): QuestionSets {
   return sets;
 }
 
+/** The levels of the language a band is made for (`prompt.text_level_bands`), in level order. */
+async function bandLevels(language: string, band: number) {
+  const [levels, bands] = await Promise.all([appSetting<string[]>(`levels.${language}`), appSetting<Record<string, number[]>>("prompt.text_level_bands")]);
+  return levels.filter((level) => bands[level]?.includes(band));
+}
+
 async function textSentences(tx: Tx | typeof db, ids: number[]) {
   const rows = await tx.sentence.findMany({
     where: { id: { in: ids } },
@@ -71,7 +81,7 @@ async function textSentences(tx: Tx | typeof db, ids: number[]) {
 }
 
 /**
- * A text (PRD §7, §13.2): title, placement, key words, speakers and its four question sets, with the
+ * A text (PRD §7, §13.2): title, level, placement, key words, speakers and its four question sets, with the
  * same checks as import (PRD §13.3). Sentences are edited on their own page. Questions are not in the
  * audio, so changing them leaves the audio and a published text as they are (DECISIONS.md: phone voice).
  */
@@ -79,7 +89,11 @@ export const textEditor: Editor<TextValues, TextContext> = {
   async load(id) {
     const row = await db.text.findUnique({ where: { id }, include: { questions: { where: { status: { not: "retired" } }, select: questionColumns } } });
     if (!row) return null;
-    const [kinds, sentences] = await Promise.all([appSetting<Record<string, TextKindEntry[]>>("prompt.text_kinds"), textSentences(db, row.sentence_ids)]);
+    const [kinds, sentences, levels] = await Promise.all([
+      appSetting<Record<string, TextKindEntry[]>>("prompt.text_kinds"),
+      textSentences(db, row.sentence_ids),
+      bandLevels(row.language, row.band),
+    ]);
     const kind = (kinds[String(row.band)] ?? []).find((entry) => entry.kind === row.kind);
     const wordIds = [...new Set(sentences.flatMap((sentence) => sentence.words.map((word) => word.word_id)).filter((wordId): wordId is number => wordId !== null))];
     const listWords = await db.word.findMany({ where: { id: { in: [...wordIds, ...row.key_word_ids] } }, select: { id: true, code: true, lemma: true, meaning_fa: true, level: true, pos: true } });
@@ -91,6 +105,7 @@ export const textEditor: Editor<TextValues, TextContext> = {
       view: viewOf(row, row.title, "target", row.level),
       values: {
         title: row.title,
+        level: row.level,
         placement_ok: row.placement_ok,
         key_words: keyWords,
         speakers: kind?.speakers ? row.sentence_ids.map((_, index) => speakers?.[index] ?? null) : null,
@@ -99,6 +114,7 @@ export const textEditor: Editor<TextValues, TextContext> = {
       context: {
         code: row.code,
         band: row.band,
+        levels,
         kind: row.kind,
         kindName: kind?.name_fa ?? row.kind,
         hasSpeakers: Boolean(kind?.speakers),
@@ -132,6 +148,10 @@ export const textEditor: Editor<TextValues, TextContext> = {
       const kind = (kinds[String(row.band)] ?? []).find((entry) => entry.kind === row.kind);
       const sentences = await textSentences(tx, row.sentence_ids);
       const problems: Problem[] = [];
+
+      // Level: one the band is written for; the code keeps the level the text was made for.
+      const levels = await bandLevels(row.language, row.band);
+      if (values.level !== row.level && !levels.includes(values.level)) problems.push(problem("bandLevel", { band: row.band, levels: levels.join("، "), field: "level" }));
 
       // Speakers: a conversation needs a name on every line and at least two people (PRD §7.2).
       let speakers: (string | null)[] | null = null;
@@ -187,7 +207,16 @@ export const textEditor: Editor<TextValues, TextContext> = {
         removed.length > 0 || next.some((question) => question.id === 0 || !same(comparable([question]), comparable([known.get(question.id)!])));
 
       const draftLike = row.status === "draft" || row.status === "needs_review";
-      const data = { title: values.title, placement_ok: values.placement_ok, key_word_ids: keyWordIds, speakers };
+      // A text that moves level joins the end of a level arranged by hand, else follows its difficulty there.
+      const moved = values.level !== row.level;
+      const data = {
+        title: values.title,
+        level: values.level,
+        ...(moved ? { order_override: await overrideForNewText(tx, row.language, values.level) } : {}),
+        placement_ok: values.placement_ok,
+        key_word_ids: keyWordIds,
+        speakers,
+      };
       let extra: { before: Record<string, unknown>; after: Record<string, unknown> } | undefined;
       if (questionsChanged) {
         for (const question of removed) {
@@ -212,6 +241,7 @@ export const textEditor: Editor<TextValues, TextContext> = {
       }
       if (await logEdit(tx, adminId, "texts", id, row, data, extra)) {
         await tx.text.update({ where: { id }, data: { ...data, speakers: speakers ?? Prisma.DbNull } });
+        if (moved) await refreshDifficulty(tx, { textIds: [id] });
       }
       const codes = new Map(keyRows.map((word) => [word.id, word.code]));
       return {
