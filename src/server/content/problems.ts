@@ -41,6 +41,7 @@ function fieldLabel(path: string): string {
 export function describeProblem(item: Problem, audience: "admin" | "chatbot" = "admin"): string {
   const vars: MessageVars = { ...item.vars };
   if (typeof vars.field === "string") vars.field = audience === "admin" ? fieldLabel(vars.field) : vars.field;
+  if (typeof vars.fields === "string" && audience === "admin") vars.fields = vars.fields.split(",").map(fieldLabel).join("، ");
   return t(`content.problems.${item.key}` as MessageKey, vars);
 }
 

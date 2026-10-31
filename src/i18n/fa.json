@@ -955,6 +955,7 @@
         "phonics": "درس‌های تلفظ",
         "order": "ترتیب",
         "publish": "انتشار و سطح‌ها",
+        "batches": "ساخت محتوا",
         "settings": "تنظیمات",
         "users": "کاربران"
       },
@@ -970,7 +971,8 @@
         "errorfix_item": "غلط‌یابی",
         "writing_task": "تمرین نوشتن",
         "phonics_lesson": "درس تلفظ",
-        "user": "حساب"
+        "user": "حساب",
+        "import_batch": "دسته ساخت محتوا"
       },
       "actions": {
         "edit": "ویرایش",
@@ -983,12 +985,38 @@
         "live": "زبان در اپ",
         "audio": "صدا",
         "import": "ورود فایل",
+        "batch": "ورود جواب چت‌بات",
+        "qa": "بازبینی چت‌بات",
+        "dismiss": "کنار گذاشتن ردشده‌ها",
+        "cancel": "کنار گذاشتن دسته",
+        "resolve": "حل کردن",
         "access": "دسترسی",
         "account": "حساب تازه",
         "make_admin": "اولین معلم"
       },
       "orderTitle": "ترتیب {list}",
       "orderTitleLevel": "ترتیب {list}، سطح {level}",
+      "batchTitle": "{kind}، دسته {id}",
+      "batch": {
+        "round": "دور {round}",
+        "added": "{count} تازه",
+        "updated": "{count} به‌روز",
+        "skipped": "{count} بدون تغییر",
+        "rejected": "{count} رد شد",
+        "nothing": "چیزی وارد نشد",
+        "findings": "{count} یافته، {high} مورد مهم",
+        "dismissed": "{count} رکورد ردشده کنار گذاشته شد",
+        "cancelled": "دسته پیش از ورود جواب کنار گذاشته شد"
+      },
+      "resolve": {
+        "candidate_add": "«{surface}» به فهرست کلمه‌ها اضافه شد ({count} جمله)",
+        "candidate_word": "«{surface}» به این کلمه وصل شد ({count} جمله)",
+        "candidate_name": "«{surface}» اسم خاص شناخته شد ({count} جمله)",
+        "suspect_confirm": "وصل شدن «{surface}» به این کلمه درست شناخته شد ({count} جمله)",
+        "suspect_word": "«{surface}» به این کلمه وصل شد ({count} جمله)",
+        "new_sense": "معنی دیگری از «{word}» شناخته شد",
+        "duplicate": "تکراری «{word}» شناخته شد و کنار رفت؛ {mapped} جای کلمه و {targets} هدف به «{word}» رسید"
+      },
       "moved": "از جای {from} به جای {to}",
       "movedMore": "و {count} جابه‌جایی دیگر",
       "becameManual": "ترتیب دستی شد",
@@ -1017,6 +1045,8 @@
         "transform_item": "تبدیل‌های جمله",
         "translate_item": "ترجمه‌های کوتاه",
         "key_word_ids": "کلمه‌های کلیدی",
+        "sentence_ids": "جمله‌ها",
+        "example_sentence_ids": "جمله‌های مثال",
         "word_count": "تعداد کلمه",
         "speakers": "گوینده‌ها",
         "source_sentence": "جمله اصلی",
@@ -1936,6 +1966,7 @@
       "chatbotNote": "یادداشت چت‌بات: {text}",
       "codeTaken": "کد «{code}» مال کلمه دیگری است؛ کد دیگری بگذار.",
       "notReturned": "«{lemma}» در جواب نیامد؛ در دسته بعدی دوباره می‌آید.",
+      "handEditKept": "این مورد را دستی ویرایش کرده بودی؛ جواب تازه برای {fields} چیز دیگری داشت و روی ویرایش تو نوشته نشد. اگر جواب تازه را می‌خواهی، از فرم ویرایش عوضش کن.",
       "unitGone": "واحد این دسته دیگر در فهرست واحدها نیست.",
       "listRepeat": "«{field}» مورد تکراری دارد.",
       "unknownWords": "{count} کلمه این ترجمه در فهرست واژگان نیست.",

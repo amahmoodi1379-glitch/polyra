@@ -4,12 +4,15 @@ import { fold } from "@/engine/tokens";
 import { t } from "@/i18n";
 import { wordRecord, type WordRecord } from "@/schemas/words";
 import { db } from "@/server/db";
+import { spokenWord } from "@/lib/spoken";
 import { appSetting, engineNumber } from "@/server/settings/read";
 import { lastIntroOrder, placeAfter } from "../intro-order";
 import { languageInfo, type LanguageCode } from "../languages";
 import { defaultMastery, PRODUCE_LEVELS } from "../mastery";
 import { problem, zodProblems, type Problem } from "../problems";
-import { emptyRound } from "../report";
+import { staleAudio } from "../library/edit/shared";
+import { emptyRound, type ImportReport } from "../report";
+import { handEdits, importOnto } from "./hand-edits";
 import { batchSize, example, labelOf, languageValues, levelProblem, lines, namesAsked, params, texts, trace } from "./shared";
 import { openParams } from "./targets";
 import type { ContentKind, Tx } from "./types";
@@ -127,7 +130,7 @@ export const words: ContentKind = {
     };
   },
 
-  async importRecords(tx, batch, records) {
+  async importRecords(tx, batch, records, _parts, by) {
     const round = emptyRound();
     const language = batch.language as LanguageCode;
     const { word_ids } = params<WordsParams>(batch);
@@ -275,10 +278,18 @@ export const words: ContentKind = {
 
       let saved: Row;
       if (target) {
-        const intro_order = target.level === word.level ? target.intro_order : await orderAtEnd(word.level);
-        saved = await updateWord(tx, target.id, { ...data, intro_order });
+        // A draft the admin changed by hand keeps those changes (DECISIONS.md); the rest is filled in.
+        const current = await tx.word.findUniqueOrThrow({ where: { id: target.id } });
+        const edited = (await handEdits(tx, "word", [target.id])).get(target.id);
+        const onto = { by, round, label: word.lemma, ref: { type: "word" as const, id: target.id }, edited, names: { concept_id: "concept_fa" } };
+        const { data: write, changed } = await importOnto(tx, onto, current, data);
+        const level = write.level ?? current.level;
+        const intro_order = current.level === level ? current.intro_order : await orderAtEnd(level);
+        saved = changed ? await updateWord(tx, target.id, { ...write, intro_order }) : target;
+        if (changed && spokenWord(current) !== spokenWord({ ...current, ...write })) await staleAudio(tx, [current.audio_id, current.human_audio_id]);
         unmatched.delete(target.id);
-        round.updated++;
+        if (changed) round.updated++;
+        else round.skipped++;
       } else {
         saved = await createWord(tx, {
           ...data,
@@ -301,8 +312,18 @@ export const words: ContentKind = {
     }
 
     for (const [level, list] of moves) await placeAfter(tx, language, level, list);
+    // A draft is missing when no record of this answer or an earlier round named it: a refused
+    // record is listed as refused, and a fix answer brings only the refused ones.
+    const report = batch.report as ImportReport | null;
+    const earlier = new Set((report?.accepted ?? []).map((item) => item.entity?.id));
+    const named = new Set(
+      [...records.flatMap((record) => texts(record, ["code", "lemma"])), ...(report?.rejected ?? []).map((item) => item.label)].map((name) => fold(name.trim())),
+    );
+    const warned = new Set((report?.warnings ?? []).filter((flag) => flag.problem.key === "notReturned").map((flag) => flag.label));
     for (const row of drafts) {
-      if (unmatched.has(row.id)) round.warnings.push({ label: row.lemma, problem: problem("notReturned", { lemma: row.lemma }) });
+      if (unmatched.has(row.id) && !earlier.has(row.id) && !named.has(fold(row.code)) && !named.has(fold(row.lemma)) && !warned.has(row.lemma)) {
+        round.warnings.push({ label: row.lemma, problem: problem("notReturned", { lemma: row.lemma }), entity: { type: "word", id: row.id } });
+      }
     }
     return round;
   },

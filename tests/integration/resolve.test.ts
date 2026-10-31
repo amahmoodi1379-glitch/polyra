@@ -57,6 +57,9 @@ describe("candidates (PRD §13.9)", () => {
     expect((await openItems("fr")).candidates).toHaveLength(0);
     // Settled already: a second click changes nothing.
     expect(await resolveCandidate("fr", candidates[0].key, { type: "name" })).toBe(false);
+    expect(await testDb.adminLog.findMany({ where: { action: "resolve" }, select: { entity: true, entity_id: true, after: true } })).toEqual([
+      { entity: "word", entity_id: String(added.id), after: { decision: "candidate_add", surface: "fromage", sentences: 2, lemma: "fromage", pos: "noun", level: "A2" } },
+    ]);
   });
 
   it("links a candidate to a chosen word and remembers the form, or keeps it as a name", async () => {
@@ -136,8 +139,15 @@ describe("duplicate words (PRD §13.9)", () => {
     await testDb.sentenceTarget.create({
       data: { language: "fr", sentence_id: s.id, target_type: "word", target_id: dup.id, marked_text: "La {{glace}} fond.", accepted: ["glace"], distractors: ["a", "b", "c"] },
     });
-    expect(await resolveDuplicate("fr", dup.id, false)).toBe(true);
+    expect(await resolveDuplicate("fr", dup.id, false, 1)).toBe(true);
     expect(await testDb.word.findUniqueOrThrow({ where: { id: dup.id } })).toMatchObject({ status: "retired", dup_of_id: null });
+    // The decision is in the change log, on the retired word, with what moved.
+    expect(await testDb.adminLog.findFirstOrThrow({ where: { action: "resolve" } })).toMatchObject({
+      admin_id: 1,
+      entity: "word",
+      entity_id: String(dup.id),
+      after: { decision: "duplicate", word: "glace", mapped: 1, targets: 1 },
+    });
     expect(await testDb.sentenceWord.findFirstOrThrow({ where: { sentence_id: s.id } })).toMatchObject({ word_id: base.id });
     expect(await testDb.sentenceTarget.findFirstOrThrow({ where: { sentence_id: s.id } })).toMatchObject({ target_id: base.id });
     expect((await openItems("fr")).duplicates).toEqual([]);

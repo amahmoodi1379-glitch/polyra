@@ -9,6 +9,7 @@ import { compareTable } from "../conjugation-check";
 import { levelRank, type LanguageCode } from "../languages";
 import { problem, zodProblems, type Problem } from "../problems";
 import { emptyRound } from "../report";
+import { updateImported } from "./hand-edits";
 import { batchSize, example, labelOf, languageValues, lines, trace } from "./shared";
 import { openParams } from "./targets";
 import type { ContentKind } from "./types";
@@ -122,7 +123,7 @@ export const conjugation: ContentKind = {
     };
   },
 
-  async importRecords(tx, batch, records) {
+  async importRecords(tx, batch, records, _parts, by) {
     const round = emptyRound();
     const language = batch.language as LanguageCode;
     const keys: readonly string[] = pronounKeys[language];
@@ -188,15 +189,19 @@ export const conjugation: ContentKind = {
         review_card: table.review_card,
         ...trace(batch),
       };
-      const saved = existing
-        ? await tx.conjugationTable.update({ where: { id: existing.id }, data })
-        : await tx.conjugationTable.create({ data: { language, word_id: word.id, tense, ...data } });
-      if (existing) round.updated++;
-      else round.added++;
-
       const name = `${table.verb} (${tense})`;
+      let saved;
+      if (existing) {
+        const onto = { by, round, label: name, ref: { type: "conjugation_table" as const, id: existing.id }, groups: [["forms", "accepted_variants"]] };
+        saved = await updateImported(tx, onto, existing, data, (write) => tx.conjugationTable.update({ where: { id: existing.id }, data: write }));
+      } else {
+        saved = await tx.conjugationTable.create({ data: { language, word_id: word.id, tense, ...data } });
+        round.added++;
+      }
+
+      // The second source checks the table as it is stored (a hand-edited one keeps its forms).
       const entity = { type: "conjugation_table" as const, id: saved.id };
-      const second = compareTable(language, word.lemma, tense, forms, variants);
+      const second = compareTable(language, word.lemma, tense, saved.forms as Record<string, string>, saved.accepted_variants as Record<string, string[]>);
       if (second.result === "unknown") round.warnings.push({ label: name, problem: problem("secondSourceUnknown"), entity });
       if (second.result === "differs") {
         const persons = second.persons.map((person) => `${person.key}: ${person.given} ≠ ${person.expected}`).join("، ");

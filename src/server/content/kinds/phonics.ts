@@ -6,6 +6,7 @@ import { db } from "@/server/db";
 import { appSetting } from "@/server/settings/read";
 import { problem, zodProblems, type Problem } from "../problems";
 import { emptyRound } from "../report";
+import { updateImported } from "./hand-edits";
 import { example, languageValues, params, texts, trace } from "./shared";
 import { openParams } from "./targets";
 import type { ContentKind, Tx } from "./types";
@@ -120,7 +121,7 @@ export const phonics: ContentKind = {
     };
   },
 
-  async importRecords(tx, batch, records, parts) {
+  async importRecords(tx, batch, records, parts, by) {
     const round = emptyRound();
     const { label, kind, order_no } = params<PhonicsParams>(batch);
     for (const [index, record] of records.entries()) {
@@ -154,10 +155,9 @@ export const phonics: ContentKind = {
         ...trace(batch),
       };
       const saved = existing
-        ? await tx.phonicsLesson.update({ where: { id: existing.id }, data })
+        ? await updateImported(tx, { by, round, label, ref: { type: "phonics_lesson", id: existing.id } }, existing, data, (write) => tx.phonicsLesson.update({ where: { id: existing.id }, data: write }))
         : await tx.phonicsLesson.create({ data: { language: batch.language, ...data } });
-      if (existing) round.updated++;
-      else round.added++;
+      if (!existing) round.added++;
       round.accepted.push({ label, entity: { type: "phonics_lesson", id: saved.id }, record, part });
     }
     return round;

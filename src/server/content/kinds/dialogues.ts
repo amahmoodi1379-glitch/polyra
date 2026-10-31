@@ -4,6 +4,7 @@ import { t } from "@/i18n";
 import { dialogueRecord, dialogueTurn } from "@/schemas/speaking";
 import { db } from "@/server/db";
 import { appSetting } from "@/server/settings/read";
+import { same as sameValue } from "../library/log";
 import { turnSentenceIds } from "../library/list";
 import { dropUnusedSentences } from "../library/status";
 import { problem, zodProblems, type Problem } from "../problems";
@@ -11,13 +12,30 @@ import { emptyRound } from "../report";
 import { loadVocabulary } from "../vocabulary";
 import { allowedWords } from "./allowed";
 import { lengthFlags, mapSentence, storeSentence, type SentenceInput } from "./sentence-store";
+import { anyHandEdited, handEdits, importOnto } from "./hand-edits";
 import { example, languageValues, lines, params, trace } from "./shared";
 import { nextLevel, openParams, unitLines, type LevelNext } from "./targets";
-import type { ContentKind } from "./types";
+import type { ContentKind, Tx } from "./types";
 
 type DialogueParams = { level: string; code: string; situation: string };
 
 const editable = new Set(["draft", "needs_review"]);
+
+type StoredTurn = { sentence_id: number; speaker: string | null; choices: { sentence_id: number }[]; correct: number; why_fa: string };
+type TurnShape = { speaker: string | null; line: string | undefined; choices: (string | undefined)[]; correct: number; why_fa: string };
+
+/** A dialogue's turns as text, to tell whether a new answer says something else. */
+async function storedTurns(tx: Tx, turns: unknown): Promise<TurnShape[]> {
+  const rows = await tx.sentence.findMany({ where: { id: { in: turnSentenceIds(turns) } }, select: { id: true, text: true } });
+  const text = (id: number) => rows.find((row) => row.id === id)?.text;
+  return ((turns ?? []) as StoredTurn[]).map((turn) => ({
+    speaker: turn.speaker,
+    line: text(turn.sentence_id),
+    choices: turn.choices.map((choice) => text(choice.sentence_id)),
+    correct: turn.correct,
+    why_fa: turn.why_fa,
+  }));
+}
 /** PRD §8b.4: 5 to 8 turns, three choices each. */
 const TURNS: [number, number] = [5, 8];
 const CHOICES = 3;
@@ -92,7 +110,7 @@ export const dialogues: ContentKind = {
     };
   },
 
-  async importRecords(tx, batch, records) {
+  async importRecords(tx, batch, records, _parts, by) {
     const round = emptyRound();
     const { level, code } = params<DialogueParams>(batch);
     const vocabulary = await loadVocabulary(tx, batch.language);
@@ -141,6 +159,30 @@ export const dialogues: ContentKind = {
 
       const choices = turns.flatMap((turn) => turn.choices.map((choice) => choice.text));
       round.warnings.push(...lengthFlags(code, { sentences: sentences.map((sentence) => sentence.text), options: choices, optionField: "choices" }));
+      const head = { level, title_fa: dialogue.title_fa, situation_fa: dialogue.situation_fa, ...trace(batch) };
+      const name = `${code} · ${dialogue.title_fa}`;
+      // A draft dialogue whose turns, or any of their sentences, the admin changed by hand keeps
+      // them (DECISIONS.md); the report says when the new answer differs.
+      const edited = existing ? (await handEdits(tx, "dialogue", [existing.id])).get(existing.id) : undefined;
+      if (existing && (edited?.has("turns") || (await anyHandEdited(tx, "sentence", turnSentenceIds(existing.turns))))) {
+        const asked: TurnShape[] = turns.map((turn) => ({
+          speaker: turn.line.speaker ?? null,
+          line: turn.line.text,
+          choices: turn.choices.map((choice) => choice.text),
+          correct: turn.correct,
+          why_fa: turn.why_fa,
+        }));
+        const kept = sameValue(await storedTurns(tx, existing.turns), asked) ? [] : ["turns"];
+        const ref = { type: "dialogue" as const, id: existing.id };
+        const { data: write, changed } = await importOnto(tx, { by, round, label: name, ref, edited, kept }, existing, head);
+        if (changed) {
+          await tx.dialogue.update({ where: { id: existing.id }, data: write });
+          round.updated++;
+        } else round.skipped++;
+        round.accepted.push({ label: name, entity: ref, record, part: "dialogue" });
+        continue;
+      }
+
       let next = 0;
       const store = async () => {
         const k = next++;
@@ -154,15 +196,19 @@ export const dialogues: ContentKind = {
         stored.push({ sentence_id, speaker: turn.line.speaker, choices, correct: turn.correct, why_fa: turn.why_fa });
       }
 
-      const data = { level, title_fa: dialogue.title_fa, situation_fa: dialogue.situation_fa, turns: stored as Prisma.InputJsonValue, ...trace(batch) };
-      const saved = existing
-        ? await tx.dialogue.update({ where: { id: existing.id }, data })
-        : await tx.dialogue.create({ data: { language: batch.language, code, ...data } });
-      // A draft dialogue that comes again: the sentences only its old turns used go.
-      if (existing) await dropUnusedSentences(tx, batch.language, turnSentenceIds(existing.turns));
-      if (existing) round.updated++;
-      else round.added++;
-      round.accepted.push({ label: `${code} · ${dialogue.title_fa}`, entity: { type: "dialogue", id: saved.id }, record, part: "dialogue" });
+      const data = { ...head, turns: stored as Prisma.InputJsonValue };
+      let saved;
+      if (existing) {
+        const { data: write } = await importOnto(tx, { by, round, label: name, ref: { type: "dialogue", id: existing.id }, edited }, existing, data);
+        saved = await tx.dialogue.update({ where: { id: existing.id }, data: write });
+        // The sentences only its old turns used go.
+        await dropUnusedSentences(tx, batch.language, turnSentenceIds(existing.turns));
+        round.updated++;
+      } else {
+        saved = await tx.dialogue.create({ data: { language: batch.language, code, ...data } });
+        round.added++;
+      }
+      round.accepted.push({ label: name, entity: { type: "dialogue", id: saved.id }, record, part: "dialogue" });
     }
     return round;
   },

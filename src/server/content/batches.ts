@@ -17,6 +17,7 @@ import { wordList } from "./kinds/word-list";
 import { words } from "./kinds/words";
 import { writing } from "./kinds/writing";
 import { languageInfo, type LanguageCode } from "./languages";
+import { BATCH_ENTITY, logChange } from "./library/log";
 import { cleanPaste, joinPaste, type PasteResult } from "./paste";
 import { describeProblem } from "./problems";
 import { mergeRound, type AcceptedRecord, type EntityRef, type ImportReport } from "./report";
@@ -177,7 +178,7 @@ export type SubmitResult =
  * kept so the admin can come back and paste the continuation later. A whole answer is taken only
  * before anything was imported, a fix only after.
  */
-export async function submitAnswer(batchId: number, parts: string[], mode: "answer" | "fix"): Promise<SubmitResult> {
+export async function submitAnswer(batchId: number, parts: string[], mode: "answer" | "fix", adminId: number | null = null): Promise<SubmitResult> {
   const batch = await db.importBatch.findUnique({ where: { id: batchId } });
   if (!batch || (mode === "answer") === Boolean(batch.report)) return { state: "stale" };
   const found = kindOf(batch.prompt_kind);
@@ -202,8 +203,15 @@ export async function submitAnswer(batchId: number, parts: string[], mode: "answ
       // Claims the batch: a paste of the same answer in another tab waits here and then finds it moved on.
       const claimed = await tx.importBatch.updateMany({ where: { id: batchId, updated_at: batch.updated_at }, data: { updated_at: new Date() } });
       if (claimed.count === 0) return null;
-      const round = await kind.importRecords(tx, batch, content.records, content.parts);
+      const round = await kind.importRecords(tx, batch, content.records, content.parts, adminId);
       const merged = mergeRound(batchReport(batch), round, issues);
+      await logChange(tx, adminId, {
+        action: "batch",
+        entity: BATCH_ENTITY,
+        entityId: batchId,
+        before: null,
+        after: { ...batchLog(batch), round: merged.rounds, added: round.added, updated: round.updated, skipped: round.skipped, rejected: round.rejected.length },
+      });
       const rawOutput = mode === "answer" ? pasted.text : `${batch.raw_output ?? ""}\n\n${pasted.text}`;
       await tx.importBatch.update({
         where: { id: batchId },
@@ -283,8 +291,17 @@ export function qaPrompt(batch: ImportBatch): string | null {
   });
 }
 
-/** Step 4: stores the QA findings next to the records they point at. */
-export async function submitQa(batchId: number, parts: string[]): Promise<SubmitResult> {
+/** What every log row about a batch carries, so the log can name it after the batch is gone. */
+const batchLog = (batch: ImportBatch) => ({ kind: batch.prompt_kind, language: batch.language });
+
+/** The longest text of an unreadable finding kept for the admin. */
+const RAW_FINDING = 300;
+
+/**
+ * Step 4: stores the QA findings next to the records they point at. A finding without a problem
+ * text is kept as the chatbot wrote it, so nothing it said goes unseen.
+ */
+export async function submitQa(batchId: number, parts: string[], adminId: number | null = null): Promise<SubmitResult> {
   const batch = await db.importBatch.findUnique({ where: { id: batchId } });
   const report = batch && batchReport(batch);
   const found = batch && kindOf(batch.prompt_kind);
@@ -298,14 +315,26 @@ export async function submitQa(batchId: number, parts: string[]): Promise<Submit
   const findings: QaFindingRow[] = [];
   for (const raw of answer.data.findings) {
     const parsed = qaFinding.safeParse(raw);
-    if (!parsed.success) continue;
-    const accepted = locate(found.kind, report.accepted, parsed.data.path);
+    if (!parsed.success) {
+      const text = typeof raw === "string" ? raw : JSON.stringify(raw);
+      findings.push({ path: "", severity: "medium", problem: text.slice(0, RAW_FINDING), suggestion: null, label: null, entity: null });
+      continue;
+    }
+    const accepted = parsed.data.path ? locate(found.kind, report.accepted, parsed.data.path) : undefined;
     findings.push({ ...parsed.data, label: accepted?.label ?? null, entity: accepted?.entity ?? null });
   }
-  await db.importBatch.update({
-    where: { id: batchId },
-    data: { qa_findings: findings as unknown as Prisma.InputJsonValue, state: "qa_done" },
-  });
+  await db.$transaction([
+    db.importBatch.update({ where: { id: batchId }, data: { qa_findings: findings as unknown as Prisma.InputJsonValue, state: "qa_done" } }),
+    db.adminLog.create({
+      data: {
+        admin_id: adminId,
+        action: "qa",
+        entity: BATCH_ENTITY,
+        entity_id: String(batchId),
+        after: { ...batchLog(batch), findings: findings.length, high: findings.filter((finding) => finding.severity === "high").length },
+      },
+    }),
+  ]);
   return { state: "imported", rejected: 0 };
 }
 
@@ -324,12 +353,15 @@ export async function resetCut(batchId: number) {
  * The admin moves on without fixing the rejected records. They were never imported, so nothing is
  * lost: skeleton words and words short of sentences come back in the next batch of their kind.
  */
-export async function dismissRejected(batchId: number) {
+export async function dismissRejected(batchId: number, adminId: number | null = null) {
   const batch = await db.importBatch.findUnique({ where: { id: batchId } });
   const report = batch && batchReport(batch);
   if (!report || report.rejected.length === 0) return;
   const next: ImportReport = { ...report, rejected: [], dismissed: (report.dismissed ?? 0) + report.rejected.length };
-  await db.importBatch.update({ where: { id: batchId }, data: { report: next as unknown as Prisma.InputJsonValue } });
+  await db.$transaction(async (tx) => {
+    await tx.importBatch.update({ where: { id: batchId }, data: { report: next as unknown as Prisma.InputJsonValue } });
+    await logChange(tx, adminId, { action: "dismiss", entity: BATCH_ENTITY, entityId: batchId, before: null, after: { ...batchLog(batch), count: report.rejected.length } });
+  });
 }
 
 /** The chatbot this admin used last, so the picker starts on it. */
@@ -343,13 +375,14 @@ export async function lastChatbot(adminId: number): Promise<string | null> {
 }
 
 /** A batch nothing was imported from can be thrown away; its list rows become free again. */
-export async function cancelBatch(batchId: number) {
+export async function cancelBatch(batchId: number, adminId: number | null = null) {
   const batch = await db.importBatch.findUnique({ where: { id: batchId } });
   if (!batch || batch.report) return false;
-  await db.$transaction([
-    db.frequencyItem.updateMany({ where: { used_in_batch_id: batchId }, data: { used_in_batch_id: null } }),
-    db.importBatch.delete({ where: { id: batchId } }),
-  ]);
+  await db.$transaction(async (tx) => {
+    await tx.frequencyItem.updateMany({ where: { used_in_batch_id: batchId }, data: { used_in_batch_id: null } });
+    await tx.importBatch.delete({ where: { id: batchId } });
+    await logChange(tx, adminId, { action: "cancel", entity: BATCH_ENTITY, entityId: batchId, before: batchLog(batch), after: null });
+  });
   return true;
 }
 

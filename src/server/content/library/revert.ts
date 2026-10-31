@@ -94,11 +94,20 @@ const isOrderRow = (row: Pick<AdminLog, "entity" | "entity_id">) => !isSettingRo
 const settingKnown = (row: Pick<AdminLog, "entity" | "entity_id">) =>
   row.entity === ENGINE_ENTITY ? Boolean(engineDef(row.entity_id ?? "")) : Boolean(fieldOfLog(row.entity, row.entity_id));
 
+/**
+ * Columns a chatbot answer replaces with new sentences: the old sentences may be gone by then
+ * (`dropUnusedSentences`), so such an import is not put back from the log.
+ */
+const replacedSentences = ["sentence_ids", "example_sentence_ids", "turns"];
+const replacesSentences = (row: Pick<AdminLog, "action" | "before">) =>
+  row.action === "batch" && replacedSentences.some((key) => key in ((row.before ?? {}) as Values));
+
 /** Whether a row's kind of change can be put back at all; the full check runs when it is clicked. */
 export const revertible = (row: Pick<AdminLog, "action" | "entity" | "entity_id" | "before">) =>
   row.action !== "delete" &&
   row.action !== "audio" &&
   row.before !== null &&
+  !replacesSentences(row) &&
   (isSettingRow(row) ? settingKnown(row) : isOrderRow(row) ? orderTarget(row) !== null : Boolean(slugOfEntity[row.entity]));
 
 /** The newest log row of each item, so a page of the log can tell which rows are still the last word. */

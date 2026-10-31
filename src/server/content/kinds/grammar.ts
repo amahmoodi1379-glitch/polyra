@@ -6,10 +6,12 @@ import { db } from "@/server/db";
 import { appSetting } from "@/server/settings/read";
 import { levelRank } from "../languages";
 import { problem, zodProblems, type Problem } from "../problems";
+import { dropUnusedSentences } from "../library/status";
 import { emptyRound, type RoundResult } from "../report";
 import { loadVocabulary, type LoadedVocabulary } from "../vocabulary";
 import { allowedWords } from "./allowed";
 import { addTargets, checkTarget, lengthFlags, mapSentence, storeSentence, targetOptions, tidy, type SentenceInput } from "./sentence-store";
+import { anyHandEdited, handEdits, importOnto } from "./hand-edits";
 import { example, labelOf, languageValues, lines, params, trace } from "./shared";
 import { openParams } from "./targets";
 import type { ContentKind, Tx } from "./types";
@@ -103,7 +105,7 @@ export const grammar: ContentKind = {
     };
   },
 
-  async importRecords(tx, batch, records, parts) {
+  async importRecords(tx, batch, records, parts, by) {
     const round = emptyRound();
     const { unit_id } = params<GrammarParams>(batch);
     const unit = await tx.grammarUnit.findUnique({ where: { id: unit_id } });
@@ -117,7 +119,7 @@ export const grammar: ContentKind = {
         reject(labelOf(record, ["title_fa", "source", "prompt_fa"], index), [problem("unitGone")]);
         continue;
       }
-      const context: Context = { tx, batch, unit, vocabulary, round, seen, reject };
+      const context: Context = { tx, batch, by, unit, vocabulary, round, seen, reject };
       if (part === "unit") await importUnit(context, record);
       else if (part === "transforms") await importTransform(context, record, index);
       else if (part === "translations") await importTranslation(context, record, index);
@@ -135,6 +137,7 @@ export function sameUnit(batch: Parameters<ContentKind["importRecords"]>[1], cod
 type Context = {
   tx: Tx;
   batch: Parameters<ContentKind["importRecords"]>[1];
+  by: number | null;
   unit: { id: number; unit_code: string; level: string; status: string };
   vocabulary: LoadedVocabulary;
   round: RoundResult;
@@ -153,7 +156,7 @@ function mapAll(sentences: SentenceInput[], vocabulary: LoadedVocabulary) {
   return { rows, problems };
 }
 
-async function importUnit({ tx, batch, unit, vocabulary, round, seen, reject }: Context, record: unknown) {
+async function importUnit({ tx, batch, by, unit, vocabulary, round, seen, reject }: Context, record: unknown) {
   const label = labelOf(record, ["title_fa", "unit_code"], 0);
   const parsed = unitRecord.safeParse(record, { reportInput: true });
   if (!parsed.success) return reject(label, zodProblems(parsed.error, "unit"));
@@ -165,26 +168,43 @@ async function importUnit({ tx, batch, unit, vocabulary, round, seen, reject }: 
   problems.push(...mapped.problems);
   if (problems.length > 0) return reject(label, problems);
 
-  const exampleIds: number[] = [];
-  for (const [k, sentence] of data.example_sentences.entries()) {
-    const stored = await storeSentence(tx, batch, { sentence, rows: mapped.rows[k]!, vocabulary, level: unit.level, label }, round, seen);
-    exampleIds.push(stored.id);
+  // What the admin changed by hand stays (DECISIONS.md); example sentences edited by hand keep the unit's examples.
+  const current = await tx.grammarUnit.findUniqueOrThrow({ where: { id: unit.id } });
+  const edited = (await handEdits(tx, "grammar_unit", [unit.id])).get(unit.id);
+  const examplesHeld = Boolean(edited?.has("example_sentence_ids")) || (await anyHandEdited(tx, "sentence", current.example_sentence_ids));
+  const kept: string[] = [];
+  let examples: { example_sentence_ids?: number[] } = {};
+  if (examplesHeld) {
+    const stored = await tx.sentence.findMany({ where: { id: { in: current.example_sentence_ids } }, select: { id: true, text: true } });
+    const texts = current.example_sentence_ids.map((id) => stored.find((row) => row.id === id)?.text);
+    if (texts.join("\n") !== data.example_sentences.map((sentence) => sentence.text).join("\n")) kept.push("example_sentences");
+  } else {
+    const exampleIds: number[] = [];
+    for (const [k, sentence] of data.example_sentences.entries()) {
+      const stored = await storeSentence(tx, batch, { sentence, rows: mapped.rows[k]!, vocabulary, level: unit.level, label }, round, seen);
+      exampleIds.push(stored.id);
+    }
+    examples = { example_sentence_ids: exampleIds };
   }
-  await tx.grammarUnit.update({
-    where: { id: unit.id },
-    data: {
-      lesson_fa: data.lesson_fa,
-      build_table: (data.build_table ?? undefined) as Prisma.InputJsonValue | undefined,
-      example_sentence_ids: exampleIds,
-      rule_line_fa: data.rule_line_fa,
-      common_mistake_fa: data.common_mistake_fa,
-      category_sets: (data.category_sets ?? undefined) as Prisma.InputJsonValue | undefined,
-      ...(data.can_do_fa ? { can_do_fa: data.can_do_fa } : {}),
-      ...trace(batch),
-    },
-  });
-  round.updated++;
-  round.accepted.push({ label: data.title_fa, entity: { type: "grammar_unit", id: unit.id }, record, part: "unit" });
+  const fields = {
+    lesson_fa: data.lesson_fa,
+    build_table: (data.build_table ?? undefined) as Prisma.InputJsonValue | undefined,
+    ...examples,
+    rule_line_fa: data.rule_line_fa,
+    common_mistake_fa: data.common_mistake_fa,
+    category_sets: (data.category_sets ?? undefined) as Prisma.InputJsonValue | undefined,
+    ...(data.can_do_fa ? { can_do_fa: data.can_do_fa } : {}),
+    ...trace(batch),
+  };
+  const ref = { type: "grammar_unit" as const, id: unit.id };
+  const { data: write, changed } = await importOnto(tx, { by, round, label: data.title_fa, ref, edited, kept, names: { example_sentence_ids: "example_sentences" } }, current, fields);
+  if (changed) {
+    await tx.grammarUnit.update({ where: { id: unit.id }, data: write });
+    // Examples the unit no longer uses, and nothing else does, go with the old ones.
+    if (write.example_sentence_ids) await dropUnusedSentences(tx, batch.language, current.example_sentence_ids.filter((id) => !write.example_sentence_ids!.includes(id)));
+    round.updated++;
+  } else round.skipped++;
+  round.accepted.push({ label: data.title_fa, entity: ref, record, part: "unit" });
 }
 
 async function importTarget({ tx, batch, unit, vocabulary, round, seen, reject }: Context, record: unknown, index: number) {

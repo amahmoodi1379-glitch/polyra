@@ -53,7 +53,7 @@ async function newBatch(tx: Tx, kind: PromptKind, params: Record<string, unknown
 async function importAnswer(tx: Tx, kind: ContentKind, batch: ImportBatch, answer: Record<string, unknown>) {
   const content = answerRecords(kind, answer);
   if (!content) throw new Error(`Demo answer for ${kind.kind} has none of its keys`);
-  const round: RoundResult = await kind.importRecords(tx, batch, content.records, content.parts);
+  const round: RoundResult = await kind.importRecords(tx, batch, content.records, content.parts, batch.created_by);
   const trouble = [
     ...round.rejected.map((item) => `${item.label}: ${JSON.stringify(item.problems)}`),
     ...(round.candidates > 0 ? [`${round.candidates} candidates`] : []),

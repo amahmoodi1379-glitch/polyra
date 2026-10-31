@@ -9,13 +9,16 @@ import { problem, zodProblems, type Problem } from "../problems";
 import { emptyRound, type ImportReport } from "../report";
 import { allowedTypes, checkQuestionSets, questionRange, tracks } from "../text-check";
 import { overrideForNewText, refreshDifficulty } from "../text-difficulty";
+import { same } from "../library/log";
+import { staleAudio } from "../library/edit/shared";
 import { dropUnusedSentences } from "../library/status";
 import { loadVocabulary } from "../vocabulary";
 import { allowedWords } from "./allowed";
 import { openParams, readyWords, unitLines, wordCount } from "./targets";
 import { lengthFlags, mapSentence, storeSentence } from "./sentence-store";
+import { anyHandEdited, handEdits, importOnto } from "./hand-edits";
 import { example, labelOf, languageValues, lines, params, trace } from "./shared";
-import type { ContentKind } from "./types";
+import type { ContentKind, Tx } from "./types";
 
 type Range = [number, number];
 type TextKindEntry = { kind: string; name_fa: string; speakers: boolean };
@@ -27,6 +30,22 @@ export type TextSpec = { code: string; level: string; band: number; kind: string
 type TextParams = { level: string; band: number; length: Range; words: number | null; texts: TextSpec[] };
 
 const editable = new Set(["draft", "needs_review"]);
+/** A text's sentences, questions and what depends on them: kept or replaced together. */
+const TEXT_CONTENT = ["sentence_ids", "speakers", "word_count", "key_word_ids", "placement_ok", "question"];
+
+type QuestionShape = { track: string; set: string; order_no: number; type: string; payload: unknown; explanation_fa: string | null };
+const inOrder = (rows: QuestionShape[]) => [...rows].sort((a, b) => `${a.track}|${a.set}|${a.order_no}`.localeCompare(`${b.track}|${b.set}|${b.order_no}`));
+
+/** Whether a text's stored sentences and questions say something other than the new answer. */
+async function contentDiffers(tx: Tx, existing: { id: number; sentence_ids: number[] }, sentences: string[], questions: QuestionShape[]) {
+  const stored = await tx.sentence.findMany({ where: { id: { in: existing.sentence_ids } }, select: { id: true, text: true } });
+  const texts = existing.sentence_ids.map((id) => stored.find((row) => row.id === id)?.text);
+  const asked = await tx.question.findMany({
+    where: { text_id: existing.id, status: { not: "retired" } },
+    select: { track: true, set: true, order_no: true, type: true, payload: true, explanation_fa: true },
+  });
+  return { sentences: !same(texts, sentences), questions: !same(inOrder(asked), inOrder(questions)) };
+}
 
 async function textSettings(language: string) {
   const [levels, targets, bands, perBatch, levelBands, kinds, topics, tiers, placement] = await Promise.all([
@@ -196,7 +215,7 @@ export const texts: ContentKind = {
     };
   },
 
-  async importRecords(tx, batch, records) {
+  async importRecords(tx, batch, records, _parts, by) {
     const round = emptyRound();
     const { texts: specs, length } = params<TextParams>(batch);
     const kinds = await appSetting<Record<string, TextKindEntry[]>>("prompt.text_kinds");
@@ -258,6 +277,33 @@ export const texts: ContentKind = {
       }
 
       round.warnings.push(...lengthFlags(spec.code, { sentences: sentences.map((sentence) => sentence.text) }));
+      const questions: QuestionShape[] = checked.questions.map(({ track, set, order_no, question }) => {
+        const { type, explanation_fa, prompt_fa, ...rest } = question;
+        return { track, set, order_no, type, payload: prompt_fa ? { ...rest, prompt_fa } : rest, explanation_fa: explanation_fa ?? null };
+      });
+      const head = { level: spec.level, band: spec.band, kind: spec.kind, title: text.title, ...trace(batch) };
+      const name = `${spec.code} · ${text.title}`;
+
+      // A draft text the admin changed by hand (its questions, key words or any of its sentences)
+      // keeps that content (DECISIONS.md); the report says when the new answer differs.
+      const edited = existing ? (await handEdits(tx, "text", [existing.id])).get(existing.id) : undefined;
+      if (existing) {
+        const held = TEXT_CONTENT.some((key) => edited?.has(key)) || (await anyHandEdited(tx, "sentence", existing.sentence_ids));
+        if (held) {
+          const differs = await contentDiffers(tx, existing, sentences.map((sentence) => sentence.text), questions);
+          const kept = [...(differs.sentences ? ["sentences"] : []), ...(differs.questions ? ["question_sets"] : [])];
+          const ref = { type: "text" as const, id: existing.id };
+          const { data: write, changed } = await importOnto(tx, { by, round, label: name, ref, edited, kept }, existing, head);
+          if (changed) {
+            await tx.text.update({ where: { id: existing.id }, data: write });
+            round.updated++;
+          } else round.skipped++;
+          done.add(spec.code);
+          round.accepted.push({ label: name, entity: ref, record });
+          continue;
+        }
+      }
+
       const sentenceIds: number[] = [];
       for (const [k, sentence] of sentences.entries()) {
         const stored = await storeSentence(tx, batch, { sentence, rows: mapped[k].rows!, vocabulary, level: spec.level, label: spec.code }, round, seen);
@@ -277,47 +323,43 @@ export const texts: ContentKind = {
       }
 
       const data = {
-        level: spec.level,
-        band: spec.band,
-        kind: spec.kind,
-        title: text.title,
+        ...head,
         sentence_ids: sentenceIds,
         speakers: kind?.speakers ? (speakers as Prisma.InputJsonValue) : Prisma.DbNull,
         word_count: words,
         key_word_ids: keyWordIds,
         placement_ok: spec.placement_ok,
-        ...trace(batch),
       };
-      const saved = existing
-        ? await tx.text.update({ where: { id: existing.id }, data })
-        : await tx.text.create({ data: { language: batch.language, code: spec.code, order_override: await overrideForNewText(tx, batch.language, spec.level), ...data } });
-      await refreshDifficulty(tx, { textIds: [saved.id] });
-      // A draft text that comes again gets its new questions and sentences in place of the old ones.
+      let saved;
       if (existing) {
+        const ref = { type: "text" as const, id: existing.id };
+        const { data: write } = await importOnto(tx, { by, round, label: name, ref, edited }, existing, data);
+        saved = await tx.text.update({ where: { id: existing.id }, data: write });
+        // A draft text that comes again gets its new questions and sentences in place of the old ones.
         await tx.question.deleteMany({ where: { text_id: saved.id } });
         await dropUnusedSentences(tx, batch.language, existing.sentence_ids.filter((id) => !sentenceIds.includes(id)));
+        if (!same(existing.sentence_ids, sentenceIds)) await staleAudio(tx, [existing.audio_id, existing.human_audio_id]);
+        round.updated++;
+      } else {
+        saved = await tx.text.create({ data: { language: batch.language, code: spec.code, order_override: await overrideForNewText(tx, batch.language, spec.level), ...data } });
+        round.added++;
       }
+      await refreshDifficulty(tx, { textIds: [saved.id] });
       await tx.question.createMany({
-        data: checked.questions.map(({ track, set, order_no, question }) => {
-          const { type, explanation_fa, prompt_fa, ...rest } = question;
-          const payload = prompt_fa ? { ...rest, prompt_fa } : rest;
-          return {
-            language: batch.language,
-            text_id: saved.id,
-            track,
-            set,
-            order_no,
-            type,
-            payload: payload as Prisma.InputJsonValue,
-            explanation_fa,
-            ...trace(batch),
-          };
-        }),
+        data: checked.questions.map(({ track, set, order_no, question }, k) => ({
+          language: batch.language,
+          text_id: saved.id,
+          track,
+          set,
+          order_no,
+          type: question.type,
+          payload: questions[k].payload as Prisma.InputJsonValue,
+          explanation_fa: question.explanation_fa,
+          ...trace(batch),
+        })),
       });
-      if (existing) round.updated++;
-      else round.added++;
       done.add(spec.code);
-      round.accepted.push({ label: `${spec.code} · ${text.title}`, entity: { type: "text", id: saved.id }, record });
+      round.accepted.push({ label: name, entity: { type: "text", id: saved.id }, record });
     }
 
     // A planned text the chatbot left out is offered again by the next batch; the report says so once.

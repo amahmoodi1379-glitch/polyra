@@ -67,9 +67,18 @@ export function emptyRound(): RoundResult {
   };
 }
 
-/** Adds a fix round to the report so far. Records the fix resent replace their rejection. */
+/**
+ * Adds a fix round to the report so far. Records the fix resent replace their rejection; when it
+ * brought fewer records than were refused, the refused ones it did not bring back (by label) stay
+ * refused, so none drops out of the report unseen.
+ */
 export function mergeRound(report: ImportReport | null, round: RoundResult, issues: string[]): ImportReport {
   if (!report) return { ...round, rounds: 1, issues };
+  const back = [...round.accepted, ...round.rejected];
+  // An accepted text is labelled «code · title», a refused one by its code.
+  const resent = (item: RejectedRecord) => back.some((other) => other.part === item.part && (other.label === item.label || other.label.startsWith(`${item.label} · `)));
+  const missing = report.rejected.length - (back.length + round.dropped);
+  const left = missing > 0 ? report.rejected.filter((item) => !resent(item)).slice(0, missing) : [];
   return {
     rounds: report.rounds + 1,
     added: report.added + round.added,
@@ -77,7 +86,7 @@ export function mergeRound(report: ImportReport | null, round: RoundResult, issu
     skipped: report.skipped + round.skipped,
     dropped: report.dropped + round.dropped,
     accepted: [...report.accepted, ...round.accepted],
-    rejected: round.rejected,
+    rejected: [...round.rejected, ...left],
     warnings: [...report.warnings, ...round.warnings],
     candidates: report.candidates + round.candidates,
     suspects: report.suspects + round.suspects,

@@ -46,6 +46,9 @@ export type ContentKind = {
   plan(language: LanguageCode, options: PlanOptions): Promise<BatchPlan | { nothing: string }>;
   /** Called inside the batch's transaction right after it is created (e.g. to reserve list rows). */
   reserve?(tx: Tx, batch: ImportBatch): Promise<void>;
-  /** Imports the records of one pasted answer; `parts[i]` is the part record i came from. */
-  importRecords(tx: Tx, batch: ImportBatch, records: unknown[], parts: string[]): Promise<RoundResult>;
+  /**
+   * Imports the records of one pasted answer; `parts[i]` is the part record i came from, `by` the
+   * admin who pasted it (for the change log).
+   */
+  importRecords(tx: Tx, batch: ImportBatch, records: unknown[], parts: string[], by: number | null): Promise<RoundResult>;
 };

@@ -6,6 +6,7 @@ import type { LevelTargets } from "@/server/settings/app-catalog";
 import { levelOrder, levelRank } from "../languages";
 import { problem, zodProblems, type Problem } from "../problems";
 import { emptyRound } from "../report";
+import { updateImported } from "./hand-edits";
 import { example, labelOf, languageValues, lines, params, trace } from "./shared";
 import type { ContentKind } from "./types";
 
@@ -56,7 +57,7 @@ export const unitList: ContentKind = {
     };
   },
 
-  async importRecords(tx, batch, records) {
+  async importRecords(tx, batch, records, _parts, by) {
     const round = emptyRound();
     const { level } = params<UnitListParams>(batch);
     const prefix = `${batch.language}-${level.toLowerCase()}-`;
@@ -102,10 +103,9 @@ export const unitList: ContentKind = {
         ...trace(batch),
       };
       const saved = existing
-        ? await tx.grammarUnit.update({ where: { id: existing.id }, data: fields })
+        ? await updateImported(tx, { by, round, label: unit.title_fa, ref: { type: "grammar_unit", id: existing.id } }, existing, fields, (write) => tx.grammarUnit.update({ where: { id: existing.id }, data: write }))
         : await tx.grammarUnit.create({ data: { language: batch.language, unit_code: unit.unit_code, ...fields } });
-      if (existing) round.updated++;
-      else round.added++;
+      if (!existing) round.added++;
       round.accepted.push({ label: unit.title_fa, entity: { type: "grammar_unit", id: saved.id }, record });
     }
     return round;

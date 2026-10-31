@@ -17,10 +17,10 @@ import { logError } from "@/server/errors";
 /** "done": settled. "gone": someone settled it already or the input was wrong. "failed": an error, logged. */
 export type ResolveOutcome = "done" | "gone" | "failed";
 
-async function run(where: string, work: () => Promise<boolean>): Promise<ResolveOutcome> {
+async function run(where: string, work: (adminId: number) => Promise<boolean>): Promise<ResolveOutcome> {
   const admin = await requireAdmin();
   try {
-    const done = await work();
+    const done = await work(admin.id);
     revalidatePath("/admin", "layout");
     return done ? "done" : "gone";
   } catch (error) {
@@ -31,17 +31,17 @@ async function run(where: string, work: () => Promise<boolean>): Promise<Resolve
 
 export async function settleCandidate(language: string, key: string, action: CandidateAction) {
   if (!isLanguage(language)) return "gone" as const;
-  return run("resolve.candidate", () => resolveCandidate(language, key, action));
+  return run("resolve.candidate", (adminId) => resolveCandidate(language, key, action, adminId));
 }
 
 export async function settleSuspect(language: string, key: string, action: SuspectAction) {
   if (!isLanguage(language)) return "gone" as const;
-  return run("resolve.suspect", () => resolveSuspect(language, key, action));
+  return run("resolve.suspect", (adminId) => resolveSuspect(language, key, action, adminId));
 }
 
 export async function settleDuplicate(language: string, wordId: number, isNewSense: boolean) {
   if (!isLanguage(language)) return "gone" as const;
-  return run("resolve.duplicate", () => resolveDuplicate(language, wordId, isNewSense));
+  return run("resolve.duplicate", (adminId) => resolveDuplicate(language, wordId, isNewSense, adminId));
 }
 
 export async function findWords(language: string, query: string): Promise<WordRef[]> {

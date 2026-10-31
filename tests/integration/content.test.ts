@@ -9,6 +9,9 @@ import {
   submitAnswer,
   submitQa,
 } from "@/server/content/batches";
+import { unitEditor } from "@/server/content/library/edit/units";
+import { listLog } from "@/server/content/library/history";
+import { wordEditor } from "@/server/content/library/edit/words";
 import { describeProblem } from "@/server/content/problems";
 import { resetDb, testDb } from "./db";
 
@@ -212,6 +215,45 @@ describe("grammar unit list (P-U)", () => {
   });
 });
 
+describe("a new answer for items the admin changed by hand", () => {
+  it("keeps a unit title edited by hand and writes the rest of the unit", async () => {
+    const batch = await batchFor("units", "de");
+    const answer = {
+      units: [
+        { unit_code: "de-a1-artikel", title_fa: "حرف تعریف", level: "A1", scope_fa: "der، die، das" },
+        { unit_code: "de-a2-perfekt", title_fa: "گذشته", level: "A1", scope_fa: "Perfekt" },
+      ],
+      issues: [],
+    };
+    expect(await submitAnswer(batch.id, [json(answer)], "answer", 1)).toEqual({ state: "imported", rejected: 1 });
+    const unit = await testDb.grammarUnit.findFirstOrThrow({ where: { unit_code: "de-a1-artikel" } });
+    const form = (await unitEditor.load(unit.id))!;
+    expect(await unitEditor.save(unit.id, { ...form.values, title_fa: "حرف‌های تعریف" }, 1)).toMatchObject({ state: "saved" });
+
+    const fixed = {
+      units: [
+        { unit_code: "de-a1-artikel", title_fa: "آرتیکل", level: "A1", scope_fa: "der، die، das و ein" },
+        { unit_code: "de-a1-perfekt", title_fa: "گذشته", level: "A1", scope_fa: "Perfekt" },
+      ],
+      issues: [],
+    };
+    expect(await submitAnswer(batch.id, [json(fixed)], "fix", 1)).toEqual({ state: "imported", rejected: 0 });
+    expect(await testDb.grammarUnit.findUniqueOrThrow({ where: { id: unit.id } })).toMatchObject({ title_fa: "حرف‌های تعریف", scope_fa: "der، die، das و ein" });
+    const report = batchReport(await testDb.importBatch.findUniqueOrThrow({ where: { id: batch.id } }))!;
+    expect(report.warnings.map((flag) => [flag.label, flag.problem])).toEqual([["آرتیکل", { key: "handEditKept", vars: { fields: "title_fa" } }]]);
+
+    // The change log has each paste under «ساخت محتوا», and what the fix changed on the unit.
+    const pastes = await listLog("batches", 1);
+    expect(pastes.items.map((item) => [item.title?.text, item.lines[0].label, item.lines[0].note, item.href, item.revert])).toEqual([
+      [`فهرست واحدهای دستوری، دسته ${batch.id.toLocaleString("fa-IR")}`, "دور ۲", "۱ تازه، ۱ به‌روز", `/admin/batches/${batch.id}`, "no"],
+      [`فهرست واحدهای دستوری، دسته ${batch.id.toLocaleString("fa-IR")}`, "دور ۱", "۱ تازه، ۱ رد شد", `/admin/batches/${batch.id}`, "no"],
+    ]);
+    const unitLog = await listLog("units", 1);
+    expect(unitLog.items[0]).toMatchObject({ actionLabel: "ورود جواب چت‌بات", revert: "ready" });
+    expect(unitLog.items[0].lines.map((line) => line.label)).toEqual(["محدوده"]);
+  });
+});
+
 describe("word records (P-W)", () => {
   async function skeletons(language: "fr" | "de", list: [string, string, boolean?][]) {
     for (const [index, [lemma, pos, noCard]] of list.entries()) {
@@ -276,8 +318,74 @@ describe("word records (P-W)", () => {
       ["gehen", ["masteryLowLevel"]],
       ["Bude", ["colloquialWithoutStandard"]],
     ]);
-    expect(report.warnings.map((flag) => flag.problem.key)).toEqual(["notReturned", "notReturned", "notReturned"]);
+    // They came back refused, so none is reported missing.
+    expect(report.warnings.map((flag) => flag.problem.key)).toEqual([]);
     expect(await testDb.word.count({ where: { meaning_fa: { not: null } } })).toBe(0);
+  });
+
+  it("fixes refused words without calling the others missing, and keeps a refused word the fix left out", async () => {
+    await skeletons("fr", [
+      ["voiture", "noun"],
+      ["manger", "verb"],
+      ["pomme", "noun"],
+    ]);
+    const batch = await batchFor("words");
+    const answer = {
+      words: [
+        wordRecord({ code: "voiture", lemma: "voiture", meaning_fa: "ماشین", concept_fa: "ماشین" }),
+        wordRecord({ code: "manger", lemma: "manger", pos: "verbe", meaning_fa: "خوردن", concept_fa: "خوردن" }),
+        wordRecord({ code: "pomme", lemma: "pomme", gender: "x", meaning_fa: "سیب", concept_fa: "سیب" }),
+      ],
+      issues: [],
+    };
+    expect(await submitAnswer(batch.id, [json(answer)], "answer")).toEqual({ state: "imported", rejected: 2 });
+    const fixed = { words: [wordRecord({ code: "manger", lemma: "manger", pos: "verb", gender: null, meaning_fa: "خوردن", concept_fa: "خوردن" })], issues: [] };
+    expect(await submitAnswer(batch.id, [json(fixed)], "fix")).toEqual({ state: "imported", rejected: 1 });
+    const report = batchReport(await testDb.importBatch.findUniqueOrThrow({ where: { id: batch.id } }))!;
+    expect(report.rejected.map((item) => item.label)).toEqual(["pomme"]);
+    // Refused words are listed as refused, not as missing; voiture was filled in the first round.
+    expect(report.warnings.filter((flag) => flag.problem.key === "notReturned")).toEqual([]);
+  });
+
+  it("keeps what the admin changed by hand when a fix answer brings the word again", async () => {
+    await skeletons("fr", [
+      ["voiture", "noun"],
+      ["manger", "verb"],
+    ]);
+    const batch = await batchFor("words");
+    const answer = {
+      words: [
+        wordRecord({ code: "voiture", lemma: "voiture", meaning_fa: "ماشین", concept_fa: "ماشین" }),
+        wordRecord({ code: "manger", lemma: "manger", pos: "verbe", meaning_fa: "خوردن", concept_fa: "خوردن" }),
+      ],
+      issues: [],
+    };
+    expect(await submitAnswer(batch.id, [json(answer)], "answer", 1)).toEqual({ state: "imported", rejected: 1 });
+    const voiture = await testDb.word.findFirstOrThrow({ where: { code: "voiture" } });
+    const form = (await wordEditor.load(voiture.id))!;
+    expect(await wordEditor.save(voiture.id, { ...form.values, meaning_fa: "خودرو" }, 1)).toMatchObject({ state: "saved" });
+
+    const again = {
+      words: [
+        wordRecord({ code: "voiture", lemma: "voiture", meaning_fa: "اتومبیل", concept_fa: "ماشین", note_fa: "اسم مؤنث" }),
+        wordRecord({ code: "manger", lemma: "manger", pos: "verb", gender: null, meaning_fa: "خوردن", concept_fa: "خوردن" }),
+      ],
+      issues: [],
+    };
+    expect(await submitAnswer(batch.id, [json(again)], "fix", 1)).toEqual({ state: "imported", rejected: 0 });
+    expect(await testDb.word.findUniqueOrThrow({ where: { id: voiture.id } })).toMatchObject({ meaning_fa: "خودرو", note_fa: "اسم مؤنث" });
+    const report = batchReport(await testDb.importBatch.findUniqueOrThrow({ where: { id: batch.id } }))!;
+    const kept = report.warnings.filter((flag) => flag.problem.key === "handEditKept");
+    expect(kept.map((flag) => [flag.label, flag.problem.vars])).toEqual([["voiture", { fields: "meaning_fa" }]]);
+    expect(describeProblem(kept[0].problem)).toContain("برای معنی فارسی چیز دیگری داشت");
+    // The fix wrote the note, so the change log has it with the admin who pasted it.
+    const logged = await testDb.adminLog.findMany({ where: { entity: "word", entity_id: String(voiture.id) }, orderBy: { id: "asc" } });
+    expect(logged.map((row) => row.action)).toEqual(["batch", "edit", "batch"]);
+    expect(logged[2]).toMatchObject({
+      admin_id: 1,
+      before: { note_fa: null },
+      after: { note_fa: "اسم مؤنث" },
+    });
   });
 
   it("refuses to overwrite an approved word and marks a repeated lemma for the admin", async () => {
@@ -436,14 +544,28 @@ describe("vocabulary sentences (P-S) and the QA round", () => {
       findings: [
         { path: "sentences[1].translation_fa", severity: "HIGH", problem: "ترجمه دقیق نیست", suggestion: "..." },
         { path: "nonsense", severity: "low", problem: "?", suggestion: null },
+        { path: "sentences[0].text", severity: "critical", problem: "جمله طبیعی نیست" },
+        { path: "sentences[0].tokens", severity: "شاید", problem: "یک نگاشت مشکوک است" },
+        { path: "sentences[0]", severity: "low", note: "بدون متن مشکل" },
       ],
     };
-    expect(await submitQa(batch.id, [json(findings)])).toEqual({ state: "imported", rejected: 0 });
+    expect(await submitQa(batch.id, [json(findings)], 1)).toEqual({ state: "imported", rejected: 0 });
     const done = await testDb.importBatch.findUniqueOrThrow({ where: { id: batch.id } });
     expect(done.state).toBe("qa_done");
     expect(batchFindings(done)).toEqual([
       expect.objectContaining({ severity: "high", label: "Je veux une orange.", entity: { type: "sentence", id: second.id } }),
       expect.objectContaining({ severity: "low", entity: null }),
+      // Other words for a severity are read as the prompt's three; an unknown one is not made "low".
+      expect.objectContaining({ severity: "high", entity: { type: "sentence", id: first.id } }),
+      expect.objectContaining({ severity: "medium", entity: { type: "sentence", id: first.id } }),
+      // A finding that cannot be read is kept as written.
+      expect.objectContaining({ severity: "medium", entity: null, problem: expect.stringContaining("بدون متن مشکل") }),
+    ]);
+    const logged = await testDb.adminLog.findMany({ where: { entity: "import_batch", entity_id: String(batch.id) }, orderBy: { id: "asc" } });
+    expect(logged.map((row) => [row.action, row.after])).toEqual([
+      ["batch", expect.objectContaining({ kind: "P_S", round: 1, added: 2, rejected: 1 })],
+      ["batch", expect.objectContaining({ round: 2, skipped: 1 })],
+      ["qa", { kind: "P_S", language: "fr", findings: 5, high: 2 }],
     ]);
   });
 

@@ -6,6 +6,7 @@ import { appSetting } from "@/server/settings/read";
 import { posValues } from "@/schemas/common";
 import { freeCode, readCode, senseCode } from "./codes";
 import { lastIntroOrder, placeAfter } from "./intro-order";
+import { logChange } from "./library/log";
 import { refreshDifficulty } from "./text-difficulty";
 import type { Tx } from "./kinds/types";
 
@@ -176,6 +177,21 @@ async function confirmForm(tx: Tx, wordId: number, surface: string, lemma: strin
   });
 }
 
+/** The decisions «حل کردن» logs (PRD §13.1), each with the word or text it was about. */
+type Decision = "candidate_add" | "candidate_word" | "candidate_name" | "suspect_confirm" | "suspect_word" | "new_sense" | "duplicate";
+
+/** One log row per decision: on the word it settled on, or on the first sentence for a name. */
+async function logDecision(tx: Tx, adminId: number | null, decision: Decision, rows: OpenRow[], target: { entity: "word" | "sentence"; id: number }, extra: Record<string, unknown> = {}) {
+  const sentences = new Set(rows.map((row) => row.sentence_id)).size;
+  await logChange(tx, adminId, {
+    action: "resolve",
+    entity: target.entity,
+    entityId: target.id,
+    before: null,
+    after: { decision, surface: rows[0]?.surface ?? null, sentences, ...extra },
+  });
+}
+
 /** Links every row of a group to a word and clears its marks. */
 async function linkRows(tx: Tx, rows: OpenRow[], word: { id: number; lemma: string }) {
   await tx.sentenceWord.updateMany({
@@ -197,7 +213,7 @@ export type CandidateAction =
   | { type: "listed" };
 
 /** Settles one candidate group. Returns false when the group is already settled or the input is wrong. */
-export async function resolveCandidate(language: string, key: string, action: CandidateAction): Promise<boolean> {
+export async function resolveCandidate(language: string, key: string, action: CandidateAction, adminId: number | null = null): Promise<boolean> {
   return db.$transaction(async (tx) => {
     const rows = (await openRows(tx, language)).filter((row) => row.candidate_reason && candidateKey(row) === key);
     if (rows.length === 0) return false;
@@ -208,18 +224,21 @@ export async function resolveCandidate(language: string, key: string, action: Ca
         data: { kind: "name", word_id: null, candidate_reason: null, suspect: false },
       });
       await refreshDifficulty(tx, { sentenceIds: rows.map((row) => row.sentence_id) });
+      await logDecision(tx, adminId, "candidate_name", rows, { entity: "sentence", id: rows[0].sentence_id });
       return true;
     }
     if (action.type === "listed") {
       const match = (await wordsNamed(tx, language, [rows[0].surface])).get(fold(rows[0].surface));
       if (!match) return false;
       await linkRows(tx, rows, match);
+      await logDecision(tx, adminId, "candidate_word", rows, { entity: "word", id: match.id });
       return true;
     }
     if (action.type === "choose") {
       const word = await findWord(tx, language, action.wordId);
       if (!word) return false;
       await linkRows(tx, rows, word);
+      await logDecision(tx, adminId, "candidate_word", rows, { entity: "word", id: word.id });
       return true;
     }
 
@@ -231,6 +250,7 @@ export async function resolveCandidate(language: string, key: string, action: Ca
     const same = existing.find((word) => word.status !== "retired" && word.pos === action.pos && fold(word.lemma) === fold(lemma));
     if (same) {
       await linkRows(tx, rows, same);
+      await logDecision(tx, adminId, "candidate_word", rows, { entity: "word", id: same.id });
       return true;
     }
     const rank = await tx.frequencyItem.findFirst({ where: { language, lemma }, select: { rank: true } });
@@ -246,6 +266,7 @@ export async function resolveCandidate(language: string, key: string, action: Ca
       },
     });
     await linkRows(tx, rows, word);
+    await logDecision(tx, adminId, "candidate_add", rows, { entity: "word", id: word.id }, { lemma, pos: action.pos, level: action.level });
     return true;
   });
 }
@@ -253,13 +274,14 @@ export async function resolveCandidate(language: string, key: string, action: Ca
 export type SuspectAction = { type: "confirm" } | { type: "choose"; wordId: number };
 
 /** Settles one suspect group: the mapping is right (remembered), or another word is the right one. */
-export async function resolveSuspect(language: string, key: string, action: SuspectAction): Promise<boolean> {
+export async function resolveSuspect(language: string, key: string, action: SuspectAction, adminId: number | null = null): Promise<boolean> {
   return db.$transaction(async (tx) => {
     const rows = (await openRows(tx, language)).filter((row) => row.suspect && suspectKey(row) === key);
     if (rows.length === 0 || !rows[0].word) return false;
     const word = action.type === "confirm" ? rows[0].word : await findWord(tx, language, action.wordId);
     if (!word) return false;
     await linkRows(tx, rows, word);
+    await logDecision(tx, adminId, action.type === "confirm" ? "suspect_confirm" : "suspect_word", rows, { entity: "word", id: word.id });
     return true;
   });
 }
@@ -269,7 +291,7 @@ export async function resolveSuspect(language: string, key: string, action: Susp
  * lemma-2 and points sense_of at the existing word; "duplicate" retires it and moves anything that
  * already used it over to the existing word.
  */
-export async function resolveDuplicate(language: string, wordId: number, isNewSense: boolean): Promise<boolean> {
+export async function resolveDuplicate(language: string, wordId: number, isNewSense: boolean, adminId: number | null = null): Promise<boolean> {
   return db.$transaction(async (tx) => {
     const word = await tx.word.findFirst({ where: { id: wordId, language, dup_of_id: { not: null }, status: { not: "retired" } } });
     if (!word) return false;
@@ -278,18 +300,21 @@ export async function resolveDuplicate(language: string, wordId: number, isNewSe
 
     if (isNewSense) {
       const taken = new Set((await tx.word.findMany({ where: { language }, select: { code: true } })).map((row) => row.code));
+      const code = senseCode(existing.lemma, taken);
       await tx.word.update({
         where: { id: word.id },
-        data: { code: senseCode(existing.lemma, taken), sense_of: existing.code, dup_of_id: null },
+        data: { code, sense_of: existing.code, dup_of_id: null },
       });
       if (word.level === existing.level) await placeAfter(tx, language, word.level, [{ wordId: word.id, afterId: existing.id }]);
+      await logDecision(tx, adminId, "new_sense", [], { entity: "word", id: word.id }, { word: existing.lemma, code });
       return true;
     }
 
-    await tx.sentenceWord.updateMany({ where: { word_id: word.id }, data: { word_id: existing.id } });
-    await tx.sentenceTarget.updateMany({ where: { target_type: "word", target_id: word.id }, data: { target_id: existing.id } });
+    const moved = await tx.sentenceWord.updateMany({ where: { word_id: word.id }, data: { word_id: existing.id } });
+    const targets = await tx.sentenceTarget.updateMany({ where: { target_type: "word", target_id: word.id }, data: { target_id: existing.id } });
     await tx.word.update({ where: { id: word.id }, data: { status: "retired", dup_of_id: null, intro_order: null } });
     await refreshDifficulty(tx, { wordIds: [existing.id] });
+    await logDecision(tx, adminId, "duplicate", [], { entity: "word", id: word.id }, { word: existing.lemma, mapped: moved.count, targets: targets.count });
     return true;
   });
 }

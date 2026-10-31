@@ -5,6 +5,7 @@ import { appSetting } from "@/server/settings/read";
 import { problem, zodProblems, type Problem } from "../problems";
 import { emptyRound } from "../report";
 import { allowedWords } from "./allowed";
+import { updateImported } from "./hand-edits";
 import { batchSize, example, labelOf, languageValues, lines, params, trace } from "./shared";
 import { nextLevel, openParams, unitLines, wordCount, type LevelNext } from "./targets";
 import type { ContentKind } from "./types";
@@ -92,7 +93,7 @@ export const writing: ContentKind = {
     };
   },
 
-  async importRecords(tx, batch, records) {
+  async importRecords(tx, batch, records, _parts, by) {
     const round = emptyRound();
     const language = batch.language;
     const { level } = params<WritingParams>(batch);
@@ -130,10 +131,9 @@ export const writing: ContentKind = {
         ...trace(batch),
       };
       const saved = existing
-        ? await tx.writingTask.update({ where: { id: existing.id }, data })
+        ? await updateImported(tx, { by, round, label: task.prompt_fa, ref: { type: "writing_task", id: existing.id } }, existing, data, (write) => tx.writingTask.update({ where: { id: existing.id }, data: write }))
         : await tx.writingTask.create({ data: { language, level, prompt_fa: task.prompt_fa, ...data } });
-      if (existing) round.updated++;
-      else round.added++;
+      if (!existing) round.added++;
       round.accepted.push({ label: task.prompt_fa, entity: { type: "writing_task", id: saved.id }, record });
     }
     return round;

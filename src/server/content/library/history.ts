@@ -15,6 +15,7 @@ import { languageCodes } from "../languages";
 import { orderEntity, type OrderList } from "../order";
 import type { Voice } from "./list";
 import { isSettingRow, latestRows, revertible, settingEntities } from "./revert";
+import { BATCH_ENTITY } from "./log";
 import { entityOf, isLibrarySlug, librarySlugs, type LibrarySlug } from "./slugs";
 
 /**
@@ -24,7 +25,7 @@ import { entityOf, isLibrarySlug, librarySlugs, type LibrarySlug } from "./slugs
  */
 
 export const LOG_PAGE_SIZE = 30;
-export const logKinds = [...librarySlugs, "order", "publish", "settings", "users"] as const;
+export const logKinds = [...librarySlugs, "order", "publish", "batches", "settings", "users"] as const;
 export type LogKind = (typeof logKinds)[number];
 export const isLogKind = (value: unknown): value is LogKind => logKinds.includes(value as LogKind);
 
@@ -53,8 +54,12 @@ const publishEntities = ["publish", "level_release", "language"];
 const isPublishRow = (row: Pick<AdminLog, "entity">) => publishEntities.includes(row.entity);
 /** The rows «کاربران» writes: access turned on or off, an account added (and the first admin, from the command line). */
 const isAccountRow = (row: Pick<AdminLog, "entity">) => row.entity === ACCOUNT_ENTITY;
-const isOrderRow = (row: Pick<AdminLog, "entity" | "entity_id">) => !isPublishRow(row) && !isSettingRow(row) && !isAccountRow(row) && !/^\d+$/.test(row.entity_id ?? "");
-const isItemRow = (row: Pick<AdminLog, "entity" | "entity_id">) => !isPublishRow(row) && !isSettingRow(row) && !isAccountRow(row) && !isOrderRow(row);
+/** The rows about a batch on the four-step path: each answer pasted, its QA, refused records set aside, the batch thrown away. */
+const isBatchRow = (row: Pick<AdminLog, "entity">) => row.entity === BATCH_ENTITY;
+const isOrderRow = (row: Pick<AdminLog, "entity" | "entity_id">) =>
+  !isPublishRow(row) && !isSettingRow(row) && !isAccountRow(row) && !isBatchRow(row) && !/^\d+$/.test(row.entity_id ?? "");
+const isItemRow = (row: Pick<AdminLog, "entity" | "entity_id">) =>
+  !isPublishRow(row) && !isSettingRow(row) && !isAccountRow(row) && !isBatchRow(row) && !isOrderRow(row);
 
 /** The `entity_id` values order rows can have: a language, or language and level. */
 async function orderKeys() {
@@ -71,6 +76,7 @@ async function whereOf(kind: LogKind | null): Promise<Prisma.AdminLogWhereInput>
   if (kind === "publish") return { entity: { in: publishEntities } };
   if (kind === "settings") return { entity: { in: settingEntities } };
   if (kind === "users") return { entity: ACCOUNT_ENTITY };
+  if (kind === "batches") return { entity: BATCH_ENTITY };
   const keys = await orderKeys();
   if (kind === "order") return { entity: { in: Object.values(orderEntity) }, entity_id: { in: keys } };
   return { entity: entityOf[kind], NOT: { entity_id: { in: keys } } };
@@ -355,6 +361,29 @@ function accountLines(row: AdminLog): ChangeLine[] {
     });
 }
 
+type BatchInfo = { kind?: string; language?: string; round?: number; added?: number; updated?: number; skipped?: number; rejected?: number; findings?: number; high?: number; count?: number };
+const roundCounts = ["added", "updated", "skipped", "rejected"] as const;
+
+/** A batch row in one line: what the round brought, the QA findings, or what was set aside. */
+function batchLines(row: AdminLog, info: BatchInfo): ChangeLine[] {
+  if (row.action === "batch") {
+    const parts = roundCounts.filter((key) => (info[key] ?? 0) > 0).map((key) => t(`admin.log.batch.${key}`, { count: info[key]! }));
+    return [{ key: "round", label: t("admin.log.batch.round", { round: info.round ?? 1 }), note: parts.join("، ") || t("admin.log.batch.nothing") }];
+  }
+  if (row.action === "qa") return [{ key: "qa", label: "", note: t("admin.log.batch.findings", { count: info.findings ?? 0, high: info.high ?? 0 }) }];
+  if (row.action === "dismiss") return [{ key: "dismiss", label: "", note: t("admin.log.batch.dismissed", { count: info.count ?? 0 }) }];
+  return [{ key: "cancel", label: "", note: t("admin.log.batch.cancelled") }];
+}
+
+type ResolveInfo = { decision?: string; surface?: string | null; sentences?: number; word?: string; mapped?: number; targets?: number };
+
+/** A «حل کردن» decision in one sentence. */
+function resolveLines(row: AdminLog): ChangeLine[] {
+  const info = (row.after ?? {}) as ResolveInfo;
+  const vars = { surface: info.surface ?? "", count: info.sentences ?? 0, word: info.word ?? "", mapped: info.mapped ?? 0, targets: info.targets ?? 0 };
+  return [{ key: "resolve", label: "", note: isolateLatin(t(`admin.log.resolve.${info.decision}` as MessageKey, vars)) }];
+}
+
 export async function listLog(kind: LogKind | null, page: number): Promise<LogPage> {
   const where = await whereOf(kind);
   const total = await db.adminLog.count({ where });
@@ -419,6 +448,23 @@ export async function listLog(kind: LogKind | null, page: number): Promise<LogPa
           revert: "no",
         };
       }
+      if (isBatchRow(row)) {
+        const info = (row.after ?? row.before ?? {}) as BatchInfo;
+        const phone = row.admin_id !== null ? phones.get(row.admin_id) : null;
+        return {
+          id: row.id,
+          ts: row.ts.toISOString(),
+          action: row.action,
+          actionLabel: t(`admin.log.actions.${row.action}` as MessageKey),
+          kindLabel: t("admin.log.entities.import_batch"),
+          title: shown(t("admin.log.batchTitle", { kind: t(`admin.batch.kind.${info.kind}` as MessageKey), id: Number(row.entity_id) }), "fa"),
+          href: row.action === "cancel" ? null : `/admin/batches/${row.entity_id}`,
+          language: info.language ?? null,
+          who: phone ? t("admin.log.by", { who: formatMobileFa(phone) }) : t("admin.log.byUnknown"),
+          lines: batchLines(row, info),
+          revert: "no",
+        };
+      }
       const setting = isSettingRow(row) ? settingLog(row) : null;
       if (setting) {
         const phone = row.admin_id !== null ? phones.get(row.admin_id) : null;
@@ -468,7 +514,9 @@ export async function listLog(kind: LogKind | null, page: number): Promise<LogPa
             ? [{ key: "deleted", label: "", note: deletedSentences ? t("admin.log.deletedWithSentences", { count: deletedSentences }) : t("admin.log.deleted") }]
             : row.action === "audio"
               ? audioLines(row)
-              : order
+              : row.action === "resolve"
+                ? resolveLines(row)
+                : order
                 ? orderLines(row, titles)
                 : changeLines(row),
         revert: !revertible(row) ? "no" : latest.has(row.id) ? "ready" : "later",

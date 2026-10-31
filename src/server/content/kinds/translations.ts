@@ -96,7 +96,7 @@ export const translations: ContentKind = {
     };
   },
 
-  async importRecords(tx, batch, records) {
+  async importRecords(tx, batch, records, _parts, by) {
     const round = emptyRound();
     const { unit_id } = params<TranslationParams>(batch);
     const unit = await tx.grammarUnit.findUnique({ where: { id: unit_id } });
@@ -109,7 +109,7 @@ export const translations: ContentKind = {
         reject(labelOf(record, ["prompt_fa"], index), [problem("unitGone")]);
         continue;
       }
-      const context: GrammarContext = { tx, batch, unit, vocabulary, round, seen, reject };
+      const context: GrammarContext = { tx, batch, by, unit, vocabulary, round, seen, reject };
       await importTranslation(context, record, index);
     }
     return round;

@@ -49,7 +49,7 @@ export async function pasteAnswer(batchId: number, input: { text: string; mode: 
   try {
     if (input.chatbot) await setChatbot(batchId, input.chatbot);
     const before = input.mode === "answer" ? await cutAnswer(batchId) : null;
-    const result = await submitAnswer(batchId, before ? [before, input.text] : [input.text], input.mode);
+    const result = await submitAnswer(batchId, before ? [before, input.text] : [input.text], input.mode, admin.id);
     refresh(batchId);
     return outcome(result);
   } catch (error) {
@@ -62,7 +62,7 @@ export async function pasteAnswer(batchId: number, input: { text: string; mode: 
 export async function pasteQa(batchId: number, text: string): Promise<PasteOutcome> {
   const admin = await requireAdmin();
   try {
-    const result = await submitQa(batchId, [text]);
+    const result = await submitQa(batchId, [text], admin.id);
     refresh(batchId);
     return outcome(result);
   } catch (error) {
@@ -78,8 +78,8 @@ export async function startOver(batchId: number) {
 }
 
 export async function skipRejected(batchId: number) {
-  await requireAdmin();
-  await dismissRejected(batchId);
+  const admin = await requireAdmin();
+  await dismissRejected(batchId, admin.id);
   refresh(batchId);
 }
 
@@ -88,7 +88,7 @@ export async function throwAway(batchId: number) {
   const batch = await db.importBatch.findUnique({ where: { id: batchId }, select: { language: true } });
   if (!batch) redirect("/admin/create");
   try {
-    await cancelBatch(batchId);
+    await cancelBatch(batchId, admin.id);
   } catch (error) {
     await logError("batch.cancel", error, { userId: admin.id });
   }

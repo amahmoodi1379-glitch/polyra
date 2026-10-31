@@ -6,7 +6,32 @@ import type { Tx } from "../kinds/types";
  * and `after` hold only the columns that changed (plus child rows such as a sentence's word mapping
  * under their own key), so the change log can show them and "برگردان" can put `before` back.
  */
-export type LogAction = "edit" | "status" | "delete" | "order" | "revert" | "publish" | "release" | "live" | "audio" | "import" | "access" | "account";
+/**
+ * `import` is the CSV word file (PRD §14.7). `batch` is a chatbot answer pasted on the four-step path
+ * (one row for the batch, one for each item it changed), `qa` its QA answer, `dismiss` and `cancel`
+ * the admin setting refused records or the whole batch aside, `resolve` a decision on «حل کردن».
+ */
+export type LogAction =
+  | "edit"
+  | "status"
+  | "delete"
+  | "order"
+  | "revert"
+  | "publish"
+  | "release"
+  | "live"
+  | "audio"
+  | "import"
+  | "batch"
+  | "qa"
+  | "dismiss"
+  | "cancel"
+  | "resolve"
+  | "access"
+  | "account";
+
+/** `admin_log.entity` of the rows about a batch itself (PRD §13.9), keyed by its id. */
+export const BATCH_ENTITY = "import_batch";
 
 export type LogEntry = {
   action: LogAction;

@@ -2,6 +2,8 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { afterAll, beforeEach, describe, expect, it } from "vitest";
 import { batchReport, createBatch, qaPrompt, submitAnswer } from "@/server/content/batches";
+import { sentenceEditor } from "@/server/content/library/edit/sentences";
+import { describeProblem } from "@/server/content/problems";
 import { contentStatus } from "@/server/content/status";
 import { resetDb, testDb } from "./db";
 
@@ -171,6 +173,39 @@ describe("texts with questions (P-T, PRD §7, §14.3)", () => {
     expect(after.sentence_ids[0]).not.toBe(old.id);
     expect(await testDb.sentence.findUnique({ where: { id: old.id } })).toBeNull();
     expect(await testDb.sentence.count()).toBe(7);
+  });
+
+  it("keeps a text whose sentence the admin changed by hand, takes the rest, and says the answer differs", async () => {
+    await words("fr", "A1", 40);
+    await unit("fr", "A1");
+    const batch = await textBatch("fr");
+    expect(await submitAnswer(batch.id, [fence(example("fr"))], "answer")).toMatchObject({ state: "imported" });
+    const before = await testDb.text.findFirstOrThrow();
+    const first = await testDb.sentence.findFirstOrThrow({ where: { text: "Bonjour, madame !" } });
+    const form = (await sentenceEditor.load(first.id))!;
+    expect(await sentenceEditor.save(first.id, { ...form.values, translation_fa: "سلام خانم!" }, 1)).toMatchObject({ state: "saved" });
+
+    const again = example("fr");
+    again.texts[0].sentences[0].text = "Bonjour madame !";
+    again.texts[0].title = "Au petit café";
+    expect(await submitAnswer(batch.id, [fence(again)], "fix", 1)).toMatchObject({ state: "imported" });
+    const after = await testDb.text.findFirstOrThrow();
+    expect(after.sentence_ids).toEqual(before.sentence_ids);
+    expect(after.title).toBe("Au petit café");
+    expect(await testDb.sentence.findUniqueOrThrow({ where: { id: first.id } })).toMatchObject({ text: "Bonjour, madame !", translation_fa: "سلام خانم!" });
+
+    const report = batchReport(await testDb.importBatch.findUniqueOrThrow({ where: { id: batch.id } }))!;
+    const kept = report.warnings.find((flag) => flag.problem.key === "handEditKept")!;
+    expect(kept.entity).toEqual({ type: "text", id: before.id });
+    expect(describeProblem(kept.problem)).toContain("برای جمله‌ها چیز دیگری داشت");
+    // The title the answer changed is in the change log, as an import of the chatbot's answer.
+    const logged = await testDb.adminLog.findFirstOrThrow({ where: { entity: "text", action: "batch" } });
+    expect(logged).toMatchObject({ admin_id: 1, entity_id: String(before.id), before: { title: "Au café" }, after: { title: "Au petit café" } });
+
+    // Without the hand edit the same answer replaces the sentences.
+    await testDb.adminLog.deleteMany({ where: { entity: "sentence" } });
+    expect(await submitAnswer(batch.id, [fence(again)], "fix", 1)).toMatchObject({ state: "imported" });
+    expect((await testDb.text.findFirstOrThrow()).sentence_ids[0]).not.toBe(first.id);
   });
 
   it("alternates the two A2 bands and marks the first texts of a level for placement", async () => {
