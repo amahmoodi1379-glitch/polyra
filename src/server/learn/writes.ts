@@ -27,9 +27,9 @@ export async function saveItemState(tx: Tx, who: Who, state: ItemStateE): Promis
 }
 
 /** Today's counters (PRD §10.5, §3.9), added to the row of the Tehran day. */
-export type DailyAdd = Partial<Record<"new_words" | "queue_words" | "new_units" | "new_conj" | "active_sec", number>>;
+export type DailyAdd = Partial<Record<"new_words" | "queue_words" | "new_units" | "new_conj" | "active_sec" | "new_text_sec_listening" | "new_text_sec_reading", number>>;
 
-export async function addDaily(tx: Tx, who: Who, today: string, add: DailyAdd, set: { words_cap_today?: number; cap_prompt_shown?: boolean } = {}) {
+export async function addDaily(tx: Tx, who: Who, today: string, add: DailyAdd, set: { words_cap_today?: number; cap_prompt_shown?: boolean; text_session_done?: boolean } = {}) {
   const increments = Object.fromEntries(Object.entries(add).filter(([, value]) => value)) as DailyAdd;
   if (Object.keys(increments).length === 0 && Object.keys(set).length === 0) return;
   await tx.dailyCounter.upsert({

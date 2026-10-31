@@ -8,8 +8,23 @@ import { applyNotebook } from "../../src/engine/notebook";
 import { closeRounds, type PlayResult } from "../../src/engine/session/play";
 import type { SessionPlan } from "../../src/engine/session/types";
 import { afterDrill } from "../../src/engine/drill";
-import { isItemKey, type ItemHistory, type LearnerSnapshot } from "../../src/engine/state";
+import { textLevelsAfter } from "../../src/engine/texts";
+import { isItemKey, itemKey, type DailyE, type ItemHistory, type LearnerSnapshot, type SkillName } from "../../src/engine/state";
 import type { Settings } from "../../src/engine/settings";
+
+/** A day's counters before any session. */
+export const emptyDay = (date: string): DailyE => ({
+  date,
+  newWords: 0,
+  wordsCapToday: null,
+  capPromptShown: false,
+  queueWords: 0,
+  newUnits: 0,
+  newConj: 0,
+  activeSec: 0,
+  newTextSec: { listening: 0, reading: 0 },
+  textSessionDone: false,
+});
 
 export function freshLearner(language: string, opts: { sessionLength?: number; vocabLevel?: string; knownBelow?: string } = {}): LearnerSnapshot {
   const level = opts.vocabLevel ?? "A1";
@@ -28,17 +43,22 @@ export function freshLearner(language: string, opts: { sessionLength?: number; v
       streakForgivenCount: 0,
       freezeCount: 0,
       freezeCheckedWeek: null,
+      textPromptDate: null,
     },
     skills: [
       { skill: "vocab", level, knownBelow: opts.knownBelow ?? "A1" },
       { skill: "grammar", level, knownBelow: opts.knownBelow ?? "A1" },
+      { skill: "listening", level, knownBelow: opts.knownBelow ?? "A1" },
+      { skill: "reading", level, knownBelow: opts.knownBelow ?? "A1" },
     ],
     items: [],
     notebook: [],
     queue: [],
-    today: { date: "", newWords: 0, wordsCapToday: null, capPromptShown: false, queueWords: 0, newUnits: 0, newConj: 0, activeSec: 0 },
+    today: emptyDay(""),
     confusions: [],
     drills: [],
+    texts: [],
+    mixedWithoutText: 0,
     history: new Map(),
     sentenceSeen: new Map(),
     latency: {},
@@ -51,7 +71,7 @@ export function freshLearner(language: string, opts: { sessionLength?: number; v
 /** A new calendar day: the daily counters start again. */
 export function newDay(learner: LearnerSnapshot, today: string): LearnerSnapshot {
   if (learner.today.date === today) return learner;
-  return { ...learner, today: { date: today, newWords: 0, wordsCapToday: null, capPromptShown: false, queueWords: 0, newUnits: 0, newConj: 0, activeSec: 0 }, touchedToday: [] };
+  return { ...learner, today: emptyDay(today), touchedToday: [] };
 }
 
 /** Writes one finished card into the learner, as the server does in the database. */
@@ -69,7 +89,7 @@ export function record(learner: LearnerSnapshot, result: Extract<PlayResult, { d
     if (!exists) {
       if (state.itemType === "word") {
         next.today.newWords++;
-        if (next.queue.some((row) => row.wordId === state.itemId)) next.today.queueWords++;
+        if (result.advanced.plan.items[itemKey("word", state.itemId)]?.queued) next.today.queueWords++;
         next.queue = next.queue.filter((row) => row.wordId !== state.itemId);
         next.recentIntroWordIds = [state.itemId, ...next.recentIntroWordIds].slice(0, 20);
       } else if (state.itemType === "grammar_unit") next.today.newUnits++;
@@ -85,6 +105,16 @@ export function record(learner: LearnerSnapshot, result: Extract<PlayResult, { d
   if (result.pair) {
     const pair = result.pair;
     next.confusions = [...next.confusions.filter((item) => !(item.wordId === pair.wordId && item.otherWordId === pair.otherWordId)), pair];
+  }
+  if (result.text) {
+    const { state, track, newSec } = result.text;
+    next.texts = [...next.texts.filter((item) => !(item.textId === state.textId && item.track === state.track)), state];
+    next.today.newTextSec = { ...next.today.newTextSec, [track]: next.today.newTextSec[track] + newSec };
+  }
+  // «کلمه‌های این متن»: the key words wait in the queue (PRD §7.5, source `key_word`).
+  for (const wordId of result.keyWords) {
+    if (next.items.some((item) => item.itemType === "word" && item.itemId === wordId) || next.queue.some((row) => row.wordId === wordId)) continue;
+    next.queue = [...next.queue, { wordId, source: "key_word", addedAt: now.toISOString() }];
   }
   if (result.drill !== null) {
     const sentenceId = result.drill;
@@ -134,8 +164,11 @@ export function closeLeft(learner: LearnerSnapshot, plan: SessionPlan, settings:
 }
 
 /** A finished session moves the skill levels up, as `finishSession` does. */
-export function finishLevels(learner: LearnerSnapshot, content: Content, settings: Settings): LearnerSnapshot {
+export function finishLevels(learner: LearnerSnapshot, content: Content, settings: Settings, now: Date): LearnerSnapshot {
   const moved = levelsAfter(content, indexItems(learner.items), learner.skills, settings);
-  if (!moved.vocab && !moved.grammar) return learner;
-  return { ...learner, skills: learner.skills.map((skill) => ({ ...skill, level: (skill.skill === "vocab" ? moved.vocab : skill.skill === "grammar" ? moved.grammar : null) ?? skill.level })) };
+  const levelOf = (skill: SkillName) => learner.skills.find((row) => row.skill === skill)?.level ?? null;
+  const texts = textLevelsAfter(content, learner.texts, levelOf, settings, now);
+  const up: Partial<Record<SkillName, string | null>> = { ...moved, ...texts };
+  if (!Object.values(up).some(Boolean)) return learner;
+  return { ...learner, skills: learner.skills.map((skill) => ({ ...skill, level: up[skill.skill] ?? skill.level })) };
 }

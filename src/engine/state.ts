@@ -47,6 +47,9 @@ export type DailyE = {
   newUnits: number;
   newConj: number;
   activeSec: number;
+  /** Seconds of new text today in each track (PRD §10.5) and whether a text session was built (§10.11). */
+  newTextSec: { listening: number; reading: number };
+  textSessionDone: boolean;
 };
 
 export type SkillName = "vocab" | "grammar" | "listening" | "reading";
@@ -54,6 +57,32 @@ export type SkillLevelE = { skill: SkillName; level: string; knownBelow: string 
 
 /** A bank sentence's listening drill (PRD §7.6, `sentence_drill_state`). */
 export type DrillStateE = { sentenceId: number; count: number; lastAt: string | null };
+
+/** The three attempts of a text in one track (PRD §7.4) and the stage of each: attempt 1 is a first round without help, then with help. */
+export type TextStage = "first" | "help" | "again";
+
+/** One scored round of a text: the first round of attempt 1, or attempt 2 or 3. A borrowed text's first round is not in `track_score` (PRD §7.5). */
+export type TextScoreE = { attempt: number; set: "A" | "B"; score: number; at: string; borrowed?: boolean };
+
+/**
+ * An attempt left half-way (PRD §7.4, `text_state.partial`): where it was, the answers given and the
+ * plays used. `borrowed` keeps a borrowed text's mark before its first round has a score (PRD §7.5).
+ */
+export type TextPartialE = { attempt: number; stage: TextStage; answers: Record<string, unknown>; plays: number; positionMs: number; borrowed?: boolean };
+
+/** A text in one track (PRD §4.2, `text_state`). */
+export type TextStateE = {
+  textId: number;
+  track: "listening" | "reading";
+  attemptsDone: number;
+  firstScore: number | null;
+  scores: TextScoreE[];
+  lastAttemptAt: string | null;
+  nextAttemptAt: string | null;
+  partial: TextPartialE | null;
+  partialUntil: string | null;
+  usedInTest: boolean;
+};
 
 export type ConfusionE = { wordId: number; otherWordId: number; count: number; lastAt: string; cardShownAt: string | null };
 
@@ -70,6 +99,8 @@ export type EnrollmentE = {
   streakForgivenCount: number;
   freezeCount: number;
   freezeCheckedWeek: string | null;
+  /** The day «بعداً» was pressed on the text session prompt (PRD §10.11). */
+  textPromptDate: string | null;
 };
 
 /** What happened to one item before, for exercise choice (PRD §9.3) and sentence choice (§5.7, §6.5). */
@@ -94,6 +125,10 @@ export type LearnerSnapshot = {
   confusions: ConfusionE[];
   /** Sentences drilled before (PRD §7.6). */
   drills: DrillStateE[];
+  /** Texts in each track (PRD §7.4). */
+  texts: TextStateE[];
+  /** Finished mixed sessions in a row, newest first, without a text attempt (PRD §10.11 condition 3). */
+  mixedWithoutText: number;
   history: Map<string, ItemHistory>;
   /** How often the learner has seen each sentence in any exercise. */
   sentenceSeen: Map<number, number>;

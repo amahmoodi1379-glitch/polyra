@@ -1,6 +1,6 @@
 import { newItemState, strongestPartner } from "../answer";
 import { buildG0, buildWordEx, type BuildEnv } from "../build";
-import { genderButtons, levelIndex, type ConjC, type Content, type UnitC, type WordC } from "../content";
+import { genderButtons, levelIndex, type ConjC, type Content, type Track, type UnitC, type WordC } from "../content";
 import { buildDrillEx, drillGate, drillKey, drillOrder } from "../drill";
 import type { Ex } from "../ex";
 import { exerciseDef, SHAPE, type TimeKey } from "../exercises";
@@ -12,15 +12,31 @@ import { buildRound, CONJ_LAST_STEP, lastStepOfUnit, lastStepOfWord, pickConjEx,
 import { seeded, shuffle } from "../random";
 import { num, type Settings } from "../settings";
 import { itemKey, parseItemKey, type ConfusionE, type ItemStateE, type ItemType, type LearnerSnapshot, type NotebookE, type SkillName } from "../state";
+import {
+  attemptCost,
+  dueTexts,
+  indexTextStates,
+  newText,
+  otherTrack,
+  partialText,
+  remainingCost,
+  stageRules,
+  stagesOf,
+  textKey,
+  textProgress,
+  withinTextTime,
+  type TextEnv,
+  type TextPick,
+} from "../texts";
 import { addDays, tehranDayStart } from "../time";
 import { conjCandidates, introducedCardWords, nextNewWords, nextUnit } from "./newmaterial";
 import { orderEntries, type Entry } from "./order";
 import type { Card, PlanItem, Scope, SessionPlan } from "./types";
-import { lessonView, makeEnv, tableView, wordCard } from "./views";
+import { lessonView, makeEnv, tableView, textView, wordCard } from "./views";
 
 /**
- * Builds a session (PRD §10.2–§10.9): vocabulary, grammar and sentence listening (§7.6). Texts,
- * phonics, production and placement samples are added by their own phases.
+ * Builds a session (PRD §10.2–§10.11): vocabulary, grammar, sentence listening (§7.6) and texts
+ * (§7.4, §7.5). Phonics, production and placement samples are added by their own phases.
  */
 
 export type BuildOptions = {
@@ -30,6 +46,8 @@ export type BuildOptions = {
   noAudio: boolean;
   /** The answer to the word-cap question (PRD §3.7). */
   cap: "more" | "none" | null;
+  /** The answer to «پیش از جلسه متن» (PRD §10.11): take the long text, or build without it. */
+  text?: "confirmed" | "later" | null;
   /** The session id, the seed of every random choice. */
   seed: string;
 };
@@ -46,10 +64,14 @@ export type BuildEffects = {
   capPromptShown: boolean;
   /** Due items with no exercise to show, a content problem the server logs for the teacher. */
   unbuildable: string[];
+  /** A text session was built (PRD §10.11): `is_text_session` and today's `text_session_done`. */
+  textSession: boolean;
 };
 
 export type BuildResult =
   | { kind: "ask_word_cap"; learned: number; canMore: boolean; effects: BuildEffects }
+  /** «پیش از جلسه متن»: the waiting text is longer than the session (PRD §10.11). */
+  | { kind: "ask_text_session"; minutes: number; textId: number; track: Track; effects: BuildEffects }
   | { kind: "nothing_left"; effects: BuildEffects }
   | { kind: "empty_notebook"; effects: BuildEffects }
   | { kind: "plan"; plan: SessionPlan; effects: BuildEffects };
@@ -276,7 +298,9 @@ const altOf = (ctx: Ctx, ex: Ex, rebuild: () => Ex | null) => (ex.audio && ctx.a
 export function buildSession(content: Content, learner: LearnerSnapshot, settings: Settings, now: Date, today: string, opts: BuildOptions): BuildResult {
   const { scope } = opts;
   const lengthMin = scope === "quick" ? num(settings, "quick.minutes") : opts.lengthMin;
-  const budget = lengthMin * 60;
+  /** The session's time (PRD §10.1); a text left half-way or a text session's text takes its share first (§10.2 steps 0 and 2). */
+  const fullBudget = lengthMin * 60;
+  let budget = fullBudget;
   /** The shortest exercise: below it nothing more fits. */
   const minCost = Math.min(...TIME_KEYS.map((key) => num(settings, key)));
   const env = makeEnv(content, learner, settings, seeded(opts.seed, "build"));
@@ -321,11 +345,11 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
       wordsBlocked = true;
       capPromptShown = true;
     } else {
-      const effects = { paceMode: pace.mode, backlog, becameSlow: pace.becameSlow, spread, lastSpreadDate, wordsCapToday, capPromptShown: true, unbuildable: [] };
+      const effects = { paceMode: pace.mode, backlog, becameSlow: pace.becameSlow, spread, lastSpreadDate, wordsCapToday, capPromptShown: true, unbuildable: [], textSession: false };
       return { kind: "ask_word_cap", learned: learner.today.newWords, canMore: wordsCapToday < hard, effects };
     }
   }
-  const effects: BuildEffects = { paceMode: pace.mode, backlog, becameSlow: pace.becameSlow, spread, lastSpreadDate, wordsCapToday, capPromptShown, unbuildable: [] };
+  const effects: BuildEffects = { paceMode: pace.mode, backlog, becameSlow: pace.becameSlow, spread, lastSpreadDate, wordsCapToday, capPromptShown, unbuildable: [], textSession: false };
 
   const entries: Entry[] = [];
   const planItems: Record<string, PlanItem> = {};
@@ -338,8 +362,90 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
     used += entry.cost;
   };
 
-  const wantWords = scope !== "grammar" && scope !== "listening";
-  const wantGrammar = scope !== "vocab" && scope !== "listening";
+  const textScope = scope === "listening" || scope === "reading";
+  const wantWords = scope !== "grammar" && !textScope;
+  const wantGrammar = scope !== "vocab" && !textScope;
+
+  // ── Texts (PRD §7.4, §7.5): none without sound in listening; only mixed and the two text sessions have them ──
+  const textTracks: Track[] = (scope === "mixed" ? (["listening", "reading"] as Track[]) : textScope ? [scope] : []).filter(
+    (track) => ctx.audio || track === "reading",
+  );
+  const tenv: TextEnv = {
+    content,
+    settings,
+    now,
+    known: env.known,
+    states: indexTextStates(learner.texts),
+    levelOf: (track) => learner.skills.find((skill) => skill.skill === track)?.level ?? content.levels[0],
+  };
+  const textsPlanned = new Set<number>();
+  const newTexts: Record<Track, number> = { listening: 0, reading: 0 };
+  const textSec = { ...learner.today.newTextSec };
+  const textEntry = (pick: TextPick, lead: boolean): Entry => {
+    const cost = pick.resume ? remainingCost(pick.text, pick.track, pick.resume, settings) : attemptCost(pick.text, pick.track, pick, settings);
+    // «کلمه‌های این متن» before a first attempt: its key words the learner does not know yet (PRD §7.5).
+    const keyWords =
+      pick.attempt === 1 && !pick.resume ? pick.text.keyWordIds.filter((id) => content.words.has(id) && !env.known(id)).slice(0, num(settings, "keywords.max")) : [];
+    return { t: "text", key: textKey(pick.text.id), pick, keyWords, lead, cost };
+  };
+  const noteText = (entry: Entry) => {
+    if (entry.t !== "text") return;
+    textsPlanned.add(entry.pick.text.id);
+    if (entry.pick.attempt === 1) newTexts[entry.pick.track]++;
+    if (entry.pick.attempt === 1 && !entry.pick.resume) textSec[entry.pick.track] += entry.cost;
+  };
+  /** A text placed first takes its time from the session's budget, not from a share (PRD §10.2). */
+  const leadText = (entry: Entry) => {
+    entries.push(entry);
+    inPlan.add(entry.key);
+    noteText(entry);
+    budget = Math.max(0, budget - entry.cost);
+  };
+  const addText = (entry: Entry) => {
+    add(entry);
+    noteText(entry);
+  };
+  /** A new text of a track that fits today's new text time (PRD §10.5) and, in a mixed session, its share and one per track. */
+  const newTextEntry = (track: Track, mixed: boolean): Entry | null => {
+    if (mixed && newTexts[track] >= 1) return null;
+    const pick = newText(tenv, track, textsPlanned);
+    if (!pick) return null;
+    const entry = textEntry(pick, false);
+    if (!withinTextTime(settings, textSec[track], entry.cost)) return null;
+    if (mixed && entry.cost > num(settings, "text.max_share") * fullBudget) return null;
+    return entry;
+  };
+
+  // Step 0: an attempt left half-way comes first, from where it was (PRD §7.4, T91).
+  const partial = textTracks.length ? partialText(tenv, textTracks) : null;
+  if (partial) leadText(textEntry(partial, true));
+
+  // Step 2: a text session after `text.session_every` mixed sessions without a text (PRD §10.11, T65).
+  if (
+    scope === "mixed" &&
+    !partial &&
+    !backlog &&
+    opts.text !== "later" &&
+    learner.mixedWithoutText >= num(settings, "text.session_every") &&
+    !learner.today.textSessionDone &&
+    learner.enrollment.textPromptDate !== today
+  ) {
+    const due = dueTexts(tenv, textTracks)[0];
+    const fresh = due
+      ? null
+      : textTracks
+          .map((track) => ({ track, entry: newTextEntry(track, false) }))
+          .filter((item): item is { track: Track; entry: Entry } => item.entry !== null)
+          .sort((a, b) => textProgress(content, tenv.states, a.track, tenv.levelOf(a.track), settings).progress - textProgress(content, tenv.states, b.track, tenv.levelOf(b.track), settings).progress)[0]?.entry;
+    const entry = due ? textEntry(due, true) : fresh ? { ...fresh, lead: true } : null;
+    if (entry && entry.t === "text") {
+      if (entry.cost > budget && opts.text !== "confirmed") {
+        return { kind: "ask_text_session", minutes: Math.max(1, Math.round(entry.cost / 60)), textId: entry.pick.text.id, track: entry.pick.track, effects };
+      }
+      leadText(entry);
+      effects.textSession = true;
+    }
+  }
 
   // Sentence listening (PRD §7.6): the suitable sentences in order, found as far as they are taken; none without sound.
   const fromStart = (() => {
@@ -426,7 +532,21 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
   let spent = 0;
   const leftover: string[] = [];
   const dueKeys = [...eligible].sort((a, b) => a.r - b.r).map((item) => item.key);
-  if (scope !== "notebook" && scope !== "extra" && scope !== "listening") {
+  // Attempts 2 and 3 first, the oldest first: `text.due_per_15min` of them, each within `text.max_share` of the session (PRD §10.2 step 4).
+  if (scope === "mixed") {
+    const cap = Math.ceil((num(settings, "text.due_per_15min") * lengthMin) / 15);
+    let taken = 0;
+    for (const pick of dueTexts(tenv, textTracks)) {
+      if (taken >= cap) break;
+      if (textsPlanned.has(pick.text.id)) continue;
+      const entry = textEntry(pick, false);
+      if (entry.cost > num(settings, "text.max_share") * fullBudget || spent + entry.cost > reviewBudget) continue;
+      addText(entry);
+      spent += entry.cost;
+      taken++;
+    }
+  }
+  if (scope !== "notebook" && scope !== "extra" && !textScope) {
     let misses = 0;
     for (const key of dueKeys) {
       const room = (scope === "quick" ? budget : reviewBudget) - spent;
@@ -505,7 +625,7 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
     return { t: "single", key, kind: "practice", ex, alt, step: state.step, cost: time(settings, ex), note: { refType: note.refType, refId: note.refId }, planItem: built.item };
   };
   const noteLeft: NotebookE[] = [];
-  if (scope !== "extra" && scope !== "listening") {
+  if (scope !== "extra" && !textScope) {
     const noteBudget = scope === "notebook" ? budget : scope === "quick" ? budget - used : share("notebook") * budget;
     let noteSpent = 0;
     for (const note of entriesOpen) {
@@ -567,11 +687,22 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
       vocab: vocabProgress(content, items, vocab, settings).progress,
       grammar: grammarProgress(content, items, grammarLevel(content, items), settings).progress,
     };
-    if (scope === "mixed" && drillsOpen) {
-      progress.listening = drillStandIn(skills, progress);
-      skills.add("listening");
+    // Listening's pack is a new text, else three drills; reading's is a new text (PRD §10.2 step 7).
+    const textPacks: Partial<Record<Track, Entry | null>> = {};
+    const textPack = (track: Track) => {
+      if (!(track in textPacks)) textPacks[track] = scope === "mixed" && textTracks.includes(track) ? newTextEntry(track, true) : null;
+      return textPacks[track] ?? null;
+    };
+    const barOf = (track: Track) => textProgress(content, tenv.states, track, tenv.levelOf(track), settings).progress;
+    const standIn = drillStandIn(skills, progress);
+    if (textPack("listening")) progress.listening = barOf("listening");
+    else if (scope === "mixed" && drillsOpen) progress.listening = standIn;
+    if (progress.listening !== undefined) skills.add("listening");
+    if (textPack("reading")) {
+      progress.reading = barOf("reading");
+      skills.add("reading");
     }
-    const packs: Partial<Record<SkillName, number>> = { vocab: 0, grammar: 0, listening: 0 };
+    const packs: Partial<Record<SkillName, number>> = { vocab: 0, grammar: 0, listening: 0, reading: 0 };
     let first = true;
     let left = budget - used;
     const known = (wordId: number) => env.known(wordId) || chosenWords.includes(wordId);
@@ -581,16 +712,18 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
 
     const vocabPack = (): Entry[] | null => {
       if (wordRoom <= 0) return null;
-      const { words } = nextNewWords(
+      const { words, fromQueue } = nextNewWords(
         { content, learner, settings, now, taken: (id) => items.words.has(id) || chosenWords.includes(id), known, queueUsed },
         Math.min(SHAPE.packWords, wordRoom),
         [...chosenWords].reverse().concat(learner.recentIntroWordIds),
       );
       const out: Entry[] = [];
       let total = 0;
-      for (const word of words) {
+      for (const [i, word] of words.entries()) {
         const built = wordItem(ctx, word, 1, true);
         if (!built.primary) continue;
+        // The queue's words come first; only they count in `queue.daily`, also when a later word is in the queue too.
+        if (i < fromQueue) built.item.queued = true;
         const alt = altOf(ctx, built.primary, () => pickWordEx(env, word, 1, "review", { audio: false }));
         const cost = num(settings, "time.intro_card") + exCost(settings, [built.primary, built.item.followup]);
         // "Up to three": a short session in backlog mode still gets the one or two that fit (PRD §10.6 example, T21).
@@ -626,9 +759,17 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
     while (left > 0 && skills.size > 0) {
       const skill = nextSkill(skills, progress, packs, first)!;
       first = false;
-      const pack = skill === "vocab" ? vocabPack() : skill === "grammar" ? grammarPack() : nullIfEmpty(nextDrills(SHAPE.packDrills, room()));
+      const text = skill === "listening" || skill === "reading" ? textPack(skill) : null;
+      const pack =
+        skill === "vocab" ? vocabPack() : skill === "grammar" ? grammarPack() : text ? [text] : skill === "listening" ? nullIfEmpty(nextDrills(SHAPE.packDrills, room())) : null;
       const cost = pack?.reduce((sum, entry) => sum + entry.cost, 0) ?? 0;
       if (!pack || cost > room()) {
+        // A text that does not fit leaves listening its drills.
+        if (text && skill === "listening") {
+          textPacks.listening = null;
+          progress.listening = Math.max(progress.listening ?? 0, standIn);
+          if (drillsOpen) continue;
+        }
         skills.delete(skill);
         continue;
       }
@@ -637,10 +778,21 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
           addDrills([entry]);
           continue;
         }
+        if (entry.t === "text") {
+          addText(entry);
+          // One new text per track in a mixed session; listening goes on with drills (PRD §10.5).
+          textPacks[entry.pick.track] = null;
+          // A text comes in one track only: the other track's pack is chosen again if it was the same text.
+          const other = textPacks[otherTrack(entry.pick.track)];
+          if (other?.t === "text" && other.pick.text.id === entry.pick.text.id) delete textPacks[otherTrack(entry.pick.track)];
+          if (entry.pick.track === "listening" && drillsOpen) progress.listening = Math.max(progress.listening ?? 0, standIn);
+          else skills.delete(entry.pick.track);
+          continue;
+        }
         add(entry);
         if (entry.t === "newword") {
           chosenWords.push(entry.word.id);
-          if (learner.queue.some((row) => row.wordId === entry.word.id)) queueUsed++;
+          if (entry.planItem?.queued) queueUsed++;
           wordRoom--;
           summary.newWords++;
         } else if (entry.t === "newunit") {
@@ -658,11 +810,34 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
     }
   }
 
-  // ── «شنیداری» (PRD §10.4): sentence drills fill the session until texts come ──
+  // ── «شنیداری» and «خواندن» (PRD §10.4): due attempts, then new texts while time is left; listening fills the rest with drills ──
+  if (textScope && textTracks.length > 0) {
+    const track = textTracks[0];
+    let longer = null as Entry | null;
+    /** The session's first text may be longer than the session: it is asked about first (§10.4, «پیش از جلسه متن»). */
+    const place = (entry: Entry) => {
+      if (used + entry.cost <= budget) {
+        addText(entry);
+        return true;
+      }
+      if (textsPlanned.size > 0) return false;
+      if (opts.text === "confirmed") {
+        addText(entry);
+        return true;
+      }
+      if (opts.text !== "later") longer ??= entry;
+      return false;
+    };
+    for (const pick of dueTexts(tenv, [track])) if (!textsPlanned.has(pick.text.id)) place(textEntry(pick, false));
+    for (let entry = newTextEntry(track, false); entry && place(entry); entry = newTextEntry(track, false));
+    if (longer && textsPlanned.size === 0 && longer.t === "text") {
+      return { kind: "ask_text_session", minutes: Math.max(1, Math.round(longer.cost / 60)), textId: longer.pick.text.id, track, effects };
+    }
+  }
   if (scope === "listening") addDrills(nextDrills(Number.POSITIVE_INFINITY, budget - used));
 
   // ── What is left (step 8): more reviews, then more notebook, then sentence drills ──
-  if (scope !== "notebook" && scope !== "extra" && scope !== "listening") {
+  if (scope !== "notebook" && scope !== "extra" && !textScope) {
     let misses = 0;
     for (const key of leftover) {
       if (budget - used < minCost || misses >= MISSES) break;
@@ -686,12 +861,13 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
   if (scope === "mixed") addDrills(nextDrills(Number.POSITIVE_INFINITY, budget - used));
 
   if (entries.length === 0) return { kind: "nothing_left", effects };
-  const plan = assemble(ctx, opts, budget, entries, planItems, summary);
+  const plan = assemble(ctx, opts, fullBudget, entries, planItems, summary);
   return { kind: "plan", plan, effects };
 }
 
 /** The exercises an entry already holds, to keep a drill off a sentence the plan uses. */
 function entryExercises(entry: Entry): Ex[] {
+  if (entry.t === "text") return [];
   if (entry.t === "single" || entry.t === "newword" || entry.t === "newconj" || entry.t === "drill") return [entry.ex];
   if (entry.t === "newunit") return [...entry.g0, ...entry.questions];
   return entry.questions;
@@ -756,6 +932,30 @@ function assemble(
       queue.push({ id: id(), t: "ex", item: entry.key, kind: entry.kind, ex: entry.ex, alt: entry.alt ?? null, ...(entry.note ? { note: entry.note } : {}) });
     } else if (entry.t === "drill") {
       queue.push({ id: id(), t: "drill", item: entry.key, ex: entry.ex });
+    } else if (entry.t === "text") {
+      const { pick } = entry;
+      if (entry.keyWords.length > 0) queue.push({ id: id(), t: "textwords", item: entry.key, block, words: entry.keyWords });
+      const stages = stagesOf(pick.attempt);
+      const cost = attemptCost(pick.text, pick.track, pick, settings);
+      stages.slice(pick.resume ? Math.max(0, stages.indexOf(pick.resume.stage)) : 0).forEach((stage, i) =>
+        queue.push({
+          id: id(),
+          t: "text",
+          item: entry.key,
+          block,
+          text: {
+            textId: pick.text.id,
+            track: pick.track,
+            attempt: pick.attempt,
+            stage,
+            set: pick.set,
+            borrowed: pick.borrowed,
+            rules: stageRules(pick.text, pick.track, pick.attempt, stage),
+            cost,
+            resume: i === 0 ? pick.resume : null,
+          },
+        }),
+      );
     } else if (entry.t === "newword") {
       queue.push({ id: id(), t: "intro", item: entry.key, block, fresh: true });
       queue.push({ id: id(), t: "ex", item: entry.key, kind: "review", ex: entry.ex, alt: entry.alt ?? null, block, fresh: true });
@@ -791,14 +991,24 @@ function assemble(
   const words: SessionPlan["words"] = {};
   const lessons: SessionPlan["lessons"] = {};
   const tables: SessionPlan["tables"] = {};
+  const texts: SessionPlan["texts"] = {};
+  const textStates: SessionPlan["textStates"] = {};
+  const textStateMap = new Map(learner.texts.map((state) => [`${state.textId}:${state.track}`, state]));
   const addWord = (wordId: number) => {
     const word = content.words.get(wordId);
     if (word && !words[wordId]) words[wordId] = wordCard(env, word);
   };
   const pairs = new Map<string, ConfusionE>();
   const minCount = num(settings, "confusion.min_count");
+  for (const card of queue) {
+    if (card.t === "textwords") for (const wordId of card.words ?? []) addWord(wordId);
+    if (card.t !== "text" || !card.text || texts[card.text.textId]) continue;
+    const text = content.texts.find((item) => item.id === card.text!.textId)!;
+    texts[text.id] = textView(content, text, card.text.track);
+    textStates[card.item] = textStateMap.get(`${text.id}:${card.text.track}`) ?? null;
+  }
   for (const key of keys) {
-    if (key.startsWith("l:")) continue;
+    if (key.startsWith("l:") || key.startsWith("x:")) continue;
     if (key.startsWith("t:")) {
       const target = content.targets.get(Number(key.slice(2)));
       const unit = target && content.units.find((item) => item.id === target.targetId);
@@ -824,7 +1034,9 @@ function assemble(
       if (table) tables[table.id] = tableView(content, table);
     }
   }
-  const reviews = entries.filter((entry) => entry.t === "single" || entry.t === "round" || entry.t === "drill").length;
+  const reviews = entries.filter((entry) => entry.t === "single" || entry.t === "round" || entry.t === "drill" || (entry.t === "text" && entry.pick.attempt > 1)).length;
+  const newTexts = entries.filter((entry) => entry.t === "text" && entry.pick.attempt === 1 && !entry.pick.resume).length;
+  const resumeText = entries.some((entry) => entry.t === "text" && !!entry.pick.resume);
   return {
     version: 1,
     scope: opts.scope,
@@ -840,11 +1052,13 @@ function assemble(
     words,
     lessons,
     tables,
+    texts,
+    textStates,
     pairs: [...pairs.values()],
     pairsAtStart: [...pairs.keys()],
     latency: learner.latency,
     rounds,
     counters: { answered: 0, ok: 0, wrongStreak: 0, rescuePending: false, practice: {}, correct: 0, wrong: 0 },
-    summary: { reviews, newItems: summary.newWords + summary.newUnits + summary.newConj, ...summary },
+    summary: { reviews, newItems: summary.newWords + summary.newUnits + summary.newConj + newTexts, ...summary, newTexts, resumeText },
   };
 }

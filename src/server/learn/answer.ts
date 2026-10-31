@@ -1,14 +1,16 @@
+import { randomUUID } from "node:crypto";
 import { z } from "zod";
 import type { RawAnswer } from "@/engine/ex";
 import { colloquialFor } from "@/engine/session/newmaterial";
 import { playCard } from "@/engine/session/play";
 import { num } from "@/engine/settings";
-import { parseItemKey } from "@/engine/state";
+import { itemKey, parseItemKey } from "@/engine/state";
 import { tehranDate } from "@/engine/time";
 import type { Prisma } from "@/generated/prisma/client";
 import { db } from "@/server/db";
 import { logError } from "@/server/errors";
 import { finishSession } from "./finish";
+import { textStateRow } from "./learner";
 import { bundleOf, closeSession, expiresAt, learnContext, SESSION_LIFE_MS, type Bundle, type EndSummary, type Learner, type StoredPlan } from "./session";
 import { addDaily, applyNotebookOps, saveConfusion, saveItemState, type DailyAdd } from "./writes";
 
@@ -34,6 +36,20 @@ export const answerSchema = z.object({
   alt: z.boolean().optional(),
 });
 export type AnswerRequest = z.infer<typeof answerSchema>;
+
+/** One answer to a text question (`QuestionAnswer` of the engine), and a text stage's answers (PRD §7.3, §7.4). */
+export const questionAnswer = z.union([
+  z.object({ idk: z.literal(true) }),
+  z.object({ choice: z.number().int() }),
+  z.object({ value: z.boolean() }),
+  z.object({ order: z.array(z.number().int()).max(40) }),
+  z.object({ pairs: z.array(z.tuple([z.number().int(), z.number().int()])).max(40) }),
+  z.object({ fills: z.array(z.string().max(200)).max(40) }),
+  z.object({ sentence: z.number().int() }),
+  z.object({ text: z.string().max(2000) }),
+]);
+export const textAnswers = z.record(z.string().max(12), questionAnswer);
+const textAnswer = z.object({ answers: textAnswers, timedOut: z.boolean().optional() });
 
 export type AnswerResponse =
   | { kind: "ok"; seq: number; finished: boolean; end: EndSummary | null }
@@ -67,6 +83,8 @@ export async function submitAnswer(user: Learner, request: AnswerRequest, server
       const plan = row.plan as unknown as StoredPlan;
       if (request.seq !== row.next_seq || plan.queue[0]?.id !== request.cardId) return { kind: "resync", bundle: bundleOf(row, ctx, false) };
 
+      // A text stage's answers are checked before grading (the browser sends one per question).
+      if (plan.queue[0].t === "text" && !textAnswer.safeParse(request.answer).success) return { kind: "invalid" };
       const today = tehranDate(at);
       const lexicon = ctx.content.lemmaIndex;
       const result = playCard(
@@ -83,9 +101,17 @@ export async function submitAnswer(user: Learner, request: AnswerRequest, server
 
       const who = { userId: user.id, language: row.language };
       const { log, card } = result;
-      await tx.reviewLog.create({
-        data: {
-          id: request.answerId,
+      const rows = (result.text?.graded.length ? result.text.graded : [null]).map((graded, i) => ({
+        // One row per question (PRD §4, «هر جواب یک ردیف»); the first carries the answer id that makes a repeat harmless.
+        id: i === 0 ? request.answerId : randomUUID(),
+        question_id: graded?.questionId ?? null,
+        question_set: graded ? result.text!.set : null,
+        result: graded?.result ?? log.result,
+        raw_answer: graded ? graded.raw : log.raw,
+      }));
+      await tx.reviewLog.createMany({
+        data: rows.map((one) => ({
+          ...one,
           user_id: user.id,
           language: row.language,
           session_id: row.id,
@@ -97,16 +123,14 @@ export async function submitAnswer(user: Learner, request: AnswerRequest, server
           step_after: log.stepAfter,
           sentence_id: log.sentenceId,
           sentence_target_id: log.targetId,
-          result: log.result,
           result_reason: log.reason,
-          raw_answer: log.raw,
           chosen_word_id: log.chosenWordId,
           first_typing: log.firstTyping,
           latency_ms: Math.round(request.latencyMs),
           fsrs_rating: log.rating,
           seq: request.seq,
           ts: at,
-        },
+        })),
       });
 
       // Active learning (PRD §3.9): every answer and every intro card or lesson, each up to a minute.
@@ -122,7 +146,7 @@ export async function submitAnswer(user: Learner, request: AnswerRequest, server
           if (queued) {
             await tx.newWordQueue.delete({ where: { id: queued.id } });
             await tx.itemState.updateMany({ where: { user_id: user.id, item_type: "word", item_id: state.itemId }, data: { source: queued.source } });
-            add.queue_words = (add.queue_words ?? 0) + 1;
+            if (plan.items[itemKey("word", state.itemId)]?.queued) add.queue_words = (add.queue_words ?? 0) + 1;
           }
         } else if (state.itemType === "grammar_unit") add.new_units = (add.new_units ?? 0) + 1;
         else add.new_conj = (add.new_conj ?? 0) + 1;
@@ -137,6 +161,25 @@ export async function submitAnswer(user: Learner, request: AnswerRequest, server
           create: { user_id: user.id, sentence_id: result.drill, count: 1, last_at: at },
           update: { count: { increment: 1 }, last_at: at },
         });
+      }
+      // A text stage: its state, and today's new text time after a first round (PRD §7.4, §10.5).
+      if (result.text) {
+        const { state, track, newSec } = result.text;
+        const data = textStateRow(state);
+        await tx.textState.upsert({
+          where: { user_id_text_id_track: { user_id: user.id, text_id: state.textId, track } },
+          create: { user_id: user.id, text_id: state.textId, track, ...data },
+          update: data,
+        });
+        if (newSec > 0) await addDaily(tx, who, today, track === "listening" ? { new_text_sec_listening: newSec } : { new_text_sec_reading: newSec });
+      }
+      // «کلمه‌های این متن»: its words wait in the queue (PRD §7.5, source `key_word`).
+      if (result.keyWords.length > 0) {
+        const taken = new Set(
+          (await tx.itemState.findMany({ where: { user_id: user.id, item_type: "word", item_id: { in: result.keyWords } }, select: { item_id: true } })).map((item) => item.item_id),
+        );
+        const rows = result.keyWords.filter((id) => !taken.has(id)).map((id) => ({ user_id: user.id, language: row.language, word_id: id, source: "key_word" as const, added_at: at }));
+        if (rows.length > 0) await tx.newWordQueue.createMany({ data: rows, skipDuplicates: true });
       }
       if (card.t === "confusion" && card.pair) {
         const [a, b] = card.pair[0] < card.pair[1] ? card.pair : [card.pair[1], card.pair[0]];

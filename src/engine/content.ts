@@ -103,6 +103,57 @@ export type ConjC = {
   reviewCard: boolean;
 };
 
+/** The two tracks a text can come in (PRD §7): each text comes to a learner in one of them only. */
+export type Track = "listening" | "reading";
+export const TRACKS: readonly Track[] = ["listening", "reading"];
+export type QuestionSetName = "A" | "B";
+
+type QuestionBase = {
+  id: number;
+  /** Empty for a dictation, which has no question text. */
+  prompt: string;
+  /** The Persian translation of a band 3 or 4 question, opened on request (PRD §7.3). */
+  promptFa: string | null;
+  explanationFa: string | null;
+};
+
+/** One question of a text (PRD §7.3, §14.3); indexes start at 0. */
+export type QuestionC = QuestionBase &
+  (
+    | { type: "mcq"; options: string[]; correct: number }
+    | { type: "tf"; correct: boolean }
+    | { type: "order"; items: string[]; correctOrder: number[] }
+    | { type: "match"; left: string[]; right: string[]; pairs: [number, number][] }
+    | { type: "cloze"; textWithGaps: string; bank: string[]; answers: string[] }
+    | { type: "find"; correctSentence: number }
+    | { type: "ctx"; word: string; options: string[]; correct: number }
+    | { type: "num"; answer: string; accepted: string[] }
+    | { type: "dict"; sentence: number }
+  );
+export type QuestionType = QuestionC["type"];
+
+/** A listening or reading text (PRD §7.2). Its sentences are in `Content.sentences`, out of the bank. */
+export type TextC = {
+  id: number;
+  code: string;
+  level: string;
+  band: number;
+  kind: string;
+  title: string;
+  sentenceIds: number[];
+  /** The speaker of each sentence of a dialogue. */
+  speakers: (string | null)[] | null;
+  /** The whole recording and where each sentence starts in it; without it the device voice reads the sentences one by one. */
+  audio: { url: string; offsetsMs: number[]; durationSec: number } | null;
+  wordCount: number;
+  /** Up to five key words, shown before the first attempt when the learner does not know them (PRD §7.5). */
+  keyWordIds: number[];
+  placementOk: boolean;
+  difficulty: number;
+  orderOverride: number | null;
+  questions: Record<Track, Record<QuestionSetName, QuestionC[]>>;
+};
+
 export type Content = {
   language: Lang;
   /** The language's levels from lowest to highest (app_setting levels.xx). */
@@ -116,6 +167,8 @@ export type Content = {
   transforms: TransformC[];
   translates: TranslateC[];
   conjugations: ConjC[];
+  /** Texts, easiest first within each level (PRD §7.5: `order_override`, else `difficulty_score`). */
+  texts: TextC[];
   // Indexes the loader fills once.
   wordByCode: Map<string, WordC>;
   /** Word targets of each word, grammar targets of each unit. */
@@ -174,7 +227,11 @@ export function indexContent(base: Omit<Content, "wordByCode" | "wordTargets" | 
     }
   }
   const units = [...base.units].sort((a, b) => a.orderNo - b.orderNo || a.id - b.id);
-  return { ...base, units, wordByCode, wordTargets, unitTargets, wordSentences, lemmaIndex };
+  const rank = (text: TextC) => text.orderOverride ?? Number.MAX_SAFE_INTEGER;
+  const texts = [...base.texts].sort(
+    (a, b) => base.levels.indexOf(a.level) - base.levels.indexOf(b.level) || rank(a) - rank(b) || a.difficulty - b.difficulty || a.id - b.id,
+  );
+  return { ...base, units, texts, wordByCode, wordTargets, unitTargets, wordSentences, lemmaIndex };
 }
 
 export const levelIndex = (content: Pick<Content, "levels">, level: string | null | undefined) => (level ? content.levels.indexOf(level) : -1);

@@ -2,16 +2,18 @@ import { hasCard, levelIndex } from "@/engine/content";
 import { indexItems, levelsAfter } from "@/engine/levels";
 import { activeCards, isDue } from "@/engine/session/build";
 import { num } from "@/engine/settings";
+import type { SkillName } from "@/engine/state";
+import { textLevelsAfter } from "@/engine/texts";
 import { leftInARow, mayOfferShorter, pickSessionMessage, shorterLength, type ClosedSession } from "@/engine/messages";
 import { finishDay } from "@/engine/streak";
 import { addDays, tehranDate, tehranDayStart } from "@/engine/time";
 import type { Enrollment, Prisma, Session } from "@/generated/prisma/client";
 import { SESSION_LENGTHS } from "./enroll";
-import { asDate, dailyOf, dateOnly, enrollmentOf, itemStateOf, skillsOf } from "./learner";
+import { asDate, dailyOf, dateOnly, enrollmentOf, itemStateOf, loadTextStates, skillsOf, textStateOf } from "./learner";
 import { closeSession, startInfo, type EndMessage, type EndSummary, type LearnContext, type StoredPlan } from "./session";
 
 /**
- * The end of a finished session (PRD §3.9): the streak and its freezes, skill levels, the station
+ * The end of a finished session (PRD §3.9): the streak and its freezes, skill levels (texts too, §7.5), the station
  * passed, the can-do line and tomorrow's reviews. Runs in the transaction of the last answer.
  */
 
@@ -61,8 +63,10 @@ export async function finishSession(tx: Tx, row: Session, plan: StoredPlan, ctx:
   const index = indexItems(items);
   const skills = skillsOf(skillRows, content.levels[0]);
   const vocab = skills.find((skill) => skill.skill === "vocab")!;
-  const moved = levelsAfter(content, index, skills, settings);
-  for (const skill of ["vocab", "grammar"] as const) {
+  const textStates = (await loadTextStates(tx, row.user_id, row.language)).map(textStateOf);
+  const levelOf = (skill: SkillName) => skills.find((item) => item.skill === skill)?.level ?? null;
+  const moved = { ...levelsAfter(content, index, skills, settings), ...textLevelsAfter(content, textStates, levelOf, settings, at) };
+  for (const skill of ["vocab", "grammar", "listening", "reading"] as const) {
     const level = moved[skill];
     const row = skills.find((item) => item.skill === skill)!;
     if (!level) continue;

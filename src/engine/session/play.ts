@@ -1,9 +1,12 @@
 import { applyConfusion, applyRound, applySingle, leechPair, newItemState, type AnswerCtx, type RoundOutcome, type SingleOutcome } from "../answer";
+import type { QuestionC, QuestionSetName, Track } from "../content";
 import type { Ex, RawAnswer } from "../ex";
 import { grade, type GradeOutcome, type Graded } from "../grade";
 import type { NotebookOp } from "../notebook";
+import { dictSource, gradeQuestion, stageScore, type GradedQuestion, type QuestionAnswer } from "../questions";
 import { num, type Settings } from "../settings";
-import { isItemKey, parseItemKey, type ConfusionE, type ItemStateE } from "../state";
+import { isItemKey, parseItemKey, type ConfusionE, type ItemStateE, type TextStage, type TextStateE } from "../state";
+import { afterStage } from "../texts";
 import type { Lang } from "../text";
 import { advance, type Advanced } from "./advance";
 import type { Card, SessionPlan } from "./types";
@@ -22,7 +25,7 @@ export type PlayEnv = {
 };
 
 export type PlayLog = {
-  kind: "intro" | "review" | "followup" | "practice" | "drill";
+  kind: "intro" | "review" | "followup" | "practice" | "drill" | "text_attempt";
   itemType: string | null;
   itemId: number | null;
   code: string | null;
@@ -36,6 +39,23 @@ export type PlayLog = {
   chosenWordId: number | null;
   firstTyping: boolean;
   rating: number | null;
+};
+
+/** One stage of a text, graded (PRD §7.4): a row per question, and the text's state after it. */
+export type TextOutcome = {
+  textId: number;
+  track: Track;
+  attempt: number;
+  stage: TextStage;
+  set: QuestionSetName;
+  questions: QuestionC[];
+  graded: GradedQuestion[];
+  score: number;
+  /** `review_log.kind`: scored rounds are `text_attempt`; the round with help is only practice. */
+  kind: "text_attempt" | "practice";
+  state: TextStateE;
+  /** Seconds added to today's new text time of the track (PRD §10.5): the whole attempt, after its first round. */
+  newSec: number;
 };
 
 export type PlayResult =
@@ -58,6 +78,10 @@ export type PlayResult =
       pair: ConfusionE | null;
       /** A drilled sentence: one more showing to write (PRD §7.6). */
       drill: number | null;
+      /** A text stage (PRD §7.4). */
+      text: TextOutcome | null;
+      /** Key words shown before a text, for `new_word_queue` (PRD §7.5, source `key_word`). */
+      keyWords: number[];
       advanced: Advanced;
     };
 
@@ -106,10 +130,36 @@ export function playCard(plan: SessionPlan, cardId: string, answer: RawAnswer, t
     rating: null,
   };
 
-  // Cards without a score (PRD §9.2, kind intro).
-  if (card.t === "intro" || card.t === "lesson" || card.t === "table" || card.t === "confusion") {
+  // A text stage (PRD §7.4): every question graded; the first round sets `first_score`, the round with help is practice.
+  if (card.t === "text" && card.text) {
+    const info = card.text;
+    const view = plan.texts[info.textId];
+    const questions = view.questions[info.set];
+    const given = "answers" in answer ? answer : { answers: {} as Record<string, QuestionAnswer>, timedOut: false };
+    const graded = questions.map((question) =>
+      gradeQuestion(question, given.answers[String(question.id)], {
+        lang: env.language,
+        sentence: question.type === "dict" && view.sentences[question.sentence] ? dictSource(view.sentences[question.sentence]) : undefined,
+        timedOut: given.timedOut,
+      }),
+    );
+    const score = stageScore(graded);
+    const before = plan.textStates[key] ?? null;
+    const state = afterStage(before, { text: { id: info.textId, band: view.band }, ...info, score, answers: given.answers }, ctx.now, ctx.settings);
+    let advanced = advance(plan, { cardId, result: "seen", elapsedSec: timing.elapsedSec }, ctx.settings);
+    advanced = { ...advanced, plan: { ...advanced.plan, textStates: { ...advanced.plan.textStates, [key]: state } } };
+    const kind = info.stage === "help" ? "practice" : "text_attempt";
+    const text: TextOutcome = { ...info, questions, graded, score, kind, state, newSec: info.stage === "first" ? Math.round(info.cost) : 0 };
+    const log: PlayLog = { ...base, kind, itemType: "text", itemId: info.textId, code: null, result: "correct" };
+    return { done: true, card, ex: null, graded: null, log, single: null, round: null, state: null, roundState: null, notebook: [], pair: null, drill: null, text, keyWords: [], advanced };
+  }
+
+  // Cards without a score (PRD §9.2, kind intro); «کلمه‌های این متن» sends its words to the queue (PRD §7.5).
+  if (card.t === "intro" || card.t === "lesson" || card.t === "table" || card.t === "confusion" || card.t === "textwords") {
     const advanced = advance(plan, { cardId, result: "seen", elapsedSec: timing.elapsedSec }, ctx.settings);
-    return { done: true, card, ex: null, graded: null, log: { ...base, code: null }, single: null, round: null, state: null, roundState: null, notebook: [], pair: null, drill: null, advanced };
+    const keyWords = card.t === "textwords" ? (card.words ?? []) : [];
+    const log: PlayLog = { ...base, code: null, ...(card.t === "textwords" ? { itemType: "text", itemId: Number(key.slice(2)) } : {}) };
+    return { done: true, card, ex: null, graded: null, log, single: null, round: null, state: null, roundState: null, notebook: [], pair: null, drill: null, text: null, keyWords, advanced };
   }
   if (!ex) throw new Error(`Card ${cardId} has no exercise`);
 
@@ -133,6 +183,8 @@ export function playCard(plan: SessionPlan, cardId: string, answer: RawAnswer, t
       notebook: [],
       pair: null,
       drill: null,
+      text: null,
+      keyWords: [],
       advanced,
     };
   }
@@ -141,7 +193,7 @@ export function playCard(plan: SessionPlan, cardId: string, answer: RawAnswer, t
   if (card.t === "drill") {
     const advanced = advance(plan, { cardId, result: graded.result, elapsedSec: timing.elapsedSec }, ctx.settings);
     const log: PlayLog = { ...base, kind: "drill", result: graded.result, reason: graded.reason, raw: graded.raw };
-    return { done: true, card, ex, graded, log, single: null, round: null, state: null, roundState: null, notebook: [], pair: null, drill: ex.sentenceId, advanced };
+    return { done: true, card, ex, graded, log, single: null, round: null, state: null, roundState: null, notebook: [], pair: null, drill: ex.sentenceId, text: null, keyWords: [], advanced };
   }
 
   // A grammar round question: scored with the whole round when it ends.
@@ -165,7 +217,7 @@ export function playCard(plan: SessionPlan, cardId: string, answer: RawAnswer, t
       ? { stepBefore: round.stepBefore, stepAfter: round.stepAfter, rating: round.rating ? RATING[round.rating] : null, firstTyping: round.firstTyping }
       : {};
     const log: PlayLog = { ...base, kind: "review", result: graded.result, reason: graded.reason, raw: graded.raw, stepBefore: plan.states[key]?.step ?? 1, ...scored };
-    return { done: true, card, ex, graded, log, single: null, round, state: null, roundState, notebook, pair: null, drill: null, advanced };
+    return { done: true, card, ex, graded, log, single: null, round, state: null, roundState, notebook, pair: null, drill: null, text: null, keyWords: [], advanced };
   }
 
   // A notebook sentence of a unit: one practice question (PRD §9.5).
@@ -174,7 +226,7 @@ export function playCard(plan: SessionPlan, cardId: string, answer: RawAnswer, t
     const notebook: NotebookOp[] = graded.result === "near" ? [] : [{ op: failed ? "restart" : "correct", refType: "grammar_target", refId: Number(key.slice(2)) }];
     const advanced = advance(plan, { cardId, result: graded.result, elapsedSec: timing.elapsedSec }, ctx.settings);
     const log: PlayLog = { ...base, kind: "practice", result: graded.result, reason: graded.reason, raw: graded.raw };
-    return { done: true, card, ex, graded, log, single: null, round: null, state: null, roundState: null, notebook, pair: null, drill: null, advanced };
+    return { done: true, card, ex, graded, log, single: null, round: null, state: null, roundState: null, notebook, pair: null, drill: null, text: null, keyWords: [], advanced };
   }
 
   // A word or a conjugation card.
@@ -230,7 +282,7 @@ export function playCard(plan: SessionPlan, cardId: string, answer: RawAnswer, t
     rating: single.rating ? RATING[single.rating] : null,
   };
   // A practice moves neither FSRS nor the step: there is nothing to write.
-  return { done: true, card, ex, graded, log, single, round: null, state: kind === "practice" ? null : single.state, roundState: null, notebook: single.notebook, pair, drill: null, advanced };
+  return { done: true, card, ex, graded, log, single, round: null, state: kind === "practice" ? null : single.state, roundState: null, notebook: single.notebook, pair, drill: null, text: null, keyWords: [], advanced };
 }
 
 /**

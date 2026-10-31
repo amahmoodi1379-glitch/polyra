@@ -1,5 +1,6 @@
 import type { Gender, Pos, Speak, WordC } from "./content";
 import type { DictWord } from "./dictation";
+import type { QuestionAnswer } from "./questions";
 
 /**
  * One exercise, fully built by the server when the session is made (PRD §10.7, "بسته جلسه"): what
@@ -140,5 +141,7 @@ export type RawAnswer =
   /** G3a: the category each item was first dropped on. */
   | { firstSort: Record<string, number> }
   | { rows: string[] }
-  /** Cards without a score: intro card, lesson, «این دو را قاطی می‌کنی». */
-  | { seen: true };
+  /** Cards without a score: intro card, lesson, «این دو را قاطی می‌کنی», «کلمه‌های این متن». */
+  | { seen: true }
+  /** One stage of a text: the answer to each question by its id; a timed reading may run out (PRD §7.4). */
+  | { answers: Record<string, QuestionAnswer>; timedOut?: boolean };

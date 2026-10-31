@@ -1,7 +1,8 @@
-import type { Speak } from "../content";
-import type { Ex, SentenceView, WordView } from "../ex";
+import type { QuestionC, QuestionSetName, Speak, Track } from "../content";
+import type { Ex, Gloss, SentenceView, WordView } from "../ex";
 import type { RoundAnswer } from "../answer";
-import type { ConfusionE, ItemStateE, NotebookRef } from "../state";
+import type { ConfusionE, ItemStateE, NotebookRef, TextPartialE, TextStage, TextStateE } from "../state";
+import type { StageRules } from "../texts";
 
 /**
  * The saved session (`session.plan`, PRD §10.7 "بسته جلسه"). The server builds it once; the browser
@@ -9,7 +10,7 @@ import type { ConfusionE, ItemStateE, NotebookRef } from "../state";
  * always agree on what comes next. Every card the learner finishes is one numbered event (`seq`).
  */
 
-export const SCOPES = ["mixed", "quick", "vocab", "grammar", "listening", "notebook", "extra"] as const;
+export const SCOPES = ["mixed", "quick", "vocab", "grammar", "listening", "reading", "notebook", "extra"] as const;
 export type Scope = (typeof SCOPES)[number];
 
 export type CardKind =
@@ -28,7 +29,39 @@ export type CardKind =
   /** «این دو را قاطی می‌کنی» (PRD §9.9). */
   | "confusion"
   /** A sentence heard alone (L1–L3, PRD §7.6); its item is `l:<sentence id>`. */
-  | "drill";
+  | "drill"
+  /** «کلمه‌های این متن» before a text's first attempt (PRD §7.5); its item is `x:<text id>`. */
+  | "textwords"
+  /** One stage of a text attempt: all its questions on one screen (PRD §7.4). */
+  | "text";
+
+/** A text stage card: which attempt and stage, what it allows, and where a half-way attempt goes on (PRD §7.4). */
+export type TextCard = {
+  textId: number;
+  track: Track;
+  attempt: number;
+  stage: TextStage;
+  set: QuestionSetName;
+  borrowed: boolean;
+  rules: StageRules;
+  /** The whole attempt's time, added to today's new text time after the first round of attempt 1 (PRD §10.5). */
+  cost: number;
+  /** Answers, plays and the place in the sound an attempt left half-way goes on from (T91). */
+  resume: TextPartialE | null;
+};
+
+/** A text as its screens show it (PRD §7.4, §7.9): sentences with translation, glosses and speaker, its sound and the questions of its track. */
+export type TextView = {
+  id: number;
+  title: string;
+  level: string;
+  band: number;
+  track: Track;
+  sentences: { id: number; text: string; translation: string; glosses: Gloss[]; speak: Speak; speaker: string | null }[];
+  audio: { url: string; offsetsMs: number[]; durationSec: number } | null;
+  wordCount: number;
+  questions: Record<QuestionSetName, QuestionC[]>;
+};
 
 export type PlayKind = "review" | "followup" | "practice";
 
@@ -54,6 +87,10 @@ export type Card = {
   step?: number;
   /** The last card of a round: the round is scored after it. */
   roundEnd?: boolean;
+  /** A text stage. */
+  text?: TextCard;
+  /** «کلمه‌های این متن»: the key words to show. */
+  words?: number[];
 };
 
 /** Exercises made in advance for one single-exercise item (PRD §10.7). */
@@ -72,6 +109,8 @@ export type PlanItem = {
   fallbackAlt: (Ex | null)[];
   /** W2d after a wrong gender. */
   gender: Ex | null;
+  /** A new word taken from `new_word_queue`: it counts in today's `queue_words` (PRD §5.8). */
+  queued?: boolean;
 };
 
 export type WordCard = {
@@ -131,6 +170,9 @@ export type SessionPlan = {
   words: Record<number, WordCard>;
   lessons: Record<number, LessonView>;
   tables: Record<number, TableView>;
+  texts: Record<number, TextView>;
+  /** Text states at the start (`x:<id>`), kept up to date after each stage like `states`. */
+  textStates: Record<string, TextStateE | null>;
   /** The learner's confusion pairs with the plan's words, kept up to date during the session (PRD §9.9). */
   pairs: ConfusionE[];
   /** Pairs that existed when the session was built, as "a:b": only these can show their card (PRD §10.7). */
@@ -141,5 +183,5 @@ export type SessionPlan = {
   rounds: Record<string, { item: string; step: number; last: number; answers: RoundAnswer[] }>;
   counters: Counters;
   /** What the end screen and the start button show (PRD §3.2, §3.9); sentence drills count as reviews (DECISIONS.md). */
-  summary: { reviews: number; newItems: number; newWords: number; newUnits: number; newConj: number };
+  summary: { reviews: number; newItems: number; newWords: number; newUnits: number; newConj: number; newTexts: number; resumeText: boolean };
 };

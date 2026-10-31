@@ -26,11 +26,11 @@ type Props = {
   freeze: { max: number; minutes: number };
 };
 
-type Scope = "mixed" | "quick" | "vocab" | "grammar" | "extra";
+type Scope = "mixed" | "quick" | "vocab" | "grammar" | "listening" | "reading" | "extra";
 type Open = null | "level" | "streak" | "settings" | "lang" | SkillName;
 
 const skillIcon: Record<SkillName, IconName> = { vocab: "i-vocab", grammar: "i-gram", listening: "i-listen", reading: "i-read" };
-const playable = (tile: SkillTile) => !tile.lock && tile.skill !== "reading";
+const playable = (tile: SkillTile) => !tile.lock;
 const percent = (value: number) => ({ "--p": `${Math.round(Math.max(0, Math.min(1, value)) * 100)}%` }) as CSSProperties;
 const monogram = (code: string) => code.charAt(0).toUpperCase() + code.slice(1);
 const lat = (text: string) => <span className="lat">{text}</span>;
@@ -59,18 +59,23 @@ function startLine(data: HomeData): string {
   if (data.locked) return t("learn.home.subLocked");
   if (start.resume) return t("learn.home.subResume", { minutes: start.minutes });
   if (start.empty) return t("learn.home.subEmpty");
-  const parts = [start.reviews > 0 ? t("learn.home.subReviews", { n: start.reviews }) : null, start.newItems > 0 ? t("learn.home.subNew", { n: start.newItems }) : null].filter(
-    Boolean,
-  );
+  // «۱۵ دقیقه · ادامه متن و ۱۲ مرور» when a text left half-way leads the session (PRD §3.2).
+  const parts = [
+    start.resumeText ? t("learn.home.subResumeText") : null,
+    start.reviews > 0 ? t("learn.home.subReviews", { n: start.reviews }) : null,
+    start.newItems > 0 ? t("learn.home.subNew", { n: start.newItems }) : null,
+  ].filter(Boolean);
   if (parts.length === 0) return t("learn.start.minutes", { n: start.minutes });
   return t("learn.home.sub", { minutes: start.minutes, parts: parts.join(t("learn.home.and")) });
 }
 
 function lockText(tile: SkillTile) {
   if (tile.lock?.kind === "words") return t("learn.home.lockWords", { n: tile.lock.left });
-  if (tile.lock?.kind === "more") return t("learn.home.lockMore");
-  return t("learn.home.lockLater");
+  return t("learn.home.lockMore");
 }
+
+/** «یک متن منتظر توست», or «ادامه متن» for one left half-way (PRD §10.4). */
+const waitingText = (tile: SkillTile) => (tile.text === "resume" ? t("learn.home.textResume") : tile.text ? t("learn.home.textWaiting") : null);
 
 export function Home({ data, languageName, languages, account, lengths, freeze }: Props) {
   const router = useRouter();
@@ -184,7 +189,11 @@ export function Home({ data, languageName, languages, account, lengths, freeze }
                 <button
                   type="button"
                   className="sk-main"
-                  aria-label={item.lock ? t("learn.home.skillOff", { skill: name, why: lockText(item) }) : t("learn.home.skillSession", { skill: name, level: item.level })}
+                  aria-label={
+                    item.lock
+                      ? t("learn.home.skillOff", { skill: name, why: lockText(item) })
+                      : [t("learn.home.skillSession", { skill: name, level: item.level }), waitingText(item)].filter(Boolean).join("، ")
+                  }
                   onClick={() => {
                     if (playable(item) && !data.locked) {
                       sfx("press", 0.4);
@@ -202,6 +211,11 @@ export function Home({ data, languageName, languages, account, lengths, freeze }
                       <span className="bar" style={percent(item.progress)} aria-hidden="true">
                         <i />
                       </span>
+                      {item.text ? (
+                        <span className="wait" aria-hidden="true">
+                          {waitingText(item)}
+                        </span>
+                      ) : null}
                     </>
                   )}
                 </button>
@@ -338,8 +352,8 @@ export function Home({ data, languageName, languages, account, lengths, freeze }
 
 function SkillDetails({ tile, locked, onPractice, onClose }: { tile: SkillTile; locked: boolean; onPractice: (scope: Scope) => void; onClose: () => void }) {
   const name = t(`learn.skill.${tile.skill}`);
-  // Listening counts heard sentences until texts come (PRD §7.6).
-  const ledger = tile.skill === "vocab" ? "words" : tile.skill === "grammar" ? "units" : "sentences";
+  // Listening counts heard sentences beside its texts (PRD §7.6); reading has only texts.
+  const ledger = tile.skill === "vocab" ? "words" : tile.skill === "grammar" ? "units" : tile.skill === "listening" ? "sentences" : null;
   return (
     <>
       <div className="ss-head">
@@ -351,9 +365,9 @@ function SkillDetails({ tile, locked, onPractice, onClose }: { tile: SkillTile; 
         <p className="soon num">
           {tile.lock.kind === "words"
             ? t("learn.skillSheet.lockedWords", { skill: name, need: tile.lock.need, left: tile.lock.left })
-            : tile.lock.kind === "more"
-              ? t("learn.skillSheet.lockedMore")
-              : t("learn.skillSheet.later")}
+            : tile.skill === "reading"
+              ? t("learn.skillSheet.lockedReading")
+              : t("learn.skillSheet.lockedMore")}
         </p>
       ) : (
         <dl className="ledger num">
@@ -363,20 +377,36 @@ function SkillDetails({ tile, locked, onPractice, onClose }: { tile: SkillTile; 
               <dd>{t("learn.skillSheet.stationValue", { n: Math.min(tile.station + 1, tile.stations), total: tile.stations })}</dd>
             </div>
           ) : null}
-          <div>
-            <dt>{t(`learn.skillSheet.${ledger}.introduced`)}</dt>
-            <dd>{formatNumber(tile.introduced)}</dd>
-          </div>
-          <div>
-            <dt>{t(`learn.skillSheet.${ledger}.stable`)}</dt>
-            <dd>{formatNumber(tile.stable)}</dd>
-          </div>
-          {ledger === "sentences" ? null : (
+          {ledger ? (
+            <>
+              <div>
+                <dt>{t(`learn.skillSheet.${ledger}.introduced`)}</dt>
+                <dd>{formatNumber(tile.introduced)}</dd>
+              </div>
+              <div>
+                <dt>{t(`learn.skillSheet.${ledger}.stable`)}</dt>
+                <dd>{formatNumber(tile.stable)}</dd>
+              </div>
+            </>
+          ) : null}
+          {tile.texts ? (
+            <>
+              <div>
+                <dt>{t("learn.skillSheet.texts.started")}</dt>
+                <dd>{formatNumber(tile.texts.started)}</dd>
+              </div>
+              <div>
+                <dt>{t("learn.skillSheet.texts.finished")}</dt>
+                <dd>{formatNumber(tile.texts.finished)}</dd>
+              </div>
+            </>
+          ) : null}
+          {tile.texts || ledger === "words" || ledger === "units" ? (
             <div>
-              <dt>{t(`learn.skillSheet.${ledger}.due`)}</dt>
+              <dt>{t(tile.texts ? "learn.skillSheet.texts.due" : ledger === "words" ? "learn.skillSheet.words.due" : "learn.skillSheet.units.due")}</dt>
               <dd>{formatNumber(tile.due)}</dd>
             </div>
-          )}
+          ) : null}
         </dl>
       )}
       <div className="ss-foot">

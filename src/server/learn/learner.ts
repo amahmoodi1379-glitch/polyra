@@ -12,15 +12,19 @@ import {
   type QueueE,
   type SkillLevelE,
   type SkillName,
+  type TextPartialE,
+  type TextScoreE,
+  type TextStateE,
 } from "@/engine/state";
+import type { Track } from "@/engine/content";
 import { addDays, tehranDayStart } from "@/engine/time";
-import type { Prisma } from "@/generated/prisma/client";
+import { Prisma } from "@/generated/prisma/client";
 import { db } from "@/server/db";
 
 /**
  * What the engine knows about one learner in one language (`LearnerSnapshot`), read from the
- * database in a few queries: states, notebook, queue, today's counters, confusions, and what the
- * answer log says about exercises and sentences already seen.
+ * database in a few queries: states, notebook, queue, today's counters, confusions, texts, and what
+ * the answer log says about exercises and sentences already seen.
  */
 
 type Client = Prisma.TransactionClient | typeof db;
@@ -44,6 +48,7 @@ export function enrollmentOf(row: {
   streak_forgiven_count: number;
   freeze_count: number;
   freeze_checked_week: Date | null;
+  text_prompt_date: Date | null;
 }): EnrollmentE {
   return {
     language: row.language,
@@ -57,6 +62,7 @@ export function enrollmentOf(row: {
     streakForgivenCount: row.streak_forgiven_count,
     freezeCount: row.freeze_count,
     freezeCheckedWeek: dateOnly(row.freeze_checked_week),
+    textPromptDate: dateOnly(row.text_prompt_date),
   };
 }
 
@@ -134,7 +140,18 @@ export const confusionOf = (row: { word_id: number; other_word_id: number; count
 });
 
 export function dailyOf(
-  row: { new_words: number; words_cap_today: number | null; cap_prompt_shown: boolean; queue_words: number; new_units: number; new_conj: number; active_sec: number } | null,
+  row: {
+    new_words: number;
+    words_cap_today: number | null;
+    cap_prompt_shown: boolean;
+    queue_words: number;
+    new_units: number;
+    new_conj: number;
+    active_sec: number;
+    new_text_sec_listening: number;
+    new_text_sec_reading: number;
+    text_session_done: boolean;
+  } | null,
   today: string,
 ): DailyE {
   return {
@@ -146,7 +163,64 @@ export function dailyOf(
     newUnits: row?.new_units ?? 0,
     newConj: row?.new_conj ?? 0,
     activeSec: row?.active_sec ?? 0,
+    newTextSec: { listening: row?.new_text_sec_listening ?? 0, reading: row?.new_text_sec_reading ?? 0 },
+    textSessionDone: row?.text_session_done ?? false,
   };
+}
+
+type TextStateRow = {
+  text_id: number;
+  track: Track;
+  attempts_done: number;
+  first_score: number | null;
+  scores: Prisma.JsonValue;
+  last_attempt_at: Date | null;
+  next_attempt_at: Date | null;
+  partial: Prisma.JsonValue;
+  partial_until: Date | null;
+  used_in_test: boolean;
+};
+
+export const textStateOf = (row: TextStateRow): TextStateE => ({
+  textId: row.text_id,
+  track: row.track,
+  attemptsDone: row.attempts_done,
+  firstScore: row.first_score,
+  scores: Array.isArray(row.scores) ? (row.scores as TextScoreE[]) : [],
+  lastAttemptAt: row.last_attempt_at?.toISOString() ?? null,
+  nextAttemptAt: row.next_attempt_at?.toISOString() ?? null,
+  partial: row.partial && typeof row.partial === "object" ? (row.partial as TextPartialE) : null,
+  partialUntil: row.partial_until?.toISOString() ?? null,
+  usedInTest: row.used_in_test,
+});
+
+/** The columns of a text state, for an insert or an update. */
+export const textStateRow = (state: TextStateE) => ({
+  attempts_done: state.attemptsDone,
+  first_score: state.firstScore,
+  scores: state.scores as unknown as Prisma.InputJsonValue,
+  last_attempt_at: state.lastAttemptAt ? new Date(state.lastAttemptAt) : null,
+  next_attempt_at: state.nextAttemptAt ? new Date(state.nextAttemptAt) : null,
+  partial: state.partial ? (state.partial as unknown as Prisma.InputJsonValue) : Prisma.DbNull,
+  partial_until: state.partialUntil ? new Date(state.partialUntil) : null,
+  used_in_test: state.usedInTest,
+});
+
+/** A learner's text states in one language (`text_state` has no language of its own). */
+export function loadTextStates(client: Client, userId: number, language: string): Promise<TextStateRow[]> {
+  return client.$queryRaw<TextStateRow[]>`
+    SELECT s.text_id, s.track::text AS track, s.attempts_done, s.first_score, s.scores, s.last_attempt_at, s.next_attempt_at, s.partial, s.partial_until, s.used_in_test
+    FROM text_state s JOIN text t ON t.id = s.text_id WHERE s.user_id = ${userId} AND t.language = ${language}`;
+}
+
+/** How many finished mixed sessions in a row, the newest first, had no text in them (PRD §10.11 condition 3). */
+async function mixedWithoutText(client: Client, userId: number, language: string, settings: Settings): Promise<number> {
+  const rows = await client.$queryRaw<{ had: boolean }[]>`
+    SELECT EXISTS (SELECT 1 FROM review_log r WHERE r.session_id = s.id AND r.item_type = 'text' AND r.kind::text <> 'intro') AS had
+    FROM session s WHERE s.user_id = ${userId} AND s.language = ${language} AND s.scope::text = 'mixed' AND s.end_reason::text = 'finished'
+    ORDER BY s.ended_at DESC LIMIT ${num(settings, "text.session_every")}`;
+  const first = rows.findIndex((row) => row.had);
+  return first === -1 ? rows.length : first;
 }
 
 const keyOf = (type: string | null, id: number | null) =>
@@ -184,7 +258,7 @@ export async function loadLearner(
   if (!user || !enrollment) return null;
 
   // What the answer log says (PRD §5.7, §9.2, §9.3, §9.10).
-  const [counts, recent, seen, latency, pace, touched, drills] = await Promise.all([
+  const [counts, recent, seen, latency, pace, touched, drills, texts, withoutText] = await Promise.all([
     client.$queryRaw<{ item_type: string; item_id: number; exercise_code: string; n: bigint }[]>`
       SELECT item_type, item_id, exercise_code, count(*) AS n FROM review_log
       WHERE user_id = ${userId} AND language = ${language} AND kind::text IN ('review', 'followup', 'practice') AND exercise_code IS NOT NULL AND item_id IS NOT NULL
@@ -221,6 +295,8 @@ export async function loadLearner(
     client.$queryRaw<{ sentence_id: number; count: number; last_at: Date | null }[]>`
       SELECT d.sentence_id, d.count, d.last_at FROM sentence_drill_state d JOIN sentence s ON s.id = d.sentence_id
       WHERE d.user_id = ${userId} AND s.language = ${language}`,
+    loadTextStates(client, userId, language),
+    mixedWithoutText(client, userId, language, settings),
   ]);
 
   const history = new Map<string, ItemHistory>();
@@ -252,6 +328,8 @@ export async function loadLearner(
     today: dailyOf(daily, today),
     confusions: confusions.map(confusionOf),
     drills: drills.map((row) => ({ sentenceId: row.sentence_id, count: row.count, lastAt: row.last_at?.toISOString() ?? null })),
+    texts: texts.map(textStateOf),
+    mixedWithoutText: withoutText,
     history,
     sentenceSeen: new Map(seen.map((row) => [row.sentence_id, Number(row.n)])),
     latency: Object.fromEntries(latency.map((row) => [row.exercise_code, { median: Number(row.median), count: Number(row.n) }])),

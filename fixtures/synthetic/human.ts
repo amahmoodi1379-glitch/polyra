@@ -5,16 +5,16 @@
  * engine's model and the "human" differ), a the learner's ability and d how hard the kind of exercise
  * is: 1 to choose, 0.85 to type, 0.7 for the first typed review of an item. In typed exercises 5% of
  * the right answers turn into a typo and 10% into a near answer. Each answer takes the exercise's time
- * from PRD §10.1, 30% either way.
+ * from PRD §10.1, 30% either way. A text question has no memory curve: g + (1 − g) × a × d.
  */
-import type { Content } from "../../src/engine/content";
+import type { Content, QuestionC } from "../../src/engine/content";
 import type { AnswerSpec, Ex } from "../../src/engine/ex";
 import { isNewCard, retrievability } from "../../src/engine/fsrs";
 import { seeded, type Rng } from "../../src/engine/random";
 import type { Card } from "../../src/engine/session/types";
 import { num, type Settings } from "../../src/engine/settings";
 import type { ItemStateE } from "../../src/engine/state";
-import { nearAnswer, rightAnswer, slipAnswer, type Policy } from "./drive";
+import { nearAnswer, rightAnswer, slipAnswer, textAnswers, type Policy } from "./drive";
 
 const DAY_MS = 86_400_000;
 /** FSRS-4.5's curve, for an item that was introduced but never rated (its first exercise failed). */
@@ -29,6 +29,16 @@ function guess(spec: AnswerSpec): number {
   if (spec.kind === "choice2") return 1 / (spec.groups[0].length * spec.groups[1].length);
   return 0;
 }
+
+/** The chance of guessing a text question (PRD §7.3). */
+function questionGuess(question: QuestionC): number {
+  if (question.type === "mcq" || question.type === "ctx") return 1 / question.options.length;
+  if (question.type === "tf") return 0.5;
+  return 0;
+}
+
+/** Writing the answer is harder than choosing it, as `d` of the exercises. */
+const questionHardness = (question: QuestionC) => (question.type === "num" || question.type === "dict" || question.type === "cloze" ? 0.85 : 1);
 
 export type Human = {
   policy: Policy;
@@ -65,6 +75,14 @@ export function human(opts: { content: Content; settings: Settings; seed: string
   };
 
   const policy: Policy = (card, ex, rng: Rng, { plan, at }) => {
+    // A text stage: its share of the attempt's time; each question g + (1 − g) × a × d, a little easier with help.
+    if (card.t === "text" && card.text) {
+      const info = card.text;
+      const latencyMs = Math.round((info.cost / (info.attempt === 1 ? 2 : 1)) * (0.7 + 0.6 * rng()) * 1000);
+      const a = opts.ability(card);
+      const help = info.stage === "help" ? 1.15 : 1;
+      return { answer: textAnswers(plan, card, rng, (question) => questionGuess(question) + (1 - questionGuess(question)) * Math.min(1, a * questionHardness(question) * help)), latencyMs };
+    }
     const latencyMs = Math.round(seconds(card, ex) * (0.7 + 0.6 * rng()) * 1000);
     if (!ex) return { answer: { seen: true }, latencyMs };
     const key = owner(card.item);

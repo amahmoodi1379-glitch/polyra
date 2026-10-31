@@ -8,6 +8,8 @@ import { introducedCardWords } from "@/engine/session/newmaterial";
 import { makeEnv } from "@/engine/session/views";
 import { num } from "@/engine/settings";
 import type { SkillName } from "@/engine/state";
+import type { Track } from "@/engine/content";
+import { dueTexts, indexTextStates, nextAttempt, textProgress, textWaiting, trackStarted, type TextEnv } from "@/engine/texts";
 import { catchUp, doneToday } from "@/engine/streak";
 import { addDays } from "@/engine/time";
 import type { LanguageCode } from "@/server/content/languages";
@@ -25,20 +27,25 @@ export type SkillTile = {
   skill: SkillName;
   level: string;
   progress: number;
-  /** Why it is grey (PRD §10.3): words still needed, no sentence to hear yet, or a later version of the app. */
-  lock: { kind: "words"; need: number; left: number } | { kind: "more" } | { kind: "later" } | null;
+  /** Why it is grey (PRD §10.3): words still needed, or no sentence or text the learner can follow yet. */
+  lock: { kind: "words"; need: number; left: number } | { kind: "more" } | null;
   station: number;
   stations: number;
   introduced: number;
   stable: number;
   due: number;
+  /** «یک متن منتظر توست» (PRD §10.4): what the skill's own session brings first. */
+  text: "resume" | "due" | "new" | null;
+  /** Texts of the track: started (a first round) and with every attempt done (PRD §7.4). */
+  texts: { started: number; finished: number } | null;
 };
 
 export type HomeData = {
   language: LanguageCode;
   overall: string;
   streak: { count: number; today: boolean; freezes: number };
-  start: { minutes: number; reviews: number; newItems: number; empty: boolean; resume: boolean };
+  /** `resumeText`: «ادامه متن» on the start line (PRD §3.2). */
+  start: { minutes: number; reviews: number; newItems: number; empty: boolean; resume: boolean; resumeText: boolean };
   quick: boolean;
   /** «تمرین بیشتر روی کلمه‌های امروز», offered when the day is done (PRD §10.8). */
   extra: boolean;
@@ -93,8 +100,28 @@ export async function homeData(user: Learner, language: LanguageCode, now = new 
   const grammar = grammarProgress(content, items, gLevel, settings);
   // Sentence listening (PRD §7.6): open after its word gate while a suitable sentence makes an exercise.
   const drillWait = drillGate(fromStart, introduced, settings);
-  const drills = drillCounts(makeEnv(content, learner, settings, seeded("home", user.id)), learner.drills, now);
+  const env = makeEnv(content, learner, settings, seeded("home", user.id));
+  const drills = drillCounts(env, learner.drills, now);
   const listening = learner.skills.find((skill) => skill.skill === "listening")!;
+  const reading = learner.skills.find((skill) => skill.skill === "reading")!;
+
+  // Texts (PRD §7.5, §9.6, §10.3): a track opens with its first allowed text and stays open once started.
+  const tenv: TextEnv = { content, settings, now, known: env.known, states: indexTextStates(learner.texts), levelOf: (track) => (track === "listening" ? listening : reading).level };
+  const textTile = (track: Track) => {
+    const level = tenv.levelOf(track);
+    const bar = textProgress(content, tenv.states, track, level, settings);
+    const waiting = textWaiting(tenv, track, learner.today.newTextSec[track]);
+    const due = dueTexts(tenv, [track]).length;
+    const mine = learner.texts.filter((state) => state.track === track && state.scores.length > 0);
+    const finished = mine.filter((state) => {
+      const text = content.texts.find((item) => item.id === state.textId);
+      return !!text && nextAttempt(text, state) === null;
+    }).length;
+    return { bar, waiting, due, texts: { started: mine.length, finished }, open: trackStarted(tenv.states, track) || waiting !== null };
+  };
+  const heard = textTile("listening");
+  const read = textTile("reading");
+  const listeningOpen = drills.playable || heard.open;
 
   const skills: SkillTile[] = [
     {
@@ -107,6 +134,8 @@ export async function homeData(user: Learner, language: LanguageCode, now = new 
       introduced: vocab.introduced,
       stable: vocab.stable,
       due: dueOf("word"),
+      text: null,
+      texts: null,
     },
     {
       skill: "grammar",
@@ -118,30 +147,45 @@ export async function homeData(user: Learner, language: LanguageCode, now = new 
       introduced: grammar.opened,
       stable: grammar.stable,
       due: dueOf("grammar_unit") + dueOf("conjugation"),
+      text: null,
+      texts: null,
     },
     {
       skill: "listening",
       level: listening.level,
       // The bar counts texts (PRD §9.6); sentence listening alone leaves it empty.
-      progress: 0,
-      lock: drillWait ? { kind: "words", ...drillWait } : drills.playable ? null : { kind: "more" },
+      progress: heard.bar.progress,
+      lock: listeningOpen ? null : drillWait ? { kind: "words", ...drillWait } : { kind: "more" },
       station: 0,
       stations: 0,
       introduced: drills.heard,
       stable: drills.done,
       // Sentences have no due date (PRD §7.6); texts bring theirs.
-      due: 0,
+      due: heard.due,
+      text: heard.waiting,
+      texts: heard.texts,
     },
-    // Reading comes with texts.
-    { skill: "reading", level: content.levels[0], progress: 0, lock: { kind: "later" }, station: 0, stations: 0, introduced: 0, stable: 0, due: 0 },
+    {
+      skill: "reading",
+      level: reading.level,
+      progress: read.bar.progress,
+      lock: read.open ? null : { kind: "more" },
+      station: 0,
+      stations: 0,
+      introduced: 0,
+      stable: 0,
+      due: read.due,
+      text: read.waiting,
+      texts: read.texts,
+    },
   ];
 
   const open = await openSession(user.id, language);
   return {
     language,
-    overall: overallLevel(content, { vocab: vocab.level, grammar: grammarOpen ? gLevel : null, listening: null, reading: null }),
+    overall: overallLevel(content, { vocab: vocab.level, grammar: grammarOpen ? gLevel : null, listening: heard.open ? listening.level : null, reading: read.open ? reading.level : null }),
     streak: { count: streak.streakCount, today: doneToday(streak, today), freezes: streak.freezeCount },
-    start: { minutes: preview.minutes, reviews: preview.reviews, newItems: preview.newItems, empty: preview.empty, resume: !!open && open.scope === "mixed" },
+    start: { minutes: preview.minutes, reviews: preview.reviews, newItems: preview.newItems, empty: preview.empty, resume: !!open && open.scope === "mixed", resumeText: preview.resumeText },
     quick: preview.quick,
     extra: preview.extra,
     plan: await planLine(user, enrollment, now),

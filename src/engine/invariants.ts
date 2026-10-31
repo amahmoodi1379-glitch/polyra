@@ -6,13 +6,14 @@ import { mayFollow } from "./session/advance";
 import { shownEx, type PlayResult } from "./session/play";
 import type { Card, SessionPlan } from "./session/types";
 import { exerciseOn, flag, num, type Settings } from "./settings";
-import { isItemKey, itemKey, parseItemKey, type ItemStateE, type LearnerSnapshot } from "./state";
+import { isItemKey, itemKey, parseItemKey, type ItemStateE, type LearnerSnapshot, type TextStateE } from "./state";
+import { dueTexts, indexTextStates, lastTouch, otherTrack, textStateKey, touched, wasBorrowed } from "./texts";
 
 /**
  * The rules that never break (PRD §16.3, «قانون‌های همیشگی»), checked on a learner and a session.
- * The random test and the simulator call it after every build and every card. Rules 7, 11, 13 and 15
- * are not the engine's to see here: texts come later, and the server's tests cover answer ids, the
- * end message and the build preview.
+ * The random test and the simulator call it after every build and every card. Rules 11, 13 and 15
+ * are not the engine's to see here: the server's tests cover answer ids, the end message and the
+ * build preview.
  */
 
 export type Violation = { rule: number; detail: string };
@@ -71,6 +72,11 @@ function checkBuild(input: InvariantInput, build: NonNullable<InvariantInput["bu
     });
     if (due.length > 0 && result.effects.unbuildable.length === 0) out.push({ rule: 1, detail: `nothing left with ${due.length} due in scope ${scope}` });
   }
+  // «شنیداری» and «خواندن» are never empty while an attempt of the track is due (PRD §10.4), unless the learner said «بعداً».
+  if (result.kind === "nothing_left" && (scope === "listening" || scope === "reading") && opts.text !== "later" && (scope === "reading" || !opts.noAudio)) {
+    const env = { content, settings, now, known: () => true, states: indexTextStates(before.texts), levelOf: () => content.levels[0] };
+    if (dueTexts(env, [scope]).length > 0) out.push({ rule: 1, detail: `nothing left with a due ${scope} attempt` });
+  }
 
   // 5. Spreading the backlog never moves `fsrs.due` (the learner after the build's writes against the one before).
   const after = new Map(input.learner.items.map((state) => [itemKey(state.itemType, state.itemId), state]));
@@ -81,11 +87,30 @@ function checkBuild(input: InvariantInput, build: NonNullable<InvariantInput["bu
   if (result.kind !== "plan") return;
   const plan = result.plan;
 
+  const textStates = indexTextStates(before.texts);
+  const gapMs = num(settings, "text.cross_gap_days") * 86_400_000;
+  const textTracks = new Map<number, string>();
   plan.queue.forEach((card, index) => {
+    if (card.t === "text" && card.text) {
+      const { textId, track, borrowed } = card.text;
+      // 7. A text comes in one track: borrowed by the other only `text.cross_gap_days` after the last time in it.
+      const other = textStates.get(textStateKey(textId, otherTrack(track)));
+      const last = lastTouch(other);
+      if (touched(other) && (!borrowed || wasBorrowed(other) || (last !== null && now.getTime() - last < gapMs))) out.push({ rule: 7, detail: `text ${textId} in ${track} after ${otherTrack(track)}` });
+      if (textTracks.has(textId) && textTracks.get(textId) !== track) out.push({ rule: 7, detail: `text ${textId} in both tracks of one session` });
+      textTracks.set(textId, track);
+      // 10. No listening text without sound.
+      if (plan.noAudio && track === "listening") out.push({ rule: 10, detail: `listening text ${textId} without sound` });
+    }
     // 8. Only visible content in open levels, never a frozen card.
-    // A drilled sentence is a bank sentence of the learner's content (PRD §7.6).
+    // A drilled sentence is a bank sentence of the learner's content (PRD §7.6); a text and its key words belong to a visible text.
     const ref = cardRef(content, card);
-    const shownOk = card.t === "drill" ? !!content.sentences.get(card.ex?.sentenceId ?? -1)?.bank : !!ref && active(ref);
+    const isText = card.t === "text" || card.t === "textwords";
+    const shownOk = isText
+      ? content.texts.some((text) => `x:${text.id}` === card.item)
+      : card.t === "drill"
+        ? !!content.sentences.get(card.ex?.sentenceId ?? -1)?.bank
+        : !!ref && active(ref);
     if (!shownOk) out.push({ rule: 8, detail: `${card.item} is not active content` });
     // 10. No exercise with sound in a session without sound.
     const shown = shownEx(plan, card);
@@ -151,4 +176,26 @@ function checkLearner(input: InvariantInput, out: Violation[]) {
   ];
   for (const [what, count, key] of caps) if (count > num(settings, key)) out.push({ rule: 6, detail: `${count} new ${what} today, cap ${num(settings, key)}` });
   if (today.wordsCapToday !== null && today.newWords > today.wordsCapToday) out.push({ rule: 6, detail: `${today.newWords} new words, today's cap ${today.wordsCapToday}` });
+  // 7. A text in both tracks: one borrowed it, every time in the other track at least `text.cross_gap_days` before.
+  const states = indexTextStates(learner.texts);
+  const gapMs = num(settings, "text.cross_gap_days") * 86_400_000;
+  for (const state of learner.texts) {
+    if (state.track !== "listening") continue;
+    const other = states.get(textStateKey(state.textId, "reading"));
+    if (!touched(state) || !touched(other)) continue;
+    const [lender, borrower] = wasBorrowed(state) ? [other!, state] : wasBorrowed(other) ? [state, other!] : [null, null];
+    if (!lender || !borrower) {
+      out.push({ rule: 7, detail: `text ${state.textId} in both tracks, neither borrowed` });
+      continue;
+    }
+    const first = firstTouch(borrower);
+    const last = lastTouch(lender);
+    if (first !== null && last !== null && first - last < gapMs) out.push({ rule: 7, detail: `text ${state.textId} borrowed ${Math.round((first - last) / 86_400_000)} days after its other track` });
+  }
+}
+
+/** When the learner first worked on the text in a track. */
+function firstTouch(state: TextStateE): number | null {
+  const times = [state.lastAttemptAt, ...state.scores.map((score) => score.at)].filter((time): time is string => !!time).map((time) => Date.parse(time));
+  return times.length ? Math.min(...times) : null;
 }

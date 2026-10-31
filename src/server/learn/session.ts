@@ -1,5 +1,5 @@
 import { randomUUID } from "node:crypto";
-import type { Content } from "@/engine/content";
+import type { Content, Track } from "@/engine/content";
 import { grammarLevel, grammarProgress, indexItems, vocabProgress } from "@/engine/levels";
 import { buildSession, type BuildEffects, type BuildOptions } from "@/engine/session/build";
 import { closeRounds } from "@/engine/session/play";
@@ -58,11 +58,14 @@ export type Bundle = {
   soundTip: boolean;
 };
 
-export type StartRequest = { language: string; scope: Scope; noAudio: boolean; cap: BuildOptions["cap"] };
+/** `text`: the answer to «پیش از جلسه متن» (PRD §10.11). */
+export type StartRequest = { language: string; scope: Scope; noAudio: boolean; cap: BuildOptions["cap"]; text?: BuildOptions["text"] };
 
 export type StartResult =
   | { kind: "session"; bundle: Bundle }
   | { kind: "ask_word_cap"; learned: number; canMore: boolean }
+  /** «امروز یک متن داریم؛ حدود … دقیقه طول می‌کشد» (PRD §10.11). */
+  | { kind: "ask_text_session"; minutes: number; textId: number; track: Track }
   | { kind: "nothing_left" }
   | { kind: "empty_notebook" }
   | { kind: "locked" }
@@ -126,11 +129,13 @@ export function expiresAt(row: Pick<Session, "created_at" | "last_answer_at">, s
  * cap. Going to slow pace leaves a note for the end of the next finished session (PRD §3.11 row 6); back
  * at normal pace the note is no longer true.
  */
-async function writeEffects(tx: Prisma.TransactionClient, userId: number, language: string, effects: BuildEffects, today: string) {
+async function writeEffects(tx: Prisma.TransactionClient, userId: number, language: string, effects: BuildEffects, today: string, textLater = false) {
   const notice = effects.becameSlow ? { slow_notice_due: true } : effects.paceMode === "normal" ? { slow_notice_due: false } : {};
+  // «بعداً» on «پیش از جلسه متن»: not asked again today (PRD §10.11).
+  const later = textLater ? { text_prompt_date: asDate(today) } : {};
   await tx.enrollment.update({
     where: { user_id_language: { user_id: userId, language } },
-    data: { pace_mode: effects.paceMode, last_spread_date: effects.lastSpreadDate ? asDate(effects.lastSpreadDate) : null, ...notice },
+    data: { pace_mode: effects.paceMode, last_spread_date: effects.lastSpreadDate ? asDate(effects.lastSpreadDate) : null, ...notice, ...later },
   });
   const byDay = new Map<string, Map<string, number[]>>();
   for (const item of effects.spread) {
@@ -144,7 +149,13 @@ async function writeEffects(tx: Prisma.TransactionClient, userId: number, langua
       await tx.itemState.updateMany({ where: { user_id: userId, item_type: type as "word", item_id: { in: ids } }, data: { deferred_until: new Date(until) } });
     }
   }
-  await addDaily(tx, { userId, language }, today, {}, { words_cap_today: effects.wordsCapToday, cap_prompt_shown: effects.capPromptShown });
+  await addDaily(
+    tx,
+    { userId, language },
+    today,
+    {},
+    { words_cap_today: effects.wordsCapToday, cap_prompt_shown: effects.capPromptShown, ...(effects.textSession ? { text_session_done: true } : {}) },
+  );
 }
 
 /**
@@ -169,7 +180,9 @@ export async function startSession(user: Learner, request: StartRequest, now = n
   const learner = await loadLearner(db, user.id, language, ctx.content.levels[0], now, ctx.today, ctx.settings);
   if (!learner) return { kind: "not_enrolled" };
   const id = randomUUID();
-  const built = buildSession(ctx.content, learner, ctx.settings, now, ctx.today, { scope, lengthMin: learner.sessionLength, noAudio: request.noAudio, cap: request.cap, seed: id });
+  const text = request.text ?? null;
+  const built = buildSession(ctx.content, learner, ctx.settings, now, ctx.today, { scope, lengthMin: learner.sessionLength, noAudio: request.noAudio, cap: request.cap, text, seed: id });
+  const later = text === "later";
   if (built.effects.unbuildable.length > 0) {
     // The learner never notices (the item waits); the teacher sees it on «خطاها» (PRD §15.9).
     void logError("learn.build", new Error(`Due items with no exercise (${language}): ${built.effects.unbuildable.join(", ")}`), { userId: user.id });
@@ -177,13 +190,14 @@ export async function startSession(user: Learner, request: StartRequest, now = n
   if (built.kind === "plan") {
     const stored: StoredPlan = { ...built.plan, start: startInfo(ctx.content, learner, ctx.settings) };
     const row = await db.$transaction(async (tx) => {
-      await writeEffects(tx, user.id, language, built.effects, ctx.today);
+      await writeEffects(tx, user.id, language, built.effects, ctx.today, later);
       return tx.session.create({
         data: {
           id,
           user_id: user.id,
           language,
           scope,
+          is_text_session: built.effects.textSession,
           planned_length_min: Math.round(built.plan.budgetSec / 60),
           no_audio: request.noAudio,
           plan: stored as unknown as Prisma.InputJsonValue,
@@ -193,8 +207,9 @@ export async function startSession(user: Learner, request: StartRequest, now = n
     });
     return { kind: "session", bundle: bundleOf(row, ctx, await isFirstSession(user.id, language, row.id)) };
   }
-  await db.$transaction((tx) => writeEffects(tx, user.id, language, built.effects, ctx.today));
+  await db.$transaction((tx) => writeEffects(tx, user.id, language, built.effects, ctx.today, later));
   if (built.kind === "ask_word_cap") return { kind: "ask_word_cap", learned: built.learned, canMore: built.canMore };
+  if (built.kind === "ask_text_session") return { kind: "ask_text_session", minutes: built.minutes, textId: built.textId, track: built.track };
   return { kind: built.kind };
 }
 
@@ -214,6 +229,8 @@ export async function previewSession(user: Learner, language: string, now = new 
   const options = { scope: "mixed" as const, lengthMin: learner.sessionLength, noAudio: false, cap: null, seed: "preview" };
   let built = buildSession(ctx.content, learner, ctx.settings, now, ctx.today, options);
   if (built.kind === "ask_word_cap") built = buildSession(ctx.content, learner, ctx.settings, now, ctx.today, { ...options, cap: "none" });
+  // «پیش از جلسه متن» comes after the press; the line shows the session «شروع» there would build.
+  if (built.kind === "ask_text_session") built = buildSession(ctx.content, learner, ctx.settings, now, ctx.today, { ...options, text: "confirmed" });
   const quick = buildSession(ctx.content, learner, ctx.settings, now, ctx.today, { ...options, scope: "quick" });
   // «برای امروز چیزی نمانده» offers more practice on today's items when there are any (PRD §10.8).
   const extra = built.kind !== "plan" && buildSession(ctx.content, learner, ctx.settings, now, ctx.today, { ...options, scope: "extra" }).kind === "plan";
@@ -221,6 +238,7 @@ export async function previewSession(user: Learner, language: string, now = new 
     minutes: learner.sessionLength,
     reviews: built.kind === "plan" ? built.plan.summary.reviews : 0,
     newItems: built.kind === "plan" ? built.plan.summary.newItems : 0,
+    resumeText: built.kind === "plan" && built.plan.summary.resumeText,
     empty: built.kind !== "plan",
     quick: quick.kind === "plan",
     extra,

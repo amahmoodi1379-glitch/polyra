@@ -1,11 +1,11 @@
-import { knownShare, sentenceViewOf, wordView, type BuildEnv } from "../build";
-import { PRONOUNS, type ConjC, type Content, type UnitC, type WordC } from "../content";
+import { glossesOf, knownShare, sentenceViewOf, wordView, type BuildEnv } from "../build";
+import { PRONOUNS, type ConjC, type Content, type TextC, type Track, type UnitC, type WordC } from "../content";
 import { levelIndex } from "../content";
 import { strongestPartner } from "../answer";
 import { seeded, type Rng } from "../random";
 import type { Settings } from "../settings";
 import { itemKey, type LearnerSnapshot } from "../state";
-import type { LessonView, TableView, WordCard } from "./types";
+import type { LessonView, TableView, TextView, WordCard } from "./types";
 
 /** What the learner knows and has seen, as the exercise builders need it (PRD §5.5, §5.7). */
 export function makeEnv(content: Content, learner: LearnerSnapshot, settings: Settings, rng: Rng): BuildEnv {
@@ -86,3 +86,21 @@ export function lessonView(env: BuildEnv, unit: UnitC): LessonView {
 export const partRng = (seed: string, part: string, id: string | number = "") => seeded(seed, part, id);
 
 export const wordKey = (id: number) => itemKey("word", id);
+
+/** A text as its screens show it, with the questions of one track (PRD §7.4, §7.9). */
+export function textView(content: Content, text: TextC, track: Track): TextView {
+  return {
+    id: text.id,
+    title: text.title,
+    level: text.level,
+    band: text.band,
+    track,
+    sentences: text.sentenceIds.map((id, i) => {
+      const sentence = content.sentences.get(id)!;
+      return { id, text: sentence.text, translation: sentence.translationFa, glosses: glossesOf(sentence, content), speak: sentence.speak, speaker: text.speakers?.[i] ?? null };
+    }),
+    audio: text.audio,
+    wordCount: text.wordCount,
+    questions: text.questions[track],
+  };
+}

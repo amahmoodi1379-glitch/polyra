@@ -11,6 +11,8 @@ const schema = z.object({
   scope: z.enum(SCOPES),
   noAudio: z.boolean().default(false),
   cap: z.enum(["more", "none"]).nullable().default(null),
+  /** «شروع» or «بعداً» on «پیش از جلسه متن» (PRD §10.11). */
+  text: z.enum(["confirmed", "later"]).nullable().default(null),
 });
 
 /** Builds or resumes a session and returns its bundle (PRD §15.4, step 1). */

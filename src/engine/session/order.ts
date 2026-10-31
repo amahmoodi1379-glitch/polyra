@@ -3,6 +3,7 @@ import type { Ex } from "../ex";
 import { SHAPE } from "../exercises";
 import { shuffle, type Rng } from "../random";
 import type { NotebookRef } from "../state";
+import type { TextPick } from "../texts";
 import type { PlanItem, PlayKind } from "./types";
 
 /**
@@ -18,7 +19,12 @@ export type Entry =
   | (Base & { t: "round"; step: number; questions: Ex[]; alts: (Ex | null)[]; lesson: boolean })
   | (Base & { t: "newunit"; unit: UnitC; g0: Ex[]; questions: Ex[]; alts: (Ex | null)[]; step: number })
   /** A sentence heard alone (PRD §7.6), placed like a single exercise. */
-  | (Base & { t: "drill"; ex: Ex });
+  | (Base & { t: "drill"; ex: Ex })
+  /**
+   * A text attempt (PRD §7.4), a block; `lead` puts it first: an attempt left half-way or the text of a
+   * text session (§10.7). `keyWords` are shown before a first attempt (§7.5).
+   */
+  | (Base & { t: "text"; pick: TextPick; keyWords: number[]; lead: boolean });
 
 /** Spreads `items` evenly between the elements of `base`. */
 export function interleave<T>(base: T[], items: T[]): T[] {
@@ -49,13 +55,15 @@ function mixSingles(list: Entry[], rng: Rng): Entry[] {
 const stepOf = (entry: Entry) => (entry.t === "single" ? entry.step : entry.t === "drill" ? entry.ex.step : Number.POSITIVE_INFINITY);
 
 /**
- * PRD §10.7, "ترتیب اولیه": the two easiest reviews first, new words and blocks spread evenly, the
- * other singles mixed, and the easiest remaining single last so the session ends on a success.
+ * PRD §10.7, "ترتیب اولیه": a text left half-way or a text session's text first, then the two easiest
+ * reviews, new words and blocks spread evenly, the other singles mixed, and the easiest remaining
+ * single last so the session ends on a success.
  */
 export function orderEntries(entries: Entry[], rng: Rng): Entry[] {
+  const lead = entries.filter((entry) => entry.t === "text" && entry.lead);
   const singles = entries.filter((entry) => entry.t === "single" || entry.t === "drill");
   const newWords = entries.filter((entry) => entry.t === "newword");
-  const blocks = entries.filter((entry) => entry.t === "round" || entry.t === "newunit" || entry.t === "newconj");
+  const blocks = entries.filter((entry) => entry.t === "round" || entry.t === "newunit" || entry.t === "newconj" || (entry.t === "text" && !entry.lead));
 
   const byStep = (list: Entry[]) => [...list].sort((a, b) => stepOf(a) - stepOf(b));
   const reviews = byStep(singles.filter((entry) => entry.t === "single" && entry.kind === "review"));
@@ -67,5 +75,5 @@ export function orderEntries(entries: Entry[], rng: Rng): Entry[] {
   let middle = mixSingles(rest, rng);
   middle = interleave(middle, newWords);
   middle = interleave(middle, blocks);
-  return [...first, ...middle, ...(last ? [last] : [])];
+  return [...lead, ...first, ...middle, ...(last ? [last] : [])];
 }

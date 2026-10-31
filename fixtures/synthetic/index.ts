@@ -3,7 +3,7 @@
  * targets, grammar units with their targets and conjugation tables. Every value comes from the index,
  * so the same arguments always give the same content.
  */
-import { indexContent, type ConjC, type Content, type Gender, type Pos, type SentenceC, type TargetC, type TransformC, type UnitC, type WordC } from "../../src/engine/content";
+import { indexContent, type ConjC, type Content, type Gender, type Pos, type QuestionC, type SentenceC, type TargetC, type TextC, type TransformC, type UnitC, type WordC } from "../../src/engine/content";
 import type { Lang } from "../../src/engine/text";
 
 export type SyntheticOptions = {
@@ -17,6 +17,8 @@ export type SyntheticOptions = {
   unitWordsLevel?: string;
   /** Words and units of each level instead of an even spread (the simulator's A1 600/50, then 300/30, PRD §15.7). */
   perLevel?: { words: number[]; units: number[] };
+  /** Listening and reading texts of each level (PRD §7.2), made of the level's words; none by default. */
+  textsPerLevel?: number;
 };
 
 /** The level of the `n`th item (from 1) when each level holds `sizes[i]` of them. */
@@ -204,6 +206,12 @@ export function syntheticContent(opts: SyntheticOptions = {}): Content {
       reviewCard: i % 2 === 0,
     }));
 
+  const texts = makeTexts(levels, words, opts.textsPerLevel ?? 0, (list, level) => {
+    const sentence = { ...makeSentence(list, level), bank: false };
+    sentences.push(sentence);
+    return sentence;
+  });
+
   return indexContent({
     language,
     levels,
@@ -215,5 +223,57 @@ export function syntheticContent(opts: SyntheticOptions = {}): Content {
     transforms,
     translates: [],
     conjugations,
+    texts,
   });
+}
+
+/**
+ * Texts of each level: six sentences of the level's words, the first texts from its first words (like
+ * PRD §7.5's rule for the first A1 texts), every other one with a recording. Bands follow the level.
+ * Each track has two question sets of the kinds that track allows.
+ */
+function makeTexts(levels: string[], words: WordC[], perLevel: number, sentence: (list: WordC[], level: string) => SentenceC): TextC[] {
+  const texts: TextC[] = [];
+  let questionId = 1;
+  const base = (prompt: string) => ({ id: questionId++, prompt, promptFa: null, explanationFa: null });
+  levels.forEach((level, li) => {
+    const pool = words.filter((word) => word.level === level && !word.noCard);
+    for (let k = 0; k < perLevel && pool.length >= 8; k++) {
+      const reach = Math.min(pool.length, 12 + k * 10);
+      const sentences = Array.from({ length: 6 }, (_, j) => sentence([0, 1, 2, 3, 4].map((d) => pool[(k * 5 + j * 3 + d * 7) % reach]), level));
+      const wordCount = sentences.reduce((sum, item) => sum + item.tokens.length, 0);
+      const id = texts.length + 1;
+      const choice = (n: number): QuestionC => ({ ...base(`سؤال ${n}`), type: "mcq", options: ["a", "b", "c"], correct: n % 3 });
+      const truth = (n: number): QuestionC => ({ ...base(`درست یا غلط ${n}`), type: "tf", correct: n % 2 === 0 });
+      const set = (kind: "listening" | "reading", name: "A" | "B"): QuestionC[] => {
+        const extra: QuestionC =
+          kind === "listening"
+            ? name === "A"
+              ? { ...base("بنویس"), type: "dict", sentence: 1 }
+              : { ...base("عدد"), type: "num", answer: "12", accepted: ["12", "douze"] }
+            : name === "A"
+              ? { ...base("کدام جمله"), type: "find", correctSentence: 2 }
+              : { ...base("ترتیب"), type: "order", items: ["x", "y", "z"], correctOrder: [2, 0, 1] };
+        return [choice(1), truth(2), choice(3), extra];
+      };
+      texts.push({
+        id,
+        code: `t${level}-${k + 1}`,
+        level,
+        band: Math.min(4, li + 1),
+        kind: k % 2 ? "dialogue" : "message",
+        title: `متن ${level} ${k + 1}`,
+        sentenceIds: sentences.map((item) => item.id),
+        speakers: k % 2 ? sentences.map((_, j) => (j % 2 ? "B" : "A")) : null,
+        audio: k % 2 ? { url: `/media/text${id}.mp3`, offsetsMs: sentences.map((_, j) => j * 2500), durationSec: wordCount / 2 } : null,
+        wordCount,
+        keyWordIds: [pool[(k * 5) % reach].id, pool[(k * 5 + 3) % reach].id],
+        placementOk: k === 0,
+        difficulty: k,
+        orderOverride: null,
+        questions: { listening: { A: set("listening", "A"), B: set("listening", "B") }, reading: { A: set("reading", "A"), B: set("reading", "B") } },
+      });
+    }
+  });
+  return texts;
 }

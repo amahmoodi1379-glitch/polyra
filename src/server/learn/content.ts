@@ -1,4 +1,18 @@
-import { indexContent, type ConjC, type Content, type Gender, type Pos, type SentenceC, type Speak, type TargetC, type TokenC, type UnitC, type WordC } from "@/engine/content";
+import {
+  indexContent,
+  type ConjC,
+  type Content,
+  type Gender,
+  type Pos,
+  type QuestionC,
+  type SentenceC,
+  type Speak,
+  type TargetC,
+  type TextC,
+  type TokenC,
+  type UnitC,
+  type WordC,
+} from "@/engine/content";
 import type { Lang } from "@/engine/text";
 import type { ContentStatus } from "@/generated/prisma/client";
 import { spokenWord } from "@/lib/spoken";
@@ -7,7 +21,7 @@ import { appSetting } from "@/server/settings/read";
 
 /**
  * The content a learner may see, in the engine's shape (PRD §4.1, §13.5): published and not
- * suspended; a tester or an admin also sees approved content, in every level (PRD §13.5,
+ * suspended, texts only of released levels; a tester or an admin also sees approved content, in every level (PRD §13.5,
  * «حساب آزمایش‌کننده»). Kept in memory for a short while, since every session build needs it.
  */
 
@@ -48,12 +62,14 @@ export async function loadContent(language: string, audience: Audience): Promise
     db.transformItem.findMany({ where: visible }),
     db.translateItem.findMany({ where: visible }),
     db.conjugationTable.findMany({ where: visible }),
-    db.text.findMany({ where: { language }, select: { sentence_ids: true } }),
+    db.text.findMany({ where: { language }, include: { questions: { where: { status: { in: statuses }, suspended: false }, orderBy: { order_no: "asc" } } } }),
     db.dialogue.findMany({ where: { language }, select: { turns: true } }),
   ]);
 
-  const assetIds = [...wordRows, ...sentenceRows].flatMap((row) => [row.audio_id, row.human_audio_id]).filter((id): id is number => id !== null);
-  const assets = new Map((await db.audioAsset.findMany({ where: { id: { in: assetIds }, stale: false }, select: { id: true, url: true } })).map((row) => [row.id, row.url]));
+  const assetIds = [...wordRows, ...sentenceRows, ...texts].flatMap((row) => [row.audio_id, row.human_audio_id]).filter((id): id is number => id !== null);
+  const assetRows = await db.audioAsset.findMany({ where: { id: { in: assetIds }, stale: false }, select: { id: true, url: true, duration_ms: true } });
+  const assets = new Map(assetRows.map((row) => [row.id, row.url]));
+  const durations = new Map(assetRows.map((row) => [row.id, row.duration_ms]));
   /** The file learners hear: the teacher's recording first, never a stale one (PRD §13.8). */
   const fileOf = (row: { audio_id: number | null; human_audio_id: number | null }) =>
     (row.human_audio_id !== null && assets.get(row.human_audio_id)) || (row.audio_id !== null && assets.get(row.audio_id)) || null;
@@ -168,10 +184,11 @@ export async function loadContent(language: string, audience: Audience): Promise
       reviewCard: row.review_card,
     }));
 
+  const openLevels = levels.filter((level) => released.includes(level));
   return indexContent({
     language: lang,
     levels,
-    openLevels: levels.filter((level) => released.includes(level)),
+    openLevels,
     words,
     sentences,
     targets,
@@ -183,5 +200,81 @@ export async function loadContent(language: string, audience: Audience): Promise
       .filter((row) => unitIds.has(row.grammar_unit_id))
       .map((row) => ({ id: row.id, unitId: row.grammar_unit_id, promptFa: row.prompt_fa, outputs: row.accepted_outputs })),
     conjugations,
+    texts: texts
+      .filter((row) => statuses.includes(row.status) && !row.suspended && openLevels.includes(row.level) && row.sentence_ids.every((id) => sentences.has(id)))
+      .map((row) => textOf(row, { sentences, words, assets, durations })),
   });
+}
+
+type TextRow = Awaited<ReturnType<typeof db.text.findMany<{ include: { questions: true } }>>>[number];
+
+/**
+ * A text in the engine's shape (PRD §7.2): the teacher's recording first with its own sentence starts,
+ * never a stale file; without one the device voice reads it (DECISIONS.md). Its questions by track
+ * and set, in order.
+ */
+function textOf(
+  row: TextRow,
+  known: { sentences: Map<number, SentenceC>; words: Map<number, WordC>; assets: Map<number, string>; durations: Map<number, number | null> },
+): TextC {
+  const human = row.human_audio_id !== null && known.assets.has(row.human_audio_id) ? row.human_audio_id : null;
+  const file = human ?? (row.audio_id !== null && known.assets.has(row.audio_id) ? row.audio_id : null);
+  const offsets = human !== null ? row.human_sentence_offsets_ms : row.sentence_offsets_ms;
+  const durationMs = file !== null ? known.durations.get(file) : null;
+  const questions: TextC["questions"] = { listening: { A: [], B: [] }, reading: { A: [], B: [] } };
+  for (const question of row.questions) {
+    const parsed = questionOf(question);
+    if (parsed) questions[question.track][question.set].push(parsed);
+  }
+  const tokens = row.sentence_ids.flatMap((id) => known.sentences.get(id)?.tokens ?? []);
+  return {
+    id: row.id,
+    code: row.code,
+    level: row.level,
+    band: row.band,
+    kind: row.kind,
+    title: row.title,
+    sentenceIds: row.sentence_ids,
+    speakers: Array.isArray(row.speakers) ? (row.speakers as (string | null)[]) : null,
+    audio:
+      file !== null && durationMs
+        ? { url: known.assets.get(file)!, offsetsMs: offsets.length === row.sentence_ids.length ? offsets : [], durationSec: durationMs / 1000 }
+        : null,
+    wordCount: row.word_count ?? tokens.filter((token) => token.kind === "word").length,
+    keyWordIds: row.key_word_ids.filter((id) => known.words.has(id)),
+    placementOk: row.placement_ok,
+    difficulty: row.difficulty_score ?? 0,
+    orderOverride: row.order_override,
+    questions,
+  };
+}
+
+/** A stored question (its payload is the import's fields without `type`, PRD §14.3) in the engine's shape; null when it does not read. */
+function questionOf(row: TextRow["questions"][number]): QuestionC | null {
+  const p = (row.payload ?? {}) as Record<string, unknown>;
+  const base = { id: row.id, prompt: typeof p.prompt === "string" ? p.prompt : "", promptFa: typeof p.prompt_fa === "string" ? p.prompt_fa : null, explanationFa: row.explanation_fa };
+  const strings = (value: unknown) => (Array.isArray(value) ? value.map(String) : []);
+  const ints = (value: unknown) => (Array.isArray(value) ? value.map(Number) : []);
+  switch (row.type) {
+    case "mcq":
+      return { ...base, type: "mcq", options: strings(p.options), correct: Number(p.correct) };
+    case "tf":
+      return { ...base, type: "tf", correct: p.correct === true };
+    case "order":
+      return { ...base, type: "order", items: strings(p.items), correctOrder: ints(p.correct_order) };
+    case "match":
+      return { ...base, type: "match", left: strings(p.left), right: strings(p.right), pairs: (Array.isArray(p.pairs) ? p.pairs : []).map((pair) => ints(pair) as [number, number]) };
+    case "cloze":
+      return { ...base, type: "cloze", textWithGaps: String(p.text_with_gaps ?? ""), bank: strings(p.bank), answers: strings(p.answers) };
+    case "find":
+      return { ...base, type: "find", correctSentence: Number(p.correct_sentence) };
+    case "ctx":
+      return { ...base, type: "ctx", word: String(p.word ?? ""), options: strings(p.options), correct: Number(p.correct) };
+    case "num":
+      return { ...base, type: "num", answer: String(p.answer ?? ""), accepted: strings(p.accepted) };
+    case "dict":
+      return { ...base, type: "dict", sentence: Number(p.sentence) };
+    default:
+      return null;
+  }
 }
