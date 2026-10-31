@@ -3,6 +3,7 @@ import type { ImportBatch, Prisma } from "@/generated/prisma/client";
 import { checkTokens, fold, type MappedRow, type TokenProblem } from "@/engine/tokens";
 import type { Token } from "@/schemas/common";
 import { levelRank } from "../languages";
+import { topLevel } from "../sentence-level";
 import { problem, type Problem } from "../problems";
 import type { Flag, RoundResult } from "../report";
 import type { LoadedVocabulary } from "../vocabulary";
@@ -144,7 +145,6 @@ export async function storeSentence(
   }
 
   const wordRows = rows.filter((row) => row.kind === "word");
-  const levels = wordRows.map((row) => (row.word_id ? vocabulary.byId(row.word_id)?.level : null)).filter(Boolean) as string[];
   const outside = wordRows.filter((row) => {
     const word = row.word_id ? vocabulary.byId(row.word_id) : undefined;
     return !word || levelRank(word.level) > levelRank(level);
@@ -159,7 +159,8 @@ export async function storeSentence(
       tts_text: sentence.tts_text,
       translation_fa: sentence.translation_fa,
       text_hash: hash,
-      level: levels.reduce<string | null>((top, value) => (top && levelRank(top) >= levelRank(value) ? top : value), null),
+      // Before any of its words is in the list, a sentence has the level it was made for.
+      level: topLevel(wordRows.map((row) => (row.word_id ? vocabulary.byId(row.word_id)?.level : null))) ?? level,
       ...trace(batch),
       words: {
         create: rows.map((row) => ({

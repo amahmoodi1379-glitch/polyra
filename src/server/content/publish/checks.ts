@@ -136,6 +136,18 @@ class SentenceIssues {
   }
 }
 
+/**
+ * A sentence a learner has after this run: published already, or approved with nothing that keeps
+ * it back. Words and units count only these, so none goes live with fewer sentences than its minimum.
+ */
+function publishable(facts: SentenceFacts | null, loader: Loader): facts is SentenceFacts {
+  if (!facts || !isReady(facts.status)) return false;
+  if (facts.status === "published") return true;
+  const issues = new SentenceIssues();
+  issues.add(facts, loader);
+  return issues.reasons(true).length === 0;
+}
+
 /** Token lists stored as JSON (short translations, find-the-mistake texts). */
 const storedTokens = (value: unknown) =>
   (Array.isArray(value) ? (value as { word_id?: number | null; kind?: string; candidate_reason?: string | null; suspect?: boolean }[]) : []).map((row) => ({
@@ -179,12 +191,15 @@ async function words(loader: Loader, scope: CheckScope): Promise<CheckedItem[]> 
       })
     : [];
   const twinReady = new Set(twins.map((row) => row.concept_id));
-  const targets = await tx.sentenceTarget.groupBy({
-    by: ["target_id"],
+  const targets = await tx.sentenceTarget.findMany({
     where: { target_type: "word", target_id: { in: rows.map((row) => row.id) }, status: { not: "retired" }, sentence: { status: { in: readyStatuses } } },
-    _count: true,
+    select: { target_id: true, sentence_id: true },
   });
-  const counts = new Map(targets.map((row) => [row.target_id, row._count]));
+  const facts = await loader.sentences(targets.map((row) => row.sentence_id));
+  const counts = new Map<number, number>();
+  targets.forEach((row, index) => {
+    if (publishable(facts[index], loader)) counts.set(row.target_id, (counts.get(row.target_id) ?? 0) + 1);
+  });
   return rows.map((word) => {
     const reasons: string[] = [];
     if (word.dup_of_id) reasons.push(reason("duplicate"));
@@ -227,7 +242,7 @@ async function units(loader: Loader, scope: CheckScope): Promise<CheckedItem[]> 
     select: { target_id: true, sentence_id: true },
   });
   await loader.sentences([...rows.flatMap((row) => row.example_sentence_ids), ...targets.map((row) => row.sentence_id)]);
-  const ready = (facts: SentenceFacts | null): facts is SentenceFacts => facts !== null && isReady(facts.status);
+  const ready = (facts: SentenceFacts | null): facts is SentenceFacts => publishable(facts, loader);
   return Promise.all(
     rows.map(async (unit) => {
       const reasons: string[] = [];

@@ -5,6 +5,7 @@ import { levelOrder } from "../languages";
 import { isOrderList, orderEntity, orderState, writeOrder, type OrderList, type OrderState } from "../order";
 import { ENGINE_ENTITY, engineDef, revertEngineRow } from "@/server/settings/engine";
 import { APP_ENTITY, fieldOfLog, LANGUAGE_TEXT_ENTITY, revertGeneralRow } from "@/server/settings/general";
+import { refreshSentenceLevels } from "../sentence-level";
 import { refreshDifficulty } from "../text-difficulty";
 import { afterSentenceChange, targetColumns, wordColumns } from "./edit/sentences";
 import { comparable, type StoredQuestion } from "./edit/texts";
@@ -217,7 +218,10 @@ async function revertItem(tx: Tx, row: AdminLog, adminId: number): Promise<Rever
     notes.push(...(await afterSentenceChange(tx, adminId, item as never, { textChanged: "text" in before, ttsChanged: "tts_text" in before })));
     if ("text" in before || "sentence_word" in before) await refreshDifficulty(tx, { sentenceIds: [id] });
   }
-  if (row.entity === "word" && "level" in before) await refreshDifficulty(tx, { wordIds: [id] });
+  if (row.entity === "word" && "level" in before) {
+    await refreshSentenceLevels(tx, { wordIds: [id] });
+    await refreshDifficulty(tx, { wordIds: [id] });
+  }
 
   await logChange(tx, adminId, { action: "revert", entity: row.entity, entityId: id, before: after, after: before });
   return { state: "reverted", notes };

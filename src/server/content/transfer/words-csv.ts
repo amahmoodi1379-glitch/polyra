@@ -10,6 +10,8 @@ import { wordRecord } from "@/schemas/words";
 import { db } from "@/server/db";
 import { appSetting, engineNumber } from "@/server/settings/read";
 import { repeatedWord } from "../codes";
+import { refreshSentenceLevels } from "../sentence-level";
+import { refreshDifficulty } from "../text-difficulty";
 import { levelWords, numberLevel } from "../intro-order";
 import { checkWord } from "../kinds/words";
 import type { Tx } from "../kinds/types";
@@ -232,6 +234,7 @@ export async function importWordsCsv(input: { language: LanguageCode; text: stri
     };
     const fileOrder = new Map<string, number[]>();
     const touched = new Set<string>();
+    const movedWords: number[] = [];
     for (const item of kept) {
       const { record, target } = item;
       const rank = target?.frequency_rank ?? null;
@@ -262,7 +265,10 @@ export async function importWordsCsv(input: { language: LanguageCode; text: stri
           const moved = target.level !== record.level;
           await tx.word.update({ where: { id }, data: { ...(diff.after as Prisma.WordUncheckedUpdateInput), ...(moved ? { intro_order: null } : {}) } });
           await logChange(tx, adminId, { action: "import", entity: "word", entityId: id, before: diff.before, after: diff.after });
-          if (moved) touched.add(target.level);
+          if (moved) {
+            touched.add(target.level);
+            movedWords.push(id);
+          }
           report.updated++;
         } else report.unchanged++;
       } else {
@@ -280,6 +286,10 @@ export async function importWordsCsv(input: { language: LanguageCode; text: stri
       fileOrder.set(record.level, [...(fileOrder.get(record.level) ?? []), id]);
       touched.add(record.level);
     }
+
+    // Sentences of a word that moved level, and the texts made of them, follow it.
+    await refreshSentenceLevels(tx, { wordIds: movedWords });
+    await refreshDifficulty(tx, { wordIds: movedWords });
 
     // Pass 4: the order of each level the file touched.
     for (const level of [...touched].sort((a, b) => levelRank(a) - levelRank(b))) {

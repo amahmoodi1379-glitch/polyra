@@ -7,6 +7,8 @@ import { db } from "@/server/db";
 import { spokenWord } from "@/lib/spoken";
 import { appSetting, engineNumber } from "@/server/settings/read";
 import { repeatedWord } from "../codes";
+import { refreshSentenceLevels } from "../sentence-level";
+import { refreshDifficulty } from "../text-difficulty";
 import { lastIntroOrder, placeAfter } from "../intro-order";
 import { languageInfo, type LanguageCode } from "../languages";
 import { defaultMastery, PRODUCE_LEVELS } from "../mastery";
@@ -210,6 +212,7 @@ export const words: ContentKind = {
     const conceptIds = new Map([...concepts].map(([id, name]) => [name, id]));
     const nextOrder = new Map<string, number>();
     const moves = new Map<string, { wordId: number; afterId: number }[]>();
+    const moved: number[] = [];
     let previous: Row | null = null;
 
     const orderAtEnd = async (level: string) => {
@@ -290,6 +293,7 @@ export const words: ContentKind = {
         const intro_order = current.level === level ? current.intro_order : await orderAtEnd(level);
         saved = changed ? await updateWord(tx, target.id, { ...write, intro_order }) : target;
         if (changed && spokenWord(current) !== spokenWord({ ...current, ...write })) await staleAudio(tx, [current.audio_id, current.human_audio_id]);
+        if (level !== current.level) moved.push(target.id);
         unmatched.delete(target.id);
         if (changed) round.updated++;
         else round.skipped++;
@@ -315,6 +319,9 @@ export const words: ContentKind = {
     }
 
     for (const [level, list] of moves) await placeAfter(tx, language, level, list);
+    // Sentences of a word that moved level, and the texts made of them, follow it.
+    await refreshSentenceLevels(tx, { wordIds: moved });
+    await refreshDifficulty(tx, { wordIds: moved });
     // A draft is missing when no record of this answer or an earlier round named it: a refused
     // record is listed as refused, and a fix answer brings only the refused ones.
     const report = batch.report as ImportReport | null;

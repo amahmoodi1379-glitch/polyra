@@ -157,6 +157,25 @@ describe("editing and «برگردان» (PRD §13.2)", () => {
     expect(await testDb.word.findUniqueOrThrow({ where: { id: pain.id } })).toEqual(expect.objectContaining({ meaning_fa: "نان کوچک", note_fa: "یک نان" }));
   });
 
+  it("moves a sentence to the level of its highest word when a word changes level, and back on «برگردان»", async () => {
+    const pain = await word("pain", { concept_id: null });
+    const sentence = await testDb.sentence.create({
+      data: {
+        language: "fr",
+        text: "Le pain.",
+        translation_fa: "نان.",
+        text_hash: "le-pain",
+        level: "A1",
+        words: { create: [{ position: 0, kind: "word", word_id: pain.id, surface: "pain", spans: [[3, 7]] }] },
+      },
+    });
+    const loaded = (await wordEditor.load(pain.id))!;
+    await wordEditor.save(pain.id, { ...loaded.values, concept_fa: "نان", level: "A2" }, ADMIN);
+    expect((await testDb.sentence.findUniqueOrThrow({ where: { id: sentence.id } })).level).toBe("A2");
+    expect(await revertChange((await lastLog()).id, ADMIN)).toMatchObject({ state: "reverted" });
+    expect((await testDb.sentence.findUniqueOrThrow({ where: { id: sentence.id } })).level).toBe("A1");
+  });
+
   it("refuses when the item changed without a log row, and writes JSON back as it was", async () => {
     const etre = await word("être", { pos: "verb", gender: null });
     await testDb.grammarUnit.create({ data: { language: "fr", unit_code: "fr-a1-etre", title_fa: "فعل être", level: "A1", order_no: 1 } });

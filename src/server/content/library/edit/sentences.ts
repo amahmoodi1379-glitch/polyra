@@ -6,8 +6,8 @@ import { db } from "@/server/db";
 import type { Tx } from "../../kinds/types";
 import { wordCount } from "../../kinds/targets";
 import { blankHoldsWord, checkTarget, sentenceHash, type TargetInput } from "../../kinds/sentence-store";
-import { levelRank } from "../../languages";
 import { problem, type Problem } from "../../problems";
+import { topLevel } from "../../sentence-level";
 import { refreshDifficulty } from "../../text-difficulty";
 import { loadVocabulary } from "../../vocabulary";
 import { logChange, plain, same } from "../log";
@@ -237,8 +237,7 @@ export const sentenceEditor: Editor<SentenceValues, SentenceContext> = {
       const errors = [...errorsOf(problems), ...("errors" in mapped ? mapped.errors : [])];
       if (errors.length > 0 || !("rows" in mapped)) return { state: "invalid" as const, errors };
 
-      const levels = mapped.rows.map((item) => (item.word_id ? vocabulary.byId(item.word_id)?.level : null)).filter((level): level is string => Boolean(level));
-      const level = levels.reduce<string | null>((top, value) => (top && levelRank(top) >= levelRank(value) ? top : value), null);
+      const level = topLevel(mapped.rows.map((item) => (item.word_id ? vocabulary.byId(item.word_id)?.level : null))) ?? row.level;
       const data = { text, tts_text: textOrNull(values.tts_text), translation_fa: values.translation_fa, text_hash: hash, level };
 
       const oldWords = row.words.map(wordColumns);

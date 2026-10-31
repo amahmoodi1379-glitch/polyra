@@ -55,6 +55,8 @@ describe("candidates (PRD §13.9)", () => {
     expect(added).toMatchObject({ code: "fromage", status: "draft", meaning_fa: null, level: "A2", frequency_rank: 812, intro_order: 1 });
     expect(await testDb.sentenceWord.count({ where: { word_id: added.id, candidate_reason: null } })).toBe(2);
     expect((await openItems("fr")).candidates).toHaveLength(0);
+    // A sentence's level is its highest word's (PRD §4.1): the A2 word lifts the A1 sentence.
+    expect((await testDb.sentence.findMany({ orderBy: { id: "asc" } })).map((row) => row.level)).toEqual(["A2", "A2"]);
     // Settled already: a second click changes nothing.
     expect(await resolveCandidate("fr", candidates[0].key, { type: "name" })).toBe(false);
     expect(await testDb.adminLog.findMany({ where: { action: "resolve" }, select: { entity: true, entity_id: true, after: true } })).toEqual([

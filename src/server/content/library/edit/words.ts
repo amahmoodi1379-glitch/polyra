@@ -9,6 +9,7 @@ import { lastIntroOrder, rearrangeLevel } from "../../intro-order";
 import { checkWord } from "../../kinds/words";
 import { languageInfo, type LanguageCode } from "../../languages";
 import { problem, type Problem } from "../../problems";
+import { refreshSentenceLevels } from "../../sentence-level";
 import { refreshDifficulty } from "../../text-difficulty";
 import { levelOutside } from "../../kinds/shared";
 import { errorsOf, logEdit, parseValues, staleAudio, textOrNull, wordInfo, type WordInfo } from "./shared";
@@ -181,6 +182,7 @@ export const wordEditor: Editor<WordValues, WordContext> = {
         if (spokenWord({ ...row, ...data }) !== spokenWord(row)) await staleAudio(tx, [row.audio_id, row.human_audio_id]);
         if (values.level !== row.level) {
           await rearrangeLevel(tx, language, values.level);
+          await refreshSentenceLevels(tx, { wordIds: [id] });
           await refreshDifficulty(tx, { wordIds: [id] });
         }
       }

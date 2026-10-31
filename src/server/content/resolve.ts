@@ -7,6 +7,7 @@ import { posValues } from "@/schemas/common";
 import { freeCode, readCode, senseCode } from "./codes";
 import { lastIntroOrder, placeAfter } from "./intro-order";
 import { logChange } from "./library/log";
+import { refreshSentenceLevels } from "./sentence-level";
 import { refreshDifficulty } from "./text-difficulty";
 import type { Tx } from "./kinds/types";
 
@@ -199,6 +200,7 @@ async function linkRows(tx: Tx, rows: OpenRow[], word: { id: number; lemma: stri
     data: { kind: "word", word_id: word.id, candidate_reason: null, suspect: false },
   });
   for (const surface of new Set(rows.map((row) => row.surface))) await confirmForm(tx, word.id, surface, word.lemma);
+  await refreshSentenceLevels(tx, { sentenceIds: rows.map((row) => row.sentence_id) });
   await refreshDifficulty(tx, { sentenceIds: rows.map((row) => row.sentence_id) });
 }
 
@@ -322,6 +324,7 @@ export async function resolveDuplicate(language: string, wordId: number, decisio
     const moved = await tx.sentenceWord.updateMany({ where: { word_id: word.id }, data: { word_id: existing.id } });
     const targets = await tx.sentenceTarget.updateMany({ where: { target_type: "word", target_id: word.id }, data: { target_id: existing.id } });
     await tx.word.update({ where: { id: word.id }, data: { status: "retired", dup_of_id: null, intro_order: null } });
+    await refreshSentenceLevels(tx, { wordIds: [existing.id] });
     await refreshDifficulty(tx, { wordIds: [existing.id] });
     await logDecision(tx, adminId, "duplicate", [], { entity: "word", id: word.id }, { word: existing.lemma, mapped: moved.count, targets: targets.count });
     return true;

@@ -104,6 +104,23 @@ describe("publish conditions (PRD §13.5)", () => {
     ]);
   });
 
+  it("counts toward a word's or a unit's minimum only the sentences that go live with it", async () => {
+    const pain = await word("pain");
+    const [open, waiting] = await practice(pain, 5);
+    await testDb.sentenceWord.create({ data: { sentence_id: open.id, word_id: null, surface: "baguette", spans: [], position: 1, candidate_reason: "missing" } });
+    const chat = await word("chat", { status: "draft" });
+    await testDb.sentenceWord.create({ data: { sentence_id: waiting.id, word_id: chat.id, surface: "chat", spans: [], position: 1 } });
+    const unit = await testDb.grammarUnit.create({ data: { language: "fr", unit_code: "fr-a1-article", title_fa: "حرف تعریف", level: "A1", status: "approved" } });
+    await testDb.sentenceTarget.create({
+      data: { language: "fr", sentence_id: waiting.id, target_type: "grammar", target_id: unit.id, marked_text: "x", accepted: [], distractors: [] },
+    });
+
+    const { blocked } = await previewPublish("fr");
+    const reasons = Object.fromEntries(blocked.map((item) => [`${item.slug}:${item.id}`, item.reasons]));
+    expect(reasons[`words:${pain.id}`]).toEqual([why("wordTargets", { count: 3, min: 5 })]);
+    expect(reasons[`units:${unit.id}`]).toContain(why("unitTargets", { count: 0, min: 30 }));
+  });
+
   it("publishes a colloquial word without sentences once its standard word is ready", async () => {
     const car = await testDb.concept.create({ data: { language: "fr", name_fa: "ماشین" } });
     const eat = await testDb.concept.create({ data: { language: "fr", name_fa: "خوردن" } });
