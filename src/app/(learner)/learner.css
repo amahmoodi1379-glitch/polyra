@@ -2621,3 +2621,39 @@
   animation-duration: 0.32s;
   animation-timing-function: cubic-bezier(0.2, 0, 0, 1);
 }
+
+/*
+ * «بازبینی» in the teacher panel shows learner screens in a phone-sized frame
+ * (src/components/admin/review/learner-preview.tsx). The transform makes the frame hold the fixed
+ * feedback sheet; the screen fills the frame instead of the window.
+ */
+.lx.phone {
+  --gutter: 18px;
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  height: min(760px, calc(100dvh - 160px));
+  min-height: 560px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 36px;
+  background: var(--ground);
+  box-shadow: var(--shadow-1);
+  transform: translateZ(0);
+
+  & .phone-scroll {
+    height: 100%;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  & .app {
+    height: 100%;
+    min-height: 0;
+  }
+  & .fill {
+    min-height: 100%;
+  }
+  & .fb-card {
+    max-height: 82%;
+  }
+}

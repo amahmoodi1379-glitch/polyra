@@ -115,6 +115,17 @@ export const generalFields: GeneralField[] = [
     min: 1,
     max: 200,
   },
+  {
+    id: "review.sentence_share",
+    section: "making",
+    label: label("review.sentence_share"),
+    help: label("review.sentence_share_help"),
+    kind: "numbers",
+    key: "review.sentence_share",
+    keys: [],
+    min: 0,
+    max: 100,
+  },
   { id: "prompt.writing_words", section: "making", label: label("prompt.writing_words"), kind: "ranges", key: "prompt.writing_words", min: 20, max: 1000 },
   {
     id: "prompt.text_topics",

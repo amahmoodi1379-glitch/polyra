@@ -9,6 +9,7 @@ import {
   BookCheck,
   BookOpen,
   ClipboardPaste,
+  ListChecks,
   History,
   Inbox,
   Library,
@@ -37,6 +38,7 @@ function navGroups(showTestCodes: boolean): NavGroup[] {
       label: "admin.nav.content",
       items: [
         { href: "/admin/create", label: "admin.nav.create", icon: ClipboardPaste },
+        { href: "/admin/review", label: "admin.nav.review", icon: ListChecks },
         { href: "/admin/content", label: "admin.nav.library", icon: Library },
         { href: "/admin/order", label: "admin.nav.order", icon: ListOrdered },
         { href: "/admin/audio", label: "admin.nav.audio", icon: AudioLines },

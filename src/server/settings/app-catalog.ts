@@ -43,6 +43,11 @@ export const appSettingDefaults: Record<string, unknown> = {
   "prompt.sentence_length": { A1: "4 تا 10", A2: "5 تا 12", B1: "6 تا 15", B2: "6 تا 18" },
   /** How many targets, transforms and short translations one grammar unit asks for (P-G, PRD §14.6). */
   "prompt.grammar_counts": { targets: 40, transforms: 8, translations: 8 },
+  /**
+   * Share of vocabulary sentences the teacher reviews, per level, in percent (PRD §13.4: all of them
+   * up to A2, from B1 a random fifth). Flagged ones are always reviewed; the rest are approved unseen.
+   */
+  "review.sentence_share": { A1: 100, A2: 100, B1: 20, B2: 20 },
   /** Longest short translation in words, per level (P-G and P-TR, PRD §14.6). */
   "prompt.translation_length": { A1: 10, A2: 10, B1: 14, B2: 14 },
   /**

@@ -275,7 +275,8 @@ export async function importWordsCsv(input: { language: LanguageCode; text: stri
         const sameLemma = repeatedWord(words, record);
         const isDuplicate = fold(record.code) === fold(record.lemma) && Boolean(sameLemma);
         const created = await tx.word.create({
-          data: { ...fields, language, status: "draft", dup_of_id: isDuplicate ? sameLemma!.id : null },
+          // A file row has no quality check: a complete word goes straight to «بازبینی».
+          data: { ...fields, language, status: record.meaning_fa ? "needs_review" : "draft", dup_of_id: isDuplicate ? sameLemma!.id : null },
           select: { id: true },
         });
         id = created.id;

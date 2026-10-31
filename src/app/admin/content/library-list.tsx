@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ChevronLeft, ChevronRight, CircleDashed, LoaderCircle, MoreHorizontal, X } from "lucide-react";
 import { joinDots } from "@/components/admin/join-dots";
+import { QaMark } from "@/components/admin/qa-mark";
 import { LevelChip, StatusChip } from "@/components/admin/status-chip";
 import { Voiced } from "@/components/admin/voiced";
 import {
@@ -114,8 +115,8 @@ export function LibraryList({
         >
           <span className="text-ink me-auto text-[14px] font-bold tabular-nums">{t("admin.library.selection.count", { count: selected.size })}</span>
           {pending ? <LoaderCircle className="text-ink-3 size-5 animate-spin motion-reduce:animate-none" aria-label={t("admin.library.selection.working")} /> : null}
-          <Button type="button" size="sm" disabled={pending} onClick={() => run("approve")}>
-            {t("admin.library.actions.approve")}
+          <Button type="button" size="sm" disabled={pending} onClick={() => run("review")}>
+            {t("admin.library.actions.review")}
           </Button>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -219,6 +220,7 @@ function Row({
           ) : null}
         </span>
         <span className="flex shrink-0 items-center gap-1.5">
+          {row.qa ? <QaMark count={row.qa.count} severity={row.qa.severity} /> : null}
           {row.level ? <LevelChip level={row.level} /> : null}
           <StatusChip status={row.status} suspended={row.suspended} />
         </span>

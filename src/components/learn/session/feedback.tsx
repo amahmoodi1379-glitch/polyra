@@ -37,8 +37,9 @@ export function Feedback({
 }: {
   verdict: Graded;
   ex: Ex;
-  card: Card;
-  plan: SessionPlan;
+  card: Pick<Card, "id">;
+  /** Where the exercise's word or lesson is looked up: the session plan, or «بازبینی» in the panel. */
+  plan: Pick<SessionPlan, "words" | "lessons">;
   language: string;
   muted: boolean;
   onContinue: () => void;

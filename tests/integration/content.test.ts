@@ -586,8 +586,10 @@ describe("vocabulary sentences (P-S) and the QA round", () => {
     expect(logged.map((row) => [row.action, row.after])).toEqual([
       ["batch", expect.objectContaining({ kind: "P_S", round: 1, added: 2, rejected: 1 })],
       ["batch", expect.objectContaining({ round: 2, skipped: 1 })],
-      ["qa", { kind: "P_S", language: "fr", findings: 5, high: 2 }],
+      // Both sentences go to «بازبینی»: A1 is reviewed in full, and a finding the panel could not place leaves no sample.
+      ["qa", { kind: "P_S", language: "fr", findings: 5, high: 2, review: 2, unseen: 0 }],
     ]);
+    expect(await testDb.sentence.count({ where: { status: "needs_review" } })).toBe(2);
   });
 
   it("picks the next words that need sentences, lowest level and earliest order first", async () => {

@@ -9,7 +9,8 @@ import type { Tx } from "../kinds/types";
 /**
  * `import` is the CSV word file (PRD §14.7). `batch` is a chatbot answer pasted on the four-step path
  * (one row for the batch, one for each item it changed), `qa` its QA answer, `dismiss` and `cancel`
- * the admin setting refused records or the whole batch aside, `resolve` a decision on «حل کردن».
+ * the admin setting refused records or the whole batch aside, `resolve` a decision on «حل کردن»,
+ * `review` an item approved or rejected on «بازبینی» (or approved unseen by the sample rule).
  */
 export type LogAction =
   | "edit"
@@ -27,6 +28,7 @@ export type LogAction =
   | "dismiss"
   | "cancel"
   | "resolve"
+  | "review"
   | "access"
   | "account";
 

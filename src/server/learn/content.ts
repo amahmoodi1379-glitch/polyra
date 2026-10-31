@@ -11,7 +11,8 @@ import { appSetting } from "@/server/settings/read";
  * «حساب آزمایش‌کننده»). Kept in memory for a short while, since every session build needs it.
  */
 
-export type Audience = "public" | "tester";
+/** `review` is «بازبینی» in the panel: drafts too, every level, never cached (src/server/content/review/preview.ts). */
+export type Audience = "public" | "tester" | "review";
 
 const CACHE_MS = 30_000;
 const cache = new Map<string, { at: number; content: Promise<Content> }>();
@@ -34,10 +35,10 @@ export function forgetContent() {
 const MEANING_SPLIT = /[،,]/;
 
 export async function loadContent(language: string, audience: Audience): Promise<Content> {
-  const statuses: ContentStatus[] = audience === "tester" ? ["approved", "published"] : ["published"];
+  const statuses: ContentStatus[] = audience === "review" ? ["draft", "needs_review", "approved", "published"] : audience === "tester" ? ["approved", "published"] : ["published"];
   const visible = { language, status: { in: statuses }, suspended: false };
   const levels = await appSetting<string[]>(`levels.${language}`);
-  const released = audience === "tester" ? levels : (await db.levelRelease.findMany({ where: { language }, select: { level: true } })).map((row) => row.level);
+  const released = audience !== "public" ? levels : (await db.levelRelease.findMany({ where: { language }, select: { level: true } })).map((row) => row.level);
 
   const [wordRows, sentenceRows, targetRows, unitRows, transformRows, translateRows, conjRows, texts, dialogues] = await Promise.all([
     db.word.findMany({ where: { ...visible, meaning_fa: { not: null } } }),

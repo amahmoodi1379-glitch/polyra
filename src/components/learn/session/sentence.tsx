@@ -81,15 +81,18 @@ export function SentenceLine({
     if (!open) return;
     const hide = () => setOpen(null);
     const timer = window.setTimeout(hide, 2600);
-    window.addEventListener("scroll", hide, { passive: true });
+    // Any scroll moves the word away from its label, the page's or a scrolling frame's.
+    document.addEventListener("scroll", hide, { passive: true, capture: true });
     return () => {
       window.clearTimeout(timer);
-      window.removeEventListener("scroll", hide);
+      document.removeEventListener("scroll", hide, { capture: true });
     };
   }, [open]);
   const show = (key: string, text: string, el: HTMLElement) => {
     const box = el.getBoundingClientRect();
-    setOpen(open?.key === key ? null : { key, text, x: box.left + box.width / 2, y: box.top });
+    // Inside the panel's phone frame (`data-phone`, which holds fixed elements) the label is placed from its corner.
+    const frame = el.closest("[data-phone]")?.getBoundingClientRect();
+    setOpen(open?.key === key ? null : { key, text, x: box.left + box.width / 2 - (frame?.left ?? 0), y: box.top - (frame?.top ?? 0) });
   };
 
   // Where each segment starts in the sentence text, a blank counted by its size.

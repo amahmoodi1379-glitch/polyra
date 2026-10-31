@@ -13,7 +13,7 @@ import { librarySlugs } from "@/server/content/library/slugs";
 import { contentStatus } from "@/server/content/status";
 import { db } from "@/server/db";
 import { appSetting } from "@/server/settings/read";
-import { libraryHref } from "./content/links";
+import { reviewHref } from "./review/links";
 import { startBatch } from "./create/actions";
 
 type Action = { start: KindSlug; level?: string; label: string } | { href: string; label: string };
@@ -168,12 +168,10 @@ async function languageRows(language: LanguageCode, sizes: Record<string, number
   }
   const toReview = librarySlugs.reduce((sum, slug) => sum + reviewing[slug], 0);
   if (toReview) {
-    // The type with the most items waiting opens first; the library's type tabs lead to the rest.
-    const type = librarySlugs.reduce((best, slug) => (reviewing[slug] > reviewing[best] ? slug : best));
     rows.push({
       key: "needsReview",
       text: t("admin.workbench.rows.needsReview", { count: toReview }),
-      action: { href: libraryHref({ language, type, status: "needs_review" }), label: t("admin.workbench.actions.review") },
+      action: { href: reviewHref({ language }), label: t("admin.workbench.actions.review") },
     });
   }
   const toPublish = librarySlugs.reduce((sum, slug) => sum + approved[slug], 0);

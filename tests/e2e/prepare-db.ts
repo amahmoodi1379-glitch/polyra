@@ -5,9 +5,9 @@ import { seedSettings } from "../../scripts/seed/settings";
 import { E2E_ADMINS, E2E_FREQUENCY } from "./database";
 
 /**
- * Fresh database for the browser tests: every table emptied, settings seeded, two admin accounts, a
- * short French frequency list for the content path and a few German sentences with open items for
- * the resolve page.
+ * Fresh database for the browser tests: every table emptied, settings seeded, the admin accounts, a
+ * short French frequency list for the content path, a few German sentences with open items for
+ * the resolve page and a French word waiting for review.
  */
 async function main() {
   const rows = await db.$queryRawUnsafe<{ tablename: string }[]>(
@@ -25,6 +25,16 @@ async function main() {
   }
   await db.frequencyItem.createMany({ data: E2E_FREQUENCY.map((lemma, index) => ({ language: "fr", rank: index + 1, lemma })) });
   await openGermanItems();
+  await waitingWord();
+}
+
+/** A French word waiting for review, with what the quality check found in it (review.spec). */
+async function waitingWord() {
+  const pomme = await db.word.create({
+    data: { language: "fr", code: "pomme", lemma: "pomme", pos: "noun", gender: "f", level: "A2", meaning_fa: "سیب", status: "needs_review", intro_order: 1 },
+  });
+  const finding = { path: "words[0]", severity: "high", problem: "معنی دوم آن در «pomme de terre» نیامده.", suggestion: null, label: "pomme", entity: { type: "word", id: pomme.id } };
+  await db.importBatch.create({ data: { language: "fr", prompt_kind: "P_W", prompt_version: "v1", prompt_text: "", state: "qa_done", qa_findings: [finding] } });
 }
 
 /** A name that is really a listed plural, a missing word in two sentences, and a suspect form. */

@@ -6,7 +6,9 @@ import { db } from "@/server/db";
 import { appSetting, engineNumber } from "@/server/settings/read";
 import { correctedText } from "../kinds/errorfix";
 import { levelRank, type LanguageCode } from "../languages";
-import type { ContentStatusValue, LibrarySlug } from "./slugs";
+import { findingMark, findingsOf, type QaFlag } from "../review/findings";
+import type { EntityRef } from "../report";
+import { entityOf, type ContentStatusValue, type LibrarySlug } from "./slugs";
 
 /**
  * The lists of «همه محتوا» (PRD §13.2): every content type with filters for level, status and
@@ -35,6 +37,8 @@ export type LibraryRow = {
   status: ContentStatus;
   suspended: boolean;
   missing: string[];
+  /** «مشکوک»: what the quality check found in an item not approved yet (PRD §13.9). */
+  qa?: QaFlag | null;
 };
 
 export type LibraryPage = { rows: LibraryRow[]; total: number; page: number; pages: number };
@@ -499,8 +503,16 @@ async function phonics(language: string, filters: LibraryFilters) {
   );
 }
 
-/** One page of one content type, filtered (PRD §13.2 «محتوا»). */
+/** One page of one content type, filtered (PRD §13.2 «محتوا»), with the QA mark of the rows still before approval. */
 export async function listItems(slug: LibrarySlug, language: string, filters: LibraryFilters): Promise<LibraryPage> {
+  const result = await typePage(slug, language, filters);
+  const early = result.rows.filter((row) => row.status === "draft" || row.status === "needs_review");
+  const findings = await findingsOf(entityOf[slug] as EntityRef["type"], early.map((row) => row.id));
+  for (const row of early) row.qa = findingMark(findings.get(row.id));
+  return result;
+}
+
+async function typePage(slug: LibrarySlug, language: string, filters: LibraryFilters): Promise<LibraryPage> {
   switch (slug) {
     case "sentences":
       return sentences(language, filters);

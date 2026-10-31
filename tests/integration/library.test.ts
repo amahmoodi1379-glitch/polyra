@@ -68,12 +68,12 @@ async function importedText() {
 }
 
 describe("status changes in the library (PRD §13.2, §13.7)", () => {
-  it("approves drafts, refuses a word list skeleton and a published item, and logs each change", async () => {
+  it("sends drafts to review, refuses a word list skeleton and a published item, and logs each change", async () => {
     const draft = await word("pain");
     const skeleton = await word("eau", { meaning_fa: null });
     const published = await word("lait", { status: "published" });
 
-    const result = await changeStatus("words", "fr", [draft.id, skeleton.id, published.id], "approve", ADMIN);
+    const result = await changeStatus("words", "fr", [draft.id, skeleton.id, published.id], "review", ADMIN);
     expect(result).toEqual({
       changed: 1,
       unchanged: 0,
@@ -82,9 +82,9 @@ describe("status changes in the library (PRD §13.2, §13.7)", () => {
         { id: published.id, reason: "published" },
       ],
     });
-    expect((await testDb.word.findUniqueOrThrow({ where: { id: draft.id } })).status).toBe("approved");
+    expect((await testDb.word.findUniqueOrThrow({ where: { id: draft.id } })).status).toBe("needs_review");
     expect(await lastLog()).toEqual(
-      expect.objectContaining({ action: "status", entity: "word", entity_id: String(draft.id), before: { status: "draft" }, after: { status: "approved" } }),
+      expect.objectContaining({ action: "status", entity: "word", entity_id: String(draft.id), before: { status: "draft" }, after: { status: "needs_review" } }),
     );
     expect(await changeStatus("words", "fr", [published.id], "suspend", ADMIN)).toEqual({ changed: 1, unchanged: 0, refused: [] });
     expect((await testDb.word.findUniqueOrThrow({ where: { id: published.id } })).suspended).toBe(true);

@@ -21,6 +21,7 @@ import { BATCH_ENTITY, logChange } from "./library/log";
 import { cleanPaste, joinPaste, type PasteResult } from "./paste";
 import { describeProblem } from "./problems";
 import { mergeRound, type AcceptedRecord, type EntityRef, type ImportReport } from "./report";
+import { sendToReview } from "./review/queue";
 import { fillTemplate, PROMPT_VERSION, readTemplate } from "./template";
 
 /**
@@ -298,8 +299,9 @@ const batchLog = (batch: ImportBatch) => ({ kind: batch.prompt_kind, language: b
 const RAW_FINDING = 300;
 
 /**
- * Step 4: stores the QA findings next to the records they point at. A finding without a problem
- * text is kept as the chatbot wrote it, so nothing it said goes unseen.
+ * Step 4: stores the QA findings next to the records they point at and sends the batch's items to
+ * «بازبینی». A finding without a problem text is kept as the chatbot wrote it, so nothing it said
+ * goes unseen.
  */
 export async function submitQa(batchId: number, parts: string[], adminId: number | null = null): Promise<SubmitResult> {
   const batch = await db.importBatch.findUnique({ where: { id: batchId } });
@@ -323,18 +325,23 @@ export async function submitQa(batchId: number, parts: string[], adminId: number
     const accepted = parsed.data.path ? locate(found.kind, report.accepted, parsed.data.path) : undefined;
     findings.push({ ...parsed.data, label: accepted?.label ?? null, entity: accepted?.entity ?? null });
   }
-  await db.$transaction([
-    db.importBatch.update({ where: { id: batchId }, data: { qa_findings: findings as unknown as Prisma.InputJsonValue, state: "qa_done" } }),
-    db.adminLog.create({
+  await db.$transaction(async (tx) => {
+    const sent = await sendToReview(tx, { id: batchId, language: batch.language, report }, findings.map((finding) => finding.entity), adminId);
+    const next: ImportReport = { ...report, review: sent };
+    await tx.importBatch.update({
+      where: { id: batchId },
+      data: { qa_findings: findings as unknown as Prisma.InputJsonValue, report: next as unknown as Prisma.InputJsonValue, state: "qa_done" },
+    });
+    await tx.adminLog.create({
       data: {
         admin_id: adminId,
         action: "qa",
         entity: BATCH_ENTITY,
         entity_id: String(batchId),
-        after: { ...batchLog(batch), findings: findings.length, high: findings.filter((finding) => finding.severity === "high").length },
+        after: { ...batchLog(batch), findings: findings.length, high: findings.filter((finding) => finding.severity === "high").length, ...sent },
       },
-    }),
-  ]);
+    });
+  });
   return { state: "imported", rejected: 0 };
 }
 

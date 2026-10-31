@@ -1,13 +1,14 @@
 import type { ContentStatus } from "@/generated/prisma/client";
 import { db } from "@/server/db";
 import type { Tx } from "../kinds/types";
-import { logChange } from "./log";
+import { logChange, type LogAction } from "./log";
 import { entityOf, type LibrarySlug, type StatusAction } from "./slugs";
 
 type Row = { id: number; status: ContentStatus; suspended: boolean };
 type Delegate = {
   findMany(args: { where: { id: { in: number[] }; language: string }; select: { id: true; status: true; suspended: true } }): Promise<Row[]>;
   update(args: { where: { id: number }; data: { status?: ContentStatus; suspended?: boolean } }): Promise<unknown>;
+  updateMany(args: { where: { id: { in: number[] } }; data: { status: ContentStatus } }): Promise<unknown>;
 };
 
 const delegate = (tx: Tx, slug: LibrarySlug): Delegate => {
@@ -109,29 +110,62 @@ export async function setChildStatus(tx: Tx, table: ChildTable, rows: ChildRow[]
   }
 }
 
-/** A word list skeleton (no meaning) or a unit without its lesson cannot be approved yet. */
-async function skeletons(tx: Tx, slug: LibrarySlug, ids: number[]) {
+/** A word list skeleton (no meaning) or a unit without its lesson is not ready for review yet. */
+export async function skeletons(tx: Tx, slug: LibrarySlug, ids: number[]) {
   if (slug === "words") return new Set((await tx.word.findMany({ where: { id: { in: ids }, meaning_fa: null }, select: { id: true } })).map((row) => row.id));
   if (slug === "units") return new Set((await tx.grammarUnit.findMany({ where: { id: { in: ids }, lesson_fa: null }, select: { id: true } })).map((row) => row.id));
   return new Set<number>();
 }
 
+export type StatusRow = Row;
+export type StatusChange = { status?: ContentStatus; suspended?: boolean };
+
 /**
- * Approve, back to draft, suspend, unsuspend or retire some items of one type (PRD §13.2, §13.7).
- * Publishing happens in «انتشار» with its checks; a published item can only be suspended or retired
- * here. Retiring takes its targets or questions with it; a sentence inside a text, a dialogue or a
+ * One item's status change with its log row: retiring takes its targets or questions with it. Shared
+ * by the lists and «بازبینی», which logs its decisions as `review`.
+ */
+export async function moveItem(tx: Tx, slug: LibrarySlug, row: Row, data: StatusChange, adminId: number | null, action: LogAction = "status", extra: Record<string, unknown> = {}) {
+  const before: Record<string, unknown> = {};
+  const after: Record<string, unknown> = { ...extra };
+  for (const key of Object.keys(data) as (keyof StatusChange)[]) {
+    before[key] = row[key];
+    after[key] = data[key];
+  }
+  if (data.status === "retired") {
+    for (const [table, list] of Object.entries(await children(tx, slug, row.id)) as [ChildTable, ChildRow[]][]) {
+      if (list.length === 0) continue;
+      before[table] = list;
+      after[table] = list.map((child) => ({ id: child.id, status: "retired" }));
+      await setChildStatus(tx, table, after[table] as ChildRow[]);
+    }
+  }
+  await delegate(tx, slug).update({ where: { id: row.id }, data });
+  await logChange(tx, adminId, { action, entity: entityOf[slug], entityId: row.id, before, after });
+}
+
+export const statusRows = (tx: Tx, slug: LibrarySlug, language: string, ids: number[]) =>
+  delegate(tx, slug).findMany({ where: { id: { in: ids }, language }, select: { id: true, status: true, suspended: true } });
+
+/** A plain status change of many items, without log rows: the caller writes one for all of them. */
+export async function setStatus(tx: Tx, slug: LibrarySlug, ids: number[], status: ContentStatus) {
+  if (ids.length > 0) await delegate(tx, slug).updateMany({ where: { id: { in: ids } }, data: { status } });
+}
+
+/**
+ * Send to review, back to draft, suspend, unsuspend or retire some items of one type (PRD §13.2,
+ * §13.7). Approving is only done item by item on «بازبینی», publishing in «انتشار» with its checks;
+ * a published item can only be suspended or retired here. A sentence inside a text, a dialogue or a
  * unit's examples is not retired on its own. Each change is one `admin_log` row.
  */
 export async function changeStatus(slug: LibrarySlug, language: string, ids: number[], action: StatusAction, adminId: number | null): Promise<StatusResult> {
   return db.$transaction(async (tx) => {
-    const model = delegate(tx, slug);
-    const rows = await model.findMany({ where: { id: { in: ids }, language }, select: { id: true, status: true, suspended: true } });
+    const rows = await statusRows(tx, slug, language, ids);
     const result: StatusResult = { changed: 0, unchanged: 0, refused: [] };
     const blocked = slug === "sentences" && action === "retire" ? await sentenceUses(tx, language, rows.map((row) => row.id)) : new Map();
-    const empty = action === "approve" ? await skeletons(tx, slug, rows.map((row) => row.id)) : new Set<number>();
+    const empty = action === "review" ? await skeletons(tx, slug, rows.map((row) => row.id)) : new Set<number>();
 
     for (const row of rows) {
-      let data: { status?: ContentStatus; suspended?: boolean } | null = null;
+      let data: StatusChange | null = null;
       if (action === "suspend" || action === "unsuspend") {
         const suspended = action === "suspend";
         if (row.status === "retired") result.refused.push({ id: row.id, reason: "retired" });
@@ -143,9 +177,9 @@ export async function changeStatus(slug: LibrarySlug, language: string, ids: num
         else data = { status: "retired" };
       } else if (row.status === "published") {
         result.refused.push({ id: row.id, reason: "published" });
-      } else if (action === "approve") {
+      } else if (action === "review") {
         if (empty.has(row.id)) result.refused.push({ id: row.id, reason: "skeleton" });
-        else if (row.status !== "approved") data = { status: "approved" };
+        else if (row.status !== "needs_review") data = { status: "needs_review" };
       } else if (row.status !== "draft") {
         data = { status: "draft" };
       }
@@ -154,22 +188,7 @@ export async function changeStatus(slug: LibrarySlug, language: string, ids: num
         if (!result.refused.some((item) => item.id === row.id)) result.unchanged++;
         continue;
       }
-      const before: Record<string, unknown> = {};
-      const after: Record<string, unknown> = {};
-      for (const key of Object.keys(data) as (keyof typeof data)[]) {
-        before[key] = row[key];
-        after[key] = data[key];
-      }
-      if (data.status === "retired") {
-        for (const [table, list] of Object.entries(await children(tx, slug, row.id)) as [ChildTable, ChildRow[]][]) {
-          if (list.length === 0) continue;
-          before[table] = list;
-          after[table] = list.map((child) => ({ id: child.id, status: "retired" }));
-          await setChildStatus(tx, table, after[table] as ChildRow[]);
-        }
-      }
-      await model.update({ where: { id: row.id }, data });
-      await logChange(tx, adminId, { action: "status", entity: entityOf[slug], entityId: row.id, before, after });
+      await moveItem(tx, slug, row, data, adminId);
       result.changed++;
     }
     return result;

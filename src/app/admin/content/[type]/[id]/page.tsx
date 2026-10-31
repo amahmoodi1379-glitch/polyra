@@ -2,16 +2,19 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ChevronRight } from "lucide-react";
-import { LevelChip, StatusChip } from "@/components/admin/status-chip";
 import { ItemAudioPanel } from "@/components/admin/audio/item-audio";
+import { FindingList, QaMark } from "@/components/admin/qa-mark";
+import { LevelChip, StatusChip } from "@/components/admin/status-chip";
 import { Voiced } from "@/components/admin/voiced";
-import { t } from "@/i18n";
+import { formatNumber, t } from "@/i18n";
 import { cn } from "@/lib/utils";
 import { requireAdmin } from "@/server/auth/session";
 import { itemAudio } from "@/server/content/audio/view";
 import { editors } from "@/server/content/library/edit";
 import type { ItemView } from "@/server/content/library/edit/types";
-import { isLibrarySlug, type LibrarySlug } from "@/server/content/library/slugs";
+import { entityOf, isLibrarySlug, type LibrarySlug } from "@/server/content/library/slugs";
+import { findingMark, findingsOf } from "@/server/content/review/findings";
+import type { EntityRef } from "@/server/content/report";
 import { appSetting } from "@/server/settings/read";
 import { libraryHref } from "../../links";
 import { ItemAside } from "./aside";
@@ -49,6 +52,10 @@ export default async function ItemPage({ params }: PageProps<"/admin/content/[ty
   const audio = view.status === "retired" ? null : await itemAudio(slug, id);
   const audioPanel = audio ? <ItemAudioPanel audio={audio} language={language} /> : null;
   const audioAside = audio?.kind === "single";
+  // What the quality check found stays in sight until the item is approved (PRD §13.9).
+  const early = view.status === "draft" || view.status === "needs_review";
+  const findings = early ? ((await findingsOf(entityOf[slug] as EntityRef["type"], [id])).get(id) ?? []) : [];
+  const mark = findingMark(findings);
 
   return (
     <>
@@ -73,6 +80,7 @@ export default async function ItemPage({ params }: PageProps<"/admin/content/[ty
             <div className="flex flex-wrap items-center gap-2">
               {view.level ? <LevelChip level={view.level} /> : null}
               <StatusChip status={view.status} suspended={view.suspended} />
+              {mark ? <QaMark count={mark.count} severity={mark.severity} /> : null}
               <StatusNote view={view} />
             </div>
           </div>
@@ -82,6 +90,14 @@ export default async function ItemPage({ params }: PageProps<"/admin/content/[ty
 
       <div className="grid grid-cols-[minmax(0,1fr)] items-start gap-6 xl:grid-cols-[minmax(0,1fr)_300px] xl:gap-8">
         <div className="flex min-w-0 flex-col gap-6">
+          {findings.length > 0 ? (
+            <section className="flex flex-col gap-2.5" aria-labelledby="qa-title">
+              <h2 id="qa-title" className="text-ink text-[15px] font-extrabold">
+                {t("admin.review.findings", { count: formatNumber(findings.length) })}
+              </h2>
+              <FindingList findings={findings} />
+            </section>
+          ) : null}
           <ItemForm slug={slug} id={id} language={language} values={loaded.values} context={loaded.context} levels={levels} readOnly={view.status === "retired"} />
           {audioAside ? null : audioPanel}
         </div>

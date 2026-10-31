@@ -76,6 +76,10 @@ Deploy: Runflare builds `main` (`docs/deploy-runflare.md`). Work on the session 
   (`log.ts` writes, `history.ts` shows, `revert.ts` puts back). `src/server/content/order.ts`: the «ترتیب» page.
 - `src/server/content/publish`: «انتشار» (PRD §13.5). `checks.ts` holds every type's publish conditions,
   `run.ts` publishes the ready ones with their child rows, `levels.ts` the level checklist, level release and language live.
+- «بازبینی» (PRD §13.4, §13.9 step 4; approving happens only here): `src/server/content/review` — `queue.ts` sends a batch
+  to review after QA (the B1+ sentence sample), `decide.ts` approve, reject and what blocks approval, `list.ts` the queue,
+  `preview.ts` the learner's screens built with the engine's own builders, `findings.ts` the «مشکوک» marks. Page
+  `src/app/admin/review`, phone frame `src/components/admin/review/learner-preview.tsx`.
 - Audio (PRD §13.8; the phone's voice reads anything without a file). `src/lib/audio`: the file format, loudness and
   mp3 (shared by browser and server). `src/server/content/audio`: `slots.ts` (keys like `word:12`, `phonics:3:pair-a:0`),
   `store.ts` (save, remove, heard, text sync and join), `view.ts`, `lists.ts` (the `/admin/audio` tabs), `match.ts`

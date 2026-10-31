@@ -48,9 +48,10 @@ export type RoundResult = {
 
 /**
  * Stored in import_batch.report. Counts add up over the rounds; `rejected` is the latest round's.
- * `dismissed` counts rejected records the admin chose not to fix.
+ * `dismissed` counts rejected records the admin chose not to fix; `review` what the QA step sent to
+ * «بازبینی» and what it approved unseen (src/server/content/review/queue.ts).
  */
-export type ImportReport = RoundResult & { rounds: number; issues: string[]; dismissed?: number };
+export type ImportReport = RoundResult & { rounds: number; issues: string[]; dismissed?: number; review?: { review: number; unseen: number } };
 
 export function emptyRound(): RoundResult {
   return {

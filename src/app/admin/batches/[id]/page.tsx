@@ -18,8 +18,10 @@ import {
 import { isLanguage } from "@/server/content/languages";
 import { describeProblem } from "@/server/content/problems";
 import { openCounts } from "@/server/content/resolve";
+import { reviewQueue } from "@/server/content/review/list";
 import { db } from "@/server/db";
 import { appSetting } from "@/server/settings/read";
+import { reviewHref } from "../../review/links";
 import { BatchFlow, type BatchView, type CountKey } from "./batch-flow";
 
 export const metadata: Metadata = { title: t("admin.create.title") };
@@ -57,6 +59,7 @@ export default async function BatchPage({ params }: PageProps<"/admin/batches/[i
   const report = batchReport(batch);
   const kindName = t(`admin.batch.kind.${batch.prompt_kind}` as MessageKey);
   const language = isLanguage(batch.language) ? t(`common.languages.${batch.language}`) : batch.language;
+  const qaDone = batch.state === "qa_done" || batch.state === "reviewed";
 
   const view: BatchView = {
     id: batch.id,
@@ -87,7 +90,14 @@ export default async function BatchPage({ params }: PageProps<"/admin/batches/[i
     targets: batch.prompt_kind === "P_G" ? await unitTargets(info.unit_id) : null,
     fixPrompt: fixPrompt(batch),
     qaPrompt: qaPrompt(batch),
-    qaDone: batch.state === "qa_done" || batch.state === "reviewed",
+    qaDone,
+    review: qaDone
+      ? {
+          unseen: report?.review?.unseen ?? 0,
+          waiting: (await reviewQueue(batch.language, { batch: batch.id, slug: null })).length,
+          href: reviewHref({ language: batch.language, batch: batch.id }),
+        }
+      : null,
     findings: batchFindings(batch).map(({ severity, problem, suggestion, label }) => ({ severity, problem, suggestion, label })),
   };
 

@@ -3,8 +3,9 @@
 import { useEffect, useId, useRef, useState, useTransition, type FormEvent, type ReactNode } from "react";
 import { useFormStatus } from "react-dom";
 import Link from "next/link";
-import { Check, ChevronDown, CircleAlert, LoaderCircle, Trash2 } from "lucide-react";
+import { Check, ChevronDown, CircleAlert, ListChecks, LoaderCircle, Trash2 } from "lucide-react";
 import { CopyButton } from "@/components/admin/copy-button";
+import { SeverityChip, type Severity } from "@/components/admin/qa-mark";
 import {
   AlertDialog,
   AlertDialogCancel,
@@ -23,7 +24,6 @@ import { startBatch } from "../../create/actions";
 import { chooseChatbot, pasteAnswer, pasteQa, skipRejected, startOver, throwAway, type PasteOutcome } from "./actions";
 
 export type CountKey = "added" | "updated" | "skipped" | "dropped" | "rejected";
-type Severity = "high" | "medium" | "low";
 
 /** Everything the four steps show, prepared on the server (PRD §13.9). */
 export type BatchView = {
@@ -55,6 +55,8 @@ export type BatchView = {
   fixPrompt: string | null;
   qaPrompt: string | null;
   qaDone: boolean;
+  /** After the quality check (PRD §13.9 step 4): what of this batch still waits on «بازبینی». */
+  review: { unseen: number; waiting: number; href: string } | null;
   findings: { severity: Severity; label: string | null; problem: string; suggestion: string | null }[];
 };
 
@@ -613,12 +615,6 @@ function RejectedList({ items }: { items: { label: string; problems: string[] }[
 
 /* ---------- Step 4: quality check ---------- */
 
-const severityStyle: Record<Severity, string> = {
-  high: "bg-bad-soft text-bad",
-  medium: "bg-tint-2 text-ink",
-  low: "border-line-2 text-ink-3 border",
-};
-
 function QaStep({ view, state }: { view: BatchView; state: StepState }) {
   const title = t("admin.batch.steps.qa");
   if (!view.hasQa) return <Step n={4} title={title} state="locked" note={t("admin.batch.qa.notNeeded")} />;
@@ -628,6 +624,7 @@ function QaStep({ view, state }: { view: BatchView; state: StepState }) {
     const count = view.findings.length;
     return (
       <Step n={4} title={title} state="done" note={count ? t("admin.batch.qa.summary", { count }) : t("admin.batch.qa.none")}>
+        {view.review?.unseen ? <p className="text-ink-2 max-w-[62ch] text-[14.5px] leading-7">{t("admin.batch.qa.sampled", { count: view.review.unseen })}</p> : null}
         {count ? (
           <>
             <p className="text-ink-2 text-[14.5px] leading-7">{t("admin.batch.qa.found", { count })}</p>
@@ -637,9 +634,7 @@ function QaStep({ view, state }: { view: BatchView; state: StepState }) {
               return (
                 <section key={severity} className="flex flex-col gap-2.5">
                   <h3 className="flex items-center gap-2 text-[14px] font-extrabold">
-                    <span className={cn("inline-flex h-7 items-center rounded-[9px] px-2.5", severityStyle[severity])}>
-                      {t(`admin.batch.qa.severity.${severity}`)}
-                    </span>
+                    <SeverityChip severity={severity} className="text-[14px] font-extrabold" />
                     <span className="text-ink-3 num font-bold">{formatNumber(items.length)}</span>
                   </h3>
                   <ul className="border-line divide-line flex flex-col divide-y rounded-[18px] border">
@@ -682,6 +677,30 @@ function QaStep({ view, state }: { view: BatchView; state: StepState }) {
 /* ---------- The end, or throwing the batch away ---------- */
 
 function Finished({ view }: { view: BatchView }) {
+  const waiting = view.review?.waiting ?? 0;
+  if (view.review && waiting > 0) {
+    return (
+      <section
+        aria-labelledby="finished-title"
+        className="bg-surface flex flex-col gap-5 rounded-[22px] p-5 shadow-[var(--shadow-1)] sm:flex-row sm:items-center sm:p-6"
+      >
+        <div className="flex flex-1 items-start gap-3.5">
+          <span aria-hidden className="bg-brand text-on-brand grid size-10 shrink-0 place-items-center rounded-full">
+            <ListChecks className="size-5" strokeWidth={2.25} />
+          </span>
+          <div className="flex flex-col gap-0.5">
+            <h2 id="finished-title" className="text-ink text-[16.5px] font-extrabold">
+              {t("admin.batch.finished.reviewTitle")}
+            </h2>
+            <p className="text-ink-2 text-[14.5px]">{t("admin.batch.finished.reviewLead", { count: waiting })}</p>
+          </div>
+        </div>
+        <Button asChild>
+          <Link href={view.review.href}>{t("admin.batch.finished.review")}</Link>
+        </Button>
+      </section>
+    );
+  }
   return (
     <section
       aria-labelledby="finished-title"

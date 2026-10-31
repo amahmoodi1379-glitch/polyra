@@ -20,7 +20,7 @@ test("an admin changes an engine number and a chatbot list, then puts the number
 
   const hours = page.locator("#setting-session\\.resume_hours");
   await hours.getByRole("textbox").fill("۹۹");
-  await expect(hours.getByRole("alert")).toHaveText("باید بین ۱ و ۴۸ باشد.");
+  await expect(hours.getByRole("alert")).toHaveText("باید بین ۱ و ۲۴ باشد.");
   await page.getByRole("button", { name: "ذخیره", exact: true }).click();
   await expect(page.getByRole("status")).toContainText("۱ مورد درست نیست");
 
@@ -39,7 +39,7 @@ test("an admin changes an engine number and a chatbot list, then puts the number
   await expect(page.getByRole("status")).toHaveText("ذخیره شد.");
 
   await page.goto("/admin/log?kind=settings");
-  const hoursRow = page.locator("li").filter({ hasText: "جلسه نیمه‌کاره تا چند ساعت قابل ادامه است." });
+  const hoursRow = page.locator("li").filter({ hasText: "جلسه نیمه‌کاره تا چند ساعت قابل ادامه است" });
   await expect(page.locator("li").filter({ hasText: /اضافه شد: .DeepSeek/ })).toBeVisible();
   await hoursRow.getByRole("button", { name: "برگردان" }).click();
   await page.getByRole("button", { name: "برگردان" }).click();

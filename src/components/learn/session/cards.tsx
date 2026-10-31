@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore, type CSSProperties, type ReactNode } from "react";
 import { genderClass } from "@/components/learn/gender";
 import { Icon } from "@/components/learn/icons";
 import { Mixed } from "@/components/learn/mixed";
@@ -110,16 +110,21 @@ export function Example({ id, sentence, wordId, label }: { id: string; sentence:
 }
 
 /** «صدای خودت» (PRD §5.2): up to five seconds from the microphone, played back at once and kept nowhere. */
+const unchanging = () => () => {};
+function micAvailable() {
+  try {
+    return typeof MediaRecorder !== "undefined" && sessionStorage.getItem("polyra.mic") !== "denied";
+  } catch {
+    return false;
+  }
+}
+
 function Recorder({ seconds = 5 }: { seconds?: number }) {
   const toast = useToast();
   const [state, setState] = useState<"idle" | "recording">("idle");
-  const [denied, setDenied] = useState(() => {
-    try {
-      return sessionStorage.getItem("polyra.mic") === "denied";
-    } catch {
-      return false;
-    }
-  });
+  // The server cannot know about the microphone, so the button appears after the page has loaded.
+  const available = useSyncExternalStore(unchanging, micAvailable, () => false);
+  const [denied, setDenied] = useState(false);
   const recorder = useRef<MediaRecorder | null>(null);
   const timer = useRef<number | undefined>(undefined);
   useEffect(
@@ -129,7 +134,7 @@ function Recorder({ seconds = 5 }: { seconds?: number }) {
     },
     [],
   );
-  if (denied || typeof MediaRecorder === "undefined") return null;
+  if (denied || !available) return null;
 
   const start = async () => {
     try {

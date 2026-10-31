@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useTransition } from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { LoaderCircle, MoreHorizontal } from "lucide-react";
 import {
@@ -17,17 +18,22 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSepara
 import type { ContentStatus } from "@/generated/prisma/client";
 import { t } from "@/i18n";
 import type { LibrarySlug, StatusAction } from "@/server/content/library/slugs";
+import { reviewHref } from "../../../review/links";
 import { libraryHref } from "../../links";
 import { applyStatus } from "../../actions";
 import { deleteDraft } from "./actions";
 
-/** What can be done to an item in its current state (PRD §13.2, §13.7). */
-function actionsFor(status: ContentStatus, suspended: boolean) {
-  if (status === "retired") return { main: null, more: [] as StatusAction[] };
+/**
+ * What can be done to an item in its current state (PRD §13.2, §13.7). An item waiting for review
+ * is approved on «بازبینی», so its main button opens it there.
+ */
+function actionsFor(status: ContentStatus, suspended: boolean): { main: StatusAction | "open" | null; more: StatusAction[] } {
+  if (status === "retired") return { main: null, more: [] };
   const pause: StatusAction = suspended ? "unsuspend" : "suspend";
   if (status === "published") return { main: null, more: [pause] };
-  if (status === "approved") return { main: null, more: ["draft", pause] as StatusAction[] };
-  return { main: "approve" as const, more: [pause] };
+  if (status === "approved") return { main: null, more: ["review", "draft", pause] };
+  if (status === "needs_review") return { main: "open", more: ["draft", pause] };
+  return { main: "review", more: [pause] };
 }
 
 export function ItemActions({
@@ -74,7 +80,11 @@ export function ItemActions({
     <div className="flex flex-col items-start gap-2 sm:items-end">
       <div className="flex items-center gap-2">
         {pending ? <LoaderCircle className="text-ink-3 size-5 animate-spin motion-reduce:animate-none" aria-label={t("admin.library.selection.working")} /> : null}
-        {main ? (
+        {main === "open" ? (
+          <Button asChild>
+            <Link href={reviewHref({ language, at: { slug, id } })}>{t("admin.review.openHere")}</Link>
+          </Button>
+        ) : main ? (
           <Button type="button" disabled={pending} onClick={() => run(main)}>
             {t(`admin.library.actions.${main}`)}
           </Button>

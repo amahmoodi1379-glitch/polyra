@@ -10,7 +10,7 @@ import { sentences } from "./kinds/sentences";
 import type { ContentKind, Tx } from "./kinds/types";
 import { unitList } from "./kinds/unit-list";
 import { words } from "./kinds/words";
-import type { RoundResult } from "./report";
+import { mergeRound, type RoundResult } from "./report";
 
 /**
  * The French demo for the tester account (DECISIONS.md, «محتوای نمونه فرانسوی»): about 60 A1 words
@@ -62,7 +62,7 @@ async function importAnswer(tx: Tx, kind: ContentKind, batch: ImportBatch, answe
   if (trouble.length > 0) throw new Error(`Demo ${kind.kind} did not import cleanly:\n${trouble.join("\n")}`);
   await tx.importBatch.update({
     where: { id: batch.id },
-    data: { state: "reviewed", raw_output: JSON.stringify(answer), report: { ...round, accepted: [], rejected: [] } as unknown as Prisma.InputJsonValue },
+    data: { state: "reviewed", raw_output: JSON.stringify(answer), report: { ...mergeRound(null, round, []), accepted: [], rejected: [] } as unknown as Prisma.InputJsonValue },
   });
   return round;
 }

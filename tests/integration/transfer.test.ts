@@ -105,7 +105,7 @@ describe("word file import (PRD §14.7)", () => {
     const imported = await run(text);
     expect(imported).toMatchObject({ state: "imported", added: 1, unchanged: 1, reordered: ["A1"] });
     const chien = await testDb.word.findFirstOrThrow({ where: { code: "chien" }, include: { concept: true } });
-    expect(chien).toMatchObject({ status: "draft", meaning_fa: "معنی chien", mastery: "produce", intro_order: 2 });
+    expect(chien).toMatchObject({ status: "needs_review", meaning_fa: "معنی chien", mastery: "produce", intro_order: 2 });
     expect(chien.concept?.name_fa).toBe("مفهوم chien");
     const logs = await testDb.adminLog.findMany({ orderBy: { id: "asc" } });
     expect(logs.map((log) => log.action)).toEqual(["import", "order"]);

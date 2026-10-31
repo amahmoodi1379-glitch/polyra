@@ -5,6 +5,7 @@ export const guidePages = {
   workbench: { href: "/admin", label: "admin.nav.workbench" },
   create: { href: "/admin/create", label: "admin.nav.create" },
   library: { href: "/admin/content", label: "admin.nav.library" },
+  review: { href: "/admin/review", label: "admin.nav.review" },
   order: { href: "/admin/order", label: "admin.nav.order" },
   audio: { href: "/admin/audio", label: "admin.nav.audio" },
   publish: { href: "/admin/publish", label: "admin.nav.publish" },
