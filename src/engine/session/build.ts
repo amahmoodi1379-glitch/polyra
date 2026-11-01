@@ -451,7 +451,7 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
   // Step 3: one phonics round, kept apart from the plan, its time taken from the session once (PRD §8.4, §10.9);
   // in mixed and vocabulary sessions of the auto mode, or alone in «الفبا و تلفظ». Never without sound.
   const wantsPhonics = scope === "phonics" || ((scope === "mixed" || scope === "vocab") && learner.enrollment.phonicsAuto && budget > 0);
-  const phonicsPick = ctx.audio && wantsPhonics ? nextPhonicsRound(content, learner.phonics, now) : null;
+  const phonicsPick = ctx.audio && wantsPhonics ? nextPhonicsRound(content, learner.phonics, now, settings) : null;
   let phonics: Entry | null = null;
   if (phonicsPick) {
     const key = phonicsKey(phonicsPick.lesson.id);

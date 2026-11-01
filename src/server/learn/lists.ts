@@ -2,18 +2,20 @@ import { hasCard, TRACKS, type Content, type Gender, type Track } from "@/engine
 import { wordView, type BuildEnv } from "@/engine/build";
 import type { WordView } from "@/engine/ex";
 import { openEntries } from "@/engine/notebook";
+import { nextPhonicsRound, phonicsAskable, phonicsLessonView, phonicsProgress, type PhonicsView } from "@/engine/phonics";
 import { lessonView, tableView, textView, wordCard, type LessonView, type TextView, type WordCard } from "@/engine/session";
 import type { NotebookRef, TextStateE } from "@/engine/state";
 import { attemptLeft, indexTextStates, lastTouch, stageDone } from "@/engine/texts";
 import type { LanguageCode } from "@/server/content/languages";
 import { db } from "@/server/db";
+import { engineSettings } from "@/server/settings/read";
 import { learnerContent } from "./content";
-import { loadTextStates, notebookOf, textStateOf } from "./learner";
+import { loadPhonicsStates, loadTextStates, notebookOf, textStateOf } from "./learner";
 import type { Learner } from "./session";
 
 /**
- * The learner's read-only pages (PRD §3.10): «کلمه‌های من», «درسنامه‌های من», «متن‌های من» and the
- * mistakes notebook. Only what the learner has met is listed; nothing here starts a scored exercise.
+ * The learner's read-only pages (PRD §3.10): «کلمه‌های من», «درسنامه‌های من», «متن‌های من», «الفبا و تلفظ»
+ * and the mistakes notebook. Only what the learner has met opens; nothing here starts a scored exercise.
  */
 
 const audienceOf = (user: Learner) => (user.is_admin || user.is_tester ? "tester" : "public");
@@ -70,6 +72,50 @@ export async function myLesson(user: Learner, language: LanguageCode, unitId: nu
   const unit = content.units.find((item) => item.id === unitId);
   if (!unit || !rows.some((row) => row.item_id === unitId)) return null;
   return lessonView(viewEnv(content, new Set()), unit);
+}
+
+export type PhonicsLine = {
+  id: number;
+  no: number;
+  label: string;
+  /** done; round 2 ready today (`again` after a low score) or from tomorrow; the next round 1; not open yet. */
+  state: "done" | "again" | "round2" | "tomorrow" | "next" | "closed";
+};
+
+export type PhonicsOverview = {
+  lessons: PhonicsLine[];
+  progress: { index: number; total: number; done: boolean };
+  /** What «درس بعدی» starts (a phonics session, PRD §8.4), or nothing until tomorrow. */
+  next: { no: number; round: 1 | 2 } | null;
+};
+
+/** «الفبا و تلفظ» (PRD §3.2, §8.4, DECISIONS.md): every lesson in the teacher's order with where the learner is. */
+export async function myPhonics(user: Learner, language: LanguageCode, now = new Date()): Promise<PhonicsOverview> {
+  const [content, states, settings] = await Promise.all([contentFor(user, language), loadPhonicsStates(db, user.id, language), engineSettings()]);
+  const known = new Map(states.map((state) => [state.lessonId, state]));
+  const next = nextPhonicsRound(content, states, now, settings);
+  const firstNew = content.phonics.find((lesson) => phonicsAskable(lesson, settings) && (known.get(lesson.id)?.roundsDone ?? 0) === 0);
+  const no = (lessonId: number) => content.phonics.findIndex((lesson) => lesson.id === lessonId) + 1;
+  const lessons = content.phonics.map((lesson, index): PhonicsLine => {
+    const state = known.get(lesson.id);
+    const opened = !!state && state.roundsDone > 0;
+    const ready = opened && (!state.nextAt || Date.parse(state.nextAt) <= now.getTime());
+    return {
+      id: lesson.id,
+      no: index + 1,
+      label: lesson.label,
+      state: state?.done ? "done" : opened ? (ready ? (state.roundsDone >= 2 ? "again" : "round2") : "tomorrow") : lesson === firstNew ? "next" : "closed",
+    };
+  });
+  return { lessons, progress: phonicsProgress(content, states), next: next ? { no: no(next.lesson.id), round: next.round } : null };
+}
+
+/** One opened phonics lesson to read and hear again: the tip, every example word and every sentence. */
+export async function myPhonicsLesson(user: Learner, language: LanguageCode, lessonId: number): Promise<(ReturnType<typeof phonicsLessonView> & Pick<PhonicsView, "index" | "total">) | null> {
+  const [content, states] = await Promise.all([contentFor(user, language), loadPhonicsStates(db, user.id, language)]);
+  const index = content.phonics.findIndex((lesson) => lesson.id === lessonId);
+  if (index < 0 || !states.some((state) => state.lessonId === lessonId && state.roundsDone > 0)) return null;
+  return { ...phonicsLessonView(content.phonics[index]), index: index + 1, total: content.phonics.length };
 }
 
 /** The learner's text states with a finished stage, by text. */

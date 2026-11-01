@@ -12,7 +12,7 @@ async function main() {
     const result = await loadDemo();
     if (result.kind === "already") console.log("The demo is already loaded.");
     else if (result.kind === "has_content") console.log(`French already has ${result.words} other words; the demo was not loaded.`);
-    else console.log(`Loaded: ${result.words} words, ${result.sentences} sentences, ${result.units} grammar units, ${result.texts} texts (approved, tester only).`);
+    else console.log(`Loaded: ${result.words} words, ${result.sentences} sentences, ${result.units} grammar units, ${result.texts} texts, ${result.phonics} phonics lessons (approved, tester only).`);
   } else if (command === "remove") {
     const result = await removeDemo();
     console.log(result.removed ? "The demo and the progress made with it were removed." : "There was no demo to remove.");

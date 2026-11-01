@@ -13,7 +13,6 @@ import { seeded } from "@/engine/random";
 import { buildSession, type BuildOptions, type BuildResult } from "@/engine/session/build";
 import { playCard, type PlayEnv } from "@/engine/session/play";
 import type { Card, SessionPlan } from "@/engine/session/types";
-import type { Settings } from "@/engine/settings";
 import type { LearnerSnapshot, PhonicsStateE } from "@/engine/state";
 import { tehranDate, tehranDayStart, addDays } from "@/engine/time";
 import { makeEnv } from "@/engine/session/views";
@@ -59,19 +58,19 @@ describe("which round comes next (PRD §8.3, §8.4)", () => {
   const [first, second, third] = content.phonics;
 
   it("starts with round 1 of the first lesson, and opens a lesson only after round 1 of the one before", () => {
-    expect(nextPhonicsRound(content, [], NOW)).toMatchObject({ lesson: { id: first.id }, round: 1, repeat: false });
+    expect(nextPhonicsRound(content, [], NOW, s)).toMatchObject({ lesson: { id: first.id }, round: 1, repeat: false });
     // Round 1 of the first lesson done today: round 2 waits for tomorrow, so round 1 of the second comes.
     const states = [state(first.id, 1, TOMORROW)];
-    expect(nextPhonicsRound(content, states, NOW)).toMatchObject({ lesson: { id: second.id }, round: 1 });
+    expect(nextPhonicsRound(content, states, NOW, s)).toMatchObject({ lesson: { id: second.id }, round: 1 });
     // Tomorrow round 2 of the first comes before anything new.
-    expect(nextPhonicsRound(content, [...states, state(second.id, 1, TOMORROW)], TOMORROW)).toMatchObject({ lesson: { id: first.id }, round: 2, repeat: false });
+    expect(nextPhonicsRound(content, [...states, state(second.id, 1, TOMORROW)], TOMORROW, s)).toMatchObject({ lesson: { id: first.id }, round: 2, repeat: false });
   });
 
   it("repeats round 2 once after a low score, then the lesson is over whatever the score (T-rule of §8.3)", () => {
     const low = afterPhonicsRound(state(first.id, 1, null), first.id, 2, 0.5, NOW, s);
     expect(low).toMatchObject({ roundsDone: 2, done: false, nextAt: TOMORROW.toISOString(), lastScore: 0.5 });
-    expect(nextPhonicsRound(content, [low], NOW)).toMatchObject({ lesson: { id: second.id }, round: 1 });
-    expect(nextPhonicsRound(content, [low], TOMORROW)).toMatchObject({ lesson: { id: first.id }, round: 2, repeat: true });
+    expect(nextPhonicsRound(content, [low], NOW, s)).toMatchObject({ lesson: { id: second.id }, round: 1 });
+    expect(nextPhonicsRound(content, [low], TOMORROW, s)).toMatchObject({ lesson: { id: first.id }, round: 2, repeat: true });
     expect(afterPhonicsRound(low, first.id, 2, 0.2, TOMORROW, s)).toMatchObject({ roundsDone: 3, done: true, nextAt: null });
     // A good round 2 ends the lesson at once; round 1 never ends it, however it went.
     expect(afterPhonicsRound(state(first.id, 1, null), first.id, 2, 0.6, NOW, s)).toMatchObject({ roundsDone: 2, done: true });
@@ -83,13 +82,13 @@ describe("which round comes next (PRD §8.3, §8.4)", () => {
     expect(phonicsProgress(content, [state(first.id, 1, TOMORROW), state(second.id, 2, null, true)])).toEqual({ index: 3, total: 14, done: false });
     const all = content.phonics.map((lesson) => state(lesson.id, 2, null, true));
     expect(phonicsProgress(content, all)).toEqual({ index: 14, total: 14, done: true });
-    expect(nextPhonicsRound(content, all, NOW)).toBeNull();
+    expect(nextPhonicsRound(content, all, NOW, s)).toBeNull();
     expect(phonicsProgress({ phonics: [] }, [])).toEqual({ index: 0, total: 0, done: false });
   });
 
   it("follows a new teacher's order: the next round 1 is the first lesson not started (PRD §13.6)", () => {
     const reordered: Pick<Content, "phonics"> = { phonics: [third, first, second] };
-    expect(nextPhonicsRound(reordered, [state(first.id, 2, null, true)], NOW)).toMatchObject({ lesson: { id: third.id }, round: 1 });
+    expect(nextPhonicsRound(reordered, [state(first.id, 2, null, true)], NOW, s)).toMatchObject({ lesson: { id: third.id }, round: 1 });
   });
 });
 
@@ -181,6 +180,37 @@ describe("the questions of a round (PRD §8.2, §8.3)", () => {
     );
     expect(grade(ex, { gaps: [] }, ctx)).toMatchObject({ result: "wrong" });
     expect(grade(ex, { idk: true }, ctx)).toMatchObject({ result: "idk" });
+  });
+
+  it("asks only the exercises the panel leaves on (PRD §9.8), and passes over a lesson left with none", () => {
+    const codes = (lesson: PhonicsC, at: 1 | 2, off: string[]) => {
+      const env = makeEnv(content, freshLearner("fr"), settings(Object.fromEntries(off.map((code) => [`exercise.${code}.enabled`, false]))), seeded("off"));
+      return buildPhonicsRound(env, { lesson, round: at, repeat: false }, 1, { index: 1, total: 14 })?.questions.map((ex) => ex.code) ?? null;
+    };
+    const contrast = lessonOf("contrast");
+    // One code off: the round is the other's; both of a round off: the other round's codes stand in.
+    expect(codes(contrast, 1, ["P4"])).toEqual(["P1", "P1", "P1", "P1", "P1", "P1"]);
+    expect(codes(contrast, 2, ["P3"])).toEqual(["P2", "P2", "P2", "P2", "P2", "P2"]);
+    expect(codes(contrast, 2, ["P2", "P3"])).toEqual(["P1", "P4", "P1", "P4", "P1", "P4"]);
+    expect(codes(contrast, 1, ["P1", "P4"])).toEqual(["P2", "P3", "P2", "P3", "P2", "P3"]);
+    expect(codes(contrast, 1, ["P1", "P2", "P3", "P4"])).toBeNull();
+    expect(codes(lessonOf("rule"), 1, ["P1"])).toBeNull();
+    expect(codes(lessonOf("liaison"), 2, ["P5"])).toBeNull();
+    // Six P2 still have both answers.
+    const env = makeEnv(content, freshLearner("fr"), settings({ "exercise.P3.enabled": false }), seeded("same"));
+    const told = buildPhonicsRound(env, { lesson: contrast, round: 2, repeat: false }, 1, { index: 1, total: 14 })!.questions;
+    expect(told.filter((ex) => ex.a.kind === "choice" && ex.a.correct === "same")).toHaveLength(3);
+
+    // With P1 off the rule lessons never come, and round 2 of one already started waits too; P1 on again, they come back.
+    const offP1 = settings({ "exercise.P1.enabled": false });
+    const rule = lessonOf("rule");
+    const before = content.phonics.slice(0, content.phonics.indexOf(rule));
+    const done = before.map((lesson) => state(lesson.id, 2, null, true));
+    expect(nextPhonicsRound(content, done, NOW, offP1)?.lesson.kind).not.toBe("rule");
+    expect(nextPhonicsRound(content, done, NOW, s)).toMatchObject({ lesson: { id: rule.id }, round: 1 });
+    const started = [...done, state(rule.id, 1, NOW)];
+    expect(nextPhonicsRound(content, started, NOW, offP1)).not.toMatchObject({ lesson: { id: rule.id } });
+    expect(nextPhonicsRound(content, started, NOW, s)).toMatchObject({ lesson: { id: rule.id }, round: 2 });
   });
 
   it("scores a round by the share right; «نمی‌دانم» is not right", () => {

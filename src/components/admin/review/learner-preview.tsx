@@ -6,7 +6,7 @@ import { IconSprite } from "@/components/learn/icons";
 import { squish } from "@/components/learn/motion";
 import { sfx } from "@/components/learn/sfx";
 import { hush } from "@/components/learn/speak";
-import { Example, LessonFace, TableFace, WordFace } from "@/components/learn/session/cards";
+import { Example, LessonFace, PhonicsFace, TableFace, WordFace } from "@/components/learn/session/cards";
 import { Exercise, type Retry } from "@/components/learn/session/exercise";
 import { Feedback } from "@/components/learn/session/feedback";
 import { TextReview, TextStage, TextWordsFace } from "@/components/learn/session/text";
@@ -127,6 +127,19 @@ export function LearnerPreview({ preview, languageName, itemKey }: { preview: Re
       body = <Example id={id} sentence={screen.sentence} label={t("admin.review.screens.sentence")} />;
       cta = seen(t("learn.session.continue"));
       break;
+    case "phonics": {
+      const { view } = screen;
+      body = (
+        <PhonicsFace
+          id={id}
+          view={view}
+          kicker={view.round === 1 ? t("learn.phonics.kicker", { index: view.index, total: view.total }) : t("learn.phonics.kickerRound2", { index: view.index })}
+          note={t(view.round === 1 ? "learn.phonics.questions" : "learn.phonics.questionsAgain", { n: view.questions })}
+        />
+      );
+      cta = seen(t("learn.phonics.start"));
+      break;
+    }
     case "exercise":
       body = (
         <Exercise

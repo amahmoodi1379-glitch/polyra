@@ -1,8 +1,9 @@
 import { describe, expect, it } from "vitest";
 import { buildWordEx } from "@/engine/build";
+import { hasCard, isColloquial } from "@/engine/content";
 import { grade } from "@/engine/grade";
 import type { ItemHistory } from "@/engine/state";
-import { buildRound, pickWordEx, stepOrder } from "@/engine/pick";
+import { buildRound, lastStepOfWord, pickWordEx, stepOrder } from "@/engine/pick";
 import { content, env, frenchSet, sentence, settings, target, unit, word } from "./kit";
 
 const codesOver = (run: (seed: string) => string | undefined, times = 60) => new Set(Array.from({ length: times }, (_, i) => run(`s${i}`)));
@@ -102,6 +103,20 @@ describe("colloquial words (PRD §5.4)", () => {
     expect(pickWordEx(env(data), bouffer, 2, "followup", { formOnly: true, audio: true })).toBeNull();
     const codes = codesOver((seed) => pickWordEx(env(data, { seed }), bouffer, 1, "followup", { audio: true })?.code, 20);
     expect(codes).toEqual(new Set(["K1"]));
+  });
+});
+
+describe("formal words (DECISIONS.md: taught like any word)", () => {
+  const set = frenchSet();
+  const neanmoins = word(42, "néanmoins", "با این حال", { pos: "adv", register: "formal" });
+  const data = content({ ...set, words: [...set.words, neanmoins] });
+
+  it("have a card with every step of a word and its W exercises, never the colloquial K ones", () => {
+    expect(hasCard(neanmoins)).toBe(true);
+    expect(isColloquial(neanmoins)).toBe(false);
+    expect(lastStepOfWord(neanmoins)).toBe(lastStepOfWord(data.words.get(1)!));
+    const codes = codesOver((seed) => pickWordEx(env(data, { seed }), neanmoins, 1, "review", { audio: true })?.code);
+    expect([...codes].every((code) => code?.startsWith("W"))).toBe(true);
   });
 });
 

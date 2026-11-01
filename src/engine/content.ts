@@ -260,8 +260,11 @@ export function indexContent(base: Omit<Content, "wordByCode" | "wordTargets" | 
 
 export const levelIndex = (content: Pick<Content, "levels">, level: string | null | undefined) => (level ? content.levels.indexOf(level) : -1);
 
-/** Registers whose words have their own vocabulary card and sentences (PRD §9.6); the server filters on the same list. */
-export const CARD_REGISTERS: readonly WordC["register"][] = ["standard"];
+/**
+ * Registers whose words have their own vocabulary card and sentences (PRD §9.6); the server filters on the
+ * same list. A formal word is taught like any other, with «رسمی» on its card (DECISIONS.md).
+ */
+export const CARD_REGISTERS: readonly WordC["register"][] = ["standard", "formal"];
 /** Registers of colloquial words, taught beside a card word of the same concept (PRD §5.4). */
 export const COLLOQUIAL_REGISTERS: readonly WordC["register"][] = ["familier", "argot"];
 

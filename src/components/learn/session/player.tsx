@@ -97,6 +97,8 @@ export function Player({ language, languageName, scope: firstScope }: { language
   const [done, setDone] = useState<Done | null>(null);
   const [summary, setSummary] = useState<EndSummary | null>(null);
   const [muted, setMuted] = useState(false);
+  /** A phonics session whose round left for want of sound: its end says why instead of a score. */
+  const [dropped, setDropped] = useState<"muted" | "noVoice" | null>(null);
   const [tipIds, setTipIds] = useState<string[]>([]);
   // Cards whose sound file did not arrive in time, with the seconds waited (PRD §10.12).
   const [waited, setWaited] = useState<Record<string, number>>({});
@@ -183,6 +185,7 @@ export function Player({ language, languageName, scope: firstScope }: { language
   }, [start, firstScope]);
   const restart = (which: Scope, cap: "more" | "none" | null = null, text: "confirmed" | "later" | null = null) => {
     capAnswer.current = cap;
+    setDropped(null);
     setPhase({ k: "loading" });
     void start(which, cap, text);
   };
@@ -252,11 +255,11 @@ export function Player({ language, languageName, scope: firstScope }: { language
   }, [card?.id, soundUrl]); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
-    if (voice !== false || voiceWarned.current || !plan || plan.noAudio) return;
+    if (voice !== false || voiceWarned.current || !plan || plan.noAudio || scope === "phonics") return;
     if (!plan.queue.some((item) => needsVoice(item.ex?.listen))) return;
     voiceWarned.current = true;
     toast(t("learn.session.noVoice", { language: languageName }));
-  }, [voice, plan, toast, languageName]);
+  }, [voice, plan, toast, languageName, scope]);
 
   // End of session: wait for the outbox, then ask the server if its summary has not come with the last answer.
   useEffect(() => {
@@ -359,13 +362,15 @@ export function Player({ language, languageName, scope: firstScope }: { language
   };
 
   // A phonics round needs sound (PRD §8.4, §10.12): with sound off, or a sound this phone cannot say, the
-  // rest of the round leaves the session at once, unscored, and «بعداً» is not counted.
+  // rest of the round leaves the session at once, unscored, and «بعداً» is not counted. In a session of
+  // the round alone, its end says why; elsewhere a note does and the session goes on.
   useEffect(() => {
     if (!card || !plan || done || (card.t !== "phonics" && card.t !== "phonicsq")) return;
     const silent = muted || plan.noAudio;
     if (!silent && !(voice === false && roundNeedsVoice(plan, card))) return;
     const timer = window.setTimeout(() => {
-      toast(silent ? t("learn.phonics.dropped") : t("learn.phonics.noVoice", { language: languageName }));
+      if (scope === "phonics") setDropped(silent ? "muted" : "noVoice");
+      else toast(silent ? t("learn.phonics.dropped") : t("learn.phonics.noVoice", { language: languageName }));
       submit({ skip: "drop" });
     }, 0);
     return () => window.clearTimeout(timer);
@@ -511,6 +516,31 @@ export function Player({ language, languageName, scope: firstScope }: { language
           ) : null}
           <Link className={phase.which === "failed" || phase.which === "gone" ? "ghost" : "primary"} href={`/learn/${language}`}>
             {t("learn.states.home")}
+          </Link>
+        </div>
+      </Frame>
+    );
+  }
+
+  if (phase.k === "end" && dropped) {
+    return (
+      <Frame>
+        {bar(null)}
+        <div className="calm">
+          <span className="mark">
+            <Icon name="l-mute" />
+          </span>
+          <h1>{t("learn.phonics.droppedTitle")}</h1>
+          <p>{dropped === "muted" ? t("learn.phonics.droppedMuted") : t("learn.phonics.droppedNoVoice", { language: languageName })}</p>
+        </div>
+        <div className="cta">
+          {dropped === "muted" ? (
+            <button type="button" className="primary jelly-press" onClick={() => restart("phonics")}>
+              {t("learn.phonics.droppedAgain")}
+            </button>
+          ) : null}
+          <Link className={dropped === "muted" ? "ghost" : "primary"} href={`/learn/${language}/phonics`}>
+            {t("learn.phonicsPage.title")}
           </Link>
         </div>
       </Frame>

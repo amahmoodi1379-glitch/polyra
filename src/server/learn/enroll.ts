@@ -22,7 +22,7 @@ export async function enrollments(userId: number) {
   return db.enrollment.findMany({ where: { user_id: userId }, orderBy: { created_at: "asc" }, select: { language: true, created_at: true } });
 }
 
-/** «از صفر شروع می‌کنم»: the enrollment and the four skills at the lowest level (PRD §3.1, §10.3). */
+/** «از صفر شروع می‌کنم»: the enrollment with the phonics auto mode and the four skills at the lowest level (PRD §3.1, §8.4, §10.3). */
 export async function startFromZero(user: Learner & { phone: string | null }, language: LanguageCode, now = new Date()) {
   const levels = await appSetting<string[]>(`levels.${language}`);
   const lowest = levels[0];
@@ -31,7 +31,8 @@ export async function startFromZero(user: Learner & { phone: string | null }, la
     const found = await tx.enrollment.findUnique({ where: { user_id_language: { user_id: user.id, language } }, select: { id: true } });
     if (found) return;
     // A number that already had this language's free period gets none (PRD §12.1).
-    await tx.enrollment.create({ data: { user_id: user.id, language, start_mode: "zero", ...(used ? { trial_started_at: now, trial_ends_at: now } : {}) } });
+    // From zero, phonics rounds come in sessions by themselves (PRD §8.4).
+    await tx.enrollment.create({ data: { user_id: user.id, language, start_mode: "zero", phonics_auto: true, ...(used ? { trial_started_at: now, trial_ends_at: now } : {}) } });
     for (const skill of ["vocab", "grammar", "listening", "reading"] as const) {
       await tx.skillLevel.upsert({
         where: { user_id_language_skill: { user_id: user.id, language, skill } },
@@ -47,11 +48,25 @@ export async function setSessionLength(userId: number, minutes: number) {
   await db.user.update({ where: { id: userId }, data: { session_length_min: minutes } });
 }
 
-/** «پاک کردن پیشرفت من در این زبان», for a tester (PRD §13.5): back to before the first session. */
+/**
+ * «پاک کردن پیشرفت من در این زبان», for a tester (PRD §13.5): back to before the first session. States
+ * kept by content id (texts, phonics, heard sentences, production) go with the language's content.
+ */
 export async function resetProgress(user: Learner, language: LanguageCode) {
   if (!user.is_tester && !user.is_admin) throw new Error("Only a tester can reset progress");
   const where = { user_id: user.id, language };
+  const id = user.id;
   await db.$transaction([
+    db.$executeRaw`DELETE FROM text_state s USING text c WHERE c.id = s.text_id AND s.user_id = ${id} AND c.language = ${language}`,
+    db.$executeRaw`DELETE FROM phonics_state s USING phonics_lesson c WHERE c.id = s.lesson_id AND s.user_id = ${id} AND c.language = ${language}`,
+    db.$executeRaw`DELETE FROM sentence_drill_state s USING sentence c WHERE c.id = s.sentence_id AND s.user_id = ${id} AND c.language = ${language}`,
+    db.$executeRaw`DELETE FROM speak_state s USING sentence c WHERE c.id = s.sentence_id AND s.user_id = ${id} AND c.language = ${language}`,
+    db.$executeRaw`DELETE FROM dialogue_state s USING dialogue c WHERE c.id = s.dialogue_id AND s.user_id = ${id} AND c.language = ${language}`,
+    db.$executeRaw`DELETE FROM errorfix_state s USING errorfix_item c WHERE c.id = s.errorfix_item_id AND s.user_id = ${id} AND c.language = ${language}`,
+    db.$executeRaw`DELETE FROM writing_entry s USING writing_task c WHERE c.id = s.writing_task_id AND s.user_id = ${id} AND c.language = ${language}`,
+    db.placementRun.deleteMany({ where }),
+    db.levelExam.deleteMany({ where }),
+    db.userNotice.deleteMany({ where }),
     db.reviewLog.deleteMany({ where }),
     db.session.deleteMany({ where }),
     db.itemState.deleteMany({ where }),

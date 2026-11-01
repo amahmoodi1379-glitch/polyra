@@ -14,10 +14,10 @@ import { saveOrder } from "@/server/content/order";
 import { previewItem } from "@/server/content/review/preview";
 import { submitAnswer, sessionEnd } from "@/server/learn/answer";
 import { forgetContent, loadContent } from "@/server/learn/content";
-import { startFromZero } from "@/server/learn/enroll";
+import { resetProgress, startFromZero } from "@/server/learn/enroll";
 import { homeData } from "@/server/learn/home";
 import { loadLearner } from "@/server/learn/learner";
-import { myText, myTexts } from "@/server/learn/lists";
+import { myPhonics, myPhonicsLesson, myText, myTexts } from "@/server/learn/lists";
 import { startSession, type Bundle } from "@/server/learn/session";
 import { queueTappedWord } from "@/server/learn/tap";
 import { saveTextProgress } from "@/server/learn/text-progress";
@@ -77,14 +77,14 @@ const request = (bundle: Bundle, seq: number, card: Card, raw: RawAnswer, at: Da
   shown: null,
 });
 
-/** Plays a whole session with right answers, five seconds a card. */
-async function playAll(user: Person, bundle: Bundle, start = NOW) {
+/** Plays a whole session with right answers, five seconds a card; `pick` answers a card its own way. */
+async function playAll(user: Person, bundle: Bundle, start = NOW, pick: (card: Card) => RawAnswer | undefined = () => undefined) {
   let plan = bundle.plan;
   let seq = bundle.nextSeq;
   for (let i = 0; plan.queue.length > 0 && i < 400; i++) {
     const at = new Date(start.getTime() + (i + 1) * 5000);
     const card = plan.queue[0];
-    const { raw, result } = answerFor(bundle, plan, card, at);
+    const { raw, result } = answerFor(bundle, plan, card, at, pick(card));
     const response = await submitAnswer(user, request(bundle, seq, card, raw, at), at);
     if (response.kind !== "ok") throw new Error(`Answer ${seq}: ${response.kind}`);
     seq++;
@@ -113,6 +113,7 @@ const LEARNER_TABLES = [
   "confusion_pair",
   "sentence_drill_state",
   "text_state",
+  "phonics_state",
   "skill_level",
   "enrollment",
   "trial_ledger",
@@ -124,7 +125,7 @@ beforeAll(async () => {
   await testDb.$executeRawUnsafe(`TRUNCATE ${rows.map((row) => `"public"."${row.tablename}"`).join(", ")} RESTART IDENTITY CASCADE`);
   await testDb.language.createMany({ data: [{ code: "fr" }, { code: "de" }] });
   const loaded = await loadDemo();
-  expect(loaded).toMatchObject({ kind: "loaded", words: 60, units: 6, texts: 3 });
+  expect(loaded).toMatchObject({ kind: "loaded", words: 60, units: 6, texts: 3, phonics: 3 });
 }, 120_000);
 
 beforeEach(async () => {
@@ -633,12 +634,125 @@ describe("texts (PRD §7.3–7.5, §7.9, §10.11)", () => {
   });
 });
 
+describe("phonics (PRD §8)", () => {
+  const lessons = () => testDb.phonicsLesson.findMany({ where: { language: "fr" }, orderBy: { order_no: "asc" } });
+  const enrollmentOf = (user: Person) => testDb.enrollment.findUniqueOrThrow({ where: { user_id_language: { user_id: user.id, language: "fr" } } });
+
+  it("T22 on the server: from zero the round comes after the first items, is written, and «الفبا و تلفظ» moves on", async () => {
+    const user = await enrolled();
+    expect(await enrollmentOf(user)).toMatchObject({ phonics_auto: true, phonics_skips: 0 });
+    const [first, second, third] = await lessons();
+    expect((await homeData(user, "fr", NOW))?.links.phonics).toEqual({ index: 1, total: 3, done: false });
+
+    const bundle = await started(user);
+    expect(bundle.plan.queue.findIndex((card) => card.t === "phonics")).toBeGreaterThan(2);
+    expect(bundle.plan.phonics).toMatchObject({ lessonId: first.id, round: 1, auto: true });
+    expect(bundle.plan.queue.filter((card) => card.t === "phonicsq")).toHaveLength(6);
+    await playAll(user, bundle);
+
+    expect(await testDb.phonicsState.findMany({ where: { user_id: user.id }, select: { lesson_id: true, rounds_done: true, last_score: true, done: true } })).toEqual([
+      { lesson_id: first.id, rounds_done: 1, last_score: 1, done: false },
+    ]);
+    expect(await testDb.reviewLog.count({ where: { user_id: user.id, kind: "phonics" } })).toBe(6);
+    expect((await homeData(user, "fr", NOW))?.links.phonics).toEqual({ index: 2, total: 3, done: false });
+    const overview = await myPhonics(user, "fr", NOW);
+    expect(overview.lessons.map((lesson) => lesson.state)).toEqual(["tomorrow", "next", "closed"]);
+    expect(overview.next).toEqual({ no: 2, round: 1 });
+    // Round 2 from the next Tehran day, before the next lesson.
+    expect((await myPhonics(user, "fr", plusDays(NOW, 1))).next).toEqual({ no: 1, round: 2 });
+    // An opened lesson reads again whole; one not opened does not.
+    expect(await myPhonicsLesson(user, "fr", first.id)).toMatchObject({ lessonId: first.id, index: 1, total: 3, kind: "rule" });
+    expect((await myPhonicsLesson(user, "fr", first.id))?.words).toHaveLength(8);
+    expect(await myPhonicsLesson(user, "fr", second.id)).toBeNull();
+    expect(await myPhonicsLesson(user, "fr", third.id)).toBeNull();
+  });
+
+  it("T74 on the server: three «بعداً» in a row turn the auto rounds off with the end message once; the module stays open", async () => {
+    const user = await enrolled();
+    let end = null;
+    for (let day = 0; day < 3; day++) {
+      const at = plusDays(NOW, day);
+      const bundle = await started(user, at);
+      expect(bundle.plan.phonics?.auto).toBe(true);
+      end = await playAll(user, bundle, at, (card) => (card.t === "phonics" ? { skip: "later" } : undefined));
+      if (day < 2) expect(end?.message).toBeNull();
+    }
+    expect(end?.message).toEqual({ kind: "phonicsOff" });
+    expect(await enrollmentOf(user)).toMatchObject({ phonics_auto: false, phonics_skips: 3, phonics_off_due: false });
+    expect(await testDb.phonicsState.count({ where: { user_id: user.id } })).toBe(0);
+    const after = await started(user, plusDays(NOW, 3));
+    expect(after.plan.queue.some((card) => card.t === "phonics")).toBe(false);
+    expect((await homeData(user, "fr", plusDays(NOW, 3)))?.links.phonics).toEqual({ index: 1, total: 3, done: false });
+  }, 60_000);
+
+  it("«الفبا و تلفظ» builds the round alone, not without sound; a round left without sound writes nothing and counts no «بعداً»", async () => {
+    const user = await enrolled();
+    expect(await startSession(user, { language: "fr", scope: "phonics", noAudio: true, cap: null }, NOW)).toEqual({ kind: "needs_audio" });
+    const bundle = await started(user, NOW, "phonics");
+    expect(bundle.plan.queue.map((card) => card.t)).toEqual(["phonics", ...Array(6).fill("phonicsq")]);
+    expect(bundle.plan.phonics?.auto).toBe(false);
+    let plan = bundle.plan;
+    for (const [seq, raw] of [{ seen: true }, { idk: true }, { skip: "drop" }].entries()) {
+      const at = new Date(NOW.getTime() + (seq + 1) * 5000);
+      const card = plan.queue[0];
+      const { result } = answerFor(bundle, plan, card, at, raw as RawAnswer);
+      expect(await submitAnswer(user, request(bundle, bundle.nextSeq + seq, card, raw as RawAnswer, at), at)).toMatchObject({ kind: "ok", finished: seq === 2 });
+      plan = result.advanced.plan;
+    }
+    expect(await testDb.phonicsState.count({ where: { user_id: user.id } })).toBe(0);
+    expect(await enrollmentOf(user)).toMatchObject({ phonics_auto: true, phonics_skips: 0 });
+    expect(await testDb.reviewLog.findMany({ where: { user_id: user.id }, orderBy: { seq: "asc" }, select: { kind: true, result: true, raw_answer: true } })).toEqual([
+      { kind: "intro", result: "correct", raw_answer: null },
+      { kind: "phonics", result: "idk", raw_answer: "" },
+      { kind: "intro", result: "idk", raw_answer: "drop" },
+    ]);
+  });
+
+  it("refuses a start or a question's answer that is not its own", async () => {
+    const user = await enrolled();
+    const bundle = await started(user, NOW, "phonics");
+    const lead = bundle.plan.queue[0];
+    expect(await submitAnswer(user, request(bundle, bundle.nextSeq, lead, { choice: "o0" }, NOW), NOW)).toEqual({ kind: "invalid" });
+    const { result } = answerFor(bundle, bundle.plan, lead, NOW);
+    await submitAnswer(user, request(bundle, bundle.nextSeq, lead, { seen: true }, NOW), NOW);
+    const question = result.advanced.plan.queue[0];
+    expect(await submitAnswer(user, request(bundle, bundle.nextSeq + 1, question, { skip: "later" }, NOW), NOW)).toEqual({ kind: "invalid" });
+  });
+
+  it("shows the panel's reviewer both rounds with every sound to hear", async () => {
+    const [rule, contrast, liaison] = await lessons();
+    const kinds = async (id: number) => {
+      const preview = await previewItem("phonics", "fr", id);
+      if (preview.state !== "ready") throw new Error(preview.reason);
+      return preview.screens.map((screen) => (screen.kind === "exercise" ? screen.ex.code : screen.kind));
+    };
+    expect(await kinds(rule.id)).toEqual(["phonics", ...Array(6).fill("P1"), "phonics", ...Array(6).fill("P1")]);
+    expect(await kinds(contrast.id)).toEqual(["phonics", "P1", "P4", "P1", "P4", "P1", "P4", "phonics", "P2", "P3", "P2", "P3", "P2", "P3"]);
+    expect(await kinds(liaison.id)).toEqual(["phonics", ...Array(4).fill("P5"), "phonics", ...Array(4).fill("P5")]);
+    const preview = await previewItem("phonics", "fr", contrast.id);
+    if (preview.state !== "ready" || preview.screens[0].kind !== "phonics") throw new Error("no lesson screen");
+    expect(preview.screens[0].view).toMatchObject({ words: { length: 8 }, pairs: { length: 6 } });
+  });
+
+  it("a tester's reset takes the phonics states with the rest", async () => {
+    const user = await enrolled();
+    await playAll(user, await started(user, NOW, "phonics"));
+    expect(await testDb.phonicsState.count({ where: { user_id: user.id } })).toBe(1);
+    await resetProgress(user, "fr");
+    expect(await testDb.phonicsState.count({ where: { user_id: user.id } })).toBe(0);
+    expect(await testDb.enrollment.count({ where: { user_id: user.id } })).toBe(0);
+  });
+});
+
 describe("removing the demo", () => {
   it("takes out the content and what testers did with it", async () => {
     const user = await enrolled();
     await playAll(user, await started(user));
     expect(await testDb.itemState.count({ where: { user_id: user.id } })).toBeGreaterThan(0);
+    expect(await testDb.phonicsState.count({ where: { user_id: user.id } })).toBe(1);
     expect(await removeDemo()).toEqual({ removed: true });
+    expect(await testDb.phonicsState.count({ where: { user_id: user.id } })).toBe(0);
+    expect(await testDb.phonicsLesson.count({ where: { language: "fr" } })).toBe(0);
     expect(await demoStatus()).toMatchObject({ loaded: false, words: 0 });
     expect(await testDb.word.count({ where: { language: "fr" } })).toBe(0);
     expect(await testDb.itemState.count({ where: { user_id: user.id } })).toBe(0);

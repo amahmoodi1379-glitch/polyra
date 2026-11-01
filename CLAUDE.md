@@ -109,6 +109,11 @@ Deploy: Runflare builds `main` (`docs/deploy-runflare.md`). Work on the session 
   page), `text-questions.tsx` (each kind's control and review), `text-body.tsx` (the sentences), `text-sound.ts` (plays,
   pause, slow, sentence by sentence), `text-reader.tsx` («متن‌های من», pages `learn/[lang]/texts`). Demo texts:
   `fixtures/demo-fr/texts.ts`.
+- Phonics (PRD §8): `src/engine/phonics.ts` (the next round, each kind's questions P1–P5 as the panel's switches allow,
+  the lesson after a round, «بعداً»); plan key `p:<lesson id>`, a lead card `phonics` and its `phonicsq` questions in one
+  block (`{skip:"drop"}` takes the rest out unscored without sound). Server: `answer.ts` writes `phonics_state`,
+  `lists.ts` `myPhonics`/`myPhonicsLesson`. Pages `learn/[lang]/phonics` and `phonics/[id]`; the P2–P5 controls are in
+  `exercise.tsx`, the lesson face `PhonicsFace` in `cards.tsx`. Demo lessons: `fixtures/demo-fr/phonics.ts`.
 - Learner sessions (PRD §10, §15.4): `src/engine/session` builds and plays a plan (`build.ts`, `play.ts`, `advance.ts`);
   the browser and the server run the same functions. `src/server/learn`: `content.ts` (what a learner or tester may
   see, cached 30s), `learner.ts` (the snapshot the engine needs), `session.ts` (start, resume, close, preview),
@@ -121,7 +126,7 @@ Deploy: Runflare builds `main` (`docs/deploy-runflare.md`). Work on the session 
   `/learn/[lang]/session` (`src/components/learn/session/player.tsx`: the browser runs `playCard`, answers go through
   `outbox.ts`, a localStorage queue that survives a lost connection; `exercise.tsx` draws every answer kind,
   `cards.tsx` the word card, lesson and tables, `feedback.tsx`, `end.tsx`, `keyboard.tsx` the in-app keyboard),
-  and the reading pages `notebook`, `words`, `words/[id]`, `lessons`, `lessons/[id]`, `texts`, `texts/[id]`. Sounds, haptics and motion:
+  and the reading pages `notebook`, `words`, `words/[id]`, `lessons`, `lessons/[id]`, `texts`, `texts/[id]`, `phonics`, `phonics/[id]`. Sounds, haptics and motion:
   `src/components/learn/{sfx,motion,speak}.ts`; Latin words inside Persian text: `mixed.tsx`.
 - `src/i18n/fa.json`: every Persian interface string; `t("key", vars)` from `@/i18n`.
 - `src/components/ui`: shadcn/ui sources, converted to logical (start/end) classes for RTL.

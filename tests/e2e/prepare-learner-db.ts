@@ -6,11 +6,11 @@ import { startFromZero } from "@/server/learn/enroll";
 import { saveItemState } from "@/server/learn/writes";
 import { engineNumber } from "@/server/settings/read";
 import { seedSettings } from "../../scripts/seed/settings";
-import { E2E_READERS, E2E_TESTERS } from "./database";
+import { E2E_PHONICS, E2E_READERS, E2E_TESTERS } from "./database";
 
 /**
  * Fresh learner database for the browser tests: settings, the French demo, one new tester per project,
- * and one per project who has met every demo word, for the texts.
+ * one per project who has met every demo word, for the texts, and one per project from zero, for phonics.
  */
 async function main() {
   const rows = await db.$queryRawUnsafe<{ tablename: string }[]>("SELECT tablename FROM pg_tables WHERE schemaname = 'public' AND tablename <> '_prisma_migrations'");
@@ -24,6 +24,11 @@ async function main() {
   }
   const demo = await loadDemo();
   if (demo.kind !== "loaded") throw new Error(`The French demo did not load: ${demo.kind}`);
+
+  for (const phone of Object.values(E2E_PHONICS)) {
+    const user = await db.user.create({ data: { phone: normalizeMobile(phone)!, session_length_min: sessionLength, is_tester: true } });
+    await startFromZero(user, "fr", new Date());
+  }
 
   const words = await db.word.findMany({ where: { language: "fr", no_card: false }, select: { id: true } });
   const now = new Date();

@@ -3,6 +3,7 @@ import { buildDrillEx, DRILL_CODES, drillReady } from "@/engine/drill";
 import { hasCard, isColloquial, levelIndex, TRACKS, type Content, type SentenceC, type TargetC, type TextC, type UnitC, type WordC } from "@/engine/content";
 import type { Ex, SentenceView } from "@/engine/ex";
 import { exerciseDefs, type ExerciseFamily } from "@/engine/exercises";
+import { buildPhonicsRound, phonicsLessonView, type PhonicsView } from "@/engine/phonics";
 import { seeded } from "@/engine/random";
 import { lessonView, tableView, textView, wordCard, type LessonView, type TableView, type TextCard, type TextView, type WordCard } from "@/engine/session";
 import type { Settings } from "@/engine/settings";
@@ -15,8 +16,9 @@ import type { LibrarySlug } from "../library/slugs";
 /**
  * «بازبینی» shows an item the way a learner gets it (PRD §13.9 step 4, owner decision): its card and
  * every exercise the engine builds from it, with the real builders and engine settings. A text shows
- * its key words and every stage of every attempt in both tracks. Dialogues, find-the-mistake, writing
- * and phonics get their learner screens later in phase 4; until then their review shows the form.
+ * its key words and every stage of every attempt in both tracks; a phonics lesson its start with every
+ * sound to hear (PRD §8.5) and both rounds' questions. Dialogues, find-the-mistake and writing get their
+ * learner screens later in phase 4; until then their review shows the form.
  */
 
 export type Screen =
@@ -28,7 +30,9 @@ export type Screen =
   /** «کلمه‌های این متن» (PRD §7.5). */
   | { kind: "textwords"; view: TextView; words: number[] }
   /** One stage of an attempt of a text in one track (PRD §7.4). */
-  | { kind: "text"; view: TextView; info: TextCard };
+  | { kind: "text"; view: TextView; info: TextCard }
+  /** The start of a phonics round (PRD §8.3); round 1 with every word, sentence and pair to hear. */
+  | { kind: "phonics"; view: PhonicsView };
 
 export type Preview =
   | { state: "ready"; language: Lang; screens: Screen[]; words: Record<number, WordCard>; lessons: Record<number, LessonView> }
@@ -114,7 +118,7 @@ function textScreens(content: Content, settings: Settings, text: TextC): Screen[
 }
 
 export async function previewItem(slug: LibrarySlug, language: string, id: number): Promise<Preview> {
-  if (slug === "dialogues" || slug === "errorfix" || slug === "writing" || slug === "phonics") return { state: "none", reason: "later" };
+  if (slug === "dialogues" || slug === "errorfix" || slug === "writing") return { state: "none", reason: "later" };
   const [content, settings] = await Promise.all([loadContent(language, "review"), engineSettings()]);
   const words: Record<number, WordCard> = {};
   const lessons: Record<number, LessonView> = {};
@@ -181,6 +185,20 @@ export async function previewItem(slug: LibrarySlug, language: string, id: numbe
       if (!table || !verb) return { state: "none", reason: "missing" };
       const env = reviewEnv(content, settings, verb.level, seed);
       return ready([{ kind: "table", table: tableView(content, table) }, ...built(codesOf("conjugation").map((code) => buildConjEx(env, table, code)))]);
+    }
+    case "phonics": {
+      const lesson = content.phonics.find((item) => item.id === id);
+      if (!lesson) return { state: "none", reason: "missing" };
+      const where = { index: content.phonics.indexOf(lesson) + 1, total: content.phonics.length };
+      // Every kind of question the lesson makes, like the other types here, whatever the panel switched off.
+      const allOn = { ...settings, ...Object.fromEntries(codesOf("phonics").map((code) => [`exercise.${code}.enabled`, true])) };
+      const screens: Screen[] = [];
+      for (const round of [1, 2] as const) {
+        const made = buildPhonicsRound(reviewEnv(content, allOn, null, `${seed}:${round}`), { lesson, round, repeat: false }, 0, where);
+        if (!made) continue;
+        screens.push({ kind: "phonics", view: round === 1 ? { ...made.view, ...phonicsLessonView(lesson) } : made.view }, ...built(made.questions));
+      }
+      return screens.length > 0 ? ready(screens) : { state: "none", reason: "missing" };
     }
     case "transforms":
     case "translations": {

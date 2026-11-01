@@ -394,9 +394,9 @@ export function LiaisonLine({ words, ties, language }: { words: string[]; ties: 
 /**
  * A phonics lesson as it teaches (PRD §8.3, round 1): the sound, the letters that write it, the tip
  * and every example word to hear, or two sample sentences with their ties. Round 2 shows the same
- * lesson as a reminder before its questions; «الفبا و تلفظ» shows it to read and hear again.
+ * lesson as a reminder before its questions; «الفبا و تلفظ» shows it whole, pairs too, to read and hear again.
  */
-export function PhonicsFace({ id, view, kicker, note }: { id: string; view: Pick<PhonicsView, "label" | "graphemes" | "tip" | "words" | "samples">; kicker: string; note?: string | null }) {
+export function PhonicsFace({ id, view, kicker, note }: { id: string; view: Pick<PhonicsView, "label" | "graphemes" | "tip" | "words" | "samples" | "pairs">; kicker: string; note?: string | null }) {
   const language = view.words[0]?.speak.lang ?? view.samples[0]?.speak.lang;
   return (
     <div className="lesson phon">
@@ -446,6 +446,25 @@ export function PhonicsFace({ id, view, kicker, note }: { id: string; view: Pick
               <li key={index}>
                 <MiniPlay id={`${id}:s${index}`} speak={sample.speak} label={t("learn.session.playSentence")} />
                 <LiaisonLine words={sample.words} ties={sample.liaisonAfter} language={sample.speak.lang} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+      {view.pairs.length > 0 ? (
+        <div className="phon-list">
+          <p className="phon-h">{t("learn.phonics.pairs")}</p>
+          <ul>
+            {view.pairs.map((pair, index) => (
+              <li key={index} className="pair">
+                {[pair.a, pair.b].map((side, which) => (
+                  <span key={which} className="side">
+                    <MiniPlay id={`${id}:p${index}${which}`} speak={side.speak} label={t("learn.session.play")} />
+                    <span className="lat" lang={side.speak.lang} dir="ltr">
+                      {side.text}
+                    </span>
+                  </span>
+                ))}
               </li>
             ))}
           </ul>

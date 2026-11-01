@@ -135,6 +135,17 @@ describe("publish conditions (PRD §13.5)", () => {
     expect(blocked.map((item) => [item.id, item.reasons])).toEqual([[bouffer.id, [why("noStandardTwin")]]]);
   });
 
+  it("asks a formal word for its sentences like any word, and needs no standard twin (DECISIONS.md)", async () => {
+    const veuillez = await word("veuillez", { pos: "verb", gender: null, register: "formal" });
+    await practice(veuillez, 2);
+    const neanmoins = await word("néanmoins", { pos: "adv", gender: null, register: "formal" });
+    await practice(neanmoins, 5);
+
+    const { ready, blocked } = await previewPublish("fr");
+    expect(ready.filter((item) => item.slug === "words").map((item) => item.id)).toEqual([neanmoins.id]);
+    expect(blocked.map((item) => [item.id, item.reasons])).toEqual([[veuillez.id, [why("wordTargets", { count: 2, min: 5 })]]]);
+  });
+
   it("checks units, tables, texts and phonics lessons", async () => {
     const unit = await testDb.grammarUnit.create({ data: { language: "fr", unit_code: "fr-a1-present", title_fa: "زمان حال", level: "A1", status: "approved" } });
     const hard = await word("néanmoins", { level: "B1" });

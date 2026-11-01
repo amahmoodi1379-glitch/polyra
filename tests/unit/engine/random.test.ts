@@ -1,6 +1,6 @@
 /**
  * The random test of PRD §16.3: made-up learners with random behaviour (right, wrong, near, «نمی‌دانم»,
- * leaving half-way, also in a text, sound off, every kind of session, the word-cap and text-session questions, a new session length,
+ * leaving half-way, also in a text, sound off, «بعداً» on a phonics round, every kind of session, the word-cap and text-session questions, a new session length,
  * switches in the panel and a level closed under them) go day by day through the real engine, and
  * `checkInvariants` runs after every build and every card. A failure names its seed, learner and day,
  * so `RANDOM_SEED=… RANDOM_USERS=… npx vitest run tests/unit/engine/random.test.ts` plays it again.
@@ -28,12 +28,12 @@ const START = new Date("2026-03-21T04:30:00Z");
 const pick = <T,>(rng: Rng, list: readonly T[]): T => list[Math.floor(rng() * list.length)];
 
 const contents = {
-  fr: syntheticContent({ textsPerLevel: 8 }),
-  de: syntheticContent({ language: "de", textsPerLevel: 8 }),
-  frA1: syntheticContent({ openLevels: ["A1"], textsPerLevel: 8 }),
+  fr: syntheticContent({ textsPerLevel: 8, phonics: 6 }),
+  de: syntheticContent({ language: "de", textsPerLevel: 8, phonics: 6 }),
+  frA1: syntheticContent({ openLevels: ["A1"], textsPerLevel: 8, phonics: 6 }),
 };
 
-const SCOPES: BuildOptions["scope"][] = ["mixed", "mixed", "mixed", "mixed", "mixed", "vocab", "grammar", "listening", "reading", "quick", "notebook", "extra"];
+const SCOPES: BuildOptions["scope"][] = ["mixed", "mixed", "mixed", "mixed", "mixed", "vocab", "grammar", "listening", "reading", "quick", "notebook", "extra", "phonics"];
 
 type Failure = { user: number; day: number; session: number; violations: Violation[] };
 
@@ -44,7 +44,7 @@ function runLearner(user: number): Failure | null {
   const accuracy = 0.4 + rng() * 0.55;
   const policy = randomPolicy(accuracy, content.language);
   let settings: Settings = { ...defaults, "feature.confusion_card": rng() < 0.5 };
-  let learner: LearnerSnapshot = freshLearner(lang, { sessionLength: pick(rng, [10, 15, 20, 30]) });
+  let learner: LearnerSnapshot = freshLearner(lang, { sessionLength: pick(rng, [10, 15, 20, 30]), phonicsAuto: rng() < 0.6 });
   // Some learners see the teacher close every level above A1 on a random day (PRD §13.5).
   const closeDay = lang === "fr" && rng() < 0.3 ? 1 + Math.floor(rng() * DAYS) : null;
 
@@ -66,7 +66,8 @@ function runLearner(user: number): Failure | null {
       const check = (input: InvariantInput) => violations.push(...checkInvariants(input));
       const opts: BuildOptions = { scope: pick(rng, SCOPES), lengthMin: learner.sessionLength, noAudio: rng() < 0.1, cap: null, seed: `${SEED}-${user}-${day}-${session}` };
       const textAsk = (): "confirmed" | "later" => (rng() < 0.5 ? "confirmed" : "later");
-      const play = { leaveAfter: rng() < 0.15 ? Math.floor(rng() * 25) : undefined, muteAfter: rng() < 0.1 ? Math.floor(rng() * 10) : undefined, check, textAsk };
+      const phonicsLater = () => rng() < 0.25;
+      const play = { leaveAfter: rng() < 0.15 ? Math.floor(rng() * 25) : undefined, muteAfter: rng() < 0.1 ? Math.floor(rng() * 10) : undefined, check, textAsk, phonicsLater };
       let played = playSession(content, learner, settings, now, opts, policy, rng, play);
       learner = played.learner;
       if (played.build.kind === "ask_word_cap") {

@@ -180,6 +180,8 @@ export type PlayOptions = {
   check?: (input: InvariantInput) => void;
   /** The answer to «پیش از جلسه متن» (PRD §10.11); «شروع» when not given. */
   textAsk?: () => "confirmed" | "later";
+  /** «بعداً» at the start of an auto phonics round (PRD §8.4); never when not given. */
+  phonicsLater?: () => boolean;
 };
 
 /** Builds a session and plays its cards with the policy. */
@@ -215,9 +217,14 @@ export function playSession(content: Content, learner0: LearnerSnapshot, setting
       return { learner, plan, results, latencies, build, left: true };
     }
     const card = plan.queue[0];
-    const alt = wantsAlt(plan, card, { muted: play.muteAfter !== undefined && index >= play.muteAfter, noVoice: false, waitedSec: null }, settings);
+    const muted = play.muteAfter !== undefined && index >= play.muteAfter;
+    const alt = wantsAlt(plan, card, { muted, noVoice: false, waitedSec: null }, settings);
     const ex = card.t === "intro" || card.t === "lesson" || card.t === "table" || card.t === "confusion" || card.t === "textwords" || card.t === "text" ? null : shownEx(plan, card, alt);
-    const { answer, latencyMs } = policy(card, ex, rng, { plan, at });
+    const chosen = policy(card, ex, rng, { plan, at });
+    // As the player does: a phonics round needs sound and leaves when it is off (PRD §10.12); «بعداً» sets an auto round aside.
+    const phonics = card.t === "phonics" || card.t === "phonicsq";
+    const answer: RawAnswer = phonics && muted ? { skip: "drop" } : card.t === "phonics" && plan.phonics?.auto && play.phonicsLater?.() ? { skip: "later" } : chosen.answer;
+    const { latencyMs } = chosen;
     elapsed += latencyMs / 1000;
     const ctx = { settings, now: at, today, latency: plan.latency };
     const timing = { latencyMs, elapsedSec: elapsed, alt };

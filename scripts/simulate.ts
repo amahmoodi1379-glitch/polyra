@@ -101,6 +101,8 @@ type Stats = {
   firstReview: { ok: number; of: number };
   byStep: Map<number, { ok: number; of: number }>;
   hurriedQueue: number[];
+  /** Phonics lessons done by day 30 and at the end, per learner from zero (PRD §8). */
+  phonics: { day30: number[]; end: number[] };
   /** Per learner at the end: texts with a first round in each track, and the track levels. */
   texts: { listening: number[]; reading: number[]; levels: Map<string, number>; share: Map<string, number> };
 };
@@ -128,6 +130,7 @@ const newStats = (): Stats => ({
   firstReview: { ok: 0, of: 0 },
   byStep: new Map(),
   hurriedQueue: [],
+  phonics: { day30: [], end: [] },
   texts: { listening: [], reading: [], levels: new Map(), share: new Map() },
 });
 
@@ -192,7 +195,8 @@ function runLearner(pattern: Pattern, index: number, content: Content, settings:
   const seed = `${SEED}:${pattern.seedAs ?? pattern.name}:${index}`;
   const rng = seeded(seed, "answers");
   const person = human({ content, settings, seed, ability: () => ability });
-  let learner = freshLearner("fr", { sessionLength: pattern.length, vocabLevel: pattern.start, knownBelow: pattern.start });
+  // From zero, phonics rounds come by themselves (PRD §8.4).
+  let learner = freshLearner("fr", { sessionLength: pattern.length, vocabLevel: pattern.start, knownBelow: pattern.start, phonicsAuto: !pattern.start });
   const stuck = new Map<string, { step: number; run: number; max: number; last: number }>();
   const leeched = new Set<string>();
   /** Cards due on an earlier day and not reviewed yet (deferred ones too: their FSRS due has passed). */
@@ -261,7 +265,13 @@ function runLearner(pattern: Pattern, index: number, content: Content, settings:
           if (!pattern.start) {
             const shown = played.results.map((result) => result.ex).filter((ex) => !!ex);
             if (shown.some((ex) => ex.typed)) stats.firstSession.push(`learner ${index}: typed exercise`);
-            if (played.results.some((result) => !result.card.item.startsWith("w:"))) stats.firstSession.push(`learner ${index}: grammar, listening or a text`);
+            if (played.results.some((result) => !result.card.item.startsWith("w:") && !result.card.item.startsWith("p:"))) stats.firstSession.push(`learner ${index}: grammar, listening or a text`);
+            // T22: three words first, then the phonics round, then the rest; last when fewer words came.
+            const lead = played.results.findIndex((result) => result.card.t === "phonics");
+            const words = new Set(played.results.filter((result) => result.card.item.startsWith("w:")).map((result) => result.card.item));
+            const before = new Set(played.results.slice(0, Math.max(0, lead)).map((result) => result.card.item));
+            if (lead < 0) stats.firstSession.push(`learner ${index}: no phonics round`);
+            else if (before.size !== Math.min(3, words.size)) stats.firstSession.push(`learner ${index}: phonics round after ${before.size} words`);
           }
         }
         // The learner before this session, as the build saw it, for the codes each card could have had.
@@ -270,7 +280,16 @@ function runLearner(pattern: Pattern, index: number, content: Content, settings:
         played.results.forEach((result, at) => {
           const ex = result.ex;
           const seconds = played.latencies[at] / 1000;
-          const skill = result.card.t === "drill" ? "listening" : result.card.text ? result.card.text.track : result.card.item.startsWith("w:") ? "vocab" : "grammar";
+          const skill =
+            result.card.t === "drill"
+              ? "listening"
+              : result.card.text
+                ? result.card.text.track
+                : result.card.item.startsWith("w:")
+                  ? "vocab"
+                  : result.card.item.startsWith("p:")
+                    ? "phonics"
+                    : "grammar";
           stats.seconds[skill] = (stats.seconds[skill] ?? 0) + seconds;
           // A drill's code follows its count, not the choice (PRD §7.6).
           if (ex && ex.code !== "G0" && result.card.t !== "drill") {
@@ -325,6 +344,7 @@ function runLearner(pattern: Pattern, index: number, content: Content, settings:
     const words = learner.items.filter((item) => item.itemType === "word");
     if (a1Done === null && words.filter((item) => content.words.get(item.itemId)?.level === "A1").length >= a1Words) a1Done = day + 1;
     if (day === 29 && pattern.daily && ability === 0.75 && !pattern.start) stats.stepFour.push(words.filter((item) => item.step >= 4).length / Math.max(1, words.length));
+    if (day === 29 && !pattern.start) stats.phonics.day30.push(learner.phonics.filter((state) => state.done).length);
     if (day === 59 && pattern.name === "zero-10" && ability >= 0.75) stats.overdueDay60.push(learner.items.filter((item) => Date.parse(item.fsrs.due) < plusDays(dayStart, -7).getTime()).length);
   }
   if (ability >= 0.75) {
@@ -335,6 +355,7 @@ function runLearner(pattern: Pattern, index: number, content: Content, settings:
   stats.leeches.set(ability, { leech: entry.leech + leeched.size, of: entry.of + learner.items.length });
   stats.unitsPerWeek.push((learner.items.filter((item) => item.itemType === "grammar_unit").length / days) * 7);
   if (a1Done !== null) stats.a1Done.push(a1Done);
+  if (!pattern.start) stats.phonics.end.push(learner.phonics.filter((state) => state.done).length);
   for (const track of ["listening", "reading"] as const) {
     stats.texts[track].push(learner.texts.filter((state) => state.track === track && state.firstScore !== null).length);
     const level = learner.skills.find((skill) => skill.skill === track)?.level ?? "A1";
@@ -390,7 +411,7 @@ function marks(all: Map<string, Stats>, buildMs: number, a1Only: { errors: strin
   return [
     { name: "errors and empty sessions while content is left", ok: errors.length === 0 && empty === 0, value: `${errors.length} errors, ${empty} empty${errors.length ? `; first: ${errors[0]}` : ""}` },
     { name: "sessions with new material (daily, a ≥ 0.75, content left) > 90%", ok: newOf === 0 || newYes / newOf > 0.9, value: `${newYes}/${newOf} = ${pct(newYes / Math.max(1, newOf))}` },
-    { name: "first session from zero: no typing, no grammar, no text", ok: first.length === 0, value: first.length ? first.slice(0, 3).join("; ") : "ok" },
+    { name: "first session from zero (T22): three words, then the phonics round; no typing, no grammar, no text", ok: first.length === 0, value: first.length ? first.slice(0, 3).join("; ") : "ok" },
     { name: "scored word review with a form exercise: zero", ok: sum((s) => s.scoredForm) === 0, value: String(sum((s) => s.scoredForm)) },
     { name: "grammar-only learner (A2): no empty session", ok: (all.get("a2-grammar")?.empty ?? 0) === 0, value: String(all.get("a2-grammar")?.empty ?? 0) },
     { name: "cards over 7 days overdue on day 60 (10 min, a ≥ 0.75): median ≤ 30, never > 150", ok: median(overdue) <= 30 && Math.max(0, ...overdue) <= 150, value: `median ${median(overdue)}, max ${Math.max(0, ...overdue)}` },
@@ -479,7 +500,7 @@ function a1OnlyRun(settings: Settings): { errors: string[]; nothingLeft: boolean
   return { errors, nothingLeft };
 }
 
-function report(label: string, all: Map<string, Stats>) {
+function report(label: string, all: Map<string, Stats>, content: Content) {
   console.log(`\n── ${label}: speed and behaviour (not pass marks) ──`);
   for (const [name, s] of all) {
     const week = (w: number) => mean(s.wordsPerDay.get(w) ?? []).toFixed(1);
@@ -503,12 +524,13 @@ function report(label: string, all: Map<string, Stats>) {
       .join(" ");
     const shares = ["≥90%", "70–90%", "50–70%", "<50%"].map((band) => `${band} ${s.texts.share.get(band) ?? 0}`).join(", ");
     console.log(`${"".padEnd(14)} first rounds per learner: listening ${median(s.texts.listening)}, reading ${median(s.texts.reading)} (median) · track levels ${levels} · known words of new texts: ${shares}`);
+    if (s.phonics.end.length > 0) console.log(`${"".padEnd(14)} phonics lessons done (median of ${content.phonics.length}): day 30 ${median(s.phonics.day30)}, end ${median(s.phonics.end)}`);
     if (name === "hurried") console.log(`${"".padEnd(14)} review queue 14 days in: median ${median(s.hurriedQueue)}`);
   }
 }
 
 function run(label: string, settings: Settings): Mark[] {
-  const content = syntheticContent({ perLevel: { words: [600, 300, 300, 300], units: [50, 30, 30, 30] }, textsPerLevel: 20 });
+  const content = syntheticContent({ perLevel: { words: [600, 300, 300, 300], units: [50, 30, 30, 30] }, textsPerLevel: 20, phonics: 14 });
   const all = new Map<string, Stats>();
   const twins: Twins = new Map();
   for (const pattern of PATTERNS) {
@@ -520,7 +542,7 @@ function run(label: string, settings: Settings): Mark[] {
     all.set(pattern.name, stats);
     console.log(`${label} · ${pattern.name}: ${count} learners, ${days} days, ${((performance.now() - at) / 1000).toFixed(1)} s`);
   }
-  report(label, all);
+  report(label, all, content);
   const out = marks(all, buildTime(settings), a1OnlyRun(settings));
   console.log(`\n── ${label}: pass marks ──`);
   for (const mark of out) console.log(`${mark.ok ? "PASS" : "FAIL"}  ${mark.name}: ${mark.value}`);

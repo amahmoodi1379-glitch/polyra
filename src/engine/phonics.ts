@@ -4,7 +4,7 @@ import type { Choice, Ex, HeardWord } from "./ex";
 import { SHAPE } from "./exercises";
 import type { Graded } from "./grade";
 import { seeded, shuffle, type Rng } from "./random";
-import { num, type Settings } from "./settings";
+import { exerciseOn, num, type Settings } from "./settings";
 import type { PhonicsStateE } from "./state";
 import { addDays, tehranDate, tehranDayStart } from "./time";
 
@@ -33,6 +33,8 @@ export type PhonicsView = {
   words: HeardWord[];
   /** Round 1 of a liaison lesson: the two sample sentences. */
   samples: LiaisonView[];
+  /** A contrast lesson's minimal pairs, shown only to read and hear again (never on the round's start). */
+  pairs: { a: HeardWord; b: HeardWord }[];
   questions: number;
   /** «درس ۳ از ۱۴»: the lesson's place in the teacher's order. */
   index: number;
@@ -51,22 +53,50 @@ const liaisonView = (sentence: PhonicsC["sentences"][number]): LiaisonView => ({
   speak: sentence.speak,
 });
 
+/** A lesson with every example word, sentence and pair: a round's start shows the words or two sentences, «الفبا و تلفظ» and «بازبینی» all. */
+export const phonicsLessonView = (lesson: PhonicsC): Pick<PhonicsView, "lessonId" | "label" | "kind" | "graphemes" | "tip" | "words" | "samples" | "pairs"> => ({
+  lessonId: lesson.id,
+  label: lesson.label,
+  kind: lesson.kind,
+  graphemes: lesson.graphemes,
+  tip: lesson.tipFa,
+  words: lesson.words.map(heard),
+  samples: lesson.sentences.map(liaisonView),
+  pairs: lesson.pairs.map((pair) => ({ a: heard(pair.a), b: heard(pair.b) })),
+});
+
 const byLesson = (states: readonly PhonicsStateE[]) => new Map(states.map((state) => [state.lessonId, state]));
+
+/** The codes of each round of a contrast lesson (PRD §8.3); either pair stands in for the other when the panel switched both of one off. */
+const CONTRAST_CODES = { 1: ["P1", "P4"], 2: ["P2", "P3"] } as const;
+
+/** The codes a round of this lesson asks, as the panel allows (PRD §9.8, `exercise.<code>.enabled`); none: the lesson cannot come. */
+function roundCodes(kind: PhonicsKind, round: 1 | 2, settings: Settings): string[] {
+  if (kind === "rule") return exerciseOn(settings, "P1") ? ["P1"] : [];
+  if (kind === "liaison") return exerciseOn(settings, "P5") ? ["P5"] : [];
+  const own = CONTRAST_CODES[round].filter((code) => exerciseOn(settings, code));
+  return own.length > 0 ? own : CONTRAST_CODES[round === 1 ? 2 : 1].filter((code) => exerciseOn(settings, code));
+}
+
+/** Whether the panel leaves this lesson an exercise to ask; a lesson without one is passed over until one is on again. */
+export const phonicsAskable = (lesson: Pick<PhonicsC, "kind">, settings: Settings) => roundCodes(lesson.kind, 1, settings).length > 0;
 
 /**
  * The round that comes next (PRD §8.4): a round 2 whose day has come, the first in the teacher's
  * order; otherwise round 1 of the first lesson not started, so a lesson opens only after round 1 of
- * the one before it (§8.3) and a new order counts from the first lesson not done (§13.6).
+ * the one before it (§8.3) and a new order counts from the first lesson not done (§13.6). A lesson
+ * whose every exercise the panel switched off is passed over until one is on again.
  */
-export function nextPhonicsRound(content: Pick<Content, "phonics">, states: readonly PhonicsStateE[], now: Date): PhonicsRound | null {
+export function nextPhonicsRound(content: Pick<Content, "phonics">, states: readonly PhonicsStateE[], now: Date, settings: Settings): PhonicsRound | null {
   const known = byLesson(states);
-  for (const lesson of content.phonics) {
+  const askable = content.phonics.filter((lesson) => phonicsAskable(lesson, settings));
+  for (const lesson of askable) {
     const state = known.get(lesson.id);
     if (state && !state.done && state.roundsDone >= 1 && (!state.nextAt || Date.parse(state.nextAt) <= now.getTime())) {
       return { lesson, round: 2, repeat: state.roundsDone >= 2 };
     }
   }
-  const fresh = content.phonics.find((lesson) => (known.get(lesson.id)?.roundsDone ?? 0) === 0);
+  const fresh = askable.find((lesson) => (known.get(lesson.id)?.roundsDone ?? 0) === 0);
   return fresh ? { lesson: fresh, round: 1, repeat: false } : null;
 }
 
@@ -180,8 +210,9 @@ function p5(make: Make, sentence: PhonicsC["sentences"][number]): Ex {
 
 /**
  * One round of a lesson (PRD §8.3), or null when the lesson cannot make it (too few words, pairs or
- * sentences; the publish checks keep that from happening):
- * - contrast: round 1 asks P1 and P4 in turn, round 2 P2 and P3 in turn, three of each;
+ * sentences, which the publish checks keep from happening, or every code switched off in the panel):
+ * - contrast: round 1 asks P1 and P4 in turn, round 2 P2 and P3 in turn, three of each; a code switched
+ *   off leaves the round to the other, and a round with both off asks the other round's codes;
  * - rule: six P1, round 2 with the words round 1 did not ask, then again some it did;
  * - liaison: four P5; round 1 shows two sample sentences first, round 2 asks the others.
  */
@@ -201,23 +232,28 @@ export function buildPhonicsRound(
   let questions: Ex[] = [];
   let samples: LiaisonView[] = [];
 
+  const codes = roundCodes(lesson.kind, round, settings);
+  if (codes.length === 0) return null;
   if (lesson.kind === "contrast") {
-    if (lesson.pairs.length < 2 || (round === 1 && lesson.words.length === 0)) return null;
-    if (round === 1) {
-      const spelled = cycle(rng, lesson.words, half).map((word) => p1(make, rng, word));
-      const heardAs = cycle(rng, lesson.pairs, count - half).map((pair) => {
-        const others = lesson.pairs.filter((other) => other !== pair && other.b.text !== pair.b.text && other.b.text !== pair.a.text);
-        return p4(make, rng, pair, others.length > 0 ? others[Math.floor(rng() * others.length)] : lesson.pairs.find((other) => other !== pair)!);
-      });
-      questions = alternate(spelled, heardAs);
-    } else {
-      const sameFirst = shuffle(rng, [true, false]);
-      const same = Array.from({ length: half }, (_, i) => sameFirst[i] ?? rng() < 0.5);
-      const told = cycle(rng, lesson.pairs, half).map((pair, i) => p2(make, rng, pair, same[i]));
+    if (lesson.pairs.length < 2 || (codes.includes("P1") && lesson.words.length === 0)) return null;
+    const asked = (code: string, n: number): Ex[] => {
+      if (code === "P1") return cycle(rng, lesson.words, n).map((word) => p1(make, rng, word));
+      if (code === "P4") {
+        return cycle(rng, lesson.pairs, n).map((pair) => {
+          const others = lesson.pairs.filter((other) => other !== pair && other.b.text !== pair.b.text && other.b.text !== pair.a.text);
+          return p4(make, rng, pair, others.length > 0 ? others[Math.floor(rng() * others.length)] : lesson.pairs.find((other) => other !== pair)!);
+        });
+      }
+      if (code === "P2") {
+        // Half the same sound twice, half the two of a pair (PRD §8.2); an odd one either way.
+        const extra = rng() < 0.5 ? 0 : 1;
+        const same = shuffle(rng, Array.from({ length: n }, (_, i) => i % 2 === extra));
+        return cycle(rng, lesson.pairs, n).map((pair, i) => p2(make, rng, pair, same[i]));
+      }
       const order = shuffle(rng, lesson.pairs);
-      const odd = Array.from({ length: count - half }, (_, i) => p3(make, rng, order[i % order.length], order[(i + 1) % order.length]));
-      questions = alternate(told, odd);
-    }
+      return Array.from({ length: n }, (_, i) => p3(make, rng, order[i % order.length], order[(i + 1) % order.length]));
+    };
+    questions = codes.length === 2 ? alternate(asked(codes[0], half), asked(codes[1], count - half)) : asked(codes[0], count);
   } else if (lesson.kind === "rule") {
     if (lesson.words.length === 0) return null;
     const order = fixedOrder(userId, lesson, lesson.words);
@@ -236,15 +272,12 @@ export function buildPhonicsRound(
   }
 
   const view: PhonicsView = {
-    lessonId: lesson.id,
-    label: lesson.label,
-    kind: lesson.kind,
-    graphemes: lesson.graphemes,
-    tip: lesson.tipFa,
+    ...phonicsLessonView(lesson),
     round,
     repeat: pick.repeat,
     words: round === 1 ? lesson.words.map(heard) : [],
     samples,
+    pairs: [],
     questions: questions.length,
     ...where,
   };

@@ -2,10 +2,12 @@ import type { ImportBatch, Prisma, PromptKind } from "@/generated/prisma/client"
 import { db } from "@/server/db";
 import { forgetContent } from "@/server/learn/content";
 import { DEMO_MODEL, DEMO_VERSION, demoUnits, grammarAnswer, sentencesAnswer, tablesAnswer, textsAnswer, textsParams, unitListAnswer, wordsAnswer } from "../../../fixtures/demo-fr/build";
+import { demoPhonics } from "../../../fixtures/demo-fr/phonics";
 import { formExceptions } from "../../../fixtures/demo-fr/words";
 import { answerRecords } from "./batches";
 import { conjugation } from "./kinds/conjugation";
 import { grammar } from "./kinds/grammar";
+import { phonics } from "./kinds/phonics";
 import { sentences } from "./kinds/sentences";
 import { texts } from "./kinds/texts";
 import type { ContentKind, Tx } from "./kinds/types";
@@ -15,7 +17,7 @@ import { mergeRound, type RoundResult } from "./report";
 
 /**
  * The French demo for the tester account (DECISIONS.md, «محتوای نمونه فرانسوی»): about 60 A1 words
- * with their sentences, six grammar units and three texts, written by hand. It goes through the panel's own
+ * with their sentences, six grammar units, three texts and three phonics lessons, written by hand. It goes through the panel's own
  * importers, so it passes the same checks as chatbot answers, and is stored as approved: a tester
  * or an admin sees it, a learner never does (PRD §13.5). Every row carries prompt_version "demo-1",
  * which is how `removeDemo` finds it again.
@@ -34,7 +36,7 @@ export async function demoStatus(): Promise<DemoStatus> {
   return { loaded: demo > 0, words: demo, units, otherWords: other };
 }
 
-export type LoadResult = { kind: "loaded"; words: number; sentences: number; units: number; texts: number } | { kind: "already" } | { kind: "has_content"; words: number };
+export type LoadResult = { kind: "loaded"; words: number; sentences: number; units: number; texts: number; phonics: number } | { kind: "already" } | { kind: "has_content"; words: number };
 
 async function newBatch(tx: Tx, kind: PromptKind, params: Record<string, unknown>, adminId: number | null) {
   return tx.importBatch.create({
@@ -93,6 +95,10 @@ export async function loadDemo(adminId: number | null = null): Promise<LoadResul
         await importAnswer(tx, grammar, await newBatch(tx, "P_G", { level: "A1", unit_id: row.id, unit_code: unit.code, summary: [] }, adminId), grammarAnswer(unit));
       }
       await importAnswer(tx, texts, await newBatch(tx, "P_T", { ...textsParams, summary: [] }, adminId), textsAnswer());
+      for (const { orderNo, lesson } of demoPhonics) {
+        const params = { level: "A1", label: lesson.sound_label, kind: lesson.kind, order_no: orderNo, summary: [] };
+        await importAnswer(tx, phonics, await newBatch(tx, "P_H", params, adminId), { lesson });
+      }
 
       // Approved, as if the teacher had checked every row (PRD §13.4); never published.
       const batchIds = (await tx.importBatch.findMany({ where: { language: DEMO_LANGUAGE, prompt_version: DEMO_VERSION }, select: { id: true } })).map((row) => row.id);
@@ -108,11 +114,13 @@ export async function loadDemo(adminId: number | null = null): Promise<LoadResul
       await tx.conjugationTable.updateMany({ where: mine, data: approved });
       await tx.text.updateMany({ where: mine, data: approved });
       await tx.question.updateMany({ where: mine, data: approved });
+      await tx.phonicsLesson.updateMany({ where: mine, data: approved });
       return {
         words: await tx.word.count({ where: { ...mine, no_card: false } }),
         sentences: await tx.sentence.count({ where: mine }),
         units: await tx.grammarUnit.count({ where: mine }),
         texts: await tx.text.count({ where: mine }),
+        phonics: await tx.phonicsLesson.count({ where: mine }),
       };
     },
     { timeout: 300_000, maxWait: 10_000 },
@@ -122,8 +130,8 @@ export async function loadDemo(adminId: number | null = null): Promise<LoadResul
 }
 
 /**
- * Removes the demo and everything learners did with it: their item states, text states, logs,
- * notebook rows, queue and confusion pairs for these items, and any open session of the language.
+ * Removes the demo and everything learners did with it: their item states, text and phonics states,
+ * logs, notebook rows, queue and confusion pairs for these items, and any open session of the language.
  */
 export async function removeDemo(): Promise<{ removed: boolean }> {
   const batchIds = (await db.importBatch.findMany({ where: { language: DEMO_LANGUAGE, prompt_version: DEMO_VERSION }, select: { id: true } })).map((row) => row.id);
@@ -138,16 +146,19 @@ export async function removeDemo(): Promise<{ removed: boolean }> {
       const conjIds = await ids(tx.conjugationTable.findMany({ where: mine, select: { id: true } }));
       const targetIds = await ids(tx.sentenceTarget.findMany({ where: mine, select: { id: true } }));
       const textIds = await ids(tx.text.findMany({ where: mine, select: { id: true } }));
+      const lessonIds = await ids(tx.phonicsLesson.findMany({ where: mine, select: { id: true } }));
       const items = [
         { item_type: "word" as const, item_id: { in: wordIds } },
         { item_type: "grammar_unit" as const, item_id: { in: unitIds } },
         { item_type: "conjugation" as const, item_id: { in: conjIds } },
       ];
       const textItems = { item_type: "text" as const, item_id: { in: textIds } };
+      const lessonItems = { item_type: "phonics_lesson" as const, item_id: { in: lessonIds } };
       const language = DEMO_LANGUAGE;
       await tx.itemState.deleteMany({ where: { language, OR: items } });
-      await tx.reviewLog.deleteMany({ where: { language, OR: [...items, textItems] } });
+      await tx.reviewLog.deleteMany({ where: { language, OR: [...items, textItems, lessonItems] } });
       await tx.textState.deleteMany({ where: { text_id: { in: textIds } } });
+      await tx.phonicsState.deleteMany({ where: { lesson_id: { in: lessonIds } } });
       await tx.notebookEntry.deleteMany({
         where: {
           language,
@@ -164,6 +175,7 @@ export async function removeDemo(): Promise<{ removed: boolean }> {
 
       await tx.question.deleteMany({ where: { text_id: { in: textIds } } });
       await tx.text.deleteMany({ where: mine });
+      await tx.phonicsLesson.deleteMany({ where: mine });
       await tx.sentence.deleteMany({ where: mine });
       await tx.translateItem.deleteMany({ where: mine });
       await tx.transformItem.deleteMany({ where: mine });

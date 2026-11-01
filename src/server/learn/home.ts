@@ -2,6 +2,7 @@ import { hasCard, levelIndex } from "@/engine/content";
 import { drillCounts, drillGate } from "@/engine/drill";
 import { grammarLevel, grammarProgress, indexItems, overallLevel, vocabProgress } from "@/engine/levels";
 import { openEntries } from "@/engine/notebook";
+import { phonicsProgress } from "@/engine/phonics";
 import { seeded } from "@/engine/random";
 import { activeCards, isDue, noteCard } from "@/engine/session/build";
 import { introducedCardWords } from "@/engine/session/newmaterial";
@@ -55,7 +56,8 @@ export type HomeData = {
   plan: PlanLine;
   locked: boolean;
   skills: SkillTile[];
-  links: { notebook: number; words: number; lessons: number; texts: number };
+  /** «الفبا و تلفظ» (PRD §3.2): «درس ۳ از ۱۴», while the language has phonics lessons. */
+  links: { notebook: number; words: number; lessons: number; texts: number; phonics: { index: number; total: number; done: boolean } | null };
 };
 
 /** The quiet button at the top (PRD §3.8). Payment comes in a later phase, so it only reports. */
@@ -204,6 +206,7 @@ export async function homeData(user: Learner, language: LanguageCode, now = new 
       words: learner.items.filter((item) => item.itemType === "word" && content.words.get(item.itemId) && hasCard(content.words.get(item.itemId)!)).length,
       lessons: learner.items.filter((item) => item.itemType === "grammar_unit").length,
       texts: content.texts.filter((text) => learner.texts.some((state) => state.textId === text.id && stageDone(state))).length,
+      phonics: content.phonics.length > 0 ? phonicsProgress(content, learner.phonics) : null,
     },
   };
 }
