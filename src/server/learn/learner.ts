@@ -9,6 +9,7 @@ import {
   type ItemStateE,
   type LearnerSnapshot,
   type NotebookE,
+  type PhonicsStateE,
   type QueueE,
   type SkillLevelE,
   type SkillName,
@@ -42,6 +43,8 @@ export function enrollmentOf(row: {
   pace_mode: "normal" | "slow";
   last_spread_date: Date | null;
   phonics_auto: boolean;
+  phonics_done: boolean;
+  phonics_skips: number;
   streak_count: number;
   streak_last_date: Date | null;
   streak_forgiven_week: Date | null;
@@ -55,7 +58,9 @@ export function enrollmentOf(row: {
     startMode: row.start_mode,
     paceMode: row.pace_mode,
     lastSpreadDate: dateOnly(row.last_spread_date),
-    phonicsAuto: row.phonics_auto,
+    // Every lesson over: the rounds stop for good (PRD §8.4), even when a lesson is added later.
+    phonicsAuto: row.phonics_auto && !row.phonics_done,
+    phonicsSkips: row.phonics_skips,
     streakCount: row.streak_count,
     streakLastDate: dateOnly(row.streak_last_date),
     streakForgivenWeek: dateOnly(row.streak_forgiven_week),
@@ -213,6 +218,22 @@ export function loadTextStates(client: Client, userId: number, language: string)
     FROM text_state s JOIN text t ON t.id = s.text_id WHERE s.user_id = ${userId} AND t.language = ${language}`;
 }
 
+/** A learner's phonics lessons in one language (`phonics_state` has no language of its own). */
+export async function loadPhonicsStates(client: Client, userId: number, language: string): Promise<PhonicsStateE[]> {
+  const rows = await client.$queryRaw<{ lesson_id: number; rounds_done: number; last_score: number | null; next_at: Date | null; done: boolean }[]>`
+    SELECT s.lesson_id, s.rounds_done, s.last_score, s.next_at, s.done
+    FROM phonics_state s JOIN phonics_lesson l ON l.id = s.lesson_id WHERE s.user_id = ${userId} AND l.language = ${language}`;
+  return rows.map(phonicsStateOf);
+}
+
+export const phonicsStateOf = (row: { lesson_id: number; rounds_done: number; last_score: number | null; next_at: Date | null; done: boolean }): PhonicsStateE => ({
+  lessonId: row.lesson_id,
+  roundsDone: row.rounds_done,
+  lastScore: row.last_score,
+  nextAt: row.next_at?.toISOString() ?? null,
+  done: row.done,
+});
+
 /** How many finished mixed sessions in a row, the newest first, had no text in them (PRD §10.11 condition 3). */
 async function mixedWithoutText(client: Client, userId: number, language: string, settings: Settings): Promise<number> {
   const rows = await client.$queryRaw<{ had: boolean }[]>`
@@ -258,7 +279,7 @@ export async function loadLearner(
   if (!user || !enrollment) return null;
 
   // What the answer log says (PRD §5.7, §9.2, §9.3, §9.10).
-  const [counts, recent, seen, latency, pace, touched, drills, texts, withoutText] = await Promise.all([
+  const [counts, recent, seen, latency, pace, touched, drills, texts, withoutText, phonics] = await Promise.all([
     client.$queryRaw<{ item_type: string; item_id: number; exercise_code: string; n: bigint }[]>`
       SELECT item_type, item_id, exercise_code, count(*) AS n FROM review_log
       WHERE user_id = ${userId} AND language = ${language} AND kind::text IN ('review', 'followup', 'practice') AND exercise_code IS NOT NULL AND item_id IS NOT NULL
@@ -297,6 +318,7 @@ export async function loadLearner(
       WHERE d.user_id = ${userId} AND s.language = ${language}`,
     loadTextStates(client, userId, language),
     mixedWithoutText(client, userId, language, settings),
+    loadPhonicsStates(client, userId, language),
   ]);
 
   const history = new Map<string, ItemHistory>();
@@ -329,6 +351,7 @@ export async function loadLearner(
     confusions: confusions.map(confusionOf),
     drills: drills.map((row) => ({ sentenceId: row.sentence_id, count: row.count, lastAt: row.last_at?.toISOString() ?? null })),
     texts: texts.map(textStateOf),
+    phonics,
     mixedWithoutText: withoutText,
     history,
     sentenceSeen: new Map(seen.map((row) => [row.sentence_id, Number(row.n)])),

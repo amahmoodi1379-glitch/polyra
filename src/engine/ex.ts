@@ -41,7 +41,11 @@ export type SentenceView = {
   speak: Speak;
 };
 
-export type Choice = { id: string; text: string; lang: "fa" | "target"; wordId?: number | null; image?: string | null };
+/** An option; one with `speak` is a sound to choose (P3, P4), its text shown only with the feedback. */
+export type Choice = { id: string; text: string; lang: "fa" | "target"; wordId?: number | null; image?: string | null; speak?: Speak };
+
+/** A word of a phonics question heard before answering (P2), named on the feedback screen. */
+export type HeardWord = { text: string; meaning: string | null; speak: Speak };
 
 export type Question = {
   word?: WordView;
@@ -70,6 +74,10 @@ export type Question = {
   sets?: string[];
   /** K1, K2: the standard word whose colloquial twin is asked. */
   standard?: string;
+  /** P2: the two sounds played one after the other. */
+  sounds?: HeardWord[];
+  /** P1: the word heard, named on the feedback screen. P4: the word shown, whose sound is asked. */
+  heard?: HeardWord;
 };
 
 export type AnswerSpec =
@@ -104,7 +112,9 @@ export type AnswerSpec =
   /** C2 (fill from a bank) and C4 (type every row): null accepted means the row is given. */
   | { kind: "table"; rows: { pronoun: string; accepted: string[] | null }[]; bank: string[] | null }
   /** L3 and Q-dict: the heard sentence written down, scored word by word (PRD §7.3). */
-  | { kind: "dictation"; words: DictWord[] };
+  | { kind: "dictation"; words: DictWord[] }
+  /** P5: the sentence's words; right is every gap a liaison follows, and only those (PRD §8.2). */
+  | { kind: "liaison"; words: string[]; correct: number[] };
 
 export type Ex = {
   id: string;
@@ -141,7 +151,11 @@ export type RawAnswer =
   /** G3a: the category each item was first dropped on. */
   | { firstSort: Record<string, number> }
   | { rows: string[] }
-  /** Cards without a score: intro card, lesson, «این دو را قاطی می‌کنی», «کلمه‌های این متن». */
+  /** Cards without a score: intro card, lesson, «این دو را قاطی می‌کنی», «کلمه‌های این متن», the start of a phonics round. */
   | { seen: true }
+  /** The start of a phonics round set aside: «بعداً» (PRD §8.4), or left out because the learner cannot listen now (§10.12). */
+  | { skip: "later" | "drop" }
+  /** P5: the gaps marked, each the index of the word before it. */
+  | { gaps: number[] }
   /** One stage of a text: the answer to each question by its id; a timed reading may run out (PRD §7.4). */
   | { answers: Record<string, QuestionAnswer>; timedOut?: boolean };

@@ -1,6 +1,7 @@
 import { randomUUID } from "node:crypto";
 import { z } from "zod";
 import type { RawAnswer } from "@/engine/ex";
+import { phonicsProgress, phonicsSkipsAfter } from "@/engine/phonics";
 import { colloquialFor } from "@/engine/session/newmaterial";
 import { playCard } from "@/engine/session/play";
 import { num } from "@/engine/settings";
@@ -10,7 +11,7 @@ import type { Prisma } from "@/generated/prisma/client";
 import { db } from "@/server/db";
 import { logError } from "@/server/errors";
 import { finishSession } from "./finish";
-import { textStateRow } from "./learner";
+import { loadPhonicsStates, textStateRow } from "./learner";
 import { bundleOf, closeSession, expiresAt, learnContext, SESSION_LIFE_MS, type Bundle, type EndSummary, type Learner, type StoredPlan } from "./session";
 import { addDaily, applyNotebookOps, saveConfusion, saveItemState, type DailyAdd } from "./writes";
 
@@ -50,6 +51,11 @@ export const questionAnswer = z.union([
 ]);
 export const textAnswers = z.record(z.string().max(12), questionAnswer);
 const textAnswer = z.object({ answers: textAnswers, timedOut: z.boolean().optional() });
+/** The start of a phonics round (PRD §8.4) and a liaison question's marks (P5). */
+const phonicsStart = z.union([z.object({ seen: z.literal(true) }), z.object({ skip: z.enum(["later", "drop"]) })]);
+const liaisonAnswer = z.union([z.object({ idk: z.literal(true) }), z.object({ gaps: z.array(z.number().int().min(0).max(200)).max(200) })]);
+/** A phonics question left without sound (PRD §10.12): the rest of the round goes. */
+const phonicsDrop = z.object({ skip: z.literal("drop") });
 
 export type AnswerResponse =
   | { kind: "ok"; seq: number; finished: boolean; end: EndSummary | null }
@@ -83,8 +89,13 @@ export async function submitAnswer(user: Learner, request: AnswerRequest, server
       const plan = row.plan as unknown as StoredPlan;
       if (request.seq !== row.next_seq || plan.queue[0]?.id !== request.cardId) return { kind: "resync", bundle: bundleOf(row, ctx, false) };
 
-      // A text stage's answers are checked before grading (the browser sends one per question).
-      if (plan.queue[0].t === "text" && !textAnswer.safeParse(request.answer).success) return { kind: "invalid" };
+      // A text stage's answers, a phonics start or drop and liaison marks are checked before grading.
+      const shownCard = plan.queue[0];
+      if (shownCard.t === "text" && !textAnswer.safeParse(request.answer).success) return { kind: "invalid" };
+      if (shownCard.t === "phonics" && !phonicsStart.safeParse(request.answer).success) return { kind: "invalid" };
+      const dropped = shownCard.t === "phonicsq" && "skip" in request.answer;
+      if (dropped && !phonicsDrop.safeParse(request.answer).success) return { kind: "invalid" };
+      if (!dropped && shownCard.ex?.a.kind === "liaison" && !liaisonAnswer.safeParse(request.answer).success) return { kind: "invalid" };
       const today = tehranDate(at);
       const lexicon = ctx.content.lemmaIndex;
       const result = playCard(
@@ -172,6 +183,24 @@ export async function submitAnswer(user: Learner, request: AnswerRequest, server
           update: data,
         });
         if (newSec > 0) await addDaily(tx, who, today, track === "listening" ? { new_text_sec_listening: newSec } : { new_text_sec_reading: newSec });
+      }
+      // A finished phonics round: the lesson's state, the «بعداً» count from zero, and the module done
+      // when every lesson is over. «بعداً» on an auto round counts; the last one allowed turns the rounds off (PRD §8.3, §8.4).
+      if (result.phonics || result.phonicsLater) {
+        const enrollment = await tx.enrollment.findUniqueOrThrow({ where: { user_id_language: { user_id: user.id, language: row.language } } });
+        const after = phonicsSkipsAfter(enrollment.phonics_skips, result.phonics ? "round" : "later", ctx.settings);
+        let done = enrollment.phonics_done;
+        if (result.phonics) {
+          const { state } = result.phonics;
+          const data = { rounds_done: state.roundsDone, last_score: state.lastScore, next_at: state.nextAt ? new Date(state.nextAt) : null, done: state.done };
+          await tx.phonicsState.upsert({ where: { user_id_lesson_id: { user_id: user.id, lesson_id: state.lessonId } }, create: { user_id: user.id, lesson_id: state.lessonId, ...data }, update: data });
+          done = phonicsProgress(ctx.content, await loadPhonicsStates(tx, user.id, row.language)).done;
+        }
+        const off = after.off && enrollment.phonics_auto;
+        await tx.enrollment.update({
+          where: { id: enrollment.id },
+          data: { phonics_skips: after.skips, phonics_done: done, ...(off ? { phonics_auto: false, phonics_off_due: true } : {}) },
+        });
       }
       // «کلمه‌های این متن»: its words wait in the queue (PRD §7.5, source `key_word`).
       if (result.keyWords.length > 0) {

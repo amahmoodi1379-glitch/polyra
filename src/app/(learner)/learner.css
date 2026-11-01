@@ -3281,6 +3281,213 @@
     border-radius: 5px;
     background: var(--tint);
   }
+  /* phonics (PRD §8): the lesson card, sound tiles and liaison ties */
+  & .phon .phon-k {
+    margin: 0;
+    font-size: 12.5px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    color: var(--brand-text);
+  }
+  & .phon h1 {
+    font-size: 26px;
+  }
+  & .graphemes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  & .graphemes > span {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: var(--ink-3);
+  }
+  & .graphemes p {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  & .graphemes b {
+    min-width: 52px;
+    padding: 6px 14px;
+    border-radius: 14px;
+    background: var(--tint);
+    color: var(--brand-text);
+    font: 600 28px/1.2 var(--font-lat);
+    font-variation-settings: "SOFT" 100, "opsz" 48;
+    text-align: center;
+  }
+  & .phon-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  & .phon-h {
+    margin: 0;
+    font-size: 12.5px;
+    font-weight: 700;
+    color: var(--ink-3);
+  }
+  & .phon-list ul {
+    margin: 0;
+    padding: 4px 6px;
+    list-style: none;
+    border-radius: 22px;
+    background: var(--surface);
+    box-shadow: var(--shadow-1);
+  }
+  & .phon-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 56px;
+    padding: 6px 8px;
+  }
+  & .phon-list li + li {
+    border-top: 1px solid var(--line);
+  }
+  & .phon-list li .lat {
+    font: 400 22px/1.35 var(--font-lat);
+    font-variation-settings: "SOFT" 100, "opsz" 36;
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  & .phon-list li .fa {
+    margin-inline-start: auto;
+    font-size: 14px;
+    color: var(--ink-2);
+    text-align: end;
+  }
+  & .tie-mark {
+    font-style: normal;
+    color: var(--brand-text);
+    font-weight: 700;
+  }
+  & .phon-n {
+    margin: 0;
+    font-size: 13px;
+    color: var(--ink-3);
+  }
+  & .act.again {
+    align-self: center;
+  }
+  & .phon-word {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-top: 18px;
+  }
+  & .snd-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    padding-top: 22px;
+  }
+  & .opts.snd3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  & .opt.snd {
+    min-height: 112px;
+    padding: 14px 8px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font: 700 14px/1.4 var(--font-ui);
+    color: var(--ink-2);
+  }
+  & .snd-ic {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: var(--tint);
+    color: var(--brand-text);
+    transition:
+      background-color 0.2s var(--ease-std),
+      color 0.2s var(--ease-std);
+  }
+  & .snd-ic .i {
+    width: 22px;
+    height: 22px;
+  }
+  & .opt.snd.playing .snd-ic {
+    background: var(--brand);
+    color: var(--on-brand);
+    animation: lx-breathe 1s ease-in-out infinite;
+  }
+  & .opt.snd.sel .snd-ic {
+    background: var(--brand-soft);
+    color: var(--on-brand);
+  }
+  & .snd-w {
+    font: 500 21px/1.2 var(--font-lat);
+    font-variation-settings: "SOFT" 100, "opsz" 36;
+    color: var(--ink);
+    overflow-wrap: anywhere;
+  }
+  & .opt.snd.is-dim {
+    opacity: 0.55;
+  }
+
+  /* P5: a tie between two words */
+  & .liaison {
+    margin: 0;
+    padding-top: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    row-gap: 10px;
+    font: 400 30px/1.5 var(--font-lat);
+    font-variation-settings: "SOFT" 100, "opsz" 48;
+  }
+  & .liaison .tie {
+    width: 34px;
+    height: 44px;
+    margin-inline: 1px;
+    align-self: center;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    color: var(--line-2);
+    transition:
+      background-color 0.2s var(--ease-std),
+      color 0.2s var(--ease-std);
+  }
+  & .liaison .tie svg {
+    width: 26px;
+    height: 13px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.4;
+    stroke-linecap: round;
+    stroke-dasharray: 3 4;
+  }
+  & .liaison .tie:not(:disabled):is(:hover, :active) {
+    background: var(--tint);
+  }
+  & .liaison .tie.on {
+    color: var(--brand-text);
+  }
+  & .liaison .tie.on svg,
+  & .liaison .tie.ok svg {
+    stroke-dasharray: none;
+  }
+  & .liaison .tie.ok {
+    color: var(--ok);
+    background: var(--ok-soft);
+  }
+  & .liaison .tie.miss {
+    color: var(--ok);
+    box-shadow: inset 0 0 0 1.5px var(--teal);
+  }
+  & .liaison .tie.bad {
+    color: var(--bad);
+    background: var(--bad-soft);
+  }
   @media (prefers-reduced-motion: no-preference) {
     & .tx-open {
       animation: lx-fade-up 0.5s var(--ease-out) both;

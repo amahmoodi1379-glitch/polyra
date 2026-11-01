@@ -1,5 +1,6 @@
 import type { Content } from "./content";
 import { exerciseDef } from "./exercises";
+import { phonicsKey } from "./phonics";
 import { CONJ_LAST_STEP, lastStepOfUnit, lastStepOfWord } from "./pick";
 import { activeCards, isDue, type BuildOptions, type BuildResult } from "./session/build";
 import { mayFollow } from "./session/advance";
@@ -108,9 +109,11 @@ function checkBuild(input: InvariantInput, build: NonNullable<InvariantInput["bu
     const isText = card.t === "text" || card.t === "textwords";
     const shownOk = isText
       ? content.texts.some((text) => `x:${text.id}` === card.item)
-      : card.t === "drill"
-        ? !!content.sentences.get(card.ex?.sentenceId ?? -1)?.bank
-        : !!ref && active(ref);
+      : card.t === "phonics" || card.t === "phonicsq"
+        ? content.phonics.some((lesson) => phonicsKey(lesson.id) === card.item)
+        : card.t === "drill"
+          ? !!content.sentences.get(card.ex?.sentenceId ?? -1)?.bank
+          : !!ref && active(ref);
     if (!shownOk) out.push({ rule: 8, detail: `${card.item} is not active content` });
     // 10. No exercise with sound in a session without sound.
     const shown = shownEx(plan, card);
@@ -118,6 +121,13 @@ function checkBuild(input: InvariantInput, build: NonNullable<InvariantInput["bu
     // 12. No switched-off exercise or feature.
     for (const ex of exercisesOf(card)) if (!exerciseOn(settings, ex.code)) out.push({ rule: 12, detail: `${card.item} ${ex.code} is switched off` });
     if (card.t === "confusion" && !flag(settings, "feature.confusion_card")) out.push({ rule: 12, detail: "confusion card while switched off" });
+    // 10. No phonics round without sound; one round at most, only in the auto mode's mixed and vocabulary sessions or in «الفبا و تلفظ» (PRD §8.4).
+    if (card.t === "phonics") {
+      if (plan.noAudio) out.push({ rule: 10, detail: `phonics round ${card.item} without sound` });
+      if (plan.queue.filter((other) => other.t === "phonics").length > 1) out.push({ rule: 10, detail: "two phonics rounds in one session" });
+      const auto = (scope === "mixed" || scope === "vocab") && before.enrollment.phonicsAuto;
+      if (scope !== "phonics" && !auto) out.push({ rule: 10, detail: `phonics round in a ${scope} session without the auto mode` });
+    }
     // 14. Never two exercises of one item in a row.
     if (index > 0 && !mayFollow(plan.queue[index - 1], card)) out.push({ rule: 14, detail: `${card.item} twice in a row at card ${index} (${plan.queue[index - 1].t}, ${card.t}), scope ${plan.scope}` });
   });

@@ -1041,6 +1041,8 @@ model Enrollment {
   streak_forgiven_count Int @default(0)
   /// Pace went to slow and the end of a finished session has not said so yet (PRD §3.11 row 6, §9.10).
   slow_notice_due       Boolean @default(false)
+  /// «بعداً» turned the phonics rounds off and the end of a finished session has not said so yet (PRD §3.11 row 5, §8.4).
+  phonics_off_due       Boolean @default(false)
 
   user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
 

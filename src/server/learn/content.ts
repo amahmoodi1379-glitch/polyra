@@ -3,6 +3,8 @@ import {
   type ConjC,
   type Content,
   type Gender,
+  type PhonicsC,
+  type PhonicsSound,
   type Pos,
   type QuestionC,
   type SentenceC,
@@ -54,7 +56,7 @@ export async function loadContent(language: string, audience: Audience): Promise
   const levels = await appSetting<string[]>(`levels.${language}`);
   const released = audience !== "public" ? levels : (await db.levelRelease.findMany({ where: { language }, select: { level: true } })).map((row) => row.level);
 
-  const [wordRows, sentenceRows, targetRows, unitRows, transformRows, translateRows, conjRows, texts, dialogues] = await Promise.all([
+  const [wordRows, sentenceRows, targetRows, unitRows, transformRows, translateRows, conjRows, texts, dialogues, phonicsRows] = await Promise.all([
     db.word.findMany({ where: { ...visible, meaning_fa: { not: null } } }),
     db.sentence.findMany({ where: visible, include: { words: { orderBy: { position: "asc" } } } }),
     db.sentenceTarget.findMany({ where: visible }),
@@ -64,9 +66,11 @@ export async function loadContent(language: string, audience: Audience): Promise
     db.conjugationTable.findMany({ where: visible }),
     db.text.findMany({ where: { language }, include: { questions: { where: { status: { in: statuses }, suspended: false }, orderBy: { order_no: "asc" } } } }),
     db.dialogue.findMany({ where: { language }, select: { turns: true } }),
+    db.phonicsLesson.findMany({ where: visible }),
   ]);
 
-  const assetIds = [...wordRows, ...sentenceRows, ...texts].flatMap((row) => [row.audio_id, row.human_audio_id]).filter((id): id is number => id !== null);
+  const phonicsFiles = phonicsRows.flatMap((row) => [...entries(row.example_words), ...entries(row.liaison_sentences), ...entries(row.minimal_pairs).flatMap((pair) => [side(pair, "a"), side(pair, "b")])]);
+  const assetIds = [...wordRows, ...sentenceRows, ...texts, ...phonicsFiles].flatMap((row) => [row.audio_id, row.human_audio_id]).filter((id): id is number => id !== null);
   const assetRows = await db.audioAsset.findMany({ where: { id: { in: assetIds }, stale: false }, select: { id: true, url: true, duration_ms: true } });
   const assets = new Map(assetRows.map((row) => [row.id, row.url]));
   const durations = new Map(assetRows.map((row) => [row.id, row.duration_ms]));
@@ -203,7 +207,43 @@ export async function loadContent(language: string, audience: Audience): Promise
     texts: texts
       .filter((row) => statuses.includes(row.status) && !row.suspended && openLevels.includes(row.level) && row.sentence_ids.every((id) => sentences.has(id)))
       .map((row) => textOf(row, { sentences, words, assets, durations })),
+    phonics: phonicsRows.map((row) => phonicsOf(row, lang, fileOf)),
   });
+}
+
+/** One stored item of a phonics lesson's lists: its fields and its two recordings (PRD §8.1, §13.8). */
+type PhonicsEntry = Record<string, unknown> & { audio_id: number | null; human_audio_id: number | null };
+const fileIds = (entry: Record<string, unknown>, prefix: string) => ({
+  audio_id: typeof entry[`${prefix}audio_id`] === "number" ? (entry[`${prefix}audio_id`] as number) : null,
+  human_audio_id: typeof entry[`${prefix}human_audio_id`] === "number" ? (entry[`${prefix}human_audio_id`] as number) : null,
+});
+const entries = (value: unknown): PhonicsEntry[] =>
+  (Array.isArray(value) ? (value as Record<string, unknown>[]) : []).map((entry) => ({ ...entry, ...fileIds(entry, "") }));
+/** One side of a minimal pair as an entry of its own: `a` or `b` with its meaning and recordings. */
+const side = (pair: Record<string, unknown>, which: "a" | "b"): PhonicsEntry => ({ text: pair[which], meaning_fa: pair[`${which}_fa`], ...fileIds(pair, `${which}_`) });
+
+/** A phonics lesson in the engine's shape (PRD §8.1): every sound with the teacher's recording first, else the device voice. */
+function phonicsOf(
+  row: Awaited<ReturnType<typeof db.phonicsLesson.findMany>>[number],
+  lang: Lang,
+  fileOf: (row: { audio_id: number | null; human_audio_id: number | null }) => string | null,
+): PhonicsC {
+  const sound = (entry: PhonicsEntry): PhonicsSound => {
+    const text = String(entry.text ?? "");
+    return { text, meaningFa: typeof entry.meaning_fa === "string" ? entry.meaning_fa : null, speak: { text, lang, url: fileOf(entry) } };
+  };
+  const strings = (value: unknown) => (Array.isArray(value) ? value.map(String) : []);
+  return {
+    id: row.id,
+    orderNo: row.order_no ?? Number.MAX_SAFE_INTEGER,
+    kind: row.kind,
+    label: row.sound_label,
+    graphemes: row.graphemes,
+    tipFa: row.tip_fa,
+    words: entries(row.example_words).map((entry) => ({ ...sound(entry), wrong: strings(entry.wrong_spellings) })),
+    pairs: (Array.isArray(row.minimal_pairs) ? (row.minimal_pairs as Record<string, unknown>[]) : []).map((pair) => ({ a: sound(side(pair, "a")), b: sound(side(pair, "b")) })),
+    sentences: entries(row.liaison_sentences).map((entry) => ({ ...sound(entry), liaisonAfter: strings(entry.liaison_after_word_index).map(Number) })),
+  };
 }
 
 type TextRow = Awaited<ReturnType<typeof db.text.findMany<{ include: { questions: true } }>>>[number];

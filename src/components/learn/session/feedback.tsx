@@ -66,6 +66,8 @@ export function Feedback({
   const word = item?.type === "word" ? plan.words[item.id] : undefined;
   const lesson = item?.type === "grammar_unit" ? plan.lessons[item.id] : undefined;
   const missed = verdict.result === "wrong" || verdict.result === "idk";
+  // A phonics question (PRD §8.2) does not come again in this session, and names the word it was about.
+  const phonics = ex.item.startsWith("p:");
   const sentence = ex.q.sentence;
   const why =
     verdict.result === "near" && verdict.reason
@@ -90,7 +92,7 @@ export function Feedback({
         </div>
         {answer ? (
           <p className="fb-answer">
-            {verdict.result === "idk" ? t("learn.fb.idkAnswer") : t("learn.fb.answer")}{" "}
+            {verdict.result === "idk" && !phonics ? t("learn.fb.idkAnswer") : t("learn.fb.answer")}{" "}
             {answer.fa ? (
               <span className="fa">{answer.text}</span>
             ) : (
@@ -101,6 +103,14 @@ export function Feedback({
           </p>
         ) : null}
         {why ? <p className="fb-why">{why}</p> : null}
+        {missed && phonics && ex.q.heard?.meaning ? (
+          <div className="fb-word">
+            <span className="lat" lang={language} dir="ltr">
+              {ex.q.heard.text}
+            </span>
+            <span>{ex.q.heard.meaning}</span>
+          </div>
+        ) : null}
         {missed && word ? (
           <div className="fb-word">
             <WordText word={word.word} />

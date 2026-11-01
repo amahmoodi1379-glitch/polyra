@@ -3,7 +3,22 @@
  * targets, grammar units with their targets and conjugation tables. Every value comes from the index,
  * so the same arguments always give the same content.
  */
-import { indexContent, type ConjC, type Content, type Gender, type Pos, type QuestionC, type SentenceC, type TargetC, type TextC, type TransformC, type UnitC, type WordC } from "../../src/engine/content";
+import {
+  indexContent,
+  type ConjC,
+  type Content,
+  type Gender,
+  type PhonicsC,
+  type PhonicsKind,
+  type Pos,
+  type QuestionC,
+  type SentenceC,
+  type TargetC,
+  type TextC,
+  type TransformC,
+  type UnitC,
+  type WordC,
+} from "../../src/engine/content";
 import type { Lang } from "../../src/engine/text";
 
 export type SyntheticOptions = {
@@ -19,6 +34,8 @@ export type SyntheticOptions = {
   perLevel?: { words: number[]; units: number[] };
   /** Listening and reading texts of each level (PRD §7.2), made of the level's words; none by default. */
   textsPerLevel?: number;
+  /** Phonics lessons of all three kinds (PRD §16.3: 14); none by default. */
+  phonics?: number;
 };
 
 /** The level of the `n`th item (from 1) when each level holds `sizes[i]` of them. */
@@ -224,6 +241,36 @@ export function syntheticContent(opts: SyntheticOptions = {}): Content {
     translates: [],
     conjugations,
     texts,
+    phonics: makePhonics(language, opts.phonics ?? 0),
+  });
+}
+
+/**
+ * Phonics lessons (PRD §8.1) at their smallest sizes: a contrast lesson six words and five pairs, a
+ * rule lesson eight words, a liaison lesson (French only) eight sentences; every other one recorded.
+ */
+function makePhonics(language: Lang, count: number): PhonicsC[] {
+  const kinds: PhonicsKind[] = language === "fr" ? ["contrast", "rule", "liaison"] : ["contrast", "rule"];
+  return Array.from({ length: count }, (_, i) => {
+    const id = i + 1;
+    const kind = kinds[i % kinds.length];
+    const speak = (text: string, k: number) => ({ text, lang: language, url: k % 2 ? `/media/phonics-${id}-${k}.mp3` : null });
+    const sound = (text: string, k: number) => ({ text, meaningFa: `معنی ${text}`, speak: speak(text, k) });
+    const wordsOf = (n: number) => Array.from({ length: n }, (_, k) => ({ ...sound(`ph${id}w${k}`, k), wrong: [`ph${id}x${k}`, `ph${id}y${k}`] }));
+    return {
+      id,
+      orderNo: id,
+      kind,
+      label: `صدای ${id}`,
+      graphemes: [`g${id}`],
+      tipFa: `نکته درس ${id}`,
+      words: kind === "contrast" ? wordsOf(6) : kind === "rule" ? wordsOf(8) : [],
+      pairs: kind === "contrast" ? Array.from({ length: 5 }, (_, k) => ({ a: sound(`ph${id}a${k}`, k), b: sound(`ph${id}b${k}`, k + 1) })) : [],
+      sentences:
+        kind === "liaison"
+          ? Array.from({ length: 8 }, (_, k) => ({ ...sound(`les${k} amis${k} ont${k} un${k} ami${k}`, k), liaisonAfter: k % 2 ? [0, 2] : [0] }))
+          : [],
+    };
   });
 }
 

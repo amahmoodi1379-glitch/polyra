@@ -164,5 +164,11 @@ export function grade(ex: Ex, answer: RawAnswer, ctx: GradeContext): GradeOutcom
       if (hasPersianLetter(answer.text)) return { result: "persian" };
       return graded(scoreDictation(answer.text, spec.words, ctx.language).ok ? "correct" : "wrong", answer.text);
     }
+    case "liaison": {
+      if (!("gaps" in answer)) return graded("wrong", "");
+      const given = [...new Set(answer.gaps)].sort((a, b) => a - b);
+      const right = given.length === spec.correct.length && given.every((gap, i) => gap === spec.correct[i]);
+      return graded(right ? "correct" : "wrong", spec.words.map((word, i) => (given.includes(i) ? `${word}‿` : `${word} `)).join("").trim());
+    }
   }
 }

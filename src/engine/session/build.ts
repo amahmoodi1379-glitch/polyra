@@ -8,6 +8,7 @@ import { isNewCard, retrievability } from "../fsrs";
 import { grammarProgress, grammarLevel, indexItems, vocabProgress, type ItemIndex } from "../levels";
 import { notebookOrder, openEntries } from "../notebook";
 import { paced, updatePace, type PaceMode } from "../pace";
+import { buildPhonicsRound, nextPhonicsRound, phonicsKey, phonicsRoundCost } from "../phonics";
 import { buildRound, CONJ_LAST_STEP, lastStepOfUnit, lastStepOfWord, pickConjEx, pickTargetEx, pickUnitEx, pickWordEx, type Purpose } from "../pick";
 import { seeded, shuffle } from "../random";
 import { num, type Settings } from "../settings";
@@ -31,12 +32,12 @@ import {
 import { addDays, tehranDayStart } from "../time";
 import { conjCandidates, introducedCardWords, nextNewWords, nextUnit } from "./newmaterial";
 import { orderEntries, type Entry } from "./order";
-import type { Card, PlanItem, Scope, SessionPlan } from "./types";
+import type { Card, PhonicsPlan, PlanItem, Scope, SessionPlan } from "./types";
 import { lessonView, makeEnv, tableView, textView, wordCard } from "./views";
 
 /**
- * Builds a session (PRD §10.2–§10.11): vocabulary, grammar, sentence listening (§7.6) and texts
- * (§7.4, §7.5). Phonics, production and placement samples are added by their own phases.
+ * Builds a session (PRD §10.2–§10.11): vocabulary, grammar, sentence listening (§7.6), texts
+ * (§7.4, §7.5) and phonics (§8.4). Production and placement samples are added by their own phases.
  */
 
 export type BuildOptions = {
@@ -445,6 +446,24 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
       leadText(entry);
       effects.textSession = true;
     }
+  }
+
+  // Step 3: one phonics round, kept apart from the plan, its time taken from the session once (PRD §8.4, §10.9);
+  // in mixed and vocabulary sessions of the auto mode, or alone in «الفبا و تلفظ». Never without sound.
+  const wantsPhonics = scope === "phonics" || ((scope === "mixed" || scope === "vocab") && learner.enrollment.phonicsAuto && budget > 0);
+  const phonicsPick = ctx.audio && wantsPhonics ? nextPhonicsRound(content, learner.phonics, now) : null;
+  let phonics: Entry | null = null;
+  if (phonicsPick) {
+    const key = phonicsKey(phonicsPick.lesson.id);
+    const built = buildPhonicsRound(env, phonicsPick, learner.userId, { index: content.phonics.indexOf(phonicsPick.lesson) + 1, total: content.phonics.length });
+    if (built) {
+      phonics = { t: "phonics", key, pick: phonicsPick, ...built, auto: scope !== "phonics", cost: phonicsRoundCost(settings, phonicsPick.round) };
+      budget = Math.max(0, budget - phonics.cost);
+    } else effects.unbuildable.push(key);
+  }
+  if (scope === "phonics") {
+    if (!phonics) return { kind: "nothing_left", effects };
+    return { kind: "plan", plan: assemble(ctx, opts, fullBudget, [], {}, { newWords: 0, newUnits: 0, newConj: 0 }, phonics), effects };
   }
 
   // Sentence listening (PRD §7.6): the suitable sentences in order, found as far as they are taken; none without sound.
@@ -860,14 +879,14 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
 
   if (scope === "mixed") addDrills(nextDrills(Number.POSITIVE_INFINITY, budget - used));
 
-  if (entries.length === 0) return { kind: "nothing_left", effects };
-  const plan = assemble(ctx, opts, fullBudget, entries, planItems, summary);
+  if (entries.length === 0 && !phonics) return { kind: "nothing_left", effects };
+  const plan = assemble(ctx, opts, fullBudget, entries, planItems, summary, phonics);
   return { kind: "plan", plan, effects };
 }
 
 /** The exercises an entry already holds, to keep a drill off a sentence the plan uses. */
 function entryExercises(entry: Entry): Ex[] {
-  if (entry.t === "text") return [];
+  if (entry.t === "text" || entry.t === "phonics") return [];
   if (entry.t === "single" || entry.t === "newword" || entry.t === "newconj" || entry.t === "drill") return [entry.ex];
   if (entry.t === "newunit") return [...entry.g0, ...entry.questions];
   return entry.questions;
@@ -919,9 +938,11 @@ function assemble(
   entries: Entry[],
   items: Record<string, PlanItem>,
   summary: { newWords: number; newUnits: number; newConj: number },
+  phonicsEntry: Entry | null,
 ): SessionPlan {
   const { content, env, learner, settings } = ctx;
-  const groups = orderEntries(entries, seeded(opts.seed, "order"));
+  const groups = orderEntries(entries, seeded(opts.seed, "order"), phonicsEntry ? { entry: phonicsEntry, position: num(settings, "phonics.position") } : null);
+  let phonics: PhonicsPlan | null = null;
   let n = 0;
   const id = () => `k${++n}`;
   const queue: Card[] = [];
@@ -956,6 +977,13 @@ function assemble(
           },
         }),
       );
+    } else if (entry.t === "phonics") {
+      queue.push({ id: id(), t: "phonics", item: entry.key, block });
+      entry.questions.forEach((ex, i) =>
+        queue.push({ id: id(), t: "phonicsq", item: entry.key, ex, alt: null, block, ...(i === entry.questions.length - 1 ? { roundEnd: true } : {}) }),
+      );
+      const { lesson, round, repeat } = entry.pick;
+      phonics = { lessonId: lesson.id, round, repeat, auto: entry.auto, view: entry.view, before: learner.phonics.find((state) => state.lessonId === lesson.id) ?? null, answers: [] };
     } else if (entry.t === "newword") {
       queue.push({ id: id(), t: "intro", item: entry.key, block, fresh: true });
       queue.push({ id: id(), t: "ex", item: entry.key, kind: "review", ex: entry.ex, alt: entry.alt ?? null, block, fresh: true });
@@ -1008,7 +1036,7 @@ function assemble(
     textStates[card.item] = textStateMap.get(`${text.id}:${card.text.track}`) ?? null;
   }
   for (const key of keys) {
-    if (key.startsWith("l:") || key.startsWith("x:")) continue;
+    if (key.startsWith("l:") || key.startsWith("x:") || key.startsWith("p:")) continue;
     if (key.startsWith("t:")) {
       const target = content.targets.get(Number(key.slice(2)));
       const unit = target && content.units.find((item) => item.id === target.targetId);
@@ -1054,6 +1082,7 @@ function assemble(
     tables,
     texts,
     textStates,
+    phonics,
     pairs: [...pairs.values()],
     pairsAtStart: [...pairs.keys()],
     latency: learner.latency,

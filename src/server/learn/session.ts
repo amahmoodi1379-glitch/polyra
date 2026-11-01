@@ -39,7 +39,7 @@ export type EndSummary = {
   /** At most one message (PRD §3.11). «shorter» without `to` reminds a 10-minute learner of «امروز وقت کم دارم». */
   message: EndMessage | null;
 };
-export type EndMessage = { kind: "shorter"; from: number; to: number | null } | { kind: "slowPace" };
+export type EndMessage = { kind: "shorter"; from: number; to: number | null } | { kind: "slowPace" } | { kind: "phonicsOff" };
 
 /** What `session.plan` holds: the engine's plan and two notes of the server's. */
 export type StoredPlan = SessionPlan & { start?: StartInfo; end?: EndSummary };
@@ -69,7 +69,9 @@ export type StartResult =
   | { kind: "nothing_left" }
   | { kind: "empty_notebook" }
   | { kind: "locked" }
-  | { kind: "not_enrolled" };
+  | { kind: "not_enrolled" }
+  /** «این جلسه بدون صدا ممکن نیست» (PRD §10.12): listening and phonics need sound. */
+  | { kind: "needs_audio" };
 
 export type LearnContext = { settings: Settings; content: Content; audience: Audience; now: Date; today: string };
 
@@ -166,6 +168,7 @@ export async function startSession(user: Learner, request: StartRequest, now = n
   const { language, scope } = request;
   const enrollment = await db.enrollment.findUnique({ where: { user_id_language: { user_id: user.id, language } } });
   if (!enrollment) return { kind: "not_enrolled" };
+  if (request.noAudio && (scope === "listening" || scope === "phonics")) return { kind: "needs_audio" };
   const ctx = await learnContext(user, language, now);
 
   const open = await openSession(user.id, language);

@@ -17,7 +17,7 @@ import { t } from "@/i18n";
 import { reportError } from "@/lib/report-error";
 import { cn } from "@/lib/utils";
 import type { Bundle, EndSummary } from "@/server/learn/session";
-import { ConfusionFace, LessonFace, TableFace, WordFace } from "./cards";
+import { ConfusionFace, LessonFace, PhonicsFace, TableFace, WordFace } from "./cards";
 import { EndScreen } from "./end";
 import { Exercise, type Retry } from "./exercise";
 import { Feedback } from "./feedback";
@@ -36,7 +36,7 @@ type Phase =
   | { k: "cap"; learned: number; canMore: boolean }
   /** «پیش از جلسه متن» (PRD §10.11): the text is longer than the session. */
   | { k: "textAsk"; minutes: number }
-  | { k: "state"; which: "nothingLeft" | "emptyNotebook" | "locked" | "gone" | "failed" }
+  | { k: "state"; which: "nothingLeft" | "emptyNotebook" | "locked" | "gone" | "failed" | "needsAudio" | "phonicsNone" }
   | { k: "play" }
   | { k: "end" };
 
@@ -68,6 +68,16 @@ const stored = {
     }
   },
 };
+
+/** Whether any sound of a phonics round, its lesson's or its questions', has no file and needs the phone's voice. */
+function roundNeedsVoice(plan: SessionPlan, card: Card): boolean {
+  const view = plan.phonics?.view;
+  const lesson = [...(view?.words ?? []), ...(view?.samples ?? [])].map((sound) => sound.speak);
+  const asked = plan.queue
+    .filter((other) => other.block === card.block)
+    .flatMap(({ ex }) => (ex ? [ex.listen, ex.after, ...(ex.q.sounds ?? []).map((sound) => sound.speak), ...(ex.a.kind === "choice" ? ex.a.options.map((option) => option.speak) : [])] : []));
+  return [...lesson, ...asked].some(needsVoice);
+}
 
 const hasSound = (plan: SessionPlan, card: Card, alt: boolean) => {
   if (card.t === "intro") return true;
@@ -143,7 +153,10 @@ export function Player({ language, languageName, scope: firstScope }: { language
             setPhase({ k: "textAsk", minutes: data.minutes });
             return;
           case "nothing_left":
-            setPhase({ k: "state", which: "nothingLeft" });
+            setPhase({ k: "state", which: which === "phonics" ? "phonicsNone" : "nothingLeft" });
+            return;
+          case "needs_audio":
+            setPhase({ k: "state", which: "needsAudio" });
             return;
           case "empty_notebook":
             setPhase({ k: "state", which: "emptyNotebook" });
@@ -345,6 +358,19 @@ export function Player({ language, languageName, scope: firstScope }: { language
     void fetch("/api/learn/tap", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ language, wordId: gloss.wordId }) }).catch(() => {});
   };
 
+  // A phonics round needs sound (PRD §8.4, §10.12): with sound off, or a sound this phone cannot say, the
+  // rest of the round leaves the session at once, unscored, and «بعداً» is not counted.
+  useEffect(() => {
+    if (!card || !plan || done || (card.t !== "phonics" && card.t !== "phonicsq")) return;
+    const silent = muted || plan.noAudio;
+    if (!silent && !(voice === false && roundNeedsVoice(plan, card))) return;
+    const timer = window.setTimeout(() => {
+      toast(silent ? t("learn.phonics.dropped") : t("learn.phonics.noVoice", { language: languageName }));
+      submit({ skip: "drop" });
+    }, 0);
+    return () => window.clearTimeout(timer);
+  }, [card?.id, muted, voice, done]); // eslint-disable-line react-hooks/exhaustive-deps
+
   // Where a text stage stands; a lost note costs nothing but the place (PRD §7.4).
   const textProgress = (note: TextProgressNote) => {
     if (!bundle || !card) return;
@@ -465,7 +491,8 @@ export function Player({ language, languageName, scope: firstScope }: { language
   }
 
   if (phase.k === "state") {
-    const icon = phase.which === "locked" ? "l-lock" : phase.which === "failed" ? "l-offline" : phase.which === "emptyNotebook" ? "l-note" : "l-check";
+    const icon =
+      phase.which === "locked" ? "l-lock" : phase.which === "failed" ? "l-offline" : phase.which === "emptyNotebook" ? "l-note" : phase.which === "needsAudio" ? "l-mute" : "l-check";
     return (
       <Frame>
         {bar(null)}
@@ -586,6 +613,32 @@ export function Player({ language, languageName, scope: firstScope }: { language
     const table = plan.tables[Number(card.item.slice(2))];
     body = table ? <TableFace id={card.id} table={table} muted={muted} /> : null;
     cta = seen(t("learn.session.gotIt"));
+  } else if (card.t === "phonics" && plan.phonics) {
+    const round = plan.phonics;
+    const { view } = round;
+    const kicker =
+      view.round === 1 ? t("learn.phonics.kicker", { index: view.index, total: view.total }) : t(view.repeat ? "learn.phonics.kickerRepeat" : "learn.phonics.kickerRound2", { index: view.index });
+    body = <PhonicsFace id={card.id} view={view} kicker={kicker} note={t(view.round === 1 ? "learn.phonics.questions" : "learn.phonics.questionsAgain", { n: view.questions })} />;
+    cta = (
+      <div className="cta">
+        <button
+          type="button"
+          className="primary jelly-press"
+          onPointerDown={(event) => squish(event.currentTarget)}
+          onClick={() => {
+            sfx("release", 0.45);
+            submit({ seen: true });
+          }}
+        >
+          {t("learn.phonics.start")}
+        </button>
+        {round.auto ? (
+          <button type="button" className="ghost" onClick={() => submit({ skip: "later" })}>
+            {t("learn.phonics.later")}
+          </button>
+        ) : null}
+      </div>
+    );
   } else if (card.t === "confusion" && card.pair) {
     const pair = [plan.words[card.pair[0]], plan.words[card.pair[1]]];
     body = pair[0] && pair[1] ? <ConfusionFace id={card.id} words={[pair[0], pair[1]]} /> : null;

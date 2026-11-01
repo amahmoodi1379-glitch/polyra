@@ -8,6 +8,7 @@ import { applyNotebook } from "../../src/engine/notebook";
 import { closeRounds, type PlayResult } from "../../src/engine/session/play";
 import type { SessionPlan } from "../../src/engine/session/types";
 import { afterDrill } from "../../src/engine/drill";
+import { phonicsSkipsAfter } from "../../src/engine/phonics";
 import { textLevelsAfter } from "../../src/engine/texts";
 import { isItemKey, itemKey, type DailyE, type ItemHistory, type LearnerSnapshot, type SkillName } from "../../src/engine/state";
 import type { Settings } from "../../src/engine/settings";
@@ -26,7 +27,7 @@ export const emptyDay = (date: string): DailyE => ({
   textSessionDone: false,
 });
 
-export function freshLearner(language: string, opts: { sessionLength?: number; vocabLevel?: string; knownBelow?: string } = {}): LearnerSnapshot {
+export function freshLearner(language: string, opts: { sessionLength?: number; vocabLevel?: string; knownBelow?: string; phonicsAuto?: boolean } = {}): LearnerSnapshot {
   const level = opts.vocabLevel ?? "A1";
   return {
     userId: 1,
@@ -36,7 +37,8 @@ export function freshLearner(language: string, opts: { sessionLength?: number; v
       startMode: "zero",
       paceMode: "normal",
       lastSpreadDate: null,
-      phonicsAuto: false,
+      phonicsAuto: opts.phonicsAuto ?? false,
+      phonicsSkips: 0,
       streakCount: 0,
       streakLastDate: null,
       streakForgivenWeek: null,
@@ -58,6 +60,7 @@ export function freshLearner(language: string, opts: { sessionLength?: number; v
     confusions: [],
     drills: [],
     texts: [],
+    phonics: [],
     mixedWithoutText: 0,
     history: new Map(),
     sentenceSeen: new Map(),
@@ -115,6 +118,15 @@ export function record(learner: LearnerSnapshot, result: Extract<PlayResult, { d
   for (const wordId of result.keyWords) {
     if (next.items.some((item) => item.itemType === "word" && item.itemId === wordId) || next.queue.some((row) => row.wordId === wordId)) continue;
     next.queue = [...next.queue, { wordId, source: "key_word", addedAt: now.toISOString() }];
+  }
+  // A finished phonics round, and «بعداً» on an auto round (PRD §8.3, §8.4).
+  if (result.phonics) {
+    const state = result.phonics.state;
+    next.phonics = [...next.phonics.filter((item) => item.lessonId !== state.lessonId), state];
+  }
+  if (result.phonics || result.phonicsLater) {
+    const after = phonicsSkipsAfter(next.enrollment.phonicsSkips, result.phonics ? "round" : "later", settings);
+    next.enrollment = { ...next.enrollment, phonicsSkips: after.skips, phonicsAuto: next.enrollment.phonicsAuto && !after.off };
   }
   if (result.drill !== null) {
     const sentenceId = result.drill;

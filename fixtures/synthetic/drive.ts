@@ -38,6 +38,8 @@ export function rightAnswer(ex: Ex): RawAnswer {
       return { rows: spec.rows.map((row) => row.accepted?.[0] ?? "") };
     case "dictation":
       return { text: spec.words.map((word) => word.text).join(" ") };
+    case "liaison":
+      return { gaps: spec.correct };
   }
 }
 
@@ -69,6 +71,7 @@ export function slipAnswer(ex: Ex, rng: Rng): RawAnswer {
   if (spec.kind === "table") return { rows: spec.rows.map((row) => (row.accepted ? "qx" : "")) };
   if (spec.kind === "tiles") return { tiles: [...spec.orders[0]].reverse() };
   if (spec.kind === "dictation") return { text: spec.words.slice(0, Math.ceil(spec.words.length / 2)).map((word) => word.text).join(" ") };
+  if (spec.kind === "liaison") return { gaps: spec.correct.slice(1) };
   return wrongAnswer(ex);
 }
 

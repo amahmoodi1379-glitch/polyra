@@ -4,7 +4,7 @@
  * whether it needs sound, and which `time.*` estimate it costs (§10.1).
  */
 
-export type ExerciseFamily = "word" | "colloquial" | "grammar" | "conjugation" | "drill";
+export type ExerciseFamily = "word" | "colloquial" | "grammar" | "conjugation" | "drill" | "phonics";
 export type TimeKey = "time.choice" | "time.type_word" | "time.type_sentence" | "time.arrange" | "time.l1" | "time.l2" | "time.l3";
 
 export type ExerciseDef = {
@@ -79,6 +79,12 @@ export const exerciseDefs: ExerciseDef[] = [
   def("L1", "drill", 1, true, "time.l1", { audio: true }),
   def("L2", "drill", 2, true, "time.l2", { audio: true }),
   def("L3", "drill", 3, true, "time.l3", { typed: true, audio: true }),
+  // Phonics (PRD §8.2): no ladder; a round costs `time.phonics_round1` or `time.phonics_round2` as a whole.
+  def("P1", "phonics", 1, false, "time.choice", { audio: true }),
+  def("P2", "phonics", 1, false, "time.choice", { audio: true }),
+  def("P3", "phonics", 1, false, "time.choice", { audio: true }),
+  def("P4", "phonics", 1, false, "time.choice", { audio: true }),
+  def("P5", "phonics", 1, false, "time.choice"),
 ];
 
 const byCode = new Map(exerciseDefs.map((item) => [item.code, item]));
@@ -149,4 +155,8 @@ export const SHAPE = {
   packWeight: 0.1,
   /** Reshuffles before an arrangement that still reads in order is given up. */
   shuffleTries: 10,
+  /** A phonics round asks six questions, four in a liaison lesson; round 1 of a liaison lesson plays two sample sentences first (§8.3). */
+  phonicsQuestions: 6,
+  phonicsLiaisonQuestions: 4,
+  phonicsSamples: 2,
 } as const;

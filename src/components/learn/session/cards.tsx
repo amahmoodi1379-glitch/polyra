@@ -11,13 +11,15 @@ import { say, usePlaying } from "@/components/learn/speak";
 import { useToast } from "@/components/learn/toast";
 import type { Speak } from "@/engine/content";
 import type { SentenceView, WordView } from "@/engine/ex";
+import type { PhonicsView } from "@/engine/phonics";
 import type { LessonView, TableView, WordCard } from "@/engine/session";
 import { t } from "@/i18n";
 import { cn } from "@/lib/utils";
 
 /**
- * The cards without a score (PRD §9.2): a new word, a grammar lesson, a new conjugation table and
- * «این دو را قاطی می‌کنی». The same word card opens from «کلمه‌های من» (PRD §3.10).
+ * The cards without a score (PRD §9.2): a new word, a grammar lesson, a new conjugation table,
+ * «این دو را قاطی می‌کنی» and the start of a phonics round. The same word card opens from «کلمه‌های من»
+ * (PRD §3.10), the same phonics lesson from «الفبا و تلفظ».
  */
 
 export { genderClass };
@@ -371,6 +373,85 @@ export function ConfusionFace({ id, words }: { id: string; words: [WordCard, Wor
         ))}
       </div>
       {words.map((card) => (card.example ? <Example key={card.word.id} id={`${id}:x${card.word.id}`} sentence={card.example} wordId={card.word.id} /> : null))}
+    </div>
+  );
+}
+
+/** A liaison sentence with its ties drawn (PRD §8.2): «Les‿amis arrivent.» */
+export function LiaisonLine({ words, ties, language }: { words: string[]; ties: number[]; language: string }) {
+  return (
+    <span className="lat" lang={language} dir="ltr">
+      {words.map((word, index) => (
+        <span key={index}>
+          {word}
+          {index === words.length - 1 ? null : ties.includes(index) ? <i className="tie-mark">‿</i> : " "}
+        </span>
+      ))}
+    </span>
+  );
+}
+
+/**
+ * A phonics lesson as it teaches (PRD §8.3, round 1): the sound, the letters that write it, the tip
+ * and every example word to hear, or two sample sentences with their ties. Round 2 shows the same
+ * lesson as a reminder before its questions; «الفبا و تلفظ» shows it to read and hear again.
+ */
+export function PhonicsFace({ id, view, kicker, note }: { id: string; view: Pick<PhonicsView, "label" | "graphemes" | "tip" | "words" | "samples">; kicker: string; note?: string | null }) {
+  const language = view.words[0]?.speak.lang ?? view.samples[0]?.speak.lang;
+  return (
+    <div className="lesson phon">
+      <p className="phon-k">{kicker}</p>
+      <h1>
+        <Mixed text={view.label} />
+      </h1>
+      {view.graphemes.length > 0 ? (
+        <div className="graphemes">
+          <span>{t("learn.phonics.letters")}</span>
+          <p className="lat" lang={language} dir="ltr">
+            {view.graphemes.map((grapheme) => (
+              <b key={grapheme}>{grapheme}</b>
+            ))}
+          </p>
+        </div>
+      ) : null}
+      {view.tip
+        .split(/\n{2,}/)
+        .filter(Boolean)
+        .map((paragraph, index) => (
+          <p key={index} className="body">
+            <Mixed text={paragraph} />
+          </p>
+        ))}
+      {view.words.length > 0 ? (
+        <div className="phon-list">
+          <p className="phon-h">{t("learn.phonics.examples")}</p>
+          <ul>
+            {view.words.map((word, index) => (
+              <li key={index}>
+                <MiniPlay id={`${id}:w${index}`} speak={word.speak} label={t("learn.session.play")} />
+                <span className="lat" lang={word.speak.lang} dir="ltr">
+                  {word.text}
+                </span>
+                {word.meaning ? <span className="fa">{word.meaning}</span> : null}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+      {view.samples.length > 0 ? (
+        <div className="phon-list">
+          <p className="phon-h">{t("learn.phonics.samples")}</p>
+          <ul>
+            {view.samples.map((sample, index) => (
+              <li key={index}>
+                <MiniPlay id={`${id}:s${index}`} speak={sample.speak} label={t("learn.session.playSentence")} />
+                <LiaisonLine words={sample.words} ties={sample.liaisonAfter} language={sample.speak.lang} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+      {note ? <p className="phon-n">{note}</p> : null}
     </div>
   );
 }

@@ -3,7 +3,7 @@
  * short literals, plus a build environment and the engine settings at their defaults.
  */
 import type { BuildEnv } from "@/engine/build";
-import { indexContent, type ConjC, type Content, type SentenceC, type TargetC, type TextC, type TokenC, type TransformC, type TranslateC, type UnitC, type WordC } from "@/engine/content";
+import { indexContent, type ConjC, type Content, type PhonicsC, type SentenceC, type TargetC, type TextC, type TokenC, type TransformC, type TranslateC, type UnitC, type WordC } from "@/engine/content";
 import { seeded } from "@/engine/random";
 import type { Settings } from "@/engine/settings";
 import type { ItemHistory } from "@/engine/state";
@@ -101,6 +101,7 @@ export function content(
     translates?: TranslateC[];
     conjugations?: ConjC[];
     texts?: TextC[];
+    phonics?: PhonicsC[];
   },
   language: Lang = "fr",
 ): Content {
@@ -116,6 +117,7 @@ export function content(
     translates: parts.translates ?? [],
     conjugations: parts.conjugations ?? [],
     texts: parts.texts ?? [],
+    phonics: parts.phonics ?? [],
   });
 }
 

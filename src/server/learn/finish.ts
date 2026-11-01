@@ -147,13 +147,12 @@ async function endMessage(tx: Tx, row: Session, enrollment: Enrollment, ctx: Lea
     }
   }
   if (enrollment.slow_notice_due && enrollment.pace_mode === "slow") applying.push({ kind: "slowPace" });
+  if (enrollment.phonics_off_due) applying.push({ kind: "phonicsOff" });
 
   const message = pickSessionMessage(applying);
   if (message) {
-    await tx.enrollment.update({
-      where: { id: enrollment.id },
-      data: message.kind === "shorter" ? { shorten_asked_at: at } : { slow_notice_due: false },
-    });
+    const shown = { shorter: { shorten_asked_at: at }, slowPace: { slow_notice_due: false }, phonicsOff: { phonics_off_due: false } }[message.kind];
+    await tx.enrollment.update({ where: { id: enrollment.id }, data: shown });
   }
   return message;
 }

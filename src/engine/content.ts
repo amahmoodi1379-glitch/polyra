@@ -154,6 +154,27 @@ export type TextC = {
   questions: Record<Track, Record<QuestionSetName, QuestionC[]>>;
 };
 
+/** What a phonics lesson says aloud (PRD §8.1): an example word, one side of a minimal pair or a liaison sentence. */
+export type PhonicsSound = { text: string; meaningFa: string | null; speak: Speak };
+export type PhonicsKind = "contrast" | "rule" | "liaison";
+
+/** A phonics lesson (PRD §8.1). It has no FSRS card: two fixed rounds (§8.3). */
+export type PhonicsC = {
+  id: number;
+  orderNo: number;
+  kind: PhonicsKind;
+  /** The lesson's name, such as «u فرانسوی». */
+  label: string;
+  graphemes: string[];
+  tipFa: string;
+  /** Example words, each with exactly two wrong spellings a Persian speaker might write on hearing it (P1). */
+  words: (PhonicsSound & { wrong: string[] })[];
+  /** Minimal pairs: `a` has the lesson's sound, `b` the similar one (P2–P4). */
+  pairs: { a: PhonicsSound; b: PhonicsSound }[];
+  /** Liaison sentences with the indexes of the words a liaison follows (P5). */
+  sentences: (PhonicsSound & { liaisonAfter: number[] })[];
+};
+
 export type Content = {
   language: Lang;
   /** The language's levels from lowest to highest (app_setting levels.xx). */
@@ -169,6 +190,8 @@ export type Content = {
   conjugations: ConjC[];
   /** Texts, easiest first within each level (PRD §7.5: `order_override`, else `difficulty_score`). */
   texts: TextC[];
+  /** Phonics lessons in the teacher's order (PRD §8.1, §13.6). */
+  phonics: PhonicsC[];
   // Indexes the loader fills once.
   wordByCode: Map<string, WordC>;
   /** Word targets of each word, grammar targets of each unit. */
@@ -231,7 +254,8 @@ export function indexContent(base: Omit<Content, "wordByCode" | "wordTargets" | 
   const texts = [...base.texts].sort(
     (a, b) => base.levels.indexOf(a.level) - base.levels.indexOf(b.level) || rank(a) - rank(b) || a.difficulty - b.difficulty || a.id - b.id,
   );
-  return { ...base, units, texts, wordByCode, wordTargets, unitTargets, wordSentences, lemmaIndex };
+  const phonics = [...base.phonics].sort((a, b) => a.orderNo - b.orderNo || a.id - b.id);
+  return { ...base, units, texts, phonics, wordByCode, wordTargets, unitTargets, wordSentences, lemmaIndex };
 }
 
 export const levelIndex = (content: Pick<Content, "levels">, level: string | null | undefined) => (level ? content.levels.indexOf(level) : -1);

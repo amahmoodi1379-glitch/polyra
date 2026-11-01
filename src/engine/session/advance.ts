@@ -22,6 +22,8 @@ export type AdvanceEvent = {
   confusion?: [number, number] | null;
   /** The other word of a strong pair, shown after the leech card (PRD §9.11). */
   leechPartner?: number | null;
+  /** A phonics round set aside at its start (PRD §8.4) or without sound at any card (§10.12): the rest of its block leaves the session. */
+  skip?: "later" | "drop" | null;
   /** Seconds since the session's first card, for the time guard (PRD §10.7). */
   elapsedSec: number;
 };
@@ -30,6 +32,8 @@ export type Advanced = {
   plan: SessionPlan;
   /** A round that just ended, to be scored with `applyRound`. */
   roundDone: { block: string; item: string; step: number; last: number; answers: RoundAnswer[] } | null;
+  /** The phonics round just ended with its last question, every answer in (PRD §8.3). */
+  phonicsDone: boolean;
   /** The rescue rule moved easy reviews to the front (PRD §9.10). */
   rescued: boolean;
   /** The low-accuracy rule dropped new material (PRD §9.10). */
@@ -140,6 +144,15 @@ export function advance(plan: SessionPlan, event: AdvanceEvent, settings: Settin
     rounds[card.block] = { ...round, answers: [...round.answers, event.round] };
     if (card.roundEnd) roundDone = { block: card.block, ...rounds[card.block] };
   }
+  // A phonics question: the same, scored by the share right when the last one is in (PRD §8.3).
+  let phonics = plan.phonics ?? null;
+  let phonicsDone = false;
+  if (card.t === "phonicsq" && phonics && event.result !== "seen") {
+    phonics = { ...phonics, answers: [...phonics.answers, event.result] };
+    phonicsDone = !!card.roundEnd;
+  }
+  // «بعداً», or no sound now: the rest of the block goes, nothing else changes.
+  if (event.skip && card.block) queue = queue.filter((other) => other.block !== card.block);
 
   // What the answer asks for next (PRD §10.7).
   const front: Card[] = [];
@@ -207,6 +220,6 @@ export function advance(plan: SessionPlan, event: AdvanceEvent, settings: Settin
   if (event.elapsedSec > num(settings, "session.time_guard") * plan.budgetSec) queue = queue.filter((other) => other.kind !== "followup");
 
   queue = keepApart(queue, card);
-  const next: SessionPlan = { ...plan, queue, rounds, counters, nextCard, doneCount: plan.doneCount + 1 };
-  return { plan: next, roundDone, rescued, droppedNew, finished: queue.length === 0 };
+  const next: SessionPlan = { ...plan, queue, rounds, counters, nextCard, doneCount: plan.doneCount + 1, ...(phonics ? { phonics } : {}) };
+  return { plan: next, roundDone, phonicsDone, rescued, droppedNew, finished: queue.length === 0 };
 }

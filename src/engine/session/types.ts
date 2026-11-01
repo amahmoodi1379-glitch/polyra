@@ -1,7 +1,9 @@
 import type { QuestionC, QuestionSetName, Speak, Track } from "../content";
 import type { Ex, Gloss, SentenceView, WordView } from "../ex";
 import type { RoundAnswer } from "../answer";
-import type { ConfusionE, ItemStateE, NotebookRef, TextPartialE, TextStage, TextStateE } from "../state";
+import type { Graded } from "../grade";
+import type { PhonicsView } from "../phonics";
+import type { ConfusionE, ItemStateE, NotebookRef, PhonicsStateE, TextPartialE, TextStage, TextStateE } from "../state";
 import type { StageRules } from "../texts";
 
 /**
@@ -10,7 +12,7 @@ import type { StageRules } from "../texts";
  * always agree on what comes next. Every card the learner finishes is one numbered event (`seq`).
  */
 
-export const SCOPES = ["mixed", "quick", "vocab", "grammar", "listening", "reading", "notebook", "extra"] as const;
+export const SCOPES = ["mixed", "quick", "vocab", "grammar", "listening", "reading", "notebook", "extra", "phonics"] as const;
 export type Scope = (typeof SCOPES)[number];
 
 export type CardKind =
@@ -33,7 +35,28 @@ export type CardKind =
   /** «کلمه‌های این متن» before a text's first attempt (PRD §7.5); its item is `x:<text id>`. */
   | "textwords"
   /** One stage of a text attempt: all its questions on one screen (PRD §7.4). */
-  | "text";
+  | "text"
+  /** The start of a phonics round: round 1's lesson or round 2's reminder, with «بعداً» in an auto round (PRD §8.3, §8.4); its item is `p:<lesson id>`. */
+  | "phonics"
+  /** One question of a phonics round (P1–P5, PRD §8.2). */
+  | "phonicsq";
+
+/**
+ * The session's phonics round (PRD §8.3, §8.4): at most one. Its answers are kept until the last
+ * question, when the round is scored; a round left half-way counts as not done.
+ */
+export type PhonicsPlan = {
+  lessonId: number;
+  round: 1 | 2;
+  /** Round 2 again, after a score below `phonics.retry_below`. */
+  repeat: boolean;
+  /** A round of the auto mode in a mixed or vocabulary session: «بعداً» may set it aside. */
+  auto: boolean;
+  view: PhonicsView;
+  /** The lesson before the round. */
+  before: PhonicsStateE | null;
+  answers: Graded["result"][];
+};
 
 /** A text stage card: which attempt and stage, what it allows, and where a half-way attempt goes on (PRD §7.4). */
 export type TextCard = {
@@ -173,6 +196,8 @@ export type SessionPlan = {
   texts: Record<number, TextView>;
   /** Text states at the start (`x:<id>`), kept up to date after each stage like `states`. */
   textStates: Record<string, TextStateE | null>;
+  /** The phonics round, if the session has one (absent in plans saved before it existed). */
+  phonics?: PhonicsPlan | null;
   /** The learner's confusion pairs with the plan's words, kept up to date during the session (PRD §9.9). */
   pairs: ConfusionE[];
   /** Pairs that existed when the session was built, as "a:b": only these can show their card (PRD §10.7). */

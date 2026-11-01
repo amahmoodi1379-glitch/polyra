@@ -4,8 +4,9 @@ import type { Ex, RawAnswer } from "../ex";
 import { grade, type GradeOutcome, type Graded } from "../grade";
 import type { NotebookOp } from "../notebook";
 import { dictSource, gradeQuestion, stageScore, type GradedQuestion, type QuestionAnswer } from "../questions";
+import { afterPhonicsRound, phonicsScore } from "../phonics";
 import { num, type Settings } from "../settings";
-import { isItemKey, parseItemKey, type ConfusionE, type ItemStateE, type TextStage, type TextStateE } from "../state";
+import { isItemKey, parseItemKey, type ConfusionE, type ItemStateE, type PhonicsStateE, type TextStage, type TextStateE } from "../state";
 import { afterStage } from "../texts";
 import type { Lang } from "../text";
 import { advance, type Advanced } from "./advance";
@@ -25,7 +26,7 @@ export type PlayEnv = {
 };
 
 export type PlayLog = {
-  kind: "intro" | "review" | "followup" | "practice" | "drill" | "text_attempt";
+  kind: "intro" | "review" | "followup" | "practice" | "drill" | "text_attempt" | "phonics";
   itemType: string | null;
   itemId: number | null;
   code: string | null;
@@ -82,6 +83,10 @@ export type PlayResult =
       text: TextOutcome | null;
       /** Key words shown before a text, for `new_word_queue` (PRD §7.5, source `key_word`). */
       keyWords: number[];
+      /** A finished phonics round: the lesson's state to write (PRD §8.3). */
+      phonics: { state: PhonicsStateE; score: number } | null;
+      /** «بعداً» on an auto phonics round, counted toward `phonics.max_skips` (PRD §8.4). */
+      phonicsLater: boolean;
       advanced: Advanced;
     };
 
@@ -151,7 +156,18 @@ export function playCard(plan: SessionPlan, cardId: string, answer: RawAnswer, t
     const kind = info.stage === "help" ? "practice" : "text_attempt";
     const text: TextOutcome = { ...info, questions, graded, score, kind, state, newSec: info.stage === "first" ? Math.round(info.cost) : 0 };
     const log: PlayLog = { ...base, kind, itemType: "text", itemId: info.textId, code: null, result: "correct" };
-    return { done: true, card, ex: null, graded: null, log, single: null, round: null, state: null, roundState: null, notebook: [], pair: null, drill: null, text, keyWords: [], advanced };
+    return { done: true, card, ex: null, graded: null, log, single: null, round: null, state: null, roundState: null, notebook: [], pair: null, drill: null, text, keyWords: [], phonics: null, phonicsLater: false, advanced };
+  }
+
+  // The start of a phonics round (PRD §8.3, §8.4): seen, set aside with «بعداً», or left out without sound
+  // (§10.12); without sound the rest of a round started goes too, unscored, and it comes again whole.
+  if (card.t === "phonics" || (card.t === "phonicsq" && "skip" in answer)) {
+    const skip = "skip" in answer ? answer.skip : null;
+    const advanced = advance(plan, { cardId, result: "seen", skip, elapsedSec: timing.elapsedSec }, ctx.settings);
+    const lessonId = plan.phonics?.lessonId ?? Number(key.slice(2));
+    const log: PlayLog = { ...base, itemType: "phonics_lesson", itemId: lessonId, code: null, ...(skip ? { result: "idk", raw: skip } : {}) };
+    const phonicsLater = card.t === "phonics" && skip === "later" && !!plan.phonics?.auto;
+    return { done: true, card, ex: null, graded: null, log, single: null, round: null, state: null, roundState: null, notebook: [], pair: null, drill: null, text: null, keyWords: [], phonics: null, phonicsLater, advanced };
   }
 
   // Cards without a score (PRD §9.2, kind intro); «کلمه‌های این متن» sends its words to the queue (PRD §7.5).
@@ -159,7 +175,7 @@ export function playCard(plan: SessionPlan, cardId: string, answer: RawAnswer, t
     const advanced = advance(plan, { cardId, result: "seen", elapsedSec: timing.elapsedSec }, ctx.settings);
     const keyWords = card.t === "textwords" ? (card.words ?? []) : [];
     const log: PlayLog = { ...base, code: null, ...(card.t === "textwords" ? { itemType: "text", itemId: Number(key.slice(2)) } : {}) };
-    return { done: true, card, ex: null, graded: null, log, single: null, round: null, state: null, roundState: null, notebook: [], pair: null, drill: null, text: null, keyWords, advanced };
+    return { done: true, card, ex: null, graded: null, log, single: null, round: null, state: null, roundState: null, notebook: [], pair: null, drill: null, text: null, keyWords, phonics: null, phonicsLater: false, advanced };
   }
   if (!ex) throw new Error(`Card ${cardId} has no exercise`);
 
@@ -185,15 +201,30 @@ export function playCard(plan: SessionPlan, cardId: string, answer: RawAnswer, t
       drill: null,
       text: null,
       keyWords: [],
+      phonics: null,
+      phonicsLater: false,
       advanced,
     };
+  }
+
+  // A phonics question (PRD §8.2): no card, no step, no notebook; the last one scores the round (§8.3).
+  if (card.t === "phonicsq") {
+    const advanced = advance(plan, { cardId, result: graded.result, elapsedSec: timing.elapsedSec }, ctx.settings);
+    const round = advanced.plan.phonics;
+    let phonics: { state: PhonicsStateE; score: number } | null = null;
+    if (advanced.phonicsDone && round) {
+      const score = phonicsScore(round.answers);
+      phonics = { score, state: afterPhonicsRound(round.before, round.lessonId, round.round, score, ctx.now, ctx.settings) };
+    }
+    const log: PlayLog = { ...base, kind: "phonics", itemType: "phonics_lesson", itemId: round?.lessonId ?? Number(key.slice(2)), result: graded.result, reason: graded.reason, raw: graded.raw };
+    return { done: true, card, ex, graded, log, single: null, round: null, state: null, roundState: null, notebook: [], pair: null, drill: null, text: null, keyWords: [], phonics, phonicsLater: false, advanced };
   }
 
   // A sentence heard alone: no card, no step, no notebook, only one more showing (PRD §7.6).
   if (card.t === "drill") {
     const advanced = advance(plan, { cardId, result: graded.result, elapsedSec: timing.elapsedSec }, ctx.settings);
     const log: PlayLog = { ...base, kind: "drill", result: graded.result, reason: graded.reason, raw: graded.raw };
-    return { done: true, card, ex, graded, log, single: null, round: null, state: null, roundState: null, notebook: [], pair: null, drill: ex.sentenceId, text: null, keyWords: [], advanced };
+    return { done: true, card, ex, graded, log, single: null, round: null, state: null, roundState: null, notebook: [], pair: null, drill: ex.sentenceId, text: null, keyWords: [], phonics: null, phonicsLater: false, advanced };
   }
 
   // A grammar round question: scored with the whole round when it ends.
@@ -217,7 +248,7 @@ export function playCard(plan: SessionPlan, cardId: string, answer: RawAnswer, t
       ? { stepBefore: round.stepBefore, stepAfter: round.stepAfter, rating: round.rating ? RATING[round.rating] : null, firstTyping: round.firstTyping }
       : {};
     const log: PlayLog = { ...base, kind: "review", result: graded.result, reason: graded.reason, raw: graded.raw, stepBefore: plan.states[key]?.step ?? 1, ...scored };
-    return { done: true, card, ex, graded, log, single: null, round, state: null, roundState, notebook, pair: null, drill: null, text: null, keyWords: [], advanced };
+    return { done: true, card, ex, graded, log, single: null, round, state: null, roundState, notebook, pair: null, drill: null, text: null, keyWords: [], phonics: null, phonicsLater: false, advanced };
   }
 
   // A notebook sentence of a unit: one practice question (PRD §9.5).
@@ -226,7 +257,7 @@ export function playCard(plan: SessionPlan, cardId: string, answer: RawAnswer, t
     const notebook: NotebookOp[] = graded.result === "near" ? [] : [{ op: failed ? "restart" : "correct", refType: "grammar_target", refId: Number(key.slice(2)) }];
     const advanced = advance(plan, { cardId, result: graded.result, elapsedSec: timing.elapsedSec }, ctx.settings);
     const log: PlayLog = { ...base, kind: "practice", result: graded.result, reason: graded.reason, raw: graded.raw };
-    return { done: true, card, ex, graded, log, single: null, round: null, state: null, roundState: null, notebook, pair: null, drill: null, text: null, keyWords: [], advanced };
+    return { done: true, card, ex, graded, log, single: null, round: null, state: null, roundState: null, notebook, pair: null, drill: null, text: null, keyWords: [], phonics: null, phonicsLater: false, advanced };
   }
 
   // A word or a conjugation card.
@@ -282,7 +313,7 @@ export function playCard(plan: SessionPlan, cardId: string, answer: RawAnswer, t
     rating: single.rating ? RATING[single.rating] : null,
   };
   // A practice moves neither FSRS nor the step: there is nothing to write.
-  return { done: true, card, ex, graded, log, single, round: null, state: kind === "practice" ? null : single.state, roundState: null, notebook: single.notebook, pair, drill: null, text: null, keyWords: [], advanced };
+  return { done: true, card, ex, graded, log, single, round: null, state: kind === "practice" ? null : single.state, roundState: null, notebook: single.notebook, pair, drill: null, text: null, keyWords: [], phonics: null, phonicsLater: false, advanced };
 }
 
 /**

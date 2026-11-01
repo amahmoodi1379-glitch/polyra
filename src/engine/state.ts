@@ -84,6 +84,12 @@ export type TextStateE = {
   usedInTest: boolean;
 };
 
+/**
+ * A phonics lesson (PRD §8.3, `phonics_state`): rounds finished (1 after round 1, 2 after round 2, 3
+ * after its one repeat), the last round's score, when the next round may come and whether the lesson is over.
+ */
+export type PhonicsStateE = { lessonId: number; roundsDone: number; lastScore: number | null; nextAt: string | null; done: boolean };
+
 export type ConfusionE = { wordId: number; otherWordId: number; count: number; lastAt: string; cardShownAt: string | null };
 
 export type EnrollmentE = {
@@ -91,7 +97,10 @@ export type EnrollmentE = {
   startMode: "zero" | "placement" | null;
   paceMode: "normal" | "slow";
   lastSpreadDate: string | null;
+  /** A round of phonics in every mixed and vocabulary session (PRD §8.4). */
   phonicsAuto: boolean;
+  /** «بعداً» pressed on the phonics round in a row (PRD §8.4). */
+  phonicsSkips: number;
   streakCount: number;
   streakLastDate: string | null;
   streakForgivenWeek: string | null;
@@ -127,6 +136,8 @@ export type LearnerSnapshot = {
   drills: DrillStateE[];
   /** Texts in each track (PRD §7.4). */
   texts: TextStateE[];
+  /** Phonics lessons started (PRD §8.3). */
+  phonics: PhonicsStateE[];
   /** Finished mixed sessions in a row, newest first, without a text attempt (PRD §10.11 condition 3). */
   mixedWithoutText: number;
   history: Map<string, ItemHistory>;

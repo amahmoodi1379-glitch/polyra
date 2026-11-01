@@ -1,6 +1,7 @@
 import type { ConjC, UnitC, WordC } from "../content";
 import type { Ex } from "../ex";
 import { SHAPE } from "../exercises";
+import type { PhonicsRound, PhonicsView } from "../phonics";
 import { shuffle, type Rng } from "../random";
 import type { NotebookRef } from "../state";
 import type { TextPick } from "../texts";
@@ -24,7 +25,9 @@ export type Entry =
    * A text attempt (PRD §7.4), a block; `lead` puts it first: an attempt left half-way or the text of a
    * text session (§10.7). `keyWords` are shown before a first attempt (§7.5).
    */
-  | (Base & { t: "text"; pick: TextPick; keyWords: number[]; lead: boolean });
+  | (Base & { t: "text"; pick: TextPick; keyWords: number[]; lead: boolean })
+  /** A phonics round (PRD §8.3), a block kept apart from the plan and placed by `phonics.position` (§10.7 rule 3). */
+  | (Base & { t: "phonics"; pick: PhonicsRound; questions: Ex[]; view: PhonicsView; auto: boolean });
 
 /** Spreads `items` evenly between the elements of `base`. */
 export function interleave<T>(base: T[], items: T[]): T[] {
@@ -57,9 +60,10 @@ const stepOf = (entry: Entry) => (entry.t === "single" ? entry.step : entry.t ==
 /**
  * PRD §10.7, "ترتیب اولیه": a text left half-way or a text session's text first, then the two easiest
  * reviews, new words and blocks spread evenly, the other singles mixed, and the easiest remaining
- * single last so the session ends on a success.
+ * single last so the session ends on a success. A phonics round comes after `position` items (a new
+ * word with its first exercise is one item), or last.
  */
-export function orderEntries(entries: Entry[], rng: Rng): Entry[] {
+export function orderEntries(entries: Entry[], rng: Rng, phonics: { entry: Entry; position: number } | null = null): Entry[] {
   const lead = entries.filter((entry) => entry.t === "text" && entry.lead);
   const singles = entries.filter((entry) => entry.t === "single" || entry.t === "drill");
   const newWords = entries.filter((entry) => entry.t === "newword");
@@ -75,5 +79,8 @@ export function orderEntries(entries: Entry[], rng: Rng): Entry[] {
   let middle = mixSingles(rest, rng);
   middle = interleave(middle, newWords);
   middle = interleave(middle, blocks);
-  return [...lead, ...first, ...middle, ...(last ? [last] : [])];
+  const out = [...lead, ...first, ...middle, ...(last ? [last] : [])];
+  // Rule 3: the phonics round after the session's first items, or last when it has fewer.
+  if (phonics) out.splice(Math.min(phonics.position, out.length), 0, phonics.entry);
+  return out;
 }

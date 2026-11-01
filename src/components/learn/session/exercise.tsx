@@ -1,10 +1,10 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import { Fragment, useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { Icon, type IconName } from "@/components/learn/icons";
 import { pop, shake, squish } from "@/components/learn/motion";
 import { buzz, sfx } from "@/components/learn/sfx";
-import { say } from "@/components/learn/speak";
+import { say, usePlaying } from "@/components/learn/speak";
 import type { Speak } from "@/engine/content";
 import { scoreDictation } from "@/engine/dictation";
 import { exerciseDef } from "@/engine/exercises";
@@ -172,6 +172,7 @@ function Options({
   answered,
   onPick,
   label,
+  textOf,
 }: {
   options: Choice[];
   language: string;
@@ -180,6 +181,8 @@ function Options({
   answered: boolean;
   onPick: (id: string, el: HTMLElement) => void;
   label?: string;
+  /** What an option shows when its text is a key, not words (P2's «یکی‌اند» and «فرق دارند»). */
+  textOf?: (option: Choice) => string;
 }) {
   return (
     <div className={cn("opts", optionsStack(options) && "stack")} role="group" aria-label={label}>
@@ -197,7 +200,7 @@ function Options({
             onPointerDown={(event) => !answered && squish(event.currentTarget)}
             onClick={(event) => onPick(option.id, event.currentTarget)}
           >
-            {option.image ? <img src={option.image} alt={option.text} /> : option.text}
+            {option.image ? <img src={option.image} alt={option.text} /> : (textOf?.(option) ?? option.text)}
             <span className="tick" aria-hidden="true">
               <svg viewBox="0 0 24 24">
                 <path d="M5 12.5l4.5 4.5L19 7" />
@@ -989,10 +992,248 @@ function DictationEx(props: ExerciseProps & { spec: Extract<AnswerSpec, { kind: 
   );
 }
 
+// ───────────────────────────── phonics (P1–P5, PRD §8.2) ─────────────────────────────
+
+const phonicsLabel = (option: Choice) => (option.id === "same" || option.id === "different" ? t(`learn.phonics.${option.id}`) : option.text);
+
+/**
+ * Sounds played one after another, the next a moment after the one before ends (P2's two, P3's three).
+ * A sound tapped by hand, a new card or leaving the screen stops the chain.
+ */
+function useInTurn(id: string, sounds: readonly Speak[], autoplay: boolean) {
+  const run = useRef(0);
+  const stop = useCallback(() => void run.current++, []);
+  const play = useCallback(() => {
+    const token = ++run.current;
+    const step = (at: number) => {
+      if (token !== run.current || at >= sounds.length) return;
+      say(`${id}:${at}`, sounds[at], false, () => window.setTimeout(() => step(at + 1), 420));
+    };
+    step(0);
+  }, [id, sounds]);
+  useEffect(() => {
+    const timer = autoplay ? window.setTimeout(play, 380) : undefined;
+    return () => {
+      window.clearTimeout(timer);
+      stop();
+    };
+  }, [autoplay, play, stop]);
+  return { play, stop };
+}
+
+/** One sound to tap: «صدای ۲», and after the answer the word it was. */
+function SoundTile({
+  id,
+  speak,
+  n,
+  word,
+  language,
+  state,
+  pressed,
+  onPress,
+}: {
+  id: string;
+  speak: Speak;
+  n: number;
+  word: string | null;
+  language: string;
+  state?: string;
+  pressed?: boolean;
+  onPress: () => void;
+}) {
+  const playing = usePlaying(id);
+  return (
+    <button
+      type="button"
+      className={cn("opt snd jelly-press", state, playing && "playing")}
+      aria-pressed={pressed}
+      onPointerDown={(event) => squish(event.currentTarget)}
+      onClick={() => {
+        say(id, speak);
+        onPress();
+      }}
+    >
+      <span className="snd-ic" aria-hidden="true">
+        <Icon name="l-spk" />
+      </span>
+      <span className="snd-n">{t("learn.phonics.soundN", { n })}</span>
+      {word ? (
+        <span className="snd-w lat" lang={language} dir="ltr">
+          {word}
+        </span>
+      ) : null}
+      <span className="tick" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="M5 12.5l4.5 4.5L19 7" />
+        </svg>
+      </span>
+    </button>
+  );
+}
+
+/** P2: two sounds heard one after the other, then «یکی‌اند» or «فرق دارند»; after the answer each sound shows its word. */
+function SameEx(props: ExerciseProps & { spec: Extract<AnswerSpec, { kind: "choice" }> }) {
+  const { id, ex, spec, verdict, submit, language, muted } = props;
+  const heard = useMemo(() => ex.q.sounds ?? [], [ex]);
+  const sounds = useMemo(() => heard.map((sound) => sound.speak), [heard]);
+  const turn = useInTurn(`${id}:snd`, sounds, !muted);
+  const [chosen, setChosen] = useState<string | null>(null);
+  return (
+    <>
+      <Ask ex={ex} languageName={props.languageName} />
+      <div className="snd-row" role="group" aria-label={t("learn.ask.P2")}>
+        {heard.map((sound, index) => (
+          <SoundTile key={index} id={`${id}:snd:${index}`} speak={sound.speak} n={index + 1} word={verdict ? sound.text : null} language={language} onPress={turn.stop} />
+        ))}
+      </div>
+      <button type="button" className="act again" onClick={turn.play}>
+        <Icon name="l-spk1" className="i s" />
+        {t("learn.phonics.playBoth")}
+      </button>
+      <div className="ex-grow" />
+      <div className="answers">
+        <Options
+          options={spec.options}
+          language={language}
+          chosen={chosen}
+          correct={spec.correct}
+          answered={!!verdict}
+          textOf={phonicsLabel}
+          onPick={(choice) => {
+            if (verdict) return;
+            turn.stop();
+            setChosen(choice);
+            submit({ choice });
+          }}
+        />
+        <Idk {...props} />
+      </div>
+    </>
+  );
+}
+
+/**
+ * P3 and P4: three sounds to choose from. A tap plays a sound and picks it, «بررسی» answers; the
+ * words show only after the answer. P3 plays the three in turn at the start; P4 shows the written word.
+ */
+function HearEx(props: ExerciseProps & { spec: Extract<AnswerSpec, { kind: "choice" }> }) {
+  const { id, ex, spec, verdict, submit, language, muted } = props;
+  const sounds = useMemo(() => spec.options.flatMap((option) => (option.speak ? [option.speak] : [])), [spec]);
+  const turn = useInTurn(`${id}:opt`, sounds, ex.code === "P3" && !muted);
+  const [chosen, setChosen] = useState<string | null>(null);
+  const shown = ex.q.heard;
+  return (
+    <>
+      <Ask ex={ex} languageName={props.languageName} />
+      {shown ? (
+        <div className="phon-word">
+          <p className="prompt-lat" lang={language} dir="ltr">
+            {shown.text}
+          </p>
+          {shown.meaning ? <p className="prompt-sub">{shown.meaning}</p> : null}
+        </div>
+      ) : null}
+      <button type="button" className="act again" onClick={turn.play}>
+        <Icon name="l-spk1" className="i s" />
+        {t("learn.phonics.playAll")}
+      </button>
+      <div className="ex-grow" />
+      <div className="answers">
+        <div className="opts snd3" role="group" aria-label={t(`learn.ask.${ex.code}` as MessageKey)}>
+          {spec.options.map((option, index) =>
+            option.speak ? (
+              <SoundTile
+                key={option.id}
+                id={`${id}:opt:${index}`}
+                speak={option.speak}
+                n={index + 1}
+                word={verdict ? option.text : null}
+                language={language}
+                pressed={option.id === chosen}
+                state={!verdict ? (option.id === chosen ? "sel" : undefined) : option.id === spec.correct ? "is-correct" : option.id === chosen ? "is-wrong" : "is-dim"}
+                onPress={() => {
+                  turn.stop();
+                  if (!verdict) setChosen(option.id);
+                }}
+              />
+            ) : null,
+          )}
+        </div>
+        {verdict ? null : (
+          <div className="row">
+            <button type="button" className="ghost" onClick={() => submit({ idk: true })}>
+              {t("learn.session.idk")}
+            </button>
+            <Check disabled={!chosen} onClick={() => chosen && submit({ choice: chosen })} />
+          </div>
+        )}
+      </div>
+    </>
+  );
+}
+
+/**
+ * P5: the written sentence with a tap target between each two words; a tap ties them (‿). After the
+ * answer every liaison shows: found in teal, missed dashed, a wrong tie struck in wine.
+ */
+function LiaisonEx(props: ExerciseProps & { spec: Extract<AnswerSpec, { kind: "liaison" }> }) {
+  const { ex, spec, verdict, submit, language } = props;
+  const [marked, setMarked] = useState<number[]>([]);
+  const right = new Set(spec.correct);
+  return (
+    <>
+      <Ask ex={ex} languageName={props.languageName} />
+      <p className="liaison lat" lang={language} dir="ltr">
+        {spec.words.map((word, index) => {
+          const on = marked.includes(index);
+          const last = index === spec.words.length - 1;
+          return (
+            <Fragment key={index}>
+              <span className="lw">{word}</span>
+              {last ? null : (
+                <button
+                  type="button"
+                  className={cn("tie", on && "on", verdict && right.has(index) && (on ? "ok" : "miss"), verdict && on && !right.has(index) && "bad")}
+                  aria-pressed={on}
+                  aria-label={t("learn.phonics.gap", { a: word, b: spec.words[index + 1] })}
+                  disabled={!!verdict}
+                  onClick={() => {
+                    sfx("toggle", 0.3);
+                    setMarked((before) => (before.includes(index) ? before.filter((gap) => gap !== index) : [...before, index]));
+                  }}
+                >
+                  <svg viewBox="0 0 24 12" aria-hidden="true">
+                    <path d="M3 3c3 6.5 15 6.5 18 0" />
+                  </svg>
+                </button>
+              )}
+            </Fragment>
+          );
+        })}
+      </p>
+      <div className="ex-grow" />
+      <div className="answers">
+        {verdict ? null : (
+          <div className="row">
+            <button type="button" className="ghost" onClick={() => submit({ idk: true })}>
+              {t("learn.session.idk")}
+            </button>
+            <Check disabled={false} onClick={() => submit({ gaps: [...marked].sort((a, b) => a - b) })}>
+              {t("learn.phonics.submit")}
+            </Check>
+          </div>
+        )}
+      </div>
+    </>
+  );
+}
+
 export function Exercise(props: ExerciseProps) {
   const spec = props.ex.a;
   switch (spec.kind) {
     case "choice":
+      if (props.ex.code === "P2") return <SameEx {...props} spec={spec} />;
+      if (props.ex.code === "P3" || props.ex.code === "P4") return <HearEx {...props} spec={spec} />;
       return <ChoiceEx {...props} spec={spec} />;
     case "choice2":
       return <Choice2Ex {...props} spec={spec} />;
@@ -1012,6 +1253,8 @@ export function Exercise(props: ExerciseProps) {
       return <TableEx {...props} spec={spec} />;
     case "dictation":
       return <DictationEx {...props} spec={spec} />;
+    case "liaison":
+      return <LiaisonEx {...props} spec={spec} />;
   }
 }
 
@@ -1022,8 +1265,12 @@ export function rightAnswer(ex: Ex): { text: string; fa: boolean } | null {
   const target = (text: string | null | undefined) => (text ? { text, fa: false } : null);
   switch (spec.kind) {
     case "choice": {
-      const option = spec.options.find((item) => item.id === spec.correct);
-      return option ? { text: option.text, fa: option.lang === "fa" } : null;
+      const index = spec.options.findIndex((item) => item.id === spec.correct);
+      const option = spec.options[index];
+      if (!option) return null;
+      // A sound to choose (P3, P4) is named by its place; its word shows on the exercise.
+      if (option.speak) return { text: t("learn.phonics.soundN", { n: index + 1 }), fa: true };
+      return { text: phonicsLabel(option), fa: option.lang === "fa" };
     }
     case "choice2":
       return target(ex.q.sentence?.text ?? spec.correct.map((id, i) => spec.groups[i].find((option) => option.id === id)?.text).join(" … "));
@@ -1051,6 +1298,8 @@ export function rightAnswer(ex: Ex): { text: string; fa: boolean } | null {
       );
     case "dictation":
       return target(ex.q.sentence?.text);
+    case "liaison":
+      return target(spec.words.map((word, i) => (spec.correct.includes(i) ? `${word}‿` : `${word} `)).join("").trim());
   }
 }
 
