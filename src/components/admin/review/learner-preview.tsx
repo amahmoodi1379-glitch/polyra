@@ -9,16 +9,30 @@ import { hush } from "@/components/learn/speak";
 import { Example, LessonFace, TableFace, WordFace } from "@/components/learn/session/cards";
 import { Exercise, type Retry } from "@/components/learn/session/exercise";
 import { Feedback } from "@/components/learn/session/feedback";
+import { TextReview, TextStage, TextWordsFace } from "@/components/learn/session/text";
+import type { Answers } from "@/components/learn/session/text-questions";
 import { Button } from "@/components/ui/button";
 import type { RawAnswer } from "@/engine/ex";
 import { grade, type Graded } from "@/engine/grade";
+import { dictSource, gradeQuestion, type GradedQuestion } from "@/engine/questions";
 import { defaultLocale, locales, t, type MessageKey } from "@/i18n";
 import type { Preview, Screen } from "@/server/content/review/preview";
 
 type Ready = Extract<Preview, { state: "ready" }>;
 
-const askOf = (screen: Screen, languageName: string) =>
-  screen.kind === "exercise" ? t(`learn.ask.${screen.ex.code}` as MessageKey, { language: languageName }) : t(`admin.review.screens.${screen.kind}`);
+function askOf(screen: Screen, languageName: string): string {
+  if (screen.kind === "exercise") return t(`learn.ask.${screen.ex.code}` as MessageKey, { language: languageName });
+  if (screen.kind === "text") {
+    const { track, attempt, stage } = screen.info;
+    return t("admin.review.screens.text", {
+      track: track === "listening" ? t("learn.text.listening") : t("learn.text.reading"),
+      attempt: stage === "help" ? t("learn.text.attemptHelp", { n: attempt }) : stage === "first" ? t("admin.review.screens.attemptFirst", { n: attempt }) : t("admin.review.screens.attempt", { n: attempt }),
+    });
+  }
+  return t(`admin.review.screens.${screen.kind}`);
+}
+
+type TextDone = { answers: Answers; timedOut: boolean; graded: GradedQuestion[] };
 
 /**
  * The item's learner screens, one at a time, in a phone-sized frame of the learner app (PRD §13.9
@@ -28,6 +42,7 @@ const askOf = (screen: Screen, languageName: string) =>
 export function LearnerPreview({ preview, languageName, itemKey }: { preview: Ready; languageName: string; itemKey: string }) {
   const [at, setAt] = useState(0);
   const [verdict, setVerdict] = useState<Graded | null>(null);
+  const [textDone, setTextDone] = useState<TextDone | null>(null);
   const locale = locales[defaultLocale];
   const screens = preview.screens;
   const screen = screens[Math.min(at, screens.length - 1)];
@@ -36,7 +51,23 @@ export function LearnerPreview({ preview, languageName, itemKey }: { preview: Re
   const go = (next: number) => {
     hush();
     setVerdict(null);
+    setTextDone(null);
     setAt(Math.max(0, Math.min(screens.length - 1, next)));
+  };
+
+  // A text stage is graded as in a session (PRD §7.4) and its review page follows.
+  const submitText = (raw: RawAnswer) => {
+    if (screen.kind !== "text" || !("answers" in raw)) return;
+    const questions = screen.view.questions[screen.info.set];
+    const graded = questions.map((question) =>
+      gradeQuestion(question, raw.answers[String(question.id)], {
+        lang: preview.language,
+        sentence: question.type === "dict" && screen.view.sentences[question.sentence] ? dictSource(screen.view.sentences[question.sentence]) : undefined,
+        timedOut: raw.timedOut,
+      }),
+    );
+    sfx("page", 0.4);
+    setTextDone({ answers: raw.answers as Answers, timedOut: !!raw.timedOut, graded });
   };
 
   const submit = (raw: RawAnswer): Retry | null => {
@@ -58,7 +89,28 @@ export function LearnerPreview({ preview, languageName, itemKey }: { preview: Re
 
   let body: ReactNode;
   let cta: ReactNode = null;
+  let whole: ReactNode = null;
   switch (screen.kind) {
+    case "textwords":
+      body = <TextWordsFace id={id} view={screen.view} words={screen.words.map((wordId) => preview.words[wordId]).filter(Boolean)} />;
+      cta = seen(t("learn.session.continue"));
+      break;
+    case "text":
+      whole = textDone ? (
+        <TextReview
+          key={`r:${id}`}
+          view={screen.view}
+          outcome={{ attempt: screen.info.attempt, questions: screen.view.questions[screen.info.set], graded: textDone.graded, state: null }}
+          answers={textDone.answers}
+          timedOut={textDone.timedOut}
+          language={preview.language}
+          preview
+          onContinue={() => go(at + 1)}
+        />
+      ) : (
+        <TextStage key={id} id={id} view={screen.view} info={screen.info} prefill={{}} language={preview.language} submit={submitText} />
+      );
+      break;
     case "word":
       body = <WordFace id={id} card={screen.card} muted={false} autoplay={false} animate />;
       cta = seen(t("learn.session.learned"));
@@ -105,9 +157,11 @@ export function LearnerPreview({ preview, languageName, itemKey }: { preview: Re
                 </div>
                 <span className="icon-btn" aria-hidden="true" />
               </div>
-              <div className={verdict ? "screen-body answered" : "screen-body"} key={id} data-card={id}>
-                {body}
-              </div>
+              {whole ?? (
+                <div className={verdict ? "screen-body answered" : "screen-body"} key={id} data-card={id}>
+                  {body}
+                </div>
+              )}
               {cta}
               {verdict && screen.kind === "exercise" ? (
                 <Feedback verdict={verdict} ex={screen.ex} card={{ id }} plan={preview} language={preview.language} muted={false} onContinue={() => go(at + 1)} />

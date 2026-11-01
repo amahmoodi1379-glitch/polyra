@@ -119,7 +119,7 @@ beforeAll(async () => {
   await testDb.$executeRawUnsafe(`TRUNCATE ${rows.map((row) => `"public"."${row.tablename}"`).join(", ")} RESTART IDENTITY CASCADE`);
   await testDb.language.createMany({ data: [{ code: "fr" }, { code: "de" }] });
   const loaded = await loadDemo();
-  expect(loaded).toMatchObject({ kind: "loaded", words: 60, units: 6 });
+  expect(loaded).toMatchObject({ kind: "loaded", words: 60, units: 6, texts: 3 });
 }, 120_000);
 
 beforeEach(async () => {
@@ -135,6 +135,8 @@ describe("the French demo", () => {
     expect(await testDb.word.count({ where: { language: "fr", status: { not: "approved" } } })).toBe(0);
     expect(await testDb.sentenceWord.count({ where: { OR: [{ suspect: true }, { candidate_reason: { not: null } }] } })).toBe(0);
     expect(await testDb.grammarUnit.count({ where: { lesson_fa: null } })).toBe(0);
+    expect(await testDb.text.count({ where: { language: "fr", status: "approved" } })).toBe(3);
+    expect(await testDb.question.count({ where: { language: "fr", status: { not: "approved" } } })).toBe(0);
     expect(await loadDemo()).toEqual({ kind: "already" });
   });
 });

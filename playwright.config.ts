@@ -7,7 +7,7 @@ import { e2eDatabaseUrl, learnerDatabaseUrl } from "./tests/e2e/database";
 const port = Number(process.env.E2E_PORT ?? 3100);
 // The learner app runs on a second server with its own database and the French demo.
 const learnerPort = port + 1;
-const learnerTests = /learner\.spec\.ts$/;
+const learnerTests = /learner(-[a-z]+)?\.spec\.ts$/;
 
 export default defineConfig({
   testDir: "tests/e2e",

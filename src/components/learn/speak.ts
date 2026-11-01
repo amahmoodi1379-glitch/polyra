@@ -1,6 +1,6 @@
 "use client";
 
-import { playFile, speakText, stopPlaying, useDeviceVoice, usePlaying } from "@/components/admin/audio/player";
+import { fileAtMs, playFile, speakText, stopPlaying, useDeviceVoice, usePlaying } from "@/components/admin/audio/player";
 import type { Speak } from "@/engine/content";
 
 /**
@@ -8,12 +8,16 @@ import type { Speak } from "@/engine/content";
  * voice for the language. One sound at a time; «آهسته» plays it slower.
  */
 
-export function say(id: string, speak: Speak, slow = false) {
-  if (speak.url) playFile(id, speak.url, 0, undefined, slow ? 0.75 : 1);
-  else speakText(id, speak.text, speak.lang, slow ? 0.62 : 0.92);
+/** Playback rates: a file, and the phone's voice, which reads a little slower than it speaks by default. */
+export const RATE = { file: 1, fileSlow: 0.75, voice: 0.92, voiceSlow: 0.62 } as const;
+
+/** Plays a sound; `onEnd` runs when it played to its end, not when something stopped it. */
+export function say(id: string, speak: Speak, slow = false, onEnd?: () => void) {
+  if (speak.url) playFile(id, speak.url, 0, undefined, slow ? RATE.fileSlow : RATE.file, onEnd);
+  else speakText(id, speak.text, speak.lang, slow ? RATE.voiceSlow : RATE.voice, onEnd);
 }
 
 /** A sound that needs the phone's voice: no stored file. */
 export const needsVoice = (speak: Speak | null | undefined) => !!speak && !speak.url;
 
-export { stopPlaying as hush, useDeviceVoice, usePlaying };
+export { fileAtMs, playFile, stopPlaying as hush, useDeviceVoice, usePlaying };

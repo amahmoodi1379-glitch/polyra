@@ -111,6 +111,8 @@ export const smallWords: SmallWord[] = [
   { code: "mon", pos: "det", meaning: "مالِ من، ـَم" },
   { code: "ma", pos: "det", meaning: "مالِ من، ـَم" },
   { code: "son", pos: "det", meaning: "مالِ او، ـَش" },
+  { code: "ton", pos: "det", meaning: "مالِ تو، ـَت" },
+  { code: "ta", pos: "det", meaning: "مالِ تو، ـَت" },
   { code: "de", pos: "prep", meaning: "از" },
   { code: "à", pos: "prep", meaning: "به، در" },
   { code: "au", pos: "prep", meaning: "به" },

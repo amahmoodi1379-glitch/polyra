@@ -1,11 +1,13 @@
 /**
  * Turns the hand-written demo into the answers the panel's importers take (PRD §14): P-U for the
- * unit list, P-W for the words, P-X for the tables, P-S for the bank sentences and one P-G per unit.
+ * unit list, P-W for the words, P-X for the tables, P-S for the bank sentences, one P-G per unit and
+ * P-T for the texts.
  * Word mappings and wrong options are made here from the word list, so the data files stay short.
  * Pure: no database.
  */
 import { units, type UnitDef } from "./grammar";
 import { sentences } from "./sentences";
+import { demoTexts } from "./texts";
 import { cardWords, names, persons, smallWords, verbs, type CardWord, type Person, type Slot } from "./words";
 
 export const DEMO_VERSION = "demo-1";
@@ -286,6 +288,38 @@ export function grammarAnswer(unit: UnitDef) {
     }),
     transforms: unit.transforms.map((item) => ({ instruction_fa: item.instruction, source: item.source, accepted_outputs: item.outputs })),
     translations: unit.translations.map((item) => ({ prompt_fa: item.fa, accepted_outputs: item.outputs, tokens: tokensOf(item.outputs[0], item.meanings) })),
+    issues: [],
+  };
+}
+
+/** The P-T batch's own plan (PRD §14.6): the codes, level, band and kind the answer has to match. */
+export const textsParams = {
+  level: LEVEL,
+  band: 1,
+  length: [30, 60] as [number, number],
+  words: null,
+  texts: demoTexts.map((text) => ({ code: text.code, level: LEVEL, band: 1, kind: text.kind, topic: "", placement_ok: false })),
+};
+
+export function textsAnswer() {
+  return {
+    texts: demoTexts.map((text) => ({
+      code: text.code,
+      title: text.title,
+      kind: text.kind,
+      level: LEVEL,
+      band: 1,
+      placement_ok: false,
+      sentences: text.lines.map((line) => ({
+        text: line.text,
+        tts_text: null,
+        translation_fa: line.fa,
+        tokens: tokensOf(line.text, line.meanings),
+        speaker: line.speaker ?? null,
+      })),
+      key_words: text.keyWords,
+      question_sets: text.sets,
+    })),
     issues: [],
   };
 }

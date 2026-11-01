@@ -1,21 +1,22 @@
 import { buildColloquialEx, buildConjEx, buildG0, buildGrammarEx, buildWordEx, sentenceViewOf, type BuildEnv, type GrammarSource } from "@/engine/build";
 import { buildDrillEx, DRILL_CODES, drillReady } from "@/engine/drill";
-import { hasCard, isColloquial, levelIndex, type Content, type SentenceC, type TargetC, type UnitC, type WordC } from "@/engine/content";
+import { hasCard, isColloquial, levelIndex, TRACKS, type Content, type SentenceC, type TargetC, type TextC, type UnitC, type WordC } from "@/engine/content";
 import type { Ex, SentenceView } from "@/engine/ex";
 import { exerciseDefs, type ExerciseFamily } from "@/engine/exercises";
 import { seeded } from "@/engine/random";
-import { lessonView, tableView, wordCard, type LessonView, type TableView, type WordCard } from "@/engine/session";
+import { lessonView, tableView, textView, wordCard, type LessonView, type TableView, type TextCard, type TextView, type WordCard } from "@/engine/session";
 import type { Settings } from "@/engine/settings";
 import type { Lang } from "@/engine/text";
+import { attemptCost, stageRules, stagesOf, TEXT_RULE } from "@/engine/texts";
 import { loadContent } from "@/server/learn/content";
 import { engineSettings } from "@/server/settings/read";
 import type { LibrarySlug } from "../library/slugs";
 
 /**
  * «بازبینی» shows an item the way a learner gets it (PRD §13.9 step 4, owner decision): its card and
- * every exercise the engine builds from it, with the real builders and engine settings. Texts,
- * dialogues, find-the-mistake, writing and phonics get their learner screens with phase 4; until
- * then their review shows the form.
+ * every exercise the engine builds from it, with the real builders and engine settings. A text shows
+ * its key words and every stage of every attempt in both tracks. Dialogues, find-the-mistake, writing
+ * and phonics get their learner screens later in phase 4; until then their review shows the form.
  */
 
 export type Screen =
@@ -23,7 +24,11 @@ export type Screen =
   | { kind: "lesson"; lesson: LessonView }
   | { kind: "table"; table: TableView }
   | { kind: "sentence"; sentence: SentenceView }
-  | { kind: "exercise"; ex: Ex };
+  | { kind: "exercise"; ex: Ex }
+  /** «کلمه‌های این متن» (PRD §7.5). */
+  | { kind: "textwords"; view: TextView; words: number[] }
+  /** One stage of an attempt of a text in one track (PRD §7.4). */
+  | { kind: "text"; view: TextView; info: TextCard };
 
 export type Preview =
   | { state: "ready"; language: Lang; screens: Screen[]; words: Record<number, WordCard>; lessons: Record<number, LessonView> }
@@ -79,8 +84,37 @@ function targetScreens(env: BuildEnv, unit: UnitC, target: TargetC): Screen[] {
   return built([buildG0(env, unit, target), ...TARGET_CODES.map((code) => buildGrammarEx(env, unit, code, source))]);
 }
 
+/** Every stage a text can come in: attempt 1 without and with help, attempt 2 and, above band 1, attempt 3; in each track. */
+function textScreens(content: Content, settings: Settings, text: TextC): Screen[] {
+  const screens: Screen[] = [];
+  const attempts = text.band === 1 ? TEXT_RULE.band1Attempts : TEXT_RULE.attempts;
+  const keyWords = text.keyWordIds.filter((wordId) => content.words.has(wordId));
+  if (keyWords.length > 0) screens.push({ kind: "textwords", view: textView(content, text, "listening"), words: keyWords });
+  for (const track of TRACKS) {
+    const view = textView(content, text, track);
+    for (let attempt = 1; attempt <= attempts; attempt++) {
+      const set = attempt === 2 ? "B" : "A";
+      for (const stage of stagesOf(attempt)) {
+        const info: TextCard = {
+          textId: text.id,
+          track,
+          attempt,
+          stage,
+          set,
+          borrowed: false,
+          rules: stageRules(text, track, attempt, stage),
+          cost: attemptCost(text, track, { attempt, set }, settings),
+          resume: null,
+        };
+        screens.push({ kind: "text", view, info });
+      }
+    }
+  }
+  return screens;
+}
+
 export async function previewItem(slug: LibrarySlug, language: string, id: number): Promise<Preview> {
-  if (slug === "texts" || slug === "dialogues" || slug === "errorfix" || slug === "writing" || slug === "phonics") return { state: "none", reason: "later" };
+  if (slug === "dialogues" || slug === "errorfix" || slug === "writing" || slug === "phonics") return { state: "none", reason: "later" };
   const [content, settings] = await Promise.all([loadContent(language, "review"), engineSettings()]);
   const words: Record<number, WordCard> = {};
   const lessons: Record<number, LessonView> = {};
@@ -89,6 +123,16 @@ export async function previewItem(slug: LibrarySlug, language: string, id: numbe
   const seed = `${slug}:${id}`;
 
   switch (slug) {
+    case "texts": {
+      const text = content.texts.find((item) => item.id === id);
+      if (!text) return { state: "none", reason: "missing" };
+      const env = reviewEnv(content, settings, text.level, seed);
+      for (const wordId of text.keyWordIds) {
+        const word = content.words.get(wordId);
+        if (word) words[wordId] = wordCard(env, word);
+      }
+      return ready(textScreens(content, settings, text));
+    }
     case "words": {
       const word = content.words.get(id);
       if (!word) return { state: "none", reason: "missing" };

@@ -19,6 +19,9 @@ export function learnerDatabaseUrl() {
 /** Tester accounts of the learner database: one per browser project. */
 export const E2E_TESTERS = { "learner-phone": "09120000031", "learner-desktop": "09120000033" } as const;
 
+/** Testers who already know every demo word, so the demo's texts are open to them (PRD §7.5). */
+export const E2E_READERS = { "learner-phone": "09120000035", "learner-desktop": "09120000037" } as const;
+
 /**
  * Admin accounts created by prepare-db: one per browser project, and one each for the order, publish,
  * audio, settings, errors, users and review tests, since a phone may ask for only 3 codes in 10 minutes (PRD §15.5).

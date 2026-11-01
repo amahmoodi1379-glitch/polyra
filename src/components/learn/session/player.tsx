@@ -22,6 +22,8 @@ import { EndScreen } from "./end";
 import { Exercise, type Retry } from "./exercise";
 import { Feedback } from "./feedback";
 import { flush, listenOutbox, send, useOffline, waiting } from "./outbox";
+import { TextReview, TextStage, TextWordsFace, type TextProgressNote } from "./text";
+import type { Answers } from "./text-questions";
 
 /**
  * A session on the learner's device (PRD §3.4, §15.4). The browser runs the same engine as the
@@ -32,6 +34,8 @@ import { flush, listenOutbox, send, useOffline, waiting } from "./outbox";
 type Phase =
   | { k: "loading" }
   | { k: "cap"; learned: number; canMore: boolean }
+  /** «پیش از جلسه متن» (PRD §10.11): the text is longer than the session. */
+  | { k: "textAsk"; minutes: number }
   | { k: "state"; which: "nothingLeft" | "emptyNotebook" | "locked" | "gone" | "failed" }
   | { k: "play" }
   | { k: "end" };
@@ -86,6 +90,10 @@ export function Player({ language, languageName, scope: firstScope }: { language
   const [tipIds, setTipIds] = useState<string[]>([]);
   // Cards whose sound file did not arrive in time, with the seconds waited (PRD §10.12).
   const [waited, setWaited] = useState<Record<string, number>>({});
+  // The answers of a text stage, for its review page (PRD §7.4).
+  const [given, setGiven] = useState<{ answers: Answers; timedOut: boolean } | null>(null);
+  // The answer to «امروز {n} کلمه گرفتی» stays when «پیش از جلسه متن» asks next.
+  const capAnswer = useRef<"more" | "none" | null>(null);
   const seq = useRef(0);
   const elapsed = useRef(0);
   const shownAt = useRef(0);
@@ -109,14 +117,14 @@ export function Player({ language, languageName, scope: firstScope }: { language
   }, []);
 
   const start = useCallback(
-    async (which: Scope, cap: "more" | "none" | null = null) => {
+    async (which: Scope, cap: "more" | "none" | null = null, text: "confirmed" | "later" | null = null) => {
       // Answers from before go first, so the server builds on them.
       await Promise.race([flush(), new Promise((resolve) => window.setTimeout(resolve, 4000))]);
       try {
         const response = await fetch("/api/learn/session", {
           method: "POST",
           headers: { "content-type": "application/json" },
-          body: JSON.stringify({ language, scope: which, noAudio: false, cap }),
+          body: JSON.stringify({ language, scope: which, noAudio: false, cap, text }),
         });
         if (response.status === 401) {
           window.location.assign(`/login?next=${encodeURIComponent(`/learn/${language}/session?scope=${which}`)}`);
@@ -130,6 +138,9 @@ export function Player({ language, languageName, scope: firstScope }: { language
             return;
           case "ask_word_cap":
             setPhase({ k: "cap", learned: data.learned, canMore: data.canMore });
+            return;
+          case "ask_text_session":
+            setPhase({ k: "textAsk", minutes: data.minutes });
             return;
           case "nothing_left":
             setPhase({ k: "state", which: "nothingLeft" });
@@ -157,9 +168,10 @@ export function Player({ language, languageName, scope: firstScope }: { language
     const timer = window.setTimeout(() => void start(firstScope), 0);
     return () => window.clearTimeout(timer);
   }, [start, firstScope]);
-  const restart = (which: Scope, cap: "more" | "none" | null = null) => {
+  const restart = (which: Scope, cap: "more" | "none" | null = null, text: "confirmed" | "later" | null = null) => {
+    capAnswer.current = cap;
     setPhase({ k: "loading" });
-    void start(which, cap);
+    void start(which, cap, text);
   };
 
   // What the server says about the answers of this session.
@@ -255,6 +267,7 @@ export function Player({ language, languageName, scope: firstScope }: { language
 
   const advance = (result: Done) => {
     setDone(null);
+    setGiven(null);
     setPlan(result.advanced.plan);
     if (result.advanced.finished) {
       hush();
@@ -297,6 +310,13 @@ export function Player({ language, languageName, scope: firstScope }: { language
       shown: result.graded?.result ?? "seen",
       ...(alt ? { alt: true } : {}),
     });
+    // After each attempt of a text its review page comes; the first round without help shows nothing yet (PRD §7.4).
+    if (result.text && result.text.stage !== "first" && "answers" in raw) {
+      sfx("page", 0.4);
+      setGiven({ answers: raw.answers as Answers, timedOut: !!raw.timedOut });
+      setDone(result);
+      return null;
+    }
     if (!result.graded) {
       sfx("page", 0.4);
       advance(result);
@@ -323,6 +343,17 @@ export function Player({ language, languageName, scope: firstScope }: { language
     if (gloss.kind !== "word" || !gloss.wordId || tapped.current.has(gloss.wordId) || plan?.words[gloss.wordId]) return;
     tapped.current.add(gloss.wordId);
     void fetch("/api/learn/tap", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ language, wordId: gloss.wordId }) }).catch(() => {});
+  };
+
+  // Where a text stage stands; a lost note costs nothing but the place (PRD §7.4).
+  const textProgress = (note: TextProgressNote) => {
+    if (!bundle || !card) return;
+    void fetch("/api/learn/text-progress", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      keepalive: true,
+      body: JSON.stringify({ sessionId: bundle.id, cardId: card.id, ...note }),
+    }).catch(() => {});
   };
 
   const toggleMute = () => {
@@ -410,6 +441,29 @@ export function Player({ language, languageName, scope: firstScope }: { language
     );
   }
 
+  if (phase.k === "textAsk") {
+    return (
+      <Frame>
+        {bar(null)}
+        <div className="calm">
+          <span className="mark">
+            <Icon name="i-read" />
+          </span>
+          <h1>{t("learn.textAsk.title", { n: phase.minutes })}</h1>
+          <p>{t("learn.textAsk.body")}</p>
+        </div>
+        <div className="cta">
+          <button type="button" className="primary jelly-press" onPointerDown={(event) => squish(event.currentTarget)} onClick={() => restart(scope, capAnswer.current, "confirmed")}>
+            {t("learn.textAsk.start")}
+          </button>
+          <button type="button" className="ghost" onClick={() => restart(scope, capAnswer.current, "later")}>
+            {t("learn.textAsk.later")}
+          </button>
+        </div>
+      </Frame>
+    );
+  }
+
   if (phase.k === "state") {
     const icon = phase.which === "locked" ? "l-lock" : phase.which === "failed" ? "l-offline" : phase.which === "emptyNotebook" ? "l-note" : "l-check";
     return (
@@ -474,7 +528,43 @@ export function Player({ language, languageName, scope: firstScope }: { language
     </div>
   );
 
-  if (card.t === "intro") {
+  // A text draws its own screen: the stage with its questions, then its review page.
+  if (card.t === "text" && card.text && plan.texts[card.text.textId]) {
+    return (
+      <Frame>
+        {bar(progress)}
+        {done?.text && given ? (
+          <TextReview
+            key={`r:${card.id}`}
+            view={plan.texts[card.text.textId]}
+            outcome={done.text}
+            answers={given.answers}
+            timedOut={given.timedOut}
+            language={language}
+            onTap={tap}
+            onContinue={() => advance(done)}
+          />
+        ) : (
+          <TextStage
+            key={card.id}
+            id={card.id}
+            view={plan.texts[card.text.textId]}
+            info={card.text}
+            prefill={(card.text.resume?.answers ?? (card.text.stage === "help" ? plan.textStates[card.item]?.partial?.answers : null) ?? {}) as Answers}
+            language={language}
+            submit={submit}
+            onTap={tap}
+            onProgress={textProgress}
+          />
+        )}
+      </Frame>
+    );
+  }
+
+  if (card.t === "textwords") {
+    body = <TextWordsFace id={card.id} view={plan.texts[Number(card.item.slice(2))]} words={(card.words ?? []).map((id) => plan.words[id]).filter(Boolean)} />;
+    cta = seen(t("learn.session.continue"));
+  } else if (card.t === "intro") {
     const word = plan.words[Number(card.item.slice(2))];
     body = word ? (
       <>

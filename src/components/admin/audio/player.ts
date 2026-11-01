@@ -10,6 +10,8 @@ import { useSyncExternalStore } from "react";
 let audio: HTMLAudioElement | null = null;
 let current: string | null = null;
 let frame = 0;
+/** Goes up with every stop, so a late event of an older sound changes nothing. */
+let generation = 0;
 const listeners = new Set<() => void>();
 const emit = () => listeners.forEach((listener) => listener());
 const subscribe = (listener: () => void) => {
@@ -19,14 +21,15 @@ const subscribe = (listener: () => void) => {
 
 const voiceTag: Record<string, string> = { fr: "fr-FR", de: "de-DE" };
 
-function finish(id: string) {
-  if (current !== id) return;
+function finish(id: string, of: number) {
+  if (current !== id || of !== generation) return;
   current = null;
   cancelAnimationFrame(frame);
   emit();
 }
 
 export function stopPlaying() {
+  generation++;
   audio?.pause();
   if (typeof speechSynthesis !== "undefined") speechSynthesis.cancel();
   cancelAnimationFrame(frame);
@@ -34,26 +37,36 @@ export function stopPlaying() {
   emit();
 }
 
-/** Plays a file, or the part of it from `fromMs` up to `untilMs`; `rate` below 1 is slower. */
-export function playFile(id: string, url: string, fromMs = 0, untilMs?: number, rate = 1) {
+/**
+ * Plays a file, or the part of it from `fromMs` up to `untilMs`; `rate` below 1 is slower. `onEnd`
+ * runs when it plays to the end, not when it is stopped.
+ */
+export function playFile(id: string, url: string, fromMs = 0, untilMs?: number, rate = 1, onEnd?: () => void) {
   stopPlaying();
+  const mine = generation;
   audio ??= new Audio();
   const player = audio;
   player.defaultPlaybackRate = rate;
   player.playbackRate = rate;
   current = id;
   emit();
-  player.onended = () => finish(id);
-  player.onerror = () => finish(id);
+  const ended = () => {
+    if (current !== id || mine !== generation) return;
+    finish(id, mine);
+    onEnd?.();
+  };
+  player.onended = ended;
+  player.onerror = () => finish(id, mine);
   const start = () => {
+    if (mine !== generation) return;
     player.currentTime = fromMs / 1000;
-    player.play().catch(() => finish(id));
+    player.play().catch(() => finish(id, mine));
     if (untilMs === undefined) return;
     const watch = () => {
-      if (current !== id) return;
+      if (current !== id || mine !== generation) return;
       if (player.currentTime * 1000 >= untilMs) {
         player.pause();
-        finish(id);
+        ended();
       } else frame = requestAnimationFrame(watch);
     };
     frame = requestAnimationFrame(watch);
@@ -65,17 +78,25 @@ export function playFile(id: string, url: string, fromMs = 0, untilMs?: number, 
   }
 }
 
-/** Reads a text with the device's own voice for the language, as the app does when there is no file. */
-export function speakText(id: string, text: string, language: string, rate = 1) {
+/** Where the file being played stands, in milliseconds. */
+export const fileAtMs = () => (audio ? audio.currentTime * 1000 : 0);
+
+/** Reads a text with the device's own voice for the language, as the app does when there is no file; `onEnd` as in `playFile`. */
+export function speakText(id: string, text: string, language: string, rate = 1, onEnd?: () => void) {
   stopPlaying();
   if (typeof speechSynthesis === "undefined") return;
+  const mine = generation;
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = voiceTag[language] ?? language;
   utterance.rate = rate;
   const voice = speechSynthesis.getVoices().find((item) => item.lang.toLowerCase().startsWith(language));
   if (voice) utterance.voice = voice;
-  utterance.onend = () => finish(id);
-  utterance.onerror = () => finish(id);
+  utterance.onend = () => {
+    if (current !== id || mine !== generation) return;
+    finish(id, mine);
+    onEnd?.();
+  };
+  utterance.onerror = () => finish(id, mine);
   current = id;
   emit();
   speechSynthesis.speak(utterance);

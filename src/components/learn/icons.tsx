@@ -43,7 +43,10 @@ export type IconName =
   | "l-shift"
   | "l-table"
   | "l-swap"
-  | "l-stop";
+  | "l-stop"
+  | "l-play"
+  | "l-pause"
+  | "l-clock";
 
 export function Icon({ name, className, ...rest }: { name: IconName } & SVGProps<SVGSVGElement>) {
   const duotone = name.startsWith("i-");
@@ -132,6 +135,17 @@ export function IconSprite() {
         </symbol>
         <symbol id="l-stop" viewBox="0 0 24 24">
           <rect x="6.5" y="6.5" width="11" height="11" rx="2.5" />
+        </symbol>
+        <symbol id="l-play" viewBox="0 0 24 24">
+          <path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z" />
+        </symbol>
+        <symbol id="l-pause" viewBox="0 0 24 24">
+          <rect x="6.5" y="5" width="3.6" height="14" rx="1.2" />
+          <rect x="13.9" y="5" width="3.6" height="14" rx="1.2" />
+        </symbol>
+        <symbol id="l-clock" viewBox="0 0 24 24">
+          <circle cx="12" cy="13" r="8" />
+          <path d="M12 9v4l2.5 2M10 2.5h4" />
         </symbol>
         <symbol id="l-note" viewBox="0 0 24 24">
           <path d="M5 4h11l3 3v13H5z" />
