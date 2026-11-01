@@ -151,6 +151,18 @@ export const wasBorrowed = (state: TextStateE | undefined) => !!state?.scores.fi
  */
 const takenOver = (env: TextEnv, textId: number, track: Track) => wasBorrowed(env.states.get(textStateKey(textId, otherTrack(track))));
 
+/** A stage of the text finished in a session: the text is open in «متن‌های من» for good (PRD §7.9, DECISIONS.md). */
+export const stageDone = (state: TextStateE | undefined) => !!state && (state.attemptsDone > 0 || state.scores.length > 0);
+
+/**
+ * An attempt of the text is still to come in a track (a first round given up included), unless the
+ * other track borrowed it. In listening, «متن‌های من» then shows the words only after a full play (PRD §7.9).
+ */
+export function attemptLeft(text: Pick<TextC, "id" | "band">, states: ReadonlyMap<string, TextStateE>, track: Track): boolean {
+  const state = states.get(textStateKey(text.id, track));
+  return !!state && nextAttempt(text, state) !== null && !wasBorrowed(states.get(textStateKey(text.id, otherTrack(track))));
+}
+
 /** When the learner last worked on the text in a track. */
 export function lastTouch(state: TextStateE | undefined): number | null {
   if (!state) return null;

@@ -48,7 +48,10 @@ const sentenceOf = (starts: number[], ms: number) => {
   return index;
 };
 
-export function useTextSound(view: TextView, opts: { id: string; limit: number | null; plays: number; positionMs: number; slow: boolean; onChange?: () => void }): TextSound {
+export function useTextSound(
+  view: TextView,
+  opts: { id: string; limit: number | null; plays: number; positionMs: number; slow: boolean; onChange?: () => void; /** A play reached the end. */ onEnd?: () => void },
+): TextSound {
   const { id, limit, slow } = opts;
   const playing = usePlaying(id);
   const [plays, setPlays] = useState(opts.plays);
@@ -57,8 +60,10 @@ export function useTextSound(view: TextView, opts: { id: string; limit: number |
   const starts = useRef(sentenceStarts(view));
   const pos = useRef(opts.positionMs);
   const onChange = useRef(opts.onChange);
+  const onEnd = useRef(opts.onEnd);
   useEffect(() => {
     onChange.current = opts.onChange;
+    onEnd.current = opts.onEnd;
   });
   const file = view.audio?.url ?? null;
 
@@ -78,6 +83,7 @@ export function useTextSound(view: TextView, opts: { id: string; limit: number |
     setInPlay(false);
     setSentenceAt(null);
     onChange.current?.();
+    onEnd.current?.();
   };
 
   const readFrom = (index: number) => {

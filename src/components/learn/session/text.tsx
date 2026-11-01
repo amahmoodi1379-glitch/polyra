@@ -19,7 +19,8 @@ import { sentenceStarts, useTextSound, type TextSound } from "./text-sound";
 
 /**
  * A text in a session (PRD §7.3–7.5): «کلمه‌های این متن» before the first attempt, one stage of an
- * attempt with all its questions on one screen, and the review page after each attempt.
+ * attempt with all its questions on one screen, and the review page after each attempt. The heading
+ * line and the sound panel serve «متن‌های من» too.
  */
 
 export type TextProgressNote = { answers: Answers; plays: number; positionMs: number };
@@ -29,7 +30,7 @@ const into = (el: Element | null, block: ScrollLogicalPosition = "center") => el
 
 const attemptsOf = (band: number) => (band === 1 ? TEXT_RULE.band1Attempts : TEXT_RULE.attempts);
 
-function Kicker({ view, info }: { view: TextView; info: Pick<TextCard, "attempt" | "stage"> | null }) {
+export function Kicker({ view, info }: { view: TextView; info: Pick<TextCard, "attempt" | "stage"> | null }) {
   const listening = view.track === "listening";
   return (
     <p className="ask">
@@ -86,7 +87,7 @@ function Segments({ view, current }: { view: TextView; current: number | null })
   );
 }
 
-function SoundPanel({ view, sound, slow, onSlow, bySentence }: { view: TextView; sound: TextSound; slow: boolean | null; onSlow: (next: boolean) => void; bySentence: boolean }) {
+export function SoundPanel({ view, sound, slow, onSlow, bySentence }: { view: TextView; sound: TextSound; slow: boolean | null; onSlow: (next: boolean) => void; bySentence: boolean }) {
   const spent = sound.left === 0 && !sound.paused && !sound.playing;
   const label = sound.playing ? t("learn.text.pause") : sound.paused ? t("learn.text.goOn") : spent ? t("learn.text.noPlays") : sound.plays === 0 ? t("learn.text.play") : t("learn.text.playAgain");
   return (

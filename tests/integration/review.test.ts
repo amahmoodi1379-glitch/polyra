@@ -196,7 +196,8 @@ describe("the review queue and what it shows", () => {
     // Every exercise of the sentence is about this sentence, not another one of the word.
     for (const ex of exercises) expect(ex.sentenceId).toBe(line.id);
 
-    expect(await previewItem("texts", "fr", 1)).toEqual({ state: "none", reason: "later" });
+    expect(await previewItem("dialogues", "fr", 1)).toEqual({ state: "none", reason: "later" });
+    expect(await previewItem("texts", "fr", 1)).toEqual({ state: "none", reason: "missing" });
     const skeleton = await word("eau", { meaning_fa: null });
     expect(await previewItem("words", "fr", skeleton.id)).toEqual({ state: "none", reason: "missing" });
   });

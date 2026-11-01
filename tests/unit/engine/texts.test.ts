@@ -1,8 +1,8 @@
 /**
  * Listening and reading texts (PRD §7.4, §7.5, §9.6, §10.2, §10.11): attempts and their question sets
  * (T34), the next text (T35, T64), the track score (T89) and level (T36), a text left half-way (T91),
- * the text session (T65), due attempts in a mixed session (T82), questions graded (§7.3) and a text
- * played through the same `playCard` the browser and the server run.
+ * the text session (T65), due attempts in a mixed session (T82), questions graded (§7.3), a text
+ * played through the same `playCard` the browser and the server run, and «متن‌های من» (§7.9).
  */
 import { describe, expect, it } from "vitest";
 import type { Content, QuestionC, TextC, Track } from "@/engine/content";
@@ -14,12 +14,14 @@ import type { LearnerSnapshot, TextScoreE, TextStateE } from "@/engine/state";
 import {
   afterStage,
   attemptCost,
+  attemptLeft,
   dueTexts,
   indexTextStates,
   newText,
   nextAttempt,
   partialText,
   remainingCost,
+  stageDone,
   stageRules,
   textLevelUp,
   textProgress,
@@ -444,5 +446,27 @@ describe("questions (PRD §7.3)", () => {
     expect(gradeQuestion(dict, { text: "a mangé une soup chaude dans la petite cuisine" }, { lang: "fr", sentence }).result).toBe("wrong");
     expect(graded.marks?.[0]).toBeNull();
     expect(stageScore([graded, { questionId: 2, result: "idk", raw: null }])).toBe(0.5);
+  });
+});
+
+describe("«متن‌های من» (PRD §7.9)", () => {
+  it("holds a text from its first finished stage; in listening the words wait while an attempt is still to come", () => {
+    const band2 = text(1);
+    const band1 = text(2, { band: 1 });
+    // Started but no stage finished: not there yet.
+    expect(stageDone(state(1, "listening", { partial: { attempt: 1, stage: "first", answers: {}, plays: 1, positionMs: 0 } }))).toBe(false);
+    expect(stageDone(undefined)).toBe(false);
+    // The first round done, the round with help still open: there, and attempt 1 is still to come.
+    const first = afterStage(null, { text: band2, track: "listening", attempt: 1, stage: "first", set: "A", borrowed: false, score: 0.5, answers: {} }, NOW, defaults);
+    expect(stageDone(first)).toBe(true);
+    expect(attemptLeft(band2, indexTextStates([first]), "listening")).toBe(true);
+    // Band 1 after its second attempt, band 2 after its third: nothing left, the words show at once.
+    expect(attemptLeft(band1, indexTextStates([firstDone(2, "listening", 0.8, 5, { attemptsDone: 2, nextAttemptAt: null })]), "listening")).toBe(false);
+    expect(attemptLeft(band2, indexTextStates([firstDone(1, "listening", 0.8, 20, { attemptsDone: 3, nextAttemptAt: null })]), "listening")).toBe(false);
+    // Borrowed by reading: listening's attempts left are dropped.
+    const borrowedState = indexTextStates([firstDone(1, "listening", 0.8, 40), firstDone(1, "reading", 0.9, 2, {}, true)]);
+    expect(attemptLeft(band2, borrowedState, "listening")).toBe(false);
+    // Never started in listening.
+    expect(attemptLeft(band2, indexTextStates([firstDone(1, "reading", 0.9, 2)]), "listening")).toBe(false);
   });
 });

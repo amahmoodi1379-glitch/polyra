@@ -1,18 +1,19 @@
-import { hasCard, type Content, type Gender } from "@/engine/content";
+import { hasCard, TRACKS, type Content, type Gender, type Track } from "@/engine/content";
 import { wordView, type BuildEnv } from "@/engine/build";
 import type { WordView } from "@/engine/ex";
 import { openEntries } from "@/engine/notebook";
-import { lessonView, tableView, wordCard, type LessonView, type WordCard } from "@/engine/session";
-import type { NotebookRef } from "@/engine/state";
+import { lessonView, tableView, textView, wordCard, type LessonView, type TextView, type WordCard } from "@/engine/session";
+import type { NotebookRef, TextStateE } from "@/engine/state";
+import { attemptLeft, indexTextStates, lastTouch, stageDone } from "@/engine/texts";
 import type { LanguageCode } from "@/server/content/languages";
 import { db } from "@/server/db";
 import { learnerContent } from "./content";
-import { notebookOf } from "./learner";
+import { loadTextStates, notebookOf, textStateOf } from "./learner";
 import type { Learner } from "./session";
 
 /**
- * The learner's read-only pages (PRD §3.10): «کلمه‌های من», «درسنامه‌های من» and the mistakes
- * notebook. Only what the learner has met is listed; nothing here starts a scored exercise.
+ * The learner's read-only pages (PRD §3.10): «کلمه‌های من», «درسنامه‌های من», «متن‌های من» and the
+ * mistakes notebook. Only what the learner has met is listed; nothing here starts a scored exercise.
  */
 
 const audienceOf = (user: Learner) => (user.is_admin || user.is_tester ? "tester" : "public");
@@ -69,6 +70,50 @@ export async function myLesson(user: Learner, language: LanguageCode, unitId: nu
   const unit = content.units.find((item) => item.id === unitId);
   if (!unit || !rows.some((row) => row.item_id === unitId)) return null;
   return lessonView(viewEnv(content, new Set()), unit);
+}
+
+/** The learner's text states with a finished stage, by text. */
+async function doneTexts(user: Learner, language: LanguageCode) {
+  const [content, rows] = await Promise.all([contentFor(user, language), loadTextStates(db, user.id, language)]);
+  const states = rows.map(textStateOf);
+  const byText = new Map<number, TextStateE[]>();
+  for (const state of states.filter(stageDone)) byText.set(state.textId, [...(byText.get(state.textId) ?? []), state]);
+  return { content, states, byText };
+}
+
+/** The track of a text's latest stage, and when it was. */
+function latest(done: TextStateE[]): { track: Track; at: number } {
+  const touches = done.map((state) => ({ track: state.track, at: lastTouch(state) ?? 0 })).sort((a, b) => b.at - a.at);
+  return touches[0];
+}
+
+export type MyText = { id: number; title: string; level: string; tracks: Track[]; at: number };
+
+/** Texts with a stage finished in a session, the latest first, with their tracks (PRD §3.10, §7.9). */
+export async function myTexts(user: Learner, language: LanguageCode): Promise<MyText[]> {
+  const { content, byText } = await doneTexts(user, language);
+  return content.texts
+    .flatMap((text) => {
+      const done = byText.get(text.id);
+      if (!done) return [];
+      const tracks = TRACKS.filter((track) => done.some((state) => state.track === track));
+      return [{ id: text.id, title: text.title, level: text.level, tracks, at: latest(done).at }];
+    })
+    .sort((a, b) => b.at - a.at || b.id - a.id);
+}
+
+/**
+ * One text of «متن‌های من» (PRD §7.9), without its questions. `listenFirst`: an attempt in listening
+ * is still to come, so the words wait for a full play; otherwise the text shows its latest stage's track.
+ */
+export async function myText(user: Learner, language: LanguageCode, textId: number): Promise<{ view: TextView; listenFirst: boolean } | null> {
+  const { content, states, byText } = await doneTexts(user, language);
+  const text = content.texts.find((item) => item.id === textId);
+  const done = byText.get(textId);
+  if (!text || !done) return null;
+  const listenFirst = attemptLeft(text, indexTextStates(states), "listening");
+  const view = textView(content, text, listenFirst ? "listening" : latest(done).track);
+  return { view: { ...view, questions: { A: [], B: [] } }, listenFirst };
 }
 
 export type NotebookLine = { key: string; kind: NotebookRef; target: string; article: string | null; gender: Gender | null; fa: string; addedAt: string; correct: number };

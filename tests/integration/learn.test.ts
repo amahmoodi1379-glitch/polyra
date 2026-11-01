@@ -8,18 +8,22 @@ import { playCard, shownEx } from "@/engine/session/play";
 import type { Card, Scope } from "@/engine/session/types";
 import type { ItemStateE, ItemType } from "@/engine/state";
 import { plusDays, tehranDate } from "@/engine/time";
+import { seeded } from "@/engine/random";
 import { demoStatus, loadDemo, removeDemo } from "@/server/content/demo";
 import { saveOrder } from "@/server/content/order";
+import { previewItem } from "@/server/content/review/preview";
 import { submitAnswer, sessionEnd } from "@/server/learn/answer";
 import { forgetContent, loadContent } from "@/server/learn/content";
 import { startFromZero } from "@/server/learn/enroll";
 import { homeData } from "@/server/learn/home";
 import { loadLearner } from "@/server/learn/learner";
+import { myText, myTexts } from "@/server/learn/lists";
 import { startSession, type Bundle } from "@/server/learn/session";
 import { queueTappedWord } from "@/server/learn/tap";
+import { saveTextProgress } from "@/server/learn/text-progress";
 import { saveItemState } from "@/server/learn/writes";
 import { engineSettings } from "@/server/settings/read";
-import { rightAnswer } from "../../fixtures/synthetic/drive";
+import { rightAnswer, textAnswers } from "../../fixtures/synthetic/drive";
 import { testDb } from "./db";
 
 /**
@@ -108,6 +112,7 @@ const LEARNER_TABLES = [
   "daily_counter",
   "confusion_pair",
   "sentence_drill_state",
+  "text_state",
   "skill_level",
   "enrollment",
   "trial_ledger",
@@ -454,6 +459,9 @@ describe("sentence listening (PRD §7.6)", () => {
     const tile = home!.skills.find((item) => item.skill === "listening")!;
     expect(tile.lock).toBeNull();
 
+    // The demo's texts aside (as if a placement test had used them), the session is sentence drills only.
+    const texts = await testDb.text.findMany({ where: { language: "fr" }, select: { id: true } });
+    await testDb.textState.createMany({ data: texts.map((text) => ({ user_id: user.id, text_id: text.id, track: "listening" as const, used_in_test: true })) });
     const bundle = await started(user, NOW, "listening");
     expect(bundle.plan.queue.length).toBeGreaterThan(0);
     expect(bundle.plan.queue.every((card) => card.t === "drill" && card.ex?.code === "L1")).toBe(true);
@@ -483,6 +491,145 @@ describe("sentence listening (PRD §7.6)", () => {
     const later = plusDays(NOW, 4);
     const snapshot = await loadLearner(testDb, user.id, "fr", "A1", later, tehranDate(later), settings);
     expect(snapshot!.drills).toEqual([{ sentenceId, count: 1, lastAt: at.toISOString() }]);
+  });
+});
+
+/** A tester who knows every demo word: the reading track opens with the demo's A1 texts (PRD §7.5). */
+async function reader() {
+  const user = await enrolled();
+  const words = await testDb.word.findMany({ where: { language: "fr", no_card: false }, select: { id: true } });
+  for (const { id } of words) await learned(user.id, "word", id, { dueInDays: 5 });
+  return user;
+}
+
+/** Answers the cards before the session's text («کلمه‌های این متن» included) and returns the text card. */
+async function toText(user: Person, bundle: Bundle, start: Date) {
+  let plan = bundle.plan;
+  let seq = bundle.nextSeq;
+  let at = start;
+  while (plan.queue[0] && plan.queue[0].t !== "text") {
+    at = new Date(at.getTime() + 5000);
+    const { raw, result } = answerFor(bundle, plan, plan.queue[0], at);
+    expect(await submitAnswer(user, request(bundle, seq++, plan.queue[0], raw, at), at)).toMatchObject({ kind: "ok" });
+    plan = result.advanced.plan;
+  }
+  return { plan, seq, at, card: plan.queue[0] };
+}
+
+describe("texts (PRD §7.3–7.5, §7.9, §10.11)", () => {
+  it("a first round left half-way keeps its answers, goes on in another session, and the text then opens in «متن‌های من»", async () => {
+    const user = await reader();
+    const home = await homeData(user, "fr", NOW);
+    expect(home!.skills.find((tile) => tile.skill === "reading")!.text).toBe("new");
+    expect(home!.links.texts).toBe(0);
+
+    const bundle = await started(user, NOW, "reading");
+    const { plan, card, at } = await toText(user, bundle, NOW);
+    expect(card.text).toMatchObject({ track: "reading", attempt: 1, stage: "first", set: "A", resume: null });
+    const textId = card.text!.textId;
+    const first = plan.texts[textId].questions.A[0];
+    const right = (textAnswers(plan, card, seeded("t"), 1) as { answers: Record<string, unknown> }).answers;
+
+    // One answer given, then the learner leaves: the place is kept on the card and in text_state (PRD §7.4).
+    const noted = { sessionId: bundle.id, cardId: card.id, answers: { [first.id]: right[first.id] } as never, plays: 0, positionMs: 41_000 };
+    expect(await saveTextProgress(user, noted, at)).toBe("ok");
+    expect(await saveTextProgress(user, { ...noted, cardId: "another" }, at)).toBe("gone");
+    const kept = await testDb.textState.findUniqueOrThrow({ where: { user_id_text_id_track: { user_id: user.id, text_id: textId, track: "reading" } } });
+    expect(kept).toMatchObject({ attempts_done: 0, first_score: null, partial: { attempt: 1, stage: "first", answers: { [first.id]: right[first.id] }, positionMs: 41_000 } });
+    expect(kept.partial_until).toEqual(new Date(at.getTime() + 24 * 3_600_000));
+
+    // A mixed session two hours later replaces the reading one and starts with the same round where it was (T91).
+    const later = new Date(NOW.getTime() + 2 * 3_600_000);
+    const again = await started(user, later, "mixed");
+    expect(await testDb.session.findUniqueOrThrow({ where: { id: bundle.id } })).toMatchObject({ end_reason: "replaced" });
+    const resumed = again.plan.queue.find((item) => item.t === "text")!;
+    expect(again.plan.queue[0].id).toBe(resumed.id);
+    expect(resumed.text).toMatchObject({ textId, stage: "first", resume: { answers: { [first.id]: right[first.id] }, positionMs: 41_000 } });
+
+    // The first round with every answer right, then the round with help: attempt 1 is done (T34, band 1).
+    const step = async (bundleNow: Bundle, planNow: Bundle["plan"], seq: number, when: Date) => {
+      const textCard = planNow.queue[0];
+      const raw = textAnswers(planNow, textCard, seeded("t"), 1);
+      const { result } = answerFor(bundleNow, planNow, textCard, when, raw);
+      expect(await submitAnswer(user, request(bundleNow, seq, textCard, raw, when), when)).toMatchObject({ kind: "ok" });
+      return result.advanced.plan;
+    };
+    const afterFirst = await step(again, again.plan, again.nextSeq, new Date(later.getTime() + 60_000));
+    expect(afterFirst.queue[0].text).toMatchObject({ textId, stage: "help" });
+    const firstState = await testDb.textState.findUniqueOrThrow({ where: { user_id_text_id_track: { user_id: user.id, text_id: textId, track: "reading" } } });
+    expect(firstState).toMatchObject({ attempts_done: 0, first_score: 1, partial: { stage: "help" } });
+    const logged = await testDb.reviewLog.findMany({ where: { user_id: user.id, item_type: "text", item_id: textId } });
+    expect(logged).toHaveLength(plan.texts[textId].questions.A.length);
+    expect(logged.every((row) => row.question_set === "A" && row.result === "correct")).toBe(true);
+
+    // «متن‌های من» lists a text from its first round (PRD §7.9); a reading text shows at once.
+    expect(await myTexts(user, "fr")).toEqual([expect.objectContaining({ id: textId, tracks: ["reading"] })]);
+    const open = await myText(user, "fr", textId);
+    expect(open).toMatchObject({ listenFirst: false, view: { id: textId, track: "reading", questions: { A: [], B: [] } } });
+    expect(open!.view.sentences.length).toBeGreaterThan(0);
+
+    const doneAt = new Date(later.getTime() + 120_000);
+    await step(again, afterFirst, again.nextSeq + 1, doneAt);
+    const done = await testDb.textState.findUniqueOrThrow({ where: { user_id_text_id_track: { user_id: user.id, text_id: textId, track: "reading" } } });
+    expect(done).toMatchObject({ attempts_done: 1, first_score: 1, partial: null, partial_until: null });
+    expect(done.next_attempt_at).toEqual(new Date(doneAt.getTime() + 3 * 86_400_000));
+    expect((await homeData(user, "fr", doneAt))!.links.texts).toBe(1);
+
+    // Reading «متن‌های من» writes nothing.
+    const logs = await testDb.reviewLog.count({ where: { user_id: user.id } });
+    await myTexts(user, "fr");
+    await myText(user, "fr", textId);
+    expect(await testDb.reviewLog.count({ where: { user_id: user.id } })).toBe(logs);
+    // Another learner's text, or one never started, is not there.
+    expect(await myText(await reader(), "fr", textId)).toBeNull();
+    const other = await testDb.text.findFirstOrThrow({ where: { language: "fr", id: { not: textId } }, select: { id: true } });
+    expect(await myText(user, "fr", other.id)).toBeNull();
+  });
+
+  it("a listening text with an attempt still to come waits for a full play in «متن‌های من»; after its last attempt it does not", async () => {
+    const user = await reader();
+    const text = await testDb.text.findFirstOrThrow({ where: { language: "fr" }, select: { id: true } });
+    const scores = [{ attempt: 1, set: "A", score: 0.75, at: NOW.toISOString() }];
+    await testDb.textState.create({ data: { user_id: user.id, text_id: text.id, track: "listening", attempts_done: 1, first_score: 0.75, scores, last_attempt_at: NOW, next_attempt_at: plusDays(NOW, 3) } });
+    expect(await myText(user, "fr", text.id)).toMatchObject({ listenFirst: true, view: { track: "listening" } });
+    // Band 1 has two attempts: after the second, the text shows at once.
+    await testDb.textState.update({
+      where: { user_id_text_id_track: { user_id: user.id, text_id: text.id, track: "listening" } },
+      data: { attempts_done: 2, scores: [...scores, { attempt: 2, set: "B", score: 1, at: plusDays(NOW, 3).toISOString() }], next_attempt_at: null },
+    });
+    expect(await myText(user, "fr", text.id)).toMatchObject({ listenFirst: false });
+    // A half-way attempt with no stage done is not there yet.
+    const fresh = await reader();
+    await testDb.textState.create({ data: { user_id: fresh.id, text_id: text.id, track: "listening", partial: { attempt: 1, stage: "first", answers: {}, plays: 1, positionMs: 0 }, partial_until: plusDays(NOW, 1) } });
+    expect(await myTexts(fresh, "fr")).toEqual([]);
+  });
+
+  it("shows the panel's reviewer every screen of a text: its words, then each stage of each attempt in both tracks", async () => {
+    const text = await testDb.text.findFirstOrThrow({ where: { language: "fr", code: "fr-a1-t001" }, select: { id: true } });
+    const preview = await previewItem("texts", "fr", text.id);
+    if (preview.state !== "ready") throw new Error(preview.reason);
+    const stages = preview.screens.flatMap((screen) => (screen.kind === "text" ? [`${screen.info.track} ${screen.info.attempt} ${screen.info.stage} ${screen.info.set}`] : []));
+    // Band 1: two attempts (PRD §7.4, T34).
+    expect(stages).toEqual(["listening 1 first A", "listening 1 help A", "listening 2 again B", "reading 1 first A", "reading 1 help A", "reading 2 again B"]);
+    expect(preview.screens[0].kind).toBe("textwords");
+  });
+
+  it("asks before a text longer than the session; «بعداً» builds without it and is kept for the day, «شروع» brings it (PRD §10.4, §10.11)", async () => {
+    const user = await reader();
+    await testDb.user.update({ where: { id: user.id }, data: { session_length_min: 1 } });
+    const ask = await startSession(user, { language: "fr", scope: "reading", noAudio: false, cap: null }, NOW);
+    expect(ask).toMatchObject({ kind: "ask_text_session", track: "reading" });
+    expect((ask as { minutes: number }).minutes).toBeGreaterThan(1);
+
+    const later = await startSession(user, { language: "fr", scope: "reading", noAudio: false, cap: null, text: "later" }, NOW);
+    expect(later.kind).toBe("nothing_left");
+    expect(await testDb.enrollment.findFirstOrThrow({ where: { user_id: user.id }, select: { text_prompt_date: true } })).toEqual({ text_prompt_date: new Date(`${tehranDate(NOW)}T00:00:00Z`) });
+    expect(await testDb.textState.count({ where: { user_id: user.id } })).toBe(0);
+
+    const yes = await startSession(user, { language: "fr", scope: "reading", noAudio: false, cap: null, text: "confirmed" }, NOW);
+    expect(yes.kind).toBe("session");
+    const bundle = (yes as { bundle: Bundle }).bundle;
+    expect(bundle.plan.queue.some((card) => card.t === "text" && card.text?.textId === (ask as { textId: number }).textId)).toBe(true);
   });
 });
 

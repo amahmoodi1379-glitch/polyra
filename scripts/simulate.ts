@@ -7,8 +7,8 @@
  *   npm run simulate -- --quick       a fifth of the learners and the features-off run only, for a fast look
  *   npm run simulate -- --seed=other  another seed
  *
- * Patterns that need later phases (placement samples, «این را بلدم», texts, the end of the path) wait
- * for them; DECISIONS.md lists which.
+ * Patterns that need later phases (placement samples, «این را بلدم», the end of the path) wait for
+ * them; DECISIONS.md lists which.
  */
 import { performance } from "node:perf_hooks";
 import { buildConjEx, buildGrammarEx, buildWordEx, type BuildEnv, type GrammarSource } from "../src/engine/build";
@@ -18,6 +18,7 @@ import { codesAt, exerciseDef, TRANSFORM_STEP } from "../src/engine/exercises";
 import { checkInvariants, type InvariantInput } from "../src/engine/invariants";
 import { lastStepOfWord } from "../src/engine/pick";
 import { seeded } from "../src/engine/random";
+import { textKnownShare } from "../src/engine/texts";
 import { makeEnv } from "../src/engine/session";
 import { buildSession, type BuildOptions } from "../src/engine/session/build";
 import type { Card, Scope } from "../src/engine/session/types";
@@ -100,6 +101,8 @@ type Stats = {
   firstReview: { ok: number; of: number };
   byStep: Map<number, { ok: number; of: number }>;
   hurriedQueue: number[];
+  /** Per learner at the end: texts with a first round in each track, and the track levels. */
+  texts: { listening: number[]; reading: number[]; levels: Map<string, number>; share: Map<string, number> };
 };
 
 const newStats = (): Stats => ({
@@ -125,6 +128,7 @@ const newStats = (): Stats => ({
   firstReview: { ok: 0, of: 0 },
   byStep: new Map(),
   hurriedQueue: [],
+  texts: { listening: [], reading: [], levels: new Map(), share: new Map() },
 });
 
 const bump = <K,>(map: Map<K, number>, key: K, by = 1) => map.set(key, (map.get(key) ?? 0) + by);
@@ -257,7 +261,7 @@ function runLearner(pattern: Pattern, index: number, content: Content, settings:
           if (!pattern.start) {
             const shown = played.results.map((result) => result.ex).filter((ex) => !!ex);
             if (shown.some((ex) => ex.typed)) stats.firstSession.push(`learner ${index}: typed exercise`);
-            if (played.results.some((result) => !result.card.item.startsWith("w:"))) stats.firstSession.push(`learner ${index}: grammar or listening`);
+            if (played.results.some((result) => !result.card.item.startsWith("w:"))) stats.firstSession.push(`learner ${index}: grammar, listening or a text`);
           }
         }
         // The learner before this session, as the build saw it, for the codes each card could have had.
@@ -266,7 +270,7 @@ function runLearner(pattern: Pattern, index: number, content: Content, settings:
         played.results.forEach((result, at) => {
           const ex = result.ex;
           const seconds = played.latencies[at] / 1000;
-          const skill = result.card.t === "drill" ? "listening" : result.card.item.startsWith("w:") ? "vocab" : "grammar";
+          const skill = result.card.t === "drill" ? "listening" : result.card.text ? result.card.text.track : result.card.item.startsWith("w:") ? "vocab" : "grammar";
           stats.seconds[skill] = (stats.seconds[skill] ?? 0) + seconds;
           // A drill's code follows its count, not the choice (PRD §7.6).
           if (ex && ex.code !== "G0" && result.card.t !== "drill") {
@@ -275,6 +279,12 @@ function runLearner(pattern: Pattern, index: number, content: Content, settings:
             let count = possible.get(slot);
             if (count === undefined) possible.set(slot, (count = candidates(env, content, result.card, ex)));
             if (count >= 3) bump(stats.codes, `${def.family}:${def.step}:${ex.code}`);
+          }
+          // How much of a new text the learner knew when it came (PRD §7.5 condition 4 and its relaxing).
+          if (result.card.text?.stage === "first" && result.card.text.attempt === 1 && !result.card.text.resume) {
+            const text = content.texts.find((item) => item.id === result.card.text!.textId);
+            const share = text ? textKnownShare(content, text, env.known) : 1;
+            bump(stats.texts.share, share >= 0.9 ? "≥90%" : share >= 0.7 ? "70–90%" : share >= 0.5 ? "50–70%" : "<50%");
           }
           if (result.single?.leech) leeched.add(result.card.item);
           if (result.log.kind === "review" && result.log.rating !== null) {
@@ -325,6 +335,11 @@ function runLearner(pattern: Pattern, index: number, content: Content, settings:
   stats.leeches.set(ability, { leech: entry.leech + leeched.size, of: entry.of + learner.items.length });
   stats.unitsPerWeek.push((learner.items.filter((item) => item.itemType === "grammar_unit").length / days) * 7);
   if (a1Done !== null) stats.a1Done.push(a1Done);
+  for (const track of ["listening", "reading"] as const) {
+    stats.texts[track].push(learner.texts.filter((state) => state.track === track && state.firstScore !== null).length);
+    const level = learner.skills.find((skill) => skill.skill === track)?.level ?? "A1";
+    bump(stats.texts.levels, `${track} ${level}`);
+  }
 }
 
 const median = (values: number[]) => {
@@ -375,7 +390,7 @@ function marks(all: Map<string, Stats>, buildMs: number, a1Only: { errors: strin
   return [
     { name: "errors and empty sessions while content is left", ok: errors.length === 0 && empty === 0, value: `${errors.length} errors, ${empty} empty${errors.length ? `; first: ${errors[0]}` : ""}` },
     { name: "sessions with new material (daily, a ≥ 0.75, content left) > 90%", ok: newOf === 0 || newYes / newOf > 0.9, value: `${newYes}/${newOf} = ${pct(newYes / Math.max(1, newOf))}` },
-    { name: "first session from zero: no typing, no grammar", ok: first.length === 0, value: first.length ? first.slice(0, 3).join("; ") : "ok" },
+    { name: "first session from zero: no typing, no grammar, no text", ok: first.length === 0, value: first.length ? first.slice(0, 3).join("; ") : "ok" },
     { name: "scored word review with a form exercise: zero", ok: sum((s) => s.scoredForm) === 0, value: String(sum((s) => s.scoredForm)) },
     { name: "grammar-only learner (A2): no empty session", ok: (all.get("a2-grammar")?.empty ?? 0) === 0, value: String(all.get("a2-grammar")?.empty ?? 0) },
     { name: "cards over 7 days overdue on day 60 (10 min, a ≥ 0.75): median ≤ 30, never > 150", ok: median(overdue) <= 30 && Math.max(0, ...overdue) <= 150, value: `median ${median(overdue)}, max ${Math.max(0, ...overdue)}` },
@@ -482,12 +497,18 @@ function report(label: string, all: Map<string, Stats>) {
       `${name.padEnd(14)} sessions ${String(s.sessions).padStart(5)} · new words/day w1 ${week(1)} w4 ${week(4)} w8 ${week(8)} · units/week ${mean(s.unitsPerWeek).toFixed(2)} · time ${time} · A1 done day ${s.a1Done.length ? median(s.a1Done) : "-"}`,
     );
     console.log(`${"".padEnd(14)} slow ${slow} · leech ${leech} · first review ${pct(s.firstReview.ok / Math.max(1, s.firstReview.of))} · by step ${steps}`);
+    const levels = [...s.texts.levels.entries()]
+      .sort()
+      .map(([key, n]) => `${key}×${n}`)
+      .join(" ");
+    const shares = ["≥90%", "70–90%", "50–70%", "<50%"].map((band) => `${band} ${s.texts.share.get(band) ?? 0}`).join(", ");
+    console.log(`${"".padEnd(14)} first rounds per learner: listening ${median(s.texts.listening)}, reading ${median(s.texts.reading)} (median) · track levels ${levels} · known words of new texts: ${shares}`);
     if (name === "hurried") console.log(`${"".padEnd(14)} review queue 14 days in: median ${median(s.hurriedQueue)}`);
   }
 }
 
 function run(label: string, settings: Settings): Mark[] {
-  const content = syntheticContent({ perLevel: { words: [600, 300, 300, 300], units: [50, 30, 30, 30] } });
+  const content = syntheticContent({ perLevel: { words: [600, 300, 300, 300], units: [50, 30, 30, 30] }, textsPerLevel: 20 });
   const all = new Map<string, Stats>();
   const twins: Twins = new Map();
   for (const pattern of PATTERNS) {

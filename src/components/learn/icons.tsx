@@ -33,6 +33,7 @@ export type IconName =
   | "l-check"
   | "l-search"
   | "l-book"
+  | "l-text"
   | "l-offline"
   | "l-lock"
   | "l-logout"
@@ -158,6 +159,10 @@ export function IconSprite() {
         <symbol id="l-book" viewBox="0 0 24 24">
           <path d="M12 6.5C10 5 7 4.5 3.5 5v13c3.5-.5 6.5 0 8.5 1.5 2-1.5 5-2 8.5-1.5V5c-3.5-.5-6.5 0-8.5 1.5z" />
           <path d="M12 6.5v13" />
+        </symbol>
+        <symbol id="l-text" viewBox="0 0 24 24">
+          <path d="M6 3.5h8.5L18 7v13.5H6z" />
+          <path d="M9 10.5h6M9 14h6M9 17.5h3.5" />
         </symbol>
         <symbol id="l-type" viewBox="0 0 24 24">
           <path d="M5 6V4h14v2M12 4v16M9 20h6" />

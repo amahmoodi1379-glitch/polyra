@@ -95,12 +95,13 @@ export function flush(): Promise<void> {
       if (!item) break;
       const result = await post(item);
       if (result.kind === "offline" || (result.kind === "server" && ++serverFailures < 3)) {
-        setOffline(result.kind === "offline");
+        setOffline(result.kind === "offline" || !navigator.onLine);
         retry = window.setTimeout(() => void flush(), delay);
         delay = Math.min(delay * 2, 20_000);
         break;
       }
-      setOffline(false);
+      // A reply that was on its way when the browser lost the connection does not hide the bar.
+      setOffline(!navigator.onLine);
       delay = 1000;
       if (result.kind === "signed_out") {
         window.location.assign(`/login?next=${encodeURIComponent(window.location.pathname + window.location.search)}`);

@@ -227,7 +227,7 @@ export function Home({ data, languageName, languages, account, lengths, freeze }
           })}
         </div>
 
-        {links.notebook + links.words + links.lessons > 0 ? (
+        {links.notebook + links.words + links.lessons + links.texts > 0 ? (
           <nav className="links" aria-label={t("learn.home.linksLabel")}>
             {links.notebook > 0 ? (
               <Link href={`/learn/${lang}/notebook`} onClick={() => sfx("press", 0.4)}>
@@ -250,6 +250,14 @@ export function Home({ data, languageName, languages, account, lengths, freeze }
                 <Icon name="l-book" />
                 <span className="t">{t("learn.home.lessons")}</span>
                 <span className="cnt num">{t("learn.home.lessonsCount", { n: links.lessons })}</span>
+                <Icon name="l-back" className="i s fwd" />
+              </Link>
+            ) : null}
+            {links.texts > 0 ? (
+              <Link href={`/learn/${lang}/texts`} onClick={() => sfx("press", 0.4)}>
+                <Icon name="l-text" />
+                <span className="t">{t("learn.home.texts")}</span>
+                <span className="cnt num">{t("learn.home.textsCount", { n: links.texts })}</span>
                 <Icon name="l-back" className="i s fwd" />
               </Link>
             ) : null}

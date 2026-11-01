@@ -4,7 +4,7 @@ import { E2E_READERS } from "./database";
 /**
  * A text in the learner app (PRD §7.3–7.5) on the French demo: a reader who knows every demo word
  * opens a reading session, leaves the first round half-way and finds it again where it was (T91),
- * then answers it, changes answers with help, and reads the review page.
+ * then answers it, changes answers with help, reads the review page and finds the text in «متن‌های من».
  */
 
 async function signIn(page: Page, phone: string) {
@@ -76,4 +76,23 @@ test("a reader leaves a text half-way, finds it again, answers it with and witho
     else await next.click();
   }
   await expect(end).toBeVisible();
+
+  // «متن‌های من» (PRD §7.9): the text is there for good, to read and hear freely, with no question.
+  await page.goto("/learn/fr");
+  await page.getByRole("link", { name: /متن‌های من/ }).click();
+  await expect(page).toHaveURL(/\/learn\/fr\/texts$/);
+  // Every text the session brought had its first round (the rest with «نمی‌دانم»), the latest on top.
+  await expect(page.locator(".count-line")).toHaveText(/متن$/);
+  await expect(page.locator(".entries .entry").first()).toBeVisible();
+  await page.screenshot({ path: testInfo.outputPath("my-texts.png"), fullPage: true });
+  await page.locator(".entries .entry").first().click();
+  await expect(page).toHaveURL(/\/learn\/fr\/texts\/\d+$/);
+  await expect(page.locator(".tx-line").first()).toBeVisible();
+  await expect(page.locator(".tx-q")).toHaveCount(0);
+  await expect(page.locator(".tx-line .tr")).toHaveCount(0);
+  await page.getByRole("button", { name: "ترجمه", exact: true }).first().click();
+  await expect(page.locator(".tx-line .tr")).toHaveCount(1);
+  await page.getByRole("button", { name: "نشان دادن ترجمه‌ها" }).click();
+  await expect(page.locator(".tx-line .tr")).toHaveCount(await page.locator(".tx-line").count());
+  await page.screenshot({ path: testInfo.outputPath("my-text.png"), fullPage: true });
 });

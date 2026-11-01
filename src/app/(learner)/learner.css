@@ -3258,6 +3258,34 @@
     line-height: 1.75;
     color: var(--ink-2);
   }
+
+  /* «متن‌های من»: the words wait under a veil for one full play, then open */
+  & .tx-open {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  & .tx-veil {
+    direction: ltr;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px 18px;
+    border-radius: 22px;
+    border: 1.5px dashed var(--line);
+  }
+  & .tx-veil span {
+    display: block;
+    height: 10px;
+    max-inline-size: 100%;
+    border-radius: 5px;
+    background: var(--tint);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    & .tx-open {
+      animation: lx-fade-up 0.5s var(--ease-out) both;
+    }
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

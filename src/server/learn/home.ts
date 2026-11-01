@@ -9,7 +9,7 @@ import { makeEnv } from "@/engine/session/views";
 import { num } from "@/engine/settings";
 import type { SkillName } from "@/engine/state";
 import type { Track } from "@/engine/content";
-import { dueTexts, indexTextStates, nextAttempt, textProgress, textWaiting, trackStarted, type TextEnv } from "@/engine/texts";
+import { dueTexts, indexTextStates, nextAttempt, stageDone, textProgress, textWaiting, trackStarted, type TextEnv } from "@/engine/texts";
 import { catchUp, doneToday } from "@/engine/streak";
 import { addDays } from "@/engine/time";
 import type { LanguageCode } from "@/server/content/languages";
@@ -52,7 +52,7 @@ export type HomeData = {
   plan: PlanLine;
   locked: boolean;
   skills: SkillTile[];
-  links: { notebook: number; words: number; lessons: number };
+  links: { notebook: number; words: number; lessons: number; texts: number };
 };
 
 /** The quiet button at the top (PRD §3.8). Payment comes in a later phase, so it only reports. */
@@ -198,6 +198,7 @@ export async function homeData(user: Learner, language: LanguageCode, now = new 
       }).length,
       words: learner.items.filter((item) => item.itemType === "word" && content.words.get(item.itemId) && hasCard(content.words.get(item.itemId)!)).length,
       lessons: learner.items.filter((item) => item.itemType === "grammar_unit").length,
+      texts: content.texts.filter((text) => learner.texts.some((state) => state.textId === text.id && stageDone(state))).length,
     },
   };
 }
