@@ -240,12 +240,14 @@ describe("track score and level (PRD §7.5, §9.6)", () => {
   it("T36: eight first rounds with a track score of 0.8 move the track up; low first rounds with high second attempts do not", () => {
     const content = withTexts(kitContent({ words: [] }), Array.from({ length: 10 }, (_, i) => text(i + 1)));
     const good = Array.from({ length: 8 }, (_, i) => firstDone(i + 1, "reading", 0.8, 20 - i, { nextAttemptAt: plusDays(NOW, 2).toISOString() }));
-    expect(textLevelUp(content, indexTextStates(good), "reading", "A1", defaults, NOW)).toBe("A2");
-    expect(textLevelUp(content, indexTextStates(good), "listening", "A1", defaults, NOW)).toBeNull();
+    expect(textLevelUp(content, indexTextStates(good), "reading", "A1", defaults, NOW, "A2")).toBe("A2");
+    expect(textLevelUp(content, indexTextStates(good), "listening", "A1", defaults, NOW, "A2")).toBeNull();
     const low = good.map((item) => ({ ...item, attemptsDone: 2, scores: [{ ...item.scores[0], score: 0.5 }, { attempt: 2, set: "B" as const, score: 1, at: ago(1) }] }));
-    expect(textLevelUp(content, indexTextStates(low), "reading", "A1", defaults, NOW)).toBeNull();
+    expect(textLevelUp(content, indexTextStates(low), "reading", "A1", defaults, NOW, "A2")).toBeNull();
+    // The track does not go ahead of the words (DECISIONS.md): with words at A1 it stays, by either rule.
+    expect(textLevelUp(content, indexTextStates(good), "reading", "A1", defaults, NOW, "A1")).toBeNull();
     // A closed next level keeps the track where it is.
-    expect(textLevelUp({ ...content, openLevels: ["A1"] }, indexTextStates(good), "reading", "A1", defaults, NOW)).toBeNull();
+    expect(textLevelUp({ ...content, openLevels: ["A1"] }, indexTextStates(good), "reading", "A1", defaults, NOW, "A2")).toBeNull();
   });
 
   it("rule 2: every text of the level touched in some track, no due attempt left and four first rounds", () => {
@@ -253,13 +255,14 @@ describe("track score and level (PRD §7.5, §9.6)", () => {
     const later = { nextAttemptAt: plusDays(NOW, 5).toISOString() };
     const own = [1, 2, 3, 4].map((id) => firstDone(id, "reading", 0.5, 10, later));
     const others = [5, 6].map((id) => firstDone(id, "listening", 0.5, 10, later));
-    expect(textLevelUp(content, indexTextStates([...own, ...others]), "reading", "A1", defaults, NOW)).toBe("A2");
+    expect(textLevelUp(content, indexTextStates([...own, ...others]), "reading", "A1", defaults, NOW, "A2")).toBe("A2");
     // One text nobody touched, or one due attempt, keeps it.
-    expect(textLevelUp(content, indexTextStates([...own, others[0]]), "reading", "A1", defaults, NOW)).toBeNull();
+    expect(textLevelUp(content, indexTextStates([...own, others[0]]), "reading", "A1", defaults, NOW, "A2")).toBeNull();
     const due = [{ ...own[0], nextAttemptAt: ago(1) }, ...own.slice(1), ...others];
-    expect(textLevelUp(content, indexTextStates(due), "reading", "A1", defaults, NOW)).toBeNull();
+    expect(textLevelUp(content, indexTextStates(due), "reading", "A1", defaults, NOW, "A2")).toBeNull();
+    expect(textLevelUp(content, indexTextStates([...own, ...others]), "reading", "A1", defaults, NOW, "A1")).toBeNull();
     // Three first rounds are not enough.
-    expect(textLevelUp(content, indexTextStates([...own.slice(1), firstDone(1, "listening", 0.5, 10, later), ...others]), "reading", "A1", defaults, NOW)).toBeNull();
+    expect(textLevelUp(content, indexTextStates([...own.slice(1), firstDone(1, "listening", 0.5, 10, later), ...others]), "reading", "A1", defaults, NOW, "A2")).toBeNull();
   });
 
   it("the bar: 70% first rounds out of eight (or the level's texts), 30% the track score out of 0.8", () => {

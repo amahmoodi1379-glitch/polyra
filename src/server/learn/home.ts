@@ -9,7 +9,7 @@ import { makeEnv } from "@/engine/session/views";
 import { num } from "@/engine/settings";
 import type { SkillName } from "@/engine/state";
 import type { Track } from "@/engine/content";
-import { dueTexts, indexTextStates, nextAttempt, stageDone, textProgress, textWaiting, trackStarted, type TextEnv } from "@/engine/texts";
+import { dueTexts, indexTextStates, nextAttempt, stageDone, textLevelUp, textProgress, textWaiting, trackStarted, type TextEnv } from "@/engine/texts";
 import { catchUp, doneToday } from "@/engine/streak";
 import { addDays } from "@/engine/time";
 import type { LanguageCode } from "@/server/content/languages";
@@ -36,8 +36,11 @@ export type SkillTile = {
   due: number;
   /** «یک متن منتظر توست» (PRD §10.4): what the skill's own session brings first. */
   text: "resume" | "due" | "new" | null;
-  /** Texts of the track: started (a first round) and with every attempt done (PRD §7.4). */
-  texts: { started: number; finished: number } | null;
+  /**
+   * Texts of the track: started (a first round) and with every attempt done (PRD §7.4). `wordsFor`: the
+   * track is ready for the next level, which waits for the vocabulary to reach it (DECISIONS.md).
+   */
+  texts: { started: number; finished: number; wordsFor: string | null } | null;
 };
 
 export type HomeData = {
@@ -117,7 +120,9 @@ export async function homeData(user: Learner, language: LanguageCode, now = new 
       const text = content.texts.find((item) => item.id === state.textId);
       return !!text && nextAttempt(text, state) === null;
     }).length;
-    return { bar, waiting, due, texts: { started: mine.length, finished }, open: trackStarted(tenv.states, track) || waiting !== null };
+    const ready = textLevelUp(content, tenv.states, track, level, settings, now, content.levels[content.levels.length - 1]);
+    const wordsFor = ready && levelIndex(content, ready) > levelIndex(content, vocabSkill.level) ? ready : null;
+    return { bar, waiting, due, texts: { started: mine.length, finished, wordsFor }, open: trackStarted(tenv.states, track) || waiting !== null };
   };
   const heard = textTile("listening");
   const read = textTile("reading");

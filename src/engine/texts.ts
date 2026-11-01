@@ -322,11 +322,20 @@ export function textProgress(content: Content, states: ReadonlyMap<string, TextS
 /**
  * Whether a track moves up from its level (PRD §7.5, T36): eight first rounds of the level and a track
  * score of 0.8, or every text of the level touched in some track, the track's due attempts of the
- * level done and four first rounds. The next level must be open.
+ * level done and four first rounds. The next level must be open, and no higher than `wordsLevel`, the
+ * learner's vocabulary level: a track never moves ahead of the words (DECISIONS.md).
  */
-export function textLevelUp(content: Content, states: ReadonlyMap<string, TextStateE>, track: Track, level: string, settings: Settings, now: Date): string | null {
+export function textLevelUp(
+  content: Content,
+  states: ReadonlyMap<string, TextStateE>,
+  track: Track,
+  level: string,
+  settings: Settings,
+  now: Date,
+  wordsLevel: string,
+): string | null {
   const next = content.levels[levelIndex(content, level) + 1];
-  if (!next || !content.openLevels.includes(next)) return null;
+  if (!next || !content.openLevels.includes(next) || levelIndex(content, next) > levelIndex(content, wordsLevel)) return null;
   const ofLevel = content.texts.filter((text) => text.level === level);
   const ids = new Set(ofLevel.map((text) => text.id));
   const rounds = firstRounds(states.values(), track).filter((round) => ids.has(round.textId)).length;
@@ -341,12 +350,19 @@ export function textLevelUp(content: Content, states: ReadonlyMap<string, TextSt
   return !untouched && !dueLeft && rounds >= TEXT_RULE.levelUpRest ? next : null;
 }
 
-/** The new level of each text track after a session, or null where it stays (PRD §7.5). */
-export function textLevelsAfter(content: Content, states: readonly TextStateE[], levelOf: (track: Track) => string | null, settings: Settings, now: Date): Record<Track, string | null> {
+/** The new level of each text track after a session, or null where it stays (PRD §7.5); `wordsLevel` as in `textLevelUp`. */
+export function textLevelsAfter(
+  content: Content,
+  states: readonly TextStateE[],
+  levelOf: (track: Track) => string | null,
+  settings: Settings,
+  now: Date,
+  wordsLevel: string,
+): Record<Track, string | null> {
   const index = indexTextStates(states);
   const up = (track: Track) => {
     const level = levelOf(track);
-    return level ? textLevelUp(content, index, track, level, settings, now) : null;
+    return level ? textLevelUp(content, index, track, level, settings, now, wordsLevel) : null;
   };
   return { listening: up("listening"), reading: up("reading") };
 }

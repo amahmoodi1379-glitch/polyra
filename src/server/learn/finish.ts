@@ -65,7 +65,8 @@ export async function finishSession(tx: Tx, row: Session, plan: StoredPlan, ctx:
   const vocab = skills.find((skill) => skill.skill === "vocab")!;
   const textStates = (await loadTextStates(tx, row.user_id, row.language)).map(textStateOf);
   const levelOf = (skill: SkillName) => skills.find((item) => item.skill === skill)?.level ?? null;
-  const moved = { ...levelsAfter(content, index, skills, settings), ...textLevelsAfter(content, textStates, levelOf, settings, at) };
+  const words = levelsAfter(content, index, skills, settings);
+  const moved = { ...words, ...textLevelsAfter(content, textStates, levelOf, settings, at, words.vocab ?? vocab.level) };
   for (const skill of ["vocab", "grammar", "listening", "reading"] as const) {
     const level = moved[skill];
     const row = skills.find((item) => item.skill === skill)!;

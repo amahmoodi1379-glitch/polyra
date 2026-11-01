@@ -417,6 +417,7 @@ function SkillDetails({ tile, locked, onPractice, onClose }: { tile: SkillTile; 
           ) : null}
         </dl>
       )}
+      {tile.texts?.wordsFor ? <p className="soon num">{t("learn.skillSheet.texts.wordsFor", { skill: name, level: tile.texts.wordsFor })}</p> : null}
       <div className="ss-foot">
         {playable(tile) && !locked ? (
           <button

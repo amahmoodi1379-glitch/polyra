@@ -167,7 +167,7 @@ export function closeLeft(learner: LearnerSnapshot, plan: SessionPlan, settings:
 export function finishLevels(learner: LearnerSnapshot, content: Content, settings: Settings, now: Date): LearnerSnapshot {
   const moved = levelsAfter(content, indexItems(learner.items), learner.skills, settings);
   const levelOf = (skill: SkillName) => learner.skills.find((row) => row.skill === skill)?.level ?? null;
-  const texts = textLevelsAfter(content, learner.texts, levelOf, settings, now);
+  const texts = textLevelsAfter(content, learner.texts, levelOf, settings, now, moved.vocab ?? levelOf("vocab") ?? content.levels[0]);
   const up: Partial<Record<SkillName, string | null>> = { ...moved, ...texts };
   if (!Object.values(up).some(Boolean)) return learner;
   return { ...learner, skills: learner.skills.map((skill) => ({ ...skill, level: up[skill.skill] ?? skill.level })) };
