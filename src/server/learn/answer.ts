@@ -56,6 +56,10 @@ const phonicsStart = z.union([z.object({ seen: z.literal(true) }), z.object({ sk
 const liaisonAnswer = z.union([z.object({ idk: z.literal(true) }), z.object({ gaps: z.array(z.number().int().min(0).max(200)).max(200) })]);
 /** A phonics question left without sound (PRD §10.12): the rest of the round goes. */
 const phonicsDrop = z.object({ skip: z.literal("drop") });
+/** Speaking (PRD §8b): the learner's rating, a dialogue's first choices, find the mistake's changed words. */
+const speakAnswer = z.object({ self: z.enum(["ok", "near", "no"]) });
+const dialogueAnswer = z.object({ turns: z.array(z.number().int().min(-1).max(10)).max(20) });
+const errorfixAnswer = z.object({ fixes: z.record(z.string().regex(/^\d{1,4}$/), z.string().max(60)).refine((fixes) => Object.keys(fixes).length <= 200) });
 
 export type AnswerResponse =
   | { kind: "ok"; seq: number; finished: boolean; end: EndSummary | null }
@@ -98,6 +102,10 @@ export async function submitAnswer(user: Learner, request: AnswerRequest, server
       if (shownCard.t === "text" && !dropped && !textAnswer.safeParse(request.answer).success) return { kind: "invalid" };
       if (shownCard.t === "phonics" && !phonicsStart.safeParse(request.answer).success) return { kind: "invalid" };
       if (!dropped && shownCard.ex?.a.kind === "liaison" && !liaisonAnswer.safeParse(request.answer).success) return { kind: "invalid" };
+      if (shownCard.prod && !dropped) {
+        const schemas: Record<string, z.ZodType> = { speak: speakAnswer, dialogue: dialogueAnswer, errorfix: errorfixAnswer };
+        if (!schemas[shownCard.prod.kind].safeParse(request.answer).success) return { kind: "invalid" };
+      }
       const today = tehranDate(at);
       const lexicon = ctx.content.lemmaIndex;
       const result = playCard(
@@ -114,14 +122,27 @@ export async function submitAnswer(user: Learner, request: AnswerRequest, server
 
       const who = { userId: user.id, language: row.language };
       const { log, card } = result;
-      const rows = (result.text?.graded.length ? result.text.graded : [null]).map((graded, i) => ({
-        // One row per question (PRD §4, «هر جواب یک ردیف»); the first carries the answer id that makes a repeat harmless.
-        id: i === 0 ? request.answerId : randomUUID(),
-        question_id: graded?.questionId ?? null,
-        question_set: graded ? result.text!.set : null,
-        result: graded?.result ?? log.result,
-        raw_answer: graded ? graded.raw : log.raw,
-      }));
+      const turns = result.production?.kind === "dialogue" ? result.production.turns : [];
+      const rows =
+        turns.length > 0
+          ? // A dialogue: one row per turn, its line and whether the first choice was right (PRD §8b.4).
+            turns.map((turn, i) => ({
+              id: i === 0 ? request.answerId : randomUUID(),
+              question_id: null,
+              question_set: null,
+              sentence_id: turn.sentenceId,
+              result: turn.right ? ("correct" as const) : ("wrong" as const),
+              raw_answer: turn.choice === null ? null : String(turn.choice),
+            }))
+          : (result.text?.graded.length ? result.text.graded : [null]).map((graded, i) => ({
+              // One row per question (PRD §4, «هر جواب یک ردیف»); the first carries the answer id that makes a repeat harmless.
+              id: i === 0 ? request.answerId : randomUUID(),
+              question_id: graded?.questionId ?? null,
+              question_set: graded ? result.text!.set : null,
+              sentence_id: log.sentenceId,
+              result: graded?.result ?? log.result,
+              raw_answer: graded ? graded.raw : log.raw,
+            }));
       await tx.reviewLog.createMany({
         data: rows.map((one) => ({
           ...one,
@@ -134,7 +155,6 @@ export async function submitAnswer(user: Learner, request: AnswerRequest, server
           exercise_code: log.code,
           step_before: log.stepBefore,
           step_after: log.stepAfter,
-          sentence_id: log.sentenceId,
           sentence_target_id: log.targetId,
           result_reason: log.reason,
           chosen_word_id: log.chosenWordId,
@@ -203,6 +223,22 @@ export async function submitAnswer(user: Learner, request: AnswerRequest, server
           where: { id: enrollment.id },
           data: { phonics_skips: after.skips, phonics_done: done, ...(off ? { phonics_auto: false, phonics_off_due: true } : {}) },
         });
+      }
+      // Speaking (PRD §8b): only its own row; nothing else of the learner changes.
+      const prod = result.production;
+      if (prod?.kind === "speak") {
+        const data = { count: prod.state.count, correct_count: prod.state.correctCount, last_rating: prod.state.lastRating, next_at: prod.state.nextAt ? new Date(prod.state.nextAt) : null };
+        await tx.speakState.upsert({ where: { user_id_sentence_id: { user_id: user.id, sentence_id: prod.sentenceId } }, create: { user_id: user.id, sentence_id: prod.sentenceId, ...data }, update: data });
+      } else if (prod?.kind === "dialogue") {
+        const data = { attempts_done: prod.state.attemptsDone, scores: prod.state.scores, next_attempt_at: prod.state.nextAttemptAt ? new Date(prod.state.nextAttemptAt) : null };
+        await tx.dialogueState.upsert({ where: { user_id_dialogue_id: { user_id: user.id, dialogue_id: prod.dialogueId } }, create: { user_id: user.id, dialogue_id: prod.dialogueId, ...data }, update: data });
+      } else if (prod?.kind === "errorfix") {
+        const data = {
+          attempts_done: prod.state.attemptsDone,
+          results: prod.state.results as unknown as Prisma.InputJsonValue,
+          next_attempt_at: prod.state.nextAttemptAt ? new Date(prod.state.nextAttemptAt) : null,
+        };
+        await tx.errorfixState.upsert({ where: { user_id_errorfix_item_id: { user_id: user.id, errorfix_item_id: prod.itemId } }, create: { user_id: user.id, errorfix_item_id: prod.itemId, ...data }, update: data });
       }
       // «کلمه‌های این متن»: its words wait in the queue (PRD §7.5, source `key_word`).
       if (result.keyWords.length > 0) {

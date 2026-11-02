@@ -14,10 +14,10 @@ import { num, type Settings } from "../../src/engine/settings";
 import { itemKey, type LearnerSnapshot } from "../../src/engine/state";
 import type { Lang } from "../../src/engine/text";
 import { tehranDate } from "../../src/engine/time";
-import { nearAnswer, rightAnswer, slipAnswer, textAnswers, wrongAnswer, type Policy } from "../../src/sim/answers";
+import { nearAnswer, productionAnswer, rightAnswer, slipAnswer, textAnswers, wrongAnswer, type Policy } from "../../src/sim/answers";
 import { closeLeft, finishLevels, newDay, record } from "./learner";
 
-export { nearAnswer, rightAnswer, rightQuestion, slipAnswer, textAnswers, wrongAnswer, wrongQuestion, type Policy } from "../../src/sim/answers";
+export { nearAnswer, productionAnswer, rightAnswer, rightQuestion, slipAnswer, textAnswers, wrongAnswer, wrongQuestion, type Policy } from "../../src/sim/answers";
 
 /** Right with probability `p` (a tenth of the typed ones a near slip), else a wrong option, a typo or «نمی‌دانم». */
 export const randomPolicy =
@@ -25,6 +25,7 @@ export const randomPolicy =
   (card, ex, rng, info) => {
     const latencyMs = 2000 + Math.floor(rng() * 14000);
     if (card.t === "text") return { answer: textAnswers(info.plan, card, rng, p), latencyMs: latencyMs * 10 };
+    if (card.prod) return { answer: productionAnswer(card, rng, p), latencyMs: latencyMs * 3 };
     if (!ex) return { answer: { seen: true }, latencyMs };
     if (rng() >= p) return { answer: slipAnswer(ex, rng), latencyMs };
     return { answer: (rng() < 0.1 && nearAnswer(ex, language)) || rightAnswer(ex), latencyMs };
@@ -33,14 +34,14 @@ export const randomPolicy =
 export const always =
   (right: boolean): Policy =>
   (card, ex, rng, info) => ({
-    answer: card.t === "text" ? textAnswers(info.plan, card, rng, right ? 1 : 0) : ex ? (right ? rightAnswer(ex) : wrongAnswer(ex)) : { seen: true },
+    answer: card.t === "text" ? textAnswers(info.plan, card, rng, right ? 1 : 0) : card.prod ? productionAnswer(card, rng, right ? 1 : 0) : ex ? (right ? rightAnswer(ex) : wrongAnswer(ex)) : { seen: true },
     latencyMs: 6000,
   });
 
 export const withAccuracy =
   (p: number): Policy =>
   (card, ex, rng, info) => ({
-    answer: card.t === "text" ? textAnswers(info.plan, card, rng, p) : ex ? (rng() < p ? rightAnswer(ex) : wrongAnswer(ex)) : { seen: true },
+    answer: card.t === "text" ? textAnswers(info.plan, card, rng, p) : card.prod ? productionAnswer(card, rng, p) : ex ? (rng() < p ? rightAnswer(ex) : wrongAnswer(ex)) : { seen: true },
     latencyMs: 3000 + Math.floor(rng() * 9000),
   });
 

@@ -61,6 +61,9 @@ export function freshLearner(language: string, opts: { sessionLength?: number; v
     drills: [],
     texts: [],
     phonics: [],
+    speaks: [],
+    dialogues: [],
+    errorfixes: [],
     mixedWithoutText: 0,
     history: new Map(),
     sentenceSeen: new Map(),
@@ -128,6 +131,11 @@ export function record(learner: LearnerSnapshot, result: Extract<PlayResult, { d
     const after = phonicsSkipsAfter(next.enrollment.phonicsSkips, result.phonics ? "round" : "later", settings);
     next.enrollment = { ...next.enrollment, phonicsSkips: after.skips, phonicsAuto: next.enrollment.phonicsAuto && !after.off };
   }
+  // Speaking (PRD §8b): only its own row.
+  const prod = result.production;
+  if (prod?.kind === "speak") next.speaks = [...next.speaks.filter((item) => item.sentenceId !== prod.sentenceId), prod.state];
+  if (prod?.kind === "dialogue") next.dialogues = [...next.dialogues.filter((item) => item.dialogueId !== prod.dialogueId), prod.state];
+  if (prod?.kind === "errorfix") next.errorfixes = [...next.errorfixes.filter((item) => item.itemId !== prod.itemId), prod.state];
   if (result.drill !== null) {
     const sentenceId = result.drill;
     const before = next.drills.find((drill) => drill.sentenceId === sentenceId) ?? null;

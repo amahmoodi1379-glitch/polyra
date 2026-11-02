@@ -14,7 +14,7 @@ import { seeded, type Rng } from "@/engine/random";
 import type { Card } from "@/engine/session/types";
 import { num, type Settings } from "@/engine/settings";
 import type { ItemStateE } from "@/engine/state";
-import { nearAnswer, rightAnswer, slipAnswer, textAnswers, type Policy } from "./answers";
+import { nearAnswer, productionAnswer, rightAnswer, slipAnswer, textAnswers, type Policy } from "./answers";
 
 const DAY_MS = 86_400_000;
 /** FSRS-4.5's curve, for an item that was introduced but never rated (its first exercise failed). */
@@ -82,6 +82,11 @@ export function human(opts: { content: Content; settings: Settings; seed: string
       const a = opts.ability(card);
       const help = info.stage === "help" ? 1.15 : 1;
       return { answer: textAnswers(plan, card, rng, (question) => questionGuess(question) + (1 - questionGuess(question)) * Math.min(1, a * questionHardness(question) * help)), latencyMs };
+    }
+    // Speaking: the learner's ability alone (PRD §8b); a dialogue takes its turns' time.
+    if (card.prod) {
+      const secs = card.prod.kind === "dialogue" ? card.prod.view.turns.length * num(settings, "time.dialogue_turn") : num(settings, card.prod.kind === "speak" ? "time.speak" : "time.errorfix");
+      return { answer: productionAnswer(card, rng, opts.ability(card)), latencyMs: Math.round(secs * (0.7 + 0.6 * rng()) * 1000) };
     }
     const latencyMs = Math.round(seconds(card, ex) * (0.7 + 0.6 * rng()) * 1000);
     if (!ex) return { answer: { seen: true }, latencyMs };

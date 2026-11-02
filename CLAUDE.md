@@ -78,7 +78,8 @@ Deploy: Runflare builds `main` (`docs/deploy-runflare.md`). Work on the session 
   `run.ts` publishes the ready ones with their child rows, `levels.ts` the level checklist, level release and language live.
 - «بازبینی» (PRD §13.4, §13.9 step 4; approving happens only here): `src/server/content/review` — `queue.ts` sends a batch
   to review after QA (the B1+ sentence sample), `decide.ts` approve, reject and what blocks approval, `list.ts` the queue,
-  `preview.ts` the learner's screens built with the engine's own builders, `findings.ts` the «مشکوک» marks. Page
+  `preview.ts` the learner's screens built with the engine's own builders (dialogues, find the mistake and writing also at the
+  bottom of their item page, any status), `findings.ts` the «مشکوک» marks. Page
   `src/app/admin/review`, phone frame `src/components/admin/review/learner-preview.tsx`.
 - Audio (PRD §13.8; the phone's voice reads anything without a file). `src/lib/audio`: the file format, loudness and
   mp3 (shared by browser and server). `src/server/content/audio`: `slots.ts` (keys like `word:12`, `phonics:3:pair-a:0`),
@@ -116,6 +117,13 @@ Deploy: Runflare builds `main` (`docs/deploy-runflare.md`). Work on the session 
   block (`{skip:"drop"}` takes the rest out unscored without sound). Server: `answer.ts` writes `phonics_state`,
   `lists.ts` `myPhonics`/`myPhonicsLesson`. Pages `learn/[lang]/phonics` and `phonics/[id]`; the P2–P5 controls are in
   `exercise.tsx`, the lesson face `PhonicsFace` in `cards.tsx`. Demo lessons: `fixtures/demo-fr/phonics.ts`.
+- Speaking and writing (PRD §8b): `src/engine/production.ts` («بگو، بعد بشنو» S1 order and gaps, dialogues S3, find the
+  mistake S4 and its grading, the weekly writing card). Plan keys `s:`/`d:`/`e:`, cards `speak`/`dialogue`/`errorfix` with
+  `card.prod` (step 6 and 8 of `build.ts`; production yields when due reviews did not fit). Server: `answer.ts` writes
+  `speak_state`/`dialogue_state`/`errorfix_state`; `src/server/learn/writing.ts` the writing card, page, save (week, streak) and
+  «نوشته‌های من» (route `api/learn/writing`). Browser: `src/components/learn/session/speaking.tsx` (the three screens, also in
+  the panel's preview), `src/components/learn/writing.tsx`, pages `learn/[lang]/writing` (`?task=` for a tester's try, not kept)
+  and `writings`. Demo: `fixtures/demo-fr/speaking.ts`. «آزمایش مثل زبان‌آموز»: `productionOverview` in `rehearse.ts`.
 - Learner sessions (PRD §10, §15.4): `src/engine/session` builds and plays a plan (`build.ts`, `play.ts`, `advance.ts`);
   the browser and the server run the same functions. `src/server/learn`: `content.ts` (what a learner or tester may
   see, cached 30s), `learner.ts` (the snapshot the engine needs), `session.ts` (start, resume, close, preview),

@@ -3,10 +3,11 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ChevronRight } from "lucide-react";
 import { ItemAudioPanel } from "@/components/admin/audio/item-audio";
+import { LearnerPreview } from "@/components/admin/review/learner-preview";
 import { FindingList, QaMark } from "@/components/admin/qa-mark";
 import { LevelChip, StatusChip } from "@/components/admin/status-chip";
 import { Voiced } from "@/components/admin/voiced";
-import { formatNumber, t } from "@/i18n";
+import { formatNumber, t, type MessageKey } from "@/i18n";
 import { cn } from "@/lib/utils";
 import { requireAdmin } from "@/server/auth/session";
 import { itemAudio } from "@/server/content/audio/view";
@@ -14,6 +15,7 @@ import { editors } from "@/server/content/library/edit";
 import type { ItemView } from "@/server/content/library/edit/types";
 import { entityOf, isLibrarySlug, type LibrarySlug } from "@/server/content/library/slugs";
 import { findingMark, findingsOf } from "@/server/content/review/findings";
+import { previewItem } from "@/server/content/review/preview";
 import type { EntityRef } from "@/server/content/report";
 import { appSetting } from "@/server/settings/read";
 import { libraryHref } from "../../links";
@@ -22,6 +24,8 @@ import { ItemActions } from "./item-actions";
 import { ItemForm } from "./item-form";
 
 type Params = { type: string; id: string };
+
+const PREVIEWED = new Set<LibrarySlug>(["dialogues", "errorfix", "writing"]);
 
 async function load(params: Promise<Params>) {
   const { type, id } = await params;
@@ -56,6 +60,8 @@ export default async function ItemPage({ params }: PageProps<"/admin/content/[ty
   const early = view.status === "draft" || view.status === "needs_review";
   const findings = early ? ((await findingsOf(entityOf[slug] as EntityRef["type"], [id])).get(id) ?? []) : [];
   const mark = findingMark(findings);
+  // The speaking and writing screens, as in «بازبینی», at any status: an approved item leaves the review queue.
+  const preview = view.status !== "retired" && PREVIEWED.has(slug) ? await previewItem(slug, language, id) : null;
 
   return (
     <>
@@ -100,6 +106,18 @@ export default async function ItemPage({ params }: PageProps<"/admin/content/[ty
           ) : null}
           <ItemForm slug={slug} id={id} language={language} values={loaded.values} context={loaded.context} levels={levels} readOnly={view.status === "retired"} />
           {audioAside ? null : audioPanel}
+          {preview ? (
+            <details id="learner" className="bg-surface rounded-[22px] px-5 py-4 shadow-[var(--shadow-1)]" open>
+              <summary className="text-ink cursor-pointer text-[15px] font-extrabold">{t("admin.review.preview.title")}</summary>
+              <div className="flex justify-center pt-4">
+                {preview.state === "ready" ? (
+                  <LearnerPreview preview={preview} languageName={t(`common.languages.${language}` as MessageKey)} itemKey={`${slug}-${id}`} />
+                ) : (
+                  <p className="text-ink-2 text-[14px] leading-7">{t(`admin.review.preview.${preview.reason}`)}</p>
+                )}
+              </div>
+            </details>
+          ) : null}
         </div>
         <ItemAside slug={slug} language={language} view={view} context={loaded.context} top={audioAside ? audioPanel : null} />
       </div>

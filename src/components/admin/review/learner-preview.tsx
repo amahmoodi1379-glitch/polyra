@@ -9,8 +9,10 @@ import { hush } from "@/components/learn/speak";
 import { Example, LessonFace, PhonicsFace, TableFace, WordFace } from "@/components/learn/session/cards";
 import { Exercise, type Retry } from "@/components/learn/session/exercise";
 import { Feedback } from "@/components/learn/session/feedback";
+import { DialogueStage, ErrorfixStage } from "@/components/learn/session/speaking";
 import { TextReview, TextStage, TextWordsFace } from "@/components/learn/session/text";
 import type { Answers } from "@/components/learn/session/text-questions";
+import { WritingEditor } from "@/components/learn/writing";
 import { Button } from "@/components/ui/button";
 import type { RawAnswer } from "@/engine/ex";
 import { grade, type Graded } from "@/engine/grade";
@@ -29,6 +31,7 @@ function askOf(screen: Screen, languageName: string): string {
       attempt: stage === "help" ? t("learn.text.attemptHelp", { n: attempt }) : stage === "first" ? t("admin.review.screens.attemptFirst", { n: attempt }) : t("admin.review.screens.attempt", { n: attempt }),
     });
   }
+  if (screen.kind === "dialogue") return t("admin.review.screens.dialogue", { n: screen.attempt });
   return t(`admin.review.screens.${screen.kind}`);
 }
 
@@ -140,6 +143,15 @@ export function LearnerPreview({ preview, languageName, itemKey }: { preview: Re
       cta = seen(t("learn.phonics.start"));
       break;
     }
+    case "dialogue":
+      whole = <DialogueStage key={id} id={id} view={screen.view} attempt={screen.attempt} sound onFinish={() => go(at + 1)} />;
+      break;
+    case "errorfix":
+      whole = <ErrorfixStage key={id} id={id} view={screen.view} language={preview.language} onFinish={() => go(at + 1)} />;
+      break;
+    case "writing":
+      whole = <WritingEditor key={id} language={preview.language} task={screen.task} minToFinish={screen.minToFinish} trying={false} preview />;
+      break;
     case "exercise":
       body = (
         <Exercise

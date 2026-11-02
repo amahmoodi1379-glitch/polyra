@@ -22,6 +22,7 @@ import { EndScreen } from "./end";
 import { Exercise, type Retry } from "./exercise";
 import { Feedback } from "./feedback";
 import { flush, listenOutbox, send, useOffline, waiting } from "./outbox";
+import { DialogueStage, ErrorfixStage, SpeakStage } from "./speaking";
 import { TextReview, TextStage, TextWordsFace, type TextProgressNote } from "./text";
 import type { Answers } from "./text-questions";
 
@@ -371,6 +372,7 @@ export function Player({ language, languageName, scope: firstScope }: { language
     if (voice !== false || !plan) return false;
     if (target.t === "phonics" || target.t === "phonicsq") return roundNeedsVoice(plan, target);
     if (target.t === "drill") return needsVoice(target.ex?.listen);
+    if (target.prod?.kind === "speak") return needsVoice(target.prod.view.sentence.speak);
     const textId = target.text?.textId ?? (target.t === "textwords" ? Number(target.item.slice(2)) : null);
     const view = textId === null ? null : plan.texts[textId];
     return !!view && !view.audio && view.sentences.some((sentence) => needsVoice(sentence.speak));
@@ -655,6 +657,24 @@ export function Player({ language, languageName, scope: firstScope }: { language
             onTap={tap}
             onProgress={textProgress}
           />
+        )}
+      </Frame>
+    );
+  }
+
+  // Speaking (PRD §8b): each screen runs its own steps and hands its answer over on its last «ادامه».
+  if (card.prod) {
+    const { prod } = card;
+    const finish = (raw: RawAnswer) => void submit(raw);
+    return (
+      <Frame>
+        {bar(progress)}
+        {prod.kind === "speak" ? (
+          <SpeakStage key={card.id} id={card.id} view={prod.view} languageName={languageName} muted={muted} onFinish={finish} />
+        ) : prod.kind === "dialogue" ? (
+          <DialogueStage key={card.id} id={card.id} view={prod.view} attempt={prod.attempt} sound={!muted && !plan.noAudio && voice !== false} onFinish={finish} />
+        ) : (
+          <ErrorfixStage key={card.id} id={card.id} view={prod.view} language={language} onFinish={finish} />
         )}
       </Frame>
     );

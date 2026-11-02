@@ -5,8 +5,21 @@ import { grade, type GradeOutcome, type Graded } from "../grade";
 import type { NotebookOp } from "../notebook";
 import { dictSource, gradeQuestion, stageScore, type GradedQuestion, type QuestionAnswer } from "../questions";
 import { afterPhonicsRound, phonicsScore } from "../phonics";
+import { afterDialogue, afterErrorfix, afterSpeak, dialogueScore, gradeDialogue, gradeErrorfix, SPEAK_RESULT, type ErrorfixGraded } from "../production";
 import { num, type Settings } from "../settings";
-import { isItemKey, parseItemKey, type ConfusionE, type ItemStateE, type PhonicsStateE, type TextStage, type TextStateE } from "../state";
+import {
+  isItemKey,
+  parseItemKey,
+  type ConfusionE,
+  type DialogueStateE,
+  type ErrorfixStateE,
+  type ItemStateE,
+  type PhonicsStateE,
+  type SpeakRating,
+  type SpeakStateE,
+  type TextStage,
+  type TextStateE,
+} from "../state";
 import { afterStage } from "../texts";
 import type { Lang } from "../text";
 import { advance, type Advanced } from "./advance";
@@ -26,7 +39,7 @@ export type PlayEnv = {
 };
 
 export type PlayLog = {
-  kind: "intro" | "review" | "followup" | "practice" | "drill" | "text_attempt" | "phonics";
+  kind: "intro" | "review" | "followup" | "practice" | "drill" | "text_attempt" | "phonics" | "self" | "dialogue" | "errorfix";
   itemType: string | null;
   itemId: number | null;
   code: string | null;
@@ -34,7 +47,7 @@ export type PlayLog = {
   stepAfter: number | null;
   sentenceId: number | null;
   targetId: number | null;
-  result: Graded["result"];
+  result: Graded["result"] | (typeof SPEAK_RESULT)[SpeakRating];
   reason: Graded["reason"];
   raw: string | null;
   chosenWordId: number | null;
@@ -58,6 +71,16 @@ export type TextOutcome = {
   /** Seconds added to today's new text time of the track (PRD §10.5): the whole attempt, after its first round. */
   newSec: number;
 };
+
+/**
+ * A speaking card, judged (PRD §8b): its row to write. Nothing else of the learner changes: no card, no
+ * step, no notebook, no level, no accuracy (§8b.1).
+ */
+export type ProductionOutcome =
+  | { kind: "speak"; sentenceId: number; rating: SpeakRating; state: SpeakStateE }
+  /** One row per turn in `review_log`, each with its line and whether the first choice was right. */
+  | { kind: "dialogue"; dialogueId: number; attempt: number; turns: { sentenceId: number; right: boolean; choice: number | null }[]; score: number; state: DialogueStateE }
+  | { kind: "errorfix"; itemId: number; attempt: number; graded: ErrorfixGraded; state: ErrorfixStateE };
 
 export type PlayResult =
   /** Not graded: a synonym gets one more try, Persian letters get the keyboard message (PRD §5.6). */
@@ -87,6 +110,8 @@ export type PlayResult =
       phonics: { state: PhonicsStateE; score: number } | null;
       /** «بعداً» on an auto phonics round, counted toward `phonics.max_skips` (PRD §8.4). */
       phonicsLater: boolean;
+      /** A speaking card (PRD §8b). */
+      production?: ProductionOutcome | null;
       advanced: Advanced;
     };
 
@@ -112,12 +137,12 @@ export function wantsAlt(plan: SessionPlan, card: Card, why: { muted: boolean; n
 }
 
 /**
- * Cards that cannot be played without sound (PRD §10.12): a sentence heard alone, a phonics round, and
+ * Cards that cannot be played without sound (PRD §10.12): a sentence heard alone, a phonics round, «بگو، بعد بشنو» (§8b.1), and
  * every card of a listening text (its key words, its stages). «الان نمی‌توانم گوش بدهم» takes them out
  * of the session unscored; a text for reading stays.
  */
 export function needsSound(plan: SessionPlan, card: Card): boolean {
-  if (card.t === "drill" || card.t === "phonics" || card.t === "phonicsq") return true;
+  if (card.t === "drill" || card.t === "phonics" || card.t === "phonicsq" || card.t === "speak") return true;
   if (card.t === "text") return card.text?.track === "listening";
   if (card.t === "textwords") return plan.queue.some((other) => other.block === card.block && other.t === "text" && other.text?.track === "listening");
   return false;
@@ -192,6 +217,34 @@ export function playCard(plan: SessionPlan, cardId: string, answer: RawAnswer, t
     const log: PlayLog = { ...base, itemType: "phonics_lesson", itemId: lessonId, code: null, ...(skip ? { result: "idk", raw: skip } : {}) };
     const phonicsLater = card.t === "phonics" && skip === "later" && !!plan.phonics?.auto;
     return { done: true, card, ex: null, graded: null, log, single: null, round: null, state: null, roundState: null, notebook: [], pair: null, drill: null, text: null, keyWords: [], phonics: null, phonicsLater, advanced };
+  }
+
+  // Speaking (PRD §8b): judged here, one row to write, no counter of the session moves (§8b.1).
+  if (card.prod) {
+    const { prod } = card;
+    const advanced = advance(plan, { cardId, result: "seen", elapsedSec: timing.elapsedSec }, ctx.settings);
+    const empty = { ex: null, graded: null, single: null, round: null, state: null, roundState: null, notebook: [], pair: null, drill: null, text: null, keyWords: [], phonics: null, phonicsLater: false };
+    if (prod.kind === "speak") {
+      const rating: SpeakRating = "self" in answer && (answer.self === "ok" || answer.self === "near") ? answer.self : "no";
+      const sentenceId = prod.view.sentence.id;
+      const state = afterSpeak(prod.before, sentenceId, rating, ctx.today, ctx.settings);
+      const log: PlayLog = { ...base, kind: "self", itemType: "sentence", itemId: sentenceId, code: "S1", sentenceId, result: SPEAK_RESULT[rating] };
+      return { done: true, card, ...empty, log, production: { kind: "speak", sentenceId, rating, state }, advanced };
+    }
+    if (prod.kind === "dialogue") {
+      const firsts = "turns" in answer && Array.isArray(answer.turns) ? answer.turns : [];
+      const right = gradeDialogue(prod.view, firsts);
+      const score = dialogueScore(right);
+      const state = afterDialogue(prod.before, prod.view.id, score, ctx.today, ctx.settings);
+      const turns = prod.view.turns.map((turn, i) => ({ sentenceId: turn.line.id, right: right[i], choice: typeof firsts[i] === "number" ? firsts[i] : null }));
+      const log: PlayLog = { ...base, kind: "dialogue", itemType: "dialogue", itemId: prod.view.id, code: "S3", result: score === 1 ? "correct" : "wrong" };
+      return { done: true, card, ...empty, log, production: { kind: "dialogue", dialogueId: prod.view.id, attempt: prod.attempt, turns, score, state }, advanced };
+    }
+    const fixes = "fixes" in answer && answer.fixes && typeof answer.fixes === "object" ? answer.fixes : {};
+    const graded = gradeErrorfix(prod.view, fixes, env.language);
+    const state = afterErrorfix(prod.before, prod.view.id, graded.result, ctx.today, ctx.settings);
+    const log: PlayLog = { ...base, kind: "errorfix", itemType: "errorfix_item", itemId: prod.view.id, code: "S4", result: graded.result.ok ? "correct" : "wrong", raw: JSON.stringify(fixes) };
+    return { done: true, card, ...empty, log, production: { kind: "errorfix", itemId: prod.view.id, attempt: prod.attempt, graded, state }, advanced };
   }
 
   // Cards without a score (PRD §9.2, kind intro); «کلمه‌های این متن» sends its words to the queue (PRD §7.5).

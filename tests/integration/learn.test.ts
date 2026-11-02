@@ -1,5 +1,5 @@
 import { randomUUID } from "node:crypto";
-import { afterAll, beforeAll, beforeEach, describe, expect, it } from "vitest";
+import { afterAll, afterEach, beforeAll, beforeEach, describe, expect, it } from "vitest";
 import { newItemState } from "@/engine/answer";
 import { hasCard } from "@/engine/content";
 import type { RawAnswer } from "@/engine/ex";
@@ -7,6 +7,7 @@ import { emptyCard, rateCard, withDue } from "@/engine/fsrs";
 import { playCard, shownEx } from "@/engine/session/play";
 import type { Card, Scope } from "@/engine/session/types";
 import type { ItemStateE, ItemType } from "@/engine/state";
+import { num } from "@/engine/settings";
 import { plusDays, tehranDate } from "@/engine/time";
 import { seeded } from "@/engine/random";
 import { demoStatus, loadDemo, removeDemo } from "@/server/content/demo";
@@ -23,8 +24,10 @@ import { queueTappedWord } from "@/server/learn/tap";
 import { saveTextProgress } from "@/server/learn/text-progress";
 import { travelDays } from "@/server/learn/time-travel";
 import { saveItemState } from "@/server/learn/writes";
+import { myWritings, saveWriting, tickWriting, writingCard } from "@/server/learn/writing";
 import { engineSettings } from "@/server/settings/read";
 import { rightAnswer, textAnswers } from "../../fixtures/synthetic/drive";
+import { productionAnswer } from "@/sim/answers";
 import { testDb } from "./db";
 
 /**
@@ -58,7 +61,7 @@ async function started(user: Person, now = NOW, scope: Scope = "mixed"): Promise
 /** What the browser does for one card: plays it locally, then sends the final answer. */
 function answerFor(bundle: Bundle, plan: Bundle["plan"], card: Card, at: Date, answer?: RawAnswer) {
   const ex = card.t === "intro" || card.t === "lesson" || card.t === "table" || card.t === "confusion" ? null : shownEx(plan, card);
-  const raw = answer ?? (card.t === "text" ? textAnswers(plan, card, seeded(card.id), 1) : ex ? rightAnswer(ex) : { seen: true });
+  const raw = answer ?? (card.t === "text" ? textAnswers(plan, card, seeded(card.id), 1) : card.prod ? productionAnswer(card, seeded(card.id), 1) : ex ? rightAnswer(ex) : { seen: true });
   const lexicon = new Map(bundle.lexicon);
   const ctx = { settings: bundle.settings, now: at, today: tehranDate(at), latency: plan.latency };
   const result = playCard(plan, card.id, raw, { latencyMs: 5000, elapsedSec: 5 }, { ctx, language: "fr", wordsWithLemma: (lemma) => lexicon.get(lemma) ?? [] });
@@ -115,6 +118,10 @@ const LEARNER_TABLES = [
   "sentence_drill_state",
   "text_state",
   "phonics_state",
+  "speak_state",
+  "dialogue_state",
+  "errorfix_state",
+  "writing_entry",
   "skill_level",
   "enrollment",
   "trial_ledger",
@@ -126,7 +133,7 @@ beforeAll(async () => {
   await testDb.$executeRawUnsafe(`TRUNCATE ${rows.map((row) => `"public"."${row.tablename}"`).join(", ")} RESTART IDENTITY CASCADE`);
   await testDb.language.createMany({ data: [{ code: "fr" }, { code: "de" }] });
   const loaded = await loadDemo();
-  expect(loaded).toMatchObject({ kind: "loaded", words: 60, units: 6, texts: 7, phonics: 3 });
+  expect(loaded).toMatchObject({ kind: "loaded", words: 60, units: 6, texts: 7, phonics: 3, speaking: 6 });
 }, 120_000);
 
 beforeEach(async () => {
@@ -144,7 +151,7 @@ describe("the French demo", () => {
     expect(await testDb.grammarUnit.count({ where: { lesson_fa: null } })).toBe(0);
     expect(await testDb.text.count({ where: { language: "fr", status: "approved" } })).toBe(7);
     expect(await testDb.question.count({ where: { language: "fr", status: { not: "approved" } } })).toBe(0);
-    expect(await loadDemo()).toEqual({ kind: "already", texts: 0 });
+    expect(await loadDemo()).toEqual({ kind: "already", texts: 0, speaking: 0 });
   });
 
   it("adds a text written after a server loaded the demo, approved like the rest", async () => {
@@ -155,13 +162,13 @@ describe("the French demo", () => {
     await testDb.sentence.deleteMany({ where: { id: { in: last.sentence_ids } } });
     forgetContent();
 
-    expect(await loadDemo()).toEqual({ kind: "already", texts: 1 });
+    expect(await loadDemo()).toEqual({ kind: "already", texts: 1, speaking: 0 });
     const back = await testDb.text.findFirstOrThrow({ where: { language: "fr", code: "fr-a1-t007" }, include: { questions: true } });
     expect(back).toMatchObject({ status: "approved", level: "A1", band: 1, kind: "ad" });
     expect(back.questions).toHaveLength(questions.length);
     expect(back.questions.every((question) => question.status === "approved")).toBe(true);
     expect(await testDb.sentence.count({ where: { id: { in: back.sentence_ids }, status: "approved" } })).toBe(back.sentence_ids.length);
-    expect(await loadDemo()).toEqual({ kind: "already", texts: 0 });
+    expect(await loadDemo()).toEqual({ kind: "already", texts: 0, speaking: 0 });
   });
 });
 
@@ -888,13 +895,147 @@ describe("moving time for a test account", () => {
   });
 });
 
+describe("speaking and writing (PRD §8b)", () => {
+  const setting = (key: string, value: number) =>
+    testDb.engineSetting.upsert({ where: { key }, create: { key, value, default_value: value, description_fa: key }, update: { value } });
+  afterEach(() => testDb.engineSetting.deleteMany({ where: { key: "gate.dialogue_words" } }));
+
+  /** Every demo card word learned and not due, so the session has room and every sentence is known. */
+  async function knowsEveryWord(userId: number) {
+    for (const word of await testDb.word.findMany({ where: { language: "fr", no_card: false }, select: { id: true } })) await learned(userId, "word", word.id, { dueInDays: 5 });
+  }
+
+  it("«بگو، بعد بشنو» and a dialogue in a mixed session write their states and one log row per dialogue turn", async () => {
+    const user = await enrolled();
+    await knowsEveryWord(user.id);
+    await setting("gate.dialogue_words", 0);
+    const bundle = await started(user);
+    expect(bundle.plan.queue.map((card) => card.t)).toContain("dialogue");
+    const dialogue = bundle.plan.queue.find((card) => card.t === "dialogue")!;
+    await playAll(user, bundle);
+    // Behind the dialogue gate again, the next session's speaking share goes to «بگو، بعد بشنو».
+    await testDb.engineSetting.deleteMany({ where: { key: "gate.dialogue_words" } });
+    const later = new Date(NOW.getTime() + 3_600_000);
+    const next = await started(user, later);
+    const kinds = next.plan.queue.map((card) => card.t);
+    expect(kinds).toContain("speak");
+    expect(kinds).not.toContain("dialogue");
+    // A speaking card never opens the session (DECISIONS.md).
+    expect(kinds.slice(0, 3)).not.toContain("speak");
+    const speaks = kinds.filter((kind) => kind === "speak").length;
+    await playAll(user, next, later);
+
+    const dialogueId = Number(dialogue.item.slice(2));
+    const state = await testDb.dialogueState.findFirstOrThrow({ where: { user_id: user.id, dialogue_id: dialogueId } });
+    expect(state).toMatchObject({ attempts_done: 1, scores: [1] });
+    expect(state.next_attempt_at).not.toBeNull();
+    const turns = (await testDb.dialogue.findUniqueOrThrow({ where: { id: dialogueId } })).turns as unknown[];
+    expect(await testDb.reviewLog.count({ where: { user_id: user.id, kind: "dialogue", item_id: dialogueId } })).toBe(turns.length);
+    expect(await testDb.speakState.count({ where: { user_id: user.id, count: 1, correct_count: 1, last_rating: "ok" } })).toBe(speaks);
+    expect(await testDb.reviewLog.count({ where: { user_id: user.id, kind: "self", result: "self_ok" } })).toBe(speaks);
+    // Nothing of speaking moves a word (PRD §8b.1).
+    expect(await testDb.itemState.count({ where: { user_id: user.id, item_type: "word", step: { not: 2 } } })).toBe(0);
+  });
+
+  it("find the mistake opens at grammar B1 with its units opened, and keeps both attempts", async () => {
+    const user = await enrolled();
+    await knowsEveryWord(user.id);
+    for (const unit of await testDb.grammarUnit.findMany({ where: { language: "fr" }, select: { id: true } })) await learned(user.id, "grammar_unit", unit.id, { dueInDays: 5 });
+    expect((await started(user)).plan.queue.some((card) => card.t === "errorfix")).toBe(false);
+    await testDb.session.deleteMany({ where: { user_id: user.id } });
+
+    await testDb.skillLevel.updateMany({ where: { user_id: user.id, language: "fr", skill: "grammar" }, data: { level: "B1" } });
+    const bundle = await started(user);
+    const card = bundle.plan.queue.find((item) => item.t === "errorfix");
+    expect(card).toBeDefined();
+    await playAll(user, bundle);
+    const state = await testDb.errorfixState.findFirstOrThrow({ where: { user_id: user.id, errorfix_item_id: Number(card!.item.slice(2)) } });
+    expect(state).toMatchObject({ attempts_done: 1, results: [{ ok: true, wrongTaps: 0 }] });
+    expect(state.next_attempt_at).not.toBeNull();
+    expect(await testDb.reviewLog.count({ where: { user_id: user.id, kind: "errorfix", result: "correct" } })).toBe(1);
+  });
+
+  it("«بازبینی» shows a dialogue's two attempts, find the mistake and the writing page as the learner gets them", async () => {
+    const dialogue = await testDb.dialogue.findFirstOrThrow({ where: { language: "fr", code: "fr-a1-d001" } });
+    const shown = await previewItem("dialogues", "fr", dialogue.id);
+    if (shown.state !== "ready") throw new Error(shown.reason);
+    expect(shown.screens.map((screen) => (screen.kind === "dialogue" ? screen.attempt : null))).toEqual([1, 2]);
+    const first = shown.screens[0];
+    if (first.kind !== "dialogue") throw new Error(first.kind);
+    expect(first.view.turns).toHaveLength(5);
+    expect(first.view.turns[0]).toMatchObject({ line: { text: "Bonjour, vous allez bien ?" }, correct: 0 });
+    expect(first.view.turns[0].choices).toHaveLength(3);
+
+    const item = await testDb.errorfixItem.findFirstOrThrow({ where: { language: "fr" }, orderBy: { id: "asc" } });
+    const fix = await previewItem("errorfix", "fr", item.id);
+    if (fix.state !== "ready" || fix.screens[0].kind !== "errorfix") throw new Error("no errorfix screen");
+    expect(fix.screens[0].view).toMatchObject({ corrected: "Ma sœur est grande et elle a un chat noir.", marks: [{ wrong: "grand", right: "grande" }, { wrong: "est", right: "a" }, { wrong: "noire", right: "noir" }] });
+
+    // A dialogue's wrong answer is never given to say aloud; its right answer may be (PRD §8b.2).
+    const content = await loadContent("fr", "tester");
+    const byText = (text: string) => [...content.sentences.values()].find((sentence) => sentence.text === text);
+    expect(byText("Non, je suis Paul.")).toMatchObject({ wrongChoice: true, bank: false });
+    expect(byText("Oui, très bien, merci.")?.wrongChoice).toBeUndefined();
+
+    const task = await testDb.writingTask.findFirstOrThrow({ where: { language: "fr" }, orderBy: { id: "asc" } });
+    expect(await previewItem("writing", "fr", task.id)).toMatchObject({ state: "ready", screens: [{ kind: "writing", task: { id: task.id, minWords: 60 }, minToFinish: 30 }] });
+  });
+
+  it("the weekly writing: open from vocabulary B1, kept with its ticks, counts the week and the streak; a tester's try changes nothing", async () => {
+    const user = await enrolled();
+    expect((await writingCard(user, "fr", NOW)).state).toBe("closed");
+    const tasks = await testDb.writingTask.findMany({ where: { language: "fr" }, orderBy: { id: "asc" } });
+    expect(tasks).toHaveLength(2);
+
+    // A tester tries the second task before their level allows: not kept, nothing changes.
+    const text = Array.from({ length: 40 }, () => "Je mange du pain.").join(" ");
+    expect(await saveWriting(user, { language: "fr", taskId: tasks[1].id, text, ticks: [0, 9], seconds: 300 }, NOW)).toEqual({ kind: "ok", id: null });
+    expect(await testDb.writingEntry.count({ where: { user_id: user.id } })).toBe(0);
+    expect(await testDb.enrollment.findFirstOrThrow({ where: { user_id: user.id } })).toMatchObject({ writing_done_week: null, streak_count: 0 });
+    // A learner cannot write another task than this week's.
+    const learner = await enrolled({});
+    await testDb.skillLevel.updateMany({ where: { user_id: learner.id, language: "fr", skill: "vocab" }, data: { level: "B1" } });
+    expect(await saveWriting(learner, { language: "fr", taskId: tasks[1].id, text, ticks: [], seconds: 60 }, NOW)).toEqual({ kind: "invalid" });
+
+    await testDb.skillLevel.updateMany({ where: { user_id: user.id, language: "fr", skill: "vocab" }, data: { level: "B1" } });
+    const card = await writingCard(user, "fr", NOW);
+    expect(card).toMatchObject({ state: "open", task: { id: tasks[0].id } });
+    expect(await saveWriting(user, { language: "fr", taskId: tasks[0].id, text: "Bonjour.", ticks: [], seconds: 30 }, NOW)).toEqual({ kind: "short" });
+    const saved = await saveWriting(user, { language: "fr", taskId: tasks[0].id, text, ticks: [1, 1, 0], seconds: 3600 }, NOW);
+    expect(saved).toMatchObject({ kind: "ok" });
+    const entry = await testDb.writingEntry.findUniqueOrThrow({ where: { id: (saved as { id: number }).id } });
+    expect(entry.checklist_ticks).toEqual([0, 1]);
+    const enrollment = await testDb.enrollment.findFirstOrThrow({ where: { user_id: user.id } });
+    expect(enrollment.writing_done_week).not.toBeNull();
+    expect(enrollment.streak_count).toBe(1);
+    // Time counts up to `writing.max_minutes` (PRD §8b.6).
+    const settings = await engineSettings();
+    const day = await testDb.dailyCounter.findFirstOrThrow({ where: { user_id: user.id } });
+    expect(day.active_sec).toBe(num(settings, "writing.max_minutes") * 60);
+    expect((await writingCard(user, "fr", NOW)).state).toBe("done");
+    expect(await tickWriting(user, entry.id, [2, 0])).toBe(true);
+    const mine = await myWritings(user, "fr");
+    expect(mine.map((item) => item.ticks)).toEqual([[0, 2]]);
+  });
+});
+
 describe("removing the demo", () => {
   it("takes out the content and what testers did with it", async () => {
     const user = await enrolled();
     await playAll(user, await started(user));
     expect(await testDb.itemState.count({ where: { user_id: user.id } })).toBeGreaterThan(0);
     expect(await testDb.phonicsState.count({ where: { user_id: user.id } })).toBe(1);
+    const sentence = await testDb.sentence.findFirstOrThrow({ where: { language: "fr" } });
+    const dialogue = await testDb.dialogue.findFirstOrThrow({ where: { language: "fr" } });
+    const task = await testDb.writingTask.findFirstOrThrow({ where: { language: "fr" } });
+    await testDb.speakState.create({ data: { user_id: user.id, sentence_id: sentence.id, count: 1 } });
+    await testDb.dialogueState.create({ data: { user_id: user.id, dialogue_id: dialogue.id, attempts_done: 1 } });
+    await testDb.writingEntry.create({ data: { user_id: user.id, writing_task_id: task.id, text: "Bonjour." } });
     expect(await removeDemo()).toEqual({ removed: true });
+    expect(await testDb.speakState.count({ where: { user_id: user.id } })).toBe(0);
+    expect(await testDb.dialogueState.count({ where: { user_id: user.id } })).toBe(0);
+    expect(await testDb.writingEntry.count({ where: { user_id: user.id } })).toBe(0);
+    expect(await testDb.dialogue.count() + (await testDb.errorfixItem.count()) + (await testDb.writingTask.count())).toBe(0);
     expect(await testDb.phonicsState.count({ where: { user_id: user.id } })).toBe(0);
     expect(await testDb.phonicsLesson.count({ where: { language: "fr" } })).toBe(0);
     expect(await demoStatus()).toMatchObject({ loaded: false, words: 0 });

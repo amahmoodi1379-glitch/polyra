@@ -6,11 +6,12 @@ import { startFromZero } from "@/server/learn/enroll";
 import { saveItemState } from "@/server/learn/writes";
 import { engineNumber } from "@/server/settings/read";
 import { seedSettings } from "../../scripts/seed/settings";
-import { E2E_PHONICS, E2E_READERS, E2E_TESTERS } from "./database";
+import { E2E_PHONICS, E2E_READERS, E2E_TESTERS, E2E_WRITERS } from "./database";
 
 /**
  * Fresh learner database for the browser tests: settings, the French demo, one new tester per project,
- * one per project who has met every demo word, for the texts, and one per project from zero, for phonics.
+ * one per project who has met every demo word, for the texts, one per project from zero, for phonics,
+ * and one per project at vocabulary B1, for the weekly writing.
  */
 async function main() {
   const rows = await db.$queryRawUnsafe<{ tablename: string }[]>("SELECT tablename FROM pg_tables WHERE schemaname = 'public' AND tablename <> '_prisma_migrations'");
@@ -38,6 +39,12 @@ async function main() {
     await db.$transaction(async (tx) => {
       for (const word of words) await saveItemState(tx, { userId: user.id, language: "fr" }, newItemState("word", word.id, now));
     });
+  }
+
+  for (const phone of Object.values(E2E_WRITERS)) {
+    const user = await db.user.create({ data: { phone: normalizeMobile(phone)!, session_length_min: sessionLength, is_tester: true } });
+    await startFromZero(user, "fr", now);
+    await db.skillLevel.updateMany({ where: { user_id: user.id, language: "fr", skill: "vocab" }, data: { level: "B1" } });
   }
 }
 
