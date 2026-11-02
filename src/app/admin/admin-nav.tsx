@@ -8,6 +8,7 @@ import {
   AudioLines,
   BookCheck,
   BookOpen,
+  FlaskConical,
   ClipboardPaste,
   ListChecks,
   History,
@@ -46,7 +47,13 @@ function navGroups(showTestCodes: boolean): NavGroup[] {
         { href: "/admin/transfer", label: "admin.nav.transfer", icon: ArrowDownUp },
       ],
     },
-    { label: "admin.nav.quality", items: [{ href: "/admin/health", label: "admin.nav.health", icon: Activity }] },
+    {
+      label: "admin.nav.quality",
+      items: [
+        { href: "/admin/health", label: "admin.nav.health", icon: Activity },
+        { href: "/admin/try", label: "admin.nav.rehearse", icon: FlaskConical },
+      ],
+    },
     { label: "admin.nav.people", items: [{ href: "/admin/users", label: "admin.nav.users", icon: Users }] },
     {
       label: "admin.nav.settings",

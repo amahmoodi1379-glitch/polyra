@@ -183,7 +183,8 @@ describe("backlog (PRD §10.6)", () => {
   it("a backlog session with little time left for new material still gets the one or two new words that fit (PRD §10.6 example)", () => {
     const content = syntheticContent({ perLevel: { words: [800, 100, 100, 100], units: [8, 4, 4, 4] } });
     // 5% for new material: under a pack of three words (90 seconds), over one.
-    const s = settings({ "backlog.share.review": 0.85, "backlog.share.notebook": 0.1, "backlog.share.new": 0.05 });
+    // Grammar's turn is off here: this is about the word pack (grammar first has its own tests).
+    const s = settings({ "backlog.share.review": 0.85, "backlog.share.notebook": 0.1, "backlog.share.new": 0.05, "new.grammar_first_days": 0 });
     const ids = cardWords(content);
     const items = ids.slice(0, 400).map((id, i) => learned("word", id, s, { step: 1 + (i % 5), introDaysAgo: 3 + (i % 40) }));
     const notebook: NotebookE[] = ids.slice(0, 20).map((id) => ({ refType: "word", refId: id, addedAt: plusDays(NOW, -1).toISOString(), until: plusDays(NOW, 20).toISOString(), correctCount: 0, lastCorrectDate: null }));
@@ -667,5 +668,47 @@ describe("other kinds of session (PRD §10.4, §10.8, §10.12)", () => {
     const a = playCard(plan, card.id, answer, { latencyMs: 3000, elapsedSec: 3 }, playEnv(content, s));
     const b = playCard(JSON.parse(JSON.stringify(plan)), card.id, answer, { latencyMs: 3000, elapsedSec: 3 }, playEnv(content, s));
     expect(JSON.stringify(b)).toBe(JSON.stringify(a));
+  });
+});
+
+describe("grammar's turn (DECISIONS.md, 2 November 2026: `new.grammar_first_days`)", () => {
+  const content = syntheticContent({ perLevel: { words: [800, 100, 100, 100], units: [8, 4, 4, 4] } });
+  const ids = cardWords(content);
+  /** A busy 15-minute learner in backlog: 300 words due, the first unit learned `unitDaysAgo` days ago. */
+  const busy = (s: Settings, unitDaysAgo: number) => {
+    const words = ids.slice(0, 300).map((id, i) => learned("word", id, s, { step: 1 + (i % 5), introDaysAgo: 3 + (i % 40) }));
+    const unit = learned("grammar_unit", content.units[0].id, s, { step: 2, introDaysAgo: unitDaysAgo, dueInDays: 5 });
+    return learner(15, { items: [...words, unit] });
+  };
+  /** 5% for new material: one or two words fit, a unit (over two minutes) does not. */
+  const tight = { "backlog.share.review": 0.85, "backlog.share.notebook": 0.1, "backlog.share.new": 0.05 };
+  const newUnits = (plan: SessionPlan) => plan.queue.filter((card) => card.t === "lesson" && !plan.states[card.item]).map((card) => card.item);
+
+  it("no unit for two days: the waiting unit comes first, even when the new-material time is short", () => {
+    const s = settings(tight);
+    const plan = planOf(buildSession(content, busy(s, 2), s, NOW, TODAY, opts({ lengthMin: 15 })));
+    expect(newUnits(plan)).toEqual([itemKey("grammar_unit", content.units[1].id)]);
+  });
+
+  it("a unit yesterday: words first, as before, and the unit waits when it does not fit", () => {
+    const s = settings(tight);
+    const built = buildSession(content, busy(s, 1), s, NOW, TODAY, opts({ lengthMin: 15 }));
+    expect(built.effects.backlog).toBe(true);
+    const plan = planOf(built);
+    expect(newUnits(plan)).toEqual([]);
+    expect(plan.summary.newWords).toBeGreaterThan(0);
+  });
+
+  it("switched off with 0: never first", () => {
+    const s = settings({ ...tight, "new.grammar_first_days": 0 });
+    const plan = planOf(buildSession(content, busy(s, 30), s, NOW, TODAY, opts({ lengthMin: 15 })));
+    expect(newUnits(plan)).toEqual([]);
+  });
+
+  it("nextSkill gives grammar the first pack only when asked", () => {
+    const skills = new Set<SkillName>(["vocab", "grammar"]);
+    expect(nextSkill(skills, {}, {}, true, true)).toBe("grammar");
+    expect(nextSkill(skills, {}, {}, true, false)).toBe("vocab");
+    expect(nextSkill(new Set<SkillName>(["vocab"]), {}, {}, true, true)).toBe("vocab");
   });
 });
