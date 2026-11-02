@@ -134,6 +134,16 @@ describe("the daily word cap (PRD §3.7, §10.5)", () => {
     // Close to the cap the session takes only what is left.
     expect(planOf(buildSession(content, at(47, 50), s, NOW, TODAY, opts())).summary.newWords).toBe(3);
   });
+
+  it("a cap raised before the teacher lowered the hard cap stops at the new hard cap", () => {
+    const lower = settings({ "new.words_daily_hard": 40 });
+    // The learner had «۱۰ تای دیگر» up to 50 this morning; the hard cap is 40 now.
+    expect(planOf(buildSession(content, at(38, 50), lower, NOW, TODAY, opts())).summary.newWords).toBe(2);
+    const full = buildSession(content, at(40, 50), lower, NOW, TODAY, opts());
+    expect(full.kind).toBe("plan");
+    expect(planOf(full).summary.newWords).toBe(0);
+    expect(full.effects.wordsCapToday).toBe(40);
+  });
 });
 
 describe("backlog (PRD §10.6)", () => {

@@ -238,6 +238,26 @@ describe("closing a session early (PRD §10.8)", () => {
     expect(daily?.new_words ?? 0).toBe(0);
   });
 
+  it("a session left half-way still moves the skill levels when it closes (PRD §9.6)", async () => {
+    const user = await enrolled();
+    const unit = await testDb.grammarUnit.findFirstOrThrow({ where: { language: "fr" }, orderBy: { order_no: "desc" }, select: { id: true, level: true } });
+    await testDb.grammarUnit.update({ where: { id: unit.id }, data: { level: "A2" } });
+    forgetContent();
+    try {
+      const bundle = await started(user);
+      // A unit of A2 opened by now (as by an answer of this session): the grammar level is A2 (PRD §6.2).
+      await learned(user.id, "grammar_unit", unit.id, { dueInDays: 5 });
+      expect(await testDb.skillLevel.findFirstOrThrow({ where: { user_id: user.id, skill: "grammar" } })).toMatchObject({ level: "A1" });
+      // The learner leaves it: another button replaces it, and the level moves without a finished session.
+      expect((await startSession(user, { language: "fr", scope: "vocab", noAudio: false, cap: null }, new Date(NOW.getTime() + 60_000))).kind).toBe("session");
+      expect((await testDb.session.findUniqueOrThrow({ where: { id: bundle.id } })).end_reason).toBe("replaced");
+      expect(await testDb.skillLevel.findFirstOrThrow({ where: { user_id: user.id, skill: "grammar" } })).toMatchObject({ level: "A2" });
+    } finally {
+      await testDb.grammarUnit.update({ where: { id: unit.id }, data: { level: unit.level } });
+      forgetContent();
+    }
+  });
+
   it("a session answered every five hours still ends a day after its build (PRD §10.8, §15.4 step 9)", async () => {
     const user = await enrolled();
     const bundle = await started(user);
