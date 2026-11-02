@@ -1,7 +1,7 @@
 import type { ImportBatch, Prisma, PromptKind } from "@/generated/prisma/client";
 import { db } from "@/server/db";
 import { forgetContent } from "@/server/learn/content";
-import { DEMO_MODEL, DEMO_VERSION, demoUnits, grammarAnswer, sentencesAnswer, tablesAnswer, textsAnswer, textsParams, unitListAnswer, wordsAnswer } from "../../../fixtures/demo-fr/build";
+import { DEMO_MODEL, DEMO_VERSION, demoTextCodes, demoUnits, grammarAnswer, sentencesAnswer, tablesAnswer, textsAnswer, textsParams, textsParamsFor, unitListAnswer, wordsAnswer } from "../../../fixtures/demo-fr/build";
 import { demoPhonics } from "../../../fixtures/demo-fr/phonics";
 import { formExceptions } from "../../../fixtures/demo-fr/words";
 import { answerRecords } from "./batches";
@@ -17,7 +17,7 @@ import { mergeRound, type RoundResult } from "./report";
 
 /**
  * The French demo for the tester account (DECISIONS.md, «محتوای نمونه فرانسوی»): about 60 A1 words
- * with their sentences, six grammar units, three texts and three phonics lessons, written by hand. It goes through the panel's own
+ * with their sentences, six grammar units, seven texts and three phonics lessons, written by hand. It goes through the panel's own
  * importers, so it passes the same checks as chatbot answers, and is stored as approved: a tester
  * or an admin sees it, a learner never does (PRD §13.5). Every row carries prompt_version "demo-1",
  * which is how `removeDemo` finds it again.
@@ -36,7 +36,11 @@ export async function demoStatus(): Promise<DemoStatus> {
   return { loaded: demo > 0, words: demo, units, otherWords: other };
 }
 
-export type LoadResult = { kind: "loaded"; words: number; sentences: number; units: number; texts: number; phonics: number } | { kind: "already" } | { kind: "has_content"; words: number };
+export type LoadResult =
+  | { kind: "loaded"; words: number; sentences: number; units: number; texts: number; phonics: number }
+  /** The demo was there; texts written after it was loaded were added (`texts`, maybe 0). */
+  | { kind: "already"; texts: number }
+  | { kind: "has_content"; words: number };
 
 async function newBatch(tx: Tx, kind: PromptKind, params: Record<string, unknown>, adminId: number | null) {
   return tx.importBatch.create({
@@ -76,7 +80,7 @@ async function importAnswer(tx: Tx, kind: ContentKind, batch: ImportBatch, answe
  */
 export async function loadDemo(adminId: number | null = null): Promise<LoadResult> {
   const status = await demoStatus();
-  if (status.loaded) return { kind: "already" };
+  if (status.loaded) return { kind: "already", texts: await addNewTexts(adminId) };
   if (status.otherWords > 0) return { kind: "has_content", words: status.otherWords };
 
   const counts = await db.$transaction(
@@ -127,6 +131,31 @@ export async function loadDemo(adminId: number | null = null): Promise<LoadResul
   );
   forgetContent();
   return { kind: "loaded", ...counts };
+}
+
+/**
+ * Texts added to the demo after a server loaded it come in on the next load (at start with
+ * `DEMO_CONTENT=fr`), through the same importer and approved like the rest. Returns how many.
+ */
+async function addNewTexts(adminId: number | null): Promise<number> {
+  const there = new Set((await db.text.findMany({ where: { language: DEMO_LANGUAGE, code: { in: demoTextCodes } }, select: { code: true } })).map((text) => text.code));
+  const missing = new Set(demoTextCodes.filter((code) => !there.has(code)));
+  if (missing.size === 0) return 0;
+  const added = await db.$transaction(
+    async (tx) => {
+      const batch = await newBatch(tx, "P_T", { ...textsParamsFor(missing), summary: [] }, adminId);
+      await importAnswer(tx, texts, batch, textsAnswer(missing));
+      const mine = { import_batch_id: batch.id };
+      const approved = { status: "approved" as const };
+      await tx.sentence.updateMany({ where: mine, data: approved });
+      await tx.text.updateMany({ where: mine, data: approved });
+      await tx.question.updateMany({ where: mine, data: approved });
+      return tx.text.count({ where: mine });
+    },
+    { timeout: 120_000, maxWait: 10_000 },
+  );
+  forgetContent();
+  return added;
 }
 
 /**

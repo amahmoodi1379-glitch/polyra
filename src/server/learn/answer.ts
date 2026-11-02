@@ -3,7 +3,7 @@ import { z } from "zod";
 import type { RawAnswer } from "@/engine/ex";
 import { phonicsProgress, phonicsSkipsAfter } from "@/engine/phonics";
 import { colloquialFor } from "@/engine/session/newmaterial";
-import { playCard } from "@/engine/session/play";
+import { needsSound, playCard } from "@/engine/session/play";
 import { num } from "@/engine/settings";
 import { itemKey, parseItemKey } from "@/engine/state";
 import { tehranDate } from "@/engine/time";
@@ -91,10 +91,12 @@ export async function submitAnswer(user: Learner, request: AnswerRequest, server
 
       // A text stage's answers, a phonics start or drop and liaison marks are checked before grading.
       const shownCard = plan.queue[0];
-      if (shownCard.t === "text" && !textAnswer.safeParse(request.answer).success) return { kind: "invalid" };
+      // Only a card that needs sound may be dropped (PRD §10.12): a phonics question, a sentence heard alone, a listening text.
+      const skipped = "skip" in request.answer;
+      const dropped = skipped && shownCard.t !== "phonics" && phonicsDrop.safeParse(request.answer).success && needsSound(plan, shownCard);
+      if (skipped && shownCard.t !== "phonics" && !dropped) return { kind: "invalid" };
+      if (shownCard.t === "text" && !dropped && !textAnswer.safeParse(request.answer).success) return { kind: "invalid" };
       if (shownCard.t === "phonics" && !phonicsStart.safeParse(request.answer).success) return { kind: "invalid" };
-      const dropped = shownCard.t === "phonicsq" && "skip" in request.answer;
-      if (dropped && !phonicsDrop.safeParse(request.answer).success) return { kind: "invalid" };
       if (!dropped && shownCard.ex?.a.kind === "liaison" && !liaisonAnswer.safeParse(request.answer).success) return { kind: "invalid" };
       const today = tehranDate(at);
       const lexicon = ctx.content.lemmaIndex;

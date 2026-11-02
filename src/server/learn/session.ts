@@ -60,7 +60,8 @@ export type Bundle = {
 };
 
 /** `text`: the answer to «پیش از جلسه متن» (PRD §10.11). */
-export type StartRequest = { language: string; scope: Scope; noAudio: boolean; cap: BuildOptions["cap"]; text?: BuildOptions["text"] };
+/** `replace`: «یک جلسه بی‌صدا برایت ساختم» (PRD §10.12, T92): the open session closes as `replaced` even when it could go on. */
+export type StartRequest = { language: string; scope: Scope; noAudio: boolean; cap: BuildOptions["cap"]; text?: BuildOptions["text"]; replace?: boolean };
 
 export type StartResult =
   | { kind: "session"; bundle: Bundle }
@@ -176,7 +177,7 @@ export async function startSession(user: Learner, request: StartRequest, now = n
   if (open) {
     const expires = expiresAt(open, ctx.settings);
     const plan = open.plan as unknown as StoredPlan;
-    if (now < expires && open.scope === scope && plan.queue.length > 0) return { kind: "session", bundle: bundleOf(open, ctx, await isFirstSession(user.id, language, open.id)) };
+    if (now < expires && open.scope === scope && plan.queue.length > 0 && !request.replace) return { kind: "session", bundle: bundleOf(open, ctx, await isFirstSession(user.id, language, open.id)) };
     await closeSession(open, now < expires ? "replaced" : "expired", now < expires ? now : expires, ctx);
   }
   if (!(await canPractice(db, user, enrollment, now))) return { kind: "locked" };

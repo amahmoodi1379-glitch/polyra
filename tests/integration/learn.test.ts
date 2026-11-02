@@ -58,7 +58,7 @@ async function started(user: Person, now = NOW, scope: Scope = "mixed"): Promise
 /** What the browser does for one card: plays it locally, then sends the final answer. */
 function answerFor(bundle: Bundle, plan: Bundle["plan"], card: Card, at: Date, answer?: RawAnswer) {
   const ex = card.t === "intro" || card.t === "lesson" || card.t === "table" || card.t === "confusion" ? null : shownEx(plan, card);
-  const raw = answer ?? (ex ? rightAnswer(ex) : { seen: true });
+  const raw = answer ?? (card.t === "text" ? textAnswers(plan, card, seeded(card.id), 1) : ex ? rightAnswer(ex) : { seen: true });
   const lexicon = new Map(bundle.lexicon);
   const ctx = { settings: bundle.settings, now: at, today: tehranDate(at), latency: plan.latency };
   const result = playCard(plan, card.id, raw, { latencyMs: 5000, elapsedSec: 5 }, { ctx, language: "fr", wordsWithLemma: (lemma) => lexicon.get(lemma) ?? [] });
@@ -126,7 +126,7 @@ beforeAll(async () => {
   await testDb.$executeRawUnsafe(`TRUNCATE ${rows.map((row) => `"public"."${row.tablename}"`).join(", ")} RESTART IDENTITY CASCADE`);
   await testDb.language.createMany({ data: [{ code: "fr" }, { code: "de" }] });
   const loaded = await loadDemo();
-  expect(loaded).toMatchObject({ kind: "loaded", words: 60, units: 6, texts: 3, phonics: 3 });
+  expect(loaded).toMatchObject({ kind: "loaded", words: 60, units: 6, texts: 7, phonics: 3 });
 }, 120_000);
 
 beforeEach(async () => {
@@ -142,9 +142,26 @@ describe("the French demo", () => {
     expect(await testDb.word.count({ where: { language: "fr", status: { not: "approved" } } })).toBe(0);
     expect(await testDb.sentenceWord.count({ where: { OR: [{ suspect: true }, { candidate_reason: { not: null } }] } })).toBe(0);
     expect(await testDb.grammarUnit.count({ where: { lesson_fa: null } })).toBe(0);
-    expect(await testDb.text.count({ where: { language: "fr", status: "approved" } })).toBe(3);
+    expect(await testDb.text.count({ where: { language: "fr", status: "approved" } })).toBe(7);
     expect(await testDb.question.count({ where: { language: "fr", status: { not: "approved" } } })).toBe(0);
-    expect(await loadDemo()).toEqual({ kind: "already" });
+    expect(await loadDemo()).toEqual({ kind: "already", texts: 0 });
+  });
+
+  it("adds a text written after a server loaded the demo, approved like the rest", async () => {
+    const last = await testDb.text.findFirstOrThrow({ where: { language: "fr", code: "fr-a1-t007" } });
+    const questions = await testDb.question.findMany({ where: { text_id: last.id }, select: { id: true } });
+    await testDb.question.deleteMany({ where: { text_id: last.id } });
+    await testDb.text.delete({ where: { id: last.id } });
+    await testDb.sentence.deleteMany({ where: { id: { in: last.sentence_ids } } });
+    forgetContent();
+
+    expect(await loadDemo()).toEqual({ kind: "already", texts: 1 });
+    const back = await testDb.text.findFirstOrThrow({ where: { language: "fr", code: "fr-a1-t007" }, include: { questions: true } });
+    expect(back).toMatchObject({ status: "approved", level: "A1", band: 1, kind: "ad" });
+    expect(back.questions).toHaveLength(questions.length);
+    expect(back.questions.every((question) => question.status === "approved")).toBe(true);
+    expect(await testDb.sentence.count({ where: { id: { in: back.sentence_ids }, status: "approved" } })).toBe(back.sentence_ids.length);
+    expect(await loadDemo()).toEqual({ kind: "already", texts: 0 });
   });
 });
 
@@ -652,6 +669,64 @@ describe("texts (PRD §7.3–7.5, §7.9, §10.11)", () => {
     expect(yes.kind).toBe("session");
     const bundle = (yes as { bundle: Bundle }).bundle;
     expect(bundle.plan.queue.some((card) => card.t === "text" && card.text?.textId === (ask as { textId: number }).textId)).toBe(true);
+  });
+});
+
+describe("«الان نمی‌توانم گوش بدهم» (PRD §10.12)", () => {
+  it("T62 on the server: a sentence drill and a listening text leave unscored and stay due; a reading text or a word cannot be dropped", async () => {
+    const user = await reader();
+    const bundle = await started(user, NOW, "listening");
+    const kinds = new Set(bundle.plan.queue.map((card) => card.t));
+    expect(kinds.has("drill")).toBe(true);
+    expect(bundle.plan.queue.some((card) => card.t === "text" && card.text?.track === "listening")).toBe(true);
+
+    // Every card of this session needs sound; each one dropped leaves nothing written but its log row.
+    let plan = bundle.plan;
+    let seq = bundle.nextSeq;
+    for (let i = 0; plan.queue.length > 0; i++) {
+      const at = new Date(NOW.getTime() + (i + 1) * 5000);
+      const card = plan.queue[0];
+      const { result } = answerFor(bundle, plan, card, at, { skip: "drop" });
+      const response = await submitAnswer(user, request(bundle, seq++, card, { skip: "drop" }, at), at);
+      expect(response).toMatchObject({ kind: "ok" });
+      plan = result.advanced.plan;
+    }
+    expect(await testDb.sentenceDrillState.count({ where: { user_id: user.id } })).toBe(0);
+    expect(await testDb.textState.count({ where: { user_id: user.id } })).toBe(0);
+    expect(await testDb.newWordQueue.count({ where: { user_id: user.id } })).toBe(0);
+    const rows = await testDb.reviewLog.findMany({ where: { user_id: user.id }, select: { kind: true, result: true, raw_answer: true } });
+    expect(rows.length).toBe(seq - bundle.nextSeq);
+    expect(rows.every((row) => row.kind === "intro" && row.result === "idk" && row.raw_answer === "drop")).toBe(true);
+    // A text session counts only a text really tried (PRD §10.11 condition 3).
+    expect(await testDb.reviewLog.count({ where: { user_id: user.id, item_type: "text", kind: { not: "intro" } } })).toBe(0);
+
+    // The same drill comes again the next day: its showing was not counted.
+    const next = await started(user, plusDays(NOW, 1), "listening");
+    expect(next.plan.queue.some((card) => card.t === "drill")).toBe(true);
+
+    // A reading text and a word's exercise take no drop.
+    const other = await reader();
+    const reading = await started(other, NOW, "reading");
+    const first = reading.plan.queue[0];
+    expect(await submitAnswer(other, request(reading, reading.nextSeq, first, { skip: "drop" }, NOW), NOW)).toEqual({ kind: "invalid" });
+  });
+
+  it("T92: a session left with only sound is replaced by a mixed one without sound, with no drill and no listening text", async () => {
+    const user = await reader();
+    const listening = await started(user, NOW, "listening");
+    const at = new Date(NOW.getTime() + 60_000);
+    const silent = await startSession(user, { language: "fr", scope: "mixed", noAudio: true, cap: null, replace: true }, at);
+    if (silent.kind !== "session") throw new Error(silent.kind);
+    expect(await testDb.session.findUniqueOrThrow({ where: { id: listening.id } })).toMatchObject({ end_reason: "replaced" });
+    expect(silent.bundle.id).not.toBe(listening.id);
+    expect(silent.bundle.plan.noAudio).toBe(true);
+    expect(silent.bundle.plan.queue.length).toBeGreaterThan(0);
+    expect(silent.bundle.plan.queue.some((card) => card.t === "drill" || card.t === "phonics" || (card.t === "text" && card.text?.track === "listening"))).toBe(false);
+    expect(await testDb.session.findUniqueOrThrow({ where: { id: silent.bundle.id } })).toMatchObject({ no_audio: true, ended_at: null });
+
+    // Without «replace», the open mixed session of the same scope goes on as before.
+    const resumed = await started(user, new Date(at.getTime() + 60_000));
+    expect(resumed.id).toBe(silent.bundle.id);
   });
 });
 

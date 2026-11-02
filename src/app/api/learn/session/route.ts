@@ -13,6 +13,8 @@ const schema = z.object({
   cap: z.enum(["more", "none"]).nullable().default(null),
   /** «شروع» or «بعداً» on «پیش از جلسه متن» (PRD §10.11). */
   text: z.enum(["confirmed", "later"]).nullable().default(null),
+  /** «یک جلسه بی‌صدا برایت ساختم» (PRD §10.12): the open session is replaced. */
+  replace: z.boolean().default(false),
 });
 
 /** Builds or resumes a session and returns its bundle (PRD §15.4, step 1). */

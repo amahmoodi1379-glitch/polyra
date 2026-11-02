@@ -10,7 +10,7 @@ async function main() {
   const command = process.argv[2] ?? "status";
   if (command === "load") {
     const result = await loadDemo();
-    if (result.kind === "already") console.log("The demo is already loaded.");
+    if (result.kind === "already") console.log(result.texts > 0 ? `The demo was already loaded; ${result.texts} new texts were added.` : "The demo is already loaded.");
     else if (result.kind === "has_content") console.log(`French already has ${result.words} other words; the demo was not loaded.`);
     else console.log(`Loaded: ${result.words} words, ${result.sentences} sentences, ${result.units} grammar units, ${result.texts} texts, ${result.phonics} phonics lessons (approved, tester only).`);
   } else if (command === "remove") {

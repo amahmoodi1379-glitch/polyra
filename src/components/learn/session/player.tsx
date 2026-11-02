@@ -9,7 +9,7 @@ import { buzz, sfx } from "@/components/learn/sfx";
 import { hush, needsVoice, useDeviceVoice } from "@/components/learn/speak";
 import { useToast } from "@/components/learn/toast";
 import type { Gloss, RawAnswer } from "@/engine/ex";
-import { playCard, shownEx, wantsAlt, type Card, type PlayResult, type Scope, type SessionPlan } from "@/engine/session";
+import { needsSound, onlySoundLeft, playCard, shownEx, wantsAlt, type Card, type PlayResult, type Scope, type SessionPlan } from "@/engine/session";
 import { num } from "@/engine/settings";
 import type { Lang } from "@/engine/text";
 import { tehranDate } from "@/engine/time";
@@ -106,6 +106,10 @@ export function Player({ language, languageName, scope: firstScope }: { language
   const [given, setGiven] = useState<{ answers: Answers; timedOut: boolean } | null>(null);
   // The answer to «امروز {n} کلمه گرفتی» stays when «پیش از جلسه متن» asks next.
   const capAnswer = useRef<"more" | "none" | null>(null);
+  // «یک جلسه بی‌صدا برایت ساختم» (PRD §10.12, T92): the next build is without sound; the one after has it again.
+  const silentNext = useRef(false);
+  // A drop is said once a session, whatever the number of cards it takes out.
+  const dropSaid = useRef<string | null>(null);
   const seq = useRef(0);
   const elapsed = useRef(0);
   const shownAt = useRef(0);
@@ -118,6 +122,7 @@ export function Player({ language, languageName, scope: firstScope }: { language
 
   const load = useCallback((next: Bundle) => {
     live.current = next.id;
+    silentNext.current = false;
     setBundle(next);
     setPlan(next.plan);
     setDone(null);
@@ -129,14 +134,14 @@ export function Player({ language, languageName, scope: firstScope }: { language
   }, []);
 
   const start = useCallback(
-    async (which: Scope, cap: "more" | "none" | null = null, text: "confirmed" | "later" | null = null) => {
+    async (which: Scope, cap: "more" | "none" | null = null, text: "confirmed" | "later" | null = null, replace = false) => {
       // Answers from before go first, so the server builds on them.
       await Promise.race([flush(), new Promise((resolve) => window.setTimeout(resolve, 4000))]);
       try {
         const response = await fetch("/api/learn/session", {
           method: "POST",
           headers: { "content-type": "application/json" },
-          body: JSON.stringify({ language, scope: which, noAudio: false, cap, text }),
+          body: JSON.stringify({ language, scope: which, noAudio: silentNext.current, cap, text, replace }),
         });
         if (response.status === 401) {
           window.location.assign(`/login?next=${encodeURIComponent(`/learn/${language}/session?scope=${which}`)}`);
@@ -183,11 +188,11 @@ export function Player({ language, languageName, scope: firstScope }: { language
     const timer = window.setTimeout(() => void start(firstScope), 0);
     return () => window.clearTimeout(timer);
   }, [start, firstScope]);
-  const restart = (which: Scope, cap: "more" | "none" | null = null, text: "confirmed" | "later" | null = null) => {
+  const restart = (which: Scope, cap: "more" | "none" | null = null, text: "confirmed" | "later" | null = null, replace = false) => {
     capAnswer.current = cap;
     setDropped(null);
     setPhase({ k: "loading" });
-    void start(which, cap, text);
+    void start(which, cap, text, replace);
   };
 
   // What the server says about the answers of this session.
@@ -361,16 +366,52 @@ export function Player({ language, languageName, scope: firstScope }: { language
     void fetch("/api/learn/tap", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ language, wordId: gloss.wordId }) }).catch(() => {});
   };
 
-  // A phonics round needs sound (PRD §8.4, §10.12): with sound off, or a sound this phone cannot say, the
-  // rest of the round leaves the session at once, unscored, and «بعداً» is not counted. In a session of
-  // the round alone, its end says why; elsewhere a note does and the session goes on.
+  // Whether this phone cannot say a card that needs sound: no file, and no voice for the language (PRD §10.12).
+  const soundless = (target: Card): boolean => {
+    if (voice !== false || !plan) return false;
+    if (target.t === "phonics" || target.t === "phonicsq") return roundNeedsVoice(plan, target);
+    if (target.t === "drill") return needsVoice(target.ex?.listen);
+    const textId = target.text?.textId ?? (target.t === "textwords" ? Number(target.item.slice(2)) : null);
+    const view = textId === null ? null : plan.texts[textId];
+    return !!view && !view.audio && view.sentences.some((sentence) => needsVoice(sentence.speak));
+  };
+
+  // Cards that need sound (PRD §8.4, §10.12, T62): with sound off, or a sound this phone cannot say, a
+  // sentence drill, a listening text (with its key words) or the rest of a phonics round leaves the
+  // session at once, unscored and still due. In a session of the round alone, its end says why. When
+  // «الان نمی‌توانم گوش بدهم» leaves nothing but such cards, a session without sound replaces this one
+  // (T92); a listening session cannot go on without sound at all.
   useEffect(() => {
-    if (!card || !plan || done || (card.t !== "phonics" && card.t !== "phonicsq")) return;
+    if (!card || !plan || !bundle || done || !needsSound(plan, card)) return;
     const silent = muted || plan.noAudio;
-    if (!silent && !(voice === false && roundNeedsVoice(plan, card))) return;
+    if (!silent && !soundless(card)) return;
+    const phonics = card.t === "phonics" || card.t === "phonicsq";
     const timer = window.setTimeout(() => {
-      if (scope === "phonics") setDropped(silent ? "muted" : "noVoice");
-      else toast(silent ? t("learn.phonics.dropped") : t("learn.phonics.noVoice", { language: languageName }));
+      if (scope === "phonics" && phonics) {
+        setDropped(silent ? "muted" : "noVoice");
+        submit({ skip: "drop" });
+        return;
+      }
+      if (silent && scope === "listening") {
+        hush();
+        stored.set(`polyra.mute.${bundle.id}`, "0");
+        setPhase({ k: "state", which: "needsAudio" });
+        return;
+      }
+      if (muted && !plan.noAudio && onlySoundLeft(plan)) {
+        hush();
+        toast(t("learn.session.silentRebuilt"));
+        silentNext.current = true;
+        restart("mixed", null, null, true);
+        return;
+      }
+      const said = `${bundle.id}:${phonics ? "p" : "l"}`;
+      if (dropSaid.current !== said) {
+        dropSaid.current = said;
+        if (phonics) toast(silent ? t("learn.phonics.dropped") : t("learn.phonics.noVoice", { language: languageName }));
+        else toast(silent ? t("learn.session.listenDropped") : t("learn.session.listenNoVoice", { language: languageName }));
+      }
+      hush();
       submit({ skip: "drop" });
     }, 0);
     return () => window.clearTimeout(timer);
@@ -401,6 +442,7 @@ export function Player({ language, languageName, scope: firstScope }: { language
     router.push(`/learn/${language}`);
   };
   const again = () => {
+    silentNext.current = false;
     setScope("mixed");
     restart("mixed");
   };

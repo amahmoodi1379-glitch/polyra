@@ -263,6 +263,8 @@ describe("track score and level (PRD §7.5, §9.6)", () => {
     expect(textLevelUp(content, indexTextStates([...own, ...others]), "reading", "A1", defaults, NOW, "A1")).toBeNull();
     // Three first rounds are not enough.
     expect(textLevelUp(content, indexTextStates([...own.slice(1), firstDone(1, "listening", 0.5, 10, later), ...others]), "reading", "A1", defaults, NOW, "A2")).toBeNull();
+    // A text a placement test used will never come; it does not hold the level back.
+    expect(textLevelUp(content, indexTextStates([...own, others[0], state(6, "listening", { usedInTest: true })]), "reading", "A1", defaults, NOW, "A2")).toBe("A2");
   });
 
   it("the bar: 70% first rounds out of eight (or the level's texts), 30% the track score out of 0.8", () => {

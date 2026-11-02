@@ -67,12 +67,14 @@ test("a reader leaves a text half-way, finds it again, answers it with and witho
 
   // Whatever else the session holds, «نمی‌دانم» and «ادامه» take it to its end.
   const end = page.getByRole("heading", { name: "جلسه تمام شد" });
-  for (let step = 0; step < 12 && !(await end.isVisible()); step++) {
+  for (let step = 0; step < 40 && !(await end.isVisible()); step++) {
     const idk = page.getByRole("button", { name: "نمی‌دانم", exact: true });
     const next = page.getByRole("button", { name: "ادامه", exact: true });
-    await expect(end.or(idk).or(next).first()).toBeVisible();
+    const send = page.getByRole("button", { name: "ثبت جواب‌ها", exact: true });
+    await expect(end.or(idk).or(next).or(send).first()).toBeVisible();
     if (await end.isVisible()) break;
-    if (await idk.isVisible()) await idk.click();
+    if ((await send.isVisible()) && (await send.isEnabled())) await send.click();
+    else if (await idk.first().isVisible()) await idk.first().click();
     else await next.click();
   }
   await expect(end).toBeVisible();
@@ -95,4 +97,20 @@ test("a reader leaves a text half-way, finds it again, answers it with and witho
   await page.getByRole("button", { name: "نشان دادن ترجمه‌ها" }).click();
   await expect(page.locator(".tx-line .tr")).toHaveCount(await page.locator(".tx-line").count());
   await page.screenshot({ path: testInfo.outputPath("my-text.png"), fullPage: true });
+});
+
+test("«الان نمی‌توانم گوش بدهم» in a listening session says it needs sound and leaves the texts and sentences due (PRD §10.12)", async ({ page }, testInfo) => {
+  test.setTimeout(120_000);
+  await signIn(page, E2E_READERS[testInfo.project.name as keyof typeof E2E_READERS]);
+  await expect(page).toHaveURL(/\/learn\/fr$/);
+  await page.goto("/learn/fr/session?scope=listening");
+  const mute = page.getByRole("button", { name: "الان نمی‌توانم گوش بدهم" });
+  await expect(mute).toBeVisible();
+  await mute.click();
+  await expect(page.getByRole("heading", { name: "این جلسه بدون صدا ممکن نیست" })).toBeVisible();
+  await page.screenshot({ path: testInfo.outputPath("listening-muted.png"), fullPage: true });
+  // Nothing was dropped for good: the same session comes back with sound.
+  await page.goto("/learn/fr/session?scope=listening");
+  await expect(mute).toBeVisible();
+  await expect(page.getByRole("heading", { name: "این جلسه بدون صدا ممکن نیست" })).toHaveCount(0);
 });

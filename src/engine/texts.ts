@@ -341,7 +341,8 @@ export function textLevelUp(
   const rounds = firstRounds(states.values(), track).filter((round) => ids.has(round.textId)).length;
   const score = trackScore(states.values(), track, settings);
   if (rounds >= num(settings, "text.levelup_min") && score !== null && score >= num(settings, "text.levelup_score")) return next;
-  const untouched = ofLevel.some((text) => TRACKS.every((which) => !touched(states.get(textStateKey(text.id, which)))));
+  // A text a test used can never come in a session (condition 2), so it counts as tried here.
+  const untouched = ofLevel.some((text) => TRACKS.every((which) => !touched(states.get(textStateKey(text.id, which))) && !states.get(textStateKey(text.id, which))?.usedInTest));
   const dueLeft = ofLevel.some((text) => {
     const state = states.get(textStateKey(text.id, track));
     const due = at(state?.nextAttemptAt ?? null);

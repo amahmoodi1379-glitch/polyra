@@ -6,6 +6,10 @@ import { playCard, shownEx } from "@/engine/session/play";
 import type { Card, SessionPlan } from "@/engine/session/types";
 import { parseItemKey } from "@/engine/state";
 import { tehranDate } from "@/engine/time";
+import { TRACKS, type Track } from "@/engine/content";
+import { makeEnv } from "@/engine/session/views";
+import { indexTextStates, newText, nextAttempt, otherTrack, TEXT_RULE, textProgress, textStateKey, textWaiting, wasBorrowed, type TextEnv } from "@/engine/texts";
+import { num } from "@/engine/settings";
 import { scenarioById, type Scenario } from "@/lib/rehearse";
 import { human } from "@/sim/human";
 import type { LanguageCode } from "@/server/content/languages";
@@ -193,4 +197,82 @@ function nameOf(key: string, content: Awaited<ReturnType<typeof learnContext>>["
     return table ? `${content.words.get(table.wordId)?.lemma ?? ""} (${table.tense})` : "";
   }
   return "";
+}
+
+/** One track's texts as the engine sees them today (PRD §7.5, §9.6), for «آزمایش مثل زبان‌آموز». */
+export type TrackOverview = {
+  track: Track;
+  level: string;
+  /** First rounds done on texts of the level, and how many the level asks for (rule 1 of §7.5). */
+  firstRounds: number;
+  need: number;
+  /** `track_score`; null below three first rounds. */
+  score: number | null;
+  /** What this track's own button would bring first. */
+  waiting: "resume" | "due" | "new" | null;
+  /** The text a new attempt 1 would take now, if any. */
+  nextNew: string | null;
+};
+export type TextLine = {
+  title: string;
+  track: Track;
+  attemptsDone: number;
+  attempts: number;
+  firstScore: number | null;
+  /** When the next attempt comes; null after the last one. */
+  nextAt: string | null;
+  /** A stage left half-way and still open. */
+  partial: "first" | "help" | "again" | null;
+  borrowed: boolean;
+};
+
+/**
+ * The account's texts (PRD §7.4, §7.5), for a teacher trying a learner: each track's level, bar and
+ * score, what comes next, and every text with its attempts. Nothing is written. Null before the
+ * language is started.
+ */
+export async function textsOverview(user: Learner, language: LanguageCode, now = new Date()): Promise<{ tracks: TrackOverview[]; texts: TextLine[]; available: number } | null> {
+  const preview = await previewSession(user, language, now);
+  if (!preview) return null;
+  const { learner, ctx } = preview;
+  const { content, settings } = ctx;
+  const env = makeEnv(content, learner, settings, seeded("try", user.id));
+  const levelOf = (track: Track) => learner.skills.find((skill) => skill.skill === track)?.level ?? content.levels[0];
+  const tenv: TextEnv = { content, settings, now, known: env.known, states: indexTextStates(learner.texts), levelOf };
+  const tracks = TRACKS.map((track): TrackOverview => {
+    const bar = textProgress(content, tenv.states, track, levelOf(track), settings);
+    const pick = newText(tenv, track, new Set());
+    return {
+      track,
+      level: bar.level,
+      firstRounds: bar.firstRounds,
+      need: Math.min(num(settings, "text.levelup_min"), bar.total),
+      score: bar.score,
+      waiting: textWaiting(tenv, track, learner.today.newTextSec[track]),
+      nextNew: pick?.text.title ?? null,
+    };
+  });
+  const texts = learner.texts
+    .filter((state) => state.scores.length > 0 || state.attemptsDone > 0 || state.partial)
+    .flatMap((state): TextLine[] => {
+      const text = content.texts.find((item) => item.id === state.textId);
+      if (!text) return [];
+      const open = state.partial && state.partialUntil && Date.parse(state.partialUntil) > now.getTime() ? state.partial.stage : null;
+      const next = nextAttempt(text, state);
+      const takenOver = wasBorrowed(tenv.states.get(textStateKey(text.id, otherTrack(state.track))));
+      return [
+        {
+          title: text.title,
+          track: state.track,
+          attemptsDone: state.attemptsDone,
+          attempts: text.band === 1 ? TEXT_RULE.band1Attempts : TEXT_RULE.attempts,
+          firstScore: state.firstScore,
+          nextAt: next && state.attemptsDone > 0 && !takenOver ? state.nextAttemptAt : null,
+          partial: open,
+          borrowed: wasBorrowed(state),
+        },
+      ];
+    })
+    .sort((a, b) => a.track.localeCompare(b.track) || a.title.localeCompare(b.title));
+  return { tracks, texts, available: content.texts.length };
 }

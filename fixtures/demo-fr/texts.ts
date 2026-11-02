@@ -1,5 +1,5 @@
 /**
- * Three A1 texts of the French demo (DECISIONS.md, «محتوای نمونه فرانسوی»), band 1, written by hand
+ * Seven A1 texts of the French demo (DECISIONS.md, «محتوای نمونه فرانسوی»), band 1, written by hand
  * with the demo's own words only. Each has the four question sets of PRD §14.6, so a tester meets
  * it in either track. Questions of band 1 are in Persian (PRD §7.3).
  */
@@ -8,7 +8,7 @@ export type DemoLine = { text: string; fa: string; speaker?: string; meanings?: 
 export type DemoText = {
   code: string;
   title: string;
-  kind: "dialogue" | "voice_message";
+  kind: "dialogue" | "voice_message" | "menu" | "ad";
   lines: DemoLine[];
   keyWords: string[];
   sets: { listening: { A: unknown[]; B: unknown[] }; reading: { A: unknown[]; B: unknown[] } };
@@ -187,6 +187,226 @@ export const demoTexts: DemoText[] = [
           },
           { type: "tf", prompt: "پدر لئا فرانسوی حرف می‌زند.", correct: true, explanation_fa: "لئا می‌گوید Mon père parle français." },
           { type: "mcq", prompt: "خواهر لئا چطور است؟", options: ["کوچک", "بزرگ", "زیبا", "نو"], correct: 0, explanation_fa: "لئا می‌گوید elle est petite." },
+        ],
+      },
+    },
+  },
+  {
+    code: "fr-a1-t004",
+    title: "Le menu du café",
+    kind: "menu",
+    lines: [
+      { text: "Bonjour, ici le café de Marie.", fa: "سلام، این‌جا کافه ماری است." },
+      { text: "Le matin, nous avons du café, du thé et du lait.", fa: "صبح قهوه، چای و شیر داریم." },
+      { text: "Le café au lait est très bon.", fa: "شیرقهوه خیلی خوب است." },
+      { text: "Nous avons aussi du pain avec du fromage.", fa: "نان با پنیر هم داریم." },
+      { text: "Les pommes sont rouges et vertes.", fa: "سیب‌ها قرمز و سبزند." },
+      { text: "Le soir, vous mangez ici ?", fa: "عصر این‌جا غذا می‌خورید؟" },
+      { text: "Le soir, nous avons 3 tables dans la rue.", fa: "عصر سه میز در خیابان داریم." },
+      { text: "Merci et à demain !", fa: "ممنون و تا فردا!" },
+    ],
+    keyWords: ["thé", "table"],
+    sets: {
+      listening: {
+        A: [
+          { type: "mcq", prompt: "صبح در کافه چه چیزی هست؟", options: ["قهوه، چای و شیر", "فقط آب", "فقط قهوه", "پنیر و سیب"], correct: 0, explanation_fa: "می‌گوید du café, du thé et du lait." },
+          { type: "num", prompt: "عصر چند میز در خیابان هست؟ عددش را بنویس.", answer: "3", accepted: ["3", "trois"], explanation_fa: "می‌گوید nous avons 3 tables dans la rue." },
+          { type: "tf", prompt: "شیرقهوه کافه خوب نیست.", correct: false, explanation_fa: "می‌گوید Le café au lait est très bon." },
+          { type: "dict", sentence: 3, explanation_fa: "جمله این بود: Nous avons aussi du pain avec du fromage." },
+        ],
+        B: [
+          { type: "mcq", prompt: "کافه مال کیست؟", options: ["ماری", "پل", "لئا", "هوگو"], correct: 0, explanation_fa: "اول می‌گوید ici le café de Marie." },
+          { type: "tf", prompt: "سیب‌ها قرمز و سبزند.", correct: true, explanation_fa: "می‌گوید Les pommes sont rouges et vertes." },
+          {
+            type: "order",
+            prompt: "این‌ها را به ترتیبی که شنیدی بچین.",
+            items: ["نوشیدنی‌های صبح", "نان و پنیر", "سیب‌ها", "میزهای عصر"],
+            correct_order: [0, 1, 2, 3],
+            explanation_fa: "اول از نوشیدنی‌ها می‌گوید، بعد نان و پنیر، بعد سیب و آخر میزهای عصر.",
+          },
+        ],
+      },
+      reading: {
+        A: [
+          { type: "mcq", prompt: "نان را با چه می‌دهند؟", options: ["پنیر", "شیر", "سیب", "چای"], correct: 0, explanation_fa: "نوشته du pain avec du fromage." },
+          { type: "find", prompt: "کدام جمله درباره میزهای عصر است؟", correct_sentence: 6, explanation_fa: "این جمله: Le soir, nous avons 3 tables dans la rue." },
+          { type: "tf", prompt: "کافه صبح چای ندارد.", correct: false, explanation_fa: "نوشته du thé، یعنی چای دارد." },
+        ],
+        B: [
+          {
+            type: "match",
+            prompt: "هر چیز را به چیزی که درباره‌اش نوشته وصل کن.",
+            left: ["شیرقهوه", "سیب‌ها", "میزها"],
+            right: ["خیلی خوب است", "قرمز و سبزند", "در خیابان‌اند", "بزرگ‌اند"],
+            pairs: [
+              [0, 0],
+              [1, 1],
+              [2, 2],
+            ],
+            explanation_fa: "شیرقهوه خیلی خوب است، سیب‌ها قرمز و سبزند و میزها عصر در خیابان‌اند.",
+          },
+          { type: "mcq", prompt: "آخر منو چه نوشته؟", options: ["ممنون و تا فردا", "سلام", "شب بخیر", "بفرمایید"], correct: 0, explanation_fa: "آخرش نوشته Merci et à demain." },
+        ],
+      },
+    },
+  },
+  {
+    code: "fr-a1-t005",
+    title: "Le nouveau chien de Paul",
+    kind: "dialogue",
+    lines: [
+      { speaker: "Léa", text: "Paul, tu as un chien maintenant ?", fa: "پل، حالا سگ داری؟" },
+      { speaker: "Paul", text: "Oui, j'ai un nouveau chien.", fa: "آره، یک سگ تازه دارم." },
+      { speaker: "Léa", text: "Il est grand ?", fa: "بزرگ است؟" },
+      { speaker: "Paul", text: "Non, il est petit et blanc.", fa: "نه، کوچک و سفید است." },
+      { speaker: "Léa", text: "Il mange du fromage ?", fa: "پنیر می‌خورد؟" },
+      { speaker: "Paul", text: "Non, il mange du pain et il boit de l'eau.", fa: "نه، نان می‌خورد و آب می‌نوشد." },
+      { speaker: "Léa", text: "Et ton chat ?", fa: "و گربه‌ات؟" },
+      { speaker: "Paul", text: "Mon chat noir n'aime pas le chien !", fa: "گربه سیاهم سگ را دوست ندارد!" },
+    ],
+    keyWords: ["nouveau", "blanc"],
+    sets: {
+      listening: {
+        A: [
+          { type: "mcq", prompt: "سگ پل چطور است؟", options: ["کوچک و سفید", "بزرگ و سیاه", "کوچک و سیاه", "بزرگ و سفید"], correct: 0, explanation_fa: "پل می‌گوید il est petit et blanc." },
+          { type: "tf", prompt: "سگ پل پنیر می‌خورد.", correct: false, explanation_fa: "پل می‌گوید Non, il mange du pain." },
+          { type: "dict", sentence: 3, explanation_fa: "جمله این بود: Non, il est petit et blanc." },
+        ],
+        B: [
+          { type: "mcq", prompt: "سگ چه می‌نوشد؟", options: ["آب", "شیر", "چای", "قهوه"], correct: 0, explanation_fa: "پل می‌گوید il boit de l'eau." },
+          { type: "tf", prompt: "گربه پل سگ را دوست دارد.", correct: false, explanation_fa: "پل می‌گوید Mon chat noir n'aime pas le chien." },
+          {
+            type: "order",
+            prompt: "پرسش‌های لئا را به ترتیب بچین.",
+            items: ["سگ داری؟", "بزرگ است؟", "پنیر می‌خورد؟", "و گربه‌ات؟"],
+            correct_order: [0, 1, 2, 3],
+            explanation_fa: "لئا اول درباره سگ می‌پرسد، بعد اندازه‌اش، بعد غذایش و آخر گربه.",
+          },
+        ],
+      },
+      reading: {
+        A: [
+          { type: "mcq", prompt: "گربه پل چه رنگی است؟", options: ["سیاه", "سفید", "قرمز", "سبز"], correct: 0, explanation_fa: "پل می‌گوید Mon chat noir." },
+          { type: "find", prompt: "کدام جمله می‌گوید سگ چه می‌خورد و می‌نوشد؟", correct_sentence: 5, explanation_fa: "این جمله: Non, il mange du pain et il boit de l'eau." },
+          { type: "tf", prompt: "سگ پل تازه است.", correct: true, explanation_fa: "پل می‌گوید j'ai un nouveau chien." },
+        ],
+        B: [
+          {
+            type: "match",
+            prompt: "هر حیوان را به چیزی که درباره‌اش گفته شده وصل کن.",
+            left: ["سگ", "گربه"],
+            right: ["کوچک و سفید است", "سگ را دوست ندارد", "به مدرسه می‌رود"],
+            pairs: [
+              [0, 0],
+              [1, 1],
+            ],
+            explanation_fa: "سگ کوچک و سفید است و گربه سگ را دوست ندارد.",
+          },
+          { type: "tf", prompt: "لئا سگ دارد.", correct: false, explanation_fa: "در متن فقط پل سگ دارد؛ لئا فقط می‌پرسد." },
+        ],
+      },
+    },
+  },
+  {
+    code: "fr-a1-t006",
+    title: "Le message de Marie",
+    kind: "voice_message",
+    lines: [
+      { text: "Bonjour Paul, c'est Marie.", fa: "سلام پل، ماری هستم." },
+      { text: "Je suis à Paris avec mon ami Hugo.", fa: "با دوستم هوگو در پاریس هستم." },
+      { text: "Hugo parle très bien français.", fa: "هوگو خیلی خوب فرانسوی حرف می‌زند." },
+      { text: "Il a 3 frères et une sœur.", fa: "سه برادر و یک خواهر دارد." },
+      { text: "Ce soir, nous allons au café avec la sœur de Hugo.", fa: "امشب با خواهرش به کافه می‌رویم." },
+      { text: "Demain matin, je vais à l'école.", fa: "فردا صبح به مدرسه می‌روم." },
+      { text: "Tu vas bien ?", fa: "حالت خوب است؟" },
+      { text: "À demain soir !", fa: "تا فردا شب!" },
+    ],
+    keyWords: ["soir", "ami"],
+    sets: {
+      listening: {
+        A: [
+          { type: "mcq", prompt: "ماری با چه کسی در پاریس است؟", options: ["دوستش هوگو", "برادرش", "پل", "مادرش"], correct: 0, explanation_fa: "ماری می‌گوید avec mon ami Hugo." },
+          { type: "num", prompt: "هوگو چند برادر دارد؟ عددش را بنویس.", answer: "3", accepted: ["3", "trois"], explanation_fa: "ماری می‌گوید Il a 3 frères." },
+          { type: "tf", prompt: "ماری فردا صبح به مدرسه می‌رود.", correct: true, explanation_fa: "ماری می‌گوید Demain matin, je vais à l'école." },
+        ],
+        B: [
+          { type: "mcq", prompt: "امشب کجا می‌روند؟", options: ["کافه", "مدرسه", "لیون", "خانه پل"], correct: 0, explanation_fa: "ماری می‌گوید nous allons au café." },
+          { type: "tf", prompt: "هوگو فرانسوی را بد حرف می‌زند.", correct: false, explanation_fa: "ماری می‌گوید Hugo parle très bien français." },
+          { type: "dict", sentence: 2, explanation_fa: "جمله این بود: Hugo parle très bien français." },
+        ],
+      },
+      reading: {
+        A: [
+          { type: "mcq", prompt: "امشب چه کسی هم با آن‌ها به کافه می‌آید؟", options: ["خواهر هوگو", "پدر ماری", "پل", "برادر پل"], correct: 0, explanation_fa: "نوشته nous allons au café avec sa sœur." },
+          { type: "find", prompt: "کدام جمله می‌گوید ماری کجاست؟", correct_sentence: 1, explanation_fa: "این جمله: Je suis à Paris avec mon ami Hugo." },
+          { type: "tf", prompt: "هوگو یک خواهر دارد.", correct: true, explanation_fa: "نوشته Il a 3 frères et une sœur." },
+        ],
+        B: [
+          {
+            type: "order",
+            prompt: "این‌ها را به ترتیب پیام بچین.",
+            items: ["ماری می‌گوید کجاست", "از برادرهای هوگو می‌گوید", "از کافه امشب می‌گوید", "خداحافظی می‌کند"],
+            correct_order: [0, 1, 2, 3],
+            explanation_fa: "پیام با سلام و جای ماری شروع می‌شود و با À demain soir تمام می‌شود.",
+          },
+          { type: "mcq", prompt: "پیام برای کیست؟", options: ["پل", "هوگو", "لئا", "مادر ماری"], correct: 0, explanation_fa: "اولش نوشته Bonjour Paul." },
+        ],
+      },
+    },
+  },
+  {
+    code: "fr-a1-t007",
+    title: "Une maison à Lyon",
+    kind: "ad",
+    lines: [
+      { text: "Nous avons une maison à Lyon.", fa: "ما یک خانه در لیون داریم." },
+      { text: "La maison est grande et très belle.", fa: "خانه بزرگ و خیلی زیباست." },
+      { text: "Elle est dans une petite rue.", fa: "در یک خیابان کوچک است." },
+      { text: "La maison a 2 tables et des livres.", fa: "خانه دو میز و چند کتاب دارد." },
+      { text: "Un chat noir habite aussi ici.", fa: "یک گربه سیاه هم این‌جا زندگی می‌کند." },
+      { text: "Vous aimez les chats ?", fa: "گربه دوست دارید؟" },
+      { text: "Vous allez aimer la maison !", fa: "خانه را دوست خواهید داشت!" },
+    ],
+    keyWords: ["maison", "rue"],
+    sets: {
+      listening: {
+        A: [
+          { type: "mcq", prompt: "خانه کجاست؟", options: ["لیون", "پاریس", "کنار مدرسه", "کنار کافه"], correct: 0, explanation_fa: "می‌گوید une maison à Lyon." },
+          { type: "num", prompt: "خانه چند میز دارد؟ عددش را بنویس.", answer: "2", accepted: ["2", "deux"], explanation_fa: "می‌گوید La maison a 2 tables." },
+          { type: "tf", prompt: "خانه کوچک است.", correct: false, explanation_fa: "می‌گوید La maison est grande؛ فقط خیابانش کوچک است." },
+        ],
+        B: [
+          { type: "mcq", prompt: "چه حیوانی در خانه زندگی می‌کند؟", options: ["گربه سیاه", "سگ سفید", "گربه سفید", "سگ سیاه"], correct: 0, explanation_fa: "می‌گوید Un chat noir habite aussi ici." },
+          { type: "tf", prompt: "خانه در یک خیابان کوچک است.", correct: true, explanation_fa: "می‌گوید Elle est dans une petite rue." },
+          { type: "dict", sentence: 1, explanation_fa: "جمله این بود: La maison est grande et très belle." },
+        ],
+      },
+      reading: {
+        A: [
+          { type: "mcq", prompt: "این آگهی درباره چیست؟", options: ["یک خانه", "یک ماشین", "یک کافه", "یک مدرسه"], correct: 0, explanation_fa: "آگهی از une maison à Lyon می‌گوید." },
+          { type: "find", prompt: "کدام جمله می‌گوید خانه زیباست؟", correct_sentence: 1, explanation_fa: "این جمله: La maison est grande et très belle." },
+          {
+            type: "match",
+            prompt: "هر چیز را به چیزی که درباره‌اش نوشته وصل کن.",
+            left: ["خانه", "خیابان", "گربه"],
+            right: ["بزرگ و زیباست", "کوچک است", "سیاه است", "قرمز است"],
+            pairs: [
+              [0, 0],
+              [1, 1],
+              [2, 2],
+            ],
+            explanation_fa: "خانه بزرگ و زیباست، خیابان کوچک است و گربه سیاه است.",
+          },
+        ],
+        B: [
+          { type: "tf", prompt: "در خانه کتاب هست.", correct: true, explanation_fa: "نوشته des livres." },
+          {
+            type: "order",
+            prompt: "این‌ها را به ترتیب آگهی بچین.",
+            items: ["جای خانه", "خانه چطور است", "میزها و کتاب‌ها", "گربه"],
+            correct_order: [0, 1, 2, 3],
+            explanation_fa: "آگهی اول جای خانه را می‌گوید، بعد ظاهرش، بعد میز و کتاب و آخر گربه.",
+          },
         ],
       },
     },

@@ -7,7 +7,7 @@ import { forgetContent } from "@/server/learn/content";
 import { startFromZero } from "@/server/learn/enroll";
 import { homeData } from "@/server/learn/home";
 import { loadLearner } from "@/server/learn/learner";
-import { nextSession, rehearse } from "@/server/learn/rehearse";
+import { nextSession, rehearse, textsOverview } from "@/server/learn/rehearse";
 import { learnContext } from "@/server/learn/session";
 import { resetDb, testDb } from "./db";
 
@@ -59,6 +59,42 @@ describe("scenarios", () => {
     const next = await nextSession(teacher, "fr", NOW);
     expect(next?.empty).toBe(false);
     expect(next!.lines.some((line) => line.kind === "word")).toBe(true);
+  }, 300_000);
+
+  it("«شنونده و خواننده»: texts in both tracks reach their later attempts, and the overview shows them", async () => {
+    const teacher = await person({ is_admin: true });
+    expect(await textsOverview(teacher, "fr", NOW)).toBeNull();
+    const scenario = SCENARIOS.find((item) => item.id === "texts")!;
+    const result = await rehearse(teacher, "fr", "texts", NOW);
+    // A second session on a day may find nothing left.
+    expect(result.sessions).toBeGreaterThan(scenarioSessions(scenario) / 2);
+    expect(result.sessions).toBeLessThanOrEqual(scenarioSessions(scenario));
+
+    const states = await testDb.textState.findMany({ where: { user_id: teacher.id } });
+    expect(states.some((state) => state.track === "listening" && state.attempts_done > 0)).toBe(true);
+    expect(states.some((state) => state.track === "reading" && state.attempts_done > 0)).toBe(true);
+    expect(states.some((state) => state.attempts_done >= 2)).toBe(true);
+    // A text comes in one track only (PRD §7, «هر متن برای هر کاربر فقط در یک مسیر»), with no borrowing this soon.
+    const tracksOf = new Map<number, Set<string>>();
+    for (const state of states) tracksOf.set(state.text_id, new Set([...(tracksOf.get(state.text_id) ?? []), state.track]));
+    expect([...tracksOf.values()].every((tracks) => tracks.size === 1)).toBe(true);
+
+    const overview = (await textsOverview(teacher, "fr", NOW))!;
+    expect(overview.available).toBe(7);
+    expect(overview.tracks.map((track) => track.track)).toEqual(["listening", "reading"]);
+    // A track that saw every A1 text with four first rounds of its own moves up (rule 2 of §7.5); the demo has no A2 text.
+    for (const track of overview.tracks) {
+      const own = states.filter((state) => state.track === track.track && state.first_score !== null).length;
+      if (track.level === "A1") expect(track).toMatchObject({ need: 7, firstRounds: own });
+      else expect(track).toMatchObject({ level: "A2", need: 0, firstRounds: 0 });
+    }
+    expect(overview.tracks.every((track) => track.waiting === null && track.nextNew === null)).toBe(true);
+    expect(overview.texts).toHaveLength(states.length);
+    expect(overview.texts.every((text) => text.attempts === 2 && text.attemptsDone <= 2)).toBe(true);
+
+    const ctx = await learnContext(teacher, "fr", NOW);
+    const learner = (await loadLearner(testDb, teacher.id, "fr", ctx.content.levels[0], NOW, ctx.today, ctx.settings))!;
+    expect(checkInvariants({ content: ctx.content, settings: ctx.settings, learner, now: NOW, today: ctx.today })).toEqual([]);
   }, 300_000);
 
   it("many mistakes fill the notebook; back after a long break leaves the last session thirty days ago", async () => {

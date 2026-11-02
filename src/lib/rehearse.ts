@@ -7,7 +7,7 @@
  * `sessions(day)` mixed sessions are played with the simulator's learner of that `ability` (PRD §16.3);
  * `cap` answers the word-cap question.
  */
-export type ScenarioId = "fresh" | "week" | "month" | "mistakes" | "irregular" | "returning" | "eager";
+export type ScenarioId = "fresh" | "week" | "month" | "texts" | "mistakes" | "irregular" | "returning" | "eager";
 
 export type Scenario = {
   id: ScenarioId;
@@ -23,6 +23,8 @@ export const SCENARIOS: Scenario[] = [
   { id: "fresh", days: 0, ability: 0.8, sessions: daily(0), cap: "none" },
   { id: "week", days: 7, ability: 0.85, sessions: daily(1), cap: "none" },
   { id: "month", days: 30, ability: 0.85, sessions: daily(1), cap: "none" },
+  // Three weeks, two sessions a day: texts in both tracks at every attempt (PRD §7.4, §10.11).
+  { id: "texts", days: 21, ability: 0.85, sessions: daily(2), cap: "none" },
   { id: "mistakes", days: 10, ability: 0.45, sessions: daily(1), cap: "none" },
   // Three days a week for three weeks.
   { id: "irregular", days: 21, ability: 0.8, sessions: (day) => (day % 7 === 0 || day % 7 === 2 || day % 7 === 4 ? 1 : 0), cap: "none" },
