@@ -113,7 +113,12 @@ export function PlacementCard({ language, overview }: { language: string; overvi
         {overview.running ? (
           <p className="bg-tint/70 text-ink flex flex-wrap items-center gap-x-4 gap-y-2 rounded-[16px] px-4 py-3 text-[14px]">
             {t("admin.rehearse.placement.running")}
-            <Link href={`/learn/${language}/placement`} target="_blank" className="text-brand-text font-bold underline-offset-4 hover:underline">
+            <Link
+              href={`/learn/${language}/placement`}
+              target="_blank"
+              className="bg-brand text-on-brand flex h-10 items-center gap-2 rounded-[14px] px-4 text-[14.5px] font-bold shadow-[var(--btn-glow)]"
+            >
+              <ExternalLink className="size-4.5" strokeWidth={1.75} aria-hidden />
               {t("admin.rehearse.placement.resume")}
             </Link>
           </p>
@@ -124,14 +129,14 @@ export function PlacementCard({ language, overview }: { language: string; overvi
             disabled={pending || asked.length === 0}
             onClick={() =>
               start(async () => {
+                // The app opens from the link that shows once the test is ready: a window opened after the wait would be blocked.
                 const ok = await placeMyself(language);
                 setFailed(!ok);
-                if (ok) window.open(`/learn/${language}/placement`, "_blank");
                 router.refresh();
               })
             }
           >
-            <ExternalLink strokeWidth={1.75} aria-hidden />
+            <Play strokeWidth={1.75} aria-hidden />
             {t("admin.rehearse.placement.myself")}
           </Button>
         </div>
