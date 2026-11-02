@@ -133,11 +133,11 @@ export function SpeakStage({ id, view, languageName, muted, onFinish }: { id: st
     <>
       <div className="screen-body speak" data-card={id}>
         <p className="ask">{t("learn.speak.ask", { language: languageName })}</p>
-        <p className="prompt-fa big">{sentence.translation}</p>
+        <p className="prompt-fa">{sentence.translation}</p>
         <RecordButtons recorder={recorder} />
         {shown ? (
           <div className="reveal">
-            <div className="line">
+            <div className="prod-line">
               <PlayButton id={`${id}:s`} speak={sentence.speak} autoplay={!muted} />
               <Latin text={sentence.text} lang={sentence.speak.lang} className="tl" />
             </div>
@@ -220,8 +220,8 @@ export function DialogueStage({
     return (
       <>
         <div className="screen-body dialogue" data-card={id}>
-          <p className="kicker">{view.title}</p>
-          <h2 className="score num">{t("learn.dialogue.score", { right, total })}</h2>
+          <p className="prod-kicker">{view.title}</p>
+          <h2 className="prod-score num">{t("learn.dialogue.score", { right, total })}</h2>
           <p className="muted">{attempt === 1 ? t("learn.dialogue.again") : t("learn.dialogue.over")}</p>
         </div>
         <Primary label={t("learn.session.continue")} onClick={() => onFinish({ turns: firsts })} />
@@ -232,11 +232,11 @@ export function DialogueStage({
   return (
     <>
       <div className="screen-body dialogue" data-card={id}>
-        <p className="kicker num">
+        <p className="prod-kicker num">
           {view.title} · {t("learn.dialogue.turn", { n: turn + 1, total })}
         </p>
         {turn === 0 ? <p className="situation">{view.situation}</p> : null}
-        <div className="line other">
+        <div className="prod-line other">
           {sound ? <MiniPlay id={`${id}:l${turn}`} speak={current.line.speak} /> : null}
           <div>
             {current.speaker ? <span className="speaker lat">{current.speaker}</span> : null}
@@ -253,12 +253,17 @@ export function DialogueStage({
           </div>
         </div>
         <p className="ask">{t("learn.dialogue.ask")}</p>
-        <div className="options" role="group">
+        <div className="opts stack" role="group">
           {current.choices.map((choice: SentenceView, index) => (
             <button
               key={choice.id}
               type="button"
-              className={cn("opt", answered && index === current.correct && "ok", answered && index === chosen && index !== current.correct && "bad")}
+              className={cn(
+                "opt",
+                answered && index === current.correct && "is-correct",
+                answered && index === chosen && index !== current.correct && "is-wrong",
+                answered && index !== chosen && index !== current.correct && "is-dim",
+              )}
               aria-pressed={chosen === index}
               disabled={answered}
               onClick={() => choose(index)}
@@ -342,7 +347,7 @@ export function ErrorfixStage({ id, view, language, onFinish }: { id: string; vi
             {graded.result.ok ? t("learn.errorfix.allRight") : t("learn.errorfix.result", { fixed: graded.result.fixed, of: graded.result.of })}
           </p>
           {graded.result.wrongTaps > 0 ? <p className="muted">{t("learn.errorfix.wrongTaps", { n: graded.result.wrongTaps })}</p> : null}
-          <div className="line">
+          <div className="prod-line">
             <MiniPlay id={`${id}:all`} speak={view.speak} />
             <Latin text={view.corrected} lang={language} className="tl" />
           </div>
@@ -376,12 +381,7 @@ export function ErrorfixStage({ id, view, language, onFinish }: { id: string; vi
         <p className="tl lat errorfix-text" lang={language} dir="ltr">
           {view.pieces.map((piece, index) =>
             piece.word ? (
-              <button
-                key={index}
-                type="button"
-                className={cn("piece", fixes[String(index)] !== undefined && "changed", editing === index && "editing")}
-                onClick={() => open(index)}
-              >
+              <button key={index} type="button" className={cn("piece", fixes[String(index)] !== undefined && "changed", editing === index && "editing")} onClick={() => open(index)}>
                 {fixes[String(index)] ?? piece.text}
               </button>
             ) : (

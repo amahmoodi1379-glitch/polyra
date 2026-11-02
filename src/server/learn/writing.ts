@@ -14,7 +14,7 @@ import { addDaily } from "./writes";
 /**
  * The weekly guided writing (PRD §8b.6): this week's card on the home screen, its page, the finished
  * writing kept in «نوشته‌های من» (PRD §3.10). No score: a finished writing counts in the streak and its
- * time, up to `writing.max_minutes`, in active learning. A teacher or a tester may open any task.
+ * time, up to `writing.max_minutes`, in active learning. A teacher or a tester may try any task; a try is not kept.
  */
 
 const statusesOf = (audience: Audience): ContentStatus[] => (audience === "public" ? ["published"] : ["approved", "published"]);
@@ -24,7 +24,14 @@ export async function writingTasks(language: string, audience: Audience): Promis
   const levels = await appSetting<string[]>(`levels.${language}`);
   const released = audience !== "public" ? levels : (await db.levelRelease.findMany({ where: { language }, select: { level: true } })).map((row) => row.level);
   const rows = await db.writingTask.findMany({ where: { language, status: { in: statusesOf(audience) }, suspended: false, level: { in: levels.filter((level) => released.includes(level)) } } });
-  return rows.map((row) => ({
+  return rows.map(writingTaskOf);
+}
+
+type WritingTaskRow = NonNullable<Awaited<ReturnType<typeof db.writingTask.findUnique>>>;
+
+/** A stored writing task as the engine and the page read it; «بازبینی» uses it for any status. */
+export function writingTaskOf(row: WritingTaskRow): WritingTaskC {
+  return {
     id: row.id,
     level: row.level,
     promptFa: row.prompt_fa,
@@ -37,7 +44,7 @@ export async function writingTasks(language: string, audience: Audience): Promis
     })),
     modelAnswer: row.model_answer,
     modelAnswerFa: row.model_answer_fa,
-  }));
+  };
 }
 
 /** Writing rows of a learner in one language (`writing_entry` has no language of its own). */
@@ -101,29 +108,29 @@ export async function writingPage(user: Learner, language: LanguageCode, taskId:
 export type SaveWriting = { language: LanguageCode; taskId: number; text: string; ticks: number[]; seconds: number };
 
 /**
- * A finished writing (PRD §8b.6): kept in `writing_entry` with the checklist ticks. This week's task also
- * marks the week done, counts today in the streak and its time in active learning; a teacher's try of
- * another task is only kept.
+ * A finished writing (PRD §8b.6): kept in `writing_entry` with the checklist ticks; it marks the week
+ * done, counts today in the streak and its time in active learning. A teacher's or a tester's try of a
+ * task that is not this week's is not kept: they see the model answer and nothing changes.
  */
-export async function saveWriting(user: Learner, input: SaveWriting, now = new Date()): Promise<{ kind: "ok"; id: number } | { kind: "invalid" | "locked" | "short" }> {
+export async function saveWriting(user: Learner, input: SaveWriting, now = new Date()): Promise<{ kind: "ok"; id: number | null } | { kind: "invalid" | "locked" | "short" }> {
   const page = await writingPage(user, input.language, input.taskId, now);
-  if (!page) return { kind: "invalid" };
+  if (!page || page.task.id !== input.taskId) return { kind: "invalid" };
   if (page.locked) return { kind: "locked" };
   if (writingWords(input.text) < page.minToFinish) return { kind: "short" };
+  // A teacher's or a tester's try of a task that is not this week's is not kept (DECISIONS.md).
+  if (page.trying) return { kind: "ok", id: null };
   const ctx = await learnContext(user, input.language, now);
   const ticks = [...new Set(input.ticks)].filter((tick) => Number.isInteger(tick) && tick >= 0 && tick < page.task.checklist.length).sort((a, b) => a - b);
   const today = tehranDate(now);
   return db.$transaction(async (tx) => {
     const entry = await tx.writingEntry.create({ data: { user_id: user.id, writing_task_id: page.task.id, text: input.text.trim(), checklist_ticks: ticks, created_at: now } });
-    if (!page.trying) {
-      const who = { userId: user.id, language: input.language };
-      await addDaily(tx, who, today, { active_sec: writingActiveSec(input.seconds, ctx.settings) });
-      const enrollment = await tx.enrollment.update({
-        where: { user_id_language: { user_id: user.id, language: input.language } },
-        data: { writing_done_week: asDate(weekStart(today)) },
-      });
-      await countStreakDay(tx, enrollment, today, ctx.settings);
-    }
+    const who = { userId: user.id, language: input.language };
+    await addDaily(tx, who, today, { active_sec: writingActiveSec(input.seconds, ctx.settings) });
+    const enrollment = await tx.enrollment.update({
+      where: { user_id_language: { user_id: user.id, language: input.language } },
+      data: { writing_done_week: asDate(weekStart(today)) },
+    });
+    await countStreakDay(tx, enrollment, today, ctx.settings);
     return { kind: "ok" as const, id: entry.id };
   });
 }

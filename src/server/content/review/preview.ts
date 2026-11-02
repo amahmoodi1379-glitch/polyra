@@ -4,12 +4,15 @@ import { hasCard, isColloquial, levelIndex, TRACKS, type Content, type SentenceC
 import type { Ex, SentenceView } from "@/engine/ex";
 import { exerciseDefs, type ExerciseFamily } from "@/engine/exercises";
 import { buildPhonicsRound, phonicsLessonView, type PhonicsView } from "@/engine/phonics";
+import { dialogueView, errorfixView, writingMinToFinish, type DialogueView, type ErrorfixView, type WritingTaskC } from "@/engine/production";
 import { seeded } from "@/engine/random";
 import { lessonView, tableView, textView, wordCard, type LessonView, type TableView, type TextCard, type TextView, type WordCard } from "@/engine/session";
 import type { Settings } from "@/engine/settings";
 import type { Lang } from "@/engine/text";
 import { attemptCost, stageRules, stagesOf, TEXT_RULE } from "@/engine/texts";
+import { db } from "@/server/db";
 import { loadContent } from "@/server/learn/content";
+import { writingTaskOf } from "@/server/learn/writing";
 import { engineSettings } from "@/server/settings/read";
 import type { LibrarySlug } from "../library/slugs";
 
@@ -17,8 +20,9 @@ import type { LibrarySlug } from "../library/slugs";
  * «بازبینی» shows an item the way a learner gets it (PRD §13.9 step 4, owner decision): its card and
  * every exercise the engine builds from it, with the real builders and engine settings. A text shows
  * its key words and every stage of every attempt in both tracks; a phonics lesson its start with every
- * sound to hear (PRD §8.5) and both rounds' questions. Dialogues, find-the-mistake and writing get their
- * learner screens later in phase 4; until then their review shows the form.
+ * sound to hear (PRD §8.5) and both rounds' questions. A dialogue shows both attempts (the translation a
+ * tap away only in the first, PRD §8b.4), find-the-mistake its screen and result, a writing task its page
+ * and, once written, the model answer beside it (PRD §8b.5–§8b.6).
  */
 
 export type Screen =
@@ -32,12 +36,18 @@ export type Screen =
   /** One stage of an attempt of a text in one track (PRD §7.4). */
   | { kind: "text"; view: TextView; info: TextCard }
   /** The start of a phonics round (PRD §8.3); round 1 with every word, sentence and pair to hear. */
-  | { kind: "phonics"; view: PhonicsView };
+  | { kind: "phonics"; view: PhonicsView }
+  /** A situational dialogue (PRD §8b.4), attempt 1 or 2. */
+  | { kind: "dialogue"; view: DialogueView; attempt: number }
+  /** Find the mistake (PRD §8b.5). */
+  | { kind: "errorfix"; view: ErrorfixView }
+  /** The weekly writing page (PRD §8b.6). */
+  | { kind: "writing"; task: WritingTaskC; minToFinish: number };
 
 export type Preview =
   | { state: "ready"; language: Lang; screens: Screen[]; words: Record<number, WordCard>; lessons: Record<number, LessonView> }
-  /** later: no learner screen yet; missing: not shown to learners as it is (no meaning, an open word row); noCard: never a card. */
-  | { state: "none"; reason: "later" | "missing" | "noCard" };
+  /** missing: not shown to learners as it is (no meaning, an open word row); noCard: never a card. */
+  | { state: "none"; reason: "missing" | "noCard" };
 
 const codesOf = (family: ExerciseFamily) => exerciseDefs.filter((item) => item.family === family).map((item) => item.code);
 const WORD_SENTENCE_CODES = ["W3b", "W3c", "W6a", "W6b"];
@@ -118,7 +128,12 @@ function textScreens(content: Content, settings: Settings, text: TextC): Screen[
 }
 
 export async function previewItem(slug: LibrarySlug, language: string, id: number): Promise<Preview> {
-  if (slug === "dialogues" || slug === "errorfix" || slug === "writing") return { state: "none", reason: "later" };
+  if (slug === "writing") {
+    const row = await db.writingTask.findUnique({ where: { id } });
+    if (!row || row.language !== language) return { state: "none", reason: "missing" };
+    const task = writingTaskOf(row);
+    return { state: "ready", language: language as Lang, screens: [{ kind: "writing", task, minToFinish: writingMinToFinish(task) }], words: {}, lessons: {} };
+  }
   const [content, settings] = await Promise.all([loadContent(language, "review"), engineSettings()]);
   const words: Record<number, WordCard> = {};
   const lessons: Record<number, LessonView> = {};
@@ -127,6 +142,20 @@ export async function previewItem(slug: LibrarySlug, language: string, id: numbe
   const seed = `${slug}:${id}`;
 
   switch (slug) {
+    case "dialogues": {
+      const dialogue = content.dialogues.find((item) => item.id === id);
+      const view = dialogue ? dialogueView(content, dialogue) : null;
+      if (!view) return { state: "none", reason: "missing" };
+      return ready([
+        { kind: "dialogue", view, attempt: 1 },
+        { kind: "dialogue", view, attempt: 2 },
+      ]);
+    }
+    case "errorfix": {
+      const item = content.errorfixes.find((row) => row.id === id);
+      if (!item) return { state: "none", reason: "missing" };
+      return ready([{ kind: "errorfix", view: errorfixView(content, item) }]);
+    }
     case "texts": {
       const text = content.texts.find((item) => item.id === id);
       if (!text) return { state: "none", reason: "missing" };

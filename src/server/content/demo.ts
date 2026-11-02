@@ -1,11 +1,33 @@
 import type { ImportBatch, Prisma, PromptKind } from "@/generated/prisma/client";
 import { db } from "@/server/db";
 import { forgetContent } from "@/server/learn/content";
-import { DEMO_MODEL, DEMO_VERSION, demoTextCodes, demoUnits, grammarAnswer, sentencesAnswer, tablesAnswer, textsAnswer, textsParams, textsParamsFor, unitListAnswer, wordsAnswer } from "../../../fixtures/demo-fr/build";
+import {
+  DEMO_MODEL,
+  DEMO_VERSION,
+  demoDialogues,
+  demoTextCodes,
+  demoUnits,
+  dialogueAnswer,
+  dialogueParams,
+  errorfixAnswer,
+  errorfixParams,
+  grammarAnswer,
+  sentencesAnswer,
+  tablesAnswer,
+  textsAnswer,
+  textsParams,
+  textsParamsFor,
+  unitListAnswer,
+  wordsAnswer,
+  writingAnswer,
+  writingParams,
+} from "../../../fixtures/demo-fr/build";
 import { demoPhonics } from "../../../fixtures/demo-fr/phonics";
 import { formExceptions } from "../../../fixtures/demo-fr/words";
 import { answerRecords } from "./batches";
 import { conjugation } from "./kinds/conjugation";
+import { dialogues } from "./kinds/dialogues";
+import { errorfix } from "./kinds/errorfix";
 import { grammar } from "./kinds/grammar";
 import { phonics } from "./kinds/phonics";
 import { sentences } from "./kinds/sentences";
@@ -13,11 +35,13 @@ import { texts } from "./kinds/texts";
 import type { ContentKind, Tx } from "./kinds/types";
 import { unitList } from "./kinds/unit-list";
 import { words } from "./kinds/words";
+import { writing } from "./kinds/writing";
 import { mergeRound, type RoundResult } from "./report";
 
 /**
  * The French demo for the tester account (DECISIONS.md, «محتوای نمونه فرانسوی»): about 60 A1 words
- * with their sentences, six grammar units, seven texts and three phonics lessons, written by hand. It goes through the panel's own
+ * with their sentences, six grammar units, seven texts, three phonics lessons, two dialogues, two find-the-mistake texts and two
+ * writing tasks, written by hand. It goes through the panel's own
  * importers, so it passes the same checks as chatbot answers, and is stored as approved: a tester
  * or an admin sees it, a learner never does (PRD §13.5). Every row carries prompt_version "demo-1",
  * which is how `removeDemo` finds it again.
@@ -37,9 +61,9 @@ export async function demoStatus(): Promise<DemoStatus> {
 }
 
 export type LoadResult =
-  | { kind: "loaded"; words: number; sentences: number; units: number; texts: number; phonics: number }
-  /** The demo was there; texts written after it was loaded were added (`texts`, maybe 0). */
-  | { kind: "already"; texts: number }
+  | { kind: "loaded"; words: number; sentences: number; units: number; texts: number; phonics: number; speaking: number }
+  /** The demo was there; texts and speaking and writing written after it was loaded were added (maybe 0). */
+  | { kind: "already"; texts: number; speaking: number }
   | { kind: "has_content"; words: number };
 
 async function newBatch(tx: Tx, kind: PromptKind, params: Record<string, unknown>, adminId: number | null) {
@@ -80,7 +104,7 @@ async function importAnswer(tx: Tx, kind: ContentKind, batch: ImportBatch, answe
  */
 export async function loadDemo(adminId: number | null = null): Promise<LoadResult> {
   const status = await demoStatus();
-  if (status.loaded) return { kind: "already", texts: await addNewTexts(adminId) };
+  if (status.loaded) return { kind: "already", texts: await addNewTexts(adminId), speaking: await addSpeaking(adminId) };
   if (status.otherWords > 0) return { kind: "has_content", words: status.otherWords };
 
   const counts = await db.$transaction(
@@ -103,6 +127,7 @@ export async function loadDemo(adminId: number | null = null): Promise<LoadResul
         const params = { level: "A1", label: lesson.sound_label, kind: lesson.kind, order_no: orderNo, summary: [] };
         await importAnswer(tx, phonics, await newBatch(tx, "P_H", params, adminId), { lesson });
       }
+      await importSpeaking(tx, adminId);
 
       // Approved, as if the teacher had checked every row (PRD §13.4); never published.
       const batchIds = (await tx.importBatch.findMany({ where: { language: DEMO_LANGUAGE, prompt_version: DEMO_VERSION }, select: { id: true } })).map((row) => row.id);
@@ -119,18 +144,63 @@ export async function loadDemo(adminId: number | null = null): Promise<LoadResul
       await tx.text.updateMany({ where: mine, data: approved });
       await tx.question.updateMany({ where: mine, data: approved });
       await tx.phonicsLesson.updateMany({ where: mine, data: approved });
+      await approveSpeaking(tx, mine);
       return {
         words: await tx.word.count({ where: { ...mine, no_card: false } }),
         sentences: await tx.sentence.count({ where: mine }),
         units: await tx.grammarUnit.count({ where: mine }),
         texts: await tx.text.count({ where: mine }),
         phonics: await tx.phonicsLesson.count({ where: mine }),
+        speaking: await speakingCount(tx, mine),
       };
     },
     { timeout: 300_000, maxWait: 10_000 },
   );
   forgetContent();
   return { kind: "loaded", ...counts };
+}
+
+type Mine = { import_batch_id: { in: number[] } | number };
+
+/** Speaking and writing (PRD §8b): one P-D batch per dialogue, then P-E and P-WR. */
+async function importSpeaking(tx: Tx, adminId: number | null) {
+  for (const dialogue of demoDialogues) {
+    await importAnswer(tx, dialogues, await newBatch(tx, "P_D", { ...dialogueParams(dialogue), summary: [] }, adminId), dialogueAnswer(dialogue));
+  }
+  await importAnswer(tx, errorfix, await newBatch(tx, "P_E", { ...errorfixParams, summary: [] }, adminId), errorfixAnswer());
+  await importAnswer(tx, writing, await newBatch(tx, "P_WR", { ...writingParams, summary: [] }, adminId), writingAnswer());
+}
+
+async function approveSpeaking(tx: Tx, mine: Mine) {
+  const approved = { status: "approved" as const };
+  await tx.sentence.updateMany({ where: mine, data: approved });
+  await tx.dialogue.updateMany({ where: mine, data: approved });
+  await tx.errorfixItem.updateMany({ where: mine, data: approved });
+  await tx.writingTask.updateMany({ where: mine, data: approved });
+}
+
+const speakingCount = async (tx: Tx, mine: Mine) => (await tx.dialogue.count({ where: mine })) + (await tx.errorfixItem.count({ where: mine })) + (await tx.writingTask.count({ where: mine }));
+
+/**
+ * Speaking and writing came after the first demo: a server that loaded it before gets them on the next
+ * load, approved like the rest. Returns how many dialogues, texts and tasks were added.
+ */
+async function addSpeaking(adminId: number | null): Promise<number> {
+  const there = await db.importBatch.count({ where: { language: DEMO_LANGUAGE, prompt_version: DEMO_VERSION, prompt_kind: { in: ["P_D", "P_E", "P_WR"] } } });
+  if (there > 0) return 0;
+  const added = await db.$transaction(
+    async (tx) => {
+      const before = (await tx.importBatch.aggregate({ _max: { id: true } }))._max.id ?? 0;
+      await importSpeaking(tx, adminId);
+      const ids = (await tx.importBatch.findMany({ where: { id: { gt: before }, language: DEMO_LANGUAGE, prompt_version: DEMO_VERSION }, select: { id: true } })).map((row) => row.id);
+      const mine = { import_batch_id: { in: ids } };
+      await approveSpeaking(tx, mine);
+      return speakingCount(tx, mine);
+    },
+    { timeout: 120_000, maxWait: 10_000 },
+  );
+  forgetContent();
+  return added;
 }
 
 /**
@@ -159,7 +229,7 @@ async function addNewTexts(adminId: number | null): Promise<number> {
 }
 
 /**
- * Removes the demo and everything learners did with it: their item states, text and phonics states,
+ * Removes the demo and everything learners did with it: their item states, text, phonics and speaking states, writings,
  * logs, notebook rows, queue and confusion pairs for these items, and any open session of the language.
  */
 export async function removeDemo(): Promise<{ removed: boolean }> {
@@ -176,6 +246,10 @@ export async function removeDemo(): Promise<{ removed: boolean }> {
       const targetIds = await ids(tx.sentenceTarget.findMany({ where: mine, select: { id: true } }));
       const textIds = await ids(tx.text.findMany({ where: mine, select: { id: true } }));
       const lessonIds = await ids(tx.phonicsLesson.findMany({ where: mine, select: { id: true } }));
+      const sentenceIds = await ids(tx.sentence.findMany({ where: mine, select: { id: true } }));
+      const dialogueIds = await ids(tx.dialogue.findMany({ where: mine, select: { id: true } }));
+      const errorfixIds = await ids(tx.errorfixItem.findMany({ where: mine, select: { id: true } }));
+      const taskIds = await ids(tx.writingTask.findMany({ where: mine, select: { id: true } }));
       const items = [
         { item_type: "word" as const, item_id: { in: wordIds } },
         { item_type: "grammar_unit" as const, item_id: { in: unitIds } },
@@ -185,7 +259,16 @@ export async function removeDemo(): Promise<{ removed: boolean }> {
       const lessonItems = { item_type: "phonics_lesson" as const, item_id: { in: lessonIds } };
       const language = DEMO_LANGUAGE;
       await tx.itemState.deleteMany({ where: { language, OR: items } });
-      await tx.reviewLog.deleteMany({ where: { language, OR: [...items, textItems, lessonItems] } });
+      const speakingItems = [
+        { item_type: "sentence", item_id: { in: sentenceIds } },
+        { item_type: "dialogue", item_id: { in: dialogueIds } },
+        { item_type: "errorfix_item", item_id: { in: errorfixIds } },
+      ];
+      await tx.reviewLog.deleteMany({ where: { language, OR: [...items, textItems, lessonItems, ...speakingItems] } });
+      await tx.speakState.deleteMany({ where: { sentence_id: { in: sentenceIds } } });
+      await tx.dialogueState.deleteMany({ where: { dialogue_id: { in: dialogueIds } } });
+      await tx.errorfixState.deleteMany({ where: { errorfix_item_id: { in: errorfixIds } } });
+      await tx.writingEntry.deleteMany({ where: { writing_task_id: { in: taskIds } } });
       await tx.textState.deleteMany({ where: { text_id: { in: textIds } } });
       await tx.phonicsState.deleteMany({ where: { lesson_id: { in: lessonIds } } });
       await tx.notebookEntry.deleteMany({
@@ -205,6 +288,9 @@ export async function removeDemo(): Promise<{ removed: boolean }> {
       await tx.question.deleteMany({ where: { text_id: { in: textIds } } });
       await tx.text.deleteMany({ where: mine });
       await tx.phonicsLesson.deleteMany({ where: mine });
+      await tx.dialogue.deleteMany({ where: mine });
+      await tx.errorfixItem.deleteMany({ where: mine });
+      await tx.writingTask.deleteMany({ where: mine });
       await tx.sentence.deleteMany({ where: mine });
       await tx.translateItem.deleteMany({ where: mine });
       await tx.transformItem.deleteMany({ where: mine });

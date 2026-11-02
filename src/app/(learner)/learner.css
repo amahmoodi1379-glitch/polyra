@@ -3582,3 +3582,243 @@
     max-height: 82%;
   }
 }
+
+/* ───────── speaking and writing (PRD §8b): plain and calm; visual polish comes later ───────── */
+.lx {
+  & .prod-kicker {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--ink-2);
+  }
+  & .prod-score {
+    margin: 0;
+    font-size: 34px;
+    font-weight: 800;
+  }
+  & .situation {
+    margin: 0;
+    padding: 12px 14px;
+    border-radius: 16px;
+    background: var(--tint);
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  & .prod-line {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    direction: ltr;
+  }
+  & .prod-line > div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+  }
+  & .prod-line .tl,
+  & .errorfix-text {
+    font: 400 24px/1.5 var(--font-lat);
+    overflow-wrap: break-word;
+  }
+  & .prod-line .speaker {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--ink-2);
+  }
+  & .prod-line .fa,
+  & .prod-line .link {
+    direction: rtl;
+    text-align: right;
+    font-size: 14px;
+    color: var(--ink-2);
+  }
+  & .prod-line .link {
+    text-decoration: underline dotted;
+    align-self: flex-end;
+  }
+  & .opt .fa.small {
+    font: 500 13px/1.5 var(--font-ui);
+    color: var(--ink-2);
+  }
+  & .why,
+  & .verdict {
+    margin: 0;
+    padding: 12px 14px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  & :is(.why, .verdict).ok {
+    background: var(--ok-soft);
+  }
+  & :is(.why, .verdict).bad {
+    background: var(--bad-soft);
+  }
+  & .why p {
+    margin: 0;
+  }
+  & .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  & .cta.rate {
+    flex-direction: row;
+    gap: 8px;
+  }
+  & .cta.rate > * {
+    flex: 1;
+  }
+  & .errorfix-text {
+    margin: 0;
+    text-align: left;
+  }
+  & .piece {
+    padding: 0 3px;
+    border-radius: 8px;
+    font: inherit;
+    text-decoration: underline dotted var(--line-2);
+    text-underline-offset: 6px;
+  }
+  & .piece.changed {
+    background: var(--tint-2);
+    color: var(--brand-text);
+    text-decoration: none;
+  }
+  & .piece.editing {
+    box-shadow: inset 0 0 0 2px var(--brand-soft);
+  }
+  & .fix-edit,
+  & .write-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  & .fix-edit input,
+  & .write-box textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 14px;
+    background: var(--surface);
+    box-shadow: inset 0 0 0 1px var(--line);
+    font: 400 20px/1.5 var(--font-lat);
+    color: var(--ink);
+  }
+  & .write-box textarea {
+    min-height: 220px;
+    font-size: 18px;
+    resize: vertical;
+  }
+  & .marks {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  & .marks li {
+    padding: 10px 12px;
+    border-radius: 14px;
+    background: var(--surface);
+    box-shadow: inset 0 0 0 1px var(--line);
+  }
+  & .marks li.ok {
+    box-shadow: inset 0 0 0 2px var(--teal);
+  }
+  & .marks li p {
+    margin: 4px 0 0;
+    font-size: 14px;
+  }
+  & .write-prompt {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.7;
+  }
+  & .phrases {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  & .phrases li {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 10px;
+    align-items: baseline;
+  }
+  & .phrases .lat {
+    font: 400 18px/1.4 var(--font-lat);
+  }
+  & .phrases .fa {
+    font-size: 13px;
+    color: var(--ink-2);
+  }
+  & .side {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+  @media (min-width: 720px) {
+    & .side {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  & .side section {
+    padding: 12px 14px;
+    border-radius: 16px;
+    background: var(--surface);
+    box-shadow: inset 0 0 0 1px var(--line);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  & .side h3 {
+    margin: 0;
+    font-size: 13px;
+    color: var(--ink-2);
+  }
+  & .side .written {
+    margin: 0;
+    font: 400 17px/1.6 var(--font-lat);
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    text-align: left;
+  }
+  & .ticks {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  & .ticks label {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    min-height: 40px;
+    font-size: 15px;
+  }
+  & .ticks input {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+    accent-color: var(--teal);
+  }
+  & .note {
+    margin: 0;
+    padding: 10px 12px;
+    border-radius: 14px;
+    background: var(--tint);
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}

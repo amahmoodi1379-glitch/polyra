@@ -8,6 +8,9 @@ import { parseItemKey } from "@/engine/state";
 import { tehranDate } from "@/engine/time";
 import { TRACKS, type Track } from "@/engine/content";
 import { makeEnv } from "@/engine/session/views";
+import { introducedCardWords } from "@/engine/session/newmaterial";
+import { indexItems } from "@/engine/levels";
+import { correctedOf, dialogueGate, errorfixOpen, nextDialogue, nextErrorfix, PRODUCTION, speakDone, speakGate, speakOrder } from "@/engine/production";
 import { indexTextStates, newText, nextAttempt, otherTrack, TEXT_RULE, textProgress, textStateKey, textWaiting, wasBorrowed, type TextEnv } from "@/engine/texts";
 import { num } from "@/engine/settings";
 import { scenarioById, type Scenario } from "@/lib/rehearse";
@@ -17,6 +20,7 @@ import { db } from "@/server/db";
 import { submitAnswer } from "./answer";
 import { resetProgress, startFromZero } from "./enroll";
 import { learnContext, previewSession, startSession, type Bundle, type Learner } from "./session";
+import { writingCard, writingTasks, type WritingCard } from "./writing";
 
 /**
  * «آزمایش مثل زبان‌آموز» (DECISIONS.md, 2 November 2026): a teacher or a tester turns their own account
@@ -128,7 +132,7 @@ const answerRequest = (bundle: Bundle, seq: number, card: Card, answer: RawAnswe
 
 /** One line of «جلسه بعد چه دارد»: what kind of card, and which word, lesson or text. */
 export type NextLine = { kind: NextKind; name: string; count: number };
-export type NextKind = "newWord" | "word" | "newUnit" | "unit" | "conj" | "notebook" | "text" | "drill" | "phonics" | "confusion";
+export type NextKind = "newWord" | "word" | "newUnit" | "unit" | "conj" | "notebook" | "text" | "drill" | "phonics" | "confusion" | "speak" | "dialogue" | "errorfix";
 
 /**
  * What the next «شروع» would bring today, item by item in the order it comes (built the same way the
@@ -165,6 +169,9 @@ function describe(plan: SessionPlan, content: Awaited<ReturnType<typeof learnCon
     } else if (card.t === "text" || card.t === "textwords") {
       const textId = card.text?.textId ?? id;
       push(`x:${textId}`, "text", content.texts.find((text) => text.id === textId)?.title ?? "");
+    } else if (card.prod) {
+      const prod = card.prod;
+      push(card.item, prod.kind, prod.kind === "speak" ? prod.view.sentence.text : prod.kind === "dialogue" ? prod.view.title : shortText(prod.view.corrected));
     } else if (card.t === "drill") {
       push(card.item, "drill", content.sentences.get(id)?.text ?? "");
     } else if (card.t === "confusion") {
@@ -275,4 +282,86 @@ export async function textsOverview(user: Learner, language: LanguageCode, now =
     })
     .sort((a, b) => a.track.localeCompare(b.track) || a.title.localeCompare(b.title));
   return { tracks, texts, available: content.texts.length };
+}
+
+const shortText = (text: string, max = 48) => (text.length > max ? `${text.slice(0, max - 1).trimEnd()}…` : text);
+
+/** Speaking and writing as the engine sees them today (PRD §8b), for «آزمایش مثل زبان‌آموز». Nothing is written. */
+export type ProductionOverview = {
+  /** Card words introduced so far: the gates of S1 and dialogues count them (PRD §10.3). */
+  words: number;
+  speak: { gate: { need: number; left: number } | null; seen: number; finished: number; ready: number };
+  dialogue: {
+    gate: { need: number; left: number } | null;
+    next: { id: number; title: string; attempt: number } | null;
+    tried: { id: number; title: string; attemptsDone: number; scores: number[]; nextAt: string | null }[];
+    available: number;
+  };
+  errorfix: {
+    open: boolean;
+    /** The grammar level find the mistake goes by, and the level it opens at. */
+    level: string;
+    from: string;
+    next: { id: number; name: string; attempt: number } | null;
+    tried: { id: number; name: string; attemptsDone: number; ok: boolean[]; nextAt: string | null }[];
+    available: number;
+  };
+  writing: { card: WritingCard; tasks: { id: number; level: string; promptFa: string }[] };
+};
+
+/** How many S1 sentences are counted as ready, at most. */
+const SPEAK_COUNT_CAP = 999;
+
+export async function productionOverview(user: Learner, language: LanguageCode, now = new Date()): Promise<ProductionOverview | null> {
+  const preview = await previewSession(user, language, now);
+  if (!preview) return null;
+  const { learner, ctx } = preview;
+  const { content, settings } = ctx;
+  const env = makeEnv(content, learner, settings, seeded("try", user.id));
+  const items = indexItems(learner.items);
+  const words = introducedCardWords(content, learner.items);
+  const grammar = learner.skills.find((skill) => skill.skill === "grammar");
+
+  const sGate = speakGate(words, settings);
+  let ready = 0;
+  if (!sGate) {
+    const order = speakOrder(env, learner.speaks, learner.items, now);
+    while (ready < SPEAK_COUNT_CAP && !order.next().done) ready++;
+  }
+
+  const dialogues = new Map(content.dialogues.map((dialogue) => [dialogue.id, dialogue]));
+  const dPick = nextDialogue(env, learner.dialogues, words, now);
+  const errorfixes = new Map(content.errorfixes.map((item) => [item.id, item]));
+  const ePick = nextErrorfix(env, learner.errorfixes, items, grammar, now);
+  const eOpen = errorfixOpen(content, items, grammar);
+  const [card, tasks] = await Promise.all([writingCard(user, language, now), writingTasks(language, ctx.audience)]);
+
+  return {
+    words,
+    speak: { gate: sGate, seen: learner.speaks.length, finished: learner.speaks.filter((state) => speakDone(state, settings)).length, ready },
+    dialogue: {
+      gate: dialogueGate(words, settings),
+      next: dPick ? { id: dPick.dialogue.id, title: dPick.dialogue.titleFa, attempt: dPick.attempt } : null,
+      tried: learner.dialogues.flatMap((state) => {
+        const dialogue = dialogues.get(state.dialogueId);
+        return dialogue ? [{ id: dialogue.id, title: dialogue.titleFa, attemptsDone: state.attemptsDone, scores: state.scores, nextAt: state.nextAttemptAt }] : [];
+      }),
+      available: content.dialogues.length,
+    },
+    errorfix: {
+      open: eOpen.open,
+      level: eOpen.level,
+      from: PRODUCTION.highLevel,
+      next: ePick ? { id: ePick.item.id, name: shortText(correctedOf(ePick.item.markedText)), attempt: ePick.attempt } : null,
+      tried: learner.errorfixes.flatMap((state) => {
+        const item = errorfixes.get(state.itemId);
+        return item ? [{ id: item.id, name: shortText(correctedOf(item.markedText)), attemptsDone: state.attemptsDone, ok: state.results.map((result) => result.ok), nextAt: state.nextAttemptAt }] : [];
+      }),
+      available: content.errorfixes.length,
+    },
+    writing: {
+      card,
+      tasks: [...tasks].sort((a, b) => content.levels.indexOf(a.level) - content.levels.indexOf(b.level) || a.id - b.id).map((task) => ({ id: task.id, level: task.level, promptFa: task.promptFa })),
+    },
+  };
 }

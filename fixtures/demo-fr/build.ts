@@ -1,12 +1,13 @@
 /**
  * Turns the hand-written demo into the answers the panel's importers take (PRD §14): P-U for the
- * unit list, P-W for the words, P-X for the tables, P-S for the bank sentences, one P-G per unit and
- * P-T for the texts.
+ * unit list, P-W for the words, P-X for the tables, P-S for the bank sentences, one P-G per unit,
+ * P-T for the texts, one P-D per dialogue, P-E for find the mistake and P-WR for the writing tasks.
  * Word mappings and wrong options are made here from the word list, so the data files stay short.
  * Pure: no database.
  */
 import { units, type UnitDef } from "./grammar";
 import { sentences } from "./sentences";
+import { demoDialogues, demoErrorfix, demoWriting, type DemoDialogue } from "./speaking";
 import { demoTexts } from "./texts";
 import { cardWords, names, persons, smallWords, verbs, type CardWord, type Person, type Slot } from "./words";
 
@@ -328,5 +329,64 @@ export function textsAnswer(only?: ReadonlySet<string>) {
 }
 
 export const demoTextCodes = demoTexts.map((text) => text.code);
+
+// ───────────────────────────── speaking and writing (PRD §8b) ─────────────────────────────
+
+/** Find the mistake and writing are B1 content (PRD §8b.7); see `speaking.ts`. */
+export const SPEAKING_HIGH_LEVEL = "B1";
+const correctedOf = (marked: string) => marked.replace(/\{\{[^{}|]*\|([^{}|]*)\}\}/g, "$1");
+const sentenceOf = ([text, fa]: [string, string]) => ({ text, tts_text: null, translation_fa: fa, tokens: tokensOf(text) });
+
+/** The P-D batch's own plan (PRD §14.6): one dialogue, its level, code and situation. */
+export const dialogueParams = (dialogue: DemoDialogue) => ({ level: LEVEL, code: dialogue.code, situation: dialogue.situation });
+
+export function dialogueAnswer(dialogue: DemoDialogue) {
+  return {
+    dialogue: {
+      code: dialogue.code,
+      level: LEVEL,
+      title_fa: dialogue.title,
+      situation_fa: dialogue.situation,
+      turns: dialogue.turns.map((turn) => ({ line: { ...sentenceOf(turn.line), speaker: turn.speaker }, choices: turn.choices.map(sentenceOf), correct: turn.correct, why_fa: turn.why })),
+    },
+    issues: [],
+  };
+}
+
+export const errorfixParams = { level: SPEAKING_HIGH_LEVEL, count: demoErrorfix.length };
+
+export function errorfixAnswer() {
+  return {
+    items: demoErrorfix.map((item) => ({
+      level: SPEAKING_HIGH_LEVEL,
+      marked_text: item.marked,
+      translation_fa: item.fa,
+      unit_codes: item.units,
+      errors: item.why.map((why_fa) => ({ why_fa })),
+      tokens: tokensOf(correctedOf(item.marked)),
+    })),
+    issues: [],
+  };
+}
+
+export const writingParams = { level: SPEAKING_HIGH_LEVEL, count: demoWriting.length };
+
+export function writingAnswer() {
+  return {
+    tasks: demoWriting.map((task) => ({
+      level: SPEAKING_HIGH_LEVEL,
+      prompt_fa: task.prompt,
+      min_words: task.min,
+      max_words: task.max,
+      checklist_fa: task.checklist,
+      useful_phrases: task.phrases.map(([text, translation_fa]) => ({ text, translation_fa })),
+      model_answer: task.model,
+      model_answer_fa: task.modelFa,
+    })),
+    issues: [],
+  };
+}
+
+export { demoDialogues };
 
 export { units as demoUnits };
