@@ -292,36 +292,41 @@ export function grammarAnswer(unit: UnitDef) {
   };
 }
 
-/** The P-T batch's own plan (PRD §14.6): the codes, level, band and kind the answer has to match. */
-export const textsParams = {
+/** The P-T batch's own plan (PRD §14.6): the codes, level, band and kind the answer has to match; `only` limits it to some texts. */
+export const textsParamsFor = (only?: ReadonlySet<string>) => ({
   level: LEVEL,
   band: 1,
   length: [30, 60] as [number, number],
   words: null,
-  texts: demoTexts.map((text) => ({ code: text.code, level: LEVEL, band: 1, kind: text.kind, topic: "", placement_ok: false })),
-};
+  texts: demoTexts.filter((text) => !only || only.has(text.code)).map((text) => ({ code: text.code, level: LEVEL, band: 1, kind: text.kind, topic: "", placement_ok: false })),
+});
+export const textsParams = textsParamsFor();
 
-export function textsAnswer() {
+export function textsAnswer(only?: ReadonlySet<string>) {
   return {
-    texts: demoTexts.map((text) => ({
-      code: text.code,
-      title: text.title,
-      kind: text.kind,
-      level: LEVEL,
-      band: 1,
-      placement_ok: false,
-      sentences: text.lines.map((line) => ({
-        text: line.text,
-        tts_text: null,
-        translation_fa: line.fa,
-        tokens: tokensOf(line.text, line.meanings),
-        speaker: line.speaker ?? null,
+    texts: demoTexts
+      .filter((text) => !only || only.has(text.code))
+      .map((text) => ({
+        code: text.code,
+        title: text.title,
+        kind: text.kind,
+        level: LEVEL,
+        band: 1,
+        placement_ok: false,
+        sentences: text.lines.map((line) => ({
+          text: line.text,
+          tts_text: null,
+          translation_fa: line.fa,
+          tokens: tokensOf(line.text, line.meanings),
+          speaker: line.speaker ?? null,
+        })),
+        key_words: text.keyWords,
+        question_sets: text.sets,
       })),
-      key_words: text.keyWords,
-      question_sets: text.sets,
-    })),
     issues: [],
   };
 }
+
+export const demoTextCodes = demoTexts.map((text) => text.code);
 
 export { units as demoUnits };

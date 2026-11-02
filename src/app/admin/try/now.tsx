@@ -3,7 +3,7 @@ import { ExternalLink } from "lucide-react";
 import { formatNumber, t } from "@/i18n";
 import { isolateLatin } from "@/lib/bidi";
 import type { HomeData } from "@/server/learn/home";
-import type { NextLine } from "@/server/learn/rehearse";
+import type { NextLine, TextLine, TrackOverview } from "@/server/learn/rehearse";
 
 /** Step 2: the account today, as its home screen counts it, and the way into the app. */
 export function NowCard({ language, home }: { language: string; home: HomeData | null }) {
@@ -88,6 +88,69 @@ export function NextList({ language, next }: { language: string; next: { minutes
             </li>
           ))}
         </ol>
+      )}
+    </section>
+  );
+}
+
+const share = (value: number) => `${formatNumber(Math.round(value * 100))}٪`;
+const day = (iso: string) => new Intl.DateTimeFormat("fa-IR", { month: "long", day: "numeric", timeZone: "Asia/Tehran" }).format(new Date(iso));
+
+/** Step 3b: the texts as the engine sees them (PRD §7.4, §7.5): each track, then every text started. */
+export function TextsCard({ overview }: { overview: { tracks: TrackOverview[]; texts: TextLine[]; available: number } | null }) {
+  if (!overview) return null;
+  return (
+    <section aria-labelledby="texts" className="flex flex-col gap-3">
+      <div className="flex flex-col gap-1">
+        <h2 id="texts" className="text-ink text-[19px] font-extrabold">
+          {t("admin.rehearse.textsTitle")}
+        </h2>
+        <p className="text-ink-2 max-w-[68ch] text-[14.5px] leading-7">{t("admin.rehearse.textsLead")}</p>
+      </div>
+      <div className="grid gap-3 sm:grid-cols-2">
+        {overview.tracks.map((track) => (
+          <div key={track.track} className="bg-surface flex flex-col gap-1.5 rounded-[22px] px-5 py-4 shadow-[var(--shadow-1)]" data-track={track.track}>
+            <h3 className="text-ink text-[16px] font-extrabold">{t(`admin.rehearse.tracks.${track.track}`)}</h3>
+            <p className="text-ink-2 text-[14px]">
+              {t("admin.rehearse.trackLine", { level: track.level, done: formatNumber(track.firstRounds), need: formatNumber(track.need) })}
+            </p>
+            <p className="text-ink-2 text-[14px]">{track.score === null ? t("admin.rehearse.trackNoScore") : t("admin.rehearse.trackScore", { score: share(track.score) })}</p>
+            <p className="text-ink-2 text-[14px]">{t(`admin.rehearse.waiting.${track.waiting ?? "none"}`)}</p>
+            <p className="text-ink-3 text-[13px]">
+              {track.nextNew ? (
+                <>
+                  {t("admin.rehearse.nextNew", { title: "" })}
+                  <bdi dir="ltr" className="lat">
+                    {track.nextNew}
+                  </bdi>
+                </>
+              ) : (
+                t("admin.rehearse.noNextNew")
+              )}
+            </p>
+          </div>
+        ))}
+      </div>
+      {overview.texts.length === 0 ? (
+        <p className="bg-surface text-ink-2 rounded-[22px] px-6 py-6 shadow-[var(--shadow-1)]">{t("admin.rehearse.textsNone", { n: formatNumber(overview.available) })}</p>
+      ) : (
+        <ul className="bg-surface rounded-[22px] shadow-[var(--shadow-1)]">
+          {overview.texts.map((text, index) => (
+            <li key={index} className="border-line flex flex-wrap items-center gap-x-4 gap-y-1 border-b px-5 py-2.5 text-[14px] last:border-b-0">
+              <bdi dir="ltr" className="lat text-ink min-w-[10rem] font-bold">
+                {text.title}
+              </bdi>
+              <span className="text-ink-2">{t(`admin.rehearse.tracks.${text.track}`)}</span>
+              <span className="text-ink-2">{t("admin.rehearse.textAttempts", { done: formatNumber(text.attemptsDone), total: formatNumber(text.attempts) })}</span>
+              {text.firstScore !== null ? <span className="text-ink-2">{t("admin.rehearse.textFirst", { score: share(text.firstScore) })}</span> : null}
+              {text.partial ? <span className="text-brand font-bold">{t("admin.rehearse.textPartial")}</span> : null}
+              {text.borrowed ? <span className="text-ink-3">{t("admin.rehearse.textBorrowed")}</span> : null}
+              <span className="text-ink-3">
+                {text.nextAt ? t("admin.rehearse.textNext", { date: day(text.nextAt) }) : text.attemptsDone >= text.attempts ? t("admin.rehearse.textDone") : null}
+              </span>
+            </li>
+          ))}
+        </ul>
       )}
     </section>
   );

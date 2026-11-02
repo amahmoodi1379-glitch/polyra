@@ -111,6 +111,21 @@ export function wantsAlt(plan: SessionPlan, card: Card, why: { muted: boolean; n
   return why.waitedSec !== null && why.waitedSec >= num(settings, "audio.wait_sec");
 }
 
+/**
+ * Cards that cannot be played without sound (PRD §10.12): a sentence heard alone, a phonics round, and
+ * every card of a listening text (its key words, its stages). «الان نمی‌توانم گوش بدهم» takes them out
+ * of the session unscored; a text for reading stays.
+ */
+export function needsSound(plan: SessionPlan, card: Card): boolean {
+  if (card.t === "drill" || card.t === "phonics" || card.t === "phonicsq") return true;
+  if (card.t === "text") return card.text?.track === "listening";
+  if (card.t === "textwords") return plan.queue.some((other) => other.block === card.block && other.t === "text" && other.text?.track === "listening");
+  return false;
+}
+
+/** Whether nothing but cards that need sound is left (PRD §10.12): a silent session is built instead (T92). */
+export const onlySoundLeft = (plan: SessionPlan): boolean => plan.queue.length > 0 && plan.queue.every((card) => needsSound(plan, card));
+
 export function playCard(plan: SessionPlan, cardId: string, answer: RawAnswer, timing: { latencyMs: number; elapsedSec: number; alt?: boolean }, env: PlayEnv): PlayResult {
   const card = plan.queue[0];
   if (!card || card.id !== cardId) throw new Error(`Card ${cardId} is not the next card`);
@@ -134,6 +149,15 @@ export function playCard(plan: SessionPlan, cardId: string, answer: RawAnswer, t
     firstTyping: false,
     rating: null,
   };
+
+  // A sentence heard alone or a listening text left out without sound (PRD §10.12, T62): unscored, no
+  // counter moves and nothing is written, so it stays due; a text's other stages and its key words go with it.
+  if (card.t !== "phonics" && card.t !== "phonicsq" && "skip" in answer && answer.skip === "drop" && needsSound(plan, card)) {
+    const advanced = advance(plan, { cardId, result: "seen", skip: "drop", elapsedSec: timing.elapsedSec }, ctx.settings);
+    const textId = card.text?.textId ?? (card.t === "textwords" ? Number(key.slice(2)) : null);
+    const log: PlayLog = { ...base, code: null, result: "idk", raw: "drop", ...(textId !== null ? { itemType: "text", itemId: textId } : {}) };
+    return { done: true, card, ex: null, graded: null, log, single: null, round: null, state: null, roundState: null, notebook: [], pair: null, drill: null, text: null, keyWords: [], phonics: null, phonicsLater: false, advanced };
+  }
 
   // A text stage (PRD §7.4): every question graded; the first round sets `first_score`, the round with help is practice.
   if (card.t === "text" && card.text) {

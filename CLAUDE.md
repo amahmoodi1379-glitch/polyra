@@ -108,7 +108,9 @@ Deploy: Runflare builds `main` (`docs/deploy-runflare.md`). Work on the session 
   `api/learn/text-progress`). Browser: `src/components/learn/session/text.tsx` (one stage on one screen, the review
   page), `text-questions.tsx` (each kind's control and review), `text-body.tsx` (the sentences), `text-sound.ts` (plays,
   pause, slow, sentence by sentence), `text-reader.tsx` («متن‌های من», pages `learn/[lang]/texts`). Demo texts:
-  `fixtures/demo-fr/texts.ts`.
+  `fixtures/demo-fr/texts.ts` (new ones are added to a loaded demo on the next load). Without sound (PRD §10.12):
+  `needsSound`/`onlySoundLeft` in `src/engine/session/play.ts`; the player drops such cards with `{skip:"drop"}` or asks
+  for a silent session (`replace: true` on `/api/learn/session`). «آزمایش مثل زبان‌آموز»'s texts: `textsOverview` in `rehearse.ts`.
 - Phonics (PRD §8): `src/engine/phonics.ts` (the next round, each kind's questions P1–P5 as the panel's switches allow,
   the lesson after a round, «بعداً»); plan key `p:<lesson id>`, a lead card `phonics` and its `phonicsq` questions in one
   block (`{skip:"drop"}` takes the rest out unscored without sound). Server: `answer.ts` writes `phonics_state`,
