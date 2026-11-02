@@ -244,9 +244,10 @@ export function syntheticContent(opts: SyntheticOptions = {}): Content {
     for (let n = 0; n < (opts.dialoguesPerLevel ?? 0); n++) {
       const turns = Array.from({ length: 5 }, (_, k) => {
         const line = { ...makeSentence(pick(n, k * 4), level), bank: false };
-        const choices = [1, 2, 3].map((c) => ({ ...makeSentence(pick(n, k * 4 + c), level), bank: false }));
+        const correct = (n + k) % 3;
+        const choices = [1, 2, 3].map((c, i) => ({ ...makeSentence(pick(n, k * 4 + c), level), bank: false, ...(i === correct ? {} : { wrongChoice: true }) }));
         sentences.push(line, ...choices);
-        return { sentenceId: line.id, speaker: "B", choices: choices.map((choice) => choice.id), correct: (n + k) % 3, whyFa: `چرا ${k}` };
+        return { sentenceId: line.id, speaker: "B", choices: choices.map((choice) => choice.id), correct, whyFa: `چرا ${k}` };
       });
       dialogues.push({ id: dialogues.length + 1, code: `d-${level}-${n}`, level, titleFa: `گفتگو ${level} ${n + 1}`, situationFa: "در کافه هستی.", turns });
     }

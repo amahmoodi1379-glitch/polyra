@@ -25,6 +25,9 @@ export const E2E_READERS = { "learner-phone": "09120000035", "learner-desktop": 
 /** New learners from zero for the phonics lessons (PRD §8): the auto mode on, nothing else met. */
 export const E2E_PHONICS = { "learner-phone": "09120000039", "learner-desktop": "09120000041" } as const;
 
+/** Testers at vocabulary B1, so this week's writing is open (PRD §8b.6). */
+export const E2E_WRITERS = { "learner-phone": "09120000043", "learner-desktop": "09120000045" } as const;
+
 /**
  * Admin accounts created by prepare-db: one per browser project, and one each for the order, publish,
  * audio, settings, errors, users and review tests, since a phone may ask for only 3 codes in 10 minutes (PRD §15.5).

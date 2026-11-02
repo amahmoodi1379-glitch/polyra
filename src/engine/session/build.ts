@@ -706,7 +706,8 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
     }
   };
   if (scope === "mixed") {
-    const room = share("production") * budget;
+    // Due reviews that did not fit their share come before speaking: the share is left to the rest of the session (DECISIONS.md).
+    const room = leftover.length > 0 ? 0 : share("production") * budget;
     // A dialogue or a find-the-mistake text may run the share a little over, like a pack of new material (DECISIONS.md, `session.overrun`).
     const stretch = room * (1 + num(settings, "session.overrun"));
     let spentProd = 0;

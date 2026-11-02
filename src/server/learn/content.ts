@@ -117,10 +117,16 @@ export async function loadContent(language: string, audience: Audience): Promise
   // Sentences of texts and dialogues are not part of the vocabulary and grammar bank (PRD §5.7).
   const inText = new Set<number>(texts.flatMap((text) => text.sentence_ids));
   const notBank = new Set<number>(inText);
+  // A dialogue's wrong answers are never given to say aloud (PRD §8b.2).
+  const wrongChoice = new Set<number>();
   for (const dialogue of dialogues) {
-    for (const turn of Array.isArray(dialogue.turns) ? (dialogue.turns as { sentence_id?: number; choices?: { sentence_id?: number }[] }[]) : []) {
+    for (const turn of Array.isArray(dialogue.turns) ? (dialogue.turns as { sentence_id?: number; choices?: { sentence_id?: number }[]; correct?: number }[]) : []) {
       if (turn.sentence_id) notBank.add(turn.sentence_id);
-      for (const choice of turn.choices ?? []) if (choice.sentence_id) notBank.add(choice.sentence_id);
+      (turn.choices ?? []).forEach((choice, index) => {
+        if (!choice.sentence_id) return;
+        notBank.add(choice.sentence_id);
+        if (index !== Number(turn.correct ?? 0)) wrongChoice.add(choice.sentence_id);
+      });
     }
   }
   const sentences = new Map<number, SentenceC>();
@@ -143,6 +149,7 @@ export async function loadContent(language: string, audience: Audience): Promise
       tokens,
       bank: !notBank.has(row.id),
       ...(inText.has(row.id) ? { inText: true } : {}),
+      ...(wrongChoice.has(row.id) ? { wrongChoice: true } : {}),
     });
   }
 

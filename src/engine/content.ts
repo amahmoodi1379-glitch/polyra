@@ -60,6 +60,8 @@ export type SentenceC = {
   bank: boolean;
   /** A sentence of a listening or reading text: never said aloud in «بگو، بعد بشنو» (PRD §8b.2). */
   inText?: boolean;
+  /** A wrong answer of a dialogue turn: never said aloud in «بگو، بعد بشنو» either. */
+  wrongChoice?: boolean;
 };
 
 /** One blank's answers: a single blank holds strings, two blanks hold one list per blank. */

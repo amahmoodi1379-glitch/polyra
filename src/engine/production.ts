@@ -60,9 +60,9 @@ export const speakDone = (state: Pick<SpeakStateE, "count" | "correctCount">, se
 export const speakMaxWords = (content: Pick<Content, "levels">, vocabLevel: string, settings: Settings) =>
   num(settings, isHighLevel(content, vocabLevel) ? "speak.max_words_high" : "speak.max_words_low");
 
-/** A sentence S1 may give: of the bank or a dialogue (never a text), every word known, short enough. */
+/** A sentence S1 may give: of the bank or a dialogue line or right answer (never a text or a wrong answer), every word known, short enough. */
 function speakable(env: BuildEnv, sentence: SentenceC, maxWords: number): boolean {
-  if (sentence.inText) return false;
+  if (sentence.inText || sentence.wrongChoice) return false;
   for (const token of sentence.tokens) if (token.kind === "word" && (token.wordId === null || !env.known(token.wordId))) return false;
   return spokenWords(sentence) <= maxWords;
 }

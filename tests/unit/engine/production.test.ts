@@ -68,7 +68,7 @@ describe("«بگو، بعد بشنو» (PRD §8b.2)", () => {
     expect(speakDone({ count: 3, correctCount: 1 }, s)).toBe(false);
   });
 
-  it("takes due sentences first, then new ones with a word of the last seven days; never a text's sentence or an unknown word", () => {
+  it("takes due sentences first, then new ones with a word of the last seven days; never a text's sentence, a dialogue's wrong answer or an unknown word", () => {
     const learner = withWords(60, 30);
     // Ten words of the sixty introduced yesterday.
     const recentIds = new Set(learner.items.slice(50).map((item) => item.itemId));
@@ -79,6 +79,7 @@ describe("«بگو، بعد بشنو» (PRD §8b.2)", () => {
     const known = new Set(learner.items.map((item) => item.itemId));
     for (const sentence of fresh) {
       expect(sentence.inText).toBeFalsy();
+      expect(sentence.wrongChoice).toBeFalsy();
       for (const token of sentence.tokens) if (token.kind === "word") expect(known.has(token.wordId!) || content.words.get(token.wordId!)?.noCard).toBe(true);
     }
     const hasRecent = (id: number) => content.sentences.get(id)!.tokens.some((token) => token.wordId !== null && recentIds.has(token.wordId));

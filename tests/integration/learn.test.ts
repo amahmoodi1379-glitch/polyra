@@ -971,6 +971,12 @@ describe("speaking and writing (PRD §8b)", () => {
     if (fix.state !== "ready" || fix.screens[0].kind !== "errorfix") throw new Error("no errorfix screen");
     expect(fix.screens[0].view).toMatchObject({ corrected: "Ma sœur est grande et elle a un chat noir.", marks: [{ wrong: "grand", right: "grande" }, { wrong: "est", right: "a" }, { wrong: "noire", right: "noir" }] });
 
+    // A dialogue's wrong answer is never given to say aloud; its right answer may be (PRD §8b.2).
+    const content = await loadContent("fr", "tester");
+    const byText = (text: string) => [...content.sentences.values()].find((sentence) => sentence.text === text);
+    expect(byText("Non, je suis Paul.")).toMatchObject({ wrongChoice: true, bank: false });
+    expect(byText("Oui, très bien, merci.")?.wrongChoice).toBeUndefined();
+
     const task = await testDb.writingTask.findFirstOrThrow({ where: { language: "fr" }, orderBy: { id: "asc" } });
     expect(await previewItem("writing", "fr", task.id)).toMatchObject({ state: "ready", screens: [{ kind: "writing", task: { id: task.id, minWords: 60 }, minToFinish: 30 }] });
   });

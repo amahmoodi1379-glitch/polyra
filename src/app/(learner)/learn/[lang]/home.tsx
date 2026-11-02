@@ -229,12 +229,14 @@ export function Home({ data, languageName, languages, account, lengths, freeze }
         </div>
 
         {data.writing && !data.locked ? (
-          <Link className="writing-card" href={`/learn/${lang}/writing`} onClick={() => sfx("press", 0.4)}>
-            <Icon name="l-text" />
-            <span className="t">{t("learn.writing.homeCard")}</span>
-            <span className="cnt num">{t("learn.writing.homeSub", { min: data.writing.min, max: data.writing.max })}</span>
-            <Icon name="l-back" className="i s fwd" />
-          </Link>
+          <nav className="links" aria-label={t("learn.writing.title")}>
+            <Link href={`/learn/${lang}/writing`} onClick={() => sfx("press", 0.4)}>
+              <Icon name="l-text" />
+              <span className="t">{t("learn.writing.homeCard")}</span>
+              <span className="cnt num">{t("learn.writing.homeSub", { min: data.writing.min, max: data.writing.max })}</span>
+              <Icon name="l-back" className="i s fwd" />
+            </Link>
+          </nav>
         ) : null}
 
         {links.notebook + links.words + links.lessons + links.texts + links.writings > 0 || links.phonics ? (
