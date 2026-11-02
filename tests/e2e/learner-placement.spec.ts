@@ -60,10 +60,10 @@ test("a tester takes the placement test, leaves it half-way, comes back and gets
   for (let i = 0; i < 10; i++) {
     await expect(result.or(part).first()).toBeVisible();
     if (await result.isVisible()) break;
-    const before = await part.textContent();
+    const before = (await part.textContent()) ?? "";
     await idk.click();
     // The next question, or the result: wait for the screen to change before the next answer.
-    await expect(async () => expect((await result.isVisible()) || (await part.textContent()) !== before).toBe(true)).toPass();
+    await expect(result.or(part.filter({ hasNotText: before })).first()).toBeVisible();
   }
   await expect(result).toBeVisible();
   const levels = page.locator("[data-placement-result] [data-skill]");

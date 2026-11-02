@@ -19,9 +19,9 @@ test("a teacher checks the placement test's levels, lets a made-up learner take 
 
   const card = page.locator("[data-placement-card]");
   await expect(card.getByRole("heading", { name: "تعیین سطح" })).toBeVisible();
-  // The demo is A1: its row has words, and the other levels are short of everything.
+  // The demo is A1 only and has enough for its blocks; a level the test does not ask has no notes.
   await expect(card.locator('tr[data-level="A1"]')).toBeVisible();
-  await expect(card.locator("[data-placement-problems] li").first()).toBeVisible();
+  await expect(card.getByText("همه سطح‌های باز برای آزمون آماده‌اند.")).toBeVisible();
 
   await card.locator("[data-placement-known]").selectOption("A1");
   await card.getByRole("button", { name: "آزمون را بدهد" }).click();
