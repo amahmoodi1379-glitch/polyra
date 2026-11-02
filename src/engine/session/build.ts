@@ -29,7 +29,7 @@ import {
   type TextEnv,
   type TextPick,
 } from "../texts";
-import { addDays, tehranDayStart } from "../time";
+import { addDays, tehranDate, tehranDayStart } from "../time";
 import { conjCandidates, introducedCardWords, nextNewWords, nextUnit } from "./newmaterial";
 import { orderEntries, type Entry } from "./order";
 import type { Card, PhonicsPlan, PlanItem, Scope, SessionPlan } from "./types";
@@ -169,7 +169,10 @@ export function nextSkill(
   progress: Partial<Record<SkillName, number>>,
   packs: Partial<Record<SkillName, number>>,
   first: boolean,
+  grammarFirst = false,
 ): SkillName | null {
+  // Grammar that has waited `new.grammar_first_days` takes the first pack (DECISIONS.md, 2 November 2026).
+  if (first && grammarFirst && skills.has("grammar")) return "grammar";
   if (first && skills.has("vocab")) return "vocab";
   const score = (skill: SkillName) => (progress[skill] ?? 0) + SHAPE.packWeight * (packs[skill] ?? 0);
   return SKILL_ORDER.filter((skill) => skills.has(skill)).sort((a, b) => score(a) - score(b) || SKILL_ORDER.indexOf(a) - SKILL_ORDER.indexOf(b))[0] ?? null;
@@ -724,6 +727,12 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
     }
     const packs: Partial<Record<SkillName, number>> = { vocab: 0, grammar: 0, listening: 0, reading: 0 };
     let first = true;
+    // A unit is waiting and none came for `new.grammar_first_days` days: grammar goes before words, so
+    // short sessions full of reviews still move it on (DECISIONS.md, 2 November 2026). 0 is off.
+    const grammarWait = num(settings, "new.grammar_first_days");
+    const lastUnit = Math.max(0, ...[...items.units.values()].map((state) => (state.introducedAt ? Date.parse(state.introducedAt) : 0)));
+    const grammarFirst =
+      grammarWait > 0 && skills.has("grammar") && unitRoom > 0 && nextUnit(content, chosenUnits, settings) !== null && today >= addDays(tehranDate(new Date(lastUnit)), grammarWait);
     let left = budget - used;
     const known = (wordId: number) => env.known(wordId) || chosenWords.includes(wordId);
     let queueUsed = 0;
@@ -777,13 +786,15 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
     };
 
     while (left > 0 && skills.size > 0) {
-      const skill = nextSkill(skills, progress, packs, first)!;
+      const skill = nextSkill(skills, progress, packs, first, grammarFirst)!;
+      // The unit that waited comes even when it runs the session a little over (DECISIONS.md, 2 November 2026).
+      const waited = first && grammarFirst && skill === "grammar";
       first = false;
       const text = skill === "listening" || skill === "reading" ? textPack(skill) : null;
       const pack =
         skill === "vocab" ? vocabPack() : skill === "grammar" ? grammarPack() : text ? [text] : skill === "listening" ? nullIfEmpty(nextDrills(SHAPE.packDrills, room())) : null;
       const cost = pack?.reduce((sum, entry) => sum + entry.cost, 0) ?? 0;
-      if (!pack || cost > room()) {
+      if (!pack || (cost > room() && !(waited && pack[0].t === "newunit"))) {
         // A text that does not fit leaves listening its drills.
         if (text && skill === "listening") {
           textPacks.listening = null;

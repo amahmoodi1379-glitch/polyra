@@ -19,6 +19,7 @@
     "make-admin": "tsx scripts/make-admin.ts",
     "demo": "tsx scripts/demo.ts",
     "simulate": "tsx scripts/simulate.ts",
+    "pace": "tsx scripts/pace.ts",
     "postinstall": "prisma generate"
   },
   "dependencies": {

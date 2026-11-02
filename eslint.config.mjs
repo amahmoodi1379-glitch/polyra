@@ -8,7 +8,7 @@ const eslintConfig = defineConfig([
   {
     // PRD §15.3: the engine is pure functions. It never touches the database, the server code,
     // the app, the network or the clock; time and randomness come in as arguments.
-    files: ["src/engine/**/*.ts"],
+    files: ["src/engine/**/*.ts", "src/sim/**/*.ts"],
     rules: {
       "no-restricted-imports": [
         "error",
