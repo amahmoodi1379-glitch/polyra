@@ -24,7 +24,7 @@ export const drillKey = (sentenceId: number) => `l:${sentenceId}`;
 
 /** The words heard and written, names and numbers included; kept per sentence, as content does not change. */
 const spoken = new WeakMap<SentenceC, number>();
-function spokenWords(sentence: SentenceC): number {
+export function spokenWords(sentence: SentenceC): number {
   let count = spoken.get(sentence);
   if (count === undefined) spoken.set(sentence, (count = words(cleanAnswer(sentence.text, true)).filter(hasWordChar).length));
   return count;

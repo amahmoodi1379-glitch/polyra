@@ -228,7 +228,16 @@ export function Home({ data, languageName, languages, account, lengths, freeze }
           })}
         </div>
 
-        {links.notebook + links.words + links.lessons + links.texts > 0 || links.phonics ? (
+        {data.writing && !data.locked ? (
+          <Link className="writing-card" href={`/learn/${lang}/writing`} onClick={() => sfx("press", 0.4)}>
+            <Icon name="l-text" />
+            <span className="t">{t("learn.writing.homeCard")}</span>
+            <span className="cnt num">{t("learn.writing.homeSub", { min: data.writing.min, max: data.writing.max })}</span>
+            <Icon name="l-back" className="i s fwd" />
+          </Link>
+        ) : null}
+
+        {links.notebook + links.words + links.lessons + links.texts + links.writings > 0 || links.phonics ? (
           <nav className="links" aria-label={t("learn.home.linksLabel")}>
             {links.notebook > 0 ? (
               <Link href={`/learn/${lang}/notebook`} onClick={() => sfx("press", 0.4)}>
@@ -259,6 +268,14 @@ export function Home({ data, languageName, languages, account, lengths, freeze }
                 <Icon name="l-text" />
                 <span className="t">{t("learn.home.texts")}</span>
                 <span className="cnt num">{t("learn.home.textsCount", { n: links.texts })}</span>
+                <Icon name="l-back" className="i s fwd" />
+              </Link>
+            ) : null}
+            {links.writings > 0 ? (
+              <Link href={`/learn/${lang}/writings`} onClick={() => sfx("press", 0.4)}>
+                <Icon name="l-text" />
+                <span className="t">{t("learn.home.writings")}</span>
+                <span className="cnt num">{t("learn.home.writingsCount", { n: links.writings })}</span>
                 <Icon name="l-back" className="i s fwd" />
               </Link>
             ) : null}

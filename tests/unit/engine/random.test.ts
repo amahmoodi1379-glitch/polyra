@@ -28,9 +28,9 @@ const START = new Date("2026-03-21T04:30:00Z");
 const pick = <T,>(rng: Rng, list: readonly T[]): T => list[Math.floor(rng() * list.length)];
 
 const contents = {
-  fr: syntheticContent({ textsPerLevel: 8, phonics: 6 }),
-  de: syntheticContent({ language: "de", textsPerLevel: 8, phonics: 6 }),
-  frA1: syntheticContent({ openLevels: ["A1"], textsPerLevel: 8, phonics: 6 }),
+  fr: syntheticContent({ textsPerLevel: 8, phonics: 6, dialoguesPerLevel: 3, errorfixPerLevel: 3 }),
+  de: syntheticContent({ language: "de", textsPerLevel: 8, phonics: 6, dialoguesPerLevel: 3, errorfixPerLevel: 3 }),
+  frA1: syntheticContent({ openLevels: ["A1"], textsPerLevel: 8, phonics: 6, dialoguesPerLevel: 3 }),
 };
 
 const SCOPES: BuildOptions["scope"][] = ["mixed", "mixed", "mixed", "mixed", "mixed", "vocab", "grammar", "listening", "reading", "quick", "notebook", "extra", "phonics"];

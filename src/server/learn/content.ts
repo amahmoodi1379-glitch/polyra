@@ -2,6 +2,8 @@ import {
   indexContent,
   type ConjC,
   type Content,
+  type DialogueC,
+  type ErrorfixC,
   type Gender,
   type PhonicsC,
   type PhonicsSound,
@@ -65,9 +67,10 @@ export async function loadContent(language: string, audience: Audience): Promise
     db.translateItem.findMany({ where: visible }),
     db.conjugationTable.findMany({ where: visible }),
     db.text.findMany({ where: { language }, include: { questions: { where: { status: { in: statuses }, suspended: false }, orderBy: { order_no: "asc" } } } }),
-    db.dialogue.findMany({ where: { language }, select: { turns: true } }),
+    db.dialogue.findMany({ where: { language }, select: { id: true, code: true, level: true, title_fa: true, situation_fa: true, turns: true, status: true, suspended: true } }),
     db.phonicsLesson.findMany({ where: visible }),
   ]);
+  const errorfixRows = await db.errorfixItem.findMany({ where: visible });
 
   const phonicsFiles = phonicsRows.flatMap((row) => [...entries(row.example_words), ...entries(row.liaison_sentences), ...entries(row.minimal_pairs).flatMap((pair) => [side(pair, "a"), side(pair, "b")])]);
   const assetIds = [...wordRows, ...sentenceRows, ...texts, ...phonicsFiles].flatMap((row) => [row.audio_id, row.human_audio_id]).filter((id): id is number => id !== null);
@@ -112,7 +115,8 @@ export async function loadContent(language: string, audience: Audience): Promise
   }
 
   // Sentences of texts and dialogues are not part of the vocabulary and grammar bank (PRD §5.7).
-  const notBank = new Set<number>(texts.flatMap((text) => text.sentence_ids));
+  const inText = new Set<number>(texts.flatMap((text) => text.sentence_ids));
+  const notBank = new Set<number>(inText);
   for (const dialogue of dialogues) {
     for (const turn of Array.isArray(dialogue.turns) ? (dialogue.turns as { sentence_id?: number; choices?: { sentence_id?: number }[] }[]) : []) {
       if (turn.sentence_id) notBank.add(turn.sentence_id);
@@ -138,6 +142,7 @@ export async function loadContent(language: string, audience: Audience): Promise
       speak: { text: row.tts_text ?? row.text, lang, url: fileOf(row) },
       tokens,
       bank: !notBank.has(row.id),
+      ...(inText.has(row.id) ? { inText: true } : {}),
     });
   }
 
@@ -208,6 +213,40 @@ export async function loadContent(language: string, audience: Audience): Promise
       .filter((row) => statuses.includes(row.status) && !row.suspended && openLevels.includes(row.level) && row.sentence_ids.every((id) => sentences.has(id)))
       .map((row) => textOf(row, { sentences, words, assets, durations })),
     phonics: phonicsRows.map((row) => phonicsOf(row, lang, fileOf)),
+    dialogues: dialogues
+      .filter((row) => statuses.includes(row.status) && !row.suspended && openLevels.includes(row.level))
+      .flatMap((row): DialogueC[] => {
+        const turns = (Array.isArray(row.turns) ? row.turns : []) as { sentence_id?: number; speaker?: string | null; choices?: { sentence_id?: number }[]; correct?: number; why_fa?: string }[];
+        const ids = turns.flatMap((turn) => [turn.sentence_id, ...(turn.choices ?? []).map((choice) => choice.sentence_id)]);
+        // Every line and choice must be visible, or the dialogue waits.
+        if (turns.length === 0 || ids.some((id) => typeof id !== "number" || !sentences.has(id))) return [];
+        return [
+          {
+            id: row.id,
+            code: row.code,
+            level: row.level,
+            titleFa: row.title_fa,
+            situationFa: row.situation_fa,
+            turns: turns.map((turn) => ({
+              sentenceId: turn.sentence_id!,
+              speaker: turn.speaker ?? null,
+              choices: (turn.choices ?? []).map((choice) => choice.sentence_id!),
+              correct: Number(turn.correct ?? 0),
+              whyFa: turn.why_fa ?? "",
+            })),
+          },
+        ];
+      }),
+    errorfixes: errorfixRows
+      .filter((row) => openLevels.includes(row.level))
+      .flatMap((row): ErrorfixC[] => {
+        const tokens = (Array.isArray(row.tokens) ? row.tokens : []) as { kind?: string; word_id?: number | null }[];
+        const wordIds = tokens.filter((token) => token.kind === "word").map((token) => token.word_id);
+        // A word the learner cannot see yet leaves the text out, like a sentence (its candidates are unresolved).
+        if (wordIds.some((id) => typeof id !== "number" || !words.has(id))) return [];
+        const errors = (Array.isArray(row.errors) ? row.errors : []) as { why_fa?: string }[];
+        return [{ id: row.id, level: row.level, markedText: row.marked_text, translationFa: row.translation_fa, unitCodes: row.unit_codes, whyFa: errors.map((error) => error.why_fa ?? ""), wordIds: wordIds as number[] }];
+      }),
   });
 }
 

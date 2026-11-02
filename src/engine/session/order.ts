@@ -5,7 +5,7 @@ import type { PhonicsRound, PhonicsView } from "../phonics";
 import { shuffle, type Rng } from "../random";
 import type { NotebookRef } from "../state";
 import type { TextPick } from "../texts";
-import type { PlanItem, PlayKind } from "./types";
+import type { PlanItem, PlayKind, ProdCard } from "./types";
 
 /**
  * What the build chose, before it becomes cards, and the first order of the session (PRD §10.7).
@@ -27,7 +27,12 @@ export type Entry =
    */
   | (Base & { t: "text"; pick: TextPick; keyWords: number[]; lead: boolean })
   /** A phonics round (PRD §8.3), a block kept apart from the plan and placed by `phonics.position` (§10.7 rule 3). */
-  | (Base & { t: "phonics"; pick: PhonicsRound; questions: Ex[]; view: PhonicsView; auto: boolean });
+  | (Base & { t: "phonics"; pick: PhonicsRound; questions: Ex[]; view: PhonicsView; auto: boolean })
+  /** Speaking (PRD §8b, §10.7): «بگو، بعد بشنو» is placed like a single exercise, never among the first three; a dialogue and a find-the-mistake text like blocks. */
+  | (Base & { t: "prod"; prod: ProdCard });
+
+/** «بگو، بعد بشنو» comes after the session's first three items (PRD §10.7). */
+const SPEAK_AFTER = 3;
 
 /** Spreads `items` evenly between the elements of `base`. */
 export function interleave<T>(base: T[], items: T[]): T[] {
@@ -45,7 +50,7 @@ export function interleave<T>(base: T[], items: T[]): T[] {
 
 /** Singles in random order with no two of the same exercise code in a row, as far as a few tries allow. */
 function mixSingles(list: Entry[], rng: Rng): Entry[] {
-  const code = (entry: Entry) => (entry.t === "single" || entry.t === "drill" ? entry.ex.code : entry.t);
+  const code = (entry: Entry) => (entry.t === "single" || entry.t === "drill" ? entry.ex.code : entry.t === "prod" ? entry.prod.kind : entry.t);
   let best = shuffle(rng, list);
   const repeats = (order: Entry[]) => order.reduce((sum, entry, i) => sum + (i > 0 && code(order[i - 1]) === code(entry) ? 1 : 0), 0);
   for (let tries = 0; repeats(best) > 0 && tries < SHAPE.shuffleTries; tries++) {
@@ -65,9 +70,12 @@ const stepOf = (entry: Entry) => (entry.t === "single" ? entry.step : entry.t ==
  */
 export function orderEntries(entries: Entry[], rng: Rng, phonics: { entry: Entry; position: number } | null = null): Entry[] {
   const lead = entries.filter((entry) => entry.t === "text" && entry.lead);
-  const singles = entries.filter((entry) => entry.t === "single" || entry.t === "drill");
+  const isSpeak = (entry: Entry) => entry.t === "prod" && entry.prod.kind === "speak";
+  const singles = entries.filter((entry) => entry.t === "single" || entry.t === "drill" || isSpeak(entry));
   const newWords = entries.filter((entry) => entry.t === "newword");
-  const blocks = entries.filter((entry) => entry.t === "round" || entry.t === "newunit" || entry.t === "newconj" || (entry.t === "text" && !entry.lead));
+  const blocks = entries.filter(
+    (entry) => entry.t === "round" || entry.t === "newunit" || entry.t === "newconj" || (entry.t === "text" && !entry.lead) || (entry.t === "prod" && !isSpeak(entry)),
+  );
 
   const byStep = (list: Entry[]) => [...list].sort((a, b) => stepOf(a) - stepOf(b));
   const reviews = byStep(singles.filter((entry) => entry.t === "single" && entry.kind === "review"));
@@ -79,7 +87,13 @@ export function orderEntries(entries: Entry[], rng: Rng, phonics: { entry: Entry
   let middle = mixSingles(rest, rng);
   middle = interleave(middle, newWords);
   middle = interleave(middle, blocks);
-  const out = [...lead, ...first, ...middle, ...(last ? [last] : [])];
+  let out = [...lead, ...first, ...middle, ...(last ? [last] : [])];
+  // «بگو، بعد بشنو» never among the session's first three items (PRD §10.7).
+  const early = out.slice(0, SPEAK_AFTER).filter(isSpeak);
+  if (early.length > 0) {
+    out = out.filter((entry) => !early.includes(entry));
+    out.splice(Math.min(SPEAK_AFTER, out.length), 0, ...early);
+  }
   // Rule 3: the phonics round after the session's first items, or last when it has fewer.
   if (phonics) out.splice(Math.min(phonics.position, out.length), 0, phonics.entry);
   return out;

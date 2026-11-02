@@ -90,6 +90,17 @@ export type TextStateE = {
  */
 export type PhonicsStateE = { lessonId: number; roundsDone: number; lastScore: number | null; nextAt: string | null; done: boolean };
 
+/** «بگو، بعد بشنو» of one sentence (PRD §8b.2, `speak_state`): showings, «درست گفتم»s, the last rating and when it may come again. */
+export type SpeakRating = "ok" | "near" | "no";
+export type SpeakStateE = { sentenceId: number; count: number; correctCount: number; lastRating: SpeakRating | null; nextAt: string | null };
+
+/** A situational dialogue's two attempts (PRD §8b.4, `dialogue_state`): each attempt's share of turns right at the first choice. */
+export type DialogueStateE = { dialogueId: number; attemptsDone: number; scores: number[]; nextAttemptAt: string | null };
+
+/** One find-the-mistake attempt (PRD §8b.5): mistakes fixed of all, words changed that were right, and the result. */
+export type ErrorfixResultE = { fixed: number; of: number; wrongTaps: number; ok: boolean };
+export type ErrorfixStateE = { itemId: number; attemptsDone: number; results: ErrorfixResultE[]; nextAttemptAt: string | null };
+
 export type ConfusionE = { wordId: number; otherWordId: number; count: number; lastAt: string; cardShownAt: string | null };
 
 export type EnrollmentE = {
@@ -138,6 +149,10 @@ export type LearnerSnapshot = {
   texts: TextStateE[];
   /** Phonics lessons started (PRD §8.3). */
   phonics: PhonicsStateE[];
+  /** Speaking and writing (PRD §8b): sentences said, dialogues and find-the-mistake texts tried. */
+  speaks: SpeakStateE[];
+  dialogues: DialogueStateE[];
+  errorfixes: ErrorfixStateE[];
   /** Finished mixed sessions in a row, newest first, without a text attempt (PRD §10.11 condition 3). */
   mixedWithoutText: number;
   history: Map<string, ItemHistory>;

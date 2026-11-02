@@ -127,5 +127,21 @@ export function textAnswers(plan: SessionPlan, card: Card, rng: Rng, chance: num
   return { answers };
 }
 
+/**
+ * A speaking card (PRD §8b), right with chance `p`: «درست گفتم» or «تقریباً» / «بلد نبودم»; each turn
+ * of a dialogue, each mistake of a find-the-mistake text, now and then a right word changed.
+ */
+export function productionAnswer(card: Card, rng: Rng, p: number): RawAnswer {
+  const prod = card.prod!;
+  if (prod.kind === "speak") return { self: rng() < p ? "ok" : rng() < 0.5 ? "near" : "no" };
+  if (prod.kind === "dialogue") return { turns: prod.view.turns.map((turn) => (rng() < p ? turn.correct : (turn.correct + 1 + Math.floor(rng() * (turn.choices.length - 1))) % turn.choices.length)) };
+  const fixes: Record<string, string> = {};
+  prod.view.pieces.forEach((piece, index) => {
+    if (piece.mark !== null && rng() < p) fixes[String(index)] = prod.view.marks[piece.mark].right;
+    else if (piece.mark === null && piece.word && rng() < (1 - p) * 0.1) fixes[String(index)] = `${piece.text}x`;
+  });
+  return { fixes };
+}
+
 /** How a made-up learner answers a card; `plan` and `at` let a model of memory look at the item's state. */
 export type Policy = (card: Card, ex: Ex | null, rng: Rng, info: { plan: SessionPlan; at: Date }) => { answer: RawAnswer; latencyMs: number };

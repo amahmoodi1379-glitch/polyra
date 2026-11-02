@@ -18,6 +18,7 @@ import { db } from "@/server/db";
 import { canPractice } from "./access";
 import { asDate, dateOnly } from "./learner";
 import { openSession, previewSession, type Learner } from "./session";
+import { myWritings, writingCard } from "./writing";
 
 /**
  * What the home screen of a language shows (PRD §3.2): the overall level, the streak, the start
@@ -57,7 +58,9 @@ export type HomeData = {
   locked: boolean;
   skills: SkillTile[];
   /** «الفبا و تلفظ» (PRD §3.2): «درس ۳ از ۱۴», while the language has phonics lessons. */
-  links: { notebook: number; words: number; lessons: number; texts: number; phonics: { index: number; total: number; done: boolean } | null };
+  links: { notebook: number; words: number; lessons: number; texts: number; writings: number; phonics: { index: number; total: number; done: boolean } | null };
+  /** «تمرین نوشتن این هفته» (PRD §8b.6): the card while this week's task waits. */
+  writing: { min: number; max: number } | null;
 };
 
 /** The quiet button at the top (PRD §3.8). Payment comes in a later phase, so it only reports. */
@@ -188,6 +191,7 @@ export async function homeData(user: Learner, language: LanguageCode, now = new 
   ];
 
   const open = await openSession(user.id, language);
+  const [writing, writings] = await Promise.all([writingCard(user, language, now), myWritings(user, language)]);
   return {
     language,
     overall: overallLevel(content, { vocab: vocab.level, grammar: grammarOpen ? gLevel : null, listening: heard.open ? listening.level : null, reading: read.open ? reading.level : null }),
@@ -206,7 +210,9 @@ export async function homeData(user: Learner, language: LanguageCode, now = new 
       words: learner.items.filter((item) => item.itemType === "word" && content.words.get(item.itemId) && hasCard(content.words.get(item.itemId)!)).length,
       lessons: learner.items.filter((item) => item.itemType === "grammar_unit").length,
       texts: content.texts.filter((text) => learner.texts.some((state) => state.textId === text.id && stageDone(state))).length,
+      writings: writings.length,
       phonics: content.phonics.length > 0 ? phonicsProgress(content, learner.phonics) : null,
     },
+    writing: writing.state === "open" ? { min: writing.task.minWords, max: writing.task.maxWords } : null,
   };
 }

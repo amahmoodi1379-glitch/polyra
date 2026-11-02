@@ -18,6 +18,8 @@ import {
   type TransformC,
   type UnitC,
   type WordC,
+  type DialogueC,
+  type ErrorfixC,
 } from "../../src/engine/content";
 import type { Lang } from "../../src/engine/text";
 
@@ -36,6 +38,9 @@ export type SyntheticOptions = {
   textsPerLevel?: number;
   /** Phonics lessons of all three kinds (PRD §16.3: 14); none by default. */
   phonics?: number;
+  /** Situational dialogues and find-the-mistake texts of each level (PRD §8b.4, §8b.5), made of the level's words; none by default. */
+  dialoguesPerLevel?: number;
+  errorfixPerLevel?: number;
 };
 
 /** The level of the `n`th item (from 1) when each level holds `sizes[i]` of them. */
@@ -224,9 +229,33 @@ export function syntheticContent(opts: SyntheticOptions = {}): Content {
     }));
 
   const texts = makeTexts(levels, words, opts.textsPerLevel ?? 0, (list, level) => {
-    const sentence = { ...makeSentence(list, level), bank: false };
+    const sentence = { ...makeSentence(list, level), bank: false, inText: true };
     sentences.push(sentence);
     return sentence;
+  });
+
+  // Dialogues: five turns, a line and three choices each, of the level's words; find the mistake: two marks in four words.
+  const dialogues: DialogueC[] = [];
+  const errorfixes: ErrorfixC[] = [];
+  levels.forEach((level) => {
+    const pool = words.filter((word) => word.level === level && !word.noCard);
+    if (pool.length < 8) return;
+    const pick = (n: number, k: number) => [0, 1, 2].map((d) => pool[(n * 5 + k * 3 + d * 7) % Math.min(pool.length, 40)]).filter((word, i, list) => list.indexOf(word) === i);
+    for (let n = 0; n < (opts.dialoguesPerLevel ?? 0); n++) {
+      const turns = Array.from({ length: 5 }, (_, k) => {
+        const line = { ...makeSentence(pick(n, k * 4), level), bank: false };
+        const choices = [1, 2, 3].map((c) => ({ ...makeSentence(pick(n, k * 4 + c), level), bank: false }));
+        sentences.push(line, ...choices);
+        return { sentenceId: line.id, speaker: "B", choices: choices.map((choice) => choice.id), correct: (n + k) % 3, whyFa: `چرا ${k}` };
+      });
+      dialogues.push({ id: dialogues.length + 1, code: `d-${level}-${n}`, level, titleFa: `گفتگو ${level} ${n + 1}`, situationFa: "در کافه هستی.", turns });
+    }
+    const unit = units.filter((item) => levels.indexOf(item.level) <= levels.indexOf(level)).at(-1);
+    for (let n = 0; n < (opts.errorfixPerLevel ?? 0) && unit; n++) {
+      const list = [0, 1, 2, 3].map((d) => pool[(n * 3 + d * 5) % Math.min(pool.length, 40)]);
+      const marked = `${list[0].lemma} {{${list[1].lemma}x|${list[1].lemma}}} ${list[2].lemma} {{${list[3].lemma}s|${list[3].lemma}}}.`;
+      errorfixes.push({ id: errorfixes.length + 1, level, markedText: marked, translationFa: "ترجمه", unitCodes: [unit.unitCode], whyFa: ["یک", "دو"], wordIds: list.map((word) => word.id) });
+    }
   });
 
   return indexContent({
@@ -242,6 +271,8 @@ export function syntheticContent(opts: SyntheticOptions = {}): Content {
     conjugations,
     texts,
     phonics: makePhonics(language, opts.phonics ?? 0),
+    dialogues,
+    errorfixes,
   });
 }
 

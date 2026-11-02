@@ -4,7 +4,10 @@ import {
   itemKey,
   type ConfusionE,
   type DailyE,
+  type DialogueStateE,
   type EnrollmentE,
+  type ErrorfixResultE,
+  type ErrorfixStateE,
   type ItemHistory,
   type ItemStateE,
   type LearnerSnapshot,
@@ -13,6 +16,8 @@ import {
   type QueueE,
   type SkillLevelE,
   type SkillName,
+  type SpeakRating,
+  type SpeakStateE,
   type TextPartialE,
   type TextScoreE,
   type TextStateE,
@@ -234,6 +239,37 @@ export const phonicsStateOf = (row: { lesson_id: number; rounds_done: number; la
   done: row.done,
 });
 
+/** A learner's speaking rows in one language (PRD §8b): sentences said, dialogues and find-the-mistake texts tried. */
+export async function loadSpeaking(client: Client, userId: number, language: string): Promise<{ speaks: SpeakStateE[]; dialogues: DialogueStateE[]; errorfixes: ErrorfixStateE[] }> {
+  const [speaks, dialogues, errorfixes] = await Promise.all([
+    client.$queryRaw<{ sentence_id: number; count: number; correct_count: number; last_rating: string | null; next_at: Date | null }[]>`
+      SELECT p.sentence_id, p.count, p.correct_count, p.last_rating, p.next_at FROM speak_state p JOIN sentence s ON s.id = p.sentence_id
+      WHERE p.user_id = ${userId} AND s.language = ${language}`,
+    client.$queryRaw<{ dialogue_id: number; attempts_done: number; scores: Prisma.JsonValue; next_attempt_at: Date | null }[]>`
+      SELECT p.dialogue_id, p.attempts_done, p.scores, p.next_attempt_at FROM dialogue_state p JOIN dialogue d ON d.id = p.dialogue_id
+      WHERE p.user_id = ${userId} AND d.language = ${language}`,
+    client.$queryRaw<{ errorfix_item_id: number; attempts_done: number; results: Prisma.JsonValue; next_attempt_at: Date | null }[]>`
+      SELECT p.errorfix_item_id, p.attempts_done, p.results, p.next_attempt_at FROM errorfix_state p JOIN errorfix_item e ON e.id = p.errorfix_item_id
+      WHERE p.user_id = ${userId} AND e.language = ${language}`,
+  ]);
+  const rating = (value: string | null): SpeakRating | null => (value === "ok" || value === "near" || value === "no" ? value : null);
+  return {
+    speaks: speaks.map((row) => ({ sentenceId: row.sentence_id, count: row.count, correctCount: row.correct_count, lastRating: rating(row.last_rating), nextAt: row.next_at?.toISOString() ?? null })),
+    dialogues: dialogues.map((row) => ({
+      dialogueId: row.dialogue_id,
+      attemptsDone: row.attempts_done,
+      scores: Array.isArray(row.scores) ? row.scores.map(Number) : [],
+      nextAttemptAt: row.next_attempt_at?.toISOString() ?? null,
+    })),
+    errorfixes: errorfixes.map((row) => ({
+      itemId: row.errorfix_item_id,
+      attemptsDone: row.attempts_done,
+      results: Array.isArray(row.results) ? (row.results as ErrorfixResultE[]) : [],
+      nextAttemptAt: row.next_attempt_at?.toISOString() ?? null,
+    })),
+  };
+}
+
 /** How many finished mixed sessions in a row, the newest first, had no text in them (PRD §10.11 condition 3). */
 async function mixedWithoutText(client: Client, userId: number, language: string, settings: Settings): Promise<number> {
   const rows = await client.$queryRaw<{ had: boolean }[]>`
@@ -279,7 +315,7 @@ export async function loadLearner(
   if (!user || !enrollment) return null;
 
   // What the answer log says (PRD §5.7, §9.2, §9.3, §9.10).
-  const [counts, recent, seen, latency, pace, touched, drills, texts, withoutText, phonics] = await Promise.all([
+  const [counts, recent, seen, latency, pace, touched, drills, texts, withoutText, phonics, speaking] = await Promise.all([
     client.$queryRaw<{ item_type: string; item_id: number; exercise_code: string; n: bigint }[]>`
       SELECT item_type, item_id, exercise_code, count(*) AS n FROM review_log
       WHERE user_id = ${userId} AND language = ${language} AND kind::text IN ('review', 'followup', 'practice') AND exercise_code IS NOT NULL AND item_id IS NOT NULL
@@ -319,6 +355,7 @@ export async function loadLearner(
     loadTextStates(client, userId, language),
     mixedWithoutText(client, userId, language, settings),
     loadPhonicsStates(client, userId, language),
+    loadSpeaking(client, userId, language),
   ]);
 
   const history = new Map<string, ItemHistory>();
@@ -352,6 +389,7 @@ export async function loadLearner(
     drills: drills.map((row) => ({ sentenceId: row.sentence_id, count: row.count, lastAt: row.last_at?.toISOString() ?? null })),
     texts: texts.map(textStateOf),
     phonics,
+    ...speaking,
     mixedWithoutText: withoutText,
     history,
     sentenceSeen: new Map(seen.map((row) => [row.sentence_id, Number(row.n)])),

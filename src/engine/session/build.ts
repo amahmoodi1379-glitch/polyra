@@ -9,10 +9,23 @@ import { grammarProgress, grammarLevel, indexItems, vocabProgress, type ItemInde
 import { notebookOrder, openEntries } from "../notebook";
 import { paced, updatePace, type PaceMode } from "../pace";
 import { buildPhonicsRound, nextPhonicsRound, phonicsKey, phonicsRoundCost } from "../phonics";
+import {
+  dialogueCost,
+  dialogueKey,
+  dialogueView,
+  errorfixKey,
+  errorfixView,
+  nextDialogue,
+  nextErrorfix,
+  speakGate,
+  speakKey,
+  speakOrder,
+  speakView,
+} from "../production";
 import { buildRound, CONJ_LAST_STEP, lastStepOfUnit, lastStepOfWord, pickConjEx, pickTargetEx, pickUnitEx, pickWordEx, type Purpose } from "../pick";
 import { seeded, shuffle } from "../random";
 import { num, type Settings } from "../settings";
-import { itemKey, parseItemKey, type ConfusionE, type ItemStateE, type ItemType, type LearnerSnapshot, type NotebookE, type SkillName } from "../state";
+import { isItemKey, itemKey, parseItemKey, type ConfusionE, type ItemStateE, type ItemType, type LearnerSnapshot, type NotebookE, type SkillName } from "../state";
 import {
   attemptCost,
   dueTexts,
@@ -37,7 +50,7 @@ import { lessonView, makeEnv, tableView, textView, wordCard } from "./views";
 
 /**
  * Builds a session (PRD §10.2–§10.11): vocabulary, grammar, sentence listening (§7.6), texts
- * (§7.4, §7.5) and phonics (§8.4). Production and placement samples are added by their own phases.
+ * (§7.4, §7.5), phonics (§8.4) and speaking (§8b). Placement samples are added by their own phase.
  */
 
 export type BuildOptions = {
@@ -666,6 +679,58 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
     if (scope === "notebook" && entries.length === 0) return { kind: "empty_notebook", effects };
   }
 
+  // ── Speaking (step 6, PRD §8b.1): mixed sessions only; a dialogue, a find-the-mistake text, then «بگو، بعد بشنو» ──
+  const introducedWords = introducedCardWords(content, learner.items);
+  const speakAt = scope === "mixed" && ctx.audio && !speakGate(introducedWords, settings) ? lazyList(speakOrder(env, learner.speaks, learner.items, now)) : () => undefined;
+  const speakTaken = new Set<number>();
+  /** «بگو، بعد بشنو» that fits `room`, skipping sentences the plan already uses. */
+  const nextSpeaks = (room: number): Entry[] => {
+    const usedIds = new Set<number>([...speakTaken, ...drillTaken]);
+    for (const entry of entries) for (const ex of entryExercises(entry)) if (ex.sentenceId !== null) usedIds.add(ex.sentenceId);
+    const out: Entry[] = [];
+    const cost = num(settings, "time.speak");
+    let total = 0;
+    for (let i = 0, sentence = speakAt(0); sentence && total + cost <= room; sentence = speakAt(++i)) {
+      if (usedIds.has(sentence.id)) continue;
+      usedIds.add(sentence.id);
+      total += cost;
+      const before = learner.speaks.find((state) => state.sentenceId === sentence.id) ?? null;
+      out.push({ t: "prod", key: speakKey(sentence.id), prod: { kind: "speak", view: speakView(content, sentence), before }, cost });
+    }
+    return out;
+  };
+  const addSpeaks = (list: Entry[]) => {
+    for (const entry of list) {
+      add(entry);
+      if (entry.t === "prod" && entry.prod.kind === "speak") speakTaken.add(entry.prod.view.sentence.id);
+    }
+  };
+  if (scope === "mixed") {
+    const room = share("production") * budget;
+    // A dialogue or a find-the-mistake text may run the share a little over, like a pack of new material (DECISIONS.md, `session.overrun`).
+    const stretch = room * (1 + num(settings, "session.overrun"));
+    let spentProd = 0;
+    const dialogue = room > 0 ? nextDialogue(env, learner.dialogues, introducedWords, now) : null;
+    const dview = dialogue && dialogueView(content, dialogue.dialogue);
+    if (dialogue && dview) {
+      const cost = dialogueCost(dialogue.dialogue, settings);
+      if (spentProd + cost <= stretch) {
+        add({ t: "prod", key: dialogueKey(dialogue.dialogue.id), prod: { kind: "dialogue", view: dview, attempt: dialogue.attempt, before: dialogue.before }, cost });
+        spentProd += cost;
+      }
+    }
+    const grammarSkill = learner.skills.find((skill) => skill.skill === "grammar");
+    const errorfix = room > 0 ? nextErrorfix(env, learner.errorfixes, items, grammarSkill, now) : null;
+    if (errorfix) {
+      const cost = num(settings, "time.errorfix");
+      if (spentProd + cost <= stretch) {
+        add({ t: "prod", key: errorfixKey(errorfix.item.id), prod: { kind: "errorfix", view: errorfixView(content, errorfix.item), attempt: errorfix.attempt, before: errorfix.before }, cost });
+        spentProd += cost;
+      }
+    }
+    addSpeaks(nextSpeaks(Math.max(0, room - spentProd)));
+  }
+
   // ── «تمرین بیشتر روی کلمه‌های امروز» (PRD §10.8) ──
   if (scope === "extra") {
     for (const key of learner.touchedToday) {
@@ -890,6 +955,8 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
   }
 
   if (scope === "mixed") addDrills(nextDrills(Number.POSITIVE_INFINITY, budget - used));
+  // Then «بگو، بعد بشنو» (PRD §10.2 step 8).
+  if (scope === "mixed") addSpeaks(nextSpeaks(budget - used));
 
   if (entries.length === 0 && !phonics) return { kind: "nothing_left", effects };
   const plan = assemble(ctx, opts, fullBudget, entries, planItems, summary, phonics);
@@ -898,7 +965,7 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
 
 /** The exercises an entry already holds, to keep a drill off a sentence the plan uses. */
 function entryExercises(entry: Entry): Ex[] {
-  if (entry.t === "text" || entry.t === "phonics") return [];
+  if (entry.t === "text" || entry.t === "phonics" || entry.t === "prod") return [];
   if (entry.t === "single" || entry.t === "newword" || entry.t === "newconj" || entry.t === "drill") return [entry.ex];
   if (entry.t === "newunit") return [...entry.g0, ...entry.questions];
   return entry.questions;
@@ -965,6 +1032,8 @@ function assemble(
       queue.push({ id: id(), t: "ex", item: entry.key, kind: entry.kind, ex: entry.ex, alt: entry.alt ?? null, ...(entry.note ? { note: entry.note } : {}) });
     } else if (entry.t === "drill") {
       queue.push({ id: id(), t: "drill", item: entry.key, ex: entry.ex });
+    } else if (entry.t === "prod") {
+      queue.push({ id: id(), t: entry.prod.kind, item: entry.key, prod: entry.prod });
     } else if (entry.t === "text") {
       const { pick } = entry;
       if (entry.keyWords.length > 0) queue.push({ id: id(), t: "textwords", item: entry.key, block, words: entry.keyWords });
@@ -1048,7 +1117,7 @@ function assemble(
     textStates[card.item] = textStateMap.get(`${text.id}:${card.text.track}`) ?? null;
   }
   for (const key of keys) {
-    if (key.startsWith("l:") || key.startsWith("x:") || key.startsWith("p:")) continue;
+    if (!isItemKey(key) && !key.startsWith("t:")) continue;
     if (key.startsWith("t:")) {
       const target = content.targets.get(Number(key.slice(2)));
       const unit = target && content.units.find((item) => item.id === target.targetId);

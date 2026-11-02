@@ -24,26 +24,7 @@ export async function finishSession(tx: Tx, row: Session, plan: StoredPlan, ctx:
 
   // Streak (PRD §3.9): every scope but «تمرین بیشتر» counts.
   const enrollment = await tx.enrollment.findUniqueOrThrow({ where: { user_id_language: where } });
-  const before = enrollmentOf(enrollment);
-  let streak = { counted: false, count: before.streakCount, freezeEarned: false, freezes: before.freezeCount };
-  if (plan.scope !== "extra") {
-    const since = [before.freezeCheckedWeek, before.streakLastDate].filter((date): date is string => !!date).sort()[0] ?? addDays(today, -14);
-    const days = await tx.dailyCounter.findMany({ where: { ...where, date_tehran: { gte: asDate(addDays(since, -7)) } }, select: { date_tehran: true, active_sec: true } });
-    const active = new Map(days.map((day) => [dateOnly(day.date_tehran)!, day.active_sec]));
-    const done = finishDay(before, today, (date) => active.get(date) ?? 0, settings);
-    await tx.enrollment.update({
-      where: { id: enrollment.id },
-      data: {
-        streak_count: done.state.streakCount,
-        streak_last_date: done.state.streakLastDate ? asDate(done.state.streakLastDate) : null,
-        streak_forgiven_week: done.state.streakForgivenWeek ? asDate(done.state.streakForgivenWeek) : null,
-        streak_forgiven_count: done.state.streakForgivenCount,
-        freeze_count: done.state.freezeCount,
-        freeze_checked_week: done.state.freezeCheckedWeek ? asDate(done.state.freezeCheckedWeek) : null,
-      },
-    });
-    streak = { counted: true, count: done.state.streakCount, freezeEarned: done.event.freezeEarned > 0, freezes: done.state.freezeCount };
-  }
+  const streak = plan.scope !== "extra" ? await countStreakDay(tx, enrollment, today, settings) : { counted: false, count: enrollment.streak_count, freezeEarned: false, freezes: enrollment.freeze_count };
 
   // Skill levels moved when the session closed (PRD §9.6, §6.2); read them back for the station.
   const [itemRows, skillRows, daily, logs] = await Promise.all([
@@ -104,6 +85,31 @@ export async function finishSession(tx: Tx, row: Session, plan: StoredPlan, ctx:
   };
   await tx.session.update({ where: { id: row.id }, data: { plan: { ...plan, end } as unknown as Prisma.InputJsonValue } });
   return end;
+}
+
+/**
+ * Today counts in the streak (PRD §3.9): missed days covered by forgiveness or a freeze, or the streak
+ * broken; a freeze earned for a full week. Also used by a finished weekly writing (PRD §8b.6).
+ */
+export async function countStreakDay(tx: Tx, enrollment: Enrollment, today: string, settings: LearnContext["settings"]): Promise<EndSummary["streak"]> {
+  const before = enrollmentOf(enrollment);
+  const where = { user_id: enrollment.user_id, language: enrollment.language };
+  const since = [before.freezeCheckedWeek, before.streakLastDate].filter((date): date is string => !!date).sort()[0] ?? addDays(today, -14);
+  const days = await tx.dailyCounter.findMany({ where: { ...where, date_tehran: { gte: asDate(addDays(since, -7)) } }, select: { date_tehran: true, active_sec: true } });
+  const active = new Map(days.map((day) => [dateOnly(day.date_tehran)!, day.active_sec]));
+  const done = finishDay(before, today, (date) => active.get(date) ?? 0, settings);
+  await tx.enrollment.update({
+    where: { id: enrollment.id },
+    data: {
+      streak_count: done.state.streakCount,
+      streak_last_date: done.state.streakLastDate ? asDate(done.state.streakLastDate) : null,
+      streak_forgiven_week: done.state.streakForgivenWeek ? asDate(done.state.streakForgivenWeek) : null,
+      streak_forgiven_count: done.state.streakForgivenCount,
+      freeze_count: done.state.freezeCount,
+      freeze_checked_week: done.state.freezeCheckedWeek ? asDate(done.state.freezeCheckedWeek) : null,
+    },
+  });
+  return { counted: true, count: done.state.streakCount, freezeEarned: done.event.freezeEarned > 0, freezes: done.state.freezeCount };
 }
 
 /**

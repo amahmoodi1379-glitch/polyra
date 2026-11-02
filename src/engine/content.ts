@@ -58,6 +58,8 @@ export type SentenceC = {
   tokens: TokenC[];
   /** Part of the vocabulary and grammar bank, not of a text or a dialogue (PRD §5.7). */
   bank: boolean;
+  /** A sentence of a listening or reading text: never said aloud in «بگو، بعد بشنو» (PRD §8b.2). */
+  inText?: boolean;
 };
 
 /** One blank's answers: a single blank holds strings, two blanks hold one list per blank. */
@@ -175,6 +177,28 @@ export type PhonicsC = {
   sentences: (PhonicsSound & { liaisonAfter: number[] })[];
 };
 
+/** A situational dialogue (PRD §8b.4): every line and choice is a sentence of `Content.sentences`. */
+export type DialogueC = {
+  id: number;
+  code: string;
+  level: string;
+  titleFa: string;
+  situationFa: string;
+  turns: { sentenceId: number; speaker: string | null; choices: number[]; correct: number; whyFa: string }[];
+};
+
+/** A find-the-mistake text (PRD §8b.5): `{{wrong|right}}` marks, one explanation each, and the words of the corrected text. */
+export type ErrorfixC = {
+  id: number;
+  level: string;
+  markedText: string;
+  translationFa: string;
+  unitCodes: string[];
+  whyFa: string[];
+  /** The word id of every word token of the corrected text (none is null: an unresolved one leaves the item out). */
+  wordIds: number[];
+};
+
 export type Content = {
   language: Lang;
   /** The language's levels from lowest to highest (app_setting levels.xx). */
@@ -192,6 +216,9 @@ export type Content = {
   texts: TextC[];
   /** Phonics lessons in the teacher's order (PRD §8.1, §13.6). */
   phonics: PhonicsC[];
+  /** Situational dialogues and find-the-mistake texts of open levels (PRD §8b.4, §8b.5). */
+  dialogues: DialogueC[];
+  errorfixes: ErrorfixC[];
   // Indexes the loader fills once.
   wordByCode: Map<string, WordC>;
   /** Word targets of each word, grammar targets of each unit. */
@@ -223,7 +250,9 @@ export const PRONOUNS: Record<Lang, { key: string; label: string }[]> = {
 };
 
 /** Builds the indexes of a content snapshot from its lists. */
-export function indexContent(base: Omit<Content, "wordByCode" | "wordTargets" | "unitTargets" | "wordSentences" | "lemmaIndex">): Content {
+type Indexes = "wordByCode" | "wordTargets" | "unitTargets" | "wordSentences" | "lemmaIndex";
+export function indexContent(input: Omit<Content, Indexes | "dialogues" | "errorfixes"> & Partial<Pick<Content, "dialogues" | "errorfixes">>): Content {
+  const base = { ...input, dialogues: input.dialogues ?? [], errorfixes: input.errorfixes ?? [] };
   const wordByCode = new Map<string, WordC>();
   const lemmaIndex = new Map<string, number[]>();
   for (const word of base.words.values()) {

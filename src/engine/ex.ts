@@ -158,4 +158,10 @@ export type RawAnswer =
   /** P5: the gaps marked, each the index of the word before it. */
   | { gaps: number[] }
   /** One stage of a text: the answer to each question by its id; a timed reading may run out (PRD §7.4). */
-  | { answers: Record<string, QuestionAnswer>; timedOut?: boolean };
+  | { answers: Record<string, QuestionAnswer>; timedOut?: boolean }
+  /** «بگو، بعد بشنو»: the learner's own rating (PRD §8b.2). */
+  | { self: "ok" | "near" | "no" }
+  /** A dialogue: the first choice of each turn, by index (PRD §8b.4). */
+  | { turns: number[] }
+  /** Find the mistake: the word typed for each changed piece, by piece index (PRD §8b.5). */
+  | { fixes: Record<string, string> };

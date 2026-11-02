@@ -3,7 +3,8 @@ import type { Ex, Gloss, SentenceView, WordView } from "../ex";
 import type { RoundAnswer } from "../answer";
 import type { Graded } from "../grade";
 import type { PhonicsView } from "../phonics";
-import type { ConfusionE, ItemStateE, NotebookRef, PhonicsStateE, TextPartialE, TextStage, TextStateE } from "../state";
+import type { DialogueView, ErrorfixView, SpeakView } from "../production";
+import type { ConfusionE, DialogueStateE, ErrorfixStateE, ItemStateE, NotebookRef, PhonicsStateE, SpeakStateE, TextPartialE, TextStage, TextStateE } from "../state";
 import type { StageRules } from "../texts";
 
 /**
@@ -39,7 +40,19 @@ export type CardKind =
   /** The start of a phonics round: round 1's lesson or round 2's reminder, with «بعداً» in an auto round (PRD §8.3, §8.4); its item is `p:<lesson id>`. */
   | "phonics"
   /** One question of a phonics round (P1–P5, PRD §8.2). */
-  | "phonicsq";
+  | "phonicsq"
+  /** «بگو، بعد بشنو» (S1, PRD §8b.2): judged by the learner; its item is `s:<sentence id>`. */
+  | "speak"
+  /** A whole situational dialogue on one screen, turn by turn (S3, PRD §8b.4); its item is `d:<dialogue id>`. */
+  | "dialogue"
+  /** A find-the-mistake text (S4, PRD §8b.5); its item is `e:<item id>`. */
+  | "errorfix";
+
+/** What a speaking card carries, with the row before it so both sides write the same state after it (PRD §8b). */
+export type ProdCard =
+  | { kind: "speak"; view: SpeakView; before: SpeakStateE | null }
+  | { kind: "dialogue"; view: DialogueView; attempt: number; before: DialogueStateE | null }
+  | { kind: "errorfix"; view: ErrorfixView; attempt: number; before: ErrorfixStateE | null };
 
 /**
  * The session's phonics round (PRD §8.3, §8.4): at most one. Its answers are kept until the last
@@ -114,6 +127,8 @@ export type Card = {
   text?: TextCard;
   /** «کلمه‌های این متن»: the key words to show. */
   words?: number[];
+  /** A speaking card (S1, S3, S4). */
+  prod?: ProdCard;
 };
 
 /** Exercises made in advance for one single-exercise item (PRD §10.7). */

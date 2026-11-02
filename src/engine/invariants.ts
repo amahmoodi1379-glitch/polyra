@@ -43,6 +43,17 @@ export function checkInvariants(input: InvariantInput): Violation[] {
 }
 
 /** The content item a card belongs to; a notebook sentence of a unit (`t:`) belongs to its unit. A drilled sentence has none. */
+/** A speaking card shows visible content only: a sentence that is not a text's, a dialogue or a find-the-mistake text of the content (PRD §8b). */
+function prodShown(content: Content, card: Card): boolean {
+  const prod = card.prod!;
+  if (prod.kind === "speak") {
+    const sentence = content.sentences.get(prod.view.sentence.id);
+    return !!sentence && !sentence.inText;
+  }
+  if (prod.kind === "dialogue") return content.dialogues.some((dialogue) => dialogue.id === prod.view.id);
+  return content.errorfixes.some((item) => item.id === prod.view.id);
+}
+
 function cardRef(content: Content, card: Card): Pick<ItemStateE, "itemType" | "itemId"> | null {
   if (card.item.startsWith("t:")) {
     const target = content.targets.get(Number(card.item.slice(2)));
@@ -113,7 +124,9 @@ function checkBuild(input: InvariantInput, build: NonNullable<InvariantInput["bu
         ? content.phonics.some((lesson) => phonicsKey(lesson.id) === card.item)
         : card.t === "drill"
           ? !!content.sentences.get(card.ex?.sentenceId ?? -1)?.bank
-          : !!ref && active(ref);
+          : card.prod
+            ? prodShown(content, card)
+            : !!ref && active(ref);
     if (!shownOk) out.push({ rule: 8, detail: `${card.item} is not active content` });
     // 10. No exercise with sound in a session without sound.
     const shown = shownEx(plan, card);
