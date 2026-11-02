@@ -73,7 +73,7 @@ test("a reader leaves a text half-way, finds it again, answers it with and witho
     const send = page.getByRole("button", { name: "ثبت جواب‌ها", exact: true });
     await expect(end.or(idk).or(next).or(send).first()).toBeVisible();
     if (await end.isVisible()) break;
-    if (await send.isVisible()) await send.click();
+    if ((await send.isVisible()) && (await send.isEnabled())) await send.click();
     else if (await idk.first().isVisible()) await idk.first().click();
     else await next.click();
   }
