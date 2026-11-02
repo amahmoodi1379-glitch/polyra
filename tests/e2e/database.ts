@@ -28,6 +28,9 @@ export const E2E_PHONICS = { "learner-phone": "09120000039", "learner-desktop": 
 /** Testers who have not started French, for the placement test (PRD §11). */
 export const E2E_PLACERS = { "learner-phone": "09120000047", "learner-desktop": "09120000049" } as const;
 
+/** Teachers on the learner server, for «تعیین سطح» on «آزمایش مثل زبان‌آموز» with the French demo. */
+export const E2E_TRY_ADMINS = { "learner-phone": "09120000051", "learner-desktop": "09120000053" } as const;
+
 /** Testers at vocabulary B1, so this week's writing is open (PRD §8b.6). */
 export const E2E_WRITERS = { "learner-phone": "09120000043", "learner-desktop": "09120000045" } as const;
 

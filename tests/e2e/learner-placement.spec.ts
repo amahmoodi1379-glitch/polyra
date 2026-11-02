@@ -7,6 +7,9 @@ import { E2E_PLACERS } from "./database";
  * and answers «نمی‌دانم» until the result: every skill A1, then the home with «شروع».
  */
 
+// Its own address: the learner server allows 10 code requests an hour from one (PRD §15.5).
+test.use({ extraHTTPHeaders: { "x-forwarded-for": "10.0.1.47" } });
+
 async function signIn(page: Page, phone: string) {
   await page.goto("/");
   await expect(page).toHaveURL(/\/login\?next=%2F$/);
@@ -54,10 +57,13 @@ test("a tester takes the placement test, leaves it half-way, comes back and gets
   // «نمی‌دانم» until the block fails: the result.
   const result = page.getByRole("heading", { name: "سطح تو در فرانسوی" });
   const idk = page.getByRole("button", { name: "نمی‌دانم", exact: true });
-  for (let i = 0; i < 10 && !(await result.isVisible()); i++) {
-    await expect(result.or(idk).first()).toBeVisible();
+  for (let i = 0; i < 10; i++) {
+    await expect(result.or(part).first()).toBeVisible();
     if (await result.isVisible()) break;
+    const before = await part.textContent();
     await idk.click();
+    // The next question, or the result: wait for the screen to change before the next answer.
+    await expect(async () => expect((await result.isVisible()) || (await part.textContent()) !== before).toBe(true)).toPass();
   }
   await expect(result).toBeVisible();
   const levels = page.locator("[data-placement-result] [data-skill]");
