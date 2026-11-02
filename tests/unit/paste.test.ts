@@ -80,3 +80,26 @@ describe("joinPaste", () => {
     expect(joinPaste(joined.text, json.slice(cutAt + 10))).toMatchObject({ state: "ok", value: answer });
   });
 });
+
+describe("what chat apps and chatbots do to JSON", () => {
+  const value = { words: [{ code: "voiture", n: 3, note: null, ok: true }], issues: [] };
+
+  it("reads curly quotes from a messenger or a word processor", () => {
+    expect(cleanPaste('{“words”: [{“code”: “voiture”, “n”: 3, “note”: null, “ok”: true}], “issues”: []}', "words")).toMatchObject({ state: "ok", value });
+  });
+
+  it("reads notes, Python's None and True, and Persian digits outside the strings", () => {
+    const pasted = '{"words": [{"code": "voiture", "n": ۳, "note": None, "ok": True} // the car\n], /* done */ "issues": []}';
+    expect(cleanPaste(pasted, "words")).toMatchObject({ state: "ok", value });
+  });
+
+  it("leaves strings alone: a link, a Persian digit and a word like None", () => {
+    const record = { code: "None", meaning_fa: "۳ تا", link: "http://a.b" };
+    expect(cleanPaste(`{"words": [${JSON.stringify(record)}], "issues": []} // end`, "words")).toMatchObject({ state: "ok", value: { words: [record] } });
+  });
+
+  it("puts together an answer split into several code blocks in one reply", () => {
+    const pasted = 'Part 1:\n```json\n{"words": [{"code": "a"}], "issues": []}\n```\nPart 2:\n```json\n{"words": [{"code": "b"}], "issues": ["x"]}\n```';
+    expect(cleanPaste(pasted, "words")).toMatchObject({ state: "ok", value: { words: [{ code: "a" }, { code: "b" }], issues: ["x"] } });
+  });
+});
