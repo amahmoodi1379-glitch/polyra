@@ -13,9 +13,10 @@ import { Sheet } from "@/components/learn/sheet";
 import { useToast } from "@/components/learn/toast";
 import { formatNumber, t, tRich } from "@/i18n";
 import type { SkillName } from "@/engine/state";
+import { TRAVEL_DAYS } from "@/lib/travel";
 import { cn } from "@/lib/utils";
 import type { HomeData, PlanLine, SkillTile } from "@/server/learn/home";
-import { changeSessionLength, resetMyProgress, signOutLearner } from "../../actions";
+import { changeSessionLength, moveMyTime, resetMyProgress, signOutLearner } from "../../actions";
 
 type Props = {
   data: HomeData;
@@ -509,6 +510,33 @@ function Settings({ language, languageName, account, lengths }: { language: stri
           ))}
         </div>
       </div>
+      {account.tester ? (
+        <div className="field">
+          <span id="travel-label">
+            {t("learn.settings.travel")}
+            <small>{t("learn.settings.travelHint")}</small>
+          </span>
+          <div className="seg num" role="group" aria-labelledby="travel-label" style={{ "--n": TRAVEL_DAYS.length } as CSSProperties}>
+            {TRAVEL_DAYS.map((days) => (
+              <button
+                key={days}
+                type="button"
+                disabled={pending}
+                aria-label={t("learn.settings.travelDays", { n: days })}
+                onClick={() => {
+                  sfx("toggle", 0.4);
+                  startTransition(async () => {
+                    await moveMyTime(language, days);
+                    toast(t("learn.settings.travelDone", { n: days }));
+                  });
+                }}
+              >
+                {t("learn.settings.travelShort", { n: days })}
+              </button>
+            ))}
+          </div>
+        </div>
+      ) : null}
       <div>
         <label className="toggle-row">
           <span>

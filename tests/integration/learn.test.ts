@@ -21,6 +21,7 @@ import { myPhonics, myPhonicsLesson, myText, myTexts } from "@/server/learn/list
 import { startSession, type Bundle } from "@/server/learn/session";
 import { queueTappedWord } from "@/server/learn/tap";
 import { saveTextProgress } from "@/server/learn/text-progress";
+import { travelDays } from "@/server/learn/time-travel";
 import { saveItemState } from "@/server/learn/writes";
 import { engineSettings } from "@/server/settings/read";
 import { rightAnswer, textAnswers } from "../../fixtures/synthetic/drive";
@@ -761,6 +762,54 @@ describe("phonics (PRD §8)", () => {
     await resetProgress(user, "fr");
     expect(await testDb.phonicsState.count({ where: { user_id: user.id } })).toBe(0);
     expect(await testDb.enrollment.count({ where: { user_id: user.id } })).toBe(0);
+  });
+});
+
+describe("moving time for a test account", () => {
+  it("moves every date of this language back, so the next session is days later", async () => {
+    const user = await enrolled();
+    await playAll(user, await started(user));
+    const before = await testDb.itemState.findMany({ where: { user_id: user.id }, orderBy: { id: "asc" } });
+    const enrollment = await testDb.enrollment.findUniqueOrThrow({ where: { user_id_language: { user_id: user.id, language: "fr" } } });
+    const day = await testDb.dailyCounter.findFirstOrThrow({ where: { user_id: user.id } });
+    const later = new Date(NOW.getTime() + 3_600_000);
+
+    await travelDays(user, "fr", 3, later);
+
+    const after = await testDb.itemState.findMany({ where: { user_id: user.id }, orderBy: { id: "asc" } });
+    const days = (a: string, b: string) => (Date.parse(a) - Date.parse(b)) / 86_400_000;
+    for (const [i, row] of after.entries()) {
+      const was = before[i].fsrs as { due: string };
+      expect(days(was.due, (row.fsrs as { due: string }).due)).toBe(3);
+      expect(before[i].introduced_at!.getTime() - row.introduced_at!.getTime()).toBe(3 * 86_400_000);
+    }
+    const moved = await testDb.enrollment.findUniqueOrThrow({ where: { id: enrollment.id } });
+    expect(enrollment.streak_last_date!.getTime() - moved.streak_last_date!.getTime()).toBe(3 * 86_400_000);
+    const movedDay = await testDb.dailyCounter.findUniqueOrThrow({ where: { id: day.id } });
+    expect(day.date_tehran.getTime() - movedDay.date_tehran.getTime()).toBe(3 * 86_400_000);
+    expect((await testDb.reviewLog.findFirstOrThrow({ where: { user_id: user.id } })).ts.getTime()).toBeLessThan(NOW.getTime() - 2 * 86_400_000);
+
+    // Reviews are due now, and the next session is built as if three days had passed.
+    const next = await started(user, later);
+    expect(next.plan.queue.length).toBeGreaterThan(0);
+  });
+
+  it("closes an open session first and leaves other accounts alone", async () => {
+    const user = await enrolled();
+    const other = await enrolled();
+    await started(user);
+    await playAll(other, await started(other));
+    const otherBefore = await testDb.itemState.findMany({ where: { user_id: other.id }, orderBy: { id: "asc" } });
+    await travelDays(user, "fr", 1, NOW);
+    expect(await testDb.session.count({ where: { user_id: user.id, ended_at: null } })).toBe(0);
+    expect(await testDb.itemState.findMany({ where: { user_id: other.id }, orderBy: { id: "asc" } })).toEqual(otherBefore);
+  });
+
+  it("is only for test accounts and the steps on the page", async () => {
+    const learner = await enrolled({});
+    await expect(travelDays(learner, "fr", 1)).rejects.toThrow();
+    const tester = await enrolled();
+    await expect(travelDays(tester, "fr", 2)).rejects.toThrow();
   });
 });
 

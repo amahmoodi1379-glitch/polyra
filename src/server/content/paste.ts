@@ -75,12 +75,67 @@ function dropTrailingCommas(text: string) {
   return out;
 }
 
-function tryParse(text: string): { ok: true; value: unknown } | { ok: false } {
-  try {
-    return { ok: true, value: JSON.parse(dropTrailingCommas(text)) };
-  } catch {
-    return { ok: false };
+const LITERALS: Record<string, string> = { None: "null", True: "true", False: "false", undefined: "null", NaN: "null" };
+
+/**
+ * Mends what a chatbot or a chat app sometimes does to JSON, outside its strings only: `//` and
+ * `/* *\/` notes, Python's None, True and False, Persian or Arabic digits in numbers, and curly
+ * quotes when the text has no straight quote at all (a copy from a messenger or a word processor).
+ */
+function mend(raw: string) {
+  const text = raw.includes('"') ? raw : raw.replace(/[“”„‟″]/g, '"');
+  let out = "";
+  let inString = false;
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    if (inString) {
+      out += ch;
+      if (ch === "\\") {
+        out += text[i + 1] ?? "";
+        i++;
+      } else if (ch === '"') inString = false;
+      continue;
+    }
+    if (ch === '"') {
+      inString = true;
+      out += ch;
+      continue;
+    }
+    if (ch === "/" && text[i + 1] === "/") {
+      while (i < text.length && text[i] !== "\n") i++;
+      out += "\n";
+      continue;
+    }
+    if (ch === "/" && text[i + 1] === "*") {
+      const end = text.indexOf("*/", i + 2);
+      i = end < 0 ? text.length : end + 1;
+      continue;
+    }
+    const digit = "۰۱۲۳۴۵۶۷۸۹".indexOf(ch) >= 0 ? "۰۱۲۳۴۵۶۷۸۹".indexOf(ch) : "٠١٢٣٤٥٦٧٨٩".indexOf(ch);
+    if (digit >= 0) {
+      out += String(digit);
+      continue;
+    }
+    const word = /^[A-Za-z]+/.exec(text.slice(i))?.[0];
+    if (word) {
+      out += LITERALS[word] ?? word;
+      i += word.length - 1;
+      continue;
+    }
+    out += ch;
   }
+  return out;
+}
+
+function tryParse(text: string): { ok: true; value: unknown } | { ok: false } {
+  for (const candidate of [text, mend(text)]) {
+    try {
+      return { ok: true, value: JSON.parse(dropTrailingCommas(candidate)) };
+    } catch {
+      // try the mended text next
+    }
+  }
+  return { ok: false };
 }
 
 /** The main key of an answer, or any of its parts' keys for an answer made of several parts. */
@@ -109,6 +164,34 @@ function keyedObjects(text: string, from: number, to: number, rootKey: AnswerKey
 }
 
 /**
+ * A chatbot that splits a long answer into several code blocks in one reply («بخش ۱»، «بخش ۲»): each
+ * block is a whole answer with the main key, and their lists are put together. Null when the paste
+ * has fewer than two such blocks.
+ */
+function splitAnswer(text: string, rootKey: AnswerKeys): PasteResult | null {
+  const blocks = [...text.matchAll(/```[a-zA-Z]*\s*\n?([\s\S]*?)```/g)].map((match) => match[1].trim());
+  if (blocks.length < 2) return null;
+  const answers: Record<string, unknown>[] = [];
+  for (const block of blocks) {
+    if (!block.startsWith("{")) continue;
+    const parsed = tryParse(block);
+    if (!parsed.ok || !isAnswer(parsed.value, rootKey)) return null;
+    answers.push(parsed.value);
+  }
+  if (answers.length < 2) return null;
+  const merged: Record<string, unknown> = {};
+  for (const answer of answers) {
+    for (const [key, value] of Object.entries(answer)) {
+      const before = merged[key];
+      if (Array.isArray(before) && Array.isArray(value)) merged[key] = [...before, ...value];
+      else if (before === undefined || before === null) merged[key] = value;
+      else if (value !== null && JSON.stringify(value) !== JSON.stringify(before)) return null;
+    }
+  }
+  return { state: "ok", value: merged, text: JSON.stringify(merged) };
+}
+
+/**
  * Cleans one pasted answer. Every answer is one JSON object, so only the outermost objects in the
  * paste count; the records inside an answer are never mistaken for the answer itself. A "{" in the
  * chatbot's own words is skipped because it does not make a valid object. When the caller gives the
@@ -116,6 +199,8 @@ function keyedObjects(text: string, from: number, to: number, rootKey: AnswerKey
  * behind a stray "{" in the chatbot's words is still found.
  */
 export function cleanPaste(raw: string, rootKey?: AnswerKeys): PasteResult {
+  const split = rootKey ? splitAnswer(tidy(raw), rootKey) : null;
+  if (split) return split;
   const text = unfence(tidy(raw));
   const answers: { value: unknown; text: string }[] = [];
   let cut: string | null = null;
