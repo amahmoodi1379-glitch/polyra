@@ -6,6 +6,8 @@ import { endSession, getCurrentUser } from "@/server/auth/session";
 import { isLanguage } from "@/server/content/languages";
 import { forgetContent } from "@/server/learn/content";
 import { resetProgress, SESSION_LENGTHS, setSessionLength, startFromZero } from "@/server/learn/enroll";
+import { TRAVEL_DAYS } from "@/lib/travel";
+import { travelDays } from "@/server/learn/time-travel";
 
 async function signedIn() {
   const user = await getCurrentUser();
@@ -39,6 +41,15 @@ export async function resetMyProgress(language: string) {
   await resetProgress(user, language);
   forgetContent();
   redirect(`/start/${language}`);
+}
+
+/** «زمان را جلو ببر», tester accounts only: the next session sees this account N days later. */
+export async function moveMyTime(language: string, days: number) {
+  const user = await signedIn();
+  if (!isLanguage(language) || (!user.is_tester && !user.is_admin)) return;
+  if (!(TRAVEL_DAYS as readonly number[]).includes(days)) return;
+  await travelDays(user, language, days);
+  revalidatePath(`/learn/${language}`, "layout");
 }
 
 export async function signOutLearner() {
