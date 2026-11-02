@@ -6,12 +6,12 @@ import { startFromZero } from "@/server/learn/enroll";
 import { saveItemState } from "@/server/learn/writes";
 import { engineNumber } from "@/server/settings/read";
 import { seedSettings } from "../../scripts/seed/settings";
-import { E2E_PHONICS, E2E_READERS, E2E_TESTERS, E2E_WRITERS } from "./database";
+import { E2E_PHONICS, E2E_PLACERS, E2E_READERS, E2E_TESTERS, E2E_WRITERS } from "./database";
 
 /**
  * Fresh learner database for the browser tests: settings, the French demo, one new tester per project,
  * one per project who has met every demo word, for the texts, one per project from zero, for phonics,
- * and one per project at vocabulary B1, for the weekly writing.
+ * one per project at vocabulary B1, for the weekly writing, and one per project who has not started, for placement.
  */
 async function main() {
   const rows = await db.$queryRawUnsafe<{ tablename: string }[]>("SELECT tablename FROM pg_tables WHERE schemaname = 'public' AND tablename <> '_prisma_migrations'");
@@ -20,7 +20,7 @@ async function main() {
 
   await seedSettings(db);
   const sessionLength = await engineNumber("session.default_length");
-  for (const phone of Object.values(E2E_TESTERS)) {
+  for (const phone of [...Object.values(E2E_TESTERS), ...Object.values(E2E_PLACERS)]) {
     await db.user.create({ data: { phone: normalizeMobile(phone)!, session_length_min: sessionLength, is_tester: true } });
   }
   const demo = await loadDemo();

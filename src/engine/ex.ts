@@ -101,6 +101,11 @@ export type AnswerSpec =
       first: string;
       /** G6: the sentence before the change, for the one-typo rule (PRD §6.5). */
       transformSource: string | null;
+      /**
+       * The placement sample's one-letter allowance (PRD §5.6, §11.4), when present: the forms of other
+       * words one letter from the answer, which stay wrong.
+       */
+      typo?: string[] | null;
     }
   /** W4b: the hidden letters, in order. */
   | { kind: "letters"; word: string; hidden: number[] }

@@ -1,4 +1,6 @@
 import type { FsrsCard } from "@/engine/fsrs";
+import type { SampleState } from "@/engine/placement";
+import { addDays } from "@/engine/time";
 import type { LanguageCode } from "@/server/content/languages";
 import { db } from "@/server/db";
 import { TRAVEL_DAYS } from "@/lib/travel";
@@ -69,6 +71,7 @@ export async function travelDays(user: Learner, language: LanguageCode, days: nu
       .join(", ");
 
   const items = await db.itemState.findMany({ where: { user_id: user.id, language }, select: { id: true, fsrs: true } });
+  const runs = await db.placementRun.findMany({ where: { user_id: user.id, language }, select: { id: true, sample_state: true } });
   await db.$transaction(async (tx) => {
     for (const table of ownTables) {
       if (columns.get(table)!.length === 0) continue;
@@ -88,6 +91,13 @@ export async function travelDays(user: Learner, language: LanguageCode, days: nu
       const card = item.fsrs as unknown as FsrsCard;
       const moved = { ...card, due: back(card.due, days)!, last_review: back(card.last_review, days) };
       await tx.itemState.update({ where: { id: item.id }, data: { fsrs: moved as unknown as object } });
+    }
+    // The grammar sample after placement keeps the days of its two rounds inside the JSON (PRD §11.4).
+    for (const run of runs) {
+      const sample = run.sample_state as unknown as SampleState | null;
+      if (!sample?.grammar) continue;
+      const moved: SampleState = { ...sample, grammar: { ...sample.grammar, days: sample.grammar.days.map((day) => addDays(day, -days)) } };
+      await tx.placementRun.update({ where: { id: run.id }, data: { sample_state: moved as unknown as object } });
     }
   });
 }

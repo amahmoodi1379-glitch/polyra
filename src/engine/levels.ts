@@ -91,7 +91,7 @@ export function vocabLevelUp(content: Content, items: ItemIndex, vocab: SkillLev
 export function levelsAfter(content: Content, items: ItemIndex, skills: readonly SkillLevelE[], settings: Settings): { vocab: string | null; grammar: string | null } {
   const vocab = skills.find((skill) => skill.skill === "vocab");
   const grammar = skills.find((skill) => skill.skill === "grammar");
-  const reached = grammarLevel(content, items);
+  const reached = grammarLevel(content, items, grammar?.knownBelow ?? null);
   return {
     vocab: vocab ? vocabLevelUp(content, items, vocab, settings) : null,
     grammar: grammar && levelIndex(content, reached) > levelIndex(content, grammar.level) ? reached : null,
@@ -100,9 +100,12 @@ export function levelsAfter(content: Content, items: ItemIndex, skills: readonly
 
 export type GrammarProgress = { level: string; total: number; opened: number; stable: number; progress: number; station: number; stations: number };
 
-/** Grammar level: the level of the newest unit the learner opened (PRD §6.2); the lowest when none. */
-export function grammarLevel(content: Content, items: ItemIndex): string {
-  let level = content.levels[0];
+/**
+ * Grammar level: the level of the newest unit the learner opened (PRD §6.2); the lowest when none. A
+ * placement's `known_below` (PRD §11.3) is a floor: the units below it count as known.
+ */
+export function grammarLevel(content: Content, items: ItemIndex, knownBelow: string | null = null): string {
+  let level = knownBelow && levelIndex(content, knownBelow) > 0 ? knownBelow : content.levels[0];
   for (const unit of content.units) if (items.units.has(unit.id) && levelIndex(content, unit.level) > levelIndex(content, level)) level = unit.level;
   return level;
 }

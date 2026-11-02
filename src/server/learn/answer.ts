@@ -11,6 +11,7 @@ import type { Prisma } from "@/generated/prisma/client";
 import { db } from "@/server/db";
 import { logError } from "@/server/errors";
 import { finishSession } from "./finish";
+import { recordSample } from "./placement";
 import { loadPhonicsStates, textStateRow } from "./learner";
 import { bundleOf, closeSession, expiresAt, learnContext, SESSION_LIFE_MS, type Bundle, type EndSummary, type Learner, type StoredPlan } from "./session";
 import { addDaily, applyNotebookOps, saveConfusion, saveItemState, type DailyAdd } from "./writes";
@@ -240,6 +241,8 @@ export async function submitAnswer(user: Learner, request: AnswerRequest, server
         };
         await tx.errorfixState.upsert({ where: { user_id_errorfix_item_id: { user_id: user.id, errorfix_item_id: prod.itemId } }, create: { user_id: user.id, errorfix_item_id: prod.itemId, ...data }, update: data });
       }
+      // The placement sample (PRD §11.4): its count, and what a failure changes.
+      if (result.sample) await recordSample(tx, user.id, row.language, result.sample, ctx);
       // «کلمه‌های این متن»: its words wait in the queue (PRD §7.5, source `key_word`).
       if (result.keyWords.length > 0) {
         const taken = new Set(

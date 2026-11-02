@@ -14,10 +14,15 @@ import { correctedOf, dialogueGate, errorfixOpen, nextDialogue, nextErrorfix, PR
 import { indexTextStates, newText, nextAttempt, otherTrack, TEXT_RULE, textProgress, textStateKey, textWaiting, wasBorrowed, type TextEnv } from "@/engine/texts";
 import { num } from "@/engine/settings";
 import { scenarioById, type Scenario } from "@/lib/rehearse";
+import { levelIndex } from "@/engine/content";
+import { placementReadiness, sampleMarks, type PlacementReadiness, type PlacementResult } from "@/engine/placement";
+import { rightAnswer, rightQuestion, wrongAnswer, wrongQuestion } from "@/sim/answers";
+import type { QuestionAnswer } from "@/engine/questions";
 import { human } from "@/sim/human";
 import type { LanguageCode } from "@/server/content/languages";
 import { db } from "@/server/db";
 import { submitAnswer } from "./answer";
+import { beginPlacement, lastPlacement, placementInput, placementRunning, placementScreen, type StoredRun } from "./placement";
 import { resetProgress, startFromZero } from "./enroll";
 import { learnContext, previewSession, startSession, type Bundle, type Learner } from "./session";
 import { writingCard, writingTasks, type WritingCard } from "./writing";
@@ -364,4 +369,70 @@ export async function productionOverview(user: Learner, language: LanguageCode, 
       tasks: [...tasks].sort((a, b) => content.levels.indexOf(a.level) - content.levels.indexOf(b.level) || a.id - b.id).map((task) => ({ id: task.id, level: task.level, promptFa: task.promptFa })),
     },
   };
+}
+
+// ───────────────────────────── placement (PRD §11) ─────────────────────────────
+
+/** The «تعیین سطح» card: what each level gives the test, and this account's last test with its sample. */
+export type PlacementOverview = {
+  readiness: PlacementReadiness[];
+  running: boolean;
+  last: Awaited<ReturnType<typeof lastPlacement>>;
+  titles: Record<number, string>;
+  /** How many right answers pass each sample and which wrong one fails it. */
+  marks: { vocab: { need: number; failAt: number } | null; grammar: { need: number; failAt: number } | null };
+};
+
+export async function placementOverview(user: Learner, language: LanguageCode, now = new Date()): Promise<PlacementOverview> {
+  const ctx = await learnContext(user, language, now);
+  const [running, last] = await Promise.all([placementRunning(user.id, language), lastPlacement(user.id, language)]);
+  const titles: Record<number, string> = {};
+  for (const text of last?.texts ?? []) titles[text.textId] = ctx.content.texts.find((item) => item.id === text.textId)?.title ?? `#${text.textId}`;
+  const sample = last?.sample;
+  const marks = {
+    vocab: sample?.vocab ? sampleMarks(ctx.settings, sample.vocab.wordIds.length) : null,
+    grammar: sample?.grammar ? sampleMarks(ctx.settings, sample.grammar.targetIds.length) : null,
+  };
+  return { readiness: placementReadiness(ctx.content, ctx.settings), running, last, titles, marks };
+}
+
+/** How often the made-up learner of «یک زبان‌آموز ساختگی آزمون بدهد» is right on a level it knows, the next one, and above. */
+const PLACEMENT_SKILL = { known: 0.95, next: 0.35, above: 0.1 } as const;
+/** A guard against a test that does not end. */
+const MAX_PLACEMENT_STEPS = 200;
+
+/**
+ * A made-up learner takes the test on the teacher's own account: right most of the time on the levels it
+ * knows (`known`, null for a beginner), now and then on the next, rarely above. It goes through the same
+ * server steps as the app, so the result, the sample and its cards are the ones a learner would get.
+ */
+export async function rehearsePlacement(user: Learner & { phone: string | null }, language: LanguageCode, known: string | null, now = new Date()): Promise<PlacementResult | null> {
+  if (!user.is_tester && !user.is_admin) throw new Error("Only a teacher or a tester can try the placement test");
+  await resetProgress(user, language);
+  if ((await beginPlacement(user, language, now)) !== "started") return null;
+  const ctx = await learnContext(user, language, now);
+  const top = levelIndex(ctx.content, known);
+  const chance = (level: string) => {
+    const index = levelIndex(ctx.content, level);
+    return index <= top ? PLACEMENT_SKILL.known : index === top + 1 ? PLACEMENT_SKILL.next : PLACEMENT_SKILL.above;
+  };
+  const rng = seeded(`${user.id}:placement:${known ?? "none"}:${now.toISOString()}`);
+  let screen = await placementScreen(user, language, now);
+  for (let step = 0; screen && screen.kind !== "done" && step < MAX_PLACEMENT_STEPS; step++) {
+    if (screen.kind === "question") {
+      // The browser never gets the answer key; the made-up learner reads it from the run kept on the server.
+      const row = await db.placementRun.findFirstOrThrow({ where: { user_id: user.id, language, state: "running" } });
+      const current = (row.result as unknown as StoredRun).progress.current;
+      if (current?.kind !== "question") break;
+      const answer: RawAnswer = rng() < chance(screen.level) ? rightAnswer(current.ex) : rng() < 0.5 ? { idk: true } : wrongAnswer(current.ex);
+      screen = await placementInput(user, language, { answer }, { part: screen.part, number: screen.number }, now);
+    } else {
+      // A text of the level below L is passed by a learner who knows the level above it.
+      const p = chance(ctx.content.levels[levelIndex(ctx.content, screen.level) + 1] ?? screen.level);
+      const answers: Record<string, QuestionAnswer> = {};
+      for (const question of screen.view.questions.A) answers[String(question.id)] = rng() < p ? rightQuestion(question, screen.view) : wrongQuestion(question);
+      screen = await placementInput(user, language, { answers }, { part: screen.track, number: 0 }, now);
+    }
+  }
+  return screen?.kind === "done" ? screen.result : null;
 }

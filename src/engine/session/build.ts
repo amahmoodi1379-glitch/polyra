@@ -1,5 +1,6 @@
 import { newItemState, strongestPartner } from "../answer";
-import { buildG0, buildWordEx, type BuildEnv } from "../build";
+import { buildG0, buildGrammarEx, buildWordEx, type BuildEnv } from "../build";
+import { grammarSampleDue, typoForms } from "../placement";
 import { genderButtons, levelIndex, type ConjC, type Content, type Track, type UnitC, type WordC } from "../content";
 import { buildDrillEx, drillGate, drillKey, drillOrder } from "../drill";
 import type { Ex } from "../ex";
@@ -25,7 +26,7 @@ import {
 import { buildRound, CONJ_LAST_STEP, lastStepOfUnit, lastStepOfWord, pickConjEx, pickTargetEx, pickUnitEx, pickWordEx, type Purpose } from "../pick";
 import { seeded, shuffle } from "../random";
 import { num, type Settings } from "../settings";
-import { isItemKey, itemKey, parseItemKey, type ConfusionE, type ItemStateE, type ItemType, type LearnerSnapshot, type NotebookE, type SkillName } from "../state";
+import { isItemKey, itemKey, parseItemKey, sampleKey, type ConfusionE, type ItemStateE, type ItemType, type LearnerSnapshot, type NotebookE, type SkillName } from "../state";
 import {
   attemptCost,
   dueTexts,
@@ -244,7 +245,13 @@ function wordItem(ctx: Ctx, word: WordC, step: number, isNew: boolean): { primar
   let primary: Ex | null;
   if (state && state.probation !== "none") {
     // The first real review of a probation card is typed: W5a, or a step-3 meaning exercise (PRD §9.7).
-    primary = word.mastery === "recognize" ? pick([], 3, "review") : (buildWordEx(env, word, "W5a") ?? pick([], step, "review"));
+    // A sample card (PRD §11.4): W5a with the one-letter allowance; a recognize word fills in with W3b.
+    const sample = state.probation === "sample";
+    if (word.mastery === "recognize") primary = (sample ? buildWordEx(env, word, "W3b") : null) ?? pick([], 3, "review");
+    else {
+      const typed = buildWordEx(env, word, "W5a");
+      primary = typed && sample && typed.a.kind === "type" ? { ...typed, a: { ...typed.a, typo: typoForms(ctx.content, word) } } : (typed ?? pick([], step, "review"));
+    }
   } else {
     primary = pick([], step, "review");
   }
@@ -567,7 +574,17 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
   const reviewBudget = share("review") * budget;
   let spent = 0;
   const leftover: string[] = [];
-  const dueKeys = [...eligible].sort((a, b) => a.r - b.r).map((item) => item.key);
+  // The placement sample's due cards come first (PRD §10.2 step 4.1, §11.4).
+  const sampleFirst = (key: string) => (states.get(key)?.probation === "sample" ? 0 : 1);
+  const dueKeys = [...eligible].sort((a, b) => sampleFirst(a.key) - sampleFirst(b.key) || a.r - b.r).map((item) => item.key);
+  // The grammar sample's round of today, typed and without a card (PRD §11.4), before the other reviews.
+  if (wantGrammar && (scope === "mixed" || scope === "grammar" || scope === "quick")) {
+    const entry = sampleEntry(ctx);
+    if (entry && entry.cost <= budget) {
+      add(entry);
+      spent += entry.cost;
+    }
+  }
   // Attempts 2 and 3 first, the oldest first: `text.due_per_15min` of them, each within `text.max_share` of the session (PRD §10.2 step 4).
   if (scope === "mixed") {
     const cap = Math.ceil((num(settings, "text.due_per_15min") * lengthMin) / 15);
@@ -762,6 +779,7 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
   const summary = { newWords: 0, newUnits: 0, newConj: 0 };
   if (scope === "mixed" || scope === "vocab" || scope === "grammar") {
     const vocab = learner.skills.find((skill) => skill.skill === "vocab") ?? { skill: "vocab" as const, level: content.levels[0], knownBelow: content.levels[0] };
+    const grammarBelow = learner.skills.find((skill) => skill.skill === "grammar")?.knownBelow ?? null;
     const grammarOpen = !fromStart || introducedCardWords(content, learner.items) >= num(settings, "gate.grammar_words");
     let wordRoom = wordsBlocked ? 0 : Math.max(0, Math.min(caps.words, wordsCapToday - learner.today.newWords));
     let unitRoom = Math.max(0, Math.min(caps.units, caps.unitsDaily - learner.today.newUnits));
@@ -774,7 +792,7 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
     if (scope !== "vocab" && grammarOpen) skills.add("grammar");
     const progress: Partial<Record<SkillName, number>> = {
       vocab: vocabProgress(content, items, vocab, settings).progress,
-      grammar: grammarProgress(content, items, grammarLevel(content, items), settings).progress,
+      grammar: grammarProgress(content, items, grammarLevel(content, items, grammarBelow), settings).progress,
     };
     // Listening's pack is a new text, else three drills; reading's is a new text (PRD §10.2 step 7).
     const textPacks: Partial<Record<Track, Entry | null>> = {};
@@ -798,7 +816,7 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
     const grammarWait = num(settings, "new.grammar_first_days");
     const lastUnit = Math.max(0, ...[...items.units.values()].map((state) => (state.introducedAt ? Date.parse(state.introducedAt) : 0)));
     const grammarFirst =
-      grammarWait > 0 && skills.has("grammar") && unitRoom > 0 && nextUnit(content, chosenUnits, settings) !== null && today >= addDays(tehranDate(new Date(lastUnit)), grammarWait);
+      grammarWait > 0 && skills.has("grammar") && unitRoom > 0 && nextUnit(content, chosenUnits, settings, grammarBelow) !== null && today >= addDays(tehranDate(new Date(lastUnit)), grammarWait);
     let left = budget - used;
     const known = (wordId: number) => env.known(wordId) || chosenWords.includes(wordId);
     let queueUsed = 0;
@@ -830,14 +848,14 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
     };
     const grammarPack = (): Entry[] | null => {
       if (unitRoom > 0) {
-        const unit = nextUnit(content, chosenUnits, settings);
+        const unit = nextUnit(content, chosenUnits, settings, grammarBelow);
         if (unit) {
           const entry = newUnitEntry(ctx, unit);
           if (entry) return [entry];
         }
       }
       if (conjRoom <= 0) return null;
-      const tables = conjCandidates(content, chosenUnits, chosenConj, known).slice(0, Math.min(SHAPE.packConj, conjRoom));
+      const tables = conjCandidates(content, chosenUnits, chosenConj, known, grammarBelow).slice(0, Math.min(SHAPE.packConj, conjRoom));
       const out: Entry[] = [];
       let total = 0;
       for (const table of tables) {
@@ -969,6 +987,7 @@ function entryExercises(entry: Entry): Ex[] {
   if (entry.t === "text" || entry.t === "phonics" || entry.t === "prod") return [];
   if (entry.t === "single" || entry.t === "newword" || entry.t === "newconj" || entry.t === "drill") return [entry.ex];
   if (entry.t === "newunit") return [...entry.g0, ...entry.questions];
+  if (entry.t === "sample") return entry.questions;
   return entry.questions;
 }
 
@@ -986,6 +1005,24 @@ function lazyList<T>(source: Iterator<T>): (index: number) => T | undefined {
     }
     return seen[index];
   };
+}
+
+/** Today's round of the grammar sample (PRD §11.4): G5b of each due target, no typo allowance. */
+function sampleEntry(ctx: Ctx): Entry | null {
+  const sample = ctx.learner.sample?.grammar;
+  const due = grammarSampleDue(sample, ctx.today);
+  const questions: Ex[] = [];
+  const targetIds: number[] = [];
+  for (const id of due) {
+    const target = ctx.content.targets.get(id);
+    const unit = target ? ctx.content.units.find((item) => item.id === target.targetId) : undefined;
+    const ex = target && unit ? buildGrammarEx(ctx.env, unit, "G5b", { target }) : null;
+    if (!ex) continue;
+    questions.push({ ...ex, q: ex.q.sentence ? { ...ex.q, sentence: { ...ex.q.sentence, glosses: [] } } : ex.q });
+    targetIds.push(id);
+  }
+  if (questions.length === 0) return null;
+  return { t: "sample", key: "g:sample", questions, targetIds, cost: exCost(ctx.settings, questions) };
 }
 
 /** Stands for an item chosen in this session, so the unlock rules see it as opened. */
@@ -1033,6 +1070,8 @@ function assemble(
       queue.push({ id: id(), t: "ex", item: entry.key, kind: entry.kind, ex: entry.ex, alt: entry.alt ?? null, ...(entry.note ? { note: entry.note } : {}) });
     } else if (entry.t === "drill") {
       queue.push({ id: id(), t: "drill", item: entry.key, ex: entry.ex });
+    } else if (entry.t === "sample") {
+      entry.questions.forEach((ex, i) => queue.push({ id: id(), t: "ex", item: sampleKey(entry.targetIds[i]), ex, alt: null, block }));
     } else if (entry.t === "prod") {
       queue.push({ id: id(), t: entry.prod.kind, item: entry.key, prod: entry.prod });
     } else if (entry.t === "text") {
@@ -1144,7 +1183,7 @@ function assemble(
       if (table) tables[table.id] = tableView(content, table);
     }
   }
-  const reviews = entries.filter((entry) => entry.t === "single" || entry.t === "round" || entry.t === "drill" || (entry.t === "text" && entry.pick.attempt > 1)).length;
+  const reviews = entries.filter((entry) => entry.t === "single" || entry.t === "round" || entry.t === "sample" || entry.t === "drill" || (entry.t === "text" && entry.pick.attempt > 1)).length;
   const newTexts = entries.filter((entry) => entry.t === "text" && entry.pick.attempt === 1 && !entry.pick.resume).length;
   const resumeText = entries.some((entry) => entry.t === "text" && !!entry.pick.resume);
   return {

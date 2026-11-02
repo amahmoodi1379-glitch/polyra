@@ -6,6 +6,8 @@
  * is: 1 to choose, 0.85 to type, 0.7 for the first typed review of an item. In typed exercises 5% of
  * the right answers turn into a typo and 10% into a near answer. Each answer takes the exercise's time
  * from PRD §10.1, 30% either way. A text question has no memory curve: g + (1 − g) × a × d.
+ * A learner who came out of placement knew the placement sample's words and sentences before (PRD §11.4):
+ * those have no memory curve either, g + (1 − g) × `prior` × d, with no first-typing penalty.
  */
 import type { Content, QuestionC } from "@/engine/content";
 import type { AnswerSpec, Ex } from "@/engine/ex";
@@ -46,7 +48,7 @@ export type Human = {
   factor: (key: string) => number;
 };
 
-export function human(opts: { content: Content; settings: Settings; seed: string; ability: (card: Card) => number }): Human {
+export function human(opts: { content: Content; settings: Settings; seed: string; ability: (card: Card) => number; prior?: number }): Human {
   const { content, settings } = opts;
   const factors = new Map<string, number>();
   const factor = (key: string) => {
@@ -93,6 +95,11 @@ export function human(opts: { content: Content; settings: Settings; seed: string
     const key = owner(card.item);
     const state = plan.states[key];
     const g = guess(ex.a);
+    if (opts.prior !== undefined && (card.item.startsWith("g:") || plan.states[card.item]?.probation === "sample")) {
+      const p = g + (1 - g) * opts.prior * (ex.typed ? 0.85 : 1);
+      if (rng() >= p) return { answer: slipAnswer(ex, rng), latencyMs };
+      return { answer: rightAnswer(ex), latencyMs };
+    }
     const firstTyped = ex.recall && card.kind === "review" && !!state && !state.typedOnce;
     const d = !ex.typed ? 1 : firstTyped ? 0.7 : 0.85;
     const p = g + (1 - g) * recall(state, key, at) * opts.ability(card) * d;

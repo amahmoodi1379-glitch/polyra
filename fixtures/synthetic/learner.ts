@@ -8,6 +8,7 @@ import { applyNotebook } from "../../src/engine/notebook";
 import { closeRounds, type PlayResult } from "../../src/engine/session/play";
 import type { SessionPlan } from "../../src/engine/session/types";
 import { afterDrill } from "../../src/engine/drill";
+import { applySampleAnswer } from "../../src/engine/placement";
 import { phonicsSkipsAfter } from "../../src/engine/phonics";
 import { textLevelsAfter } from "../../src/engine/texts";
 import { isItemKey, itemKey, type DailyE, type ItemHistory, type LearnerSnapshot, type SkillName } from "../../src/engine/state";
@@ -140,6 +141,13 @@ export function record(learner: LearnerSnapshot, result: Extract<PlayResult, { d
     const sentenceId = result.drill;
     const before = next.drills.find((drill) => drill.sentenceId === sentenceId) ?? null;
     next.drills = [...next.drills.filter((drill) => drill.sentenceId !== sentenceId), afterDrill(sentenceId, before, now)];
+  }
+  // The placement sample (PRD §11.4): its count, and a failure's levels and cards.
+  if (result.sample && next.sample) {
+    const done = applySampleAnswer(next.sample, result.sample, next.skills, next.items, settings);
+    next.sample = done.sample;
+    if (done.skills) next.skills = done.skills;
+    if (done.remove.length) next.items = next.items.filter((item) => !done.remove.includes(itemKey(item.itemType, item.itemId)));
   }
   const ex = result.ex;
   // Like the server's queries: every answer counts its sentence as seen; history and answer times are the items' own.

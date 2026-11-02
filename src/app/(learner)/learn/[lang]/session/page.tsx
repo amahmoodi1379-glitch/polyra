@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { Player } from "@/components/learn/session/player";
 import { SCOPES } from "@/engine/session";
 import { t } from "@/i18n";
 import { languageInfo } from "@/server/content/languages";
 import { languageParam, requireLearner } from "@/server/learn/guard";
+import { placementRunning } from "@/server/learn/placement";
 
 export const metadata: Metadata = { title: t("learn.session.title") };
 
@@ -15,6 +16,8 @@ export default async function SessionPage({ params, searchParams }: PageProps<"/
   if (!language) notFound();
   const { scope: asked } = await searchParams;
   const scope = SCOPES.find((item) => item === asked) ?? "mixed";
-  await requireLearner(`/learn/${language}/session${scope === "mixed" ? "" : `?scope=${scope}`}`);
+  const user = await requireLearner(`/learn/${language}/session${scope === "mixed" ? "" : `?scope=${scope}`}`);
+  // No session while a placement test waits: the home offers to go on with it or to start from here (PRD §11.1).
+  if (await placementRunning(user.id, language)) redirect(`/learn/${language}`);
   return <Player language={language} languageName={languageInfo[language].name_fa} scope={scope} />;
 }

@@ -39,7 +39,7 @@ export type PlayEnv = {
 };
 
 export type PlayLog = {
-  kind: "intro" | "review" | "followup" | "practice" | "drill" | "text_attempt" | "phonics" | "self" | "dialogue" | "errorfix";
+  kind: "intro" | "review" | "followup" | "practice" | "drill" | "placement" | "text_attempt" | "phonics" | "self" | "dialogue" | "errorfix";
   itemType: string | null;
   itemId: number | null;
   code: string | null;
@@ -112,8 +112,12 @@ export type PlayResult =
       phonicsLater: boolean;
       /** A speaking card (PRD §8b). */
       production?: ProductionOutcome | null;
+      /** An answer that counts in the placement sample (PRD §11.4): a sample card's first review, or a grammar sample sentence. */
+      sample?: SampleAnswer | null;
       advanced: Advanced;
     };
+
+export type SampleAnswer = { kind: "vocab"; wordId: number; ok: boolean } | { kind: "grammar"; targetId: number; ok: boolean };
 
 const RATING = { again: 1, hard: 2, good: 3, easy: 4 } as const;
 
@@ -328,6 +332,16 @@ export function playCard(plan: SessionPlan, cardId: string, answer: RawAnswer, t
     return { done: true, card, ex, graded, log, single: null, round, state: null, roundState, notebook, pair: null, drill: null, text: null, keyWords: [], phonics: null, phonicsLater: false, advanced };
   }
 
+  // A grammar sample sentence (PRD §11.4): no card, no step, no notebook; only the sample's count.
+  if (key.startsWith("g:")) {
+    const targetId = Number(key.slice(2));
+    const ok = graded.result === "correct" || graded.result === "near";
+    const advanced = advance(plan, { cardId, result: graded.result, elapsedSec: timing.elapsedSec }, ctx.settings);
+    const log: PlayLog = { ...base, kind: "placement", itemType: "grammar_target", itemId: targetId, result: graded.result, reason: graded.reason, raw: graded.raw };
+    const sample: SampleAnswer = { kind: "grammar", targetId, ok };
+    return { done: true, card, ex, graded, log, single: null, round: null, state: null, roundState: null, notebook: [], pair: null, drill: null, text: null, keyWords: [], phonics: null, phonicsLater: false, sample, advanced };
+  }
+
   // A notebook sentence of a unit: one practice question (PRD §9.5).
   if (key.startsWith("t:")) {
     const failed = graded.result === "wrong" || graded.result === "idk";
@@ -389,8 +403,11 @@ export function playCard(plan: SessionPlan, cardId: string, answer: RawAnswer, t
     firstTyping: single.firstTyping,
     rating: single.rating ? RATING[single.rating] : null,
   };
+  // A sample card's first real review counts in the sample (PRD §11.4).
+  const sample: SampleAnswer | null =
+    type === "word" && kind === "review" && before.probation === "sample" ? { kind: "vocab", wordId: id, ok: single.result === "correct" || single.result === "near" } : null;
   // A practice moves neither FSRS nor the step: there is nothing to write.
-  return { done: true, card, ex, graded, log, single, round: null, state: kind === "practice" ? null : single.state, roundState: null, notebook: single.notebook, pair, drill: null, text: null, keyWords: [], phonics: null, phonicsLater: false, advanced };
+  return { done: true, card, ex, graded, log, single, round: null, state: kind === "practice" ? null : single.state, roundState: null, notebook: single.notebook, pair, drill: null, text: null, keyWords: [], phonics: null, phonicsLater: false, sample, advanced };
 }
 
 /**

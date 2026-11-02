@@ -29,7 +29,9 @@ export type Entry =
   /** A phonics round (PRD §8.3), a block kept apart from the plan and placed by `phonics.position` (§10.7 rule 3). */
   | (Base & { t: "phonics"; pick: PhonicsRound; questions: Ex[]; view: PhonicsView; auto: boolean })
   /** Speaking (PRD §8b, §10.7): «بگو، بعد بشنو» is placed like a single exercise, never among the first three; a dialogue and a find-the-mistake text like blocks. */
-  | (Base & { t: "prod"; prod: ProdCard });
+  | (Base & { t: "prod"; prod: ProdCard })
+  /** A round of the grammar sample after placement (PRD §11.4): typed sentences with no card, one block. */
+  | (Base & { t: "sample"; questions: Ex[]; targetIds: number[] });
 
 /** «بگو، بعد بشنو» comes after the session's first three items (PRD §10.7). */
 const SPEAK_AFTER = 3;
@@ -74,7 +76,7 @@ export function orderEntries(entries: Entry[], rng: Rng, phonics: { entry: Entry
   const singles = entries.filter((entry) => entry.t === "single" || entry.t === "drill" || isSpeak(entry));
   const newWords = entries.filter((entry) => entry.t === "newword");
   const blocks = entries.filter(
-    (entry) => entry.t === "round" || entry.t === "newunit" || entry.t === "newconj" || (entry.t === "text" && !entry.lead) || (entry.t === "prod" && !isSpeak(entry)),
+    (entry) => entry.t === "round" || entry.t === "newunit" || entry.t === "sample" || entry.t === "newconj" || (entry.t === "text" && !entry.lead) || (entry.t === "prod" && !isSpeak(entry)),
   );
 
   const byStep = (list: Entry[]) => [...list].sort((a, b) => stepOf(a) - stepOf(b));

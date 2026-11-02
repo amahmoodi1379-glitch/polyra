@@ -1,4 +1,5 @@
 import type { FsrsCard } from "./fsrs";
+import type { SampleState } from "./placement";
 
 /**
  * The learner's state as the engine sees it (PRD §4.2). The server loads it from the database and
@@ -166,11 +167,16 @@ export type LearnerSnapshot = {
   recentIntroWordIds: number[];
   /** Items introduced or reviewed today, for «تمرین بیشتر» (PRD §10.8). */
   touchedToday: string[];
+  /** The typed sample after placement (PRD §11.4), while a placement run has one. */
+  sample?: SampleState | null;
 };
 
 export const itemKey = (type: ItemType, id: number) => `${type === "word" ? "w" : type === "grammar_unit" ? "u" : "c"}:${id}`;
 
 const KEY_TYPES: Record<string, ItemType> = { w: "word", u: "grammar_unit", c: "conjugation" };
+
+/** The plan key of a grammar sample sentence (PRD §11.4): a target asked with no card. */
+export const sampleKey = (targetId: number) => `g:${targetId}`;
 
 /** A plan key of an item with a card (`w:`, `u:`, `c:`); other keys are a grammar target (`t:`) or a drilled sentence (`l:`). */
 export const isItemKey = (key: string) => key.split(":")[0] in KEY_TYPES;

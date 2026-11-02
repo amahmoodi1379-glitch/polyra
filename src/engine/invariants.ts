@@ -55,7 +55,8 @@ function prodShown(content: Content, card: Card): boolean {
 }
 
 function cardRef(content: Content, card: Card): Pick<ItemStateE, "itemType" | "itemId"> | null {
-  if (card.item.startsWith("t:")) {
+  // A grammar target: a conjugation-table question (`t:`) or the placement sample's sentence (`g:`, PRD §11.4).
+  if (card.item.startsWith("t:") || card.item.startsWith("g:")) {
     const target = content.targets.get(Number(card.item.slice(2)));
     return target ? { itemType: "grammar_unit", itemId: target.targetId } : null;
   }

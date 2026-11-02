@@ -8,7 +8,9 @@ import { enrollments, learnerLanguages, SESSION_LENGTHS } from "@/server/learn/e
 import { languageParam, requireLearner } from "@/server/learn/guard";
 import { homeData } from "@/server/learn/home";
 import { engineSettings } from "@/server/settings/read";
+import { placementRunning } from "@/server/learn/placement";
 import { Home } from "./home";
+import { PlacementPaused } from "./placement/paused";
 
 export const metadata: Metadata = { title: t("learn.home.startLabel") };
 
@@ -18,6 +20,8 @@ export default async function LanguageHomePage({ params }: PageProps<"/learn/[la
   const language = languageParam(lang);
   if (!language) notFound();
   const user = await requireLearner(`/learn/${language}`);
+  // A test left half-way (PRD §11.1): «ادامه تعیین سطح» and «از همین‌جا شروع کن» instead of «شروع».
+  if (await placementRunning(user.id, language)) return <PlacementPaused language={language} languageName={languageInfo[language].name_fa} />;
   const [data, allowed, enrolled, account, settings] = await Promise.all([
     homeData(user, language),
     learnerLanguages(user),
