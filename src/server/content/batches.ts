@@ -1,5 +1,6 @@
 import type { ImportBatch, Prisma, PromptKind } from "@/generated/prisma/client";
 import { qaAnswer, qaFinding } from "@/schemas/qa";
+import { cleanText } from "@/lib/clean-text";
 import { db } from "@/server/db";
 import { appSetting } from "@/server/settings/read";
 import { conjugation } from "./kinds/conjugation";
@@ -165,12 +166,27 @@ export function joinParts(parts: string[], rootKey: string | readonly string[]):
   return result;
 }
 
+/** The opening words of every prompt the panel gives (up to its first blank), to notice a prompt pasted back by mistake. */
+function promptOpenings(version: string) {
+  return ["common.md", "P-QA.md", "fix.md"]
+    .map((name) => readTemplate(name, version).split("\n")[0].split("⟦")[0].trim())
+    .filter((opening) => opening.length >= 15);
+}
+
+/** The admin pasted the panel's own prompt instead of the chatbot's answer (it holds an example answer). */
+export function pastedPrompt(parts: string[], version = PROMPT_VERSION) {
+  const text = cleanText(parts.join("\n"));
+  return promptOpenings(version).some((opening) => text.includes(opening));
+}
+
 export type SubmitResult =
   | { state: "imported"; rejected: number }
   | { state: "cut" }
   | { state: "empty" }
   | { state: "broken" }
   | { state: "wrong_answer" }
+  /** The prompt itself was pasted, not the chatbot's answer. */
+  | { state: "prompt" }
   /** The batch moved on (or was thrown away) in another tab since the page was opened. */
   | { state: "stale" };
 
@@ -185,6 +201,7 @@ export async function submitAnswer(batchId: number, parts: string[], mode: "answ
   const found = kindOf(batch.prompt_kind);
   if (!found) throw new Error(`No importer for ${batch.prompt_kind}`);
   const { kind } = found;
+  if (pastedPrompt(parts, batch.prompt_version)) return { state: "prompt" };
 
   const pasted = joinParts(parts, answerKeys(kind));
   if (pasted.state === "cut" && mode === "answer") {
@@ -308,6 +325,7 @@ export async function submitQa(batchId: number, parts: string[], adminId: number
   const report = batch && batchReport(batch);
   const found = batch && kindOf(batch.prompt_kind);
   if (!report || !found) return { state: "stale" };
+  if (pastedPrompt(parts, batch.prompt_version)) return { state: "prompt" };
 
   const pasted = joinParts(parts, "findings");
   if (pasted.state !== "ok") return { state: pasted.state };

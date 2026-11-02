@@ -137,6 +137,15 @@ describe("word list (P-C, PRD §14.5 and §13.9)", () => {
 describe("an answer for another batch, or a batch that moved on", () => {
   const voiture = { lemma: "voiture", keep: true, pos: "noun", level: "A1", no_card: false, reason: null };
 
+  it("tells the admin when the prompt itself was pasted back, though it holds an example answer", async () => {
+    await frequency("fr", ["voiture", "maison"]);
+    const batch = await batchFor("word-list");
+    expect(await submitAnswer(batch.id, [batch.prompt_text], "answer")).toEqual({ state: "prompt" });
+    expect(await testDb.word.count()).toBe(0);
+    await submitAnswer(batch.id, [json({ items: [voiture], issues: [] })], "answer");
+    expect(await submitQa(batch.id, [batch.prompt_text])).toEqual({ state: "prompt" });
+  });
+
   it("refuses rows of another part of the frequency list, and a whole answer pasted a second time", async () => {
     await frequency("fr", ["voiture", "maison"]);
     const batch = await batchFor("word-list");

@@ -23,6 +23,7 @@ const failure: Record<Exclude<SubmitResult["state"], "imported" | "cut">, Messag
   empty: "admin.batch.paste.empty",
   broken: "admin.batch.paste.broken",
   wrong_answer: "admin.batch.paste.wrongAnswer",
+  prompt: "admin.batch.paste.prompt",
   stale: "admin.batch.paste.stale",
 };
 
