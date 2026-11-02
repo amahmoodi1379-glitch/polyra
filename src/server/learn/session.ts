@@ -13,6 +13,7 @@ import { logError } from "@/server/errors";
 import { engineSettings } from "@/server/settings/read";
 import { canPractice, startTrialIfFirst } from "./access";
 import { learnerContent, type Audience } from "./content";
+import { updateLevels } from "./levels";
 import { asDate, loadLearner } from "./learner";
 import { addDaily, applyNotebookOps, saveItemState } from "./writes";
 
@@ -252,7 +253,7 @@ export async function previewSession(user: Learner, language: string, now = new 
 
 /**
  * Closes a session (PRD §10.8). A round with three answers or more is scored as it stands (PRD §6.5,
- * rule 8), and any round's answers count in the notebook; the rest of the queue has no effect. The first close of a language starts its free period.
+ * rule 8), and any round's answers count in the notebook; the rest of the queue has no effect. Skill levels move either way. The first close of a language starts its free period.
  */
 export async function closeSession(row: Session, reason: "finished" | "expired" | "replaced", endedAt: Date, ctx: LearnContext, tx?: Prisma.TransactionClient) {
   const run = async (client: Prisma.TransactionClient) => {
@@ -268,6 +269,8 @@ export async function closeSession(row: Session, reason: "finished" | "expired" 
         await applyNotebookOps(client, who, outcome.notebook, endedAt, tehranDate(endedAt), ctx.settings);
       }
     }
+    // Levels move with every close, finished or left (PRD §9.6, DECISIONS.md).
+    await updateLevels(client, who, ctx, endedAt);
     await client.session.update({ where: { id: row.id }, data: { ended_at: endedAt, end_reason: reason } });
     await startTrialIfFirst(client, row.user_id, row.language, endedAt, num(ctx.settings, "trial.hours"));
   };

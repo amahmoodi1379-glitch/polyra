@@ -1,15 +1,12 @@
 import { hasCard, levelIndex } from "@/engine/content";
-import { indexItems, levelsAfter } from "@/engine/levels";
 import { activeCards, isDue } from "@/engine/session/build";
 import { num } from "@/engine/settings";
-import type { SkillName } from "@/engine/state";
-import { textLevelsAfter } from "@/engine/texts";
 import { leftInARow, mayOfferShorter, pickSessionMessage, shorterLength, type ClosedSession } from "@/engine/messages";
 import { finishDay } from "@/engine/streak";
 import { addDays, tehranDate, tehranDayStart } from "@/engine/time";
 import type { Enrollment, Prisma, Session } from "@/generated/prisma/client";
 import { SESSION_LENGTHS } from "./enroll";
-import { asDate, dailyOf, dateOnly, enrollmentOf, itemStateOf, loadTextStates, skillsOf, textStateOf } from "./learner";
+import { asDate, dailyOf, dateOnly, enrollmentOf, itemStateOf, skillsOf } from "./learner";
 import { closeSession, startInfo, type EndMessage, type EndSummary, type LearnContext, type StoredPlan } from "./session";
 
 /**
@@ -48,7 +45,7 @@ export async function finishSession(tx: Tx, row: Session, plan: StoredPlan, ctx:
     streak = { counted: true, count: done.state.streakCount, freezeEarned: done.event.freezeEarned > 0, freezes: done.state.freezeCount };
   }
 
-  // Skill levels (PRD §9.6, §6.2).
+  // Skill levels moved when the session closed (PRD §9.6, §6.2); read them back for the station.
   const [itemRows, skillRows, daily, logs] = await Promise.all([
     tx.itemState.findMany({ where }),
     tx.skillLevel.findMany({ where }),
@@ -60,24 +57,8 @@ export async function finishSession(tx: Tx, row: Session, plan: StoredPlan, ctx:
     }),
   ]);
   const items = itemRows.map(itemStateOf);
-  const index = indexItems(items);
   const skills = skillsOf(skillRows, content.levels[0]);
   const vocab = skills.find((skill) => skill.skill === "vocab")!;
-  const textStates = (await loadTextStates(tx, row.user_id, row.language)).map(textStateOf);
-  const levelOf = (skill: SkillName) => skills.find((item) => item.skill === skill)?.level ?? null;
-  const words = levelsAfter(content, index, skills, settings);
-  const moved = { ...words, ...textLevelsAfter(content, textStates, levelOf, settings, at, words.vocab ?? vocab.level) };
-  for (const skill of ["vocab", "grammar", "listening", "reading"] as const) {
-    const level = moved[skill];
-    const row = skills.find((item) => item.skill === skill)!;
-    if (!level) continue;
-    row.level = level;
-    await tx.skillLevel.upsert({
-      where: { user_id_language_skill: { ...where, skill } },
-      create: { ...where, skill, level, known_below: row.knownBelow },
-      update: { level },
-    });
-  }
 
   // A station passed in this session (PRD §3.9): vocabulary first.
   let station: EndSummary["station"] = null;

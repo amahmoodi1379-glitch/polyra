@@ -333,7 +333,8 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
 
   const caps = sessionCaps(settings, opts.lengthMin, pace.mode);
   const hard = caps.wordsHard;
-  let wordsCapToday = learner.today.wordsCapToday ?? caps.wordsSoft;
+  // A cap raised earlier today stays under the hard cap, even one the teacher lowered since (PRD §10.5).
+  let wordsCapToday = Math.min(hard, learner.today.wordsCapToday ?? caps.wordsSoft);
   let capPromptShown = learner.today.capPromptShown;
   let wordsBlocked = false;
   const wantsNew = scope === "mixed" || scope === "vocab";
