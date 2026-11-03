@@ -1,4 +1,5 @@
 import { hasCard, levelIndex } from "@/engine/content";
+import { unlockedModules } from "@/server/billing/subscriptions";
 import { db } from "@/server/db";
 import { learnerContent, type Audience } from "./content";
 import type { Learner } from "./session";
@@ -11,7 +12,7 @@ import type { Learner } from "./session";
  */
 export async function queueTappedWord(user: Learner, language: string, wordId: number, now = new Date()): Promise<boolean> {
   const audience: Audience = user.is_admin || user.is_tester ? "tester" : "public";
-  const content = await learnerContent(language, audience);
+  const content = await learnerContent(language, audience, audience === "public" ? await unlockedModules(db, user.id, language, now) : []);
   const word = content.words.get(wordId);
   if (!word || !hasCard(word) || !content.openLevels.includes(word.level)) return false;
   const [card, queued, enrolled, vocab] = await Promise.all([

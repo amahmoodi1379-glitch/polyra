@@ -5,7 +5,7 @@ import type { LanguageCode } from "@/server/content/languages";
 import { db } from "@/server/db";
 import { appSetting } from "@/server/settings/read";
 import { canPractice } from "./access";
-import type { Audience } from "./content";
+import { moduleFilter, type Audience } from "./content";
 import { countStreakDay } from "./finish";
 import { asDate, skillsOf } from "./learner";
 import { learnContext, type Learner } from "./session";
@@ -20,10 +20,12 @@ import { addDaily } from "./writes";
 const statusesOf = (audience: Audience): ContentStatus[] => (audience === "public" ? ["published"] : ["approved", "published"]);
 
 /** The tasks a learner may get: visible, not suspended, of released levels (every level for a tester). */
-export async function writingTasks(language: string, audience: Audience): Promise<WritingTaskC[]> {
+export async function writingTasks(language: string, audience: Audience, modules: readonly string[] = []): Promise<WritingTaskC[]> {
   const levels = await appSetting<string[]>(`levels.${language}`);
   const released = audience !== "public" ? levels : (await db.levelRelease.findMany({ where: { language }, select: { level: true } })).map((row) => row.level);
-  const rows = await db.writingTask.findMany({ where: { language, status: { in: statusesOf(audience) }, suspended: false, level: { in: levels.filter((level) => released.includes(level)) } } });
+  const rows = await db.writingTask.findMany({
+    where: { language, status: { in: statusesOf(audience) }, suspended: false, level: { in: levels.filter((level) => released.includes(level)) }, ...(await moduleFilter(language, audience, modules)) },
+  });
   return rows.map(writingTaskOf);
 }
 
@@ -62,7 +64,7 @@ export async function writingCard(user: Learner, language: LanguageCode, now = n
   const ctx = await learnContext(user, language, now);
   const [skills, tasks, written] = await Promise.all([
     db.skillLevel.findMany({ where: { user_id: user.id, language } }),
-    writingTasks(language, ctx.audience),
+    writingTasks(language, ctx.audience, ctx.modules),
     writtenIn(user.id, language),
   ]);
   const vocab = skillsOf(skills, ctx.content.levels[0]).find((skill) => skill.skill === "vocab")!;
@@ -97,7 +99,7 @@ export async function writingPage(user: Learner, language: LanguageCode, taskId:
   const card = await writingCard(user, language, now);
   if (taskId !== null && (user.is_admin || user.is_tester)) {
     const ctx = await learnContext(user, language, now);
-    const task = (await writingTasks(language, ctx.audience)).find((item) => item.id === taskId);
+    const task = (await writingTasks(language, ctx.audience, ctx.modules)).find((item) => item.id === taskId);
     if (!task) return null;
     return { task, minToFinish: writingMinToFinish(task), trying: !(card.state === "open" && card.task.id === task.id), locked };
   }

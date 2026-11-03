@@ -135,6 +135,13 @@ Deploy: Runflare builds `main` (`docs/deploy-runflare.md`). Work on the session 
   offer, items, early end, result; state in `level_exam.state`), `src/server/learn/exam.ts` and pages `learn/[lang]/exam/[skill]`,
   `src/engine/leveldown.ts` (the lower-level offer; «بله» in `src/server/learn/leveldown.ts`), `src/engine/path.ts` (end of the
   path, shown once by `finish.ts`). End messages are picked in `finish.ts` by `src/engine/messages.ts`.
+- Sales (PRD §12): `src/server/billing` — `gateway.ts` (`PAYMENT_GATEWAY`: the test bank `mock`, `zarinpal`), `subscriptions.ts`
+  (`extendAccess` with the validity rule, `shortenAccess`, `unlockedModules`), `discounts.ts` (`checkCode`), `orders.ts` (`quote`,
+  `startOrder`, `returnFromGateway`, `followUpOrder`, `sweepOrders`), `admin.ts` (plans, codes, orders, grants; log entity `sales`),
+  `learner.ts`. Free period and lock: `src/server/learn/access.ts`, `home.ts` (`lockSummary`). Pages: learner `learn/[lang]/plans`
+  (lock page, `plan-picker.tsx`) and `subscription` («اشتراک من»), `/pay/return` (verify), `/pay/mock` (test bank), cron
+  `/api/cron/orders` (`CRON_SECRET`); panel `/admin/sales`, `/admin/orders`, and the «اشتراک و خریدها» section of `/admin/users/[id]`
+  (`subscription-tools.tsx`). Separate modules filter content in `learnerContent` (`moduleFilter`).
 - Learner sessions (PRD §10, §15.4): `src/engine/session` builds and plays a plan (`build.ts`, `play.ts`, `advance.ts`);
   the browser and the server run the same functions. `src/server/learn`: `content.ts` (what a learner or tester may
   see, cached 30s), `learner.ts` (the snapshot the engine needs), `session.ts` (start, resume, close, preview),

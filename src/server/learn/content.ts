@@ -35,11 +35,15 @@ export type Audience = "public" | "tester" | "review";
 const CACHE_MS = 30_000;
 const cache = new Map<string, { at: number; content: Promise<Content> }>();
 
-export function learnerContent(language: string, audience: Audience): Promise<Content> {
-  const key = `${language}:${audience}`;
+/**
+ * `modules`: the separate modules (PRD §12.2) the learner's plan opens. Content of a separate module
+ * is left out for everyone else (T104); a tester sees it all.
+ */
+export function learnerContent(language: string, audience: Audience, modules: readonly string[] = []): Promise<Content> {
+  const key = `${language}:${audience}:${[...modules].sort().join(",")}`;
   const hit = cache.get(key);
   if (hit && Date.now() - hit.at < CACHE_MS) return hit.content;
-  const content = loadContent(language, audience);
+  const content = loadContent(language, audience, modules);
   cache.set(key, { at: Date.now(), content });
   content.catch(() => cache.delete(key));
   return content;
@@ -52,9 +56,17 @@ export function forgetContent() {
 
 const MEANING_SPLIT = /[،,]/;
 
-export async function loadContent(language: string, audience: Audience): Promise<Content> {
+/** The where-part that leaves out separate modules a learner's plan does not open (none for a tester). */
+export async function moduleFilter(language: string, audience: Audience, modules: readonly string[]) {
+  if (audience !== "public") return {};
+  const hidden = (await db.module.findMany({ where: { language, separate: true }, select: { code: true } })).map((row) => row.code).filter((code) => !modules.includes(code));
+  return hidden.length > 0 ? { OR: [{ module_code: null }, { module_code: { notIn: hidden } }] } : {};
+}
+
+export async function loadContent(language: string, audience: Audience, modules: readonly string[] = []): Promise<Content> {
   const statuses: ContentStatus[] = audience === "review" ? ["draft", "needs_review", "approved", "published"] : audience === "tester" ? ["approved", "published"] : ["published"];
-  const visible = { language, status: { in: statuses }, suspended: false };
+  const ofModules = await moduleFilter(language, audience, modules);
+  const visible = { language, status: { in: statuses }, suspended: false, ...ofModules };
   const levels = await appSetting<string[]>(`levels.${language}`);
   const released = audience !== "public" ? levels : (await db.levelRelease.findMany({ where: { language }, select: { level: true } })).map((row) => row.level);
 
@@ -66,8 +78,8 @@ export async function loadContent(language: string, audience: Audience): Promise
     db.transformItem.findMany({ where: visible }),
     db.translateItem.findMany({ where: visible }),
     db.conjugationTable.findMany({ where: visible }),
-    db.text.findMany({ where: { language }, include: { questions: { where: { status: { in: statuses }, suspended: false }, orderBy: { order_no: "asc" } } } }),
-    db.dialogue.findMany({ where: { language }, select: { id: true, code: true, level: true, title_fa: true, situation_fa: true, turns: true, status: true, suspended: true } }),
+    db.text.findMany({ where: { language, ...ofModules }, include: { questions: { where: { status: { in: statuses }, suspended: false }, orderBy: { order_no: "asc" } } } }),
+    db.dialogue.findMany({ where: { language, ...ofModules }, select: { id: true, code: true, level: true, title_fa: true, situation_fa: true, turns: true, status: true, suspended: true } }),
     db.phonicsLesson.findMany({ where: visible }),
   ]);
   const errorfixRows = await db.errorfixItem.findMany({ where: visible });

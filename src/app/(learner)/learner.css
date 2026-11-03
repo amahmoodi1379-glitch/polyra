@@ -3849,4 +3849,246 @@
     font-size: 14px;
     line-height: 1.7;
   }
+
+  /* ───────── lock page, plans and «اشتراک من» (PRD §3.8, §12.4) ───────── */
+  & a.plan {
+    text-decoration: none;
+    color: var(--brand-text);
+    font-weight: 700;
+    padding-inline: 12px;
+    border-radius: 12px;
+  }
+  & a.plan:is(:hover, :active) {
+    background: var(--tint);
+  }
+  & .lock-head {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 2vh;
+  }
+  & .lock-head .mark {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: var(--tint);
+    color: var(--brand-text);
+  }
+  & .lock-head h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.4;
+    text-wrap: balance;
+  }
+  & .lock-head p {
+    margin: 0;
+    color: var(--ink-2);
+    line-height: 1.8;
+    text-wrap: pretty;
+  }
+  & .plan-note {
+    margin: 0;
+    padding: 12px 14px;
+    border-radius: 16px;
+    background: var(--tint);
+    color: var(--ink);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.7;
+  }
+  & .plan-note.mock {
+    background: var(--ok-soft);
+    color: var(--ok);
+  }
+  & .plans {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  & .plan-card {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 4px 12px;
+    padding: 16px 18px;
+    border-radius: 20px;
+    background: var(--surface);
+    box-shadow: var(--shadow-1), inset 0 0 0 2px transparent;
+    text-align: start;
+    transition: box-shadow 0.2s var(--ease-std);
+  }
+  & .plan-card[aria-checked="true"] {
+    box-shadow: var(--shadow-1), inset 0 0 0 2px var(--brand);
+  }
+  & .plan-name {
+    font-weight: 800;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  & .plan-badge {
+    font-size: 12px;
+    font-weight: 800;
+    padding: 2px 8px;
+    border-radius: 8px;
+    background: var(--tint);
+    color: var(--brand-text);
+  }
+  & .plan-days {
+    grid-column: 1;
+    font-size: 13.5px;
+    color: var(--ink-3);
+  }
+  & .plan-price {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    align-self: center;
+    font-weight: 800;
+    font-size: 16px;
+  }
+  & .plan-code {
+    display: flex;
+    gap: 8px;
+    align-items: end;
+  }
+  & .plan-code .field {
+    flex: 1;
+  }
+  & .code-field {
+    width: 100%;
+    min-height: 54px;
+    padding: 8px 14px;
+    border: 0;
+    border-radius: 16px;
+    background: var(--tint);
+    color: var(--ink);
+    font: 600 18px/1.3 var(--font-lat);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    outline: none;
+  }
+  & .code-field:focus-visible {
+    box-shadow: inset 0 0 0 2px var(--brand-soft);
+  }
+  & .plan-total {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 6px 12px;
+    font-size: 15px;
+  }
+  & .plan-total b {
+    font-size: 22px;
+    font-weight: 800;
+  }
+  & .plan-total .was {
+    color: var(--ink-3);
+    text-decoration: line-through;
+  }
+  & .plan-total .off {
+    color: var(--ok);
+    font-weight: 700;
+  }
+  & .plan-total .bad,
+  & .plan-problem {
+    flex-basis: 100%;
+    margin: 0;
+    color: var(--bad);
+    font-weight: 700;
+    font-size: 14px;
+  }
+  & .plan-foot {
+    margin: 0;
+    font-size: 13px;
+    color: var(--ink-3);
+    line-height: 1.8;
+  }
+  & .sec-title {
+    margin: 8px 0 0;
+    font-size: 16px;
+    font-weight: 800;
+  }
+  & .pay-result {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 12px;
+    padding: 14px 16px;
+    border-radius: 18px;
+  }
+  & .pay-result p {
+    margin: 0;
+    flex: 1 1 200px;
+    font-weight: 700;
+    line-height: 1.7;
+  }
+  & .pay-result.ok {
+    background: var(--ok-soft);
+    color: var(--ok);
+  }
+  & .pay-result.bad {
+    background: var(--bad-soft);
+    color: var(--bad);
+  }
+  & .orders {
+    list-style: none;
+    margin: 0;
+    padding: 0 16px;
+    border-radius: 22px;
+    background: var(--surface);
+    box-shadow: var(--shadow-1);
+  }
+  & .order-row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-block: 14px;
+  }
+  & .order-row + .order-row {
+    border-top: 1px solid var(--line);
+  }
+  & .order-row p {
+    margin: 0;
+    font-size: 13.5px;
+    color: var(--ink-2);
+  }
+  & .order-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  & .order-status {
+    font-size: 12.5px;
+    font-weight: 800;
+    padding: 2px 8px;
+    border-radius: 8px;
+    background: var(--tint);
+    color: var(--ink-2);
+  }
+  & .order-status.paid {
+    background: var(--ok-soft);
+    color: var(--ok);
+  }
+  & .order-status:is(.failed, .expired) {
+    background: var(--bad-soft);
+    color: var(--bad);
+  }
+  & .follow-up {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 12px;
+    margin-top: 6px;
+  }
+  & .follow-up .secondary {
+    min-height: 44px;
+  }
+  & .follow-up p {
+    font-weight: 700;
+    color: var(--ink);
+  }
 }

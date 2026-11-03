@@ -3,9 +3,11 @@ import { formatNumber, t, type MessageKey } from "@/i18n";
 import fa from "@/i18n/fa.json";
 import { movedRows } from "@/lib/arrange";
 import { isolateLatin } from "@/lib/bidi";
+import { formatDateFa } from "@/lib/format";
 import { formatMobileFa } from "@/lib/phone";
 import { wordDiff, type DiffPart } from "@/lib/text-diff";
 import { ACCOUNT_ENTITY } from "@/server/accounts";
+import { SALES_ENTITY } from "@/server/billing/admin";
 import { db } from "@/server/db";
 import { settingLog } from "@/server/settings/history";
 import { appSetting } from "@/server/settings/read";
@@ -25,7 +27,7 @@ import { entityOf, isLibrarySlug, librarySlugs, type LibrarySlug } from "./slugs
  */
 
 export const LOG_PAGE_SIZE = 30;
-export const logKinds = [...librarySlugs, "order", "publish", "batches", "settings", "users"] as const;
+export const logKinds = [...librarySlugs, "order", "publish", "batches", "settings", "users", "sales"] as const;
 export type LogKind = (typeof logKinds)[number];
 export const isLogKind = (value: unknown): value is LogKind => logKinds.includes(value as LogKind);
 
@@ -56,10 +58,12 @@ const isPublishRow = (row: Pick<AdminLog, "entity">) => publishEntities.includes
 const isAccountRow = (row: Pick<AdminLog, "entity">) => row.entity === ACCOUNT_ENTITY;
 /** The rows about a batch on the four-step path: each answer pasted, its QA, refused records set aside, the batch thrown away. */
 const isBatchRow = (row: Pick<AdminLog, "entity">) => row.entity === BATCH_ENTITY;
+/** The rows «پلن‌ها و کدها» writes: a plan or a discount code added or changed (`plan:3`, `code:7`). */
+const isSalesRow = (row: Pick<AdminLog, "entity">) => row.entity === SALES_ENTITY;
 const isOrderRow = (row: Pick<AdminLog, "entity" | "entity_id">) =>
-  !isPublishRow(row) && !isSettingRow(row) && !isAccountRow(row) && !isBatchRow(row) && !/^\d+$/.test(row.entity_id ?? "");
+  !isPublishRow(row) && !isSettingRow(row) && !isAccountRow(row) && !isBatchRow(row) && !isSalesRow(row) && !/^\d+$/.test(row.entity_id ?? "");
 const isItemRow = (row: Pick<AdminLog, "entity" | "entity_id">) =>
-  !isPublishRow(row) && !isSettingRow(row) && !isAccountRow(row) && !isBatchRow(row) && !isOrderRow(row);
+  !isPublishRow(row) && !isSettingRow(row) && !isAccountRow(row) && !isBatchRow(row) && !isSalesRow(row) && !isOrderRow(row);
 
 /** The `entity_id` values order rows can have: a language, or language and level. */
 async function orderKeys() {
@@ -77,6 +81,7 @@ async function whereOf(kind: LogKind | null): Promise<Prisma.AdminLogWhereInput>
   if (kind === "settings") return { entity: { in: settingEntities } };
   if (kind === "users") return { entity: ACCOUNT_ENTITY };
   if (kind === "batches") return { entity: BATCH_ENTITY };
+  if (kind === "sales") return { entity: SALES_ENTITY };
   const keys = await orderKeys();
   if (kind === "order") return { entity: { in: Object.values(orderEntity) }, entity_id: { in: keys } };
   return { entity: entityOf[kind], NOT: { entity_id: { in: keys } } };
@@ -342,6 +347,7 @@ function publishTitle(row: AdminLog): string {
 
 /** An account row: each access flag, the panel language and the phone, before and after. */
 function accountLines(row: AdminLog): ChangeLine[] {
+  if (row.action === "grant" || row.action === "shorten") return subscriptionLines(row);
   const before = (row.before ?? {}) as Record<string, unknown>;
   const after = (row.after ?? {}) as Record<string, unknown>;
   const value = (key: string, raw: unknown): Shown => {
@@ -356,6 +362,56 @@ function accountLines(row: AdminLog): ChangeLine[] {
     .map((key) => {
       const label = t(`admin.users.fields.${key}`);
       // A new account has no «before»: just what it was made with.
+      if (!row.before) return { key, label, note: value(key, after[key])?.text ?? t("admin.log.empty") };
+      return { key, label, before: value(key, before[key]), after: value(key, after[key]) };
+    });
+}
+
+const dateShown = (raw: unknown): Shown => (typeof raw === "string" && !Number.isNaN(new Date(raw).getTime()) ? shown(formatDateFa(new Date(raw)), "fa") : null);
+const languageShown = (raw: unknown) => (raw === "fr" || raw === "de" ? t(`common.languages.${raw}`) : String(raw ?? ""));
+
+/** A grant, a shortened or a cancelled subscription: the language, how many days, the note and the new end. */
+function subscriptionLines(row: AdminLog): ChangeLine[] {
+  const before = (row.before ?? {}) as { ends_at?: string };
+  const after = (row.after ?? {}) as { language?: string; days?: number | null; plan?: string | null; note?: string; cancel?: boolean; ends_at?: string };
+  const what =
+    row.action === "grant"
+      ? after.plan
+        ? t("admin.log.sales.grantPlan", { plan: after.plan, days: formatNumber(after.days ?? 0) })
+        : t("admin.log.sales.grantDays", { days: formatNumber(after.days ?? 0) })
+      : after.cancel
+        ? t("admin.log.sales.cancelled")
+        : t("admin.log.sales.shortened", { days: formatNumber(after.days ?? 0) });
+  return [
+    { key: "what", label: languageShown(after.language), note: what },
+    { key: "ends_at", label: t("admin.log.sales.endsAt"), ...(row.before ? { before: dateShown(before.ends_at) } : {}), after: dateShown(after.ends_at) },
+    ...(after.note ? [{ key: "note", label: t("admin.log.sales.note"), note: after.note }] : []),
+  ];
+}
+
+const salesFields = ["name_fa", "duration_days", "price_toman", "badge_fa", "sort_order", "active", "code", "type", "value", "valid_from", "valid_to", "max_uses_total", "max_uses_per_user", "plan_ids", "language"] as const;
+
+/** A plan or a code, added (what it was made with) or edited (each field before and after). */
+function salesLines(row: AdminLog, planNames: Map<number, string>): ChangeLine[] {
+  const before = (row.before ?? {}) as Record<string, unknown>;
+  const after = (row.after ?? {}) as Record<string, unknown>;
+  const percent = (after.type ?? before.type) === "percent";
+  const value = (key: string, raw: unknown): Shown => {
+    if (raw === null || raw === undefined || raw === "") return null;
+    if (key === "valid_from" || key === "valid_to") return dateShown(raw);
+    if (key === "type") return shown(t(`admin.sales.codes.types.${raw === "percent" ? "percent" : "amount"}`), "fa");
+    if (key === "language") return shown(languageShown(raw), "fa");
+    if (key === "price_toman") return shown(t("admin.sales.toman", { n: formatNumber(Number(raw)) }), "fa");
+    if (key === "value") return shown(percent ? t("admin.sales.percent", { n: formatNumber(Number(raw)) }) : t("admin.sales.toman", { n: formatNumber(Number(raw)) }), "fa");
+    if (key === "plan_ids" && Array.isArray(raw)) return shown(raw.length === 0 ? t("admin.sales.codes.allPlans") : raw.map((id) => planNames.get(Number(id)) ?? `#${id}`).join("، "), "fa");
+    if (typeof raw === "boolean") return shown(t(raw ? "admin.log.yes" : "admin.log.no"), "fa");
+    if (typeof raw === "number") return shown(formatNumber(raw), "fa");
+    return shown(String(raw));
+  };
+  return salesFields
+    .filter((key) => key in after && !(key === "language" && row.before))
+    .map((key) => {
+      const label = t(`admin.sales.fields.${key}`);
       if (!row.before) return { key, label, note: value(key, after[key])?.text ?? t("admin.log.empty") };
       return { key, label, before: value(key, before[key]), after: value(key, after[key]) };
     });
@@ -384,6 +440,25 @@ function resolveLines(row: AdminLog): ChangeLine[] {
   return [{ key: "resolve", label: "", note: isolateLatin(t(`admin.log.resolve.${info.decision}` as MessageKey, vars)) }];
 }
 
+/** Names of the plans and codes on a page of the log, and of the plans a code is limited to. */
+async function salesNames(rows: AdminLog[]) {
+  const keys = rows.filter(isSalesRow).map((row) => (row.entity_id ?? "").split(":"));
+  const planIds = new Set(keys.filter(([kind]) => kind === "plan").map(([, id]) => Number(id)));
+  const codeIds = keys.filter(([kind]) => kind === "code").map(([, id]) => Number(id));
+  for (const row of rows.filter(isSalesRow))
+    for (const side of [row.before, row.after]) for (const id of ((side as { plan_ids?: number[] } | null)?.plan_ids ?? [])) planIds.add(Number(id));
+  if (planIds.size === 0 && codeIds.length === 0) return { plans: new Map<number, { name: string; language: string }>(), planNames: new Map<number, string>(), codes: new Map<number, string>() };
+  const [plans, codes] = await Promise.all([
+    db.plan.findMany({ where: { id: { in: [...planIds] } }, select: { id: true, name_fa: true, language: true } }),
+    db.discountCode.findMany({ where: { id: { in: codeIds } }, select: { id: true, code: true } }),
+  ]);
+  return {
+    plans: new Map(plans.map((plan) => [plan.id, { name: plan.name_fa, language: plan.language }])),
+    planNames: new Map(plans.map((plan) => [plan.id, `${plan.name_fa} (${languageShown(plan.language)})`])),
+    codes: new Map(codes.map((code) => [code.id, code.code])),
+  };
+}
+
 export async function listLog(kind: LogKind | null, page: number): Promise<LogPage> {
   const where = await whereOf(kind);
   const total = await db.adminLog.count({ where });
@@ -408,6 +483,7 @@ export async function listLog(kind: LogKind | null, page: number): Promise<LogPa
     }),
   ]);
   const phones = new Map(admins.map((admin) => [admin.id, admin.phone]));
+  const sales = await salesNames(rows);
 
   return {
     total,
@@ -445,6 +521,25 @@ export async function listLog(kind: LogKind | null, page: number): Promise<LogPa
           language: null,
           who: phone ? t("admin.log.by", { who: formatMobileFa(phone) }) : row.admin_id === null ? t("admin.log.byCommandLine") : t("admin.log.byUnknown"),
           lines: accountLines(row),
+          revert: "no",
+        };
+      }
+      if (isSalesRow(row)) {
+        const [kind, id] = (row.entity_id ?? "").split(":");
+        const phone = row.admin_id !== null ? phones.get(row.admin_id) : null;
+        const plan = kind === "plan" ? sales.plans.get(Number(id)) : undefined;
+        const code = kind === "code" ? sales.codes.get(Number(id)) : undefined;
+        return {
+          id: row.id,
+          ts: row.ts.toISOString(),
+          action: row.action,
+          actionLabel: t(`admin.log.actions.${row.action}` as MessageKey),
+          kindLabel: t(kind === "plan" ? "admin.log.entities.plan" : "admin.log.entities.discount_code"),
+          title: plan ? shown(plan.name, "fa") : code ? shown(code, "target") : shown(t("admin.log.unknownItem", { id: formatNumber(Number(id)) }), "fa"),
+          href: plan ? `/admin/sales?lang=${plan.language}` : code ? "/admin/sales#codes" : null,
+          language: plan?.language ?? null,
+          who: phone ? t("admin.log.by", { who: formatMobileFa(phone) }) : t("admin.log.byUnknown"),
+          lines: salesLines(row, sales.planNames),
           revert: "no",
         };
       }

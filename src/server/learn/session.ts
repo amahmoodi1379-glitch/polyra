@@ -11,6 +11,7 @@ import type { Prisma, Session } from "@/generated/prisma/client";
 import { db } from "@/server/db";
 import { logError } from "@/server/errors";
 import { engineSettings } from "@/server/settings/read";
+import { unlockedModules } from "@/server/billing/subscriptions";
 import { canPractice, startTrialIfFirst } from "./access";
 import { learnerContent, type Audience } from "./content";
 import { updateLevels } from "./levels";
@@ -89,12 +90,14 @@ export type StartResult =
   /** «این جلسه بدون صدا ممکن نیست» (PRD §10.12): listening and phonics need sound. */
   | { kind: "needs_audio" };
 
-export type LearnContext = { settings: Settings; content: Content; audience: Audience; now: Date; today: string };
+/** `modules`: the separate modules (PRD §12.2) the learner's plan opens, already applied to `content`. */
+export type LearnContext = { settings: Settings; content: Content; audience: Audience; modules: string[]; now: Date; today: string };
 
 export async function learnContext(user: Learner, language: string, now: Date): Promise<LearnContext> {
   const audience: Audience = user.is_admin || user.is_tester ? "tester" : "public";
-  const [settings, content] = await Promise.all([engineSettings(), learnerContent(language, audience)]);
-  return { settings, content, audience, now, today: tehranDate(now) };
+  const modules = audience === "public" ? await unlockedModules(db, user.id, language, now) : [];
+  const [settings, content] = await Promise.all([engineSettings(), learnerContent(language, audience, modules)]);
+  return { settings, content, audience, modules, now, today: tehranDate(now) };
 }
 
 export const lexiconOf = (content: Content): [string, number[]][] => [...content.lemmaIndex.entries()];

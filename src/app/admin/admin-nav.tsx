@@ -15,6 +15,8 @@ import {
   Inbox,
   Library,
   ListOrdered,
+  ReceiptText,
+  TicketPercent,
   LogOut,
   MessageSquareText,
   Activity,
@@ -55,6 +57,13 @@ function navGroups(showTestCodes: boolean): NavGroup[] {
       ],
     },
     { label: "admin.nav.people", items: [{ href: "/admin/users", label: "admin.nav.users", icon: Users }] },
+    {
+      label: "admin.nav.money",
+      items: [
+        { href: "/admin/sales", label: "admin.nav.sales", icon: TicketPercent },
+        { href: "/admin/orders", label: "admin.nav.orders", icon: ReceiptText },
+      ],
+    },
     {
       label: "admin.nav.settings",
       items: [

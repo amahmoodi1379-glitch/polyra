@@ -16,6 +16,8 @@ export const guidePages = {
   general: { href: "/admin/settings/general", label: "admin.nav.general" },
   log: { href: "/admin/log", label: "admin.nav.log" },
   users: { href: "/admin/users", label: "admin.nav.users" },
+  sales: { href: "/admin/sales", label: "admin.nav.sales" },
+  orders: { href: "/admin/orders", label: "admin.nav.orders" },
   errors: { href: "/admin/errors", label: "admin.nav.errors" },
   resolve: { href: "/admin/resolve", label: "admin.resolve.title" },
 } satisfies Record<string, { href: string; label: MessageKey }>;

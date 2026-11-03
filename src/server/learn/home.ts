@@ -11,7 +11,7 @@ import { num } from "@/engine/settings";
 import type { SkillName } from "@/engine/state";
 import type { Track } from "@/engine/content";
 import { dueTexts, indexTextStates, nextAttempt, stageDone, textLevelUp, textProgress, textWaiting, trackStarted, type TextEnv } from "@/engine/texts";
-import { catchUp, doneToday } from "@/engine/streak";
+import { catchUp, doneToday, streakAliveUntil } from "@/engine/streak";
 import { addDays } from "@/engine/time";
 import type { LanguageCode } from "@/server/content/languages";
 import { db } from "@/server/db";
@@ -20,7 +20,7 @@ import { asDate, dateOnly } from "./learner";
 import { openSession, previewSession, type Learner } from "./session";
 import { examTiles } from "./exam";
 import { myWritings, writingCard } from "./writing";
-import { formatDateFa } from "@/lib/format";
+import { formatDateFa, formatDayFa } from "@/lib/format";
 
 /**
  * What the home screen of a language shows (PRD §3.2): the overall level, the streak, the start
@@ -72,6 +72,11 @@ export type HomeData = {
   pathDone: boolean;
   /** «تمرین نوشتن این هفته» (PRD §8b.6): the card while this week's task waits. */
   writing: { min: number; max: number } | null;
+  /**
+   * The lock page's summary (PRD §3.8), while the language is locked: words and units learned, reviews
+   * waiting, and the last day the streak lives (today: «تا پایان امشب»). A zero hides its line.
+   */
+  lockSummary: { words: number; units: number; reviews: number; streak: { count: number; until: string; today: boolean } | null } | null;
 };
 
 /** The quiet button at the top (PRD §3.8). Payment comes in a later phase, so it only reports. */
@@ -216,6 +221,22 @@ export async function homeData(user: Learner, language: LanguageCode, now = new 
   }
   const languageRow = await db.language.findUnique({ where: { code: language }, select: { coming_soon_fa: true } });
 
+  const locked = !(await canPractice(db, user, enrollment, now));
+  let lockSummary: HomeData["lockSummary"] = null;
+  if (locked) {
+    const below = levelIndex(content, vocabSkill.knownBelow);
+    const met = new Set(learner.items.filter((item) => item.itemType === "word").map((item) => item.itemId));
+    let words = 0;
+    for (const word of content.words.values()) if (hasCard(word) && (met.has(word.id) || levelIndex(content, word.level) < below)) words++;
+    const until = streakAliveUntil(learner.enrollment, today, (date) => active.get(date) ?? 0, settings);
+    lockSummary = {
+      words,
+      units: learner.items.filter((item) => item.itemType === "grammar_unit").length,
+      reviews: dueOf("word") + dueOf("grammar_unit") + dueOf("conjugation"),
+      streak: until ? { count: streak.streakCount, until: formatDayFa(new Date(`${until}T12:00:00+03:30`)), today: until === today } : null,
+    };
+  }
+
   const open = await openSession(user.id, language);
   const [writing, writings] = await Promise.all([writingCard(user, language, now), myWritings(user, language)]);
   return {
@@ -226,7 +247,7 @@ export async function homeData(user: Learner, language: LanguageCode, now = new 
     quick: preview.quick,
     extra: preview.extra,
     plan: await planLine(user, enrollment, now),
-    locked: !(await canPractice(db, user, enrollment, now)),
+    locked,
     skills,
     links: {
       notebook: openEntries(learner.notebook, now).filter((note) => {
@@ -242,5 +263,6 @@ export async function homeData(user: Learner, language: LanguageCode, now = new 
     comingSoon: languageRow?.coming_soon_fa?.trim() || null,
     pathDone: !!enrollment.path_done_at,
     writing: writing.state === "open" ? { min: writing.task.minWords, max: writing.task.maxWords } : null,
+    lockSummary,
   };
 }

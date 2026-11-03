@@ -9,6 +9,7 @@ import { attemptLeft, indexTextStates, lastTouch, stageDone } from "@/engine/tex
 import type { LanguageCode } from "@/server/content/languages";
 import { db } from "@/server/db";
 import { engineSettings } from "@/server/settings/read";
+import { unlockedModules } from "@/server/billing/subscriptions";
 import { learnerContent } from "./content";
 import { loadPhonicsStates, loadTextStates, notebookOf, textStateOf } from "./learner";
 import type { Learner } from "./session";
@@ -21,7 +22,8 @@ import type { Learner } from "./session";
 const audienceOf = (user: Learner) => (user.is_admin || user.is_tester ? "tester" : "public");
 
 async function contentFor(user: Learner, language: LanguageCode) {
-  return learnerContent(language, audienceOf(user));
+  const audience = audienceOf(user);
+  return learnerContent(language, audience, audience === "public" ? await unlockedModules(db, user.id, language, new Date()) : []);
 }
 
 async function states(userId: number, language: string, type: "word" | "grammar_unit") {

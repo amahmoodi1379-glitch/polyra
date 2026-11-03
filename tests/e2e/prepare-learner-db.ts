@@ -6,7 +6,7 @@ import { startFromZero } from "@/server/learn/enroll";
 import { saveItemState } from "@/server/learn/writes";
 import { engineNumber } from "@/server/settings/read";
 import { seedSettings } from "../../scripts/seed/settings";
-import { E2E_EXAMINERS, E2E_IKNOW, E2E_PHONICS, E2E_PLACERS, E2E_READERS, E2E_TESTERS, E2E_TRY_ADMINS, E2E_WRITERS } from "./database";
+import { E2E_BUYERS, E2E_EXAMINERS, E2E_IKNOW, E2E_PHONICS, E2E_PLACERS, E2E_PLAN, E2E_READERS, E2E_SELLERS, E2E_TESTERS, E2E_TRY_ADMINS, E2E_WRITERS } from "./database";
 
 /**
  * Fresh learner database for the browser tests: settings, the French demo, one new tester per project,
@@ -14,6 +14,8 @@ import { E2E_EXAMINERS, E2E_IKNOW, E2E_PHONICS, E2E_PLACERS, E2E_READERS, E2E_TE
  * one per project at vocabulary B1, for the weekly writing, and one per project who has not started, for placement, and a teacher per project for «آزمایش مثل زبان‌آموز».
  * For the level tools: one per project from zero, for «این را بلدم», and one per project who knows every word,
  * for the reading skip exam; the demo's last text moves to A2 so that exam has somewhere to go.
+ * For sales: one learner per project whose free days ended four days into French, a teacher per project
+ * for the sales pages, and one plan on sale.
  */
 async function main() {
   const rows = await db.$queryRawUnsafe<{ tablename: string }[]>("SELECT tablename FROM pg_tables WHERE schemaname = 'public' AND tablename <> '_prisma_migrations'");
@@ -25,7 +27,7 @@ async function main() {
   for (const phone of [...Object.values(E2E_TESTERS), ...Object.values(E2E_PLACERS)]) {
     await db.user.create({ data: { phone: normalizeMobile(phone)!, session_length_min: sessionLength, is_tester: true } });
   }
-  for (const phone of Object.values(E2E_TRY_ADMINS)) {
+  for (const phone of [...Object.values(E2E_TRY_ADMINS), ...Object.values(E2E_SELLERS)]) {
     await db.user.create({ data: { phone: normalizeMobile(phone)!, session_length_min: sessionLength, is_admin: true, admin_language: "fr" } });
   }
   const demo = await loadDemo();
@@ -48,6 +50,14 @@ async function main() {
 
   const last = await db.text.findFirstOrThrow({ where: { language: "fr" }, orderBy: { id: "desc" }, select: { id: true } });
   await db.text.update({ where: { id: last.id }, data: { level: "A2" } });
+
+  const started = new Date(now.getTime() - 4 * 24 * 3_600_000);
+  for (const phone of Object.values(E2E_BUYERS)) {
+    const user = await db.user.create({ data: { phone: normalizeMobile(phone)!, session_length_min: sessionLength } });
+    await startFromZero(user, "fr", started);
+    await db.enrollment.updateMany({ where: { user_id: user.id, language: "fr" }, data: { trial_started_at: started, trial_ends_at: new Date(started.getTime() + 72 * 3_600_000) } });
+  }
+  await db.plan.create({ data: { language: "fr", name_fa: E2E_PLAN.name, duration_days: E2E_PLAN.days, price_toman: E2E_PLAN.price, badge_fa: E2E_PLAN.badge, module_codes: [] } });
 
   for (const phone of Object.values(E2E_WRITERS)) {
     const user = await db.user.create({ data: { phone: normalizeMobile(phone)!, session_length_min: sessionLength, is_tester: true } });

@@ -339,7 +339,7 @@ export async function productionOverview(user: Learner, language: LanguageCode, 
   const errorfixes = new Map(content.errorfixes.map((item) => [item.id, item]));
   const ePick = nextErrorfix(env, learner.errorfixes, items, grammar, now);
   const eOpen = errorfixOpen(content, items, grammar);
-  const [card, tasks] = await Promise.all([writingCard(user, language, now), writingTasks(language, ctx.audience)]);
+  const [card, tasks] = await Promise.all([writingCard(user, language, now), writingTasks(language, ctx.audience, ctx.modules)]);
 
   return {
     words,
