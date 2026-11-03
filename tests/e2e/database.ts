@@ -56,6 +56,16 @@ export const E2E_REPORT_ADMINS = { "learner-phone": "09120000075", "learner-desk
 /** New learners from zero on a phone that can install the app (PRD §3.11 row 7): Chrome on Android, Safari on an iPhone. */
 export const E2E_INSTALLERS = { android: "09120000079", ios: "09120000081" } as const;
 
+/**
+ * Learners who change their number in the app and then delete the account, the numbers they move to, a
+ * learner whose number a teacher changes from «کاربران», and that teacher (PRD §15.5).
+ */
+export const E2E_MOVERS = { "learner-phone": "09120000083", "learner-desktop": "09120000085" } as const;
+export const E2E_MOVER_NEW = { "learner-phone": "09120000087", "learner-desktop": "09120000089" } as const;
+export const E2E_LOST = { "learner-phone": "09120000091", "learner-desktop": "09120000093" } as const;
+export const E2E_LOST_NEW = { "learner-phone": "09120000095", "learner-desktop": "09120000097" } as const;
+export const E2E_ACCOUNT_ADMINS = { "learner-phone": "09120000099", "learner-desktop": "09120000101" } as const;
+
 /** The plan the learner database starts with, so a buyer has something to buy. */
 export const E2E_PLAN = { name: "یک‌ماهه", days: 30, price: 290_000, badge: "پرفروش" } as const;
 

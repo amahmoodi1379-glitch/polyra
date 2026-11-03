@@ -33,7 +33,8 @@ export type LogAction =
   | "account"
   | "add"
   | "grant"
-  | "shorten";
+  | "shorten"
+  | "phone";
 
 /** `admin_log.entity` of the rows about a batch itself (PRD §13.9), keyed by its id. */
 export const BATCH_ENTITY = "import_batch";
