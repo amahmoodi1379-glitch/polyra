@@ -33,13 +33,20 @@ export async function startSession(userId: number) {
   });
 }
 
-/** The signed-in user, or null. Cached for the duration of one request. */
-export const getCurrentUser = cache(async () => {
+/** The signed-in user and this device, or null. Cached for the duration of one request. */
+export const getCurrentDevice = cache(async () => {
   const token = (await cookies()).get(SESSION_COOKIE)?.value;
   if (!token) return null;
-  const found = await findUserByToken({ db, now: new Date() }, token);
-  return found?.user ?? null;
+  return findUserByToken({ db, now: new Date() }, token);
 });
+
+/** The signed-in user, or null. Cached for the duration of one request. */
+export const getCurrentUser = cache(async () => (await getCurrentDevice())?.user ?? null);
+
+/** Forgets this device's cookie (its row is already gone, as after deleting the account). */
+export async function dropSessionCookie() {
+  (await cookies()).delete(SESSION_COOKIE);
+}
 
 /** Signs this device out. Call only from a Server Action. */
 export async function endSession() {

@@ -13,6 +13,7 @@ import { languageCodes } from "@/server/content/languages";
 import { cn } from "@/lib/utils";
 import { AccessChips } from "../account-row";
 import { AccessControls } from "./access-controls";
+import { PhoneChange } from "./phone-change";
 import { SubscriptionTools } from "./subscription-tools";
 
 export const metadata: Metadata = { title: t("admin.users.title") };
@@ -70,7 +71,12 @@ export default async function UserPage({ params }: PageProps<"/admin/users/[id]"
 
           <Sales userId={account.id} now={now} />
 
-          <p className="text-ink-3 max-w-[68ch] text-[13px] leading-6">{t("admin.users.detail.later")}</p>
+          <section aria-labelledby="phone-change" className="flex flex-col gap-3">
+            <h2 id="phone-change" className="text-ink text-[17px] font-extrabold">
+              {t("admin.users.phone.section")}
+            </h2>
+            <PhoneChange userId={account.id} />
+          </section>
         </>
       )}
     </>

@@ -149,6 +149,10 @@ Deploy: Runflare builds `main` (`docs/deploy-runflare.md`). Work on the session 
 - Install (PRD §3.11 row 7, §15.6): `src/app/manifest.ts`, `public/icons` (placeholders), the service worker `src/app/sw.js/route.ts`
   (static files and session sound, range answers for Safari), `src/components/learn/install.ts` (install state sent as `device`
   with each answer, Chrome's window, `keepSessionSound`); the offer is picked in `finish.ts` and drawn by `InstallNote` in `end.tsx`.
+- Account (PRD §15.5): `src/server/learn/account.ts` (`phoneFree`, `changePhone` for the app and «کاربران», `deleteAccount`,
+  `deletionNotes`); app actions `src/app/(learner)/account-actions.ts` (the code goes to the new number, purpose `change_phone`),
+  pages `learn/[lang]/{phone,delete,support}` and the public `/terms`; the panel form is `admin/users/[id]/phone-change.tsx`.
+  A teacher's text from «تنظیمات عمومی» is drawn by `src/components/plain-text.tsx`.
 - «گزارش اشکال» (PRD §13.10, T72): `src/engine/report.ts` («حق با تو بود»: the notebook entry, step and `fail_count`).
   `src/server/reports`: `file.ts` (`fileReport` from the feedback sheet, by the answer's `review_log` id; `takeReportNotices`),
   `admin.ts` (accept the answer, fixed, suspend, reject, priority), `list.ts` (queue, one report, open counts), `preview.ts` (the

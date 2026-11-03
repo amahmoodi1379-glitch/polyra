@@ -27,6 +27,13 @@ export type VerifyOtpResult =
   | { ok: false; reason: "wrong"; attemptsLeft: number }
   | { ok: false; reason: "expired" | "locked" | "none" };
 
+/** The server secret the codes are hashed with. */
+export function authSecret() {
+  const secret = process.env.AUTH_SECRET;
+  if (!secret) throw new Error("AUTH_SECRET is not set");
+  return secret;
+}
+
 type OtpDeps = { db: PrismaClient; now: Date; secret: string };
 
 function hashCode(secret: string, phone: string, code: string) {

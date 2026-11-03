@@ -3,7 +3,7 @@
 import { redirect } from "next/navigation";
 import { t } from "@/i18n";
 import { toAsciiDigits, normalizeMobile } from "@/lib/phone";
-import { OTP_RULES, requestOtp, verifyOtp } from "@/server/auth/otp";
+import { authSecret, OTP_RULES, requestOtp, verifyOtp } from "@/server/auth/otp";
 import { clientIp, startSession } from "@/server/auth/session";
 import { db } from "@/server/db";
 import { logError } from "@/server/errors";
@@ -13,12 +13,6 @@ import { findOrCreateUser } from "@/server/users";
 export type LoginState =
   | { step: "phone"; error?: string; phoneInput?: string }
   | { step: "code"; phone: string; expiresAt: string; testCode: string | null; error?: string; notice?: string };
-
-function authSecret() {
-  const secret = process.env.AUTH_SECRET;
-  if (!secret) throw new Error("AUTH_SECRET is not set");
-  return secret;
-}
 
 /** Only same-site paths, so the login page cannot be used to send people elsewhere. */
 function safeNext(value: FormDataEntryValue | null) {

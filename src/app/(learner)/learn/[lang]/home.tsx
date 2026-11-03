@@ -668,6 +668,18 @@ function Settings({ language, languageName, account, lengths }: { language: stri
           <Icon name="l-cal" />
           {t("learn.settings.subscription")}
         </Link>
+        <Link href={`/learn/${language}/phone`}>
+          <Icon name="l-swap" />
+          {t("learn.settings.phone")}
+        </Link>
+        <Link href={`/learn/${language}/support`}>
+          <Icon name="l-note" />
+          {t("learn.settings.support")}
+        </Link>
+        <Link href="/terms">
+          <Icon name="l-book" />
+          {t("learn.settings.terms")}
+        </Link>
         <Link href="/about">
           <Icon name="l-info" />
           <Mixed text={t("learn.settings.about")} />
@@ -682,6 +694,10 @@ function Settings({ language, languageName, account, lengths }: { language: stri
           <Icon name="l-logout" />
           {t("learn.settings.logout")}
         </button>
+        <Link className="danger" href={`/learn/${language}/delete`}>
+          <Icon name="l-erase" />
+          {t("learn.settings.delete")}
+        </Link>
       </nav>
       {confirming ? (
         <div className="confirm" role="alert">

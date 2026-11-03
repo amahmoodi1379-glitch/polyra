@@ -13,12 +13,29 @@ export function UsersSearch({ initial }: { initial: string }) {
   const [pending, startTransition] = useTransition();
   const [q, setQ] = useState(initial);
   const typed = useRef(false);
+  // The search last put in the address: a re-render must not send it again.
+  const sent = useRef(initial.trim());
+  const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
-    if (!typed.current) return;
-    const timer = setTimeout(() => startTransition(() => router.replace(href(q.trim()), { scroll: false })), 350);
-    return () => clearTimeout(timer);
+    if (!typed.current || q.trim() === sent.current) return;
+    timer.current = setTimeout(() => {
+      sent.current = q.trim();
+      startTransition(() => router.replace(href(q.trim()), { scroll: false }));
+    }, 350);
+    return () => {
+      if (timer.current) clearTimeout(timer.current);
+    };
   }, [q, router]);
+
+  // A row opened while a search is still waiting wins: the search would pull the page back here.
+  useEffect(() => {
+    const cancel = (event: MouseEvent) => {
+      if (timer.current && event.target instanceof Element && event.target.closest("a[href]")) clearTimeout(timer.current);
+    };
+    document.addEventListener("click", cancel, true);
+    return () => document.removeEventListener("click", cancel, true);
+  }, []);
 
   return (
     <div className="flex flex-col gap-1.5">

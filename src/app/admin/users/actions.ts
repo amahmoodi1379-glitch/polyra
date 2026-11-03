@@ -4,6 +4,7 @@ import { revalidatePath } from "next/cache";
 import { requireAdmin } from "@/server/auth/session";
 import { createAccount, setAccess, type AccessChange, type AccessResult, type CreateResult } from "@/server/accounts";
 import { logError } from "@/server/errors";
+import { changePhone, type PhoneChangeResult } from "@/server/learn/account";
 
 export type AccessReply = AccessResult | { ok: false; reason: "failed"; code: string };
 export type CreateReply = CreateResult | { ok: false; reason: "failed"; code: string };
@@ -29,5 +30,19 @@ export async function addAccount(input: Parameters<typeof createAccount>[1]): Pr
     return result;
   } catch (error) {
     return { ok: false, reason: "failed", code: await logError("users.addAccount", error, { userId: admin.id }) };
+  }
+}
+
+export type PhoneReply = PhoneChangeResult | { ok: false; reason: "failed"; code: string };
+
+/** A learner who lost the old number and is signed out gets a new one from «کاربران» (PRD §15.5); every device signs out. */
+export async function changeAccountPhone(userId: number, phone: string): Promise<PhoneReply> {
+  const admin = await requireAdmin();
+  try {
+    const result = await changePhone(userId, phone, { keepDevice: null, adminId: admin.id });
+    if (result.ok) revalidatePath("/admin/users", "layout");
+    return result;
+  } catch (error) {
+    return { ok: false, reason: "failed", code: await logError("users.changePhone", error, { userId: admin.id }) };
   }
 }
