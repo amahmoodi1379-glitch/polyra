@@ -1,5 +1,5 @@
 import type { ItemStateE } from "./state";
-import { num, type Settings } from "./settings";
+import { flag, num, type Settings } from "./settings";
 
 /**
  * «حالت پیش‌آزمون» (PRD §11.5, `pretestMode` of §15.3): whether new words come first as a W1a test.
@@ -11,6 +11,7 @@ import { num, type Settings } from "./settings";
  * - Off: fewer than `pretest.off_below` right among the last `pretest.window` «پیش‌آزمون»s after the newest
  *   «این را بلدم» (the ones since the mode came on), once at least half the window has been asked, so one
  *   unlucky first answer does not end it (DECISIONS.md, 3 November 2026).
+ * - Never turns on while `feature.pretest` is off (T102).
  */
 
 export type NewWordEvent = "iknow" | "pretest_ok" | "pretest_fail" | "word";
@@ -24,6 +25,7 @@ export function pretestModeAfter(on: boolean, recent: NewWordEvent[], settings: 
     if (asked.length * 2 < window) return true;
     return asked.filter((event) => event === "pretest_ok").length / asked.length >= num(settings, "pretest.off_below");
   }
+  if (!flag(settings, "feature.pretest")) return false;
   const words = recent.slice(0, window);
   const last = words.findIndex((event) => event === "pretest_ok" || event === "pretest_fail");
   const counted = last < 0 ? words : words.slice(0, last);

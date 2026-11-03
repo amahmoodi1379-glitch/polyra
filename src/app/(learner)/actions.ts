@@ -71,9 +71,9 @@ export async function beginSkillExam(language: string, skill: string): Promise<E
 export async function examStep(language: string, skill: string, input: ExamInput, number: number): Promise<ExamScreen | null> {
   const user = await signedIn();
   if (!isLanguage(language) || !isSkill(skill)) return null;
-  const screen = await examInput(user, language, skill, input, number);
-  if (screen?.kind === "done") revalidatePath(`/learn/${language}`, "layout");
-  return screen;
+  // No revalidation here: it would draw this page again, which sends a finished exam home before its
+  // result is seen. The home is dynamic and is read fresh when the result's button goes there.
+  return examInput(user, language, skill, input, number);
 }
 
 /** «بله» on «یک سطح پایین‌تر برویم؟» at the end of a session (PRD §11.7). */

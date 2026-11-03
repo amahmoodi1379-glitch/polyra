@@ -7,6 +7,7 @@ import type { Content } from "@/engine/content";
 import { levelDownOffer, levelDownSkills, type LevelDownInput } from "@/engine/leveldown";
 import { pickSessionMessage, SESSION_MESSAGES } from "@/engine/messages";
 import { nextUnit } from "@/engine/session/newmaterial";
+import { indexTextStates, textLevelUp } from "@/engine/texts";
 import type { SkillLevelE, TextStateE } from "@/engine/state";
 import { plusDays } from "@/engine/time";
 import { syntheticContent } from "../../../fixtures/synthetic";
@@ -93,6 +94,22 @@ describe("listening and reading (PRD §11.7)", () => {
     expect(levelDownOffer(content, input({ skills: placed, texts: firstRounds("listening", "A2", [0.4, 0.4, 0.4]) }), on, NOW)).toBeNull();
     const low = [...firstRounds("listening", "A2", [0.2, 0.2, 0.2]), ...firstRounds("reading", "A1", [0.9, 0.9, 0.9])];
     expect(levelDownOffer(content, input({ skills: placed, texts: low }), on, NOW)).toBeNull();
+  });
+});
+
+describe("T90: listening at B1 with a score of 0.3 (PRD §11.7, §7.5)", () => {
+  const placed = skills({ vocab: { level: "B2", knownBelow: "B2" }, listening: { level: "B1" } });
+  const low = firstRounds("listening", "B1", [0.3, 0.3, 0.3]);
+
+  it("every A2 text tried: no offer; five A2 texts untouched: offered, and after «بله» rule 2 waits for those five", () => {
+    const allTried = [...low, ...firstRounds("reading", "A2", [0.9, 0.9, 0.9, 0.9, 0.9, 0.9])];
+    expect(levelDownOffer(content, input({ skills: placed, texts: allTried }), on, NOW)).toBeNull();
+    const fiveLeft = [...low, ...firstRounds("reading", "A2", [0.9])];
+    const offer = levelDownOffer(content, input({ skills: placed, texts: fiveLeft }), on, NOW);
+    expect(offer).toEqual({ skill: "listening", from: "B1", to: "A2" });
+    expect(levelDownSkills(placed, offer!).find((row) => row.skill === "listening")).toMatchObject({ level: "A2" });
+    // Back at A2, rule 2 of §7.5 (every text of the level tried) does not move listening up while the five are untouched.
+    expect(textLevelUp(content, indexTextStates(fiveLeft), "listening", "A2", on, NOW, "B2")).toBeNull();
   });
 });
 

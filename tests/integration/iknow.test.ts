@@ -198,7 +198,21 @@ describe("the pretest mode on the server (PRD §11.5)", () => {
     expect(await testDb.dailyCounter.findFirstOrThrow({ where: { user_id: user.id } })).toMatchObject({ pretest_passed: 1 });
   });
 
-  it("with the switch off the mode may be on but no pretest comes", async () => {
+  it("T102: five presses with the switch off leave the mode off", { timeout: 60_000 }, async () => {
+    await saveEngineSetting("feature.pretest", false);
+    const user = await enrolled();
+    let presses = 0;
+    await playAll(user, await started(user), NOW, (card, plan) => {
+      if (!offered(card, plan) || card.t !== "intro" || presses >= 5) return false;
+      presses++;
+      return true;
+    });
+    expect(presses).toBe(5);
+    expect(await testDb.enrollment.findFirstOrThrow({ where: { user_id: user.id } })).toMatchObject({ pretest_mode: false });
+  });
+
+  it("a mode left on when the switch went off brings no pretest", async () => {
+    await saveEngineSetting("feature.pretest", false);
     const user = await enrolled();
     await testDb.enrollment.updateMany({ where: { user_id: user.id }, data: { pretest_mode: true } });
     const bundle = await started(user);

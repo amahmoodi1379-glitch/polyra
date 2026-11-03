@@ -130,6 +130,11 @@ Deploy: Runflare builds `main` (`docs/deploy-runflare.md`). Work on the session 
   placement`, no card). Server: `src/server/learn/placement.ts` (the run in `placement_run`, graded on the server,
   `recordSample` from `answer.ts`, `takeSampleNotice` from `finish.ts`). Pages `learn/[lang]/placement` and the paused home
   (`placement/paused.tsx`). «آزمایش مثل زبان‌آموز»: `placementOverview`/`rehearsePlacement` in `rehearse.ts`, card `admin/try/placement.tsx`.
+- Level tools (PRD §11.5–§11.7, §3.13): `src/engine/pretest.ts` (the pretest mode from the new-word timeline; «این را بلدم» is
+  `{iknow:true}` on an intro or lesson card with `probationStep`, checked in `answer.ts`), `src/engine/exam.ts` (the skip exam:
+  offer, items, early end, result; state in `level_exam.state`), `src/server/learn/exam.ts` and pages `learn/[lang]/exam/[skill]`,
+  `src/engine/leveldown.ts` (the lower-level offer; «بله» in `src/server/learn/leveldown.ts`), `src/engine/path.ts` (end of the
+  path, shown once by `finish.ts`). End messages are picked in `finish.ts` by `src/engine/messages.ts`.
 - Learner sessions (PRD §10, §15.4): `src/engine/session` builds and plays a plan (`build.ts`, `play.ts`, `advance.ts`);
   the browser and the server run the same functions. `src/server/learn`: `content.ts` (what a learner or tester may
   see, cached 30s), `learner.ts` (the snapshot the engine needs), `session.ts` (start, resume, close, preview),

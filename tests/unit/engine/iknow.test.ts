@@ -200,15 +200,20 @@ describe("the pretest mode (PRD §11.5)", () => {
   const ev = (...parts: [NewWordEvent, number][]) => parts.flatMap(([event, n]) => Array<NewWordEvent>(n).fill(event));
 
   it("turns on at five «این را بلدم» among the last twenty new words, not at four", () => {
-    expect(pretestModeAfter(false, ev(["iknow", 5], ["word", 15]), s)).toBe(true);
-    expect(pretestModeAfter(false, ev(["iknow", 4], ["word", 16]), s)).toBe(false);
+    expect(pretestModeAfter(false, ev(["iknow", 5], ["word", 15]), on)).toBe(true);
+    expect(pretestModeAfter(false, ev(["iknow", 4], ["word", 16]), on)).toBe(false);
     // Older than twenty words does not count.
-    expect(pretestModeAfter(false, ev(["word", 20], ["iknow", 5]), s)).toBe(false);
+    expect(pretestModeAfter(false, ev(["word", 20], ["iknow", 5]), on)).toBe(false);
+  });
+
+  it("T102: the same five presses with `feature.pretest` off: the mode does not turn on", () => {
+    expect(pretestModeAfter(false, ev(["iknow", 5], ["word", 15]), s)).toBe(false);
+    expect(pretestModeAfter(false, ev(["iknow", 20]), s)).toBe(false);
   });
 
   it("only presses after the last pretest count, so a mode that went off needs new presses", () => {
-    expect(pretestModeAfter(false, ev(["iknow", 2], ["pretest_fail", 1], ["iknow", 5]), s)).toBe(false);
-    expect(pretestModeAfter(false, ev(["iknow", 5], ["pretest_fail", 10]), s)).toBe(true);
+    expect(pretestModeAfter(false, ev(["iknow", 2], ["pretest_fail", 1], ["iknow", 5]), on)).toBe(false);
+    expect(pretestModeAfter(false, ev(["iknow", 5], ["pretest_fail", 10]), on)).toBe(true);
   });
 
   it("turns off when fewer than half of the last twenty pretests were right, once ten were asked", () => {

@@ -7,7 +7,7 @@ import { E2E_EXAMINERS, E2E_IKNOW } from "./database";
  *   down, and the word waits in «کلمه‌های من» as a word to check later.
  * - The skip exam (PRD §11.6) of reading for a tester who knows every word (the learner database moves the
  *   demo's last text to A2): the vocabulary sheet says the next level is coming, the reading sheet offers
- *   the exam, the first text is left for later and found again, an empty answer sheet ends it as a fail,
+ *   the exam, the first text is left for later and found again, one answer in each text is a fail,
  *   and the sheet then says when the next try opens.
  */
 
@@ -117,11 +117,15 @@ test("the reading skip exam: offered on the sheet, left half-way, found again, f
   await resume.click();
   await expect(part).toContainText(/متن (1|۱) از (2|۲)/);
 
-  // No answers: the first text scores nothing, a pass is out of reach, and the exam ends there.
+  // One answer in each text and the rest left: too few right for the 80% a pass needs.
+  await page.locator(".tx-q .opt").first().click();
+  await page.getByRole("button", { name: "ثبت جواب‌ها" }).click();
+  await expect(part).toContainText(/متن (2|۲) از (2|۲)/);
+  await page.locator(".tx-q .opt").first().click();
   await page.getByRole("button", { name: "ثبت جواب‌ها" }).click();
   const result = page.locator("[data-exam-result]");
   await expect(result).toHaveAttribute("data-exam-result", "failed");
-  await expect(page.getByText("۰٪ درست")).toBeVisible();
+  await expect(page.getByText(/٪ درست$/)).toBeVisible();
   await page.screenshot({ path: testInfo.outputPath("exam-failed.png"), fullPage: true });
   await page.getByRole("button", { name: "برگشت به خانه" }).click();
   await expect(page).toHaveURL(/\/learn\/fr$/);
