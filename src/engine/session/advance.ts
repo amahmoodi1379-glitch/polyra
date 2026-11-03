@@ -26,6 +26,11 @@ export type AdvanceEvent = {
   skip?: "later" | "drop" | null;
   /** Seconds since the session's first card, for the time guard (PRD §10.7). */
   elapsedSec: number;
+  /**
+   * «این را بلدم» or a passed «پیش‌آزمون» (PRD §11.5): the item's other cards leave the session (§10.7);
+   * «این را بلدم» also takes one from today's count.
+   */
+  known?: "iknow" | "pretest" | null;
 };
 
 export type Advanced = {
@@ -150,6 +155,10 @@ export function advance(plan: SessionPlan, event: AdvanceEvent, settings: Settin
   if (card.t === "phonicsq" && phonics && event.result !== "seen") {
     phonics = { ...phonics, answers: [...phonics.answers, event.result] };
     phonicsDone = !!card.roundEnd;
+  }
+  if (event.known) {
+    queue = queue.filter((other) => other.item !== card.item && !(card.block && other.block === card.block));
+    if (event.known === "iknow") counters.iknowLeft = Math.max(0, (counters.iknowLeft ?? 0) - 1);
   }
   // «بعداً», or no sound now: the rest of the block goes, nothing else changes.
   if (event.skip && card.block) queue = queue.filter((other) => other.block !== card.block);

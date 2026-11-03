@@ -58,6 +58,7 @@ export function enrollmentOf(row: {
   freeze_count: number;
   freeze_checked_week: Date | null;
   text_prompt_date: Date | null;
+  pretest_mode: boolean;
 }): EnrollmentE {
   return {
     language: row.language,
@@ -74,6 +75,7 @@ export function enrollmentOf(row: {
     freezeCount: row.freeze_count,
     freezeCheckedWeek: dateOnly(row.freeze_checked_week),
     textPromptDate: dateOnly(row.text_prompt_date),
+    pretestMode: row.pretest_mode,
   };
 }
 
@@ -162,6 +164,8 @@ export function dailyOf(
     new_text_sec_listening: number;
     new_text_sec_reading: number;
     text_session_done: boolean;
+    i_know: number;
+    pretest_passed: number;
   } | null,
   today: string,
 ): DailyE {
@@ -176,6 +180,8 @@ export function dailyOf(
     activeSec: row?.active_sec ?? 0,
     newTextSec: { listening: row?.new_text_sec_listening ?? 0, reading: row?.new_text_sec_reading ?? 0 },
     textSessionDone: row?.text_session_done ?? false,
+    iKnow: row?.i_know ?? 0,
+    pretestPassed: row?.pretest_passed ?? 0,
   };
 }
 

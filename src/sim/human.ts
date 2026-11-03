@@ -7,7 +7,9 @@
  * the right answers turn into a typo and 10% into a near answer. Each answer takes the exercise's time
  * from PRD §10.1, 30% either way. A text question has no memory curve: g + (1 − g) × a × d.
  * A learner who came out of placement knew the placement sample's words and sentences before (PRD §11.4):
- * those have no memory curve either, g + (1 − g) × `prior` × d, with no first-typing penalty.
+ * those have no memory curve either, g + (1 − g) × `prior` × d, with no first-typing penalty. Such a learner
+ * knew each new item with the chance `prior`: on those «این را بلدم» is pressed where offered, and a
+ * «پیش‌آزمون» or the first review of the claim is right with g + (1 − g) × 0.95 × d; on the others it is a guess.
  */
 import type { Content, QuestionC } from "@/engine/content";
 import type { AnswerSpec, Ex } from "@/engine/ex";
@@ -21,6 +23,8 @@ import { nearAnswer, productionAnswer, rightAnswer, slipAnswer, textAnswers, typ
 const DAY_MS = 86_400_000;
 /** FSRS-4.5's curve, for an item that was introduced but never rated (its first exercise failed). */
 const curve = (days: number, stability: number) => Math.pow(1 + ((19 / 81) * days) / stability, -0.5);
+/** The chance of a right answer on an item the learner knew before the course. */
+const KNEW = 0.95;
 /** Stability of an introduced item that has no rating yet, in days. */
 const FIRST_STABILITY = 1;
 
@@ -56,6 +60,8 @@ export function human(opts: { content: Content; settings: Settings; seed: string
     if (value === undefined) factors.set(key, (value = 0.7 + 0.6 * seeded(opts.seed, key)()));
     return value;
   };
+  /** Whether the learner knew a new item before, by `prior`, fixed for the learner. */
+  const known = (key: string) => opts.prior !== undefined && seeded(opts.seed, "known", key)() < opts.prior;
   /** A grammar sentence of the notebook is remembered with its unit. */
   const owner = (key: string) => {
     if (!key.startsWith("t:")) return key;
@@ -91,10 +97,18 @@ export function human(opts: { content: Content; settings: Settings; seed: string
       return { answer: productionAnswer(card, rng, opts.ability(card)), latencyMs: Math.round(secs * (0.7 + 0.6 * rng()) * 1000) };
     }
     const latencyMs = Math.round(seconds(card, ex) * (0.7 + 0.6 * rng()) * 1000);
+    // A learner who knew some of the level presses «این را بلدم» on a new item they knew (PRD §11.5).
+    if (opts.prior !== undefined && (card.t === "intro" || card.t === "lesson") && card.probationStep && (plan.counters.iknowLeft ?? 0) > 0 && known(card.item)) return { answer: { iknow: true }, latencyMs };
     if (!ex) return { answer: { seen: true }, latencyMs };
     const key = owner(card.item);
     const state = plan.states[key];
     const g = guess(ex.a);
+    // An item claimed known (PRD §11.5) or asked in a «پیش‌آزمون»: right when the learner knew it, else a guess.
+    if (opts.prior !== undefined && (card.t === "pretest" || plan.states[card.item]?.probation === "single")) {
+      const p = known(card.item) ? g + (1 - g) * KNEW * (ex.typed ? 0.85 : 1) : g;
+      return { answer: rng() < p ? rightAnswer(ex) : slipAnswer(ex, rng), latencyMs };
+    }
+    // The placement sample's words and sentences.
     if (opts.prior !== undefined && (card.item.startsWith("g:") || plan.states[card.item]?.probation === "sample")) {
       const p = g + (1 - g) * opts.prior * (ex.typed ? 0.85 : 1);
       if (rng() >= p) return { answer: slipAnswer(ex, rng), latencyMs };

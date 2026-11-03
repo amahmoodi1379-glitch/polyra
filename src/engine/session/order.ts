@@ -15,7 +15,8 @@ type Base = { key: string; cost: number; planItem?: PlanItem };
 
 export type Entry =
   | (Base & { t: "single"; kind: PlayKind; ex: Ex; alt: Ex | null; step: number; note?: { refType: NotebookRef; refId: number } })
-  | (Base & { t: "newword"; word: WordC; ex: Ex; alt: Ex | null })
+  /** `pretest`: a W1a asked before the intro card (PRD §11.5). */
+  | (Base & { t: "newword"; word: WordC; ex: Ex; alt: Ex | null; pretest?: Ex })
   | (Base & { t: "newconj"; table: ConjC; ex: Ex })
   | (Base & { t: "round"; step: number; questions: Ex[]; alts: (Ex | null)[]; lesson: boolean })
   | (Base & { t: "newunit"; unit: UnitC; g0: Ex[]; questions: Ex[]; alts: (Ex | null)[]; step: number })

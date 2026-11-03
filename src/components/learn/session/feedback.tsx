@@ -33,6 +33,7 @@ export function Feedback({
   plan,
   language,
   muted,
+  pretest = false,
   onContinue,
 }: {
   verdict: Graded;
@@ -42,12 +43,15 @@ export function Feedback({
   plan: Pick<SessionPlan, "words" | "lessons">;
   language: string;
   muted: boolean;
+  /** A «پیش‌آزمون» (PRD §11.5): right shows the word card, wrong costs nothing and the intro card comes. */
+  pretest?: boolean;
   onContinue: () => void;
 }) {
   const sheet = useRef<HTMLDivElement>(null);
   const mark = useRef<HTMLSpanElement>(null);
   const next = useRef<HTMLButtonElement>(null);
-  const tone = tones[verdict.result];
+  // A «پیش‌آزمون» missed is no mistake: the intro card comes next (PRD §11.5).
+  const tone = pretest && verdict.result === "wrong" ? "idk" : tones[verdict.result];
 
   useEffect(() => {
     springIn(sheet.current);
@@ -60,7 +64,7 @@ export function Feedback({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const answer = verdict.result === "correct" ? null : rightAnswer(ex);
+  const answer = verdict.result === "correct" || pretest ? null : rightAnswer(ex);
   // The exercise names its word or unit, also when the card serves a grammar sentence from the notebook.
   const item = isItemKey(ex.item) ? parseItemKey(ex.item) : null;
   const word = item?.type === "word" ? plan.words[item.id] : undefined;
@@ -86,7 +90,7 @@ export function Feedback({
             <span className="fb-mark" ref={mark} aria-hidden="true">
               <svg viewBox="0 0 24 24">{marks[tone]}</svg>
             </span>
-            {t(`learn.fb.${verdict.result}`)}
+            {pretest ? t(verdict.result === "correct" || verdict.result === "near" ? "learn.fb.pretestOk" : "learn.fb.pretestMissed") : t(`learn.fb.${verdict.result}`)}
           </div>
           {ex.after ? <MiniPlay id={`fb:${card.id}`} speak={ex.after} label={t("learn.session.playAgain")} /> : null}
         </div>
@@ -111,13 +115,24 @@ export function Feedback({
             <span>{ex.q.heard.meaning}</span>
           </div>
         ) : null}
-        {missed && word ? (
-          <div className="fb-word">
-            <WordText word={word.word} />
-            <span>{word.word.meaning}</span>
-          </div>
+        {(missed && !pretest) || (pretest && !missed && word) ? (
+          word ? (
+            <div className="fb-word">
+              <WordText word={word.word} />
+              <span>{word.word.meaning}</span>
+            </div>
+          ) : null
         ) : null}
-        {missed && word?.example && word.example.id !== sentence?.id ? (
+        {pretest && !missed && word?.example ? (
+          <p className="fb-ex">
+            <span className="lat" lang={language} dir="ltr">
+              {word.example.text}
+            </span>
+            {word.example.translation ? <span>{word.example.translation}</span> : null}
+          </p>
+        ) : null}
+        {pretest && !missed ? <p className="fb-why">{t("learn.fb.pretestOkNote")}</p> : null}
+        {missed && !pretest && word?.example && word.example.id !== sentence?.id ? (
           <p className="fb-ex">
             <span className="lat" lang={language} dir="ltr">
               {word.example.text}

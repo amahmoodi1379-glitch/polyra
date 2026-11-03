@@ -1,6 +1,7 @@
 import type { NotebookOp } from "@/engine/notebook";
 import { applyNotebook } from "@/engine/notebook";
-import type { Settings } from "@/engine/settings";
+import { newWordEvents, pretestModeAfter } from "@/engine/pretest";
+import { num, type Settings } from "@/engine/settings";
 import type { ConfusionE, ItemStateE } from "@/engine/state";
 import type { Prisma } from "@/generated/prisma/client";
 import { asDate, itemStateRow, notebookOf } from "./learner";
@@ -27,7 +28,7 @@ export async function saveItemState(tx: Tx, who: Who, state: ItemStateE): Promis
 }
 
 /** Today's counters (PRD §10.5, §3.9), added to the row of the Tehran day. */
-export type DailyAdd = Partial<Record<"new_words" | "queue_words" | "new_units" | "new_conj" | "active_sec" | "new_text_sec_listening" | "new_text_sec_reading", number>>;
+export type DailyAdd = Partial<Record<"new_words" | "queue_words" | "new_units" | "new_conj" | "i_know" | "pretest_passed" | "active_sec" | "new_text_sec_listening" | "new_text_sec_reading", number>>;
 
 export async function addDaily(tx: Tx, who: Who, today: string, add: DailyAdd, set: { words_cap_today?: number; cap_prompt_shown?: boolean; text_session_done?: boolean } = {}) {
   const increments = Object.fromEntries(Object.entries(add).filter(([, value]) => value)) as DailyAdd;
@@ -91,4 +92,30 @@ export async function saveConfusion(tx: Tx, who: Who, pair: ConfusionE) {
     create: { user_id: who.userId, language: who.language, word_id: pair.wordId, other_word_id: pair.otherWordId, ...data },
     update: data,
   });
+}
+
+/**
+ * «حالت پیش‌آزمون» (PRD §11.5) from the learner's recent new words: «این را بلدم», a «پیش‌آزمون» right
+ * (both in `item_state.source`) or wrong (in `review_log`), or a plain intro card.
+ */
+export async function updatePretestMode(tx: Tx, who: Who, settings: Settings) {
+  const enrollment = await tx.enrollment.findUnique({ where: { user_id_language: { user_id: who.userId, language: who.language } }, select: { id: true, pretest_mode: true } });
+  if (!enrollment) return;
+  const words = await tx.itemState.findMany({
+    where: { user_id: who.userId, language: who.language, item_type: "word", source: { not: "placement" }, introduced_at: { not: null } },
+    orderBy: [{ introduced_at: "desc" }, { item_id: "desc" }],
+    // Enough for the window and the «پیش‌آزمون»s since the mode came on.
+    take: num(settings, "pretest.window") * 10,
+    select: { item_id: true, source: true, introduced_at: true },
+  });
+  const failed = await tx.reviewLog.findMany({
+    where: { user_id: who.userId, language: who.language, kind: "pretest", item_type: "word", item_id: { in: words.map((word) => word.item_id) }, result: { in: ["wrong", "idk"] } },
+    select: { item_id: true },
+  });
+  const events = newWordEvents(
+    words.map((word) => ({ itemType: "word" as const, itemId: word.item_id, source: word.source, introducedAt: word.introduced_at!.toISOString() })),
+    new Set(failed.map((row) => row.item_id!)),
+  );
+  const on = pretestModeAfter(enrollment.pretest_mode, events, settings);
+  if (on !== enrollment.pretest_mode) await tx.enrollment.update({ where: { id: enrollment.id }, data: { pretest_mode: on } });
 }

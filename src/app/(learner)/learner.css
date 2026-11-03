@@ -273,6 +273,14 @@
     font-size: 11.5px;
     color: var(--ink-3);
   }
+  & .hero .path-done {
+    max-width: 34ch;
+    font-size: 12.5px;
+    line-height: 1.8;
+    color: var(--ink-2);
+    text-align: center;
+    text-wrap: pretty;
+  }
   & .quick {
     align-self: center;
     min-height: 44px;
@@ -1083,6 +1091,13 @@
   & .listen .slow {
     min-height: 40px;
   }
+  & .pretest-note {
+    margin: 0 0 4px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink-2);
+    text-align: center;
+  }
   & .tip {
     margin: 0;
     padding: 10px 14px;
@@ -1892,6 +1907,19 @@
   }
   & .end-note .secondary {
     min-width: 104px;
+  }
+  & .end-path-note {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--ink-2);
+    text-wrap: pretty;
+  }
+  & .end-note p.sub {
+    margin-top: -6px;
+    font-weight: 600;
+    font-size: 13.5px;
+    color: var(--ink-2);
   }
   & .station {
     display: flex;

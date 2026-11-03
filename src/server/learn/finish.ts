@@ -1,13 +1,17 @@
 import { hasCard, levelIndex } from "@/engine/content";
 import { activeCards, isDue } from "@/engine/session/build";
-import { num } from "@/engine/settings";
+import { flag, num } from "@/engine/settings";
+import { LEVELDOWN_RULE, levelDownOffer } from "@/engine/leveldown";
+import { indexItems } from "@/engine/levels";
+import { pathDone } from "@/engine/path";
 import { leftInARow, mayOfferShorter, pickSessionMessage, shorterLength, type ClosedSession } from "@/engine/messages";
 import { finishDay } from "@/engine/streak";
-import { addDays, tehranDate, tehranDayStart } from "@/engine/time";
+import { addDays, plusDays, tehranDate, tehranDayStart } from "@/engine/time";
 import type { Enrollment, Prisma, Session } from "@/generated/prisma/client";
 import { SESSION_LENGTHS } from "./enroll";
 import { takeSampleNotice } from "./placement";
-import { asDate, dailyOf, dateOnly, enrollmentOf, itemStateOf, skillsOf } from "./learner";
+import { examOfferFor } from "./exam";
+import { asDate, dailyOf, dateOnly, enrollmentOf, itemStateOf, loadTextStates, skillsOf, textStateOf } from "./learner";
 import { closeSession, startInfo, type EndMessage, type EndSummary, type LearnContext, type StoredPlan } from "./session";
 
 /**
@@ -70,7 +74,21 @@ export async function finishSession(tx: Tx, row: Session, plan: StoredPlan, ctx:
   const dueTomorrow = items.filter((item) => isDue(item, tehranDayStart(tomorrow), tomorrow) && active(item)).length;
   const counts = dailyOf(daily, today);
 
-  const message = await endMessage(tx, row, enrollment, ctx, at);
+  // «پایان مسیر» (PRD §3.13, T103): once, in place of the end screen; then the maintenance mode.
+  let pathDoneNow: EndSummary["pathDone"] = null;
+  if (!enrollment.path_done_at) {
+    const texts = (await loadTextStates(tx, row.user_id, row.language)).map(textStateOf);
+    if (pathDone(content, indexItems(items), skills, texts, settings, at)) {
+      await tx.enrollment.update({ where: { id: enrollment.id }, data: { path_done_at: at } });
+      const days = await tx.dailyCounter.count({ where: { ...where, active_sec: { gt: 0 } } });
+      const units = content.units.filter((unit) => items.some((item) => item.itemType === "grammar_unit" && item.itemId === unit.id) || levelIndex(content, unit.level) < levelIndex(content, skills.find((skill) => skill.skill === "grammar")?.knownBelow ?? null)).length;
+      const textsDone = new Set(texts.filter((state) => state.scores.length > 0).map((state) => state.textId)).size;
+      pathDoneNow = { level: content.levels[content.levels.length - 1], words: 0, units, texts: textsDone, days };
+      await tx.event.create({ data: { ...where, name: "path_done", props: {}, ts: at } });
+    }
+  }
+
+  const message = pathDoneNow ? null : await endMessage(tx, row, enrollment, ctx, at);
 
   const end: EndSummary = {
     correct: plan.counters.correct,
@@ -83,6 +101,7 @@ export async function finishSession(tx: Tx, row: Session, plan: StoredPlan, ctx:
     streak,
     tomorrow: dueTomorrow,
     message,
+    pathDone: pathDoneNow ? { ...pathDoneNow, words: knownWords } : null,
   };
   await tx.session.update({ where: { id: row.id }, data: { plan: { ...plan, end } as unknown as Prisma.InputJsonValue } });
   return end;
@@ -113,6 +132,12 @@ export async function countStreakDay(tx: Tx, enrollment: Enrollment, today: stri
   return { counted: true, count: done.state.streakCount, freezeEarned: done.event.freezeEarned > 0, freezes: done.state.freezeCount };
 }
 
+/** A Good or Easy round, as `review_log.fsrs_rating` stores it (1 Again … 4 Easy). */
+const GOOD = 3;
+/** «از این سطح متن‌ها بلندترند»: the level where texts get long, and the length offered (PRD §3.11 row 3). */
+const LONG_TEXTS_LEVEL = "B1";
+const LONGER_LENGTH = 15;
+
 /**
  * The one message of this end screen (PRD §3.11), and the note that it was shown. Shorter sessions
  * follow sessions left in a row since the last time it was asked; «امروز وقت کم دارم» is not about the
@@ -122,6 +147,57 @@ async function endMessage(tx: Tx, row: Session, enrollment: Enrollment, ctx: Lea
   const sample = await takeSampleNotice(tx, row.user_id, row.language);
   if (sample) return { kind: "sample", skill: sample.kind, level: sample.level };
   const applying: Exclude<EndMessage, { kind: "sample" }>[] = [];
+  const where = { user_id: row.user_id, language: row.language };
+
+  // 1. «یک سطح پایین‌تر برویم؟» (PRD §11.7), with its switch.
+  if (flag(ctx.settings, "feature.leveldown")) {
+    const [skillRows, textRows, vocabRows, roundRows] = await Promise.all([
+      tx.skillLevel.findMany({ where }),
+      loadTextStates(tx, row.user_id, row.language),
+      tx.reviewLog.findMany({
+        where: { ...where, kind: "review", item_type: "word", fsrs_rating: { not: null }, first_typing: false, ts: { gte: plusDays(at, -num(ctx.settings, "leveldown.window_days")) } },
+        select: { result: true },
+      }),
+      tx.reviewLog.findMany({ where: { ...where, item_type: "grammar_unit", fsrs_rating: { not: null } }, orderBy: { ts: "desc" }, take: LEVELDOWN_RULE.grammarRounds, select: { fsrs_rating: true } }),
+    ]);
+    const offer = levelDownOffer(
+      ctx.content,
+      {
+        skills: skillsOf(skillRows, ctx.content.levels[0]),
+        texts: textRows.map(textStateOf),
+        vocabReviews: vocabRows.map((one) => one.result === "correct" || one.result === "near"),
+        grammarRounds: roundRows.map((one) => (one.fsrs_rating ?? 0) >= GOOD),
+        askedAt: enrollment.leveldown_asked_at,
+      },
+      ctx.settings,
+      at,
+    );
+    if (offer) applying.push({ kind: "leveldown", ...offer });
+  }
+
+  // 3. Longer sessions once a track reaches the level of long texts at ten minutes (PRD §3.11 row 3).
+  if (!enrollment.longer_asked_at) {
+    const user = await tx.user.findUniqueOrThrow({ where: { id: row.user_id }, select: { session_length_min: true } });
+    const tracks = await tx.skillLevel.findMany({ where: { ...where, skill: { in: ["listening", "reading"] } }, select: { level: true } });
+    const long = levelIndex(ctx.content, LONG_TEXTS_LEVEL);
+    if (user.session_length_min === SESSION_LENGTHS[0] && long >= 0 && tracks.some((track) => levelIndex(ctx.content, track.level) >= long)) applying.push({ kind: "longer", to: LONGER_LENGTH });
+  }
+
+  // 4. The day's «این را بلدم» used up in this session, and a skip exam on offer (PRD §3.11 row 4, §11.5).
+  const pressed = await tx.reviewLog.count({ where: { session_id: row.id, raw_answer: "iknow" } });
+  if (pressed > 0) {
+    const day = await tx.dailyCounter.findUnique({ where: { user_id_language_date_tehran: { ...where, date_tehran: asDate(tehranDate(at)) } }, select: { i_know: true } });
+    if ((day?.i_know ?? 0) >= num(ctx.settings, "iknow.daily")) {
+      for (const skill of ["vocab", "grammar"] as const) {
+        const offer = await examOfferFor(tx, row.user_id, row.language, { ...ctx, now: at }, skill);
+        if (offer.kind === "ready") {
+          applying.push({ kind: "skipTest", skill, next: offer.next });
+          break;
+        }
+      }
+    }
+  }
+
   if (mayOfferShorter(enrollment.shorten_asked_at, at, ctx.settings)) {
     const since = enrollment.shorten_asked_at ?? new Date(0);
     const previous = await tx.$queryRaw<ClosedSession[]>`
@@ -141,8 +217,15 @@ async function endMessage(tx: Tx, row: Session, enrollment: Enrollment, ctx: Lea
 
   const message = pickSessionMessage(applying);
   if (message) {
-    const shown = { shorter: { shorten_asked_at: at }, slowPace: { slow_notice_due: false }, phonicsOff: { phonics_off_due: false } }[message.kind];
-    await tx.enrollment.update({ where: { id: enrollment.id }, data: shown });
+    const shown: Partial<Record<EndMessage["kind"], Prisma.EnrollmentUpdateInput>> = {
+      leveldown: { leveldown_asked_at: at },
+      shorter: { shorten_asked_at: at },
+      longer: { longer_asked_at: at },
+      slowPace: { slow_notice_due: false },
+      phonicsOff: { phonics_off_due: false },
+    };
+    const data = shown[message.kind];
+    if (data) await tx.enrollment.update({ where: { id: enrollment.id }, data });
   }
   return message;
 }

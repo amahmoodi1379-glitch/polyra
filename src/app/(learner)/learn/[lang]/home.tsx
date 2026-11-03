@@ -171,6 +171,12 @@ export function Home({ data, languageName, languages, account, lengths, freeze }
           </span>
           {!device.started && !idle && !data.locked ? <span className="hint">{t("learn.home.hint")}</span> : null}
           {reduced ? <span className="rm">{t("learn.home.reducedMotion")}</span> : null}
+          {data.pathDone ? (
+            <span className="path-done" data-path-done>
+              {t("learn.home.pathDone")}
+              {data.comingSoon ? ` ${data.comingSoon}` : ""}
+            </span>
+          ) : null}
         </div>
         {data.locked ? null : idle && data.extra ? (
           <button type="button" className="quick" onClick={() => (sfx("press", 0.4), go("extra"))}>
@@ -353,7 +359,7 @@ export function Home({ data, languageName, languages, account, lengths, freeze }
       </Sheet>
 
       <Sheet open={!!opened} onClose={close} labelledBy="skill-title">
-        {tile ? <SkillDetails tile={tile} locked={data.locked} onPractice={(scope) => go(scope)} onClose={close} /> : null}
+        {tile ? <SkillDetails tile={tile} language={lang} comingSoon={data.comingSoon} locked={data.locked} onPractice={(scope) => go(scope)} onClose={close} /> : null}
       </Sheet>
 
       <Sheet open={open === "lang"} onClose={close} labelledBy="lang-title">
@@ -388,7 +394,21 @@ export function Home({ data, languageName, languages, account, lengths, freeze }
   );
 }
 
-function SkillDetails({ tile, locked, onPractice, onClose }: { tile: SkillTile; locked: boolean; onPractice: (scope: Scope) => void; onClose: () => void }) {
+function SkillDetails({
+  tile,
+  language,
+  comingSoon,
+  locked,
+  onPractice,
+  onClose,
+}: {
+  tile: SkillTile;
+  language: string;
+  comingSoon: string | null;
+  locked: boolean;
+  onPractice: (scope: Scope) => void;
+  onClose: () => void;
+}) {
   const name = t(`learn.skill.${tile.skill}`);
   // Listening counts heard sentences beside its texts (PRD §7.6); reading has only texts.
   const ledger = tile.skill === "vocab" ? "words" : tile.skill === "grammar" ? "units" : tile.skill === "listening" ? "sentences" : null;
@@ -448,6 +468,12 @@ function SkillDetails({ tile, locked, onPractice, onClose }: { tile: SkillTile; 
         </dl>
       )}
       {tile.texts?.wordsFor ? <p className="soon num">{t("learn.skillSheet.texts.wordsFor", { skill: name, level: tile.texts.wordsFor })}</p> : null}
+      {tile.exam?.kind === "soon" ? <p className="soon num" data-exam="soon">{comingSoon ?? t("learn.skillSheet.nextSoon")}</p> : null}
+      {tile.exam?.kind === "wait" ? (
+        <p className="soon num" data-exam="wait">
+          {t("learn.skillSheet.exam.wait", { level: tile.exam.next, date: tile.exam.until })}
+        </p>
+      ) : null}
       <div className="ss-foot">
         {playable(tile) && !locked ? (
           <button
@@ -460,6 +486,11 @@ function SkillDetails({ tile, locked, onPractice, onClose }: { tile: SkillTile; 
           >
             {t("learn.skillSheet.practice", { skill: name })}
           </button>
+        ) : null}
+        {(tile.exam?.kind === "ready" || tile.exam?.kind === "running") && !locked ? (
+          <Link className="secondary" href={`/learn/${language}/exam/${tile.skill}`} data-exam={tile.exam.kind} onClick={() => sfx("page", 0.4)}>
+            {tile.exam.kind === "running" ? t("learn.skillSheet.exam.resume") : t("learn.skillSheet.exam.skip", { level: tile.exam.next })}
+          </Link>
         ) : null}
         <button type="button" className="ghost" onClick={onClose}>
           {t("learn.skillSheet.close")}

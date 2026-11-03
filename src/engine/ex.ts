@@ -158,6 +158,8 @@ export type RawAnswer =
   | { rows: string[] }
   /** Cards without a score: intro card, lesson, «این دو را قاطی می‌کنی», «کلمه‌های این متن», the start of a phonics round. */
   | { seen: true }
+  /** «این را بلدم» on a new word's intro card or a new unit's lesson (PRD §11.5). */
+  | { iknow: true }
   /** The start of a phonics round set aside: «بعداً» (PRD §8.4), or left out because the learner cannot listen now (§10.12). */
   | { skip: "later" | "drop" }
   /** P5: the gaps marked, each the index of the word before it. */

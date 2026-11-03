@@ -6,9 +6,12 @@ import { endSession, getCurrentUser } from "@/server/auth/session";
 import { isLanguage } from "@/server/content/languages";
 import { forgetContent } from "@/server/learn/content";
 import { resetProgress, SESSION_LENGTHS, setSessionLength, startFromZero } from "@/server/learn/enroll";
+import { beginExam, EXAM_SKILLS, examInput, examScreen, type ExamInput, type ExamScreen } from "@/server/learn/exam";
 import { beginPlacement, placementInput, type PlacementInput, type PlacementScreen } from "@/server/learn/placement";
+import type { SkillName } from "@/engine/state";
 import { TRAVEL_DAYS } from "@/lib/travel";
 import { travelDays } from "@/server/learn/time-travel";
+import { acceptLevelDown } from "@/server/learn/leveldown";
 
 async function signedIn() {
   const user = await getCurrentUser();
@@ -51,6 +54,35 @@ export async function startFromHere(language: string) {
   if (!isLanguage(language)) return;
   await placementInput(user, language, { stop: true }, null);
   redirect(`/learn/${language}/placement`);
+}
+
+const isSkill = (value: string): value is SkillName => (EXAM_SKILLS as readonly string[]).includes(value);
+
+/** «شروع آزمون» on the exam's first page (PRD §11.6): the exam, or the one half-way; its first screen comes back. */
+export async function beginSkillExam(language: string, skill: string): Promise<ExamScreen | null> {
+  const user = await signedIn();
+  if (!isLanguage(language) || !isSkill(skill)) return null;
+  const started = await beginExam(user, language, skill);
+  if (started === "unavailable") return null;
+  return examScreen(user, language, skill);
+}
+
+/** One answer of a level exam; the next screen, or the result, comes back (PRD §11.6). */
+export async function examStep(language: string, skill: string, input: ExamInput, number: number): Promise<ExamScreen | null> {
+  const user = await signedIn();
+  if (!isLanguage(language) || !isSkill(skill)) return null;
+  // No revalidation here: it would draw this page again, which sends a finished exam home before its
+  // result is seen. The home is dynamic and is read fresh when the result's button goes there.
+  return examInput(user, language, skill, input, number);
+}
+
+/** «بله» on «یک سطح پایین‌تر برویم؟» at the end of a session (PRD §11.7). */
+export async function levelDown(sessionId: string): Promise<boolean> {
+  const user = await signedIn();
+  if (!/^[0-9a-f-]{36}$/.test(sessionId)) return false;
+  const done = await acceptLevelDown(user, sessionId);
+  if (done === "done") revalidatePath("/learn", "layout");
+  return done === "done";
 }
 
 /** The session length in the settings sheet; the same for both languages (PRD §3.1). */

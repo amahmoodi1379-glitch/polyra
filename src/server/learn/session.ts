@@ -5,7 +5,7 @@ import { buildSession, type BuildEffects, type BuildOptions } from "@/engine/ses
 import { closeRounds } from "@/engine/session/play";
 import type { Scope, SessionPlan } from "@/engine/session/types";
 import { num, type Settings } from "@/engine/settings";
-import { parseItemKey, type LearnerSnapshot } from "@/engine/state";
+import { parseItemKey, type LearnerSnapshot, type SkillName } from "@/engine/state";
 import { tehranDate } from "@/engine/time";
 import type { Prisma, Session } from "@/generated/prisma/client";
 import { db } from "@/server/db";
@@ -40,9 +40,17 @@ export type EndSummary = {
   tomorrow: number;
   /** At most one message (PRD §3.11). «shorter» without `to` reminds a 10-minute learner of «امروز وقت کم دارم». */
   message: EndMessage | null;
+  /** «مسیر عمومی را تا B2 تمام کردی» (PRD §3.13): once, in place of the end screen, with what was learned. */
+  pathDone?: { level: string; words: number; units: number; texts: number; days: number } | null;
 };
 export type EndMessage =
+  /** «یک سطح پایین‌تر برویم؟» (PRD §11.7); `applied` once «بله» was pressed. */
+  | { kind: "leveldown"; skill: SkillName; from: string; to: string; applied?: boolean }
   | { kind: "shorter"; from: number; to: number | null }
+  /** «از این سطح متن‌ها بلندترند. جلسه‌ها را ۱۵ دقیقه‌ای کنم؟» (PRD §3.11 row 3). */
+  | { kind: "longer"; to: number }
+  /** «زیاد «این را بلدم» زدی…» (PRD §3.11 row 4): the skill whose exam is on offer. */
+  | { kind: "skipTest"; skill: "vocab" | "grammar"; next: string }
   | { kind: "slowPace" }
   | { kind: "phonicsOff" }
   /** The placement sample failed (PRD §11.4): «… از A2 ادامه می‌دهیم». Before every other message (DECISIONS.md). */

@@ -1,4 +1,4 @@
-import { applyConfusion, applyRound, applySingle, leechPair, newItemState, type AnswerCtx, type RoundOutcome, type SingleOutcome } from "../answer";
+import { applyConfusion, applyRound, applySingle, leechPair, newItemState, probationState, type AnswerCtx, type RoundOutcome, type SingleOutcome } from "../answer";
 import type { QuestionC, QuestionSetName, Track } from "../content";
 import type { Ex, RawAnswer } from "../ex";
 import { grade, type GradeOutcome, type Graded } from "../grade";
@@ -39,7 +39,7 @@ export type PlayEnv = {
 };
 
 export type PlayLog = {
-  kind: "intro" | "review" | "followup" | "practice" | "drill" | "placement" | "text_attempt" | "phonics" | "self" | "dialogue" | "errorfix";
+  kind: "intro" | "pretest" | "review" | "followup" | "practice" | "drill" | "placement" | "text_attempt" | "phonics" | "self" | "dialogue" | "errorfix";
   itemType: string | null;
   itemId: number | null;
   code: string | null;
@@ -114,6 +114,8 @@ export type PlayResult =
       production?: ProductionOutcome | null;
       /** An answer that counts in the placement sample (PRD §11.4): a sample card's first review, or a grammar sample sentence. */
       sample?: SampleAnswer | null;
+      /** «این را بلدم» pressed, or a «پیش‌آزمون» answered (PRD §11.5): for today's counts and the pretest mode. */
+      known?: { kind: "iknow" | "pretest"; ok: boolean } | null;
       advanced: Advanced;
     };
 
@@ -251,6 +253,15 @@ export function playCard(plan: SessionPlan, cardId: string, answer: RawAnswer, t
     return { done: true, card, ...empty, log, production: { kind: "errorfix", itemId: prod.view.id, attempt: prod.attempt, graded, state }, advanced };
   }
 
+  // «این را بلدم» (PRD §11.5): a probation card instead of the item's first exercises, which leave the session.
+  if ("iknow" in answer) {
+    if ((card.t !== "intro" && card.t !== "lesson") || !card.probationStep || !parsed || (plan.counters.iknowLeft ?? 0) <= 0) throw new Error(`«این را بلدم» is not offered on card ${cardId}`);
+    const state = probationState(parsed.type, parsed.id, card.probationStep, "single", "i_know", ctx.now, ctx.settings);
+    const advanced = advance(plan, { cardId, result: "seen", known: "iknow", elapsedSec: timing.elapsedSec }, ctx.settings);
+    const log: PlayLog = { ...base, code: null, raw: "iknow" };
+    return { done: true, card, ex: null, graded: null, log, single: null, round: null, state, roundState: null, notebook: [], pair: null, drill: null, text: null, keyWords: [], phonics: null, phonicsLater: false, known: { kind: "iknow", ok: true }, advanced };
+  }
+
   // Cards without a score (PRD §9.2, kind intro); «کلمه‌های این متن» sends its words to the queue (PRD §7.5).
   if (card.t === "intro" || card.t === "lesson" || card.t === "table" || card.t === "confusion" || card.t === "textwords") {
     const advanced = advance(plan, { cardId, result: "seen", elapsedSec: timing.elapsedSec }, ctx.settings);
@@ -263,6 +274,15 @@ export function playCard(plan: SessionPlan, cardId: string, answer: RawAnswer, t
   const outcome = grade(ex, answer, { language: env.language, wordsWithLemma: env.wordsWithLemma });
   if (outcome.result === "synonym" || outcome.result === "persian") return { done: false, outcome };
   const graded = outcome;
+
+  // «پیش‌آزمون» (PRD §11.5): right is a probation card and the rest of the block goes; wrong or «نمی‌دانم» costs nothing and the intro card comes.
+  if (card.t === "pretest") {
+    const ok = graded.result === "correct" || graded.result === "near";
+    const state = ok && parsed && card.probationStep ? probationState(parsed.type, parsed.id, card.probationStep, "single", "pretest", ctx.now, ctx.settings) : null;
+    const advanced = advance(plan, { cardId, result: "seen", known: ok ? "pretest" : null, elapsedSec: timing.elapsedSec }, ctx.settings);
+    const log: PlayLog = { ...base, kind: "pretest", result: graded.result, reason: graded.reason, raw: graded.raw, chosenWordId: graded.chosenWordId };
+    return { done: true, card, ex, graded, log, single: null, round: null, state, roundState: null, notebook: [], pair: null, drill: null, text: null, keyWords: [], phonics: null, phonicsLater: false, known: { kind: "pretest", ok }, advanced };
+  }
 
   // G0 warm-ups are never scored (PRD §6.5).
   if (card.t === "g0") {
