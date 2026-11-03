@@ -1,6 +1,6 @@
 /**
  * The random test of PRD §16.3: made-up learners with random behaviour (right, wrong, near, «نمی‌دانم»,
- * leaving half-way, also in a text, sound off, «بعداً» on a phonics round, every kind of session, the word-cap and text-session questions, a new session length,
+ * leaving half-way, also in a text, sound off, «این را بلدم» and the pretest mode, «بعداً» on a phonics round, every kind of session, the word-cap and text-session questions, a new session length,
  * switches in the panel and a level closed under them) go day by day through the real engine, and
  * `checkInvariants` runs after every build and every card. A failure names its seed, learner and day,
  * so `RANDOM_SEED=… RANDOM_USERS=… npx vitest run tests/unit/engine/random.test.ts` plays it again.
@@ -42,8 +42,9 @@ function runLearner(user: number): Failure | null {
   const lang = rng() < 0.3 ? "de" : "fr";
   let content: Content = lang === "de" ? contents.de : contents.fr;
   const accuracy = 0.4 + rng() * 0.55;
-  const policy = randomPolicy(accuracy, content.language);
-  let settings: Settings = { ...defaults, "feature.confusion_card": rng() < 0.5 };
+  // Some learners press «این را بلدم» often, enough for the pretest mode where it is switched on (PRD §11.5).
+  const policy = randomPolicy(accuracy, content.language, rng() < 0.4 ? 0.35 : 0.03);
+  let settings: Settings = { ...defaults, "feature.confusion_card": rng() < 0.5, "feature.pretest": rng() < 0.6 };
   let learner: LearnerSnapshot = freshLearner(lang, { sessionLength: pick(rng, [10, 15, 20, 30]), phonicsAuto: rng() < 0.6 });
   // Some learners see the teacher close every level above A1 on a random day (PRD §13.5).
   const closeDay = lang === "fr" && rng() < 0.3 ? 1 + Math.floor(rng() * DAYS) : null;
@@ -57,6 +58,7 @@ function runLearner(user: number): Failure | null {
       settings = { ...settings, [`exercise.${code}.enabled`]: !(settings[`exercise.${code}.enabled`] ?? true) };
     }
     if (rng() < 0.05) settings = { ...settings, "feature.confusion_card": !settings["feature.confusion_card"] };
+    if (rng() < 0.05) settings = { ...settings, "feature.pretest": !settings["feature.pretest"] };
     if (rng() < 0.05) learner = { ...learner, sessionLength: pick(rng, [10, 15, 20, 30]) };
 
     const sessions = 1 + Math.floor(rng() * 3);

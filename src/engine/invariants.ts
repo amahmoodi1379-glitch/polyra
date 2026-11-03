@@ -135,6 +135,7 @@ function checkBuild(input: InvariantInput, build: NonNullable<InvariantInput["bu
     // 12. No switched-off exercise or feature.
     for (const ex of exercisesOf(card)) if (!exerciseOn(settings, ex.code)) out.push({ rule: 12, detail: `${card.item} ${ex.code} is switched off` });
     if (card.t === "confusion" && !flag(settings, "feature.confusion_card")) out.push({ rule: 12, detail: "confusion card while switched off" });
+    if (card.t === "pretest" && !(flag(settings, "feature.pretest") && before.enrollment.pretestMode)) out.push({ rule: 12, detail: `pretest of ${card.item} while switched off` });
     // 10. No phonics round without sound; one round at most, only in the auto mode's mixed and vocabulary sessions or in «الفبا و تلفظ» (PRD §8.4).
     if (card.t === "phonics") {
       if (plan.noAudio) out.push({ rule: 10, detail: `phonics round ${card.item} without sound` });
@@ -197,6 +198,8 @@ function checkLearner(input: InvariantInput, out: Violation[]) {
     ["units", today.newUnits, "new.units_daily"],
     ["tables", today.newConj, "new.conj_daily"],
     ["queue", today.queueWords, "queue.daily"],
+    ["«این را بلدم»", today.iKnow, "iknow.daily"],
+    ["passed pretests", today.pretestPassed, "pretest.daily"],
   ];
   for (const [what, count, key] of caps) if (count > num(settings, key)) out.push({ rule: 6, detail: `${count} new ${what} today, cap ${num(settings, key)}` });
   if (today.wordsCapToday !== null && today.newWords > today.wordsCapToday) out.push({ rule: 6, detail: `${today.newWords} new words, today's cap ${today.wordsCapToday}` });

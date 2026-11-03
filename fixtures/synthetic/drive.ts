@@ -19,13 +19,17 @@ import { closeLeft, finishLevels, newDay, record } from "./learner";
 
 export { nearAnswer, productionAnswer, rightAnswer, rightQuestion, slipAnswer, textAnswers, wrongAnswer, wrongQuestion, type Policy } from "../../src/sim/answers";
 
-/** Right with probability `p` (a tenth of the typed ones a near slip), else a wrong option, a typo or «نمی‌دانم». */
+/**
+ * Right with probability `p` (a tenth of the typed ones a near slip), else a wrong option, a typo or «نمی‌دانم».
+ * «این را بلدم» with probability `iknow` where it is offered (PRD §11.5).
+ */
 export const randomPolicy =
-  (p: number, language: Lang): Policy =>
+  (p: number, language: Lang, iknow = 0): Policy =>
   (card, ex, rng, info) => {
     const latencyMs = 2000 + Math.floor(rng() * 14000);
     if (card.t === "text") return { answer: textAnswers(info.plan, card, rng, p), latencyMs: latencyMs * 10 };
     if (card.prod) return { answer: productionAnswer(card, rng, p), latencyMs: latencyMs * 3 };
+    if (iknowOffered(card, info.plan) && rng() < iknow) return { answer: { iknow: true }, latencyMs };
     if (!ex) return { answer: { seen: true }, latencyMs };
     if (rng() >= p) return { answer: slipAnswer(ex, rng), latencyMs };
     return { answer: (rng() < 0.1 && nearAnswer(ex, language)) || rightAnswer(ex), latencyMs };
@@ -44,6 +48,9 @@ export const withAccuracy =
     answer: card.t === "text" ? textAnswers(info.plan, card, rng, p) : card.prod ? productionAnswer(card, rng, p) : ex ? (rng() < p ? rightAnswer(ex) : wrongAnswer(ex)) : { seen: true },
     latencyMs: 3000 + Math.floor(rng() * 9000),
   });
+
+/** Whether the card shows «این را بلدم» (PRD §11.5), as the player decides. */
+export const iknowOffered = (card: Card, plan: SessionPlan) => (card.t === "intro" || card.t === "lesson") && !!card.probationStep && (plan.counters.iknowLeft ?? 0) > 0;
 
 export type Played = {
   learner: LearnerSnapshot;

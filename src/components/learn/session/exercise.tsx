@@ -36,6 +36,8 @@ export type ExerciseProps = {
   muted: boolean;
   tip: boolean;
   onTap?: (gloss: Gloss) => void;
+  /** A «پیش‌آزمون» (PRD §11.5): «نمی‌دانم» is prominent. */
+  pretest?: boolean;
 };
 
 /** Sentence listening (PRD §7.6): the sentence is heard, and its text and translation come only with the answer. */
@@ -136,10 +138,10 @@ function SlowButton({ id, speak }: { id: string; speak: Speak }) {
   );
 }
 
-function Idk({ ex, verdict, submit }: Pick<ExerciseProps, "ex" | "verdict" | "submit">) {
+function Idk({ ex, verdict, submit, pretest }: Pick<ExerciseProps, "ex" | "verdict" | "submit" | "pretest">) {
   if (!ex.idk || verdict) return null;
   return (
-    <button type="button" className="ghost idk" onClick={() => submit({ idk: true })}>
+    <button type="button" className={pretest ? "secondary idk" : "ghost idk"} onClick={() => submit({ idk: true })}>
       {t("learn.session.idk")}
     </button>
   );

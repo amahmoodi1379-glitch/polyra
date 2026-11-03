@@ -11,8 +11,12 @@ import { afterDrill } from "../../src/engine/drill";
 import { applySampleAnswer } from "../../src/engine/placement";
 import { phonicsSkipsAfter } from "../../src/engine/phonics";
 import { textLevelsAfter } from "../../src/engine/texts";
+import { newWordEvents, pretestModeAfter } from "../../src/engine/pretest";
 import { isItemKey, itemKey, type DailyE, type ItemHistory, type LearnerSnapshot, type SkillName } from "../../src/engine/state";
 import type { Settings } from "../../src/engine/settings";
+
+/** The learner in memory: the snapshot and what the server reads from its log, the words whose «پیش‌آزمون» was wrong. */
+export type SimLearner = LearnerSnapshot & { pretestFailed?: number[] };
 
 /** A day's counters before any session. */
 export const emptyDay = (date: string): DailyE => ({
@@ -26,6 +30,8 @@ export const emptyDay = (date: string): DailyE => ({
   activeSec: 0,
   newTextSec: { listening: 0, reading: 0 },
   textSessionDone: false,
+  iKnow: 0,
+  pretestPassed: 0,
 });
 
 export function freshLearner(language: string, opts: { sessionLength?: number; vocabLevel?: string; knownBelow?: string; phonicsAuto?: boolean } = {}): LearnerSnapshot {
@@ -82,8 +88,8 @@ export function newDay(learner: LearnerSnapshot, today: string): LearnerSnapshot
 }
 
 /** Writes one finished card into the learner, as the server does in the database. */
-export function record(learner: LearnerSnapshot, result: Extract<PlayResult, { done: true }>, settings: Settings, now: Date, today: string, latencyMs: number): LearnerSnapshot {
-  const next: LearnerSnapshot = {
+export function record<L extends SimLearner>(learner: L, result: Extract<PlayResult, { done: true }>, settings: Settings, now: Date, today: string, latencyMs: number): L {
+  const next: L = {
     ...learner,
     history: new Map(learner.history),
     sentenceSeen: new Map(learner.sentenceSeen),
@@ -94,11 +100,17 @@ export function record(learner: LearnerSnapshot, result: Extract<PlayResult, { d
   const upsert = (state: NonNullable<typeof result.state>) => {
     const exists = next.items.some((item) => item.itemType === state.itemType && item.itemId === state.itemId);
     if (!exists) {
+      // «این را بلدم» and a passed «پیش‌آزمون» have their own counts, not the new-material caps (PRD §11.5).
+      const known = state.source === "i_know" || state.source === "pretest";
+      if (state.source === "i_know") next.today.iKnow++;
+      else if (state.source === "pretest") next.today.pretestPassed++;
       if (state.itemType === "word") {
-        next.today.newWords++;
-        if (result.advanced.plan.items[itemKey("word", state.itemId)]?.queued) next.today.queueWords++;
+        if (!known) next.today.newWords++;
+        if (!known && result.advanced.plan.items[itemKey("word", state.itemId)]?.queued) next.today.queueWords++;
         next.queue = next.queue.filter((row) => row.wordId !== state.itemId);
         next.recentIntroWordIds = [state.itemId, ...next.recentIntroWordIds].slice(0, 20);
+      } else if (known) {
+        // A unit passed with «این را بلدم».
       } else if (state.itemType === "grammar_unit") next.today.newUnits++;
       else next.today.newConj++;
     }
@@ -108,6 +120,12 @@ export function record(learner: LearnerSnapshot, result: Extract<PlayResult, { d
   if (isItemKey(key) && !next.touchedToday.includes(key)) next.touchedToday = [...next.touchedToday, key];
   if (result.state) upsert(result.state);
   if (result.roundState) upsert(result.roundState);
+  // «حالت پیش‌آزمون» after a new word or a «پیش‌آزمون» (PRD §11.5), as `answer.ts` does.
+  if (result.known?.kind === "pretest" && !result.known.ok && result.card.item.startsWith("w:")) next.pretestFailed = [...(next.pretestFailed ?? []), Number(result.card.item.slice(2))];
+  if (result.known || (result.state?.itemType === "word" && !learner.items.some((item) => item.itemType === "word" && item.itemId === result.state!.itemId))) {
+    const pretestMode = pretestModeAfter(!!next.enrollment.pretestMode, newWordEvents(next.items, new Set(next.pretestFailed ?? [])), settings);
+    if (pretestMode !== !!next.enrollment.pretestMode) next.enrollment = { ...next.enrollment, pretestMode };
+  }
   if (result.notebook.length) next.notebook = applyNotebook(next.notebook, result.notebook, now, today, settings);
   if (result.pair) {
     const pair = result.pair;

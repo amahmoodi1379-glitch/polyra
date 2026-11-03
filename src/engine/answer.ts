@@ -43,6 +43,28 @@ export function newItemState(itemType: ItemType, itemId: number, now: Date, sour
   };
 }
 
+/**
+ * A probation card (PRD §9.7): the item claimed known and not yet shown, on its probation step with one
+ * virtual Easy review (so the first real one is about eight days later), or on `due` when given (the
+ * placement sample, §11.4).
+ */
+export function probationState(
+  itemType: ItemType,
+  itemId: number,
+  step: number,
+  kind: "single" | "sample",
+  source: ItemSource,
+  now: Date,
+  settings: Settings,
+  due: Date | null = null,
+): ItemStateE {
+  const fsrs = rateCard(emptyCard(now), "easy", now, settings, false);
+  return { ...newItemState(itemType, itemId, now, source), step, fsrs: due ? withDue(fsrs, due) : fsrs, probation: kind };
+}
+
+/** The step a word's probation card starts on (PRD §9.7): 5, a recognize word 3, a colloquial one 2. */
+export const PROBATION_STEP = { produce: 5, recognize: 3, colloquial: 2, unit: 5 } as const;
+
 /** "Fast": below `fast.ratio` of the learner's median for the code, with enough earlier answers (PRD §9.2). */
 export function isFast(code: string, latencyMs: number, ctx: AnswerCtx): boolean {
   const known = ctx.latency[code];
@@ -303,8 +325,13 @@ export function applyRound(state: ItemStateE, step: number, answers: RoundAnswer
   if (answers.length < SHAPE.roundMin) return { ...base, scored: false };
 
   const s = answers.filter((answer) => answer.result === "correct" || answer.result === "near").length / answers.length;
-  let next: ItemStateE = { ...state, roundsCount: state.roundsCount + 1, firstReviewDone: true };
+  let next: ItemStateE = { ...state, roundsCount: state.roundsCount + 1, firstReviewDone: true, probation: "none" };
   const typedRound = step >= TYPED_ROUND_FROM_STEP;
+  // A unit's probation (PRD §9.7): its first round, at step 5, below a pass is Again, step 1 and the lesson again.
+  if (state.probation !== "none" && s < SHAPE.roundHard) {
+    next = { ...next, typedOnce: next.typedOnce || typedRound, fsrs: rateCard(next.fsrs, "again", ctx.now, ctx.settings), step: 1 };
+    return { ...base, scored: true, state: next, s, rating: "again", stepAfter: 1, lessonAgain: true, paceSample: true };
+  }
   let firstTyping = false;
   let rating: FsrsRating;
 

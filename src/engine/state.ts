@@ -51,6 +51,9 @@ export type DailyE = {
   /** Seconds of new text today in each track (PRD §10.5) and whether a text session was built (§10.11). */
   newTextSec: { listening: number; reading: number };
   textSessionDone: boolean;
+  /** «این را بلدم» pressed today and words passed with «پیش‌آزمون» (PRD §11.5); neither counts in `newWords`. */
+  iKnow: number;
+  pretestPassed: number;
 };
 
 export type SkillName = "vocab" | "grammar" | "listening" | "reading";
@@ -122,6 +125,8 @@ export type EnrollmentE = {
   freezeCheckedWeek: string | null;
   /** The day «بعداً» was pressed on the text session prompt (PRD §10.11). */
   textPromptDate: string | null;
+  /** New words come first as a «پیش‌آزمون» (PRD §11.5); only with `feature.pretest`. */
+  pretestMode?: boolean;
 };
 
 /** What happened to one item before, for exercise choice (PRD §9.3) and sentence choice (§5.7, §6.5). */

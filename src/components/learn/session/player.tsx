@@ -613,6 +613,8 @@ export function Player({ language, languageName, scope: firstScope }: { language
   const verdict = done?.graded ?? null;
   let body: ReactNode;
   let cta: ReactNode = null;
+  // «این را بلدم» beside the button on a new word's intro card and a new unit's lesson, while today's presses last (PRD §11.5).
+  const iknowLeft = (card.t === "intro" || card.t === "lesson") && card.probationStep ? (plan.counters.iknowLeft ?? 0) : 0;
   const seen = (label: string) => (
     <div className="cta">
       <button
@@ -626,6 +628,20 @@ export function Player({ language, languageName, scope: firstScope }: { language
       >
         {label}
       </button>
+      {iknowLeft > 0 ? (
+        <button
+          type="button"
+          className="ghost"
+          data-iknow
+          title={iknowLeft === 1 ? t("learn.session.iknowLast") : t("learn.session.iknowLeft", { n: iknowLeft - 1 })}
+          onClick={() => {
+            sfx("release", 0.3);
+            submit({ iknow: true });
+          }}
+        >
+          {t("learn.session.iknow")}
+        </button>
+      ) : null}
     </div>
   );
 
@@ -737,18 +753,22 @@ export function Player({ language, languageName, scope: firstScope }: { language
     cta = seen(t("learn.session.gotIt"));
   } else if (ex) {
     body = (
-      <Exercise
-        key={`${card.id}:${ex.id}`}
-        id={card.id}
-        ex={ex}
-        language={language}
-        languageName={languageName}
-        verdict={verdict}
-        submit={submit}
-        muted={muted}
-        tip={tip}
-        onTap={tap}
-      />
+      <>
+        {card.t === "pretest" && !verdict ? <p className="pretest-note">{t("learn.session.pretest")}</p> : null}
+        <Exercise
+          key={`${card.id}:${ex.id}`}
+          id={card.id}
+          ex={ex}
+          language={language}
+          languageName={languageName}
+          verdict={verdict}
+          submit={submit}
+          muted={muted}
+          tip={tip}
+          onTap={tap}
+          pretest={card.t === "pretest"}
+        />
+      </>
     );
   }
   if (!body) {
@@ -764,7 +784,7 @@ export function Player({ language, languageName, scope: firstScope }: { language
         {body}
       </div>
       {cta}
-      {done && verdict && ex ? <Feedback verdict={verdict} ex={ex} card={card} plan={plan} language={language} muted={muted} onContinue={() => advance(done)} /> : null}
+      {done && verdict && ex ? <Feedback verdict={verdict} ex={ex} card={card} plan={plan} language={language} muted={muted} pretest={card.t === "pretest"} onContinue={() => advance(done)} /> : null}
     </Frame>
   );
 }

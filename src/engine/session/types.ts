@@ -43,6 +43,8 @@ export type CardKind =
   | "phonicsq"
   /** «بگو، بعد بشنو» (S1, PRD §8b.2): judged by the learner; its item is `s:<sentence id>`. */
   | "speak"
+  /** «پیش‌آزمون» (PRD §11.5): a new word asked first with W1a; right makes it a probation card, else the intro card comes. */
+  | "pretest"
   /** A whole situational dialogue on one screen, turn by turn (S3, PRD §8b.4); its item is `d:<dialogue id>`. */
   | "dialogue"
   /** A find-the-mistake text (S4, PRD §8b.5); its item is `e:<item id>`. */
@@ -129,6 +131,11 @@ export type Card = {
   words?: number[];
   /** A speaking card (S1, S3, S4). */
   prod?: ProdCard;
+  /**
+   * «این را بلدم» on a new word's intro card or a new unit's lesson (PRD §11.5), and «پیش‌آزمون»: the step
+   * of the probation card it makes (PRD §9.7: 5, a recognize word 3, a colloquial one 2).
+   */
+  probationStep?: number;
 };
 
 /** Exercises made in advance for one single-exercise item (PRD §10.7). */
@@ -187,6 +194,8 @@ export type Counters = {
   /** Right (or nearly right) and wrong answers for the end screen; «نمی‌دانم» is neither. */
   correct: number;
   wrong: number;
+  /** «این را بلدم» left today (PRD §11.5, `iknow.daily`); absent in plans saved before it existed: no button. */
+  iknowLeft?: number;
 };
 
 export type SessionPlan = {

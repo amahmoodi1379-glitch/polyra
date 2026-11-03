@@ -1,6 +1,6 @@
-import { newItemState, strongestPartner } from "../answer";
+import { newItemState, PROBATION_STEP, strongestPartner } from "../answer";
 import { buildG0, buildGrammarEx, buildWordEx, type BuildEnv } from "../build";
-import { grammarSampleDue, typoForms } from "../placement";
+import { grammarSampleDue, typoForms, wordProbationStep } from "../placement";
 import { genderButtons, levelIndex, type ConjC, type Content, type Track, type UnitC, type WordC } from "../content";
 import { buildDrillEx, drillGate, drillKey, drillOrder } from "../drill";
 import type { Ex } from "../ex";
@@ -25,7 +25,7 @@ import {
 } from "../production";
 import { buildRound, CONJ_LAST_STEP, lastStepOfUnit, lastStepOfWord, pickConjEx, pickTargetEx, pickUnitEx, pickWordEx, type Purpose } from "../pick";
 import { seeded, shuffle } from "../random";
-import { num, type Settings } from "../settings";
+import { flag, num, type Settings } from "../settings";
 import { isItemKey, itemKey, parseItemKey, sampleKey, type ConfusionE, type ItemStateE, type ItemType, type LearnerSnapshot, type NotebookE, type SkillName } from "../state";
 import {
   attemptCost,
@@ -823,6 +823,8 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
     /** What a pack may cost: the time left and a little more (PRD §10.2, `session.overrun`). */
     const room = () => left * (1 + num(settings, "session.overrun"));
 
+    // «پیش‌آزمون» (PRD §11.5): in pretest mode a new word not from the queue and not a new meaning is asked first, up to `pretest.daily` passed a day.
+    let pretestRoom = flag(settings, "feature.pretest") && learner.enrollment.pretestMode ? Math.max(0, num(settings, "pretest.daily") - learner.today.pretestPassed) : 0;
     const vocabPack = (): Entry[] | null => {
       if (wordRoom <= 0) return null;
       const { words, fromQueue } = nextNewWords(
@@ -842,7 +844,9 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
         // "Up to three": a short session in backlog mode still gets the one or two that fit (PRD §10.6 example, T21).
         if (total + cost > room()) break;
         total += cost;
-        out.push({ t: "newword", key: itemKey("word", word.id), word, ex: built.primary, alt, cost, planItem: built.item });
+        const pretest = i >= fromQueue && !word.senseOf && pretestRoom > 0 ? buildWordEx(env, word, "W1a") : null;
+        if (pretest) pretestRoom--;
+        out.push({ t: "newword", key: itemKey("word", word.id), word, ex: built.primary, alt, cost, planItem: built.item, ...(pretest ? { pretest } : {}) });
       }
       return out.length ? out : null;
     };
@@ -1106,14 +1110,17 @@ function assemble(
       const { lesson, round, repeat } = entry.pick;
       phonics = { lessonId: lesson.id, round, repeat, auto: entry.auto, view: entry.view, before: learner.phonics.find((state) => state.lessonId === lesson.id) ?? null, answers: [] };
     } else if (entry.t === "newword") {
-      queue.push({ id: id(), t: "intro", item: entry.key, block, fresh: true });
+      // «این را بلدم» on the intro card, unless a «پیش‌آزمون» came first (PRD §11.5).
+      const probationStep = wordProbationStep(entry.word);
+      if (entry.pretest) queue.push({ id: id(), t: "pretest", item: entry.key, ex: entry.pretest, alt: null, block, fresh: true, probationStep });
+      queue.push({ id: id(), t: "intro", item: entry.key, block, fresh: true, ...(entry.pretest ? {} : { probationStep }) });
       queue.push({ id: id(), t: "ex", item: entry.key, kind: "review", ex: entry.ex, alt: entry.alt ?? null, block, fresh: true });
     } else if (entry.t === "newconj") {
       queue.push({ id: id(), t: "table", item: entry.key, block, fresh: true });
       queue.push({ id: id(), t: "ex", item: entry.key, kind: "review", ex: entry.ex, alt: null, block, fresh: true });
     } else {
       const fresh = entry.t === "newunit";
-      if (entry.t === "newunit" || entry.lesson) queue.push({ id: id(), t: "lesson", item: entry.key, block, ...(fresh ? { fresh } : {}) });
+      if (entry.t === "newunit" || entry.lesson) queue.push({ id: id(), t: "lesson", item: entry.key, block, ...(fresh ? { fresh, probationStep: PROBATION_STEP.unit } : {}) });
       if (entry.t === "newunit") for (const ex of entry.g0) queue.push({ id: id(), t: "g0", item: entry.key, ex, block, fresh });
       entry.questions.forEach((ex, i) =>
         queue.push({
@@ -1208,7 +1215,7 @@ function assemble(
     pairsAtStart: [...pairs.keys()],
     latency: learner.latency,
     rounds,
-    counters: { answered: 0, ok: 0, wrongStreak: 0, rescuePending: false, practice: {}, correct: 0, wrong: 0 },
+    counters: { answered: 0, ok: 0, wrongStreak: 0, rescuePending: false, practice: {}, correct: 0, wrong: 0, iknowLeft: Math.max(0, num(settings, "iknow.daily") - learner.today.iKnow) },
     summary: { reviews, newItems: summary.newWords + summary.newUnits + summary.newConj + newTexts, ...summary, newTexts, resumeText },
   };
 }

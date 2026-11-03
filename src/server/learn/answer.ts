@@ -12,9 +12,9 @@ import { db } from "@/server/db";
 import { logError } from "@/server/errors";
 import { finishSession } from "./finish";
 import { recordSample } from "./placement";
-import { loadPhonicsStates, textStateRow } from "./learner";
+import { asDate, loadPhonicsStates, textStateRow } from "./learner";
 import { bundleOf, closeSession, expiresAt, learnContext, SESSION_LIFE_MS, type Bundle, type EndSummary, type Learner, type StoredPlan } from "./session";
-import { addDaily, applyNotebookOps, saveConfusion, saveItemState, type DailyAdd } from "./writes";
+import { addDaily, applyNotebookOps, saveConfusion, saveItemState, updatePretestMode, type DailyAdd } from "./writes";
 
 /**
  * One finished card, sent by the browser (PRD §15.4): checked against the saved plan, graded again
@@ -108,6 +108,13 @@ export async function submitAnswer(user: Learner, request: AnswerRequest, server
         if (!schemas[shownCard.prod.kind].safeParse(request.answer).success) return { kind: "invalid" };
       }
       const today = tehranDate(at);
+      // «این را بلدم» (PRD §11.5): only on a card that offers it, while today's presses in every session are under `iknow.daily`.
+      if ("iknow" in request.answer) {
+        const offered = (shownCard.t === "intro" || shownCard.t === "lesson") && !!shownCard.probationStep && (plan.counters.iknowLeft ?? 0) > 0;
+        if (!offered || request.answer.iknow !== true || Object.keys(request.answer).length !== 1) return { kind: "invalid" };
+        const day = await tx.dailyCounter.findUnique({ where: { user_id_language_date_tehran: { user_id: user.id, language: row.language, date_tehran: asDate(today) } }, select: { i_know: true } });
+        if ((day?.i_know ?? 0) >= num(ctx.settings, "iknow.daily")) return { kind: "invalid" };
+      }
       const lexicon = ctx.content.lemmaIndex;
       const result = playCard(
         plan,
@@ -169,23 +176,34 @@ export async function submitAnswer(user: Learner, request: AnswerRequest, server
 
       // Active learning (PRD §3.9): every answer and every intro card or lesson, each up to a minute.
       const add: DailyAdd = { active_sec: Math.round(Math.min(request.latencyMs / 1000, num(ctx.settings, "active.cap_sec"))) };
+      let newWord = false;
       for (const state of [result.state, result.roundState]) {
         if (!state) continue;
         const isNew = await saveItemState(tx, who, state);
         if (!isNew) continue;
+        if (state.itemType === "word") newWord = true;
+        // «این را بلدم» and a passed «پیش‌آزمون» have their own daily counts, not the new-material caps (PRD §11.5).
+        const known = state.source === "i_know" || state.source === "pretest";
+        if (state.source === "i_know") add.i_know = (add.i_know ?? 0) + 1;
+        else if (state.source === "pretest") add.pretest_passed = (add.pretest_passed ?? 0) + 1;
         if (state.itemType === "word") {
-          add.new_words = (add.new_words ?? 0) + 1;
-          // A word from the queue leaves it and keeps where it came from (PRD §4, `item_state.source`).
+          if (!known) add.new_words = (add.new_words ?? 0) + 1;
+          // A word from the queue leaves it (PRD §11.5 edge cases) and, unless claimed known, keeps where it came from (PRD §4, `item_state.source`).
           const queued = await tx.newWordQueue.findUnique({ where: { user_id_word_id: { user_id: user.id, word_id: state.itemId } } });
           if (queued) {
             await tx.newWordQueue.delete({ where: { id: queued.id } });
-            await tx.itemState.updateMany({ where: { user_id: user.id, item_type: "word", item_id: state.itemId }, data: { source: queued.source } });
-            if (plan.items[itemKey("word", state.itemId)]?.queued) add.queue_words = (add.queue_words ?? 0) + 1;
+            if (!known) {
+              await tx.itemState.updateMany({ where: { user_id: user.id, item_type: "word", item_id: state.itemId }, data: { source: queued.source } });
+              if (plan.items[itemKey("word", state.itemId)]?.queued) add.queue_words = (add.queue_words ?? 0) + 1;
+            }
           }
-        } else if (state.itemType === "grammar_unit") add.new_units = (add.new_units ?? 0) + 1;
+        } else if (known) continue;
+        else if (state.itemType === "grammar_unit") add.new_units = (add.new_units ?? 0) + 1;
         else add.new_conj = (add.new_conj ?? 0) + 1;
       }
       await addDaily(tx, who, today, add);
+      // «حالت پیش‌آزمون» after a new word or a «پیش‌آزمون» (PRD §11.5).
+      if (result.known || newWord) await updatePretestMode(tx, who, ctx.settings);
       await applyNotebookOps(tx, who, result.notebook, at, today, ctx.settings);
       if (result.pair) await saveConfusion(tx, who, result.pair);
       // One more showing of a drilled sentence, whatever the answer (PRD §7.6).

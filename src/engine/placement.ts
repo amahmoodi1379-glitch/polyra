@@ -1,4 +1,4 @@
-import { emptyCard, rateCard } from "./fsrs";
+import { PROBATION_STEP, probationState } from "./answer";
 import { buildGrammarEx, buildWordEx, grammarCodeFits, type BuildEnv } from "./build";
 import { hasCard, isColloquial, levelIndex, type Content, type TargetC, type TextC, type Track, type UnitC, type WordC } from "./content";
 import type { Ex } from "./ex";
@@ -36,8 +36,7 @@ export const PLACEMENT_RULE = {
   grammarRounds: 2,
 } as const;
 
-/** The step a probation card starts on (PRD §9.7): a produce word 5, a recognize word 3, a colloquial one 2. */
-export const PROBATION_STEP = { produce: 5, recognize: 3, colloquial: 2 } as const;
+export { PROBATION_STEP };
 
 export type PlacementPart = "vocab" | "grammar" | "texts" | "done";
 
@@ -430,25 +429,12 @@ export type GrammarSample = { level: string; targetIds: number[]; days: string[]
 /** `placement_run.sample_state`. */
 export type SampleState = { vocab: VocabSample | null; grammar: GrammarSample | null };
 
-/** A probation card (PRD §9.7): its step, a virtual Easy review and the given due date. */
+/** The probation step of a word (PRD §9.7): 5, a recognize word 3, a colloquial one 2. */
+export const wordProbationStep = (word: WordC) => (isColloquial(word) ? PROBATION_STEP.colloquial : word.mastery === "recognize" ? PROBATION_STEP.recognize : PROBATION_STEP.produce);
+
+/** A word's probation card (PRD §9.7): its step, a virtual Easy review and the given due date. */
 export function probationCard(word: WordC, kind: "single" | "sample", source: ItemStateE["source"], now: Date, due: Date | null, settings: Settings): ItemStateE {
-  const step = isColloquial(word) ? PROBATION_STEP.colloquial : word.mastery === "recognize" ? PROBATION_STEP.recognize : PROBATION_STEP.produce;
-  const fsrs = rateCard(emptyCard(now), "easy", now, settings, false);
-  return {
-    itemType: "word",
-    itemId: word.id,
-    step,
-    fsrs: due ? { ...fsrs, due: due.toISOString() } : fsrs,
-    probation: kind,
-    source,
-    introducedAt: now.toISOString(),
-    firstReviewDone: false,
-    typedOnce: false,
-    deferredUntil: null,
-    nearStreak: 0,
-    failCount: 0,
-    roundsCount: 0,
-  };
+  return probationState("word", word.id, wordProbationStep(word), kind, source, now, settings, due);
 }
 
 /** How many answers pass a sample of `size` and which wrong one fails it (PRD §11.4: 24 of 30 and the seventh wrong; 8 of 10 and the third). */
