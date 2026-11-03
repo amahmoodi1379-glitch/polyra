@@ -49,6 +49,10 @@ export const E2E_BUYERS = { "learner-phone": "09120000063", "learner-desktop": "
 /** Teachers on the learner server for «پلن‌ها و کدها», «سفارش‌ها» and a manual grant. */
 export const E2E_SELLERS = { "learner-phone": "09120000067", "learner-desktop": "09120000069" } as const;
 
+/** New learners from zero who report an exercise (PRD §13.10), and the teachers who answer them. */
+export const E2E_REPORTERS = { "learner-phone": "09120000071", "learner-desktop": "09120000073" } as const;
+export const E2E_REPORT_ADMINS = { "learner-phone": "09120000075", "learner-desktop": "09120000077" } as const;
+
 /** The plan the learner database starts with, so a buyer has something to buy. */
 export const E2E_PLAN = { name: "یک‌ماهه", days: 30, price: 290_000, badge: "پرفروش" } as const;
 

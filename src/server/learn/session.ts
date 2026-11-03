@@ -292,6 +292,15 @@ export async function closeSession(row: Session, reason: "finished" | "expired" 
     // Levels move with every close, finished or left (PRD §9.6, DECISIONS.md).
     await updateLevels(client, who, ctx, endedAt);
     await client.session.update({ where: { id: row.id }, data: { ended_at: endedAt, end_reason: reason } });
+    // «اولین جلسه» and «پایان جلسه» for the analytics (PRD §15.6).
+    const before = await client.session.count({ where: { user_id: row.user_id, language: row.language, ended_at: { not: null }, id: { not: row.id } } });
+    const props = { session: row.id, reason, answers: Math.max(0, row.next_seq - 1) };
+    await client.event.createMany({
+      data: [
+        ...(before === 0 ? [{ user_id: row.user_id, language: row.language, name: "first_session", props, ts: endedAt }] : []),
+        { user_id: row.user_id, language: row.language, name: "session_end", props, ts: endedAt },
+      ],
+    });
     await startTrialIfFirst(client, row.user_id, row.language, endedAt, num(ctx.settings, "trial.hours"));
   };
   return tx ? run(tx) : db.$transaction(run);

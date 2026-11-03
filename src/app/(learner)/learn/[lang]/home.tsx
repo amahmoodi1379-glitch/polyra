@@ -25,6 +25,8 @@ type Props = {
   account: { admin: boolean; tester: boolean; sessionLength: number };
   lengths: number[];
   freeze: { max: number; minutes: number };
+  /** The home's one notice bar (PRD §3.11): «حق با تو بود» after a report a teacher agreed with. */
+  notice?: "report_fixed" | null;
 };
 
 type Scope = "mixed" | "quick" | "vocab" | "grammar" | "listening" | "reading" | "extra";
@@ -81,7 +83,7 @@ function lockText(tile: SkillTile) {
 /** «یک متن منتظر توست», or «ادامه متن» for one left half-way (PRD §10.4). */
 const waitingText = (tile: SkillTile) => (tile.text === "resume" ? t("learn.home.textResume") : tile.text ? t("learn.home.textWaiting") : null);
 
-export function Home({ data, languageName, languages, account, lengths, freeze }: Props) {
+export function Home({ data, languageName, languages, account, lengths, freeze, notice = null }: Props) {
   const router = useRouter();
   const toast = useToast();
   const device = usePrefs();
@@ -105,6 +107,7 @@ export function Home({ data, languageName, languages, account, lengths, freeze }
     setOpen(which);
   };
 
+  const [bar, setBar] = useState(notice);
   const plan = planText(data.plan);
   const idle = data.start.empty && !data.locked;
   const links = data.links;
@@ -162,6 +165,21 @@ export function Home({ data, languageName, languages, account, lengths, freeze }
               {plan}
             </Link>
           )
+        ) : null}
+        {bar === "report_fixed" ? (
+          <button
+            type="button"
+            className="notice-bar"
+            data-notice="report_fixed"
+            aria-label={`${t("learn.report.fixed")} · ${t("learn.report.close")}`}
+            onClick={() => {
+              sfx("release", 0.35);
+              setBar(null);
+            }}
+          >
+            <Icon name="l-check" className="i" />
+            <span>{t("learn.report.fixed")}</span>
+          </button>
         ) : null}
 
         <div className="hero">

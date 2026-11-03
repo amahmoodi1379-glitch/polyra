@@ -19,6 +19,11 @@ export async function activePlans(language: string): Promise<PlanCard[]> {
 /** Whether the gateway is the test one, so the page can say nothing is charged. */
 export const gatewayIsMock = () => getGateway().isMock;
 
+/** «مشاهده صفحه پلن» for the analytics (PRD §15.6): each time the plans are shown, and whether the language was locked. */
+export async function planView(userId: number, language: string, locked: boolean, now = new Date()) {
+  await db.event.create({ data: { user_id: userId, language, name: "plan_view", props: { locked }, ts: now } });
+}
+
 export type MyOrder = {
   id: number;
   createdAt: Date;

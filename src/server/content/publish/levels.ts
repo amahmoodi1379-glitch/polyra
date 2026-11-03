@@ -9,6 +9,7 @@ import { turnSentenceIds } from "../library/list";
 import { logChange } from "../library/log";
 import type { LibrarySlug } from "../library/slugs";
 import { checkItems, type CheckedItem } from "./checks";
+import { reportSlug } from "@/server/reports/slugs";
 
 /**
  * Releasing a level and a language (PRD §13.5). A level opens the published content of that level to
@@ -36,22 +37,6 @@ const line = (key: string, kind: CheckLine["kind"], ok: boolean, details: string
   text: t(`admin.publish.check.${key}.${ok ? "ok" : "bad"}` as MessageKey, vars),
   details,
 });
-
-/** The item type names a content report may carry, by library type. */
-const reportTypes: Record<string, LibrarySlug> = {
-  word: "words",
-  sentence: "sentences",
-  grammar_unit: "units",
-  conjugation: "tables",
-  conjugation_table: "tables",
-  transform_item: "transforms",
-  translate_item: "translations",
-  text: "texts",
-  dialogue: "dialogues",
-  errorfix_item: "errorfix",
-  writing_task: "writing",
-  phonics_lesson: "phonics",
-};
 
 /** The sentences learners meet in a level: its own, and those of its texts, dialogues, units and targets. */
 async function levelSentences(tx: Tx, language: string, level: string, items: CheckedItem[]) {
@@ -186,7 +171,7 @@ export async function levelChecklist(language: string, level: string): Promise<C
   const levelSentenceSet = new Set(sentenceIds);
   const urgent = reports.filter(
     (report) =>
-      (reportTypes[report.item_type] && inLevel.has(`${reportTypes[report.item_type]}:${report.item_id}`)) ||
+      (reportSlug[report.item_type] && inLevel.has(`${reportSlug[report.item_type]}:${report.item_id}`)) ||
       (report.sentence_id !== null && levelSentenceSet.has(report.sentence_id)),
   ).length;
 

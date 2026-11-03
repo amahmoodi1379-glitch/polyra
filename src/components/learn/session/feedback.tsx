@@ -35,6 +35,7 @@ export function Feedback({
   muted,
   pretest = false,
   onContinue,
+  onReport,
 }: {
   verdict: Graded;
   ex: Ex;
@@ -46,6 +47,8 @@ export function Feedback({
   /** A «پیش‌آزمون» (PRD §11.5): right shows the word card, wrong costs nothing and the intro card comes. */
   pretest?: boolean;
   onContinue: () => void;
+  /** «گزارش اشکال» (PRD §13.10); absent in the panel's preview. */
+  onReport?: () => void;
 }) {
   const sheet = useRef<HTMLDivElement>(null);
   const mark = useRef<HTMLSpanElement>(null);
@@ -150,6 +153,11 @@ export function Feedback({
         <button ref={next} type="button" className="primary jelly-press" onPointerDown={(event) => squish(event.currentTarget)} onClick={onContinue}>
           {t("learn.session.continue")}
         </button>
+        {onReport ? (
+          <button type="button" className="fb-report" onClick={onReport} data-report>
+            {t("learn.report.open")}
+          </button>
+        ) : null}
       </div>
     </div>
   );
