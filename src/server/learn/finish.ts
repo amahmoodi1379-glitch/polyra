@@ -6,6 +6,7 @@ import { finishDay } from "@/engine/streak";
 import { addDays, tehranDate, tehranDayStart } from "@/engine/time";
 import type { Enrollment, Prisma, Session } from "@/generated/prisma/client";
 import { SESSION_LENGTHS } from "./enroll";
+import { takeSampleNotice } from "./placement";
 import { asDate, dailyOf, dateOnly, enrollmentOf, itemStateOf, skillsOf } from "./learner";
 import { closeSession, startInfo, type EndMessage, type EndSummary, type LearnContext, type StoredPlan } from "./session";
 
@@ -118,7 +119,9 @@ export async function countStreakDay(tx: Tx, enrollment: Enrollment, today: stri
  * session length, so it neither counts nor breaks the run (DECISIONS.md).
  */
 async function endMessage(tx: Tx, row: Session, enrollment: Enrollment, ctx: LearnContext, at: Date): Promise<EndMessage | null> {
-  const applying: EndMessage[] = [];
+  const sample = await takeSampleNotice(tx, row.user_id, row.language);
+  if (sample) return { kind: "sample", skill: sample.kind, level: sample.level };
+  const applying: Exclude<EndMessage, { kind: "sample" }>[] = [];
   if (mayOfferShorter(enrollment.shorten_asked_at, at, ctx.settings)) {
     const since = enrollment.shorten_asked_at ?? new Date(0);
     const previous = await tx.$queryRaw<ClosedSession[]>`

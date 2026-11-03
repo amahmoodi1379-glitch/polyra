@@ -104,7 +104,7 @@ export async function homeData(user: Learner, language: LanguageCode, now = new 
   const introduced = introducedCardWords(content, learner.items);
   const gate = num(settings, "gate.grammar_words");
   const grammarOpen = !fromStart || introduced >= gate;
-  const gLevel = grammarLevel(content, items);
+  const gLevel = grammarLevel(content, items, learner.skills.find((skill) => skill.skill === "grammar")?.knownBelow ?? null);
   const grammar = grammarProgress(content, items, gLevel, settings);
   // Sentence listening (PRD §7.6): open after its word gate while a suitable sentence makes an exercise.
   const drillWait = drillGate(fromStart, introduced, settings);

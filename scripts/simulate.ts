@@ -7,8 +7,9 @@
  *   npm run simulate -- --quick       a fifth of the learners and the features-off run only, for a fast look
  *   npm run simulate -- --seed=other  another seed
  *
- * Patterns that need later phases (placement samples, «این را بلدم», the end of the path) wait for
- * them; DECISIONS.md lists which.
+ * The learners who start at A2 or B1 come out of placement (PRD §11.3): the levels, `known_below` and the
+ * sample after it (§11.4) are the ones `placementOutcome` writes. Patterns that need later phases («این را
+ * بلدم», the end of the path) wait for them; DECISIONS.md lists which.
  */
 import { performance } from "node:perf_hooks";
 import { buildConjEx, buildGrammarEx, buildWordEx, type BuildEnv, type GrammarSource } from "../src/engine/build";
@@ -16,6 +17,7 @@ import { hasCard, isColloquial, type Content } from "../src/engine/content";
 import type { Ex } from "../src/engine/ex";
 import { codesAt, exerciseDef, TRANSFORM_STEP } from "../src/engine/exercises";
 import { checkInvariants, type InvariantInput } from "../src/engine/invariants";
+import { placementOutcome } from "../src/engine/placement";
 import { lastStepOfWord } from "../src/engine/pick";
 import { seeded } from "../src/engine/random";
 import { textKnownShare } from "../src/engine/texts";
@@ -105,6 +107,8 @@ type Stats = {
   phonics: { day30: number[]; end: number[] };
   /** Per learner at the end: texts with a first round in each track, and the track levels. */
   texts: { listening: number[]; reading: number[]; levels: Map<string, number>; share: Map<string, number> };
+  /** The placement sample at the end, per learner who came out of placement: `vocab passed`, `grammar failed`… */
+  samples: Map<string, number>;
 };
 
 const newStats = (): Stats => ({
@@ -132,6 +136,7 @@ const newStats = (): Stats => ({
   hurriedQueue: [],
   phonics: { day30: [], end: [] },
   texts: { listening: [], reading: [], levels: new Map(), share: new Map() },
+  samples: new Map(),
 });
 
 const bump = <K,>(map: Map<K, number>, key: K, by = 1) => map.set(key, (map.get(key) ?? 0) + by);
@@ -194,9 +199,17 @@ function runLearner(pattern: Pattern, index: number, content: Content, settings:
   const ability = ABILITIES[index % ABILITIES.length];
   const seed = `${SEED}:${pattern.seedAs ?? pattern.name}:${index}`;
   const rng = seeded(seed, "answers");
-  const person = human({ content, settings, seed, ability: () => ability });
+  // A placed learner knew what was below its level, half of them well (truly placed), half no better than they learn (placed too high).
+  const person = human({ content, settings, seed, ability: () => ability, prior: pattern.start ? (index % 2 === 0 ? 1 : ability) : undefined });
   // From zero, phonics rounds come by themselves (PRD §8.4).
   let learner = freshLearner("fr", { sessionLength: pattern.length, vocabLevel: pattern.start, knownBelow: pattern.start, phonicsAuto: !pattern.start });
+  if (pattern.start) {
+    // Placed at `start` (PRD §11.3): the level below passed, the next failed; grammar and both tracks at `start`.
+    const pv = LEVELS[Math.max(0, LEVELS.indexOf(pattern.start) - 1)];
+    const result = { pv, fv: pattern.start, fg: pattern.start, listening: pattern.start, reading: pattern.start, above: null, phonicsAuto: false, texts: [], blocks: [], stopped: false };
+    const outcome = placementOutcome(content, settings, result, seed, START, tehranDate(START));
+    learner = { ...learner, enrollment: { ...learner.enrollment, startMode: "placement" }, skills: outcome.skills, items: outcome.cards, sample: outcome.sample };
+  }
   const stuck = new Map<string, { step: number; run: number; max: number; last: number }>();
   const leeched = new Set<string>();
   /** Cards due on an earlier day and not reviewed yet (deferred ones too: their FSRS due has passed). */
@@ -356,6 +369,8 @@ function runLearner(pattern: Pattern, index: number, content: Content, settings:
   stats.unitsPerWeek.push((learner.items.filter((item) => item.itemType === "grammar_unit").length / days) * 7);
   if (a1Done !== null) stats.a1Done.push(a1Done);
   if (!pattern.start) stats.phonics.end.push(learner.phonics.filter((state) => state.done).length);
+  if (learner.sample?.vocab) bump(stats.samples, `vocab ${learner.sample.vocab.result}`);
+  if (learner.sample?.grammar) bump(stats.samples, `grammar ${learner.sample.grammar.result}`);
   for (const track of ["listening", "reading"] as const) {
     stats.texts[track].push(learner.texts.filter((state) => state.track === track && state.firstScore !== null).length);
     const level = learner.skills.find((skill) => skill.skill === track)?.level ?? "A1";
@@ -525,6 +540,7 @@ function report(label: string, all: Map<string, Stats>, content: Content) {
     const shares = ["≥90%", "70–90%", "50–70%", "<50%"].map((band) => `${band} ${s.texts.share.get(band) ?? 0}`).join(", ");
     console.log(`${"".padEnd(14)} first rounds per learner: listening ${median(s.texts.listening)}, reading ${median(s.texts.reading)} (median) · track levels ${levels} · known words of new texts: ${shares}`);
     if (s.phonics.end.length > 0) console.log(`${"".padEnd(14)} phonics lessons done (median of ${content.phonics.length}): day 30 ${median(s.phonics.day30)}, end ${median(s.phonics.end)}`);
+    if (s.samples.size > 0) console.log(`${"".padEnd(14)} placement sample at the end: ${[...s.samples.entries()].sort().map(([key, n]) => `${key} ${n}`).join(", ")}`);
     if (name === "hurried") console.log(`${"".padEnd(14)} review queue 14 days in: median ${median(s.hurriedQueue)}`);
   }
 }

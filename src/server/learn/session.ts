@@ -15,6 +15,7 @@ import { canPractice, startTrialIfFirst } from "./access";
 import { learnerContent, type Audience } from "./content";
 import { updateLevels } from "./levels";
 import { asDate, loadLearner } from "./learner";
+import { placementRunning } from "./placement";
 import { addDaily, applyNotebookOps, saveItemState } from "./writes";
 
 /**
@@ -40,7 +41,12 @@ export type EndSummary = {
   /** At most one message (PRD §3.11). «shorter» without `to` reminds a 10-minute learner of «امروز وقت کم دارم». */
   message: EndMessage | null;
 };
-export type EndMessage = { kind: "shorter"; from: number; to: number | null } | { kind: "slowPace" } | { kind: "phonicsOff" };
+export type EndMessage =
+  | { kind: "shorter"; from: number; to: number | null }
+  | { kind: "slowPace" }
+  | { kind: "phonicsOff" }
+  /** The placement sample failed (PRD §11.4): «… از A2 ادامه می‌دهیم». Before every other message (DECISIONS.md). */
+  | { kind: "sample"; skill: "vocab" | "grammar"; level: string };
 
 /** What `session.plan` holds: the engine's plan and two notes of the server's. */
 export type StoredPlan = SessionPlan & { start?: StartInfo; end?: EndSummary };
@@ -106,7 +112,7 @@ export function bundleOf(row: Pick<Session, "id" | "language" | "scope" | "plan"
 export function startInfo(content: Content, learner: Pick<LearnerSnapshot, "items" | "skills">, settings: Settings): StartInfo {
   const items = indexItems(learner.items);
   const vocab = learner.skills.find((skill) => skill.skill === "vocab")!;
-  const level = grammarLevel(content, items);
+  const level = grammarLevel(content, items, learner.skills.find((skill) => skill.skill === "grammar")?.knownBelow ?? null);
   return {
     vocab: { level: vocab.level, station: vocabProgress(content, items, vocab, settings).station },
     grammar: { level, station: grammarProgress(content, items, level, settings).station },
@@ -170,6 +176,8 @@ export async function startSession(user: Learner, request: StartRequest, now = n
   const { language, scope } = request;
   const enrollment = await db.enrollment.findUnique({ where: { user_id_language: { user_id: user.id, language } } });
   if (!enrollment) return { kind: "not_enrolled" };
+  // A placement test left half-way comes first (PRD §11.1): the home shows «ادامه تعیین سطح».
+  if (await placementRunning(user.id, language)) return { kind: "not_enrolled" };
   if (request.noAudio && (scope === "listening" || scope === "phonics")) return { kind: "needs_audio" };
   const ctx = await learnContext(user, language, now);
 

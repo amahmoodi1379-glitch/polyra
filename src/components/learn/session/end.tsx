@@ -205,7 +205,9 @@ function EndNote({ message }: { message: EndMessage }) {
       ? t("learn.end.message.busy")
       : message.kind === "phonicsOff"
         ? t("learn.end.message.phonicsOff")
-        : t("learn.end.message.slowPace");
+        : message.kind === "sample"
+          ? t(message.skill === "vocab" ? "learn.end.message.sampleVocab" : "learn.end.message.sampleGrammar", { level: message.level })
+          : t("learn.end.message.slowPace");
   return (
     <div className="end-note">
       <p className="num">{text}</p>

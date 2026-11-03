@@ -55,6 +55,20 @@ function transformTypo(given: string, outputs: string[], source: string, languag
   });
 }
 
+/** Minimum letters of a word for the sample's one-letter allowance (PRD §5.6). */
+export const TYPO_MIN_LETTERS = 5;
+
+/**
+ * The vocabulary sample and the vocabulary skip test (PRD §5.6): one letter missing, extra, changed or two
+ * next ones swapped, in a word of at least five letters, when what was typed is not another word's form.
+ */
+function sampleTypo(given: string, accepted: string[], others: string[], language: Lang): boolean {
+  const norm = (text: string) => (language === "fr" ? text.toLowerCase() : text);
+  const typed = norm(given);
+  if (others.some((form) => norm(form) === typed)) return false;
+  return accepted.some((answer) => [...answer].length >= TYPO_MIN_LETTERS && oneLetterOff(typed, norm(answer)));
+}
+
 function gradeTyped(spec: Extract<AnswerSpec, { kind: "type" }>, answer: { text: string; gender?: string | null; retry?: boolean }, ex: Ex, ctx: GradeContext): GradeOutcome {
   const { language } = ctx;
   if (hasPersianLetter(answer.text)) return { result: "persian" };
@@ -73,6 +87,7 @@ function gradeTyped(spec: Extract<AnswerSpec, { kind: "type" }>, answer: { text:
     return fromMatch(match, raw);
   }
   if (spec.transformSource && transformTypo(given, accepted, spec.transformSource, language)) return graded("near", raw, "typo");
+  if (spec.typo && sampleTypo(given, accepted, spec.typo, language)) return graded("near", raw, "typo");
 
   const synonym = spec.synonyms.some((lemma) => matchText(given, prepare(lemma), language, spec.sentence).result !== "wrong");
   if (synonym) return answer.retry ? graded("wrong", raw) : { result: "synonym", first: spec.first };

@@ -7,6 +7,9 @@ import type { ItemStateE, LearnerSnapshot, QueueE } from "../state";
  * and the conjugation cards that may be made.
  */
 
+/** Stands for a unit known by placement: it allows the next one. */
+const KNOWN = { step: 0, source: "placement", roundsCount: 0 } as unknown as ItemStateE;
+
 const QUEUE_ORDER: Record<QueueE["source"], number> = { tap: 0, key_word: 1, colloquial: 2 };
 
 export type NewWordContext = {
@@ -88,11 +91,21 @@ export function nextNewWords(ctx: NewWordContext, count: number, recent: readonl
   return { words: out, fromQueue: queue.length };
 }
 
-/** The unit that opens next, or null (PRD §6.2): the first unit not opened, if the one before allows it. */
-export function nextUnit(content: Content, units: Map<number, ItemStateE>, settings: Settings): UnitC | null {
+/** Units below the grammar skill's `known_below` count as known after a placement (PRD §11.3): no card, and they unlock the next unit. */
+export const knownUnit = (content: Content, unit: UnitC, below: string | null) => !!below && levelIndex(content, unit.level) < levelIndex(content, below);
+
+/**
+ * The unit that opens next, or null (PRD §6.2): the first unit not opened, if the one before allows it.
+ * `below` is the grammar skill's `known_below`.
+ */
+export function nextUnit(content: Content, units: Map<number, ItemStateE>, settings: Settings, below: string | null = null): UnitC | null {
   const rounds = num(settings, "grammar.unlock_after_rounds");
   let previous: ItemStateE | null = null;
   for (const unit of content.units) {
+    if (knownUnit(content, unit, below) && !units.has(unit.id)) {
+      previous = KNOWN;
+      continue;
+    }
     const state = units.get(unit.id);
     if (state) {
       previous = state;
@@ -100,15 +113,20 @@ export function nextUnit(content: Content, units: Map<number, ItemStateE>, setti
     }
     if (!content.openLevels.includes(unit.level)) return null;
     if (previous === null) return unit;
-    const allowed = previous.step >= 2 || previous.source === "i_know" || previous.roundsCount >= rounds;
+    const allowed = previous === KNOWN || previous.step >= 2 || previous.source === "i_know" || previous.roundsCount >= rounds;
     return allowed ? unit : null;
   }
   return null;
 }
 
-/** Conjugation cards that may be made (PRD §6.6): review card, its unit opened and in an open level, its verb known. */
-export function conjCandidates(content: Content, units: Map<number, ItemStateE>, conj: Map<number, ItemStateE>, known: (wordId: number) => boolean): ConjC[] {
-  const opened = new Set(content.units.filter((unit) => units.has(unit.id) && content.openLevels.includes(unit.level)).map((unit) => unit.unitCode));
+/**
+ * Conjugation cards that may be made (PRD §6.6): review card, its unit opened (or known by placement,
+ * `below`) and in an open level, its verb known.
+ */
+export function conjCandidates(content: Content, units: Map<number, ItemStateE>, conj: Map<number, ItemStateE>, known: (wordId: number) => boolean, below: string | null = null): ConjC[] {
+  const opened = new Set(
+    content.units.filter((unit) => (units.has(unit.id) || knownUnit(content, unit, below)) && content.openLevels.includes(unit.level)).map((unit) => unit.unitCode),
+  );
   const levelOpen = (table: ConjC) => (table.unitCode ? opened.has(table.unitCode) : content.openLevels.includes(content.words.get(table.wordId)?.level ?? ""));
   return content.conjugations.filter((table) => table.reviewCard && !conj.has(table.id) && levelOpen(table) && known(table.wordId));
 }

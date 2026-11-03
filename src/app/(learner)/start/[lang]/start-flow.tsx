@@ -6,7 +6,7 @@ import { Icon } from "@/components/learn/icons";
 import { squish } from "@/components/learn/motion";
 import { buzz, sfx } from "@/components/learn/sfx";
 import { t } from "@/i18n";
-import { beginFromZero } from "../../actions";
+import { beginFromZero, beginPlacementTest } from "../../actions";
 
 type Props = {
   language: string;
@@ -102,14 +102,22 @@ export function StartFlow({ language, languageName, askLength, lengths, initialL
                 </span>
                 <Icon name="l-back" className="i s fwd" />
               </button>
-              <button type="button" className="choice" disabled aria-describedby="placement-soon">
+              <button
+                type="button"
+                className="choice jelly-press"
+                disabled={pending}
+                onPointerDown={(event) => squish(event.currentTarget)}
+                onClick={() => {
+                  sfx("arrival", 0.5);
+                  buzz(10);
+                  startTransition(() => beginPlacementTest(language, askLength ? minutes : null));
+                }}
+              >
                 <span>
                   {t("learn.start.placement")}
                   <small>{t("learn.start.placementHint")}</small>
                 </span>
-                <span className="soon-tag" id="placement-soon">
-                  {t("learn.start.soon")}
-                </span>
+                <Icon name="l-back" className="i s fwd" />
               </button>
             </div>
           </>

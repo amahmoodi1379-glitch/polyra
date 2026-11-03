@@ -124,6 +124,12 @@ Deploy: Runflare builds `main` (`docs/deploy-runflare.md`). Work on the session 
   «نوشته‌های من» (route `api/learn/writing`). Browser: `src/components/learn/session/speaking.tsx` (the three screens, also in
   the panel's preview), `src/components/learn/writing.tsx`, pages `learn/[lang]/writing` (`?task=` for a tester's try, not kept)
   and `writings`. Demo: `fixtures/demo-fr/speaking.ts`. «آزمایش مثل زبان‌آموز»: `productionOverview` in `rehearse.ts`.
+- Placement (PRD §11): `src/engine/placement.ts` (the blocks, grammar, texts, «ادامه نمی‌دهم», the result, `placementOutcome`,
+  the sample after it with `applySampleAnswer`, `typoForms`, and `placementReadiness` for the panel). The sample's words are
+  probation `sample` cards (W5a with `typo`); its grammar sentences are plan key `g:<target id>` (G5b, `review_log.kind =
+  placement`, no card). Server: `src/server/learn/placement.ts` (the run in `placement_run`, graded on the server,
+  `recordSample` from `answer.ts`, `takeSampleNotice` from `finish.ts`). Pages `learn/[lang]/placement` and the paused home
+  (`placement/paused.tsx`). «آزمایش مثل زبان‌آموز»: `placementOverview`/`rehearsePlacement` in `rehearse.ts`, card `admin/try/placement.tsx`.
 - Learner sessions (PRD §10, §15.4): `src/engine/session` builds and plays a plan (`build.ts`, `play.ts`, `advance.ts`);
   the browser and the server run the same functions. `src/server/learn`: `content.ts` (what a learner or tester may
   see, cached 30s), `learner.ts` (the snapshot the engine needs), `session.ts` (start, resume, close, preview),

@@ -7,9 +7,10 @@ import { TRAVEL_DAYS } from "@/lib/travel";
 import { requireAdmin } from "@/server/auth/session";
 import { pickLanguage } from "@/server/content/languages";
 import { homeData } from "@/server/learn/home";
-import { nextSession, productionOverview, textsOverview } from "@/server/learn/rehearse";
+import { nextSession, placementOverview, productionOverview, textsOverview } from "@/server/learn/rehearse";
 import { rehearseJob } from "@/server/learn/rehearse-jobs";
 import { NextList, NowCard, ProductionCard, TextsCard } from "./now";
+import { PlacementCard } from "./placement";
 import { ScenarioPicker, TravelButtons } from "./try-panel";
 
 export const metadata: Metadata = { title: t("admin.rehearse.title") };
@@ -24,9 +25,9 @@ export default async function TryPage({ searchParams }: PageProps<"/admin/try">)
   const language = pickLanguage(query.lang, admin.admin_language);
   const job = rehearseJob(admin.id, language);
   const running = job?.state === "running";
-  const [home, next, texts, production] = running
-    ? [null, null, null, null]
-    : await Promise.all([homeData(admin, language), nextSession(admin, language), textsOverview(admin, language), productionOverview(admin, language)]);
+  const [home, next, texts, production, placement] = running
+    ? [null, null, null, null, null]
+    : await Promise.all([homeData(admin, language), nextSession(admin, language), textsOverview(admin, language), productionOverview(admin, language), placementOverview(admin, language)]);
 
   const scenarios = SCENARIOS.map((scenario) => ({ id: scenario.id, days: scenario.days, sessions: scenarioSessions(scenario) }));
   return (
@@ -48,6 +49,7 @@ export default async function TryPage({ searchParams }: PageProps<"/admin/try">)
           {home ? <NextList language={language} next={next} /> : null}
           {home ? <TextsCard overview={texts} /> : null}
           {home ? <ProductionCard language={language} overview={production} /> : null}
+          {placement ? <PlacementCard language={language} overview={placement} /> : null}
           {home ? <TravelButtons language={language} days={[...TRAVEL_DAYS]} /> : null}
         </>
       )}

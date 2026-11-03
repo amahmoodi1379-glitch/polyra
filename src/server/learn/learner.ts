@@ -23,6 +23,7 @@ import {
   type TextStateE,
 } from "@/engine/state";
 import type { Track } from "@/engine/content";
+import type { SampleState } from "@/engine/placement";
 import { addDays, tehranDayStart } from "@/engine/time";
 import { Prisma } from "@/generated/prisma/client";
 import { db } from "@/server/db";
@@ -302,7 +303,7 @@ export async function loadLearner(
   settings: Settings,
 ): Promise<LearnerSnapshot | null> {
   const where = { user_id: userId, language };
-  const [user, enrollment, skills, items, notebook, queue, daily, confusions] = await Promise.all([
+  const [user, enrollment, skills, items, notebook, queue, daily, confusions, run] = await Promise.all([
     client.user.findUnique({ where: { id: userId }, select: { session_length_min: true } }),
     client.enrollment.findUnique({ where: { user_id_language: { user_id: userId, language } } }),
     client.skillLevel.findMany({ where }),
@@ -311,6 +312,7 @@ export async function loadLearner(
     client.newWordQueue.findMany({ where, orderBy: { added_at: "asc" } }),
     client.dailyCounter.findUnique({ where: { user_id_language_date_tehran: { user_id: userId, language, date_tehran: asDate(today) } } }),
     client.confusionPair.findMany({ where }),
+    client.placementRun.findFirst({ where: { ...where, state: "done" }, orderBy: { started_at: "desc" }, select: { sample_state: true } }),
   ]);
   if (!user || !enrollment) return null;
 
@@ -402,5 +404,6 @@ export async function loadLearner(
       .slice(0, 20)
       .map((row) => row.item_id),
     touchedToday: touched.map((row) => keyOf(row.item_type, row.item_id)).filter((key): key is string => !!key),
+    sample: (run?.sample_state as SampleState | null | undefined) ?? null,
   };
 }
