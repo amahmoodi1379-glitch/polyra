@@ -171,6 +171,12 @@ export function Home({ data, languageName, languages, account, lengths, freeze }
           </span>
           {!device.started && !idle && !data.locked ? <span className="hint">{t("learn.home.hint")}</span> : null}
           {reduced ? <span className="rm">{t("learn.home.reducedMotion")}</span> : null}
+          {data.pathDone ? (
+            <span className="path-done" data-path-done>
+              {t("learn.home.pathDone")}
+              {data.comingSoon ? ` ${data.comingSoon}` : ""}
+            </span>
+          ) : null}
         </div>
         {data.locked ? null : idle && data.extra ? (
           <button type="button" className="quick" onClick={() => (sfx("press", 0.4), go("extra"))}>

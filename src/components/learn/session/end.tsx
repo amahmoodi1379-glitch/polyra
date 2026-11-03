@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState, useTransition } from "react";
 import Link from "next/link";
 import { changeSessionLength, levelDown } from "@/app/(learner)/actions";
-import { Icon } from "@/components/learn/icons";
+import { Icon, type IconName } from "@/components/learn/icons";
 import { Mixed } from "@/components/learn/mixed";
 import { dropIn, enter, squish } from "@/components/learn/motion";
 import { buzz, sfx } from "@/components/learn/sfx";
@@ -69,6 +69,8 @@ export function EndScreen({
       ].filter(Boolean)
     : [];
   const stationInfo = summary?.station;
+
+  if (summary?.pathDone) return <PathDone done={summary.pathDone} onBack={onBack} />;
 
   return (
     <>
@@ -182,6 +184,46 @@ export function EndScreen({
           className="ghost"
           onClick={() => {
             sfx("droplet", 0.4);
+            onBack();
+          }}
+        >
+          {t("learn.end.back")}
+        </button>
+      </div>
+    </>
+  );
+}
+
+/** «مسیر عمومی را تا B2 تمام کردی.» (PRD §3.13): once, in place of the end screen, with what was learned. */
+function PathDone({ done, onBack }: { done: NonNullable<EndSummary["pathDone"]>; onBack: () => void }) {
+  const facts: [IconName, string][] = [
+    ["i-vocab", t("learn.end.path.words", { n: formatNumber(done.words) })],
+    ["i-gram", t("learn.end.path.units", { n: formatNumber(done.units) })],
+    ["i-read", t("learn.end.path.texts", { n: formatNumber(done.texts) })],
+    ["l-cal", t("learn.end.path.days", { n: formatNumber(done.days) })],
+  ];
+  return (
+    <>
+      <div className="end-head" data-path-done>
+        <h1>{t("learn.end.path.title", { level: done.level })}</h1>
+        <p>{t("learn.end.path.lead")}</p>
+      </div>
+      <div className="facts">
+        {facts.map(([icon, text]) => (
+          <div className="fact" key={icon}>
+            <Icon name={icon} />
+            <p className="num">{text}</p>
+          </div>
+        ))}
+      </div>
+      <p className="end-path-note">{t("learn.end.path.after")}</p>
+      <div className="cta">
+        <button
+          type="button"
+          className="primary jelly-press"
+          onPointerDown={(event) => squish(event.currentTarget)}
+          onClick={() => {
+            sfx("arrival", 0.45);
             onBack();
           }}
         >

@@ -66,8 +66,10 @@ export type HomeData = {
   skills: SkillTile[];
   /** «الفبا و تلفظ» (PRD §3.2): «درس ۳ از ۱۴», while the language has phonics lessons. */
   links: { notebook: number; words: number; lessons: number; texts: number; writings: number; phonics: { index: number; total: number; done: boolean } | null };
-  /** The language's line for a level not published yet (PRD §3.3, `language.coming_soon_fa`). */
+  /** The language's line for a level not published yet (PRD §3.3, `language.coming_soon_fa`), also under «شروع» once the path is done (§3.13). */
   comingSoon: string | null;
+  /** The path finished (PRD §3.13): the maintenance mode. */
+  pathDone: boolean;
   /** «تمرین نوشتن این هفته» (PRD §8b.6): the card while this week's task waits. */
   writing: { min: number; max: number } | null;
 };
@@ -238,6 +240,7 @@ export async function homeData(user: Learner, language: LanguageCode, now = new 
       phonics: content.phonics.length > 0 ? phonicsProgress(content, learner.phonics) : null,
     },
     comingSoon: languageRow?.coming_soon_fa?.trim() || null,
+    pathDone: !!enrollment.path_done_at,
     writing: writing.state === "open" ? { min: writing.task.minWords, max: writing.task.maxWords } : null,
   };
 }

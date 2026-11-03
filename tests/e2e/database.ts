@@ -34,6 +34,15 @@ export const E2E_TRY_ADMINS = { "learner-phone": "09120000051", "learner-desktop
 /** Testers at vocabulary B1, so this week's writing is open (PRD §8b.6). */
 export const E2E_WRITERS = { "learner-phone": "09120000043", "learner-desktop": "09120000045" } as const;
 
+/** New learners from zero, for «این را بلدم» on a new word (PRD §5.6). */
+export const E2E_IKNOW = { "learner-phone": "09120000055", "learner-desktop": "09120000057" } as const;
+
+/**
+ * Testers who know every demo word, for the reading skip exam (PRD §11.6); the learner database moves the
+ * demo's last text to A2 so the exam has a level to move to.
+ */
+export const E2E_EXAMINERS = { "learner-phone": "09120000059", "learner-desktop": "09120000061" } as const;
+
 /**
  * Admin accounts created by prepare-db: one per browser project, and one each for the order, publish,
  * audio, settings, errors, users and review tests, since a phone may ask for only 3 codes in 10 minutes (PRD §15.5).

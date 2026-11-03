@@ -2,6 +2,8 @@ import { hasCard, levelIndex } from "@/engine/content";
 import { activeCards, isDue } from "@/engine/session/build";
 import { flag, num } from "@/engine/settings";
 import { LEVELDOWN_RULE, levelDownOffer } from "@/engine/leveldown";
+import { indexItems } from "@/engine/levels";
+import { pathDone } from "@/engine/path";
 import { leftInARow, mayOfferShorter, pickSessionMessage, shorterLength, type ClosedSession } from "@/engine/messages";
 import { finishDay } from "@/engine/streak";
 import { addDays, plusDays, tehranDate, tehranDayStart } from "@/engine/time";
@@ -72,7 +74,21 @@ export async function finishSession(tx: Tx, row: Session, plan: StoredPlan, ctx:
   const dueTomorrow = items.filter((item) => isDue(item, tehranDayStart(tomorrow), tomorrow) && active(item)).length;
   const counts = dailyOf(daily, today);
 
-  const message = await endMessage(tx, row, enrollment, ctx, at);
+  // «پایان مسیر» (PRD §3.13, T103): once, in place of the end screen; then the maintenance mode.
+  let pathDoneNow: EndSummary["pathDone"] = null;
+  if (!enrollment.path_done_at) {
+    const texts = (await loadTextStates(tx, row.user_id, row.language)).map(textStateOf);
+    if (pathDone(content, indexItems(items), skills, texts, settings, at)) {
+      await tx.enrollment.update({ where: { id: enrollment.id }, data: { path_done_at: at } });
+      const days = await tx.dailyCounter.count({ where: { ...where, active_sec: { gt: 0 } } });
+      const units = content.units.filter((unit) => items.some((item) => item.itemType === "grammar_unit" && item.itemId === unit.id) || levelIndex(content, unit.level) < levelIndex(content, skills.find((skill) => skill.skill === "grammar")?.knownBelow ?? null)).length;
+      const textsDone = new Set(texts.filter((state) => state.scores.length > 0).map((state) => state.textId)).size;
+      pathDoneNow = { level: content.levels[content.levels.length - 1], words: 0, units, texts: textsDone, days };
+      await tx.event.create({ data: { ...where, name: "path_done", props: {}, ts: at } });
+    }
+  }
+
+  const message = pathDoneNow ? null : await endMessage(tx, row, enrollment, ctx, at);
 
   const end: EndSummary = {
     correct: plan.counters.correct,
@@ -85,6 +101,7 @@ export async function finishSession(tx: Tx, row: Session, plan: StoredPlan, ctx:
     streak,
     tomorrow: dueTomorrow,
     message,
+    pathDone: pathDoneNow ? { ...pathDoneNow, words: knownWords } : null,
   };
   await tx.session.update({ where: { id: row.id }, data: { plan: { ...plan, end } as unknown as Prisma.InputJsonValue } });
   return end;

@@ -40,6 +40,8 @@ export type EndSummary = {
   tomorrow: number;
   /** At most one message (PRD §3.11). «shorter» without `to` reminds a 10-minute learner of «امروز وقت کم دارم». */
   message: EndMessage | null;
+  /** «مسیر عمومی را تا B2 تمام کردی» (PRD §3.13): once, in place of the end screen, with what was learned. */
+  pathDone?: { level: string; words: number; units: number; texts: number; days: number } | null;
 };
 export type EndMessage =
   /** «یک سطح پایین‌تر برویم؟» (PRD §11.7); `applied` once «بله» was pressed. */
