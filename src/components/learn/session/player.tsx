@@ -600,6 +600,8 @@ export function Player({ language, languageName, scope: firstScope }: { language
           summary={summary}
           local={{ correct: counters.correct, wrong: counters.wrong }}
           languageName={languageName}
+          language={language}
+          sessionId={bundle?.id ?? null}
           minutes={Math.max(1, Math.round((plan?.budgetSec ?? 0) / 60))}
           waiting={summary ? null : offline ? "offline" : "sending"}
           onAgain={again}

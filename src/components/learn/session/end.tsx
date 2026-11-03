@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState, useTransition } from "react";
-import { changeSessionLength } from "@/app/(learner)/actions";
+import Link from "next/link";
+import { changeSessionLength, levelDown } from "@/app/(learner)/actions";
 import { Icon } from "@/components/learn/icons";
 import { Mixed } from "@/components/learn/mixed";
 import { dropIn, enter, squish } from "@/components/learn/motion";
@@ -19,12 +20,17 @@ export function EndScreen({
   summary,
   local,
   languageName,
+  language,
+  sessionId,
   minutes,
   waiting,
   onAgain,
   onBack,
 }: {
   summary: EndSummary | null;
+  /** For the messages' buttons: the exam's page and «بله» on a level lower. */
+  language: string;
+  sessionId: string | null;
   local: { correct: number; wrong: number };
   languageName: string;
   minutes: number;
@@ -148,7 +154,7 @@ export function EndScreen({
             </div>
           </div>
 
-          {summary.message ? <EndNote message={summary.message} /> : null}
+          {summary.message ? <EndNote message={summary.message} language={language} sessionId={sessionId} /> : null}
         </>
       ) : (
         <div className="facts">
@@ -187,48 +193,76 @@ export function EndScreen({
 }
 
 /** The one message of the end screen (PRD §3.11) with its buttons; it goes once it is answered. */
-function EndNote({ message }: { message: EndMessage }) {
-  const [state, setState] = useState<"open" | "shortened" | "closed">("open");
+function EndNote({ message, language, sessionId }: { message: EndMessage; language: string; sessionId: string | null }) {
+  const [state, setState] = useState<"open" | "done" | "closed">(message.kind === "leveldown" && message.applied ? "done" : "open");
   const [pending, start] = useTransition();
   if (state === "closed") return null;
-  const offer = message.kind === "shorter" && message.to !== null ? { from: message.from, to: message.to } : null;
-  if (state === "shortened" && offer) {
+  // A new session length: one step shorter (row 2) or 15 minutes for long texts (row 3).
+  const length = message.kind === "shorter" && message.to !== null ? message.to : message.kind === "longer" ? message.to : null;
+  if (state === "done") {
+    const text =
+      message.kind === "leveldown"
+        ? t("learn.end.message.lowered", { skill: t(`learn.skill.${message.skill}`), level: message.to })
+        : t("learn.end.message.shortened", { n: length ?? 0 });
     return (
       <div className="end-note" role="status">
-        <p className="num">{t("learn.end.message.shortened", { n: offer.to })}</p>
+        <p className="num">{text}</p>
       </div>
     );
   }
-  const text = offer
-    ? t("learn.end.message.shorter", { from: offer.from, to: offer.to })
-    : message.kind === "shorter"
-      ? t("learn.end.message.busy")
-      : message.kind === "phonicsOff"
-        ? t("learn.end.message.phonicsOff")
-        : message.kind === "sample"
-          ? t(message.skill === "vocab" ? "learn.end.message.sampleVocab" : "learn.end.message.sampleGrammar", { level: message.level })
-          : t("learn.end.message.slowPace");
+  const text =
+    message.kind === "leveldown"
+      ? t("learn.end.message.leveldown")
+      : message.kind === "longer"
+        ? t("learn.end.message.longer", { n: message.to })
+        : message.kind === "skipTest"
+          ? t("learn.end.message.skipTest")
+          : message.kind === "shorter"
+            ? message.to !== null
+              ? t("learn.end.message.shorter", { from: message.from, to: message.to })
+              : t("learn.end.message.busy")
+            : message.kind === "phonicsOff"
+              ? t("learn.end.message.phonicsOff")
+              : message.kind === "sample"
+                ? t(message.skill === "vocab" ? "learn.end.message.sampleVocab" : "learn.end.message.sampleGrammar", { level: message.level })
+                : t("learn.end.message.slowPace");
+  const yes = (act: () => Promise<unknown>) => () =>
+    start(async () => {
+      await act();
+      setState("done");
+    });
   return (
-    <div className="end-note">
+    <div className="end-note" data-message={message.kind}>
       <p className="num">{text}</p>
+      {message.kind === "leveldown" ? (
+        <p className="num sub">{t("learn.end.message.leveldownWhich", { skill: t(`learn.skill.${message.skill}`), from: message.from, to: message.to })}</p>
+      ) : null}
       <div className="row">
-        {offer ? (
+        {message.kind === "leveldown" && sessionId ? (
           <>
-            <button
-              type="button"
-              className="secondary"
-              disabled={pending}
-              onClick={() =>
-                start(async () => {
-                  await changeSessionLength(offer.to);
-                  setState("shortened");
-                })
-              }
-            >
+            <button type="button" className="secondary" disabled={pending} onClick={yes(() => levelDown(sessionId))}>
+              {t("learn.end.message.yes")}
+            </button>
+            <button type="button" className="ghost" disabled={pending} onClick={() => setState("closed")}>
+              {t("learn.end.message.keepLevel")}
+            </button>
+          </>
+        ) : length !== null ? (
+          <>
+            <button type="button" className="secondary" disabled={pending} onClick={yes(() => changeSessionLength(length))}>
               {t("learn.end.message.yes")}
             </button>
             <button type="button" className="ghost" disabled={pending} onClick={() => setState("closed")}>
               {t("learn.end.message.no")}
+            </button>
+          </>
+        ) : message.kind === "skipTest" ? (
+          <>
+            <Link className="secondary" href={`/learn/${language}/exam/${message.skill}`}>
+              {t("learn.end.message.takeExam")}
+            </Link>
+            <button type="button" className="ghost" onClick={() => setState("closed")}>
+              {t("learn.end.message.notNow")}
             </button>
           </>
         ) : (

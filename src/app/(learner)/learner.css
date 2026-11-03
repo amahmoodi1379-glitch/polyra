@@ -1900,6 +1900,12 @@
   & .end-note .secondary {
     min-width: 104px;
   }
+  & .end-note p.sub {
+    margin-top: -6px;
+    font-weight: 600;
+    font-size: 13.5px;
+    color: var(--ink-2);
+  }
   & .station {
     display: flex;
     align-items: center;

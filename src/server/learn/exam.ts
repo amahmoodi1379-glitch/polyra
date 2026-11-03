@@ -63,6 +63,14 @@ export async function examTiles(user: Learner, language: string, ctx: LearnConte
   return out;
 }
 
+/** One skill's offer, in a transaction (the end message of PRD §3.11 row 4). */
+export async function examOfferFor(client: Client, userId: number, language: string, ctx: LearnContext, skill: SkillName): Promise<ExamOffer> {
+  const learner = await examLearner(client, userId, language, ctx.content.levels[0]);
+  const probe = examOffer(ctx.content, learner, skill, ctx.settings, null, ctx.now);
+  const fail = probe.kind === "ready" ? await lastFail(client, userId, language, skill, probe.level) : null;
+  return fail ? examOffer(ctx.content, learner, skill, ctx.settings, fail, ctx.now) : probe;
+}
+
 /** Whether the learner may take an exam: enrolled and not locked (PRD §12.4), like a session. */
 async function mayTake(user: Learner, language: string, now: Date): Promise<boolean> {
   const enrollment = await db.enrollment.findUnique({ where: { user_id_language: { user_id: user.id, language } } });

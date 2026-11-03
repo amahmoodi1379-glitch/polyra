@@ -11,6 +11,7 @@ import { beginPlacement, placementInput, type PlacementInput, type PlacementScre
 import type { SkillName } from "@/engine/state";
 import { TRAVEL_DAYS } from "@/lib/travel";
 import { travelDays } from "@/server/learn/time-travel";
+import { acceptLevelDown } from "@/server/learn/leveldown";
 
 async function signedIn() {
   const user = await getCurrentUser();
@@ -73,6 +74,15 @@ export async function examStep(language: string, skill: string, input: ExamInput
   const screen = await examInput(user, language, skill, input, number);
   if (screen?.kind === "done") revalidatePath(`/learn/${language}`, "layout");
   return screen;
+}
+
+/** «بله» on «یک سطح پایین‌تر برویم؟» at the end of a session (PRD §11.7). */
+export async function levelDown(sessionId: string): Promise<boolean> {
+  const user = await signedIn();
+  if (!/^[0-9a-f-]{36}$/.test(sessionId)) return false;
+  const done = await acceptLevelDown(user, sessionId);
+  if (done === "done") revalidatePath("/learn", "layout");
+  return done === "done";
 }
 
 /** The session length in the settings sheet; the same for both languages (PRD §3.1). */
