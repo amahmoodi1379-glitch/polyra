@@ -6,7 +6,9 @@ import { endSession, getCurrentUser } from "@/server/auth/session";
 import { isLanguage } from "@/server/content/languages";
 import { forgetContent } from "@/server/learn/content";
 import { resetProgress, SESSION_LENGTHS, setSessionLength, startFromZero } from "@/server/learn/enroll";
+import { beginExam, EXAM_SKILLS, examInput, examScreen, type ExamInput, type ExamScreen } from "@/server/learn/exam";
 import { beginPlacement, placementInput, type PlacementInput, type PlacementScreen } from "@/server/learn/placement";
+import type { SkillName } from "@/engine/state";
 import { TRAVEL_DAYS } from "@/lib/travel";
 import { travelDays } from "@/server/learn/time-travel";
 
@@ -51,6 +53,26 @@ export async function startFromHere(language: string) {
   if (!isLanguage(language)) return;
   await placementInput(user, language, { stop: true }, null);
   redirect(`/learn/${language}/placement`);
+}
+
+const isSkill = (value: string): value is SkillName => (EXAM_SKILLS as readonly string[]).includes(value);
+
+/** «شروع آزمون» on the exam's first page (PRD §11.6): the exam, or the one half-way; its first screen comes back. */
+export async function beginSkillExam(language: string, skill: string): Promise<ExamScreen | null> {
+  const user = await signedIn();
+  if (!isLanguage(language) || !isSkill(skill)) return null;
+  const started = await beginExam(user, language, skill);
+  if (started === "unavailable") return null;
+  return examScreen(user, language, skill);
+}
+
+/** One answer of a level exam; the next screen, or the result, comes back (PRD §11.6). */
+export async function examStep(language: string, skill: string, input: ExamInput, number: number): Promise<ExamScreen | null> {
+  const user = await signedIn();
+  if (!isLanguage(language) || !isSkill(skill)) return null;
+  const screen = await examInput(user, language, skill, input, number);
+  if (screen?.kind === "done") revalidatePath(`/learn/${language}`, "layout");
+  return screen;
 }
 
 /** The session length in the settings sheet; the same for both languages (PRD §3.1). */

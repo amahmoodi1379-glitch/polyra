@@ -289,6 +289,7 @@ export const engineCatalog: EngineSettingDef[] = [
   int("exam.size", 15, 5, 50, "placement", "آزمون پرش از سطح: تعداد سؤال."),
   int("exam.pass_min", 12, 1, 50, "placement", "آزمون پرش: حداقل جواب درست."),
   int("exam.cooldown_days", 7, 1, 60, "placement", "آزمون پرش: فاصله تا تلاش دوباره (روز)."),
+  ratio("exam.text_pass", 0.8, "placement", "آزمون پرش شنیداری و خواندن: نمره لازم در دو متن.", 0.5, 1),
 
   // Texts (PRD §7)
   int("text.gap2_days", 3, 1, 30, "text", "فاصله تلاش دوم متن (روز)."),

@@ -18,7 +18,9 @@ import { db } from "@/server/db";
 import { canPractice } from "./access";
 import { asDate, dateOnly } from "./learner";
 import { openSession, previewSession, type Learner } from "./session";
+import { examTiles } from "./exam";
 import { myWritings, writingCard } from "./writing";
+import { formatDateFa } from "@/lib/format";
 
 /**
  * What the home screen of a language shows (PRD §3.2): the overall level, the streak, the start
@@ -43,6 +45,11 @@ export type SkillTile = {
    * track is ready for the next level, which waits for the vocabulary to reach it (DECISIONS.md).
    */
   texts: { started: number; finished: number; wordsFor: string | null } | null;
+  /**
+   * «پرش از این سطح» (PRD §3.3, §11.6): `ready` the button, `running` an exam half-way, `wait` the date of
+   * the next try, `soon` the next level not published yet; null when there is nothing to show.
+   */
+  exam: { kind: "ready" | "running"; next: string } | { kind: "wait"; next: string; until: string } | { kind: "soon" } | null;
 };
 
 export type HomeData = {
@@ -59,6 +66,8 @@ export type HomeData = {
   skills: SkillTile[];
   /** «الفبا و تلفظ» (PRD §3.2): «درس ۳ از ۱۴», while the language has phonics lessons. */
   links: { notebook: number; words: number; lessons: number; texts: number; writings: number; phonics: { index: number; total: number; done: boolean } | null };
+  /** The language's line for a level not published yet (PRD §3.3, `language.coming_soon_fa`). */
+  comingSoon: string | null;
   /** «تمرین نوشتن این هفته» (PRD §8b.6): the card while this week's task waits. */
   writing: { min: number; max: number } | null;
 };
@@ -146,6 +155,7 @@ export async function homeData(user: Learner, language: LanguageCode, now = new 
       due: dueOf("word"),
       text: null,
       texts: null,
+      exam: null,
     },
     {
       skill: "grammar",
@@ -159,6 +169,7 @@ export async function homeData(user: Learner, language: LanguageCode, now = new 
       due: dueOf("grammar_unit") + dueOf("conjugation"),
       text: null,
       texts: null,
+      exam: null,
     },
     {
       skill: "listening",
@@ -174,6 +185,7 @@ export async function homeData(user: Learner, language: LanguageCode, now = new 
       due: heard.due,
       text: heard.waiting,
       texts: heard.texts,
+      exam: null,
     },
     {
       skill: "reading",
@@ -187,8 +199,20 @@ export async function homeData(user: Learner, language: LanguageCode, now = new 
       due: read.due,
       text: read.waiting,
       texts: read.texts,
+      exam: null,
     },
   ];
+  // «پرش از این سطح» (PRD §11.6), on an open skill.
+  const exams = await examTiles(user, language, ctx);
+  for (const tile of skills) {
+    const { offer, running } = exams[tile.skill];
+    if (tile.lock) continue;
+    if (running) tile.exam = { kind: "running", next: running.next };
+    else if (offer.kind === "ready") tile.exam = { kind: "ready", next: offer.next };
+    else if (offer.kind === "wait") tile.exam = { kind: "wait", next: offer.next, until: formatDateFa(new Date(`${offer.until}T12:00:00+03:30`)) };
+    else if (offer.kind === "soon") tile.exam = { kind: "soon" };
+  }
+  const languageRow = await db.language.findUnique({ where: { code: language }, select: { coming_soon_fa: true } });
 
   const open = await openSession(user.id, language);
   const [writing, writings] = await Promise.all([writingCard(user, language, now), myWritings(user, language)]);
@@ -213,6 +237,7 @@ export async function homeData(user: Learner, language: LanguageCode, now = new 
       writings: writings.length,
       phonics: content.phonics.length > 0 ? phonicsProgress(content, learner.phonics) : null,
     },
+    comingSoon: languageRow?.coming_soon_fa?.trim() || null,
     writing: writing.state === "open" ? { min: writing.task.minWords, max: writing.task.maxWords } : null,
   };
 }

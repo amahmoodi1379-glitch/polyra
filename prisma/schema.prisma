@@ -1038,7 +1038,7 @@ model Enrollment {
 
   // Not in §4; see DECISIONS.md.
   /// Forgiveness days used in `streak_forgiven_week`, for `streak.forgive_per_week` above 1 (PRD §3.9).
-  streak_forgiven_count Int @default(0)
+  streak_forgiven_count Int     @default(0)
   /// Pace went to slow and the end of a finished session has not said so yet (PRD §3.11 row 6, §9.10).
   slow_notice_due       Boolean @default(false)
   /// «بعداً» turned the phonics rounds off and the end of a finished session has not said so yet (PRD §3.11 row 5, §8.4).
@@ -1341,14 +1341,17 @@ model PlacementRun {
 }
 
 model LevelExam {
-  id       Int      @id @default(autoincrement())
-  user_id  Int
-  language String   @db.VarChar(8)
-  skill    Skill
-  level    String   @db.VarChar(8)
-  taken_at DateTime @default(now()) @db.Timestamptz(3)
-  score    Int
-  passed   Boolean
+  id          Int       @id @default(autoincrement())
+  user_id     Int
+  language    String    @db.VarChar(8)
+  skill       Skill
+  level       String    @db.VarChar(8)
+  taken_at    DateTime  @default(now()) @db.Timestamptz(3)
+  score       Int
+  passed      Boolean
+  /// The exam while it runs (the engine's `ExamState`); null once finished (DECISIONS.md, 3 November 2026).
+  state       Json?
+  finished_at DateTime? @db.Timestamptz(3)
 
   user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
 
