@@ -9,6 +9,7 @@ import { languageParam, requireLearner } from "@/server/learn/guard";
 import { homeData } from "@/server/learn/home";
 import { engineSettings } from "@/server/settings/read";
 import { placementRunning } from "@/server/learn/placement";
+import { takeReportNotices } from "@/server/reports/file";
 import { Home } from "./home";
 import { PlacementPaused } from "./placement/paused";
 
@@ -22,12 +23,14 @@ export default async function LanguageHomePage({ params }: PageProps<"/learn/[la
   const user = await requireLearner(`/learn/${language}`);
   // A test left half-way (PRD §11.1): «ادامه تعیین سطح» and «از همین‌جا شروع کن» instead of «شروع».
   if (await placementRunning(user.id, language)) return <PlacementPaused language={language} languageName={languageInfo[language].name_fa} />;
-  const [data, allowed, enrolled, account, settings] = await Promise.all([
+  const [data, allowed, enrolled, account, settings, fixed] = await Promise.all([
     homeData(user, language),
     learnerLanguages(user),
     enrollments(user.id),
     db.user.findUniqueOrThrow({ where: { id: user.id }, select: { session_length_min: true } }),
     engineSettings(),
+    // «حق با تو بود» is shown once (PRD §3.11, §13.10).
+    takeReportNotices(user.id, language),
   ]);
   if (!data) redirect(allowed.includes(language) ? `/start/${language}` : "/start");
 
@@ -40,6 +43,7 @@ export default async function LanguageHomePage({ params }: PageProps<"/learn/[la
       account={{ admin: user.is_admin, tester: user.is_admin || user.is_tester, sessionLength: account.session_length_min }}
       lengths={[...SESSION_LENGTHS]}
       freeze={{ max: num(settings, "freeze.max"), minutes: num(settings, "freeze.min_daily_minutes") }}
+      notice={fixed > 0 ? "report_fixed" : null}
     />
   );
 }

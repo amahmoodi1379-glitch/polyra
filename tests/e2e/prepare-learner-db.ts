@@ -6,7 +6,7 @@ import { startFromZero } from "@/server/learn/enroll";
 import { saveItemState } from "@/server/learn/writes";
 import { engineNumber } from "@/server/settings/read";
 import { seedSettings } from "../../scripts/seed/settings";
-import { E2E_BUYERS, E2E_EXAMINERS, E2E_IKNOW, E2E_PHONICS, E2E_PLACERS, E2E_PLAN, E2E_READERS, E2E_SELLERS, E2E_TESTERS, E2E_TRY_ADMINS, E2E_WRITERS } from "./database";
+import { E2E_BUYERS, E2E_EXAMINERS, E2E_IKNOW, E2E_PHONICS, E2E_PLACERS, E2E_PLAN, E2E_READERS, E2E_REPORT_ADMINS, E2E_REPORTERS, E2E_SELLERS, E2E_TESTERS, E2E_TRY_ADMINS, E2E_WRITERS } from "./database";
 
 /**
  * Fresh learner database for the browser tests: settings, the French demo, one new tester per project,
@@ -15,7 +15,7 @@ import { E2E_BUYERS, E2E_EXAMINERS, E2E_IKNOW, E2E_PHONICS, E2E_PLACERS, E2E_PLA
  * For the level tools: one per project from zero, for «این را بلدم», and one per project who knows every word,
  * for the reading skip exam; the demo's last text moves to A2 so that exam has somewhere to go.
  * For sales: one learner per project whose free days ended four days into French, a teacher per project
- * for the sales pages, and one plan on sale.
+ * for the sales pages, and one plan on sale. For «گزارش اشکال»: one learner per project from zero and a teacher per project.
  */
 async function main() {
   const rows = await db.$queryRawUnsafe<{ tablename: string }[]>("SELECT tablename FROM pg_tables WHERE schemaname = 'public' AND tablename <> '_prisma_migrations'");
@@ -27,13 +27,13 @@ async function main() {
   for (const phone of [...Object.values(E2E_TESTERS), ...Object.values(E2E_PLACERS)]) {
     await db.user.create({ data: { phone: normalizeMobile(phone)!, session_length_min: sessionLength, is_tester: true } });
   }
-  for (const phone of [...Object.values(E2E_TRY_ADMINS), ...Object.values(E2E_SELLERS)]) {
+  for (const phone of [...Object.values(E2E_TRY_ADMINS), ...Object.values(E2E_SELLERS), ...Object.values(E2E_REPORT_ADMINS)]) {
     await db.user.create({ data: { phone: normalizeMobile(phone)!, session_length_min: sessionLength, is_admin: true, admin_language: "fr" } });
   }
   const demo = await loadDemo();
   if (demo.kind !== "loaded") throw new Error(`The French demo did not load: ${demo.kind}`);
 
-  for (const phone of [...Object.values(E2E_PHONICS), ...Object.values(E2E_IKNOW)]) {
+  for (const phone of [...Object.values(E2E_PHONICS), ...Object.values(E2E_IKNOW), ...Object.values(E2E_REPORTERS)]) {
     const user = await db.user.create({ data: { phone: normalizeMobile(phone)!, session_length_min: sessionLength, is_tester: true } });
     await startFromZero(user, "fr", new Date());
   }

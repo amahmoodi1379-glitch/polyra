@@ -193,6 +193,30 @@
     text-align: center;
   }
 
+  /* The home's one notice bar (PRD §3.11), closed with a tap. */
+  & .notice-bar {
+    align-self: stretch;
+    margin-top: 18px;
+    min-height: 52px;
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 18px;
+    background: color-mix(in oklab, var(--ok) 14%, var(--surface));
+    color: var(--ink);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14.5px;
+    font-weight: 700;
+    text-align: start;
+  }
+  & .notice-bar .i {
+    flex: none;
+    width: 22px;
+    height: 22px;
+    color: var(--ok);
+  }
+
   /* ───────── the jelly ───────── */
   & .hero {
     display: flex;
@@ -3949,6 +3973,55 @@
     align-self: center;
     font-weight: 800;
     font-size: 16px;
+  }
+  /* «گزارش اشکال» (PRD §13.10) */
+  & .fb-report {
+    align-self: center;
+    min-height: 44px;
+    padding: 0 12px;
+    border: 0;
+    background: none;
+    color: var(--ink-2);
+    font-size: 13.5px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: var(--line-2);
+  }
+  & .reasons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  & .reason {
+    min-height: 50px;
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 16px;
+    background: var(--surface);
+    box-shadow: var(--shadow-1), inset 0 0 0 2px transparent;
+    color: var(--ink);
+    font-size: 15px;
+    font-weight: 700;
+    text-align: start;
+    transition: box-shadow 0.2s var(--ease-std);
+  }
+  & .reason[aria-checked="true"] {
+    box-shadow: var(--shadow-1), inset 0 0 0 2px var(--brand);
+  }
+  & .note-field {
+    width: 100%;
+    min-height: 50px;
+    padding: 8px 14px;
+    border: 0;
+    border-radius: 16px;
+    background: var(--tint);
+    color: var(--ink);
+    font-size: 15px;
+    outline: none;
+  }
+  & .note-field:focus-visible {
+    box-shadow: inset 0 0 0 2px var(--brand-soft);
   }
   & .plan-code {
     display: flex;

@@ -83,6 +83,12 @@ describe("the free period and access (PRD §12.1, §12.5)", () => {
     expect(row.trial_started_at).not.toBeNull();
     expect(row.trial_ends_at!.getTime() - row.trial_started_at!.getTime()).toBe(72 * HOUR);
     expect(await testDb.trialLedger.count()).toBeGreaterThan(0);
+    // «اولین جلسه» once, «پایان جلسه» for every close (PRD §15.6).
+    const events = await testDb.event.findMany({ where: { user_id: user.id, name: { in: ["first_session", "session_end"] } }, orderBy: { id: "asc" } });
+    expect(events.map((event) => [event.name, (event.props as { reason: string }).reason])).toEqual([
+      ["first_session", "expired"],
+      ["session_end", "expired"],
+    ]);
   });
 
   it("T40: a session made a minute before the end is allowed, a minute after is locked, and answers to the earlier one are taken after the end", { timeout: 60_000 }, async () => {
@@ -162,6 +168,13 @@ describe("plans, prices and codes (PRD §12.2, §12.3)", () => {
     expect((await returnFromGateway(user.id, started.orderId, NOW, mockGateway)).kind).toBe("paid");
     expect(await testDb.subscription.count({ where: { user_id: user.id } })).toBe(1);
     expect(await testDb.order.findUniqueOrThrow({ where: { id: started.orderId } })).toMatchObject({ status: "paid", gateway_ref: expect.any(String) });
+    // «شروع و نتیجه پرداخت» (PRD §15.6), once each however often the address is opened.
+    const events = await testDb.event.findMany({ where: { user_id: user.id, name: { in: ["payment_start", "payment_result", "purchase"] } }, orderBy: { id: "asc" } });
+    expect(events.map((event) => [event.name, (event.props as { status?: string }).status ?? null])).toEqual([
+      ["payment_start", null],
+      ["purchase", null],
+      ["payment_result", "paid"],
+    ]);
   });
 
   it("cancelled at the bank: failed, no subscription; the price comes from the plan, never the browser", async () => {
@@ -171,7 +184,9 @@ describe("plans, prices and codes (PRD §12.2, §12.3)", () => {
     if (started.kind !== "redirect") throw new Error(started.kind);
     expect(await testDb.order.findUniqueOrThrow({ where: { id: started.orderId } })).toMatchObject({ amount_toman: 150_000, final_amount: 150_000, status: "pending" });
     expect((await returnFromGateway(user.id, started.orderId, NOW, mockGateway)).kind).toBe("failed");
+    expect((await returnFromGateway(user.id, started.orderId, NOW, mockGateway)).kind).toBe("failed");
     expect(await testDb.subscription.count({ where: { user_id: user.id } })).toBe(0);
+    expect((await testDb.event.findMany({ where: { user_id: user.id, name: "payment_result" } })).map((event) => (event.props as { status: string }).status)).toEqual(["failed"]);
     // An inactive plan is not sold.
     await testDb.plan.update({ where: { id: monthly.id }, data: { active: false } });
     expect((await startOrder(user, monthly.id, null, "http://localhost/pay/return", NOW, mockGateway)).kind).toBe("refused");
@@ -246,6 +261,7 @@ describe("an order nobody came back from (PRD §12.4 steps 6–7)", () => {
     expect(await testDb.subscription.count({ where: { user_id: paidUser.id } })).toBe(1);
     expect(await testDb.order.findUniqueOrThrow({ where: { id: lost.orderId } })).toMatchObject({ status: "expired" });
     expect(await testDb.subscription.count({ where: { user_id: lostUser.id } })).toBe(0);
+    expect((await testDb.event.findMany({ where: { user_id: lostUser.id, name: "payment_result" } })).map((event) => (event.props as { status: string }).status)).toEqual(["expired"]);
   });
 
   it("«پیگیری پرداخت»: an expired order paid after all becomes paid; a day later it is no longer offered; a gateway that cannot say leaves it", async () => {

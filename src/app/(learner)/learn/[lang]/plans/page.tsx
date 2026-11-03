@@ -3,7 +3,7 @@ import { notFound, redirect } from "next/navigation";
 import { Icon } from "@/components/learn/icons";
 import { PageBar } from "@/components/learn/page-bar";
 import { t } from "@/i18n";
-import { activePlans, gatewayIsMock } from "@/server/billing/learner";
+import { activePlans, gatewayIsMock, planView } from "@/server/billing/learner";
 import { languageParam, requireLearner } from "@/server/learn/guard";
 import { homeData } from "@/server/learn/home";
 import { PlanPicker } from "./plan-picker";
@@ -71,7 +71,7 @@ export default async function PlansPage({ params, searchParams }: PageProps<"/le
     );
   }
 
-  const plans = await activePlans(language);
+  const [plans] = await Promise.all([activePlans(language), planView(user.id, language, !!summary)]);
   return (
     <main className="app">
       <div className="screen">

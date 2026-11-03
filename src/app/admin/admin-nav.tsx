@@ -9,6 +9,7 @@ import {
   BookCheck,
   BookOpen,
   FlaskConical,
+  Flag,
   ClipboardPaste,
   ListChecks,
   History,
@@ -54,6 +55,7 @@ function navGroups(showTestCodes: boolean): NavGroup[] {
       items: [
         { href: "/admin/health", label: "admin.nav.health", icon: Activity },
         { href: "/admin/try", label: "admin.nav.rehearse", icon: FlaskConical },
+        { href: "/admin/reports", label: "admin.nav.reports", icon: Flag },
       ],
     },
     { label: "admin.nav.people", items: [{ href: "/admin/users", label: "admin.nav.users", icon: Users }] },

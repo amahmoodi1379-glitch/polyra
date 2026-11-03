@@ -12,6 +12,7 @@ import { typeCounts } from "@/server/content/library/list";
 import { librarySlugs } from "@/server/content/library/slugs";
 import { contentStatus } from "@/server/content/status";
 import { db } from "@/server/db";
+import { openReportCount } from "@/server/reports/list";
 import { appSetting } from "@/server/settings/read";
 import { reviewHref } from "./review/links";
 import { startBatch } from "./create/actions";
@@ -20,7 +21,7 @@ type Action = { start: KindSlug; level?: string; label: string } | { href: strin
 type WorkRow = { key: string; text: string; action: Action | null; note?: string };
 
 async function languageRows(language: LanguageCode, sizes: Record<string, number>) {
-  const [status, open, reviewing, approved, audio] = await Promise.all([
+  const [status, open, reviewing, approved, audio, reports] = await Promise.all([
     contentStatus(language),
     db.importBatch.findMany({
       where: { language, state: { in: ["prompt_made", "pasted", "imported"] } },
@@ -29,10 +30,20 @@ async function languageRows(language: LanguageCode, sizes: Record<string, number
     typeCounts(language, "needs_review"),
     typeCounts(language, "approved"),
     audioCounts(language),
+    openReportCount(language),
   ]);
   const unfinished = open.filter((batch) => batchStep(batch) < 4);
   const waitingQa = open.filter((batch) => batch.state === "imported" && hasQa(batch.prompt_kind) && batchStep(batch) === 4);
   const rows: WorkRow[] = [];
+
+  // Learners are meeting these now (PRD §13.10): first on the list.
+  if (reports.open) {
+    rows.push({
+      key: "reports",
+      text: reports.high ? t("admin.workbench.rows.reportsHigh", { count: reports.open, high: reports.high }) : t("admin.workbench.rows.reports", { count: reports.open }),
+      action: { href: `/admin/reports?lang=${language}`, label: t("admin.workbench.actions.reports") },
+    });
+  }
 
   if (unfinished.length) {
     rows.push({

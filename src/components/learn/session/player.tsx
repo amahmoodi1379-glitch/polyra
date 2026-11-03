@@ -21,6 +21,7 @@ import { ConfusionFace, LessonFace, PhonicsFace, TableFace, WordFace } from "./c
 import { EndScreen } from "./end";
 import { Exercise, type Retry } from "./exercise";
 import { Feedback } from "./feedback";
+import { ReportSheet } from "./report";
 import { flush, listenOutbox, send, useOffline, waiting } from "./outbox";
 import { DialogueStage, ErrorfixStage, SpeakStage } from "./speaking";
 import { TextReview, TextStage, TextWordsFace, type TextProgressNote } from "./text";
@@ -104,6 +105,9 @@ export function Player({ language, languageName, scope: firstScope }: { language
   // Cards whose sound file did not arrive in time, with the seconds waited (PRD §10.12).
   const [waited, setWaited] = useState<Record<string, number>>({});
   // The answers of a text stage, for its review page (PRD §7.4).
+  // «گزارش اشکال» on the feedback sheet: the id of the answer just sent, and whether its sheet is open (PRD §13.10).
+  const [lastAnswer, setLastAnswer] = useState<string | null>(null);
+  const [reporting, setReporting] = useState(false);
   const [given, setGiven] = useState<{ answers: Answers; timedOut: boolean } | null>(null);
   // The answer to «امروز {n} کلمه گرفتی» stays when «پیش از جلسه متن» asks next.
   const capAnswer = useRef<"more" | "none" | null>(null);
@@ -298,6 +302,7 @@ export function Player({ language, languageName, scope: firstScope }: { language
   };
 
   const submit = (raw: RawAnswer): Retry | null => {
+    setReporting(false);
     if (!bundle || !plan || !card || done) return null;
     const latencyMs = Math.max(0, Math.round(performance.now() - shownAt.current));
     const elapsedSec = elapsed.current + latencyMs / 1000;
@@ -320,9 +325,11 @@ export function Player({ language, languageName, scope: firstScope }: { language
     if (!result.done) return result.outcome;
     elapsed.current = elapsedSec;
     stored.set(`polyra.elapsed.${bundle.id}`, String(elapsedSec));
+    const answerId = uuid();
+    setLastAnswer(answerId);
     send({
       sessionId: bundle.id,
-      answerId: uuid(),
+      answerId,
       seq: seq.current++,
       cardId: card.id,
       answer: raw as Record<string, unknown>,
@@ -791,7 +798,20 @@ export function Player({ language, languageName, scope: firstScope }: { language
         {body}
       </div>
       {cta}
-      {done && verdict && ex ? <Feedback verdict={verdict} ex={ex} card={card} plan={plan} language={language} muted={muted} pretest={card.t === "pretest"} onContinue={() => advance(done)} /> : null}
+      {done && verdict && ex ? (
+        <Feedback
+          verdict={verdict}
+          ex={ex}
+          card={card}
+          plan={plan}
+          language={language}
+          muted={muted}
+          pretest={card.t === "pretest"}
+          onContinue={() => advance(done)}
+          onReport={card.t === "pretest" ? undefined : () => setReporting(true)}
+        />
+      ) : null}
+      {done && verdict && ex ? <ReportSheet key={lastAnswer ?? ""} open={reporting} onClose={() => setReporting(false)} answerId={lastAnswer} ex={ex} result={verdict.result} /> : null}
     </Frame>
   );
 }

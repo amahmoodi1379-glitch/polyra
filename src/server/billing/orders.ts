@@ -53,23 +53,33 @@ export async function startOrder(buyer: Buyer, planId: number, rawCode: string |
     final_amount: priced.final,
     created_at: now,
   };
+  const started = (tx: Prisma.TransactionClient | typeof db, order: Order) =>
+    tx.event.create({ data: { user_id: buyer.id, language: order.language, name: "payment_start", props: { order: order.id, plan: order.plan_id, amount: order.final_amount, gateway: order.gateway }, ts: now } });
   if (priced.final === 0) {
     const order = await db.$transaction(async (tx) => {
       const row = await tx.order.create({ data: { ...base, gateway: "free", status: "pending" } });
+      await started(tx, row);
       await settle(tx, row, null, now);
       return row;
     });
     return { kind: "free", orderId: order.id };
   }
   const order = await db.order.create({ data: { ...base, gateway: gateway.name, status: "pending" } });
+  await started(db, order);
   const callback = `${returnUrl}${returnUrl.includes("?") ? "&" : "?"}order=${order.id}`;
-  const started = await gateway.request({ orderId: order.id, amountToman: priced.final, callbackUrl: callback, description: `${priced.plan.name_fa} (${order.id})`, mobile: buyer.phone });
-  if (!started.ok) {
+  const asked = await gateway.request({ orderId: order.id, amountToman: priced.final, callbackUrl: callback, description: `${priced.plan.name_fa} (${order.id})`, mobile: buyer.phone });
+  if (!asked.ok) {
     await db.order.update({ where: { id: order.id }, data: { status: "failed" } });
+    await paymentResult(db, order, "failed", now);
     return { kind: "gateway", orderId: order.id };
   }
-  await db.order.update({ where: { id: order.id }, data: { authority: started.authority } });
-  return { kind: "redirect", url: started.payUrl, orderId: order.id };
+  await db.order.update({ where: { id: order.id }, data: { authority: asked.authority } });
+  return { kind: "redirect", url: asked.payUrl, orderId: order.id };
+}
+
+/** «نتیجه پرداخت» for the analytics (PRD §15.6), each time an order turns paid, failed or expired (a failed one the follow-up finds paid gets both). */
+async function paymentResult(client: Prisma.TransactionClient | typeof db, order: Pick<Order, "id" | "user_id" | "language" | "final_amount">, status: "paid" | "failed" | "expired", now: Date) {
+  await client.event.create({ data: { user_id: order.user_id, language: order.language, name: "payment_result", props: { order: order.id, status, amount: order.final_amount }, ts: now } });
 }
 
 /**
@@ -83,6 +93,7 @@ async function settle(tx: Prisma.TransactionClient, order: Order, ref: string | 
   await extendAccess(tx, { userId: order.user_id, language: order.language, days: plan.duration_days, now, source: "payment", planId: plan.id, orderId: order.id });
   if (order.discount_code_id) await tx.discountUse.create({ data: { code_id: order.discount_code_id, user_id: order.user_id, order_id: order.id } });
   await tx.event.create({ data: { user_id: order.user_id, language: order.language, name: "purchase", props: { order: order.id, plan: plan.id, amount: order.final_amount }, ts: now } });
+  await paymentResult(tx, order, "paid", now);
   return true;
 }
 
@@ -115,10 +126,17 @@ export async function returnFromGateway(userId: number, orderId: number, now = n
   if (result === "paid" || fresh.status === "paid") return { kind: "paid", order: fresh };
   // Cancelled at the bank, or not verified: failed, with «دوباره تلاش کن». The follow-up may still find it paid.
   const failed = await db.order.updateMany({ where: { id: orderId, status: "pending" }, data: { status: "failed", last_verify_at: now } });
+  if (failed.count > 0) await paymentResult(db, fresh, "failed", now);
   return { kind: "failed", order: failed.count > 0 ? { ...fresh, status: "failed" } : fresh };
 }
 
 export type FollowUp = "paid" | "unpaid" | "waiting" | "gone";
+
+/** A pending order the gateway never paid: expired, with its result event once. */
+async function expire(order: Order, now: Date) {
+  const changed = await db.order.updateMany({ where: { id: order.id, status: "pending" }, data: { status: "expired" } });
+  if (changed.count > 0) await paymentResult(db, order, "expired", now);
+}
 
 /**
  * Asks the gateway about one order and settles it if it was paid: the follow-up job (PRD §12.4 step 6)
@@ -134,7 +152,7 @@ export async function followUpOrder(order: Order, now: Date, gateway: PaymentGat
   if (answer === "paid") return verifyAndSettle(order, gateway, now).then((result) => (result === "paid" ? "paid" : "waiting"));
   if (answer === "unknown") return "waiting";
   const old = now.getTime() - order.created_at.getTime() >= num(settings, "order.expire_minutes") * 60_000;
-  if (old && order.status === "pending") await db.order.updateMany({ where: { id: order.id, status: "pending" }, data: { status: "expired" } });
+  if (old && order.status === "pending") await expire(order, now);
   return "unpaid";
 }
 
@@ -167,11 +185,11 @@ export async function sweepOrders(now = new Date(), gateway: PaymentGateway = ge
     else if (result === "waiting") {
       // A gateway that still cannot say after the follow-up window: the order expires; «پیگیری پرداخت» is over too.
       if (now.getTime() - order.created_at.getTime() >= num(settings, "order.followup_hours") * 3_600_000) {
-        await db.order.updateMany({ where: { id: order.id, status: "pending" }, data: { status: "expired" } });
+        await expire(order, now);
         counts.expired++;
       } else counts.waiting++;
     } else {
-      await db.order.updateMany({ where: { id: order.id, status: "pending" }, data: { status: "expired" } });
+      await expire(order, now);
       counts.expired++;
     }
   }
