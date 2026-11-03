@@ -558,7 +558,12 @@ export function Player({ language, languageName, scope: firstScope }: { language
               {t("learn.states.retry")}
             </button>
           ) : null}
-          <Link className={phase.which === "failed" || phase.which === "gone" ? "ghost" : "primary"} href={`/learn/${language}`}>
+          {phase.which === "locked" ? (
+            <Link className="primary" href={`/learn/${language}/plans`}>
+              {t("learn.home.buy")}
+            </Link>
+          ) : null}
+          <Link className={phase.which === "failed" || phase.which === "gone" || phase.which === "locked" ? "ghost" : "primary"} href={`/learn/${language}`}>
             {t("learn.states.home")}
           </Link>
         </div>

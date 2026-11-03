@@ -40,5 +40,5 @@ function sameText(a: string, b: string) {
 
 export const config = {
   // The host's health check must pass without a password.
-  matcher: ["/((?!api/health).*)"],
+  matcher: ["/((?!api/health|api/cron).*)"],
 };

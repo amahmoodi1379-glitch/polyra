@@ -2,14 +2,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ChevronRight, MonitorSmartphone } from "lucide-react";
-import { t } from "@/i18n";
 import { deviceLabel } from "@/lib/device-label";
-import { formatAgoFa, formatDateFa } from "@/lib/format";
+import { formatNumber, t } from "@/i18n";
+import { formatAgoFa, formatDateFa, formatDateTimeFa } from "@/lib/format";
 import { formatMobileFa } from "@/lib/phone";
 import { requireAdmin } from "@/server/auth/session";
 import { accountDetail, type AccountDetail } from "@/server/accounts";
+import { accountSales, grantPlans } from "@/server/billing/admin";
+import { languageCodes } from "@/server/content/languages";
+import { cn } from "@/lib/utils";
 import { AccessChips } from "../account-row";
 import { AccessControls } from "./access-controls";
+import { SubscriptionTools } from "./subscription-tools";
 
 export const metadata: Metadata = { title: t("admin.users.title") };
 
@@ -63,6 +67,8 @@ export default async function UserPage({ params }: PageProps<"/admin/users/[id]"
             <Languages account={account} now={now} />
             <Devices account={account} now={now} />
           </div>
+
+          <Sales userId={account.id} now={now} />
 
           <p className="text-ink-3 max-w-[68ch] text-[13px] leading-6">{t("admin.users.detail.later")}</p>
         </>
@@ -154,6 +160,74 @@ function Devices({ account, now }: { account: AccountDetail; now: Date }) {
           })}
         </ul>
       )}
+    </section>
+  );
+}
+
+const orderLook = { paid: "bg-ok-soft text-ok", pending: "bg-tint text-brand-text", failed: "bg-bad-soft text-bad", expired: "bg-line text-ink-2" } as const;
+
+/** «اشتراک و خریدها»: every subscription row, the grant and shorten tools, and the account's orders (PRD §12.3). */
+async function Sales({ userId, now }: { userId: number; now: Date }) {
+  const [{ subscriptions, orders }, plans] = await Promise.all([accountSales(userId), grantPlans()]);
+  const active = [...new Set(subscriptions.filter((row) => row.ends_at > now).map((row) => row.language))];
+  return (
+    <section aria-labelledby="sales" className="flex flex-col gap-4">
+      <h2 id="sales" className="text-ink text-[17px] font-extrabold">
+        {t("admin.users.sales.title")}
+      </h2>
+      <div className="grid gap-8 md:grid-cols-2 md:gap-6">
+        <div className="flex flex-col gap-3">
+          <h3 className="text-ink-2 text-[14px] font-bold">{t("admin.users.sales.subscriptions")}</h3>
+          {subscriptions.length === 0 ? (
+            <p className="border-line-2 text-ink-3 rounded-[18px] border border-dashed px-5 py-4 text-[13.5px]">{t("admin.users.sales.noSubscriptions")}</p>
+          ) : (
+            <ul className="bg-surface divide-line flex flex-col divide-y rounded-[22px] shadow-[var(--shadow-1)]" data-subscriptions>
+              {subscriptions.map((row) => (
+                <li key={row.id} data-subscription={row.language} className={cn("flex flex-col gap-1 px-5 py-3.5 sm:px-6", row.ends_at <= now && "opacity-70")}>
+                  <p className="flex flex-wrap items-baseline gap-x-2">
+                    <span className="text-ink text-[14.5px] font-extrabold">{languageName(row.language)}</span>
+                    <span className="text-ink-2 text-[13px] font-bold">{row.plan ?? t(`admin.users.sales.source.${row.source}`)}</span>
+                    {row.plan ? <span className="text-ink-3 text-[12.5px]">{t(`admin.users.sales.source.${row.source}`)}</span> : null}
+                  </p>
+                  <p className="text-ink-2 text-[13px] tabular-nums">{t("admin.users.sales.range", { start: formatDateFa(row.starts_at), end: formatDateFa(row.ends_at) })}</p>
+                  {row.note || row.grantedByPhone ? (
+                    <p className="text-ink-3 text-[12.5px] leading-6">
+                      {row.grantedByPhone ? t("admin.users.sales.by", { who: formatMobileFa(row.grantedByPhone) }) : null}
+                      {row.grantedByPhone && row.note ? " · " : null}
+                      {row.note}
+                    </p>
+                  ) : null}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+        <div className="flex flex-col gap-3">
+          <h3 className="text-ink-2 text-[14px] font-bold">{t("admin.users.sales.orders")}</h3>
+          {orders.length === 0 ? (
+            <p className="border-line-2 text-ink-3 rounded-[18px] border border-dashed px-5 py-4 text-[13.5px]">{t("admin.users.sales.noOrders")}</p>
+          ) : (
+            <ul className="bg-surface divide-line flex flex-col divide-y rounded-[22px] shadow-[var(--shadow-1)]">
+              {orders.map((order) => (
+                <li key={order.id} className="flex flex-wrap items-center gap-x-3 gap-y-1 px-5 py-3.5 sm:px-6">
+                  <span className={cn("rounded-[8px] px-2 py-0.5 text-[12px] font-bold", orderLook[order.status])}>{t(`learn.subscription.status.${order.status}`)}</span>
+                  <span className="text-ink text-[14px] font-bold">{order.plan ?? t("admin.orders.planGone")}</span>
+                  <span className="text-ink-3 text-[12.5px] tabular-nums">{formatDateTimeFa(order.created_at)}</span>
+                  <span className="text-ink ms-auto text-[14px] font-bold">
+                    {order.final_amount === 0 ? t("admin.orders.free") : t("admin.sales.toman", { n: formatNumber(order.final_amount) })}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      </div>
+      <SubscriptionTools
+        userId={userId}
+        languages={[...languageCodes]}
+        active={active}
+        plans={plans.map((plan) => ({ id: plan.id, language: plan.language, name: plan.name_fa, days: plan.duration_days, active: plan.active }))}
+      />
     </section>
   );
 }

@@ -74,3 +74,24 @@ export function finishDay(state: StreakState, today: string, active: (date: stri
 
 /** Whether today's session is already done, for the faded counter on the home screen (PRD §3.9). */
 export const doneToday = (state: StreakState, today: string) => state.streakLastDate === today && state.streakCount > 0;
+
+/** How far ahead `streakAliveUntil` looks: more than a week's forgiveness plus every freeze a learner can hold. */
+const ALIVE_LOOKAHEAD_DAYS = 60;
+
+/**
+ * The last day the streak lives through without another session (PRD §3.8, the lock page): today, or
+ * later while the week's forgiveness days and the freezes left cover the days missed. Null when there
+ * is no streak. Days ahead count as empty.
+ */
+export function streakAliveUntil(state: StreakState, today: string, active: (date: string) => number, settings: Settings): string | null {
+  const now = catchUp(state, today, active, settings).state;
+  if (now.streakCount === 0 || !now.streakLastDate) return null;
+  const ahead = (date: string) => (dayNumber(date) >= dayNumber(today) ? 0 : active(date));
+  let alive = today;
+  for (let i = 1; i <= ALIVE_LOOKAHEAD_DAYS; i++) {
+    const next = addDays(today, i);
+    if (catchUp(now, next, ahead, settings).event.broken) return alive;
+    alive = next;
+  }
+  return alive;
+}

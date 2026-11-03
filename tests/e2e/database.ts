@@ -43,6 +43,15 @@ export const E2E_IKNOW = { "learner-phone": "09120000055", "learner-desktop": "0
  */
 export const E2E_EXAMINERS = { "learner-phone": "09120000059", "learner-desktop": "09120000061" } as const;
 
+/** Learners (not testers) whose three free days are over, for the lock page and a purchase (PRD §12). */
+export const E2E_BUYERS = { "learner-phone": "09120000063", "learner-desktop": "09120000065" } as const;
+
+/** Teachers on the learner server for «پلن‌ها و کدها», «سفارش‌ها» and a manual grant. */
+export const E2E_SELLERS = { "learner-phone": "09120000067", "learner-desktop": "09120000069" } as const;
+
+/** The plan the learner database starts with, so a buyer has something to buy. */
+export const E2E_PLAN = { name: "یک‌ماهه", days: 30, price: 290_000, badge: "پرفروش" } as const;
+
 /**
  * Admin accounts created by prepare-db: one per browser project, and one each for the order, publish,
  * audio, settings, errors, users and review tests, since a phone may ask for only 3 codes in 10 minutes (PRD §15.5).

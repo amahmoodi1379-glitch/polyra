@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { newItemState } from "@/engine/answer";
 import { indexItems, overallLevel, vocabLevelUp, vocabProgress } from "@/engine/levels";
 import type { ItemStateE } from "@/engine/state";
-import { catchUp, finishDay, type StreakState } from "@/engine/streak";
+import { catchUp, finishDay, streakAliveUntil, type StreakState } from "@/engine/streak";
 import { addDays, weekStart } from "@/engine/time";
 import { content, defaults, settings, word } from "./kit";
 
@@ -17,6 +17,23 @@ const streak = (count: number, last: string, extra: Partial<StreakState> = {}): 
   freezeCount: 0,
   freezeCheckedWeek: weekStart(last),
   ...extra,
+});
+
+describe("the streak's last day on the lock page (PRD §3.8)", () => {
+  // Monday, Saturday's week: the week's forgiveness day is unused.
+  const MON = addDays(SAT, 2);
+  it("done today, forgiveness left: tomorrow is forgiven, so a session the day after keeps it", () => {
+    expect(streakAliveUntil(streak(4, MON), MON, none, defaults)).toBe(addDays(MON, 2));
+  });
+  it("not done today with the week's forgiveness day used and no freeze: tonight", () => {
+    const used = streak(4, addDays(MON, -1), { streakForgivenWeek: SAT, streakForgivenCount: 1 });
+    expect(streakAliveUntil(used, MON, none, defaults)).toBe(MON);
+  });
+  it("two freezes cover two days; no streak: null", () => {
+    const frozen = streak(4, MON, { streakForgivenWeek: SAT, streakForgivenCount: 1, freezeCount: 2 });
+    expect(streakAliveUntil(frozen, MON, none, defaults)).toBe(addDays(MON, 3));
+    expect(streakAliveUntil(streak(0, MON), MON, none, defaults)).toBeNull();
+  });
 });
 
 describe("streak (PRD §3.9)", () => {

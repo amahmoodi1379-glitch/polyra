@@ -36,6 +36,9 @@ const percent = (value: number) => ({ "--p": `${Math.round(Math.max(0, Math.min(
 const monogram = (code: string) => code.charAt(0).toUpperCase() + code.slice(1);
 const lat = (text: string) => <span className="lat">{text}</span>;
 
+/** «۵ روز مانده · تمدید» from this many days left (PRD §3.8). */
+const RENEW_DAYS = 7;
+
 function planText(plan: PlanLine): string | null {
   switch (plan.kind) {
     case "tester":
@@ -49,7 +52,7 @@ function planText(plan: PlanLine): string | null {
       return hours === 0 ? t("learn.home.trialDays", { days }) : t("learn.home.trialLeft", { days, hours });
     }
     case "subscription":
-      return t("learn.home.subscription", { n: plan.days });
+      return plan.days > RENEW_DAYS ? t("learn.home.subscription", { n: plan.days }) : t("learn.home.subscriptionSoon", { n: plan.days });
     case "none":
       return t("learn.home.noAccess");
   }
@@ -95,7 +98,8 @@ export function Home({ data, languageName, languages, account, lengths, freeze }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lang]);
 
-  const go = (scope: Scope) => router.push(session(scope));
+  // A locked language sends every start to the lock page (PRD §3.8).
+  const go = (scope: Scope) => router.push(data.locked ? `/learn/${lang}/plans` : session(scope));
   const show = (which: Open) => {
     sfx("press", 0.4);
     setOpen(which);
@@ -150,7 +154,15 @@ export function Home({ data, languageName, languages, account, lengths, freeze }
             </button>
           </div>
         </header>
-        {plan ? <p className="plan num">{plan}</p> : null}
+        {plan ? (
+          data.plan.kind === "tester" ? (
+            <p className="plan num">{plan}</p>
+          ) : (
+            <Link className="plan num" href={`/learn/${lang}/plans`} data-plan-line={data.plan.kind} onClick={() => sfx("press", 0.4)}>
+              {plan}
+            </Link>
+          )
+        ) : null}
 
         <div className="hero">
           <Jelly
@@ -178,7 +190,11 @@ export function Home({ data, languageName, languages, account, lengths, freeze }
             </span>
           ) : null}
         </div>
-        {data.locked ? null : idle && data.extra ? (
+        {data.locked ? (
+          <Link className="quick" href={`/learn/${lang}/plans`} data-lock-link>
+            {t("learn.home.buy")}
+          </Link>
+        ) : idle && data.extra ? (
           <button type="button" className="quick" onClick={() => (sfx("press", 0.4), go("extra"))}>
             {t("learn.home.extra")}
           </button>
@@ -202,7 +218,7 @@ export function Home({ data, languageName, languages, account, lengths, freeze }
                       : [t("learn.home.skillSession", { skill: name, level: item.level }), waitingText(item)].filter(Boolean).join("، ")
                   }
                   onClick={() => {
-                    if (playable(item) && !data.locked) {
+                    if (playable(item)) {
                       sfx("press", 0.4);
                       go(item.skill as Scope);
                     } else show(item.skill);
@@ -630,6 +646,10 @@ function Settings({ language, languageName, account, lengths }: { language: stri
             {t("learn.settings.panel")}
           </Link>
         ) : null}
+        <Link href={`/learn/${language}/subscription`}>
+          <Icon name="l-cal" />
+          {t("learn.settings.subscription")}
+        </Link>
         <Link href="/about">
           <Icon name="l-info" />
           <Mixed text={t("learn.settings.about")} />
