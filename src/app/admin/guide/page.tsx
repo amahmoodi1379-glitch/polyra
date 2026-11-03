@@ -14,7 +14,7 @@ import { guidePages } from "./links";
 
 export const metadata: Metadata = { title: t("admin.guide.title") };
 
-const sections = ["glance", "workbench", "steps", "review", "kinds", "statuses", "decisions", "audio", "order", "publish", "edit", "settings", "health", "rehearse", "reports", "sales", "errors"] as const;
+const sections = ["glance", "workbench", "steps", "review", "kinds", "statuses", "decisions", "audio", "order", "publish", "edit", "settings", "health", "insights", "rehearse", "reports", "sales", "errors"] as const;
 type Section = (typeof sections)[number];
 type PlainSection = Exclude<Section, "steps" | "kinds" | "statuses" | "decisions">;
 

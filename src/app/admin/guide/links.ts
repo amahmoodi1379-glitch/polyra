@@ -11,6 +11,8 @@ export const guidePages = {
   publish: { href: "/admin/publish", label: "admin.nav.publish" },
   transfer: { href: "/admin/transfer", label: "admin.nav.transfer" },
   health: { href: "/admin/health", label: "admin.nav.health" },
+  dashboard: { href: "/admin/dashboard", label: "admin.nav.dashboard" },
+  learning: { href: "/admin/learning", label: "admin.nav.learning" },
   rehearse: { href: "/admin/try", label: "admin.nav.rehearse" },
   engine: { href: "/admin/settings/engine", label: "admin.nav.engine" },
   general: { href: "/admin/settings/general", label: "admin.nav.general" },

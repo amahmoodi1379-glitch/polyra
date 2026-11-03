@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState, useTransition } from "react";
 import Link from "next/link";
 import { changeSessionLength, levelDown } from "@/app/(learner)/actions";
+import { promptInstall } from "@/components/learn/install";
 import { Icon, type IconName } from "@/components/learn/icons";
 import { Mixed } from "@/components/learn/mixed";
 import { dropIn, enter, squish } from "@/components/learn/motion";
@@ -236,6 +237,63 @@ function PathDone({ done, onBack }: { done: NonNullable<EndSummary["pathDone"]>;
 
 /** The one message of the end screen (PRD §3.11) with its buttons; it goes once it is answered. */
 function EndNote({ message, language, sessionId }: { message: EndMessage; language: string; sessionId: string | null }) {
+  if (message.kind === "install") return <InstallNote ios={message.ios} />;
+  return <AskNote message={message} language={language} sessionId={sessionId} />;
+}
+
+/**
+ * «اپ را به صفحه گوشی‌ات اضافه کن» (PRD §3.11 row 7): «نصب» opens Chrome's install window; on an iPhone
+ * it shows Safari's two steps instead, and where the window is gone it points at the browser's menu.
+ */
+function InstallNote({ ios }: { ios: boolean }) {
+  const [state, setState] = useState<"open" | "steps" | "done" | "closed">("open");
+  const [pending, start] = useTransition();
+  if (state === "closed") return null;
+  if (state === "done") {
+    return (
+      <div className="end-note" role="status" data-message="install">
+        <p>{t("learn.end.message.installed")}</p>
+      </div>
+    );
+  }
+  const install = () =>
+    start(async () => {
+      if (ios) return setState("steps");
+      // Chrome may have no window to show any more (it was answered on another page): its menu still installs.
+      const answer = await promptInstall();
+      setState(answer === "accepted" ? "done" : answer === "dismissed" ? "closed" : "steps");
+    });
+  return (
+    <div className="end-note install-note" data-message="install">
+      <p>{t("learn.end.message.install")}</p>
+      {state === "steps" ? (
+        <ol className="install-steps">
+          {ios ? (
+            <>
+              <li>{tRich("learn.end.message.iosStep1", { icon: <Icon name="l-share" /> })}</li>
+              <li>{tRich("learn.end.message.iosStep2", { icon: <Icon name="l-add" />, add: <Mixed text="Add to Home Screen" />, ok: <Mixed text="Add" /> })}</li>
+              <li className="sub">{t("learn.end.message.iosNotSafari")}</li>
+            </>
+          ) : (
+            <li>{tRich("learn.end.message.menuStep", { install: <Mixed text="Install app" /> })}</li>
+          )}
+        </ol>
+      ) : null}
+      <div className="row">
+        {state === "open" ? (
+          <button type="button" className="secondary" disabled={pending} onClick={install}>
+            {t("learn.end.message.installYes")}
+          </button>
+        ) : null}
+        <button type="button" className={state === "open" ? "ghost" : "secondary"} disabled={pending} onClick={() => setState("closed")}>
+          {state === "open" ? t("learn.end.message.later") : t("learn.end.message.ok")}
+        </button>
+      </div>
+    </div>
+  );
+}
+
+function AskNote({ message, language, sessionId }: { message: Exclude<EndMessage, { kind: "install" }>; language: string; sessionId: string | null }) {
   const [state, setState] = useState<"open" | "done" | "closed">(message.kind === "leveldown" && message.applied ? "done" : "open");
   const [pending, start] = useTransition();
   if (state === "closed") return null;

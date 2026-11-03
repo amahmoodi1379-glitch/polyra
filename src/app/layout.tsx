@@ -9,6 +9,8 @@ import { themeScript } from "@/lib/theme-script";
 export const metadata: Metadata = {
   title: { default: "polyra", template: "%s · polyra" },
   description: t("app.description"),
+  appleWebApp: { capable: true, title: "polyra", statusBarStyle: "default" },
+  icons: { apple: "/icons/apple-touch-icon.png" },
 };
 
 export const viewport: Viewport = {

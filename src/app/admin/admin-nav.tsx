@@ -14,6 +14,7 @@ import {
   ListChecks,
   History,
   Inbox,
+  LayoutDashboard,
   Library,
   ListOrdered,
   ReceiptText,
@@ -23,6 +24,7 @@ import {
   Activity,
   Settings2,
   SlidersHorizontal,
+  TrendingUp,
   TriangleAlert,
   Users,
   type LucideIcon,
@@ -37,7 +39,13 @@ type NavGroup = { label: MessageKey; items: NavItem[] };
 
 function navGroups(showTestCodes: boolean): NavGroup[] {
   return [
-    { label: "admin.nav.today", items: [{ href: "/admin", label: "admin.nav.workbench", icon: Inbox, exact: true }] },
+    {
+      label: "admin.nav.today",
+      items: [
+        { href: "/admin", label: "admin.nav.workbench", icon: Inbox, exact: true },
+        { href: "/admin/dashboard", label: "admin.nav.dashboard", icon: LayoutDashboard },
+      ],
+    },
     {
       label: "admin.nav.content",
       items: [
@@ -54,6 +62,7 @@ function navGroups(showTestCodes: boolean): NavGroup[] {
       label: "admin.nav.quality",
       items: [
         { href: "/admin/health", label: "admin.nav.health", icon: Activity },
+        { href: "/admin/learning", label: "admin.nav.learning", icon: TrendingUp },
         { href: "/admin/try", label: "admin.nav.rehearse", icon: FlaskConical },
         { href: "/admin/reports", label: "admin.nav.reports", icon: Flag },
       ],

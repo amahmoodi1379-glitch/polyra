@@ -6,7 +6,7 @@ import { startFromZero } from "@/server/learn/enroll";
 import { saveItemState } from "@/server/learn/writes";
 import { engineNumber } from "@/server/settings/read";
 import { seedSettings } from "../../scripts/seed/settings";
-import { E2E_BUYERS, E2E_EXAMINERS, E2E_IKNOW, E2E_PHONICS, E2E_PLACERS, E2E_PLAN, E2E_READERS, E2E_REPORT_ADMINS, E2E_REPORTERS, E2E_SELLERS, E2E_TESTERS, E2E_TRY_ADMINS, E2E_WRITERS } from "./database";
+import { E2E_BUYERS, E2E_EXAMINERS, E2E_IKNOW, E2E_INSTALLERS, E2E_PHONICS, E2E_PLACERS, E2E_PLAN, E2E_READERS, E2E_REPORT_ADMINS, E2E_REPORTERS, E2E_SELLERS, E2E_TESTERS, E2E_TRY_ADMINS, E2E_WRITERS } from "./database";
 
 /**
  * Fresh learner database for the browser tests: settings, the French demo, one new tester per project,
@@ -33,7 +33,7 @@ async function main() {
   const demo = await loadDemo();
   if (demo.kind !== "loaded") throw new Error(`The French demo did not load: ${demo.kind}`);
 
-  for (const phone of [...Object.values(E2E_PHONICS), ...Object.values(E2E_IKNOW), ...Object.values(E2E_REPORTERS)]) {
+  for (const phone of [...Object.values(E2E_PHONICS), ...Object.values(E2E_IKNOW), ...Object.values(E2E_REPORTERS), ...Object.values(E2E_INSTALLERS)]) {
     const user = await db.user.create({ data: { phone: normalizeMobile(phone)!, session_length_min: sessionLength, is_tester: true } });
     await startFromZero(user, "fr", new Date());
   }

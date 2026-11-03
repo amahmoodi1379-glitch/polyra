@@ -21,7 +21,7 @@ import { closeSession, startInfo, type EndMessage, type EndSummary, type LearnCo
 
 type Tx = Prisma.TransactionClient;
 
-export async function finishSession(tx: Tx, row: Session, plan: StoredPlan, ctx: LearnContext, at: Date): Promise<EndSummary> {
+export async function finishSession(tx: Tx, row: Session, plan: StoredPlan, ctx: LearnContext, at: Date, device: InstallDevice = "none"): Promise<EndSummary> {
   const { content, settings } = ctx;
   const today = tehranDate(at);
   const where = { user_id: row.user_id, language: row.language };
@@ -88,7 +88,7 @@ export async function finishSession(tx: Tx, row: Session, plan: StoredPlan, ctx:
     }
   }
 
-  const message = pathDoneNow ? null : await endMessage(tx, row, enrollment, ctx, at);
+  const message = pathDoneNow ? null : await endMessage(tx, row, enrollment, ctx, at, device);
 
   const end: EndSummary = {
     correct: plan.counters.correct,
@@ -138,12 +138,16 @@ const GOOD = 3;
 const LONG_TEXTS_LEVEL = "B1";
 const LONGER_LENGTH = 15;
 
+export type InstallDevice = "standalone" | "prompt" | "ios" | "none";
+/** Finished sessions after which «نصب» is offered, once each (PRD §3.11 row 7: the first, third and seventh). */
+const INSTALL_AFTER = [1, 3, 7];
+
 /**
  * The one message of this end screen (PRD §3.11), and the note that it was shown. Shorter sessions
  * follow sessions left in a row since the last time it was asked; «امروز وقت کم دارم» is not about the
  * session length, so it neither counts nor breaks the run (DECISIONS.md).
  */
-async function endMessage(tx: Tx, row: Session, enrollment: Enrollment, ctx: LearnContext, at: Date): Promise<EndMessage | null> {
+async function endMessage(tx: Tx, row: Session, enrollment: Enrollment, ctx: LearnContext, at: Date, device: InstallDevice): Promise<EndMessage | null> {
   const sample = await takeSampleNotice(tx, row.user_id, row.language);
   if (sample) return { kind: "sample", skill: sample.kind, level: sample.level };
   const applying: Exclude<EndMessage, { kind: "sample" }>[] = [];
@@ -215,6 +219,12 @@ async function endMessage(tx: Tx, row: Session, enrollment: Enrollment, ctx: Lea
   if (enrollment.slow_notice_due && enrollment.pace_mode === "slow") applying.push({ kind: "slowPace" });
   if (enrollment.phonics_off_due) applying.push({ kind: "phonicsOff" });
 
+  // 7. «اپ را به صفحه گوشی‌ات اضافه کن» on a phone that can, after the 1st, 3rd and 7th finished session (PRD §3.11 row 7).
+  if ((device === "prompt" || device === "ios") && enrollment.install_prompt_count < INSTALL_AFTER.length) {
+    const finished = await tx.session.count({ where: { ...where, end_reason: "finished" } });
+    if (finished >= INSTALL_AFTER[enrollment.install_prompt_count]) applying.push({ kind: "install", ios: device === "ios" });
+  }
+
   const message = pickSessionMessage(applying);
   if (message) {
     const shown: Partial<Record<EndMessage["kind"], Prisma.EnrollmentUpdateInput>> = {
@@ -223,6 +233,7 @@ async function endMessage(tx: Tx, row: Session, enrollment: Enrollment, ctx: Lea
       longer: { longer_asked_at: at },
       slowPace: { slow_notice_due: false },
       phonicsOff: { phonics_off_due: false },
+      install: { install_prompt_count: { increment: 1 } },
     };
     const data = shown[message.kind];
     if (data) await tx.enrollment.update({ where: { id: enrollment.id }, data });

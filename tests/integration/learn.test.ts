@@ -28,6 +28,7 @@ import { myWritings, saveWriting, tickWriting, writingCard } from "@/server/lear
 import { engineSettings } from "@/server/settings/read";
 import { rightAnswer, textAnswers } from "../../fixtures/synthetic/drive";
 import { productionAnswer } from "@/sim/answers";
+import type { InstallState } from "@/components/learn/install";
 import { testDb } from "./db";
 
 /**
@@ -69,7 +70,7 @@ function answerFor(bundle: Bundle, plan: Bundle["plan"], card: Card, at: Date, a
   return { raw, result };
 }
 
-const request = (bundle: Bundle, seq: number, card: Card, raw: RawAnswer, at: Date, answerId = randomUUID()) => ({
+const request = (bundle: Bundle, seq: number, card: Card, raw: RawAnswer, at: Date, answerId = randomUUID(), device?: InstallState) => ({
   sessionId: bundle.id,
   answerId,
   seq,
@@ -79,17 +80,18 @@ const request = (bundle: Bundle, seq: number, card: Card, raw: RawAnswer, at: Da
   elapsedSec: 5,
   at: at.toISOString(),
   shown: null,
+  device,
 });
 
 /** Plays a whole session with right answers, five seconds a card; `pick` answers a card its own way. */
-async function playAll(user: Person, bundle: Bundle, start = NOW, pick: (card: Card) => RawAnswer | undefined = () => undefined) {
+async function playAll(user: Person, bundle: Bundle, start = NOW, pick: (card: Card) => RawAnswer | undefined = () => undefined, device?: InstallState) {
   let plan = bundle.plan;
   let seq = bundle.nextSeq;
   for (let i = 0; plan.queue.length > 0 && i < 400; i++) {
     const at = new Date(start.getTime() + (i + 1) * 5000);
     const card = plan.queue[0];
     const { raw, result } = answerFor(bundle, plan, card, at, pick(card));
-    const response = await submitAnswer(user, request(bundle, seq, card, raw, at), at);
+    const response = await submitAnswer(user, request(bundle, seq, card, raw, at, randomUUID(), device), at);
     if (response.kind !== "ok") throw new Error(`Answer ${seq}: ${response.kind}`);
     seq++;
     plan = result.advanced.plan;
@@ -405,6 +407,52 @@ describe("the end screen's one message (PRD §3.11)", () => {
     const after = plusDays(NOW, 2);
     expect((await playAll(user, await started(user, after), after))?.message).toBeNull();
   }, 60_000);
+
+  it("offers to install after the 1st, 3rd and 7th finished session, only on a phone that can, three times at most (row 7)", async () => {
+    const user = await enrolled();
+    const count = async () => (await testDb.enrollment.findFirstOrThrow({ where: { user_id: user.id } })).install_prompt_count;
+    const play = async (day: number, device: InstallState) => {
+      const at = plusDays(NOW, day);
+      return (await playAll(user, await started(user, at), at, () => undefined, device))?.message ?? null;
+    };
+    /** Finished sessions from before, to reach the 7th without playing them. */
+    const finished = (n: number, day: number) =>
+      testDb.session.createMany({
+        data: Array.from({ length: n }, (_, i) => ({
+          user_id: user.id,
+          language: "fr",
+          scope: "mixed" as const,
+          planned_length_min: 15,
+          plan: {},
+          created_at: plusDays(NOW, day - 0.5 + i * 0.01),
+          ended_at: plusDays(NOW, day - 0.49 + i * 0.01),
+          end_reason: "finished" as const,
+        })),
+      });
+
+    // The first finished session on a phone that can install hears it.
+    expect(await play(0, "prompt")).toEqual({ kind: "install", ios: false });
+    expect(await count()).toBe(1);
+    // Not at the 2nd, never inside the installed app, then at the 4th (the 3rd was already reached).
+    expect(await play(1, "prompt")).toBeNull();
+    expect(await play(2, "standalone")).toBeNull();
+    expect(await count()).toBe(1);
+    expect(await play(3, "ios")).toEqual({ kind: "install", ios: true });
+    expect(await count()).toBe(2);
+    // The 6th is too early, the 7th is the last time.
+    await finished(1, 4);
+    expect(await play(4, "prompt")).toBeNull();
+    expect(await play(5, "prompt")).toEqual({ kind: "install", ios: false });
+    expect(await count()).toBe(3);
+    await finished(5, 6);
+    expect(await play(6, "ios")).toBeNull();
+    expect(await count()).toBe(3);
+
+    // A browser that cannot install (a computer) never hears it, and nothing is used up.
+    const desk = await enrolled();
+    expect((await playAll(desk, await started(desk), NOW, () => undefined, "none"))?.message).toBeNull();
+    expect((await testDb.enrollment.findFirstOrThrow({ where: { user_id: desk.id } })).install_prompt_count).toBe(0);
+  }, 120_000);
 });
 
 describe("the line under «شروع» (PRD §10.2)", () => {

@@ -22,6 +22,7 @@ import { EndScreen } from "./end";
 import { Exercise, type Retry } from "./exercise";
 import { Feedback } from "./feedback";
 import { ReportSheet } from "./report";
+import { installState, keepSessionSound } from "@/components/learn/install";
 import { flush, listenOutbox, send, useOffline, waiting } from "./outbox";
 import { DialogueStage, ErrorfixStage, SpeakStage } from "./speaking";
 import { TextReview, TextStage, TextWordsFace, type TextProgressNote } from "./text";
@@ -129,6 +130,8 @@ export function Player({ language, languageName, scope: firstScope }: { language
     live.current = next.id;
     silentNext.current = false;
     setBundle(next);
+    // The session's sound files are fetched ahead while the connection is there (PRD §15.6).
+    keepSessionSound(next.plan);
     setPlan(next.plan);
     setDone(null);
     setSummary(null);
@@ -338,6 +341,8 @@ export function Player({ language, languageName, scope: firstScope }: { language
       at: at.toISOString(),
       shown: result.graded?.result ?? "seen",
       ...(alt ? { alt: true } : {}),
+      // Whether this phone can be offered «نصب» at the end of the session (PRD §3.11 row 7).
+      device: installState(),
     });
     // After each attempt of a text its review page comes; the first round without help shows nothing yet (PRD §7.4).
     if (result.text && result.text.stage !== "first" && "answers" in raw) {
