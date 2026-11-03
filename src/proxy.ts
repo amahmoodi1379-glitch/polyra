@@ -39,6 +39,7 @@ function sameText(a: string, b: string) {
 }
 
 export const config = {
-  // The host's health check must pass without a password.
-  matcher: ["/((?!api/health|api/cron).*)"],
+  // The host's health check must pass without a password, and so must the install files: a browser fetches
+  // the manifest and its icons without the password, and an app that cannot read them is not offered to install.
+  matcher: ["/((?!api/health|api/cron|manifest\\.webmanifest|sw\\.js|icons/).*)"],
 };

@@ -1939,6 +1939,29 @@
     color: var(--ink-2);
     text-wrap: pretty;
   }
+  & .install-steps {
+    margin: 0;
+    padding-inline-start: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14.5px;
+    line-height: 1.8;
+    color: var(--ink-2);
+  }
+  & .install-steps li.sub {
+    list-style: none;
+    margin-inline-start: -22px;
+    font-size: 13px;
+  }
+  & .install-steps .i {
+    display: inline-block;
+    margin-inline: 2px;
+    width: 18px;
+    height: 18px;
+    vertical-align: -4px;
+    color: var(--brand-text);
+  }
   & .end-note p.sub {
     margin-top: -6px;
     font-weight: 600;

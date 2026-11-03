@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { CircleCheck } from "lucide-react";
+import { Check, CircleCheck } from "lucide-react";
 import { LanguageTabs } from "@/components/admin/language-tabs";
 import { PageHeader } from "@/components/admin/page-header";
 import { formatNumber, t } from "@/i18n";
@@ -10,6 +10,8 @@ import { requireAdmin } from "@/server/auth/session";
 import { batchSize } from "@/server/content/kinds/shared";
 import { pickLanguage } from "@/server/content/languages";
 import { sentenceHealth, type HealthRow } from "@/server/content/health/sentences";
+import { SUSPECT_MIN, SUSPECT_SHARE, suspectItems, TEXT_LOW, TEXT_HIGH, TEXT_MIN, textsOutOfPlace } from "@/server/content/health/suspects";
+import { reportSlug } from "@/server/reports/slugs";
 import { makeSentences } from "./actions";
 import { MakeButton } from "./make-button";
 
@@ -28,14 +30,16 @@ function healthHref(language: string, level: string, view: View = "low") {
 }
 
 /**
- * «سلامت محتوا» (PRD §13.11), the part phase 1 needs: how many sentences of each word a learner can
- * use in the current order. The parts that need learners' answers come with phase 4.
+ * «سلامت محتوا» (PRD §13.11): how many sentences of each word a learner can use in the current order;
+ * and, from learners' answers, the items they cannot get right and the texts too hard or too easy for
+ * their place. `?testers=1` counts testers' and teachers' answers too.
  */
 export default async function HealthPage({ searchParams }: PageProps<"/admin/health">) {
   const admin = await requireAdmin();
   const query = await searchParams;
   const language = pickLanguage(query.lang, admin.admin_language);
-  const [{ min, levels }, size] = await Promise.all([sentenceHealth(language), batchSize("P-S", 10)]);
+  const testers = one(query.testers) === "1";
+  const [{ min, levels }, size, suspects, texts] = await Promise.all([sentenceHealth(language), batchSize("P-S", 10), suspectItems(language, testers), textsOutOfPlace(language, testers)]);
 
   const asked = levels.find((item) => item.level === one(query.level));
   const current = asked ?? levels.find((item) => item.low.length > 0) ?? levels.find((item) => item.none.length > 0) ?? levels[0];
@@ -158,7 +162,88 @@ export default async function HealthPage({ searchParams }: PageProps<"/admin/hea
         )}
       </section>
 
-      <p className="text-ink-3 border-line border-t pt-5 text-[13.5px] leading-7">{t("admin.health.later")}</p>
+      <section aria-labelledby="answers" className="border-line flex flex-col gap-4 border-t pt-6" data-health-answers>
+        <div className="flex flex-col gap-1">
+          <h2 id="answers" className="text-ink text-[19px] font-extrabold">
+            {t("admin.health.answers.title")}
+          </h2>
+          <p className="text-ink-2 max-w-[68ch] text-[14.5px] leading-7">
+            {t("admin.health.answers.lead", { min: formatNumber(SUSPECT_MIN), share: formatNumber(SUSPECT_SHARE * 100) })}
+          </p>
+          <Link
+            href={`/admin/health?lang=${language}${testers ? "" : "&testers=1"}#answers`}
+            scroll={false}
+            role="checkbox"
+            aria-checked={testers}
+            className="text-ink-2 hover:text-ink mt-1 flex w-fit items-center gap-2 text-[13.5px] font-bold"
+          >
+            <span className={cn("grid size-[18px] place-items-center rounded-[5px] border", testers ? "bg-brand border-brand text-on-brand" : "border-line-2")} aria-hidden>
+              {testers ? <Check className="size-3.5" strokeWidth={3} /> : null}
+            </span>
+            {t("admin.health.testers")}
+          </Link>
+        </div>
+        {suspects.length === 0 ? (
+          <p className="bg-surface text-ink-2 rounded-[22px] px-6 py-6 text-[14.5px] shadow-[var(--shadow-1)]">{t("admin.health.answers.none")}</p>
+        ) : (
+          <ul className="bg-surface divide-line flex flex-col divide-y rounded-[22px] shadow-[var(--shadow-1)]">
+            {suspects.map((row) => (
+              <li key={`${row.type}:${row.id}:${row.step}`} className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 px-5 py-3.5" data-suspect={`${row.type}:${row.id}`}>
+                <span className="flex min-w-0 flex-wrap items-baseline gap-x-3">
+                  {row.href ? (
+                    <Link href={row.href} className="text-ink hover:text-brand-text text-[15px] font-bold underline-offset-4 hover:underline">
+                      {isolateLatin(row.title ?? "")}
+                    </Link>
+                  ) : (
+                    <span className="text-ink-3">{t("admin.health.answers.gone")}</span>
+                  )}
+                  <span className="text-ink-3 text-[13px]">
+                    {t(`admin.library.types.${(reportSlug[row.type] ?? "words") as "words"}`)} · {t("admin.health.answers.step", { n: formatNumber(row.step) })}
+                  </span>
+                </span>
+                <span className="text-bad text-[13.5px] font-bold tabular-nums">
+                  {t("admin.health.answers.line", { ok: formatNumber(Math.round((row.ok / row.n) * 100)), idk: formatNumber(Math.round((row.idk / row.n) * 100)), n: formatNumber(row.n) })}
+                </span>
+              </li>
+            ))}
+          </ul>
+        )}
+      </section>
+
+      <section aria-labelledby="texts" className="border-line flex flex-col gap-4 border-t pt-6" data-health-texts>
+        <div className="flex flex-col gap-1">
+          <h2 id="texts" className="text-ink text-[19px] font-extrabold">
+            {t("admin.health.texts.title")}
+          </h2>
+          <p className="text-ink-2 max-w-[68ch] text-[14.5px] leading-7">
+            {t("admin.health.texts.lead", { min: formatNumber(TEXT_MIN), low: formatNumber(TEXT_LOW * 100), high: formatNumber(TEXT_HIGH * 100) })}
+          </p>
+        </div>
+        {texts.length === 0 ? (
+          <p className="bg-surface text-ink-2 rounded-[22px] px-6 py-6 text-[14.5px] shadow-[var(--shadow-1)]">{t("admin.health.texts.none")}</p>
+        ) : (
+          <ul className="bg-surface divide-line flex flex-col divide-y rounded-[22px] shadow-[var(--shadow-1)]">
+            {texts.map((row) => (
+              <li key={`${row.id}:${row.track}`} className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 px-5 py-3.5" data-text-flag={row.id}>
+                <span className="flex min-w-0 flex-wrap items-baseline gap-x-3">
+                  <Link href={row.href} className="text-ink hover:text-brand-text text-[15px] font-bold underline-offset-4 hover:underline">
+                    {isolateLatin(row.title)}
+                  </Link>
+                  <span className="text-ink-3 text-[13px]">
+                    <bdi className="lat">{row.level}</bdi> · {t(`admin.health.texts.tracks.${row.track}`)}
+                  </span>
+                </span>
+                <span className="flex items-baseline gap-2 text-[13.5px]">
+                  <span className={cn("rounded-[8px] px-2 py-0.5 text-[12.5px] font-bold", row.mean < TEXT_LOW ? "bg-bad-soft text-bad" : "bg-gender-m/10 text-gender-m")}>
+                    {t(row.mean < TEXT_LOW ? "admin.health.texts.hard" : "admin.health.texts.easy")}
+                  </span>
+                  <span className="text-ink-2 tabular-nums">{t("admin.health.texts.line", { mean: formatNumber(Math.round(row.mean * 100)), n: formatNumber(row.n) })}</span>
+                </span>
+              </li>
+            ))}
+          </ul>
+        )}
+      </section>
     </>
   );
 }

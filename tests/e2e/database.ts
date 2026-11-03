@@ -53,6 +53,9 @@ export const E2E_SELLERS = { "learner-phone": "09120000067", "learner-desktop": 
 export const E2E_REPORTERS = { "learner-phone": "09120000071", "learner-desktop": "09120000073" } as const;
 export const E2E_REPORT_ADMINS = { "learner-phone": "09120000075", "learner-desktop": "09120000077" } as const;
 
+/** New learners from zero on a phone that can install the app (PRD §3.11 row 7): Chrome on Android, Safari on an iPhone. */
+export const E2E_INSTALLERS = { android: "09120000079", ios: "09120000081" } as const;
+
 /** The plan the learner database starts with, so a buyer has something to buy. */
 export const E2E_PLAN = { name: "یک‌ماهه", days: 30, price: 290_000, badge: "پرفروش" } as const;
 

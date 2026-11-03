@@ -36,6 +36,8 @@ export const answerSchema = z.object({
   shown: z.string().max(20).nullable(),
   /** The browser showed the card's version without sound (PRD §10.12). */
   alt: z.boolean().optional(),
+  /** Whether the app can be offered for the home screen on this phone (PRD §3.11 row 7). */
+  device: z.enum(["standalone", "prompt", "ios", "none"]).optional(),
 });
 export type AnswerRequest = z.infer<typeof answerSchema>;
 
@@ -298,7 +300,7 @@ export async function submitAnswer(user: Learner, request: AnswerRequest, server
         data: { plan: stored as unknown as Prisma.InputJsonValue, position: next.doneCount, next_seq: row.next_seq + 1, last_answer_at: at },
       });
       if (!result.advanced.finished) return { kind: "ok", seq: request.seq, finished: false, end: null };
-      const end = await finishSession(tx, { ...row, plan: stored as unknown as Prisma.JsonValue, next_seq: row.next_seq + 1, last_answer_at: at }, stored, ctx, at);
+      const end = await finishSession(tx, { ...row, plan: stored as unknown as Prisma.JsonValue, next_seq: row.next_seq + 1, last_answer_at: at }, stored, ctx, at, request.device ?? "none");
       return { kind: "ok", seq: request.seq, finished: true, end };
     },
     { timeout: 20_000 },

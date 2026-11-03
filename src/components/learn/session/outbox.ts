@@ -3,6 +3,7 @@
 import { useEffect, useSyncExternalStore } from "react";
 import { reportError } from "@/lib/report-error";
 import type { AnswerRequest, AnswerResponse } from "@/server/learn/answer";
+import { startPwa } from "@/components/learn/install";
 
 /**
  * Answers waiting to reach the server (PRD §15.4). Each finished card is saved here first and sent
@@ -140,6 +141,8 @@ export const waiting = (sessionId?: string) => load().filter((item) => !sessionI
  */
 export function OutboxSync() {
   useEffect(() => {
+    // The service worker and Chrome's install event live as long as the learner app (PRD §3.11, §15.6).
+    startPwa();
     const online = () => {
       setOffline(false);
       void flush();

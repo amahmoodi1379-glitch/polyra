@@ -54,6 +54,8 @@ export type EndMessage =
   | { kind: "skipTest"; skill: "vocab" | "grammar"; next: string }
   | { kind: "slowPace" }
   | { kind: "phonicsOff" }
+  /** «اپ را به صفحه گوشی‌ات اضافه کن» (PRD §3.11 row 7): Chrome's install window, or Safari's two steps on an iPhone. */
+  | { kind: "install"; ios: boolean }
   /** The placement sample failed (PRD §11.4): «… از A2 ادامه می‌دهیم». Before every other message (DECISIONS.md). */
   | { kind: "sample"; skill: "vocab" | "grammar"; level: string };
 

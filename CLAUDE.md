@@ -142,6 +142,13 @@ Deploy: Runflare builds `main` (`docs/deploy-runflare.md`). Work on the session 
   (lock page, `plan-picker.tsx`) and `subscription` («اشتراک من»), `/pay/return` (verify), `/pay/mock` (test bank), cron
   `/api/cron/orders` (`CRON_SECRET`); panel `/admin/sales`, `/admin/orders`, and the «اشتراک و خریدها» section of `/admin/users/[id]`
   (`subscription-tools.tsx`). Separate modules filter content in `learnerContent` (`moduleFilter`).
+- Insights (PRD §13.2, §13.11): `src/server/insights/learning.ts` («یادگیری واقعی»: step × interval, first review, codes,
+  learners, production, funnel; page `src/app/admin/learning`), `dashboard.ts` (page `src/app/admin/dashboard`),
+  `src/server/content/health/suspects.ts` (items learners fail, texts out of place, on «سلامت محتوا»). Testers and teachers
+  are left out unless `testers=1`.
+- Install (PRD §3.11 row 7, §15.6): `src/app/manifest.ts`, `public/icons` (placeholders), the service worker `src/app/sw.js/route.ts`
+  (static files and session sound, range answers for Safari), `src/components/learn/install.ts` (install state sent as `device`
+  with each answer, Chrome's window, `keepSessionSound`); the offer is picked in `finish.ts` and drawn by `InstallNote` in `end.tsx`.
 - «گزارش اشکال» (PRD §13.10, T72): `src/engine/report.ts` («حق با تو بود»: the notebook entry, step and `fail_count`).
   `src/server/reports`: `file.ts` (`fileReport` from the feedback sheet, by the answer's `review_log` id; `takeReportNotices`),
   `admin.ts` (accept the answer, fixed, suspend, reject, priority), `list.ts` (queue, one report, open counts), `preview.ts` (the
