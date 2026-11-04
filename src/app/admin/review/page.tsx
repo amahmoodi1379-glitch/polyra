@@ -1,7 +1,7 @@
 import "@/app/(learner)/learner.css";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, CircleAlert } from "lucide-react";
+import { ArrowRight, CircleAlert, ListChecks } from "lucide-react";
 import { ItemAudioPanel } from "@/components/admin/audio/item-audio";
 import { LanguageTabs } from "@/components/admin/language-tabs";
 import { PageHeader } from "@/components/admin/page-header";
@@ -182,6 +182,20 @@ export default async function ReviewPage({ searchParams }: PageProps<"/admin/rev
               ))}
             </section>
           ) : null}
+
+          <section className="bg-surface flex flex-col gap-2.5 rounded-[18px] px-4 py-3.5 shadow-[var(--shadow-1)]" aria-labelledby="check-title">
+            <h3 id="check-title" className="text-ink flex items-center gap-2 text-[15px] font-extrabold">
+              <ListChecks className="text-brand-text size-4.5 shrink-0" strokeWidth={2.25} aria-hidden />
+              {t("admin.review.check.title")}
+            </h3>
+            <ul className="text-ink-2 flex list-disc flex-col gap-1 ps-5 text-[14px] leading-6">
+              {t(`admin.review.check.${slug}`)
+                .split("\n")
+                .map((line) => (
+                  <li key={line}>{isolateLatin(line)}</li>
+                ))}
+            </ul>
+          </section>
 
           {itemFindings.length > 0 ? (
             <section className="flex flex-col gap-2.5" aria-labelledby="qa-title">
