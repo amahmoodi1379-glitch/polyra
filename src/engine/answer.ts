@@ -45,8 +45,8 @@ export function newItemState(itemType: ItemType, itemId: number, now: Date, sour
 
 /**
  * A probation card (PRD §9.7): the item claimed known and not yet shown, on its probation step with one
- * virtual Easy review (so the first real one is about eight days later), or on `due` when given (the
- * placement sample, §11.4).
+ * virtual Easy review, its first real one at most `probation.first_days` later (about eight days, as the PRD's
+ * 0.9 retention gave; DECISIONS.md), or on `due` when given (the placement sample, §11.4).
  */
 export function probationState(
   itemType: ItemType,
@@ -58,7 +58,10 @@ export function probationState(
   settings: Settings,
   due: Date | null = null,
 ): ItemStateE {
-  const fsrs = rateCard(emptyCard(now), "easy", now, settings, false);
+  const rated = rateCard(emptyCard(now), "easy", now, settings, false);
+  // Easy's first interval grows as the target retention falls; a claim is checked within `probation.first_days`.
+  const latest = plusDays(now, num(settings, "probation.first_days"));
+  const fsrs = Date.parse(rated.due) > latest.getTime() ? withDue(rated, latest) : rated;
   return { ...newItemState(itemType, itemId, now, source), step, fsrs: due ? withDue(fsrs, due) : fsrs, probation: kind };
 }
 

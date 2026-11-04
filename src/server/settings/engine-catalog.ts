@@ -166,7 +166,7 @@ export const switchableExercises: { code: string; fa: string }[] = [
 
 export const engineCatalog: EngineSettingDef[] = [
   // Memory (PRD §9.1)
-  ratio("fsrs.request_retention", 0.9, "memory", "چقدر می‌خواهیم کاربر یادش بماند. بالاتر یعنی مرور بیشتر.", 0.7, 0.97),
+  ratio("fsrs.request_retention", 0.85, "memory", "چقدر می‌خواهیم کاربر یادش بماند. بالاتر یعنی مرور بیشتر.", 0.7, 0.97),
   int("fsrs.maximum_interval", 365, 30, 3650, "memory", "بیشترین فاصله بین دو مرور (روز)."),
   {
     key: "fsrs.weights",
@@ -184,6 +184,7 @@ export const engineCatalog: EngineSettingDef[] = [
     group: "memory",
     description_fa: "اولین مرور آیتم تازه چند روز بعد باشد. خالی یعنی همان فاصله خود حافظه.",
   },
+  int("probation.first_days", 8, 1, 30, "memory", "کلمه یا درسی که زبان‌آموز گفته «بلدم»، حداکثر چند روز بعد اولین بار امتحان شود."),
   int("followup.gap", 4, 1, 20, "memory", "حداقل چند تمرین بین مرور و تمرین بعدی همان آیتم فاصله باشد."),
   int("practice.gap", 3, 1, 20, "memory", "حداقل چند تمرین قبل از تکرار جواب غلط."),
   int("practice.max_per_item", 2, 0, 5, "memory", "هر آیتم در یک جلسه حداکثر چند بار تکرار شود."),
