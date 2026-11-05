@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useTransition, type ReactNode } from "react";
-import { useRouter } from "next/navigation";
 import { Check, LoaderCircle } from "lucide-react";
 import { AlertDialog, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle } from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
@@ -37,7 +36,6 @@ export function ConfirmButton({
   confirmLabel: string;
   run: () => Promise<PublishOutcome>;
 }) {
-  const router = useRouter();
   const [open, setOpen] = useState(false);
   const [message, setMessage] = useState<PublishOutcome | null>(null);
   const [pending, startTransition] = useTransition();
@@ -46,7 +44,6 @@ export function ConfirmButton({
     startTransition(async () => {
       const outcome = await run();
       setMessage(outcome);
-      router.refresh();
     });
 
   return (

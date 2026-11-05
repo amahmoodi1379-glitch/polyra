@@ -1,7 +1,6 @@
 "use client";
 
 import { useMemo, useState, useTransition } from "react";
-import { useRouter } from "next/navigation";
 import { CircleAlert, RotateCcw, Search, X } from "lucide-react";
 import { Segmented, Toggle } from "@/app/admin/content/[type]/[id]/form-kit";
 import { Button } from "@/components/ui/button";
@@ -57,7 +56,6 @@ const sameValue = (a: unknown, b: unknown) => JSON.stringify(a) === JSON.stringi
  * is checked as it is typed; «ذخیره» sends only the keys that changed (PRD §13.2).
  */
 export function EngineSettings({ groups }: { groups: EngineGroupView[] }) {
-  const router = useRouter();
   const settings = useMemo(() => groups.flatMap((group) => group.settings), [groups]);
   const byKey = useMemo(() => new Map(settings.map((setting) => [setting.key, setting])), [settings]);
   const [saved, setSaved] = useState<Record<string, EngineValue>>(() => Object.fromEntries(settings.map((setting) => [setting.key, setting.value])));
@@ -106,7 +104,6 @@ export function EngineSettings({ groups }: { groups: EngineGroupView[] }) {
         setDrafts((current) => ({ ...current, ...Object.fromEntries(dirtyKeys.map((key) => [key, draftOf(byKey.get(key)!, changes[key] as EngineValue)])) }));
         setServerErrors([]);
         setNotice({ tone: "saved", text: t("admin.settings.saved", { count: result.changed.length }) });
-        router.refresh();
       } else if (result.state === "invalid") {
         setServerErrors(result.errors);
         setNotice({ tone: "invalid", text: t("admin.settings.invalid", { count: result.errors.length }) });

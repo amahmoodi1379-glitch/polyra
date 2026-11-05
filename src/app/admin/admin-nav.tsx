@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useOptimistic, useTransition } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import { useOptimistic, useState, useTransition } from "react";
 import {
   ArrowDownUp,
   AudioLines,
@@ -23,6 +23,7 @@ import {
   Users,
   type LucideIcon,
 } from "lucide-react";
+import { navDone, navStart } from "@/components/admin/nav-progress";
 import { Wordmark } from "@/components/brand/wordmark";
 import { t, type MessageKey } from "@/i18n";
 import { cn } from "@/lib/utils";
@@ -67,6 +68,9 @@ function navGroups(showTestCodes: boolean): NavGroup[] {
   ];
 }
 
+/** The whole page, data included (the default stops at the loading outline). */
+const fullPrefetch = { kind: "full" } as unknown as Parameters<ReturnType<typeof useRouter>["prefetch"]>[1];
+
 const languages = [
   { value: "fr", label: "common.languages.fr" },
   { value: "de", label: "common.languages.de" },
@@ -86,12 +90,18 @@ export function LanguageScope({ current }: { current: string }) {
             type="button"
             role="radio"
             aria-checked={selected}
-            onClick={() =>
+            onClick={() => {
+              if (selected) return;
+              navStart();
               startTransition(async () => {
                 setOptimistic(language.value);
-                await setAdminLanguage(language.value);
-              })
-            }
+                try {
+                  await setAdminLanguage(language.value);
+                } finally {
+                  navDone();
+                }
+              });
+            }}
             className={cn(
               "h-9 rounded-[12px] text-[13px] font-bold transition-[background-color,color,box-shadow] duration-150",
               selected ? "bg-surface dark:bg-tint-2 text-brand-text shadow-[var(--shadow-1)]" : "text-ink-2 hover:text-ink",
@@ -106,20 +116,35 @@ export function LanguageScope({ current }: { current: string }) {
 }
 
 export function AdminNav({ showTestCodes, onNavigate }: { showTestCodes: boolean; onNavigate?: () => void }) {
+  const router = useRouter();
   const pathname = usePathname();
+  // The clicked item lights up at once, before its page has arrived; it lets go once the address moves.
+  const [clicked, setClicked] = useState<{ href: string; from: string } | null>(null);
+  if (clicked && clicked.from !== pathname) setClicked(null);
+  const current = clicked && clicked.from === pathname ? clicked.href : pathname;
+  // A pointer resting on an item (or a finger touching it) fetches the whole page ahead of the click.
+  const warm = (href: string) => {
+    if (href !== pathname) router.prefetch(href, fullPrefetch);
+  };
   return (
     <nav className="flex flex-col gap-5">
       {navGroups(showTestCodes).map((group) => (
         <div key={group.label} className="flex flex-col gap-0.5">
           <p className="text-ink-3 px-3 pb-1 text-[12.5px] font-bold">{t(group.label)}</p>
           {group.items.map((item) => {
-            const active = item.exact ? pathname === item.href : pathname === item.href || pathname.startsWith(`${item.href}/`);
+            const active = item.exact ? current === item.href : current === item.href || current.startsWith(`${item.href}/`);
             const Icon = item.icon;
             return (
               <Link
                 key={item.href}
                 href={item.href}
-                onClick={onNavigate}
+                onClick={() => {
+                  if (item.href !== pathname) setClicked({ href: item.href, from: pathname });
+                  onNavigate?.();
+                }}
+                onPointerEnter={() => warm(item.href)}
+                onTouchStart={() => warm(item.href)}
+                onFocus={() => warm(item.href)}
                 aria-current={active ? "page" : undefined}
                 className={cn(
                   "flex min-h-10 items-center gap-3 rounded-[12px] px-3 text-[14.5px] transition-colors duration-150",

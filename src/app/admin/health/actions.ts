@@ -1,5 +1,6 @@
 "use server";
 
+import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { requireAdmin } from "@/server/auth/session";
 import { createBatch } from "@/server/content/batches";
@@ -23,6 +24,8 @@ export async function makeSentences(form: FormData) {
   let target: string;
   try {
     const made = await createBatch({ slug: "sentences", language, options: { wordIds }, adminId: admin.id });
+    // A new batch changes the workbench; pages the browser still holds must not show the old one.
+    if ("id" in made) revalidatePath("/admin", "layout");
     target = "id" in made ? `/admin/batches/${made.id}` : back;
   } catch (error) {
     const code = await logError("health.makeSentences", error, { userId: admin.id });

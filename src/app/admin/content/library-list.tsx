@@ -2,7 +2,6 @@
 
 import { useState, useTransition } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { ChevronLeft, ChevronRight, CircleDashed, LoaderCircle, MoreHorizontal, X } from "lucide-react";
 import { joinDots } from "@/components/admin/join-dots";
 import { QaMark } from "@/components/admin/qa-mark";
@@ -44,7 +43,6 @@ export function LibraryList({
   state: LibraryState;
   emptyText: string;
 }) {
-  const router = useRouter();
   const [selected, setSelected] = useState<Set<number>>(new Set());
   const [notice, setNotice] = useState<Notice | null>(null);
   const [confirmRetire, setConfirmRetire] = useState(false);
@@ -74,7 +72,6 @@ export function LibraryList({
         refused: outcome.refused.map((item) => ({ title: titles.get(item.id) ?? "", reason: t(`admin.library.refused.${item.reason}`) })),
       });
       setSelected(new Set());
-      router.refresh();
     });
 
   if (page.rows.length === 0) {

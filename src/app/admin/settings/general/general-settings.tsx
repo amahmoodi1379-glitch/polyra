@@ -1,7 +1,6 @@
 "use client";
 
 import { useId, useMemo, useState, useTransition } from "react";
-import { useRouter } from "next/navigation";
 import { AddButton, AreaBox, Field, FormContext, move, RowTools, SelectBox, TextBox } from "@/app/admin/content/[type]/[id]/form-kit";
 import { NumberBox } from "@/components/admin/number-box";
 import { formatNumber, t, type MessageKey } from "@/i18n";
@@ -76,7 +75,6 @@ function PartLabel({ name }: { name: string }) {
  * the fields that changed are sent; each becomes one row of «تاریخچه تغییرها».
  */
 export function GeneralSettings({ fields, language }: { fields: GeneralFieldView[]; language: LanguageCode }) {
-  const router = useRouter();
   const byId = useMemo(() => new Map(fields.map((field) => [field.id, field])), [fields]);
   const [saved, setSaved] = useState<Record<string, GeneralValue>>(() => Object.fromEntries(fields.map((field) => [field.id, field.value])));
   const initialDrafts = () => Object.fromEntries(fields.map((field) => [field.id, draftOf(field, saved[field.id])]));
@@ -116,7 +114,6 @@ export function GeneralSettings({ fields, language }: { fields: GeneralFieldView
         setDrafts((current) => ({ ...current, ...Object.fromEntries(Object.entries(result.values).map(([id, value]) => [id, draftOf(byId.get(id)!, value)])) }));
         setServerErrors([]);
         setNotice({ tone: "saved", text: t("admin.settings.saved", { count: result.changed.length }) });
-        router.refresh();
       } else if (result.state === "invalid") {
         setServerErrors(result.errors);
         setNotice({ tone: "invalid", text: t("admin.settings.invalid", { count: result.errors.length }) });
