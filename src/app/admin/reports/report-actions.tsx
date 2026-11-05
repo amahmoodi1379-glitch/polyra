@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useTransition } from "react";
-import { useRouter } from "next/navigation";
 import { LoaderCircle } from "lucide-react";
 import {
   AlertDialog,
@@ -36,7 +35,6 @@ export function ReportActions({
   /** What «تعلیق» takes out, or that it is out already. */
   suspend: "sentence" | "item" | "already" | null;
 }) {
-  const router = useRouter();
   const [pending, startTransition] = useTransition();
   const [right, setRight] = useState(false);
   const [confirm, setConfirm] = useState(false);
@@ -48,13 +46,11 @@ export function ReportActions({
       const outcome = await actOnReport(id, step);
       if (!outcome.ok) {
         setMessage({ text: t(`admin.reports.problem.${outcome.reason}`), bad: true });
-        router.refresh();
         return;
       }
       const done =
         step === "accept" ? "accept" : step === "fixed" || step === "fixedRight" ? "fixed" : step === "suspend" ? "suspend" : step === "reject" ? "reject" : "priority";
       setMessage({ text: [t(`admin.reports.done.${done}`), outcome.right ? t("admin.reports.done.right") : ""].filter(Boolean).join(" "), bad: false });
-      router.refresh();
     });
 
   return (

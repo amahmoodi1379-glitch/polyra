@@ -269,6 +269,51 @@
   details[open] > summary .disclose-chevron {
     rotate: 0deg;
   }
+
+  /* The panel's page-on-its-way bar (src/components/admin/nav-progress.tsx): grows along the reading
+     direction while waiting, then fills and fades. */
+  .nav-progress-bar {
+    opacity: 0;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: opacity 220ms var(--ease-std) 80ms;
+  }
+  [dir="rtl"] .nav-progress-bar {
+    transform-origin: right;
+  }
+  /* The page outline of src/app/admin/loading.tsx: appears after a beat (a fast page never flashes it)
+     and breathes slowly. */
+  .admin-skeleton {
+    animation:
+      skeleton-in 200ms var(--ease-std) 120ms both,
+      skeleton-breathe 1.6s ease-in-out 320ms infinite alternate;
+  }
+  [data-nav-progress="on"] .nav-progress-bar {
+    opacity: 1;
+    transition: none;
+    animation: nav-progress 9s var(--ease-out) forwards;
+  }
+}
+
+@keyframes skeleton-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes skeleton-breathe {
+  to {
+    opacity: 0.55;
+  }
+}
+
+@keyframes nav-progress {
+  from {
+    transform: scaleX(0.06);
+  }
+  to {
+    transform: scaleX(0.92);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

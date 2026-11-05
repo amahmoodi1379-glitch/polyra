@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useState, useTransition } from "react";
 import { CircleCheck, ExternalLink, LoaderCircle, Play, TriangleAlert, UserRound } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -42,7 +41,6 @@ function problems(rows: PlacementReadiness[]): string[] {
  * by the teacher or by a made-up learner of a chosen level, and the last result with its sample.
  */
 export function PlacementCard({ language, overview }: { language: string; overview: PlacementOverview }) {
-  const router = useRouter();
   const [pending, start] = useTransition();
   const [known, setKnown] = useState<string>("none");
   const [failed, setFailed] = useState(false);
@@ -132,7 +130,6 @@ export function PlacementCard({ language, overview }: { language: string; overvi
                 // The app opens from the link that shows once the test is ready: a window opened after the wait would be blocked.
                 const ok = await placeMyself(language);
                 setFailed(!ok);
-                router.refresh();
               })
             }
           >
@@ -167,7 +164,6 @@ export function PlacementCard({ language, overview }: { language: string; overvi
               start(async () => {
                 const ok = await placeMadeUp(language, known === "none" ? null : known);
                 setFailed(!ok);
-                router.refresh();
               })
             }
           >

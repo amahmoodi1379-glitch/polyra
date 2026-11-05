@@ -93,5 +93,6 @@ export async function throwAway(batchId: number) {
   } catch (error) {
     await logError("batch.cancel", error, { userId: admin.id });
   }
+  revalidatePath("/admin", "layout");
   redirect(`/admin/create?lang=${batch.language}`);
 }

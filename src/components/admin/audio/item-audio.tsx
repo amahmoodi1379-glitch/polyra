@@ -81,10 +81,7 @@ function TextAudio({ audio, language }: { audio: TextAudioView; language: string
     const outcome = await syncTextAction(textId, syncing.which, offsetsMs);
     setSaving(false);
     setNotice(outcome);
-    if (outcome.ok) {
-      setSyncing(null);
-      router.refresh();
-    }
+    if (outcome.ok) setSyncing(null);
   };
 
   const withFile = audio.sentences.filter((sentence) => sentence.slot.human && !sentence.slot.human.stale).length;
@@ -153,7 +150,6 @@ function TextAudio({ audio, language }: { audio: TextAudioView; language: string
             startJoin(async () => {
               const outcome = await joinTextAction(textId);
               setNotice(outcome);
-              router.refresh();
             })
           }
         >

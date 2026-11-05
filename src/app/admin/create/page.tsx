@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { joinDots } from "@/components/admin/join-dots";
 import { LanguageTabs } from "@/components/admin/language-tabs";
+import { SubmitButton } from "@/components/admin/submit-button";
 import { PageHeader } from "@/components/admin/page-header";
 import { Button } from "@/components/ui/button";
 import { t, type MessageKey } from "@/i18n";
@@ -274,9 +275,9 @@ export default async function CreatePage({ searchParams }: PageProps<"/admin/cre
                   <input type="hidden" name="kind" value={row.slug} />
                   <input type="hidden" name="language" value={language} />
                   {row.level ? <input type="hidden" name="level" value={row.level} /> : null}
-                  <Button type="submit" variant={row.slug === primary ? "default" : "secondary"} className="w-full sm:w-auto">
+                  <SubmitButton variant={row.slug === primary ? "default" : "secondary"} className="w-full sm:w-auto">
                     {row.action}
-                  </Button>
+                  </SubmitButton>
                 </form>
               ) : null}
             </li>

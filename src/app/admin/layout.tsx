@@ -3,6 +3,7 @@ import { t } from "@/i18n";
 import { formatMobileFa } from "@/lib/phone";
 import { requireAdmin } from "@/server/auth/session";
 import { getSmsProvider } from "@/server/sms/provider";
+import { NavProgress } from "@/components/admin/nav-progress";
 import { Wordmark } from "@/components/brand/wordmark";
 import { AccountRow, AdminNav, LanguageScope, PanelMark } from "./admin-nav";
 import { MobileMenu } from "./mobile-menu";
@@ -17,6 +18,7 @@ export default async function AdminLayout({ children }: LayoutProps<"/admin">) {
 
   return (
     <div className="min-h-dvh lg:grid lg:grid-cols-[264px_minmax(0,1fr)]">
+      <NavProgress />
       <aside className="bg-surface border-line sticky top-0 hidden h-dvh flex-col gap-6 overflow-y-auto border-e px-4 py-6 lg:flex">
         <PanelMark />
         <LanguageScope current={language} />

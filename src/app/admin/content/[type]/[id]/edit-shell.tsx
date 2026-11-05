@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useMemo, useState, useTransition, type ReactNode } from "react";
-import { useRouter } from "next/navigation";
 import { Check, CircleAlert, LoaderCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { t } from "@/i18n";
@@ -32,7 +31,6 @@ export function EditShell({
   readOnly?: boolean;
   children: ReactNode;
 }) {
-  const router = useRouter();
   const [values, setValues] = useState(initial);
   const [saved, setSaved] = useState(initial);
   const [errors, setErrors] = useState<FieldError[]>([]);
@@ -60,7 +58,6 @@ export function EditShell({
         setSaved(result.values);
         setErrors([]);
         setNotice({ tone: "saved", text: t("admin.library.form.saved"), notes: result.notes });
-        router.refresh();
       } else if (result.state === "invalid") {
         setErrors(result.errors);
         const general = result.errors.filter((error) => !error.path || !(error.path.split(/[.[]/)[0] in values)).map((error) => error.message);

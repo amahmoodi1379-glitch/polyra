@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowLeft, ClipboardPaste } from "lucide-react";
 import { PageHeader } from "@/components/admin/page-header";
+import { SubmitButton } from "@/components/admin/submit-button";
 import { Button } from "@/components/ui/button";
 import { t } from "@/i18n";
 import { isolateLatin } from "@/lib/bidi";
@@ -277,9 +278,9 @@ function RowAction({ action, language, primary }: { action: Action; language: La
       <input type="hidden" name="kind" value={action.start} />
       <input type="hidden" name="language" value={language} />
       {action.level ? <input type="hidden" name="level" value={action.level} /> : null}
-      <Button type="submit" variant={variant} className="w-full sm:w-auto">
+      <SubmitButton variant={variant} className="w-full sm:w-auto">
         {action.label}
-      </Button>
+      </SubmitButton>
     </form>
   );
 }

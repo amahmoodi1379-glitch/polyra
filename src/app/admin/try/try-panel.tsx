@@ -90,7 +90,6 @@ export function ScenarioPicker({ language, scenarios, minutes, job }: { language
             startTransition(async () => {
               const result = await playScenario(language, chosen, length);
               setBusy(result === "busy");
-              router.refresh();
             })
           }
         >
@@ -128,7 +127,6 @@ export function ScenarioPicker({ language, scenarios, minutes, job }: { language
 
 /** Step 4: «زمان را جلو ببر», the same as the app's test setting. */
 export function TravelButtons({ language, days }: { language: string; days: number[] }) {
-  const router = useRouter();
   const [moved, setMoved] = useState<number | null>(null);
   const [pending, startTransition] = useTransition();
   return (
@@ -150,7 +148,6 @@ export function TravelButtons({ language, days }: { language: string; days: numb
               startTransition(async () => {
                 await moveTime(language, n);
                 setMoved(n);
-                router.refresh();
               })
             }
           >

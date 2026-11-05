@@ -1,3 +1,4 @@
+import Form from "next/form";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
@@ -85,7 +86,7 @@ export default async function LearningPage({ searchParams }: PageProps<"/admin/l
         actions={admin.admin_language === "all" ? <LanguageTabs current={language} path="/admin/learning" /> : null}
       />
 
-      <form method="get" action="/admin/learning" aria-label={t("admin.learning.filters.label")} className="bg-tint/60 flex flex-wrap items-end gap-3 rounded-[20px] px-5 py-4" data-learning-filters>
+      <Form action="/admin/learning" aria-label={t("admin.learning.filters.label")} className="bg-tint/60 flex flex-wrap items-end gap-3 rounded-[20px] px-5 py-4" data-learning-filters>
         <input type="hidden" name="lang" value={language} />
         <label className="flex flex-col gap-1.5 text-[13px] font-bold">
           <span className="text-ink-2">{t("admin.learning.filters.level")}</span>
@@ -111,7 +112,7 @@ export default async function LearningPage({ searchParams }: PageProps<"/admin/l
           <span className="text-ink-2">{t("admin.learning.filters.testers")}</span>
         </label>
         <Button type="submit">{t("admin.learning.filters.apply")}</Button>
-      </form>
+      </Form>
 
       {!anyAnswers ? <p className="bg-surface text-ink-2 rounded-[22px] px-6 py-8 text-center shadow-[var(--shadow-1)]">{t("admin.learning.none")}</p> : null}
 
