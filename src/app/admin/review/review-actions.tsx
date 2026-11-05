@@ -53,10 +53,11 @@ export function ReviewActions({
   const run = (decision: ReviewDecision) =>
     startTransition(async () => {
       setMessage(null);
-      const outcome = await decide(slug, language, id, decision, decision === "approve" ? choice : null);
+      // On success the server answers with the next item's page, so nothing comes back here.
+      const outcome = await decide(slug, language, id, decision, decision === "approve" ? choice : null, afterHref);
+      if (!outcome) return;
       if (outcome.state === "done" || outcome.state === "gone") {
         router.push(afterHref);
-        router.refresh();
         return;
       }
       setMessage(outcome.state === "blocked" ? t("admin.review.blocked") : outcome.state === "inUse" ? t("admin.library.refused.sentenceInUse") : t("admin.review.failed"));

@@ -2,7 +2,6 @@
 
 import { useState, useTransition, type ReactNode } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { Check, CircleAlert, Ellipsis, LoaderCircle, Mic, Play, Smartphone, Square, Trash2, Upload } from "lucide-react";
 import { heardAction, removeHumanAction } from "@/app/admin/audio/actions";
 import { Voiced } from "@/components/admin/voiced";
@@ -120,7 +119,6 @@ export function NoticeLine({ notice }: { notice: Notice | null }) {
 
 /** «شنیدم، درست است» on the file that plays (PRD §13.4). */
 function HeardButton({ asset, onDone, size = "sm" }: { asset: AssetView; onDone: (notice: Notice) => void; size?: "sm" | "xs" }) {
-  const router = useRouter();
   const [pending, startTransition] = useTransition();
   return (
     <Button
@@ -132,7 +130,6 @@ function HeardButton({ asset, onDone, size = "sm" }: { asset: AssetView; onDone:
         startTransition(async () => {
           const outcome = await heardAction(asset.id, true);
           onDone(outcome);
-          router.refresh();
         })
       }
     >
@@ -144,7 +141,6 @@ function HeardButton({ asset, onDone, size = "sm" }: { asset: AssetView; onDone:
 
 /** «برداشتن صدای انسانی» with a question first: the file only comes back by recording again. */
 function RemoveDialog({ slotKey, open, onOpenChange, onDone }: { slotKey: string; open: boolean; onOpenChange: (open: boolean) => void; onDone: (notice: Notice) => void }) {
-  const router = useRouter();
   const [pending, startTransition] = useTransition();
   return (
     <AlertDialog open={open} onOpenChange={onOpenChange}>
@@ -163,7 +159,6 @@ function RemoveDialog({ slotKey, open, onOpenChange, onDone }: { slotKey: string
                 const outcome = await removeHumanAction(slotKey);
                 onDone(outcome);
                 onOpenChange(false);
-                router.refresh();
               });
             }}
           >

@@ -62,7 +62,6 @@ export function ItemActions({
       const outcome = await applyStatus(slug, language, [id], action);
       if (outcome.state === "failed") setMessage(t("admin.library.result.failed"));
       else if (outcome.refused.length > 0) setMessage(t(`admin.library.refused.${outcome.refused[0].reason}`));
-      router.refresh();
     });
 
   const remove = () =>

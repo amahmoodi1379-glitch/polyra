@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useTransition } from "react";
-import { useRouter } from "next/navigation";
 import { Check, CircleAlert, LoaderCircle } from "lucide-react";
 import { Segmented, Toggle } from "@/app/admin/content/[type]/[id]/form-kit";
 import { AlertDialog, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle } from "@/components/ui/alert-dialog";
@@ -18,7 +17,6 @@ type Access = { isAdmin: boolean; adminLanguage: AdminLanguage | null; isTester:
  * panel access asks first, because it opens or closes everything.
  */
 export function AccessControls({ userId, phone, self, initial }: { userId: number; phone: string; self: boolean; initial: Access }) {
-  const router = useRouter();
   const [access, setAccess] = useState<Access>(initial);
   const [message, setMessage] = useState<{ ok: boolean; text: string } | null>(null);
   const [asking, setAsking] = useState<boolean | null>(null);
@@ -32,7 +30,6 @@ export function AccessControls({ userId, phone, self, initial }: { userId: numbe
       const reply = await changeAccess(userId, change);
       if (reply.ok) {
         setMessage({ ok: true, text: t("admin.users.saved") });
-        router.refresh();
       } else {
         setAccess(before);
         setMessage({ ok: false, text: reply.reason === "failed" ? t("admin.users.problems.failed", { code: reply.code }) : t(`admin.users.problems.${reply.reason}`) });

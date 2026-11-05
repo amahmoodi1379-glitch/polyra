@@ -1,5 +1,6 @@
 "use server";
 
+import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { requireAdmin } from "@/server/auth/session";
 import { createBatch, isKindSlug } from "@/server/content/batches";
@@ -17,6 +18,8 @@ export async function startBatch(form: FormData) {
   let target: string;
   try {
     const made = await createBatch({ slug, language, options: { level }, adminId: admin.id });
+    // A new batch changes the workbench; pages the browser still holds must not show the old one.
+    if ("id" in made) revalidatePath("/admin", "layout");
     target = "id" in made ? `/admin/batches/${made.id}` : `/admin/create?lang=${language}`;
   } catch (error) {
     const code = await logError("create.startBatch", error, { userId: admin.id });

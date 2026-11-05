@@ -16,6 +16,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
+import { SubmitButton } from "@/components/admin/submit-button";
 import { Button } from "@/components/ui/button";
 import { formatNumber, t } from "@/i18n";
 import { isolateLatin } from "@/lib/bidi";
@@ -721,7 +722,7 @@ function Finished({ view }: { view: BatchView }) {
         <form action={startBatch}>
           <input type="hidden" name="kind" value={view.slug} />
           <input type="hidden" name="language" value={view.language} />
-          <Button type="submit">{t("admin.batch.finished.next")}</Button>
+          <SubmitButton>{t("admin.batch.finished.next")}</SubmitButton>
         </form>
         <Button asChild variant="secondary">
           <Link href="/admin">{t("admin.batch.finished.workbench")}</Link>

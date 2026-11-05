@@ -1,7 +1,6 @@
 "use client";
 
 import { memo, useCallback, useEffect, useMemo, useState, useTransition } from "react";
-import { useRouter } from "next/navigation";
 import { DndContext, KeyboardSensor, PointerSensor, closestCenter, useSensor, useSensors, type Announcements, type DragEndEvent, type UniqueIdentifier } from "@dnd-kit/core";
 import { restrictToVerticalAxis } from "@dnd-kit/modifiers";
 import { SortableContext, arrayMove, sortableKeyboardCoordinates, useSortable, verticalListSortingStrategy } from "@dnd-kit/sortable";
@@ -31,7 +30,6 @@ const reduceMotion = () => typeof window !== "undefined" && window.matchMedia("(
  * senses follow their words by themselves (PRD §5.8).
  */
 export function OrderBoard({ view }: { view: OrderView }) {
-  const router = useRouter();
   const start = useMemo(() => view.rows.map((row) => row.id), [view]);
   const [source, setSource] = useState(view);
   const [ids, setIds] = useState(start);
@@ -142,10 +140,8 @@ export function OrderBoard({ view }: { view: OrderView }) {
         setSaved(ids);
         setMoved(new Set());
         setNotice(result.changed ? { tone: "saved", text: t("admin.order.saved") } : { tone: "quiet", text: t("admin.order.unchanged") });
-        router.refresh();
       } else if (result.state === "stale") {
         setNotice({ tone: "failed", text: t("admin.order.stale") });
-        router.refresh();
       } else {
         setNotice({ tone: "failed", text: t("admin.order.failed") });
       }

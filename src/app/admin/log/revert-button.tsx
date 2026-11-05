@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useTransition } from "react";
-import { useRouter } from "next/navigation";
 import { Check, LoaderCircle, Undo2 } from "lucide-react";
 import { AlertDialog, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle } from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
@@ -14,7 +13,6 @@ import { revertAction } from "./actions";
  * mounted when the row stops being the item's latest change, so the result is still shown after the refresh.
  */
 export function RevertButton({ logId, ready }: { logId: number; ready: boolean }) {
-  const router = useRouter();
   const [open, setOpen] = useState(false);
   const [message, setMessage] = useState<{ tone: "ok" | "bad"; text: string } | null>(null);
   const [pending, startTransition] = useTransition();
@@ -24,7 +22,6 @@ export function RevertButton({ logId, ready }: { logId: number; ready: boolean }
       const result = await revertAction(logId);
       if (result.state === "reverted") {
         setMessage({ tone: "ok", text: [t("admin.log.reverted"), ...result.notes].join(" ") });
-        router.refresh();
       } else if (result.state === "blocked") {
         setMessage({ tone: "bad", text: t(`admin.log.blocked.${result.reason}`) });
       } else {
