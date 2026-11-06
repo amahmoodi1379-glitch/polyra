@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/admin/link";
 import { ArrowLeft, ClipboardPaste } from "lucide-react";
 import { PageHeader } from "@/components/admin/page-header";
 import { SubmitButton } from "@/components/admin/submit-button";

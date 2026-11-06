@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/admin/link";
 import { Check, PenLine } from "lucide-react";
 import { t } from "@/i18n";
 import { cn } from "@/lib/utils";

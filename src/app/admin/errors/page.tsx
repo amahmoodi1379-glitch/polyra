@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import Link from "@/components/admin/link";
 import { ChevronDown, ChevronLeft, ChevronRight, ShieldCheck } from "lucide-react";
 import { CopyButton } from "@/components/admin/copy-button";
 import { PageHeader } from "@/components/admin/page-header";

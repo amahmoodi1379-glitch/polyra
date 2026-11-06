@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useTransition } from "react";
-import Link from "next/link";
+import Link from "@/components/admin/link";
 import { useRouter } from "next/navigation";
 import { LoaderCircle, MoreHorizontal } from "lucide-react";
 import {

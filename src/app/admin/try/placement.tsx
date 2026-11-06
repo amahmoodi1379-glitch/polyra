@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/admin/link";
 import { useState, useTransition } from "react";
 import { CircleCheck, ExternalLink, LoaderCircle, Play, TriangleAlert, UserRound } from "lucide-react";
 import { Button } from "@/components/ui/button";

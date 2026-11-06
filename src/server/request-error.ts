@@ -16,6 +16,7 @@ export async function recordRequestError(error: unknown, headers: Record<string,
   const digest = typeof error === "object" && error !== null && "digest" in error ? String(error.digest) : null;
   // Redirects and «not found» travel as errors but are not failures.
   if (digest?.startsWith("NEXT_")) return;
+  if (leftEarly(error)) return;
   if (digest) {
     const now = Date.now();
     for (const [key, at] of recent) if (now - at > REPEAT_MS) recent.delete(key);
@@ -24,6 +25,16 @@ export async function recordRequestError(error: unknown, headers: Record<string,
   }
   const userId = await signedInUser(headers.cookie).catch(() => null);
   await logError(`${place.routeType} ${place.routePath}`, error, { userId, requestId: digest, seed: digest ?? undefined });
+}
+
+/**
+ * The browser stopped listening before the page was fully sent: the teacher clicked elsewhere, closed
+ * the tab, or the connection dropped. Nothing in our code failed, so it is not an error to fix.
+ */
+export function leftEarly(error: unknown) {
+  const message = error instanceof Error ? error.message : String(error ?? "");
+  const code = typeof error === "object" && error !== null && "code" in error ? String(error.code) : "";
+  return /^The destination stream closed early\.?$/.test(message) || message === "aborted" || code === "ECONNRESET" || code === "ERR_STREAM_PREMATURE_CLOSE";
 }
 
 /** Who was signed in, from the request's cookie header, so the errors page can say whose screen it was. */

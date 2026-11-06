@@ -1,8 +1,33 @@
 /** Each error goes once per page load; asking again gives the same code back. */
 const sent = new Map<string, Promise<string | null>>();
 
-/** Errors that say nothing about our code: browser extensions, cross-site scripts, layout loops. */
-const NOISE = [/^Script error\.?$/, /ResizeObserver loop/, /chrome-extension:\/\//, /moz-extension:\/\//, /safari-(web-)?extension:\/\//];
+/**
+ * Errors that say nothing about our code: browser extensions, cross-site scripts, layout loops, and a
+ * connection that dropped while a page or an answer was on its way (each browser words it its own way:
+ * Safari «Error in input stream» and «Load failed», Chrome «network error» and «Failed to fetch»,
+ * Firefox «NetworkError …»).
+ */
+const CONNECTION = [
+  /^Error in input stream$/,
+  /^(TypeError: )?(network error|Load failed|Failed to fetch)$/i,
+  /^NetworkError when attempting to fetch resource\.?$/,
+  /^Connection closed\.?$/,
+];
+
+/** The connection dropped while something was on its way: nothing in the app to fix. */
+export function isConnectionError(error: unknown) {
+  const message = error instanceof Error ? error.message : typeof error === "string" ? error : "";
+  return CONNECTION.some((pattern) => pattern.test(message));
+}
+
+const NOISE = [
+  /^Script error\.?$/,
+  /ResizeObserver loop/,
+  /chrome-extension:\/\//,
+  /moz-extension:\/\//,
+  /safari-(web-)?extension:\/\//,
+  ...CONNECTION,
+];
 
 /**
  * Sends an error that happened in this browser to `error_log` (PRD §15.9) and returns its short code,

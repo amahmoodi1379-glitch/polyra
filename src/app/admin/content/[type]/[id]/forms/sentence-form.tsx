@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/admin/link";
 import { Archive, Undo2 } from "lucide-react";
 import { Voiced } from "@/components/admin/voiced";
 import { t } from "@/i18n";

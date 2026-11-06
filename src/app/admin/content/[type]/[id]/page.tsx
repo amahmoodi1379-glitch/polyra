@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import Link from "@/components/admin/link";
 import { notFound } from "next/navigation";
 import { ChevronRight } from "lucide-react";
 import { ItemAudioPanel } from "@/components/admin/audio/item-audio";

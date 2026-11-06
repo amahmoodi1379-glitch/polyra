@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, useTransition } from "react";
-import Link from "next/link";
+import Link from "@/components/admin/link";
 import { useRouter } from "next/navigation";
 import { ChevronDown, CircleDashed, LoaderCircle, Search, X } from "lucide-react";
 import { t } from "@/i18n";

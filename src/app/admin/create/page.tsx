@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import Link from "@/components/admin/link";
 import { ArrowLeft } from "lucide-react";
 import { joinDots } from "@/components/admin/join-dots";
 import { LanguageTabs } from "@/components/admin/language-tabs";

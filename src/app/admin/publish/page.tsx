@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import Link from "@/components/admin/link";
 import { AlertTriangle, CircleCheck, CircleX, Eye, EyeOff, Lock, LockOpen, Send } from "lucide-react";
 import { joinDots } from "@/components/admin/join-dots";
 import { LanguageTabs } from "@/components/admin/language-tabs";

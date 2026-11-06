@@ -7,7 +7,7 @@ import { CopyButton } from "@/components/admin/copy-button";
 import { Button } from "@/components/ui/button";
 import { t } from "@/i18n";
 import { errorCode } from "@/lib/error-code";
-import { reportError } from "@/lib/report-error";
+import { isConnectionError, reportError } from "@/lib/report-error";
 import { cn } from "@/lib/utils";
 
 type Props = { error: Error & { digest?: string }; retry: () => void; place: "app" | "admin" };
@@ -35,12 +35,15 @@ function useErrorCode(error: Props["error"]) {
 export function ErrorScreen({ error, retry, place }: Props) {
   const { code, waiting } = useErrorCode(error);
   const admin = place === "admin";
+  const offline = isConnectionError(error);
+  const title = offline ? "errors.screen.offlineTitle" : admin ? "errors.screen.adminTitle" : "errors.screen.title";
+  const body = offline ? "errors.screen.offlineBody" : admin ? "errors.screen.adminBody" : "errors.screen.body";
 
   return (
     <section className={cn("flex w-full flex-col gap-6", admin ? "max-w-[520px] py-6" : "mx-auto min-h-dvh max-w-[440px] justify-center px-5 py-12")}>
       <div className="flex flex-col gap-2">
-        <h1 className="text-ink text-[26px] leading-snug font-extrabold text-balance">{t(admin ? "errors.screen.adminTitle" : "errors.screen.title")}</h1>
-        <p className="text-ink-2 max-w-[52ch]">{t(admin ? "errors.screen.adminBody" : "errors.screen.body")}</p>
+        <h1 className="text-ink text-[26px] leading-snug font-extrabold text-balance">{t(title)}</h1>
+        <p className="text-ink-2 max-w-[52ch]">{t(body)}</p>
       </div>
 
       {code || waiting ? (

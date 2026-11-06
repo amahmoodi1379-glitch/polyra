@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import Link from "@/components/admin/link";
 import type { ReactNode } from "react";
 import { ArrowLeft, MessageCircleQuestion } from "lucide-react";
 import { PageHeader } from "@/components/admin/page-header";

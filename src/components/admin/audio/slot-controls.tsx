@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useTransition, type ReactNode } from "react";
-import Link from "next/link";
+import Link from "@/components/admin/link";
 import { Check, CircleAlert, Ellipsis, LoaderCircle, Mic, Play, Smartphone, Square, Trash2, Upload } from "lucide-react";
 import { heardAction, removeHumanAction } from "@/app/admin/audio/actions";
 import { Voiced } from "@/components/admin/voiced";

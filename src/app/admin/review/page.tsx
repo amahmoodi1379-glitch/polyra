@@ -1,6 +1,6 @@
 import "@/app/(learner)/learner.css";
 import type { Metadata } from "next";
-import Link from "next/link";
+import Link from "@/components/admin/link";
 import { ArrowRight, CircleAlert, ListChecks } from "lucide-react";
 import { ItemAudioPanel } from "@/components/admin/audio/item-audio";
 import { LanguageTabs } from "@/components/admin/language-tabs";
@@ -222,6 +222,7 @@ export default async function ReviewPage({ searchParams }: PageProps<"/admin/rev
           {audio ? <ItemAudioPanel audio={audio} language={language} /> : null}
 
           <ReviewActions
+            key={`${slug}-${id}`}
             slug={slug}
             language={language}
             id={id}
@@ -229,6 +230,7 @@ export default async function ReviewPage({ searchParams }: PageProps<"/admin/rev
             mastery={mastery}
             nextHref={next ? reviewHref({ ...scope, at: next }) : null}
             afterHref={reviewHref({ ...scope, at: after })}
+            hereHref={reviewHref({ ...scope, at: { slug, id } })}
           />
 
           <details className="group bg-surface rounded-[22px] shadow-[var(--shadow-1)]" open={showForm}>
