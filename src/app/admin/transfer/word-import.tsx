@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/admin/link";
 import { useRef, useState, type DragEvent } from "react";
 import { CircleAlert, CircleCheck, FileSpreadsheet, LoaderCircle, Upload } from "lucide-react";
 import { Button } from "@/components/ui/button";

@@ -1,6 +1,6 @@
 import "@/app/(learner)/learner.css";
 import type { Metadata } from "next";
-import Link from "next/link";
+import Link from "@/components/admin/link";
 import { notFound } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 import { PageHeader } from "@/components/admin/page-header";

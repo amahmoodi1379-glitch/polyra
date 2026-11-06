@@ -2,7 +2,7 @@
 
 import { useEffect, useId, useRef, useState, useTransition, type FormEvent, type ReactNode } from "react";
 import { useFormStatus } from "react-dom";
-import Link from "next/link";
+import Link from "@/components/admin/link";
 import { Check, ChevronDown, CircleAlert, ListChecks, LoaderCircle, Trash2 } from "lucide-react";
 import { CopyButton } from "@/components/admin/copy-button";
 import { SeverityChip, type Severity } from "@/components/admin/qa-mark";

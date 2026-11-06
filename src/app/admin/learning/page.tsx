@@ -1,7 +1,7 @@
 import Form from "next/form";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import Link from "next/link";
+import Link from "@/components/admin/link";
 import { LanguageTabs } from "@/components/admin/language-tabs";
 import { PageHeader } from "@/components/admin/page-header";
 import { Button } from "@/components/ui/button";

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, type DragEvent } from "react";
-import Link from "next/link";
+import Link from "@/components/admin/link";
 import { useRouter } from "next/navigation";
 import { Check, CircleAlert, FileAudio, LoaderCircle, Upload, X } from "lucide-react";
 import { prepareAudio, uploadAudio } from "@/components/admin/audio/browser-audio";

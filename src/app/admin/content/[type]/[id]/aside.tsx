@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import Link from "next/link";
+import Link from "@/components/admin/link";
 import { Voiced, type Voice } from "@/components/admin/voiced";
 import { formatNumber, t } from "@/i18n";
 import { formatDateTimeFa } from "@/lib/format";

@@ -1,7 +1,7 @@
 "use client";
 
 import { useId, useState, type ReactNode } from "react";
-import Link from "next/link";
+import Link from "@/components/admin/link";
 import { Check, CircleDashed, PenLine } from "lucide-react";
 import { formatNumber, t } from "@/i18n";
 import { cn } from "@/lib/utils";

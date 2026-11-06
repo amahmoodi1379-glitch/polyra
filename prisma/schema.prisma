@@ -489,6 +489,8 @@ model Word {
   @@index([language, lemma])
   @@index([language, level, intro_order])
   @@index([language, status])
+  // Looked up from a concept (its words) and kept for deleting one without a full scan.
+  @@index([concept_id])
   @@map("word")
 }
 
@@ -1379,6 +1381,8 @@ model ContentReport {
 
   @@index([status, priority])
   @@index([item_type, item_id])
+  // Deleting an account (PRD §15.5) clears its reports' user_id; without this it reads the whole table.
+  @@index([user_id])
   @@map("content_report")
 }
 

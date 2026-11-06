@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useTransition } from "react";
-import Link from "next/link";
+import Link from "@/components/admin/link";
 import { ChevronLeft, ChevronRight, CircleDashed, LoaderCircle, MoreHorizontal, X } from "lucide-react";
 import { joinDots } from "@/components/admin/join-dots";
 import { QaMark } from "@/components/admin/qa-mark";

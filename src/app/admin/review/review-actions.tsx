@@ -1,9 +1,8 @@
 "use client";
 
-import { useState, useTransition } from "react";
-import Link from "next/link";
+import { useEffect, useState, useSyncExternalStore } from "react";
+import Link from "@/components/admin/link";
 import { useRouter } from "next/navigation";
-import { LoaderCircle } from "lucide-react";
 import {
   AlertDialog,
   AlertDialogCancel,
@@ -20,9 +19,27 @@ import type { LibrarySlug } from "@/server/content/library/slugs";
 import type { Mastery, ReviewDecision } from "@/server/content/review/decide";
 import { decide } from "./actions";
 
+/** A decision the server refused after the page had moved on: shown on whichever item is open now. */
+type Late = { text: string; href: string };
+let late: Late | null = null;
+const lateListeners = new Set<() => void>();
+const setLate = (next: Late | null) => {
+  late = next;
+  lateListeners.forEach((listener) => listener());
+};
+const subscribeLate = (listener: () => void) => {
+  lateListeners.add(listener);
+  return () => lateListeners.delete(listener);
+};
+
+/** The whole next page, data included, fetched while the teacher looks at this one. */
+const fullPrefetch = { kind: "full" } as unknown as Parameters<ReturnType<typeof useRouter>["prefetch"]>[1];
+
 /**
- * «تأیید»، «رد» and «بعدی» for the item on screen (PRD §13.9 step 4). After a decision the next item
- * opens; a B1 or B2 word carries its «نوشتنی / شناختنی» choice with the approval (PRD §13.4).
+ * «تأیید»، «رد» and «بعدی» for the item on screen (PRD §13.9 step 4); a B1 or B2 word carries its
+ * «نوشتنی / شناختنی» choice with the approval (PRD §13.4). The next item is fetched while this one is on
+ * screen, so a decision opens it at once and is saved on the way; a refusal (an error, a sentence in use)
+ * comes back as a line on the next item with a way back to this one.
  */
 export function ReviewActions({
   slug,
@@ -32,6 +49,7 @@ export function ReviewActions({
   mastery,
   nextHref,
   afterHref,
+  hereHref,
 }: {
   slug: LibrarySlug;
   language: string;
@@ -43,25 +61,36 @@ export function ReviewActions({
   nextHref: string | null;
   /** Where to go once this item is decided. */
   afterHref: string;
+  /** This item, for the way back when its decision was refused. */
+  hereHref: string;
 }) {
   const router = useRouter();
-  const [pending, startTransition] = useTransition();
   const [choice, setChoice] = useState<Mastery | null>(mastery?.value ?? null);
   const [confirm, setConfirm] = useState(false);
-  const [message, setMessage] = useState<string | null>(null);
+  const [sent, setSent] = useState(false);
+  const problem = useSyncExternalStore(subscribeLate, () => late, () => null);
 
-  const run = (decision: ReviewDecision) =>
-    startTransition(async () => {
-      setMessage(null);
-      // On success the server answers with the next item's page, so nothing comes back here.
-      const outcome = await decide(slug, language, id, decision, decision === "approve" ? choice : null, afterHref);
-      if (!outcome) return;
-      if (outcome.state === "done" || outcome.state === "gone") {
-        router.push(afterHref);
-        return;
-      }
-      setMessage(outcome.state === "blocked" ? t("admin.review.blocked") : outcome.state === "inUse" ? t("admin.library.refused.sentenceInUse") : t("admin.review.failed"));
-    });
+  useEffect(() => {
+    router.prefetch(afterHref, fullPrefetch);
+  }, [router, afterHref]);
+
+  // Back on the item whose decision was refused: the line has done its job.
+  useEffect(() => {
+    if (late?.href === hereHref) setLate(null);
+  }, [hereHref]);
+
+  const run = (decision: ReviewDecision) => {
+    if (sent) return;
+    setSent(true);
+    setLate(null);
+    void decide(slug, language, id, decision, decision === "approve" ? choice : null).then(
+      (outcome) => {
+        if (outcome.state !== "done" && outcome.state !== "gone") setLate({ text: t("admin.review.notSaved"), href: hereHref });
+      },
+      () => setLate({ text: t("admin.review.notSaved"), href: hereHref }),
+    );
+    router.push(afterHref);
+  };
 
   return (
     <section aria-label={t("admin.review.decision")} className="bg-surface flex flex-col gap-4 rounded-[22px] p-5 shadow-[var(--shadow-1)]">
@@ -94,10 +123,10 @@ export function ReviewActions({
       ) : null}
 
       <div className="flex flex-wrap items-center gap-2">
-        <Button type="button" disabled={pending || blocked} onClick={() => run("approve")}>
+        <Button type="button" disabled={sent || blocked} onClick={() => run("approve")}>
           {t("admin.review.approve")}
         </Button>
-        <Button type="button" variant="secondary" disabled={pending} onClick={() => setConfirm(true)}>
+        <Button type="button" variant="secondary" disabled={sent} onClick={() => setConfirm(true)}>
           {t("admin.review.reject")}
         </Button>
         {nextHref ? (
@@ -105,12 +134,14 @@ export function ReviewActions({
             <Link href={nextHref}>{t("admin.review.skip")}</Link>
           </Button>
         ) : null}
-        {pending ? <LoaderCircle className="text-ink-3 size-5 animate-spin motion-reduce:animate-none" aria-label={t("admin.library.selection.working")} /> : null}
       </div>
       {blocked ? <p className="text-ink-2 text-[13.5px] leading-6">{t("admin.review.blockedHint")}</p> : null}
-      {message ? (
+      {problem && problem.href !== hereHref ? (
         <p role="alert" className="text-bad text-[13.5px] leading-6 font-bold">
-          {message}
+          {problem.text}{" "}
+          <Link href={problem.href} prefetch className="text-brand-text underline underline-offset-4">
+            {t("admin.review.backToIt")}
+          </Link>
         </p>
       ) : null}
 

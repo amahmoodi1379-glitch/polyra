@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import Link from "@/components/admin/link";
 import { Check, CircleCheck } from "lucide-react";
 import { LanguageTabs } from "@/components/admin/language-tabs";
 import { PageHeader } from "@/components/admin/page-header";

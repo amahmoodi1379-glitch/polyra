@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useId, useOptimistic, useState, useTransition, type FormEvent, type ReactNode } from "react";
-import Link from "next/link";
+import Link from "@/components/admin/link";
 import { Check, CircleAlert, Plus, Search } from "lucide-react";
 import type { Pos } from "@/generated/prisma/client";
 import { FindWord } from "@/components/admin/find-word";

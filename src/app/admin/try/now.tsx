@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import Link from "next/link";
+import Link from "@/components/admin/link";
 import { ExternalLink } from "lucide-react";
 import { formatNumber, t } from "@/i18n";
 import { isolateLatin } from "@/lib/bidi";

@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/admin/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useOptimistic, useState, useTransition } from "react";
 import {
@@ -165,6 +165,8 @@ export function AdminNav({ showTestCodes, onNavigate }: { showTestCodes: boolean
               <Link
                 key={item.href}
                 href={item.href}
+                // Fetched in full under the pointer instead (`warm`), never just for being on screen.
+                prefetch={false}
                 onClick={() => {
                   if (item.href !== pathname) setClicked({ href: item.href, from: pathname });
                   onNavigate?.();

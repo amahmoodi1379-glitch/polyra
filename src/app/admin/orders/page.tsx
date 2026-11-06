@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import Link from "@/components/admin/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { PageHeader } from "@/components/admin/page-header";
 import { Button } from "@/components/ui/button";

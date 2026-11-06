@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import Link from "@/components/admin/link";
 import { ArrowRight } from "lucide-react";
 import { t, type MessageKey } from "@/i18n";
 import { isolateLatin } from "@/lib/bidi";

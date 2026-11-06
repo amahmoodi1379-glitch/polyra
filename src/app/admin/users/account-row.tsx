@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/admin/link";
 import { ChevronLeft } from "lucide-react";
 import { t } from "@/i18n";
 import { formatAgoFa, formatDateFa } from "@/lib/format";
