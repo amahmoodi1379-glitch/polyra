@@ -2,7 +2,6 @@ import type { ImportBatch, Prisma, PromptKind } from "@/generated/prisma/client"
 import { qaAnswer, qaFinding } from "@/schemas/qa";
 import { cleanText } from "@/lib/clean-text";
 import { db } from "@/server/db";
-import { appSetting } from "@/server/settings/read";
 import { conjugation } from "./kinds/conjugation";
 import { dialogues } from "./kinds/dialogues";
 import { errorfix } from "./kinds/errorfix";
@@ -121,12 +120,10 @@ export async function createBatch(input: {
   return { id: batch.id };
 }
 
-/** The chatbot the admin used; stored on every record of the batch (PRD §13.9). */
-export async function setChatbot(batchId: number, name: string) {
-  const names = await appSetting<string[]>("chatbot_names");
-  if (!names.includes(name)) return false;
-  await db.importBatch.update({ where: { id: batchId }, data: { model_name: name } });
-  return true;
+/** Step 1 is done once the prompt is copied; the first copy is kept (DECISIONS.md: no chatbot picker). */
+export async function markCopied(batchId: number) {
+  const { count } = await db.importBatch.updateMany({ where: { id: batchId, prompt_copied_at: null }, data: { prompt_copied_at: new Date() } });
+  return count > 0;
 }
 
 /** The keys an answer of this kind is recognised by. */
@@ -389,16 +386,6 @@ export async function dismissRejected(batchId: number, adminId: number | null = 
   });
 }
 
-/** The chatbot this admin used last, so the picker starts on it. */
-export async function lastChatbot(adminId: number): Promise<string | null> {
-  const last = await db.importBatch.findFirst({
-    where: { created_by: adminId, model_name: { not: null } },
-    orderBy: { updated_at: "desc" },
-    select: { model_name: true },
-  });
-  return last?.model_name ?? null;
-}
-
 /** A batch nothing was imported from can be thrown away; its list rows become free again. */
 export async function cancelBatch(batchId: number, adminId: number | null = null) {
   const batch = await db.importBatch.findUnique({ where: { id: batchId } });
@@ -418,5 +405,5 @@ export function batchStep(batch: ImportBatch): 1 | 2 | 3 | 4 | 5 {
     if ((batchReport(batch)?.rejected.length ?? 0) > 0) return 3;
     return hasQa(batch.prompt_kind) ? 4 : 5;
   }
-  return batch.model_name ? 2 : 1;
+  return batch.prompt_copied_at || batch.state === "pasted" ? 2 : 1;
 }

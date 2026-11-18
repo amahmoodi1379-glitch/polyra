@@ -2,8 +2,12 @@ import { afterAll, beforeEach, describe, expect, it } from "vitest";
 import { listLog } from "@/server/content/library/history";
 import { revertChange } from "@/server/content/library/revert";
 import { engineValues, saveEngineSettings } from "@/server/settings/engine";
+import { appSettingDefaults } from "@/server/settings/app-catalog";
 import { generalSettingsView, saveGeneralSettings } from "@/server/settings/general";
 import { resetDb, testDb } from "./db";
+
+/** A list field of «تنظیمات عمومی»: the topics texts rotate through. */
+const TOPICS = appSettingDefaults["prompt.text_topics"] as string[];
 
 beforeEach(async () => {
   await resetDb();
@@ -93,17 +97,17 @@ describe("«تنظیمات عمومی» (PRD §13.2)", () => {
       {
         "prompt.sentence_length": { A1: [4, 9], A2: [5, 12], B1: [6, 15], B2: [6, 18] },
         "batch.sizes": { "P-C": 150, "P-W": 50, "P-S": 10, "P-X": 20, "P-E": 5, "P-WR": 5 },
-        chatbot_names: [" ChatGPT", "Claude ", "DeepSeek"],
+        "prompt.text_topics": [" خرید", "سفر ", "ورزش"],
         "coming_soon_fa.fr": "  سطح A2 حدود آذر اضافه می‌شود. ",
         pace_estimate_fa: { "10": "", "15": "با ۱۵ دقیقه در روز، سطح A1 حدود ۴ ماه طول می‌کشد.", "20": "", "30": "" },
       },
       ADMIN,
     );
     expect(result.state).toBe("saved");
-    expect(result.state === "saved" && result.changed).toEqual(["prompt.sentence_length", "batch.sizes", "chatbot_names", "coming_soon_fa.fr", "pace_estimate_fa"]);
+    expect(result.state === "saved" && result.changed).toEqual(["prompt.sentence_length", "batch.sizes", "prompt.text_topics", "coming_soon_fa.fr", "pace_estimate_fa"]);
     expect(await stored("prompt.sentence_length")).toEqual({ A1: "4 تا 9", A2: "5 تا 12", B1: "6 تا 15", B2: "6 تا 18" });
     expect(await stored("batch.sizes")).toMatchObject({ "P-C": 150, "P-QA": 100 });
-    expect(await stored("chatbot_names")).toEqual(["ChatGPT", "Claude", "DeepSeek"]);
+    expect(await stored("prompt.text_topics")).toEqual(["خرید", "سفر", "ورزش"]);
     expect(await stored("pace_estimate_fa")).toEqual({ "15": "با ۱۵ دقیقه در روز، سطح A1 حدود ۴ ماه طول می‌کشد." });
     expect((await testDb.language.findUniqueOrThrow({ where: { code: "fr" } })).coming_soon_fa).toBe("سطح A2 حدود آذر اضافه می‌شود.");
 
@@ -113,13 +117,13 @@ describe("«تنظیمات عمومی» (PRD §13.2)", () => {
   });
 
   it("saves nothing when one field is wrong, and nothing at all when nothing changed", async () => {
-    const result = await saveGeneralSettings({ chatbot_names: ["Claude", "Gemini"], "prompt.writing_words": { B1: [120, 60], B2: [150, 250] } }, ADMIN);
+    const result = await saveGeneralSettings({ "prompt.text_topics": ["خرید", "سفر"], "prompt.writing_words": { B1: [120, 60], B2: [150, 250] } }, ADMIN);
     expect(result).toEqual({ state: "invalid", errors: [{ key: "prompt.writing_words.B1", message: "عدد اول نباید از دومی بیشتر باشد." }] });
-    expect(await stored("chatbot_names")).toBeUndefined();
-    expect(await saveGeneralSettings({ chatbot_names: ["ChatGPT", "Claude", "Gemini"] }, ADMIN)).toEqual({
+    expect(await stored("prompt.text_topics")).toBeUndefined();
+    expect(await saveGeneralSettings({ "prompt.text_topics": TOPICS }, ADMIN)).toEqual({
       state: "saved",
       changed: [],
-      values: { chatbot_names: ["ChatGPT", "Claude", "Gemini"] },
+      values: { "prompt.text_topics": TOPICS },
     });
     expect(await logRows()).toEqual([]);
   });
@@ -139,19 +143,19 @@ describe("«تنظیمات عمومی» (PRD §13.2)", () => {
   });
 
   it("puts a list back only while it still holds what that change wrote", async () => {
-    await saveGeneralSettings({ chatbot_names: ["ChatGPT", "Claude", "Gemini", "DeepSeek"] }, ADMIN);
+    await saveGeneralSettings({ "prompt.text_topics": [...TOPICS, "باغ‌وحش"] }, ADMIN);
     const [row] = await logRows();
-    await testDb.appSetting.update({ where: { key: "chatbot_names" }, data: { value: ["Claude"] } });
+    await testDb.appSetting.update({ where: { key: "prompt.text_topics" }, data: { value: ["خرید"] } });
     expect(await revertChange(row.id, ADMIN)).toEqual({ state: "blocked", reason: "changed" });
-    await testDb.appSetting.update({ where: { key: "chatbot_names" }, data: { value: ["ChatGPT", "Claude", "Gemini", "DeepSeek"] } });
+    await testDb.appSetting.update({ where: { key: "prompt.text_topics" }, data: { value: [...TOPICS, "باغ‌وحش"] } });
     expect(await revertChange(row.id, ADMIN)).toEqual({ state: "reverted", notes: [] });
-    expect(await stored("chatbot_names")).toEqual(["ChatGPT", "Claude", "Gemini"]);
+    expect(await stored("prompt.text_topics")).toEqual(TOPICS);
   });
 
   it("describes list, number and range changes in plain words", async () => {
     await saveGeneralSettings(
       {
-        chatbot_names: ["ChatGPT", "Claude", "DeepSeek"],
+        "prompt.text_topics": [...TOPICS.slice(0, -1), "باغ‌وحش"],
         "prompt.writing_words": { B1: [70, 120], B2: [150, 250] },
         "targets.de": {
           A1: { words: 650, phrases: 50, grammar_units: 50, texts: 40, translations: 400, dialogues: 10, errorfix: 0, writing: 0 },
@@ -164,7 +168,7 @@ describe("«تنظیمات عمومی» (PRD §13.2)", () => {
     );
     const items = (await listLog("settings", 1)).items;
     const byTitle = (title: string) => items.find((item) => item.title?.text === title)!;
-    expect(byTitle("نام چت‌بات‌ها").lines).toEqual([{ key: "chatbot_names", label: "نام چت‌بات‌ها", note: "اضافه شد: \u2066DeepSeek\u2069؛ برداشته شد: \u2066Gemini\u2069" }]);
+    expect(byTitle("موضوع متن‌ها").lines).toEqual([{ key: "prompt.text_topics", label: "موضوع متن‌ها", note: "اضافه شد: باغ‌وحش؛ برداشته شد: طبیعت" }]);
     expect(byTitle("طول جواب تمرین نوشتن").lines).toEqual([{ key: "B1", label: "⁦B1⁩", before: { text: "۶۰ تا ۱۲۰", voice: "fa" }, after: { text: "۷۰ تا ۱۲۰", voice: "fa" } }]);
     const targets = byTitle("تعداد هدف هر سطح (آلمانی)");
     expect(targets.href).toBe("/admin/settings/general?lang=de#targets.de");

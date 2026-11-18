@@ -9,7 +9,7 @@ import { E2E_ADMINS } from "./database";
 // file signs in from its own address.
 test.use({ extraHTTPHeaders: { "x-forwarded-for": "10.0.0.11" } });
 
-test("an admin changes an engine number and a chatbot list, then puts the number back", async ({ page }, testInfo) => {
+test("an admin changes an engine number and the text topics, then puts the number back", async ({ page }, testInfo) => {
   test.skip(testInfo.project.name !== "desktop", "the settings are shared");
 
   await page.goto("/admin/settings/engine");
@@ -32,15 +32,15 @@ test("an admin changes an engine number and a chatbot list, then puts the number
   await expect(page.locator("#setting-session\\.resume_hours-control")).toHaveValue("۸");
 
   await page.goto("/admin/settings/general?lang=fr");
-  const bots = page.locator("#chatbot_names textarea");
-  await bots.fill("ChatGPT\nClaude\nGemini\nDeepSeek");
-  await expect(page.locator("#chatbot_names")).toContainText("۴ مورد");
+  const topics = page.locator("#prompt\\.text_topics textarea");
+  await topics.fill("خرید\nسفر\nورزش\nباغ‌وحش");
+  await expect(page.locator("#prompt\\.text_topics")).toContainText("۴ مورد");
   await page.getByRole("button", { name: "ذخیره", exact: true }).click();
   await expect(page.getByRole("status")).toHaveText("ذخیره شد.");
 
   await page.goto("/admin/log?kind=settings");
   const hoursRow = page.locator("li").filter({ hasText: "جلسه نیمه‌کاره تا چند ساعت قابل ادامه است" });
-  await expect(page.locator("li").filter({ hasText: /اضافه شد: .DeepSeek/ })).toBeVisible();
+  await expect(page.locator("li").filter({ hasText: /اضافه شد: .*باغ‌وحش/ })).toBeVisible();
   await hoursRow.getByRole("button", { name: "برگردان" }).click();
   await page.getByRole("button", { name: "برگردان" }).click();
   await expect(hoursRow.getByRole("status")).toContainText("برگردانده شد.");

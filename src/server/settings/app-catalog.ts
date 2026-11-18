@@ -27,8 +27,6 @@ export const appSettingDefaults: Record<string, unknown> = {
   "levels.de": ["A1", "A2", "B1", "B2"],
   /** Session length in minutes to a one-line honest estimate. Empty until the simulator fills it (PRD §3.1). */
   pace_estimate_fa: {},
-  /** Chatbot names the admin picks from in step 1 of the four-step path (PRD §13.9). */
-  chatbot_names: ["ChatGPT", "Claude", "Gemini"],
   /** Records per batch for each prompt (PRD §14.9); made smaller when answers keep getting cut. */
   "batch.sizes": {
     "P-C": 200,

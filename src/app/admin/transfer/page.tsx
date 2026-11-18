@@ -8,6 +8,8 @@ import { requireAdmin } from "@/server/auth/session";
 import { pickLanguage, type LanguageCode } from "@/server/content/languages";
 import { librarySlugs, type LibrarySlug } from "@/server/content/library/slugs";
 import { exportCounts, wordCsvColumns } from "@/server/content/transfer/export";
+import { savedBackups } from "@/server/backup/jobs";
+import { FullBackup } from "./full-backup";
 import { WordImport } from "./word-import";
 
 export const metadata: Metadata = { title: t("admin.transfer.title") };
@@ -18,7 +20,7 @@ const fileHref = (language: LanguageCode, type: LibrarySlug | "all", format: "cs
 export default async function TransferPage({ searchParams }: PageProps<"/admin/transfer">) {
   const admin = await requireAdmin();
   const language = pickLanguage((await searchParams).lang, admin.admin_language);
-  const counts = await exportCounts(language);
+  const [counts, saved] = await Promise.all([exportCounts(language), savedBackups()]);
   const languageName = t(`common.languages.${language}`);
 
   return (
@@ -28,6 +30,16 @@ export default async function TransferPage({ searchParams }: PageProps<"/admin/t
         lead={t("admin.transfer.lead")}
         actions={admin.admin_language === "all" ? <LanguageTabs current={language} path="/admin/transfer" /> : null}
       />
+
+      <section aria-labelledby="backup" className="flex flex-col gap-4">
+        <div className="flex flex-col gap-1">
+          <h2 id="backup" className="text-ink text-[19px] font-extrabold">
+            {t("admin.transfer.backup.title")}
+          </h2>
+          <p className="text-ink-2 max-w-[68ch] text-[14.5px] leading-7">{t("admin.transfer.backup.lead")}</p>
+        </div>
+        <FullBackup saved={saved.map((item) => ({ name: item.name, bytes: item.bytes, at: item.at.toISOString() }))} />
+      </section>
 
       <section aria-labelledby="export" className="flex flex-col gap-4">
         <div className="flex flex-col gap-1">

@@ -9,7 +9,14 @@ import path from "node:path";
  */
 
 export const MEDIA_PREFIX = "/media/";
-const root = () => path.resolve(process.env.STORAGE_DIR ?? "./storage");
+/** The folder every stored file lives under. */
+export const storageRoot = () => path.resolve(process.env.STORAGE_DIR ?? "./storage");
+const root = storageRoot;
+/**
+ * The folders `/media/...` serves and a full backup carries. Anything else under STORAGE_DIR (backups,
+ * a restore being uploaded) is never served.
+ */
+export const mediaFolders = ["audio"] as const;
 
 const types: Record<string, string> = { mp3: "audio/mpeg" };
 export const mediaType = (file: string) => types[path.extname(file).slice(1).toLowerCase()] ?? "application/octet-stream";
@@ -27,7 +34,8 @@ export async function saveMedia(folder: "audio", bytes: Uint8Array, extension: "
 
 /** The file behind a `/media/...` address, or null when the address points anywhere else. */
 export function mediaFile(parts: string[]): string | null {
-  if (parts.length === 0 || parts.some((part) => part === "" || part === "." || part === ".." || part.includes("\\") || part.includes("\0"))) return null;
+  if (parts.length < 2 || !(mediaFolders as readonly string[]).includes(parts[0])) return null;
+  if (parts.some((part) => part === "" || part === "." || part === ".." || part.includes("\\") || part.includes("\0"))) return null;
   const base = root();
   const file = path.resolve(base, ...parts);
   return file.startsWith(base + path.sep) ? file : null;

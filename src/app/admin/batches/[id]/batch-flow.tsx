@@ -22,7 +22,7 @@ import { formatNumber, t } from "@/i18n";
 import { isolateLatin } from "@/lib/bidi";
 import { cn } from "@/lib/utils";
 import { startBatch } from "../../create/actions";
-import { chooseChatbot, pasteAnswer, pasteQa, skipRejected, startOver, throwAway, type PasteOutcome } from "./actions";
+import { pasteAnswer, promptCopied, pasteQa, skipRejected, startOver, throwAway, type PasteOutcome } from "./actions";
 
 export type CountKey = "added" | "updated" | "skipped" | "dropped" | "rejected";
 
@@ -33,10 +33,8 @@ export type BatchView = {
   slug: string;
   step: 1 | 2 | 3 | 4 | 5;
   hasQa: boolean;
-  chatbots: string[];
-  /** The chatbot saved on the batch; null until the prompt is copied or an answer is pasted. */
-  chatbot: string | null;
-  defaultChatbot: string;
+  /** The prompt was copied at least once (step 1 done). */
+  copied: boolean;
   prompt: string;
   /** Characters received so far when the answer was cut; null otherwise. */
   cutLength: number | null;
@@ -85,9 +83,8 @@ export function BatchFlow({ view }: { view: BatchView }) {
   }, [rounds, view.qaDone]);
 
   const imported = report !== null;
-  const [chatbot, setChatbot] = useState(view.defaultChatbot);
   const steps: Record<1 | 2 | 3 | 4, StepState> = {
-    1: view.chatbot ? "done" : "current",
+    1: view.copied || imported ? "done" : "current",
     2: imported ? "done" : view.step === 2 ? "current" : "open",
     3: !imported ? "locked" : report.rejected.length === 0 ? "done" : "current",
     4: !imported || !view.hasQa ? "locked" : view.qaDone ? "done" : view.step === 4 ? "current" : "open",
@@ -95,8 +92,8 @@ export function BatchFlow({ view }: { view: BatchView }) {
 
   return (
     <div className="flex flex-col gap-4">
-      <PromptStep key={String(imported)} view={view} state={steps[1]} chatbot={chatbot} onPick={setChatbot} />
-      <PasteStep view={view} state={steps[2]} chatbot={chatbot} />
+      <PromptStep key={String(imported)} view={view} state={steps[1]} />
+      <PasteStep view={view} state={steps[2]} />
       <ReportStep view={view} state={steps[3]} />
       <QaStep view={view} state={steps[4]} />
       {view.step === 5 ? <Finished view={view} /> : null}
@@ -292,29 +289,13 @@ function Disclosure({
 
 /* ---------- Step 1: the prompt ---------- */
 
-function PromptStep({
-  view,
-  state,
-  chatbot,
-  onPick,
-}: {
-  view: BatchView;
-  state: StepState;
-  chatbot: string;
-  onPick: (name: string) => void;
-}) {
+function PromptStep({ view, state }: { view: BatchView; state: StepState }) {
   // After the answer is in, the prompt folds away; it stays one tap from reach.
   const collapsed = view.report !== null;
   const [showText, setShowText] = useState(false);
   const [open, setOpen] = useState(!collapsed);
   const [, start] = useTransition();
   const textRef = useRef<HTMLPreElement>(null);
-
-  function pick(name: string) {
-    onPick(name);
-    // Once saved, a change is saved right away; before that it is saved with the copy.
-    if (view.chatbot && view.chatbot !== name) start(() => chooseChatbot(view.id, name));
-  }
 
   function selectText() {
     setShowText(true);
@@ -334,49 +315,21 @@ function PromptStep({
       n={1}
       title={t("admin.batch.steps.prompt")}
       state={state}
-      note={view.chatbot ? t("admin.batch.prompt.chosen", { bot: view.chatbot }) : undefined}
+      note={view.copied ? t("admin.batch.prompt.done") : undefined}
       toggle={
         collapsed
           ? { open, onToggle: () => setOpen(!open), show: t("admin.batch.prompt.show"), hide: t("admin.batch.prompt.hide") }
           : undefined
       }
     >
-      <fieldset className="flex flex-col gap-2.5">
-        <legend className="text-ink-2 mb-2.5 text-[13px] font-bold">{t("admin.batch.prompt.chooseBot")}</legend>
-        <div className="bg-tint grid w-full grid-flow-col gap-1 rounded-[16px] p-1 sm:w-fit sm:auto-cols-fr">
-          {view.chatbots.map((name) => (
-            <label key={name} className="relative">
-              <input
-                type="radio"
-                name={`chatbot-${view.id}`}
-                value={name}
-                checked={chatbot === name}
-                onChange={() => pick(name)}
-                className="peer sr-only"
-              />
-              <span
-                dir="ltr"
-                className={cn(
-                  "flex h-10 cursor-pointer items-center justify-center rounded-[12px] px-4 text-[14px] font-bold transition-[background-color,color,box-shadow] duration-150 sm:min-w-28",
-                  "peer-focus-visible:ring-ring/45 peer-focus-visible:ring-[3px]",
-                  chatbot === name ? "bg-surface dark:bg-tint-2 text-ink shadow-[var(--shadow-1)]" : "text-ink-2 hover:text-ink",
-                )}
-              >
-                {name}
-              </span>
-            </label>
-          ))}
-        </div>
-      </fieldset>
-
       <div className="flex flex-wrap items-start gap-x-4 gap-y-2">
         <CopyButton
           text={view.prompt}
-          label={view.chatbot ? t("admin.batch.prompt.copyAgain") : t("admin.batch.prompt.copy")}
+          label={view.copied ? t("admin.batch.prompt.copyAgain") : t("admin.batch.prompt.copy")}
           variant={state === "current" ? "default" : "secondary"}
           size="lg"
           onCopied={() => {
-            if (view.chatbot !== chatbot) start(() => chooseChatbot(view.id, chatbot));
+            if (!view.copied) start(() => promptCopied(view.id));
           }}
           onFailed={selectText}
         />
@@ -399,7 +352,7 @@ function PromptStep({
 
 /* ---------- Step 2: paste the answer ---------- */
 
-function PasteStep({ view, state, chatbot }: { view: BatchView; state: StepState; chatbot: string }) {
+function PasteStep({ view, state }: { view: BatchView; state: StepState }) {
   const [, start] = useTransition();
   if (view.report) {
     return <Step n={2} title={t("admin.batch.steps.paste")} state="done" note={t("admin.batch.paste.summary")} />;
@@ -420,7 +373,7 @@ function PasteStep({ view, state, chatbot }: { view: BatchView; state: StepState
         placeholder={cut ? t("admin.batch.paste.continuationPlaceholder") : t("admin.batch.paste.placeholder")}
         submit={t("admin.batch.paste.submit")}
         primary={state === "current"}
-        action={(text) => pasteAnswer(view.id, { text, mode: "answer", chatbot: view.chatbot ? "" : chatbot })}
+        action={(text) => pasteAnswer(view.id, { text, mode: "answer" })}
       />
     </Step>
   );
@@ -480,7 +433,7 @@ function ReportStep({ view, state }: { view: BatchView; state: StepState }) {
                 label={t("admin.batch.report.fixLabel")}
                 placeholder={t("admin.batch.paste.placeholder")}
                 submit={t("admin.batch.report.fixSubmit")}
-                action={(text) => pasteAnswer(view.id, { text, mode: "fix", chatbot: "" })}
+                action={(text) => pasteAnswer(view.id, { text, mode: "fix" })}
               />
             </div>
           ) : null}
@@ -504,7 +457,7 @@ function ReportStep({ view, state }: { view: BatchView; state: StepState }) {
             placeholder={t("admin.batch.paste.placeholder")}
             submit={t("admin.batch.grammar.moreSubmit")}
             primary={false}
-            action={(text) => pasteAnswer(view.id, { text, mode: "fix", chatbot: "" })}
+            action={(text) => pasteAnswer(view.id, { text, mode: "fix" })}
           />
         </div>
       ) : null}

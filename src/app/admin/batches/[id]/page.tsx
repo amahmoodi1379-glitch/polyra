@@ -12,7 +12,6 @@ import {
   fixPrompt,
   hasQa,
   kindOf,
-  lastChatbot,
   qaPrompt,
 } from "@/server/content/batches";
 import { isLanguage } from "@/server/content/languages";
@@ -41,7 +40,7 @@ const isLevel = (value: string) => /^[ABC][12]$/.test(value);
 
 export default async function BatchPage({ params }: PageProps<"/admin/batches/[id]">) {
   const { id } = await params;
-  const admin = await requireAdmin(`/admin/batches/${id}`);
+  await requireAdmin(`/admin/batches/${id}`);
   const batch = Number.isSafeInteger(Number(id)) ? await db.importBatch.findUnique({ where: { id: Number(id) } }) : null;
   const found = batch ? kindOf(batch.prompt_kind) : null;
 
@@ -54,7 +53,6 @@ export default async function BatchPage({ params }: PageProps<"/admin/batches/[i
     );
   }
 
-  const [chatbots, last] = await Promise.all([appSetting<string[]>("chatbot_names"), lastChatbot(admin.id)]);
   const info = batchParams(batch);
   const report = batchReport(batch);
   const kindName = t(`admin.batch.kind.${batch.prompt_kind}` as MessageKey);
@@ -67,9 +65,7 @@ export default async function BatchPage({ params }: PageProps<"/admin/batches/[i
     slug: found.slug,
     step: batchStep(batch),
     hasQa: hasQa(batch.prompt_kind),
-    chatbots,
-    chatbot: batch.model_name,
-    defaultChatbot: batch.model_name ?? (last && chatbots.includes(last) ? last : chatbots[0]),
+    copied: batch.prompt_copied_at !== null,
     prompt: batch.prompt_text,
     cutLength: batch.state === "pasted" ? (batch.raw_output?.length ?? 0) : null,
     report: report && {

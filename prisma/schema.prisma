@@ -925,6 +925,8 @@ model ImportBatch {
   /// What the prompt was built for: level, chosen word codes, unit, kind, and so on.
   params     Json?
   updated_at DateTime @updatedAt @db.Timestamptz(3)
+  /// When the prompt was first copied (step 1 done). Replaces the chatbot picker (DECISIONS.md).
+  prompt_copied_at DateTime? @db.Timestamptz(3)
 
   @@index([language, state])
   @@map("import_batch")

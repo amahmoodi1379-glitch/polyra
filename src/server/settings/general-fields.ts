@@ -91,7 +91,6 @@ export const generalFields: GeneralField[] = [
     }),
   ),
 
-  { id: "chatbot_names", section: "making", label: label("chatbot_names"), help: label("chatbot_names_help"), kind: "lines", key: "chatbot_names", min: 1, max: 10, itemMax: 40 },
   {
     id: "batch.sizes",
     section: "making",

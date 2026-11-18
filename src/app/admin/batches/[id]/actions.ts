@@ -9,7 +9,7 @@ import {
   cutAnswer,
   dismissRejected,
   resetCut,
-  setChatbot,
+  markCopied,
   submitAnswer,
   submitQa,
   type SubmitResult,
@@ -35,20 +35,19 @@ function outcome(result: SubmitResult): PasteOutcome {
 
 const refresh = (batchId: number) => revalidatePath(`/admin/batches/${batchId}`);
 
-/** The chatbot is saved when the prompt is copied, and again with the answer if it changed. */
-export async function chooseChatbot(batchId: number, name: string) {
+/** Step 1 is done: the prompt was copied. */
+export async function promptCopied(batchId: number) {
   await requireAdmin();
-  if (await setChatbot(batchId, name)) refresh(batchId);
+  if (await markCopied(batchId)) refresh(batchId);
 }
 
 /**
  * Step 2 (and the fix in step 3). A paste that follows a cut answer is its continuation, so the
  * part already received is put in front of it here rather than sent back from the page.
  */
-export async function pasteAnswer(batchId: number, input: { text: string; mode: "answer" | "fix"; chatbot: string }) {
+export async function pasteAnswer(batchId: number, input: { text: string; mode: "answer" | "fix" }) {
   const admin = await requireAdmin();
   try {
-    if (input.chatbot) await setChatbot(batchId, input.chatbot);
     const before = input.mode === "answer" ? await cutAnswer(batchId) : null;
     const result = await submitAnswer(batchId, before ? [before, input.text] : [input.text], input.mode, admin.id);
     refresh(batchId);

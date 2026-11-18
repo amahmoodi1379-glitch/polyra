@@ -22,9 +22,10 @@ test("an admin makes a word list: copy, paste a cut answer, fix the rejected rec
   await expect(page).toHaveURL(/\/admin\/batches\/\d+$/);
   await expect(page.getByRole("heading", { name: /فهرست کلمه‌ها/, level: 1 })).toBeVisible();
 
-  await page.locator("label", { hasText: "Gemini" }).click();
+  // No chatbot to pick: the prompt is the same for every chatbot.
+  await expect(page.getByText("Gemini")).toHaveCount(0);
   await page.getByRole("button", { name: "کپی پرامپت" }).click();
-  await expect(page.getByText("کپی شد برای Gemini")).toBeVisible();
+  await expect(page.getByText("پرامپت کپی شد")).toBeVisible();
   expect(await page.evaluate(() => navigator.clipboard.readText())).toContain("maison");
 
   const items = [

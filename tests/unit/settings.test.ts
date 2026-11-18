@@ -98,16 +98,16 @@ describe("general settings (PRD §13.2)", () => {
   });
 
   it("checks lists: how many, empty, too long, and the same line twice", () => {
-    const names = field("chatbot_names");
-    expect(checkField(names, [])).toEqual([{ key: "chatbot_names", message: "دست‌کم ۱ مورد لازم است." }]);
+    const names = field("prompt.text_topics");
+    expect(checkField(names, [])).toEqual([{ key: "prompt.text_topics", message: "دست‌کم ۱ مورد لازم است." }]);
     expect(
       checkField(
         names,
-        Array.from({ length: 11 }, (_, index) => `bot ${index}`),
+        Array.from({ length: 61 }, (_, index) => `topic ${index}`),
       )[0].message,
-    ).toBe("بیشتر از ۱۰ مورد نمی‌شود.");
-    expect(checkField(names, ["Claude", "claude "])[0].message).toBe("«claude» دو بار آمده.");
-    expect(checkField(names, ["x".repeat(41)])[0].message).toBe("هر مورد حداکثر ۴۰ نویسه.");
+    ).toBe("بیشتر از ۶۰ مورد نمی‌شود.");
+    expect(checkField(names, ["Sport", "sport "])[0].message).toBe("«sport» دو بار آمده.");
+    expect(checkField(names, ["x".repeat(61)])[0].message).toBe("هر مورد حداکثر ۶۰ نویسه.");
     expect(keysOf(checkField(field("prompt.dialogue_situations"), { A1: ["کافه"], A2: [] }))).toEqual(["prompt.dialogue_situations.A2"]);
     expect(checkField(field("conjugation.tenses.fr"), { A1: [] })).toEqual([]);
   });
