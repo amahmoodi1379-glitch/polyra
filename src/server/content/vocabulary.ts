@@ -7,6 +7,9 @@ export type VocabWord = VocabEntry & {
   no_card: boolean;
   status: string;
   meaning_fa: string | null;
+  /** Words with the same concept mean the same thing (PRD §5.1): a synonym is never a wrong option. */
+  concept_id: number | null;
+  gender: string | null;
 };
 
 export type LoadedVocabulary = Vocabulary & {
@@ -33,6 +36,8 @@ export async function loadVocabulary(tx: Tx, language: string): Promise<LoadedVo
       no_card: true,
       status: true,
       meaning_fa: true,
+      concept_id: true,
+      gender: true,
     },
   });
   const tables = await tx.conjugationTable.findMany({
@@ -66,6 +71,8 @@ export async function loadVocabulary(tx: Tx, language: string): Promise<LoadedVo
     no_card: row.no_card,
     status: row.status,
     meaning_fa: row.meaning_fa,
+    concept_id: row.concept_id,
+    gender: row.gender,
     forms: formsOf.get(row.id) ?? [],
     partLemmas: row.parts.map((code) => byCode.get(code)?.lemma ?? code),
   }));

@@ -24,11 +24,11 @@ describe("text questions (PRD §7.3, §7.7)", () => {
 
   it("accepts valid match, cloze, ctx and num questions of band 3", () => {
     const reading = [
-      { type: "match", prompt: "?", prompt_fa: "؟", left: ["Marie", "Le train"], right: ["attend", "part", "lit"], pairs: [[1, 1], [0, 0]] },
-      { type: "cloze", prompt: "?", prompt_fa: "؟", text_with_gaps: "Le {{1}} part à 14h30. Elle {{2}} un journal.", bank: ["train", "lit", "bus"], answers: ["train", "lit"] },
-      { type: "ctx", word: "quai", prompt: "?", prompt_fa: "؟", options: ["a", "b", "c", "d"], correct: 2 },
+      { type: "match", prompt: "?", prompt_fa: "چه؟", left: ["Marie", "Le train"], right: ["attend", "part", "lit"], pairs: [[1, 1], [0, 0]] },
+      { type: "cloze", prompt: "?", prompt_fa: "چه؟", text_with_gaps: "Le {{1}} part à 14h30. Elle {{2}} un journal.", bank: ["train", "lit", "bus"], answers: ["train", "lit"] },
+      { type: "ctx", word: "quai", prompt: "?", prompt_fa: "چه؟", options: ["a", "b", "c", "d"], correct: 2 },
     ];
-    const listening = [{ type: "num", prompt: "?", prompt_fa: "؟", answer: "14h30", accepted: ["14h30", "14:30"] }, tf("a"), tf("b")];
+    const listening = [{ type: "num", prompt: "?", prompt_fa: "چه؟", answer: "14h30", accepted: ["14h30", "14:30"] }, tf("a"), tf("b")];
     const result = checkQuestionSets(sets(reading, listening), { band: 3, placement: false, sentences });
     expect(result.problems).toEqual([]);
     expect(result.questions).toHaveLength(12);
@@ -36,11 +36,11 @@ describe("text questions (PRD §7.3, §7.7)", () => {
 
   it("names each broken question by its place", () => {
     const reading = [
-      { type: "match", prompt: "?", prompt_fa: "؟", left: ["a", "b"], right: ["x", "y"], pairs: [[0, 1], [1, 1]] },
-      { type: "cloze", prompt: "?", prompt_fa: "؟", text_with_gaps: "Le {{2}} part.", bank: ["train"], answers: ["train"] },
+      { type: "match", prompt: "?", prompt_fa: "چه؟", left: ["a", "b"], right: ["x", "y"], pairs: [[0, 1], [1, 1]] },
+      { type: "cloze", prompt: "?", prompt_fa: "چه؟", text_with_gaps: "Le {{2}} part.", bank: ["train"], answers: ["train"] },
       { type: "ctx", word: "gare", prompt: "?", options: ["a", "b", "c", "d"], correct: 4 },
     ];
-    const listening = [{ type: "num", prompt: "?", prompt_fa: "؟", answer: "deux", accepted: ["2"] }, tf("a"), tf("b")];
+    const listening = [{ type: "num", prompt: "?", prompt_fa: "چه؟", answer: "deux", accepted: ["2"] }, tf("a"), tf("b")];
     const { problems } = checkQuestionSets(sets(reading, listening), { band: 3, placement: true, sentences });
     expect(problems.map((item) => [item.key, item.vars?.field])).toEqual([
       ["questionCount", "question_sets.reading.A"],

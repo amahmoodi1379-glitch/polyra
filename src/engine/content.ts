@@ -230,6 +230,11 @@ export type Content = {
   wordSentences: Map<number, number[]>;
   /** Lower-case lemma to the word ids with it, for confusion and synonyms (PRD §5.6, §9.9). */
   lemmaIndex: Map<string, number[]>;
+  /**
+   * Lower-case written forms of the language beyond our own content (the open frequency list, PRD §16.2),
+   * so a made-up misspelling (W3a) is never a real word of the language. Optional: tests leave it out.
+   */
+  realWords?: ReadonlySet<string>;
 };
 
 export const PRONOUNS: Record<Lang, { key: string; label: string }[]> = {

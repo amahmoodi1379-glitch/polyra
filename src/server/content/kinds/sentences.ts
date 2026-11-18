@@ -4,6 +4,7 @@ import { t } from "@/i18n";
 import { sentenceRecord, type SentenceTargetRecord } from "@/schemas/sentences";
 import { db } from "@/server/db";
 import { appSetting, engineNumber } from "@/server/settings/read";
+import { checkWordDistractors } from "../distractor-check";
 import { levelRank } from "../languages";
 import { problem, zodProblems, type Problem } from "../problems";
 import { emptyRound } from "../report";
@@ -155,12 +156,27 @@ export const sentences: ContentKind = {
       problems.push(...mapping.problems);
 
       const targetIds: number[] = [];
+      const cues: Problem[] = [];
       for (const [k, target] of sentence.targets.entries()) {
         problems.push(...checkTarget(target, sentence.text, `targets[${k}]`));
         const id = await resolveTarget(tx, language, target, vocabulary);
         if (id === null) problems.push(problem("targetUnknown", { code: target.target }));
         else if (target.type === "word" && mapping.rows && !blankHoldsWord(target.marked_text, sentence.text, mapping.rows, id)) {
           problems.push(problem("blankNotTarget", { code: target.target, field: `targets[${k}].marked_text` }));
+        }
+        // W3b's wrong options (PRD §5.5): a synonym is a second right answer; grammar cues are warnings.
+        const word = id !== null && target.type === "word" ? vocabulary.byId(id) : undefined;
+        if (word && target.blanks === 1 && target.distractors.every((item) => typeof item === "string")) {
+          const report = checkWordDistractors({
+            markedText: target.marked_text,
+            distractors: target.distractors as string[],
+            target: word,
+            words: vocabulary.words,
+            language,
+            field: `targets[${k}].distractors`,
+          });
+          problems.push(...report.synonyms);
+          cues.push(...report.cues);
         }
         targetIds.push(id ?? 0);
       }
@@ -169,6 +185,7 @@ export const sentences: ContentKind = {
         continue;
       }
       round.warnings.push(...lengthFlags(label, { sentences: [sentence.text], options: targetOptions(sentence.targets) }));
+      round.warnings.push(...cues.map((item) => ({ label, problem: item })));
 
       // The same sentence again: keep it, only add targets it does not have yet (PRD §14.9).
       const stored = await storeSentence(tx, batch, { sentence, rows: mapping.rows, vocabulary, level, label }, round, seenInAnswer);

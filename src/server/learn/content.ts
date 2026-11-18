@@ -56,6 +56,20 @@ export function forgetContent() {
 
 const MEANING_SPLIT = /[،,]/;
 
+/** The language's open word list (`frequency_item`, loaded by the seed), lower case; read once per language. */
+const wordLists = new Map<string, Promise<ReadonlySet<string>>>();
+function languageWords(language: string): Promise<ReadonlySet<string>> {
+  let found = wordLists.get(language);
+  if (!found) {
+    found = db.frequencyItem
+      .findMany({ where: { language }, select: { lemma: true } })
+      .then((rows) => new Set(rows.map((row) => row.lemma.toLowerCase())) as ReadonlySet<string>);
+    found.catch(() => wordLists.delete(language));
+    wordLists.set(language, found);
+  }
+  return found;
+}
+
 /** The where-part that leaves out separate modules a learner's plan does not open (none for a tester). */
 export async function moduleFilter(language: string, audience: Audience, modules: readonly string[]) {
   if (audience !== "public") return {};
@@ -213,10 +227,12 @@ export async function loadContent(language: string, audience: Audience, modules:
     }));
 
   const openLevels = levels.filter((level) => released.includes(level));
+  const realWords = await languageWords(language);
   return indexContent({
     language: lang,
     levels,
     openLevels,
+    realWords,
     words,
     sentences,
     targets,

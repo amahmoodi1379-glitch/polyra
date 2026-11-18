@@ -7,6 +7,7 @@ import { appSetting } from "@/server/settings/read";
 import { fold } from "@/engine/tokens";
 import { freeCode, repeatedWord, senseCode } from "../codes";
 import { lastIntroOrder } from "../intro-order";
+import { checkWordDistractors } from "../distractor-check";
 import { checkTarget, sentenceHash, tidy, blankHoldsWord, type TargetInput } from "../kinds/sentence-store";
 import { describeProblem } from "../problems";
 import { topLevel } from "../sentence-level";
@@ -114,7 +115,11 @@ export async function addSentence(language: string, raw: unknown, adminId: numbe
     const marked = `${input.text.slice(0, start)}{{${input.text.slice(start, end)}}}${input.text.slice(end)}`;
     const distractors = (input.distractors ?? []).filter(Boolean);
     targetRow = { marked_text: marked, blanks: 1, accepted: [input.text.slice(start, end)], distractors, hint: null, accepted_full: null };
-    const problems = checkTarget(targetRow, input.text, "target");
+    const problems = [
+      ...checkTarget(targetRow, input.text, "target"),
+      // A wrong option that means the same as the word is a second right answer (PRD §5.5).
+      ...checkWordDistractors({ markedText: marked, distractors, target, words: vocabulary.words, language, field: "distractors" }).synonyms,
+    ];
     if (problems.length) return { state: "invalid", errors: problems.map((item) => fieldError("distractors", describeProblem(item))) };
     if (!blankHoldsWord(marked, input.text, rows, target.id)) return { state: "invalid", errors: [fieldError("target", t_notInSentence(target.lemma))] };
   }

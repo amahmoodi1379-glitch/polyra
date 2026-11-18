@@ -12,6 +12,7 @@ import { refreshDifficulty } from "../text-difficulty";
 import { lastIntroOrder, placeAfter } from "../intro-order";
 import { languageInfo, type LanguageCode } from "../languages";
 import { defaultMastery, PRODUCE_LEVELS } from "../mastery";
+import { lexiconFlags } from "../lexicon";
 import { problem, zodProblems, type Problem } from "../problems";
 import { staleAudio } from "../library/edit/shared";
 import { emptyRound, type ImportReport } from "../report";
@@ -316,6 +317,8 @@ export const words: ContentKind = {
       else rows.push(saved);
       previous = saved;
       round.accepted.push({ label: word.lemma, entity: { type: "word", id: saved.id }, record });
+      // Gender, plural and level against the open lexicon and the frequency rank: warnings only.
+      for (const flag of lexiconFlags(word, language, rank)) round.warnings.push({ label: word.lemma, problem: flag, entity: { type: "word", id: saved.id } });
     }
 
     for (const [level, list] of moves) await placeAfter(tx, language, level, list);

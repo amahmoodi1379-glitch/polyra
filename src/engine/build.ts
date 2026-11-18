@@ -20,7 +20,7 @@ import { exerciseDef, PHRASE_EXCLUDED, RECOGNIZE_EXCLUDED, SHAPE } from "./exerc
 import { shuffle, type Rng } from "./random";
 import { exerciseOn, num, type Settings } from "./settings";
 import { itemKey, type ItemHistory } from "./state";
-import { hasWordChar } from "./text";
+import { hasWordChar, type Lang } from "./text";
 
 /**
  * Builds one exercise from the content (PRD §5.3, §5.5, §5.7, §6.5, §6.6). Every builder returns
@@ -291,7 +291,10 @@ export function translationChoices(env: BuildEnv, sentence: SentenceC, ok: (othe
   );
 }
 
-/** Every written form of the language, so a made-up misspelling is never a real word (PRD §5.5). */
+/**
+ * Every written form of our content, so a made-up misspelling is never a real word (PRD §5.5); the
+ * language's own word list (`content.realWords`) is checked beside it.
+ */
 const formCache = new WeakMap<Content, Set<string>>();
 function realForms(content: Content): Set<string> {
   let forms = formCache.get(content);
@@ -300,6 +303,8 @@ function realForms(content: Content): Set<string> {
   for (const word of content.words.values()) {
     forms.add(word.lemma.toLowerCase());
     if (word.plural) forms.add(word.plural.toLowerCase());
+    // A homophone is a real word that sounds the same: offered as a "misspelling" it would be a second right answer.
+    for (const homophone of word.homophones) forms.add(homophone.toLowerCase());
   }
   for (const sentence of content.sentences.values()) for (const token of sentence.tokens) forms.add(token.surface.toLowerCase());
   for (const table of content.conjugations) {
@@ -310,46 +315,69 @@ function realForms(content: Content): Set<string> {
   return forms;
 }
 
-const ACCENT_SWAPS: Record<string, string[]> = {
-  é: ["e", "è", "ê"],
-  è: ["e", "é"],
-  ê: ["e", "é", "è"],
-  ë: ["e"],
-  à: ["a", "â"],
-  â: ["a", "à"],
-  î: ["i", "ï"],
-  ï: ["i", "î"],
-  ô: ["o"],
-  û: ["u", "ù"],
-  ù: ["u", "û"],
-  ç: ["c"],
-  ä: ["a", "ae"],
-  ö: ["o", "oe"],
-  ü: ["u", "ue"],
-  ß: ["ss", "s"],
-  e: ["é"],
-  a: ["à"],
-  u: ["ü"],
-  o: ["ö"],
+/**
+ * Accent changes a learner of each language really makes (PRD §5.5 "حذف یا تغییر اکسان"). Each language
+ * has its own table: a French word never gets ü or ö and a German word never gets é or à, since a letter
+ * the language does not have gives the answer away. Spelling an umlaut out (ae) and ß as ss are left
+ * out on purpose: a typed answer counts them as almost right (§5.6), and Swiss German writes ss.
+ */
+const ACCENT_SWAPS: Record<Lang, Record<string, string[]>> = {
+  fr: {
+    é: ["e", "è", "ê"],
+    è: ["e", "é"],
+    ê: ["e", "é", "è"],
+    ë: ["e"],
+    à: ["a"],
+    â: ["a"],
+    î: ["i"],
+    ï: ["i"],
+    ô: ["o"],
+    û: ["u"],
+    ù: ["u"],
+    ç: ["c"],
+    e: ["é", "è"],
+  },
+  de: {
+    ä: ["a", "e"],
+    ö: ["o"],
+    ü: ["u"],
+    ß: ["s"],
+    a: ["ä"],
+    o: ["ö"],
+    u: ["ü"],
+    e: ["ä"],
+  },
 };
 
-/** Made-up spellings of a word: accents changed, two neighbours swapped, a letter doubled or single (PRD §5.5). */
-export function misspellings(lemma: string): string[] {
+/** Consonants a learner doubles or writes single by mistake (bb, ff, ll, mm, nn, pp, rr, ss, tt, …). */
+const DOUBLING = /[bcdfgklmnprstz]/i;
+
+const isLetter = (c: string | undefined) => !!c && /\p{L}/u.test(c);
+
+/**
+ * Made-up spellings of a word (PRD §5.5): an accent changed, two letters next to each other swapped, a
+ * consonant doubled or written single. The first letter is never touched, so the form still starts like
+ * the word, and a German noun keeps its capital.
+ */
+export function misspellings(lemma: string, lang: Lang): string[] {
   const out = new Set<string>();
   const letters = [...lemma];
+  const swaps = ACCENT_SWAPS[lang];
+  const at = (i: number, piece: string) => letters.slice(0, i).join("") + piece + letters.slice(i + 1).join("");
   letters.forEach((c, i) => {
-    for (const swap of ACCENT_SWAPS[c.toLowerCase()] ?? []) out.add(letters.slice(0, i).join("") + swap + letters.slice(i + 1).join(""));
+    const lower = c.toLowerCase();
+    for (const swap of swaps[lower] ?? []) out.add(at(i, c === lower ? swap : swap.toUpperCase()));
   });
-  for (let i = 0; i < letters.length - 1; i++) {
-    if (letters[i] === letters[i + 1] || !/\p{L}/u.test(letters[i]) || !/\p{L}/u.test(letters[i + 1])) continue;
+  for (let i = 1; i < letters.length - 1; i++) {
+    if (letters[i] === letters[i + 1] || !isLetter(letters[i]) || !isLetter(letters[i + 1])) continue;
     const copy = [...letters];
     [copy[i], copy[i + 1]] = [copy[i + 1], copy[i]];
     out.add(copy.join(""));
   }
-  for (let i = 0; i < letters.length; i++) {
-    if (!/\p{L}/u.test(letters[i])) continue;
-    if (letters[i] === letters[i + 1]) out.add([...letters.slice(0, i), ...letters.slice(i + 1)].join(""));
-    else if (letters[i] !== letters[i - 1]) out.add([...letters.slice(0, i + 1), letters[i], ...letters.slice(i + 1)].join(""));
+  for (let i = 1; i < letters.length; i++) {
+    if (!DOUBLING.test(letters[i])) continue;
+    if (letters[i] === letters[i + 1]) out.add(at(i, ""));
+    else if (letters[i] !== letters[i - 1] && isLetter(letters[i - 1])) out.add(at(i, letters[i] + letters[i]));
   }
   out.delete(lemma);
   return [...out];
@@ -364,16 +392,31 @@ function umlauted(word: string): string | null {
   return last === undefined ? null : word.slice(0, last) + UMLAUT[word[last]] + word.slice(last + 1);
 }
 
-/** Plural forms made from common German patterns, the right one removed (PRD §5.5, W4c). */
+/** Endings that make a plausible German plural for a noun with this ending: [plain, with umlaut]. */
+function pluralEndings(lower: string): [string[], string[]] | null {
+  if (lower.endsWith("in")) return [["nen", "en", "e", "s", ""], []];
+  if (lower.endsWith("e")) return [["n", "s", ""], ["n", ""]];
+  if (/(en|chen|lein)$/.test(lower)) return [["", "s"], [""]];
+  if (/(el|er)$/.test(lower)) return [["", "n", "s"], [""]];
+  if (/[aiouy]$/.test(lower)) return [["s", ""], []];
+  return [["e", "er", "en", "s", ""], ["e", "er", ""]];
+}
+
+/**
+ * Plural forms made from the common German patterns (PRD §5.5, W4c), the right one removed. Each
+ * ending only goes where German puts it, so no option is impossible on sight (Tischn, Lampee, Wagenn):
+ * after -e only -n, -s or nothing; after -el and -er nothing, -n or -s; after -en, -chen and -lein
+ * nothing or -s; after -in -nen and its look-alikes; after a consonant -e, -er, -en, -s or nothing.
+ * Umlaut forms are added where German umlauts. A noun with fewer than three plausible wrong forms
+ * gets no W4c.
+ */
 export function germanPlurals(lemma: string): string[] {
+  const endings = pluralEndings(lemma.toLowerCase());
+  if (!endings) return [];
   const out = new Set<string>();
-  const endings = ["e", "er", "en", "n", "s", ""];
-  const stem = lemma;
-  for (const ending of endings) {
-    out.add(stem + ending);
-    const u = umlauted(stem);
-    if (u) out.add(u + ending);
-  }
+  for (const ending of endings[0]) out.add(lemma + ending);
+  const u = endings[1].length > 0 ? umlauted(lemma) : null;
+  if (u) for (const ending of endings[1]) out.add(u + ending);
   return [...out];
 }
 
@@ -493,7 +536,7 @@ export function buildWordEx(env: BuildEnv, word: WordC, code: string): Ex | null
       const forms = realForms(content);
       const made = shuffle(
         env.rng,
-        misspellings(word.lemma).filter((item) => !forms.has(item.toLowerCase())),
+        misspellings(word.lemma, lang).filter((item) => !forms.has(item.toLowerCase()) && !content.realWords?.has(item.toLowerCase())),
       ).slice(0, SHAPE.wrongOptions);
       if (made.length < SHAPE.wrongOptions) return null;
       const { options, correct } = choiceSet(

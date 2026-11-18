@@ -10,8 +10,6 @@ import type { TextPartialE, TextStage, TextStateE } from "./state";
 
 /** Numbers fixed by PRD §7.4, §7.5 and §9.6 (DECISIONS.md: formula numbers are named, not settings). */
 export const TEXT_RULE = {
-  /** When no text reaches `known.threshold`, a track already started lowers it to these (§7.5). */
-  relaxedShares: [0.8, 0.7],
   /** `track_score` is defined from three first rounds (§7.5). */
   minScores: 3,
   /** Level rule 2: texts of the level with a first round in the track (§7.5). */
@@ -220,18 +218,15 @@ export function textKnownShare(content: Content, text: TextC, known: (wordId: nu
   return ids.filter((id) => id !== null && (keys.has(id) || known(id))).length / ids.length;
 }
 
-/** The track has had a first round or an attempt: it does not close again and lowers the known share when it must (PRD §10.3). */
+/** The track has had a first round or an attempt: its button does not close again (PRD §10.3). */
 export const trackStarted = (states: ReadonlyMap<string, TextStateE>, track: Track) => [...states.values()].some((state) => state.track === track && touched(state));
 
 /**
- * The text of a new attempt 1 in a track (PRD §7.5). An attempt 1 begun and given up comes back
- * first, from the start (§7.4). Otherwise texts of the learner's level that neither track has
- * touched and no test used, with `known.threshold` known words, the easiest first, or the middle
- * one for a learner whose track score reaches `text.jump_score`. Borrowing a text of the other track
- * comes only when no untouched text is left; a started track lowers the share to 80% and 70%, then
- * takes the easiest. `planned` are texts already in this session, in either track.
+ * The texts a new attempt 1 may come from (PRD §7.5 conditions 1 to 3): texts of the learner's level
+ * that neither track has touched and no test used, easiest first. Borrowing a text of the other track
+ * comes only when no untouched text is left. An attempt 1 begun and given up is returned as `resume`.
  */
-export function newText(env: TextEnv, track: Track, planned: ReadonlySet<number>): TextPick | null {
+function newTextPool(env: TextEnv, track: Track, planned: ReadonlySet<number>): { resume: TextPick } | { pool: TextC[]; borrowed: boolean } {
   const { content, settings, now } = env;
   const stateOf = (text: TextC, which: Track) => env.states.get(textStateKey(text.id, which));
   const usable = (text: TextC) => questionsOf(text, track, "A").length > 0 && !planned.has(text.id) && !usedInTest(env, text.id);
@@ -239,32 +234,65 @@ export function newText(env: TextEnv, track: Track, planned: ReadonlySet<number>
   for (const text of content.texts) {
     const state = stateOf(text, track);
     if (state && state.attemptsDone === 0 && touched(state) && !openPartial(state, now) && usable(text) && !takenOver(env, text.id, track)) {
-      return { text, track, attempt: 1, set: "A", borrowed: wasBorrowed(state), resume: null };
+      return { resume: { text, track, attempt: 1, set: "A", borrowed: wasBorrowed(state), resume: null } };
     }
   }
 
   const level = env.levelOf(track);
   const ofLevel = content.texts.filter((text) => text.level === level && usable(text) && !touched(stateOf(text, track)));
   const fresh = ofLevel.filter((text) => !touched(stateOf(text, otherTrack(track))));
+  if (fresh.length) return { pool: fresh, borrowed: false };
   const gapMs = num(settings, "text.cross_gap_days") * 86_400_000;
-  const pool = fresh.length
-    ? fresh
-    : ofLevel.filter((text) => {
-        const last = lastTouch(stateOf(text, otherTrack(track)));
-        return last !== null && now.getTime() - last >= gapMs && !openPartial(stateOf(text, otherTrack(track)), now);
-      });
-  const borrowed = fresh.length === 0;
-  const pick = (text: TextC): TextPick => ({ text, track, attempt: 1, set: "A", borrowed, resume: null });
+  const pool = ofLevel.filter((text) => {
+    const last = lastTouch(stateOf(text, otherTrack(track)));
+    return last !== null && now.getTime() - last >= gapMs && !openPartial(stateOf(text, otherTrack(track)), now);
+  });
+  return { pool, borrowed: true };
+}
 
-  const score = trackScore(env.states.values(), track, settings);
-  const strong = score !== null && score >= num(settings, "text.jump_score");
-  const started = trackStarted(env.states, track);
-  for (const share of [num(settings, "known.threshold"), ...TEXT_RULE.relaxedShares]) {
-    const allowed = pool.filter((text) => textKnownShare(content, text, env.known) >= share);
-    if (allowed.length) return pick(strong ? allowed[Math.floor(allowed.length / 2)] : allowed[0]);
-    if (!started) return null;
+/**
+ * The text of a new attempt 1 in a track (PRD §7.5). An attempt 1 begun and given up comes back
+ * first, from the start (§7.4). Otherwise a text of the pool (`newTextPool`) with `text.known_share`
+ * of its words known, key words counting as known: the easiest, or the middle one for a learner whose
+ * track score reaches `text.jump_score`. When none reaches it there is no new text, also in a track
+ * already started: its unknown words are taught first (`textGapWords`, owner's decision, DECISIONS.md
+ * 18 Nov 2026). `planned` are texts already in this session, in either track.
+ */
+export function newText(env: TextEnv, track: Track, planned: ReadonlySet<number>): TextPick | null {
+  const found = newTextPool(env, track, planned);
+  if ("resume" in found) return found.resume;
+  const share = num(env.settings, "text.known_share");
+  const allowed = found.pool.filter((text) => textKnownShare(env.content, text, env.known) >= share);
+  if (!allowed.length) return null;
+  const score = trackScore(env.states.values(), track, env.settings);
+  const strong = score !== null && score >= num(env.settings, "text.jump_score");
+  const text = strong ? allowed[Math.floor(allowed.length / 2)] : allowed[0];
+  return { text, track, attempt: 1, set: "A", borrowed: found.borrowed, resume: null };
+}
+
+/**
+ * When a track has no new text, the words that keep the closest one out (owner's decision, DECISIONS.md
+ * 18 Nov 2026): the unknown words, key words aside, of the pool text with the largest known share (the
+ * easiest on a tie), most repeated first. They go to `new_word_queue` as `key_word`, so the text comes
+ * once they are learned. Empty when a new text is allowed or the pool is empty.
+ */
+export function textGapWords(env: TextEnv, track: Track): number[] {
+  const found = newTextPool(env, track, new Set());
+  if ("resume" in found || found.pool.length === 0) return [];
+  const share = num(env.settings, "text.known_share");
+  let best: { text: TextC; share: number } | null = null;
+  for (const text of found.pool) {
+    const known = textKnownShare(env.content, text, env.known);
+    if (known >= share) return [];
+    if (!best || known > best.share) best = { text, share: known };
   }
-  return pool.length ? pick(pool[0]) : null;
+  const keys = new Set(best!.text.keyWordIds);
+  const counts = new Map<number, number>();
+  for (const id of textWordIds(env.content, best!.text)) {
+    if (id === null || keys.has(id) || env.known(id)) continue;
+    counts.set(id, (counts.get(id) ?? 0) + 1);
+  }
+  return [...counts].sort((a, b) => b[1] - a[1] || a[0] - b[0]).map(([id]) => id);
 }
 
 /**

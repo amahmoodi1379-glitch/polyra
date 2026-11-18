@@ -79,6 +79,27 @@ describe("typed answers (PRD §5.6)", () => {
     const { ex, ctx } = w5a("cuisine");
     expect(grade(ex, { text: "cousine", gender: "une" }, ctx)).toMatchObject({ result: "wrong", chosenWordId: 21 });
   });
+
+  it("an accent slip that spells another word of the list is wrong and names that word (owner, 18 Nov 2026)", () => {
+    const zahlen = word(1, "zahlen", "پرداختن", { pos: "verb" }, "de");
+    const zaehlen = word(2, "zählen", "شمردن", { pos: "verb" }, "de");
+    const ou = word(3, "ou", "یا", { pos: "conj" });
+    const ouAccent = word(4, "où", "کجا", { pos: "adv" });
+    const de = content({ words: [zahlen, zaehlen] }, "de");
+    const deCtx: GradeContext = { language: "de", wordsWithLemma: (text) => de.lemmaIndex.get(text) ?? [] };
+    expect(grade(buildWordEx(env(de), zaehlen, "W5a")!, { text: "zahlen" }, deCtx)).toMatchObject({ result: "wrong", chosenWordId: 1 });
+    // Without that other word in the list it stays an accent slip.
+    expect(grade(buildWordEx(env(de), zaehlen, "W5a")!, { text: "zahlen" }, { language: "de", wordsWithLemma: () => [] })).toMatchObject({
+      result: "near",
+      reason: "accent",
+    });
+    const fr = content({ words: [ou, ouAccent] });
+    const frCtx: GradeContext = { language: "fr", wordsWithLemma: (text) => fr.lemmaIndex.get(text) ?? [] };
+    expect(grade(buildWordEx(env(fr), ouAccent, "W5a")!, { text: "ou" }, frCtx)).toMatchObject({ result: "wrong", chosenWordId: 3 });
+    // A plain accent slip on a word with no twin is still almost right.
+    const { ex, ctx } = w5a("école");
+    expect(grade(ex, { text: "ecole", gender: "une" }, ctx)).toMatchObject({ result: "near", reason: "accent" });
+  });
 });
 
 describe("conjugation tables (PRD §6.6)", () => {

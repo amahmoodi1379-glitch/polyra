@@ -1,9 +1,9 @@
 import { z } from "zod";
-import { filled, gender, grammaticalNumber, levelCode, mastery, optionalText, pos, register } from "./common";
+import { filled, gender, grammaticalNumber, levelCode, mastery, optionalPersian, optionalText, persian, persianMeaning, pos, register, target } from "./common";
 
 /** One row of the word-list answer (P-C, PRD §14.4). */
 export const wordListItem = z.object({
-  lemma: filled,
+  lemma: target,
   keep: z.boolean(),
   pos: pos.nullish(),
   level: levelCode.nullish(),
@@ -12,26 +12,27 @@ export const wordListItem = z.object({
 });
 export type WordListItem = z.output<typeof wordListItem>;
 
-const collocation = z.object({ text: filled, translation_fa: filled });
+const collocation = z.object({ text: target, translation_fa: persianMeaning });
 
 /** One word record (P-W, PRD §14.2 and §5.1). Language-dependent rules are checked on import. */
 export const wordRecord = z.object({
   code: filled,
-  lemma: filled,
+  lemma: target,
   pos,
   gender: gender.nullish().transform((value) => value ?? null),
   number: grammaticalNumber.nullish().transform((value) => value ?? null),
   plural: optionalText,
-  meaning_fa: filled,
+  meaning_fa: persianMeaning,
   level: levelCode,
   register: register.nullish().transform((value) => value ?? "standard"),
-  concept_fa: filled,
+  // A concept label may name the word to tell senses apart («nous: ما»): it needs Persian, not mostly Persian.
+  concept_fa: persian,
   no_card: z.boolean().nullish().transform((value) => value ?? false),
   homophones: z
     .array(z.string())
     .nullish()
     .transform((list) => (list ?? []).map((item) => item.trim()).filter(Boolean)),
-  note_fa: optionalText,
+  note_fa: optionalPersian,
   mastery: mastery.nullish().transform((value) => value ?? null),
   sense_of: optionalText,
   parts: z
@@ -49,8 +50,8 @@ export type WordRecord = z.output<typeof wordRecord>;
 
 /** One phrase of the phrase-list answer (P-F, PRD §14.4). */
 export const phraseListItem = z.object({
-  lemma: filled,
-  parts: z.array(filled).min(1),
+  lemma: target,
+  parts: z.array(target).min(1),
   level: levelCode,
 });
 export type PhraseListItem = z.output<typeof phraseListItem>;

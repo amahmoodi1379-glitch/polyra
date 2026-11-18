@@ -5,6 +5,7 @@ import { filled, optionalText } from "@/schemas/common";
 import { db } from "@/server/db";
 import type { Tx } from "../../kinds/types";
 import { wordCount } from "../../kinds/targets";
+import { checkWordDistractors } from "../../distractor-check";
 import { blankHoldsWord, checkTarget, sentenceHash, type TargetInput } from "../../kinds/sentence-store";
 import { problem, type Problem } from "../../problems";
 import { topLevel } from "../../sentence-level";
@@ -202,7 +203,7 @@ export const sentenceEditor: Editor<SentenceValues, SentenceContext> = {
       // Targets: the same blank rules as import, on the new text (PRD §13.3).
       const stored = new Map(row.targets.map((target) => [target.id, target]));
       const targetData: { id: number; data: Record<string, unknown> }[] = [];
-      const wordTargets: { index: number; marked: string; wordId: number }[] = [];
+      const wordTargets: { index: number; marked: string; wordId: number; distractors: TargetInput["distractors"]; blanks: number }[] = [];
       values.targets.forEach((edit, index) => {
         const old = stored.get(edit.id);
         if (!old) return;
@@ -221,11 +222,18 @@ export const sentenceEditor: Editor<SentenceValues, SentenceContext> = {
           accepted_full: clean(edit.accepted_full).length > 0 ? clean(edit.accepted_full) : null,
         };
         problems.push(...checkTarget(input, text, `targets[${index}]`));
-        if (old.target_type === "word") wordTargets.push({ index, marked: input.marked_text, wordId: old.target_id });
+        if (old.target_type === "word") wordTargets.push({ index, marked: input.marked_text, wordId: old.target_id, distractors: input.distractors, blanks: old.blanks });
         targetData.push({ id: old.id, data: { marked_text: input.marked_text, accepted: input.accepted, distractors: input.distractors, hint: input.hint, accepted_full: input.accepted_full } });
       });
 
       const vocabulary = await loadVocabulary(tx, language);
+      // A wrong option that means the same as the word is a second right answer (PRD §5.5).
+      for (const { index, marked, wordId, distractors, blanks } of wordTargets) {
+        const word = vocabulary.byId(wordId);
+        if (!word || blanks !== 1 || !distractors.every((item) => typeof item === "string")) continue;
+        const field = `targets[${index}].distractors`;
+        problems.push(...checkWordDistractors({ markedText: marked, distractors: distractors as string[], target: word, words: vocabulary.words, language, field }).synonyms);
+      }
       const mapped = mapForEdit(text, values.tokens, vocabulary);
       if ("rows" in mapped) {
         for (const { index, marked, wordId } of wordTargets) {

@@ -81,7 +81,7 @@ export function playSession(content: Content, learner0: LearnerSnapshot, setting
   let before = newDay(learner0, today);
   let build = buildSession(content, before, settings, now, today, opts);
   // The server writes a build's effects whatever it returns (pace, spread, the word cap).
-  let learner = applyEffects(before, build.effects, today);
+  let learner = applyEffects(before, build.effects, today, now);
   play.check?.({ content, settings, learner, now, today, build: { result: build, opts, before } });
   // «پیش از جلسه متن»: «شروع» builds the text session, «بعداً» a normal one and no question again today (PRD §10.11).
   if (build.kind === "ask_text_session") {
@@ -89,7 +89,7 @@ export function playSession(content: Content, learner0: LearnerSnapshot, setting
     before = answer === "later" ? { ...learner, enrollment: { ...learner.enrollment, textPromptDate: today } } : learner;
     const again = { ...opts, text: answer };
     build = buildSession(content, before, settings, now, today, again);
-    learner = applyEffects(before, build.effects, today);
+    learner = applyEffects(before, build.effects, today, now);
     play.check?.({ content, settings, learner, now, today, build: { result: build, opts: again, before } });
   }
   if (build.kind !== "plan") return { learner, plan: null, results: [], latencies: [], build, left: false };
@@ -159,11 +159,14 @@ function leftInText(learner: LearnerSnapshot, plan: SessionPlan, card: Card, rng
   return { ...learner, texts: [...learner.texts.filter((item) => !(item.textId === info.textId && item.track === info.track)), next] };
 }
 
-/** What a build writes before the session starts (PRD §10.2): pace, spread backlog, the word cap. */
-export function applyEffects(learner: LearnerSnapshot, effects: BuildEffects, today: string): LearnerSnapshot {
+/** What a build writes before the session starts (PRD §10.2): pace, spread backlog, the word cap, the words a text waits for. */
+export function applyEffects(learner: LearnerSnapshot, effects: BuildEffects, today: string, now = new Date()): LearnerSnapshot {
   const deferred = new Map(effects.spread.map((item) => [item.key, item.deferredUntil]));
+  const queued = new Set(learner.queue.map((row) => row.wordId));
+  const added = effects.queueWords.filter((wordId) => !queued.has(wordId)).map((wordId, i) => ({ wordId, source: "key_word" as const, addedAt: new Date(now.getTime() + i).toISOString() }));
   return {
     ...learner,
+    queue: [...learner.queue, ...added],
     enrollment: { ...learner.enrollment, paceMode: effects.paceMode, lastSpreadDate: effects.lastSpreadDate },
     items: learner.items.map((item) => {
       const key = itemKey(item.itemType, item.itemId);

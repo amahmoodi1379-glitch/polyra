@@ -91,6 +91,10 @@ Deploy: Runflare builds `main` (`docs/deploy-runflare.md`). Work on the session 
   digest), `src/instrumentation-client.ts` and `src/lib/report-error.ts` send browser errors to `/api/errors`. Error screens:
   `src/components/error-screen.tsx` from `src/app/{error,global-error}.tsx` and `src/app/admin/error.tsx`. The «خطاها» page
   reads `src/server/errors-list.ts`; `src/server/error-report.ts` builds the text copied for Claude Code.
+- Content checks on import and edit: `src/schemas/common.ts` (`persian`, `persianMeaning`, `target`: a Persian field holds
+  Persian, target-language text has no Persian letter), `src/server/content/distractor-check.ts` (W3b wrong options: a synonym
+  is refused, a grammar cue warned), `src/server/content/lexicon.ts` (gender, plural and level against `data/lexicon` and the
+  frequency rank, warnings only; the files are built by `scripts/data/build-lexicon.ts`).
 - «سلامت محتوا» (PRD §13.11): `src/server/content/health/usable.ts` is the pure usable-sentence count, `sentences.ts`
   loads it per level; its button opens P-S with `PlanOptions.wordIds`.
 - «راهنمای پنل»: `src/app/admin/guide` (texts in `admin.guide` of fa.json, written in the small markup of

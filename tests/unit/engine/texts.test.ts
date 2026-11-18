@@ -23,6 +23,7 @@ import {
   remainingCost,
   stageDone,
   stageRules,
+  textGapWords,
   textLevelUp,
   textProgress,
   trackScore,
@@ -190,21 +191,67 @@ describe("which text comes next (PRD §7.5)", () => {
     expect(newText(tenv(withTexts(kitContent({ words: [] }), [x]), old), "listening", new Set())).toMatchObject({ text: { id: 1 }, borrowed: true, attempt: 1, set: "A" });
   });
 
-  it("known words: 90% to open a track; a started track lowers it to 80% and 70%, then takes the easiest", () => {
-    const words = Array.from({ length: 10 }, (_, i) => word(i + 1, `mot${i + 1}`, `معنی ${i + 1}`));
+  it("known words: a new text needs 95% of its words known, also in a started track (owner, 18 Nov 2026)", () => {
+    const words = Array.from({ length: 20 }, (_, i) => word(i + 1, `mot${i + 1}`, `معنی ${i + 1}`));
     const base = kitContent({ words });
     const sentence = { id: 900, text: "x", translationFa: "x", level: "A1", speak: { text: "x", lang: "fr" as const, url: null }, bank: false, tokens: words.map((item) => ({ kind: "word" as const, wordId: item.id, surface: item.lemma, spans: [[0, 1]] as [number, number][], meaningCtx: null })) };
     const content: Content = { ...withTexts(base, [text(1, { sentenceIds: [900] }), text(2)]), sentences: new Map([...base.sentences, [900, sentence]]) };
     const knownUpTo = (n: number) => (id: number) => id <= n;
-    // Text 2 has no words of its own: it is open; text 1 needs nine known words of ten.
-    expect(newText(tenv(withTexts(content, [content.texts[0]]), [], { known: knownUpTo(9) }), "reading", new Set())?.text.id).toBe(1);
-    expect(newText(tenv(withTexts(content, [content.texts[0]]), [], { known: knownUpTo(8) }), "reading", new Set())).toBeNull();
+    const only = withTexts(content, [content.texts[0]]);
+    // Text 2 has no words of its own: it is open; text 1 needs nineteen known words of twenty.
+    expect(newText(tenv(only, [], { known: knownUpTo(19) }), "reading", new Set())?.text.id).toBe(1);
+    expect(newText(tenv(only, [], { known: knownUpTo(18) }), "reading", new Set())).toBeNull();
+    // A started track does not lower the share any more: the words come first.
     const started = [firstDone(5, "reading", 0.8, 1)];
-    expect(newText(tenv(withTexts(content, [content.texts[0]]), started, { known: knownUpTo(8) }), "reading", new Set())?.text.id).toBe(1);
-    expect(newText(tenv(withTexts(content, [content.texts[0]]), started, { known: knownUpTo(2) }), "reading", new Set())?.text.id).toBe(1);
+    expect(newText(tenv(only, started, { known: knownUpTo(18) }), "reading", new Set())).toBeNull();
+    expect(newText(tenv(only, started, { known: knownUpTo(2) }), "reading", new Set())).toBeNull();
     // Key words count as known.
-    const keyed = { ...content.texts[0], keyWordIds: [9, 10] };
-    expect(newText(tenv(withTexts(content, [keyed]), [], { known: knownUpTo(7) }), "reading", new Set())?.text.id).toBe(1);
+    const keyed = { ...content.texts[0], keyWordIds: [19, 20] };
+    expect(newText(tenv(withTexts(content, [keyed]), [], { known: knownUpTo(18) }), "reading", new Set())?.text.id).toBe(1);
+    // The setting moves the share.
+    expect(newText(tenv(only, [], { known: knownUpTo(18), settings: { ...defaults, "text.known_share": 0.9 } }), "reading", new Set())?.text.id).toBe(1);
+  });
+
+  it("no new text: the unknown words of the closest text are the ones to learn, key words aside, most repeated first", () => {
+    const words = Array.from({ length: 6 }, (_, i) => word(i + 1, `mot${i + 1}`, `معنی ${i + 1}`));
+    const base = kitContent({ words });
+    const tokens = (ids: number[]) => ids.map((id) => ({ kind: "word" as const, wordId: id, surface: `mot${id}`, spans: [[0, 1]] as [number, number][], meaningCtx: null }));
+    const sentence = (id: number, ids: number[]) => ({ id, text: "x", translationFa: "x", level: "A1", speak: { text: "x", lang: "fr" as const, url: null }, bank: false, tokens: tokens(ids) });
+    // Text 1: half known. Text 2 (harder by order): four of six known, word 6 twice.
+    const content: Content = {
+      ...withTexts(base, [text(1, { sentenceIds: [901] }), text(2, { sentenceIds: [902], keyWordIds: [4] })]),
+      sentences: new Map([...base.sentences, [901, sentence(901, [1, 4, 5, 6])], [902, sentence(902, [1, 2, 3, 4, 5, 6, 6])]]),
+    };
+    const known = (id: number) => id <= 3;
+    const env = tenv(content, [], { known });
+    expect(newText(env, "reading", new Set())).toBeNull();
+    // Text 2 is closer (1, 2, 3 known and 4 a key word: 4 of 7) than text 1 (1 of 4).
+    expect(textGapWords(env, "reading")).toEqual([6, 5]);
+    // With a text allowed there is nothing to learn first.
+    expect(textGapWords(tenv(content, [], { known: () => true }), "reading")).toEqual([]);
+  });
+
+  it("no new text in a started track: a session queues those words as key words and may bring them at once", () => {
+    const words = Array.from({ length: 8 }, (_, i) => word(i + 1, `mot${i + 1}`, `معنی ${i + 1}`));
+    const base = kitContent({ words });
+    const tokens = words.map((item) => ({ kind: "word" as const, wordId: item.id, surface: item.lemma, spans: [[0, 1]] as [number, number][], meaningCtx: null }));
+    const content: Content = {
+      ...withTexts(base, [text(1, { sentenceIds: [903] })]),
+      sentences: new Map([...base.sentences, [903, { id: 903, text: "x", translationFa: "x", level: "A1", speak: { text: "x", lang: "fr" as const, url: null }, bank: false, tokens }]]),
+    };
+    // A track not started yet waits for the usual order of new words.
+    expect(buildSession(content, learner(), defaults, NOW, TODAY, opts({ scope: "vocab" })).effects.queueWords).toEqual([]);
+    const fresh = learner({ texts: [firstDone(5, "reading", 0.8, 3)] });
+    const built = buildSession(content, fresh, defaults, NOW, TODAY, opts({ scope: "vocab" }));
+    expect(built.effects.queueWords).toEqual([1, 2, 3, 4, 5, 6, 7, 8]);
+    const plan = planOf(built);
+    const queued = Object.values(plan.items).filter((item) => item.queued);
+    expect(queued.length).toBeGreaterThan(0);
+    // A word already in the queue is not added again.
+    const again = buildSession(content, { ...fresh, queue: [{ wordId: 1, source: "tap", addedAt: NOW.toISOString() }] }, defaults, NOW, TODAY, opts({ scope: "vocab" }));
+    expect(again.effects.queueWords).not.toContain(1);
+    // A grammar session does not look.
+    expect(buildSession(content, fresh, defaults, NOW, TODAY, opts({ scope: "grammar" })).effects.queueWords).toEqual([]);
   });
 
   it("a text of the other level, one a test used, or one already in the session is not new", () => {

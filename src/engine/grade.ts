@@ -83,6 +83,12 @@ function gradeTyped(spec: Extract<AnswerSpec, { kind: "type" }>, answer: { text:
   const match = matchAny(given, accepted, language, spec.sentence);
 
   if (match.result !== "wrong") {
+    // An accent slip that spells another word of the list is that other word, not a slip: zahlen for
+    // zählen, ou for où, côte for côté (owner's decision, DECISIONS.md 18 Nov 2026).
+    if (match.result === "near" && match.reason === "accent") {
+      const other = otherWord(given, ex, ctx);
+      if (other !== null) return graded("wrong", raw, null, PAIR_CODES.has(ex.code) ? other : null);
+    }
     if (spec.gender && answer.gender !== spec.gender.correct) return graded("near", raw, "gender");
     return fromMatch(match, raw);
   }
@@ -93,12 +99,17 @@ function gradeTyped(spec: Extract<AnswerSpec, { kind: "type" }>, answer: { text:
   if (synonym) return answer.retry ? graded("wrong", raw) : { result: "synonym", first: spec.first };
 
   // A typed word that is another word of the list (PRD §9.9, W5a and W6a).
-  let chosen: number | null = null;
-  if (PAIR_CODES.has(ex.code) && ctx.wordsWithLemma) {
-    const target = parseItemKey(ex.item).id;
-    chosen = ctx.wordsWithLemma(given.toLowerCase()).find((id) => id !== target) ?? null;
-  }
-  return graded("wrong", raw, null, chosen);
+  return graded("wrong", raw, null, PAIR_CODES.has(ex.code) ? otherWord(given, ex, ctx) : null);
+}
+
+/** The id of another word of the list whose lemma is exactly what was typed (case aside), if any. */
+function otherWord(given: string, ex: Ex, ctx: GradeContext): number | null {
+  if (!ctx.wordsWithLemma || !ex.item.startsWith("w:")) return null;
+  const target = parseItemKey(ex.item).id;
+  const ids = ctx.wordsWithLemma(given.toLowerCase());
+  // Two senses of one lemma (glace, glace-2) share the lemma: typing it is never "another word".
+  if (ids.includes(target)) return null;
+  return ids[0] ?? null;
 }
 
 function gradeTable(spec: Extract<AnswerSpec, { kind: "table" }>, rows: string[], language: Lang): GradeOutcome {

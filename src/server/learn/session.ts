@@ -149,10 +149,10 @@ export function expiresAt(row: Pick<Session, "created_at" | "last_answer_at">, s
 
 /**
  * What a build writes before the session starts (PRD §10.2, step 1): pace, the spread backlog, the word
- * cap. Going to slow pace leaves a note for the end of the next finished session (PRD §3.11 row 6); back
- * at normal pace the note is no longer true.
+ * cap, the words a text is waiting for. Going to slow pace leaves a note for the end of the next finished
+ * session (PRD §3.11 row 6); back at normal pace the note is no longer true.
  */
-async function writeEffects(tx: Prisma.TransactionClient, userId: number, language: string, effects: BuildEffects, today: string, textLater = false) {
+async function writeEffects(tx: Prisma.TransactionClient, userId: number, language: string, effects: BuildEffects, today: string, now: Date, textLater = false) {
   const notice = effects.becameSlow ? { slow_notice_due: true } : effects.paceMode === "normal" ? { slow_notice_due: false } : {};
   // «بعداً» on «پیش از جلسه متن»: not asked again today (PRD §10.11).
   const later = textLater ? { text_prompt_date: asDate(today) } : {};
@@ -171,6 +171,13 @@ async function writeEffects(tx: Prisma.TransactionClient, userId: number, langua
     for (const [type, ids] of types) {
       await tx.itemState.updateMany({ where: { user_id: userId, item_type: type as "word", item_id: { in: ids } }, data: { deferred_until: new Date(until) } });
     }
+  }
+  // The words a text is waiting for go to the queue first (DECISIONS.md 18 Nov 2026), in the build's order.
+  if (effects.queueWords.length > 0) {
+    await tx.newWordQueue.createMany({
+      data: effects.queueWords.map((wordId, i) => ({ user_id: userId, language, word_id: wordId, source: "key_word" as const, added_at: new Date(now.getTime() + i) })),
+      skipDuplicates: true,
+    });
   }
   await addDaily(
     tx,
@@ -216,7 +223,7 @@ export async function startSession(user: Learner, request: StartRequest, now = n
   if (built.kind === "plan") {
     const stored: StoredPlan = { ...built.plan, start: startInfo(ctx.content, learner, ctx.settings) };
     const row = await db.$transaction(async (tx) => {
-      await writeEffects(tx, user.id, language, built.effects, ctx.today, later);
+      await writeEffects(tx, user.id, language, built.effects, ctx.today, now, later);
       return tx.session.create({
         data: {
           id,
@@ -233,7 +240,7 @@ export async function startSession(user: Learner, request: StartRequest, now = n
     });
     return { kind: "session", bundle: bundleOf(row, ctx, await isFirstSession(user.id, language, row.id)) };
   }
-  await db.$transaction((tx) => writeEffects(tx, user.id, language, built.effects, ctx.today, later));
+  await db.$transaction((tx) => writeEffects(tx, user.id, language, built.effects, ctx.today, now, later));
   if (built.kind === "ask_word_cap") return { kind: "ask_word_cap", learned: built.learned, canMore: built.canMore };
   if (built.kind === "ask_text_session") return { kind: "ask_text_session", minutes: built.minutes, textId: built.textId, track: built.track };
   return { kind: built.kind };

@@ -83,7 +83,10 @@ export function Feedback({
         : verdict.reason === "case" && language === "de" && word?.word.pos === "noun"
           ? t("learn.fb.germanCase")
           : t(`learn.fb.why.${verdict.reason}`)
-      : null;
+      : verdict.result === "wrong" && verdict.chosenWordId !== null && ex.a.kind === "type"
+        ? // What was typed is another word of the list (zahlen for zählen): say so, it is a different meaning, not a slip.
+          tRich("learn.fb.otherWord", { text: <span className="lat">{verdict.raw.split(" · ")[0]}</span> })
+        : null;
 
   return (
     <div className="fb" data-tone={tone}>

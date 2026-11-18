@@ -312,11 +312,11 @@ function runLearner(pattern: Pattern, index: number, content: Content, settings:
             if (count === undefined) possible.set(slot, (count = candidates(env, content, result.card, ex)));
             if (count >= 3) bump(stats.codes, `${def.family}:${def.step}:${ex.code}`);
           }
-          // How much of a new text the learner knew when it came (PRD §7.5 condition 4 and its relaxing).
+          // How much of a new text the learner knew when it came (PRD §7.5 condition 4, `text.known_share`).
           if (result.card.text?.stage === "first" && result.card.text.attempt === 1 && !result.card.text.resume) {
             const text = content.texts.find((item) => item.id === result.card.text!.textId);
             const share = text ? textKnownShare(content, text, env.known) : 1;
-            bump(stats.texts.share, share >= 0.9 ? "≥90%" : share >= 0.7 ? "70–90%" : share >= 0.5 ? "50–70%" : "<50%");
+            bump(stats.texts.share, share >= 0.95 ? "≥95%" : share >= 0.9 ? "90–95%" : share >= 0.7 ? "70–90%" : "<70%");
           }
           if (result.single?.leech) leeched.add(result.card.item);
           if (result.log.kind === "review" && result.log.rating !== null) {
@@ -404,6 +404,7 @@ function marks(all: Map<string, Stats>, buildMs: number, a1Only: { errors: strin
   const pileAfter = median(all.get("absence")?.pileEnd ?? []);
   const pileNever = median(all.get("never-away")?.pileEnd ?? []);
   const violations = sum((s) => [...s.violations.values()].reduce((a, b) => a + b, 0));
+  const lowTexts = sum((s) => (s.texts.share.get("90–95%") ?? 0) + (s.texts.share.get("70–90%") ?? 0) + (s.texts.share.get("<70%") ?? 0));
   const slow = stats.map((s) => s.slowDays.get(0.9)).filter((x) => !!x);
   const slowShare = slow.reduce((a, x) => a + x.slow, 0) / Math.max(1, slow.reduce((a, x) => a + x.of, 0));
   // Code share: among the exposures of one ladder step where at least three codes were possible.
@@ -441,6 +442,7 @@ function marks(all: Map<string, Stats>, buildMs: number, a1Only: { errors: strin
     { name: "build time with 10,000 item states < 300 ms", ok: buildMs < 300, value: `${buildMs.toFixed(0)} ms` },
     { name: "slow-pace share for a = 0.90 daily < 10%", ok: slowShare < 0.1, value: pct(slowShare) },
     { name: "A1-only content: a learner who finished everything gets «nothing left»", ok: a1Only.nothingLeft && a1Only.errors.length === 0, value: a1Only.nothingLeft ? "ok" : "never reached" },
+    { name: "new texts with fewer than 95% known words (DECISIONS.md 18 Nov 2026): zero", ok: lowTexts === 0, value: String(lowTexts) },
     { name: "broken rules (checkInvariants): zero", ok: violations === 0, value: stats.flatMap((s) => [...s.violations].map(([rule, n]) => `rule ${rule}: ${n}`)).join(", ") || "0" },
   ];
 }
@@ -537,7 +539,7 @@ function report(label: string, all: Map<string, Stats>, content: Content) {
       .sort()
       .map(([key, n]) => `${key}×${n}`)
       .join(" ");
-    const shares = ["≥90%", "70–90%", "50–70%", "<50%"].map((band) => `${band} ${s.texts.share.get(band) ?? 0}`).join(", ");
+    const shares = ["≥95%", "90–95%", "70–90%", "<70%"].map((band) => `${band} ${s.texts.share.get(band) ?? 0}`).join(", ");
     console.log(`${"".padEnd(14)} first rounds per learner: listening ${median(s.texts.listening)}, reading ${median(s.texts.reading)} (median) · track levels ${levels} · known words of new texts: ${shares}`);
     if (s.phonics.end.length > 0) console.log(`${"".padEnd(14)} phonics lessons done (median of ${content.phonics.length}): day 30 ${median(s.phonics.day30)}, end ${median(s.phonics.end)}`);
     if (s.samples.size > 0) console.log(`${"".padEnd(14)} placement sample at the end: ${[...s.samples.entries()].sort().map(([key, n]) => `${key} ${n}`).join(", ")}`);

@@ -207,6 +207,19 @@ describe("deleting in «همه محتوا» (owner's choice: any status, with wh
     expect(await everything()).toEqual(before);
   });
 
+  it("puts a deleted word back even when a learner answered it after the deletion, keeping the newer progress", async () => {
+    const learner = await testDb.user.create({ data: { phone: "+989120000078", session_length_min: 15 } });
+    const pain = await word("pain", { status: "published" });
+    await testDb.itemState.create({ data: { user_id: learner.id, language: "fr", item_type: "word", item_id: pain.id, step: 2, fsrs: { due: null } } });
+    await removeItems("words", "fr", [pain.id], ADMIN);
+    const row = await lastLog();
+    // A session built before the deletion still had the word: its answer wrote a new row.
+    await testDb.itemState.create({ data: { user_id: learner.id, language: "fr", item_type: "word", item_id: pain.id, step: 3, fsrs: { due: null } } });
+    expect(await revertChange(row.id, ADMIN)).toEqual({ state: "reverted", notes: [] });
+    expect(await testDb.word.count({ where: { id: pain.id } })).toBe(1);
+    expect(await testDb.itemState.findMany({ where: { user_id: learner.id }, select: { step: true } })).toEqual([{ step: 3 }]);
+  });
+
   it("does not put a deletion back over something made again with the same code", async () => {
     const pain = await word("pain");
     await removeItems("words", "fr", [pain.id], ADMIN);

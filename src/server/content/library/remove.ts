@@ -50,6 +50,21 @@ class Plan {
 }
 
 const idsOf = (rows: { id: number }[]) => rows.map((row) => row.id);
+
+/** Learners' progress rows a deletion takes out (`learnerRows`); put back, a newer row of the learner wins. */
+const LEARNER_TABLES = new Set([
+  "item_state",
+  "notebook_entry",
+  "new_word_queue",
+  "confusion_pair",
+  "sentence_drill_state",
+  "speak_state",
+  "text_state",
+  "dialogue_state",
+  "errorfix_state",
+  "writing_entry",
+  "phonics_state",
+]);
 const unique = (ids: number[]) => [...new Set(ids)];
 
 /** Learners' rows about these items, so nothing points at a deleted item. */
@@ -508,7 +523,8 @@ export async function restoreRemoval(tx: Tx, removedId: number): Promise<Restore
     for (const entry of data.deleted) {
       const table = tables.get(entry.table);
       if (!table || entry.rows.length === 0) continue;
-      await tx.$executeRawUnsafe(rowInsert(table), JSON.stringify(entry.rows));
+      // A learner who answered the item in a session begun before the deletion has a newer row: it stays.
+      await tx.$executeRawUnsafe(`${rowInsert(table)}${LEARNER_TABLES.has(entry.table) ? " ON CONFLICT DO NOTHING" : ""}`, JSON.stringify(entry.rows));
     }
     await tx.$executeRawUnsafe("RELEASE SAVEPOINT restore_removal");
   } catch (error) {

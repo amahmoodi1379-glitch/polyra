@@ -87,6 +87,12 @@ export function zodProblems(error: z.ZodError, prefix = ""): Problem[] {
       case "invalid_union":
         item = problem("badValue", { field, value: shortValue(issue.input) });
         break;
+      case "custom": {
+        // A rule of src/schemas/common.ts names its own problem (Persian or target-language text).
+        const key = issue.params?.problem;
+        item = typeof key === "string" && key in fa.content.problems ? problem(key as ProblemKey, { field, value: shortValue(issue.input) }) : problem("wrongType", { field });
+        break;
+      }
       default:
         item = problem("wrongType", { field });
     }

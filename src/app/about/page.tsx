@@ -14,7 +14,8 @@ const licences = {
 
 /**
  * The open data Polyra is built with (DECISIONS.md, 12 October 2026: frequency lists and the second
- * source for verb tables). CC BY-SA asks for the title, the authors, a link, the licence and what was changed.
+ * source for verb tables; 18 November 2026: the noun lexicons). CC BY-SA asks for the title, the
+ * authors, a link, the licence and what was changed.
  */
 const sources = [
   { id: "lexique", name: "Lexique 3.83", authors: "Boris New, Christophe Pallier, Marc Brysbaert, Ludovic Ferrand", url: "http://www.lexique.org", licence: "CC BY-SA 4.0" },
@@ -31,6 +32,13 @@ const sources = [
     name: "Morphy",
     authors: "Wolfgang Lezius, through german-pos-dict by LanguageTool",
     url: "https://github.com/languagetool-org/german-pos-dict",
+    licence: "CC BY-SA 4.0",
+  },
+  {
+    id: "germanNouns",
+    name: "german-nouns",
+    authors: "gambolputty, from Wiktionary (de.wiktionary.org)",
+    url: "https://github.com/gambolputty/german-nouns",
     licence: "CC BY-SA 4.0",
   },
 ] as const;

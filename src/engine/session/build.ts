@@ -1,7 +1,7 @@
 import { newItemState, PROBATION_STEP, strongestPartner } from "../answer";
 import { buildG0, buildGrammarEx, buildWordEx, type BuildEnv } from "../build";
 import { grammarSampleDue, typoForms, wordProbationStep } from "../placement";
-import { genderButtons, levelIndex, type ConjC, type Content, type Track, type UnitC, type WordC } from "../content";
+import { genderButtons, levelIndex, TRACKS, type ConjC, type Content, type Track, type UnitC, type WordC } from "../content";
 import { buildDrillEx, drillGate, drillKey, drillOrder } from "../drill";
 import type { Ex } from "../ex";
 import { exerciseDef, SHAPE, type TimeKey } from "../exercises";
@@ -38,7 +38,9 @@ import {
   stageRules,
   stagesOf,
   textKey,
+  textGapWords,
   textProgress,
+  trackStarted,
   withinTextTime,
   type TextEnv,
   type TextPick,
@@ -81,6 +83,11 @@ export type BuildEffects = {
   unbuildable: string[];
   /** A text session was built (PRD §10.11): `is_text_session` and today's `text_session_done`. */
   textSession: boolean;
+  /**
+   * Words that keep a track's next text out, added to `new_word_queue` as `key_word` in this order
+   * (`textGapWords`, owner's decision, DECISIONS.md 18 Nov 2026). This build already counts them queued.
+   */
+  queueWords: number[];
 };
 
 export type BuildResult =
@@ -319,7 +326,34 @@ const altOf = (ctx: Ctx, ex: Ex, rebuild: () => Ex | null) => (ex.audio && ctx.a
 
 // ───────────────────────────── the build ─────────────────────────────
 
-export function buildSession(content: Content, learner: LearnerSnapshot, settings: Settings, now: Date, today: string, opts: BuildOptions): BuildResult {
+/** Sessions that look for the words a text is waiting for: those with texts or new words. */
+const GAP_SCOPES = new Set<Scope>(["mixed", "vocab", "listening", "reading"]);
+
+/**
+ * The words that keep each started track's next text out and are not queued yet, the listening track's
+ * first (owner's decision, DECISIONS.md 18 Nov 2026: a text comes only with `text.known_share` known
+ * words). A track not started yet waits for its first text through the usual order of new words, which
+ * the first texts of a level are written from (PRD §7.5), so a beginner's lessons keep their order.
+ */
+function textGap(content: Content, learner: LearnerSnapshot, settings: Settings, now: Date, known: (wordId: number) => boolean): number[] {
+  const tenv: TextEnv = {
+    content,
+    settings,
+    now,
+    known,
+    states: indexTextStates(learner.texts),
+    levelOf: (track) => learner.skills.find((skill) => skill.skill === track)?.level ?? content.levels[0],
+  };
+  const queued = new Set(learner.queue.map((row) => row.wordId));
+  const out: number[] = [];
+  for (const track of TRACKS) {
+    if (!trackStarted(tenv.states, track)) continue;
+    for (const id of textGapWords(tenv, track)) if (!queued.has(id) && !out.includes(id)) out.push(id);
+  }
+  return out;
+}
+
+export function buildSession(content: Content, snapshot: LearnerSnapshot, settings: Settings, now: Date, today: string, opts: BuildOptions): BuildResult {
   const { scope } = opts;
   const lengthMin = scope === "quick" ? num(settings, "quick.minutes") : opts.lengthMin;
   /** The session's time (PRD §10.1); a text left half-way or a text session's text takes its share first (§10.2 steps 0 and 2). */
@@ -327,7 +361,12 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
   let budget = fullBudget;
   /** The shortest exercise: below it nothing more fits. */
   const minCost = Math.min(...TIME_KEYS.map((key) => num(settings, key)));
-  const env = makeEnv(content, learner, settings, seeded(opts.seed, "build"));
+  const env = makeEnv(content, snapshot, settings, seeded(opts.seed, "build"));
+  // The words a text is waiting for join the queue now, so this session may already bring them.
+  const queueWords = GAP_SCOPES.has(scope) ? textGap(content, snapshot, settings, now, env.known) : [];
+  const learner: LearnerSnapshot = queueWords.length
+    ? { ...snapshot, queue: [...snapshot.queue, ...queueWords.map((wordId, i) => ({ wordId, source: "key_word" as const, addedAt: new Date(now.getTime() + i).toISOString() }))] }
+    : snapshot;
   const items = indexItems(learner.items);
   const states = new Map(learner.items.map((item) => [itemKey(item.itemType, item.itemId), item]));
   const active = activeCards(content);
@@ -370,11 +409,11 @@ export function buildSession(content: Content, learner: LearnerSnapshot, setting
       wordsBlocked = true;
       capPromptShown = true;
     } else {
-      const effects = { paceMode: pace.mode, backlog, becameSlow: pace.becameSlow, spread, lastSpreadDate, wordsCapToday, capPromptShown: true, unbuildable: [], textSession: false };
+      const effects = { paceMode: pace.mode, backlog, becameSlow: pace.becameSlow, spread, lastSpreadDate, wordsCapToday, capPromptShown: true, unbuildable: [], textSession: false, queueWords };
       return { kind: "ask_word_cap", learned: learner.today.newWords, canMore: wordsCapToday < hard, effects };
     }
   }
-  const effects: BuildEffects = { paceMode: pace.mode, backlog, becameSlow: pace.becameSlow, spread, lastSpreadDate, wordsCapToday, capPromptShown, unbuildable: [], textSession: false };
+  const effects: BuildEffects = { paceMode: pace.mode, backlog, becameSlow: pace.becameSlow, spread, lastSpreadDate, wordsCapToday, capPromptShown, unbuildable: [], textSession: false, queueWords };
 
   const entries: Entry[] = [];
   const planItems: Record<string, PlanItem> = {};
