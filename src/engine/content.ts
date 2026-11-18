@@ -18,7 +18,8 @@ export type WordC = {
   lemma: string;
   pos: Pos;
   gender: Gender | null;
-  number: "sg" | "pl_only" | null;
+  /** sg_only: a noun with no plural in use (die Milch); it never gets a plural exercise. */
+  number: "sg" | "pl_only" | "sg_only" | null;
   plural: string | null;
   register: "standard" | "familier" | "argot" | "formal";
   conceptId: number | null;

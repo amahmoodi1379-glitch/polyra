@@ -57,6 +57,7 @@ enum Gender {
 enum GrammaticalNumber {
   sg
   pl_only
+  sg_only
 
   @@map("grammatical_number")
 }

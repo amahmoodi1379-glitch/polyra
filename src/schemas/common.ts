@@ -15,7 +15,7 @@ const frenchGenders = ["m", "f", "mf"] as const;
 const germanGenders = ["der", "die", "das"] as const;
 export const gender = z.enum([...frenchGenders, ...germanGenders]);
 
-export const grammaticalNumber = z.enum(["sg", "pl_only"]);
+export const grammaticalNumber = z.enum(["sg", "pl_only", "sg_only"]);
 export const register = z.enum(["standard", "familier", "argot", "formal"]);
 export const mastery = z.enum(["produce", "recognize"]);
 

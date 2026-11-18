@@ -10,9 +10,10 @@ import { repeatedWord } from "../codes";
 import { refreshSentenceLevels } from "../sentence-level";
 import { refreshDifficulty } from "../text-difficulty";
 import { lastIntroOrder, placeAfter } from "../intro-order";
-import { languageInfo, type LanguageCode } from "../languages";
-import { defaultMastery, PRODUCE_LEVELS } from "../mastery";
+import type { LanguageCode } from "../languages";
+import { defaultMastery } from "../mastery";
 import { lexiconFlags } from "../lexicon";
+import { checkWord } from "../word-rules";
 import { problem, zodProblems, type Problem } from "../problems";
 import { staleAudio } from "../library/edit/shared";
 import { emptyRound, type ImportReport } from "../report";
@@ -44,29 +45,6 @@ type Row = {
 };
 
 type Checked = { index: number; label: string; record: unknown; word: WordRecord; problems: Problem[] };
-
-/** Language rules Zod cannot see (PRD §13.3, §14.2). Also fills defaults the PRD implies. */
-export function checkWord(word: Pick<WordRecord, "pos" | "gender" | "number" | "plural" | "level" | "mastery" | "parts">, language: LanguageCode): Problem[] {
-  const problems: Problem[] = [];
-  const genders: readonly string[] = languageInfo[language].genders;
-  if (word.pos === "noun") {
-    if (!word.gender) problems.push(problem("nounNeedsGender", { field: "gender" }));
-    else if (!genders.includes(word.gender)) {
-      problems.push(problem("genderForLanguage", { value: word.gender, allowed: genders.join("، "), field: "gender" }));
-    }
-    word.number ??= "sg";
-    if (language === "de" && word.number === "sg" && !word.plural) problems.push(problem("germanPlural", { field: "plural" }));
-  } else {
-    // Gender and number belong to nouns only; anything else the chatbot sent is dropped.
-    word.gender = null;
-    word.number = null;
-  }
-  if (PRODUCE_LEVELS.has(word.level) && word.mastery === "recognize") {
-    problems.push(problem("masteryLowLevel", { field: "mastery" }));
-  }
-  if (word.pos === "phrase" && (!word.parts || word.parts.length === 0)) problems.push(problem("missing", { field: "parts" }));
-  return problems;
-}
 
 /**
  * P-W (PRD §14.5): full records for the next 50 draft words of one level. Each answer record fills

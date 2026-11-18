@@ -8,7 +8,7 @@ import { db } from "@/server/db";
 import { engineNumber } from "@/server/settings/read";
 import { lastIntroOrder, rearrangeLevel } from "../../intro-order";
 import type { Tx } from "../../kinds/types";
-import { checkWord } from "../../kinds/words";
+import { checkWord } from "../../word-rules";
 import { languageInfo, type LanguageCode } from "../../languages";
 import { problem, type Problem } from "../../problems";
 import { refreshSentenceLevels } from "../../sentence-level";

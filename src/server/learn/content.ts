@@ -117,7 +117,7 @@ export async function loadContent(language: string, audience: Audience, modules:
       lemma: row.lemma,
       pos: row.pos as Pos,
       gender: (row.gender as Gender | null) ?? null,
-      number: row.number === "pl_only" ? "pl_only" : row.number === "sg" ? "sg" : null,
+      number: row.number ?? null,
       plural: row.plural,
       register: row.register,
       conceptId: row.concept_id,

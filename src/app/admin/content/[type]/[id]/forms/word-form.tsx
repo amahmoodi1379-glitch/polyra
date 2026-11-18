@@ -63,7 +63,7 @@ export function WordForm({ context, levels }: { context: WordContext; levels: st
       {pos === "noun" ? (
         <Section title={t("admin.library.words.noun")}>
           <SegmentedField name="gender" options={genders} />
-          <SegmentedField name="number" options={(["sg", "pl_only"] as const).map((value) => ({ value, label: label(`admin.library.options.number.${value}`) }))} />
+          <SegmentedField name="number" options={(["sg", "pl_only", "sg_only"] as const).map((value) => ({ value, label: label(`admin.library.options.number.${value}`) }))} />
           <TextField name="plural" voice="target" nullable />
         </Section>
       ) : null}

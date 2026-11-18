@@ -13,7 +13,7 @@ import { repeatedWord } from "../codes";
 import { refreshSentenceLevels } from "../sentence-level";
 import { refreshDifficulty } from "../text-difficulty";
 import { levelWords, numberLevel } from "../intro-order";
-import { checkWord } from "../kinds/words";
+import { checkWord } from "../word-rules";
 import type { Tx } from "../kinds/types";
 import { languageInfo, levelRank, type LanguageCode } from "../languages";
 import { defaultMastery } from "../mastery";
