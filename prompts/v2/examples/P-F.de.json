@@ -1,0 +1,8 @@
+{
+  "phrases": [
+    { "lemma": "Lust haben", "parts": ["Lust", "haben"], "level": "A2" },
+    { "lemma": "eine Entscheidung treffen", "parts": ["Entscheidung", "treffen"], "level": "A2" },
+    { "lemma": "Bescheid sagen", "parts": ["Bescheid", "sagen"], "level": "A2" }
+  ],
+  "issues": []
+}

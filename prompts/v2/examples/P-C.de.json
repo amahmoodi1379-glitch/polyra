@@ -1,0 +1,8 @@
+{
+  "items": [
+    { "lemma": "Auto", "keep": true, "pos": "noun", "level": "A1", "no_card": false, "reason": null },
+    { "lemma": "im", "keep": true, "pos": "prep", "level": "A1", "no_card": true, "reason": null },
+    { "lemma": "bin", "keep": false, "pos": null, "level": null, "no_card": false, "reason": "شکل صرف‌شده sein" }
+  ],
+  "issues": []
+}

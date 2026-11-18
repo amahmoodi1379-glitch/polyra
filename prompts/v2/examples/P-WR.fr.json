@@ -1,0 +1,20 @@
+{
+  "tasks": [
+    {
+      "level": "B1",
+      "prompt_fa": "برای دوستت ایمیل بنویس و آخر هفته‌ات را تعریف کن.",
+      "min_words": 60,
+      "max_words": 120,
+      "checklist_fa": ["دست‌کم دو فعل در passé composé", "یک جمله با parce que", "سلام و خداحافظی مناسب ایمیل دوستانه", "یک سؤال از دوستت در آخر"],
+      "useful_phrases": [
+        { "text": "Ce week-end, je suis allé(e)...", "translation_fa": "این آخر هفته رفتم..." },
+        { "text": "C'était très agréable.", "translation_fa": "خیلی خوشایند بود." },
+        { "text": "Et toi, qu'est-ce que tu as fait ?", "translation_fa": "تو چه کار کردی؟" },
+        { "text": "Bises", "translation_fa": "می‌بوسمت (پایان نامه دوستانه)" }
+      ],
+      "model_answer": "Salut Léa ! Ce week-end, je suis allée à la campagne chez mes grands-parents. Samedi matin, nous avons marché dans la forêt et l'après-midi, j'ai aidé ma grand-mère dans le jardin. Le soir, nous avons mangé une très bonne soupe. Dimanche, il a plu, alors je suis restée à la maison et j'ai lu un livre parce que j'étais un peu fatiguée. C'était un week-end calme mais très agréable. Et toi, qu'est-ce que tu as fait ? Bises, Sara",
+      "model_answer_fa": "سلام لئا! این آخر هفته به روستا، خانه پدربزرگ و مادربزرگم رفتم. شنبه صبح در جنگل قدم زدیم و بعدازظهر به مادربزرگم در باغ کمک کردم. شب یک سوپ خیلی خوب خوردیم. یکشنبه باران آمد، پس در خانه ماندم و کتاب خواندم چون کمی خسته بودم. آخر هفته آرام ولی خیلی خوشایندی بود. تو چه کار کردی؟ می‌بوسمت، سارا"
+    }
+  ],
+  "issues": []
+}

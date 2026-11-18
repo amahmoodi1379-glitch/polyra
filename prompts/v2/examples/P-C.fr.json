@@ -1,0 +1,8 @@
+{
+  "items": [
+    { "lemma": "voiture", "keep": true, "pos": "noun", "level": "A1", "no_card": false, "reason": null },
+    { "lemma": "au", "keep": true, "pos": "prep", "level": "A1", "no_card": true, "reason": null },
+    { "lemma": "etc", "keep": false, "pos": null, "level": null, "no_card": false, "reason": "اختصار" }
+  ],
+  "issues": []
+}

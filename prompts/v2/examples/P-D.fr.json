@@ -1,0 +1,254 @@
+{
+  "dialogue": {
+    "code": "fr-a1-d001",
+    "level": "A1",
+    "title_fa": "سفارش در کافه",
+    "situation_fa": "در یک کافه هستی. گارسون سفارشت را می‌پرسد.",
+    "turns": [
+      {
+        "line": {
+          "speaker": "B",
+          "text": "Bonjour, vous désirez ?",
+          "tts_text": null,
+          "translation_fa": "سلام، چه میل دارید؟",
+          "tokens": [
+            { "surface": "Bonjour", "kind": "word", "code": "bonjour", "meaning_fa": "سلام" },
+            { "surface": "vous", "kind": "word", "code": "vous", "meaning_fa": "شما" },
+            { "surface": "désirez", "kind": "word", "code": "désirer", "meaning_fa": "میل دارید" }
+          ]
+        },
+        "choices": [
+          {
+            "text": "Un thé, s'il vous plaît.",
+            "tts_text": null,
+            "translation_fa": "یک چای، لطفاً.",
+            "tokens": [
+              { "surface": "Un", "kind": "word", "code": "un", "meaning_fa": "یک" },
+              { "surface": "thé", "kind": "word", "code": "thé", "meaning_fa": "چای" },
+              { "surface": "s'il vous plaît", "kind": "word", "code": "s'il vous plaît", "meaning_fa": "لطفاً" }
+            ]
+          },
+          {
+            "text": "Je suis un thé.",
+            "tts_text": null,
+            "translation_fa": "من یک چای هستم.",
+            "tokens": [
+              { "surface": "Je", "kind": "word", "code": "je", "meaning_fa": "من" },
+              { "surface": "suis", "kind": "word", "code": "être", "meaning_fa": "هستم" },
+              { "surface": "un", "kind": "word", "code": "un", "meaning_fa": "یک" },
+              { "surface": "thé", "kind": "word", "code": "thé", "meaning_fa": "چای" }
+            ]
+          },
+          {
+            "text": "Salut, mec !",
+            "tts_text": null,
+            "translation_fa": "سلام، رفیق!",
+            "tokens": [
+              { "surface": "Salut", "kind": "word", "code": "salut", "meaning_fa": "سلام (خودمانی)" },
+              { "surface": "mec", "kind": "word", "code": "mec", "meaning_fa": "رفیق" }
+            ]
+          }
+        ],
+        "correct": 0,
+        "why_fa": "سفارش مؤدبانه همین است؛ «من یک چای هستم» بی‌معنی است و Salut, mec با گارسون خیلی خودمانی است."
+      },
+      {
+        "line": {
+          "speaker": "B",
+          "text": "Avec du sucre ?",
+          "tts_text": null,
+          "translation_fa": "با شکر؟",
+          "tokens": [
+            { "surface": "Avec", "kind": "word", "code": "avec", "meaning_fa": "با" },
+            { "surface": "du", "kind": "word", "code": "du", "meaning_fa": "(مقداری)" },
+            { "surface": "sucre", "kind": "word", "code": "sucre", "meaning_fa": "شکر" }
+          ]
+        },
+        "choices": [
+          {
+            "text": "Oui, j'ai vingt ans.",
+            "tts_text": null,
+            "translation_fa": "بله، بیست سالم است.",
+            "tokens": [
+              { "surface": "Oui", "kind": "word", "code": "oui", "meaning_fa": "بله" },
+              { "surface": "j'", "kind": "word", "code": "je", "meaning_fa": "من" },
+              { "surface": "ai", "kind": "word", "code": "avoir", "meaning_fa": "دارم" },
+              { "surface": "vingt", "kind": "word", "code": "vingt", "meaning_fa": "بیست" },
+              { "surface": "ans", "kind": "word", "code": "an", "meaning_fa": "سال" }
+            ]
+          },
+          {
+            "text": "Non, merci.",
+            "tts_text": null,
+            "translation_fa": "نه، ممنون.",
+            "tokens": [
+              { "surface": "Non", "kind": "word", "code": "non", "meaning_fa": "نه" },
+              { "surface": "merci", "kind": "word", "code": "merci", "meaning_fa": "ممنون" }
+            ]
+          },
+          {
+            "text": "Non, je suis sucre.",
+            "tts_text": null,
+            "translation_fa": "نه، من شکر هستم.",
+            "tokens": [
+              { "surface": "Non", "kind": "word", "code": "non", "meaning_fa": "نه" },
+              { "surface": "je", "kind": "word", "code": "je", "meaning_fa": "من" },
+              { "surface": "suis", "kind": "word", "code": "être", "meaning_fa": "هستم" },
+              { "surface": "sucre", "kind": "word", "code": "sucre", "meaning_fa": "شکر" }
+            ]
+          }
+        ],
+        "correct": 1,
+        "why_fa": "گارسون درباره شکر پرسیده؛ سن تو بی‌ربط است و «من شکر هستم» بی‌معنی است."
+      },
+      {
+        "line": {
+          "speaker": "B",
+          "text": "Vous mangez quelque chose ?",
+          "tts_text": null,
+          "translation_fa": "چیزی می‌خورید؟",
+          "tokens": [
+            { "surface": "Vous", "kind": "word", "code": "vous", "meaning_fa": "شما" },
+            { "surface": "mangez", "kind": "word", "code": "manger", "meaning_fa": "می‌خورید" },
+            { "surface": "quelque chose", "kind": "word", "code": "quelque chose", "meaning_fa": "چیزی" }
+          ]
+        },
+        "choices": [
+          {
+            "text": "Oui, je mangez un croissant.",
+            "tts_text": null,
+            "translation_fa": "بله، (غلط) یک کروسان می‌خورم.",
+            "tokens": [
+              { "surface": "Oui", "kind": "word", "code": "oui", "meaning_fa": "بله" },
+              { "surface": "je", "kind": "word", "code": "je", "meaning_fa": "من" },
+              { "surface": "mangez", "kind": "word", "code": "manger", "meaning_fa": "می‌خورم (شکل غلط)" },
+              { "surface": "un", "kind": "word", "code": "un", "meaning_fa": "یک" },
+              { "surface": "croissant", "kind": "word", "code": "croissant", "meaning_fa": "کروسان" }
+            ]
+          },
+          {
+            "text": "J'habite à Paris.",
+            "tts_text": null,
+            "translation_fa": "در پاریس زندگی می‌کنم.",
+            "tokens": [
+              { "surface": "J'", "kind": "word", "code": "je", "meaning_fa": "من" },
+              { "surface": "habite", "kind": "word", "code": "habiter", "meaning_fa": "زندگی می‌کنم" },
+              { "surface": "à", "kind": "word", "code": "à", "meaning_fa": "در" },
+              { "surface": "Paris", "kind": "name", "code": null, "meaning_fa": null }
+            ]
+          },
+          {
+            "text": "Oui, un croissant, s'il vous plaît.",
+            "tts_text": null,
+            "translation_fa": "بله، یک کروسان، لطفاً.",
+            "tokens": [
+              { "surface": "Oui", "kind": "word", "code": "oui", "meaning_fa": "بله" },
+              { "surface": "un", "kind": "word", "code": "un", "meaning_fa": "یک" },
+              { "surface": "croissant", "kind": "word", "code": "croissant", "meaning_fa": "کروسان" },
+              { "surface": "s'il vous plaît", "kind": "word", "code": "s'il vous plaît", "meaning_fa": "لطفاً" }
+            ]
+          }
+        ],
+        "correct": 2,
+        "why_fa": "با je شکل درست فعل mange است، نه mangez؛ جای زندگی‌ات هم جواب این سؤال نیست."
+      },
+      {
+        "line": {
+          "speaker": "B",
+          "text": "Voilà. Ça fait 5 euros.",
+          "tts_text": "Voilà. Ça fait cinq euros.",
+          "translation_fa": "بفرمایید. می‌شود پنج یورو.",
+          "tokens": [
+            { "surface": "Voilà", "kind": "word", "code": "voilà", "meaning_fa": "بفرمایید" },
+            { "surface": "Ça", "kind": "word", "code": "ça", "meaning_fa": "این" },
+            { "surface": "fait", "kind": "word", "code": "faire", "meaning_fa": "می‌شود" },
+            { "surface": "5", "kind": "number", "code": null, "meaning_fa": "پنج" },
+            { "surface": "euros", "kind": "word", "code": "euro", "meaning_fa": "یورو" }
+          ]
+        },
+        "choices": [
+          {
+            "text": "Voilà, merci.",
+            "tts_text": null,
+            "translation_fa": "بفرمایید، ممنون.",
+            "tokens": [
+              { "surface": "Voilà", "kind": "word", "code": "voilà", "meaning_fa": "بفرمایید" },
+              { "surface": "merci", "kind": "word", "code": "merci", "meaning_fa": "ممنون" }
+            ]
+          },
+          {
+            "text": "C'est nul !",
+            "tts_text": null,
+            "translation_fa": "مزخرف است!",
+            "tokens": [
+              { "surface": "C'", "kind": "word", "code": "ce", "meaning_fa": "این" },
+              { "surface": "est", "kind": "word", "code": "être", "meaning_fa": "است" },
+              { "surface": "nul", "kind": "word", "code": "nul", "meaning_fa": "مزخرف" }
+            ]
+          },
+          {
+            "text": "Je suis cinq euros.",
+            "tts_text": null,
+            "translation_fa": "من پنج یورو هستم.",
+            "tokens": [
+              { "surface": "Je", "kind": "word", "code": "je", "meaning_fa": "من" },
+              { "surface": "suis", "kind": "word", "code": "être", "meaning_fa": "هستم" },
+              { "surface": "cinq", "kind": "word", "code": "cinq", "meaning_fa": "پنج" },
+              { "surface": "euros", "kind": "word", "code": "euro", "meaning_fa": "یورو" }
+            ]
+          }
+        ],
+        "correct": 0,
+        "why_fa": "پول را می‌دهی و تشکر می‌کنی؛ «مزخرف است» بی‌ادبانه است و «من پنج یورو هستم» بی‌معنی."
+      },
+      {
+        "line": {
+          "speaker": "B",
+          "text": "Merci. Bonne journée !",
+          "tts_text": null,
+          "translation_fa": "ممنون. روز خوبی داشته باشید!",
+          "tokens": [
+            { "surface": "Merci", "kind": "word", "code": "merci", "meaning_fa": "ممنون" },
+            { "surface": "Bonne", "kind": "word", "code": "bon", "meaning_fa": "خوب" },
+            { "surface": "journée", "kind": "word", "code": "journée", "meaning_fa": "روز" }
+          ]
+        },
+        "choices": [
+          {
+            "text": "Bonne nuit, maman !",
+            "tts_text": null,
+            "translation_fa": "شب بخیر، مامان!",
+            "tokens": [
+              { "surface": "Bonne", "kind": "word", "code": "bon", "meaning_fa": "خوب" },
+              { "surface": "nuit", "kind": "word", "code": "nuit", "meaning_fa": "شب" },
+              { "surface": "maman", "kind": "word", "code": "maman", "meaning_fa": "مامان" }
+            ]
+          },
+          {
+            "text": "Bonjour, monsieur !",
+            "tts_text": null,
+            "translation_fa": "سلام، آقا!",
+            "tokens": [
+              { "surface": "Bonjour", "kind": "word", "code": "bonjour", "meaning_fa": "سلام" },
+              { "surface": "monsieur", "kind": "word", "code": "monsieur", "meaning_fa": "آقا" }
+            ]
+          },
+          {
+            "text": "Merci, vous aussi. Au revoir !",
+            "tts_text": null,
+            "translation_fa": "ممنون، شما هم. خداحافظ!",
+            "tokens": [
+              { "surface": "Merci", "kind": "word", "code": "merci", "meaning_fa": "ممنون" },
+              { "surface": "vous", "kind": "word", "code": "vous", "meaning_fa": "شما" },
+              { "surface": "aussi", "kind": "word", "code": "aussi", "meaning_fa": "هم" },
+              { "surface": "Au revoir", "kind": "word", "code": "au revoir", "meaning_fa": "خداحافظ" }
+            ]
+          }
+        ],
+        "correct": 2,
+        "why_fa": "موقع رفتن جواب «روز خوبی داشته باشید» را با «شما هم» و خداحافظی می‌دهی؛ سلام کردن یا «شب بخیر مامان» به این موقعیت نمی‌خورد."
+      }
+    ]
+  },
+  "issues": []
+}

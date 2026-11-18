@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "level": "B1",
+      "marked_text": "Gestern {{habe|bin}} ich nach Berlin gefahren. Ich habe {{meinen|meine}} Schwester besucht.",
+      "translation_fa": "دیروز به برلین رفتم. خواهرم را دیدم.",
+      "unit_codes": ["de-a1-perfekt-sein", "de-a1-possessivartikel"],
+      "errors": [
+        { "why_fa": "fahren فعل حرکتی است و در Perfekt با sein می‌آید، نه haben." },
+        { "why_fa": "Schwester مؤنث است، پس در حالت مفعولی meine می‌شود، نه meinen." }
+      ],
+      "tokens": [
+        { "surface": "Gestern", "kind": "word", "code": "gestern", "meaning_fa": "دیروز" },
+        { "surface": "bin", "kind": "word", "code": "sein", "meaning_fa": "(فعل کمکی گذشته)" },
+        { "surface": "ich", "kind": "word", "code": "ich", "meaning_fa": "من" },
+        { "surface": "nach", "kind": "word", "code": "nach", "meaning_fa": "به" },
+        { "surface": "Berlin", "kind": "name", "code": null, "meaning_fa": null },
+        { "surface": "gefahren", "kind": "word", "code": "fahren", "meaning_fa": "رفتم" },
+        { "surface": "Ich", "kind": "word", "code": "ich", "meaning_fa": "من" },
+        { "surface": "habe", "kind": "word", "code": "haben", "meaning_fa": "(فعل کمکی گذشته)" },
+        { "surface": "meine", "kind": "word", "code": "mein", "meaning_fa": "ـم (مال من)" },
+        { "surface": "Schwester", "kind": "word", "code": "Schwester", "meaning_fa": "خواهر" },
+        { "surface": "besucht", "kind": "word", "code": "besuchen", "meaning_fa": "دیدن کردم" }
+      ]
+    },
+    {
+      "level": "B1",
+      "marked_text": "Ich danke {{dich|dir}} für {{dein|deine}} Hilfe.",
+      "translation_fa": "از کمکت ممنونم.",
+      "unit_codes": ["de-b1-verben-mit-dativ", "de-a1-possessivartikel"],
+      "errors": [
+        { "why_fa": "danken مفعول با حالت Dativ می‌گیرد، پس dir درست است، نه dich." },
+        { "why_fa": "Hilfe مؤنث است، پس deine درست است." }
+      ],
+      "tokens": [
+        { "surface": "Ich", "kind": "word", "code": "ich", "meaning_fa": "من" },
+        { "surface": "danke", "kind": "word", "code": "danken", "meaning_fa": "تشکر می‌کنم" },
+        { "surface": "dir", "kind": "word", "code": "du", "meaning_fa": "از تو" },
+        { "surface": "für", "kind": "word", "code": "für", "meaning_fa": "برای" },
+        { "surface": "deine", "kind": "word", "code": "dein", "meaning_fa": "ـت (مال تو)" },
+        { "surface": "Hilfe", "kind": "word", "code": "Hilfe", "meaning_fa": "کمک" }
+      ]
+    }
+  ],
+  "issues": []
+}

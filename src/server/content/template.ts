@@ -5,7 +5,8 @@ import { join } from "node:path";
  * Prompt templates live in prompts/<version> (PRD §14). Places to fill are written ⟦name⟧, because
  * {{ }} already means "a blank" inside the prompts themselves (PRD §14.1 rule 7).
  */
-export const PROMPT_VERSION = "v1";
+/** v2 (DECISIONS.md, 18 November 2026): the reviewed prompts; v1 stays for the batches made with it. */
+export const PROMPT_VERSION = "v2";
 
 const placeholder = /⟦([a-z_]+)⟧/g;
 

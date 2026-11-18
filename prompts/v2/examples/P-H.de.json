@@ -1,0 +1,26 @@
+{
+  "lesson": {
+    "kind": "contrast",
+    "sound_label": "ü و i",
+    "graphemes": ["ü", "y"],
+    "tip_fa": "ü مثل «ای» فارسی نیست: زبان سر جای «ای» می‌ماند ولی لب‌ها مثل «او» گرد و جلو می‌آیند.",
+    "example_words": [
+      { "text": "Tür", "meaning_fa": "در", "wrong_spellings": ["Tier", "Tur"] },
+      { "text": "für", "meaning_fa": "برای", "wrong_spellings": ["vier", "fur"] },
+      { "text": "müde", "meaning_fa": "خسته", "wrong_spellings": ["miede", "mude"] },
+      { "text": "Küche", "meaning_fa": "آشپزخانه", "wrong_spellings": ["Kiche", "Kuche"] },
+      { "text": "grün", "meaning_fa": "سبز", "wrong_spellings": ["grien", "grun"] },
+      { "text": "über", "meaning_fa": "بالای", "wrong_spellings": ["iber", "uber"] }
+    ],
+    "minimal_pairs": [
+      { "a": "Tür", "b": "Tier", "a_fa": "در", "b_fa": "حیوان" },
+      { "a": "für", "b": "vier", "a_fa": "برای", "b_fa": "چهار" },
+      { "a": "küssen", "b": "Kissen", "a_fa": "بوسیدن", "b_fa": "بالش" },
+      { "a": "spülen", "b": "spielen", "a_fa": "شستن", "b_fa": "بازی کردن" },
+      { "a": "Küste", "b": "Kiste", "a_fa": "ساحل", "b_fa": "جعبه" },
+      { "a": "lügen", "b": "liegen", "a_fa": "دروغ گفتن", "b_fa": "دراز کشیدن" }
+    ],
+    "liaison_sentences": []
+  },
+  "issues": []
+}

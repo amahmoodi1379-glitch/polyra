@@ -35,7 +35,7 @@ export function StartForm({
       {level ? <input type="hidden" name="level" value={level} /> : null}
       <div className="flex items-center gap-2">
         {size ? (
-          <label className="text-ink-2 flex items-center gap-2 text-[13px] font-bold">
+          <label className="text-ink-2 flex shrink-0 items-center gap-2 text-[13px] font-bold whitespace-nowrap">
             {t("admin.create.size")}
             <NumberBox value={count} onChange={setCount} invalid={!valid} label={t("admin.create.size")} className="h-11 w-[4.5rem]" />
             <input type="hidden" name="size" value={valid ? String(count) : ""} />

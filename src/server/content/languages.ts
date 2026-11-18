@@ -1,7 +1,7 @@
 /** What prompts need to know about each language (PRD §14.1, §14.5). */
 export const languageInfo = {
-  fr: { name_fa: "فرانسوی", exam: "DELF/DALF", genders: ["m", "f", "mf"] },
-  de: { name_fa: "آلمانی", exam: "Goethe", genders: ["der", "die", "das"] },
+  fr: { name_fa: "فرانسوی", exam: "آزمون DELF و «Référentiels» رسمی سطح‌های فرانسوی (Niveau A1 تا B2)", genders: ["m", "f", "mf"] },
+  de: { name_fa: "آلمانی", exam: "آزمون‌های Goethe-Zertifikat و فهرست واژگان رسمی‌شان (Wortliste A1، A2 و B1)", genders: ["der", "die", "das"] },
 } as const;
 
 export type LanguageCode = keyof typeof languageInfo;

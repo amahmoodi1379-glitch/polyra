@@ -155,7 +155,7 @@ function Line({ line, language }: { line: ChangeLine; language: string }) {
           <Voiced text={line.label} voice="fa" language={language} />
         </dt>
       ) : (
-        <dt className="sr-only">{line.note}</dt>
+        <dt className="sr-only">{t("admin.log.noteLabel")}</dt>
       )}
       <dd className={cn("text-ink-2 min-w-0 leading-6", !line.label && "sm:col-start-2")}>
         {line.diff ? (

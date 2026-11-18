@@ -1,0 +1,50 @@
+{
+  "items": [
+    {
+      "level": "B1",
+      "marked_text": "Hier, nous {{sommes|avons}} mangé au restaurant avec {{notre|nos}} amis.",
+      "translation_fa": "دیروز با دوستانمان در رستوران غذا خوردیم.",
+      "unit_codes": ["fr-a1-passe-compose-avoir-er", "fr-a1-adjectifs-possessifs"],
+      "errors": [
+        { "why_fa": "manger در گذشته با avoir می‌آید، نه être." },
+        { "why_fa": "amis جمع است، پس صفت ملکی nos است، نه notre." }
+      ],
+      "tokens": [
+        { "surface": "Hier", "kind": "word", "code": "hier", "meaning_fa": "دیروز" },
+        { "surface": "nous", "kind": "word", "code": "nous", "meaning_fa": "ما" },
+        { "surface": "avons", "kind": "word", "code": "avoir", "meaning_fa": "(فعل کمکی گذشته)" },
+        { "surface": "mangé", "kind": "word", "code": "manger", "meaning_fa": "خوردیم" },
+        { "surface": "au", "kind": "word", "code": "au", "meaning_fa": "در" },
+        { "surface": "restaurant", "kind": "word", "code": "restaurant", "meaning_fa": "رستوران" },
+        { "surface": "avec", "kind": "word", "code": "avec", "meaning_fa": "با" },
+        { "surface": "nos", "kind": "word", "code": "notre", "meaning_fa": "ـمان (مال ما)" },
+        { "surface": "amis", "kind": "word", "code": "ami", "meaning_fa": "دوستان" }
+      ]
+    },
+    {
+      "level": "B1",
+      "marked_text": "Ma sœur {{a|est}} arrivée hier soir. Elle est très {{fatigué|fatiguée}} après le voyage.",
+      "translation_fa": "خواهرم دیشب رسید. بعد از سفر خیلی خسته است.",
+      "unit_codes": ["fr-a1-passe-compose-etre", "fr-a1-accord-adjectif"],
+      "errors": [
+        { "why_fa": "arriver در گذشته با être می‌آید، نه avoir." },
+        { "why_fa": "Elle مؤنث است، پس صفت هم مؤنث می‌شود: fatiguée." }
+      ],
+      "tokens": [
+        { "surface": "Ma", "kind": "word", "code": "mon", "meaning_fa": "ـم (مال من)" },
+        { "surface": "sœur", "kind": "word", "code": "sœur", "meaning_fa": "خواهر" },
+        { "surface": "est", "kind": "word", "code": "être", "meaning_fa": "(فعل کمکی گذشته)" },
+        { "surface": "arrivée", "kind": "word", "code": "arriver", "meaning_fa": "رسید" },
+        { "surface": "hier soir", "kind": "word", "code": "hier soir", "meaning_fa": "دیشب" },
+        { "surface": "Elle", "kind": "word", "code": "elle", "meaning_fa": "او" },
+        { "surface": "est", "kind": "word", "code": "être", "meaning_fa": "است" },
+        { "surface": "très", "kind": "word", "code": "très", "meaning_fa": "خیلی" },
+        { "surface": "fatiguée", "kind": "word", "code": "fatigué", "meaning_fa": "خسته" },
+        { "surface": "après", "kind": "word", "code": "après", "meaning_fa": "بعد از" },
+        { "surface": "le", "kind": "word", "code": "le", "meaning_fa": "(حرف تعریف)" },
+        { "surface": "voyage", "kind": "word", "code": "voyage", "meaning_fa": "سفر" }
+      ]
+    }
+  ],
+  "issues": []
+}

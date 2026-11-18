@@ -56,7 +56,7 @@ describe("word list (P-C, PRD §14.5 and §13.9)", () => {
     await frequency("fr", ["être", "voiture", "suis", "maison", "au"]);
     const batch = await batchFor("word-list");
     expect(batch.prompt_text).toContain("voiture\nsuis");
-    expect(batch.prompt_text).toContain("DELF/DALF");
+    expect(batch.prompt_text).toContain("DELF");
     expect(batch.prompt_text).not.toContain("⟦");
     expect(await testDb.frequencyItem.count({ where: { used_in_batch_id: batch.id } })).toBe(5);
 

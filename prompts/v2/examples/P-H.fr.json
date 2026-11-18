@@ -1,0 +1,26 @@
+{
+  "lesson": {
+    "kind": "contrast",
+    "sound_label": "u و ou",
+    "graphemes": ["u", "û"],
+    "tip_fa": "شبیه «او» فارسی نیست: لب‌ها مثل «او» گرد می‌شوند ولی زبان مثل «ای» جلوی دهان می‌ماند. ou همان «او» فارسی است.",
+    "example_words": [
+      { "text": "rue", "meaning_fa": "خیابان", "wrong_spellings": ["roue", "ru"] },
+      { "text": "tu", "meaning_fa": "تو", "wrong_spellings": ["tou", "tue"] },
+      { "text": "salut", "meaning_fa": "سلام", "wrong_spellings": ["salou", "saluts"] },
+      { "text": "bus", "meaning_fa": "اتوبوس", "wrong_spellings": ["bous", "buss"] },
+      { "text": "sucre", "meaning_fa": "شکر", "wrong_spellings": ["soucre", "sucr"] },
+      { "text": "jupe", "meaning_fa": "دامن", "wrong_spellings": ["joupe", "jup"] }
+    ],
+    "minimal_pairs": [
+      { "a": "rue", "b": "roue", "a_fa": "خیابان", "b_fa": "چرخ" },
+      { "a": "vu", "b": "vous", "a_fa": "دیده", "b_fa": "شما" },
+      { "a": "tu", "b": "tout", "a_fa": "تو", "b_fa": "همه" },
+      { "a": "dessus", "b": "dessous", "a_fa": "رو", "b_fa": "زیر" },
+      { "a": "pur", "b": "pour", "a_fa": "خالص", "b_fa": "برای" },
+      { "a": "bu", "b": "bout", "a_fa": "نوشیده", "b_fa": "انتها" }
+    ],
+    "liaison_sentences": []
+  },
+  "issues": []
+}

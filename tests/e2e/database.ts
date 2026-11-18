@@ -83,6 +83,7 @@ export const E2E_ADMINS = {
   errors: "09120000013",
   users: "09120000015",
   review: "09120000017",
+  library: "09120000019",
 } as const;
 
 /** The French frequency list of the browser-test database (prepare-db). */

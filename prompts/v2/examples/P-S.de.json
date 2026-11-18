@@ -1,0 +1,63 @@
+{
+  "sentences": [
+    {
+      "text": "Ich will einen Apfel essen.",
+      "tts_text": null,
+      "translation_fa": "می‌خواهم یک سیب بخورم.",
+      "tokens": [
+        { "surface": "Ich", "kind": "word", "code": "ich", "meaning_fa": "من" },
+        { "surface": "will", "kind": "word", "code": "wollen", "meaning_fa": "می‌خواهم" },
+        { "surface": "einen", "kind": "word", "code": "ein", "meaning_fa": "یک" },
+        { "surface": "Apfel", "kind": "word", "code": "Apfel", "meaning_fa": "سیب" },
+        { "surface": "essen", "kind": "word", "code": "essen", "meaning_fa": "خوردن" }
+      ],
+      "targets": [
+        {
+          "type": "word",
+          "target": "essen",
+          "marked_text": "Ich will einen Apfel {{essen}}.",
+          "blanks": 1,
+          "accepted": ["essen"],
+          "distractors": ["trinken", "schlafen", "sprechen"],
+          "hint": null,
+          "accepted_full": null
+        },
+        {
+          "type": "word",
+          "target": "Apfel",
+          "marked_text": "Ich will einen {{Apfel}} essen.",
+          "blanks": 1,
+          "accepted": ["Apfel"],
+          "distractors": ["Tisch", "Stuhl", "Schuh"],
+          "hint": null,
+          "accepted_full": null
+        }
+      ]
+    },
+    {
+      "text": "Anna steht um 7 Uhr auf.",
+      "tts_text": null,
+      "translation_fa": "آنا ساعت هفت بیدار می‌شود.",
+      "tokens": [
+        { "surface": "Anna", "kind": "name", "code": null, "meaning_fa": null },
+        { "surface": "steht ... auf", "kind": "word", "code": "aufstehen", "meaning_fa": "بیدار می‌شود" },
+        { "surface": "um", "kind": "word", "code": "um", "meaning_fa": "در (ساعتِ)" },
+        { "surface": "7", "kind": "number", "code": null, "meaning_fa": "هفت" },
+        { "surface": "Uhr", "kind": "word", "code": "Uhr", "meaning_fa": "ساعت" }
+      ],
+      "targets": [
+        {
+          "type": "word",
+          "target": "Uhr",
+          "marked_text": "Anna steht um 7 {{Uhr}} auf.",
+          "blanks": 1,
+          "accepted": ["Uhr"],
+          "distractors": ["Tag", "Monat", "Woche"],
+          "hint": null,
+          "accepted_full": null
+        }
+      ]
+    }
+  ],
+  "issues": []
+}
