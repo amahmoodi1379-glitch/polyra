@@ -276,6 +276,9 @@ function removalLines(row: AdminLog): ChangeLine[] | null {
   const before = (row.before ?? {}) as { removed_ids?: number[]; removed_summary?: RemovalNote; deleted_sentence_ids?: number[] };
   const after = (row.after ?? {}) as { restored?: number };
   if (row.action === "revert" && typeof after.restored === "number") return [{ key: "restored", label: "", note: t("admin.log.restored", { count: after.restored }) }];
+  const made = (row.after ?? {}) as { by_hand?: boolean; copied_from?: number };
+  if (row.action === "add" && made.by_hand) return [{ key: "added", label: "", note: t("admin.log.byHand") }];
+  if (row.action === "add" && typeof made.copied_from === "number") return [{ key: "added", label: "", note: t("admin.log.copiedFrom", { id: made.copied_from }) }];
   if (row.action !== "delete") return null;
   if (!before.removed_summary) {
     const dropped = before.deleted_sentence_ids?.length ?? 0;

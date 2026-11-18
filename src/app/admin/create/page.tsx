@@ -3,7 +3,6 @@ import Link from "@/components/admin/link";
 import { ArrowLeft } from "lucide-react";
 import { joinDots } from "@/components/admin/join-dots";
 import { LanguageTabs } from "@/components/admin/language-tabs";
-import { SubmitButton } from "@/components/admin/submit-button";
 import { PageHeader } from "@/components/admin/page-header";
 import { Button } from "@/components/ui/button";
 import { t, type MessageKey } from "@/i18n";
@@ -17,7 +16,9 @@ import type { LevelNext } from "@/server/content/kinds/targets";
 import { contentStatus } from "@/server/content/status";
 import { db } from "@/server/db";
 import { appSetting } from "@/server/settings/read";
-import { startBatch } from "./actions";
+import { batchSizeLimits } from "@/lib/batch-sizes";
+import { CustomWords } from "./custom-words";
+import { StartForm } from "./start-form";
 
 export const metadata: Metadata = { title: t("admin.create.title") };
 
@@ -25,9 +26,16 @@ type Row = {
   slug: KindSlug;
   name: string;
   status: string;
+  /** With `{size}` where the batch's number goes, when the row has `size`. */
   action: string | null;
   level?: string;
+  /** The usual batch size and the most the teacher may ask for (src/lib/batch-sizes.ts). */
+  size?: { value: number; max: number };
 };
+
+const SIZE = "{size}";
+/** The row's size: the usual one, never above what is left or the kind's limit. */
+const sized = (usual: number, left: number, max: number) => ({ value: Math.max(1, Math.min(usual, left, max)), max: Math.max(1, Math.min(max, left)) });
 
 type LevelKind = "dialogues" | "errorfix" | "writing";
 
@@ -52,15 +60,19 @@ function levelRow(slug: LevelKind, next: LevelNext, action: (next: LevelNext & {
   }
 }
 
+/** The size of a level-target row (P-E, P-WR) when it is ready. */
+const levelSize = (next: LevelNext, max: number): Pick<Row, "size"> => (next.state === "ready" ? { size: { value: Math.min(next.size, max), max } } : {});
+
 export default async function CreatePage({ searchParams }: PageProps<"/admin/create">) {
   const admin = await requireAdmin();
   const query = await searchParams;
   const language = pickLanguage(query.lang, admin.admin_language);
   const error = typeof query.error === "string" ? query.error : null;
 
-  const [status, sizes, open] = await Promise.all([
+  const [status, sizes, levels, open] = await Promise.all([
     contentStatus(language),
     appSetting<Record<string, number>>("batch.sizes"),
+    appSetting<string[]>(`levels.${language}`),
     db.importBatch.findMany({
       where: { language, state: { in: ["prompt_made", "pasted", "imported"] } },
       orderBy: { updated_at: "desc" },
@@ -86,9 +98,8 @@ export default async function CreatePage({ searchParams }: PageProps<"/admin/cre
       status: status.frequencyLeft
         ? t("admin.create.kinds.wordList.status", { count: status.frequencyLeft })
         : t("admin.create.nothing.frequency"),
-      action: status.frequencyLeft
-        ? t("admin.create.kinds.wordList.action", { size: Math.min(sizes["P-C"] ?? 200, status.frequencyLeft) })
-        : null,
+      action: status.frequencyLeft ? t("admin.create.kinds.wordList.action", { size: SIZE }) : null,
+      size: status.frequencyLeft ? sized(sizes["P-C"] ?? 200, status.frequencyLeft, batchSizeLimits["word-list"]) : undefined,
     },
     {
       slug: "words",
@@ -98,7 +109,8 @@ export default async function CreatePage({ searchParams }: PageProps<"/admin/cre
         : status.wordCount
           ? t("admin.create.nothing.words")
           : t("admin.create.kinds.words.needsList"),
-      action: info ? t("admin.create.kinds.words.action", { size: Math.min(sizes["P-W"] ?? 50, info.count) }) : null,
+      action: info ? t("admin.create.kinds.words.action", { size: SIZE }) : null,
+      size: info ? sized(sizes["P-W"] ?? 50, info.count, batchSizeLimits.words) : undefined,
       level: info?.level,
     },
     {
@@ -109,7 +121,8 @@ export default async function CreatePage({ searchParams }: PageProps<"/admin/cre
         : status.wordCount
           ? t("admin.create.nothing.sentences")
           : t("admin.create.kinds.sentences.needsWords"),
-      action: short ? t("admin.create.kinds.sentences.action", { size: Math.min(sizes["P-S"] ?? 10, short.count) }) : null,
+      action: short ? t("admin.create.kinds.sentences.action", { size: SIZE }) : null,
+      size: short ? sized(sizes["P-S"] ?? 10, short.count, batchSizeLimits.sentences) : undefined,
       level: short?.level,
     },
     {
@@ -157,10 +170,11 @@ export default async function CreatePage({ searchParams }: PageProps<"/admin/cre
             ? t("admin.create.kinds.conjugation.needsUnits")
             : t("admin.create.nothing.conjugation"),
       action: tables.next
-        ? Math.min(sizes["P-X"] ?? 20, tables.next.count) === 1
+        ? tables.next.count === 1
           ? t("admin.create.kinds.conjugation.actionOne")
-          : t("admin.create.kinds.conjugation.action", { size: Math.min(sizes["P-X"] ?? 20, tables.next.count) })
+          : t("admin.create.kinds.conjugation.action", { size: SIZE })
         : null,
+      size: tables.next && tables.next.count > 1 ? sized(sizes["P-X"] ?? 20, tables.next.count, batchSizeLimits.conjugation) : undefined,
       level: tables.next?.level,
     },
     {
@@ -182,12 +196,8 @@ export default async function CreatePage({ searchParams }: PageProps<"/admin/cre
             : texts.state === "needsWords"
               ? t("admin.create.kinds.texts.needsWords", { level: texts.level, count: texts.count })
               : t("admin.create.nothing.texts"),
-      action:
-        texts.state === "ready"
-          ? texts.size === 1
-            ? t("admin.create.kinds.texts.actionOne")
-            : t("admin.create.kinds.texts.action", { size: texts.size })
-          : null,
+      action: texts.state === "ready" ? t("admin.create.kinds.texts.action", { size: SIZE }) : null,
+      size: texts.state === "ready" ? { value: texts.size, max: batchSizeLimits.texts } : undefined,
       level: texts.state === "ready" ? texts.level : undefined,
     },
     {
@@ -203,8 +213,8 @@ export default async function CreatePage({ searchParams }: PageProps<"/admin/cre
       level: phraseList.state === "ready" ? phraseList.level : undefined,
     },
     levelRow("dialogues", status.dialogues, (next) => t("admin.create.kinds.dialogues.action", { size: next.size })),
-    levelRow("errorfix", status.errorfix, (next) => t("admin.create.kinds.errorfix.action", { size: next.size })),
-    levelRow("writing", status.writing, (next) => t("admin.create.kinds.writing.action", { size: next.size })),
+    { ...levelRow("errorfix", status.errorfix, () => t("admin.create.kinds.errorfix.action", { size: SIZE })), ...levelSize(status.errorfix, batchSizeLimits.errorfix) },
+    { ...levelRow("writing", status.writing, () => t("admin.create.kinds.writing.action", { size: SIZE })), ...levelSize(status.writing, batchSizeLimits.writing) },
   ];
   // One clear next step: the first kind on the main path that has work.
   const primary = rows.find((row) => row.action && row.slug !== "units")?.slug ?? rows.find((row) => row.action)?.slug;
@@ -260,6 +270,7 @@ export default async function CreatePage({ searchParams }: PageProps<"/admin/cre
       ) : null}
 
       <section aria-label={t("admin.create.title")} className="flex flex-col gap-3">
+        <p className="text-ink-3 max-w-[70ch] text-[13.5px] leading-6">{t("admin.create.sizeHint")}</p>
         <ol className="bg-surface rounded-[22px] shadow-[var(--shadow-1)]">
           {rows.map((row) => (
             <li
@@ -271,17 +282,17 @@ export default async function CreatePage({ searchParams }: PageProps<"/admin/cre
                 <p className={cn("text-[14.5px]", row.action ? "text-ink-2" : "text-ink-3")}>{isolateLatin(row.status)}</p>
               </div>
               {row.action ? (
-                <form action={startBatch} className="shrink-0">
-                  <input type="hidden" name="kind" value={row.slug} />
-                  <input type="hidden" name="language" value={language} />
-                  {row.level ? <input type="hidden" name="level" value={row.level} /> : null}
-                  <SubmitButton variant={row.slug === primary ? "default" : "secondary"} className="w-full sm:w-auto">
-                    {row.action}
-                  </SubmitButton>
-                </form>
+                <StartForm slug={row.slug} language={language} level={row.level} label={row.action} primary={row.slug === primary} size={row.size} />
               ) : null}
             </li>
           ))}
+          <li className="border-line flex flex-col gap-2 border-t px-5 py-4 sm:px-6">
+            <div className="flex min-w-0 flex-col gap-0.5">
+              <h3 className="text-ink text-[16px] font-extrabold">{t("admin.create.custom.name")}</h3>
+              <p className="text-ink-2 text-[14.5px]">{t("admin.create.custom.status")}</p>
+            </div>
+            <CustomWords language={language} levels={levels} />
+          </li>
         </ol>
       </section>
     </>

@@ -54,8 +54,8 @@ async function writingCounts(language: string) {
 }
 
 /** The next guided-writing batch (PRD §8b.7: B1 and B2), or what it waits for. */
-export async function nextWriting(language: string, wanted?: string): Promise<LevelNext> {
-  return nextLevel(language, "writing", await writingCounts(language), { wanted, size: await batchSize("P-WR", 5) });
+export async function nextWriting(language: string, wanted?: string, chosen?: number): Promise<LevelNext> {
+  return nextLevel(language, "writing", await writingCounts(language), { wanted, size: await batchSize("P-WR", 5, chosen), exact: chosen !== undefined });
 }
 
 /**
@@ -68,7 +68,7 @@ export const writing: ContentKind = {
   rootKey: "tasks",
 
   async plan(language, options) {
-    const next = await nextWriting(language, options.level);
+    const next = await nextWriting(language, options.level, options.size);
     if (next.state === "done") return { nothing: t("admin.create.nothing.writing") };
     if (next.state === "needsUnits") return { nothing: t("admin.create.kinds.writing.needsUnits", { level: next.level }) };
     if (next.state === "needsWords") return { nothing: t("admin.create.kinds.writing.needsWords", { level: next.level }) };

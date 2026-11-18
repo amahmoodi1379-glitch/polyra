@@ -65,7 +65,7 @@ export const sentences: ContentKind = {
     const goal = await engineNumber("publish.word_goal_targets");
     const levels = await appSetting<string[]>(`levels.${language}`);
     const lengths = await appSetting<Record<string, string>>("prompt.sentence_length");
-    const size = await batchSize("P-S", 10);
+    const size = await batchSize("P-S", 10, options.size);
 
     const chosen = options.wordIds?.length ? options.wordIds : null;
     const candidates = await db.word.findMany({

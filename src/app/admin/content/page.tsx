@@ -9,6 +9,7 @@ import { pickLanguage } from "@/server/content/languages";
 import { listItems, typeCounts, type LibraryFilters, type StatusFilter } from "@/server/content/library/list";
 import { contentStatuses, isLibrarySlug, withoutLevel, type LibrarySlug } from "@/server/content/library/slugs";
 import { appSetting } from "@/server/settings/read";
+import { AddItem } from "./add-item";
 import { FilterBar } from "./filter-bar";
 import { LibraryList } from "./library-list";
 import { libraryHref } from "./links";
@@ -80,6 +81,11 @@ export default async function LibraryPage({ searchParams }: PageProps<"/admin/co
         </nav>
 
         <div className="flex min-w-0 flex-col gap-4">
+          {type === "words" || type === "sentences" ? (
+            <div className="flex justify-end">
+              <AddItem key={`${language}-${type}`} type={type} language={language} levels={levels} />
+            </div>
+          ) : null}
           <FilterBar key={`${language}-${type}`} state={state} levels={withoutLevel.has(type) ? [] : levels} placeholder={t(`admin.library.search.${type}`)} />
           <LibraryList
             key={`${language}-${type}-${filters.page}-${filters.level}-${filters.status}-${filters.incomplete}-${filters.q}`}

@@ -20,6 +20,10 @@ export type PlanOptions = {
   level?: string;
   /** P-S only: make sentences for exactly these words (from «سلامت محتوا», PRD §13.11). */
   wordIds?: number[];
+  /** How many records the teacher asked for instead of the usual batch size (src/lib/batch-sizes.ts). */
+  size?: number;
+  /** P-C only: the teacher's own words instead of the frequency list (with `level`, the level of all). */
+  words?: string[];
 };
 
 /** One part of an answer that is a single object with several lists, like a grammar unit (P-G). */

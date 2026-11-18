@@ -48,3 +48,6 @@ export type StatusAction = (typeof statusActions)[number];
 
 /** Types whose items have no level of their own and are not filtered by it. */
 export const withoutLevel = new Set<LibrarySlug>(["phonics"]);
+
+/** Types «کپی از این مورد» makes a standalone draft of (no sentences shared with the original, no one-per-word key). */
+export const copyableSlugs: LibrarySlug[] = ["words", "units", "transforms", "translations", "errorfix", "writing", "phonics"];

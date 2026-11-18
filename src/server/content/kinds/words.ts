@@ -95,7 +95,7 @@ export const words: ContentKind = {
       levels.find((candidate) => withWork.has(candidate));
     if (!level) return { nothing: t("admin.create.nothing.words") };
 
-    const size = await batchSize("P-W", 50);
+    const size = await batchSize("P-W", 50, options.size);
     const batch = await db.word.findMany({
       where: { ...waiting, level },
       orderBy: [{ intro_order: { sort: "asc", nulls: "last" } }, { id: "asc" }],

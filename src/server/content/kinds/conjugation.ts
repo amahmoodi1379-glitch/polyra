@@ -94,7 +94,7 @@ export const conjugation: ContentKind = {
     const level = (options.level && levels.has(options.level) ? options.level : null) ?? pairs[0]?.level;
     if (!level) return { nothing: t("admin.create.nothing.conjugation") };
 
-    const size = await batchSize("P-X", 20);
+    const size = await batchSize("P-X", 20, options.size);
     const batch = pairs.filter((pair) => pair.level === level).slice(0, size);
     const units = await db.grammarUnit.findMany({
       where: { language, status: { not: "retired" } },

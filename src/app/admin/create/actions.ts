@@ -4,6 +4,8 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { requireAdmin } from "@/server/auth/session";
 import { createBatch, isKindSlug } from "@/server/content/batches";
+import { chosenSize } from "@/lib/batch-sizes";
+import { customWords } from "@/server/content/kinds/word-list";
 import { isLanguage } from "@/server/content/languages";
 import { logError } from "@/server/errors";
 
@@ -17,7 +19,12 @@ export async function startBatch(form: FormData) {
 
   let target: string;
   try {
-    const made = await createBatch({ slug, language, options: { level }, adminId: admin.id });
+    const typed = form.get("words");
+    const options =
+      slug === "word-list" && typeof typed === "string"
+        ? { level, words: customWords(typed) }
+        : { level, size: chosenSize(slug, form.get("size")) };
+    const made = await createBatch({ slug, language, options, adminId: admin.id });
     // A new batch changes the workbench; pages the browser still holds must not show the old one.
     if ("id" in made) revalidatePath("/admin", "layout");
     target = "id" in made ? `/admin/batches/${made.id}` : `/admin/create?lang=${language}`;

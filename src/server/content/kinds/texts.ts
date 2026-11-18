@@ -94,7 +94,7 @@ export type TextsNext =
  * The next P-T batch (PRD §7.5, §7.8, §14.9): the lowest level short of its text target, one band, and
  * as many texts as the band allows. Levels go in order; a level waits for its grammar units and words.
  */
-async function planTexts(language: string, wanted?: string) {
+async function planTexts(language: string, wanted?: string, chosen?: number) {
   const settings = await textSettings(language);
   const { all, codes } = await textsSoFar(language);
   const count = (level: string, band?: number) => all.filter((text) => text.level === level && (band === undefined || text.band === band)).length;
@@ -116,7 +116,8 @@ async function planTexts(language: string, wanted?: string) {
   // A2 has two bands: the one with fewer texts goes next.
   const bandChoices = settings.levelBands[level] ?? [1];
   const band = bandChoices.reduce((best, choice) => (count(level, choice) < count(level, best) ? choice : best), bandChoices[0]);
-  const size = Math.max(1, Math.min(settings.perBatch[String(band)] ?? 1, goal - have, tier ? tier.end - have : Infinity));
+  // The teacher may ask for more than the band's usual batch, never past the first-texts tier (PRD §7.5).
+  const size = Math.max(1, Math.min(chosen ?? settings.perBatch[String(band)] ?? 1, chosen ? Infinity : goal - have, tier ? tier.end - have : Infinity));
   const next: TextsNext = { state: "ready", level, band, size, left: goal - have, goal };
   return { next, settings, all, codes, tier, have };
 }
@@ -144,7 +145,7 @@ export const texts: ContentKind = {
   rootKey: "texts",
 
   async plan(language, options) {
-    const planned = await planTexts(language, options.level);
+    const planned = await planTexts(language, options.level, options.size);
     const { next } = planned;
     if (next.state === "done") return { nothing: t("admin.create.nothing.texts") };
     if (next.state === "needsUnits") return { nothing: t("admin.create.kinds.texts.needsUnits", { level: next.level }) };

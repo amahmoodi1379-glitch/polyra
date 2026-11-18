@@ -24,15 +24,7 @@ const PARTS = ["sentences", "targets", "tables", "questions", "exercises"] as co
  * «حذف» for one item or many (owner's choice, DECISIONS.md): first says exactly what goes with them,
  * then deletes on «حذف کن». Learners' progress on them is named, with «کنار بگذار» as the gentler way.
  */
-export function RemoveDialog({
-  slug,
-  language,
-  selection,
-  open,
-  onClose,
-  onDone,
-  onRetire,
-}: {
+export function RemoveDialog(props: {
   slug: string;
   language: string;
   selection: Selection;
@@ -41,21 +33,41 @@ export function RemoveDialog({
   onDone: (outcome: { deleted: number } | { failed: true }) => void;
   onRetire?: () => void;
 }) {
+  // The body mounts afresh each time the dialog opens, so it always asks again what would go.
+  return (
+    <AlertDialog open={props.open} onOpenChange={(next) => !next && props.onClose()}>
+      <AlertDialogContent>{props.open ? <RemoveBody {...props} /> : null}</AlertDialogContent>
+    </AlertDialog>
+  );
+}
+
+function RemoveBody({
+  slug,
+  language,
+  selection,
+  onClose,
+  onDone,
+  onRetire,
+}: {
+  slug: string;
+  language: string;
+  selection: Selection;
+  onClose: () => void;
+  onDone: (outcome: { deleted: number } | { failed: true }) => void;
+  onRetire?: () => void;
+}) {
   const [state, setState] = useState<State>({ step: "checking" });
   const key = JSON.stringify(selection);
 
   useEffect(() => {
-    if (!open) return;
     let live = true;
-    setState({ step: "checking" });
     void previewDelete(slug, language, JSON.parse(key) as Selection).then((outcome) => {
-      if (!live) return;
-      setState(outcome.state === "failed" ? { step: "failed" } : { step: "ready", summary: outcome.summary });
+      if (live) setState(outcome.state === "failed" ? { step: "failed" } : { step: "ready", summary: outcome.summary });
     });
     return () => {
       live = false;
     };
-  }, [open, slug, language, key]);
+  }, [slug, language, key]);
 
   const remove = async () => {
     if (state.step !== "ready") return;
@@ -69,8 +81,7 @@ export function RemoveDialog({
   const parts = summary ? PARTS.filter((part) => summary[part] > 0) : [];
 
   return (
-    <AlertDialog open={open} onOpenChange={(next) => !next && state.step !== "deleting" && onClose()}>
-      <AlertDialogContent>
+    <>
         <AlertDialogHeader>
           <AlertDialogTitle>{t("admin.library.remove.title")}</AlertDialogTitle>
           <AlertDialogDescription asChild>
@@ -106,7 +117,9 @@ export function RemoveDialog({
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
-          <AlertDialogCancel disabled={state.step === "deleting"}>{t("admin.library.cancel")}</AlertDialogCancel>
+          <AlertDialogCancel disabled={state.step === "deleting"} onClick={onClose}>
+            {t("admin.library.cancel")}
+          </AlertDialogCancel>
           {summary && summary.learners > 0 && onRetire ? (
             <Button
               type="button"
@@ -125,7 +138,6 @@ export function RemoveDialog({
             {t("admin.library.remove.yes")}
           </Button>
         </AlertDialogFooter>
-      </AlertDialogContent>
-    </AlertDialog>
+    </>
   );
 }

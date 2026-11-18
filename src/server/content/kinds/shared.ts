@@ -10,7 +10,8 @@ export const levelProblem = (levels: string[], level: string, field = "level"): 
 
 export const levelOutside = async (language: string, level: string, field = "level") => levelProblem(await appSetting<string[]>(`levels.${language}`), level, field);
 
-export async function batchSize(kind: string, fallback: number) {
+export async function batchSize(kind: string, fallback: number, chosen?: number) {
+  if (chosen !== undefined && Number.isInteger(chosen) && chosen > 0) return chosen;
   const sizes = await appSetting<Record<string, number>>("batch.sizes");
   const size = sizes[kind];
   return typeof size === "number" && size > 0 ? size : fallback;

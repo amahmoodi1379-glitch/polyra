@@ -60,8 +60,8 @@ async function errorfixCounts(language: string) {
 }
 
 /** The next find-the-mistake batch (PRD §8b.7: B1 and B2), or what it waits for. */
-export async function nextErrorfix(language: string, wanted?: string): Promise<LevelNext> {
-  return nextLevel(language, "errorfix", await errorfixCounts(language), { wanted, size: await batchSize("P-E", 5) });
+export async function nextErrorfix(language: string, wanted?: string, chosen?: number): Promise<LevelNext> {
+  return nextLevel(language, "errorfix", await errorfixCounts(language), { wanted, size: await batchSize("P-E", 5, chosen), exact: chosen !== undefined });
 }
 
 /**
@@ -74,7 +74,7 @@ export const errorfix: ContentKind = {
   rootKey: "items",
 
   async plan(language, options) {
-    const next = await nextErrorfix(language, options.level);
+    const next = await nextErrorfix(language, options.level, options.size);
     if (next.state === "done") return { nothing: t("admin.create.nothing.errorfix") };
     if (next.state === "needsUnits") return { nothing: t("admin.create.kinds.errorfix.needsUnits", { level: next.level }) };
     if (next.state === "needsWords") return { nothing: t("admin.create.kinds.errorfix.needsWords", { level: next.level }) };

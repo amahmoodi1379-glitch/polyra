@@ -17,10 +17,10 @@ import { Button } from "@/components/ui/button";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import type { ContentStatus } from "@/generated/prisma/client";
 import { t } from "@/i18n";
-import type { LibrarySlug, StatusAction } from "@/server/content/library/slugs";
+import { copyableSlugs, type LibrarySlug, type StatusAction } from "@/server/content/library/slugs";
 import { reviewHref } from "../../../review/links";
-import { libraryHref } from "../../links";
-import { applyStatus } from "../../actions";
+import { itemHref, libraryHref } from "../../links";
+import { applyStatus, copyItemAction } from "../../actions";
 import { RemoveDialog } from "../../remove-dialog";
 
 /**
@@ -56,6 +56,14 @@ export function ItemActions({
   const [message, setMessage] = useState<string | null>(null);
   const { main, more } = actionsFor(status, suspended);
 
+  const copy = () =>
+    startTransition(async () => {
+      setMessage(null);
+      const outcome = await copyItemAction(slug, id);
+      if (outcome.state === "copied") router.push(itemHref(slug, outcome.id));
+      else setMessage(t("admin.library.add.copyFailed"));
+    });
+
   const run = (action: StatusAction) =>
     startTransition(async () => {
       setMessage(null);
@@ -90,7 +98,12 @@ export function ItemActions({
                 {t(`admin.library.actions.${action}`)}
               </DropdownMenuItem>
             ))}
-            {more.length > 0 ? <DropdownMenuSeparator /> : null}
+            {copyableSlugs.includes(slug) ? (
+              <DropdownMenuItem className="h-10 rounded-[10px] px-3 text-[14px] font-bold" onSelect={copy}>
+                {slug === "words" ? t("admin.library.add.copyWord") : t("admin.library.add.copy")}
+              </DropdownMenuItem>
+            ) : null}
+            <DropdownMenuSeparator />
             {status === "retired" ? null : (
               <DropdownMenuItem className="text-bad focus:text-bad h-10 rounded-[10px] px-3 text-[14px] font-bold" onSelect={() => setConfirm("retire")}>
                 {t("admin.library.actions.retire")}

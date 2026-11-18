@@ -4,6 +4,7 @@ import { revalidatePath } from "next/cache";
 import { requireAdmin } from "@/server/auth/session";
 import { isLanguage } from "@/server/content/languages";
 import { filteredIds, MAX_SELECTION, type LibraryFilters, type StatusFilter } from "@/server/content/library/list";
+import { addSentence, addWord, copyItem, type AddResult, type CopyResult } from "@/server/content/library/create";
 import { previewRemoval, removeItems, type RemovalSummary } from "@/server/content/library/remove";
 import { contentStatuses, isLibrarySlug, statusActions, withoutLevel, type LibrarySlug, type StatusAction } from "@/server/content/library/slugs";
 import { changeStatus, type StatusResult } from "@/server/content/library/status";
@@ -72,6 +73,50 @@ export async function deleteSelected(slug: string, language: string, selection: 
     return result;
   } catch (error) {
     await logError(`library.delete.${slug}`, error, { userId: admin.id });
+    return { state: "failed" };
+  }
+}
+
+export type AddOutcome = AddResult | { state: "failed" };
+
+/** A word or phrase made by hand (owner's choice): a draft, opened next in its edit form. */
+export async function addWordByHand(language: string, values: Record<string, unknown>): Promise<AddOutcome> {
+  const admin = await requireAdmin();
+  if (!isLanguage(language)) return { state: "failed" };
+  try {
+    const result = await addWord(language, values, admin.id);
+    if (result.state === "added") revalidatePath("/admin", "layout");
+    return result;
+  } catch (error) {
+    await logError("library.addWord", error, { userId: admin.id });
+    return { state: "failed" };
+  }
+}
+
+/** A practice sentence made by hand, with an optional blank on one word. */
+export async function addSentenceByHand(language: string, values: Record<string, unknown>): Promise<AddOutcome> {
+  const admin = await requireAdmin();
+  if (!isLanguage(language)) return { state: "failed" };
+  try {
+    const result = await addSentence(language, values, admin.id);
+    if (result.state === "added") revalidatePath("/admin", "layout");
+    return result;
+  } catch (error) {
+    await logError("library.addSentence", error, { userId: admin.id });
+    return { state: "failed" };
+  }
+}
+
+/** «کپی از این مورد»: a new draft with the same content. */
+export async function copyItemAction(slug: string, id: number): Promise<CopyResult | { state: "failed" }> {
+  const admin = await requireAdmin();
+  if (!isLibrarySlug(slug) || !Number.isInteger(id)) return { state: "gone" };
+  try {
+    const result = await copyItem(slug, id, admin.id);
+    if (result.state === "copied") revalidatePath("/admin", "layout");
+    return result;
+  } catch (error) {
+    await logError(`library.copy.${slug}`, error, { userId: admin.id });
     return { state: "failed" };
   }
 }

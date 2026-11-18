@@ -39,7 +39,8 @@ export async function nextLevel(
   language: string,
   field: keyof LevelTargets,
   counts: Map<string, number>,
-  options: { wanted?: string; size: number; firstWords?: (level: string) => number | null },
+  /** `exact`: the teacher chose the size, so it is not cut to what is left of the level's target. */
+  options: { wanted?: string; size: number; exact?: boolean; firstWords?: (level: string) => number | null },
 ): Promise<LevelNext> {
   const [levels, targets] = await Promise.all([
     appSetting<string[]>(`levels.${language}`),
@@ -57,7 +58,7 @@ export async function nextLevel(
 
   const goal = targets[level][field];
   const left = goal - (counts.get(level) ?? 0);
-  return { state: "ready", level, left, goal, size: Math.min(options.size, left) };
+  return { state: "ready", level, left, goal, size: options.exact ? options.size : Math.min(options.size, left) };
 }
 
 /** Grammar units of a level and below, one "unit_code | title | level" line each, in teaching order. */
