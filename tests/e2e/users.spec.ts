@@ -46,7 +46,7 @@ test("a word file is checked first, then imported", async ({ page }, testInfo) =
   await signIn(page, "/admin/transfer?lang=fr", "خروجی و ورود فایل");
 
   const file = ["code,lemma,pos,gender,number,meaning_fa,level,concept_fa", "chaise,chaise,noun,f,sg,صندلی,A1,صندلی", "lune,lune,noun,x,sg,ماه,A1,ماه"].join("\n");
-  await page.locator('input[type="file"]').setInputFiles({ name: "mots.csv", mimeType: "text/csv", buffer: Buffer.from(file) });
+  await page.getByRole("region", { name: "ورود فایل کلمه‌ها" }).locator('input[type="file"]').setInputFiles({ name: "mots.csv", mimeType: "text/csv", buffer: Buffer.from(file) });
   await expect(page.getByText("اگر وارد کنی:")).toBeVisible();
   await expect(page.getByText("۱ کلمه تازه")).toBeVisible();
   await expect(page.getByText("۱ ردیف رد می‌شود")).toBeVisible();

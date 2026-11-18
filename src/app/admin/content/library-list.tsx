@@ -90,8 +90,12 @@ export function LibraryList({
     });
 
   if (page.rows.length === 0) {
+    // After deleting everything the filter showed, the list is empty but the result still has to be said.
     return (
-      <p className="bg-surface text-ink-2 rounded-[22px] px-6 py-10 text-center shadow-[var(--shadow-1)]">{emptyText}</p>
+      <div className="flex flex-col gap-3">
+        {notice ? <NoticePanel notice={notice} language={language} onClose={() => setNotice(null)} /> : null}
+        <p className="bg-surface text-ink-2 rounded-[22px] px-6 py-10 text-center shadow-[var(--shadow-1)]">{emptyText}</p>
+      </div>
     );
   }
 
