@@ -21,14 +21,14 @@ import type { LibrarySlug, StatusAction } from "@/server/content/library/slugs";
 import { reviewHref } from "../../../review/links";
 import { libraryHref } from "../../links";
 import { applyStatus } from "../../actions";
-import { deleteDraft } from "./actions";
+import { RemoveDialog } from "../../remove-dialog";
 
 /**
  * What can be done to an item in its current state (PRD §13.2, §13.7). An item waiting for review
  * is approved on «بازبینی», so its main button opens it there.
  */
 function actionsFor(status: ContentStatus, suspended: boolean): { main: StatusAction | "open" | null; more: StatusAction[] } {
-  if (status === "retired") return { main: null, more: [] };
+  if (status === "retired") return { main: "unretire", more: [] };
   const pause: StatusAction = suspended ? "unsuspend" : "suspend";
   if (status === "published") return { main: null, more: [pause] };
   if (status === "approved") return { main: null, more: ["review", "draft", pause] };
@@ -51,28 +51,17 @@ export function ItemActions({
 }) {
   const router = useRouter();
   const [pending, startTransition] = useTransition();
-  const [confirm, setConfirm] = useState<"retire" | "delete" | null>(null);
+  const [confirm, setConfirm] = useState<"retire" | null>(null);
+  const [removing, setRemoving] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
   const { main, more } = actionsFor(status, suspended);
-  if (status === "retired") return null;
 
   const run = (action: StatusAction) =>
     startTransition(async () => {
       setMessage(null);
-      const outcome = await applyStatus(slug, language, [id], action);
+      const outcome = await applyStatus(slug, language, { ids: [id] }, action);
       if (outcome.state === "failed") setMessage(t("admin.library.result.failed"));
       else if (outcome.refused.length > 0) setMessage(t(`admin.library.refused.${outcome.refused[0].reason}`));
-    });
-
-  const remove = () =>
-    startTransition(async () => {
-      setMessage(null);
-      const outcome = await deleteDraft(slug, id);
-      if (outcome.state === "deleted") {
-        router.replace(libraryHref({ language, type: slug }));
-        return;
-      }
-      setMessage(t(`admin.library.item.deleteResult.${outcome.state}`));
     });
 
   return (
@@ -101,15 +90,15 @@ export function ItemActions({
                 {t(`admin.library.actions.${action}`)}
               </DropdownMenuItem>
             ))}
-            <DropdownMenuSeparator />
-            <DropdownMenuItem className="text-bad focus:text-bad h-10 rounded-[10px] px-3 text-[14px] font-bold" onSelect={() => setConfirm("retire")}>
-              {t("admin.library.actions.retire")}
-            </DropdownMenuItem>
-            {status === "draft" ? (
-              <DropdownMenuItem className="text-bad focus:text-bad h-10 rounded-[10px] px-3 text-[14px] font-bold" onSelect={() => setConfirm("delete")}>
-                {t("admin.library.item.delete")}
+            {more.length > 0 ? <DropdownMenuSeparator /> : null}
+            {status === "retired" ? null : (
+              <DropdownMenuItem className="text-bad focus:text-bad h-10 rounded-[10px] px-3 text-[14px] font-bold" onSelect={() => setConfirm("retire")}>
+                {t("admin.library.actions.retire")}
               </DropdownMenuItem>
-            ) : null}
+            )}
+            <DropdownMenuItem className="text-bad focus:text-bad h-10 rounded-[10px] px-3 text-[14px] font-bold" onSelect={() => setRemoving(true)}>
+              {t("admin.library.item.delete")}
+            </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
@@ -122,10 +111,8 @@ export function ItemActions({
       <AlertDialog open={confirm !== null} onOpenChange={(open) => !open && setConfirm(null)}>
         <AlertDialogContent>
           <AlertDialogHeader>
-            <AlertDialogTitle>{confirm === "delete" ? t("admin.library.item.delete") : t("admin.library.actions.retire")}</AlertDialogTitle>
-            <AlertDialogDescription>
-              {confirm === "delete" ? t("admin.library.item.confirmDelete") : t("admin.library.confirmRetire", { count: 1 })}
-            </AlertDialogDescription>
+            <AlertDialogTitle>{t("admin.library.actions.retire")}</AlertDialogTitle>
+            <AlertDialogDescription>{t("admin.library.confirmRetire", { count: 1 })}</AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
             <AlertDialogCancel>{t("admin.library.cancel")}</AlertDialogCancel>
@@ -133,17 +120,29 @@ export function ItemActions({
               type="button"
               variant="destructive"
               onClick={() => {
-                const what = confirm;
                 setConfirm(null);
-                if (what === "delete") remove();
-                else run("retire");
+                run("retire");
               }}
             >
-              {confirm === "delete" ? t("admin.library.item.confirmDeleteYes") : t("admin.library.confirmRetireYes")}
+              {t("admin.library.confirmRetireYes")}
             </Button>
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
+
+      <RemoveDialog
+        slug={slug}
+        language={language}
+        selection={{ ids: [id] }}
+        open={removing}
+        onClose={() => setRemoving(false)}
+        onRetire={status === "retired" ? undefined : () => run("retire")}
+        onDone={(outcome) => {
+          if ("failed" in outcome) setMessage(t("admin.library.remove.failed"));
+          else if (outcome.deleted > 0) router.replace(libraryHref({ language, type: slug }));
+          else setMessage(t("admin.library.remove.nothing"));
+        }}
+      />
     </div>
   );
 }

@@ -11,6 +11,7 @@ import { refreshDifficulty } from "../text-difficulty";
 import { afterSentenceChange, targetColumns, wordColumns } from "./edit/sentences";
 import { comparable, type StoredQuestion } from "./edit/texts";
 import { logChange, same } from "./log";
+import { restoreRemoval } from "./remove";
 import { childTables, setChildStatus, type ChildTable } from "./status";
 import { entityOf, type LibrarySlug } from "./slugs";
 
@@ -18,10 +19,11 @@ import { entityOf, type LibrarySlug } from "./slugs";
  * «برگردان» (PRD §13.2 «لاگ تغییرها»): puts back what a logged change replaced, as long as nothing
  * changed that item since. "Since" is checked twice: no later log row for the same item, and the item
  * still holds exactly what the change wrote (an import can change a draft without a log row). A revert
- * is itself logged and can be reverted. Deleting a draft is final, as its confirmation says.
+ * is itself logged and can be reverted. A deletion comes back whole from `removed_rows`; deletions logged
+ * before that existed are final.
  */
 
-export type RevertBlock = "final" | "later" | "changed" | "gone" | "invalid";
+export type RevertBlock = "final" | "later" | "changed" | "gone" | "invalid" | "taken";
 export type RevertResult = { state: "reverted"; notes: string[] } | { state: "blocked"; reason: RevertBlock };
 
 type Values = Record<string, unknown>;
@@ -105,8 +107,13 @@ const replacesSentences = (row: Pick<AdminLog, "action" | "before">) =>
   row.action === "batch" && replacedSentences.some((key) => key in ((row.before ?? {}) as Values));
 
 /** Whether a row's kind of change can be put back at all; the full check runs when it is clicked. */
+const removedId = (row: Pick<AdminLog, "before">) => {
+  const id = (row.before as { removed_id?: unknown } | null)?.removed_id;
+  return typeof id === "number" ? id : null;
+};
+
 export const revertible = (row: Pick<AdminLog, "action" | "entity" | "entity_id" | "before">) =>
-  row.action !== "delete" &&
+  (row.action === "delete" ? removedId(row) !== null : true) &&
   row.action !== "audio" &&
   row.before !== null &&
   !replacesSentences(row) &&
@@ -232,6 +239,17 @@ async function revertItem(tx: Tx, row: AdminLog, adminId: number): Promise<Rever
   return { state: "reverted", notes };
 }
 
+/** Puts back a deletion of «همه محتوا» with everything it took (src/server/content/library/remove.ts). */
+async function revertRemoval(tx: Tx, row: AdminLog, adminId: number): Promise<RevertResult> {
+  const result = await restoreRemoval(tx, removedId(row)!);
+  if (result.state === "gone") return { state: "blocked", reason: "gone" };
+  if (result.state === "taken") return { state: "blocked", reason: "taken" };
+  const ids = ((row.before as { removed_ids?: number[] } | null)?.removed_ids ?? [Number(row.entity_id)]).length;
+  // `before` stays empty: a restored deletion is not deleted again from the log.
+  await logChange(tx, adminId, { action: "revert", entity: row.entity, entityId: row.entity_id!, before: null, after: { restored: ids } });
+  return { state: "reverted", notes: [] };
+}
+
 /** Puts back an order (PRD §13.6): only while the list still is exactly what that save made it. */
 async function revertOrder(tx: Tx, row: AdminLog, adminId: number): Promise<RevertResult> {
   const target = orderTarget(row);
@@ -263,6 +281,7 @@ export async function revertChange(logId: number, adminId: number): Promise<Reve
     const later = await tx.adminLog.count({ where: { entity: row.entity, entity_id: row.entity_id, id: { gt: row.id } } });
     if (later > 0) return { state: "blocked" as const, reason: "later" as const };
     if (isSettingRow(row)) return revertSetting(tx, row, adminId);
+    if (row.action === "delete") return revertRemoval(tx, row, adminId);
     return isOrderRow(row) ? revertOrder(tx, row, adminId) : revertItem(tx, row, adminId);
   });
 }

@@ -20,7 +20,11 @@ import { entityOf, type ContentStatusValue, type LibrarySlug } from "./slugs";
 export const PAGE_SIZE = 40;
 
 export type StatusFilter = ContentStatusValue | "suspended" | null;
-export type LibraryFilters = { level: string | null; status: StatusFilter; incomplete: boolean; q: string; page: number };
+/** `size` is only set by `filteredIds`, which takes every row of the filter at once. */
+export type LibraryFilters = { level: string | null; status: StatusFilter; incomplete: boolean; q: string; page: number; size?: number };
+
+/** Most items one action takes at once («همه موردهای این فیلتر»). */
+export const MAX_SELECTION = 5000;
 
 /** "target" text is French or German (set in the serif, left to right); "fa" is Persian. */
 export type Voice = "target" | "fa";
@@ -58,13 +62,13 @@ const byLevel = <T extends { level: string | null }>(a: T, b: T) => levelRank(a.
 
 function page(rows: LibraryRow[], filters: LibraryFilters): LibraryPage {
   const kept = filters.incomplete ? rows.filter((row) => row.missing.length > 0) : rows;
-  return slice(kept, kept.length, filters.page);
+  return slice(kept, kept.length, filters.page, false, filters.size);
 }
 
-function slice(rows: LibraryRow[], total: number, wanted: number, already = false): LibraryPage {
-  const pages = Math.max(1, Math.ceil(total / PAGE_SIZE));
+function slice(rows: LibraryRow[], total: number, wanted: number, already = false, size = PAGE_SIZE): LibraryPage {
+  const pages = Math.max(1, Math.ceil(total / size));
   const current = Math.min(Math.max(1, wanted), pages);
-  return { rows: already ? rows : rows.slice((current - 1) * PAGE_SIZE, current * PAGE_SIZE), total, page: current, pages };
+  return { rows: already ? rows : rows.slice((current - 1) * size, current * size), total, page: current, pages };
 }
 
 /** Candidates and suspects still open, as missing-lines. */
@@ -173,13 +177,14 @@ async function sentences(language: string, filters: LibraryFilters): Promise<Lib
     ...(filters.incomplete ? { words: { some: openRow } } : {}),
   };
   const total = await db.sentence.count({ where });
-  const pages = Math.max(1, Math.ceil(total / PAGE_SIZE));
+  const size = filters.size ?? PAGE_SIZE;
+  const pages = Math.max(1, Math.ceil(total / size));
   const current = Math.min(Math.max(1, filters.page), pages);
   const rows = await db.sentence.findMany({
     where,
     orderBy: { id: "asc" },
-    skip: (current - 1) * PAGE_SIZE,
-    take: PAGE_SIZE,
+    skip: (current - 1) * size,
+    take: size,
     select: { id: true, text: true, translation_fa: true, level: true, status: true, suspended: true },
   });
   const open = await openBySentence(rows.map((row) => row.id));
@@ -199,6 +204,7 @@ async function sentences(language: string, filters: LibraryFilters): Promise<Lib
     total,
     current,
     true,
+    size,
   );
 }
 
@@ -510,6 +516,12 @@ export async function listItems(slug: LibrarySlug, language: string, filters: Li
   const findings = await findingsOf(entityOf[slug] as EntityRef["type"], early.map((row) => row.id));
   for (const row of early) row.qa = findingMark(findings.get(row.id));
   return result;
+}
+
+/** Every id the filter shows, across all its pages (up to MAX_SELECTION), for «همه موردهای این فیلتر». */
+export async function filteredIds(slug: LibrarySlug, language: string, filters: LibraryFilters): Promise<number[]> {
+  const result = await typePage(slug, language, { ...filters, page: 1, size: MAX_SELECTION });
+  return result.rows.map((row) => row.id);
 }
 
 async function typePage(slug: LibrarySlug, language: string, filters: LibraryFilters): Promise<LibraryPage> {

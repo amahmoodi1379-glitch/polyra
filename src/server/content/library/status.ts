@@ -76,9 +76,12 @@ export async function dropUnusedSentences(tx: Tx, language: string, ids: number[
   return dropped;
 }
 
-/** Child rows that go with an item when it is retired: a word's or a unit's targets, a text's questions. */
-async function children(tx: Tx, slug: LibrarySlug, id: number): Promise<Partial<Record<ChildTable, ChildRow[]>>> {
-  const live = { status: { not: "retired" as const } };
+/**
+ * Child rows that go with an item when it is retired: a word's or a unit's targets, a text's questions.
+ * `retired` lists the ones retired with it instead, which come back when the item does.
+ */
+async function children(tx: Tx, slug: LibrarySlug, id: number, retired = false): Promise<Partial<Record<ChildTable, ChildRow[]>>> {
+  const live = retired ? { status: "retired" as const } : { status: { not: "retired" as const } };
   const select = { id: true, status: true } as const;
   switch (slug) {
     case "words":
@@ -131,11 +134,12 @@ export async function moveItem(tx: Tx, slug: LibrarySlug, row: Row, data: Status
     before[key] = row[key];
     after[key] = data[key];
   }
-  if (data.status === "retired") {
-    for (const [table, list] of Object.entries(await children(tx, slug, row.id)) as [ChildTable, ChildRow[]][]) {
+  const back = row.status === "retired" && data.status !== undefined && data.status !== "retired";
+  if (data.status === "retired" || back) {
+    for (const [table, list] of Object.entries(await children(tx, slug, row.id, back)) as [ChildTable, ChildRow[]][]) {
       if (list.length === 0) continue;
       before[table] = list;
-      after[table] = list.map((child) => ({ id: child.id, status: "retired" }));
+      after[table] = list.map((child) => ({ id: child.id, status: back ? "draft" : "retired" }));
       await setChildStatus(tx, table, after[table] as ChildRow[]);
     }
   }
@@ -155,7 +159,8 @@ export async function setStatus(tx: Tx, slug: LibrarySlug, ids: number[], status
  * Send to review, back to draft, suspend, unsuspend or retire some items of one type (PRD §13.2,
  * §13.7). Approving is only done item by item on «بازبینی», publishing in «انتشار» with its checks;
  * a published item can only be suspended or retired here. A sentence inside a text, a dialogue or a
- * unit's examples is not retired on its own. Each change is one `admin_log` row.
+ * unit's examples is not retired on its own. A retired item comes back as a draft, with the targets or
+ * questions retired with it. Each change is one `admin_log` row.
  */
 export async function changeStatus(slug: LibrarySlug, language: string, ids: number[], action: StatusAction, adminId: number | null): Promise<StatusResult> {
   return db.$transaction(async (tx) => {
@@ -171,7 +176,10 @@ export async function changeStatus(slug: LibrarySlug, language: string, ids: num
         if (row.status === "retired") result.refused.push({ id: row.id, reason: "retired" });
         else if (row.suspended !== suspended) data = { suspended };
       } else if (row.status === "retired") {
-        if (action !== "retire") result.refused.push({ id: row.id, reason: "retired" });
+        if (action === "unretire") data = { status: "draft" };
+        else if (action !== "retire") result.refused.push({ id: row.id, reason: "retired" });
+      } else if (action === "unretire") {
+        // Only retired items come back; the rest are left as they are.
       } else if (action === "retire") {
         if (blocked.has(row.id)) result.refused.push({ id: row.id, reason: "sentenceInUse" });
         else data = { status: "retired" };

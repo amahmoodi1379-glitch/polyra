@@ -2,7 +2,6 @@
 
 import { revalidatePath } from "next/cache";
 import { requireAdmin } from "@/server/auth/session";
-import { deleteItem as removeItem, type DeleteResult } from "@/server/content/library/delete";
 import { editors } from "@/server/content/library/edit";
 import { same } from "@/server/content/library/log";
 import { suggestTokens, type TokenEdit } from "@/server/content/library/edit/tokens";
@@ -39,20 +38,6 @@ export async function saveItem(slug: string, id: number, values: Record<string, 
     return { state: "saved", values: (after ?? result).values as Record<string, unknown>, notes: result.notes };
   } catch (error) {
     await logError(`library.save.${slug}`, error, { userId: admin.id });
-    return { state: "failed" };
-  }
-}
-
-/** Deletes a draft for good (PRD §13.7: «حذف واقعی فقط برای draft ممکن است»). */
-export async function deleteDraft(slug: string, id: number): Promise<DeleteResult | { state: "failed" }> {
-  const admin = await requireAdmin();
-  if (!isLibrarySlug(slug) || !Number.isInteger(id)) return { state: "gone" };
-  try {
-    const result = await removeItem(slug, id, admin.id);
-    if (result.state === "deleted") revalidatePath("/admin", "layout");
-    return result;
-  } catch (error) {
-    await logError(`library.delete.${slug}`, error, { userId: admin.id });
     return { state: "failed" };
   }
 }

@@ -89,6 +89,9 @@ async function whereOf(kind: LogKind | null): Promise<Prisma.AdminLogWhereInput>
 
 const arabicScript = /[؀-ۿ]/;
 const voiceOf = (text: string): Voice => (arabicScript.test(text) ? "fa" : "target");
+/** «bonjour و ۲۹ مورد دیگر» for a deletion of many items at once. */
+const withMore = (title: Shown, more: number): Shown =>
+  more > 0 && title ? { text: t("admin.log.andMore", { title: title.text, count: more }), voice: "fa" } : title;
 const shown = (text: string | null | undefined, voice?: Voice): Shown => (text === null || text === undefined || text === "" ? null : { text, voice: voice ?? voiceOf(text) });
 
 /** The title of an item, from the row as it is now or as it was when deleted. */
@@ -263,6 +266,27 @@ function changeLines(row: AdminLog): ChangeLine[] {
   const after = (row.after ?? {}) as Record<string, unknown>;
   const keys = [...new Set([...Object.keys(before), ...Object.keys(after)])].filter((key) => !hidden.has(key));
   return keys.flatMap((key) => fieldLines(key, fieldLabel(key), before[key], after[key]));
+}
+
+type RemovalNote = { sentences?: number; targets?: number; tables?: number; questions?: number; exercises?: number; candidates?: number; learners?: number };
+const removalParts = ["sentences", "targets", "tables", "questions", "exercises", "candidates", "learners"] as const;
+
+/** A deletion of «همه محتوا»: how many items, and what went with them. A restored one says so. */
+function removalLines(row: AdminLog): ChangeLine[] | null {
+  const before = (row.before ?? {}) as { removed_ids?: number[]; removed_summary?: RemovalNote; deleted_sentence_ids?: number[] };
+  const after = (row.after ?? {}) as { restored?: number };
+  if (row.action === "revert" && typeof after.restored === "number") return [{ key: "restored", label: "", note: t("admin.log.restored", { count: after.restored }) }];
+  if (row.action !== "delete") return null;
+  if (!before.removed_summary) {
+    const dropped = before.deleted_sentence_ids?.length ?? 0;
+    return [{ key: "deleted", label: "", note: dropped ? t("admin.log.deletedWithSentences", { count: dropped }) : t("admin.log.deleted") }];
+  }
+  const count = before.removed_ids?.length ?? 1;
+  const summary = before.removed_summary;
+  const parts = removalParts.filter((key) => (summary[key] ?? 0) > 0).map((key) => t(`admin.log.removedParts.${key}`, { count: summary[key]! }));
+  const lines: ChangeLine[] = [{ key: "deleted", label: "", note: count > 1 ? t("admin.log.removedMany", { count }) : t("admin.log.removed") }];
+  if (parts.length) lines.push({ key: "with", label: "", note: t("admin.log.removedWith", { list: parts.join("، ") }) });
+  return lines;
 }
 
 /** An audio row: which recording of the item, and whether it was put in, replaced or taken out. */
@@ -579,7 +603,7 @@ export async function listLog(kind: LogKind | null, page: number): Promise<LogPa
       const item = order ? null : items.get(`${row.entity}:${row.entity_id}`);
       const snapshot = row.action === "delete" ? ((row.before ?? {}) as Record<string, unknown>) : item;
       const slug = slugOfEntity[row.entity];
-      const deletedSentences = ((row.before as { deleted_sentence_ids?: number[] } | null)?.deleted_sentence_ids ?? []).length;
+      const removedCount = ((row.before as { removed_ids?: number[] } | null)?.removed_ids ?? []).length;
       const phone = row.admin_id !== null ? phones.get(row.admin_id) : null;
       return {
         id: row.id,
@@ -595,7 +619,7 @@ export async function listLog(kind: LogKind | null, page: number): Promise<LogPa
               "fa",
             )
           : snapshot
-            ? titleOf(row.entity, snapshot)
+            ? withMore(titleOf(row.entity, snapshot), row.action === "delete" ? removedCount - 1 : 0)
             : shown(t("admin.log.unknownItem", { id: formatNumber(Number(row.entity_id)) }), "fa"),
         href: order
           ? `/admin/order?${new URLSearchParams({ lang: orderLanguage, list, ...(orderLevel ? { level: orderLevel } : {}) })}`
@@ -605,15 +629,14 @@ export async function listLog(kind: LogKind | null, page: number): Promise<LogPa
         language: order ? orderLanguage : ((snapshot?.language as string | undefined) ?? null),
         who: phone ? t("admin.log.by", { who: formatMobileFa(phone) }) : t("admin.log.byUnknown"),
         lines:
-          row.action === "delete"
-            ? [{ key: "deleted", label: "", note: deletedSentences ? t("admin.log.deletedWithSentences", { count: deletedSentences }) : t("admin.log.deleted") }]
-            : row.action === "audio"
+          removalLines(row) ??
+          (row.action === "audio"
               ? audioLines(row)
               : row.action === "resolve"
                 ? resolveLines(row)
                 : order
                 ? orderLines(row, titles)
-                : changeLines(row),
+                : changeLines(row)),
         revert: !revertible(row) ? "no" : latest.has(row.id) ? "ready" : "later",
       };
     }),

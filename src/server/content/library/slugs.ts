@@ -41,8 +41,9 @@ export type ContentStatusValue = (typeof contentStatuses)[number];
 /**
  * What an admin can do to items from the list or the edit page (PRD §13.2, §13.7). Approving is done
  * one item at a time in «بازبینی» (owner decision, DECISIONS.md) and publishing in «انتشار».
+ * `unretire` brings a retired item back as a draft (owner decision, DECISIONS.md).
  */
-export const statusActions = ["review", "draft", "suspend", "unsuspend", "retire"] as const;
+export const statusActions = ["review", "draft", "suspend", "unsuspend", "retire", "unretire"] as const;
 export type StatusAction = (typeof statusActions)[number];
 
 /** Types whose items have no level of their own and are not filtered by it. */

@@ -24,8 +24,9 @@ import { isolateLatin } from "@/lib/bidi";
 import { cn } from "@/lib/utils";
 import type { LibraryPage, LibraryRow } from "@/server/content/library/list";
 import type { LibrarySlug, StatusAction } from "@/server/content/library/slugs";
-import { applyStatus } from "./actions";
+import { applyStatus, type Selection } from "./actions";
 import { itemHref, libraryHref, type LibraryState } from "./links";
+import { RemoveDialog } from "./remove-dialog";
 
 type Notice = { tone: "done" | "failed"; text: string; refused: { title: string; reason: string }[] };
 
@@ -44,24 +45,38 @@ export function LibraryList({
   emptyText: string;
 }) {
   const [selected, setSelected] = useState<Set<number>>(new Set());
+  /** Every item the filter shows, across all pages, not just the ticked ones. */
+  const [wholeList, setWholeList] = useState(false);
   const [notice, setNotice] = useState<Notice | null>(null);
   const [confirmRetire, setConfirmRetire] = useState(false);
+  const [removing, setRemoving] = useState(false);
   const [pending, startTransition] = useTransition();
   const ids = page.rows.map((row) => row.id);
   const allOn = ids.length > 0 && ids.every((id) => selected.has(id));
+  const count = wholeList ? page.total : selected.size;
+  const retiredList = state.status === "retired";
+  const selection: Selection = wholeList
+    ? { filter: { level: state.level ?? null, status: state.status ?? null, incomplete: state.incomplete ?? false, q: state.q ?? "" } }
+    : { ids: [...selected] };
 
-  const toggle = (id: number, on: boolean) =>
+  const toggle = (id: number, on: boolean) => {
+    setWholeList(false);
     setSelected((current) => {
       const next = new Set(current);
       if (on) next.add(id);
       else next.delete(id);
       return next;
     });
+  };
+  const clear = () => {
+    setSelected(new Set());
+    setWholeList(false);
+  };
 
   const run = (action: StatusAction) =>
     startTransition(async () => {
       const titles = new Map(page.rows.map((row) => [row.id, row.title]));
-      const outcome = await applyStatus(type, language, [...selected], action);
+      const outcome = await applyStatus(type, language, selection, action);
       if (outcome.state === "failed") {
         setNotice({ tone: "failed", text: t("admin.library.result.failed"), refused: [] });
         return;
@@ -71,7 +86,7 @@ export function LibraryList({
         text: outcome.changed > 0 ? t("admin.library.result.changed", { count: outcome.changed }) : outcome.refused.length ? "" : t("admin.library.result.nothing"),
         refused: outcome.refused.map((item) => ({ title: titles.get(item.id) ?? "", reason: t(`admin.library.refused.${item.reason}`) })),
       });
-      setSelected(new Set());
+      clear();
     });
 
   if (page.rows.length === 0) {
@@ -85,14 +100,24 @@ export function LibraryList({
       {notice ? <NoticePanel notice={notice} language={language} onClose={() => setNotice(null)} /> : null}
 
       <div className="flex items-center justify-between gap-3 px-1">
-        <label className="text-ink-2 flex min-h-11 cursor-pointer items-center gap-3 px-3 text-[13.5px] font-bold">
-          <Checkbox
-            checked={allOn}
-            onCheckedChange={(on) => setSelected(on === true ? new Set(ids) : new Set())}
-            className="size-[18px] rounded-[6px]"
-          />
-          {t("admin.library.selection.all")}
-        </label>
+        <div className="flex flex-wrap items-center gap-x-1">
+          <label className="text-ink-2 flex min-h-11 cursor-pointer items-center gap-3 px-3 text-[13.5px] font-bold">
+            <Checkbox
+              checked={allOn}
+              onCheckedChange={(on) => {
+                setWholeList(false);
+                setSelected(on === true ? new Set(ids) : new Set());
+              }}
+              className="size-[18px] rounded-[6px]"
+            />
+            {t("admin.library.selection.all")}
+          </label>
+          {allOn && page.total > ids.length ? (
+            <Button type="button" variant="ghost" size="sm" className="text-brand-text" onClick={() => setWholeList(!wholeList)}>
+              {wholeList ? t("admin.library.selection.allFilterOff") : t("admin.library.selection.allFilter", { count: page.total })}
+            </Button>
+          ) : null}
+        </div>
         <span className="text-ink-3 text-[13px] tabular-nums">{t("admin.library.pager.total", { count: page.total })}</span>
       </div>
 
@@ -104,17 +129,25 @@ export function LibraryList({
 
       {page.pages > 1 ? <Pager page={page} state={state} /> : null}
 
-      {selected.size > 0 ? (
+      {count > 0 ? (
         <div
           role="region"
-          aria-label={t("admin.library.selection.count", { count: selected.size })}
+          aria-label={t("admin.library.selection.count", { count })}
           className="bg-glass border-line sticky bottom-4 z-20 flex flex-wrap items-center gap-2 rounded-[20px] border p-2 ps-4 shadow-[var(--shadow-2)] backdrop-blur-md"
         >
-          <span className="text-ink me-auto text-[14px] font-bold tabular-nums">{t("admin.library.selection.count", { count: selected.size })}</span>
+          <span className="text-ink me-auto text-[14px] font-bold tabular-nums">
+            {wholeList ? t("admin.library.selection.allFilterOn", { count }) : t("admin.library.selection.count", { count })}
+          </span>
           {pending ? <LoaderCircle className="text-ink-3 size-5 animate-spin motion-reduce:animate-none" aria-label={t("admin.library.selection.working")} /> : null}
-          <Button type="button" size="sm" disabled={pending} onClick={() => run("review")}>
-            {t("admin.library.actions.review")}
-          </Button>
+          {retiredList ? (
+            <Button type="button" size="sm" disabled={pending} onClick={() => run("unretire")}>
+              {t("admin.library.actions.unretire")}
+            </Button>
+          ) : (
+            <Button type="button" size="sm" disabled={pending} onClick={() => run("review")}>
+              {t("admin.library.actions.review")}
+            </Button>
+          )}
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button type="button" variant="secondary" size="sm" disabled={pending}>
@@ -123,20 +156,27 @@ export function LibraryList({
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="min-w-52 rounded-[16px] p-1.5">
-              {(["draft", "suspend", "unsuspend"] as const).map((action) => (
-                <DropdownMenuItem key={action} className="h-10 rounded-[10px] px-3 text-[14px] font-bold" onSelect={() => run(action)}>
-                  {t(`admin.library.actions.${action}`)}
+              {retiredList
+                ? null
+                : (["draft", "suspend", "unsuspend"] as const).map((action) => (
+                    <DropdownMenuItem key={action} className="h-10 rounded-[10px] px-3 text-[14px] font-bold" onSelect={() => run(action)}>
+                      {t(`admin.library.actions.${action}`)}
+                    </DropdownMenuItem>
+                  ))}
+              {retiredList ? null : (
+                <DropdownMenuItem
+                  className="text-bad focus:text-bad h-10 rounded-[10px] px-3 text-[14px] font-bold"
+                  onSelect={() => setConfirmRetire(true)}
+                >
+                  {t("admin.library.actions.retire")}
                 </DropdownMenuItem>
-              ))}
-              <DropdownMenuItem
-                className="text-bad focus:text-bad h-10 rounded-[10px] px-3 text-[14px] font-bold"
-                onSelect={() => setConfirmRetire(true)}
-              >
-                {t("admin.library.actions.retire")}
+              )}
+              <DropdownMenuItem className="text-bad focus:text-bad h-10 rounded-[10px] px-3 text-[14px] font-bold" onSelect={() => setRemoving(true)}>
+                {t("admin.library.actions.delete")}
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-          <Button type="button" variant="ghost" size="icon-sm" onClick={() => setSelected(new Set())} disabled={pending}>
+          <Button type="button" variant="ghost" size="icon-sm" onClick={clear} disabled={pending}>
             <X strokeWidth={2} aria-hidden />
             <span className="sr-only">{t("admin.library.selection.none")}</span>
           </Button>
@@ -147,7 +187,7 @@ export function LibraryList({
         <AlertDialogContent>
           <AlertDialogHeader>
             <AlertDialogTitle>{t("admin.library.actions.retire")}</AlertDialogTitle>
-            <AlertDialogDescription>{t("admin.library.confirmRetire", { count: selected.size })}</AlertDialogDescription>
+            <AlertDialogDescription>{t("admin.library.confirmRetire", { count })}</AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
             <AlertDialogCancel>{t("admin.library.cancel")}</AlertDialogCancel>
@@ -164,6 +204,23 @@ export function LibraryList({
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
+
+      <RemoveDialog
+        slug={type}
+        language={language}
+        selection={selection}
+        open={removing}
+        onClose={() => setRemoving(false)}
+        onRetire={() => run("retire")}
+        onDone={(outcome) => {
+          setNotice(
+            "failed" in outcome
+              ? { tone: "failed", text: t("admin.library.remove.failed"), refused: [] }
+              : { tone: "done", text: outcome.deleted ? t("admin.library.remove.done", { count: outcome.deleted }) : t("admin.library.remove.nothing"), refused: [] },
+          );
+          clear();
+        }}
+      />
     </div>
   );
 }

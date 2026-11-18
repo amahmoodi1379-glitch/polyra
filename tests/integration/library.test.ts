@@ -2,7 +2,9 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { afterAll, beforeEach, describe, expect, it } from "vitest";
 import { batchReport, createBatch, submitAnswer } from "@/server/content/batches";
-import { deleteItem } from "@/server/content/library/delete";
+import { previewRemoval, removeItems } from "@/server/content/library/remove";
+import { backupClient } from "@/server/backup/file";
+import { backupTables, quote } from "@/server/backup/tables";
 import { tableEditor } from "@/server/content/library/edit/tables";
 import { textEditor } from "@/server/content/library/edit/texts";
 import { unitEditor } from "@/server/content/library/edit/units";
@@ -104,36 +106,144 @@ describe("status changes in the library (PRD §13.2, §13.7)", () => {
   });
 });
 
-describe("deleting a draft (PRD §13.7)", () => {
-  it("deletes only an unused draft, logs what it was, and cannot be put back", async () => {
-    const pain = await word("pain");
-    const approved = await word("eau", { status: "approved" });
-    const part = await word("bon");
-    await word("bon appétit", { pos: "phrase", parts: ["bon"] });
+/** Every row of every table except the log and the kept deletions, to compare before and after «برگردان». */
+async function everything(): Promise<Record<string, string[]>> {
+  const client = await backupClient();
+  try {
+    const out: Record<string, string[]> = {};
+    for (const table of await backupTables(client)) {
+      if (table.name === "admin_log" || table.name === "removed_rows") continue;
+      const rows = await client.query<{ row: string }>(`SELECT t::text AS row FROM ${quote(table.name)} t`);
+      out[table.name] = rows.rows.map((row) => row.row).sort();
+    }
+    return out;
+  } finally {
+    await client.end();
+  }
+}
 
-    expect(await deleteItem("words", approved.id, ADMIN)).toEqual({ state: "notDraft" });
-    expect(await deleteItem("words", part.id, ADMIN)).toEqual({ state: "inUse" });
-    expect(await deleteItem("words", pain.id, ADMIN)).toEqual({ state: "deleted" });
-    expect(await testDb.word.findUnique({ where: { id: pain.id } })).toBeNull();
+async function sentence(text: string, words: { id: number; surface: string; code: string }[], extra: Record<string, unknown> = {}) {
+  const row = await testDb.sentence.create({ data: { language: "fr", text, translation_fa: "ترجمه", text_hash: text, level: "A1", ...extra } });
+  for (const [position, item] of words.entries()) {
+    await testDb.sentenceWord.create({ data: { sentence_id: row.id, position, surface: item.surface, kind: "word", word_id: item.id, code_given: item.code, spans: [[0, 1]] } });
+  }
+  return row;
+}
 
-    const row = await lastLog();
-    expect(row).toEqual(expect.objectContaining({ action: "delete", entity: "word", entity_id: String(pain.id), after: null }));
-    expect(row.before).toEqual(expect.objectContaining({ code: "pain", meaning_fa: "معنی" }));
-    expect(await revertChange(row.id, ADMIN)).toEqual({ state: "blocked", reason: "final" });
-  });
+const target = (sentenceId: number, type: "word" | "grammar", targetId: number) =>
+  testDb.sentenceTarget.create({ data: { language: "fr", sentence_id: sentenceId, target_type: type, target_id: targetId, marked_text: "{{x}}", blanks: 1, accepted: ["x"], distractors: ["a", "b", "c"] } });
 
-  it("keeps a draft word that a short translation or a find-the-mistake text names in its word rows", async () => {
-    const chat = await word("chat");
-    const chien = await word("chien");
+describe("deleting in «همه محتوا» (owner's choice: any status, with what goes with it, and «برگردان»)", () => {
+  it("deletes words in any status with their own sentences, leaves candidates elsewhere, and puts all of it back", async () => {
+    const learner = await testDb.user.create({ data: { phone: "+989120000077", session_length_min: 15 } });
+    const pain = await word("pain", { status: "published" });
+    const eau = await word("eau");
+    const bon = await word("bon", { status: "approved" });
+    const phrase = await word("bon appétit", { pos: "phrase", parts: ["bon", "appétit"] });
+    const own = await sentence("Le pain.", [{ id: pain.id, surface: "pain", code: "pain" }]);
+    const shared = await sentence("Du pain et de l'eau.", [
+      { id: pain.id, surface: "pain", code: "pain" },
+      { id: eau.id, surface: "eau", code: "eau" },
+    ]);
+    await target(own.id, "word", pain.id);
+    await target(shared.id, "word", pain.id);
+    await target(shared.id, "word", eau.id);
     const unit = await testDb.grammarUnit.create({ data: { language: "fr", unit_code: "fr-a1-x", title_fa: "واحد", level: "A1" } });
     await testDb.translateItem.create({
-      data: { language: "fr", grammar_unit_id: unit.id, prompt_fa: "گربه.", accepted_outputs: ["Le chat."], tokens: [{ surface: "chat", kind: "word", word_id: chat.id }] },
+      data: { language: "fr", grammar_unit_id: unit.id, prompt_fa: "نان.", accepted_outputs: ["Le pain."], tokens: [{ surface: "pain", kind: "word", word_id: pain.id, code_given: "pain" }] },
     });
-    await testDb.errorfixItem.create({
-      data: { language: "fr", level: "A1", marked_text: "Le {{chiens}}.", translation_fa: "سگ.", errors: [], tokens: [{ surface: "chien", kind: "word", word_id: chien.id }] },
-    });
-    expect(await deleteItem("words", chat.id, ADMIN)).toEqual({ state: "inUse" });
-    expect(await deleteItem("words", chien.id, ADMIN)).toEqual({ state: "inUse" });
+    await testDb.itemState.create({ data: { user_id: learner.id, language: "fr", item_type: "word", item_id: pain.id, step: 2, fsrs: { due: null } } });
+    const before = await everything();
+
+    const preview = await previewRemoval("words", "fr", [pain.id, bon.id]);
+    expect(preview).toEqual(
+      expect.objectContaining({ items: 2, published: 1, sentences: 1, targets: 2, candidates: 2, learners: 1, refused: [] }),
+    );
+    expect(await everything()).toEqual(before);
+
+    const result = await removeItems("words", "fr", [pain.id, bon.id], ADMIN);
+    expect(result.state).toBe("deleted");
+    expect(await testDb.word.count({ where: { id: { in: [pain.id, bon.id] } } })).toBe(0);
+    expect(await testDb.sentence.findUnique({ where: { id: own.id } })).toBeNull();
+    expect(await testDb.sentenceTarget.count({ where: { sentence_id: shared.id } })).toBe(1);
+    expect(await testDb.sentenceWord.findFirstOrThrow({ where: { sentence_id: shared.id, position: 0 } })).toEqual(
+      expect.objectContaining({ word_id: null, candidate_reason: "missing", code_given: "pain" }),
+    );
+    expect((await testDb.word.findUniqueOrThrow({ where: { id: phrase.id } })).parts).toEqual(["appétit"]);
+    expect(((await testDb.translateItem.findFirstOrThrow()).tokens as { word_id: number | null }[])[0].word_id).toBeNull();
+    expect(await testDb.itemState.count()).toBe(0);
+
+    const row = await lastLog();
+    expect(row).toEqual(expect.objectContaining({ action: "delete", entity: "word", after: null }));
+    expect(row.before).toEqual(expect.objectContaining({ code: "pain", removed_ids: [pain.id, bon.id] }));
+    const log = (await listLog("words", 1)).items[0];
+    expect(log.title?.text).toBe("pain و ۱ مورد دیگر");
+    expect(log.lines.map((line) => line.note)).toEqual(["۲ مورد با هم حذف شد.", expect.stringContaining("۱ جمله")]);
+    expect(log.revert).toBe("ready");
+
+    expect(await revertChange(row.id, ADMIN)).toEqual({ state: "reverted", notes: [] });
+    expect(await everything()).toEqual(before);
+    expect(await testDb.removedRows.count()).toBe(0);
+    expect(await lastLog()).toEqual(expect.objectContaining({ action: "revert", before: null, after: { restored: 2 } }));
+  });
+
+  it("refuses a sentence inside a text, deletes a text with its questions and sentences, and brings it back", async () => {
+    const text = await importedText();
+    const lines = (await testDb.text.findUniqueOrThrow({ where: { id: text.id } })).sentence_ids;
+    const alone = await sentence("Bonjour.", []);
+    const before = await everything();
+
+    const refused = await removeItems("sentences", "fr", [lines[0], alone.id], ADMIN);
+    expect(refused.summary).toEqual(expect.objectContaining({ items: 1, refused: [{ id: lines[0], reason: "inText" }] }));
+    expect(await testDb.sentence.findUnique({ where: { id: alone.id } })).toBeNull();
+    await revertChange((await lastLog()).id, ADMIN);
+    expect(await everything()).toEqual(before);
+
+    const result = await removeItems("texts", "fr", [text.id], ADMIN);
+    expect(result.summary).toEqual(expect.objectContaining({ items: 1, questions: 8, sentences: lines.length }));
+    expect(await testDb.question.count()).toBe(0);
+    expect(await testDb.sentence.count({ where: { id: { in: lines } } })).toBe(0);
+    await revertChange((await lastLog()).id, ADMIN);
+    expect(await everything()).toEqual(before);
+  });
+
+  it("does not put a deletion back over something made again with the same code", async () => {
+    const pain = await word("pain");
+    await removeItems("words", "fr", [pain.id], ADMIN);
+    const row = await lastLog();
+    await word("pain");
+    expect(await revertChange(row.id, ADMIN)).toEqual({ state: "blocked", reason: "taken" });
+    expect(await testDb.removedRows.count()).toBe(1);
+  });
+
+  it("deletes a grammar unit with its exercises, targets, tables and the find-the-mistake items only it explains", async () => {
+    const aller = await word("aller", { pos: "verb" });
+    const unit = await testDb.grammarUnit.create({ data: { language: "fr", unit_code: "fr-a1-aller", title_fa: "aller", level: "A1" } });
+    const other = await testDb.grammarUnit.create({ data: { language: "fr", unit_code: "fr-a1-etre", title_fa: "être", level: "A1" } });
+    await testDb.transformItem.create({ data: { language: "fr", grammar_unit_id: unit.id, instruction_fa: "منفی کن", source_sentence: "Je vais.", accepted_outputs: ["Je ne vais pas."] } as never });
+    await testDb.conjugationTable.create({ data: { language: "fr", word_id: aller.id, tense: "présent", unit_code: "fr-a1-aller", forms: {} } as never });
+    const example = await sentence("Je vais.", [{ id: aller.id, surface: "vais", code: "aller" }]);
+    await target(example.id, "grammar", unit.id);
+    const both = await testDb.errorfixItem.create({ data: { language: "fr", level: "A1", marked_text: "a", translation_fa: "ب", errors: [], tokens: [], unit_codes: ["fr-a1-aller", "fr-a1-etre"] } });
+    const only = await testDb.errorfixItem.create({ data: { language: "fr", level: "A1", marked_text: "c", translation_fa: "د", errors: [], tokens: [], unit_codes: ["fr-a1-aller"] } });
+    const before = await everything();
+
+    const result = await removeItems("units", "fr", [unit.id], ADMIN);
+    expect(result.summary).toEqual(expect.objectContaining({ items: 1, sentences: 1, targets: 1, tables: 1, exercises: 2 }));
+    expect(await testDb.grammarUnit.findMany({ select: { id: true } })).toEqual([{ id: other.id }]);
+    expect((await testDb.errorfixItem.findUniqueOrThrow({ where: { id: both.id } })).unit_codes).toEqual(["fr-a1-etre"]);
+    expect(await testDb.errorfixItem.findUnique({ where: { id: only.id } })).toBeNull();
+    await revertChange((await lastLog()).id, ADMIN);
+    expect(await everything()).toEqual(before);
+  });
+
+  it("brings a retired item back as a draft with the questions retired with it", async () => {
+    const text = await importedText();
+    await changeStatus("texts", "fr", [text.id], "retire", ADMIN);
+    expect(await changeStatus("texts", "fr", [text.id], "unretire", ADMIN)).toEqual({ changed: 1, unchanged: 0, refused: [] });
+    expect((await testDb.text.findUniqueOrThrow({ where: { id: text.id } })).status).toBe("draft");
+    expect(await testDb.question.count({ where: { text_id: text.id, status: "draft" } })).toBe(8);
+    expect(await changeStatus("texts", "fr", [text.id], "unretire", ADMIN)).toEqual({ changed: 0, unchanged: 1, refused: [] });
   });
 });
 

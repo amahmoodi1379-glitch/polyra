@@ -907,6 +907,16 @@ model FrequencyItem {
   @@map("frequency_item")
 }
 
+/// Not in §4 (DECISIONS.md): the rows one deletion in «همه محتوا» took out or changed, so «برگردان» in
+/// the change log puts them back. {deleted: [{table, rows}], updated: [{table, id, before, after}]}.
+model RemovedRows {
+  id         Int      @id @default(autoincrement())
+  created_at DateTime @default(now()) @db.Timestamptz(3)
+  data       Json
+
+  @@map("removed_rows")
+}
+
 model ImportBatch {
   id             Int         @id @default(autoincrement())
   language       String      @db.VarChar(8)

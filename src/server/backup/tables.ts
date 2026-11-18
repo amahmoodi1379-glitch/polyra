@@ -1,4 +1,12 @@
-import type { ClientBase } from "pg";
+/** What the table queries need: a pg client, or a Prisma transaction through `prismaQuerier`. */
+export type Querier = { query<T>(sql: string, params?: unknown[]): Promise<{ rows: T[] }> };
+
+/** Runs the same queries inside a Prisma transaction. */
+export const prismaQuerier = (tx: { $queryRawUnsafe<T = unknown>(sql: string, ...values: unknown[]): Promise<T> }): Querier => ({
+  async query<T>(sql: string, params: unknown[] = []) {
+    return { rows: await tx.$queryRawUnsafe<T[]>(sql, ...params) };
+  },
+});
 
 /**
  * The tables a full backup carries: every table of the app's schema except Prisma's own record of
@@ -36,7 +44,7 @@ export function parentsFirst(tables: string[], links: { child: string; parent: s
 }
 
 /** The tables of the `public` schema in insert order, with their counter columns. */
-export async function backupTables(client: ClientBase): Promise<BackupTable[]> {
+export async function backupTables(client: Querier): Promise<BackupTable[]> {
   const tables = await client.query<{ name: string }>(
     "SELECT tablename AS name FROM pg_tables WHERE schemaname = 'public' AND tablename <> '_prisma_migrations'",
   );
@@ -89,7 +97,7 @@ export function rowInsert(table: BackupTable): string {
 }
 
 /** The migrations this database has fully applied, in order: two databases with the same list have the same tables. */
-export async function appliedMigrations(client: ClientBase): Promise<string[]> {
+export async function appliedMigrations(client: Querier): Promise<string[]> {
   const rows = await client.query<{ migration_name: string }>(
     `SELECT migration_name FROM _prisma_migrations
       WHERE finished_at IS NOT NULL AND rolled_back_at IS NULL
