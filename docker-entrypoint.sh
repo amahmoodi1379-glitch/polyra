@@ -11,5 +11,10 @@ if [ "${DEMO_CONTENT:-}" = "fr" ]; then
 elif [ "${DEMO_CONTENT:-}" = "remove" ]; then
   node node_modules/tsx/dist/cli.mjs scripts/demo.ts remove || echo "The demo was not removed."
 fi
+# The content packs (content/<language>/, written by Claude) load in the background while the app starts:
+# only what is new since the last start, approved and published when ready. CONTENT_PACKS=off skips it.
+if [ "${CONTENT_PACKS:-on}" != "off" ]; then
+  (node node_modules/tsx/dist/cli.mjs scripts/content/load.ts || echo "The content packs were not loaded.") &
+fi
 # exec: Next.js becomes the main process and shuts down cleanly when the host stops it.
 exec node node_modules/next/dist/bin/next start --port "${PORT:-3000}"

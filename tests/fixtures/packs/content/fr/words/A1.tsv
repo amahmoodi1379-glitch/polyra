@@ -1,0 +1,41 @@
+lemma	pos	gender	plural	meaning_fa	concept_fa	topic
+je	pron			من	من	function
+être	verb			بودن	بودن	function
+le	det			حرف تعریف معین	حرف تعریف معین	function	no_card:1
+un	det			یک (حرف تعریف نامعین)	حرف تعریف نامعین	function	no_card:1
+de	prep			از	از	function	no_card:1
+et	conj			و	و	function	no_card:1
+à	prep			به، در	به	function	no_card:1
+il	pron			او (مذکر)	او مذکر	function
+elle	pron			او (مؤنث)	او مؤنث	function
+avoir	verb			داشتن	داشتن	function
+homme	noun	m		مرد	مرد	people
+femme	noun	f		زن	زن	people
+maison	noun	f		خانه	خانه	home
+voiture	noun	f		ماشین	ماشین	transport
+table	noun	f		میز	میز	home
+chaise	noun	f		صندلی	صندلی	home
+livre	noun	m		کتاب	کتاب	education
+grand	adj			بزرگ	بزرگ	qualities
+petit	adj			کوچک	کوچک	qualities
+beau	adj			زیبا	زیبا	qualities
+parler	verb			حرف زدن	حرف زدن	actions
+manger	verb			خوردن	خوردن	food
+pomme	noun	f		سیب	سیب	food
+pain	noun	m		نان	نان	food
+aimer	verb			دوست داشتن	دوست داشتن	feelings
+dans	prep			در، داخلِ	داخل	space
+nous	pron			ما	ما	function
+vous	pron			شما	شما	function
+aller	verb			رفتن	رفتن	travel
+ville	noun	f		شهر	شهر	city
+rouge	adj			قرمز	قرمز	colors
+jaune	adj			زرد	زرد	colors
+vert	adj			سبز	سبز	colors
+rose	adj			صورتی	صورتی	colors
+fleur	noun	f		گل	گل	nature
+garçon	noun	m		پسر	پسر	people
+vélo	noun	m		دوچرخه	دوچرخه	transport
+triste	adj			غمگین	غمگین	feelings
+chat	noun	m		گربه	گربه	animals
+chien	noun	m		سگ	سگ	animals

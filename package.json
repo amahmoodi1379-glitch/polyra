@@ -22,6 +22,8 @@
     "simulate": "tsx scripts/simulate.ts",
     "pace": "tsx scripts/pace.ts",
     "content:words": "tsx scripts/content/check-words.ts",
+    "content:check": "tsx scripts/content/check.ts",
+    "content:load": "tsx scripts/content/load.ts",
     "postinstall": "prisma generate"
   },
   "dependencies": {

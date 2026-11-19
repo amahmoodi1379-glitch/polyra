@@ -578,6 +578,23 @@ model SentenceWord {
   @@map("sentence_word")
 }
 
+/// Not in §4 (DECISIONS.md, 19 Nov 2026): every item the content packs (`content/<language>/`) loaded, so
+/// an item is loaded once only and an item the teacher deleted is not loaded again at the next start.
+model ContentPackItem {
+  id        Int      @id @default(autoincrement())
+  language  String   @db.VarChar(8)
+  /// word, unit, grammar, table, sentence, exception, text, …
+  kind      String   @db.VarChar(16)
+  /// The item's key in the pack: a word's code, a unit's code, «verb|tense», a sentence's text.
+  key       String
+  /// A hash of the item as it was loaded; a later change in the files shows as a different hash.
+  hash      String   @db.VarChar(16)
+  loaded_at DateTime @default(now()) @db.Timestamptz(3)
+
+  @@unique([language, kind, key])
+  @@map("content_pack_item")
+}
+
 model FormException {
   id         Int      @id @default(autoincrement())
   surface    String

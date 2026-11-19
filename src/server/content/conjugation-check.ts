@@ -176,3 +176,74 @@ export function compareTable(
   }
   return best;
 }
+
+/** German verbs that take «sein» in the Perfekt although german-verbs says «haben». */
+const SEIN_EXTRA = new Set(["aufstehen", "einschlafen", "aufwachen", "gelingen", "misslingen", "erscheinen", "verschwinden", "umziehen", "klettern", "schwimmen", "entstehen", "geschehen", "passieren"]);
+const SEPARABLE_PREFIX = /^(ab|an|auf|aus|bei|ein|fest|fort|her|hin|los|mit|nach|vor|weg|weiter|zu|zurück|zusammen|vorbei|herein|heraus|hinaus|hinein|um|durch)(?=.{3,})/;
+
+/** Does this German verb build its perfect tenses with «sein»? */
+export function germanUsesSein(verb: string): boolean {
+  const bare = verb.replace(/^sich /, "");
+  if (germanVerbs.alwaysUsesSein(bare) || SEIN_EXTRA.has(bare)) return true;
+  const prefix = SEPARABLE_PREFIX.exec(bare)?.[1];
+  return prefix ? germanVerbs.alwaysUsesSein(bare.slice(prefix.length)) && !["kennen", "machen"].includes(bare.slice(prefix.length)) : false;
+}
+
+export type StandardTable = { forms: Record<string, string>; variants: Record<string, string[]> };
+
+/**
+ * The table of a verb in a tense straight from the open data (owner, 18 Nov 2026: tables are built
+ * automatically): French from the Lefff, German from Morphy. With «être» the masculine forms are the
+ * table and the feminine ones (and «vous» in the singular) accepted variants; Konjunktiv II takes the
+ * würde form as a variant. Null when the verb or the tense is not in the data.
+ */
+export function standardTable(language: LanguageCode, verb: string, tense: string): StandardTable | null {
+  const keys = pronounKeys[language];
+  const forms: Record<string, string> = {};
+  const variants: Record<string, string[]> = {};
+  const variant = (key: string, value: string) => {
+    if (value && value !== forms[key] && !(variants[key] ?? []).includes(value)) (variants[key] ??= []).push(value);
+  };
+  try {
+    if (language === "fr") {
+      const code = frenchTenses[fold(tense)]?.[0];
+      if (!code) return null;
+      french ??= data<FrenchVerbs>("french-verbs-lefff/dist/conjugations.json");
+      const pronominal = /^(se |s')/.test(verb);
+      const bare = verb.replace(/^(se |s')/, "");
+      if (!(bare in french)) return null;
+      const get = (person: number, options: frenchVerbs.ComposedTenseOptions) => clean(frenchVerbs.getConjugation(french!, bare, code, person, options, pronominal, undefined, undefined, "Act"));
+      const etre = frenchVerbs.isComposedTense(code) && (pronominal || frenchVerbs.alwaysAuxEtre(bare));
+      keys.forEach((key, person) => {
+        const number = person >= 3 ? "P" : "S";
+        forms[key] = get(person, etre ? { aux: "ETRE", agreeGender: "M", agreeNumber: number } : frenchVerbs.isComposedTense(code) ? { aux: "AVOIR" } : {});
+        if (etre) {
+          variant(key, get(person, { aux: "ETRE", agreeGender: "F", agreeNumber: number }));
+          if (person === 4) for (const gender of ["M", "F"] as const) variant(key, get(person, { aux: "ETRE", agreeGender: gender, agreeNumber: "S" }));
+        }
+        for (const extra of frenchExtra[bare]?.[code]?.[person] ?? []) variant(key, extra);
+      });
+    } else {
+      const codes = germanTenses[fold(tense)];
+      if (!codes) return null;
+      german ??= data<GermanVerbs>("german-verbs-dict/dist/verbs.json");
+      const reflexive = /^sich /.test(verb);
+      const bare = verb.replace(/^sich /, "");
+      if (!(bare in german)) return null;
+      const aux: germanVerbs.GermanAux = germanUsesSein(bare) ? "SEIN" : "HABEN";
+      const pronominalCase = reflexive ? (germanVerbs.getReflexiveCase(bare) ?? "ACCUSATIVE") : undefined;
+      const get = (code: string, person: Persons, number: Numbers) =>
+        code === "KJ2_PAST"
+          ? clean([...germanVerbs.getConjugation(german!, aux === "SEIN" ? "sein" : "haben", "KONJUNKTIV2_PRATERITUM", person, number, undefined, false, undefined), germanVerbs.getPartizip2(german!, bare)].join(" "))
+          : clean(germanVerbs.getConjugation(german!, bare, code, person, number, aux, reflexive, pronominalCase).join(" "));
+      keys.forEach((key, index) => {
+        const [person, number] = germanPersons[index];
+        forms[key] = get(codes[0], person, number);
+        for (const code of codes.slice(1)) variant(key, get(code, person, number));
+      });
+    }
+  } catch {
+    return null;
+  }
+  return keys.every((key) => forms[key]) ? { forms, variants } : null;
+}

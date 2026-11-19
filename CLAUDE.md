@@ -56,6 +56,8 @@ Local setup: PostgreSQL running, `cp .env.example .env`, `npm install` (also gen
 | `npm run make-admin -- 09121234567 fr` | Make a phone an admin (first admin; later ones from the panel) |
 | `npm run demo -- load` | French demo content for the tester account (`remove` takes it and testers' progress on it out, `status`) |
 | `npm run content:words` | Checks the word lists in `content/<language>/words` and reports size, topics and coverage per level (`-- fr --warnings`) |
+| `npm run content:check` | Builds the whole content pack of each language without a database and lists every error with file and line (`-- fr --notes`) |
+| `npm run content:load` | Loads what is new in the content packs into the database (the server does this at every start; `CONTENT_PACKS=off` skips it) |
 | `npm run simulate` | PRD §16.3 simulator: synthetic learners through the real engine, checked against the pass marks (`-- --quick` for a fast look, `--seed=x`). Long random test: `RANDOM_USERS=400 RANDOM_DAYS=30 npx vitest run tests/unit/engine/random.test.ts` |
 
 Deploy: Runflare builds `main` (`docs/deploy-runflare.md`). Work on the session branch and move `main` forward
@@ -99,6 +101,11 @@ Deploy: Runflare builds `main` (`docs/deploy-runflare.md`). Work on the session 
 - Content packs (Claude writes all content, owner 18 Nov 2026): sources in `content/<language>/` (format and method in
   `content/README.md`); `src/server/content/packs/words.ts` reads and checks the word lists with the panel's own rules
   (`wordRecord`, `checkWord` in `src/server/content/word-rules.ts`, the lexicons, the frequency rank); `npm run content:words`.
+  The rest of a pack is built without a database in `packs/build.ts`: `morph.ts` (forms → words, from `data/lexicon/*-forms.tsv`
+  made by `scripts/data/build-forms.ts`, Morphy, `closed.ts`), `analyze.ts` (tokens of a sentence, the usable-sentence rule),
+  `distractors.ts` (automatic wrong options), `sentences.ts`, `grammar.ts`, `tables.ts` (tables from `standardTable` in
+  `conjugation-check.ts`). `packs/load.ts` loads what is new through the importers at every start (ledger `content_pack_item`),
+  approves it and publishes it (`publishReady` with `only`). Fixture pack: `tests/fixtures/packs`.
 - «سلامت محتوا» (PRD §13.11): `src/server/content/health/usable.ts` is the pure usable-sentence count, `sentences.ts`
   loads it per level; its button opens P-S with `PlanOptions.wordIds`.
 - «راهنمای پنل»: `src/app/admin/guide` (texts in `admin.guide` of fa.json, written in the small markup of
