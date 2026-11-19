@@ -7,7 +7,8 @@ import { phonicsSlots, readSlot, slotKey, type PhonicsPart, type Slot, type Slot
  * and human file, which one plays, and whether someone has heard it.
  */
 
-export type AssetView = { id: number; url: string; durationMs: number | null; stale: boolean; heard: boolean; human: boolean };
+/** `auto`: made by our machine voice (it never waits for «شنیدم»); `voice` the voice that made it. */
+export type AssetView = { id: number; url: string; durationMs: number | null; stale: boolean; heard: boolean; human: boolean; auto: boolean; voice: string | null };
 export type SlotView = {
   key: string;
   kind: Slot["kind"];
@@ -22,6 +23,8 @@ export type SlotView = {
   human: AssetView | null;
   /** The file learners hear: the human one first, never a stale one. */
   playing: "human" | "machine" | null;
+  /** A teacher took the machine file out; the machine voice does not make it again while the text stays. */
+  declined: boolean;
 };
 export type TextSentenceView = { id: number; text: string; slot: SlotView };
 export type ItemAudio =
@@ -35,12 +38,25 @@ async function assetsOf(ids: (number | null)[]) {
   const rows = await db.audioAsset.findMany({ where: { id: { in: wanted } } });
   return new Map(
     rows.map(
-      (row) => [row.id, { id: row.id, url: row.url, durationMs: row.duration_ms, stale: row.stale, heard: row.listened_at !== null, human: row.source === "human" }] as const,
+      (row) =>
+        [
+          row.id,
+          {
+            id: row.id,
+            url: row.url,
+            durationMs: row.duration_ms,
+            stale: row.stale,
+            heard: row.listened_at !== null,
+            human: row.source === "human",
+            auto: row.made_from !== null,
+            voice: row.voice,
+          },
+        ] as const,
     ),
   );
 }
 
-function viewOf(state: SlotState, assets: Map<number, AssetView>): SlotView {
+function viewOf(state: SlotState, assets: Map<number, AssetView>, declined: Set<string>): SlotView {
   const machine = state.machineId !== null ? (assets.get(state.machineId) ?? null) : null;
   const human = state.humanId !== null ? (assets.get(state.humanId) ?? null) : null;
   const slot = state.slot;
@@ -56,6 +72,7 @@ function viewOf(state: SlotState, assets: Map<number, AssetView>): SlotView {
     machine,
     human,
     playing: human && !human.stale ? "human" : machine && !machine.stale ? "machine" : null,
+    declined: machine === null && declined.has(slotKey(slot)),
   };
 }
 
@@ -63,7 +80,9 @@ function viewOf(state: SlotState, assets: Map<number, AssetView>): SlotView {
 export async function viewsOf(slots: Slot[]) {
   const states = (await Promise.all(slots.map((slot) => readSlot(db, slot)))).filter((state): state is SlotState => state !== null);
   const assets = await assetsOf(states.flatMap((state) => [state.machineId, state.humanId]));
-  return states.map((state) => viewOf(state, assets));
+  const keys = states.map((state) => slotKey(state.slot));
+  const declined = new Set(keys.length > 0 ? (await db.audioDeclined.findMany({ where: { slot: { in: keys } }, select: { slot: true } })).map((row) => row.slot) : []);
+  return states.map((state) => viewOf(state, assets, declined));
 }
 
 /** The audio of an item on its edit page, or null for a type that has no audio of its own. */
