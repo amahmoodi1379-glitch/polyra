@@ -4,7 +4,7 @@ import { fold } from "@/engine/tokens";
 import { wordRecord, type WordRecord } from "@/schemas/words";
 import { repeatedWord } from "../codes";
 import { levelRank, type LanguageCode } from "../languages";
-import { lexiconFlags, nounLexicon } from "../lexicon";
+import { lexiconFlags, lexiconSpelling, nounLexicon } from "../lexicon";
 import { describeProblem, zodProblems, type Problem } from "../problems";
 import { checkWord } from "../word-rules";
 
@@ -85,6 +85,12 @@ export function frequencyRanks(language: string, root = process.cwd()): Map<stri
     if (!ranks.has(item.toLowerCase())) ranks.set(item.toLowerCase(), rank);
   }
   return ranks;
+}
+
+/** A lemma's frequency rank, also when the list spells œ and æ as oe and ae (Lexique: oeil, coeur). */
+export function rankOf(ranks: Map<string, number>, lemma: string): number | null {
+  const key = lemma.toLowerCase();
+  return ranks.get(key) ?? ranks.get(lexiconSpelling(key)) ?? null;
 }
 
 /** The word files of a language that exist, lowest level first. */
@@ -179,7 +185,7 @@ export function checkWordPack(language: LanguageCode, files: PackFile[], ranks: 
       const word = parsed.data;
       for (const text of describe(checkWord(word, language))) say(errors, at, lemma, text);
       if (word.collocations.some((item) => !item.text || !item.translation_fa)) say(errors, at, lemma, "a collocation is written «text → ترجمه»");
-      const rank = word.pos === "phrase" || /\s/.test(word.lemma) ? null : (ranks.get(word.lemma.toLowerCase()) ?? null);
+      const rank = word.pos === "phrase" || /\s/.test(word.lemma) ? null : rankOf(ranks, word.lemma);
       words.push({ file, line: at.line, level, order: ++order, topic: topic as Topic, checked, rank, word });
     }
   }

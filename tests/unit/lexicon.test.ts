@@ -27,6 +27,12 @@ describe("noun lexicons (data/lexicon)", () => {
     expect(keys(lexiconFlags(noun("cheval", "m", "chevals"), "fr", null))).toEqual(["lexiconPlural"]);
   });
 
+  it("find a word written with œ, which Lexique spells oe (soeur, oeil)", () => {
+    expect(lexiconFlags(noun("sœur", "f"), "fr", null)).toEqual([]);
+    expect(keys(lexiconFlags(noun("sœur", "m"), "fr", null))).toEqual(["lexiconGender"]);
+    expect(lexiconFlags(noun("œuf", "m", "œufs"), "fr", null)).toEqual([]);
+  });
+
   it("stay silent about a word they do not know and about other parts of speech", () => {
     expect(lexiconFlags(noun("Quatschwort", "der", "Quatschworte"), "de", null)).toEqual([]);
     expect(lexiconFlags({ ...noun("manger", "m"), pos: "verb" }, "fr", null)).toEqual([]);

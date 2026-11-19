@@ -1,0 +1,772 @@
+lemma	pos	gender	plural	meaning_fa	concept_fa	topic
+# French A1 word list, in teaching order. Format and method: content/README.md.
+# Level = frequency rank (Lexique 3.83) + CEFR A1 themes and can-do statements + need (A1 grammar lessons,
+# texts and dialogues). Words marked checked:level are rarer in Lexique (films and books, many from before
+# 2000) than their use at A1: numbers, the learner's own identity (iranien, persan), today's words (internet,
+# e-mail, euro) and the everyday-life themes of every A1 syllabus (weather, food, shops, clothes).
+
+# grammar words: taught in grammar lessons, no word card (no_card)
+le	det			حرف تعریف معین (مفرد مذکر)	le: حرف تعریف معین	function	no_card:1
+la	det			حرف تعریف معین (مفرد مؤنث)	la: حرف تعریف معین	function	no_card:1	homophones:là
+les	det			حرف تعریف معین (جمع)	les: حرف تعریف معین	function	no_card:1
+un	det			یک (حرف تعریف نامعین مذکر)	un: حرف تعریف نامعین	function	no_card:1
+une	det			یک (حرف تعریف نامعین مؤنث)	une: حرف تعریف نامعین	function	no_card:1
+des	det			چند، چندتا (حرف تعریف نامعین جمع)	des: حرف تعریف نامعین	function	no_card:1
+du	det			مقداری (حرف تعریف بخشی مذکر)	du: حرف تعریف بخشی	function	no_card:1
+de	prep			از، ـِ (مالکیت)	de: حرف اضافه	function	no_card:1
+à	prep			به، در	à: حرف اضافه	function	no_card:1
+au	prep			به، در (ترکیب à و le)	au: حرف اضافه	function	no_card:1	homophones:eau
+aux	prep			به، در (ترکیب à و les)	aux: حرف اضافه	function	no_card:1
+du	prep			از (ترکیب de و le)	du: از و حرف تعریف	function	no_card:1	code:du-contr
+des	prep			از (ترکیب de و les)	des: از و حرف تعریف	function	no_card:1	code:des-contr
+en	prep			در، به، با (وسیله)	en: حرف اضافه	function	no_card:1	homophones:an
+par	prep			به‌وسیلهٔ، از طریقِ، در (هر)	par: حرف اضافه	function	no_card:1
+et	conj			و	و	function	no_card:1
+que	conj			که	que: که	function	no_card:1
+ne	adv			نشانهٔ منفی (ne ... pas)	ne: نشانهٔ منفی	function	no_card:1
+pas	adv			نشانهٔ منفی (ne ... pas)	pas: نشانهٔ منفی	function	no_card:1
+je	pron			من	je: من	function	no_card:1
+tu	pron			تو	tu: تو	function	no_card:1
+il	pron			او (مذکر)، آن (مذکر)	il: او	function	no_card:1
+elle	pron			او (مؤنث)، آن (مؤنث)	elle: او	function	no_card:1
+on	pron			ما (خودمانی)، آدم، کسی	on: فاعل نامعین	function	no_card:1
+nous	pron			ما	nous: ما	function	no_card:1
+vous	pron			شما	vous: شما	function	no_card:1
+ils	pron			آن‌ها (مذکر یا مختلط)	ils: آن‌ها	function	no_card:1
+elles	pron			آن‌ها (مؤنث)	elles: آن‌ها	function	no_card:1
+me	pron			مرا، به من، خودم را	me: ضمیر مفعولی	function	no_card:1
+te	pron			تو را، به تو، خودت را	te: ضمیر مفعولی	function	no_card:1
+se	pron			خود، خودش را، خودشان را	se: ضمیر انعکاسی	function	no_card:1
+le	pron			او را، آن را (مذکر)	le: ضمیر مفعولی	function	no_card:1	code:le-pron
+la	pron			او را، آن را (مؤنث)	la: ضمیر مفعولی	function	no_card:1	code:la-pron
+les	pron			آن‌ها را	les: ضمیر مفعولی	function	no_card:1	code:les-pron
+lui	pron			به او، او (بعد از حرف اضافه)	lui: ضمیر	function	no_card:1
+leur	pron			به آن‌ها	leur: ضمیر	function	no_card:1
+moi	pron			من (تأکیدی)، مرا	moi: ضمیر تأکیدی	function	no_card:1
+toi	pron			تو (تأکیدی)	toi: ضمیر تأکیدی	function	no_card:1
+eux	pron			آن‌ها (بعد از حرف اضافه)	eux: ضمیر تأکیدی	function	no_card:1
+y	pron			آنجا، به آن	y: ضمیر	function	no_card:1
+en	pron			از آن، از آن‌ها	en: ضمیر	function	no_card:1	code:en-pron
+mon	det			ـَم، مالِ من (مذکر)	mon: صفت ملکی	function	no_card:1
+ma	det			ـَم، مالِ من (مؤنث)	ma: صفت ملکی	function	no_card:1
+mes	det			ـَم، مالِ من (جمع)	mes: صفت ملکی	function	no_card:1	homophones:mais,mai
+ton	det			ـَت، مالِ تو (مذکر)	ton: صفت ملکی	function	no_card:1
+ta	det			ـَت، مالِ تو (مؤنث)	ta: صفت ملکی	function	no_card:1
+tes	det			ـَت، مالِ تو (جمع)	tes: صفت ملکی	function	no_card:1
+son	det			ـَش، مالِ او (مذکر)	son: صفت ملکی	function	no_card:1
+sa	det			ـَش، مالِ او (مؤنث)	sa: صفت ملکی	function	no_card:1
+ses	det			ـَش، مالِ او (جمع)	ses: صفت ملکی	function	no_card:1
+notre	det			ـِمان، مالِ ما	notre: صفت ملکی	function	no_card:1
+votre	det			ـِتان، مالِ شما	votre: صفت ملکی	function	no_card:1
+nos	det			ـِمان، مالِ ما (جمع)	nos: صفت ملکی	function	no_card:1
+vos	det			ـِتان، مالِ شما (جمع)	vos: صفت ملکی	function	no_card:1
+leur	det			ـِشان، مالِ آن‌ها	leur: صفت ملکی	function	no_card:1	code:leur-det
+leurs	det			ـِشان، مالِ آن‌ها (جمع)	leurs: صفت ملکی	function	no_card:1
+ce	det			این، آن (مذکر)	ce: صفت اشاره	function	no_card:1
+cet	det			این، آن (مذکر و پیش از واکه)	cet: صفت اشاره	function	no_card:1
+cette	det			این، آن (مؤنث)	cette: صفت اشاره	function	no_card:1	homophones:sept
+ces	det			این‌ها، آن‌ها	ces: صفت اشاره	function	no_card:1
+ce	pron			این، آن (c'est: این است)	ce: ضمیر اشاره	function	no_card:1	code:ce-pron
+ça	pron			این، آن	ça: ضمیر اشاره	function	no_card:1
+cela	pron			این، آن (رسمی‌تر از ça)	cela: ضمیر اشاره	function	no_card:1
+est-ce que	adv			آیا (نشانهٔ سؤال)	est-ce que: آیا	function	no_card:1
+qu'est-ce que	pron			چه، چه چیزی	qu'est-ce que: چه	function	no_card:1
+ah	interj			آه، آها	ah: آه	function	no_card:1
+oh	interj			اوه	oh: اوه	function	no_card:1	homophones:eau,au
+
+# first words: greetings, people, être and avoir
+bonjour	interj			سلام، روز بخیر	سلام	people
+salut	interj			سلام	سلام	people	register:familier
+merci	interj			ممنون، مرسی، متشکرم	ممنون	people	coll:merci beaucoup → خیلی ممنون
+oui	adv			بله، آره	بله	function
+non	adv			نه، خیر	نه	function	homophones:nom
+être	verb			بودن	بودن	function
+c'est ça	phrase			همین است، درست است	درست است	abstract	parts:être
+avoir	verb			داشتن	داشتن	function
+homme	noun	m		مرد	مرد	people
+femme	noun	f		زن	زن	people
+enfant	noun	mf		بچه، کودک	بچه	people
+garçon	noun	m		پسر، پسربچه	پسر	people
+fille	noun	f		دختر	دختر	people
+ami	noun	m		دوست	دوست	people
+nom	noun	m		اسم، نام	اسم	people	homophones:non
+s'appeler	verb			اسم داشتن، نامیده شدن	اسم داشتن	people
+aller	verb			رفتن	رفتن	actions
+bien	adv			خوب (قید)، به‌خوبی	bien: خوب	qualities	note:قید است و با فعل می‌آید: Je vais bien. «خوب» با اسم bon است: un bon livre.	coll:très bien → خیلی خوب
+très	adv			خیلی	خیلی	qualities
+bon	adj			خوب	bon: خوب	qualities	note:صفت است و با اسم می‌آید: un bon livre. «خوب» با فعل bien است: Il parle bien.
+grand	adj			بزرگ، قدبلند	بزرگ	qualities
+petit	adj			کوچک، قدکوتاه	کوچک	qualities
+maison	noun	f		خانه	خانه	home	coll:à la maison → در خانه
+ici	adv			اینجا	اینجا	space
+là	adv			آنجا، همین‌جا	آنجا	space	homophones:la
+où	adv			کجا	کجا	function	homophones:ou,août
+qui	pron			چه کسی، کی	چه کسی	function
+quoi	pron			چه، چی	quoi: چه	function
+comment	adv			چطور، چگونه	چطور	function
+au revoir	interj			خداحافظ	خداحافظ	people
+parler	verb			حرف زدن، صحبت کردن	حرف زدن	actions
+français	noun	m		زبان فرانسوی، فرانسه	زبان فرانسوی	education	code:français-noun	number:sg_only
+ça va	phrase			خوبی؟، خوبم	حال‌واحوال	people	parts:aller
+il y a	phrase			هست، وجود دارد	وجود داشتن	function	parts:avoir
+monsieur	noun	m	messieurs	آقا	آقا	people
+madame	noun	f	mesdames	خانم	خانم	people
+s'il vous plaît	interj			لطفاً (به شما)	لطفاً	people
+s'il te plaît	interj			لطفاً (به تو)	لطفاً	people
+pardon	interj			ببخشید	ببخشید	people
+excusez-moi	interj			ببخشید، معذرت می‌خواهم	ببخشید	people
+d'accord	adv			باشه، موافقم	باشه	abstract
+être d'accord	phrase			موافق بودن	موافق بودن	abstract	parts:être d'accord
+faire	verb			انجام دادن، کردن، درست کردن	انجام دادن	actions
+mal	adv			بد (قید)، به‌بدی	mal: بد	qualities
+aller bien	phrase			حال کسی خوب بودن	حال خوب داشتن	people	parts:aller bien
+
+# first things and everyday verbs
+aimer	verb			دوست داشتن	دوست داشتن	feelings
+manger	verb			خوردن	خوردن	food
+boire	verb			نوشیدن، خوردن (نوشیدنی)	نوشیدن	drink
+habiter	verb			زندگی کردن (جایی)، ساکن بودن	ساکن بودن	home	coll:J'habite à Téhéran. → در تهران زندگی می‌کنم.
+travailler	verb			کار کردن	کار کردن	work
+livre	noun	m		کتاب	کتاب	education
+voiture	noun	f		ماشین، خودرو	ماشین	transport	coll:en voiture → با ماشین
+eau	noun	f	eaux	آب	آب	drink	homophones:au,oh	note:با اینکه به eau ختم می‌شود مؤنث است: l'eau، de l'eau.
+pain	noun	m		نان	نان	food
+café	noun	m		قهوه	قهوه	drink	coll:un café au lait → یک شیرقهوه
+ville	noun	f		شهر	شهر	city
+rue	noun	f		خیابان، کوچه	خیابان	city
+école	noun	f		مدرسه	مدرسه	education
+travail	noun	m	travaux	کار	کار	work
+famille	noun	f		خانواده	خانواده	family
+table	noun	f		میز	میز	home
+chien	noun	m		سگ	سگ	animals
+chat	noun	m		گربه	گربه	animals
+
+# question words and small words that build sentences
+pourquoi	adv			چرا	چرا	function
+quand	adv			چه وقت، کِی	چه وقت	function
+combien	adv			چند، چقدر	چقدر	function	coll:C'est combien ? → چند است؟
+quel	det			کدام، چه جور	کدام	function
+parce que	conj			چون، زیرا	چون	function
+mais	conj			اما، ولی	اما	function	homophones:mes,mai
+ou	conj			یا	یا	function	homophones:où,août
+avec	prep			با	با	function
+pour	prep			برای	برای	function
+sans	prep			بدون، بی	بدون	function
+dans	prep			داخلِ، توی	داخل	space	homophones:dent
+sur	prep			روی	روی	space
+sous	prep			زیرِ	زیر	space
+chez	prep			خانهٔ، پیشِ	chez: خانهٔ کسی	space	note:به معنی «خانهٔ کسی» یا «پیش کسی» است: chez moi یعنی خانهٔ من، chez le médecin یعنی پیش دکتر.
+aussi	adv			هم، همچنین	هم	function
+beaucoup	adv			زیاد، خیلی زیاد	زیاد	qualities	note:«خیلی» با فعل beaucoup است (J'aime beaucoup) و با صفت très (très bon).
+peu	adv			کم	کم	qualities
+un peu	adv			کمی، یک کم	کمی	qualities
+trop	adv			زیادی، بیش از حد	زیادی	qualities
+plus	adv			بیشتر	بیشتر	qualities
+moins	adv			کمتر	کمتر	qualities
+tout	det			همه، همهٔ، همه چیز	همه	function
+chaque	det			هر	هر	function
+rien	pron			هیچ چیز، هیچ	هیچ چیز	function
+quelque chose	pron			چیزی، یک چیز	چیزی	function
+quelqu'un	pron			کسی، یک نفر	کسی	function
+voilà	adv			این هم، بفرما	voilà: این هم	function
+voici	adv			این هم، اینجاست	voici: این هم	function
+alors	adv			پس، خب	پس	abstract
+peut-être	adv			شاید	شاید	abstract
+ensemble	adv			با هم	با هم	qualities
+comme	conj			مثلِ، مانندِ	مثل	function
+bien sûr	adv			البته، حتماً	البته	abstract
+vraiment	adv			واقعاً	واقعاً	abstract
+
+# the most common verbs
+vouloir	verb			خواستن	خواستن	actions
+je voudrais	phrase			می‌خواستم، لطفاً ... می‌خواهم (مؤدبانه)	خواستن مؤدبانه	shopping	parts:vouloir
+pouvoir	verb			توانستن	توانستن	actions
+devoir	verb			مجبور بودن، باید	مجبور بودن	actions
+falloir	verb			لازم بودن (il faut)	لازم بودن	function
+savoir	verb			دانستن، بلد بودن	دانستن	abstract
+connaître	verb			شناختن، آشنا بودن با	شناختن	abstract
+venir	verb			آمدن	آمدن	actions
+prendre	verb			گرفتن، برداشتن	گرفتن	actions
+voir	verb			دیدن	دیدن	actions
+dire	verb			گفتن	گفتن	actions
+regarder	verb			نگاه کردن، تماشا کردن	نگاه کردن	actions
+écouter	verb			گوش دادن	گوش دادن	actions
+lire	verb			خواندن (کتاب و متن)	خواندن متن	education
+écrire	verb			نوشتن	نوشتن	education
+donner	verb			دادن	دادن	actions
+mettre	verb			گذاشتن	گذاشتن	actions
+chercher	verb			دنبالِ ... گشتن، جستجو کردن	جستجو کردن	actions
+trouver	verb			پیدا کردن	پیدا کردن	actions
+attendre	verb			منتظر ماندن، صبر کردن	منتظر ماندن	actions
+comprendre	verb			فهمیدن	فهمیدن	education
+apprendre	verb			یاد گرفتن	یاد گرفتن	education
+aider	verb			کمک کردن	کمک کردن	actions
+ouvrir	verb			باز کردن	باز کردن	actions
+fermer	verb			بستن	بستن	actions
+arriver	verb			رسیدن	رسیدن	actions
+partir	verb			راه افتادن، ترک کردن (جایی)	راه افتادن	actions
+sortir	verb			بیرون رفتن، خارج شدن	بیرون رفتن	actions
+entrer	verb			وارد شدن، داخل شدن	وارد شدن	actions
+dormir	verb			خوابیدن	خوابیدن	actions
+penser	verb			فکر کردن	فکر کردن	abstract
+demander	verb			پرسیدن، خواستن (از کسی)	پرسیدن	actions
+répondre	verb			جواب دادن، پاسخ دادن	جواب دادن	actions
+commencer	verb			شروع کردن، شروع شدن	شروع کردن	actions
+finir	verb			تمام کردن، تمام شدن	تمام کردن	actions
+jouer	verb			بازی کردن	بازی کردن	leisure
+
+# the most common nouns and adjectives
+chose	noun	f		چیز	چیز	abstract
+idée	noun	f		فکر، ایده	ایده	abstract
+bonne idée	phrase			فکر خوبی است، ایدهٔ خوب	ایده خوب	abstract	parts:bon idée
+problème	noun	m		مشکل، مسئله	مشکل	abstract
+pas de problème	phrase			مشکلی نیست	مشکلی نیست	abstract	parts:problème
+monde	noun	m		دنیا، جهان	دنیا	abstract
+tout le monde	phrase			همهٔ مردم، همهٔ آدم‌ها	همه مردم	people	parts:tout monde
+personne	noun	f		آدم، شخص، نفر	شخص	people
+gens	noun	m		مردم، آدم‌ها	مردم	people	number:pl_only
+vie	noun	f		زندگی	زندگی	abstract
+temps	noun	m		وقت، زمان	وقت	time
+avoir le temps	phrase			وقت داشتن	وقت داشتن	time	parts:avoir temps
+tout le temps	phrase			همیشه، مدام	مدام	time	parts:tout temps
+de temps en temps	phrase			گاهی، هر از گاهی	هر از گاهی	time	parts:temps
+jour	noun	m		روز	روز	time
+tous les jours	phrase			هر روز	هر روز	time	parts:tout jour
+an	noun	m		سال	سال	time	homophones:en	note:برای سن avoir می‌آید: J'ai vingt ans یعنی بیست سال دارم (نه je suis vingt ans).
+année	noun	f		سال	سال	time
+heure	noun	f		ساعت (زمان)	ساعت زمان	time	coll:une heure → یک ساعت
+fois	noun	f		دفعه، بار	دفعه	time	coll:une fois → یک بار
+moment	noun	m		لحظه	لحظه	time
+pays	noun	m		کشور	کشور	travel
+argent	noun	m		پول	پول	shopping	number:sg_only
+porte	noun	f		در (ورودی)	در ورودی	home
+main	noun	f		دست	دست	body
+tête	noun	f		سر	سر	body
+besoin	noun	m		نیاز، احتیاج	نیاز	abstract
+avoir besoin de	phrase			نیاز داشتن به، لازم داشتن	نیاز داشتن	abstract	parts:avoir besoin
+nouveau	adj			نو، جدید	جدید	qualities
+vieux	adj			پیر، کهنه، قدیمی	پیر	qualities
+jeune	adj			جوان	جوان	character
+beau	adj			زیبا، قشنگ	زیبا	qualities
+joli	adj			قشنگ، زیبا	زیبا	qualities
+autre	adj			دیگر	دیگر	qualities
+premier	adj			اول، نخستین	اول	numbers
+dernier	adj			آخرین، آخر، گذشته	آخرین	numbers
+seul	adj			تنها	تنها	qualities
+vrai	adj			راست، درست، واقعی	راست	abstract
+faux	adj			غلط، نادرست	غلط	abstract
+facile	adj			آسان، ساده	آسان	qualities
+difficile	adj			سخت، دشوار	سخت	qualities
+important	adj			مهم	مهم	abstract
+libre	adj			آزاد، بیکار (وقت آزاد)	آزاد	time
+
+# numbers
+zéro	num			صفر (۰)	صفر	numbers	family:nombre
+un	num			یک (۱)	یک	numbers	family:nombre	code:un-num
+deux	num			دو (۲)	دو	numbers	family:nombre
+trois	num			سه (۳)	سه	numbers	family:nombre
+quatre	num			چهار (۴)	چهار	numbers	family:nombre
+cinq	num			پنج (۵)	پنج	numbers	family:nombre
+six	num			شش (۶)	شش	numbers	family:nombre
+sept	num			هفت (۷)	هفت	numbers	family:nombre	homophones:cette	note:p نوشته می‌شود ولی خوانده نمی‌شود: «سِت».
+huit	num			هشت (۸)	هشت	numbers	family:nombre
+neuf	num			نُه (۹)	نُه	numbers	family:nombre
+dix	num			دَه (۱۰)	دَه	numbers	family:nombre
+onze	num			یازده (۱۱)	یازده	numbers	family:nombre
+douze	num			دوازده (۱۲)	دوازده	numbers	family:nombre
+treize	num			سیزده (۱۳)	سیزده	numbers	family:nombre
+quatorze	num			چهارده (۱۴)	چهارده	numbers	family:nombre
+quinze	num			پانزده (۱۵)	پانزده	numbers	family:nombre
+seize	num			شانزده (۱۶)	شانزده	numbers	family:nombre
+vingt	num			بیست (۲۰)	بیست	numbers	family:nombre
+trente	num			سی (۳۰)	سی	numbers	family:nombre
+quarante	num			چهل (۴۰)	چهل	numbers	family:nombre
+cinquante	num			پنجاه (۵۰)	پنجاه	numbers	family:nombre
+soixante	num			شصت (۶۰)	شصت	numbers	family:nombre
+soixante-dix	num			هفتاد (۷۰)	هفتاد	numbers	family:nombre	checked:level	note:یعنی «شصت و ده»؛ ۷۱ تا ۷۹ هم همین‌طور ساخته می‌شوند: soixante et onze.
+quatre-vingts	num			هشتاد (۸۰)	هشتاد	numbers	family:nombre	checked:level	note:یعنی «چهار بیست»؛ پیش از عدد دیگر s ندارد: quatre-vingt-deux.
+quatre-vingt-dix	num			نود (۹۰)	نود	numbers	family:nombre	checked:level
+cent	num			صد (۱۰۰)	صد	numbers	family:nombre	homophones:sans
+mille	num			هزار (۱۰۰۰)	هزار	numbers	family:nombre
+numéro	noun	m		شماره	شماره	numbers
+deuxième	adj			دوم	دوم	numbers
+
+# family
+père	noun	m		پدر	پدر	family	family:famille
+papa	noun	m		بابا	پدر	family	register:familier
+mère	noun	f		مادر	مادر	family	family:famille	homophones:mer
+maman	noun	f		مامان	مادر	family	register:familier
+parent	noun	m		والد، پدر یا مادر	والد	family	family:famille	coll:mes parents → پدر و مادرم
+frère	noun	m		برادر	برادر	family	family:famille
+sœur	noun	f		خواهر	خواهر	family	family:famille
+fils	noun	m		پسر (فرزند)	پسر (فرزند)	family	family:famille	note:پسرِ کسی (فرزند) fils است و garçon یعنی پسربچه. s آخرش خوانده می‌شود: «فیس».
+mari	noun	m		شوهر	شوهر	family	family:famille
+bébé	noun	m		نوزاد، بچهٔ کوچک	نوزاد	family
+grand-père	noun	m	grands-pères	پدربزرگ	پدربزرگ	family	family:famille
+grand-mère	noun	f	grands-mères	مادربزرگ	مادربزرگ	family	family:famille	checked:plural
+grands-parents	noun	m		پدربزرگ و مادربزرگ	پدربزرگ و مادربزرگ	family	family:famille	number:pl_only	checked:level
+oncle	noun	m		عمو، دایی	عمو یا دایی	family	family:famille
+tante	noun	f		عمه، خاله	عمه یا خاله	family	family:famille
+cousin	noun	m		پسرعمو، پسرخاله، پسردایی	فرزند عمو یا خاله	family	family:famille
+marié	adj			متأهل	متأهل	people
+célibataire	adj			مجرد	مجرد	people
+
+# identity
+prénom	noun	m		اسم کوچک	اسم کوچک	people
+âge	noun	m		سن	سن	people	coll:Quel âge as-tu ? → چند سالت است؟
+adresse	noun	f		نشانی، آدرس	نشانی	people
+nationalité	noun	f		ملیت	ملیت	people	checked:level
+iranien	adj			ایرانی	ایرانی	people	checked:level
+français	adj			فرانسوی	فرانسوی	people
+anglais	adj			انگلیسی	انگلیسی	people
+allemand	adj			آلمانی	آلمانی	people
+langue	noun	f		زبان	زبان	education
+persan	noun	m		زبان فارسی	زبان فارسی	education	number:sg_only	checked:level
+anglais	noun	m		زبان انگلیسی	زبان انگلیسی	education	code:anglais-noun	number:sg_only
+
+# time: parts of the day, days, months, seasons
+semaine	noun	f		هفته	هفته	time
+mois	noun	m		ماه (از سال)	ماه سال	time
+minute	noun	f		دقیقه	دقیقه	time
+matin	noun	m		صبح	صبح	time
+midi	noun	m		ظهر	ظهر	time
+après-midi	noun	m		بعدازظهر	بعدازظهر	time
+soir	noun	m		عصر، سرِ شب	عصر	time
+ce soir	phrase			امشب	امشب	time	parts:soir
+nuit	noun	f		شب	شب	time
+journée	noun	f		روز (از صبح تا شب)، طول روز	طول روز	time
+soirée	noun	f		شب (از عصر تا نیمه‌شب)	طول شب	time
+bonne nuit	phrase			شب بخیر	شب بخیر	time	parts:bon nuit
+bonne journée	phrase			روز خوبی داشته باشید	روز خوبی داشته باشید	time	parts:bon journée
+bonne soirée	phrase			شب خوبی داشته باشید	شب خوبی داشته باشید	time	parts:bon soirée
+week-end	noun	m		آخر هفته	آخر هفته	time
+lundi	noun	m		دوشنبه	دوشنبه	time	family:jour
+mardi	noun	m		سه‌شنبه	سه‌شنبه	time	family:jour
+mercredi	noun	m		چهارشنبه	چهارشنبه	time	family:jour
+jeudi	noun	m		پنجشنبه	پنجشنبه	time	family:jour
+vendredi	noun	m		جمعه	جمعه	time	family:jour
+samedi	noun	m		شنبه	شنبه	time	family:jour
+dimanche	noun	m		یکشنبه	یکشنبه	time	family:jour
+janvier	noun	m		ژانویه	ژانویه	time	family:mois
+février	noun	m		فوریه	فوریه	time	family:mois
+mars	noun	m		مارس	مارس	time	family:mois
+avril	noun	m		آوریل	آوریل	time	family:mois
+mai	noun	m		مه (ماه)	ماه مه	time	family:mois	homophones:mais,mes
+juin	noun	m		ژوئن	ژوئن	time	family:mois
+juillet	noun	m		ژوئیه	ژوئیه	time	family:mois
+août	noun	m		اوت	اوت	time	family:mois	homophones:ou,où
+septembre	noun	m		سپتامبر	سپتامبر	time	family:mois
+octobre	noun	m		اکتبر	اکتبر	time	family:mois
+novembre	noun	m		نوامبر	نوامبر	time	family:mois
+décembre	noun	m		دسامبر	دسامبر	time	family:mois
+printemps	noun	m		بهار	بهار	time	family:saison
+été	noun	m		تابستان	تابستان	time	family:saison
+automne	noun	m		پاییز	پاییز	time	family:saison
+hiver	noun	m		زمستان	زمستان	time	family:saison
+saison	noun	f		فصل	فصل	time
+date	noun	f		تاریخ (روز و ماه)	تاریخ روز	time
+anniversaire	noun	m		تولد، سالروز تولد	تولد	time
+bon anniversaire	phrase			تولدت مبارک	تولدت مبارک	time	parts:bon anniversaire
+fête	noun	f		جشن، مهمانی	جشن	leisure
+maintenant	adv			حالا، الان	حالا	time
+aujourd'hui	adv			امروز	امروز	time
+demain	adv			فردا	فردا	time
+à demain	phrase			تا فردا، فردا می‌بینمت	تا فردا	time	parts:demain
+hier	adv			دیروز	دیروز	time
+prochain	adj			بعدی، آینده	بعدی	time	coll:la semaine prochaine → هفتهٔ آینده
+tôt	adv			زود	زود	time
+tard	adv			دیر	دیر	time
+à tout à l'heure	phrase			تا چند ساعت دیگر، بعداً می‌بینمت	تا چند ساعت دیگر	time	parts:tout heure
+à plus tard	phrase			بعداً می‌بینمت، تا بعد	تا بعد	time	parts:plus tard
+bientôt	adv			به‌زودی	به‌زودی	time
+à bientôt	phrase			به‌زودی می‌بینمت	تا دیدار بعد	time	parts:bientôt
+toujours	adv			همیشه	همیشه	time
+souvent	adv			اغلب، بیشتر وقت‌ها	اغلب	time
+parfois	adv			گاهی، بعضی وقت‌ها	گاهی	time
+jamais	adv			هرگز، هیچ‌وقت	هرگز	time
+encore	adv			هنوز	هنوز	time
+déjà	adv			قبلاً، تا حالا	قبلاً	time
+avant	prep			قبل از، پیش از	قبل از	time
+après	prep			بعد از، پس از	بعد از	time
+pendant	prep			در طولِ، در مدتِ	در طول	time
+vers	prep			حدودِ (ساعت)، به طرفِ	حدود	time	homophones:vert,verre
+depuis	prep			از (زمانی تا حالا)	depuis: از	time	note:برای کاری که هنوز ادامه دارد: J'habite ici depuis deux ans یعنی دو سال است که اینجا زندگی می‌کنم.
+d'abord	adv			اول از همه، اول کار	اول کار	time
+puis	adv			بعد، سپس	سپس	time
+ensuite	adv			بعد، سپس	سپس	time
+enfin	adv			بالاخره، در آخر	بالاخره	time
+demi	adj			نیم، نصف	نیم	time	coll:une heure et demie → یک و نیم
+quart	noun	m		ربع	ربع	time	coll:deux heures et quart → دو و ربع
+fin	noun	f		پایان، انتها	پایان	time	homophones:faim
+rendez-vous	noun	m		قرار (ملاقات)، وقت (دکتر)	قرار ملاقات	time
+avoir rendez-vous	phrase			قرار داشتن، وقت داشتن (پیش کسی)	قرار داشتن	time	parts:avoir rendez-vous
+retard	noun	m		تأخیر	تأخیر	time
+être en retard	phrase			دیر کردن، تأخیر داشتن	دیر کردن	time	parts:être retard
+à l'heure	phrase			سر وقت	سر وقت	time	parts:heure
+
+
+# more everyday verbs
+préférer	verb			ترجیح دادن	ترجیح دادن	feelings
+entendre	verb			شنیدن	شنیدن	actions
+monter	verb			بالا رفتن، سوار شدن	بالا رفتن	actions
+descendre	verb			پایین آمدن، پیاده شدن	پایین آمدن	actions
+rester	verb			ماندن	ماندن	actions	note:دوست دروغین با rest انگلیسی؛ یعنی «ماندن»، نه «استراحت کردن».
+rentrer	verb			برگشتن (به خانه)	برگشتن به خانه	actions
+vivre	verb			زندگی کردن، زنده بودن	زندگی کردن	actions
+passer	verb			گذراندن (وقت)، رد شدن	گذراندن	actions	coll:passer les vacances → تعطیلات را گذراندن
+montrer	verb			نشان دادن	نشان دادن	actions
+oublier	verb			فراموش کردن، یادِ کسی رفتن	فراموش کردن	actions
+choisir	verb			انتخاب کردن، برگزیدن	انتخاب کردن	actions
+envoyer	verb			فرستادن	فرستادن	media
+rencontrer	verb			ملاقات کردن، آشنا شدن با	ملاقات کردن	people
+présenter	verb			معرفی کردن	معرفی کردن	people
+inviter	verb			دعوت کردن	دعوت کردن	people
+croire	verb			باور کردن، فکر کردن (گمان داشتن)	باور کردن	abstract
+continuer	verb			ادامه دادن	ادامه دادن	actions
+appeler	verb			صدا زدن، زنگ زدن	صدا زدن	media
+# food and drink
+thé	noun	m		چای	چای	drink
+lait	noun	m		شیر (خوراکی)	شیر خوراکی	drink
+jus	noun	m		آب‌میوه	آب‌میوه	drink	coll:un jus d'orange → یک آب پرتقال
+boisson	noun	f		نوشیدنی	نوشیدنی	drink
+bouteille	noun	f		بطری	بطری	drink
+verre	noun	m		لیوان	لیوان	drink	homophones:vert,vers
+faim	noun	f		گرسنگی	گرسنگی	food	number:sg_only	homophones:fin
+avoir faim	phrase			گرسنه بودن	گرسنه بودن	food	parts:avoir faim
+soif	noun	f		تشنگی	تشنگی	drink	number:sg_only
+avoir soif	phrase			تشنه بودن	تشنه بودن	drink	parts:avoir soif
+repas	noun	m		وعدهٔ غذا، غذا	وعده غذا	food
+petit-déjeuner	noun	m	petits-déjeuners	صبحانه	صبحانه	food	checked:level
+prendre le petit-déjeuner	phrase			صبحانه خوردن	صبحانه خوردن	food	parts:prendre petit-déjeuner
+déjeuner	noun	m		ناهار	ناهار	food
+dîner	noun	m		شام	شام	food
+viande	noun	f		گوشت	گوشت	food
+poisson	noun	m		ماهی	ماهی	food
+poulet	noun	m		مرغ، جوجه (گوشت)	مرغ	food
+œuf	noun	m		تخم‌مرغ	تخم‌مرغ	food	note:f آخرش در مفرد خوانده می‌شود ولی در جمع نه: un œuf «اُنُف»، des œufs «دِزُ».
+riz	noun	m		برنج	برنج	food	number:sg_only
+pâtes	noun	f		ماکارونی، پاستا	ماکارونی	food	number:pl_only
+légume	noun	m		سبزیجات، صیفی	سبزیجات	food	note:مذکر است: un légume.
+fruit	noun	m		میوه	میوه	food
+pomme	noun	f		سیب	سیب	food
+orange	noun	f		پرتقال	پرتقال	food
+banane	noun	f		موز	موز	food
+tomate	noun	f		گوجه‌فرنگی	گوجه‌فرنگی	food
+pomme de terre	noun	f	pommes de terre	سیب‌زمینی	سیب‌زمینی	food
+salade	noun	f		سالاد، کاهو	سالاد	food
+fromage	noun	m		پنیر	پنیر	food
+beurre	noun	m		کره (خوراکی)	کره خوراکی	food
+sucre	noun	m		شکر، قند	شکر	food
+sel	noun	m		نمک	نمک	food
+soupe	noun	f		سوپ	سوپ	food
+gâteau	noun	m	gâteaux	کیک، شیرینی	کیک	food
+chocolat	noun	m		شکلات	شکلات	food
+glace	noun	f		بستنی	بستنی	food
+dessert	noun	m		دسر	دسر	food
+croissant	noun	m		کروسان	کروسان	food
+baguette	noun	f		باگت (نان دراز فرانسوی)	باگت	food
+délicieux	adj			خوشمزه	خوشمزه	food
+sandwich	noun	m		ساندویچ	ساندویچ	food	checked:level
+cuisine	noun	f		آشپزخانه	آشپزخانه	home
+faire la cuisine	phrase			آشپزی کردن	آشپزی کردن	food	parts:faire cuisine
+restaurant	noun	m		رستوران	رستوران	city
+menu	noun	m		منو، فهرست غذا	منو	food
+addition	noun	f		صورت‌حساب (رستوران)	صورت‌حساب	food	note:در رستوران یعنی «صورت‌حساب»: L'addition, s'il vous plaît.
+commander	verb			سفارش دادن	سفارش دادن	food
+réserver	verb			رزرو کردن	رزرو کردن	travel
+tasse	noun	f		فنجان	فنجان	drink
+assiette	noun	f		بشقاب	بشقاب	food
+couteau	noun	m	couteaux	چاقو	چاقو	food
+fourchette	noun	f		چنگال	چنگال	food
+cuillère	noun	f		قاشق	قاشق	food
+cuisiner	verb			آشپزی کردن، غذا پختن	آشپزی کردن	food
+kilo	noun	m		کیلو	کیلو	numbers	coll:un kilo de pommes → یک کیلو سیب
+
+# home
+appartement	noun	m		آپارتمان	آپارتمان	home
+chambre	noun	f		اتاق خواب، اتاق	اتاق خواب	home
+salon	noun	m		اتاق نشیمن، پذیرایی	اتاق نشیمن	home
+salle de bain	noun	f	salles de bain	حمام (اتاق)	حمام	home
+douche	noun	f		دوش (حمام)	دوش	home
+prendre une douche	phrase			دوش گرفتن	دوش گرفتن	home	parts:prendre douche
+toilettes	noun	f		دستشویی، توالت	دستشویی	home	number:pl_only
+lit	noun	m		تخت خواب، تخت	تخت خواب	home
+chaise	noun	f		صندلی	صندلی	home
+fenêtre	noun	f		پنجره	پنجره	home
+clé	noun	f		کلید	کلید	home
+étage	noun	m		طبقه	طبقه	home
+escalier	noun	m		پله، راه‌پله	پله	home
+pièce	noun	f		اتاق (هر اتاق خانه)	اتاق	home
+mur	noun	m		دیوار	دیوار	home
+lampe	noun	f		چراغ، لامپ	چراغ	home
+canapé	noun	m		مبل، کاناپه	مبل	home
+immeuble	noun	m		ساختمان (چندطبقه)، آپارتمان (ساختمان)	ساختمان	home
+laver	verb			شستن	شستن	home
+jardin	noun	m		باغ، باغچه	باغ	home
+télévision	noun	f		تلویزیون	تلویزیون	media
+télé	noun	f		تلویزیون	تلویزیون	media	register:familier
+ordinateur	noun	m		رایانه، کامپیوتر	رایانه	media
+se lever	verb			بلند شدن (از خواب یا جا)	بلند شدن	actions
+se réveiller	verb			بیدار شدن	بیدار شدن	actions
+se laver	verb			خود را شستن، شست‌وشو کردن	خود را شستن	actions
+s'habiller	verb			لباس پوشیدن	لباس پوشیدن	clothes
+se coucher	verb			به رختخواب رفتن، دراز کشیدن	به رختخواب رفتن	actions
+s'asseoir	verb			نشستن	نشستن	actions
+se reposer	verb			استراحت کردن	استراحت کردن	actions
+se promener	verb			قدم زدن، گردش کردن	قدم زدن	leisure
+
+# town, shops, transport, travel
+café	noun	m		کافه	کافه	city	code:café-2	sense_of:café
+magasin	noun	m		مغازه، فروشگاه	مغازه	shopping
+supermarché	noun	m		سوپرمارکت، فروشگاه بزرگ	سوپرمارکت	shopping
+marché	noun	m		بازار	بازار	shopping
+boulangerie	noun	f		نانوایی	نانوایی	shopping	checked:level
+courses	noun	f		خرید روزانه، خرید خوراکی	خرید روزانه	shopping	number:pl_only
+faire les courses	phrase			خرید کردن (خوراکی و مایحتاج)	خرید روزانه کردن	shopping	parts:faire courses
+acheter	verb			خریدن	خریدن	shopping
+payer	verb			پرداختن، پول دادن	پرداختن	shopping
+coûter	verb			قیمت داشتن، ارزیدن	قیمت داشتن	shopping
+vendre	verb			فروختن	فروختن	shopping
+prix	noun	m		قیمت	قیمت	shopping
+euro	noun	m		یورو	یورو	shopping	checked:level
+cher	adj			گران	گران	shopping
+sac	noun	m		کیف، کیسه	کیف	shopping
+cadeau	noun	m	cadeaux	هدیه، کادو	هدیه	shopping
+carte	noun	f		کارت	کارت	shopping
+banque	noun	f		بانک	بانک	city
+poste	noun	f		ادارهٔ پست، پست	اداره پست	city
+pharmacie	noun	f		داروخانه	داروخانه	health
+parc	noun	m		پارک	پارک	city
+place	noun	f		میدان	میدان	city
+centre	noun	m		مرکز	مرکز	city
+quartier	noun	m		محله	محله	city
+village	noun	m		روستا، ده	روستا	city
+voisin	noun	m		همسایه	همسایه	people
+route	noun	f		جاده، راه	جاده	transport
+traverser	verb			رد شدن از، عبور کردن از	عبور کردن	transport
+musée	noun	m		موزه	موزه	culture	note:با اینکه به ée ختم می‌شود مذکر است: le musée.
+cinéma	noun	m		سینما	سینما	leisure
+bibliothèque	noun	f		کتابخانه	کتابخانه	education
+piscine	noun	f		استخر	استخر	leisure
+hôtel	noun	m		هتل	هتل	travel
+bus	noun	m		اتوبوس	اتوبوس	transport
+train	noun	m		قطار	قطار	transport
+métro	noun	m		مترو	مترو	transport
+taxi	noun	m		تاکسی	تاکسی	transport
+vélo	noun	m		دوچرخه	دوچرخه	transport
+faire du vélo	phrase			دوچرخه‌سواری کردن	دوچرخه‌سواری کردن	leisure	parts:faire vélo
+moto	noun	f		موتورسیکلت، موتور	موتورسیکلت	transport
+avion	noun	m		هواپیما	هواپیما	transport
+bateau	noun	m	bateaux	قایق، کشتی	قایق	transport
+gare	noun	f		ایستگاه قطار	ایستگاه قطار	transport
+aéroport	noun	m		فرودگاه	فرودگاه	transport
+ticket	noun	m		بلیت (اتوبوس و مترو)	بلیت	transport
+billet	noun	m		بلیت (قطار و هواپیما)	بلیت	transport
+pied	noun	m		پا، کف پا	پا	body	coll:à pied → پیاده
+aller à pied	phrase			پیاده رفتن	پیاده رفتن	transport	parts:aller pied
+voyage	noun	m		سفر	سفر	travel
+bon voyage	phrase			سفر بخیر	سفر بخیر	travel	parts:bon voyage
+voyager	verb			سفر کردن	سفر کردن	travel
+vacances	noun	f		تعطیلات، مرخصی	تعطیلات	travel	number:pl_only	note:همیشه جمع است: les vacances، en vacances.
+partir en vacances	phrase			به تعطیلات رفتن، به مسافرت رفتن	به تعطیلات رفتن	travel	parts:partir vacances
+bonnes vacances	phrase			تعطیلات خوش بگذرد	تعطیلات خوش بگذرد	travel	parts:bon vacances
+valise	noun	f		چمدان	چمدان	travel
+passeport	noun	m		گذرنامه، پاسپورت	گذرنامه	travel
+touriste	noun	mf		گردشگر، توریست	گردشگر	travel
+visiter	verb			بازدید کردن (از جایی)، دیدن (شهر یا موزه)	بازدید کردن	travel	note:فقط برای جا می‌آید: visiter Paris. دیدنِ کسی voir یا rendre visite à است.
+mer	noun	f		دریا	دریا	nature	homophones:mère
+plage	noun	f		ساحل	ساحل	nature
+montagne	noun	f		کوه	کوه	nature
+campagne	noun	f		بیرون شهر، حومه	بیرون شهر	nature
+
+# clothes
+vêtement	noun	m		لباس	لباس	clothes
+pantalon	noun	m		شلوار	شلوار	clothes
+chemise	noun	f		پیراهن (دکمه‌دار)	پیراهن دکمه‌دار	clothes
+t-shirt	noun	m		تی‌شرت	تی‌شرت	clothes	checked:level
+pull	noun	m		پلیور	پلیور	clothes
+jean	noun	m		شلوار جین، جین	شلوار جین	clothes	checked:level
+robe	noun	f		پیراهن زنانه، لباس زنانه	پیراهن زنانه	clothes
+jupe	noun	f		دامن	دامن	clothes
+veste	noun	f		کت	کت	clothes
+manteau	noun	m	manteaux	پالتو	پالتو	clothes
+chaussure	noun	f		کفش	کفش	clothes
+chaussette	noun	f		جوراب	جوراب	clothes
+chapeau	noun	m	chapeaux	کلاه	کلاه	clothes
+lunettes	noun	f		عینک	عینک	clothes	number:pl_only
+porter	verb			پوشیدن، به تن داشتن	پوشیدن	clothes
+
+# body and health
+corps	noun	m		بدن، تن	بدن	body
+œil	noun	m	yeux	چشم	چشم	body	checked:plural
+bouche	noun	f		دهان	دهان	body
+nez	noun	m		بینی، دماغ	بینی	body
+oreille	noun	f		گوش	گوش	body
+cheveu	noun	m	cheveux	مو، موی سر	مو	body	note:برای موی سر جمع می‌آید: J'ai les cheveux noirs (نه le cheveu).
+visage	noun	m		صورت، چهره	صورت	body
+dent	noun	f		دندان	دندان	body	homophones:dans
+bras	noun	m		بازو	بازو	body	note:فارسی هر دو را «دست» می‌گوید؛ bras همهٔ بازوست و main از مچ به پایین.
+doigt	noun	m		انگشت	انگشت	body
+jambe	noun	f		ساق پا	ساق پا	body	note:فارسی هر دو را «پا» می‌گوید؛ jambe از ران تا مچ است و pied از مچ به پایین.
+dos	noun	m		کمر، پشت (بدن)	کمر	body
+ventre	noun	m		شکم	شکم	body
+cœur	noun	m		قلب، دل	قلب	body
+avoir mal	phrase			درد داشتن	درد داشتن	health	parts:avoir mal	coll:avoir mal à la tête → سردرد داشتن
+malade	adj			بیمار، مریض	بیمار	health
+médecin	noun	mf		پزشک، دکتر	پزشک	health
+hôpital	noun	m	hôpitaux	بیمارستان	بیمارستان	health
+médicament	noun	m		دارو	دارو	health
+fatigué	adj			خسته	خسته	feelings
+
+# weather and nature
+temps	noun	m		هوا (وضع هوا)	وضع هوا	weather	code:temps-2	sense_of:temps	coll:Quel temps fait-il ? → هوا چطور است؟
+chaud	adj			گرم، داغ	گرم	weather
+froid	adj			سرد	سرد	weather
+avoir chaud	phrase			گرمِ کسی بودن، احساس گرما کردن	احساس گرما	weather	parts:avoir chaud
+avoir froid	phrase			سردِ کسی بودن، احساس سرما کردن	احساس سرما	weather	parts:avoir froid
+faire beau	phrase			هوا خوب بودن	هوا خوب بودن	weather	parts:faire beau
+faire chaud	phrase			هوا گرم بودن	هوا گرم بودن	weather	parts:faire chaud
+faire froid	phrase			هوا سرد بودن	هوا سرد بودن	weather	parts:faire froid
+mauvais	adj			بد	بد	qualities	note:صفت است: un mauvais film. «بد» با فعل mal است: Il chante mal.
+soleil	noun	m		خورشید، آفتاب	خورشید	weather
+pluie	noun	f		باران	باران	weather
+pleuvoir	verb			باران آمدن، باریدن	باران آمدن	weather
+neige	noun	f		برف	برف	weather
+neiger	verb			برف آمدن	برف آمدن	weather	checked:level
+vent	noun	m		باد	باد	weather
+nuage	noun	m		ابر	ابر	weather
+ciel	noun	m		آسمان	آسمان	weather
+arbre	noun	m		درخت	درخت	nature
+fleur	noun	f		گل (گیاه)	گل گیاه	nature
+forêt	noun	f		جنگل	جنگل	nature
+lac	noun	m		دریاچه	دریاچه	nature
+animal	noun	m	animaux	حیوان، جانور	حیوان	animals
+oiseau	noun	m	oiseaux	پرنده	پرنده	animals
+cheval	noun	m	chevaux	اسب	اسب	animals
+vache	noun	f		گاو	گاو	animals
+
+# colours
+couleur	noun	f		رنگ	رنگ	colors
+rouge	adj			قرمز	قرمز	colors	family:couleur
+bleu	adj			آبی	آبی	colors	family:couleur
+vert	adj			سبز	سبز	colors	family:couleur	homophones:verre,vers
+jaune	adj			زرد	زرد	colors	family:couleur
+noir	adj			سیاه، مشکی	سیاه	colors	family:couleur
+blanc	adj			سفید	سفید	colors	family:couleur
+gris	adj			خاکستری	خاکستری	colors	family:couleur
+orange	adj			نارنجی	نارنجی	colors	family:couleur	code:orange-adj
+rose	adj			صورتی	صورتی	colors	family:couleur
+marron	adj			قهوه‌ای	قهوه‌ای	colors	family:couleur
+violet	adj			بنفش	بنفش	colors	family:couleur
+blond	adj			بور، طلایی (مو)	بور	character
+brun	adj			قهوه‌ای (مو)، سبزه	قهوه‌ای مو	character
+
+# free time and media
+sport	noun	m		ورزش	ورزش	leisure
+faire du sport	phrase			ورزش کردن	ورزش کردن	leisure	parts:faire sport
+football	noun	m		فوتبال	فوتبال	leisure
+jouer au football	phrase			فوتبال بازی کردن	فوتبال بازی کردن	leisure	parts:jouer football
+tennis	noun	m		تنیس	تنیس	leisure
+jeu	noun	m	jeux	بازی	بازی	leisure
+match	noun	m		مسابقه	مسابقه	leisure
+musique	noun	f		موسیقی	موسیقی	leisure
+chanson	noun	f		آهنگ، ترانه	آهنگ	leisure
+chanter	verb			آواز خواندن	آواز خواندن	leisure
+danser	verb			رقصیدن	رقصیدن	leisure
+guitare	noun	f		گیتار	گیتار	leisure
+jouer de la guitare	phrase			گیتار زدن	گیتار زدن	leisure	parts:jouer guitare
+piano	noun	m		پیانو	پیانو	leisure
+film	noun	m		فیلم	فیلم	leisure
+photo	noun	f		عکس	عکس	leisure
+prendre une photo	phrase			عکس گرفتن	عکس گرفتن	leisure	parts:prendre photo
+histoire	noun	f		داستان، قصه	داستان	culture
+chance	noun	f		شانس، بخت	شانس	abstract
+bonne chance	phrase			موفق باشی، شانس بیاوری	موفق باشی	abstract	parts:bon chance
+nager	verb			شنا کردن	شنا کردن	leisure
+courir	verb			دویدن	دویدن	leisure
+marcher	verb			راه رفتن	راه رفتن	actions
+téléphone	noun	m		تلفن	تلفن	media
+portable	noun	m		تلفن همراه، موبایل	موبایل	media
+téléphoner	verb			تلفن زدن، زنگ زدن	تلفن زدن	media
+message	noun	m		پیام	پیام	media
+e-mail	noun	m		ایمیل	ایمیل	media	checked:level
+internet	noun	m		اینترنت	اینترنت	media	checked:level
+lettre	noun	f		نامه	نامه	media
+journal	noun	m	journaux	روزنامه	روزنامه	media
+radio	noun	f		رادیو	رادیو	media
+
+# work and school
+métier	noun	m		شغل، حرفه	شغل	work
+bureau	noun	m	bureaux	دفتر کار، اداره	دفتر کار	work
+professeur	noun	mf		معلم، استاد	معلم	education
+étudiant	noun	m		دانشجو	دانشجو	education
+élève	noun	mf		دانش‌آموز، شاگرد	دانش‌آموز	education
+ingénieur	noun	m		مهندس	مهندس	work
+vendeur	noun	m		فروشنده	فروشنده	work
+serveur	noun	m		گارسون، پیشخدمت	گارسون	work
+secrétaire	noun	mf		منشی	منشی	work
+policier	noun	m		پلیس، مأمور پلیس	مأمور پلیس	work
+infirmier	noun	m		پرستار	پرستار	health
+cuisinier	noun	m		آشپز	آشپز	work
+chauffeur	noun	m		راننده	راننده	work
+acteur	noun	m		بازیگر	بازیگر	culture
+chanteur	noun	m		خواننده (آواز)	خواننده	culture
+classe	noun	f		کلاس	کلاس	education
+cours	noun	m		کلاس درس، دوره	کلاس درس	education	homophones:court
+leçon	noun	f		درس	درس	education
+cahier	noun	m		دفتر (مشق)	دفتر مشق	education
+stylo	noun	m		خودکار	خودکار	education
+crayon	noun	m		مداد	مداد	education
+tableau	noun	m	tableaux	تخته (کلاس)	تخته کلاس	education
+mot	noun	m		کلمه، واژه	کلمه	education
+phrase	noun	f		جمله	جمله	education	note:دوست دروغین با phrase انگلیسی؛ یعنی «جمله».
+question	noun	f		سؤال، پرسش	سؤال	education
+réponse	noun	f		جواب، پاسخ	جواب	education
+exercice	noun	m		تمرین	تمرین	education
+exemple	noun	m		مثال، نمونه	مثال	education
+par exemple	phrase			برای مثال، مثلاً	برای مثال	education	parts:exemple
+page	noun	f		صفحه	صفحه	education
+université	noun	f		دانشگاه	دانشگاه	education
+étudier	verb			درس خواندن، مطالعه کردن	درس خواندن	education
+répéter	verb			تکرار کردن	تکرار کردن	education
+
+# feelings and character
+content	adj			خوشحال، راضی	خوشحال	feelings
+heureux	adj			خوشبخت، شاد	خوشبخت	feelings
+triste	adj			غمگین، ناراحت	غمگین	feelings
+désolé	adj			متأسف	متأسف	feelings
+adorer	verb			خیلی دوست داشتن، عاشقِ چیزی بودن	خیلی دوست داشتن	feelings
+détester	verb			متنفر بودن از، بدِ کسی آمدن از	متنفر بودن	feelings
+gentil	adj			مهربان، خوش‌اخلاق	مهربان	character
+sympathique	adj			خوش‌برخورد، دوست‌داشتنی	خوش‌برخورد	character
+sympa	adj			خوش‌برخورد، باحال	خوش‌برخورد	character	register:familier
+intelligent	adj			باهوش	باهوش	character
+gros	adj			چاق، درشت	چاق	character
+mince	adj			لاغر	لاغر	character
+long	adj			بلند، دراز	بلند	qualities
+court	adj			کوتاه	کوتاه	qualities	homophones:cours
+rapide	adj			سریع، تند	سریع	qualities
+vite	adv			به‌سرعت، با عجله	به‌سرعت	qualities
+super	adj			عالی، خیلی خوب	عالی	qualities
+ouvert	adj			باز	باز	qualities
+fermé	adj			بسته	بسته	qualities
+propre	adj			تمیز	تمیز	qualities
+sale	adj			کثیف	کثیف	qualities
+enchanté	interj			خوشوقتم، از آشنایی‌تان خوشحالم	خوشوقتم	people
+bienvenue	interj			خوش آمدید	خوش آمدید	people
+de rien	phrase			خواهش می‌کنم، قابلی ندارد	خواهش می‌کنم	people	parts:rien
+allô	interj			الو	الو	media
+
+# place and direction
+loin	adv			دور	دور	space	coll:loin d'ici → دور از اینجا
+près	adv			نزدیک	نزدیک	space	coll:près de la gare → نزدیکِ ایستگاه
+là-bas	adv			آنجا (دور)	آنجای دور	space
+devant	prep			جلویِ	جلو	space
+derrière	prep			پشتِ	پشت	space
+entre	prep			بینِ، میانِ	بین	space
+à côté de	prep			کنارِ، بغلِ	کنار	space
+en face de	prep			روبه‌رویِ	روبه‌رو	space
+droite	noun	f		راست (سمت)	سمت راست	space	coll:à droite → سمت راست
+gauche	noun	f		چپ (سمت)	سمت چپ	space	coll:à gauche → سمت چپ
+tout droit	adv			مستقیم	مستقیم	space
+tourner	verb			پیچیدن، چرخیدن	پیچیدن	space	coll:tourner à gauche → به چپ پیچیدن
