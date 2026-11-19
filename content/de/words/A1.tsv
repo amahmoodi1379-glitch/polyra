@@ -1,0 +1,746 @@
+lemma	pos	gender	plural	meaning_fa	concept_fa	topic
+# German A1, in teaching order. Function words without a card come first (grammar lessons teach them; they count as known).
+# no_card: articles, negation, personal pronouns, possessive and demonstrative determiners, the grammatical prepositions and their contracted forms, und
+der	det			حرف تعریف معین (مذکر)	der: حرف تعریف معین	function	no_card:1
+die	det			حرف تعریف معین (مؤنث و جمع)	die: حرف تعریف معین	function	no_card:1
+das	det			حرف تعریف معین (خنثی)، این	das: حرف تعریف معین	function	no_card:1
+ein	det			یک (حرف تعریف نامعین)	حرف تعریف نامعین	function	no_card:1
+kein	det			هیچ (نفی اسم)	kein: نفی اسم	function	no_card:1
+nicht	adv			نه، (نشانه منفی)	nicht: نفی	function	no_card:1
+dieser	det			این	dieser: این	function	no_card:1
+ich	pron			من	من	function	no_card:1
+du	pron			تو	تو	function	no_card:1
+er	pron			او (مذکر)، آن	er: او	function	no_card:1
+sie	pron			او (مؤنث)، آن	sie: او	function	no_card:1
+es	pron			آن، او (خنثی)	es: آن	function	no_card:1
+wir	pron			ما	ما	function	no_card:1
+ihr	pron			شما (جمع، خودمانی)	ihr: شما	function	no_card:1
+sie	pron			آن‌ها	آن‌ها	function	no_card:1	code:sie-2
+Sie	pron			شما (رسمی)	Sie: شما	function	no_card:1	code:Sie-3
+man	pron			آدم (فاعل کلی)	man: آدم	function	no_card:1	homophones:Mann
+mein	det			مالِ من، ـَم	مال من	function	no_card:1
+dein	det			مالِ تو، ـَت	مال تو	function	no_card:1
+sein	det			مالِ او (مذکر و خنثی)، ـَش	sein: مال او	function	no_card:1	code:sein-det
+ihr	det			مالِ او (مؤنث)، مالِ آن‌ها	ihr: مال او	function	no_card:1	code:ihr-det
+unser	det			مالِ ما، ـِمان	مال ما	function	no_card:1
+euer	det			مالِ شما (جمع، خودمانی)، ـِتان	euer: مال شما	function	no_card:1
+Ihr	det			مالِ شما (رسمی)	Ihr: مال شما	function	no_card:1	code:Ihr-det
+zu	prep			به، پیشِ	zu: به	function	no_card:1
+von	prep			از، مالِ	von: از	function	no_card:1
+an	prep			کنارِ، به، در	an: کنار	function	no_card:1
+bei	prep			پیشِ، نزدیکِ	bei: پیش	function	no_card:1
+um	prep			ساعتِ، دورِ	um: ساعت	function	no_card:1
+im	prep			در، توی	im: در	function	no_card:1
+am	prep			کنارِ، در، روزِ	am: در	function	no_card:1
+ins	prep			به، به داخلِ	ins: به داخل	function	no_card:1
+zum	prep			به، برای	zum: به	function	no_card:1
+zur	prep			به، برای	zur: به	function	no_card:1
+vom	prep			از	vom: از	function	no_card:1
+beim	prep			پیشِ، هنگامِ	beim: پیش	function	no_card:1
+und	conj			و	و	function	no_card:1
+
+# first words: greeting, sein and haben, people, question words (enough to make simple sentences with each other)
+hallo	interj			سلام	سلام	people
+ja	adv			بله، آره	بله	function
+nein	adv			نه، خیر	نه (جواب)	function
+sein	verb			بودن	بودن	function
+haben	verb			داشتن	داشتن	function
+heißen	verb			نام داشتن، نامیده شدن	نام داشتن	people
+Name	noun	der	Namen	نام، اسم	نام	people
+Mann	noun	der	Männer	مرد	مرد	people	homophones:man
+Frau	noun	die	Frauen	زن، خانم	زن	people
+Kind	noun	das	Kinder	بچه، کودک	بچه	people
+Herr	noun	der	Herren	آقا	آقا	people
+wer	pron			چه کسی، کی	چه کسی	function	note:wer یعنی «چه کسی»؛ «کجا» می‌شود wo. این دو را با where انگلیسی قاطی نکن.
+was	pron			چه، چه چیزی	چه چیزی	function
+wo	adv			کجا	کجا	function	note:wo یعنی «کجا»؛ «چه کسی» می‌شود wer.
+wie	adv			چطور، چگونه	چطور	function
+woher	adv			از کجا	از کجا	function
+kommen	verb			آمدن	آمدن	actions
+aus	prep			از (اهلِ جایی)، از توی	aus: از	function
+wohnen	verb			زندگی کردن (در جایی)، ساکن بودن	ساکن بودن	home
+in	prep			در، توی	in: در	function
+danke	interj			ممنون، متشکرم، مرسی	تشکر	people
+bitte	interj			لطفاً، خواهش می‌کنم	لطفاً	people
+Deutsch	noun	das		زبان آلمانی	زبان آلمانی	people	number:sg_only
+sprechen	verb			صحبت کردن، حرف زدن	صحبت کردن	actions
+Sprache	noun	die	Sprachen	زبان	زبان	people
+Land	noun	das	Länder	کشور	کشور	travel
+Stadt	noun	die	Städte	شهر	شهر	city
+gut	adj			خوب	خوب	qualities
+sehr	adv			خیلی	خیلی	qualities
+auch	adv			هم، همچنین	هم	function
+hier	adv			اینجا	اینجا	space
+dort	adv			آنجا	آنجا	space
+da	adv			آنجا، اینجا (حاضر)	da: آنجا	space
+Haus	noun	das	Häuser	خانه	خانه	home
+zu Hause	adv			در خانه، خانه	در خانه	space
+nach Hause	adv			به خانه	به خانه	space
+groß	adj			بزرگ، قدبلند	بزرگ	qualities
+klein	adj			کوچک، قدکوتاه	کوچک	qualities
+neu	adj			نو، جدید	نو	qualities
+alt	adj			پیر، کهنه، قدیمی	پیر	qualities
+jung	adj			جوان	جوان	qualities
+machen	verb			انجام دادن، درست کردن	انجام دادن	actions
+gehen	verb			رفتن	رفتن	actions
+oder	conj			یا	یا	function
+aber	conj			اما، ولی	اما	function
+Freund	noun	der	Freunde	دوست (مرد)	دوست	people
+Freundin	noun	die	Freundinnen	دوست (زن)	دوست زن	people
+lernen	verb			یاد گرفتن، درس خواندن	یاد گرفتن	education
+Buch	noun	das	Bücher	کتاب	کتاب	education
+lesen	verb			خواندن (متن)	خواندن	education
+schreiben	verb			نوشتن	نوشتن	education
+Wort	noun	das	Wörter	کلمه، واژه	کلمه	education
+verstehen	verb			فهمیدن	فهمیدن	abstract
+wissen	verb			دانستن	دانستن	abstract	note:دانستن یک خبر یا چیز wissen است؛ شناختن آدم یا جا kennen.
+Tag	noun	der	Tage	روز	روز	time
+heute	adv			امروز	امروز	time
+morgen	adv			فردا	فردا	time	note:morgen با حرف کوچک یعنی «فردا»؛ der Morgen یعنی «صبح».
+jetzt	adv			الان، حالا	الان	time
+essen	verb			خوردن (غذا)	خوردن	food
+trinken	verb			نوشیدن	نوشیدن	food
+Wasser	noun	das		آب	آب	drink	number:sg_only
+Kaffee	noun	der	Kaffees	قهوه	قهوه	drink
+Tee	noun	der	Tees	چای	چای	drink
+Brot	noun	das	Brote	نان	نان	food
+mit	prep			با	با	function
+für	prep			برای	برای	function
+Auto	noun	das	Autos	ماشین، خودرو	ماشین	transport
+fahren	verb			رفتن (با وسیله نقلیه)، رانندگی کردن	با وسیله رفتن	transport	note:برای رفتن با ماشین و اتوبوس و قطار fahren می‌گویند، نه gehen.
+nach	prep			به (شهر و کشور)	nach: به	function
+arbeiten	verb			کار کردن	کار کردن	work
+Arbeit	noun	die	Arbeiten	کار	کار	work
+Schule	noun	die	Schulen	مدرسه	مدرسه	education
+Mutter	noun	die	Mütter	مادر	مادر	family	family:Familie
+Mama	noun	die	Mamas	مامان	مادر	family	register:familier
+Vater	noun	der	Väter	پدر	پدر	family	family:Familie
+Papa	noun	der	Papas	بابا	پدر	family	register:familier
+Eltern	noun	die		پدر و مادر، والدین	والدین	family	number:pl_only
+möchten	verb			خواستن (مؤدبانه)، میل داشتن	خواستن مؤدبانه	function	note:möchten برای خواستن مؤدبانه است (Ich möchte einen Kaffee)؛ mögen یعنی «دوست داشتن».
+mögen	verb			دوست داشتن، خوش آمدن از	دوست داشتن	feelings
+wollen	verb			خواستن	خواستن	function	note:ich will یعنی «می‌خواهم»، نه زمان آینده.
+können	verb			توانستن	توانستن	function
+müssen	verb			مجبور بودن، باید	باید	function
+dürfen	verb			اجازه داشتن	اجازه داشتن	function
+kaufen	verb			خریدن	خریدن	shopping
+brauchen	verb			لازم داشتن، احتیاج داشتن	لازم داشتن	actions
+viel	adj			زیاد	زیاد	numbers
+wenig	adj			کم	کم	numbers
+Geld	noun	das		پول	پول	shopping	number:sg_only
+schön	adj			زیبا، قشنگ	زیبا	qualities
+schlecht	adj			بد	بد	qualities
+spielen	verb			بازی کردن	بازی کردن	leisure
+hören	verb			شنیدن، گوش دادن	شنیدن	actions
+sehen	verb			دیدن	دیدن	actions
+sagen	verb			گفتن	گفتن	actions
+fragen	verb			پرسیدن	پرسیدن	actions
+antworten	verb			جواب دادن	جواب دادن	actions
+geben	verb			دادن	دادن	actions
+es gibt	phrase			وجود دارد، هست	وجود داشتن	function	parts:geben
+nehmen	verb			برداشتن، گرفتن	برداشتن	actions
+kennen	verb			شناختن	شناختن	abstract
+finden	verb			پیدا کردن	پیدا کردن	actions
+suchen	verb			دنبال چیزی گشتن، جستجو کردن	جستجو کردن	actions
+Mensch	noun	der	Menschen	انسان، آدم	انسان	people
+Leute	noun	die		مردم، آدم‌ها	مردم	people	number:pl_only
+immer	adv			همیشه	همیشه	time
+oft	adv			اغلب، بارها	اغلب	time
+manchmal	adv			گاهی، بعضی وقت‌ها	گاهی	time
+nie	adv			هرگز، هیچ‌وقت	هرگز	time
+noch	adv			هنوز	هنوز	time
+schon	adv			قبلاً، دیگر، تا حالا	قبلاً	time
+nur	adv			فقط	فقط	function
+gern	adv			با میل، با علاقه	با میل	feelings	note:برای «دوست دارم ... کنم» gern را کنار فعل می‌گذارند: Ich lese gern.
+wann	adv			کی، چه وقت	چه وقت	function
+warum	adv			چرا	چرا	function
+wohin	adv			به کجا	به کجا	function
+welcher	det			کدام	کدام	function
+wie viel	adv			چقدر، چند تا	چقدر	function
+alle	pron			همه (آدم‌ها یا چیزها)	همه	function
+alles	pron			همه چیز	همه چیز	function
+etwas	pron			چیزی، کمی	چیزی	function
+nichts	pron			هیچ چیز	هیچ چیز	function
+jeder	det			هر	هر	function
+tschüss	interj			خداحافظ (خودمانی)	خداحافظ خودمانی	people
+auf Wiedersehen	interj			خداحافظ (رسمی)	خداحافظ	people
+Entschuldigung	noun	die	Entschuldigungen	ببخشید، معذرت‌خواهی	ببخشید	people
+okay	interj			باشه، خوب	باشه	people
+guten Tag	phrase			روز بخیر، سلام	روز بخیر	people	parts:gut Tag
+Morgen	noun	der	Morgen	صبح	صبح	time
+guten Morgen	phrase			صبح بخیر	صبح بخیر	people	parts:gut Morgen
+
+# person: name, address, age, origin
+Vorname	noun	der	Vornamen	نام کوچک	نام کوچک	people	checked:level
+Familienname	noun	der	Familiennamen	نام خانوادگی	نام خانوادگی	people	checked:level
+Nachname	noun	der	Nachnamen	نام خانوادگی	نام خانوادگی	people	checked:level
+Adresse	noun	die	Adressen	نشانی، آدرس	نشانی	people
+Straße	noun	die	Straßen	خیابان	خیابان	city
+Nummer	noun	die	Nummern	شماره	شماره	numbers
+Telefon	noun	das	Telefone	تلفن	تلفن	media
+Telefonnummer	noun	die	Telefonnummern	شماره تلفن	شماره تلفن	media
+Jahr	noun	das	Jahre	سال	سال	time
+Alter	noun	das		سن	سن	people	number:sg_only
+Jahre alt sein	phrase			... ساله بودن	سن داشتن	people	parts:Jahr alt sein
+geboren	adj			متولد، به دنیا آمده	متولد	people
+ledig	adj			مجرد	مجرد	people	checked:level
+verheiratet	adj			متأهل	متأهل	people
+Persisch	noun	das		زبان فارسی	زبان فارسی	people	number:sg_only
+Englisch	noun	das		زبان انگلیسی	زبان انگلیسی	people	number:sg_only
+deutsch	adj			آلمانی	آلمانی (صفت)	people
+Iraner	noun	der	Iraner	ایرانی (مرد)	ایرانی	people	checked:level
+Iranerin	noun	die	Iranerinnen	ایرانی (زن)	ایرانی زن	people
+Person	noun	die	Personen	نفر، شخص	شخص	people
+Junge	noun	der	Jungen	پسر، پسربچه	پسربچه	people
+Mädchen	noun	das	Mädchen	دختر، دختربچه	دختربچه	people	note:با اینکه معنی‌اش «دختر» است، جنسش خنثی است: das Mädchen.
+Baby	noun	das	Babys	نوزاد، بچه کوچک	نوزاد	people
+
+# family
+Familie	noun	die	Familien	خانواده	خانواده	family
+Bruder	noun	der	Brüder	برادر	برادر	family	family:Familie
+Schwester	noun	die	Schwestern	خواهر	خواهر	family	family:Familie
+Geschwister	noun	die		خواهر و برادر	خواهر و برادر	family	number:pl_only	checked:gender,level
+Sohn	noun	der	Söhne	پسر (فرزند)	پسر (فرزند)	family	family:Familie
+Tochter	noun	die	Töchter	دختر (فرزند)	دختر (فرزند)	family	family:Familie
+Mann	noun	der	Männer	شوهر	شوهر	family	code:Mann-2	sense_of:Mann
+Frau	noun	die	Frauen	همسر (زن)، خانم (کسی)	همسر	family	code:Frau-2	sense_of:Frau
+Großmutter	noun	die	Großmütter	مادربزرگ	مادربزرگ	family	family:Familie
+Oma	noun	die	Omas	مامان‌بزرگ	مادربزرگ	family	register:familier
+Großvater	noun	der	Großväter	پدربزرگ	پدربزرگ	family	family:Familie
+Opa	noun	der	Opas	بابابزرگ	پدربزرگ	family	register:familier
+Großeltern	noun	die		پدربزرگ و مادربزرگ	پدربزرگ و مادربزرگ	family	number:pl_only	checked:level
+Onkel	noun	der	Onkel	عمو، دایی	عمو	family	family:Familie
+Tante	noun	die	Tanten	عمه، خاله	عمه	family	family:Familie
+allein	adv			تنها، به‌تنهایی	تنها	people
+zusammen	adv			با هم	با هم	people
+
+# numbers
+Zahl	noun	die	Zahlen	عدد	عدد	numbers
+null	num			صفر	صفر	numbers	family:Zahl
+eins	num			یک	یک	numbers	family:Zahl
+zwei	num			دو	دو	numbers	family:Zahl
+drei	num			سه	سه	numbers	family:Zahl
+vier	num			چهار	چهار	numbers	family:Zahl
+fünf	num			پنج	پنج	numbers	family:Zahl
+sechs	num			شش	شش	numbers	family:Zahl
+sieben	num			هفت	هفت	numbers	family:Zahl
+acht	num			هشت	هشت	numbers	family:Zahl
+neun	num			نه (عدد)	نه (عدد)	numbers	family:Zahl
+zehn	num			ده	ده	numbers	family:Zahl
+elf	num			یازده	یازده	numbers	family:Zahl
+zwölf	num			دوازده	دوازده	numbers	family:Zahl
+dreizehn	num			سیزده	سیزده	numbers	family:Zahl	checked:level
+vierzehn	num			چهارده	چهارده	numbers	family:Zahl	checked:level
+fünfzehn	num			پانزده	پانزده	numbers	family:Zahl	checked:level
+sechzehn	num			شانزده	شانزده	numbers	family:Zahl	note:sechzehn بدون s نوشته می‌شود (نه sechszehn).	checked:level
+siebzehn	num			هفده	هفده	numbers	family:Zahl	note:siebzehn بدون en نوشته می‌شود (نه siebenzehn).	checked:level
+achtzehn	num			هجده	هجده	numbers	family:Zahl	checked:level
+neunzehn	num			نوزده	نوزده	numbers	family:Zahl	checked:level
+zwanzig	num			بیست	بیست	numbers	family:Zahl	note:عدد دورقمی را از آخر می‌خوانند: einundzwanzig یعنی «یک و بیست» = بیست و یک.	checked:level
+dreißig	num			سی	سی	numbers	family:Zahl	checked:level
+vierzig	num			چهل	چهل	numbers	family:Zahl	checked:level
+fünfzig	num			پنجاه	پنجاه	numbers	family:Zahl	checked:level
+sechzig	num			شصت	شصت	numbers	family:Zahl	checked:level
+siebzig	num			هفتاد	هفتاد	numbers	family:Zahl	checked:level
+achtzig	num			هشتاد	هشتاد	numbers	family:Zahl	checked:level
+neunzig	num			نود	نود	numbers	family:Zahl	checked:level
+hundert	num			صد	صد	numbers	family:Zahl
+tausend	num			هزار	هزار	numbers	family:Zahl
+erste	adj			اول، اولین	اول	numbers
+halb	adj			نیم، نصف	نیم	numbers
+mehr	adv			بیشتر	بیشتر	qualities	homophones:Meer
+
+# time: clock, parts of the day, days, months, seasons
+Zeit	noun	die	Zeiten	وقت، زمان	وقت	time
+Zeit haben	phrase			وقت داشتن	وقت داشتن	time	parts:Zeit haben
+Uhr	noun	die	Uhren	ساعت (وسیله)، ساعتِ (در گفتن وقت)	ساعت (وسیله)	time
+Stunde	noun	die	Stunden	یک ساعت (مدت)	ساعت (مدت)	time
+Minute	noun	die	Minuten	دقیقه	دقیقه	time
+Viertel	noun	das	Viertel	ربع	ربع	time
+Wie spät ist es?	interj			ساعت چند است؟	پرسیدن ساعت	people
+Woche	noun	die	Wochen	هفته	هفته	time
+Monat	noun	der	Monate	ماه (بخشی از سال)	ماه (تقویم)	time
+Wochenende	noun	das	Wochenenden	آخر هفته	آخر هفته	time
+Vormittag	noun	der	Vormittage	پیش از ظهر	پیش از ظهر	time	checked:level
+Mittag	noun	der	Mittage	ظهر	ظهر	time
+Nachmittag	noun	der	Nachmittage	بعدازظهر	بعدازظهر	time
+Abend	noun	der	Abende	شب (اوایل شب)، عصر	اوایل شب	time
+Nacht	noun	die	Nächte	شب	شب	time
+guten Abend	phrase			عصر بخیر، شب بخیر (هنگام دیدار)	عصر بخیر	people	parts:gut Abend
+gute Nacht	phrase			شب بخیر (هنگام خواب)	شب بخیر	people	parts:gut Nacht
+gestern	adv			دیروز	دیروز	time
+bis	prep			تا	bis: تا	function
+später	adv			بعداً، دیرتر	بعداً	time
+bald	adv			به‌زودی	به‌زودی	time	note:bald یعنی «به‌زودی» و ربطی به bald انگلیسی (طاس) ندارد.
+dann	adv			بعد، سپس	سپس	time
+wieder	adv			دوباره	دوباره	time
+einmal	adv			یک بار	یک بار	time
+noch einmal	adv			یک بار دیگر، دوباره	یک بار دیگر	time
+gleich	adv			همین الان، تا چند لحظه دیگر	همین الان	time
+früh	adj			زود	زود	qualities
+spät	adj			دیر	دیر	qualities
+Montag	noun	der	Montage	دوشنبه	دوشنبه	time	family:Wochentag
+Dienstag	noun	der	Dienstage	سه‌شنبه	سه‌شنبه	time	family:Wochentag
+Mittwoch	noun	der	Mittwoche	چهارشنبه	چهارشنبه	time	family:Wochentag
+Donnerstag	noun	der	Donnerstage	پنجشنبه	پنجشنبه	time	family:Wochentag
+Freitag	noun	der	Freitage	جمعه	جمعه	time	family:Wochentag
+Samstag	noun	der	Samstage	شنبه	شنبه	time	family:Wochentag
+Sonntag	noun	der	Sonntage	یکشنبه	یکشنبه	time	family:Wochentag
+Januar	noun	der		ژانویه	ژانویه	time	family:Monat	number:sg_only	checked:level
+Februar	noun	der		فوریه	فوریه	time	family:Monat	number:sg_only	checked:level
+März	noun	der		مارس	مارس	time	family:Monat	number:sg_only	checked:level
+April	noun	der		آوریل	آوریل	time	family:Monat	number:sg_only	checked:level
+Mai	noun	der		مه (ماه)	ماه مه	time	family:Monat	number:sg_only	checked:level
+Juni	noun	der		ژوئن	ژوئن	time	family:Monat	number:sg_only	checked:level
+Juli	noun	der		ژوئیه	ژوئیه	time	family:Monat	number:sg_only	checked:level
+August	noun	der		اوت	اوت	time	family:Monat	number:sg_only	checked:level
+September	noun	der		سپتامبر	سپتامبر	time	family:Monat	number:sg_only	checked:level
+Oktober	noun	der		اکتبر	اکتبر	time	family:Monat	number:sg_only	checked:level
+November	noun	der		نوامبر	نوامبر	time	family:Monat	number:sg_only	checked:level
+Dezember	noun	der		دسامبر	دسامبر	time	family:Monat	number:sg_only	checked:level
+Jahreszeit	noun	die	Jahreszeiten	فصل	فصل	time	checked:level
+Frühling	noun	der	Frühlinge	بهار	بهار	time	family:Jahreszeit
+Sommer	noun	der	Sommer	تابستان	تابستان	time	family:Jahreszeit
+Herbst	noun	der	Herbste	پاییز	پاییز	time	family:Jahreszeit	checked:level
+Winter	noun	der	Winter	زمستان	زمستان	time	family:Jahreszeit
+Datum	noun	das	Daten	تاریخ (روز و ماه)	تاریخ روز	time	checked:level
+Geburtstag	noun	der	Geburtstage	تولد، روز تولد	تولد	people
+Geburtstag haben	phrase			تولد (کسی) بودن	تولد داشتن	people	parts:Geburtstag haben
+Geschenk	noun	das	Geschenke	هدیه، کادو	هدیه	people
+herzlichen Glückwunsch	interj			تبریک می‌گویم، مبارک باشد	تبریک	people
+Termin	noun	der	Termine	وقت قبلی، قرار ملاقات	وقت قبلی	time
+einen Termin haben	phrase			وقت قبلی داشتن، قرار داشتن	قرار داشتن	time	parts:Termin haben
+einen Termin machen	phrase			وقت گرفتن	وقت گرفتن	time	parts:Termin machen
+Pause	noun	die	Pausen	استراحت کوتاه، زنگ تفریح	استراحت کوتاه	time
+Pause machen	phrase			استراحت کردن (کوتاه)	استراحت کردن	time	parts:Pause machen
+Moment	noun	der	Momente	لحظه	لحظه	time
+dauern	verb			طول کشیدن	طول کشیدن	time
+frei	adj			آزاد، خالی	آزاد	qualities
+frei haben	phrase			تعطیل بودن، کار نداشتن	تعطیل بودن	work	parts:frei haben
+
+# daily routine
+schlafen	verb			خوابیدن	خوابیدن	actions
+aufstehen	verb			از خواب بلند شدن، برخاستن	برخاستن	actions
+duschen	verb			دوش گرفتن	دوش گرفتن	home
+frühstücken	verb			صبحانه خوردن	صبحانه خوردن	food	checked:level
+beginnen	verb			شروع کردن، شروع شدن	شروع کردن	actions
+anfangen	verb			شروع کردن، شروع شدن	شروع کردن	actions
+warten	verb			صبر کردن، منتظر ماندن	منتظر ماندن	actions
+bleiben	verb			ماندن	ماندن	actions
+leben	verb			زندگی کردن	زندگی کردن	actions
+müde	adj			خسته	خسته	feelings
+zur Schule gehen	phrase			به مدرسه رفتن	به مدرسه رفتن	education	parts:Schule gehen
+zur Arbeit gehen	phrase			سر کار رفتن	سر کار رفتن	work	parts:Arbeit gehen
+
+# food and drink
+Essen	noun	das	Essen	غذا	غذا	food
+Frühstück	noun	das	Frühstücke	صبحانه	صبحانه	food
+Mittagessen	noun	das	Mittagessen	ناهار	ناهار	food
+Abendessen	noun	das	Abendessen	شام	شام	food
+zu Mittag essen	phrase			ناهار خوردن	ناهار خوردن	food	parts:Mittag essen
+zu Abend essen	phrase			شام خوردن	شام خوردن	food	parts:Abend essen
+kochen	verb			آشپزی کردن، پختن	آشپزی کردن	food
+Kaffee kochen	phrase			قهوه درست کردن	قهوه درست کردن	drink	parts:Kaffee kochen
+schmecken	verb			مزه دادن، خوشمزه بودن	مزه دادن	food
+lecker	adj			خوشمزه	خوشمزه	qualities
+Hunger	noun	der		گرسنگی	گرسنگی	food	number:sg_only
+Hunger haben	phrase			گرسنه بودن	گرسنه بودن	food	parts:Hunger haben	note:با haben می‌آید، نه sein: Ich habe Hunger.
+Durst	noun	der		تشنگی	تشنگی	drink	number:sg_only
+Durst haben	phrase			تشنه بودن	تشنه بودن	drink	parts:Durst haben	note:با haben می‌آید، نه sein: Ich habe Durst.
+Brötchen	noun	das	Brötchen	نان گرد کوچک	نان گرد	food	checked:level
+Butter	noun	die		کره	کره	food	number:sg_only
+Käse	noun	der	Käse	پنیر	پنیر	food
+Wurst	noun	die	Würste	سوسیس، کالباس	سوسیس	food	checked:level
+Fleisch	noun	das		گوشت	گوشت	food	number:sg_only
+Fisch	noun	der	Fische	ماهی	ماهی	food
+Hähnchen	noun	das	Hähnchen	مرغ (غذا)	مرغ	food	checked:level
+Ei	noun	das	Eier	تخم‌مرغ	تخم‌مرغ	food
+Reis	noun	der		برنج	برنج	food	number:sg_only	checked:level
+Salat	noun	der	Salate	سالاد، کاهو	سالاد	food
+Suppe	noun	die	Suppen	سوپ	سوپ	food
+Nudel	noun	die	Nudeln	ماکارونی، رشته	ماکارونی	food	checked:level
+Pizza	noun	die	Pizzen	پیتزا	پیتزا	food
+Obst	noun	das		میوه	میوه	food	number:sg_only	checked:level
+Gemüse	noun	das		سبزیجات، صیفی	سبزیجات	food	number:sg_only
+Apfel	noun	der	Äpfel	سیب	سیب	food	checked:level
+Banane	noun	die	Bananen	موز	موز	food	checked:level
+Orange	noun	die	Orangen	پرتقال	پرتقال	food	checked:level
+Tomate	noun	die	Tomaten	گوجه‌فرنگی	گوجه‌فرنگی	food	checked:level
+Kartoffel	noun	die	Kartoffeln	سیب‌زمینی	سیب‌زمینی	food	checked:level
+Kuchen	noun	der	Kuchen	کیک	کیک	food
+Schokolade	noun	die	Schokoladen	شکلات	شکلات	food
+Eis	noun	das		بستنی	بستنی	food	number:sg_only
+Zucker	noun	der		شکر	شکر	food	number:sg_only
+Salz	noun	das		نمک	نمک	food	number:sg_only
+Milch	noun	die		شیر (نوشیدنی)	شیر	drink	number:sg_only
+Saft	noun	der	Säfte	آب‌میوه	آب‌میوه	drink
+Cola	noun	die	Colas	نوشابه کولا	کولا	drink	checked:level
+Getränk	noun	das	Getränke	نوشیدنی	نوشیدنی	drink	checked:level
+Glas	noun	das	Gläser	لیوان	لیوان	food
+Tasse	noun	die	Tassen	فنجان	فنجان	food
+Flasche	noun	die	Flaschen	بطری	بطری	food
+Teller	noun	der	Teller	بشقاب	بشقاب	food
+Restaurant	noun	das	Restaurants	رستوران	رستوران	city
+Speisekarte	noun	die	Speisekarten	منوی غذا، صورت غذا	منوی غذا	food	checked:level
+bestellen	verb			سفارش دادن	سفارش دادن	food
+Café	noun	das	Cafés	کافه	کافه	city	note:Café یعنی «کافه»؛ خود قهوه Kaffee است.
+essen gehen	phrase			بیرون غذا خوردن	بیرون غذا خوردن	food	parts:essen gehen
+ich hätte gern	phrase			من ... می‌خواهم (مؤدبانه)	درخواست مؤدبانه	shopping	parts:haben gern
+guten Appetit	interj			نوش جان	نوش جان	people
+
+# shopping and money
+Euro	noun	der	Euro	یورو	یورو	shopping
+Cent	noun	der	Cent	سنت (پول)	سنت	shopping
+kosten	verb			قیمت داشتن، ارزیدن	قیمت داشتن	shopping
+Wie viel kostet das?	interj			این چند است؟، قیمتش چقدر است؟	پرسیدن قیمت	people
+Preis	noun	der	Preise	قیمت	قیمت	shopping
+billig	adj			ارزان	ارزان	qualities
+teuer	adj			گران	گران	qualities
+zu	adv			بیش از حد، زیادی	بیش از حد	qualities	code:zu-adv
+bezahlen	verb			پرداختن، پول دادن	پرداختن	shopping
+Rechnung	noun	die	Rechnungen	صورت‌حساب	صورت‌حساب	shopping
+Kasse	noun	die	Kassen	صندوق (پرداخت)	صندوق	shopping
+Geschäft	noun	das	Geschäfte	مغازه	مغازه	shopping
+Supermarkt	noun	der	Supermärkte	سوپرمارکت	سوپرمارکت	shopping	checked:level
+Markt	noun	der	Märkte	بازار	بازار	shopping
+Bäckerei	noun	die	Bäckereien	نانوایی	نانوایی	shopping	checked:level
+einkaufen	verb			خرید کردن	خرید کردن	shopping
+einkaufen gehen	phrase			به خرید رفتن	به خرید رفتن	shopping	parts:einkaufen gehen
+verkaufen	verb			فروختن	فروختن	shopping
+Kilo	noun	das	Kilos	کیلو	کیلو	numbers
+Gramm	noun	das	Gramm	گرم (وزن)	گرم (وزن)	numbers	checked:plural,level
+Liter	noun	der	Liter	لیتر	لیتر	numbers	checked:level
+Stück	noun	das	Stücke	تکه، عدد	تکه	numbers
+Karte	noun	die	Karten	کارت	کارت	shopping
+offen	adj			باز	باز	qualities
+geschlossen	adj			بسته	بسته	qualities
+öffnen	verb			باز کردن	باز کردن	actions
+schließen	verb			بستن	بستن	actions
+
+# home
+Wohnung	noun	die	Wohnungen	آپارتمان، خانه	آپارتمان	home
+Zimmer	noun	das	Zimmer	اتاق	اتاق	home
+Küche	noun	die	Küchen	آشپزخانه	آشپزخانه	home
+Bad	noun	das	Bäder	حمام	حمام	home	note:Bad یعنی «حمام»؛ با bad انگلیسی (بد) قاطی نکن.
+Toilette	noun	die	Toiletten	دستشویی، توالت	دستشویی	home
+Dusche	noun	die	Duschen	دوش (حمام)	دوش حمام	home
+Schlafzimmer	noun	das	Schlafzimmer	اتاق خواب	اتاق خواب	home
+Wohnzimmer	noun	das	Wohnzimmer	اتاق نشیمن، پذیرایی	اتاق نشیمن	home
+Garten	noun	der	Gärten	باغ، باغچه	باغ	home
+Balkon	noun	der	Balkone	بالکن	بالکن	home	checked:level
+Tür	noun	die	Türen	در (اتاق و خانه)	در (اتاق)	home
+Fenster	noun	das	Fenster	پنجره	پنجره	home
+Tisch	noun	der	Tische	میز	میز	home
+Stuhl	noun	der	Stühle	صندلی	صندلی	home
+Bett	noun	das	Betten	تخت‌خواب	تخت‌خواب	home
+ins Bett gehen	phrase			به رختخواب رفتن	به رختخواب رفتن	home	parts:Bett gehen
+Schrank	noun	der	Schränke	کمد	کمد	home
+Sofa	noun	das	Sofas	کاناپه، مبل	کاناپه	home
+Lampe	noun	die	Lampen	چراغ، لامپ	چراغ	home
+Kühlschrank	noun	der	Kühlschränke	یخچال	یخچال	home
+Bild	noun	das	Bilder	تصویر، عکس، تابلو	تصویر	home
+Schlüssel	noun	der	Schlüssel	کلید	کلید	home
+Miete	noun	die	Mieten	اجاره‌بها	اجاره‌بها	home
+
+# city and places
+Dorf	noun	das	Dörfer	روستا، ده	روستا	city
+Platz	noun	der	Plätze	میدان	میدان	city
+Zentrum	noun	das	Zentren	مرکز (شهر)	مرکز	city
+Bank	noun	die	Banken	بانک	بانک	city
+Post	noun	die		اداره پست، پست	پست	city	number:sg_only
+Kino	noun	das	Kinos	سینما	سینما	city
+ins Kino gehen	phrase			به سینما رفتن	به سینما رفتن	leisure	parts:Kino gehen
+Museum	noun	das	Museen	موزه	موزه	city
+Park	noun	der	Parks	پارک	پارک	city
+Schwimmbad	noun	das	Schwimmbäder	استخر	استخر	city	checked:level
+Polizei	noun	die		پلیس	پلیس	city	number:sg_only
+Krankenhaus	noun	das	Krankenhäuser	بیمارستان	بیمارستان	health
+Apotheke	noun	die	Apotheken	داروخانه	داروخانه	health	checked:level
+Hotel	noun	das	Hotels	هتل	هتل	travel
+links	adv			چپ، سمت چپ	چپ	space
+rechts	adv			راست، سمت راست	سمت راست	space
+geradeaus	adv			مستقیم، رو به جلو	مستقیم	space
+weit	adj			دور	دور	qualities
+nah	adj			نزدیک	نزدیک	qualities
+auf	prep			روی	روی	space
+unter	prep			زیرِ	زیر	space
+über	prep			بالای، روی (بدون تماس)	بالای	space
+neben	prep			کنارِ، بغلِ	بغل	space
+vor	prep			جلوی	جلو	space
+hinter	prep			پشتِ	پشت	space
+zwischen	prep			بینِ	بین	space
+ohne	prep			بدون	بدون	function
+
+# transport and travel
+Bus	noun	der	Busse	اتوبوس	اتوبوس	transport
+Bus fahren	phrase			با اتوبوس رفتن	با اتوبوس رفتن	transport	parts:Bus fahren
+Zug	noun	der	Züge	قطار	قطار	transport
+Bahn	noun	die	Bahnen	قطار، راه‌آهن	راه‌آهن	transport
+U-Bahn	noun	die	U-Bahnen	مترو	مترو	transport	checked:level
+Taxi	noun	das	Taxis	تاکسی	تاکسی	transport
+Fahrrad	noun	das	Fahrräder	دوچرخه	دوچرخه	transport
+Fahrrad fahren	phrase			دوچرخه‌سواری کردن	دوچرخه‌سواری	leisure	parts:Fahrrad fahren
+Auto fahren	phrase			رانندگی کردن	رانندگی کردن	transport	parts:Auto fahren
+Flugzeug	noun	das	Flugzeuge	هواپیما	هواپیما	transport
+fliegen	verb			پرواز کردن، با هواپیما رفتن	پرواز کردن	transport
+Bahnhof	noun	der	Bahnhöfe	ایستگاه قطار	ایستگاه قطار	transport
+Haltestelle	noun	die	Haltestellen	ایستگاه (اتوبوس و تراموا)	ایستگاه اتوبوس	transport	checked:level
+Flughafen	noun	der	Flughäfen	فرودگاه	فرودگاه	transport
+Fahrkarte	noun	die	Fahrkarten	بلیت	بلیت	transport	checked:level
+Ticket	noun	das	Tickets	بلیت	بلیت	transport	checked:level
+Gleis	noun	das	Gleise	سکو (قطار)، ریل	سکوی قطار	transport	checked:level
+abfahren	verb			حرکت کردن (وسیله نقلیه)	حرکت کردن	transport	checked:level
+ankommen	verb			رسیدن	رسیدن	transport
+einsteigen	verb			سوار شدن	سوار شدن	transport
+aussteigen	verb			پیاده شدن	پیاده شدن	transport
+umsteigen	verb			وسیله عوض کردن	عوض کردن وسیله	transport	checked:level
+Abfahrt	noun	die	Abfahrten	حرکت (وسیله نقلیه)	زمان حرکت	transport	checked:level
+Ankunft	noun	die	Ankünfte	رسیدن، ورود	ورود	transport
+schnell	adj			سریع، تند	سریع	qualities
+langsam	adj			آهسته، کند	آهسته	qualities
+Reise	noun	die	Reisen	سفر	سفر	travel
+eine Reise machen	phrase			سفر رفتن	سفر رفتن	travel	parts:Reise machen
+reisen	verb			سفر کردن	سفر کردن	travel
+Urlaub	noun	der	Urlaube	مرخصی، تعطیلات	مرخصی	travel
+Urlaub machen	phrase			به تعطیلات رفتن	به تعطیلات رفتن	travel	parts:Urlaub machen
+Ferien	noun	die		تعطیلات (مدرسه و دانشگاه)	تعطیلات	travel	number:pl_only
+Koffer	noun	der	Koffer	چمدان	چمدان	travel
+Pass	noun	der	Pässe	گذرنامه	گذرنامه	travel
+Meer	noun	das	Meere	دریا	دریا	nature	homophones:mehr
+gute Reise	interj			سفر بخیر	سفر بخیر	people
+
+# work
+Beruf	noun	der	Berufe	شغل، حرفه	شغل	work
+Job	noun	der	Jobs	کار (شغل)	کار (شغل)	work
+Firma	noun	die	Firmen	شرکت	شرکت	work
+Büro	noun	das	Büros	دفتر کار، اداره	دفتر کار	work
+Chef	noun	der	Chefs	رئیس	رئیس	work	note:Chef یعنی «رئیس»، نه آشپز.
+Kollege	noun	der	Kollegen	همکار (مرد)	همکار	work
+Kollegin	noun	die	Kolleginnen	همکار (زن)	همکار زن	work	checked:level
+Arzt	noun	der	Ärzte	پزشک، دکتر	پزشک	health
+Ärztin	noun	die	Ärztinnen	پزشک (زن)	پزشک زن	health
+Lehrer	noun	der	Lehrer	معلم	معلم	education
+Lehrerin	noun	die	Lehrerinnen	معلم (زن)	معلم زن	education
+Student	noun	der	Studenten	دانشجو	دانشجو	education	checked:level
+Studentin	noun	die	Studentinnen	دانشجو (زن)	دانشجو زن	education	checked:level
+Schüler	noun	der	Schüler	دانش‌آموز	دانش‌آموز	education
+Schülerin	noun	die	Schülerinnen	دانش‌آموز (زن)	دانش‌آموز زن	education	checked:level
+Verkäufer	noun	der	Verkäufer	فروشنده	فروشنده	work	checked:level
+Ingenieur	noun	der	Ingenieure	مهندس	مهندس	work	checked:level
+Kellner	noun	der	Kellner	گارسون	گارسون	work	checked:level
+Koch	noun	der	Köche	آشپز	آشپز	work
+
+# school and course
+Kurs	noun	der	Kurse	دوره، کلاس (آموزشی)	دوره آموزشی	education
+Klasse	noun	die	Klassen	کلاس	کلاس	education
+Universität	noun	die	Universitäten	دانشگاه	دانشگاه	education
+Uni	noun	die	Unis	دانشگاه	دانشگاه	education	register:familier
+studieren	verb			در دانشگاه درس خواندن، تحصیل کردن	تحصیل کردن	education	note:studieren فقط برای دانشگاه است؛ برای درس خواندن معمولی lernen می‌گویند.
+Prüfung	noun	die	Prüfungen	امتحان	امتحان	education
+Test	noun	der	Tests	آزمون، تست	آزمون	education
+Frage	noun	die	Fragen	سؤال، پرسش	سؤال	education
+eine Frage haben	phrase			سؤال داشتن	سؤال داشتن	education	parts:Frage haben
+Antwort	noun	die	Antworten	جواب، پاسخ	جواب	education
+Hausaufgabe	noun	die	Hausaufgaben	تکلیف، مشق	تکلیف	education
+Hausaufgaben machen	phrase			تکلیف نوشتن، مشق نوشتن	مشق نوشتن	education	parts:Hausaufgabe machen
+Heft	noun	das	Hefte	دفتر	دفتر	education	checked:level
+Kugelschreiber	noun	der	Kugelschreiber	خودکار	خودکار	education	checked:level
+Kuli	noun	der	Kulis	خودکار	خودکار	education	register:familier	checked:level
+Bleistift	noun	der	Bleistifte	مداد	مداد	education	checked:level
+Papier	noun	das	Papiere	کاغذ	کاغذ	education
+Seite	noun	die	Seiten	صفحه	صفحه	education
+Text	noun	der	Texte	متن	متن	education
+Satz	noun	der	Sätze	جمله	جمله	education
+Beispiel	noun	das	Beispiele	مثال	مثال	education
+Buchstabe	noun	der	Buchstaben	حرف (الفبا)	حرف الفبا	education	checked:level
+buchstabieren	verb			هجی کردن	هجی کردن	education	checked:level
+wiederholen	verb			تکرار کردن	تکرار کردن	education
+Fehler	noun	der	Fehler	اشتباه، غلط	اشتباه	education
+Fehler machen	phrase			اشتباه کردن	اشتباه کردن	education	parts:Fehler machen
+richtig	adj			درست، صحیح	درست	qualities
+falsch	adj			غلط، اشتباه	غلط	qualities
+auf Deutsch	adv			به آلمانی	به آلمانی	people
+Wie bitte?	interj			ببخشید، چی گفتید؟	چه گفتید	people
+
+# body and health
+Kopf	noun	der	Köpfe	سر	سر (بدن)	body
+Auge	noun	das	Augen	چشم	چشم	body
+Ohr	noun	das	Ohren	گوش	گوش	body
+Nase	noun	die	Nasen	بینی، دماغ	بینی	body
+Mund	noun	der	Münder	دهان	دهان	body
+Zahn	noun	der	Zähne	دندان	دندان	body
+Haar	noun	das	Haare	مو	مو	body
+Hand	noun	die	Hände	دست	دست	body
+Arm	noun	der	Arme	بازو	بازو	body
+Bauch	noun	der	Bäuche	شکم	شکم	body
+Rücken	noun	der	Rücken	پشت، کمر	کمر	body
+Bein	noun	das	Beine	پا	پا	body
+Fuß	noun	der	Füße	پا (از مچ به پایین)	کف پا	body
+zu Fuß gehen	phrase			پیاده رفتن	پیاده رفتن	transport	parts:Fuß gehen
+krank	adj			بیمار، مریض	بیمار	health
+gesund	adj			سالم	سالم	health
+Schmerz	noun	der	Schmerzen	درد	درد	health
+Kopfschmerzen haben	phrase			سردرد داشتن	سردرد داشتن	health	parts:Kopf Schmerz haben
+wehtun	verb			درد کردن	درد کردن	health
+Fieber	noun	das		تب	تب	health	number:sg_only
+Fieber haben	phrase			تب داشتن	تب داشتن	health	parts:Fieber haben
+Tablette	noun	die	Tabletten	قرص	قرص	health	checked:level
+gute Besserung	interj			زودتر خوب شوی، بلا دور باشد	آرزوی سلامتی	people
+
+# clothes and colours
+Kleidung	noun	die		لباس، پوشاک	پوشاک	clothes	number:sg_only
+tragen	verb			پوشیدن (به تن داشتن)	به تن داشتن	clothes
+Hose	noun	die	Hosen	شلوار	شلوار	clothes
+Hemd	noun	das	Hemden	پیراهن (مردانه)	پیراهن مردانه	clothes
+T-Shirt	noun	das	T-Shirts	تی‌شرت	تی‌شرت	clothes	checked:level
+Pullover	noun	der	Pullover	پلیور، ژاکت بافتنی	پلیور	clothes	checked:level
+Jacke	noun	die	Jacken	کاپشن، ژاکت	کاپشن	clothes
+Mantel	noun	der	Mäntel	پالتو	پالتو	clothes
+Kleid	noun	das	Kleider	پیراهن زنانه	پیراهن زنانه	clothes
+Rock	noun	der	Röcke	دامن	دامن	clothes
+Schuh	noun	der	Schuhe	کفش	کفش	clothes
+Tasche	noun	die	Taschen	کیف	کیف	clothes
+Farbe	noun	die	Farben	رنگ	رنگ	colors
+rot	adj			قرمز	قرمز	colors	family:Farbe
+blau	adj			آبی	آبی	colors	family:Farbe
+grün	adj			سبز	سبز	colors	family:Farbe
+gelb	adj			زرد	زرد	colors	family:Farbe	checked:level
+schwarz	adj			سیاه، مشکی	سیاه	colors	family:Farbe
+weiß	adj			سفید	سفید	colors	family:Farbe
+grau	adj			خاکستری	خاکستری	colors	family:Farbe	checked:level
+braun	adj			قهوه‌ای	قهوه‌ای	colors	family:Farbe	checked:level
+orange	adj			نارنجی	نارنجی	colors	family:Farbe	checked:level
+
+# weather and nature
+Wetter	noun	das		هوا (آب و هوا)	آب و هوا	weather	number:sg_only
+Sonne	noun	die		خورشید، آفتاب	خورشید	weather	number:sg_only
+scheinen	verb			تابیدن	تابیدن	weather
+Regen	noun	der		باران	باران	weather	number:sg_only
+regnen	verb			باران آمدن	باران آمدن	weather	checked:level
+Schnee	noun	der		برف	برف	weather	number:sg_only
+schneien	verb			برف آمدن	برف آمدن	weather	checked:level
+Wind	noun	der	Winde	باد	باد	weather
+warm	adj			گرم	گرم	weather
+kalt	adj			سرد	سرد	weather
+heiß	adj			داغ، خیلی گرم	داغ	weather
+Grad	noun	der	Grade	درجه	درجه	weather
+Berg	noun	der	Berge	کوه	کوه	nature
+Baum	noun	der	Bäume	درخت	درخت	nature
+Blume	noun	die	Blumen	گل	گل	nature
+Tier	noun	das	Tiere	حیوان، جانور	حیوان	animals
+Hund	noun	der	Hunde	سگ	سگ	animals
+Katze	noun	die	Katzen	گربه	گربه	animals
+Vogel	noun	der	Vögel	پرنده	پرنده	animals
+Pferd	noun	das	Pferde	اسب	اسب	animals
+
+# free time
+Freizeit	noun	die		وقت آزاد، اوقات فراغت	وقت آزاد	leisure	number:sg_only	checked:level
+Hobby	noun	das	Hobbys	سرگرمی	سرگرمی	leisure	checked:level
+Sport	noun	der		ورزش	ورزش	leisure	number:sg_only
+Sport machen	phrase			ورزش کردن	ورزش کردن	leisure	parts:Sport machen
+Fußball	noun	der		فوتبال	فوتبال	leisure	number:sg_only
+Fußball spielen	phrase			فوتبال بازی کردن	فوتبال بازی کردن	leisure	parts:Fußball spielen
+Karten spielen	phrase			ورق بازی کردن	ورق بازی کردن	leisure	parts:Karte spielen
+Spiel	noun	das	Spiele	بازی	بازی	leisure
+Musik	noun	die		موسیقی	موسیقی	leisure	number:sg_only
+Musik hören	phrase			موسیقی گوش دادن	موسیقی گوش دادن	leisure	parts:Musik hören
+Film	noun	der	Filme	فیلم	فیلم	leisure
+Konzert	noun	das	Konzerte	کنسرت	کنسرت	leisure
+schwimmen	verb			شنا کردن	شنا کردن	leisure
+schwimmen gehen	phrase			به شنا رفتن	به شنا رفتن	leisure	parts:schwimmen gehen
+laufen	verb			دویدن، پیاده رفتن	دویدن	leisure
+spazieren gehen	phrase			قدم زدن، پیاده‌روی کردن	قدم زدن	leisure	parts:gehen
+tanzen	verb			رقصیدن	رقصیدن	leisure
+singen	verb			آواز خواندن	آواز خواندن	leisure
+Foto	noun	das	Fotos	عکس	عکس	leisure
+Fotos machen	phrase			عکس گرفتن	عکس گرفتن	leisure	parts:Foto machen
+fotografieren	verb			عکاسی کردن، عکس گرفتن	عکاسی کردن	leisure	checked:level
+Party	noun	die	Partys	مهمانی، جشن	مهمانی	leisure
+Spaß	noun	der		تفریح، خوش گذشتن	تفریح	feelings	number:sg_only
+Spaß machen	phrase			خوش گذشتن، کیف دادن	کیف دادن	feelings	parts:Spaß machen
+viel Spaß	interj			خوش بگذرد	خوش بگذرد	people
+Glück	noun	das		شانس، خوشبختی	شانس	feelings	number:sg_only
+viel Glück	interj			موفق باشی، شانس بیاوری	آرزوی موفقیت	people
+Angst	noun	die	Ängste	ترس	ترس	feelings
+Angst haben	phrase			ترسیدن	ترسیدن	feelings	parts:Angst haben	note:با haben می‌آید: Ich habe Angst.
+treffen	verb			(کسی را) دیدن، ملاقات کردن	ملاقات کردن	people
+besuchen	verb			به دیدن (کسی) رفتن، سر زدن	دیدار کردن	people
+einladen	verb			دعوت کردن	دعوت کردن	people
+kennenlernen	verb			آشنا شدن با	آشنا شدن	people
+freut mich	interj			خوشوقتم، از آشنایی‌تان خوشحالم	خوشوقتم	people
+mitkommen	verb			همراه آمدن	همراه آمدن	actions
+
+# phone, mail, forms
+Handy	noun	das	Handys	تلفن همراه، موبایل	موبایل	media	note:Handy در آلمانی یعنی «موبایل».
+anrufen	verb			زنگ زدن، تلفن کردن	زنگ زدن	media
+telefonieren	verb			تلفنی صحبت کردن	تلفنی صحبت کردن	media
+E-Mail	noun	die	E-Mails	ایمیل	ایمیل	media	checked:level
+Brief	noun	der	Briefe	نامه	نامه	media
+Gruß	noun	der	Grüße	سلام (در نامه)، درود	درود	media	checked:level
+schicken	verb			فرستادن	فرستادن	media
+bekommen	verb			گرفتن، دریافت کردن	دریافت کردن	actions	note:bekommen یعنی «گرفتن»، نه «شدن» (become).
+Computer	noun	der	Computer	رایانه، کامپیوتر	رایانه	media
+Internet	noun	das		اینترنت	اینترنت	media	number:sg_only
+Zeitung	noun	die	Zeitungen	روزنامه	روزنامه	media
+Radio	noun	das	Radios	رادیو	رادیو	media
+Fernseher	noun	der	Fernseher	تلویزیون (دستگاه)	تلویزیون	media
+fernsehen	verb			تلویزیون تماشا کردن	تلویزیون تماشا کردن	media
+Information	noun	die	Informationen	اطلاعات، خبر	اطلاعات	media
+Formular	noun	das	Formulare	فرم	فرم	media	checked:level
+ausfüllen	verb			پر کردن (فرم)	پر کردن فرم	media	checked:level
+
+# everyday verbs and opinions
+helfen	verb			کمک کردن	کمک کردن	actions
+zeigen	verb			نشان دادن	نشان دادن	actions
+bringen	verb			آوردن	آوردن	actions
+holen	verb			رفتن و آوردن	رفتن و آوردن	actions
+stehen	verb			ایستادن	ایستادن	actions
+sitzen	verb			نشستن	نشستن	actions
+liegen	verb			دراز کشیدن، قرار داشتن	دراز کشیدن	actions
+glauben	verb			باور کردن، گمان کردن	باور کردن	abstract
+denken	verb			فکر کردن	فکر کردن	abstract
+stimmen	verb			درست بودن	درست بودن	abstract
+finden	verb			به نظر (کسی) ... بودن، دانستن	نظر داشتن	abstract	code:finden-2	sense_of:finden
+gefallen	verb			خوش آمدن (از)، پسندیدن	پسندیدن	feelings
+lieben	verb			خیلی دوست داشتن، عاشق (چیزی) بودن	عشق داشتن	feelings
+leidtun	verb			متأسف بودن	متأسف بودن	feelings	checked:level
+es tut mir leid	interj			متأسفم	متأسفم	people
+Problem	noun	das	Probleme	مشکل	مشکل	abstract
+kein Problem	interj			مشکلی نیست	مشکلی نیست	people
+das macht nichts	interj			اشکالی ندارد	اشکالی ندارد	people
+vielleicht	adv			شاید	شاید	abstract
+natürlich	adv			البته، حتماً	البته	abstract
+leider	adv			متأسفانه	متأسفانه	feelings
+doch	adv			چرا (در جواب سؤال منفی)	doch: چرا	function
+so	adv			این‌طور، این‌قدر	این‌طور	qualities
+in Ordnung	adv			مرتب، روبه‌راه، باشه	روبه‌راه	qualities
+toll	adj			عالی، معرکه	عالی	qualities
+super	adj			عالی، فوق‌العاده	عالی	qualities
+nett	adj			مهربان، خوش‌برخورد	مهربان	character
+freundlich	adj			خوش‌رو، مهربان	خوش‌رو	character
+lustig	adj			بامزه، شوخ	بامزه	character
+ruhig	adj			آرام، ساکت	آرام	character
+glücklich	adj			خوشحال، خوشبخت	خوشحال	feelings
+traurig	adj			غمگین، ناراحت	غمگین	feelings
+interessant	adj			جالب	جالب	qualities
+langweilig	adj			خسته‌کننده	خسته‌کننده	qualities
+leicht	adj			آسان	آسان	qualities
+schwer	adj			سخت، دشوار	سخت	qualities
+einfach	adj			ساده	ساده	qualities
+wichtig	adj			مهم	مهم	qualities
+lang	adj			بلند، طولانی	بلند (طول)	qualities
+kurz	adj			کوتاه	کوتاه	qualities
+fertig	adj			آماده، تمام‌شده	آماده	qualities
+klar	adj			روشن، واضح	واضح	qualities
+
+# greetings and wishes for later in A1
+willkommen	interj			خوش آمدید	خوش آمدید	people
+vielen Dank	interj			خیلی ممنون	خیلی ممنون	people
+danke schön	interj			خیلی ممنون، متشکرم	خیلی ممنون	people
+bitte schön	interj			بفرمایید، خواهش می‌کنم	بفرمایید	people
+Wie geht's?	interj			حالت چطور است؟	احوال‌پرسی	people
+es geht	interj			بد نیست، معمولی	بد نیست	people
+bis bald	interj			به امید دیدار، تا بعد	تا بعد	people
+bis morgen	interj			تا فردا	تا فردا	people
+alles Gute	interj			بهترین آرزوها، مبارک باشد	آرزوی خوب	people
+schönes Wochenende	interj			آخر هفته خوبی داشته باشی	آخر هفته خوش	people
