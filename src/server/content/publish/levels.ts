@@ -67,17 +67,22 @@ async function levelSentences(tx: Tx, language: string, level: string, items: Ch
   return (await tx.sentence.findMany({ where: { id: { in: [...all] }, status: "published" }, select: { id: true } })).map((row) => row.id);
 }
 
-/** The recording that plays (human first, then machine) and whether someone has listened to it (PRD §13.4). */
+/**
+ * The recording that plays (human first, then machine) and whether someone has listened to it (PRD §13.4).
+ * A file our machine voice made does not wait for «شنیدم» (DECISIONS.md, 18 Nov 2026).
+ */
 async function listening(tx: Tx, rows: { human: number | null; machine: number | null }[]) {
   const ids = rows.flatMap((row) => [row.human, row.machine]).filter((id): id is number => id !== null);
-  const assets = new Map((await tx.audioAsset.findMany({ where: { id: { in: ids } }, select: { id: true, stale: true, listened_at: true } })).map((row) => [row.id, row]));
+  const assets = new Map(
+    (await tx.audioAsset.findMany({ where: { id: { in: ids } }, select: { id: true, stale: true, listened_at: true, made_from: true } })).map((row) => [row.id, row]),
+  );
   let heard = 0;
   let total = 0;
   for (const row of rows) {
     const human = row.human !== null ? assets.get(row.human) : undefined;
     const machine = row.machine !== null ? assets.get(row.machine) : undefined;
     const playing = human && !human.stale ? human : machine && !machine.stale ? machine : null;
-    if (!playing) continue;
+    if (!playing || (playing === machine && playing.made_from !== null)) continue;
     total++;
     if (playing.listened_at) heard++;
   }

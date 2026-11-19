@@ -13,6 +13,7 @@ import type { SlotView } from "@/server/content/audio/view";
 import { pickLanguage } from "@/server/content/languages";
 import { itemHref } from "../content/links";
 import { BulkUpload } from "./bulk-upload";
+import { GeneratorCard } from "./generator-card";
 
 export const metadata: Metadata = { title: t("admin.nav.audio") };
 
@@ -35,8 +36,9 @@ function rowLabel(slot: SlotView) {
 }
 
 /**
- * «صدا» (PRD §13.2, §13.8): files waiting to be heard, stale files to record again, places without a
- * file, and bulk upload. The phone's voice reads every place that has no file.
+ * «صدا» (PRD §13.2, §13.8): the machine voice's progress, files waiting to be heard, places the machine
+ * voice speaks, stale files to record again, places without a file, and bulk upload. The phone's voice
+ * reads every place that has no file.
  */
 export default async function AudioPage({ searchParams }: PageProps<"/admin/audio">) {
   const admin = await requireAdmin();
@@ -52,6 +54,7 @@ export default async function AudioPage({ searchParams }: PageProps<"/admin/audi
       <PageHeader title={t("admin.nav.audio")} lead={t("admin.audio.page.lead")} actions={<LanguageTabs current={language} path={`/admin/audio?tab=${tab}`} />} />
 
       <div className="flex flex-col gap-5">
+        <GeneratorCard language={language} />
         <nav aria-label={t("admin.audio.page.tabsLabel")} className="-mx-5 overflow-x-auto px-5 pb-1 lg:mx-0 lg:overflow-visible lg:px-0">
           <ul className="flex w-max gap-1.5">
             {[...audioTabs, "upload" as const].map((item) => (

@@ -2,8 +2,8 @@
 
 import { useState, useTransition, type ReactNode } from "react";
 import Link from "@/components/admin/link";
-import { Check, CircleAlert, Ellipsis, LoaderCircle, Mic, Play, Smartphone, Square, Trash2, Upload } from "lucide-react";
-import { heardAction, removeHumanAction } from "@/app/admin/audio/actions";
+import { AudioLines, Check, CircleAlert, Ellipsis, LoaderCircle, Mic, Play, RotateCcw, Smartphone, Square, Trash2, Upload } from "lucide-react";
+import { allowMachineAction, heardAction, removeHumanAction, removeMachineAction } from "@/app/admin/audio/actions";
 import { Voiced } from "@/components/admin/voiced";
 import {
   AlertDialog,
@@ -29,6 +29,8 @@ import { formatDuration, useCapture, type Capture, type Notice } from "./use-cap
 export const playingAsset = (slot: SlotView): AssetView | null => (slot.playing === "human" ? slot.human : slot.playing === "machine" ? slot.machine : null);
 /** A stale file still kept, so the teacher can hear what the old one said. */
 const staleAsset = (slot: SlotView) => (slot.human?.stale ? slot.human : slot.machine?.stale ? slot.machine : null);
+/** The file plays and waits for «شنیدم»: not one our machine voice made (DECISIONS.md, 18 Nov 2026). */
+const awaitsHearing = (asset: AssetView | null): asset is AssetView => asset !== null && !asset.heard && !asset.auto;
 
 /** Plays a file, or reads the text with the device's voice when there is none. */
 export function PlayButton({
@@ -94,6 +96,13 @@ export function AudioStateChip({ slot, needsFile }: { slot: SlotView; needsFile?
       <span className={cn(chip, "bg-ok-soft text-ok")}>
         <Check className="size-3.5" strokeWidth={2.75} aria-hidden />
         {t("admin.audio.heard")}
+      </span>
+    );
+  if (asset?.auto)
+    return (
+      <span className={cn(chip, "bg-tint text-brand-text")}>
+        <AudioLines className="size-3.5" strokeWidth={2.25} aria-hidden />
+        {t("admin.audio.machineChip")}
       </span>
     );
   if (asset) return <span className={cn(chip, "bg-idk-soft text-idk")}>{t("admin.audio.notHeard")}</span>;
@@ -168,6 +177,63 @@ function RemoveDialog({ slotKey, open, onOpenChange, onDone }: { slotKey: string
         </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>
+  );
+}
+
+/** «برداشتن صدای ماشینی»: it is not made again while the item says the same; «دوباره بساز» undoes that. */
+function RemoveMachineDialog({
+  slot,
+  open,
+  onOpenChange,
+  onDone,
+}: {
+  slot: SlotView;
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
+  onDone: (notice: Notice) => void;
+}) {
+  const [pending, startTransition] = useTransition();
+  const fallback = t(slot.human && !slot.human.stale ? "admin.audio.machine.remove.fallbackHuman" : "admin.audio.machine.remove.fallbackDevice");
+  return (
+    <AlertDialog open={open} onOpenChange={onOpenChange}>
+      <AlertDialogContent>
+        <AlertDialogHeader>
+          <AlertDialogTitle>{t("admin.audio.machine.remove.title")}</AlertDialogTitle>
+          <AlertDialogDescription>{t("admin.audio.machine.remove.body", { fallback })}</AlertDialogDescription>
+        </AlertDialogHeader>
+        <AlertDialogFooter>
+          <AlertDialogCancel>{t("admin.audio.machine.remove.cancel")}</AlertDialogCancel>
+          <AlertDialogAction
+            disabled={pending}
+            onClick={(event) => {
+              event.preventDefault();
+              startTransition(async () => {
+                const outcome = await removeMachineAction(slot.key);
+                onDone(outcome);
+                onOpenChange(false);
+              });
+            }}
+          >
+            {pending ? <LoaderCircle className="animate-spin motion-reduce:animate-none" strokeWidth={2} aria-hidden /> : null}
+            {t("admin.audio.machine.remove.confirm")}
+          </AlertDialogAction>
+        </AlertDialogFooter>
+      </AlertDialogContent>
+    </AlertDialog>
+  );
+}
+
+/** A slot whose machine file a teacher took out: says so, with «دوباره بساز». */
+function DeclinedNote({ slotKey, onDone }: { slotKey: string; onDone: (notice: Notice) => void }) {
+  const [pending, startTransition] = useTransition();
+  return (
+    <div className="bg-tint text-ink flex flex-col items-start gap-2 rounded-[14px] px-3.5 py-3 text-[13px] leading-6">
+      <p>{t("admin.audio.machine.declined")}</p>
+      <Button type="button" variant="outline" size="xs" className="bg-surface" disabled={pending} onClick={() => startTransition(async () => onDone(await allowMachineAction(slotKey)))}>
+        {pending ? <LoaderCircle className="animate-spin motion-reduce:animate-none" strokeWidth={2} aria-hidden /> : <RotateCcw strokeWidth={2} aria-hidden />}
+        {t("admin.audio.machine.allow")}
+      </Button>
+    </div>
   );
 }
 
@@ -327,9 +393,12 @@ export function AudioCard({
 }) {
   const capture = useCapture(slot, onReady);
   const [removing, setRemoving] = useState(false);
+  const [removingMachine, setRemovingMachine] = useState(false);
   const asset = playingAsset(slot);
   const stale = staleAsset(slot);
   const notice = capture.notice ?? recorderNotice(capture);
+  // The machine file waiting behind the teacher's own, to compare.
+  const reserve = slot.playing === "human" && slot.machine && !slot.machine.stale ? slot.machine : null;
 
   return (
     <section className="bg-surface flex flex-col gap-4 rounded-[22px] px-5 py-5 shadow-[var(--shadow-1)]" data-audio-slot={slot.key}>
@@ -346,7 +415,8 @@ export function AudioCard({
       </div>
       {!asset ? (
         <div className="flex flex-col gap-1">
-          <p className="text-ink-3 text-[13px] leading-6">{t("admin.audio.deviceHint")}</p>
+          {/* Taken out by a teacher: the note below says why nothing will be made. */}
+          {slot.declined ? null : <p className="text-ink-3 text-[13px] leading-6">{t("admin.audio.deviceHint")}</p>}
           <DeviceNote language={language} />
         </div>
       ) : null}
@@ -356,37 +426,55 @@ export function AudioCard({
           <OldFile asset={stale} slotKey={slot.key} />
         </div>
       ) : null}
-      {asset && !asset.heard && !busy(capture) ? <HeardButton asset={asset} onDone={capture.setNotice} /> : null}
+      {reserve ? (
+        <div className="bg-tint text-ink flex flex-col gap-2 rounded-[14px] px-3.5 py-3 text-[13px] leading-6">
+          <p>{t("admin.audio.machine.reserve")}</p>
+          <OldFile asset={reserve} slotKey={`machine:${slot.key}`} label={t("admin.audio.machine.playReserve")} className="text-brand-text" />
+        </div>
+      ) : null}
+      {slot.declined ? <DeclinedNote slotKey={slot.key} onDone={capture.setNotice} /> : null}
+      {awaitsHearing(asset) && !busy(capture) ? <HeardButton asset={asset} onDone={capture.setNotice} /> : null}
       {children}
       {busy(capture) ? <CapturePanel capture={capture} slotKey={slot.key} keepLabel={keepLabel} /> : <CaptureButtons capture={capture} />}
       <NoticeLine notice={notice} />
-      {slot.human && !busy(capture) ? (
-        <Button type="button" variant="ghost" size="sm" className="text-ink-3 hover:text-bad -ms-2 w-fit" onClick={() => setRemoving(true)}>
-          <Trash2 strokeWidth={2} aria-hidden />
-          {t("admin.audio.remove.button")}
-        </Button>
+      {(slot.human || slot.machine) && !busy(capture) ? (
+        <div className="-ms-2 flex flex-wrap gap-x-1">
+          {slot.human ? (
+            <Button type="button" variant="ghost" size="sm" className="text-ink-3 hover:text-bad w-fit" onClick={() => setRemoving(true)}>
+              <Trash2 strokeWidth={2} aria-hidden />
+              {t("admin.audio.remove.button")}
+            </Button>
+          ) : null}
+          {slot.machine ? (
+            <Button type="button" variant="ghost" size="sm" className="text-ink-3 hover:text-bad w-fit" onClick={() => setRemovingMachine(true)}>
+              <Trash2 strokeWidth={2} aria-hidden />
+              {t("admin.audio.machine.remove.button")}
+            </Button>
+          ) : null}
+        </div>
       ) : null}
       <RemoveDialog slotKey={slot.key} open={removing} onOpenChange={setRemoving} onDone={capture.setNotice} />
+      <RemoveMachineDialog slot={slot} open={removingMachine} onOpenChange={setRemovingMachine} onDone={capture.setNotice} />
       <FileInput capture={capture} />
     </section>
   );
 }
 
-function OldFile({ asset, slotKey }: { asset: AssetView; slotKey: string }) {
+function OldFile({ asset, slotKey, label, className }: { asset: AssetView; slotKey: string; label?: string; className?: string }) {
   const id = `old:${slotKey}`;
   const playing = usePlaying(id);
   return (
     <button
       type="button"
       onClick={() => (playing ? stopPlaying() : playFile(id, asset.url))}
-      className="text-idk flex w-fit items-center gap-1.5 font-bold underline-offset-4 hover:underline"
+      className={cn("text-idk flex w-fit items-center gap-1.5 font-bold underline-offset-4 hover:underline", className)}
     >
       {playing ? (
         <Square className="size-3" fill="currentColor" strokeWidth={0} aria-hidden />
       ) : (
         <Play className="size-3.5 rtl:-scale-x-100" fill="currentColor" strokeWidth={0} aria-hidden />
       )}
-      {t(playing ? "admin.audio.stop" : "admin.audio.playOld")}
+      {playing ? t("admin.audio.stop") : (label ?? t("admin.audio.playOld"))}
     </button>
   );
 }
@@ -398,6 +486,8 @@ function OldFile({ asset, slotKey }: { asset: AssetView; slotKey: string }) {
 export function AudioRow({ slot, language, label, needsFile, href }: { slot: SlotView; language: string; label?: string; needsFile?: boolean; href?: string }) {
   const capture = useCapture(slot);
   const [removing, setRemoving] = useState(false);
+  const [removingMachine, setRemovingMachine] = useState(false);
+  const [allowing, startAllow] = useTransition();
   const asset = playingAsset(slot);
   const notice = capture.notice ?? recorderNotice(capture);
   const text = <Voiced text={slot.spoken} voice="target" language={language} className="text-ink text-[16px] leading-snug" />;
@@ -419,22 +509,42 @@ export function AudioRow({ slot, language, label, needsFile, href }: { slot: Slo
         <div className="flex min-w-0 flex-wrap items-center gap-x-3 gap-y-1.5">
           <div className="flex items-center gap-1.5">
             <AudioStateChip slot={slot} needsFile={needsFile} />
-            {asset && !asset.heard && !busy(capture) ? <HeardButton asset={asset} onDone={capture.setNotice} size="xs" /> : null}
+            {awaitsHearing(asset) && !busy(capture) ? <HeardButton asset={asset} onDone={capture.setNotice} size="xs" /> : null}
           </div>
           <div className="flex items-center gap-1">
             {busy(capture) ? null : <CaptureButtons capture={capture} compact />}
-            {slot.human && !busy(capture) ? (
+            {(slot.human || slot.machine || slot.declined) && !busy(capture) ? (
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button type="button" variant="ghost" size="icon-sm" aria-label={t("admin.audio.more")} title={t("admin.audio.more")}>
-                    <Ellipsis strokeWidth={2} aria-hidden />
+                  <Button type="button" variant="ghost" size="icon-sm" aria-label={t("admin.audio.more")} title={t("admin.audio.more")} disabled={allowing}>
+                    {allowing ? <LoaderCircle className="animate-spin motion-reduce:animate-none" strokeWidth={2} aria-hidden /> : <Ellipsis strokeWidth={2} aria-hidden />}
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="end">
-                  <DropdownMenuItem variant="destructive" onSelect={() => setRemoving(true)}>
-                    <Trash2 strokeWidth={2} aria-hidden />
-                    {t("admin.audio.remove.button")}
-                  </DropdownMenuItem>
+                  {slot.machine && slot.playing === "human" && !slot.machine.stale ? (
+                    <DropdownMenuItem onSelect={() => playFile(`old:machine:${slot.key}`, slot.machine!.url)}>
+                      <Play className="rtl:-scale-x-100" fill="currentColor" strokeWidth={0} aria-hidden />
+                      {t("admin.audio.machine.playReserve")}
+                    </DropdownMenuItem>
+                  ) : null}
+                  {slot.declined ? (
+                    <DropdownMenuItem onSelect={() => startAllow(async () => capture.setNotice(await allowMachineAction(slot.key)))}>
+                      <RotateCcw strokeWidth={2} aria-hidden />
+                      {t("admin.audio.machine.allow")}
+                    </DropdownMenuItem>
+                  ) : null}
+                  {slot.machine ? (
+                    <DropdownMenuItem variant="destructive" onSelect={() => setRemovingMachine(true)}>
+                      <Trash2 strokeWidth={2} aria-hidden />
+                      {t("admin.audio.machine.remove.button")}
+                    </DropdownMenuItem>
+                  ) : null}
+                  {slot.human ? (
+                    <DropdownMenuItem variant="destructive" onSelect={() => setRemoving(true)}>
+                      <Trash2 strokeWidth={2} aria-hidden />
+                      {t("admin.audio.remove.button")}
+                    </DropdownMenuItem>
+                  ) : null}
                 </DropdownMenuContent>
               </DropdownMenu>
             ) : null}
@@ -444,6 +554,7 @@ export function AudioRow({ slot, language, label, needsFile, href }: { slot: Slo
       {busy(capture) ? <CapturePanel capture={capture} slotKey={slot.key} /> : null}
       <NoticeLine notice={notice} />
       <RemoveDialog slotKey={slot.key} open={removing} onOpenChange={setRemoving} onDone={capture.setNotice} />
+      <RemoveMachineDialog slot={slot} open={removingMachine} onOpenChange={setRemovingMachine} onDone={capture.setNotice} />
       <FileInput capture={capture} />
     </li>
   );

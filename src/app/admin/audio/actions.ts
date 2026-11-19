@@ -5,7 +5,7 @@ import { t } from "@/i18n";
 import { requireAdmin } from "@/server/auth/session";
 import { parseSlot } from "@/server/content/audio/slots";
 import { matchFiles, type FileMatch } from "@/server/content/audio/match";
-import { joinTextAudio, markHeard, removeHumanAudio, setTextOffsets } from "@/server/content/audio/store";
+import { allowMachineAudio, joinTextAudio, markHeard, removeHumanAudio, removeMachineAudio, setTextOffsets } from "@/server/content/audio/store";
 import { isLanguage } from "@/server/content/languages";
 import { logError } from "@/server/errors";
 
@@ -33,6 +33,26 @@ export async function removeHumanAction(slotKey: string): Promise<AudioOutcome> 
     if (!slot) return failed();
     const result = await removeHumanAudio(slot, adminId);
     return result.state === "done" ? { ok: true, message: t("admin.audio.removed") } : { ok: false, message: t("admin.audio.gone") };
+  });
+}
+
+/** «برداشتن صدای ماشینی»: out, and not made again while the item says the same (DECISIONS.md). */
+export async function removeMachineAction(slotKey: string): Promise<AudioOutcome> {
+  return run("audio.removeMachine", async (adminId) => {
+    const slot = parseSlot(slotKey);
+    if (!slot) return failed();
+    const result = await removeMachineAudio(slot, adminId);
+    return result.state === "done" ? { ok: true, message: t("admin.audio.machine.remove.done") } : { ok: false, message: t("admin.audio.gone") };
+  });
+}
+
+/** «دوباره بساز»: the machine voice may fill the slot again. */
+export async function allowMachineAction(slotKey: string): Promise<AudioOutcome> {
+  return run("audio.allowMachine", async () => {
+    const slot = parseSlot(slotKey);
+    if (!slot) return failed();
+    await allowMachineAudio(slot);
+    return { ok: true, message: t("admin.audio.machine.allowed") };
   });
 }
 
