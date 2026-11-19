@@ -81,6 +81,14 @@ describe("word lists (content/<language>/words/<LEVEL>.tsv)", () => {
     expect(found).toEqual(["A1.tsv:3 part «» is of a higher level", "A1.tsv:3 part «» is of a higher level", "A2.tsv:2 code «» is also on A1.tsv:2", "A2.tsv:2 repeats A1.tsv:2"]);
   });
 
+  it("finds the rank and lexicon entry of a word with œ, which the Lexique data spell oe", () => {
+    const oe = new Map([["coeur", 290]]);
+    const text = tsv(["cœur", "noun", "f", "", "قلب", "قلب", "body"]);
+    const pack = checkWordPack("fr", [{ level: "A1", file: "A1.tsv", text }], oe, parseLexicon("coeur\tm=coeurs\n"));
+    expect(pack.words[0].rank).toBe(290);
+    expect(pack.warnings.map((note) => note.lemma)).toEqual(["cœur"]);
+  });
+
   it("warns on a gender, plural or level the lexicon and the frequency list disagree with, unless checked", () => {
     const text = tsv(["voiture", "noun", "m", "", "ماشین", "ماشین", "transport"], ["œil", "noun", "m", "oeils", "چشم", "چشم", "body", "checked:plural"]);
     const pack = check("fr", [{ level: "B1", file: "B1.tsv", text }]);

@@ -50,6 +50,14 @@ export function parseLexicon(text: string): Map<string, Entry> {
  */
 export const LEVEL_RANK = { rareFrom: { A1: 5000, A2: 8000, B1: 12000 } as Record<string, number>, commonUpTo: 500, commonFrom: ["B1", "B2", "C1", "C2"] };
 
+/**
+ * Lexique writes œ and æ as oe and ae (oeil, coeur, soeur), in its lemmas and in the frequency list built
+ * from it; a word written the right way is looked up in that spelling too.
+ */
+export function lexiconSpelling(text: string) {
+  return text.replace(/œ/g, "oe").replace(/Œ/g, "Oe").replace(/æ/g, "ae").replace(/Æ/g, "Ae");
+}
+
 export type NounFacts = { lemma: string; pos: string; gender: string | null; number: string | null; plural: string | null; level: string };
 
 export function lexiconFlags(word: NounFacts, language: string, rank: number | null, lexicon = nounLexicon(language)): Problem[] {
@@ -60,7 +68,8 @@ export function lexiconFlags(word: NounFacts, language: string, rank: number | n
     if (rank <= LEVEL_RANK.commonUpTo && LEVEL_RANK.commonFrom.includes(word.level)) flags.push(problem("levelCommon", { lemma: word.lemma, rank, level: word.level }));
   }
   if (word.pos !== "noun" || !word.gender || !lexicon) return flags;
-  const entry = lexicon.get(word.lemma) ?? (language === "fr" ? lexicon.get(word.lemma.toLowerCase()) : undefined);
+  const spelled = lexiconSpelling(word.lemma);
+  const entry = lexicon.get(word.lemma) ?? lexicon.get(spelled) ?? (language === "fr" ? lexicon.get(spelled.toLowerCase()) : undefined);
   if (!entry || entry.size === 0) return flags;
   const given = word.gender === "mf" ? ["m", "f"] : [word.gender];
   const matching = given.filter((gender) => entry.has(gender));
@@ -70,7 +79,7 @@ export function lexiconFlags(word: NounFacts, language: string, rank: number | n
   }
   if (word.plural && word.number !== "pl_only") {
     const plurals = [...new Set(matching.flatMap((gender) => entry.get(gender) ?? []))];
-    if (plurals.length > 0 && !plurals.includes(word.plural)) flags.push(problem("lexiconPlural", { lemma: word.lemma, value: word.plural, expected: plurals.join("، ") }));
+    if (plurals.length > 0 && !plurals.includes(word.plural) && !plurals.includes(lexiconSpelling(word.plural))) flags.push(problem("lexiconPlural", { lemma: word.lemma, value: word.plural, expected: plurals.join("، ") }));
   }
   return flags;
 }
