@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import type { VerbsInfo as GermanVerbs } from "german-verbs-dict";
 import { fold } from "@/engine/tokens";
+import { germanVerb } from "../german-verbs";
 import { closedTable } from "./closed";
 import type { PackWord } from "./words";
 
@@ -36,11 +36,6 @@ export function formReadings(language: string, root = process.cwd()): Map<string
   return out;
 }
 
-let germanVerbs: GermanVerbs | null = null;
-export function germanVerbDict(root = process.cwd()): GermanVerbs {
-  germanVerbs ??= JSON.parse(readFileSync(join(root, "node_modules", "german-verbs-dict", "dist", "verbs.json"), "utf8")) as GermanVerbs;
-  return germanVerbs;
-}
 
 /** Lexique's category of a reading as the lists' part of speech; null when any part of speech may do. */
 function frenchPos(tag: string): string[] {
@@ -127,8 +122,10 @@ export class Morph {
       const key = fold(bareLemma(item.word.lemma));
       byLemma.set(key, [...(byLemma.get(key) ?? []), item]);
       // The lexicon's frequency of each reading decides between two words (été: the verb before the season);
-      // the lemma itself only starts above an unknown form.
-      add(this.forms, item.word.lemma, { word: item, score: 6, via: "lemma" });
+      // the lemma itself only starts above an unknown form. A function word the list gives as a form of its
+      // own (German «das», French «la») beats the closed table's base word (der, le).
+      const functionWord = ["det", "pron", "prep", "conj", "num"].includes(item.word.pos);
+      add(this.forms, item.word.lemma, { word: item, score: functionWord ? 8.5 : 6, via: "lemma" });
       if (item.word.plural) add(this.forms, item.word.plural, { word: item, score: 6, via: "lemma" });
     }
     // Forms from the lexicon: a reading whose lemma is a word of the lists with a fitting part of speech.
@@ -155,9 +152,8 @@ export class Morph {
       }
     }
     if (language === "de") {
-      const dict = germanVerbDict(root);
       for (const item of words) {
-        if (item.word.pos === "verb") this.addGermanVerb(dict, item);
+        if (item.word.pos === "verb") this.addGermanVerb(item, root);
         if (item.word.pos === "adj" || item.word.pos === "adv") {
           for (const { form } of germanAdjectiveForms(item.word.lemma)) add(this.forms, form, { word: item, score: 7, via: "adjective" });
         }
@@ -165,9 +161,9 @@ export class Morph {
     }
   }
 
-  private addGermanVerb(dict: GermanVerbs, item: PackWord) {
+  private addGermanVerb(item: PackWord, root: string) {
     const verb = bareLemma(item.word.lemma);
-    const info = dict[verb] as unknown as Record<string, unknown> | undefined;
+    const info = germanVerb(verb, { root, weak: true })?.entry;
     if (!info) return;
     const visit = (value: unknown) => {
       if (typeof value === "string") add(this.forms, value, { word: item, score: 8, via: "verb" });

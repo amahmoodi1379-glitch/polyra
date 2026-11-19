@@ -6,6 +6,7 @@ import * as germanVerbs from "german-verbs";
 import type { VerbsInfo as GermanVerbs } from "german-verbs-dict";
 import { fold } from "@/engine/tokens";
 import { pronounKeys } from "@/schemas/conjugation";
+import { germanVerb, germanVerbData } from "./german-verbs";
 import type { LanguageCode } from "./languages";
 
 /**
@@ -56,6 +57,8 @@ const germanPersons: [Persons, Numbers][] = [
 ];
 
 const clean = (text: string) => fold(text).replace(/\s+/g, " ").trim();
+/** german-verbs writes a reflexive separable verb as «ruhe,aus mich»: the pronoun goes before the particle. */
+const germanOrder = (text: string) => text.replace(/^([^\s,]+),([^\s,]+) (\S+)/u, "$1 $3 $2");
 
 let french: FrenchVerbs | null = null;
 let german: GermanVerbs | null = null;
@@ -111,10 +114,10 @@ function frenchReadings(verb: string, tense: string): Reading[] | null {
 function germanReadings(verb: string, tense: string): Reading[] | null {
   const codes = germanTenses[tense];
   if (!codes) return null;
-  german ??= data<GermanVerbs>("german-verbs-dict/dist/verbs.json");
+  german ??= germanVerbData();
   const verbs = german;
   const bare = verb.replace(/^sich /, "");
-  if (!(bare in verbs)) return null;
+  if (!germanVerb(bare)) return null;
   const auxes: germanVerbs.GermanAux[] = germanVerbs.alwaysUsesSein(bare) ? ["SEIN"] : ["HABEN", "SEIN"];
   const readings: Reading[] = [];
   for (const code of codes) {
@@ -125,7 +128,7 @@ function germanReadings(verb: string, tense: string): Reading[] | null {
             code === "KJ2_PAST"
               ? [...germanVerbs.getConjugation(verbs, aux === "SEIN" ? "sein" : "haben", "KONJUNKTIV2_PRATERITUM", person, number, undefined, false, undefined), germanVerbs.getPartizip2(verbs, bare)]
               : germanVerbs.getConjugation(verbs, verb, code, person, number, aux, undefined, "ACCUSATIVE");
-          return new Set([clean(parts.join(" "))]);
+          return new Set([clean(germanOrder(parts.join(" ")))]);
         }),
       );
     }
@@ -226,16 +229,18 @@ export function standardTable(language: LanguageCode, verb: string, tense: strin
     } else {
       const codes = germanTenses[fold(tense)];
       if (!codes) return null;
-      german ??= data<GermanVerbs>("german-verbs-dict/dist/verbs.json");
+      german ??= germanVerbData();
       const reflexive = /^sich /.test(verb);
       const bare = verb.replace(/^sich /, "");
-      if (!(bare in german)) return null;
+      if (!germanVerb(bare, { weak: true })) return null;
+      // «möchten» is taught in the present only (its other tenses are those of mögen or wollen).
+      if (bare === "möchten" && codes[0] !== "PRASENS") return null;
       const aux: germanVerbs.GermanAux = germanUsesSein(bare) ? "SEIN" : "HABEN";
       const pronominalCase = reflexive ? (germanVerbs.getReflexiveCase(bare) ?? "ACCUSATIVE") : undefined;
       const get = (code: string, person: Persons, number: Numbers) =>
         code === "KJ2_PAST"
           ? clean([...germanVerbs.getConjugation(german!, aux === "SEIN" ? "sein" : "haben", "KONJUNKTIV2_PRATERITUM", person, number, undefined, false, undefined), germanVerbs.getPartizip2(german!, bare)].join(" "))
-          : clean(germanVerbs.getConjugation(german!, bare, code, person, number, aux, reflexive, pronominalCase).join(" "));
+          : clean(germanOrder(germanVerbs.getConjugation(german!, bare, code, person, number, aux, reflexive, pronominalCase).join(" ")));
       keys.forEach((key, index) => {
         const [person, number] = germanPersons[index];
         forms[key] = get(codes[0], person, number);

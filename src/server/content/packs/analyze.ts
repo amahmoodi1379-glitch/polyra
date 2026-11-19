@@ -1,6 +1,7 @@
 import { fold, splitPieces } from "@/engine/tokens";
 import { levelRank } from "../languages";
 import { SEPARABLE } from "./closed";
+import { verbFormGroups } from "./distractors";
 import { bareLemma, type Candidate, type Morph } from "./morph";
 import type { PackWord } from "./words";
 
@@ -256,8 +257,14 @@ export class Analyzer {
       if (nextIsVerbOnly || /^(en|y)$/u.test(list[index + 1]?.surface ?? "")) keep((candidate) => candidate.word.word.pos === "pron");
       else keep((candidate) => candidate.word.word.pos !== "pron" || !candidates.some((other) => other.word.word.pos === "det"));
       // été, est, pas: a noun after an article; a verb (participle) right after avoir or être.
-      if (previous.length > 0 && previous.every((candidate) => candidate.word.word.pos === "det")) keep((candidate) => candidate.word.word.pos === "noun" || candidate.word.word.pos === "adj");
-      else if (previous.some((candidate) => candidate.word.word.lemma === "avoir" || candidate.word.word.lemma === "être")) keep((candidate) => candidate.word.word.pos === "verb");
+      const afterArticle = previous.length > 0 && (previous.every((candidate) => candidate.word.word.pos === "det") || (/'$/u.test(list[index - 1]?.surface ?? "") && previous.some((candidate) => candidate.word.word.pos === "det")));
+      if (afterArticle) keep((candidate) => candidate.word.word.pos === "noun" || candidate.word.word.pos === "adj");
+      else if (previous.some((candidate) => candidate.word.word.lemma === "avoir" || candidate.word.word.lemma === "être")) {
+        // Only a past participle («a été», not «suis étudiant»: étudiant is also a form of étudier).
+        const participle = (candidate: Candidate) =>
+          candidate.word.word.pos === "verb" && (verbFormGroups("fr", candidate.word.word.lemma).find((group) => group.name === "PARTICIPE")?.forms ?? []).some((form) => fold(form) === fold(unit.surface));
+        keep(participle);
+      }
     }
     // Reflexive verbs: «se laver» when a reflexive pronoun comes shortly before.
     const reflexive = list.slice(Math.max(0, index - 3), index).some((item) => /^(me|m'|te|t'|se|s'|nous|vous|mich|dich|sich|uns|euch|mir|dir)$/iu.test(item.surface));

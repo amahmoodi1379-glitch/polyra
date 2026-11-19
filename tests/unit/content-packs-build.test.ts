@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { standardTable } from "@/server/content/conjugation-check";
 import { Analyzer } from "@/server/content/packs/analyze";
 import { buildPack } from "@/server/content/packs/build";
 import { buildGrammar } from "@/server/content/packs/grammar";
@@ -120,5 +121,20 @@ describe("conjugation tables of a pack", () => {
       "no grammar unit says «tables: Plusquamperfekt»: its tables have no unit",
     ]);
     expect(built.notes.map((item) => item.text)).toContain("no grammar unit says «tables: Konjunktiv I»: its tables have no unit (waits for the B2 grammar)");
+  });
+
+  it("writes German in today's spelling and makes the verbs Morphy lacks from their parts", () => {
+    const forms = (verb: string, tense: string) => Object.values(standardTable("de", verb, tense)?.forms ?? {});
+    expect(forms("müssen", "Präsens")).toEqual(["muss", "musst", "muss", "müssen", "müsst", "müssen"]);
+    expect(forms("schließen", "Präteritum")[0]).toBe("schloss");
+    expect(forms("essen", "Präteritum")[0]).toBe("aß"); // a long vowel keeps ß
+    expect(forms("wissen", "Präsens")[0]).toBe("weiß");
+    expect(forms("mitkommen", "Perfekt")[0]).toBe("bin mitgekommen");
+    expect(forms("sich ausruhen", "Präsens")[0]).toBe("ruhe mich aus");
+    expect(forms("möchten", "Präsens")).toEqual(["möchte", "möchtest", "möchte", "möchten", "möchtet", "möchten"]);
+    const list = words("de", ["müssen\tverb\t\t\tمجبور بودن\tباید\tfunction", "mitkommen\tverb\t\t\tهمراه آمدن\tهمراه آمدن\ttravel", "ich\tpron\t\t\tمن\tمن\tfunction\tno_card:1", "du\tpron\t\t\tتو\tتو\tfunction\tno_card:1"]);
+    const analysis = analyzerOf("de", list).analyze("Ich muss. Kommst du mit?", { level: "A1" });
+    expect(analysis.errors).toEqual([]);
+    expect(analysis.tokens.map((token) => `${token.surface}=${token.code}`)).toEqual(["Ich=ich", "muss=müssen", "Kommst ... mit=mitkommen", "du=du"]);
   });
 });

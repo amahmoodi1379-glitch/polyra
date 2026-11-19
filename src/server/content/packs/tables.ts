@@ -3,7 +3,7 @@ import { isCardRegister } from "@/engine/content";
 import { pronounKeys } from "@/schemas/conjugation";
 import { germanUsesSein, standardTable, type StandardTable } from "../conjugation-check";
 import { levelRank, type LanguageCode } from "../languages";
-import { germanVerbDict } from "./morph";
+import { germanVerb, germanWeak } from "../german-verbs";
 import type { TableLink } from "./grammar";
 import type { PackWord } from "./words";
 
@@ -38,7 +38,7 @@ export type PackTable = {
 };
 type Note = { file: string; line: number; text: string };
 export type UnitTables = { unit_code: string; level: string; order: number; file: string; tables: TableLink[] };
-export type BuiltTables = { tables: PackTable[]; errors: Note[]; notes: Note[] };
+export type BuiltTables = { tables: PackTable[]; errors: Note[]; warnings: Note[]; notes: Note[] };
 
 const GERMAN_MODALS = new Set(["können", "müssen", "dürfen", "sollen", "wollen", "mögen", "möchten"]);
 const GERMAN_STRONG_MOOD = new Set(["sein", "haben", "werden", "wissen", ...GERMAN_MODALS]);
@@ -62,22 +62,10 @@ function frenchGroup(lemma: string, present: StandardTable | null): "er" | "ir" 
 
 /** The separable particle of a German verb in the dictionary (aufstehen → auf), or null. */
 function germanParticle(verb: string, root?: string): string | null {
-  const info = germanVerbDict(root)[verb] as unknown as { hasPrefix?: boolean; PRÄ?: { S?: Record<string, [string, string] | string> } } | undefined;
+  const info = germanVerb(verb, { root, weak: true })?.entry as { hasPrefix?: boolean; PRÄ?: { S?: Record<string, [string, string] | string> } } | undefined;
   if (!info?.hasPrefix) return null;
   const first = Object.values(info.PRÄ?.S ?? {})[0];
   return Array.isArray(first) ? first[1] : null;
-}
-
-/** Regular (weak) German forms: stem + endings, with -e- after t, d and consonant + m/n (arbeitest, atmest). */
-function germanWeak(verb: string) {
-  const stem = /(el|er)n$/.test(verb) ? verb.slice(0, -1) : verb.replace(/e?n$/, "");
-  // -e- after t, d and after a consonant + m/n that is no l, r, m, n or vowel + h (atmen, rechnen; not kommen, wohnen, lernen).
-  const extraE = /[td]$/.test(stem) || (/[mn]$/.test(stem) && /[^aeiouäöülrmnh]$|[^aeiouäöü]h$/.test(stem.slice(0, -1)));
-  const t = extraE ? "et" : "t";
-  return {
-    present: [/eln$/.test(verb) ? `${stem.slice(0, -2)}le` : `${stem}e`, extraE ? `${stem}est` : /[sßzx]$/.test(stem) ? `${stem}t` : `${stem}st`, `${stem}${t}`, verb, `${stem}${t}`, verb],
-    past: ["e", "est", "e", "en", "et", "en"].map((ending) => `${stem}${t}${ending}`),
-  };
 }
 
 /** Does the verb follow its group's pattern in this tense? (No: it gets a review card.) */
@@ -147,7 +135,7 @@ function classesOf(language: LanguageCode, lemma: string, tense: string, group: 
  * `units` the grammar units of every level with their `tables:` lines.
  */
 export function buildTables(language: LanguageCode, words: PackWord[], tenses: Record<string, string[]>, units: UnitTables[], root?: string): BuiltTables {
-  const out: BuiltTables = { tables: [], errors: [], notes: [] };
+  const out: BuiltTables = { tables: [], errors: [], warnings: [], notes: [] };
   const levels = Object.keys(tenses).sort((a, b) => levelRank(a) - levelRank(b));
   const allowed = new Set<string>(VERB_CLASSES[language]);
   for (const unit of units) {
@@ -170,6 +158,9 @@ export function buildTables(language: LanguageCode, words: PackWord[], tenses: R
     if (!present) {
       out.notes.push({ file: verb.file, line: verb.line, text: `«${verb.word.lemma}» is not in the conjugation data: no tables` });
       continue;
+    }
+    if (language === "de" && germanVerb(bare(verb.word.lemma), { root, weak: true })?.made === "weak") {
+      out.warnings.push({ file: verb.file, line: verb.line, text: `«${verb.word.lemma}» is not in Morphy: its tables follow the regular pattern (${Object.values(present.forms).slice(0, 3).join(", ")} …); check them` });
     }
     const group = language === "fr" ? frenchGroup(verb.word.lemma, present) : null;
     for (const tenseLevel of levels) {

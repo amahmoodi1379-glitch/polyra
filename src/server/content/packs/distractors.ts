@@ -5,7 +5,8 @@ import type { VerbsInfo as FrenchVerbs } from "french-verbs-lefff";
 import { fold } from "@/engine/tokens";
 import { isCardRegister } from "@/engine/content";
 import { levelRank } from "../languages";
-import { bareLemma, germanAdjectiveForms, germanVerbDict, type Morph } from "./morph";
+import { germanVerb } from "../german-verbs";
+import { bareLemma, germanAdjectiveForms, type Morph } from "./morph";
 import type { PackWord } from "./words";
 
 /**
@@ -41,7 +42,7 @@ export function verbFormGroups(language: string, lemma: string, root = process.c
     groups.push({ name: "PARTICIPE", forms: participles });
     groups.push({ name: "INFINITIF", forms: [verb] });
   } else {
-    const info = germanVerbDict(root)[verb] as unknown as Record<string, unknown> | undefined;
+    const info = germanVerb(verb, { root, weak: true })?.entry;
     if (!info) return [];
     const cell = (value: unknown) => (Array.isArray(value) ? String(value[0]) : String(value ?? ""));
     for (const tense of ["PRÄ", "PRT", "KJ2", "KJ1"]) {

@@ -114,6 +114,7 @@ export function buildPack(language: LanguageCode, options: BuildOptions = {}): P
   const unitTables = built.flatMap(({ grammar }) => grammar.units.map((unit) => ({ unit_code: unit.listItem.unit_code, level: unit.level, order: unit.order, file: unit.file, tables: unit.tables })));
   const tables = buildTables(language, words, tenses, unitTables, root);
   pack.errors.push(...tables.errors);
+  pack.warnings.push(...tables.warnings);
   pack.notes.push(...tables.notes);
 
   const unique = (list: Exception[]) => [...new Map(list.map((item) => [`${item.code}|${item.surface}`, item])).values()];
