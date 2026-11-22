@@ -1,0 +1,1076 @@
+lemma	pos	gender	plural	meaning_fa	concept_fa	topic
+# French A2 word list, in teaching order. Format and method: content/README.md.
+# Level = frequency rank (Lexique 3.83) + CEFR A2 themes and can-do statements (daily routine, past events,
+# plans, shopping, services, health, travel, work, school, describing people and places) + need (the A2
+# grammar lessons: passé composé with être, imparfait, futur, comparison, negation, relative and demonstrative
+# pronouns). Words marked checked:level are rarer in Lexique (films and books) than in everyday A2 life.
+
+# grammar words: demonstrative pronouns, taught in grammar lessons (no_card)
+celui	pron			آن یکی، همانی که (مذکر)	celui: ضمیر اشاره	function	no_card:1
+celle	pron			آن یکی، همانی که (مؤنث)	celle: ضمیر اشاره	function	no_card:1	homophones:sel
+ceux	pron			آن‌ها، آن‌هایی که (مذکر)	ceux: ضمیر اشاره	function	no_card:1
+celles	pron			آن‌ها، آن‌هایی که (مؤنث)	celles: ضمیر اشاره	function	no_card:1
+
+# first words of A2: small words that build sentences
+si	conj			اگر	اگر	function	coll:si tu veux → اگر بخواهی ; même si → حتی اگر
+même	adv			حتی	حتی	function
+même	adj			همان، یکسان	همان	qualities	code:même-adj	coll:le même jour → همان روز
+donc	conj			پس (در نتیجه)، بنابراین	بنابراین	function
+car	conj			چون، زیرا	چون	function	homophones:quart
+quand	conj			وقتی (که)، هر وقت (که)	وقتی که	time	code:quand-conj
+plus	adv			دیگر ... نه (ne ... plus)	دیگر نه	time	code:plus-2	sense_of:plus	coll:je ne fume plus → دیگر سیگار نمی‌کشم
+encore	adv			دوباره، باز هم	دوباره	time	code:encore-2	sense_of:encore	coll:encore une fois → یک بار دیگر
+personne	pron			هیچ‌کس (ne ... personne)	هیچ‌کس	function	code:personne-pron
+aucun	det			هیچ ... (ne ... aucun)، هیچ‌یک	هیچ‌یک	function
+si	adv			چرا (جواب مثبت به سؤال منفی)	si: جواب مثبت	function	code:si-adv	note:به سؤال منفی با si جواب مثبت می‌دهند، نه با oui: Tu ne viens pas ? – Si !
+seulement	adv			فقط	فقط	function
+juste	adv			فقط، همین	فقط	function
+quelques	det			چند تا، تعدادی	چند تا	numbers
+plusieurs	det			چندین	چندین	numbers
+certain	det			بعضی، برخی (از)	بعضی	numbers	coll:certains jours → بعضی روزها
+chacun	pron			هر کدام، هر کس	هر کدام	function
+mieux	adv			بهتر (قید)	mieux: بهتر (قید)	qualities	note:mieux قید است (Il chante mieux)، meilleur صفت (un meilleur film). فارسی برای هر دو «بهتر» می‌گوید.
+meilleur	adj			بهتر (صفت)، بهترین (le meilleur)	meilleur: بهتر (صفت)	qualities	note:meilleur صفت است (un meilleur film)، mieux قید (Il chante mieux). فارسی برای هر دو «بهتر» می‌گوید.
+assez	adv			به اندازهٔ کافی، کافی	به اندازه کافی	qualities	coll:assez de temps → وقت کافی
+presque	adv			تقریباً	تقریباً	qualities
+environ	adv			حدوداً، در حدودِ	حدوداً	numbers
+plutôt	adv			نسبتاً، کمابیش	نسبتاً	qualities
+exactement	adv			دقیقاً	دقیقاً	qualities
+complètement	adv			کاملاً	کاملاً	qualities
+longtemps	adv			مدت زیاد، مدت‌ها	مدت زیاد	time
+surtout	adv			مخصوصاً، بیشتر از همه	مخصوصاً	function
+probablement	adv			احتمالاً	احتمالاً	abstract
+en fait	adv			در واقع، راستش	در واقع	function
+quand même	adv			با این حال، به هر حال	با این حال	function
+pas du tout	adv			اصلاً، به هیچ وجه	اصلاً	function
+au moins	adv			دست‌کم، حداقل	دست‌کم	numbers
+heureusement	adv			خوشبختانه	خوشبختانه	feelings
+malheureusement	adv			متأسفانه	متأسفانه	feelings
+d'habitude	adv			معمولاً	معمولاً	time
+quelquefois	adv			گاهی، بعضی وقت‌ها	گاهی	time
+rarement	adv			به ندرت، کم پیش می‌آید	به ندرت	time
+tout à coup	adv			ناگهان، یک‌دفعه	ناگهان	time
+tout de suite	adv			فوراً، همین الان	فوراً	time
+en même temps	adv			همزمان، در همان وقت	همزمان	time
+jusqu'à	prep			تا (زمان یا مکان)	تا	time	coll:jusqu'à demain → تا فردا ; jusqu'à la gare → تا ایستگاه
+pendant que	conj			در حالی که، در مدتی که	در حالی که	time
+contre	prep			علیهِ، مخالفِ	علیه	abstract
+sauf	prep			به جز، غیر از	به جز	function
+à cause de	prep			به خاطرِ، به علتِ	به خاطر	abstract
+autour de	prep			دورِ، اطرافِ	اطراف	space
+partout	adv			همه‌جا	همه‌جا	space
+dehors	adv			بیرون، بیرونِ خانه	بیرون	space
+quelque part	adv			یک جایی، جایی	یک جایی	space
+en haut	adv			بالا، طبقهٔ بالا	بالا	space
+en bas	adv			پایین، طبقهٔ پایین	پایین	space
+par terre	adv			روی زمین (کف)	روی زمین	space
+ouais	adv			آره	بله	function	register:familier
+ok	interj			باشه، اوکی	باشه	function	register:familier
+n'est-ce pas	adv			این‌طور نیست؟، مگه نه؟	مگه نه	function
+hein	interj			ها؟، مگه نه؟	مگه نه	function	register:familier
+eh	interj			هی، آهای	هی	function	coll:eh bien → خب
+bravo	interj			آفرین، براوو	آفرین	feelings
+
+# the commonest verbs and nouns of A2
+devenir	verb			شدن (تبدیل شدن)	شدن	actions
+revenir	verb			برگشتن (به اینجا)، باز آمدن	برگشتن (به اینجا)	actions
+retourner	verb			برگشتن (به آنجا)، دوباره رفتن	برگشتن (به آنجا)	actions
+laisser	verb			جا گذاشتن، گذاشتن (و رفتن)	جا گذاشتن	actions	coll:laisse-moi tranquille → راحتم بگذار
+laisser un message	phrase			پیام گذاشتن	پیام گذاشتن	media	parts:laisser message
+suivre	verb			دنبال کردن، پیروی کردن	دنبال کردن	actions	coll:suivez-moi → دنبال من بیایید
+arrêter	verb			متوقف کردن، دست کشیدن (از)	دست کشیدن	actions	coll:arrêter de fumer → سیگار را ترک کردن
+s'arrêter	verb			ایستادن، توقف کردن	توقف کردن	transport
+essayer	verb			سعی کردن، امتحان کردن	سعی کردن	actions	coll:essayer une robe → لباسی را پرو کردن
+perdre	verb			گم کردن، از دست دادن	گم کردن	actions
+gagner	verb			بردن، برنده شدن	برنده شدن	leisure
+gagner	verb			پول درآوردن، درآمد داشتن	درآمد داشتن	work	code:gagner-2	sense_of:gagner	coll:gagner de l'argent → پول درآوردن
+tomber	verb			افتادن، زمین خوردن	افتادن	actions
+rendre	verb			پس دادن، برگرداندن	پس دادن	actions
+tenir	verb			در دست داشتن، گرفتن (در دست)	در دست داشتن	actions	coll:tiens ! → بیا، بگیر!
+garder	verb			نگه داشتن، حفظ کردن	نگه داشتن	actions
+changer	verb			عوض کردن، تغییر دادن، عوض شدن	عوض کردن	actions
+sentir	verb			بو دادن، بو کردن	بو دادن	food
+sentir bon	phrase			بوی خوب دادن	بوی خوب دادن	food	parts:sentir bon
+sentir mauvais	phrase			بوی بد دادن	بوی بد دادن	food	parts:sentir mauvais
+se sentir	verb			حس کردن (حال خود)، احساسِ ... داشتن	حال خود را حس کردن	feelings	coll:je me sens mieux → حالم بهتر است
+raconter	verb			تعریف کردن (ماجرا)، گفتن (داستان)	تعریف کردن ماجرا	culture
+expliquer	verb			توضیح دادن	توضیح دادن	education
+recevoir	verb			دریافت کردن، گرفتن (نامه یا هدیه)	دریافت کردن	actions
+utiliser	verb			استفاده کردن، به کار بردن	استفاده کردن	actions
+quitter	verb			ترک کردن، از ... رفتن	ترک کردن	actions
+retrouver	verb			دوباره پیدا کردن، به هم رسیدن (سرِ قرار)	دوباره پیدا کردن	actions
+servir	verb			سرو کردن، پذیرایی کردن	سرو کردن	food
+toucher	verb			دست زدن، لمس کردن	دست زدن	actions
+porter	verb			حمل کردن، بردن (با خود)	حمل کردن	actions	code:porter-2	sense_of:porter
+apporter	verb			آوردن (چیزی)	آوردن	actions
+offrir	verb			هدیه دادن، تقدیم کردن	هدیه دادن	leisure
+préparer	verb			آماده کردن، درست کردن (غذا)	آماده کردن	actions
+décider	verb			تصمیم گرفتن	تصمیم گرفتن	abstract
+compter	verb			شمردن، حساب کردن	شمردن	numbers
+espérer	verb			امیدوار بودن، امید داشتن	امیدوار بودن	feelings
+imaginer	verb			تصور کردن، تجسم کردن	تصور کردن	abstract
+sembler	verb			به نظر رسیدن	به نظر رسیدن	abstract
+plaire	verb			خوشِ (کسی) آمدن، پسندیدن	خوش آمدن	feelings	coll:ça me plaît → خوشم می‌آید
+se souvenir	verb			به یاد آوردن، یادِ (کسی) ماندن	به یاد آوردن	abstract	coll:je me souviens de toi → تو را یادم هست
+s'occuper	verb			رسیدگی کردن (به)، مراقبت کردن	رسیدگی کردن	actions	coll:s'occuper des enfants → از بچه‌ها مراقبت کردن
+se passer	verb			اتفاق افتادن، گذشتن	اتفاق افتادن	abstract	coll:Qu'est-ce qui se passe ? → چه خبر شده؟
+se trouver	verb			واقع بودن، قرار داشتن (در جایی)	واقع بودن	space	coll:où se trouve la gare ? → ایستگاه کجاست؟
+se tromper	verb			اشتباه کردن	اشتباه کردن	abstract
+naître	verb			به دنیا آمدن، متولد شدن	به دنیا آمدن	people	coll:il est né en mai → در ماه مه به دنیا آمد
+mourir	verb			مردن، درگذشتن	مردن	people
+tuer	verb			کشتن	کشتن	actions
+rire	verb			خندیدن	خندیدن	feelings
+sourire	verb			لبخند زدن	لبخند زدن	feelings
+pleurer	verb			گریه کردن	گریه کردن	feelings
+crier	verb			داد زدن، فریاد زدن	فریاد زدن	actions
+jeter	verb			انداختن، دور انداختن	دور انداختن	actions
+poser	verb			گذاشتن (روی چیزی)، قرار دادن	قرار دادن	actions
+poser une question	phrase			سؤال پرسیدن، سؤال کردن	سؤال کردن	education	parts:poser question
+ajouter	verb			اضافه کردن، افزودن	اضافه کردن	actions
+enlever	verb			درآوردن (لباس)، کندن	درآوردن	clothes
+casser	verb			شکستن	شکستن	actions
+couper	verb			بریدن، قطع کردن	بریدن	actions
+réussir	verb			موفق شدن، قبول شدن	موفق شدن	education
+terminer	verb			تمام کردن، به پایان رساندن	تمام کردن	actions
+accepter	verb			پذیرفتن، قبول کردن	پذیرفتن	abstract
+refuser	verb			رد کردن، نپذیرفتن	رد کردن	abstract
+promettre	verb			قول دادن	قول دادن	abstract
+permettre	verb			اجازه دادن	اجازه دادن	abstract
+proposer	verb			پیشنهاد دادن، پیشنهاد کردن	پیشنهاد دادن	abstract
+remercier	verb			تشکر کردن، سپاسگزاری کردن	تشکر کردن	people
+souhaiter	verb			آرزو کردن	آرزو کردن	feelings	coll:je te souhaite bonne chance → برایت آرزوی موفقیت می‌کنم
+
+peur	noun	f		ترس	ترس	feelings
+avoir peur	phrase			ترسیدن	ترسیدن	feelings	parts:avoir peur
+faire peur	phrase			ترساندن	ترساندن	feelings	parts:faire peur
+envie	noun	f		میل، هوس	میل	feelings
+avoir envie de	phrase			دلِ (کسی) خواستن، هوسِ ... داشتن	دلش خواستن	feelings	parts:avoir envie
+raison	noun	f		دلیل	دلیل	abstract
+avoir raison	phrase			حق با (کسی) بودن، درست گفتن	حق با او بودن	abstract	parts:avoir raison
+tort	noun	m		ناحق، کار نادرست	ناحق	abstract
+avoir tort	phrase			حق نداشتن، در اشتباه بودن	حق نداشتن	abstract	parts:avoir tort
+amour	noun	m		عشق	عشق	feelings
+côté	noun	m		طرف، سمت	طرف	space
+coup	noun	m		ضربه	ضربه	actions	homophones:cou
+coup de téléphone	phrase			تماس تلفنی، زنگ (تلفن)	تماس تلفنی	media	parts:coup téléphone
+air	noun	m		هوا (برای نفس کشیدن)	هوا	nature
+avoir l'air	phrase			به نظر رسیدن، ... به نظر آمدن	به نظر رسیدن	abstract	parts:avoir air
+voix	noun	f		صدا (صدای آدم)	صدای آدم	people
+terre	noun	f		زمین، خاک	زمین	nature
+point	noun	m		نقطه	نقطه	abstract
+droit	noun	m		حق	حق	society
+avoir le droit de	phrase			اجازه داشتن، حقِ ... داشتن	اجازه داشتن	society	parts:avoir droit
+partie	noun	f		بخش، قسمت	بخش	abstract
+type	noun	m		نوع، جور	نوع	abstract
+souvenir	noun	m		خاطره	خاطره	feelings
+souvenir	noun	m		سوغاتی، یادگاری	سوغاتی	travel	code:souvenir-2	sense_of:souvenir
+rêve	noun	m		رؤیا، خواب (که آدم می‌بیند)	رؤیا	feelings
+vérité	noun	f		حقیقت، راستی	حقیقت	abstract
+dire la vérité	phrase			راست گفتن، حقیقت را گفتن	راست گفتن	abstract	parts:dire vérité
+secret	noun	m		راز	راز	abstract
+attention	noun	f		توجه، دقت	توجه	abstract	coll:Attention ! → مواظب باش!
+faire attention	phrase			مواظب بودن، دقت کردن	مواظب بودن	abstract	parts:faire attention
+dieu	noun	m		خدا	خدا	culture	coll:mon dieu ! → خدای من!
+guerre	noun	f		جنگ	جنگ	society
+paix	noun	f		صلح، آرامش	صلح	society
+
+# common adjectives
+sûr	adj			مطمئن	مطمئن	feelings	homophones:sur
+prêt	adj			آماده	آماده	qualities	homophones:près
+possible	adj			ممکن، شدنی	ممکن	abstract
+impossible	adj			غیرممکن، ناممکن	غیرممکن	abstract
+pauvre	adj			فقیر، بی‌پول	فقیر	society
+riche	adj			ثروتمند، پولدار	ثروتمند	society
+différent	adj			متفاوت، فرق‌دار	متفاوت	qualities
+pareil	adj			مثل هم، یکجور	مثل هم	qualities
+simple	adj			ساده	ساده	qualities
+fort	adj			قوی، نیرومند	قوی	qualities
+faible	adj			ضعیف	ضعیف	qualities
+fou	adj			دیوانه، خل	دیوانه	character
+plein	adj			پر	پر	qualities
+vide	adj			خالی	خالی	qualities
+haut	adj			مرتفع، بلند (ارتفاع)	مرتفع	qualities	homophones:eau,au,oh
+bas	adj			کم‌ارتفاع، کوتاه (ارتفاع)	کم‌ارتفاع	qualities
+lourd	adj			سنگین	سنگین	qualities
+léger	adj			سبک	سبک	qualities
+dur	adj			سفت، سخت (جنس)	سفت	qualities
+doux	adj			نرم، ملایم	نرم	qualities
+vivant	adj			زنده	زنده	people
+mort	adj			مرده	مرده	people
+ancien	adj			قدیمی (تاریخی)، سابق	سابق	qualities
+moderne	adj			مدرن، امروزی	مدرن	qualities
+normal	adj			عادی، معمولی	عادی	qualities
+bizarre	adj			عجیب، غریب	عجیب	qualities
+grave	adj			جدی (خطرناک)، وخیم	وخیم	health
+ce n'est pas grave	phrase			مهم نیست، اشکالی ندارد	مهم نیست	abstract	parts:être grave
+sérieux	adj			جدی	جدی	character
+parfait	adj			بی‌نقص، کامل و بی‌عیب	بی‌نقص	qualities
+génial	adj			محشر، عالی، فوق‌العاده	عالی	qualities
+intéressant	adj			جالب	جالب	qualities
+ennuyeux	adj			کسل‌کننده، خسته‌کننده	کسل‌کننده	qualities
+drôle	adj			خنده‌دار، بامزه	خنده‌دار	qualities
+amusant	adj			سرگرم‌کننده، مفرح	سرگرم‌کننده	leisure
+dangereux	adj			خطرناک	خطرناک	qualities
+nécessaire	adj			لازم، ضروری	لازم	abstract
+utile	adj			مفید، به‌دردبخور	مفید	qualities
+pratique	adj			کاربردی، دم‌دستی	کاربردی	qualities
+agréable	adj			خوشایند، دلپذیر	خوشایند	qualities
+tranquille	adj			آرام، ساکت	آرام	qualities
+calme	adj			آرام	آرام	qualities
+compliqué	adj			پیچیده، بغرنج	پیچیده	qualities
+célèbre	adj			معروف، مشهور	معروف	qualities
+préféré	adj			مورد علاقه، محبوب	مورد علاقه	feelings
+étranger	adj			خارجی	خارجی	society	coll:à l'étranger → خارج از کشور ; une langue étrangère → یک زبان خارجی
+gratuit	adj			رایگان، مجانی	رایگان	shopping
+interdit	adj			ممنوع	ممنوع	city
+occupé	adj			مشغول، گرفتار (کار)، اشغال	مشغول	work
+pressé	adj			عجله‌دار، در عجله	عجله‌دار	time
+
+# people
+dame	noun	f		بانو، خانم (زن بزرگسال)	بانو	people
+mademoiselle	noun	f	mesdemoiselles	دوشیزه، خانم (برای دختر جوان)	دوشیزه	people	checked:plural
+copain	noun	m		رفیق، دوست	دوست	people	register:familier
+adulte	noun	mf		بزرگسال	بزرگسال	people
+adolescent	noun	m		نوجوان	نوجوان	people
+habitant	noun	m		ساکن، اهالی (جمع)	ساکن	people
+invité	noun	m		مهمان	مهمان	people
+couple	noun	m		زوج، زن و شوهر	زوج	people
+groupe	noun	m		گروه	گروه	people
+enfance	noun	f		کودکی، بچگی	کودکی	people
+naissance	noun	f		زایش، تولد (به دنیا آمدن)	زایش	people
+âgé	adj			مسن، سالخورده	مسن	people
+grandir	verb			بزرگ شدن، قد کشیدن	بزرگ شدن	people
+roi	noun	m		پادشاه، شاه	پادشاه	culture
+reine	noun	f		ملکه	ملکه	culture
+président	noun	m		رئیس‌جمهور	رئیس‌جمهور	society
+police	noun	f		نیروی پلیس، پلیس (سازمان)	نیروی پلیس	city
+
+# family
+femme	noun	f		همسر (زن)	همسر زن	family	code:femme-2	sense_of:femme
+mariage	noun	m		ازدواج، عروسی	ازدواج	family
+se marier	verb			ازدواج کردن	ازدواج کردن	family	coll:se marier avec → ازدواج کردن با
+divorcé	adj			طلاق‌گرفته، جداشده	طلاق‌گرفته	family	checked:level
+neveu	noun	m	neveux	برادرزاده یا خواهرزادهٔ پسر	برادرزاده یا خواهرزاده پسر	family	family:famille
+nièce	noun	f		برادرزاده یا خواهرزادهٔ دختر	برادرزاده یا خواهرزاده دختر	family	family:famille
+petit-fils	noun	m	petits-fils	نوه (پسر)	نوه پسر	family	family:famille
+petite-fille	noun	f	petites-filles	نوه (دختر)	نوه دختر	family	family:famille
+petits-enfants	noun	m		نوه‌ها	نوه‌ها	family	family:famille	number:pl_only	checked:level
+jumeau	noun	m	jumeaux	دوقلو	دوقلو	family
+fiancé	noun	m		نامزد	نامزد	family
+
+# describing people
+timide	adj			خجالتی، کم‌رو	خجالتی	character
+curieux	adj			کنجکاو	کنجکاو	character
+méchant	adj			بدجنس، بدذات	بدجنس	character
+poli	adj			مؤدب	مؤدب	character
+patient	adj			صبور، شکیبا	صبور	character
+paresseux	adj			تنبل	تنبل	character
+courageux	adj			شجاع، دلیر	شجاع	character
+mignon	adj			ناز، تودل‌برو	ناز	character
+laid	adj			زشت	زشت	character	homophones:lait
+moche	adj			زشت، بدترکیب	زشت	character	register:familier
+sportif	adj			ورزشکار، اهل ورزش	اهل ورزش	character
+roux	adj			موقرمز، حنایی	موقرمز	colors
+barbe	noun	f		ریش	ریش	body
+moustache	noun	f		سبیل	سبیل	body
+taille	noun	f		قد، سایز (لباس)	قد	body
+poids	noun	m		وزن	وزن	body
+grossir	verb			چاق شدن	چاق شدن	body
+prendre du poids	phrase			وزن اضافه کردن	وزن اضافه کردن	body	parts:prendre poids
+maigrir	verb			لاغر شدن	لاغر شدن	body
+perdre du poids	phrase			وزن کم کردن	وزن کم کردن	body	parts:perdre poids
+
+# body
+épaule	noun	f		شانه (کتف)	کتف	body
+cou	noun	m		گردن	گردن	body	homophones:coup
+genou	noun	m	genoux	زانو	زانو	body
+gorge	noun	f		گلو	گلو	body
+peau	noun	f		پوست	پوست	body
+lèvre	noun	f		لب	لب	body
+langue	noun	f		زبان (عضو بدن)	زبان (عضو بدن)	body	code:langue-2	sense_of:langue
+sang	noun	m		خون	خون	body	homophones:cent,sans
+estomac	noun	m		معده	معده	body
+joue	noun	f		گونه (صورت)	گونه	body
+front	noun	m		پیشانی	پیشانی	body
+os	noun	m		استخوان	استخوان	body
+
+# health
+santé	noun	f		سلامتی، تندرستی	سلامتی	health
+être en bonne santé	phrase			سالم بودن، تندرست بودن	سالم بودن	health	parts:être bon santé
+maladie	noun	f		بیماری	بیماری	health
+tomber malade	phrase			بیمار شدن، مریض شدن	بیمار شدن	health	parts:tomber malade
+fièvre	noun	f		تب	تب	health
+avoir de la fièvre	phrase			تب داشتن	تب داشتن	health	parts:avoir fièvre
+rhume	noun	m		سرماخوردگی	سرماخوردگی	health
+grippe	noun	f		آنفولانزا، گریپ	آنفولانزا	health
+tousser	verb			سرفه کردن	سرفه کردن	health
+respirer	verb			نفس کشیدن	نفس کشیدن	health
+douleur	noun	f		درد	درد	health
+faire mal	phrase			درد آوردن، آسیب زدن	درد آوردن	health	parts:faire mal	coll:ça fait mal → درد می‌کند
+urgence	noun	f		اورژانس، فوریت	اورژانس	health	coll:les urgences → بخش اورژانس
+docteur	noun	m		دکتر	پزشک	health
+dentiste	noun	mf		دندان‌پزشک	دندان‌پزشک	health
+pharmacien	noun	m		داروساز	داروساز	health
+ordonnance	noun	f		نسخه (پزشک)	نسخه	health
+comprimé	noun	m		قرص	قرص	health
+au secours	interj			کمک!، به دادم برسید!	کمک!	health
+forme	noun	f		شکل	شکل	abstract
+être en forme	phrase			سرحال بودن، روبه‌راه بودن	سرحال بودن	health	parts:être forme
+sommeil	noun	m		خواب (حالت)	خواب	health
+avoir sommeil	phrase			خواب‌آلود بودن، خوابِ (کسی) آمدن	خواب‌آلود بودن	health	parts:avoir sommeil
+
+# daily routine
+se brosser	verb			برس زدن (به مو یا دندان)	برس زدن	home	coll:se brosser les dents → مسواک زدن
+se raser	verb			اصلاح کردن (صورت)، ریش تراشیدن	اصلاح کردن	home
+bain	noun	m		وان حمام، حمام (در وان)	وان حمام	home
+prendre un bain	phrase			حمام کردن (در وان)	حمام کردن در وان	home	parts:prendre bain
+savon	noun	m		صابون	صابون	home
+serviette	noun	f		حوله	حوله	home
+brosse à dents	noun	f	brosses à dents	مسواک	مسواک	home
+se dépêcher	verb			عجله کردن	عجله کردن	time
+s'amuser	verb			خوش گذراندن، تفریح کردن	خوش گذراندن	leisure
+s'ennuyer	verb			حوصلهٔ (کسی) سر رفتن، کسل شدن	حوصله سر رفتن	feelings
+s'inquiéter	verb			نگران شدن، نگران بودن	نگران شدن	feelings
+inquiet	adj			نگران	نگران	feelings
+surpris	adj			متعجب، غافلگیر	متعجب	feelings
+fâché	adj			دلخور، عصبانی	دلخور	feelings
+colère	noun	f		خشم، عصبانیت	خشم	feelings
+être en colère	phrase			عصبانی بودن	عصبانی بودن	feelings	parts:être colère
+amoureux	adj			عاشق	عاشق	feelings	coll:être amoureux de → عاشقِ ... بودن
+tomber amoureux	phrase			عاشق شدن	عاشق شدن	feelings	parts:tomber amoureux
+joie	noun	f		شادی، خوشحالی	شادی	feelings
+bonheur	noun	m		خوشبختی	خوشبختی	feelings
+plaisir	noun	m		لذت، خوشی	لذت	feelings
+avec plaisir	phrase			با کمال میل، با کمال خوشحالی	با کمال میل	people	parts:plaisir
+faire plaisir	phrase			خوشحال کردن، خوشحالی دادن	خوشحال کردن	feelings	parts:faire plaisir
+se disputer	verb			دعوا کردن، بگومگو کردن	دعوا کردن	feelings
+embrasser	verb			بوسیدن، در آغوش گرفتن	بوسیدن	people
+bise	noun	f		بوسه (روی گونه)	بوسه	people
+faire la bise	phrase			روبوسی کردن	روبوسی کردن	people	parts:faire bise
+s'excuser	verb			عذرخواهی کردن	عذرخواهی کردن	people
+
+# food and drink
+nourriture	noun	f		خوراک، مواد غذایی	خوراک	food
+plat	noun	m		غذا (یک نوع غذا)، دیس	نوع غذا	food	coll:le plat principal → غذای اصلی
+entrée	noun	f		پیش‌غذا	پیش‌غذا	food
+goût	noun	m		مزه، طعم	مزه	food
+goûter	verb			چشیدن، مزه کردن	چشیدن	food
+sucré	adj			شیرین	شیرین	food
+salé	adj			شور	شور	food
+épicé	adj			پرادویه، تند (مزه)	پرادویه	food	checked:level
+frais	adj			تازه	تازه	food	coll:il fait frais → هوا خنک است
+sec	adj			خشک	خشک	qualities
+végétarien	adj			گیاه‌خوار	گیاه‌خوار	food	checked:level
+carotte	noun	f		هویج	هویج	food
+oignon	noun	m		پیاز	پیاز	food
+haricot	noun	m		لوبیا	لوبیا	food
+champignon	noun	m		قارچ	قارچ	food
+concombre	noun	m		خیار	خیار	food	checked:level
+aubergine	noun	f		بادمجان	بادمجان	food	checked:level
+citron	noun	m		لیمو، لیموترش	لیمو	food
+fraise	noun	f		توت‌فرنگی	توت‌فرنگی	food
+raisin	noun	m		انگور	انگور	food	note:دوست دروغین: raisin یعنی «انگور»؛ کشمش raisin sec است.
+poire	noun	f		گلابی	گلابی	food
+pêche	noun	f		هلو	هلو	food
+cerise	noun	f		گیلاس	گیلاس	food
+melon	noun	m		طالبی، خربزه	طالبی	food
+pastèque	noun	f		هندوانه	هندوانه	food	checked:level
+huile	noun	f		روغن	روغن	food
+poivre	noun	m		فلفل سیاه	فلفل سیاه	food
+farine	noun	f		آرد	آرد	food
+confiture	noun	f		مربا	مربا	food
+miel	noun	m		عسل	عسل	food
+yaourt	noun	m		ماست	ماست	food
+crème	noun	f		خامه	خامه	food
+bœuf	noun	m		گوشت گاو	گوشت گاو	food
+agneau	noun	m	agneaux	گوشت بره، بره	گوشت بره	food
+porc	noun	m		گوشت خوک	گوشت خوک	food	homophones:port
+jambon	noun	m		ژامبون (گوشت خوک)	ژامبون	food
+pizza	noun	f		پیتزا	پیتزا	food
+frites	noun	f		سیب‌زمینی سرخ‌کرده	سیب‌زمینی سرخ‌کرده	food	number:pl_only
+biscuit	noun	m		بیسکویت	بیسکویت	food
+bonbon	noun	m		آب‌نبات	آب‌نبات	food
+tarte	noun	f		تارت، کیک میوه‌ای	تارت	food
+vin	noun	m		شراب	شراب	drink	homophones:vingt
+bière	noun	f		آبجو	آبجو	drink
+prendre un verre	phrase			با هم چیزی نوشیدن (بیرون)	با هم نوشیدن	drink	parts:prendre verre
+recette	noun	f		دستور پخت	دستور پخت	food
+morceau	noun	m	morceaux	تکه، قطعه	تکه	food
+tranche	noun	f		برش، ورقه	برش	food
+bol	noun	m		کاسه	کاسه	food
+casserole	noun	f		قابلمه	قابلمه	food
+cuire	verb			پختن	پختن	food
+mélanger	verb			مخلوط کردن، هم زدن	مخلوط کردن	food
+four	noun	m		فِر، اجاق	فر	home
+réfrigérateur	noun	m		یخچال	یخچال	home	checked:level
+frigo	noun	m		یخچال	یخچال	home	register:familier
+appétit	noun	m		اشتها	اشتها	food
+bon appétit	phrase			نوش جان	نوش جان	food	parts:bon appétit
+pourboire	noun	m		انعام	انعام	food
+pique-nique	noun	m		پیک‌نیک	پیک‌نیک	leisure
+faire un pique-nique	phrase			پیک‌نیک رفتن	پیک‌نیک رفتن	leisure	parts:faire pique-nique
+
+# home
+louer	verb			اجاره کردن، کرایه کردن	اجاره کردن	home
+loyer	noun	m		اجاره‌بها، کرایهٔ خانه	اجاره‌بها	home
+propriétaire	noun	mf		صاحبخانه، مالک	صاحبخانه	home
+déménager	verb			اسباب‌کشی کردن، نقل مکان کردن	اسباب‌کشی کردن	home
+s'installer	verb			ساکن شدن، جاافتادن	ساکن شدن	home
+studio	noun	m		آپارتمان یک‌اتاقه، سوئیت	آپارتمان یک‌اتاقه	home
+rez-de-chaussée	noun	m		طبقهٔ همکف	طبقه همکف	home
+ascenseur	noun	m		آسانسور	آسانسور	home
+balcon	noun	m		بالکن	بالکن	home
+terrasse	noun	f		تراس	تراس	home
+garage	noun	m		گاراژ	گاراژ	home
+toit	noun	m		بام، سقف (بیرونی)	بام	home	homophones:toi
+sol	noun	m		کف (زمین یا اتاق)	کف	home
+couloir	noun	m		راهرو	راهرو	home
+entrée	noun	f		ورودی، راه ورود	ورودی	home	code:entrée-2	sense_of:entrée
+cour	noun	f		حیاط	حیاط	home	homophones:cours,court
+salle à manger	noun	f	salles à manger	اتاق ناهارخوری	ناهارخوری	home
+meuble	noun	m		اثاثیه (یک تکه)، وسیلهٔ خانه	اثاثیه	home
+armoire	noun	f		کمد لباس	کمد لباس	home
+étagère	noun	f		قفسه	قفسه	home
+fauteuil	noun	m		مبل یک‌نفره، صندلی راحتی	مبل یک‌نفره	home
+tapis	noun	m		فرش، قالی	فرش	home
+rideau	noun	m	rideaux	پرده	پرده	home
+miroir	noun	m		آینه	آینه	home
+bureau	noun	m	bureaux	میز تحریر، میز کار	میز تحریر	home	code:bureau-2	sense_of:bureau
+réveil	noun	m		ساعت زنگ‌دار	ساعت زنگ‌دار	home
+lumière	noun	f		نور، روشنایی	نور	home
+allumer	verb			روشن کردن	روشن کردن	home
+éteindre	verb			خاموش کردن	خاموش کردن	home
+chauffage	noun	m		شوفاژ، گرمایش	گرمایش	home
+électricité	noun	f		برق	برق	home
+machine à laver	noun	f	machines à laver	ماشین لباسشویی	ماشین لباسشویی	home
+ménage	noun	m		نظافت خانه	نظافت	home
+faire le ménage	phrase			خانه را تمیز کردن، نظافت کردن	نظافت کردن	home	parts:faire ménage
+vaisselle	noun	f		ظرف‌ها، ظروف	ظرف‌ها	home
+faire la vaisselle	phrase			ظرف شستن	ظرف شستن	home	parts:faire vaisselle
+mettre la table	phrase			میز را چیدن، سفره انداختن	میز چیدن	home	parts:mettre table
+lessive	noun	f		رخت‌شویی، پودر لباسشویی	رخت‌شویی	home
+faire la lessive	phrase			لباس شستن، رخت شستن	لباس شستن	home	parts:faire lessive
+ranger	verb			مرتب کردن، جمع و جور کردن	مرتب کردن	home
+nettoyer	verb			تمیز کردن	تمیز کردن	home
+réparer	verb			تعمیر کردن	تعمیر کردن	home
+poubelle	noun	f		سطل زباله، سطل آشغال	سطل زباله	home
+boîte aux lettres	noun	f	boîtes aux lettres	صندوق پست	صندوق پست	home
+sonner	verb			به صدا درآمدن، زنگ زدن (زنگ در)	به صدا درآمدن	home
+frapper	verb			زدن، در زدن	زدن	actions
+
+# town
+bâtiment	noun	m		ساختمان، بنا	بنا	city
+église	noun	f		کلیسا	کلیسا	city
+mosquée	noun	f		مسجد	مسجد	city
+mairie	noun	f		شهرداری	شهرداری	city
+pont	noun	m		پل	پل	city
+avenue	noun	f		خیابان پهن، بلوار	خیابان پهن	city
+carrefour	noun	m		چهارراه	چهارراه	city
+feu	noun	m	feux	آتش	آتش	nature
+feu	noun	m	feux	چراغ راهنمایی	چراغ راهنمایی	city	code:feu-2	sense_of:feu	coll:au feu rouge → سر چراغ قرمز
+coin	noun	m		گوشه، نبش	گوشه	space
+tour	noun	f		برج	برج	city	code:tour-f
+château	noun	m	châteaux	قلعه، کاخ	قلعه	city
+monument	noun	m		بنای تاریخی، یادبود	بنای تاریخی	culture
+théâtre	noun	m		تئاتر	تئاتر	culture
+stade	noun	m		ورزشگاه، استادیوم	ورزشگاه	leisure
+zoo	noun	m		باغ‌وحش	باغ‌وحش	leisure
+boutique	noun	f		بوتیک، مغازهٔ کوچک	بوتیک	shopping
+librairie	noun	f		کتاب‌فروشی	کتاب‌فروشی	shopping	note:دوست دروغین: librairie یعنی «کتاب‌فروشی»؛ کتابخانه bibliothèque است.
+centre commercial	noun	m	centres commerciaux	مرکز خرید، پاساژ	مرکز خرید	shopping
+pâtisserie	noun	f		شیرینی‌فروشی	شیرینی‌فروشی	shopping
+boucherie	noun	f		قصابی	قصابی	shopping
+épicerie	noun	f		بقالی، خواربارفروشی	بقالی	shopping
+queue	noun	f		صف	صف	city
+faire la queue	phrase			در صف ایستادن، صف کشیدن	صف ایستادن	city	parts:faire queue
+parking	noun	m		پارکینگ	پارکینگ	city
+port	noun	m		بندر	بندر	city	homophones:porc
+usine	noun	f		کارخانه	کارخانه	work
+ferme	noun	f		مزرعه	مزرعه	nature
+fermier	noun	m		کشاورز، مزرعه‌دار	کشاورز	work
+capitale	noun	f		پایتخت	پایتخت	society
+région	noun	f		منطقه، ناحیه	منطقه	society
+banlieue	noun	f		حومهٔ شهر	حومه	city
+centre-ville	noun	m	centres-villes	مرکز شهر	مرکز شهر	city	checked:level
+plan	noun	m		نقشهٔ شهر، نقشهٔ ساختمان	نقشه شهر	city
+nord	noun	m		شمال	شمال	space
+sud	noun	m		جنوب	جنوب	space
+est	noun	m		شرق	شرق	space	code:est-noun
+ouest	noun	m		غرب	غرب	space
+
+# shopping and money
+monnaie	noun	f		پول خرد، واحد پول	پول خرد	shopping
+pièce	noun	f		سکه	سکه	shopping	code:pièce-2	sense_of:pièce
+billet	noun	m		اسکناس	اسکناس	shopping	code:billet-2	sense_of:billet
+compte	noun	m		حساب بانکی، حساب	حساب بانکی	shopping
+carte de crédit	noun	f	cartes de crédit	کارت اعتباری، کارت بانکی	کارت بانکی	shopping
+caisse	noun	f		صندوق (فروشگاه)	صندوق	shopping
+client	noun	m		مشتری	مشتری	shopping
+réduction	noun	f		تخفیف	تخفیف	shopping	checked:level
+soldes	noun	m		حراج (فصلی)	حراج	shopping	number:pl_only
+marque	noun	f		مارک، برند	مارک	shopping
+liste	noun	f		فهرست، لیست	فهرست	abstract
+paquet	noun	m		بسته (کالا)، بستهٔ (بیسکویت و ...)	بسته کالا	shopping
+boîte	noun	f		جعبه، قوطی	جعبه	shopping
+litre	noun	m		لیتر	لیتر	numbers
+gramme	noun	m		گرم (وزن)	گرم وزن	numbers
+mètre	noun	m		متر	متر	numbers	homophones:mettre
+kilomètre	noun	m		کیلومتر	کیلومتر	numbers
+centime	noun	m		سنت (یورو)	سنت	shopping
+bon marché	adj			ارزان	ارزان	shopping
+coûter cher	phrase			گران بودن، گران تمام شدن	گران بودن	shopping	parts:coûter cher
+dépenser	verb			خرج کردن	خرج کردن	shopping
+emprunter	verb			قرض گرفتن	قرض گرفتن	shopping
+prêter	verb			قرض دادن	قرض دادن	shopping
+faire les magasins	phrase			مغازه‌گردی کردن، خرید رفتن	مغازه‌گردی	shopping	parts:faire magasin
+
+# clothes
+pointure	noun	f		شمارهٔ کفش	شماره کفش	clothes	checked:level
+blouson	noun	m		کاپشن	کاپشن	clothes
+short	noun	m		شلوارک	شلوارک	clothes
+costume	noun	m		کت و شلوار	کت و شلوار	clothes
+cravate	noun	f		کراوات	کراوات	clothes
+foulard	noun	m		روسری	روسری	clothes
+écharpe	noun	f		شال‌گردن	شال‌گردن	clothes
+gant	noun	m		دستکش	دستکش	clothes
+bonnet	noun	m		کلاه بافتنی	کلاه بافتنی	clothes
+casquette	noun	f		کلاه کپ، کلاه نقاب‌دار	کلاه کپ	clothes
+botte	noun	f		چکمه، پوتین	چکمه	clothes
+basket	noun	f		کفش ورزشی، کتانی	کفش ورزشی	clothes
+ceinture	noun	f		کمربند	کمربند	clothes
+montre	noun	f		ساعت مچی	ساعت مچی	clothes
+bijou	noun	m	bijoux	جواهر، زیور	جواهر	clothes
+bague	noun	f		انگشتر	انگشتر	clothes
+poche	noun	f		جیب	جیب	clothes
+parapluie	noun	m		چتر	چتر	weather
+mode	noun	f		مُد	مد	clothes
+maillot de bain	noun	m	maillots de bain	مایو، لباس شنا	مایو	clothes
+pyjama	noun	m		لباس خواب، پیژامه	لباس خواب	clothes
+coton	noun	m		پنبه، نخ (پارچه)	پنبه	clothes
+
+# transport and travel
+conduire	verb			رانندگی کردن، راندن	رانندگی کردن	transport
+conducteur	noun	m		رانندهٔ (خودرو)	راننده خودرو	transport
+permis de conduire	noun	m		گواهینامهٔ رانندگی	گواهینامه	transport
+garer	verb			پارک کردن	پارک کردن	transport
+camion	noun	m		کامیون	کامیون	transport
+autoroute	noun	f		بزرگراه، اتوبان	بزرگراه	transport
+circulation	noun	f		آمد و شد (خودروها)، ترافیک	ترافیک	transport
+embouteillage	noun	m		راه‌بندان، ترافیک سنگین	راه‌بندان	transport	checked:level
+vitesse	noun	f		سرعت	سرعت	transport
+essence	noun	f		بنزین	بنزین	transport
+accident	noun	m		تصادف، حادثه	تصادف	transport
+panne	noun	f		خرابی (ماشین یا دستگاه)	خرابی	transport
+tomber en panne	phrase			خراب شدن (ماشین یا دستگاه)	خراب شدن	transport	parts:tomber panne
+passager	noun	m		مسافر (وسیلهٔ نقلیه)، سرنشین	سرنشین	transport
+station	noun	f		ایستگاه (مترو)	ایستگاه مترو	transport
+arrêt	noun	m		ایستگاه (اتوبوس)	ایستگاه اتوبوس	transport
+quai	noun	m		سکو (ایستگاه)	سکو	transport
+horaire	noun	m		ساعت حرکت، برنامهٔ زمانی	برنامه زمانی	transport
+pilote	noun	m		خلبان	خلبان	transport
+voler	verb			پرواز کردن	پرواز کردن	travel
+vol	noun	m		پرواز	پرواز	travel
+voler	verb			دزدیدن	دزدیدن	actions	code:voler-2	sense_of:voler
+voyageur	noun	m		مسافر	مسافر	travel
+départ	noun	m		حرکت (رفتن)، عزیمت	عزیمت	travel
+arrivée	noun	f		ورود، زمان رسیدن	ورود	travel
+retour	noun	m		بازگشت، برگشت	بازگشت	travel
+être de retour	phrase			برگشته بودن، بازگشته بودن	برگشته بودن	travel	parts:être retour
+aller-retour	noun	m	allers-retours	بلیت رفت و برگشت	رفت و برگشت	travel	checked:level
+bagage	noun	m		بار سفر، اسباب سفر	بار سفر	travel
+sac à dos	noun	m	sacs à dos	کوله‌پشتی	کوله‌پشتی	travel
+réservation	noun	f		رزرو، جا گرفتن	رزرو	travel	checked:level
+visa	noun	m		ویزا، روادید	ویزا	travel
+frontière	noun	f		مرز	مرز	travel
+douane	noun	f		گمرک	گمرک	travel
+séjour	noun	m		اقامت (کوتاه)، مدت ماندن	اقامت	travel
+bon séjour	phrase			اقامت خوبی داشته باشید	اقامت خوش	travel	parts:bon séjour
+guide	noun	m		راهنمای تور، راهنما	راهنمای تور	travel
+camping	noun	m		کمپینگ، اردوگاه	کمپینگ	leisure	checked:level
+faire du camping	phrase			کمپینگ رفتن، چادر زدن	کمپینگ رفتن	leisure	parts:faire camping
+tente	noun	f		چادر (مسافرتی)	چادر	leisure	homophones:tante
+randonnée	noun	f		کوه‌پیمایی، پیاده‌روی طولانی	کوه‌پیمایی	leisure	checked:level
+faire une randonnée	phrase			کوه رفتن، پیاده‌روی طولانی کردن	کوه رفتن	leisure	parts:faire randonnée
+chemin	noun	m		مسیر، راه (رسیدن به جایی)	مسیر	space
+demander son chemin	phrase			راه را پرسیدن، نشانی پرسیدن	راه پرسیدن	space	parts:demander chemin
+direction	noun	f		جهت، سمت (مسیر)	جهت	space
+endroit	noun	m		جا، مکان	مکان	space
+lieu	noun	m	lieux	مکان، محل	مکان	space
+milieu	noun	m	milieux	وسط، میانه	وسط	space	coll:au milieu de la rue → وسط خیابان
+bout	noun	m		ته، نوک	ته	space	coll:au bout de la rue → ته خیابان
+tour	noun	m		گشت، یک دور (گردش)	گشت	leisure	code:tour-m
+faire un tour	phrase			گشتی زدن، دوری زدن	گشت زدن	leisure	parts:faire tour-m
+promenade	noun	f		گردش (کوتاه)، پیاده‌روی	گردش	leisure
+faire une promenade	phrase			قدم زدن، گردش کردن	قدم زدن	leisure	parts:faire promenade
+
+# work
+emploi	noun	m		شغل (موقعیت کاری)، استخدام	استخدام	work
+trouver du travail	phrase			کار پیدا کردن	کار پیدا کردن	work	parts:trouver travail
+boulot	noun	m		کار	کار	work	register:familier
+entreprise	noun	f		شرکت، کسب‌وکار	شرکت	work
+patron	noun	m		صاحب‌کار، کارفرما	صاحب‌کار	work
+chef	noun	m		رئیس، سرپرست	رئیس	work
+directeur	noun	m		مدیر	مدیر	work
+collègue	noun	mf		همکار	همکار	work
+employé	noun	m		کارمند	کارمند	work
+ouvrier	noun	m		کارگر	کارگر	work
+salaire	noun	m		حقوق، دستمزد	حقوق	work
+réunion	noun	f		جلسه	جلسه	work
+projet	noun	m		پروژه، طرح	پروژه	work
+expérience	noun	f		تجربه	تجربه	work
+stage	noun	m		کارآموزی، دورهٔ کارآموزی	کارآموزی	work
+faire un stage	phrase			کارآموزی کردن، دورهٔ کارآموزی گذراندن	کارآموزی کردن	work	parts:faire stage
+congé	noun	m		مرخصی کاری	مرخصی کاری	work
+chômage	noun	m		بیکاری	بیکاری	work
+être au chômage	phrase			بیکار بودن	بیکار بودن	work	parts:être chômage
+retraite	noun	f		بازنشستگی	بازنشستگی	work
+être à la retraite	phrase			بازنشسته بودن	بازنشسته بودن	work	parts:être retraite
+avocat	noun	m		وکیل	وکیل	work
+journaliste	noun	mf		روزنامه‌نگار، خبرنگار	روزنامه‌نگار	work
+coiffeur	noun	m		آرایشگر	آرایشگر	work
+boulanger	noun	m		نانوا	نانوا	work
+facteur	noun	m		نامه‌رسان، پستچی	نامه‌رسان	work
+pompier	noun	m		آتش‌نشان	آتش‌نشان	work
+mécanicien	noun	m		مکانیک	مکانیک	work
+architecte	noun	mf		معمار	معمار	work
+écrivain	noun	m		نویسنده	نویسنده	culture
+artiste	noun	mf		هنرمند	هنرمند	culture
+musicien	noun	m		نوازنده، موسیقی‌دان	نوازنده	culture
+photographe	noun	mf		عکاس	عکاس	culture
+
+# school
+examen	noun	m		امتحان	امتحان	education
+passer un examen	phrase			امتحان دادن	امتحان دادن	education	parts:passer examen
+réussir un examen	phrase			در امتحان قبول شدن	در امتحان قبول شدن	education	parts:réussir examen
+note	noun	f		نمره	نمره	education
+devoir	noun	m		تکلیف (درسی)، مشق	تکلیف	education	code:devoir-noun	coll:faire ses devoirs → تکالیفش را انجام دادن
+avoir cours	phrase			کلاس داشتن	کلاس داشتن	education	parts:avoir cours
+diplôme	noun	m		مدرک تحصیلی، دیپلم	مدرک تحصیلی	education
+matière	noun	f		درس (موضوع درسی)	موضوع درسی	education
+mathématiques	noun	f		ریاضی، ریاضیات	ریاضی	education	number:pl_only
+histoire	noun	f		تاریخ	تاریخ	education	code:histoire-2	sense_of:histoire
+géographie	noun	f		جغرافیا	جغرافیا	education
+grammaire	noun	f		دستور زبان	دستور زبان	education	checked:level
+vocabulaire	noun	m		واژگان	واژگان	education
+dictionnaire	noun	m		فرهنگ لغت، دیکشنری	فرهنگ لغت	education
+papier	noun	m		کاغذ	کاغذ	education
+feuille	noun	f		برگ (درخت)	برگ	nature
+feuille	noun	f		برگه (کاغذ)	برگه	education	code:feuille-2	sense_of:feuille
+gomme	noun	f		پاک‌کن	پاک‌کن	education
+règle	noun	f		خط‌کش	خط‌کش	education
+lycée	noun	m		دبیرستان	دبیرستان	education
+collège	noun	m		مدرسهٔ راهنمایی (دورهٔ اول متوسطه)	مدرسه راهنمایی	education	note:دوست دروغین: collège مدرسهٔ نوجوان‌های ۱۱ تا ۱۵ ساله است، نه دانشکده (دانشگاه université است).
+prof	noun	mf		معلم، استاد	معلم	education	register:familier
+présent	adj			حاضر	حاضر	education
+absent	adj			غایب	غایب	education
+faute	noun	f		غلط نوشتاری، تقصیر	غلط نوشتاری	education
+erreur	noun	f		اشتباه، خطا	اشتباه	abstract
+corriger	verb			تصحیح کردن، درست کردن (غلط)	تصحیح کردن	education
+traduire	verb			ترجمه کردن	ترجمه کردن	education
+enseigner	verb			درس دادن، آموزش دادن	درس دادن	education
+lecture	noun	f		خواندن، مطالعه	مطالعه	education	note:دوست دروغین: lecture یعنی «خواندن، مطالعه»، نه سخنرانی.
+sujet	noun	m		موضوع	موضوع	abstract
+s'inscrire	verb			ثبت‌نام کردن	ثبت‌نام کردن	education
+formulaire	noun	m		فرم، برگهٔ درخواست	فرم	abstract
+remplir	verb			پر کردن	پر کردن	actions
+signer	verb			امضا کردن	امضا کردن	actions
+réfléchir	verb			تأمل کردن، فکر کردن (دقیق)	تأمل کردن	abstract
+deviner	verb			حدس زدن	حدس زدن	abstract
+
+# free time and culture
+loisir	noun	m		سرگرمی	سرگرمی	leisure
+temps libre	phrase			وقت آزاد، اوقات فراغت	وقت آزاد	leisure	parts:temps libre
+passer du temps	phrase			وقت گذراندن	وقت گذراندن	leisure	parts:passer temps
+concert	noun	m		کنسرت	کنسرت	leisure
+spectacle	noun	m		نمایش، اجرا	نمایش	leisure
+exposition	noun	f		نمایشگاه	نمایشگاه	culture
+danse	noun	f		رقص	رقص	leisure
+dessin	noun	m		طراحی، نقاشی (با مداد)	طراحی	culture
+dessiner	verb			نقاشی کشیدن، طراحی کردن	نقاشی کشیدن	culture
+peinture	noun	f		نقاشی (با رنگ)، رنگ (برای دیوار)	نقاشی با رنگ	culture
+roman	noun	m		رمان	رمان	culture
+bande dessinée	noun	f	bandes dessinées	داستان مصور، کمیک	داستان مصور	culture
+magazine	noun	m		مجله	مجله	media
+jeu vidéo	noun	m	jeux vidéo	بازی ویدئویی، بازی کامپیوتری	بازی ویدئویی	leisure
+échecs	noun	m		شطرنج	شطرنج	leisure	number:pl_only
+jouer aux échecs	phrase			شطرنج بازی کردن	شطرنج بازی کردن	leisure	parts:jouer échecs
+jouer aux cartes	phrase			ورق بازی کردن، پاسور بازی کردن	ورق بازی کردن	leisure	parts:jouer carte
+ballon	noun	m		توپ، بادکنک	توپ	leisure
+joueur	noun	m		بازیکن	بازیکن	leisure
+course	noun	f		مسابقهٔ دو	مسابقهٔ دو	leisure
+ski	noun	m		اسکی	اسکی	leisure
+faire du ski	phrase			اسکی کردن، اسکی رفتن	اسکی کردن	leisure	parts:faire ski
+natation	noun	f		شنا (ورزش)	شنا	leisure	checked:level
+faire du cheval	phrase			اسب‌سواری کردن	اسب‌سواری	leisure	parts:faire cheval
+faire de la musique	phrase			ساز زدن، موسیقی کار کردن	موسیقی کار کردن	leisure	parts:faire musique
+club	noun	m		باشگاه	باشگاه	leisure
+foot	noun	m		فوتبال	فوتبال	leisure	register:familier
+ciné	noun	m		سینما	سینما	leisure	register:familier
+resto	noun	m		رستوران	رستوران	city	register:familier
+sieste	noun	f		چرت (بعدازظهر)، خواب نیمروز	چرت	leisure
+faire la sieste	phrase			چرت زدن، خواب نیمروز کردن	چرت زدن	leisure	parts:faire sieste
+invitation	noun	f		دعوت، دعوت‌نامه	دعوت	leisure
+fêter	verb			جشن گرفتن	جشن گرفتن	leisure
+faire la fête	phrase			پارتی کردن، به مهمانی و خوش‌گذرانی رفتن	پارتی کردن	leisure	parts:faire fête
+joyeux	adj			شادمان، پرنشاط	شادمان	feelings
+Noël	noun	m		کریسمس، عید نوئل	کریسمس	culture
+joyeux Noël	phrase			کریسمس مبارک	کریسمس مبارک	culture	parts:joyeux Noël
+bonne année	phrase			سال نو مبارک	سال نو مبارک	time	parts:bon année
+bon week-end	phrase			آخر هفتهٔ خوبی داشته باشی	آخر هفته خوش	time	parts:bon week-end
+bonne fête	phrase			روزت مبارک، جشنت مبارک	روزت مبارک	time	parts:bon fête
+courage	noun	m		شجاعت، دل و جرئت	شجاعت	character
+bon courage	phrase			قوی باش، خسته نباشی	خسته نباشی	people	parts:bon courage
+culture	noun	f		فرهنگ	فرهنگ	culture
+art	noun	m		هنر	هنر	culture
+appareil photo	noun	m	appareils photo	دوربین عکاسی	دوربین عکاسی	media
+
+# media and communication
+écran	noun	m		صفحهٔ نمایش، اسکرین	صفحه نمایش	media
+site	noun	m		وب‌سایت، سایت	وب‌سایت	media
+application	noun	f		اپلیکیشن، برنامه (موبایل)	اپلیکیشن	media
+mot de passe	noun	m	mots de passe	رمز عبور، پسورد	رمز عبور	media
+télécharger	verb			دانلود کردن، بارگیری کردن	دانلود کردن	media	checked:level
+vidéo	noun	f		ویدئو، فیلم (کوتاه)	ویدئو	media
+émission	noun	f		برنامه (تلویزیون یا رادیو)	برنامه تلویزیونی	media
+chaîne	noun	f		شبکه (تلویزیون)، کانال	شبکه تلویزیونی	media
+publicité	noun	f		تبلیغ، آگهی	تبلیغ	media
+information	noun	f		اطلاعات	اطلاعات	media
+nouvelle	noun	f		خبر	خبر	media
+article	noun	m		مقاله (روزنامه)	مقاله	media
+carte postale	noun	f	cartes postales	کارت پستال	کارت پستال	media
+enveloppe	noun	f		پاکت نامه	پاکت نامه	media
+timbre	noun	m		تمبر	تمبر	media
+colis	noun	m		بستهٔ پستی	بسته پستی	media
+courrier	noun	m		نامه‌ها، پست (نامه‌ها)	نامه‌ها	media
+conversation	noun	f		گفتگو، صحبت	گفتگو	media
+discuter	verb			گفتگو کردن، بحث کردن	بحث کردن	media
+rappeler	verb			دوباره زنگ زدن، بعداً تماس گرفتن	دوباره زنگ زدن	media
+
+# more everyday verbs and phrases
+venir de	phrase			تازه ... کردن (گذشتهٔ نزدیک)	گذشته نزدیک	time	parts:venir
+être en train de	phrase			در حالِ ... بودن	در حال انجام بودن	time	parts:être
+aller chercher	phrase			رفتن دنبالِ (کسی یا چیزی)	رفتن دنبال	actions	parts:aller chercher
+aller mieux	phrase			بهتر شدن (حال)، حالِ (کسی) بهتر شدن	بهتر شدن حال	health	parts:aller mieux
+visite	noun	f		دیدار، بازدید	دیدار	people
+rendre visite à	phrase			به دیدنِ (کسی) رفتن	به دیدن رفتن	people	parts:rendre visite
+ressembler	verb			شبیه بودن، شبیهِ ... بودن	شبیه بودن	people
+déranger	verb			مزاحم شدن، مزاحمِ ... شدن	مزاحم شدن	people
+s'intéresser	verb			علاقه داشتن (به)، علاقه‌مند بودن	علاقه داشتن	feelings
+se faire des amis	phrase			دوست پیدا کردن	دوست پیدا کردن	people	parts:faire ami
+partager	verb			تقسیم کردن، به اشتراک گذاشتن	تقسیم کردن	actions
+organiser	verb			ترتیب دادن، برگزار کردن	ترتیب دادن	actions
+annuler	verb			لغو کردن، کنسل کردن	لغو کردن	actions
+accompagner	verb			همراهی کردن، همراهِ ... رفتن	همراهی کردن	actions
+vérifier	verb			بررسی کردن، چک کردن	بررسی کردن	actions
+cacher	verb			پنهان کردن، قایم کردن	پنهان کردن	actions
+bouger	verb			تکان خوردن، جابه‌جا شدن	تکان خوردن	actions
+sauter	verb			پریدن	پریدن	actions
+pousser	verb			هل دادن	هل دادن	actions
+tirer	verb			کشیدن (به سمت خود)	کشیدن	actions
+construire	verb			ساختن	ساختن	actions
+découvrir	verb			کشف کردن، پیدا کردن (چیز تازه)	کشف کردن	actions
+brûler	verb			سوختن، سوزاندن	سوختن	actions
+laisser tomber	phrase			ول کردن، بی‌خیال شدن	بی‌خیال شدن	abstract	parts:laisser tomber
+mentir	verb			دروغ گفتن	دروغ گفتن	abstract
+mensonge	noun	m		دروغ	دروغ	abstract
+rêver	verb			خواب دیدن، آرزو داشتن	خواب دیدن	feelings
+fumer	verb			سیگار کشیدن	سیگار کشیدن	health
+cigarette	noun	f		سیگار	سیگار	health
+durer	verb			طول کشیدن	طول کشیدن	time
+mettre du temps	phrase			زمان بردن (برای کسی)، طول کشیدن (برای کسی)	زمان بردن	time	parts:mettre temps
+donner à manger	phrase			غذا دادن (به)	غذا دادن (به)	animals	parts:donner manger
+bruit	noun	m		سروصدا، صدای ناهنجار	سروصدا	city
+faire du bruit	phrase			سروصدا کردن	سروصدا کردن	city	parts:faire bruit
+silence	noun	m		سکوت	سکوت	abstract
+pause	noun	f		استراحت کوتاه، وقفه	وقفه	time
+faire une pause	phrase			استراحت کوتاهی کردن، وقفه دادن	وقفه دادن	time	parts:faire pause
+ça ne fait rien	phrase			اشکالی ندارد، عیبی ندارد	مهم نیست	abstract	parts:faire rien
+faire du bien	phrase			حالِ (کسی) را خوب کردن، مفید بودن (برای حال)	حال خوب کردن	feelings	parts:faire bien
+à la prochaine	phrase			تا دفعهٔ بعد	تا دفعهٔ بعد	people	parts:prochain
+
+# time
+passé	noun	m		گذشته (زمان)، روزگار گذشته	گذشته (زمان)	time
+futur	noun	m		آینده (زمان)	آینده (زمان)	time
+siècle	noun	m		قرن، سده	قرن	time
+seconde	noun	f		ثانیه	ثانیه	time
+instant	noun	m		لحظه	لحظه	time
+minuit	noun	m		نیمه‌شب، ساعت دوازده شب	نیمه‌شب	time
+début	noun	m		ابتدا، شروع	ابتدا	time
+époque	noun	f		دوران، روزگار	دوران	time
+calendrier	noun	m		تقویم	تقویم	time
+emploi du temps	noun	m	emplois du temps	برنامهٔ هفتگی (کلاس یا کار)	برنامه هفتگی	education
+jour férié	noun	m	jours fériés	روز تعطیل رسمی	روز تعطیل رسمی	time
+avant-hier	adv			پریروز	پریروز	time
+après-demain	adv			پس‌فردا	پس‌فردا	time
+en avance	adv			زودتر از موقع	زودتر از موقع	time
+en ce moment	adv			در حال حاضر، این روزها	در حال حاضر	time
+à ce soir	phrase			تا امشب، امشب می‌بینمت	تا امشب	time	parts:soir
+
+# numbers and amounts
+nombre	noun	m		تعداد، عدد	تعداد	numbers
+moitié	noun	f		نیمه، یک دوم	نیمه	numbers
+troisième	adj			سوم	سوم	numbers
+million	noun	m		میلیون	میلیون	numbers
+paire	noun	f		جفت	جفت	numbers	homophones:père
+
+# weather and nature
+orage	noun	m		توفان (با رعد و برق)، رعد و برق	توفان	weather
+brouillard	noun	m		مه	مه	weather
+température	noun	f		دما، درجهٔ حرارت	دما	weather
+degré	noun	m		درجه	درجه	weather
+climat	noun	m		اقلیم، آب و هوا (یک منطقه)	اقلیم	weather
+glace	noun	f		یخ	یخ	weather	code:glace-2	sense_of:glace
+faire mauvais	phrase			هوا بد بودن	هوا بد بودن	weather	parts:faire mauvais
+faire nuit	phrase			هوا تاریک بودن (شب شدن)	هوا تاریک بودن	weather	parts:faire nuit
+coup de soleil	phrase			آفتاب‌سوختگی	آفتاب‌سوختگی	health	parts:coup soleil
+nature	noun	f		طبیعت	طبیعت	nature
+environnement	noun	m		محیط زیست	محیط زیست	nature
+pollution	noun	f		آلودگی	آلودگی	nature	checked:level
+planète	noun	f		سیاره	سیاره	nature
+lune	noun	f		ماه (کرهٔ ماه)	کره ماه	nature
+étoile	noun	f		ستاره	ستاره	nature
+rivière	noun	f		رودخانه، رود (کوچک)	رودخانه	nature
+fleuve	noun	m		رود بزرگ	رود بزرگ	nature
+océan	noun	m		اقیانوس	اقیانوس	nature
+île	noun	f		جزیره	جزیره	nature
+désert	noun	m		بیابان، صحرا	بیابان	nature
+champ	noun	m		کشتزار، زمین کشاورزی	کشتزار	nature
+herbe	noun	f		چمن، علف	چمن	nature
+plante	noun	f		گیاه	گیاه	nature
+bois	noun	m		چوب	چوب	nature
+pierre	noun	f		سنگ	سنگ	nature
+sable	noun	m		ماسه، شن	ماسه	nature
+paysage	noun	m		منظره، چشم‌انداز	منظره	nature
+
+# animals
+mouton	noun	m		گوسفند	گوسفند	animals
+cochon	noun	m		خوک	خوک	animals
+poule	noun	f		مرغ (زنده)	مرغ زنده	animals
+canard	noun	m		اردک	اردک	animals
+chèvre	noun	f		بز	بز	animals
+âne	noun	m		الاغ، خر	الاغ	animals
+lapin	noun	m		خرگوش	خرگوش	animals
+souris	noun	f		موش	موش	animals
+lion	noun	m		شیر (جانور)	شیر جانور	animals
+tigre	noun	m		ببر	ببر	animals
+éléphant	noun	m		فیل	فیل	animals
+singe	noun	m		میمون	میمون	animals
+ours	noun	m		خرس	خرس	animals
+loup	noun	m		گرگ	گرگ	animals
+serpent	noun	m		مار	مار	animals
+papillon	noun	m		پروانه	پروانه	animals
+insecte	noun	m		حشره	حشره	animals
+
+# ideas, opinions and things
+avis	noun	m		نظر، عقیده	نظر	abstract	coll:à mon avis → به نظر من
+choix	noun	m		انتخاب	انتخاب	abstract
+solution	noun	f		راه‌حل	راه‌حل	abstract
+différence	noun	f		تفاوت، فرق	تفاوت	abstract
+habitude	noun	f		عادت	عادت	abstract
+avoir l'habitude de	phrase			عادت داشتن (به)	عادت داشتن (به)	abstract	parts:avoir habitude
+objet	noun	m		شیء	شیء	abstract
+truc	noun	m		چیز	چیز	abstract	register:familier
+affaires	noun	f		وسایل شخصی، خرت و پرت	وسایل شخصی	home	number:pl_only
+aide	noun	f		کمک	کمک	abstract
+danger	noun	m		خطر	خطر	abstract
+surprise	noun	f		غافلگیری، سورپرایز	غافلگیری	feelings
+dommage	noun	m		حیف	حیف	feelings	coll:c'est dommage → حیف است ; quel dommage ! → چه حیف!
+
+# more frequent verbs
+revoir	verb			دوباره دیدن	دوباره دیدن	people
+trouver	verb			به نظرِ (کسی) آمدن (je trouve que ...)	به نظر کسی آمدن	abstract	code:trouver-2	sense_of:trouver	coll:je trouve ça bien → به نظرم خوب است
+marcher	verb			کار کردن (دستگاه)، درست کار کردن	کار کردن دستگاه	actions	code:marcher-2	sense_of:marcher	coll:ça ne marche pas → کار نمی‌کند
+reconnaître	verb			باز شناختن، شناختن (دوباره)	باز شناختن	people
+emmener	verb			با خود بردن (کسی)، رساندن (کسی به جایی)	بردن کسی	actions
+amener	verb			آوردن (کسی)، با خود آوردن (کسی)	آوردن کسی	actions
+emporter	verb			با خود بردن (چیزی)	بردن چیزی	actions	coll:à emporter → بیرون‌بر (غذا)
+réveiller	verb			بیدار کردن (کسی)	بیدار کردن	home
+s'endormir	verb			خوابش بردن، به خواب رفتن	خوابش بردن	home
+se taire	verb			ساکت شدن، حرف نزدن	ساکت شدن	people	coll:tais-toi ! → ساکت شو!
+lancer	verb			پرتاب کردن، انداختن (به سوی)	پرتاب کردن	actions
+attraper	verb			گیر انداختن، گرفتن (چیزی در هوا)	گیر انداختن	actions
+rouler	verb			حرکت کردن (خودرو)، غلتیدن	حرکت کردن خودرو	transport
+avancer	verb			جلو رفتن، پیش رفتن	جلو رفتن	actions
+recommencer	verb			از نو شروع کردن، دوباره شروع کردن	از نو شروع کردن	actions
+sauver	verb			نجات دادن	نجات دادن	actions
+serrer	verb			فشار دادن، محکم گرفتن	فشار دادن	actions
+serrer la main	phrase			دست دادن	دست دادن	people	parts:serrer main
+saluer	verb			سلام کردن، سلام رساندن	سلام کردن	people
+rejoindre	verb			پیوستن (به)، به (کسی) رسیدن (در جایی)	پیوستن	people
+s'entendre	verb			با هم کنار آمدن، تفاهم داشتن	کنار آمدن	people	coll:s'entendre bien avec → با ... خوب کنار آمدن
+manquer	verb			کم بودن، کافی نبودن	کم بودن	abstract	coll:tu me manques → دلم برایت تنگ شده	note:در tu me manques فاعل کسی است که دلمان برایش تنگ است، برعکسِ فارسی: Tu me manques = دلم برایت تنگ شده.
+suffire	verb			کافی بودن، بس بودن	کافی بودن	abstract	coll:ça suffit ! → بس است!
+prier	verb			دعا کردن، نماز خواندن	دعا کردن	culture
+je vous en prie	phrase			خواهش می‌کنم (در جواب تشکر)، بفرمایید	خواهش می‌کنم	people	parts:prier
+protéger	verb			محافظت کردن، حفاظت کردن	محافظت کردن	abstract
+vider	verb			خالی کردن	خالی کردن	actions
+effacer	verb			پاک کردن (نوشته)	پاک کردن	education
+sécher	verb			خشک کردن، خشک شدن	خشک کردن	home
+repasser	verb			اتو کردن	اتو کردن	home
+briller	verb			درخشیدن، برق زدن	درخشیدن	weather
+se perdre	verb			گم شدن، راه را گم کردن	گم شدن	travel
+se blesser	verb			زخمی شدن، آسیب دیدن	زخمی شدن	health
+se faire mal	phrase			به خود صدمه زدن، صدمه دیدن	به خود صدمه زدن	health	parts:faire mal
+se préparer	verb			آماده شدن	آماده شدن	actions
+se baigner	verb			آب‌تنی کردن، شنا کردن (در دریا)	آب‌تنی کردن	leisure
+réviser	verb			مرور کردن (درس)	مرور کردن	education
+
+# more adjectives and adverbs
+clair	adj			روشن (نور یا رنگ)، واضح	روشن	colors
+foncé	adj			تیره (رنگ)، پررنگ	تیره	colors
+rond	adj			گرد	گرد	qualities
+carré	adj			مربع، چهارگوش	مربع	qualities
+large	adj			پهن، گشاد	پهن	qualities	note:دوست دروغین: large یعنی «پهن، گشاد»، نه «بزرگ».
+étroit	adj			باریک، تنگ	باریک	qualities
+lent	adj			کند، کندرو	کند	qualities
+lentement	adv			آهسته، به آرامی	آهسته	qualities
+complet	adj			کامل، پر (بدون جای خالی)	کامل	qualities
+confortable	adj			راحت (مبل، تخت یا هتل)	راحت	home
+bruyant	adj			پرسروصدا	پرسروصدا	city
+magnifique	adj			باشکوه، فوق‌العاده زیبا	باشکوه	qualities
+horrible	adj			وحشتناک، افتضاح	وحشتناک	qualities
+énorme	adj			عظیم، خیلی بزرگ	عظیم	qualities
+urgent	adj			فوری، اضطراری	فوری	abstract
+classique	adj			کلاسیک	کلاسیک	culture
+neuf	adj			نو (دست‌نخورده)، تازه‌ساخته	دست‌نخورده	qualities	code:neuf-adj	note:neuf یعنی تازه‌ساخته و کارنکرده (une voiture neuve)؛ nouveau یعنی جدید و تازه‌رسیده (ma nouvelle voiture، شاید دست دوم).
+pire	adj			بدتر، بدترین (le pire)	بدتر	qualities
+général	adj			کلی، عمومی	کلی	abstract	coll:en général → معمولاً، به طور کلی
+tellement	adv			آن‌قدر، به قدری	آن‌قدر	qualities
+debout	adv			ایستاده، سرپا	ایستاده	space
+humide	adj			مرطوب، نم‌دار	مرطوب	weather
+ensoleillé	adj			آفتابی	آفتابی	weather
+nerveux	adj			عصبی، مضطرب	عصبی	character
+bavard	adj			پرحرف، وراج	پرحرف	character
+gourmand	adj			شکمو	شکمو	character
+travailleur	adj			سخت‌کوش، پرکار	سخت‌کوش	character
+maigre	adj			لاغر (بیش از حد)، نحیف	نحیف	character
+moyen	adj			متوسط	متوسط	qualities	code:moyen-adj	coll:de taille moyenne → قدِ متوسط
+chauve	adj			کچل، طاس	کچل	character
+frisé	adj			فرفری (مو)	فرفری	character
+bonsoir	interj			عصر بخیر، شب بخیر (هنگام دیدار)	عصر بخیر	people
+chéri	noun	m		عزیزم، عزیز (در خطاب)	عزیزم	family
+
+# nationalities
+américain	adj			آمریکایی	آمریکایی	people
+canadien	adj			کانادایی	کانادایی	people
+italien	adj			ایتالیایی	ایتالیایی	people
+espagnol	adj			اسپانیایی	اسپانیایی	people
+européen	adj			اروپایی	اروپایی	people
+russe	adj			روسی، روس	روسی	people
+turc	adj			ترکی، ترک	ترکی	people
+arabe	adj			عربی، عرب	عربی	people
+chinois	adj			چینی	چینی	people
+japonais	adj			ژاپنی	ژاپنی	people
+
+# more everyday nouns
+image	noun	f		تصویر	تصویر	media
+ligne	noun	f		خط (مترو یا اتوبوس)، خط	خط	transport
+place	noun	f		جای نشستن، صندلی (در اتوبوس یا سینما)	جای نشستن	transport	code:place-2	sense_of:place
+odeur	noun	f		بو	بو	nature
+conseil	noun	m		توصیه، نصیحت	توصیه	abstract
+service	noun	m		خدمت، سرویس (رستوران)	خدمت	work
+sens	noun	m		معنا، معنی	معنا	education
+moyen	noun	m		وسیله، راه (روش)	وسیله	abstract	coll:un moyen de transport → وسیلهٔ نقلیه
+changement	noun	m		تغییر	تغییر	abstract
+reste	noun	m		بقیه، باقی‌مانده	بقیه	abstract
+activité	noun	f		فعالیت	فعالیت	leisure
+niveau	noun	m	niveaux	سطح، مرحله	سطح	education
+caractère	noun	m		اخلاق، منش	اخلاق	character
+amitié	noun	f		دوستی	دوستی	people
+fatigue	noun	f		خستگی	خستگی	health
+blague	noun	f		شوخی، جوک	شوخی	leisure
+chaleur	noun	f		گرما	گرما	weather
+ombre	noun	f		سایه	سایه	nature
+bord	noun	m		کنار، لبه	لبه	space	coll:au bord de la mer → کنار دریا
+intérieur	noun	m		داخل، درون	درون	space	coll:à l'intérieur → داخل، درون
+demi-heure	noun	f	demi-heures	نیم ساعت	نیم ساعت	time
+équipe	noun	f		تیم، گروه (ورزشی یا کاری)	تیم	leisure
+voleur	noun	m		دزد	دزد	people
+vol	noun	m		دزدی، سرقت	دزدی	actions	code:vol-2	sense_of:vol
+incendie	noun	m		آتش‌سوزی	آتش‌سوزی	city
+ambulance	noun	f		آمبولانس	آمبولانس	health
+dollar	noun	m		دلار	دلار	shopping
+trottoir	noun	m		پیاده‌رو	پیاده‌رو	city
+panneau	noun	m	panneaux	تابلو (راهنما)، علامت	تابلو راهنما	city
+agence	noun	f		آژانس، دفتر (خدمات)	آژانس	city	coll:une agence de voyages → آژانس مسافرتی
+commissariat	noun	m		کلانتری	کلانتری	city
+guichet	noun	m		باجه	باجه	city
+distributeur	noun	m		دستگاه خودپرداز، عابربانک	خودپرداز	shopping
+code	noun	m		کد، رمز (کارت)	کد	media
+facture	noun	f		قبض، فاکتور	قبض	shopping
+portefeuille	noun	m		کیف پول	کیف پول	shopping
+panier	noun	m		سبد	سبد	shopping
+carte d'identité	noun	f	cartes d'identité	کارت شناسایی، کارت ملی	کارت شناسایی	travel
+ambassade	noun	f		سفارت	سفارت	travel
+trajet	noun	m		مسیر (رفت و آمد)، مسافت	مسیر رفت و آمد	transport
+réception	noun	f		پذیرش (هتل)، پذیرش	پذیرش	travel
+location	noun	f		کرایه، اجاره (ماشین یا خانه)	کرایه	home	note:دوست دروغین: location یعنی «اجاره، کرایه»، نه «مکان».
+signature	noun	f		امضا	امضا	abstract
+salle	noun	f		سالن، تالار	سالن	home	homophones:sale
+couverture	noun	f		پتو	پتو	home
+oreiller	noun	m		بالش	بالش	home
+robinet	noun	m		شیر آب	شیر آب	home
+tiroir	noun	m		کشو	کشو	home
+plafond	noun	m		سقف (داخل اتاق)	سقف	home
+aspirateur	noun	m		جاروبرقی	جاروبرقی	home
+horloge	noun	f		ساعت دیواری	ساعت دیواری	home
+bougie	noun	f		شمع	شمع	home
+ail	noun	m		سیر	سیر	food
+épice	noun	f		ادویه	ادویه	food
+sauce	noun	f		سس	سس	food
+omelette	noun	f		املت	املت	food
+goûter	noun	m		عصرانه	عصرانه	food	code:goûter-noun
+sac à main	noun	m	sacs à main	کیف دستی (زنانه)	کیف دستی	clothes
+bouton	noun	m		دکمه	دکمه	clothes
+imperméable	noun	m		بارانی (لباس)	بارانی	clothes
+parfum	noun	m		عطر	عطر	clothes
+mouchoir	noun	m		دستمال (کاغذی یا پارچه‌ای)	دستمال	health
+toux	noun	f		سرفه	سرفه	health	homophones:tout
+clinique	noun	f		درمانگاه، کلینیک	درمانگاه	health
+caissier	noun	m		صندوق‌دار	صندوق‌دار	work
+boucher	noun	m		قصاب	قصاب	work
+vétérinaire	noun	mf		دامپزشک	دامپزشک	work
+jardinier	noun	m		باغبان	باغبان	work
+retraité	noun	m		بازنشسته	بازنشسته	work
+instituteur	noun	m		آموزگار (دبستان)	آموزگار	education
+texte	noun	m		متن	متن	education
+traduction	noun	f		ترجمه	ترجمه	education
+verbe	noun	m		فعل	فعل	education
+orthographe	noun	f		املا، نگارش درست	املا	education
+prononciation	noun	f		تلفظ	تلفظ	education	checked:level
+accent	noun	m		لهجه	لهجه	education
+inscription	noun	f		ثبت‌نام	ثبت‌نام	education
+rentrée	noun	f		بازگشایی مدرسه‌ها، شروع سال تحصیلی	بازگشایی مدرسه‌ها	education
+lettre	noun	f		حرف (الفبا)	حرف الفبا	education	code:lettre-2	sense_of:lettre
+carnet	noun	m		دفترچه	دفترچه	education
+programme	noun	m		برنامه (کارها یا درس)	برنامه کارها	abstract
+série	noun	f		سریال، مجموعه	سریال	media
+dessin animé	noun	m	dessins animés	کارتون، انیمیشن	کارتون	media
+titre	noun	m		عنوان، تیتر	عنوان	media
+smartphone	noun	m		گوشی هوشمند، اسمارت‌فون	گوشی هوشمند	media
+appli	noun	f		اپ، اپلیکیشن	اپلیکیشن	media	register:familier
+festival	noun	m		جشنواره	جشنواره	culture
+instrument	noun	m		ساز (موسیقی)، ابزار	ساز	culture
+Nouvel An	noun	m		سال نو	سال نو	culture
+jouet	noun	m		اسباب‌بازی	اسباب‌بازی	leisure
+poupée	noun	f		عروسک	عروسک	leisure
+bouquet	noun	m		دسته‌گل	دسته‌گل	leisure
+balade	noun	f		گردش	گردش	leisure	register:familier
+casque	noun	m		کلاه ایمنی	کلاه ایمنی	transport
+rose	noun	f		گل رز	گل رز	nature	code:rose-noun
+déchet	noun	m		زباله، آشغال	زباله	nature
+chameau	noun	m	chameaux	شتر	شتر	animals
+météo	noun	f		پیش‌بینی هوا، هواشناسی	پیش‌بینی هوا	weather
+
+# more phrases
+avoir de la chance	phrase			خوش‌شانس بودن	خوش‌شانس بودن	abstract	parts:avoir chance
+prendre rendez-vous	phrase			وقت گرفتن (از دکتر یا اداره)	وقت گرفتن	health	parts:prendre rendez-vous
+être en vacances	phrase			در تعطیلات بودن	در تعطیلات بودن	travel	parts:être vacances
+faire ses valises	phrase			چمدان بستن	چمدان بستن	travel	parts:faire valise
+chercher du travail	phrase			دنبال کار گشتن	دنبال کار گشتن	work	parts:chercher travail
+perdre du temps	phrase			وقت تلف کردن	وقت تلف کردن	time	parts:perdre temps
+il y a longtemps	phrase			مدت‌ها پیش، خیلی وقت پیش	مدت‌ها پیش	time	parts:avoir longtemps
+tous les deux	phrase			هر دو، هر دوتایشان	هر دو	numbers	parts:tout deux
+à votre santé	phrase			به سلامتی	به سلامتی	food	parts:santé
+changer d'avis	phrase			نظر خود را عوض کردن	نظر عوض کردن	abstract	parts:changer avis
+il y a du monde	phrase			شلوغ است، جمعیت زیاد است	شلوغ بودن	city	parts:avoir monde
