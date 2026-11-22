@@ -38,6 +38,8 @@ zur	prep			به، برای	zur: به	function	no_card:1
 vom	prep			از	vom: از	function	no_card:1
 beim	prep			پیشِ، هنگامِ	beim: پیش	function	no_card:1
 und	conj			و	و	function	no_card:1
+oh	interj			اوه، آه	oh: اوه	function	no_card:1
+ach	interj			آخ، آه، اِ	ach: آه	function	no_card:1
 
 # first words: greeting, sein and haben, people, question words (enough to make simple sentences with each other)
 hallo	interj			سلام	سلام	people
@@ -216,36 +218,36 @@ zusammen	adv			با هم	با هم	people
 
 # numbers
 Zahl	noun	die	Zahlen	عدد	عدد	numbers
-null	num			صفر	صفر	numbers	family:Zahl
-eins	num			یک	یک	numbers	family:Zahl
-zwei	num			دو	دو	numbers	family:Zahl
-drei	num			سه	سه	numbers	family:Zahl
-vier	num			چهار	چهار	numbers	family:Zahl
-fünf	num			پنج	پنج	numbers	family:Zahl
-sechs	num			شش	شش	numbers	family:Zahl
-sieben	num			هفت	هفت	numbers	family:Zahl
-acht	num			هشت	هشت	numbers	family:Zahl
-neun	num			نه (عدد)	نه (عدد)	numbers	family:Zahl
-zehn	num			ده	ده	numbers	family:Zahl
-elf	num			یازده	یازده	numbers	family:Zahl
-zwölf	num			دوازده	دوازده	numbers	family:Zahl
-dreizehn	num			سیزده	سیزده	numbers	family:Zahl	checked:level
-vierzehn	num			چهارده	چهارده	numbers	family:Zahl	checked:level
-fünfzehn	num			پانزده	پانزده	numbers	family:Zahl	checked:level
-sechzehn	num			شانزده	شانزده	numbers	family:Zahl	note:sechzehn بدون s نوشته می‌شود (نه sechszehn).	checked:level
-siebzehn	num			هفده	هفده	numbers	family:Zahl	note:siebzehn بدون en نوشته می‌شود (نه siebenzehn).	checked:level
-achtzehn	num			هجده	هجده	numbers	family:Zahl	checked:level
-neunzehn	num			نوزده	نوزده	numbers	family:Zahl	checked:level
-zwanzig	num			بیست	بیست	numbers	family:Zahl	note:عدد دورقمی را از آخر می‌خوانند: einundzwanzig یعنی «یک و بیست» = بیست و یک.	checked:level
-dreißig	num			سی	سی	numbers	family:Zahl	checked:level
-vierzig	num			چهل	چهل	numbers	family:Zahl	checked:level
-fünfzig	num			پنجاه	پنجاه	numbers	family:Zahl	checked:level
-sechzig	num			شصت	شصت	numbers	family:Zahl	checked:level
-siebzig	num			هفتاد	هفتاد	numbers	family:Zahl	checked:level
-achtzig	num			هشتاد	هشتاد	numbers	family:Zahl	checked:level
-neunzig	num			نود	نود	numbers	family:Zahl	checked:level
-hundert	num			صد	صد	numbers	family:Zahl
-tausend	num			هزار	هزار	numbers	family:Zahl
+null	num			صفر (۰)	صفر	numbers	family:Zahl
+eins	num			یک (۱)	یک	numbers	family:Zahl
+zwei	num			دو (۲)	دو	numbers	family:Zahl
+drei	num			سه (۳)	سه	numbers	family:Zahl
+vier	num			چهار (۴)	چهار	numbers	family:Zahl
+fünf	num			پنج (۵)	پنج	numbers	family:Zahl
+sechs	num			شش (۶)	شش	numbers	family:Zahl
+sieben	num			هفت (۷)	هفت	numbers	family:Zahl
+acht	num			هشت (۸)	هشت	numbers	family:Zahl
+neun	num			نُه (۹)	نُه	numbers	family:Zahl
+zehn	num			ده (۱۰)	ده	numbers	family:Zahl
+elf	num			یازده (۱۱)	یازده	numbers	family:Zahl
+zwölf	num			دوازده (۱۲)	دوازده	numbers	family:Zahl
+dreizehn	num			سیزده (۱۳)	سیزده	numbers	family:Zahl	checked:level
+vierzehn	num			چهارده (۱۴)	چهارده	numbers	family:Zahl	checked:level
+fünfzehn	num			پانزده (۱۵)	پانزده	numbers	family:Zahl	checked:level
+sechzehn	num			شانزده (۱۶)	شانزده	numbers	family:Zahl	note:sechzehn بدون s نوشته می‌شود (نه sechszehn).	checked:level
+siebzehn	num			هفده (۱۷)	هفده	numbers	family:Zahl	note:siebzehn بدون en نوشته می‌شود (نه siebenzehn).	checked:level
+achtzehn	num			هجده (۱۸)	هجده	numbers	family:Zahl	checked:level
+neunzehn	num			نوزده (۱۹)	نوزده	numbers	family:Zahl	checked:level
+zwanzig	num			بیست (۲۰)	بیست	numbers	family:Zahl	note:عدد دورقمی را از آخر می‌خوانند: einundzwanzig یعنی «یک و بیست» = بیست و یک.	checked:level
+dreißig	num			سی (۳۰)	سی	numbers	family:Zahl	checked:level
+vierzig	num			چهل (۴۰)	چهل	numbers	family:Zahl	checked:level
+fünfzig	num			پنجاه (۵۰)	پنجاه	numbers	family:Zahl	checked:level
+sechzig	num			شصت (۶۰)	شصت	numbers	family:Zahl	checked:level
+siebzig	num			هفتاد (۷۰)	هفتاد	numbers	family:Zahl	checked:level
+achtzig	num			هشتاد (۸۰)	هشتاد	numbers	family:Zahl	checked:level
+neunzig	num			نود (۹۰)	نود	numbers	family:Zahl	checked:level
+hundert	num			صد (۱۰۰)	صد	numbers	family:Zahl
+tausend	num			هزار (۱۰۰۰)	هزار	numbers	family:Zahl
 erste	adj			اول، اولین	اول	numbers
 halb	adj			نیم، نصف	نیم	numbers
 mehr	adv			بیشتر	بیشتر	qualities	homophones:Meer
