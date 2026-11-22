@@ -93,6 +93,20 @@ export function rankOf(ranks: Map<string, number>, lemma: string): number | null
   return ranks.get(key) ?? ranks.get(lexiconSpelling(key)) ?? null;
 }
 
+/**
+ * The frequency-list lemmas a taught word covers, for the coverage report: its lemma, the Lexique spelling
+ * (œ as oe) and, for a reflexive verb, the verb without its pronoun («se lever» covers «lever»).
+ */
+export function coveredLemmas(word: Pick<WordRecord, "lemma" | "pos">): string[] {
+  const lemma = word.lemma.toLowerCase();
+  const forms = [lemma];
+  if (word.pos === "verb") {
+    const bare = lemma.replace(/^(se |s'|s’|sich )/, "");
+    if (bare !== lemma) forms.push(bare);
+  }
+  return [...new Set(forms.flatMap((form) => [form, lexiconSpelling(form)]))];
+}
+
 /** The word files of a language that exist, lowest level first. */
 export function readWordFiles(language: string, root = process.cwd()): PackFile[] {
   const files: PackFile[] = [];
