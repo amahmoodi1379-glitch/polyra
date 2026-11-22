@@ -1,0 +1,75 @@
+code: fr-a1-aller
+title: فعل aller (رفتن) در زمان حال
+scope: صرف بی‌قاعده aller در زمان حال (je vais، tu vas، il va، nous allons، vous allez، ils vont) با à + اسم شهر، à la، à l' و chez، و گفتن حال با aller (Je vais bien)؛ au و aux در واحد بعد و آینده نزدیک (aller + مصدر) در واحد جدا می‌آیند.
+can_do: حالا می‌توانی بگویی کجا می‌روی و حالت چطور است: Je vais à Paris، Je vais bien.
+rule: aller بی‌قاعده است: je vais، tu vas، il/elle/on va، nous allons، vous allez، ils/elles vont.
+mistake: aller به -er ختم می‌شود ولی باقاعده نیست و فارسی‌زبان‌ها می‌گویند «j'alle» یا «ils allent»؛ درست: je vais، ils vont. خطای دیگر: پرسیدن حال با être («Comment tu es ?»)؛ در فرانسوی حال را با aller می‌گویند: Comment ça va ? Je vais bien.
+tables: présent | aller
+lesson:
+aller یعنی «رفتن» و با اینکه به -er ختم می‌شود، بی‌قاعده است.
+فقط nous allons و vous allez از all- ساخته می‌شوند؛ بقیه با v شروع می‌شوند: je vais، tu vas، il va، ils vont.
+برای رفتن به یک شهر à می‌آید: Je vais à Paris؛ قبل از اسم مؤنث à la و قبل از صدادار à l': à la maison، à l'école.
+برای «خانه کسی» chez می‌آید: Je vais chez Paul (خانه پل می‌روم).
+فرانسوی‌ها حال را با aller می‌گویند: Je vais bien یعنی «حالم خوب است» و Ça va ? یعنی «خوبی؟».
+table:
+ضمیر | aller | معنی
+je | vais | می‌روم
+tu | vas | می‌روی
+il / elle / on | va | می‌رود
+nous | allons | می‌رویم
+vous | allez | می‌روید
+ils / elles | vont | می‌روند
+examples:
+Je vais à Paris. | من به پاریس می‌روم.
+Nous allons à la maison. | ما به خانه می‌رویم.
+Tu vas chez Marie ? | خانه ماری می‌روی؟
+Je vais bien, merci. | حالم خوب است، ممنون.
+targets:
+Je [vais] à Paris. | من به پاریس می‌روم. | d: vas, va, aller | hint: (aller)
+Tu [vas] à l'école ? | تو به مدرسه می‌روی؟ | d: vais, va, allez | hint: (aller)
+Paul [va] à Lyon. | پل به لیون می‌رود. | d: vas, vont, allez
+Nous [allons] à la maison. | ما به خانه می‌رویم. | d: allez, vont, va | hint: (aller)
+Vous [allez] chez Marie ? | شما خانه ماری می‌روید؟ | d: allons, vont, va
+Ils [vont] à Nice. | آن‌ها به نیس می‌روند. | d: va, allent, allez | hint: (aller)
+Elles [vont] à l'école. | آن‌ها (خانم‌ها) به مدرسه می‌روند. | d: va, allez, allent
+On [va] à la maison ? | می‌رویم خانه؟ | d: allons, vont, vas | hint: (aller)
+Je [vais] bien, merci. | حالم خوب است، ممنون. | d: vas, va, allons
+Marie [va] bien. | حال ماری خوب است. | d: vas, vont, allez
+Les enfants [vont] à l'école. | بچه‌ها به مدرسه می‌روند. | d: va, allons, allent | hint: (aller)
+Tu [vas] où ? | کجا می‌روی؟ | d: va, vais, allez
+Nous [allons] chez Paul. | ما خانه پل می‌رویم. | d: allez, vont, allent | hint: (aller)
+Vous [allez] bien ? | حالتان خوب است؟ | d: allons, va, vont
+Je [vais] chez un ami. | من خانه یک دوست می‌روم. | d: vas, va, vont | hint: (aller)
+Elle [va] à Marseille. | او (زن) به مارسی می‌رود. | d: vas, vont, vais
+Ali et Sara [vont] à Ispahan. | علی و سارا به اصفهان می‌روند. | d: va, allez, allons | hint: (aller) | full: Sara et Ali vont à Ispahan.
+Tu [vas] bien ? | حالت خوب است؟ | d: va, vais, allez | hint: (aller)
+On [va] en ville. | می‌رویم مرکز شهر. | d: allons, vas, vont
+Le chien [va] dans la maison. | سگ به داخل خانه می‌رود. | d: vas, vont, allez | hint: (aller)
+Je ne [vais] pas à l'école. | من به مدرسه نمی‌روم. | d: vas, va, allons
+Ils ne [vont] pas à Paris. | آن‌ها به پاریس نمی‌روند. | d: va, allez, allent | hint: (aller)
+Est-ce que vous [allez] à Lyon ? | آیا شما به لیون می‌روید؟ | d: allons, vont, va
+Où est-ce que tu [vas] ? | کجا داری می‌روی؟ | d: vais, va, allez | hint: (aller)
+Paul et moi, nous [allons] à Nice. | من و پل به نیس می‌رویم. | d: vont, allez, va
+Les gens [vont] dans la rue. | مردم به خیابان می‌روند. | d: va, allez, allons | hint: (aller)
+Elle [va] chez Sara avec le chien. | او (زن) با سگ به خانه سارا می‌رود. | d: vas, vont, allez
+Vous [allez] à la maison ? | شما به خانه می‌روید؟ | d: allons, vont, vas | hint: (aller)
+Je [vais] à Téhéran avec la famille. | من با خانواده به تهران می‌روم. | d: vas, va, vont
+Je [vais] à Paris et tu [vas] à Lyon. | من به پاریس می‌روم و تو به لیون. | d: vas, va, aller / vais, va, allez | full: Tu vas à Lyon et je vais à Paris.
+Nous [allons] à l'école et vous [allez] à la maison. | ما به مدرسه می‌رویم و شما به خانه. | d: allez, vont, va / allons, vont, va | full: Vous allez à la maison et nous allons à l'école.
+Comment ça va ? Je [vais] bien, et toi, tu [vas] bien ? | حالت چطور است؟ من خوبم، تو هم خوبی؟ | d: vas, va, allons / va, vais, allez
+Paul [va] chez Marie et les enfants [vont] à l'école. | پل خانه ماری می‌رود و بچه‌ها به مدرسه. | d: vas, vont, allez / va, allez, allons | full: Les enfants vont à l'école et Paul va chez Marie.
+Ils [vont] à Nice, mais elle [va] à Lyon. | آن‌ها به نیس می‌روند، ولی او (زن) به لیون می‌رود. | d: va, allez, allent / vas, vont, allez
+Tu [vas] où ? Je [vais] chez Paul. | کجا می‌روی؟ خانه پل می‌روم. | d: va, vais, allez / vas, va, vont
+transforms:
+Je vais à Paris. => Nous allons à Paris. | جمله را با nous بنویس.
+Il va à l'école. => Ils vont à l'école. | جمله را با ils بنویس.
+Tu vas bien ? => Vous allez bien ? | جمله را با vous بنویس.
+Elle va chez Marie. => Elles vont chez Marie. | جمله را با elles بنویس.
+Nous allons à la maison. => Je vais à la maison. | جمله را با je بنویس.
+Paul va à Lyon. => Paul ne va pas à Lyon. | جمله را منفی کن.
+translations:
+من به پاریس می‌روم. => Je vais à Paris.
+حالم خوب است. => Je vais bien. ; Ça va bien. ; Ça va.
+بچه‌ها به مدرسه می‌روند. => Les enfants vont à l'école.
+کجا می‌روی؟ => Tu vas où ? ; Où est-ce que tu vas ? ; Où vas-tu ? ; Où tu vas ?
+ما خانه پل می‌رویم. => Nous allons chez Paul. ; On va chez Paul.
