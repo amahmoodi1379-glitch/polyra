@@ -1,0 +1,79 @@
+code: fr-a1-verbes-er
+title: فعل‌های -er در زمان حال
+scope: صرف فعل‌های باقاعده -er در زمان حال (parler: je parle، tu parles، il parle، nous parlons، vous parlez، ils parlent) و j' قبل از صدادار؛ فعل‌های بی‌قاعده (aller، faire و…) جدا می‌آیند.
+can_do: حالا می‌توانی بگویی چه کار می‌کنی: Je parle français، J'habite à Téhéran.
+rule: ریشه (parl-) + e، es، e، ons، ez، ent؛ parle، parles و parlent یک‌جور خوانده می‌شوند.
+mistake: فارسی‌زبان‌ها بعد از ضمیر مصدر می‌گذارند («Je parler») یا ent آخر ils parlent را «اَنت» می‌خوانند؛ بعد از فاعل همیشه شکل صرف‌شده می‌آید و ent خوانده نمی‌شود: ils parlent («ایل پارل»).
+tables: présent | er
+lesson:
+بیشتر فعل‌های فرانسوی به -er ختم می‌شوند: parler (حرف زدن)، aimer (دوست داشتن)، habiter (زندگی کردن).
+برای صرف، -er را برمی‌داریم تا ریشه بماند (parl-) و پایانه هر ضمیر را اضافه می‌کنیم: e، es، e، ons، ez، ent.
+je parle، tu parles، il parle و ils parlent یک‌جور خوانده می‌شوند، چون e، es و ent آخر فعل خوانده نمی‌شوند.
+قبل از صدادار و h، je می‌شود j': j'aime، j'habite.
+در nous mangeons یک e اضافه می‌شود تا g صدای «ژ» را نگه دارد.
+table:
+ضمیر | parler | aimer
+je / j' | parle | aime
+tu | parles | aimes
+il / elle / on | parle | aime
+nous | parlons | aimons
+vous | parlez | aimez
+ils / elles | parlent | aiment
+examples:
+Je parle français. | من فرانسوی حرف می‌زنم.
+J'habite à Téhéran. | من در تهران زندگی می‌کنم.
+Nous aimons le café. | ما قهوه دوست داریم.
+Les enfants jouent avec le chien. | بچه‌ها با سگ بازی می‌کنند.
+targets:
+Je [parle] français. | من فرانسوی حرف می‌زنم. | d: parles, parlons, parler | hint: (parler)
+Tu [parles] avec Paul ? | تو با پل حرف می‌زنی؟ | d: parle, parlez, parlent | hint: (parler)
+Il [habite] à Paris. | او (مرد) در پاریس زندگی می‌کند. | d: habites, habitent, habiter | hint: (habiter)
+Nous [habitons] à Lyon. | ما در لیون زندگی می‌کنیم. | d: habitez, habitent, habite
+Vous [travaillez] ici ? | شما اینجا کار می‌کنید؟ | d: travaillons, travaillent, travailler | hint: (travailler)
+Ils [travaillent] à Paris. | آن‌ها در پاریس کار می‌کنند. | d: travaille, travaillez, travailler
+J'[aime] le café. | من قهوه دوست دارم. | d: aimes, aiment, aimer | hint: (aimer)
+Marie [aime] les chats. | ماری گربه‌ها را دوست دارد. | d: aimes, aiment, aimez
+Nous [aimons] la ville. | ما شهر را دوست داریم. | d: aimez, aiment, aime | hint: (aimer)
+Les enfants [regardent] les voitures. | بچه‌ها ماشین‌ها را نگاه می‌کنند. | d: regarde, regardez, regarder
+Tu [écoutes] Paul ? | به پل گوش می‌دهی؟ | d: écoute, écoutez, écouter | hint: (écouter)
+J'[écoute] Marie. | من به ماری گوش می‌دهم. | d: écoutes, écoutent, écouter
+Je [cherche] le chat. | من دنبال گربه می‌گردم. | d: cherches, cherchent, chercher | hint: (chercher)
+Vous [cherchez] une maison ? | شما دنبال یک خانه هستید؟ | d: cherchons, cherchent, cherche
+Elle [trouve] le livre. | او (زن) کتاب را پیدا می‌کند. | d: trouves, trouvent, trouver | hint: (trouver)
+On [mange] à la maison. | ما خانه غذا می‌خوریم. | d: mangeons, mangent, manges | hint: (manger)
+Nous [mangeons] avec Paul. | ما با پل غذا می‌خوریم. | d: mangons, mangez, mangent
+Il [donne] un livre à Marie. | او (مرد) یک کتاب به ماری می‌دهد. | d: donnes, donnent, donner | hint: (donner)
+Vous [aidez] Paul ? | شما به پل کمک می‌کنید؟ | d: aidons, aident, aider
+Il [ferme] le livre. | او (مرد) کتاب را می‌بندد. | d: fermes, ferment, fermer | hint: (fermer)
+Paul [arrive] à la maison. | پل به خانه می‌رسد. | d: arrives, arrivent, arriver
+Les gens [entrent] dans la maison. | مردم وارد خانه می‌شوند. | d: entre, entrez, entrer | hint: (entrer)
+Je [pense] à Marie. | به ماری فکر می‌کنم. | d: penses, pensent, penser
+Elle [demande] le nom de la rue. | او (زن) اسم خیابان را می‌پرسد. | d: demandes, demandent, demander | hint: (demander)
+Les enfants [jouent] avec le chien. | بچه‌ها با سگ بازی می‌کنند. | d: joue, jouez, jouer | hint: (jouer)
+Nous [jouons] dans la rue. | ما در خیابان بازی می‌کنیم. | d: jouez, jouent, joue
+Elles [parlent] avec la famille. | آن‌ها (خانم‌ها) با خانواده حرف می‌زنند. | d: parle, parlez, parler | hint: (parler)
+Vous [parlez] très bien. | شما خیلی خوب حرف می‌زنید. | d: parlons, parlent, parler
+Tu [habites] où ? | تو کجا زندگی می‌کنی؟ | d: habite, habitez, habiter | hint: (habiter)
+J'[habite] à Téhéran. | من در تهران زندگی می‌کنم. | d: habites, habitent, habiter
+Ali [travaille] à l'école. | علی در مدرسه کار می‌کند. | d: travailles, travaillent, travailler | hint: (travailler)
+Les amis de Paul [arrivent]. | دوست‌های پل می‌رسند. | d: arrive, arrivez, arriver
+Je [parle] et tu [écoutes]. | من حرف می‌زنم و تو گوش می‌دهی. | d: parles, parlent, parler / écoute, écoutent, écouter
+Nous [habitons] à Paris et vous [habitez] à Lyon. | ما در پاریس زندگی می‌کنیم و شما در لیون. | d: habitez, habitent, habite / habitons, habitent, habiter | full: Vous habitez à Lyon et nous habitons à Paris.
+Les enfants [jouent] et les gens [regardent]. | بچه‌ها بازی می‌کنند و مردم نگاه می‌کنند. | d: joue, jouez, jouer / regarde, regardez, regarder | full: Les gens regardent et les enfants jouent.
+J'[aime] Paris et tu [aimes] Lyon. | من پاریس را دوست دارم و تو لیون را. | d: aimes, aiment, aimer / aime, aimez, aiment | full: Tu aimes Lyon et j'aime Paris.
+Ils [mangent] et ils [parlent]. | آن‌ها غذا می‌خورند و حرف می‌زنند. | d: mange, mangez, manger / parle, parlez, parler | full: Ils parlent et ils mangent.
+On [arrive] à la maison et on [mange]. | به خانه می‌رسیم و غذا می‌خوریم. | d: arrivons, arrivent, arriver / mangeons, mangent, manger
+transforms:
+Je parle français. => Nous parlons français. | جمله را با nous بنویس.
+Il habite à Paris. => Ils habitent à Paris. | جمله را با ils بنویس.
+Tu aimes le café. => Vous aimez le café. | جمله را با vous بنویس.
+Elle travaille ici. => Elles travaillent ici. | جمله را با elles بنویس.
+Nous jouons avec le chien. => Je joue avec le chien. | جمله را با je بنویس.
+J'écoute Paul. => Tu écoutes Paul. | جمله را با tu بنویس.
+translations:
+من در تهران زندگی می‌کنم. => J'habite à Téhéran.
+ما فرانسوی حرف می‌زنیم. => Nous parlons français. ; On parle français.
+او (زن) قهوه دوست دارد. => Elle aime le café.
+بچه‌ها با سگ بازی می‌کنند. => Les enfants jouent avec le chien.
+شما اینجا کار می‌کنید؟ => Vous travaillez ici ?
+تو دنبال پل می‌گردی؟ => Tu cherches Paul ?

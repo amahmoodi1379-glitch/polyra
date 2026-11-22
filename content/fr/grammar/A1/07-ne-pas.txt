@@ -1,0 +1,75 @@
+code: fr-a1-ne-pas
+title: منفی: ne ... pas
+scope: منفی کردن فعل در زمان حال با ne ... pas دور فعل (و n' قبل از صدادار) با être، avoir و فعل‌های -er؛ تبدیل un/une/des به de بعد از منفی (pas de) در واحد جدا می‌آید.
+can_do: حالا می‌توانی بگویی چه چیزی نیست یا چه کاری نمی‌کنی: Je ne parle pas français.
+rule: ne + فعل + pas: je ne parle pas؛ قبل از صدادار ne می‌شود n': il n'aime pas.
+mistake: در فارسی «نـ» قبل از فعل می‌آید (نمی‌خورم) و فارسی‌زبان‌ها می‌گویند «Je ne pas mange» یا «Je non mange»؛ در فرانسوی ne قبل از فعل و pas بعد از آن است: Je ne mange pas. «ne aime» هم غلط است: n'aime.
+lesson:
+در فارسی فعل را با «نـ» منفی می‌کنیم: می‌خورم ← نمی‌خورم.
+در فرانسوی دو کلمه لازم است که فعل را از دو طرف بگیرند: ne قبل از فعل و pas بعد از فعل.
+Je parle (حرف می‌زنم) ← Je ne parle pas (حرف نمی‌زنم).
+قبل از صدادار یا h، ne کوتاه می‌شود و n' می‌شود: il n'aime pas، je n'ai pas، tu n'es pas.
+non یعنی «نه» و تنها می‌آید؛ برای منفی کردن فعل همیشه ne ... pas لازم است.
+table:
+مثبت | منفی
+je suis | je ne suis pas
+il aime | il n'aime pas
+nous avons | nous n'avons pas
+ils parlent | ils ne parlent pas
+examples:
+Je ne suis pas à la maison. | من خانه نیستم.
+Il n'aime pas le café. | او (مرد) قهوه دوست ندارد.
+Nous ne parlons pas français. | ما فرانسوی حرف نمی‌زنیم.
+Je n'ai pas le temps. | وقت ندارم.
+targets:
+Je [ne] suis pas à la maison. | من خانه نیستم. | d: n', non, pas
+Il [n']aime pas le café. | او (مرد) قهوه دوست ندارد. | d: ne, non, pas
+Nous [ne travaillons pas] ici. | ما اینجا کار نمی‌کنیم. | d: ne pas travaillons, travaillons ne pas, non travaillons | hint: (travailler)
+Tu [n'es pas] à l'école ? | تو مدرسه نیستی؟ | d: ne es pas, ne pas es, es ne pas | hint: (être)
+Elle [n'habite pas] à Paris. | او (زن) در پاریس زندگی نمی‌کند. | d: ne habite pas, ne pas habite, habite ne pas | hint: (habiter)
+Je [ne parle pas] avec Paul. | من با پل حرف نمی‌زنم. | d: ne pas parle, parle ne pas, non parle | hint: (parler)
+Vous [n'avez pas] le temps ? | شما وقت ندارید؟ | d: ne avez pas, ne pas avez, avez ne pas | hint: (avoir)
+Ils [ne sont pas] ici. | آن‌ها اینجا نیستند. | d: ne pas sont, sont ne pas, non sont | hint: (être)
+On [ne mange pas] ici. | ما اینجا غذا نمی‌خوریم. | d: ne pas mange, mange ne pas, non mange
+Marie [n'écoute pas] Paul. | ماری به پل گوش نمی‌دهد. | d: ne écoute pas, ne pas écoute, écoute ne pas | hint: (écouter)
+Le chien [n']est pas petit. | سگ کوچک نیست. | d: ne, non, pas
+Je [n']ai pas le livre. | من کتاب را ندارم. | d: ne, non, pas
+Paul [ne] travaille pas à Lyon. | پل در لیون کار نمی‌کند. | d: n', non, pas
+Les enfants [ne jouent pas] dans la rue. | بچه‌ها در خیابان بازی نمی‌کنند. | d: ne pas jouent, jouent ne pas, non jouent | hint: (jouer)
+Nous [n'aimons pas] la ville. | ما شهر را دوست نداریم. | d: ne aimons pas, ne pas aimons, aimons ne pas
+Tu [ne cherches pas] le chat ? | دنبال گربه نمی‌گردی؟ | d: ne pas cherches, cherches ne pas, non cherches | hint: (chercher)
+Je ne suis [pas] grand. | من قدبلند نیستم. | d: non, ne, n'
+Elle n'est [pas] à Lyon. | او (زن) در لیون نیست. | d: non, ne, n'
+Vous [ne] regardez pas ? | شما نگاه نمی‌کنید؟ | d: n', non, pas
+Il [n']arrive pas. | او (مرد) نمی‌رسد. | d: ne, non, pas
+Ils [n'ont pas] le temps. | آن‌ها وقت ندارند. | d: ne ont pas, ne pas ont, ont ne pas | hint: (avoir)
+Je [ne pense pas]. | فکر نمی‌کنم. | d: ne pas pense, pense ne pas, non pense | hint: (penser)
+La voiture [n']est pas dans la rue. | ماشین در خیابان نیست. | d: ne, non, pas
+Sara [ne] parle pas français. | سارا فرانسوی حرف نمی‌زند. | d: n', non, pas
+On [n'est pas] à la maison. | ما خانه نیستیم. | d: ne est pas, ne pas est, est ne pas | hint: (être)
+Nous [ne] sommes pas à Paris. | ما در پاریس نیستیم. | d: n', non, pas
+Tu [n']aimes pas le pain ? | نان دوست نداری؟ | d: ne, non, pas
+Les gens [ne] parlent pas. | مردم حرف نمی‌زنند. | d: n', non, pas
+Elles [n'habitent pas] ici. | آن‌ها (خانم‌ها) اینجا زندگی نمی‌کنند. | d: ne habitent pas, ne pas habitent, habitent ne pas | hint: (habiter)
+Je [ne trouve pas] le livre. | کتاب را پیدا نمی‌کنم. | d: ne pas trouve, trouve ne pas, non trouve | hint: (trouver)
+Vous [n'êtes pas] Marie ? | شما ماری نیستید؟ | d: ne êtes pas, ne pas êtes, êtes ne pas
+Je [ne suis pas] à Paris et tu [n'es pas] à Lyon. | من در پاریس نیستم و تو در لیون نیستی. | d: ne pas suis, suis ne pas, non suis / ne es pas, ne pas es, es ne pas | full: Tu n'es pas à Lyon et je ne suis pas à Paris.
+Paul [n']aime [pas] le café. | پل قهوه دوست ندارد. | d: ne, non, pas / non, ne, n'
+Nous [ne travaillons pas] et vous [ne travaillez pas]. | ما کار نمی‌کنیم و شما هم کار نمی‌کنید. | d: ne pas travaillons, travaillons ne pas, non travaillons / ne pas travaillez, travaillez ne pas, non travaillez | full: Vous ne travaillez pas et nous ne travaillons pas.
+Le chat [n']est [pas] dans la maison. | گربه در خانه نیست. | d: ne, non, pas / non, ne, n'
+Marie [ne parle pas] et Paul [n'écoute pas]. | ماری حرف نمی‌زند و پل گوش نمی‌دهد. | d: ne pas parle, parle ne pas, non parle / ne écoute pas, ne pas écoute, écoute ne pas | full: Paul n'écoute pas et Marie ne parle pas.
+Je [n']ai [pas] le temps. | وقت ندارم. | d: ne, non, pas / non, ne, n'
+Il [est] ici, mais elle [n'est pas] là. | او (مرد) اینجاست، ولی او (زن) آنجا نیست. | d: es, sont, suis / ne est pas, ne pas est, est ne pas
+transforms:
+Je suis à la maison. => Je ne suis pas à la maison. | جمله را منفی کن.
+Il aime le café. => Il n'aime pas le café. | جمله را منفی کن.
+Nous parlons français. => Nous ne parlons pas français. | جمله را منفی کن.
+Tu as le temps. => Tu n'as pas le temps. | جمله را منفی کن.
+Elle habite à Paris. => Elle n'habite pas à Paris. | جمله را منفی کن.
+Les enfants jouent dans la rue. => Les enfants ne jouent pas dans la rue. | جمله را منفی کن.
+translations:
+من خانه نیستم. => Je ne suis pas à la maison.
+او (مرد) قهوه دوست ندارد. => Il n'aime pas le café.
+ما در پاریس زندگی نمی‌کنیم. => Nous n'habitons pas à Paris. ; On n'habite pas à Paris.
+وقت ندارم. => Je n'ai pas le temps.
+بچه‌ها اینجا نیستند. => Les enfants ne sont pas ici. ; Les enfants ne sont pas là.
