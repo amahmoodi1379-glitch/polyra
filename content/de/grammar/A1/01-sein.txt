@@ -1,0 +1,75 @@
+code: de-a1-sein
+title: فعل sein (بودن) در زمان حال
+scope: شکل‌های sein در زمان حال با همه ضمیرها (ich bin، du bist، er/sie/es ist، wir sind، ihr seid، sie/Sie sind) در جمله خبری؛ منفی و سؤال در واحدهای بعد می‌آیند.
+can_do: حالا می‌توانی خودت و دیگران را معرفی کنی و بگویی کسی یا چیزی چطور است.
+rule: sein بی‌قاعده است: ich bin، du bist، er/sie/es ist، wir sind، ihr seid، sie/Sie sind.
+mistake: فارسی‌زبان‌ها فعل را مثل فارسی آخر جمله می‌گذارند («Ich Reza bin») یا برای همه ist می‌گویند («ich ist»)؛ درست: Ich bin Reza. «Das ist Ali und Sara» هم غلط است، چون دو نفرند: Das sind Ali und Sara.
+tables: Präsens | sein
+lesson:
+sein یعنی «بودن» و پرکاربردترین فعل آلمانی است.
+مثل «هستم، هستی، است» در فارسی، هر ضمیر شکل خودش را دارد، ولی این شکل‌ها قاعده ندارند و باید حفظشان کنی.
+فعل در آلمانی بلافاصله بعد از فاعل می‌آید، نه آخر جمله: Ich bin Reza یعنی «من رضا هستم».
+er (او، مرد)، sie (او، زن) و es همه ist می‌گیرند؛ wir و sie (آن‌ها) و Sie (شمای مؤدبانه) هر سه sind.
+ihr یعنی «شما» برای چند دوست یا بچه‌ها و seid می‌گیرد؛ seid را با کلمه seit اشتباه نکن.
+table:
+ضمیر | sein | فارسی
+ich | bin | هستم
+du | bist | هستی
+er / sie / es | ist | است
+wir | sind | هستیم
+ihr | seid | هستید
+sie / Sie | sind | هستند / هستید
+examples:
+Ich bin Reza. | من رضا هستم.
+Das ist Anna. | این آناست.
+Wir sind heute zu Hause. | ما امروز خانه هستیم.
+Ihr seid sehr jung. | شما خیلی جوانید.
+targets:
+Ich [bin] Reza. | من رضا هستم. | d: bist, ist, sind | hint: (sein)
+Du [bist] sehr jung. | تو خیلی جوانی. | d: bin, ist, seid | hint: (sein)
+Anna [ist] heute hier. | آنا امروز اینجاست. | d: bin, bist, sind | full: Heute ist Anna hier.
+Wir [sind] jetzt zu Hause. | ما الان خانه هستیم. | d: seid, ist, bin | hint: (sein) | full: Jetzt sind wir zu Hause.
+Ihr [seid] noch sehr jung. | شما هنوز خیلی جوانید. | d: sind, ist, seit
+Paul und Lena [sind] Freunde. | پاول و لنا با هم دوست‌اند. | d: ist, seid, bin | hint: (sein)
+Das Haus [ist] sehr alt. | خانه خیلی قدیمی است. | d: sind, bist, bin
+Die Eltern [sind] auch hier. | پدر و مادر هم اینجا هستند. | d: ist, seid, bist | hint: (sein)
+Das Auto [ist] neu. | ماشین نو است. | d: sind, bin, bist
+Max [ist] verheiratet. | ماکس متأهل است. | d: sind, bist, seid | hint: (sein)
+Ich [bin] Iranerin. | من ایرانی هستم. | d: ist, bist, sind
+Du [bist] auch Iraner. | تو هم ایرانی هستی. | d: ist, bin, sind | hint: (sein)
+Sophie [ist] 20 Jahre alt. | سوفی بیست سال دارد. | d: sind, bin, bist | hint: (sein)
+Die Kinder [sind] 5 und 7 Jahre alt. | بچه‌ها پنج و هفت ساله‌اند. | d: ist, seid, bist
+Das Baby [ist] sehr klein. | نوزاد خیلی کوچک است. | d: sind, bin, bist
+Ihr [seid] Freunde. | شما با هم دوستید. | d: sind, ist, seit | hint: (sein)
+Teheran [ist] sehr groß. | تهران خیلی بزرگ است. | d: sind, bin, seid
+Die Leute hier [sind] jung. | مردم اینجا جوان‌اند. | d: ist, seid, bist | hint: (sein)
+Deutsch{Deutsch} [ist] schön. | آلمانی قشنگ است. | d: sind, bin, bist
+Der Kaffee [ist] heute schlecht. | قهوه امروز بد است. | d: sind, bist, seid | full: Heute ist der Kaffee schlecht.
+Das [ist] Maryam. | این مریم است. | d: sind, bin, bist | hint: (sein)
+Das [sind] Ali und Sara. | این‌ها علی و سارا هستند. | d: ist, seid, bin
+Das [sind] die Eltern von Mia. | این‌ها پدر و مادر میا هستند. | d: ist, seid, bist | hint: (sein)
+Die Frau dort [ist] sehr jung. | آن خانم آنجا خیلی جوان است. | d: sind, bist, seid
+Wir [sind] auch da. | ما هم هستیم. | d: seid, ist, bin | hint: (sein)
+Das Wasser [ist] gut. | آب خوب است. | d: sind, seid, bin
+Ich [bin] jetzt hier. | من الان اینجا هستم. | d: bist, ist, sind | hint: (sein) | full: Jetzt bin ich hier.
+Lukas [ist] noch klein. | لوکاس هنوز کوچک است. | d: sind, bin, seid
+Ich [bin] hier und du [bist] dort. | من اینجا هستم و تو آنجا. | d: bist, ist, sind / bin, ist, seid | hint: (sein)
+Wir [sind] heute da und ihr [seid] morgen da. | ما امروز هستیم و شما فردا. | d: seid, ist, bin / sind, bist, seit
+Das Haus [ist] alt, aber das Auto [ist] neu. | خانه قدیمی است، اما ماشین نو است. | d: sind, bin, bist / sind, seid, bist
+Du [bist] 18 und Max [ist] 20. | تو هجده ساله‌ای و ماکس بیست ساله است. | d: bin, ist, seid / sind, bist, bin
+Die Kinder [sind] klein und das Haus [ist] groß. | بچه‌ها کوچک‌اند و خانه بزرگ است. | d: ist, seid, bist / sind, bin, bist
+Ich [bin] Ali und das [sind] Sara und Mia. | من علی هستم و این‌ها سارا و میا هستند. | d: bist, ist, sind / ist, seid, bin
+Lena [ist] ledig und Tim [ist] verheiratet. | لنا مجرد است و تیم متأهل. | d: sind, bist, bin / sind, bin, seid
+transforms:
+Ich bin hier. => Wir sind hier. | جمله را با wir بنویس.
+Du bist sehr jung. => Ihr seid sehr jung. | جمله را با ihr بنویس.
+Anna ist zu Hause. => Anna und Paul sind zu Hause. | به‌جای Anna بنویس Anna und Paul.
+Ich bin Iraner. => Er ist Iraner. | جمله را با er بنویس.
+Wir sind Freunde. => Ihr seid Freunde. | جمله را با ihr بنویس.
+translations:
+من رضا هستم. => Ich bin Reza.
+ما امروز خانه هستیم. => Wir sind heute zu Hause. ; Heute sind wir zu Hause.
+تهران خیلی بزرگ است. => Teheran ist sehr groß.
+تو خیلی جوانی. => Du bist sehr jung.
+این‌ها علی و سارا هستند. => Das sind Ali und Sara.
+آنا و ماکس با هم دوست‌اند. => Anna und Max sind Freunde.

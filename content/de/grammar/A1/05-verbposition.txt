@@ -1,0 +1,68 @@
+code: de-a1-verb-position-zwei
+title: جای فعل: همیشه بخش دوم جمله
+scope: در جمله خبری فعل صرف‌شده بخش دوم است؛ وقتی جمله با قید زمان یا مکان (heute، jetzt، morgen، hier، oft) شروع شود، فاعل بعد از فعل می‌آید (Heute lerne ich Deutsch). جای فعل در سؤال و فعل‌های دوتکه در واحدهای بعد می‌آید.
+can_do: حالا می‌توانی جمله را با «امروز» یا «فردا» شروع کنی و فعل را درست بگذاری.
+rule: فعل صرف‌شده بخش دوم است: Ich lerne heute Deutsch. / Heute lerne ich Deutsch.
+mistake: فارسی‌زبان‌ها فعل را آخر جمله می‌گذارند («Ich heute Deutsch lerne») یا بعد از قید، فاعل را جلوی فعل می‌آورند («Heute ich lerne Deutsch»)؛ درست: Heute lerne ich Deutsch.
+lesson:
+در فارسی فعل آخر جمله می‌آید، ولی در آلمانی فعل صرف‌شده همیشه بخش دوم جمله است.
+«بخش» یعنی یک کلمه یا یک گروه کلمه: ich، heute، in Berlin یا der Vater هر کدام یک بخش‌اند.
+اگر جمله را با چیزی غیر از فاعل شروع کنی (heute، morgen، jetzt، hier)، فعل باز هم دوم می‌ماند و فاعل بعد از فعل می‌آید.
+پس هر دو درست‌اند: Ich trinke heute Tee و Heute trinke ich Tee.
+und، aber و oder بخش حساب نمی‌شوند: Heute bin ich hier, aber morgen bin ich in Wien.
+table:
+بخش ۱ | بخش ۲: فعل | بقیه جمله
+Ich | lerne | heute Deutsch.
+Heute | lerne | ich Deutsch.
+Morgen | kommt | Anna.
+In Berlin | wohnen | wir.
+examples:
+Ich trinke heute Tee. | من امروز چای می‌نوشم.
+Heute trinke ich Tee. | امروز چای می‌نوشم.
+Morgen kommt Anna. | فردا آنا می‌آید.
+In Berlin wohnen wir. | ما در برلین زندگی می‌کنیم.
+targets:
+Heute [trinke ich Kaffee]. | امروز قهوه می‌نوشم. | d: ich trinke Kaffee, ich Kaffee trinke, trinke Kaffee ich | full: Ich trinke heute Kaffee.
+Morgen [kommt Anna nach Hause]. | آنا فردا به خانه می‌آید. | d: Anna kommt nach Hause, Anna nach Hause kommt, nach Hause kommt Anna | full: Anna kommt morgen nach Hause.
+Jetzt [lerne ich Deutsch]. | الان آلمانی یاد می‌گیرم. | d: ich lerne Deutsch, ich Deutsch lerne, lerne Deutsch ich | full: Ich lerne jetzt Deutsch.
+Hier [wohnen wir jetzt]. | ما الان اینجا زندگی می‌کنیم. | d: wir wohnen jetzt, wir jetzt wohnen, jetzt wohnen wir | full: Wir wohnen jetzt hier. ; Jetzt wohnen wir hier.
+Ich [arbeite heute zu Hause]. | من امروز در خانه کار می‌کنم. | d: heute arbeite zu Hause, heute zu Hause arbeite, zu Hause arbeite heute | full: Heute arbeite ich zu Hause.
+Manchmal [spielt Paul hier]. | پاول گاهی اینجا بازی می‌کند. | d: Paul spielt hier, Paul hier spielt, hier spielt Paul | full: Paul spielt manchmal hier.
+In Hamburg [wohnt Max jetzt]. | ماکس الان در هامبورگ زندگی می‌کند. | d: Max wohnt jetzt, Max jetzt wohnt, jetzt wohnt Max | full: Max wohnt jetzt in Hamburg. ; Jetzt wohnt Max in Hamburg.
+Der Vater [kauft heute Brot]. | پدر امروز نان می‌خرد. | d: heute kauft Brot, heute Brot kauft, Brot kauft heute | full: Heute kauft der Vater Brot.
+Heute [sind wir zu Hause]. | امروز خانه هستیم. | d: wir sind zu Hause, wir zu Hause sind, sind zu Hause wir | full: Wir sind heute zu Hause.
+Morgen [habe ich Schule]. | فردا مدرسه دارم. | d: ich habe Schule, ich Schule habe, habe Schule ich | full: Ich habe morgen Schule.
+Oft [trinkt Anna Tee]. | آنا اغلب چای می‌نوشد. | d: Anna trinkt Tee, Anna Tee trinkt, trinkt Tee Anna | full: Anna trinkt oft Tee.
+Jetzt [arbeitet Paul in Wien]. | پاول الان در وین کار می‌کند. | d: Paul arbeitet in Wien, Paul in Wien arbeitet, in Wien arbeitet Paul | full: Paul arbeitet jetzt in Wien.
+Wir [lernen heute Englisch]. | ما امروز انگلیسی یاد می‌گیریم. | d: heute lernen Englisch, heute Englisch lernen, Englisch lernen heute | full: Heute lernen wir Englisch.
+Dort [spielen die Kinder oft]. | بچه‌ها اغلب آنجا بازی می‌کنند. | d: die Kinder spielen oft, die Kinder oft spielen, oft spielen die Kinder | full: Die Kinder spielen dort oft. ; Die Kinder spielen oft dort. ; Oft spielen die Kinder dort.
+Heute [kauft Sara ein Auto]. | سارا امروز یک ماشین می‌خرد. | d: Sara kauft ein Auto, Sara ein Auto kauft, kauft ein Auto Sara | full: Sara kauft heute ein Auto.
+Ich [bin jetzt in Berlin]. | من الان در برلین هستم. | d: jetzt bin in Berlin, jetzt in Berlin bin, in Berlin bin jetzt | full: Jetzt bin ich in Berlin.
+Hier [ist das Wasser gut]. | آب اینجا خوب است. | d: das Wasser ist gut, das Wasser gut ist, ist gut das Wasser | full: Das Wasser ist hier gut.
+Manchmal [schreibe ich viel]. | گاهی زیاد می‌نویسم. | d: ich schreibe viel, ich viel schreibe, schreibe viel ich | full: Ich schreibe manchmal viel.
+Jetzt [verstehe ich das]. | حالا این را می‌فهمم. | d: ich verstehe das, ich das verstehe, verstehe das ich | full: Ich verstehe das jetzt.
+Die Kinder [sind heute zu Hause]. | بچه‌ها امروز خانه‌اند. | d: heute sind zu Hause, heute zu Hause sind, zu Hause sind heute | full: Heute sind die Kinder zu Hause.
+Heute [kommt] Lena. | امروز لنا می‌آید. | d: kommen, komme, kommst | hint: (kommen) | full: Lena kommt heute.
+Morgen [arbeiten] wir zu Hause. | ما فردا در خانه کار می‌کنیم. | d: arbeitet, arbeite, arbeitest | hint: (arbeiten) | full: Wir arbeiten morgen zu Hause.
+Jetzt [wohnt] Ali in Wien. | علی الان در وین زندگی می‌کند. | d: wohnen, wohne, wohnst | hint: (wohnen) | full: Ali wohnt jetzt in Wien.
+Hier [lernen] die Kinder Deutsch. | بچه‌ها اینجا آلمانی یاد می‌گیرند. | d: lernt, lerne, lernst | hint: (lernen) | full: Die Kinder lernen hier Deutsch.
+Heute [hast] du viel Arbeit. | امروز کار زیادی داری. | d: hat, habe, habt | hint: (haben) | full: Du hast heute viel Arbeit.
+Heute [bin ich] hier, aber morgen [bin ich] in Wien. | امروز اینجا هستم، اما فردا در وین هستم. | d: ich bin, bin, ich sein / ich bin, bin, ich sein | full: Ich bin heute hier, aber morgen bin ich in Wien.
+Heute [lernt Anna] Deutsch und morgen [lernt sie] Englisch. | آنا امروز آلمانی یاد می‌گیرد و فردا انگلیسی. | d: Anna lernt, lernt, Anna lernen / sie lernt, lernt, sie lernen | full: Anna lernt heute Deutsch und morgen lernt sie Englisch.
+Hier [wohnt Max] und dort [wohnt Lena]. | ماکس اینجا زندگی می‌کند و لنا آنجا. | d: Max wohnt, wohnt, Max wohnen / Lena wohnt, wohnt, Lena wohnen | full: Max wohnt hier und Lena wohnt dort.
+Heute [arbeite ich] und morgen [spiele ich]. | امروز کار می‌کنم و فردا بازی می‌کنم. | d: ich arbeite, arbeite, ich arbeiten / ich spiele, spiele, ich spielen | full: Ich arbeite heute und morgen spiele ich.
+Jetzt [trinken wir] Tee und morgen [trinken wir] Kaffee. | الان چای می‌نوشیم و فردا قهوه. | d: wir trinken, trinken, trinkt wir / wir trinken, trinken, trinkt wir | full: Wir trinken jetzt Tee und morgen trinken wir Kaffee.
+Hier [sind die Leute] jung und dort [sind die Leute] alt. | مردم اینجا جوان‌اند و آنجا پیر. | d: die Leute sind, sind, ist die Leute / die Leute sind, sind, ist die Leute | full: Die Leute sind hier jung und dort sind die Leute alt.
+Morgen [lernen wir] Deutsch, aber heute [spielen wir]. | فردا آلمانی یاد می‌گیریم، اما امروز بازی می‌کنیم. | d: wir lernen, lernen, lernt wir / wir spielen, spielen, spielt wir | full: Wir lernen morgen Deutsch, aber heute spielen wir.
+transforms:
+Ich lerne heute Deutsch. => Heute lerne ich Deutsch. | جمله را با Heute شروع کن.
+Wir wohnen jetzt in Köln. => Jetzt wohnen wir in Köln. | جمله را با Jetzt شروع کن.
+Anna kommt morgen. => Morgen kommt Anna. | جمله را با Morgen شروع کن.
+Die Kinder spielen hier. => Hier spielen die Kinder. | جمله را با Hier شروع کن.
+Ich trinke oft Tee. => Oft trinke ich Tee. | جمله را با Oft شروع کن.
+translations:
+امروز آلمانی یاد می‌گیرم. => Heute lerne ich Deutsch. ; Ich lerne heute Deutsch.
+فردا خانه هستیم. => Morgen sind wir zu Hause. ; Wir sind morgen zu Hause.
+پاول الان در وین زندگی می‌کند. => Paul wohnt jetzt in Wien. ; Jetzt wohnt Paul in Wien.
+آنا اغلب قهوه می‌نوشد. => Anna trinkt oft Kaffee. ; Oft trinkt Anna Kaffee.
+امروز کار زیادی دارم. => Heute habe ich viel Arbeit. ; Ich habe heute viel Arbeit.

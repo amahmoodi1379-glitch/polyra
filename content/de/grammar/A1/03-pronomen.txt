@@ -1,0 +1,78 @@
+code: de-a1-personalpronomen
+title: ضمیرهای فاعلی: er یا sie، du یا Sie
+scope: انتخاب ضمیر فاعلی درست برای آدم‌ها: er برای مرد، sie برای زن، es برای das Kind و das Baby، فرق du، ihr و Sie، و سه معنی sie/Sie؛ ضمیر برای چیزها (der Tisch: er) واحد جدایی است.
+can_do: حالا می‌توانی درباره دیگران حرف بزنی و بدانی با چه کسی du و با چه کسی Sie بگویی.
+rule: مرد er، زن sie، das Kind و das Baby es؛ تو du، چند دوست ihr، شمای مؤدبانه Sie، آن‌ها sie.
+mistake: فارسی برای «او» یک کلمه دارد و فارسی‌زبان‌ها برای زن هم er می‌گویند: «Das ist Anna. Er wohnt hier» غلط است؛ درست: Sie wohnt hier. با غریبه و بزرگ‌تر Sie بگو، نه du.
+lesson:
+در فارسی «او» برای مرد و زن یکی است، ولی در آلمانی مرد er و زن sie است.
+es برای کلمه‌های خنثی است، مثل das Kind (بچه) و das Baby (نوزاد).
+sie سه معنی دارد: با ist یعنی «او (زن)»، با sind یعنی «آن‌ها»، و Sie با حرف بزرگ یعنی «شما»ی مؤدبانه؛ فعل و جمله‌های دور و بر نشان می‌دهند کدام است.
+du «تو» برای دوست و خانواده و بچه‌هاست و ihr همان «شما» برای چند دوست یا چند بچه.
+با غریبه، فروشنده یا معلم Sie بگو؛ مثل «شما»ی مؤدبانه فارسی است، حتی برای یک نفر.
+table:
+فارسی | آلمانی | wohnen
+من | ich | wohne
+تو | du | wohnst
+او (مرد) | er | wohnt
+او (زن) | sie | wohnt
+او (خنثی: das Kind) | es | wohnt
+ما | wir | wohnen
+شما (چند دوست) | ihr | wohnt
+آن‌ها | sie | wohnen
+شما (مؤدبانه) | Sie | wohnen
+sets:
+er: Mann, Vater, Freund, Junge, Iraner
+sie: Frau, Mutter, Freundin, Iranerin
+es: Kind, Baby
+examples:
+Das ist Anna. Sie wohnt in Berlin. | این آناست. او در برلین زندگی می‌کند.
+Das ist Paul. Er kommt aus Hamburg. | این پاول است. او اهل هامبورگ است.
+Kinder, ihr spielt hier. | بچه‌ها، شما اینجا بازی می‌کنید.
+Guten Tag, Sie sind die Mutter von Mia. | روز بخیر، شما مادر میا هستید.
+targets:
+Das ist Laura. [Sie] wohnt in München. | این لوراست. او در مونیخ زندگی می‌کند. | d: Er, Es, Ich
+Das ist Leon. [Er] kommt aus Köln. | این لئون است. او اهل کلن است. | d: Sie, Es, Du
+Das Kind ist klein. [Es] ist 3 Jahre alt. | بچه کوچک است. سه سالش است. | d: Er, Sie, Ich
+Maryam und Reza wohnen hier. [Sie] kommen aus Teheran. | مریم و رضا اینجا زندگی می‌کنند. آن‌ها اهل تهران‌اند. | d: Er, Es, Ihr
+Lena, [du] wohnst hier. | لنا، تو اینجا زندگی می‌کنی. | d: ihr, Sie, er
+Kinder, [ihr] spielt jetzt zu Hause. | بچه‌ها، شما الان در خانه بازی می‌کنید. | d: du, Sie, wir
+Guten Tag, [Sie] sind der Vater von Tim. | روز بخیر، شما پدر تیم هستید. | d: du, ihr, er
+Ich heiße Sara und [ich] wohne in Schiras. | اسم من ساراست و در شیراز زندگی می‌کنم. | d: du, er, sie
+Der Vater ist zu Hause. [Er] arbeitet heute. | پدر خانه است. او امروز کار می‌کند. | d: Sie, Es, Ich
+Die Mutter heißt Laura. [Sie] ist 40 Jahre alt. | اسم مادر لوراست. او چهل ساله است. | d: Er, Es, Ihr
+Das Baby ist zu Hause. [Es] ist sehr klein. | نوزاد خانه است. خیلی کوچک است. | d: Er, Sie, Du
+Der Junge ist 12. [Er] lernt Englisch. | پسر دوازده ساله است. او انگلیسی یاد می‌گیرد. | d: Sie, Es, Du
+Max und Felix, [ihr] seid Freunde. | ماکس و فلیکس، شما با هم دوستید. | d: Sie, du, wir
+Tim und ich sind Freunde. [Wir] wohnen in Köln. | من و تیم با هم دوستیم. ما در کلن زندگی می‌کنیم. | d: Ihr, Er, Du
+Die Frau dort heißt Sara. [Sie] kommt aus Iran. | اسم آن خانم ساراست. او اهل ایران است. | d: Er, Es, Ich
+Reza ist Iraner. [Er] wohnt jetzt in Wien. | رضا ایرانی است. او الان در وین زندگی می‌کند. | d: Sie, Es, Wir
+Das sind Lena und Tim. [Sie] sind Freunde. | این‌ها لنا و تیم هستند. آن‌ها با هم دوست‌اند. | d: Er, Es, Ihr
+Sara, [du] kommst morgen. | سارا، تو فردا می‌آیی. | d: Sie, ihr, er
+Der Freund heißt Leon. [Er] ist 20. | اسم آن دوست لئون است. او بیست ساله است. | d: Sie, Es, Du
+Die Freundin von Mia ist hier. [Sie] trinkt Tee. | دوست میا اینجاست. او چای می‌نوشد. | d: Er, Es, Wir
+Guten Morgen, [Sie] arbeiten heute hier. | صبح بخیر، شما امروز اینجا کار می‌کنید. | d: du, ihr, er
+Die Kinder sind zu Hause. [Sie] spielen. | بچه‌ها خانه‌اند. آن‌ها بازی می‌کنند. | d: Es, Ihr, Er
+Die Eltern kommen morgen. [Sie] wohnen in Isfahan. | پدر و مادر فردا می‌آیند. آن‌ها در اصفهان زندگی می‌کنند. | d: Er, Es, Ihr
+Lukas ist 6. [Er] ist noch klein. | لوکاس شش ساله است. او هنوز کوچک است. | d: Sie, Es, Ihr
+Die Mutter von Lena heißt Maryam. [Sie] ist sehr jung. | اسم مادر لنا مریم است. او خیلی جوان است. | d: Er, Es, Ihr
+Das Mädchen und der Junge lernen hier. [Sie] sind Freunde. | دختر و پسر اینجا درس می‌خوانند. آن‌ها با هم دوست‌اند. | d: Es, Er, Ihr
+Ali und Sara sind hier. [Er] ist Iraner und [sie] ist Iranerin. | علی و سارا اینجا هستند. علی ایرانی است و سارا هم ایرانی است. | d: Sie, Es, Ich / er, es, ich
+[Ich] wohne hier und [du] wohnst dort. | من اینجا زندگی می‌کنم و تو آنجا. | d: Du, Er, Wir / ich, er, ihr
+[Wir] trinken Tee und [ihr] trinkt Kaffee. | ما چای می‌نوشیم و شما قهوه. | d: Ihr, Er, Du / wir, du, ich
+[Du] bist Paul und [ich] bin Laura. | تو پاول هستی و من لورا. | d: Ich, Er, Sie / du, sie, er
+Kinder, [ihr] seid hier und [wir] sind dort. | بچه‌ها، شما اینجا هستید و ما آنجا. | d: du, Sie, er / ihr, ich, du
+Anna, [du] bist 20 und [ich] bin 22. | آنا، تو بیست سالت است و من بیست‌ودو سالم. | d: ihr, Sie, er / du, er, wir
+Das Kind und die Mutter sind hier. [Es] spielt und [sie] arbeitet. | بچه و مادر اینجا هستند. بچه بازی می‌کند و مادر کار می‌کند. | d: Er, Wir, Ich / er, ich, du
+transforms:
+Anna wohnt in Berlin. => Sie wohnt in Berlin. | به‌جای Anna ضمیر بگذار.
+Paul kommt aus Wien. => Er kommt aus Wien. | به‌جای Paul ضمیر بگذار.
+Das Kind spielt hier. => Es spielt hier. | به‌جای das Kind ضمیر بگذار.
+Max und Lena lernen Deutsch. => Sie lernen Deutsch. | به‌جای Max und Lena ضمیر بگذار.
+Du kommst morgen. => Sie kommen morgen. | جمله را مؤدبانه بنویس، با Sie.
+translations:
+او (زن) در هامبورگ زندگی می‌کند. => Sie wohnt in Hamburg.
+شما (مؤدبانه) اهل تهران هستید. => Sie kommen aus Teheran. ; Sie sind aus Teheran.
+بچه‌ها، شما اینجا بازی می‌کنید. => Kinder, ihr spielt hier.
+آن‌ها با هم دوست‌اند. => Sie sind Freunde.
+او (مرد) امروز کار می‌کند. => Er arbeitet heute. ; Heute arbeitet er.
