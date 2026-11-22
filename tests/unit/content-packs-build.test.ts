@@ -54,6 +54,14 @@ describe("sentences of a pack", () => {
     expect(surfaces).not.toContain("manger:mange");
   });
 
+  it("reads Lexique's oe spelling as œ and the adjective forms it files apart (nouvel, bel)", () => {
+    const list = words("fr", ["un\tdet\t\t\tیک\tun: یک\tfunction\tno_card:1", "sœur\tnoun\tf\tsœurs\tخواهر\tخواهر\tfamily", "œuf\tnoun\tm\t\tتخم‌مرغ\tتخم‌مرغ\tfood", "nouveau\tadj\t\t\tنو\tنو\tqualities", "beau\tadj\t\t\tزیبا\tزیبا\tqualities", "ordinateur\tnoun\tm\t\tکامپیوتر\tکامپیوتر\thome"]);
+    const codes = (text: string) => analyzerOf("fr", list).analyze(text, { level: "A1" }).tokens.map((token) => token.code);
+    expect(codes("un nouvel ordinateur")).toEqual(["un", "nouveau", "ordinateur"]);
+    expect(codes("un bel ordinateur")).toEqual(["un", "beau", "ordinateur"]);
+    expect(new Morph("fr", list).candidates("œufs").map((candidate) => candidate.word.word.code)).toEqual(["œuf"]);
+  });
+
   it("refuses a word the learner meets later than the sentence's word", () => {
     const list = words("fr", ["le\tdet\t\t\tحرف تعریف\tحرف تعریف\tfunction\tno_card:1", ...Array.from({ length: 30 }, (_, i) => `mot${i}\tnoun\tm\t\tکلمه\tکلمه ${i}\tabstract`), "chat\tnoun\tm\t\tگربه\tگربه\tanimals", "chien\tnoun\tm\t\tسگ\tسگ\tanimals"]);
     const analyzer = analyzerOf("fr", list);
