@@ -1,0 +1,73 @@
+code: fr-a1-questions-oui-non
+title: سؤال بله/نه: با آهنگ صدا و est-ce que
+scope: سؤال بله/نه با بالا بردن آهنگ صدا (Tu parles français ?) و با est-ce que یا est-ce qu' اول جمله، و جواب با oui و non؛ کلمه‌های پرسشی (où، quand، comment…) در واحد بعد می‌آیند.
+can_do: حالا می‌توانی سؤال بله/نه بپرسی و جواب بدهی: Est-ce que tu as le temps ? Oui, j'ai le temps.
+rule: سؤال بله/نه = جمله عادی با آهنگ رو به بالا، یا est-ce que + جمله عادی؛ قبل از صدادار est-ce qu'.
+mistake: فارسی‌زبان‌ها بعد از est-ce que ترتیب جمله را عوض می‌کنند («Est-ce que parles-tu français ?»)؛ est-ce que مثل «آیا» است و بعدش ترتیب همان جمله عادی است: Est-ce que tu parles français ? قبل از صدادار هم qu' لازم است: Est-ce qu'il est là ?
+lesson:
+سؤال بله/نه در فرانسوی دو راه ساده دارد.
+راه اول: همان جمله عادی را با آهنگ رو به بالا بگو و آخرش علامت سؤال بگذار: Tu parles français ?
+راه دوم: est-ce que را، مثل «آیا»، اول جمله بیاور؛ بقیه جمله هیچ تغییری نمی‌کند: Est-ce que tu parles français ?
+قبل از صدادار، que کوتاه می‌شود: Est-ce qu'il est là ? Est-ce qu'elle a une voiture ?
+جواب: Oui (بله) یا Non (نه)، و بعد جمله کامل: Non, je ne parle pas français.
+در نوشتن فرانسوی قبل از ? یک فاصله می‌گذارند.
+table:
+جمله | سؤال
+Tu parles français. | Tu parles français ?
+Tu parles français. | Est-ce que tu parles français ?
+Il est là. | Est-ce qu'il est là ?
+examples:
+Tu parles français ? | فرانسوی حرف می‌زنی؟
+Est-ce que vous avez le temps ? | آیا شما وقت دارید؟
+Est-ce qu'il est à la maison ? | آیا او (مرد) خانه است؟
+Oui, je suis à Paris. | بله، من در پاریس هستم.
+targets:
+[Est-ce que] tu parles avec Paul ? | آیا تو با پل حرف می‌زنی؟ | d: Est-ce qu', Qu'est-ce que, Est-ce
+[Est-ce qu']il est là ? | آیا او (مرد) آنجاست؟ | d: Est-ce que, Qu'est-ce qu', Est-ce
+[Est-ce que] vous avez une voiture ? | آیا شما ماشین دارید؟ | d: Est-ce qu', Qu'est-ce que, Est-ce
+[Est-ce qu']elle habite à Paris ? | آیا او (زن) در پاریس زندگی می‌کند؟ | d: Est-ce que, Qu'est-ce qu', Est-ce
+Est-ce que [tu aimes] le café ? | آیا تو قهوه دوست داری؟ | d: aimes-tu, aimes tu, tu aimer | hint: (aimer)
+Est-ce que [vous travaillez] ici ? | آیا شما اینجا کار می‌کنید؟ | d: travaillez-vous, travaillez vous, vous travailler | hint: (travailler)
+[Est-ce que] Paul est à la maison ? | آیا پل خانه است؟ | d: Est-ce qu', Qu'est-ce que, Est-ce
+[Est-ce qu']ils ont le temps ? | آیا آن‌ها وقت دارند؟ | d: Est-ce que, Qu'est-ce qu', Est-ce
+[Est-ce que] les enfants sont à l'école ? | آیا بچه‌ها مدرسه هستند؟ | d: Est-ce qu', Qu'est-ce que, Est-ce
+Est-ce qu'elle [aime] les chats ? | آیا او (زن) گربه‌ها را دوست دارد؟ | d: aimes, aiment, aimer | hint: (aimer)
+Tu parles français ? [Oui], je parle français. | فرانسوی حرف می‌زنی؟ بله، فرانسوی حرف می‌زنم. | d: Non, Ne, Pas
+Tu as le temps ? [Non], je n'ai pas le temps. | وقت داری؟ نه، وقت ندارم. | d: Oui, Ne, Pas
+Est-ce que tu as le temps ? Non, je [n'ai pas] le temps. | آیا وقت داری؟ نه، وقت ندارم. | d: ne ai pas, ne pas ai, ai ne pas | hint: (avoir)
+Tu [habites] à Lyon ? | تو در لیون زندگی می‌کنی؟ | d: habite, habitez, habiter | hint: (habiter)
+[Est-ce qu']on mange ici ? | آیا اینجا غذا می‌خوریم؟ | d: Est-ce que, Qu'est-ce qu', Est-ce
+Est-ce que [Marie est] là ? | آیا ماری آنجاست؟ | d: est Marie, Marie être, Marie es | hint: (être)
+[Est-ce que] tu écoutes ? | گوش می‌دهی؟ | d: Est-ce qu', Qu'est-ce que, Est-ce
+[Est-ce qu']Ali travaille à Téhéran ? | آیا علی در تهران کار می‌کند؟ | d: Est-ce que, Qu'est-ce qu', Est-ce
+Est-ce que [vous êtes] Paul ? | آیا شما پل هستید؟ | d: êtes-vous, êtes vous, vous être | hint: (être)
+Est-ce que [le chien est] petit ? | آیا سگ کوچک است؟ | d: est le chien, le chien être, le chien es | hint: (être)
+Est-ce qu'[il aime] le pain ? | آیا او (مرد) نان دوست دارد؟ | d: aime-t-il, aime il, il aimer | hint: (aimer)
+Vous [avez] le livre ? | کتاب را دارید؟ | d: avons, as, ont | hint: (avoir)
+Tu [es] à l'école ? | تو مدرسه‌ای؟ | d: est, êtes, suis | hint: (être)
+Est-ce que [les gens parlent] français ici ? | آیا مردم اینجا فرانسوی حرف می‌زنند؟ | d: parlent les gens, les gens parle, les gens parler | hint: (parler)
+[Est-ce que] vous aimez Paris ? | پاریس را دوست دارید؟ | d: Est-ce qu', Qu'est-ce que, Est-ce
+[Est-ce qu']elles sont à Nice ? | آیا آن‌ها (خانم‌ها) در نیس هستند؟ | d: Est-ce que, Qu'est-ce qu', Est-ce
+Il est à la maison ? [Oui], il est à la maison. | او (مرد) خانه است؟ بله، خانه است. | d: Non, Ne, Pas
+Est-ce qu'[elle a] une voiture ? | آیا او (زن) ماشین دارد؟ | d: a-t-elle, a elle, elle avoir | hint: (avoir)
+Est-ce que Paul [travaille] ? | آیا پل کار می‌کند؟ | d: travailles, travaillent, travailler | hint: (travailler)
+[Est-ce que] Marie aime le café ? | آیا ماری قهوه دوست دارد؟ | d: Est-ce qu', Qu'est-ce que, Est-ce
+[Est-ce que] tu [joues] avec le chien ? | آیا با سگ بازی می‌کنی؟ | d: Est-ce qu', Qu'est-ce que, Est-ce / joue, jouez, jouer
+[Est-ce qu']il [a] un chat ? | آیا او (مرد) گربه دارد؟ | d: Est-ce que, Qu'est-ce qu', Est-ce / as, ai, ont
+[Est-ce que] vous [êtes] à Paris ? | آیا شما در پاریس هستید؟ | d: Est-ce qu', Qu'est-ce que, Est-ce / est, sommes, sont
+[Est-ce qu']elle [habite] ici ? | آیا او (زن) اینجا زندگی می‌کند؟ | d: Est-ce que, Qu'est-ce qu', Est-ce / habites, habitent, habiter
+Vous avez le temps ? [Oui], nous [avons] le temps. | وقت دارید؟ بله، وقت داریم. | d: Non, Ne, Pas / avez, ont, a
+Tu aimes le café ? [Non], je [n'aime pas] le café. | قهوه دوست داری؟ نه، قهوه دوست ندارم. | d: Oui, Ne, Pas / ne aime pas, ne pas aime, aime ne pas
+[Est-ce que] les enfants [jouent] dans la rue ? | آیا بچه‌ها در خیابان بازی می‌کنند؟ | d: Est-ce qu', Qu'est-ce que, Est-ce / joue, jouez, jouer
+transforms:
+Tu parles français. => Est-ce que tu parles français ? | جمله را با est-ce que سؤالی کن.
+Il est à la maison. => Est-ce qu'il est à la maison ? | جمله را با est-ce que سؤالی کن.
+Vous avez une voiture. => Est-ce que vous avez une voiture ? | جمله را با est-ce que سؤالی کن.
+Elle aime le café. => Est-ce qu'elle aime le café ? | جمله را با est-ce que سؤالی کن.
+Les enfants sont à l'école. => Est-ce que les enfants sont à l'école ? | جمله را با est-ce que سؤالی کن.
+translations:
+آیا تو فرانسوی حرف می‌زنی؟ => Est-ce que tu parles français ? ; Tu parles français ? ; Parles-tu français ?
+آیا او (مرد) خانه است؟ => Est-ce qu'il est à la maison ? ; Il est à la maison ? ; Est-il à la maison ?
+آیا شما وقت دارید؟ => Est-ce que vous avez le temps ? ; Vous avez le temps ? ; Avez-vous le temps ?
+آیا ماری در پاریس زندگی می‌کند؟ => Est-ce que Marie habite à Paris ? ; Marie habite à Paris ?
+آیا گربه داری؟ => Est-ce que tu as un chat ? ; Tu as un chat ? ; As-tu un chat ?

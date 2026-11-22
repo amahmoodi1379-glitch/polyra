@@ -1,0 +1,75 @@
+code: fr-a1-mots-interrogatifs
+title: کلمه‌های پرسشی: où، quand، comment، pourquoi، qui، combien
+scope: سؤال با کلمه‌های پرسشی où، quand، comment، pourquoi، qui، combien (de) و qu'est-ce que/quoi در دو شکل رایج: کلمه پرسشی آخر جمله (Tu habites où ?) یا کلمه پرسشی + est-ce que + جمله (Où est-ce que tu habites ?)، و جواب pourquoi با parce que؛ quel در واحد جدا می‌آید.
+can_do: حالا می‌توانی بپرسی کی، کجا، چه وقت، چطور، چرا و چند.
+rule: فاعل + فعل + کلمه پرسشی (Tu habites où ?) یا کلمه پرسشی + est-ce que + فاعل + فعل (Où est-ce que tu habites ?)؛ «چه چیزی» = qu'est-ce que.
+mistake: فارسی‌زبان‌ها کلمه پرسشی را با ترتیب فارسی وسط جمله می‌گذارند («Tu où habites ?») یا «چه» را que تنها می‌گویند («Que tu cherches ?»)؛ درست: Tu habites où ? یا Où est-ce que tu habites ? و Qu'est-ce que tu cherches ?
+lesson:
+کلمه‌های پرسشی: où (کجا)، quand (کی، چه وقت)، comment (چطور)، pourquoi (چرا)، qui (چه کسی)، combien (چقدر، چند تا).
+در گفتار روزمره کلمه پرسشی را آخر جمله می‌گذاریم: Tu habites où ? Tu travailles quand ?
+راه دیگر: کلمه پرسشی + est-ce que + همان جمله عادی: Où est-ce que tu habites ?
+برای «چه چیزی» اول جمله qu'est-ce que می‌آید و آخر جمله quoi: Qu'est-ce que tu cherches ? = Tu cherches quoi ?
+«چند تا» combien de است: Tu as combien de chats ? و جواب pourquoi با parce que (چون) شروع می‌شود.
+table:
+کلمه | معنی | مثال
+où | کجا | Tu habites où ?
+quand | چه وقت | Tu travailles quand ?
+comment | چطور | Comment ça va ?
+pourquoi | چرا | Pourquoi tu es là ?
+qui | چه کسی | Qui est-ce ?
+combien | چند، چقدر | Tu as combien de chats ?
+qu'est-ce que / quoi | چه چیزی | Qu'est-ce que tu cherches ?
+examples:
+Tu habites où ? J'habite à Lyon. | کجا زندگی می‌کنی؟ در لیون زندگی می‌کنم.
+Qu'est-ce que tu cherches ? | دنبال چه می‌گردی؟
+Pourquoi tu es là ? Parce que j'aime la ville. | چرا اینجایی؟ چون شهر را دوست دارم.
+Qui est-ce ? C'est Paul. | این کیست؟ پل است.
+targets:
+Tu habites [où] ? J'habite à Lyon. | کجا زندگی می‌کنی؟ در لیون زندگی می‌کنم. | d: quand, qui, combien
+Tu travailles [quand] ? Je travaille tous les jours. | کی کار می‌کنی؟ هر روز کار می‌کنم. | d: où, qui, combien
+[Comment] ça va ? Bien, merci. | حالت چطور است؟ خوبم، ممنون. | d: Où, Qui, Quoi
+[Qui] est-ce ? C'est Paul. | این کیست؟ پل است. | d: Où, Quoi, Comment
+[Pourquoi] tu es à Paris ? Parce que j'ai un ami ici. | چرا در پاریس هستی؟ چون اینجا یک دوست دارم. | d: Où, Quand, Combien
+Tu as [combien] de chats ? J'ai 2 chats. | چند تا گربه داری؟ ۲ تا گربه دارم. | d: où, quand, comment
+[Où] est le chat ? Il est sous la table. | گربه کجاست؟ زیر میز است. | d: Qui, Quand, Combien
+[Qu'est-ce que] tu cherches ? Je cherche le livre de Paul. | دنبال چه می‌گردی؟ دنبال کتابِ پل می‌گردم. | d: Que, Qui est-ce que, Quand est-ce que
+[Où est-ce que] vous travaillez ? Je travaille à l'école. | کجا کار می‌کنید؟ در مدرسه کار می‌کنم. | d: Où est-ce, Où que, Est-ce que où
+Vous travaillez [où] ? Nous travaillons à Paris. | کجا کار می‌کنید؟ ما در پاریس کار می‌کنیم. | d: quand, qui, comment
+Vous avez [combien] d'enfants ? Nous avons 3 enfants. | چند تا بچه دارید؟ ۳ تا بچه داریم. | d: où, quand, comment
+Pourquoi tu ne manges pas ? [Parce que] je n'ai pas le temps. | چرا غذا نمی‌خوری؟ چون وقت ندارم. | d: Pourquoi, Parce qu', Pour
+Pourquoi tu aimes Lyon ? [Parce que] la ville est petite. | چرا لیون را دوست داری؟ چون شهر کوچک است. | d: Pourquoi, Parce qu', Pour
+[Qui] parle ? C'est Marie. | کی حرف می‌زند؟ ماری است. | d: Que, Où, Quand
+Tu parles avec [qui] ? Avec Paul. | با کی حرف می‌زنی؟ با پل. | d: que, où, comment
+Le livre est [où] ? Il est sur la table. | کتاب کجاست؟ روی میز است. | d: quand, qui, comment
+[Qu'est-ce que] vous regardez ? Nous regardons les voitures. | چه چیزی را نگاه می‌کنید؟ ماشین‌ها را نگاه می‌کنیم. | d: Que, Qui est-ce que, Quand est-ce que
+Tu cherches [quoi] ? Je cherche la voiture. | دنبال چی می‌گردی؟ دنبال ماشین. | d: qui, quand, combien
+[Comment] est la maison ? Elle est grande. | خانه چطور است؟ بزرگ است. | d: Où, Qui, Quand
+[Où] sont les enfants ? Ils sont à l'école. | بچه‌ها کجا هستند؟ مدرسه‌اند. | d: Qui, Comment, Combien
+Marie a [combien] d'amis ? Elle a beaucoup d'amis. | ماری چند تا دوست دارد؟ دوست‌های زیادی دارد. | d: où, quand, comment
+Vous jouez [quand] ? Nous jouons tous les jours. | کی بازی می‌کنید؟ هر روز بازی می‌کنیم. | d: où, qui, combien
+[Pourquoi] tu ne travailles pas ? Parce que je n'ai pas le temps. | چرا کار نمی‌کنی؟ چون وقت ندارم. | d: Où, Qui, Combien
+[Quand est-ce que] vous travaillez ? Nous travaillons tous les jours. | کی کار می‌کنید؟ هر روز کار می‌کنیم. | d: Quand est-ce, Quand que, Est-ce que quand
+[Comment] tu t'appelles ? Je m'appelle Sara. | اسمت چیست؟ اسمم ساراست. | d: Qui, Où, Quoi
+Vous vous appelez [comment] ? Je m'appelle Paul. | اسم شما چیست؟ اسمم پل است. | d: qui, où, quand
+[Qui] est-ce qu'il cherche ? Il cherche Marie. | دنبال کی می‌گردد؟ دنبال ماری. | d: Comment, Combien, Quand
+Tu habites avec [qui] ? J'habite avec un ami. | با کی زندگی می‌کنی؟ با یک دوست. | d: que, quoi, où
+[Pourquoi] vous parlez français ? Parce que j'habite à Paris. | چرا فرانسوی حرف می‌زنید؟ چون در پاریس زندگی می‌کنم. | d: Où, Qui, Quand
+C'est [qui] ? C'est un ami. | این کیست؟ یک دوست است. | d: où, quand, combien
+[Pourquoi] tu es là ? [Parce que] j'aime la ville. | چرا اینجایی؟ چون شهر را دوست دارم. | d: Où, Quand, Combien / Pourquoi, Parce qu', Pour
+[Qui] est-ce et [où] est-ce qu'il habite ? | این کیست و کجا زندگی می‌کند؟ | d: Où, Quoi, Comment / qui, quand, combien
+[Comment] ça va ? Et Paul, il est [où] ? | حالت چطور است؟ و پل کجاست؟ | d: Qui, Quoi, Combien / quand, combien, pourquoi
+[Qui] parle et [qui] écoute ? | کی حرف می‌زند و کی گوش می‌دهد؟ | d: Que, Où, Quand / Que, Où, Quand
+Tu as [combien] de chats et [combien] de chiens ? | چند تا گربه و چند تا سگ داری؟ | d: où, quand, comment / où, quand, comment | full: Tu as combien de chiens et combien de chats ?
+[Où] est Paul et [pourquoi] il n'est pas ici ? | پل کجاست و چرا اینجا نیست؟ | d: Quand, Combien, Quoi / qui, combien, quoi
+transforms:
+Tu habites où ? => Où est-ce que tu habites ? | سؤال را با est-ce que بنویس.
+Tu travailles quand ? => Quand est-ce que tu travailles ? | سؤال را با est-ce que بنویس.
+Vous parlez avec qui ? => Avec qui est-ce que vous parlez ? | سؤال را با est-ce que بنویس.
+Tu cherches quoi ? => Qu'est-ce que tu cherches ? | سؤال را با qu'est-ce que بنویس.
+Pourquoi tu ne manges pas ? => Pourquoi est-ce que tu ne manges pas ? | سؤال را با est-ce que بنویس.
+translations:
+کجا زندگی می‌کنی؟ => Tu habites où ? ; Où est-ce que tu habites ? ; Où habites-tu ? ; Où tu habites ?
+اسمت چیست؟ => Comment tu t'appelles ? ; Tu t'appelles comment ? ; Comment t'appelles-tu ? ; Comment est-ce que tu t'appelles ?
+دنبال چه می‌گردی؟ => Qu'est-ce que tu cherches ? ; Tu cherches quoi ? ; Que cherches-tu ?
+چرا اینجایی؟ => Pourquoi tu es là ? ; Pourquoi tu es ici ? ; Pourquoi est-ce que tu es là ? ; Pourquoi est-ce que tu es ici ? ; Pourquoi es-tu là ? ; Pourquoi es-tu ici ?
+چند تا بچه دارید؟ => Vous avez combien d'enfants ? ; Combien d'enfants est-ce que vous avez ? ; Combien d'enfants avez-vous ?
