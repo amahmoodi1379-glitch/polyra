@@ -6,6 +6,7 @@ import { appSettingDefaults } from "@/server/settings/app-catalog";
 import { levelRank, type LanguageCode } from "../languages";
 import { Analyzer } from "./analyze";
 import { buildGrammar, type GrammarUnitSource } from "./grammar";
+import { buildItems, buildPhonics, itemSettings, type PackDialogue, type PackErrorfix, type PackPhonics, type PackText, type PackWriting } from "./items";
 import { Morph } from "./morph";
 import { buildSentences, type SentenceRecord } from "./sentences";
 import { buildTables, type PackTable } from "./tables";
@@ -28,18 +29,22 @@ export type PackLevel = {
   units: GrammarUnitSource[];
   tables: PackTable[];
   sentences: SentenceRecord[];
+  texts: PackText[];
+  dialogues: PackDialogue[];
+  errorfix: PackErrorfix[];
+  writing: PackWriting[];
   exceptions: Exception[];
 };
-export type Pack = { language: LanguageCode; levels: PackLevel[]; words: PackWord[]; errors: Note[]; warnings: Note[]; notes: Note[] };
+export type Pack = { language: LanguageCode; levels: PackLevel[]; words: PackWord[]; phonics: PackPhonics[]; errors: Note[]; warnings: Note[]; notes: Note[] };
 
 /** A short, stable fingerprint of an item as loaded. */
 export const hashOf = (value: unknown) => createHash("sha1").update(JSON.stringify(value)).digest("hex").slice(0, 16);
 
-/** The text files of a folder in name order (`grammar/A1/01-etre.txt`, …); none when it does not exist. */
-function folder(root: string, path: string): { file: string; text: string }[] {
+/** The files of a folder in name order (`grammar/A1/01-etre.txt`, …); none when it does not exist. */
+function folder(root: string, path: string, extension = ".txt"): { file: string; text: string }[] {
   let names: string[];
   try {
-    names = readdirSync(join(root, path)).filter((name) => name.endsWith(".txt")).sort();
+    names = readdirSync(join(root, path)).filter((name) => name.endsWith(extension)).sort();
   } catch {
     return [];
   }
@@ -65,6 +70,8 @@ export type BuildOptions = {
   tenses?: Record<string, string[]>;
   /** Only these levels (the language's `levels.<language>`). */
   levels?: string[];
+  /** General settings the texts, dialogues, writing tasks and phonics follow (else their defaults). */
+  settings?: Partial<Record<string, unknown>>;
 };
 
 export function buildPack(language: LanguageCode, options: BuildOptions = {}): Pack {
@@ -78,6 +85,7 @@ export function buildPack(language: LanguageCode, options: BuildOptions = {}): P
     language,
     levels: [],
     words,
+    phonics: [],
     errors: wordPack.errors.map(({ file, line, lemma, text }) => ({ file, line, text: `${lemma}: ${text}` })),
     warnings: wordPack.warnings.map(({ file, line, lemma, text }) => ({ file, line, text: `${lemma}: ${text}` })),
     notes: [],
@@ -86,12 +94,9 @@ export function buildPack(language: LanguageCode, options: BuildOptions = {}): P
 
   const morph = new Morph(language, words, root);
   const analyzer = new Analyzer(language, words, morph, readNames(contentRoot, language));
-  const firstWords = new Set(
-    words
-      .filter((item) => !item.word.no_card && isCardRegister(item.word.register))
-      .sort((a, b) => levelRank(a.level) - levelRank(b.level) || a.order - b.order)
-      .slice(0, FIRST_WORDS),
-  );
+  const cardWords = words.filter((item) => !item.word.no_card && isCardRegister(item.word.register)).sort((a, b) => levelRank(a.level) - levelRank(b.level) || a.order - b.order);
+  const firstWords = new Set(cardWords.slice(0, FIRST_WORDS));
+  const settings = itemSettings(language, options.settings);
 
   const built = levels.map((level) => {
     const grammar = buildGrammar(analyzer, folder(contentRoot, join("content", language, "grammar", level)), level);
@@ -117,17 +122,41 @@ export function buildPack(language: LanguageCode, options: BuildOptions = {}): P
   pack.warnings.push(...tables.warnings);
   pack.notes.push(...tables.notes);
 
+  // Texts, dialogues, find the mistake and writing, per level; phonics for the language.
+  const unitLevels = new Map(built.flatMap(({ grammar }) => grammar.units.map((unit) => [unit.listItem.unit_code, unit.level] as [string, string])));
+  const textCodes = new Map<string, string>();
+  const dialogueCodes = new Map<string, string>();
   const unique = (list: Exception[]) => [...new Map(list.map((item) => [`${item.code}|${item.surface}`, item])).values()];
   for (const { level, grammar, sentences } of built) {
+    const at = (kind: string) => folder(contentRoot, join("content", language, kind, level), ".json");
+    const items = buildItems(analyzer, { texts: at("texts"), dialogues: at("dialogues"), errorfix: at("errorfix"), writing: at("writing") }, level, settings, unitLevels, cardWords);
+    pack.errors.push(...items.errors);
+    pack.notes.push(...items.notes);
+    // Codes are unique across the language.
+    for (const [list, seenCodes, what] of [[items.texts, textCodes, "text"], [items.dialogues, dialogueCodes, "dialogue"]] as const) {
+      for (const item of list) {
+        const other = seenCodes.get(item.code);
+        if (other) pack.errors.push({ file: item.file, line: 1, text: `${what} code «${item.code}» is also the code of ${other}` });
+        seenCodes.set(item.code, item.file);
+      }
+    }
     pack.levels.push({
       level,
       words: words.filter((item) => item.level === level),
       units: grammar.units,
       tables: tables.tables.filter((table) => table.level === level),
       sentences: sentences.records,
-      exceptions: unique([...grammar.exceptions, ...sentences.exceptions]),
+      texts: items.texts,
+      dialogues: items.dialogues,
+      errorfix: items.errorfix,
+      writing: items.writing,
+      exceptions: unique([...grammar.exceptions, ...sentences.exceptions, ...items.exceptions]),
     });
   }
+  const phonics = buildPhonics(folder(contentRoot, join("content", language, "phonics"), ".json"), settings);
+  pack.phonics = phonics.lessons;
+  pack.errors.push(...phonics.errors);
+  pack.notes.push(...phonics.notes);
   return pack;
 }
 
@@ -141,5 +170,9 @@ export function packSummary(pack: Pack) {
     tables: level.tables.length,
     sentences: level.sentences.length,
     targets: level.sentences.reduce((sum, sentence) => sum + sentence.targets.length, 0),
+    texts: level.texts.length,
+    dialogues: level.dialogues.length,
+    errorfix: level.errorfix.length,
+    writing: level.writing.length,
   }));
 }

@@ -1,0 +1,8 @@
+[
+  {
+    "marked_text": "Je {{es|suis}} dans la maison et nous {{est|sommes}} dans la voiture.",
+    "translation_fa": "من در خانه هستم و ما در ماشین هستیم.",
+    "unit_codes": ["fr-a1-etre"],
+    "errors": [{ "why_fa": "با je شکل suis می‌آید." }, { "why_fa": "با nous شکل sommes می‌آید." }]
+  }
+]

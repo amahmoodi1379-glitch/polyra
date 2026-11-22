@@ -73,4 +73,4 @@ export async function unitLines(language: string, level: string) {
     .map((unit) => [unit.unit_code, unit.title_fa, unit.level].join(" | "));
 }
 
-export const wordCount = (text: string) => text.split(/\s+/).filter((piece) => /[\p{L}\p{N}]/u.test(piece)).length;
+export { wordCount } from "../practice-check";

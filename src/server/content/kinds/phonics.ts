@@ -1,9 +1,9 @@
 import type { PhonicsKind, Prisma } from "@/generated/prisma/client";
-import { fold } from "@/engine/tokens";
 import { t } from "@/i18n";
-import { phonicsLessonRecord, type PhonicsLessonRecord } from "@/schemas/phonics";
+import { phonicsLessonRecord } from "@/schemas/phonics";
 import { db } from "@/server/db";
 import { appSetting } from "@/server/settings/read";
+import { checkLesson, samePhonics } from "../practice-check";
 import { problem, zodProblems, type Problem } from "../problems";
 import { emptyRound } from "../report";
 import { updateImported } from "./hand-edits";
@@ -15,14 +15,7 @@ export type PlannedLesson = { label: string; kind: PhonicsKind };
 type PhonicsParams = { level: string; label: string; kind: PhonicsKind; order_no: number };
 
 const editable = new Set(["draft", "needs_review"]);
-const same = (a: string, b: string) => fold(a).replace(/\s+/g, " ").trim() === fold(b).replace(/\s+/g, " ").trim();
-
-/** How many items each kind needs (PRD §8.1, §13.3). */
-const sizes: Record<PhonicsKind, { words: [number, number]; pairs: number; sentences: number }> = {
-  contrast: { words: [6, 10], pairs: 5, sentences: 0 },
-  rule: { words: [8, 12], pairs: 0, sentences: 0 },
-  liaison: { words: [0, 0], pairs: 0, sentences: 8 },
-};
+const same = samePhonics;
 
 /** Lessons of the teacher's list (general settings) that have no lesson row yet, in order. */
 export async function missingLessons(language: string) {
@@ -67,32 +60,7 @@ export function renameInList(list: PlannedLesson[], from: string, to: string): P
   return list.map((lesson) => (same(lesson.label, from) ? { ...lesson, label: to } : lesson));
 }
 
-/** Checks Zod cannot do: the counts of each kind and the wrong spellings (PRD §13.3). */
-export function checkLesson(lesson: PhonicsLessonRecord, kind: PhonicsKind): Problem[] {
-  const problems: Problem[] = [];
-  if (lesson.kind !== kind) problems.push(problem("badValue", { value: lesson.kind, field: "kind" }));
-  const size = sizes[kind];
-  if (kind !== "liaison") {
-    const [min, max] = size.words;
-    if (lesson.example_words.length < min) problems.push(problem("tooFew", { field: "example_words", min }));
-    if (lesson.example_words.length > max) problems.push(problem("tooMany", { field: "example_words", max }));
-    for (const word of lesson.example_words) {
-      if (word.wrong_spellings.length !== 2) problems.push(problem("wrongSpellingsCount", { text: word.text }));
-      else if (word.wrong_spellings.some((spelling) => same(spelling, word.text))) problems.push(problem("wrongSpellingSame", { text: word.text }));
-      else if (same(word.wrong_spellings[0], word.wrong_spellings[1])) problems.push(problem("listRepeat", { field: "wrong_spellings" }));
-    }
-  }
-  if (lesson.minimal_pairs.length < size.pairs) problems.push(problem("tooFew", { field: "minimal_pairs", min: size.pairs }));
-  for (const pair of lesson.minimal_pairs) {
-    if (same(pair.a, pair.b)) problems.push(problem("pairSame", { text: pair.a }));
-  }
-  if (lesson.liaison_sentences.length < size.sentences) problems.push(problem("tooFew", { field: "liaison_sentences", min: size.sentences }));
-  for (const sentence of lesson.liaison_sentences) {
-    const words = sentence.text.trim().split(/\s+/).length;
-    if (sentence.liaison_after_word_index.some((index) => index >= words - 1)) problems.push(problem("liaisonIndex", { text: sentence.text }));
-  }
-  return problems;
-}
+export { checkLesson };
 
 /**
  * P-H (PRD §14.6): one phonics lesson, the next of the teacher's list. The lesson's name and kind come

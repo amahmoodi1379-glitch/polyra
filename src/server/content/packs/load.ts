@@ -5,22 +5,30 @@ import { appSetting } from "@/server/settings/read";
 import { answerRecords } from "../batches";
 import { demoStatus, removeDemo } from "../demo";
 import { conjugation } from "../kinds/conjugation";
+import { dialogues } from "../kinds/dialogues";
+import { errorfix } from "../kinds/errorfix";
 import { grammar } from "../kinds/grammar";
+import { phonics } from "../kinds/phonics";
 import { sentences } from "../kinds/sentences";
+import { texts } from "../kinds/texts";
 import type { ContentKind, Tx } from "../kinds/types";
 import { unitList } from "../kinds/unit-list";
 import { words } from "../kinds/words";
+import { writing } from "../kinds/writing";
 import type { LanguageCode } from "../languages";
 import { librarySlugs, type LibrarySlug } from "../library/slugs";
 import { describeProblem } from "../problems";
 import { publishReady } from "../publish/run";
 import { mergeRound, type RoundResult } from "../report";
 import { buildPack, hashOf, type Pack, type PackLevel } from "./build";
+import { ITEM_SETTING_KEYS, type PackPhonics } from "./items";
 
 /**
  * Loads the content packs into the database at server start (owner, 18 Nov 2026: Claude writes the
- * content and it is published straight away; teachers edit and delete freely). Every item goes through
- * the panel's own importer, so it passes the same checks as any other content. Each item is loaded
+ * content and it is published straight away; teachers edit and delete freely): words, grammar units,
+ * conjugation tables, sentences, texts, dialogues, find-the-mistake texts, writing tasks and phonics
+ * lessons. Every item goes through the panel's own importer, so it passes the same checks as any other
+ * content. Each item is loaded
  * once: `content_pack_item` remembers it, so an item a teacher deleted or changed is left alone. New
  * items in the files come in at the next start. Rows of this run are approved and then published when
  * their publish conditions hold; opening a level to learners stays the teacher's step (PRD §13.5).
@@ -170,6 +178,73 @@ async function loadLevel(run: Run, level: PackLevel) {
     for (const sentence of chunk) if (ok.has(sentence)) remember("sentence", sentence.text, sentence);
     count(run, "sentences", ok.size);
   }
+
+  // Texts and dialogues, one batch each (their importers plan one code per spec).
+  const lacking = (list: string[]) => [...new Set(list.filter((code) => !codes.has(code)))];
+  for (const text of level.texts) {
+    if (!fresh("text", text.code)) continue;
+    const missing = lacking(text.codes);
+    if (missing.length > 0) {
+      run.report.skipped.push(`text ${text.code}: uses words not in the database (${missing.join(", ")})`);
+      continue;
+    }
+    const spec = { code: text.code, level: text.level, band: text.band, kind: text.kind, topic: "", placement_ok: text.placement_ok };
+    const params = { level: text.level, band: text.band, length: text.length, words: text.tierWords, texts: [spec] };
+    const round = await importAnswer(run, texts, await newBatch(run, "P_T", params), { texts: [text.record], issues: [] });
+    if (accepted(round).has(text.record)) {
+      remember("text", text.code, text.record);
+      count(run, "texts", 1);
+    }
+  }
+  for (const dialogue of level.dialogues) {
+    if (!fresh("dialogue", dialogue.code)) continue;
+    const missing = lacking(dialogue.codes);
+    if (missing.length > 0) {
+      run.report.skipped.push(`dialogue ${dialogue.code}: uses words not in the database (${missing.join(", ")})`);
+      continue;
+    }
+    const round = await importAnswer(run, dialogues, await newBatch(run, "P_D", { level: dialogue.level, code: dialogue.code, situation: dialogue.situation }), { dialogue: dialogue.record });
+    if (round.accepted.some((item) => item.part === "dialogue")) {
+      remember("dialogue", dialogue.code, dialogue.record);
+      count(run, "dialogues", 1);
+    }
+  }
+
+  // Find the mistake: one batch for the level, items whose words and units are all there.
+  const unitCodes = new Set((await tx.grammarUnit.findMany({ where: { language }, select: { unit_code: true } })).map((row) => row.unit_code));
+  const fixes = level.errorfix.filter((item) => fresh("errorfix", item.key));
+  const readyFixes = fixes.filter((item) => lacking(item.codes).length === 0 && item.units.every((code) => unitCodes.has(code)));
+  if (readyFixes.length < fixes.length) run.report.skipped.push(`${fixes.length - readyFixes.length} find-the-mistake items use words or units not in the database`);
+  if (readyFixes.length > 0) {
+    const records = readyFixes.map((item) => item.record);
+    const round = await importAnswer(run, errorfix, await newBatch(run, "P_E", { level: level.level, count: records.length }), { items: records });
+    // A text already there (a teacher made it) is skipped by the importer: it counts as loaded.
+    const refused = new Set(round.rejected.map((item) => item.record));
+    for (const item of readyFixes) if (!refused.has(item.record)) remember("errorfix", item.key, item.record);
+    count(run, "find-the-mistake", round.accepted.length);
+  }
+
+  const tasks = level.writing.filter((item) => fresh("writing", item.key));
+  if (tasks.length > 0) {
+    const records = tasks.map((item) => item.record);
+    const round = await importAnswer(run, writing, await newBatch(run, "P_WR", { level: level.level, count: records.length }), { tasks: records });
+    const ok = accepted(round);
+    for (const item of tasks) if (ok.has(item.record)) remember("writing", item.key, item.record);
+    count(run, "writing tasks", ok.size);
+  }
+}
+
+/** Phonics lessons belong to the language; each is one P-H batch (its label, kind and place in the list). */
+async function loadPhonics(run: Run, lessons: PackPhonics[]) {
+  for (const lesson of lessons) {
+    if (run.ledger.has(ledgerKey("phonics", lesson.label))) continue;
+    const round = await importAnswer(run, phonics, await newBatch(run, "P_H", { level: "A1", label: lesson.label, kind: lesson.kind, order_no: lesson.order_no }), { lesson: lesson.record });
+    if (round.accepted.some((item) => item.part === "lesson")) {
+      run.loaded.push({ kind: "phonics", key: lesson.label, hash: hashOf(lesson.record) });
+      run.ledger.add(ledgerKey("phonics", lesson.label));
+      count(run, "phonics lessons", 1);
+    }
+  }
 }
 
 /** Approves what this run imported, as if a teacher had checked it (PRD §13.4). */
@@ -184,6 +259,12 @@ async function approve(tx: Tx, batchIds: number[]) {
   await tx.transformItem.updateMany({ where: mine, data: approved });
   await tx.translateItem.updateMany({ where: mine, data: approved });
   await tx.conjugationTable.updateMany({ where: mine, data: approved });
+  await tx.text.updateMany({ where: mine, data: approved });
+  await tx.question.updateMany({ where: mine, data: approved });
+  await tx.dialogue.updateMany({ where: mine, data: approved });
+  await tx.errorfixItem.updateMany({ where: mine, data: approved });
+  await tx.writingTask.updateMany({ where: mine, data: approved });
+  await tx.phonicsLesson.updateMany({ where: mine, data: approved });
 }
 
 /**
@@ -202,6 +283,11 @@ async function rowsOf(language: string): Promise<Partial<Record<LibrarySlug, Set
     tables: ids(await db.conjugationTable.findMany(where)),
     transforms: ids(await db.transformItem.findMany(where)),
     translations: ids(await db.translateItem.findMany(where)),
+    texts: ids(await db.text.findMany(where)),
+    dialogues: ids(await db.dialogue.findMany(where)),
+    errorfix: ids(await db.errorfixItem.findMany(where)),
+    writing: ids(await db.writingTask.findMany(where)),
+    phonics: ids(await db.phonicsLesson.findMany(where)),
   };
   for (const slug of librarySlugs) if (out[slug]?.size === 0) delete out[slug];
   return out;
@@ -221,15 +307,14 @@ export async function loadPack(pack: Pack, options: { adminId?: number | null; l
   }
 
   const batches: number[] = [];
-  for (const level of pack.levels) {
-    if (level.words.length === 0 && level.units.length === 0 && level.sentences.length === 0 && level.tables.length === 0) continue;
-    const levelReport: LevelReport = { level: level.level, added: {}, rejected: [], skipped: [] };
+  /** One step in its own transaction, under the loader's lock, with the ledger as it stands. */
+  const step = async (levelReport: LevelReport, work: (run: Run) => Promise<void>) => {
     await db.$transaction(
       async (tx) => {
         await tx.$executeRaw`SELECT pg_advisory_xact_lock(${LOCK})`;
         const rows = await tx.contentPackItem.findMany({ where: { language }, select: { kind: true, key: true } });
         const run: Run = { tx, language, adminId: options.adminId ?? null, batches: [], report: levelReport, ledger: new Set(rows.map((row) => ledgerKey(row.kind, row.key))), loaded: [] };
-        await loadLevel(run, level);
+        await work(run);
         await approve(tx, run.batches);
         if (run.loaded.length > 0) await tx.contentPackItem.createMany({ data: run.loaded.map((item) => ({ language, ...item })), skipDuplicates: true });
         batches.push(...run.batches);
@@ -238,9 +323,15 @@ export async function loadPack(pack: Pack, options: { adminId?: number | null; l
     );
     report.levels.push(levelReport);
     const added = Object.entries(levelReport.added).map(([kind, n]) => `${n} ${kind}`).join(", ");
-    log(`${language} ${level.level}: ${added || "nothing new"}${levelReport.rejected.length ? `; ${levelReport.rejected.length} rejected` : ""}${levelReport.skipped.length ? `; ${levelReport.skipped.length} skipped` : ""}`);
+    log(`${language} ${levelReport.level}: ${added || "nothing new"}${levelReport.rejected.length ? `; ${levelReport.rejected.length} rejected` : ""}${levelReport.skipped.length ? `; ${levelReport.skipped.length} skipped` : ""}`);
     for (const line of [...levelReport.rejected, ...levelReport.skipped].slice(0, 20)) log(`  ${line}`);
+  };
+  for (const level of pack.levels) {
+    const empty = [level.words, level.units, level.sentences, level.tables, level.texts, level.dialogues, level.errorfix, level.writing].every((list) => list.length === 0);
+    if (empty) continue;
+    await step({ level: level.level, added: {}, rejected: [], skipped: [] }, (run) => loadLevel(run, level));
   }
+  if (pack.phonics.length > 0) await step({ level: "phonics", added: {}, rejected: [], skipped: [] }, (run) => loadPhonics(run, pack.phonics));
 
   if (batches.length > 0) {
     const result = await publishReady(language, options.adminId ?? null, await rowsOf(language));
@@ -257,7 +348,9 @@ export async function loadPacks(options: { languages?: LanguageCode[]; adminId?:
   const out: LanguageReport[] = [];
   for (const language of options.languages ?? (["fr", "de"] as LanguageCode[])) {
     const [levels, tenses] = await Promise.all([appSetting<string[]>(`levels.${language}`), appSetting<Record<string, string[]>>(`conjugation.tenses.${language}`)]);
-    const pack = buildPack(language, { levels, tenses });
+    const keys = [...Object.values(ITEM_SETTING_KEYS), `phonics.lessons.${language}`];
+    const settings = Object.fromEntries(await Promise.all(keys.map(async (key) => [key, await appSetting<unknown>(key)] as const)));
+    const pack = buildPack(language, { levels, tenses, settings });
     if (pack.errors.length > 0) options.log?.(`${language}: the pack has ${pack.errors.length} errors (npm run content:check); what is clean is loaded`);
     out.push(await loadPack(pack, options));
   }

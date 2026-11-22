@@ -1,7 +1,8 @@
 /**
  * Builds the whole content pack of each language from content/<language>/ (format: content/README.md)
  * without a database, exactly as the server builds it at start: word lists, grammar units, sentences
- * with their word mapping and wrong options, and conjugation tables. Prints the counts per level and
+ * with their word mapping and wrong options, conjugation tables, texts, dialogues, find-the-mistake
+ * texts, writing tasks and phonics lessons. Prints the counts per level and
  * every error with its file and line.
  *
  *   npm run content:check                 (both languages)
@@ -32,9 +33,11 @@ for (const language of languages.length ? languages : (["fr", "de"] as LanguageC
     continue;
   }
   for (const row of packSummary(pack)) {
-    if (row.words + row.units + row.sentences + row.tables === 0) continue;
-    console.log(`${row.level}: ${row.words} words, ${row.units} units (${row.grammarTargets} targets), ${row.sentences} sentences (${row.targets} word targets), ${row.tables} tables`);
+    if (row.words + row.units + row.sentences + row.tables + row.texts + row.dialogues + row.errorfix + row.writing === 0) continue;
+    const more = [["texts", row.texts], ["dialogues", row.dialogues], ["find-the-mistake", row.errorfix], ["writing tasks", row.writing]].filter(([, n]) => n).map(([name, n]) => `${n} ${name}`);
+    console.log(`${row.level}: ${row.words} words, ${row.units} units (${row.grammarTargets} targets), ${row.sentences} sentences (${row.targets} word targets), ${row.tables} tables${more.length ? `, ${more.join(", ")}` : ""}`);
   }
+  if (pack.phonics.length) console.log(`phonics: ${pack.phonics.length} lessons`);
   show("Errors", pack.errors);
   if (args.includes("--warnings")) show("Warnings", pack.warnings);
   else if (pack.warnings.length) console.log(`\n${pack.warnings.length} warnings (--warnings to list them)`);

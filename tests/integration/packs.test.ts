@@ -30,7 +30,8 @@ describe("content packs", () => {
     const level = report.levels[0];
     expect(level.rejected).toEqual([]);
     expect(level.skipped).toEqual([]);
-    expect(level.added).toMatchObject({ units: 2, words: 40, tables: 12, sentences: 13 });
+    expect(level.added).toMatchObject({ units: 2, words: 40, tables: 12, sentences: 13, texts: 1, dialogues: 1, "find-the-mistake": 1 });
+    expect(report.levels[1]).toMatchObject({ level: "phonics", added: { "phonics lessons": 1 }, rejected: [] });
 
     const word = await testDb.word.findFirstOrThrow({ where: { language: "fr", code: "voiture" } });
     expect(word.status).toBe("published");
@@ -44,6 +45,16 @@ describe("content packs", () => {
     const shared = await testDb.sentence.findFirstOrThrow({ where: { text: "La maison est petite." }, include: { targets: true } });
     expect(shared.targets).toHaveLength(2);
     expect(await testDb.formException.count({ where: { word: { code: "être" }, surface: "sont" } })).toBe(1);
+    // Texts, dialogues, find the mistake and phonics come in through their importers and are published too.
+    const text = await testDb.text.findFirstOrThrow({ where: { code: "fr-a1-t001" }, include: { questions: true } });
+    expect(text).toMatchObject({ status: "published", band: 1, kind: "dialogue", word_count: 37 });
+    expect(text.questions).toHaveLength(8);
+    expect(text.questions.every((question) => question.status === "published")).toBe(true);
+    const textSentences = await testDb.sentence.findMany({ where: { id: { in: text.sentence_ids } } });
+    expect(textSentences.every((sentence) => sentence.status === "published")).toBe(true);
+    expect(await testDb.dialogue.findFirstOrThrow({ where: { code: "fr-a1-d001" } })).toMatchObject({ status: "published" });
+    expect(await testDb.errorfixItem.findFirstOrThrow({ where: { language: "fr" } })).toMatchObject({ status: "published", unit_codes: ["fr-a1-etre"] });
+    expect(await testDb.phonicsLesson.findFirstOrThrow({ where: { language: "fr" } })).toMatchObject({ status: "published", sound_label: "u و ou", order_no: 1 });
     const batches = await testDb.importBatch.findMany({ where: { prompt_version: PACK_VERSION } });
     expect(batches.every((batch) => batch.state === "reviewed")).toBe(true);
     expect(report.published).toBeGreaterThan(0);
@@ -53,7 +64,8 @@ describe("content packs", () => {
     await loadPack(pack());
     const words = await testDb.word.count();
     const again = await loadPack(pack());
-    expect(again.levels[0].added).toEqual({});
+    expect(again.levels.map((item) => item.added)).toEqual([{}, {}]);
+    expect(await testDb.text.count()).toBe(1);
     expect(await testDb.word.count()).toBe(words);
 
     const chien = await testDb.word.findFirstOrThrow({ where: { code: "chien" } });

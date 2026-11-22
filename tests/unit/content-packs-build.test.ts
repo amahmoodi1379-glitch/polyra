@@ -3,6 +3,7 @@ import { standardTable } from "@/server/content/conjugation-check";
 import { Analyzer } from "@/server/content/packs/analyze";
 import { buildPack } from "@/server/content/packs/build";
 import { buildGrammar } from "@/server/content/packs/grammar";
+import { buildItems, itemSettings } from "@/server/content/packs/items";
 import { germanAdjectiveForms, Morph } from "@/server/content/packs/morph";
 import { buildSentences } from "@/server/content/packs/sentences";
 import { buildTables } from "@/server/content/packs/tables";
@@ -158,6 +159,70 @@ describe("grammar units of a pack", () => {
     const built = buildGrammar(analyzer, [{ file: "u.txt", text }], "A1");
     const lines = built.errors.map((item) => `${item.line}: ${item.text}`);
     expect(lines).toEqual(expect.arrayContaining([expect.stringMatching(/^3: unknown header line/), expect.stringMatching(/^1: missing header «rule:»/), expect.stringMatching(/^7: d: needs three wrong options/)]));
+  });
+});
+
+describe("texts, dialogues, find the mistake, writing and phonics of a pack", () => {
+  const json = (file: string, value: unknown) => ({ file, text: JSON.stringify(value, null, 2) });
+  const none = { texts: [], dialogues: [], errorfix: [], writing: [] };
+  const cards = () => pack.words.filter((item) => !item.word.no_card).sort((a, b) => a.order - b.order);
+
+  it("maps the words of every sentence and keeps the rest of the record", () => {
+    const text = level.texts[0];
+    expect(text).toMatchObject({ code: "fr-a1-t001", band: 1, tierWords: 40, length: [30, 40], placement_ok: false });
+    const sentences = text.record.sentences as { text: string; speaker: string; tokens: { code: string | null }[] }[];
+    expect(sentences[0]).toMatchObject({ speaker: "A", text: "Paul, vous avez une voiture ?" });
+    expect(sentences[0].tokens.map((token) => token.code)).toEqual([null, "vous", "avoir", "un", "voiture"]);
+    expect(level.dialogues[0]).toMatchObject({ code: "fr-a1-d001", situation: expect.stringMatching(/ماری/) });
+    expect(level.dialogues[0].codes).toContain("chien");
+    expect(level.errorfix[0]).toMatchObject({ units: ["fr-a1-etre"], key: "je suis dans la maison et nous sommes dans la voiture." });
+    expect(pack.phonics[0]).toMatchObject({ label: "u و ou", kind: "contrast", order_no: 1 });
+  });
+
+  it("holds the first A1 texts to the first words, their kind and length, with the line of each mistake", () => {
+    const settings = itemSettings("fr", { "prompt.first_texts": [{ texts: 1, words: 12, length: [3, 40], kind: "dialogue" }] });
+    const text = {
+      code: "fr-a1-t009",
+      title: "Le chien",
+      kind: "voice_message",
+      band: 2,
+      sentences: [{ text: "Le chien mange le pain.", translation_fa: "سگ نان را می‌خورد." }],
+      question_sets: { reading: { A: [], B: [] }, listening: { A: [], B: [] } },
+    };
+    const built = buildItems(analyzerOf("fr", pack.words), { ...none, texts: [json("t.json", text)] }, "A1", settings, new Map(), cards());
+    const errors = built.errors.map((item) => `${item.line}: ${item.text}`);
+    expect(errors).toEqual(
+      expect.arrayContaining([
+        expect.stringMatching(/^\d+: fr-a1-t009: sentences\[0\]: «chien» .* is not among the first 12 words/),
+        expect.stringMatching(/band 2 is not a band of A1/),
+        expect.stringMatching(/the first A1 texts are of kind «dialogue»/),
+      ]),
+    );
+    expect(built.errors.find((item) => /chien/.test(item.text))!.line).toBe(8);
+    expect(built.texts).toEqual([]);
+  });
+
+  it("takes writing tasks only where the level has a word range", () => {
+    const task = {
+      prompt_fa: "درباره خانه‌ات بنویس.",
+      min_words: 10,
+      max_words: 40,
+      checklist_fa: ["خانه را توصیف کن.", "بگو چه چیزی را دوست داری.", "یک حیوان را نام ببر."],
+      useful_phrases: [
+        { text: "J'aime", translation_fa: "دوست دارم" },
+        { text: "la maison", translation_fa: "خانه" },
+        { text: "il y a", translation_fa: "هست" },
+        { text: "dans", translation_fa: "در" },
+      ],
+      model_answer: "J'aime la maison. La maison est petite et belle. Le chat est dans la maison.",
+      model_answer_fa: "خانه را دوست دارم. خانه کوچک و زیباست. گربه در خانه است.",
+    };
+    const analyzer = analyzerOf("fr", pack.words);
+    const withRange = buildItems(analyzer, { ...none, writing: [json("w.json", [task])] }, "A1", itemSettings("fr", { "prompt.writing_words": { A1: [10, 40] } }), new Map(), cards());
+    expect(withRange.errors).toEqual([]);
+    expect(withRange.writing[0]).toMatchObject({ key: "درباره خانه‌ات بنویس.", level: "A1" });
+    const without = buildItems(analyzer, { ...none, writing: [json("w.json", [task])] }, "A1", itemSettings("fr"), new Map(), cards());
+    expect(without.errors.map((item) => item.text).join()).toMatch(/writing tasks are for the levels with a word range/);
   });
 });
 

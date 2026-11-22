@@ -193,3 +193,61 @@ translations:
   level wins. Once a level has grammar, every tense of that level needs a unit.
 - Review cards (`review_card`) go to a verb whose forms in that tense leave its group's pattern and to the
   first verb of each regular group as its sample.
+
+## Texts, dialogues, find the mistake, writing, phonics: JSON files
+
+Written like the chatbots' answers in `prompts/v2/examples/` (P-T, P-D, P-E, P-WR, P-H) but **without
+`tokens`**: the builder maps every word of every sentence as it does for the sentence files, with the same
+rules (words of the lists only, of the item's level or lower; `{code}` after a word that it reads wrongly;
+names from `names.txt`). The importers' schemas and rules run in the checker too. The level comes from the
+folder (a `level` in the file must agree).
+
+| What | Where | A file holds |
+| --- | --- | --- |
+| Texts (PRD §7, P-T) | `content/<language>/texts/<LEVEL>/NNN-name.json` | one text |
+| Situational dialogues (PRD §8b.4, P-D) | `content/<language>/dialogues/<LEVEL>/NN-name.json` | one dialogue |
+| Find the mistake (PRD §8b.5, P-E) | `content/<language>/errorfix/<LEVEL>/NN-name.json` | a list of items |
+| Guided writing (PRD §8b.6, P-WR) | `content/<language>/writing/<LEVEL>/NN-name.json` | a list of tasks |
+| Phonics lessons (PRD §8, P-H) | `content/<language>/phonics/NN-name.json` | one lesson |
+
+A text, shortened (a sentence is `text`, `translation_fa`, and `speaker` in a conversation, `tts_text` when
+the machine voice should read something else):
+
+```json
+{
+  "code": "fr-a1-t001",
+  "title": "Au café",
+  "kind": "dialogue",
+  "band": 1,
+  "placement_ok": false,
+  "sentences": [
+    { "speaker": "A", "text": "Bonjour, un café, s'il vous plaît.", "translation_fa": "سلام، یک قهوه لطفاً." },
+    { "speaker": "B", "text": "Oui, monsieur.", "translation_fa": "بله، آقا." }
+  ],
+  "key_words": ["café"],
+  "question_sets": { "reading": { "A": [ … ], "B": [ … ] }, "listening": { "A": [ … ], "B": [ … ] } }
+}
+```
+
+- **Texts.** `band` is one of the level's bands (`prompt.text_level_bands`: A1 1, A2 1 and 2, B1 3, B2 4),
+  `kind` one of the band's kinds (`prompt.text_kinds`; a conversation has a speaker on every sentence), the
+  length in words that of the band (`prompt.text_bands`). The question rules are the import's (PRD §7.3,
+  §7.4): per track two sets A and B, the types each track and band allows, every answer pointing at the
+  text. `key_words` are codes of words of this text. **The first A1 texts** follow `prompt.first_texts` in
+  file order: texts 1–3 are dialogues of 30–40 words using only the first 40 card words of the teaching
+  order, texts 4–10 only the first 100, texts 11–20 only the first 200, none of them a placement text. Each
+  level has 4 placement texts (`placement_ok: true`, set A of each track with at least 4 questions).
+- **Dialogues.** `code`, `title_fa`, `situation_fa`, 5 to 8 `turns`, each a `line` (with `speaker`), three
+  `choices` (one right, two wrong in a way the situation shows), `correct` (0 to 2) and `why_fa`. An A1
+  dialogue uses only the first 200 card words.
+- **Find the mistake** (B1, B2). Each item: `marked_text` with 2 or 3 one-word mistakes as `{{wrong|right}}`,
+  `translation_fa`, `unit_codes` (grammar units of this level or lower that the mistakes practise) and one
+  `errors` entry `{ "why_fa": … }` per mistake. The corrected text is mapped.
+- **Writing** (B1, B2, the levels of `prompt.writing_words`). Each task as P-WR: `prompt_fa`, `min_words`,
+  `max_words` inside the level's range, 3–5 `checklist_fa`, 4–6 `useful_phrases`, `model_answer` within the
+  word range, `model_answer_fa`.
+- **Phonics.** One lesson per file in the order of the teacher's list (`phonics.lessons.<language>`): `kind`
+  (`contrast`, `rule`, `liaison`), `sound_label` (the list's label), `graphemes`, `tip_fa`, and the lists
+  of its kind (`example_words` with two `wrong_spellings` each, `minimal_pairs`, `liaison_sentences`).
+- Each item is loaded once: texts and dialogues by `code`, find-the-mistake items by their corrected text,
+  writing tasks by `prompt_fa`, phonics lessons by `sound_label`.

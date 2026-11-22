@@ -1,5 +1,5 @@
 import { t } from "@/i18n";
-import { writingRecord, type WritingRecord } from "@/schemas/speaking";
+import { writingRecord } from "@/schemas/speaking";
 import { db } from "@/server/db";
 import { appSetting } from "@/server/settings/read";
 import { problem, zodProblems, type Problem } from "../problems";
@@ -7,34 +7,17 @@ import { emptyRound } from "../report";
 import { allowedWords } from "./allowed";
 import { updateImported } from "./hand-edits";
 import { batchSize, example, labelOf, languageValues, lines, params, trace } from "./shared";
-import { nextLevel, openParams, unitLines, wordCount, type LevelNext } from "./targets";
+import { checkWriting, type Range } from "../practice-check";
+import { nextLevel, openParams, unitLines, type LevelNext } from "./targets";
 import type { ContentKind } from "./types";
 
 type WritingParams = { level: string; count: number };
-export type Range = [number, number];
+export type { Range };
 
 const editable = new Set(["draft", "needs_review"]);
-/** PRD §8b.6: 3 to 5 checklist items, 4 to 6 useful phrases. */
-const CHECKLIST: Range = [3, 5];
-const PHRASES: Range = [4, 6];
 const same = (text: string) => text.replace(/\s+/g, " ").trim();
 
-/** The rules of one task (PRD §8b.6, §13.3), for import and for the edit form. */
-export function checkWriting(task: Pick<WritingRecord, "min_words" | "max_words" | "checklist_fa" | "useful_phrases" | "model_answer">, range: Range) {
-  const problems: Problem[] = [];
-  if (task.min_words < range[0] || task.max_words > range[1] || task.min_words >= task.max_words) {
-    problems.push(problem("wordRange", { min: range[0], max: range[1] }));
-  }
-  if (task.checklist_fa.length < CHECKLIST[0]) problems.push(problem("tooFew", { field: "checklist_fa", min: CHECKLIST[0] }));
-  if (task.checklist_fa.length > CHECKLIST[1]) problems.push(problem("tooMany", { field: "checklist_fa", max: CHECKLIST[1] }));
-  if (task.useful_phrases.length < PHRASES[0]) problems.push(problem("tooFew", { field: "useful_phrases", min: PHRASES[0] }));
-  if (task.useful_phrases.length > PHRASES[1]) problems.push(problem("tooMany", { field: "useful_phrases", max: PHRASES[1] }));
-  const words = wordCount(task.model_answer);
-  if (words < task.min_words || words > task.max_words) {
-    problems.push(problem("modelLength", { count: words, min: task.min_words, max: task.max_words }));
-  }
-  return problems;
-}
+export { checkWriting };
 
 /** Word range of a level's writing tasks (PRD §8b.6), from the general settings. */
 export async function writingRange(level: string): Promise<Range> {

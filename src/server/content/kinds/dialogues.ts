@@ -16,6 +16,7 @@ import { anyHandEdited, handEdits, importOnto } from "./hand-edits";
 import { example, languageValues, lines, params, trace } from "./shared";
 import { nextLevel, openParams, unitLines, type LevelNext } from "./targets";
 import type { ContentKind, Tx } from "./types";
+import { DIALOGUE_A1_WORDS, DIALOGUE_CHOICES, DIALOGUE_TURNS } from "../practice-check";
 
 type DialogueParams = { level: string; code: string; situation: string };
 
@@ -36,11 +37,9 @@ async function storedTurns(tx: Tx, turns: unknown): Promise<TurnShape[]> {
     why_fa: turn.why_fa,
   }));
 }
-/** PRD §8b.4: 5 to 8 turns, three choices each. */
-const TURNS: [number, number] = [5, 8];
-const CHOICES = 3;
-/** An A1 dialogue uses the first 200 words of the teaching order (PRD §14.9). */
-const A1_WORDS = 200;
+const TURNS = DIALOGUE_TURNS;
+const CHOICES = DIALOGUE_CHOICES;
+const A1_WORDS = DIALOGUE_A1_WORDS;
 
 const same = (text: string) => fold(text).replace(/\s+/g, " ").trim();
 
