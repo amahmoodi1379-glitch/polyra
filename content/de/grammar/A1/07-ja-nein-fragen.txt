@@ -1,0 +1,66 @@
+code: de-a1-ja-nein-fragen
+title: سؤال بله و نه: فعل اول جمله
+scope: سؤالی که جوابش ja یا nein است، با فعل صرف‌شده در جای اول و فاعل بعد از آن (Wohnst du hier? – Ja.)؛ جواب «چرا» (doch) بعد از سؤال منفی در واحد خودش می‌آید.
+can_do: حالا می‌توانی بپرسی «اینجا زندگی می‌کنی؟» یا «ماشین داری؟» و جواب بله یا نه بدهی.
+rule: در سؤال بله و نه فعل اول جمله است و فاعل درست بعد از آن: Kommst du morgen?
+mistake: فارسی‌زبان‌ها سؤال را با همان ترتیب جمله فارسی می‌سازند («Du in Berlin wohnst?»)؛ درست: Wohnst du in Berlin? فعل هم باید با فاعل جور باشد: Wohnst du، نه «Wohnen du».
+lesson:
+در فارسی سؤال بله و نه فقط با لحن ساخته می‌شود: «فردا می‌آیی؟».
+در آلمانی فعل صرف‌شده به اول جمله می‌رود و فاعل درست بعد از آن می‌آید: Kommst du morgen?
+بقیه جمله همان‌جا که بود می‌ماند: Du wohnst in Berlin ← Wohnst du in Berlin?
+جواب کوتاه ja (بله) یا nein (نه) است و بعدش می‌توانی جمله کامل بگویی: Ja, ich wohne in Berlin.
+table:
+جمله خبری | سؤال بله و نه
+Du wohnst in Berlin. | Wohnst du in Berlin?
+Anna ist hier. | Ist Anna hier?
+Ihr habt Kinder. | Habt ihr Kinder?
+Sie kommen aus Iran. | Kommen Sie aus Iran?
+examples:
+Wohnst du in Berlin? – Ja. | در برلین زندگی می‌کنی؟ – بله.
+Ist Anna zu Hause? – Nein, sie ist in Köln. | آنا خانه است؟ – نه، در کلن است.
+Habt ihr Kinder? – Ja, wir haben ein Kind. | بچه دارید؟ – بله، یک بچه داریم.
+targets:
+[Wohnst] du in Berlin? | در برلین زندگی می‌کنی؟ | d: Wohnt, Wohne, Wohnen | hint: (wohnen)
+[Kommt] Anna morgen? | آنا فردا می‌آید؟ | d: Kommst, Kommen, Komme | hint: (kommen)
+[Ist] Paul zu Hause? | پاول خانه است؟ | d: Bist, Sind, Bin | hint: (sein)
+[Habt] ihr Kinder? | شما بچه دارید؟ | d: Haben, Hast, Hat | hint: (haben)
+[Sind] Sie Iraner? | شما ایرانی هستید؟ | d: Ist, Bist, Seid
+[Lernst] du Deutsch? | آلمانی یاد می‌گیری؟ | d: Lernt, Lerne, Lernen | hint: (lernen)
+[Trinkt] ihr Kaffee? | قهوه می‌نوشید؟ | d: Trinken, Trinkst, Trinke
+[Arbeitest] du heute? | امروز کار می‌کنی؟ | d: Arbeitst, Arbeitet, Arbeite | hint: (arbeiten)
+[Hast] du Geld? | پول داری؟ | d: Habst, Hat, Habe | hint: (haben)
+[Bist] du verheiratet? | متأهلی؟ | d: Ist, Bin, Seid | hint: (sein)
+[Spielen] die Kinder hier? | بچه‌ها اینجا بازی می‌کنند؟ | d: Spielt, Spielst, Spiele
+[Heißt] du Lena? | اسمت لناست؟ | d: Heißst, Heiße, Heißen
+[Kennst] du Max? | ماکس را می‌شناسی؟ | d: Kennt, Kenne, Kennen | hint: (kennen)
+[Verstehen] Sie das? | این را می‌فهمید؟ | d: Versteht, Verstehst, Verstehe
+[Brauchst] du Geld? | پول لازم داری؟ | d: Braucht, Brauche, Brauchen | hint: (brauchen)
+[Wohnt Anna in Köln]? | آنا در کلن زندگی می‌کند؟ | d: Anna in Köln wohnt, Anna wohnen in Köln, In Köln Anna wohnt
+[Kommst du heute]? | امروز می‌آیی؟ | d: Du heute kommst, Du kommen heute, Heute du kommst
+[Hast du ein Auto]? | ماشین داری؟ | d: Du ein Auto hast, Du haben ein Auto, Ein Auto du hast
+[Ist das Wasser gut]? | آب خوب است؟ | d: Das Wasser gut ist, Das Wasser sein gut, Gut das Wasser ist
+[Lernt ihr jetzt Englisch]? | الان انگلیسی یاد می‌گیرید؟ | d: Ihr jetzt Englisch lernt, Ihr lernen jetzt Englisch, Jetzt ihr lernt Englisch
+[Arbeitet Paul hier]? | پاول اینجا کار می‌کند؟ | d: Paul hier arbeitet, Paul arbeiten hier, Hier Paul arbeitet
+[Sind die Eltern zu Hause]? | پدر و مادر خانه‌اند؟ | d: Die Eltern zu Hause sind, Die Eltern sein zu Hause, Zu Hause die Eltern sind
+[Trinkst du Tee]? | چای می‌نوشی؟ | d: Du Tee trinkst, Du trinken Tee, Tee du trinkst
+[Kaufen wir Brot]? | نان می‌خریم؟ | d: Wir Brot kaufen, Wir kauft Brot, Brot wir kaufen
+[Bist du heute zu Hause]? | امروز خانه‌ای؟ | d: Du heute zu Hause bist, Du sein heute zu Hause, Heute du bist zu Hause
+[Wohnst] du hier? – Ja, ich [wohne] hier. | اینجا زندگی می‌کنی؟ – بله، اینجا زندگی می‌کنم. | d: Wohnt, Wohne, Wohnen / wohnst, wohnt, wohnen
+[Seid] ihr Freunde? – Ja, wir [sind] Freunde. | شما با هم دوستید؟ – بله، ما با هم دوستیم. | d: Sind, Ist, Bist / seid, ist, bin
+[Kommt] Max aus Wien? – Nein, er [kommt] aus Berlin. | ماکس اهل وین است؟ – نه، اهل برلین است. | d: Kommst, Kommen, Komme / kommen, kommst, komme
+[Habt] ihr ein Haus? – Ja, wir [haben] ein Haus. | شما خانه دارید؟ – بله، خانه داریم. | d: Haben, Hast, Hat / habt, hat, hast
+[Ist] Lena 20? – Nein, sie [ist] 22. | لنا بیست ساله است؟ – نه، بیست‌ودو ساله است. | d: Bist, Sind, Hat / sind, hat, bist
+[Lernen] Sie Deutsch? – Ja, ich [lerne] Deutsch. | شما آلمانی یاد می‌گیرید؟ – بله، آلمانی یاد می‌گیرم. | d: Lernt, Lernst, Lerne / lernen, lernst, lernt
+[Spielst] du heute? – Nein, ich [arbeite] heute. | امروز بازی می‌کنی؟ – نه، امروز کار می‌کنم. | d: Spielt, Spiele, Spielen / arbeitet, arbeitest, arbeiten
+transforms:
+Du wohnst in Berlin. => Wohnst du in Berlin? | سؤال بله و نه بساز.
+Anna ist zu Hause. => Ist Anna zu Hause? | سؤال بله و نه بساز.
+Ihr habt ein Auto. => Habt ihr ein Auto? | سؤال بله و نه بساز.
+Sie kommen aus Iran. => Kommen Sie aus Iran? | سؤال بله و نه بساز.
+Paul arbeitet heute. => Arbeitet Paul heute? | سؤال بله و نه بساز.
+translations:
+آلمانی یاد می‌گیری؟ => Lernst du Deutsch?
+شما (مؤدبانه) ایرانی هستید؟ => Sind Sie Iraner? ; Sind Sie Iranerin?
+پاول خانه است؟ => Ist Paul zu Hause?
+ماشین داری؟ => Hast du ein Auto?
+بچه‌ها اینجا بازی می‌کنند؟ => Spielen die Kinder hier?
