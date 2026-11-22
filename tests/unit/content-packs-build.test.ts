@@ -3,10 +3,10 @@ import { standardTable } from "@/server/content/conjugation-check";
 import { Analyzer } from "@/server/content/packs/analyze";
 import { buildPack } from "@/server/content/packs/build";
 import { buildGrammar } from "@/server/content/packs/grammar";
-import { Morph } from "@/server/content/packs/morph";
+import { germanAdjectiveForms, Morph } from "@/server/content/packs/morph";
 import { buildSentences } from "@/server/content/packs/sentences";
 import { buildTables } from "@/server/content/packs/tables";
-import { verbDistractors } from "@/server/content/packs/distractors";
+import { nearMeaning, verbDistractors } from "@/server/content/packs/distractors";
 import { checkWordPack, frequencyRanks, type PackWord } from "@/server/content/packs/words";
 import { appSettingDefaults } from "@/server/settings/app-catalog";
 
@@ -202,6 +202,37 @@ describe("conjugation tables of a pack", () => {
       "no grammar unit says «tables: Plusquamperfekt»: its tables have no unit",
     ]);
     expect(built.notes.map((item) => item.text)).toContain("no grammar unit says «tables: Konjunktiv I»: its tables have no unit (waits for the B2 grammar)");
+  });
+
+  it("keeps the e of «lecker», drops it in «teuer» and «dunkel»", () => {
+    const forms = (lemma: string) => germanAdjectiveForms(lemma).map((item) => item.form);
+    expect(forms("lecker")).toContain("leckeres");
+    expect(forms("teuer")).toContain("teures");
+    expect(forms("dunkel")).toContain("dunkles");
+  });
+
+  it("reads a German infinitive form next to wir, sie or Sie as finite, and never offers a near-synonym", () => {
+    const list = words("de", [
+      "wir\tpron\t\t\tما\tما\tfunction\tno_card:1",
+      "was\tpron\t\t\tچه\tچه\tfunction\tno_card:1",
+      "Sie\tpron\t\t\tشما (رسمی)\tشما رسمی\tfunction\tno_card:1",
+      "ich\tpron\t\t\tمن\tمن\tfunction\tno_card:1",
+      "möchten\tverb\t\t\tخواستن (مؤدبانه)، میل داشتن\tخواستن مؤدبانه\tfunction",
+      "wollen\tverb\t\t\tخواستن\tخواستن\tfunction",
+      "trinken\tverb\t\t\tنوشیدن\tنوشیدن\tdrink",
+      "kaufen\tverb\t\t\tخریدن\tخریدن\tshopping",
+      "einkaufen\tverb\t\t\tخرید کردن\tخرید کردن\tshopping",
+      "bezahlen\tverb\t\t\tپرداختن\tپرداختن\tshopping",
+      "kosten\tverb\t\t\tقیمت داشتن\tقیمت داشتن\tshopping",
+      "verkaufen\tverb\t\t\tفروختن\tفروختن\tshopping",
+    ]);
+    const out = buildSentences(analyzerOf("de", list), [{ file: "s.txt", text: "# möchten\nWas [möchten] Sie trinken? | چه میل دارید بنوشید؟\n# kaufen\nIch möchte [kaufen]. | می‌خواهم بخرم." }], "A1", new Set(list));
+    expect(out.errors).toEqual([]);
+    expect(out.records[0].targets[0]).toMatchObject({ distractors: ["möchte", "möchtest", "möchtet"], hint: "(möchten)" });
+    expect(out.records[1].targets[0].distractors).not.toContain("einkaufen");
+    expect(nearMeaning("خواستن (مؤدبانه)، میل داشتن", "خواستن")).toBe(true);
+    expect(nearMeaning("دوست داشتن", "خیلی دوست داشتن")).toBe(true);
+    expect(nearMeaning("خریدن", "فروختن")).toBe(false);
   });
 
   it("writes German in today's spelling and makes the verbs Morphy lacks from their parts", () => {

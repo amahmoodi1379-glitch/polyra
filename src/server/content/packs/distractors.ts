@@ -114,6 +114,24 @@ export function phraseDistractors(morph: Morph, words: PackWord[], target: PackW
   return [];
 }
 
+/** Pieces of a Persian meaning, without the notes in brackets: «خواستن (مؤدبانه)، میل داشتن» → خواستن, میل داشتن. */
+const meaningPieces = (meaning: string) =>
+  meaning
+    .replace(/\([^)]*\)/gu, " ")
+    .split(/[،,;؛]/u)
+    .map((piece) => piece.replace(/[\s\u200c]+/gu, " ").trim())
+    .filter(Boolean);
+
+/**
+ * Two meanings that are near enough for both words to fit the gap: one piece the same as, or inside,
+ * a piece of the other (دوست داشتن, خیلی دوست داشتن), or an infinitive and its compound (خریدن, خرید کردن).
+ */
+export function nearMeaning(a: string, b: string) {
+  const inside = (x: string, y: string) => ` ${x} `.includes(` ${y} `);
+  const stem = (x: string, y: string) => !x.includes(" ") && x.endsWith("ن") && y.split(" ")[0] === x.slice(0, -1);
+  return meaningPieces(a).some((x) => meaningPieces(b).some((y) => inside(x, y) || inside(y, x) || stem(x, y) || stem(y, x)));
+}
+
 const hash = (text: string) => {
   let h = 2166136261;
   for (let i = 0; i < text.length; i++) h = Math.imul(h ^ text.charCodeAt(i), 16777619);
@@ -127,8 +145,9 @@ export type GapContext = {
   sentence: string;
   /** Words of the sentence (they are never wrong options). */
   used: Set<PackWord>;
-  /** The token right before the gap. */
+  /** The tokens right before and after the gap. */
   before: string | null;
+  after?: string | null;
   /** Is the gap the first word of the sentence (a capital)? */
   first: boolean;
   /** The order a learner meets words in: candidates met before the target come first. */
@@ -173,7 +192,9 @@ function matchingForm(morph: Morph, language: string, target: PackWord, surface:
 export function autoDistractors(morph: Morph, words: PackWord[], target: PackWord, surface: string, context: GapContext): { options: string[]; hint: string | null } | { error: string } {
   const language = morph.language;
   const word = target.word;
-  if (word.pos === "verb" && fold(surface) !== fold(word.lemma)) {
+  // German wir/sie/Sie forms are the infinitive: next to such a pronoun the gap is finite (Wir [haben] …, Was [möchten] Sie …).
+  const finiteInfinitive = language === "de" && [context.before, context.after].some((token) => token !== null && token !== undefined && /^(wir|sie)$/u.test(fold(token)));
+  if (word.pos === "verb" && (fold(surface) !== fold(word.lemma) || finiteInfinitive)) {
     const options = verbDistractors(language, word.lemma, surface, undefined, context.before ? isAuxiliary(morph, context.before) : false);
     if (options.length < 3) return { error: `cannot make three other forms of «${word.lemma}» for «${surface}»: write d: a, b, c` };
     return { options, hint: `(${bareLemma(word.lemma)})` };
@@ -192,6 +213,7 @@ export function autoDistractors(morph: Morph, words: PackWord[], target: PackWor
     if (item === target || other.pos !== word.pos || other.no_card || !isCardRegister(other.register)) continue;
     if (levelRank(item.level) > levelRank(context.level) || context.used.has(item)) continue;
     if (other.concept_fa === word.concept_fa || fold(other.lemma) === fold(word.lemma) || homophones.has(fold(other.lemma)) || other.homophones.map(fold).includes(fold(word.lemma))) continue;
+    if (nearMeaning(other.meaning_fa, word.meaning_fa)) continue;
     if (word.pos === "noun" && other.gender !== word.gender) continue;
     if (word.pos === "phrase" && other.pos !== "phrase") continue;
     let form = matchingForm(morph, language, target, surface, item);

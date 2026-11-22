@@ -77,7 +77,9 @@ const ENDINGS = ["", "e", "en", "em", "er", "es"];
 
 function germanStem(lemma: string) {
   if (lemma === "hoch") return "hoh";
-  if (/[^aeiouäöü](el|er)$/.test(lemma) && lemma.length > 4) return lemma.slice(0, -2) + lemma.slice(-1); // dunkel → dunkl, teuer → teur
+  // -el always drops its e (dunkel → dunkle); -er only after a diphthong (teuer → teure, sauer → saure), not lecker → leckere.
+  if (/[^aeiouäöü]el$/.test(lemma) && lemma.length > 4) return lemma.slice(0, -2) + "l";
+  if (/(au|eu|äu|ei)er$/.test(lemma)) return lemma.slice(0, -2) + "r";
   if (lemma.endsWith("e")) return lemma.slice(0, -1);
   return lemma;
 }
