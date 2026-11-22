@@ -1,0 +1,761 @@
+// German A1 sentences for the card words 1–100 of content/de/words/A1.tsv, in teaching order.
+// The first 30 card words count as known among themselves; later words use only words taught before them.
+// Colloquial words (Mama, Papa) have no sentences of their own (PRD §5.4).
+
+# hallo
+[Hallo], ich bin Anna. | سلام، من آنا هستم.
+[Hallo], wie heißt du? | سلام، اسمت چیست؟
+[Hallo], Herr Müller! | سلام آقای مولر!
+[Hallo], ich heiße Max. | سلام، اسم من ماکس است.
+[Hallo] Lena, wo wohnst du? | سلام لنا، کجا زندگی می‌کنی؟
+[Hallo], sprichst du Deutsch? | سلام، آلمانی حرف می‌زنی؟
+
+# ja
+[Ja], ich bin Anna. | بله، من آنا هستم.
+[Ja], ich spreche Deutsch. | آره، من آلمانی حرف می‌زنم.
+[Ja], das ist mein Kind. | بله، این بچه‌ی من است.
+[Ja], ich wohne in Hamburg. | بله، من در هامبورگ زندگی می‌کنم.
+[Ja], sehr gut! | آره، خیلی خوب!
+[Ja], danke. | بله، ممنون.
+
+# nein
+[Nein], ich bin nicht Anna. | نه، من آنا نیستم.
+[Nein], ich spreche kein Deutsch. | نه، من آلمانی بلد نیستم.
+[Nein], das ist nicht mein Kind. | نه، این بچه‌ی من نیست.
+[Nein], ich wohne nicht in Berlin. | نه، من در برلین زندگی نمی‌کنم.
+[Nein], er kommt aus Wien. | نه، او اهل وین است.
+[Nein], danke. | نه، ممنون.
+
+# sein
+Ich [bin] Anna. | من آنا هستم.
+Wo [bist] du? | کجایی؟
+Das [ist] Herr Müller. | این آقای مولر است.
+Wir [sind] in Berlin. | ما در برلین هستیم.
+Woher [seid] ihr? | شما اهل کجایید؟
+Die Kinder [sind] in der Stadt. | بچه‌ها در شهر هستند.
+Mein Name [ist] Max. | اسم من ماکس است.
+
+# haben
+Ich [habe] ein Kind. | من یک بچه دارم.
+Max [hat] eine Frau und ein Kind. | ماکس یک زن و یک بچه دارد.
+Wir [haben] keine Kinder. | ما بچه نداریم.
+Du [hast] ein Kind, Anna? | آنا، تو بچه داری؟
+Sie{Sie-3} [haben] ein Kind, Herr Weber? | آقای وبر، شما بچه دارید؟
+
+# heißen
+Ich [heiße] Anna. | اسم من آنا است.
+Wie [heißt] du? | اسمت چیست؟
+Wie [heißen] Sie? | اسم شما چیست؟
+Das Kind [heißt] Mia. | اسم بچه میا است.
+Der Mann [heißt] Paul. | اسم آن مرد پاول است.
+Wir [heißen] Max und Lena. | اسم ما ماکس و لنا است.
+
+# Name
+Mein [Name] ist Anna. | اسم من آنا است. | d: Mann, Herr, Junge
+Wie ist Ihr [Name]? | اسم شما چیست؟ | d: Mann, Herr, Junge
+Ist das dein [Name]? | این اسم توست؟ | d: Mann, Herr, Freund
+Max ist ein guter [Name]. | ماکس اسم خوبی است. | d: Mann, Herr, Junge
+Sein [Name] ist Paul. | اسم او پاول است.
+Ihr{Ihr-det} [Name], bitte! | اسمتان، لطفاً! | d: Mann, Herr, Junge
+
+# Mann
+Wer ist der [Mann]? | آن مرد کیست؟ | d: Junge, Freund, Vater
+Der [Mann] kommt aus Berlin. | آن مرد اهل برلین است. | d: Junge, Freund, Vater
+Der [Mann] spricht Deutsch. | آن مرد آلمانی حرف می‌زند. | d: Junge, Freund, Vater
+Das ist ein [Mann] aus Wien. | این مردی از وین است. | d: Junge, Freund, Vater
+Der [Mann] wohnt in Köln. | آن مرد در کلن زندگی می‌کند. | d: Junge, Freund, Vater
+Die [Männer] sind in der Stadt. | مردها در شهر هستند. | d: Jungen, Freunde, Väter
+
+# Frau
+Die [Frau] heißt Anna. | اسم آن زن آنا است. | d: Mutter, Tochter, Schwester
+Wer ist die [Frau]? | آن خانم کیست؟ | d: Mutter, Tochter, Schwester
+Das ist [Frau] Schmidt. | این خانم اشمیت است. | d: Mutter, Tochter, Schwester
+Die [Frau] spricht sehr gut Deutsch. | آن زن خیلی خوب آلمانی حرف می‌زند. | d: Mutter, Tochter, Schwester
+Hallo, [Frau] Weber! | سلام خانم وبر! | d: Mutter, Tochter, Schwester
+Die [Frauen] wohnen in Wien. | آن زن‌ها در وین زندگی می‌کنند. | d: Mütter, Töchter, Schwestern
+Die [Frau] kommt aus dem Iran. | آن زن اهل ایران است. | d: Mutter, Tochter, Schwester
+
+# Kind
+Wo ist das [Kind]? | بچه کجاست؟
+Das [Kind] spricht sehr gut Deutsch. | این بچه خیلی خوب آلمانی حرف می‌زند. | d: Englisch, Geschenk, Alter
+Wer ist das [Kind]? | این بچه کیست؟ | d: Deutsch, Englisch, Geschenk
+Mein [Kind] heißt Leon. | اسم بچه‌ی من لئون است.
+Die [Kinder] kommen aus dem Iran. | بچه‌ها اهل ایران هستند. | d: Geschenke, Autos, Bücher
+Ich habe ein [Kind]. | من یک بچه دارم.
+
+# Herr
+Das ist [Herr] Weber. | این آقای وبر است. | d: Mann, Junge, Freund
+[Herr] Müller kommt aus Köln. | آقای مولر اهل کلن است. | d: Mann, Junge, Freund
+Wo wohnt [Herr] Schmidt? | آقای اشمیت کجا زندگی می‌کند؟ | d: Mann, Junge, Freund
+Hallo, [Herr] Becker! | سلام آقای بکر! | d: Mann, Junge, Freund
+Wer ist der [Herr]? | آن آقا کیست؟ | d: Junge, Freund, Vater
+[Herr] Wagner spricht sehr gut Deutsch. | آقای واگنر خیلی خوب آلمانی حرف می‌زند. | d: Mann, Junge, Freund
+
+# wer
+[Wer] ist das? | این کیست؟
+[Wer] spricht Deutsch? | کی آلمانی حرف می‌زند؟
+[Wer] wohnt in Berlin? | چه کسی در برلین زندگی می‌کند؟
+[Wer] ist Herr Weber? | آقای وبر کیست؟
+[Wer] kommt aus dem Iran? | کی اهل ایران است؟
+[Wer] sind Sie? | شما کی هستید؟
+
+# was
+[Was] ist das? | این چیست؟
+[Was] heißt „Kind“? | «Kind» یعنی چه؟
+[Was]? Du kommst aus Teheran? | چی؟ تو اهل تهرانی؟
+[Was] spricht man in Österreich? | در اتریش به چه زبانی حرف می‌زنند؟
+[Was]? Das ist dein Kind? | چی؟ این بچه‌ی توست؟
+
+# wo
+[Wo] wohnst du? | کجا زندگی می‌کنی؟
+[Wo] ist Herr Weber? | آقای وبر کجاست؟
+[Wo] wohnen Sie? | شما کجا زندگی می‌کنید؟
+[Wo] spricht man Deutsch? | کجا آلمانی حرف می‌زنند؟
+[Wo] seid ihr? | شما کجایید؟
+Und [wo] ist Anna? | و آنا کجاست؟
+
+# wie
+[Wie] heißt der Mann? | اسم آن مرد چیست؟
+[Wie] ist die Stadt? | شهر چطور است؟
+[Wie] ist Ihr Name? | اسم شما چیست؟
+Und [wie] heißt das Kind? | و اسم بچه چیست؟
+[Wie] gut sprichst du Deutsch? | چقدر خوب آلمانی حرف می‌زنی؟
+[Wie] heißt das Land? | اسم این کشور چیست؟
+
+# woher
+[Woher] kommst du? | اهل کجایی؟
+[Woher] kommen Sie? | شما اهل کجا هستید؟
+[Woher] kommt der Mann? | آن مرد اهل کجاست؟
+[Woher] kommt Frau Schmidt? | خانم اشمیت اهل کجاست؟
+Und [woher] kommt das Kind? | و این بچه اهل کجاست؟
+[Woher] seid ihr? | شما اهل کجایید؟
+
+# kommen
+Ich [komme] aus dem Iran. | من اهل ایران هستم.
+Du [kommst] aus Wien? | تو اهل وینی؟
+Er [kommt] aus Köln. | او اهل کلن است.
+Wir [kommen] aus Teheran. | ما اهل تهران هستیم.
+Ihr [kommt] aus der Schweiz? | شما اهل سوئیس هستید؟
+Herr und Frau Weber [kommen] aus Hamburg. | آقا و خانم وبر اهل هامبورگ هستند.
+
+# aus
+Ich komme [aus] Deutschland. | من اهل آلمان هستم.
+Anna kommt [aus] Wien. | آنا اهل وین است.
+Kommst du [aus] dem Iran? | اهل ایرانی؟
+Der Mann ist [aus] Köln. | آن مرد اهل کلن است.
+Wir sind [aus] Teheran. | ما اهل تهرانیم.
+Herr Weber kommt [aus] der Schweiz. | آقای وبر اهل سوئیس است.
+
+# wohnen
+Ich [wohne] in Berlin. | من در برلین زندگی می‌کنم.
+Du [wohnst] in Hamburg? | تو در هامبورگ زندگی می‌کنی؟
+Anna [wohnt] in Wien. | آنا در وین زندگی می‌کند.
+Wir [wohnen] in Teheran. | ما در تهران زندگی می‌کنیم.
+Wo [wohnt] ihr? | شما کجا زندگی می‌کنید؟
+Herr und Frau Müller [wohnen] in Köln. | آقا و خانم مولر در کلن زندگی می‌کنند.
+
+# in
+Wir sind [in] Hamburg. | ما در هامبورگ هستیم.
+Anna wohnt [in] München. | آنا در مونیخ زندگی می‌کند.
+Man spricht Deutsch [in] Österreich. | در اتریش آلمانی حرف می‌زنند.
+Das Kind ist [in] der Stadt. | بچه در شهر است.
+Wohnst du [in] Köln? | در کلن زندگی می‌کنی؟
+Herr Weber wohnt [in] der Schweiz. | آقای وبر در سوئیس زندگی می‌کند.
+
+# danke
+[Danke], Herr Weber! | ممنون، آقای وبر!
+Ja, [danke]. | بله، ممنون.
+Nein, [danke]. | نه، ممنون.
+[Danke], das ist sehr gut. | ممنون، خیلی خوب است.
+Sehr gut, [danke]! | خیلی خوب، ممنون!
+[Danke], Frau Schmidt! | ممنون، خانم اشمیت!
+
+# bitte
+Wie heißen Sie, [bitte]? | ببخشید، اسم شما چیست؟
+Ihr{Ihr-det} Name, [bitte]! | اسمتان، لطفاً!
+Sprechen Sie [bitte] Deutsch. | لطفاً آلمانی حرف بزنید.
+[Bitte], Herr Weber. | خواهش می‌کنم، آقای وبر. | d: Hallo, Danke, Tschüss
+Kommen Sie [bitte]! | لطفاً بیایید!
+Ja, [bitte]. | بله، لطفاً.
+
+# Deutsch
+Ich spreche [Deutsch]. | من آلمانی حرف می‌زنم.
+Sprichst du [Deutsch]? | آلمانی حرف می‌زنی؟
+Anna spricht sehr gut [Deutsch]. | آنا خیلی خوب آلمانی حرف می‌زند.
+In Österreich spricht man [Deutsch]. | در اتریش آلمانی حرف می‌زنند.
+Mein [Deutsch] ist nicht gut. | آلمانی من خوب نیست.
+Herr Weber spricht kein [Deutsch]. | آقای وبر آلمانی بلد نیست.
+
+# sprechen
+Ich [spreche] sehr gut Deutsch. | من خیلی خوب آلمانی حرف می‌زنم.
+Du [sprichst] sehr gut Deutsch! | تو خیلی خوب آلمانی حرف می‌زنی!
+Das Kind [spricht] kein Deutsch. | این بچه آلمانی بلد نیست.
+Wir [sprechen] nicht sehr gut Deutsch. | ما خیلی خوب آلمانی حرف نمی‌زنیم.
+Ihr [sprecht] sehr gut Deutsch. | شما خیلی خوب آلمانی حرف می‌زنید.
+Frau Schmidt, [sprechen] Sie Deutsch? | خانم اشمیت، شما آلمانی حرف می‌زنید؟
+
+# Sprache
+Wie heißt die [Sprache]? | اسم این زبان چیست؟
+Ich spreche die [Sprache] nicht. | من این زبان را بلد نیستم.
+Deutsch{Deutsch} ist die [Sprache] von Österreich. | آلمانی زبان اتریش است.
+Deutsch{Deutsch} ist eine gute [Sprache]. | آلمانی زبان خوبی است.
+Das Kind spricht die [Sprache] sehr gut. | این بچه آن زبان را خیلی خوب حرف می‌زند.
+
+# Land
+Wie heißt das [Land]? | اسم این کشور چیست؟
+Der Iran ist mein [Land]. | ایران کشور من است.
+In dem [Land] spricht man Deutsch. | در آن کشور آلمانی حرف می‌زنند.
+Wo ist das [Land]? | این کشور کجاست؟
+Österreich ist ein [Land] und Wien ist eine Stadt. | اتریش یک کشور است و وین یک شهر.
+
+# Stadt
+Köln ist eine [Stadt] in Deutschland. | کلن شهری در آلمان است.
+Ich wohne in der [Stadt]. | من در شهر زندگی می‌کنم.
+Meine [Stadt] heißt Isfahan. | اسم شهر من اصفهان است.
+Wie heißt die [Stadt]? | اسم این شهر چیست؟
+Das ist meine [Stadt]. | این شهر من است.
+
+# gut
+Das ist [gut]. | این خوب است. | d: schlecht, alt, neu
+Sehr [gut]! | خیلی خوب!
+Anna spricht [gut] Deutsch. | آنا خوب آلمانی حرف می‌زند. | d: schlecht, schwer, langweilig
+Das ist eine [gute] Stadt. | این شهر خوبی است.
+Danke, [gut]. | ممنون، خوبم.
+
+# sehr
+Das ist [sehr] gut. | این خیلی خوب است. | d: mehr, nur, noch
+Danke [sehr]! | خیلی ممنون! | d: mehr, nur, noch
+Bitte [sehr]! | خواهش می‌کنم! | d: mehr, nur, noch
+Ich spreche nicht [sehr] gut Deutsch. | من خیلی خوب آلمانی حرف نمی‌زنم. | d: mehr, nur, noch
+Die Stadt ist [sehr] gut. | شهر خیلی خوب است. | d: mehr, nur, noch
+
+# auch
+Ich komme [auch] aus Berlin. | من هم اهل برلین هستم.
+Anna spricht [auch] Deutsch. | آنا هم آلمانی حرف می‌زند.
+Ich heiße [auch] Max! | اسم من هم ماکس است!
+Wir wohnen [auch] in Köln. | ما هم در کلن زندگی می‌کنیم.
+Das ist [auch] gut. | این هم خوب است.
+
+# hier
+Ich bin [hier]. | من اینجا هستم. | d: zu Hause, dort, links
+Anna wohnt [hier]. | آنا اینجا زندگی می‌کند. | d: dort, links, rechts
+[Hier] spricht man Deutsch. | اینجا آلمانی حرف می‌زنند. | d: Dort, Links, Rechts
+Wer wohnt [hier]? | کی اینجا زندگی می‌کند؟
+Herr Weber ist nicht [hier]. | آقای وبر اینجا نیست.
+Wohnen Sie [hier]? | شما اینجا زندگی می‌کنید؟
+
+# dort
+Anna wohnt [dort]. | آنا آنجا زندگی می‌کند.
+Wer ist [dort]? | چه کسی آنجاست؟
+[Dort] ist Herr Weber. | آقای وبر آنجاست.
+Ich wohne hier, und du wohnst [dort]. | من اینجا زندگی می‌کنم و تو آنجا. | d: nach Hause, links, geradeaus
+Was spricht man [dort]? | آنجا به چه زبانی حرف می‌زنند؟ | d: hier, links, geradeaus
+Ist das Kind [dort]? | بچه آنجاست؟
+
+# da
+Ist Herr Weber [da]? | آقای وبر هست؟ | ok: hier | d: links, rechts, geradeaus
+Ich bin [da]! | من اینجام! | ok: hier | d: links, rechts, geradeaus
+Wer ist [da]? | کیه؟ کی آنجاست؟ | ok: dort | d: links, rechts, geradeaus
+[Da] ist das Kind! | بچه آنجاست! | ok: Dort | d: Links, Rechts, Geradeaus
+Ist Anna [da]? | آنا هست؟ | ok: hier | d: links, rechts, geradeaus
+
+# Haus
+Das [Haus] ist hier. | خانه اینجاست.
+Wo ist das [Haus]? | خانه کجاست؟
+Wir wohnen in einem [Haus]. | ما در یک خانه زندگی می‌کنیم.
+Das ist mein [Haus]. | این خانه‌ی من است.
+Wer wohnt in dem [Haus]? | چه کسی در آن خانه زندگی می‌کند؟
+Herr Weber hat ein [Haus] in Wien. | آقای وبر در وین یک خانه دارد.
+
+# zu Hause
+Ich bin [zu Hause]. | من خانه هستم. | d: hier, dort, nach Hause
+Anna ist nicht [zu Hause]. | آنا خانه نیست. | d: hier, dort, nach Hause
+Ist Herr Weber [zu Hause]? | آقای وبر خانه است؟ | d: hier, dort, nach Hause
+Die Kinder sind [zu Hause]. | بچه‌ها خانه هستند. | d: hier, dort, nach Hause
+[Zu Hause] sprechen wir Deutsch. | ما در خانه آلمانی حرف می‌زنیم. | d: Hier, Dort, Nach Hause
+Wer ist [zu Hause]? | کی خانه است؟ | d: hier, dort, nach Hause
+
+# nach Hause
+Ich komme [nach Hause]. | دارم به خانه می‌آیم.
+Das Kind kommt [nach Hause]. | بچه به خانه می‌آید.
+Kommst du [nach Hause]? | به خانه می‌آیی؟
+Komm [nach Hause]! | بیا خانه!
+Herr und Frau Weber kommen [nach Hause]. | آقا و خانم وبر به خانه می‌آیند.
+
+# groß
+Das Haus ist [groß]. | خانه بزرگ است.
+Berlin ist eine [große] Stadt. | برلین شهر بزرگی است.
+Der Mann ist sehr [groß]. | آن مرد خیلی قدبلند است.
+Deutschland ist ein [großes] Land. | آلمان کشور بزرگی است.
+Wir haben ein [großes] Haus. | ما یک خانه‌ی بزرگ داریم. | d: kleines, neues, altes
+
+# klein
+Das Haus ist [klein]. | خانه کوچک است.
+Ich wohne in einer [kleinen] Stadt. | من در یک شهر کوچک زندگی می‌کنم.
+Das Kind ist sehr [klein]. | بچه خیلی کوچک است.
+Die Schweiz ist ein [kleines] Land. | سوئیس کشور کوچکی است.
+Herr Weber ist [klein]. | آقای وبر قدکوتاه است.
+
+# neu
+Das Haus ist [neu]. | خانه نو است.
+Ich bin [neu] hier. | من اینجا تازه‌واردم.
+Wir haben ein [neues] Haus. | ما یک خانه‌ی نو داریم.
+Herr Weber ist [neu] in der Stadt. | آقای وبر در این شهر تازه‌وارد است.
+Wer ist die [neue] Frau? | آن خانم جدید کیست؟
+
+# alt
+Das Haus ist sehr [alt]. | خانه خیلی قدیمی است.
+Der Mann ist [alt]. | آن مرد پیر است.
+Wie [alt] bist du? | چند سالت است؟
+Wie [alt] ist das Kind? | بچه چند سالش است؟
+Köln ist eine [alte] Stadt. | کلن شهر قدیمی‌ای است.
+Wir wohnen in einem [alten] Haus. | ما در یک خانه‌ی قدیمی زندگی می‌کنیم.
+
+# jung
+Die Frau ist [jung]. | آن زن جوان است.
+Herr Weber ist sehr [jung]. | آقای وبر خیلی جوان است.
+Wer ist der [junge] Mann? | آن مرد جوان کیست؟
+Hier wohnt eine [junge] Frau. | اینجا یک زن جوان زندگی می‌کند.
+Der [junge] Mann kommt aus dem Iran. | آن مرد جوان اهل ایران است.
+
+# machen
+Was [machst] du? | چه کار می‌کنی؟
+Was [macht] Anna? | آنا چه کار می‌کند؟
+Was [machen] Sie hier? | شما اینجا چه کار می‌کنید؟
+Das [mache] ich. | این کار را من انجام می‌دهم.
+Was [macht] ihr hier? | شما اینجا چه کار می‌کنید؟
+Wir [machen] das zu Hause. | ما این کار را در خانه انجام می‌دهیم.
+
+# gehen
+Ich [gehe] nach Hause. | من به خانه می‌روم.
+Du [gehst] nach Hause? | تو داری می‌روی خانه؟
+Anna [geht] in die Stadt. | آنا به شهر می‌رود.
+Wir [gehen] zu Anna. | ما پیش آنا می‌رویم.
+Ihr [geht] in die Stadt? | شما به شهر می‌روید؟
+Die Kinder [gehen] nach Hause. | بچه‌ها به خانه می‌روند.
+
+# oder
+Bist du Anna [oder] Lena? | تو آنا هستی یا لنا؟ | d: aber, auch, mit
+Kommst du aus Köln [oder] aus Berlin? | اهل کلنی یا برلین؟ | d: aber, auch, mit
+Ist das Haus groß [oder] klein? | خانه بزرگ است یا کوچک؟ | d: aber, auch, mit
+Gehst du nach Hause [oder] in die Stadt? | می‌روی خانه یا شهر؟ | d: aber, auch, mit
+Ist der Mann alt [oder] jung? | آن مرد پیر است یا جوان؟ | d: aber, auch, mit
+Ja [oder] nein? | آره یا نه؟ | d: aber, auch, mit
+
+# aber
+Das Haus ist klein, [aber] gut. | خانه کوچک است، اما خوب است. | d: oder, mit, nach
+Ich komme aus dem Iran, [aber] ich wohne in Berlin. | من اهل ایران هستم، اما در برلین زندگی می‌کنم. | d: oder, mit, nach
+Die Stadt ist klein, [aber] sehr alt. | شهر کوچک است، اما خیلی قدیمی است. | d: oder, mit, nach
+Ich spreche Deutsch, [aber] nicht sehr gut. | من آلمانی حرف می‌زنم، اما نه خیلی خوب. | d: oder, mit, nach
+Ja, [aber] nicht hier. | آره، ولی نه اینجا. | d: oder, mit, nach
+
+# Freund
+Das ist mein [Freund] Max. | این دوستم ماکس است.
+Max ist ein [Freund] von mir. | ماکس یکی از دوستان من است.
+Mein [Freund] wohnt in Köln. | دوستم در کلن زندگی می‌کند.
+Wo ist dein [Freund]? | دوستت کجاست؟
+Ich gehe zu meinem [Freund]. | من پیش دوستم می‌روم.
+Max und Paul sind [Freunde]. | ماکس و پاول با هم دوست‌اند.
+
+# Freundin
+Anna ist eine [Freundin] von mir. | آنا یکی از دوستان من است.
+Lena geht zu ihrer{ihr-det} [Freundin]. | لنا پیش دوستش می‌رود.
+Sara und ihre{ihr-det} [Freundin] wohnen in Wien. | سارا و دوستش در وین زندگی می‌کنند.
+Mia ist eine gute [Freundin]. | میا دوست خوبی است.
+Die [Freundinnen] gehen in die Stadt. | آن دوست‌ها به شهر می‌روند.
+
+# lernen
+Ich [lerne] Deutsch. | من آلمانی یاد می‌گیرم.
+Was [lernst] du? | چه یاد می‌گیری؟
+Anna [lernt] Deutsch in Berlin. | آنا در برلین آلمانی یاد می‌گیرد.
+Wir [lernen] zu Hause Deutsch. | ما در خانه آلمانی یاد می‌گیریم. | d: schreiben, sprechen, buchstabieren
+Ihr [lernt] Deutsch, oder? | شما آلمانی یاد می‌گیرید، نه؟
+Die Kinder [lernen] Deutsch. | بچه‌ها آلمانی یاد می‌گیرند. | d: schreiben, sprechen, buchstabieren
+
+# Buch
+Das [Buch] ist neu. | کتاب نو است.
+Das ist mein [Buch]. | این کتاب من است.
+Wo ist das [Buch]? | کتاب کجاست؟
+Ich habe ein [Buch] aus Deutschland. | من یک کتاب از آلمان دارم.
+Die [Bücher] sind alt. | کتاب‌ها قدیمی هستند.
+Das ist ein gutes [Buch]. | این کتاب خوبی است.
+
+# lesen
+Ich [lese] ein Buch. | من یک کتاب می‌خوانم.
+Das Kind [liest] ein Buch. | بچه یک کتاب می‌خواند.
+Was [liest] du? | چه می‌خوانی؟
+Wir [lesen] zu Hause. | ما در خانه کتاب می‌خوانیم.
+Herr Weber [liest] ein altes Buch. | آقای وبر یک کتاب قدیمی می‌خواند.
+Was [lest] ihr? | شما چه می‌خوانید؟
+
+# schreiben
+Ich [schreibe] meinen Namen. | من اسمم را می‌نویسم.
+Wie [schreibt] man das? | این را چطور می‌نویسند؟
+Anna [schreibt] ein Buch. | آنا یک کتاب می‌نویسد.
+Was [schreibst] du? | چه می‌نویسی؟
+Die Kinder [schreiben] ihre{ihr-det} Namen. | بچه‌ها اسم‌هایشان را می‌نویسند.
+Bitte [schreiben] Sie Ihren Namen. | لطفاً اسمتان را بنویسید.
+
+# Wort
+Das [Wort] ist neu. | این کلمه جدید است.
+Was heißt das [Wort]? | این کلمه یعنی چه؟
+Wie schreibt man das [Wort]? | این کلمه را چطور می‌نویسند؟
+Ich lerne ein neues [Wort]. | من یک کلمه‌ی جدید یاد می‌گیرم.
+Wir lernen neue [Wörter]. | ما کلمه‌های جدید یاد می‌گیریم.
+
+# verstehen
+Ich [verstehe] das nicht. | من این را نمی‌فهمم.
+Du [verstehst] sehr gut Deutsch. | تو آلمانی را خیلی خوب می‌فهمی.
+Anna [versteht] das Wort nicht. | آنا این کلمه را نمی‌فهمد.
+Wir [verstehen] Herrn Weber nicht. | ما حرف آقای وبر را نمی‌فهمیم.
+Frau Schmidt, [verstehen] Sie mich? | خانم اشمیت، حرف من را می‌فهمید؟
+Ihr [versteht] das, oder? | شما این را می‌فهمید، نه؟
+
+# wissen
+Ich [weiß] das nicht. | من این را نمی‌دانم.
+Ich [weiß] nicht, wo Anna wohnt. | نمی‌دانم آنا کجا زندگی می‌کند.
+Woher [weißt] du das? | این را از کجا می‌دانی؟
+Herr Weber [weiß], wer das ist. | آقای وبر می‌داند این کیست.
+Wir [wissen] es nicht. | ما نمی‌دانیم.
+Frau Schmidt, [wissen] Sie, wo Max wohnt? | خانم اشمیت، می‌دانید ماکس کجا زندگی می‌کند؟
+
+# Tag
+Wie war dein [Tag]? | روزت چطور بود؟
+Das war ein guter [Tag]. | روز خوبی بود.
+Wir sind einen [Tag] in Wien. | ما یک روز در وین هستیم.
+Der [Tag] in Köln war sehr gut. | آن روز در کلن خیلی خوب بود.
+Ich bin einen [Tag] zu Hause. | من یک روز خانه هستم.
+
+# heute
+[Heute] bin ich zu Hause. | امروز خانه هستم.
+Was machst du [heute]? | امروز چه کار می‌کنی؟
+Anna kommt [heute]. | آنا امروز می‌آید.
+[Heute] lernen wir neue Wörter. | امروز کلمه‌های جدید یاد می‌گیریم.
+Ist Herr Weber [heute] hier? | آقای وبر امروز اینجاست؟
+Wir gehen [heute] in die Stadt. | امروز به شهر می‌رویم.
+
+# morgen
+[Morgen] gehe ich in die Stadt. | فردا به شهر می‌روم.
+Kommst du [morgen]? | فردا می‌آیی؟
+Anna ist [morgen] in Berlin. | آنا فردا در برلین است.
+Heute nicht, aber [morgen]. | امروز نه، ولی فردا.
+Ich gehe [morgen] zu Lena. | فردا پیش لنا می‌روم.
+
+# jetzt
+Ich gehe [jetzt] nach Hause. | من الان می‌روم خانه.
+Wo bist du [jetzt]? | الان کجایی؟
+[Jetzt] verstehe ich das. | حالا این را می‌فهمم.
+Anna wohnt [jetzt] in Wien. | آنا حالا در وین زندگی می‌کند.
+Was machen wir [jetzt]? | حالا چه کار کنیم؟
+Nicht morgen, [jetzt]! | فردا نه، الان!
+
+# essen
+Was [isst] du? | چه می‌خوری؟
+Wir [essen] jetzt. | ما الان غذا می‌خوریم.
+Anna [isst] heute bei uns. | آنا امروز پیش ما غذا می‌خورد.
+Das Kind [isst] nicht gut. | بچه خوب غذا نمی‌خورد.
+Wo [esst] ihr heute? | امروز کجا غذا می‌خورید؟
+Ich [esse] zu Hause. | من در خانه غذا می‌خورم.
+
+# trinken
+Was [trinkst] du? | چه می‌نوشی؟
+Was [trinkt] ihr? | شما چه می‌نوشید؟
+Was [trinken] Sie? | شما چه می‌نوشید؟
+Was [trinkt] Herr Weber? | آقای وبر چه می‌نوشد؟
+Ich [trinke] das nicht. | من این را نمی‌نوشم.
+Wir essen und [trinken] zu Hause. | ما در خانه می‌خوریم و می‌نوشیم.
+
+# Wasser
+Ich trinke [Wasser]. | من آب می‌نوشم.
+Das [Wasser] ist gut. | آب خوب است.
+[Wasser], bitte. | آب، لطفاً.
+Hast du [Wasser]? | آب داری؟
+Das [Wasser] hier ist sehr gut. | آب اینجا خیلی خوب است.
+Wo ist das [Wasser]? | آب کجاست؟
+
+# Kaffee
+Ich trinke [Kaffee]. | من قهوه می‌نوشم.
+Der [Kaffee] ist sehr gut. | قهوه خیلی خوب است.
+Einen [Kaffee], bitte! | یک قهوه، لطفاً!
+Trinkst du [Kaffee]? | قهوه می‌خوری؟
+Wo ist mein [Kaffee]? | قهوه‌ی من کجاست؟
+Wir trinken zu Hause [Kaffee]. | ما در خانه قهوه می‌خوریم.
+
+# Tee
+Im Iran trinkt man [Tee]. | در ایران چای می‌نوشند.
+Einen [Tee], bitte. | یک چای، لطفاً.
+Der [Tee] ist sehr gut. | چای خیلی خوب است.
+Trinkst du Kaffee oder [Tee]? | قهوه می‌خوری یا چای؟
+Das ist [Tee] aus dem Iran. | این چای ایرانی است.
+
+# Brot
+Ich esse [Brot]. | من نان می‌خورم.
+Das [Brot] ist gut. | نان خوب است. | d: Ei, Obst, Eis
+Hast du [Brot]? | نان داری؟
+Das [Brot] ist alt. | نان بیات است.
+Wir essen [Brot] und trinken Tee. | ما نان می‌خوریم و چای می‌نوشیم. | d: Eis, Obst, Gemüse
+Das Kind isst kein [Brot]. | بچه نان نمی‌خورد.
+
+# mit
+Ich gehe [mit] Anna in die Stadt. | من با آنا به شهر می‌روم.
+Das Kind spricht [mit] Herrn Weber. | بچه با آقای وبر حرف می‌زند.
+Wir essen [mit] den Kindern. | ما با بچه‌ها غذا می‌خوریم.
+Kommst du [mit] uns? | با ما می‌آیی؟
+Sprichst du [mit] mir? | با من حرف می‌زنی؟
+Ich trinke Tee [mit] Lena. | من با لنا چای می‌نوشم.
+
+# für
+Das Buch ist [für] dich. | این کتاب برای توست.
+Der Kaffee ist [für] Herrn Weber. | قهوه برای آقای وبر است.
+Ist das [für] mich? | این برای من است؟
+Wir machen das [für] die Kinder. | ما این کار را برای بچه‌ها می‌کنیم.
+Einen Tee [für] Anna, bitte. | یک چای برای آنا، لطفاً.
+[Für] wen ist das Buch? | این کتاب برای کیست؟
+
+# Auto
+Das [Auto] ist neu. | ماشین نو است.
+Mein [Auto] ist alt. | ماشین من قدیمی است.
+Wo ist dein [Auto]? | ماشینت کجاست؟
+Herr Weber hat ein großes [Auto]. | آقای وبر یک ماشین بزرگ دارد.
+Die [Autos] hier sind sehr alt. | ماشین‌های اینجا خیلی قدیمی هستند.
+Wir haben kein [Auto]. | ما ماشین نداریم.
+
+# fahren
+Ich [fahre] in die Stadt. | من به شهر می‌روم.
+Anna [fährt] mit dem Auto. | آنا با ماشین می‌رود.
+Du [fährst] sehr gut! | تو خیلی خوب رانندگی می‌کنی!
+Wir [fahren] heute zu Anna. | ما امروز پیش آنا می‌رویم.
+Herr Weber [fährt] ein neues Auto. | آقای وبر یک ماشین نو می‌راند.
+Ihr [fahrt] mit dem Auto? | شما با ماشین می‌روید؟
+
+# nach
+Wir fahren morgen [nach] Hamburg. | ما فردا به هامبورگ می‌رویم.
+Fährst du [nach] Köln? | به کلن می‌روی؟
+Herr Weber fährt [nach] Österreich. | آقای وبر به اتریش می‌رود.
+Wir fahren [nach] Deutschland. | ما به آلمان می‌رویم.
+Das Kind kommt [nach] Deutschland. | بچه به آلمان می‌آید.
+
+# arbeiten
+Ich [arbeite] in Berlin. | من در برلین کار می‌کنم.
+Wo [arbeitest] du? | کجا کار می‌کنی؟
+Anna [arbeitet] heute zu Hause. | آنا امروز در خانه کار می‌کند.
+Wir [arbeiten] morgen nicht. | ما فردا کار نمی‌کنیم.
+Herr Weber [arbeitet] jetzt in Wien. | آقای وبر حالا در وین کار می‌کند.
+
+# Arbeit
+Die [Arbeit] ist gut. | کار خوب است. | d: Schule, Stadt, Sprache
+Ich habe heute keine [Arbeit]. | من امروز کار ندارم. | d: Schule, Freundin, Sprache
+Meine [Arbeit] ist neu. | کارم جدید است. | d: Schule, Freundin, Sprache
+Wie ist die [Arbeit]? | کار چطور است؟ | d: Schule, Stadt, Sprache
+Ich gehe jetzt zur [Arbeit]. | الان سر کار می‌روم. | d: Schule, Kollegin, Freundin
+Ich fahre mit dem Auto zur [Arbeit]. | با ماشین سر کار می‌روم. | d: Schule, Kollegin, Freundin
+
+# Schule
+Das Kind geht in die [Schule]. | بچه به مدرسه می‌رود.
+Die [Schule] ist neu. | مدرسه نو است.
+Wo ist die [Schule]? | مدرسه کجاست؟
+Die Kinder sind in der [Schule]. | بچه‌ها در مدرسه هستند.
+Ich fahre die Kinder zur [Schule]. | من بچه‌ها را با ماشین به مدرسه می‌برم.
+Max lernt in der [Schule] Deutsch. | ماکس در مدرسه آلمانی یاد می‌گیرد.
+
+# Mutter
+Meine [Mutter] heißt Sara. | اسم مادرم سارا است. | d: Schwester, Tochter, Tante
+Die [Mutter] von Max arbeitet in Berlin. | مادر ماکس در برلین کار می‌کند. | d: Schwester, Tochter, Tante
+Wo ist deine [Mutter]? | مادرت کجاست؟ | d: Schwester, Tochter, Tante
+Ich wohne mit meiner{mein} [Mutter] in Köln. | من با مادرم در کلن زندگی می‌کنم. | d: Schwester, Tochter, Tante
+Meine [Mutter] kommt aus Isfahan. | مادرم اهل اصفهان است. | d: Schwester, Tochter, Tante
+Die [Mütter] sind in der Schule. | مادرها در مدرسه هستند. | d: Schwestern, Töchter, Tanten
+
+# Vater
+Mein [Vater] heißt Reza. | اسم پدرم رضا است.
+Mein [Vater] arbeitet in Teheran. | پدرم در تهران کار می‌کند.
+Der [Vater] von Lena ist sehr groß. | پدر لنا خیلی قدبلند است.
+Wo ist dein [Vater]? | پدرت کجاست؟
+Ich fahre mit meinem [Vater] nach Hamburg. | من با پدرم به هامبورگ می‌روم.
+Mein [Vater] liest ein Buch. | پدرم کتاب می‌خواند.
+
+# Eltern
+Meine [Eltern] wohnen in Köln. | پدر و مادرم در کلن زندگی می‌کنند. | d: Großeltern, Geschwister, Kinder
+Wo wohnen deine [Eltern]? | پدر و مادرت کجا زندگی می‌کنند؟ | d: Großeltern, Geschwister, Kinder
+Die [Eltern] von Anna kommen aus dem Iran. | پدر و مادر آنا اهل ایران هستند. | d: Großeltern, Geschwister, Kinder
+Ich gehe heute zu meinen [Eltern]. | امروز پیش پدر و مادرم می‌روم. | d: Großeltern, Geschwistern, Kindern
+Meine [Eltern] sprechen kein Deutsch. | پدر و مادرم آلمانی بلد نیستند. | d: Großeltern, Geschwister, Kinder
+Sind deine [Eltern] zu Hause? | پدر و مادرت خانه هستند؟ | d: Großeltern, Geschwister, Kinder
+
+# möchten
+Ich [möchte] einen Kaffee. | من یک قهوه می‌خواهم.
+Was [möchtest] du? | چه می‌خواهی؟
+Anna [möchte] in Berlin wohnen. | آنا می‌خواهد در برلین زندگی کند.
+Wir [möchten] Deutsch lernen. | ما می‌خواهیم آلمانی یاد بگیریم.
+Was [möchten] Sie trinken? | چه میل دارید بنوشید؟ | d: sein, haben, müssen
+Was [möchtet] ihr essen? | شما چه می‌خواهید بخورید؟
+
+# mögen
+Ich [mag] Kaffee. | من قهوه دوست دارم.
+Du [magst] Tee, oder? | تو چای دوست داری، نه؟
+Anna [mag] Köln sehr. | آنا کلن را خیلی دوست دارد.
+Wir [mögen] die Stadt. | ما این شهر را دوست داریم. | d: haben, sehen, kennen
+Das Kind [mag] kein Brot. | بچه نان دوست ندارد.
+Herr Weber, [mögen] Sie Kaffee? | آقای وبر، قهوه دوست دارید؟ | d: haben, kaufen, brauchen
+
+# wollen
+Ich [will] nach Hause. | می‌خواهم بروم خانه.
+Was [willst] du? | چه می‌خواهی؟
+Anna [will] in Berlin arbeiten. | آنا می‌خواهد در برلین کار کند.
+Wir [wollen] heute in die Stadt fahren. | ما امروز می‌خواهیم به شهر برویم. | d: müssen, können, dürfen
+Das Kind [will] nicht essen. | بچه نمی‌خواهد غذا بخورد.
+Ihr [wollt] Deutsch lernen? | شما می‌خواهید آلمانی یاد بگیرید؟
+
+# können
+Ich [kann] Deutsch. | من آلمانی بلدم.
+Ich [kann] heute nicht kommen. | من امروز نمی‌توانم بیایم.
+Du [kannst] sehr gut Deutsch! | تو خیلی خوب آلمانی بلدی!
+Das Kind [kann] gut lesen. | بچه خوب می‌تواند بخواند.
+Wir [können] morgen nach Hamburg fahren. | ما فردا می‌توانیم به هامبورگ برویم.
+Frau Schmidt, [können] Sie bitte kommen? | خانم اشمیت، لطفاً می‌توانید بیایید؟ | d: sind, haben, müssen
+Ihr [könnt] hier wohnen. | شما می‌توانید اینجا زندگی کنید.
+
+# müssen
+Ich [muss] jetzt nach Hause. | من الان باید بروم خانه.
+Du [musst] das Wort lernen. | تو باید این کلمه را یاد بگیری.
+Anna [muss] heute arbeiten. | آنا امروز باید کار کند.
+Wir [müssen] morgen nach Berlin fahren. | ما فردا باید به برلین برویم.
+Ihr [müsst] Deutsch sprechen! | شما باید آلمانی حرف بزنید!
+Das Kind [muss] jetzt essen. | بچه الان باید غذا بخورد.
+
+# dürfen
+Hier [darf] man nicht essen. | اینجا نباید غذا خورد.
+Du [darfst] heute nicht in die Stadt. | تو امروز اجازه نداری بروی شهر.
+Das Kind [darf] keinen Kaffee trinken. | بچه اجازه ندارد قهوه بخورد.
+Wir [dürfen] hier wohnen. | ما اجازه داریم اینجا زندگی کنیم.
+Ihr [dürft] jetzt gehen. | حالا اجازه دارید بروید.
+Herr Weber, [darf] ich das Buch lesen? | آقای وبر، اجازه هست این کتاب را بخوانم؟
+
+# kaufen
+Ich [kaufe] Brot. | من نان می‌خرم.
+Was [kaufst] du? | چه می‌خری؟
+Anna [kauft] ein neues Auto. | آنا یک ماشین نو می‌خرد.
+Ich möchte ein Buch [kaufen]. | من می‌خواهم یک کتاب بخرم. | d: verkaufen, lesen, schreiben
+Wir müssen heute Brot [kaufen]. | ما امروز باید نان بخریم. | d: verkaufen, essen, nehmen
+Herr Weber will ein Haus [kaufen]. | آقای وبر می‌خواهد یک خانه بخرد. | d: verkaufen, sehen, haben
+
+# brauchen
+Ich [brauche] ein Auto. | من یک ماشین لازم دارم.
+Was [brauchst] du? | چه لازم داری؟
+Das Kind [braucht] Wasser. | بچه آب لازم دارد.
+Wir [brauchen] Brot. | ما نان لازم داریم.
+Frau Weber, [brauchen] Sie das Buch? | خانم وبر، این کتاب را لازم دارید؟
+Ihr [braucht] kein Auto. | شما ماشین لازم ندارید.
+
+# viel
+Ich habe heute [viel] Arbeit. | من امروز کار زیادی دارم.
+Das Kind trinkt [viel] Wasser. | بچه آب زیادی می‌نوشد.
+Anna hat [viele] Bücher. | آنا کتاب‌های زیادی دارد.
+In der Stadt wohnen [viele] Kinder. | در شهر بچه‌های زیادی زندگی می‌کنند.
+Ich trinke nicht [viel] Kaffee. | من قهوه‌ی زیادی نمی‌نوشم.
+Er spricht [viel]. | او زیاد حرف می‌زند.
+
+# wenig
+Das Kind isst sehr [wenig]. | بچه خیلی کم غذا می‌خورد.
+Wir haben [wenig] Arbeit. | ما کار کمی داریم.
+Herr Weber spricht [wenig]. | آقای وبر کم حرف می‌زند.
+Ich trinke [wenig] Kaffee. | من قهوه‌ی کمی می‌نوشم.
+Hier wohnen [wenige] Kinder. | اینجا بچه‌های کمی زندگی می‌کنند.
+
+# Geld
+Ich habe kein [Geld]. | من پول ندارم.
+Hast du [Geld]? | پول داری؟
+Wir brauchen [Geld]. | ما پول لازم داریم.
+Das [Geld] ist für dich. | این پول برای توست.
+Herr Weber hat viel [Geld]. | آقای وبر پول زیادی دارد.
+Ich habe wenig [Geld]. | من پول کمی دارم.
+
+# schön
+Die Stadt ist sehr [schön]. | شهر خیلی زیباست.
+Das ist ein [schönes] Haus. | این خانه‌ی قشنگی است.
+Anna hat einen [schönen] Namen. | آنا اسم قشنگی دارد.
+Wien ist [schön]. | وین زیباست.
+Das Auto ist neu und [schön]. | ماشین نو و قشنگ است.
+
+# schlecht
+Das Brot ist [schlecht]. | نان خراب است.
+Mein Deutsch ist [schlecht]. | آلمانی من بد است.
+Heute ist ein [schlechter] Tag. | امروز روز بدی است.
+Der Kaffee hier ist sehr [schlecht]. | قهوه‌ی اینجا خیلی بد است.
+Das ist nicht [schlecht]! | بد نیست!
+
+# spielen
+Die Kinder [spielen] zu Hause. | بچه‌ها در خانه بازی می‌کنند.
+Ich [spiele] mit dem Kind. | من با بچه بازی می‌کنم.
+Was [spielst] du? | چه بازی می‌کنی؟
+Max [spielt] mit Paul. | ماکس با پاول بازی می‌کند.
+Das Kind will jetzt [spielen]. | بچه الان می‌خواهد بازی کند.
+
+# hören
+Ich [höre] dich nicht. | صدایت را نمی‌شنوم.
+Was [hörst] du? | چه گوش می‌دهی؟
+Das Kind [hört] nicht. | بچه حرف گوش نمی‌کند.
+Ich kann dich nicht [hören]. | نمی‌توانم صدایت را بشنوم.
+Herr Weber, [hören] Sie mich? | آقای وبر، صدای من را می‌شنوید؟
+
+# sehen
+Ich [sehe] das Haus. | من خانه را می‌بینم.
+Was [siehst] du? | چه می‌بینی؟
+Anna [sieht] das Auto nicht. | آنا ماشین را نمی‌بیند.
+Ihr [seht] das Haus dort? | شما آن خانه را آنجا می‌بینید؟
+Ich kann dich nicht [sehen]. | نمی‌توانم تو را ببینم.
+Wir [sehen] uns morgen! | فردا همدیگر را می‌بینیم!
+
+# sagen
+Was [sagst] du? | چه می‌گویی؟
+Ich [sage] das nicht. | من این را نمی‌گویم.
+Was [sagt] Herr Weber? | آقای وبر چه می‌گوید؟
+Wie [sagt] man das? | این را چطور می‌گویند؟
+Das kann ich nicht [sagen]. | این را نمی‌توانم بگویم.
+Wir [sagen] danke. | ما می‌گوییم ممنون.
+
+# fragen
+Ich [frage] Herrn Weber. | من از آقای وبر می‌پرسم.
+Das Kind [fragt]: „Wo ist mein Vater?“ | بچه می‌پرسد: «پدرم کجاست؟»
+Wir [fragen] Anna. | ما از آنا می‌پرسیم.
+Du musst Anna [fragen]. | باید از آنا بپرسی.
+Darf ich Sie [fragen], woher Sie kommen? | اجازه هست بپرسم اهل کجا هستید؟
+Frau Schmidt [fragt], wo das Buch ist. | خانم اشمیت می‌پرسد کتاب کجاست.
+
+# antworten
+Ich [antworte] nicht. | من جواب نمی‌دهم.
+Anna [antwortet] sehr gut. | آنا خیلی خوب جواب می‌دهد.
+Du [antwortest] nicht? | جواب نمی‌دهی؟
+Das Kind [antwortet]: „Ja.“ | بچه جواب می‌دهد: «بله.»
+Kannst du bitte [antworten]? | می‌توانی لطفاً جواب بدهی؟
+Wir [antworten] morgen. | ما فردا جواب می‌دهیم.
+
+# geben
+Ich [gebe] dir das Buch. | من کتاب را به تو می‌دهم.
+Anna [gibt] dem Kind Wasser. | آنا به بچه آب می‌دهد.
+Du [gibst] mir dein Auto? | ماشینت را به من می‌دهی؟
+Wir [geben] Herrn Weber das Geld. | ما پول را به آقای وبر می‌دهیم.
+Bitte [geben] Sie mir das Buch. | لطفاً کتاب را به من بدهید.
+Kannst du mir das Wasser [geben]? | می‌توانی آب را به من بدهی؟
+
+# es gibt
+[Es gibt] hier kein Wasser. | اینجا آب نیست. | d: Es gibst, Es geben, Es gebt
+[Es gibt] hier eine Schule. | اینجا یک مدرسه هست. | d: Es gibst, Es geben, Es gebt
+Komm, [es gibt] Kaffee! | بیا، قهوه هست! | d: es gibst, es geben, es gebt
+[Es gibt] in der Stadt viele alte Häuser. | در شهر خانه‌های قدیمی زیادی هست. | d: Es gibst, Es geben, Es gebt
+[Es gibt] kein Brot. | نان نداریم. | d: Es gibst, Es geben, Es gebt
+
+# nehmen
+Ich [nehme] einen Kaffee. | من یک قهوه می‌گیرم.
+Was [nimmst] du? | تو چه می‌گیری؟
+Anna [nimmt] das Buch. | آنا کتاب را برمی‌دارد.
+Wir [nehmen] das Auto. | ما ماشین را می‌بریم.
+Du kannst das Geld [nehmen]. | می‌توانی پول را برداری.
+Was [nehmen] Sie? | شما چه می‌گیرید؟
+
+# kennen
+Ich [kenne] Herrn Weber. | من آقای وبر را می‌شناسم.
+Du [kennst] Anna, oder? | تو آنا را می‌شناسی، نه؟
+Anna [kennt] die Stadt sehr gut. | آنا شهر را خیلی خوب می‌شناسد.
+Wir [kennen] das Wort nicht. | ما این کلمه را نمی‌شناسیم.
+Frau Schmidt, [kennen] Sie Max? | خانم اشمیت، ماکس را می‌شناسید؟
