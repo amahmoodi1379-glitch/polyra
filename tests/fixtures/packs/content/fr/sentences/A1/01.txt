@@ -1,0 +1,24 @@
+// The words of the fixture pack and their sentences.
+# voiture
+La [voiture] est petite. | ماشین کوچک است.
+J'ai une [voiture]. | من یک ماشین دارم.
+# manger
+Je [mange] une pomme. | من یک سیب می‌خورم.
+# chat
+Le [chat] est petit. | گربه کوچک است.
+Il aime le [chat]. | او گربه را دوست دارد.
+Le [chat] est dans la maison. | گربه در خانه است.
+# chien
+Le [chien] est grand. | سگ بزرگ است.
+Le chat et le [chien] sont dans la voiture. | گربه و سگ در ماشین هستند.
+# jaune
+La voiture est [jaune]. | ماشین زرد است.
+# fleur
+Les [fleurs] sont jaunes. | گل‌ها زرد هستند.
+# petit
+La maison est [petite]. | خانه کوچک است.
+Le livre est [petit]. | کتاب کوچک است.
+# maison
+La [maison] est petite. | خانه کوچک است.
+# aller
+Je [vais] à la maison. | من به خانه می‌روم.

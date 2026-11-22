@@ -54,6 +54,8 @@ COPY --from=build --chown=node:node /app/data ./data
 COPY --from=build --chown=node:node /app/prompts ./prompts
 # The French demo for testers, loaded at start when DEMO_CONTENT=fr.
 COPY --from=build --chown=node:node /app/fixtures ./fixtures
+# The content packs Claude writes; loaded at start (docker-entrypoint.sh).
+COPY --from=build --chown=node:node /app/content ./content
 COPY --from=build --chown=node:node --chmod=755 /app/docker-entrypoint.sh ./docker-entrypoint.sh
 
 # Uploaded audio lives here; on the host this folder is a mounted disk.

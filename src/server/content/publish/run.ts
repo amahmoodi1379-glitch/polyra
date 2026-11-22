@@ -77,10 +77,14 @@ async function publishChildren(tx: Tx, language: string, texts: number[], dialog
   return { sentences, questions, targets };
 }
 
-export async function publishReady(language: string, adminId: number): Promise<PublishResult> {
+/**
+ * `only` limits publishing to these rows (the content packs publish what they loaded, never what a
+ * teacher approved and kept back); `adminId` is null for the server itself.
+ */
+export async function publishReady(language: string, adminId: number | null, only?: Partial<Record<LibrarySlug, Set<number>>>): Promise<PublishResult> {
   return db.$transaction(
     async (tx) => {
-      const checked = await checkItems(tx, { language, statuses: ["approved"] });
+      const checked = (await checkItems(tx, { language, statuses: ["approved"] })).filter((item) => !only || only[item.slug]?.has(item.id));
       const ready = checked.filter((item) => item.reasons.length === 0);
       const ids: Partial<Record<LibrarySlug, number[]>> = {};
       for (const item of ready) (ids[item.slug] ??= []).push(item.id);

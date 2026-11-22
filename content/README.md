@@ -10,9 +10,17 @@ content/
   fr/                     one folder per language (fr, de)
     words/A1.tsv          the word list of a level, in teaching order
     words/A2.tsv …
-    names.txt             proper names sentences may use (later)
-    sentences/ grammar/ texts/ …   (formats added with the pack builder)
+    names.txt             proper names sentences may use, one per line (Marie, Paris)
+    grammar/A1/01-etre.txt …   one grammar unit per file, in teaching order by file name
+    sentences/A1/*.txt    the fill-the-gap sentences of the level's words
 ```
+
+Conjugation tables are not written: the loader builds them from the open data (Lefff for French,
+Morphy for German) for every verb and every tense of `conjugation.tenses.<language>`.
+
+`npm run content:check` builds everything the way the server does and lists every error with its file and
+line; a content PR needs it clean. `npm run content:load` loads it into a local database through the
+panel's importers (what the server does at start; CONTENT_PACKS=off on the server turns that off).
 
 ## Word lists: `content/<language>/words/<LEVEL>.tsv`
 
@@ -91,8 +99,91 @@ npm run content:words -- fr            # or de; both when left out
 npm run content:words -- de --warnings --missing=300
 ```
 
-It runs every rule of the panel's word import, reports errors (the loader refuses a pack with any) and
+It runs every rule of the panel's word import, reports errors (a word with an error is not loaded) and
 warnings, the size of each level against its target (`targets.<language>` in the general settings),
 parts of speech, topics, frequency ranks, the coverage of the most frequent words, and the most frequent
 lemmas the lists leave out (for German the frequency list holds word forms, so inflected forms show up
 there too).
+
+## Sentences: `content/<language>/sentences/<LEVEL>/*.txt`
+
+The fill-the-gap sentences of the level's words (PRD §5.5, §14.4). Write only the sentence, its gap and the
+Persian translation; the builder finds the word of every token (with the open lexicons and Morphy), writes
+the Persian meanings from the word lists, and makes three wrong options.
+
+```
+// a comment
+# voiture
+La [voiture] est petite. | ماشین کوچک است.
+J'ai une [voiture]. | من یک ماشین دارم.
+Il lave sa [voiture] le samedi. | او شنبه‌ها ماشینش را می‌شوید. | d: maison, table, chaise | ok: auto
+# manger
+Je [mange] une pomme. | من یک سیب می‌خورم.
+```
+
+- `# code` starts a word's block (the word's code: its lemma unless the list gives `code:`). Each line is one
+  sentence with exactly one `[gap]` holding a form of that word, a bar, the Persian translation, and optional
+  cells: `d: a, b, c` three wrong options (else made automatically), `ok: x, y` other right answers,
+  `tts: …` the text the machine voice reads instead.
+- **Known words only (the usable-sentence rule, PRD §13.11).** Every other word must be taught before the
+  block's word: a lower level, earlier in the list, or a function word with `no_card`. The first 30 card
+  words of a language count as known among themselves. The checker names any word that comes too late.
+- **Wrong options.** For a conjugated verb: other forms of the same verb, with the infinitive as hint. For
+  anything else: other words of the same part of speech and topic in the same form (gender and number of a
+  noun, agreement of an adjective), never a synonym, a homophone, a word already in the sentence, or a form
+  the word before rules out (`l'` + consonant). When the checker says it cannot find three, write `d:`.
+- **Reading the words.** A form that could be two words is read from its neighbours (French «la» before a
+  verb is the pronoun; German capitals are nouns). When the reading is still wrong, name the word:
+  `Il [ferme]{fermer} la porte.` or `word{code}` anywhere in the sentence. A separable German verb is found
+  whole (`Ich [stehe] um sieben Uhr auf.`).
+- Names come from `names.txt`; numbers in digits are numbers. A sentence written for two words (the same text
+  in two blocks, same translation) becomes one sentence with two targets.
+- 5 to 8 sentences per card word (`publish.word_min_targets` is 5), each a different situation, short at A1
+  (4 to 8 words), natural, with the Persian a learner would say.
+
+## Grammar units: `content/<language>/grammar/<LEVEL>/NN-name.txt`
+
+One unit per file (PRD §6, §14.6); file names give the teaching order within a level, and the unit code is
+unique across the language.
+
+```
+code: fr-a1-etre-present
+title: فعل être در زمان حال
+scope: je suis، tu es، il est، nous sommes، vous êtes، ils sont
+can_do: می‌توانی بگویی کی هستی و حالت چطور است.
+rule: être یعنی «بودن» و بی‌قاعده است: je suis، tu es، il est …
+mistake: فارسی‌زبان‌ها گاهی می‌گویند «je es»؛ درست: je suis.
+tables: présent | être
+lesson:
+… the Persian lesson, any number of lines (blank lines are kept) …
+table:
+ضمیر | être
+je | suis
+sets:
+مذکر: le père, le livre
+examples:
+Je suis étudiant. | من دانشجو هستم.
+targets:
+Je [suis] content. | من خوشحالم. | d: es, est, sommes | hint: (être)
+Nous [sommes] à Paris et vous [êtes] à Lyon. | ما در پاریس هستیم و شما در لیون. | d: sont, êtes, suis / sommes, es, sont
+transforms:
+Je suis content. => Nous sommes contents. ; Nous sommes contentes. | جمله را با nous بنویس.
+translations:
+من خسته‌ام. => Je suis fatigué. ; Je suis fatiguée.
+```
+
+- Headers `code`, `title`, `scope`, `rule`, `mistake` and a `lesson` are required; `can_do` is shown at the
+  end of the unit. `table` and `sets` are optional.
+- `examples` (at least 3) have no gap. `targets` have one or two `[gaps]`: `d:` three wrong options per gap
+  (the gaps apart with « / »), `ok:` other right answers per gap, `hint:`, and `full:` other right word
+  orders of the whole sentence (« ; »). A unit needs 30 targets to be published (`publish.unit_min_targets`).
+- `transforms`: «source => output ; other right output | Persian instruction». `translations`: «Persian
+  sentence => right answer ; other right answer».
+- Every word of the unit must be of its level or lower and in the word lists.
+- `tables: <tense>` makes this unit the home of that tense's conjugation tables (the tense as written in
+  `conjugation.tenses.<language>`). `tables: <tense> | <class>` claims one class of verbs: a verb's lemma
+  (`être`), or `irregular`, `reflexive`, `aux-etre` (French: also `er`, `ir`) and `regular`, `irregular`,
+  `modal`, `separable`, `reflexive`, `aux-sein` (German). The most specific unit at or below the table's
+  level wins. Once a level has grammar, every tense of that level needs a unit.
+- Review cards (`review_card`) go to a verb whose forms in that tense leave its group's pattern and to the
+  first verb of each regular group as its sample.

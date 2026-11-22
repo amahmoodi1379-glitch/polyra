@@ -11,6 +11,12 @@ if [ "${DEMO_CONTENT:-}" = "fr" ]; then
 elif [ "${DEMO_CONTENT:-}" = "remove" ]; then
   node node_modules/tsx/dist/cli.mjs scripts/demo.ts remove || echo "The demo was not removed."
 fi
+# The content packs (content/<language>/, written by Claude) load in the background while the app starts,
+# at a low CPU priority: only what is new since the last start, approved and published when ready.
+# CONTENT_PACKS=off skips it.
+if [ "${CONTENT_PACKS:-on}" != "off" ]; then
+  (nice -n 10 node node_modules/tsx/dist/cli.mjs scripts/content/load.ts || echo "The content packs were not loaded.") &
+fi
 # The machine-voice generator (scripts/audio/worker.ts) runs beside the app so learners never wait for it:
 # on one processor (Piper then speaks with one thread), at the lowest CPU priority, using the disk only
 # when nothing else does, and resting between files. If it stops it starts again a minute later and
