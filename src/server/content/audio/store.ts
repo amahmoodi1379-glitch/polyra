@@ -1,11 +1,13 @@
 import { joinMp3, readMp3 } from "@/lib/audio/mp3";
 import { MAX_MS } from "@/lib/audio/standard";
+import { spokenLine } from "@/lib/audio/voices";
 import { db } from "@/server/db";
-import { readMedia, saveMedia } from "@/server/storage";
+import { readMedia, removeMedia, saveMedia } from "@/server/storage";
 import type { Tx } from "../kinds/types";
 import { logChange } from "../library/log";
 import { entityOf } from "../library/slugs";
-import { assetKind, readSlot, slotKey, slugOfSlot, writeSlot, type Slot } from "./slots";
+import { joinSignature } from "./machine";
+import { assetKind, readSlot, slotKey, slugOfSlot, writeSlot, type Slot, type SlotState } from "./slots";
 
 /**
  * Putting audio in a slot, taking a human recording out, and marking a recording as heard (PRD §13.8).
@@ -151,4 +153,103 @@ export async function joinTextAudio(textId: number, which: Which, adminId: numbe
   const result = await storeAudio({ slot: { kind: "text", id: textId }, bytes: joined.bytes, which, adminId, offsetsMs: joined.offsetsMs });
   if (result.state === "saved" && heard) await markHeard(result.assetId, adminId);
   return result;
+}
+
+// ───────────────────────────── machine voice (scripts/audio) ─────────────────────────────
+
+/**
+ * What a slot says now, as the machine voice's `made_from`: the line it reads, or for a text the
+ * sentence files its file joins (null while one of them has no machine file).
+ */
+async function madeFromNow(tx: Tx, state: SlotState): Promise<string | null> {
+  if (state.slot.kind !== "text") return spokenLine(state.speak);
+  const ids = state.sentenceIds ?? [];
+  const rows = await tx.sentence.findMany({ where: { id: { in: ids } }, select: { id: true, audio_id: true } });
+  const files = new Map(rows.map((row) => [row.id, row.audio_id]));
+  const parts = ids.map((id) => files.get(id) ?? null);
+  return ids.length > 0 && parts.every((part) => part !== null) ? joinSignature(parts as number[]) : null;
+}
+
+export type MachineResult = { state: "saved"; assetId: number } | { state: "changed" } | { state: "missing" } | { state: "invalid"; reason: string };
+
+/**
+ * A file the machine voice made for a slot. It goes in only if the slot still says `madeFrom`; a
+ * teacher's edit in the meantime wins and the file is thrown away. The human file is never touched,
+ * and a teacher's «don't make it again» for the slot is gone once a new file is in.
+ */
+export async function storeMachineAudio(input: { slot: Slot; bytes: Uint8Array; voice: string; madeFrom: string; offsetsMs?: number[] }): Promise<MachineResult> {
+  const { slot, bytes } = input;
+  const info = readMp3(bytes);
+  if (!info.ok) return { state: "invalid", reason: info.reason };
+  if (info.durationMs > MAX_MS[slot.kind]) return { state: "invalid", reason: "tooLong" };
+  const url = await saveMedia("audio", bytes, "mp3");
+  let result: MachineResult;
+  try {
+    result = await db.$transaction(async (tx): Promise<MachineResult> => {
+      const state = await readSlot(tx, slot);
+      if (!state) return { state: "missing" };
+      if ((await madeFromNow(tx, state)) !== input.madeFrom) return { state: "changed" };
+      const offsets = input.offsetsMs ?? [];
+      if (slot.kind === "text" && !validOffsets(offsets, state.sentenceIds?.length ?? 0, info.durationMs)) return { state: "invalid", reason: "offsets" };
+      const asset = await tx.audioAsset.create({
+        data: { kind: assetKind[slot.kind], url, source: "tts", voice: input.voice, made_from: input.madeFrom, duration_ms: info.durationMs },
+      });
+      await writeSlot(tx, slot, "machine", asset.id, offsets);
+      await tx.audioDeclined.deleteMany({ where: { slot: slotKey(slot) } });
+      return { state: "saved", assetId: asset.id };
+    });
+  } catch (error) {
+    await removeMedia(url);
+    throw error;
+  }
+  if (result.state !== "saved") await removeMedia(url);
+  return result;
+}
+
+/**
+ * A text's machine file: its sentences' machine files joined, with the start of each sentence. `parts`
+ * are the files the plan saw; if any changed since, nothing is stored and the next look plans again.
+ */
+export async function joinMachineText(textId: number, parts: number[], madeFrom: string): Promise<MachineResult> {
+  const assets = new Map((await db.audioAsset.findMany({ where: { id: { in: parts } } })).map((asset) => [asset.id, asset]));
+  const pieces: Uint8Array[] = [];
+  for (const id of parts) {
+    const asset = assets.get(id);
+    const bytes = asset && !asset.stale ? await readMedia(asset.url) : null;
+    if (!bytes || !readMp3(bytes).ok) return { state: "changed" };
+    pieces.push(bytes);
+  }
+  const voices = [...new Set(parts.map((id) => assets.get(id)?.voice).filter((voice): voice is string => Boolean(voice)))];
+  const joined = joinMp3(pieces);
+  return storeMachineAudio({ slot: { kind: "text", id: textId }, bytes: joined.bytes, voice: voices.join("+"), madeFrom, offsetsMs: joined.offsetsMs });
+}
+
+/**
+ * «برداشتن صدای ماشینی»: the slot's machine file goes out and is not made again while the slot says
+ * the same thing (DECISIONS.md). A human file still plays; without one, the phone's voice reads it.
+ */
+export async function removeMachineAudio(slot: Slot, adminId: number) {
+  return db.$transaction(async (tx) => {
+    const state = await readSlot(tx, slot);
+    if (!state) return { state: "missing" as const };
+    if (state.machineId === null) return { state: "done" as const };
+    // Not again for what the slot says now (for a text: from these sentence files).
+    const asset = await tx.audioAsset.findUnique({ where: { id: state.machineId }, select: { made_from: true } });
+    const madeFrom = (await madeFromNow(tx, state)) ?? asset?.made_from ?? "";
+    await writeSlot(tx, slot, "machine", null);
+    const key = slotKey(slot);
+    await tx.audioDeclined.upsert({
+      where: { slot: key },
+      create: { slot: key, made_from: madeFrom, declined_by: adminId },
+      update: { made_from: madeFrom, declined_by: adminId, created_at: new Date() },
+    });
+    await logAudio(tx, adminId, slot, "machine", state.machineId, null);
+    return { state: "done" as const };
+  });
+}
+
+/** «دوباره بساز»: the machine voice may fill the slot again on its next look. */
+export async function allowMachineAudio(slot: Slot) {
+  await db.audioDeclined.deleteMany({ where: { slot: slotKey(slot) } });
+  return { state: "done" as const };
 }

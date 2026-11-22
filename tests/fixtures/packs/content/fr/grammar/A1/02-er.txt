@@ -1,0 +1,19 @@
+code: fr-a1-er
+title: فعل‌های -er در زمان حال
+scope: je parle، il parle، nous parlons
+can_do: می‌توانی بگویی چه کار می‌کنی.
+rule: ریشه + e، es، e، ons، ez، ent.
+mistake: «nous parle» غلط است؛ درست: nous parlons.
+tables: présent
+tables: passé composé
+lesson:
+بیشتر فعل‌های فرانسوی به -er ختم می‌شوند.
+examples:
+Je parle. | من حرف می‌زنم.
+Il mange une pomme. | او یک سیب می‌خورد.
+Nous aimons le pain. | ما نان را دوست داریم.
+targets:
+Je [mange] une pomme. | من یک سیب می‌خورم. | d: manges, mangeons, mangez | hint: (manger)
+Nous [parlons] dans la voiture. | ما در ماشین حرف می‌زنیم. | d: parle, parlez, parlent | hint: (parler)
+translations:
+من یک سیب می‌خورم. => Je mange une pomme.

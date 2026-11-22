@@ -1,5 +1,5 @@
 import { randomBytes } from "node:crypto";
-import { mkdir, open, readFile, stat, writeFile } from "node:fs/promises";
+import { mkdir, open, readFile, rm, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 /**
@@ -72,4 +72,11 @@ export async function readMedia(url: string): Promise<Uint8Array | null> {
   } catch {
     return null;
   }
+}
+
+/** Deletes a stored file by its `/media/...` address (a file saved for nothing, never one a row points at). */
+export async function removeMedia(url: string) {
+  if (!url.startsWith(MEDIA_PREFIX)) return;
+  const file = mediaFile(url.slice(MEDIA_PREFIX.length).split("/"));
+  if (file) await rm(file, { force: true });
 }

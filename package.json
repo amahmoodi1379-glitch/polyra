@@ -18,10 +18,13 @@
     "seed": "tsx scripts/seed/index.ts",
     "make-admin": "tsx scripts/make-admin.ts",
     "demo": "tsx scripts/demo.ts",
+    "audio": "tsx scripts/audio/worker.ts",
     "backup": "tsx scripts/backup.ts",
     "simulate": "tsx scripts/simulate.ts",
     "pace": "tsx scripts/pace.ts",
     "content:words": "tsx scripts/content/check-words.ts",
+    "content:check": "tsx scripts/content/check.ts",
+    "content:load": "tsx scripts/content/load.ts",
     "postinstall": "prisma generate"
   },
   "dependencies": {

@@ -1,0 +1,28 @@
+code: fr-a1-etre
+title: فعل être در زمان حال
+scope: je suis، il est، elle est، nous sommes، vous êtes
+can_do: می‌توانی بگویی چیزی چطور است.
+rule: être یعنی «بودن» و بی‌قاعده است: je suis، il est، nous sommes.
+mistake: فارسی‌زبان‌ها گاهی می‌گویند «je es»؛ درست: je suis.
+tables: présent | être
+tables: présent | avoir
+lesson:
+فعل être یعنی «بودن».
+
+با هر ضمیر شکل خودش را دارد.
+table:
+ضمیر | être
+je | suis
+il / elle | est
+examples:
+Je suis grand. | من بلندقدم.
+La maison est grande. | خانه بزرگ است.
+Nous sommes dans la voiture. | ما در ماشین هستیم.
+targets:
+Je [suis] petit. | من کوچکم. | d: es, est, sommes | hint: (être)
+La voiture [est] rouge. | ماشین قرمز است. | d: suis, sommes, êtes
+Nous [sommes] dans la maison et vous [êtes] dans la voiture. | ما در خانه هستیم و شما در ماشین. | d: sont, êtes, suis / sommes, es, sont
+transforms:
+Je suis petit. => Nous sommes petits. ; Nous sommes petites. | جمله را با nous بنویس.
+translations:
+من بزرگم. => Je suis grand. ; Je suis grande.

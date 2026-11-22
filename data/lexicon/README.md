@@ -20,3 +20,17 @@ To rebuild after downloading the sources:
 ```
 npx tsx scripts/data/build-lexicon.ts Lexique383.tsv nouns.csv
 ```
+
+## Word forms
+
+`fr-forms.tsv` and `de-forms.tsv` list the inflected forms of the lemmas in `data/frequency` with the lemmas they may belong to, for the content
+packs (`src/server/content/packs/morph.ts`): which word of the lists a form in a sentence is, and the matching
+form of another word for a wrong option. French from Lexique 3.83 (all categories), German from german-nouns
+(nouns with their cases); German verbs come from Morphy (`german-verbs-dict`) and German adjective endings
+are made by rule. Same sources and licence as above.
+
+Format, one form per line: `form<TAB>lemma|category|gender-number|frequency;…`.
+
+```
+npx tsx scripts/data/build-forms.ts Lexique383.tsv nouns.csv
+```

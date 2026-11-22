@@ -4,11 +4,12 @@ import { phonicsSlots, type Slot } from "./slots";
 import { viewsOf, type SlotView } from "./view";
 
 /**
- * The lists of the «صدا» page (PRD §13.2): files nobody has heard yet, stale files waiting for a new
- * recording, and places without any file (the phone's voice reads them; a teacher may record them).
+ * The lists of the «صدا» page (PRD §13.2): files nobody has heard yet, places our machine voice
+ * speaks (a teacher listens when they like; DECISIONS.md: these never wait for «شنیدم»), stale files
+ * waiting for a new recording, and places without any file (the phone's voice reads them).
  */
 
-export const audioTabs = ["listen", "stale", "none"] as const;
+export const audioTabs = ["listen", "machine", "stale", "none"] as const;
 export type AudioTab = (typeof audioTabs)[number];
 export const audioTypes = ["words", "sentences", "texts", "phonics"] as const;
 export type AudioType = (typeof audioTypes)[number];
@@ -21,9 +22,11 @@ const PAGE = 40;
 const tables = { words: "word", sentences: "sentence", texts: "text" } as const;
 const orders = { words: Prisma.sql`t.intro_order ASC NULLS LAST, t.id ASC`, sentences: Prisma.sql`t.id ASC`, texts: Prisma.sql`t.level ASC, t.code ASC` };
 
-// h is the human file, m the machine one. A stale file never plays; the human one plays first.
+// h is the human file, m the machine one. A stale file never plays; the human one plays first. A file
+// our machine voice made has `made_from`; one uploaded as machine does not, and waits to be heard.
 const conditions: Record<AudioTab, Prisma.Sql> = {
-  listen: Prisma.sql`((h.id IS NOT NULL AND NOT h.stale AND h.listened_at IS NULL) OR ((h.id IS NULL OR h.stale) AND m.id IS NOT NULL AND NOT m.stale AND m.listened_at IS NULL))`,
+  listen: Prisma.sql`((h.id IS NOT NULL AND NOT h.stale AND h.listened_at IS NULL) OR ((h.id IS NULL OR h.stale) AND m.id IS NOT NULL AND NOT m.stale AND m.listened_at IS NULL AND m.made_from IS NULL))`,
+  machine: Prisma.sql`((h.id IS NULL OR h.stale) AND m.id IS NOT NULL AND NOT m.stale AND m.made_from IS NOT NULL)`,
   stale: Prisma.sql`((h.stale OR m.stale) AND (h.id IS NULL OR h.stale) AND (m.id IS NULL OR m.stale))`,
   none: Prisma.sql`(h.id IS NULL AND m.id IS NULL)`,
 };
@@ -35,7 +38,7 @@ const from = (type: Exclude<AudioType, "phonics">, language: string, tab: AudioT
   WHERE t.language = ${language} AND t.status <> 'retired' AND ${conditions[tab]}`;
 
 type Entry = Record<string, unknown>;
-type AssetState = { stale: boolean; heard: boolean };
+type AssetState = { stale: boolean; heard: boolean; auto: boolean };
 
 /** Every slot of the language's phonics lessons that falls in a tab, in lesson order. */
 async function phonicsIn(language: string, tab: AudioTab): Promise<Slot[]> {
@@ -56,9 +59,9 @@ async function phonicsIn(language: string, tab: AudioTab): Promise<Slot[]> {
   const pairs = slots.map((slot) => ({ slot, ids: ids(slot, byId.get(slot.id)!) }));
   const assetIds = pairs.flatMap((pair) => pair.ids).filter((id): id is number => id !== null);
   const assets = new Map<number, AssetState>(
-    (await db.audioAsset.findMany({ where: { id: { in: assetIds } }, select: { id: true, stale: true, listened_at: true } })).map((row) => [
+    (await db.audioAsset.findMany({ where: { id: { in: assetIds } }, select: { id: true, stale: true, listened_at: true, made_from: true } })).map((row) => [
       row.id,
-      { stale: row.stale, heard: row.listened_at !== null },
+      { stale: row.stale, heard: row.listened_at !== null, auto: row.made_from !== null },
     ]),
   );
   return pairs
@@ -66,7 +69,8 @@ async function phonicsIn(language: string, tab: AudioTab): Promise<Slot[]> {
       const human = humanId !== null ? assets.get(humanId) : undefined;
       const machine = machineId !== null ? assets.get(machineId) : undefined;
       const playing = human && !human.stale ? human : machine && !machine.stale ? machine : null;
-      if (tab === "listen") return playing !== null && !playing.heard;
+      if (tab === "listen") return playing !== null && !playing.heard && !(playing === machine && playing.auto);
+      if (tab === "machine") return playing !== null && playing === machine && playing.auto;
       if (tab === "stale") return !playing && Boolean(human?.stale || machine?.stale);
       return !human && !machine;
     })

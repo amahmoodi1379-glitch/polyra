@@ -578,6 +578,23 @@ model SentenceWord {
   @@map("sentence_word")
 }
 
+/// Not in §4 (DECISIONS.md, 19 Nov 2026): every item the content packs (`content/<language>/`) loaded, so
+/// an item is loaded once only and an item the teacher deleted is not loaded again at the next start.
+model ContentPackItem {
+  id        Int      @id @default(autoincrement())
+  language  String   @db.VarChar(8)
+  /// word, unit, grammar, table, sentence, exception, text, …
+  kind      String   @db.VarChar(16)
+  /// The item's key in the pack: a word's code, a unit's code, «verb|tense», a sentence's text.
+  key       String
+  /// A hash of the item as it was loaded; a later change in the files shows as a different hash.
+  hash      String   @db.VarChar(16)
+  loaded_at DateTime @default(now()) @db.Timestamptz(3)
+
+  @@unique([language, kind, key])
+  @@map("content_pack_item")
+}
+
 model FormException {
   id         Int      @id @default(autoincrement())
   surface    String
@@ -892,8 +909,35 @@ model AudioAsset {
   listened_by Int?
   listened_at DateTime?   @db.Timestamptz(3)
   created_at  DateTime    @default(now()) @db.Timestamptz(3)
+  /// Not in §4 (DECISIONS.md): set only on files the machine-voice generator made. What the voice read
+  /// (a word with its article, a sentence's `tts_text` or `text`), or for a text's file the sentence
+  /// files it joins (`join:12,13`). When the slot no longer says this, the generator makes it again.
+  made_from   String?
 
   @@map("audio_asset")
+}
+
+/// Not in §4 (DECISIONS.md): a machine file a teacher took out of a slot (PRD §13.8). The generator does
+/// not make it again while the slot still says `made_from`.
+model AudioDeclined {
+  slot        String   @id
+  made_from   String
+  declined_by Int?
+  created_at  DateTime @default(now()) @db.Timestamptz(3)
+
+  @@map("audio_declined")
+}
+
+/// Not in §4 (DECISIONS.md): the machine-voice generator (scripts/audio). One row: which process holds the
+/// work until when, and what it counted on its last look, for the «صدا» page.
+model AudioGenerator {
+  id          Int       @id
+  owner       String?
+  lease_until DateTime? @db.Timestamptz(3)
+  state       Json      @default("{}")
+  updated_at  DateTime  @default(now()) @db.Timestamptz(3)
+
+  @@map("audio_generator")
 }
 
 model FrequencyItem {
