@@ -1,0 +1,75 @@
+code: fr-a1-etre
+title: فعل être (بودن) در زمان حال
+scope: صرف فعل être در زمان حال با همه ضمیرهای فاعلی (je suis، tu es، il/elle/on est، nous sommes، vous êtes، ils/elles sont) در جمله مثبت؛ منفی و سؤال در واحدهای بعد می‌آیند.
+can_do: حالا می‌توانی بگویی کسی یا چیزی کجاست و چطور است.
+rule: être بی‌قاعده است: je suis، tu es، il/elle/on est، nous sommes، vous êtes، ils/elles sont.
+mistake: فارسی‌زبان‌ها فعل را مثل «است» به آخر جمله می‌برند یا جا می‌اندازند («Je ici»)؛ در فرانسوی فعل درست بعد از فاعل می‌آید و هیچ‌وقت حذف نمی‌شود: Je suis ici.
+tables: présent | être
+lesson:
+فعل être یعنی «بودن»: هستم، هستی، است و…
+در فارسی فعل آخر جمله می‌آید، ولی در فرانسوی درست بعد از فاعل می‌آید: Je suis ici یعنی «من اینجا هستم».
+فرانسوی برای «او» دو ضمیر دارد: il برای مرد و چیز مذکر، elle برای زن و چیز مؤنث؛ برای «آن‌ها» هم ils و elles.
+on در گفتار یعنی «ما» ولی فعلش مثل il است: on est.
+vous هم «شما»ی جمع است و هم «شما»ی مؤدبانه برای یک نفر.
+table:
+ضمیر | être | معنی
+je | suis | هستم
+tu | es | هستی
+il / elle / on | est | است
+nous | sommes | هستیم
+vous | êtes | هستید
+ils / elles | sont | هستند
+examples:
+Je suis à la maison. | من خانه هستم.
+Paul est grand. | پل قدبلند است.
+Nous sommes à Paris. | ما در پاریس هستیم.
+Vous êtes Marie ? | شما ماری هستید؟
+targets:
+Je [suis] à la maison. | من خانه هستم. | d: es, est, sommes | hint: (être)
+Tu [es] à l'école. | تو در مدرسه هستی. | d: suis, est, êtes | hint: (être)
+Paul [est] ici. | پل اینجاست. | d: suis, es, sont
+Marie [est] là. | ماری آنجاست. | d: es, sont, êtes | hint: (être)
+Nous [sommes] à Lyon. | ما در لیون هستیم. | d: sont, êtes, est | hint: (être)
+Vous [êtes] à Paris ? | شما در پاریس هستید؟ | d: est, sont, sommes
+Ils [sont] dans la voiture. | آن‌ها در ماشین هستند. | d: est, sommes, êtes | hint: (être)
+Elles [sont] à la maison. | آن‌ها (خانم‌ها) خانه هستند. | d: est, êtes, sommes
+Le chien [est] petit. | سگ کوچک است. | d: es, sont, suis | hint: (être)
+La voiture [est] grande. | ماشین بزرگ است. | d: es, sont, êtes
+Le livre [est] sur la table. | کتاب روی میز است. | d: es, sont, suis | hint: (être)
+Les enfants [sont] à l'école. | بچه‌ها در مدرسه هستند. | d: est, sommes, êtes
+On [est] à la maison. | ما خانه هستیم. | d: sommes, sont, es | hint: (être)
+Je [suis] avec Marie. | من با ماری هستم. | d: es, est, êtes
+Tu [es] grand ! | تو قدبلندی! | d: est, êtes, suis
+Le café [est] bon. | قهوه خوب است. | d: es, sont, suis | hint: (être)
+Les gens [sont] dans la rue. | مردم در خیابان هستند. | d: est, êtes, sommes
+Le chat [est] sous la table. | گربه زیر میز است. | d: es, sont, suis | hint: (être)
+Vous [êtes] avec Paul ? | شما با پل هستید؟ | d: est, sont, sommes
+Nous [sommes] dans la rue. | ما در خیابان هستیم. | d: est, sont, êtes
+Elle [est] au travail. | او (زن) سر کار است. | d: es, sont, suis | hint: (être)
+Il [est] à Téhéran. | او (مرد) در تهران است. | d: es, sont, êtes
+Ali et Reza [sont] à Paris. | علی و رضا در پاریس هستند. | d: est, sommes, êtes | hint: (être) | full: Reza et Ali sont à Paris.
+L'eau [est] sur la table. | آب روی میز است. | d: es, sont, êtes
+La famille [est] à la maison. | خانواده خانه است. | d: sont, es, sommes | hint: (être)
+Je [suis] Sara. | من سارا هستم. | d: es, est, sommes
+Vous [êtes] très grand. | شما خیلی قدبلند هستید. | d: est, sont, es
+Le pain [est] très bon. | نان خیلی خوب است. | d: es, sont, suis | hint: (être)
+Il [est] avec un ami. | او (مرد) با یک دوست است. | d: es, sont, êtes
+La maison [est] petite. | خانه کوچک است. | d: es, sont, êtes | hint: (être)
+Je [suis] ici et tu [es] là. | من اینجا هستم و تو آنجا. | d: es, est, sommes / suis, est, êtes | full: Tu es là et je suis ici.
+Nous [sommes] à Lyon et vous [êtes] à Nice. | ما در لیون هستیم و شما در نیس. | d: sont, êtes, est / sommes, est, sont | full: Vous êtes à Nice et nous sommes à Lyon.
+Paul [est] à l'école et Marie [est] au travail. | پل در مدرسه است و ماری سر کار. | d: es, sont, suis / es, sont, êtes | full: Marie est au travail et Paul est à l'école.
+Le chien [est] petit et le chat [est] grand. | سگ کوچک است و گربه بزرگ. | d: es, sont, sommes / es, sont, êtes | full: Le chat est grand et le chien est petit.
+Les enfants [sont] à la maison et nous [sommes] dans la voiture. | بچه‌ها خانه هستند و ما در ماشین. | d: est, êtes, sommes / sont, êtes, est | full: Nous sommes dans la voiture et les enfants sont à la maison.
+Tu [es] à Paris et Paul [est] à Lyon. | تو در پاریس هستی و پل در لیون. | d: est, suis, êtes / es, sont, suis | full: Paul est à Lyon et tu es à Paris.
+transforms:
+Je suis à Paris. => Nous sommes à Paris. | جمله را با nous بنویس.
+Il est à la maison. => Ils sont à la maison. | جمله را با ils بنویس.
+Tu es ici. => Vous êtes ici. | جمله را با vous بنویس.
+Elle est au travail. => Elles sont au travail. | جمله را با elles بنویس.
+Je suis avec Marie. => Tu es avec Marie. | جمله را با tu بنویس.
+translations:
+من خانه هستم. => Je suis à la maison.
+ما در پاریس هستیم. => Nous sommes à Paris. ; On est à Paris.
+تو اینجا هستی. => Tu es ici. ; Tu es là.
+پل در مدرسه است. => Paul est à l'école.
+آن‌ها در ماشین هستند. => Ils sont dans la voiture. ; Elles sont dans la voiture.

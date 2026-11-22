@@ -1,0 +1,75 @@
+code: fr-a1-pluriel
+title: جمع اسم: les، des و s
+scope: جمع اسم با s و حرف تعریف جمع les (معین) و des (نامعین)، و فعل sont بعد از فاعل جمع؛ جمع‌های بی‌قاعده (مثل -aux) در سطح بعد می‌آیند.
+can_do: حالا می‌توانی درباره چند چیز یا چند نفر حرف بزنی: les enfants، des livres.
+rule: جمع = les یا des + اسم + s: le livre → les livres، un chat → des chats. s آخر خوانده نمی‌شود.
+mistake: چون s جمع شنیده نمی‌شود، فارسی‌زبان‌ها آن را در نوشتن جا می‌اندازند («les livre»)؛ اسم جمع همیشه s می‌گیرد و فعلش هم جمع است: Les livres sont ici. «les gens» هم همیشه جمع است: Les gens sont là.
+lesson:
+برای جمع بستن اسم، معمولاً یک s به آخرش اضافه می‌کنیم: un livre → des livres.
+این s خوانده نمی‌شود؛ livre و livres یک‌جور شنیده می‌شوند و فقط حرف تعریف فرق دارد.
+le، la و l' در جمع همه les می‌شوند: les chiens، les maisons، les amis.
+un و une در جمع des می‌شوند، یعنی «چند تا»: des chats، des voitures؛ در فارسی معمولاً چیزی جایش نمی‌گوییم.
+قبل از صدادار، s در les و des با کلمه بعد «ز» خوانده می‌شود: les amis («لِزامی»).
+اسمی که خودش به s ختم شود در جمع عوض نمی‌شود: le temps → les temps.
+table:
+مفرد | جمع
+le chien | les chiens
+la maison | les maisons
+l'ami | les amis
+un livre | des livres
+une voiture | des voitures
+examples:
+Les enfants sont à l'école. | بچه‌ها در مدرسه هستند.
+Voilà des livres. | این هم چند کتاب.
+Ce sont les amis de Paul. | این‌ها دوست‌های پل هستند.
+Les chats sont sous la table. | گربه‌ها زیر میز هستند.
+targets:
+[Les] enfants sont à l'école. | بچه‌ها در مدرسه هستند. | d: Le, La, L' | hint: (le)
+[Les] chiens sont dans la rue. | سگ‌ها در خیابان هستند. | d: Le, La, L'
+[Les] maisons sont petites. | خانه‌ها کوچک هستند. | d: La, Le, L' | hint: (la)
+Voilà [des] livres. | این هم چند کتاب. | d: un, une, le | hint: (un)
+Ce sont [des] amis de Paul. | این‌ها دوست‌های پل هستند. | d: un, une, le
+[Les] voitures sont dans la rue. | ماشین‌ها در خیابان هستند. | d: La, Le, L' | hint: (la)
+Les enfants [sont] à la maison. | بچه‌ها خانه هستند. | d: est, es, sommes | hint: (être)
+Les chats [sont] sous la table. | گربه‌ها زیر میز هستند. | d: est, es, êtes
+[Les amis] de Marie sont ici. | دوست‌های ماری اینجا هستند. | d: L'ami, Les ami, L'amis
+Voilà [des] voitures. | این هم چند ماشین. | d: une, un, la | hint: (un)
+[Les] filles sont avec Marie. | دخترها با ماری هستند. | d: La, Le, L' | hint: (la)
+[Les] hommes sont dans la voiture. | مردها در ماشین هستند. | d: L', Le, La
+Les gens [sont] ici. | مردم اینجا هستند. | d: est, es, êtes | hint: (être)
+Ce sont [des] chiens. | این‌ها سگ هستند. | d: un, une, le | hint: (un)
+[Les] rues sont grandes. | خیابان‌ها بزرگ هستند. | d: La, Le, L'
+Je suis avec [des] amis. | من با چند دوست هستم. | d: un, une, l' | hint: (un)
+Paul est avec [les] enfants. | پل با بچه‌ها است. | d: le, la, l'
+[Les] villes sont grandes. | شهرها بزرگ هستند. | d: La, Le, L' | hint: (la)
+[Les livres] sont sur la table. | کتاب‌ها روی میز هستند. | d: Le livre, Les livre, Le livres
+[Les chats] sont ici. | گربه‌ها اینجا هستند. | d: Le chat, Les chat, Le chats
+[Les tables] sont petites. | میزها کوچک هستند. | d: La table, Les table, La tables
+Ce sont [des] garçons. | این‌ها پسر هستند. | d: un, une, le
+Ce sont [les] voitures de Paul. | این‌ها ماشین‌های پل هستند. | d: la, le, l' | hint: (la)
+[Les] écoles sont dans la ville. | مدرسه‌ها در شهر هستند. | d: L', La, Le
+Les femmes [sont] au travail. | زن‌ها سر کار هستند. | d: est, es, sommes | hint: (être)
+Voilà [les] chiens de Sara. | این هم سگ‌های سارا. | d: le, la, l'
+Les problèmes [sont] petits. | مشکل‌ها کوچک هستند. | d: est, es, êtes
+[Les] idées de Paul sont bonnes. | ایده‌های پل خوب هستند. | d: L', La, Le | hint: (la)
+[Les amies] de Léa sont à Nice. | دوست‌های لئا در نیس هستند. | d: L'amie, Les amie, L'amies
+Ce sont [des] tables. | این‌ها میز هستند. | d: une, un, la | hint: (un)
+[Les] enfants sont avec [des] amis. | بچه‌ها با چند دوست هستند. | d: Le, La, L' / un, une, l'
+[Les] chiens et [les] chats sont dans la maison. | سگ‌ها و گربه‌ها در خانه هستند. | d: Le, La, L' / le, la, l' | full: Les chats et les chiens sont dans la maison.
+Les voitures [sont] dans la rue et les enfants [sont] à la maison. | ماشین‌ها در خیابان هستند و بچه‌ها خانه. | d: est, es, sommes / est, êtes, es | full: Les enfants sont à la maison et les voitures sont dans la rue.
+Voilà [des] chiens et [des] chats. | این هم چند سگ و چند گربه. | d: un, une, le / un, une, le | full: Voilà des chats et des chiens.
+[Les] filles de Paul sont avec [les] garçons de Marie. | دخترهای پل با پسرهای ماری هستند. | d: La, Le, L' / le, la, l'
+[Les] hommes et [les] femmes sont ici. | مردها و زن‌ها اینجا هستند. | d: Le, La, L' / le, la, l' | full: Les femmes et les hommes sont ici.
+transforms:
+Le chien est ici. => Les chiens sont ici. | جمله را جمع کن.
+La voiture est dans la rue. => Les voitures sont dans la rue. | جمله را جمع کن.
+C'est un livre. => Ce sont des livres. | جمله را جمع کن.
+L'enfant est à l'école. => Les enfants sont à l'école. | جمله را جمع کن.
+L'ami de Paul est ici. => Les amis de Paul sont ici. | جمله را جمع کن.
+Voilà une table. => Voilà des tables. | جمله را جمع کن.
+translations:
+بچه‌ها در مدرسه هستند. => Les enfants sont à l'école.
+این‌ها دوست‌های پل هستند. => Ce sont les amis de Paul. ; Ce sont des amis de Paul. ; Ce sont les amies de Paul. ; Ce sont des amies de Paul.
+سگ‌ها زیر میز هستند. => Les chiens sont sous la table.
+مردم در خیابان هستند. => Les gens sont dans la rue.
+این هم چند کتاب. => Voilà des livres. ; Voici des livres.

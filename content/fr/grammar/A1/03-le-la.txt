@@ -1,0 +1,75 @@
+code: fr-a1-le-la
+title: حرف تعریف معین: le، la و l'
+scope: حرف تعریف معین مفرد: le برای اسم مذکر، la برای اسم مؤنث، و l' قبل از اسمی که با صدادار یا h شروع می‌شود؛ جمع (les) در واحد بعد می‌آید.
+can_do: حالا می‌توانی درباره چیزی حرف بزنی که هر دو می‌دانید کدام است: le chien، la maison.
+rule: le + اسم مذکر، la + اسم مؤنث؛ قبل از صدادار یا h هر دو l' می‌شوند: l'ami، l'école.
+mistake: فارسی حرف تعریف معین ندارد («کتاب روی میز است») و فارسی‌زبان‌ها آن را جا می‌اندازند («Livre est sur table»)؛ در فرانسوی اسم تقریباً همیشه حرف تعریف می‌خواهد: Le livre est sur la table. خطای دیگر: «le ami» به‌جای l'ami.
+lesson:
+وقتی در فارسی می‌گوییم «سگ اینجاست»، هر دو می‌دانیم کدام سگ؛ فرانسوی برای این حالت le یا la می‌گذارد.
+le قبل از اسم مذکر می‌آید و la قبل از اسم مؤنث: le chien، la maison.
+قبل از اسمی که با صدادار (a، e، i، o، u) یا h شروع شود، le و la کوتاه می‌شوند و l' می‌شوند: l'ami، l'école، l'homme.
+un/une یعنی «یک …»، ولی le/la یعنی «همان … که می‌دانیم کدام است».
+در فرانسوی اسم تنها کم می‌آید؛ تقریباً همیشه حرف تعریفی قبلش هست.
+table:
+قبل از | مذکر | مؤنث
+بی‌صدا | le chien | la maison
+صدادار یا h | l'ami | l'école
+sets:
+le: chien, chat, pain, café, garçon, problème
+la: maison, voiture, rue, table, famille, ville
+l': ami, école, eau, homme, enfant, idée
+examples:
+Le chien est ici. | سگ اینجاست.
+La maison est grande. | خانه بزرگ است.
+L'école est dans la rue. | مدرسه در خیابان است.
+C'est la voiture de Paul. | این ماشینِ پل است.
+targets:
+[Le] chien est ici. | سگ اینجاست. | d: La, Les, L' | hint: (le)
+[La] maison est petite. | خانه کوچک است. | d: Le, Les, L'
+[L']école est là. | مدرسه آنجاست. | d: Le, La, Les | hint: (le)
+C'est [la] voiture de Paul. | این ماشینِ پل است. | d: le, les, l'
+Paul est dans [la] rue. | پل در خیابان است. | d: le, les, l' | hint: (le)
+Le livre est sur [la] table. | کتاب روی میز است. | d: le, les, l'
+[Le] pain est bon. | نان خوب است. | d: La, Les, L' | hint: (le)
+[L']eau est sur la table. | آب روی میز است. | d: Le, La, Les
+[Le] café est très bon. | قهوه خیلی خوب است. | d: La, Les, L' | hint: (le)
+[La] famille est à la maison. | خانواده خانه است. | d: Le, Les, L'
+Je suis avec [l']ami de Sara. | من با دوستِ سارا هستم. | d: le, la, les | hint: (le)
+[L']homme est dans la voiture. | مرد در ماشین است. | d: Le, La, Les
+C'est [le] chat de Marie. | این گربه ماری است. | d: la, les, l' | hint: (le)
+[La] ville est grande. | شهر بزرگ است. | d: Le, Les, L'
+[L']enfant est à l'école. | بچه در مدرسه است. | d: Le, La, Les | hint: (le)
+[La] fille de Paul est à Lyon. | دخترِ پل در لیون است. | d: Le, Les, L'
+[Le] garçon est petit. | پسر کوچک است. | d: La, Les, L' | hint: (le)
+[L']idée est bonne. | ایده خوب است. | d: Le, La, Les
+C'est [la] vie ! | زندگی همین است! | d: le, les, l' | hint: (le)
+[La] table est petite. | میز کوچک است. | d: Le, Les, L'
+Le chien est dans [la] maison. | سگ در خانه است. | d: le, les, l' | hint: (le)
+Marie est à [l']école. | ماری در مدرسه است. | d: le, la, les
+C'est [le] nom de la rue. | این اسم خیابان است. | d: la, les, l' | hint: (le)
+[La] femme de Reza est à Chiraz. | همسرِ رضا در شیراز است. | d: Le, Les, L'
+[Le] travail est ici. | کار اینجاست. | d: La, Les, L' | hint: (le)
+C'est [l']eau de Marie. | این آبِ ماری است. | d: le, la, les
+[Le] chat est sous la table. | گربه زیر میز است. | d: La, Les, L' | hint: (le)
+C'est [le] problème ! | مشکل همین است! | d: la, les, l'
+[La] voiture est grande. | ماشین بزرگ است. | d: Le, Les, L' | hint: (le)
+Je suis dans [la] voiture de Paul. | من در ماشینِ پل هستم. | d: le, les, l'
+[Le] garçon est dans [la] rue. | پسر در خیابان است. | d: La, Les, L' / le, les, l'
+[L']ami de Paul est dans [la] rue. | دوستِ پل در خیابان است. | d: Le, La, Les / le, les, l'
+[Le] chat est sur [la] table. | گربه روی میز است. | d: La, Les, L' / le, les, l'
+[L']enfant est avec [le] chien. | بچه با سگ است. | d: Le, La, Les / la, les, l'
+[La] maison de Marie est dans [la] ville. | خانه ماری در شهر است. | d: Le, Les, L' / le, les, l'
+[Le] pain est sur [la] table. | نان روی میز است. | d: La, Les, L' / le, les, l'
+[L']homme est avec [la] famille. | مرد با خانواده است. | d: Le, La, Les / le, les, l'
+transforms:
+Le chien est ici. => La maison est ici. | به‌جای chien کلمه maison را بگذار.
+La voiture est petite. => Le chat est petit. | به‌جای voiture کلمه chat را بگذار.
+Le livre est sur la table. => L'eau est sur la table. | به‌جای livre کلمه eau را بگذار.
+C'est la maison de Paul. => C'est l'école de Paul. | به‌جای maison کلمه école را بگذار.
+Je suis avec le garçon. => Je suis avec l'enfant. | به‌جای garçon کلمه enfant را بگذار.
+translations:
+سگ کوچک است. => Le chien est petit.
+آب روی میز است. => L'eau est sur la table.
+مدرسه آنجاست. => L'école est là. ; L'école est là-bas.
+پل در خیابان است. => Paul est dans la rue.
+این ماشینِ ماری است. => C'est la voiture de Marie.

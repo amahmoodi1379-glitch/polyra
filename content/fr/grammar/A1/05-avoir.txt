@@ -1,0 +1,76 @@
+code: fr-a1-avoir
+title: فعل avoir (داشتن) در زمان حال
+scope: صرف avoir در زمان حال با همه ضمیرها (j'ai، tu as، il/elle/on a، nous avons، vous avez، ils/elles ont)، j' قبل از صدادار، و گفتن سن با avoir (J'ai 20 ans)؛ منفی در واحدهای بعد می‌آید.
+can_do: حالا می‌توانی بگویی چه چیزی داری و چند سالت است.
+rule: avoir بی‌قاعده است: j'ai، tu as، il/elle/on a، nous avons، vous avez، ils/elles ont.
+mistake: فارسی‌زبان‌ها سن را با «بودن» می‌گویند («Je suis 20 ans»)؛ در فرانسوی سن را «دارند»: J'ai 20 ans. خطاهای دیگر: «je ai» به‌جای j'ai، و قاطی کردن ils ont (دارند) با ils sont (هستند).
+tables: présent | avoir
+lesson:
+avoir یعنی «داشتن»: J'ai un chien یعنی «من یک سگ دارم».
+je قبل از صدادار j' می‌شود: j'ai، نه je ai.
+ils ont (دارند) و ils sont (هستند) خیلی شبیه‌اند: ont با صدای «اُن» است و sont با «سُن».
+سن را در فرانسوی با avoir می‌گویند: J'ai 20 ans، کلمه‌به‌کلمه «۲۰ سال دارم».
+table:
+ضمیر | avoir | معنی
+j' | ai | دارم
+tu | as | داری
+il / elle / on | a | دارد
+nous | avons | داریم
+vous | avez | دارید
+ils / elles | ont | دارند
+examples:
+J'ai un chien. | من یک سگ دارم.
+Marie a une voiture. | ماری یک ماشین دارد.
+Nous avons des amis à Lyon. | ما چند دوست در لیون داریم.
+Paul a 10 ans. | پل ۱۰ سالش است.
+targets:
+J'[ai] un chien. | من یک سگ دارم. | d: as, a, avons | hint: (avoir)
+Tu [as] une voiture. | تو یک ماشین داری. | d: ai, a, avez | hint: (avoir)
+Paul [a] un chat. | پل یک گربه دارد. | d: as, ai, ont
+Marie [a] une grande maison. | ماری یک خانه بزرگ دارد. | d: as, ont, avez | hint: (avoir)
+Nous [avons] un ami à Paris. | ما یک دوست در پاریس داریم. | d: avez, ont, a | hint: (avoir)
+Vous [avez] des enfants ? | شما بچه دارید؟ | d: avons, ont, as
+Ils [ont] une maison à Lyon. | آن‌ها یک خانه در لیون دارند. | d: sont, a, avez | hint: (avoir)
+Elles [ont] des chats. | آن‌ها (خانم‌ها) چند گربه دارند. | d: a, avons, avez
+Sara [a] 20 ans. | سارا ۲۰ سالش است. | d: est, as, ont | hint: (avoir)
+Paul [a] 8 ans. | پل ۸ سالش است. | d: est, as, ont | hint: (avoir)
+Nous [avons] 30 ans. | ما ۳۰ سالمان است. | d: sommes, avez, ont
+Ils [ont] 10 ans. | آن‌ها ۱۰ سالشان است. | d: sont, a, avez | hint: (avoir)
+On [a] une idée ! | ما یک فکری داریم! | d: avons, ont, as
+J'[ai] une idée. | من یک فکری دارم. | d: as, a, ont | hint: (avoir)
+Tu [as] un problème ? | تو مشکلی داری؟ | d: a, ai, avez
+Le garçon [a] un livre. | پسر یک کتاب دارد. | d: as, ai, ont | hint: (avoir)
+Les enfants [ont] un chien. | بچه‌ها یک سگ دارند. | d: sont, a, avons
+La fille de Paul [a] 5 ans. | دخترِ پل ۵ سالش است. | d: est, as, ont | hint: (avoir)
+Vous [avez] une voiture ? | شما ماشین دارید؟ | d: avons, as, ont | hint: (avoir)
+Nous [avons] des amis à Nice. | ما چند دوست در نیس داریم. | d: avez, ont, a
+J'[ai] un ami à Téhéran. | من یک دوست در تهران دارم. | d: as, a, avons
+Marie et Paul [ont] une maison. | ماری و پل یک خانه دارند. | d: sont, a, avez | hint: (avoir) | full: Paul et Marie ont une maison.
+Tu [as] le temps ? | وقت داری؟ | d: a, es, ai
+Elle [a] un grand chien. | او (زن) یک سگ بزرگ دارد. | d: as, ont, ai | hint: (avoir)
+Il [a] une petite voiture. | او (مرد) یک ماشین کوچک دارد. | d: as, ont, ai
+Nous [avons] un problème. | ما یک مشکل داریم. | d: avez, ont, a
+Vous [avez] le livre de Paul ? | کتابِ پل را دارید؟ | d: avons, as, ont | hint: (avoir)
+Ils [ont] le temps. | آن‌ها وقت دارند. | d: sont, a, avons
+J'[ai] 2 chats. | من ۲ گربه دارم. | d: as, a, ont
+Elle [a] 30 ans. | او (زن) ۳۰ سالش است. | d: est, as, ont | hint: (avoir)
+On [a] un chat à la maison. | ما خانه یک گربه داریم. | d: avons, ont, as | hint: (avoir)
+Vous [avez] 20 ans ? | شما ۲۰ سالتان است؟ | d: êtes, avons, ont
+J'[ai] un chien et tu [as] un chat. | من یک سگ دارم و تو یک گربه. | d: as, a, avons / ai, a, avez | full: Tu as un chat et j'ai un chien.
+Nous [avons] une maison et vous [avez] une voiture. | ما یک خانه داریم و شما یک ماشین. | d: avez, ont, a / avons, ont, as | full: Vous avez une voiture et nous avons une maison.
+Paul [a] 10 ans et Marie [a] 8 ans. | پل ۱۰ سالش است و ماری ۸ سالش. | d: est, as, ont / est, as, ont | full: Marie a 8 ans et Paul a 10 ans.
+Les enfants [sont] à l'école et ils [ont] un livre. | بچه‌ها در مدرسه هستند و یک کتاب دارند. | d: ont, est, a / sont, a, avez
+Je [suis] à Paris et j'[ai] un ami ici. | من در پاریس هستم و اینجا یک دوست دارم. | d: ai, es, est / as, a, avons
+Le chat [est] petit et il [a] 2 ans. | گربه کوچک است و ۲ سالش است. | d: a, es, sont / est, as, ont
+transforms:
+J'ai un chien. => Nous avons un chien. | جمله را با nous بنویس.
+Il a une voiture. => Ils ont une voiture. | جمله را با ils بنویس.
+Tu as un livre. => Vous avez un livre. | جمله را با vous بنویس.
+Elle a 20 ans. => Elles ont 20 ans. | جمله را با elles بنویس.
+Nous avons un chat. => J'ai un chat. | جمله را با je بنویس.
+translations:
+من یک سگ دارم. => J'ai un chien.
+پل ۱۰ سالش است. => Paul a 10 ans. ; Paul a dix ans.
+ما یک خانه در لیون داریم. => Nous avons une maison à Lyon. ; On a une maison à Lyon.
+تو وقت داری؟ => Tu as le temps ?
+آن‌ها یک ماشین دارند. => Ils ont une voiture. ; Elles ont une voiture.

@@ -1,0 +1,76 @@
+code: fr-a1-un-une
+title: یک: un و une (مذکر و مؤنث)
+scope: حرف تعریف نامعین مفرد un برای اسم مذکر و une برای اسم مؤنث، و اینکه هر اسم فرانسوی جنس دارد؛ جمع (des) در واحد چهارم می‌آید.
+can_do: حالا می‌توانی چیزها و آدم‌ها را نام ببری: un chien، une maison.
+rule: هر اسم یا مذکر است یا مؤنث: un برای مذکر (un chien)، une برای مؤنث (une maison).
+mistake: فارسی جنس دستوری ندارد و فارسی‌زبان‌ها برای همه اسم‌ها un می‌گویند («un maison»)؛ جنس هر اسم را همراه خودش حفظ کن: une maison، une voiture، un problème.
+lesson:
+در فارسی «یک» برای همه اسم‌ها یکی است، ولی در فرانسوی هر اسم یا مذکر است یا مؤنث.
+un قبل از اسم مذکر می‌آید و une قبل از اسم مؤنث: un chien (یک سگ)، une maison (یک خانه).
+برای آدم‌ها جنس معمولاً همان جنس طبیعی است: un homme، une femme، un ami، une amie.
+جنس چیزها قاعده روشنی ندارد؛ پس هر اسم تازه را همیشه با un یا une حفظ کن.
+بیشتر اسم‌هایی که به e ختم می‌شوند مؤنث‌اند، ولی نه همه: un problème.
+table:
+جنس | حرف تعریف | مثال
+مذکر | un | un chien، un ami
+مؤنث | une | une maison، une amie
+sets:
+un: chien, chat, garçon, problème, café, nom
+une: maison, voiture, ville, rue, école, idée
+examples:
+C'est un chien. | این یک سگ است.
+C'est une maison. | این یک خانه است.
+Paul est avec un ami. | پل با یک دوست است.
+Marie est dans une voiture. | ماری در یک ماشین است.
+targets:
+C'est [un] chien. | این یک سگ است. | d: une, des, la | hint: (un)
+C'est [une] maison. | این یک خانه است. | d: un, des, le | hint: (un)
+C'est [une] voiture. | این یک ماشین است. | d: un, des, le
+C'est [un] chat. | این یک گربه است. | d: une, des, la
+Voilà [une] école. | این هم یک مدرسه. | d: un, des, le | hint: (un)
+Paul est avec [un] ami. | پل با یک دوست است. | d: une, des, la | hint: (un)
+Marie est avec [une] amie. | ماری با یک دوست است. | d: un, des, le
+C'est [une] idée. | این یک ایده است. | d: un, des, le | hint: (un)
+C'est [un] problème. | این یک مشکل است. | d: une, des, la
+C'est [une] rue. | این یک خیابان است. | d: un, des, le | hint: (un)
+C'est [une] ville. | این یک شهر است. | d: un, des, le
+C'est [un] garçon. | این یک پسر است. | d: une, des, la | hint: (un)
+C'est [une] fille. | این یک دختر است. | d: un, des, le
+C'est [un] homme. | این یک مرد است. | d: une, des, la | hint: (un)
+C'est [une] femme. | این یک زن است. | d: un, des, le
+Je suis dans [une] voiture. | من در یک ماشین هستم. | d: un, des, le | hint: (un)
+Le chat est sur [une] table. | گربه روی یک میز است. | d: un, des, le
+Voilà [un] café. | این هم یک قهوه. | d: une, des, la | hint: (un)
+Voilà [une] table. | این هم یک میز. | d: un, des, le
+C'est [une] bonne idée. | این ایده خوبی است. | d: un, des, le | hint: (un)
+C'est [un] bon café. | این قهوه خوبی است. | d: une, des, la
+C'est [une] grande maison. | این خانه بزرگی است. | d: un, des, le | hint: (un)
+C'est [un] petit chien. | این سگ کوچکی است. | d: une, des, la | hint: (un)
+C'est [une] petite voiture. | این ماشین کوچکی است. | d: un, des, le
+C'est [un] grand garçon. | این پسر بزرگی است. | d: une, des, la | hint: (un)
+Marie est avec [un] chien. | ماری با یک سگ است. | d: une, des, la
+C'est [un] nom. | این یک اسم است. | d: une, des, la | hint: (un)
+C'est [une] famille. | این یک خانواده است. | d: un, des, le | hint: (un)
+C'est [un] grand problème. | این مشکل بزرگی است. | d: une, des, la
+Je suis avec [un] ami. | من با یک دوست هستم. | d: une, des, la | hint: (un)
+Voilà [un] pain. | این هم یک نان. | d: une, des, la
+Voilà [un] chat et [un] chien. | این هم یک گربه و یک سگ. | d: une, des, la / une, des, la | full: Voilà un chien et un chat.
+Paul est avec [un] ami et Marie est avec [une] amie. | پل با یک دوست است و ماری هم با یک دوست. | d: une, des, la / un, des, le | full: Marie est avec une amie et Paul est avec un ami.
+Il est dans [une] rue avec [un] chien. | او (مرد) با یک سگ در یک خیابان است. | d: un, des, le / une, des, la | full: Il est avec un chien dans une rue.
+Je suis dans [une] voiture avec [un] ami. | من با یک دوست در یک ماشین هستم. | d: un, des, le / une, des, la | full: Je suis avec un ami dans une voiture.
+Voilà [un] garçon et [une] fille. | این هم یک پسر و یک دختر. | d: une, des, la / un, des, le | full: Voilà une fille et un garçon.
+Voilà [une] maison et [une] école. | این هم یک خانه و یک مدرسه. | d: un, des, le / un, des, le | full: Voilà une école et une maison.
+Sara est dans [une] grande maison avec [un] petit chat. | سارا با یک گربه کوچک در یک خانه بزرگ است. | d: un, des, le / une, des, la | full: Sara est avec un petit chat dans une grande maison.
+transforms:
+C'est un chien. => C'est une maison. | به‌جای chien کلمه maison را بگذار.
+C'est une voiture. => C'est un café. | به‌جای voiture کلمه café را بگذار.
+Voilà un garçon. => Voilà une fille. | به‌جای garçon کلمه fille را بگذار.
+C'est un problème. => C'est une idée. | به‌جای problème کلمه idée را بگذار.
+Paul est avec un ami. => Paul est avec une amie. | به‌جای ami بنویس amie (دوستِ دختر).
+translations:
+این یک خانه است. => C'est une maison.
+این یک سگ است. => C'est un chien.
+من با یک دوست هستم. => Je suis avec un ami. ; Je suis avec une amie.
+این یک مشکل است. => C'est un problème.
+این یک ماشین کوچک است. => C'est une petite voiture.
+این ایده خوبی است. => C'est une bonne idée.
