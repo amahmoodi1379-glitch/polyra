@@ -1,11 +1,11 @@
 // French A1, card words 431–530 (shopping, the town, transport, travel, clothes, the body, health, weather).
 # cher
 Ce restaurant est très [cher]. | این رستوران خیلی گران است.
-Ici, la viande est [chère]. | اینجا گوشت گران است.
-En hiver, les fruits sont [chers]. | زمستان میوه‌ها گران‌اند.
+Ici, la viande est [chère]. | اینجا گوشت گران است. | d: bonne, petite, grande
+En hiver, les fruits sont [chers]. | زمستان میوه‌ها گران‌اند. | d: bons, petits, grands
 Ce n'est pas [cher] ! | گران نیست!
 Paris est une ville [chère]. | پاریس شهر گرانی است.
-L'appartement est trop [cher] pour nous. | آپارتمان برای ما زیادی گران است.
+L'appartement est trop [cher] pour nous. | آپارتمان برای ما زیادی گران است. | d: petit, grand, vieux
 # sac
 Où est mon [sac] ? | کیفم کجاست؟
 Je mets les courses dans un [sac]. | خریدها را در یک کیسه می‌گذارم.
@@ -21,11 +21,11 @@ Les enfants ouvrent leurs [cadeaux]. | بچه‌ها هدیه‌هایشان ر�
 Ce [cadeau] coûte cher. | این هدیه گران است.
 Qu'est-ce que tu veux comme [cadeau] ? | چه هدیه‌ای می‌خواهی؟
 # carte
-Je peux payer par [carte] ? | می‌توانم با کارت پرداخت کنم؟
-J'ai oublié ma [carte] à la maison. | کارتم را در خانه جا گذاشتم.
-Voici ma [carte], monsieur. | بفرمایید آقا، این کارت من است.
-Pour son anniversaire, il envoie une [carte] à sa grand-mère. | برای تولد مادربزرگش یک کارت برایش می‌فرستد.
-Je cherche ma [carte] dans mon sac. | دنبال کارتم در کیفم می‌گردم.
+Je peux payer par [carte] ? | می‌توانم با کارت پرداخت کنم؟ | d: boulangerie, minute, soirée
+J'ai oublié ma [carte] à la maison. | کارتم را در خانه جا گذاشتم. | d: boulangerie, mère, tasse
+Voici ma [carte], monsieur. | بفرمایید آقا، این کارت من است. | d: boulangerie, soirée, tasse
+Pour son anniversaire, il envoie une [carte] à sa grand-mère. | برای تولد مادربزرگش یک کارت برایش می‌فرستد. | d: boulangerie, date, tasse
+Je cherche ma [carte] dans mon sac. | دنبال کارتم در کیفم می‌گردم. | d: boulangerie, fin, tasse
 # banque
 Ce matin, je vais à la [banque]. | امروز صبح به بانک می‌روم.
 La [banque] ouvre à neuf heures. | بانک ساعت نه باز می‌شود.
@@ -75,10 +75,10 @@ Cent personnes habitent dans ce [village]. | صد نفر در این روستا 
 J'aime la vie au [village]. | زندگی در روستا را دوست دارم.
 En été, le [village] est très joli. | تابستان روستا خیلی قشنگ است.
 # voisin
-Mon [voisin] a un grand chien. | همسایه‌ام یک سگ بزرگ دارد.
-Nos [voisins] sont iraniens. | همسایه‌هایمان ایرانی‌اند.
-Je connais bien ma [voisine]. | همسایه‌ام را خوب می‌شناسم.
-Notre [voisin] travaille à la banque. | همسایه‌مان در بانک کار می‌کند.
+Mon [voisin] a un grand chien. | همسایه‌ام یک سگ بزرگ دارد. | d: ami, frère, fils
+Nos [voisins] sont iraniens. | همسایه‌هایمان ایرانی‌اند. | d: amis, garçons, parents
+Je connais bien ma [voisine]. | همسایه‌ام را خوب می‌شناسم. | d: sœur, mère, fille
+Notre [voisin] travaille à la banque. | همسایه‌مان در بانک کار می‌کند. | d: ami, frère, oncle
 Tu connais tes [voisins] ? | همسایه‌هایت را می‌شناسی؟
 # route
 Cette [route] va à Lyon. | این جاده به لیون می‌رود.
@@ -119,9 +119,9 @@ L'eau de la [piscine] est très bonne. | آب استخر خیلی خوب است.
 Je vais à la [piscine] avec mes amis. | با دوستانم به استخر می‌روم.
 # hôtel
 Nous dormons dans un [hôtel]. | در یک هتل می‌خوابیم.
-L'[hôtel] est dans le centre. | هتل در مرکز شهر است.
-J'ai réservé une chambre à l'[hôtel]. | در هتل یک اتاق رزرو کردم.
-Cet [hôtel] est très cher. | این هتل خیلی گران است.
+L'[hôtel] est dans le centre. | هتل در مرکز شهر است. | d: appartement, école, argent
+J'ai réservé une chambre à l'[hôtel]. | در هتل یک اتاق رزرو کردم. | d: appartement, école, hôpital
+Cet [hôtel] est très cher. | این هتل خیلی گران است. | d: appartement, ordinateur, avion
 Il travaille dans un grand [hôtel]. | او در یک هتل بزرگ کار می‌کند.
 # bus
 Je prends le [bus] pour aller au travail. | برای رفتن سر کار اتوبوس سوار می‌شوم.
@@ -170,11 +170,11 @@ Sa [moto] est dans la rue. | موتورش در خیابان است.
 Je n'aime pas les [motos]. | از موتورسیکلت خوشم نمی‌آید.
 # avion
 Je vais à Paris en [avion]. | با هواپیما به پاریس می‌روم.
-L'[avion] part à six heures. | هواپیما ساعت شش حرکت می‌کند.
+L'[avion] part à six heures. | هواپیما ساعت شش حرکت می‌کند. | d: aéroport, hôtel, enfant
 Le bébé dort dans l'[avion]. | نوزاد در هواپیما می‌خوابد.
-Il y a 200 personnes dans l'[avion]. | در هواپیما دویست نفر هست.
+Il y a 200 personnes dans l'[avion]. | در هواپیما دویست نفر هست. | d: aéroport, hôtel, immeuble
 Les enfants regardent les [avions]. | بچه‌ها هواپیماها را تماشا می‌کنند.
-C'est la première fois que je prends l'[avion]. | اولین بار است که سوار هواپیما می‌شوم.
+C'est la première fois que je prends l'[avion]. | اولین بار است که سوار هواپیما می‌شوم. | d: escalier, aéroport, hôtel
 # bateau
 Mon oncle a un [bateau]. | عمویم یک قایق دارد.
 Il y a beaucoup de [bateaux] à Marseille. | در مارسی قایق زیاد هست.
@@ -188,11 +188,11 @@ Je t'attends à la [gare]. | در ایستگاه منتظرت هستم.
 La [gare] est dans le centre de la ville. | ایستگاه قطار در مرکز شهر است.
 Pour aller à la [gare], nous prenons un taxi. | برای رفتن به ایستگاه قطار تاکسی می‌گیریم.
 # aéroport
-L'[aéroport] est très grand. | فرودگاه خیلی بزرگ است.
-Je vais à l'[aéroport] en taxi. | با تاکسی به فرودگاه می‌روم.
-Mon père m'attend à l'[aéroport]. | پدرم در فرودگاه منتظرم است.
-L'avion arrive à l'[aéroport] à midi. | هواپیما ظهر به فرودگاه می‌رسد.
-Il y a un bus pour l'[aéroport] ? | برای فرودگاه اتوبوس هست؟
+L'[aéroport] est très grand. | فرودگاه خیلی بزرگ است. | d: avion, hôtel, immeuble
+Je vais à l'[aéroport] en taxi. | با تاکسی به فرودگاه می‌روم. | d: hôtel, hôpital, école
+Mon père m'attend à l'[aéroport]. | پدرم در فرودگاه منتظرم است. | d: hôtel, école, hôpital
+L'avion arrive à l'[aéroport] à midi. | هواپیما ظهر به فرودگاه می‌رسد. | d: hôtel, école, hôpital
+Il y a un bus pour l'[aéroport] ? | برای فرودگاه اتوبوس هست؟ | d: hôtel, école, hôpital
 # ticket
 Un [ticket] de métro, s'il vous plaît. | یک بلیت مترو، لطفاً.
 J'ai deux [tickets] de bus. | دو بلیت اتوبوس دارم.
@@ -257,11 +257,11 @@ Vous partez demain ? [Bonnes vacances] ! | فردا می‌روید؟ تعطیل
 [Bonnes vacances] à toute la famille ! | تعطیلات به همهٔ خانواده خوش بگذرد! | d: Bonne nuit, Bonne journée, Bon anniversaire
 Merci, [bonnes vacances] à vous aussi ! | ممنون، تعطیلات به شما هم خوش بگذرد! | d: bonne nuit, bonne journée, bon anniversaire
 # valise
-Ma [valise] est très grande. | چمدانم خیلی بزرگ است.
-Ce soir, je fais ma [valise]. | امشب چمدانم را می‌بندم.
-Où est ta [valise] ? | چمدانت کجاست؟
+Ma [valise] est très grande. | چمدانم خیلی بزرگ است. | d: lampe, chambre, télévision
+Ce soir, je fais ma [valise]. | امشب چمدانم را می‌بندم. | d: chambre, lampe, tasse
+Où est ta [valise] ? | چمدانت کجاست؟ | d: famille, bouteille, chambre
 Nous avons trois [valises]. | ما سه چمدان داریم.
-Il met sa [valise] dans le taxi. | او چمدانش را در تاکسی می‌گذارد.
+Il met sa [valise] dans le taxi. | او چمدانش را در تاکسی می‌گذارد. | d: chaise, lampe, bouteille
 # passeport
 Votre [passeport], s'il vous plaît. | گذرنامه‌تان، لطفاً.
 J'ai oublié mon [passeport] ! | گذرنامه‌ام را جا گذاشتم!
@@ -312,21 +312,21 @@ Ce magasin vend des [vêtements] pour enfants. | این مغازه لباس بچ
 Je mets mes [vêtements] dans la valise. | لباس‌هایم را در چمدان می‌گذارم.
 Le dimanche, il lave ses [vêtements]. | او یکشنبه‌ها لباس‌هایش را می‌شوید.
 # pantalon
-Je cherche un [pantalon]. | دنبال یک شلوار می‌گردم.
-Ce [pantalon] est trop grand. | این شلوار زیادی بزرگ است.
+Je cherche un [pantalon]. | دنبال یک شلوار می‌گردم. | d: t-shirt, pull, manteau
+Ce [pantalon] est trop grand. | این شلوار زیادی بزرگ است. | d: chapeau, pull, manteau
 Il met son [pantalon]. | او شلوارش را می‌پوشد.
-J'ai acheté deux [pantalons]. | دو شلوار خریدم.
-Ton [pantalon] est très joli. | شلوارت خیلی قشنگ است.
+J'ai acheté deux [pantalons]. | دو شلوار خریدم. | d: t-shirts, pulls, chapeaux
+Ton [pantalon] est très joli. | شلوارت خیلی قشنگ است. | d: pull, chapeau, manteau
 # chemise
-Pour le travail, il met une [chemise]. | او برای کار پیراهن می‌پوشد.
-Cette [chemise] est chère. | این پیراهن گران است.
-J'ai lavé ma [chemise]. | پیراهنم را شستم.
+Pour le travail, il met une [chemise]. | او برای کار پیراهن می‌پوشد. | d: veste, jupe, chaussette
+Cette [chemise] est chère. | این پیراهن گران است. | d: veste, jupe, chaussure
+J'ai lavé ma [chemise]. | پیراهنم را شستم. | d: chaussure, chaussette, veste
 Mon père a beaucoup de [chemises]. | پدرم پیراهن زیاد دارد.
-Tu aimes ma [chemise] ? | پیراهنم را دوست داری؟
+Tu aimes ma [chemise] ? | پیراهنم را دوست داری؟ | d: veste, jupe, chaussure
 # t-shirt
 En été, je mets un [t-shirt]. | تابستان تی‌شرت می‌پوشم.
 Ce [t-shirt] coûte dix euros. | این تی‌شرت ده یورو است.
-J'ai trois [t-shirts] dans ma valise. | سه تی‌شرت در چمدانم دارم.
+Il y a un [t-shirt] dans mon sac. | یک تی‌شرت در کیفم هست.
 Ton [t-shirt] est trop petit. | تی‌شرتت زیادی کوچک است.
 Il lave son [t-shirt]. | او تی‌شرتش را می‌شوید.
 # pull
@@ -336,21 +336,21 @@ Ma grand-mère fait des [pulls]. | مادربزرگم پلیور می‌بافد
 J'ai acheté un [pull] pour mon frère. | برای برادرم یک پلیور خریدم.
 Où est mon [pull] ? | پلیورم کجاست؟
 # jean
-Je mets un [jean] et un t-shirt. | یک شلوار جین و یک تی‌شرت می‌پوشم.
-Ce [jean] coûte cher. | این شلوار جین گران است.
+Je mets un [jean] et un t-shirt. | یک شلوار جین و یک تی‌شرت می‌پوشم. | d: pull, manteau, chapeau
+Ce [jean] coûte cher. | این شلوار جین گران است. | d: pull, manteau, chapeau
 Les jeunes aiment les [jeans]. | جوان‌ها شلوار جین دوست دارند.
-J'ai deux [jeans]. | دو شلوار جین دارم.
-Mon [jean] est dans la valise. | شلوار جینم در چمدان است.
+J'ai deux [jeans]. | دو شلوار جین دارم. | d: pulls, manteaux, chapeaux
+Mon [jean] est dans la valise. | شلوار جینم در چمدان است. | d: pull, t-shirt, manteau
 # robe
-Pour la fête, elle met une jolie [robe]. | او برای جشن یک لباس قشنگ می‌پوشد.
-Cette [robe] est trop chère. | این لباس زیادی گران است.
-Ma fille aime cette [robe]. | دخترم این لباس را دوست دارد.
-J'achète une [robe] pour ma mère. | برای مادرم یک لباس زنانه می‌خرم.
-Elle a beaucoup de [robes]. | او لباس زنانهٔ زیادی دارد.
+Pour la fête, elle met une jolie [robe]. | او برای جشن یک لباس قشنگ می‌پوشد. | d: jupe, veste, chaussure
+Cette [robe] est trop chère. | این لباس زیادی گران است. | d: jupe, veste, chaussure
+Ma fille aime cette [robe]. | دخترم این لباس را دوست دارد. | d: jupe, veste, chaussette
+J'achète une [robe] pour ma mère. | برای مادرم یک لباس زنانه می‌خرم. | d: jupe, veste, chaussure
+Elle a beaucoup de [robes]. | او لباس زنانهٔ زیادی دارد. | d: jupes, vestes, chaussettes
 # jupe
 Pour l'école, elle met une [jupe]. | او برای مدرسه دامن می‌پوشد.
 Cette [jupe] est très jolie. | این دامن خیلی قشنگ است.
-J'aime ta [jupe] ! | از دامنت خوشم می‌آید!
+J'aime ta [jupe] ! | از دامنت خوشم می‌آید! | d: chemise, robe, veste
 Ma sœur a acheté une [jupe]. | خواهرم یک دامن خرید.
 Dans ce magasin, les [jupes] sont chères. | در این مغازه دامن‌ها گران‌اند.
 # veste
@@ -393,7 +393,7 @@ Elle met ses [lunettes]. | او عینکش را می‌زند. | d: chaussures, 
 Il [porte] une chemise et un pull. | او یک پیراهن و یک پلیور پوشیده است.
 Je [porte] des lunettes. | من عینک می‌زنم.
 Tu [portes] un chapeau en été ? | تابستان کلاه می‌گذاری؟
-Les enfants [portent] des t-shirts. | بچه‌ها تی‌شرت پوشیده‌اند.
+Les enfants [portent] des pulls en hiver. | بچه‌ها زمستان پلیور می‌پوشند.
 Elle aime [porter] des jupes. | او دوست دارد دامن بپوشد.
 En hiver, nous [portons] un manteau. | زمستان‌ها پالتو می‌پوشیم.
 # corps
@@ -405,7 +405,7 @@ Il faut écouter son [corps]. | باید به بدنت گوش بدهی.
 # œil
 Elle a de beaux [yeux]. | او چشم‌های زیبایی دارد.
 Ferme les [yeux]. | چشم‌هایت را ببند.
-J'ai quelque chose dans l'[œil]. | یک چیزی توی چشمم رفته.
+J'ai quelque chose dans l'[œil]. | یک چیزی توی چشمم رفته. | d: oreille, eau, escalier
 Le bébé ouvre les [yeux]. | نوزاد چشم‌هایش را باز می‌کند.
 Mon fils a les [yeux] de sa mère. | پسرم چشم‌های مادرش را دارد.
 # bouche
@@ -422,8 +422,8 @@ Les lunettes sont sur son [nez]. | عینک روی بینی‌اش است.
 Tu as du chocolat sur le [nez] ! | روی دماغت شکلات هست!
 # oreille
 Le chat a de petites [oreilles]. | گربه گوش‌های کوچکی دارد.
-Elle me parle à l'[oreille]. | او در گوشم حرف می‌زند.
-J'ai de l'eau dans l'[oreille]. | توی گوشم آب رفته.
+Elle me parle à l'[oreille]. | او در گوشم حرف می‌زند. | d: œil, eau, école
+J'ai de l'eau dans l'[oreille]. | توی گوشم آب رفته. | d: œil, école, assiette
 Lave tes [oreilles] ! | گوش‌هایت را بشوی!
 Le bébé a les [oreilles] de son père. | نوزاد گوش‌های پدرش را دارد.
 # cheveu
@@ -445,9 +445,9 @@ Le sucre n'est pas bon pour les [dents]. | شکر برای دندان‌ها خ�
 Tu as de belles [dents]. | دندان‌های قشنگی داری.
 Mon grand-père n'a plus de [dents]. | پدربزرگم دیگر دندان ندارد.
 # bras
-Le bébé dort dans les [bras] de sa mère. | نوزاد در آغوش مادرش خوابیده است.
-Il prend sa fille dans ses [bras]. | او دخترش را در آغوش می‌گیرد.
-Lève les [bras] ! | دست‌هایت را بالا ببر!
+Le bébé dort dans les [bras] de sa mère. | نوزاد در آغوش مادرش خوابیده است. | d: pieds, cheveux, yeux
+Il prend sa fille dans ses [bras]. | او دخترش را در آغوش می‌گیرد. | d: pieds, cheveux, yeux
+Lève les [bras] ! | دست‌هایت را بالا ببر! | d: pieds, yeux, mains
 Elle a un sac sur le [bras]. | کیفش روی بازویش است.
 J'ai un problème au [bras]. | بازویم مشکل دارد.
 # doigt
@@ -457,11 +457,11 @@ Ne mets pas tes [doigts] dans ton nez ! | انگشت‌هایت را در بین
 Elle montre la maison du{du-contr} [doigt]. | او با انگشت خانه را نشان می‌دهد.
 Il y a du chocolat sur tes [doigts]. | روی انگشت‌هایت شکلات هست.
 # jambe
-Le chat dort sur mes [jambes]. | گربه روی پاهایم می‌خوابد.
-Elle a de belles [jambes]. | او پاهای زیبایی دارد.
+Le chat dort sur mes [jambes]. | گربه روی پاهایم می‌خوابد. | d: mains, oreilles, dents
+Elle a de belles [jambes]. | او پاهای زیبایی دارد. | d: mains, dents, oreilles
 Je mets mon pantalon, une [jambe] après l'autre. | شلوارم را می‌پوشم، یک پا بعد از پای دیگر.
 J'ai un problème à la [jambe]. | پایم مشکل دارد.
-Comme son père, il a de grandes [jambes]. | او مثل پدرش پاهای بلندی دارد.
+Comme son père, il a de grandes [jambes]. | او مثل پدرش پاهای بلندی دارد. | d: mains, oreilles, dents
 # dos
 Il porte son fils sur le [dos]. | او پسرش را روی پشتش می‌برد.
 Je dors sur le [dos]. | به پشت می‌خوابم.
@@ -490,11 +490,11 @@ Vous [avez mal] au ventre ? | شکمتان درد می‌کند؟
 Elles [ont mal] aux jambes. | پاهایشان درد می‌کند.
 # malade
 Aujourd'hui, je suis [malade]. | امروز مریضم.
-Mon fils est [malade], il reste à la maison. | پسرم مریض است، در خانه می‌ماند.
-Tu es [malade] ? | مریضی؟
-Les enfants sont [malades]. | بچه‌ها مریض‌اند.
+Mon fils est [malade], il reste à la maison. | پسرم مریض است، در خانه می‌ماند. | d: jeune, célibataire, seul
+Tu es [malade] ? | مریضی؟ | d: jeune, libre, seul
+Les enfants sont [malades]. | بچه‌ها مریض‌اند. | d: jeunes, petits, seuls
 Ma grand-mère est très [malade]. | مادربزرگم خیلی مریض است.
-Le chat est [malade] depuis hier. | گربه از دیروز مریض است.
+Le chat est [malade] depuis hier. | گربه از دیروز مریض است. | d: seul, petit, jeune
 # médecin
 Je vais chez le [médecin]. | پیش دکتر می‌روم.
 Mon père est [médecin]. | پدرم پزشک است.
@@ -503,11 +503,11 @@ Le [médecin] arrive à dix heures. | دکتر ساعت ده می‌رسد.
 Ma sœur veut être [médecin]. | خواهرم می‌خواهد پزشک شود.
 Demain, j'ai rendez-vous chez le [médecin]. | فردا وقت دکتر دارم.
 # hôpital
-Ma mère travaille à l'[hôpital]. | مادرم در بیمارستان کار می‌کند.
-Mon grand-père est à l'[hôpital]. | پدربزرگم در بیمارستان است.
+Ma mère travaille à l'[hôpital]. | مادرم در بیمارستان کار می‌کند. | d: hôtel, école, aéroport
+Mon grand-père est à l'[hôpital]. | پدربزرگم در بیمارستان است. | d: hôtel, aéroport, école
 L'[hôpital] est dans le centre. | بیمارستان در مرکز شهر است.
 Il y a deux [hôpitaux] dans notre ville. | در شهر ما دو بیمارستان هست.
-On va à l'[hôpital] en taxi. | با تاکسی به بیمارستان می‌رویم.
+On va à l'[hôpital] en taxi. | با تاکسی به بیمارستان می‌رویم. | d: hôtel, aéroport, école
 # médicament
 Prends ton [médicament], s'il te plaît. | لطفاً داروی‌ات را بخور.
 J'achète des [médicaments] à la pharmacie. | از داروخانه دارو می‌خرم.
@@ -529,16 +529,16 @@ En mai, le [temps] est très beau. | هوا در ماه مه خیلی خوب ا�
 # chaud
 Le café est très [chaud]. | قهوه خیلی داغ است.
 L'eau est [chaude]. | آب گرم است.
-Je voudrais un thé [chaud]. | یک چای داغ می‌خواستم.
+Je voudrais un thé [chaud]. | یک چای داغ می‌خواستم. | d: froid, iranien, anglais
 La soupe est trop [chaude] pour le bébé. | سوپ برای نوزاد زیادی داغ است.
-Ce manteau est très [chaud]. | این پالتو خیلی گرم است.
+Ce manteau est très [chaud]. | این پالتو خیلی گرم است. | d: froid, petit, grand
 Les croissants sont encore [chauds]. | کروسان‌ها هنوز گرم‌اند.
 # froid
 L'eau de la mer est [froide]. | آب دریا سرد است.
 Je bois un jus [froid]. | یک آب‌میوهٔ سرد می‌خورم.
 Le café est [froid] ! | قهوه سرد است!
-Ici, les hivers sont très [froids]. | زمستان‌ها اینجا خیلی سرد است.
-Mes pieds sont [froids]. | پاهایم سرد است.
+Ici, les hivers sont très [froids]. | زمستان‌ها اینجا خیلی سرد است. | d: chauds, beaux, petits
+Mes pieds sont [froids]. | پاهایم سرد است. | d: chauds, petits, grands
 # avoir chaud
 J'[ai chaud], tu peux ouvrir la fenêtre ? | گرمم است، می‌توانی پنجره را باز کنی؟
 Tu [as chaud] avec ce pull ? | با این پلیور گرمت نیست؟
@@ -554,28 +554,28 @@ Le bébé [a froid], ferme la fenêtre. | نوزاد سردش است، پنجر�
 Vous [avez froid], madame ? | سردتان است، خانم؟
 Les enfants [ont froid] après la piscine. | بچه‌ها بعد از استخر سردشان است.
 # faire beau
-Aujourd'hui, il [fait beau]. | امروز هوا خوب است. | d: fait chaud, fait froid, a froid
-À Nice, il [fait beau]. | در نیس هوا خوب است. | d: fait froid, fait chaud, a chaud
+Aujourd'hui, il [fait beau]. | امروز هوا خوب است.
+À Nice, il [fait beau]. | در نیس هوا خوب است.
 Demain, il va [faire beau]. | فردا هوا خوب می‌شود. | d: faire chaud, faire froid, avoir froid
-Quand il [fait beau], nous allons à la plage. | وقتی هوا خوب است به ساحل می‌رویم. | d: fait froid, fait chaud, a chaud
-Ce matin, il [fait beau]. | امروز صبح هوا خوب است. | d: fait chaud, fait froid, a chaud
+Quand il [fait beau], nous allons à la plage. | وقتی هوا خوب است به ساحل می‌رویم.
+Ce matin, il [fait beau]. | امروز صبح هوا خوب است.
 # faire chaud
-En été, il [fait chaud] à Téhéran. | تابستان در تهران هوا گرم است. | d: fait froid, fait beau, a chaud
-Il [fait chaud] aujourd'hui ! | امروز هوا گرم است! | d: fait froid, fait beau, a froid
+En été, il [fait chaud] à Téhéran. | تابستان در تهران هوا گرم است.
+Il [fait chaud] aujourd'hui ! | امروز هوا گرم است!
 Demain, il va [faire chaud]. | فردا هوا گرم می‌شود. | d: faire froid, faire beau, avoir froid
-Dans la cuisine, il [fait chaud]. | توی آشپزخانه گرم است. | d: fait froid, fait beau, a froid
-Quand il [fait chaud], je bois beaucoup d'eau. | وقتی هوا گرم است، زیاد آب می‌خورم. | d: fait froid, fait beau, a froid
+Dans la cuisine, il [fait chaud]. | توی آشپزخانه گرم است.
+Quand il [fait chaud], je bois beaucoup d'eau. | وقتی هوا گرم است، زیاد آب می‌خورم.
 # faire froid
-En hiver, il [fait froid]. | زمستان هوا سرد است. | d: fait chaud, fait beau, a chaud
-Ce matin, il [fait froid], mets ton manteau. | امروز صبح هوا سرد است، پالتویت را بپوش. | d: fait chaud, fait beau, a chaud
-À la montagne, il [fait froid]. | در کوه هوا سرد است. | d: fait chaud, fait beau, a chaud
+En hiver, il [fait froid]. | زمستان هوا سرد است.
+Ce matin, il [fait froid], mets ton manteau. | امروز صبح هوا سرد است، پالتویت را بپوش.
+À la montagne, il [fait froid]. | در کوه هوا سرد است.
 Demain, il va [faire froid]. | فردا هوا سرد می‌شود. | d: faire chaud, faire beau, avoir chaud
-Ferme la fenêtre, il [fait froid] ! | پنجره را ببند، سرد است! | d: fait chaud, fait beau, a chaud
+Ferme la fenêtre, il [fait froid] ! | پنجره را ببند، سرد است!
 # mauvais
 Ce restaurant est [mauvais]. | این رستوران بد است.
 C'est une [mauvaise] idée. | فکر بدی است.
 Ici, le café est [mauvais]. | قهوهٔ اینجا بد است.
-Aujourd'hui, il fait [mauvais]. | امروز هوا بد است.
+Aujourd'hui, il fait [mauvais]. | امروز هوا بد است. | d: beau, chaud, froid
 Ce n'est pas [mauvais] ! | بد نیست!
 Cette semaine, les fruits sont [mauvais]. | این هفته میوه‌ها بدند.
 # soleil
@@ -589,7 +589,7 @@ Mets ton chapeau, il y a beaucoup de [soleil]. | کلاهت را بگذار، آ
 Je n'aime pas la [pluie]. | باران را دوست ندارم.
 En automne, il y a beaucoup de [pluie]. | پاییز باران زیاد است.
 Les enfants jouent sous la [pluie]. | بچه‌ها زیر باران بازی می‌کنند.
-Avec cette [pluie], on reste à la maison. | با این باران در خانه می‌مانیم.
+Avec cette [pluie], on reste à la maison. | با این باران در خانه می‌مانیم. | d: neige, fête, soirée
 La [pluie] arrive ce soir. | امشب باران می‌آید.
 # pleuvoir
 Il [pleut] aujourd'hui. | امروز باران می‌آید. | d: neige, pleuvoir, plu
@@ -599,7 +599,7 @@ Il a [plu] toute la nuit. | تمام شب باران آمد. | d: pleuvoir, pleu
 Quand il [pleut], je prends le bus. | وقتی باران می‌آید، اتوبوس سوار می‌شوم. | d: neige, pleuvoir, plu
 Il ne [pleut] pas aujourd'hui. | امروز باران نمی‌آید. | d: neige, pleuvoir, plu
 # neige
-Les enfants jouent dans la [neige]. | بچه‌ها در برف بازی می‌کنند.
+Les enfants jouent dans la [neige]. | بچه‌ها در برف بازی می‌کنند. | d: pluie, fête, rue
 Il y a de la [neige] sur la montagne. | روی کوه برف هست.
 En hiver, j'aime la [neige]. | زمستان‌ها برف را دوست دارم.
 Ce matin, la [neige] est très belle. | امروز صبح برف خیلی قشنگ است.
