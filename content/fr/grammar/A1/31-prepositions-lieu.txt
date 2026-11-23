@@ -1,0 +1,76 @@
+code: fr-a1-prepositions-lieu
+title: جای چیزها: sur، sous، à côté de
+scope: حرف‌های اضافهٔ جا: dans، sur، sous، devant، derrière و entre، و à côté de، en face de، près de، loin de، à gauche de و à droite de، با de + le = du و de + les = des (à côté du parc، près des magasins).
+can_do: حالا می‌توانی بگویی چیزی کجاست و جایی را در شهر نشان بدهی: Le livre est sur la table. La banque est à côté du parc.
+rule: dans، sur، sous، devant، derrière، entre + اسم؛ à côté de، en face de، près de، loin de + اسم، با de + le = du و de + les = des؛ de la و de l' عوض نمی‌شوند.
+mistake: فارسی «کنارِ پارک» را فقط با یک کسره می‌گوید، برای همین فارسی‌زبان‌ها de را می‌اندازند («à côté le parc») یا آن را با le نمی‌چسبانند («à côté de le parc»)؛ درست: à côté du parc.
+lesson:
+حرف‌های اضافهٔ ساده بی‌واسطه قبل از اسم می‌آیند: dans (توی)، sur (روی)، sous (زیر)، devant (جلوی)، derrière (پشت)، entre (بین).
+بعضی‌ها با de می‌آیند: à côté de (کنار)، en face de (روبه‌روی)، près de (نزدیک)، loin de (دور از)، à gauche de و à droite de (سمت چپ و راستِ).
+de با le و les یکی می‌شود: de + le = du و de + les = des: à côté du parc، près des magasins.
+de la و de l' عوض نمی‌شوند: en face de la gare، près de l'école.
+با اسم آدم یا شهر فقط de می‌آید: à côté de Paul، loin de Paris.
+اگر چیزی بعدش نیاید، de هم نمی‌آید: La banque est à côté (بانک همین کنار است).
+table:
+ | با la یا l' | با le یا les
+کنار | à côté de la poste | à côté du parc
+روبه‌روی | en face de la gare | en face des magasins
+نزدیک | près de l'école | près du lac
+دور از | loin de la ville | loin du centre
+sets:
+بی de: dans, sur, sous, devant, derrière, entre
+با de: à côté de, en face de, près de, loin de
+examples:
+Le livre est sur la table. | کتاب روی میز است.
+La banque est près du parc. | بانک نزدیک پارک است.
+J'habite près de l'école. | نزدیک مدرسه زندگی می‌کنم.
+Le café est en face de la gare. | کافه روبه‌روی ایستگاه است.
+targets:
+Le chat est [sous] la table. | گربه زیر میز است. | d: à côté, en face, près
+Le livre est [sur] la table. | کتاب روی میز است. | d: à côté, en face, loin
+Les clés sont [dans] mon sac. | کلیدها توی کیفم هستند. | d: à côté, près, en face
+La voiture est [devant] la maison. | ماشین جلوی خانه است. | d: à côté, en face, près
+Le jardin est [derrière] la maison. | باغ پشت خانه است. | d: à côté, près, loin
+La pharmacie est [entre] la banque et la poste. | داروخانه بین بانک و پست است. | d: à côté, en face, près
+Il y a un arbre [devant] l'école. | یک درخت جلوی مدرسه هست. | d: à côté, près, en face
+Le chien dort [sous] le lit. | سگ زیر تخت می‌خوابد. | d: à côté, en face, près
+La banque est [à côté de] la poste. | بانک کنار پست است. | d: à côté, à côté à, à côté du | hint: (à côté de)
+Le restaurant est [en face de] la poste. | رستوران روبه‌روی پست است. | d: en face, en face à, en face du | hint: (en face de)
+J'habite [près de] la plage. | نزدیک ساحل زندگی می‌کنم. | d: près, près à, près du | hint: (près de)
+L'hôtel est [loin de] la gare. | هتل از ایستگاه دور است. | d: loin, loin à, loin du | hint: (loin de)
+La banque est près [du] parc. | بانک نزدیک پارک است. | d: de le, de la, des | hint: (de + le)
+Le café est près [de la] gare. | کافه نزدیک ایستگاه است. | d: du, de le, des | hint: (de + la)
+J'habite près [de l']école. | نزدیک مدرسه زندگی می‌کنم. | d: du, de la, de le | hint: (de + l')
+Le parc est près [des] magasins. | پارک نزدیک مغازه‌هاست. | d: de les, du, de la | hint: (de + les)
+La poste est loin [du] cinéma. | پست از سینما دور است. | d: de le, de la, des | hint: (de + le)
+Le restaurant est près [de l']hôtel. | رستوران نزدیک هتل است. | d: du, de la, de le | hint: (de + l')
+Mon appartement est loin [du] centre. | آپارتمانم از مرکز شهر دور است. | d: de le, de la, des | hint: (de + le)
+La boulangerie est à gauche [de la] pharmacie. | نانوایی سمت چپ داروخانه است. | d: du, de le, des | hint: (de + la)
+Le métro est à gauche [du] musée. | مترو سمت چپ موزه است. | d: de le, de la, des | hint: (de + le)
+Le bureau est à droite [de la] fenêtre. | میز تحریر سمت راست پنجره است. | d: du, de le, des | hint: (de + la)
+Les enfants jouent près [du] lac. | بچه‌ها نزدیک دریاچه بازی می‌کنند. | d: de le, de la, des | hint: (de + le)
+La gare est loin [de l']aéroport. | ایستگاه قطار از فرودگاه دور است. | d: du, de la, de le
+Où est le chat ? Il est [sous] le lit. | گربه کجاست؟ زیر تخت است. | d: à côté, en face, près
+Il y a une lampe [sur] le bureau. | یک چراغ روی میز تحریر هست. | d: à côté, en face, loin
+Le supermarché est [à côté de] la banque. | سوپرمارکت کنار بانک است. | d: à côté, à côté à, à côté du | hint: (à côté de)
+Je suis [devant] le cinéma. | جلوی سینما هستم. | d: à côté, en face, près
+Mets le livre [dans] ton sac. | کتاب را توی کیفت بگذار. | d: à côté, près, loin
+La chaise est [entre] la table et la fenêtre. | صندلی بین میز و پنجره است. | d: à côté, en face, près
+Le chat est [sous] la table et le chien est [devant] la porte. | گربه زیر میز است و سگ جلوی در. | d: à côté, en face, près / à côté, près, loin | full: Le chien est devant la porte et le chat est sous la table.
+La banque est près [du] parc et loin [de la] gare. | بانک نزدیک پارک و دور از ایستگاه است. | d: de le, de la, des / du, de le, des | full: La banque est loin de la gare et près du parc.
+J'habite près [de l']école, mais loin [du] centre. | نزدیک مدرسه زندگی می‌کنم، ولی از مرکز شهر دورم. | d: du, de la, de le / de le, de la, des
+Les clés sont [dans] le sac et le sac est [sur] la table. | کلیدها توی کیف است و کیف روی میز. | d: à côté, près, en face / à côté, en face, loin
+Le café est [entre] la banque et la pharmacie, près [des] magasins. | کافه بین بانک و داروخانه است، نزدیک مغازه‌ها. | d: à côté, en face, près / de les, du, de la
+Le restaurant est [en face de] l'hôtel et [à côté de] la gare. | رستوران روبه‌روی هتل و کنار ایستگاه است. | d: en face, en face à, en face du / à côté, à côté à, à côté du | full: Le restaurant est à côté de la gare et en face de l'hôtel.
+transforms:
+Le chat est sur la table. => Le chat est sous la table. | به‌جای «روی» بگو «زیر».
+La poste est près de la banque. => La poste est près du cinéma. | به‌جای banque بنویس cinéma.
+J'habite près de la gare. => J'habite près de l'hôpital. | به‌جای gare بنویس hôpital.
+Le café est loin du musée. => Le café est loin des magasins. | به‌جای musée بنویس magasins.
+La voiture est devant la maison. => La voiture est derrière la maison. | به‌جای «جلوی» بگو «پشت».
+translations:
+گربه زیر میز است. => Le chat est sous la table.
+بانک نزدیک پارک است. => La banque est près du parc.
+نزدیک مدرسه زندگی می‌کنم. => J'habite près de l'école.
+کافه روبه‌روی ایستگاه است. => Le café est en face de la gare.
+داروخانه بین بانک و پست است. => La pharmacie est entre la banque et la poste.

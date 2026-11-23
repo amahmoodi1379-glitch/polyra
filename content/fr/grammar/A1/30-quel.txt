@@ -1,0 +1,71 @@
+code: fr-a1-quel
+title: quel، quelle: «کدام» و «چه»
+scope: quel، quelle، quels و quelles در سؤال (Quel âge as-tu ? Tu habites dans quelle ville ? Quelle est ton adresse ?) و در جملهٔ تعجبی (Quelle belle maison !)؛ lequel در B1 می‌آید.
+can_do: حالا می‌توانی اسم، سن، نشانی و شمارهٔ کسی را بپرسی و از چیزی تعجب کنی: Quel est ton numéro ? Quelle belle maison !
+rule: quel، quelle، quels، quelles با اسمِ خودش جور می‌شود (Quel âge ? Quelle heure ?)؛ با être با اسمِ بعد از فعل: Quelle est ton adresse ?
+mistake: فارسی «چه» و «کدام» را برای همه یکی می‌گوید، برای همین فارسی‌زبان‌ها برای همه quel می‌نویسند («quel heure»، «quel est ton adresse»)؛ درست: quelle heure، quelle est ton adresse. «Qu'est-ce que ton nom ?» هم غلط است: Quel est ton nom ?
+lesson:
+quel یعنی «کدام» یا «چه» و همیشه با یک اسم است، یا کنارش یا با être: Quel âge ? Quel est ton nom ?
+مثل صفت با اسمش جور می‌شود: quel (مذکر)، quelle (مؤنث)، quels (جمع مذکر)، quelles (جمع مؤنث)؛ هر چهار یک‌جور خوانده می‌شوند.
+با être اسم بعد از فعل می‌آید و quel با همان جور می‌شود: Quelle est ton adresse ? (adresse مؤنث است).
+quel می‌تواند اول جمله بیاید (Quel âge as-tu ?) یا در گفتار آخر جمله (Tu as quel âge ?).
+برای تعجب هم quel می‌آید، بدون un: Quelle belle maison ! (چه خانهٔ قشنگی!)
+چند سؤال آماده: Quelle heure est-il ? Quel temps fait-il ? Quel âge as-tu ?
+table:
+ | مفرد | جمع
+مذکر | quel livre | quels livres
+مؤنث | quelle ville | quelles villes
+examples:
+Quel âge as-tu ? | چند سالت است؟
+Quelle heure est-il ? | ساعت چند است؟
+Tu aimes quels films ? | چه فیلم‌هایی دوست داری؟
+Quelle belle maison ! | چه خانهٔ قشنگی!
+targets:
+[Quel] âge as-tu ? | چند سالت است؟ | d: Quelle, Quels, Quelles | hint: (quel)
+[Quelle] heure est-il ? | ساعت چند است؟ | d: Quel, Quels, Quelles | hint: (quel)
+[Quel] est ton nom ? | اسمت چیست؟ | d: Quelle, Quels, Quelles
+[Quelle] est ton adresse ? | نشانی‌ات چیست؟ | d: Quel, Quels, Quelles | hint: (quel)
+Tu as [quel] âge ? | چند سالت است؟ | d: quelle, quels, quelles
+Tu parles [quelles] langues ? | به چه زبان‌هایی حرف می‌زنی؟ | d: quel, quelle, quels | hint: (quel)
+[Quel] est ton numéro de téléphone ? | شماره تلفنت چند است؟ | d: Quelle, Quels, Quelles
+[Quelle] est ta nationalité ? | ملیتت چیست؟ | d: Quel, Quels, Quelles | hint: (quel)
+Tu aimes [quels] films ? | چه فیلم‌هایی دوست داری؟ | d: quel, quelle, quelles
+On est [quel] jour ? | امروز چه روزی است؟ | d: quelle, quels, quelles | hint: (quel)
+[Quelle] couleur aimes-tu ? | چه رنگی دوست داری؟ | d: Quel, Quels, Quelles
+Tu habites dans [quelle] ville ? | در کدام شهر زندگی می‌کنی؟ | d: quel, quels, quelles | hint: (quel)
+[Quels] livres lis-tu ? | چه کتاب‌هایی می‌خوانی؟ | d: Quel, Quelle, Quelles
+Vous voulez [quelle] chambre ? | کدام اتاق را می‌خواهید؟ | d: quel, quels, quelles | hint: (quel)
+Tu prends [quel] train ? | کدام قطار را می‌گیری؟ | d: quelle, quels, quelles
+[Quelle] belle maison ! | چه خانهٔ قشنگی! | d: Quel, Quels, Quelles | hint: (quel)
+[Quel] beau temps ! | چه هوای خوبی! | d: Quelle, Quels, Quelles
+[Quelles] chaussures tu préfères ? | کدام کفش‌ها را بیشتر دوست داری؟ | d: Quel, Quelle, Quels | hint: (quel)
+C'est [quelle] page ? | کدام صفحه است؟ | d: quel, quels, quelles
+Il fait [quel] temps à Paris ? | هوای پاریس چطور است؟ | d: quelle, quels, quelles | hint: (quel)
+Tu travailles dans [quel] magasin ? | در کدام مغازه کار می‌کنی؟ | d: quelle, quels, quelles
+[Quelle] est la date aujourd'hui ? | امروز چندم است؟ | d: Quel, Quels, Quelles | hint: (quel)
+Vous êtes à [quel] étage ? | در کدام طبقه هستید؟ | d: quelle, quels, quelles
+Le train part à [quelle] heure ? | قطار ساعت چند حرکت می‌کند؟ | d: quel, quels, quelles | hint: (quel)
+[Quels] fruits tu aimes ? | چه میوه‌هایی دوست داری؟ | d: Quel, Quelle, Quelles
+Ils parlent [quelle] langue ? | آن‌ها به چه زبانی حرف می‌زنند؟ | d: quel, quels, quelles | hint: (quel)
+[Quelle] chance ! | چه شانسی! | d: Quel, Quels, Quelles
+[Quel] est le prix ? | قیمتش چند است؟ | d: Quelle, Quels, Quelles | hint: (quel)
+Tu lis [quel] journal ? | چه روزنامه‌ای می‌خوانی؟ | d: quelle, quels, quelles
+[Quelles] sont vos questions ? | سؤال‌هایتان چیست؟ | d: Quel, Quelle, Quels | hint: (quel)
+[Quel] est ton nom et [quelle] est ta nationalité ? | اسمت چیست و ملیتت چیست؟ | d: Quelle, Quels, Quelles / quel, quels, quelles | full: Quelle est ta nationalité et quel est ton nom ?
+Tu aimes [quels] films et [quelles] chansons ? | چه فیلم‌ها و چه آهنگ‌هایی دوست داری؟ | d: quel, quelle, quelles / quel, quelle, quels | full: Tu aimes quelles chansons et quels films ?
+Tu pars [quel] jour et à [quelle] heure ? | چه روزی و ساعت چند می‌روی؟ | d: quelle, quels, quelles / quel, quels, quelles
+[Quelle] belle robe et [quelles] jolies chaussures ! | چه لباس قشنگی و چه کفش‌های قشنگی! | d: Quel, Quels, Quelles / quel, quelle, quels
+Vous habitez dans [quelle] rue et à [quel] étage ? | در کدام خیابان و کدام طبقه زندگی می‌کنید؟ | d: quel, quels, quelles / quelle, quels, quelles
+[Quel] est ton prénom ? Et [quel] est ton nom ? | اسم کوچکت چیست؟ نام خانوادگی‌ات چیست؟ | d: Quelle, Quels, Quelles / quelle, quels, quelles
+transforms:
+Ton nom ? => Quel est ton nom ? | با quel بپرس.
+Quel livre tu lis ? => Quels livres tu lis ? | سؤال را جمع کن.
+Quelle robe tu préfères ? => Quelles robes tu préfères ? | سؤال را جمع کن.
+Tu as quel âge ? => Quel âge as-tu ? ; Quel âge tu as ? | quel را اول جمله بگذار.
+C'est une belle maison. => Quelle belle maison ! | با quel تعجب کن.
+translations:
+اسمت چیست؟ => Quel est ton nom ? ; Comment tu t'appelles ? ; Tu t'appelles comment ?
+ساعت چند است؟ => Quelle heure est-il ? ; Il est quelle heure ?
+چند سالت است؟ => Quel âge as-tu ? ; Tu as quel âge ? ; Quel âge tu as ?
+در کدام شهر زندگی می‌کنی؟ => Tu habites dans quelle ville ? ; Dans quelle ville tu habites ? ; Tu habites quelle ville ?
+چه خانهٔ قشنگی! => Quelle belle maison ! ; Quelle jolie maison !
