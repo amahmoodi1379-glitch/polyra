@@ -1,0 +1,72 @@
+code: de-a1-wo-wohin
+title: im Park یا in den Park: کجا و به کجا
+scope: حرف اضافه‌های جا (in، an، auf، unter، über، vor، hinter، neben، zwischen) با Dativ برای wo? (im Park، auf dem Tisch، am Bahnhof) و in با Akkusativ برای wohin? (in den Park، in die Stadt، ins Kino)؛ فعل‌های legen، stellen و hängen در سطح‌های بعد می‌آیند.
+can_do: حالا می‌توانی بگویی چیزی یا کسی کجاست و به کجا می‌روی: «کتاب روی میز است»، «به پارک می‌روم».
+rule: wo? ← Dativ (im Park، in der Schule، auf dem Tisch)؛ wohin? ← Akkusativ (in den Park، in die Schule، ins Kino)؛ in dem = im، an dem = am، in das = ins.
+mistake: فارسی‌زبان‌ها حالت را قاطی می‌کنند: «Ich bin in den Park» و «Ich wohne in die Stadt» غلط است؛ درست: Ich bin im Park. Ich wohne in der Stadt. ولی با حرکت: Ich gehe in den Park.
+lesson:
+in، an، auf، unter، über، vor، hinter، neben و zwischen جای چیزها را نشان می‌دهند.
+برای سؤال wo? (کجا؟، جای ثابت) بعدشان Dativ می‌آید: im Park، in der Schule، auf dem Tisch، am Bahnhof.
+برای سؤال wohin? (به کجا؟، حرکت) بعد از in حالت Akkusativ می‌آید: in den Park، in die Stadt، ins Kino.
+فعل‌هایی مثل sein، wohnen، arbeiten، liegen، stehen و sitzen جای ثابت‌اند و gehen و fahren حرکت.
+ترکیب‌ها: in dem = im، an dem = am، in das = ins.
+شهرها و بیشتر کشورها حرف تعریف ندارند: in Berlin (کجا)، nach Berlin (به کجا)؛ ولی کشوری که حرف تعریف دارد همین قاعده را می‌گیرد: in der Schweiz، in die Schweiz.
+table:
+اسم | wo? (Dativ) | wohin? (Akkusativ)
+der Park | im Park | in den Park
+die Stadt | in der Stadt | in die Stadt
+das Kino | im Kino | ins Kino
+der Tisch | auf dem Tisch | auf den Tisch
+sets:
+im: Park, Kino, Büro, Restaurant, Garten
+in der: Stadt, Schule, Küche, Bäckerei, Tasche
+examples:
+Die Kinder sind im Garten. | بچه‌ها در باغ هستند.
+Ich gehe in die Küche. | به آشپزخانه می‌روم.
+Das Handy liegt auf dem Tisch. | موبایل روی میز است.
+Wir gehen ins Kino. | به سینما می‌رویم.
+targets:
+Das Buch liegt auf [dem] Tisch. | کتاب روی میز است. | d: den, der, das
+Die Kinder spielen [im] Park. | بچه‌ها در پارک بازی می‌کنند. | d: in, ins, in den | full: Im Park spielen die Kinder.
+Ich wohne in [der] Stadt. | من در شهر زندگی می‌کنم. | d: die, dem, den
+Wir warten [am] Bahnhof. | ما در ایستگاه قطار منتظریم. | d: an, ans, an den
+Das Auto steht vor [dem] Haus. | ماشین جلوی خانه است. | d: den, der, das
+Die Katze ist unter [dem] Bett. | گربه زیر تخت است. | d: den, der, das
+Das Bild ist über [dem] Sofa. | تابلو بالای مبل است. | d: den, der, das
+Der Garten ist hinter [dem] Haus. | باغ پشت خانه است. | d: den, der, das
+Die Apotheke ist neben [der] Bank. | داروخانه کنار بانک است. | d: die, dem, den
+Max arbeitet [im] Büro. | ماکس در دفتر کار می‌کند. | d: ins, in, in das
+Die Milch ist [im] Kühlschrank. | شیر در یخچال است. | d: ins, in, in den
+Die Jacke liegt auf [dem] Stuhl. | کاپشن روی صندلی است. | d: den, der, das
+Wir essen heute [im] Restaurant. | ما امروز در رستوران غذا می‌خوریم. | d: ins, in, in das | full: Heute essen wir im Restaurant.
+Der Schlüssel ist in [der] Tasche. | کلید در کیف است. | d: die, dem, den
+Wo ist das Buch? – [Auf dem] Tisch. | کتاب کجاست؟ – روی میز. | d: Auf den, Auf der, Auf das
+Die Kinder sind [in der] Schule. | بچه‌ها در مدرسه‌اند. | d: in die, im, ins
+Das Hotel ist [am] Meer. | هتل کنار دریاست. | d: an, ans, an das
+Ich sitze [auf dem] Sofa. | من روی مبل نشسته‌ام. | d: auf das, auf den, auf der
+Wir gehen [ins] Museum. | ما به موزه می‌رویم. | d: in, in die, in der
+Ich fahre [in die] Stadt. | من به شهر می‌روم. | d: in den, ins, in das
+Paul geht [in den] Park. | پاول به پارک می‌رود. | d: in die, ins, in der
+Wir gehen heute [ins] Restaurant. | ما امروز به رستوران می‌رویم. | d: in, in die, in der | full: Heute gehen wir ins Restaurant.
+Ich gehe [in die] Bäckerei. | من به نانوایی می‌روم. | d: in den, ins, in das
+Fährst du [in die] Schweiz? | به سوئیس می‌روی؟ | d: nach, ins, in den
+Wohin gehst du? – [In die] Schule. Und wo ist Max? – [In der] Schule. | کجا می‌روی؟ – مدرسه. و ماکس کجاست؟ – در مدرسه. | d: In den, Ins, In das / In die, Im, Ins
+Das Kino ist zwischen [der] Post und [dem] Supermarkt. | سینما بین اداره پست و سوپرمارکت است. | d: die, dem, den / den, der, das
+Die Katze ist nicht [im] Garten, sie ist unter [dem] Sofa. | گربه در باغ نیست، زیر مبل است. | d: ins, in, in den / den, der, das
+Wir warten vor [dem] Kino und Anna wartet [im] Café. | ما جلوی سینما منتظریم و آنا در کافه منتظر است. | d: den, der, das / ins, in, in das
+Das Bett steht [im] Schlafzimmer und das Sofa steht [im] Wohnzimmer. | تخت در اتاق خواب است و مبل در اتاق نشیمن. | d: ins, in, in das / ins, in, in das
+Am Wochenende gehen wir [in den] Park und dann [ins] Restaurant. | آخر هفته به پارک می‌رویم و بعد به رستوران. | d: in die, ins, in der / in, in die, in der | full: Wir gehen am Wochenende in den Park und dann ins Restaurant.
+Ich bin [im] Supermarkt und Max ist [in der] Bäckerei. | من در سوپرمارکتم و ماکس در نانوایی است. | d: ins, in, in den / in die, im, ins
+Wohin fährst du? – [In die] Stadt. Ich kaufe [im] Supermarkt ein. | کجا می‌روی؟ – شهر. در سوپرمارکت خرید می‌کنم. | d: In den, Ins, In das / ins, in, in den
+transforms:
+Ich bin im Park. => Ich gehe in den Park. | به‌جای «هستم» بگو «می‌روم»، با gehen.
+Wir sind in der Stadt. => Wir fahren in die Stadt. | با fahren بگو که به آنجا می‌روید.
+Lena ist im Kino. => Lena geht ins Kino. | با gehen بگو که به آنجا می‌رود.
+Ich gehe in die Schule. => Ich bin in der Schule. | با sein بگو که آنجا هستی.
+Das Buch liegt auf dem Tisch. => Wo liegt das Buch? | برای «auf dem Tisch» سؤال بساز.
+translations:
+کتاب روی میز است. => Das Buch ist auf dem Tisch. ; Das Buch liegt auf dem Tisch.
+بچه‌ها در پارک بازی می‌کنند. => Die Kinder spielen im Park. ; Im Park spielen die Kinder.
+به شهر می‌روم. => Ich fahre in die Stadt. ; Ich gehe in die Stadt.
+ماکس در دفتر کار می‌کند. => Max arbeitet im Büro. ; Im Büro arbeitet Max.
+ماشین جلوی خانه است. => Das Auto ist vor dem Haus. ; Das Auto steht vor dem Haus.

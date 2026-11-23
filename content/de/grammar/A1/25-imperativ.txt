@@ -1,0 +1,72 @@
+code: de-a1-imperativ
+title: فعل امر: Komm! Kommt! Kommen Sie!
+scope: سه شکل فعل امر برای du، ihr و Sie (Komm! Kommt! Kommen Sie!)، فعل‌های e ← i در امر (Nimm! Lies!)، امر sein (Sei! Seid! Seien Sie!) و فعل جداشدنی در امر (Steh auf!)، و bitte برای مؤدبانه کردن آن.
+can_do: حالا می‌توانی از کسی بخواهی کاری بکند: «بیا!»، «لطفاً آهسته صحبت کنید».
+rule: Sie ← مصدر و Sie (Kommen Sie!)؛ du ← ریشه بدون -st و بدون du (Komm! Nimm!)؛ ihr ← شکل ihr بدون ihr (Kommt!)؛ sein ← Sei! Seid! Seien Sie!
+mistake: فارسی‌زبان‌ها برای du پسوند -st یا خود du را نگه می‌دارند: «Kommst!» و «Du komm!» غلط است؛ درست: Komm! با Sie هم Sie را جا نینداز: Kommen Sie bitte!
+lesson:
+با فعل امر از کسی می‌خواهی کاری بکند؛ آلمانی برای du، ihr و Sie سه شکل جدا دارد.
+Sie: مصدر و بعد Sie: Kommen Sie! Warten Sie bitte!
+du: ریشه فعل بدون -st و بدون du: du kommst ← Komm! و اگر ریشه به t ختم شود -e می‌گیرد: du wartest ← Warte!
+فعل‌هایی که e آن‌ها به i یا ie می‌شود i را در امر نگه می‌دارند: Nimm! Lies! Iss! Gib! ولی ä در امر نمی‌آید: du fährst ← Fahr!
+ihr: همان شکل ihr بدون ihr: ihr kommt ← Kommt!
+sein بی‌قاعده است: Sei! Seid! Seien Sie! و پیشوند جداشدنی آخر جمله می‌رود: Steh auf! Rufen Sie Anna an!
+bitte امر را مؤدبانه می‌کند: Komm bitte! Warten Sie bitte!
+table:
+فعل | du | ihr | Sie
+kommen | Komm! | Kommt! | Kommen Sie!
+warten | Warte! | Wartet! | Warten Sie!
+nehmen | Nimm! | Nehmt! | Nehmen Sie!
+fahren | Fahr! | Fahrt! | Fahren Sie!
+aufstehen | Steh auf! | Steht auf! | Stehen Sie auf!
+sein | Sei! | Seid! | Seien Sie!
+examples:
+Warten Sie bitte! | لطفاً صبر کنید!
+Komm bitte mit! | لطفاً با ما بیا!
+Nimm das Buch! | کتاب را بردار!
+Steh bitte auf! | لطفاً بلند شو!
+targets:
+[Kommen] Sie bitte! | لطفاً بیایید! | d: Kommt, Komm, Kommst | full: Bitte kommen Sie!
+[Warten] Sie hier, bitte! | لطفاً اینجا منتظر بمانید! | d: Wartet, Warte, Wartest | full: Warten Sie bitte hier! ; Bitte warten Sie hier!
+Bitte [wiederholen] Sie das! | لطفاً آن را تکرار کنید! | d: wiederholt, wiederhole, wiederholst | full: Wiederholen Sie das bitte!
+[Sprechen] Sie bitte langsam! | لطفاً آهسته صحبت کنید! | d: Sprecht, Sprich, Sprichst | full: Bitte sprechen Sie langsam! ; Sprechen Sie langsam, bitte!
+[Füllen] Sie bitte das Formular aus! | لطفاً فرم را پر کنید! | d: Füllt, Füll, Füllst | full: Bitte füllen Sie das Formular aus! ; Füllen Sie das Formular bitte aus!
+[Seien] Sie bitte ruhig! | لطفاً آرام باشید! | d: Sind, Seid, Sei | full: Bitte seien Sie ruhig!
+[Nehmen] Sie den Bus! | با اتوبوس بروید! | d: Nehmt, Nimm, Nimmst
+[Steigen] Sie hier aus! | اینجا پیاده شوید! | d: Steigt, Steig, Steigst
+Lena, [lies] dein Buch! | لنا، کتابت را بخوان! | d: lest, liest, lese
+Max, [iss] dein Brot! | ماکس، نانت را بخور! | d: esst, isst, esse
+Anna, [trink] deinen Tee! | آنا، چایت را بنوش! | d: trinkt, trinkst, trinken
+Paul, [nimm] dein Handy! | پاول، موبایلت را بردار! | d: nehmt, nimmst, nehme
+Mia, [gib] Lena dein Buch! | میا، کتابت را به لنا بده! | d: gebt, gibst, gebe
+Tim, [sprich] bitte langsam! | تیم، لطفاً آهسته صحبت کن! | d: sprichst, spreche, sprechen | full: Tim, bitte sprich langsam! ; Tim, sprich langsam, bitte!
+Lukas, [hilf] Max! | لوکاس، به ماکس کمک کن! | d: hilfst, helfe, helfen
+Sophie, [fahr] langsam! | سوفی، آهسته برو! | d: fährst, fähr, fahren | ok: fahre
+Felix, [warte] hier! | فلیکس، اینجا منتظر بمان! | d: wartest, warten, wartete
+Ben, [steh]{aufstehen} bitte auf{aufstehen}! | بن، لطفاً بلند شو! | d: stehst, stehen, aufsteh | full: Ben, bitte steh auf! ; Ben, steh auf, bitte!
+Emma, [ruf]{anrufen} Oma an{anrufen}! | اِما، به مادربزرگ زنگ بزن! | d: rufst, rufen, anruf
+Julia, [sei] bitte ruhig! | جولیا، لطفاً آرام باش! | d: bist, sein, sind | full: Julia, bitte sei ruhig!
+Kinder, [kommt] bitte! | بچه‌ها، لطفاً بیایید! | d: komm, kommen, kommst | full: Kinder, bitte kommt!
+Kinder, [seid] bitte ruhig! | بچه‌ها، لطفاً آرام باشید! | d: sei, sind, seien | full: Kinder, bitte seid ruhig!
+Kinder, [lest] den Text! | بچه‌ها، متن را بخوانید! | d: lies, liest, lesen
+Max und Lena, [esst] das Brot! | ماکس و لنا، نان را بخورید! | d: iss, isst, essen
+Kinder, [macht] die Hausaufgaben! | بچه‌ها، تکلیف‌هایتان را بنویسید! | d: mach, machst, machen
+Paul und Anna, [steht]{aufstehen} bitte auf{aufstehen}! | پاول و آنا، لطفاً بلند شوید! | d: steh, stehst, stehen | full: Paul und Anna, bitte steht auf!
+[Nehmen] Sie den Bus und [steigen] Sie am Bahnhof aus! | با اتوبوس بروید و در ایستگاه قطار پیاده شوید! | d: Nehmt, Nimm, Nimmst / steigt, steig, steigst
+Tim, [trink] dein Wasser und [iss] dein Brot! | تیم، آبت را بنوش و نانت را بخور! | d: trinkt, trinkst, trinken / esst, isst, esse
+Kinder, [seid] ruhig und [lernt]! | بچه‌ها، آرام باشید و درس بخوانید! | d: sei, sind, seien / lern, lernst, lernen
+[Sprechen] Sie bitte langsam und [wiederholen] Sie das! | لطفاً آهسته صحبت کنید و آن را تکرار کنید! | d: Sprecht, Sprich, Sprichst / wiederholt, wiederhole, wiederholst | full: Bitte sprechen Sie langsam und wiederholen Sie das!
+Sara, [sei] nicht traurig! [Ruf]{anrufen} Oma an{anrufen}! | سارا، ناراحت نباش! به مادربزرگ زنگ بزن! | d: bist, sein, sind / Rufst, Rufen, Anruf
+Ihr seid müde. [Geht] nach Hause und [schlaft]! | خسته‌اید. به خانه بروید و بخوابید! | d: Geh, Gehen, Gehst / schlaf, schläft, schlafen
+transforms:
+Du kommst mit. => Komm mit! | جمله را امری کن.
+Du nimmst das Buch. => Nimm das Buch! | جمله را امری کن.
+Ihr lest den Text. => Lest den Text! | جمله را امری کن.
+Sie warten hier. => Warten Sie hier! | جمله را امری کن.
+Du bist ruhig. => Sei ruhig! | جمله را امری کن.
+translations:
+لطفاً آهسته صحبت کنید. => Sprechen Sie bitte langsam! ; Bitte sprechen Sie langsam!
+کتابت را بخوان! => Lies dein Buch!
+بچه‌ها، آرام باشید! => Kinder, seid ruhig!
+لطفاً اینجا منتظر بمانید! (مؤدبانه) => Warten Sie bitte hier! ; Bitte warten Sie hier! ; Warten Sie hier, bitte!
+بلند شو! => Steh auf!

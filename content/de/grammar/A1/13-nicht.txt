@@ -1,0 +1,71 @@
+code: de-a1-nicht
+title: منفی با nicht و جای آن در جمله
+scope: منفی کردن با nicht: آخر جمله بعد از فعل، مفعول و قید زمان (Ich komme heute nicht. Ich verstehe das nicht.)، و پیش از صفت و جا (Das ist nicht gut. Ich wohne nicht in Berlin.)، و فرق nicht با جواب کوتاه nein؛ منفی اسم با kein در واحد بعد می‌آید.
+can_do: حالا می‌توانی بگویی «نمی‌آیم»، «خوب نیست» و «این را نمی‌فهمم».
+rule: nicht معمولاً آخر جمله می‌آید (Ich komme heute nicht)، ولی پیش از صفت و جا می‌نشیند: Das ist nicht gut. Ich wohne nicht in Berlin.
+mistake: فارسی‌زبان‌ها nicht را مثل «نـ» فارسی کنار فعل می‌گذارند یا به‌جای آن nein می‌گویند: «Ich nicht komme» و «Ich komme nein» غلط است؛ درست: Ich komme nicht. مفعول هم پیش از nicht می‌آید: Ich verstehe das nicht.
+lesson:
+در فارسی «نـ» به فعل می‌چسبد: «نمی‌آیم»، «نمی‌فهمم»، «خوب نیست».
+در آلمانی برای منفی کردن کلمه جدای nicht را می‌گذاری و جای آن مهم است.
+وقتی کار را منفی می‌کنی، nicht آخر جمله می‌آید، بعد از فعل و مفعول و کلمه‌هایی مثل heute: Ich komme nicht. Ich verstehe das nicht. Paul arbeitet heute nicht.
+ولی nicht پیش از صفت و پیش از جا می‌نشیند: Das ist nicht gut. Ich wohne nicht in Berlin. Er ist nicht zu Hause.
+nein فقط جواب کوتاه «نه» است و جای nicht را نمی‌گیرد: Nein, ich komme nicht.
+table:
+جمله | منفی
+Ich komme. | Ich komme nicht.
+Ich verstehe das. | Ich verstehe das nicht.
+Paul arbeitet heute. | Paul arbeitet heute nicht.
+Das ist gut. | Das ist nicht gut.
+Ich wohne in Berlin. | Ich wohne nicht in Berlin.
+Er ist zu Hause. | Er ist nicht zu Hause.
+examples:
+Ich komme heute nicht. | امروز نمی‌آیم.
+Das ist nicht gut. | این خوب نیست.
+Ich verstehe das nicht. | این را نمی‌فهمم.
+Ist Anna zu Hause? – Nein, sie ist nicht zu Hause. | آنا خانه است؟ – نه، خانه نیست.
+targets:
+Das ist [nicht] gut. | این خوب نیست. | d: kein, nein, nichts
+Die Stadt ist [nicht] groß. | شهر بزرگ نیست. | d: kein, nein, nichts
+Ich wohne [nicht] in Berlin. | من در برلین زندگی نمی‌کنم. | d: kein, nein, nichts | full: In Berlin wohne ich nicht.
+Anna ist heute [nicht] zu Hause. | آنا امروز خانه نیست. | d: kein, nein, nichts | full: Heute ist Anna nicht zu Hause.
+Paul kommt heute [nicht]. | پاول امروز نمی‌آید. | d: kein, nein, nichts | full: Heute kommt Paul nicht.
+Das Haus ist [nicht] alt. | خانه قدیمی نیست. | d: kein, nein, nichts
+Wir sind [nicht] verheiratet. | ما متأهل نیستیم. | d: kein, nein, nichts
+Ich bin [nicht] aus Berlin. | من اهل برلین نیستم. | d: kein, nein, nichts
+Lena wohnt [nicht] hier. | لنا اینجا زندگی نمی‌کند. | d: kein, nein, nichts | full: Hier wohnt Lena nicht.
+Das ist [nicht] das Auto von Anna. | این ماشین آنا نیست. | d: kein, nein, nichts
+Das ist [nicht] Paul, das ist Max. | این پاول نیست، این ماکس است. | d: kein, nein, nichts
+Die Kinder spielen heute [nicht]. | بچه‌ها امروز بازی نمی‌کنند. | d: kein, nein, keine | full: Heute spielen die Kinder nicht.
+Ich fahre [nicht] nach Wien. | من به وین نمی‌روم. | d: kein, nein, nichts
+Sara kommt [nicht] aus Teheran. | سارا اهل تهران نیست. | d: kein, nein, nichts
+Die Schule ist [nicht] neu. | مدرسه نو نیست. | d: kein, nein, nichts
+Max ist [nicht] 20, er ist 22. | ماکس بیست ساله نیست، بیست‌ودو ساله است. | d: kein, nein, nichts
+Ich [verstehe das nicht]. | این را نمی‌فهمم. | d: nicht verstehe das, das nicht verstehe, das verstehe nicht | full: Das verstehe ich nicht.
+Paul [arbeitet heute nicht]. | پاول امروز کار نمی‌کند. | d: nicht arbeitet heute, heute nicht arbeitet, heute arbeitet nicht | full: Heute arbeitet Paul nicht.
+Wir [wohnen nicht in Köln]. | ما در کلن زندگی نمی‌کنیم. | d: nicht wohnen in Köln, in Köln nicht wohnen, nicht in Köln wohnen | full: In Köln wohnen wir nicht.
+Das Auto [ist nicht neu]. | ماشین نو نیست. | d: nicht ist neu, ist neu nicht, neu nicht ist
+Anna [kommt morgen nicht]. | آنا فردا نمی‌آید. | d: nicht kommt morgen, morgen nicht kommt, morgen kommt nicht | full: Morgen kommt Anna nicht.
+Das Wasser [ist nicht gut]. | آب خوب نیست. | d: nicht ist gut, ist gut nicht, gut nicht ist
+Ich [kenne Max nicht]. | من ماکس را نمی‌شناسم. | d: nicht kenne Max, Max nicht kenne, Max kenne nicht | full: Max kenne ich nicht.
+Er [ist nicht zu Hause]. | او خانه نیست. | d: nicht ist zu Hause, ist zu Hause nicht, zu Hause nicht ist
+Wir [verstehen das Wort nicht]. | ما این کلمه را نمی‌فهمیم. | d: nicht verstehen das Wort, das Wort nicht verstehen, das Wort verstehen nicht | full: Das Wort verstehen wir nicht.
+Lena [spielt heute nicht]. | لنا امروز بازی نمی‌کند. | d: nicht spielt heute, heute nicht spielt, heute spielt nicht | full: Heute spielt Lena nicht.
+Ist Anna zu Hause? – [Nein], sie ist [nicht] zu Hause. | آنا خانه است؟ – نه، خانه نیست. | d: Nicht, Kein, Nichts / kein, nein, nichts
+Ist das Haus neu? – [Nein], es ist [nicht] neu. | خانه نو است؟ – نه، نو نیست. | d: Nicht, Kein, Nichts / kein, nein, nichts
+Kommt Paul heute? – [Nein], er kommt heute [nicht]. | پاول امروز می‌آید؟ – نه، امروز نمی‌آید. | d: Nicht, Kein, Nichts / kein, nein, nichts | full: Kommt Paul heute? – Nein, heute kommt er nicht.
+Verstehst du das? – [Nein], ich verstehe das [nicht]. | این را می‌فهمی؟ – نه، نمی‌فهمم. | d: Nicht, Kein, Nichts / kein, nein, nichts | full: Verstehst du das? – Nein, das verstehe ich nicht.
+Ist der Tee gut? – [Nein], er ist [nicht] gut. | چای خوب است؟ – نه، خوب نیست. | d: Nicht, Kein, Nichts / kein, nein, nichts
+Bist du verheiratet? – [Nein], ich bin [nicht] verheiratet. Ich bin ledig. | متأهلی؟ – نه، متأهل نیستم. مجردم. | d: Nicht, Kein, Nichts / kein, nein, nichts
+Wohnt ihr hier? – [Nein], wir wohnen [nicht] hier. | شما اینجا زندگی می‌کنید؟ – نه، ما اینجا زندگی نمی‌کنیم. | d: Nicht, Kein, Nichts / kein, nein, nichts | full: Wohnt ihr hier? – Nein, hier wohnen wir nicht.
+transforms:
+Ich komme heute. => Ich komme heute nicht. ; Heute komme ich nicht. | جمله را با nicht منفی کن.
+Das ist gut. => Das ist nicht gut. | جمله را با nicht منفی کن.
+Anna wohnt in Berlin. => Anna wohnt nicht in Berlin. ; In Berlin wohnt Anna nicht. | جمله را با nicht منفی کن.
+Ich verstehe das. => Ich verstehe das nicht. ; Das verstehe ich nicht. | جمله را با nicht منفی کن.
+Max ist zu Hause. => Max ist nicht zu Hause. | جمله را با nicht منفی کن.
+translations:
+من این را نمی‌فهمم. => Ich verstehe das nicht. ; Das verstehe ich nicht.
+خانه قدیمی نیست. => Das Haus ist nicht alt.
+آنا امروز نمی‌آید. => Anna kommt heute nicht. ; Heute kommt Anna nicht.
+من در برلین زندگی نمی‌کنم. => Ich wohne nicht in Berlin. ; In Berlin wohne ich nicht.
+پاول خانه نیست. => Paul ist nicht zu Hause.

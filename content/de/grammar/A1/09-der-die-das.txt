@@ -1,0 +1,75 @@
+code: de-a1-der-die-das
+title: der، die، das: جنس اسم و حرف تعریف معین
+scope: سه جنس اسم آلمانی و حرف تعریف معین در حالت فاعلی و بعد از sein (der Mann، die Frau، das Kind)، و die برای همه جمع‌ها؛ حرف تعریف نامعین (ein) و شکل مفعولی (den) در واحدهای بعد می‌آیند.
+can_do: حالا هر اسم را با حرف تعریفش یاد می‌گیری و der، die یا das را درست می‌گذاری.
+rule: اسم مذکر der، مؤنث die، خنثی das؛ همه اسم‌های جمع die.
+mistake: فارسی جنس دستوری ندارد و فارسی‌زبان‌ها حرف تعریف را جا می‌اندازند یا برای همه die می‌گذارند. جنس را از معنی حدس نزن: das Mädchen (دختر) و das Kind خنثی‌اند. هر اسم را با حرف تعریفش حفظ کن.
+lesson:
+هر اسم آلمانی یکی از سه جنس را دارد: مذکر با der، مؤنث با die و خنثی با das.
+جنس معمولاً از معنی پیدا نمی‌شود: der Tag (روز)، die Stadt (شهر)، das Haus (خانه)؛ برای همین هر اسم را با حرف تعریفش یاد بگیر.
+برای آدم‌ها جنس معمولاً طبیعی است (der Mann، die Frau)، ولی das Kind و das Mädchen خنثی‌اند.
+چند نشانه کمک می‌کند: اسم‌های -chen خنثی‌اند (das Mädchen) و اسم‌های -ung مؤنث (die Entschuldigung).
+در جمع جنس مهم نیست و حرف تعریف همیشه die است: die Kinder، die Männer.
+اسم‌های آلمانی همیشه با حرف بزرگ نوشته می‌شوند، حتی وسط جمله.
+table:
+جنس | حرف تعریف | مثال
+مذکر | der | der Mann، der Tag، der Kaffee
+مؤنث | die | die Frau، die Stadt، die Schule
+خنثی | das | das Kind، das Haus، das Buch
+جمع (همه) | die | die Kinder، die Männer
+sets:
+der: Mann, Vater, Tag, Kaffee, Tee, Name
+die: Frau, Mutter, Stadt, Schule, Straße, Adresse
+das: Kind, Haus, Buch, Auto, Wasser, Brot
+examples:
+Der Mann ist hier. | مرد اینجاست.
+Die Stadt ist groß. | شهر بزرگ است.
+Das Mädchen heißt Mia. | اسم آن دختر میاست.
+Die Kinder sind zu Hause. | بچه‌ها خانه‌اند.
+targets:
+[Der] Kaffee ist gut. | قهوه خوب است. | d: Die, Das, Eine
+[Die] Stadt ist sehr groß. | شهر خیلی بزرگ است. | d: Der, Das, Ein
+[Das] Haus ist alt. | خانه قدیمی است. | d: Der, Die, Eine
+[Das] Kind spielt hier. | بچه اینجا بازی می‌کند. | d: Der, Die, Eine | full: Hier spielt das Kind.
+[Das] Mädchen lernt Englisch. | دختر انگلیسی یاد می‌گیرد. | d: Die, Der, Eine
+[Der] Vater arbeitet heute. | پدر امروز کار می‌کند. | d: Die, Das, Eine | full: Heute arbeitet der Vater.
+[Die] Mutter ist zu Hause. | مادر خانه است. | d: Der, Das, Ein
+[Die] Schule ist neu. | مدرسه نو است. | d: Der, Das, Ein
+[Das] Auto ist klein. | ماشین کوچک است. | d: Der, Die, Eine
+[Der] Tee ist schlecht. | چای بد است. | d: Die, Das, Eine
+[Die] Straße ist sehr schön. | خیابان خیلی قشنگ است. | d: Der, Das, Ein
+[Das] Buch ist neu. | کتاب نو است. | d: Der, Die, Eine
+[Der] Junge ist 10. | پسر ده ساله است. | d: Die, Das, Eine
+[Die] Kinder spielen zu Hause. | بچه‌ها در خانه بازی می‌کنند. | d: Der, Das, Ein | full: Zu Hause spielen die Kinder.
+[Das] Brot ist sehr gut. | نان خیلی خوب است. | d: Der, Die, Eine
+[Die] Adresse ist neu. | نشانی تازه است. | d: Der, Das, Ein
+Das ist [der] Freund von Sara. | این دوست ساراست. | d: die, das, eine
+Das ist [die] Freundin von Lena. | این دوست لناست. | d: der, das, ein
+Das ist [das] Haus von Paul. | این خانه پاول است. | d: der, die, eine
+[Der] Name ist schön. | اسم قشنگ است. | d: Die, Das, Eine
+Ich kaufe [das] Brot. | من نان را می‌خرم. | d: der, die, eine
+Wir lernen [die] Sprache. | ما آن زبان را یاد می‌گیریم. | d: der, das, ein
+Anna sucht [das] Telefon. | آنا دنبال تلفن می‌گردد. | d: der, die, eine
+[Die] Eltern wohnen in Köln. | پدر و مادر در کلن زندگی می‌کنند. | d: Der, Das, Ein | full: In Köln wohnen die Eltern.
+[Die] Leute kommen morgen. | آن آدم‌ها فردا می‌آیند. | d: Der, Das, Ein | full: Morgen kommen die Leute.
+Wo ist [die] Schule? | مدرسه کجاست؟ | d: der, das, ein
+Wo ist [das] Auto? | ماشین کجاست؟ | d: der, die, eine
+[Der] Mann und [die] Frau sind hier. | مرد و زن اینجا هستند. | d: Die, Das, Eine / der, das, ein | full: Hier sind der Mann und die Frau.
+[Das] Haus ist groß, aber [die] Straße ist klein. | خانه بزرگ است، اما خیابان کوچک است. | d: Der, Die, Eine / der, das, ein
+[Der] Vater und [das] Kind spielen. | پدر و بچه بازی می‌کنند. | d: Die, Das, Eine / der, die, eine
+[Die] Mutter trinkt Tee und [der] Junge trinkt Wasser. | مادر چای می‌نوشد و پسر آب. | d: Der, Das, Ein / die, das, eine
+Wo sind [das] Buch und [das] Telefon? | کتاب و تلفن کجا هستند؟ | d: der, die, eine / der, die, eine
+[Der] Kaffee ist gut und [das] Brot ist auch gut. | قهوه خوب است و نان هم خوب است. | d: Die, Das, Eine / der, die, eine
+[Das] Mädchen und [der] Junge lernen Deutsch. | دختر و پسر آلمانی یاد می‌گیرند. | d: Die, Der, Eine / die, das, eine
+transforms:
+Die Mutter ist hier. => Der Vater ist hier. | به‌جای Mutter کلمه Vater را بگذار، با حرف تعریف درست.
+Der Mann ist jung. => Das Mädchen ist jung. | به‌جای Mann کلمه Mädchen را بگذار، با حرف تعریف درست.
+Das Buch ist neu. => Die Schule ist neu. | به‌جای Buch کلمه Schule را بگذار، با حرف تعریف درست.
+Die Stadt ist groß. => Das Land ist groß. | به‌جای Stadt کلمه Land را بگذار، با حرف تعریف درست.
+Der Kaffee ist gut. => Das Wasser ist gut. | به‌جای Kaffee کلمه Wasser را بگذار، با حرف تعریف درست.
+translations:
+خانه قدیمی است. => Das Haus ist alt.
+مدرسه نو است. => Die Schule ist neu.
+قهوه خوب است. => Der Kaffee ist gut.
+دختر اینجا بازی می‌کند. => Das Mädchen spielt hier.
+بچه‌ها خانه‌اند. => Die Kinder sind zu Hause.

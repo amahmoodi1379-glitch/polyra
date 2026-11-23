@@ -1,0 +1,76 @@
+code: de-a1-perfekt-sein
+title: Perfekt با sein: Ich bin nach Berlin gefahren
+scope: Perfekt با sein برای فعل‌های رفتن از جایی به جایی (gehen، kommen، fahren، fliegen، laufen، reisen)، برای aufstehen و برای sein و bleiben (gewesen، geblieben)؛ فعل‌های جداشدنی سفر (abgefahren، angekommen، eingestiegen، ausgestiegen، umgestiegen، mitgekommen)؛ و انتخاب haben یا sein در یک جمله.
+can_do: حالا می‌توانی از سفر و رفت‌وآمدت در گذشته بگویی: «دیروز به برلین رفتم»، «ساعت هفت بیدار شدم».
+rule: فعل‌های رفتن از جایی به جایی (gehen، fahren، kommen، fliegen)، aufstehen، sein و bleiben در Perfekt با sein می‌آیند: Ich bin nach Berlin gefahren. بقیه فعل‌ها با haben: Ich habe Pizza gegessen.
+mistake: فارسی‌زبان‌ها برای همه فعل‌ها haben می‌گذارند: «Ich habe nach Berlin gefahren» و «Ich habe um 7 Uhr aufgestanden» غلط است؛ درست: Ich bin nach Berlin gefahren. Ich bin um 7 Uhr aufgestanden.
+tables: Perfekt | aux-sein
+lesson:
+بعضی فعل‌ها در Perfekt به‌جای haben فعل sein می‌گیرند: Ich bin nach Berlin gefahren. یعنی «به برلین رفتم».
+بیشتر این‌ها فعل‌های رفتن از جایی به جایی‌اند: gehen، kommen، fahren، fliegen، laufen، reisen؛ aufstehen هم sein می‌گیرد، چون حال تو عوض می‌شود.
+خود sein و bleiben هم با sein می‌آیند: Ich bin in Wien gewesen. Wir sind zu Hause geblieben.
+جای کلمه‌ها مثل قبل است: sein صرف‌شده در جای دوم و Partizip II آخر جمله.
+بیشتر این فعل‌ها بی‌قاعده‌اند: gegangen، gekommen، gefahren، geflogen، gelaufen، geblieben، gewesen؛ فقط reisen ← gereist.
+فعل جداشدنی ge را وسط می‌گیرد: aufstehen ← aufgestanden، ankommen ← angekommen، abfahren ← abgefahren، einsteigen ← eingestiegen.
+در یک جمله هر فعل کمک‌فعل خودش را می‌گیرد: Ich habe Pizza gegessen und bin dann nach Hause gegangen.
+table:
+با haben | با sein
+Ich habe Deutsch gelernt. | Ich bin in die Schule gegangen.
+Wir haben Pizza gegessen. | Wir sind nach Köln gefahren.
+Max hat Anna angerufen. | Max ist früh aufgestanden.
+Lena hat lange gearbeitet. | Lena ist zu Hause geblieben.
+sets:
+با sein: gegangen, gekommen, gefahren, geflogen, gelaufen, gereist, geblieben, gewesen
+جداشدنی با sein: aufgestanden, abgefahren, angekommen, eingestiegen, ausgestiegen, umgestiegen, mitgekommen
+examples:
+Ich bin gestern ins Kino gegangen. | دیروز به سینما رفتم.
+Wann bist du aufgestanden? | کی بیدار شدی؟
+Wir sind mit dem Zug nach Wien gefahren. | ما با قطار به وین رفتیم.
+Lena ist am Wochenende zu Hause geblieben. | لنا آخر هفته در خانه ماند.
+targets:
+Ich [bin] nach Berlin gefahren. | من به برلین رفتم. | d: habe, ist, bist
+Max [ist] gestern spät gekommen. | ماکس دیروز دیر آمد. | d: hat, bin, sind | full: Gestern ist Max spät gekommen.
+Wir [sind] ins Kino gegangen. | ما به سینما رفتیم. | d: haben, seid, ist
+[Bist] du mit dem Bus gefahren? | با اتوبوس رفتی؟ | d: Hast, Ist, Seid
+Anna [ist] nach Teheran geflogen. | آنا با هواپیما به تهران رفت. | d: hat, bin, sind
+Ich [bin] heute um 6 Uhr aufgestanden. | امروز ساعت شش بیدار شدم. | d: habe, ist, bist | full: Heute bin ich um 6 Uhr aufgestanden.
+Wir [sind] am Sonntag zu Hause geblieben. | ما یکشنبه در خانه ماندیم. | d: haben, seid, ist | full: Am Sonntag sind wir zu Hause geblieben.
+[Seid] ihr schon in Wien gewesen? | شما تا حالا در وین بوده‌اید؟ | d: Habt, Sind, Bist
+Der Zug [ist] um 8 Uhr abgefahren. | قطار ساعت هشت حرکت کرد. | d: hat, sind, bin | full: Um 8 Uhr ist der Zug abgefahren.
+Wann [seid] ihr in Berlin angekommen? | کی به برلین رسیدید؟ | d: habt, sind, ist
+Die Kinder [sind] in den Park gelaufen. | بچه‌ها به پارک دویدند. | d: haben, seid, ist
+Lena [ist] im Sommer viel gereist. | لنا تابستان زیاد سفر کرد. | d: hat, bin, sind | full: Im Sommer ist Lena viel gereist.
+Paul [ist] am Bahnhof ausgestiegen. | پاول در ایستگاه قطار پیاده شد. | d: hat, bin, sind | full: Am Bahnhof ist Paul ausgestiegen.
+Max ist in die Schule [gegangen]. | ماکس به مدرسه رفت. | d: gegeht, gegangt, geht
+Wir sind mit dem Auto [gefahren]. | ما با ماشین رفتیم. | d: gefahrt, gefuhren, fahren
+Anna ist um 9 Uhr [gekommen]. | آنا ساعت نه آمد. | d: gekommt, gekamen, kommt | full: Um 9 Uhr ist Anna gekommen.
+Ich bin nach Hause [gelaufen]. | من تا خانه دویدم. | d: gelauft, geläuft, läuft
+Wir sind nach Hamburg [geflogen]. | ما با هواپیما به هامبورگ رفتیم. | d: gefliegt, gefliegen, fliegen
+Max ist zu Hause [geblieben]. | ماکس در خانه ماند. | d: gebleibt, gebleiben, bleibt
+Ich bin schon in Berlin [gewesen]. | من قبلاً در برلین بوده‌ام. | d: geseint, gesein, sein
+Lena ist heute spät [aufgestanden]. | لنا امروز دیر بیدار شد. | d: geaufstanden, aufgesteht, aufstehen | full: Heute ist Lena spät aufgestanden.
+Der Bus ist schon [abgefahren]. | اتوبوس رفته است. | d: geabfahren, abgefahrt, abfahren
+Wir sind um 10 Uhr in Köln [angekommen]. | ما ساعت ده به کلن رسیدیم. | d: geankommen, angekommt, ankommen | full: Um 10 Uhr sind wir in Köln angekommen.
+Ich bin in Frankfurt [umgestiegen]. | در فرانکفورت قطار عوض کردم. | d: geumsteigen, umgesteigt, umsteigen
+Paul ist in den Bus [eingestiegen]. | پاول سوار اتوبوس شد. | d: geeinsteigen, eingesteigt, einsteigen
+Anna ist gestern [mitgekommen]. | آنا دیروز با ما آمد. | d: gemitkommen, mitgekommt, mitkommen | full: Gestern ist Anna mitgekommen.
+Ich [habe] Pizza gegessen und [bin] dann nach Hause gegangen. | پیتزا خوردم و بعد به خانه رفتم. | d: bin, ist, hat / habe, ist, hat
+Max [hat] lange gearbeitet und [ist] spät gekommen. | ماکس مدت زیادی کار کرد و دیر آمد. | d: ist, bin, habe / hat, bin, habe
+Wir [sind] ins Restaurant gegangen und [haben] Pizza bestellt. | ما به رستوران رفتیم و پیتزا سفارش دادیم. | d: haben, seid, ist / sind, habt, hat
+[Hast] du gut geschlafen? – Ja, aber ich [bin] früh aufgestanden. | خوب خوابیدی؟ – بله، ولی زود بیدار شدم. | d: Bist, Ist, Hat / habe, ist, hat
+Lena [ist] nach Wien gefahren und [hat] Oma besucht. | لنا به وین رفت و از مادربزرگ دیدن کرد. | d: hat, bin, sind / ist, habe, hast
+Am Samstag [sind] wir in die Stadt gefahren und [haben] eingekauft. | شنبه به شهر رفتیم و خرید کردیم. | d: haben, seid, ist / sind, habt, hat | full: Wir sind am Samstag in die Stadt gefahren und haben eingekauft.
+Ich [bin] mit dem Zug gefahren und in Köln [umgestiegen]. | با قطار رفتم و در کلن قطار عوض کردم. | d: habe, ist, bist / umgesteigt, geumsteigen, umsteigen
+Wann [bist] du [angekommen]? | کی رسیدی؟ | d: hast, ist, seid / angekommt, geankommen, ankommen
+transforms:
+Ich gehe ins Kino. => Ich bin ins Kino gegangen. | جمله را به گذشته ببر (Perfekt).
+Wir fahren nach Berlin. => Wir sind nach Berlin gefahren. | جمله را به گذشته ببر (Perfekt).
+Max kommt um 8 Uhr. => Max ist um 8 Uhr gekommen. ; Um 8 Uhr ist Max gekommen. | جمله را به گذشته ببر (Perfekt).
+Ich stehe um 7 Uhr auf. => Ich bin um 7 Uhr aufgestanden. ; Um 7 Uhr bin ich aufgestanden. | جمله را به گذشته ببر (Perfekt).
+Anna bleibt zu Hause. => Anna ist zu Hause geblieben. | جمله را به گذشته ببر (Perfekt).
+translations:
+دیروز به برلین رفتم. => Ich bin gestern nach Berlin gefahren. ; Gestern bin ich nach Berlin gefahren.
+ساعت هفت بیدار شدم. => Ich bin um 7 Uhr aufgestanden. ; Ich bin um sieben Uhr aufgestanden. ; Um 7 Uhr bin ich aufgestanden. ; Um sieben Uhr bin ich aufgestanden.
+آنا آخر هفته در خانه ماند. => Anna ist am Wochenende zu Hause geblieben. ; Am Wochenende ist Anna zu Hause geblieben.
+کی رسیدی؟ => Wann bist du angekommen?
+ما به سینما رفتیم. => Wir sind ins Kino gegangen.

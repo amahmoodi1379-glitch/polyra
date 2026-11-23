@@ -1,0 +1,658 @@
+// German A1, card words 334–433 (shopping, home, town, getting around), in teaching order.
+// Verb phrases stand in their dictionary form after a modal verb until the builder reads conjugated phrases.
+# ich hätte gern
+[Ich hätte gern] einen Tee, bitte. | یک چای می‌خواستم، لطفاً. | d: Ich habe gern, Ich hatte gern, Ich bin gern
+[Ich hätte gern] zwei Brötchen. | دو تا نان کوچک می‌خواستم. | d: Ich habe gern, Ich hatte gern, Ich bin gern
+Guten Tag, [ich hätte gern] ein Glas Wasser. | روز بخیر، یک لیوان آب می‌خواستم. | d: ich habe gern, ich hatte gern, ich bin gern
+[Ich hätte gern] die Speisekarte, bitte. | منو را می‌خواستم، لطفاً. | d: Ich habe gern, Ich hatte gern, Ich bin gern
+[Ich hätte gern] eine Pizza mit Käse. | یک پیتزا با پنیر می‌خواستم. | d: Ich habe gern, Ich hatte gern, Ich bin gern
+[Ich hätte gern] Fisch mit Reis. | ماهی با برنج می‌خواستم. | d: Ich habe gern, Ich hatte gern, Ich bin gern
+# guten Appetit
+Das Essen ist da. [Guten Appetit]! | غذا آماده است. نوش جان! | d: Gute Nacht, Guten Morgen, Herzlichen Glückwunsch
+Hier ist die Suppe. [Guten Appetit]! | این هم سوپ. نوش جان! | d: Gute Nacht, Guten Morgen, Herzlichen Glückwunsch
+Wir essen jetzt zusammen. [Guten Appetit]! | حالا با هم غذا می‌خوریم. نوش جان! | d: Gute Nacht, Guten Morgen, Herzlichen Glückwunsch
+[Guten Appetit], Kinder! Hier ist das Brot. | نوش جان، بچه‌ها! این هم نان. | d: Gute Nacht, Guten Morgen, Herzlichen Glückwunsch
+Die Pizza ist da. [Guten Appetit], Lena! | پیتزا رسید. نوش جان، لنا! | d: Gute Nacht, Guten Morgen, Herzlichen Glückwunsch
+# Euro
+Das macht 8 [Euro], bitte. | می‌شود هشت یورو، لطفاً. | d: Cent, Kilo, Liter
+Ich habe nur 10 [Euro]. | من فقط ده یورو دارم. | d: Cent, Kilo, Liter
+Hast du 2 [Euro] für mich? | دو یورو برای من داری؟ | d: Cent, Kilo, Liter
+Das Geld in Deutschland ist der [Euro]. | پول آلمان یوروست.
+Ein Kaffee für 6 [Euro]? Das ist viel! | یک قهوه شش یورو؟ زیاد است! | d: Cent, Kilo, Liter
+Mein Vater gibt mir 20 [Euro]. | پدرم به من بیست یورو می‌دهد. | d: Cent, Kilo, Liter
+# Cent
+Das macht 2 Euro und 50 [Cent]. | می‌شود دو یورو و پنجاه سنت. | d: Kilo, Gramm, Liter
+Ich habe noch 20 [Cent]. | هنوز بیست سنت دارم. | d: Euro, Kilo, Gramm
+Ein Euro hat hundert [Cent]. | هر یورو صد سنت است. | d: Kilo, Gramm, Liter
+Gibst du mir 50 [Cent]? | پنجاه سنت به من می‌دهی؟ | d: Euro, Kilo, Liter
+Hier sind 80 [Cent] für das Brötchen. | این هشتاد سنت برای نان. | d: Euro, Kilo, Gramm
+# kosten
+Das Brot [kostet] 2 Euro. | نان دو یورو است.
+Was [kostet] der Kaffee? | قهوه چند است؟
+Die Äpfel [kosten] nur 1 Euro. | سیب‌ها فقط یک یورو است.
+Ein Auto [kostet] viel Geld. | یک ماشین پول زیادی می‌خواهد.
+Wie viel [kosten] die Tomaten? | گوجه‌فرنگی‌ها چند است؟
+Das Essen im Restaurant [kostet] 30 Euro. | غذای رستوران سی یورو می‌شود.
+# Wie viel kostet das?
+Entschuldigung, [wie viel kostet das]? | ببخشید، این چند است؟ | d: wie spät ist es, was ist das, wo ist das
+[Wie viel kostet das]? – Zwei Euro. | این چند است؟ – دو یورو. | d: Wie spät ist es, Was ist das, Wo ist das
+Das Buch ist schön. [Wie viel kostet das]? | کتاب قشنگ است. قیمتش چند است؟ | d: Wie spät ist es, Was ist das, Wo ist das
+Ich möchte den Kuchen. [Wie viel kostet das]? | کیک را می‌خواهم. قیمتش چقدر است؟ | d: Wie spät ist es, Was ist das, Wo ist das
+[Wie viel kostet das] zusammen? | روی هم چقدر می‌شود؟ | d: Wie spät ist es, Was ist das, Wo ist das
+# Preis
+Der [Preis] ist gut. | قیمتش خوب است.
+Ich kenne den [Preis] nicht. | قیمت را نمی‌دانم.
+Die [Preise] sind heute gut. | قیمت‌ها امروز خوب است.
+Der [Preis] für ein Brötchen ist 50 Cent. | قیمت یک نان کوچک پنجاه سنت است.
+Wo ist der [Preis]? Ich sehe ihn nicht. | قیمت کجاست؟ نمی‌بینمش.
+Wir fragen nach dem [Preis]. | ما قیمت را می‌پرسیم.
+# billig
+Das Brot ist hier [billig]. | نان این‌جا ارزان است.
+Der Kaffee ist nicht [billig]. | قهوه ارزان نیست.
+Ich suche ein [billiges] Auto. | دنبال یک ماشین ارزان می‌گردم.
+Die Tomaten sind heute sehr [billig]. | گوجه‌فرنگی‌ها امروز خیلی ارزان است.
+Das Essen im Café ist [billig] und gut. | غذای کافه ارزان و خوب است.
+Wir nehmen die [billigen] Äpfel. | سیب‌های ارزان را برمی‌داریم.
+# teuer
+Das Auto ist sehr [teuer]. | ماشین خیلی گران است.
+Das Restaurant ist [teuer], aber gut. | رستوران گران است، اما خوب است.
+Ist der Kaffee hier [teuer]? | قهوه این‌جا گران است؟
+Fleisch ist heute sehr [teuer]. | گوشت امروز خیلی گران است.
+Die Pizza ist nicht [teuer]. | پیتزا گران نیست.
+Das neue Auto ist [teuer], das alte ist billig. | ماشین نو گران است، ماشین قدیمی ارزان.
+# zu-adv
+Das Auto ist [zu] teuer. | این ماشین بیش از حد گران است. | d: auch, nie, noch
+Die Pizza ist [zu] groß für mich. | پیتزا برای من زیادی بزرگ است. | d: auch, nie, noch
+Du arbeitest [zu] viel. | تو زیادی کار می‌کنی. | d: auch, nie, noch
+Ich bin [zu] müde für die Arbeit. | خسته‌تر از آنم که کار کنم. | d: auch, nie, noch
+Das Brot ist [zu] alt. | نان زیادی کهنه است. | d: auch, nie, noch
+# bezahlen
+Ich [bezahle] den Kaffee. | من پول قهوه را می‌دهم.
+Wo kann ich [bezahlen]? | کجا می‌توانم حساب کنم؟
+Wir möchten [bezahlen], bitte. | لطفاً می‌خواهیم حساب کنیم.
+Mein Vater [bezahlt] das Essen. | پدرم پول غذا را می‌دهد.
+Hast du schon [bezahlt]? | حساب کرده‌ای؟
+Heute [bezahlst] du! | امروز تو حساب می‌کنی!
+# Rechnung
+Die [Rechnung], bitte! | صورت‌حساب، لطفاً!
+Hier ist die [Rechnung]. | این هم صورت‌حساب.
+Ich bezahle die [Rechnung]. | من صورت‌حساب را پرداخت می‌کنم.
+Können wir die [Rechnung] haben? | می‌شود صورت‌حساب را بیاورید؟
+Wo ist die [Rechnung]? | صورت‌حساب کجاست؟
+Die [Rechnung] für das Telefon ist da. | صورت‌حساب تلفن آمده.
+# Kasse
+Wo ist die [Kasse]? | صندوق کجاست؟
+Bitte bezahlen Sie an der [Kasse]. | لطفاً دم صندوق پول بدهید.
+An der [Kasse] warten viele Leute. | دم صندوق آدم‌های زیادی منتظرند.
+Meine Schwester arbeitet an der [Kasse]. | خواهرم پشت صندوق کار می‌کند.
+Die [Kasse] ist jetzt frei. | صندوق الان خالی است.
+Ich gehe mit dem Brot zur [Kasse]. | با نان به طرف صندوق می‌روم.
+# Geschäft
+Das [Geschäft] ist neu. | این مغازه نو است. | d: Restaurant, Café, Kino
+Meine Mutter hat ein kleines [Geschäft]. | مادرم یک مغازه کوچک دارد. | d: Restaurant, Café, Kino
+In diesem [Geschäft] kaufe ich oft Brot. | از این مغازه اغلب نان می‌خرم. | d: Restaurant, Café, Kino
+Gibt es hier ein [Geschäft]? | این‌جا مغازه هست؟ | d: Restaurant, Café, Kino
+In der Stadt gibt es viele [Geschäfte]. | در شهر مغازه‌های زیادی هست. | d: Restaurants, Cafés, Kinos
+Wir gehen ins [Geschäft]. | ما به مغازه می‌رویم. | d: Restaurant, Café, Kino
+# Supermarkt
+Ich gehe in den [Supermarkt]. | به سوپرمارکت می‌روم. | d: Markt, Park, Bahnhof
+Der [Supermarkt] ist groß. | سوپرمارکت بزرگ است. | d: Markt, Park, Bahnhof
+Im [Supermarkt] kaufe ich Milch und Brot. | از سوپرمارکت شیر و نان می‌خرم. | d: Markt, Park, Bahnhof
+Mein Bruder arbeitet im [Supermarkt]. | برادرم در سوپرمارکت کار می‌کند. | d: Markt, Park, Bahnhof
+Gibt es hier einen [Supermarkt]? | این‌جا سوپرمارکت هست؟ | d: Markt, Park, Bahnhof
+Der neue [Supermarkt] ist sehr gut. | سوپرمارکت جدید خیلی خوب است. | d: Markt, Park, Bahnhof
+# Markt
+Am Samstag gehen wir zum [Markt]. | شنبه به بازار می‌رویم. | d: Supermarkt, Park, Bahnhof
+Das Obst vom [Markt] ist lecker. | میوه‌های بازار خوشمزه است. | d: Supermarkt, Park, Bahnhof
+Der [Markt] ist am Mittwoch und am Samstag. | بازار چهارشنبه‌ها و شنبه‌هاست. | d: Supermarkt, Park, Bahnhof
+Wo ist der [Markt]? | بازار کجاست؟ | d: Supermarkt, Park, Bahnhof
+Der [Markt] in unserer Stadt ist sehr alt. | بازار شهر ما خیلی قدیمی است. | d: Supermarkt, Park, Bahnhof
+# Bäckerei
+Ich kaufe Brötchen in der [Bäckerei]. | از نانوایی نان می‌خرم.
+Wo ist hier eine [Bäckerei]? | این‌جاها نانوایی کجاست؟
+Mein Onkel hat eine [Bäckerei]. | عمویم یک نانوایی دارد.
+Das Brot aus dieser [Bäckerei] ist sehr gut. | نان این نانوایی خیلی خوب است.
+Am Morgen gehe ich zur [Bäckerei]. | صبح به نانوایی می‌روم.
+In der [Bäckerei] gibt es auch Kuchen. | نانوایی کیک هم دارد.
+# einkaufen
+Ich muss heute [einkaufen]. | امروز باید خرید کنم.
+Wir wollen am Samstag [einkaufen]. | می‌خواهیم شنبه خرید کنیم.
+Wo kann man hier gut [einkaufen]? | این‌جا کجا می‌شود خوب خرید کرد؟
+Hast du schon [eingekauft]? | خرید کرده‌ای؟ | d: einkaufen, einkaufte, kaufen
+Meine Mutter möchte im Supermarkt [einkaufen]. | مادرم می‌خواهد از سوپرمارکت خرید کند.
+Ich habe Brot und Milch [eingekauft]. | نان و شیر خریدم. | d: einkaufen, einkaufte, kaufen
+# einkaufen gehen
+Ich möchte heute [einkaufen gehen]. | می‌خواهم امروز بروم خرید.
+Wir müssen noch [einkaufen gehen]. | هنوز باید برویم خرید.
+Willst du mit mir [einkaufen gehen]? | می‌خواهی با من بیایی خرید؟
+Am Samstag wollen wir [einkaufen gehen]. | شنبه می‌خواهیم برویم خرید.
+Mama kann heute nicht [einkaufen gehen]. | مامان امروز نمی‌تواند برود خرید.
+# verkaufen
+Er [verkauft] sein Auto. | او ماشینش را می‌فروشد.
+Hier [verkauft] man Brot und Kuchen. | این‌جا نان و کیک می‌فروشند.
+Ich möchte meine alten Bücher [verkaufen]. | می‌خواهم کتاب‌های قدیمی‌ام را بفروشم.
+Der Mann [verkauft] Obst und Gemüse. | آن مرد میوه و سبزی می‌فروشد.
+Du [verkaufst] dein Auto? Warum? | ماشینت را می‌فروشی؟ چرا؟
+Die Bäckerei [verkauft] auch Kaffee. | نانوایی قهوه هم می‌فروشد.
+# Kilo
+Ein [Kilo] Äpfel, bitte. | یک کیلو سیب، لطفاً. | d: Gramm, Stück, Liter
+Ich brauche zwei [Kilo] Kartoffeln. | دو کیلو سیب‌زمینی لازم دارم. | d: Gramm, Stück, Liter
+Wie viel kostet ein [Kilo] Tomaten? | یک کیلو گوجه‌فرنگی چند است؟ | d: Gramm, Stück, Liter
+Ein [Kilo] Reis kostet 2 Euro. | یک کیلو برنج دو یورو است. | d: Gramm, Stück, Liter
+Wir kaufen drei [Kilo] Orangen. | سه کیلو پرتقال می‌خریم. | d: Gramm, Stück, Liter
+# Gramm
+Ich möchte 200 [Gramm] Käse. | دویست گرم پنیر می‌خواهم. | d: Kilo, Stück, Liter
+500 [Gramm] Fleisch, bitte. | پانصد گرم گوشت، لطفاً. | d: Kilo, Stück, Liter
+Ein Kilo hat tausend [Gramm]. | یک کیلو هزار گرم است. | d: Kilo, Stück, Liter
+Für den Kuchen brauche ich 250 [Gramm] Zucker. | برای کیک دویست و پنجاه گرم شکر لازم دارم. | d: Kilo, Stück, Liter
+Hundert [Gramm] Schokolade kosten 1 Euro. | صد گرم شکلات یک یورو است. | d: Kilo, Stück, Liter
+# Liter
+Ich kaufe 2 [Liter] Milch. | دو لیتر شیر می‌خرم. | d: Kilo, Gramm, Stück
+Wir trinken jeden Tag zwei [Liter] Wasser. | هر روز دو لیتر آب می‌نوشیم. | d: Kilo, Gramm, Stück
+Die Flasche hat zwei [Liter]. | این بطری دو لیتری است. | d: Kilo, Gramm, Stück
+Ein [Liter] Saft kostet 2 Euro. | یک لیتر آب‌میوه دو یورو است. | d: Kilo, Gramm, Stück
+Für die Suppe brauche ich drei [Liter] Wasser. | برای سوپ سه لیتر آب لازم دارم. | d: Kilo, Gramm, Stück
+# Stück
+Ein [Stück] Kuchen, bitte. | یک تکه کیک، لطفاً. | d: Kilo, Gramm, Liter
+Möchtest du noch ein [Stück] Pizza? | یک تکه پیتزای دیگر می‌خواهی؟ | d: Kilo, Gramm, Liter
+Ich esse ein [Stück] Brot mit Käse. | یک تکه نان با پنیر می‌خورم. | d: Kilo, Gramm, Liter
+Die Brötchen kosten 50 Cent das [Stück]. | نان‌ها دانه‌ای پنجاه سنت است. | d: Kilo, Gramm, Glas
+Ich nehme drei [Stück]. | سه تا برمی‌دارم. | d: Kilo, Gramm, Liter
+Nur ein [Stück] Schokolade, bitte! | فقط یک تکه شکلات، لطفاً! | d: Kilo, Gramm, Liter
+# Karte
+Kann ich mit [Karte] bezahlen? | می‌توانم با کارت پرداخت کنم؟
+Meine [Karte] ist nicht hier. | کارتم این‌جا نیست.
+Wo ist meine [Karte]? Ich finde sie nicht. | کارتم کجاست؟ پیدایش نمی‌کنم.
+Hier ist meine [Karte]. | این هم کارتم.
+Ich gebe dem Mann meine [Karte]. | کارتم را به آن مرد می‌دهم.
+# offen
+Die Bäckerei ist schon [offen]. | نانوایی باز شده است.
+Ist der Supermarkt heute [offen]? | سوپرمارکت امروز باز است؟
+Das Geschäft ist bis 20 Uhr [offen]. | مغازه تا ساعت بیست باز است.
+Am Sonntag ist das Café [offen]. | یکشنبه‌ها کافه باز است.
+Die Kasse ist nicht [offen]. | صندوق باز نیست.
+# geschlossen
+Die Bäckerei ist heute [geschlossen]. | نانوایی امروز بسته است.
+Am Sonntag sind die Geschäfte [geschlossen]. | یکشنبه‌ها مغازه‌ها بسته‌اند.
+Ist das Café jetzt [geschlossen]? | کافه الان بسته است؟
+Der Markt ist am Montag [geschlossen]. | بازار دوشنبه‌ها بسته است.
+Die Kasse ist [geschlossen], bitte warten Sie. | این صندوق بسته است، لطفاً صبر کنید.
+# öffnen
+Der Supermarkt [öffnet] um 8 Uhr. | سوپرمارکت ساعت هشت باز می‌شود.
+Wann [öffnet] das Café? | کافه کی باز می‌شود؟
+Ich [öffne] die Flasche für dich. | بطری را برایت باز می‌کنم.
+Mama, darf ich das Geschenk jetzt [öffnen]? | مامان، می‌توانم الان هدیه را باز کنم؟
+Er [öffnet] sein Buch und liest. | او کتابش را باز می‌کند و می‌خواند.
+# schließen
+Wann [schließt] die Bäckerei? | نانوایی کی می‌بندد؟
+Er [schließt] das Buch. | او کتاب را می‌بندد.
+Der Markt [schließt] um 14 Uhr. | بازار ساعت چهارده تعطیل می‌شود.
+Kannst du bitte das Auto [schließen]? | می‌توانی لطفاً در ماشین را ببندی؟
+Wir [schließen] heute früh. | ما امروز زود تعطیل می‌کنیم.
+# Wohnung
+Unsere [Wohnung] ist klein. | آپارتمان ما کوچک است.
+Ich suche eine neue [Wohnung]. | دنبال یک آپارتمان جدید می‌گردم.
+Die [Wohnung] kostet 800 Euro. | این آپارتمان هشتصد یورو است.
+Wir wohnen in einer schönen [Wohnung]. | ما در یک آپارتمان قشنگ زندگی می‌کنیم.
+Die [Wohnung] ist groß und billig. | آپارتمان بزرگ و ارزان است.
+Meine Freundin hat eine [Wohnung] in Berlin. | دوستم در برلین یک آپارتمان دارد.
+# Zimmer
+Mein [Zimmer] ist klein. | اتاقم کوچک است.
+Die Wohnung hat drei [Zimmer]. | آپارتمان سه اتاق دارد. | d: Bäder, Betten, Sofas
+Das [Zimmer] von Anna ist schön. | اتاق آنا قشنگ است.
+Ist das [Zimmer] noch frei? | این اتاق هنوز خالی است؟
+Die Kinder spielen in ihrem [Zimmer]. | بچه‌ها در اتاقشان بازی می‌کنند.
+Mein Bruder und ich haben ein [Zimmer] zusammen. | من و برادرم با هم یک اتاق داریم.
+# Küche
+Mama ist in der [Küche]. | مامان در آشپزخانه است.
+Die [Küche] ist sehr klein. | آشپزخانه خیلی کوچک است.
+Wir essen in der [Küche]. | ما در آشپزخانه غذا می‌خوریم.
+Die Wohnung hat eine neue [Küche]. | آپارتمان یک آشپزخانه نو دارد.
+Ich koche gern in meiner [Küche]. | دوست دارم در آشپزخانه‌ام آشپزی کنم.
+Wo ist die Milch? – In der [Küche]. | شیر کجاست؟ – در آشپزخانه.
+# Bad
+Wo ist das [Bad]? | حمام کجاست؟
+Die Wohnung hat ein [Bad] und eine Küche. | آپارتمان یک حمام و یک آشپزخانه دارد.
+Mein Vater ist im [Bad]. | پدرم در حمام است.
+Das [Bad] ist klein, aber neu. | حمام کوچک است، اما نو.
+Am Morgen ist das [Bad] nie frei. | صبح‌ها حمام هیچ‌وقت خالی نیست.
+Unser Haus hat zwei [Bäder]. | خانه ما دو حمام دارد.
+# Toilette
+Wo ist die [Toilette], bitte? | دستشویی کجاست، لطفاً؟
+Die [Toilette] ist im Bad. | توالت در حمام است.
+Die [Toilette] im Café ist geschlossen. | دستشویی کافه بسته است.
+Kann ich bitte zur [Toilette] gehen? | می‌توانم بروم دستشویی؟
+Das Kind muss zur [Toilette]. | بچه باید برود دستشویی.
+# Dusche
+Unser Bad hat eine [Dusche]. | حمام ما دوش دارد.
+Am Morgen nehme ich eine [Dusche]. | صبح‌ها دوش می‌گیرم.
+Die [Dusche] ist frei. | دوش خالی شد.
+Die [Dusche] ist sehr alt. | دوش خیلی قدیمی است.
+Mein Bruder ist noch in der [Dusche]. | برادرم هنوز زیر دوش است.
+# Schlafzimmer
+Das [Schlafzimmer] ist groß. | اتاق خواب بزرگ است.
+Die Wohnung hat zwei [Schlafzimmer]. | آپارتمان دو اتاق خواب دارد. | d: Bäder, Fenster, Betten
+Mama ist im [Schlafzimmer] und schläft. | مامان در اتاق خواب است و خوابیده.
+Unser [Schlafzimmer] ist klein, aber schön. | اتاق خواب ما کوچک است، اما قشنگ.
+Wo ist dein [Schlafzimmer]? | اتاق خوابت کجاست؟
+# Wohnzimmer
+Das [Wohnzimmer] ist sehr groß. | اتاق نشیمن خیلی بزرگ است.
+Am Abend sind wir alle im [Wohnzimmer]. | عصرها همه‌مان در اتاق نشیمن هستیم.
+Die Kinder spielen im [Wohnzimmer]. | بچه‌ها در اتاق نشیمن بازی می‌کنند.
+Im [Wohnzimmer] trinken wir Tee. | در اتاق نشیمن چای می‌نوشیم.
+Gehen wir ins [Wohnzimmer]! | برویم به اتاق نشیمن!
+Ist Papa im [Wohnzimmer]? | بابا در اتاق نشیمن است؟
+# Garten
+Die Kinder spielen im [Garten]. | بچه‌ها در باغچه بازی می‌کنند.
+Unser Haus hat einen kleinen [Garten]. | خانه ما یک باغچه کوچک دارد.
+Im [Garten] gibt es viele Tomaten. | در باغچه گوجه‌فرنگی زیادی هست.
+Oma arbeitet gern im [Garten]. | مادربزرگ دوست دارد در باغچه کار کند.
+Wir essen heute im [Garten]. | امروز در باغچه غذا می‌خوریم.
+Der [Garten] ist im Sommer sehr schön. | باغچه در تابستان خیلی قشنگ است.
+# Balkon
+Die Wohnung hat einen [Balkon]. | آپارتمان یک بالکن دارد.
+Der [Balkon] ist klein, aber schön. | بالکن کوچک است، اما قشنگ.
+Ich suche eine Wohnung mit [Balkon]. | دنبال آپارتمانی با بالکن می‌گردم.
+Vom [Balkon] sehe ich den Garten. | از بالکن باغچه را می‌بینم.
+Ist der [Balkon] groß? | بالکن بزرگ است؟
+# Tür
+Kannst du bitte die [Tür] öffnen? | می‌توانی لطفاً در را باز کنی؟
+Die [Tür] ist offen. | در باز است.
+Wer ist an der [Tür]? | کی دم در است؟
+Ich schließe die [Tür]. | در را می‌بندم.
+Das Haus hat eine neue [Tür]. | خانه یک در نو دارد.
+Die Küche hat zwei [Türen]. | آشپزخانه دو در دارد.
+# Fenster
+Kannst du das [Fenster] öffnen? | می‌توانی پنجره را باز کنی؟
+Das [Fenster] ist sehr groß. | پنجره خیلی بزرگ است.
+Mein Zimmer hat zwei [Fenster]. | اتاقم دو پنجره دارد. | d: Türen, Lampen, Stühle
+Ich schließe das [Fenster]. | پنجره را می‌بندم.
+Das Kind sieht aus dem [Fenster]. | بچه از پنجره بیرون را نگاه می‌کند.
+Das [Fenster] im Bad ist klein. | پنجره حمام کوچک است.
+# Tisch
+Wir essen am [Tisch]. | ما سر میز غذا می‌خوریم.
+Der [Tisch] ist neu. | میز نو است.
+Die Küche hat einen großen [Tisch]. | آشپزخانه یک میز بزرگ دارد.
+Ist der [Tisch] hier frei? | این میز آزاد است؟
+Wir möchten einen [Tisch] für vier Personen. | یک میز برای چهار نفر می‌خواهیم.
+Kinder, kommt bitte zum [Tisch]! | بچه‌ها، لطفاً بیایید سر میز!
+# Stuhl
+Der [Stuhl] ist alt. | صندلی قدیمی است.
+Wir brauchen noch einen [Stuhl]. | ما یک صندلی دیگر لازم داریم.
+Der Tisch hat vier [Stühle]. | این میز چهار صندلی دارد.
+Ist dieser [Stuhl] frei? | این صندلی خالی است؟
+Der kleine [Stuhl] ist für das Baby. | صندلی کوچک برای نوزاد است.
+Ich kaufe zwei neue [Stühle] für die Küche. | دو صندلی نو برای آشپزخانه می‌خرم.
+# Bett
+Das Kind ist schon im [Bett]. | بچه دیگر توی تخت است.
+Das [Bett] ist zu{zu-adv} klein für mich. | این تخت برای من زیادی کوچک است.
+Im Schlafzimmer gibt es ein großes [Bett]. | در اتاق خواب یک تخت بزرگ هست.
+Ich gehe um 22 Uhr ins [Bett]. | ساعت بیست و دو به رختخواب می‌روم.
+Am Sonntag bleibe ich im [Bett]. | یکشنبه‌ها در رختخواب می‌مانم.
+Das Zimmer hat zwei [Betten]. | اتاق دو تخت دارد.
+# ins Bett gehen
+Ich möchte jetzt [ins Bett gehen]. | می‌خواهم حالا بروم بخوابم.
+Die Kinder müssen um 8 Uhr [ins Bett gehen]. | بچه‌ها باید ساعت هشت بروند بخوابند.
+Ich bin müde. Ich will [ins Bett gehen]. | خسته‌ام. می‌خواهم بروم بخوابم.
+Wann möchtest du heute [ins Bett gehen]? | امروز کی می‌خواهی بروی بخوابی؟
+Am Wochenende muss ich nicht früh [ins Bett gehen]. | آخر هفته‌ها لازم نیست زود بخوابم.
+Ich bin müde und [gehe ins Bett]. | خسته‌ام و می‌روم بخوابم.
+Die Kinder [gehen ins Bett]. | بچه‌ها می‌روند بخوابند.
+# Schrank
+Die Tassen sind im [Schrank]. | فنجان‌ها در کمد است.
+Mein [Schrank] ist zu{zu-adv} klein. | کمدم زیادی کوچک است.
+Wir kaufen einen neuen [Schrank]. | یک کمد نو می‌خریم.
+Der [Schrank] ist alt, aber schön. | کمد قدیمی است، اما قشنگ.
+Im Schlafzimmer gibt es einen großen [Schrank]. | در اتاق خواب یک کمد بزرگ هست.
+Die Küche hat viele [Schränke]. | آشپزخانه کمدهای زیادی دارد.
+# Sofa
+Wir kaufen ein neues [Sofa]. | یک کاناپه نو می‌خریم.
+Das [Sofa] ist im Wohnzimmer. | کاناپه در اتاق نشیمن است.
+Das [Sofa] ist sehr schön, aber teuer. | کاناپه خیلی قشنگ است، اما گران.
+Unser [Sofa] ist alt. | کاناپه ما قدیمی است.
+Das Wohnzimmer hat zwei [Sofas]. | اتاق نشیمن دو کاناپه دارد.
+Ist das [Sofa] auch ein Bett? | این کاناپه تخت‌خواب هم می‌شود؟
+# Lampe
+Die [Lampe] ist neu. | چراغ نو است.
+Ich brauche eine [Lampe] für mein Zimmer. | برای اتاقم یک چراغ لازم دارم.
+Die [Lampe] im Wohnzimmer ist sehr schön. | چراغ اتاق نشیمن خیلی قشنگ است.
+Das Zimmer hat nur eine [Lampe]. | اتاق فقط یک چراغ دارد.
+Wie viel kostet die [Lampe]? | این چراغ چند است؟
+Wir kaufen zwei [Lampen] für die Küche. | دو چراغ برای آشپزخانه می‌خریم.
+# Kühlschrank
+Die Milch ist im [Kühlschrank]. | شیر در یخچال است.
+Unser [Kühlschrank] ist sehr alt. | یخچال ما خیلی قدیمی است.
+Im [Kühlschrank] gibt es noch Käse. | در یخچال هنوز پنیر هست.
+Wir brauchen einen neuen [Kühlschrank]. | ما یک یخچال نو لازم داریم.
+Ist noch Butter im [Kühlschrank]? | هنوز کره در یخچال هست؟
+Der [Kühlschrank] in der Küche ist sehr groß. | یخچال آشپزخانه خیلی بزرگ است.
+# Bild
+Das [Bild] ist sehr schön. | این تابلو خیلی قشنگ است.
+Im Wohnzimmer gibt es viele [Bilder]. | در اتاق نشیمن تابلوهای زیادی هست.
+Ich kaufe ein [Bild] für mein Zimmer. | یک تابلو برای اتاقم می‌خرم.
+Das [Bild] von meiner Familie ist im Schlafzimmer. | عکس خانواده‌ام در اتاق خواب است.
+Das [Bild] ist von meinem Opa. | این تابلو مال پدربزرگم است.
+# Schlüssel
+Wo ist mein [Schlüssel]? | کلیدم کجاست؟
+Ich finde meinen [Schlüssel] nicht. | کلیدم را پیدا نمی‌کنم.
+Der [Schlüssel] ist im Auto. | کلید در ماشین است.
+Hast du einen [Schlüssel] für die Wohnung? | کلید آپارتمان را داری؟
+Das ist der [Schlüssel] für die Tür im Garten. | این کلید در باغچه است.
+# Miete
+Die [Miete] für die Wohnung ist 900 Euro. | اجاره آپارتمان نهصد یورو است.
+Ich bezahle jeden Monat die [Miete]. | هر ماه اجاره را می‌دهم.
+Die [Miete] in München ist teuer. | اجاره‌بها در مونیخ گران است.
+Wie viel [Miete] bezahlst du? | چقدر اجاره می‌دهی؟
+Die Wohnung ist schön, und die [Miete] ist billig. | آپارتمان قشنگ است و اجاره‌اش ارزان.
+Die [Miete] ist zu{zu-adv} viel für uns. | این اجاره برای ما زیادی است.
+# Dorf
+Meine Oma wohnt in einem [Dorf]. | مادربزرگم در یک روستا زندگی می‌کند.
+Das [Dorf] ist klein und schön. | روستا کوچک و قشنگ است.
+In unserem [Dorf] gibt es nur eine Bäckerei. | در روستای ما فقط یک نانوایی هست.
+Ich komme aus einem [Dorf] im Iran. | من اهل روستایی در ایران هستم.
+Im Sommer fahren wir ins [Dorf]. | تابستان‌ها به روستا می‌رویم.
+Die [Dörfer] hier sind sehr alt. | روستاهای این‌جا خیلی قدیمی‌اند.
+# Platz
+Der [Platz] ist sehr groß. | میدان خیلی بزرگ است. | d: Park, Markt, Supermarkt
+Am [Platz] gibt es ein Café. | کنار میدان یک کافه هست. | d: Park, Markt, Supermarkt
+Wie komme ich zum [Platz]? | چطور به میدان بروم؟ | d: Park, Markt, Supermarkt
+In der Stadt gibt es viele schöne [Plätze]. | در شهر میدان‌های قشنگ زیادی هست. | d: Parks, Märkte, Supermärkte
+Das Restaurant am [Platz] ist teuer. | رستوران کنار میدان گران است. | d: Park, Markt, Supermarkt
+# Zentrum
+Wir wohnen im [Zentrum]. | ما در مرکز شهر زندگی می‌کنیم.
+Im [Zentrum] gibt es viele Geschäfte. | در مرکز شهر مغازه‌های زیادی هست.
+Wie komme ich ins [Zentrum]? | چطور به مرکز شهر بروم؟
+Die Wohnungen im [Zentrum] sind teuer. | آپارتمان‌های مرکز شهر گران است.
+Das [Zentrum] von Köln ist sehr schön. | مرکز شهر کلن خیلی قشنگ است.
+Am Samstag fahren wir mit dem Auto ins [Zentrum]. | شنبه با ماشین به مرکز شهر می‌رویم.
+# Bank
+Die [Bank] ist im Zentrum. | بانک در مرکز شهر است.
+Ich muss heute zur [Bank]. | امروز باید بروم بانک.
+Meine Mutter arbeitet in einer [Bank]. | مادرم در یک بانک کار می‌کند.
+Die [Bank] ist am Samstag geschlossen. | بانک شنبه‌ها بسته است.
+Ich brauche Geld. Wo ist hier eine [Bank]? | پول لازم دارم. این‌جا بانک کجاست؟
+Die [Bank] öffnet um 9 Uhr. | بانک ساعت نه باز می‌شود.
+# Post
+Ich gehe zur [Post]. | به اداره پست می‌روم.
+Die [Post] ist am Platz. | اداره پست کنار میدان است.
+Wann öffnet die [Post]? | اداره پست کی باز می‌شود؟
+Heute ist keine [Post] für dich da. | امروز نامه‌ای برایت نیامده.
+Mein Vater arbeitet bei der [Post]. | پدرم در اداره پست کار می‌کند.
+# Kino
+Das [Kino] ist im Zentrum. | سینما در مرکز شهر است.
+Wir gehen heute ins [Kino]. | امروز به سینما می‌رویم.
+Das [Kino] am Platz ist sehr alt. | سینمای کنار میدان خیلی قدیمی است.
+Das [Kino] ist heute billig: nur 5 Euro. | سینما امروز ارزان است: فقط پنج یورو.
+Unsere Stadt hat zwei [Kinos]. | شهر ما دو سینما دارد.
+Meine Freunde sind im [Kino]. | دوستانم در سینما هستند.
+# ins Kino gehen
+Wollen wir heute [ins Kino gehen]? | امروز برویم سینما؟
+Ich möchte am Samstag [ins Kino gehen]. | می‌خواهم شنبه بروم سینما.
+Kannst du morgen mit mir [ins Kino gehen]? | فردا می‌توانی با من بیایی سینما؟
+Wir können am Abend [ins Kino gehen]. | می‌توانیم عصر برویم سینما.
+Die Kinder dürfen heute [ins Kino gehen]. | بچه‌ها امروز اجازه دارند بروند سینما.
+Lena und Max [gehen ins Kino]. | لنا و ماکس می‌روند سینما.
+Mein Bruder [geht ins Kino], ich bleibe zu Hause. | برادرم می‌رود سینما، من خانه می‌مانم.
+# Museum
+Das [Museum] ist am Montag geschlossen. | موزه دوشنبه‌ها بسته است.
+Wir gehen heute ins [Museum]. | امروز به موزه می‌رویم.
+Das [Museum] ist alt und sehr groß. | موزه قدیمی و خیلی بزرگ است.
+In Berlin gibt es viele [Museen]. | در برلین موزه‌های زیادی هست.
+Das [Museum] öffnet um 10 Uhr. | موزه ساعت ده باز می‌شود.
+# Park
+Die Kinder spielen im [Park]. | بچه‌ها در پارک بازی می‌کنند. | d: Platz, Markt, Supermarkt
+Der [Park] ist sehr schön. | پارک خیلی قشنگ است. | d: Platz, Markt, Supermarkt
+Am Sonntag gehen wir in den [Park]. | یکشنبه‌ها به پارک می‌رویم. | d: Platz, Markt, Supermarkt
+Gibt es hier einen [Park]? | این‌جا پارک هست؟ | d: Platz, Markt, Supermarkt
+Ich lese gern im [Park]. | دوست دارم در پارک کتاب بخوانم. | d: Platz, Markt, Supermarkt
+In unserer Stadt gibt es viele [Parks]. | در شهر ما پارک‌های زیادی هست. | d: Plätze, Märkte, Supermärkte
+# Schwimmbad
+Im Sommer gehen wir ins [Schwimmbad]. | تابستان‌ها به استخر می‌رویم.
+Das [Schwimmbad] ist heute geschlossen. | استخر امروز بسته است.
+Das [Schwimmbad] ist neu und sehr groß. | استخر نو و خیلی بزرگ است.
+Gibt es hier ein [Schwimmbad]? | این‌جا استخر هست؟
+Die Kinder sind gern im [Schwimmbad]. | بچه‌ها دوست دارند در استخر باشند.
+# Polizei
+Die [Polizei] ist schon hier. | پلیس این‌جاست.
+Mein Bruder arbeitet bei der [Polizei]. | برادرم در اداره پلیس کار می‌کند.
+Wo ist die [Polizei]? | اداره پلیس کجاست؟
+Die [Polizei] fragt den Mann nach seinem Namen. | پلیس اسم آن مرد را می‌پرسد.
+Ich brauche die [Polizei]! | به پلیس احتیاج دارم!
+# Krankenhaus
+Meine Oma ist im [Krankenhaus]. | مادربزرگم در بیمارستان است. | d: Museum, Kino, Schwimmbad
+Meine Schwester arbeitet in einem [Krankenhaus]. | خواهرم در یک بیمارستان کار می‌کند. | d: Museum, Kino, Schwimmbad
+Das [Krankenhaus] ist im Zentrum. | بیمارستان در مرکز شهر است. | d: Museum, Kino, Schwimmbad
+Wo ist hier ein [Krankenhaus]? | این‌جا بیمارستان کجاست؟ | d: Museum, Kino, Schwimmbad
+Wir fahren mit dem Auto ins [Krankenhaus]. | با ماشین به بیمارستان می‌رویم. | d: Museum, Kino, Schwimmbad
+Das Baby ist im [Krankenhaus] geboren. | نوزاد در بیمارستان به دنیا آمده. | d: Museum, Kino, Schwimmbad
+# Apotheke
+Ich gehe zur [Apotheke]. | به داروخانه می‌روم. | d: Bank, Post, Bäckerei
+Gibt es hier eine [Apotheke]? | این‌جا داروخانه هست؟ | d: Bank, Post, Bäckerei
+Die [Apotheke] ist am Sonntag geschlossen. | داروخانه یکشنبه‌ها بسته است. | d: Bank, Post, Bäckerei
+Die [Apotheke] am Platz ist bis 20 Uhr offen. | داروخانه کنار میدان تا ساعت بیست باز است. | d: Bank, Post, Bäckerei
+Die [Apotheke] ist nur zwei Minuten von hier. | داروخانه فقط دو دقیقه با این‌جا فاصله دارد. | d: Bank, Post, Bäckerei
+# Hotel
+Das [Hotel] ist im Zentrum. | هتل در مرکز شهر است. | d: Kino, Museum, Restaurant
+Wir bleiben drei Tage im [Hotel]. | ما سه روز در هتل می‌مانیم. | d: Kino, Museum, Restaurant
+Das [Hotel] ist teuer, aber sehr schön. | هتل گران است، اما خیلی قشنگ. | d: Kino, Museum, Restaurant
+Ich suche ein billiges [Hotel]. | دنبال یک هتل ارزان می‌گردم. | d: Kino, Museum, Restaurant
+Das [Hotel] hat ein Schwimmbad. | هتل استخر دارد. | d: Kino, Museum, Restaurant
+Das Zimmer im [Hotel] ist klein. | اتاق هتل کوچک است. | d: Kino, Museum, Restaurant
+# links
+Die Bank ist [links]. | بانک سمت چپ است. | d: rechts, geradeaus, hier
+Gehen Sie hier [links]. | از این‌جا بروید سمت چپ. | d: rechts, geradeaus, hier
+Das Hotel ist dort [links]. | هتل آن‌جا سمت چپ است. | d: rechts, geradeaus, hier
+Ist das Kino hier [links]? | سینما این‌جا سمت چپ است؟ | d: rechts, geradeaus, hier
+Das Kind schreibt mit [links]. | آن بچه با دست چپ می‌نویسد. | d: rechts, geradeaus, hier
+# rechts
+Die Apotheke ist [rechts]. | داروخانه سمت راست است. | d: links, geradeaus, dort
+Gehen Sie dann [rechts]. | بعد بروید سمت راست. | d: links, geradeaus, dort
+Links ist die Küche, [rechts] ist das Bad. | سمت چپ آشپزخانه است، سمت راست حمام. | d: geradeaus, hier, dort
+In Deutschland fährt man [rechts]. | در آلمان از سمت راست رانندگی می‌کنند. | d: links, geradeaus, dort
+Ist das Hotel [rechts] oder links? | هتل سمت راست است یا چپ؟ | d: geradeaus, hier, dort
+# geradeaus
+Gehen Sie immer [geradeaus]. | همین‌طور مستقیم بروید. | d: links, rechts, dort
+Das Kino ist [geradeaus], nicht links. | سینما مستقیم است، نه سمت چپ. | d: rechts, hier, dort
+Fahren Sie [geradeaus] und dann rechts. | مستقیم بروید و بعد به راست. | d: links, hier, dort
+Ist das Museum [geradeaus]? | موزه مستقیم است؟ | d: links, rechts, dort
+Hier [geradeaus], dann sehen Sie den Park. | از این‌جا مستقیم، بعد پارک را می‌بینید. | d: links, rechts, dort
+# weit
+Ist das Hotel [weit]? | هتل دور است؟ | d: nah, teuer, billig
+Die Bank ist nicht [weit]. | بانک دور نیست. | d: nah, teuer, billig
+Die Schule ist sehr [weit] von unserem Haus. | مدرسه خیلی از خانه ما دور است. | d: nah, teuer, billig
+Wie [weit] ist es bis zum Zentrum? | تا مرکز شهر چقدر راه است؟ | d: nah, teuer, billig
+Das Kino ist zu{zu-adv} [weit]. Wir nehmen das Auto. | سینما زیادی دور است. ماشین را می‌بریم. | d: nah, teuer, billig
+# nah
+Die Apotheke ist sehr [nah]. | داروخانه خیلی نزدیک است. | d: weit, teuer, billig
+Ist der Park [nah]? | پارک نزدیک است؟ | d: weit, teuer, billig
+Unsere Wohnung ist [nah] am Zentrum. | آپارتمان ما نزدیک مرکز شهر است. | d: weit, teuer, billig
+Die Schule ist [nah]. Die Kinder gehen allein. | مدرسه نزدیک است. بچه‌ها تنها می‌روند. | d: weit, teuer, billig
+Wo ist die [nächste] Bank? | نزدیک‌ترین بانک کجاست؟
+# auf
+Das Buch ist [auf] dem Tisch. | کتاب روی میز است. | d: unter, neben, hinter
+Papa schläft [auf] dem Sofa. | بابا روی کاناپه خوابیده است. | d: unter, neben, hinter
+Die Lampe ist [auf] dem Schrank. | چراغ روی کمد است. | d: unter, neben, hinter
+Das Brot ist [auf] dem Teller. | نان روی بشقاب است. | d: unter, neben, hinter
+Dein Schlüssel ist [auf] dem Stuhl. | کلیدت روی صندلی است. | d: unter, neben, hinter
+# unter
+Der Schlüssel ist [unter] dem Sofa. | کلید زیر کاناپه است.
+Das Buch ist [unter] dem Bett. | کتاب زیر تخت است.
+[Unter] dem Fenster ist ein Tisch. | زیر پنجره یک میز هست.
+Meine Oma wohnt [unter] uns. | مادربزرگم طبقه پایین ما زندگی می‌کند.
+Das Geld ist [unter] dem Buch. | پول زیر کتاب است.
+# über
+Die Lampe ist [über] dem Tisch. | چراغ بالای میز است.
+Das Bild ist [über] dem Sofa. | تابلو بالای کاناپه است.
+Meine Freundin wohnt [über] mir. | دوستم طبقه بالای من زندگی می‌کند.
+[Über] dem Bett ist ein Fenster. | بالای تخت یک پنجره هست.
+Die Uhr ist [über] der Tür. | ساعت بالای در است.
+# neben
+Die Bank ist [neben] der Post. | بانک کنار اداره پست است.
+Das Bad ist [neben] der Küche. | حمام کنار آشپزخانه است.
+Mein Bruder wohnt [neben] uns. | برادرم بغل ما زندگی می‌کند.
+Die Lampe ist [neben] dem Bett. | چراغ کنار تخت است.
+Das Café ist [neben] dem Kino. | کافه کنار سینماست.
+# vor
+Das Auto ist [vor] dem Haus. | ماشین جلوی خانه است.
+Ich warte [vor] dem Kino. | جلوی سینما منتظرم.
+[Vor] der Schule ist ein Park. | جلوی مدرسه یک پارک هست.
+Viele Leute warten [vor] der Bäckerei. | آدم‌های زیادی جلوی نانوایی منتظرند.
+Mein Freund ist schon [vor] der Tür. | دوستم جلوی در است.
+# hinter
+Der Garten ist [hinter] dem Haus. | باغچه پشت خانه است.
+Das Kind ist [hinter] der Tür. | بچه پشت در است.
+Der Park ist [hinter] dem Museum. | پارک پشت موزه است.
+Mein Schlüssel ist [hinter] dem Sofa! | کلیدم پشت کاناپه است!
+Das Auto ist [hinter] dem Supermarkt. | ماشین پشت سوپرمارکت است.
+# zwischen
+Die Bank ist [zwischen] der Post und dem Café. | بانک بین اداره پست و کافه است.
+Das Kind schläft [zwischen] Mama und Papa. | بچه بین مامان و بابا خوابیده.
+Ich komme [zwischen] 5 und 6 Uhr. | بین ساعت پنج و شش می‌آیم.
+Der Tisch ist [zwischen] dem Sofa und dem Fenster. | میز بین کاناپه و پنجره است.
+Das Dorf ist [zwischen] Berlin und Hamburg. | روستا بین برلین و هامبورگ است.
+# ohne
+Ich trinke Kaffee [ohne] Zucker. | قهوه را بدون شکر می‌نوشم. | d: mit, für, aus
+Wir fahren [ohne] die Kinder. | بدون بچه‌ها می‌رویم. | d: mit, für, aus
+Ich möchte eine Pizza [ohne] Fleisch. | یک پیتزای بدون گوشت می‌خواهم. | d: mit, für, aus
+[Ohne] Geld kann ich nichts kaufen. | بدون پول نمی‌توانم چیزی بخرم. | d: Mit, Für, Aus
+Tee [ohne] Milch, bitte. | چای بدون شیر، لطفاً. | d: mit, für, aus
+Ein Zimmer [ohne] Bad ist billig. | اتاق بدون حمام ارزان است. | d: mit, für, aus
+# Bus
+Ich fahre mit dem [Bus] zur Arbeit. | با اتوبوس سر کار می‌روم.
+Der [Bus] kommt um 8 Uhr. | اتوبوس ساعت هشت می‌آید.
+Wann kommt der nächste [Bus]? | اتوبوس بعدی کی می‌آید؟
+Der [Bus] kommt heute zu{zu-adv} spät. | اتوبوس امروز دیر می‌آید.
+In unserer Stadt sind die [Busse] neu. | در شهر ما اتوبوس‌ها نو هستند.
+Dieser [Bus] fährt ins Zentrum. | این اتوبوس به مرکز شهر می‌رود.
+# Bus fahren
+Ich muss heute [Bus fahren]. | امروز باید با اتوبوس بروم.
+Mein Sohn kann schon allein [Bus fahren]. | پسرم دیگر می‌تواند تنهایی با اتوبوس برود.
+Ich will nicht [Bus fahren]. Wir nehmen das Auto. | نمی‌خواهم با اتوبوس بروم. ماشین را می‌بریم.
+In der Stadt kann man gut [Bus fahren]. | در شهر می‌شود راحت با اتوبوس رفت و آمد کرد.
+Am Wochenende müssen wir nicht [Bus fahren]. | آخر هفته لازم نیست با اتوبوس برویم.
+Ich [fahre Bus], Papa nimmt das Auto. | من با اتوبوس می‌روم، بابا ماشین را می‌برد.
+Meine Tochter [fährt Bus] zur Schule. | دخترم با اتوبوس به مدرسه می‌رود.
+# Zug
+Der [Zug] nach Hamburg fährt um 10 Uhr. | قطار هامبورگ ساعت ده حرکت می‌کند.
+Wir fahren mit dem [Zug] nach München. | با قطار به مونیخ می‌رویم.
+Der [Zug] kommt heute spät. | قطار امروز دیر می‌آید.
+Im [Zug] lese ich gern. | در قطار دوست دارم کتاب بخوانم.
+Ist das der [Zug] nach Köln? | این قطار کلن است؟
+Die [Züge] in Deutschland sind teuer. | قطارها در آلمان گران‌اند.
+# Bahn
+Ich fahre mit der [Bahn] zur Arbeit. | با قطار سر کار می‌روم.
+Mit der [Bahn] ist es billig. | با قطار ارزان است.
+Mein Vater arbeitet bei der [Bahn]. | پدرم در راه‌آهن کار می‌کند.
+Die [Bahn] fährt alle 10 Minuten. | قطار هر ده دقیقه یک بار حرکت می‌کند.
+Fährst du mit dem Auto oder mit der [Bahn]? | با ماشین می‌روی یا با قطار؟
+# U-Bahn
+Ich nehme die [U-Bahn]. | با مترو می‌روم.
+Die [U-Bahn] fährt ins Zentrum. | مترو به مرکز شهر می‌رود.
+Mit der [U-Bahn] bin ich in 10 Minuten da. | با مترو ده دقیقه‌ای می‌رسم.
+In Teheran gibt es auch eine [U-Bahn]. | تهران هم مترو دارد.
+Die [U-Bahn] kommt gleich. | مترو الان می‌آید.
+# Taxi
+Wir nehmen ein [Taxi]. | تاکسی می‌گیریم.
+Das [Taxi] wartet vor dem Hotel. | تاکسی جلوی هتل منتظر است.
+Das [Taxi] kostet 20 Euro. | تاکسی بیست یورو می‌شود.
+Ich fahre mit dem [Taxi] nach Hause. | با تاکسی به خانه می‌روم.
+Kannst du ein [Taxi] für mich bestellen? | می‌توانی برایم یک تاکسی بگیری؟
+# Fahrrad
+Ich fahre mit dem [Fahrrad] zur Schule. | با دوچرخه به مدرسه می‌روم.
+Mein [Fahrrad] ist neu. | دوچرخه‌ام نو است.
+Das Kind möchte ein [Fahrrad] zum Geburtstag. | بچه برای تولدش یک دوچرخه می‌خواهد.
+Wo ist mein [Fahrrad]? Es ist nicht hier! | دوچرخه‌ام کجاست؟ این‌جا نیست!
+In der Stadt gibt es viele [Fahrräder]. | در شهر دوچرخه‌های زیادی هست.
+Ich verkaufe mein altes [Fahrrad]. | دوچرخه قدیمی‌ام را می‌فروشم.
+# Fahrrad fahren
+Kannst du [Fahrrad fahren]? | دوچرخه‌سواری بلدی؟
+Ich möchte am Wochenende [Fahrrad fahren]. | می‌خواهم آخر هفته دوچرخه‌سواری کنم.
+Meine Tochter lernt [Fahrrad fahren]. | دخترم دوچرخه‌سواری یاد می‌گیرد.
+Im Park kann man gut [Fahrrad fahren]. | در پارک می‌شود خوب دوچرخه‌سواری کرد.
+Oma will nicht mehr{mehr} [Fahrrad fahren]. | مادربزرگ دیگر نمی‌خواهد دوچرخه‌سواری کند.
+Die Kinder [fahren Fahrrad] im Park. | بچه‌ها در پارک دوچرخه‌سواری می‌کنند.
+Ich [fahre Fahrrad] zur Arbeit. | من با دوچرخه سر کار می‌روم.
+# Auto fahren
+Mein Vater kann gut [Auto fahren]. | پدرم خوب رانندگی می‌کند.
+Ich lerne jetzt [Auto fahren]. | الان دارم رانندگی یاد می‌گیرم.
+Du darfst noch nicht [Auto fahren]. | تو هنوز اجازه نداری رانندگی کنی.
+Ich bin müde. Ich will nicht [Auto fahren]. | خسته‌ام. نمی‌خواهم رانندگی کنم.
+Kannst du heute [Auto fahren]? | امروز می‌توانی رانندگی کنی؟
+Meine Mutter [fährt Auto], mein Vater nicht. | مادرم رانندگی می‌کند، پدرم نه.
+Wer [fährt Auto], du oder ich? | کی رانندگی می‌کند، تو یا من؟
+# Flugzeug
+Wir kommen mit dem [Flugzeug]. | ما با هواپیما می‌آییم.
+Das [Flugzeug] ist sehr groß. | هواپیما خیلی بزرگ است.
+Im [Flugzeug] schlafe ich nicht gut. | در هواپیما خوب نمی‌خوابم.
+Mit dem [Flugzeug] dauert es nur 2 Stunden. | با هواپیما فقط دو ساعت طول می‌کشد.
+Das Kind sieht ein [Flugzeug]. | بچه یک هواپیما می‌بیند.
+# fliegen
+Wir [fliegen] im Sommer nach Teheran. | تابستان با هواپیما به تهران می‌رویم.
+Ich [fliege] morgen nach Berlin. | فردا با هواپیما به برلین می‌روم.
+Das Flugzeug [fliegt] nach Hamburg. | هواپیما به هامبورگ پرواز می‌کند.
+Mein Bruder [fliegt] oft für die Arbeit. | برادرم برای کار زیاد با هواپیما سفر می‌کند.
+Ich möchte einmal nach Wien [fliegen]. | دلم می‌خواهد یک بار با هواپیما به وین بروم.
+Wann [fliegst] du nach Hause? | کی با هواپیما به خانه برمی‌گردی؟
+# Bahnhof
+Wo ist der [Bahnhof]? | ایستگاه قطار کجاست؟
+Der [Bahnhof] ist im Zentrum. | ایستگاه قطار در مرکز شهر است.
+Ich warte am [Bahnhof]. | در ایستگاه قطار منتظرم.
+Der Bus fährt zum [Bahnhof]. | اتوبوس به ایستگاه قطار می‌رود.
+Der [Bahnhof] ist nicht weit von hier. | ایستگاه قطار از این‌جا دور نیست.
+Am [Bahnhof] gibt es ein Café. | در ایستگاه قطار یک کافه هست.
+# Haltestelle
+Die [Haltestelle] ist dort. | ایستگاه آن‌جاست.
+Ich warte an der [Haltestelle]. | در ایستگاه اتوبوس منتظرم.
+Wo ist hier die [Haltestelle]? | ایستگاه این‌جا کجاست؟
+Die [Haltestelle] ist vor der Schule. | ایستگاه جلوی مدرسه است.
+Die nächste [Haltestelle] ist der Bahnhof. | ایستگاه بعدی، ایستگاه قطار است.
+# Flughafen
+Wir fahren mit dem Taxi zum [Flughafen]. | با تاکسی به فرودگاه می‌رویم.
+Der [Flughafen] ist weit vom Zentrum. | فرودگاه از مرکز شهر دور است.
+Mein Bruder arbeitet am [Flughafen]. | برادرم در فرودگاه کار می‌کند.
+Ich warte am [Flughafen] auf meine Mutter. | در فرودگاه منتظر مادرم هستم.
+Der [Flughafen] in Frankfurt ist sehr groß. | فرودگاه فرانکفورت خیلی بزرگ است.
+# Fahrkarte
+Ich brauche eine [Fahrkarte] nach Berlin. | یک بلیت به برلین لازم دارم.
+Die [Fahrkarte] kostet 20 Euro. | بلیت بیست یورو است.
+Wo kann ich eine [Fahrkarte] kaufen? | کجا می‌توانم بلیت بخرم؟
+Haben Sie eine [Fahrkarte]? | شما بلیت دارید؟
+Ich finde meine [Fahrkarte] nicht. | بلیتم را پیدا نمی‌کنم.
+Zwei [Fahrkarten] nach Köln, bitte. | دو بلیت به کلن، لطفاً.
+# Ticket
+Hast du schon ein [Ticket]? | بلیت داری؟
+Das [Ticket] für das Museum kostet 8 Euro. | بلیت موزه هشت یورو است.
+Wir kaufen zwei [Tickets] für das Kino. | دو بلیت برای سینما می‌خریم.
+Wo ist mein [Ticket]? | بلیتم کجاست؟
+Das [Ticket] nach Teheran ist sehr teuer. | بلیت تهران خیلی گران است.
+# Gleis
+Der Zug nach Hamburg kommt auf [Gleis] 2. | قطار هامبورگ روی سکوی دو می‌آید.
+Wo ist [Gleis] 7? | سکوی هفت کجاست؟
+Der Zug nach München fährt heute von [Gleis] 8. | قطار مونیخ امروز از سکوی هشت حرکت می‌کند.
+Welches [Gleis] ist das? | این کدام سکوست؟
+Das [Gleis] ist dort links. | سکو آن‌جا سمت چپ است.
+# abfahren
+Der Zug ist schon [abgefahren]. | قطار حرکت کرده است.
+Wir müssen um 8 Uhr [abfahren]. | باید ساعت هشت حرکت کنیم.
+Wann wollen wir morgen [abfahren]? | فردا کی می‌خواهیم راه بیفتیم؟
+Der Zug kann heute nicht [abfahren]. | قطار امروز نمی‌تواند حرکت کند.
+Oh nein, mein Bus ist [abgefahren]! | ای وای، اتوبوسم رفت!
+Wir möchten früh [abfahren]. | می‌خواهیم زود راه بیفتیم.
+# ankommen
+Wir sind gut [angekommen]. | ما به سلامت رسیدیم.
+Der Zug ist um 10 Uhr [angekommen]. | قطار ساعت ده رسید.
+Wann möchtest du in Berlin [ankommen]? | کی می‌خواهی به برلین برسی؟
+Wir müssen um 8 Uhr am Flughafen [ankommen]. | باید ساعت هشت به فرودگاه برسیم.
+Ist Papa schon [angekommen]? | بابا رسیده؟
+# einsteigen
+Wir können jetzt [einsteigen]. | حالا می‌توانیم سوار شویم.
+Die Kinder sind schon [eingestiegen]. | بچه‌ها سوار شده‌اند.
+Hier dürfen Sie nicht [einsteigen]. | این‌جا اجازه ندارید سوار شوید.
+Ich bin in den Zug nach Köln [eingestiegen]. | سوار قطار کلن شدم.
+Du musst jetzt [einsteigen], der Bus fährt! | باید الان سوار شوی، اتوبوس دارد حرکت می‌کند!
+# aussteigen
+Wir müssen hier [aussteigen]. | باید این‌جا پیاده شویم.
+Am Bahnhof möchte ich [aussteigen]. | می‌خواهم در ایستگاه قطار پیاده شوم.
+Wo muss ich [aussteigen]? | کجا باید پیاده شوم؟
+Mein Freund ist schon [ausgestiegen]. | دوستم پیاده شده است.
+An der nächsten Haltestelle will ich [aussteigen]. | ایستگاه بعدی می‌خواهم پیاده شوم.

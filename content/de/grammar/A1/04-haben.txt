@@ -1,0 +1,74 @@
+code: de-a1-haben
+title: فعل haben (داشتن) در زمان حال
+scope: شکل‌های haben در زمان حال (ich habe، du hast، er/sie/es hat، wir haben، ihr habt، sie/Sie haben) برای داشتن چیز و آدم، و این‌که سن با sein گفته می‌شود نه با haben.
+can_do: حالا می‌توانی بگویی چه چیزهایی داری و سنت را درست بگویی.
+rule: haben: ich habe، du hast، er/sie/es hat، wir haben، ihr habt، sie/Sie haben؛ در du و er/sie/es حرف b می‌افتد.
+mistake: فارسی‌زبان‌ها سن را مثل فارسی («بیست سال دارم») با haben می‌گویند: «Ich habe 20 Jahre» غلط است؛ درست: Ich bin 20 Jahre alt. «du habst» و «er habt» هم غلط‌اند؛ درست: du hast، er hat.
+tables: Präsens | haben
+lesson:
+haben یعنی «داشتن» و بعد از sein پرکاربردترین فعل آلمانی است.
+بیشتر شکل‌هایش مثل فعل‌های باقاعده‌اند (ich habe، wir haben، ihr habt)، ولی در du و er/sie/es حرف b می‌افتد: du hast، er hat.
+با haben می‌گویی چه چیزی یا چه کسی را داری: Ich habe ein Auto، Wir haben Kinder.
+برای سن، آلمانی haben نمی‌گوید بلکه sein: Ich bin 20 Jahre alt یعنی «بیست سال دارم».
+table:
+ضمیر | haben | فارسی
+ich | habe | دارم
+du | hast | داری
+er / sie / es | hat | دارد
+wir | haben | داریم
+ihr | habt | دارید
+sie / Sie | haben | دارند / دارید
+sets:
+sein: 20 Jahre alt, verheiratet, Iraner, zu Hause, jung
+haben: ein Auto, Kinder, Geld, ein Haus, Freunde
+examples:
+Ich habe ein Auto. | من یک ماشین دارم.
+Du hast viel Geld. | تو پول زیادی داری.
+Anna hat ein Baby. | آنا یک نوزاد دارد.
+Ich bin 30 Jahre alt. | من سی سال دارم.
+targets:
+Ich [habe] ein Haus. | من یک خانه دارم. | d: hast, hat, haben | hint: (haben)
+Du [hast] viele Freunde. | تو دوستان زیادی داری. | d: habst, hat, habe | hint: (haben)
+Max [hat] ein Buch. | ماکس یک کتاب دارد. | d: habt, hast, haben | hint: (haben)
+Wir [haben] heute Brot. | ما امروز نان داریم. | d: habt, hat, habe | full: Heute haben wir Brot.
+Ihr [habt] ein Haus in Köln. | شما یک خانه در کلن دارید. | d: haben, hast, hat | hint: (haben) | full: In Köln habt ihr ein Haus.
+Die Eltern [haben] ein Auto. | پدر و مادر یک ماشین دارند. | d: hat, habt, hast
+Sara [hat] eine Freundin in Wien. | سارا یک دوست در وین دارد. | d: habt, hast, habe | hint: (haben) | full: In Wien hat Sara eine Freundin.
+Das Mädchen [hat] ein Buch. | دختر یک کتاب دارد. | d: haben, hast, habt
+Ich [habe] jetzt Arbeit. | من الان کار دارم. | d: hat, hast, haben | full: Jetzt habe ich Arbeit.
+Du [hast] die Telefonnummer von Anna. | تو شماره تلفن آنا را داری. | d: hat, habst, habe | hint: (haben)
+Paul und Lena [haben] ein Baby. | پاول و لنا یک نوزاد دارند. | d: hat, habt, hast | hint: (haben)
+Er [hat] viel Geld. | او پول زیادی دارد. | d: habt, hast, haben
+Wir [haben] viele Bücher. | ما کتاب‌های زیادی داریم. | d: habt, hat, hast | hint: (haben)
+Ihr [habt] Tee und Kaffee. | شما چای و قهوه دارید. | d: haben, hat, hast
+Der Mann [hat] ein Haus in Isfahan. | آن مرد یک خانه در اصفهان دارد. | d: habt, haben, hast | hint: (haben) | full: In Isfahan hat der Mann ein Haus.
+Die Frau [hat] ein Kind. | آن خانم یک بچه دارد. | d: haben, habt, hast
+Jonas [hat] heute viel Arbeit. | یوناس امروز کار زیادی دارد. | d: habt, hast, haben | full: Heute hat Jonas viel Arbeit.
+Ich [habe] die Adresse. | من نشانی را دارم. | d: hast, hat, haben | hint: (haben)
+Wir [haben] Freunde in Teheran. | ما در تهران دوستانی داریم. | d: hat, habt, habe | hint: (haben) | full: In Teheran haben wir Freunde.
+Mia [hat] heute Schule. | میا امروز مدرسه دارد. | d: haben, hast, habt | full: Heute hat Mia Schule.
+Ihr [habt] ein Baby. | شما یک نوزاد دارید. | d: hat, haben, hast | hint: (haben)
+Der Junge [hat] ein Telefon. | پسر یک تلفن دارد. | d: habt, haben, hast
+Ich [bin] 20 Jahre alt. | من بیست سال دارم. | d: habe, hat, bist
+Anna [ist] 35 Jahre alt. | آنا سی‌وپنج سال دارد. | d: hat, habt, sind
+Das Kind [ist] 4 Jahre alt. | بچه چهار سال دارد. | d: hat, haben, sind
+Wir [sind] 18 Jahre alt. | ما هجده ساله‌ایم. | d: haben, habt, seid
+Ihr [seid] 10 Jahre alt. | شما ده ساله‌اید. | d: habt, sind, haben
+Ich [habe] ein Kind und du [hast] ein Baby. | من یک بچه دارم و تو یک نوزاد. | d: hast, hat, haben / habst, hat, habe | hint: (haben)
+Paul [ist] 40 und er [hat] viele Kinder. | پاول چهل ساله است و بچه‌های زیادی دارد. | d: hat, habt, sind / ist, habt, haben
+Wir [haben] ein Haus und ihr [habt] ein Auto. | ما یک خانه داریم و شما یک ماشین. | d: habt, hat, habe / haben, hast, hat
+Lena [hat] Tee und Tim [hat] Kaffee. | لنا چای دارد و تیم قهوه. | d: habt, hast, haben / haben, habe, habt
+Die Kinder [haben] Wasser und die Eltern [haben] Kaffee. | بچه‌ها آب دارند و پدر و مادر قهوه. | d: hat, habt, hast / hat, habt, habe
+Du [hast] viele Freunde, aber ich [habe] nur Anna. | تو دوستان زیادی داری، اما من فقط آنا را دارم. | d: habst, hat, habe / hast, hat, haben
+Du [hast] ein Auto und du [bist] 18. | تو یک ماشین داری و هجده ساله‌ای. | d: bist, hat, habst / hast, ist, bin
+transforms:
+Ich habe ein Auto. => Wir haben ein Auto. | جمله را با wir بنویس.
+Du hast viel Geld. => Er hat viel Geld. | جمله را با er بنویس.
+Anna hat ein Kind. => Anna und Paul haben ein Kind. | به‌جای Anna بنویس Anna und Paul.
+Ihr habt ein Haus. => Du hast ein Haus. | جمله را با du بنویس.
+translations:
+من یک خانه دارم. => Ich habe ein Haus.
+او (زن) یک بچه دارد. => Sie hat ein Kind.
+ما امروز نان داریم. => Wir haben heute Brot. ; Heute haben wir Brot.
+بچه‌ها، شما یک ماشین دارید. => Kinder, ihr habt ein Auto.
+پاول پول زیادی دارد. => Paul hat viel Geld.

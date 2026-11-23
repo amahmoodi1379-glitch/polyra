@@ -1,0 +1,68 @@
+code: de-a1-und-aber-oder
+title: und، aber، oder و dann: وصل کردن دو جمله
+scope: حرف‌های ربط und، aber و oder که دو جمله را وصل می‌کنند و ترتیب کلمه‌ها را عوض نمی‌کنند (جای صفر)، در برابر dann که خودش جای اول را می‌گیرد (dann essen wir)؛ ویرگول پیش از aber و نیاوردن فاعل تکراری بعد از und. denn، weil و dass در A2 می‌آیند.
+can_do: حالا می‌توانی دو جمله را به هم وصل کنی و ترتیب کارهایت را بگویی: «من قهوه می‌نوشم و آنا چای»، «آشپزی می‌کنیم، بعد غذا می‌خوریم».
+rule: und، aber و oder جای صفرند و بعدشان جمله مثل همیشه است (und Anna trinkt Tee)؛ dann جای اول است و فعل بلافاصله بعدش می‌آید (dann essen wir).
+mistake: فارسی‌زبان‌ها بعد از dann همان ترتیب «فاعل، فعل» را نگه می‌دارند یا بعد از und فعل را جلو می‌آورند: «dann wir essen» و «und trinkt Anna Tee» غلط است؛ درست: dann essen wir، und Anna trinkt Tee.
+lesson:
+und (و)، aber (ولی) و oder (یا) دو جمله را به هم وصل می‌کنند.
+این سه کلمه جای صفر دارند: جزو جمله دوم حساب نمی‌شوند و جمله بعدشان همان ترتیب همیشگی را دارد: Ich trinke Kaffee und Anna trinkt Tee.
+اگر جمله دوم با زمان شروع شود، باز هم فعل جای دوم آن جمله است: Wir haben heute keine Zeit, aber am Sonntag kommen wir.
+dann (بعد) فرق دارد: خودش جای اول را می‌گیرد، پس فعل بلافاصله بعدش می‌آید و فاعل بعد از فعل: Wir kochen, dann essen wir.
+پیش از aber ویرگول می‌گذاری؛ پیش از und و oder معمولاً نه.
+اگر فاعل دو جمله یکی باشد، بعد از und لازم نیست آن را تکرار کنی: Max wohnt in Berlin und arbeitet in Hamburg.
+table:
+کلمه | جای | مثال
+und | صفر | Ich lese und Max schreibt.
+aber | صفر | Das Zimmer ist klein, aber es ist schön.
+oder | صفر | Gehst du oder bleibst du?
+dann | اول | Ich kaufe ein, dann koche ich.
+examples:
+Ich wohne in Berlin und Max wohnt in Hamburg. | من در برلین زندگی می‌کنم و ماکس در هامبورگ.
+Die Wohnung ist schön, aber sie ist klein. | آپارتمان قشنگ است، ولی کوچک است.
+Trinkst du Kaffee oder Tee? | قهوه می‌نوشی یا چای؟
+Ich dusche, dann frühstücke ich. | دوش می‌گیرم، بعد صبحانه می‌خورم.
+targets:
+Ich trinke Kaffee [und] Anna trinkt Tee. | من قهوه می‌نوشم و آنا چای. | d: dann, jetzt, heute | full: Anna trinkt Tee und ich trinke Kaffee.
+Das Hotel ist schön, [aber] es ist teuer. | هتل قشنگ است، ولی گران است. | d: dann, jetzt, heute
+Wir gehen ins Kino [oder] wir bleiben zu Hause. | به سینما می‌رویم یا در خانه می‌مانیم. | d: dann, jetzt, heute | full: Wir bleiben zu Hause oder wir gehen ins Kino.
+Anna ist müde, [aber] sie arbeitet noch. | آنا خسته است، ولی هنوز کار می‌کند. | d: dann, jetzt, heute
+Paul kocht [und] Lena kauft ein. | پاول آشپزی می‌کند و لنا خرید می‌کند. | d: dann, jetzt, heute | full: Lena kauft ein und Paul kocht.
+Möchtest du Tee [oder] möchtest du Kaffee? | چای می‌خواهی یا قهوه؟ | d: dann, jetzt, heute | full: Möchtest du Kaffee oder möchtest du Tee?
+Das Essen ist gut, [aber] es ist kalt. | غذا خوب است، ولی سرد است. | d: dann, jetzt, heute
+Max wohnt in Hamburg [und] seine Schwester wohnt in Köln. | ماکس در هامبورگ زندگی می‌کند و خواهرش در کلن. | d: dann, jetzt, heute | full: Seine Schwester wohnt in Köln und Max wohnt in Hamburg.
+Ich spreche Englisch, [aber] ich spreche nicht gut Deutsch. | انگلیسی صحبت می‌کنم، ولی آلمانی را خوب صحبت نمی‌کنم. | d: dann, jetzt, heute
+Lena liest ein Buch [und] Paul hört Musik. | لنا کتاب می‌خواند و پاول موسیقی گوش می‌دهد. | d: dann, jetzt, heute | full: Paul hört Musik und Lena liest ein Buch.
+Ich möchte kommen, [aber] ich habe keine Zeit. | می‌خواهم بیایم، ولی وقت ندارم. | d: dann, jetzt, heute
+Wir kochen, [dann] essen wir. | آشپزی می‌کنیم، بعد غذا می‌خوریم. | d: und, aber, oder
+Wir lernen, [dann] spielen wir. | درس می‌خوانیم، بعد بازی می‌کنیم. | d: und, aber, oder
+Lena arbeitet bis 5 Uhr, [dann] geht sie nach Hause. | لنا تا ساعت پنج کار می‌کند، بعد به خانه می‌رود. | d: und, aber, oder
+Lena kauft ein, [dann] besucht sie Oma. | لنا خرید می‌کند، بعد به دیدن مادربزرگ می‌رود. | d: und, aber, oder
+Ich trinke Tee und [Anna trinkt Kaffee]. | من چای می‌نوشم و آنا قهوه. | d: trinkt Anna Kaffee, Anna Kaffee trinkt, Kaffee Anna trinkt | full: Anna trinkt Kaffee und ich trinke Tee.
+Max spricht gut Deutsch, aber [er schreibt nicht gut]. | ماکس خوب آلمانی صحبت می‌کند، ولی خوب نمی‌نویسد. | d: schreibt er nicht gut, er nicht gut schreibt, nicht gut er schreibt
+Wir haben heute keine Zeit, aber [am Sonntag kommen wir]. | امروز وقت نداریم، ولی یکشنبه می‌آییم. | d: am Sonntag wir kommen, wir am Sonntag kommen, kommen am Sonntag wir | full: Wir haben heute keine Zeit, aber wir kommen am Sonntag. ; Heute haben wir keine Zeit, aber am Sonntag kommen wir. ; Heute haben wir keine Zeit, aber wir kommen am Sonntag.
+Sara wohnt in Teheran, aber [Reza wohnt in Isfahan]. | سارا در تهران زندگی می‌کند، ولی رضا در اصفهان. | d: wohnt Reza in Isfahan, Reza in Isfahan wohnt, in Isfahan Reza wohnt
+Heute regnet es, aber [morgen scheint die Sonne]. | امروز باران می‌آید، ولی فردا آفتاب است. | d: morgen die Sonne scheint, scheint morgen die Sonne, die Sonne morgen scheint | full: Heute regnet es, aber die Sonne scheint morgen. ; Es regnet heute, aber morgen scheint die Sonne. ; Es regnet heute, aber die Sonne scheint morgen.
+Gehen wir ins Kino oder [bleiben wir zu Hause]? | به سینما برویم یا در خانه بمانیم؟ | d: wir zu Hause bleiben, zu Hause wir bleiben, bleiben zu Hause wir
+Ich mache die Hausaufgaben, dann [gehe ich ins Bett]. | تکلیف‌هایم را می‌نویسم، بعد می‌خوابم. | d: ich gehe ins Bett, ich ins Bett gehe, ins Bett ich gehe
+Max ist krank, aber [er geht heute zur Arbeit]. | ماکس بیمار است، ولی امروز سر کار می‌رود. | d: geht er heute zur Arbeit, er heute zur Arbeit geht, heute er geht zur Arbeit | full: Max ist krank, aber heute geht er zur Arbeit.
+Wir essen im Restaurant oder [wir kochen zu Hause]. | در رستوران غذا می‌خوریم یا در خانه آشپزی می‌کنیم. | d: kochen wir zu Hause, wir zu Hause kochen, zu Hause wir kochen | full: Wir kochen zu Hause oder wir essen im Restaurant.
+Die Kinder spielen im Garten und [die Eltern trinken Kaffee]. | بچه‌ها در باغ بازی می‌کنند و پدر و مادر قهوه می‌نوشند. | d: trinken die Eltern Kaffee, die Eltern Kaffee trinken, Kaffee die Eltern trinken | full: Im Garten spielen die Kinder und die Eltern trinken Kaffee. ; Die Eltern trinken Kaffee und die Kinder spielen im Garten.
+Am Samstag kaufen wir ein, dann [kochen wir zusammen]. | شنبه خرید می‌کنیم، بعد با هم آشپزی می‌کنیم. | d: wir kochen zusammen, wir zusammen kochen, zusammen wir kochen | full: Wir kaufen am Samstag ein, dann kochen wir zusammen.
+Ich koche [und] Max kauft ein, [dann] essen wir. | من آشپزی می‌کنم و ماکس خرید می‌کند، بعد غذا می‌خوریم. | d: dann, jetzt, heute / und, aber, oder | full: Max kauft ein und ich koche, dann essen wir.
+Kommst du [oder] bleibst du hier? – Ich bleibe hier, [aber] Anna kommt mit. | می‌آیی یا اینجا می‌مانی؟ – من اینجا می‌مانم، ولی آنا می‌آید. | d: dann, jetzt, heute / dann, jetzt, heute
+Max wohnt in Berlin [und] arbeitet in Hamburg, [aber] er fährt gern mit dem Zug. | ماکس در برلین زندگی می‌کند و در هامبورگ کار می‌کند، ولی دوست دارد با قطار برود. | d: dann, jetzt, heute / dann, jetzt, heute
+Ich trinke Tee [und] Anna trinkt Kaffee, [aber] Paul trinkt nur Wasser. | من چای می‌نوشم و آنا قهوه، ولی پاول فقط آب می‌نوشد. | d: dann, jetzt, heute / dann, jetzt, heute | full: Anna trinkt Kaffee und ich trinke Tee, aber Paul trinkt nur Wasser.
+Ich frühstücke, [dann] fahre ich zur Arbeit [und] Anna bleibt zu Hause. | من صبحانه می‌خورم، بعد سر کار می‌روم و آنا در خانه می‌ماند. | d: und, aber, oder / dann, jetzt, heute
+transforms:
+Ich trinke Kaffee. Anna trinkt Tee. => Ich trinke Kaffee und Anna trinkt Tee. | دو جمله را با und وصل کن.
+Das Hotel ist schön. Es ist teuer. => Das Hotel ist schön, aber es ist teuer. | دو جمله را با aber وصل کن.
+Kommst du heute? Kommst du morgen? => Kommst du heute oder kommst du morgen? ; Kommst du heute oder morgen? | دو جمله را با oder وصل کن.
+Wir kochen. Wir essen dann. => Wir kochen, dann essen wir. ; Wir kochen. Dann essen wir. | جمله دوم را با dann شروع کن.
+Max wohnt in Berlin. Max arbeitet in Hamburg. => Max wohnt in Berlin und arbeitet in Hamburg. | با und وصل کن و Max را دوباره نگو.
+translations:
+قهوه می‌خواهی یا چای؟ => Möchtest du Kaffee oder Tee? ; Möchtest du Kaffee oder möchtest du Tee? ; Trinkst du Kaffee oder Tee?
+هتل قشنگ است، ولی گران است. => Das Hotel ist schön, aber es ist teuer. ; Das Hotel ist schön, aber teuer.
+من چای می‌نوشم و ماکس قهوه. => Ich trinke Tee und Max trinkt Kaffee. ; Ich trinke Tee und Max Kaffee.
+آشپزی می‌کنیم، بعد غذا می‌خوریم. => Wir kochen, dann essen wir. ; Wir kochen und dann essen wir. ; Wir kochen und essen dann.
+امروز وقت ندارم، ولی فردا می‌آیم. => Ich habe heute keine Zeit, aber ich komme morgen. ; Ich habe heute keine Zeit, aber morgen komme ich. ; Heute habe ich keine Zeit, aber ich komme morgen. ; Heute habe ich keine Zeit, aber morgen komme ich.

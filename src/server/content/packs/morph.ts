@@ -77,7 +77,9 @@ const ENDINGS = ["", "e", "en", "em", "er", "es"];
 
 function germanStem(lemma: string) {
   if (lemma === "hoch") return "hoh";
-  if (/[^aeiouäöü](el|er)$/.test(lemma) && lemma.length > 4) return lemma.slice(0, -2) + lemma.slice(-1); // dunkel → dunkl, teuer → teur
+  // -el always drops its e (dunkel → dunkle); -er only after a diphthong (teuer → teure, sauer → saure), not lecker → leckere.
+  if (/[^aeiouäöü]el$/.test(lemma) && lemma.length > 4) return lemma.slice(0, -2) + "l";
+  if (/(au|eu|äu|ei)er$/.test(lemma)) return lemma.slice(0, -2) + "r";
   if (lemma.endsWith("e")) return lemma.slice(0, -1);
   return lemma;
 }
@@ -104,6 +106,19 @@ export function germanAdjectiveForms(lemma: string): { form: string; ending: str
   return out;
 }
 
+/** Lexique writes œ as «oe» (oeufs, soeurs): French keys are compared in that spelling. */
+const lexKey = (text: string) => fold(text).replace(/œ/gu, "oe").replace(/æ/gu, "ae");
+/** A form of a lemma with œ, in that spelling again (soeurs → sœurs). */
+const withLigature = (form: string, lemma: string) => (/œ/u.test(lemma) ? form.replace(/oe/gu, "œ") : form);
+
+/**
+ * French adjective forms Lexique files under a lemma of their own (ADJ): the form before a vowel (bel,
+ * nouvel, vieil, fol, mol) and «nouvelle(s)». Before-vowel forms only map to the word; they are never
+ * offered as another adjective's form.
+ */
+const FRENCH_ADJ_LEMMA: Record<string, string> = { nouvelle: "nouveau" };
+const FRENCH_BEFORE_VOWEL: Record<string, string> = { bel: "beau", nouvel: "nouveau", vieil: "vieux", fol: "fou", mol: "mou" };
+
 /** A word's lemma without a reflexive pronoun (se laver → laver, sich freuen → freuen). */
 export const bareLemma = (lemma: string) => lemma.replace(/^(se |s'|sich )/u, "");
 
@@ -118,8 +133,9 @@ export class Morph {
     this.language = language;
     this.readings = formReadings(language, root);
     const byLemma = new Map<string, PackWord[]>();
+    const keyOf = language === "fr" ? lexKey : fold;
     for (const item of words) {
-      const key = fold(bareLemma(item.word.lemma));
+      const key = keyOf(bareLemma(item.word.lemma));
       byLemma.set(key, [...(byLemma.get(key) ?? []), item]);
       // The lexicon's frequency of each reading decides between two words (été: the verb before the season);
       // the lemma itself only starts above an unknown form. A function word the list gives as a form of its
@@ -131,11 +147,14 @@ export class Morph {
     // Forms from the lexicon: a reading whose lemma is a word of the lists with a fitting part of speech.
     for (const [form, list] of this.readings) {
       for (const reading of list) {
-        const owners = byLemma.get(fold(reading.lemma)) ?? [];
-        if (language === "fr") {
-          const lemmaForms = this.byLemma.get(fold(reading.lemma)) ?? [];
+        const adjective = language === "fr" && reading.tag === "ADJ";
+        const beforeVowel = adjective ? FRENCH_BEFORE_VOWEL[fold(reading.lemma)] : undefined;
+        const lemma = beforeVowel ?? (adjective ? FRENCH_ADJ_LEMMA[fold(reading.lemma)] : undefined) ?? reading.lemma;
+        const owners = byLemma.get(keyOf(lemma)) ?? [];
+        if (language === "fr" && !beforeVowel) {
+          const lemmaForms = this.byLemma.get(lexKey(lemma)) ?? [];
           lemmaForms.push({ form, tag: reading.tag, gn: reading.gn });
-          this.byLemma.set(fold(reading.lemma), lemmaForms);
+          this.byLemma.set(lexKey(lemma), lemmaForms);
         }
         for (const owner of owners) {
           const fits = language === "fr" ? frenchPos(reading.tag).includes(owner.word.pos) : owner.word.pos === "noun";
@@ -150,6 +169,8 @@ export class Morph {
       for (const [form, lemmas] of closedTable(language)) {
         if (lemmas.includes(item.word.lemma)) add(this.forms, form, { word: item, score: 8, via: "closed" });
       }
+      // «euch» is the pronoun «ihr» only; the closed row «ihr» is shared with the possessive.
+      if (language === "de" && item.word.lemma === "ihr" && item.word.pos === "pron") add(this.forms, "euch", { word: item, score: 8, via: "closed" });
     }
     if (language === "de") {
       for (const item of words) {
@@ -183,12 +204,22 @@ export class Morph {
   /** Words of the lists this surface may be a form of (any level; the caller filters). */
   candidates(surface: string): Candidate[] {
     const found = [...(this.forms.get(fold(surface)) ?? [])];
+    // Lexique's «oeufs» for the text's «œufs».
+    if (this.language === "fr" && /[œæ]/iu.test(surface)) {
+      for (const candidate of this.forms.get(lexKey(surface)) ?? []) if (!found.some((item) => item.word === candidate.word)) found.push(candidate);
+    }
     return found.sort((a, b) => b.score - a.score);
   }
 
   /** Lexique readings of a French form (gender-number of «petite» is fs). */
   frenchReadings(surface: string): Reading[] {
-    return this.readings.get(surface) ?? this.readings.get(surface.toLowerCase()) ?? [];
+    const plain = surface.replace(/œ/gu, "oe").replace(/Œ/gu, "Oe");
+    const found = this.readings.get(surface) ?? this.readings.get(surface.toLowerCase()) ?? this.readings.get(plain) ?? this.readings.get(plain.toLowerCase()) ?? [];
+    // The adjective lemmas Lexique keeps apart read as their word's (nouvelle → nouveau).
+    return found.map((reading) => {
+      const lemma = reading.tag === "ADJ" ? (FRENCH_ADJ_LEMMA[fold(reading.lemma)] ?? FRENCH_BEFORE_VOWEL[fold(reading.lemma)]) : undefined;
+      return lemma ? { ...reading, lemma } : reading;
+    });
   }
 
   /**
@@ -197,10 +228,10 @@ export class Morph {
    * back to «p»; the other way round, only such adjectives fit a gap whose form has no gender.
    */
   frenchForm(lemma: string, tag: string, gn: string): string | null {
-    const all = (this.byLemma.get(fold(lemma)) ?? []).filter((item) => item.tag === tag);
+    const all = (this.byLemma.get(lexKey(lemma)) ?? []).filter((item) => item.tag === tag);
     const exact = all.find((item) => item.gn === gn);
-    if (exact) return exact.form;
-    return gn.length === 2 ? (all.find((item) => item.gn === gn[1])?.form ?? null) : null;
+    const found = exact ? exact.form : gn.length === 2 ? (all.find((item) => item.gn === gn[1])?.form ?? null) : null;
+    return found === null ? null : withLigature(found, lemma);
   }
 
   /** German noun forms of a lemma with their gender-number tag (all cases mixed). */

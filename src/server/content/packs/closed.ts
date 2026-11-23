@@ -126,6 +126,13 @@ const german = table({
 /** Every function-word form of a language with the lemmas it may be filed under. */
 export const closedTable = (language: string): ReadonlyMap<string, string[]> => (language === "fr" ? french : german);
 
+/** The forms the table files under a lemma (quel: quel, quelle, quels, quelles), elided ones left out. */
+export function closedForms(language: string, lemma: string): string[] {
+  const out: string[] = [];
+  for (const [form, lemmas] of closedTable(language)) if (lemmas.includes(lemma) && !form.endsWith("'")) out.push(form);
+  return out;
+}
+
 /** Lemmas a function-word form may be filed under, by language; the exact form first, then lower case. */
 export function closedLemmas(language: string, surface: string): string[] {
   const forms = language === "fr" ? french : german;

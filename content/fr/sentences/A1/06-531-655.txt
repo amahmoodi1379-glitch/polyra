@@ -1,0 +1,782 @@
+// French A1, card words 531–655 (nature, animals, colors, free time, media, jobs, school, feelings, character, qualities, greetings, directions).
+# ciel
+Le soleil est dans le [ciel]. | خورشید در آسمان است.
+Regarde le [ciel], il y a beaucoup de nuages ! | به آسمان نگاه کن، خیلی ابر هست!
+Ce soir, le [ciel] est très beau. | امشب آسمان خیلی زیباست.
+Il n'y a pas un nuage dans le [ciel]. | یک ابر هم در آسمان نیست.
+Les enfants regardent le [ciel] la nuit. | بچه‌ها شب‌ها به آسمان نگاه می‌کنند.
+# arbre
+Il y a un grand [arbre] dans le jardin. | در حیاط یک درخت بزرگ هست. | d: lac, chien, lit
+Le chat dort sous l'[arbre]. | گربه زیر درخت می‌خوابد. | d: escalier, ordinateur, avion
+Les enfants jouent sous les [arbres]. | بچه‌ها زیر درخت‌ها بازی می‌کنند. | d: nuages, fleurs, lits
+En automne, les [arbres] sont très beaux. | پاییز درخت‌ها خیلی زیبا هستند. | d: parcs, jardins, villages
+Ce vieil [arbre] a cent ans. | این درخت پیر صد سال دارد. | d: immeuble, hôtel, hôpital
+Dans notre rue, il y a beaucoup d'[arbres]. | در خیابان ما درخت زیادی هست. | d: immeubles, hôtels, enfants
+# fleur
+Je donne des [fleurs] à ma mère. | به مادرم گل می‌دهم.
+Il y a beaucoup de [fleurs] dans le jardin. | در باغچه گل زیادی هست.
+Cette [fleur] est très jolie. | این گل خیلی قشنگ است.
+Pour son anniversaire, il achète des [fleurs]. | برای تولدش گل می‌خرد.
+Au printemps, les [fleurs] sont belles. | بهار گل‌ها زیبا هستند.
+Elle met une [fleur] dans ses cheveux. | یک گل به موهایش می‌زند.
+# forêt
+Nous nous promenons dans la [forêt]. | در جنگل قدم می‌زنیم.
+Il y a beaucoup d'arbres dans la [forêt]. | در جنگل درخت زیادی هست.
+Le week-end, on va dans la [forêt]. | آخر هفته به جنگل می‌رویم.
+Cette [forêt] est très grande. | این جنگل خیلی بزرگ است.
+En automne, la [forêt] est très belle. | پاییز جنگل خیلی زیباست.
+Il y a de grandes [forêts] au Canada. | در کانادا جنگل‌های بزرگی هست.
+# lac
+Il y a un [lac] dans le parc. | در پارک یک دریاچه هست. | d: arbre, café, restaurant
+L'eau du{du-contr} [lac] est froide. | آب دریاچه سرد است. | d: verre, café, jardin
+En été, nous allons au [lac]. | تابستان به دریاچه می‌رویم. | d: parc, village, cinéma
+Ce [lac] est très grand. | این دریاچه خیلی بزرگ است. | d: parc, village, jardin
+Le matin, il fait froid au [lac]. | صبح‌ها کنار دریاچه سرد است. | d: parc, village, jardin
+# animal
+J'aime les [animaux]. | من حیوان‌ها را دوست دارم.
+Le chat est un petit [animal]. | گربه حیوان کوچکی است.
+Il y a beaucoup d'[animaux] dans la forêt. | در جنگل حیوان زیادی هست.
+Tu as un [animal] à la maison ? | در خانه حیوان داری؟
+Les enfants regardent les [animaux] au parc. | بچه‌ها در پارک حیوان‌ها را تماشا می‌کنند.
+Mon fils veut un [animal] pour son anniversaire. | پسرم برای تولدش یک حیوان می‌خواهد.
+# oiseau
+Il y a un [oiseau] dans l'arbre. | یک پرنده روی درخت است.
+Le matin, j'écoute les [oiseaux]. | صبح‌ها صدای پرنده‌ها را گوش می‌دهم.
+Le chat regarde l'[oiseau]. | گربه به پرنده نگاه می‌کند. | d: animal, œuf, enfant
+Les [oiseaux] partent en automne. | پرنده‌ها پاییز کوچ می‌کنند.
+Ma grand-mère a un petit [oiseau]. | مادربزرگم یک پرنده‌ی کوچک دارد.
+Cet [oiseau] est très beau. | این پرنده خیلی زیباست.
+# cheval
+Mon oncle a deux [chevaux]. | عمویم دو اسب دارد.
+Ma fille aime les [chevaux]. | دخترم اسب‌ها را دوست دارد.
+Ce [cheval] est très beau. | این اسب خیلی زیباست. | d: chien, chat, oiseau
+À la campagne, il y a beaucoup de [chevaux]. | در روستا اسب زیادی هست. | d: chiens, chats, oiseaux
+Le [cheval] boit l'eau du{du-contr} lac. | اسب از آب دریاچه می‌خورد. | d: chien, chat, oiseau
+# vache
+Les [vaches] donnent du lait. | گاوها شیر می‌دهند. | d: chevaux, chats, oiseaux
+Mon grand-père a dix [vaches]. | پدربزرگم ده گاو دارد. | d: chevaux, chiens, chats
+J'aime le lait de [vache]. | شیر گاو را دوست دارم. | d: chat, chien, cheval
+Les enfants regardent les [vaches]. | بچه‌ها گاوها را تماشا می‌کنند. | d: chevaux, oiseaux, chats
+Dans ce village, il y a beaucoup de [vaches]. | در این روستا گاو زیادی هست. | d: chevaux, chiens, oiseaux
+# couleur
+Tu aimes quelle [couleur] ? | چه رنگی را دوست داری؟ | d: ville, langue, saison
+De quelle [couleur] est ta voiture ? | ماشینت چه رنگی است؟ | d: ville, année, rue
+J'aime les [couleurs] de l'automne. | رنگ‌های پاییز را دوست دارم. | d: fleurs, soirées, journées
+Cette [couleur] est très jolie. | این رنگ خیلی قشنگ است. | d: fleur, robe, chambre
+Ce soir, le ciel a de belles [couleurs]. | امشب آسمان رنگ‌های زیبایی دارد. | d: fleurs, robes, plages
+Je n'aime pas la [couleur] de ce pull. | رنگ این پلیور را دوست ندارم. | d: place, fin, date
+# rouge
+J'ai une voiture [rouge]. | یک ماشین قرمز دارم.
+Elle porte une robe [rouge]. | یک پیراهن قرمز پوشیده است.
+Les tomates sont [rouges]. | گوجه‌ها قرمزند.
+Je voudrais la chemise [rouge], s'il vous plaît. | پیراهن قرمز را می‌خواهم، لطفاً.
+Ses chaussures sont [rouges]. | کفش‌هایش قرمزند.
+Le chat dort sur le canapé [rouge]. | گربه روی کاناپه‌ی قرمز می‌خوابد.
+# bleu
+Le ciel est [bleu] aujourd'hui. | امروز آسمان آبی است. | d: rouge, vert, noir
+Elle a les yeux [bleus]. | چشم‌هایش آبی است.
+J'aime beaucoup ta veste [bleue]. | کت آبی‌ات را خیلی دوست دارم.
+La mer est très [bleue] ici. | دریا اینجا خیلی آبی است.
+Mon fils porte un pantalon [bleu]. | پسرم یک شلوار آبی پوشیده است. | d: rouge, vert, noir
+Les chaises de la cuisine sont [bleues]. | صندلی‌های آشپزخانه آبی‌اند.
+# vert
+Les arbres sont [verts] au printemps. | بهار درخت‌ها سبزند.
+Je voudrais une salade [verte]. | یک سالاد سبز می‌خواستم.
+Il a les yeux [verts]. | چشم‌هایش سبز است.
+J'ai acheté un pull [vert]. | یک پلیور سبز خریدم.
+Cette pomme est [verte]. | این سیب سبز است.
+La porte de la maison est [verte]. | در خانه سبز است.
+# jaune
+Les bananes sont [jaunes]. | موزها زردند.
+Elle porte un chapeau [jaune]. | یک کلاه زرد سرش است.
+J'aime les fleurs [jaunes]. | گل‌های زرد را دوست دارم.
+Ce taxi est [jaune]. | این تاکسی زرد است.
+Ma chambre est [jaune]. | اتاقم زرد است.
+En automne, les arbres sont [jaunes] et rouges. | پاییز درخت‌ها زرد و قرمزند. | d: bleus, verts, noirs
+# noir
+Il porte un pantalon [noir]. | یک شلوار مشکی پوشیده است.
+J'ai les cheveux [noirs]. | موهایم مشکی است.
+Le chat [noir] dort sur le lit. | گربه‌ی سیاه روی تخت می‌خوابد.
+La nuit, le ciel est [noir]. | شب آسمان سیاه است.
+Elle a une robe [noire] pour la fête. | برای جشن یک پیراهن مشکی دارد.
+Mes chaussures sont [noires]. | کفش‌هایم مشکی‌اند.
+# blanc
+La neige est [blanche]. | برف سفید است.
+Il a une chemise [blanche]. | یک پیراهن سفید دارد.
+Mon grand-père a les cheveux [blancs]. | موهای پدربزرگم سفید است.
+Je voudrais du pain [blanc]. | نان سفید می‌خواستم.
+Les murs de ma chambre sont [blancs]. | دیوارهای اتاقم سفیدند.
+Il y a un chat [blanc] dans le jardin. | یک گربه‌ی سفید در حیاط هست.
+# gris
+Aujourd'hui, le ciel est [gris]. | امروز آسمان خاکستری است. | d: bleu, noir, blanc
+Mon père a les cheveux [gris]. | موهای پدرم خاکستری است. | d: noirs, blancs, bleus
+Elle porte une veste [grise]. | یک کت خاکستری پوشیده است.
+J'ai un chat [gris]. | یک گربه‌ی خاکستری دارم. | d: noir, blanc, rouge
+Les nuages sont [gris], il va pleuvoir. | ابرها خاکستری‌اند، می‌خواهد باران ببارد. | d: blancs, noirs, bleus
+Ma voiture est [grise]. | ماشینم خاکستری است.
+# orange-adj
+Elle porte un t-shirt [orange]. | یک تی‌شرت نارنجی پوشیده است. | d: rouge, vert, jaune
+J'aime la couleur [orange]. | رنگ نارنجی را دوست دارم. | d: rouge, jaune, rose
+Le soir, le soleil est [orange]. | عصرها خورشید نارنجی است. | d: rouge, jaune, blanc
+Mon fils a un vélo [orange]. | پسرم یک دوچرخه‌ی نارنجی دارد. | d: rouge, vert, noir
+Les chaises du{du-contr} café sont [orange]. | صندلی‌های کافه نارنجی‌اند. | d: rouges, vertes, jaunes
+# rose
+Elle a une chambre [rose]. | یک اتاق صورتی دارد.
+Le bébé porte des chaussettes [roses]. | بچه جوراب صورتی پوشیده است.
+Je n'aime pas les chemises [roses]. | پیراهن‌های صورتی را دوست ندارم.
+Le ciel est [rose] ce soir. | امشب آسمان صورتی است.
+Elle a acheté un sac [rose]. | یک کیف صورتی خریده است.
+# marron
+La table de la cuisine est [marron]. | میز آشپزخانه قهوه‌ای است. | d: blanche, noire, grise
+Il porte des chaussures [marron]. | کفش قهوه‌ای پوشیده است. | d: noires, blanches, rouges
+Le cheval est [marron]. | اسب قهوه‌ای است. | d: blanc, noir, gris
+Mon manteau est [marron]. | پالتویم قهوه‌ای است. | d: noir, gris, bleu
+Elle a un sac [marron]. | یک کیف قهوه‌ای دارد. | d: noir, rouge, blanc
+# violet
+Elle aime les fleurs [violettes]. | گل‌های بنفش را دوست دارد.
+J'ai un pull [violet]. | یک پلیور بنفش دارم.
+Sa robe est [violette]. | پیراهنش بنفش است.
+Ma sœur a une voiture [violette]. | خواهرم یک ماشین بنفش دارد.
+Les chaussettes du{du-contr} bébé sont [violettes]. | جوراب‌های بچه بنفش‌اند.
+# blond
+Ma sœur est [blonde]. | خواهرم موبور است.
+Il a les cheveux [blonds]. | موهایش بور است.
+Le bébé est petit et [blond]. | بچه کوچک و موبور است.
+Leurs enfants sont [blonds]. | بچه‌هایشان موبورند.
+Qui est la fille [blonde] ? | آن دختر موبور کیست؟
+# brun
+Il a les cheveux [bruns]. | موهایش قهوه‌ای است.
+Ma mère est [brune]. | موهای مادرم قهوه‌ای است.
+Mon frère est grand et [brun]. | برادرم قدبلند است و موهایش قهوه‌ای است.
+Les deux filles sont [brunes]. | موهای هر دو دختر قهوه‌ای است.
+Sa femme est [brune] et très jolie. | زنش موهای قهوه‌ای دارد و خیلی قشنگ است.
+# sport
+Le [sport], c'est bon pour le corps. | ورزش برای بدن خوب است.
+Tu aimes le [sport] ? | ورزش دوست داری؟
+Mon frère regarde le [sport] à la télé. | برادرم ورزش را از تلویزیون تماشا می‌کند.
+À l'école, les enfants ont deux heures de [sport]. | بچه‌ها در مدرسه دو ساعت ورزش دارند.
+Après le [sport], je prends une douche. | بعد از ورزش دوش می‌گیرم.
+# faire du sport
+Je [fais du sport] le samedi. | شنبه‌ها ورزش می‌کنم.
+Tu [fais du sport] ? | ورزش می‌کنی؟
+Mon père [fait du sport] tous les matins. | پدرم هر روز صبح ورزش می‌کند.
+Nous [faisons du sport] ensemble. | با هم ورزش می‌کنیم.
+Il faut [faire du sport] tous les jours. | باید هر روز ورزش کرد.
+Les enfants [font du sport] à l'école. | بچه‌ها در مدرسه ورزش می‌کنند.
+# football
+Mon fils aime le [football]. | پسرم فوتبال دوست دارد.
+Ce soir, il y a du [football] à la télé. | امشب تلویزیون فوتبال نشان می‌دهد.
+Je regarde le [football] avec mes amis. | با دوستانم فوتبال تماشا می‌کنم.
+Le [football], ce n'est pas mon sport. | فوتبال ورزش من نیست.
+Les filles aussi aiment le [football]. | دخترها هم فوتبال دوست دارند.
+# jouer au football
+Les enfants [jouent au football] dans le parc. | بچه‌ها در پارک فوتبال بازی می‌کنند.
+Je [joue au football] le mercredi. | چهارشنبه‌ها فوتبال بازی می‌کنم.
+Tu veux [jouer au football] avec nous ? | می‌خواهی با ما فوتبال بازی کنی؟
+Mon frère [joue au football] à l'école. | برادرم در مدرسه فوتبال بازی می‌کند.
+Nous [jouons au football] après l'école. | بعد از مدرسه فوتبال بازی می‌کنیم.
+Hier, ils ont [joué au football] sous la pluie. | دیروز زیر باران فوتبال بازی کردند.
+# tennis
+Je joue au [tennis] avec mon frère. | با برادرم تنیس بازی می‌کنم.
+Le [tennis] est un sport difficile. | تنیس ورزش سختی است.
+Tu aimes le [tennis] ? | تنیس دوست داری؟
+Le samedi, elle joue au [tennis]. | شنبه‌ها تنیس بازی می‌کند.
+Il regarde le [tennis] à la télé. | تنیس را از تلویزیون تماشا می‌کند.
+# jeu
+Ce [jeu] est très facile. | این بازی خیلی آسان است.
+On fait un [jeu] ? | یک بازی کنیم؟
+Mon fils joue à un [jeu] sur l'ordinateur. | پسرم با کامپیوتر یک بازی می‌کند.
+J'ai acheté un [jeu] pour son anniversaire. | برای تولدش یک بازی خریدم.
+Les [jeux] de mon frère sont dans sa chambre. | بازی‌های برادرم در اتاقش است.
+# match
+Ce soir, il y a un [match] à la télé. | امشب تلویزیون یک مسابقه نشان می‌دهد.
+Le [match] commence à huit heures. | مسابقه ساعت هشت شروع می‌شود.
+On va au [match] samedi ? | شنبه به مسابقه برویم؟
+Mon fils a un [match] de football demain. | پسرم فردا مسابقه‌ی فوتبال دارد.
+Nous avons regardé le [match] ensemble. | مسابقه را با هم تماشا کردیم.
+# musique
+J'aime la [musique]. | موسیقی دوست دارم.
+J'écoute de la [musique] dans le bus. | در اتوبوس موسیقی گوش می‌دهم. | d: fête, piscine, photo
+Quelle [musique] est-ce que tu aimes ? | چه موسیقی‌ای دوست داری؟
+La [musique] iranienne est très belle. | موسیقی ایرانی خیلی زیباست. | d: cuisine, langue, fête
+Mon fils apprend la [musique] à l'école. | پسرم در مدرسه موسیقی یاد می‌گیرد. | d: langue, guitare, piscine
+Il y a de la [musique] à la fête. | در جشن موسیقی هست.
+# chanson
+C'est une belle [chanson]. | آهنگ زیبایی است. | d: piscine, fête, photo
+J'écoute cette [chanson] tous les jours. | این آهنگ را هر روز گوش می‌دهم. | d: radio, guitare, fête
+Ma mère connaît beaucoup de [chansons]. | مادرم آهنگ‌های زیادی بلد است. | d: langues, villes, fêtes
+Les enfants apprennent une [chanson] en français. | بچه‌ها یک آهنگ به فرانسوی یاد می‌گیرند. | d: fête, photo, langue
+Quelle est cette [chanson] ? | این چه آهنگی است؟ | d: fête, photo, langue
+# chanter
+Je [chante] sous la douche. | زیر دوش آواز می‌خوانم.
+Tu [chantes] très bien ! | خیلی خوب آواز می‌خوانی!
+Les enfants [chantent] une chanson. | بچه‌ها یک آهنگ می‌خوانند.
+Nous [chantons] pour son anniversaire. | برای تولدش آواز می‌خوانیم.
+Elle aime [chanter] le soir. | دوست دارد عصرها آواز بخواند.
+Hier, il a [chanté] à la fête. | دیروز در جشن آواز خواند.
+# danser
+Tu [danses] avec moi ? | با من می‌رقصی؟
+Elle [danse] très bien. | خیلی خوب می‌رقصد.
+À la fête, nous [dansons] toute la nuit. | در جشن تمام شب می‌رقصیم.
+Je n'aime pas [danser]. | رقصیدن را دوست ندارم.
+Les enfants [dansent] dans le salon. | بچه‌ها در هال می‌رقصند.
+Ils ont [dansé] ensemble. | با هم رقصیدند.
+# guitare
+Mon frère a une [guitare]. | برادرم یک گیتار دارد.
+Elle apprend la [guitare]. | گیتار یاد می‌گیرد.
+Ma [guitare] est dans ma chambre. | گیتارم در اتاقم است.
+Cette [guitare] coûte trop cher. | این گیتار خیلی گران است.
+Il prend sa [guitare] et chante. | گیتارش را برمی‌دارد و آواز می‌خواند.
+# jouer de la guitare
+Je [joue de la guitare] le soir. | عصرها گیتار می‌زنم.
+Tu [joues de la guitare] ? | گیتار می‌زنی؟
+Mon fils veut [jouer de la guitare]. | پسرم می‌خواهد گیتار بزند.
+Elle [joue de la guitare] très bien. | خیلی خوب گیتار می‌زند.
+Nous [jouons de la guitare] ensemble. | با هم گیتار می‌زنیم.
+# piano
+Elle joue du{du-contr} [piano]. | پیانو می‌زند.
+Il y a un [piano] dans le salon. | در هال یک پیانو هست.
+Ma fille apprend le [piano]. | دخترم پیانو یاد می‌گیرد.
+Ce [piano] est très vieux. | این پیانو خیلی قدیمی است.
+Le [piano] de ma grand-mère est dans sa chambre. | پیانوی مادربزرگم در اتاقش است.
+# film
+Ce soir, on regarde un [film]. | امشب فیلم می‌بینیم.
+C'est un très bon [film]. | فیلم خیلی خوبی است.
+Le [film] commence à neuf heures. | فیلم ساعت نه شروع می‌شود.
+J'aime les [films] français. | فیلم‌های فرانسوی را دوست دارم.
+Tu as vu ce [film] ? | این فیلم را دیده‌ای؟
+On va voir un [film] au cinéma ? | برویم سینما فیلم ببینیم؟
+# photo
+Regarde cette [photo] ! | این عکس را نگاه کن!
+J'ai une [photo] de ma famille. | یک عکس از خانواده‌ام دارم.
+Tu peux voir mes [photos] de vacances. | می‌توانی عکس‌های تعطیلاتم را ببینی.
+Il y a une [photo] de mes enfants sur la table. | روی میز یک عکس از بچه‌هایم هست.
+Tu m'envoies la [photo] ? | عکس را برایم می‌فرستی؟
+# prendre une photo
+Je [prends une photo] de la mer. | از دریا عکس می‌گیرم.
+Tu peux [prendre une photo] de nous ? | می‌توانی از ما عکس بگیری؟
+Les touristes [prennent une photo] du{du-contr} musée. | توریست‌ها از موزه عکس می‌گیرند.
+Nous [prenons une photo] avec nos amis. | با دوستانمان عکس می‌گیریم.
+Elle [prend une photo] de son bébé. | از بچه‌اش عکس می‌گیرد.
+# histoire
+Le soir, je lis une [histoire] à mon fils. | شب‌ها برای پسرم قصه می‌خوانم. | d: chanson, carte, photo
+C'est une belle [histoire]. | داستان قشنگی است. | d: chanson, photo, fleur
+Mon grand-père connaît beaucoup d'[histoires]. | پدربزرگم قصه‌های زیادی بلد است. | d: idées, adresses, heures
+Tu connais cette [histoire] ? | این قصه را می‌دانی؟ | d: chanson, ville, femme
+Les enfants aiment les [histoires]. | بچه‌ها قصه دوست دارند. | d: chansons, fleurs, photos
+J'écris une [histoire] pour l'école. | برای مدرسه یک داستان می‌نویسم. | d: chanson, carte, date
+# chance
+Tu as de la [chance] ! | خوش‌شانسی!
+Je n'ai pas de [chance] aujourd'hui. | امروز شانس ندارم.
+Quelle [chance] ! | چه شانسی!
+Il a eu de la [chance]. | شانس آورد.
+C'est une [chance] pour toi. | این برای تو یک شانس است.
+# bonne chance
+[Bonne chance] pour demain ! | برای فردا موفق باشی! | d: Bonne nuit, Bon voyage, Bonne idée
+Tu commences ton travail demain ? [Bonne chance] ! | فردا کارت را شروع می‌کنی؟ موفق باشی! | d: Bonne nuit, Bon anniversaire, Bonne idée
+Au revoir et [bonne chance] ! | خداحافظ و موفق باشی! | d: bonne nuit, bon voyage, bonnes vacances
+[Bonne chance], les enfants ! | بچه‌ها، موفق باشید! | d: Bonne nuit, Bonne journée, Bonnes vacances
+Merci, et [bonne chance] à toi aussi ! | ممنون، تو هم موفق باشی! | d: bonne nuit, bonne journée, bon voyage
+# nager
+Je [nage] dans la mer. | در دریا شنا می‌کنم.
+Tu sais [nager] ? | شنا بلدی؟ | d: chanter, danser, lire
+Nous [nageons] à la piscine le samedi. | شنبه‌ها در استخر شنا می‌کنیم.
+Les enfants [nagent] dans le lac. | بچه‌ها در دریاچه شنا می‌کنند.
+Ma fille [nage] très bien. | دخترم خیلی خوب شنا می‌کند.
+Hier, j'ai [nagé] une heure. | دیروز یک ساعت شنا کردم.
+# courir
+Je [cours] dans le parc le matin. | صبح‌ها در پارک می‌دوم.
+Le chien [court] dans le jardin. | سگ در حیاط می‌دود.
+Ne [courez] pas dans l'école ! | در مدرسه ندوید!
+Nous [courons] pour prendre le bus. | می‌دویم تا به اتوبوس برسیم.
+Les enfants aiment [courir]. | بچه‌ها دویدن را دوست دارند.
+Il a [couru] pour arriver à l'heure. | دوید تا به‌موقع برسد.
+# marcher
+Je [marche] beaucoup tous les jours. | هر روز زیاد راه می‌روم.
+Le bébé [marche] déjà ! | بچه دیگر راه می‌رود!
+Nous [marchons] dans la forêt. | در جنگل راه می‌رویم.
+Mes parents [marchent] le soir dans le parc. | پدر و مادرم عصرها در پارک قدم می‌زنند.
+J'aime [marcher] sous la pluie. | دوست دارم زیر باران راه بروم. | d: courir, danser, chanter
+Hier, nous avons [marché] deux heures. | دیروز دو ساعت راه رفتیم.
+# téléphone
+Où est le [téléphone] ? | تلفن کجاست؟ | d: journal, message, ordinateur
+Elle parle au [téléphone] avec sa mère. | با مادرش تلفنی حرف می‌زند.
+Quel est ton numéro de [téléphone] ? | شماره‌ی تلفنت چیست؟ | d: chambre, passeport, bus
+Il y a un [téléphone] dans la chambre. | در اتاق یک تلفن هست. | d: ordinateur, lit, journal
+Mon père est au [téléphone]. | پدرم پای تلفن است.
+# portable
+J'ai oublié mon [portable] à la maison. | موبایلم را خانه جا گذاشتم. | d: ordinateur, passeport, sac
+Ton [portable] est sur la table. | موبایلت روی میز است. | d: ordinateur, sac, passeport
+Elle regarde son [portable] tout le temps. | همه‌اش به موبایلش نگاه می‌کند. | d: ordinateur, frère, chat
+Mon fils veut un nouveau [portable]. | پسرم یک موبایل نو می‌خواهد. | d: ordinateur, vélo, sac
+Tu as un [portable] ? | موبایل داری؟ | d: ordinateur, vélo, passeport
+# téléphoner
+Je [téléphone] à ma mère tous les soirs. | هر شب به مادرم زنگ می‌زنم.
+Tu peux [téléphoner] au médecin ? | می‌توانی به دکتر زنگ بزنی؟
+Nous [téléphonons] à nos grands-parents le dimanche. | یکشنبه‌ها به پدربزرگ و مادربزرگمان زنگ می‌زنیم.
+Il [téléphone] à l'hôtel pour réserver une chambre. | به هتل زنگ می‌زند تا یک اتاق رزرو کند.
+Hier, j'ai [téléphoné] à Paul. | دیروز به پل زنگ زدم.
+Les enfants [téléphonent] à leur père. | بچه‌ها به پدرشان زنگ می‌زنند.
+# message
+J'ai un [message] de ma mère. | از مادرم یک پیام دارم.
+Je t'envoie un [message] ce soir. | امشب برایت پیام می‌فرستم.
+Tu as lu mon [message] ? | پیامم را خواندی؟
+Il y a trois [messages] sur ton portable. | روی موبایلت سه پیام هست.
+Elle écrit un [message] à son frère. | برای برادرش پیام می‌نویسد.
+# e-mail
+J'écris un [e-mail] à mon oncle. | به عمویم یک ایمیل می‌نویسم.
+Quelle est ton adresse [e-mail] ? | آدرس ایمیلت چیست؟
+Je t'envoie un [e-mail] demain. | فردا برایت ایمیل می‌فرستم.
+L'[e-mail] de l'hôtel est arrivé. | ایمیل هتل رسید. | d: ordinateur, internet, avion
+Il y a un [e-mail] pour toi. | یک ایمیل برای تو هست.
+# internet
+Je cherche l'adresse sur [internet]. | آدرس را در اینترنت جست‌وجو می‌کنم.
+Il n'y a pas d'[internet] à l'hôtel. | هتل اینترنت ندارد. | d: ordinateur, eau, argent
+J'achète mes billets sur [internet]. | بلیت‌هایم را از اینترنت می‌خرم.
+Mon fils passe beaucoup de temps sur [internet]. | پسرم وقت زیادی را در اینترنت می‌گذراند.
+On peut lire le menu sur [internet]. | می‌شود منو را در اینترنت خواند.
+# lettre
+J'écris une [lettre] à ma grand-mère. | برای مادربزرگم نامه می‌نویسم. | d: chanson, histoire, carte
+Il y a une [lettre] pour toi. | یک نامه برای تو هست. | d: photo, carte, chambre
+Ma mère lit la [lettre]. | مادرم نامه را می‌خواند. | d: carte, histoire, télévision
+Je vais à la poste pour envoyer une [lettre]. | برای فرستادن یک نامه به پست می‌روم. | d: valise, photo, carte
+Mon grand-père a beaucoup de vieilles [lettres]. | پدربزرگم نامه‌های قدیمی زیادی دارد.
+# journal
+Mon père lit le [journal] le matin. | پدرم صبح‌ها روزنامه می‌خواند.
+Il y a un [journal] sur la table. | یک روزنامه روی میز هست.
+Tu as lu le [journal] aujourd'hui ? | امروز روزنامه را خواندی؟
+Il y a beaucoup de [journaux] dans ce magasin. | در این مغازه روزنامه‌ی زیادی هست. | d: téléphones, livres, sacs
+Je lis les [journaux] sur internet. | روزنامه‌ها را در اینترنت می‌خوانم.
+# radio
+J'écoute la [radio] dans la voiture. | در ماشین رادیو گوش می‌دهم. | d: musique, chanson, télévision
+Ma grand-mère a une vieille [radio]. | مادربزرگم یک رادیوی قدیمی دارد. | d: télévision, lettre, voiture
+Il y a de la musique à la [radio]. | رادیو موسیقی پخش می‌کند. | d: télévision, fête, piscine
+J'ai entendu cette chanson à la [radio]. | این آهنگ را از رادیو شنیدم. | d: télévision, fête, piscine
+La [radio] est sur la table de la cuisine. | رادیو روی میز آشپزخانه است. | d: télévision, lettre, lampe
+# métier
+Quel est ton [métier] ? | شغلت چیست؟ | d: bureau, nom, âge
+J'aime beaucoup mon [métier]. | شغلم را خیلی دوست دارم. | d: bureau, quartier, prénom
+C'est un [métier] difficile. | شغل سختی است. | d: problème, jeu, sport
+Mon père a un beau [métier]. | پدرم شغل قشنگی دارد. | d: bureau, jardin, vélo
+Quels [métiers] est-ce que tu aimes ? | چه شغل‌هایی را دوست داری؟ | d: sports, films, jeux
+# bureau
+Mon père travaille dans un [bureau]. | پدرم در یک دفتر کار می‌کند.
+Je vais au [bureau] à pied. | پیاده به اداره می‌روم. | d: marché, parc, musée
+Le [bureau] ferme à six heures. | اداره ساعت شش تعطیل می‌شود. | d: marché, parc, musée
+Mon [bureau] est au deuxième étage. | دفترم در طبقه‌ی دوم است. | d: appartement, salon, lit
+Les [bureaux] de la banque sont dans le centre. | دفترهای بانک در مرکز شهر است.
+# professeur
+Mon [professeur] de français s'appelle Monsieur Dubois. | اسم معلم فرانسوی‌ام آقای دوبوا است.
+Ma mère est [professeur]. | مادرم معلم است.
+Le [professeur] parle avec les parents. | معلم با پدر و مادرها حرف می‌زند.
+Les [professeurs] de cette école sont jeunes. | معلم‌های این مدرسه جوان‌اند.
+Je demande au [professeur]. | از معلم می‌پرسم.
+# étudiant
+Mon frère est [étudiant]. | برادرم دانشجوست. | d: professeur, médecin, touriste
+Il y a beaucoup d'[étudiants] dans ce quartier. | در این محله دانشجوی زیادی هست. | d: enfants, hôtels, immeubles
+Les [étudiants] travaillent à la bibliothèque. | دانشجوها در کتابخانه درس می‌خوانند. | d: enfants, professeurs, touristes
+C'est un [étudiant] iranien. | او یک دانشجوی ایرانی است. | d: professeur, médecin, touriste
+Ma sœur est [étudiante] à Paris. | خواهرم در پاریس دانشجوست. | d: professeur, élève, secrétaire
+# élève
+Il y a vingt [élèves] dans cette école. | در این مدرسه بیست دانش‌آموز هست.
+Mon fils est un bon [élève]. | پسرم شاگرد خوبی است.
+Les [élèves] écoutent le professeur. | دانش‌آموزها به معلم گوش می‌دهند.
+Cette [élève] parle très bien anglais. | این دانش‌آموز خیلی خوب انگلیسی حرف می‌زند.
+Le professeur attend ses [élèves]. | معلم منتظر شاگردهایش است.
+# ingénieur
+Mon père est [ingénieur]. | پدرم مهندس است. | d: professeur, médecin, étudiant
+Elle veut être [ingénieur]. | می‌خواهد مهندس شود. | d: professeur, médecin, secrétaire
+Il travaille comme [ingénieur] à Lyon. | در لیون مهندس است. | d: professeur, médecin, serveur
+Les [ingénieurs] travaillent dans ce bureau. | مهندس‌ها در این دفتر کار می‌کنند. | d: professeurs, médecins, étudiants
+Mon cousin est un très bon [ingénieur]. | پسرخاله‌ام مهندس خیلی خوبی است. | d: professeur, médecin, élève
+# vendeur
+Le [vendeur] est très jeune. | فروشنده خیلی جوان است. | d: professeur, médecin, ingénieur
+Je demande le prix au [vendeur]. | قیمت را از فروشنده می‌پرسم. | d: professeur, médecin, touriste
+Il est [vendeur] dans un magasin de chaussures. | در یک کفش‌فروشی فروشنده است. | d: professeur, ingénieur, médecin
+Les [vendeurs] du{du-contr} marché arrivent tôt. | فروشنده‌های بازار زود می‌آیند. | d: professeurs, médecins, ingénieurs
+Ma sœur est [vendeuse]. | خواهرم فروشنده است. | d: secrétaire, étudiante, professeur
+# serveur
+Le [serveur] donne le menu. | گارسون منو را می‌دهد. | d: vendeur, professeur, médecin
+On demande l'addition au [serveur]. | صورت‌حساب را از گارسون می‌خواهیم. | d: vendeur, professeur, médecin
+Mon frère est [serveur] dans un restaurant. | برادرم در یک رستوران گارسون است. | d: vendeur, ingénieur, médecin
+Les [serveurs] de ce café sont jeunes. | گارسون‌های این کافه جوان‌اند. | d: vendeurs, ingénieurs, professeurs
+Pardon, monsieur ! Vous êtes le [serveur] ? | ببخشید آقا! شما گارسون هستید؟ | d: vendeur, professeur, médecin
+# secrétaire
+La [secrétaire] répond au téléphone. | منشی به تلفن جواب می‌دهد.
+Ma mère est [secrétaire]. | مادرم منشی است.
+Demandez à la [secrétaire], s'il vous plaît. | لطفاً از منشی بپرسید.
+Le médecin a une nouvelle [secrétaire]. | دکتر یک منشی جدید دارد.
+Les [secrétaires] travaillent au bureau. | منشی‌ها در دفتر کار می‌کنند.
+# policier
+Le [policier] montre la route aux touristes. | پلیس راه را به توریست‌ها نشان می‌دهد. | d: vendeur, serveur, professeur
+Mon oncle est [policier]. | عمویم پلیس است. | d: serveur, vendeur, ingénieur
+Deux [policiers] arrivent en voiture. | دو پلیس با ماشین می‌رسند. | d: vendeurs, ingénieurs, serveurs
+Demande au [policier] ! | از پلیس بپرس! | d: serveur, vendeur, professeur
+Mon fils veut être [policier]. | پسرم می‌خواهد پلیس شود. | d: ingénieur, serveur, médecin
+# infirmier
+Ma tante est [infirmière]. | خاله‌ام پرستار است. | d: secrétaire, professeur, vendeuse
+L'[infirmier] arrive dans cinq minutes. | پرستار تا پنج دقیقه‌ی دیگر می‌آید. | d: ingénieur, étudiant, élève
+Il travaille comme [infirmier] à l'hôpital. | در بیمارستان پرستار است. | d: médecin, secrétaire, policier
+Les [infirmiers] travaillent la nuit. | پرستارها شب‌ها کار می‌کنند. | d: policiers, serveurs, médecins
+L'[infirmière] donne un médicament au bébé. | پرستار به بچه دارو می‌دهد. | d: étudiante, élève, amie
+# cuisinier
+Le [cuisinier] fait une soupe. | آشپز سوپ درست می‌کند. | d: policier, serveur, vendeur
+Mon père est un très bon [cuisinier]. | پدرم آشپز خیلی خوبی است.
+Il est [cuisinier] dans un grand restaurant. | در یک رستوران بزرگ آشپز است.
+Les [cuisiniers] travaillent dans la cuisine. | آشپزها در آشپزخانه کار می‌کنند. | d: policiers, serveurs, vendeurs
+Je voudrais parler au [cuisinier]. | می‌خواهم با آشپز صحبت کنم. | d: serveur, vendeur, policier
+# chauffeur
+Le [chauffeur] du{du-contr} bus attend. | راننده‌ی اتوبوس منتظر است. | d: vendeur, policier, cuisinier
+Mon oncle est [chauffeur] de taxi. | عمویم راننده‌ی تاکسی است. | d: vendeur, policier, cuisinier
+Le [chauffeur] nous attend à l'hôtel. | راننده در هتل منتظر ماست. | d: cuisinier, serveur, policier
+Tu peux demander au [chauffeur] ? | می‌توانی از راننده بپرسی؟ | d: serveur, vendeur, policier
+Les [chauffeurs] de taxi connaissent bien la ville. | راننده‌های تاکسی شهر را خوب می‌شناسند. | d: vendeurs, policiers, cuisiniers
+# acteur
+C'est un [acteur] français. | او یک بازیگر فرانسوی است. | d: chanteur, professeur, étudiant
+J'aime beaucoup cet [acteur]. | این بازیگر را خیلی دوست دارم. | d: ingénieur, étudiant, infirmier
+Mon fils veut être [acteur]. | پسرم می‌خواهد بازیگر شود. | d: chanteur, policier, cuisinier
+Les [acteurs] de ce film sont jeunes. | بازیگرهای این فیلم جوان‌اند. | d: chanteurs, professeurs, policiers
+Elle connaît le nom de l'[acteur]. | اسم بازیگر را می‌داند. | d: ingénieur, étudiant, infirmier
+# chanteur
+Ce [chanteur] chante très bien. | این خواننده خیلی خوب می‌خواند. | d: professeur, policier, cuisinier
+Ma fille veut être [chanteuse]. | دخترم می‌خواهد خواننده شود. | d: secrétaire, infirmière, vendeuse
+Il est [chanteur] et acteur. | او خواننده و بازیگر است. | d: professeur, policier, cuisinier
+Tu connais ce [chanteur] ? | این خواننده را می‌شناسی؟ | d: vendeur, serveur, chauffeur
+J'écoute les chansons de ce [chanteur]. | آهنگ‌های این خواننده را گوش می‌دهم. | d: film, professeur, chauffeur
+# classe
+Il y a vingt élèves dans la [classe]. | در کلاس بیست دانش‌آموز هست.
+Ma [classe] est au premier étage. | کلاسم در طبقه‌ی اول است.
+Les enfants entrent dans la [classe]. | بچه‌ها وارد کلاس می‌شوند.
+Il n'y a pas de [classe] le mercredi. | چهارشنبه‌ها کلاس نیست.
+Cette école a dix [classes]. | این مدرسه ده کلاس دارد.
+# cours
+J'ai un [cours] de français ce soir. | امشب کلاس فرانسه دارم. | d: livre, film, cahier
+Le [cours] commence à neuf heures. | کلاس ساعت نه شروع می‌شود. | d: film, match, dîner
+Après le [cours], on va au café ? | بعد از کلاس برویم کافه؟ | d: film, match, dîner
+Ce [cours] est très difficile. | این کلاس خیلی سخت است. | d: livre, mot, jeu
+Elle prend des [cours] de piano. | کلاس پیانو می‌رود. | d: livres, cahiers, stylos
+# leçon
+Aujourd'hui, la [leçon] est facile. | امروز درس آسان است.
+Je lis la [leçon] deux fois. | درس را دو بار می‌خوانم.
+Tu as compris la [leçon] ? | درس را فهمیدی؟
+Nous sommes à la [leçon] cinq. | به درس پنج رسیده‌ایم.
+Ce livre a vingt [leçons]. | این کتاب بیست درس دارد.
+# cahier
+J'écris dans mon [cahier]. | در دفترم می‌نویسم. | d: livre, sac, salon
+Ouvrez vos [cahiers], s'il vous plaît. | لطفاً دفترهایتان را باز کنید. | d: livres, sacs, fenêtres
+J'ai oublié mon [cahier] à l'école. | دفترم را در مدرسه جا گذاشتم. | d: livre, sac, manteau
+Mets ton [cahier] dans ton sac. | دفترت را در کیفت بگذار. | d: livre, pull, portable
+Il achète un nouveau [cahier]. | یک دفتر نو می‌خرد. | d: livre, sac, vélo
+# stylo
+Tu as un [stylo] ? | خودکار داری؟ | d: cahier, livre, sac
+J'écris avec un [stylo] bleu. | با خودکار آبی می‌نویسم. | d: cahier, livre, portable
+Où est mon [stylo] ? | خودکارم کجاست؟
+Je peux prendre ton [stylo] ? | می‌توانم خودکارت را بردارم؟ | d: cahier, livre, sac
+Il y a trois [stylos] dans mon sac. | در کیفم سه خودکار هست. | d: cahiers, livres, portables
+# crayon
+Le bébé a un [crayon] rouge. | بچه یک مداد قرمز دارد. | d: stylo, cahier, livre
+Prends un [crayon] et écris ton nom. | یک مداد بردار و اسمت را بنویس. | d: stylo, cahier, livre
+Mon fils a beaucoup de [crayons] de couleur. | پسرم مدادرنگی زیادی دارد.
+Je cherche mon [crayon]. | دنبال مدادم می‌گردم. | d: stylo, cahier, livre
+Il y a un [crayon] sous la table. | یک مداد زیر میز است. | d: stylo, cahier, livre
+# tableau
+Le professeur écrit au [tableau]. | معلم روی تخته می‌نویسد. | d: cahier, livre, stylo
+Regardez le [tableau], s'il vous plaît. | لطفاً به تخته نگاه کنید. | d: livre, cahier, stylo
+Le [tableau] de la classe est grand. | تخته‌ی کلاس بزرگ است.
+Ma fille va au [tableau]. | دخترم پای تخته می‌رود. | d: livre, stylo, cahier
+Cette école a de nouveaux [tableaux]. | این مدرسه تخته‌های نو دارد.
+# mot
+Je ne comprends pas ce [mot]. | این کلمه را نمی‌فهمم. | d: livre, film, jeu
+Comment est-ce qu'on écrit ce [mot] ? | این کلمه را چطور می‌نویسند؟
+J'apprends dix [mots] par jour. | روزی ده کلمه یاد می‌گیرم.
+Écris le [mot] au tableau. | کلمه را روی تخته بنویس. | d: nom, numéro, prénom
+Ce [mot] est difficile. | این کلمه سخت است. | d: livre, jeu, film
+Il y a beaucoup de nouveaux [mots] dans cette leçon. | در این درس کلمه‌های جدید زیادی هست.
+# phrase
+Lis cette [phrase], s'il te plaît. | لطفاً این جمله را بخوان.
+Écrivez trois [phrases] avec ce mot. | با این کلمه سه جمله بنویسید.
+La première [phrase] est facile. | جمله‌ی اول آسان است.
+Il y a un mot dans cette [phrase] que je ne comprends pas. | در این جمله کلمه‌ای هست که نمی‌فهمم.
+Le professeur écrit une [phrase] au tableau. | معلم یک جمله روی تخته می‌نویسد.
+# question
+J'ai une [question]. | یک سؤال دارم.
+Tu as des [questions] ? | سؤالی داری؟
+Répondez à la [question]. | به سؤال جواب بدهید.
+C'est une bonne [question] ! | سؤال خوبی است!
+La deuxième [question] est difficile. | سؤال دوم سخت است.
+# réponse
+Je ne connais pas la [réponse]. | جواب را نمی‌دانم.
+C'est la bonne [réponse] ! | جواب درست همین است!
+Écris ta [réponse] dans le cahier. | جوابت را در دفتر بنویس.
+J'attends ta [réponse]. | منتظر جوابت هستم.
+Les [réponses] sont dans le livre. | جواب‌ها در کتاب است.
+# exercice
+Faites l'[exercice] deux, s'il vous plaît. | لطفاً تمرین دو را انجام دهید. | d: exemple, histoire, université
+Cet [exercice] est très facile. | این تمرین خیلی آسان است. | d: exemple, étudiant, ordinateur
+J'ai fini mes [exercices]. | تمرین‌هایم را تمام کردم.
+Les enfants font des [exercices] de français. | بچه‌ها تمرین فرانسه حل می‌کنند.
+Je ne comprends pas cet [exercice]. | این تمرین را نمی‌فهمم. | d: exemple, étudiant, ordinateur
+# exemple
+Tu peux donner un [exemple] ? | می‌توانی یک مثال بزنی؟ | d: mot, cadeau, livre
+Voici un [exemple]. | این یک مثال است.
+Le professeur écrit deux [exemples] au tableau. | معلم دو مثال روی تخته می‌نویسد.
+Lis l'[exemple] avant l'exercice. | قبل از تمرین، مثال را بخوان. | d: histoire, adresse, e-mail
+Il y a un [exemple] dans le livre. | در کتاب یک مثال هست. | d: mot, stylo, exercice
+# par exemple
+J'aime les fruits, [par exemple] les pommes. | میوه دوست دارم، مثلاً سیب. | d: bien sûr, peut-être, de temps en temps
+Il y a beaucoup de sports, [par exemple] le tennis. | ورزش‌های زیادی هست، مثلاً تنیس. | d: bien sûr, peut-être, tout le temps
+On peut aller au musée, [par exemple]. | مثلاً می‌توانیم به موزه برویم. | d: de temps en temps, tout le temps, bien sûr
+Je mange des légumes, [par exemple] des tomates. | سبزی می‌خورم، مثلاً گوجه. | d: bien sûr, peut-être, tout le temps
+[Par exemple], demain, on peut faire du vélo. | مثلاً فردا می‌توانیم دوچرخه‌سواری کنیم. | d: Peut-être, Bien sûr, D'abord
+# page
+Ouvrez le livre à la [page] dix. | کتاب را صفحه‌ی ده باز کنید.
+Ce livre a cent [pages]. | این کتاب صد صفحه دارد.
+Lis la première [page]. | صفحه‌ی اول را بخوان.
+La réponse est à la [page] vingt. | جواب در صفحه‌ی بیست است.
+J'ai lu trente [pages] ce soir. | امشب سی صفحه خواندم.
+# université
+Ma sœur va à l'[université]. | خواهرم به دانشگاه می‌رود. | d: école, hôpital, aéroport
+Il est étudiant à l'[université] de Téhéran. | او دانشجوی دانشگاه تهران است. | d: école, hôpital, hôtel
+L'[université] est dans le centre de la ville. | دانشگاه در مرکز شهر است. | d: école, hôpital, hôtel
+Cette [université] est très grande. | این دانشگاه خیلی بزرگ است.
+Il y a trois [universités] dans notre ville. | در شهر ما سه دانشگاه هست.
+# étudier
+J'[étudie] le français. | فرانسه می‌خوانم.
+Tu [étudies] à l'université ? | در دانشگاه درس می‌خوانی؟
+Nous [étudions] ensemble à la bibliothèque. | با هم در کتابخانه درس می‌خوانیم.
+Ma fille [étudie] tous les soirs. | دخترم هر شب درس می‌خواند.
+Il faut [étudier] tous les jours. | باید هر روز درس خواند.
+Ils ont [étudié] à Paris. | در پاریس درس خواندند.
+# répéter
+[Répétez], s'il vous plaît. | لطفاً تکرار کنید.
+Je [répète] le mot trois fois. | کلمه را سه بار تکرار می‌کنم.
+Tu peux [répéter], s'il te plaît ? | لطفاً می‌توانی تکرار کنی؟
+Les élèves [répètent] la phrase. | دانش‌آموزها جمله را تکرار می‌کنند.
+Nous [répétons] la leçon avant le cours. | قبل از کلاس درس را تکرار می‌کنیم.
+Le professeur a [répété] la question. | معلم سؤال را تکرار کرد.
+# content
+Je suis très [content]. | خیلی خوشحالم.
+Elle est [contente] de son travail. | از کارش راضی است.
+Les enfants sont [contents] de partir en vacances. | بچه‌ها از رفتن به تعطیلات خوشحال‌اند.
+Tu es [content] de ton nouveau vélo ? | از دوچرخه‌ی نوات راضی هستی؟
+Nous sommes [contents] de vous voir. | از دیدنتان خوشحالیم.
+Mon père n'est pas [content]. | پدرم راضی نیست.
+# heureux
+Ils sont très [heureux] ensemble. | با هم خیلی خوشبخت‌اند. | d: fatigués, malades, jeunes
+Je suis [heureux] ici. | اینجا خوشبختم. | d: seul, malade, fatigué
+C'est une femme [heureuse]. | زن خوشبختی است. | d: mariée, jeune, fatiguée
+Les enfants sont [heureux] à la campagne. | بچه‌ها در روستا شادند. | d: malades, fatigués, seuls
+Je veux une vie [heureuse]. | یک زندگی شاد می‌خواهم. | d: facile, nouvelle, autre
+# triste
+Pourquoi tu es [triste] ? | چرا ناراحتی؟ | d: fatigué, malade, content
+Cette chanson est très [triste]. | این آهنگ خیلی غمگین است. | d: belle, difficile, jolie
+Elle est [triste] parce que son chat est malade. | ناراحت است چون گربه‌اش بیمار است. | d: contente, fatiguée, heureuse
+C'est un film [triste]. | فیلم غم‌انگیزی است. | d: français, facile, mauvais
+Les enfants sont [tristes] après les vacances. | بچه‌ها بعد از تعطیلات غمگین‌اند. | d: contents, fatigués, heureux
+# désolé
+Je suis [désolé], je suis en retard. | متأسفم، دیر کردم.
+[Désolé], je ne comprends pas. | متأسفم، نمی‌فهمم.
+Elle est [désolée] pour son retard. | بابت دیرکردش متأسف است.
+Nous sommes [désolés], il n'y a pas de chambre. | متأسفیم، اتاق خالی نداریم.
+Je suis vraiment [désolée], madame. | واقعاً متأسفم، خانم.
+# adorer
+J'[adore] le chocolat ! | عاشق شکلاتم!
+Ma fille [adore] les chevaux. | دخترم عاشق اسب‌هاست.
+Nous [adorons] cette chanson. | عاشق این آهنگیم.
+Tu [adores] la musique, non ? | عاشق موسیقی هستی، نه؟
+Les enfants [adorent] la plage. | بچه‌ها عاشق ساحل‌اند.
+Il [adore] faire du vélo. | عاشق دوچرخه‌سواری است.
+# détester
+Je [déteste] le café sans sucre. | از قهوه‌ی بی‌شکر بدم می‌آید.
+Mon fils [déteste] les légumes. | پسرم از سبزیجات متنفر است.
+Tu [détestes] la pluie ? | از باران بدت می‌آید؟
+Nous [détestons] attendre. | از منتظر ماندن متنفریم.
+Elles [détestent] le football. | از فوتبال بدشان می‌آید.
+Le chat [déteste] l'eau. | گربه از آب متنفر است.
+# gentil
+Ta mère est très [gentille]. | مادرت خیلی مهربان است.
+Merci, c'est très [gentil] ! | ممنون، خیلی لطف کردی!
+Le professeur est [gentil] avec les élèves. | معلم با دانش‌آموزها مهربان است.
+Nos voisins sont très [gentils]. | همسایه‌هایمان خیلی مهربان‌اند.
+Sois [gentil] avec ta sœur ! | با خواهرت مهربان باش!
+# sympathique
+C'est un homme très [sympathique]. | مرد خیلی خوش‌برخوردی است.
+Tes amis sont [sympathiques]. | دوستانت خوش‌برخوردند.
+La vendeuse est très [sympathique]. | فروشنده خیلی خوش‌برخورد است.
+Ce quartier est très [sympathique]. | این محله خیلی دوست‌داشتنی است.
+Le nouveau voisin est [sympathique]. | همسایه‌ی جدید خوش‌برخورد است.
+# sympa
+Ton frère est [sympa] ! | برادرت باحال است!
+C'est un restaurant très [sympa]. | رستوران خیلی باحالی است.
+Les gens ici sont [sympas]. | مردم اینجا خوش‌برخوردند.
+On a passé une soirée [sympa]. | شب باحالی داشتیم.
+Merci, tu es [sympa] ! | ممنون، باحالی!
+# intelligent
+Ma fille est très [intelligente]. | دخترم خیلی باهوش است.
+Le chien est un animal [intelligent]. | سگ حیوان باهوشی است.
+Ces élèves sont [intelligents]. | این دانش‌آموزها باهوش‌اند.
+C'est une question [intelligente]. | سؤال هوشمندانه‌ای است.
+Il est [intelligent], mais il ne travaille pas. | باهوش است، اما کار نمی‌کند.
+# gros
+Le chat est très [gros]. | گربه خیلی چاق است. | d: petit, mince, jeune
+Mon oncle est un peu [gros]. | عمویم کمی چاق است. | d: mince, jeune, fatigué
+Elle n'est pas [grosse]. | او چاق نیست.
+Je mange trop, je suis [gros] ! | زیادی می‌خورم، چاقم! | d: malade, fatigué, content
+Ce cheval est [gros]. | این اسب چاق است. | d: petit, beau, jeune
+# mince
+Elle est grande et [mince]. | قدبلند و لاغر است.
+Mon frère est très [mince]. | برادرم خیلی لاغر است.
+Tu es [mince], tu dois manger ! | لاغری، باید غذا بخوری!
+Les acteurs sont souvent [minces]. | بازیگرها اغلب لاغرند.
+Ma grand-mère est petite et [mince]. | مادربزرگم ریزه و لاغر است.
+# long
+Elle a les cheveux [longs]. | موهایش بلند است. | d: courts, blonds, noirs
+Le film est très [long]. | فیلم خیلی طولانی است. | d: court, bon, triste
+C'est une [longue] histoire. | قصه‌اش طولانی است. | d: belle, petite, bonne
+La route est [longue]. | راه طولانی است.
+Ce pantalon est trop [long] pour moi. | این شلوار برایم زیادی بلند است. | d: court, petit, cher
+# court
+J'ai les cheveux [courts]. | موهایم کوتاه است.
+Cette jupe est trop [courte]. | این دامن زیادی کوتاه است.
+Le voyage est [court]. | سفر کوتاه است.
+C'est un film très [court]. | فیلم خیلی کوتاهی است.
+Les jours sont [courts] en hiver. | زمستان روزها کوتاه‌اند.
+# rapide
+Le train est très [rapide]. | قطار خیلی سریع است. | d: cher, vieux, petit
+C'est une voiture [rapide]. | ماشین سریعی است. | d: chère, rouge, propre
+Le métro est plus [rapide] que le bus. | مترو از اتوبوس سریع‌تر است. | d: cher, propre, grand
+Mon cheval est [rapide]. | اسبم تندرو است. | d: gros, vieux, beau
+Ces vélos sont [rapides]. | این دوچرخه‌ها سریع‌اند. | d: chers, vieux, propres
+# vite
+Il parle trop [vite] ! | خیلی تند حرف می‌زند!
+Viens [vite] ! | سریع بیا! | d: ici, demain, ensemble
+Les enfants courent [vite]. | بچه‌ها تند می‌دوند. | d: beaucoup, ensemble, souvent
+Je mange trop [vite]. | خیلی تند غذا می‌خورم. | d: tard, tôt, souvent
+Le temps passe [vite]. | زمان تند می‌گذرد. | d: bien, mal, tard
+# super
+C'est [super] ! | عالی است! | d: difficile, triste, faux
+Le film est [super]. | فیلم عالی است. | d: long, triste, mauvais
+On a passé un week-end [super]. | آخر هفته‌ی عالی‌ای داشتیم. | d: triste, difficile, court
+Tes amis sont [super]. | دوستانت فوق‌العاده‌اند. | d: tristes, fatigués, malades
+Le repas était [super]. | غذا عالی بود. | d: froid, mauvais, cher
+# ouvert
+La porte est [ouverte]. | در باز است. | d: fermée, jolie, petite
+Le magasin est [ouvert] le dimanche. | مغازه یکشنبه‌ها باز است. | d: fermé, cher, grand
+La fenêtre est [ouverte], j'ai froid. | پنجره باز است، سردم است. | d: fermée, petite, grande
+La pharmacie est [ouverte] la nuit. | داروخانه شب‌ها باز است. | d: fermée, chère, petite
+Le livre est [ouvert] sur la table. | کتاب روی میز باز است. | d: fermé, nouveau, vieux
+# fermé
+La banque est [fermée] le samedi. | بانک شنبه‌ها تعطیل است.
+La porte de la cuisine est [fermée]. | در آشپزخانه بسته است. | d: ouverte, grande, jolie
+Le restaurant est [fermé] aujourd'hui. | رستوران امروز تعطیل است. | d: ouvert, cher, petit
+Les magasins sont [fermés] le dimanche. | مغازه‌ها یکشنبه‌ها تعطیل‌اند.
+Il dort, les yeux [fermés]. | با چشم‌های بسته خوابیده است. | d: ouverts, bleus, noirs
+# propre
+Ma chambre est [propre]. | اتاقم تمیز است. | d: sale, petite, grande
+Les assiettes sont [propres]. | بشقاب‌ها تمیزند. | d: sales, petites, grandes
+Tu as des chaussettes [propres] ? | جوراب تمیز داری؟ | d: sales, noires, blanches
+Cet hôtel est très [propre]. | این هتل خیلی تمیز است. | d: sale, cher, grand
+L'eau du{du-contr} lac est [propre]. | آب دریاچه تمیز است. | d: sale, froide, chaude
+# sale
+Ta chemise est [sale]. | پیراهنت کثیف است. | d: propre, rouge, petite
+Les mains du{du-contr} bébé sont [sales]. | دست‌های بچه کثیف است. | d: propres, petites, froides
+Cette rue est très [sale]. | این خیابان خیلی کثیف است. | d: propre, longue, jolie
+Mets tes vêtements [sales] dans le sac. | لباس‌های کثیفت را در کیسه بگذار. | d: propres, blancs, noirs
+Le chien est [sale] après la pluie. | سگ بعد از باران کثیف شده است. | d: propre, fatigué, content
+# enchanté
+[Enchanté], madame ! | خوشوقتم، خانم!
+Je m'appelle Paul. [Enchanté] ! | اسمم پل است. خوشوقتم!
+Monsieur Martin, voici Léa. [Enchanté] ! | آقای مارتن، این لئا است. خوشوقتم!
+[Enchanté], monsieur Dubois. | خوشوقتم، آقای دوبوا.
+Voici ma femme, Sophie. [Enchanté] ! | این همسرم سوفی است. خوشوقتم!
+# bienvenue
+[Bienvenue] à Paris ! | به پاریس خوش آمدید!
+[Bienvenue] chez nous ! | به خانه‌ی ما خوش آمدید!
+[Bienvenue] en France ! | به فرانسه خوش آمدید!
+Bonjour et [bienvenue] ! | سلام و خوش آمدید!
+[Bienvenue] dans notre école ! | به مدرسه‌ی ما خوش آمدید!
+# de rien
+Merci beaucoup ! [De rien] ! | خیلی ممنون! خواهش می‌کنم! | d: Bonne nuit, Bonne idée, Bon voyage
+Merci pour le cadeau ! [De rien]. | ممنون بابت هدیه! قابلی ندارد. | d: Bonne nuit, Bon anniversaire, Bonne idée
+[De rien], madame. | خواهش می‌کنم، خانم. | d: Bonne nuit, Pardon, Bonjour
+Merci, Paul ! [De rien], Marie. | ممنون، پل! خواهش می‌کنم، ماری. | d: Bonne nuit, Pardon, Bon voyage
+Merci pour le café. [De rien]. | ممنون بابت قهوه. خواهش می‌کنم. | d: Bonne nuit, Bonne idée, À demain
+# allô
+[Allô], c'est Marie ? | الو، ماری هستی؟
+[Allô] ? Je ne t'entends pas. | الو؟ صدایت را نمی‌شنوم.
+[Allô], bonjour madame. | الو، سلام خانم.
+[Allô], papa ? C'est moi. | الو، بابا؟ منم.
+[Allô], qui est-ce ? | الو، شما؟
+# loin
+La gare est [loin] d'ici ? | ایستگاه از اینجا دور است؟
+J'habite [loin] de mon travail. | از محل کارم دور زندگی می‌کنم.
+L'école n'est pas [loin]. | مدرسه دور نیست.
+Le village est très [loin]. | روستا خیلی دور است.
+Mes parents habitent [loin]. | پدر و مادرم دور زندگی می‌کنند.
+# près
+J'habite [près] de la gare. | نزدیک ایستگاه زندگی می‌کنم.
+La pharmacie est tout [près]. | داروخانه همین نزدیکی است.
+Il y a un parc [près] de chez moi. | نزدیک خانه‌ام یک پارک هست.
+Le restaurant est [près] d'ici. | رستوران نزدیک اینجاست.
+L'hôtel est très [près] de la mer. | هتل خیلی به دریا نزدیک است.
+# là-bas
+Regarde [là-bas] ! | آنجا را نگاه کن!
+Le musée est [là-bas]. | موزه آنجاست.
+Tu vois la maison [là-bas] ? | آن خانه را آنجا می‌بینی؟
+J'ai des amis [là-bas]. | آنجا دوستانی دارم.
+On va [là-bas] demain ? | فردا برویم آنجا؟
+# devant
+Je t'attends [devant] la gare. | جلوی ایستگاه منتظرت هستم.
+La voiture est [devant] la maison. | ماشین جلوی خانه است.
+Il y a un arbre [devant] l'école. | جلوی مدرسه یک درخت هست.
+Les enfants jouent [devant] l'immeuble. | بچه‌ها جلوی ساختمان بازی می‌کنند.
+Ne reste pas [devant] la télé toute la journée ! | تمام روز جلوی تلویزیون نمان!
+# derrière
+Le jardin est [derrière] la maison. | باغ پشت خانه است.
+Le chat est [derrière] le canapé. | گربه پشت کاناپه است.
+Il y a un parc [derrière] l'hôpital. | پشت بیمارستان یک پارک هست.
+Qui est [derrière] la porte ? | پشت در کیست؟
+Mon école est [derrière] la poste. | مدرسه‌ام پشت اداره‌ی پست است.
+# entre
+La banque est [entre] la poste et la pharmacie. | بانک بین اداره‌ی پست و داروخانه است.
+Je viens [entre] midi et deux heures. | بین ظهر و ساعت دو می‌آیم.
+Le chat dort [entre] mes pieds. | گربه بین پاهایم می‌خوابد.
+Ma maison est [entre] le parc et l'école. | خانه‌ام بین پارک و مدرسه است.
+Le magasin est ouvert [entre] neuf heures et midi. | مغازه از ساعت نه تا ظهر باز است.
+# à côté de
+La boulangerie est [à côté de] la banque. | نانوایی کنار بانک است.
+J'habite [à côté de] l'école. | کنار مدرسه زندگی می‌کنم.
+Il y a un café [à côté de] la gare. | کنار ایستگاه یک کافه هست.
+Le chat dort [à côté de] moi. | گربه کنار من می‌خوابد.
+Mets la lampe [à côté de] la télé. | چراغ را کنار تلویزیون بگذار.
+# en face de
+La pharmacie est [en face de] la gare. | داروخانه روبه‌روی ایستگاه است.
+Il y a un parc [en face de] l'hôpital. | روبه‌روی بیمارستان یک پارک هست.
+Je t'attends [en face de] la banque. | روبه‌روی بانک منتظرت هستم.
+Mon bureau est [en face de] la piscine. | دفترم روبه‌روی استخر است.
+L'hôtel est [en face de] la mer. | هتل روبه‌روی دریاست.
+# droite
+La banque est à [droite]. | بانک سمت راست است.
+Je mange avec la main [droite]. | با دست راست غذا می‌خورم.
+La gare est sur votre [droite]. | ایستگاه سمت راست شماست.
+Le musée est à [droite] de la poste. | موزه سمت راست اداره‌ی پست است.
+Prends la deuxième rue à [droite]. | خیابان دوم سمت راست را برو.
+# gauche
+La pharmacie est à [gauche]. | داروخانه سمت چپ است.
+J'écris avec la main [gauche]. | با دست چپ می‌نویسم.
+Prends la première rue à [gauche]. | خیابان اول سمت چپ را برو.
+L'école est sur votre [gauche]. | مدرسه سمت چپ شماست.
+Le chat dort à [gauche] du{du-contr} canapé. | گربه سمت چپ کاناپه می‌خوابد. | d: droite, table, place
+# tout droit
+Allez [tout droit], s'il vous plaît. | لطفاً مستقیم بروید.
+Pour la gare, c'est [tout droit]. | ایستگاه همین‌طور مستقیم است.
+Va [tout droit] et prends la deuxième rue à gauche. | مستقیم برو و خیابان دوم سمت چپ را برو.
+Continuez [tout droit] pendant cinq minutes. | پنج دقیقه مستقیم ادامه بدهید.
+Le musée ? C'est [tout droit], à cinq minutes. | موزه؟ مستقیم است، پنج دقیقه راه.
+# tourner
+[Tournez] à gauche, s'il vous plaît. | لطفاً به چپ بپیچید.
+Au parc, tu [tournes] à droite. | سر پارک به راست می‌پیچی.
+Je [tourne] à droite après la banque. | بعد از بانک به راست می‌پیچم.
+Ensuite, nous [tournons] à gauche. | بعد به چپ می‌پیچیم.
+Le bus [tourne] devant la gare. | اتوبوس جلوی ایستگاه می‌پیچد.
+La voiture a [tourné] dans la petite rue. | ماشین توی خیابان کوچک پیچید.

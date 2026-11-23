@@ -2,16 +2,18 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import * as frenchVerbs from "french-verbs";
 import type { VerbsInfo as FrenchVerbs } from "french-verbs-lefff";
-import { fold } from "@/engine/tokens";
+import { fold, splitPieces } from "@/engine/tokens";
 import { isCardRegister } from "@/engine/content";
 import { levelRank } from "../languages";
 import { germanVerb } from "../german-verbs";
+import { closedForms } from "./closed";
 import { bareLemma, germanAdjectiveForms, type Morph } from "./morph";
 import type { PackWord } from "./words";
 
 /**
  * The three wrong options of a word's gap (W3b, PRD §5.5), when the author gives none:
  * - a verb in a conjugated form: other forms of the same verb (the P-S rule), with its infinitive as hint;
+ * - a verb phrase in a conjugated form: the phrase with other forms of its verb, with the phrase as hint;
  * - any other word: other words of the same part of speech and topic, in the same form (same gender and
  *   number for a noun, the same ending for an adjective), so only the meaning tells them apart. Words the
  *   learner met before come first. Never a word of the same concept (a second right answer), never a
@@ -55,8 +57,18 @@ export function verbFormGroups(language: string, lemma: string, root = process.c
   return groups.map((group) => ({ ...group, forms: group.forms.filter(Boolean) }));
 }
 
-/** Other forms of the same verb that are wrong where this form stands. */
-export function verbDistractors(language: string, lemma: string, surface: string, root = process.cwd()): string[] {
+const PARTICIPLES = ["PARTICIPE", "PA2"];
+const NOT_FINITE = [...PARTICIPLES, "INFINITIF", "INF"];
+const AUXILIARIES: Record<string, string[]> = { fr: ["avoir", "être"], de: ["haben", "sein", "werden"] };
+
+/** Is this word a form of an auxiliary (ai, est, habe, bin)? Then a participle may follow. */
+export const isAuxiliary = (morph: Morph, surface: string) => morph.candidates(surface).some((candidate) => (AUXILIARIES[morph.language] ?? []).includes(candidate.word.word.lemma));
+
+/**
+ * Other forms of the same verb that are wrong where this form stands. A form that is both finite and a
+ * participle («fait», «gemacht» is not) is read as a participle only after an auxiliary.
+ */
+export function verbDistractors(language: string, lemma: string, surface: string, root = process.cwd(), afterAuxiliary?: boolean): string[] {
   const groups = verbFormGroups(language, lemma, root);
   const right = fold(surface);
   const holding = groups.filter((group) => group.forms.some((form) => fold(form) === right));
@@ -65,7 +77,8 @@ export function verbDistractors(language: string, lemma: string, surface: string
   const push = (form: string | undefined) => {
     if (form && fold(form) !== right && !out.some((item) => fold(item) === fold(form))) out.push(form);
   };
-  const participle = holding.some((group) => group.name === "PARTICIPE" || group.name === "PA2");
+  const finite = holding.some((group) => !NOT_FINITE.includes(group.name));
+  const participle = holding.some((group) => PARTICIPLES.includes(group.name)) && (afterAuxiliary ?? !finite);
   if (participle) {
     // After an auxiliary: the infinitive and finite forms are wrong, other agreements may not be.
     const present = groups.find((group) => group.name === "PRESENT" || group.name === "PRÄ")?.forms ?? [];
@@ -77,11 +90,57 @@ export function verbDistractors(language: string, lemma: string, surface: string
     return out.slice(0, 3);
   }
   // Other persons of the same tense first, then the same person in another tense.
-  const main = holding[0];
+  const main = holding.find((group) => !NOT_FINITE.includes(group.name)) ?? holding[0];
   const persons = main.forms.map((form, index) => (fold(form) === right ? index : -1)).filter((index) => index >= 0);
   for (const form of main.forms) push(form);
   for (const group of groups) if (group !== main && group.forms.length === 6) for (const index of persons) push(group.forms[index]);
   return out.slice(0, 3);
+}
+
+/**
+ * A verb phrase in a conjugated form (suis d'accord, habe Hunger): the same phrase with other forms of
+ * its verb (es d'accord, est d'accord, sommes d'accord), so only the person tells them apart.
+ */
+export function phraseDistractors(morph: Morph, words: PackWord[], target: PackWord, surface: string, afterAuxiliary = false): string[] {
+  const verbs = (target.word.parts ?? []).map((code) => codesOf(words).get(code)).filter((item): item is PackWord => item?.word.pos === "verb");
+  for (const piece of splitPieces(surface)) {
+    const verb = verbs.find((item) => morph.candidates(piece.text).some((candidate) => candidate.word === item));
+    if (!verb) continue;
+    const capital = piece.start === 0 && /^\p{Lu}/u.test(surface);
+    return verbDistractors(morph.language, verb.word.lemma, piece.text, undefined, piece.start === 0 ? afterAuxiliary : isAuxiliary(morph, surface.slice(0, piece.start).trim().split(/\s+/).pop() ?? "")).map((form) => {
+      const written = capital ? form.charAt(0).toUpperCase() + form.slice(1) : form;
+      return `${surface.slice(0, piece.start)}${written}${surface.slice(piece.end)}`;
+    });
+  }
+  return [];
+}
+
+/** Pieces of a Persian meaning, without the notes in brackets: «خواستن (مؤدبانه)، میل داشتن» → خواستن, میل داشتن. */
+const meaningPieces = (meaning: string) =>
+  meaning
+    .replace(/\([^)]*\)/gu, " ")
+    .split(/[،,;؛]/u)
+    .map((piece) => piece.replace(/[\s\u200c]+/gu, " ").trim())
+    .filter(Boolean);
+
+/**
+ * Two meanings that are near enough for both words to fit the gap: one piece the same as a piece of the
+ * other, or a piece of two words or more inside it (دوست داشتن, خیلی دوست داشتن), or an infinitive and its
+ * compound (خریدن, خرید کردن).
+ */
+export function nearMeaning(a: string, b: string) {
+  // Containment needs two words at least: «چه» is inside «چه کسی» (que, qui), yet the two are not near.
+  const inside = (x: string, y: string) => x === y || (y.includes(" ") && ` ${x} `.includes(` ${y} `));
+  const stem = (x: string, y: string) => !x.includes(" ") && x.endsWith("ن") && y.split(" ")[0] === x.slice(0, -1);
+  return meaningPieces(a).some((x) => meaningPieces(b).some((y) => inside(x, y) || inside(y, x) || stem(x, y) || stem(y, x)));
+}
+
+const byCode = new WeakMap<PackWord[], Map<string, PackWord>>();
+/** The words of a list by code, made once per list. */
+function codesOf(words: PackWord[]) {
+  let map = byCode.get(words);
+  if (!map) byCode.set(words, (map = new Map(words.map((item) => [item.word.code, item]))));
+  return map;
 }
 
 const hash = (text: string) => {
@@ -91,14 +150,16 @@ const hash = (text: string) => {
 };
 
 const VOWEL = /^[aeiouyàâäéèêëîïôöùûüœæh]/iu;
+const capital = (form: string) => form.charAt(0).toUpperCase() + form.slice(1);
 
 /** The gap's surroundings that limit which forms fit. */
 export type GapContext = {
   sentence: string;
   /** Words of the sentence (they are never wrong options). */
   used: Set<PackWord>;
-  /** The token right before the gap. */
+  /** The tokens right before and after the gap. */
   before: string | null;
+  after?: string | null;
   /** Is the gap the first word of the sentence (a capital)? */
   first: boolean;
   /** The order a learner meets words in: candidates met before the target come first. */
@@ -143,13 +204,29 @@ function matchingForm(morph: Morph, language: string, target: PackWord, surface:
 export function autoDistractors(morph: Morph, words: PackWord[], target: PackWord, surface: string, context: GapContext): { options: string[]; hint: string | null } | { error: string } {
   const language = morph.language;
   const word = target.word;
-  if (word.pos === "verb" && fold(surface) !== fold(word.lemma)) {
-    const options = verbDistractors(language, word.lemma, surface);
+  // German wir/sie/Sie forms are the infinitive: next to such a pronoun the gap is finite (Wir [haben] …, Was [möchten] Sie …).
+  const finiteInfinitive = language === "de" && [context.before, context.after].some((token) => token !== null && token !== undefined && /^(wir|sie)$/u.test(fold(token)));
+  if (word.pos === "verb" && (fold(surface) !== fold(word.lemma) || finiteInfinitive)) {
+    const options = verbDistractors(language, word.lemma, surface, undefined, context.before ? isAuxiliary(morph, context.before) : false);
     if (options.length < 3) return { error: `cannot make three other forms of «${word.lemma}» for «${surface}»: write d: a, b, c` };
-    return { options, hint: `(${bareLemma(word.lemma)})` };
+    return { options: context.first ? options.map(capital) : options, hint: `(${bareLemma(word.lemma)})` };
+  }
+  if (word.pos === "phrase" && fold(surface) !== fold(word.lemma)) {
+    const options = phraseDistractors(morph, words, target, surface, context.before ? isAuxiliary(morph, context.before) : false);
+    if (options.length < 3) return { error: `cannot make three other forms of «${word.lemma}» for «${surface}»: write d: a, b, c` };
+    return { options, hint: `(${word.lemma})` };
+  }
+  // A function word with forms (quel, quelle, quels, quelles; tout, toute, tous, toutes): its other forms.
+  if (word.pos === "det" || word.pos === "pron") {
+    const others = closedForms(language, word.lemma).filter((form) => fold(form) !== fold(surface));
+    if (others.length >= 3) return { options: others.slice(0, 3).map((form) => (context.first ? capital(form) : form)), hint: null };
   }
   const homophones = new Set([...word.homophones.map(fold), fold(word.lemma)]);
   const right = fold(surface);
+  // A phrase with a verb (faire les courses) and one without (merci beaucoup) are never each other's options.
+  const codes = codesOf(words);
+  const verbPhrase = (item: PackWord) => (item.word.parts ?? []).some((code) => codes.get(code)?.word.pos === "verb");
+  const targetVerbPhrase = word.pos === "phrase" && verbPhrase(target);
   const before = context.before ? fold(context.before) : null;
   const pool: { item: PackWord; form: string; tier: number; key: number }[] = [];
   for (const item of words) {
@@ -157,8 +234,9 @@ export function autoDistractors(morph: Morph, words: PackWord[], target: PackWor
     if (item === target || other.pos !== word.pos || other.no_card || !isCardRegister(other.register)) continue;
     if (levelRank(item.level) > levelRank(context.level) || context.used.has(item)) continue;
     if (other.concept_fa === word.concept_fa || fold(other.lemma) === fold(word.lemma) || homophones.has(fold(other.lemma)) || other.homophones.map(fold).includes(fold(word.lemma))) continue;
+    if (nearMeaning(other.meaning_fa, word.meaning_fa)) continue;
     if (word.pos === "noun" && other.gender !== word.gender) continue;
-    if (word.pos === "phrase" && other.pos !== "phrase") continue;
+    if (word.pos === "phrase" && (other.pos !== "phrase" || verbPhrase(item) !== targetVerbPhrase)) continue;
     let form = matchingForm(morph, language, target, surface, item);
     if (!form || fold(form) === right) continue;
     // French elision: after l', d', qu' only a vowel or h; after le, de, que, je only a consonant.
@@ -166,7 +244,7 @@ export function autoDistractors(morph: Morph, words: PackWord[], target: PackWor
       if (/'$/.test(before) && !VOWEL.test(form)) continue;
       if (/^(le|la|de|ce|je|me|te|se|ne|que|si)$/.test(before) && VOWEL.test(form)) continue;
     }
-    if (context.first) form = form.charAt(0).toUpperCase() + form.slice(1);
+    if (context.first) form = capital(form);
     const sameTopic = item.topic === target.topic;
     const known = context.knownBefore(item);
     const tier = sameTopic && known ? 0 : sameTopic ? 1 : known ? 2 : 3;

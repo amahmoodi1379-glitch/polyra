@@ -77,7 +77,21 @@ export type Scope = {
   firstWords?: Set<PackWord>;
 };
 
-type Unit = { surface: string; start: number; end: number; pieces: number };
+/** A word of the text; a phrase of the lists that the analyzer joined carries its word (`phrase`). */
+type Unit = { surface: string; start: number; end: number; pieces: number; phrase?: PackWord };
+
+/**
+ * A phrase of the lists, as folded pieces of its lemma. `verb` is the piece that is a verb of its parts
+ * (avoir faim, être d'accord, Hunger haben, es gibt): that piece may stand in any form of the verb.
+ */
+type Phrase = { word: PackWord; pieces: string[]; verb: { index: number; word: PackWord } | null; plural: string[] | null };
+
+/** French elided words and the pieces of a lemma they stand for: «besoin d'eau» is «besoin de». */
+const ELIDED: Record<string, string[]> = { d: ["de"], l: ["le", "la"], qu: ["que"], j: ["je"], m: ["me"], t: ["te"], s: ["se", "si"], n: ["ne"], c: ["ce"] };
+/** Words that may stand between a phrase's verb and the rest of it in one clause (hast du morgen Zeit, n'ai pas faim). */
+const SPLIT_GAP = 4;
+const CLAUSE_END = /[.,;:!?]/;
+const foldedPieces = (text: string) => splitPieces(text).map((piece) => fold(piece.text));
 
 /** Pieces of the text grouped into words: French elided forms keep their apostrophe (l', qu'). */
 function units(text: string, language: string): Unit[] {
@@ -94,7 +108,7 @@ const sentenceStart = (text: string, at: number) => /^[\s"«„“(¿¡-]*$/u.te
 
 export class Analyzer {
   private byCode: Map<string, PackWord>;
-  private phrases: { word: PackWord; pieces: string[] }[];
+  private phrases: Phrase[];
 
   constructor(
     readonly language: string,
@@ -104,13 +118,80 @@ export class Analyzer {
   ) {
     this.byCode = new Map(words.map((item) => [item.word.code, item]));
     this.phrases = words
-      .map((item) => ({ word: item, pieces: splitPieces(item.word.lemma).map((piece) => fold(piece.text)) }))
+      .map((item) => ({ word: item, pieces: foldedPieces(item.word.lemma), verb: null as Phrase["verb"], plural: item.word.plural && foldedPieces(item.word.plural).length > 1 ? foldedPieces(item.word.plural) : null }))
       .filter((item) => item.pieces.length > 1)
+      .map((item) => ({ ...item, verb: this.phraseVerb(item.word, item.pieces) }))
       .sort((a, b) => b.pieces.length - a.pieces.length);
+  }
+
+  /** The piece of a phrase that is one of its parts' verbs, in its lemma or a form (es gibt: geben). */
+  private phraseVerb(item: PackWord, pieces: string[]): Phrase["verb"] {
+    const verbs = (item.word.parts ?? []).map((code) => this.byCode.get(code)).filter((part): part is PackWord => part?.word.pos === "verb");
+    for (const [index, piece] of pieces.entries()) {
+      const verb = verbs.find((part) => fold(bareLemma(part.word.lemma)) === piece || this.morph.candidates(piece).some((candidate) => candidate.word === part));
+      if (verb) return { index, word: verb };
+    }
+    return null;
+  }
+
+  /** Does this word of the text stand for piece `k` of the phrase? */
+  private pieceMatches(phrase: Phrase, k: number, unit: Unit) {
+    const surface = fold(unit.surface.replace(APOSTROPHE, ""));
+    const piece = phrase.pieces[k];
+    if (surface === piece) return true;
+    if (APOSTROPHE.test(unit.surface) && (ELIDED[surface] ?? []).includes(piece)) return true;
+    // A verb is never an elided piece (Lexique lists «n'» under avoir).
+    return phrase.verb?.index === k && !APOSTROPHE.test(unit.surface) && this.morph.candidates(unit.surface).some((candidate) => candidate.word === phrase.verb!.word);
+  }
+
+  /**
+   * Where the phrase stands at word `i`: its pieces in the lemma's order (suis d'accord, ai besoin d'), or
+   * its verb first (German: habe Hunger, gibt es), or its verb here and the rest later in the same clause
+   * (hast du morgen Zeit, n'ai pas faim: `split`). Returns the indexes of the words it takes.
+   */
+  private phraseAt(phrase: Phrase, list: Unit[], i: number, text: string): { at: number[]; split: boolean } | null {
+    const n = phrase.pieces.length;
+    const range = (from: number, count: number) => Array.from({ length: count }, (_, k) => from + k);
+    const fits = (indexes: number[], order: number[]) => indexes.length === order.length && indexes.every((index, k) => index < list.length && this.pieceMatches(phrase, order[k], list[index]));
+    const lemmaOrder = range(0, n);
+    if (fits(range(i, n), lemmaOrder)) return { at: range(i, n), split: false };
+    // A noun of several words in the plural (pommes de terre).
+    const plural = phrase.plural;
+    if (plural && plural.every((piece, k) => i + k < list.length && fold(list[i + k].surface.replace(APOSTROPHE, "")) === piece)) return { at: range(i, plural.length), split: false };
+    const verb = phrase.verb;
+    if (!verb) return null;
+    const rest = lemmaOrder.filter((k) => k !== verb.index);
+    if (!this.pieceMatches(phrase, verb.index, list[i])) return null;
+    if (this.language === "de" && verb.index > 0 && fits(range(i + 1, n - 1), rest)) return { at: range(i, n), split: false };
+    // The verb first, the rest later in the clause: French verbs lead their phrase, German finite verbs too.
+    if (verb.index === 0 || this.language === "de") {
+      for (let j = i + 2; j <= i + 1 + SPLIT_GAP && j + rest.length <= list.length; j++) {
+        if (CLAUSE_END.test(text.slice(list[j - 1].end, list[j].start))) break;
+        if (fits(range(j, rest.length), rest)) {
+          const between = text.slice(list[j].start, list[j + rest.length - 1].end);
+          if (!CLAUSE_END.test(between)) return { at: [i, ...range(j, rest.length)], split: true };
+        }
+      }
+    }
+    return null;
   }
 
   word(code: string) {
     return this.byCode.get(code);
+  }
+
+  /** Is this surface in names.txt (an apostrophe may be left out)? */
+  private listedName(surface: string): boolean {
+    return this.names.has(surface) || this.names.has(surface.replace(APOSTROPHE, ""));
+  }
+
+  /**
+   * A capitalised name of names.txt is the name, not a word form that only looks like it
+   * (Wien is not «wie», Paris not «pari», Marie not «se marier»). A word written exactly so wins.
+   */
+  private isName(surface: string, candidates: Candidate[]): boolean {
+    if (!/^\p{Lu}/u.test(surface) || !this.listedName(surface)) return false;
+    return !candidates.some((candidate) => candidate.word.word.lemma === surface || candidate.word.word.plural === surface);
   }
 
   /** May this word appear in a sentence of this scope? */
@@ -138,22 +219,39 @@ export class Analyzer {
     // Phrases and hyphenated words of the lists (peut-être, il y a, es gibt) take their pieces together
     // when the phrase is one a learner of this scope knows, or the gap is exactly the phrase.
     const merged: Unit[] = [];
+    const taken = new Set<number>();
     for (let i = 0; i < list.length; i++) {
-      const hit = this.phrases.find((phrase) => {
-        if (!this.allowed(phrase.word, scope)) return false;
-        const run = list.slice(i, i + phrase.pieces.length);
-        if (run.length < phrase.pieces.length || run.some((unit, k) => fold(unit.surface.replace(APOSTROPHE, "")) !== phrase.pieces[k])) return false;
+      if (taken.has(i)) continue;
+      let hit: { phrase: Phrase; at: number[]; split: boolean } | null = null;
+      for (const phrase of this.phrases) {
+        if (!this.allowed(phrase.word, scope)) continue;
+        const found = this.phraseAt(phrase, list, i, text);
+        if (!found || found.at.some((index) => taken.has(index))) continue;
+        const run = found.at.map((index) => list[index]);
+        const first = run[0];
+        const last = run[run.length - 1];
         const hyphenated = phrase.word.word.lemma.includes("-");
-        const gap = gaps.find((item) => item.start <= run[0].start && item.end >= run[run.length - 1].end);
-        const wholeGap = gap && gap.start === run[0].start && gap.end === run[run.length - 1].end;
-        const cutGap = gaps.some((item) => item.start > run[0].start && item.start < run[run.length - 1].end) || (gap && !wholeGap);
-        if (cutGap) return false;
-        return hyphenated || wholeGap || this.knownBefore(phrase.word, scope);
-      });
+        // A gap that takes part of the phrase, or the phrase and more: then the pieces stay words.
+        const holding = gaps.find((item) => item.start <= first.start && item.end >= last.end);
+        const wholeGap = !found.split && holding && holding.start === first.start && holding.end === last.end;
+        const overlaps = gaps.some((item) => item.start < last.end && item.end > first.start);
+        if (overlaps && !wholeGap) continue;
+        if (hyphenated || wholeGap || this.knownBefore(phrase.word, scope)) {
+          hit = { phrase, ...found };
+          break;
+        }
+      }
       if (hit) {
-        const run = list.slice(i, i + hit.pieces.length);
-        merged.push({ surface: text.slice(run[0].start, run[run.length - 1].end), start: run[0].start, end: run[run.length - 1].end, pieces: hit.pieces.length });
-        i += hit.pieces.length - 1;
+        const run = hit.at.map((index) => list[index]);
+        for (const index of hit.at) taken.add(index);
+        if (hit.split) {
+          // Like a separable verb: «hast ... Zeit», at the verb's place.
+          const rest = run.slice(1);
+          const restText = text.slice(rest[0].start, rest[rest.length - 1].end);
+          merged.push({ surface: `${run[0].surface} ... ${restText}`, start: run[0].start, end: run[0].end, pieces: run.length, phrase: hit.phrase.word });
+        } else {
+          merged.push({ surface: text.slice(run[0].start, run[run.length - 1].end), start: run[0].start, end: run[run.length - 1].end, pieces: run.length, phrase: hit.phrase.word });
+        }
       } else merged.push(list[i]);
     }
     list = merged;
@@ -167,7 +265,7 @@ export class Analyzer {
     const unknown = new Map<number, string>();
     const candidatesOf: Candidate[][] = [];
     for (const unit of list) {
-      const all = this.morph.candidates(unit.surface).filter((candidate) => this.allowed(candidate.word, scope));
+      const all = unit.phrase ? [{ word: unit.phrase, score: 10, via: "lemma" as const }] : this.morph.candidates(unit.surface).filter((candidate) => this.allowed(candidate.word, scope));
       candidatesOf.push(all);
     }
 
@@ -185,6 +283,9 @@ export class Analyzer {
         chosen = this.byCode.get(forced) ?? null;
         if (!chosen) errors.push(`{${forced}}: no word of the lists has this code`);
         else if (!this.allowed(chosen, scope)) errors.push(`{${forced}} is of level ${chosen.level}, above ${scope.level}`);
+      } else if (this.isName(unit.surface, candidates)) {
+        tokens.push({ ...base, kind: "name", code: null, meaning_fa: null, word: null });
+        continue;
       } else {
         // The gap of a word's own sentence is that word when it can be.
         if (inGap !== null && scope.target && candidates.some((candidate) => candidate.word === scope.target)) chosen = scope.target;
@@ -201,7 +302,7 @@ export class Analyzer {
       }
       if (!chosen) {
         const capital = /^\p{Lu}/u.test(unit.surface);
-        if (capital && (this.names.has(unit.surface) || this.names.has(unit.surface.replace(APOSTROPHE, "")))) {
+        if (capital && this.listedName(unit.surface)) {
           tokens.push({ ...base, kind: "name", code: null, meaning_fa: null, word: null });
           continue;
         }

@@ -1,0 +1,611 @@
+// German A1, card words 434–533 (travel, work, school, body and health, clothes), in teaching order.
+# umsteigen
+Wir müssen in Köln [umsteigen]. | باید در کلن قطار عوض کنیم.
+Muss ich in Frankfurt [umsteigen]? | باید در فرانکفورت قطار عوض کنم؟
+Ich bin in Hamburg [umgestiegen]. | در هامبورگ قطار عوض کردم.
+Mit der U-Bahn musst du nicht [umsteigen]. | با مترو لازم نیست خط عوض کنی.
+Wo muss ich [umsteigen]? | کجا باید خط عوض کنم؟
+# Abfahrt
+Die [Abfahrt] ist um 8 Uhr. | حرکت ساعت هشت است.
+Wann ist die [Abfahrt]? | ساعت حرکت کی است؟
+Die [Abfahrt] vom Bahnhof ist um 10 Uhr. | حرکت از ایستگاه قطار ساعت ده است.
+Wir haben noch 20 Minuten bis zur [Abfahrt]. | تا حرکت هنوز بیست دقیقه وقت داریم.
+Die [Abfahrt] ist heute später. | حرکت امروز دیرتر است.
+# Ankunft
+Die [Ankunft] ist um 18 Uhr. | ساعت رسیدن هجده است.
+Wann ist die [Ankunft] in Berlin? | زمان رسیدن به برلین کی است؟
+Die [Ankunft] am Flughafen ist um 6 Uhr. | ساعت رسیدن به فرودگاه شش است.
+Wir warten auf die [Ankunft] von Oma. | منتظر رسیدن مادربزرگ هستیم.
+Die [Ankunft] ist heute früher. | رسیدن امروز زودتر است.
+# schnell
+Der Zug ist sehr [schnell]. | قطار خیلی سریع است.
+Du sprichst zu{zu-adv} [schnell]! | تو زیادی تند حرف می‌زنی!
+Das Taxi ist [schnell], aber teuer. | تاکسی سریع است، اما گران.
+Komm [schnell]! Der Bus kommt! | زود بیا! اتوبوس دارد می‌آید!
+Mein Bruder fährt sehr [schnell]. | برادرم خیلی تند رانندگی می‌کند.
+Das ist ein [schneller] Zug. | این یک قطار سریع است.
+# langsam
+Bitte sprechen Sie [langsam]. | لطفاً آهسته صحبت کنید.
+Der Bus ist sehr [langsam]. | اتوبوس خیلی کند است.
+Oma geht [langsam]. | مادربزرگ آهسته راه می‌رود.
+Fahr bitte [langsam]! | لطفاً آهسته رانندگی کن!
+Wir gehen [langsam] nach Hause. | آهسته به خانه می‌رویم.
+# Reise
+Die [Reise] nach Teheran dauert 5 Stunden. | سفر به تهران پنج ساعت طول می‌کشد.
+Wie war die [Reise]? | سفر چطور بود؟
+Die [Reise] mit dem Zug ist schön. | سفر با قطار قشنگ است.
+Eine [Reise] nach Wien ist nicht teuer. | سفر به وین گران نیست.
+Ich kaufe Wasser für die [Reise]. | برای سفر آب می‌خرم.
+# eine Reise machen
+Wir möchten im Sommer [eine Reise machen]. | می‌خواهیم تابستان سفر برویم.
+Meine Eltern [machen eine Reise] nach Wien. | پدر و مادرم به وین سفر می‌روند.
+Ich [mache eine Reise] mit meiner Familie. | با خانواده‌ام سفر می‌روم.
+Kannst du im Herbst [eine Reise machen]? | می‌توانی پاییز سفر بروی؟
+Oma will noch einmal [eine Reise machen]. | مادربزرگ می‌خواهد یک بار دیگر سفر برود.
+# reisen
+Ich [reise] gern. | سفر کردن را دوست دارم.
+Ich [reise] im Sommer nach Österreich. | تابستان به اتریش سفر می‌کنم.
+Mein Opa [reist] viel. | پدربزرگم زیاد سفر می‌کند.
+Mit dem Zug kann man gut [reisen]. | با قطار می‌شود خوب سفر کرد. | d: fliegen, schlafen, lesen
+Du [reist] allein? | تنهایی سفر می‌کنی؟
+# Urlaub
+Wir sind im [Urlaub]. | ما در تعطیلات هستیم.
+Ich habe im August [Urlaub]. | من در اوت مرخصی دارم.
+Wie war dein [Urlaub]? | تعطیلاتت چطور بود؟
+Im [Urlaub] schlafe ich viel. | در تعطیلات زیاد می‌خوابم.
+Wir fahren in den [Urlaub]. | ما به تعطیلات می‌رویم.
+# Urlaub machen
+Wir wollen im Sommer [Urlaub machen]. | می‌خواهیم تابستان به تعطیلات برویم.
+Wir [machen Urlaub] in Österreich. | ما در اتریش تعطیلات را می‌گذرانیم.
+Meine Eltern [machen Urlaub] in der Schweiz. | پدر و مادرم در سوئیس تعطیلات را می‌گذرانند.
+Ich kann dieses Jahr nicht [Urlaub machen]. | امسال نمی‌توانم به تعطیلات بروم.
+Wo möchtest du [Urlaub machen]? | کجا می‌خواهی به تعطیلات بروی؟
+# Ferien
+Die Kinder haben jetzt [Ferien]. | بچه‌ها الان تعطیلات دارند. | d: Pausen, Prüfungen, Reisen
+In den [Ferien] fahren wir zu Oma. | در تعطیلات پیش مادربزرگ می‌رویم. | d: Pausen, Prüfungen, Reisen
+Die [Ferien] beginnen im Juli. | تعطیلات در ژوئیه شروع می‌شود. | d: Pausen, Prüfungen, Reisen
+Wir haben im Sommer sechs Wochen [Ferien]. | تابستان شش هفته تعطیلات داریم. | d: Pausen, Prüfungen, Reisen
+Schöne [Ferien]! | تعطیلات خوبی داشته باشی! | d: Pausen, Prüfungen, Reisen
+# Koffer
+Mein [Koffer] ist zu{zu-adv} groß. | چمدانم زیادی بزرگ است.
+Wo ist mein [Koffer]? | چمدانم کجاست؟
+Ich brauche einen neuen [Koffer] für die Reise. | برای سفر یک چمدان نو لازم دارم.
+Der [Koffer] ist noch im Auto. | چمدان هنوز در ماشین است.
+Der kleine [Koffer] ist für das Kind. | چمدان کوچک مال بچه است.
+# Pass
+Hier ist mein [Pass]. | این گذرنامه‌ام است.
+Haben Sie Ihren [Pass]? | گذرنامه‌تان را دارید؟
+Ich finde meinen [Pass] nicht! | گذرنامه‌ام را پیدا نمی‌کنم!
+Der [Pass] ist im Koffer. | گذرنامه در چمدان است.
+Für die Reise brauche ich einen neuen [Pass]. | برای سفر یک گذرنامه نو لازم دارم.
+# Meer
+Wir fahren im Sommer ans [Meer]. | تابستان به کنار دریا می‌رویم.
+Das [Meer] ist heute sehr schön. | دریا امروز خیلی قشنگ است.
+Das Hotel ist nah am [Meer]. | هتل نزدیک دریاست.
+Hamburg ist nicht weit vom [Meer]. | هامبورگ از دریا دور نیست.
+Die Kinder spielen am [Meer]. | بچه‌ها کنار دریا بازی می‌کنند.
+# gute Reise
+[Gute Reise] und bis bald! | سفر بخیر و به امید دیدار! | d: Gute Nacht, Guten Appetit, Herzlichen Glückwunsch
+Du fährst morgen nach Berlin? [Gute Reise]! | فردا به برلین می‌روی؟ سفر بخیر! | d: Gute Nacht, Guten Appetit, Herzlichen Glückwunsch
+Tschüss, Mama, [gute Reise]! | خداحافظ مامان، سفر بخیر! | d: gute Nacht, guten Appetit, herzlichen Glückwunsch
+Auf Wiedersehen und [gute Reise]! | خداحافظ و سفر بخیر! | d: gute Nacht, guten Appetit, herzlichen Glückwunsch
+Der Zug fährt gleich ab. [Gute Reise]! | قطار الان حرکت می‌کند. سفر بخیر! | d: Gute Nacht, Guten Appetit, Herzlichen Glückwunsch
+# Beruf
+Was sind Sie von [Beruf]? | شغل شما چیست؟ | d: Chef, Kurs, Test
+Welchen [Beruf] hast du? | شغلت چیست؟ | d: Chef, Kurs, Test
+Mein [Beruf] ist schön, aber ich arbeite viel. | شغلم خوب است، اما زیاد کار می‌کنم. | d: Chef, Kurs, Test
+Viele Leute fragen nach meinem [Beruf]. | خیلی‌ها شغلم را می‌پرسند. | d: Chef, Kurs, Test
+Der Name, die Adresse und der [Beruf], bitte. | اسم، نشانی و شغل، لطفاً. | d: Vorname, Kurs, Chef
+# Job
+Ich habe einen neuen [Job]. | یک کار جدید پیدا کرده‌ام. | d: Chef, Kurs, Termin
+Ich suche einen [Job]. | دنبال کار می‌گردم. | d: Chef, Kurs, Termin
+Mein Sohn hat einen [Job] im Supermarkt. | پسرم در سوپرمارکت کار می‌کند. | d: Chef, Kurs, Termin
+Am Wochenende hat sie einen [Job] im Café. | آخر هفته‌ها در کافه کار می‌کند. | d: Chef, Kurs, Termin
+Der [Job] ist schön, aber ich arbeite zu{zu-adv} viel. | کارش خوب است، ولی زیادی کار می‌کنم. | d: Chef, Kurs, Termin
+# Firma
+Ich arbeite bei einer [Firma] in Berlin. | در یک شرکت در برلین کار می‌کنم.
+Die [Firma] ist sehr groß. | شرکت خیلی بزرگ است.
+Mein Vater hat eine kleine [Firma]. | پدرم یک شرکت کوچک دارد.
+Die [Firma] ist im Zentrum. | شرکت در مرکز شهر است.
+Wie heißt deine [Firma]? | اسم شرکتت چیست؟
+# Büro
+Ich bin im [Büro]. | در دفتر کارم هستم.
+Mein [Büro] ist im Zentrum. | دفتر کارم در مرکز شهر است.
+Im [Büro] trinke ich viel Kaffee. | در دفتر کار زیاد قهوه می‌نوشم.
+Das [Büro] ist am Samstag geschlossen. | دفتر شنبه‌ها بسته است.
+Mein Vater fährt mit dem Bus ins [Büro]. | پدرم با اتوبوس به دفتر کارش می‌رود.
+Mein [Büro] hat ein großes Fenster. | دفتر کارم یک پنجره بزرگ دارد.
+# Chef
+Mein [Chef] ist nicht da. | رئیسم نیست.
+Der [Chef] ist im Büro. | رئیس در دفترش است.
+Ich muss mit dem [Chef] sprechen. | باید با رئیس صحبت کنم.
+Unser [Chef] kommt immer früh. | رئیس ما همیشه زود می‌آید.
+Wer ist hier der [Chef]? | این‌جا رئیس کیست؟
+Mein [Chef] gibt mir im August Urlaub. | رئیسم در اوت به من مرخصی می‌دهد.
+# Kollege
+Mein [Kollege] heißt Paul. | اسم همکارم پاول است.
+Mein [Kollege] wohnt neben mir. | همکارم کنار من زندگی می‌کند.
+Meine [Kollegen] trinken viel Kaffee. | همکارانم زیاد قهوه می‌نوشند.
+Ich esse mit meinen [Kollegen] zu Mittag. | با همکارانم ناهار می‌خورم.
+Das ist mein neuer [Kollege]. | این همکار جدید من است.
+Mein [Kollege] ist heute nicht im Büro. | همکارم امروز در دفتر نیست.
+# Kollegin
+Meine [Kollegin] kommt aus Wien. | همکارم اهل وین است.
+Die neue [Kollegin] heißt Sara. | همکار جدیدمان اسمش ساراست.
+Ich fahre mit meiner [Kollegin] zur Arbeit. | با همکارم سر کار می‌روم.
+Meine [Kollegin] hat heute Geburtstag. | امروز تولد همکارم است.
+Meine [Kollegin] spricht gut Englisch. | همکارم خوب انگلیسی حرف می‌زند.
+# Arzt
+Ich muss zum [Arzt]. | باید بروم دکتر.
+Mein Vater ist [Arzt]. | پدرم پزشک است.
+Der [Arzt] arbeitet im Krankenhaus. | پزشک در بیمارستان کار می‌کند.
+Wann kommt der [Arzt]? | دکتر کی می‌آید؟
+Ich habe heute einen Termin beim [Arzt]. | امروز پیش دکتر وقت دارم.
+In unserem Dorf gibt es keinen [Arzt]. | در روستای ما پزشک نیست.
+# Ärztin
+Meine Mutter ist [Ärztin]. | مادرم پزشک است.
+Die [Ärztin] ist sehr jung. | خانم دکتر خیلی جوان است.
+Ich gehe heute zur [Ärztin]. | امروز پیش خانم دکتر می‌روم.
+Die [Ärztin] spricht auch Persisch. | خانم دکتر فارسی هم صحبت می‌کند.
+Die [Ärztin] kommt um 10 Uhr. | خانم دکتر ساعت ده می‌آید.
+# Lehrer
+Mein [Lehrer] kommt aus Hamburg. | معلمم اهل هامبورگ است.
+Der [Lehrer] spricht langsam. | معلم آهسته صحبت می‌کند.
+Mein Vater ist [Lehrer]. | پدرم معلم است.
+Der [Lehrer] fragt, und wir antworten. | معلم می‌پرسد و ما جواب می‌دهیم.
+Ich frage den [Lehrer]. | از معلم می‌پرسم.
+# Lehrerin
+Meine [Lehrerin] heißt Laura. | اسم معلمم لائوراست.
+Die [Lehrerin] ist heute nicht da. | معلم امروز نیامده.
+Meine Mutter ist [Lehrerin] an einer Schule. | مادرم در یک مدرسه معلم است.
+Die neue [Lehrerin] ist sehr jung. | معلم جدید خیلی جوان است.
+Wir fragen die [Lehrerin]. | از معلم می‌پرسیم.
+# Student
+Ich bin [Student]. | من دانشجو هستم.
+Mein Bruder ist [Student] in Berlin. | برادرم در برلین دانشجوست.
+Der [Student] kommt aus Teheran. | این دانشجو اهل تهران است.
+Die [Studenten] essen im Café. | دانشجوها در کافه غذا می‌خورند.
+Viele [Studenten] wohnen im Zentrum. | خیلی از دانشجوها در مرکز شهر زندگی می‌کنند.
+# Studentin
+Meine Schwester ist [Studentin]. | خواهرم دانشجوست.
+Die [Studentin] lernt jeden Tag. | این دانشجو هر روز درس می‌خواند.
+Sara ist [Studentin] in München. | سارا در مونیخ دانشجوست.
+Die neue [Studentin] kommt aus Isfahan. | دانشجوی جدید اهل اصفهان است.
+Meine Freundin ist [Studentin] und arbeitet im Café. | دوستم دانشجوست و در کافه کار می‌کند.
+# Schüler
+Der [Schüler] lernt Deutsch. | دانش‌آموز آلمانی یاد می‌گیرد.
+Mein Sohn ist [Schüler]. | پسرم دانش‌آموز است.
+Der [Schüler] fragt den Lehrer. | دانش‌آموز از معلم می‌پرسد.
+Ein [Schüler] ist heute nicht da. | یک دانش‌آموز امروز نیامده.
+Der neue [Schüler] heißt Ben. | دانش‌آموز جدید اسمش بن است.
+# Schülerin
+Meine Tochter ist [Schülerin]. | دخترم دانش‌آموز است.
+Die [Schülerin] liest ein Buch. | دانش‌آموز کتاب می‌خواند.
+Die neue [Schülerin] kommt aus Wien. | دانش‌آموز جدید اهل وین است.
+Die [Schülerin] antwortet sehr gut. | دانش‌آموز خیلی خوب جواب می‌دهد.
+Mia ist zehn Jahre alt und [Schülerin]. | میا ده ساله و دانش‌آموز است.
+# Verkäufer
+Ich frage den [Verkäufer] nach dem Preis. | قیمت را از فروشنده می‌پرسم.
+Mein Bruder ist [Verkäufer] im Supermarkt. | برادرم در سوپرمارکت فروشنده است.
+Der [Verkäufer] sagt: Das kostet 10 Euro. | فروشنده می‌گوید: این ده یورو است.
+Wo ist der [Verkäufer]? | فروشنده کجاست؟
+Der [Verkäufer] arbeitet auch am Samstag. | فروشنده شنبه‌ها هم کار می‌کند.
+# Ingenieur
+Mein Vater ist [Ingenieur]. | پدرم مهندس است.
+Der [Ingenieur] arbeitet bei einer großen Firma. | این مهندس در یک شرکت بزرگ کار می‌کند.
+Ich bin [Ingenieur] von Beruf. | شغلم مهندسی است.
+Viele [Ingenieure] arbeiten in München. | مهندس‌های زیادی در مونیخ کار می‌کنند.
+Der [Ingenieur] kommt heute ins Büro. | مهندس امروز به دفتر می‌آید.
+# Kellner
+Der [Kellner] fragt: Was möchten Sie trinken? | گارسون می‌پرسد: چه می‌خواهید بنوشید؟
+Ich bin am Wochenende [Kellner] im Café. | آخر هفته‌ها در کافه گارسونم.
+Wo ist der [Kellner]? Wir möchten bezahlen. | گارسون کجاست؟ می‌خواهیم حساب کنیم.
+Der [Kellner] gibt uns die Speisekarte. | گارسون منو را به ما می‌دهد.
+Der junge [Kellner] spricht gut Englisch. | گارسون جوان خوب انگلیسی حرف می‌زند.
+# Koch
+Mein Onkel ist [Koch] in einem Restaurant. | عمویم در یک رستوران آشپز است.
+Der [Koch] macht eine Suppe. | آشپز سوپ درست می‌کند.
+Der neue [Koch] kocht sehr lecker. | آشپز جدید خیلی خوشمزه می‌پزد.
+In der Küche arbeiten drei [Köche]. | در آشپزخانه سه آشپز کار می‌کنند.
+Mein Vater ist ein guter [Koch]. | پدرم آشپز خوبی است.
+# Kurs
+Der [Kurs] beginnt um 9 Uhr. | کلاس ساعت نه شروع می‌شود.
+Ich lerne Deutsch in einem [Kurs]. | در یک دوره آلمانی یاد می‌گیرم.
+Der [Kurs] dauert drei Monate. | این دوره سه ماه طول می‌کشد.
+Im [Kurs] sind 12 Personen. | در کلاس دوازده نفر هستند.
+Der [Kurs] kostet 200 Euro. | این دوره دویست یورو است.
+# Klasse
+Meine [Klasse] ist sehr groß. | کلاس ما خیلی بزرگ است.
+In meiner [Klasse] sind 25 Schüler. | در کلاس من بیست و پنج دانش‌آموز هست.
+Mein Sohn ist in der ersten [Klasse]. | پسرم کلاس اول است.
+Die [Klasse] macht heute eine Reise. | کلاس امروز به سفر می‌رود.
+Wir sind in einer [Klasse]. | ما هم‌کلاسی هستیم.
+# Universität
+Die [Universität] ist im Zentrum. | دانشگاه در مرکز شهر است.
+Die [Universität] in Berlin ist sehr groß. | دانشگاه برلین خیلی بزرگ است.
+Mein Vater arbeitet an der [Universität]. | پدرم در دانشگاه کار می‌کند.
+Mein Bruder geht jeden Tag zur [Universität]. | برادرم هر روز به دانشگاه می‌رود.
+Die [Universität] hat ein Café. | دانشگاه یک کافه دارد.
+# Uni
+Ich bin heute an der [Uni]. | امروز دانشگاهم.
+Die [Uni] beginnt im Oktober. | دانشگاه در اکتبر شروع می‌شود.
+Wir essen in der [Uni] zu Mittag. | ما در دانشگاه ناهار می‌خوریم.
+Fährst du mit dem Fahrrad zur [Uni]? | با دوچرخه به دانشگاه می‌روی؟
+Meine Freundin arbeitet an der [Uni]. | دوستم در دانشگاه کار می‌کند.
+# studieren
+Ich [studiere] in Berlin. | در برلین تحصیل می‌کنم.
+Meine Schwester [studiert] Deutsch. | خواهرم رشته زبان آلمانی می‌خواند.
+Was [studierst] du? | چه رشته‌ای می‌خوانی؟
+Mein Bruder möchte in Wien [studieren]. | برادرم می‌خواهد در وین در دانشگاه درس بخواند.
+Sara hat in Teheran [studiert]. | سارا در تهران تحصیل کرده است.
+# Prüfung
+Morgen habe ich eine [Prüfung]. | فردا امتحان دارم.
+Die [Prüfung] ist um 9 Uhr. | امتحان ساعت نه است.
+Ich lerne für die [Prüfung]. | برای امتحان درس می‌خوانم.
+Die [Prüfung] war gut. | امتحان خوب بود.
+Die [Prüfung] dauert zwei Stunden. | امتحان دو ساعت طول می‌کشد.
+# Test
+Heute haben wir einen [Test]. | امروز یک آزمون داریم.
+Der [Test] dauert 30 Minuten. | آزمون سی دقیقه طول می‌کشد.
+Der [Test] war sehr gut. | آزمون خیلی خوب بود.
+Morgen schreiben wir einen [Test]. | فردا آزمون می‌دهیم.
+Für den [Test] lerne ich jeden Tag. | برای آزمون هر روز درس می‌خوانم.
+# Frage
+Das ist eine gute [Frage]. | سؤال خوبی است.
+Ich verstehe die [Frage] nicht. | سؤال را نمی‌فهمم.
+Wer hat noch [Fragen]? | کسی هنوز سؤال دارد؟
+Ich habe nur eine [Frage]. | فقط یک سؤال دارم.
+Bitte antworten Sie auf die [Frage]. | لطفاً به سؤال جواب بدهید.
+# eine Frage haben
+Ich [habe eine Frage] zur Prüfung. | درباره امتحان یک سؤال دارم.
+Entschuldigung, wir [haben eine Frage]. | ببخشید، ما یک سؤال داریم.
+Wer [hat eine Frage]? | کی سؤال دارد؟
+Sie [haben eine Frage]? Bitte! | سؤالی دارید؟ بفرمایید!
+Die Kinder [haben eine Frage]. | بچه‌ها یک سؤال دارند.
+# Antwort
+Ich weiß die [Antwort] nicht. | جواب را نمی‌دانم.
+Das ist eine gute [Antwort]. | این جواب خوبی است.
+Wir warten auf eine [Antwort]. | منتظر جوابیم.
+Ich schreibe die [Antworten] auf Deutsch. | جواب‌ها را به آلمانی می‌نویسم.
+Danke für die [Antwort]! | ممنون برای جواب!
+# Hausaufgabe
+Die [Hausaufgabe] ist für Montag. | این تکلیف برای دوشنبه است.
+Ich mache meine [Hausaufgaben]. | تکلیف‌هایم را انجام می‌دهم.
+Hast du die [Hausaufgabe] schon gemacht? | تکلیف را انجام داده‌ای؟
+Heute haben wir keine [Hausaufgaben]. | امروز تکلیف نداریم.
+Die Kinder machen die [Hausaufgaben] in der Küche. | بچه‌ها تکلیف‌هایشان را در آشپزخانه انجام می‌دهند.
+# Hausaufgaben machen
+Ich muss noch [Hausaufgaben machen]. | هنوز باید تکلیف‌هایم را انجام بدهم.
+Die Kinder [machen Hausaufgaben]. | بچه‌ها تکلیف انجام می‌دهند.
+Mein Sohn [macht Hausaufgaben] in seinem Zimmer. | پسرم در اتاقش تکلیف انجام می‌دهد.
+Wir [machen Hausaufgaben] zusammen. | ما با هم تکلیف انجام می‌دهیم.
+Am Nachmittag muss ich [Hausaufgaben machen]. | بعدازظهر باید تکلیف انجام بدهم.
+# Heft
+Ich schreibe das Wort ins [Heft]. | کلمه را در دفترم می‌نویسم.
+Wo ist mein [Heft]? | دفترم کجاست؟
+Ich brauche ein neues [Heft] für den Kurs. | برای کلاس یک دفتر نو لازم دارم.
+Das [Heft] kostet 1 Euro. | دفتر یک یورو است.
+Die Hausaufgaben sind im [Heft]. | تکلیف‌ها در دفتر است.
+# Kugelschreiber
+Hast du einen [Kugelschreiber] für mich? | یک خودکار برای من داری؟
+Mein [Kugelschreiber] schreibt nicht. | خودکارم نمی‌نویسد.
+Bitte schreiben Sie mit [Kugelschreiber]. | لطفاً با خودکار بنویسید.
+Der [Kugelschreiber] ist auf dem Tisch. | خودکار روی میز است.
+Ein [Kugelschreiber] kostet nur 1 Euro. | یک خودکار فقط یک یورو است.
+# Kuli
+Kannst du mir deinen [Kuli] geben? | می‌توانی خودکارت را به من بدهی؟
+Wo ist mein [Kuli]? | خودکارم کجاست؟
+Ich brauche einen [Kuli]. | یک خودکار لازم دارم.
+Der [Kuli] schreibt sehr gut. | این خودکار خیلی خوب می‌نویسد.
+Hier sind zwei [Kulis] für dich. | این دو تا خودکار برای تو.
+# Bleistift
+Ich schreibe mit dem [Bleistift]. | با مداد می‌نویسم.
+Hast du einen [Bleistift]? | مداد داری؟
+Der [Bleistift] ist im Heft. | مداد لای دفتر است.
+Für die Prüfung brauchen wir einen [Bleistift]. | برای امتحان مداد لازم داریم.
+Das Kind hat viele [Bleistifte]. | بچه مدادهای زیادی دارد.
+# Papier
+Hast du [Papier] für mich? | کاغذ برای من داری؟
+Schreiben Sie Ihren Namen auf das [Papier]. | اسمتان را روی کاغذ بنویسید.
+Das [Papier] ist im Schrank. | کاغذ در کمد است.
+Wir brauchen mehr [Papier]. | کاغذ بیشتری لازم داریم.
+Das Kind macht ein Flugzeug aus [Papier]. | بچه از کاغذ یک هواپیما درست می‌کند.
+# Seite
+Öffnen Sie das Buch auf [Seite] 20. | کتاب را صفحه بیست باز کنید.
+Das Buch hat 300 [Seiten]. | کتاب سیصد صفحه دارد.
+Lesen Sie bitte [Seite] 5. | لطفاً صفحه پنج را بخوانید.
+Die Hausaufgabe ist auf [Seite] 12. | تکلیف در صفحه دوازده است.
+Die erste [Seite] ist sehr schön. | صفحه اول خیلی قشنگ است.
+# Text
+Lesen Sie den [Text]. | متن را بخوانید.
+Ich verstehe den [Text] nicht. | متن را نمی‌فهمم.
+Der [Text] hat drei Seiten. | متن سه صفحه است.
+Ich schreibe einen [Text] auf Deutsch. | یک متن به آلمانی می‌نویسم.
+Die [Texte] im Buch sind gut. | متن‌های کتاب خوب‌اند.
+# Satz
+Lesen Sie den [Satz] noch einmal. | جمله را یک بار دیگر بخوانید.
+Der erste [Satz] ist sehr gut. | جمله اول خیلی خوب است.
+Bitte schreiben Sie drei [Sätze]. | لطفاً سه جمله بنویسید.
+Was heißt der [Satz] auf Persisch? | این جمله به فارسی چه می‌شود؟
+Der Text hat zehn [Sätze]. | متن ده جمله دارد.
+# Beispiel
+Hier ist ein [Beispiel]. | این یک مثال است.
+Können Sie ein [Beispiel] geben? | می‌توانید یک مثال بزنید؟
+Das [Beispiel] ist sehr gut. | این مثال خیلی خوب است.
+Im Buch gibt es viele [Beispiele]. | در کتاب مثال‌های زیادی هست.
+Lesen Sie das [Beispiel] auf Seite 8. | مثال صفحه هشت را بخوانید.
+# Buchstabe
+Das Wort hat fünf [Buchstaben]. | این کلمه پنج حرف دارد.
+Wie viele [Buchstaben] hat das Wort? | این کلمه چند حرف دارد؟
+Persisch hat 32 [Buchstaben]. | الفبای فارسی سی و دو حرف دارد.
+Der erste [Buchstabe] ist groß. | حرف اول بزرگ است.
+Das Kind lernt die [Buchstaben]. | بچه حرف‌های الفبا را یاد می‌گیرد.
+# buchstabieren
+Können Sie das bitte [buchstabieren]? | می‌شود لطفاً آن را هجی کنید؟
+Wie [buchstabiert] man das? | این را چطور هجی می‌کنند؟
+Ich [buchstabiere] meinen Namen. | اسمم را هجی می‌کنم.
+[Buchstabieren] Sie bitte Ihren Namen. | لطفاً اسمتان را هجی کنید.
+Das Kind kann schon [buchstabieren]. | بچه دیگر می‌تواند هجی کند.
+# wiederholen
+Können Sie das bitte [wiederholen]? | می‌شود لطفاً تکرارش کنید؟
+Der Lehrer [wiederholt] die Frage. | معلم سؤال را تکرار می‌کند. | d: wiederhole, wiederholst, wiederholen
+Ich [wiederhole] die Wörter jeden Tag. | هر روز کلمه‌ها را تکرار می‌کنم. | d: wiederholst, wiederholt, wiederholen
+[Wiederholen] Sie bitte den Satz. | لطفاً جمله را تکرار کنید.
+Wir müssen das noch einmal [wiederholen]. | باید یک بار دیگر تکرارش کنیم.
+# Fehler
+Das ist ein [Fehler]. | این یک اشتباه است.
+Im Text gibt es einen [Fehler]. | در متن یک غلط هست.
+Entschuldigung, das war mein [Fehler]. | ببخشید، اشتباه از من بود.
+Der Test hat drei [Fehler]. | آزمون سه غلط دارد. | d: Fragen, Sätze, Seiten
+Ich finde den [Fehler] nicht. | اشتباه را پیدا نمی‌کنم.
+# Fehler machen
+Jeder [macht Fehler]. | همه اشتباه می‌کنند.
+Ich [mache Fehler], aber ich lerne. | اشتباه می‌کنم، ولی یاد می‌گیرم.
+Du darfst [Fehler machen]. | اجازه داری اشتباه کنی.
+Wir alle [machen Fehler]. | همه ما اشتباه می‌کنیم.
+Auch Lehrer [machen Fehler]. | معلم‌ها هم اشتباه می‌کنند.
+# richtig
+Das ist [richtig]. | درست است.
+Ist die Antwort [richtig]? | جواب درست است؟
+Der Satz ist nicht [richtig]. | جمله درست نیست.
+Das ist die [richtige] Antwort. | این جواب درست است. | d: alte, schöne, kleine
+Ist das der [richtige] Bus? | اتوبوسش همین است؟
+Du hast [richtig] geantwortet. | درست جواب دادی.
+# falsch
+Das ist [falsch]. | این غلط است.
+Die Antwort ist [falsch]. | جواب غلط است.
+Ich bin im [falschen] Zug! | توی قطار اشتباهی هستم!
+Die Nummer ist [falsch]. | شماره اشتباه است.
+Ist das [falsch]? Nein, das ist richtig. | این غلط است؟ نه، درست است.
+Sie haben die [falsche] Adresse. | نشانی را اشتباه دارید.
+# auf Deutsch
+Wie heißt das [auf Deutsch]? | این به آلمانی چه می‌شود؟ | d: auf Englisch, auf Persisch, nach Hause
+Bitte sprechen Sie [auf Deutsch]! | لطفاً به آلمانی صحبت کنید! | d: auf Englisch, auf Persisch, nach Hause
+Ich lese gern Bücher [auf Deutsch]. | دوست دارم به زبان آلمانی کتاب بخوانم. | d: auf Englisch, auf Persisch, zu Hause
+Wir sprechen im Kurs nur [auf Deutsch]. | در کلاس فقط به آلمانی صحبت می‌کنیم. | d: auf Englisch, auf Persisch, zu Hause
+Kannst du das [auf Deutsch] sagen? | می‌توانی این را به آلمانی بگویی؟ | d: auf Englisch, auf Persisch, zu Hause
+# Wie bitte?
+[Wie bitte]? Ich verstehe Sie nicht. | ببخشید، چی گفتید؟ متوجه نمی‌شوم. | d: Wie spät ist es, Wie viel kostet das, Was ist das
+[Wie bitte]? Können Sie das wiederholen? | ببخشید، چی گفتید؟ می‌شود تکرارش کنید؟ | d: Wie spät ist es, Wie viel kostet das, Was ist das
+[Wie bitte]? Sprechen Sie bitte langsam. | ببخشید، چی گفتید؟ لطفاً آهسته صحبت کنید. | d: Wie spät ist es, Wie viel kostet das, Was ist das
+[Wie bitte]? Wie heißen Sie? | ببخشید، چی گفتید؟ اسمتان چیست؟ | d: Wie spät ist es, Wie viel kostet das, Was ist das
+[Wie bitte]? Ich höre nichts. | ببخشید، چی گفتید؟ چیزی نمی‌شنوم. | d: Wie spät ist es, Wie viel kostet das, Was ist das
+# Kopf
+Das Baby hat einen kleinen [Kopf]. | نوزاد سر کوچکی دارد.
+Ich habe viele Fragen im [Kopf]. | کلی سؤال توی سرم دارم.
+Das Kind schläft. Sein [Kopf] ist auf dem Tisch. | بچه خوابیده. سرش روی میز است.
+Was hast du auf dem [Kopf]? | روی سرت چی داری؟
+Der Junge ist groß, aber sein [Kopf] ist klein. | پسر قدبلند است، اما سرش کوچک است.
+# Auge
+Sie hat schöne [Augen]. | او چشم‌های قشنگی دارد.
+Ich habe etwas im [Auge]. | چیزی توی چشمم رفته.
+Das Baby hat die [Augen] offen. | نوزاد چشم‌هایش باز است.
+Mit den [Augen] sehen wir. | با چشم‌ها می‌بینیم.
+Meine [Augen] sind müde. | چشم‌هایم خسته است.
+# Ohr
+Das Kind hat große [Ohren]. | بچه گوش‌های بزرگی دارد.
+Mit den [Ohren] hören wir. | با گوش‌ها می‌شنویم.
+Ich habe Wasser im [Ohr]. | آب توی گوشم رفته.
+Sag es mir ins [Ohr]. | در گوشم بگو.
+Meine Oma hört auf einem [Ohr] nicht gut. | مادربزرگم با یک گوشش خوب نمی‌شنود.
+# Nase
+Das Kind hat eine kleine [Nase]. | بچه بینی کوچکی دارد.
+Das Baby hat die [Nase] von Mama. | نوزاد بینی مامانش را دارد.
+Das Kind hat Schokolade an der [Nase]. | بچه شکلات به بینی‌اش مالیده.
+Mein Vater hat eine große [Nase]. | پدرم بینی بزرگی دارد.
+Du hast etwas an der [Nase]. | یک چیزی روی بینی‌ات است.
+# Mund
+Bitte öffnen Sie den [Mund]. | لطفاً دهانتان را باز کنید.
+Nicht mit Essen im [Mund] sprechen! | با غذای توی دهان حرف نزن!
+Das Baby hat einen kleinen [Mund]. | نوزاد دهان کوچکی دارد.
+Das Kind hat Schokolade am [Mund]. | دور دهان بچه شکلاتی است.
+Er schließt den [Mund]. | او دهانش را می‌بندد.
+# Zahn
+Das Baby hat schon zwei [Zähne]. | نوزاد دیگر دو تا دندان دارد.
+Der [Zahn] ist schlecht. | این دندان خراب است.
+Mein Sohn hat einen neuen [Zahn]. | پسرم یک دندان تازه درآورده.
+Kinder, Schokolade ist schlecht für die [Zähne]. | بچه‌ها، شکلات برای دندان‌ها بد است.
+Mein Opa hat keine [Zähne] mehr{mehr}. | پدربزرگم دیگر دندان ندارد.
+# Haar
+Sie hat schöne [Haare]. | او موهای قشنگی دارد.
+Das Baby hat noch keine [Haare]. | نوزاد هنوز مو ندارد.
+Im Essen ist ein [Haar]! | توی غذا یک مو هست!
+Die [Haare] von Lena sind sehr schön. | موهای لنا خیلی قشنگ است.
+Mein Vater hat nur noch wenige [Haare]. | پدرم فقط چند تار مو برایش مانده.
+# Hand
+Gib mir deine [Hand]. | دستت را به من بده.
+Was hast du in der [Hand]? | چی توی دستت است؟
+Das Kind geht an der [Hand] von Papa. | بچه دست بابا را گرفته و راه می‌رود.
+Ich habe nur zwei [Hände]! | من فقط دو تا دست دارم!
+Das Geld ist in meiner [Hand]. | پول توی دستم است.
+# Arm
+Das Baby schläft in meinem [Arm]. | نوزاد در بغلم خوابیده.
+Die Mutter nimmt das Kind auf den [Arm]. | مادر بچه را بغل می‌کند.
+Papa, nimm mich auf den [Arm]! | بابا، بغلم کن!
+Oma hat ein Kind in jedem [Arm]. | مادربزرگ در هر دو بغلش یک بچه دارد.
+Meine [Arme] sind müde. | بازوهایم خسته است.
+# Bauch
+Ich habe nichts im [Bauch]. | چیزی توی شکمم نیست.
+Das Baby schläft auf dem [Bauch]. | نوزاد روی شکمش خوابیده.
+Mein Vater hat einen großen [Bauch]. | پدرم شکم بزرگی دارد.
+Mein [Bauch] sagt: Essen! | شکمم می‌گوید: غذا!
+Schokolade ist nicht gut für den [Bauch]. | شکلات برای شکم خوب نیست.
+# Rücken
+Ich schlafe auf dem [Rücken]. | به پشت می‌خوابم.
+Das Kind ist auf dem [Rücken] von Papa. | بچه روی کول باباست.
+Der Stuhl ist schlecht für den [Rücken]. | این صندلی برای کمر بد است.
+Der [Rücken] von meiner Oma ist nicht gut. | کمر مادربزرگم خوب نیست.
+Mein Vater hat einen schlechten [Rücken]. | پدرم کمرش مشکل دارد.
+# Bein
+Meine [Beine] sind müde. | پاهایم خسته است.
+Das Baby hat kleine [Beine]. | نوزاد پاهای کوچکی دارد.
+Ein Mensch hat zwei [Beine]. | انسان دو پا دارد.
+Mein [Bein] ist heute besser. | امروز پایم بهتر است.
+Der Arzt fragt: Was ist mit Ihrem [Bein]? | دکتر می‌پرسد: پایتان چه شده؟
+# Fuß
+Ich gehe zu [Fuß] nach Hause. | پیاده به خانه می‌روم.
+Zu [Fuß] sind es nur 10 Minuten. | پیاده فقط ده دقیقه راه است.
+Zu [Fuß] ist es zu{zu-adv} weit. | پیاده زیادی دور است.
+Bitte nicht mit den [Füßen] auf das Sofa! | لطفاً با پا روی کاناپه نروید!
+Das Baby hat kleine [Füße]. | نوزاد پاهای کوچکی دارد.
+# zu Fuß gehen
+Kannst du [zu Fuß gehen]? | می‌توانی پیاده بروی؟
+Ich möchte heute [zu Fuß gehen]. | امروز می‌خواهم پیاده بروم.
+Mein Opa kann nicht mehr{mehr} [zu Fuß gehen]. | پدربزرگم دیگر نمی‌تواند پیاده راه برود.
+Die Kinder [gehen zu Fuß] zur Schule. | بچه‌ها پیاده به مدرسه می‌روند.
+Wir [gehen zu Fuß] nach Hause. | پیاده به خانه می‌رویم.
+# krank
+Ich bin heute [krank]. | امروز مریضم.
+Mein Sohn ist [krank] und bleibt zu Hause. | پسرم مریض است و خانه می‌ماند.
+Die Lehrerin ist [krank]. | معلم مریض است.
+Bist du [krank]? | مریضی؟
+Das [kranke] Kind schläft. | بچه مریض خوابیده.
+Oma ist [krank], sie ist im Krankenhaus. | مادربزرگ مریض است، در بیمارستان است.
+# gesund
+Obst ist [gesund]. | میوه برای سلامتی خوب است.
+Mein Opa ist 90 und noch sehr [gesund]. | پدربزرگم نود سال دارد و هنوز خیلی سالم است.
+Ich bin wieder [gesund]. | دوباره سالمم.
+Wir essen [gesund]. | ما سالم غذا می‌خوریم.
+Das Baby ist [gesund]. | نوزاد سالم است.
+Schokolade ist nicht [gesund]. | شکلات سالم نیست.
+# Schmerz
+Ich habe [Schmerzen]. | درد دارم.
+Wo haben Sie [Schmerzen]? | کجایتان درد می‌کند؟
+Ich habe [Schmerzen] im Rücken. | کمرم درد می‌کند.
+Der [Schmerz] ist schon besser. | درد بهتر شده است.
+Das Kind hat [Schmerzen] im Bauch. | بچه دلش درد می‌کند.
+# Kopfschmerzen haben
+Ich [habe Kopfschmerzen]. | سردرد دارم.
+Mama [hat Kopfschmerzen] und schläft. | مامان سردرد دارد و خوابیده.
+Du [hast Kopfschmerzen]? Hier ist Wasser. | سردرد داری؟ این هم آب.
+Ich kann nicht lernen, ich [habe Kopfschmerzen]. | نمی‌توانم درس بخوانم، سردرد دارم.
+Ich möchte nicht immer [Kopfschmerzen haben]. | نمی‌خواهم همیشه سردرد داشته باشم.
+# wehtun
+Das kann [wehtun]. | ممکن است درد بگیرد.
+Hat es sehr [wehgetan]? | خیلی درد داشت؟ | d: wehtun, wehtut, getan
+Mein Fuß hat gestern [wehgetan]. | دیروز پایم درد می‌کرد. | d: wehtun, wehtut, getan
+Mein Rücken hat in der Nacht [wehgetan]. | شب کمرم درد می‌کرد. | d: wehtun, wehtut, getan
+Mein Kopf hat heute Morgen [wehgetan]. | امروز صبح سرم درد می‌کرد. | d: wehtun, wehtut, getan
+# Fieber
+Das Kind hat [Fieber]. | بچه تب دارد.
+Hast du [Fieber]? | تب داری؟
+Mit [Fieber] gehst du nicht zur Schule! | با تب به مدرسه نمی‌روی!
+Bei [Fieber] musst du viel trinken. | وقتی تب داری باید زیاد بنوشی.
+Das [Fieber] ist heute nicht mehr{mehr} da. | امروز دیگر تب ندارد.
+# Fieber haben
+Du [hast Fieber], du musst ins Bett. | تب داری، باید بروی توی رختخواب.
+Mein Sohn [hat Fieber] und bleibt zu Hause. | پسرم تب دارد و خانه می‌ماند.
+Wer [Fieber hat], muss zu Hause bleiben. | هر کس تب دارد باید خانه بماند.
+Das Baby [hat Fieber]. Wir fahren zum Arzt. | نوزاد تب دارد. پیش دکتر می‌رویم.
+Sie [haben Fieber]? Dann bleiben Sie im Bett. | تب دارید؟ پس در رختخواب بمانید.
+# Tablette
+Nehmen Sie eine [Tablette] am Morgen. | صبح یک قرص بخورید.
+Ich brauche eine [Tablette], ich habe Kopfschmerzen. | یک قرص لازم دارم، سردرد دارم.
+Die [Tabletten] sind in der Küche. | قرص‌ها در آشپزخانه است.
+Nimm die [Tablette] mit Wasser. | قرص را با آب بخور.
+In der Apotheke kaufe ich [Tabletten]. | از داروخانه قرص می‌خرم.
+# gute Besserung
+Du bist krank? [Gute Besserung]! | مریضی؟ زود خوب شو! | d: Gute Reise, Guten Appetit, Herzlichen Glückwunsch
+[Gute Besserung], Oma! | مادربزرگ، زودتر خوب شو! | d: Gute Reise, Guten Appetit, Herzlichen Glückwunsch
+Du hast Fieber? [Gute Besserung]! | تب داری؟ زود خوب شو! | d: Gute Reise, Guten Appetit, Herzlichen Glückwunsch
+Mama ist im Krankenhaus? [Gute Besserung] für sie! | مامان در بیمارستان است؟ امیدوارم زود خوب شود! | d: Gute Reise, Guten Appetit, Herzlichen Glückwunsch
+[Gute Besserung] und viel Tee trinken! | زود خوب شو و زیاد چای بنوش! | d: Gute Reise, Guten Appetit, Herzlichen Glückwunsch
+# Kleidung
+Ich kaufe neue [Kleidung]. | لباس نو می‌خرم.
+Die [Kleidung] ist im Schrank. | لباس‌ها در کمد است.
+Für die Reise brauche ich [Kleidung] für eine Woche. | برای سفر لباس یک هفته را لازم دارم.
+Die [Kleidung] in diesem Geschäft ist billig. | لباس‌های این مغازه ارزان است.
+Kinder brauchen viel [Kleidung]. | بچه‌ها لباس زیادی لازم دارند.
+# tragen
+Was [trägst] du heute? | امروز چه می‌پوشی؟
+Sie [trägt] immer schöne Kleidung. | او همیشه لباس‌های قشنگ می‌پوشد.
+Im Büro [trage] ich keine alte Kleidung. | در دفتر لباس کهنه نمی‌پوشم.
+Was möchtest du morgen [tragen]? | فردا چه می‌خواهی بپوشی؟
+Zum Geburtstag [trägt] das Kind neue Kleidung. | بچه برای تولدش لباس نو می‌پوشد.
+# Hose
+Die [Hose] ist zu{zu-adv} groß. | این شلوار زیادی بزرگ است.
+Ich trage heute eine neue [Hose]. | امروز یک شلوار نو پوشیده‌ام.
+Wie viel kostet die [Hose]? | این شلوار چند است؟
+Ich brauche eine neue [Hose] für die Arbeit. | برای کار یک شلوار نو لازم دارم.
+Die [Hosen] sind im Schrank. | شلوارها در کمد است.
+# Hemd
+Mein Vater trägt ein [Hemd]. | پدرم یک پیراهن پوشیده.
+Das [Hemd] von meinem Bruder ist zu{zu-adv} klein. | پیراهن برادرم زیادی کوچک است.
+Papa kauft ein neues [Hemd] für den Geburtstag. | بابا برای تولد یک پیراهن نو می‌خرد.
+Im Büro trägt er immer ein [Hemd]. | در دفتر همیشه پیراهن می‌پوشد.
+Für die Arbeit braucht mein Bruder ein neues [Hemd]. | برادرم برای کار یک پیراهن نو لازم دارد.
+# T-Shirt
+Im Sommer trage ich ein [T-Shirt]. | تابستان تی‌شرت می‌پوشم.
+Das [T-Shirt] ist zu{zu-adv} groß für mich. | این تی‌شرت برای من زیادی بزرگ است.
+Ich kaufe drei [T-Shirts]. | سه تا تی‌شرت می‌خرم.
+Das [T-Shirt] kostet nur 10 Euro. | این تی‌شرت فقط ده یورو است.
+Mein Sohn hat viele [T-Shirts]. | پسرم تی‌شرت‌های زیادی دارد.
+# Pullover
+Im Winter trage ich einen [Pullover]. | زمستان پلیور می‌پوشم.
+Der [Pullover] ist sehr schön. | این پلیور خیلی قشنگ است.
+Oma kauft einen [Pullover] für mich. | مادربزرگ برایم یک پلیور می‌خرد.
+Der [Pullover] kostet 40 Euro. | این پلیور چهل یورو است.
+Mein [Pullover] ist im Schrank. | پلیورم در کمد است.
+# Jacke
+Meine [Jacke] ist im Auto. | کاپشنم در ماشین است.
+Ich brauche eine neue [Jacke] für den Winter. | برای زمستان یک کاپشن نو لازم دارم.
+Die [Jacke] ist zu{zu-adv} klein. | این کاپشن زیادی کوچک است.
+Wo ist meine [Jacke]? | کاپشنم کجاست؟
+Die [Jacke] ist sehr teuer. | این کاپشن خیلی گران است.
+# Mantel
+Mein [Mantel] ist sehr alt. | پالتوی من خیلی کهنه است.
+Der [Mantel] ist schön, aber teuer. | این پالتو قشنگ است، اما گران.
+Hier ist Ihr [Mantel]. | این هم پالتوی شما.
+Ich kaufe einen neuen [Mantel]. | یک پالتوی نو می‌خرم.
+Oma trägt einen schönen [Mantel]. | مادربزرگ یک پالتوی قشنگ پوشیده.
+# Kleid
+Die Frau trägt ein schönes [Kleid]. | آن زن یک پیراهن قشنگ پوشیده.
+Meine Tochter möchte ein neues [Kleid]. | دخترم یک پیراهن نو می‌خواهد.
+Das [Kleid] kostet 80 Euro. | این پیراهن هشتاد یورو است.
+Für den Geburtstag kauft Sara ein [Kleid]. | سارا برای تولد یک پیراهن می‌خرد.
+Das [Kleid] von Mama ist sehr schön. | پیراهن مامان خیلی قشنگ است.
+Meine Schwester hat viele [Kleider]. | خواهرم پیراهن‌های زیادی دارد.
+# Rock
+Sie trägt einen [Rock]. | او دامن پوشیده.
+Der [Rock] ist sehr schön. | این دامن خیلی قشنگ است.
+Meine Tochter möchte einen neuen [Rock]. | دخترم یک دامن نو می‌خواهد.
+Ich trage heute einen [Rock] und ein T-Shirt. | امروز دامن و تی‌شرت پوشیده‌ام.
+Wie viel kostet der [Rock]? | این دامن چند است؟
+# Schuh
+Ich brauche neue [Schuhe]. | کفش نو لازم دارم.
+Die [Schuhe] sind zu{zu-adv} klein. | این کفش‌ها زیادی کوچک‌اند.
+Wo sind meine [Schuhe]? | کفش‌هایم کجاست؟
+Bitte keine [Schuhe] im Haus! | لطفاً با کفش وارد خانه نشوید!
+Der [Schuh] ist schön, aber teuer. | این کفش قشنگ است، اما گران.
+# Tasche
+Meine [Tasche] ist im Auto. | کیفم در ماشین است.
+Das Geld ist in meiner [Tasche]. | پول در کیفم است.
+Ich kaufe eine neue [Tasche]. | یک کیف نو می‌خرم.
+Die [Tasche] kostet 50 Euro. | این کیف پنجاه یورو است.
+Wo ist meine [Tasche]? | کیفم کجاست؟
+# Farbe
+Welche [Farbe] hat dein Auto? | ماشینت چه رنگی است؟
+Die [Farbe] ist sehr schön. | این رنگ خیلی قشنگ است.
+Ich mag die [Farbe] von deinem Pullover. | رنگ پلیورت را دوست دارم.
+Das Kleid gibt es in drei [Farben]. | این پیراهن سه رنگ دارد.
+Welche [Farbe] möchten Sie? | چه رنگی می‌خواهید؟

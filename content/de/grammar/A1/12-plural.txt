@@ -1,0 +1,78 @@
+code: de-a1-plural
+title: جمع اسم‌ها: Kinder، Frauen، Autos
+scope: جمع اسم‌های پرکاربرد با الگوهای -e، -er، -(e)n، -s و بی‌تغییر (گاهی با Umlaut) و حرف تعریف die برای همه جمع‌ها در حالت فاعلی و بعد از haben؛ شکل جمع در حالت‌های دیگر (mit den Kindern) در سطح‌های بعد می‌آید.
+can_do: حالا می‌توانی درباره چند چیز یا چند نفر حرف بزنی: die Kinder، die Bücher، die Autos.
+rule: جمع آلمانی چند الگو دارد و باید با خود اسم حفظ شود: der Tag ← die Tage، das Kind ← die Kinder، die Frau ← die Frauen، das Auto ← die Autos؛ حرف تعریف همه جمع‌ها die است.
+mistake: فارسی همیشه «ـها» می‌گذارد و فارسی‌زبان‌ها برای همه اسم‌ها -s می‌گذارند («die Kinds»، «die Buchs») یا Umlaut را جا می‌اندازند («die Bucher»)؛ درست: die Kinder، die Bücher. هر اسم را با جمعش حفظ کن.
+lesson:
+در فارسی تقریباً همیشه «ـها» می‌گذاری، ولی آلمانی برای جمع چند الگو دارد.
+بیشتر اسم‌های مؤنث -n یا -en می‌گیرند: die Frau ← die Frauen، die Schule ← die Schulen.
+خیلی از اسم‌های مذکر -e می‌گیرند: der Tag ← die Tage، der Freund ← die Freunde.
+خیلی از اسم‌های خنثی کوتاه -er می‌گیرند و a، o و u آن‌ها Umlaut می‌شود: das Kind ← die Kinder، das Buch ← die Bücher، das Haus ← die Häuser.
+-s بیشتر برای کلمه‌هایی است که از زبان‌های دیگر آمده‌اند: das Auto ← die Autos، das Baby ← die Babys.
+اسم‌های -chen و بیشتر اسم‌های -er در جمع عوض نمی‌شوند یا فقط Umlaut می‌گیرند: das Mädchen ← die Mädchen، der Vater ← die Väter.
+حرف تعریف همه جمع‌ها die است و فعل هم جمع می‌شود: Die Kinder spielen.
+table:
+الگو | مفرد | جمع
+-e | der Tag | die Tage
+-e با Umlaut | die Stadt | die Städte
+-er با Umlaut | das Buch | die Bücher
+-(e)n | die Frau | die Frauen
+-s | das Auto | die Autos
+بی‌تغییر | das Mädchen | die Mädchen
+sets:
+-e: Tag, Freund, Brot, Telefon, Jahr
+-er: Kind, Buch, Haus, Mann, Land, Wort
+-(e)n: Frau, Schule, Straße, Sprache, Adresse, Person
+-s: Auto, Baby
+examples:
+Das Buch ist neu, aber die Bücher dort sind alt. | این کتاب نو است، اما کتاب‌های آنجا قدیمی‌اند.
+Die Frauen arbeiten in Köln. | آن خانم‌ها در کلن کار می‌کنند.
+Wir haben 2 Kinder. | ما دو بچه داریم.
+Die Mädchen spielen zu Hause. | دخترها خانه بازی می‌کنند.
+targets:
+Die [Kinder] lernen Deutsch. | بچه‌ها آلمانی یاد می‌گیرند. | d: Kinds, Kinde, Kinden
+Die [Bücher] sind neu. | کتاب‌ها نو هستند. | d: Buchs, Bucher, Büchen
+Die [Häuser] sind alt. | خانه‌ها قدیمی‌اند. | d: Hauser, Häusen, Hauses
+Die [Frauen] arbeiten hier. | آن خانم‌ها اینجا کار می‌کنند. | d: Fraus, Frauer, Fräuen | full: Hier arbeiten die Frauen.
+Die [Autos] sind klein. | ماشین‌ها کوچک‌اند. | d: Auten, Autoen, Autoe
+Die [Tage] sind schön. | روزها خوب‌اند. | d: Tags, Täge, Tager
+Die [Schulen] sind groß. | مدرسه‌ها بزرگ‌اند. | d: Schules, Schuler, Schülen
+Die [Städte] sind sehr alt. | شهرها خیلی قدیمی‌اند. | d: Stadts, Stadte, Stadten
+Die [Freunde] von Max kommen heute. | دوستان ماکس امروز می‌آیند. | d: Freunds, Freunder, Fräunde | full: Heute kommen die Freunde von Max.
+Die [Männer] trinken Kaffee. | مردها قهوه می‌نوشند. | d: Manns, Manne, Manner
+Die [Länder] sind klein. | آن کشورها کوچک‌اند. | d: Lands, Lander, Länds
+Die [Wörter] sind neu. | کلمه‌ها تازه‌اند. | d: Worts, Worter, Wörte
+Die [Straßen] sind sehr groß. | خیابان‌ها خیلی بزرگ‌اند. | d: Straßes, Straßer, Sträßen
+Die [Sprachen] sind schön. | زبان‌ها قشنگ‌اند. | d: Spraches, Spracher, Sprächen
+Die [Adressen] sind neu. | نشانی‌ها تازه‌اند. | d: Adresses, Adresser, Adresse
+Die [Mädchen] lernen Englisch. | دخترها انگلیسی یاد می‌گیرند. | d: Mädchenen, Mädchener, Mädchene
+Die [Telefone] sind neu. | تلفن‌ها نو هستند. | d: Telefons, Telefoner, Telefönen
+Die [Mütter] sind zu Hause. | مادرها خانه‌اند. | d: Mutter, Mütters, Mütteren
+Die [Väter] arbeiten heute. | پدرها امروز کار می‌کنند. | d: Vater, Vaters, Väteren | full: Heute arbeiten die Väter.
+Die [Freundinnen] von Lena sind hier. | دوستان لنا اینجا هستند. | d: Freundins, Freundinen, Freundiner | full: Hier sind die Freundinnen von Lena.
+Die [Personen] kommen aus Iran. | آن آدم‌ها اهل ایران‌اند. | d: Persons, Personer, Persone
+Die [Namen] sind schön. | اسم‌ها قشنگ‌اند. | d: Names, Nämen, Namer
+Die [Brote] sind gut. | نان‌ها خوب‌اند. | d: Brots, Bröte, Broter
+Paul ist 30 [Jahre] alt. | پاول سی ساله است. | d: Jahrs, Jähre, Jahrer
+Wir haben 2 [Kinder]. | ما دو بچه داریم. | d: Kind, Kinds, Kinden
+Die [Babys] sind sehr klein. | نوزادها خیلی کوچک‌اند. | d: Babyen, Babyer, Babye
+Die [Männer] trinken Kaffee und die [Frauen] trinken Tee. | مردها قهوه می‌نوشند و زن‌ها چای. | d: Manns, Manne, Manner / Fraus, Frauer, Fräuen
+Die [Bücher] sind alt, aber die [Autos] sind neu. | کتاب‌ها قدیمی‌اند، اما ماشین‌ها نو. | d: Buchs, Bucher, Büchen / Auten, Autoen, Autoe
+Die [Städte] sind groß und die [Straßen] sind schön. | شهرها بزرگ‌اند و خیابان‌ها قشنگ. | d: Stadts, Stadte, Stadten / Straßes, Straßer, Sträßen
+Die [Freunde] und die [Freundinnen] von Tim kommen heute. | دوستان تیم امروز می‌آیند. | d: Freunds, Freunder, Fräunde / Freundins, Freundinen, Freundiner | full: Heute kommen die Freunde und die Freundinnen von Tim.
+Hier sind 2 [Frauen] und 3 [Männer]. | اینجا دو زن و سه مرد هستند. | d: Frau, Fraus, Frauer / Mann, Manns, Manne
+Die [Kinder] spielen und die [Mütter] trinken Kaffee. | بچه‌ها بازی می‌کنند و مادرها قهوه می‌نوشند. | d: Kinds, Kinde, Kinden / Mutter, Mütters, Mütteren
+transforms:
+Das Kind spielt hier. => Die Kinder spielen hier. | جمله را جمع کن.
+Die Frau arbeitet in Wien. => Die Frauen arbeiten in Wien. | جمله را جمع کن.
+Das Buch ist neu. => Die Bücher sind neu. | جمله را جمع کن.
+Der Freund kommt heute. => Die Freunde kommen heute. | جمله را جمع کن.
+Das Auto ist klein. => Die Autos sind klein. | جمله را جمع کن.
+Das Mädchen lernt Deutsch. => Die Mädchen lernen Deutsch. | جمله را جمع کن.
+translations:
+بچه‌ها اینجا بازی می‌کنند. => Die Kinder spielen hier.
+کتاب‌ها نو هستند. => Die Bücher sind neu.
+خانه‌ها قدیمی‌اند. => Die Häuser sind alt.
+زن‌ها در کلن کار می‌کنند. => Die Frauen arbeiten in Köln.
+شهرها بزرگ‌اند. => Die Städte sind groß.

@@ -97,6 +97,7 @@ export function buildSentences(analyzer: Analyzer, files: { file: string; text: 
       const surface = analysis.text.slice(gap.start, gap.end);
       const position = analysis.tokens.indexOf(inside[0]);
       const before = analysis.tokens[position - 1] ?? null;
+      const after = analysis.tokens[position + 1] ?? null;
       const given = list(cell(more, "d"));
       let distractors = given;
       let hint: string | null = null;
@@ -104,6 +105,7 @@ export function buildSentences(analyzer: Analyzer, files: { file: string; text: 
         sentence: analysis.text,
         used: new Set(analysis.tokens.map((token) => token.word).filter((word): word is PackWord => word !== null)),
         before: before && analysis.text.slice(before.end, gap.start).trim() === "" ? before.surface : null,
+        after: after && analysis.text.slice(gap.end, after.start).trim() === "" ? after.surface : null,
         first: gap.start === 0,
         knownBefore: (word) => analyzer.knownBefore(word, { level, target: target!, firstWords }),
         level,

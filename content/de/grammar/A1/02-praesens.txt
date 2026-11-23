@@ -1,0 +1,74 @@
+code: de-a1-praesens-regelmaessig
+title: فعل‌های باقاعده در زمان حال
+scope: پایان‌های زمان حال فعل‌های باقاعده (-e، -st، -t، -en، -t، -en) با wohnen، kommen، lernen، machen و مانند آن‌ها، e اضافه در arbeiten و s کمتر در du heißt؛ فعل‌هایی که حرف صدادارشان عوض می‌شود (fahren، sprechen) جدا می‌آیند.
+can_do: حالا می‌توانی بگویی اسمت چیست، کجا زندگی می‌کنی و چه کار می‌کنی.
+rule: ریشه فعل (مصدر بدون -en) + پایان: ich -e، du -st، er/sie/es -t، wir -en، ihr -t، sie/Sie -en.
+mistake: فارسی‌زبان‌ها گاهی خود مصدر را به کار می‌برند («ich wohnen») یا پایان را جا می‌اندازند؛ درست: ich wohne، du wohnst. در arbeiten یک e اضافه می‌شود: du arbeitest، er arbeitet.
+tables: Präsens
+lesson:
+مصدر فعل آلمانی معمولاً به -en ختم می‌شود: wohnen یعنی «زندگی کردن».
+برای صرف، -en را برمی‌داری تا ریشه بماند (wohn) و پایان هر ضمیر را به آن می‌چسبانی، مثل «می‌کنم، می‌کنی، می‌کند» در فارسی.
+شکل wir و sie/Sie همان مصدر است: wir wohnen، Sie wohnen.
+اگر ریشه به t یا d ختم شود، پیش از -st و -t یک e می‌آید تا تلفظ آسان شود: du arbeitest، er arbeitet.
+اگر ریشه به s یا ß یا z ختم شود، du فقط -t می‌گیرد: du heißt (نه du heißst).
+table:
+ضمیر | پایان | wohnen | arbeiten | heißen
+ich | -e | wohne | arbeite | heiße
+du | -st | wohnst | arbeitest | heißt
+er / sie / es | -t | wohnt | arbeitet | heißt
+wir | -en | wohnen | arbeiten | heißen
+ihr | -t | wohnt | arbeitet | heißt
+sie / Sie | -en | wohnen | arbeiten | heißen
+examples:
+Ich heiße Maryam. | اسم من مریم است.
+Du wohnst in Berlin. | تو در برلین زندگی می‌کنی.
+Er arbeitet heute. | او امروز کار می‌کند.
+Wir lernen Deutsch. | ما آلمانی یاد می‌گیریم.
+targets:
+Ich [wohne] in Berlin. | من در برلین زندگی می‌کنم. | d: wohnst, wohnt, wohnen | hint: (wohnen) | full: In Berlin wohne ich.
+Du [kommst] aus Teheran. | تو اهل تهرانی. | d: komme, kommt, kommen | hint: (kommen)
+Anna [lernt] Deutsch. | آنا آلمانی یاد می‌گیرد. | d: lerne, lernst, lernen | hint: (lernen)
+Wir [spielen] heute zu Hause. | ما امروز در خانه بازی می‌کنیم. | d: spielt, spiele, spielst | full: Heute spielen wir zu Hause.
+Ihr [trinkt] viel Kaffee. | شما خیلی قهوه می‌خورید. | d: trinken, trinkst, trinke | hint: (trinken)
+Max und Lena [wohnen] in Hamburg. | ماکس و لنا در هامبورگ زندگی می‌کنند. | d: wohnt, wohnst, wohne | full: In Hamburg wohnen Max und Lena.
+Ich [heiße] Ben. | اسم من بن است. | d: heißt, heißen, heißst
+Du [heißt] Sara. | اسم تو ساراست. | d: heißst, heiße, heißen | hint: (heißen)
+Er [arbeitet] heute. | او امروز کار می‌کند. | d: arbeitt, arbeite, arbeiten | hint: (arbeiten) | full: Heute arbeitet er.
+Du [arbeitest] viel. | تو زیاد کار می‌کنی. | d: arbeitst, arbeitet, arbeite | hint: (arbeiten)
+Sara [antwortet] immer. | سارا همیشه جواب می‌دهد. | d: antwortt, antworte, antworten
+Ihr [arbeitet] auch hier. | شما هم اینجا کار می‌کنید. | d: arbeitt, arbeiten, arbeitest | hint: (arbeiten)
+Ich [kaufe] Brot. | من نان می‌خرم. | d: kaufst, kauft, kaufen | hint: (kaufen)
+Paul [braucht] Geld. | پاول پول لازم دارد. | d: brauche, brauchen, brauchst | hint: (brauchen)
+Wir [lernen] jetzt Englisch. | ما الان انگلیسی یاد می‌گیریم. | d: lernt, lerne, lernst | full: Jetzt lernen wir Englisch.
+Anna und Paul [kommen] morgen. | آنا و پاول فردا می‌آیند. | d: kommt, kommst, komme | full: Morgen kommen Anna und Paul.
+Die Kinder [spielen] hier. | بچه‌ها اینجا بازی می‌کنند. | d: spielt, spielst, spiele | hint: (spielen) | full: Hier spielen die Kinder.
+Ich [schreibe] viel. | من زیاد می‌نویسم. | d: schreibst, schreibt, schreiben | hint: (schreiben)
+Lukas [geht] nach Hause. | لوکاس به خانه می‌رود. | d: gehe, gehst, gehen | hint: (gehen)
+Du [verstehst] gut Deutsch. | تو آلمانی را خوب می‌فهمی. | d: verstehe, versteht, verstehen | hint: (verstehen) | full: Du verstehst Deutsch gut.
+Mia [sucht] das Buch. | میا دنبال کتاب می‌گردد. | d: suche, suchst, suchen
+Wir [machen] das heute. | ما امروز این کار را می‌کنیم. | d: macht, machst, mache | full: Heute machen wir das.
+Der Mann [fragt] viel. | آن مرد زیاد سؤال می‌کند. | d: frage, fragen, fragst | hint: (fragen)
+Ihr [kommt] aus Wien. | شما اهل وین هستید. | d: kommen, kommst, komme | hint: (kommen)
+Jonas [sagt] das oft. | یوناس این را زیاد می‌گوید. | d: sage, sagen, sagst | hint: (sagen)
+Das Kind [trinkt] Wasser. | بچه آب می‌خورد. | d: trinke, trinkst, trinken | hint: (trinken)
+Ich [kenne] Anna. | من آنا را می‌شناسم. | d: kennst, kennt, kennen
+Ich [wohne] in Köln und du [wohnst] in München. | من در کلن زندگی می‌کنم و تو در مونیخ. | d: wohnst, wohnt, wohnen / wohne, wohnt, wohnen | hint: (wohnen)
+Wir [lernen] Deutsch und ihr [lernt] Englisch. | ما آلمانی یاد می‌گیریم و شما انگلیسی. | d: lernt, lerne, lernst / lernen, lernst, lerne | hint: (lernen)
+Ali [kommt] aus Isfahan, aber Sara [kommt] aus Schiras. | علی اهل اصفهان است، اما سارا اهل شیراز. | d: komme, kommen, kommst / kommst, kommen, komme
+Du [arbeitest] heute und ich [arbeite] morgen. | تو امروز کار می‌کنی و من فردا. | d: arbeitst, arbeitet, arbeite / arbeitest, arbeitet, arbeiten | hint: (arbeiten)
+Das Mädchen [heißt] Lena und der Junge [heißt] Tim. | اسم دختر لناست و اسم پسر تیم. | d: heißst, heiße, heißen / heißst, heiße, heißen
+Ich [frage] und du [antwortest]. | من می‌پرسم و تو جواب می‌دهی. | d: fragst, fragt, fragen / antwortst, antwortet, antworte
+Wir [kaufen] Brot und ihr [kauft] Kaffee. | ما نان می‌خریم و شما قهوه. | d: kauft, kaufe, kaufst / kaufen, kaufst, kaufe
+transforms:
+Ich wohne in Berlin. => Wir wohnen in Berlin. | جمله را با wir بنویس.
+Du lernst Deutsch. => Ihr lernt Deutsch. | جمله را با ihr بنویس.
+Ich arbeite heute. => Er arbeitet heute. | جمله را با er بنویس.
+Anna kommt aus Teheran. => Anna und Ali kommen aus Teheran. | به‌جای Anna بنویس Anna und Ali.
+Ich heiße Sara. => Du heißt Sara. | جمله را با du بنویس.
+translations:
+من در برلین زندگی می‌کنم. => Ich wohne in Berlin.
+تو زیاد کار می‌کنی. => Du arbeitest viel. ; Du arbeitest sehr viel.
+اسم من رضاست. => Ich heiße Reza.
+ما آلمانی یاد می‌گیریم. => Wir lernen Deutsch.
+آنا اهل وین است. => Anna kommt aus Wien. ; Anna ist aus Wien.
+علی نان می‌خرد. => Ali kauft Brot.

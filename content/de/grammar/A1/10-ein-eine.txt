@@ -1,0 +1,70 @@
+code: de-a1-ein-eine
+title: ein و eine: حرف تعریف نامعین
+scope: حرف تعریف نامعین ein (مذکر و خنثی) و eine (مؤنث) در حالت فاعلی، بعد از sein و با اسم مؤنث و خنثی بعد از haben و فعل‌های دیگر (Das ist ein Buch، Ich habe ein Auto)، و نبودنش در جمع؛ شکل مفعولی مذکر (einen) و kein در واحدهای بعد.
+can_do: حالا می‌توانی بگویی «این یک کتاب است» و چیزها را معرفی کنی.
+rule: مذکر و خنثی ein، مؤنث eine؛ جمع حرف تعریف نامعین ندارد: Das sind Bücher.
+mistake: فارسی‌زبان‌ها جنس را فراموش می‌کنند و برای همه ein می‌گویند («ein Stadt») یا در جمع هم ein می‌گذارند؛ درست: eine Stadt، و Das sind Kinder (بی‌حرف تعریف).
+lesson:
+ein و eine همان «یک» یا «ـی» فارسی است: ein Haus یعنی «یک خانه» یا «خانه‌ای».
+مذکر و خنثی ein می‌گیرند (ein Mann، ein Kind) و مؤنث eine (eine Frau).
+پس جنسی که با der، die و das یاد گرفتی این‌جا هم به کار می‌آید: der Tag ← ein Tag، die Stadt ← eine Stadt، das Buch ← ein Buch.
+وقتی چیزی را اولین بار نام می‌بری ein می‌گویی و بعد از آن der یا die یا das: Da ist ein Haus. Das Haus ist alt.
+جمع حرف تعریف نامعین ندارد: Das sind Bücher یعنی «این‌ها کتاب‌اند».
+table:
+معین | نامعین
+der Mann | ein Mann
+die Frau | eine Frau
+das Kind | ein Kind
+die Kinder (جمع) | Kinder (بی‌حرف تعریف)
+sets:
+ein: Mann, Tag, Name, Haus, Buch, Auto
+eine: Frau, Stadt, Schule, Straße, Sprache, Adresse
+examples:
+Das ist ein Buch. | این یک کتاب است.
+Das ist eine Schule. | این یک مدرسه است.
+Da ist ein Haus. Das Haus ist alt. | آنجا یک خانه هست. خانه قدیمی است.
+Das sind Kinder. | این‌ها بچه‌اند.
+targets:
+Das ist [ein] Wort. | این یک کلمه است. | d: eine, der, die
+Das ist [eine] Telefonnummer. | این یک شماره تلفن است. | d: ein, der, das
+Das ist [ein] Freund von Max. | این یکی از دوستان ماکس است. | d: eine, die, das
+Hier ist [eine] Adresse. | اینجا یک نشانی هست. | d: ein, der, das
+Ich habe [ein] Telefon. | من یک تلفن دارم. | d: eine, der, die
+Wir haben [ein] Kind. | ما یک بچه داریم. | d: eine, der, die
+Anna kauft [ein] Brot. | آنا یک نان می‌خرد. | d: eine, der, die
+Max sucht [eine] Arbeit. | ماکس دنبال کار می‌گردد. | d: ein, der, das
+Köln ist [eine] Stadt in Deutschland. | کلن شهری در آلمان است. | d: ein, der, das
+Da ist [eine] Frau. | آنجا یک خانم هست. | d: ein, der, das
+Lena hat [eine] Freundin in Wien. | لنا یک دوست در وین دارد. | d: ein, der, das | full: In Wien hat Lena eine Freundin.
+Reza ist [ein] Name aus Iran. | رضا اسمی ایرانی است. | d: eine, die, das
+Hier ist [ein] Buch für Mia. | اینجا یک کتاب برای میا هست. | d: eine, der, die
+Das ist [ein] Baby. | این یک نوزاد است. | d: eine, der, die
+Das sind [Bücher]. | این‌ها کتاب‌اند. | d: ein Bücher, eine Bücher, ein Buch
+Das sind [Freunde] von Tim. | این‌ها دوستان تیم هستند. | d: ein Freunde, eine Freunde, ein Freund
+Persisch ist [eine] Sprache. | فارسی یک زبان است. | d: ein, der, das
+Hier wohnt [eine] Person. | یک نفر اینجا زندگی می‌کند. | d: ein, der, das
+Das ist [ein] Tee aus Iran. | این یک چای ایرانی است. | d: eine, die, das
+Da kommt [ein] Mann. | آنجا یک مرد می‌آید. | d: eine, die, das
+Hier ist [ein] Kaffee für Anna. | این یک قهوه برای آناست. | d: eine, die, das
+Wir suchen [eine] Straße. | ما دنبال یک خیابان می‌گردیم. | d: ein, der, das
+Das ist [ein] Kind von Maryam. | این یکی از بچه‌های مریم است. | d: eine, der, die
+Ich brauche [eine] Nummer. | من یک شماره لازم دارم. | d: ein, der, das
+Österreich ist [ein] Land und Wien ist [eine] Stadt. | اتریش یک کشور است و وین یک شهر. | d: eine, der, die / ein, der, das
+Leon ist [ein] Junge und Mia ist [ein] Mädchen. | لئون پسر است و میا دختر. | d: eine, die, das / eine, der, die
+Ich habe [ein] Haus und [ein] Auto. | من یک خانه و یک ماشین دارم. | d: eine, der, die / eine, der, die
+Das ist [ein] Haus und das ist [eine] Schule. | این یک خانه است و آن یک مدرسه. | d: eine, der, die / ein, der, das
+Das ist [eine] Frau und das ist [ein] Kind. | این یک خانم است و این یک بچه. | d: ein, der, das / eine, der, die
+Da ist [ein] Auto. [Das] Auto ist neu. | آنجا یک ماشین هست. ماشین نو است. | d: eine, der, die / Der, Die, Eine
+Hier ist [ein] Buch. [Das] Buch ist sehr alt. | اینجا یک کتاب هست. کتاب خیلی قدیمی است. | d: eine, der, die / Der, Die, Eine
+transforms:
+Das ist ein Haus. => Das ist eine Schule. | به‌جای Haus کلمه Schule را بگذار، با حرف تعریف درست.
+Das ist eine Stadt. => Das ist ein Land. | به‌جای Stadt کلمه Land را بگذار، با حرف تعریف درست.
+Hier ist ein Telefon. => Hier ist eine Telefonnummer. | به‌جای Telefon کلمه Telefonnummer را بگذار، با حرف تعریف درست.
+Da ist ein Mann. => Da ist eine Frau. | به‌جای Mann کلمه Frau را بگذار، با حرف تعریف درست.
+Das ist ein Junge. => Das ist ein Mädchen. | به‌جای Junge کلمه Mädchen را بگذار، با حرف تعریف درست.
+translations:
+این یک کتاب است. => Das ist ein Buch.
+من یک ماشین دارم. => Ich habe ein Auto.
+کلن شهری در آلمان است. => Köln ist eine Stadt in Deutschland.
+این‌ها کتاب‌اند. => Das sind Bücher.
+آنجا یک خانم هست. => Da ist eine Frau. ; Dort ist eine Frau.

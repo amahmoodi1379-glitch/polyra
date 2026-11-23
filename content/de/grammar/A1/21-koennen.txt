@@ -1,0 +1,72 @@
+code: de-a1-koennen
+title: können و قاب جمله: Ich kann heute nicht kommen
+scope: صرف können در Präsens، توانستن و بلد بودن (Ich kann schwimmen) و «می‌شود» با man (Hier kann man gut essen)، با فعل دوم بی‌تغییر در آخر جمله (قاب جمله)؛ müssen، wollen و dürfen در واحدهای بعد می‌آیند.
+can_do: حالا می‌توانی بگویی چه کاری از دستت برمی‌آید: «می‌توانم شنا کنم» و «امروز نمی‌توانم بیایم».
+rule: können در جای دوم صرف می‌شود و فعل دوم بی‌تغییر آخر جمله می‌آید: Ich kann heute nicht kommen. ich و er/sie/es هر دو kann.
+mistake: فارسی‌زبان‌ها فعل دوم را هم صرف می‌کنند یا درست بعد از kann می‌گذارند: «Ich kann komme morgen» و «Ich kann kommen morgen» غلط است؛ درست: Ich kann morgen kommen. er هم kann است، نه «er kannt».
+tables: Präsens | modal
+lesson:
+können یعنی «توانستن» یا «بلد بودن»: Ich kann schwimmen یعنی «می‌توانم شنا کنم» یا «شنا بلدم».
+مثل möchte، können در جای دوم صرف می‌شود و فعل اصلی بی‌تغییر (مصدر) به آخر جمله می‌رود: Ich kann heute nicht kommen.
+این دو تکه مثل قابی دور بقیه جمله‌اند و به آن قاب جمله (Satzklammer) می‌گویند.
+können بی‌قاعده است: ich kann و er kann پسوند ندارند و در مفرد حرف صدادار عوض می‌شود: du kannst، ولی wir können و ihr könnt.
+با man معنی «می‌شود» می‌دهد: Hier kann man gut essen یعنی «اینجا می‌شود خوب غذا خورد».
+nicht پیش از مصدر آخر می‌نشیند: Ich kann heute nicht kommen.
+table:
+شخص | können | مثال
+ich | kann | Ich kann schwimmen.
+du | kannst | Kannst du kochen?
+er/sie/es | kann | Anna kann gut singen.
+wir | können | Wir können morgen kommen.
+ihr | könnt | Könnt ihr Deutsch sprechen?
+sie/Sie | können | Können Sie das wiederholen?
+examples:
+Ich kann Deutsch sprechen. | می‌توانم آلمانی صحبت کنم.
+Kannst du morgen kommen? | فردا می‌توانی بیایی؟
+Im Park kann man Fußball spielen. | در پارک می‌شود فوتبال بازی کرد.
+Lena kann nicht schwimmen. | لنا شنا بلد نیست.
+targets:
+Ich [kann] gut schwimmen. | من خوب شنا بلدم. | d: könne, kannst, können | hint: (können)
+[Kannst] du Deutsch sprechen? | می‌توانی آلمانی صحبت کنی؟ | d: Kann, Könnt, Können | hint: (können)
+Anna [kann] sehr gut kochen. | آنا خیلی خوب آشپزی بلد است. | d: kannst, könnt, können | hint: (können)
+Wir [können] morgen kommen. | ما فردا می‌توانیم بیاییم. | d: kann, könnt, kannst | hint: (können) | full: Morgen können wir kommen.
+[Könnt] ihr heute kommen? | امروز می‌توانید بیایید؟ | d: Können, Kann, Kannst | hint: (können)
+[Können] Sie das buchstabieren? | می‌توانید آن را هجی کنید؟ | d: Kann, Könnt, Kannst | hint: (können)
+Max [kann] nicht kommen. | ماکس نمی‌تواند بیاید. | d: kannst, könnt, können | hint: (können)
+Die Kinder [können] schon lesen. | بچه‌ها دیگر خواندن بلدند. | d: kann, kannst, könnt | hint: (können)
+Hier [kann] man gut essen. | اینجا می‌شود خوب غذا خورد. | d: kannst, könnt, können | hint: (können) | full: Man kann hier gut essen.
+Ich kann heute nicht [arbeiten]. | امروز نمی‌توانم کار کنم. | d: arbeite, arbeitet, arbeitest | full: Heute kann ich nicht arbeiten.
+Kannst du Fahrrad [fahren]? | دوچرخه‌سواری بلدی؟ | d: fährst, fahrt, fahre
+Lena kann sehr gut [singen]. | لنا خیلی خوب آواز می‌خواند. | d: singt, singe, singst
+Wir können am Wochenende Fußball [spielen]. | آخر هفته می‌توانیم فوتبال بازی کنیم. | d: spielt, spiele, spielst | full: Am Wochenende können wir Fußball spielen.
+Können Sie das bitte [wiederholen]? | می‌شود لطفاً آن را تکرار کنید؟ | d: wiederholt, wiederhole, wiederholst
+Ich kann das Wort nicht [lesen]. | نمی‌توانم این کلمه را بخوانم. | d: lese, liest, lest | full: Das Wort kann ich nicht lesen.
+Paul kann leider nicht [kommen]. | پاول متأسفانه نمی‌تواند بیاید. | d: kommt, komme, kommst | full: Leider kann Paul nicht kommen.
+Ich [kann gut Englisch sprechen]. | من خوب انگلیسی صحبت می‌کنم. | d: kann sprechen gut Englisch, spreche gut Englisch kann, gut Englisch sprechen kann | full: Englisch kann ich gut sprechen.
+Anna [kann heute nicht kommen]. | آنا امروز نمی‌تواند بیاید. | d: kann kommen heute nicht, kommt heute nicht kann, heute nicht kommen kann | full: Heute kann Anna nicht kommen.
+[Kannst du schwimmen]? | شنا بلدی؟ | d: Schwimmen du kannst, Kannst schwimmen du, Du schwimmen kannst
+Wir [können hier warten]. | ما می‌توانیم اینجا منتظر بمانیم. | d: können warten hier, warten hier können, hier warten können | full: Hier können wir warten.
+Man [kann hier gut einkaufen]. | اینجا می‌شود خوب خرید کرد. | d: kann einkaufen hier gut, kauft hier gut ein kann, hier gut einkaufen kann | full: Hier kann man gut einkaufen.
+Max [kann sehr gut tanzen]. | ماکس خیلی خوب می‌رقصد. | d: kann tanzen sehr gut, tanzt sehr gut kann, sehr gut tanzen kann
+Ich [kann] kein Englisch. | من انگلیسی بلد نیستم. | d: könne, kannst, können | hint: (können)
+Wie bitte? [Können] Sie das noch einmal sagen? | ببخشید؟ می‌شود یک بار دیگر بگویید؟ | d: Kann, Könnt, Kannst | hint: (können)
+Ich [kann] nicht [schwimmen]. | من شنا بلد نیستم. | d: kannst, könnt, können / schwimme, schwimmst, schwimmt
+[Kannst] du heute [kommen]? – Nein, leider nicht. | امروز می‌توانی بیایی؟ – نه، متأسفانه نه. | d: Kann, Könnt, Können / kommst, kommt, komme
+Wir [können] am Samstag ins Kino [gehen]. | شنبه می‌توانیم به سینما برویم. | d: kann, könnt, kannst / geht, gehe, gehst | full: Am Samstag können wir ins Kino gehen.
+[Könnt] ihr Deutsch [sprechen]? | شما آلمانی صحبت می‌کنید؟ | d: Können, Kann, Kannst / sprecht, spricht, sprichst
+Lena [kann] gut [kochen], aber sie kann nicht tanzen. | لنا خوب آشپزی بلد است، اما رقصیدن بلد نیست. | d: kannst, könnt, können / kocht, koche, kochst
+Ich [kann] Deutsch [lesen], aber ich kann es nicht gut sprechen. | آلمانی را می‌توانم بخوانم، اما نمی‌توانم خوب صحبتش کنم. | d: könne, kannst, können / lese, liest, lest
+[Kann] man hier Kaffee [trinken]? – Ja, natürlich. | اینجا می‌شود قهوه نوشید؟ – بله، البته. | d: Kannst, Könnt, Können / trinkt, trinke, trinkst
+Kann Anna Auto [fahren]? – Ja, sie [kann] gut Auto fahren. | آنا رانندگی بلد است؟ – بله، خوب رانندگی می‌کند. | d: fährt, fahre, fährst / kannst, könnt, können
+transforms:
+Ich spreche Deutsch. => Ich kann Deutsch sprechen. | با können بگو.
+Anna kocht sehr gut. => Anna kann sehr gut kochen. | با können بگو.
+Wir kommen morgen. => Wir können morgen kommen. ; Morgen können wir kommen. | با können بگو.
+Fährst du Auto? => Kannst du Auto fahren? | سؤال را با können بپرس.
+Ich kann gut schwimmen. => Paul kann gut schwimmen. | به‌جای ich، Paul را فاعل کن.
+translations:
+می‌توانم آلمانی صحبت کنم. => Ich kann Deutsch sprechen.
+فردا می‌توانی بیایی؟ => Kannst du morgen kommen?
+امروز نمی‌توانم کار کنم. => Ich kann heute nicht arbeiten. ; Heute kann ich nicht arbeiten.
+اینجا می‌شود قهوه نوشید؟ => Kann man hier Kaffee trinken?
+لنا خیلی خوب آشپزی بلد است. => Lena kann sehr gut kochen.

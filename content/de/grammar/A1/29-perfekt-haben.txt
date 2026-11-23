@@ -1,0 +1,84 @@
+code: de-a1-perfekt-haben
+title: Perfekt با haben: Ich habe Pizza gegessen
+scope: گذشته در گفتگو با Perfekt و haben: haben صرف‌شده در جای دوم و Partizip II آخر جمله؛ ساخت ge-…-t برای فعل‌های باقاعده (gemacht، gearbeitet)، ge-…-en برای فعل‌های بی‌قاعده (gegessen، geschrieben)، بدون ge برای فعل‌های be-، ver- و -ieren (bezahlt، verstanden، telefoniert) و ge وسط فعل جداشدنی (eingekauft، angerufen)؛ Perfekt با sein در واحد بعد می‌آید.
+can_do: حالا می‌توانی بگویی دیروز یا آخر هفته چه کار کردی: «دیروز پیتزا خوردم»، «به آنا زنگ زدم».
+rule: haben صرف‌شده در جای دوم + Partizip II آخر جمله (Ich habe gestern Pizza gegessen)؛ باقاعده ge-…-t (gemacht)، بی‌قاعده ge-…-en (gegessen)، be-، ver- و -ieren بدون ge (bezahlt، telefoniert)، جداشدنی با ge وسط (eingekauft).
+mistake: فارسی‌زبان‌ها Partizip را کنار haben می‌گذارند یا شکل ساده فعل را می‌آورند: «Ich habe gegessen Pizza» و «Ich habe Pizza essen» غلط است؛ درست: Ich habe Pizza gegessen. «gebezahlt» و «geeinkauft» هم غلط‌اند؛ درست: bezahlt، eingekauft.
+tables: Perfekt
+lesson:
+آلمانی برای کاری که در گذشته تمام شده، در گفتگو بیشتر Perfekt می‌گوید: Ich habe Pizza gegessen. یعنی «پیتزا خوردم».
+Perfekt دو تکه دارد: haben صرف‌شده در جای دوم و شکل سوم فعل (Partizip II) در آخر جمله؛ این هم یک قاب جمله است، مثل فعل وجهی.
+فعل‌های باقاعده: ge + ریشه + t؛ machen ← gemacht، kaufen ← gekauft، lernen ← gelernt. اگر ریشه به t یا d ختم شود -et می‌گیرد: arbeiten ← gearbeitet، warten ← gewartet.
+فعل‌های بی‌قاعده: ge + … + en و حرف صدادار گاهی عوض می‌شود: essen ← gegessen، lesen ← gelesen، schreiben ← geschrieben، trinken ← getrunken. این‌ها را مثل واژه حفظ کن.
+فعل‌هایی که با be- و ver- شروع می‌شوند یا به -ieren ختم می‌شوند ge نمی‌گیرند: bezahlt، besucht، verstanden، telefoniert.
+در فعل جداشدنی ge بین پیشوند و ریشه می‌آید: einkaufen ← eingekauft، anrufen ← angerufen، fernsehen ← ferngesehen.
+سؤال هم همان قاب را دارد: Was hast du gestern gemacht? Hast du gut geschlafen?
+table:
+نوع فعل | مصدر | Partizip II
+باقاعده | machen، arbeiten | gemacht، gearbeitet
+بی‌قاعده | essen، schreiben | gegessen، geschrieben
+be-، ver-، -ieren | bezahlen، verstehen، telefonieren | bezahlt، verstanden، telefoniert
+جداشدنی | einkaufen، anrufen | eingekauft، angerufen
+sets:
+ge-…-t: gemacht, gekauft, gelernt, gespielt, gearbeitet
+ge-…-en: gegessen, getrunken, gelesen, geschrieben, gesehen
+بدون ge: bezahlt, besucht, verstanden, bestellt, telefoniert
+examples:
+Ich habe gestern einen Film gesehen. | دیروز یک فیلم دیدم.
+Was hast du am Wochenende gemacht? | آخر هفته چه کار کردی؟
+Wir haben im Restaurant gegessen. | ما در رستوران غذا خوردیم.
+Hast du das verstanden? | این را فهمیدی؟
+targets:
+Ich habe gestern Deutsch [gelernt]. | دیروز آلمانی یاد گرفتم. | d: gelernen, lerne, lernen | full: Gestern habe ich Deutsch gelernt.
+Max hat ein Auto [gekauft]. | ماکس یک ماشین خرید. | d: gekaufen, kauft, kaufen
+Wir haben am Wochenende Fußball [gespielt]. | ما آخر هفته فوتبال بازی کردیم. | d: gespielen, spielen, spielt | full: Am Wochenende haben wir Fußball gespielt.
+Anna hat heute Suppe [gekocht]. | آنا امروز سوپ پخت. | d: gekochen, kocht, kochen | full: Heute hat Anna Suppe gekocht.
+Ich habe drei Stunden [gearbeitet]. | سه ساعت کار کردم. | d: gearbeiten, arbeitet, arbeiten
+Wir haben lange [gewartet]. | ما مدت زیادی منتظر ماندیم. | d: gewart, warten, wartet
+Was hast du [gesagt]? | چه گفتی؟ | d: gesagen, sagst, sagen
+Wer hat das Foto [gemacht]? | چه کسی این عکس را گرفت؟ | d: gemachen, macht, machen
+Es hat gestern [geregnet]. | دیروز باران آمد. | d: geregnen, regnet, regnen | full: Gestern hat es geregnet.
+Ich habe Max eine E-Mail [geschickt]. | برای ماکس یک ایمیل فرستادم. | d: geschicken, schicke, schicken
+Ich habe gestern Pizza [gegessen]. | دیروز پیتزا خوردم. | d: gegesst, geessen, isst | full: Gestern habe ich Pizza gegessen.
+Lena hat Kaffee [getrunken]. | لنا قهوه نوشید. | d: getrinkt, getrinken, trinkt
+Paul hat ein Buch [gelesen]. | پاول یک کتاب خواند. | d: gelest, geliest, liest
+Ich habe einen Brief [geschrieben]. | یک نامه نوشتم. | d: geschreibt, geschreiben, schreibt
+Habt ihr den Film [gesehen]? | فیلم را دیدید؟ | d: gesieht, geseht, seht
+Max hat mit Anna [gesprochen]. | ماکس با آنا صحبت کرد. | d: gesprecht, gesprechen, spricht
+Ich habe den Schlüssel [gefunden]. | کلید را پیدا کردم. | d: gefindet, gefinden, findet
+Anna hat den Bus [genommen]. | آنا با اتوبوس رفت. | d: genehmt, genimmt, nimmt
+Ich habe Max im Park [getroffen]. | ماکس را در پارک دیدم. | d: getrefft, getrifft, trifft | full: Im Park habe ich Max getroffen.
+Er hat die Rechnung [bezahlt]. | او صورت‌حساب را پرداخت. | d: gebezahlt, bezahlen, bezahlst
+Wir haben am Sonntag Oma [besucht]. | ما یکشنبه به دیدن مادربزرگ رفتیم. | d: gebesucht, besuchen, besuchst | full: Am Sonntag haben wir Oma besucht.
+Ich habe das nicht [verstanden]. | آن را نفهمیدم. | d: geverstanden, verstehen, verstehe
+Max hat eine Pizza [bestellt]. | ماکس یک پیتزا سفارش داد. | d: gebestellt, bestellen, bestellst
+Anna hat mit Max [telefoniert]. | آنا با ماکس تلفنی صحبت کرد. | d: getelefoniert, telefonieren, telefonierst
+Max hat im Supermarkt [eingekauft]. | ماکس در سوپرمارکت خرید کرد. | d: geeinkauft, eingekaufen, einkaufen | full: Im Supermarkt hat Max eingekauft.
+Ich habe Anna gestern [angerufen]. | دیروز به آنا زنگ زدم. | d: geanrufen, angeruft, anrufen | full: Gestern habe ich Anna angerufen. ; Ich habe gestern Anna angerufen.
+Die Kinder haben am Abend [ferngesehen]. | بچه‌ها شب تلویزیون دیدند. | d: geferngesehen, ferngeseht, fernsehen | full: Am Abend haben die Kinder ferngesehen.
+Paul hat das Formular [ausgefüllt]. | پاول فرم را پر کرد. | d: geausgefüllt, ausgefüllen, ausfüllen
+Wir [haben] den Film gesehen. | ما فیلم را دیدیم. | d: habt, hat, habe
+[Hast] du die Hausaufgaben gemacht? | تکلیف‌هایت را انجام دادی؟ | d: Hat, Habt, Habe
+Max [hat] gestern viel gearbeitet. | ماکس دیروز زیاد کار کرد. | d: habe, hast, haben | full: Gestern hat Max viel gearbeitet.
+[Habt] ihr schon gegessen? | شما غذا خورده‌اید؟ | d: Hat, Hast, Haben
+Ich [habe] am Morgen Tee [getrunken]. | صبح چای نوشیدم. | d: hat, hast, haben / getrinkt, getrinken, trinke | full: Am Morgen habe ich Tee getrunken.
+[Hast] du Anna [angerufen]? | به آنا زنگ زدی؟ | d: Hat, Habt, Habe / angeruft, geanrufen, anrufen
+Was [hast] du am Wochenende [gemacht]? | آخر هفته چه کار کردی؟ | d: hat, habt, habe / gemachen, machst, machen
+Lena [hat] ein Buch gelesen und Paul [hat] Musik gehört. | لنا کتاب خواند و پاول موسیقی گوش داد. | d: habe, hast, haben / habe, hast, haben
+Ich habe Pizza [gegessen] und Wasser [getrunken]. | پیتزا خوردم و آب نوشیدم. | d: gegesst, geessen, isst / getrinkt, getrinken, trinke
+Wir haben am Samstag [eingekauft] und am Abend [gekocht]. | ما شنبه خرید کردیم و شب آشپزی کردیم. | d: geeinkauft, eingekaufen, einkaufen / gekochen, kochen, kocht | full: Am Samstag haben wir eingekauft und am Abend gekocht.
+Hast du gut geschlafen? – Ja, ich [habe] gut [geschlafen]. | خوب خوابیدی؟ – بله، خوب خوابیدم. | d: hat, hast, habt / geschlaft, geschläft, schlafe
+Wir [haben] Oma besucht und Kuchen [gegessen]. | ما به دیدن مادربزرگ رفتیم و کیک خوردیم. | d: habt, hat, habe / gegesst, geessen, essen
+transforms:
+Ich lerne Deutsch. => Ich habe Deutsch gelernt. | جمله را به گذشته ببر (Perfekt).
+Max kauft ein Auto. => Max hat ein Auto gekauft. | جمله را به گذشته ببر (Perfekt).
+Wir essen Pizza. => Wir haben Pizza gegessen. | جمله را به گذشته ببر (Perfekt).
+Anna ruft Max an. => Anna hat Max angerufen. | جمله را به گذشته ببر (Perfekt).
+Ich bezahle die Rechnung. => Ich habe die Rechnung bezahlt. | جمله را به گذشته ببر (Perfekt).
+Du hast das Buch gelesen. => Hast du das Buch gelesen? | جمله را سؤالی کن.
+translations:
+دیروز پیتزا خوردم. => Ich habe gestern Pizza gegessen. ; Gestern habe ich Pizza gegessen.
+آخر هفته چه کار کردی؟ => Was hast du am Wochenende gemacht?
+آنا به ماکس زنگ زد. => Anna hat Max angerufen.
+آن را نفهمیدم. => Ich habe das nicht verstanden.
+ما در سوپرمارکت خرید کردیم. => Wir haben im Supermarkt eingekauft. ; Im Supermarkt haben wir eingekauft.

@@ -1,0 +1,726 @@
+// German A1 sentences for the card words 101–200 of content/de/words/A1.tsv, in teaching order.
+// Every other word is taught before the block's word. Oma and Opa are colloquial and get no sentences.
+
+# finden
+Ich [finde] mein Buch nicht. | کتابم را پیدا نمی‌کنم.
+Du [findest] das Haus nicht? | خانه را پیدا نمی‌کنی؟
+Anna [findet] ihr{ihr-det} Auto nicht. | آنا ماشینش را پیدا نمی‌کند.
+Wir [finden] das Geld. | ما پول را پیدا می‌کنیم.
+Ich kann das Wort nicht [finden]. | نمی‌توانم این کلمه را پیدا کنم. | d: trinken, fahren, wohnen
+Hier [findet] man gutes Brot. | اینجا نان خوب پیدا می‌شود.
+
+# suchen
+Ich [suche] mein Buch. | دنبال کتابم می‌گردم.
+Was [suchst] du? | دنبال چه می‌گردی؟
+Anna [sucht] eine Arbeit. | آنا دنبال کار می‌گردد.
+Wir [suchen] ein Haus in Köln. | ما دنبال یک خانه در کلن می‌گردیم. | d: wohnen, kommen, trinken
+Das Kind [sucht] seinen Vater. | بچه دنبال پدرش می‌گردد.
+Ich muss mein Geld [suchen]. | باید دنبال پولم بگردم.
+Herr Weber, was [suchen] Sie? | آقای وبر، دنبال چه می‌گردید؟ | d: wohnen, gehen, kommen
+
+# Mensch
+Er ist ein guter [Mensch]. | او آدم خوبی است. | d: Name, Tag, Kaffee
+Der [Mensch] braucht Wasser. | انسان به آب نیاز دارد. | d: Name, Tag, Kaffee
+Hier wohnen viele [Menschen]. | اینجا آدم‌های زیادی زندگی می‌کنند. | d: Namen, Tage, Wörter
+Viele [Menschen] sprechen Deutsch. | آدم‌های زیادی آلمانی حرف می‌زنند. | d: Namen, Tage, Wörter
+Ich mag die [Menschen] hier. | من آدم‌های اینجا را دوست دارم. | d: Namen, Tage, Wörter
+
+# Leute
+Die [Leute] hier sprechen Deutsch. | مردم اینجا آلمانی حرف می‌زنند. | d: Bücher, Häuser, Autos
+Viele [Leute] trinken hier Tee. | خیلی‌ها اینجا چای می‌نوشند. | d: Bücher, Häuser, Autos
+Wer sind die [Leute] dort? | آن آدم‌ها آنجا کی هستند؟ | d: Bücher, Häuser, Autos
+Die [Leute] fragen viel. | مردم زیاد سؤال می‌کنند. | d: Bücher, Häuser, Autos
+Viele junge [Leute] wohnen in Berlin. | جوان‌های زیادی در برلین زندگی می‌کنند. | d: Bücher, Häuser, Autos
+
+# immer
+Ich trinke [immer] Tee. | من همیشه چای می‌نوشم.
+Anna ist [immer] zu Hause. | آنا همیشه خانه است.
+Das Kind will [immer] spielen. | بچه همیشه می‌خواهد بازی کند.
+Wir fahren [immer] mit dem Auto. | ما همیشه با ماشین می‌رویم.
+Das sagst du [immer]! | همیشه همین را می‌گویی!
+
+# oft
+Ich trinke [oft] Kaffee. | من اغلب قهوه می‌نوشم.
+Wir gehen [oft] in die Stadt. | ما اغلب به شهر می‌رویم.
+Anna ist nicht [oft] zu Hause. | آنا زیاد خانه نیست.
+Wie [oft] lernst du Deutsch? | هر چند وقت یک بار آلمانی می‌خوانی؟
+Herr Weber fährt [oft] nach Wien. | آقای وبر اغلب به وین می‌رود.
+Das Kind spielt [oft] mit Max. | بچه اغلب با ماکس بازی می‌کند.
+
+# manchmal
+[Manchmal] trinke ich Tee. | گاهی چای می‌نوشم.
+Anna kommt [manchmal] zu uns. | آنا گاهی پیش ما می‌آید.
+Ich arbeite [manchmal] zu Hause. | من گاهی در خانه کار می‌کنم.
+Wir fahren [manchmal] nach Köln. | ما گاهی به کلن می‌رویم.
+[Manchmal] verstehe ich das nicht. | گاهی این را نمی‌فهمم.
+
+# nie
+Ich trinke [nie] Kaffee. | من هیچ‌وقت قهوه نمی‌نوشم.
+Anna ist [nie] zu Hause. | آنا هیچ‌وقت خانه نیست.
+Das Kind isst [nie] Brot. | بچه هیچ‌وقت نان نمی‌خورد.
+Wir fahren [nie] mit dem Auto. | ما هیچ‌وقت با ماشین نمی‌رویم.
+Herr Weber kommt [nie]. | آقای وبر هیچ‌وقت نمی‌آید.
+Das sage ich [nie]! | هرگز این را نمی‌گویم!
+
+# noch
+Anna ist [noch] zu Hause. | آنا هنوز خانه است.
+Ich lerne [noch] Deutsch. | من هنوز آلمانی یاد می‌گیرم.
+Das Kind ist [noch] klein. | بچه هنوز کوچک است.
+Wohnst du [noch] in Köln? | هنوز در کلن زندگی می‌کنی؟
+Herr Weber arbeitet [noch]. | آقای وبر هنوز کار می‌کند.
+Ich verstehe das [noch] nicht. | هنوز این را نمی‌فهمم.
+
+# schon
+Das Kind kann [schon] lesen. | بچه دیگر خواندن بلد است.
+Ich bin [schon] zu Hause. | من دیگر خانه‌ام.
+Kennst du Berlin [schon]? | برلین را از قبل می‌شناسی؟
+Wir haben [schon] ein Auto. | ما از قبل یک ماشین داریم.
+Du sprichst [schon] sehr gut Deutsch! | تو دیگر خیلی خوب آلمانی حرف می‌زنی!
+Ich weiß das [schon]. | این را از قبل می‌دانم.
+
+# nur
+Ich habe [nur] ein Kind. | من فقط یک بچه دارم.
+Ich trinke [nur] Wasser. | من فقط آب می‌نوشم.
+Anna spricht [nur] Deutsch. | آنا فقط آلمانی حرف می‌زند.
+Wir haben [nur] wenig Geld. | ما فقط پول کمی داریم.
+Das kann [nur] Max! | این را فقط ماکس بلد است!
+Hier wohnen [nur] alte Leute. | اینجا فقط آدم‌های پیر زندگی می‌کنند.
+
+# gern
+Ich lese [gern]. | من کتاب خواندن را دوست دارم.
+Anna trinkt [gern] Tee. | آنا چای دوست دارد.
+Wir spielen [gern] mit den Kindern. | ما دوست داریم با بچه‌ها بازی کنیم.
+Was machst du [gern]? | چه کاری را دوست داری؟
+Ich wohne [gern] in Berlin. | من زندگی در برلین را دوست دارم.
+Das Kind isst nicht [gern] Brot. | بچه نان دوست ندارد.
+
+# wann
+[Wann] kommst du? | چه وقت می‌آیی؟
+[Wann] fährt Anna nach Berlin? | آنا کی به برلین می‌رود؟
+[Wann] arbeitest du? | چه وقت کار می‌کنی؟
+Ich weiß nicht, [wann] Max kommt. | نمی‌دانم ماکس کی می‌آید.
+[Wann] essen wir? | کی غذا می‌خوریم؟
+[Wann] bist du zu Hause? | چه وقت خانه هستی؟
+
+# warum
+[Warum] lernst du Deutsch? | چرا آلمانی یاد می‌گیری؟
+[Warum] kommst du nicht? | چرا نمی‌آیی؟
+[Warum] ist das Kind nicht in der Schule? | چرا بچه مدرسه نیست؟
+Ich weiß nicht, [warum] Anna nicht kommt. | نمی‌دانم چرا آنا نمی‌آید.
+[Warum] trinkst du keinen Kaffee? | چرا قهوه نمی‌خوری؟
+[Warum] fragst du? | چرا می‌پرسی؟
+
+# wohin
+[Wohin] gehst du? | کجا می‌روی؟
+[Wohin] fährst du morgen? | فردا کجا می‌روی؟
+[Wohin] fahren wir heute? | امروز کجا می‌رویم؟
+Ich weiß nicht, [wohin] Anna geht. | نمی‌دانم آنا کجا می‌رود.
+[Wohin] geht das Kind? | بچه کجا می‌رود؟
+[Wohin] möchten Sie fahren? | می‌خواهید به کجا بروید؟
+
+# welcher
+[Welche] Sprache sprichst du? | چه زبانی حرف می‌زنی؟ | d: Was, Wie, Wo
+[Welches] Buch liest du? | کدام کتاب را می‌خوانی؟ | d: Was, Wie, Wo
+In [welcher] Stadt wohnst du? | در کدام شهر زندگی می‌کنی؟ | d: was, wie, wo
+[Welcher] Tag ist heute? | امروز چه روزی است؟ | d: Was, Wie, Wo
+[Welches] Auto möchtest du? | کدام ماشین را می‌خواهی؟ | d: Was, Wie, Wo
+Aus [welchem] Land kommst du? | اهل کدام کشوری؟ | d: was, wie, wo
+
+# wie viel
+[Wie viel] Geld hast du? | چقدر پول داری؟
+[Wie viel] Wasser trinkst du? | چقدر آب می‌نوشی؟
+[Wie viel] Kaffee trinkst du am Tag? | روزی چقدر قهوه می‌نوشی؟
+[Wie viel] Arbeit hast du heute? | امروز چقدر کار داری؟
+[Wie viel] Brot brauchen wir? | چقدر نان لازم داریم؟
+
+# alle
+[Alle] sind hier. | همه اینجا هستند.
+[Alle] sprechen Deutsch. | همه آلمانی حرف می‌زنند.
+Die Kinder sind [alle] zu Hause. | بچه‌ها همه خانه هستند.
+Wir gehen [alle] in die Stadt. | ما همه به شهر می‌رویم.
+[Alle] Kinder lernen Deutsch. | همه‌ی بچه‌ها آلمانی یاد می‌گیرند.
+Ich kenne hier [alle]. | من اینجا همه را می‌شناسم.
+
+# alles
+Ich habe [alles]. | من همه چیز را دارم.
+Das ist [alles]. | همه‌اش همین است.
+Ich verstehe [alles]. | من همه چیز را می‌فهمم.
+Anna weiß [alles]. | آنا همه چیز را می‌داند.
+[Alles] ist neu. | همه چیز نو است.
+Das Kind isst [alles]. | بچه همه چیز می‌خورد.
+
+# etwas
+Ich möchte [etwas] trinken. | من می‌خواهم چیزی بنوشم. | d: alles, nichts, alle
+Möchtest du [etwas] essen? | می‌خواهی چیزی بخوری؟ | d: alles, nichts, alle
+Hast du [etwas] Geld? | کمی پول داری؟ | d: alles, nichts, alle
+Ich muss dir [etwas] sagen. | باید چیزی به تو بگویم. | d: alles, nichts, alle
+Suchst du [etwas]? | دنبال چیزی می‌گردی؟ | d: alles, nichts, alle
+Ich spreche [etwas] Deutsch. | من کمی آلمانی حرف می‌زنم. | d: alles, nichts, alle
+
+# nichts
+Ich sage [nichts]. | من چیزی نمی‌گویم.
+Das Kind isst [nichts]. | بچه چیزی نمی‌خورد.
+Ich verstehe [nichts]. | من هیچ چیز نمی‌فهمم.
+Hier gibt es [nichts]. | اینجا هیچ چیز نیست.
+Wir haben [nichts] zu Hause. | ما در خانه هیچ چیز نداریم.
+Danke, ich möchte [nichts]. | ممنون، چیزی نمی‌خواهم.
+
+# jeder
+Ich lerne [jeden] Tag Deutsch. | من هر روز آلمانی یاد می‌گیرم. | d: welchen, keinen, diesen
+[Jedes] Kind braucht Eltern. | هر بچه‌ای به پدر و مادر نیاز دارد. | d: Welches, Kein, Dieses
+[Jeder] Mensch braucht Wasser. | هر انسانی به آب نیاز دارد. | d: Welcher, Kein, Dieser
+In [jeder] Stadt gibt es eine Schule. | در هر شهری یک مدرسه هست. | d: welcher, keiner, dieser
+[Jeder] kennt Herrn Weber. | همه آقای وبر را می‌شناسند. | d: Welcher, Keiner, Dieser
+Ich fahre [jeden] Tag mit dem Auto zur Arbeit. | من هر روز با ماشین سر کار می‌روم. | d: welchen, keinen, diesen
+
+# tschüss
+[Tschüss], Anna! | خداحافظ آنا!
+[Tschüss] und danke! | خداحافظ و ممنون! | d: Hallo, Bitte, Nein
+[Tschüss], ich muss jetzt gehen. | خداحافظ، باید بروم.
+Die Kinder sagen [tschüss]. | بچه‌ها خداحافظی می‌کنند.
+Sag [tschüss], Max! | خداحافظی کن، ماکس!
+
+# auf Wiedersehen
+[Auf Wiedersehen], Herr Weber! | خداحافظ، آقای وبر!
+[Auf Wiedersehen], Frau Schmidt! | خداحافظ، خانم اشمیت!
+Danke und [auf Wiedersehen]! | ممنون و خدانگهدار! | d: bitte, hallo, ja
+Ich sage [auf Wiedersehen]. | من خداحافظی می‌کنم.
+[Auf Wiedersehen], wir gehen jetzt. | خداحافظ، ما الان می‌رویم. | d: Hallo, Bitte, Danke
+
+# Entschuldigung
+[Entschuldigung], wo ist die Schule? | ببخشید، مدرسه کجاست؟ | d: Sprache, Stadt, Schule
+[Entschuldigung], sprechen Sie Deutsch? | ببخشید، شما آلمانی حرف می‌زنید؟ | d: Sprache, Stadt, Schule
+[Entschuldigung], wie heißen Sie? | ببخشید، اسم شما چیست؟ | d: Sprache, Stadt, Schule
+[Entschuldigung], ich verstehe das nicht. | ببخشید، این را نمی‌فهمم. | d: Sprache, Stadt, Schule
+Oh, [Entschuldigung]! | اوه، ببخشید! | d: Sprache, Stadt, Schule
+[Entschuldigung], wo gibt es hier Wasser? | ببخشید، اینجا کجا آب پیدا می‌شود؟ | d: Sprache, Stadt, Schule
+
+# okay
+[Okay], ich komme. | باشه، می‌آیم.
+[Okay], wir gehen jetzt. | باشه، الان می‌رویم.
+Das ist [okay]. | اشکالی ندارد.
+[Okay], danke! | باشه، ممنون!
+Ist das [okay] für dich? | این برای تو اشکالی ندارد؟
+[Okay], ich mache das. | باشه، این کار را می‌کنم.
+
+# guten Tag
+[Guten Tag], Herr Weber! | روز بخیر، آقای وبر! | d: Guten Morgen, Guten Abend, Gute Nacht
+[Guten Tag], wie heißen Sie? | روز بخیر، اسم شما چیست؟ | d: Guten Morgen, Guten Abend, Gute Nacht
+[Guten Tag], Frau Schmidt! | روز بخیر، خانم اشمیت! | d: Guten Morgen, Guten Abend, Gute Nacht
+[Guten Tag], ich bin Anna Weber. | روز بخیر، من آنا وبر هستم. | d: Guten Morgen, Guten Abend, Gute Nacht
+[Guten Tag], ich möchte einen Kaffee. | روز بخیر، یک قهوه می‌خواهم. | d: Guten Morgen, Guten Abend, Gute Nacht
+Herr Weber sagt [guten Tag]. | آقای وبر روز بخیر می‌گوید. | d: guten Morgen, guten Abend, gute Nacht
+
+# Morgen
+Ich trinke am [Morgen] Kaffee. | من صبح قهوه می‌نوشم.
+Am [Morgen] gehe ich zur Arbeit. | صبح سر کار می‌روم.
+Der [Morgen] ist schön. | صبح زیباست.
+Jeden [Morgen] lese ich. | هر صبح کتاب می‌خوانم.
+Heute [Morgen] war ich in der Stadt. | امروز صبح در شهر بودم.
+
+# guten Morgen
+[Guten Morgen], Anna! | صبح بخیر، آنا! | d: Guten Tag, Guten Abend, Gute Nacht
+[Guten Morgen], Herr Weber! | صبح بخیر، آقای وبر! | d: Guten Tag, Guten Abend, Gute Nacht
+Die Kinder sagen [guten Morgen]. | بچه‌ها صبح بخیر می‌گویند. | d: guten Tag, guten Abend, gute Nacht
+[Guten Morgen]! Möchtest du einen Kaffee? | صبح بخیر! قهوه می‌خواهی؟ | d: Guten Tag, Guten Abend, Gute Nacht
+[Guten Morgen], Frau Schmidt! | صبح بخیر، خانم اشمیت! | d: Guten Tag, Guten Abend, Gute Nacht
+
+# Vorname
+Mein [Vorname] ist Anna. | اسم کوچک من آنا است. | d: Mann, Herr, Freund
+Wie ist Ihr [Vorname]? | اسم کوچک شما چیست؟ | d: Tag, Tee, Morgen
+Ist Max Ihr [Vorname]? | ماکس اسم کوچک شماست؟ | d: Tag, Tee, Morgen
+Schreiben Sie bitte Ihren [Vornamen]. | لطفاً اسم کوچکتان را بنویسید. | d: Mann, Freund, Sohn
+Wie schreibt man deinen [Vornamen]? | اسم کوچکت را چطور می‌نویسند؟ | d: Mann, Freund, Sohn
+Der [Vorname] von Herrn Weber ist Paul. | اسم کوچک آقای وبر پاول است. | d: Tag, Tee, Morgen
+
+# Familienname
+Mein [Familienname] ist Weber. | نام خانوادگی من وبر است. | d: Vorname, Mann, Freund
+Wie ist Ihr [Familienname]? | نام خانوادگی شما چیست؟ | d: Vorname, Mann, Freund
+Wie schreibt man Ihren [Familiennamen]? | نام خانوادگی شما را چطور می‌نویسند؟ | d: Vornamen, Mann, Freund
+Müller ist ein [Familienname]. | مولر یک نام خانوادگی است. | d: Vorname, Mann, Freund
+Der [Familienname] von Anna ist Schmidt. | نام خانوادگی آنا اشمیت است. | d: Vorname, Mann, Freund
+
+# Nachname
+Mein [Nachname] ist Müller. | فامیلی من مولر است. | d: Vorname, Mann, Freund
+Wie ist Ihr [Nachname], bitte? | فامیلی شما چیست، لطفاً؟ | d: Vorname, Mann, Freund
+Ist Weber Ihr [Nachname]? | وبر نام خانوادگی شماست؟ | d: Vorname, Tag, Tee
+Bitte schreiben Sie Ihren [Nachnamen]. | لطفاً نام خانوادگی‌تان را بنویسید. | d: Vornamen, Mann, Freund
+Ihr{ihr-det} [Nachname] ist Karimi. | نام خانوادگی او کریمی است. | d: Vorname, Tag, Tee
+
+# Adresse
+Wie ist Ihre [Adresse]? | آدرس شما چیست؟ | d: Sprache, Stadt, Schule
+Meine [Adresse] ist neu. | آدرس من جدید است. | d: Sprache, Stadt, Schule
+Ich habe die [Adresse] nicht. | من آدرس را ندارم. | d: Sprache, Stadt, Schule
+Schreiben Sie bitte Ihre [Adresse]. | لطفاً آدرستان را بنویسید. | d: Sprache, Stadt, Schule
+Kennst du die [Adresse] von Anna? | آدرس آنا را می‌دانی؟ | d: Sprache, Stadt, Schule
+Ich suche die [Adresse]. | دنبال آدرس می‌گردم. | d: Sprache, Stadt, Schule
+
+# Straße
+Wie heißt die [Straße]? | اسم این خیابان چیست؟
+Die [Straße] ist sehr alt. | این خیابان خیلی قدیمی است.
+In der [Straße] gibt es eine Schule. | در این خیابان یک مدرسه هست.
+Ich wohne in einer kleinen [Straße]. | من در یک خیابان کوچک زندگی می‌کنم.
+Die [Straßen] hier sind groß. | خیابان‌های اینجا بزرگ‌اند.
+
+# Nummer
+Wie ist deine [Nummer]? | شماره‌ات چیست؟ | d: Sprache, Schule, Mutter
+Meine [Nummer] ist neu. | شماره‌ام جدید است. | d: Sprache, Schule, Mutter
+Welche [Nummer] hat das Haus? | خانه چه شماره‌ای دارد؟ | d: Sprache, Schule, Mutter
+Ich habe deine [Nummer] nicht. | شماره‌ات را ندارم. | d: Sprache, Schule, Mutter
+Ich finde die [Nummer] nicht. | شماره را پیدا نمی‌کنم. | d: Sprache, Schule, Mutter
+
+# Telefon
+Das [Telefon] ist neu. | تلفن نو است. | d: Radio, Internet, Buch
+Wo ist das [Telefon]? | تلفن کجاست؟ | d: Radio, Internet, Buch
+Ich habe kein [Telefon]. | من تلفن ندارم. | d: Radio, Internet, Buch
+Anna ist am [Telefon]. | آنا پشت تلفن است. | d: Radio, Internet, Buch
+Das [Telefon] ist für dich. | تلفن با توست. | d: Radio, Internet, Buch
+
+# Telefonnummer
+Wie ist Ihre [Telefonnummer]? | شماره تلفن شما چیست؟ | d: Adresse, Straße, Sprache
+Hast du die [Telefonnummer] von Max? | شماره تلفن ماکس را داری؟ | d: Adresse, Straße, Sprache
+Meine [Telefonnummer] ist neu. | شماره تلفنم جدید است. | d: Adresse, Straße, Sprache
+Ich suche die [Telefonnummer] von Frau Weber. | دنبال شماره تلفن خانم وبر می‌گردم. | d: Adresse, Straße, Sprache
+Schreiben Sie bitte Ihre [Telefonnummer]. | لطفاً شماره تلفنتان را بنویسید. | d: Adresse, Straße, Sprache
+
+# Jahr
+Ich lerne ein [Jahr] Deutsch. | من یک سال آلمانی می‌خوانم.
+Das Kind ist ein [Jahr] alt. | بچه یک ساله است.
+Anna ist 20 [Jahre] alt. | آنا ۲۰ سال دارد.
+Jedes [Jahr] fahren wir nach Teheran. | هر سال به تهران می‌رویم.
+Das [Jahr] war sehr gut. | آن سال خیلی خوب بود.
+Wir wohnen schon viele [Jahre] in Berlin. | ما سال‌هاست در برلین زندگی می‌کنیم.
+
+# Alter
+Name, [Alter] und Adresse, bitte. | اسم، سن و آدرس، لطفاً.
+Sie{sie} hat ein Kind in deinem [Alter]. | او یک بچه هم‌سن تو دارد.
+Schreiben Sie bitte Ihr [Alter]. | لطفاً سنتان را بنویسید.
+Ich weiß sein [Alter] nicht. | سن او را نمی‌دانم.
+Man fragt nicht nach dem [Alter]. | از سن کسی نمی‌پرسند.
+
+# Jahre alt sein
+Man muss 18 [Jahre alt sein]. | باید ۱۸ ساله بود. | d: Jahre haben, Jahre alt haben, alt Jahre sein
+Das Kind muss 6 [Jahre alt sein]. | بچه باید ۶ ساله باشد. | d: Jahre haben, Jahre alt haben, alt Jahre sein
+Hier muss man 16 [Jahre alt sein]. | اینجا باید ۱۶ ساله بود. | d: Jahre haben, Jahre alt haben, alt Jahre sein
+Für die Arbeit muss man 18 [Jahre alt sein]. | برای این کار آدم باید ۱۸ ساله باشد. | d: Jahre haben, Jahre alt haben, alt Jahre sein
+Man muss nicht 18 [Jahre alt sein]. | لازم نیست آدم ۱۸ ساله باشد. | d: Jahre haben, Jahre alt haben, alt Jahre sein
+
+# geboren
+Ich bin in Teheran [geboren]. | من در تهران به دنیا آمده‌ام.
+Wo bist du [geboren]? | کجا به دنیا آمده‌ای؟
+Anna ist in Wien [geboren]. | آنا در وین متولد شده است.
+Das Kind ist in Deutschland [geboren]. | این بچه در آلمان به دنیا آمده است.
+Wann bist du [geboren]? | کی به دنیا آمده‌ای؟
+
+# ledig
+Ich bin [ledig]. | من مجردم.
+Ist Herr Weber [ledig]? | آقای وبر مجرد است؟
+Anna ist noch [ledig]. | آنا هنوز مجرد است.
+Max ist [ledig] und hat keine Kinder. | ماکس مجرد است و بچه ندارد.
+Sind Sie [ledig]? | شما مجرد هستید؟
+
+# verheiratet
+Ich bin [verheiratet]. | من متأهلم.
+Sind Sie [verheiratet]? | شما متأهل هستید؟
+Anna ist [verheiratet] und hat ein Kind. | آنا متأهل است و یک بچه دارد.
+Herr Weber ist nicht [verheiratet]. | آقای وبر متأهل نیست.
+Bist du ledig oder [verheiratet]? | مجردی یا متأهل؟
+Meine Eltern sind 30 Jahre [verheiratet]. | پدر و مادرم ۳۰ سال است که ازدواج کرده‌اند.
+
+# Persisch
+Ich spreche [Persisch]. | من فارسی حرف می‌زنم.
+Im Iran spricht man [Persisch]. | در ایران فارسی حرف می‌زنند.
+Sprechen Sie [Persisch]? | شما فارسی حرف می‌زنید؟
+Zu Hause sprechen wir [Persisch]. | ما در خانه فارسی حرف می‌زنیم.
+Mein [Persisch] ist gut, mein Deutsch nicht. | فارسی من خوب است، آلمانی‌ام نه.
+Anna lernt [Persisch]. | آنا فارسی یاد می‌گیرد.
+
+# Englisch
+Sprichst du [Englisch]? | انگلیسی حرف می‌زنی؟
+Ich spreche nur wenig [Englisch]. | من فقط کمی انگلیسی حرف می‌زنم.
+Das Kind lernt in der Schule [Englisch]. | بچه در مدرسه انگلیسی یاد می‌گیرد.
+Herr Weber spricht sehr gut [Englisch]. | آقای وبر خیلی خوب انگلیسی حرف می‌زند.
+Mein [Englisch] ist nicht gut. | انگلیسی من خوب نیست.
+
+# deutsch
+Das ist ein [deutsches] Auto. | این یک ماشین آلمانی است. | d: neues, altes, kleines
+Ich lese ein [deutsches] Buch. | من یک کتاب آلمانی می‌خوانم. | d: neues, altes, kleines
+Wir lernen [deutsche] Wörter. | ما کلمه‌های آلمانی یاد می‌گیریم. | d: neue, alte, kleine
+Anna hat einen [deutschen] Namen. | آنا یک اسم آلمانی دارد. | d: neuen, alten, kleinen
+Das [deutsche] Brot ist sehr gut. | نان آلمانی خیلی خوب است. | d: neue, alte, kleine
+
+# Iraner
+Ich bin [Iraner]. | من ایرانی هستم.
+Herr Ahmadi ist [Iraner]. | آقای احمدی ایرانی است.
+Viele [Iraner] wohnen in Hamburg. | ایرانی‌های زیادی در هامبورگ زندگی می‌کنند.
+Reza ist [Iraner] und wohnt in Köln. | رضا ایرانی است و در کلن زندگی می‌کند.
+Bist du [Iraner]? | تو ایرانی هستی؟
+
+# Iranerin
+Ich bin [Iranerin]. | من ایرانی هستم.
+Sara ist [Iranerin]. | سارا ایرانی است.
+Frau Karimi ist [Iranerin] und wohnt in Wien. | خانم کریمی ایرانی است و در وین زندگی می‌کند.
+Bist du [Iranerin]? | تو ایرانی هستی؟
+Meine Mutter ist [Iranerin]. | مادرم ایرانی است.
+
+# Person
+Wir sind 3 [Personen]. | ما سه نفر هستیم. | d: Adressen, Sprachen, Straßen
+Das Auto ist für 5 [Personen]. | این ماشین برای ۵ نفر است. | d: Adressen, Sprachen, Straßen
+Eine [Person] kommt heute nicht. | یک نفر امروز نمی‌آید.
+Wer ist die [Person] dort? | آن شخص آنجا کیست؟
+Hier wohnt nur eine [Person]. | اینجا فقط یک نفر زندگی می‌کند. | d: Adresse, Sprache, Straße
+
+# Junge
+Der [Junge] heißt Leon. | اسم آن پسر لئون است. | d: Name, Nachname, Vorname
+Der [Junge] spielt mit dem Auto. | پسر با ماشین بازی می‌کند. | d: Name, Nachname, Vorname
+Der [Junge] ist sehr groß. | آن پسر خیلی قدبلند است. | d: Name, Nachname, Vorname
+Die [Jungen] spielen zu Hause. | پسرها در خانه بازی می‌کنند. | d: Namen, Vornamen, Tage
+Ein [Junge] fragt: „Wo ist die Schule?“ | یک پسر می‌پرسد: «مدرسه کجاست؟»
+
+# Mädchen
+Das [Mädchen] heißt Mia. | اسم آن دختر میا است. | d: Alter, Deutsch, Englisch
+Ist das ein Junge oder ein [Mädchen]? | این پسر است یا دختر؟
+Die [Mädchen] lernen Deutsch. | دخترها آلمانی یاد می‌گیرند.
+Das [Mädchen] ist sehr klein. | آن دختر خیلی کوچک است. | d: Alter, Deutsch, Englisch
+Wir haben ein [Mädchen] und einen Jungen. | ما یک دختر و یک پسر داریم. | d: Alter, Deutsch, Englisch
+Das [Mädchen] liest ein Buch. | دختر کتاب می‌خواند.
+
+# Baby
+Anna hat ein [Baby]. | آنا یک نوزاد دارد. | d: Auto, Haus, Buch
+Das [Baby] heißt Emma. | اسم نوزاد اِما است. | d: Auto, Haus, Buch
+Das [Baby] ist sehr klein. | نوزاد خیلی کوچک است. | d: Auto, Haus, Buch
+Wo ist das [Baby]? | نوزاد کجاست؟ | d: Auto, Haus, Buch
+Das [Baby] ist jetzt zu Hause. | نوزاد حالا خانه است. | d: Auto, Haus, Buch
+
+# Familie
+Meine [Familie] wohnt in Teheran. | خانواده‌ام در تهران زندگی می‌کنند. | d: Mutter, Tochter, Schwester
+Ich habe eine große [Familie]. | من یک خانواده‌ی بزرگ دارم. | d: Mutter, Tochter, Schwester
+Wie geht es deiner [Familie]? | خانواده‌ات چطورند؟ | d: Mutter, Tochter, Schwester
+Die [Familie] Weber wohnt hier. | خانواده‌ی وبر اینجا زندگی می‌کنند. | d: Mutter, Tochter, Schwester
+Wir essen mit der [Familie]. | ما با خانواده غذا می‌خوریم. | d: Mutter, Tochter, Schwester
+Das ist meine [Familie]. | این خانواده‌ی من است. | d: Mutter, Tochter, Schwester
+
+# Bruder
+Mein [Bruder] heißt Ali. | اسم برادرم علی است.
+Ich habe einen [Bruder]. | من یک برادر دارم.
+Mein [Bruder] wohnt in Berlin. | برادرم در برلین زندگی می‌کند.
+Hast du einen [Bruder]? | برادر داری؟
+Mein [Bruder] ist 15 Jahre alt. | برادرم ۱۵ سال دارد.
+Meine [Brüder] wohnen in Teheran. | برادرهایم در تهران زندگی می‌کنند.
+
+# Schwester
+Meine [Schwester] heißt Mina. | اسم خواهرم میناست.
+Ich habe eine [Schwester]. | من یک خواهر دارم.
+Meine [Schwester] lernt Deutsch. | خواهرم آلمانی یاد می‌گیرد.
+Hast du eine [Schwester]? | خواهر داری؟
+Meine [Schwester] ist verheiratet. | خواهرم متأهل است.
+Meine [Schwestern] sind noch klein. | خواهرهایم هنوز کوچک‌اند.
+
+# Geschwister
+Hast du [Geschwister]? | خواهر و برادر داری؟ | d: Eltern, Kinder, Freunde
+Ich habe keine [Geschwister]. | من خواهر و برادر ندارم. | d: Eltern, Kinder, Freunde
+Meine [Geschwister] wohnen in Teheran. | خواهر و برادرهایم در تهران زندگی می‌کنند. | d: Eltern, Kinder, Freunde
+Meine [Geschwister] sprechen gut Deutsch. | خواهر و برادرهایم خوب آلمانی حرف می‌زنند. | d: Eltern, Kinder, Freunde
+Die [Geschwister] gehen in die Schule. | خواهر و برادرها به مدرسه می‌روند. | d: Eltern, Kinder, Freunde
+
+# Sohn
+Mein [Sohn] heißt Leon. | اسم پسرم لئون است.
+Wir haben einen [Sohn]. | ما یک پسر داریم.
+Der [Sohn] von Frau Schmidt wohnt in Wien. | پسر خانم اشمیت در وین زندگی می‌کند.
+Mein [Sohn] geht in die Schule. | پسرم به مدرسه می‌رود.
+Wie alt ist Ihr [Sohn]? | پسرتان چند سال دارد؟
+Ihre{ihr-det} [Söhne] wohnen in Köln. | پسرهایش در کلن زندگی می‌کنند.
+
+# Tochter
+Meine [Tochter] heißt Mia. | اسم دخترم میا است.
+Wir haben eine [Tochter]. | ما یک دختر داریم.
+Die [Tochter] von Anna ist sehr klein. | دختر آنا خیلی کوچک است.
+Meine [Tochter] lernt Englisch. | دخترم انگلیسی یاد می‌گیرد.
+Wie alt ist Ihre [Tochter]? | دخترتان چند سال دارد؟
+Meine [Töchter] gehen in die Schule. | دخترهایم به مدرسه می‌روند.
+
+# Mann-2
+Mein [Mann] heißt Paul. | اسم شوهرم پاول است.
+Das ist mein [Mann], Peter. | این شوهرم، پیتر، است.
+Ihr{ihr-det} [Mann] arbeitet in Berlin. | شوهرش در برلین کار می‌کند.
+Mein [Mann] kommt aus Österreich. | شوهرم اهل اتریش است.
+Frau Weber und ihr{ihr-det} [Mann] wohnen in Köln. | خانم وبر و شوهرش در کلن زندگی می‌کنند.
+Wo arbeitet Ihr{Ihr-det} [Mann]? | شوهرتان کجا کار می‌کند؟
+
+# Frau-2
+Meine [Frau] heißt Sara. | اسم همسرم ساراست.
+Das ist meine [Frau], Lena. | این همسرم، لنا، است.
+Seine [Frau] kommt aus dem Iran. | همسرش اهل ایران است.
+Herr Weber und seine [Frau] wohnen in Hamburg. | آقای وبر و همسرش در هامبورگ زندگی می‌کنند.
+Wie heißt Ihre{Ihr-det} [Frau]? | اسم همسرتان چیست؟
+Meine [Frau] arbeitet in der Schule. | همسرم در مدرسه کار می‌کند.
+
+# Großmutter
+Meine [Großmutter] wohnt in Isfahan. | مادربزرگم در اصفهان زندگی می‌کند.
+Meine [Großmutter] ist sehr alt. | مادربزرگم خیلی پیر است.
+Wir fahren heute zu meiner{mein} [Großmutter]. | امروز پیش مادربزرگم می‌رویم.
+Die [Großmutter] von Max liest gern. | مادربزرگ ماکس کتاب خواندن را دوست دارد.
+Meine [Großmutter] spricht kein Deutsch. | مادربزرگم آلمانی بلد نیست.
+
+# Großvater
+Mein [Großvater] ist 80 Jahre alt. | پدربزرگم ۸۰ سال دارد.
+Mein [Großvater] wohnt in Schiras. | پدربزرگم در شیراز زندگی می‌کند.
+Mein [Großvater] liest jeden Morgen. | پدربزرگم هر صبح کتاب می‌خواند.
+Ich gehe oft zu meinem [Großvater]. | من اغلب پیش پدربزرگم می‌روم.
+Der [Großvater] spielt mit den Kindern. | پدربزرگ با بچه‌ها بازی می‌کند.
+
+# Großeltern
+Meine [Großeltern] wohnen in Teheran. | پدربزرگ و مادربزرگم در تهران زندگی می‌کنند. | d: Eltern, Geschwister, Kinder
+Wir fahren zu den [Großeltern]. | ما پیش پدربزرگ و مادربزرگ می‌رویم. | d: Eltern, Geschwistern, Kindern
+Die [Großeltern] spielen mit den Kindern. | پدربزرگ و مادربزرگ با بچه‌ها بازی می‌کنند. | d: Eltern, Geschwister, Freunde
+Hast du noch [Großeltern]? | هنوز پدربزرگ و مادربزرگ داری؟ | d: Eltern, Geschwister, Kinder
+Meine [Großeltern] sprechen nur Persisch. | پدربزرگ و مادربزرگم فقط فارسی حرف می‌زنند. | d: Eltern, Geschwister, Kinder
+
+# Onkel
+Mein [Onkel] wohnt in Hamburg. | عمویم در هامبورگ زندگی می‌کند.
+Mein [Onkel] hat ein großes Auto. | دایی‌ام یک ماشین بزرگ دارد.
+Das ist mein [Onkel] Reza. | این عمویم رضاست.
+Wir fahren heute zu meinem [Onkel]. | امروز پیش عمویم می‌رویم.
+Mein [Onkel] arbeitet in Wien. | دایی‌ام در وین کار می‌کند.
+
+# Tante
+Meine [Tante] wohnt in Wien. | خاله‌ام در وین زندگی می‌کند.
+Meine [Tante] hat keine Kinder. | عمه‌ام بچه ندارد.
+Das ist meine [Tante] Mina. | این خاله‌ام میناست.
+Ich gehe heute zu meiner{mein} [Tante]. | امروز پیش خاله‌ام می‌روم.
+Meine [Tante] spricht sehr gut Englisch. | عمه‌ام خیلی خوب انگلیسی حرف می‌زند.
+
+# allein
+Ich wohne [allein]. | من تنها زندگی می‌کنم.
+Das Kind ist [allein] zu Hause. | بچه تنها در خانه است.
+Anna fährt [allein] nach Berlin. | آنا تنها به برلین می‌رود.
+Ich kann das [allein] machen. | من می‌توانم این کار را تنهایی انجام بدهم.
+Mein Großvater wohnt [allein]. | پدربزرگم تنها زندگی می‌کند.
+Bist du [allein]? | تنهایی؟
+
+# zusammen
+Wir wohnen [zusammen]. | ما با هم زندگی می‌کنیم.
+Wir lernen [zusammen] Deutsch. | ما با هم آلمانی یاد می‌گیریم.
+Die Kinder spielen [zusammen]. | بچه‌ها با هم بازی می‌کنند.
+Gehen wir [zusammen] in die Stadt? | با هم به شهر برویم؟
+Wir essen heute [zusammen]. | امروز با هم غذا می‌خوریم.
+Anna und Lena fahren [zusammen] nach Wien. | آنا و لنا با هم به وین می‌روند.
+
+# Zahl
+Die [Zahl] ist sehr groß. | این عدد خیلی بزرگ است. | d: Straße, Sprache, Stadt
+Welche [Zahl] ist das? | این چه عددی است؟ | d: Straße, Sprache, Stadt
+Das Kind kann die [Zahlen] schon lesen. | بچه دیگر می‌تواند عددها را بخواند. | d: Straßen, Sprachen, Städte
+Wir lernen heute die [Zahlen]. | امروز عددها را یاد می‌گیریم. | d: Straßen, Sprachen, Städte
+Schreib die [Zahl], bitte. | لطفاً عدد را بنویس. | d: Straße, Sprache, Adresse
+Ich verstehe die [Zahl] nicht. | من این عدد را نمی‌فهمم. | d: Straße, Sprache, Adresse
+
+# null
+Die Zahl 0 heißt [null]. | اسم عدد ۰ صفر است.
+Ich habe [null] Geld. | پولم صفر است.
+Das Kind kennt schon die Zahl [null]. | بچه دیگر عدد صفر را می‌شناسد.
+Auch [null] ist eine Zahl. | صفر هم یک عدد است.
+Die Zahl [null] ist klein. | عدد صفر کوچک است.
+
+# eins
+Es ist jetzt [eins]. | الان ساعت یک است.
+Wir kommen um [eins]. | ساعت یک می‌آییم.
+Hast du ein Buch? – Ja, ich habe [eins]. | کتاب داری؟ – بله، یکی دارم.
+Null und [eins] ist eins. | صفر و یک می‌شود یک.
+Die Brote sind gut. Ich nehme [eins]. | نان‌ها خوب‌اند. یکی برمی‌دارم.
+
+# zwei
+Ich habe [zwei] Kinder. | من دو بچه دارم.
+Eins und eins ist [zwei]. | یک و یک می‌شود دو.
+Wir sind [zwei] Personen. | ما دو نفریم.
+Mein Sohn ist [zwei] Jahre alt. | پسرم دو ساله است.
+Ich spreche [zwei] Sprachen. | من دو زبان حرف می‌زنم.
+Anna hat [zwei] Brüder. | آنا دو برادر دارد.
+
+# drei
+Wir haben [drei] Kinder. | ما سه بچه داریم.
+Zwei und eins ist [drei]. | دو و یک می‌شود سه.
+Ich komme um [drei]. | ساعت سه می‌آیم.
+Das Haus hat die Nummer [drei]. | پلاک خانه سه است.
+Ich lese [drei] Bücher. | من سه کتاب می‌خوانم.
+
+# vier
+Zwei und zwei ist [vier]. | دو و دو می‌شود چهار.
+Wir sind [vier] Personen. | ما چهار نفریم.
+Meine Tochter ist [vier] Jahre alt. | دخترم چهار ساله است.
+Die Familie hat [vier] Kinder. | این خانواده چهار بچه دارد.
+Kommst du um [vier]? | ساعت چهار می‌آیی؟
+
+# fünf
+Drei und zwei ist [fünf]. | سه و دو می‌شود پنج.
+Ich arbeite [fünf] Tage. | من پنج روز کار می‌کنم.
+Das Kind ist [fünf] Jahre alt. | بچه پنج ساله است.
+Wir sind heute [fünf] Leute. | امروز پنج نفریم.
+Ich lerne heute [fünf] Wörter. | امروز پنج کلمه یاد می‌گیرم.
+
+# sechs
+Drei und drei ist [sechs]. | سه و سه می‌شود شش.
+Mein Bruder ist [sechs] Jahre alt. | برادرم شش ساله است.
+Wir brauchen [sechs] Brote. | شش نان لازم داریم.
+Ich gehe um [sechs] nach Hause. | ساعت شش به خانه می‌روم.
+Die Straße hat [sechs] Häuser. | این خیابان شش خانه دارد.
+
+# sieben
+Vier und drei ist [sieben]. | چهار و سه می‌شود هفت.
+Meine Schwester ist [sieben] Jahre alt. | خواهرم هفت ساله است.
+Ich komme um [sieben] nach Hause. | ساعت هفت به خانه می‌آیم.
+Wir sind [sieben] Geschwister. | ما هفت خواهر و برادریم.
+Ich kenne schon [sieben] deutsche Wörter. | من دیگر هفت کلمه آلمانی بلدم.
+
+# acht
+Vier und vier ist [acht]. | چهار و چهار می‌شود هشت.
+Das Kind ist [acht] Jahre alt. | بچه هشت ساله است.
+Wir essen um [acht]. | ساعت هشت غذا می‌خوریم.
+In der Familie sind [acht] Personen. | در این خانواده هشت نفرند.
+Meine Großmutter hat [acht] Kinder. | مادربزرگم هشت بچه دارد.
+
+# neun
+Fünf und vier ist [neun]. | پنج و چهار می‌شود نُه.
+Mein Sohn ist [neun] Jahre alt. | پسرم نُه ساله است.
+Wir fahren um [neun]. | ساعت نُه راه می‌افتیم.
+Ich wohne in Nummer [neun]. | من در پلاک نُه زندگی می‌کنم.
+Wir sind [neun] Leute. | ما نُه نفریم.
+
+# zehn
+Fünf und fünf ist [zehn]. | پنج و پنج می‌شود ده.
+Ich komme um [zehn]. | ساعت ده می‌آیم.
+Meine Tochter ist schon [zehn]. | دخترم دیگر ده سالش است.
+Ich lerne jeden Tag [zehn] Wörter. | هر روز ده کلمه یاد می‌گیرم.
+Ich wohne schon [zehn] Jahre hier. | ده سال است که اینجا زندگی می‌کنم.
+
+# elf
+Zehn und eins ist [elf]. | ده و یک می‌شود یازده.
+Mein Bruder ist [elf] Jahre alt. | برادرم یازده ساله است.
+Um [elf] bin ich zu Hause. | ساعت یازده خانه‌ام.
+In der Schule lernen [elf] Kinder Persisch. | در مدرسه یازده بچه فارسی یاد می‌گیرند.
+Ich habe [elf] deutsche Bücher. | من یازده کتاب آلمانی دارم.
+
+# zwölf
+Sechs und sechs ist [zwölf]. | شش و شش می‌شود دوازده.
+Es ist jetzt [zwölf]. | الان ساعت دوازده است.
+Meine Tochter ist [zwölf] Jahre alt. | دخترم دوازده ساله است.
+Ich kaufe [zwölf] Brote. | دوازده نان می‌خرم.
+Hier wohnen [zwölf] Familien. | اینجا دوازده خانواده زندگی می‌کنند.
+
+# dreizehn
+Zehn und drei ist [dreizehn]. | ده و سه می‌شود سیزده.
+Mein Sohn ist [dreizehn] Jahre alt. | پسرم سیزده ساله است.
+Unser Haus hat die Nummer [dreizehn]. | پلاک خانه ما سیزده است.
+Anna ist [dreizehn] und lernt schon Englisch. | آنا سیزده سالش است و از حالا انگلیسی یاد می‌گیرد.
+Wir sind [dreizehn] Leute im Haus. | ما سیزده نفر در خانه‌ایم.
+
+# vierzehn
+Sieben und sieben ist [vierzehn]. | هفت و هفت می‌شود چهارده.
+Meine Schwester ist [vierzehn] Jahre alt. | خواهرم چهارده ساله است.
+Ich bin [vierzehn] Tage in Berlin. | چهارده روز در برلین هستم.
+Hier wohnen [vierzehn] Kinder. | اینجا چهارده بچه زندگی می‌کنند.
+Wir lernen heute [vierzehn] neue Wörter. | امروز چهارده کلمه جدید یاد می‌گیریم.
+
+# fünfzehn
+Zehn und fünf ist [fünfzehn]. | ده و پنج می‌شود پانزده.
+Mein Bruder ist [fünfzehn] Jahre alt. | برادرم پانزده ساله است.
+In der Straße sind [fünfzehn] Häuser. | در این خیابان پانزده خانه هست.
+Ich kenne Reza schon [fünfzehn] Jahre. | پانزده سال است که رضا را می‌شناسم.
+Das Mädchen ist [fünfzehn] und spricht drei Sprachen. | این دختر پانزده سالش است و سه زبان حرف می‌زند.
+
+# sechzehn
+Acht und acht ist [sechzehn]. | هشت و هشت می‌شود شانزده.
+Meine Tochter ist [sechzehn] Jahre alt. | دخترم شانزده ساله است.
+Mit [sechzehn] darf man hier arbeiten. | اینجا آدم در شانزده‌سالگی اجازه دارد کار کند.
+In der Schule sind [sechzehn] Kinder aus dem Iran. | در مدرسه شانزده بچه اهل ایران هستند.
+Ich habe [sechzehn] Freunde in Berlin. | من در برلین شانزده دوست دارم.
+
+# siebzehn
+Zehn und sieben ist [siebzehn]. | ده و هفت می‌شود هفده.
+Mein Sohn ist jetzt [siebzehn]. | پسرم الان هفده سالش است.
+Mein Haus ist Nummer [siebzehn]. | خانه من پلاک هفده است.
+Hier wohnen [siebzehn] Personen. | اینجا هفده نفر زندگی می‌کنند.
+Meine Schwester ist [siebzehn] und lernt Deutsch. | خواهرم هفده سالش است و آلمانی یاد می‌گیرد.
+
+# achtzehn
+Neun und neun ist [achtzehn]. | نُه و نُه می‌شود هجده.
+Mit [achtzehn] darf man Auto fahren. | در هجده‌سالگی می‌شود رانندگی کرد.
+Mein Bruder ist [achtzehn] Jahre alt. | برادرم هجده ساله است.
+Ich bin jetzt [achtzehn]! | من الان هجده ساله‌ام!
+Das Haus ist [achtzehn] Jahre alt. | این خانه هجده ساله است.
+
+# neunzehn
+Zehn und neun ist [neunzehn]. | ده و نُه می‌شود نوزده.
+Meine Schwester ist [neunzehn] Jahre alt. | خواهرم نوزده ساله است.
+Lena ist [neunzehn] und arbeitet schon. | لنا نوزده سالش است و دیگر کار می‌کند.
+Das Auto ist [neunzehn] Jahre alt, aber noch gut. | این ماشین نوزده سال دارد، ولی هنوز خوب است.
+Ich kenne hier [neunzehn] Leute. | من اینجا نوزده نفر را می‌شناسم.
+
+# zwanzig
+Zehn und zehn ist [zwanzig]. | ده و ده می‌شود بیست.
+Ich bin [zwanzig] Jahre alt. | من بیست ساله‌ام.
+Hier lernen [zwanzig] Kinder Deutsch. | اینجا بیست بچه آلمانی یاد می‌گیرند.
+Das Buch ist [zwanzig] Jahre alt. | این کتاب بیست سال دارد.
+Wir brauchen Brot für [zwanzig] Personen. | برای بیست نفر نان لازم داریم.
+
+# dreißig
+Zwanzig und zehn ist [dreißig]. | بیست و ده می‌شود سی.
+Meine Tante ist [dreißig] Jahre alt. | خاله‌ام سی ساله است.
+Ich wohne schon [dreißig] Jahre in Teheran. | سی سال است که در تهران زندگی می‌کنم.
+Wir brauchen [dreißig] Bücher für die Schule. | برای مدرسه سی کتاب لازم داریم.
+Anna ist schon [dreißig], aber noch ledig. | آنا سی سالش است، ولی هنوز مجرد است.
+
+# vierzig
+Zwanzig und zwanzig ist [vierzig]. | بیست و بیست می‌شود چهل.
+Meine Mutter ist [vierzig] Jahre alt. | مادرم چهل سال دارد.
+Mein Onkel wohnt schon [vierzig] Jahre in Wien. | عمویم چهل سال است که در وین زندگی می‌کند.
+In der Straße wohnen [vierzig] Familien. | در این خیابان چهل خانواده زندگی می‌کنند.
+Wir sind [vierzig] Personen. | ما چهل نفریم.
+
+# fünfzig
+Dreißig und zwanzig ist [fünfzig]. | سی و بیست می‌شود پنجاه.
+Mein Vater ist [fünfzig] Jahre alt. | پدرم پنجاه سال دارد.
+Das Auto ist schon [fünfzig] Jahre alt! | این ماشین پنجاه سال دارد!
+Ich habe [fünfzig] Bücher zu Hause. | من در خانه پنجاه کتاب دارم.
+In der Stadt gibt es [fünfzig] Schulen. | در این شهر پنجاه مدرسه هست.
+
+# sechzig
+Dreißig und dreißig ist [sechzig]. | سی و سی می‌شود شصت.
+Meine Großmutter ist [sechzig] Jahre alt. | مادربزرگم شصت سال دارد.
+Mein Onkel ist [sechzig] und arbeitet noch. | عمویم شصت سالش است و هنوز کار می‌کند.
+In der Schule sind [sechzig] Kinder. | در این مدرسه شصت بچه هست.
+Mit [sechzig] lernt meine Mutter Deutsch. | مادرم در شصت‌سالگی آلمانی یاد می‌گیرد.
+
+# siebzig
+Vierzig und dreißig ist [siebzig]. | چهل و سی می‌شود هفتاد.
+Mein Großvater ist [siebzig] Jahre alt. | پدربزرگم هفتاد سال دارد.
+Unser Haus ist schon [siebzig] Jahre alt. | خانه ما هفتاد سال دارد.
+Meine Großmutter ist [siebzig] und wohnt allein. | مادربزرگم هفتاد سالش است و تنها زندگی می‌کند.
+Hier arbeiten [siebzig] Leute. | اینجا هفتاد نفر کار می‌کنند.
+
+# achtzig
+Vierzig und vierzig ist [achtzig]. | چهل و چهل می‌شود هشتاد.
+Mein Großvater ist schon [achtzig]. | پدربزرگم دیگر هشتاد سالش است.
+Meine Großeltern sind [achtzig] Jahre alt. | پدربزرگ و مادربزرگم هشتاد سال دارند.
+Hier gibt es [achtzig] Häuser. | اینجا هشتاد خانه هست.
+Mit [achtzig] fährt mein Großvater noch Auto. | پدربزرگم در هشتاد‌سالگی هنوز رانندگی می‌کند.
+
+# neunzig
+Fünfzig und vierzig ist [neunzig]. | پنجاه و چهل می‌شود نود.
+Meine Großmutter ist [neunzig] Jahre alt. | مادربزرگم نود سال دارد.
+Mein Großvater ist [neunzig] und liest noch viel. | پدربزرگم نود سالش است و هنوز زیاد می‌خواند.
+Die Schule hat [neunzig] Kinder. | این مدرسه نود بچه دارد.
+Ich kenne [neunzig] deutsche Wörter. | من نود کلمه آلمانی بلدم.
+
+# hundert
+Fünfzig und fünfzig ist [hundert]. | پنجاه و پنجاه می‌شود صد.
+Das Haus ist [hundert] Jahre alt. | این خانه صد سال دارد.
+Ich kann schon [hundert] Wörter lesen. | من دیگر صد کلمه را می‌توانم بخوانم.
+Hier wohnen [hundert] Menschen. | اینجا صد نفر زندگی می‌کنند.
+Die Stadt hat [hundert] Schulen. | این شهر صد مدرسه دارد.
+
+# tausend
+Ich kenne schon [tausend] Wörter! | من دیگر هزار کلمه بلدم!
+Die Stadt ist [tausend] Jahre alt. | این شهر هزار ساله است.
+In der Schule sind [tausend] Kinder. | در این مدرسه هزار بچه هست.
+In der Straße wohnen [tausend] Leute. | در این خیابان هزار نفر زندگی می‌کنند.
+Mein Großvater kennt [tausend] Leute in der Stadt. | پدربزرگم هزار نفر را در این شهر می‌شناسد.

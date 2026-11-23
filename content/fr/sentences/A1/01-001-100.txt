@@ -1,0 +1,750 @@
+// French A1, card words 1–100 in teaching order (content/fr/words/A1.tsv).
+// salut (2) is colloquial: it has no sentences of its own (PRD §5.4).
+
+# bonjour
+[Bonjour], Marie ! | سلام ماری!
+[Bonjour], je m'appelle Paul. | سلام، اسم من پل است.
+[Bonjour] Paul, tu vas bien ? | سلام پل، خوبی؟
+[Bonjour] les enfants ! | سلام بچه‌ها!
+Oui, [bonjour], qui est là ? | بله، سلام، کی آنجاست؟
+
+# merci
+[Merci], Paul ! | ممنون، پل!
+Oui, [merci]. | بله، ممنون.
+Non, [merci]. | نه، ممنون.
+[Merci], c'est très bon. | ممنون، خیلی خوشمزه است.
+[Merci], tu es un bon ami. | ممنون، تو دوست خوبی هستی.
+
+# oui
+[Oui], c'est ça. | بله، درست است.
+[Oui], je suis là. | بله، من اینجام.
+[Oui], j'ai une petite maison. | بله، من یک خانهٔ کوچک دارم.
+C'est Paul ? [Oui], c'est lui. | پل است؟ بله، خودش است.
+[Oui], il est très grand. | بله، او خیلی قدبلند است.
+
+# non
+[Non], ce n'est pas Paul. | نه، این پل نیست.
+[Non], il n'est pas ici. | نه، او اینجا نیست.
+[Non], la maison n'est pas grande. | نه، خانه بزرگ نیست.
+Tu es Marie ? [Non], je suis Léa. | تو ماری هستی؟ نه، من لئا هستم.
+[Non], ce n'est pas ça. | نه، این‌طور نیست.
+
+# être
+Je [suis] Paul. | من پل هستم.
+Tu [es] où ? | کجایی؟
+Marie [est] très petite. | ماری خیلی قدکوتاه است.
+Nous [sommes] à la maison. | ما در خانه هستیم.
+Vous [êtes] Marie ? | شما ماری هستید؟
+Paul et Léa [sont] amis. | پل و لئا با هم دوست‌اند.
+
+# c'est ça
+[C'est ça], merci. | درست است، ممنون. | d: Ça va, Il y a, De rien
+Tu es Paul ? Oui, [c'est ça]. | تو پل هستی؟ بله، درست است. | d: ça va, il y a, de rien
+Ah, [c'est ça] ! | آهان، پس این‌طور است! | d: ça va, il y a, de rien
+La maison est là ? Oui, [c'est ça]. | خانه آنجاست؟ بله، درست است. | d: ça va, il y a, de rien
+[C'est ça], il s'appelle Paul. | درست است، اسمش پل است. | d: Ça va, Il y a, De rien
+
+# avoir
+J'[ai] une petite maison. | من یک خانهٔ کوچک دارم.
+Tu [as] un ami ici ? | اینجا دوستی داری؟
+Paul [a] une grande maison. | پل یک خانهٔ بزرگ دارد.
+Nous [avons] un enfant. | ما یک بچه داریم.
+Vous [avez] un garçon et une fille ? | شما یک پسر و یک دختر دارید؟
+Ils [ont] une fille. | آن‌ها یک دختر دارند.
+
+# homme
+C'est un [homme] très grand. | او مردی خیلی قدبلند است.
+Qui est cet [homme] ? | این مرد کیست؟
+Les [hommes] sont là. | مردها آنجا هستند.
+Comment s'appelle l'[homme] ? | اسم آن مرد چیست؟
+Où est l'[homme] ? | آن مرد کجاست؟
+
+# femme
+Cette [femme] s'appelle Marie. | اسم این زن ماری است.
+Paul et sa [femme] sont ici. | پل و زنش اینجا هستند.
+La [femme] a une grande maison. | آن زن یک خانهٔ بزرگ دارد.
+Les [femmes] sont à la maison. | زن‌ها در خانه هستند.
+La [femme] est petite. | آن زن قدکوتاه است.
+
+# enfant
+J'ai un [enfant]. | من یک بچه دارم.
+L'[enfant] est petit. | بچه کوچک است. | d: homme, ami, garçon
+Les [enfants] sont à la maison. | بچه‌ها در خانه هستند. | d: hommes, amis, garçons
+L'[enfant] parle bien. | بچه خوب حرف می‌زند. | d: homme, ami, oncle
+Vous avez des [enfants] ? | شما بچه دارید؟
+
+# garçon
+C'est un petit [garçon]. | او یک پسر کوچک است.
+Le [garçon] s'appelle Hugo. | اسم پسر هوگو است.
+Le [garçon] est à la maison. | پسر در خانه است.
+Les [garçons] sont très grands. | پسرها خیلی قدبلند هستند.
+Qui est ce [garçon] ? | این پسر کیست؟
+
+# fille
+C'est ma [fille]. | این دخترم است.
+La [fille] s'appelle Léa. | اسم دختر لئا است.
+La petite [fille] est là. | دختر کوچولو آنجاست.
+Vous avez une [fille] ? | شما دختر دارید؟
+Comment s'appelle ta [fille] ? | اسم دخترت چیست؟
+
+# ami
+Paul est mon [ami]. | پل دوست من است.
+C'est un bon [ami]. | او دوست خوبی است.
+Où sont mes [amis] ? | دوستانم کجا هستند؟
+Léa est mon [amie]. | لئا دوست من است. | d: ami, amis, amies
+J'ai un [ami] à Paris. | من در پاریس یک دوست دارم.
+Mon [ami] s'appelle Ali. | اسم دوستم علی است.
+
+# nom
+Mon [nom] est Martin. | اسم من مارتن است.
+Le [nom] de l'enfant est Hugo. | اسم بچه هوگو است.
+Paul, c'est un bon [nom]. | پل اسم خوبی است.
+Les [noms] des{des-contr} enfants sont Léa et Hugo. | اسم بچه‌ها لئا و هوگو است.
+Ton [nom], c'est Marie ? | اسمت ماری است؟
+
+# s'appeler
+Je m'[appelle] Paul. | اسم من پل است.
+Tu t'[appelles] comment ? | اسمت چیست؟
+Il s'[appelle] Hugo. | اسمش هوگو است.
+Vous vous [appelez] comment ? | اسم شما چیست؟
+Les enfants s'[appellent] Léa et Hugo. | اسم بچه‌ها لئا و هوگو است.
+
+# aller
+Je [vais] à la maison. | من به خانه می‌روم.
+Tu [vas] où ? | کجا می‌روی؟
+Paul [va] à Paris. | پل به پاریس می‌رود.
+Nous [allons] à Lyon. | ما به لیون می‌رویم.
+Vous [allez] bien ? | حالتان خوب است؟
+Elles [vont] en France. | آن‌ها به فرانسه می‌روند.
+
+# bien
+Je vais [bien], merci. | من خوبم، ممنون.
+Il parle très [bien]. | او خیلی خوب حرف می‌زند.
+C'est [bien] ! | خوب است!
+L'enfant va [bien] ? | حال بچه خوب است؟
+Ici, c'est [bien]. | اینجا خوب است.
+
+# très
+C'est [très] bien. | خیلی خوب است.
+La maison est [très] grande. | خانه خیلی بزرگ است. | d: moins, plus, un peu
+Il est [très] petit. | او خیلی کوچک است. | d: moins, plus, un peu
+Marie parle [très] bien. | ماری خیلی خوب حرف می‌زند. | d: moins, plus, un peu
+Je vais [très] bien, merci. | خیلی خوبم، ممنون.
+
+# bon
+C'est [bon] ! | خوشمزه است!
+Paul est un [bon] ami. | پل دوست خوبی است.
+Marie est une [bonne] amie. | ماری دوست خوبی است.
+Ce sont de [bons] amis. | آن‌ها دوستان خوبی هستند.
+C'est un [bon] nom. | اسم خوبی است.
+
+# grand
+La maison est [grande]. | خانه بزرگ است.
+Paul est très [grand]. | پل خیلی قدبلند است.
+C'est un [grand] garçon. | او پسر بزرگی است.
+Les enfants sont [grands]. | بچه‌ها بزرگ شده‌اند.
+J'ai une [grande] fille. | من یک دختر بزرگ دارم.
+Ma maison n'est pas [grande]. | خانه‌ام بزرگ نیست.
+
+# petit
+La maison est [petite]. | خانه کوچک است.
+Mon ami est [petit]. | دوستم قدکوتاه است.
+Les enfants sont [petits]. | بچه‌ها کوچک هستند.
+Ma fille est très [petite]. | دخترم خیلی کوچک است.
+Le [petit] Hugo est là. | هوگوی کوچولو آنجاست.
+
+# maison
+Je suis à la [maison]. | من خانه هستم.
+C'est ma [maison]. | این خانهٔ من است.
+Où est ta [maison] ? | خانه‌ات کجاست؟
+Les [maisons] sont petites ici. | خانه‌ها اینجا کوچک هستند.
+Nous allons à la [maison]. | ما به خانه می‌رویم.
+
+# ici
+Je suis [ici]. | من اینجا هستم. | d: loin, là-bas, près
+Paul n'est pas [ici]. | پل اینجا نیست. | d: loin, là-bas, près
+Ma maison est [ici]. | خانهٔ من اینجاست. | d: loin, là-bas, près
+Les enfants sont [ici]. | بچه‌ها اینجا هستند. | d: loin, là-bas, près
+C'est [ici], la maison de Paul. | خانهٔ پل همین‌جاست. | d: loin, là-bas, près
+
+# là
+Marie n'est pas [là]. | ماری خانه نیست. | d: loin, là-bas, près
+Les enfants sont [là] ? | بچه‌ها هستند؟ | d: loin, là-bas, près
+Oui, je suis [là]. | بله، من اینجام. | d: loin, là-bas, près
+Ah, tu es [là] ! | آه، اینجایی! | d: loin, là-bas, près
+Mon ami est [là]. | دوستم اینجاست. | d: loin, là-bas, près
+
+# où
+[Où] est Paul ? | پل کجاست؟
+[Où] est la maison de Marie ? | خانهٔ ماری کجاست؟
+Vous êtes [où] ? | شما کجایید؟
+[Où] vas-tu ? | کجا می‌روی؟
+[Où] est mon ami ? | دوستم کجاست؟
+
+# qui
+[Qui] est là ? | چه کسی آنجاست؟
+[Qui] est cette femme ? | این زن کیست؟
+C'est [qui] ? | این کیست؟
+[Qui] parle ? | چه کسی حرف می‌زند؟
+Tu es [qui] ? | تو کی هستی؟
+[Qui] a une maison ici ? | چه کسی اینجا خانه دارد؟
+
+# quoi
+C'est [quoi] ? | این چیست؟
+Tu parles de [quoi] ? | دربارهٔ چی حرف می‌زنی؟
+[Quoi] ? Tu vas à Paris ? | چی؟ به پاریس می‌روی؟
+Tu as [quoi] à la maison ? | توی خانه چی داری؟
+C'est [quoi], ce nom ? | این دیگر چه اسمی است؟
+
+# comment
+[Comment] tu t'appelles ? | اسمت چیست؟
+[Comment] vas-tu ? | حالت چطور است؟
+[Comment] va ta fille ? | حال دخترت چطور است؟
+[Comment] est la maison ? | خانه چطور است؟
+[Comment] tu vas à Paris ? | چطور به پاریس می‌روی؟
+
+# au revoir
+[Au revoir], Marie ! | خداحافظ ماری!
+[Au revoir] et merci ! | خداحافظ و ممنون!
+[Au revoir], les enfants ! | خداحافظ بچه‌ها!
+Bon, [au revoir] ! | خب، خداحافظ!
+Je vais à la maison, [au revoir] ! | من به خانه می‌روم، خداحافظ!
+
+# parler
+Je [parle] à Marie. | با ماری حرف می‌زنم.
+Tu [parles] très bien ! | تو خیلی خوب حرف می‌زنی!
+Il [parle] à son ami. | او با دوستش حرف می‌زند.
+On [parle] de quoi ? | دربارهٔ چی حرف می‌زنیم؟
+Vous [parlez] à qui ? | با کی حرف می‌زنید؟
+Les enfants [parlent] bien. | بچه‌ها خوب حرف می‌زنند.
+Je vais [parler] à Paul. | می‌خواهم با پل حرف بزنم.
+
+# français-noun
+Je parle [français]. | من فرانسوی حرف می‌زنم. | d: anglais, persan, allemand
+Tu parles [français] ? | تو فرانسوی حرف می‌زنی؟ | d: anglais, persan, allemand
+Paul parle très bien [français]. | پل خیلی خوب فرانسوی حرف می‌زند. | d: anglais, persan, allemand
+Nous parlons [français] à la maison. | ما در خانه فرانسوی حرف می‌زنیم. | d: anglais, persan, allemand
+Ici, on parle [français]. | اینجا فرانسوی حرف می‌زنند. | d: anglais, persan, allemand
+Mon ami ne parle pas [français]. | دوستم فرانسوی حرف نمی‌زند. | d: anglais, persan, allemand
+
+# ça va
+Bonjour Marie, [ça va] ? | سلام ماری، خوبی؟ | d: c'est ça, il y a, de rien
+Oui, [ça va], merci. | بله، خوبم، ممنون. | d: c'est ça, il y a, de rien
+[Ça va], et toi ? | خوبم، تو چطوری؟ | d: C'est ça, Il y a, De rien
+Et les enfants, [ça va] ? | بچه‌ها چطورند؟ | d: c'est ça, il y a, de rien
+[Ça va] très bien ! | خیلی خوبم! | d: C'est ça, Il y a, De rien
+
+# il y a
+[Il y a] un homme ici. | اینجا یک مرد هست. | d: C'est ça, Ça va, Je voudrais
+[Il y a] 3 enfants à la maison. | سه بچه در خانه هستند. | d: C'est ça, Ça va, Je voudrais
+Qu'est-ce qu'[il y a] ? | چی شده؟ | d: c'est ça, ça va, je voudrais
+Ici, [il y a] une grande maison. | اینجا یک خانهٔ بزرگ هست. | d: c'est ça, ça va, je voudrais
+[Il y a] des enfants ici ? | اینجا بچه هست؟ | d: C'est ça, Ça va, Je voudrais
+
+# monsieur
+Bonjour, [monsieur] ! | سلام آقا!
+Merci, [monsieur]. | ممنون آقا.
+Qui est ce [monsieur] ? | این آقا کیست؟
+Au revoir, [monsieur] Martin. | خداحافظ آقای مارتن.
+Ce [monsieur] parle français. | این آقا فرانسوی حرف می‌زند.
+
+# madame
+Bonjour, [madame] ! | سلام خانم!
+Merci, [madame]. | ممنون خانم.
+Au revoir, [madame] Dubois ! | خداحافظ خانم دوبوا!
+[Madame], vous parlez français ? | خانم، شما فرانسوی حرف می‌زنید؟
+[Madame] Martin est là ? | خانم مارتن هستند؟
+
+# s'il vous plaît
+Votre nom, [s'il vous plaît]. | اسمتان، لطفاً.
+Oui, [s'il vous plaît], madame. | بله، لطفاً خانم.
+Parlez français, [s'il vous plaît]. | لطفاً فرانسوی حرف بزنید.
+Ici, [s'il vous plaît], monsieur. | اینجا، لطفاً آقا.
+Monsieur, votre fille, [s'il vous plaît] ? | آقا، دخترتان کجاست، لطفاً؟
+
+# s'il te plaît
+Parle français, [s'il te plaît]. | لطفاً فرانسوی حرف بزن.
+Ton nom, [s'il te plaît]. | اسمت، لطفاً.
+Marie, va à la maison, [s'il te plaît]. | ماری، لطفاً برو خانه.
+Parle à Paul, [s'il te plaît]. | لطفاً با پل حرف بزن.
+Oui, [s'il te plaît], Hugo. | بله، لطفاً هوگو.
+
+# pardon
+[Pardon], madame ! | ببخشید خانم!
+[Pardon], vous êtes monsieur Martin ? | ببخشید، شما آقای مارتن هستید؟
+Oh, [pardon] ! | اوه، ببخشید!
+[Pardon] ? Vous parlez à qui ? | ببخشید؟ با کی حرف می‌زنید؟
+[Pardon], où est la maison de Paul ? | ببخشید، خانهٔ پل کجاست؟
+
+# excusez-moi
+[Excusez-moi], monsieur. | ببخشید آقا.
+[Excusez-moi], vous parlez français ? | ببخشید، شما فرانسوی حرف می‌زنید؟
+Oh, [excusez-moi], madame ! | اوه، ببخشید خانم!
+[Excusez-moi], c'est ici ? | ببخشید، همین‌جاست؟
+[Excusez-moi], Paul n'est pas là. | ببخشید، پل نیست.
+
+# d'accord
+[D'accord], merci ! | باشه، ممنون! | d: Alors, Peut-être, Vraiment
+Oui, [d'accord]. | بله، باشه. | d: alors, peut-être, vraiment
+On va à Paris ? [D'accord] ! | به پاریس برویم؟ باشه! | d: Alors, Peut-être, Vraiment
+[D'accord], je vais à la maison. | باشه، من می‌روم خانه. | d: Alors, Peut-être, Vraiment
+Tu parles à Paul ? [D'accord]. | با پل حرف می‌زنی؟ باشه. | d: Alors, Peut-être, Vraiment
+
+# être d'accord
+Je [suis d'accord]. | موافقم.
+Tu [es d'accord] ? | موافقی؟
+Marie [est d'accord]. | ماری موافق است.
+Nous [sommes d'accord]. | ما موافقیم.
+Vous [êtes d'accord] ? | شما موافقید؟
+Oui, ils [sont d'accord]. | بله، آن‌ها موافق‌اند.
+
+# faire
+Qu'est-ce que tu [fais] ? | چه کار می‌کنی؟
+Qu'est-ce qu'il [fait] ici ? | او اینجا چه کار می‌کند؟
+On [fait] quoi ? | چه کار کنیم؟
+Vous [faites] quoi à Paris ? | شما در پاریس چه کار می‌کنید؟
+Les enfants [font] quoi ? | بچه‌ها چه کار می‌کنند؟
+Je vais [faire] ça. | این کار را می‌کنم.
+
+# mal
+Je vais [mal]. | حالم بد است.
+Il parle très [mal]. | او خیلی بد حرف می‌زند.
+Ce n'est pas [mal] ! | بد نیست!
+Marie va [mal] ? | حال ماری بد است؟
+Tu parles [mal] à ta fille ! | با دخترت بد حرف می‌زنی!
+
+# aller bien
+Ça va, je [vais bien]. | خوبم، حالم خوب است.
+Tu [vas bien] ? | خوبی؟
+Marie [va bien] ? | حال ماری خوب است؟
+Nous [allons bien], merci. | ما خوبیم، ممنون.
+Vous [allez bien], madame ? | خوب هستید خانم؟
+Les enfants [vont bien]. | بچه‌ها خوب‌اند.
+
+# aimer
+J'[aime] Paris. | من پاریس را دوست دارم.
+Tu [aimes] ta maison ? | خانه‌ات را دوست داری؟
+Il [aime] parler. | او حرف زدن را دوست دارد.
+Nous [aimons] la France. | ما فرانسه را دوست داریم.
+Vous [aimez] Lyon ? | لیون را دوست دارید؟
+Les enfants [aiment] le français. | بچه‌ها زبان فرانسوی را دوست دارند.
+
+# manger
+Je [mange] à la maison. | من در خانه غذا می‌خورم.
+Tu [manges] où ? | کجا غذا می‌خوری؟
+Paul [mange] bien. | پل خوب غذا می‌خورد.
+On [mange] quoi ? | چی بخوریم؟
+Vous [mangez] ici ? | اینجا غذا می‌خورید؟
+Les enfants ne [mangent] pas bien. | بچه‌ها خوب غذا نمی‌خورند.
+J'aime [manger] à la maison. | دوست دارم در خانه غذا بخورم.
+
+# boire
+Tu [bois] quoi ? | چی می‌نوشی؟
+Qu'est-ce que vous [buvez] ? | چه می‌نوشید؟
+Les enfants mangent et [boivent]. | بچه‌ها می‌خورند و می‌نوشند.
+Je ne [bois] pas ça. | من این را نمی‌نوشم.
+On va [boire] quoi ? | چی بنوشیم؟
+
+# habiter
+J'[habite] à Paris. | من در پاریس زندگی می‌کنم.
+Tu [habites] où ? | کجا زندگی می‌کنی؟
+Il [habite] ici. | او اینجا زندگی می‌کند.
+Nous [habitons] en France. | ما در فرانسه زندگی می‌کنیم.
+Vous [habitez] à Lyon ? | شما در لیون زندگی می‌کنید؟
+Mes amis [habitent] à Téhéran. | دوستانم در تهران زندگی می‌کنند.
+
+# travailler
+Je [travaille] à Paris. | من در پاریس کار می‌کنم.
+Tu [travailles] où ? | کجا کار می‌کنی؟
+Elle [travaille] à la maison. | او در خانه کار می‌کند.
+Nous ne [travaillons] pas ici. | ما اینجا کار نمی‌کنیم.
+Paul et Marie [travaillent] à Lyon. | پل و ماری در لیون کار می‌کنند.
+J'aime [travailler]. | من کار کردن را دوست دارم.
+
+# livre
+J'ai un [livre]. | من یک کتاب دارم. | d: cahier, stylo, crayon
+Où est mon [livre] ? | کتابم کجاست؟ | d: cahier, stylo, crayon
+C'est un bon [livre]. | کتاب خوبی است. | d: cahier, stylo, tableau
+J'aime ce [livre]. | من این کتاب را دوست دارم. | d: cahier, stylo, tableau
+Les [livres] sont à la maison. | کتاب‌ها در خانه هستند.
+C'est un [livre] de français. | این یک کتاب فرانسه است. | d: cahier, stylo, cours
+
+# voiture
+J'ai une [voiture]. | من یک ماشین دارم.
+La [voiture] est petite. | ماشین کوچک است.
+Ma [voiture] est là. | ماشینم آنجاست.
+Tu vas à Paris en [voiture] ? | با ماشین به پاریس می‌روی؟
+C'est la [voiture] de Paul. | این ماشین پل است.
+J'aime ta [voiture] ! | ماشینت را دوست دارم!
+
+# eau
+Je bois de l'[eau]. | من آب می‌نوشم.
+L'[eau] est bonne. | آب خوب است.
+Tu as de l'[eau] ? | آب داری؟
+De l'[eau], s'il vous plaît. | آب، لطفاً.
+Les enfants boivent de l'[eau]. | بچه‌ها آب می‌خورند. | d: idée, heure, assiette
+Il n'y a pas d'[eau] ici. | اینجا آب نیست.
+
+# pain
+Je mange du [pain]. | من نان می‌خورم.
+Le [pain] est bon. | نان خوشمزه است.
+Tu as du [pain] ? | نان داری؟
+J'aime le [pain]. | من نان دوست دارم.
+Il n'y a pas de [pain] à la maison. | در خانه نان نیست.
+Du [pain], s'il vous plaît. | نان، لطفاً.
+
+# café
+Je bois un [café]. | من یک قهوه می‌نوشم.
+Tu aimes le [café] ? | قهوه دوست داری؟
+Un [café], s'il vous plaît. | یک قهوه، لطفاً.
+Le [café] est très bon. | قهوه خیلی خوب است.
+Vous buvez un [café] ? | قهوه می‌خورید؟
+Il ne boit pas de [café]. | او قهوه نمی‌نوشد.
+
+# ville
+Paris est une grande [ville]. | پاریس شهر بزرگی است.
+J'aime cette [ville]. | من این شهر را دوست دارم.
+J'habite en [ville]. | من در شهر زندگی می‌کنم.
+Lyon est une [ville] de France. | لیون یکی از شهرهای فرانسه است.
+Ma [ville] est petite. | شهر من کوچک است.
+Tu aimes ta [ville] ? | شهرت را دوست داری؟
+
+# rue
+Comment s'appelle la [rue] ? | اسم این خیابان چیست؟
+La [rue] est petite. | کوچه کوچک است.
+J'aime cette [rue]. | من این خیابان را دوست دارم.
+Les [rues] de Lyon sont petites. | خیابان‌های لیون کوچک هستند.
+J'habite 5, [rue] de Paris. | من در خیابان پاریس، پلاک ۵ زندگی می‌کنم.
+C'est une grande [rue]. | خیابان بزرگی است.
+
+# école
+Je vais à l'[école]. | من به مدرسه می‌روم.
+L'[école] est petite. | مدرسه کوچک است.
+Les enfants sont à l'[école]. | بچه‌ها در مدرسه هستند.
+Où est l'[école] ? | مدرسه کجاست؟
+J'aime mon [école]. | من مدرسه‌ام را دوست دارم.
+Elle travaille à l'[école]. | او در مدرسه کار می‌کند.
+
+# travail
+Je vais au [travail]. | من سر کار می‌روم. | d: restaurant, marché, cinéma
+J'aime mon [travail]. | من کارم را دوست دارم. | d: restaurant, marché, quartier
+C'est un bon [travail]. | کار خوبی است. | d: restaurant, marché, livre
+Il est au [travail]. | او سر کار است. | d: restaurant, marché, cinéma
+Tu as du [travail] ? | کار داری؟ | d: pain, café, temps
+Mon [travail] est à Lyon. | کار من در لیون است. | d: restaurant, magasin, parc
+
+# famille
+J'aime ma [famille]. | من خانواده‌ام را دوست دارم.
+Ma [famille] habite à Téhéran. | خانواده‌ام در تهران زندگی می‌کنند.
+C'est une grande [famille]. | خانوادهٔ بزرگی است.
+Ta [famille] va bien ? | خانواده‌ات خوب‌اند؟
+La [famille] de Marie est là. | خانوادهٔ ماری اینجاست.
+Nous mangeons en [famille]. | ما با خانواده غذا می‌خوریم.
+
+# table
+La [table] est grande. | میز بزرگ است.
+À [table] ! | بیایید سر میز!
+C'est une petite [table]. | میز کوچکی است.
+Nous mangeons à [table]. | ما سر میز غذا می‌خوریم.
+J'aime cette [table]. | من این میز را دوست دارم.
+Il y a une [table] ici. | اینجا یک میز هست.
+
+# chien
+J'ai un [chien]. | من یک سگ دارم.
+Le [chien] mange. | سگ غذا می‌خورد. | d: chat, cheval, poisson
+Mon [chien] est très petit. | سگم خیلی کوچک است.
+Où est le [chien] ? | سگ کجاست؟
+C'est le [chien] de Paul. | این سگ پل است.
+Les [chiens] boivent de l'eau. | سگ‌ها آب می‌خورند.
+
+# chat
+Tu as un [chat] ? | گربه داری؟
+Le [chat] est à la maison. | گربه در خانه است.
+Le [chat] boit de l'eau. | گربه آب می‌خورد. | d: chien, cheval, poisson
+J'aime les [chats]. | من گربه‌ها را دوست دارم.
+Le petit [chat] est là. | گربهٔ کوچولو آنجاست.
+Le [chat] n'aime pas le chien. | گربه سگ را دوست ندارد. | d: cheval, poisson, pain
+
+# pourquoi
+[Pourquoi] tu es là ? | چرا اینجایی؟
+[Pourquoi] pas ? | چرا که نه؟
+[Pourquoi] il ne mange pas ? | چرا غذا نمی‌خورد؟
+[Pourquoi] tu aimes Paris ? | چرا پاریس را دوست داری؟
+Tu vas à Lyon ? [Pourquoi] ? | به لیون می‌روی؟ چرا؟
+[Pourquoi] la voiture est là ? | چرا ماشین آنجاست؟
+
+# quand
+Tu vas à Paris [quand] ? | کِی به پاریس می‌روی؟
+[Quand] est-ce que tu travailles ? | کِی کار می‌کنی؟
+C'est [quand] ? | چه وقت است؟
+Vous mangez [quand] ? | کِی غذا می‌خورید؟
+[Quand] est-ce qu'on va à la maison ? | کِی می‌رویم خانه؟
+
+# combien
+C'est [combien] ? | چند است؟
+Tu as [combien] d'enfants ? | چند تا بچه داری؟
+Il y a [combien] d'enfants ici ? | اینجا چند تا بچه هست؟
+Le pain, c'est [combien] ? | نان چند است؟
+Ça fait [combien] ? | چقدر می‌شود؟
+Vous êtes [combien] ? | چند نفرید؟
+
+# quel
+[Quel] est ton nom ? | اسمت چیست؟ | d: quelle, quels, quelles
+C'est [quelle] rue ? | کدام خیابان است؟ | d: quel, quels, quelles
+[Quelle] est ta voiture ? | ماشینت کدام است؟ | d: quel, quels, quelles
+Tu aimes [quel] livre ? | کدام کتاب را دوست داری؟ | d: quelle, quels, quelles
+Tu as [quels] livres ? | چه کتاب‌هایی داری؟ | d: quel, quelle, quelles
+[Quelle] ville ! | چه شهری! | d: quel, quels, quelles
+Tu vas à [quelle] école ? | به کدام مدرسه می‌روی؟ | d: quel, quels, quelles
+
+# parce que
+Je bois de l'eau [parce que] c'est bon. | آب می‌نوشم چون خوب است.
+J'aime Lyon [parce que] mes amis sont là. | لیون را دوست دارم چون دوستانم آنجا هستند.
+Pourquoi ? [Parce que] je travaille. | چرا؟ چون کار می‌کنم.
+Je vais à Paris [parce que] je travaille là. | به پاریس می‌روم چون آنجا کار می‌کنم.
+Il est petit [parce que] c'est un enfant. | او کوچک است چون بچه است.
+
+# mais
+Il est petit, [mais] il parle bien. | او کوچک است، ولی خوب حرف می‌زند.
+J'aime Paris, [mais] j'habite à Lyon. | پاریس را دوست دارم، ولی در لیون زندگی می‌کنم.
+Oui, [mais] pourquoi ? | بله، ولی چرا؟
+[Mais] non ! | نه خیر!
+La maison est petite, [mais] très bien. | خانه کوچک است، ولی خیلی خوب است.
+Paul parle français, [mais] pas Marie. | پل فرانسوی حرف می‌زند، ولی ماری نه.
+
+# ou
+Du café [ou] de l'eau ? | قهوه یا آب؟
+Tu vas à Paris [ou] à Lyon ? | به پاریس می‌روی یا لیون؟
+C'est un garçon [ou] une fille ? | پسر است یا دختر؟
+Oui [ou] non ? | بله یا نه؟
+On mange ici [ou] à la maison ? | اینجا غذا بخوریم یا خانه؟
+Un chat [ou] un chien ? | گربه یا سگ؟
+
+# avec
+Je vais à Paris [avec] Marie. | با ماری به پاریس می‌روم.
+Tu travailles [avec] qui ? | با کی کار می‌کنی؟
+Il habite [avec] sa famille. | او با خانواده‌اش زندگی می‌کند.
+Je parle [avec] mon ami. | با دوستم حرف می‌زنم.
+Je mange [avec] les enfants. | با بچه‌ها غذا می‌خورم.
+Elle est [avec] son chien. | او با سگش است.
+
+# pour
+C'est [pour] toi. | این برای توست.
+Un café [pour] moi, s'il vous plaît. | یک قهوه برای من، لطفاً.
+Je travaille [pour] ma famille. | برای خانواده‌ام کار می‌کنم.
+C'est un livre [pour] enfants. | این کتاب برای بچه‌هاست.
+Je vais à Lyon [pour] le travail. | برای کار به لیون می‌روم.
+C'est [pour] qui ? | برای کیست؟
+
+# sans
+Je vais à Paris [sans] Marie. | بدون ماری به پاریس می‌روم.
+Je vais au travail [sans] voiture. | بدون ماشین سر کار می‌روم.
+Je ne vais pas [sans] toi. | بدون تو نمی‌روم.
+Il mange [sans] parler. | او بدون حرف زدن غذا می‌خورد.
+Il va à l'école [sans] son livre. | او بدون کتابش به مدرسه می‌رود.
+
+# dans
+Le chat est [dans] la maison. | گربه داخل خانه است.
+J'habite [dans] une petite ville. | من در یک شهر کوچک زندگی می‌کنم.
+Le livre est [dans] la voiture. | کتاب توی ماشین است.
+Les enfants sont [dans] la rue. | بچه‌ها توی کوچه هستند.
+Il travaille [dans] une école. | او در یک مدرسه کار می‌کند.
+
+# sur
+Le livre est [sur] la table. | کتاب روی میز است.
+Le chat est [sur] la voiture. | گربه روی ماشین است.
+Il y a de l'eau [sur] la table. | روی میز آب ریخته است.
+Mon nom est [sur] le livre. | اسمم روی کتاب است.
+Il y a un chat [sur] la table ! | یک گربه روی میز است!
+
+# sous
+Le chat est [sous] la table. | گربه زیر میز است.
+Le chien est [sous] la voiture. | سگ زیر ماشین است.
+Il y a de l'eau [sous] la table. | زیر میز آب ریخته است.
+Les enfants sont [sous] la table. | بچه‌ها زیر میز هستند.
+Mon livre est [sous] la table. | کتابم زیر میز است.
+
+# chez
+Je vais [chez] Marie. | به خانهٔ ماری می‌روم.
+Je suis [chez] moi. | من خانه‌ام هستم.
+On mange [chez] Paul ? | خانهٔ پل غذا بخوریم؟
+Il habite [chez] un ami. | او خانهٔ یکی از دوستانش زندگی می‌کند.
+Tu es [chez] toi ? | خانه‌ای؟
+Les enfants sont [chez] Léa. | بچه‌ها خانهٔ لئا هستند.
+
+# aussi
+Moi [aussi] ! | من هم!
+Il parle [aussi] français. | او فرانسوی هم حرف می‌زند.
+Marie est [aussi] là. | ماری هم اینجاست.
+J'ai un chat et [aussi] un chien. | یک گربه دارم و یک سگ هم.
+Nous [aussi], nous habitons à Lyon. | ما هم در لیون زندگی می‌کنیم.
+C'est [aussi] ma maison. | این خانهٔ من هم هست.
+
+# beaucoup
+Merci [beaucoup] ! | خیلی ممنون! | d: peu, mal, moins
+Il mange [beaucoup]. | او زیاد غذا می‌خورد.
+J'aime [beaucoup] Paris. | پاریس را خیلی دوست دارم. | d: peu, mal, moins
+Il y a [beaucoup] de voitures ici. | اینجا ماشین زیاد است.
+Tu travailles [beaucoup] ! | تو خیلی کار می‌کنی!
+Elle a [beaucoup] d'amis. | او دوست‌های زیادی دارد.
+
+# peu
+Il mange [peu]. | او کم غذا می‌خورد.
+Il y a [peu] de voitures ici. | اینجا ماشین کم است.
+Elle parle [peu]. | او کم حرف می‌زند.
+J'ai [peu] d'amis ici. | اینجا دوست‌های کمی دارم.
+Il travaille très [peu]. | او خیلی کم کار می‌کند.
+Les enfants mangent [peu] de pain. | بچه‌ها نان کمی می‌خورند.
+
+# un peu
+Je parle [un peu] français. | من کمی فرانسوی حرف می‌زنم. | d: bien, très, beaucoup
+La maison est [un peu] petite. | خانه کمی کوچک است. | d: très, trop, bien
+[Un peu] de pain ? | کمی نان؟
+Elle travaille [un peu] à la maison. | او کمی در خانه کار می‌کند.
+Je bois [un peu] de café. | کمی قهوه می‌نوشم. | d: beaucoup, trop, plus
+
+# trop
+C'est [trop] grand. | بیش از حد بزرگ است.
+Tu manges [trop] ! | تو بیش از حد غذا می‌خوری!
+Il parle [trop]. | او بیش از حد حرف می‌زند. | d: peu, mal, bien
+Il y a [trop] de voitures ici. | اینجا بیش از حد ماشین هست.
+Je bois [trop] de café. | من بیش از حد قهوه می‌نوشم.
+La maison est [trop] petite pour nous. | خانه برای ما بیش از حد کوچک است. | d: un peu, plus, moins
+
+# plus
+Il travaille [plus] que moi. | او بیشتر از من کار می‌کند.
+Paul est [plus] grand que Marie. | پل از ماری قدبلندتر است.
+Un peu [plus] ? | کمی بیشتر؟
+Il y a [plus] de voitures ici. | اینجا ماشین بیشتری هست.
+Ma maison est [plus] petite. | خانهٔ من کوچک‌تر است.
+
+# moins
+Je mange [moins] que toi. | من کمتر از تو غذا می‌خورم.
+Marie est [moins] grande que Paul. | قد ماری از پل کوتاه‌تر است.
+Il y a [moins] de voitures ici. | اینجا ماشین کمتری هست.
+Je bois [moins] de café. | من کمتر قهوه می‌نوشم.
+Un peu [moins], s'il vous plaît. | کمی کمتر، لطفاً.
+
+# tout
+[Tout] va bien. | همه چیز خوب است. | d: Toute, Tous, Chaque
+[Toute] la famille est là. | همهٔ خانواده اینجا هستند. | d: tout, tous, toutes
+Je mange [tout] le pain. | همهٔ نان را می‌خورم. | d: toute, tous, toutes
+[Tous] les enfants sont à l'école. | همهٔ بچه‌ها در مدرسه هستند. | d: tout, toute, toutes
+C'est [tout], merci. | همین، ممنون. | d: tous, toute, toutes
+[Toutes] les maisons sont petites ici. | اینجا همهٔ خانه‌ها کوچک‌اند. | d: tout, toute, tous
+
+# chaque
+[Chaque] enfant a un livre. | هر بچه یک کتاب دارد. | d: Quel, Tous, Ces
+[Chaque] famille a une voiture. | هر خانواده یک ماشین دارد. | d: Quelle, Toutes, Ces
+[Chaque] ville a une école. | هر شهر یک مدرسه دارد. | d: Quelle, Toutes, Ces
+Un livre pour [chaque] enfant. | یک کتاب برای هر بچه. | d: quel, tous, ces
+[Chaque] rue a un nom. | هر خیابان یک اسم دارد. | d: Quelle, Toutes, Ces
+
+# rien
+Je ne mange [rien]. | هیچ چیز نمی‌خورم.
+Il n'y a [rien] ici. | اینجا هیچ چیز نیست.
+De [rien] ! | خواهش می‌کنم!
+Tu ne fais [rien] ? | هیچ کاری نمی‌کنی؟
+Je n'ai [rien] pour toi. | هیچ چیز برایت ندارم.
+Il ne boit [rien]. | او هیچ چیز نمی‌نوشد.
+
+# quelque chose
+Tu as [quelque chose] pour moi ? | چیزی برای من داری؟ | d: qui, quelqu'un, rien
+Je mange [quelque chose]. | یک چیزی می‌خورم.
+Il y a [quelque chose] dans la voiture. | یک چیزی توی ماشین هست.
+Tu bois [quelque chose] ? | چیزی می‌نوشی؟ | d: qui, quelqu'un, rien
+Il fait [quelque chose] à la maison. | او در خانه یک کاری می‌کند.
+[Quelque chose] ne va pas. | یک چیزی درست نیست.
+
+# quelqu'un
+Il y a [quelqu'un] ? | کسی هست؟ | d: rien, quelque chose, quoi
+[Quelqu'un] parle français ici ? | کسی اینجا فرانسوی حرف می‌زند؟ | d: Rien, Quelque chose, Quoi
+J'habite avec [quelqu'un]. | با کسی زندگی می‌کنم.
+C'est [quelqu'un] de bien. | آدم خوبی است.
+Je parle avec [quelqu'un]. | دارم با کسی حرف می‌زنم.
+[Quelqu'un] a une voiture ? | کسی ماشین دارد؟ | d: Rien, Quelque chose, Quoi
+
+# voilà
+[Voilà] ton café. | این هم قهوه‌ات.
+[Voilà] Paul ! | این هم پل!
+Ah, te [voilà] ! | آه، اینجایی!
+Et [voilà] ! | بفرما، تمام شد!
+[Voilà] ma maison. | این هم خانه‌ام.
+[Voilà] votre table, monsieur. | این هم میزتان، آقا.
+
+# voici
+[Voici] mon ami Paul. | این دوستم پل است.
+[Voici] la maison de Marie. | این خانهٔ ماری است. | d: Où, Non, Comment
+[Voici] votre café, madame. | این هم قهوه‌تان، خانم.
+[Voici] mes enfants. | این‌ها بچه‌های من هستند.
+[Voici] mon livre de français. | این کتاب فرانسهٔ من است.
+
+# alors
+[Alors], ça va ? | خب، چطوری؟
+[Alors], on mange ? | خب، غذا بخوریم؟
+[Alors], qu'est-ce qu'on fait ? | خب، چه کار کنیم؟
+Et [alors] ? | خب که چی؟
+Tu ne manges pas ? [Alors] je mange tout ! | نمی‌خوری؟ پس من همه‌اش را می‌خورم!
+
+# peut-être
+Oui, [peut-être]. | بله، شاید.
+Il est [peut-être] à la maison. | شاید خانه باشد.
+C'est [peut-être] Paul. | شاید پل باشد.
+Elle travaille [peut-être] à Lyon. | شاید در لیون کار کند.
+Il y a [peut-être] quelqu'un. | شاید کسی باشد.
+On va [peut-être] à Paris. | شاید به پاریس برویم.
+
+# ensemble
+On mange [ensemble] ? | با هم غذا بخوریم؟
+Nous travaillons [ensemble]. | ما با هم کار می‌کنیم.
+Paul et Ali habitent [ensemble]. | پل و علی با هم زندگی می‌کنند.
+On va à l'école [ensemble]. | با هم به مدرسه می‌رویم.
+Nous parlons [ensemble] en français. | ما با هم فرانسوی حرف می‌زنیم.
+Toute la famille est [ensemble]. | همهٔ خانواده دور هم هستند.
+
+# comme
+Il parle [comme] un enfant. | مثل بچه‌ها حرف می‌زند.
+Je suis [comme] toi. | من مثل تو هستم.
+[Comme] toi, j'aime Paris. | من هم مثل تو پاریس را دوست دارم.
+C'est [comme] ça. | همین‌طوری است.
+J'aime une ville [comme] Lyon. | شهری مثل لیون را دوست دارم.
+Fais [comme] moi. | مثل من انجامش بده.
+
+# bien sûr
+Oui, [bien sûr] ! | بله، البته! | d: peut-être, alors, vraiment
+[Bien sûr], c'est pour toi. | البته، این برای توست. | d: Peut-être, Alors, Vraiment
+Tu parles français ? [Bien sûr] ! | فرانسوی حرف می‌زنی؟ البته! | d: Peut-être, Alors, Vraiment
+[Bien sûr] que non ! | معلوم است که نه! | d: Peut-être, Alors, Vraiment
+Mais [bien sûr] ! | البته که! | d: peut-être, alors, vraiment
+
+# vraiment
+C'est [vraiment] bon ! | واقعاً خوشمزه است!
+Ah, [vraiment] ? | آه، واقعاً؟
+Il parle [vraiment] bien français. | او واقعاً خوب فرانسوی حرف می‌زند.
+J'aime [vraiment] cette ville. | من واقعاً این شهر را دوست دارم.
+Merci, [vraiment] ! | واقعاً ممنون!
+La maison est [vraiment] grande. | خانه واقعاً بزرگ است.
+
+# vouloir
+Je [veux] un café. | یک قهوه می‌خواهم.
+Tu [veux] manger ? | می‌خواهی غذا بخوری؟
+Il [veut] aller à Paris. | او می‌خواهد به پاریس برود.
+Nous [voulons] une grande maison. | ما یک خانهٔ بزرگ می‌خواهیم.
+Vous [voulez] de l'eau ? | آب می‌خواهید؟
+Les enfants [veulent] du pain. | بچه‌ها نان می‌خواهند.
+
+# je voudrais
+[Je voudrais] un café, s'il vous plaît. | یک قهوه می‌خواستم، لطفاً. | d: Il y a, C'est ça, Ça va
+[Je voudrais] de l'eau. | آب می‌خواستم. | d: Il y a, C'est ça, Ça va
+[Je voudrais] parler à Marie. | می‌خواستم با ماری صحبت کنم. | d: Il y a, C'est ça, Ça va
+Bonjour, [je voudrais] du pain. | سلام، نان می‌خواستم. | d: il y a, c'est ça, ça va
+[Je voudrais] aller à Lyon. | می‌خواستم به لیون بروم. | d: Il y a, C'est ça, Ça va
+Moi, [je voudrais] un livre. | من یک کتاب می‌خواستم. | d: il y a, c'est ça, ça va
+
+# pouvoir
+Je [peux] parler à Paul ? | می‌توانم با پل حرف بزنم؟
+Tu [peux] manger ici. | می‌توانی اینجا غذا بخوری.
+Il ne [peut] pas travailler. | او نمی‌تواند کار کند.
+Nous [pouvons] aller à Lyon. | ما می‌توانیم به لیون برویم.
+Vous [pouvez] aller chez Marie. | می‌توانید به خانهٔ ماری بروید.
+Les enfants [peuvent] manger avec nous. | بچه‌ها می‌توانند با ما غذا بخورند.

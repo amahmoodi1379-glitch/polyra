@@ -1,0 +1,90 @@
+code: de-a1-vokalwechsel
+title: فعل‌هایی که حرف صدادارشان عوض می‌شود: du sprichst، er fährt
+scope: فعل‌های پرکاربردی که در Präsens برای du و er/sie/es حرف صدادار وسطشان عوض می‌شود: e ← i (sprechen، essen، geben، nehmen)، e ← ie (sehen، lesen)، a ← ä (fahren)، و صرف wissen (ich weiß)؛ فعل‌های جداشدنی مثل anfangen (du fängst an) در واحد خودشان می‌آیند.
+can_do: حالا می‌توانی بگویی «او آلمانی صحبت می‌کند»، «به وین می‌رود» و «نمی‌دانم».
+rule: در این فعل‌ها فقط du و er/sie/es عوض می‌شوند: e ← i (du sprichst، er spricht)، e ← ie (er sieht)، a ← ä (du fährst)؛ ich، wir، ihr و sie/Sie عادی‌اند.
+mistake: فارسی‌زبان‌ها این فعل‌ها را مثل فعل‌های باقاعده صرف می‌کنند: «er sprecht» و «du fahrst» غلط است؛ درست: er spricht، du fährst. ich و wir عوض نمی‌شوند: ich spreche، نه «ich spriche».
+tables: Präsens | sprechen
+tables: Präsens | essen
+tables: Präsens | geben
+tables: Präsens | nehmen
+tables: Präsens | lesen
+tables: Präsens | sehen
+tables: Präsens | fahren
+tables: Präsens | helfen
+tables: Präsens | treffen
+tables: Präsens | schlafen
+tables: Präsens | tragen
+tables: Präsens | laufen
+tables: Präsens | gefallen
+tables: Präsens | wissen
+lesson:
+بیشتر فعل‌ها در Präsens فقط پسوند می‌گیرند، ولی چند فعل پرکاربرد برای du و er/sie/es حرف صدادار وسطشان را هم عوض می‌کنند.
+e به i می‌شود: sprechen ← du sprichst، er spricht؛ همین‌طور essen (er isst)، geben (er gibt) و nehmen (er nimmt).
+e به ie می‌شود: sehen ← du siehst، er sieht؛ lesen ← du liest، er liest.
+a به ä می‌شود: fahren ← du fährst، er fährt.
+ich، wir، ihr و sie/Sie عوض نمی‌شوند: ich spreche، wir fahren، ihr seht.
+wissen جداست: ich weiß، du weißt، er weiß، ولی wir wissen.
+هر کدام از این فعل‌ها را با شکل er آن حفظ کن: sprechen، er spricht.
+table:
+شخص | sprechen | sehen | fahren | wissen
+ich | spreche | sehe | fahre | weiß
+du | sprichst | siehst | fährst | weißt
+er/sie/es | spricht | sieht | fährt | weiß
+wir | sprechen | sehen | fahren | wissen
+ihr | sprecht | seht | fahrt | wisst
+sie/Sie | sprechen | sehen | fahren | wissen
+sets:
+e ← i: sprechen, essen, geben, nehmen
+e ← ie: sehen, lesen
+a ← ä: fahren
+examples:
+Anna spricht sehr gut Persisch. | آنا خیلی خوب فارسی صحبت می‌کند.
+Fährst du morgen nach Köln? | فردا به کلن می‌روی؟
+Max liest viel. | ماکس زیاد کتاب می‌خواند.
+Sara weiß die Adresse. | سارا نشانی را می‌داند.
+targets:
+Anna [spricht] Deutsch. | آنا آلمانی صحبت می‌کند. | d: sprecht, sprichst, spreche | hint: (sprechen)
+Du [sprichst] sehr gut Englisch. | تو خیلی خوب انگلیسی صحبت می‌کنی. | d: sprechst, spricht, spreche | hint: (sprechen)
+Paul [liest] ein Buch. | پاول یک کتاب می‌خواند. | d: lest, lese, lesst | hint: (lesen)
+Was [liest] du? | چه می‌خوانی؟ | d: lest, lese, lesen | hint: (lesen)
+Max [isst] Brot. | ماکس نان می‌خورد. | d: esst, isse, essen | hint: (essen)
+Was [isst] du heute? | امروز چه می‌خوری؟ | d: esst, esse, isse | hint: (essen)
+Lena [fährt] morgen nach Wien. | لنا فردا به وین می‌رود. | d: fahrt, fährst, fahre | hint: (fahren) | full: Morgen fährt Lena nach Wien.
+[Fährst] du nach Berlin? | به برلین می‌روی؟ | d: Fahrst, Fährt, Fahre | hint: (fahren)
+Anna [sieht] das Haus dort. | آنا آن خانه را آنجا می‌بیند. | d: seht, siehst, sehe | hint: (sehen)
+[Siehst] du den Mann? | آن مرد را می‌بینی؟ | d: Sehst, Sieht, Sehe | hint: (sehen)
+Der Vater [gibt] Max Geld. | پدر به ماکس پول می‌دهد. | d: gebt, gibst, gebe | hint: (geben)
+Was [gibt] es heute? | امروز چه هست؟ | d: gebt, gibst, geben
+Paul [nimmt] den Kaffee. | پاول قهوه را برمی‌دارد. | d: nehmt, nimmst, nehme | hint: (nehmen)
+[Nimmst] du einen Tee? | یک چای برمی‌داری؟ | d: Nehmst, Nimmt, Nehme | hint: (nehmen)
+Ich [weiß] das nicht. | من این را نمی‌دانم. | d: weißt, wissen, wisst | hint: (wissen) | full: Das weiß ich nicht.
+[Weißt] du das? | این را می‌دانی؟ | d: Wisst, Weiß, Wissen | hint: (wissen)
+Sara [weiß] alles. | سارا همه چیز را می‌داند. | d: wisst, weißt, wissen | hint: (wissen)
+Ich [spreche] Persisch. | من فارسی صحبت می‌کنم. | d: spriche, sprichst, spricht | hint: (sprechen)
+Wir [fahren] nach Hamburg. | ما به هامبورگ می‌رویم. | d: fähren, fährt, fahrt | hint: (fahren)
+Ich [lese] jetzt. | من الان کتاب می‌خوانم. | d: liese, liest, lest | hint: (lesen) | full: Jetzt lese ich.
+Ihr [esst] Brot. | شما نان می‌خورید. | d: isst, essen, esse | hint: (essen)
+[Seht] ihr das Auto? | ماشین را می‌بینید؟ | d: Sieht, Siehst, Sehen | hint: (sehen)
+Sie [sprechen] sehr gut Deutsch. | شما خیلی خوب آلمانی صحبت می‌کنید. | d: sprecht, sprichst, spreche | hint: (sprechen)
+Er [gibt] Lena das Buch. | او کتاب را به لنا می‌دهد. | d: gebt, gibst, gebe | hint: (geben)
+Was [nimmt] Anna? – Einen Tee. | آنا چه برمی‌دارد؟ – یک چای. | d: nehmt, nimmst, nehme | hint: (nehmen)
+Ich [spreche] Deutsch und du [sprichst] Englisch. | من آلمانی صحبت می‌کنم و تو انگلیسی. | d: spriche, sprichst, spricht / sprechst, spricht, spreche
+Ich [fahre] nach Wien und Anna [fährt] nach Köln. | من به وین می‌روم و آنا به کلن. | d: fähre, fährst, fahrt / fahrt, fährst, fahre
+[Liest] du das Buch? – Ja, ich [lese] das Buch. | این کتاب را می‌خوانی؟ – بله، می‌خوانمش. | d: Lest, Lese, Lesen / liese, liest, lest
+Was [isst] du? – Ich [esse] Brot. | چه می‌خوری؟ – نان می‌خورم. | d: esst, esse, essen / isse, isst, esst
+[Siehst] du Anna? – Nein, ich [sehe] Anna nicht. | آنا را می‌بینی؟ – نه، نمی‌بینمش. | d: Sehst, Sieht, Sehe / siehe, siehst, sieht
+Paul [nimmt] Kaffee und ich [nehme] Tee. | پاول قهوه برمی‌دارد و من چای. | d: nehmt, nimmst, nehme / nimme, nimmst, nimmt
+[Weißt] du die Adresse? – Nein, ich [weiß] das nicht. | نشانی را می‌دانی؟ – نه، نمی‌دانم. | d: Wisst, Weiß, Wissen / weißt, wissen, wisst | full: Weißt du die Adresse? – Nein, das weiß ich nicht.
+transforms:
+Ich spreche Deutsch. => Anna spricht Deutsch. | به‌جای ich، Anna را فاعل کن.
+Wir fahren nach Wien. => Du fährst nach Wien. | به‌جای wir، du را فاعل کن.
+Ich sehe das Haus. => Er sieht das Haus. | به‌جای ich، er را فاعل کن.
+Ich nehme den Tee. => Paul nimmt den Tee. | به‌جای ich، Paul را فاعل کن.
+Wir wissen das. => Ich weiß das. | به‌جای wir، ich را فاعل کن.
+translations:
+آنا آلمانی صحبت می‌کند. => Anna spricht Deutsch.
+پاول یک کتاب می‌خواند. => Paul liest ein Buch.
+نمی‌دانم. => Ich weiß das nicht. ; Ich weiß es nicht. ; Das weiß ich nicht.
+ماکس نان می‌خورد. => Max isst Brot.
+آن مرد را می‌بینی؟ => Siehst du den Mann?

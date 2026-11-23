@@ -1,0 +1,75 @@
+code: de-a1-gern-moegen
+title: gern و mögen: دوست داشتن
+scope: گفتن دوست داشتن با mögen برای چیزها و آدم‌ها (Ich mag Tee. Magst du Berlin?) و با gern بعد از فعل برای کارها (Ich lese gern. Ich trinke gern Tee.)، و منفی آن با nicht gern؛ lieber و am liebsten در واحدهای بعد می‌آیند.
+can_do: حالا می‌توانی بگویی چه چیزی را دوست داری و دوست داری چه کار کنی.
+rule: چیز یا آدم ← mögen (Ich mag Tee)؛ کار ← فعل صرف‌شده و بعد gern (Ich lese gern)؛ منفی: nicht gern (Ich arbeite nicht gern).
+mistake: فارسی‌زبان‌ها gern را مثل «دوست دارم» پیش از فعل می‌گذارند: «Ich gern lese» غلط است؛ درست: Ich lese gern. mögen هم بی‌قاعده است: ich mag، نه «ich möge».
+tables: Präsens | mögen
+lesson:
+فارسی برای همه چیز «دوست داشتن» دارد: «چای را دوست دارم»، «دوست دارم کتاب بخوانم».
+آلمانی دو راه دارد: برای چیزها و آدم‌ها mögen (Ich mag Tee. Ich mag Anna.) و برای کارها gern (Ich lese gern یعنی «دوست دارم کتاب بخوانم»).
+gern کلمه‌ای ثابت است و صرف نمی‌شود؛ خود فعل جمله صرف می‌شود: Ich spiele gern. Anna spielt gern.
+gern بعد از فعل و فاعل می‌آید و مفعول بعد از آن: Ich trinke gern Tee.
+mögen بی‌قاعده است: ich mag، du magst، er mag، ولی wir mögen.
+برای «دوست ندارم» nicht gern یا mag … nicht می‌گویی: Ich arbeite nicht gern. Ich mag das nicht.
+table:
+شخص | mögen
+ich | mag
+du | magst
+er/sie/es | mag
+wir | mögen
+ihr | mögt
+sie/Sie | mögen
+sets:
+mag: Kaffee, Tee, Brot, Berlin, Anna
+gern: lesen, spielen, lernen, arbeiten, schreiben
+examples:
+Ich mag Tee. | من چای دوست دارم.
+Anna liest gern. | آنا دوست دارد کتاب بخواند.
+Max spielt nicht gern. | ماکس دوست ندارد بازی کند.
+Magst du Hamburg? | هامبورگ را دوست داری؟
+targets:
+Ich [mag] Kaffee. | من قهوه دوست دارم. | d: möge, mögt, magst | hint: (mögen)
+[Magst] du Tee? | چای دوست داری؟ | d: Mögst, Mag, Mögt | hint: (mögen)
+Anna [mag] Berlin. | آنا برلین را دوست دارد. | d: mögt, magst, mögen | hint: (mögen)
+Wir [mögen] die Schule. | ما مدرسه را دوست داریم. | d: mag, mögt, magen | hint: (mögen)
+[Mögt] ihr Brot? | شما نان دوست دارید؟ | d: Mögen, Mag, Magst | hint: (mögen)
+Paul [mag] Lena. | پاول لنا را دوست دارد. | d: mögt, magst, mögen | hint: (mögen)
+[Mögen] Sie Kaffee? | شما قهوه دوست دارید؟ | d: Mag, Mögt, Magst | hint: (mögen)
+Die Kinder [mögen] Max. | بچه‌ها ماکس را دوست دارند. | d: mag, mögt, magst | hint: (mögen)
+Ich [mag] das nicht. | من این را دوست ندارم. | d: möge, mögt, magst | hint: (mögen)
+Ich [lese gern]. | من دوست دارم کتاب بخوانم. | d: gern lese, mag lese, lese mag
+Anna [spielt gern]. | آنا دوست دارد بازی کند. | d: gern spielt, mag spielt, spielt mag
+Wir [trinken gern Tee]. | ما دوست داریم چای بنوشیم. | d: gern trinken Tee, mögen trinken Tee, trinken Tee mögen | full: Tee trinken wir gern.
+Max [lernt gern Deutsch]. | ماکس دوست دارد آلمانی یاد بگیرد. | d: gern lernt Deutsch, mag lernt Deutsch, lernt Deutsch mag | full: Deutsch lernt Max gern.
+Ich [arbeite nicht gern]. | من دوست ندارم کار کنم. | d: nicht gern arbeite, gern nicht arbeite, mag nicht arbeite
+Lena [fährt gern] nach Wien. | لنا دوست دارد به وین برود. | d: gern fährt, mag fährt, fährt mag
+[Spielst du gern]? | دوست داری بازی کنی؟ | d: Du gern spielst, Gern du spielst, Spielst gern du
+[Liest du gern]? | دوست داری کتاب بخوانی؟ | d: Du gern liest, Gern du liest, Liest gern du
+Ich [esse gern Brot]. | من دوست دارم نان بخورم. | d: gern esse Brot, mag esse Brot, esse Brot mag | full: Brot esse ich gern.
+Wir [wohnen gern hier]. | ما دوست داریم اینجا زندگی کنیم. | d: gern wohnen hier, mögen wohnen hier, wohnen hier mögen | full: Hier wohnen wir gern.
+Sara [spricht gern Persisch]. | سارا دوست دارد فارسی صحبت کند. | d: gern spricht Persisch, mag spricht Persisch, spricht Persisch mag | full: Persisch spricht Sara gern.
+Ich trinke [gern] Tee. | من دوست دارم چای بنوشم. | d: mag, magst, mögen | full: Tee trinke ich gern.
+Lena [mag] Köln. | لنا کلن را دوست دارد. | d: gern, mögt, magst | hint: (mögen)
+Die Kinder spielen [gern] hier. | بچه‌ها دوست دارند اینجا بازی کنند. | d: mag, mögen, mögt | full: Hier spielen die Kinder gern.
+Ich [mag] die Stadt sehr. | من این شهر را خیلی دوست دارم. | d: gern, mögt, magst | hint: (mögen)
+Wir trinken [nicht gern] Kaffee. | ما دوست نداریم قهوه بنوشیم. | d: gern nicht, kein gern, nicht mag | full: Kaffee trinken wir nicht gern.
+Ich [mag] Kaffee und ich trinke [gern] Tee. | من قهوه دوست دارم و چای هم دوست دارم بنوشم. | d: möge, mögt, magst / mag, magst, mögen
+[Magst] du Berlin? – Ja, ich [mag] Berlin sehr. | برلین را دوست داری؟ – بله، خیلی دوستش دارم. | d: Mögst, Mag, Mögt / möge, mögt, magst
+Ich lese [gern], aber ich schreibe [nicht gern]. | دوست دارم بخوانم، اما دوست ندارم بنویسم. | d: mag, mögen, magst / kein gern, nicht mag, mag nicht
+[Mögt] ihr Wien? – Ja, wir [mögen] Wien. | وین را دوست دارید؟ – بله، وین را دوست داریم. | d: Mögen, Mag, Magst / mag, mögt, magst
+Anna spielt [gern] und Max liest [gern]. | آنا دوست دارد بازی کند و ماکس دوست دارد کتاب بخواند. | d: mag, mögen, mögt / mag, mögen, mögt
+Max [mag] Lena und Lena [mag] Max. | ماکس لنا را دوست دارد و لنا ماکس را. | d: mögt, magst, mögen / mögt, magst, mögen
+Magst du Kaffee? – Nein, ich [mag] Kaffee [nicht]. | قهوه دوست داری؟ – نه، قهوه دوست ندارم. | d: möge, mögt, magst / kein, nein, nichts
+transforms:
+Ich lese. => Ich lese gern. | با gern بگو که این کار را دوست داری.
+Anna spielt. => Anna spielt gern. | با gern بگو که این کار را دوست دارد.
+Ich trinke Tee. => Ich trinke gern Tee. ; Tee trinke ich gern. | با gern بگو که این کار را دوست داری.
+Ich arbeite gern. => Ich arbeite nicht gern. | جمله را منفی کن.
+Ich mag Kaffee. => Du magst Kaffee. | به‌جای ich، du را فاعل کن.
+translations:
+من چای دوست دارم. => Ich mag Tee. ; Ich trinke gern Tee.
+آنا دوست دارد کتاب بخواند. => Anna liest gern.
+دوست ندارم کار کنم. => Ich arbeite nicht gern.
+برلین را دوست داری؟ => Magst du Berlin?
+ما دوست داریم آلمانی یاد بگیریم. => Wir lernen gern Deutsch. ; Deutsch lernen wir gern.

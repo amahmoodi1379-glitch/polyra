@@ -1,0 +1,641 @@
+// French A1, card words 331–430 (drinks, food, the home, daily routine, shops).
+# thé
+Je bois un [thé] le matin. | صبح‌ها یک چای می‌خورم.
+Tu veux un [thé] ? | چای می‌خواهی؟
+Ma mère aime beaucoup le [thé]. | مادرم چای را خیلی دوست دارد.
+Je préfère le [thé] au café. | من چای را به قهوه ترجیح می‌دهم.
+En Iran, on boit beaucoup de [thé]. | در ایران مردم خیلی چای می‌خورند.
+Un [thé], s'il vous plaît. | یک چای، لطفاً.
+Nous prenons un [thé] ensemble après le travail. | بعد از کار با هم یک چای می‌خوریم.
+# lait
+Les enfants boivent du [lait]. | بچه‌ها شیر می‌خورند.
+Je prends mon café avec du [lait]. | قهوه‌ام را با شیر می‌خورم.
+Il n'y a pas de [lait] à la maison. | در خانه شیر نیست.
+Le bébé boit son [lait]. | نوزاد شیرش را می‌خورد.
+Tu veux du [lait] dans ton thé ? | توی چایت شیر می‌خواهی؟
+Thomas ne boit jamais de [lait]. | توما هیچ‌وقت شیر نمی‌خورد.
+# jus
+Les enfants aiment le [jus]. | بچه‌ها آب‌میوه دوست دارند.
+Tu veux un [jus] ou un café ? | آب‌میوه می‌خواهی یا قهوه؟
+Pour moi, un [jus], s'il te plaît. | برای من یک آب‌میوه، لطفاً.
+Il y a du [jus] sur la table. | روی میز آب‌میوه هست.
+Ma sœur boit un [jus] avec son pain. | خواهرم با نانش یک آب‌میوه می‌خورد.
+# boisson
+Quelle [boisson] est-ce que tu préfères ? | کدام نوشیدنی را ترجیح می‌دهی؟ | d: eau, tasse, bouteille
+En Iran, le thé est une [boisson] importante. | در ایران چای نوشیدنی مهمی است.
+Les [boissons] sont sur la table. | نوشیدنی‌ها روی میز هستند.
+Vous voulez une [boisson] ? | نوشیدنی می‌خواهید؟ | d: tasse, bouteille, glace
+Il n'y a pas de [boisson] pour les enfants. | برای بچه‌ها نوشیدنی نیست. | d: bouteille, tasse, glace
+Le café est ma [boisson] du{du-contr} matin. | قهوه نوشیدنی صبح من است. | d: tasse, bouteille, glace
+# bouteille
+Une [bouteille] d'eau, s'il vous plaît. | یک بطری آب، لطفاً. | d: tasse, boisson, assiette
+La [bouteille] est sur la table. | بطری روی میز است. | d: tasse, assiette, boisson
+J'ai deux [bouteilles] de jus. | دو بطری آب‌میوه دارم.
+Où est la [bouteille] de lait ? | بطری شیر کجاست؟ | d: tasse, boisson, assiette
+Tu peux ouvrir la [bouteille] ? | می‌توانی بطری را باز کنی؟ | d: boisson, tasse, porte
+Cette [bouteille] est petite. | این بطری کوچک است.
+# verre
+Je voudrais un [verre] d'eau. | یک لیوان آب می‌خواستم.
+Mets les [verres] sur la table. | لیوان‌ها را روی میز بگذار.
+Il boit un [verre] de lait. | او یک لیوان شیر می‌خورد.
+Ce [verre] est à moi. | این لیوان مال من است.
+Tu as un [verre] pour le jus ? | برای آب‌میوه لیوان داری؟
+Je cherche un [verre]. | دنبال یک لیوان می‌گردم.
+# faim
+J'ai [faim]. | گرسنه‌ام. | d: soif, froid, chaud
+Tu as [faim] ? | گرسنه‌ای؟ | d: soif, froid, chaud
+Les enfants ont très [faim]. | بچه‌ها خیلی گرسنه‌اند. | d: soif, froid, chaud
+Je n'ai pas [faim] ce soir. | امشب گرسنه نیستم. | d: soif, froid, chaud
+Après le travail, j'ai toujours [faim]. | بعد از کار همیشه گرسنه‌ام. | d: soif, froid, chaud
+On a [faim] ! On mange ? | گرسنه‌ایم! غذا بخوریم؟ | d: soif, froid, chaud
+# avoir faim
+Tu [as faim] ? Il y a du pain. | گرسنه‌ای؟ نان هست.
+Les enfants [ont faim] après l'école. | بچه‌ها بعد از مدرسه گرسنه‌اند.
+Nous [avons faim], on mange maintenant ? | گرسنه‌ایم، حالا غذا بخوریم؟
+Vous [avez faim] ? | گرسنه‌اید؟
+Le chat [a faim] le matin. | گربه صبح‌ها گرسنه است.
+Mon fils [a faim] tout le temps. | پسرم مدام گرسنه است.
+Je vais [avoir faim] ce soir. | امشب گرسنه می‌شوم. | d: avoir soif, avoir chaud, avoir froid
+# soif
+J'ai [soif], je voudrais de l'eau. | تشنه‌ام، کمی آب می‌خواهم. | d: faim, froid, chaud
+Tu as [soif] ? Il y a du jus. | تشنه‌ای؟ آب‌میوه هست. | d: faim, froid, chaud
+Le chien a [soif]. | سگ تشنه است. | d: faim, froid, chaud
+Nous avons très [soif]. | ما خیلی تشنه‌ایم. | d: faim, froid, chaud
+Je n'ai pas [soif], merci. | تشنه نیستم، ممنون. | d: faim, froid, chaud
+Les enfants ont [soif] après l'école. | بچه‌ها بعد از مدرسه تشنه‌اند. | d: faim, froid, chaud
+# avoir soif
+J'[ai soif], tu as de l'eau ? | تشنه‌ام، آب داری؟
+Les enfants [ont soif] et ils veulent du jus. | بچه‌ها تشنه‌اند و آب‌میوه می‌خواهند.
+Tu [as soif] ? Je fais du thé. | تشنه‌ای؟ چای درست می‌کنم.
+Le chien [a soif] : il boit beaucoup d'eau. | سگ تشنه است: خیلی آب می‌خورد.
+Vous [avez soif] ? Voici une bouteille d'eau. | تشنه‌اید؟ این هم یک بطری آب.
+Nous [avons soif] après le travail. | بعد از کار تشنه‌ایم.
+# repas
+Nous mangeons trois [repas] par jour. | ما روزی سه وعده غذا می‌خوریم. | d: gâteaux, desserts, sandwichs
+Merci pour le [repas] ! | ممنون بابت غذا!
+Pour la fête, on fait un grand [repas]. | برای جشن یک غذای مفصل درست می‌کنیم.
+Le [repas] du{du-contr} soir est à huit heures. | غذای شب ساعت هشت است.
+Il boit de l'eau pendant le [repas]. | او موقع غذا آب می‌خورد.
+Le dimanche, ma mère fait un bon [repas]. | یکشنبه‌ها مادرم یک غذای خوب درست می‌کند.
+# petit-déjeuner
+Le [petit-déjeuner] est à sept heures. | صبحانه ساعت هفت است.
+Je mange du pain au [petit-déjeuner]. | سر صبحانه نان می‌خورم.
+Qu'est-ce que tu manges au [petit-déjeuner] ? | سر صبحانه چه می‌خوری؟
+Le [petit-déjeuner] est un repas important. | صبحانه وعدهٔ مهمی است.
+Le dimanche, nous faisons un grand [petit-déjeuner] en famille. | یکشنبه‌ها با خانواده یک صبحانهٔ مفصل می‌خوریم.
+Mon père fait le [petit-déjeuner]. | پدرم صبحانه را درست می‌کند.
+# prendre le petit-déjeuner
+Je [prends le petit-déjeuner] à sept heures. | ساعت هفت صبحانه می‌خورم.
+Nous [prenons le petit-déjeuner] ensemble. | با هم صبحانه می‌خوریم.
+Tu [prends le petit-déjeuner] à la maison ? | صبحانه را در خانه می‌خوری؟
+Les enfants [prennent le petit-déjeuner] avant l'école. | بچه‌ها قبل از مدرسه صبحانه می‌خورند.
+Le dimanche, mon père [prend le petit-déjeuner] tard. | یکشنبه‌ها پدرم دیر صبحانه می‌خورد.
+On va [prendre le petit-déjeuner] chez ma grand-mère. | می‌رویم خانهٔ مادربزرگم صبحانه بخوریم. | d: faire la cuisine, faire les courses, prendre une douche
+# déjeuner
+Le [déjeuner] est à midi. | ناهار ظهر است.
+Qu'est-ce que nous mangeons pour le [déjeuner] ? | برای ناهار چه می‌خوریم؟
+Je prends mon [déjeuner] au travail. | ناهارم را سر کار می‌خورم.
+Après le [déjeuner], je dors un peu. | بعد از ناهار کمی می‌خوابم.
+Le dimanche, le [déjeuner] est chez ma grand-mère. | یکشنبه‌ها ناهار خانهٔ مادربزرگم هستیم.
+Tu viens pour le [déjeuner] ? | برای ناهار می‌آیی؟
+# dîner
+Le [dîner] est à huit heures. | شام ساعت هشت است.
+Qu'est-ce que tu veux pour le [dîner] ? | برای شام چه می‌خواهی؟
+Nous faisons le [dîner] ensemble. | با هم شام درست می‌کنیم.
+Après le [dîner], les enfants lisent un livre. | بعد از شام بچه‌ها کتاب می‌خوانند.
+Je t'invite au [dîner] de samedi. | تو را به شام شنبه دعوت می‌کنم.
+Le [dîner] est très bon ce soir ! | شام امشب خیلی خوب است!
+# viande
+Je ne mange pas de [viande]. | من گوشت نمی‌خورم. | d: soupe, salade, glace
+Ici, la [viande] est très bonne. | اینجا گوشتش خیلی خوب است. | d: banane, glace, salade
+Tu veux de la [viande] avec ton pain ? | با نانت گوشت می‌خواهی؟ | d: soupe, salade, glace
+Mon frère aime beaucoup la [viande]. | برادرم گوشت را خیلی دوست دارد. | d: salade, banane, soupe
+Il n'y a pas de [viande] dans ce repas. | در این غذا گوشت نیست. | d: soupe, banane, tomate
+Le vendredi, nous mangeons de la [viande]. | جمعه‌ها گوشت می‌خوریم. | d: glace, soupe, salade
+# poisson
+Tu aimes le [poisson] ? | ماهی دوست داری؟
+Il y a un [poisson] dans l'eau. | توی آب یک ماهی هست.
+Je préfère le [poisson] à la viande. | ماهی را به گوشت ترجیح می‌دهم.
+Mon chat mange du [poisson]. | گربه‌ام ماهی می‌خورد.
+À Marseille, le [poisson] est très bon. | در مارسی ماهی خیلی خوب است.
+Les enfants regardent les [poissons]. | بچه‌ها ماهی‌ها را تماشا می‌کنند.
+# poulet
+Nous mangeons du [poulet] ce soir. | امشب مرغ می‌خوریم.
+Je voudrais du [poulet], s'il vous plaît. | لطفاً مرغ می‌خواستم.
+Le [poulet] est très bon. | مرغ خیلی خوب است.
+Le dimanche, ma mère fait un [poulet]. | یکشنبه‌ها مادرم مرغ درست می‌کند.
+Les enfants préfèrent le [poulet] au poisson. | بچه‌ها مرغ را به ماهی ترجیح می‌دهند.
+Tu veux du [poulet] ou de la viande ? | مرغ می‌خواهی یا گوشت؟
+# œuf
+Je mange un [œuf] le matin. | صبح‌ها یک تخم‌مرغ می‌خورم.
+Tu veux un [œuf] avec ton pain ? | با نانت تخم‌مرغ می‌خواهی؟
+Un [œuf], c'est bon pour le petit-déjeuner. | تخم‌مرغ برای صبحانه خوب است.
+Nous avons six [œufs] à la maison. | ما در خانه شش تخم‌مرغ داریم.
+Il y a un [œuf] sur la table. | روی میز یک تخم‌مرغ هست.
+# riz
+En Iran, on mange beaucoup de [riz]. | در ایران مردم خیلی برنج می‌خورند.
+Je voudrais du [riz] avec le poulet. | با مرغ برنج می‌خواستم.
+Le [riz] iranien est très bon. | برنج ایرانی خیلی خوب است.
+Ma mère fait du [riz] tous les jours. | مادرم هر روز برنج درست می‌کند.
+Il n'y a plus de [riz]. | دیگر برنج نداریم.
+Tu préfères le [riz] ou le pain ? | برنج را ترجیح می‌دهی یا نان را؟
+# pâtes
+Les enfants aiment les [pâtes]. | بچه‌ها ماکارونی دوست دارند. | d: tomates, bananes, pommes
+Ce soir, on mange des [pâtes]. | امشب ماکارونی می‌خوریم. | d: tomates, oranges, bananes
+Je fais des [pâtes] avec du poulet. | با مرغ ماکارونی درست می‌کنم. | d: salades, soupes, tomates
+Ici, les [pâtes] sont très bonnes. | اینجا ماکارونی‌اش خیلی خوب است. | d: pommes, oranges, glaces
+Tu veux des [pâtes] ou du riz ? | ماکارونی می‌خواهی یا برنج؟ | d: tomates, bananes, pommes
+# légume
+Mange tes [légumes] ! | سبزیجاتت را بخور!
+Je mange beaucoup de [légumes]. | من سبزیجات زیاد می‌خورم.
+Le poisson avec des [légumes], s'il vous plaît. | ماهی با سبزیجات، لطفاً.
+Quel [légume] est-ce que tu préfères ? | کدام سبزی را ترجیح می‌دهی؟
+Mes enfants n'aiment pas les [légumes]. | بچه‌هایم سبزیجات دوست ندارند.
+Nous mangeons des [légumes] tous les jours. | ما هر روز سبزیجات می‌خوریم.
+# fruit
+Je mange un [fruit] après le déjeuner. | بعد از ناهار یک میوه می‌خورم.
+Tu veux un [fruit] ? | میوه می‌خواهی؟
+Il y a beaucoup de [fruits] sur la table. | روی میز میوهٔ زیادی هست.
+Quel [fruit] est-ce que tu aimes ? | چه میوه‌ای دوست داری؟
+En été, les [fruits] sont très bons. | تابستان میوه‌ها خیلی خوب‌اند.
+# pomme
+Je mange une [pomme] tous les jours. | هر روز یک سیب می‌خورم. | d: banane, orange, tomate
+Les [pommes] sont sur la table. | سیب‌ها روی میز هستند.
+Tu veux une [pomme] ? Elle est très bonne. | سیب می‌خواهی؟ خیلی خوب است. | d: orange, banane, glace
+Ma fille aime le jus de [pomme]. | دخترم آب سیب دوست دارد. | d: banane, tomate, viande
+J'ai trois [pommes] pour les enfants. | برای بچه‌ها سه تا سیب دارم.
+Cette [pomme] est petite mais bonne. | این سیب کوچک است ولی خوب است. | d: orange, banane, tomate
+# orange
+Les [oranges] sont très bonnes en hiver. | پرتقال‌ها زمستان خیلی خوب‌اند.
+Tu veux une [orange] ? | پرتقال می‌خواهی؟ | d: pomme, banane, tomate
+Il y a deux [oranges] et une pomme. | دو پرتقال و یک سیب هست.
+Je donne une [orange] à mon fils. | یک پرتقال به پسرم می‌دهم. | d: pomme, banane, glace
+Cette [orange] n'est pas bonne. | این پرتقال خوب نیست. | d: pomme, banane, tomate
+# banane
+Les enfants aiment les [bananes]. | بچه‌ها موز دوست دارند.
+Le matin, je mange une [banane]. | صبح‌ها یک موز می‌خورم. | d: pomme, orange, tomate
+Combien de [bananes] est-ce que tu veux ? | چند تا موز می‌خواهی؟
+Il y a des [bananes] ? | موز هست؟
+Mon bébé mange une petite [banane]. | بچه‌ام یک موز کوچک می‌خورد. | d: pomme, orange, tomate
+# tomate
+Je mange des [tomates] avec du pain. | با نان گوجه‌فرنگی می‌خورم.
+Les [tomates] sont très bonnes en été. | گوجه‌فرنگی‌ها تابستان خیلی خوب‌اند.
+Tu veux une [tomate] ? | گوجه‌فرنگی می‌خواهی؟ | d: pomme, orange, banane
+Ma mère fait du riz avec des [tomates]. | مادرم برنج را با گوجه‌فرنگی درست می‌کند. | d: pommes, oranges, bananes
+J'ai besoin de trois [tomates]. | سه تا گوجه‌فرنگی لازم دارم.
+# pomme de terre
+J'aime les [pommes de terre]. | من سیب‌زمینی دوست دارم.
+Une [pomme de terre], c'est un légume. | سیب‌زمینی یک سبزی است. | d: pomme, banane, orange
+Je mange du poulet avec une [pomme de terre]. | مرغ را با یک سیب‌زمینی می‌خورم. | d: tomate, salade, banane
+Tu veux une [pomme de terre] avec ta viande ? | با گوشتت سیب‌زمینی می‌خواهی؟ | d: tomate, salade, banane
+Mon fils mange une grande [pomme de terre]. | پسرم یک سیب‌زمینی بزرگ می‌خورد. | d: pomme, banane, orange
+Il me faut encore une [pomme de terre]. | یک سیب‌زمینی دیگر لازم دارم. | d: banane, tomate, pomme
+# salade
+Je fais une [salade] avec des tomates. | با گوجه‌فرنگی سالاد درست می‌کنم. | d: soupe, glace, baguette
+Tu veux de la [salade] ? | سالاد می‌خواهی؟ | d: soupe, viande, glace
+Une [salade], s'il vous plaît. | یک سالاد، لطفاً. | d: soupe, glace, orange
+La [salade] est très bonne. | سالاد خیلی خوب است. | d: soupe, viande, glace
+Je mange une [salade] à midi. | ظهر یک سالاد می‌خورم.
+# fromage
+Je mange du pain avec du [fromage]. | نان و پنیر می‌خورم.
+En France, il y a beaucoup de [fromages]. | در فرانسه پنیر زیاد هست.
+Tu aimes le [fromage] français{français} ? | پنیر فرانسوی دوست داری؟
+Le [fromage] est sur la table. | پنیر روی میز است.
+Au petit-déjeuner, je prends du [fromage]. | سر صبحانه پنیر می‌خورم.
+Je voudrais un peu de [fromage]. | کمی پنیر می‌خواستم.
+# beurre
+Tu veux du [beurre] sur ton pain ? | روی نانت کره می‌خواهی؟
+Il n'y a plus de [beurre]. | دیگر کره نداریم.
+Le [beurre] français{français} est très bon. | کرهٔ فرانسوی خیلی خوب است.
+Je mets un peu de [beurre] dans les pâtes. | کمی کره توی ماکارونی می‌ریزم.
+Le matin, je prends du pain et du [beurre]. | صبح‌ها نان و کره می‌خورم.
+# sucre
+Tu prends du [sucre] avec ton thé ? | با چایت قند می‌خوری؟
+Je bois mon café sans [sucre]. | قهوه‌ام را بدون شکر می‌خورم.
+Il y a trop de [sucre] dans ce jus. | این آب‌میوه شکر زیادی دارد.
+Un café avec du [sucre], s'il vous plaît. | یک قهوه با شکر، لطفاً.
+Mon père ne mange pas de [sucre]. | پدرم شکر نمی‌خورد.
+# sel
+Tu peux me donner le [sel], s'il te plaît ? | می‌توانی نمک را به من بدهی، لطفاً؟
+Il y a trop de [sel] dans le riz. | برنج نمکش زیاد است.
+Mon grand-père mange sans [sel]. | پدربزرگم بدون نمک غذا می‌خورد.
+Où est le [sel] ? | نمک کجاست؟
+Mets un peu de [sel] sur les tomates. | کمی نمک روی گوجه‌فرنگی‌ها بریز.
+# soupe
+Je fais une [soupe] de légumes. | یک سوپ سبزیجات درست می‌کنم. | d: salade, glace, viande
+En hiver, nous mangeons de la [soupe]. | زمستان‌ها سوپ می‌خوریم. | d: salade, viande, glace
+La [soupe] est bonne ? | سوپ خوب است؟ | d: salade, viande, glace
+Mon grand-père prend une [soupe] tous les soirs. | پدربزرگم هر شب سوپ می‌خورد. | d: salade, glace, banane
+Il y a trop de sel dans la [soupe]. | سوپ نمکش زیاد است. | d: salade, viande, baguette
+# gâteau
+Pour mon anniversaire, ma mère fait un [gâteau]. | مادرم برای تولدم کیک درست می‌کند.
+Tu veux du [gâteau] ? | کیک می‌خواهی؟
+Les enfants mangent des [gâteaux]. | بچه‌ها شیرینی می‌خورند.
+Ce [gâteau] est très bon. | این کیک خیلی خوب است.
+Il y a un grand [gâteau] pour la fête. | برای جشن یک کیک بزرگ هست.
+Je prends un thé et un [gâteau]. | یک چای و یک کیک می‌خورم.
+# chocolat
+Mon fils mange trop de [chocolat]. | پسرم زیادی شکلات می‌خورد.
+Il y a du [chocolat] dans ce gâteau. | توی این کیک شکلات هست.
+Tu veux un peu de [chocolat] ? | کمی شکلات می‌خواهی؟
+Pour son anniversaire, je donne du [chocolat] à ma sœur. | برای تولد خواهرم به او شکلات می‌دهم.
+Le [chocolat] de Suisse est très bon. | شکلات سوئیس خیلی خوب است.
+# glace
+En été, les enfants mangent des [glaces]. | تابستان بچه‌ها بستنی می‌خورند.
+Tu veux une [glace] ? | بستنی می‌خواهی؟ | d: banane, salade, soupe
+Je voudrais une [glace] au chocolat. | یک بستنی شکلاتی می‌خواستم.
+Cette [glace] est très bonne. | این بستنی خیلی خوب است. | d: soupe, salade, banane
+Après le dîner, on prend une [glace]. | بعد از شام بستنی می‌خوریم. | d: banane, soupe, salade
+# dessert
+Qu'est-ce que tu veux comme [dessert] ? | برای دسر چه می‌خواهی؟
+Comme [dessert], il y a un gâteau. | برای دسر کیک هست.
+Les enfants attendent le [dessert]. | بچه‌ها منتظر دسر هستند.
+Je ne prends pas de [dessert], merci. | دسر نمی‌خورم، ممنون.
+Le [dessert] est une glace au chocolat. | دسر بستنی شکلاتی است.
+# croissant
+Le matin, je mange un [croissant] avec un café. | صبح‌ها یک کروسان با قهوه می‌خورم.
+Deux [croissants], s'il vous plaît. | دو کروسان، لطفاً.
+Les [croissants] de Paris sont très bons. | کروسان‌های پاریس خیلی خوب‌اند.
+Tu veux un [croissant] ou du pain ? | کروسان می‌خواهی یا نان؟
+Mon fils prend un [croissant] au chocolat. | پسرم یک کروسان شکلاتی برمی‌دارد.
+# baguette
+Une [baguette], s'il vous plaît. | یک باگت، لطفاً.
+Je prends deux [baguettes] pour le dîner. | برای شام دو باگت می‌گیرم.
+La [baguette] est très bonne avec du fromage. | باگت با پنیر خیلی خوب است. | d: soupe, salade, tomate
+En France, on mange la [baguette] tous les jours. | در فرانسه مردم هر روز باگت می‌خورند.
+Le matin, Paul va chercher une [baguette]. | صبح‌ها پل می‌رود یک باگت بگیرد. | d: orange, glace, pomme
+# délicieux
+Ce gâteau est [délicieux] ! | این کیک خوشمزه است!
+La soupe est [délicieuse]. | سوپ خوشمزه است. | d: française, vieille, prochaine
+Merci, le repas est [délicieux]. | ممنون، غذا خوشمزه است.
+Ici, les croissants sont [délicieux]. | اینجا کروسان‌ها خوشمزه‌اند.
+Ta glace est [délicieuse] ? | بستنی‌ات خوشمزه است؟ | d: française, vieille, fausse
+C'est un fromage [délicieux]. | پنیر خوشمزه‌ای است.
+# sandwich
+Je mange un [sandwich] à midi. | ظهر یک ساندویچ می‌خورم.
+Un [sandwich] au fromage, s'il vous plaît. | یک ساندویچ پنیر، لطفاً.
+Tu veux un [sandwich] au poulet ? | ساندویچ مرغ می‌خواهی؟
+Les enfants prennent des [sandwichs] pour l'école. | بچه‌ها برای مدرسه ساندویچ برمی‌دارند.
+Ce [sandwich] est délicieux. | این ساندویچ خوشمزه است.
+# cuisine
+Ma mère est dans la [cuisine]. | مادرم در آشپزخانه است.
+La [cuisine] est petite mais jolie. | آشپزخانه کوچک ولی قشنگ است.
+Le matin, on mange dans la [cuisine]. | صبح‌ها توی آشپزخانه غذا می‌خوریم.
+Les verres sont dans la [cuisine]. | لیوان‌ها توی آشپزخانه‌اند.
+Il y a une table dans la [cuisine]. | در آشپزخانه یک میز هست.
+Notre [cuisine] est grande. | آشپزخانه‌مان بزرگ است.
+# faire la cuisine
+Ce soir, je [fais la cuisine]. | امشب من آشپزی می‌کنم.
+Mon mari [fait la cuisine] le week-end. | شوهرم آخر هفته‌ها آشپزی می‌کند.
+Tu aimes [faire la cuisine] ? | آشپزی کردن را دوست داری؟ | d: faire les courses, faire du vélo, faire du sport
+Pour la fête, nous [faisons la cuisine] ensemble. | برای جشن با هم آشپزی می‌کنیم.
+Chez nous, c'est papa qui [fait la cuisine]. | خانهٔ ما بابا آشپزی می‌کند.
+Les enfants [font la cuisine] avec leur mère. | بچه‌ها با مادرشان آشپزی می‌کنند.
+# restaurant
+Ce soir, nous allons au [restaurant]. | امشب به رستوران می‌رویم.
+Le [restaurant] ouvre à midi. | رستوران ظهر باز می‌شود.
+C'est un bon [restaurant] iranien. | این یک رستوران ایرانی خوب است.
+Il travaille dans un [restaurant]. | او در یک رستوران کار می‌کند.
+Je mange au [restaurant] avec mes amis. | با دوستانم در رستوران غذا می‌خورم.
+Le [restaurant] est dans ma rue. | رستوران در خیابان من است.
+# menu
+Le [menu], s'il vous plaît. | منو، لطفاً.
+Je regarde le [menu]. | منو را نگاه می‌کنم.
+Il y a du poisson au [menu] ? | توی منو ماهی هست؟
+Le [menu] du{du-contr} restaurant est en français. | منوی رستوران به فرانسوی است.
+Vous avez un [menu] pour les enfants ? | منوی بچه‌ها دارید؟
+# addition
+L'[addition], s'il vous plaît. | صورت‌حساب، لطفاً. | d: assiette, orange, eau
+Mon père demande l'[addition]. | پدرم صورت‌حساب را می‌خواهد. | d: assiette, orange, eau
+L'[addition] est sur la table. | صورت‌حساب روی میز است. | d: assiette, orange, eau
+Pardon, monsieur, l'[addition] ! | ببخشید آقا، صورت‌حساب! | d: assiette, orange, eau
+Tu as l'[addition] ? | صورت‌حساب پیش توست؟
+# commander
+Je [commande] un café. | یک قهوه سفارش می‌دهم.
+Vous voulez [commander] ? | می‌خواهید سفارش بدهید؟
+Nous [commandons] le dessert maintenant. | حالا دسر را سفارش می‌دهیم.
+Qu'est-ce que tu [commandes] ? | چه سفارش می‌دهی؟
+Il [commande] un poisson avec du riz. | او ماهی با برنج سفارش می‌دهد.
+Elles ont [commandé] des glaces. | آن‌ها بستنی سفارش دادند.
+# réserver
+Je voudrais [réserver] une table pour deux. | می‌خواستم یک میز برای دو نفر رزرو کنم.
+Tu [réserves] le restaurant pour samedi ? | رستوران را برای شنبه رزرو می‌کنی؟
+Il faut [réserver] pour ce restaurant. | برای این رستوران باید رزرو کرد.
+J'ai [réservé] une table au restaurant. | در رستوران یک میز رزرو کردم.
+Vous [réservez] pour combien de personnes ? | برای چند نفر رزرو می‌کنید؟
+# tasse
+Une [tasse] de thé, s'il vous plaît. | یک فنجان چای، لطفاً. | d: bouteille, boisson, assiette
+Je bois deux [tasses] de café le matin. | صبح‌ها دو فنجان قهوه می‌خورم.
+Cette [tasse] est à ma mère. | این فنجان مال مادرم است.
+Tu veux une autre [tasse] ? | یک فنجان دیگر می‌خواهی؟ | d: boisson, bouteille, assiette
+Où sont les [tasses] ? | فنجان‌ها کجا هستند؟
+# assiette
+Mets les [assiettes] sur la table. | بشقاب‌ها را روی میز بگذار. | d: tasses, fourchettes, cuillères
+Il y a du riz dans les [assiettes]. | توی بشقاب‌ها برنج هست. | d: tasses, bouteilles, fourchettes
+Cette [assiette] est très jolie. | این بشقاب خیلی قشنگ است. | d: tasse, fourchette, cuillère
+Je voudrais une autre [assiette], s'il vous plaît. | لطفاً یک بشقاب دیگر می‌خواستم. | d: tasse, fourchette, cuillère
+Les enfants finissent leur [assiette]. | بچه‌ها غذای بشقابشان را تمام می‌کنند. | d: soupe, salade, glace
+# couteau
+Tu as un [couteau] ? | چاقو داری؟
+Le [couteau] est sur la table. | چاقو روی میز است.
+Il me faut un [couteau] pour le pain. | برای نان یک چاقو لازم دارم.
+Les enfants ne prennent pas les [couteaux]. | بچه‌ها چاقوها را برنمی‌دارند.
+Ce [couteau] est très petit. | این چاقو خیلی کوچک است.
+# fourchette
+Je mange avec une [fourchette]. | با چنگال غذا می‌خورم. | d: cuillère, tasse, assiette
+Il n'y a pas de [fourchette] sur la table. | روی میز چنگال نیست. | d: cuillère, assiette, tasse
+Tu peux me donner une [fourchette] ? | می‌توانی یک چنگال به من بدهی؟ | d: cuillère, assiette, tasse
+Mets les [fourchettes] et les couteaux sur la table. | چنگال‌ها و چاقوها را روی میز بگذار.
+Le bébé a une petite [fourchette]. | نوزاد یک چنگال کوچک دارد. | d: cuillère, tasse, assiette
+# cuillère
+Je mange la soupe avec une [cuillère]. | سوپ را با قاشق می‌خورم. | d: fourchette, assiette, tasse
+Tu as une [cuillère] pour le sucre ? | برای شکر قاشق داری؟ | d: fourchette, tasse, assiette
+Il y a des [cuillères] dans la cuisine. | توی آشپزخانه قاشق هست. | d: fourchettes, assiettes, tasses
+En Iran, on mange le riz avec une [cuillère]. | در ایران برنج را با قاشق می‌خورند.
+Une petite [cuillère] pour le café, s'il vous plaît. | یک قاشق کوچک برای قهوه، لطفاً. | d: fourchette, tasse, assiette
+# cuisiner
+Mon père [cuisine] très bien. | پدرم خیلی خوب آشپزی می‌کند.
+J'aime [cuisiner] pour mes amis. | دوست دارم برای دوستانم آشپزی کنم.
+Tu [cuisines] ce soir ? | امشب تو آشپزی می‌کنی؟
+Le week-end, nous [cuisinons] ensemble. | آخر هفته‌ها با هم آشپزی می‌کنیم.
+Elle ne sait pas [cuisiner]. | او آشپزی بلد نیست.
+Ma grand-mère a [cuisiné] un bon repas. | مادربزرگم یک غذای خوب پخت. | d: cuisiner, cuisine, cuisines
+# kilo
+Un [kilo] de tomates, s'il vous plaît. | یک کیلو گوجه‌فرنگی، لطفاً.
+Je prends deux [kilos] de pommes. | دو کیلو سیب برمی‌دارم.
+Le bébé fait quatre [kilos]. | نوزاد چهار کیلو است.
+Il faut un [kilo] de riz pour ce repas. | برای این غذا یک کیلو برنج لازم است.
+Tu veux combien de [kilos] ? | چند کیلو می‌خواهی؟
+# appartement
+J'habite dans un petit [appartement]. | در یک آپارتمان کوچک زندگی می‌کنم.
+Notre [appartement] est grand et joli. | آپارتمانمان بزرگ و قشنگ است. | d: jardin, salon, lit
+Ils cherchent un [appartement] à Paris. | آن‌ها دنبال یک آپارتمان در پاریس می‌گردند. | d: canapé, salon, jardin
+Mon [appartement] est dans une petite rue. | آپارتمانم در یک خیابان کوچک است.
+Vous habitez dans un [appartement] ou dans une maison ? | در آپارتمان زندگی می‌کنید یا در خانه؟ | d: escalier, lit, salon
+# chambre
+Ma [chambre] est petite. | اتاق خوابم کوچک است.
+Les enfants dorment dans leur [chambre]. | بچه‌ها در اتاقشان می‌خوابند.
+L'appartement a deux [chambres]. | آپارتمان دو اتاق خواب دارد.
+Je voudrais réserver une [chambre] pour deux nuits. | می‌خواستم یک اتاق برای دو شب رزرو کنم.
+Va dans ta [chambre] ! | برو توی اتاقت!
+Il y a une table dans ma [chambre]. | در اتاق خوابم یک میز هست.
+# salon
+La famille est dans le [salon]. | خانواده در اتاق نشیمن است.
+Notre [salon] est très grand. | اتاق نشیمن ما خیلی بزرگ است.
+Mon père lit{lire} dans le [salon]. | پدرم در اتاق نشیمن کتاب می‌خواند.
+Il y a une grande table dans le [salon]. | در پذیرایی یک میز بزرگ هست.
+Les enfants jouent dans le [salon]. | بچه‌ها در اتاق نشیمن بازی می‌کنند.
+# salle de bain
+La [salle de bain] est petite. | حمام کوچک است.
+Où est la [salle de bain] ? | حمام کجاست؟
+L'appartement a une [salle de bain]. | آپارتمان یک حمام دارد.
+Mon frère est dans la [salle de bain]. | برادرم در حمام است.
+Notre [salle de bain] est très jolie. | حمام ما خیلی قشنگ است.
+# douche
+La [douche] est dans la salle de bain. | دوش در حمام است.
+Il y a une [douche] dans la chambre ? | در اتاق دوش هست؟
+Je suis sous la [douche] ! | زیر دوشم!
+Cette [douche] est très petite. | این دوش خیلی کوچک است.
+Les enfants sont sous la [douche]. | بچه‌ها زیر دوش هستند.
+# prendre une douche
+Je [prends une douche] le matin. | صبح‌ها دوش می‌گیرم.
+Tu [prends une douche] ? On part dans dix minutes. | دوش می‌گیری؟ ده دقیقهٔ دیگر راه می‌افتیم.
+Après le travail, il [prend une douche]. | بعد از کار دوش می‌گیرد.
+Les enfants [prennent une douche] le soir. | بچه‌ها شب‌ها دوش می‌گیرند.
+Je voudrais [prendre une douche]. | می‌خواستم دوش بگیرم. | d: prendre le petit-déjeuner, faire la cuisine, faire les courses
+# toilettes
+Où sont les [toilettes], s'il vous plaît ? | ببخشید، دستشویی کجاست؟ | d: chambres, clés, chaises
+Les [toilettes] sont dans la salle de bain. | توالت در حمام است. | d: clés, chaises, lampes
+Il n'y a pas de [toilettes] ici. | اینجا دستشویی نیست. | d: chaises, chambres, lampes
+Je vais aux [toilettes]. | به دستشویی می‌روم. | d: fenêtres, chambres, portes
+Excusez-moi, il y a des [toilettes] ici ? | ببخشید، اینجا دستشویی هست؟ | d: chambres, chaises, clés
+# lit
+Le bébé dort dans son petit [lit]. | نوزاد در تخت کوچکش می‌خوابد.
+Il y a deux [lits] dans la chambre. | در اتاق دو تخت هست.
+Je lis un livre dans mon [lit]. | در تختم کتاب می‌خوانم.
+Ce [lit] est très grand. | این تخت خیلی بزرگ است.
+Les enfants, au [lit] ! | بچه‌ها، بروید توی تخت!
+Mon chat dort sur mon [lit]. | گربه‌ام روی تختم می‌خوابد.
+# chaise
+Il y a quatre [chaises] dans la cuisine. | در آشپزخانه چهار صندلی هست.
+Prends une [chaise], s'il te plaît. | لطفاً یک صندلی بردار.
+Le chat dort sur la [chaise]. | گربه روی صندلی می‌خوابد.
+Cette [chaise] est à mon grand-père. | این صندلی مال پدربزرگم است.
+Il n'y a pas de [chaise] pour moi. | برای من صندلی نیست.
+# fenêtre
+Tu peux ouvrir la [fenêtre] ? | می‌توانی پنجره را باز کنی؟
+Ferme la [fenêtre], s'il te plaît. | لطفاً پنجره را ببند.
+Ma chambre a deux [fenêtres]. | اتاقم دو پنجره دارد.
+Le chat regarde par la [fenêtre]. | گربه از پنجره بیرون را نگاه می‌کند.
+La [fenêtre] de la cuisine est petite. | پنجرهٔ آشپزخانه کوچک است.
+# clé
+Où sont mes [clés] ? | کلیدهایم کجاست؟
+J'ai oublié ma [clé]. | کلیدم را جا گذاشتم.
+Voici la [clé] de votre chambre. | این هم کلید اتاقتان.
+Tu as la [clé] de la voiture ? | کلید ماشین را داری؟
+Je cherche la [clé] de la porte. | دنبال کلید در می‌گردم.
+Ma mère a une [clé] de l'appartement. | مادرم یک کلید آپارتمان دارد.
+# étage
+J'habite au deuxième [étage]. | در طبقهٔ دوم زندگی می‌کنم.
+La chambre est au premier [étage]. | اتاق در طبقهٔ اول است.
+Notre maison a deux [étages]. | خانهٔ ما دو طبقه دارد.
+À quel [étage] est-ce que vous habitez ? | در کدام طبقه زندگی می‌کنید؟
+Mes grands-parents habitent au dernier [étage]. | پدربزرگ و مادربزرگم در طبقهٔ آخر زندگی می‌کنند.
+# escalier
+Je monte l'[escalier]. | از پله‌ها بالا می‌روم.
+Prenez l'[escalier], s'il vous plaît. | لطفاً از پله‌ها بروید.
+Les enfants jouent dans l'[escalier]. | بچه‌ها در راه‌پله بازی می‌کنند.
+Il descend l'[escalier] avec le bébé. | او با نوزاد از پله‌ها پایین می‌آید.
+L'[escalier] de la maison est très vieux. | راه‌پلهٔ خانه خیلی قدیمی است.
+# pièce
+L'appartement a quatre [pièces]. | آپارتمان چهار اتاق دارد. | d: chaises, portes, fenêtres
+C'est une grande [pièce] avec deux fenêtres. | اتاق بزرگی است با دو پنجره. | d: maison, table, chaise
+Dans quelle [pièce] est-ce que tu travailles ? | در کدام اتاق کار می‌کنی؟ | d: maison, ville, rue
+La [pièce] est petite mais jolie. | اتاق کوچک ولی قشنگ است. | d: chaise, table, lampe
+Notre maison a six [pièces]. | خانه‌مان شش اتاق دارد.
+# mur
+Le chat est sur le [mur]. | گربه روی دیوار است.
+Les [murs] de la maison sont très vieux. | دیوارهای خانه خیلی قدیمی‌اند.
+Il écrit son nom sur le [mur]. | او اسمش را روی دیوار می‌نویسد.
+Mes enfants écrivent sur les [murs] ! | بچه‌هایم روی دیوارها می‌نویسند!
+Ne mets pas ta main sur le [mur]. | دستت را روی دیوار نگذار.
+# lampe
+Il y a une [lampe] sur la table. | روی میز یک چراغ هست.
+Ma [lampe] est très vieille. | چراغم خیلی قدیمی است.
+Je lis avec une petite [lampe]. | با یک چراغ کوچک کتاب می‌خوانم.
+Cette [lampe] est jolie. | این چراغ قشنگ است. | d: table, chaise, fenêtre
+J'ai besoin d'une [lampe] pour ma chambre. | برای اتاقم یک چراغ لازم دارم.
+# canapé
+Le chat dort sur le [canapé]. | گربه روی مبل می‌خوابد.
+Nous avons un nouveau [canapé]. | ما یک مبل جدید داریم.
+Mon père lit{lire} sur le [canapé]. | پدرم روی کاناپه کتاب می‌خواند.
+Le [canapé] est dans le salon. | کاناپه در اتاق نشیمن است.
+Ce [canapé] est trop grand pour notre salon. | این مبل برای پذیرایی ما زیادی بزرگ است.
+# immeuble
+J'habite dans un grand [immeuble]. | در یک ساختمان بزرگ زندگی می‌کنم. | d: canapé, mur, jardin
+L'[immeuble] a six étages. | ساختمان شش طبقه دارد. | d: escalier, ordinateur, étage
+Dans notre [immeuble], il y a vingt appartements. | در ساختمان ما بیست آپارتمان هست.
+Cet [immeuble] est très vieux. | این ساختمان خیلی قدیمی است. | d: escalier, étage, ordinateur
+Les enfants de l'[immeuble] jouent ensemble. | بچه‌های ساختمان با هم بازی می‌کنند. | d: escalier, étage, ordinateur
+# laver
+Le samedi, je [lave] la voiture. | شنبه‌ها ماشین را می‌شویم.
+Tu peux [laver] les verres ? | می‌توانی لیوان‌ها را بشویی؟
+Nous [lavons] les assiettes après le dîner. | بعد از شام بشقاب‌ها را می‌شوییم.
+Il [lave] son chien une{un-num} fois par semaine. | او هفته‌ای یک بار سگش را می‌شوید.
+J'ai [lavé] les tasses. | فنجان‌ها را شستم.
+# jardin
+Ma grand-mère a un grand [jardin]. | مادربزرگم یک باغ بزرگ دارد.
+Il y a des tomates dans notre [jardin]. | در باغچهٔ ما گوجه‌فرنگی هست.
+En été, on mange dans le [jardin]. | تابستان‌ها در باغ غذا می‌خوریم.
+La maison a un petit [jardin]. | خانه یک باغچهٔ کوچک دارد.
+Le chien est dans le [jardin]. | سگ در باغچه است.
+# télévision
+Le soir, je regarde la [télévision]. | شب‌ها تلویزیون تماشا می‌کنم.
+Il y a une [télévision] dans la chambre ? | در اتاق تلویزیون هست؟
+Les enfants regardent trop la [télévision]. | بچه‌ها زیادی تلویزیون تماشا می‌کنند.
+La [télévision] est dans le salon. | تلویزیون در اتاق نشیمن است.
+Nous avons une grande [télévision]. | ما یک تلویزیون بزرگ داریم.
+# télé
+On regarde la [télé] ? | تلویزیون تماشا کنیم؟
+Il n'y a rien à la [télé] ce soir. | امشب تلویزیون چیزی ندارد.
+Ma grand-mère regarde la [télé] tous les jours. | مادربزرگم هر روز تلویزیون تماشا می‌کند.
+La [télé] est dans ma chambre. | تلویزیون در اتاق من است.
+J'ai vu ça à la [télé]. | این را در تلویزیون دیدم.
+# ordinateur
+Je travaille sur mon [ordinateur]. | با کامپیوترم کار می‌کنم.
+Mon [ordinateur] est très vieux. | کامپیوترم خیلی قدیمی است.
+Les enfants jouent sur l'[ordinateur]. | بچه‌ها با کامپیوتر بازی می‌کنند. | d: internet, e-mail, escalier
+J'ai besoin d'un [ordinateur]. | یک کامپیوتر لازم دارم.
+L'[ordinateur] de mon père est dans sa chambre. | کامپیوتر پدرم در اتاقش است. | d: internet, escalier, étage
+# se lever
+Je me [lève] à sept heures. | ساعت هفت از خواب بلند می‌شوم.
+Tu te [lèves] tôt ? | زود بلند می‌شوی؟
+Le dimanche, nous nous [levons] tard. | یکشنبه‌ها دیر بلند می‌شویم.
+Les enfants se [lèvent] pour l'école. | بچه‌ها برای مدرسه بلند می‌شوند.
+Elle s'est [levée] à six heures. | او ساعت شش بلند شد.
+Vous vous [levez] à quelle heure ? | شما ساعت چند بلند می‌شوید؟
+# se réveiller
+Je me [réveille] à six heures. | ساعت شش بیدار می‌شوم.
+Le bébé se [réveille] la nuit. | نوزاد شب‌ها بیدار می‌شود.
+Tu te [réveilles] tôt le week-end ? | آخر هفته‌ها زود بیدار می‌شوی؟
+Ce matin, je me suis [réveillé] tard. | امروز صبح دیر بیدار شدم.
+Les enfants se [réveillent] avant nous. | بچه‌ها قبل از ما بیدار می‌شوند.
+# se laver
+Je me [lave] les mains avant de manger. | قبل از غذا دست‌هایم را می‌شویم.
+Les enfants se [lavent] le soir. | بچه‌ها شب‌ها خودشان را می‌شویند.
+Le chat se [lave] tout le temps. | گربه مدام خودش را می‌شوید.
+Tu te [laves] les mains, s'il te plaît ? | لطفاً دست‌هایت را می‌شویی؟
+Je me suis [lavé] les mains. | دست‌هایم را شستم.
+# s'habiller
+Je m'[habille] et je pars. | لباس می‌پوشم و راه می‌افتم.
+Les enfants s'[habillent] pour l'école. | بچه‌ها برای مدرسه لباس می‌پوشند.
+Tu t'[habilles] ? On part dans cinq minutes. | لباس می‌پوشی؟ پنج دقیقهٔ دیگر راه می‌افتیم.
+Elle s'[habille] toujours bien. | او همیشه خوب لباس می‌پوشد.
+Nous nous [habillons] pour la fête. | برای جشن لباس می‌پوشیم.
+# se coucher
+Je me [couche] à onze heures. | ساعت یازده به رختخواب می‌روم.
+Les enfants se [couchent] tôt. | بچه‌ها زود می‌خوابند.
+Tu te [couches] tard ? | دیر می‌خوابی؟
+Le samedi, nous nous [couchons] tard. | شنبه‌ها دیر می‌خوابیم.
+Mon grand-père se [couche] après le dîner. | پدربزرگم بعد از شام به رختخواب می‌رود.
+# s'asseoir
+Je m'[assieds] ici. | اینجا می‌نشینم. | d: assied, asseyons, asseyez
+Tu t'[assieds] sur cette chaise ? | روی این صندلی می‌نشینی؟ | d: assied, asseyons, asseyent
+Nous nous [asseyons] dans le jardin. | در باغ می‌نشینیم. | d: asseyez, asseyent, assieds
+Il s'[assied] sur le canapé. | او روی کاناپه می‌نشیند. | d: assieds, asseyons, asseyent
+Les enfants s'[asseyent] à table. | بچه‌ها سر میز می‌نشینند. | d: assied, asseyons, asseyez
+Vous vous [asseyez] ici, madame ? | اینجا می‌نشینید، خانم؟ | d: asseyons, asseyent, assied
+# se reposer
+Le dimanche, je me [repose]. | یکشنبه‌ها استراحت می‌کنم.
+Tu te [reposes] un peu ? | کمی استراحت می‌کنی؟
+Après le travail, mon père se [repose]. | پدرم بعد از کار استراحت می‌کند.
+Nous nous [reposons] dans le jardin. | در باغ استراحت می‌کنیم.
+Les enfants se [reposent] après l'école. | بچه‌ها بعد از مدرسه استراحت می‌کنند.
+# se promener
+Nous nous [promenons] dans la ville. | در شهر قدم می‌زنیم.
+Le soir, je me [promène] avec mon chien. | عصرها با سگم قدم می‌زنم.
+Tu te [promènes] avec moi ? | با من قدم می‌زنی؟
+Le dimanche, les gens se [promènent] dans la rue. | یکشنبه‌ها مردم در خیابان قدم می‌زنند.
+Elle se [promène] dans le jardin après le déjeuner. | او بعد از ناهار در باغ قدم می‌زند.
+# café-2
+Je bois un thé au [café] avec mes amis. | با دوستانم در کافه چای می‌خورم.
+Il y a un petit [café] dans ma rue. | در خیابان من یک کافهٔ کوچک هست.
+Le [café] ouvre à sept heures. | کافه ساعت هفت باز می‌شود.
+Après l'école, nous allons au [café]. | بعد از مدرسه به کافه می‌رویم.
+Ce [café] est très joli. | این کافه خیلی قشنگ است.
+Elle travaille dans un [café]. | او در یک کافه کار می‌کند.
+# magasin
+Le [magasin] ouvre à neuf heures. | مغازه ساعت نه باز می‌شود.
+Il y a beaucoup de [magasins] dans cette rue. | در این خیابان مغازه زیاد است.
+Je vais au [magasin] avec ma mère. | با مادرم به مغازه می‌روم. | d: marché, restaurant, café
+Mon oncle a un petit [magasin]. | عمویم یک مغازهٔ کوچک دارد.
+Ce [magasin] n'ouvre pas le dimanche. | این مغازه یکشنبه‌ها باز نیست.
+# supermarché
+Le samedi, je vais au [supermarché]. | شنبه‌ها به سوپرمارکت می‌روم. | d: marché, restaurant, café
+Le [supermarché] est très grand. | سوپرمارکت خیلی بزرگ است. | d: marché, restaurant, cadeau
+Il y a un [supermarché] dans ma rue. | در خیابان ما یک سوپرمارکت هست. | d: marché, restaurant, café
+Ma sœur travaille dans un [supermarché]. | خواهرم در یک سوپرمارکت کار می‌کند. | d: restaurant, café, marché
+Au [supermarché], il y a du pain et du lait. | در سوپرمارکت نان و شیر هست. | d: marché, café, restaurant
+# marché
+Le samedi, il y a un [marché] dans ma ville. | شنبه‌ها در شهر ما بازار هست.
+Le matin, ma mère va au [marché]. | صبح‌ها مادرم به بازار می‌رود.
+Les fruits du{du-contr} [marché] sont très bons. | میوه‌های بازار خیلی خوب‌اند.
+Ce [marché] est très vieux. | این بازار خیلی قدیمی است.
+Le [marché] commence à huit heures. | بازار ساعت هشت شروع می‌شود.
+# boulangerie
+Je prends du pain à la [boulangerie]. | از نانوایی نان می‌گیرم. | d: maison, banque, poste
+La [boulangerie] ouvre à sept heures. | نانوایی ساعت هفت باز می‌شود. | d: banque, poste, piscine
+Cette [boulangerie] fait des croissants délicieux. | این نانوایی کروسان‌های خوشمزه‌ای درست می‌کند. | d: banque, poste, piscine
+Mon père travaille dans une [boulangerie]. | پدرم در یک نانوایی کار می‌کند. | d: banque, école, pharmacie
+Où est la [boulangerie], s'il vous plaît ? | ببخشید، نانوایی کجاست؟ | d: banque, poste, gare
+# courses
+Les [courses] sont dans la voiture. | خریدها در ماشین است. | d: valises, chaussures, bouteilles
+Tu peux m'aider avec les [courses] ? | می‌توانی در خریدها کمکم کنی؟ | d: valises, chaises, bouteilles
+Je mets les [courses] dans la cuisine. | خریدها را در آشپزخانه می‌گذارم. | d: bouteilles, chaises, valises
+Il y a beaucoup de [courses] aujourd'hui. | امروز خرید زیاد است. | d: valises, chaussures, bouteilles
+Mon fils m'aide avec les [courses] le samedi. | شنبه‌ها پسرم در خریدها کمکم می‌کند. | d: valises, chaises, bouteilles
+# faire les courses
+Le samedi, je [fais les courses]. | شنبه‌ها خرید می‌کنم.
+Tu peux [faire les courses] aujourd'hui ? | می‌توانی امروز خرید کنی؟ | d: faire la cuisine, prendre une douche, faire du vélo
+Nous [faisons les courses] au supermarché. | از سوپرمارکت خرید می‌کنیم.
+Ma mère [fait les courses] au marché. | مادرم از بازار خرید می‌کند.
+Mes parents [font les courses] le dimanche matin. | پدر و مادرم یکشنبه صبح‌ها خرید می‌کنند.
+Qui [fait les courses] cette semaine ? | این هفته کی خرید می‌کند؟
+# acheter
+J'[achète] du pain tous les matins. | هر روز صبح نان می‌خرم.
+Tu [achètes] des fruits au marché ? | از بازار میوه می‌خری؟
+Nous voulons [acheter] une maison. | می‌خواهیم یک خانه بخریم.
+Il [achète] des croissants pour le petit-déjeuner. | او برای صبحانه کروسان می‌خرد.
+Elles ont [acheté] une petite voiture. | آن‌ها یک ماشین کوچک خریدند.
+Qu'est-ce que vous [achetez] ? | چه می‌خرید؟
+# payer
+Je [paie] l'addition. | من صورت‌حساب را می‌پردازم. | d: paies, payons, payez
+Qui [paie] ? | کی پول می‌دهد؟ | d: paies, payons, paient
+Je voudrais [payer], s'il vous plaît. | می‌خواستم پرداخت کنم، لطفاً.
+Nous [payons] le restaurant ensemble. | پول رستوران را با هم می‌دهیم.
+Il a [payé] le café pour moi. | او پول قهوهٔ من را داد.
+Vous [payez] combien pour cet appartement ? | برای این آپارتمان چقدر می‌پردازید؟
+# coûter
+Combien [coûte] ce pain ? | این نان چند است؟
+Ça [coûte] combien ? | این چند است؟
+Combien [coûtent] les pommes ? | سیب‌ها چند است؟
+Cet appartement [coûte] beaucoup d'argent. | این آپارتمان خیلی پول می‌خواهد.
+Ça va [coûter] combien ? | قیمتش چقدر می‌شود؟
+# vendre
+Il [vend] des fruits au marché. | او در بازار میوه می‌فروشد.
+Nous [vendons] notre voiture. | ماشینمان را می‌فروشیم.
+Tu veux [vendre] ta maison ? | می‌خواهی خانه‌ات را بفروشی؟
+Ce magasin [vend] des livres. | این مغازه کتاب می‌فروشد.
+Mon grand-père a [vendu] son appartement. | پدربزرگم آپارتمانش را فروخت.
+# prix
+Quel est le [prix] de ce livre ? | قیمت این کتاب چند است؟
+Ici, les [prix] sont bons. | اینجا قیمت‌ها خوب است. | d: magasins, marchés, cadeaux
+Au supermarché, je regarde les [prix]. | در سوپرمارکت قیمت‌ها را نگاه می‌کنم. | d: magasins, cadeaux, sacs
+Le [prix] de la chambre est pour deux personnes. | قیمت اتاق برای دو نفر است.
+C'est un bon [prix]. | قیمت خوبی است.
+# euro
+Le café coûte deux [euros]. | قهوه دو یورو است.
+Ça fait dix [euros], s'il vous plaît. | می‌شود ده یورو، لطفاً.
+J'ai cinquante [euros]. | من پنجاه یورو دارم.
+Une baguette coûte un{un-num} [euro]. | یک باگت یک یورو است.
+Le prix est de 100 [euros]. | قیمت صد یورو است.

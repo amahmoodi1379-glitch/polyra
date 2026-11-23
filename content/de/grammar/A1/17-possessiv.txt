@@ -1,0 +1,76 @@
+code: de-a1-possessivartikel
+title: mein، dein، sein، ihr: مال من، مال تو
+scope: کلمه‌های مالکیت mein، dein، sein، ihr، unser، euer و Ihr پیش از اسم در حالت فاعلی و مفعولی، با پسوندی مثل ein (mein Vater، meine Mutter، Ich suche meinen Vater)، و انتخاب sein یا ihr از روی مالک؛ مالکیت بعد از حرف اضافه (mit meiner Mutter) در سطح‌های بعد می‌آید.
+can_do: حالا می‌توانی بگویی «این مادر من است» و بپرسی «اسم شما چیست؟».
+rule: مالک کلمه را انتخاب می‌کند (ich ← mein، er ← sein، sie ← ihr، Sie ← Ihr) و اسم پسوند را، مثل ein: mein Vater، meine Mutter، meinen Vater (مفعول).
+mistake: فارسی برای «او» فقط «ـَش» دارد و فارسی‌زبان‌ها برای مالک زن هم sein می‌گویند: «Das ist Anna und das ist sein Auto» غلط است؛ درست: ihr Auto. پسوند از خود اسم می‌آید: meine Mutter، نه «mein Mutter».
+lesson:
+در فارسی مالکیت را با «ـَم، ـَت، ـَش» یا «من، تو» نشان می‌دهی: مادرم، کتابت، خانه ما.
+در آلمانی کلمه جدایی پیش از اسم می‌آید: mein (من)، dein (تو)، sein (او، مرد)، ihr (او، زن)، unser (ما)، euer (شما، چند دوست)، ihr (آن‌ها) و Ihr (شمای مؤدبانه).
+این کلمه‌ها مثل ein پسوند می‌گیرند: مذکر و خنثی بی‌پسوند (mein Vater، mein Auto) و مؤنث و جمع با -e (meine Mutter، meine Kinder).
+در حالت مفعولی مذکر هم مثل einen، -en می‌گیرند: Ich suche meinen Vater.
+مالک تعیین می‌کند sein بگویی یا ihr: Paul ← sein Auto، Anna ← ihr Auto؛ جنس خود اسم فقط پسوند را عوض می‌کند.
+euer وقتی پسوند می‌گیرد e وسطش را از دست می‌دهد: euer Haus، eure Schule.
+table:
+مالک | مذکر و خنثی | مؤنث و جمع | مذکر مفعولی
+ich | mein | meine | meinen
+du | dein | deine | deinen
+er، es | sein | seine | seinen
+sie (او) | ihr | ihre | ihren
+wir | unser | unsere | unseren
+ihr | euer | eure | euren
+sie (آن‌ها) | ihr | ihre | ihren
+Sie | Ihr | Ihre | Ihren
+sets:
+mein: Vater, Name, Freund, Auto, Haus, Buch
+meine: Mutter, Adresse, Schule, Freundin, Kinder, Eltern
+examples:
+Mein Vater heißt Reza. | اسم پدرم رضاست.
+Das ist Anna. Ihr{ihr-det} Auto ist neu. | این آناست. ماشینش نو است.
+Das ist Paul. Sein Haus ist groß. | این پاول است. خانه‌اش بزرگ است.
+Wo sind eure Kinder? | بچه‌های شما کجا هستند؟
+targets:
+Das ist [meine] Mutter. | این مادر من است. | d: mein, meinen, meines
+Das ist [mein] Vater. | این پدر من است. | d: meine, meinen, meines
+[Mein] Name ist Sara. | اسم من ساراست. | d: Meine, Meinen, Meines
+Wie ist [deine] Adresse? | نشانی‌ات چیست؟ | d: dein, deinen, deines
+Wie ist [Ihr] Name? | اسم شما چیست؟ | d: Ihre, Ihren, Ihres
+Das ist Paul und das ist [sein] Auto. | این پاول است و این ماشین اوست. | d: seine, seinen, seiner
+Das ist Anna und das ist [ihre]{ihr-det} Mutter. | این آناست و این مادر اوست. | d: ihr, ihren, ihres
+Wir wohnen in Köln. [Unser] Haus ist klein. | ما در کلن زندگی می‌کنیم. خانه ما کوچک است. | d: Unsere, Unseren, Unseres
+Kinder, ist das [eure] Schule? | بچه‌ها، این مدرسه شماست؟ | d: euer, euren, eures
+Ist das [dein] Telefon? | این تلفن توست؟ | d: deine, deinen, deiner
+Das sind [meine] Kinder. | این‌ها بچه‌های من هستند. | d: mein, meinen, meines
+[Meine] Eltern wohnen in Teheran. | پدر و مادرم در تهران زندگی می‌کنند. | d: Mein, Meinen, Meines | full: In Teheran wohnen meine Eltern.
+Wo ist [dein] Buch? | کتابت کجاست؟ | d: deine, deinen, deiner
+Max sucht [seinen] Vater. | ماکس دنبال پدرش می‌گردد. | d: sein, seine, seinem
+Das ist Lena. Ich kenne [ihren]{ihr-det} Vater. | این لناست. پدرش را می‌شناسم. | d: ihr, ihre, ihrem
+Lena sucht [ihr]{ihr-det} Telefon. | لنا دنبال تلفنش می‌گردد. | d: ihre, ihren, ihrem
+Paul und Lena, wie ist [eure] Adresse? | پاول و لنا، نشانی شما چیست؟ | d: euer, euren, eures
+[Unsere] Schule ist neu. | مدرسه ما نو است. | d: Unser, Unseren, Unseres
+Wie heißt [dein] Vater? | اسم پدرت چیست؟ | d: deine, deinen, deines
+Wie heißt [Ihre] Mutter? | اسم مادرتان چیست؟ | d: Ihr, Ihren, Ihres
+Das ist Reza und das ist [seine] Freundin. | این رضاست و این دوستش است. | d: sein, seinen, seines
+Wo wohnen [deine] Eltern? | پدر و مادرت کجا زندگی می‌کنند؟ | d: dein, deinen, deines
+Ich trinke [meinen] Tee. | من چایم را می‌نوشم. | d: mein, meine, meinem
+Wo ist [Ihr] Auto? | ماشینتان کجاست؟ | d: Ihre, Ihren, Ihrer
+Sara und Ali, ist das [euer] Haus? | سارا و علی، این خانه شماست؟ | d: eure, euren, eures
+Anna und Paul suchen [ihr]{ihr-det} Auto. | آنا و پاول دنبال ماشینشان می‌گردند. | d: ihre, ihren, ihrem
+Das ist [mein] Vater und das ist [meine] Mutter. | این پدر من است و این مادر من. | d: meine, meinen, meines / mein, meinen, meines
+[Mein] Name ist Ali. Wie ist [dein] Name? | اسم من علی است. اسم تو چیست؟ | d: Meine, Meinen, Meines / deine, deinen, deines
+Paul sucht [sein] Buch und Anna sucht [ihr]{ihr-det} Telefon. | پاول دنبال کتابش می‌گردد و آنا دنبال تلفنش. | d: seine, seinen, seinem / ihre, ihren, ihrem
+[Unser] Haus ist alt, aber [unsere] Straße ist schön. | خانه ما قدیمی است، اما خیابانمان قشنگ است. | d: Unsere, Unseren, Unseres / unser, unseren, unseres
+Ist das [dein] Buch? – Ja, das ist [mein] Buch. | این کتاب توست؟ – بله، کتاب من است. | d: deine, deinen, deiner / meine, meinen, meiner
+Das ist Lena und das sind [ihre]{ihr-det} Eltern. [Ihr]{ihr-det} Vater ist Iraner. | این لناست و این‌ها پدر و مادرش هستند. پدرش ایرانی است. | d: ihr, ihren, ihres / Ihre, Ihren, Ihres
+transforms:
+Das ist das Auto von Paul. => Das ist sein Auto. | به‌جای von Paul کلمه مالکیت بگذار.
+Das ist die Mutter von Anna. => Das ist ihre Mutter. | به‌جای von Anna کلمه مالکیت بگذار.
+Das ist das Haus von Lena und Max. => Das ist ihr Haus. | به‌جای von Lena und Max کلمه مالکیت بگذار.
+Das ist mein Buch. => Das ist dein Buch. | به‌جای mein کلمه مالکیت برای du بگذار.
+Ich suche meinen Vater. => Max sucht seinen Vater. | به‌جای ich، Max را فاعل کن.
+translations:
+این مادر من است. => Das ist meine Mutter.
+اسم شما چیست؟ (مؤدبانه) => Wie ist Ihr Name?
+این رضاست و این دوست اوست. => Das ist Reza und das ist sein Freund.
+پاول دنبال پدرش می‌گردد. => Paul sucht seinen Vater.
+بچه‌هایت کجا هستند؟ => Wo sind deine Kinder?
