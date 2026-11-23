@@ -1,0 +1,72 @@
+code: de-a1-duerfen
+title: dürfen: اجازه داشتن و «نباید»
+scope: صرف dürfen در Präsens برای اجازه گرفتن (Darf ich hier sitzen?) و ممنوعیت با nicht dürfen و man (Hier darf man nicht schwimmen.)، و فرق nicht dürfen («نباید») با nicht müssen («لازم نیست»)؛ sollen در سطح‌های بعد می‌آید.
+can_do: حالا می‌توانی اجازه بگیری («می‌شود اینجا بنشینم؟») و بگویی چه کاری ممنوع است.
+rule: dürfen یعنی اجازه داشتن؛ nicht dürfen یعنی «نباید، ممنوع است» و nicht müssen یعنی «لازم نیست». ich و er/sie/es: darf.
+mistake: فارسی‌زبان‌ها برای «نباید» muss nicht می‌گویند، ولی Hier muss man nicht schwimmen یعنی «لازم نیست شنا کرد»؛ برای «ممنوع» درست: Hier darf man nicht schwimmen. er هم darf است، نه «er darft».
+tables: Präsens | dürfen
+lesson:
+dürfen یعنی «اجازه داشتن»: Darf ich hier sitzen? یعنی «اجازه هست اینجا بنشینم؟» یا «می‌شود اینجا بنشینم؟»
+nicht dürfen یعنی «نباید» یا «ممنوع است»: Hier darf man nicht schwimmen یعنی «اینجا شنا ممنوع است».
+حواست باشد: «نباید» با nicht dürfen ساخته می‌شود و «لازم نیست» با nicht müssen: Du darfst nicht kommen (نباید بیایی)، Du musst nicht kommen (لازم نیست بیایی).
+مثل فعل‌های وجهی دیگر، dürfen جای دوم می‌نشیند و فعل دوم آخر جمله: Ich darf heute nicht spielen.
+صرفش: ich darf، du darfst، er darf، ولی wir dürfen و ihr dürft.
+با man قانون و قاعده عمومی را می‌گویی: Im Bus darf man nicht essen.
+table:
+شخص | dürfen | مثال
+ich | darf | Darf ich hier sitzen?
+du | darfst | Du darfst jetzt spielen.
+er/sie/es | darf | Max darf keinen Kaffee trinken.
+wir | dürfen | Dürfen wir hier warten?
+ihr | dürft | Ihr dürft nach Hause gehen.
+sie/Sie | dürfen | Sie dürfen hier nicht bleiben.
+examples:
+Darf ich hier sitzen? | می‌شود اینجا بنشینم؟
+Im Kino darf man nicht essen. | در سینما غذا خوردن ممنوع است.
+Du musst nicht kommen, aber du darfst kommen. | لازم نیست بیایی، اما اگر بخواهی می‌توانی بیایی.
+Die Kinder dürfen heute fernsehen. | بچه‌ها امروز اجازه دارند تلویزیون ببینند.
+targets:
+[Darf] ich hier bleiben? | می‌شود اینجا بمانم؟ | d: Darfst, Dürfe, Dürft | hint: (dürfen)
+Hier [darf] man nicht schwimmen. | اینجا شنا ممنوع است. | d: darfst, dürft, dürfen | hint: (dürfen) | full: Man darf hier nicht schwimmen.
+[Darfst] du heute ins Kino gehen? | امروز اجازه داری به سینما بروی؟ | d: Darf, Dürft, Dürfen | hint: (dürfen)
+Die Kinder [dürfen] im Garten spielen. | بچه‌ها اجازه دارند در باغ بازی کنند. | d: darf, dürft, darfst | hint: (dürfen) | full: Im Garten dürfen die Kinder spielen.
+[Dürfen] wir hier warten? | اجازه هست اینجا منتظر بمانیم؟ | d: Darf, Dürft, Darfst | hint: (dürfen)
+Ihr [dürft] jetzt nach Hause gehen. | حالا می‌توانید به خانه بروید. | d: dürfen, darf, darfst | hint: (dürfen) | full: Jetzt dürft ihr nach Hause gehen.
+Max [darf] keinen Kaffee trinken. | ماکس نباید قهوه بنوشد. | d: darfst, dürft, dürfen | hint: (dürfen)
+[Darf] ich Sie etwas fragen? | اجازه هست از شما چیزی بپرسم؟ | d: Darfst, Dürft, Dürfen | hint: (dürfen)
+Im Bus [darf] man nicht essen. | در اتوبوس غذا خوردن ممنوع است. | d: darfst, dürft, dürfen | hint: (dürfen) | full: Man darf im Bus nicht essen.
+Lena ist 6. Sie [darf] noch nicht allein fahren. | لنا شش ساله است. هنوز اجازه ندارد تنها برود. | d: darfst, dürft, dürfe | hint: (dürfen)
+Darf ich die Tür [öffnen]? | می‌شود در را باز کنم؟ | d: öffne, öffnet, öffnest
+Du darfst heute nicht Fußball [spielen]. | امروز نباید فوتبال بازی کنی. | d: spielst, spielt, spiele | full: Heute darfst du nicht Fußball spielen.
+Dürfen wir hier [fotografieren]? | اجازه هست اینجا عکس بگیریم؟ | d: fotografiert, fotografiere, fotografierst
+Darf ich das Handy [nehmen]? | می‌شود موبایل را بردارم؟ | d: nehme, nimmt, nimmst
+Kinder dürfen nicht allein über die Straße [gehen]. | بچه‌ها نباید تنها از خیابان رد شوند. | d: geht, gehe, gehst
+Sie dürfen hier nicht [bleiben]. | شما نباید اینجا بمانید. | d: bleibt, bleibe, bleibst | full: Hier dürfen Sie nicht bleiben.
+Ich [darf heute nicht spielen]. | امروز اجازه ندارم بازی کنم. | d: darf spielen heute nicht, spiele heute nicht darf, heute nicht spielen darf | full: Heute darf ich nicht spielen.
+Man [darf hier nicht essen]. | اینجا غذا خوردن ممنوع است. | d: darf essen hier nicht, isst hier nicht darf, hier nicht essen darf | full: Hier darf man nicht essen.
+[Darf ich hier warten]? | می‌شود اینجا منتظر بمانم؟ | d: Darf hier ich warten, Ich hier warten darf, Darf ich warten hier
+Die Kinder [dürfen jetzt Eis essen]. | بچه‌ها حالا اجازه دارند بستنی بخورند. | d: dürfen essen jetzt Eis, essen jetzt Eis dürfen, jetzt Eis essen dürfen | full: Jetzt dürfen die Kinder Eis essen.
+Am Sonntag [muss] ich nicht arbeiten. | یکشنبه لازم نیست کار کنم. | d: müsse, musst, müssen | hint: (müssen) | full: Ich muss am Sonntag nicht arbeiten.
+Im Kino [darf] man nicht telefonieren. | در سینما تلفن زدن ممنوع است. | d: darfst, dürft, dürfen | hint: (dürfen) | full: Man darf im Kino nicht telefonieren.
+Entschuldigung, [darf] ich etwas fragen? | ببخشید، اجازه هست چیزی بپرسم؟ | d: darfst, dürft, dürfen | hint: (dürfen)
+Max ist krank. Er [darf] nicht Fußball spielen. | ماکس مریض است. نباید فوتبال بازی کند. | d: darfst, dürft, dürfen | hint: (dürfen)
+[Darf] ich das Fenster [öffnen]? – Ja, natürlich. | می‌شود پنجره را باز کنم؟ – بله، البته. | d: Darfst, Dürft, Dürfen / öffne, öffnet, öffnest
+Wir [dürfen] hier nicht [schwimmen]. | ما اینجا اجازه نداریم شنا کنیم. | d: darf, dürft, darfst / schwimmt, schwimme, schwimmst | full: Hier dürfen wir nicht schwimmen.
+Du [darfst] jetzt [spielen], aber du musst um 6 Uhr nach Hause kommen. | حالا می‌توانی بازی کنی، اما باید ساعت شش به خانه بیایی. | d: darf, dürft, dürfen / spielst, spielt, spiele
+Im Museum [darf] man nicht [fotografieren]. | در موزه عکس گرفتن ممنوع است. | d: darfst, dürft, dürfen / fotografiert, fotografiere, fotografierst | full: Man darf im Museum nicht fotografieren.
+Morgen haben wir frei. Wir [müssen] nicht früh [aufstehen]. | فردا تعطیلیم. لازم نیست زود بیدار شویم. | d: muss, müsst, musst / stehen auf, aufsteht, aufstehe
+[Dürft] ihr heute [fernsehen]? | امروز اجازه دارید تلویزیون ببینید؟ | d: Dürfen, Darf, Darfst / seht fern, fernseht, fernsieht
+Ich [darf] keinen Kaffee [trinken]. Ich bin krank. | نباید قهوه بنوشم. مریضم. | d: darfst, dürft, dürfen / trinke, trinkt, trinkst
+Hier [dürfen] Kinder nicht allein [schwimmen]. | اینجا بچه‌ها نباید تنها شنا کنند. | d: darf, dürft, darfst / schwimmt, schwimme, schwimmst
+transforms:
+Ich bleibe hier. => Darf ich hier bleiben? | با dürfen اجازه بگیر.
+Man schwimmt hier nicht. => Man darf hier nicht schwimmen. ; Hier darf man nicht schwimmen. | با dürfen بگو که ممنوع است.
+Die Kinder spielen im Garten. => Die Kinder dürfen im Garten spielen. ; Im Garten dürfen die Kinder spielen. | با dürfen بگو که اجازه دارند.
+Ich darf heute spielen. => Max darf heute spielen. ; Heute darf Max spielen. | به‌جای ich، Max را فاعل کن.
+Du musst nicht kommen. => Du darfst nicht kommen. | «لازم نیست» را به «نباید» تبدیل کن.
+translations:
+اجازه هست اینجا بنشینم؟ => Darf ich hier sitzen? ; Kann ich hier sitzen?
+اینجا شنا ممنوع است. => Hier darf man nicht schwimmen. ; Man darf hier nicht schwimmen.
+تو نباید قهوه بنوشی. => Du darfst keinen Kaffee trinken.
+لازم نیست فردا بیایی. => Du musst morgen nicht kommen. ; Morgen musst du nicht kommen.
+بچه‌ها اجازه دارند در باغ بازی کنند. => Die Kinder dürfen im Garten spielen. ; Im Garten dürfen die Kinder spielen.

@@ -1,0 +1,72 @@
+code: de-a1-muessen-wollen
+title: müssen و wollen: باید و می‌خواهم
+scope: صرف müssen و wollen در Präsens با فعل دوم در آخر جمله (Ich muss heute arbeiten. Ich will Deutsch lernen.)، معنی nicht müssen («لازم نیست») و فرق wollen با möchte؛ dürfen و «نباید» در واحد بعد می‌آید.
+can_do: حالا می‌توانی بگویی چه کاری باید بکنی و چه کاری می‌خواهی بکنی.
+rule: ich و er/sie/es: muss و will (بی‌پسوند)؛ فعل دوم بی‌تغییر آخر جمله می‌آید: Ich muss heute arbeiten. nicht müssen یعنی «لازم نیست».
+mistake: فارسی‌زبان‌ها «نباید» را muss nicht می‌گویند، ولی Ich muss nicht arbeiten یعنی «لازم نیست کار کنم». شکل‌ها هم بی‌قاعده‌اند: ich will، نه «ich wolle»، و er muss، نه «er musst».
+tables: Präsens | müssen
+tables: Präsens | wollen
+lesson:
+müssen یعنی «باید» و wollen یعنی «خواستن»؛ wollen قاطع‌تر از möchte است.
+مثل können، در جای دوم صرف می‌شوند و فعل دوم بی‌تغییر آخر جمله می‌آید: Ich muss heute arbeiten. Ich will Deutsch lernen.
+مفردشان بی‌قاعده است: ich muss، du musst، er muss و ich will، du willst، er will؛ جمع عادی است: wir müssen، wir wollen.
+nicht müssen یعنی «لازم نیست»، نه «نباید»: Ich muss heute nicht arbeiten یعنی «امروز لازم نیست کار کنم».
+برای خواهش مؤدبانه möchte بگو؛ Ich will einen Kaffee در کافه بی‌ادبانه به نظر می‌رسد.
+table:
+شخص | müssen | wollen
+ich | muss | will
+du | musst | willst
+er/sie/es | muss | will
+wir | müssen | wollen
+ihr | müsst | wollt
+sie/Sie | müssen | wollen
+examples:
+Ich muss heute einkaufen. | امروز باید خرید کنم.
+Willst du mitkommen? | می‌خواهی با ما بیایی؟
+Wir wollen ein Haus kaufen. | می‌خواهیم یک خانه بخریم.
+Am Sonntag muss ich nicht arbeiten. | یکشنبه لازم نیست کار کنم.
+targets:
+Ich [muss] heute arbeiten. | من امروز باید کار کنم. | d: müsse, musst, müssen | hint: (müssen) | full: Heute muss ich arbeiten.
+[Musst] du morgen früh aufstehen? | فردا باید زود بیدار شوی؟ | d: Muss, Müsst, Müssen | hint: (müssen)
+Anna [muss] zum Arzt gehen. | آنا باید پیش دکتر برود. | d: musst, müsst, müssen | hint: (müssen)
+Wir [müssen] jetzt gehen. | ما الان باید برویم. | d: muss, müsst, musst | hint: (müssen) | full: Jetzt müssen wir gehen.
+[Müsst] ihr Hausaufgaben machen? | باید تکلیف بنویسید؟ | d: Müssen, Muss, Musst | hint: (müssen)
+Sie [müssen] hier warten. | شما باید اینجا منتظر بمانید. | d: müsst, musst, mussen | hint: (müssen) | full: Hier müssen Sie warten.
+Max [muss] heute nicht arbeiten. | ماکس امروز لازم نیست کار کند. | d: musst, müsst, müssen | hint: (müssen) | full: Heute muss Max nicht arbeiten.
+Ich [will] in Berlin wohnen. | می‌خواهم در برلین زندگی کنم. | d: wolle, willst, wollen | hint: (wollen) | full: In Berlin will ich wohnen.
+[Willst] du ins Kino gehen? | می‌خواهی به سینما بروی؟ | d: Will, Wollt, Wollen | hint: (wollen)
+Lena [will] ein Fahrrad kaufen. | لنا می‌خواهد یک دوچرخه بخرد. | d: willst, wollt, wollen | hint: (wollen)
+Wir [wollen] am Wochenende schwimmen gehen. | ما می‌خواهیم آخر هفته شنا برویم. | d: will, wollt, willst | hint: (wollen) | full: Am Wochenende wollen wir schwimmen gehen.
+[Wollt] ihr Pizza essen? | می‌خواهید پیتزا بخورید؟ | d: Wollen, Will, Willst | hint: (wollen)
+Die Kinder [wollen] spielen. | بچه‌ها می‌خواهند بازی کنند. | d: will, wollt, willst | hint: (wollen)
+Paul [will] nicht kommen. | پاول نمی‌خواهد بیاید. | d: willst, wollt, wollen | hint: (wollen)
+Ich muss jetzt nach Hause [gehen]. | الان باید به خانه بروم. | d: gehe, geht, gehst | full: Jetzt muss ich nach Hause gehen.
+Du musst das Formular [ausfüllen]. | تو باید فرم را پر کنی. | d: füllst aus, ausfüllst, ausfüllt
+Wir wollen eine Reise [machen]. | ما می‌خواهیم سفر برویم. | d: macht, mache, machst
+Willst du einen Kaffee [trinken]? | می‌خواهی یک قهوه بنوشی؟ | d: trinkst, trinkt, trinke
+Sara muss heute viel [arbeiten]. | سارا امروز باید زیاد کار کند. | d: arbeitet, arbeite, arbeitest | full: Heute muss Sara viel arbeiten.
+Max will Deutsch [lernen]. | ماکس می‌خواهد آلمانی یاد بگیرد. | d: lernt, lerne, lernst
+Ich [muss morgen früh aufstehen]. | فردا باید زود بیدار شوم. | d: muss aufstehen morgen früh, stehe morgen früh auf muss, morgen früh aufstehen muss | full: Morgen früh muss ich aufstehen.
+Wir [wollen nach Wien fahren]. | ما می‌خواهیم به وین برویم. | d: wollen fahren nach Wien, fahren nach Wien wollen, nach Wien fahren wollen | full: Nach Wien wollen wir fahren.
+Du [musst viel Wasser trinken]. | تو باید آب زیاد بنوشی. | d: musst trinken viel Wasser, trinkst viel Wasser musst, viel Wasser trinken musst
+[Willst du heute Fußball spielen]? | می‌خواهی امروز فوتبال بازی کنی؟ | d: Du heute Fußball spielen willst, Willst du spielen heute Fußball, Heute du willst Fußball spielen
+Heute ist Sonntag. Ich [muss] nicht arbeiten. | امروز یکشنبه است. لازم نیست کار کنم. | d: musst, müssen, müsse | hint: (müssen)
+Ich [muss] heute [arbeiten], aber morgen habe ich frei. | امروز باید کار کنم، اما فردا تعطیلم. | d: müsse, musst, müssen / arbeite, arbeitet, arbeitest | full: Heute muss ich arbeiten, aber morgen habe ich frei.
+[Willst] du Pizza oder Salat [essen]? | می‌خواهی پیتزا بخوری یا سالاد؟ | d: Will, Wollt, Wollen / isst, esst, esse
+Ihr [müsst] hier [aussteigen]. | شما باید اینجا پیاده شوید. | d: müssen, muss, musst / steigt aus, aussteigt, steigst aus | full: Hier müsst ihr aussteigen.
+Max [will] heute nicht [kochen]. | ماکس امروز نمی‌خواهد آشپزی کند. | d: willst, wollt, wollen / kocht, koche, kochst | full: Heute will Max nicht kochen.
+Ich [will] Musik hören, aber ich [muss] Hausaufgaben machen. | می‌خواهم موسیقی گوش کنم، اما باید تکلیف بنویسم. | d: wolle, willst, wollen / müsse, musst, müssen
+[Musst] du heute [arbeiten]? – Nein, ich habe frei. | امروز باید کار کنی؟ – نه، تعطیلم. | d: Muss, Müsst, Müssen / arbeitest, arbeitet, arbeite
+Anna [will] nach Hause [gehen], aber sie muss noch warten. | آنا می‌خواهد به خانه برود، اما هنوز باید منتظر بماند. | d: willst, wollt, wollen / geht, gehe, gehst
+transforms:
+Ich arbeite heute. => Ich muss heute arbeiten. ; Heute muss ich arbeiten. | با müssen بگو.
+Wir lernen Deutsch. => Wir wollen Deutsch lernen. | با wollen بگو.
+Du füllst das Formular aus. => Du musst das Formular ausfüllen. | با müssen بگو.
+Kaufst du ein Auto? => Willst du ein Auto kaufen? | سؤال را با wollen بپرس.
+Ich muss heute arbeiten. => Ich muss heute nicht arbeiten. ; Heute muss ich nicht arbeiten. | جمله را منفی کن.
+translations:
+امروز باید کار کنم. => Ich muss heute arbeiten. ; Heute muss ich arbeiten.
+می‌خواهی به سینما بروی؟ => Willst du ins Kino gehen? ; Möchtest du ins Kino gehen?
+ما می‌خواهیم به وین برویم. => Wir wollen nach Wien fahren. ; Wir möchten nach Wien fahren.
+لازم نیست امروز کار کنی. => Du musst heute nicht arbeiten. ; Heute musst du nicht arbeiten.
+باید آب زیاد بنوشی. => Du musst viel Wasser trinken.
