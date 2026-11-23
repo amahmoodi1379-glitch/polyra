@@ -1,0 +1,69 @@
+code: de-a1-ja-nein-doch
+title: ja، nein و doch: جواب به سؤال منفی
+scope: جواب کوتاه به سؤال بله و نه: ja و nein بعد از سؤال مثبت، و doch (چرا) یا nein بعد از سؤال منفی با nicht یا kein (Kommst du nicht? – Doch, ich komme.)؛ doch به معنی‌های دیگر (Komm doch!) در سطح‌های بعد می‌آید.
+can_do: حالا می‌توانی به سؤال منفی درست جواب بدهی: «نمی‌آیی؟ – چرا، می‌آیم.»
+rule: سؤال مثبت ← ja یا nein؛ سؤال منفی ← doch (چرا) یا nein: Kommst du nicht? – Doch, ich komme. / Nein, ich komme nicht.
+mistake: فارسی‌زبان‌ها بعد از سؤال منفی ja می‌گویند («Kommst du nicht? – Ja, ich komme»)؛ درست: Doch, ich komme. doch همان «چرا»ی فارسی در جواب سؤال منفی است.
+lesson:
+بعد از سؤال مثبت جواب ja (بله) یا nein (نه) است: Kommst du? – Ja, ich komme. / Nein, ich komme nicht.
+سؤال منفی nicht یا kein دارد: Kommst du nicht? Hast du kein Auto?
+اگر بعد از سؤال منفی خلاف آن را بگویی، doch می‌گویی، درست مثل «چرا» در فارسی: Kommst du nicht? – Doch, ich komme.
+اگر حرف سؤال منفی را تأیید کنی، nein می‌گویی: Kommst du nicht? – Nein, ich komme nicht.
+بعد از سؤال منفی ja نگو، چون معلوم نیست منظورت «می‌آیم» است یا «نمی‌آیم».
+doch فقط جواب سؤال منفی است؛ بعد از سؤال مثبت همان ja را بگو.
+table:
+سؤال | جواب مثبت | جواب منفی
+Kommst du? | Ja, ich komme. | Nein, ich komme nicht.
+Kommst du nicht? | Doch, ich komme. | Nein, ich komme nicht.
+Hast du ein Auto? | Ja, ich habe ein Auto. | Nein, ich habe kein Auto.
+Hast du kein Auto? | Doch, ich habe ein Auto. | Nein, ich habe kein Auto.
+examples:
+Kommst du? – Ja, ich komme. | می‌آیی؟ – بله، می‌آیم.
+Kommst du nicht? – Doch, ich komme. | نمی‌آیی؟ – چرا، می‌آیم.
+Hast du kein Geld? – Nein, ich habe kein Geld. | پول نداری؟ – نه، پول ندارم.
+Ist Max nicht hier? – Doch, er ist hier. | ماکس اینجا نیست؟ – چرا، اینجاست.
+targets:
+Kommt Lena nicht? – [Doch], sie kommt. | لنا نمی‌آید؟ – چرا، می‌آید. | d: Ja, Nein, Nicht
+Ist Anna nicht zu Hause? – [Doch], sie ist zu Hause. | آنا خانه نیست؟ – چرا، خانه است. | d: Ja, Nein, Nicht
+Hast du kein Auto? – [Doch], ich habe ein Auto. | ماشین نداری؟ – چرا، ماشین دارم. | d: Ja, Nein, Nicht
+Verstehst du das nicht? – [Doch], ich verstehe das. | این را نمی‌فهمی؟ – چرا، می‌فهمم. | d: Ja, Nein, Nicht | full: Verstehst du das nicht? – Doch, das verstehe ich.
+Wohnt Max nicht in Berlin? – [Doch], er wohnt in Berlin. | ماکس در برلین زندگی نمی‌کند؟ – چرا، در برلین زندگی می‌کند. | d: Ja, Nein, Nicht
+Ist das Haus nicht neu? – [Doch], es ist neu. | خانه نو نیست؟ – چرا، نو است. | d: Ja, Nein, Nicht
+Habt ihr keine Kinder? – [Doch], wir haben 2 Kinder. | بچه ندارید؟ – چرا، دو بچه داریم. | d: Ja, Nein, Nicht
+Sprechen Sie kein Deutsch? – [Doch], ich spreche Deutsch. | شما آلمانی صحبت نمی‌کنید؟ – چرا، آلمانی صحبت می‌کنم. | d: Ja, Nein, Nicht
+Arbeitest du heute nicht? – [Doch], ich arbeite heute. | امروز کار نمی‌کنی؟ – چرا، امروز کار می‌کنم. | d: Ja, Nein, Nicht | full: Arbeitest du heute nicht? – Doch, heute arbeite ich.
+Ist der Kaffee nicht gut? – [Doch], er ist sehr gut. | قهوه خوب نیست؟ – چرا، خیلی خوب است. | d: Ja, Nein, Nicht
+Kennst du Lena nicht? – [Doch], ich kenne Lena. | لنا را نمی‌شناسی؟ – چرا، می‌شناسمش. | d: Ja, Nein, Nicht
+Hast du kein Geld? – [Doch], ich habe Geld. | پول نداری؟ – چرا، پول دارم. | d: Ja, Nein, Nicht
+Seid ihr nicht verheiratet? – [Doch], wir sind verheiratet. | شما متأهل نیستید؟ – چرا، متأهلیم. | d: Ja, Nein, Nicht
+Kommst du heute nicht? – [Nein], ich komme heute nicht. | امروز نمی‌آیی؟ – نه، امروز نمی‌آیم. | d: Doch, Nicht, Kein | full: Kommst du heute nicht? – Nein, heute komme ich nicht.
+Hast du kein Telefon? – [Nein], ich habe kein Telefon. | تلفن نداری؟ – نه، تلفن ندارم. | d: Doch, Nicht, Kein
+Ist Paul nicht hier? – [Nein], er ist nicht hier. | پاول اینجا نیست؟ – نه، اینجا نیست. | d: Doch, Nicht, Kein
+Habt ihr kein Brot? – [Nein], wir haben kein Brot. | نان ندارید؟ – نه، نان نداریم. | d: Doch, Nicht, Kein
+Verstehst du das Wort nicht? – [Nein], ich verstehe das Wort nicht. | این کلمه را نمی‌فهمی؟ – نه، نمی‌فهمم. | d: Doch, Nicht, Kein | full: Verstehst du das Wort nicht? – Nein, das Wort verstehe ich nicht.
+Kommst du morgen? – [Ja], ich komme morgen. | فردا می‌آیی؟ – بله، فردا می‌آیم. | d: Doch, Nein, Nicht | full: Kommst du morgen? – Ja, morgen komme ich.
+Ist das das Auto von Max? – [Ja], das ist das Auto von Max. | این ماشین ماکس است؟ – بله، ماشین ماکس است. | d: Doch, Nein, Nicht
+Hast du Kinder? – [Ja], ich habe 2 Kinder. | بچه داری؟ – بله، دو بچه دارم. | d: Doch, Nein, Nicht
+Wohnt ihr in Wien? – [Ja], wir wohnen in Wien. | شما در وین زندگی می‌کنید؟ – بله، در وین زندگی می‌کنیم. | d: Doch, Nein, Nicht | full: Wohnt ihr in Wien? – Ja, in Wien wohnen wir.
+Wohnst du in Berlin? – [Nein], ich wohne in Wien. | در برلین زندگی می‌کنی؟ – نه، در وین زندگی می‌کنم. | d: Doch, Ja, Nicht | full: Wohnst du in Berlin? – Nein, in Wien wohne ich.
+Ist das Tee? – [Nein], das ist Kaffee. | این چای است؟ – نه، قهوه است. | d: Doch, Ja, Nicht
+Heißt du Sara? – [Nein], ich heiße Maryam. | اسمت ساراست؟ – نه، اسمم مریم است. | d: Doch, Ja, Nicht
+Kommen Sie aus Deutschland? – [Nein], ich komme aus Österreich. | شما اهل آلمان هستید؟ – نه، اهل اتریشم. | d: Doch, Ja, Nicht
+Hast du kein Auto? – [Nein], ich habe [kein] Auto. | ماشین نداری؟ – نه، ماشین ندارم. | d: Doch, Nicht, Kein / keine, nicht, nein
+Ist das nicht Paul? – [Nein], das ist [nicht] Paul. Das ist Max. | این پاول نیست؟ – نه، پاول نیست. این ماکس است. | d: Doch, Nicht, Kein / kein, nein, nichts
+Kommt Anna nicht? – [Doch], sie kommt. Und Max? – [Nein], er kommt nicht. | آنا نمی‌آید؟ – چرا، می‌آید. و ماکس؟ – نه، نمی‌آید. | d: Ja, Nein, Nicht / Doch, Nicht, Kein
+Ist das Haus nicht alt? – [Doch], es ist [sehr] alt. | خانه قدیمی نیست؟ – چرا، خیلی قدیمی است. | d: Ja, Nein, Nicht / nicht, kein, nein
+Trinkst du kein Wasser? – [Doch], ich trinke [viel] Wasser. | آب نمی‌نوشی؟ – چرا، خیلی آب می‌نوشم. | d: Ja, Nein, Nicht / nicht, kein, nein
+Ist das keine Schule? – [Doch], das ist [eine] Schule. | این مدرسه نیست؟ – چرا، مدرسه است. | d: Ja, Nein, Nicht / keine, ein, nicht
+transforms:
+Kommst du nicht? => Doch, ich komme. | با doch جواب بده.
+Ist Anna nicht hier? => Doch, sie ist hier. ; Doch, Anna ist hier. | با doch جواب بده.
+Hast du kein Auto? => Doch, ich habe ein Auto. | با doch جواب بده.
+Verstehst du das nicht? => Doch, ich verstehe das. ; Doch, das verstehe ich. | با doch جواب بده.
+Kommst du heute? => Nein, ich komme heute nicht. ; Nein, heute komme ich nicht. | با nein جواب بده.
+translations:
+چرا، می‌آیم. => Doch, ich komme.
+چرا، ماشین دارم. => Doch, ich habe ein Auto.
+نه، پول ندارم. => Nein, ich habe kein Geld.
+بله، فردا می‌آیم. => Ja, ich komme morgen. ; Ja, morgen komme ich.
+چرا، آلمانی می‌فهمم. => Doch, ich verstehe Deutsch.

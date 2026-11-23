@@ -1,0 +1,73 @@
+code: de-a1-kein
+title: kein و keine: منفی اسم
+scope: منفی کردن اسمی که ein یا eine دارد یا بی‌حرف تعریف است با kein و keine در حالت فاعلی و با اسم مؤنث، خنثی و جمع بعد از haben و فعل‌های دیگر (Ich habe kein Auto. Wir haben keine Kinder.)، و فرق آن با nicht؛ شکل مفعولی مذکر (keinen) در واحد بعد می‌آید.
+can_do: حالا می‌توانی بگویی «ماشین ندارم»، «پول ندارم» و «این مدرسه نیست».
+rule: ein ← kein، eine ← keine، اسم بی‌حرف تعریف ← kein یا keine (Ich habe kein Geld. Wir haben keine Kinder.)؛ برای فعل، صفت، جا و اسم با der، die، das همان nicht.
+mistake: فارسی فقط فعل را منفی می‌کند («ماشین ندارم») و فارسی‌زبان‌ها می‌گویند «Ich habe nicht ein Auto» یا «Ich habe nicht Auto»؛ درست: Ich habe kein Auto. جنس هم مهم است: keine Schule، نه «kein Schule».
+lesson:
+در فارسی همیشه فعل را منفی می‌کنی: «ماشین ندارم»، «این مدرسه نیست».
+در آلمانی وقتی اسم ein یا eine دارد یا بی‌حرف تعریف است، خود اسم را با kein منفی می‌کنی، نه با nicht.
+kein درست مثل ein است و فقط یک k جلویش آمده: ein Auto ← kein Auto، eine Schule ← keine Schule.
+اسم‌های بی‌حرف تعریف هم kein یا keine می‌گیرند: Ich habe Geld ← Ich habe kein Geld، Wir haben Kinder ← Wir haben keine Kinder.
+برای فعل، صفت، جا و اسمی که der، die یا das دارد همان nicht می‌ماند: Das ist nicht gut. Das ist nicht das Auto von Anna.
+table:
+مثبت | منفی
+ein Auto | kein Auto
+eine Schule | keine Schule
+Geld | kein Geld
+Kinder (جمع) | keine Kinder
+das Auto von Anna | nicht das Auto von Anna
+sets:
+kein: Auto, Geld, Kaffee, Brot, Haus, Name
+keine: Schule, Arbeit, Adresse, Straße, Kinder, Freunde
+nicht: gut, groß, neu, hier, zu Hause
+examples:
+Wir haben kein Auto. | ما ماشین نداریم.
+Das ist keine Schule, das ist ein Haus. | این مدرسه نیست، یک خانه است.
+Lena hat keine Kinder. | لنا بچه ندارد.
+Der Kaffee ist nicht gut. | قهوه خوب نیست.
+targets:
+Ich habe [kein] Auto. | من ماشین ندارم. | d: keine, nicht, nein
+Das ist [keine] Schule. | این مدرسه نیست. | d: kein, nicht, nein
+Wir haben [keine] Kinder. | ما بچه نداریم. | d: kein, nichts, nein
+Ich habe heute [kein] Geld. | من امروز پول ندارم. | d: keine, nichts, nein | full: Heute habe ich kein Geld.
+Das ist [kein] Kaffee, das ist Tee. | این قهوه نیست، چای است. | d: keine, keinen, nein
+Max ist [kein] Iraner. | ماکس ایرانی نیست. | d: keine, nichts, nein | ok: nicht
+Laura ist [keine] Iranerin. | لورا ایرانی نیست. | d: kein, nichts, nein | ok: nicht
+Lena hat [keine] Adresse in Berlin. | لنا در برلین نشانی ندارد. | d: kein, nichts, nein | full: In Berlin hat Lena keine Adresse.
+Paul hat [kein] Telefon. | پاول تلفن ندارد. | d: keine, nicht, nein
+Hier ist [keine] Straße. | اینجا خیابانی نیست. | d: kein, nicht, nein
+Wir haben [kein] Brot. | ما نان نداریم. | d: keine, nichts, nein
+Das ist [kein] Wort. | این کلمه نیست. | d: keine, nicht, nein
+Ich habe [keine] Arbeit. | من کار ندارم. | d: kein, nichts, nein
+Er hat [keine] Freunde hier. | او اینجا دوستی ندارد. | d: kein, nichts, nein | full: Hier hat er keine Freunde.
+Das ist [kein] Name. | این اسم نیست. | d: keine, keinen, nein
+Hier ist [kein] Wasser. | اینجا آب نیست. | d: keine, nichts, nein
+Ich brauche [kein] Auto. | من ماشین لازم ندارم. | d: keine, nicht, nein
+Anna hat [keine] Telefonnummer. | آنا شماره تلفن ندارد. | d: kein, nicht, nein
+Heute haben wir [keine] Schule. | امروز مدرسه نداریم. | d: kein, nichts, nein | full: Wir haben heute keine Schule.
+Da ist [kein] Mann, da ist eine Frau. | آنجا مرد نیست، آنجا یک زن هست. | d: keine, keinen, nein
+Ich kaufe heute [kein] Brot. | امروز نان نمی‌خرم. | d: keine, nichts, nein | full: Heute kaufe ich kein Brot.
+Die Eltern haben [kein] Haus. | پدر و مادر خانه ندارند. | d: keine, nicht, nein
+Das Brot ist [nicht] gut. | نان خوب نیست. | d: kein, keine, nein
+Wir kommen morgen [nicht]. | ما فردا نمی‌آییم. | d: kein, keine, nein | full: Morgen kommen wir nicht.
+Das ist [nicht] das Haus von Paul. | این خانه پاول نیست. | d: kein, keine, nein
+Ich habe [kein] Auto und [keine] Arbeit. | من ماشین ندارم و کار هم ندارم. | d: keine, nicht, nein / kein, nichts, nein
+Wir haben [keine] Kinder und [kein] Auto. | ما بچه نداریم و ماشین هم نداریم. | d: kein, nichts, nein / keine, nicht, nein
+Hast du ein Auto? – [Nein], ich habe [kein] Auto. | ماشین داری؟ – نه، ماشین ندارم. | d: Nicht, Kein, Nichts / keine, nicht, nein
+Ist das eine Schule? – [Nein], das ist [keine] Schule. | این مدرسه است؟ – نه، مدرسه نیست. | d: Nicht, Kein, Nichts / kein, nicht, nein
+Hast du Geld? – [Nein], ich habe [kein] Geld. | پول داری؟ – نه، پول ندارم. | d: Nicht, Kein, Nichts / keine, nichts, nein
+Max ist [kein] Iraner und er wohnt [nicht] in Iran. | ماکس ایرانی نیست و در ایران زندگی نمی‌کند. | d: keine, nichts, nein / kein, nichts, nein | ok: nicht
+Hier ist [keine] Schule und [kein] Haus. | اینجا نه مدرسه هست، نه خانه. | d: kein, nicht, nein / keine, nicht, nein
+transforms:
+Ich habe ein Auto. => Ich habe kein Auto. | جمله را منفی کن.
+Das ist eine Schule. => Das ist keine Schule. | جمله را منفی کن.
+Wir haben Kinder. => Wir haben keine Kinder. | جمله را منفی کن.
+Paul hat Geld. => Paul hat kein Geld. | جمله را منفی کن.
+Das Haus ist groß. => Das Haus ist nicht groß. | جمله را منفی کن.
+translations:
+من ماشین ندارم. => Ich habe kein Auto.
+ما بچه نداریم. => Wir haben keine Kinder.
+این مدرسه نیست. => Das ist keine Schule.
+پاول پول ندارد. => Paul hat kein Geld.
+ماکس ایرانی نیست. => Max ist kein Iraner. ; Max ist nicht Iraner.
