@@ -1,0 +1,73 @@
+code: de-a1-akkusativ
+title: den، einen، keinen: مفعول مذکر
+scope: حالت مفعولی (Akkusativ) بعد از فعل‌هایی مثل haben، kaufen، trinken، suchen، kennen و es gibt: مذکر der ← den، ein ← einen، kein ← keinen، و مؤنث، خنثی و جمع بی‌تغییر (Ich kenne den Mann. Ich trinke einen Kaffee.)؛ ضمیرهای مفعولی (ihn) و حرف اضافه‌های مفعولی در واحدهای بعد می‌آیند.
+can_do: حالا می‌توانی بگویی «یک قهوه می‌نوشم» و «آن مرد را می‌شناسم».
+rule: فقط مذکر عوض می‌شود: der ← den، ein ← einen، kein ← keinen (Ich kenne den Mann. Ich trinke einen Kaffee.)؛ مؤنث، خنثی و جمع همان می‌مانند.
+mistake: فارسی‌زبان‌ها بعد از فعل همان der و ein را می‌گذارند: «Ich habe ein Freund» و «Ich kenne der Mann» غلط است؛ درست: Ich habe einen Freund، Ich kenne den Mann. فاعل جمله همان der می‌ماند: Der Mann trinkt einen Kaffee.
+lesson:
+در فارسی مفعول معین «را» می‌گیرد: «مرد را می‌شناسم.»
+آلمانی «را» ندارد؛ به‌جایش حرف تعریف اسم مذکر عوض می‌شود: der Mann ← Ich kenne den Mann.
+این شکل را Akkusativ (حالت مفعولی) می‌گویند و بعد از فعل‌هایی مثل haben، kaufen، trinken، suchen، kennen و es gibt می‌آید.
+فقط مذکر عوض می‌شود: der ← den، ein ← einen، kein ← keinen.
+مؤنث، خنثی و جمع همان شکل فاعلی را نگه می‌دارند: Ich kaufe das Brot. Wir suchen die Schule.
+کسی یا چیزی که کار را می‌کند (فاعل) همان der می‌ماند: Der Mann trinkt einen Kaffee.
+table:
+جنس | فاعل | مفعول
+مذکر | der / ein / kein Kaffee | den / einen / keinen Kaffee
+مؤنث | die / eine / keine Schule | die / eine / keine Schule
+خنثی | das / ein / kein Auto | das / ein / kein Auto
+جمع | die / keine Kinder | die / keine Kinder
+sets:
+einen: Kaffee, Tee, Freund, Mann, Vater
+eine: Adresse, Schule, Freundin, Nummer, Arbeit
+ein: Auto, Haus, Buch, Telefon, Brot
+examples:
+Ich trinke einen Tee. | من یک چای می‌نوشم.
+Kennst du den Mann dort? | آن مرد آنجا را می‌شناسی؟
+Wir haben keinen Kaffee. | ما قهوه نداریم.
+Der Vater kauft das Brot. | پدر نان را می‌خرد.
+targets:
+Ich trinke [einen] Kaffee. | من یک قهوه می‌نوشم. | d: ein, eine, einem
+Ich kenne [den] Mann. | من آن مرد را می‌شناسم. | d: der, die, dem
+Anna hat [einen] Freund in Wien. | آنا در وین یک دوست دارد. | d: ein, eine, einem | full: In Wien hat Anna einen Freund.
+Wir haben heute [keinen] Tee. | ما امروز چای نداریم. | d: kein, keine, keinem | full: Heute haben wir keinen Tee.
+Paul kauft [den] Tee. | پاول چای را می‌خرد. | d: der, das, dem
+Ich brauche [keinen] Kaffee. | من قهوه لازم ندارم. | d: kein, keine, keinem
+Kennst du [den] Vater von Anna? | پدر آنا را می‌شناسی؟ | d: der, die, dem
+Ich sehe [den] Mann dort. | آن مرد را آنجا می‌بینم. | d: der, die, dem | full: Dort sehe ich den Mann.
+Wir fragen [den] Vater. | ما از پدر می‌پرسیم. | d: der, die, dem
+Es gibt hier [keinen] Tee. | اینجا چای نیست. | d: kein, keine, keinem | full: Hier gibt es keinen Tee.
+Ich kaufe [einen] Tee. | من یک چای می‌خرم. | d: ein, eine, einem
+Wir kennen [den] Freund von Lena. | ما دوست لنا را می‌شناسیم. | d: der, die, dem
+Die Kinder suchen [den] Vater. | بچه‌ها دنبال پدر می‌گردند. | d: der, die, dem
+Ich nehme [den] Kaffee. | من قهوه را برمی‌دارم. | d: der, das, dem
+Hast du [einen] Freund in Berlin? | در برلین دوستی داری؟ | d: ein, eine, einem
+Sara trinkt [keinen] Kaffee. | سارا قهوه نمی‌نوشد. | d: kein, keine, keinem
+Kennt ihr [den] Iraner dort? | آن مرد ایرانی آنجا را می‌شناسید؟ | d: der, die, dem
+Max kauft [das] Brot. | ماکس نان را می‌خرد. | d: den, die, dem
+Wir suchen [die] Schule. | ما دنبال مدرسه می‌گردیم. | d: den, der, dem
+Paul kauft [ein] Auto. | پاول یک ماشین می‌خرد. | d: einen, eine, einem
+Anna sucht [eine] Adresse in Köln. | آنا در کلن دنبال یک نشانی می‌گردد. | d: einen, ein, einem | full: In Köln sucht Anna eine Adresse.
+Lena hat [kein] Auto. | لنا ماشین ندارد. | d: keinen, keine, keinem
+Ich kenne [einen] Mann in Wien. | من مردی را در وین می‌شناسم. | d: ein, eine, einem | full: In Wien kenne ich einen Mann.
+Ich frage [einen] Mann. | از یک مرد می‌پرسم. | d: ein, eine, einem
+[Der] Mann trinkt [einen] Kaffee. | مرد یک قهوه می‌نوشد. | d: Den, Die, Dem / ein, eine, einem
+[Der] Tee ist gut. Ich kaufe [den] Tee. | چای خوب است. چای را می‌خرم. | d: Den, Die, Das / der, das, dem
+Hier ist [ein] Mann. Kennst du [den] Mann? | اینجا یک مرد هست. آن مرد را می‌شناسی؟ | d: einen, eine, einem / der, die, dem
+Ich habe [einen] Freund und [eine] Freundin in Köln. | من در کلن یک دوست مرد و یک دوست زن دارم. | d: ein, eine, einem / einen, ein, einer | full: In Köln habe ich einen Freund und eine Freundin.
+Wir kaufen [einen] Tee und [ein] Brot. | ما یک چای و یک نان می‌خریم. | d: ein, eine, einem / einen, eine, einem
+Ich habe [keinen] Kaffee und [kein] Brot. | من نه قهوه دارم، نه نان. | d: kein, keine, keinem / keinen, keine, keinem
+[Der] Vater sucht [den] Freund von Max. | پدر دنبال دوست ماکس می‌گردد. | d: Den, Die, Dem / der, die, dem
+Kennst du [den] Mann? – Nein, ich kenne [den] Mann nicht. | آن مرد را می‌شناسی؟ – نه، نمی‌شناسمش. | d: der, die, dem / der, die, dem
+transforms:
+Das ist der Mann. => Ich kenne den Mann. | جمله را با Ich kenne بساز.
+Das ist ein Kaffee. => Ich trinke einen Kaffee. | جمله را با Ich trinke بساز.
+Hier ist kein Tee. => Wir haben keinen Tee. | جمله را با Wir haben بساز.
+Der Freund ist hier. => Ich suche den Freund. | جمله را با Ich suche بساز.
+Das ist eine Schule. => Ich suche eine Schule. | جمله را با Ich suche بساز.
+translations:
+من یک قهوه می‌نوشم. => Ich trinke einen Kaffee.
+آن مرد را می‌شناسم. => Ich kenne den Mann.
+ما چای نداریم. => Wir haben keinen Tee.
+پدر چای را می‌خرد. => Der Vater kauft den Tee.
+پدر مریم را می‌شناسی؟ => Kennst du den Vater von Maryam?
