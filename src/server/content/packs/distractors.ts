@@ -6,6 +6,7 @@ import { fold, splitPieces } from "@/engine/tokens";
 import { isCardRegister } from "@/engine/content";
 import { levelRank } from "../languages";
 import { germanVerb } from "../german-verbs";
+import { closedForms } from "./closed";
 import { bareLemma, germanAdjectiveForms, type Morph } from "./morph";
 import type { PackWord } from "./words";
 
@@ -101,7 +102,7 @@ export function verbDistractors(language: string, lemma: string, surface: string
  * its verb (es d'accord, est d'accord, sommes d'accord), so only the person tells them apart.
  */
 export function phraseDistractors(morph: Morph, words: PackWord[], target: PackWord, surface: string, afterAuxiliary = false): string[] {
-  const verbs = (target.word.parts ?? []).map((code) => words.find((item) => item.word.code === code)).filter((item): item is PackWord => item?.word.pos === "verb");
+  const verbs = (target.word.parts ?? []).map((code) => codesOf(words).get(code)).filter((item): item is PackWord => item?.word.pos === "verb");
   for (const piece of splitPieces(surface)) {
     const verb = verbs.find((item) => morph.candidates(piece.text).some((candidate) => candidate.word === item));
     if (!verb) continue;
@@ -130,6 +131,14 @@ export function nearMeaning(a: string, b: string) {
   const inside = (x: string, y: string) => ` ${x} `.includes(` ${y} `);
   const stem = (x: string, y: string) => !x.includes(" ") && x.endsWith("ن") && y.split(" ")[0] === x.slice(0, -1);
   return meaningPieces(a).some((x) => meaningPieces(b).some((y) => inside(x, y) || inside(y, x) || stem(x, y) || stem(y, x)));
+}
+
+const byCode = new WeakMap<PackWord[], Map<string, PackWord>>();
+/** The words of a list by code, made once per list. */
+function codesOf(words: PackWord[]) {
+  let map = byCode.get(words);
+  if (!map) byCode.set(words, (map = new Map(words.map((item) => [item.word.code, item]))));
+  return map;
 }
 
 const hash = (text: string) => {
@@ -204,8 +213,17 @@ export function autoDistractors(morph: Morph, words: PackWord[], target: PackWor
     if (options.length < 3) return { error: `cannot make three other forms of «${word.lemma}» for «${surface}»: write d: a, b, c` };
     return { options, hint: `(${word.lemma})` };
   }
+  // A function word with forms (quel, quelle, quels, quelles; tout, toute, tous, toutes): its other forms.
+  if (word.pos === "det" || word.pos === "pron") {
+    const others = closedForms(language, word.lemma).filter((form) => fold(form) !== fold(surface));
+    if (others.length >= 3) return { options: others.slice(0, 3).map((form) => (context.first ? form.charAt(0).toUpperCase() + form.slice(1) : form)), hint: null };
+  }
   const homophones = new Set([...word.homophones.map(fold), fold(word.lemma)]);
   const right = fold(surface);
+  // A phrase with a verb (faire les courses) and one without (merci beaucoup) are never each other's options.
+  const codes = codesOf(words);
+  const verbPhrase = (item: PackWord) => (item.word.parts ?? []).some((code) => codes.get(code)?.word.pos === "verb");
+  const targetVerbPhrase = word.pos === "phrase" && verbPhrase(target);
   const before = context.before ? fold(context.before) : null;
   const pool: { item: PackWord; form: string; tier: number; key: number }[] = [];
   for (const item of words) {
@@ -215,7 +233,7 @@ export function autoDistractors(morph: Morph, words: PackWord[], target: PackWor
     if (other.concept_fa === word.concept_fa || fold(other.lemma) === fold(word.lemma) || homophones.has(fold(other.lemma)) || other.homophones.map(fold).includes(fold(word.lemma))) continue;
     if (nearMeaning(other.meaning_fa, word.meaning_fa)) continue;
     if (word.pos === "noun" && other.gender !== word.gender) continue;
-    if (word.pos === "phrase" && other.pos !== "phrase") continue;
+    if (word.pos === "phrase" && (other.pos !== "phrase" || verbPhrase(item) !== targetVerbPhrase)) continue;
     let form = matchingForm(morph, language, target, surface, item);
     if (!form || fold(form) === right) continue;
     // French elision: after l', d', qu' only a vowel or h; after le, de, que, je only a consonant.
