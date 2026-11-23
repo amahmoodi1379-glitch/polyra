@@ -1,0 +1,74 @@
+code: de-a1-zeitangaben
+title: um، am، im: کی؟
+scope: حرف اضافه‌های زمان: um برای ساعت (um 8 Uhr)، am برای روزها و بخش‌های روز و آخر هفته (am Montag، am Abend)، im برای ماه‌ها و فصل‌ها (im Mai، im Sommer)، in der Nacht، و von … bis؛ و جای فعل وقتی زمان اول جمله می‌آید. گفتن ساعت (Wie spät ist es?) در واژه‌ها آمده است.
+can_do: حالا می‌توانی بگویی کی کاری را می‌کنی: «دوشنبه ساعت نه»، «در تابستان».
+rule: um + ساعت (um 8 Uhr)، am + روز و بخش روز (am Montag، am Abend)، im + ماه و فصل (im Mai، im Sommer)؛ ولی in der Nacht.
+mistake: فارسی برای همه «در» می‌گوید یا هیچ نمی‌گوید و فارسی‌زبان‌ها برای همه in می‌گذارند: «in Montag» و «in 8 Uhr» غلط است؛ درست: am Montag، um 8 Uhr، im Sommer.
+lesson:
+برای گفتن زمان سه حرف اضافه کوتاه داری: um، am و im.
+um برای ساعت است: um 8 Uhr، um halb 9.
+am برای روزها، بخش‌های روز و آخر هفته است: am Montag، am Morgen، am Abend، am Wochenende.
+im برای ماه‌ها و فصل‌هاست: im Mai، im Sommer.
+فقط «شب» فرق دارد: in der Nacht. برای «از … تا …» von … bis می‌گویی: von 8 bis 12 Uhr.
+اگر زمان را اول جمله بگذاری، فعل در جای دوم می‌ماند و فاعل بعد از آن می‌آید: Am Montag arbeite ich.
+در جواب wann? همان تکه زمان کافی است: Wann kommst du? – Am Dienstag.
+table:
+حرف اضافه | برای | مثال
+um | ساعت | um 8 Uhr، um halb 9
+am | روز، بخش روز، آخر هفته | am Montag، am Abend، am Wochenende
+im | ماه و فصل | im Mai، im Winter
+in der | شب | in der Nacht
+sets:
+um: 8 Uhr, halb 9, Viertel nach 3
+am: Montag, Sonntag, Morgen, Abend, Wochenende
+im: Mai, Januar, Oktober, Sommer, Winter
+examples:
+Ich frühstücke um 7 Uhr. | ساعت هفت صبحانه می‌خورم.
+Am Samstag kaufe ich ein. | شنبه خرید می‌کنم.
+Im Dezember ist es oft kalt. | در دسامبر اغلب هوا سرد است.
+In der Nacht ist es ruhig. | شب‌ها آرام است.
+targets:
+Der Kurs beginnt [um] 9 Uhr. | کلاس ساعت نه شروع می‌شود. | d: am, im, in | full: Um 9 Uhr beginnt der Kurs.
+Ich arbeite [am] Montag. | من دوشنبه کار می‌کنم. | d: um, im, in | full: Am Montag arbeite ich.
+[Im] Sommer fahren wir nach Österreich. | در تابستان به اتریش می‌رویم. | d: Am, Um, In | full: Wir fahren im Sommer nach Österreich.
+Mein Geburtstag ist [im] Mai. | تولد من در ماه مه است. | d: am, um, in
+Wir essen [am] Abend zusammen. | ما شب با هم غذا می‌خوریم. | d: um, im, in | full: Am Abend essen wir zusammen.
+Das Kino ist [am] Sonntag geschlossen. | سینما یکشنبه بسته است. | d: um, im, in | full: Am Sonntag ist das Kino geschlossen.
+Der Zug kommt [um] halb 8 an. | قطار ساعت هفت و نیم می‌رسد. | d: am, im, in | full: Um halb 8 kommt der Zug an.
+[Am] Wochenende habe ich frei. | آخر هفته تعطیلم. | d: Um, Im, In | full: Ich habe am Wochenende frei.
+[Im] Winter ist es kalt. | در زمستان هوا سرد است. | d: Am, Um, In | full: Es ist im Winter kalt.
+Ich trinke [am] Morgen Kaffee. | صبح قهوه می‌نوشم. | d: um, im, in | full: Am Morgen trinke ich Kaffee.
+[In der] Nacht schlafe ich. | شب می‌خوابم. | d: Am, Im, Um | full: Ich schlafe in der Nacht.
+Das Konzert beginnt [um] 20 Uhr. | کنسرت ساعت بیست شروع می‌شود. | d: am, im, in | full: Um 20 Uhr beginnt das Konzert.
+Wir haben [im] Januar Ferien. | ما در ژانویه تعطیلات داریم. | d: am, um, in | full: Im Januar haben wir Ferien.
+[Am] Freitag gehen wir ins Kino. | جمعه به سینما می‌رویم. | d: Um, Im, In | full: Wir gehen am Freitag ins Kino.
+Der Arzt hat [am] Nachmittag Zeit. | دکتر بعدازظهر وقت دارد. | d: um, im, in | full: Am Nachmittag hat der Arzt Zeit.
+Ich habe [um] Viertel nach 3 einen Termin. | ساعت سه و ربع یک قرار دارم. | d: am, im, in | full: Um Viertel nach 3 habe ich einen Termin.
+[Im] Frühling ist es schön. | در بهار هوا خوب است. | d: Am, Um, In | full: Es ist im Frühling schön.
+Die Bank ist [am] Samstag geschlossen. | بانک شنبه بسته است. | d: um, im, in | full: Am Samstag ist die Bank geschlossen.
+Wann beginnt der Film? – [Um] 8 Uhr. | فیلم کی شروع می‌شود؟ – ساعت هشت. | d: Am, Im, In
+Wann hast du Geburtstag? – [Im] Oktober. | تولدت کی است؟ – در اکتبر. | d: Am, Um, In
+Wann kommst du? – [Am] Dienstag. | کی می‌آیی؟ – سه‌شنبه. | d: Um, Im, In
+Wir frühstücken [am] Sonntag zusammen. | ما یکشنبه با هم صبحانه می‌خوریم. | d: um, im, in | full: Am Sonntag frühstücken wir zusammen.
+Das Restaurant öffnet [um] 11 Uhr. | رستوران ساعت یازده باز می‌شود. | d: am, im, in | full: Um 11 Uhr öffnet das Restaurant.
+[Im] Herbst regnet es oft. | در پاییز اغلب باران می‌آید. | d: Am, Um, In | full: Es regnet im Herbst oft.
+Max hat [am] Mittwoch eine Prüfung. | ماکس چهارشنبه امتحان دارد. | d: um, im, in | full: Am Mittwoch hat Max eine Prüfung.
+Ich lerne [am] Vormittag Deutsch. | من پیش از ظهر آلمانی یاد می‌گیرم. | d: um, im, in | full: Am Vormittag lerne ich Deutsch.
+[Am] Montag beginnt der Kurs [um] 9 Uhr. | کلاس دوشنبه ساعت نه شروع می‌شود. | d: Um, Im, In / am, im, in | full: Der Kurs beginnt am Montag um 9 Uhr.
+Ich arbeite [von] 8 [bis] 12 Uhr. | من از ساعت هشت تا دوازده کار می‌کنم. | d: um, am, im / um, nach, an | full: Von 8 bis 12 Uhr arbeite ich.
+[Im] Sommer ist es warm und [im] Winter ist es kalt. | تابستان گرم است و زمستان سرد. | d: Am, Um, In / am, um, in
+Wir sehen Anna [am] Freitag [um] 6 Uhr. | ما آنا را جمعه ساعت شش می‌بینیم. | d: um, im, in / am, im, in | full: Am Freitag sehen wir Anna um 6 Uhr.
+[Am] Abend sehe{fernsehen} ich fern{fernsehen} und [in der] Nacht schlafe ich. | عصر تلویزیون می‌بینم و شب می‌خوابم. | d: Um, Im, In / am, im, um
+Wann ist der Termin? – [Am] Donnerstag [um] halb 10. | قرار کی است؟ – پنجشنبه ساعت نه و نیم. | d: Um, Im, In / am, im, in
+transforms:
+Ich arbeite am Montag. => Am Montag arbeite ich. | جمله را با am Montag شروع کن.
+Der Kurs beginnt um 9 Uhr. => Wann beginnt der Kurs? | برای «um 9 Uhr» سؤال بساز.
+Wir fahren im Sommer nach Wien. => Im Sommer fahren wir nach Wien. | جمله را با im Sommer شروع کن.
+Ich habe am Freitag Zeit. => Am Freitag habe ich Zeit. | جمله را با am Freitag شروع کن.
+Mein Geburtstag ist im Mai. => Wann ist dein Geburtstag? ; Wann hast du Geburtstag? | برای «im Mai» سؤال بساز، با du.
+translations:
+دوشنبه کار می‌کنم. => Ich arbeite am Montag. ; Am Montag arbeite ich.
+در تابستان به اتریش می‌رویم. => Im Sommer fahren wir nach Österreich. ; Wir fahren im Sommer nach Österreich.
+تولدم در ماه مه است. => Mein Geburtstag ist im Mai. ; Ich habe im Mai Geburtstag.
+شب می‌خوابم. => Ich schlafe in der Nacht. ; In der Nacht schlafe ich.
+فیلم ساعت هشت شروع می‌شود. => Der Film beginnt um 8 Uhr. ; Der Film beginnt um acht Uhr. ; Um 8 Uhr beginnt der Film. ; Um acht Uhr beginnt der Film. ; Der Film fängt um 8 Uhr an. ; Der Film fängt um acht Uhr an.

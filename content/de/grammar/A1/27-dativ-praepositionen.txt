@@ -1,0 +1,69 @@
+code: de-a1-dativ-praepositionen
+title: mit، zu، bei، von و حالت Dativ
+scope: حالت Dativ بعد از mit، zu، bei و von: der و das ← dem، die ← der، جمع ← den …n، ein ← einem/einer، mein ← meinem/meiner، و ترکیب‌های zum، zur، beim، vom (mit dem Bus، zum Arzt، beim Arzt، von der Arbeit)؛ حرف اضافه‌های جا (in، an، auf) در واحد بعد می‌آیند.
+can_do: حالا می‌توانی بگویی با چه وسیله‌ای به کجا می‌روی و پیش چه کسی هستی: «با اتوبوس به ایستگاه قطار می‌روم».
+rule: بعد از mit، bei، zu و von: der و das ← dem، die ← der، جمع ← den …n؛ zu + dem = zum، zu + der = zur، bei + dem = beim، von + dem = vom.
+mistake: فارسی‌زبان‌ها بعد از mit همان der و die را می‌گذارند: «mit der Bus» و «mit die U-Bahn» غلط است؛ درست: mit dem Bus، mit der U-Bahn. «Ich gehe zu Arzt» هم غلط است؛ درست: Ich gehe zum Arzt.
+lesson:
+بعد از mit، zu، bei و von اسم به حالت سوم می‌رود که Dativ نام دارد.
+در Dativ حرف تعریف عوض می‌شود: der ← dem، das ← dem، die ← der، و جمع die ← den؛ اسم جمع هم -n می‌گیرد: mit den Kindern.
+ein مذکر و خنثی einem می‌شود و eine ← einer؛ کلمه‌های مالکیت هم همین‌طور: meinem Vater، meiner Mutter.
+mit یعنی «با» (mit dem Bus، mit Anna)، zu یعنی «به، پیشِ» برای رفتن (zum Arzt، zur Bank)، bei یعنی «پیشِ، در» برای بودن (beim Arzt، bei Anna) و von یعنی «از» (von der Arbeit).
+چند ترکیب کوتاه را همیشه می‌گویند: zum (zu dem)، zur (zu der)، beim (bei dem)، vom (von dem).
+table:
+حالت | مذکر | مؤنث | خنثی | جمع
+فاعلی | der / ein Bus | die / eine Bahn | das / ein Auto | die Kinder
+Dativ | dem / einem Bus | der / einer Bahn | dem / einem Auto | den Kindern
+sets:
+zum: Arzt, Bahnhof, Supermarkt, Flughafen
+zur: Bank, Post, Apotheke, Schule
+examples:
+Ich fahre mit dem Zug nach Berlin. | با قطار به برلین می‌روم.
+Anna geht zur Post. | آنا به اداره پست می‌رود.
+Max ist beim Arzt. | ماکس پیش دکتر است.
+Wir spielen mit den Kindern. | ما با بچه‌ها بازی می‌کنیم.
+targets:
+Ich fahre mit [dem] Bus. | من با اتوبوس می‌روم. | d: den, der, das
+Anna fährt mit [der] U-Bahn. | آنا با مترو می‌رود. | d: die, dem, den
+Wir fahren mit [dem] Auto nach Wien. | ما با ماشین به وین می‌رویم. | d: den, der, das | full: Nach Wien fahren wir mit dem Auto. ; Mit dem Auto fahren wir nach Wien.
+Max kommt mit [dem] Fahrrad. | ماکس با دوچرخه می‌آید. | d: den, der, das
+Ich gehe [zum] Arzt. | من پیش دکتر می‌روم. | d: zur, zu, beim
+Lena geht [zur] Bank. | لنا به بانک می‌رود. | d: zum, zu, bei
+Wie komme ich [zum] Bahnhof? | چطور به ایستگاه قطار بروم؟ | d: zur, zu, beim
+Ich bin [beim] Arzt. | من پیش دکترم. | d: zum, bei, im
+Paul kommt von [der] Arbeit. | پاول از سر کار می‌آید. | d: die, dem, den
+Max kommt [vom] Supermarkt. | ماکس از سوپرمارکت می‌آید. | d: von, vor, von der
+Wir sprechen mit [dem] Lehrer. | ما با معلم صحبت می‌کنیم. | d: den, der, das
+Ich telefoniere mit [meiner]{mein} Mutter. | من با مادرم تلفنی صحبت می‌کنم. | d: meine, meinem, meinen
+Sara spielt mit [ihrem]{ihr-det} Bruder. | سارا با برادرش بازی می‌کند. | d: ihren, ihre, ihr
+Die Mutter spielt mit [den] Kindern. | مادر با بچه‌ها بازی می‌کند. | d: die, dem, der
+Ich fahre mit [einem] Freund nach Köln. | با یک دوست به کلن می‌روم. | d: einen, ein, einer | full: Nach Köln fahre ich mit einem Freund.
+Lena geht mit [einer] Freundin ins Kino. | لنا با یک دوستش به سینما می‌رود. | d: eine, einem, einen
+Er wohnt bei [einer] Familie in Wien. | او در وین پیش یک خانواده زندگی می‌کند. | d: eine, einem, einen | full: In Wien wohnt er bei einer Familie.
+Ich gehe heute [zur] Post. | من امروز به اداره پست می‌روم. | d: zum, zu, beim | full: Heute gehe ich zur Post.
+Wir gehen [zum] Supermarkt. | ما به سوپرمارکت می‌رویم. | d: zur, zu, beim
+Ich arbeite bei [einer] Firma. | من در یک شرکت کار می‌کنم. | d: eine, einem, einen
+Nimmst du den Bus? – Nein, ich fahre mit [der] Bahn. | با اتوبوس می‌روی؟ – نه، با قطار می‌روم. | d: die, dem, den
+Ich gehe [zur] Apotheke. | من به داروخانه می‌روم. | d: zum, zu, beim
+Ich koche mit [meinem] Vater. | من با پدرم آشپزی می‌کنم. | d: meinen, meine, mein
+Ich wohne [bei] Anna. | من خانه آنا زندگی می‌کنم. | d: zu, von, nach
+Ich fahre mit [dem] Bus [zum] Bahnhof. | من با اتوبوس به ایستگاه قطار می‌روم. | d: den, der, das / zur, zu, beim
+Anna geht mit [ihrer]{ihr-det} Mutter [zum] Arzt. | آنا با مادرش پیش دکتر می‌رود. | d: ihre, ihrem, ihren / zur, zu, beim
+Wir fahren mit [dem] Zug [zur] Arbeit. | ما با قطار سر کار می‌رویم. | d: den, der, das / zum, zu, bei
+Ich komme [vom] Arzt und gehe [zum] Supermarkt. | از پیش دکتر می‌آیم و به سوپرمارکت می‌روم. | d: von, vor, von der / zur, zu, beim
+Max spricht mit [dem] Chef und mit [der] Kollegin. | ماکس با رئیس و با همکار صحبت می‌کند. | d: den, der, das / die, dem, den
+Fährst du mit [dem] Auto oder mit [der] U-Bahn? | با ماشین می‌روی یا با مترو؟ | d: den, der, das / die, dem, den
+Lena ist [beim] Arzt und Paul ist bei [der] Arbeit. | لنا پیش دکتر است و پاول سر کار است. | d: zum, bei, im / die, dem, den
+Ich fahre mit [einem] Taxi [zum] Flughafen. | من با یک تاکسی به فرودگاه می‌روم. | d: einen, ein, einer / zur, zu, beim
+transforms:
+Ich fahre mit dem Bus. => Ich fahre mit der U-Bahn. | به‌جای Bus کلمه U-Bahn را بگذار، با حرف تعریف درست.
+Ich gehe zum Arzt. => Ich gehe zur Bank. | به‌جای Arzt کلمه Bank را بگذار، با حرف تعریف درست.
+Anna spielt mit dem Kind. => Anna spielt mit den Kindern. | Kind را جمع کن.
+Ich gehe zum Arzt. => Ich bin beim Arzt. | به‌جای «پیش دکتر می‌روم» بگو «پیش دکترم».
+Ich wohne bei Anna. => Ich wohne bei meiner Mutter. | به‌جای Anna بگو «مادرم».
+translations:
+با اتوبوس می‌روم. => Ich fahre mit dem Bus. ; Ich nehme den Bus.
+آنا پیش دکتر است. => Anna ist beim Arzt.
+به بانک می‌روم. => Ich gehe zur Bank.
+ماکس با پدرش صحبت می‌کند. => Max spricht mit seinem Vater.
+با قطار به وین می‌رویم. => Wir fahren mit dem Zug nach Wien. ; Mit dem Zug fahren wir nach Wien.
