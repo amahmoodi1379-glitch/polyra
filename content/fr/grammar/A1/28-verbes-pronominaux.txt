@@ -1,0 +1,76 @@
+code: fr-a1-verbes-pronominaux
+title: فعل‌های ضمیری: je me lève
+scope: فعل‌های ضمیری در زمان حال (se lever، se réveiller، se laver، s'habiller، se coucher، se reposer، se promener، s'appeler)، جای ضمیر در جملهٔ منفی و بعد از aller یا devoir + مصدر؛ امر این فعل‌ها (lève-toi) در واحد امر و گذشته‌شان با être در واحد آخر می‌آید.
+can_do: حالا می‌توانی از کارهای هر روزت بگویی و اسم کسی را بپرسی: Je me lève à sept heures. Tu t'appelles comment ?
+rule: je me، tu te، il se، nous nous، vous vous، ils se + فعل؛ قبل از صدادار m'، t'، s'؛ منفی: je ne me lève pas؛ بعد از aller + مصدر ضمیر با فاعل جور می‌شود: je vais me coucher.
+mistake: فارسی‌زبان‌ها se را جزء ثابت فعل می‌بینند و می‌گویند «je se lève» یا «je vais se coucher»؛ درست: je me lève، je vais me coucher. ضمیر همیشه با فاعل جور می‌شود.
+tables: présent | reflexive
+lesson:
+فعل‌های ضمیری با یک ضمیر اضافه می‌آیند که به خود فاعل برمی‌گردد: se lever (از خواب بلند شدن)، se laver (خود را شستن)، s'appeler (اسم داشتن).
+این ضمیر با فاعل عوض می‌شود: je me، tu te، il/elle/on se، nous nous، vous vous، ils/elles se.
+قبل از صدادار یا h، me و te و se می‌شوند m' و t' و s': je m'appelle، tu t'habilles.
+در جملهٔ منفی ne قبل از ضمیر می‌آید: Je ne me lève pas.
+بعد از aller، vouloir یا devoir فعل مصدر است، ولی ضمیرش با فاعل جور می‌شود: Je vais me coucher (نه je vais se coucher).
+خود فعل مثل فعل‌های -er صرف می‌شود؛ فقط se lever و se promener در بعضی شکل‌ها è می‌گیرند (je me lève، nous nous levons) و s'appeler دو l (je m'appelle، nous nous appelons).
+table:
+ضمیر | se lever | s'appeler
+je | me lève | m'appelle
+tu | te lèves | t'appelles
+il، elle، on | se lève | s'appelle
+nous | nous levons | nous appelons
+vous | vous levez | vous appelez
+ils، elles | se lèvent | s'appellent
+examples:
+Je me lève à sept heures. | ساعت هفت از خواب بلند می‌شوم.
+Tu t'appelles comment ? | اسمت چیست؟
+Nous nous promenons dans le parc. | در پارک قدم می‌زنیم.
+Je ne me couche pas tard. | دیر نمی‌خوابم.
+targets:
+Je [me] lève à sept heures. | ساعت هفت از خواب بلند می‌شوم. | d: se, moi, mon | hint: (se lever)
+Tu [te] lèves tôt ? | زود از خواب بلند می‌شوی؟ | d: se, toi, ton | hint: (se lever)
+Il [se] lève tard. | او دیر از خواب بلند می‌شود. | d: lui, son, soi
+Nous [nous] levons à six heures. | ساعت شش از خواب بلند می‌شویم. | d: se, nos, notre | hint: (se lever)
+Vous [vous] levez quand ? | کی از خواب بلند می‌شوید؟ | d: se, vos, votre
+Les enfants [se] couchent à neuf heures. | بچه‌ها ساعت نه می‌خوابند. | d: leur, eux, ses | hint: (se coucher)
+Je [m']appelle Ali. | اسمم علی است. | d: me, s', se | hint: (s'appeler)
+Comment tu [t']appelles ? | اسمت چیست؟ | d: te, s', se
+Elle [s']appelle Marie. | اسمش ماری است. | d: se, lui, son | hint: (s'appeler)
+Je me [lave] le matin. | صبح‌ها خودم را می‌شویم. | d: laves, lavons, lavent | hint: (se laver)
+Tu t'[habilles] vite. | سریع لباس می‌پوشی. | d: habille, habillez, habillent
+Marie se [réveille] à six heures. | ماری ساعت شش بیدار می‌شود. | d: réveilles, réveillons, réveillent | hint: (se réveiller)
+Nous nous [promenons] dans le parc. | در پارک قدم می‌زنیم. | d: promène, promenez, promènent
+Vous vous [reposez] le dimanche ? | یکشنبه‌ها استراحت می‌کنید؟ | d: reposons, reposent, repose | hint: (se reposer)
+Ils se [couchent] tard. | آن‌ها دیر می‌خوابند. | d: couche, couchez, couchons
+On se [promène] ? | قدم بزنیم؟ | d: promènes, promenons, promènent | hint: (se promener)
+Je ne [me] lève pas tôt. | زود از خواب بلند نمی‌شوم. | d: se, moi, mon
+Il ne se [repose] pas. | او استراحت نمی‌کند. | d: reposes, reposons, reposent | hint: (se reposer)
+Je vais [me] coucher. | می‌روم بخوابم. | d: se, moi, mon | hint: (se coucher)
+Tu vas [te] reposer ? | قرار است استراحت کنی؟ | d: se, toi, ton
+Nous allons [nous] promener. | قرار است قدم بزنیم. | d: se, nos, notre | hint: (se promener)
+Je dois [me] lever tôt. | باید زود از خواب بلند شوم. | d: se, moi, mon
+Les enfants s'[habillent]. | بچه‌ها لباس می‌پوشند. | d: habille, habillez, habillons | hint: (s'habiller)
+Je [m']habille. | لباس می‌پوشم. | d: me, s', se
+Elle se [lave]. | او خودش را می‌شوید. | d: laves, lavons, lavent
+Vous vous [appelez] comment ? | اسمتان چیست؟ | d: appelle, appellent, appelons | hint: (s'appeler)
+Mes parents [se] reposent. | پدر و مادرم استراحت می‌کنند. | d: leur, eux, ses
+Tu [te] couches à quelle heure ? | ساعت چند می‌خوابی؟ | d: se, toi, ton | hint: (se coucher)
+Ils s'[appellent] Paul et Léa. | اسمشان پل و لئاست. | d: appelle, appelez, appelons
+Le samedi, je me [repose]. | شنبه‌ها استراحت می‌کنم. | d: reposes, reposons, reposent | hint: (se reposer) | full: Je me repose le samedi.
+Je [me] lève et je [me] lave. | از خواب بلند می‌شوم و خودم را می‌شویم. | d: se, moi, mon / se, moi, mon
+Nous [nous] levons tôt et nous [nous] couchons tard. | زود از خواب بلند می‌شویم و دیر می‌خوابیم. | d: se, nos, notre / se, nos, notre | full: Nous nous couchons tard et nous nous levons tôt.
+Je [m']appelle Ali. Et toi, tu [t']appelles comment ? | اسمم علی است. اسم تو چیست؟ | d: me, s', se / te, s', se
+Les enfants se [lèvent] et ils s'[habillent]. | بچه‌ها از خواب بلند می‌شوند و لباس می‌پوشند. | d: lève, levez, levons / habille, habillez, habillons
+Je ne [me] couche pas, je vais [me] promener. | نمی‌خوابم، می‌روم قدم بزنم. | d: se, moi, mon / se, moi, mon
+Marie se [réveille] à sept heures et elle se [lève] à huit heures. | ماری ساعت هفت بیدار می‌شود و ساعت هشت از جا بلند می‌شود. | d: réveilles, réveillons, réveillent / lèves, levons, lèvent
+transforms:
+Je me lève à sept heures. => Nous nous levons à sept heures. | جمله را با nous بنویس.
+Il se couche tard. => Ils se couchent tard. | جمله را با ils بنویس.
+Tu te reposes. => Tu ne te reposes pas. | جمله را منفی کن.
+Je me promène. => Je vais me promener. | جمله را با aller + مصدر بنویس.
+Elle s'appelle Marie. => Je m'appelle Marie. | جمله را با je بنویس.
+translations:
+اسمم علی است. => Je m'appelle Ali.
+اسمت چیست؟ => Comment tu t'appelles ? ; Tu t'appelles comment ?
+ساعت هفت از خواب بلند می‌شوم. => Je me lève à sept heures.
+بچه‌ها ساعت نه می‌خوابند. => Les enfants se couchent à neuf heures.
+می‌روم بخوابم. => Je vais me coucher.
