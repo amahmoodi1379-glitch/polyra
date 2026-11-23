@@ -739,11 +739,12 @@ Bitte [geben] Sie mir das Buch. | لطفاً کتاب را به من بدهید.
 Kannst du mir das Wasser [geben]? | می‌توانی آب را به من بدهی؟
 
 # es gibt
-[Es gibt] hier kein Wasser. | اینجا آب نیست. | d: Es gibst, Es geben, Es gebt
-[Es gibt] hier eine Schule. | اینجا یک مدرسه هست. | d: Es gibst, Es geben, Es gebt
+Hier [gibt es] kein Wasser. | اینجا آب نیست. | d: gibst es, geben es, gebt es
+[Gibt es] hier eine Schule? | اینجا مدرسه هست؟ | d: Gibst es, Geben es, Gebt es
 Komm, [es gibt] Kaffee! | بیا، قهوه هست! | d: es gibst, es geben, es gebt
-[Es gibt] in der Stadt viele alte Häuser. | در شهر خانه‌های قدیمی زیادی هست. | d: Es gibst, Es geben, Es gebt
-[Es gibt] kein Brot. | نان نداریم. | d: Es gibst, Es geben, Es gebt
+In der Stadt [gibt es] viele alte Häuser. | در شهر خانه‌های قدیمی زیادی هست. | d: gibst es, geben es, gebt es
+Heute [gibt es] Brot und Tee. | امروز نان و چای داریم. | d: gibst es, geben es, gebt es
+[Es gibt] hier kein Brot. | اینجا نان نیست. | d: Es gibst, Es geben, Es gebt
 
 # nehmen
 Ich [nehme] einen Kaffee. | من یک قهوه می‌گیرم.
