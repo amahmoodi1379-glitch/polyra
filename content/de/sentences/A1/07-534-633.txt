@@ -1,0 +1,666 @@
+// German A1, card words 534–633 (colors, weather, nature and animals, free time, feelings, meeting people, phone and mail, everyday verbs, opinions), in teaching order.
+# rot
+Mein Auto ist [rot]. | ماشینم قرمز است.
+Die Tomate ist [rot]. | گوجه‌فرنگی قرمز است.
+Der Apfel ist [rot] und lecker. | سیب قرمز و خوشمزه است.
+Meine Tochter trägt heute ein [rotes] Kleid. | دخترم امروز یک لباس قرمز پوشیده است.
+Die Tür von unserem Haus ist [rot]. | در خانه‌ی ما قرمز است.
+Mein Bruder hat einen [roten] Pullover. | برادرم یک پلیور قرمز دارد.
+# blau
+Das Meer ist heute sehr [blau]. | دریا امروز خیلی آبی است.
+Mein Vater trägt ein [blaues] Hemd. | پدرم یک پیراهن آبی پوشیده است.
+Ich möchte die [blaue] Tasche, bitte. | کیف آبی را می‌خواهم، لطفاً.
+Meine Schwester hat [blaue] Augen. | خواهرم چشم‌های آبی دارد.
+Ist dein Auto [blau] oder rot? | ماشینت آبی است یا قرمز؟
+Der Bus in unserer Stadt ist [blau]. | اتوبوس شهر ما آبی است.
+# grün
+Die Tomate ist noch [grün]. | گوجه‌فرنگی هنوز سبز است.
+Im Frühling ist der Park sehr [grün]. | در بهار پارک خیلی سبز است.
+Ich trinke gern [grünen] Tee. | چای سبز دوست دارم.
+Das Kind hat [grüne] Augen. | بچه چشم‌های سبز دارد.
+Ich kaufe einen [grünen] Apfel. | یک سیب سبز می‌خرم.
+Die Tür ist [grün], nicht blau. | در سبز است، نه آبی.
+# gelb
+Die Banane ist [gelb]. | موز زرد است.
+In Teheran sind die Taxis [gelb]. | در تهران تاکسی‌ها زرد هستند.
+Die Post in Deutschland ist [gelb]. | پست در آلمان زرد است.
+Ich trage heute ein [gelbes] T-Shirt. | امروز یک تی‌شرت زرد پوشیده‌ام.
+Meine Tochter möchte ein [gelbes] Kleid. | دخترم یک لباس زرد می‌خواهد.
+# schwarz
+Ich trinke [schwarzen] Kaffee. | قهوه‌ی سیاه (بدون شیر) می‌نوشم.
+Mein Mantel ist [schwarz]. | پالتوی من مشکی است.
+Lena hat [schwarze] Haare. | لنا موهای مشکی دارد.
+Ich brauche [schwarze] Schuhe für die Arbeit. | برای کار کفش مشکی لازم دارم.
+Das Auto von meinem Chef ist [schwarz]. | ماشین رئیسم مشکی است.
+# weiß
+Das Papier ist [weiß]. | کاغذ سفید است.
+Die Milch ist [weiß]. | شیر سفید است.
+Mein Vater trägt ein [weißes] Hemd. | پدرم یک پیراهن سفید پوشیده است.
+Opa hat [weiße] Haare. | پدربزرگ موهای سفید دارد.
+Ich möchte ein [weißes] Auto. | یک ماشین سفید می‌خواهم.
+Im Winter ist im Dorf alles [weiß]. | زمستان در روستا همه‌جا سفید است.
+# grau
+Mein Onkel hat [graue] Haare. | عمویم موهای خاکستری دارد.
+Die Hose ist [grau]. | شلوار خاکستری است.
+Ich trage einen [grauen] Pullover. | یک پلیور خاکستری پوشیده‌ام.
+Das Auto ist [grau], nicht schwarz. | ماشین خاکستری است، نه مشکی.
+Mein Büro ist klein und [grau]. | دفترم کوچک و خاکستری است.
+# braun
+Der Tisch ist [braun]. | میز قهوه‌ای است.
+Meine Mutter hat [braune] Augen. | مادرم چشم‌های قهوه‌ای دارد.
+Die Schokolade ist [braun]. | شکلات قهوه‌ای است.
+Das Kind hat [braune] Haare. | بچه موهای قهوه‌ای دارد.
+Meine Schuhe sind [braun]. | کفش‌هایم قهوه‌ای هستند.
+Der Schrank ist alt und [braun]. | کمد قدیمی و قهوه‌ای است.
+# orange
+Mein T-Shirt ist [orange]. | تی‌شرتم نارنجی است.
+Die Tasche ist [orange]. | کیف نارنجی است.
+Die Lampe im Wohnzimmer ist [orange]. | چراغ اتاق نشیمن نارنجی است.
+Die Jacke ist [orange] und grün. | کاپشن نارنجی و سبز است.
+Der Bus in Wien ist nicht [orange]. | اتوبوس در وین نارنجی نیست.
+# Wetter
+Wie ist das [Wetter] heute? | امروز هوا چطور است؟
+Das [Wetter] ist schön. | هوا خوب است.
+Das [Wetter] ist heute schlecht. | امروز هوا بد است.
+Bei schönem [Wetter] gehen wir in den Park. | وقتی هوا خوب است به پارک می‌رویم.
+Wie ist das [Wetter] in Teheran? | هوا در تهران چطور است؟
+Das [Wetter] im Herbst ist oft schlecht. | هوای پاییز اغلب بد است.
+# Sonne
+Heute gibt es viel [Sonne]. | امروز آفتاب زیاد است.
+Die Kinder spielen in der [Sonne]. | بچه‌ها زیر آفتاب بازی می‌کنند.
+Im Sommer haben wir viel [Sonne]. | در تابستان آفتاب زیادی داریم.
+Wir frühstücken in der [Sonne] auf dem Balkon. | صبحانه را زیر آفتاب در بالکن می‌خوریم.
+Heute gibt es keine [Sonne]. | امروز آفتاب نیست.
+# scheinen
+Die Sonne [scheint]. | آفتاب می‌تابد.
+Heute [scheint] die Sonne. | امروز آفتاب است.
+[Scheint] die Sonne in Hamburg? | در هامبورگ آفتاب است؟
+Gestern hat die Sonne [geschienen]. | دیروز آفتاب بود.
+Im Sommer [scheint] die Sonne oft. | در تابستان آفتاب زیاد می‌تابد.
+Die Sonne [scheint] und wir gehen in den Park. | آفتاب است و ما به پارک می‌رویم.
+# Regen
+Heute gibt es [Regen]. | امروز باران می‌آید.
+Ich mag [Regen]. | باران را دوست دارم.
+Im Herbst gibt es viel [Regen]. | در پاییز باران زیاد می‌آید.
+Bei [Regen] fahre ich mit dem Bus. | وقتی باران می‌آید با اتوبوس می‌روم.
+Die Kinder spielen im [Regen]. | بچه‌ها زیر باران بازی می‌کنند.
+# regnen
+Es [regnet]. | باران می‌آید.
+Heute [regnet] es viel. | امروز خیلی باران می‌آید.
+Es [regnet] schon wieder! | باز هم باران می‌آید!
+Gestern hat es [geregnet]. | دیروز باران آمد. | d: regnet, regnen, regnete
+[Regnet] es in Berlin? | در برلین باران می‌آید؟
+Im April [regnet] es oft. | در آوریل اغلب باران می‌آید.
+# Schnee
+Im Winter gibt es [Schnee]. | در زمستان برف می‌آید.
+Die Kinder spielen im [Schnee]. | بچه‌ها در برف بازی می‌کنند.
+Der [Schnee] ist weiß{weiß}. | برف سفید است.
+Heute gibt es viel [Schnee]. | امروز برف زیادی آمده است.
+Ich mag [Schnee]. | برف را دوست دارم.
+Im Iran gibt es im Winter auch [Schnee]. | در ایران هم زمستان برف می‌آید.
+# schneien
+Es [schneit]. | برف می‌آید.
+Heute [schneit] es. | امروز برف می‌آید.
+Im Januar [schneit] es oft. | در ژانویه اغلب برف می‌آید.
+Gestern hat es [geschneit]. | دیروز برف آمد. | d: schneit, schneien, schneite
+[Schneit] es in Teheran? | در تهران برف می‌آید؟
+Es [schneit] und die Kinder spielen im Garten. | برف می‌آید و بچه‌ها در حیاط بازی می‌کنند.
+# Wind
+Heute gibt es viel [Wind]. | امروز باد زیادی می‌آید.
+Bei [Wind] fahre ich nicht Fahrrad. | وقتی باد می‌آید دوچرخه‌سواری نمی‌کنم.
+Ich höre den [Wind]. | صدای باد را می‌شنوم.
+Am Meer gibt es oft [Wind]. | کنار دریا اغلب باد می‌آید.
+Der [Wind] kommt vom Meer. | باد از طرف دریا می‌آید.
+Der [Wind] öffnet die Tür. | باد در را باز می‌کند.
+# warm
+Heute ist es [warm]. | امروز هوا گرم است.
+Die Suppe ist noch [warm]. | سوپ هنوز گرم است.
+Im Sommer ist es [warm]. | در تابستان هوا گرم است.
+Ich brauche eine [warme] Jacke. | یک کاپشن گرم لازم دارم.
+Ist das Wasser [warm]? | آب گرم است؟
+Am Abend trinke ich gern [warme] Milch. | شب‌ها شیر گرم دوست دارم.
+# kalt
+Heute ist es [kalt]. | امروز هوا سرد است.
+Im Winter ist es sehr [kalt]. | در زمستان هوا خیلی سرد است.
+Das Wasser ist zu{zu-adv} [kalt]. | آب زیادی سرد است.
+Ich trinke [kaltes] Wasser. | آب سرد می‌نوشم.
+Der Kaffee ist schon [kalt]! | قهوه سرد شده!
+Das Essen ist [kalt]. | غذا سرد است.
+# heiß
+Im Sommer ist es in Teheran sehr [heiß]. | تابستان در تهران هوا خیلی داغ است.
+Der Tee ist [heiß]! | چای داغ است!
+Heute ist es zu{zu-adv} [heiß]. | امروز هوا زیادی گرم است.
+Die Suppe ist sehr [heiß]. | سوپ خیلی داغ است.
+Ich möchte einen [heißen] Tee. | یک چای داغ می‌خواهم.
+Das Wasser ist [heiß]. | آب داغ است.
+# Grad
+Heute sind es 20 [Grad]. | امروز بیست درجه است.
+Es sind 30 [Grad]. | سی درجه است.
+In Teheran sind es heute 40 [Grad]. | امروز در تهران چهل درجه است.
+Im Winter sind es oft null [Grad]. | در زمستان اغلب صفر درجه است.
+Wie viel [Grad] sind es? | چند درجه است؟
+Das Wasser hat 25 [Grad]. | آب بیست و پنج درجه است.
+# Berg
+Wir fahren in die [Berge]. | به کوه می‌رویم.
+Im Winter gibt es Schnee auf dem [Berg]. | در زمستان روی کوه برف هست.
+Von hier sehe ich den [Berg]. | از اینجا کوه را می‌بینم.
+Am Wochenende gehen wir auf den [Berg]. | آخر هفته به کوه می‌رویم.
+In der Schweiz gibt es viele [Berge]. | در سوئیس کوه‌های زیادی هست.
+Teheran hat schöne [Berge]. | تهران کوه‌های قشنگی دارد.
+# Baum
+Im Garten ist ein großer [Baum]. | در حیاط یک درخت بزرگ هست.
+Die Kinder spielen unter dem [Baum]. | بچه‌ها زیر درخت بازی می‌کنند.
+Im Park gibt es viele [Bäume]. | در پارک درخت‌های زیادی هست.
+Der [Baum] ist sehr alt. | این درخت خیلی پیر است.
+Im Herbst ist der [Baum] gelb und rot. | در پاییز درخت زرد و قرمز است.
+Die Äpfel sind von unserem [Baum]. | سیب‌ها از درخت خودمان است.
+# Blume
+Die [Blume] ist sehr schön. | این گل خیلی قشنگ است.
+Ich kaufe [Blumen] für meine Mutter. | برای مادرم گل می‌خرم.
+Im Garten gibt es viele [Blumen]. | در باغچه گل‌های زیادی هست.
+Die [Blumen] brauchen Wasser. | گل‌ها آب لازم دارند.
+Die [Blumen] sind ein Geschenk für Oma. | این گل‌ها هدیه‌ای برای مادربزرگ است.
+Welche [Blumen] magst du? | چه گل‌هایی دوست داری؟
+# Tier
+Ich mag [Tiere]. | حیوان‌ها را دوست دارم.
+Hast du ein [Tier] zu Hause? | در خانه حیوان داری؟
+Das [Tier] ist sehr groß. | این حیوان خیلی بزرگ است.
+Welches [Tier] magst du? | چه حیوانی دوست داری؟
+In unserem Dorf gibt es viele [Tiere]. | در روستای ما حیوان‌های زیادی هست.
+# Hund
+Wir haben einen [Hund]. | ما یک سگ داریم.
+Der [Hund] heißt Max. | اسم سگ ماکس است.
+Ich gehe mit dem [Hund] in den Park. | با سگ به پارک می‌روم.
+Der [Hund] spielt im Garten. | سگ در حیاط بازی می‌کند.
+Mein [Hund] schläft gern auf dem Sofa. | سگم دوست دارد روی مبل بخوابد.
+Hat der [Hund] Hunger? | سگ گرسنه است؟
+# Katze
+Die [Katze] schläft auf dem Sofa. | گربه روی مبل خوابیده است.
+Wir haben zwei [Katzen]. | ما دو گربه داریم.
+Die [Katze] ist schwarz. | گربه سیاه است.
+Die [Katze] trinkt Milch. | گربه شیر می‌خورد.
+Meine [Katze] heißt Mia. | اسم گربه‌ام میا است.
+Wo ist die [Katze]? | گربه کجاست؟
+# Vogel
+Der [Vogel] ist sehr klein. | پرنده خیلی کوچک است.
+Im Baum ist ein [Vogel]. | روی درخت یک پرنده هست.
+Am Morgen höre ich die [Vögel]. | صبح‌ها صدای پرنده‌ها را می‌شنوم.
+Der [Vogel] fliegt. | پرنده پرواز می‌کند.
+Unsere Oma hat einen [Vogel]. | مادربزرگمان یک پرنده دارد.
+Die Katze sieht den [Vogel]. | گربه پرنده را می‌بیند.
+# Pferd
+Das [Pferd] ist groß. | اسب بزرگ است.
+Im Dorf gibt es viele [Pferde]. | در روستا اسب‌های زیادی هست.
+Meine Tochter mag [Pferde]. | دخترم اسب‌ها را دوست دارد.
+Das [Pferd] ist braun. | اسب قهوه‌ای است.
+Mein Onkel hat zwei [Pferde]. | عمویم دو اسب دارد.
+Das [Pferd] ist sehr schnell. | این اسب خیلی تندرو است.
+# Freizeit
+Was machst du in der [Freizeit]? | در وقت آزاد چه کار می‌کنی؟
+In meiner [Freizeit] lese ich gern. | در وقت آزادم دوست دارم کتاب بخوانم.
+Ich habe wenig [Freizeit]. | وقت آزاد کمی دارم.
+Am Wochenende habe ich viel [Freizeit]. | آخر هفته وقت آزاد زیادی دارم.
+In der [Freizeit] spiele ich mit meinen Kindern. | در وقت آزاد با بچه‌هایم بازی می‌کنم.
+# Hobby
+Was ist dein [Hobby]? | سرگرمی‌ات چیست؟
+Hast du ein [Hobby]? | سرگرمی داری؟
+Kochen ist mein [Hobby]. | آشپزی سرگرمی من است.
+Mein Vater hat kein [Hobby]. | پدرم هیچ سرگرمی‌ای ندارد.
+Das ist ein schönes [Hobby]. | سرگرمی قشنگی است.
+Meine [Hobbys] sind Lesen und Kochen. | سرگرمی‌هایم کتاب‌خواندن و آشپزی است.
+# Sport
+[Sport] ist gesund. | ورزش برای سلامتی خوب است.
+Ich mag [Sport]. | ورزش را دوست دارم.
+Welchen [Sport] magst du? | چه ورزشی دوست داری؟
+Mein Hobby ist [Sport]. | سرگرمی من ورزش است.
+Ich habe keine Zeit für [Sport]. | برای ورزش وقت ندارم.
+# Sport machen
+Ich [mache Sport] im Park. | من در پارک ورزش می‌کنم.
+Mein Vater [macht Sport] im Garten. | پدرم در حیاط ورزش می‌کند.
+Die Kinder [machen Sport] in der Schule. | بچه‌ها در مدرسه ورزش می‌کنند.
+Du musst mehr{mehr} [Sport machen]. | باید بیشتر ورزش کنی.
+Ich möchte jeden Tag [Sport machen]. | می‌خواهم هر روز ورزش کنم.
+Wer [macht Sport] mit mir? | کی با من ورزش می‌کند؟
+# Fußball
+Mein Sohn mag [Fußball]. | پسرم فوتبال دوست دارد.
+[Fußball] ist mein Hobby. | فوتبال سرگرمی من است.
+Im Iran mögen viele Leute [Fußball]. | در ایران خیلی‌ها فوتبال دوست دارند.
+Wir sehen heute [Fußball]. | امروز فوتبال تماشا می‌کنیم.
+[Fußball] ist ein schöner Sport. | فوتبال ورزش قشنگی است.
+# Fußball spielen
+Die Kinder [spielen Fußball] im Park. | بچه‌ها در پارک فوتبال بازی می‌کنند.
+Mein Bruder [spielt Fußball] in der Schule. | برادرم در مدرسه فوتبال بازی می‌کند.
+Kannst du [Fußball spielen]? | فوتبال بازی کردن بلدی؟
+Wir wollen am Sonntag [Fußball spielen]. | می‌خواهیم یکشنبه فوتبال بازی کنیم.
+Wer [spielt Fußball] mit uns? | کی با ما فوتبال بازی می‌کند؟
+Meine Tochter möchte auch [Fußball spielen]. | دخترم هم می‌خواهد فوتبال بازی کند.
+# Karten spielen
+Opa und Oma [spielen Karten]. | پدربزرگ و مادربزرگ ورق بازی می‌کنند.
+Mein Vater [spielt Karten] mit seinen Freunden. | پدرم با دوستانش ورق بازی می‌کند.
+Möchtest du [Karten spielen]? | می‌خواهی ورق بازی کنیم؟
+Wir können heute Abend [Karten spielen]. | امشب می‌توانیم ورق بازی کنیم.
+Kannst du [Karten spielen]? | ورق‌بازی بلدی؟
+Die Kinder [spielen Karten] in der Küche. | بچه‌ها در آشپزخانه ورق بازی می‌کنند.
+# Spiel
+Das [Spiel] beginnt um 8 Uhr. | بازی ساعت هشت شروع می‌شود.
+Das ist ein schönes [Spiel]. | بازی قشنگی است.
+Das Kind hat ein neues [Spiel]. | بچه یک بازی جدید دارد.
+Wie war das [Spiel]? | بازی چطور بود؟
+Das [Spiel] dauert 90 Minuten. | بازی نود دقیقه طول می‌کشد.
+Wir sehen das [Spiel] im Café. | بازی را در کافه تماشا می‌کنیم.
+# Musik
+Ich mag [Musik]. | موسیقی دوست دارم.
+Die [Musik] ist sehr schön. | این موسیقی خیلی قشنگ است.
+Welche [Musik] magst du? | چه موسیقی‌ای دوست داری؟
+Im Café gibt es schöne [Musik]. | کافه موسیقی قشنگی دارد.
+Mein Bruder lernt [Musik] an der Uni. | برادرم در دانشگاه موسیقی می‌خواند.
+Beim Kochen brauche ich [Musik]. | موقع آشپزی موسیقی لازم دارم.
+# Musik hören
+Ich [höre Musik] im Auto. | در ماشین موسیقی گوش می‌دهم.
+Mein Sohn [hört Musik] in seinem Zimmer. | پسرم در اتاقش موسیقی گوش می‌دهد.
+Ich will jetzt [Musik hören]. | الان می‌خواهم موسیقی گوش بدهم.
+Wir können zusammen [Musik hören]. | می‌توانیم با هم موسیقی گوش بدهیم.
+Darf ich hier [Musik hören]? | اجازه هست اینجا موسیقی گوش بدهم؟
+Die Kinder [hören Musik] im Wohnzimmer. | بچه‌ها در اتاق نشیمن موسیقی گوش می‌دهند.
+# Film
+Der [Film] ist sehr gut. | فیلم خیلی خوب است.
+Wir sehen heute einen [Film]. | امروز یک فیلم می‌بینیم.
+Der [Film] beginnt um 20 Uhr. | فیلم ساعت بیست شروع می‌شود.
+Wie war der [Film]? | فیلم چطور بود؟
+Ich mag deutsche [Filme]. | فیلم‌های آلمانی را دوست دارم.
+Im Kino gibt es einen neuen [Film]. | سینما یک فیلم جدید دارد.
+# Konzert
+Am Samstag gehen wir ins [Konzert]. | شنبه به کنسرت می‌رویم.
+Das [Konzert] beginnt um 19 Uhr. | کنسرت ساعت نوزده شروع می‌شود.
+Das [Konzert] war sehr schön. | کنسرت خیلی خوب بود.
+Wann ist das [Konzert]? | کنسرت کی است؟
+Ich habe zwei Tickets für das [Konzert]. | دو بلیت برای کنسرت دارم.
+Die Karten für das [Konzert] sind teuer. | بلیت‌های کنسرت گران است.
+# schwimmen
+Ich [schwimme] gern. | دوست دارم شنا کنم.
+Kannst du [schwimmen]? | شنا بلدی؟
+Die Kinder [schwimmen] im Meer. | بچه‌ها در دریا شنا می‌کنند. | d: singen, fliegen, fotografieren
+Im Sommer [schwimmen] wir viel. | در تابستان زیاد شنا می‌کنیم.
+Mein Sohn lernt [schwimmen]. | پسرم شنا یاد می‌گیرد.
+Gestern bin ich im Meer [geschwommen]. | دیروز در دریا شنا کردم.
+# schwimmen gehen
+Wir wollen heute [schwimmen gehen]. | امروز می‌خواهیم برویم شنا.
+Möchtest du [schwimmen gehen]? | می‌خواهی بروی شنا؟
+Am Wochenende können wir [schwimmen gehen]. | آخر هفته می‌توانیم برویم شنا.
+Im Sommer möchte ich jeden Tag [schwimmen gehen]. | تابستان می‌خواهم هر روز بروم شنا.
+Die Kinder dürfen heute [schwimmen gehen]. | بچه‌ها امروز اجازه دارند بروند شنا.
+Mit Fieber darfst du nicht [schwimmen gehen]. | با تب نباید بروی شنا.
+# laufen
+Das Baby kann schon [laufen]. | بچه دیگر می‌تواند راه برود.
+Ich [laufe] jeden Morgen im Park. | هر صبح در پارک می‌دوم.
+Der Hund [läuft] sehr schnell. | سگ خیلی تند می‌دود.
+Wir [laufen] zum Bahnhof. | تا ایستگاه قطار پیاده می‌رویم.
+Mein Vater [läuft] am Sonntag im Park. | پدرم یکشنبه‌ها در پارک می‌دود.
+Du [läufst] sehr schnell! | تو خیلی تند می‌دوی!
+# spazieren gehen
+Wir wollen im Park [spazieren gehen]. | می‌خواهیم در پارک قدم بزنیم.
+Möchtest du [spazieren gehen]? | دوست داری برویم قدم بزنیم؟
+Am Sonntag möchten wir am Meer [spazieren gehen]. | یکشنبه می‌خواهیم کنار دریا قدم بزنیم.
+Ich muss mit dem Hund [spazieren gehen]. | باید سگ را بیرون ببرم.
+Bei schönem Wetter können wir [spazieren gehen]. | اگر هوا خوب باشد، می‌توانیم قدم بزنیم.
+# tanzen
+Ich [tanze] gern. | دوست دارم برقصم.
+Kannst du [tanzen]? | رقص بلدی؟
+Die Kinder [tanzen] im Wohnzimmer. | بچه‌ها در اتاق نشیمن می‌رقصند. | d: schwimmen, fliegen, fotografieren
+Meine Tochter lernt [tanzen]. | دخترم رقص یاد می‌گیرد.
+Mama [tanzt] in der Küche. | مامان در آشپزخانه می‌رقصد.
+Wir [tanzen] bis 12 Uhr. | تا ساعت دوازده می‌رقصیم. | d: schwimmen, fliegen, fotografieren
+# singen
+Ich [singe] gern. | دوست دارم آواز بخوانم.
+Das Kind [singt] in der Schule. | بچه در مدرسه آواز می‌خواند.
+Kannst du [singen]? | آواز خواندن بلدی؟
+Die Vögel [singen] am Morgen. | پرنده‌ها صبح آواز می‌خوانند.
+Wir [singen] für Oma, sie hat heute Geburtstag. | برای مادربزرگ آواز می‌خوانیم، امروز تولدش است. | d: laufen, schwimmen, fliegen
+Meine Schwester [singt] sehr schön. | خواهرم خیلی قشنگ آواز می‌خواند.
+# Foto
+Das ist ein [Foto] von meiner Familie. | این یک عکس از خانواده‌ام است.
+Das [Foto] ist sehr schön. | عکس خیلی قشنگ است.
+Ich habe viele [Fotos] vom Urlaub. | از تعطیلات عکس‌های زیادی دارم.
+Hast du ein [Foto] von deinem Hund? | از سگت عکس داری؟
+Das [Foto] ist alt, Oma ist hier noch jung. | این عکس قدیمی است، مادربزرگ اینجا هنوز جوان است.
+Für den Pass brauche ich ein [Foto]. | برای گذرنامه یک عکس لازم دارم.
+# Fotos machen
+Darf ich hier [Fotos machen]? | اجازه هست اینجا عکس بگیرم؟
+Im Museum darf man keine [Fotos machen]. | در موزه عکس گرفتن مجاز نیست.
+Mein Vater [macht Fotos] von den Kindern. | پدرم از بچه‌ها عکس می‌گیرد.
+Wir wollen am Meer [Fotos machen]. | می‌خواهیم کنار دریا عکس بگیریم.
+Sara [macht Fotos] von den Blumen. | سارا از گل‌ها عکس می‌گیرد.
+# fotografieren
+Ich [fotografiere] gern. | عکاسی را دوست دارم.
+Darf ich Sie [fotografieren]? | اجازه هست از شما عکس بگیرم؟
+Hier darf man nicht [fotografieren]. | اینجا عکاسی ممنوع است.
+Mein Bruder [fotografiert] Vögel. | برادرم از پرنده‌ها عکس می‌گیرد.
+Was [fotografierst] du? | از چه عکس می‌گیری؟
+Ich habe das Meer [fotografiert]. | از دریا عکس گرفتم.
+# Party
+Am Samstag gibt es eine [Party]. | شنبه یک مهمانی هست.
+Die [Party] beginnt um 20 Uhr. | مهمانی ساعت بیست شروع می‌شود.
+Kommst du zu meiner [Party]? | به مهمانی من می‌آیی؟
+Die [Party] war sehr schön. | مهمانی خیلی خوب بود.
+Wir machen eine [Party] zum Geburtstag. | برای تولد جشن می‌گیریم.
+Auf der [Party] tanzen wir. | در مهمانی می‌رقصیم.
+# Spaß
+Mit dir habe ich immer [Spaß]. | با تو همیشه به من خوش می‌گذرد.
+Die Arbeit ist kein [Spaß]. | کار تفریح نیست.
+Wir lernen Deutsch mit [Spaß]. | آلمانی را با خوشی یاد می‌گیریم.
+Hattet ihr [Spaß] auf der Party? | در مهمانی به شما خوش گذشت؟
+Die Kinder haben [Spaß] im Schnee. | به بچه‌ها در برف خوش می‌گذرد.
+# Spaß machen
+Das [macht Spaß]! | این کیف می‌دهد!
+Deutsch lernen [macht Spaß]. | یاد گرفتن آلمانی کیف می‌دهد.
+Schwimmen [macht Spaß]. | شنا کیف می‌دهد.
+Das Spiel [macht Spaß]. | این بازی کیف می‌دهد.
+Der Kurs [macht Spaß]. | این کلاس کیف می‌دهد.
+Kochen kann [Spaß machen]. | آشپزی می‌تواند کیف بدهد.
+# viel Spaß
+[Viel Spaß] auf der Party! | در مهمانی خوش بگذرد! | d: Guten Appetit, Gute Besserung, Herzlichen Glückwunsch
+Ihr fahrt ans Meer? [Viel Spaß]! | به دریا می‌روید؟ خوش بگذرد! | d: Guten Appetit, Gute Besserung, Herzlichen Glückwunsch
+[Viel Spaß] im Urlaub! | در تعطیلات خوش بگذرد! | d: Guten Appetit, Gute Besserung, Herzlichen Glückwunsch
+[Viel Spaß] im Kino! | در سینما خوش بگذرد! | d: Guten Appetit, Gute Besserung, Herzlichen Glückwunsch
+Tschüss und [viel Spaß]! | خداحافظ و خوش بگذرد! | d: guten Appetit, gute Besserung, herzlichen Glückwunsch
+# Glück
+Ich habe [Glück]! | شانس آوردم!
+Das war [Glück]! | شانس بود!
+Du hast [Glück], der Zug ist noch da. | شانس آوردی، قطار هنوز اینجاست.
+Meine Kinder sind mein [Glück]. | بچه‌هایم خوشبختی من هستند.
+Wir hatten im Urlaub [Glück] mit dem Wetter. | در تعطیلات با هوا شانس آوردیم.
+# viel Glück
+[Viel Glück] bei der Prüfung! | در امتحان موفق باشی! | d: Guten Appetit, Gute Nacht, Gute Besserung
+Morgen hast du einen Test? [Viel Glück]! | فردا آزمون داری؟ موفق باشی! | d: Guten Appetit, Gute Nacht, Gute Besserung
+[Viel Glück] mit dem neuen Job! | در کار جدید موفق باشی! | d: Guten Appetit, Gute Nacht, Gute Besserung
+[Viel Glück] in Deutschland! | در آلمان موفق باشی! | d: Guten Appetit, Gute Nacht, Gute Besserung
+Tschüss und [viel Glück]! | خداحافظ و موفق باشی! | d: guten Appetit, gute Besserung, herzlichen Glückwunsch
+# Angst
+Keine [Angst], ich bin hier. | نترس، من اینجا هستم.
+Keine [Angst], das Wasser ist nicht kalt. | نترس، آب سرد نیست.
+Keine [Angst], die Ärztin ist sehr gut. | نترس، دکتر خیلی خوب است.
+Sprich ohne [Angst] Deutsch! | بدون ترس آلمانی حرف بزن!
+Mit [Angst] lernt man nicht gut. | آدم با ترس خوب یاد نمی‌گیرد.
+# Angst haben
+Ich [habe Angst]. | می‌ترسم.
+Das Kind [hat Angst] vor dem Hund. | بچه از سگ می‌ترسد.
+Du [hast Angst]? Ich bin hier. | می‌ترسی؟ من اینجا هستم.
+Ich [habe Angst] vor der Prüfung. | از امتحان می‌ترسم.
+Meine Schwester [hat Angst] vor Katzen. | خواهرم از گربه‌ها می‌ترسد.
+Du musst keine [Angst haben]. | لازم نیست بترسی.
+# treffen
+Ich [treffe] heute meine Freundin. | امروز دوستم را می‌بینم.
+Am Samstag [treffe] ich Paul im Café. | شنبه پاول را در کافه می‌بینم.
+Wann [triffst] du deine Eltern? | کی پدر و مادرت را می‌بینی؟
+Gestern habe ich Lena im Supermarkt [getroffen]. | دیروز لنا را در سوپرمارکت دیدم.
+Mein Vater [trifft] seinen Kollegen im Büro. | پدرم همکارش را در دفتر می‌بیند.
+Ich möchte dich morgen [treffen]. | می‌خواهم فردا ببینمت. | d: kochen, öffnen, schließen
+# besuchen
+Am Sonntag [besuchen] wir Oma. | یکشنبه به دیدن مادربزرگ می‌رویم. | d: heißen, kochen, schließen
+Ich [besuche] meine Eltern in Isfahan. | به دیدن پدر و مادرم در اصفهان می‌روم.
+Kommst du mich [besuchen]? | می‌آیی به دیدنم؟ | d: heißen, kochen, schließen
+Wir möchten das Museum [besuchen]. | می‌خواهیم از موزه دیدن کنیم. | d: heißen, kochen, trinken
+Meine Tante [besucht] uns im Sommer. | خاله‌ام تابستان به دیدن ما می‌آید.
+Gestern habe ich meinen Freund im Krankenhaus [besucht]. | دیروز در بیمارستان به دیدن دوستم رفتم.
+# einladen
+Ich möchte dich zum Essen [einladen]. | می‌خواهم برای غذا دعوتت کنم. | d: heißen, kochen, verkaufen
+Wir wollen viele Leute zur Party [einladen]. | می‌خواهیم آدم‌های زیادی را به مهمانی دعوت کنیم. | d: heißen, kochen, verkaufen
+Sara hat mich zum Geburtstag [eingeladen]. | سارا مرا به تولدش دعوت کرده است. | d: einladen, einlädt, geladen
+Darf ich Sie zum Kaffee [einladen]? | اجازه می‌دهید شما را به یک قهوه دعوت کنم؟ | d: heißen, kochen, verkaufen
+Wir haben die Familie von Ali [eingeladen]. | خانواده‌ی علی را دعوت کرده‌ایم. | d: einladen, einlädt, geladen
+Wer hat dich [eingeladen]? | چه کسی تو را دعوت کرده است؟ | d: einladen, einlädt, geladen
+# kennenlernen
+Ich möchte dich [kennenlernen]. | می‌خواهم با تو آشنا شوم. | d: heißen, kochen, verkaufen
+Ich habe Sara im Kurs [kennengelernt]. | با سارا در کلاس آشنا شدم. | d: kennenlernen, kennenlernt, gelernt
+Im Urlaub habe ich viele Leute [kennengelernt]. | در تعطیلات با آدم‌های زیادی آشنا شدم. | d: kennenlernen, kennenlernt, gelernt
+Wo hast du Paul [kennengelernt]? | با پاول کجا آشنا شدی؟ | d: kennenlernen, kennenlernt, gelernt
+Ich will neue Leute [kennenlernen]. | می‌خواهم با آدم‌های جدید آشنا شوم. | d: heißen, kochen, verkaufen
+Meine Eltern möchten deine Familie [kennenlernen]. | پدر و مادرم می‌خواهند با خانواده‌ات آشنا شوند. | d: heißen, kochen, verkaufen
+# freut mich
+Ich bin Anna. – [Freut mich]! | من آنا هستم. – خوشوقتم! | d: Gute Reise, Gute Besserung, Guten Appetit
+[Freut mich], ich heiße Lukas. | خوشوقتم، اسم من لوکاس است. | d: Gute Reise, Gute Besserung, Guten Appetit
+Das ist meine Schwester Lena. – [Freut mich]! | این خواهرم لنا است. – خوشوقتم! | d: Gute Reise, Gute Besserung, Guten Appetit
+Ich bin der neue Kollege. – [Freut mich]! | من همکار جدید هستم. – خوشوقتم! | d: Gute Reise, Gute Besserung, Guten Appetit
+[Freut mich], Sie kennenzulernen. | از آشنایی با شما خوشوقتم. | d: Gute Reise, Gute Besserung, Guten Appetit
+Hallo, ich bin Reza. – [Freut mich], ich bin Mia. | سلام، من رضا هستم. – خوشوقتم، من میا هستم. | d: Gute Reise, Gute Besserung, Guten Appetit
+# mitkommen
+Möchtest du [mitkommen]? | می‌خواهی با ما بیایی؟ | d: aufstehen, einsteigen, aussteigen
+Wir gehen ins Kino. Kannst du [mitkommen]? | به سینما می‌رویم. می‌توانی بیایی؟ | d: aufstehen, einsteigen, aussteigen
+Mein Bruder will auch [mitkommen]. | برادرم هم می‌خواهد بیاید. | d: aufstehen, einsteigen, aussteigen
+Ist Lena auch [mitgekommen]? | لنا هم همراهتان آمد؟ | d: mitkommen, mitkommt, gekommen
+Ich kann heute nicht [mitkommen]. | امروز نمی‌توانم بیایم. | d: aufstehen, einsteigen, aussteigen
+Darf mein Freund [mitkommen]? | دوستم هم می‌تواند بیاید؟ | d: aufstehen, einsteigen, aussteigen
+# Handy
+Wo ist mein [Handy]? | موبایلم کجاست؟
+Mein [Handy] ist neu. | موبایلم نو است.
+Hast du ein [Handy]? | موبایل داری؟
+Das [Handy] ist zu{zu-adv} teuer. | این موبایل زیادی گران است.
+Die Kinder spielen mit dem [Handy]. | بچه‌ها با موبایل بازی می‌کنند.
+Die Nummer von meinem [Handy] ist neu. | شماره‌ی موبایلم جدید است.
+# anrufen
+Ich muss meine Mutter [anrufen]. | باید به مادرم زنگ بزنم.
+Kannst du mich morgen [anrufen]? | می‌توانی فردا به من زنگ بزنی؟
+Gestern hat Oma [angerufen]. | دیروز مادربزرگ زنگ زد. | d: anrufen, anruft, gerufen
+Wer hat [angerufen]? | کی زنگ زد؟
+Ich will den Arzt [anrufen]. | می‌خواهم به دکتر زنگ بزنم.
+Hat der Chef schon [angerufen]? | رئیس زنگ زده است؟ | d: anrufen, anruft, gerufen
+# telefonieren
+Mein Vater [telefoniert] im Büro. | پدرم در دفتر تلفنی صحبت می‌کند.
+Ich [telefoniere] jeden Tag mit meiner Mutter. | هر روز با مادرم تلفنی حرف می‌زنم.
+Mit wem [telefonierst] du? | با کی تلفنی حرف می‌زنی؟
+Sara [telefoniert] sehr viel. | سارا خیلی تلفنی حرف می‌زند.
+Wir haben gestern [telefoniert]. | دیروز تلفنی صحبت کردیم.
+Kann ich hier [telefonieren]? | می‌توانم اینجا تلفن بزنم؟
+# E-Mail
+Ich schreibe eine [E-Mail]. | یک ایمیل می‌نویسم.
+Hast du meine [E-Mail] gelesen? | ایمیلم را خواندی؟
+Die [E-Mail] ist von meinem Chef. | ایمیل از طرف رئیسم است.
+Ich habe heute viele [E-Mails]. | امروز ایمیل‌های زیادی دارم.
+Bitte schreiben Sie mir eine [E-Mail]. | لطفاً برایم یک ایمیل بنویسید.
+# Brief
+Ich schreibe einen [Brief] an Oma. | برای مادربزرگ نامه می‌نویسم.
+Der [Brief] ist für dich. | نامه برای توست.
+Ich lese den [Brief]. | نامه را می‌خوانم.
+Heute ist kein [Brief] da. | امروز نامه‌ای نیامده است.
+Mein Opa schreibt gern [Briefe]. | پدربزرگم دوست دارد نامه بنویسد.
+Der [Brief] kommt aus dem Iran. | نامه از ایران آمده است.
+# Gruß
+Viele [Grüße] aus Berlin! | سلام فراوان از برلین!
+[Grüße] an deine Eltern! | به پدر و مادرت سلام برسان!
+Viele [Grüße] von Anna. | آنا سلام فراوان می‌رساند.
+Sag Oma viele [Grüße] von mir. | از طرف من به مادربزرگ سلام برسان.
+Einen [Gruß] von Papa! | بابا سلام رساند!
+# schicken
+Ich [schicke] dir eine E-Mail. | برایت یک ایمیل می‌فرستم.
+Kannst du mir ein Foto [schicken]? | می‌توانی برایم یک عکس بفرستی؟
+Oma [schickt] uns einen Brief. | مادربزرگ برایمان یک نامه می‌فرستد.
+Ich habe dir die Adresse [geschickt]. | آدرس را برایت فرستادم. | d: schicke, schicken, schickt
+Wir [schicken] ein Geschenk nach Teheran. | یک هدیه به تهران می‌فرستیم.
+# bekommen
+Ich [bekomme] viele E-Mails. | ایمیل‌های زیادی می‌گیرم.
+Zum Geburtstag [bekommt] das Kind ein Fahrrad. | بچه برای تولدش یک دوچرخه می‌گیرد.
+Was [bekommen] Sie? | شما چه میل دارید؟ | d: leben, gehen, schlafen
+Hast du meinen Brief [bekommen]? | نامه‌ام به دستت رسید؟
+Ich habe eine Antwort [bekommen]. | جواب گرفتم.
+Ich [bekomme] im Juli Urlaub. | در ژوئیه مرخصی می‌گیرم.
+# Computer
+Mein [Computer] ist alt. | کامپیوترم قدیمی است.
+Ich arbeite am [Computer]. | با کامپیوتر کار می‌کنم.
+Der [Computer] ist neu und schnell. | این کامپیوتر نو و سریع است.
+Die Kinder spielen am [Computer]. | بچه‌ها با کامپیوتر بازی می‌کنند.
+Ich brauche einen neuen [Computer]. | یک کامپیوتر جدید لازم دارم.
+# Internet
+Ich suche das im [Internet]. | آن را در اینترنت پیدا می‌کنم.
+Das [Internet] ist heute langsam. | اینترنت امروز کند است.
+Hast du [Internet] zu Hause? | در خانه اینترنت داری؟
+Im Hotel gibt es kein [Internet]. | در هتل اینترنت نیست.
+Ich kaufe viel im [Internet]. | خیلی چیزها را از اینترنت می‌خرم.
+Ohne [Internet] kann ich nicht arbeiten. | بدون اینترنت نمی‌توانم کار کنم.
+# Zeitung
+Mein Vater liest jeden Morgen die [Zeitung]. | پدرم هر صبح روزنامه می‌خواند.
+Die [Zeitung] ist auf dem Tisch. | روزنامه روی میز است.
+Ich lese die [Zeitung] im Internet. | روزنامه را در اینترنت می‌خوانم.
+Ist die [Zeitung] von heute? | این روزنامه‌ی امروز است؟
+Ich kaufe eine [Zeitung] am Bahnhof. | در ایستگاه یک روزنامه می‌خرم.
+# Radio
+Ich höre [Radio] im Auto. | در ماشین رادیو گوش می‌دهم.
+Das [Radio] ist alt. | رادیو قدیمی است.
+Oma hört jeden Morgen [Radio]. | مادربزرگ هر صبح رادیو گوش می‌دهد.
+Im [Radio] gibt es gute Musik. | رادیو موسیقی خوبی پخش می‌کند.
+Das [Radio] in der Küche ist neu. | رادیوی آشپزخانه نو است.
+# Fernseher
+Der [Fernseher] ist im Wohnzimmer. | تلویزیون در اتاق نشیمن است.
+Wir kaufen einen neuen [Fernseher]. | یک تلویزیون جدید می‌خریم.
+Unser [Fernseher] ist sehr groß. | تلویزیون ما خیلی بزرگ است.
+Im Zimmer gibt es keinen [Fernseher]. | در اتاق تلویزیون نیست.
+Der [Fernseher] ist zu{zu-adv} teuer. | این تلویزیون زیادی گران است.
+# fernsehen
+Die Kinder wollen [fernsehen]. | بچه‌ها می‌خواهند تلویزیون تماشا کنند.
+Am Abend möchte ich [fernsehen]. | شب می‌خواهم تلویزیون ببینم.
+Gestern haben wir [ferngesehen]. | دیروز تلویزیون تماشا کردیم. | d: fernsehen, fernsieht, gesehen
+Du darfst heute nicht [fernsehen]. | امروز اجازه نداری تلویزیون ببینی.
+Wir können zusammen [fernsehen]. | می‌توانیم با هم تلویزیون ببینیم.
+# Information
+Ich brauche mehr{mehr} [Informationen]. | اطلاعات بیشتری لازم دارم.
+Die [Information] ist falsch. | این اطلاعات غلط است.
+Wo gibt es [Informationen] zum Kurs? | اطلاعات کلاس را کجا می‌شود پیدا کرد؟
+Die [Informationen] sind im Internet. | اطلاعات در اینترنت است.
+Danke für die [Information]! | ممنون بابت اطلاعات!
+Alle [Informationen] sind auf Seite 3. | همه‌ی اطلاعات در صفحه‌ی سه است.
+# Formular
+Bitte schreiben Sie Ihren Namen in das [Formular]. | لطفاً اسمتان را در فرم بنویسید.
+Wo ist das [Formular]? | فرم کجاست؟
+Das [Formular] hat drei Seiten. | فرم سه صفحه دارد.
+Ich brauche ein [Formular] für den Pass. | برای گذرنامه یک فرم لازم دارم.
+Das [Formular] gibt es auch im Internet. | فرم در اینترنت هم هست.
+# ausfüllen
+Können Sie bitte das Formular [ausfüllen]? | می‌شود لطفاً فرم را پر کنید؟
+Ich muss ein Formular [ausfüllen]. | باید یک فرم پر کنم.
+Hast du das Formular schon [ausgefüllt]? | فرم را پر کرده‌ای؟ | d: ausfüllen, ausfüllt, gefüllt
+Ich kann das Formular nicht [ausfüllen]. | نمی‌توانم فرم را پر کنم.
+Ich habe alles [ausgefüllt]. | همه را پر کرده‌ام. | d: ausfüllen, ausfüllt, gefüllt
+# helfen
+Kann ich Ihnen [helfen]? | می‌توانم کمکتان کنم؟
+Ich [helfe] meiner Mutter in der Küche. | در آشپزخانه به مادرم کمک می‌کنم.
+[Hilfst] du mir? | کمکم می‌کنی؟
+Mein Bruder [hilft] mir bei den Hausaufgaben. | برادرم در تکالیف به من کمک می‌کند.
+Danke, Sie haben mir sehr [geholfen]. | ممنون، خیلی به من کمک کردید.
+Die Tabletten [helfen] nicht. | قرص‌ها اثری ندارند.
+# zeigen
+Können Sie mir das auf der Karte [zeigen]? | می‌شود آن را روی نقشه به من نشان دهید؟
+Ich [zeige] dir meine Wohnung. | آپارتمانم را به تو نشان می‌دهم.
+Der Lehrer [zeigt] ein Bild. | معلم یک تصویر نشان می‌دهد.
+Sara hat mir die Stadt [gezeigt]. | سارا شهر را به من نشان داد. | d: zeigt, zeigen, zeigte
+Am Flughafen [zeigen] wir den Pass. | در فرودگاه گذرنامه را نشان می‌دهیم. | d: schließen, kochen, trinken
+# bringen
+Der Kellner [bringt] das Essen. | گارسون غذا را می‌آورد.
+Kannst du mir ein Glas Wasser [bringen]? | می‌توانی برایم یک لیوان آب بیاوری؟
+Ich [bringe] die Kinder zur Schule. | بچه‌ها را به مدرسه می‌رسانم.
+Was [bringst] du zur Party? | به مهمانی چه می‌آوری؟
+Papa hat Brötchen [gebracht]. | بابا نان آورده است.
+# holen
+Ich [hole] Brötchen von der Bäckerei. | از نانوایی نان می‌آورم.
+Kannst du die Kinder von der Schule [holen]? | می‌توانی بچه‌ها را از مدرسه بیاوری؟
+Papa [holt] Wasser aus der Küche. | بابا از آشپزخانه آب می‌آورد.
+Wir müssen den Arzt [holen]. | باید برویم دکتر را بیاوریم. | d: mitkommen, sagen, schlafen
+Ich habe die Fahrkarten schon [geholt]. | بلیت‌ها را گرفته‌ام. | d: holt, holen, holte
+# stehen
+Der Bus [steht] an der Haltestelle. | اتوبوس در ایستگاه ایستاده است.
+Im Garten [steht] ein großer Baum. | در حیاط یک درخت بزرگ هست.
+Wir [stehen] vor dem Kino. | جلوی سینما ایستاده‌ایم. | d: sprechen, helfen, öffnen
+Das Baby kann schon [stehen]. | بچه دیگر می‌تواند بایستد. | d: mitkommen, holen, kochen
+Die Leute [stehen] an der Kasse. | مردم کنار صندوق ایستاده‌اند.
+Im Bus [stehe] ich oft. | در اتوبوس اغلب سرپا می‌ایستم.
+# sitzen
+Ich [sitze] im Bus. | در اتوبوس نشسته‌ام.
+Die Katze [sitzt] auf dem Stuhl. | گربه روی صندلی نشسته است.
+Wo [sitzt] du? | کجا نشسته‌ای؟
+Oma [sitzt] gern im Garten. | مادربزرگ دوست دارد در حیاط بنشیند.
+Wir [sitzen] am Tisch und essen. | سر میز نشسته‌ایم و غذا می‌خوریم.
+Im Kino habe ich neben Paul [gesessen]. | در سینما کنار پاول نشستم.
+# liegen
+Das Buch [liegt] auf dem Tisch. | کتاب روی میز است.
+Der Hund [liegt] auf dem Sofa. | سگ روی مبل دراز کشیده است.
+Ich bin krank und [liege] im Bett. | مریضم و در رختخواب هستم.
+Wo [liegt] Hamburg? | هامبورگ کجاست؟
+Die Schlüssel [liegen] in der Küche. | کلیدها در آشپزخانه است. | d: bringen, sehen, kochen
+Das Hotel [liegt] am Meer. | هتل کنار دریاست.
+# glauben
+Ich [glaube], das ist richtig. | فکر می‌کنم این درست است.
+Ich [glaube] dir. | حرفت را باور می‌کنم.
+Das [glaube] ich nicht! | باورم نمی‌شود!
+[Glaubst] du, er kommt? | فکر می‌کنی می‌آید؟
+Wir [glauben], der Zug kommt gleich. | فکر می‌کنیم قطار الان می‌آید. | d: verstehen, kennen, heißen
+Mein Sohn hat das nicht [geglaubt]. | پسرم این را باور نکرد. | d: glaubt, glauben, glaubte
+# denken
+Was [denkst] du? | چه فکر می‌کنی؟
+Ich [denke], das ist ein Fehler. | فکر می‌کنم این یک اشتباه است.
+Ich [denke] oft an meine Familie. | اغلب به خانواده‌ام فکر می‌کنم.
+Wir [denken], das Restaurant ist gut. | فکر می‌کنیم این رستوران خوب است. | d: verstehen, kennen, heißen
+Hast du an den Pass [gedacht]? | گذرنامه یادت بود؟
+# stimmen
+Das [stimmt]. | درست است.
+[Stimmt] das? | درست است؟
+Die Rechnung [stimmt] nicht. | صورت‌حساب درست نیست.
+Die Adresse [stimmt] nicht. | آدرس درست نیست.
+Das [stimmt], der Bus kommt um 8 Uhr. | درست است، اتوبوس ساعت هشت می‌آید.
+Hier [stimmt] etwas nicht. | اینجا یک چیزی درست نیست.
+# finden-2
+Wie [findest] du das Kleid? | این لباس به نظرت چطور است؟
+Ich [finde] den Film gut. | به نظرم فیلم خوب است.
+Wir [finden] die Wohnung zu{zu-adv} teuer. | به نظر ما این آپارتمان زیادی گران است.
+Ich [finde] Deutsch schön. | به نظرم آلمانی قشنگ است.
+Wie [finden] Sie Berlin? | برلین به نظرتان چطور است؟
+Mein Vater [findet] den Kaffee hier gut. | به نظر پدرم قهوه‌ی اینجا خوب است.
+# gefallen
+Das Kleid [gefällt] mir. | از این لباس خوشم می‌آید.
+Wie [gefällt] dir Berlin? | از برلین خوشت می‌آید؟
+Die Wohnung [gefällt] uns sehr. | از این آپارتمان خیلی خوشمان می‌آید.
+Der Film hat mir gut [gefallen]. | از فیلم خیلی خوشم آمد.
+Die Schuhe [gefallen] mir nicht. | از این کفش‌ها خوشم نمی‌آید.
+Hat dir die Party [gefallen]? | از مهمانی خوشت آمد؟
+# lieben
+Ich [liebe] meine Familie. | خانواده‌ام را خیلی دوست دارم.
+Die Kinder [lieben] Schokolade. | بچه‌ها عاشق شکلات‌اند. | d: gefallen, leidtun, heißen
+Mein Vater [liebt] Fußball. | پدرم عاشق فوتبال است.
+Wir [lieben] das Meer. | ما عاشق دریا هستیم. | d: gefallen, leidtun, heißen
+Meine Mutter [liebt] Blumen. | مادرم عاشق گل است.
+Ich [liebe] dich, Mama! | دوستت دارم، مامان!
+# leidtun
+Das muss dir nicht [leidtun]. | لازم نیست متأسف باشی. | d: lieben, mögen, heißen
+Das hat mir sehr [leidgetan]. | خیلی متأسف شدم. | d: leidtun, leidtut, getan
+Der Fehler hat mir [leidgetan]. | از آن اشتباه متأسف شدم. | d: leidtun, leidtut, getan
+Der Hund hat mir [leidgetan]. | دلم برای سگ سوخت. | d: leidtun, leidtut, getan
+Oma hat mir [leidgetan], sie war allein. | دلم برای مادربزرگ سوخت، تنها بود. | d: leidtun, leidtut, getan
+# es tut mir leid
+[Es tut mir leid], ich bin zu{zu-adv} spät. | متأسفم، دیر کردم.
+[Es tut mir leid], das weiß ich nicht. | متأسفم، این را نمی‌دانم.
+[Es tut mir leid], wir haben kein Zimmer frei. | متأسفم، اتاق خالی نداریم.
+Oh, [es tut mir leid]! | اوه، متأسفم! | d: gute Reise, viel Spaß, freut mich
+[Es tut mir leid], der Chef ist nicht da. | متأسفم، رئیس اینجا نیست. | d: Freut mich, Viel Spaß, Gute Reise
+# Problem
+Ich habe ein [Problem]. | یک مشکل دارم.
+Das ist ein großes [Problem]. | این یک مشکل بزرگ است.
+Wo ist das [Problem]? | مشکل کجاست؟
+Wir haben ein [Problem] mit dem Auto. | با ماشین مشکل داریم.
+Das [Problem] ist das Geld. | مشکل پول است.
+Mein Computer hat ein [Problem]. | کامپیوترم یک مشکلی دارد.
+# kein Problem
+Danke! – [Kein Problem]! | ممنون! – مشکلی نیست!
+Kannst du mir helfen? – [Kein Problem]. | می‌توانی کمکم کنی؟ – مشکلی نیست. | d: Gute Reise, Freut mich, Viel Spaß
+[Kein Problem], ich warte. | مشکلی نیست، صبر می‌کنم.
+Du kommst später? [Kein Problem]! | دیرتر می‌آیی؟ مشکلی نیست!
+Ich habe keinen Kuli. – [Kein Problem], hier ist einer. | خودکار ندارم. – مشکلی نیست، این یکی.
+# das macht nichts
+Entschuldigung! – [Das macht nichts]. | ببخشید! – اشکالی ندارد.
+Du bist zu{zu-adv} spät? [Das macht nichts]. | دیر کردی؟ اشکالی ندارد.
+Oh, der Kaffee ist kalt. – [Das macht nichts]. | اوه، قهوه سرد است. – اشکالی ندارد. | d: Gute Reise, Freut mich, Viel Spaß
+[Das macht nichts], wir nehmen ein Taxi. | اشکالی ندارد، تاکسی می‌گیریم. | d: Gute Reise, Freut mich, Viel Spaß
+Ich habe einen Fehler gemacht. – [Das macht nichts]! | یک اشتباه کردم. – اشکالی ندارد! | d: Gute Reise, Freut mich, Viel Glück
+# vielleicht
+[Vielleicht] komme ich morgen. | شاید فردا بیایم.
+Das ist [vielleicht] richtig. | شاید این درست باشد.
+[Vielleicht] regnet es heute. | شاید امروز باران بیاید.
+Kommst du? – [Vielleicht]. | می‌آیی؟ – شاید.
+Wir fahren [vielleicht] ans Meer. | شاید به دریا برویم.
+Der Schlüssel ist [vielleicht] im Auto. | شاید کلید در ماشین باشد.
