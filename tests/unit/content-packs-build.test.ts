@@ -130,6 +130,21 @@ describe("verb phrases of a pack", () => {
     expect(tokens.map((token) => `${token.surface}=${token.code}`)).toEqual(["Hast ... Zeit=Zeit haben", "du=du", "morgen=morgen"]);
   });
 
+  it("reads a name of names.txt as the name, not as a word form that looks like it", () => {
+    const list = words("de", ["wie\tadv\t\t\tچطور\tچطور\tfunction", "Wein\tnoun\tder\tWeine\tشراب\tشراب\tfood"]);
+    const analyzer = new Analyzer("de", list, new Morph("de", list), new Set(["Wien", "Wein"]));
+    const read = (text: string) => analyzer.analyze(text, { level: "A1" }).tokens.map((token) => `${token.surface}=${token.code ?? token.kind}`);
+    expect(new Morph("de", list).candidates("Wien").map((candidate) => candidate.word.word.code)).toContain("wie");
+    expect(read("Wien wie")).toEqual(["Wien=name", "wie=wie"]);
+    // A word written exactly as the name stays the word.
+    expect(read("Wein")).toEqual(["Wein=Wein"]);
+  });
+
+  it("reads «euch» as the pronoun «ihr», never as the possessive", () => {
+    const list = words("de", ["ihr\tpron\t\t\tشما\tihr: شما\tfunction\tno_card:1", "ihr\tdet\t\t\tمالِ او\tihr: مال او\tfunction\tno_card:1\tcode:ihr-det"]);
+    expect(new Morph("de", list).candidates("euch").map((candidate) => candidate.word.word.code)).toEqual(["ihr"]);
+  });
+
   it("takes a noun of several words in its plural", () => {
     const list = words("fr", ["le\tdet\t\t\tحرف تعریف\tle: حرف تعریف\tfunction\tno_card:1", "pomme de terre\tnoun\tf\tpommes de terre\tسیب‌زمینی\tسیب‌زمینی\tfood", "tomate\tnoun\tf\ttomates\tگوجه\tگوجه\tfood"]);
     const tokens = analyzerOf("fr", list).analyze("Les [pommes de terre].", { level: "A1" }).tokens;

@@ -180,6 +180,20 @@ export class Analyzer {
     return this.byCode.get(code);
   }
 
+  /** Is this surface in names.txt (an apostrophe may be left out)? */
+  private listedName(surface: string): boolean {
+    return this.names.has(surface) || this.names.has(surface.replace(APOSTROPHE, ""));
+  }
+
+  /**
+   * A capitalised name of names.txt is the name, not a word form that only looks like it
+   * (Wien is not «wie», Paris not «pari», Marie not «se marier»). A word written exactly so wins.
+   */
+  private isName(surface: string, candidates: Candidate[]): boolean {
+    if (!/^\p{Lu}/u.test(surface) || !this.listedName(surface)) return false;
+    return !candidates.some((candidate) => candidate.word.word.lemma === surface || candidate.word.word.plural === surface);
+  }
+
   /** May this word appear in a sentence of this scope? */
   allowed(item: PackWord, scope: Scope): boolean {
     if (levelRank(item.level) > levelRank(scope.level)) return false;
@@ -269,6 +283,9 @@ export class Analyzer {
         chosen = this.byCode.get(forced) ?? null;
         if (!chosen) errors.push(`{${forced}}: no word of the lists has this code`);
         else if (!this.allowed(chosen, scope)) errors.push(`{${forced}} is of level ${chosen.level}, above ${scope.level}`);
+      } else if (this.isName(unit.surface, candidates)) {
+        tokens.push({ ...base, kind: "name", code: null, meaning_fa: null, word: null });
+        continue;
       } else {
         // The gap of a word's own sentence is that word when it can be.
         if (inGap !== null && scope.target && candidates.some((candidate) => candidate.word === scope.target)) chosen = scope.target;
@@ -285,7 +302,7 @@ export class Analyzer {
       }
       if (!chosen) {
         const capital = /^\p{Lu}/u.test(unit.surface);
-        if (capital && (this.names.has(unit.surface) || this.names.has(unit.surface.replace(APOSTROPHE, "")))) {
+        if (capital && this.listedName(unit.surface)) {
           tokens.push({ ...base, kind: "name", code: null, meaning_fa: null, word: null });
           continue;
         }

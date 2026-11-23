@@ -169,6 +169,8 @@ export class Morph {
       for (const [form, lemmas] of closedTable(language)) {
         if (lemmas.includes(item.word.lemma)) add(this.forms, form, { word: item, score: 8, via: "closed" });
       }
+      // «euch» is the pronoun «ihr» only; the closed row «ihr» is shared with the possessive.
+      if (language === "de" && item.word.lemma === "ihr" && item.word.pos === "pron") add(this.forms, "euch", { word: item, score: 8, via: "closed" });
     }
     if (language === "de") {
       for (const item of words) {
