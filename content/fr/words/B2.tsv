@@ -1,0 +1,2369 @@
+lemma	pos	gender	plural	meaning_fa	concept_fa	topic
+# Polyra French word list, B2. Teaching order: grammar and linking words of B2, then the commonest words still
+# missing (Lexique ranks up to about 3000), then topic by topic (society, politics, economy, law, science, the
+# environment, the arts, feelings and argument). mastery:recognize marks words a B2 learner mostly meets in
+# books and films (old, literary or military words). checked:level: a B2 grammar word or second sense among the
+# 500 commonest, or a B2 topic word rarer in Lexique than in B2 life. Swear words stay out (DECISIONS.md).
+
+# grammar words without a card
+ceux-ci	pron			این‌ها (این گروه)	این‌ها (این گروه)	function	no_card:1
+ceux-là	pron			آن‌ها (آن گروه)	آن‌ها (آن گروه)	function	no_card:1
+celles-ci	pron			این‌ها (مؤنث)	این‌ها (مؤنث)	function	no_card:1
+celles-là	pron			آن‌ها (اشارهٔ مؤنث)	آن‌ها (اشارهٔ مؤنث)	function	no_card:1
+vous-même	pron			خودتان	خودتان	function	no_card:1
+nous-mêmes	pron			خودمان	خودمان	function	no_card:1
+nôtre	pron			مال ما	مال ما	function	no_card:1
+vôtre	pron			مال شما	مال شما	function	no_card:1
+miens	pron			مال من (جمع)	مال من (جمع)	function	no_card:1
+siens	pron			مال او (جمع)	مال او (جمع)	function	no_card:1
+tienne	pron			مال تو (مؤنث)	مال تو (مؤنث)	function	no_card:1
+auxquelles	pron			که به آن‌ها (مؤنث)	که به آن‌ها (مؤنث)	function	no_card:1
+desquels	pron			که از آن‌ها	که از آن‌ها	function	no_card:1
+quiconque	pron			هر کس که	هر کس که	function	no_card:1
+chacune	pron			هر یک (مؤنث)	هر یک (مؤنث)	function	no_card:1
+quelques-uns	pron			چندتایی (از آن‌ها)	چندتایی (از آن‌ها)	function	no_card:1
+quelconque	det			هر ... ای (بی‌اهمیت)، معمولی	هر ... ای (بی‌اهمیت)	function	no_card:1
+hum	interj			اوهوم، هوم	اوهوم	function	no_card:1
+hop	interj			هوپ! (با حرکت)	هوپ! (با حرکت)	function	no_card:1
+
+# linking words of B2: concession, purpose, condition, addition
+tel	adj			چنین، این‌چنین	چنین	function	checked:level	coll:un tel homme → چنین مردی
+tel que	conj			مانندِ، از قبیلِ	مانندِ	function	parts:tel
+néanmoins	adv			با این وجود، به هر روی	با این وجود	function	register:formal
+toutefois	adv			با این همه، اما (رسمی)	با این همه	function	register:formal
+quoique	conj			اگرچه، هرچند که	اگرچه	function	register:formal
+bien que	conj			اگرچه، با اینکه	اگرچه	function
+afin que	conj			برای اینکه، تا	برای اینکه	function	register:formal
+pour que	conj			تا اینکه، برای اینکه (کسی)	تا اینکه	function
+à moins que	conj			مگر اینکه	مگر اینکه	function
+pourvu que	conj			به شرط آنکه، خدا کند که	به شرط آنکه	function
+à condition que	conj			به شرطی که	به شرطی که	function	parts:condition
+de sorte que	conj			به‌طوری که، چنان که	به‌طوری که	function	parts:sorte
+si bien que	conj			در نتیجه، چنان که	در نتیجه	function
+en revanche	adv			در مقابل، در عوض (بر عکسِ آن)	در مقابل	function
+d'une part	adv			از یک سو	از یک سو	function	parts:part
+d'autre part	adv			از سوی دیگر	از سوی دیگر	function	parts:part
+quant à	prep			در مورد، اما دربارهٔ	در مورد	function
+certes	adv			البته (درست است که)، بی‌گمان	البته (درست است که)	function	register:formal
+or	conj			حال آنکه، و اما	حال آنکه	function	code:or-conj	register:formal	checked:level
+soit	conj			یا (این یا آن)، یعنی	یا (این یا آن)	function	checked:level
+guère	adv			چندان، به‌ندرت (با ne)	چندان	function	register:formal	coll:je ne le vois guère → به ندرت او را می‌بینم
+jadis	adv			در روزگاران قدیم، روزگاری	در روزگاران قدیم	time	mastery:recognize
+auparavant	adv			پیش از آن، قبلاً	پیش از آن	time
+tantôt	adv			گاهی ... گاهی	گاهی ... گاهی	time	mastery:recognize
+outre	prep			علاوه بر، فراتر از	علاوه بر	function	register:formal
+en outre	adv			به‌علاوه، افزون بر این	به‌علاوه	function	register:formal
+par ailleurs	adv			از سوی دیگر، ضمناً	از سوی دیگر	function
+du moins	adv			دست‌کم (اگر نگوییم بیشتر)، لااقل	دست‌کم (اگر نگوییم بیشتر)	function	parts:moins
+pour autant	adv			با این حال (با نفی)	با این حال (با نفی)	function
+cela dit	adv			با این حرف‌ها، با وجود این	با این حرف‌ها	function
+en somme	adv			روی هم رفته، خلاصه	روی هم رفته	function	parts:somme
+dès lors	adv			از آن پس، بنابراین	از آن پس	function	parts:dès
+faute de	prep			به دلیلِ نبودِ، در نبودِ	به دلیلِ نبودِ	function
+à l'égard de	prep			نسبت به، در قبالِ	نسبت به	function
+vis-à-vis de	prep			در برابرِ، نسبت به (کسی)	در برابرِ	function
+au sein de	prep			در درونِ، در میانِ (گروه)	در درونِ	society
+en dépit de	prep			به‌رغمِ	به‌رغمِ	function	register:formal
+au fur et à mesure	adv			کم‌کم و هم‌زمان، به تدریج (همراه با)	کم‌کم و هم‌زمان	time
+à mesure que	conj			هر چه (بیشتر) ...، به نسبتی که	هر چه (بیشتر) ...	time	parts:mesure
+hélas	interj			افسوس، متأسفانه	افسوس	feelings
+pis	adv			بدتر	بدتر	function	mastery:recognize
+par-dessus	prep			از رویِ	از رویِ	space
+au-dessous	adv			پایینِ (چیزی)، زیرتر	پایینِ (چیزی)	space
+ci-dessus	adv			بالا (در همین متن)	بالا (در همین متن)	education
+ci-dessous	adv			پایین (در همین متن)	پایین (در همین متن)	education
+vaguement	adv			به‌طور مبهم، تا حدی	به‌طور مبهم	function
+longuement	adv			به‌تفصیل، مدتی طولانی	به‌تفصیل	time
+soigneusement	adv			با دقت، با وسواس	با دقت	qualities
+réellement	adv			به‌راستی، در واقعیت	به‌راستی	function
+gravement	adv			به‌شدت (بیماری یا زخم)	به‌شدت (بیماری یا زخم)	health
+nettement	adv			به‌روشنی، خیلی (بیشتر یا کمتر)	به‌روشنی	function
+volontairement	adv			عمداً، داوطلبانه	عمداً	actions
+vivement	adv			با شور، به‌شدت (امیدوارم)	با شور	feelings
+constamment	adv			پیوسته، همواره	پیوسته	time
+infiniment	adv			بی‌نهایت، بسیار	بی‌نهایت	function
+terriblement	adv			به‌طرز وحشتناکی، به‌شدت	به‌طرز وحشتناکی	function
+sincèrement	adv			صادقانه، از ته دل	صادقانه	feelings
+discrètement	adv			یواشکی، پنهانی	یواشکی	actions
+violemment	adv			با خشونت	با خشونت	actions
+brutalement	adv			بی‌رحمانه، به‌یکباره	بی‌رحمانه	actions
+machinalement	adv			بی‌اختیار، ماشین‌وار	بی‌اختیار	actions
+personnellement	adv			شخصاً	شخصاً	people
+définitivement	adv			برای همیشه، به‌طور قطعی	برای همیشه	time
+largement	adv			به‌مقدار زیاد، به‌وفور	به‌مقدار زیاد	numbers
+amplement	adv			به‌حد وفور، بیش از کافی	به‌حد وفور	numbers	mastery:recognize
+davantage que	conj			بیش از آنکه	بیش از آنکه	function	parts:davantage
+plutôt que	conj			به جای اینکه	به جای اینکه	function	parts:plutôt
+alors que	conj			در حالی که، با آنکه	در حالی که	function	parts:alors
+étant donné que	conj			با توجه به اینکه	با توجه به اینکه	function
+vu que	conj			از آنجا که، با توجه به	از آنجا که	function
+
+# everyday phrases of B2 built on A1 to B1 words (phrases with a B2 word follow that word)
+avoir le cafard	phrase			دلگیر بودن، غمباد گرفتن	افسرده	feelings	register:familier	parts:avoir
+avoir du pain sur la planche	phrase			کلی کار سرِ دست داشتن	کلی کار سرِ دست داشتن	work	parts:avoir pain planche
+avoir le dernier mot	phrase			حرف آخر را زدن	حرف آخر را زدن	people	parts:avoir dernier mot
+avoir le vent en poupe	phrase			بخت یار بودن	بخت یار بودن	abstract	parts:avoir vent	mastery:recognize
+avoir l'esprit ouvert	phrase			روشن‌فکر بودن، پذیرا بودن	روشن‌فکر بودن	character	parts:avoir esprit ouvert
+avoir les yeux plus gros que le ventre	phrase			بیش از توان خود خواستن	بیش از توان خود خواستن	food	parts:avoir œil gros ventre
+être dans la lune	phrase			حواس‌پرت بودن	حواس‌پرت بودن	character	parts:être lune
+être à bout	phrase			به آخر خط رسیدن، از پا افتادن	به آخر خط رسیدن	feelings	parts:être bout
+être dans le pétrin	phrase			در هچل افتادن	دردسر داشتن	feelings	register:familier	parts:être
+être de mauvaise foi	phrase			بی‌انصاف بودن (در بحث)	بی‌انصاف بودن (در بحث)	character	parts:être mauvais foi
+être pris de court	phrase			غافلگیر شدن (بی‌فرصت)	غافلگیر شدن (بی‌فرصت)	abstract	parts:être prendre court
+être à la hauteur	phrase			از عهده برآمدن، در حد انتظار بودن	از عهده برآمدن	abstract	parts:être hauteur
+être en mesure de	phrase			توانایی (کاری را) داشتن	توانایی (کاری را) داشتن	abstract	parts:être mesure
+être au point	phrase			آماده و بی‌نقص بودن	آماده و بی‌نقص بودن	abstract	parts:être point
+faire la queue leu leu	phrase			پشت سر هم رفتن	پشت سر هم رفتن	actions	parts:faire queue	mastery:recognize
+faire le point	phrase			جمع‌بندی کردن (وضعیت)	جمع‌بندی کردن (وضعیت)	abstract	parts:faire point
+faire appel à	phrase			متوسل شدن به، کمک گرفتن از	متوسل شدن به	abstract	parts:faire appel
+faire preuve de	phrase			نشان دادن (صفتی در عمل)	نشان دادن (صفتی در عمل)	character	parts:faire preuve
+faire part de	phrase			اطلاع دادن (رسمی)	اطلاع دادن (رسمی)	media	parts:faire part
+faire l'objet de	phrase			موضوعِ ... بودن	موضوعِ ... بودن	abstract	parts:faire objet
+faire la sourde oreille	phrase			خود را به نشنیدن زدن	خود را به نشنیدن زدن	people	parts:faire sourd oreille
+faire chanter	phrase			باج‌گیری کردن	باج‌گیری کردن	society	parts:faire chanter
+faire du chantage	phrase			حق‌السکوت گرفتن، باج‌خواهی کردن	حق‌السکوت گرفتن	society	parts:faire
+faire des histoires	phrase			شلوغش کردن، قشقرق راه انداختن	شلوغش کردن	feelings	parts:faire histoire
+faire table rase	phrase			از صفر شروع کردن	از صفر شروع کردن	abstract	parts:faire table
+faire fausse route	phrase			راه را اشتباه رفتن	راه را اشتباه رفتن	abstract	parts:faire faux route
+faire la une	phrase			تیتر اول شدن	تیتر اول شدن	media	parts:faire
+faire ses preuves	phrase			لیاقت خود را ثابت کردن	لیاقت خود را ثابت کردن	work	parts:faire preuve
+mettre en œuvre	phrase			اجرا کردن (طرح)	اجرا کردن (طرح)	work	parts:mettre œuvre
+mettre en valeur	phrase			برجسته کردن، به چشم آوردن	برجسته کردن	abstract	parts:mettre valeur
+mettre en cause	phrase			زیر سؤال بردن، مقصر دانستن	زیر سؤال بردن	abstract	parts:mettre cause
+mettre en scène	phrase			کارگردانی کردن (نمایش)	کارگردانی کردن (نمایش)	culture	parts:mettre scène
+mettre la pression	phrase			فشار آوردن (روی کسی)	فشار آوردن (روی کسی)	feelings	parts:mettre pression
+mettre les points sur les i	phrase			حرف را صاف و روشن زدن	حرف را صاف و روشن زدن	abstract	parts:mettre point
+prendre en compte	phrase			در نظر گرفتن (عامل)	در نظر گرفتن (عامل)	abstract	parts:prendre compte
+prendre conscience	phrase			آگاه شدن (از)	آگاه شدن (از)	abstract	parts:prendre conscience
+prendre congé	phrase			خداحافظی کردن (رسمی)	خداحافظی کردن (رسمی)	people	parts:prendre congé
+prendre le dessus	phrase			غلبه کردن، دست بالا را گرفتن	غلبه کردن	abstract	parts:prendre dessus
+prendre la relève	phrase			جانشین شدن، کار را ادامه دادن	جانشین شدن	work	parts:prendre
+prendre du recul	phrase			فاصله گرفتن (برای دیدن بهتر)	فاصله گرفتن (برای دیدن بهتر)	abstract	parts:prendre
+prendre son courage à deux mains	phrase			دل به دریا زدن	دل به دریا زدن	feelings	parts:prendre courage main
+prendre la mouche	phrase			زود رنجیدن	زود رنجیدن	feelings	parts:prendre mouche
+donner suite à	phrase			پیگیری کردن (درخواست)	پیگیری کردن (درخواست)	work	parts:donner suite
+donner lieu à	phrase			باعث شدن، زمینه‌ساز بودن	باعث شدن	abstract	parts:donner lieu
+donner le feu vert	phrase			چراغ سبز نشان دادن	چراغ سبز نشان دادن	abstract	parts:donner feu vert
+tenir tête	phrase			ایستادگی کردن (در برابر کسی)	ایستادگی کردن (در برابر کسی)	people	parts:tenir tête
+tenir sa langue	phrase			زبان به دهان گرفتن	زبان به دهان گرفتن	people	parts:tenir langue
+tirer des conclusions	phrase			نتیجه گرفتن	نتیجه گرفتن	abstract	parts:tirer conclusion
+porter ses fruits	phrase			به ثمر نشستن	به ثمر نشستن	abstract	parts:porter fruit
+poser problème	phrase			مشکل‌ساز بودن	مشکل‌ساز بودن	abstract	parts:poser problème
+passer inaperçu	phrase			به چشم نیامدن	به چشم نیامدن	abstract	parts:passer
+mener une enquête	phrase			تحقیق کردن (رسمی)	تحقیق کردن (رسمی)	society	parts:mener enquête
+mener à bien	phrase			به سرانجام رساندن	به سرانجام رساندن	work	parts:mener bien
+rendre compte de	phrase			گزارش دادن از	گزارش دادن از	work	parts:rendre compte
+se rendre	phrase			تسلیم شدن، رفتن (به جایی)	تسلیم شدن	society	parts:rendre
+se rendre utile	phrase			مفید واقع شدن	مفید واقع شدن	abstract	parts:rendre utile
+s'en vouloir	phrase			خود را سرزنش کردن	خود را سرزنش کردن	feelings	parts:vouloir
+s'en moquer	verb			اهمیت ندادن، بی‌اعتنا بودن	اهمیت ندادن	feelings
+s'en ficher	verb			برایش مهم نبودن	اهمیت ندادن	feelings	register:familier
+ne pas être dans son assiette	phrase			حال (کسی) خوب نبودن	حال (کسی) خوب نبودن	health	parts:assiette
+ne rien avoir à voir avec	phrase			هیچ ربطی نداشتن به	هیچ ربطی نداشتن به	abstract	parts:avoir voir
+ne pas en revenir	phrase			باورش نشدن (از تعجب)	باورش نشدن (از تعجب)	feelings	parts:revenir
+ne pas avoir froid aux yeux	phrase			نترس بودن	نترس بودن	character	parts:avoir froid œil
+coup de théâtre	noun	m	coups de théâtre	اتفاق غیرمنتظره، پیچ داستان	اتفاق غیرمنتظره	culture	parts:coup théâtre
+coup de pouce	noun	m	coups de pouce	کمک کوچک، تلنگر	کمک کوچک	people	parts:coup pouce
+coup de tête	noun	m	coups de tête	تصمیم ناگهانی	تصمیم ناگهانی	abstract	parts:coup tête
+coup de chance	noun	m	coups de chance	شانس (یکباره)	شانس (یکباره)	abstract	parts:coup chance
+coup d'État	noun	m	coups d'État	کودتا	کودتا	society	parts:coup état-2
+tour de force	noun	m	tours de force	کار شاق، شاهکار	کار شاق	abstract	parts:tour-m force
+point fort	noun	m	points forts	نقطهٔ قوت	نقطهٔ قوت	abstract	parts:point fort
+point faible	noun	m	points faibles	نقطهٔ ضعف	نقطهٔ ضعف	abstract	parts:point faible
+prise de conscience	noun	f		آگاه شدن (جمعی)، بیداری	آگاه شدن (جمعی)	abstract	parts:prise conscience
+prise de position	noun	f		موضع‌گیری	موضع‌گیری	abstract	parts:prise position
+au fond de soi	adv			در دل، در درون	در دل	feelings	parts:fond
+à l'improviste	adv			سرزده، بی‌خبر	سرزده	time
+à tort	adv			به‌ناحق، به اشتباه	به‌ناحق	abstract	parts:tort
+à juste titre	adv			به‌حق	به‌حق	abstract	parts:juste titre
+en vue de	prep			به منظورِ	به منظورِ	function	parts:vue
+en raison de	prep			به دلیلِ (رسمی)	به دلیلِ (رسمی)	function	parts:raison
+à la suite de	prep			در پیِ، به دنبالِ	در پیِ	time	parts:suite
+au détriment de	prep			به زیانِ	به زیانِ	abstract	register:formal
+à l'origine de	prep			منشأِ، عاملِ	منشأِ	abstract	parts:origine
+dans le cadre de	prep			در چارچوبِ	در چارچوبِ	abstract	parts:cadre
+sur le plan	prep			از نظرِ، در زمینهٔ	از نظرِ	abstract	parts:plan
+de plus	adv			علاوه بر این	علاوه بر این	function	parts:plus
+de surcroît	adv			افزون بر این	افزون بر این	function	register:formal
+tant bien que mal	adv			به هر زحمتی، کج‌دار و مریز	به هر زحمتی	abstract	parts:tant bien mal
+tôt ou tard	adv			دیر یا زود	دیر یا زود	time	parts:tôt tard
+au fur et à mesure que	conj			همان‌طور که، به موازاتِ	همان‌طور که	time	parts:mesure
+sur-le-champ	adv			بی‌درنگ، در دم	بی‌درنگ	time
+par cœur	adv			از بر	از بر	education	parts:cœur
+à merveille	adv			به‌خوبیِ تمام	به‌خوبیِ تمام	qualities	parts:merveille
+à bout de souffle	adj			از نفس افتاده	از نفس افتاده	body	parts:bout souffle
+sain et sauf	adj			صحیح و سالم	صحیح و سالم	health	parts:sain sauf
+bel et bien	adv			واقعاً، به‌راستی	واقعاً	function	parts:bien
+il était temps	phrase			وقتش بود!	وقتش بود!	time	parts:temps
+il n'en est pas question	phrase			اصلاً حرفش را هم نزن، امکان ندارد	اصلاً حرفش را هم نزن	abstract	parts:question
+il va de soi	phrase			بدیهی است	بدیهی است	abstract	parts:aller
+il s'en faut de peu	phrase			چیزی نمانده بود	چیزی نمانده بود	abstract	parts:falloir peu
+ça me tient à cœur	phrase			برایم خیلی مهم است	برایم خیلی مهم است	feelings	parts:tenir cœur
+ça ne sert à rien	phrase			فایده‌ای ندارد	فایده‌ای ندارد	abstract	parts:servir
+ça tombe bien	phrase			به‌موقع شد، چه خوب شد	به‌موقع شد	abstract	parts:tomber bien
+il pleut des cordes	phrase			باران شدید می‌بارد	باران شدید می‌بارد	weather	parts:pleuvoir corde
+couper court	phrase			زود تمام کردن (گفت‌وگو)	زود تمام کردن (گفت‌وگو)	people	parts:couper court
+casser les pieds	phrase			حوصلهٔ (کسی را) سر بردن	مزاحم شدن	feelings	parts:casser pied	register:familier
+mettre les bouchées doubles	phrase			تندتر کار کردن	تندتر کار کردن	work	parts:mettre double	mastery:recognize
+monter sur ses grands chevaux	phrase			از کوره در رفتن (با غرور)	از کوره در رفتن (با غرور)	feelings	parts:monter grand cheval	mastery:recognize
+couper les cheveux en quatre	phrase			مو را از ماست کشیدن	مو را از ماست کشیدن	character	parts:couper cheveu quatre
+tomber des nues	phrase			شاخ درآوردن (از تعجب)	شاخ درآوردن (از تعجب)	feelings	parts:tomber	mastery:recognize
+tomber à pic	phrase			درست به‌موقع رسیدن	درست به‌موقع رسیدن	time	parts:tomber
+tomber dans les pommes	phrase			غش کردن	غش کردن	health	parts:tomber pomme	register:familier
+appeler un chat un chat	phrase			رک حرف زدن	رک حرف زدن	people	parts:appeler chat
+avoir le coup de foudre	phrase			در نگاه اول عاشق شدن	در نگاه اول عاشق شدن	feelings	parts:avoir
+avoir le bras long	phrase			پارتی داشتن، نفوذ داشتن	پارتی داشتن	society	parts:avoir bras long
+avoir la main verte	phrase			دست به گل داشتن	دست به گل داشتن	nature	parts:avoir main vert
+avoir une dent contre	phrase			از کسی کینه به دل داشتن	از کسی کینه به دل داشتن	feelings	parts:avoir dent
+avoir la tête sur les épaules	phrase			عاقل و سربه‌راه بودن	عاقل و سربه‌راه بودن	character	parts:avoir tête épaule
+avoir un trou de mémoire	phrase			یک لحظه یادِ چیزی نیامدن	یک لحظه یادِ چیزی نیامدن	abstract	parts:avoir trou mémoire
+avoir carte blanche	phrase			اختیار تام داشتن	اختیار تام داشتن	work	parts:avoir carte blanc
+avoir son mot à dire	phrase			حقِ اظهار نظر داشتن	حقِ اظهار نظر داشتن	society	parts:avoir mot dire
+avoir les pieds sur terre	phrase			واقع‌بین بودن	واقع‌بین بودن	character	parts:avoir pied terre
+avoir un cœur d'or	phrase			دلِ پاک و مهربان داشتن	دلِ پاک و مهربان داشتن	character	parts:avoir cœur or
+avoir une mémoire d'éléphant	phrase			حافظهٔ خیلی قوی داشتن	حافظهٔ خیلی قوی داشتن	abstract	parts:avoir mémoire éléphant
+être à court de	phrase			کم آوردنِ (چیزی)	کم آوردنِ (چیزی)	actions	parts:être court
+être aux anges	phrase			در پوست خود نگنجیدن	در پوست خود نگنجیدن	feelings	parts:être ange
+être dans le même bateau	phrase			در یک کشتی بودن، گرفتاریِ مشترک داشتن	در یک کشتی بودن	society	parts:être même bateau
+être sur le point de	phrase			در آستانهٔ (کاری) بودن	در آستانهٔ (کاری) بودن	time	parts:être point
+être en jeu	phrase			در میان بودن، در خطر بودن	در میان بودن	abstract	parts:être jeu
+être bien dans sa peau	phrase			با خود راحت بودن	با خود راحت بودن	feelings	parts:être bien peau
+être mal dans sa peau	phrase			با خود کنار نیامدن	با خود کنار نیامدن	feelings	parts:être mal peau
+faire la part des choses	phrase			منصفانه سنجیدن، سره و ناسره را جدا کردن	منصفانه سنجیدن	abstract	parts:faire part chose
+faire le poids	phrase			از پسِ رقیب برآمدن، هم‌وزن بودن	از پسِ رقیب برآمدن	abstract	parts:faire poids
+faire son possible	phrase			هر کاری از دست برمی‌آید کردن	هر کاری از دست برمی‌آید کردن	actions	parts:faire possible
+faire d'une pierre deux coups	phrase			با یک تیر دو نشان زدن	با یک تیر دو نشان زدن	actions	parts:faire pierre deux coup
+faire un tabac	phrase			غوغا کردن، گل کردن	غوغا کردن	culture	parts:faire tabac
+faire le malin	phrase			خودنمایی کردن، زرنگ‌بازی درآوردن	خودنمایی کردن	character	parts:faire malin
+faire froid dans le dos	phrase			مو به تن راست کردن	مو به تن راست کردن	feelings	parts:faire froid dos
+faire bonne impression	phrase			تأثیر خوب گذاشتن	تأثیر خوب گذاشتن	society	parts:faire bon impression
+faire son chemin	phrase			کم‌کم جا افتادن، پیش رفتن	کم‌کم جا افتادن	abstract	parts:faire chemin
+faire marcher	phrase			سرِ کار گذاشتن، دست انداختن	سرِ کار گذاشتن	society	parts:faire marcher
+faire le nécessaire	phrase			کارِ لازم را انجام دادن	کارِ لازم را انجام دادن	actions	parts:faire nécessaire
+mettre à l'épreuve	phrase			محک زدن، آزمودن	محک زدن	actions	parts:mettre épreuve
+mettre au point	phrase			تنظیم کردن، کامل کردنِ (طرح)	تنظیم کردن	science	parts:mettre point
+mettre en doute	phrase			تردید کردن در	تردید کردن در	abstract	parts:mettre doute
+mettre de l'ordre	phrase			سروسامان دادن	سروسامان دادن	home	parts:mettre ordre
+mettre la main sur	phrase			به چنگ آوردن، پیدا کردن	به چنگ آوردن	actions	parts:mettre main
+mettre le doigt sur	phrase			انگشت گذاشتن روی (مشکل)	انگشت گذاشتن روی (مشکل)	abstract	parts:mettre doigt
+mettre de l'eau dans son vin	phrase			کوتاه آمدن، ملایم‌تر شدن	کوتاه آمدن	character	parts:mettre eau vin
+prendre la défense de	phrase			طرفِ کسی را گرفتن	طرفِ کسی را گرفتن	society	parts:prendre défense
+prendre au pied de la lettre	phrase			تحت‌اللفظی برداشت کردن	تحت‌اللفظی برداشت کردن	media	parts:prendre pied lettre
+prendre les choses en main	phrase			کار را به دست گرفتن	کار را به دست گرفتن	work	parts:prendre chose main
+prendre goût à	phrase			مزهٔ (چیزی) زیرِ دندان رفتن	مزهٔ (چیزی) زیرِ دندان رفتن	feelings	parts:prendre goût
+perdre de vue	phrase			از نظر دور داشتن، ارتباط را از دست دادن	از نظر دور داشتن	abstract	parts:perdre vue
+perdre le fil	phrase			رشتهٔ کلام را گم کردن	رشتهٔ کلام را گم کردن	media	parts:perdre fil
+perdre la face	phrase			آبروی خود را از دست دادن	آبروی خود را از دست دادن	society	parts:perdre face
+sauver la face	phrase			آبروی خود را حفظ کردن	آبروی خود را حفظ کردن	society	parts:sauver face
+garder la tête froide	phrase			سرِ عقل ماندن، خونسرد ماندن	سرِ عقل ماندن	character	parts:garder tête froid
+tenir le choc	phrase			زیرِ فشار نشکستن	زیرِ فشار نشکستن	feelings	parts:tenir choc
+tenir à l'œil	phrase			زیرِ نظر داشتن	زیرِ نظر داشتن	actions	parts:tenir œil
+tourner mal	phrase			بد از آب درآمدن	بد از آب درآمدن	abstract	parts:tourner mal
+tourner en rond	phrase			درجا زدن	درجا زدن	abstract	parts:tourner rond
+jouer le jeu	phrase			پا به پای بقیه آمدن، طبقِ قاعده بازی کردن	پا به پای بقیه آمدن	society	parts:jouer jeu
+jouer avec le feu	phrase			با دُمِ شیر بازی کردن	با دُمِ شیر بازی کردن	actions	parts:jouer feu
+jeter l'argent par les fenêtres	phrase			پول را دور ریختن، ولخرجی کردن	پول را دور ریختن	economy	parts:jeter argent fenêtre
+briser la glace	phrase			یخِ جمع را آب کردن	یخِ جمع را آب کردن	society	parts:briser glace
+remonter le moral	phrase			روحیه دادن	روحیه دادن	feelings	parts:remonter moral
+ouvrir l'œil	phrase			چشم‌ها را باز کردن، هوشیار بودن	چشم‌ها را باز کردن	actions	parts:ouvrir œil
+fermer les yeux sur	phrase			چشم‌پوشی کردن از	چشم‌پوشی کردن از	society	parts:fermer œil
+sauter aux yeux	phrase			توی چشم زدن، آشکار بودن	توی چشم زدن	abstract	parts:sauter œil
+couper les ponts	phrase			قطعِ رابطه کردن	قطعِ رابطه کردن	society	parts:couper-2 pont
+en venir aux mains	phrase			دست به یقه شدن	دست به یقه شدن	society	parts:venir main
+en faire trop	phrase			شورش را درآوردن	شورش را درآوردن	actions	parts:faire trop
+n'en faire qu'à sa tête	phrase			به حرفِ کسی گوش ندادن، کارِ خود را کردن	به حرفِ کسی گوش ندادن	character	parts:faire tête
+ne tenir qu'à un fil	phrase			به مویی بند بودن	به مویی بند بودن	abstract	parts:tenir fil
+à première vue	phrase			در نگاهِ اول	در نگاهِ اول	abstract	parts:premier vue
+à bras ouverts	phrase			با آغوشِ باز	با آغوشِ باز	feelings	parts:bras ouvert
+de bonne foi	phrase			با حسن نیت	با حسن نیت	character	parts:bon foi
+en fin de compte	phrase			آخرِ کار، در جمع‌بندی	آخرِ کار	abstract	parts:fin compte-2
+en connaissance de cause	phrase			آگاهانه، با علم به قضیه	آگاهانه	abstract	parts:connaissance cause
+en premier lieu	phrase			در وهلهٔ اول	در وهلهٔ اول	function	parts:premier lieu
+en matière de	phrase			در زمینهٔ، در خصوصِ	در زمینهٔ	function	parts:matière
+dans la mesure où	phrase			تا جایی که، از آنجا که	تا جایی که	function	parts:mesure où
+compte tenu de	phrase			با در نظر گرفتنِ	با در نظر گرفتنِ	function	parts:compte-2 tenir
+sous prétexte que	phrase			به بهانهٔ این‌که	به بهانهٔ این‌که	function	parts:prétexte
+au même titre que	phrase			هم‌پایهٔ، درست مانندِ	هم‌پایهٔ	function	parts:même titre
+du jour au lendemain	phrase			یک‌شبه	یک‌شبه	time	parts:jour lendemain
+une fois pour toutes	phrase			یک بار برای همیشه	یک بار برای همیشه	time	parts:fois
+petit à petit	phrase			کم‌کم، ذره‌ذره	کم‌کم	time	parts:petit
+d'un commun accord	phrase			با توافقِ همه	با توافقِ همه	society	parts:commun accord
+de bouche à oreille	phrase			دهان‌به‌دهان	دهان‌به‌دهان	media	parts:bouche oreille
+la cerise sur le gâteau	phrase			حُسنِ ختام، بهتر از همه	حُسنِ ختام	food	parts:cerise gâteau
+un mal pour un bien	phrase			خیر در آنچه پیش آید	خیر در آنچه پیش آید	abstract	parts:mal bien
+une goutte d'eau dans la mer	phrase			قطره‌ای در دریا	قطره‌ای در دریا	abstract	parts:goutte eau mer
+un coup dur	phrase			ضربهٔ سخت (روحی)	ضربهٔ سخت (روحی)	feelings	parts:coup dur
+chacun son goût	phrase			سلیقه‌ها فرق دارد	سلیقه‌ها فرق دارد	culture	parts:goût
+ça ne me regarde pas	phrase			به من ربطی ندارد	به من ربطی ندارد	society	parts:regarder
+on verra bien	phrase			می‌بینیم چه می‌شود	می‌بینیم چه می‌شود	time	parts:voir bien
+ce n'est pas la mer à boire	phrase			آن‌قدرها هم سخت نیست	آن‌قدرها هم سخت نیست	abstract	parts:mer boire
+il fait un temps de chien	phrase			هوا خیلی بد است	هوا خیلی بد است	weather	parts:faire temps chien
+donner sa langue au chat	phrase			(در حدس زدن) تسلیم شدن	(در حدس زدن) تسلیم شدن	leisure	parts:donner langue chat
+rester bouche bée	phrase			مات و مبهوت ماندن	مات و مبهوت ماندن	feelings	parts:rester bouche
+rester les bras croisés	phrase			دست روی دست گذاشتن	دست روی دست گذاشتن	actions	parts:rester bras croiser
+se casser la tête	phrase			خیلی فکر کردن، مغز را خسته کردن	خیلی فکر کردن	abstract	parts:casser tête
+se faire une idée	phrase			تصوری پیدا کردن	تصوری پیدا کردن	abstract	parts:faire idée
+se mettre à la place de	phrase			خود را جای کسی گذاشتن	خود را جای کسی گذاشتن	feelings	parts:mettre place
+se serrer les coudes	phrase			پشتِ هم را داشتن	پشتِ هم را داشتن	society	parts:serrer coude
+s'en tenir à	phrase			به (چیزی) بسنده کردن	به (چیزی) بسنده کردن	abstract	parts:tenir
+s'en prendre à	phrase			به کسی پیله کردن، تقصیر را گردنِ کسی انداختن	به کسی پیله کردن	society	parts:prendre
+se donner du mal	phrase			به خود زحمت دادن	به خود زحمت دادن	actions	parts:donner mal
+se tirer d'affaire	phrase			از مخمصه رهایی یافتن	از مخمصه رهایی یافتن	actions	parts:tirer-2 affaire
+se poser des questions	phrase			از خود پرسیدن، دودل شدن	از خود پرسیدن	abstract	parts:poser question
+se jeter à l'eau	phrase			دل به دریا زدن	دل به دریا زدن	character	parts:jeter eau
+valoir de l'or	phrase			خیلی ارزشمند بودن	خیلی ارزشمند بودن	economy	parts:valoir or
+vivre au jour le jour	phrase			بی‌برنامه برای فردا زندگی کردن	بی‌برنامه برای فردا زندگی کردن	time	parts:vivre jour
+voir le jour	phrase			پدید آمدن، به دنیا آمدن	پدید آمدن	time	parts:voir jour
+voir les choses en face	phrase			با واقعیت روبه‌رو شدن	با واقعیت روبه‌رو شدن	abstract	parts:voir chose face
+voir rouge	phrase			از کوره در رفتن	از کوره در رفتن	feelings	parts:voir rouge
+y voir clair	phrase			سر درآوردن، اوضاع را روشن دیدن	سر درآوردن	abstract	parts:voir clair
+aller droit au but	phrase			سرِ اصلِ مطلب رفتن	سرِ اصلِ مطلب رفتن	media	parts:aller droit-2 but
+marcher sur des œufs	phrase			خیلی با احتیاط رفتار کردن	خیلی با احتیاط رفتار کردن	society	parts:marcher œuf
+chercher midi à quatorze heures	phrase			کارِ ساده را پیچیده کردن	کارِ ساده را پیچیده کردن	abstract	parts:chercher midi quatorze heure
+reprendre le dessus	phrase			دوباره سرپا شدن	دوباره سرپا شدن	health	parts:reprendre dessus
+tomber sous le sens	phrase			بدیهی بودن	بدیهی بودن	abstract	parts:tomber sens
+tomber à l'eau	phrase			نقش بر آب شدن	نقش بر آب شدن	abstract	parts:tomber eau
+passer sous silence	phrase			مسکوت گذاشتن	مسکوت گذاشتن	media	parts:passer silence
+prêter attention	phrase			توجه نشان دادن	توجه نشان دادن	actions	parts:prêter attention
+mener la vie dure	phrase			به کسی سخت گرفتن	به کسی سخت گرفتن	society	parts:mener vie dur
+
+# the commonest verbs still missing (mostly written French)
+parvenir	verb			موفق شدن (به)، رسیدن (به)	موفق شدن (به)	actions	coll:parvenir à faire → از پسِ انجامش برآمدن
+éprouver	verb			احساس کردن (عاطفه)، تجربه کردن	احساس کردن (عاطفه)	feelings
+relever	verb			بلند کردن (دوباره)، برشمردن (اشتباه)	بلند کردن (دوباره)	actions
+se relever	verb			از زمین بلند شدن	از زمین بلند شدن	actions
+dégager	verb			آزاد کردن (راه)، پراکندن (بو)	آزاد کردن (راه)	actions
+demeurer	verb			ماندن، سکونت داشتن	ماندن	home	register:formal
+murmurer	verb			زمزمه کردن، آهسته گفتن	زمزمه کردن	actions
+chuchoter	verb			پچ‌پچ کردن، در گوشی گفتن	پچ‌پچ کردن	actions
+songer	verb			اندیشیدن، در خیال داشتن	اندیشیدن	abstract	register:formal
+enfoncer	verb			فرو کردن، شکستن (در)	فرو کردن	actions
+presser	verb			فشردن، عجله دادن	فشردن	actions
+se presser	verb			عجله کردن	عجله کردن	time
+dresser	verb			برپا کردن، تربیت کردن (حیوان)	برپا کردن	actions
+écarter	verb			کنار زدن، از هم باز کردن	کنار زدن	actions
+pénétrer	verb			وارد شدن (به‌زور)، نفوذ کردن	وارد شدن (به‌زور)	actions
+achever	verb			به پایان رساندن، تمام کردن (کاری بزرگ)	به پایان رساندن	actions	register:formal
+disposer	verb			در اختیار داشتن، چیدن	در اختیار داشتن	abstract	coll:disposer de temps → وقت داشتن
+agiter	verb			تکان دادن (تند)، آشفته کردن	تکان دادن (تند)	actions
+refermer	verb			دوباره بستن	دوباره بستن	actions
+prétendre	verb			ادعا کردن	ادعا کردن	abstract	note:prétendre یعنی «ادعا کردن»، نه «تظاهر کردن» (تظاهر کردن = faire semblant).
+pendre	verb			آویختن، به دار آویختن	آویختن	actions
+abattre	verb			انداختن (درخت)، کشتن (با تیر)	انداختن (درخت)	actions
+se contenter	verb			قانع بودن، بسنده کردن	قانع بودن	feelings
+claquer	verb			محکم بستن (در)، سیلی زدن	محکم بستن (در)	actions
+étouffer	verb			خفه کردن، نفس تنگی گرفتن	خفه کردن	health
+faillir	verb			نزدیک بود (که کاری بشود)	نزدیک بود (که کاری بشود)	actions	coll:j'ai failli tomber → نزدیک بود بیفتم
+coincer	verb			گیر انداختن، گیر کردن	گیر انداختن	actions
+remuer	verb			هم زدن، تکان دادن (آرام)	هم زدن	actions
+repousser	verb			پس زدن، به تعویق انداختن	پس زدن	actions
+détacher	verb			باز کردن (گره یا بند)، جدا کردن	باز کردن (گره یا بند)	actions
+évoquer	verb			یادآوری کردن، اشاره کردن (به موضوع)	یادآوری کردن	abstract
+surgir	verb			ناگهان پیدا شدن، سر برآوردن	ناگهان پیدا شدن	actions
+franchir	verb			گذشتن از (مرز یا مانع)، پشت سر گذاشتن	گذشتن از (مرز یا مانع)	space
+lier	verb			پیوند دادن، بستن (به هم)	پیوند دادن	abstract
+avoir les mains liées	phrase			دستِ کسی بسته بودن	دستِ کسی بسته بودن	society	parts:avoir main lier
+recouvrir	verb			پوشاندن (کامل)، روکش کردن	پوشاندن (کامل)	actions
+désigner	verb			نشان دادن (با اشاره)، تعیین کردن (کسی)	نشان دادن (با اشاره)	abstract
+soupirer	verb			آه کشیدن	آه کشیدن	feelings
+envahir	verb			هجوم آوردن، اشغال کردن	هجوم آوردن	society
+cracher	verb			تف کردن	تف کردن	body
+hausser	verb			بالا انداختن (شانه)، بلند کردن (صدا)	بالا انداختن (شانه)	body	coll:hausser les épaules → شانه بالا انداختن
+redresser	verb			صاف کردن، راست کردن	صاف کردن	actions
+contempler	verb			تماشا کردن (با تأمل)، خیره شدن	تماشا کردن (با تأمل)	actions	mastery:recognize
+éveiller	verb			بیدار کردن (حس یا کنجکاوی)، برانگیختن	بیدار کردن (حس یا کنجکاوی)	feelings	register:formal
+foncer	verb			با سرعت رفتن، هجوم بردن	با سرعت رفتن	actions	coll:fonce ! → برو! بپر!
+figurer	verb			وجود داشتن (در فهرست)، آمدن (در متن)	وجود داشتن (در فهرست)	abstract
+se figurer	verb			تصور کردن، خیال کردن	تصور کردن	abstract
+vêtir	verb			پوشاندن (لباس)	پوشاندن (لباس)	clothes	mastery:recognize
+régner	verb			حکومت کردن، حاکم بودن (سکوت)	حکومت کردن	society
+retomber	verb			دوباره افتادن، فرود آمدن	دوباره افتادن	actions
+étaler	verb			پهن کردن، مالیدن (کره)	پهن کردن	actions
+détourner	verb			منحرف کردن، ربودن (هواپیما)	منحرف کردن	actions
+noyer	verb			غرق کردن	غرق کردن	nature
+se noyer	verb			غرق شدن	غرق شدن	nature
+se fâcher	verb			دلخور شدن، قهر کردن (با کسی)	دلخور شدن	feelings
+bénir	verb			برکت دادن، دعا کردن (برای کسی)	برکت دادن	culture
+priver	verb			محروم کردن	محروم کردن	abstract
+viser	verb			نشانه گرفتن، هدف داشتن	نشانه گرفتن	actions
+répandre	verb			پخش کردن، ریختن (روی زمین)	پخش کردن	actions
+opposer	verb			در برابر هم قرار دادن	در برابر هم قرار دادن	abstract
+s'opposer	verb			مخالفت کردن	مخالفت کردن	society
+pointer	verb			نشانه رفتن، حضوری زدن (کارت)	نشانه رفتن	actions
+constituer	verb			تشکیل دادن، به وجود آوردن	تشکیل دادن	abstract
+tarder	verb			دیر کردن، طول کشیدن	دیر کردن	time
+cogner	verb			کوبیدن، خوردن (به چیزی)	کوبیدن	actions
+jouir	verb			بهره‌مند بودن، لذت بردن (از)	بهره‌مند بودن	feelings	register:formal
+débarquer	verb			پیاده شدن (از کشتی)، سر رسیدن (ناگهانی)	پیاده شدن (از کشتی)	transport
+dissimuler	verb			پنهان کردن (احساس)، کتمان کردن	پنهان کردن (احساس)	abstract
+guetter	verb			کمین کردن، چشم به راه بودن	کمین کردن	actions
+regagner	verb			بازگشتن به، دوباره به دست آوردن	بازگشتن به	space
+embarquer	verb			سوار شدن (کشتی یا هواپیما)، بار زدن	سوار شدن (کشتی یا هواپیما)	transport
+barrer	verb			بستن (راه)، خط زدن	بستن (راه)	actions
+ôter	verb			برداشتن، درآوردن (کلاه)	برداشتن	actions	register:formal
+user	verb			فرسودن، ساییدن	فرسودن	actions
+craquer	verb			ترق صدا کردن، کم آوردن (روحی)	ترق صدا کردن	feelings
+armer	verb			مسلح کردن	مسلح کردن	society
+percer	verb			سوراخ کردن	سوراخ کردن	actions
+incliner	verb			خم کردن، کج کردن	خم کردن	actions
+dévorer	verb			بلعیدن، با ولع خوردن	بلعیدن	food
+unir	verb			متحد کردن، یکی کردن	متحد کردن	society
+saigner	verb			خون آمدن، خونریزی کردن	خون آمدن	health
+enfiler	verb			پوشیدن (سریع)، نخ کردن (سوزن)	پوشیدن (سریع)	clothes
+redevenir	verb			دوباره شدن (به حال قبل)	دوباره شدن (به حال قبل)	abstract
+comporter	verb			شامل شدن، داشتن (بخش‌ها)	شامل شدن	abstract
+se comporter	verb			رفتار کردن	رفتار کردن	character
+soumettre	verb			ارائه دادن (برای بررسی)، تسلیم کردن	ارائه دادن (برای بررسی)	work
+puer	verb			بوی گند دادن	بوی بد دادن	body	register:familier
+entreprendre	verb			دست زدن به (کاری بزرگ)، آغاز کردن	دست زدن به (کاری بزرگ)	work
+exciter	verb			هیجان‌زده کردن، تحریک کردن	هیجان‌زده کردن	feelings
+troubler	verb			آشفته کردن، به هم زدن	آشفته کردن	feelings
+opérer	verb			عمل جراحی کردن، به اجرا درآوردن	عمل جراحی کردن	health
+tracer	verb			کشیدن (خط یا نقشه)	کشیدن (خط یا نقشه)	education
+s'emparer	verb			تصاحب کردن، چنگ انداختن (بر)	تصاحب کردن	actions
+ménager	verb			مراعات کردن، صرفه‌جویی کردن (در نیرو)	مراعات کردن	abstract
+envelopper	verb			پیچیدن (در کاغذ)، در بر گرفتن	پیچیدن (در کاغذ)	actions
+tailler	verb			تراشیدن، هرس کردن	تراشیدن	actions
+se dérouler	verb			برگزار شدن، جریان یافتن	برگزار شدن	society
+tordre	verb			پیچاندن، تاباندن	پیچاندن	actions
+s'écrouler	verb			فرو ریختن، از پا افتادن	فرو ریختن	actions
+s'écrier	verb			فریاد برآوردن، با هیجان گفتن	فریاد برآوردن	actions
+jaillir	verb			فوران کردن، بیرون جهیدن	فوران کردن	nature
+impliquer	verb			درگیر کردن، مستلزم بودن	درگیر کردن	abstract
+heurter	verb			برخورد کردن به، رنجاندن	برخورد کردن به	actions
+dénoncer	verb			لو دادن، افشا کردن	لو دادن	society
+percevoir	verb			درک کردن، دریافت کردن (پول)	درک کردن	abstract	register:formal
+se situer	verb			قرار داشتن (جایی)	قرار داشتن (جایی)	space
+situer	verb			جای (چیزی را) تعیین کردن	جای (چیزی را) تعیین کردن	space
+boucler	verb			بستن (چمدان یا کمربند)، تمام کردن (کار)	بستن (چمدان یا کمربند)	actions
+tremper	verb			خیس کردن، فرو بردن (در مایع)	خیس کردن	food
+consoler	verb			دلداری دادن، تسلی دادن	دلداری دادن	feelings
+destiner	verb			در نظر گرفتن (برای کسی)	در نظر گرفتن (برای کسی)	abstract
+déborder	verb			لبریز شدن، طغیان کردن	لبریز شدن	nature
+c'est la goutte d'eau qui fait déborder le vase	phrase			کارد به استخوان رسید	کارد به استخوان رسید	feelings	parts:goutte eau déborder vase	mastery:recognize
+précéder	verb			جلوتر آمدن، مقدم بودن	جلوتر آمدن	time
+ressortir	verb			دوباره بیرون رفتن، برجسته بودن	دوباره بیرون رفتن	actions
+émouvoir	verb			منقلب کردن، تحت تأثیر قرار دادن (عاطفی)	منقلب کردن	feelings
+se réjouir	verb			شادمان شدن، خوشحال بودن (از)	شادمان شدن	feelings
+concevoir	verb			طرح ریختن، تصور کردن	طرح ریختن	abstract
+assassiner	verb			به قتل رساندن، ترور کردن	به قتل رساندن	society
+gémir	verb			ناله کردن	ناله کردن	health
+sacrifier	verb			فدا کردن	فدا کردن	feelings
+aborder	verb			مطرح کردن (موضوع)، نزدیک شدن (به کسی)	مطرح کردن (موضوع)	abstract
+délivrer	verb			رهانیدن، صادر کردن (مدرک)	رهانیدن	society
+découper	verb			بریدن (به قطعه‌ها)، قیچی کردن	بریدن (به قطعه‌ها)	actions
+insulter	verb			توهین کردن	توهین کردن	feelings
+semer	verb			بذر پاشیدن، کاشتن (دانه)	بذر پاشیدن	nature
+redouter	verb			هراس داشتن (از)، بیمناک بودن	هراس داشتن (از)	feelings	register:formal
+adopter	verb			به فرزندی گرفتن، پذیرفتن (روش)	به فرزندی گرفتن	family
+loger	verb			اسکان دادن، منزل کردن	اسکان دادن	home
+pourrir	verb			پوسیدن، گندیدن	پوسیدن	food
+envier	verb			غبطه خوردن، حسادت کردن به	غبطه خوردن	feelings
+défaire	verb			باز کردن (گره یا چمدان)	باز کردن (گره یا چمدان)	actions
+s'étirer	verb			کش و قوس آمدن	کش و قوس آمدن	body
+apaiser	verb			آرام کردن، فرونشاندن	آرام کردن	feelings
+défiler	verb			رژه رفتن، پشت سر هم آمدن	رژه رفتن	society
+introduire	verb			وارد کردن، معرفی کردن (موضوع)	وارد کردن	abstract
+bousculer	verb			هل دادن (در شلوغی)، به هم ریختن (برنامه)	هل دادن (در شلوغی)	actions
+correspondre	verb			مطابقت داشتن، نامه‌نگاری کردن	مطابقت داشتن	abstract
+hocher la tête	phrase			سر تکان دادن	سر تکان دادن	body	parts:tête
+encourager	verb			تشویق کردن، دلگرمی دادن	تشویق کردن	feelings
+mépriser	verb			تحقیر کردن، خوار شمردن	تحقیر کردن	feelings
+projeter	verb			نمایش دادن (فیلم)، طرح ریختن	نمایش دادن (فیلم)	culture
+déclencher	verb			به راه انداختن، سبب آغاز شدن	به راه انداختن	actions
+affecter	verb			اثر گذاشتن (بد)، منصوب کردن	اثر گذاشتن (بد)	abstract
+se suicider	verb			خودکشی کردن	خودکشی کردن	health
+compliquer	verb			پیچیده کردن	پیچیده کردن	abstract
+torturer	verb			شکنجه دادن	شکنجه دادن	society
+aspirer	verb			آرزو داشتن، مکیدن (هوا)	آرزو داشتن	feelings
+bouleverser	verb			دگرگون کردن، منقلب کردن	دگرگون کردن	feelings
+procurer	verb			فراهم کردن (برای کسی)، تهیه کردن	فراهم کردن (برای کسی)	actions
+bavarder	verb			گپ زدن، حرف زدن (زیاد)	گپ زدن	people
+étrangler	verb			خفه کردن (با دست)	خفه کردن (با دست)	society
+bondir	verb			جستن، پریدن (ناگهانی)	جستن	actions
+consentir	verb			رضایت دادن	رضایت دادن	abstract	register:formal
+réciter	verb			از بر خواندن	از بر خواندن	education
+féliciter	verb			تبریک گفتن	تبریک گفتن	people
+raccompagner	verb			بدرقه کردن، رساندن (تا خانه)	بدرقه کردن	people
+prolonger	verb			تمدید کردن، طولانی کردن	تمدید کردن	time
+animer	verb			اداره کردن (برنامه)، جان بخشیدن	اداره کردن (برنامه)	media
+ronger	verb			جویدن (مداوم)، خوردن (از درون)	جویدن (مداوم)	animals
+redescendre	verb			دوباره پایین آمدن	دوباره پایین آمدن	space
+recueillir	verb			جمع‌آوری کردن، پناه دادن	جمع‌آوری کردن	actions
+replier	verb			تا کردن (دوباره)، جمع کردن	تا کردن (دوباره)	actions
+distribuer	verb			پخش کردن، توزیع کردن	پخش کردن	actions
+clore	verb			بستن، به پایان بردن (رسمی)	بستن	actions	register:formal
+s'effondrer	verb			فرو ریختن، از پا درآمدن	فرو ریختن	actions
+tâcher	verb			کوشیدن (که)	کوشیدن (که)	actions	register:formal
+consister	verb			عبارت بودن از، تشکیل شدن از	عبارت بودن از	abstract
+procéder	verb			اقدام کردن، انجام دادن (رسمی)	اقدام کردن	actions	register:formal
+séduire	verb			فریفتن، مجذوب کردن	فریفتن	feelings
+s'apprêter	verb			آماده شدن (برای)	آماده شدن (برای)	actions
+pratiquer	verb			انجام دادن (ورزش یا آیین)، تمرین کردن	انجام دادن (ورزش یا آیین)	leisure
+réchauffer	verb			گرم کردن (دوباره)	گرم کردن (دوباره)	food
+border	verb			حاشیه داشتن، ملحفه را زیر تشک زدن	حاشیه داشتن	actions
+éliminer	verb			حذف کردن	حذف کردن	actions
+doubler	verb			دو برابر کردن، سبقت گرفتن	دو برابر کردن	transport
+fasciner	verb			مسحور کردن	مسحور کردن	feelings
+succéder	verb			جانشین شدن، پی‌درپی آمدن	جانشین شدن	society
+enchanter	verb			شیفته کردن، مسحور کردن	شیفته کردن	feelings	coll:enchanté ! → خوشوقتم!
+acquérir	verb			به دست آوردن، خریدن (ملک)	به دست آوردن	economy
+grouiller	verb			وول خوردن، پر بودن (از جمعیت)	وول خوردن	actions	mastery:recognize
+crever	verb			مردن (حیوان)، ترکیدن (لاستیک)	مردن	health	register:familier	coll:je suis crevé → خیلی خسته‌ام
+virer	verb			اخراج کردن (از کار)	اخراج کردن	work	register:familier
+piger	verb			فهمیدن، گرفتن (مطلب)	فهمیدن	education	register:familier
+se marrer	verb			خندیدن (زیاد)	خندیدن	feelings	register:familier
+filer	verb			دادن (سریع)، رد کردن (چیزی به کسی)	دادن	actions	register:familier	coll:file-moi ton stylo → خودکارت را بده
+balancer	verb			تاب دادن، پرت کردن	تاب دادن	actions
+
+# the commonest nouns still missing
+garde	noun	f		نگهبانی، حضانت (بچه)	نگهبانی	society
+prendre garde	phrase			مراقب بودن، حذر کردن	مراقب بودن	actions	parts:prendre garde
+mettre en garde	phrase			برحذر داشتن	برحذر داشتن	society	parts:mettre garde
+seigneur	noun	m		ارباب، خداوندگار	ارباب	society	mastery:recognize
+marche	noun	f		پله، راه‌رفتن	پله	home	coll:les marches de l'escalier → پله‌های راه‌پله
+chair	noun	f		گوشتِ بدن، جسم	گوشتِ بدن	body	mastery:recognize
+avoir la chair de poule	phrase			مو به تن (کسی) سیخ شدن	مو به تن (کسی) سیخ شدن	body	parts:avoir chair poule
+troupe	noun	f		گروه (بازیگران)، سپاه	گروه (بازیگران)	society
+lieutenant	noun	m		ستوان	ستوان	society	mastery:recognize
+commandant	noun	m		فرمانده	فرمانده	society
+colonel	noun	m		سرهنگ	سرهنگ	society	mastery:recognize
+sergent	noun	m		گروهبان	گروهبان	society	mastery:recognize
+sein	noun	m		سینه (زن)، آغوش	سینه (زن)	body
+toile	noun	f		پارچهٔ کتان، بوم (نقاشی)	پارچهٔ کتان	culture
+figure	noun	f		چهره (شخصیت)، شکل (هندسه)	چهره (شخصیت)	abstract
+trait	noun	m		خط، ویژگی (چهره یا شخصیت)	خط	character
+poil	noun	m		مو (بدن)، کرک	مو (بدن)	body
+avoir un poil dans la main	phrase			تنبل بودن	تنبل	character	parts:avoir poil main	register:familier
+acte	noun	m		عمل (کار انجام‌شده)، پردهٔ (نمایش)	عمل (کار انجام‌شده)	abstract
+passer à l'acte	phrase			دست به کار شدن	دست به کار شدن	actions	parts:passer acte
+mine	noun	f		قیافه، معدن	قیافه	body	coll:avoir bonne mine → سرحال به نظر رسیدن
+époux	noun	m		همسر (شوهر)	همسر (شوهر)	family	register:formal
+épouse	noun	f		همسر (زن)	همسر (زن)	family	register:formal
+amant	noun	m		معشوق، فاسق	معشوق	feelings
+sort	noun	m		سرنوشت (بد)، جادو	سرنوشت (بد)	abstract
+tirer au sort	phrase			قرعه کشیدن	قرعه کشیدن	leisure	parts:tirer sort
+cadavre	noun	m		جسد، لاشه	جسد	society
+croix	noun	f		صلیب، علامت ضربدر	صلیب	culture
+vierge	adj			باکره، دست‌نخورده	باکره	qualities
+terme	noun	m		اصطلاح، پایان (مهلت)	اصطلاح	education
+à court terme	adv			کوتاه‌مدت	کوتاه‌مدت	time	parts:court terme
+à long terme	adv			درازمدت	درازمدت	time	parts:long terme
+éclat	noun	m		درخشش، تکه (شکسته)	درخشش	qualities
+paysan	noun	m		روستایی، دهقان	روستایی	society
+masse	noun	f		توده، انبوه	توده	numbers
+vaisseau	noun	m	vaisseaux	کشتی (بزرگ)، رگ (خون)	کشتی (بزرگ)	transport	mastery:recognize
+allié	noun	m		متحد، هم‌پیمان	متحد	society
+comte	noun	m		کنت	کنت	society	mastery:recognize
+piste	noun	f		باند (فرودگاه)، سرنخ	باند (فرودگاه)	transport
+boule	noun	f		گلوله (گرد)، گوی	گلوله (گرد)	space
+aise	noun	f		راحتی، آسایش	راحتی	feelings
+aube	noun	f		سپیده‌دم	سپیده‌دم	time	mastery:recognize
+canon	noun	m		توپ (جنگی)	توپ (جنگی)	society
+rang	noun	m		ردیف، رتبه	ردیف	society
+rayon	noun	m		پرتو، قفسه (فروشگاه)	پرتو	shopping
+comité	noun	m		کمیته	کمیته	society
+démon	noun	m		دیو، اهریمن	دیو	culture
+gardien	noun	m		نگهبان، دروازه‌بان	نگهبان	work
+maîtresse	noun	f		معلم (دبستان)، معشوقه	معلم (دبستان)	education
+commissaire	noun	m		کمیسر (پلیس)	کمیسر (پلیس)	society
+circonstance	noun	f		اوضاع، شرایط (یک رخداد)	اوضاع	abstract
+pot	noun	m		ظرف (شیشه‌ای)، گلدان	ظرف (شیشه‌ای)	home	coll:prendre un pot → یک نوشیدنی خوردن
+tourner autour du pot	phrase			حاشیه رفتن	حاشیه رفتن	people	parts:tourner autour pot
+tendresse	noun	f		مهر، نوازش (محبت)	مهر	feelings
+silhouette	noun	f		سایه‌نما، اندام	سایه‌نما	body
+sou	noun	m		پول خرد (قدیمی)، پاپاسی	پول خرد (قدیمی)	economy	coll:je n'ai pas un sou → یک پاپاسی ندارم
+tueur	noun	m		آدمکش	آدمکش	society
+allure	noun	f		سرعت (حرکت)، ظاهر (شیک)	سرعت (حرکت)	qualities
+mise	noun	f		گذاشتن (در جایی)، شرط (بازی)	گذاشتن (در جایی)	abstract	mastery:recognize
+mise en place	noun	f		راه‌اندازی، استقرار	راه‌اندازی	work	parts:mise place
+disque	noun	m		صفحهٔ (موسیقی)، دیسک	صفحهٔ (موسیقی)	culture
+marchand	noun	m		فروشنده (دوره‌گرد یا مغازه)، تاجر	فروشنده (دوره‌گرد یا مغازه)	shopping
+coupe	noun	f		جام، مدل کوتاهی (مو)	جام	leisure
+égard	noun	m		ملاحظه، توجه	ملاحظه	feelings	mastery:recognize
+sorcier	noun	m		جادوگر	جادوگر	culture
+sorcière	noun	f		جادوگر (زن)	جادوگر (زن)	culture
+charge	noun	f		بارِ سنگین، مسئولیت	بارِ سنگین	work
+prendre en charge	phrase			به عهده گرفتن، رسیدگی کردن به	به عهده گرفتن	work	parts:prendre charge
+revenir à la charge	phrase			دوباره اصرار کردن	دوباره اصرار کردن	actions	parts:revenir charge
+esclave	noun	mf		برده	برده	society
+réserve	noun	f		ذخیره، انبار	ذخیره	economy
+péché	noun	m		گناه	گناه	culture
+lueur	noun	f		روشنایی کم، پرتو	روشنایی کم	nature
+résistance	noun	f		مقاومت	مقاومت	society
+grille	noun	f		نرده، جدول (برنامه)	نرده	home
+passe	noun	f		پاس (توپ)	پاس (توپ)	leisure
+voile	noun	m		حجاب، روبنده	حجاب	clothes
+voile	noun	f		بادبان	بادبان	transport	code:voile-f
+faveur	noun	f		لطف، مرحمت	لطف	people
+paupière	noun	f		پلک	پلک	body
+commandement	noun	m		فرماندهی، فرمان	فرماندهی	society
+curé	noun	m		کشیش (کاتولیک)	کشیش (کاتولیک)	culture
+crainte	noun	f		ترس (از چیزی)، بیم	ترس (از چیزی)	feelings
+vieillard	noun	m		پیرمرد	پیرمرد	people
+plaque	noun	f		پلاک، صفحه (فلزی)	پلاک	transport
+illusion	noun	f		توهم، خیال باطل	توهم	abstract
+récit	noun	m		روایت، حکایت	روایت	culture
+majesté	noun	f		شکوه، اعلی‌حضرت	شکوه	society	mastery:recognize
+misère	noun	f		فقر شدید، تیره‌روزی	فقر شدید	society
+race	noun	f		نژاد (حیوان)	نژاد (حیوان)	animals
+félicitations	noun	f		تبریک	تبریک	people	number:pl_only
+hâte	noun	f		شتاب، عجله	شتاب	time
+empereur	noun	m		امپراتور	امپراتور	society
+obscurité	noun	f		تاریکی	تاریکی	nature
+foyer	noun	m		خانه (کانون خانواده)، خوابگاه	خانه (کانون خانواده)	home
+créature	noun	f		آفریده، موجود	آفریده	nature
+colonne	noun	f		ستون	ستون	culture
+rage	noun	f		خشم شدید، هاری	خشم شدید	feelings
+cloche	noun	f		ناقوس، زنگ (کلیسا)	ناقوس	culture
+carton	noun	m		مقوا، کارتن	مقوا	home
+nerf	noun	m		عصب، اعصاب	عصب	body	coll:ça me tape sur les nerfs → روی اعصابم است
+avoir les nerfs	phrase			عصبی بودن، کفری بودن	عصبی بودن	feelings	parts:avoir nerf	register:familier
+être sur les nerfs	phrase			عصبی بودن (از فشار)	عصبی بودن	feelings	parts:être nerf
+liquide	noun	m		مایع	مایع	science
+disposition	noun	f		اختیار، آمادگی	اختیار	abstract	coll:à votre disposition → در خدمت شما
+fonction	noun	f		کارکرد، سِمت	کارکرد	work
+en fonction de	prep			بسته به، بر حسبِ	بسته به	function	parts:fonction
+poignée	noun	f		دستگیره، مشت (پر)	دستگیره	home	coll:une poignée de main → دست دادن
+trouble	noun	m		آشفتگی، اختلال	آشفتگی	health
+cabinet	noun	m		مطب، دفتر (وکالت)	مطب	work
+pompe	noun	f		تلمبه، پمپ	تلمبه	science
+épée	noun	f		شمشیر	شمشیر	society	mastery:recognize
+semblant	noun	m		ظاهر، نمود	ظاهر	abstract	mastery:recognize
+empreinte	noun	f		اثر (انگشت یا پا)	اثر (انگشت یا پا)	society	coll:empreintes digitales → اثر انگشت
+ordure	noun	f		کثافت، آشغال (اخلاقی)	کثافت	home	mastery:recognize
+désespoir	noun	m		یأس، ناامیدی مطلق	یأس	feelings
+drapeau	noun	m	drapeaux	پرچم	پرچم	society
+ruine	noun	f		ویرانه، ورشکستگی	ویرانه	society
+reflet	noun	m		بازتاب، انعکاس	بازتاب	nature
+filet	noun	m		تور	تور	leisure
+division	noun	f		تقسیم، لشکر	تقسیم	numbers
+flot	noun	m		موج (جمعیت یا آب)، سیل (کلمات)	موج (جمعیت یا آب)	nature	mastery:recognize
+vertu	noun	f		فضیلت	فضیلت	character	mastery:recognize
+bloc	noun	m		قطعه (سنگ)، بلوک	قطعه (سنگ)	space
+revolver	noun	m		هفت‌تیر	هفت‌تیر	society
+bal	noun	m		مجلس رقص	مجلس رقص	culture
+revanche	noun	f		تلافی، انتقام (بازی برگشت)	تلافی	leisure
+prendre sa revanche	phrase			تلافی کردن، انتقام گرفتن	تلافی کردن	feelings	parts:prendre revanche
+seuil	noun	m		آستانه	آستانه	home
+gaffe	noun	f		سوتی، اشتباه (لُپی)	اشتباه	feelings	register:familier	coll:fais gaffe ! → مواظب باش!
+faire une gaffe	phrase			سوتی دادن	اشتباه کردن	feelings	parts:faire gaffe	register:familier
+veine	noun	f		رگ، شانس (عامیانه)	رگ	body
+habit	noun	m		جامه، لباس (رسمی)	جامه	clothes
+cabine	noun	f		اتاقک، کابین	اتاقک	transport
+pente	noun	f		شیب، سراشیبی	شیب	nature
+pré	noun	m		چراگاه، علفزار	چراگاه	nature
+messe	noun	f		مراسم عشای ربانی	مراسم عشای ربانی	culture
+décor	noun	m		دکور، تزئینات	دکور	home
+tenue	noun	f		پوشش، طرز لباس	پوشش	clothes
+cavalier	noun	m		سوارکار	سوارکار	leisure
+approche	noun	f		رویکرد، شیوهٔ برخورد	رویکرد	abstract
+libération	noun	f		آزادسازی، رهایی	آزادسازی	society
+poudre	noun	f		پودر، باروت	پودر	science
+grange	noun	f		انبار علوفه	انبار علوفه	nature
+portier	noun	m		دربان	دربان	work
+complice	noun	mf		همدست	همدست	society
+couche	noun	f		لایه، پوشک	لایه	space
+instruction	noun	f		دستورالعمل، آموزش	دستورالعمل	education
+écho	noun	m		پژواک	پژواک	nature
+patrie	noun	f		میهن، وطن	میهن	society
+portée	noun	f		برد، دسترس	برد	space	coll:à portée de main → دمِ دست
+flanc	noun	m		پهلو، دامنه (کوه)	پهلو	body	mastery:recognize
+liaison	noun	f		ارتباط، رابطهٔ پنهانی	ارتباط	people
+couvert	noun	m		قاشق و چنگال، کارد و چنگال (یک نفر)	قاشق و چنگال	food	coll:mettre le couvert → میز را چیدن
+instinct	noun	m		غریزه	غریزه	character
+certitude	noun	f		یقین	یقین	abstract
+chevalier	noun	m		شوالیه	شوالیه	society	mastery:recognize
+explosion	noun	f		انفجار	انفجار	society
+barque	noun	f		قایق پارویی	قایق پارویی	transport
+évidence	noun	f		بداهت، چیز آشکار	بداهت	abstract	coll:de toute évidence → به وضوح
+mettre en évidence	phrase			نشان دادن (به‌روشنی)	نشان دادن (به‌روشنی)	abstract	parts:mettre évidence
+façade	noun	f		نما (ساختمان)	نما (ساختمان)	city
+lame	noun	f		تیغه	تیغه	home
+tir	noun	m		تیراندازی	تیراندازی	society
+jugement	noun	m		قضاوت، حکم (دادگاه)	قضاوت	society
+conviction	noun	f		باور، اعتقاد قلبی	باور	abstract
+atmosphère	noun	f		جو، فضا (حال‌وهوا)	جو	nature
+élan	noun	m		شتاب (برای پرش)، شور و شوق	شتاب (برای پرش)	feelings
+marbre	noun	m		مرمر	مرمر	nature
+villa	noun	f		ویلا	ویلا	home
+grain	noun	m		دانه، ذره	دانه	nature
+mettre son grain de sel	phrase			در هر کاری دخالت کردن	دخالت کردن (در کار کسی)	people	parts:mettre grain sel	register:familier
+comptoir	noun	m		پیشخوان	پیشخوان	shopping
+dépit	noun	m		دلخوری، کینه (از ناکامی)	دلخوری	feelings	mastery:recognize
+vœu	noun	m	vœux	آرزو، نذر	آرزو	culture	coll:meilleurs vœux → بهترین آرزوها
+éternité	noun	f		ابدیت	ابدیت	time
+carreau	noun	m	carreaux	کاشی، شیشه (پنجره)	کاشی	home
+bonhomme	noun	m	bonshommes	آدمک، مرد (ساده)	آدمک	people	coll:bonhomme de neige → آدم‌برفی
+écart	noun	m		فاصله، تفاوت	فاصله	numbers
+pipe	noun	f		پیپ	پیپ	health
+star	noun	f		ستاره (مشهور)	ستاره (مشهور)	culture
+boucle	noun	f		حلقه، گوشواره (boucle d'oreille)	حلقه	clothes
+royaume	noun	m		پادشاهی، قلمرو	پادشاهی	society
+file	noun	f		ردیف، لاین (خیابان)	ردیف	transport
+rein	noun	m		کلیه	کلیه	body
+alerte	noun	f		هشدار، آماده‌باش	هشدار	society
+motif	noun	m		انگیزه، طرح (پارچه)	انگیزه	abstract
+brume	noun	f		مه رقیق	مه رقیق	weather
+ambassadeur	noun	m		سفیر	سفیر	society
+volet	noun	m		کرکره (پنجره)	کرکره (پنجره)	home
+pli	noun	m		چین، تا (کاغذ)	چین	clothes
+dignité	noun	f		کرامت، شأن	کرامت	character
+formule	noun	f		فرمول، عبارت (ثابت)	فرمول	science
+moine	noun	m		راهب	راهب	culture
+faiblesse	noun	f		ضعف	ضعف	character
+précaution	noun	f		احتیاط، پیشگیری	احتیاط	health
+marine	noun	f		نیروی دریایی	نیروی دریایی	society
+suicide	noun	m		خودکشی	خودکشی	health
+cendre	noun	f		خاکستر	خاکستر	nature
+conduite	noun	f		رفتار، رانندگی	رفتار	character
+vengeance	noun	f		انتقام	انتقام	feelings
+canne	noun	f		عصا	عصا	health
+rigueur	noun	f		سخت‌گیری، دقت	سخت‌گیری	character
+à la rigueur	adv			در صورت لزوم، دست بالا	در صورت لزوم	abstract	parts:rigueur
+orgueil	noun	m		تکبر، غرور (بیش از حد)	تکبر	character
+ouverture	noun	f		گشایش، افتتاح	گشایش	society
+cabane	noun	f		کلبه	کلبه	home
+canal	noun	m	canaux	کانال، آبراه	کانال	nature
+maréchal	noun	m	maréchaux	ارتشبد، مارشال	ارتشبد	society	mastery:recognize
+tournée	noun	f		تور (اجرا)، دور (پخش)	تور (اجرا)	culture
+cercueil	noun	m		تابوت	تابوت	culture
+cible	noun	f		هدف (تیراندازی)، مخاطب هدف	هدف (تیراندازی)	actions
+affection	noun	f		محبت، مهر	محبت	feelings
+assaut	noun	m		یورش، حمله (نظامی)	یورش	society
+perspective	noun	f		چشم‌انداز (آینده)، دورنما	چشم‌انداز (آینده)	abstract
+revue	noun	f		نشریه، مجله (تخصصی)	نشریه	media
+flotte	noun	f		ناوگان	ناوگان	transport
+mépris	noun	m		تحقیر	تحقیر	feelings
+soupir	noun	m		آهِ حسرت، نفسِ آه‌مانند	آهِ حسرت	feelings
+couronne	noun	f		تاج	تاج	society
+essai	noun	m		آزمایش، جستار (مقاله)	آزمایش	science
+alliance	noun	f		اتحاد، حلقهٔ ازدواج	اتحاد	society
+profil	noun	m		نیم‌رخ، پروفایل	نیم‌رخ	media
+phare	noun	m		فانوس دریایی، چراغ جلو (ماشین)	فانوس دریایی	transport
+écrit	noun	m		نوشته، امتحان کتبی	نوشته	education
+propriété	noun	f		ملک، مالکیت	ملک	economy
+chapelle	noun	f		نمازخانه (کلیسای کوچک)	نمازخانه (کلیسای کوچک)	culture
+cité	noun	f		شهرک، شهر	شهرک	city
+proie	noun	f		شکار (طعمه)	شکار (طعمه)	animals
+couvent	noun	m		صومعه	صومعه	culture
+plomb	noun	m		سرب	سرب	science
+ouvrage	noun	m		اثر (کتاب)، کار (دستی)	اثر (کتاب)	culture
+baraque	noun	f		خونه، آلونک	خانه	home	register:familier	mastery:recognize
+enthousiasme	noun	m		شور و شوق	شور و شوق	feelings
+reprise	noun	f		از سرگیری، تکرار	از سرگیری	time	coll:à plusieurs reprises → چند بار
+section	noun	f		بخش، قسمت (سازمان)	بخش	work
+ténèbres	noun	f		ظلمت	ظلمت	nature	number:pl_only	mastery:recognize
+assemblée	noun	f		مجلس، مجمع	مجلس	society
+tronc	noun	m		تنه (درخت)	تنه (درخت)	nature
+guerrier	noun	m		جنگجو	جنگجو	society
+puce	noun	f		کک، تراشه (الکترونیکی)	کک	science
+mettre la puce à l'oreille	phrase			کنجکاو یا مشکوک کردن	کنجکاو یا مشکوک کردن	abstract	parts:mettre puce oreille
+terreur	noun	f		وحشت، رعب	وحشت	feelings
+dalle	noun	f		سنگ‌فرش (تخته‌سنگ)	سنگ‌فرش (تخته‌سنگ)	city
+cigare	noun	m		سیگار برگ	سیگار برگ	health
+combattant	noun	m		رزمنده	رزمنده	society
+commission	noun	f		کمیسیون، کارمزد	کمیسیون	work
+indifférence	noun	f		بی‌تفاوتی	بی‌تفاوتی	feelings
+permis	noun	m		مجوز، جواز	مجوز	society
+conférence	noun	f		کنفرانس، سخنرانی (علمی)	کنفرانس	education
+panique	noun	f		وحشت‌زدگی، هول	وحشت‌زدگی	feelings
+fureur	noun	f		خشم (شدید)، غضب	خشم (شدید)	feelings
+taule	noun	f		زندان، هلفدونی	زندان	society	register:familier
+déclaration	noun	f		اظهارنامه، اعلام (رسمی)	اظهارنامه	society
+ambition	noun	f		بلندپروازی، آرزو (بزرگ)	بلندپروازی	character
+demeure	noun	f		اقامتگاه (بزرگ)، سرا	اقامتگاه (بزرگ)	home	mastery:recognize
+impatience	noun	f		بی‌صبری	بی‌صبری	feelings
+pâte	noun	f		خمیر	خمیر	food
+puits	noun	m		چاه	چاه	nature
+exécution	noun	f		اجرای (حکم یا طرح)، اعدام	اجرای (حکم یا طرح)	society
+mélange	noun	m		مخلوط	مخلوط	food
+mèche	noun	f		طره (مو)، فتیله	طره (مو)	body
+magie	noun	f		جادو	جادو	culture
+excellence	noun	f		برتری، کمال	برتری	qualities
+apparition	noun	f		پیدا شدن، ظهور	پیدا شدن	abstract
+asile	noun	m		پناهندگی، پناهگاه	پناهندگی	society
+gouverneur	noun	m		فرماندار	فرماندار	society
+comble	noun	m		اوج، نهایت	اوج	abstract	coll:c'est le comble ! → دیگر شورش را درآورده!
+tranchée	noun	f		سنگر (خندق)	سنگر (خندق)	society	mastery:recognize
+hôte	noun	mf		میزبان	میزبان	people
+appui	noun	m		پشتیبانی، تکیه‌گاه	پشتیبانی	society
+mandat	noun	m		دورهٔ نمایندگی، حکم (قضایی)	دورهٔ نمایندگی	society
+char	noun	m		تانک، ارابه	تانک	society
+gré	noun	m		میل، خواست	میل	feelings	coll:de gré ou de force → خواه‌ناخواه
+mâle	noun	m		نر	نر	animals
+femelle	noun	f		ماده (جانور)	ماده (جانور)	animals
+profit	noun	m		سود، بهره	سود	economy
+tirer profit de	phrase			بهره بردن از	بهره بردن از	abstract	parts:tirer profit
+au profit de	prep			به سودِ	به سودِ	abstract	parts:profit
+plaie	noun	f		زخم (باز)	زخم (باز)	health
+issue	noun	f		راه خروج، پایان (ماجرا)	راه خروج	abstract	note:issue یعنی «راه خروج» یا «سرانجام»، نه «مسئله» (مسئله = problème یا question).
+à l'issue de	prep			در پایانِ	در پایانِ	time	parts:issue
+pari	noun	m		شرط‌بندی	شرط‌بندی	leisure
+anneau	noun	m	anneaux	حلقه	حلقه	clothes
+soupçon	noun	m		بدگمانی، سوءظن	بدگمانی	feelings
+savant	noun	m		دانشمند	دانشمند	science
+espion	noun	m		جاسوس	جاسوس	society
+latin	noun	m		لاتین (زبان)	لاتین (زبان)	education
+fraîcheur	noun	f		خنکی، تازگی	خنکی	weather
+paume	noun	f		کف دست	کف دست	body
+triomphe	noun	m		پیروزی بزرگ، غلبه	پیروزی بزرگ	society
+démarche	noun	f		اقدام (اداری)، طرز راه رفتن	اقدام (اداری)	society
+deuil	noun	m		سوگ، عزا	سوگ	culture
+caresse	noun	f		نوازش	نوازش	feelings
+maximum	noun	m		حداکثر	حداکثر	numbers
+minimum	noun	m		حداقل	حداقل	numbers
+blouse	noun	f		روپوش	روپوش	clothes
+remords	noun	m		عذاب وجدان	عذاب وجدان	feelings
+noce	noun	f		جشن عروسی	جشن عروسی	culture
+reconnaissance	noun	f		قدردانی، شناسایی	قدردانی	feelings
+comportement	noun	m		رفتار	رفتار	character
+oubli	noun	m		فراموشی	فراموشی	abstract
+
+# adjectives of B2
+net	adj			واضح، تمیز (بی‌لک)	واضح	qualities
+en avoir le cœur net	phrase			ته‌وتوی قضیه را درآوردن	ته‌وتوی قضیه را درآوردن	abstract	parts:avoir cœur net
+lâche	adj			بزدل، نامرد	بزدل	character
+essentiel	adj			اساسی، بنیادی	اساسی	abstract
+censé	adj			قرار بر این (که)، فرضاً موظف	قرار بر این (که)	abstract	coll:tu es censé le savoir → قرار است این را بدانی
+civil	adj			مدنی، غیرنظامی	مدنی	society
+vain	adj			بیهوده، پوچ	بیهوده	abstract	coll:en vain → بیهوده
+en vain	adv			بیهوده	بیهوده	abstract	parts:vain
+central	adj			مرکزی	مرکزی	space
+familier	adj			آشنا، خودمانی	آشنا	people
+bourgeois	adj			بورژوا، مرفه	بورژوا	society
+maudit	adj			لعنتی، نفرین‌شده	لعنتی	feelings	mastery:recognize
+absolu	adj			مطلق، تام	مطلق	abstract
+doré	adj			طلایی، زرین	طلایی	colors
+infini	adj			بی‌پایان، نامتناهی	بی‌پایان	numbers
+raide	adj			سیخ، شق (صاف و سفت)	سیخ	qualities
+élevé	adj			بالا (قیمت یا سطح)	بالا (قیمت یا سطح)	numbers
+serré	adj			تنگ، فشرده	تنگ	clothes
+magique	adj			جادویی	جادویی	culture
+aimable	adj			خوش‌برخورد، بامحبت	خوش‌برخورد	character
+féminin	adj			زنانه، مؤنث	زنانه	people
+masculin	adj			مردانه، مذکر	مردانه	people
+royal	adj			سلطنتی، شاهانه	سلطنتی	society
+solitaire	adj			گوشه‌گیر، تنها (به میل خود)	گوشه‌گیر	character
+divin	adj			الهی، بهشتی	الهی	culture
+pourri	adj			گندیده، فاسد	گندیده	food
+confus	adj			گیج، درهم	گیج	abstract
+armé	adj			مسلح	مسلح	society
+misérable	adj			بینوا، فلک‌زده	بینوا	society
+tendu	adj			پرتنش، عصبی	پرتنش	feelings
+fantastique	adj			خارق‌العاده، تخیلی	خارق‌العاده	qualities
+lumineux	adj			نورانی، پرنور	نورانی	qualities
+brûlant	adj			داغ (سوزان)	داغ (سوزان)	weather
+vilain	adj			زشت، بدجنس (بچه)	زشت	character
+fichu	adj			لعنتی، از کار افتاده	لعنتی	qualities	register:familier
+cassé	adj			شکسته	شکسته	qualities
+parisien	adj			پاریسی	پاریسی	society
+mécanique	adj			مکانیکی	مکانیکی	science
+nocturne	adj			شبانه	شبانه	time
+paisible	adj			آرام، صلح‌جو	آرام	feelings
+connu	adj			شناخته‌شده، سرشناس	شناخته‌شده	people
+international	adj			بین‌المللی	بین‌المللی	society
+intact	adj			دست‌نخورده، سالم (بی‌آسیب)	دست‌نخورده	qualities
+final	adj			نهایی، پایانی	نهایی	time
+indien	adj			هندی	هندی	society
+interminable	adj			بی‌پایان (طولانی و کسل‌کننده)	بی‌پایان (طولانی و کسل‌کننده)	time
+massif	adj			عظیم (و سنگین)، گسترده	عظیم (و سنگین)	qualities
+attentif	adj			حواس‌جمع، با دقت	حواس‌جمع	character
+modeste	adj			فروتن، بی‌تکلف	فروتن	character
+intellectuel	adj			فکری، روشنفکر	فکری	education
+indifférent	adj			بی‌تفاوت	بی‌تفاوت	feelings
+sincère	adj			صادق (در احساس)، بی‌ریا	صادق (در احساس)	character
+pénible	adj			آزاردهنده، طاقت‌فرسا	آزاردهنده	qualities
+disparu	adj			گمشده، ناپدید	گمشده	society
+tragique	adj			غم‌انگیز، تراژیک	غم‌انگیز	culture
+aigu	adj			تیز (صدا)، حاد	تیز (صدا)	health
+polonais	adj			لهستانی	لهستانی	society
+soviétique	adj			شوروی	شوروی	society	mastery:recognize
+original	adj			بدیع، اصل (نسخه)	بدیع	qualities
+immédiat	adj			فوری	فوری	time
+visible	adj			پیدا، قابل دیدن	پیدا	qualities
+minable	adj			بی‌ارزش، فکسنی	بی‌ارزش	qualities
+lisse	adj			صاف (سطح)، نرم	صاف (سطح)	qualities
+sévère	adj			سخت‌گیر، جدی (تنبیه)	سخت‌گیر	character
+suprême	adj			عالی‌ترین، برترین	عالی‌ترین	qualities
+admirable	adj			ستودنی، تحسین‌برانگیز	ستودنی	qualities
+brusque	adj			ناگهانی، تند (رفتار)	ناگهانی	character
+mou	adj			شل، نرم (بی‌حال)	شل	qualities
+insupportable	adj			غیرقابل تحمل	غیرقابل تحمل	feelings
+romantique	adj			عاشقانه، رمانتیک	عاشقانه	feelings
+sinistre	adj			شوم، دلگیر	شوم	qualities
+transparent	adj			شفاف	شفاف	qualities
+exceptionnel	adj			استثنایی، فوق‌العاده (کمیاب)	استثنایی	qualities
+rude	adj			خشن، سخت (زمستان)	خشن	qualities
+suffisant	adj			کافی	کافی	numbers
+grossier	adj			بی‌ادب، زمخت	بی‌ادب	character
+banal	adj			پیش‌پاافتاده، معمولی (بی‌مزه)	پیش‌پاافتاده	qualities
+fatal	adj			مرگبار، اجتناب‌ناپذیر	مرگبار	abstract
+musical	adj			موسیقیایی	موسیقیایی	culture
+aérien	adj			هوایی	هوایی	transport
+mineur	adj			زیر سن قانونی، جزئی	زیر سن قانونی	society
+maternel	adj			مادری، مادرانه	مادری	family
+paternel	adj			پدری، پدرانه	پدری	family
+enfantin	adj			بچگانه	بچگانه	people
+négatif	adj			منفی	منفی	abstract
+positif	adj			مثبت	مثبت	abstract
+ultime	adj			واپسین، نهایی (آخرین)	واپسین	time
+adorable	adj			دوست‌داشتنی، ناز	دوست‌داشتنی	character
+effrayant	adj			ترسناک	ترسناک	feelings
+indispensable	adj			ضروری (حتمی)، لازم (حتماً)	لازم	abstract
+amical	adj			دوستانه	دوستانه	people
+injuste	adj			ناعادلانه	ناعادلانه	society
+fabuleux	adj			افسانه‌ای، شگفت‌انگیز	افسانه‌ای	qualities
+innombrable	adj			بی‌شمار	بی‌شمار	numbers
+désespéré	adj			ناامید، مأیوس	ناامید	feelings
+historique	adj			تاریخی	تاریخی	culture
+honteux	adj			شرم‌آور	شرم‌آور	feelings
+complexe	adj			پیچیده (چندلایه)	پیچیده (چندلایه)	abstract
+mental	adj			ذهنی، روانی	ذهنی	health
+souple	adj			انعطاف‌پذیر، نرم (بدن)	انعطاف‌پذیر	qualities
+conscient	adj			آگاه، هشیار	آگاه	abstract
+inattendu	adj			غیرمنتظره	غیرمنتظره	abstract
+vulgaire	adj			عامیانه، بی‌نزاکت	عامیانه	character
+intense	adj			شدید، پرشور	شدید	qualities
+humble	adj			فروتن، متواضع	فروتن	character
+interne	adj			داخلی	داخلی	space
+désagréable	adj			ناخوشایند	ناخوشایند	qualities
+légitime	adj			مشروع، به‌حق	مشروع	society
+mondial	adj			جهانی	جهانی	society
+monstrueux	adj			هیولاوار، فجیع	هیولاوار	qualities
+redoutable	adj			خطرناک (حریف)، هراس‌انگیز	خطرناک (حریف)	qualities
+reconnaissant	adj			سپاسگزار	سپاسگزار	feelings
+hostile	adj			خصمانه	خصمانه	feelings
+maladroit	adj			دست‌وپاچلفتی	دست‌وپاچلفتی	character
+anonyme	adj			بی‌نام، ناشناس	بی‌نام	society
+probable	adj			محتمل	محتمل	abstract
+imaginaire	adj			خیالی	خیالی	abstract
+clandestin	adj			مخفی، غیرقانونی (پنهانی)	مخفی	society
+atroce	adj			وحشیانه، دهشتناک	وحشیانه	qualities
+sentimental	adj			احساساتی	احساساتی	feelings
+surprenant	adj			غافلگیرکننده	غافلگیرکننده	qualities
+inconscient	adj			بیهوش، ناآگاه	بیهوش	health
+inverse	adj			وارونه، معکوس	وارونه	abstract
+spirituel	adj			معنوی، بذله‌گو	معنوی	culture
+correct	adj			درست، مناسب (قابل قبول)	درست	qualities
+comique	adj			خنده‌آور، طنزآمیز	خنده‌آور	culture
+métallique	adj			فلزی	فلزی	science
+réfléchi	adj			سنجیده، اندیشیده	سنجیده	character
+actif	adj			فعال	فعال	character
+insensé	adj			بی‌معنی، جنون‌آمیز	بی‌معنی	abstract
+splendide	adj			باشکوه، بسیار زیبا	باشکوه	qualities
+souverain	adj			مستقل (کشور)، دارای حاکمیت	مستقل (کشور)	society
+isolé	adj			منزوی، دورافتاده	منزوی	space
+sanglant	adj			خونین	خونین	society
+étonné	adj			متعجب، شگفت‌زده	متعجب	feelings
+inquiétant	adj			نگران‌کننده	نگران‌کننده	feelings
+remarquable	adj			قابل توجه، برجسته	قابل توجه	qualities
+singulier	adj			عجیب، مفرد (دستور)	عجیب	qualities
+antique	adj			باستانی	باستانی	culture
+gigantesque	adj			غول‌پیکر	غول‌پیکر	qualities
+pointu	adj			نوک‌تیز	نوک‌تیز	qualities
+impérial	adj			شاهنشاهی، امپراتوری (صفت)	شاهنشاهی	society	mastery:recognize
+souterrain	adj			زیرزمینی	زیرزمینی	space
+glorieux	adj			پرافتخار	پرافتخار	society
+impressionnant	adj			چشمگیر	چشمگیر	qualities
+agressif	adj			پرخاشگر، تهاجمی	پرخاشگر	character
+majeur	adj			بزرگسال (قانونی)، اصلی	بزرگسال (قانونی)	society
+opposé	adj			مخالف، روبه‌رو (طرف)	مخالف	space
+multiple	adj			چندگانه، متعدد (نوع)	چندگانه	numbers
+incertain	adj			نامطمئن	نامطمئن	abstract
+disponible	adj			در دسترس، آزاد (وقت)	در دسترس	time
+cardiaque	adj			قلبی	قلبی	health
+rebelle	adj			سرکش، شورشی	سرکش	character
+supplémentaire	adj			اضافی	اضافی	numbers
+occidental	adj			غربی	غربی	space
+oriental	adj			شرقی	شرقی	space
+municipal	adj			شهری، مربوط به شهرداری	شهری	city
+socialiste	adj			سوسیالیست	سوسیالیست	society
+solennel	adj			رسمی (و باشکوه)، موقر	رسمی (و باشکوه)	culture
+collectif	adj			جمعی، گروهی	جمعی	society
+considérable	adj			قابل ملاحظه، چشمگیر	قابل ملاحظه	numbers
+inévitable	adj			اجتناب‌ناپذیر	اجتناب‌ناپذیر	abstract
+africain	adj			آفریقایی	آفریقایی	society
+éclatant	adj			درخشان (خیره‌کننده)	درخشان (خیره‌کننده)	qualities
+exquis	adj			لذیذ، ظریف	لذیذ	food
+barbare	adj			وحشی (فرهنگ)، بربر	وحشی (فرهنگ)	society
+habile	adj			ماهر، زبردست	ماهر	character
+identique	adj			یکسان، عین هم	یکسان	qualities
+pathétique	adj			رقت‌انگیز	رقت‌انگیز	feelings
+incompréhensible	adj			نامفهوم	نامفهوم	abstract
+médiocre	adj			متوسط (ضعیف)، پیش‌پاافتاده	متوسط (ضعیف)	qualities
+odieux	adj			نفرت‌انگیز	نفرت‌انگیز	feelings
+dérisoire	adj			ناچیز، مسخره (کم)	ناچیز	numbers
+constant	adj			ثابت، دائمی	ثابت	time
+féroce	adj			درنده، وحشی (حمله)	درنده	animals
+industriel	adj			صنعتی	صنعتی	economy
+apparent	adj			آشکار، ظاهری	آشکار	abstract
+convenable	adj			شایسته، مناسب (پسندیده)	شایسته	qualities
+intéressé	adj			علاقه‌مند، نفع‌طلب	علاقه‌مند	feelings
+indépendant	adj			مستقل	مستقل	society
+satisfait	adj			راضی	راضی	feelings
+passionné	adj			پرشور، شیفته	پرشور	feelings
+strict	adj			سخت‌گیرانه، دقیق (قانون)	سخت‌گیرانه	society
+traditionnel	adj			سنتی	سنتی	culture
+vital	adj			حیاتی	حیاتی	health
+favorable	adj			موافق، مساعد	موافق	abstract
+déçu	adj			ناامید (سرخورده)	ناامید (سرخورده)	feelings
+universel	adj			جهانی، همگانی (عام)	جهانی	society
+impuissant	adj			ناتوان، درمانده	ناتوان	feelings
+littéraire	adj			ادبی	ادبی	culture
+scolaire	adj			مدرسه‌ای، درسی	مدرسه‌ای	education
+perpétuel	adj			همیشگی، دائم	همیشگی	time
+dramatique	adj			دراماتیک، وخیم	دراماتیک	culture
+primitif	adj			ابتدایی، بدوی	ابتدایی	culture
+authentique	adj			اصیل، واقعی (نه تقلبی)	اصیل	qualities
+excessif	adj			بیش از حد، افراطی	بیش از حد	numbers
+doué	adj			بااستعداد	بااستعداد	character
+douteux	adj			مشکوک	مشکوک	abstract
+artistique	adj			هنری	هنری	culture
+décisif	adj			تعیین‌کننده	تعیین‌کننده	abstract
+parallèle	adj			موازی	موازی	space
+artificiel	adj			مصنوعی	مصنوعی	science
+neutre	adj			بی‌طرف، خنثی	بی‌طرف	society
+nucléaire	adj			هسته‌ای	هسته‌ای	science
+loyal	adj			وفادار، منصف	وفادار	character
+secondaire	adj			فرعی، ثانوی	فرعی	abstract
+automatique	adj			اتوماتیک، خودکار (دستگاه)	اتوماتیک	science
+glacial	adj			بسیار سرد، یخ‌زده (رفتار)	بسیار سرد	weather
+chaleureux	adj			گرم (رفتار)، صمیمی	گرم (رفتار)	character
+serein	adj			آرام (درون)، آسوده	آرام (درون)	feelings
+relatif	adj			نسبی	نسبی	abstract
+élémentaire	adj			ابتدایی، پایه‌ای	ابتدایی	education
+susceptible	adj			زودرنج	زودرنج	character	note:susceptible یعنی «زودرنج» یا «احتمالِ ... داشتن»، نه «مستعد بیماری» به معنای فارسی رایج.
+impeccable	adj			بی‌نقص (تمیز و مرتب)	بی‌نقص (تمیز و مرتب)	qualities
+fréquent	adj			متداول، پرتکرار	متداول	time
+plaisant	adj			خوشایند	خوشایند	qualities
+héroïque	adj			قهرمانانه	قهرمانانه	society
+culturel	adj			فرهنگی	فرهنگی	culture
+vulnérable	adj			آسیب‌پذیر	آسیب‌پذیر	health
+
+# politics and the state
+député	noun	m		نمایندهٔ مجلس	نمایندهٔ مجلس	society
+sénateur	noun	m		سناتور	سناتور	society
+parlement	noun	m		پارلمان	پارلمان	society
+assemblée nationale	noun	f		مجلس ملی (فرانسه)	مجلس ملی (فرانسه)	society	parts:assemblée national
+constitution	noun	f		قانون اساسی	قانون اساسی	society
+réforme	noun	f		اصلاحات	اصلاحات	society
+opposition	noun	f		مخالفت، اپوزیسیون	مخالفت	society
+partisan	noun	m		هوادار، طرفدار (یک عقیده)	هوادار	society
+militant	noun	m		فعال (سیاسی)	فعال (سیاسی)	society
+élu	noun	m		منتخب (نماینده)	منتخب (نماینده)	society
+électeur	noun	m		رأی‌دهنده	رأی‌دهنده	society
+campagne électorale	noun	f	campagnes électorales	مبارزهٔ انتخاباتی	مبارزهٔ انتخاباتی	society	checked:level
+scrutin	noun	m		رأی‌گیری	رأی‌گیری	society	checked:level
+sondage	noun	m		نظرسنجی	نظرسنجی	society
+majoritaire	adj			اکثریت (دارای بیشترین رأی)	اکثریت (دارای بیشترین رأی)	society	checked:level
+minorité	noun	f		اقلیت	اقلیت	society
+gauche	noun	f		چپ (سیاسی)	چپ (سیاسی)	society	code:gauche-2	sense_of:gauche	checked:level
+droite	noun	f		راست (سیاسی)	راست (سیاسی)	society	code:droite-2	sense_of:droite	checked:level
+dictature	noun	f		دیکتاتوری	دیکتاتوری	society
+régime	noun	m		رژیم (حکومت)	رژیم (حکومت)	society	code:régime-2	sense_of:régime
+diplomate	noun	mf		دیپلمات	دیپلمات	society
+diplomatie	noun	f		دیپلماسی	دیپلماسی	society
+traité	noun	m		پیمان، معاهده	پیمان	society
+accord de paix	noun	m	accords de paix	پیمان صلح	پیمان صلح	society	parts:accord paix
+négociation	noun	f		مذاکره	مذاکره	society
+sanction	noun	f		تحریم، مجازات	تحریم	society
+souveraineté	noun	f		حاکمیت	حاکمیت	society	checked:level
+autorités	noun	f		مقامات (دولتی)	مقامات (دولتی)	society	number:pl_only
+fonction publique	noun	f		خدمات دولتی، کارمندی دولت	خدمات دولتی	work	parts:fonction public-adj
+préfet	noun	m		استاندار (فرانسه)	استاندار (فرانسه)	society
+citoyenneté	noun	f		شهروندی	شهروندی	society	checked:level
+laïcité	noun	f		لائیسیته، جدایی دین از دولت	لائیسیته	society	checked:level
+solidarité	noun	f		همبستگی	همبستگی	society
+intégration	noun	f		ادغام (در جامعه)، جذب	ادغام (در جامعه)	society
+discrimination	noun	f		تبعیض	تبعیض	society	checked:level
+racisme	noun	m		نژادپرستی	نژادپرستی	society
+raciste	adj			نژادپرست	نژادپرست	society
+égalité des chances	noun	f		برابری فرصت‌ها	برابری فرصت‌ها	society	parts:égalité chance
+quartier défavorisé	noun	m	quartiers défavorisés	محلهٔ محروم	محلهٔ محروم	city	parts:quartier	checked:level
+logement social	noun	m	logements sociaux	مسکن اجتماعی (دولتی ارزان)	مسکن اجتماعی (دولتی ارزان)	home	parts:logement social	checked:level
+sans-abri	noun	mf		بی‌خانمان	بی‌خانمان	society	checked:level
+mendiant	noun	m		گدا	گدا	society
+exclusion	noun	f		طرد، محرومیت (اجتماعی)	طرد	society
+réfugié politique	noun	m	réfugiés politiques	پناهندهٔ سیاسی	پناهندهٔ سیاسی	society	parts:réfugié politique-adj
+émigrer	verb			مهاجرت کردن (از کشور)	مهاجرت کردن (از کشور)	society
+immigrer	verb			مهاجرت کردن (به کشور)	مهاجرت کردن (به کشور)	society
+expulser	verb			اخراج کردن (از کشور)، بیرون انداختن	اخراج کردن (از کشور)	society
+manifestant	noun	m		تظاهرکننده	تظاهرکننده	society
+révolte	noun	f		شورش	شورش	society
+révolutionnaire	adj			انقلابی	انقلابی	society
+émeute	noun	f		آشوب، شورش (خیابانی)	آشوب	society
+colonie	noun	f		مستعمره، اردوی (بچه‌ها)	مستعمره	society
+colonial	adj			استعماری	استعماری	society
+guerre civile	noun	f	guerres civiles	جنگ داخلی	جنگ داخلی	society	parts:guerre civil
+armistice	noun	m		آتش‌بس (پایان جنگ)	آتش‌بس (پایان جنگ)	society	mastery:recognize
+trêve	noun	f		آتش‌بس موقت	آتش‌بس موقت	society
+invasion	noun	f		تهاجم، یورش (کشور)	تهاجم	society
+occupation	noun	f		اشغالِ نظامی، مشغله	اشغالِ نظامی	society
+bombardement	noun	m		بمباران	بمباران	society
+bombarder	verb			بمباران کردن	بمباران کردن	society
+missile	noun	m		موشک	موشک	society
+arme nucléaire	noun	f	armes nucléaires	سلاح هسته‌ای	سلاح هسته‌ای	society	parts:arme nucléaire
+terrorisme	noun	m		تروریسم	تروریسم	society
+attentat-suicide	noun	m	attentats-suicides	حملهٔ انتحاری	حملهٔ انتحاری	society	checked:level
+
+# law and justice
+procureur	noun	m		دادستان	دادستان	society
+avocat de la défense	noun	m	avocats de la défense	وکیل مدافع	وکیل مدافع	society	parts:avocat défense
+plaider	verb			دفاع کردن (در دادگاه)، وکالت کردن	دفاع کردن (در دادگاه)	society
+verdict	noun	m		رأی (دادگاه)، حکم	رأی (دادگاه)	society
+condamné	noun	m		محکوم	محکوم	society
+condamnation	noun	f		محکومیت	محکومیت	society
+acquitter	verb			تبرئه کردن	تبرئه کردن	society
+peine de mort	noun	f	peines de mort	مجازات اعدام	مجازات اعدام	society	parts:peine mort-n
+prison à vie	noun	f		حبس ابد	حبس ابد	society	parts:prison vie
+délit	noun	m		جرم (کوچک)، بزه	جرم (کوچک)	society
+infraction	noun	f		تخلف	تخلف	society
+fraude	noun	f		تقلب، کلاهبرداری	تقلب	society
+corruption	noun	f		فساد (مالی)	فساد (مالی)	society
+escroc	noun	m		کلاهبردار	کلاهبردار	society
+arnaque	noun	f		کلاهبرداری (کوچک)، کلک	تقلب	society	register:familier
+kidnapper	verb			آدم‌ربایی کردن، دزدیدن (آدم)	آدم‌ربایی کردن	society
+enlèvement	noun	m		آدم‌ربایی	آدم‌ربایی	society
+cambrioler	verb			دستبرد زدن (به خانه)	دستبرد زدن (به خانه)	society
+cambriolage	noun	m		دزدی از خانه، سرقت (مسکن)	دزدی از خانه	society
+cambrioleur	noun	m		سارق (خانه)	سارق (خانه)	society
+agression	noun	f		ضرب و جرح، حمله (به کسی)	ضرب و جرح	society
+agresser	verb			حمله کردن (به کسی در خیابان)	حمله کردن (به کسی در خیابان)	society
+harceler	verb			آزار دادن (مداوم)، مزاحمت ایجاد کردن	آزار دادن (مداوم)	society
+harcèlement	noun	m		آزار (مداوم)، مزاحمت	آزار (مداوم)	society
+menotte	noun	f		دستبند (پلیس)	دستبند (پلیس)	society
+interrogatoire	noun	m		بازجویی	بازجویی	society
+alibi	noun	m		دلیل غیبت، عذر موجه	دلیل غیبت	society
+indice	noun	m		سرنخ، شاخص	سرنخ	society
+détenu	noun	m		زندانی (بازداشتی)	زندانی (بازداشتی)	society
+détenir	verb			بازداشت کردن، در اختیار داشتن	بازداشت کردن	society
+évasion	noun	f		فرار (از زندان)	فرار (از زندان)	society
+s'évader	verb			فرار کردن (از زندان)	فرار کردن (از زندان)	society
+gang	noun	m		باند (تبهکاران)	باند (تبهکاران)	society
+dealer	noun	m		فروشندهٔ مواد	فروشندهٔ مواد	society	mastery:recognize
+trafic	noun	m		قاچاق، ترافیک (رفت‌وآمد زیاد)	قاچاق	society
+trafiquant	noun	m		قاچاقچی	قاچاقچی	society
+contrebande	noun	f		قاچاق (کالا)	قاچاق (کالا)	society	checked:level
+légiférer	verb			قانون‌گذاری کردن	قانون‌گذاری کردن	society	checked:level	mastery:recognize
+règlementation	noun	f		مقررات (رسمی)	مقررات (رسمی)	society	checked:level
+interdiction	noun	f		ممنوعیت	ممنوعیت	society
+droit de vote	noun	m	droits de vote	حق رأی	حق رأی	society	parts:droit vote
+liberté d'expression	noun	f		آزادی بیان	آزادی بیان	society	parts:liberté expression
+censure	noun	f		سانسور	سانسور	media
+censurer	verb			سانسور کردن	سانسور کردن	media
+
+# the economy and business
+croissance	noun	f		رشد (اقتصادی)	رشد (اقتصادی)	economy
+inflation	noun	f		تورم	تورم	economy	checked:level
+récession	noun	f		رکود (اقتصادی)	رکود (اقتصادی)	economy	checked:level
+crise économique	noun	f	crises économiques	بحران اقتصادی	بحران اقتصادی	economy	parts:crise économique
+pouvoir d'achat	noun	m		قدرت خرید	قدرت خرید	economy	parts:pouvoir-n achat	checked:level
+niveau de vie	noun	m	niveaux de vie	سطح زندگی	سطح زندگی	economy	parts:niveau vie
+bénéfice	noun	m		سود (خالص)	سود (خالص)	economy
+chiffre d'affaires	noun	m	chiffres d'affaires	گردش مالی، فروش (سالانه)	گردش مالی	economy	parts:chiffre affaire	checked:level
+investissement	noun	m		سرمایه‌گذاری	سرمایه‌گذاری	economy
+investisseur	noun	m		سرمایه‌گذار	سرمایه‌گذار	economy
+actionnaire	noun	mf		سهامدار	سهامدار	economy	checked:level
+action	noun	f		سهم (بورس)	سهم (بورس)	economy	code:action-2	sense_of:action
+bourse	noun	f		بورس (اوراق بهادار)	بورس (اوراق بهادار)	economy	code:bourse-2	sense_of:bourse
+capital	noun	m	capitaux	سرمایه	سرمایه	economy
+capitalisme	noun	m		سرمایه‌داری	سرمایه‌داری	economy
+concurrence	noun	f		رقابت (تجاری)	رقابت (تجاری)	economy
+concurrent	noun	m		رقیب (تجاری)	رقیب (تجاری)	economy
+exportation	noun	f		صادرات	صادرات	economy
+importation	noun	f		واردات	واردات	economy
+exporter	verb			صادر کردن	صادر کردن	economy
+importer	verb			وارد کردن (کالا)	وارد کردن (کالا)	economy	code:importer-2	sense_of:importer	checked:level
+fabrication	noun	f		ساخت، تولید (کارخانه‌ای)	ساخت	economy
+faillite	noun	f		ورشکستگی	ورشکستگی	economy
+faire faillite	phrase			ورشکست شدن	ورشکست شدن	economy	parts:faillite
+dette publique	noun	f	dettes publiques	بدهی دولت	بدهی دولت	economy	parts:dette public-adj
+subvention	noun	f		یارانه، کمک مالی (دولتی)	یارانه	economy
+salarié	noun	m		حقوق‌بگیر، کارمند (مزدبگیر)	حقوق‌بگیر	work
+cadre	noun	m		مدیر میانی، کارمند ارشد	مدیر میانی	work	code:cadre-2	sense_of:cadre
+patronat	noun	m		کارفرمایان	کارفرمایان	work	checked:level
+recrutement	noun	m		استخدام (جذب نیرو)	استخدام (جذب نیرو)	work
+recruter	verb			جذب کردن (نیرو)، استخدام کردن (گروهی)	جذب کردن (نیرو)	work
+licenciement	noun	m		اخراج (از کار)، تعدیل نیرو	اخراج (از کار)	work
+démission	noun	f		استعفا	استعفا	work
+promotion	noun	f		ترفیع، حراج (ویژه)	ترفیع	work
+augmentation	noun	f		افزایش (حقوق)	افزایش (حقوق)	work
+prime	noun	f		پاداش (مالی)، حق بیمه	پاداش (مالی)	work
+télétravail	noun	m		دورکاری	دورکاری	work	checked:level
+CDI	noun	m		قرارداد دائم	قرارداد دائم	work	checked:level
+CDD	noun	m		قرارداد موقت	قرارداد موقت	work	checked:level
+intérim	noun	m		کار موقت (از طریق شرکت)	کار موقت (از طریق شرکت)	work	checked:level
+heures supplémentaires	noun	f		اضافه‌کاری	اضافه‌کاری	work	parts:heure supplémentaire	number:pl_only
+congé maternité	noun	m	congés maternité	مرخصی زایمان	مرخصی زایمان	work	parts:congé	checked:level
+arrêt maladie	noun	m	arrêts maladie	مرخصی استعلاجی	مرخصی استعلاجی	work	parts:arrêt maladie	checked:level
+syndical	adj			صنفی، سندیکایی	صنفی	work	checked:level
+négocier un contrat	phrase			سر قرارداد مذاکره کردن	سر قرارداد مذاکره کردن	work	parts:négocier contrat
+entrepreneur	noun	m		کارآفرین، پیمانکار	کارآفرین	work
+start-up	noun	f		استارتاپ، شرکت نوپا	استارتاپ	work	checked:level
+gestion	noun	f		مدیریت (امور)، گردانندگی	مدیریت (امور)	work
+gestionnaire	noun	mf		مدیر (امور)، کارگزار	مدیر (امور)	work	checked:level
+comptabilité	noun	f		حسابداری	حسابداری	work
+service client	noun	m		خدمات مشتریان	خدمات مشتریان	work	parts:service client	checked:level
+fournisseur	noun	m		تأمین‌کننده	تأمین‌کننده	economy
+clientèle	noun	f		مشتریان	مشتریان	economy
+publicitaire	adj			تبلیغاتی	تبلیغاتی	media
+emballage	noun	m		بسته‌بندی	بسته‌بندی	economy
+stock	noun	m		موجودی انبار	موجودی انبار	economy
+entrepôt	noun	m		انبار (بزرگ)	انبار (بزرگ)	economy
+tarif	noun	m		تعرفه، نرخ	تعرفه	economy
+devis	noun	m		پیش‌فاکتور، برآورد هزینه	پیش‌فاکتور	economy	checked:level
+paiement	noun	m		پرداخت	پرداخت	economy
+versement	noun	m		واریز، قسط	واریز	economy
+crédit immobilier	noun	m	crédits immobiliers	وام مسکن	وام مسکن	economy	parts:crédit	checked:level
+taux	noun	m		نرخ (بهره یا بیکاری)	نرخ (بهره یا بیکاری)	economy
+taux de chômage	noun	m		نرخ بیکاری	نرخ بیکاری	economy	parts:taux chômage
+pourcentage	noun	m		درصد	درصد	numbers
+statistique	noun	f		آمار	آمار	numbers
+hausse	noun	f		افزایش (قیمت)	افزایش (قیمت)	economy
+baisse	noun	f		کاهش (قیمت)	کاهش (قیمت)	economy
+économiser	verb			پس‌انداز کردن، صرفه‌جویی کردن	پس‌انداز کردن	economy
+rentable	adj			سودآور	سودآور	economy	checked:level
+coûteux	adj			پرهزینه	پرهزینه	economy
+fortuné	adj			ثروتمند (متمول)	ثروتمند (متمول)	economy	register:formal
+endetté	adj			بدهکار (زیر بار قرض)	بدهکار (زیر بار قرض)	economy	checked:level
+financement	noun	m		تأمین مالی	تأمین مالی	economy
+financer	verb			تأمین مالی کردن	تأمین مالی کردن	economy
+finances	noun	f		امور مالی	امور مالی	economy	number:pl_only
+banquier	noun	m		بانکدار	بانکدار	economy
+assurance	noun	f		بیمه	بیمه	economy
+assurance maladie	noun	f		بیمهٔ درمانی	بیمهٔ درمانی	health	parts:assurance maladie	checked:level
+retraite anticipée	noun	f		بازنشستگی پیش از موعد	بازنشستگی پیش از موعد	work	parts:retraite	checked:level
+mondialisation	noun	f		جهانی‌شدن	جهانی‌شدن	economy	checked:level
+délocaliser	verb			به خارج منتقل کردن (کارخانه)	به خارج منتقل کردن (کارخانه)	economy	checked:level
+agriculture	noun	f		کشاورزی	کشاورزی	economy
+récolte	noun	f		برداشت محصول	برداشت محصول	nature
+récolter	verb			برداشت کردن (محصول)	برداشت کردن (محصول)	nature
+élevage	noun	m		دامداری، پرورش (حیوان)	دامداری	nature
+commerce équitable	noun	m		تجارت منصفانه	تجارت منصفانه	economy	parts:commerce	checked:level
+consommation responsable	noun	f		مصرف مسئولانه	مصرف مسئولانه	economy	parts:consommation responsable	checked:level
+
+# science and technology
+chercheur	noun	m		پژوهشگر	پژوهشگر	science
+scientifique	noun	mf		دانشمند (علوم)	دانشمند (علوم)	science	code:scientifique-n
+expérience	noun	f		آزمایش (علمی)	آزمایش (علمی)	science	code:expérience-2	sense_of:expérience
+hypothèse	noun	f		فرضیه	فرضیه	science
+phénomène	noun	m		پدیده	پدیده	science
+innovation	noun	f		نوآوری	نوآوری	science
+invention	noun	f		اختراع	اختراع	science
+inventeur	noun	m		مخترع	مخترع	science
+progrès technique	noun	m		پیشرفت فنی	پیشرفت فنی	science	parts:progrès technique
+technologie de pointe	noun	f		فناوری پیشرفته	فناوری پیشرفته	science	parts:technologie pointe
+intelligence artificielle	noun	f		هوش مصنوعی	هوش مصنوعی	science	parts:intelligence artificiel	checked:level
+données	noun	f		داده‌ها	داده‌ها	science	number:pl_only
+algorithme	noun	m		الگوریتم	الگوریتم	science	checked:level
+programme	noun	m		برنامه (رایانه)	برنامه (رایانه)	science	code:programme-2	sense_of:programme
+programmer	verb			برنامه‌نویسی کردن	برنامه‌نویسی کردن	science
+informatique	noun	f		علوم رایانه، انفورماتیک	علوم رایانه	science
+ordinateur portable	noun	m	ordinateurs portables	لپ‌تاپ	لپ‌تاپ	science	parts:ordinateur portable
+écran tactile	noun	m	écrans tactiles	صفحهٔ لمسی	صفحهٔ لمسی	science	parts:écran	checked:level
+connexion	noun	f		اتصال (اینترنت)	اتصال (اینترنت)	science
+réseau social	noun	m	réseaux sociaux	شبکهٔ اجتماعی (یکی)	شبکهٔ اجتماعی (یکی)	media	parts:réseau social
+utilisateur	noun	m		کاربر	کاربر	science
+internaute	noun	mf		کاربر اینترنت	کاربر اینترنت	media	checked:level
+navigateur	noun	m		مرورگر	مرورگر	science	checked:level
+moteur de recherche	noun	m	moteurs de recherche	موتور جست‌وجو	موتور جست‌وجو	science	parts:moteur recherche
+piratage	noun	m		هک (نفوذ غیرقانونی)	هک (نفوذ غیرقانونی)	science	checked:level
+vie privée	noun	f		حریم خصوصی	حریم خصوصی	society	parts:vie privé
+mise à jour	noun	f	mises à jour	به‌روزرسانی	به‌روزرسانی	science	parts:mise
+électronique	adj			الکترونیکی	الکترونیکی	science
+courrier électronique	noun	m	courriers électroniques	پست الکترونیکی	پست الکترونیکی	media	parts:courrier électronique
+sauvegarder	verb			پشتیبان گرفتن، ذخیره کردن (فایل)	پشتیبان گرفتن	science
+pièce jointe	noun	f	pièces jointes	پیوست (ایمیل)	پیوست (ایمیل)	media	parts:pièce joindre	checked:level
+télécommande	noun	f		کنترل از راه دور	کنترل از راه دور	home
+satellite	noun	m		ماهواره	ماهواره	science
+fusée	noun	f		موشک (فضایی)	موشک (فضایی)	science
+astronaute	noun	mf		فضانورد	فضانورد	science
+espace	noun	m		فضا (کیهان)	فضا (کیهان)	science	code:espace-2	sense_of:espace
+étoile filante	noun	f	étoiles filantes	شهاب	شهاب	nature	parts:étoile
+galaxie	noun	f		کهکشان	کهکشان	science
+gravité	noun	f		جاذبه، وخامت	جاذبه	science
+oxygène	noun	m		اکسیژن	اکسیژن	science
+molécule	noun	f		مولکول	مولکول	science
+atome	noun	m		اتم	اتم	science
+chimie	noun	f		شیمی	شیمی	science
+physique	noun	f		فیزیک	فیزیک	science	code:physique-n
+biologie	noun	f		زیست‌شناسی	زیست‌شناسی	science
+astronomie	noun	f		ستاره‌شناسی	ستاره‌شناسی	science	checked:level
+expérimenter	verb			آزمایش کردن (علمی)	آزمایش کردن (علمی)	science
+mesure	noun	f		اقدام (رسمی)، تدبیر	اقدام (رسمی)	society	code:mesure-2	sense_of:mesure	coll:prendre des mesures → اقدام کردن
+analyser	verb			تحلیل کردن	تحلیل کردن	science
+démontrer	verb			اثبات کردن، نشان دادن (با دلیل)	اثبات کردن	science
+évoluer	verb			تحول یافتن، تکامل یافتن	تحول یافتن	science
+évolution	noun	f		تحول، تکامل	تحول	science
+développement	noun	m		توسعه، رشد	توسعه	science
+processus	noun	m		فرایند	فرایند	science
+structure	noun	f		ساختار	ساختار	science
+solaire	adj			خورشیدی	خورشیدی	science
+système solaire	noun	m		منظومهٔ شمسی	منظومهٔ شمسی	science	parts:système solaire
+
+# the environment
+environnemental	adj			زیست‌محیطی	زیست‌محیطی	nature	checked:level
+écologie	noun	f		بوم‌شناسی، محیط‌زیست‌گرایی	بوم‌شناسی	nature
+écologique	adj			زیست‌محیطی (سازگار با طبیعت)	زیست‌محیطی (سازگار با طبیعت)	nature
+biodiversité	noun	f		تنوع زیستی	تنوع زیستی	nature	checked:level
+écosystème	noun	m		زیست‌بوم	زیست‌بوم	nature	checked:level
+émission	noun	f		انتشار (گاز)	انتشار (گاز)	nature	code:émission-2	sense_of:émission
+gaz à effet de serre	noun	m		گاز گلخانه‌ای	گاز گلخانه‌ای	nature	parts:gaz effet	checked:level
+effet de serre	noun	m		اثر گلخانه‌ای	اثر گلخانه‌ای	nature	parts:effet	checked:level
+énergie renouvelable	noun	f	énergies renouvelables	انرژی تجدیدپذیر	انرژی تجدیدپذیر	nature	parts:énergie	checked:level
+éolienne	noun	f		توربین بادی	توربین بادی	nature	checked:level
+panneau solaire	noun	m	panneaux solaires	صفحهٔ خورشیدی	صفحهٔ خورشیدی	nature	parts:panneau solaire
+centrale nucléaire	noun	f	centrales nucléaires	نیروگاه هسته‌ای	نیروگاه هسته‌ای	nature	parts:central nucléaire	checked:level
+déchets nucléaires	noun	m		زباله‌های هسته‌ای	زباله‌های هسته‌ای	nature	parts:déchet nucléaire	number:pl_only	checked:level
+durable	adj			پایدار، بادوام	پایدار	nature
+développement durable	noun	m		توسعهٔ پایدار	توسعهٔ پایدار	nature	parts:développement durable	checked:level
+sécheresse	noun	f		خشکسالی	خشکسالی	weather
+canicule	noun	f		موج گرما	موج گرما	weather	checked:level
+déforestation	noun	f		جنگل‌زدایی	جنگل‌زدایی	nature	checked:level
+fonte des glaces	noun	f		ذوب یخ‌ها	ذوب یخ‌ها	nature	parts:glace	checked:level
+niveau de la mer	noun	m		سطح دریا	سطح دریا	nature	parts:niveau mer
+disparition	noun	f		ناپدیدی، انقراض	ناپدیدی	nature
+espèce en voie de disparition	noun	f	espèces en voie de disparition	گونهٔ در حال انقراض	گونهٔ در حال انقراض	nature	parts:espèce voie disparition	checked:level
+pollution de l'air	noun	f		آلودگی هوا	آلودگی هوا	nature	parts:pollution air
+trier	verb			جدا کردن (زباله)، دسته‌بندی کردن	جدا کردن (زباله)	nature
+tri sélectif	noun	m		تفکیک زباله	تفکیک زباله	nature	checked:level
+composter	verb			کمپوست کردن	کمپوست کردن	nature	checked:level
+emballage plastique	noun	m	emballages plastiques	بسته‌بندی پلاستیکی	بسته‌بندی پلاستیکی	nature	parts:emballage plastique
+sac plastique	noun	m	sacs plastiques	کیسهٔ پلاستیکی	کیسهٔ پلاستیکی	shopping	parts:sac plastique
+gaspillage alimentaire	noun	m		هدر رفتن غذا	هدر رفتن غذا	food	parts:gaspillage	checked:level
+ressource	noun	f		منبع (مادی یا مالی)	منبع (مادی یا مالی)	economy
+ressources naturelles	noun	f		منابع طبیعی	منابع طبیعی	nature	parts:ressource naturel	number:pl_only
+nappe phréatique	noun	f	nappes phréatiques	آب‌های زیرزمینی	آب‌های زیرزمینی	nature	parts:nappe	checked:level
+catastrophe naturelle	noun	f	catastrophes naturelles	بلای طبیعی	بلای طبیعی	nature	parts:catastrophe naturel
+ouragan	noun	m		تندباد، توفند	تندباد	weather
+volcan	noun	m		آتشفشان	آتشفشان	nature
+avalanche	noun	f		بهمن	بهمن	nature
+glacier	noun	m		یخچال طبیعی	یخچال طبیعی	nature
+marais	noun	m		مرداب	مرداب	nature
+étang	noun	m		برکه	برکه	nature
+torrent	noun	m		رود خروشان، سیلاب	رود خروشان	nature
+clairière	noun	f		فضای باز در جنگل	فضای باز در جنگل	nature	mastery:recognize
+feuillage	noun	m		شاخ و برگ	شاخ و برگ	nature
+écorce	noun	f		پوست (درخت)	پوست (درخت)	nature
+tige	noun	f		ساقه	ساقه	nature
+épine	noun	f		خار	خار	nature
+gibier	noun	m		شکار (گوشت)	شکار (گوشت)	animals
+troupeau	noun	m	troupeaux	گله	گله	animals
+berger	noun	m		چوپان	چوپان	animals
+fourrure	noun	f		خز	خز	animals
+griffe	noun	f		چنگال (پنجه)	چنگال (پنجه)	animals
+baleine	noun	f		نهنگ	نهنگ	animals
+requin	noun	m		کوسه	کوسه	animals
+dauphin	noun	m		دلفین	دلفین	animals
+lézard	noun	m		مارمولک	مارمولک	animals
+grenouille	noun	f		قورباغه	قورباغه	animals
+écureuil	noun	m		سنجاب	سنجاب	animals
+cerf	noun	m		گوزن	گوزن	animals
+biche	noun	f		آهوی ماده	آهوی ماده	animals
+mouette	noun	f		مرغ دریایی	مرغ دریایی	animals
+corbeau	noun	m	corbeaux	کلاغ	کلاغ	animals
+hibou	noun	m	hiboux	جغد	جغد	animals
+chouette	noun	f		جغد (کوچک)	جغد (کوچک)	animals	code:chouette-n
+chenille	noun	f		کرم ابریشم، کرم (پروانه)	کرم ابریشم	animals
+ver	noun	m		کرم	کرم	animals
+
+# health and medicine
+santé publique	noun	f		بهداشت عمومی	بهداشت عمومی	health	parts:santé public-adj
+épidémie	noun	f		همه‌گیری، اپیدمی	همه‌گیری	health
+pandémie	noun	f		همه‌گیری جهانی	همه‌گیری جهانی	health	checked:level
+contagieux	adj			واگیردار	واگیردار	health
+infection	noun	f		عفونت	عفونت	health
+microbe	noun	m		میکروب	میکروب	health
+bactérie	noun	f		باکتری	باکتری	health
+prévention	noun	f		پیشگیری	پیشگیری	health
+prévenir	verb			پیشگیری کردن	پیشگیری کردن	health	code:prévenir-2	sense_of:prévenir
+dépistage	noun	m		غربالگری، آزمایش تشخیصی	غربالگری	health	checked:level
+diagnostic	noun	m		تشخیص (بیماری)	تشخیص (بیماری)	health
+chronique	adj			مزمن	مزمن	health
+guérison	noun	f		بهبود، شفا	بهبود	health
+chirurgie	noun	f		جراحی	جراحی	health
+anesthésie	noun	f		بیهوشی (پزشکی)	بیهوشی (پزشکی)	health	checked:level
+greffe	noun	f		پیوند (عضو)	پیوند (عضو)	health	checked:level
+handicap	noun	m		معلولیت	معلولیت	health
+handicapé	adj			معلول	معلول	health
+fauteuil roulant	noun	m	fauteuils roulants	ویلچر	ویلچر	health	parts:fauteuil	checked:level
+béquille	noun	f		چوب زیر بغل	چوب زیر بغل	health
+pansement	noun	m		چسب زخم، باند (زخم)	چسب زخم	health
+brûlure	noun	f		سوختگی	سوختگی	health
+fracture	noun	f		شکستگی (استخوان)	شکستگی (استخوان)	health
+entorse	noun	f		پیچ‌خوردگی	پیچ‌خوردگی	health	checked:level
+nausée	noun	f		تهوع	تهوع	health
+migraine	noun	f		میگرن	میگرن	health
+insomnie	noun	f		بی‌خوابی	بی‌خوابی	health
+épuisement	noun	m		فرسودگی، از پا افتادگی	فرسودگی	health
+burn-out	noun	m		فرسودگی شغلی	فرسودگی شغلی	health	checked:level
+psychologue	noun	mf		روان‌شناس	روان‌شناس	health
+psychiatre	noun	mf		روان‌پزشک	روان‌پزشک	health
+santé mentale	noun	f		سلامت روان	سلامت روان	health	parts:santé mental
+addiction	noun	f		اعتیاد	اعتیاد	health	checked:level
+dépendance	noun	f		وابستگی، اعتیاد (به مواد)	وابستگی	health
+toxicomane	noun	mf		معتاد (به مواد)	معتاد (به مواد)	health	checked:level
+obésité	noun	f		چاقی (بیماری)	چاقی (بیماری)	health	checked:level
+nutrition	noun	f		تغذیه	تغذیه	health	checked:level
+alimentation	noun	f		تغذیه (غذا)، خوراک (روزانه)	تغذیه (غذا)	food
+équilibré	adj			متعادل	متعادل	health
+espérance	noun	f		امید (به آینده)	امید (به آینده)	feelings	register:formal
+espérance de vie	noun	f		امید به زندگی	امید به زندگی	health	parts:espérance vie
+mortalité	noun	f		مرگ‌ومیر	مرگ‌ومیر	health
+pouls	noun	m		نبض	نبض	health
+tension	noun	f		تنش، فشار (روانی)	تنش	feelings
+tension artérielle	noun	f		فشار خون	فشار خون	health	parts:tension	checked:level
+cœur	noun	m		مرکز، قلب (شهر)	مرکز	city	code:cœur-2	sense_of:cœur	checked:level
+
+# opinions and argument
+argumenter	verb			استدلال کردن	استدلال کردن	abstract
+débattre	verb			بحث کردن (دربارهٔ موضوعی)	بحث کردن (دربارهٔ موضوعی)	abstract
+objection	noun	f		اعتراض (مخالفت با نظر)	اعتراض (مخالفت با نظر)	abstract
+nuance	noun	f		ظرافت (معنایی)، سایه‌روشن	ظرافت (معنایی)	abstract
+nuancer	verb			تعدیل کردن (نظر)	تعدیل کردن (نظر)	abstract	checked:level
+notion	noun	f		مفهوم، تصور	مفهوم	abstract
+concept	noun	m		مفهوم (علمی)، ایده (اصلی)	مفهوم (علمی)	abstract
+définition	noun	f		تعریفِ (یک واژه)	تعریفِ (یک واژه)	abstract
+définir	verb			تعریف کردن	تعریف کردن	abstract
+interpréter	verb			تفسیر کردن، اجرا کردن (نقش)	تفسیر کردن	abstract
+interprétation	noun	f		تفسیر	تفسیر	abstract
+signification	noun	f		معنا، مفهوم (کلمه)	معنا	abstract
+allusion	noun	f		کنایه، اشارهٔ ضمنی	کنایه	abstract
+faire allusion à	phrase			گوشه زدن به، اشارهٔ غیرمستقیم کردن به	گوشه زدن به	media	parts:faire allusion
+critère	noun	m		معیار (سنجش)	معیار (سنجش)	abstract
+priorité	noun	f		اولویت	اولویت	abstract
+enjeu	noun	m	enjeux	آنچه در میان است، مسئلهٔ اصلی	آنچه در میان است	abstract	checked:level
+défaut	noun	m		کمبود (نبود)	کمبود (نبود)	abstract	code:défaut-2	sense_of:défaut	coll:à défaut de → در نبودِ
+stratégie	noun	f		راهبرد	راهبرد	abstract
+tactique	noun	f		تاکتیک	تاکتیک	abstract
+objectif	adj			بی‌طرف، عینی	بی‌طرف	abstract	code:objectif-adj
+subjectif	adj			شخصی (نظر)، درون‌ذهنی	شخصی (نظر)	abstract
+cohérent	adj			منسجم	منسجم	abstract
+contradiction	noun	f		تناقض	تناقض	abstract
+contradictoire	adj			متناقض	متناقض	abstract
+paradoxe	noun	m		تناقض‌نما، پارادوکس	تناقض‌نما	abstract
+préjugé	noun	m		پیش‌داوری	پیش‌داوری	society
+cliché	noun	m		کلیشه	کلیشه	abstract
+stéréotype	noun	m		کلیشه (فکری)، تصور قالبی	کلیشه (فکری)	society
+tabou	noun	m		تابو	تابو	society
+polémique	noun	f		جنجال (بحث‌برانگیز)، مناقشه	جنجال (بحث‌برانگیز)	media
+controverse	noun	f		بحث (اختلافی)، مجادله	بحث (اختلافی)	media
+consensus	noun	m		اجماع	اجماع	society	checked:level
+compromis	noun	m		مصالحه، سازش	مصالحه	society
+avantage et inconvénient	phrase			مزایا و معایب	مزایا و معایب	abstract	parts:avantage inconvénient
+insister sur	phrase			تأکید کردن بر	تأکید کردن بر	abstract	parts:insister
+mettre l'accent sur	phrase			تأکید گذاشتن بر	تأکید گذاشتن بر	abstract	parts:mettre accent
+partager l'avis de	phrase			با نظرِ (کسی) موافق بودن	با نظرِ (کسی) موافق بودن	abstract	parts:partager avis
+prendre position	phrase			موضع گرفتن	موضع گرفتن	abstract	parts:prendre position
+selon moi	phrase			به عقیدهٔ من	به عقیدهٔ من	abstract	parts:selon
+il est vrai que	phrase			درست است که	درست است که	abstract	parts:vrai
+force est de constater	phrase			باید پذیرفت که	باید پذیرفت که	abstract	parts:force constater	register:formal
+quoi qu'il en soit	adv			هر چه باشد، به هر حال (رسمی)	هر چه باشد	function	register:formal
+en ce qui concerne	prep			در مورد، در خصوصِ	در مورد	function	parts:concerner
+d'un côté	adv			از یک طرف	از یک طرف	function	parts:côté
+de l'autre côté	adv			از طرف دیگر	از طرف دیگر	function	parts:côté
+par conséquent	adv			در نتیجه، بنابراین	در نتیجه	function	parts:conséquence
+en conclusion	adv			در پایان، در نتیجه‌گیری	در پایان	function	parts:conclusion
+pour conclure	adv			برای جمع‌بندی	برای جمع‌بندی	function	parts:conclure
+tout d'abord	adv			پیش از هر چیز، نخست	پیش از هر چیز	function
+c'est pourquoi	adv			به همین دلیل	به همین دلیل	function
+autrement dit	adv			به عبارت دیگر	به عبارت دیگر	function	parts:autrement dire
+notamment	adv			به‌ویژه، از جمله	به‌ویژه	function
+à savoir	adv			یعنی، از این قرار	یعنی	function	parts:savoir
+voire	adv			و حتی، بلکه	و حتی	function	register:formal
+soi-disant	adj			به اصطلاح، ظاهراً (به ادعای خود)	به اصطلاح	abstract
+prétendu	adj			ادعایی، به‌اصطلاح	ادعایی	abstract	register:formal
+éventuel	adj			احتمالی	احتمالی	abstract	note:éventuel یعنی «احتمالی»، نه «نهایی» (نهایی = final).
+éventuellement	adv			احتمالاً (در صورت لزوم)	احتمالاً (در صورت لزوم)	abstract	note:éventuellement یعنی «اگر لازم شد، احتمالاً»، نه «سرانجام» (سرانجام = finalement).
+manifestement	adv			آشکارا	آشکارا	function
+incontestable	adj			انکارناپذیر	انکارناپذیر	abstract
+discutable	adj			قابل بحث، مشکوک (درستی)	قابل بحث	abstract
+pertinent	adj			مرتبط، به‌جا	مرتبط	abstract
+convaincant	adj			قانع‌کننده	قانع‌کننده	abstract
+justifié	adj			موجه	موجه	abstract
+raisonner	verb			استدلال کردن (منطقی)	استدلال کردن (منطقی)	abstract
+déduire	verb			استنتاج کردن، کسر کردن	استنتاج کردن	abstract
+supposition	noun	f		فرض، گمان	فرض	abstract
+remettre en question	phrase			زیر سؤال بردن	زیر سؤال بردن	abstract	parts:remettre question
+
+# culture, the arts and media
+éditeur	noun	m		ناشر، ویراستار	ناشر	culture
+édition	noun	f		چاپ، نشر	چاپ	culture
+publication	noun	f		انتشار، نشریه	انتشار	media
+rédaction	noun	f		تحریریه، نگارش (انشا)	تحریریه	media
+rédacteur en chef	noun	m	rédacteurs en chef	سردبیر	سردبیر	media	parts:chef	checked:level
+éditorial	noun	m	éditoriaux	سرمقاله	سرمقاله	media	checked:level
+quotidien	noun	m		روزنامه (روزانه)	روزنامه (روزانه)	media	code:quotidien-n
+hebdomadaire	adj			هفتگی	هفتگی	media
+mensuel	adj			ماهانه	ماهانه	media
+presse écrite	noun	f		مطبوعات کاغذی	مطبوعات کاغذی	media	parts:presse écrire
+désinformation	noun	f		اطلاعات نادرست (عمدی)	اطلاعات نادرست (عمدی)	media	checked:level
+fausse nouvelle	noun	f	fausses nouvelles	خبر جعلی	خبر جعلی	media	parts:faux	checked:level
+source d'information	noun	f	sources d'information	منبع خبر	منبع خبر	media	parts:source information
+diffuser	verb			پخش کردن (برنامه)، منتشر کردن	پخش کردن (برنامه)	media
+diffusion	noun	f		پخش (رسانه)	پخش (رسانه)	media
+audience	noun	f		مخاطبان (برنامه)، جلسهٔ دادگاه	مخاطبان (برنامه)	media
+téléspectateur	noun	m		بینندهٔ تلویزیون	بینندهٔ تلویزیون	media
+documentaire	noun	m		مستند	مستند	media
+feuilleton	noun	m		سریال (داستانی)	سریال (داستانی)	media
+série	noun	f		سلسله، رشته (رویدادها)	سلسله	media	code:série-2	sense_of:série
+tournage	noun	m		فیلم‌برداری	فیلم‌برداری	culture
+tourner un film	phrase			فیلم ساختن	فیلم ساختن	culture	parts:tourner film
+cinéaste	noun	mf		فیلم‌ساز	فیلم‌ساز	culture
+producteur	noun	m		تهیه‌کننده	تهیه‌کننده	culture
+scénariste	noun	mf		فیلمنامه‌نویس	فیلمنامه‌نویس	culture	checked:level
+sous-titre	noun	m		زیرنویس	زیرنویس	media
+version originale	noun	f		نسخهٔ اصلی (بدون دوبله)	نسخهٔ اصلی (بدون دوبله)	culture	parts:version original
+doublage	noun	m		دوبله	دوبله	culture	checked:level
+chef-d'œuvre	noun	m	chefs-d'œuvre	شاهکار	شاهکار	culture
+œuvre d'art	noun	f	œuvres d'art	اثر هنری	اثر هنری	culture	parts:œuvre art
+patrimoine mondial	noun	m		میراث جهانی	میراث جهانی	culture	parts:patrimoine mondial
+architecture	noun	f		معماری	معماری	culture
+sculpteur	noun	m		مجسمه‌ساز	مجسمه‌ساز	culture
+inspiration	noun	f		الهام	الهام	culture
+créativité	noun	f		خلاقیت	خلاقیت	culture
+créatif	adj			خلاق	خلاق	culture
+talentueux	adj			بااستعداد (هنرمند)	بااستعداد (هنرمند)	culture
+mythe	noun	m		اسطوره (کهن)، افسانه (باور)	اسطوره (کهن)	culture
+légendaire	adj			افسانه‌ای (مشهور)	افسانه‌ای (مشهور)	culture
+rite	noun	m		آیین	آیین	culture
+coutume	noun	f		رسم	رسم	culture
+croyance	noun	f		باور، عقیده (دینی)	باور	culture
+croyant	adj			مؤمن	مؤمن	culture
+pratiquant	adj			مقید (به آیین دینی)	مقید (به آیین دینی)	culture	checked:level
+fête religieuse	noun	f	fêtes religieuses	عید مذهبی	عید مذهبی	culture	parts:fête religieux
+ramadan	noun	m		رمضان	رمضان	culture	checked:level
+pèlerinage	noun	m		زیارت	زیارت	culture	checked:level
+synagogue	noun	f		کنیسه	کنیسه	culture	checked:level
+spectacle vivant	noun	m		نمایش زنده	نمایش زنده	culture	parts:spectacle vivant
+mise en scène	noun	f	mises en scène	کارگردانی (نمایش)	کارگردانی (نمایش)	culture	parts:mise scène
+interpréter un rôle	phrase			نقشی را بازی کردن	نقشی را بازی کردن	culture	parts:interpréter rôle
+applaudir	verb			کف زدن، تشویق کردن (با دست)	کف زدن	culture
+applaudissement	noun	m		تشویقِ (حضار)	تشویقِ (حضار)	culture
+critique	noun	mf		منتقد	منتقد	culture	code:critique-n
+éloge	noun	m		ستایش	ستایش	culture	mastery:recognize
+
+# education and training
+enseignement supérieur	noun	m		آموزش عالی	آموزش عالی	education	parts:enseignement supérieur
+établissement	noun	m		مؤسسه، بنگاه	مؤسسه	society
+établissement scolaire	noun	m	établissements scolaires	مدرسه، مؤسسهٔ آموزشی	مدرسه	education	parts:établissement scolaire
+cursus	noun	m		دورهٔ تحصیلی	دورهٔ تحصیلی	education	checked:level
+mémoire	noun	m		پایان‌نامه (کارشناسی ارشد)	پایان‌نامه (کارشناسی ارشد)	education	code:mémoire-m
+thèse	noun	f		رساله (دکترا)، تز	رساله (دکترا)	education
+soutenance	noun	f		دفاع (از پایان‌نامه)	دفاع (از پایان‌نامه)	education	checked:level
+amphithéâtre	noun	m		آمفی‌تئاتر، تالار درس	آمفی‌تئاتر	education	checked:level
+apprenant	noun	m		فراگیر، زبان‌آموز	فراگیر	education	checked:level
+autodidacte	adj			خودآموخته	خودآموخته	education	checked:level
+enseignement à distance	noun	m		آموزش از راه دور	آموزش از راه دور	education	parts:enseignement distance	checked:level
+échec scolaire	noun	m		افت تحصیلی	افت تحصیلی	education	parts:échec scolaire	checked:level
+redoubler	verb			مردود شدن (تکرار سال)	مردود شدن (تکرار سال)	education
+orientation	noun	f		هدایت تحصیلی، جهت‌یابی	هدایت تحصیلی	education
+maîtriser	verb			تسلط داشتن (بر)، مهار کردن	تسلط داشتن (بر)	education
+maîtrise	noun	f		تسلط، کارشناسی ارشد (قدیم)	تسلط	education
+assimiler	verb			یاد گرفتن (کامل)، هضم کردن (مطلب)	یاد گرفتن (کامل)	education
+mémoriser	verb			به خاطر سپردن (حفظ کردن)	به خاطر سپردن (حفظ کردن)	education
+discipline	noun	f		انضباط، رشته (علمی)	انضباط	education
+
+# more nouns of B2 (Lexique ranks 3000 to 5000)
+tube	noun	m		لوله، آهنگ پرطرفدار	لوله	culture
+pêcheur	noun	m		ماهیگیر	ماهیگیر	work
+flèche	noun	f		پیکان، تیر (کمان)	پیکان	space
+bonté	noun	f		نیکی، مهربانی (قلبی)	نیکی	character
+commode	noun	f		کمد کشودار	کمد کشودار	home
+influence	noun	f		نفوذ، تأثیر (بر کسی)	نفوذ	society
+admiration	noun	f		تحسین	تحسین	feelings
+grandeur	noun	f		بزرگی، عظمت	بزرگی	qualities
+trahison	noun	f		خیانت	خیانت	feelings
+équipage	noun	m		خدمه (کشتی یا هواپیما)	خدمه (کشتی یا هواپیما)	transport
+mousse	noun	f		کفِ (صابون یا نوشیدنی)، فوم	کفِ (صابون یا نوشیدنی)	home
+pension	noun	f		مستمری، پانسیون	مستمری	economy
+ruelle	noun	f		کوچه (باریک)	کوچه (باریک)	city
+reproche	noun	m		سرزنش	سرزنش	feelings
+hall	noun	m		سرسرا، لابی	سرسرا	home
+bicyclette	noun	f		دوچرخه	دوچرخه	transport	register:formal
+désastre	noun	m		مصیبت، شکست کامل	مصیبت	society
+encre	noun	f		جوهر	جوهر	education
+fillette	noun	f		دختربچه	دختربچه	people
+pavé	noun	m		سنگ‌فرش	سنگ‌فرش	city
+dégoût	noun	m		انزجار، دل‌زدگی	انزجار	feelings
+adversaire	noun	mf		حریف، رقیب	حریف	leisure
+refus	noun	m		امتناع، جوابِ رد	امتناع	abstract
+cap	noun	m		دماغه، جهت (مسیر)	دماغه	space
+pose	noun	f		ژست (عکس)، نصب	ژست (عکس)	culture
+grimace	noun	f		شکلک، اخم (از درد)	شکلک	body
+faire la grimace	phrase			قیافه گرفتن، اخم کردن (از نارضایتی)	قیافه گرفتن	body	parts:faire grimace
+dialogue	noun	m		گفت‌وگو (دو یا چند نفر)، دیالوگ	گفت‌وگو (دو یا چند نفر)	culture
+bible	noun	f		کتاب مقدس	کتاب مقدس	culture
+manœuvre	noun	f		مانور، ترفند	مانور	actions
+nœud	noun	m		گره	گره	home
+tablier	noun	m		پیش‌بند	پیش‌بند	clothes
+clarté	noun	f		روشنی، وضوح	روشنی	qualities
+sagesse	noun	f		خرد، فرزانگی	خرد	character
+murmure	noun	m		زمزمه	زمزمه	actions
+intimité	noun	f		حریم خصوصی، صمیمیت	حریم خصوصی	people
+dé	noun	m		تاس	تاس	leisure
+paroi	noun	f		دیواره	دیواره	space
+renfort	noun	m		نیروی کمکی	نیروی کمکی	society
+descente	noun	f		سرازیری، فرود	سرازیری	space
+halte	noun	f		ایست، توقف کوتاه	ایست	transport
+morale	noun	f		اخلاقیات، نتیجهٔ اخلاقی (داستان)	اخلاقیات	character
+faire la morale	phrase			موعظه کردن، نصیحتِ اخلاقی کردن	موعظه کردن	society	parts:faire morale
+moral	noun	m		روحیه	روحیه	feelings	code:moral-n	coll:avoir le moral → روحیه داشتن
+avoir le moral	phrase			روحیه داشتن	روحیه داشتن	feelings	parts:avoir moral-n
+index	noun	m		انگشت اشاره، فهرست (کتاب)	انگشت اشاره	body
+divorce	noun	m		طلاق	طلاق	family
+serviteur	noun	m		خدمتکار	خدمتکار	work	mastery:recognize
+grotte	noun	f		غار	غار	nature
+exemplaire	noun	m		نسخه (یک نسخه از کتاب)	نسخه (یک نسخه از کتاب)	culture
+teint	noun	m		رنگ چهره	رنگ چهره	body
+palier	noun	m		پاگرد (پله)، مرحله	پاگرد (پله)	home
+banquette	noun	f		نیمکت (ماشین یا کافه)	نیمکت (ماشین یا کافه)	home
+tendance	noun	f		گرایش، روند	گرایش	society
+sympathie	noun	f		همدلی، علاقه (دوستانه)	همدلی	feelings
+crépuscule	noun	m		غروب، گرگ‌ومیش	غروب	time	mastery:recognize
+chœur	noun	m		گروه کر، همسرایان	گروه کر	culture
+serment	noun	m		سوگند	سوگند	society
+prêter serment	phrase			سوگند یاد کردن	سوگند یاد کردن	society	parts:prêter serment
+étonnement	noun	m		شگفتی، تعجب	شگفتی	feelings
+tailleur	noun	m		خیاط، کت‌ودامن (زنانه)	خیاط	clothes
+hommage	noun	m		ادای احترام، بزرگداشت	ادای احترام	culture
+rendre hommage à	phrase			ادای احترام کردن به	ادای احترام کردن به	society	parts:rendre hommage
+bagarre	noun	f		زد و خورد، دعوا (کتک‌کاری)	زد و خورد	society
+barrage	noun	m		سد، راه‌بند	سد	nature
+délire	noun	m		هذیان، دیوانگی (شادی)	هذیان	health
+sanglot	noun	m		هق‌هق	هق‌هق	feelings
+tempe	noun	f		شقیقه	شقیقه	body
+ardeur	noun	f		حرارت، شور و حرارت	حرارت	feelings	mastery:recognize
+dimension	noun	f		بُعد (طول، عرض، ارتفاع)، اندازه	بُعد (طول	numbers
+aveu	noun	m	aveux	اعتراف	اعتراف	society
+abandon	noun	m		انصراف، رهاشدگی	انصراف	actions
+tournant	noun	m		پیچ (جاده)، نقطهٔ عطف	پیچ (جاده)	transport
+vocation	noun	f		رسالت، شوق (به یک شغل)	رسالت	work
+barrière	noun	f		مانع، نرده	مانع	space
+combinaison	noun	f		ترکیب، لباس سرهمی	ترکیب	clothes
+saut	noun	m		پرش	پرش	leisure
+fonds	noun	m		بودجه، سرمایه (مالی)	بودجه	economy
+ruban	noun	m		روبان	روبان	clothes
+portail	noun	m		دروازه (حیاط)	دروازه (حیاط)	home
+pavillon	noun	m		ویلا (خانهٔ حومه)، غرفه	ویلا (خانهٔ حومه)	home
+mont	noun	m		کوه (در نام‌ها)	کوه (در نام‌ها)	nature
+mâchoire	noun	f		فک	فک	body
+associé	noun	m		شریک (کاری)	شریک (کاری)	work
+jet	noun	m		فوران، جت (هواپیما)	فوران	transport
+surveillance	noun	f		نظارت، مراقبت	نظارت	society
+vainqueur	noun	m		برنده، فاتح	برنده	leisure
+étoffe	noun	f		پارچه (ضخیم)	پارچه (ضخیم)	clothes	mastery:recognize
+rituel	noun	m		آیین، عادت (هر روز)	آیین	culture
+orphelin	noun	m		یتیم	یتیم	family
+fossé	noun	m		جوی (کنار جاده)، شکاف (اختلاف)	جوی (کنار جاده)	nature
+précision	noun	f		دقت، جزئیات (روشن)	دقت	qualities
+haleine	noun	f		نَفَس (بوی دهان)	نَفَس (بوی دهان)	body
+gêne	noun	f		ناراحتی، شرمندگی	ناراحتی	feelings
+bistrot	noun	m		کافه (کوچک)، بیسترو	کافه (کوچک)	food
+vice	noun	m		رذیلت، عیب (پنهان)	رذیلت	character
+innocence	noun	f		بی‌گناهی	بی‌گناهی	society
+néant	noun	m		نیستی، عدم	نیستی	abstract	mastery:recognize
+beau-père	noun	m	beaux-pères	پدرزن، پدرشوهر	پدرزن	family
+belle-mère	noun	f	belles-mères	مادرزن، مادرشوهر	مادرزن	family
+beau-frère	noun	m	beaux-frères	برادرزن، شوهرخواهر	برادرزن	family
+belle-sœur	noun	f	belles-sœurs	خواهرزن، زن‌برادر	خواهرزن	family
+gendre	noun	m		داماد	داماد	family
+belle-fille	noun	f	belles-filles	عروس (زن پسر)	عروس (زن پسر)	family
+vampire	noun	m		خون‌آشام	خون‌آشام	culture
+tonne	noun	f		تُن	تُن	numbers
+saleté	noun	f		کثیفی	کثیفی	home
+crête	noun	f		ستیغ (کوه)، تاج (خروس)	ستیغ (کوه)	nature
+lot	noun	m		سهم، جایزه (قرعه)	سهم	economy
+bond	noun	m		جهش، پرش (ناگهانی)	جهش	actions
+cervelle	noun	f		مغز (خوراکی)، عقل	مغز (خوراکی)	body
+ronde	noun	f		گشت (نگهبانی)	گشت (نگهبانی)	society
+frisson	noun	m		لرز، مور مور	لرز	body
+accueil	noun	m		پذیرش (بخش)، خوشامدگویی	پذیرش (بخش)	work
+ironie	noun	f		طنز، طعنه	طنز	culture
+touche	noun	f		دکمه (صفحه‌کلید)، کلید (پیانو)	دکمه (صفحه‌کلید)	science
+assistance	noun	f		کمک، حاضران	کمک	society
+bassin	noun	m		حوض، لگن (بدن)	حوض	nature
+massacre	noun	m		کشتار	کشتار	society
+gaieté	noun	f		شادی، سرزندگی	شادی	feelings
+nain	noun	m		کوتوله	کوتوله	culture
+complicité	noun	f		همدستی، همدلی (پنهان)	همدستی	people
+tragédie	noun	f		تراژدی، فاجعه (غم‌انگیز)	تراژدی	culture
+philosophe	noun	mf		فیلسوف	فیلسوف	culture
+chevelure	noun	f		گیسو	گیسو	body	mastery:recognize
+torture	noun	f		شکنجه	شکنجه	society
+ruse	noun	f		حیله، ترفند	حیله	character
+excès	noun	m		زیاده‌روی	زیاده‌روی	health
+rupture	noun	f		جدایی (رابطه)، قطع	جدایی (رابطه)	people
+création	noun	f		آفرینش، ایجاد	آفرینش	culture
+tribu	noun	f		قبیله	قبیله	society
+destruction	noun	f		تخریب، نابودی	تخریب	society
+onde	noun	f		موج (رادیو)	موج (رادیو)	science
+sabot	noun	m		سم (اسب)، کفش چوبی	سم (اسب)	animals
+remède	noun	m		درمان، چاره	درمان	health
+haie	noun	f		پرچین	پرچین	nature
+récompense	noun	f		پاداش	پاداش	abstract
+divan	noun	m		کاناپه، نیمکت (خوابیدنی)	کاناپه	home
+organe	noun	m		عضو (بدن)، اندامِ داخلی	عضو (بدن)	body
+intervention	noun	f		دخالت، مداخله	دخالت	society
+serrure	noun	f		قفل (در)	قفل (در)	home
+selle	noun	f		زین	زین	transport
+voûte	noun	f		طاق، سقف قوسی	طاق	culture
+marge	noun	f		حاشیه	حاشیه	education
+bouffée	noun	f		پک (سیگار)، موج (هوا)	پک (سیگار)	nature
+narine	noun	f		سوراخ بینی	سوراخ بینی	body
+roche	noun	f		سنگ (جنس)	سنگ (جنس)	nature
+confusion	noun	f		سردرگمی، قاطی شدن	سردرگمی	abstract
+borne	noun	f		سنگ نشان، دستگاه (خودپرداز)	سنگ نشان	city
+machin	noun	m		چیز (اسمش یادم نیست)، فلان چیز	چیز	function	register:familier
+maillot	noun	m		پیراهن (ورزشی)	پیراهن (ورزشی)	clothes
+dentelle	noun	f		تور (پارچهٔ توری)	تور (پارچهٔ توری)	clothes
+sirène	noun	f		آژیر، پری دریایی	آژیر	society
+montant	noun	m		مبلغ	مبلغ	economy
+ivrogne	noun	mf		دائم‌الخمر	دائم‌الخمر	health
+cachette	noun	f		مخفیگاه	مخفیگاه	space
+fauve	noun	m		جانور درنده	جانور درنده	animals
+camionnette	noun	f		وانت	وانت	transport
+cristal	noun	m	cristaux	کریستال، بلور	کریستال	nature
+tremblement	noun	m		لرزش	لرزش	body
+revers	noun	m		پشت (دست یا سکه)، شکست (ناگهانی)	پشت (دست یا سکه)	abstract
+le revers de la médaille	phrase			روی دیگرِ سکه	روی دیگرِ سکه	abstract	parts:revers médaille
+accusation	noun	f		اتهام	اتهام	society
+fidélité	noun	f		وفاداری	وفاداری	character
+bandit	noun	m		راهزن، تبهکار	راهزن	society
+baie	noun	f		خلیج کوچک	خلیج کوچک	nature
+détective	noun	m		کارآگاه	کارآگاه	society
+chariot	noun	m		چرخ‌دستی (فروشگاه)	چرخ‌دستی (فروشگاه)	shopping
+ride	noun	f		چین و چروک	چین و چروک	body
+étendue	noun	f		گستره	گستره	space
+soutien	noun	m		پشتیبانی، حمایت	پشتیبانی	society
+mobile	noun	m		انگیزه (جرم)، تلفن همراه	انگیزه (جرم)	society
+buffet	noun	m		بوفه، غذای سلف‌سرویس	بوفه	food
+charité	noun	f		نیکوکاری، صدقه	نیکوکاری	culture
+réflexe	noun	m		واکنش غیرارادی، رفلکس	واکنش غیرارادی	body
+convoi	noun	m		کاروان (خودروها)	کاروان (خودروها)	transport
+tentation	noun	f		وسوسه	وسوسه	feelings
+privilège	noun	m		امتیاز ویژه	امتیاز ویژه	society
+hésitation	noun	f		تردید، دودلی	تردید	feelings
+révélation	noun	f		افشاگری، کشف (ناگهانی)	افشاگری	abstract
+charrette	noun	f		گاری	گاری	transport
+clocher	noun	m		برج ناقوس	برج ناقوس	culture
+département	noun	m		شهرستان (فرانسه)، دپارتمان	شهرستان (فرانسه)	society
+confidence	noun	f		راز (گفته‌شده)، درددل	راز (گفته‌شده)	people	note:confidence یعنی «راز گفته‌شده»، نه «اعتماد به نفس» (اعتماد به نفس = confiance en soi).
+donnée	noun	f		داده	داده	science
+foire	noun	f		بازار مکاره، نمایشگاه (تجاری)	بازار مکاره	economy
+détresse	noun	f		پریشانی، درماندگی	پریشانی	feelings
+élégance	noun	f		ظرافت، شیکی	ظرافت	qualities
+représentation	noun	f		اجرا (نمایش)، نمایندگی	اجرا (نمایش)	culture
+lance	noun	f		نیزه	نیزه	society	mastery:recognize
+ficelle	noun	f		نخ (ضخیم)، ریسمان	نخ (ضخیم)	home
+tirer les ficelles	phrase			پشتِ پرده کارگردانی کردن	پشتِ پرده کارگردانی کردن	society	parts:tirer-2 ficelle
+flaque	noun	f		چالهٔ آب	چالهٔ آب	weather
+épaisseur	noun	f		ضخامت	ضخامت	numbers
+ressort	noun	m		فنر	فنر	science
+mérite	noun	m		شایستگی	شایستگی	abstract
+foudre	noun	f		صاعقه	صاعقه	weather
+graisse	noun	f		چربی، گریس	چربی	food
+fermeture	noun	f		تعطیلی، بسته شدن	تعطیلی	society
+fermeture éclair	noun	f	fermetures éclair	زیپ	زیپ	clothes	parts:fermeture éclair
+engin	noun	m		ماشین (بزرگ)، دستگاه (عجیب)	ماشین (بزرگ)	science
+caprice	noun	m		هوس، بهانه‌گیری (بچه)	هوس	character
+corne	noun	f		شاخ	شاخ	animals
+prendre le taureau par les cornes	phrase			شجاعانه با مشکل روبه‌رو شدن	شجاعانه با مشکل روبه‌رو شدن	character	parts:prendre taureau corne
+barreau	noun	m	barreaux	میله (پنجره)	میله (پنجره)	home
+alarme	noun	f		زنگ خطر، دزدگیر	زنگ خطر	home
+refuge	noun	m		پناهگاه	پناهگاه	nature
+sous-marin	noun	m		زیردریایی	زیردریایی	transport
+courbe	noun	f		منحنی، پیچ	منحنی	space
+buste	noun	m		نیم‌تنه	نیم‌تنه	body
+fouet	noun	m		شلاق، همزن	شلاق	food
+parquet	noun	m		پارکت، دادسرا	پارکت	home
+moulin	noun	m		آسیاب	آسیاب	nature
+fée	noun	f		پری	پری	culture
+cachet	noun	m		قرص، مُهر	قرص	health
+institution	noun	f		نهاد	نهاد	society
+abîme	noun	m		پرتگاه، ورطه	پرتگاه	nature	mastery:recognize
+rampe	noun	f		نرده (پله)، شیب‌راه	نرده (پله)	home
+crochet	noun	m		قلاب	قلاب	home
+poursuite	noun	f		تعقیب	تعقیب	society
+pape	noun	m		پاپ	پاپ	culture
+insulte	noun	f		توهین	توهین	feelings
+trône	noun	m		تخت (پادشاهی)	تخت (پادشاهی)	society
+dragon	noun	m		اژدها	اژدها	culture
+chaussée	noun	f		سوارهرو	سوارهرو	city
+soulagement	noun	m		آسودگی (خیال)	آسودگی (خیال)	feelings
+barbier	noun	m		سلمانی	سلمانی	work	mastery:recognize
+brute	noun	f		آدم خشن، وحشی	آدم خشن	character
+agitation	noun	f		آشفتگی، جنب‌وجوش	آشفتگی	feelings
+semelle	noun	f		کف (کفش)	کف (کفش)	clothes
+gorgée	noun	f		جرعه	جرعه	drink
+considération	noun	f		ملاحظه، احترام	ملاحظه	feelings
+casier	noun	m		کمد (قفل‌دار)، جای نامه	کمد (قفل‌دار)	home	coll:casier judiciaire → سابقهٔ کیفری
+délice	noun	m		لذت (خوراک)، خوشمزگی	لذت (خوراک)	food
+expédition	noun	f		سفر اکتشافی، ارسال (بسته)	سفر اکتشافی	travel
+miette	noun	f		خرده (نان)	خرده (نان)	food
+réplique	noun	f		جواب (سریع)، دیالوگ (بازیگر)	جواب (سریع)	culture
+manuscrit	noun	m		دست‌نوشته	دست‌نوشته	culture
+profession	noun	f		حرفه (تخصصی)	حرفه (تخصصی)	work
+pelle	noun	f		بیل	بیل	home
+sonnette	noun	f		زنگ (در)	زنگ (در)	home
+tirer la sonnette d'alarme	phrase			زنگِ خطر را به صدا درآوردن	زنگِ خطر را به صدا درآوردن	society	parts:tirer-2 sonnette alarme
+querelle	noun	f		مشاجره	مشاجره	people
+hurlement	noun	m		زوزه، فریاد (بلند)	زوزه	actions
+rail	noun	m		ریل	ریل	transport
+provision	noun	f		آذوقه، اندوخته	آذوقه	food
+caserne	noun	f		پادگان	پادگان	society
+clan	noun	m		طایفه، دار و دسته	طایفه	society
+coïncidence	noun	f		تصادف (هم‌زمانی)	تصادف (هم‌زمانی)	abstract
+dépôt	noun	m		انبار، سپرده	انبار	economy
+pudeur	noun	f		حیا	حیا	character
+rouleau	noun	m	rouleaux	رول، غلتک	رول	home
+être au bout du rouleau	phrase			به ته خط رسیدن (خستگی)	به ته خط رسیدن (خستگی)	feelings	parts:être bout rouleau
+prudence	noun	f		احتیاط	احتیاط	character
+chiffon	noun	m		کهنه (دستمال)	کهنه (دستمال)	home
+acide	noun	m		اسید	اسید	science
+parcours	noun	m		مسیر (طی‌شده)، سابقه (تحصیلی)	مسیر (طی‌شده)	abstract
+manie	noun	f		عادت عجیب، وسواس	عادت عجیب	character
+sonnerie	noun	f		زنگ (تلفن یا ساعت)	زنگ (تلفن یا ساعت)	media
+patrouille	noun	f		گشت (نظامی یا پلیس)	گشت (نظامی یا پلیس)	society
+tiers	noun	m		یک‌سوم	یک‌سوم	numbers
+routine	noun	f		روال روزمره	روال روزمره	time
+torse	noun	m		بالاتنه	بالاتنه	body
+jungle	noun	f		جنگل (استوایی)	جنگل (استوایی)	nature
+couvercle	noun	m		درپوش	درپوش	home
+quête	noun	f		جست‌وجو (چیزی ارزشمند)	جست‌وجو (چیزی ارزشمند)	abstract
+bille	noun	f		تیله	تیله	leisure
+saucisse	noun	f		سوسیس	سوسیس	food
+bulle	noun	f		حباب	حباب	nature
+brin	noun	m		ساقه (نازک)، ذره	ساقه (نازک)	nature
+foin	noun	m		علوفهٔ خشک	علوفهٔ خشک	nature
+ciment	noun	m		سیمان	سیمان	home
+audace	noun	f		جسارت	جسارت	character
+perfection	noun	f		کمال	کمال	qualities
+congrès	noun	m		کنگره، همایش	کنگره	society
+battement	noun	m		تپش (قلب)	تپش (قلب)	body
+écolier	noun	m		شاگرد (دبستان)	شاگرد (دبستان)	education
+séparation	noun	f		جدایی	جدایی	family
+nostalgie	noun	f		دلتنگی (برای گذشته)، نوستالژی	دلتنگی (برای گذشته)	feelings
+hangar	noun	m		آشیانه، انبار (بزرگ)	آشیانه	work
+forteresse	noun	f		دژ	دژ	culture
+simplicité	noun	f		سادگی	سادگی	qualities
+rancune	noun	f		کینه	کینه	feelings
+flacon	noun	m		شیشهٔ کوچک (عطر یا دارو)	شیشهٔ کوچک (عطر یا دارو)	home
+manuel	noun	m		کتاب درسی، راهنما (دستگاه)	کتاب درسی	education
+fan	noun	mf		طرفدار پرشور	طرفدار پرشور	culture
+briquet	noun	m		فندک	فندک	home
+héritier	noun	m		وارث	وارث	family
+rêveur	adj			رؤیاپرداز	رؤیاپرداز	character
+mœurs	noun	f		آداب، اخلاق (اجتماعی)	آداب	society	number:pl_only
+protecteur	noun	m		حامی	حامی	society
+jury	noun	m		هیئت داوران	هیئت داوران	society
+bronze	noun	m		برنز	برنز	culture
+amertume	noun	f		تلخی (دل)، رنجش	تلخی (دل)	feelings
+dégât	noun	m		خسارت	خسارت	society
+ambiance	noun	f		حال‌وهوا، فضا (جمع)	حال‌وهوا	feelings
+hache	noun	f		تبر	تبر	home
+fantaisie	noun	f		خیال‌پردازی، هوس	خیال‌پردازی	character
+échantillon	noun	m		نمونه (کالا یا آزمایش)	نمونه (کالا یا آزمایش)	science
+épingle	noun	f		سنجاق	سنجاق	clothes
+tirer son épingle du jeu	phrase			گلیمِ خود را از آب بیرون کشیدن	گلیمِ خود را از آب بیرون کشیدن	actions	parts:tirer-2 épingle jeu
+rangée	noun	f		ردیف	ردیف	space
+pince	noun	f		انبر، گیره	انبر	home
+vanité	noun	f		خودپسندی، بیهودگی	خودپسندی	character
+lenteur	noun	f		کندی	کندی	time
+mélancolie	noun	f		اندوه (آرام)، مالیخولیا	اندوه (آرام)	feelings
+exploit	noun	m		کار بزرگ، شاهکار (ورزشی)	کار بزرگ	leisure
+peignoir	noun	m		حوله‌تن، رب‌دوشامبر	حوله‌تن	clothes
+salive	noun	f		بزاق	بزاق	body
+survivant	noun	m		بازمانده	بازمانده	society
+adjoint	noun	m		معاون	معاون	work
+déception	noun	f		سرخوردگی، دلسردی	سرخوردگی	feelings
+ignorance	noun	f		نادانی	نادانی	education
+micro	noun	m		میکروفون	میکروفون	media
+substance	noun	f		ماده (شیمیایی)	ماده (شیمیایی)	science
+cortège	noun	m		دسته (تشییع یا جشن)، کاروان (رسمی)	دسته (تشییع یا جشن)	culture
+munition	noun	f		مهمات	مهمات	society
+croûte	noun	f		پوسته (نان)، دلمه (زخم)	پوسته (نان)	food
+casser la croûte	phrase			لقمه‌ای خوردن	خوردن	food	parts:casser croûte	register:familier
+malle	noun	f		صندوق (چمدان بزرگ)	صندوق (چمدان بزرگ)	travel
+corvée	noun	f		کار ناخوشایند (اجباری)	کار ناخوشایند (اجباری)	home
+scrupule	noun	m		وسواس (اخلاقی)، دودلی (وجدان)	وسواس (اخلاقی)	character
+avoir des scrupules	phrase			عذاب وجدان داشتن	عذاب وجدان داشتن	character	parts:avoir scrupule
+confort	noun	m		آسایش، راحتی (زندگی)	آسایش	home
+harmonie	noun	f		هماهنگی	هماهنگی	culture
+mannequin	noun	m		مدل (لباس)، مانکن	مدل (لباس)	clothes
+commencement	noun	m		آغاز	آغاز	time
+confession	noun	f		اعتراف (به گناه)	اعتراف (به گناه)	culture
+cil	noun	m		مژه	مژه	body
+défilé	noun	m		رژه، نمایش (مد)	رژه	society
+bourreau	noun	m	bourreaux	جلاد	جلاد	society	mastery:recognize
+rivage	noun	m		کرانه	کرانه	nature	mastery:recognize
+punition	noun	f		تنبیه	تنبیه	society
+square	noun	m		پارک کوچک (در محله)	پارک کوچک (در محله)	city
+arc	noun	m		کمان، قوس	کمان	space
+phase	noun	f		مرحله (فرایند)، فاز	مرحله (فرایند)	abstract
+exigence	noun	f		توقع، الزام	توقع	abstract
+pinceau	noun	m	pinceaux	قلم‌مو	قلم‌مو	culture
+estime	noun	f		احترام (قلبی)، ارزش (نزد کسی)	احترام (قلبی)	feelings
+conquête	noun	f		فتح	فتح	society
+fracas	noun	m		غرش، سروصدای (شکستن)	غرش	actions
+évasion	noun	f		فرار (از واقعیت)	فرار (از واقعیت)	leisure	code:évasion-2	sense_of:évasion
+certificat	noun	m		گواهی‌نامه	گواهی‌نامه	work
+déesse	noun	f		الهه	الهه	culture
+chevet	noun	m		بالای سر (تخت)	بالای سر (تخت)	home	coll:table de chevet → میز کنار تخت
+tombeau	noun	m	tombeaux	آرامگاه	آرامگاه	culture
+dessein	noun	m		قصد، طرح (پنهان)	قصد	abstract	mastery:recognize
+caoutchouc	noun	m		لاستیک (ماده)	لاستیک (ماده)	science
+béton	noun	m		بتن	بتن	home
+gage	noun	m		ضمانت، گرو	ضمانت	economy
+sursaut	noun	m		جهش (از ترس)، تکان	جهش (از ترس)	body
+malentendu	noun	m		سوءتفاهم	سوءتفاهم	people
+intervalle	noun	m		فاصله (زمانی)	فاصله (زمانی)	time
+notaire	noun	mf		سردفتر	سردفتر	work
+farce	noun	f		شوخی (سربه‌سر)، چاشنی (پرکردنی)	شوخی (سربه‌سر)	feelings
+corbeille	noun	f		سبد (کاغذ)، سطل زباله (رایانه)	سبد (کاغذ)	home
+pois	noun	m		نخود فرنگی، خال (پارچه)	نخود فرنگی	food
+recours	noun	m		توسل، چاره	توسل	abstract
+avoir recours à	phrase			متوسل شدن به	متوسل شدن به	actions	parts:avoir recours
+en dernier recours	phrase			به‌عنوانِ آخرین چاره	به‌عنوانِ آخرین چاره	abstract	parts:dernier recours
+bouclier	noun	m		سپر	سپر	society
+cruauté	noun	f		بی‌رحمی	بی‌رحمی	character
+méfiance	noun	f		بدگمانی	بدگمانی	feelings
+ivresse	noun	f		مستی	مستی	health
+éponge	noun	f		اسفنج	اسفنج	home
+jeter l'éponge	phrase			قیدِ (کاری) را زدن، تسلیم شدن	قیدِ (کاری) را زدن	actions	parts:jeter éponge
+passer l'éponge	phrase			گذشت کردن، ماجرا را فراموش کردن	گذشت کردن	society	parts:passer éponge
+tabouret	noun	m		چهارپایه	چهارپایه	home
+coupure	noun	f		بریدگی، قطعی (برق)	بریدگی	health
+péril	noun	m		خطر (بزرگ)	خطر (بزرگ)	abstract	mastery:recognize
+chaos	noun	m		آشفتگی (کامل)، هرج‌ومرج	آشفتگی (کامل)	society
+registre	noun	m		دفتر ثبت	دفتر ثبت	work
+composition	noun	f		ترکیب، انشا	ترکیب	education
+équipement	noun	m		تجهیزات	تجهیزات	work
+plâtre	noun	m		گچ	گچ	home
+gilet	noun	m		جلیقه	جلیقه	clothes
+cloison	noun	f		دیوار (نازک)، پارتیشن	دیوار (نازک)	home
+consigne	noun	f		دستور (کار)، امانت‌داری (چمدان)	دستور (کار)	work
+rafale	noun	f		تندباد، رگبار (گلوله)	تندباد	weather
+producteur	noun	m		تولیدکننده (کالا)	تولیدکننده (کالا)	economy	code:producteur-2	sense_of:producteur
+règne	noun	m		دوران سلطنت	دوران سلطنت	society
+flûte	noun	f		فلوت، نان باگت (نازک)	فلوت	culture
+toast	noun	m		نان تست، به سلامتی (نوشیدن)	نان تست	food
+tourbillon	noun	m		گرداب، گردباد	گرداب	nature
+relief	noun	m		ناهمواری (زمین)، برجستگی	ناهمواری (زمین)	nature
+assassinat	noun	m		قتل (سیاسی)، ترور	قتل (سیاسی)	society
+jeton	noun	m		ژتون	ژتون	leisure
+crabe	noun	m		خرچنگ	خرچنگ	animals
+fragment	noun	m		تکه، قطعه (از متن)	تکه	abstract
+intuition	noun	f		شهود، حس ششم	شهود	abstract
+bénéfice	noun	m		فایده، سود (برای کسی)	فایده	abstract	code:bénéfice-2	sense_of:bénéfice
+berceau	noun	m	berceaux	گهواره	گهواره	family
+rival	noun	m	rivaux	رقیب	رقیب	people
+compartiment	noun	m		کوپه (قطار)، محفظه	کوپه (قطار)	transport
+culte	noun	m		عبادت، کیش	عبادت	culture
+destinée	noun	f		سرنوشت (کلی)، تقدیر	سرنوشت (کلی)	abstract	mastery:recognize
+jumelle	noun	f		دوقلو (دختر)	دوقلو (دختر)	family
+jumelles	noun	f		دوربین شکاری	دوربین شکاری	leisure	number:pl_only
+lavabo	noun	m		روشویی	روشویی	home
+dirigeant	noun	m		رهبر، مدیر (ارشد)	رهبر	society
+talus	noun	m		خاکریز	خاکریز	nature	mastery:recognize
+apprenti	noun	m		شاگرد (حرفه)، کارآموز (فنی)	شاگرد (حرفه)	work
+porche	noun	m		ایوان سرپوشیده	ایوان سرپوشیده	home
+injustice	noun	f		بی‌عدالتی	بی‌عدالتی	society
+convention	noun	f		قرارداد، پیمان (بین‌المللی)	قرارداد	society
+disciple	noun	mf		مرید، پیرو	مرید	culture
+créateur	noun	m		آفریننده، طراح	آفریننده	culture
+billard	noun	m		بیلیارد	بیلیارد	leisure
+torche	noun	f		مشعل، چراغ‌قوه	مشعل	home
+antenne	noun	f		آنتن	آنتن	media
+exil	noun	m		تبعید	تبعید	society
+poignard	noun	m		خنجر	خنجر	society
+pacte	noun	m		پیمان	پیمان	society
+pilier	noun	m		ستون (اصلی)	ستون (اصلی)	culture
+mégot	noun	m		ته‌سیگار	ته‌سیگار	health
+obsession	noun	f		وسواس فکری	وسواس فکری	health
+lanterne	noun	f		فانوس	فانوس	home
+démonstration	noun	f		نمایش (عملی)، اثبات	نمایش (عملی)	science
+circuit	noun	m		مدار، پیست	مدار	science
+bosse	noun	f		برآمدگی، قوز	برآمدگی	body
+spécialité	noun	f		تخصص، غذای مخصوص (محل)	تخصص	work
+conserve	noun	f		کنسرو	کنسرو	food
+épave	noun	f		لاشه (کشتی یا ماشین)	لاشه (کشتی یا ماشین)	transport
+écurie	noun	f		اصطبل	اصطبل	animals
+case	noun	f		خانه (جدول)، کلبه	خانه (جدول)	space
+virage	noun	m		پیچ (جاده)	پیچ (جاده)	transport
+préférence	noun	f		ترجیح	ترجیح	feelings
+arrangement	noun	m		توافق، چیدمان	توافق	abstract
+emplacement	noun	m		محل، جا (مشخص)	محل	space
+tourment	noun	m		عذاب	عذاب	feelings	mastery:recognize
+vingtaine	noun	f		حدود بیست تا	حدود بیست تا	numbers
+trentaine	noun	f		حدود سی تا	حدود سی تا	numbers
+moquette	noun	f		موکت	موکت	home
+fente	noun	f		شکاف (باریک)	شکاف (باریک)	space
+catégorie	noun	f		دسته، گروه (طبقه)	دسته	abstract
+perron	noun	m		پله‌های جلوی ساختمان	پله‌های جلوی ساختمان	home	mastery:recognize
+trompette	noun	f		شیپور، ترومپت	شیپور	culture
+prestige	noun	m		اعتبار، وجهه	اعتبار	society
+académie	noun	f		فرهنگستان، آکادمی	فرهنگستان	education
+bisou	noun	m		بوس، ماچ	بوسه	people	register:familier	coll:gros bisous → (آخر نامه) می‌بوسمت
+impasse	noun	f		بن‌بست	بن‌بست	city
+faire l'impasse sur	phrase			قیدِ (چیزی) را زدن	قیدِ (چیزی) را زدن	actions	parts:faire impasse
+ampleur	noun	f		گستره، دامنه	گستره	abstract
+prendre de l'ampleur	phrase			بالا گرفتن، گسترش یافتن	بالا گرفتن	abstract	parts:prendre ampleur
+atteinte	noun	f		لطمه، تجاوز (به حق)	لطمه	society
+porter atteinte à	phrase			لطمه زدن به	لطمه زدن به	society	parts:porter atteinte
+ton	noun	m		لحنِ (صدا یا نوشته)	لحن	media	code:ton-n	checked:level
+donner le ton	phrase			فضا را تعیین کردن	فضا را تعیین کردن	society	parts:donner ton-n
+unanimité	noun	f		اتفاقِ آرا	اتفاقِ آرا	society
+faire l'unanimité	phrase			موردِ قبولِ همه بودن	موردِ قبولِ همه بودن	society	parts:faire unanimité
+
+# more verbs of B2
+errer	verb			پرسه زدن، سرگردان بودن	پرسه زدن	actions
+figer	verb			خشک کردن (از ترس)، منجمد کردن	خشک کردن (از ترس)	actions
+déboucher	verb			باز کردن (بطری)، رسیدن (به خیابان)	باز کردن (بطری)	actions
+célébrer	verb			جشن گرفتن، برگزار کردن (مراسم)	جشن گرفتن	culture
+isoler	verb			جدا کردن، عایق‌بندی کردن	جدا کردن	actions
+abîmer	verb			خراب کردن، آسیب زدن (به شیء)	خراب کردن	actions
+surmonter	verb			غلبه کردن (بر سختی)	غلبه کردن (بر سختی)	actions
+déployer	verb			گستردن، به کار گرفتن (نیرو)	گستردن	actions
+longer	verb			در امتداد (چیزی) رفتن	در امتداد (چیزی) رفتن	space
+lécher	verb			لیسیدن	لیسیدن	body
+agacer	verb			عصبی کردن (کمی)، حرص (کسی را) درآوردن	عصبی کردن (کمی)	feelings
+résonner	verb			طنین انداختن	طنین انداختن	actions
+trancher	verb			بریدن (با یک ضربه)، تصمیم قاطع گرفتن	بریدن (با یک ضربه)	actions
+basculer	verb			واژگون شدن، ناگهان تغییر کردن	واژگون شدن	actions
+garantir	verb			ضمانت کردن، تضمین دادن	ضمانت کردن	economy
+flatter	verb			چاپلوسی کردن، تعریف (اغراق‌آمیز) کردن	چاپلوسی کردن	feelings
+préoccuper	verb			نگران کردن، ذهن (کسی را) مشغول کردن	نگران کردن	feelings
+fendre	verb			شکافتن، چاک دادن	شکافتن	actions
+nouer	verb			گره زدن	گره زدن	actions
+dégoûter	verb			منزجر کردن، بیزار کردن	منزجر کردن	feelings
+honorer	verb			گرامی داشتن، پایبند بودن (به قول)	گرامی داشتن	culture
+préserver	verb			حفظ کردن (از آسیب)، نگهداری کردن (طبیعت)	حفظ کردن (از آسیب)	nature
+divorcer	verb			طلاق گرفتن	طلاق گرفتن	family
+écouler	verb			فروختن (کالا)	فروختن (کالا)	economy
+s'écouler	verb			سپری شدن (زمان)، جاری شدن	سپری شدن (زمان)	time
+absorber	verb			جذب کردن (مایع)، مشغول کردن	جذب کردن (مایع)	science
+entamer	verb			آغاز کردن، بریدن (اولین تکه)	آغاز کردن	actions
+relâcher	verb			آزاد کردن (زندانی)، شل کردن	آزاد کردن (زندانی)	actions
+rétablir	verb			برقرار کردن (دوباره)	برقرار کردن (دوباره)	society
+se rétablir	verb			بهبود یافتن (بیماری)	بهبود یافتن (بیماری)	health
+combler	verb			پر کردن (جای خالی)، برآوردن (آرزو)	پر کردن (جای خالی)	actions
+aligner	verb			ردیف کردن	ردیف کردن	actions
+pincer	verb			نیشگون گرفتن	نیشگون گرفتن	body
+grogner	verb			غر زدن، خُرخُر کردن	غر زدن	feelings
+dérober	verb			ربودن (پنهانی)	ربودن (پنهانی)	society	register:formal
+abuser	verb			سوءاستفاده کردن، زیاده‌روی کردن	سوءاستفاده کردن	society
+orner	verb			آراستن	آراستن	culture	register:formal
+abriter	verb			پناه دادن، جای دادن	پناه دادن	home
+emballer	verb			بسته‌بندی کردن	بسته‌بندی کردن	shopping
+vanter	verb			تعریف کردن (از)، ستودن	تعریف کردن (از)	feelings
+émerger	verb			سر برآوردن، پدیدار شدن	سر برآوردن	actions
+dater	verb			تاریخ گذاشتن، قدمت داشتن	تاریخ گذاشتن	time
+s'attarder	verb			معطل کردن، درنگ کردن	معطل کردن	time
+immobiliser	verb			بی‌حرکت کردن	بی‌حرکت کردن	actions
+salir	verb			کثیف کردن	کثیف کردن	home
+égarer	verb			گم کردن (موقتاً)	گم کردن (موقتاً)	actions
+relier	verb			وصل کردن، پیوند دادن	وصل کردن	abstract
+glacer	verb			یخ زدن، منجمد کردن	یخ زدن	weather
+entasser	verb			انباشتن، روی هم چیدن	انباشتن	actions
+déplaire	verb			خوشایند نبودن، ناخوشایند بودن	خوشایند نبودن	feelings
+ricaner	verb			پوزخند زدن	پوزخند زدن	feelings
+encombrer	verb			اشغال کردن (جا)، شلوغ کردن	اشغال کردن (جا)	home
+conquérir	verb			فتح کردن، به دست آوردن (دل)	فتح کردن	society
+ruiner	verb			به خاک سیاه نشاندن، ورشکست کردن	به خاک سیاه نشاندن	economy
+expédier	verb			ارسال کردن (بسته)، فرستادن (سریع)	ارسال کردن (بسته)	media
+crisper	verb			منقبض کردن، عصبی کردن	منقبض کردن	body
+reproduire	verb			تکثیر کردن، تکرار کردن (دوباره)	تکثیر کردن	actions
+relire	verb			دوباره خواندن	دوباره خواندن	education
+entrevoir	verb			به‌طور گذرا دیدن، اندکی دیدن	به‌طور گذرا دیدن	actions
+se réfugier	verb			پناه بردن	پناه بردن	society
+déguiser	verb			تغییر قیافه دادن	تغییر قیافه دادن	culture
+se déguiser	verb			لباس مبدل پوشیدن	لباس مبدل پوشیدن	culture
+lasser	verb			خسته کردن (از تکرار)، دلزده کردن	خسته کردن (از تکرار)	feelings
+irriter	verb			عصبانی کردن (کم)، سوزش آوردن (پوست)	عصبانی کردن (کم)	feelings
+massacrer	verb			قتل‌عام کردن	قتل‌عام کردن	society
+gronder	verb			سرزنش کردن (بچه)، غرش کردن	سرزنش کردن (بچه)	family
+contraindre	verb			مجبور کردن (رسمی)	مجبور کردن (رسمی)	society	register:formal
+braquer	verb			نشانه گرفتن (اسلحه)، سرقت مسلحانه کردن	نشانه گرفتن (اسلحه)	society
+aboutir	verb			منجر شدن، به نتیجه رسیدن	منجر شدن	abstract
+enfouir	verb			دفن کردن (پنهان)، فرو بردن	دفن کردن (پنهان)	actions
+revivre	verb			دوباره زنده شدن، از نو تجربه کردن	دوباره زنده شدن	feelings
+ramper	verb			خزیدن	خزیدن	actions
+hisser	verb			بالا کشیدن (پرچم)	بالا کشیدن (پرچم)	actions
+assommer	verb			بیهوش کردن (با ضربه)، کلافه کردن	بیهوش کردن (با ضربه)	actions
+humilier	verb			تحقیر کردن (جلوی دیگران)	تحقیر کردن (جلوی دیگران)	feelings
+brouiller	verb			به هم ریختن، مختل کردن	به هم ریختن	actions
+racheter	verb			دوباره خریدن، خریدن (شرکت)	دوباره خریدن	economy
+convoquer	verb			احضار کردن، فراخواندن	احضار کردن	society
+démolir	verb			ویران کردن (ساختمان)	ویران کردن (ساختمان)	actions
+renifler	verb			بو کشیدن، فین کردن	بو کشیدن	body
+frôler	verb			تماس اندک (گذرا) داشتن با	تماس اندک (گذرا) داشتن با	actions
+sursauter	verb			از جا پریدن (از ترس)	از جا پریدن (از ترس)	feelings
+chérir	verb			عزیز داشتن	عزیز داشتن	feelings	register:formal
+se hâter	verb			شتافتن، عجله کردن (رسمی)	شتافتن	time	register:formal
+désespérer	verb			ناامید شدن	ناامید شدن	feelings
+disperser	verb			پراکنده کردن	پراکنده کردن	actions
+ressusciter	verb			زنده شدن (پس از مرگ)	زنده شدن (پس از مرگ)	culture
+enchaîner	verb			به زنجیر کشیدن، پشت سر هم انجام دادن	به زنجیر کشیدن	actions
+négliger	verb			سهل‌انگاری کردن، غفلت کردن (از)	سهل‌انگاری کردن	actions
+vibrer	verb			لرزیدن (تند)، ویبره رفتن	لرزیدن (تند)	science
+accumuler	verb			انباشتن	انباشتن	actions
+multiplier	verb			ضرب کردن، چند برابر کردن	ضرب کردن	numbers
+choquer	verb			شوکه کردن، برآشفتن	شوکه کردن	feelings
+effleurer	verb			لمس کردن (آرام)	لمس کردن (آرام)	actions
+piéger	verb			به دام انداختن	به دام انداختن	actions
+revêtir	verb			پوشیدن (لباس رسمی)، به خود گرفتن (شکل)	پوشیدن (لباس رسمی)	clothes	register:formal
+cerner	verb			محاصره کردن، شناختن (مشکل)	محاصره کردن	abstract
+décorer	verb			تزئین کردن	تزئین کردن	home
+graver	verb			حکاکی کردن، رایت کردن (دیسک)	حکاکی کردن	culture
+reparler	verb			دوباره صحبت کردن	دوباره صحبت کردن	people
+traquer	verb			تعقیب کردن (شکار)	تعقیب کردن (شکار)	society
+faucher	verb			درو کردن، زیر گرفتن	درو کردن	nature
+retentir	verb			طنین انداختن (صدای بلند)	طنین انداختن (صدای بلند)	actions
+renforcer	verb			تقویت کردن	تقویت کردن	abstract
+frémir	verb			لرزیدن (از هیجان)	لرزیدن (از هیجان)	feelings
+associer	verb			مرتبط کردن، شریک کردن	مرتبط کردن	abstract
+empoigner	verb			محکم گرفتن (با دست)	محکم گرفتن (با دست)	actions
+refléter	verb			بازتاب دادن	بازتاب دادن	nature
+assumer	verb			پذیرفتن (مسئولیت)، به عهده گرفتن	پذیرفتن (مسئولیت)	abstract
+exclure	verb			کنار گذاشتن، اخراج کردن (از گروه)	کنار گذاشتن	society
+brandir	verb			تکان دادن (چیزی در هوا)	تکان دادن (چیزی در هوا)	actions
+évacuer	verb			تخلیه کردن	تخلیه کردن	society
+piétiner	verb			لگدمال کردن، درجا زدن	لگدمال کردن	actions
+vexer	verb			رنجاندن	رنجاندن	feelings
+susciter	verb			برانگیختن	برانگیختن	abstract
+feindre	verb			وانمود کردن	وانمود کردن	actions	register:formal
+s'accroupir	verb			چمباتمه زدن	چمباتمه زدن	body
+clouer	verb			میخ کوبیدن	میخ کوبیدن	home
+compromettre	verb			به خطر انداختن (آبرو)، بدنام کردن	به خطر انداختن (آبرو)	society
+engloutir	verb			بلعیدن (یکجا)	بلعیدن (یکجا)	actions
+triompher	verb			پیروز شدن (بزرگ)	پیروز شدن (بزرگ)	society
+accabler	verb			زیر بار گذاشتن، از پا درآوردن	زیر بار گذاشتن	feelings
+diviser	verb			تقسیم کردن	تقسیم کردن	numbers
+ébranler	verb			به لرزه درآوردن، سست کردن	به لرزه درآوردن	actions
+dévisager	verb			خیره نگاه کردن (به صورت)	خیره نگاه کردن (به صورت)	actions
+tourmenter	verb			آزار دادن (روحی)	آزار دادن (روحی)	feelings
+encadrer	verb			قاب کردن، سرپرستی کردن	قاب کردن	work
+cirer	verb			واکس زدن	واکس زدن	clothes
+émettre	verb			ساطع کردن، صادر کردنِ (سند)	ساطع کردن	science
+hanter	verb			ذهن (کسی را) رها نکردن، تسخیر کردن (روح)	ذهن (کسی را) رها نکردن	culture
+tolérer	verb			تحمل کردن (با اکراه)، روا دانستن	تحمل کردن (با اکراه)	society
+déterminer	verb			تعیین کردن، مشخص کردن	تعیین کردن	abstract
+affoler	verb			هراسان کردن	هراسان کردن	feelings
+illuminer	verb			روشن کردن (با نور زیاد)	روشن کردن (با نور زیاد)	nature
+retarder	verb			به تأخیر انداختن، عقب بودن (ساعت)	به تأخیر انداختن	time
+contourner	verb			دور زدن (مانع)	دور زدن (مانع)	space
+baptiser	verb			غسل تعمید دادن، نام گذاشتن	غسل تعمید دادن	culture
+confesser	verb			اعتراف کردن (به گناه)	اعتراف کردن (به گناه)	culture
+rouiller	verb			زنگ زدن (آهن)	زنگ زدن (آهن)	science
+adapter	verb			سازگار کردن، اقتباس کردن (رمان)	سازگار کردن	culture
+s'adapter	verb			خو گرفتن، سازگار شدن	خو گرفتن	feelings
+nuire	verb			آسیب رساندن، زیان رساندن	آسیب رساندن	abstract
+paniquer	verb			دستپاچه شدن، هول کردن	دستپاچه شدن	feelings
+tricher	verb			تقلب کردن	تقلب کردن	education
+anéantir	verb			نابود کردن (کامل)	نابود کردن (کامل)	society
+rôder	verb			پرسه زدن (مشکوک)	پرسه زدن (مشکوک)	actions
+défier	verb			به مبارزه طلبیدن	به مبارزه طلبیدن	society
+progresser	verb			پیشرفت کردن	پیشرفت کردن	education
+effectuer	verb			انجام دادن (رسمی)	انجام دادن (رسمی)	actions	register:formal
+gâter	verb			لوس کردن، خراب کردن	لوس کردن	family
+rouvrir	verb			دوباره باز کردن	دوباره باز کردن	actions
+dépouiller	verb			لخت کردن (غارت کردن)، شمردن (آرا)	لخت کردن (غارت کردن)	society
+stopper	verb			متوقف کردن (سریع)	متوقف کردن (سریع)	actions
+ronfler	verb			خروپف کردن	خروپف کردن	body
+sombrer	verb			غرق شدن (کشتی)، فرو رفتن (در)	غرق شدن (کشتی)	nature
+reporter	verb			به تعویق انداختن	به تعویق انداختن	time
+planer	verb			پرواز کردن (بی‌بال‌زدن)، معلق بودن	پرواز کردن (بی‌بال‌زدن)	nature
+dissiper	verb			پراکندن (ابر یا شک)	پراکندن (ابر یا شک)	abstract
+contrarier	verb			ناراحت کردن، مخالفت کردن با	ناراحت کردن	feelings
+peupler	verb			ساکن کردن، جمعیت بخشیدن	ساکن کردن	society
+accourir	verb			دوان دوان آمدن	دوان دوان آمدن	actions
+se résigner	verb			تن دادن، تسلیم سرنوشت شدن	تن دادن	feelings
+élargir	verb			پهن‌تر کردن، گسترش دادن	پهن‌تر کردن	space
+intimider	verb			مرعوب کردن	مرعوب کردن	feelings
+renouveler	verb			تمدید کردن (کارت)، نو کردن	تمدید کردن (کارت)	society
+attendrir	verb			دل (کسی را) نرم کردن	دل (کسی را) نرم کردن	feelings
+contribuer	verb			کمک کردن (به چیزی)، سهم داشتن	کمک کردن (به چیزی)	society
+feuilleter	verb			ورق زدن	ورق زدن	education
+transférer	verb			منتقل کردن، انتقال دادن	منتقل کردن	economy
+se repentir	verb			توبه کردن، پشیمان شدن (عمیق)	توبه کردن	culture
+capturer	verb			اسیر کردن، به دام انداختن	اسیر کردن	society
+agrandir	verb			بزرگ کردن (عکس یا خانه)	بزرگ کردن (عکس یا خانه)	home
+passionner	verb			به شوق آوردن	به شوق آوردن	feelings
+boiter	verb			لنگیدن	لنگیدن	health
+abaisser	verb			پایین آوردن (رسمی)، کاستن	پایین آوردن (رسمی)	actions
+proclamer	verb			اعلام کردن (رسمی و باشکوه)	اعلام کردن (رسمی و باشکوه)	society
+masquer	verb			پنهان کردن (پشت چیزی)	پنهان کردن (پشت چیزی)	actions
+gifler	verb			سیلی زدن	سیلی زدن	actions
+commenter	verb			اظهار نظر کردن، تفسیر کردن	اظهار نظر کردن	media
+frissonner	verb			لرزیدن (از سرما)	لرزیدن (از سرما)	body
+élancer	verb			تیر کشیدن (درد)	تیر کشیدن (درد)	health
+s'élancer	verb			به جلو جستن	به جلو جستن	actions
+bercer	verb			تکان دادن (گهواره)	تکان دادن (گهواره)	family
+courber	verb			خم کردن	خم کردن	actions
+rajouter	verb			اضافه کردن (باز هم)	اضافه کردن (باز هم)	actions
+grincer	verb			جیرجیر کردن	جیرجیر کردن	actions
+émerveiller	verb			حیرت‌زده کردن (از زیبایی)	حیرت‌زده کردن (از زیبایی)	feelings
+questionner	verb			سؤال‌پیچ کردن	سؤال‌پیچ کردن	society
+offenser	verb			رنجاندن، توهین کردن (به احترام)	رنجاندن	feelings
+explorer	verb			کاوش کردن	کاوش کردن	travel
+décharger	verb			خالی کردن (بار)	خالی کردن (بار)	transport
+aveugler	verb			کور کردن (نور)	کور کردن (نور)	nature
+exaspérer	verb			به ستوه آوردن	به ستوه آوردن	feelings
+manier	verb			به کار بردن (ابزار)	به کار بردن (ابزار)	actions
+paralyser	verb			فلج کردن	فلج کردن	health
+extraire	verb			استخراج کردن	استخراج کردن	science
+dévoiler	verb			پرده برداشتن، فاش کردن	پرده برداشتن	abstract
+éclaircir	verb			روشن کردن (معما)	روشن کردن (معما)	abstract
+se faufiler	verb			یواشکی رد شدن	یواشکی رد شدن	actions
+accéder	verb			دسترسی یافتن	دسترسی یافتن	abstract
+périr	verb			هلاک شدن	هلاک شدن	health	register:formal
+inspecter	verb			بازرسی کردن	بازرسی کردن	society
+louper	verb			جا ماندن از، خراب کردن	از دست دادن قطار	actions	register:familier
+s'indigner	verb			خشمگین شدن (از بی‌عدالتی)	خشمگین شدن (از بی‌عدالتی)	feelings
+faciliter	verb			آسان کردن	آسان کردن	abstract
+pressentir	verb			از پیش حس کردن	از پیش حس کردن	feelings
+prescrire	verb			تجویز کردن	تجویز کردن	health
+forger	verb			آهنگری کردن، ساختن (جعلی)	آهنگری کردن	work
+renier	verb			انکار کردن (کسی یا عقیده)	انکار کردن (کسی یا عقیده)	society
+dicter	verb			دیکته کردن	دیکته کردن	education
+déchiffrer	verb			رمزگشایی کردن، خواندن (خط بد)	رمزگشایی کردن	education
+obséder	verb			فکر (کسی را) مشغول کردن (وسواسی)	فکر (کسی را) مشغول کردن (وسواسی)	feelings
+exploiter	verb			بهره‌برداری کردن، استثمار کردن	بهره‌برداری کردن	economy
+encaisser	verb			دریافت کردن (پول)، تحمل کردن (ضربه)	دریافت کردن (پول)	economy
+infliger	verb			تحمیل کردن (مجازات)	تحمیل کردن (مجازات)	society
+embarrasser	verb			شرمنده کردن، دستپاچه کردن	شرمنده کردن	feelings
+liquider	verb			حراج کردن، از میان برداشتن	حراج کردن	economy
+renaître	verb			دوباره زاده شدن	دوباره زاده شدن	culture
+polir	verb			صیقل دادن	صیقل دادن	actions
+fleurir	verb			گل دادن، شکوفا شدن	گل دادن	nature
+couronner	verb			تاج‌گذاری کردن	تاج‌گذاری کردن	society
+survenir	verb			رخ دادن (ناگهانی)	رخ دادن (ناگهانی)	abstract
+bâiller	verb			خمیازه کشیدن	خمیازه کشیدن	body
+agripper	verb			چنگ زدن (برای نیفتادن)	چنگ زدن (برای نیفتادن)	actions
+déplier	verb			باز کردن (تا شده)	باز کردن (تا شده)	actions
+méditer	verb			مدیتیشن کردن، اندیشیدن (عمیق)	مدیتیشن کردن	culture
+reconstituer	verb			بازسازی کردن (رویداد)	بازسازی کردن (رویداد)	abstract
+décourager	verb			دلسرد کردن	دلسرد کردن	feelings
+enlacer	verb			در آغوش گرفتن	در آغوش گرفتن	feelings
+s'obstiner	verb			پافشاری کردن، لجاجت کردن	پافشاری کردن	character
+escalader	verb			از (دیوار یا کوه) بالا رفتن	از (دیوار یا کوه) بالا رفتن	leisure
+raidir	verb			سفت کردن (بدن)	سفت کردن (بدن)	body
+naviguer	verb			دریانوردی کردن، گشتن (در اینترنت)	دریانوردی کردن	transport
+camper	verb			چادر زدن، اردو زدن	چادر زدن	leisure
+étreindre	verb			در آغوش فشردن	در آغوش فشردن	feelings	register:formal
+implorer	verb			التماس کردن (عاجزانه)	التماس کردن (عاجزانه)	feelings	register:formal
+peiner	verb			زحمت کشیدن، به‌سختی (کاری را) کردن	زحمت کشیدن	actions
+ruisseler	verb			شره کردن، جاری شدن (آب)	شره کردن	nature
+remporter	verb			بردن (جایزه یا مسابقه)	بردن (جایزه یا مسابقه)	leisure
+gravir	verb			بالا رفتن (از کوه)	بالا رفتن (از کوه)	leisure
+convertir	verb			تبدیل کردن، گرواندن (به دین)	تبدیل کردن	abstract
+insinuer	verb			با کنایه گفتن	با کنایه گفتن	abstract
+incarner	verb			مجسم کردن، نقش (کسی را) بازی کردن	مجسم کردن	culture
+enrichir	verb			ثروتمند کردن، غنی کردن	ثروتمند کردن	economy
+capter	verb			دریافت کردن (سیگنال)، جلب کردن (توجه)	دریافت کردن (سیگنال)	media
+imprégner	verb			آغشتن	آغشتن	actions
+répliquer	verb			پاسخ دادن (سریع یا تند)	پاسخ دادن (سریع یا تند)	people
+rafraîchir	verb			خنک کردن، تازه کردن	خنک کردن	weather
+alerter	verb			آگاه کردن (از خطر)، هشدار دادن (فوری)	آگاه کردن (از خطر)	society
+se régaler	verb			لذت بردن (از غذا)	لذت بردن (از غذا)	food
+compléter	verb			کامل کردن، تکمیل کردن	کامل کردن	actions
+aboyer	verb			پارس کردن	پارس کردن	animals
+activer	verb			فعال کردن	فعال کردن	science
+flairer	verb			بو بردن (حدس زدن)	بو بردن (حدس زدن)	animals
+s'épanouir	verb			شکوفا شدن (شخصیت)	شکوفا شدن (شخصیت)	feelings
+subsister	verb			باقی ماندن	باقی ماندن	abstract
+dessécher	verb			خشک کردن (کامل)	خشک کردن (کامل)	nature
+refroidir	verb			سرد کردن، سرد شدن	سرد کردن	weather
+invoquer	verb			استناد کردن به، به یاری طلبیدن	استناد کردن به	abstract
+persister	verb			ادامه داشتن (سرسختانه)	ادامه داشتن (سرسختانه)	abstract
+formuler	verb			بیان کردن (دقیق)، فرمول‌بندی کردن	بیان کردن (دقیق)	abstract
+égorger	verb			سر بریدن	سر بریدن	society	mastery:recognize
+patienter	verb			صبر کردن (کمی)، منتظر ماندن	صبر کردن (کمی)	time
+masser	verb			ماساژ دادن	ماساژ دادن	health
+savourer	verb			مزه‌مزه کردن، لذت بردن (آرام)	مزه‌مزه کردن	food
+maudire	verb			نفرین کردن	نفرین کردن	culture
+manipuler	verb			دستکاری کردن، فریب دادن	دستکاری کردن	society
+récompenser	verb			پاداش دادن	پاداش دادن	abstract
+baser	verb			مبتنی کردن (بر)	مبتنی کردن (بر)	abstract
+dévaler	verb			با سرعت پایین آمدن	با سرعت پایین آمدن	space
+aggraver	verb			وخیم‌تر کردن	وخیم‌تر کردن	health
+accouder	verb			آرنج تکیه دادن	آرنج تکیه دادن	body	mastery:recognize
+engendrer	verb			پدید آوردن، سبب شدن	پدید آوردن	abstract	register:formal
+enflammer	verb			شعله‌ور کردن	شعله‌ور کردن	nature
+croquer	verb			گاز زدن (چیز ترد)	گاز زدن (چیز ترد)	food
+scruter	verb			با دقت بررسی کردن (با نگاه)	با دقت بررسی کردن (با نگاه)	actions
+instruire	verb			آموزش دادن (رسمی)	آموزش دادن (رسمی)	education	register:formal
+qualifier	verb			توصیف کردن، واجد شرایط کردن	توصیف کردن	abstract
+se qualifier	verb			صعود کردن (در مسابقه)	صعود کردن (در مسابقه)	leisure
+tapoter	verb			آرام ضربه زدن	آرام ضربه زدن	actions
+chantonner	verb			زیر لب آواز خواندن	زیر لب آواز خواندن	culture
+s'adosser	verb			تکیه دادن (به پشت)	تکیه دادن (به پشت)	body
+poignarder	verb			چاقو زدن	چاقو زدن	society
+suer	verb			عرق ریختن	عرق ریختن	body
+embrouiller	verb			درهم کردن، گیج کردن	درهم کردن	abstract
+empiler	verb			روی هم چیدن	روی هم چیدن	actions
+blanchir	verb			سفید کردن، پولشویی کردن	سفید کردن	actions
+esquisser	verb			طرح زدن (اولیه)	طرح زدن (اولیه)	culture
+trébucher	verb			سکندری خوردن	سکندری خوردن	actions
+garnir	verb			پر کردن (با چیزی)، تزئین کردن (غذا)	پر کردن (با چیزی)	food
+accentuer	verb			برجسته‌تر کردن، تشدید کردن	برجسته‌تر کردن	abstract
+puiser	verb			برداشتن (از منبع)، کشیدن (آب)	برداشتن (از منبع)	actions
+mâcher	verb			جویدن	جویدن	food
+ne pas mâcher ses mots	phrase			رُک حرف زدن	رُک حرف زدن	character	parts:mâcher mot
+piloter	verb			هدایت کردن (هواپیما)	هدایت کردن (هواپیما)	transport
+débuter	verb			آغاز شدن، تازه‌کار بودن	آغاز شدن	time
+endurer	verb			تحمل کردن (رنج)	تحمل کردن (رنج)	feelings
+incruster	verb			کار گذاشتن، چسبیدن (مزاحم)	کار گذاشتن	actions
+interpeller	verb			صدا زدن (کسی را)، بازداشت کردن (پلیس)	صدا زدن (کسی را)	society
+râler	verb			غر زدن	غر زدن	feelings	register:familier
+droguer	verb			مواد خوراندن	مواد خوراندن	health
+sangloter	verb			هق‌هق کردن	هق‌هق کردن	feelings
+chausser	verb			کفش پوشیدن	کفش پوشیدن	clothes
+inciter	verb			ترغیب کردن	ترغیب کردن	abstract
+emprisonner	verb			زندانی کردن	زندانی کردن	society
+sculpter	verb			مجسمه ساختن، تراشیدن	مجسمه ساختن	culture
+arrondir	verb			گرد کردن (عدد)	گرد کردن (عدد)	numbers
+copier	verb			رونویسی کردن، کپی کردن	رونویسی کردن	education
+submerger	verb			زیر آب بردن، غرق کردن (در کار)	زیر آب بردن	nature
+consumer	verb			سوزاندن (کامل)	سوزاندن (کامل)	nature
+dédier	verb			تقدیم کردن	تقدیم کردن	culture
+accommoder	verb			سازگار کردن، پختن (به روشی)	سازگار کردن	food
+aplatir	verb			صاف کردن (با فشار)	صاف کردن (با فشار)	actions
+grouper	verb			گروه‌بندی کردن	گروه‌بندی کردن	actions
+froncer	verb			چین انداختن (ابرو)	چین انداختن (ابرو)	body	coll:froncer les sourcils → اخم کردن
+gouverner	verb			حکومت کردن	حکومت کردن	society
+pâlir	verb			رنگ‌پریده شدن	رنگ‌پریده شدن	health
+tutoyer	verb			با «تو» خطاب کردن	با «تو» خطاب کردن	people
+solliciter	verb			درخواست کردن (رسمی)	درخواست کردن (رسمی)	work	register:formal
+discerner	verb			تشخیص دادن (با دقت)	تشخیص دادن (با دقت)	abstract	register:formal
+tracasser	verb			نگران کردن (مدام)	نگران کردن (مدام)	feelings
+dissoudre	verb			حل کردن (در مایع)، منحل کردن	حل کردن (در مایع)	science
+froisser	verb			مچاله کردن، رنجاندن	مچاله کردن	actions
+tricoter	verb			بافتنی بافتن	بافتنی بافتن	leisure
+s'avérer	verb			معلوم شدن، از آب درآمدن	معلوم شدن	abstract
+exhiber	verb			به رخ کشیدن	به رخ کشیدن	actions
+filtrer	verb			صاف کردن (مایع)، فیلتر کردن	صاف کردن (مایع)	science
+bousiller	verb			خراب کردن (کامل)	خراب کردن	actions	register:familier
+rallier	verb			پیوستن (به)، گرد آوردن	پیوستن (به)	society
+encercler	verb			محاصره کردن	محاصره کردن	society
+emménager	verb			به خانهٔ تازه رفتن	به خانهٔ تازه رفتن	home
+réconforter	verb			دلداری دادن (گرم)	دلداری دادن (گرم)	feelings
+piller	verb			غارت کردن	غارت کردن	society
+trouer	verb			سوراخ کردن	سوراخ کردن	actions
+improviser	verb			بداهه گفتن، بی‌مقدمه انجام دادن	بداهه گفتن	culture
+alourdir	verb			سنگین کردن	سنگین کردن	actions
+farcir	verb			پر کردن (دلمه)	پر کردن (دلمه)	food
+prédire	verb			پیشگویی کردن	پیشگویی کردن	abstract
+empirer	verb			بدتر شدن	بدتر شدن	health
+blâmer	verb			سرزنش کردن (رسمی)	سرزنش کردن (رسمی)	feelings	register:formal
+orienter	verb			جهت دادن، راهنمایی کردن (تحصیلی)	جهت دادن	education
+durcir	verb			سفت کردن، سخت‌تر کردن	سفت کردن	actions
+escorter	verb			همراهی کردن (برای محافظت)	همراهی کردن (برای محافظت)	society
+tripoter	verb			ور رفتن (با چیزی)	دست زدن	actions	register:familier	mastery:recognize
+équiper	verb			مجهز کردن	مجهز کردن	work
+localiser	verb			مکان‌یابی کردن	مکان‌یابی کردن	space
+dériver	verb			منحرف شدن (از مسیر)، مشتق شدن	منحرف شدن (از مسیر)	abstract
+éparpiller	verb			پخش و پلا کردن	پخش و پلا کردن	actions
+enjamber	verb			از روی (چیزی) پریدن (با گام)	از روی (چیزی) پریدن (با گام)	actions
