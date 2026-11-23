@@ -1,0 +1,75 @@
+code: fr-a1-ce-cette
+title: «این»: ce، cet، cette و ces
+scope: صفت اشاره قبل از اسم: ce برای مذکر، cet برای مذکری که با صدادار یا h شروع می‌شود، cette برای مؤنث و ces برای جمع؛ ce در c'est جداست.
+can_do: حالا می‌توانی به چیزی اشاره کنی: ce chien، cette maison، ces enfants.
+rule: ce + مذکر، cet + مذکرِ صدادار یا h، cette + مؤنث، ces + جمع.
+mistake: فارسی «این» را برای همه یکی می‌گوید و فارسی‌زبان‌ها ce را قبل از اسم مؤنث یا صدادار می‌گذارند («ce maison»، «ce ami»)؛ درست: cette maison، cet ami. cette année هم مؤنث است (نه cet année) و جمع همیشه ces است، نه «cettes».
+lesson:
+ce، cet، cette و ces یعنی «این» یا «آن»؛ فرانسوی در گفتار روزمره بین این دو فرق نمی‌گذارد.
+مثل un و une، شکلشان به جنس و شمار اسم بستگی دارد.
+ce قبل از اسم مذکر می‌آید (ce chien) و cette قبل از اسم مؤنث (cette maison).
+قبل از اسم مذکری که با صدادار یا h شروع شود cet می‌آید: cet ami، cet homme؛ cet و cette یک‌جور خوانده می‌شوند.
+برای جمع، هر جنسی باشد، ces می‌آید: ces chiens، ces maisons.
+table:
+ | مذکر | مؤنث
+مفرد | ce chien، cet ami | cette maison، cette amie
+جمع | ces chiens، ces amis | ces maisons، ces amies
+sets:
+ce: chien, garçon, problème, pain, travail, nom
+cet: ami, homme
+cette: maison, voiture, idée, école, année, fille
+examples:
+Ce chien est petit. | این سگ کوچک است.
+J'aime cette ville. | من این شهر را دوست دارم.
+Cet homme est dans la voiture. | این مرد در ماشین است.
+Ces enfants jouent dans la rue. | این بچه‌ها در خیابان بازی می‌کنند.
+targets:
+[Ce] chien est petit. | این سگ کوچک است. | d: Cet, Cette, Ces | hint: (ce)
+[Cette] maison est grande. | این خانه بزرگ است. | d: Ce, Cet, Ces | hint: (ce)
+[Cet] homme est dans la voiture. | این مرد در ماشین است. | d: Ce, Cette, Ces | hint: (ce)
+[Ces] enfants jouent dans la rue. | این بچه‌ها در خیابان بازی می‌کنند. | d: Ce, Cet, Cette
+J'aime [cette] ville. | من این شهر را دوست دارم. | d: ce, cet, ces | hint: (ce)
+Tu aimes [ce] café ? | این قهوه را دوست داری؟ | d: cet, cette, ces | hint: (ce)
+[Cette] voiture est à Marie. | این ماشین مال ماری است. | d: Ce, Cet, Ces
+Je cherche [cette] rue. | دنبال این خیابان می‌گردم. | d: ce, cet, ces | hint: (ce)
+[Cet] ami de Paul habite à Lyon. | این دوستِ پل در لیون زندگی می‌کند. | d: Ce, Cette, Ces
+[Cette] amie de Marie habite à Nice. | این دوستِ ماری در نیس زندگی می‌کند. | d: Ce, Cet, Ces | hint: (ce)
+[Ces] voitures sont grandes. | این ماشین‌ها بزرگ هستند. | d: Ce, Cet, Cette
+[Cette] idée est bonne. | این ایده خوب است. | d: Ce, Cet, Ces | hint: (ce)
+[Ce] problème n'est pas grand. | این مشکل بزرگ نیست. | d: Cet, Cette, Ces
+Je n'aime pas [ce] travail. | این کار را دوست ندارم. | d: cet, cette, ces | hint: (ce)
+Tu regardes [ces] chats ? | این گربه‌ها را نگاه می‌کنی؟ | d: ce, cet, cette
+[Ce] garçon parle français. | این پسر فرانسوی حرف می‌زند. | d: Cet, Cette, Ces | hint: (ce)
+[Cette] fille travaille ici. | این دختر اینجا کار می‌کند. | d: Ce, Cet, Ces
+[Cette] année, je travaille à Paris. | امسال در پاریس کار می‌کنم. | d: Cet, Ce, Ces | hint: (ce) | full: Je travaille à Paris cette année.
+[Ce] monsieur cherche l'école. | این آقا دنبال مدرسه می‌گردد. | d: Cet, Cette, Ces
+[Ces] gens habitent ici. | این آدم‌ها اینجا زندگی می‌کنند. | d: Ce, Cet, Cette | hint: (ce)
+Vous aimez [cette] table ? | این میز را دوست دارید؟ | d: ce, cet, ces
+[Ce] pain est très bon. | این نان خیلی خوب است. | d: Cet, Cette, Ces | hint: (ce)
+Je ne trouve pas [ces] livres. | این کتاب‌ها را پیدا نمی‌کنم. | d: ce, cet, cette
+[Cette] personne est dans la rue. | این آدم در خیابان است. | d: Ce, Cet, Ces | hint: (ce)
+Je n'aime pas [ce] nom. | این اسم را دوست ندارم. | d: cet, cette, ces
+[Cette] école est grande. | این مدرسه بزرگ است. | d: Cet, Ce, Ces | hint: (ce)
+[Ces] amis sont à Lyon. | این دوست‌ها در لیون هستند. | d: Cet, Ce, Cette
+[Cette] famille habite ici. | این خانواده اینجا زندگی می‌کند. | d: Ce, Cet, Ces
+[Cette] chose est à Paul. | این چیز مال پل است. | d: Ce, Cet, Ces | hint: (ce)
+[Ces] filles aiment le café. | این دخترها قهوه دوست دارند. | d: Cette, Ce, Cet | hint: (ce)
+[Cet] homme et [cette] femme travaillent ici. | این مرد و این زن اینجا کار می‌کنند. | d: Ce, Cette, Ces / ce, cet, ces | full: Cette femme et cet homme travaillent ici.
+J'aime [ce] chien, mais je n'aime pas [ce] chat. | این سگ را دوست دارم، ولی این گربه را دوست ندارم. | d: cet, cette, ces / cet, cette, ces
+[Ces] enfants jouent avec [ce] chien. | این بچه‌ها با این سگ بازی می‌کنند. | d: Ce, Cet, Cette / cet, cette, ces
+[Cette] voiture et [ces] maisons sont à Paul. | این ماشین و این خانه‌ها مال پل هستند. | d: Ce, Cet, Ces / ce, cet, cette | full: Ces maisons et cette voiture sont à Paul.
+[Cet] ami habite dans [cette] ville. | این دوست در این شهر زندگی می‌کند. | d: Ce, Cette, Ces / ce, cet, ces
+[Ce] garçon et [cette] fille parlent français. | این پسر و این دختر فرانسوی حرف می‌زنند. | d: Cet, Cette, Ces / ce, cet, ces | full: Cette fille et ce garçon parlent français.
+transforms:
+Ce chien est ici. => Ces chiens sont ici. | جمله را جمع کن.
+Cette voiture est à Paul. => Ces voitures sont à Paul. | جمله را جمع کن.
+Le livre est sur la table. => Ce livre est sur la table. | به‌جای حرف تعریف، «این» بگذار.
+L'homme parle français. => Cet homme parle français. | به‌جای حرف تعریف، «این» بگذار.
+La fille travaille ici. => Cette fille travaille ici. | به‌جای حرف تعریف، «این» بگذار.
+J'aime l'école. => J'aime cette école. | به‌جای حرف تعریف، «این» بگذار.
+translations:
+این خانه بزرگ است. => Cette maison est grande.
+این مرد در ماشین است. => Cet homme est dans la voiture.
+امسال در پاریس کار می‌کنم. => Cette année, je travaille à Paris. ; Je travaille à Paris cette année.
+این بچه‌ها در خیابان بازی می‌کنند. => Ces enfants jouent dans la rue.
+این ایده را دوست دارم. => J'aime cette idée.
