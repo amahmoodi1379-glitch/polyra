@@ -1,0 +1,79 @@
+code: fr-a1-passe-compose-avoir
+title: گذشته با avoir: j'ai parlé
+scope: ساخت passé composé با avoir برای فعل‌های -er (j'ai parlé)، در جملهٔ مثبت، منفی (je n'ai pas mangé) و سؤالی، با hier، ce matin و le week-end dernier؛ اسم مفعول‌های بی‌قاعده و -ir در واحد بعد و فعل‌هایی که با être می‌آیند در واحد آخر.
+can_do: حالا می‌توانی بگویی دیروز یا آخر هفته چه کار کردی و از کارهای دیگران بپرسی: Hier, j'ai travaillé. Tu as mangé ?
+rule: avoir در زمان حال + اسم مفعول: j'ai parlé، tu as parlé، il a parlé، nous avons parlé، vous avez parlé، ils ont parlé؛ اسم مفعول -er با é ساخته می‌شود؛ منفی: je n'ai pas parlé.
+mistake: فارسی گذشته را با یک کلمه می‌گوید («خوردم»)، برای همین فارسی‌زبان‌ها avoir را جا می‌اندازند («je mangé») یا مصدر می‌نویسند («j'ai manger»)؛ درست: j'ai mangé. اسم مفعول هم صرف نمی‌شود: «nous avons parlons» غلط است؛ درست: nous avons parlé.
+tables: passé composé
+tables: passé composé | er
+lesson:
+passé composé زمان گذشتهٔ اصلی فرانسوی است: کاری که در گذشته انجام شد و تمام شد (خوردم، کار کردم).
+از دو تکه ساخته می‌شود: avoir در زمان حال + اسم مفعول: j'ai mangé (خوردم).
+اسم مفعول فعل‌های -er با é ساخته می‌شود: parler → parlé، manger → mangé.
+فقط avoir صرف می‌شود و اسم مفعول برای همه یکی است: j'ai parlé، nous avons parlé، ils ont parlé.
+parlé و parler یک‌جور خوانده می‌شوند، ولی بعد از avoir همیشه é می‌نویسیم.
+در منفی ne … pas دور avoir می‌آید: Je n'ai pas mangé.
+کلمه‌های گذشته: hier (دیروز)، ce matin (امروز صبح)، le week-end dernier (آخر هفتهٔ گذشته).
+table:
+ضمیر | avoir | اسم مفعول
+j' | ai | parlé
+tu | as | mangé
+il، elle، on | a | travaillé
+nous | avons | regardé
+vous | avez | écouté
+ils، elles | ont | joué
+examples:
+Hier, j'ai travaillé à la maison. | دیروز در خانه کار کردم.
+Tu as mangé ? | غذا خوردی؟
+Nous avons regardé un film. | ما یک فیلم تماشا کردیم.
+Je n'ai pas téléphoné à Marie. | به ماری تلفن نزدم.
+targets:
+J'[ai] mangé une pomme. | یک سیب خوردم. | d: as, a, avons | hint: (avoir)
+Tu [as] parlé avec Marie ? | با ماری حرف زدی؟ | d: ai, a, avez | hint: (avoir)
+Paul [a] travaillé hier. | پل دیروز کار کرد. | d: as, ai, ont
+Nous [avons] regardé un film. | ما یک فیلم تماشا کردیم. | d: avez, ont, a | hint: (avoir)
+Vous [avez] acheté du pain ? | نان خریدید؟ | d: avons, ont, as
+Ils [ont] joué au football. | آن‌ها فوتبال بازی کردند. | d: a, avez, sont | hint: (avoir)
+Elle [a] écouté de la musique. | او موسیقی گوش داد. | d: est, as, ont
+On [a] mangé au restaurant. | در رستوران غذا خوردیم. | d: est, avons, as | hint: (avoir)
+J'ai [parlé] avec le professeur. | با معلم حرف زدم. | d: parler, parle, parlez | hint: (parler)
+Tu as [mangé] ? | غذا خوردی؟ | d: manger, manges, mangez
+Il a [acheté] une voiture. | او یک ماشین خرید. | d: acheter, achète, achetez | hint: (acheter)
+Nous avons [visité] Paris. | از پاریس دیدن کردیم. | d: visiter, visitons, visitez
+Vous avez [trouvé] vos clés ? | کلیدهایتان را پیدا کردید؟ | d: trouver, trouvez, trouve | hint: (trouver)
+Elles ont [cherché] le chat. | آن‌ها دنبال گربه گشتند. | d: chercher, cherchent, cherchez
+J'ai [téléphoné] à ma mère. | به مادرم تلفن زدم. | d: téléphoner, téléphone, téléphonez | hint: (téléphoner)
+Hier, j'ai [travaillé] à la maison. | دیروز در خانه کار کردم. | d: travailler, travaille, travaillez
+Marie a [aimé] le film. | ماری از فیلم خوشش آمد. | d: aimer, aime, aimez | hint: (aimer)
+Ils ont [donné] un cadeau à Paul. | آن‌ها به پل هدیه دادند. | d: donner, donnent, donnez
+Tu as [écouté] la radio ? | رادیو گوش دادی؟ | d: écouter, écoutes, écoutez | hint: (écouter)
+Nous avons [commandé] du poisson. | ماهی سفارش دادیم. | d: commander, commandons, commandez
+Je [n']ai pas mangé. | غذا نخوردم. | d: ne, pas, non
+Il n'a [pas] travaillé hier. | او دیروز کار نکرد. | d: non, ne, ni
+Nous n'avons pas [regardé] la télévision. | ما تلویزیون تماشا نکردیم. | d: regarder, regardons, regardez | hint: (regarder)
+Tu n'[as] pas téléphoné ? | تلفن نزدی؟ | d: es, a, avez
+Ils n'ont pas [aimé] la soupe. | آن‌ها از سوپ خوششان نیامد. | d: aimer, aiment, aimez
+Hier, nous [avons] dansé. | دیروز رقصیدیم. | d: avez, ont, sommes | hint: (avoir)
+Ce matin, j'ai [lavé] la voiture. | امروز صبح ماشین را شستم. | d: laver, lave, lavez
+Le week-end dernier, ils ont [visité] le musée. | آخر هفتهٔ گذشته از موزه دیدن کردند. | d: visiter, visitent, visitez | hint: (visiter)
+Vous avez [payé] ? | حساب کردید؟ | d: payer, payez, paye
+Elle a [chanté] une chanson. | او یک آهنگ خواند. | d: chanter, chante, chantez | hint: (chanter)
+J'[ai] [mangé] une pomme ce matin. | امروز صبح یک سیب خوردم. | d: as, a, avons / manger, mange, mangez | full: Ce matin, j'ai mangé une pomme.
+Hier, nous [avons] [regardé] un film. | دیروز یک فیلم تماشا کردیم. | d: avez, ont, sommes / regarder, regardons, regardez | full: Nous avons regardé un film hier.
+Tu [as] téléphoné à Paul ? Non, je n'[ai] pas téléphoné. | به پل تلفن زدی؟ نه، تلفن نزدم. | d: ai, a, avez / as, a, es
+Marie a [travaillé] et Paul a [cuisiné]. | ماری کار کرد و پل آشپزی کرد. | d: travailler, travaille, travaillez / cuisiner, cuisine, cuisinez | full: Paul a cuisiné et Marie a travaillé.
+Ils [ont] acheté une maison et ils [ont] invité leurs amis. | آن‌ها یک خانه خریدند و دوستانشان را دعوت کردند. | d: a, avez, sont / a, avez, sont
+Aujourd'hui je [travaille], mais hier j'ai [joué] au tennis. | امروز کار می‌کنم، ولی دیروز تنیس بازی کردم. | d: travaillé, travailler, travailles / jouer, joue, jouez
+transforms:
+Je mange une pomme. => J'ai mangé une pomme. | جمله را به گذشته (passé composé) ببر.
+Nous regardons un film. => Nous avons regardé un film. | جمله را به گذشته (passé composé) ببر.
+Ils parlent français. => Ils ont parlé français. | جمله را به گذشته (passé composé) ببر.
+J'ai travaillé. => Je n'ai pas travaillé. | جمله را منفی کن.
+Tu achètes du pain ? => Tu as acheté du pain ? | جمله را به گذشته (passé composé) ببر.
+Il a téléphoné. => Ils ont téléphoné. | جمله را با ils بنویس.
+translations:
+دیروز کار کردم. => Hier, j'ai travaillé. ; J'ai travaillé hier.
+غذا خوردی؟ => Tu as mangé ? ; Est-ce que tu as mangé ?
+ما یک فیلم تماشا کردیم. => Nous avons regardé un film. ; On a regardé un film.
+او دیروز کار نکرد. => Il n'a pas travaillé hier. ; Elle n'a pas travaillé hier. ; Hier, il n'a pas travaillé.
+آن‌ها فوتبال بازی کردند. => Ils ont joué au football. ; Elles ont joué au football.
