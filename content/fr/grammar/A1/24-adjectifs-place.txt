@@ -1,0 +1,76 @@
+code: fr-a1-adjectifs-place
+title: جای صفت: une petite maison، une maison blanche
+scope: جای صفت: صفت‌های کوتاهِ زیبایی، سن، خوب و بد، اندازه و ترتیب قبل از اسم (une petite maison، la première fois) و بقیه، مثل رنگ و ملیت، بعد از اسم (une voiture rouge)؛ bel، nouvel و vieil قبل از مذکرِ صدادار؛ de به‌جای des قبل از صفتِ جمع (de bons amis) در A2 می‌آید.
+can_do: حالا می‌توانی چیزها را با یک یا دو صفت توصیف کنی: J'ai une petite voiture rouge. C'est un nouvel ami.
+rule: beau، joli، jeune، vieux، nouveau، bon، mauvais، petit، grand، gros، premier، dernier و autre قبل از اسم می‌آیند و بقیه بعد از اسم؛ قبل از مذکرِ صدادار: bel، nouvel، vieil.
+mistake: فارسی صفت را همیشه بعد از اسم می‌گذارد («خانهٔ کوچک»)، برای همین فارسی‌زبان‌ها می‌نویسند «une maison petite»، یا برعکس همه را جلو می‌آورند: «une rouge voiture»؛ درست: une petite maison، une voiture rouge. «un beau homme» هم غلط است: un bel homme.
+lesson:
+بیشتر صفت‌ها بعد از اسم می‌آیند (une voiture rouge)، ولی چند صفتِ کوتاه و پرکاربرد قبل از اسم می‌نشینند.
+این‌ها از زیبایی، سن، خوب و بد و اندازه می‌گویند: beau، joli، jeune، vieux، nouveau، bon، mauvais، petit، grand، gros؛ premier، dernier و autre هم همین‌طور.
+پس می‌گوییم une petite maison، un bon ami، la première fois.
+رنگ‌ها، ملیت‌ها و بیشتر صفت‌های دیگر بعد از اسم می‌مانند: une maison blanche، un restaurant iranien.
+اگر دو صفت باشد، هرکدام سر جای خودش: un gros chien noir.
+beau، nouveau و vieux قبل از اسم مذکری که با صدادار یا h شروع شود می‌شوند bel، nouvel و vieil: un bel homme، un nouvel ami، un vieil ami.
+table:
+قبل از اسم | بعد از اسم
+une petite maison | une maison blanche
+un bon restaurant | un restaurant iranien
+une belle ville | une ville française
+un nouvel ami | un ami sympathique
+sets:
+قبل از اسم: beau, joli, jeune, vieux, nouveau, bon, mauvais, petit, grand, gros, premier, dernier, autre
+بعد از اسم: rouge, blanc, noir, vert, français, iranien, fermé, ouvert
+examples:
+J'ai une petite voiture rouge. | یک ماشین کوچک قرمز دارم.
+C'est un bon restaurant iranien. | یک رستوران ایرانی خوب است.
+Paris est une belle ville. | پاریس شهر قشنگی است.
+C'est un nouvel ami. | یک دوست تازه است.
+targets:
+C'est un [bon] restaurant. | این یک رستوران خوب است. | d: français, ouvert, fermé | hint: (bon)
+J'ai une [petite] voiture. | یک ماشین کوچک دارم. | d: rouge, verte, française | hint: (petit)
+Paris est une [belle] ville. | پاریس شهر قشنگی است. | d: française, verte, fermée | hint: (beau)
+C'est un [grand] hôtel. | این یک هتل بزرگ است. | d: français, blanc, ouvert
+Marie a un [nouveau] téléphone. | ماری یک تلفن تازه دارد. | d: noir, blanc, rouge | hint: (nouveau)
+C'est une [jeune] femme. | او زنِ جوانی است. | d: française, mariée, malade | hint: (jeune)
+J'habite dans une [vieille] maison. | در یک خانهٔ قدیمی زندگی می‌کنم. | d: blanche, grise, verte | hint: (vieux)
+C'est mon [premier] jour à Paris. | اولین روزم در پاریس است. | d: première, premiers, premières
+C'est la [dernière] fois. | این آخرین بار است. | d: dernier, derniers, dernières | hint: (dernier)
+Je voudrais une [autre] tasse. | یک فنجان دیگر می‌خواهم. | d: blanche, rouge, verte
+C'est un [joli] jardin. | باغ قشنگی است. | d: vert, français, fermé | hint: (joli)
+Paul est un [bon] ami. | پل دوست خوبی است. | d: français, marié, malade
+Il a un [gros] chien. | او یک سگ گنده دارد. | d: noir, blanc, gris | hint: (gros)
+C'est une [mauvaise] idée. | ایدهٔ بدی است. | d: mauvais, mauvaises, bon
+C'est un [bel] homme. | مرد خوش‌قیافه‌ای است. | d: beau, belle, beaux | hint: (beau)
+J'ai un [nouvel] ami. | یک دوست تازه دارم. | d: nouveau, nouvelle, nouveaux | hint: (nouveau)
+C'est un [vieil] ami. | یک دوست قدیمی است. | d: vieux, vieille, vieilles | hint: (vieux)
+Il habite dans un [bel] appartement. | او در یک آپارتمان قشنگ زندگی می‌کند. | d: beau, belle, beaux
+C'est un [nouvel] hôtel. | این یک هتل تازه است. | d: nouveau, nouvelle, nouveaux
+Tu as un [beau] jardin. | باغ قشنگی داری. | d: bel, belle, beaux | hint: (beau)
+C'est un [vieux] livre. | این یک کتاب قدیمی است. | d: vieil, vieille, vieilles
+J'ai une [nouvelle] voiture. | یک ماشین تازه دارم. | d: nouveau, nouvel, nouvelles | hint: (nouveau)
+Ce sont mes [bons] amis. | این‌ها دوستان خوب من‌اند. | d: bon, bonne, bonnes | hint: (bon)
+Les [petites] filles jouent dans le parc. | دخترهای کوچک در پارک بازی می‌کنند. | d: petit, petite, petits
+C'est le [premier] jour des vacances. | این اولین روز تعطیلات است. | d: première, premiers, premières | hint: (premier)
+C'est un restaurant [iranien]. | این یک رستوران ایرانی است. | d: iranienne, iraniens, iraniennes | hint: (iranien)
+Il a une chemise [blanche]. | او یک پیراهن سفید دارد. | d: blanc, blancs, blanches
+C'est une voiture [allemande]. | این یک ماشین آلمانی است. | d: allemand, allemands, allemandes
+J'ai un [petit] problème. | یک مشکل کوچک دارم. | d: petite, petits, petites | hint: (petit)
+C'est une [grande] école. | مدرسهٔ بزرگی است. | d: grand, grands, grandes
+J'ai une [petite] voiture [noire]. | یک ماشین کوچک مشکی دارم. | d: rouge, verte, française / noir, noirs, noires
+Paul est un [bel] homme et Marie est une [belle] femme. | پل مرد خوش‌قیافه‌ای است و ماری زن زیبایی. | d: beau, belle, beaux / beau, bel, belles | full: Marie est une belle femme et Paul est un bel homme.
+Nous avons un [nouvel] appartement dans un [vieil] immeuble. | ما یک آپارتمان تازه در یک ساختمان قدیمی داریم. | d: nouveau, nouvelle, nouveaux / vieux, vieille, vieilles
+C'est un [bon] restaurant [iranien]. | یک رستوران ایرانی خوب است. | d: français, ouvert, fermé / iranienne, iraniens, iraniennes
+Il a un [gros] chien [noir]. | او یک سگ گندهٔ سیاه دارد. | d: noir, blanc, gris / noire, noirs, noires
+C'est ma [première] semaine dans une [grande] ville. | این اولین هفتهٔ من در یک شهر بزرگ است. | d: premier, premiers, premières / grand, grands, grandes
+transforms:
+J'ai une voiture. => J'ai une petite voiture. | صفت petit را به جمله اضافه کن.
+C'est une maison. => C'est une maison blanche. | صفت blanc را به جمله اضافه کن.
+C'est un ami. => C'est un nouvel ami. | صفت nouveau را به جمله اضافه کن.
+C'est un homme. => C'est un bel homme. | صفت beau را به جمله اضافه کن.
+J'ai un chien. => J'ai un gros chien noir. | صفت‌های gros و noir را به جمله اضافه کن.
+translations:
+یک ماشین کوچک دارم. => J'ai une petite voiture.
+این یک رستوران ایرانی است. => C'est un restaurant iranien.
+یک دوست تازه دارم. => J'ai un nouvel ami. ; J'ai une nouvelle amie.
+پاریس شهر قشنگی است. => Paris est une belle ville. ; Paris est une jolie ville.
+او یک سگ گندهٔ سیاه دارد. => Il a un gros chien noir. ; Elle a un gros chien noir.

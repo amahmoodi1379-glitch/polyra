@@ -1,0 +1,78 @@
+code: fr-a1-adjectifs-accord
+title: صفت مؤنث و جمع: content، contente، contents
+scope: جور شدن صفت با اسم در جنس و شمار: مؤنث با e و جمع با s، صفت‌هایی که در مؤنث (rouge) یا جمع (français، heureux) عوض نمی‌شوند، مؤنث‌های خاص (bonne، gentille، heureuse، blanche، longue، chère، belle، iranienne) و صفت بعد از اسم (une voiture verte)؛ صفت‌های قبل از اسم در واحد بعد می‌آیند.
+can_do: حالا می‌توانی آدم‌ها و چیزها را درست توصیف کنی: Marie est contente. J'ai une voiture verte.
+rule: صفت با اسم جور می‌شود: مؤنث + e، جمع + s (content، contente، contents، contentes). صفتِ ختم به e در مؤنث، و صفتِ ختم به s یا x در جمعِ مذکر عوض نمی‌شود.
+mistake: صفت فارسی هیچ‌وقت عوض نمی‌شود («ماشین‌های بزرگ»)، برای همین فارسی‌زبان‌ها می‌نویسند «Marie est content» یا «les maisons sont grand»؛ درست: Marie est contente، les maisons sont grandes.
+lesson:
+در فرانسوی صفت با اسمش جور می‌شود: اگر اسم مؤنث باشد e می‌گیرد و اگر جمع باشد s.
+Paul est content، Marie est contente، les garçons sont contents، les filles sont contentes.
+با e آخر، حرف بی‌صدای قبلش خوانده می‌شود: petit (پتی)، petite (پتیت).
+صفتی که خودش به e ختم شود در مؤنث عوض نمی‌شود: rouge، jeune، facile، triste. صفتِ ختم به s یا x هم در جمعِ مذکر همان می‌ماند: français، heureux.
+بعضی صفت‌ها مؤنثِ خاص دارند: bon → bonne، gentil → gentille، heureux → heureuse، blanc → blanche، long → longue، cher → chère، beau → belle، iranien → iranienne.
+اگر در جمع مرد و زن با هم باشند صفت مذکرِ جمع می‌آید: Paul et Marie sont contents.
+بیشتر صفت‌ها، مثل رنگ‌ها و ملیت‌ها، بعد از اسم می‌آیند: une voiture verte (یک ماشین سبز).
+table:
+ | مفرد | جمع
+مذکر | content | contents
+مؤنث | contente | contentes
+مذکر | bon | bons
+مؤنث | bonne | bonnes
+sets:
+بی‌تغییر در مؤنث: rouge, jeune, facile, triste, malade
+مؤنث خاص: bon, gentil, heureux, blanc, long, cher, beau, iranien
+examples:
+Marie est contente. | ماری خوشحال است.
+Les enfants sont fatigués. | بچه‌ها خسته‌اند.
+J'ai une voiture verte. | یک ماشین سبز دارم.
+Elle est iranienne et il est français. | او (زن) ایرانی است و او (مرد) فرانسوی.
+targets:
+Marie est [contente]. | ماری خوشحال است. | d: content, contents, contentes | hint: (content)
+Paul est [fatigué]. | پل خسته است. | d: fatiguée, fatigués, fatiguées | hint: (fatigué)
+Les enfants sont [fatigués]. | بچه‌ها خسته‌اند. | d: fatigué, fatiguée, fatiguées
+Les filles sont [contentes]. | دخترها خوشحال‌اند. | d: content, contente, contents | hint: (content)
+La maison est [petite]. | خانه کوچک است. | d: petit, petits, petites
+Ma voiture est [noire]. | ماشینم مشکی است. | d: noir, noirs, noires | hint: (noir)
+Sara est [iranienne]. | سارا ایرانی است. | d: iranien, iraniens, iraniennes | hint: (iranien)
+Ali et Reza sont [iraniens]. | علی و رضا ایرانی‌اند. | d: iranien, iranienne, iraniennes
+La soupe est [bonne]. | سوپ خوب است. | d: bon, bons, bonnes | hint: (bon)
+Les gâteaux sont [bons]. | کیک‌ها خوب‌اند. | d: bon, bonne, bonnes
+Marie est très [gentille]. | ماری خیلی مهربان است. | d: gentil, gentils, gentilles | hint: (gentil)
+Ta robe est [belle]. | لباست قشنگ است. | d: beau, beaux, belles | hint: (beau)
+La chambre est [blanche]. | اتاق سفید است. | d: blanc, blancs, blanches | hint: (blanc)
+Les chaussures sont [noires]. | کفش‌ها مشکی‌اند. | d: noir, noire, noirs
+Le pantalon est [bleu]. | شلوار آبی است. | d: bleue, bleus, bleues
+J'ai une voiture [verte]. | یک ماشین سبز دارم. | d: vert, verts, vertes | hint: (vert)
+Il a des chats [noirs]. | او گربه‌های سیاه دارد. | d: noir, noire, noires
+La rue est [longue]. | خیابان طولانی است. | d: long, longs, longues | hint: (long)
+Les pommes sont [chères]. | سیب‌ها گران‌اند. | d: cher, chère, chers | hint: (cher)
+La porte est [ouverte]. | در باز است. | d: ouvert, ouverts, ouvertes
+Les magasins sont [fermés]. | مغازه‌ها بسته‌اند. | d: fermé, fermée, fermées | hint: (fermé)
+Elle est [allemande]. | او (زن) آلمانی است. | d: allemand, allemands, allemandes
+Mes sœurs sont [petites]. | خواهرهایم کوچک‌اند. | d: petit, petite, petits | hint: (petit)
+Les maisons sont [grandes]. | خانه‌ها بزرگ‌اند. | d: grand, grande, grands
+Sophie est [fatiguée]. | سوفی خسته است. | d: fatigué, fatigués, fatiguées | hint: (fatigué)
+Les garçons sont [gentils]. | پسرها مهربان‌اند. | d: gentil, gentille, gentilles
+C'est une chemise [blanche]. | این یک پیراهن سفید است. | d: blanc, blancs, blanches
+Les fleurs sont [jolies]. | گل‌ها قشنگ‌اند. | d: joli, jolie, jolis | hint: (joli)
+Les jupes sont [vertes]. | دامن‌ها سبزند. | d: vert, verte, verts
+Elles sont [mariées]. | آن‌ها (زن‌ها) ازدواج کرده‌اند. | d: marié, mariée, mariés | hint: (marié)
+Paul est [grand] et Marie est [petite]. | پل قدبلند است و ماری قدکوتاه. | d: grande, grands, grandes / petit, petits, petites | full: Marie est petite et Paul est grand.
+J'ai une jupe [noire] et des chaussures [blanches]. | یک دامن مشکی و چند کفش سفید دارم. | d: noir, noirs, noires / blanc, blanche, blancs | full: J'ai des chaussures blanches et une jupe noire.
+Les enfants sont [contents], mais la mère est [fatiguée]. | بچه‌ها خوشحال‌اند، ولی مادر خسته است. | d: content, contente, contentes / fatigué, fatigués, fatiguées
+Le père est [iranien] et la mère est [allemande]. | پدر ایرانی است و مادر آلمانی. | d: iranienne, iraniens, iraniennes / allemand, allemands, allemandes | full: La mère est allemande et le père est iranien.
+La soupe est [bonne] et les gâteaux sont [bons]. | سوپ خوب است و کیک‌ها هم خوب‌اند. | d: bon, bons, bonnes / bon, bonne, bonnes | full: Les gâteaux sont bons et la soupe est bonne.
+La porte est [ouverte], mais les fenêtres sont [fermées]. | در باز است، ولی پنجره‌ها بسته‌اند. | d: ouvert, ouverts, ouvertes / fermé, fermée, fermés
+transforms:
+Paul est content. => Marie est contente. | جمله را برای Marie بنویس.
+Le garçon est petit. => Les garçons sont petits. | جمله را جمع کن.
+La fille est gentille. => Les filles sont gentilles. | جمله را جمع کن.
+Il est heureux. => Elle est heureuse. | جمله را با elle بنویس.
+Le livre est rouge. => La voiture est rouge. | به‌جای livre بنویس voiture.
+Mon ami est iranien. => Mon amie est iranienne. | «دوست» را مؤنث کن.
+translations:
+ماری خسته است. => Marie est fatiguée.
+بچه‌ها خوشحال‌اند. => Les enfants sont contents. ; Les enfants sont heureux.
+یک ماشین سبز دارم. => J'ai une voiture verte.
+او (زن) ایرانی است. => Elle est iranienne.
+سیب‌ها گران‌اند. => Les pommes sont chères.
