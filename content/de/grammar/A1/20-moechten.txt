@@ -1,0 +1,72 @@
+code: de-a1-moechten
+title: möchte: خواستن مؤدبانه
+scope: صرف möchten در Präsens و دو کاربرد آن: با اسم (Ich möchte einen Kaffee) و با فعل دوم که بی‌تغییر به آخر جمله می‌رود (Ich möchte Deutsch lernen)؛ فعل‌های وجهی دیگر (können، müssen، wollen) در واحدهای بعد می‌آیند.
+can_do: حالا می‌توانی مؤدبانه بگویی چه می‌خواهی: «یک قهوه می‌خواهم» و «می‌خواهم آلمانی یاد بگیرم».
+rule: möchte + اسم (Ich möchte einen Kaffee) یا möchte + مصدر در آخر جمله (Ich möchte Deutsch lernen)؛ ich و er/sie/es هر دو möchte.
+mistake: فارسی‌زبان‌ها فعل دوم را هم صرف می‌کنند یا درست بعد از möchte می‌گذارند: «Ich möchte lerne Deutsch» و «Ich möchte lernen Deutsch» غلط است؛ درست: Ich möchte Deutsch lernen. er هم möchte است، نه «er möchtet».
+tables: Präsens | möchten
+lesson:
+möchte شکل مؤدبانه «می‌خواهم» است و در فروشگاه، کافه و هر جا که چیزی می‌خواهی به کار می‌رود.
+با اسم: Ich möchte einen Kaffee. اسم مذکر مثل بعد از haben شکل مفعولی einen می‌گیرد.
+با فعل دوم: möchte صرف می‌شود و جای دوم جمله می‌نشیند و فعل دوم بی‌تغییر (مصدر) به آخر جمله می‌رود: Ich möchte heute Deutsch lernen.
+این مثل «می‌خواهم … یاد بگیرم» فارسی است که فعل اصلی آخر می‌آید، با این فرق که در آلمانی فعل دوم صرف نمی‌شود.
+ich و er/sie/es هر دو möchte هستند و -t نمی‌گیرند: ich möchte، er möchte.
+برای «نمی‌خواهم» nicht را پیش از مصدر بگذار: Ich möchte heute nicht arbeiten.
+table:
+شخص | möchten | مثال
+ich | möchte | Ich möchte einen Tee.
+du | möchtest | Möchtest du Kaffee?
+er/sie/es | möchte | Anna möchte Deutsch lernen.
+wir | möchten | Wir möchten nach Wien fahren.
+ihr | möchtet | Möchtet ihr Wasser?
+sie/Sie | möchten | Was möchten Sie?
+examples:
+Ich möchte einen Tee, bitte. | یک چای می‌خواهم، لطفاً.
+Möchten Sie Kaffee? | قهوه میل دارید؟
+Anna möchte in Wien wohnen. | آنا می‌خواهد در وین زندگی کند.
+Was möchtest du trinken? | چه می‌خواهی بنوشی؟
+targets:
+Ich [möchte] einen Kaffee. | من یک قهوه می‌خواهم. | d: möchtet, möchtest, möchten | hint: (möchten)
+[Möchtest] du einen Tee? | یک چای می‌خواهی؟ | d: Möchte, Möchtet, Möchten | hint: (möchten)
+Anna [möchte] ein Auto. | آنا یک ماشین می‌خواهد. | d: möchtest, möchtet, möchten | hint: (möchten)
+Wir [möchten] Brot. | ما نان می‌خواهیم. | d: möchte, möchtet, möchtest | hint: (möchten)
+[Möchtet] ihr Wasser? | شما آب می‌خواهید؟ | d: Möchten, Möchte, Möchtest | hint: (möchten)
+[Möchten] Sie einen Kaffee? | شما یک قهوه میل دارید؟ | d: Möchte, Möchtet, Möchtest | hint: (möchten)
+Max [möchte] nach Hause. | ماکس می‌خواهد به خانه برود. | d: möchtest, möchtet, möchten | hint: (möchten)
+Die Kinder [möchten] Wasser. | بچه‌ها آب می‌خواهند. | d: möchte, möchtet, möchtest | hint: (möchten)
+Ich möchte heute Deutsch [lernen]. | می‌خواهم امروز آلمانی یاد بگیرم. | d: lerne, lernt, lernst | full: Heute möchte ich Deutsch lernen.
+Paul möchte ein Auto [kaufen]. | پاول می‌خواهد یک ماشین بخرد. | d: kauft, kaufe, kaufst
+Wir möchten nach Wien [fahren]. | ما می‌خواهیم به وین برویم. | d: fahrt, fährt, fahre
+Möchtest du Kaffee [trinken]? | می‌خواهی قهوه بنوشی؟ | d: trinkst, trinkt, trinke
+Anna möchte in Berlin [wohnen]. | آنا می‌خواهد در برلین زندگی کند. | d: wohnt, wohne, wohnst | full: In Berlin möchte Anna wohnen.
+Ich möchte jetzt [essen]. | الان می‌خواهم غذا بخورم. | d: esse, isst, esst | full: Jetzt möchte ich essen.
+Sara möchte Persisch [sprechen]. | سارا می‌خواهد فارسی صحبت کند. | d: spricht, spreche, sprichst
+Ich [möchte Deutsch lernen]. | می‌خواهم آلمانی یاد بگیرم. | d: möchte lernen Deutsch, lernen möchte Deutsch, Deutsch möchte lernen | full: Deutsch möchte ich lernen.
+Max [möchte ein Buch lesen]. | ماکس می‌خواهد یک کتاب بخواند. | d: möchte lesen ein Buch, liest ein Buch möchte, ein Buch lesen möchte
+Wir [möchten heute Tee trinken]. | ما می‌خواهیم امروز چای بنوشیم. | d: möchten trinken heute Tee, trinken heute Tee möchten, heute möchten Tee trinken | full: Heute möchten wir Tee trinken.
+Lena [möchte nach Hause gehen]. | لنا می‌خواهد به خانه برود. | d: möchte gehen nach Hause, geht nach Hause möchte, nach Hause gehen möchte
+[Möchtest du Brot essen]? | می‌خواهی نان بخوری؟ | d: Möchtest essen du Brot, Du Brot essen möchtest, Möchtest du essen Brot
+Ich [möchte nicht arbeiten]. | نمی‌خواهم کار کنم. | d: nicht möchte arbeiten, möchte arbeiten nicht, arbeiten möchte nicht
+Paul [möchte morgen nach Köln fahren]. | پاول می‌خواهد فردا به کلن برود. | d: möchte fahren morgen nach Köln, fährt morgen nach Köln möchte, morgen möchte nach Köln fahren | full: Morgen möchte Paul nach Köln fahren.
+Ich [möchte] ein Wasser, bitte. | یک آب می‌خواهم، لطفاً. | d: möchtest, möchtet, möchten | hint: (möchten)
+Was [möchtest] du? – Einen Kaffee, bitte. | چه می‌خواهی؟ – یک قهوه، لطفاً. | d: möchte, möchtet, möchten | hint: (möchten)
+Was möchten Sie [trinken]? – Wasser, bitte. | چه میل دارید بنوشید؟ – آب، لطفاً. | d: trinkt, trinkst, trinke
+Ich [möchte] Tee und Anna [möchte] Kaffee. | من چای می‌خواهم و آنا قهوه. | d: möchtest, möchtet, möchten / möchtest, möchtet, möchten
+[Möchtest] du Deutsch [lernen]? | می‌خواهی آلمانی یاد بگیری؟ | d: Möchte, Möchtet, Möchten / lernst, lernt, lerne
+Wir [möchten] ein Haus [kaufen]. | ما می‌خواهیم یک خانه بخریم. | d: möchte, möchtet, möchtest / kaufe, kauft, kaufst
+[Möchtet] ihr heute [spielen]? | امروز می‌خواهید بازی کنید؟ | d: Möchten, Möchte, Möchtest / spielt, spielst, spiele
+Was [möchten] Sie? – Ich [möchte] ein Brot, bitte. | چه میل دارید؟ – یک نان می‌خواهم، لطفاً. | d: möchte, möchtet, möchtest / möchtest, möchtet, möchten
+Max [möchte] heute nicht [arbeiten]. | ماکس امروز نمی‌خواهد کار کند. | d: möchtest, möchtet, möchten / arbeitet, arbeite, arbeitest | full: Heute möchte Max nicht arbeiten.
+Ich [möchte] nach Hause [gehen]. | می‌خواهم به خانه بروم. | d: möchtest, möchtet, möchten / gehe, geht, gehst
+transforms:
+Ich lerne Deutsch. => Ich möchte Deutsch lernen. | با möchte بگو که این را می‌خواهی.
+Anna fährt nach Wien. => Anna möchte nach Wien fahren. | با möchte بگو که این را می‌خواهد.
+Wir kaufen ein Auto. => Wir möchten ein Auto kaufen. | با möchte بگو که این را می‌خواهیم.
+Trinkst du Tee? => Möchtest du Tee trinken? | سؤال را با möchte بپرس.
+Ich möchte einen Kaffee. => Paul möchte einen Kaffee. | به‌جای ich، Paul را فاعل کن.
+translations:
+یک قهوه می‌خواهم، لطفاً. => Ich möchte einen Kaffee, bitte. ; Ich möchte bitte einen Kaffee.
+می‌خواهم آلمانی یاد بگیرم. => Ich möchte Deutsch lernen.
+آنا می‌خواهد به خانه برود. => Anna möchte nach Hause gehen. ; Anna möchte nach Hause.
+چه میل دارید بنوشید؟ (مؤدبانه) => Was möchten Sie trinken?
+امروز نمی‌خواهم کار کنم. => Ich möchte heute nicht arbeiten. ; Heute möchte ich nicht arbeiten.
