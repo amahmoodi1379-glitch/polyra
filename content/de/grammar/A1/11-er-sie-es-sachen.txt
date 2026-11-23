@@ -1,0 +1,73 @@
+code: de-a1-er-sie-es-sachen
+title: er، sie، es برای چیزها
+scope: ضمیر فاعلی برای چیزها و جاها از روی جنس دستوری اسم: der ← er، die ← sie، das ← es و همه جمع‌ها ← sie (Der Tee ist gut. Er ist aus Iran.)؛ ضمیرهای مفعولی در واحدهای بعد می‌آیند.
+can_do: حالا می‌توانی درباره چیزها بگویی «اینجاست» یا «بزرگ است» و ضمیر درست را بگذاری.
+rule: اسم der ← er، اسم die ← sie، اسم das ← es؛ همه جمع‌ها ← sie: Wo ist der Kaffee? – Er ist hier.
+mistake: فارسی برای چیزها «آن» می‌گوید یا فاعل را می‌اندازد و فارسی‌زبان‌ها برای همه چیز es می‌گذارند: «Die Stadt ist alt. Es ist groß» غلط است؛ درست: Sie ist groß. ضمیر از جنس اسم می‌آید، نه از معنی: der Kaffee ← er.
+lesson:
+در فارسی برای چیزها فاعل را معمولاً می‌اندازیم: «قهوه کجاست؟ – اینجاست.»
+در آلمانی فاعل را نمی‌شود انداخت و ضمیر باید با جنس اسم جور باشد.
+اسم der ضمیر er می‌گیرد (der Kaffee ← er)، اسم die ضمیر sie (die Stadt ← sie) و اسم das ضمیر es (das Haus ← es).
+پس er و sie فقط «او»ی مرد و زن نیستند و برای چیزها هم به کار می‌روند: Die Schule ist neu. Sie ist groß.
+برای همه جمع‌ها sie می‌آید و فعل جمع است: Die Bücher sind alt. Sie sind von Paul.
+table:
+اسم | ضمیر | مثال
+der Kaffee | er | Er ist hier.
+die Stadt | sie | Sie ist groß.
+das Haus | es | Es ist alt.
+die Bücher (جمع) | sie | Sie sind neu.
+sets:
+er: Kaffee, Tee, Name, Tag, Vorname, Nachname
+sie: Stadt, Schule, Straße, Adresse, Sprache, Nummer
+es: Haus, Auto, Buch, Wort, Telefon, Land
+examples:
+Ist der Tee gut? – Ja, er ist sehr gut. | چای خوب است؟ – بله، خیلی خوب است.
+Die Schule ist neu. Sie ist sehr groß. | مدرسه نو است. خیلی بزرگ است.
+Das Auto ist alt. Es ist von Paul. | ماشین قدیمی است. مال پاول است.
+Die Bücher sind neu. Sie sind von Anna. | کتاب‌ها نو هستند. مال آنا هستند.
+targets:
+Wo ist der Kaffee? – [Er] ist hier. | قهوه کجاست؟ – اینجاست. | d: Es, Sie, Du | full: Wo ist der Kaffee? – Hier ist er.
+Wo ist die Schule? – [Sie] ist dort. | مدرسه کجاست؟ – آنجاست. | d: Er, Es, Du | full: Wo ist die Schule? – Dort ist sie.
+Wo ist das Auto? – [Es] ist da. | ماشین کجاست؟ – آنجاست. | d: Er, Sie, Ich | full: Wo ist das Auto? – Da ist es.
+Der Tee ist gut. [Er] ist aus Iran. | چای خوب است. ایرانی است. | d: Es, Sie, Ihr
+Die Stadt ist schön. [Sie] ist sehr alt. | شهر قشنگ است. خیلی قدیمی است. | d: Er, Es, Ihr
+Das Haus ist alt. [Es] ist sehr klein. | خانه قدیمی است. خیلی کوچک است. | d: Er, Sie, Du
+Das Buch ist neu. [Es] ist von Anna. | کتاب نو است. مال آناست. | d: Er, Sie, Ich
+Die Straße ist neu. [Sie] ist sehr groß. | خیابان نو است. خیلی بزرگ است. | d: Er, Es, Du
+Wo ist das Telefon? – [Es] ist hier. | تلفن کجاست؟ – اینجاست. | d: Er, Sie, Du | full: Wo ist das Telefon? – Hier ist es.
+Ist der Kaffee groß? – Ja, [er] ist groß. | قهوه بزرگ است؟ – بله، بزرگ است. | d: es, sie, ihr
+Wie ist die Schule? – [Sie] ist neu und groß. | مدرسه چطور است؟ – نو و بزرگ است. | d: Er, Es, Ich
+Wie ist das Brot? – [Es] ist schlecht. | نان چطور است؟ – بد است. | d: Er, Sie, Du
+Der Name ist schön. [Er] ist aus Iran. | اسم قشنگ است. ایرانی است. | d: Es, Sie, Du
+Wie ist die Sprache? – [Sie] ist sehr alt. | آن زبان چطور است؟ – خیلی قدیمی است. | d: Er, Es, Du
+Wo ist die Adresse? – [Sie] ist hier. | نشانی کجاست؟ – اینجاست. | d: Er, Es, Ihr | full: Wo ist die Adresse? – Hier ist sie.
+Wo ist das Geld? – [Es] ist zu Hause. | پول کجاست؟ – خانه است. | d: Er, Sie, Ich
+Das Wort ist neu. [Es] ist deutsch. | این کلمه تازه است. آلمانی است. | d: Er, Sie, Du
+Das Land ist klein, aber [es] ist schön. | آن کشور کوچک است، اما قشنگ است. | d: er, sie, ihr
+Die Nummer ist neu. [Sie] ist von Max. | شماره تازه است. مال ماکس است. | d: Er, Es, Ich
+Wo ist der Tee? – [Er] ist dort. | چای کجاست؟ – آنجاست. | d: Es, Sie, Ihr | full: Wo ist der Tee? – Dort ist er.
+Die Arbeit ist gut. [Sie] ist hier in Köln. | آن کار خوب است. اینجا در کلن است. | d: Er, Es, Du
+Wo sind die Bücher? – [Sie] sind hier. | کتاب‌ها کجا هستند؟ – اینجا هستند. | d: Er, Es, Ihr | full: Wo sind die Bücher? – Hier sind sie.
+Die Autos sind neu. [Sie] sind sehr schön. | ماشین‌ها نو هستند. خیلی قشنگ‌اند. | d: Es, Er, Ihr
+Die Häuser sind alt. [Sie] sind klein. | خانه‌ها قدیمی‌اند. کوچک‌اند. | d: Es, Er, Ihr
+Ist die Adresse neu? – Ja, [sie] ist neu. | نشانی تازه است؟ – بله، تازه است. | d: er, es, du
+Ist das Auto neu? – Nein, [es] ist alt. | ماشین نو است؟ – نه، قدیمی است. | d: er, sie, ich
+Ist der Nachname deutsch? – Ja, [er] ist deutsch. | نام خانوادگی آلمانی است؟ – بله، آلمانی است. | d: es, sie, ihr
+Ist die Telefonnummer von Lena? – Ja, [sie] ist von Lena. | شماره تلفن مال لناست؟ – بله، مال لناست. | d: er, es, du
+Der Kaffee? [Er] ist zu Hause. Das Geld? [Es] ist hier. | قهوه؟ خانه است. پول؟ اینجاست. | d: Es, Sie, Ihr / Er, Sie, Du
+Wo sind die Schule und das Haus? – [Sie] ist hier und [es] ist dort. | مدرسه و خانه کجا هستند؟ – مدرسه اینجاست و خانه آنجا. | d: Er, Es, Du / er, sie, du
+Die Stadt ist alt, aber [sie] ist groß. Das Land? [Es] ist klein. | شهر قدیمی است، اما بزرگ است. کشور؟ کوچک است. | d: er, es, ihr / Er, Sie, Ich
+Die Straße? [Sie] ist dort. Das Telefon? [Es] ist hier. | خیابان؟ آنجاست. تلفن؟ اینجاست. | d: Er, Es, Ihr / Er, Sie, Du
+Wie sind die Autos? – [Sie] sind groß. Und das Haus? – [Es] ist klein. | ماشین‌ها چطورند؟ – بزرگ‌اند. و خانه؟ – کوچک است. | d: Er, Es, Ihr / Er, Sie, Du
+transforms:
+Der Kaffee ist hier. => Er ist hier. | به‌جای der Kaffee ضمیر بگذار.
+Die Stadt ist groß. => Sie ist groß. | به‌جای die Stadt ضمیر بگذار.
+Das Auto ist neu. => Es ist neu. | به‌جای das Auto ضمیر بگذار.
+Die Bücher sind alt. => Sie sind alt. | به‌جای die Bücher ضمیر بگذار.
+Das Telefon ist dort. => Es ist dort. | به‌جای das Telefon ضمیر بگذار.
+translations:
+شهر بزرگ است. خیلی قدیمی است. => Die Stadt ist groß. Sie ist sehr alt.
+خانه قدیمی است. کوچک است. => Das Haus ist alt. Es ist klein.
+کتاب‌ها اینجا هستند. نو هستند. => Die Bücher sind hier. Sie sind neu.
+مدرسه آنجاست. بزرگ است. => Die Schule ist dort. Sie ist groß.
+چای اینجاست. ایرانی است. => Der Tee ist hier. Er ist aus Iran.

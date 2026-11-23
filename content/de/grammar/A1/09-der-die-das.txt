@@ -30,9 +30,9 @@ targets:
 [Der] Kaffee ist gut. | قهوه خوب است. | d: Die, Das, Eine
 [Die] Stadt ist sehr groß. | شهر خیلی بزرگ است. | d: Der, Das, Ein
 [Das] Haus ist alt. | خانه قدیمی است. | d: Der, Die, Eine
-[Das] Kind spielt hier. | بچه اینجا بازی می‌کند. | d: Der, Die, Eine
+[Das] Kind spielt hier. | بچه اینجا بازی می‌کند. | d: Der, Die, Eine | full: Hier spielt das Kind.
 [Das] Mädchen lernt Englisch. | دختر انگلیسی یاد می‌گیرد. | d: Die, Der, Eine
-[Der] Vater arbeitet heute. | پدر امروز کار می‌کند. | d: Die, Das, Eine
+[Der] Vater arbeitet heute. | پدر امروز کار می‌کند. | d: Die, Das, Eine | full: Heute arbeitet der Vater.
 [Die] Mutter ist zu Hause. | مادر خانه است. | d: Der, Das, Ein
 [Die] Schule ist neu. | مدرسه نو است. | d: Der, Das, Ein
 [Das] Auto ist klein. | ماشین کوچک است. | d: Der, Die, Eine
@@ -40,7 +40,7 @@ targets:
 [Die] Straße ist sehr schön. | خیابان خیلی قشنگ است. | d: Der, Das, Ein
 [Das] Buch ist neu. | کتاب نو است. | d: Der, Die, Eine
 [Der] Junge ist 10. | پسر ده ساله است. | d: Die, Das, Eine
-[Die] Kinder spielen zu Hause. | بچه‌ها در خانه بازی می‌کنند. | d: Der, Das, Ein
+[Die] Kinder spielen zu Hause. | بچه‌ها در خانه بازی می‌کنند. | d: Der, Das, Ein | full: Zu Hause spielen die Kinder.
 [Das] Brot ist sehr gut. | نان خیلی خوب است. | d: Der, Die, Eine
 [Die] Adresse ist neu. | نشانی تازه است. | d: Der, Das, Ein
 Das ist [der] Freund von Sara. | این دوست ساراست. | d: die, das, eine
@@ -50,11 +50,11 @@ Das ist [das] Haus von Paul. | این خانه پاول است. | d: der, die, e
 Ich kaufe [das] Brot. | من نان را می‌خرم. | d: der, die, eine
 Wir lernen [die] Sprache. | ما آن زبان را یاد می‌گیریم. | d: der, das, ein
 Anna sucht [das] Telefon. | آنا دنبال تلفن می‌گردد. | d: der, die, eine
-[Die] Eltern wohnen in Köln. | پدر و مادر در کلن زندگی می‌کنند. | d: Der, Das, Ein
-[Die] Leute kommen morgen. | آن آدم‌ها فردا می‌آیند. | d: Der, Das, Ein
+[Die] Eltern wohnen in Köln. | پدر و مادر در کلن زندگی می‌کنند. | d: Der, Das, Ein | full: In Köln wohnen die Eltern.
+[Die] Leute kommen morgen. | آن آدم‌ها فردا می‌آیند. | d: Der, Das, Ein | full: Morgen kommen die Leute.
 Wo ist [die] Schule? | مدرسه کجاست؟ | d: der, das, ein
 Wo ist [das] Auto? | ماشین کجاست؟ | d: der, die, eine
-[Der] Mann und [die] Frau sind hier. | مرد و زن اینجا هستند. | d: Die, Das, Eine / der, das, ein
+[Der] Mann und [die] Frau sind hier. | مرد و زن اینجا هستند. | d: Die, Das, Eine / der, das, ein | full: Hier sind der Mann und die Frau.
 [Das] Haus ist groß, aber [die] Straße ist klein. | خانه بزرگ است، اما خیابان کوچک است. | d: Der, Die, Eine / der, das, ein
 [Der] Vater und [das] Kind spielen. | پدر و بچه بازی می‌کنند. | d: Die, Das, Eine / der, die, eine
 [Die] Mutter trinkt Tee und [der] Junge trinkt Wasser. | مادر چای می‌نوشد و پسر آب. | d: Der, Das, Ein / die, das, eine

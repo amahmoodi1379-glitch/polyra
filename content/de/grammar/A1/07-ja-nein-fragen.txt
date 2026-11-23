@@ -45,13 +45,13 @@ targets:
 [Trinkst du Tee]? | چای می‌نوشی؟ | d: Du Tee trinkst, Du trinken Tee, Tee du trinkst
 [Kaufen wir Brot]? | نان می‌خریم؟ | d: Wir Brot kaufen, Wir kauft Brot, Brot wir kaufen
 [Bist du heute zu Hause]? | امروز خانه‌ای؟ | d: Du heute zu Hause bist, Du sein heute zu Hause, Heute du bist zu Hause
-[Wohnst] du hier? – Ja, ich [wohne] hier. | اینجا زندگی می‌کنی؟ – بله، اینجا زندگی می‌کنم. | d: Wohnt, Wohne, Wohnen / wohnst, wohnt, wohnen
+[Wohnst] du hier? – Ja, ich [wohne] hier. | اینجا زندگی می‌کنی؟ – بله، اینجا زندگی می‌کنم. | d: Wohnt, Wohne, Wohnen / wohnst, wohnt, wohnen | full: Wohnst du hier? – Ja, hier wohne ich.
 [Seid] ihr Freunde? – Ja, wir [sind] Freunde. | شما با هم دوستید؟ – بله، ما با هم دوستیم. | d: Sind, Ist, Bist / seid, ist, bin
 [Kommt] Max aus Wien? – Nein, er [kommt] aus Berlin. | ماکس اهل وین است؟ – نه، اهل برلین است. | d: Kommst, Kommen, Komme / kommen, kommst, komme
 [Habt] ihr ein Haus? – Ja, wir [haben] ein Haus. | شما خانه دارید؟ – بله، خانه داریم. | d: Haben, Hast, Hat / habt, hat, hast
 [Ist] Lena 20? – Nein, sie [ist] 22. | لنا بیست ساله است؟ – نه، بیست‌ودو ساله است. | d: Bist, Sind, Hat / sind, hat, bist
 [Lernen] Sie Deutsch? – Ja, ich [lerne] Deutsch. | شما آلمانی یاد می‌گیرید؟ – بله، آلمانی یاد می‌گیرم. | d: Lernt, Lernst, Lerne / lernen, lernst, lernt
-[Spielst] du heute? – Nein, ich [arbeite] heute. | امروز بازی می‌کنی؟ – نه، امروز کار می‌کنم. | d: Spielt, Spiele, Spielen / arbeitet, arbeitest, arbeiten
+[Spielst] du heute? – Nein, ich [arbeite] heute. | امروز بازی می‌کنی؟ – نه، امروز کار می‌کنم. | d: Spielt, Spiele, Spielen / arbeitet, arbeitest, arbeiten | full: Spielst du heute? – Nein, heute arbeite ich.
 transforms:
 Du wohnst in Berlin. => Wohnst du in Berlin? | سؤال بله و نه بساز.
 Anna ist zu Hause. => Ist Anna zu Hause? | سؤال بله و نه بساز.

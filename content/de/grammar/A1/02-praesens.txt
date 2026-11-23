@@ -25,12 +25,12 @@ Du wohnst in Berlin. | تو در برلین زندگی می‌کنی.
 Er arbeitet heute. | او امروز کار می‌کند.
 Wir lernen Deutsch. | ما آلمانی یاد می‌گیریم.
 targets:
-Ich [wohne] in Berlin. | من در برلین زندگی می‌کنم. | d: wohnst, wohnt, wohnen | hint: (wohnen)
+Ich [wohne] in Berlin. | من در برلین زندگی می‌کنم. | d: wohnst, wohnt, wohnen | hint: (wohnen) | full: In Berlin wohne ich.
 Du [kommst] aus Teheran. | تو اهل تهرانی. | d: komme, kommt, kommen | hint: (kommen)
 Anna [lernt] Deutsch. | آنا آلمانی یاد می‌گیرد. | d: lerne, lernst, lernen | hint: (lernen)
 Wir [spielen] heute zu Hause. | ما امروز در خانه بازی می‌کنیم. | d: spielt, spiele, spielst | full: Heute spielen wir zu Hause.
 Ihr [trinkt] viel Kaffee. | شما خیلی قهوه می‌خورید. | d: trinken, trinkst, trinke | hint: (trinken)
-Max und Lena [wohnen] in Hamburg. | ماکس و لنا در هامبورگ زندگی می‌کنند. | d: wohnt, wohnst, wohne
+Max und Lena [wohnen] in Hamburg. | ماکس و لنا در هامبورگ زندگی می‌کنند. | d: wohnt, wohnst, wohne | full: In Hamburg wohnen Max und Lena.
 Ich [heiße] Ben. | اسم من بن است. | d: heißt, heißen, heißst
 Du [heißt] Sara. | اسم تو ساراست. | d: heißst, heiße, heißen | hint: (heißen)
 Er [arbeitet] heute. | او امروز کار می‌کند. | d: arbeitt, arbeite, arbeiten | hint: (arbeiten) | full: Heute arbeitet er.
@@ -41,7 +41,7 @@ Ich [kaufe] Brot. | من نان می‌خرم. | d: kaufst, kauft, kaufen | hint
 Paul [braucht] Geld. | پاول پول لازم دارد. | d: brauche, brauchen, brauchst | hint: (brauchen)
 Wir [lernen] jetzt Englisch. | ما الان انگلیسی یاد می‌گیریم. | d: lernt, lerne, lernst | full: Jetzt lernen wir Englisch.
 Anna und Paul [kommen] morgen. | آنا و پاول فردا می‌آیند. | d: kommt, kommst, komme | full: Morgen kommen Anna und Paul.
-Die Kinder [spielen] hier. | بچه‌ها اینجا بازی می‌کنند. | d: spielt, spielst, spiele | hint: (spielen)
+Die Kinder [spielen] hier. | بچه‌ها اینجا بازی می‌کنند. | d: spielt, spielst, spiele | hint: (spielen) | full: Hier spielen die Kinder.
 Ich [schreibe] viel. | من زیاد می‌نویسم. | d: schreibst, schreibt, schreiben | hint: (schreiben)
 Lukas [geht] nach Hause. | لوکاس به خانه می‌رود. | d: gehe, gehst, gehen | hint: (gehen)
 Du [verstehst] gut Deutsch. | تو آلمانی را خوب می‌فهمی. | d: verstehe, versteht, verstehen | hint: (verstehen) | full: Du verstehst Deutsch gut.

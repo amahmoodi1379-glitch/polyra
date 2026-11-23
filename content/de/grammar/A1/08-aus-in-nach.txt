@@ -28,8 +28,8 @@ Wo wohnst du? – Ich wohne [in] Frankfurt. | کجا زندگی می‌کنی؟ 
 Wohin fahren Sie? – [Nach] Wien. | کجا می‌روید؟ – به وین. | d: In, Aus, Zu
 Wir wohnen [in] Hamburg. | ما در هامبورگ زندگی می‌کنیم. | d: nach, aus, zu
 Paul arbeitet [in] München. | پاول در مونیخ کار می‌کند. | d: nach, aus, zu
-Ich gehe jetzt [nach Hause]. | من الان به خانه می‌روم. | d: zu Hause, in Hause, aus Hause
-Anna ist heute [zu Hause]. | آنا امروز خانه است. | d: nach Hause, in Hause, aus Hause
+Ich gehe jetzt [nach Hause]. | من الان به خانه می‌روم. | d: zu Hause, in Hause, aus Hause | full: Jetzt gehe ich nach Hause.
+Anna ist heute [zu Hause]. | آنا امروز خانه است. | d: nach Hause, in Hause, aus Hause | full: Heute ist Anna zu Hause.
 Woher kommt Lena? – Sie kommt [aus] Berlin. | لنا اهل کجاست؟ – اهل برلین است. | d: in, nach, zu
 Wo arbeitet Sara? – [In] Frankfurt. | سارا کجا کار می‌کند؟ – در فرانکفورت. | d: Nach, Aus, Zu
 Wohin gehst du jetzt? – [Nach Hause]. | الان کجا می‌روی؟ – خانه. | d: Zu Hause, In Hause, Aus Hause
@@ -49,13 +49,13 @@ Woher kommt Reza? – [Aus] Schiras. | رضا اهل کجاست؟ – اهل ش�
 Wo wohnen Sie? – [In] Teheran. | شما کجا زندگی می‌کنید؟ – در تهران. | d: Nach, Aus, Zu
 Wohin fahren die Eltern? – [Nach] Isfahan. | پدر و مادر کجا می‌روند؟ – به اصفهان. | d: In, Aus, Zu
 Wann kommt ihr [nach Hause]? | کی به خانه می‌آیید؟ | d: zu Hause, in Hause, aus Hause
-Max wohnt jetzt [in] Österreich. | ماکس الان در اتریش زندگی می‌کند. | d: nach, aus, zu
+Max wohnt jetzt [in] Österreich. | ماکس الان در اتریش زندگی می‌کند. | d: nach, aus, zu | full: Jetzt wohnt Max in Österreich.
 Ich komme [aus] Iran, aber ich wohne [in] Berlin. | من اهل ایرانم، اما در برلین زندگی می‌کنم. | d: in, zu, bei / nach, aus, zu
 Ali kommt [aus] Isfahan und wohnt [in] Wien. | علی اهل اصفهان است و در وین زندگی می‌کند. | d: in, zu, bei / nach, aus, zu
 Heute bin ich [zu Hause], aber morgen komme ich [nach] Wien. | امروز خانه هستم، اما فردا به وین می‌آیم. | d: nach Hause, in Hause, aus Hause / in, zu, bei
 Wo wohnt ihr? – Wir wohnen [in] Köln, aber wir kommen [aus] Teheran. | کجا زندگی می‌کنید؟ – در کلن زندگی می‌کنیم، اما اهل تهرانیم. | d: nach, aus, zu / in, zu, bei
 Woher kommt Paul? – [Aus] Wien. Und wo wohnt er? – [In] Berlin. | پاول اهل کجاست؟ – اهل وین. و کجا زندگی می‌کند؟ – در برلین. | d: In, Nach, Zu / Nach, Aus, Zu
-Die Kinder sind [zu Hause] und die Eltern gehen jetzt [nach Hause]. | بچه‌ها خانه‌اند و پدر و مادر الان به خانه می‌روند. | d: nach Hause, in Hause, aus Hause / zu Hause, in Hause, aus Hause
+Die Kinder sind [zu Hause] und die Eltern gehen jetzt [nach Hause]. | بچه‌ها خانه‌اند و پدر و مادر الان به خانه می‌روند. | d: nach Hause, in Hause, aus Hause / zu Hause, in Hause, aus Hause | full: Die Kinder sind zu Hause und jetzt gehen die Eltern nach Hause.
 transforms:
 Ich wohne in Wien. => Wo wohnst du? | برای «in Wien» سؤال بساز، با du.
 Ich komme aus Iran. => Woher kommst du? | برای «aus Iran» سؤال بساز، با du.

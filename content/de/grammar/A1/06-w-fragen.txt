@@ -33,7 +33,7 @@ targets:
 [Wer] ist das? – Das ist Paul. | این کیست؟ – این پاول است. | d: Wo, Was, Wie
 [Was] machst du heute? – Ich lerne Deutsch. | امروز چه کار می‌کنی؟ – آلمانی یاد می‌گیرم. | d: Wer, Wo, Wie
 [Wann] kommst du? – Morgen. | کی می‌آیی؟ – فردا. | d: Wo, Wer, Woher
-[Warum] lernst du Deutsch? – Ich wohne jetzt in Berlin. | چرا آلمانی یاد می‌گیری؟ – چون الان در برلین زندگی می‌کنم. | d: Wo, Wer, Woher
+[Warum] lernst du Deutsch? – Ich wohne jetzt in Berlin. | چرا آلمانی یاد می‌گیری؟ – چون الان در برلین زندگی می‌کنم. | d: Wo, Wer, Woher | full: Warum lernst du Deutsch? – Jetzt wohne ich in Berlin.
 [Wohin] gehst du? – Nach Hause. | کجا می‌روی؟ – خانه. | d: Wo, Woher, Wer
 [Wie viel] Geld hast du? – Nur wenig. | چقدر پول داری؟ – فقط کمی. | d: Wie, Was, Wann
 [Wer] kommt morgen? – Anna und Paul. | چه کسی فردا می‌آید؟ – آنا و پاول. | d: Was, Wo, Wie
@@ -48,18 +48,18 @@ Wann [arbeitest du]? – Heute. | کی کار می‌کنی؟ – امروز. | 
 [Woher] kommen die Eltern von Ali? – Aus Isfahan. | پدر و مادر علی اهل کجا هستند؟ – اهل اصفهان. | d: Wo, Wohin, Wann
 [Wie] alt bist du? – 20. | چند سالت است؟ – بیست. | d: Was, Wie viel, Wann
 [Wer] wohnt hier? – Lena und Tim. | چه کسی اینجا زندگی می‌کند؟ – لنا و تیم. | d: Wo, Was, Wie
-[Warum] ist Paul zu Hause? – Er arbeitet heute zu Hause. | چرا پاول خانه است؟ – امروز در خانه کار می‌کند. | d: Wo, Wer, Wohin
+[Warum] ist Paul zu Hause? – Er arbeitet heute zu Hause. | چرا پاول خانه است؟ – امروز در خانه کار می‌کند. | d: Wo, Wer, Wohin | full: Warum ist Paul zu Hause? – Heute arbeitet er zu Hause.
 Was [macht ihr] morgen? – Wir spielen. | فردا چه کار می‌کنید؟ – بازی می‌کنیم. | d: ihr macht, machen ihr, ihr machen
 Wo [arbeitet Sara]? – In München. | سارا کجا کار می‌کند؟ – در مونیخ. | d: Sara arbeitet, arbeiten Sara, Sara arbeiten
 [Wie viel] Wasser trinkst du? – Viel. | چقدر آب می‌نوشی؟ – زیاد. | d: Was, Wie, Wer
 [Was] lernt Max? – Englisch. | ماکس چه یاد می‌گیرد؟ – انگلیسی. | d: Wer, Wie, Wo
 [Wie] heißt du und [woher] kommst du? | اسمت چیست و اهل کجایی؟ | d: Was, Wer, Wo / wo, wohin, wer
 [Wo] wohnst du und [wo] arbeitest du? | کجا زندگی می‌کنی و کجا کار می‌کنی؟ | d: Woher, Wer, Wohin / woher, wer, wohin
-[Wo] wohnst du? – Ich [wohne] in Köln. | کجا زندگی می‌کنی؟ – در کلن زندگی می‌کنم. | d: Woher, Wer, Wann / wohnst, wohnt, wohnen
+[Wo] wohnst du? – Ich [wohne] in Köln. | کجا زندگی می‌کنی؟ – در کلن زندگی می‌کنم. | d: Woher, Wer, Wann / wohnst, wohnt, wohnen | full: Wo wohnst du? – In Köln wohne ich.
 [Woher] kommt Anna? – Sie [kommt] aus Wien. | آنا اهل کجاست؟ – اهل وین است. | d: Wo, Wohin, Wer / kommen, komme, kommst
 [Wie] heißen Sie? – Ich [heiße] Reza. | اسم شما چیست؟ – اسمم رضاست. | d: Was, Wer, Wo / heißt, heißen, heißst
 [Was] trinkt ihr? – Wir [trinken] Tee. | چه می‌نوشید؟ – چای می‌نوشیم. | d: Wer, Wie, Wo / trinkt, trinke, trinkst
-[Wann] kommt ihr? – Wir [kommen] morgen. | کی می‌آیید؟ – فردا می‌آییم. | d: Wo, Wer, Woher / kommt, komme, kommst
+[Wann] kommt ihr? – Wir [kommen] morgen. | کی می‌آیید؟ – فردا می‌آییم. | d: Wo, Wer, Woher / kommt, komme, kommst | full: Wann kommt ihr? – Morgen kommen wir.
 transforms:
 Du wohnst in Berlin. => Wo wohnst du? | برای «in Berlin» سؤال بساز.
 Anna kommt aus Wien. => Woher kommt Anna? | برای «aus Wien» سؤال بساز.

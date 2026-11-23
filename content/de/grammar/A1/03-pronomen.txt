@@ -36,22 +36,22 @@ Das ist Leon. [Er] kommt aus Köln. | این لئون است. او اهل کلن
 Das Kind ist klein. [Es] ist 3 Jahre alt. | بچه کوچک است. سه سالش است. | d: Er, Sie, Ich
 Maryam und Reza wohnen hier. [Sie] kommen aus Teheran. | مریم و رضا اینجا زندگی می‌کنند. آن‌ها اهل تهران‌اند. | d: Er, Es, Ihr
 Lena, [du] wohnst hier. | لنا، تو اینجا زندگی می‌کنی. | d: ihr, Sie, er
-Kinder, [ihr] spielt jetzt zu Hause. | بچه‌ها، شما الان در خانه بازی می‌کنید. | d: du, Sie, wir
+Kinder, [ihr] spielt jetzt zu Hause. | بچه‌ها، شما الان در خانه بازی می‌کنید. | d: du, Sie, wir | full: Kinder, jetzt spielt ihr zu Hause.
 Guten Tag, [Sie] sind der Vater von Tim. | روز بخیر، شما پدر تیم هستید. | d: du, ihr, er
 Ich heiße Sara und [ich] wohne in Schiras. | اسم من ساراست و در شیراز زندگی می‌کنم. | d: du, er, sie
-Der Vater ist zu Hause. [Er] arbeitet heute. | پدر خانه است. او امروز کار می‌کند. | d: Sie, Es, Ich
+Der Vater ist zu Hause. [Er] arbeitet heute. | پدر خانه است. او امروز کار می‌کند. | d: Sie, Es, Ich | full: Der Vater ist zu Hause. Heute arbeitet er.
 Die Mutter heißt Laura. [Sie] ist 40 Jahre alt. | اسم مادر لوراست. او چهل ساله است. | d: Er, Es, Ihr
 Das Baby ist zu Hause. [Es] ist sehr klein. | نوزاد خانه است. خیلی کوچک است. | d: Er, Sie, Du
 Der Junge ist 12. [Er] lernt Englisch. | پسر دوازده ساله است. او انگلیسی یاد می‌گیرد. | d: Sie, Es, Du
 Max und Felix, [ihr] seid Freunde. | ماکس و فلیکس، شما با هم دوستید. | d: Sie, du, wir
 Tim und ich sind Freunde. [Wir] wohnen in Köln. | من و تیم با هم دوستیم. ما در کلن زندگی می‌کنیم. | d: Ihr, Er, Du
 Die Frau dort heißt Sara. [Sie] kommt aus Iran. | اسم آن خانم ساراست. او اهل ایران است. | d: Er, Es, Ich
-Reza ist Iraner. [Er] wohnt jetzt in Wien. | رضا ایرانی است. او الان در وین زندگی می‌کند. | d: Sie, Es, Wir
+Reza ist Iraner. [Er] wohnt jetzt in Wien. | رضا ایرانی است. او الان در وین زندگی می‌کند. | d: Sie, Es, Wir | full: Reza ist Iraner. Jetzt wohnt er in Wien.
 Das sind Lena und Tim. [Sie] sind Freunde. | این‌ها لنا و تیم هستند. آن‌ها با هم دوست‌اند. | d: Er, Es, Ihr
-Sara, [du] kommst morgen. | سارا، تو فردا می‌آیی. | d: Sie, ihr, er
+Sara, [du] kommst morgen. | سارا، تو فردا می‌آیی. | d: Sie, ihr, er | full: Sara, morgen kommst du.
 Der Freund heißt Leon. [Er] ist 20. | اسم آن دوست لئون است. او بیست ساله است. | d: Sie, Es, Du
 Die Freundin von Mia ist hier. [Sie] trinkt Tee. | دوست میا اینجاست. او چای می‌نوشد. | d: Er, Es, Wir
-Guten Morgen, [Sie] arbeiten heute hier. | صبح بخیر، شما امروز اینجا کار می‌کنید. | d: du, ihr, er
+Guten Morgen, [Sie] arbeiten heute hier. | صبح بخیر، شما امروز اینجا کار می‌کنید. | d: du, ihr, er | full: Guten Morgen, heute arbeiten Sie hier.
 Die Kinder sind zu Hause. [Sie] spielen. | بچه‌ها خانه‌اند. آن‌ها بازی می‌کنند. | d: Es, Ihr, Er
 Die Eltern kommen morgen. [Sie] wohnen in Isfahan. | پدر و مادر فردا می‌آیند. آن‌ها در اصفهان زندگی می‌کنند. | d: Er, Es, Ihr
 Lukas ist 6. [Er] ist noch klein. | لوکاس شش ساله است. او هنوز کوچک است. | d: Sie, Es, Ihr
