@@ -1,0 +1,75 @@
+code: fr-a1-il-y-a
+title: il y a: «… هست» و «… هستند»
+scope: il y a + un، une یا des + اسم برای گفتن اینکه چیزی یا کسی جایی هست، در جملهٔ مثبت و سؤالی (Il y a quelqu'un ? Qu'est-ce qu'il y a ?) و فرقش با être برای چیز یا کسِ مشخص؛ منفی (il n'y a pas de) در واحد بعد می‌آید.
+can_do: حالا می‌توانی بگویی در یک جا چه چیزهایی هست: Dans la rue, il y a une école.
+rule: il y a یعنی «… هست» یا «… هستند» و برای مفرد و جمع یکی است؛ بعدش معمولاً un، une یا des می‌آید. برای چیز یا کسِ مشخص (le، la، اسم آدم) être می‌آید: Le chat est sous la table.
+mistake: چون فارسی برای جمع «هستند» می‌گوید، فارسی‌زبان‌ها می‌نویسند «il y ont des enfants» یا «il y sont»؛ درست: il y a des enfants، همیشه با a. «یک گربه زیر میز هست» هم «Un chat est sous la table» نمی‌شود؛ فرانسوی می‌گوید Il y a un chat sous la table.
+lesson:
+برای گفتن «… هست» یا «… هستند» فرانسوی il y a می‌گوید: Il y a un chat (یک گربه هست).
+il y a عوض نمی‌شود: برای جمع هم il y a است، نه «il y ont»: Il y a des enfants dans la rue.
+جای چیز را آخر یا اول جمله می‌گویند: Il y a un livre sur la table. Sur la table, il y a un livre.
+بعد از il y a معمولاً un، une یا des می‌آید، چون چیزِ تازه‌ای را معرفی می‌کنیم.
+برای چیز یا کسی که هر دو می‌شناسیم être می‌آید: Le livre est sur la table. Paul est à la maison.
+برای سؤال، آخر جمله صدا بالا می‌رود: Il y a quelqu'un ? (کسی هست؟) و «چی شده؟» می‌شود Qu'est-ce qu'il y a ?
+table:
+فرانسوی | معنی
+Il y a un chat. | یک گربه هست.
+Il y a une école. | یک مدرسه هست.
+Il y a des enfants. | چند بچه هستند.
+Il y a quelqu'un ? | کسی هست؟
+Qu'est-ce qu'il y a ? | چی شده؟
+Le chat est sous la table. | گربه زیر میز است.
+examples:
+Il y a un chat sous la table. | یک گربه زیر میز هست.
+Dans la rue, il y a une école. | در خیابان یک مدرسه هست.
+Il y a des enfants dans la maison. | در خانه چند بچه هستند.
+Qu'est-ce qu'il y a sur la table ? | روی میز چه هست؟
+targets:
+Il y [a] un chat sous la table. | یک گربه زیر میز هست. | d: est, ont, sont | hint: (il y a)
+Il y [a] des enfants dans la rue. | در خیابان چند بچه هستند. | d: ont, sont, est | hint: (il y a)
+Il y [a] une école dans la rue. | در خیابان یک مدرسه هست. | d: est, ont, sont
+Il y [a] un problème ? | مشکلی هست؟ | d: est, ont, sont
+Qu'est-ce qu'il y [a] sur la table ? | روی میز چه هست؟ | d: est, ont, sont | hint: (il y a)
+Il y [a] des livres sur la table. | روی میز چند کتاب هست. | d: ont, sont, est
+Chez Paul, il y [a] un chien et un chat. | خانه پل یک سگ و یک گربه هست. | d: ont, sont, est | hint: (il y a)
+Il y [a] des gens dans la rue. | در خیابان چند نفر هستند. | d: ont, sont, est
+Il y [a] quelqu'un ? | کسی هست؟ | d: est, ont, sont | hint: (il y a)
+Il y [a] quelque chose sous la table. | یک چیزی زیر میز هست. | d: est, ont, sont
+Il y [a] des amis à la maison. | چند دوست در خانه هستند. | d: ont, sont, est | hint: (il y a)
+Dans la voiture, il y [a] une femme et des enfants. | در ماشین یک زن و چند بچه هستند. | d: ont, sont, est
+Il y a [un] chien dans la voiture. | یک سگ در ماشین هست. | d: une, des, les | hint: (un)
+Il y a [une] voiture dans la rue. | یک ماشین در خیابان هست. | d: un, des, les | hint: (un)
+Il y a [des] chats dans la maison. | در خانه چند گربه هست. | d: un, une, le | hint: (un)
+Sur la table, il y a [un] livre. | روی میز یک کتاب هست. | d: une, des, les
+Il y a [une] fille avec Paul. | یک دختر با پل هست. | d: un, des, les | hint: (un)
+Dans la ville, il y a [des] écoles. | در شهر چند مدرسه هست. | d: un, une, le
+Il y a [un] homme dans la voiture. | یک مرد در ماشین هست. | d: une, des, les
+Il y a [une] table dans la maison. | در خانه یک میز هست. | d: un, des, les
+Il y a [des] gens à l'école. | در مدرسه چند نفر هستند. | d: un, une, le | hint: (un)
+Le chat [est] sous la table. | گربه زیر میز است. | d: a, y a, sont | hint: (être)
+Paul [est] dans la maison. | پل در خانه است. | d: a, y a, sont
+Les enfants [sont] à l'école. | بچه‌ها در مدرسه هستند. | d: a, y a, est | hint: (être)
+La voiture [est] dans la rue. | ماشین در خیابان است. | d: a, y a, sont
+Où [est] le chien ? | سگ کجاست؟ | d: a, y a, sont | hint: (être)
+Les livres [sont] sous la table. | کتاب‌ها زیر میز هستند. | d: a, y a, est
+Marie et Paul [sont] à Lyon. | ماری و پل در لیون هستند. | d: a, y a, est | hint: (être)
+Le livre [est] sur la table. | کتاب روی میز است. | d: a, y a, sont
+Il y a [combien] de chats ? Il y a 3 chats. | چند تا گربه هست؟ سه تا گربه هست. | d: où, quand, comment
+Il y [a] un chien et [des] chats. | یک سگ و چند گربه هست. | d: est, ont, sont / un, une, le
+Il y [a] un livre sur la table. Le livre [est] à Paul. | یک کتاب روی میز هست. کتاب مال پل است. | d: est, ont, sont / a, y a, sont
+Il y a [une] maison dans la rue et [un] chien dans la maison. | در خیابان یک خانه هست و در خانه یک سگ. | d: un, des, les / une, des, les
+Il y [a] quelqu'un ? Oui, il y [a] Paul et Marie. | کسی هست؟ بله، پل و ماری هستند. | d: est, ont, sont / sont, ont, est
+Paul [est] à la maison et il y [a] des amis avec lui. | پل خانه است و چند دوست با او هستند. | d: a, y a, sont / ont, sont, est
+Dans la ville, il y a [une] école et [des] maisons. | در شهر یک مدرسه و چند خانه هست. | d: un, des, les / un, une, le | full: Il y a une école et des maisons dans la ville.
+transforms:
+Il y a un chat dans la maison. => Il y a des chats dans la maison. | جمله را جمع کن.
+Il y a une voiture dans la rue. => Il y a des voitures dans la rue. | جمله را جمع کن.
+Il y a des livres sur la table. => Il y a un livre sur la table. | جمله را مفرد کن.
+Il y a une école dans la ville. => Dans la ville, il y a une école. | «در شهر» را اول جمله بگذار.
+Il y a un problème. => Il y a un problème ? ; Est-ce qu'il y a un problème ? | جمله را سؤالی کن.
+translations:
+یک گربه زیر میز هست. => Il y a un chat sous la table. ; Sous la table, il y a un chat.
+در خیابان چند بچه هستند. => Il y a des enfants dans la rue. ; Dans la rue, il y a des enfants.
+کتاب روی میز است. => Le livre est sur la table.
+کسی هست؟ => Il y a quelqu'un ? ; Est-ce qu'il y a quelqu'un ?
+در شهر یک مدرسه هست. => Il y a une école dans la ville. ; Dans la ville, il y a une école.

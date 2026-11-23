@@ -1,0 +1,79 @@
+code: fr-a1-pronoms-toniques
+title: moi، toi، lui…: ضمیرهای جدا
+scope: ضمیرهای جدا moi، toi، lui، elle، nous، vous، eux، elles بعد از حرف اضافه (avec moi، chez toi، pour lui، à moi)، بعد از c'est، در جواب کوتاه (Moi aussi. Et toi ?) و برای تأکید (Moi, je…)؛ ضمیرهای مفعولی در A2 می‌آیند.
+can_do: حالا می‌توانی بگویی با کی هستی، چیزی مال کیست و بپرسی «تو چی؟»: avec moi، c'est à toi، et toi ?
+rule: بعد از حرف اضافه، بعد از c'est، در جواب کوتاه و برای تأکید، je، tu، il و ils می‌شوند moi، toi، lui و eux؛ elle، nous، vous و elles همان می‌مانند.
+mistake: فارسی بعد از «با» و «برای» همان «من» و «تو» را می‌گوید، برای همین فارسی‌زبان‌ها می‌نویسند «avec je» یا «c'est je»؛ درست: avec moi، c'est moi. «من هم» هم می‌شود moi aussi، نه «je aussi»، و «با آن‌ها» برای مردها یا گروه مختلط avec eux است، نه «avec ils».
+lesson:
+فرانسوی دو جور «من» دارد: je که همیشه کنار فعل می‌آید، و moi که تنها هم می‌ایستد.
+بعد از حرف اضافه‌ها شکل جدا می‌آید: avec moi (با من)، pour toi (برای تو)، sans lui (بدون او)، comme toi (مثل تو).
+chez یعنی «خانهٔ…»: chez moi (خانهٔ من)، chez eux (خانهٔ آن‌ها). با à یعنی «مال…»: C'est à moi (مال من است).
+بعد از c'est و در جواب کوتاه که فعل ندارد هم شکل جدا می‌آید: C'est moi. Moi aussi. Et toi ?
+برای تأکید، آن را اول جمله می‌گذارند و ضمیر فاعلی را هم نگه می‌دارند: Moi, je parle français.
+فقط چهار ضمیر عوض می‌شوند: je → moi، tu → toi، il → lui، ils → eux؛ elle، nous، vous و elles همان‌اند.
+table:
+فاعلی | جدا | مثال
+je | moi | avec moi
+tu | toi | chez toi
+il | lui | pour lui
+elle | elle | sans elle
+nous | nous | chez nous
+vous | vous | avec vous
+ils | eux | pour eux
+elles | elles | avec elles
+examples:
+Paul travaille avec moi. | پل با من کار می‌کند.
+Ce livre est pour toi. | این کتاب برای توست.
+Moi, j'aime le café. Et toi ? | من قهوه دوست دارم. تو چی؟
+Les enfants sont chez eux. | بچه‌ها خانهٔ خودشان هستند.
+targets:
+Paul travaille avec [moi]. | پل با من کار می‌کند. | d: je, me, mon | hint: (je)
+Ce livre est pour [toi]. | این کتاب برای توست. | d: tu, te, ton | hint: (tu)
+Je suis chez [moi]. | من خانه هستم. | d: je, me, ma
+Marie parle avec [lui]. | ماری با او (مرد) حرف می‌زند. | d: il, le, son | hint: (il)
+Je travaille avec [elle]. | من با او (زن) کار می‌کنم. | d: la, sa, il | hint: (elle)
+Les enfants jouent avec [nous]. | بچه‌ها با ما بازی می‌کنند. | d: notre, nos, on
+C'est pour [vous], madame. | این برای شماست، خانم. | d: votre, vos, tu
+Je mange avec [eux]. | من با آن‌ها غذا می‌خورم. | d: ils, leur, les | hint: (ils)
+Paul habite avec [elles]. | پل با آن‌ها (زن‌ها) زندگی می‌کند. | d: ils, les, leurs | hint: (elles)
+Qui est là ? C'est [moi]. | کی آنجاست؟ منم. | d: je, me, mon | hint: (je)
+C'est Paul ? Oui, c'est [lui]. | پل است؟ بله، خودش است. | d: il, le, son
+J'aime le café. Et [toi] ? | من قهوه دوست دارم. تو چی؟ | d: tu, te, ton | hint: (tu)
+J'aime Paris. [Moi] aussi. | من پاریس را دوست دارم. من هم. | d: Je, Me, Mon
+[Moi], je parle français. | من فرانسوی حرف می‌زنم. | d: Je, Me, Mon | hint: (je)
+[Toi], tu habites à Paris. | تو در پاریس زندگی می‌کنی. | d: Tu, Te, Ton
+[Lui], il travaille à Lyon. | او (مرد) در لیون کار می‌کند. | d: Il, Le, Son | hint: (il)
+[Eux], ils sont à Nice. | آن‌ها در نیس هستند. | d: Ils, Les, Leur
+Le café est pour [lui]. | قهوه برای اوست (مرد). | d: il, le, son | hint: (il)
+Tu manges chez [nous] ? | خانهٔ ما غذا می‌خوری؟ | d: notre, nos, on
+Marie est chez [elle]. | ماری خانهٔ خودش است. | d: la, sa, il | hint: (elle)
+Je pense à [toi]. | به تو فکر می‌کنم. | d: tu, te, ton
+Vous travaillez avec [moi] ? | شما با من کار می‌کنید؟ | d: je, me, mon | hint: (je)
+Le chien est à [moi]. | سگ مال من است. | d: je, me, mon
+Cette voiture est à [lui]. | این ماشین مال اوست (مرد). | d: il, le, son | hint: (il)
+Les livres sont à [eux]. | کتاب‌ها مال آن‌هاست. | d: ils, leur, les
+Je suis comme [toi]. | من مثل تو هستم. | d: tu, te, ton | hint: (tu)
+Tu vas à Paris sans [moi] ? | بدون من به پاریس می‌روی؟ | d: je, me, ma
+On joue avec [vous] ? | با شما بازی کنیم؟ | d: votre, vos, tu | hint: (vous)
+Qui aime le café ? [Moi] ! | کی قهوه دوست دارد؟ من! | d: Je, Me, Mon
+Qui est là ? C'est [nous] ! | کی آنجاست؟ ماییم! | d: notre, nos, on | hint: (nous)
+Il habite chez [eux]. | او خانهٔ آن‌ها زندگی می‌کند. | d: ils, leur, les
+Je travaille pour [elles]. | من برای آن‌ها (زن‌ها) کار می‌کنم. | d: ils, les, leurs | hint: (elles)
+[Moi], je suis ici et [toi], tu es là. | من اینجا هستم و تو آنجا. | d: Je, Me, Mon / tu, te, ton | full: Toi, tu es là et moi, je suis ici.
+Paul habite chez [moi] et je travaille avec [lui]. | پل خانهٔ من زندگی می‌کند و من با او کار می‌کنم. | d: je, me, mon / il, le, son | full: Je travaille avec lui et Paul habite chez moi.
+Ce café est pour [toi] et ce pain est pour [moi]. | این قهوه برای توست و این نان برای من. | d: tu, te, ton / je, me, mon | full: Ce pain est pour moi et ce café est pour toi.
+[Lui], il aime le café, mais [elle], elle aime l'eau. | آن مرد قهوه دوست دارد، ولی آن زن آب. | d: Il, Le, Son / la, sa, il
+Je mange chez [eux] et ils mangent chez [nous]. | من خانهٔ آن‌ها غذا می‌خورم و آن‌ها خانهٔ ما. | d: ils, leur, les / notre, nos, on | full: Ils mangent chez nous et je mange chez eux.
+C'est pour [moi] ? Non, c'est pour [elle]. | برای من است؟ نه، برای اوست (زن). | d: je, me, mon / la, sa, il
+transforms:
+Paul travaille avec Marie. => Paul travaille avec elle. | به‌جای اسم، ضمیر بگذار.
+Je mange avec Paul. => Je mange avec lui. | به‌جای اسم، ضمیر بگذار.
+Le livre est pour les enfants. => Le livre est pour eux. | به‌جای اسم، ضمیر بگذار.
+Je parle français. => Moi, je parle français. | با ضمیر جدا روی «من» تأکید کن.
+Tu habites à Paris. => Toi, tu habites à Paris. | با ضمیر جدا روی «تو» تأکید کن.
+translations:
+پل با من کار می‌کند. => Paul travaille avec moi.
+این کتاب برای توست. => Ce livre est pour toi. ; C'est pour toi, ce livre.
+من قهوه دوست دارم. تو چی؟ => J'aime le café. Et toi ? ; Moi, j'aime le café. Et toi ?
+سگ مال من است. => Le chien est à moi.
+من با آن‌ها غذا می‌خورم. => Je mange avec eux. ; Je mange avec elles.
