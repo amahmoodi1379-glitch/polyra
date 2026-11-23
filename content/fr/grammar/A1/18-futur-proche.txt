@@ -1,0 +1,75 @@
+code: fr-a1-futur-proche
+title: آیندهٔ نزدیک: aller + مصدر
+scope: آیندهٔ نزدیک (futur proche): aller در زمان حال + مصدر، در جملهٔ مثبت، منفی (Je ne vais pas partir) و سؤالی (Tu vas venir ? Qu'est-ce que tu vas faire ?)؛ آیندهٔ ساده (futur simple) در A2 می‌آید.
+can_do: حالا می‌توانی از برنامه‌هایت بگویی و از برنامهٔ دیگران بپرسی: Je vais travailler à Paris. Tu vas faire quoi ?
+rule: aller در زمان حال + مصدر: je vais partir، il va manger، nous allons jouer، ils vont venir؛ برای منفی ne … pas دور aller می‌آید.
+mistake: فارسی‌زبان‌ها فعل دوم را مثل فارسی صرف می‌کنند («je vais mange») یا بین aller و مصدر à می‌گذارند («je vais à manger»)؛ درست: je vais manger. à فقط قبل از جا می‌آید: je vais à Paris.
+lesson:
+برای کاری که به‌زودی انجام می‌شود یا تصمیمش را گرفته‌ایم، فرانسوی aller + مصدر می‌گوید: Je vais manger (قرار است غذا بخورم).
+aller همان صرفی را دارد که یاد گرفتی (je vais، tu vas، il va، nous allons، vous allez، ils vont) و فعل دوم مصدر می‌ماند.
+در فارسی این را با «قرار است…» یا حتی با زمان حال می‌گوییم: «فردا می‌روم».
+برای منفی، ne … pas دور aller می‌آید: Je ne vais pas travailler.
+aller خودش هم مصدر می‌شود: Je vais aller à Paris (قرار است به پاریس بروم).
+فرق را ببین: Je vais à Paris یعنی «به پاریس می‌روم»، ولی Je vais manger یعنی «قرار است غذا بخورم» و à نمی‌خواهد.
+table:
+ضمیر | aller | مصدر
+je | vais | manger
+tu | vas | partir
+il، elle، on | va | travailler
+nous | allons | jouer
+vous | allez | venir
+ils، elles | vont | dormir
+examples:
+Je vais manger avec Marie. | قرار است با ماری غذا بخورم.
+Nous allons partir. | ما داریم می‌رویم.
+Tu vas venir avec nous ? | با ما می‌آیی؟
+Il ne va pas travailler cette année. | او امسال کار نمی‌کند.
+targets:
+Je [vais] manger avec Paul. | قرار است با پل غذا بخورم. | d: vas, va, vont | hint: (aller)
+Tu [vas] travailler ici ? | قرار است اینجا کار کنی؟ | d: vais, va, allez | hint: (aller)
+Marie [va] habiter à Lyon. | ماری قرار است در لیون زندگی کند. | d: vas, vont, allez
+Nous [allons] partir. | ما داریم می‌رویم. | d: allez, vont, va | hint: (aller)
+Vous [allez] jouer avec nous ? | قرار است با ما بازی کنید؟ | d: allons, vont, va
+Les enfants [vont] dormir. | بچه‌ها قرار است بخوابند. | d: va, allez, allons | hint: (aller)
+On [va] manger ensemble ? | با هم غذا بخوریم؟ | d: vas, vont, allons | hint: (aller)
+Paul [va] apprendre le français. | پل قرار است فرانسوی یاد بگیرد. | d: vas, vont, allez
+Ils [vont] arriver à Paris. | آن‌ها قرار است به پاریس برسند. | d: va, allez, allons | hint: (aller)
+Je [vais] écrire à Marie. | قرار است به ماری نامه بنویسم. | d: vas, va, vont
+Je vais [parler] avec Marie. | قرار است با ماری حرف بزنم. | d: parle, parlé, parles | hint: (parler)
+Tu vas [chercher] Paul ? | قرار است دنبال پل بروی؟ | d: cherches, cherche, cherché
+Nous allons [habiter] à Nice. | ما قرار است در نیس زندگی کنیم. | d: habitons, habite, habité | hint: (habiter)
+Elle va [travailler] à Paris cette année. | او (زن) امسال قرار است در پاریس کار کند. | d: travaille, travaillé, travailles | full: Cette année, elle va travailler à Paris.
+Vous allez [aider] Marie ? | قرار است به ماری کمک کنید؟ | d: aidez, aide, aidé | hint: (aider)
+Ils vont [jouer] dans la rue. | آن‌ها قرار است در خیابان بازی کنند. | d: jouent, joue, joué
+Je vais [aller] à Paris. | قرار است به پاریس بروم. | d: vais, va, allé | hint: (aller)
+On va [attendre] ici. | اینجا منتظر می‌مانیم. | d: attend, attends, attendu
+Tu vas [comprendre]. | می‌فهمی. | d: comprends, comprend, compris | hint: (comprendre)
+Les enfants vont [manger]. | بچه‌ها قرار است غذا بخورند. | d: mangent, mange, mangé
+Je [ne] vais pas travailler. | قرار نیست کار کنم. | d: non, pas, ni
+Il ne va [pas] venir. | او (مرد) نمی‌آید. | d: non, ne, n'
+Nous n'[allons] pas manger ici. | ما اینجا غذا نمی‌خوریم. | d: allez, vont, va | hint: (aller)
+Tu ne vas pas [partir] ? | قرار نیست بروی؟ | d: pars, part, parti
+Qu'est-ce que tu [vas] faire ? | قرار است چه کار کنی؟ | d: vais, va, allez | hint: (aller)
+Vous allez [faire] quoi ? | قرار است چه کار کنید؟ | d: faites, fait, fais
+Il [va] arriver quand ? | کی قرار است برسد؟ | d: vas, vont, allez
+Paul va [dormir] chez moi. | پل قرار است خانهٔ من بخوابد. | d: dort, dors, dormi | hint: (dormir)
+Marie et Paul [vont] partir ensemble. | ماری و پل قرار است با هم بروند. | d: va, allez, allons
+Tu vas [voir] Marie ? | قرار است ماری را ببینی؟ | d: vois, voit, vu | hint: (voir)
+Je [vais] [travailler] avec Marie. | قرار است با ماری کار کنم. | d: vas, va, vont / travaille, travaillé, travailles
+Nous [allons] [partir], et vous ? | ما قرار است برویم، شما چی؟ | d: allez, vont, va / partons, part, parti
+Tu [vas] venir ? Non, je [vais] dormir. | قرار است بیایی؟ نه، می‌خواهم بخوابم. | d: vais, va, allez / vas, va, vont
+Ils ne [vont] pas [jouer] dans la rue. | آن‌ها قرار نیست در خیابان بازی کنند. | d: va, allez, allons / jouent, joue, joué
+Paul [va] parler et Marie [va] écouter. | قرار است پل حرف بزند و ماری گوش بدهد. | d: vas, vont, allez / vas, vont, allez | full: Marie va écouter et Paul va parler.
+On [va] [aller] à Lyon ensemble. | قرار است با هم به لیون برویم. | d: vas, vont, allons / vais, va, allé
+transforms:
+Je mange avec Paul. => Je vais manger avec Paul. | جمله را با aller + مصدر بنویس.
+Nous partons. => Nous allons partir. | جمله را با aller + مصدر بنویس.
+Ils travaillent à Lyon. => Ils vont travailler à Lyon. | جمله را با aller + مصدر بنویس.
+Tu vas dormir. => Tu ne vas pas dormir. | جمله را منفی کن.
+Elle va jouer. => Elles vont jouer. | جمله را با elles بنویس.
+translations:
+قرار است با پل غذا بخورم. => Je vais manger avec Paul.
+ما قرار است در نیس زندگی کنیم. => Nous allons habiter à Nice. ; On va habiter à Nice.
+قرار است چه کار کنی؟ => Qu'est-ce que tu vas faire ? ; Tu vas faire quoi ?
+آن‌ها قرار نیست بیایند. => Ils ne vont pas venir. ; Elles ne vont pas venir.
+امسال قرار است در پاریس کار کنم. => Je vais travailler à Paris cette année. ; Cette année, je vais travailler à Paris.

@@ -1,0 +1,77 @@
+code: fr-a1-venir
+title: venir: آمدن، اهلِ جایی بودن و «تازه … کردم»
+scope: صرف بی‌قاعدهٔ venir در زمان حال؛ venir de + شهر (Je viens de Téhéran، Tu viens d'où ?)؛ venir + مصدر (Tu viens manger ?) و venir de + مصدر برای گذشتهٔ خیلی نزدیک (Je viens de manger). venir du و des با اسم کشور در واحد «شهرها و کشورها» می‌آید.
+can_do: حالا می‌توانی بگویی اهل کجایی، کسی را دعوت کنی و بگویی کاری را همین الان کرده‌ای: Je viens de Téhéran. Paul vient d'arriver.
+rule: venir: je viens، tu viens، il vient، nous venons، vous venez، ils viennent. venir de + جا = اهلِ آنجا؛ venir + مصدر = آمدن برای کاری؛ venir de + مصدر = همین الان آن کار را کردن.
+mistake: فارسی‌زبان‌ها venir de + مصدر را «از … می‌آیم» می‌فهمند، یا de را می‌اندازند و به‌جای «تازه غذا خوردم» می‌گویند «je viens manger» که یعنی «می‌آیم غذا بخورم». جمعش هم ils viennent با دو n است، نه «ils venent».
+tables: présent | venir
+lesson:
+venir یعنی «آمدن» و بی‌قاعده است: je viens، tu viens، il vient، nous venons، vous venez، ils viennent.
+venir de + شهر یعنی «اهلِ … بودن» یا «از … آمدن»: Je viens de Téhéran. قبل از صدادار d' می‌آید: Je viens d'Iran.
+برای پرسیدن: Tu viens d'où ? (اهل کجایی؟)
+venir + مصدر یعنی «آمدن برای کاری»: Tu viens manger ? (می‌آیی غذا بخوری؟)
+venir de + مصدر یعنی «همین الان … کردم»: Je viens de manger (تازه غذا خورده‌ام)؛ گذشته‌ای خیلی نزدیک.
+فرقشان فقط de است: Je viens manger (می‌آیم غذا بخورم)، Je viens de manger (تازه غذا خوردم).
+table:
+ضمیر | venir
+je | viens
+tu | viens
+il، elle، on | vient
+nous | venons
+vous | venez
+ils، elles | viennent
+examples:
+Je viens de Téhéran. | من اهل تهرانم.
+Tu viens avec nous ? | با ما می‌آیی؟
+Les enfants viennent à la maison. | بچه‌ها به خانه می‌آیند.
+Paul vient d'arriver. | پل تازه رسیده.
+targets:
+Je [viens] de Téhéran. | من اهل تهرانم. | d: vient, venons, viennent | hint: (venir)
+Tu [viens] avec moi ? | با من می‌آیی؟ | d: vient, venez, viennent | hint: (venir)
+Paul [vient] chez nous. | پل به خانهٔ ما می‌آید. | d: viens, venons, viennent
+Nous [venons] de Lyon. | ما اهل لیون هستیم. | d: venez, viennent, vient | hint: (venir)
+Vous [venez] d'où ? | اهل کجایید؟ | d: venons, viennent, vient
+Les enfants [viennent] à la maison. | بچه‌ها به خانه می‌آیند. | d: vient, venez, venent | hint: (venir)
+Elle [vient] d'Iran. | او (زن) اهل ایران است. | d: viens, venons, viennent
+Marie et Léa [viennent] avec nous. | ماری و لئا با ما می‌آیند. | d: vient, venez, venons | hint: (venir)
+Tu ne [viens] pas ? | نمی‌آیی؟ | d: vient, venez, viennent
+On [vient] chez toi. | ما به خانهٔ تو می‌آییم. | d: viens, venons, viennent | hint: (venir)
+Je ne [viens] pas à l'école. | به مدرسه نمی‌آیم. | d: vient, venons, viennent
+Vous [venez] manger chez nous ? | می‌آیید خانهٔ ما غذا بخورید؟ | d: venons, viennent, vient | hint: (venir)
+Je viens [de] manger. | تازه غذا خورده‌ام. | d: à, du, des | hint: (venir de)
+Paul vient [d']arriver. | پل تازه رسیده. | d: du, des, en
+Nous venons [de] parler avec Marie. | همین الان با ماری حرف زدیم. | d: à, du, des
+Elle vient [de] partir. | او (زن) همین الان رفت. | d: à, du, des | hint: (venir de)
+Ils viennent [de] finir. | آن‌ها تازه تمام کرده‌اند. | d: à, du, des
+Je [viens] de trouver mon livre. | همین الان کتابم را پیدا کردم. | d: vient, venons, viennent | hint: (venir)
+Tu viens de [manger] ? | تازه غذا خوردی؟ | d: manges, mange, mangé | hint: (manger)
+Paul vient de [trouver] une maison. | پل تازه یک خانه پیدا کرده. | d: trouve, trouvé, trouves
+Les enfants viennent d'[arriver]. | بچه‌ها تازه رسیده‌اند. | d: arrivent, arrivé, arrive | hint: (arriver)
+On vient de [commencer]. | تازه شروع کرده‌ایم. | d: commence, commencé, commençons
+Vous [venez] d'arriver ? | تازه رسیده‌اید؟ | d: venons, viennent, vient | hint: (venir)
+Marie vient [manger] chez nous. | ماری می‌آید خانهٔ ما غذا بخورد. | d: mange, mangé, mangez
+Je viens [de] Paris. | من اهل پاریسم. | d: du, des, en | hint: (de)
+Tu viens [d']où ? | اهل کجایی؟ | d: du, des, à
+Ils viennent [de] Bordeaux. | آن‌ها اهل بوردو هستند. | d: du, des, en
+Ali vient [d']Iran. | علی اهل ایران است. | d: du, des, de | hint: (de)
+Je ne viens pas [de] Lyon, je viens de Nice. | اهل لیون نیستم، اهل نیسم. | d: du, des, en
+Paul vient [d']Ispahan. | پل از اصفهان می‌آید. | d: du, des, de
+Je [viens] de Téhéran et Marie [vient] de Paris. | من اهل تهرانم و ماری اهل پاریس. | d: vient, venons, viennent / viens, venons, viennent | full: Marie vient de Paris et je viens de Téhéran.
+Tu viens [manger] ? Non, je viens [de] manger. | می‌آیی غذا بخوری؟ نه، تازه غذا خورده‌ام. | d: manges, mangé, mange / à, du, des
+Nous [venons] [d']arriver. | ما تازه رسیده‌ایم. | d: venez, viennent, vient / du, des, en
+Ils [viennent] [de] Lyon. | آن‌ها اهل لیون هستند. | d: vient, venez, venons / du, des, en
+Vous [venez] d'où ? Je [viens] d'Iran. | اهل کجایید؟ اهل ایرانم. | d: venons, viennent, vient / vient, venons, viennent
+Marie [vient] de [partir]. | ماری همین الان رفت. | d: viens, venons, viennent / part, pars, parti
+transforms:
+Je viens de Paris. => Nous venons de Paris. | جمله را با nous بنویس.
+Il vient avec moi. => Ils viennent avec moi. | جمله را با ils بنویس.
+Je mange. => Je viens de manger. | بگو این کار همین الان تمام شده (venir de).
+Paul arrive. => Paul vient d'arriver. | بگو این کار همین الان تمام شده (venir de).
+Je vais partir. => Je viens de partir. | به‌جای «قرار است»، بگو «همین الان» (venir de).
+Tu viens ? => Tu ne viens pas ? | جمله را منفی کن.
+translations:
+اهل کجایی؟ => Tu viens d'où ? ; D'où tu viens ?
+با من می‌آیی؟ => Tu viens avec moi ?
+پل تازه رسیده. => Paul vient d'arriver.
+ما اهل لیون هستیم. => Nous venons de Lyon. ; On vient de Lyon.
+همین الان غذا خوردم. => Je viens de manger.
