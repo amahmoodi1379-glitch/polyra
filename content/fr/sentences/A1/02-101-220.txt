@@ -440,11 +440,11 @@ Chaque [fois], il dit non. | هر بار می‌گوید نه.
 Cette [fois], je comprends. | این بار می‌فهمم.
 
 # moment
-Un [moment], s'il vous plaît. | یک لحظه، لطفاً.
-Ce n'est pas le [moment]. | الان وقتش نیست.
-En ce [moment], je travaille à Lyon. | این روزها در لیون کار می‌کنم.
-C'est un bon [moment] pour parler ? | وقت خوبی برای حرف زدن است؟
-Attends un [moment] ! | یک لحظه صبر کن!
+Un [moment], s'il vous plaît. | یک لحظه، لطفاً. | d: café, jour, livre
+Ce n'est pas le [moment]. | الان وقتش نیست. | d: jour, problème, travail
+En ce [moment], je travaille à Lyon. | این روزها در لیون کار می‌کنم. | d: pays, monde, livre
+C'est un bon [moment] pour parler ? | وقت خوبی برای حرف زدن است؟ | d: livre, ami, café
+Attends un [moment] ! | یک لحظه صبر کن! | d: jour, ami, an
 
 # pays
 La France est un grand [pays]. | فرانسه کشور بزرگی است.
@@ -455,12 +455,12 @@ Il y a beaucoup de [pays] dans le monde. | در دنیا کشورهای زیاد
 La Suisse est un petit [pays]. | سوئیس کشور کوچکی است.
 
 # argent
-Je n'ai pas d'[argent]. | پول ندارم.
-Tu as de l'[argent] ? | پول داری؟
-L'[argent], ce n'est pas tout. | پول همه چیز نیست.
-Il donne de l'[argent] à sa famille. | او به خانواده‌اش پول می‌دهد.
-Il faut beaucoup d'[argent] pour une maison. | برای یک خانه پول زیادی لازم است.
-Je cherche mon [argent]. | دنبال پولم می‌گردم.
+Je n'ai pas d'[argent]. | پول ندارم. | d: eau, ami, école
+Tu as de l'[argent] ? | پول داری؟ | d: eau, ami, homme
+L'[argent], ce n'est pas tout. | پول همه چیز نیست. | d: eau, école, ami
+Il donne de l'[argent] à sa famille. | او به خانواده‌اش پول می‌دهد. | d: eau, école, ami
+Il faut beaucoup d'[argent] pour une maison. | برای یک خانه پول زیادی لازم است. | d: eau, ami, homme
+Je cherche mon [argent]. | دنبال پولم می‌گردم. | d: livre, chat, travail
 
 # porte
 Ouvre la [porte], s'il te plaît. | لطفاً در را باز کن.
@@ -542,12 +542,12 @@ J'aime les [jolies] choses. | من چیزهای قشنگ را دوست دارم.
 Le livre est [joli]. | کتاب قشنگ است.
 
 # autre
-Tu veux un [autre] café ? | یک قهوهٔ دیگر می‌خواهی؟
-Je cherche une [autre] maison. | دنبال یک خانهٔ دیگر می‌گردم.
+Tu veux un [autre] café ? | یک قهوهٔ دیگر می‌خواهی؟ | d: grand, petit, bon
+Je cherche une [autre] maison. | دنبال یک خانهٔ دیگر می‌گردم. | d: grande, petite, nouvelle
 Les [autres] enfants sont à l'école. | بچه‌های دیگر در مدرسه هستند. | d: grands, jeunes, nouveaux
-C'est une [autre] chose. | این یک چیز دیگر است.
-Tu as une [autre] idée ? | ایدهٔ دیگری داری؟
-Un [autre] jour, peut-être. | شاید یک روز دیگر.
+C'est une [autre] chose. | این یک چیز دیگر است. | d: petite, bonne, grande
+Tu as une [autre] idée ? | ایدهٔ دیگری داری؟ | d: bonne, petite, grande
+Un [autre] jour, peut-être. | شاید یک روز دیگر. | d: beau, bon, grand
 
 # premier
 C'est la [première] fois. | این اولین بار است.
@@ -774,7 +774,7 @@ Il a [soixante] ans. | او شصت سال دارد.
 Il y a [soixante] maisons dans la rue. | در این خیابان شصت خانه هست.
 J'habite au [soixante], rue de Paris. | من در پلاک شصتِ خیابان پاریس زندگی می‌کنم.
 [Soixante] personnes habitent ici. | شصت نفر اینجا زندگی می‌کنند.
-Il est trois heures [soixante] ? Non ! | ساعت سه و شصت دقیقه؟ نه!
+Il y a [soixante] enfants dans cette école. | در این مدرسه شصت بچه هست.
 
 # soixante-dix
 Il a [soixante-dix] ans. | او هفتاد سال دارد.
@@ -800,7 +800,7 @@ Ce livre a [quatre-vingt-dix] ans. | این کتاب نود ساله است.
 # cent
 Il a [cent] ans ! | او صد سال دارد!
 Il y a [cent] personnes ici. | اینجا صد نفر هستند.
-Je dis ça [cent] fois ! | صد بار این را می‌گویم!
+Je t'ai dit ça [cent] fois ! | صد بار این را به تو گفتم!
 Il y a [cent] livres dans la maison. | در خانه صد کتاب هست.
 Cette maison a [cent] ans. | این خانه صد ساله است.
 
@@ -812,26 +812,26 @@ J'ai [mille] choses à faire ! | هزار تا کار دارم!
 Il y a [mille] livres à l'école. | در مدرسه هزار کتاب هست.
 
 # numéro
-C'est quoi, ton [numéro] ? | شماره‌ات چیست؟
-Quel est votre [numéro] ? | شماره‌تان چیست؟
-J'habite au [numéro] 5. | من در پلاک پنج زندگی می‌کنم.
-Tu as le [numéro] de Paul ? | شمارهٔ پل را داری؟
-Je cherche le [numéro] 12. | دنبال شمارهٔ دوازده می‌گردم.
-Le [numéro] de la maison est 30. | شمارهٔ خانه سی است.
+C'est quoi, ton [numéro] ? | شماره‌ات چیست؟ | d: nom, travail, livre
+Quel est votre [numéro] ? | شماره‌تان چیست؟ | d: nom, travail, pays
+J'habite au [numéro] 5. | من در پلاک پنج زندگی می‌کنم. | d: nom, jour, temps
+Tu as le [numéro] de Paul ? | شمارهٔ پل را داری؟ | d: livre, chat, nom
+Je cherche le [numéro] 12. | دنبال شمارهٔ دوازده می‌گردم. | d: nom, jour, livre
+Le [numéro] de la maison est 30. | شمارهٔ خانه سی است. | d: nom, jour, temps
 
 # deuxième
-C'est la [deuxième] fois. | این بار دوم است.
-J'habite dans la [deuxième] maison. | در خانهٔ دوم زندگی می‌کنم.
-Paul est [deuxième]. | پل دوم است.
-C'est mon [deuxième] livre en français. | این دومین کتابم به فرانسوی است.
-Le [deuxième] jour, nous allons à Nice. | روز دوم به نیس می‌رویم.
+C'est la [deuxième] fois. | این بار دوم است. | d: première, dernière, seule
+J'habite dans la [deuxième] maison. | در خانهٔ دوم زندگی می‌کنم. | d: première, dernière, petite
+Paul est [deuxième]. | پل دوم است. | d: premier, dernier, seul
+C'est mon [deuxième] livre en français. | این دومین کتابم به فرانسوی است. | d: premier, dernier, seul
+Le [deuxième] jour, nous allons à Nice. | روز دوم به نیس می‌رویم. | d: premier, dernier, seul
 
 # père
-Mon [père] s'appelle Ali. | اسم پدرم علی است.
+Mon [père] s'appelle Ali. | اسم پدرم علی است. | d: mari, frère, fils
 Mon [père] travaille à Téhéran. | پدرم در تهران کار می‌کند.
 Ton [père] a 60 ans ? | پدرت شصت سالش است؟
 C'est le [père] de Marie. | او پدر ماری است.
-Le [père] de Paul est très grand. | پدر پل خیلی قدبلند است.
+Le [père] de Paul est très grand. | پدر پل خیلی قدبلند است. | d: grand-père, fils, frère
 Les [pères] attendent les enfants à l'école. | پدرها در مدرسه منتظر بچه‌ها هستند.
 
 # mère
@@ -903,16 +903,16 @@ La [grand-mère] de Léa est très jeune. | مادربزرگ لئا خیلی ج�
 Ma [grand-mère] parle un peu français. | مادربزرگم کمی فرانسوی حرف می‌زند.
 
 # grands-parents
-Mes [grands-parents] habitent à Ispahan. | پدربزرگ و مادربزرگم در اصفهان زندگی می‌کنند.
-Je mange chez mes [grands-parents]. | خانهٔ پدربزرگ و مادربزرگم غذا می‌خورم.
-Tes [grands-parents] vont bien ? | پدربزرگ و مادربزرگت خوب‌اند؟
-Les [grands-parents] de Paul sont là. | پدربزرگ و مادربزرگ پل اینجا هستند.
-J'aime mes [grands-parents]. | پدربزرگ و مادربزرگم را دوست دارم.
+Mes [grands-parents] habitent à Ispahan. | پدربزرگ و مادربزرگم در اصفهان زندگی می‌کنند. | d: parents, oncles, cousins
+Je mange chez mes [grands-parents]. | خانهٔ پدربزرگ و مادربزرگم غذا می‌خورم. | d: parents, oncles, cousins
+Tes [grands-parents] vont bien ? | پدربزرگ و مادربزرگت خوب‌اند؟ | d: parents, frères, oncles
+Les [grands-parents] de Paul sont là. | پدربزرگ و مادربزرگ پل اینجا هستند. | d: parents, oncles, frères
+J'aime mes [grands-parents]. | پدربزرگ و مادربزرگم را دوست دارم. | d: parents, frères, cousins
 
 # oncle
 Mon [oncle] habite à Téhéran. | عمویم در تهران زندگی می‌کند.
 J'ai deux [oncles]. | دو عمو دارم.
-C'est l'[oncle] de Paul. | او عموی پل است.
+C'est l'[oncle] de Paul. | او عموی پل است. | d: ami, enfant, homme
 Mon [oncle] a une grande voiture. | عمویم یک ماشین بزرگ دارد.
 Je vais chez mon [oncle]. | به خانهٔ عمویم می‌روم.
 
