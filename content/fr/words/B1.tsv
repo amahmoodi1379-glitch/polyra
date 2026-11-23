@@ -1013,6 +1013,7 @@ quotidien	adj			روزانه، هرروزه	روزانه	time
 officiel	adj			رسمی	رسمی	society
 prudent	adj			محتاط	محتاط	character
 local	adj			محلی	محلی	society
+mort	noun	f		مرگ	مرگ	health	code:mort-n	checked:level
 mortel	adj			کشنده، مرگبار	کشنده	health
 électrique	adj			برقی، الکتریکی	برقی	science
 habituel	adj			همیشگی، معمول	همیشگی	time
@@ -1486,7 +1487,7 @@ marrant	adj			بامزه، خنده‌دار	خنده‌دار	feelings	register
 rigoler	verb			خندیدن، شوخی کردن	خندیدن	feelings	register:familier
 dingue	adj			دیوانه، خل	دیوانه	feelings	register:familier
 chouette	adj			محشر، عالی	عالی	qualities	register:familier
-cool	adj			باحال، ردیف	عالی	qualities	register:familier
+cool	adj			باحال	عالی	qualities	register:familier
 
 # more common words of B1 (ideas, life and events)
 situation	noun	f		موقعیت، اوضاع	موقعیت	abstract	checked:level
