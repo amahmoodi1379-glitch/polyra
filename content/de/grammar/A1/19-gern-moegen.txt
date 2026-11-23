@@ -4,6 +4,7 @@ scope: گفتن دوست داشتن با mögen برای چیزها و آدم‌
 can_do: حالا می‌توانی بگویی چه چیزی را دوست داری و دوست داری چه کار کنی.
 rule: چیز یا آدم ← mögen (Ich mag Tee)؛ کار ← فعل صرف‌شده و بعد gern (Ich lese gern)؛ منفی: nicht gern (Ich arbeite nicht gern).
 mistake: فارسی‌زبان‌ها gern را مثل «دوست دارم» پیش از فعل می‌گذارند: «Ich gern lese» غلط است؛ درست: Ich lese gern. mögen هم بی‌قاعده است: ich mag، نه «ich möge».
+tables: Präsens | mögen
 lesson:
 فارسی برای همه چیز «دوست داشتن» دارد: «چای را دوست دارم»، «دوست دارم کتاب بخوانم».
 آلمانی دو راه دارد: برای چیزها و آدم‌ها mögen (Ich mag Tee. Ich mag Anna.) و برای کارها gern (Ich lese gern یعنی «دوست دارم کتاب بخوانم»).
