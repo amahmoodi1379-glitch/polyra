@@ -1,0 +1,79 @@
+code: fr-a1-verbes-ir
+title: فعل‌های -ir: finir و partir
+scope: دو دستهٔ فعل‌های -ir در زمان حال: finir و choisir با iss در جمع (nous finissons)، و partir، sortir و dormir که حرف آخر ریشه در مفرد می‌افتد (je pars، je dors)؛ ouvrir و venir جدا صرف می‌شوند.
+can_do: حالا می‌توانی بگویی کی کارت تمام می‌شود، کی راه می‌افتی، بیرون می‌روی و چه انتخاب می‌کنی: Je finis à six heures. Le train part à midi.
+rule: finir، choisir: je finis، tu finis، il finit، nous finissons، vous finissez، ils finissent. partir، sortir، dormir: je pars، il part، nous partons، ils partent.
+mistake: فارسی‌زبان‌ها پایان‌های -er را روی این فعل‌ها می‌گذارند («ils finent»، «nous finons») یا iss را به همه می‌دهند («nous partissons»)؛ درست: ils finissent، nous partons. «je dorms» هم غلط است: je dors.
+tables: présent | ir
+tables: présent | partir
+tables: présent | sortir
+tables: présent | dormir
+lesson:
+فعل‌های -ir دو دسته‌اند و باید بدانی هر فعل از کدام دسته است.
+دستهٔ finir (تمام کردن) و choisir (انتخاب کردن): در جمع iss اضافه می‌شود: je finis، tu finis، il finit، nous finissons، vous finissez، ils finissent.
+دستهٔ partir (رفتن، راه افتادن)، sortir (بیرون رفتن) و dormir (خوابیدن): در مفرد حرف آخر ریشه می‌افتد: je pars، je sors، je dors.
+در جمع آن حرف برمی‌گردد: nous partons، vous sortez، ils dorment.
+پایان‌های مفرد در هر دو دسته یکی است: -s، -s، -t.
+فرق دو دسته را با یک جفت حفظ کن: nous finissons، ولی nous partons.
+table:
+ضمیر | finir | choisir | partir | sortir | dormir
+je | finis | choisis | pars | sors | dors
+tu | finis | choisis | pars | sors | dors
+il، elle، on | finit | choisit | part | sort | dort
+nous | finissons | choisissons | partons | sortons | dormons
+vous | finissez | choisissez | partez | sortez | dormez
+ils، elles | finissent | choisissent | partent | sortent | dorment
+examples:
+Je finis à six heures. | ساعت شش تمام می‌کنم.
+Nous choisissons un film. | یک فیلم انتخاب می‌کنیم.
+Le train part à midi. | قطار ظهر حرکت می‌کند.
+Les enfants dorment. | بچه‌ها خوابند.
+targets:
+Je [finis] mon travail. | کارم را تمام می‌کنم. | d: finit, finissons, finissent | hint: (finir)
+Tu [finis] à quelle heure ? | ساعت چند تمام می‌کنی؟ | d: finit, finissez, finissent | hint: (finir)
+Le film [finit] à dix heures. | فیلم ساعت ده تمام می‌شود. | d: finis, finissent, fini
+Nous [finissons] le repas. | غذا را تمام می‌کنیم. | d: finons, finissez, finissent | hint: (finir)
+Vous [finissez] tard ? | دیر تمام می‌کنید؟ | d: finez, finissons, finissent
+Les cours [finissent] à midi. | کلاس‌ها ظهر تمام می‌شوند. | d: finent, finit, finissez | hint: (finir)
+Je [choisis] le poisson. | ماهی را انتخاب می‌کنم. | d: choisit, choisissons, choisissent | hint: (choisir)
+Tu [choisis] la robe rouge ? | لباس قرمز را انتخاب می‌کنی؟ | d: choisit, choisissez, choisissent
+Marie [choisit] un livre. | ماری یک کتاب انتخاب می‌کند. | d: choisis, choisissent, choisi | hint: (choisir)
+Nous [choisissons] un restaurant. | یک رستوران انتخاب می‌کنیم. | d: choisons, choisissez, choisissent
+Vous [choisissez] le dessert ? | دسر را انتخاب می‌کنید؟ | d: choisez, choisissons, choisissent | hint: (choisir)
+Les enfants [choisissent] un gâteau. | بچه‌ها یک کیک انتخاب می‌کنند. | d: choisent, choisit, choisissez
+On [finit] tard aujourd'hui. | امروز دیر تمام می‌کنیم. | d: finis, finissons, finissent | hint: (finir)
+Elles ne [finissent] pas l'exercice. | آن‌ها تمرین را تمام نمی‌کنند. | d: finent, finit, finissez
+Je [pars] à huit heures. | ساعت هشت راه می‌افتم. | d: part, partons, partent | hint: (partir)
+Tu [pars] en vacances ? | به تعطیلات می‌روی؟ | d: part, partez, partent
+Le train [part] à midi. | قطار ظهر حرکت می‌کند. | d: pars, partent, partons | hint: (partir)
+Nous [partons] demain. | فردا می‌رویم. | d: partissons, partez, partent
+Vous [partez] quand ? | کی می‌روید؟ | d: partons, partent, partissez | hint: (partir)
+Ils [partent] ensemble. | آن‌ها با هم می‌روند. | d: part, partez, partissent
+Je [sors] ce soir. | امشب بیرون می‌روم. | d: sort, sortons, sortent | hint: (sortir)
+Elle [sort] avec ses amies. | او (زن) با دوستانش بیرون می‌رود. | d: sors, sortent, sortons
+Nous [sortons] du cinéma. | از سینما بیرون می‌آییم. | d: sortez, sortent, sortissons | hint: (sortir)
+Je [dors] bien. | خوب می‌خوابم. | d: dort, dorms, dormons | hint: (dormir)
+Le bébé [dort]. | بچه خواب است. | d: dors, dorment, dormons
+Les enfants [dorment] dans la chambre. | بچه‌ها در اتاق می‌خوابند. | d: dort, dormez, dormissent | hint: (dormir)
+Vous [dormez] bien ? | خوب می‌خوابید؟ | d: dormons, dorment, dort
+Tu [dors] ? | خوابی؟ | d: dort, dorms, dormez | hint: (dormir)
+On [sort] ce soir ? | امشب بیرون برویم؟ | d: sors, sortons, sortent
+Vous [sortez] souvent ? | زیاد بیرون می‌روید؟ | d: sortons, sortent, sortissez | hint: (sortir)
+Je [finis] mon travail et je [pars]. | کارم را تمام می‌کنم و می‌روم. | d: finit, finissons, finissent / part, partons, partent
+Nous [choisissons] un film et nous [sortons]. | یک فیلم انتخاب می‌کنیم و بیرون می‌رویم. | d: choisons, choisissez, choisissent / sortez, sortent, sortissons
+Les enfants [dorment] et les parents [sortent]. | بچه‌ها می‌خوابند و پدر و مادر بیرون می‌روند. | d: dort, dormez, dormissent / sort, sortez, sortissent | full: Les parents sortent et les enfants dorment.
+Tu [pars] quand ? Je [pars] à midi. | کی می‌روی؟ ظهر می‌روم. | d: part, partez, partent / part, partons, partent
+Le cours [finit] à six heures et le train [part] à sept heures. | کلاس ساعت شش تمام می‌شود و قطار ساعت هفت حرکت می‌کند. | d: finis, finissent, fini / pars, partent, partons | full: Le train part à sept heures et le cours finit à six heures.
+Vous [choisissez] le poisson ? Non, nous [choisissons] la viande. | ماهی را انتخاب می‌کنید؟ نه، گوشت را انتخاب می‌کنیم. | d: choisez, choisissons, choisissent / choisons, choisissez, choisissent
+transforms:
+Je finis le travail. => Nous finissons le travail. | جمله را با nous بنویس.
+Il choisit un livre. => Ils choisissent un livre. | جمله را با ils بنویس.
+Je pars à midi. => Nous partons à midi. | جمله را با nous بنویس.
+Elle dort bien. => Elles dorment bien. | جمله را با elles بنویس.
+Tu sors ce soir ? => Vous sortez ce soir ? | جمله را با vous بنویس.
+translations:
+کارم را تمام می‌کنم. => Je finis mon travail.
+ساعت هشت راه می‌افتم. => Je pars à huit heures.
+بچه‌ها در اتاق می‌خوابند. => Les enfants dorment dans la chambre.
+امشب بیرون می‌روم. => Je sors ce soir.
+یک رستوران انتخاب می‌کنیم. => Nous choisissons un restaurant. ; On choisit un restaurant.
