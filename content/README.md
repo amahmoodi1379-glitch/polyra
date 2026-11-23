@@ -128,14 +128,20 @@ Je [mange] une pomme. | من یک سیب می‌خورم.
 - **Known words only (the usable-sentence rule, PRD §13.11).** Every other word must be taught before the
   block's word: a lower level, earlier in the list, or a function word with `no_card`. The first 30 card
   words of a language count as known among themselves. The checker names any word that comes too late.
-- **Wrong options.** For a conjugated verb: other forms of the same verb, with the infinitive as hint. For
-  anything else: other words of the same part of speech and topic in the same form (gender and number of a
+- **Wrong options.** For a conjugated verb: other forms of the same verb, with the infinitive as hint (a form
+  that is also a participle, «fait», is read as finite unless avoir/être or haben/sein comes before it). For a
+  conjugated verb phrase: the phrase with other forms of its verb (`Je [suis d'accord].` gets «es d'accord,
+  est d'accord, sommes d'accord», hint «(être d'accord)»). For anything else: other words of the same part of speech and topic in the same form (gender and number of a
   noun, agreement of an adjective), never a synonym, a homophone, a word already in the sentence, or a form
   the word before rules out (`l'` + consonant). When the checker says it cannot find three, write `d:`.
 - **Reading the words.** A form that could be two words is read from its neighbours (French «la» before a
   verb is the pronoun; German capitals are nouns). When the reading is still wrong, name the word:
   `Il [ferme]{fermer} la porte.` or `word{code}` anywhere in the sentence. A separable German verb is found
   whole (`Ich [stehe] um sieben Uhr auf.`).
+- **Phrases.** A phrase of the lists is found with its verb in any form and an elided word for its full form
+  (`J'[ai besoin d']eau.`, `Il [fait froid].`), German also with the verb first (`Ich [habe Hunger].`,
+  `Gibt es …`), and a noun of several words in its plural (`les [pommes de terre]`). Outside the gap it may
+  be split by other words of its clause (`Je n'ai pas faim.`, `Hast du morgen Zeit?`); a gap holds it whole.
 - Names come from `names.txt`; numbers in digits are numbers. A sentence written for two words (the same text
   in two blocks, same translation) becomes one sentence with two targets.
 - 5 to 8 sentences per card word (`publish.word_min_targets` is 5), each a different situation, short at A1

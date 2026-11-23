@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import * as frenchVerbs from "french-verbs";
 import type { VerbsInfo as FrenchVerbs } from "french-verbs-lefff";
-import { fold } from "@/engine/tokens";
+import { fold, splitPieces } from "@/engine/tokens";
 import { isCardRegister } from "@/engine/content";
 import { levelRank } from "../languages";
 import { germanVerb } from "../german-verbs";
@@ -12,6 +12,7 @@ import type { PackWord } from "./words";
 /**
  * The three wrong options of a word's gap (W3b, PRD §5.5), when the author gives none:
  * - a verb in a conjugated form: other forms of the same verb (the P-S rule), with its infinitive as hint;
+ * - a verb phrase in a conjugated form: the phrase with other forms of its verb, with the phrase as hint;
  * - any other word: other words of the same part of speech and topic, in the same form (same gender and
  *   number for a noun, the same ending for an adjective), so only the meaning tells them apart. Words the
  *   learner met before come first. Never a word of the same concept (a second right answer), never a
@@ -55,8 +56,18 @@ export function verbFormGroups(language: string, lemma: string, root = process.c
   return groups.map((group) => ({ ...group, forms: group.forms.filter(Boolean) }));
 }
 
-/** Other forms of the same verb that are wrong where this form stands. */
-export function verbDistractors(language: string, lemma: string, surface: string, root = process.cwd()): string[] {
+const PARTICIPLES = ["PARTICIPE", "PA2"];
+const NOT_FINITE = [...PARTICIPLES, "INFINITIF", "INF"];
+const AUXILIARIES: Record<string, string[]> = { fr: ["avoir", "être"], de: ["haben", "sein", "werden"] };
+
+/** Is this word a form of an auxiliary (ai, est, habe, bin)? Then a participle may follow. */
+export const isAuxiliary = (morph: Morph, surface: string) => morph.candidates(surface).some((candidate) => (AUXILIARIES[morph.language] ?? []).includes(candidate.word.word.lemma));
+
+/**
+ * Other forms of the same verb that are wrong where this form stands. A form that is both finite and a
+ * participle («fait», «gemacht» is not) is read as a participle only after an auxiliary.
+ */
+export function verbDistractors(language: string, lemma: string, surface: string, root = process.cwd(), afterAuxiliary?: boolean): string[] {
   const groups = verbFormGroups(language, lemma, root);
   const right = fold(surface);
   const holding = groups.filter((group) => group.forms.some((form) => fold(form) === right));
@@ -65,7 +76,8 @@ export function verbDistractors(language: string, lemma: string, surface: string
   const push = (form: string | undefined) => {
     if (form && fold(form) !== right && !out.some((item) => fold(item) === fold(form))) out.push(form);
   };
-  const participle = holding.some((group) => group.name === "PARTICIPE" || group.name === "PA2");
+  const finite = holding.some((group) => !NOT_FINITE.includes(group.name));
+  const participle = holding.some((group) => PARTICIPLES.includes(group.name)) && (afterAuxiliary ?? !finite);
   if (participle) {
     // After an auxiliary: the infinitive and finite forms are wrong, other agreements may not be.
     const present = groups.find((group) => group.name === "PRESENT" || group.name === "PRÄ")?.forms ?? [];
@@ -77,11 +89,29 @@ export function verbDistractors(language: string, lemma: string, surface: string
     return out.slice(0, 3);
   }
   // Other persons of the same tense first, then the same person in another tense.
-  const main = holding[0];
+  const main = holding.find((group) => !NOT_FINITE.includes(group.name)) ?? holding[0];
   const persons = main.forms.map((form, index) => (fold(form) === right ? index : -1)).filter((index) => index >= 0);
   for (const form of main.forms) push(form);
   for (const group of groups) if (group !== main && group.forms.length === 6) for (const index of persons) push(group.forms[index]);
   return out.slice(0, 3);
+}
+
+/**
+ * A verb phrase in a conjugated form (suis d'accord, habe Hunger): the same phrase with other forms of
+ * its verb (es d'accord, est d'accord, sommes d'accord), so only the person tells them apart.
+ */
+export function phraseDistractors(morph: Morph, words: PackWord[], target: PackWord, surface: string, afterAuxiliary = false): string[] {
+  const verbs = (target.word.parts ?? []).map((code) => words.find((item) => item.word.code === code)).filter((item): item is PackWord => item?.word.pos === "verb");
+  for (const piece of splitPieces(surface)) {
+    const verb = verbs.find((item) => morph.candidates(piece.text).some((candidate) => candidate.word === item));
+    if (!verb) continue;
+    const capital = piece.start === 0 && /^\p{Lu}/u.test(surface);
+    return verbDistractors(morph.language, verb.word.lemma, piece.text, undefined, piece.start === 0 ? afterAuxiliary : isAuxiliary(morph, surface.slice(0, piece.start).trim().split(/\s+/).pop() ?? "")).map((form) => {
+      const written = capital ? form.charAt(0).toUpperCase() + form.slice(1) : form;
+      return `${surface.slice(0, piece.start)}${written}${surface.slice(piece.end)}`;
+    });
+  }
+  return [];
 }
 
 const hash = (text: string) => {
@@ -144,9 +174,14 @@ export function autoDistractors(morph: Morph, words: PackWord[], target: PackWor
   const language = morph.language;
   const word = target.word;
   if (word.pos === "verb" && fold(surface) !== fold(word.lemma)) {
-    const options = verbDistractors(language, word.lemma, surface);
+    const options = verbDistractors(language, word.lemma, surface, undefined, context.before ? isAuxiliary(morph, context.before) : false);
     if (options.length < 3) return { error: `cannot make three other forms of «${word.lemma}» for «${surface}»: write d: a, b, c` };
     return { options, hint: `(${bareLemma(word.lemma)})` };
+  }
+  if (word.pos === "phrase" && fold(surface) !== fold(word.lemma)) {
+    const options = phraseDistractors(morph, words, target, surface, context.before ? isAuxiliary(morph, context.before) : false);
+    if (options.length < 3) return { error: `cannot make three other forms of «${word.lemma}» for «${surface}»: write d: a, b, c` };
+    return { options, hint: `(${word.lemma})` };
   }
   const homophones = new Set([...word.homophones.map(fold), fold(word.lemma)]);
   const right = fold(surface);
