@@ -1,0 +1,75 @@
+code: fr-a1-imperatif
+title: امر: Écoute ! Venez ! Allons-y !
+scope: امر با tu، nous و vous در جملهٔ مثبت و منفی، بدون s در شکل tu فعل‌های -er (Parle !، Va !)، فعل‌های ضمیری (Lève-toi !، Asseyez-vous !، Ne te lève pas !) و être (sois، soyez)؛ امر با ضمیر مفعولی (Donne-le-moi) در A2 می‌آید.
+can_do: حالا می‌توانی چیزی بخواهی، راه نشان بدهی و دستورهای کلاس را بفهمی: Ouvrez vos livres. Tournez à droite. Asseyez-vous.
+rule: امر همان فعل زمان حال است بدون فاعل، با tu، nous و vous؛ فعل‌های -er و aller در شکل tu بی s اند (Parle !، Va !)؛ ضمیری: Lève-toi !، و منفی: Ne te lève pas !
+mistake: فارسی‌زبان‌ها s شکل tu را نگه می‌دارند («Manges ta soupe !») یا فاعل را هم می‌گویند («Tu écoute !»)؛ درست: Mange ta soupe ! Écoute ! در فعل ضمیری هم «Lève-te» غلط است: Lève-toi !
+lesson:
+برای دستور دادن یا خواهش کردن، فعل را بی‌فاعل می‌گوییم و فقط سه شکل دارد: tu، nous و vous.
+شکلش همان زمان حال است: tu prends → Prends !، vous écoutez → Écoutez !، nous partons → Partons ! (یعنی «برویم!»).
+در فعل‌های -er و در aller، شکل tu بی s است: tu parles → Parle !، tu vas → Va !
+در منفی ne … pas دور فعل می‌آید: Ne parle pas !
+در فعل ضمیری، ضمیر بعد از فعل و با خط تیره می‌آید و te می‌شود toi: Lève-toi ! Asseyez-vous ! ولی در منفی سر جای خودش می‌ماند: Ne te lève pas !
+être بی‌قاعده است: sois، soyons، soyez (Sois gentil !). برای مؤدب بودن شکل vous را با s'il vous plaît بگو.
+table:
+ | tu | nous | vous
+parler | parle | parlons | parlez
+prendre | prends | prenons | prenez
+aller | va | allons | allez
+être | sois | soyons | soyez
+se lever | lève-toi | levons-nous | levez-vous
+examples:
+Écoute ! | گوش کن!
+Ouvrez vos livres, s'il vous plaît. | لطفاً کتاب‌هایتان را باز کنید.
+Allons au cinéma ! | به سینما برویم!
+Ne parle pas ! | حرف نزن!
+targets:
+[Mange] ta soupe ! | سوپت را بخور! | d: Manges, Mangé, Mangent | hint: (manger)
+[Écoute] ta mère ! | به حرف مادرت گوش کن! | d: Écoutes, Écouté, Écoutent | hint: (écouter)
+[Ferme] ta porte, s'il te plaît. | لطفاً درِ اتاقت را ببند. | d: Fermes, Fermé, Ferment
+[Prends] ton sac ! | کیفت را بردار! | d: Prend, Pris, Prennent | hint: (prendre)
+[Finis] ton repas ! | غذایت را تمام کن! | d: Finit, Fini, Finissent
+[Va] à l'école, Paul ! | پل، برو مدرسه! | d: Vas, Allé, Vont | hint: (aller)
+[Viens] avec moi, Léa ! | لئا، با من بیا! | d: Vient, Venu, Viennent
+[Attends] ton frère ! | منتظر برادرت بمان! | d: Attend, Attendu, Attendent | hint: (attendre)
+[Lève]-toi ! | بلند شو! | d: Lèves, Levé, Lèvent | hint: (se lever)
+[Sois] gentil avec ta sœur ! | با خواهرت مهربان باش! | d: Es, Est, Été | hint: (être)
+[Ouvrez] vos livres. | کتاب‌هایتان را باز کنید. | d: Ouvres, Ouvrent, Ouvert | hint: (ouvrir)
+[Écoutez], s'il vous plaît. | لطفاً گوش کنید. | d: Écoutes, Écoutent, Écouté
+[Asseyez]-vous. | بنشینید. | d: Assieds, Asseyent, Assis | hint: (s'asseoir)
+[Prenez] votre passeport. | پاسپورتتان را بردارید. | d: Prends, Prennent, Pris
+[Répétez], s'il vous plaît. | لطفاً تکرار کنید. | d: Répètes, Répètent, Répété | hint: (répéter)
+[Tournez] à droite, s'il vous plaît. | لطفاً به راست بپیچید. | d: Tournes, Tournent, Tourné
+Madame, [continuez] tout droit. | خانم، مستقیم ادامه بدهید. | d: continues, continuent, continué | hint: (continuer)
+[Entrez], monsieur. | بفرمایید تو، آقا. | d: Entres, Entrent, Entré
+[Venez] avec vos enfants. | با بچه‌هایتان بیایید. | d: Viennent, Venu, Vient
+[Soyez] à l'heure, s'il vous plaît. | لطفاً سر وقت باشید. | d: Êtes, Sont, Été | hint: (être)
+[Allons]-y ! | برویم! | d: Vont, Allé, Allions | hint: (aller)
+[Promenons]-nous dans le parc. | در پارک قدم بزنیم. | d: Promènent, Promené, Promènes
+[Mangeons] ensemble ! | با هم غذا بخوریم! | d: Mangent, Mangé, Manges
+[Prenons] notre café ici. | قهوه‌مان را اینجا بخوریم. | d: Prennent, Pris, Prenont
+Ne [parle] pas, Paul ! | پل، حرف نزن! | d: parles, parlé, parlent | hint: (parler)
+Ne [mangez] pas ici, s'il vous plaît. | لطفاً اینجا غذا نخورید. | d: manges, mangent, mangé
+Ne [ferme] pas ta porte. | درِ اتاقت را نبند. | d: fermes, fermé, ferment | hint: (fermer)
+Ne te [lève] pas ! | بلند نشو! | d: lèves, levé, lèvent
+Ne [vous] asseyez pas ici. | اینجا ننشینید. | d: se, vos, votre | hint: (s'asseoir)
+[Ne] pars pas ! | نرو! | d: Non, Pas, Ni
+[Ouvrez] vos livres et [écoutez], s'il vous plaît. | کتاب‌هایتان را باز کنید و لطفاً گوش کنید. | d: Ouvres, Ouvrent, Ouvert / écoutes, écoutent, écouté
+[Lève]-toi et [mange] ton petit-déjeuner ! | بلند شو و صبحانه‌ات را بخور! | d: Lèves, Levé, Lèvent / manges, mangé, mangent
+Ne [parle] pas et [écoute] ton professeur ! | حرف نزن و به معلمت گوش کن! | d: parles, parlé, parlent / écoutes, écouté, écoutent
+[Tournez] à gauche et [continuez] tout droit. | به چپ بپیچید و مستقیم ادامه بدهید. | d: Tournes, Tournent, Tourné / continues, continuent, continué
+[Viens] ici et [assieds]-toi ! | بیا اینجا و بنشین! | d: Vient, Venu, Viennent / asseyez, assis, assied
+[Prends] ton sac et [va] à l'école ! | کیفت را بردار و برو مدرسه! | d: Prend, Pris, Prennent / vas, allé, vont
+transforms:
+Tu parles français. => Parle français ! | جمله را امری کن.
+Vous écoutez. => Écoutez ! | جمله را امری کن.
+Nous partons. => Partons ! | جمله را امری کن.
+Mange ! => Ne mange pas ! | جمله را منفی کن.
+Tu te lèves. => Lève-toi ! | جمله را امری کن.
+Tu vas à l'école. => Va à l'école ! | جمله را امری کن.
+translations:
+لطفاً گوش کنید. => Écoutez, s'il vous plaît. ; S'il vous plaît, écoutez.
+بلند شو! => Lève-toi !
+برویم! => Allons-y ! ; On y va !
+حرف نزن! => Ne parle pas ! ; Ne parlez pas !
+بنشینید. => Asseyez-vous. ; Asseyez-vous, s'il vous plaît.
