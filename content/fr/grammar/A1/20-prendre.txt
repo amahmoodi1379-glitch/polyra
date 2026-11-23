@@ -1,0 +1,79 @@
+code: fr-a1-prendre
+title: prendre، comprendre، apprendre
+scope: صرف بی‌قاعدهٔ prendre (برداشتن، گرفتن، در کافه: خوردن)، comprendre (فهمیدن) و apprendre (یاد گرفتن) در زمان حال، در جملهٔ مثبت، منفی و سؤالی؛ این واحد خانهٔ جدول فعل‌های بی‌قاعدهٔ دیگرِ زمان حال هم هست.
+can_do: حالا می‌توانی در کافه سفارش بدهی، بگویی می‌فهمی یا نه و بگویی چه یاد می‌گیری: Je prends un café. Je ne comprends pas. J'apprends le français.
+rule: prendre: je prends، tu prends، il prend، nous prenons، vous prenez، ils prennent؛ comprendre و apprendre هم همین‌طور صرف می‌شوند.
+mistake: فارسی‌زبان‌ها جمعش را از روی مصدر می‌سازند و می‌نویسند «ils prendent» یا «nous prennons»؛ درست: ils prennent (دو n) و nous prenons (یک n). «je comprend» بدون s هم غلط است: je comprends.
+tables: présent | prendre
+tables: présent | comprendre
+tables: présent | apprendre
+tables: présent | irregular
+lesson:
+prendre یعنی «برداشتن، گرفتن» و در کافه یعنی «خوردن، سفارش دادن»: Je prends un café.
+comprendre (فهمیدن) و apprendre (یاد گرفتن) از prendre ساخته شده‌اند و درست مثل آن صرف می‌شوند.
+در مفرد d آخر خوانده نمی‌شود: je prends، il prend.
+nous و vous یک n دارند (nous prenons، vous prenez) و ils دو n (ils prennent).
+جملهٔ «نمی‌فهمم» را زیاد لازم داری: Je ne comprends pas.
+فعل‌های بی‌قاعدهٔ دیگر مثل boire، dire، lire، écrire، voir و mettre هم جدول خودشان را دارند که کنار همین درس می‌آید.
+table:
+ضمیر | prendre | comprendre | apprendre
+je | prends | comprends | apprends
+tu | prends | comprends | apprends
+il، elle، on | prend | comprend | apprend
+nous | prenons | comprenons | apprenons
+vous | prenez | comprenez | apprenez
+ils، elles | prennent | comprennent | apprennent
+examples:
+Je prends un café. | یک قهوه می‌خورم.
+Tu comprends ? | می‌فهمی؟
+Nous apprenons le français. | ما فرانسوی یاد می‌گیریم.
+Les enfants prennent les livres. | بچه‌ها کتاب‌ها را برمی‌دارند.
+targets:
+Je [prends] un café. | یک قهوه می‌خورم. | d: prend, prenons, prennent | hint: (prendre)
+Tu [prends] la voiture ? | ماشین را می‌بری؟ | d: prend, prenez, prennent | hint: (prendre)
+Paul [prend] le pain. | پل نان را برمی‌دارد. | d: prends, prenez, prennent
+Nous [prenons] un café ensemble ? | با هم یک قهوه بخوریم؟ | d: prennons, prenez, prennent | hint: (prendre)
+Vous [prenez] un café ? | قهوه می‌خورید؟ | d: prenons, prennent, prend
+Les enfants [prennent] les livres. | بچه‌ها کتاب‌ها را برمی‌دارند. | d: prend, prenez, prendent | hint: (prendre)
+Elle [prend] la voiture de Paul. | او (زن) ماشین پل را می‌برد. | d: prends, prenons, prennent
+Ils [prennent] un café ici. | آن‌ها اینجا قهوه می‌خورند. | d: prend, prenez, prendent | hint: (prendre)
+Je ne [comprends] pas. | نمی‌فهمم. | d: comprend, comprenons, comprennent | hint: (comprendre)
+Tu [comprends] le français ? | فرانسوی می‌فهمی؟ | d: comprend, comprenez, comprennent
+Paul [comprend] tout. | پل همه‌چیز را می‌فهمد. | d: comprends, comprenons, comprennent | hint: (comprendre)
+Nous [comprenons] le problème. | ما مشکل را می‌فهمیم. | d: comprennons, comprenez, comprennent
+Vous [comprenez] ? | متوجه می‌شوید؟ | d: comprenons, comprennent, comprend | hint: (comprendre)
+Les enfants ne [comprennent] pas. | بچه‌ها نمی‌فهمند. | d: comprend, comprenez, comprendent
+Elle [comprend] bien le français. | او (زن) فرانسوی را خوب می‌فهمد. | d: comprends, comprenons, comprennent | hint: (comprendre)
+J'[apprends] le français. | فرانسوی یاد می‌گیرم. | d: apprend, apprenons, apprennent | hint: (apprendre)
+Tu [apprends] le français avec qui ? | با چه کسی فرانسوی یاد می‌گیری؟ | d: apprend, apprenez, apprennent
+Marie [apprend] le français à l'école. | ماری در مدرسه فرانسوی یاد می‌گیرد. | d: apprends, apprenons, apprennent | hint: (apprendre)
+Nous [apprenons] ensemble. | ما با هم یاد می‌گیریم. | d: apprennons, apprenez, apprennent
+Vous [apprenez] le français ? | شما فرانسوی یاد می‌گیرید؟ | d: apprenons, apprennent, apprend | hint: (apprendre)
+Ils [apprennent] beaucoup à l'école. | آن‌ها در مدرسه خیلی چیز یاد می‌گیرند. | d: apprend, apprenez, apprendent
+On [apprend] tous les jours. | هر روز یاد می‌گیریم. | d: apprends, apprenons, apprennent | hint: (apprendre)
+Je vais [prendre] un café. | قرار است یک قهوه بخورم. | d: prends, prend, pris | hint: (prendre)
+Tu peux [comprendre] ça ? | می‌توانی این را بفهمی؟ | d: comprends, comprend, compris
+Je veux [apprendre] le français. | می‌خواهم فرانسوی یاد بگیرم. | d: apprends, apprend, appris | hint: (apprendre)
+Nous ne [prenons] pas la voiture. | ما ماشین را نمی‌بریم. | d: prennons, prenez, prennent
+Qu'est-ce que tu [prends] ? | چه می‌خوری؟ | d: prend, prenez, prennent | hint: (prendre)
+Vous [prenez] le livre ? | کتاب را برمی‌دارید؟ | d: prenons, prennent, prend
+Il ne [comprend] pas le problème. | او مشکل را نمی‌فهمد. | d: comprends, comprenons, comprennent
+Les filles [apprennent] le français. | دخترها فرانسوی یاد می‌گیرند. | d: apprend, apprenez, apprendent
+Je [prends] un café et Paul [prend] un pain. | من یک قهوه می‌خورم و پل یک نان می‌گیرد. | d: prend, prenons, prennent / prends, prenez, prennent | full: Paul prend un pain et je prends un café.
+Tu [comprends] ? Non, je ne [comprends] pas. | می‌فهمی؟ نه، نمی‌فهمم. | d: comprend, comprenez, comprennent / comprend, comprenons, comprennent
+Vous [prenez] un café ? Oui, nous [prenons] un café. | قهوه می‌خورید؟ بله، قهوه می‌خوریم. | d: prenons, prennent, prend / prennons, prenez, prennent
+Ils [apprennent] le français, mais ils ne [comprennent] pas tout. | آن‌ها فرانسوی یاد می‌گیرند، ولی همه‌چیز را نمی‌فهمند. | d: apprend, apprenez, apprendent / comprend, comprenez, comprendent
+Elle [apprend] le français et elle [comprend] tout. | او (زن) فرانسوی یاد می‌گیرد و همه‌چیز را می‌فهمد. | d: apprends, apprenons, apprennent / comprends, comprenons, comprennent
+Qu'est-ce que vous [prenez] ? Je [prends] un café. | چه می‌خورید؟ یک قهوه می‌خورم. | d: prenons, prennent, prend / prend, prenons, prennent
+transforms:
+Je prends un café. => Nous prenons un café. | جمله را با nous بنویس.
+Il comprend le français. => Ils comprennent le français. | جمله را با ils بنویس.
+Tu apprends le français. => Vous apprenez le français. | جمله را با vous بنویس.
+Je comprends. => Je ne comprends pas. | جمله را منفی کن.
+Elle prend la voiture. => Elles prennent la voiture. | جمله را با elles بنویس.
+translations:
+نمی‌فهمم. => Je ne comprends pas.
+فرانسوی یاد می‌گیرم. => J'apprends le français.
+چه می‌خوری؟ => Qu'est-ce que tu prends ? ; Tu prends quoi ?
+آن‌ها فرانسوی می‌فهمند. => Ils comprennent le français. ; Elles comprennent le français.
+با هم یک قهوه بخوریم؟ => On prend un café ensemble ? ; Nous prenons un café ensemble ?
