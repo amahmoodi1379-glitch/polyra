@@ -1,0 +1,75 @@
+code: de-a1-personalpronomen-akkusativ
+title: mich، dich، ihn: ضمیر مفعولی
+scope: ضمیرهای شخصی در Akkusativ (mich، dich، ihn، sie، es، uns، euch، Sie) بعد از فعل‌هایی مثل sehen، besuchen، anrufen، fragen، kennen و lieben و بعد از für؛ و ihn، sie و es به‌جای اسم چیزها (der Kaffee ← ihn)؛ ضمیرهای Dativ (mir، dir) در سطح بعد می‌آیند.
+can_do: حالا می‌توانی بگویی چه کسی را می‌بینی، می‌شناسی یا به چه کسی زنگ می‌زنی: «دوستت دارم»، «فردا به تو زنگ می‌زنم».
+rule: ich ← mich، du ← dich، er ← ihn، sie ← sie، es ← es، wir ← uns، ihr ← euch، Sie ← Sie.
+mistake: فارسی‌زبان‌ها شکل فاعلی را به‌جای مفعولی می‌گذارند: «Ich liebe du» و «Max ruft ich an» غلط است؛ درست: Ich liebe dich. Max ruft mich an. برای اسم مذکر چیزها هم ihn بگو: Der Kaffee ist kalt. Ich trinke ihn nicht.
+lesson:
+کسی که کار روی او انجام می‌شود (مفعول) در آلمانی ضمیر خودش را دارد: Ich sehe dich. یعنی «تو را می‌بینم».
+ich ← mich، du ← dich، wir ← uns، ihr ← euch.
+er ← ihn؛ ولی sie، es و Sie عوض نمی‌شوند: Ich frage sie. Ich verstehe Sie.
+برای چیزها ضمیر از جنس اسم می‌آید: der Kaffee ← ihn، die Suppe ← sie، das Buch ← es.
+ضمیر معمولاً زود در جمله می‌آید، بعد از فعل و پیش از زمان: Ich rufe dich morgen an.
+بعد از für هم همین شکل‌ها می‌آیند: für mich، für dich، für uns.
+table:
+فاعلی | مفعولی (Akkusativ)
+ich | mich
+du | dich
+er | ihn
+sie | sie
+es | es
+wir | uns
+ihr | euch
+Sie | Sie
+examples:
+Ich liebe dich. | دوستت دارم.
+Kannst du mich hören? | صدایم را می‌شنوی؟
+Wo ist mein Handy? Ich sehe es nicht. | موبایلم کجاست؟ آن را نمی‌بینم.
+Das Geschenk ist für dich. | این هدیه برای توست.
+targets:
+Anna sieht [mich]. | آنا مرا می‌بیند. | d: ich, mir, mein
+Max ruft [mich] morgen an. | ماکس فردا به من زنگ می‌زند. | d: ich, mir, mein | full: Morgen ruft Max mich an. ; Morgen ruft mich Max an.
+Hörst du [mich]? | صدایم را می‌شنوی؟ | d: ich, mir, mein
+Die Lehrerin fragt [mich]. | معلم از من می‌پرسد. | d: ich, mir, mein
+Ich besuche [dich] am Sonntag. | یکشنبه به دیدنت می‌آیم. | d: du, dir, dein | full: Am Sonntag besuche ich dich.
+Ich rufe [dich] heute an. | امروز به تو زنگ می‌زنم. | d: du, dir, dein | full: Heute rufe ich dich an.
+Max sucht [dich]. | ماکس دنبال تو می‌گردد. | d: du, dir, dein
+Der Tee ist für [dich]. | چای برای توست. | d: du, dir, dein
+Kennst du Max? – Ja, ich kenne [ihn]. | ماکس را می‌شناسی؟ – بله، او را می‌شناسم. | d: er, ihm, sein
+Ich frage [ihn] morgen. | فردا از او می‌پرسم. | d: er, ihm, sein | full: Morgen frage ich ihn.
+Der Kaffee ist kalt. Ich trinke [ihn] nicht. | قهوه سرد است. آن را نمی‌نوشم. | d: er, ihm, sein
+Wie findest du den Tee? – Ich finde [ihn] gut. | چای را چطور می‌بینی؟ – به نظرم خوب است. | d: er, ihm, sein
+Wo ist Anna? Ich sehe [sie] nicht. | آنا کجاست؟ او را نمی‌بینم. | d: ihr, ihre, er
+Lena ist nett. Paul liebt [sie]. | لنا مهربان است. پاول او را دوست دارد. | d: ihr, ihre, er
+Die Suppe ist warm. Ich esse [sie] jetzt. | سوپ گرم است. الان آن را می‌خورم. | d: ihr, ihre, er
+Anna kommt heute. Ich treffe [sie] im Café. | آنا امروز می‌آید. او را در کافه می‌بینم. | d: ihr, ihre, er
+Das Buch ist gut. Ich lese [es] gern. | کتاب خوب است. دوست دارم آن را بخوانم. | d: er, ihm, sein
+Wo ist mein Handy? Ich finde [es] nicht. | موبایلم کجاست؟ پیدایش نمی‌کنم. | d: er, ihm, sein
+Die Kinder fragen [uns]. | بچه‌ها از ما می‌پرسند. | d: wir, unser, unsere
+Kannst du [uns] hören? | صدای ما را می‌شنوی؟ | d: wir, unser, unsere
+Besuchst du [uns] morgen? | فردا به دیدن ما می‌آیی؟ | d: wir, unser, unsere
+Wir besuchen [euch] am Wochenende. | آخر هفته به دیدنتان می‌آییم. | d: ihr, euer, eure | full: Am Wochenende besuchen wir euch.
+Wir laden [euch] ein. | ما شما را دعوت می‌کنیم. | d: ihr, euer, eure
+Ich sehe [euch] morgen. | فردا شما را می‌بینم. | d: ihr, euer, eure | full: Morgen sehe ich euch.
+Ich verstehe [Sie] nicht. | حرف شما را نمی‌فهمم. | d: Ihnen, Ihr, Ihre
+Wir rufen [Sie] morgen an. | ما فردا به شما زنگ می‌زنیم. | d: Ihnen, Ihr, Ihre | full: Morgen rufen wir Sie an.
+Ich lade [Sie] ein. | من شما را دعوت می‌کنم. | d: Ihnen, Ihr, Ihre
+Siehst du [mich]? – Ja, ich sehe [dich]. | مرا می‌بینی؟ – بله، تو را می‌بینم. | d: ich, mir, mein / du, dir, dein
+Ich besuche [dich] und du besuchst [mich]. | من به دیدنت می‌آیم و تو به دیدنم می‌آیی. | d: du, dir, dein / ich, mir, mein | full: Du besuchst mich und ich besuche dich.
+Wo sind Max und Lena? Ich sehe [ihn], aber ich sehe [sie] nicht. | ماکس و لنا کجا هستند؟ ماکس را می‌بینم، ولی لنا را نمی‌بینم. | d: er, ihm, sein / ihr, ihre, er
+Kennt ihr [uns]? – Ja, wir kennen [euch]. | ما را می‌شناسید؟ – بله، شما را می‌شناسیم. | d: wir, unser, unsere / ihr, euer, eure
+Der Tee ist für [dich] und der Kaffee ist für [mich]. | چای برای توست و قهوه برای من. | d: du, dir, dein / ich, mir, mein | full: Der Kaffee ist für mich und der Tee ist für dich.
+Frau Weber, hören Sie [mich]? – Ja, ich höre [Sie]. | خانم وبر، صدای مرا می‌شنوید؟ – بله، صدای شما را می‌شنوم. | d: ich, mir, mein / Ihnen, Ihr, Ihre
+transforms:
+Ich trinke den Kaffee. => Ich trinke ihn. | به‌جای den Kaffee ضمیر بگذار.
+Wir besuchen Anna. => Wir besuchen sie. | به‌جای Anna ضمیر بگذار.
+Max ruft Paul an. => Max ruft ihn an. | به‌جای Paul ضمیر بگذار.
+Ich lese das Buch. => Ich lese es. | به‌جای das Buch ضمیر بگذار.
+Du siehst mich. => Ich sehe dich. | جای «من» و «تو» را عوض کن.
+Anna besucht Max und mich. => Anna besucht uns. | به‌جای «Max und mich» یک ضمیر بگذار.
+translations:
+دوستت دارم. => Ich liebe dich.
+فردا به تو زنگ می‌زنم. => Ich rufe dich morgen an. ; Morgen rufe ich dich an.
+کتاب کجاست؟ آن را نمی‌بینم. => Wo ist das Buch? Ich sehe es nicht.
+آخر هفته به دیدنتان می‌آییم. (شما: جمع، خودمانی) => Wir besuchen euch am Wochenende. ; Am Wochenende besuchen wir euch.
+حرف شما را نمی‌فهمم. (مؤدبانه) => Ich verstehe Sie nicht.
