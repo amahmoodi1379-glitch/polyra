@@ -1,0 +1,76 @@
+code: fr-a1-faire
+title: faire: کردن، درست کردن و هوا
+scope: صرف بی‌قاعدهٔ faire در زمان حال؛ کارهای روزمره با faire (faire la cuisine، faire les courses، faire du sport، faire du vélo)، هوا با il fait (beau، chaud، froid) و سؤال Qu'est-ce que tu fais ? ؛ du و de la به‌تنهایی در درس «بعضی، کمی» می‌آیند.
+can_do: حالا می‌توانی از کارهای روزانه‌ات بگویی، بپرسی دیگران چه می‌کنند و از هوا حرف بزنی: Je fais les courses. Il fait beau.
+rule: faire: je fais، tu fais، il fait، nous faisons، vous faites، ils font. برای هوا: il fait + beau، chaud، froid.
+mistake: فارسی‌زبان‌ها از روی nous faisons می‌سازند «vous faisez» و «ils faisent»؛ درست: vous faites، ils font. برای هوا هم از روی «هوا سرد است» می‌گویند «le temps est froid»؛ درست: il fait froid.
+tables: présent | faire
+lesson:
+faire یعنی «کردن» و «درست کردن» و بی‌قاعده است: je fais، tu fais، il fait، nous faisons، vous faites، ils font.
+خیلی از کارهای روزمره با faire گفته می‌شوند: faire la cuisine (آشپزی کردن)، faire les courses (خرید کردن)، faire du sport (ورزش کردن)، faire du vélo (دوچرخه‌سواری کردن).
+برای هوا هم faire می‌آید، همیشه با il: Il fait beau (هوا خوب است)، Il fait froid، Il fait chaud.
+سؤال پرکاربرد: Qu'est-ce que tu fais ? یا Tu fais quoi ? (چه کار می‌کنی؟)
+vous faites و ils font را به خاطر بسپار؛ «vous faisez» و «ils faisent» وجود ندارند.
+در جملهٔ منفی، du بعد از pas می‌شود de: Je ne fais pas de sport.
+table:
+ضمیر | faire
+je | fais
+tu | fais
+il، elle، on | fait
+nous | faisons
+vous | faites
+ils، elles | font
+examples:
+Qu'est-ce que tu fais ? | چه کار می‌کنی؟
+Nous faisons les courses. | ما خرید می‌کنیم.
+Vous faites du sport ? | ورزش می‌کنید؟
+Il fait beau aujourd'hui. | امروز هوا خوب است.
+targets:
+Je [fais] la cuisine. | آشپزی می‌کنم. | d: fait, faisons, font | hint: (faire)
+Qu'est-ce que tu [fais] ? | چه کار می‌کنی؟ | d: fait, faites, font | hint: (faire)
+Paul [fait] du sport. | پل ورزش می‌کند. | d: fais, faites, font
+Nous [faisons] les courses. | ما خرید می‌کنیم. | d: faites, font, fait | hint: (faire)
+Vous [faites] du vélo ? | دوچرخه‌سواری می‌کنید؟ | d: faisez, faisons, font
+Ils [font] la cuisine ensemble. | آن‌ها با هم آشپزی می‌کنند. | d: faisent, fait, faites | hint: (faire)
+Il [fait] beau aujourd'hui. | امروز هوا خوب است. | d: fais, font, faites | hint: (faire)
+Il [fait] froid. | هوا سرد است. | d: fais, font, faites
+Il [fait] chaud à Téhéran. | در تهران هوا گرم است. | d: fais, font, faites
+Tu [fais] quoi ce soir ? | امشب چه کار می‌کنی؟ | d: fait, faites, font | hint: (faire)
+Elle [fait] un gâteau. | او (زن) کیک درست می‌کند. | d: fais, faites, font | hint: (faire)
+Les enfants [font] du vélo dans le parc. | بچه‌ها در پارک دوچرخه‌سواری می‌کنند. | d: faisent, fait, faites
+Vous [faites] quoi dans la vie ? | شما چه کاره‌اید؟ | d: faisez, faisons, font | hint: (faire)
+Nous ne [faisons] pas de sport. | ما ورزش نمی‌کنیم. | d: faites, font, fait
+On [fait] les courses au supermarché. | از سوپرمارکت خرید می‌کنیم. | d: fais, faisons, font | hint: (faire)
+Je ne [fais] pas la cuisine. | آشپزی نمی‌کنم. | d: fait, faisons, font
+Qu'est-ce que vous [faites] le week-end ? | آخر هفته چه کار می‌کنید؟ | d: faisez, faisons, font | hint: (faire)
+Marie et Paul [font] un voyage. | ماری و پل به سفر می‌روند. | d: faisent, fait, faites
+Je vais [faire] les courses. | قرار است خرید کنم. | d: fais, fait, faites | hint: (faire)
+Tu peux [faire] la cuisine ? | می‌توانی آشپزی کنی؟ | d: fais, fait, faites
+Aujourd'hui, il [fait] très froid. | امروز هوا خیلی سرد است. | d: fais, font, faites | hint: (faire)
+En été, il [fait] chaud. | تابستان هوا گرم است. | d: fais, font, faites
+Ils ne [font] pas de vélo. | آن‌ها دوچرخه‌سواری نمی‌کنند. | d: faisent, fait, faites | hint: (faire)
+Tu [fais] du sport ? | ورزش می‌کنی؟ | d: fait, faites, font
+Je [fais] un gâteau pour Marie. | برای ماری کیک درست می‌کنم. | d: fait, faisons, font | hint: (faire)
+Mon père [fait] la cuisine. | پدرم آشپزی می‌کند. | d: fais, faites, font
+Vous [faites] les courses où ? | کجا خرید می‌کنید؟ | d: faisez, faisons, font
+Nous [faisons] un gâteau ensemble. | با هم کیک درست می‌کنیم. | d: faites, font, faisont | hint: (faire)
+Qu'est-ce qu'il [fait] ? | او چه کار می‌کند؟ | d: fais, faites, font
+Elles [font] du sport le matin. | آن‌ها صبح‌ها ورزش می‌کنند. | d: faisent, fait, faites | hint: (faire)
+Je [fais] la cuisine et tu [fais] les courses. | من آشپزی می‌کنم و تو خرید می‌کنی. | d: fait, faisons, font / fait, faites, font | full: Tu fais les courses et je fais la cuisine.
+Il [fait] beau, alors nous [faisons] du vélo. | هوا خوب است، پس دوچرخه‌سواری می‌کنیم. | d: fais, font, faites / faites, font, fait
+Qu'est-ce que vous [faites] ? Nous [faisons] un gâteau. | چه کار می‌کنید؟ کیک درست می‌کنیم. | d: faisez, faisons, font / faites, font, fait
+Il [fait] froid, mais les enfants [font] du sport. | هوا سرد است، ولی بچه‌ها ورزش می‌کنند. | d: fais, font, faites / faisent, fait, faites
+Tu [fais] quoi ? Je [fais] les courses. | چه کار می‌کنی؟ خرید می‌کنم. | d: fait, faites, font / fait, faisons, font
+Paul ne [fait] pas la cuisine, il [fait] les courses. | پل آشپزی نمی‌کند، خرید می‌کند. | d: fais, faites, font / fais, faites, font
+transforms:
+Je fais la cuisine. => Nous faisons la cuisine. | جمله را با nous بنویس.
+Tu fais du sport. => Vous faites du sport. | جمله را با vous بنویس.
+Il fait les courses. => Ils font les courses. | جمله را با ils بنویس.
+Elle fait du vélo. => Elle ne fait pas de vélo. | جمله را منفی کن.
+Je fais la cuisine. => Je vais faire la cuisine. | جمله را با aller + مصدر بنویس.
+translations:
+چه کار می‌کنی؟ => Qu'est-ce que tu fais ? ; Tu fais quoi ?
+امروز هوا خوب است. => Il fait beau aujourd'hui. ; Aujourd'hui, il fait beau.
+ما ورزش نمی‌کنیم. => Nous ne faisons pas de sport. ; On ne fait pas de sport.
+آن‌ها با هم آشپزی می‌کنند. => Ils font la cuisine ensemble. ; Elles font la cuisine ensemble.
+هوا سرد است. => Il fait froid.

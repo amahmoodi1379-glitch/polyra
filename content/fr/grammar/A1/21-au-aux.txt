@@ -1,0 +1,77 @@
+code: fr-a1-au-aux
+title: au و aux: à + le و à + les
+scope: à + le = au و à + les = aux (au cinéma، aux enfants) در برابر à la و à l' که عوض نمی‌شوند؛ à تنها قبل از اسم شهر؛ au در طعم و ورزش (une glace au chocolat، jouer au football). de + le = du در درس «جای چیزها» و au یا en با اسم کشور در درس «شهرها و کشورها» می‌آید.
+can_do: حالا می‌توانی بگویی کجا می‌روی و کجا هستی: Je vais au cinéma. Les enfants sont à l'école.
+rule: à + le → au، à + les → aux؛ à la و à l' همان می‌مانند و قبل از اسم شهر فقط à می‌آید.
+mistake: فارسی «به» و «در» را جلوی هر اسمی بی‌تغییر می‌گذارد، برای همین فارسی‌زبان‌ها می‌نویسند «à le cinéma» یا «à les enfants»؛ درست: au cinéma، aux enfants. «au plage» هم غلط است، چون plage مؤنث است: à la plage.
+lesson:
+à یعنی «به» یا «در»: Je vais à Paris. J'habite à Lyon.
+وقتی بعد از à حرف تعریف le یا les بیاید، با هم یک کلمه می‌شوند: à + le = au، à + les = aux.
+پس Je vais au cinéma (نه à le cinéma) و Je parle aux enfants (نه à les enfants).
+à la و à l' عوض نمی‌شوند: à la plage، à l'école، à l'hôpital.
+اسم شهر حرف تعریف ندارد، پس فقط à: à Paris، à Téhéran.
+همین au در طعم غذا و اسم ورزش هم می‌آید: une glace au chocolat، jouer au football.
+table:
+ | حرف تعریف | با à
+مذکر | le cinéma | au cinéma
+مؤنث | la plage | à la plage
+صدادار | l'école | à l'école
+جمع | les enfants | aux enfants
+sets:
+au: cinéma, restaurant, marché, parc, bureau, musée
+à la: plage, banque, gare, piscine, poste, boulangerie
+à l': école, hôpital, hôtel, aéroport
+examples:
+Je vais au cinéma. | به سینما می‌روم.
+Nous allons à la plage. | به ساحل می‌رویم.
+Les enfants sont à l'école. | بچه‌ها در مدرسه هستند.
+Je parle aux enfants. | با بچه‌ها حرف می‌زنم.
+targets:
+Je vais [au] cinéma. | به سینما می‌روم. | d: à le, à la, aux | hint: (à + le)
+Paul est [au] restaurant. | پل در رستوران است. | d: à le, à la, aux
+Nous allons [à la] plage. | به ساحل می‌رویم. | d: au, aux, à l' | hint: (à + la)
+Elle travaille [à l']hôpital. | او (زن) در بیمارستان کار می‌کند. | d: au, à la, à le | hint: (à + le)
+Les enfants sont [à l']école. | بچه‌ها در مدرسه هستند. | d: au, à la, aux
+Je parle [aux] enfants. | با بچه‌ها حرف می‌زنم. | d: à les, au, à l' | hint: (à + les)
+On va [au] marché ? | به بازار برویم؟ | d: à le, à la, aux
+Tu vas [à la] banque ? | به بانک می‌روی؟ | d: au, aux, à l' | hint: (à + la)
+Il est [au] bureau. | او (مرد) در دفترش است. | d: à le, à la, aux
+Je joue [au] football. | فوتبال بازی می‌کنم. | d: à le, à la, aux | hint: (à + le)
+Elle mange [à la] maison. | او (زن) در خانه غذا می‌خورد. | d: au, aux, à l'
+Vous allez [à l']aéroport ? | به فرودگاه می‌روید؟ | d: au, à la, à le | hint: (à + le)
+Je donne les livres [aux] élèves. | کتاب‌ها را به شاگردها می‌دهم. | d: à les, au, à la
+Il va [à la] poste. | او (مرد) به اداره پست می‌رود. | d: au, aux, à l'
+Nous sommes [au] parc. | ما در پارک هستیم. | d: à le, à la, aux | hint: (à + le)
+Je vais [aux] toilettes. | به دستشویی می‌روم. | d: à les, au, à la | hint: (à + les)
+Un café [au] lait, s'il vous plaît. | یک شیرقهوه، لطفاً. | d: à le, à la, aux
+Je voudrais une glace [au] chocolat. | یک بستنی شکلاتی می‌خواهم. | d: à le, à la, aux | hint: (à + le)
+C'est un sandwich [au] fromage. | این ساندویچ پنیر است. | d: à le, à la, aux
+Tu vas [à la] gare ? | به ایستگاه قطار می‌روی؟ | d: au, aux, à l' | hint: (à + la)
+Paul habite [à] Paris. | پل در پاریس زندگی می‌کند. | d: au, à la, aux | hint: (à)
+On va [au] café ensemble ? | با هم به کافه برویم؟ | d: à le, à la, aux
+Ils vont [à la] piscine. | آن‌ها به استخر می‌روند. | d: au, aux, à l'
+Elle est [à l']hôtel. | او (زن) در هتل است. | d: au, à la, à le | hint: (à + le)
+Je pense [aux] vacances. | به تعطیلات فکر می‌کنم. | d: à les, au, à la
+Nous allons [au] musée. | به موزه می‌رویم. | d: à le, à la, aux | hint: (à + le)
+Je vais [à la] boulangerie. | به نانوایی می‌روم. | d: au, aux, à l'
+Les élèves sont [à la] bibliothèque. | شاگردها در کتابخانه هستند. | d: au, aux, à l' | hint: (à + la)
+Il parle [au] serveur. | او با پیشخدمت حرف می‌زند. | d: à le, à la, aux
+[Au] printemps, je vais à Paris. | بهار به پاریس می‌روم. | d: À le, À la, Aux | hint: (à + le) | full: Je vais à Paris au printemps.
+Je vais [au] cinéma et Marie va [à la] piscine. | من به سینما می‌روم و ماری به استخر. | d: à le, à la, aux / au, aux, à l' | full: Marie va à la piscine et je vais au cinéma.
+Le matin, je suis [à l']école et le soir, je suis [au] travail. | صبح در مدرسه‌ام و عصر سر کار. | d: au, à la, à le / à le, à la, aux
+Je parle [au] serveur et [aux] enfants. | با پیشخدمت و بچه‌ها حرف می‌زنم. | d: à le, à la, aux / à les, au, à la | full: Je parle aux enfants et au serveur.
+On va [au] marché ou [à la] boulangerie ? | به بازار برویم یا نانوایی؟ | d: à le, à la, aux / au, aux, à l' | full: On va à la boulangerie ou au marché ?
+Paul habite [à] Lyon et il travaille [à l']hôpital. | پل در لیون زندگی می‌کند و در بیمارستان کار می‌کند. | d: au, à la, aux / au, à la, à le
+Je voudrais un café [au] lait et une glace [au] chocolat. | یک شیرقهوه و یک بستنی شکلاتی می‌خواهم. | d: à le, à la, aux / à le, à la, aux | full: Je voudrais une glace au chocolat et un café au lait.
+transforms:
+Je vais à la banque. => Je vais au cinéma. | به‌جای banque بنویس cinéma.
+Elle est à la maison. => Elle est à l'hôpital. | به‌جای maison بنویس hôpital.
+Je parle à l'enfant. => Je parle aux enfants. | «بچه» را جمع کن.
+Nous allons au marché. => Nous allons à la gare. | به‌جای marché بنویس gare.
+Il parle au serveur. => Il parle aux serveurs. | «پیشخدمت» را جمع کن.
+translations:
+به سینما می‌روم. => Je vais au cinéma.
+بچه‌ها در مدرسه هستند. => Les enfants sont à l'école.
+با بچه‌ها حرف می‌زنم. => Je parle aux enfants.
+یک شیرقهوه، لطفاً. => Un café au lait, s'il vous plaît. ; Un café au lait, s'il te plaît.
+او (زن) در بیمارستان کار می‌کند. => Elle travaille à l'hôpital.
