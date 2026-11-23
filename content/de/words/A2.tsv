@@ -1,0 +1,1070 @@
+lemma	pos	gender	plural	meaning_fa	concept_fa	topic
+# German A2, in teaching order. Every A1 word counts as known.
+# no_card: dass (the conjunction), the reflexive pronoun sich, the contraction ans
+dass	conj			که (حرف ربط)	dass: که	function	no_card:1	note:dass (حرف ربط «که») را با das (حرف تعریف) اشتباه نکن.
+sich	pron			خود، خودش (ضمیر انعکاسی)	sich: ضمیر انعکاسی	function	no_card:1
+ans	prep			به کنارِ، به	ans: به کنار	function	no_card:1	note:ans همان an das است.
+
+# first: the words A2 sentences need (werden, subordinate clauses with weil, wenn, ob, comparison, connectors)
+werden	verb			شدن	شدن	function
+tun	verb			کردن، انجام دادن	tun: کردن	actions
+sollen	verb			باید (به خواست دیگری)	باید (به خواست دیگری)	function	note:müssen یعنی «مجبور بودن»؛ sollen یعنی کسی دیگر خواسته یا توصیه کرده: Der Arzt sagt, ich soll viel trinken.
+lassen	verb			گذاشتن، اجازه دادن، رها کردن	گذاشتن	actions
+weil	conj			چون، چون که	چون	function	note:بعد از weil فعل به آخر جمله می‌رود: …, weil ich müde bin.
+denn	conj			چون، زیرا	چون	function	note:denn هم «چون» است ولی ترتیب جمله را عوض نمی‌کند: …, denn ich bin müde.
+wenn	conj			اگر، هر وقت که	اگر	function
+ob	conj			آیا، که آیا	ob: آیا	function	note:در سؤال غیرمستقیم بدون کلمه پرسشی ob می‌آید: Ich weiß nicht, ob er kommt.
+als	conj			از (در مقایسه)	als: از (مقایسه)	function	note:größer als ich یعنی «بزرگ‌تر از من»؛ اینجا von نمی‌آید.
+als	conj			وقتی که (یک بار در گذشته)	als: وقتی (در گذشته)	function	code:als-2	sense_of:als	note:برای یک اتفاق در گذشته als می‌آید (Als ich klein war…)؛ برای کار تکراری یا آینده wenn.
+besser	adj			بهتر	بهتر	qualities	note:حالت برتر صفت gut است: gut، besser، am besten
+lieber	adv			ترجیحاً، بیشتر (دوست داشتن)	ترجیحاً	function	note:حالت برتر gern است و برای ترجیح دادن به کار می‌رود: gern، lieber، am liebsten
+am liebsten	adv			از همه بیشتر (دوست داشتن)	از همه بیشتر	function
+am besten	adv			از همه بهتر، بهترین کار این است	از همه بهتر	qualities
+also	adv			پس، بنابراین	پس (نتیجه)	function	note:also یعنی «پس»، نه «همچنین»؛ «همچنین» می‌شود auch.
+deshalb	adv			برای همین، به همین دلیل	برای همین	function
+trotzdem	adv			با این حال، باز هم	با این حال	function
+sondern	conj			بلکه	بلکه	function
+außerdem	adv			علاوه بر این، به‌علاوه	علاوه بر این	function
+zuerst	adv			اول، اولش	اول کار	time
+danach	adv			بعد از آن، بعدش	بعد از آن	time
+vorher	adv			قبلش، پیش از آن	پیش از آن	time
+mal	adv			یک لحظه، (نرم‌کننده درخواست)	mal: نرم‌کننده درخواست	function	note:mal درخواست را نرم می‌کند و ترجمه دقیق ندارد: Komm mal her!
+wirklich	adv			واقعاً، راستی راستی	واقعاً	qualities
+ganz	adv			کاملاً، خیلی	کاملاً	qualities	code:ganz-adv
+ganz	adj			تمام، کلِ	تمام	qualities
+genau	adj			دقیق، درست	دقیق	qualities	note:در گفتگو Genau! یعنی «دقیقاً! درسته!».
+sicher	adj			مطمئن	مطمئن	feelings
+sicher	adj			امن، بی‌خطر	امن	qualities	code:sicher-2	sense_of:sicher
+gerade	adv			همین حالا، الان (در حالِ)	همین حالا	time
+eigentlich	adv			در اصل، راستش	در اصل	function
+bestimmt	adv			حتماً، مطمئناً	حتماً	function
+wahrscheinlich	adv			احتمالاً	احتمالاً	function
+hoffentlich	adv			امیدوارم که، خدا کند	امیدوارم که	function
+selbst	adv			خود (خودم، خودت…)، شخصاً	selbst: خود	function
+selber	adv			خود (خودم، خودت…)	selbst: خود	function	register:familier
+jemand	pron			کسی، یک نفر	کسی	function
+niemand	pron			هیچ‌کس	هیچ‌کس	function
+andere	adj			دیگر، دیگری	دیگر	qualities
+beide	pron			هر دو	هر دو	function
+einige	det			چند، چندتایی	چند	numbers
+ein paar	det			چند تا، چندتایی	چند	numbers	note:ein paar (با p کوچک) یعنی «چند تا»؛ ein Paar (با P بزرگ) یعنی «یک جفت».
+ein bisschen	adv			یک کم، کمی	یک کم	numbers
+fast	adv			تقریباً، کم مانده	تقریباً	numbers
+ungefähr	adv			حدوداً، حدودِ	حدوداً	numbers
+genug	adv			کافی، به اندازه کافی	کافی	numbers
+ziemlich	adv			نسبتاً، تقریباً خیلی	نسبتاً	qualities
+sogar	adv			حتی	حتی	function
+erst	adv			تازه، تنها (نه زودتر)	تازه (نه زودتر)	time	note:erst um acht یعنی «تازه ساعت هشت» (دیرتر از انتظار)؛ nur برای مقدار است.
+gar nicht	adv			اصلاً (نه)، به هیچ وجه	اصلاً	function
+was für ein	det			چه جور، چه نوع	چه جور	function
+sonst	adv			وگرنه، غیر از این	وگرنه	function	note:Sonst noch etwas? یعنی «چیز دیگری هم می‌خواهید؟»
+wieso	adv			چرا، برای چه	چرا	function
+wie lange	adv			چه مدت، چقدر (زمان)	چه مدت	time
+wie oft	adv			چند وقت یک بار، چند بار	چند بار	time
+seit	prep			از (زمانی تا حالا)	seit: از (زمان)	time	note:seit برای کاری است که هنوز ادامه دارد: Ich wohne seit zwei Jahren hier.
+ab	prep			از (… به بعد)	ab: از … به بعد	time
+wegen	prep			به خاطرِ، به دلیلِ	به خاطر	function
+durch	prep			از میانِ، از وسطِ	از میان	space
+gegen	prep			علیهِ، در برابرِ	علیه	function
+außer	prep			به‌جز، غیر از	به جز	function
+pro	prep			برای هر، به ازای هر	به ازای هر	function
+gegenüber	prep			روبه‌رویِ	روبه‌رو	space
+oben	adv			بالا	بالا	space
+unten	adv			پایین	پایین	space
+vorne	adv			جلو	جلو (جا)	space
+hinten	adv			عقب، پشت	عقب	space
+draußen	adv			بیرون (در فضای باز)	بیرون	space
+drinnen	adv			داخل، تو	داخل	space
+überall	adv			همه‌جا	همه‌جا	space
+weg	adv			رفته، دور (دیگر اینجا نیست)	weg: رفته	space
+zurück	adv			برگشته، به عقب	برگشت	space
+vorbei	adv			گذشته، تمام‌شده	تمام‌شده	time	note:Der Sommer ist vorbei. یعنی «تابستان تمام شد».
+unterwegs	adv			در راه، در سفر	در راه	space
+
+# time: the words narrating in the past and planning need
+letzte	adj			آخرین، گذشته (هفته گذشته)	آخرین	time
+nächste	adj			بعدی، آینده (هفته آینده)	بعدی	time
+früher	adv			قبلاً، در گذشته	در گذشته	time	note:früher با «زودتر» هم معنی دارد، ولی اینجا یعنی «قدیم‌ها»: Früher habe ich in Teheran gewohnt.
+damals	adv			آن وقت‌ها، در آن زمان	آن زمان	time
+endlich	adv			بالاخره، سرانجام	بالاخره	time
+plötzlich	adv			ناگهان، یک‌دفعه	ناگهان	time
+sofort	adv			فوراً، همین الان	فوراً	time
+selten	adv			به‌ندرت، کم	به ندرت	time
+meistens	adv			بیشتر وقت‌ها، معمولاً	بیشتر وقت‌ها	time
+normalerweise	adv			معمولاً، به‌طور عادی	معمولاً	time
+täglich	adj			روزانه، هر روز	روزانه	time
+morgens	adv			صبح‌ها	صبح‌ها	time
+mittags	adv			ظهرها	ظهرها	time	checked:level
+nachmittags	adv			بعدازظهرها	بعدازظهرها	time	checked:level
+abends	adv			عصرها، شب‌ها	عصرها	time
+nachts	adv			شب‌ها (نیمه‌شب)	شب‌ها	time
+übermorgen	adv			پس‌فردا	پس‌فردا	time
+vorgestern	adv			پریروز	پریروز	time	checked:level
+pünktlich	adj			سر وقت، وقت‌شناس	سر وقت	time
+Anfang	noun	der	Anfänge	شروع، اول (ماه، کار)	شروع	time
+Ende	noun	das	Enden	پایان، آخر	پایان	time
+Mitte	noun	die		وسط، اواسط	وسط	space	number:sg_only
+Zukunft	noun	die		آینده	آینده	time	number:sg_only
+Jahrhundert	noun	das	Jahrhunderte	قرن، سده	قرن	time
+Sekunde	noun	die	Sekunden	ثانیه	ثانیه	time
+Augenblick	noun	der	Augenblicke	لحظه، آن	لحظه	time
+sich Zeit nehmen	phrase			وقت گذاشتن	وقت گذاشتن	time	parts:Zeit nehmen
+Kalender	noun	der	Kalender	تقویم	تقویم	time
+Feiertag	noun	der	Feiertage	روز تعطیل رسمی	تعطیل رسمی	time	checked:level
+Silvester	noun	das	Silvester	شب سال نو (۳۱ دسامبر)	شب سال نو	time	checked:level
+Neujahr	noun	das		روز اول سال نو	سال نو	time	number:sg_only	checked:level
+Weihnachten	noun	das	Weihnachten	کریسمس	کریسمس	time
+Fest	noun	das	Feste	جشن	جشن	time
+feiern	verb			جشن گرفتن	جشن گرفتن	leisure
+Geburtstag feiern	phrase			تولد گرفتن	تولد گرفتن	leisure	parts:Geburtstag feiern
+eine Party machen	phrase			مهمانی گرفتن	مهمانی گرفتن	leisure	parts:Party machen
+Weihnachten feiern	phrase			کریسمس را جشن گرفتن	جشن کریسمس	time	parts:Weihnachten feiern
+
+# everyday verbs: saying, thinking, trying
+erzählen	verb			تعریف کردن (ماجرا)	تعریف کردن	actions
+erklären	verb			توضیح دادن	توضیح دادن	actions
+beschreiben	verb			توصیف کردن، شرح دادن	توصیف کردن	actions
+reden	verb			حرف زدن، گپ زدن	حرف زدن	actions
+sich unterhalten	verb			گفتگو کردن، گپ زدن	گفتگو کردن	actions
+rufen	verb			صدا زدن، داد زدن	صدا زدن	actions
+bitten	verb			خواهش کردن، درخواست کردن	خواهش کردن	actions	note:bitten um یعنی «خواستن چیزی از کسی»: Ich bitte dich um Hilfe.
+danken	verb			تشکر کردن	تشکر کردن	actions
+sich bedanken	verb			تشکر کردن (از کسی)	تشکر کردن	actions
+sich entschuldigen	verb			عذرخواهی کردن	عذرخواهی کردن	actions
+entschuldigen	verb			بخشیدن (اشتباه کسی)	بخشیدن	actions
+grüßen	verb			سلام کردن، سلام رساندن	سلام کردن	actions
+beantworten	verb			جواب دادن (به سؤال یا نامه)	جواب دادن	actions
+eine Frage beantworten	phrase			به سؤال جواب دادن	جواب دادن به سؤال	education	parts:Frage beantworten
+meinen	verb			منظور داشتن، عقیده داشتن	منظور داشتن	actions
+hoffen	verb			امید داشتن، امیدوار بودن	امید داشتن	feelings
+wünschen	verb			آرزو کردن، خواستن	آرزو کردن	feelings
+Glück wünschen	phrase			آرزوی موفقیت کردن	آرزوی موفقیت کردن	feelings	parts:Glück wünschen
+sich erinnern	verb			به یاد آوردن، یادآوری کردن	به یاد آوردن	actions
+vergessen	verb			فراموش کردن، یادِ کسی رفتن	فراموش کردن	actions
+überlegen	verb			فکر کردن (برای تصمیم)، سنجیدن	سنجیدن	actions
+versuchen	verb			سعی کردن، امتحان کردن	سعی کردن	actions
+probieren	verb			امتحان کردن، چشیدن	امتحان کردن	actions
+schaffen	verb			از پسِ کاری برآمدن، تمام کردن	از پس کاری برآمدن	actions
+passieren	verb			اتفاق افتادن	اتفاق افتادن	actions
+bedeuten	verb			معنی داشتن	معنی داشتن	actions
+gehören	verb			مال کسی بودن، تعلق داشتن	مال کسی بودن	actions
+passen	verb			اندازه بودن، جور بودن	جور بودن	actions
+fehlen	verb			کم بودن، غایب بودن	کم بودن	actions
+ändern	verb			تغییر دادن، عوض کردن	تغییر دادن	actions
+benutzen	verb			استفاده کردن	استفاده کردن	actions
+funktionieren	verb			کار کردن (دستگاه)	کار کردن دستگاه	actions
+reparieren	verb			تعمیر کردن	تعمیر کردن	actions
+stellen	verb			(ایستاده) گذاشتن	ایستاده گذاشتن	actions	note:stellen چیزی را ایستاده می‌گذارد (Flasche)، legen خوابیده (Buch)، hängen آویزان.
+legen	verb			(خوابیده) گذاشتن	خوابیده گذاشتن	actions
+setzen	verb			نشاندن، گذاشتن	نشاندن	actions
+sich setzen	verb			نشستن (رفتن و نشستن)	نشستن (حرکت)	actions	note:sitzen یعنی «نشسته بودن»؛ sich setzen یعنی «نشستن» (حرکت).
+hängen	verb			آویزان بودن، آویزان کردن	آویزان کردن	actions
+stecken	verb			فرو کردن، گذاشتن (توی چیزی)	فرو کردن	actions
+halten	verb			نگه داشتن، ایستادن (وسیله نقلیه)	نگه داشتن	actions
+ziehen	verb			کشیدن	کشیدن	actions
+drücken	verb			فشار دادن، هل دادن	فشار دادن	actions
+fallen	verb			افتادن	افتادن	actions
+werfen	verb			پرت کردن، انداختن	پرت کردن	actions
+lachen	verb			خندیدن	خندیدن	feelings
+weinen	verb			گریه کردن	گریه کردن	feelings
+lächeln	verb			لبخند زدن	لبخند زدن	feelings
+gewinnen	verb			بردن، برنده شدن	بردن (مسابقه)	leisure
+verlieren	verb			گم کردن، باختن	گم کردن	actions
+mitbringen	verb			(با خود) آوردن	با خود آوردن	actions
+schenken	verb			هدیه دادن	هدیه دادن	actions
+gratulieren	verb			تبریک گفتن	تبریک گفتن	actions
+vorstellen	verb			معرفی کردن	معرفی کردن	people
+sich vorstellen	verb			خود را معرفی کردن	خود را معرفی کردن	people
+begrüßen	verb			خوش‌آمد گفتن، سلام و احوالپرسی کردن	خوش‌آمد گفتن	people
+die Hand geben	phrase			دست دادن	دست دادن	people	parts:Hand geben
+sich verabschieden	verb			خداحافظی کردن	خداحافظی کردن	people
+schauen	verb			نگاه کردن	نگاه کردن	actions
+ansehen	verb			نگاه کردن به، تماشا کردن	تماشا کردن	actions
+gucken	verb			نگاه کردن	نگاه کردن	actions	register:familier
+zuhören	verb			گوش دادن، گوش کردن	گوش دادن	actions
+riechen	verb			بو دادن، بو کشیدن	بو کردن	actions
+kriegen	verb			گرفتن، دریافت کردن	دریافت کردن	actions	register:familier
+aufmachen	verb			باز کردن	باز کردن	actions
+zumachen	verb			بستن	بستن	actions	checked:level
+abschließen	verb			قفل کردن	قفل کردن	home
+die Tür abschließen	phrase			در را قفل کردن	قفل کردن در	home	parts:Tür abschließen
+bauen	verb			ساختن	ساختن	actions
+brennen	verb			سوختن، روشن بودن (آتش)	سوختن	actions
+kontrollieren	verb			کنترل کردن، بازرسی کردن	کنترل کردن	actions
+planen	verb			برنامه‌ریزی کردن	برنامه‌ریزی کردن	actions
+vorbereiten	verb			آماده کردن	آماده کردن	actions
+abgeben	verb			تحویل دادن	تحویل دادن	actions
+ausleihen	verb			امانت گرفتن (کتاب)، قرض گرفتن	امانت گرفتن	actions
+springen	verb			پریدن	پریدن	actions
+mitnehmen	verb			(با خود) بردن	با خود بردن	actions
+abholen	verb			رفتن دنبالِ، تحویل گرفتن	رفتن دنبال کسی	actions
+zurückkommen	verb			برگشتن	برگشتن	actions
+nach Hause kommen	phrase			به خانه آمدن، به خانه رسیدن	به خانه آمدن	actions	parts:kommen
+zurückgeben	verb			پس دادن	پس دادن	actions
+weggehen	verb			رفتن، دور شدن	رفتن (از جایی)	actions
+vorbeikommen	verb			سر زدن، سری زدن	سر زدن	actions
+ausgehen	verb			بیرون رفتن (برای تفریح)	بیرون رفتن	leisure
+aufhören	verb			دست کشیدن، تمام شدن	دست کشیدن	actions
+aufpassen	verb			مراقب بودن، حواس جمع بودن	مراقب بودن	actions
+auf die Kinder aufpassen	phrase			مراقب بچه‌ها بودن	مراقبت از بچه	family	parts:Kind aufpassen
+sich beeilen	verb			عجله کردن	عجله کردن	actions
+sich freuen	verb			خوشحال شدن	خوشحال شدن	feelings	note:sich freuen auf یعنی «منتظرِ چیزِ خوبی در آینده بودن»؛ sich freuen über یعنی «از چیزی خوشحال بودن».
+sich ärgern	verb			عصبانی شدن، حرص خوردن	حرص خوردن	feelings
+sich interessieren	verb			علاقه داشتن (به)	علاقه داشتن	feelings	note:بعد از این فعل für می‌آید: Ich interessiere mich für Musik (به موسیقی علاقه دارم).
+sich fühlen	verb			احساس کردن (حال خود)	احساس کردن	feelings
+sich ausruhen	verb			استراحت کردن، خستگی در کردن	خستگی در کردن	actions
+Lust	noun	die		حوصله، میل	حوصله	feelings	number:sg_only
+Sorge	noun	die	Sorgen	نگرانی، غصه	نگرانی	feelings
+Pech	noun	das		بدشانسی	بدشانسی	feelings	number:sg_only
+Recht haben	phrase			حق داشتن، درست گفتن	حق داشتن	feelings	parts:haben
+Lust haben	phrase			حوصله داشتن، دلِ کسی خواستن	حوصله داشتن	feelings	parts:Lust haben
+Bescheid sagen	phrase			خبر دادن	خبر دادن	actions	parts:sagen
+sich Sorgen machen	phrase			نگران بودن، غصه خوردن	نگران بودن	feelings	parts:sich Sorge machen
+Glück haben	phrase			شانس آوردن	شانس آوردن	feelings	parts:Glück haben
+Pech haben	phrase			بدشانسی آوردن	بدشانسی آوردن	feelings	parts:Pech haben
+Bescheid wissen	phrase			در جریان بودن، خبر داشتن	در جریان بودن	actions	parts:wissen
+
+# people: looks, character, the people around us
+aussehen	verb			به نظر رسیدن، قیافه داشتن	به نظر رسیدن	people	note:Du siehst müde aus. یعنی «خسته به نظر می‌رسی».
+Gesicht	noun	das	Gesichter	صورت، چهره	صورت	body
+Körper	noun	der	Körper	بدن	بدن	body
+Brille	noun	die	Brillen	عینک	عینک	clothes
+Bart	noun	der	Bärte	ریش	ریش	body
+blond	adj			بور، طلایی (مو)	بور	people
+dunkel	adj			تیره، تاریک	تیره	colors
+hell	adj			روشن	روشن	colors
+dick	adj			چاق، کلفت	چاق	people
+dünn	adj			لاغر، نازک	لاغر	people
+schlank	adj			باریک‌اندام، لاغر	باریک‌اندام	people	checked:level
+hübsch	adj			قشنگ، خوشگل	قشنگ	people
+hässlich	adj			زشت	زشت	people
+stark	adj			قوی، پرزور	قوی	qualities
+schwach	adj			ضعیف	ضعیف	qualities
+lieb	adj			مهربان، عزیز	مهربان	character
+höflich	adj			مؤدب	مؤدب	character
+unhöflich	adj			بی‌ادب	بی‌ادب	character
+fleißig	adj			سخت‌کوش، زحمت‌کش	سخت‌کوش	character
+faul	adj			تنبل	تنبل	character
+klug	adj			باهوش، عاقل	باهوش	character
+dumm	adj			احمق، نادان	نادان	character
+ehrlich	adj			صادق، رو راست	صادق	character
+ernst	adj			جدی	جدی	character
+nervös	adj			عصبی، مضطرب	عصبی	feelings
+geduldig	adj			صبور	صبور	character
+ungeduldig	adj			بی‌صبر، کم‌حوصله	بی‌صبر	character	checked:level
+neugierig	adj			کنجکاو	کنجکاو	character
+sympathisch	adj			دوست‌داشتنی، خوش‌برخورد	خوش‌برخورد	character	checked:level
+böse	adj			بدجنس، عصبانی (از کسی)	بدجنس	character
+streng	adj			سخت‌گیر	سخت‌گیر	character
+still	adj			ساکت، آرام	ساکت	qualities
+laut	adj			بلند (صدا)، پرسروصدا	پرسروصدا	qualities
+leise	adj			آهسته (صدا)، بی‌صدا	آهسته (صدا)	qualities
+Nachbar	noun	der	Nachbarn	همسایه	همسایه	people
+Nachbarin	noun	die	Nachbarinnen	همسایه (زن)	همسایه زن	people
+Bekannte	noun	der	Bekannten	آشنا	آشنا	people	note:اسم صفتی: der Bekannte، ein Bekannter، die Bekannten؛ برای زن die Bekannte.	checked:gender
+Gast	noun	der	Gäste	مهمان	مهمان	people
+Erwachsene	noun	der	Erwachsenen	بزرگسال	بزرگسال	people	note:اسم صفتی: der Erwachsene، ein Erwachsener، die Erwachsenen.	checked:gender
+Jugendliche	noun	der	Jugendlichen	نوجوان، جوان	نوجوان	people	note:اسم صفتی: der Jugendliche، ein Jugendlicher، die Jugendlichen.	checked:gender,level
+Deutsche	noun	der	Deutschen	آلمانی (شخص)	آلمانی (شخص)	people	note:اسم صفتی: der Deutsche، ein Deutscher، die Deutschen؛ برای زن die Deutsche.	checked:gender
+Ausländer	noun	der	Ausländer	خارجی (شخص)	خارجی (شخص)	people
+Ausländerin	noun	die	Ausländerinnen	خارجی (زن)	خارجی زن	people
+Einwohner	noun	der	Einwohner	ساکن، اهالی	ساکن	people
+Heimat	noun	die		وطن، زادگاه	وطن	people	number:sg_only
+Herkunft	noun	die		اصل و نسب، خاستگاه	خاستگاه	people	number:sg_only
+Nationalität	noun	die	Nationalitäten	ملیت	ملیت	people
+fremd	adj			غریبه، ناآشنا	غریبه	people
+bekannt	adj			معروف، شناخته‌شده	شناخته‌شده	qualities
+berühmt	adj			مشهور، معروف	مشهور	qualities
+Kontakt	noun	der	Kontakte	ارتباط، تماس	ارتباط	people
+in Kontakt bleiben	phrase			در تماس ماندن	در تماس ماندن	people	parts:Kontakt bleiben
+Gruppe	noun	die	Gruppen	گروه	گروه	people
+Leben	noun	das	Leben	زندگی	زندگی	people
+Liebe	noun	die		محبت، دوست داشتن	محبت	feelings	number:sg_only
+
+# family and life events
+Ehemann	noun	der	Ehemänner	شوهر، همسر (مرد)	شوهر	family
+Ehefrau	noun	die	Ehefrauen	زن، همسر (زن)	همسر	family
+heiraten	verb			ازدواج کردن	ازدواج کردن	family
+Hochzeit	noun	die	Hochzeiten	عروسی	عروسی	family
+geschieden	adj			طلاق‌گرفته، جدا شده	طلاق‌گرفته	family
+Verwandte	noun	der	Verwandten	خویشاوند، فامیل	خویشاوند	family	note:اسم صفتی: der Verwandte، ein Verwandter، die Verwandten.	checked:gender
+Enkel	noun	der	Enkel	نوه	نوه	family
+Enkelin	noun	die	Enkelinnen	نوه (دختر)	نوه دختر	family
+Cousin	noun	der	Cousins	پسرعمو، پسرخاله، پسردایی	پسرعمو و پسرخاله	family
+Cousine	noun	die	Cousinen	دخترعمو، دخترخاله، دختردایی	دخترعمو و دخترخاله	family
+Neffe	noun	der	Neffen	برادرزاده، خواهرزاده (پسر)	برادرزاده	family
+Nichte	noun	die	Nichten	برادرزاده، خواهرزاده (دختر)	برادرزاده دختر	family
+Kindheit	noun	die		کودکی	کودکی	family	number:sg_only
+sterben	verb			مردن، درگذشتن	مردن	family
+tot	adj			مرده	مرده	family
+Tod	noun	der	Tode	مرگ	مرگ	family
+Geburt	noun	die	Geburten	به دنیا آمدن، تولد	به دنیا آمدن	family
+sich kümmern	verb			مراقبت کردن، رسیدگی کردن	مراقبت کردن	family	note:بعد از این فعل um می‌آید: Ich kümmere mich um meine Oma (از مادربزرگم مراقبت می‌کنم).
+
+# home: furniture, the building, moving, housework
+Möbel	noun	das	Möbel	مبلمان، اثاثیه	اثاثیه	home	note:بیشتر جمع به کار می‌رود: die Möbel.
+Regal	noun	das	Regale	قفسه	قفسه	home	checked:level
+Schreibtisch	noun	der	Schreibtische	میز تحریر	میز تحریر	home
+Sessel	noun	der	Sessel	مبل تک‌نفره	مبل تک‌نفره	home	checked:level
+Teppich	noun	der	Teppiche	فرش	فرش	home
+Spiegel	noun	der	Spiegel	آینه	آینه	home
+Decke	noun	die	Decken	پتو	پتو	home
+Decke	noun	die	Decken	سقف	سقف	home	code:Decke-2	sense_of:Decke
+Kissen	noun	das	Kissen	بالش، کوسن	بالش	home
+Wand	noun	die	Wände	دیوار	دیوار	home
+Boden	noun	der	Böden	کف (اتاق)، زمین	کف زمین	home
+Treppe	noun	die	Treppen	پله، راه‌پله	پله	home
+Aufzug	noun	der	Aufzüge	آسانسور	آسانسور	home
+Keller	noun	der	Keller	زیرزمین	زیرزمین	home
+Dach	noun	das	Dächer	سقف (بام)، پشت‌بام	بام	home
+Flur	noun	der	Flure	راهرو	راهرو	home
+Stock	noun	der		طبقه	طبقه	home	number:sg_only	note:im ersten Stock یعنی «در طبقه اول»؛ برای جمع Stockwerke (طبقه‌ها) می‌گویند.
+Erdgeschoss	noun	das	Erdgeschosse	طبقه همکف	همکف	home	checked:level
+Garage	noun	die	Garagen	پارکینگ خانه، گاراژ	گاراژ	home
+Heizung	noun	die	Heizungen	شوفاژ، گرمایش	شوفاژ	home	checked:level
+Herd	noun	der	Herde	اجاق گاز، اجاق	اجاق	home	checked:level
+Ofen	noun	der	Öfen	فر، بخاری	فر	home
+Mikrowelle	noun	die	Mikrowellen	مایکروویو	مایکروویو	home	checked:level
+Waschmaschine	noun	die	Waschmaschinen	ماشین لباس‌شویی	ماشین لباس‌شویی	home	checked:level
+Spülmaschine	noun	die	Spülmaschinen	ماشین ظرف‌شویی	ماشین ظرف‌شویی	home
+Badewanne	noun	die	Badewannen	وان حمام	وان	home
+Handtuch	noun	das	Handtücher	حوله	حوله	home
+Seife	noun	die	Seifen	صابون	صابون	home
+Zahnbürste	noun	die	Zahnbürsten	مسواک	مسواک	home	checked:level
+Zahnpasta	noun	die	Zahnpasten	خمیردندان	خمیردندان	home	checked:level
+Licht	noun	das	Lichter	نور، چراغ	نور	home
+Strom	noun	der		برق	برق	home	number:sg_only
+Müll	noun	der		زباله، آشغال	زباله	home	number:sg_only
+Mülleimer	noun	der	Mülleimer	سطل زباله	سطل زباله	home	checked:level
+einschalten	verb			روشن کردن (دستگاه)	روشن کردن	home
+ausschalten	verb			خاموش کردن (دستگاه)	خاموش کردن	home
+das Licht einschalten	phrase			چراغ را روشن کردن	روشن کردن چراغ	home	parts:Licht einschalten
+klingeln	verb			زنگ زدن (زنگ در)، زنگ خوردن	زنگ زدن در	home
+Klingel	noun	die	Klingeln	زنگ در	زنگ در	home	checked:level
+Haustür	noun	die	Haustüren	در ورودی خانه	در ورودی	home	checked:level
+Hof	noun	der	Höfe	حیاط	حیاط	home
+Kinderzimmer	noun	das	Kinderzimmer	اتاق بچه	اتاق بچه	home	checked:level
+mieten	verb			اجاره کردن	اجاره کردن	home
+ein Auto mieten	phrase			ماشین کرایه کردن	کرایه ماشین	transport	parts:Auto mieten
+vermieten	verb			اجاره دادن	اجاره دادن	home	checked:level
+Vermieter	noun	der	Vermieter	صاحب‌خانه	صاحب‌خانه	home	checked:level
+Mieter	noun	der	Mieter	مستأجر	مستأجر	home	checked:level
+Nebenkosten	noun	die		هزینه‌های جانبی (آب، برق، گرما)	هزینه جانبی	home	number:pl_only
+Quadratmeter	noun	der	Quadratmeter	متر مربع	متر مربع	numbers	checked:level
+umziehen	verb			اسباب‌کشی کردن	اسباب‌کشی کردن	home
+Umzug	noun	der	Umzüge	اسباب‌کشی	اسباب‌کشی	home	checked:level
+eine Wohnung mieten	phrase			آپارتمان اجاره کردن	اجاره آپارتمان	home	parts:Wohnung mieten
+einziehen	verb			(به خانه تازه) نقل مکان کردن	به خانه تازه رفتن	home
+ausziehen	verb			از خانه رفتن، خانه را خالی کردن	خانه را خالی کردن	home
+Hausmeister	noun	der	Hausmeister	سرایدار	سرایدار	home
+WG	noun	die	WGs	خانه مشترک (چند هم‌خانه)	خانه مشترک	home	note:کوتاه‌شده Wohngemeinschaft
+Haushalt	noun	der	Haushalte	کارهای خانه، خانه‌داری	خانه‌داری	home	checked:level
+aufräumen	verb			مرتب کردن، جمع و جور کردن	مرتب کردن	home
+die Wohnung aufräumen	phrase			خانه را مرتب کردن	مرتب کردن خانه	home	parts:Wohnung aufräumen
+putzen	verb			تمیز کردن، پاک کردن	تمیز کردن	home
+waschen	verb			شستن	شستن	home
+spülen	verb			ظرف شستن، آب کشیدن	ظرف شستن	home	checked:level
+Wäsche	noun	die		لباس‌های شستنی، رخت	رخت	home	number:sg_only
+Wäsche waschen	phrase			لباس شستن	لباس شستن	home	parts:Wäsche waschen
+Staubsauger	noun	der	Staubsauger	جارو برقی	جارو برقی	home	checked:level
+staubsaugen	verb			جارو برقی کشیدن	جارو برقی کشیدن	home
+Geschirr	noun	das		ظرف‌ها، ظروف	ظرف‌ها	home	number:sg_only	checked:level
+Topf	noun	der	Töpfe	قابلمه	قابلمه	home
+Pfanne	noun	die	Pfannen	ماهیتابه	ماهیتابه	home	checked:level
+Messer	noun	das	Messer	چاقو، کارد	چاقو	home
+Gabel	noun	die	Gabeln	چنگال	چنگال	home	checked:level
+Löffel	noun	der	Löffel	قاشق	قاشق	home
+Schüssel	noun	die	Schüsseln	کاسه	کاسه	home
+den Tisch decken	phrase			سفره چیدن، میز را چیدن	سفره چیدن	home	parts:Tisch
+sauber	adj			تمیز	تمیز	qualities
+schmutzig	adj			کثیف	کثیف	qualities
+Ordnung	noun	die		نظم، ترتیب	نظم	abstract	number:sg_only
+Ordnung machen	phrase			مرتب کردن، نظم دادن	نظم دادن	home	parts:Ordnung machen
+gemütlich	adj			دنج، راحت و گرم	دنج	qualities
+bequem	adj			راحت (مبل، لباس)	راحت	qualities
+modern	adj			مدرن، امروزی	مدرن	qualities	checked:level
+Lärm	noun	der		سروصدا	سروصدا	home	number:sg_only
+stören	verb			مزاحم شدن، اذیت کردن	مزاحم شدن	actions
+
+# food and drink: cooking, more foods, eating out
+Lebensmittel	noun	das	Lebensmittel	مواد غذایی، خوراکی	مواد غذایی	food
+Rezept	noun	das	Rezepte	دستور پخت	دستور پخت	food
+Mehl	noun	das		آرد	آرد	food	number:sg_only	checked:level
+Öl	noun	das	Öle	روغن	روغن	food
+Pfeffer	noun	der		فلفل (ادویه)	فلفل سیاه	food	number:sg_only	checked:level
+Soße	noun	die	Soßen	سس	سس	food
+Honig	noun	der		عسل	عسل	food	number:sg_only
+Marmelade	noun	die	Marmeladen	مربا	مربا	food	checked:level
+Joghurt	noun	der	Joghurts	ماست	ماست	food	checked:level
+Müsli	noun	das	Müslis	موسلی (غلات صبحانه)	موسلی	food	checked:level
+Sahne	noun	die		خامه	خامه	food	number:sg_only	checked:level
+Keks	noun	der	Kekse	بیسکویت، کلوچه	بیسکویت	food
+Bonbon	noun	das	Bonbons	آب‌نبات	آب‌نبات	food	checked:level
+Nuss	noun	die	Nüsse	گردو، آجیل	آجیل	food	checked:level
+Erdbeere	noun	die	Erdbeeren	توت‌فرنگی	توت‌فرنگی	food	checked:level
+Traube	noun	die	Trauben	انگور	انگور	food
+Zitrone	noun	die	Zitronen	لیمو	لیمو	food	checked:level
+Birne	noun	die	Birnen	گلابی	گلابی	food	checked:level
+Kirsche	noun	die	Kirschen	گیلاس	گیلاس	food	checked:level
+Zwiebel	noun	die	Zwiebeln	پیاز	پیاز	food	checked:level
+Knoblauch	noun	der		سیر (سبزی)	سیر (سبزی)	food	number:sg_only	checked:level
+Karotte	noun	die	Karotten	هویج	هویج	food	checked:level
+Gurke	noun	die	Gurken	خیار	خیار	food	checked:level
+Paprika	noun	die	Paprika	فلفل دلمه‌ای	فلفل دلمه‌ای	food	checked:level
+Bohne	noun	die	Bohnen	لوبیا	لوبیا	food	checked:level
+Pilz	noun	der	Pilze	قارچ	قارچ	food	checked:level
+Rindfleisch	noun	das		گوشت گاو	گوشت گاو	food	number:sg_only	checked:level
+Lammfleisch	noun	das		گوشت بره	گوشت بره	food	number:sg_only
+Hackfleisch	noun	das		گوشت چرخ‌کرده	گوشت چرخ‌کرده	food	number:sg_only	checked:level
+Pommes	noun	die		سیب‌زمینی سرخ‌کرده	سیب‌زمینی سرخ‌کرده	food	number:pl_only
+Mineralwasser	noun	das	Mineralwässer	آب معدنی	آب معدنی	drink	checked:level
+Limonade	noun	die	Limonaden	لیموناد، نوشابه	لیموناد	drink
+Kakao	noun	der	Kakaos	کاکائو	کاکائو	drink	checked:level
+Gericht	noun	das	Gerichte	غذا (یک نوع خوراک)، خوراک	خوراک	food
+Vorspeise	noun	die	Vorspeisen	پیش‌غذا	پیش‌غذا	food	checked:level
+Hauptgericht	noun	das	Hauptgerichte	غذای اصلی	غذای اصلی	food
+Nachtisch	noun	der	Nachtische	دسر	دسر	food
+Portion	noun	die	Portionen	پرس، سهم	پرس	food	checked:level
+Mahlzeit	noun	die	Mahlzeiten	وعده غذا	وعده غذا	food
+Imbiss	noun	der	Imbisse	اغذیه‌فروشی، غذای سرپایی	اغذیه‌فروشی	food	checked:level
+Kantine	noun	die	Kantinen	سلف (محل کار)، غذاخوری	غذاخوری	food	checked:level
+Mensa	noun	die	Mensen	سلف دانشگاه	سلف دانشگاه	education
+backen	verb			پختن (در فر)	پختن در فر	food
+einen Kuchen backen	phrase			کیک پختن	کیک پختن	food	parts:Kuchen backen
+braten	verb			سرخ کردن، تفت دادن	سرخ کردن	food
+grillen	verb			کباب کردن (روی منقل)	کباب کردن	food	checked:level
+schneiden	verb			بریدن، خرد کردن	بریدن	food
+frisch	adj			تازه	تازه	food
+süß	adj			شیرین	شیرین	food
+sauer	adj			ترش	ترش	food
+scharf	adj			تند (مزه)، تیز	تند (مزه)	food
+salzig	adj			شور	شور	food	checked:level
+satt	adj			سیر (از غذا)	سیر (از غذا)	food
+hungrig	adj			گرسنه	گرسنه	food
+vegetarisch	adj			گیاهی، گیاه‌خواری	گیاهی	food
+Kellnerin	noun	die	Kellnerinnen	گارسون (زن)	گارسون زن	work
+Köchin	noun	die	Köchinnen	آشپز (زن)	آشپز زن	work	checked:level
+empfehlen	verb			پیشنهاد کردن، توصیه کردن	توصیه کردن	actions
+Trinkgeld	noun	das	Trinkgelder	انعام	انعام	shopping
+getrennt	adj			جدا جدا	جدا	qualities	note:Zusammen oder getrennt? در رستوران یعنی «با هم حساب می‌کنید یا جدا؟»
+reservieren	verb			رزرو کردن	رزرو کردن	travel	checked:level
+einen Tisch reservieren	phrase			میز رزرو کردن	میز رزرو کردن	food	parts:Tisch reservieren
+
+# shopping, clothes, money and the bank
+Laden	noun	der	Läden	مغازه، دکان	مغازه	shopping
+Kaufhaus	noun	das	Kaufhäuser	فروشگاه بزرگ	فروشگاه بزرگ	shopping	checked:level
+Kiosk	noun	der	Kioske	کیوسک، دکه	دکه	shopping	checked:level
+Buchhandlung	noun	die	Buchhandlungen	کتاب‌فروشی	کتاب‌فروشی	shopping	checked:level
+Drogerie	noun	die	Drogerien	فروشگاه لوازم بهداشتی	فروشگاه لوازم بهداشتی	shopping	checked:level
+Kunde	noun	der	Kunden	مشتری	مشتری	shopping
+Kundin	noun	die	Kundinnen	مشتری (زن)	مشتری زن	shopping	checked:level
+Verkäuferin	noun	die	Verkäuferinnen	فروشنده (زن)	فروشنده زن	work	checked:level
+Angebot	noun	das	Angebote	پیشنهاد، حراج (کالای ارزان‌شده)	پیشنهاد	shopping
+Prozent	noun	das	Prozente	درصد	درصد	numbers
+günstig	adj			مناسب (قیمت)، به‌صرفه	به‌صرفه	shopping	checked:level
+kostenlos	adj			رایگان، مجانی	رایگان	shopping	checked:level
+Kassenbon	noun	der	Kassenbons	رسید خرید	رسید	shopping
+Größe	noun	die	Größen	اندازه، سایز	اندازه	shopping
+anprobieren	verb			(لباس) امتحان کردن، پرو کردن	پرو کردن	clothes	checked:level
+umtauschen	verb			عوض کردن (جنس خریده‌شده)	پس دادن و عوض کردن	shopping	checked:level
+aussuchen	verb			انتخاب کردن، گشتن و پیدا کردن	انتخاب کردن	shopping
+wählen	verb			انتخاب کردن، شماره گرفتن	انتخاب کردن	actions
+Mode	noun	die	Moden	مد	مد	clothes
+anziehen	verb			پوشیدن (لباس)	پوشیدن	clothes	note:Ich ziehe eine Jacke an. یعنی «کاپشن می‌پوشم»؛ tragen یعنی «به تن داشتن».
+ausziehen	verb			درآوردن (لباس)	درآوردن لباس	clothes	code:ausziehen-2	sense_of:ausziehen
+Bluse	noun	die	Blusen	بلوز زنانه	بلوز	clothes	checked:level
+Anzug	noun	der	Anzüge	کت و شلوار	کت و شلوار	clothes
+Krawatte	noun	die	Krawatten	کراوات	کراوات	clothes
+Schal	noun	der	Schals	شال گردن	شال گردن	clothes
+Mütze	noun	die	Mützen	کلاه (بافتنی)	کلاه بافتنی	clothes
+Hut	noun	der	Hüte	کلاه (لبه‌دار)	کلاه لبه‌دار	clothes
+Handschuh	noun	der	Handschuhe	دستکش	دستکش	clothes	checked:level
+Socke	noun	die	Socken	جوراب	جوراب	clothes	checked:level
+Stiefel	noun	der	Stiefel	چکمه، پوتین	چکمه	clothes
+Jeans	noun	die	Jeans	شلوار جین	شلوار جین	clothes
+Kette	noun	die	Ketten	گردنبند، زنجیر	گردنبند	clothes
+Ring	noun	der	Ringe	انگشتر، حلقه	انگشتر	clothes
+Tüte	noun	die	Tüten	کیسه (خرید)، پاکت	کیسه	shopping
+Packung	noun	die	Packungen	بسته (کالا)	بسته کالا	shopping	checked:level
+Dose	noun	die	Dosen	قوطی، کنسرو	قوطی	shopping
+Paar	noun	das	Paare	جفت	جفت	numbers
+bunt	adj			رنگارنگ، رنگی	رنگارنگ	colors	checked:level
+rosa	adj			صورتی	صورتی	colors
+lila	adj			بنفش	بنفش	colors
+Konto	noun	das	Konten	حساب بانکی	حساب بانکی	economy
+Bargeld	noun	das		پول نقد	پول نقد	economy	number:sg_only
+bar	adv			نقد، نقدی	نقدی	shopping
+bar bezahlen	phrase			نقد پرداختن	پرداخت نقدی	shopping	parts:bar bezahlen
+Kreditkarte	noun	die	Kreditkarten	کارت اعتباری	کارت اعتباری	economy
+mit Karte bezahlen	phrase			با کارت پرداختن	پرداخت با کارت	shopping	parts:Karte bezahlen
+Geldautomat	noun	der	Geldautomaten	خودپرداز	خودپرداز	economy
+Geldbeutel	noun	der	Geldbeutel	کیف پول	کیف پول	clothes	checked:level
+Kleingeld	noun	das		پول خرد	پول خرد	economy	number:sg_only
+abheben	verb			برداشتن (پول از حساب)	برداشت پول	economy	checked:level
+Geld abheben	phrase			پول برداشتن (از حساب)	پول برداشتن	economy	parts:Geld abheben
+überweisen	verb			واریز کردن، حواله کردن	واریز کردن	economy	checked:level
+sparen	verb			پس‌انداز کردن، صرفه‌جویی کردن	پس‌انداز کردن	economy
+Geld sparen	phrase			پول پس‌انداز کردن	پس‌انداز پول	economy	parts:Geld sparen
+ausgeben	verb			خرج کردن	خرج کردن	economy
+Geld ausgeben	phrase			پول خرج کردن	پول خرج کردن	economy	parts:Geld ausgeben
+leihen	verb			قرض دادن، قرض گرفتن	قرض دادن	economy
+wechseln	verb			عوض کردن، تبدیل کردن (پول)	عوض کردن	actions
+zahlen	verb			پرداختن، پول دادن	پرداختن	shopping
+zählen	verb			شمردن	شمردن	actions
+
+# city, offices and services
+Rathaus	noun	das	Rathäuser	شهرداری	شهرداری	city
+Amt	noun	das	Ämter	اداره	اداره	city
+Ausweis	noun	der	Ausweise	کارت شناسایی	کارت شناسایی	city
+anmelden	verb			ثبت‌نام کردن، اسم نوشتن	ثبت‌نام کردن	city	checked:level
+Anmeldung	noun	die	Anmeldungen	ثبت‌نام، پذیرش	ثبت‌نام	city	checked:level
+unterschreiben	verb			امضا کردن	امضا کردن	city
+Unterschrift	noun	die	Unterschriften	امضا	امضا	city
+ein Formular ausfüllen	phrase			فرم پر کردن	فرم پر کردن	city	parts:Formular ausfüllen
+Schalter	noun	der	Schalter	باجه	باجه	city
+Briefmarke	noun	die	Briefmarken	تمبر	تمبر	media	checked:level
+Paket	noun	das	Pakete	بسته پستی	بسته پستی	media
+Briefkasten	noun	der	Briefkästen	صندوق پست	صندوق پست	media	checked:level
+Postleitzahl	noun	die	Postleitzahlen	کد پستی	کد پستی	media
+Absender	noun	der	Absender	فرستنده	فرستنده	media	checked:level
+Empfänger	noun	der	Empfänger	گیرنده	گیرنده	media	checked:level
+Umschlag	noun	der	Umschläge	پاکت نامه	پاکت نامه	media
+Ecke	noun	die	Ecken	گوشه، نبش	گوشه	city
+Kreuzung	noun	die	Kreuzungen	چهارراه، تقاطع	چهارراه	city	checked:level
+Ampel	noun	die	Ampeln	چراغ راهنمایی	چراغ راهنمایی	city	checked:level
+über die Straße gehen	phrase			از خیابان رد شدن	از خیابان رد شدن	city	parts:Straße gehen
+Brücke	noun	die	Brücken	پل	پل	city
+Kirche	noun	die	Kirchen	کلیسا	کلیسا	city
+Turm	noun	der	Türme	برج	برج (بنای بلند)	city
+Schloss	noun	das	Schlösser	قصر، کاخ	قصر	city
+Sehenswürdigkeit	noun	die	Sehenswürdigkeiten	جای دیدنی	جای دیدنی	travel
+Stadtplan	noun	der	Stadtpläne	نقشه شهر	نقشه شهر	city
+Innenstadt	noun	die	Innenstädte	مرکز شهر	مرکز شهر	city	checked:level
+Altstadt	noun	die	Altstädte	بافت قدیم شهر	شهر قدیم	city
+Gegend	noun	die	Gegenden	منطقه، حوالی	منطقه	city
+Parkplatz	noun	der	Parkplätze	جای پارک، پارکینگ	پارکینگ	city
+Tankstelle	noun	die	Tankstellen	پمپ بنزین	پمپ بنزین	city
+Werkstatt	noun	die	Werkstätten	تعمیرگاه، کارگاه	تعمیرگاه	city
+Bibliothek	noun	die	Bibliotheken	کتابخانه	کتابخانه	city
+Theater	noun	das	Theater	تئاتر	تئاتر	culture
+Zoo	noun	der	Zoos	باغ وحش	باغ وحش	city
+Spielplatz	noun	der	Spielplätze	زمین بازی بچه‌ها	زمین بازی	city	checked:level
+Friseur	noun	der	Friseure	آرایشگر، آرایشگاه	آرایشگر	work
+zum Friseur gehen	phrase			به آرایشگاه رفتن	آرایشگاه رفتن	city	parts:Friseur gehen
+Feuerwehr	noun	die	Feuerwehren	آتش‌نشانی	آتش‌نشانی	city
+Notfall	noun	der	Notfälle	موقعیت اضطراری	اضطرار	health
+Polizist	noun	der	Polizisten	پلیس (مأمور)	مأمور پلیس	work
+Polizistin	noun	die	Polizistinnen	پلیس (مأمور زن)	مأمور پلیس زن	work
+Kindergarten	noun	der	Kindergärten	مهدکودک	مهدکودک	education	checked:level
+Weg	noun	der	Wege	راه، مسیر	راه	space
+Richtung	noun	die	Richtungen	جهت، سمت	جهت	space
+den Weg zeigen	phrase			راه را نشان دادن	راه نشان دادن	city	parts:Weg zeigen
+nach dem Weg fragen	phrase			نشانی پرسیدن، راه را پرسیدن	راه پرسیدن	city	parts:Weg fragen
+Norden	noun	der		شمال	شمال	space	number:sg_only
+Süden	noun	der		جنوب	جنوب	space	number:sg_only
+Osten	noun	der		شرق	شرق	space	number:sg_only
+Westen	noun	der		غرب	غرب	space	number:sg_only
+
+# transport and traffic
+Verkehr	noun	der		رفت و آمد، ترافیک	ترافیک	transport	number:sg_only
+Stau	noun	der	Staus	راه‌بندان، ترافیک سنگین	راه‌بندان	transport	checked:level
+Unfall	noun	der	Unfälle	تصادف، حادثه	تصادف	transport
+einen Unfall haben	phrase			تصادف کردن	تصادف کردن	transport	parts:Unfall haben
+Fahrer	noun	der	Fahrer	راننده	راننده	transport
+Führerschein	noun	der	Führerscheine	گواهی‌نامه رانندگی	گواهی‌نامه	transport
+Motorrad	noun	das	Motorräder	موتورسیکلت	موتور	transport
+Straßenbahn	noun	die	Straßenbahnen	تراموا	تراموا	transport	checked:level
+S-Bahn	noun	die	S-Bahnen	قطار شهری	قطار شهری	transport
+Lkw	noun	der	Lkws	کامیون	کامیون	transport
+Wagen	noun	der	Wagen	ماشین، خودرو، واگن	ماشین	transport
+parken	verb			پارک کردن	پارک کردن	transport
+tanken	verb			بنزین زدن	بنزین زدن	transport	checked:level
+Benzin	noun	das		بنزین	بنزین	transport	number:sg_only
+Autobahn	noun	die	Autobahnen	بزرگراه، اتوبان	بزرگراه	transport	checked:level
+abbiegen	verb			پیچیدن (به چپ یا راست)	پیچیدن	transport	checked:level
+Verspätung	noun	die	Verspätungen	تأخیر	تأخیر	transport
+Verspätung haben	phrase			تأخیر داشتن	تأخیر داشتن	transport	parts:Verspätung haben
+Fahrplan	noun	der	Fahrpläne	جدول حرکت	جدول حرکت	transport	checked:level
+Durchsage	noun	die	Durchsagen	اعلام (از بلندگو)	اعلام بلندگو	transport	checked:level
+Bahnsteig	noun	der	Bahnsteige	سکوی ایستگاه	سکو	transport	checked:level
+Eingang	noun	der	Eingänge	ورودی	ورودی	space
+Ausgang	noun	der	Ausgänge	خروجی	خروجی	space
+Anschluss	noun	der	Anschlüsse	قطار یا اتوبوس بعدی (برای ادامه سفر)	اتصال	transport	checked:level
+verpassen	verb			جا ماندن از، از دست دادن	جا ماندن	transport
+den Zug verpassen	phrase			به قطار نرسیدن	از قطار جا ماندن	transport	parts:Zug verpassen
+erreichen	verb			رسیدن به، دست یافتن	رسیدن به	transport
+Fahrt	noun	die	Fahrten	سفر (با وسیله)، راه	سفر کوتاه	transport
+gute Fahrt	interj			سفر بخیر (با ماشین یا قطار)	سفر بخیر	people
+Station	noun	die	Stationen	ایستگاه	ایستگاه	transport
+Linie	noun	die	Linien	خط (اتوبوس، مترو)	خط	transport
+im Stau stehen	phrase			در ترافیک گیر کردن	در ترافیک ماندن	transport	parts:Stau stehen
+zu spät kommen	phrase			دیر رسیدن	دیر رسیدن	time	parts:spät kommen
+den Bus nehmen	phrase			با اتوبوس رفتن، اتوبوس سوار شدن	اتوبوس گرفتن	transport	parts:Bus nehmen
+ein Taxi nehmen	phrase			تاکسی گرفتن	تاکسی گرفتن	transport	parts:Taxi nehmen
+
+# travel and holidays
+Ausland	noun	das		خارج از کشور	خارج	travel	number:sg_only	note:im Ausland یعنی «در خارج»؛ ins Ausland یعنی «به خارج».
+in Urlaub fahren	phrase			به تعطیلات رفتن (با سفر)	به سفر تعطیلات رفتن	travel	parts:Urlaub fahren
+ins Ausland gehen	phrase			به خارج رفتن (برای زندگی یا کار)	به خارج رفتن	travel	parts:Ausland gehen
+Grenze	noun	die	Grenzen	مرز	مرز	travel
+Visum	noun	das	Visa	ویزا، روادید	ویزا	travel	checked:level
+Reisebüro	noun	das	Reisebüros	آژانس مسافرتی	آژانس مسافرتی	travel	checked:level
+buchen	verb			رزرو کردن (بلیت، هتل)، خریدن (سفر)	رزرو کردن	travel	checked:level
+ein Zimmer buchen	phrase			اتاق رزرو کردن	رزرو اتاق	travel	parts:Zimmer buchen
+eine Reise buchen	phrase			سفر رزرو کردن	رزرو سفر	travel	parts:Reise buchen
+Gepäck	noun	das		بار سفر، چمدان‌ها	بار سفر	travel	number:sg_only
+Rucksack	noun	der	Rucksäcke	کوله‌پشتی	کوله‌پشتی	travel
+packen	verb			جمع کردن (وسایل)، بسته‌بندی کردن	جمع کردن وسایل	travel
+den Koffer packen	phrase			چمدان بستن	چمدان بستن	travel	parts:Koffer packen
+Flug	noun	der	Flüge	پرواز	پرواز	travel
+landen	verb			فرود آمدن	فرود آمدن	travel
+starten	verb			بلند شدن (هواپیما)، شروع کردن	بلند شدن هواپیما	travel
+Einzelzimmer	noun	das	Einzelzimmer	اتاق یک‌نفره	اتاق یک‌نفره	travel	checked:level
+Doppelzimmer	noun	das	Doppelzimmer	اتاق دونفره	اتاق دونفره	travel
+Rezeption	noun	die	Rezeptionen	پذیرش (هتل)	پذیرش	travel	checked:level
+übernachten	verb			شب ماندن، اقامت شبانه	شب ماندن	travel
+Übernachtung	noun	die	Übernachtungen	اقامت شبانه، یک شب (هتل)	اقامت شبانه	travel
+Jugendherberge	noun	die	Jugendherbergen	مسافرخانه جوانان	مسافرخانه جوانان	travel
+Pension	noun	die	Pensionen	مسافرخانه	مسافرخانه	travel
+Ausflug	noun	der	Ausflüge	گردش یک‌روزه، گشت	گردش	travel
+einen Ausflug machen	phrase			به گردش رفتن	به گردش رفتن	travel	parts:Ausflug machen
+Tourist	noun	der	Touristen	گردشگر، توریست	گردشگر	travel	checked:level
+Führung	noun	die	Führungen	بازدید با راهنما	بازدید با راهنما	travel
+besichtigen	verb			بازدید کردن، دیدن (جای دیدنی)	بازدید کردن	travel	checked:level
+Landkarte	noun	die	Landkarten	نقشه	نقشه	travel	checked:level
+Strand	noun	der	Strände	ساحل (شنی)	ساحل	nature
+Insel	noun	die	Inseln	جزیره	جزیره	nature
+Zelt	noun	das	Zelte	چادر (برای کمپ)	چادر	travel
+zelten	verb			چادر زدن، کمپ کردن	چادر زدن	travel	checked:level
+Schiff	noun	das	Schiffe	کشتی	کشتی	transport
+Boot	noun	das	Boote	قایق	قایق	transport
+Hafen	noun	der	Häfen	بندر	بندر	transport
+Postkarte	noun	die	Postkarten	کارت پستال	کارت پستال	media	checked:level
+Erholung	noun	die		استراحت، رفع خستگی	رفع خستگی	travel	number:sg_only	checked:level
+sich erholen	verb			رفع خستگی کردن، بهتر شدن (حال)	بهتر شدن حال	travel
+Aussicht	noun	die	Aussichten	منظره، چشم‌انداز	منظره	travel
+Unterkunft	noun	die	Unterkünfte	محل اقامت	محل اقامت	travel
+
+# work: jobs, applying, the workplace
+Ausbildung	noun	die	Ausbildungen	دوره آموزش حرفه‌ای، کارآموزی	آموزش حرفه‌ای	work
+eine Ausbildung machen	phrase			دوره حرفه‌ای دیدن	دوره حرفه‌ای دیدن	work	parts:Ausbildung machen
+Praktikum	noun	das	Praktika	کارآموزی	کارآموزی	work	checked:level
+ein Praktikum machen	phrase			کارآموزی کردن	کارآموزی کردن	work	parts:Praktikum machen
+Stelle	noun	die	Stellen	شغل (جای خالی)، موقعیت کاری	موقعیت کاری	work
+eine Stelle suchen	phrase			دنبال کار گشتن	دنبال کار گشتن	work	parts:Stelle suchen
+Arbeitsplatz	noun	der	Arbeitsplätze	محل کار، شغل	محل کار	work	checked:level
+sich bewerben	verb			درخواست کار دادن	درخواست کار دادن	work	note:برای کار um و برای شرکت bei می‌آید: sich um eine Stelle bewerben (برای یک شغل درخواست دادن).
+Bewerbung	noun	die	Bewerbungen	درخواست کار	درخواست کار	work	checked:level
+Lebenslauf	noun	der	Lebensläufe	رزومه، شرح حال	رزومه	work	checked:level
+Zeugnis	noun	das	Zeugnisse	کارنامه، گواهی	کارنامه	education	checked:level
+Erfahrung	noun	die	Erfahrungen	تجربه	تجربه	work
+Gehalt	noun	das	Gehälter	حقوق (ماهانه)	حقوق	work
+Lohn	noun	der	Löhne	دستمزد	دستمزد	work
+verdienen	verb			درآمد داشتن، پول درآوردن	درآمد داشتن	work
+Geld verdienen	phrase			پول درآوردن	پول درآوردن	work	parts:Geld verdienen
+Vertrag	noun	der	Verträge	قرارداد	قرارداد	work
+einen Vertrag unterschreiben	phrase			قرارداد امضا کردن	امضای قرارداد	work	parts:Vertrag unterschreiben
+arbeitslos	adj			بیکار	بیکار	people
+Arbeitszeit	noun	die	Arbeitszeiten	ساعت کار	ساعت کار	work	checked:level
+Urlaub nehmen	phrase			مرخصی گرفتن	مرخصی گرفتن	work	parts:Urlaub nehmen
+Feierabend	noun	der	Feierabende	پایان ساعت کار	پایان کار روزانه	work
+Feierabend haben	phrase			کارِ روز تمام شدن	تعطیل شدن کار	work	parts:Feierabend haben
+Besprechung	noun	die	Besprechungen	جلسه (کاری)	جلسه	work
+Projekt	noun	das	Projekte	پروژه	پروژه	work
+Aufgabe	noun	die	Aufgaben	وظیفه، تمرین	وظیفه	work
+erledigen	verb			انجام دادن (کار)، به سرانجام رساندن	انجام دادن کار	work
+Betrieb	noun	der	Betriebe	کارخانه، بنگاه	بنگاه	work
+Mitarbeiter	noun	der	Mitarbeiter	کارمند، همکار	کارمند	work
+Mitarbeiterin	noun	die	Mitarbeiterinnen	کارمند (زن)	کارمند زن	work	checked:level
+Angestellte	noun	der	Angestellten	کارمند (حقوق‌بگیر)	کارمند	work	note:اسم صفتی: der Angestellte، ein Angestellter، die Angestellten؛ برای زن die Angestellte.	checked:gender
+Chefin	noun	die	Chefinnen	رئیس (زن)	رئیس زن	work
+Ingenieurin	noun	die	Ingenieurinnen	مهندس (زن)	مهندس زن	work
+Sekretärin	noun	die	Sekretärinnen	منشی (زن)	منشی زن	work
+Sekretär	noun	der	Sekretäre	منشی	منشی	work	checked:level
+Krankenpfleger	noun	der	Krankenpfleger	پرستار	پرستار	work	checked:level
+Krankenschwester	noun	die	Krankenschwestern	پرستار (زن)	پرستار زن	work
+Friseurin	noun	die	Friseurinnen	آرایشگر (زن)	آرایشگر زن	work
+Mechaniker	noun	der	Mechaniker	مکانیک	مکانیک	work	checked:level
+Handwerker	noun	der	Handwerker	استادکار، صنعتگر	استادکار	work	checked:level
+Bauer	noun	der	Bauern	کشاورز	کشاورز	work
+Anwalt	noun	der	Anwälte	وکیل	وکیل	work
+Anwältin	noun	die	Anwältinnen	وکیل (زن)	وکیل زن	work
+Journalist	noun	der	Journalisten	روزنامه‌نگار	روزنامه‌نگار	work
+Rentner	noun	der	Rentner	بازنشسته	بازنشسته	work	checked:level
+Rente	noun	die	Renten	حقوق بازنشستگی	حقوق بازنشستگی	work
+in Rente gehen	phrase			بازنشسته شدن	بازنشسته شدن	work	parts:Rente gehen
+Drucker	noun	der	Drucker	چاپگر، پرینتر	چاپگر	work	checked:level
+drucken	verb			چاپ کردن، پرینت گرفتن	چاپ کردن	work	checked:level
+ausdrucken	verb			پرینت گرفتن	پرینت گرفتن	work	checked:level
+kopieren	verb			کپی کردن، رونوشت گرفتن	کپی کردن	work	checked:level
+Kopie	noun	die	Kopien	کپی، رونوشت	کپی	work
+Unterlagen	noun	die		مدارک	مدارک	work	number:pl_only
+Erfolg	noun	der	Erfolge	موفقیت	موفقیت	work
+viel Erfolg	interj			موفق باشی	آرزوی موفقیت	people
+Kunst	noun	die	Künste	هنر	هنر	culture
+
+# school and learning
+Grundschule	noun	die	Grundschulen	دبستان	دبستان	education	checked:level
+Gymnasium	noun	das	Gymnasien	دبیرستان (دانشگاهی)	دبیرستان	education	checked:level
+Unterricht	noun	der		درس، کلاس (آموزش)	کلاس درس	education	number:sg_only
+Fach	noun	das	Fächer	درس (موضوع درسی)، رشته	درس (موضوع)	education	checked:level
+Mathematik	noun	die		ریاضی	ریاضی	education	number:sg_only	checked:level
+Mathe	noun	die		ریاضی	ریاضی	education	number:sg_only	register:familier
+Geschichte	noun	die	Geschichten	داستان، قصه	داستان	culture
+Geschichte	noun	die		تاریخ (درس)	تاریخ	education	number:sg_only	code:Geschichte-2	sense_of:Geschichte
+Note	noun	die	Noten	نمره	نمره	education	checked:level
+Wörterbuch	noun	das	Wörterbücher	فرهنگ لغت، دیکشنری	فرهنگ لغت	education	checked:level
+Übung	noun	die	Übungen	تمرین	تمرین	education
+üben	verb			تمرین کردن	تمرین کردن	education
+Lösung	noun	die	Lösungen	راه‌حل، جواب (تمرین)	راه‌حل	abstract
+lösen	verb			حل کردن	حل کردن	education
+korrigieren	verb			تصحیح کردن، غلط گرفتن	تصحیح کردن	education	checked:level
+Bedeutung	noun	die	Bedeutungen	معنی	معنی	education
+Grammatik	noun	die		دستور زبان	دستور زبان	education	number:sg_only	checked:level
+Aussprache	noun	die		تلفظ	تلفظ	education	number:sg_only	checked:level
+aussprechen	verb			تلفظ کردن	تلفظ کردن	education
+Thema	noun	das	Themen	موضوع	موضوع	education
+eine Frage stellen	phrase			سؤال پرسیدن، سؤال مطرح کردن	سؤال مطرح کردن	education	parts:Frage stellen
+Teilnehmer	noun	der	Teilnehmer	شرکت‌کننده	شرکت‌کننده	education	checked:level
+teilnehmen	verb			شرکت کردن	شرکت کردن	education	note:بعد از این فعل an می‌آید: Ich nehme an einem Kurs teil (در یک دوره شرکت می‌کنم).
+bestehen	verb			قبول شدن (در امتحان)	قبول شدن	education
+eine Prüfung bestehen	phrase			در امتحان قبول شدن	در امتحان قبول شدن	education	parts:Prüfung bestehen
+eine Prüfung machen	phrase			امتحان دادن	امتحان دادن	education	parts:Prüfung machen
+Ergebnis	noun	das	Ergebnisse	نتیجه	نتیجه	abstract
+Tafel	noun	die	Tafeln	تخته (کلاس)	تخته کلاس	education
+Wissen	noun	das		دانش، دانسته‌ها	دانش	education	number:sg_only
+Sprachkurs	noun	der	Sprachkurse	کلاس زبان	کلاس زبان	education
+einen Kurs besuchen	phrase			در دوره شرکت کردن، کلاس رفتن	کلاس رفتن	education	parts:Kurs besuchen
+
+# body and health
+Krankheit	noun	die	Krankheiten	بیماری	بیماری	health
+Erkältung	noun	die	Erkältungen	سرماخوردگی	سرماخوردگی	health	checked:level
+erkältet	adj			سرماخورده	سرماخورده	health	checked:level
+eine Erkältung haben	phrase			سرماخوردگی داشتن	سرما خوردن	health	parts:Erkältung haben
+Husten	noun	der		سرفه	سرفه	health	number:sg_only
+husten	verb			سرفه کردن	سرفه کردن	health
+Schnupfen	noun	der		آبریزش بینی، زکام	زکام	health	number:sg_only	checked:level
+Grippe	noun	die	Grippen	آنفولانزا	آنفولانزا	health
+Allergie	noun	die	Allergien	حساسیت	حساسیت	health	checked:level
+sich verletzen	verb			زخمی شدن، آسیب دیدن	آسیب دیدن	health
+verletzt	adj			زخمی، آسیب‌دیده	زخمی	health
+Blut	noun	das		خون	خون	body	number:sg_only
+Herz	noun	das	Herzen	قلب	قلب	body
+Hals	noun	der	Hälse	گلو، گردن	گلو	body
+Halsschmerzen haben	phrase			گلودرد داشتن	گلودرد داشتن	health	parts:Hals Schmerz haben
+Bauchschmerzen haben	phrase			دل‌درد داشتن	دل‌درد داشتن	health	parts:Bauch Schmerz haben
+Schulter	noun	die	Schultern	شانه (بدن)	شانه	body
+Knie	noun	das	Knie	زانو	زانو	body
+Finger	noun	der	Finger	انگشت	انگشت	body
+Haut	noun	die	Häute	پوست	پوست	body
+Magen	noun	der	Mägen	معده	معده	body
+Zahnarzt	noun	der	Zahnärzte	دندان‌پزشک	دندان‌پزشک	health
+Zahnärztin	noun	die	Zahnärztinnen	دندان‌پزشک (زن)	دندان‌پزشک زن	health
+Praxis	noun	die	Praxen	مطب	مطب	health
+Sprechstunde	noun	die	Sprechstunden	ساعت ویزیت	ساعت ویزیت	health	checked:level
+Wartezimmer	noun	das	Wartezimmer	اتاق انتظار	اتاق انتظار	health	checked:level
+Rezept	noun	das	Rezepte	نسخه (پزشک)	نسخه	health	code:Rezept-2	sense_of:Rezept
+Medikament	noun	das	Medikamente	دارو	دارو	health
+eine Tablette nehmen	phrase			قرص خوردن	قرص خوردن	health	parts:Tablette nehmen
+im Bett bleiben	phrase			در رختخواب ماندن	استراحت در رختخواب	health	parts:Bett bleiben
+Pflaster	noun	das	Pflaster	چسب زخم	چسب زخم	health	checked:level
+messen	verb			اندازه گرفتن	اندازه گرفتن	health
+Fieber messen	phrase			تب را اندازه گرفتن	اندازه گرفتن تب	health	parts:Fieber messen
+Krankenwagen	noun	der	Krankenwagen	آمبولانس	آمبولانس	health
+untersuchen	verb			معاینه کردن، بررسی کردن	معاینه کردن	health
+Untersuchung	noun	die	Untersuchungen	معاینه	معاینه	health
+Krankenkasse	noun	die	Krankenkassen	بیمه درمانی	بیمه درمانی	health
+Versicherung	noun	die	Versicherungen	بیمه	بیمه	economy
+Gesundheit	noun	die		سلامتی	سلامتی	health	number:sg_only	note:بعد از عطسه کسی می‌گویند Gesundheit! یعنی «عافیت باشد».
+zum Arzt gehen	phrase			پیش دکتر رفتن	دکتر رفتن	health	parts:Arzt gehen
+fit	adj			سرحال، روی فرم	سرحال	health
+schlimm	adj			بد، وخیم	وخیم	qualities
+gefährlich	adj			خطرناک	خطرناک	qualities
+Gefahr	noun	die	Gefahren	خطر	خطر	abstract
+Hilfe	noun	die	Hilfen	کمک	کمک	abstract
+um Hilfe bitten	phrase			کمک خواستن	کمک خواستن	actions	parts:Hilfe bitten
+Vorsicht	noun	die		احتیاط	احتیاط	abstract	number:sg_only
+vorsichtig	adj			محتاط، با احتیاط	محتاط	character
+frieren	verb			یخ زدن، سرما خوردن (احساس سرما)	سردِ کسی بودن	health	checked:level
+schwitzen	verb			عرق کردن	عرق کردن	health	checked:level
+mir ist kalt	interj			سردم است	سرد بودنِ من	people
+mir ist schlecht	interj			حالم بد است (حالت تهوع دارم)	حالت تهوع	people
+
+# weather, nature, environment, animals
+Wolke	noun	die	Wolken	ابر	ابر	weather
+bewölkt	adj			ابری	ابری	weather
+sonnig	adj			آفتابی	آفتابی	weather	checked:level
+windig	adj			بادی، پرباد	بادی	weather	checked:level
+Gewitter	noun	das	Gewitter	رعد و برق، توفان تندری	رعد و برق	weather	checked:level
+Sturm	noun	der	Stürme	توفان	توفان	weather
+Nebel	noun	der	Nebel	مه	مه	weather
+Eis	noun	das		یخ	یخ	weather	number:sg_only	code:Eis-2	sense_of:Eis
+Temperatur	noun	die	Temperaturen	دما	دما	weather
+Klima	noun	das	Klimas	آب و هوا (اقلیم)	اقلیم	weather	checked:level
+nass	adj			خیس	خیس	weather
+trocken	adj			خشک	خشک	weather
+kühl	adj			خنک	خنک	weather
+Himmel	noun	der	Himmel	آسمان	آسمان	nature
+Stern	noun	der	Sterne	ستاره	ستاره	nature
+Mond	noun	der	Monde	ماه (در آسمان)	ماه آسمان	nature
+Erde	noun	die		زمین (سیاره)، خاک	کره زمین	nature	number:sg_only
+Welt	noun	die	Welten	دنیا، جهان	دنیا	nature
+Natur	noun	die		طبیعت	طبیعت	nature	number:sg_only
+Umwelt	noun	die		محیط زیست	محیط زیست	nature	number:sg_only	checked:level
+Luft	noun	die		هوا (برای نفس کشیدن)	هوا (نفس)	nature	number:sg_only
+Wald	noun	der	Wälder	جنگل	جنگل	nature
+Fluss	noun	der	Flüsse	رودخانه	رودخانه	nature
+See	noun	der	Seen	دریاچه	دریاچه	nature	note:der See یعنی «دریاچه»؛ die See (کم‌کاربرد) یعنی «دریا».
+Wiese	noun	die	Wiesen	چمنزار، علفزار	چمنزار	nature	checked:level
+Feld	noun	das	Felder	مزرعه، زمین (کشت)	مزرعه	nature
+Landschaft	noun	die	Landschaften	منظره طبیعی، چشم‌انداز	منظره طبیعی	nature	checked:level
+Pflanze	noun	die	Pflanzen	گیاه	گیاه	nature
+Blatt	noun	das	Blätter	برگ	برگ	nature
+Gras	noun	das	Gräser	علف، چمن	علف	nature
+Stein	noun	der	Steine	سنگ	سنگ	nature
+Feuer	noun	das	Feuer	آتش	آتش	nature
+Kuh	noun	die	Kühe	گاو	گاو	animals
+Schaf	noun	das	Schafe	گوسفند	گوسفند	animals
+Huhn	noun	das	Hühner	مرغ (جانور)	مرغ زنده	animals
+Maus	noun	die	Mäuse	موش	موش	animals
+Kaninchen	noun	das	Kaninchen	خرگوش (اهلی)	خرگوش	animals
+Haustier	noun	das	Haustiere	حیوان خانگی	حیوان خانگی	animals	checked:level
+Plastik	noun	das		پلاستیک	پلاستیک	nature	number:sg_only	checked:level
+den Müll trennen	phrase			زباله را جدا کردن	تفکیک زباله	nature	parts:Müll
+
+# free time, sport, culture
+Verein	noun	der	Vereine	باشگاه، انجمن	باشگاه	leisure	checked:level
+Mannschaft	noun	die	Mannschaften	تیم (ورزشی)	تیم	leisure
+Team	noun	das	Teams	تیم، گروه	تیم	leisure
+Spieler	noun	der	Spieler	بازیکن	بازیکن	leisure
+Spielerin	noun	die	Spielerinnen	بازیکن (زن)	بازیکن زن	leisure
+Tor	noun	das	Tore	دروازه، گل (فوتبال)	دروازه	leisure
+Training	noun	das	Trainings	تمرین (ورزشی)	تمرین ورزشی	leisure
+ein Spiel gewinnen	phrase			بازی را بردن	بردن بازی	leisure	parts:Spiel gewinnen
+trainieren	verb			تمرین کردن (ورزشی)	تمرین ورزشی کردن	leisure
+Fitnessstudio	noun	das	Fitnessstudios	باشگاه بدن‌سازی	باشگاه بدن‌سازی	leisure	checked:level
+Sport treiben	phrase			ورزش کردن	ورزش کردن	leisure	parts:Sport
+joggen	verb			آهسته دویدن، دویدن (ورزش)	دویدن ورزشی	leisure	checked:level
+wandern	verb			پیاده‌روی (در طبیعت)، کوه‌پیمایی	پیاده‌روی در طبیعت	leisure
+klettern	verb			بالا رفتن، صخره‌نوردی	بالا رفتن	leisure
+Ski fahren	phrase			اسکی کردن	اسکی کردن	leisure	parts:fahren
+Spaziergang	noun	der	Spaziergänge	پیاده‌روی کوتاه، گردش	پیاده‌روی کوتاه	leisure
+einen Spaziergang machen	phrase			قدم زدن	قدم زدن	leisure	parts:Spaziergang machen
+Tennis	noun	das		تنیس	تنیس	leisure	number:sg_only	checked:level
+Schach	noun	das		شطرنج	شطرنج	leisure	number:sg_only
+malen	verb			نقاشی کردن (با رنگ)	نقاشی کردن	leisure
+zeichnen	verb			طراحی کردن، نقاشی کشیدن (با مداد)	طراحی کردن	leisure
+sammeln	verb			جمع کردن، کلکسیون کردن	جمع کردن	leisure
+Erfahrung sammeln	phrase			تجربه کسب کردن	تجربه کسب کردن	work	parts:Erfahrung sammeln
+Gitarre	noun	die	Gitarren	گیتار	گیتار	leisure
+Klavier	noun	das	Klaviere	پیانو	پیانو	leisure
+Instrument	noun	das	Instrumente	ساز	ساز	leisure	checked:level
+Musik machen	phrase			ساز زدن، موسیقی اجرا کردن	موسیقی اجرا کردن	leisure	parts:Musik machen
+ein Instrument spielen	phrase			ساز زدن	ساز زدن	leisure	parts:Instrument spielen
+Lied	noun	das	Lieder	ترانه، آواز	ترانه	culture
+Sänger	noun	der	Sänger	خواننده	خواننده	culture
+Sängerin	noun	die	Sängerinnen	خواننده (زن)	خواننده زن	culture	checked:level
+Ausstellung	noun	die	Ausstellungen	نمایشگاه	نمایشگاه	culture
+Eintritt	noun	der	Eintritte	ورودیه، ورود	ورودیه	culture
+Eintrittskarte	noun	die	Eintrittskarten	بلیت ورودی	بلیت ورودی	culture	checked:level
+Kultur	noun	die	Kulturen	فرهنگ	فرهنگ	culture
+ins Theater gehen	phrase			به تئاتر رفتن	به تئاتر رفتن	culture	parts:Theater gehen
+Picknick	noun	das	Picknicks	پیک‌نیک	پیک‌نیک	leisure
+Witz	noun	der	Witze	لطیفه، جوک	لطیفه	leisure
+Langeweile	noun	die		بی‌حوصلگی، ملال	ملال	feelings	number:sg_only	checked:level
+sich langweilen	verb			حوصله کسی سر رفتن	حوصله سر رفتن	feelings
+
+# daily routine
+aufwachen	verb			بیدار شدن	بیدار شدن	actions
+einschlafen	verb			خوابیدن (به خواب رفتن)	به خواب رفتن	actions
+ausschlafen	verb			سیر خوابیدن، تا دیر وقت خوابیدن	سیر خوابیدن	actions	checked:level
+wecken	verb			بیدار کردن	بیدار کردن	actions
+Wecker	noun	der	Wecker	ساعت زنگ‌دار	ساعت زنگ‌دار	home	checked:level
+sich die Zähne putzen	phrase			مسواک زدن	مسواک زدن	body	parts:Zahn putzen
+sich die Hände waschen	phrase			دست‌ها را شستن	دست شستن	body	parts:Hand waschen
+sich anziehen	verb			لباس پوشیدن	لباس پوشیدن	clothes
+sich umziehen	verb			لباس عوض کردن	لباس عوض کردن	clothes
+
+# media, phone and computer
+Nachricht	noun	die	Nachrichten	پیام	پیام	media
+Nachrichten	noun	die		اخبار	اخبار	media	number:pl_only
+Nachrichten sehen	phrase			اخبار دیدن	اخبار دیدن	media	parts:Nachrichten sehen
+Sendung	noun	die	Sendungen	برنامه (رادیو و تلویزیون)	برنامه تلویزیونی	media
+Programm	noun	das	Programme	برنامه	برنامه	media
+Werbung	noun	die	Werbungen	آگهی، تبلیغات	تبلیغات	media
+Zeitschrift	noun	die	Zeitschriften	مجله	مجله	media	checked:level
+Fernsehen	noun	das		تلویزیون (رسانه)	تلویزیون (رسانه)	media	number:sg_only
+online	adj			آنلاین، برخط	آنلاین	media
+Internetseite	noun	die	Internetseiten	وب‌سایت	وب‌سایت	media
+App	noun	die	Apps	اپلیکیشن، برنامه (گوشی)	اپ	media	checked:level
+Laptop	noun	der	Laptops	لپ‌تاپ	لپ‌تاپ	media
+Bildschirm	noun	der	Bildschirme	صفحه نمایش	صفحه نمایش	media	checked:level
+Datei	noun	die	Dateien	فایل	فایل	media	checked:level
+Passwort	noun	das	Passwörter	رمز عبور	رمز عبور	media
+WLAN	noun	das	WLANs	وای‌فای	وای‌فای	media	checked:level
+Akku	noun	der	Akkus	باتری (شارژی)	باتری	media	checked:level
+herunterladen	verb			دانلود کردن	دانلود کردن	media
+speichern	verb			ذخیره کردن	ذخیره کردن	media	checked:level
+klicken	verb			کلیک کردن	کلیک کردن	media	checked:level
+Kamera	noun	die	Kameras	دوربین	دوربین	media
+Video	noun	das	Videos	ویدیو	ویدیو	media
+Kopfhörer	noun	der	Kopfhörer	هدفون	هدفون	media	checked:level
+zurückrufen	verb			دوباره زنگ زدن، جواب تماس را دادن	دوباره زنگ زدن	media
+besetzt	adj			اشغال (تلفن، جا)	اشغال	media
+eine Nachricht schreiben	phrase			پیام نوشتن	پیام دادن	media	parts:Nachricht schreiben
+Einladung	noun	die	Einladungen	دعوت، دعوت‌نامه	دعوت	leisure
+absagen	verb			لغو کردن (قرار)، کنسل کردن	لغو کردن	leisure
+einen Termin absagen	phrase			وقت را لغو کردن	لغو وقت	time	parts:Termin absagen
+sich verabreden	verb			قرار گذاشتن	قرار گذاشتن	leisure
+Verabredung	noun	die	Verabredungen	قرار (ملاقات)	قرار ملاقات	leisure
+
+# feelings
+Gefühl	noun	das	Gefühle	احساس	احساس	feelings
+Freude	noun	die	Freuden	شادی	شادی	feelings
+froh	adj			شاد، خوشحال	شاد	feelings
+zufrieden	adj			راضی	راضی	feelings
+stolz	adj			مفتخر، سربلند	سربلند	feelings
+enttäuscht	adj			ناامید (از کسی یا چیزی)، دلخور	ناامید	feelings
+überrascht	adj			غافلگیر، شگفت‌زده	غافلگیر	feelings
+wütend	adj			عصبانی، خشمگین	عصبانی	feelings
+sauer	adj			عصبانی، دلخور	عصبانی	feelings	code:sauer-2	sense_of:sauer	register:familier
+aufgeregt	adj			هیجان‌زده، دستپاچه	هیجان‌زده	feelings
+Ärger	noun	der		دردسر، دلخوری	دردسر	feelings	number:sg_only
+Traum	noun	der	Träume	خواب، رؤیا	رؤیا	feelings
+träumen	verb			خواب دیدن، رؤیا داشتن	خواب دیدن	feelings
+Wunsch	noun	der	Wünsche	آرزو، خواسته	آرزو	feelings
+einen Wunsch haben	phrase			خواسته‌ای داشتن	خواسته داشتن	feelings	parts:Wunsch haben
+Laune	noun	die	Launen	حال، حوصله (روحیه)	روحیه	feelings
+gute Laune haben	phrase			سرحال بودن، خوش‌حال بودن	سرحال بودن	feelings	parts:gut Laune haben
+keine Sorge	interj			نگران نباش!	دلداری	people
+
+# describing things: more adjectives
+möglich	adj			ممکن	ممکن	qualities
+unmöglich	adj			غیرممکن، ناممکن	غیرممکن	qualities
+nötig	adj			لازم، ضروری	لازم	qualities
+wahr	adj			راست، حقیقی	راست (درست)	qualities
+echt	adj			واقعی، اصل	واقعی	qualities
+gleich	adj			یکسان، همان	یکسان	qualities	code:gleich-adj
+verschieden	adj			مختلف، گوناگون	مختلف	qualities
+anders	adv			جور دیگر، متفاوت	متفاوت	qualities
+normal	adj			عادی، معمولی	عادی	qualities
+typisch	adj			معمول، خاصِ (کسی یا جایی)	خاص (نمونه)	qualities
+besonders	adv			به‌خصوص، مخصوصاً	به‌خصوص	qualities
+voll	adj			پر	پر	qualities
+leer	adj			خالی	خالی	qualities
+kaputt	adj			خراب، شکسته	خراب	qualities
+praktisch	adj			کاربردی، به‌دردبخور	کاربردی	qualities
+schwierig	adj			سخت، دشوار	سخت	qualities
+kompliziert	adj			پیچیده	پیچیده	qualities
+hart	adj			سفت، سخت (جنس)	سفت	qualities
+weich	adj			نرم	نرم	qualities
+hoch	adj			بلند، مرتفع	بلند (ارتفاع)	qualities
+niedrig	adj			کوتاه (ارتفاع)، پایین	کوتاه (ارتفاع)	qualities	checked:level
+tief	adj			عمیق، گود	عمیق	qualities
+breit	adj			پهن، عریض	پهن	qualities
+eng	adj			تنگ، باریک	تنگ	qualities
+rund	adj			گرد	گرد	qualities
+schwer	adj			سنگین	سنگین	qualities	code:schwer-2	sense_of:schwer
+leicht	adj			سبک (وزن)	سبک	qualities	code:leicht-2	sense_of:leicht
+prima	adj			عالی، معرکه	عالی	qualities
+wunderbar	adj			فوق‌العاده، شگفت‌انگیز	فوق‌العاده	qualities
+perfekt	adj			بی‌نقص، کامل	بی‌نقص	qualities
+schrecklich	adj			وحشتناک	وحشتناک	qualities
+furchtbar	adj			وحشتناک، خیلی بد	وحشتناک	qualities
+spannend	adj			هیجان‌انگیز، جذاب	هیجان‌انگیز	qualities
+komisch	adj			عجیب، خنده‌دار	عجیب	qualities
+cool	adj			باحال، عالی	عالی	qualities	register:familier
+egal	adj			فرقی نکردن، مهم نبودن	بی‌فرق بودن	qualities	note:Das ist mir egal. یعنی «برایم فرقی نمی‌کند».
+gemeinsam	adj			مشترک، با هم	مشترک	qualities
+privat	adj			خصوصی	خصوصی	qualities
+beliebt	adj			محبوب، پرطرفدار	محبوب	qualities
+direkt	adj			مستقیم	مستقیم (بی‌واسطه)	qualities
+zweite	adj			دوم	دوم	numbers
+dritte	adj			سوم	سوم	numbers
+Hälfte	noun	die	Hälften	نصف، نیمه	نصف	numbers
+doppelt	adj			دوبرابر، دوتایی	دوبرابر	numbers
+Million	noun	die	Millionen	میلیون	میلیون	numbers
+Meter	noun	der	Meter	متر	متر	numbers
+Kilometer	noun	der	Kilometer	کیلومتر	کیلومتر	numbers
+Zentimeter	noun	der	Zentimeter	سانتی‌متر	سانتی‌متر	numbers
+
+# ideas, things, reasons
+Sache	noun	die	Sachen	چیز، وسیله، موضوع	چیز	abstract
+Ding	noun	das	Dinge	چیز	چیز	abstract
+Teil	noun	der	Teile	بخش، قسمت	بخش	abstract
+Art	noun	die	Arten	نوع، جور	نوع	abstract
+Grund	noun	der	Gründe	دلیل	دلیل	abstract
+Idee	noun	die	Ideen	ایده، فکر	ایده	abstract
+Plan	noun	der	Pläne	برنامه، نقشه	نقشه (طرح)	abstract
+Ziel	noun	das	Ziele	هدف، مقصد	هدف	abstract
+Meinung	noun	die	Meinungen	نظر، عقیده	نظر	abstract
+meiner Meinung nach	adv			به نظر من	به نظر من	function
+Unterschied	noun	der	Unterschiede	فرق، تفاوت	فرق	abstract
+Regel	noun	die	Regeln	قانون، قاعده	قاعده	abstract
+Punkt	noun	der	Punkte	نقطه، امتیاز	نقطه	abstract
+Liste	noun	die	Listen	فهرست، لیست	فهرست	abstract
+Rest	noun	der	Reste	باقی‌مانده	باقی‌مانده	abstract
+Menge	noun	die	Mengen	مقدار، تعداد زیاد	مقدار	abstract
+eine Menge	det			یک عالمه، مقدار زیادی	یک عالمه	numbers
+Tipp	noun	der	Tipps	نکته، راهنمایی	نکته	abstract
+Wahl	noun	die	Wahlen	انتخاب	انتخاب	abstract
+Chance	noun	die	Chancen	شانس، فرصت	فرصت	abstract
+verboten	adj			ممنوع	ممنوع	society
+erlaubt	adj			مجاز	مجاز	society
+erlauben	verb			اجازه دادن	اجازه دادن	society
+verbieten	verb			ممنوع کردن	ممنوع کردن	society	checked:level
+Schild	noun	das	Schilder	تابلو (راهنما)	تابلو	city
+Staat	noun	der	Staaten	دولت، کشور	دولت (کشور)	society
+Bürger	noun	der	Bürger	شهروند	شهروند	society
+Ruhe	noun	die		آرامش، سکوت	آرامش	feelings	number:sg_only
+in Ruhe lassen	phrase			به حال خود گذاشتن، راحت گذاشتن	به حال خود گذاشتن	actions	parts:Ruhe lassen
+
+# fixed expressions for talking
+ach so	interj			آهان! (فهمیدم)	فهمیدن ناگهانی	people
+na klar	interj			معلومه!، البته!	تأیید با اطمینان	people
+gern geschehen	interj			خواهش می‌کنم (در جواب تشکر)	جواب تشکر	people
+gleichfalls	interj			همچنین! (شما هم)	جواب آرزو	people
+schade	adj			حیف	حیف	feelings	note:Das ist schade! یعنی «حیف شد!».
+mach's gut	interj			خدا نگهدار، مواظب خودت باش	خداحافظی گرم	people
+bis später	interj			تا بعد!	تا بعد	people
+Was ist los?	interj			چه شده؟، چه خبر است؟	پرسیدن ماجرا	people
+keine Ahnung	interj			نمی‌دانم!، هیچ نظری ندارم!	بی‌خبری	people
+frohe Weihnachten	interj			کریسمس مبارک!	تبریک کریسمس	people
+frohes neues Jahr	interj			سال نو مبارک!	تبریک سال نو	people
+schönen Tag noch	interj			روز خوبی داشته باشید!	آرزوی روز خوب	people
+viele Grüße	interj			با سلام فراوان (پایان نامه دوستانه)	پایان نامه دوستانه	media
+mit freundlichen Grüßen	interj			با احترام (پایان نامه رسمی)	پایان نامه رسمی	media
+sehr geehrte Damen und Herren	interj			خانم‌ها و آقایان محترم (آغاز نامه رسمی)	آغاز نامه رسمی	media
+
+# more everyday nouns and second senses of A1 words
+Ort	noun	der	Orte	جا، محل	محل	space
+Raum	noun	der	Räume	اتاق، فضا	فضا	space
+Platz	noun	der	Plätze	جا (برای نشستن یا ایستادن)، جای خالی	جای خالی	space	code:Platz-2	sense_of:Platz
+Platz nehmen	phrase			نشستن (بفرمایید بنشینید)	نشستن مؤدبانه	people	parts:Platz nehmen
+Platz machen	phrase			جا باز کردن	جا باز کردن	space	parts:Platz machen
+Seite	noun	die	Seiten	طرف، سمت	طرف	space	code:Seite-2	sense_of:Seite
+Bank	noun	die	Bänke	نیمکت	نیمکت	city	code:Bank-2	sense_of:Bank
+Mal	noun	das	Male	بار، دفعه	دفعه	time	note:das erste Mal یعنی «بار اول»؛ zum ersten Mal یعنی «برای اولین بار».
+Besuch	noun	der	Besuche	دیدار، مهمان (دیدار‌کننده)	دیدار	people
+Besuch haben	phrase			مهمان داشتن	مهمان داشتن	people	parts:Besuch haben
+Anruf	noun	der	Anrufe	تماس تلفنی	تماس تلفنی	media
+Uhrzeit	noun	die	Uhrzeiten	ساعت (زمان روز)	وقت روز	time
+Klo	noun	das	Klos	دستشویی، توالت	دستشویی	home	register:familier
+auf die Toilette gehen	phrase			به دستشویی رفتن	دستشویی رفتن	home	parts:Toilette gehen
+Kumpel	noun	der	Kumpel	رفیق	دوست	people	register:familier
+Freunde finden	phrase			دوست پیدا کردن	دوست پیدا کردن	people	parts:Freund finden
+Spaß haben	phrase			خوش گذشتن، کیف کردن	خوش گذشتن	leisure	parts:Spaß haben
+wach	adj			بیدار	بیدار	qualities
+durstig	adj			تشنه	تشنه	food	checked:level
+männlich	adj			مذکر، مردانه	مذکر	people
+weiblich	adj			مؤنث، زنانه	مؤنث	people	checked:level
+zum Beispiel	adv			مثلاً، برای نمونه	مثلاً	function
+am Anfang	adv			در ابتدا، اولش	در ابتدا	time
+am Ende	adv			در پایان، آخرش	در پایان	time
+zum ersten Mal	adv			برای اولین بار	اولین بار	time
+ab und zu	adv			گاه‌گاهی، هر از گاهی	گاه‌گاهی	time
+auf jeden Fall	adv			در هر صورت، حتماً	در هر صورت	function
+im Moment	adv			در حال حاضر، فعلاً	فعلاً	time
+Nähe	noun	die		نزدیکی	نزدیکی	space	number:sg_only
+in der Nähe	adv			نزدیکِ اینجا، در همین نزدیکی	در نزدیکی	space
+von Beruf	adv			از نظر شغل (شغلم … است)	از نظر شغل	people	note:Ich bin Lehrer von Beruf. یعنی «شغلم معلمی است».
