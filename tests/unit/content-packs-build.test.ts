@@ -3,10 +3,10 @@ import { standardTable } from "@/server/content/conjugation-check";
 import { Analyzer } from "@/server/content/packs/analyze";
 import { buildPack } from "@/server/content/packs/build";
 import { buildGrammar } from "@/server/content/packs/grammar";
-import { Morph } from "@/server/content/packs/morph";
+import { germanAdjectiveForms, Morph } from "@/server/content/packs/morph";
 import { buildSentences } from "@/server/content/packs/sentences";
 import { buildTables } from "@/server/content/packs/tables";
-import { verbDistractors } from "@/server/content/packs/distractors";
+import { nearMeaning, verbDistractors } from "@/server/content/packs/distractors";
 import { checkWordPack, frequencyRanks, type PackWord } from "@/server/content/packs/words";
 import { appSettingDefaults } from "@/server/settings/app-catalog";
 
@@ -52,6 +52,14 @@ describe("sentences of a pack", () => {
     const surfaces = level.exceptions.map((item) => `${item.code}:${item.surface}`);
     expect(surfaces).toEqual(expect.arrayContaining(["être:suis", "être:sont", "avoir:ai", "aller:vais"]));
     expect(surfaces).not.toContain("manger:mange");
+  });
+
+  it("reads Lexique's oe spelling as œ and the adjective forms it files apart (nouvel, bel)", () => {
+    const list = words("fr", ["un\tdet\t\t\tیک\tun: یک\tfunction\tno_card:1", "sœur\tnoun\tf\tsœurs\tخواهر\tخواهر\tfamily", "œuf\tnoun\tm\t\tتخم‌مرغ\tتخم‌مرغ\tfood", "nouveau\tadj\t\t\tنو\tنو\tqualities", "beau\tadj\t\t\tزیبا\tزیبا\tqualities", "ordinateur\tnoun\tm\t\tکامپیوتر\tکامپیوتر\thome"]);
+    const codes = (text: string) => analyzerOf("fr", list).analyze(text, { level: "A1" }).tokens.map((token) => token.code);
+    expect(codes("un nouvel ordinateur")).toEqual(["un", "nouveau", "ordinateur"]);
+    expect(codes("un bel ordinateur")).toEqual(["un", "beau", "ordinateur"]);
+    expect(new Morph("fr", list).candidates("œufs").map((candidate) => candidate.word.word.code)).toEqual(["œuf"]);
   });
 
   it("refuses a word the learner meets later than the sentence's word", () => {
@@ -196,6 +204,74 @@ describe("conjugation tables of a pack", () => {
     expect(built.notes.map((item) => item.text)).toContain("no grammar unit says «tables: Konjunktiv I»: its tables have no unit (waits for the B2 grammar)");
   });
 
+  it("keeps the e of «lecker», drops it in «teuer» and «dunkel»", () => {
+    const forms = (lemma: string) => germanAdjectiveForms(lemma).map((item) => item.form);
+    expect(forms("lecker")).toContain("leckeres");
+    expect(forms("teuer")).toContain("teures");
+    expect(forms("dunkel")).toContain("dunkles");
+  });
+
+  it("reads a German infinitive form next to wir, sie or Sie as finite, and never offers a near-synonym", () => {
+    const list = words("de", [
+      "wir\tpron\t\t\tما\tما\tfunction\tno_card:1",
+      "was\tpron\t\t\tچه\tچه\tfunction\tno_card:1",
+      "Sie\tpron\t\t\tشما (رسمی)\tشما رسمی\tfunction\tno_card:1",
+      "ich\tpron\t\t\tمن\tمن\tfunction\tno_card:1",
+      "möchten\tverb\t\t\tخواستن (مؤدبانه)، میل داشتن\tخواستن مؤدبانه\tfunction",
+      "wollen\tverb\t\t\tخواستن\tخواستن\tfunction",
+      "trinken\tverb\t\t\tنوشیدن\tنوشیدن\tdrink",
+      "kaufen\tverb\t\t\tخریدن\tخریدن\tshopping",
+      "einkaufen\tverb\t\t\tخرید کردن\tخرید کردن\tshopping",
+      "bezahlen\tverb\t\t\tپرداختن\tپرداختن\tshopping",
+      "kosten\tverb\t\t\tقیمت داشتن\tقیمت داشتن\tshopping",
+      "verkaufen\tverb\t\t\tفروختن\tفروختن\tshopping",
+    ]);
+    const out = buildSentences(analyzerOf("de", list), [{ file: "s.txt", text: "# möchten\nWas [möchten] Sie trinken? | چه میل دارید بنوشید؟\n# kaufen\nIch möchte [kaufen]. | می‌خواهم بخرم." }], "A1", new Set(list));
+    expect(out.errors).toEqual([]);
+    expect(out.records[0].targets[0]).toMatchObject({ distractors: ["möchte", "möchtest", "möchtet"], hint: "(möchten)" });
+    expect(out.records[1].targets[0].distractors).not.toContain("einkaufen");
+    expect(nearMeaning("خواستن (مؤدبانه)، میل داشتن", "خواستن")).toBe(true);
+    expect(nearMeaning("دوست داشتن", "خیلی دوست داشتن")).toBe(true);
+    expect(nearMeaning("خریدن", "فروختن")).toBe(false);
+    expect(nearMeaning("چه کسی، کی", "چه، چه چیزی")).toBe(false); // qui, que
+  });
+
+  it("offers the other forms of a function word, and keeps verb phrases and other phrases apart", () => {
+    const list = words("fr", [
+      "le\tdet\t\t\tحرف تعریف معین\tle: حرف تعریف معین\tfunction\tno_card:1",
+      "tu\tpron\t\t\tتو\ttu: تو\tfunction\tno_card:1",
+      "être\tverb\t\t\tبودن\tبودن\tfunction",
+      "avoir\tverb\t\t\tداشتن\tداشتن\tfunction",
+      "faire\tverb\t\t\tانجام دادن\tانجام دادن\tactions",
+      "aimer\tverb\t\t\tدوست داشتن\tدوست داشتن\tfeelings",
+      "quel\tdet\t\t\tکدام، چه جور\tکدام\tfunction",
+      "tout\tdet\t\t\tهمه، همهٔ\tهمه\tfunction",
+      "heure\tnoun\tf\t\tساعت\tساعت\ttime",
+      "ville\tnoun\tf\t\tشهر\tشهر\tcity",
+      "faim\tnoun\tf\t\tگرسنگی\tگرسنگی\tfood\tnumber:sg_only",
+      "soif\tnoun\tf\t\tتشنگی\tتشنگی\tdrink\tnumber:sg_only",
+      "nuit\tnoun\tf\t\tشب\tشب\ttime",
+      "bon\tadj\t\t\tخوب\tخوب\tqualities",
+      "bientôt\tadv\t\t\tبه‌زودی\tبه‌زودی\ttime",
+      "avoir faim\tphrase\t\t\tگرسنه بودن\tگرسنه بودن\tfood\tparts:avoir faim",
+      "avoir soif\tphrase\t\t\tتشنه بودن\tتشنه بودن\tdrink\tparts:avoir soif",
+      "faire attention\tphrase\t\t\tمراقب بودن\tمراقب بودن\tactions\tparts:faire",
+      "avoir raison\tphrase\t\t\tحق داشتن\tحق داشتن\tabstract\tparts:avoir",
+      "bonne nuit\tphrase\t\t\tشب بخیر\tشب بخیر\ttime\tparts:bon nuit",
+      "à bientôt\tphrase\t\t\tبه‌زودی می‌بینمت\tتا دیدار بعد\ttime\tparts:bientôt",
+      "bon appétit\tphrase\t\t\tنوش جان\tنوش جان\tfood\tparts:bon",
+      "s'il te plaît\tphrase\t\t\tلطفاً\tلطفاً\tpeople\tparts:tu",
+    ]);
+    const text = ["# quel", "[Quelle] heure ? | ساعت چند است؟", "# tout", "Tu aimes [toute] la ville. | تو همهٔ شهر را دوست داری.", "# bonne nuit", "[Bonne nuit] ! | شب بخیر!"].join("\n");
+    const out = buildSentences(analyzerOf("fr", list), [{ file: "s.txt", text }], "A1", new Set(list));
+    expect(out.errors).toEqual([]);
+    const [quel, tout, nuit] = out.records.map((record) => record.targets[0]);
+    expect(quel.distractors).toEqual(["Quel", "Quels", "Quelles"]);
+    expect(tout.distractors).toEqual(["tout", "tous", "toutes"]);
+    expect(nuit.distractors).toHaveLength(3);
+    expect(nuit.distractors.some((option) => /faim|soif|attention|raison/.test(option))).toBe(false);
+  });
+
   it("writes German in today's spelling and makes the verbs Morphy lacks from their parts", () => {
     const forms = (verb: string, tense: string) => Object.values(standardTable("de", verb, tense)?.forms ?? {});
     expect(forms("müssen", "Präsens")).toEqual(["muss", "musst", "muss", "müssen", "müsst", "müssen"]);
@@ -205,6 +281,12 @@ describe("conjugation tables of a pack", () => {
     expect(forms("mitkommen", "Perfekt")[0]).toBe("bin mitgekommen");
     expect(forms("sich ausruhen", "Präsens")[0]).toBe("ruhe mich aus");
     expect(forms("möchten", "Präsens")).toEqual(["möchte", "möchtest", "möchte", "möchten", "möchtet", "möchten"]);
+    // Morphy files these as separable; their participles say they are not.
+    expect(forms("wiederholen", "Präsens")[0]).toBe("wiederhole");
+    expect(forms("übersetzen", "Perfekt")[0]).toBe("habe übersetzt");
+    expect(forms("unterschreiben", "Präteritum")[0]).toBe("unterschrieb");
+    expect(forms("umstellen", "Präsens")[0]).toBe("stelle um");
+    expect(forms("umstellen", "Perfekt")[0]).toBe("habe umgestellt");
     const list = words("de", ["müssen\tverb\t\t\tمجبور بودن\tباید\tfunction", "mitkommen\tverb\t\t\tهمراه آمدن\tهمراه آمدن\ttravel", "ich\tpron\t\t\tمن\tمن\tfunction\tno_card:1", "du\tpron\t\t\tتو\tتو\tfunction\tno_card:1"]);
     const analysis = analyzerOf("de", list).analyze("Ich muss. Kommst du mit?", { level: "A1" });
     expect(analysis.errors).toEqual([]);

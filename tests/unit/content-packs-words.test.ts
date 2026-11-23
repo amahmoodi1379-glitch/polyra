@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { parseLexicon } from "@/server/content/lexicon";
-import { checkWordPack, type PackFile } from "@/server/content/packs/words";
+import { checkWordPack, coveredLemmas, type PackFile } from "@/server/content/packs/words";
 
 /** The word lists Claude writes (content/README.md) pass every rule of the panel's word import. */
 const tsv = (...lines: string[][]) => ["lemma\tpos\tgender\tplural\tmeaning_fa\tconcept_fa\ttopic", ...lines.map((cells) => cells.join("\t"))].join("\n");
@@ -87,6 +87,14 @@ describe("word lists (content/<language>/words/<LEVEL>.tsv)", () => {
     const pack = checkWordPack("fr", [{ level: "A1", file: "A1.tsv", text }], oe, parseLexicon("coeur\tm=coeurs\n"));
     expect(pack.words[0].rank).toBe(290);
     expect(pack.warnings.map((note) => note.lemma)).toEqual(["cœur"]);
+  });
+
+  it("counts a reflexive verb as covering its bare verb, and a word with œ its oe spelling, in the coverage report", () => {
+    expect(coveredLemmas({ lemma: "se lever", pos: "verb" })).toEqual(["se lever", "lever"]);
+    expect(coveredLemmas({ lemma: "s'asseoir", pos: "verb" })).toEqual(["s'asseoir", "asseoir"]);
+    expect(coveredLemmas({ lemma: "sich freuen", pos: "verb" })).toEqual(["sich freuen", "freuen"]);
+    expect(coveredLemmas({ lemma: "s'il vous plaît", pos: "interj" })).toEqual(["s'il vous plaît"]);
+    expect(coveredLemmas({ lemma: "Œuf", pos: "noun" })).toEqual(["œuf", "oeuf"]);
   });
 
   it("warns on a gender, plural or level the lexicon and the frequency list disagree with, unless checked", () => {

@@ -1,0 +1,447 @@
+// German A1 sentences for the card words 271–333 of content/de/words/A1.tsv, in teaching order.
+// Every other word is taught before the block's word.
+
+# aufstehen
+Ich muss morgen früh [aufstehen]. | فردا باید زود بیدار شوم. | d: geben, nehmen, finden
+Am Sonntag will ich nicht früh [aufstehen]. | یکشنبه نمی‌خواهم زود بیدار شوم. | d: geben, nehmen, finden
+Anna will heute nicht [aufstehen]. | آنا امروز نمی‌خواهد بیدار شود. | d: geben, nehmen, finden
+Kannst du um sechs Uhr [aufstehen]? | می‌توانی ساعت شش بیدار شوی؟ | d: geben, nehmen, finden
+Die Kinder möchten nicht [aufstehen]. | بچه‌ها نمی‌خواهند از خواب بلند شوند. | d: geben, nehmen, finden
+
+# duschen
+Ich [dusche] am Morgen. | صبح دوش می‌گیرم.
+Du [duschst] jeden Abend. | تو هر شب دوش می‌گیری.
+Anna [duscht] jetzt. | آنا الان دارد دوش می‌گیرد.
+Ich möchte jetzt [duschen]. | می‌خواهم الان دوش بگیرم. | d: dusche, duschst, duscht
+Nach der Arbeit [dusche] ich. | بعد از کار دوش می‌گیرم.
+
+# frühstücken
+Ich [frühstücke] um sieben Uhr. | ساعت هفت صبحانه می‌خورم.
+Wir [frühstücken] zusammen. | ما با هم صبحانه می‌خوریم. | d: frühstücke, frühstückst, frühstückt
+Was [frühstückst] du? | صبحانه چه می‌خوری؟
+Am Sonntag [frühstücken] wir spät. | یکشنبه دیر صبحانه می‌خوریم. | d: frühstücke, frühstückst, frühstückt
+Ich möchte heute zu Hause [frühstücken]. | امروز می‌خواهم در خانه صبحانه بخورم. | d: frühstücke, frühstückst, frühstückt
+Anna [frühstückt] nie. | آنا هیچ‌وقت صبحانه نمی‌خورد.
+
+# beginnen
+Die Schule [beginnt] um acht Uhr. | مدرسه ساعت هشت شروع می‌شود.
+Der Termin [beginnt] um zehn. | قرار ساعت ده شروع می‌شود.
+Wann [beginnt] die Pause? | استراحت کی شروع می‌شود؟
+Wir [beginnen] jetzt. | الان شروع می‌کنیم. | d: beginne, beginnst, beginnt
+Im März [beginnt] der Frühling. | بهار در ماه مارس شروع می‌شود.
+Morgen [beginne] ich mit der Arbeit. | فردا کار را شروع می‌کنم.
+
+# anfangen
+Wir müssen jetzt [anfangen]. | الان باید شروع کنیم. | d: schlafen, duschen, fahren
+Kann ich jetzt [anfangen]? | می‌توانم الان شروع کنم؟ | d: schlafen, duschen, fahren
+Die Kinder können jetzt [anfangen]. | بچه‌ها الان می‌توانند شروع کنند. | d: schlafen, duschen, fahren
+Du kannst morgen [anfangen]. | می‌توانی فردا شروع کنی. | d: schlafen, duschen, fahren
+Wann möchtest du [anfangen]? | کی می‌خواهی شروع کنی؟ | d: schlafen, duschen, fahren
+
+# warten
+Ich [warte] zehn Minuten. | ده دقیقه صبر می‌کنم.
+Wir [warten] schon eine Stunde. | یک ساعت است که منتظریم. | d: warte, wartest, wartet
+Bitte [warten] Sie einen Moment. | لطفاً یک لحظه صبر کنید. | d: warte, wartest, wartet
+Anna [wartet] zu Hause. | آنا در خانه منتظر است.
+Ich kann nicht mehr [warten]. | دیگر نمی‌توانم صبر کنم. | d: warte, wartest, wartet
+Warum [wartest] du hier? | چرا اینجا منتظری؟
+
+# bleiben
+Ich [bleibe] heute zu Hause. | امروز خانه می‌مانم.
+Wir [bleiben] eine Woche in Wien. | یک هفته در وین می‌مانیم. | d: bleibe, bleibst, bleibt
+Warum [bleibst] du nicht hier? | چرا اینجا نمی‌مانی؟
+Anna [bleibt] bis Sonntag. | آنا تا یکشنبه می‌ماند.
+Ich möchte noch [bleiben]. | می‌خواهم هنوز بمانم. | d: bleibe, bleibst, bleibt
+
+# leben
+Ich [lebe] in Deutschland. | من در آلمان زندگی می‌کنم.
+Meine Großeltern [leben] in Isfahan. | پدربزرگ و مادربزرگم در اصفهان زندگی می‌کنند. | d: lebe, lebst, lebt
+Mein Großvater [lebt] noch. | پدربزرگم هنوز زنده است.
+Wir [leben] gern hier. | ما دوست داریم اینجا زندگی کنیم. | d: lebe, lebst, lebt
+Hier [lebt] man gut. | اینجا آدم خوب زندگی می‌کند.
+
+# müde
+Ich bin sehr [müde]. | خیلی خسته‌ام.
+Das Kind ist [müde] und schläft. | بچه خسته است و می‌خوابد.
+Bist du [müde]? | خسته‌ای؟
+Am Abend bin ich immer [müde]. | شب‌ها همیشه خسته‌ام.
+Nach der Arbeit sind wir [müde]. | بعد از کار خسته‌ایم.
+
+# zur Schule gehen
+Mein Sohn [geht zur Schule]. | پسرم به مدرسه می‌رود.
+Die Kinder [gehen zur Schule]. | بچه‌ها به مدرسه می‌روند.
+Ich [gehe zur Schule] und lerne viel. | من به مدرسه می‌روم و زیاد یاد می‌گیرم.
+Anna muss morgen [zur Schule gehen]. | آنا فردا باید به مدرسه برود. | d: zur Schule geht, zur Schule gehe, zur Schule gehst
+Das Kind möchte nicht [zur Schule gehen]. | بچه نمی‌خواهد به مدرسه برود. | d: zur Schule geht, zur Schule gehe, zur Schule gehst
+
+# zur Arbeit gehen
+Mein Vater [geht zur Arbeit]. | پدرم سر کار می‌رود.
+Ich [gehe zur Arbeit] und Anna geht zur Schule. | من سر کار می‌روم و آنا به مدرسه می‌رود.
+Wir [gehen zur Arbeit], die Kinder bleiben zu Hause. | ما سر کار می‌رویم، بچه‌ها در خانه می‌مانند.
+Ich muss jetzt [zur Arbeit gehen]. | الان باید سر کار بروم. | d: zur Arbeit geht, zur Arbeit gehe, zur Arbeit gehst
+Heute möchte ich nicht [zur Arbeit gehen]. | امروز نمی‌خواهم سر کار بروم. | d: zur Arbeit geht, zur Arbeit gehe, zur Arbeit gehst
+
+# Essen
+Das [Essen] ist sehr gut. | غذا خیلی خوب است.
+Ich mag das deutsche [Essen]. | غذای آلمانی را دوست دارم.
+Nach dem [Essen] trinken wir Tee. | بعد از غذا چای می‌نوشیم.
+Danke für das [Essen]! | ممنون برای غذا!
+Das [Essen] kommt gleich. | غذا الان می‌رسد.
+
+# Frühstück
+Das [Frühstück] ist um sieben Uhr. | صبحانه ساعت هفت است.
+Zum [Frühstück] esse ich Brot. | برای صبحانه نان می‌خورم.
+Was möchtest du zum [Frühstück]? | برای صبحانه چه می‌خواهی؟
+Ich trinke Tee zum [Frühstück]. | سر صبحانه چای می‌نوشم.
+Wir machen das [Frühstück]. | ما صبحانه را آماده می‌کنیم.
+
+# Mittagessen
+Das [Mittagessen] ist um zwölf Uhr. | ناهار ساعت دوازده است.
+Was gibt es zum [Mittagessen]? | برای ناهار چه داریم؟
+Nach dem [Mittagessen] machen wir Pause. | بعد از ناهار استراحت می‌کنیم.
+Das [Mittagessen] ist heute bei meiner Großmutter. | ناهار امروز خانه مادربزرگم است.
+Wir haben keine Zeit für das [Mittagessen]. | برای ناهار وقت نداریم.
+
+# Abendessen
+Das [Abendessen] ist um acht Uhr. | شام ساعت هشت است.
+Was gibt es zum [Abendessen]? | برای شام چه داریم؟
+Nach dem [Abendessen] lesen die Kinder. | بعد از شام بچه‌ها کتاب می‌خوانند.
+Kommst du zum [Abendessen]? | برای شام می‌آیی؟
+Das [Abendessen] war sehr gut. | شام خیلی خوب بود.
+
+# zu Mittag essen
+Ich möchte mit dir [zu Mittag essen]. | می‌خواهم با تو ناهار بخورم. | d: zu Mittag isst, zu Mittag esse, zu Mittag trinken
+Wo kann man hier [zu Mittag essen]? | اینجا کجا می‌شود ناهار خورد؟ | d: zu Mittag isst, zu Mittag esse, zu Mittag trinken
+Ich weiß nicht, wann wir [zu Mittag essen]. | نمی‌دانم کی ناهار می‌خوریم. | d: zu Mittag esse, zu Mittag isst, zu Mittag esst
+Die Kinder [essen zu Mittag] in der Schule. | بچه‌ها در مدرسه ناهار می‌خورند.
+Anna [isst zu Mittag] nur Brot. | آنا ناهار فقط نان می‌خورد.
+
+# zu Abend essen
+Möchtest du mit uns [zu Abend essen]? | می‌خواهی با ما شام بخوری؟ | d: zu Abend isst, zu Abend esse, zu Abend trinken
+Wir müssen heute früh [zu Abend essen]. | امروز باید زود شام بخوریم. | d: zu Abend isst, zu Abend esse, zu Abend trinken
+Ich weiß nicht, wann wir heute [zu Abend essen]. | نمی‌دانم امروز کی شام می‌خوریم. | d: zu Abend esse, zu Abend isst, zu Abend esst
+Die Familie [isst zu Abend] zusammen. | خانواده با هم شام می‌خورد.
+Ich [esse zu Abend] mit meiner Familie. | با خانواده‌ام شام می‌خورم.
+
+# kochen
+Ich [koche] gern. | من آشپزی را دوست دارم.
+Meine Mutter [kocht] sehr gut. | مادرم خیلی خوب آشپزی می‌کند.
+Was [kochst] du heute? | امروز چه می‌پزی؟
+Wir [kochen] zusammen. | ما با هم آشپزی می‌کنیم. | d: koche, kochst, kocht
+Kannst du [kochen]? | آشپزی بلدی؟ | d: koche, kochst, kocht
+Am Sonntag [kocht] mein Vater. | یکشنبه پدرم آشپزی می‌کند.
+
+# Kaffee kochen
+Ich [koche Kaffee] für dich. | برایت قهوه درست می‌کنم.
+Anna [kocht Kaffee] für alle. | آنا برای همه قهوه درست می‌کند.
+Kann ich [Kaffee kochen]? | می‌توانم قهوه درست کنم؟ | d: Kaffee kocht, Kaffee koche, Kaffee kochst
+Mein Mann [kocht Kaffee] und ich mache das Frühstück. | شوهرم قهوه درست می‌کند و من صبحانه را آماده می‌کنم.
+Ich muss jetzt [Kaffee kochen]. | الان باید قهوه درست کنم. | d: Kaffee kocht, Kaffee koche, Kaffee kochst
+
+# schmecken
+Das Brot [schmeckt] gut. | نان خوشمزه است.
+Der Kaffee [schmeckt] sehr gut. | قهوه خیلی خوشمزه است.
+Wie [schmeckt] der Tee? | مزه چای چطور است؟
+Das Essen [schmeckt] mir nicht. | غذا به دهانم مزه نمی‌دهد.
+Das Mittagessen [schmeckt] den Kindern. | ناهار به بچه‌ها مزه می‌دهد.
+
+# lecker
+Das Essen ist sehr [lecker]. | غذا خیلی خوشمزه است. | d: früh, spät, jung
+Der Kaffee ist [lecker]. | قهوه خوشمزه است. | d: früh, spät, jung
+Oh, das ist [lecker]! | اوه، این خوشمزه است! | d: früh, spät, jung
+Das Brot hier ist [lecker]. | نان اینجا خوشمزه است. | d: früh, spät, jung
+Das Abendessen war [lecker]. | شام خوشمزه بود. | d: früh, spät, jung
+
+# Hunger
+Ich habe großen [Hunger]. | خیلی گرسنه‌ام.
+Hast du schon [Hunger]? | گرسنه‌ات شده؟
+Die Kinder haben [Hunger]. | بچه‌ها گرسنه‌اند.
+Ich habe keinen [Hunger]. | گرسنه نیستم.
+Der [Hunger] ist groß. | گرسنگی زیاد است.
+
+# Hunger haben
+Ich [habe Hunger], und du? | من گرسنه‌ام، تو چطور؟
+Die Kinder [haben Hunger] und möchten essen. | بچه‌ها گرسنه‌اند و می‌خواهند غذا بخورند.
+Ich weiß nicht, warum ich immer [Hunger habe]. | نمی‌دانم چرا همیشه گرسنه‌ام.
+Das Baby [hat Hunger]. | بچه گرسنه است.
+Wir [haben Hunger], gibt es Brot? | ما گرسنه‌ایم، نان هست؟
+
+# Durst
+Ich habe großen [Durst]. | خیلی تشنه‌ام. | d: Hunger, Teller, Moment
+Hast du noch [Durst]? | هنوز تشنه‌ای؟ | d: Hunger, Teller, Moment
+Die Kinder haben [Durst]. | بچه‌ها تشنه‌اند. | d: Hunger, Teller, Moment
+Ich habe keinen [Durst]. | تشنه نیستم. | d: Hunger, Teller, Moment
+Bei [Durst] trinke ich Wasser. | وقتی تشنه‌ام آب می‌نوشم. | d: Hunger, Teller, Moment
+
+# Durst haben
+Ich [habe Durst], gibt es Wasser? | تشنه‌ام، آب هست؟
+Das Kind [hat Durst]. | بچه تشنه است.
+Wir [haben Durst] und trinken Wasser. | ما تشنه‌ایم و آب می‌نوشیم.
+Wer [hat Durst] und möchte Tee? | کی تشنه است و چای می‌خواهد؟
+Die Leute [haben Durst]. | مردم تشنه‌اند.
+
+# Brötchen
+Ich esse ein [Brötchen]. | یک نان گرد می‌خورم. | d: Buch, Auto, Geschenk
+Zum Frühstück gibt es [Brötchen]. | برای صبحانه نان گرد داریم. | d: Bücher, Autos, Geschenke
+Die [Brötchen] schmecken sehr gut. | نان‌های گرد خیلی خوشمزه‌اند. | d: Bücher, Autos, Geschenke
+Ich kaufe zehn [Brötchen]. | ده تا نان گرد می‌خرم. | d: Bücher, Autos, Geschenke
+Möchtest du noch ein [Brötchen]? | یک نان گرد دیگر می‌خواهی؟ | d: Buch, Auto, Geschenk
+
+# Butter
+Ich esse Brot mit [Butter]. | نان را با کره می‌خورم.
+Haben wir noch [Butter]? | هنوز کره داریم؟
+Ich kaufe [Butter] und Brot. | کره و نان می‌خرم.
+Das Brötchen mit [Butter] schmeckt gut. | نان گرد با کره خوشمزه است.
+Möchtest du [Butter]? | کره می‌خواهی؟
+
+# Käse
+Ich esse gern [Käse]. | پنیر دوست دارم.
+Ich esse Brot mit [Käse]. | نان را با پنیر می‌خورم.
+Der [Käse] schmeckt sehr gut. | پنیر خیلی خوشمزه است.
+Haben wir noch [Käse]? | هنوز پنیر داریم؟
+Zum Frühstück esse ich [Käse] und Brot. | برای صبحانه نان و پنیر می‌خورم.
+
+# Wurst
+Ich esse keine [Wurst]. | من سوسیس نمی‌خورم.
+Möchtest du ein Brötchen mit [Wurst]? | نان گرد با سوسیس می‌خواهی؟
+Die Kinder essen gern [Wurst]. | بچه‌ها سوسیس دوست دارند.
+Die [Wurst] schmeckt gut. | سوسیس خوشمزه است.
+Ich kaufe [Wurst] und Käse. | سوسیس و پنیر می‌خرم.
+
+# Fleisch
+Ich esse kein [Fleisch]. | من گوشت نمی‌خورم.
+Das [Fleisch] ist sehr gut. | گوشت خیلی خوب است.
+Am Sonntag essen wir [Fleisch]. | یکشنبه گوشت می‌خوریم.
+Ich kaufe [Fleisch] für das Abendessen. | برای شام گوشت می‌خرم.
+Isst du [Fleisch]? | گوشت می‌خوری؟
+
+# Fisch
+Ich esse gern [Fisch]. | ماهی دوست دارم.
+Der [Fisch] ist sehr lecker. | ماهی خیلی خوشمزه است.
+Heute gibt es [Fisch]. | امروز ماهی داریم.
+Am Freitag essen wir [Fisch]. | جمعه ماهی می‌خوریم.
+Magst du [Fisch]? | ماهی دوست داری؟
+
+# Hähnchen
+Das [Hähnchen] ist lecker. | مرغ خوشمزه است.
+Heute kochen wir [Hähnchen]. | امروز مرغ می‌پزیم.
+Möchten Sie [Hähnchen] oder Fisch? | مرغ می‌خواهید یا ماهی؟
+Ich kaufe ein [Hähnchen]. | یک مرغ می‌خرم.
+Die Kinder essen gern [Hähnchen]. | بچه‌ها مرغ دوست دارند.
+
+# Ei
+Ich esse ein [Ei] zum Frühstück. | برای صبحانه یک تخم‌مرغ می‌خورم.
+Wir brauchen sechs [Eier]. | شش تخم‌مرغ لازم داریم.
+Möchtest du ein [Ei]? | یک تخم‌مرغ می‌خواهی؟
+Das Kind isst kein [Ei]. | بچه تخم‌مرغ نمی‌خورد.
+Ich koche zwei [Eier]. | دو تخم‌مرغ می‌پزم.
+
+# Reis
+Wir essen [Reis] mit Fleisch. | ما برنج با گوشت می‌خوریم.
+Im Iran isst man viel [Reis]. | در ایران زیاد برنج می‌خورند.
+Der [Reis] ist lecker. | برنج خوشمزه است.
+Ich koche [Reis] für alle. | برای همه برنج می‌پزم.
+Möchtest du noch [Reis]? | باز هم برنج می‌خواهی؟
+
+# Salat
+Ich esse einen [Salat]. | یک سالاد می‌خورم.
+Der [Salat] schmeckt gut. | سالاد خوشمزه است.
+Möchtest du [Salat] mit Fisch? | سالاد با ماهی می‌خواهی؟
+Ich mache einen [Salat]. | یک سالاد درست می‌کنم.
+Zum Abendessen gibt es [Salat]. | برای شام سالاد داریم.
+
+# Suppe
+Die [Suppe] ist sehr lecker. | سوپ خیلی خوشمزه است.
+Ich koche eine [Suppe]. | یک سوپ می‌پزم.
+Möchtest du [Suppe]? | سوپ می‌خواهی؟
+Am Abend esse ich gern [Suppe]. | شب‌ها سوپ دوست دارم.
+Meine Mutter macht eine gute [Suppe]. | مادرم سوپ خوبی درست می‌کند.
+
+# Nudel
+Die Kinder essen gern [Nudeln]. | بچه‌ها ماکارونی دوست دارند.
+Heute gibt es [Nudeln]. | امروز ماکارونی داریم.
+Ich koche [Nudeln] mit Käse. | ماکارونی با پنیر می‌پزم.
+Die [Nudeln] sind lecker. | ماکارونی خوشمزه است.
+Möchtest du [Nudeln] oder Reis? | ماکارونی می‌خواهی یا برنج؟
+
+# Pizza
+Wir essen heute [Pizza]. | امروز پیتزا می‌خوریم.
+Die [Pizza] ist sehr groß. | پیتزا خیلی بزرگ است.
+Möchtest du eine [Pizza]? | یک پیتزا می‌خواهی؟
+Ich mache eine [Pizza] mit Käse. | یک پیتزا با پنیر درست می‌کنم.
+Die Kinder mögen [Pizza]. | بچه‌ها پیتزا دوست دارند.
+
+# Obst
+Ich esse jeden Tag [Obst]. | هر روز میوه می‌خورم.
+Wir kaufen [Obst]. | میوه می‌خریم.
+Das [Obst] hier ist sehr gut. | میوه اینجا خیلی خوب است.
+Möchtest du [Obst]? | میوه می‌خواهی؟
+Die Kinder essen viel [Obst]. | بچه‌ها زیاد میوه می‌خورند.
+
+# Gemüse
+Ich esse viel [Gemüse]. | زیاد سبزیجات می‌خورم.
+Das [Gemüse] schmeckt gut. | سبزیجات خوشمزه است.
+Wir kaufen [Gemüse] und Obst. | سبزیجات و میوه می‌خریم.
+Meine Tochter isst kein [Gemüse]. | دخترم سبزیجات نمی‌خورد.
+Ich koche [Gemüse] mit Reis. | سبزیجات را با برنج می‌پزم.
+
+# Apfel
+Ich esse einen [Apfel]. | یک سیب می‌خورم.
+Der [Apfel] ist sehr lecker. | سیب خیلی خوشمزه است.
+Möchtest du einen [Apfel]? | یک سیب می‌خواهی؟
+Wir kaufen fünf [Äpfel]. | پنج سیب می‌خریم.
+Das Kind isst gern [Äpfel]. | بچه سیب دوست دارد.
+
+# Banane
+Ich esse eine [Banane]. | یک موز می‌خورم.
+Die [Bananen] sind sehr gut. | موزها خیلی خوب‌اند.
+Das Baby isst gern [Banane]. | بچه موز دوست دارد.
+Ich kaufe drei [Bananen]. | سه موز می‌خرم.
+Möchtest du eine [Banane]? | یک موز می‌خواهی؟
+
+# Orange
+Ich esse eine [Orange]. | یک پرتقال می‌خورم.
+Die [Orangen] aus dem Iran sind lecker. | پرتقال‌های ایران خوشمزه‌اند.
+Möchtest du eine [Orange]? | یک پرتقال می‌خواهی؟
+Wir kaufen zehn [Orangen]. | ده پرتقال می‌خریم.
+Das Kind isst gern [Orangen]. | بچه پرتقال دوست دارد.
+
+# Tomate
+Ich kaufe vier [Tomaten]. | چهار گوجه‌فرنگی می‌خرم.
+Die [Tomaten] sind sehr gut. | گوجه‌فرنگی‌ها خیلی خوب‌اند.
+Ich mache einen Salat mit [Tomaten]. | یک سالاد با گوجه‌فرنگی درست می‌کنم.
+Brauchst du eine [Tomate]? | یک گوجه‌فرنگی لازم داری؟
+Die [Tomate] ist klein. | گوجه‌فرنگی کوچک است.
+
+# Kartoffel
+Wir essen [Kartoffeln] mit Fleisch. | سیب‌زمینی با گوشت می‌خوریم.
+Ich koche [Kartoffeln]. | سیب‌زمینی می‌پزم.
+Die [Kartoffeln] sind lecker. | سیب‌زمینی‌ها خوشمزه‌اند.
+Ich brauche fünf [Kartoffeln]. | پنج سیب‌زمینی لازم دارم.
+Die Kinder mögen [Kartoffeln] sehr. | بچه‌ها سیب‌زمینی را خیلی دوست دارند.
+
+# Kuchen
+Der [Kuchen] ist sehr lecker. | کیک خیلی خوشمزه است.
+Möchtest du [Kuchen]? | کیک می‌خواهی؟
+Zum Geburtstag gibt es [Kuchen]. | برای تولد کیک داریم.
+Meine Großmutter macht einen [Kuchen]. | مادربزرگم یک کیک درست می‌کند.
+Wir essen [Kuchen] und trinken Kaffee. | کیک می‌خوریم و قهوه می‌نوشیم.
+
+# Schokolade
+Ich esse gern [Schokolade]. | شکلات دوست دارم.
+Die Kinder mögen [Schokolade]. | بچه‌ها شکلات دوست دارند.
+Die [Schokolade] ist für dich. | این شکلات برای توست.
+Ich kaufe eine [Schokolade]. | یک شکلات می‌خرم.
+Möchtest du [Schokolade]? | شکلات می‌خواهی؟
+
+# Eis
+Die Kinder essen gern [Eis]. | بچه‌ها بستنی دوست دارند.
+Im Sommer essen wir viel [Eis]. | در تابستان زیاد بستنی می‌خوریم.
+Möchtest du ein [Eis]? | یک بستنی می‌خواهی؟
+Das [Eis] ist sehr lecker. | بستنی خیلی خوشمزه است.
+Ich kaufe ein [Eis] für dich. | برایت یک بستنی می‌خرم.
+
+# Zucker
+Ich trinke Tee mit [Zucker]. | چای را با شکر می‌نوشم.
+Möchtest du [Zucker]? | شکر می‌خواهی؟
+Ich trinke Kaffee nie mit [Zucker]. | قهوه را هیچ‌وقت با شکر نمی‌نوشم.
+Wir haben keinen [Zucker] mehr. | دیگر شکر نداریم.
+Der Kuchen braucht viel [Zucker]. | کیک شکر زیادی لازم دارد.
+
+# Salz
+Die Suppe braucht mehr [Salz]. | سوپ نمک بیشتری لازم دارد.
+Gibst du mir bitte das [Salz]? | لطفاً نمک را به من می‌دهی؟
+Hier ist zu viel [Salz]. | اینجا نمک خیلی زیاد است.
+Wir haben kein [Salz] mehr. | دیگر نمک نداریم.
+Ich esse wenig [Salz]. | من کم نمک می‌خورم.
+
+# Milch
+Ich trinke jeden Morgen [Milch]. | هر روز صبح شیر می‌نوشم.
+Das Baby braucht [Milch]. | بچه شیر لازم دارد.
+Kaffee mit [Milch], bitte. | قهوه با شیر، لطفاً.
+Wir haben keine [Milch] mehr. | دیگر شیر نداریم.
+Die [Milch] ist für die Kinder. | شیر برای بچه‌هاست.
+
+# Saft
+Ich trinke einen [Saft]. | یک آبمیوه می‌نوشم.
+Möchtest du [Saft] oder Wasser? | آبمیوه می‌خواهی یا آب؟
+Die Kinder trinken gern [Saft]. | بچه‌ها آبمیوه دوست دارند.
+Der [Saft] ist sehr lecker. | آبمیوه خیلی خوشمزه است.
+Ich kaufe [Saft] für das Frühstück. | برای صبحانه آبمیوه می‌خرم.
+
+# Cola
+Möchtest du eine [Cola]? | یک نوشابه کولا می‌خواهی؟
+Ich trinke keine [Cola]. | من نوشابه کولا نمی‌نوشم.
+Die Kinder trinken zu viel [Cola]. | بچه‌ها خیلی زیاد نوشابه کولا می‌نوشند.
+Eine [Cola], bitte. | یک نوشابه کولا، لطفاً.
+Wir kaufen zwei [Colas]. | دو نوشابه کولا می‌خریم.
+
+# Getränk
+Welches [Getränk] möchten Sie? | چه نوشیدنی‌ای میل دارید؟
+Tee ist ein gutes [Getränk]. | چای نوشیدنی خوبی است.
+Wir kaufen [Getränke] für den Geburtstag. | برای تولد نوشیدنی می‌خریم.
+Die [Getränke] sind hier. | نوشیدنی‌ها اینجا هستند.
+Was für [Getränke] gibt es? | چه نوشیدنی‌هایی هست؟
+
+# Glas
+Ein [Glas] Wasser, bitte. | یک لیوان آب، لطفاً.
+Ich trinke ein [Glas] Milch. | یک لیوان شیر می‌نوشم.
+Wir brauchen sechs [Gläser]. | شش لیوان لازم داریم.
+Möchtest du ein [Glas] Saft? | یک لیوان آبمیوه می‌خواهی؟
+Gib mir bitte das [Glas]. | لطفاً لیوان را به من بده.
+
+# Tasse
+Eine [Tasse] Kaffee, bitte. | یک فنجان قهوه، لطفاً.
+Ich trinke eine [Tasse] Tee. | یک فنجان چای می‌نوشم.
+Möchtest du noch eine [Tasse]? | یک فنجان دیگر می‌خواهی؟
+Die [Tasse] ist sehr schön. | فنجان خیلی قشنگ است.
+Ich trinke drei [Tassen] Kaffee am Tag. | روزی سه فنجان قهوه می‌نوشم.
+
+# Flasche
+Eine [Flasche] Wasser, bitte. | یک بطری آب، لطفاً.
+Ich kaufe zwei [Flaschen] Saft. | دو بطری آبمیوه می‌خرم.
+Die [Flasche] ist für das Baby. | شیشه برای بچه است.
+Wir brauchen eine [Flasche] Milch. | یک بطری شیر لازم داریم.
+Wo ist die [Flasche]? | بطری کجاست؟
+
+# Teller
+Der [Teller] ist sehr groß. | بشقاب خیلی بزرگ است.
+Ich brauche einen [Teller]. | یک بشقاب لازم دارم.
+Wir haben nur vier [Teller]. | فقط چهار بشقاب داریم.
+Der [Teller] ist für die Suppe. | این بشقاب برای سوپ است.
+Gib mir bitte einen [Teller]. | لطفاً یک بشقاب به من بده.
+
+# Restaurant
+Wir essen heute im [Restaurant]. | امروز در رستوران غذا می‌خوریم.
+Das [Restaurant] ist sehr gut. | این رستوران خیلی خوب است.
+Kennst du ein gutes [Restaurant]? | یک رستوران خوب می‌شناسی؟
+Im [Restaurant] gibt es Fisch. | در رستوران ماهی هست.
+Mein Bruder arbeitet in einem [Restaurant]. | برادرم در یک رستوران کار می‌کند.
+
+# Speisekarte
+Die [Speisekarte], bitte! | منو، لطفاً!
+Ich lese die [Speisekarte]. | منو را می‌خوانم.
+Haben Sie die [Speisekarte] für Kinder? | منوی بچه‌ها را دارید؟
+Die [Speisekarte] ist neu. | منو جدید است.
+Kann ich die [Speisekarte] haben? | می‌توانم منو را داشته باشم؟
+
+# bestellen
+Ich [bestelle] eine Pizza. | یک پیتزا سفارش می‌دهم.
+Was [bestellst] du? | چه سفارش می‌دهی؟
+Wir möchten [bestellen]. | می‌خواهیم سفارش بدهیم. | d: bestelle, bestellst, bestellt
+Anna [bestellt] einen Salat. | آنا یک سالاد سفارش می‌دهد.
+Ich möchte einen Kaffee [bestellen]. | می‌خواهم یک قهوه سفارش بدهم. | d: bestelle, bestellst, bestellt
+
+# Café
+Wir trinken Kaffee im [Café]. | در کافه قهوه می‌نوشیم.
+Das [Café] ist sehr schön. | این کافه خیلی قشنگ است.
+Gehen wir ins [Café]? | به کافه برویم؟
+Im [Café] gibt es guten Kuchen. | در کافه کیک خوب هست.
+Anna arbeitet in einem [Café]. | آنا در یک کافه کار می‌کند.
+
+# essen gehen
+Wir können am Freitag [essen gehen]. | جمعه می‌توانیم بیرون غذا بخوریم. | d: essen geht, essen gehst, essen kommen
+Möchtest du mit mir [essen gehen]? | می‌خواهی با من بیرون غذا بخوری؟ | d: essen geht, essen gehst, essen kommen
+Am Sonntag möchten wir [essen gehen]. | یکشنبه می‌خواهیم بیرون غذا بخوریم. | d: essen geht, essen gehst, essen kommen
+Ich weiß nicht, wann wir [essen gehen]. | نمی‌دانم کی بیرون غذا می‌خوریم. | d: essen gehe, essen geht, essen gehst
+Heute Abend wollen wir [essen gehen]. | امشب می‌خواهیم بیرون غذا بخوریم. | d: essen geht, essen gehst, essen kommen

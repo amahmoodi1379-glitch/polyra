@@ -11,8 +11,7 @@
  */
 import { appSettingDefaults } from "../../src/server/settings/app-catalog";
 import type { LanguageCode } from "../../src/server/content/languages";
-import { lexiconSpelling } from "../../src/server/content/lexicon";
-import { checkWordPack, frequencyRanks, PACK_LEVELS, readWordFiles, type PackWord } from "../../src/server/content/packs/words";
+import { checkWordPack, coveredLemmas, frequencyRanks, PACK_LEVELS, readWordFiles, type PackWord } from "../../src/server/content/packs/words";
 
 const args = process.argv.slice(2);
 const languages = (args.filter((arg) => !arg.startsWith("--")) as LanguageCode[]).filter((arg) => arg === "fr" || arg === "de");
@@ -67,8 +66,8 @@ for (const language of languages.length ? languages : (["fr", "de"] as LanguageC
   }
 
   // Coverage: how much of the most frequent vocabulary the lists teach, and what they leave out.
-  // The frequency list spells œ as oe (Lexique), so a taught «œil» covers its «oeil».
-  const taught = new Set(pack.words.flatMap((item: PackWord) => [item.word.lemma.toLowerCase(), lexiconSpelling(item.word.lemma.toLowerCase())]));
+  // A taught «œil» covers the frequency list's «oeil» (Lexique spelling), a taught «se lever» its «lever».
+  const taught = new Set(pack.words.flatMap((item: PackWord) => coveredLemmas(item.word)));
   const byRank = [...ranks].sort((a, b) => a[1] - b[1]);
   for (const band of [500, 1000, 2000, 3000, 5000]) {
     const inBand = byRank.filter(([, rank]) => rank <= band);
