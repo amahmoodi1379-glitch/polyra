@@ -6,6 +6,7 @@ import { fold, splitPieces } from "@/engine/tokens";
 import { isCardRegister } from "@/engine/content";
 import { levelRank } from "../languages";
 import { germanVerb } from "../german-verbs";
+import { closedForms } from "./closed";
 import { bareLemma, germanAdjectiveForms, type Morph } from "./morph";
 import type { PackWord } from "./words";
 
@@ -101,7 +102,7 @@ export function verbDistractors(language: string, lemma: string, surface: string
  * its verb (es d'accord, est d'accord, sommes d'accord), so only the person tells them apart.
  */
 export function phraseDistractors(morph: Morph, words: PackWord[], target: PackWord, surface: string, afterAuxiliary = false): string[] {
-  const verbs = (target.word.parts ?? []).map((code) => words.find((item) => item.word.code === code)).filter((item): item is PackWord => item?.word.pos === "verb");
+  const verbs = (target.word.parts ?? []).map((code) => codesOf(words).get(code)).filter((item): item is PackWord => item?.word.pos === "verb");
   for (const piece of splitPieces(surface)) {
     const verb = verbs.find((item) => morph.candidates(piece.text).some((candidate) => candidate.word === item));
     if (!verb) continue;
@@ -114,6 +115,34 @@ export function phraseDistractors(morph: Morph, words: PackWord[], target: PackW
   return [];
 }
 
+/** Pieces of a Persian meaning, without the notes in brackets: «خواستن (مؤدبانه)، میل داشتن» → خواستن, میل داشتن. */
+const meaningPieces = (meaning: string) =>
+  meaning
+    .replace(/\([^)]*\)/gu, " ")
+    .split(/[،,;؛]/u)
+    .map((piece) => piece.replace(/[\s\u200c]+/gu, " ").trim())
+    .filter(Boolean);
+
+/**
+ * Two meanings that are near enough for both words to fit the gap: one piece the same as a piece of the
+ * other, or a piece of two words or more inside it (دوست داشتن, خیلی دوست داشتن), or an infinitive and its
+ * compound (خریدن, خرید کردن).
+ */
+export function nearMeaning(a: string, b: string) {
+  // Containment needs two words at least: «چه» is inside «چه کسی» (que, qui), yet the two are not near.
+  const inside = (x: string, y: string) => x === y || (y.includes(" ") && ` ${x} `.includes(` ${y} `));
+  const stem = (x: string, y: string) => !x.includes(" ") && x.endsWith("ن") && y.split(" ")[0] === x.slice(0, -1);
+  return meaningPieces(a).some((x) => meaningPieces(b).some((y) => inside(x, y) || inside(y, x) || stem(x, y) || stem(y, x)));
+}
+
+const byCode = new WeakMap<PackWord[], Map<string, PackWord>>();
+/** The words of a list by code, made once per list. */
+function codesOf(words: PackWord[]) {
+  let map = byCode.get(words);
+  if (!map) byCode.set(words, (map = new Map(words.map((item) => [item.word.code, item]))));
+  return map;
+}
+
 const hash = (text: string) => {
   let h = 2166136261;
   for (let i = 0; i < text.length; i++) h = Math.imul(h ^ text.charCodeAt(i), 16777619);
@@ -121,14 +150,16 @@ const hash = (text: string) => {
 };
 
 const VOWEL = /^[aeiouyàâäéèêëîïôöùûüœæh]/iu;
+const capital = (form: string) => form.charAt(0).toUpperCase() + form.slice(1);
 
 /** The gap's surroundings that limit which forms fit. */
 export type GapContext = {
   sentence: string;
   /** Words of the sentence (they are never wrong options). */
   used: Set<PackWord>;
-  /** The token right before the gap. */
+  /** The tokens right before and after the gap. */
   before: string | null;
+  after?: string | null;
   /** Is the gap the first word of the sentence (a capital)? */
   first: boolean;
   /** The order a learner meets words in: candidates met before the target come first. */
@@ -173,18 +204,29 @@ function matchingForm(morph: Morph, language: string, target: PackWord, surface:
 export function autoDistractors(morph: Morph, words: PackWord[], target: PackWord, surface: string, context: GapContext): { options: string[]; hint: string | null } | { error: string } {
   const language = morph.language;
   const word = target.word;
-  if (word.pos === "verb" && fold(surface) !== fold(word.lemma)) {
+  // German wir/sie/Sie forms are the infinitive: next to such a pronoun the gap is finite (Wir [haben] …, Was [möchten] Sie …).
+  const finiteInfinitive = language === "de" && [context.before, context.after].some((token) => token !== null && token !== undefined && /^(wir|sie)$/u.test(fold(token)));
+  if (word.pos === "verb" && (fold(surface) !== fold(word.lemma) || finiteInfinitive)) {
     const options = verbDistractors(language, word.lemma, surface, undefined, context.before ? isAuxiliary(morph, context.before) : false);
     if (options.length < 3) return { error: `cannot make three other forms of «${word.lemma}» for «${surface}»: write d: a, b, c` };
-    return { options, hint: `(${bareLemma(word.lemma)})` };
+    return { options: context.first ? options.map(capital) : options, hint: `(${bareLemma(word.lemma)})` };
   }
   if (word.pos === "phrase" && fold(surface) !== fold(word.lemma)) {
     const options = phraseDistractors(morph, words, target, surface, context.before ? isAuxiliary(morph, context.before) : false);
     if (options.length < 3) return { error: `cannot make three other forms of «${word.lemma}» for «${surface}»: write d: a, b, c` };
     return { options, hint: `(${word.lemma})` };
   }
+  // A function word with forms (quel, quelle, quels, quelles; tout, toute, tous, toutes): its other forms.
+  if (word.pos === "det" || word.pos === "pron") {
+    const others = closedForms(language, word.lemma).filter((form) => fold(form) !== fold(surface));
+    if (others.length >= 3) return { options: others.slice(0, 3).map((form) => (context.first ? capital(form) : form)), hint: null };
+  }
   const homophones = new Set([...word.homophones.map(fold), fold(word.lemma)]);
   const right = fold(surface);
+  // A phrase with a verb (faire les courses) and one without (merci beaucoup) are never each other's options.
+  const codes = codesOf(words);
+  const verbPhrase = (item: PackWord) => (item.word.parts ?? []).some((code) => codes.get(code)?.word.pos === "verb");
+  const targetVerbPhrase = word.pos === "phrase" && verbPhrase(target);
   const before = context.before ? fold(context.before) : null;
   const pool: { item: PackWord; form: string; tier: number; key: number }[] = [];
   for (const item of words) {
@@ -192,8 +234,9 @@ export function autoDistractors(morph: Morph, words: PackWord[], target: PackWor
     if (item === target || other.pos !== word.pos || other.no_card || !isCardRegister(other.register)) continue;
     if (levelRank(item.level) > levelRank(context.level) || context.used.has(item)) continue;
     if (other.concept_fa === word.concept_fa || fold(other.lemma) === fold(word.lemma) || homophones.has(fold(other.lemma)) || other.homophones.map(fold).includes(fold(word.lemma))) continue;
+    if (nearMeaning(other.meaning_fa, word.meaning_fa)) continue;
     if (word.pos === "noun" && other.gender !== word.gender) continue;
-    if (word.pos === "phrase" && other.pos !== "phrase") continue;
+    if (word.pos === "phrase" && (other.pos !== "phrase" || verbPhrase(item) !== targetVerbPhrase)) continue;
     let form = matchingForm(morph, language, target, surface, item);
     if (!form || fold(form) === right) continue;
     // French elision: after l', d', qu' only a vowel or h; after le, de, que, je only a consonant.
@@ -201,7 +244,7 @@ export function autoDistractors(morph: Morph, words: PackWord[], target: PackWor
       if (/'$/.test(before) && !VOWEL.test(form)) continue;
       if (/^(le|la|de|ce|je|me|te|se|ne|que|si)$/.test(before) && VOWEL.test(form)) continue;
     }
-    if (context.first) form = form.charAt(0).toUpperCase() + form.slice(1);
+    if (context.first) form = capital(form);
     const sameTopic = item.topic === target.topic;
     const known = context.knownBefore(item);
     const tier = sameTopic && known ? 0 : sameTopic ? 1 : known ? 2 : 3;
