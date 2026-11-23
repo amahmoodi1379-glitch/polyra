@@ -103,6 +103,41 @@ const mapTable = (table: Table, particle: string): Table => ({
   P: Object.fromEntries(Object.entries(table.P ?? {}).map(([person, form]) => [person, [verbPart(form), particle]])),
 });
 
+/**
+ * Morphy files many inseparable verbs as separable (wiederholen: «hole wieder», übersetzen: «setze über»)
+ * while its participle shows the truth: «wiederholt», not «wiedergeholt». Where a participle is not the
+ * particle plus the base verb's participle, the verb is read as inseparable: its finite forms are joined
+ * (wiederhole, übersetzt) and only that participle is kept. A verb with both readings (übersetzen, umfahren)
+ * takes the inseparable one, the meaning a learner meets (übersetzen: translate), except the verbs of
+ * `BOTH_SEPARABLE`, whose learner meaning is separable (umstellen: stellte um, umgestellt).
+ */
+const BOTH_SEPARABLE = new Set(["umstellen"]);
+function inseparable(raw: Record<string, Entry>) {
+  for (const [verb, entry] of Object.entries(raw)) {
+    const first = (entry["PRÄ"] as Table | undefined)?.S?.["1"];
+    if (!Array.isArray(first)) continue;
+    const particle = String(first[1]);
+    const base = raw[verb.slice(particle.length)];
+    if (!verb.startsWith(particle) || !base || !Array.isArray(entry.PA2)) continue;
+    const separate = new Set(((base.PA2 as string[] | undefined) ?? []).map((form) => `${particle}${form}`));
+    const joined = (entry.PA2 as string[]).filter((form) => form.startsWith(particle) && !separate.has(form));
+    if (separate.size === 0 || joined.length === 0) continue;
+    if (BOTH_SEPARABLE.has(verb)) {
+      entry.PA2 = (entry.PA2 as string[]).filter((form) => separate.has(form));
+      continue;
+    }
+    const join = (value: unknown): unknown => {
+      if (Array.isArray(value)) return value.length === 2 && value[1] === particle && typeof value[0] === "string" ? `${particle}${value[0]}` : value.map(join);
+      if (value && typeof value === "object") return Object.fromEntries(Object.entries(value).map(([key, item]) => [key, join(item)]));
+      return value;
+    };
+    for (const key of ["PRÄ", "PRT", "KJ1", "KJ2", "IMP"]) if (entry[key]) entry[key] = join(entry[key]);
+    entry.PA2 = joined;
+    delete entry.hasPrefix;
+    delete entry.EIZ;
+  }
+}
+
 let data: VerbsInfo | null = null;
 const made = new Map<string, "compound" | "weak">();
 
@@ -119,6 +154,7 @@ export function germanVerbData(root = process.cwd()): VerbsInfo {
     fillPersons(modern);
     raw[verb] = modern;
   }
+  inseparable(raw);
   // «möchten» is the Konjunktiv II of mögen, taught as a verb of its own with a present tense.
   if (raw["mögen"]?.KJ2 && !raw["möchten"]) raw["möchten"] = { INF: "möchten", PRÄ: raw["mögen"].KJ2 };
   data = raw as unknown as VerbsInfo;

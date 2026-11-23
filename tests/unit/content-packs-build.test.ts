@@ -233,6 +233,7 @@ describe("conjugation tables of a pack", () => {
     expect(nearMeaning("خواستن (مؤدبانه)، میل داشتن", "خواستن")).toBe(true);
     expect(nearMeaning("دوست داشتن", "خیلی دوست داشتن")).toBe(true);
     expect(nearMeaning("خریدن", "فروختن")).toBe(false);
+    expect(nearMeaning("چه کسی، کی", "چه، چه چیزی")).toBe(false); // qui, que
   });
 
   it("offers the other forms of a function word, and keeps verb phrases and other phrases apart", () => {
@@ -280,6 +281,12 @@ describe("conjugation tables of a pack", () => {
     expect(forms("mitkommen", "Perfekt")[0]).toBe("bin mitgekommen");
     expect(forms("sich ausruhen", "Präsens")[0]).toBe("ruhe mich aus");
     expect(forms("möchten", "Präsens")).toEqual(["möchte", "möchtest", "möchte", "möchten", "möchtet", "möchten"]);
+    // Morphy files these as separable; their participles say they are not.
+    expect(forms("wiederholen", "Präsens")[0]).toBe("wiederhole");
+    expect(forms("übersetzen", "Perfekt")[0]).toBe("habe übersetzt");
+    expect(forms("unterschreiben", "Präteritum")[0]).toBe("unterschrieb");
+    expect(forms("umstellen", "Präsens")[0]).toBe("stelle um");
+    expect(forms("umstellen", "Perfekt")[0]).toBe("habe umgestellt");
     const list = words("de", ["müssen\tverb\t\t\tمجبور بودن\tباید\tfunction", "mitkommen\tverb\t\t\tهمراه آمدن\tهمراه آمدن\ttravel", "ich\tpron\t\t\tمن\tمن\tfunction\tno_card:1", "du\tpron\t\t\tتو\tتو\tfunction\tno_card:1"]);
     const analysis = analyzerOf("de", list).analyze("Ich muss. Kommst du mit?", { level: "A1" });
     expect(analysis.errors).toEqual([]);

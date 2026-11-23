@@ -124,11 +124,13 @@ const meaningPieces = (meaning: string) =>
     .filter(Boolean);
 
 /**
- * Two meanings that are near enough for both words to fit the gap: one piece the same as, or inside,
- * a piece of the other (دوست داشتن, خیلی دوست داشتن), or an infinitive and its compound (خریدن, خرید کردن).
+ * Two meanings that are near enough for both words to fit the gap: one piece the same as a piece of the
+ * other, or a piece of two words or more inside it (دوست داشتن, خیلی دوست داشتن), or an infinitive and its
+ * compound (خریدن, خرید کردن).
  */
 export function nearMeaning(a: string, b: string) {
-  const inside = (x: string, y: string) => ` ${x} `.includes(` ${y} `);
+  // Containment needs two words at least: «چه» is inside «چه کسی» (que, qui), yet the two are not near.
+  const inside = (x: string, y: string) => x === y || (y.includes(" ") && ` ${x} `.includes(` ${y} `));
   const stem = (x: string, y: string) => !x.includes(" ") && x.endsWith("ن") && y.split(" ")[0] === x.slice(0, -1);
   return meaningPieces(a).some((x) => meaningPieces(b).some((y) => inside(x, y) || inside(y, x) || stem(x, y) || stem(y, x)));
 }
@@ -148,6 +150,7 @@ const hash = (text: string) => {
 };
 
 const VOWEL = /^[aeiouyàâäéèêëîïôöùûüœæh]/iu;
+const capital = (form: string) => form.charAt(0).toUpperCase() + form.slice(1);
 
 /** The gap's surroundings that limit which forms fit. */
 export type GapContext = {
@@ -206,7 +209,7 @@ export function autoDistractors(morph: Morph, words: PackWord[], target: PackWor
   if (word.pos === "verb" && (fold(surface) !== fold(word.lemma) || finiteInfinitive)) {
     const options = verbDistractors(language, word.lemma, surface, undefined, context.before ? isAuxiliary(morph, context.before) : false);
     if (options.length < 3) return { error: `cannot make three other forms of «${word.lemma}» for «${surface}»: write d: a, b, c` };
-    return { options, hint: `(${bareLemma(word.lemma)})` };
+    return { options: context.first ? options.map(capital) : options, hint: `(${bareLemma(word.lemma)})` };
   }
   if (word.pos === "phrase" && fold(surface) !== fold(word.lemma)) {
     const options = phraseDistractors(morph, words, target, surface, context.before ? isAuxiliary(morph, context.before) : false);
@@ -216,7 +219,7 @@ export function autoDistractors(morph: Morph, words: PackWord[], target: PackWor
   // A function word with forms (quel, quelle, quels, quelles; tout, toute, tous, toutes): its other forms.
   if (word.pos === "det" || word.pos === "pron") {
     const others = closedForms(language, word.lemma).filter((form) => fold(form) !== fold(surface));
-    if (others.length >= 3) return { options: others.slice(0, 3).map((form) => (context.first ? form.charAt(0).toUpperCase() + form.slice(1) : form)), hint: null };
+    if (others.length >= 3) return { options: others.slice(0, 3).map((form) => (context.first ? capital(form) : form)), hint: null };
   }
   const homophones = new Set([...word.homophones.map(fold), fold(word.lemma)]);
   const right = fold(surface);
@@ -241,7 +244,7 @@ export function autoDistractors(morph: Morph, words: PackWord[], target: PackWor
       if (/'$/.test(before) && !VOWEL.test(form)) continue;
       if (/^(le|la|de|ce|je|me|te|se|ne|que|si)$/.test(before) && VOWEL.test(form)) continue;
     }
-    if (context.first) form = form.charAt(0).toUpperCase() + form.slice(1);
+    if (context.first) form = capital(form);
     const sameTopic = item.topic === target.topic;
     const known = context.knownBefore(item);
     const tier = sameTopic && known ? 0 : sameTopic ? 1 : known ? 2 : 3;
