@@ -1,0 +1,496 @@
+// German A1 sentences for the card words 201–270 of content/de/words/A1.tsv, in teaching order.
+// Every other word is taught before the block's word.
+
+# erste
+Heute ist mein [erster] Tag in Berlin. | امروز اولین روز من در برلین است.
+Das ist mein [erstes] Auto. | این اولین ماشین من است.
+Anna ist meine [erste] Freundin in Deutschland. | آنا اولین دوست من در آلمان است.
+Ich verstehe das [erste] Wort nicht. | کلمه اول را نمی‌فهمم.
+Der [erste] Tag in der Schule ist schön. | روز اول مدرسه قشنگ است.
+
+# halb
+Es ist [halb] drei. | ساعت دو و نیم است.
+Ich komme um [halb] zehn. | ساعت نه و نیم می‌آیم.
+Ich möchte ein [halbes] Brot. | نصف یک نان می‌خواهم.
+Wir essen um [halb] acht. | ساعت هفت و نیم غذا می‌خوریم.
+Ich wohne schon ein [halbes] Jahr hier. | نیم سال است که اینجا زندگی می‌کنم.
+
+# mehr
+Ich möchte [mehr] Wasser. | آب بیشتری می‌خواهم. | d: sehr, oft, nie
+Ich brauche [mehr] Geld. | پول بیشتری لازم دارم. | d: sehr, oft, nie
+Wir müssen [mehr] lernen. | باید بیشتر درس بخوانیم. | d: sehr, nie, wie
+Ich wohne nicht [mehr] in Berlin. | دیگر در برلین زندگی نمی‌کنم. | d: sehr, nie, schon
+Das Kind möchte [mehr] spielen. | بچه می‌خواهد بیشتر بازی کند. | d: sehr, nie, wie
+Ich habe kein Geld [mehr]. | دیگر پول ندارم. | d: sehr, nie, oft
+
+# Zeit
+Ich habe heute keine [Zeit]. | امروز وقت ندارم.
+Wie viel [Zeit] brauchst du? | چقدر وقت لازم داری؟
+Ich brauche mehr [Zeit]. | وقت بیشتری لازم دارم.
+Wir haben noch [Zeit]. | هنوز وقت داریم.
+Jetzt ist keine [Zeit] für Kaffee. | الان وقت قهوه نیست.
+
+# Zeit haben
+Ich [habe Zeit] für dich. | برای تو وقت دارم.
+Anna [hat Zeit] für die Kinder. | آنا برای بچه‌ها وقت دارد.
+Ich weiß nicht, wann ich [Zeit habe]. | نمی‌دانم کی وقت دارم.
+Ich möchte mehr [Zeit haben]. | دوست دارم وقت بیشتری داشته باشم. | d: Zeit sein, Zeit hat, Zeit machen
+Wir [haben Zeit] für einen Kaffee. | برای یک قهوه وقت داریم.
+
+# Uhr
+Es ist zehn [Uhr]. | ساعت ده است.
+Wie viel [Uhr] ist es? | ساعت چند است؟
+Ich komme um acht [Uhr]. | ساعت هشت می‌آیم.
+Meine [Uhr] ist neu. | ساعتم نو است.
+Um zwölf [Uhr] essen wir. | ساعت دوازده غذا می‌خوریم.
+Wir haben keine [Uhr] zu Hause. | در خانه ساعت نداریم.
+
+# Stunde
+Ich lerne eine [Stunde] Deutsch. | یک ساعت آلمانی یاد می‌گیرم.
+Ich arbeite acht [Stunden] am Tag. | روزی هشت ساعت کار می‌کنم.
+Wir fahren zwei [Stunden] nach Wien. | دو ساعت تا وین رانندگی می‌کنیم.
+In einer [Stunde] bin ich zu Hause. | یک ساعت دیگر خانه‌ام.
+Ich habe nur eine [Stunde] Zeit. | فقط یک ساعت وقت دارم.
+
+# Minute
+Ich komme in fünf [Minuten]. | پنج دقیقه دیگر می‌آیم.
+Eine Stunde hat sechzig [Minuten]. | یک ساعت شصت دقیقه دارد.
+Hast du eine [Minute] Zeit? | یک دقیقه وقت داری؟
+Zur Schule sind es zehn [Minuten]. | تا مدرسه ده دقیقه راه است.
+Ich brauche noch zehn [Minuten]. | ده دقیقه دیگر لازم دارم.
+
+# Viertel
+Es ist [Viertel] nach drei. | ساعت سه و ربع است.
+Ich komme um [Viertel] nach zehn. | ساعت ده و ربع می‌آیم.
+Wir essen um [Viertel] nach zwölf. | ساعت دوازده و ربع غذا می‌خوریم.
+Ein [Viertel] von dem Brot ist für dich. | یک چهارم نان مال توست.
+Ein [Viertel] der Kinder spricht Persisch. | یک چهارم بچه‌ها فارسی حرف می‌زنند.
+
+# Wie spät ist es?
+Entschuldigung, [wie spät ist es]? | ببخشید، ساعت چند است؟ | d: wie spät bist du, wie spät hat es, wie spät sind es
+[Wie spät ist es] in Teheran? | در تهران ساعت چند است؟ | d: Wie spät bist du, Wie spät hat es, Wie spät sind es
+Anna, [wie spät ist es] jetzt? | آنا، الان ساعت چند است؟ | d: wie spät bist du, wie spät hat es, wie spät sind es
+Hallo, [wie spät ist es], bitte? | سلام، لطفاً بگویید ساعت چند است؟ | d: wie spät bist du, wie spät hat es, wie spät sind es
+[Wie spät ist es]? Ich habe keine Uhr. | ساعت چند است؟ من ساعت ندارم. | d: Wie spät bist du, Wie spät hat es, Wie spät sind es
+
+# Woche
+Die [Woche] hat sieben Tage. | هفته هفت روز دارد.
+Ich lerne jede [Woche] zehn Wörter. | هر هفته ده کلمه یاد می‌گیرم.
+Ich arbeite fünf Tage in der [Woche]. | هفته‌ای پنج روز کار می‌کنم.
+Wir fahren eine [Woche] nach Wien. | یک هفته به وین می‌رویم.
+Diese [Woche] habe ich keine Zeit. | این هفته وقت ندارم.
+In zwei [Wochen] bin ich in Teheran. | دو هفته دیگر در تهرانم.
+
+# Monat
+Das Jahr hat zwölf [Monate]. | سال دوازده ماه دارد.
+Ich wohne schon drei [Monate] hier. | سه ماه است که اینجا زندگی می‌کنم.
+Jeden [Monat] fahren wir zu meiner Großmutter. | هر ماه پیش مادربزرگم می‌رویم.
+In einem [Monat] bin ich in Berlin. | یک ماه دیگر در برلینم.
+Welcher [Monat] ist jetzt? | الان چه ماهی است؟
+
+# Wochenende
+Am [Wochenende] habe ich Zeit. | آخر هفته وقت دارم.
+Was machst du am [Wochenende]? | آخر هفته چه کار می‌کنی؟
+Am [Wochenende] fahren wir nach Hamburg. | آخر هفته به هامبورگ می‌رویم.
+Das [Wochenende] war sehr schön. | آخر هفته خیلی خوب بود.
+Am [Wochenende] arbeite ich nicht. | آخر هفته کار نمی‌کنم.
+
+# Vormittag
+Am [Vormittag] arbeite ich. | پیش از ظهر کار می‌کنم.
+Ich lerne am [Vormittag] Deutsch. | پیش از ظهر آلمانی یاد می‌گیرم.
+Am [Vormittag] ist Anna in der Schule. | آنا پیش از ظهر در مدرسه است.
+Heute [Vormittag] habe ich keine Zeit. | امروز پیش از ظهر وقت ندارم.
+Der [Vormittag] ist für die Arbeit. | پیش از ظهر برای کار است.
+
+# Mittag
+Am [Mittag] essen wir zusammen. | ظهر با هم غذا می‌خوریم.
+Heute [Mittag] habe ich Zeit. | امروز ظهر وقت دارم.
+Um zwölf Uhr ist [Mittag]. | ساعت دوازده ظهر است.
+Ich komme am [Mittag] nach Hause. | ظهر به خانه می‌آیم.
+Was essen wir am [Mittag]? | ظهر چه می‌خوریم؟
+
+# Nachmittag
+Am [Nachmittag] spielen die Kinder. | بعدازظهر بچه‌ها بازی می‌کنند.
+Heute [Nachmittag] fahre ich in die Stadt. | امروز بعدازظهر به شهر می‌روم.
+Ich trinke am [Nachmittag] Tee. | بعدازظهر چای می‌نوشم.
+Am [Nachmittag] bin ich zu Hause. | بعدازظهر خانه‌ام.
+Kommst du am [Nachmittag]? | بعدازظهر می‌آیی؟
+
+# Abend
+Am [Abend] lese ich gern. | شب‌ها دوست دارم کتاب بخوانم.
+Heute [Abend] essen wir zusammen. | امشب با هم غذا می‌خوریم.
+Der [Abend] war sehr schön. | شب خیلی خوبی بود.
+Was machst du heute [Abend]? | امشب چه کار می‌کنی؟
+Am [Abend] trinken wir Tee. | شب‌ها چای می‌نوشیم.
+
+# Nacht
+In der [Nacht] ist die Stadt schön. | شهر در شب قشنگ است.
+In der [Nacht] arbeite ich nicht. | شب‌ها کار نمی‌کنم.
+Mein Vater arbeitet oft in der [Nacht]. | پدرم اغلب شب‌ها کار می‌کند.
+Heute [Nacht] bin ich nicht zu Hause. | امشب خانه نیستم.
+Wir fahren in der [Nacht] nach Wien. | شب به وین می‌رویم.
+
+# guten Abend
+[Guten Abend], Herr Weber! | عصر بخیر، آقای وبر! | d: Guten Morgen, Guten Tag, Gute Nacht
+[Guten Abend], wie heißen Sie? | عصر بخیر، اسم شما چیست؟ | d: Guten Morgen, Guten Tag, Gute Nacht
+[Guten Abend]! Möchten Sie einen Tee? | عصر بخیر! چای میل دارید؟ | d: Guten Morgen, Guten Tag, Gute Nacht
+Die Kinder sagen [guten Abend]. | بچه‌ها عصر بخیر می‌گویند. | d: guten Morgen, guten Tag, gute Nacht
+[Guten Abend], Anna! | عصر بخیر، آنا! | d: Guten Morgen, Guten Tag, Gute Nacht
+
+# gute Nacht
+[Gute Nacht], Anna! | شب بخیر، آنا! | d: Guten Morgen, Guten Tag, Guten Abend
+Die Mutter sagt: „[Gute Nacht]!“ | مادر می‌گوید: «شب بخیر!» | d: Guten Morgen, Guten Tag, Guten Abend
+[Gute Nacht], Kinder! | شب بخیر، بچه‌ها! | d: Guten Morgen, Guten Tag, Guten Abend
+Ich sage [gute Nacht] und gehe. | شب بخیر می‌گویم و می‌روم. | d: guten Morgen, guten Tag, guten Abend
+Sag [gute Nacht], Max! | شب بخیر بگو، ماکس! | d: guten Morgen, guten Tag, guten Abend
+
+# gestern
+Ich war [gestern] zu Hause. | دیروز خانه بودم.
+Anna war [gestern] in der Schule. | آنا دیروز مدرسه بود.
+Wo warst du [gestern]? | دیروز کجا بودی؟
+Ich hatte [gestern] keine Zeit. | دیروز وقت نداشتم.
+Mein Bruder war [gestern] in Berlin. | برادرم دیروز در برلین بود.
+
+# bis
+Ich arbeite [bis] fünf Uhr. | تا ساعت پنج کار می‌کنم.
+Tschüss, [bis] morgen! | خداحافظ، تا فردا!
+Die Schule geht [bis] zwölf Uhr. | مدرسه تا ساعت دوازده است.
+Von acht [bis] zehn lerne ich Deutsch. | از هشت تا ده آلمانی یاد می‌گیرم.
+Das Kind kennt die Zahlen [bis] zwanzig. | بچه عددها را تا بیست بلد است.
+
+# später
+Ich komme [später]. | بعداً می‌آیم.
+Wir essen [später]. | بعداً غذا می‌خوریم.
+Tschüss, bis [später]! | خداحافظ، تا بعد!
+Ich mache das [später]. | این کار را بعداً انجام می‌دهم.
+Zwei Stunden [später] war er zu Hause. | دو ساعت بعد خانه بود.
+
+# bald
+Ich komme [bald]. | به‌زودی می‌آیم.
+Tschüss, bis [bald]! | خداحافظ، به امید دیدار!
+Wir fahren [bald] nach Teheran. | به‌زودی به تهران می‌رویم.
+Das Baby kommt [bald]. | بچه به‌زودی به دنیا می‌آید.
+Anna ist [bald] zwanzig. | آنا به‌زودی بیست ساله می‌شود.
+
+# dann
+Ich trinke Kaffee, [dann] gehe ich. | قهوه می‌نوشم، بعد می‌روم.
+Ich lerne, und [dann] spiele ich. | درس می‌خوانم و بعد بازی می‌کنم.
+Wir essen, [dann] fahren wir nach Hause. | غذا می‌خوریم، بعد به خانه می‌رویم.
+Okay, bis [dann]! | باشه، تا بعد!
+Und was machst du [dann]? | و بعد چه کار می‌کنی؟
+
+# wieder
+Anna ist [wieder] zu Hause. | آنا دوباره خانه است.
+Komm bald [wieder]! | زود دوباره بیا!
+Das Kind spielt [wieder]. | بچه دوباره بازی می‌کند.
+Ich habe [wieder] keine Zeit. | باز هم وقت ندارم.
+Wir fahren [wieder] nach Wien. | دوباره به وین می‌رویم.
+Du bist schon [wieder] da! | باز هم اینجایی!
+
+# einmal
+Ich war [einmal] in Berlin. | یک بار در برلین بودم.
+Ich trinke [einmal] am Tag Kaffee. | روزی یک بار قهوه می‌نوشم.
+Ich gehe [einmal] in der Woche in die Stadt. | هفته‌ای یک بار به شهر می‌روم.
+Wir sehen Anna [einmal] im Monat. | ما آنا را ماهی یک بار می‌بینیم.
+Ich war nur [einmal] in Wien. | فقط یک بار در وین بودم.
+
+# noch einmal
+Bitte sag das [noch einmal]. | لطفاً یک بار دیگر بگو. | d: noch nie, nicht mehr, noch nicht
+Kannst du das [noch einmal] sagen? | می‌توانی یک بار دیگر بگویی؟ | d: noch nie, nicht mehr, noch nicht
+Ich lese das Buch [noch einmal]. | کتاب را یک بار دیگر می‌خوانم. | d: noch nie, nicht mehr, noch nicht
+Wir fahren [noch einmal] nach Hamburg. | یک بار دیگر به هامبورگ می‌رویم. | d: noch nie, nicht mehr, noch nicht
+Hören Sie [noch einmal]! | یک بار دیگر گوش کنید! | d: noch nie, nicht mehr, noch nicht
+
+# gleich
+Ich komme [gleich]. | همین الان می‌آیم. | d: gestern, nie, oft
+Anna ist [gleich] da. | آنا همین الان می‌رسد. | d: gestern, nie, oft
+Wir essen [gleich]. | همین الان غذا می‌خوریم. | d: gestern, nie, oft
+Ich mache das [gleich]. | همین الان این کار را می‌کنم. | d: gestern, nie, oft
+Es ist [gleich] zehn Uhr. | الان ساعت ده می‌شود. | d: gestern, nie, oft
+
+# früh
+Es ist noch [früh]. | هنوز زود است.
+Anna kommt immer [früh] nach Hause. | آنا همیشه زود به خانه می‌آید.
+Ich arbeite am [frühen] Morgen. | صبح زود کار می‌کنم.
+Ich gehe [früh] zur Arbeit. | زود سر کار می‌روم.
+Morgen muss ich [früh] in der Schule sein. | فردا باید زود در مدرسه باشم.
+
+# spät
+Es ist schon [spät]. | دیگر دیر است.
+Ich komme heute [spät] nach Hause. | امروز دیر به خانه می‌آیم.
+Mein Vater arbeitet bis zum [späten] Abend. | پدرم تا دیروقت شب کار می‌کند.
+Du bist zu [spät]! | دیر کردی!
+Wir essen heute [spät]. | امروز دیر غذا می‌خوریم.
+
+# Montag
+Am [Montag] arbeite ich. | دوشنبه کار می‌کنم.
+Heute ist [Montag]. | امروز دوشنبه است.
+Der [Montag] ist mein erster Tag in der Schule. | دوشنبه اولین روز من در مدرسه است.
+Am [Montag] habe ich keine Zeit. | دوشنبه وقت ندارم.
+Ich komme am [Montag] wieder. | دوشنبه دوباره می‌آیم.
+
+# Dienstag
+Am [Dienstag] lerne ich Deutsch. | سه‌شنبه آلمانی یاد می‌گیرم.
+Morgen ist [Dienstag]. | فردا سه‌شنبه است.
+Hast du am [Dienstag] Zeit? | سه‌شنبه وقت داری؟
+Am [Dienstag] fahre ich nach Hamburg. | سه‌شنبه به هامبورگ می‌روم.
+Der [Dienstag] ist für die Familie. | سه‌شنبه مال خانواده است.
+
+# Mittwoch
+Am [Mittwoch] spielen die Kinder zusammen. | چهارشنبه بچه‌ها با هم بازی می‌کنند.
+Heute ist [Mittwoch], nicht Dienstag. | امروز چهارشنبه است، نه سه‌شنبه.
+Gestern war [Mittwoch]. | دیروز چهارشنبه بود.
+Wir essen am [Mittwoch] bei Anna. | چهارشنبه خانه آنا غذا می‌خوریم.
+Am [Mittwoch] bin ich nicht zu Hause. | چهارشنبه خانه نیستم.
+
+# Donnerstag
+Am [Donnerstag] fahren wir zu meiner Großmutter. | پنجشنبه پیش مادربزرگم می‌رویم.
+Morgen ist schon [Donnerstag]. | فردا دیگر پنجشنبه است.
+Ich arbeite von Montag bis [Donnerstag]. | از دوشنبه تا پنجشنبه کار می‌کنم.
+Am [Donnerstag] kommt mein Bruder. | پنجشنبه برادرم می‌آید.
+Was machst du am [Donnerstag]? | پنجشنبه چه کار می‌کنی؟
+
+# Freitag
+Am [Freitag] arbeite ich nicht. | جمعه کار نمی‌کنم.
+Heute ist [Freitag]! | امروز جمعه است!
+Am [Freitag] gehen wir zusammen in die Stadt. | جمعه با هم به شهر می‌رویم.
+Kommst du am [Freitag]? | جمعه می‌آیی؟
+Tschüss, bis [Freitag]! | خداحافظ، تا جمعه!
+
+# Samstag
+Am [Samstag] spiele ich mit meinem Sohn. | شنبه با پسرم بازی می‌کنم.
+Morgen ist [Samstag]. | فردا شنبه است.
+Am [Samstag] fahren wir nach Wien. | شنبه به وین می‌رویم.
+Am [Samstag] arbeitet mein Mann. | شنبه شوهرم کار می‌کند.
+Ich lerne jeden [Samstag] Deutsch. | هر شنبه آلمانی یاد می‌گیرم.
+
+# Sonntag
+Am [Sonntag] ist die Familie zusammen. | یکشنبه خانواده دور هم است.
+Heute ist [Sonntag]. | امروز یکشنبه است.
+Am [Sonntag] arbeite ich nie. | یکشنبه‌ها هیچ‌وقت کار نمی‌کنم.
+Am Samstag und am [Sonntag] bin ich zu Hause. | شنبه و یکشنبه خانه‌ام.
+Jeden [Sonntag] spielen wir zusammen. | هر یکشنبه با هم بازی می‌کنیم.
+
+# Januar
+Im [Januar] fahren wir nach Berlin. | در ژانویه به برلین می‌رویم.
+Der [Januar] ist der erste Monat. | ژانویه اولین ماه است.
+Mein Sohn ist im [Januar] geboren. | پسرم در ژانویه به دنیا آمده است.
+Der [Januar] hat 31 Tage. | ژانویه ۳۱ روز دارد.
+Im [Januar] habe ich viel Arbeit. | در ژانویه کار زیادی دارم.
+
+# Februar
+Der [Februar] hat 28 Tage. | فوریه ۲۸ روز دارد.
+Im [Februar] bin ich in Wien. | در فوریه در وین هستم.
+Nach dem Januar kommt der [Februar]. | بعد از ژانویه، فوریه می‌آید.
+Anna ist im [Februar] geboren. | آنا در فوریه به دنیا آمده است.
+Im [Februar] lerne ich jeden Tag Deutsch. | در فوریه هر روز آلمانی یاد می‌گیرم.
+
+# März
+Nouruz ist im [März]. | نوروز در ماه مارس است.
+Im [März] fahren wir in den Iran. | در ماه مارس به ایران می‌رویم.
+Nach dem Februar kommt der [März]. | بعد از فوریه، مارس می‌آید.
+Mein Vater ist im [März] geboren. | پدرم در ماه مارس به دنیا آمده است.
+Der [März] hat 31 Tage. | مارس ۳۱ روز دارد.
+
+# April
+Im [April] habe ich viel Zeit. | در آوریل وقت زیادی دارم.
+Der [April] hat 30 Tage. | آوریل ۳۰ روز دارد.
+Nach dem März kommt der [April]. | بعد از مارس، آوریل می‌آید.
+Meine Großmutter ist im [April] geboren. | مادربزرگم در آوریل به دنیا آمده است.
+Im [April] lernen die Kinder viel. | در آوریل بچه‌ها زیاد درس می‌خوانند.
+
+# Mai
+Im [Mai] ist es in Berlin schön. | در ماه مه برلین قشنگ است.
+Der [Mai] hat 31 Tage. | ماه مه ۳۱ روز دارد.
+Mein Bruder kommt im [Mai] nach Hamburg. | برادرم در ماه مه به هامبورگ می‌آید.
+Im [Mai] arbeite ich nur am Vormittag. | در ماه مه فقط پیش از ظهر کار می‌کنم.
+Nach dem April kommt der [Mai]. | بعد از آوریل، ماه مه می‌آید.
+
+# Juni
+Im [Juni] fahren wir nach Schiras. | در ژوئن به شیراز می‌رویم.
+Der [Juni] hat 30 Tage. | ژوئن ۳۰ روز دارد.
+Meine Schwester ist im [Juni] geboren. | خواهرم در ژوئن به دنیا آمده است.
+Im [Juni] spielen die Kinder oft zusammen. | در ژوئن بچه‌ها اغلب با هم بازی می‌کنند.
+Nach dem Mai kommt der [Juni]. | بعد از ماه مه، ژوئن می‌آید.
+
+# Juli
+Im [Juli] haben die Kinder keine Schule. | در ژوئیه بچه‌ها مدرسه ندارند.
+Der [Juli] hat 31 Tage. | ژوئیه ۳۱ روز دارد.
+Im [Juli] fahren wir zu meinem Onkel. | در ژوئیه پیش عمویم می‌رویم.
+Wir kommen im [Juli] wieder. | در ژوئیه دوباره می‌آییم.
+Nach dem Juni kommt der [Juli]. | بعد از ژوئن، ژوئیه می‌آید.
+
+# August
+Im [August] fahren viele Familien nach Isfahan. | در اوت خانواده‌های زیادی به اصفهان می‌روند.
+Der [August] hat 31 Tage. | اوت ۳۱ روز دارد.
+Im [August] arbeite ich nicht. | در اوت کار نمی‌کنم.
+Nach dem Juli kommt der [August]. | بعد از ژوئیه، اوت می‌آید.
+Im [August] ist meine Familie zusammen. | در اوت خانواده‌ام دور هم است.
+
+# September
+Im [September] gehen die Kinder wieder in die Schule. | در سپتامبر بچه‌ها دوباره به مدرسه می‌روند.
+Der [September] hat 30 Tage. | سپتامبر ۳۰ روز دارد.
+Nach dem August kommt der [September]. | بعد از اوت، سپتامبر می‌آید.
+Ich bin im [September] geboren. | من در سپتامبر به دنیا آمده‌ام.
+Im [September] lerne ich wieder Deutsch. | در سپتامبر دوباره آلمانی یاد می‌گیرم.
+
+# Oktober
+Der [Oktober] hat 31 Tage. | اکتبر ۳۱ روز دارد.
+Im [Oktober] fahre ich nach Wien. | در اکتبر به وین می‌روم.
+Nach dem September kommt der [Oktober]. | بعد از سپتامبر، اکتبر می‌آید.
+Anna hat im [Oktober] viel Arbeit. | آنا در اکتبر کار زیادی دارد.
+Im [Oktober] sind wir wieder zu Hause. | در اکتبر دوباره خانه‌ایم.
+
+# November
+Der [November] hat 30 Tage. | نوامبر ۳۰ روز دارد.
+Im [November] bin ich in Teheran. | در نوامبر در تهرانم.
+Nach dem Oktober kommt der [November]. | بعد از اکتبر، نوامبر می‌آید.
+Mein Großvater ist im [November] geboren. | پدربزرگم در نوامبر به دنیا آمده است.
+Im [November] habe ich wenig Zeit. | در نوامبر وقت کمی دارم.
+
+# Dezember
+Nach dem November kommt der [Dezember]. | بعد از نوامبر، دسامبر می‌آید.
+Der [Dezember] hat 31 Tage. | دسامبر ۳۱ روز دارد.
+Im [Dezember] fahren wir zu den Großeltern. | در دسامبر پیش پدربزرگ و مادربزرگ می‌رویم.
+Im [Dezember] gehen die Kinder nicht in die Schule. | در دسامبر بچه‌ها به مدرسه نمی‌روند.
+Meine Tante ist im [Dezember] geboren. | خاله‌ام در دسامبر به دنیا آمده است.
+
+# Jahreszeit
+Das Jahr hat vier [Jahreszeiten]. | سال چهار فصل دارد.
+Welche [Jahreszeit] magst du? | کدام فصل را دوست داری؟
+Jede [Jahreszeit] ist schön. | هر فصلی قشنگ است.
+In welcher [Jahreszeit] bist du geboren? | در کدام فصل به دنیا آمده‌ای؟
+Hier sind alle vier [Jahreszeiten] schön. | اینجا هر چهار فصل قشنگ است.
+
+# Frühling
+Im [Frühling] ist Nouruz. | نوروز در بهار است.
+Der [Frühling] ist schön. | بهار قشنگ است.
+Im [Frühling] fahren wir nach Schiras. | در بهار به شیراز می‌رویم.
+Der [Frühling] kommt im März. | بهار در ماه مارس می‌آید.
+Ich mag den [Frühling] sehr. | بهار را خیلی دوست دارم.
+
+# Sommer
+Im [Sommer] haben die Kinder keine Schule. | در تابستان بچه‌ها مدرسه ندارند.
+Im [Sommer] fahren wir nach Hamburg. | در تابستان به هامبورگ می‌رویم.
+Ich mag den [Sommer] nicht. | تابستان را دوست ندارم.
+Juni, Juli und August sind im [Sommer]. | ژوئن، ژوئیه و اوت در تابستان هستند.
+Welche Jahreszeit magst du? Den [Sommer]. | کدام فصل را دوست داری؟ تابستان را.
+
+# Herbst
+Im [Herbst] gehen die Kinder wieder in die Schule. | در پاییز بچه‌ها دوباره به مدرسه می‌روند.
+September, Oktober und November sind im [Herbst]. | سپتامبر، اکتبر و نوامبر در پاییز هستند.
+Der [Herbst] ist hier sehr schön. | پاییز اینجا خیلی قشنگ است.
+Im [Herbst] trinke ich viel Tee. | در پاییز زیاد چای می‌نوشم.
+Ich mag den [Herbst]. | پاییز را دوست دارم.
+
+# Winter
+Im [Winter] trinke ich gern Kaffee. | در زمستان دوست دارم قهوه بنوشم.
+Dezember, Januar und Februar sind im [Winter]. | دسامبر، ژانویه و فوریه در زمستان هستند.
+Im [Winter] bin ich oft zu Hause. | در زمستان اغلب خانه‌ام.
+Ich mag den [Winter] nicht. | زمستان را دوست ندارم.
+Im [Winter] kommt mein Onkel zu uns. | در زمستان عمویم پیش ما می‌آید.
+
+# Datum
+Welches [Datum] ist heute? | امروز چه تاریخی است؟
+Schreiben Sie bitte das [Datum]. | لطفاً تاریخ را بنویسید.
+Ich weiß das [Datum] nicht. | تاریخ را نمی‌دانم.
+Das [Datum] ist der erste Mai. | تاریخ، اول ماه مه است.
+Welches [Datum] war gestern? | دیروز چه تاریخی بود؟
+
+# Geburtstag
+Heute ist mein [Geburtstag]. | امروز تولد من است.
+Wann ist dein [Geburtstag]? | تولدت کی است؟
+Mein [Geburtstag] ist im Mai. | تولد من در ماه مه است.
+Am Sonntag ist der [Geburtstag] von Anna. | یکشنبه تولد آناست.
+Was möchtest du zum [Geburtstag]? | برای تولدت چه می‌خواهی؟
+
+# Geburtstag haben
+Ich weiß nicht, wann Anna [Geburtstag hat]. | نمی‌دانم تولد آنا کی است.
+Ich möchte im Sommer [Geburtstag haben]. | دوست دارم تولدم در تابستان باشد. | d: Geburtstag sein, Geburtstag hat, Geburtstag machen
+Mein Bruder [hat Geburtstag]! | تولد برادرم است!
+Weißt du, wer [Geburtstag hat]? | می‌دانی تولد کیست؟
+Ich [habe Geburtstag] und bin jetzt zwanzig. | تولدم است و حالا بیست ساله‌ام.
+
+# Geschenk
+Das [Geschenk] ist für dich. | این هدیه برای توست.
+Ich habe ein [Geschenk] für Anna. | یک هدیه برای آنا دارم.
+Was für ein schönes [Geschenk]! | چه هدیه قشنگی!
+Ich suche ein [Geschenk] für meine Mutter. | دنبال یک هدیه برای مادرم می‌گردم.
+Zum Geburtstag kaufe ich ihm ein [Geschenk]. | برای تولدش برایش یک هدیه می‌خرم.
+
+# herzlichen Glückwunsch
+[Herzlichen Glückwunsch], Anna! | تبریک می‌گویم، آنا! | d: Gute Nacht, Auf Wiedersehen, Entschuldigung
+[Herzlichen Glückwunsch] zum Geburtstag! | تولدت مبارک! | d: Gute Nacht, Auf Wiedersehen, Entschuldigung
+Wir sagen: „[Herzlichen Glückwunsch]!“ | ما می‌گوییم: «تبریک!» | d: Gute Nacht, Auf Wiedersehen, Entschuldigung
+Oh, [herzlichen Glückwunsch]! | وای، تبریک می‌گویم! | d: gute Nacht, auf Wiedersehen, Entschuldigung
+[Herzlichen Glückwunsch] zum Baby! | تولد بچه‌تان مبارک! | d: Gute Nacht, Auf Wiedersehen, Entschuldigung
+
+# Termin
+Ich habe heute einen [Termin]. | امروز یک قرار دارم.
+Der [Termin] ist am Montag um zehn Uhr. | قرار دوشنبه ساعت ده است.
+Wann ist der [Termin]? | قرار کی است؟
+Ich brauche einen [Termin]. | یک وقت (قرار) لازم دارم.
+Am Freitag habe ich keinen [Termin]. | جمعه هیچ قراری ندارم.
+
+# einen Termin haben
+Ich [habe einen Termin] um zehn Uhr. | ساعت ده قرار دارم.
+Anna [hat einen Termin] am Montag. | آنا دوشنبه قرار دارد.
+Wir [haben einen Termin] in der Schule. | ما در مدرسه قرار داریم.
+Kann ich heute [einen Termin haben]? | می‌توانم امروز وقت بگیرم؟ | d: einen Termin sein, einen Termin hat, einen Termin habe
+Ich weiß nicht, wann wir [einen Termin haben]. | نمی‌دانم کی قرار داریم. | d: einen Termin habe, einen Termin hat, einen Termin hast
+
+# einen Termin machen
+Ich möchte [einen Termin machen]. | می‌خواهم وقت بگیرم. | d: einen Termin tun, einen Termin sagen, einen Termin spielen
+Ich [mache einen Termin] für Montag. | برای دوشنبه وقت می‌گیرم.
+Kann ich bitte [einen Termin machen]? | لطفاً می‌توانم وقت بگیرم؟ | d: einen Termin tun, einen Termin sagen, einen Termin spielen
+Anna [macht einen Termin] in der Schule. | آنا در مدرسه وقت می‌گیرد.
+Wir müssen [einen Termin machen]. | باید وقت بگیریم. | d: einen Termin tun, einen Termin sagen, einen Termin spielen
+
+# Pause
+Die [Pause] ist um zehn Uhr. | زنگ تفریح ساعت ده است.
+Die [Pause] ist nur zehn Minuten. | استراحت فقط ده دقیقه است.
+In der [Pause] trinke ich Kaffee. | در وقت استراحت قهوه می‌نوشم.
+Die Kinder spielen in der [Pause]. | بچه‌ها در زنگ تفریح بازی می‌کنند.
+Ich brauche eine [Pause]. | به یک استراحت نیاز دارم.
+
+# Pause machen
+Wir [machen Pause] bis zehn Uhr. | تا ساعت ده استراحت می‌کنیم.
+Ich muss jetzt [Pause machen]. | الان باید استراحت کنم. | d: Pause sein, Pause macht, Pause mache
+Komm, wir [machen Pause]! | بیا، استراحت کنیم!
+Die Kinder [machen Pause] und spielen. | بچه‌ها استراحت می‌کنند و بازی می‌کنند.
+Ich weiß nicht, wann wir [Pause machen]. | نمی‌دانم کی استراحت می‌کنیم. | d: Pause mache, Pause macht, Pause machst
+
+# Moment
+Einen [Moment], bitte! | یک لحظه، لطفاً!
+Im [Moment] habe ich keine Zeit. | فعلاً وقت ندارم.
+Im [Moment] wohne ich bei meinem Bruder. | فعلاً پیش برادرم زندگی می‌کنم.
+Einen [Moment], ich komme gleich. | یک لحظه، الان می‌آیم.
+Das war ein schöner [Moment]. | لحظه قشنگی بود.
+
+# dauern
+Das [dauert] eine Stunde. | این یک ساعت طول می‌کشد.
+Die Pause [dauert] zehn Minuten. | استراحت ده دقیقه طول می‌کشد.
+Der Termin [dauert] eine halbe Stunde. | قرار نیم ساعت طول می‌کشد.
+Die Schule [dauert] bis zwei Uhr. | مدرسه تا ساعت دو طول می‌کشد.
+Das kann [dauern]. | ممکن است طول بکشد.
+
+# frei
+Ist hier [frei]? | اینجا خالی است؟
+Am Sonntag bin ich [frei]. | یکشنبه آزادم.
+Der Termin am Montag ist noch [frei]. | وقتِ دوشنبه هنوز آزاد است.
+Die Straße ist [frei]. | خیابان خلوت است.
+Bist du heute [frei]? | امروز آزادی؟
+
+# frei haben
+Ich weiß nicht, wann ich [frei habe]. | نمی‌دانم کی تعطیلم.
+Ich möchte morgen [frei haben]. | می‌خواهم فردا تعطیل باشم. | d: frei habe, frei hat, frei machen
+Anna [hat frei] und ist zu Hause. | آنا تعطیل است و خانه است.
+Wir [haben frei], komm zu uns! | ما تعطیلیم، بیا پیش ما!
+Mein Mann [hat frei]. | شوهرم تعطیل است.
+
+# schlafen
+Das Baby [schläft] jetzt. | بچه الان خواب است.
+Ich [schlafe] in der Nacht acht Stunden. | شب‌ها هشت ساعت می‌خوابم.
+Wo [schläfst] du heute? | امشب کجا می‌خوابی؟
+Die Kinder [schlafen] schon. | بچه‌ها دیگر خوابیده‌اند. | d: sagen, nehmen, finden
+Ich kann nicht [schlafen]. | نمی‌توانم بخوابم. | d: nehmen, geben, finden
