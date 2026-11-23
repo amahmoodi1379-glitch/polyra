@@ -1,0 +1,77 @@
+code: fr-a1-possessifs-1
+title: «ـَم»، «ـَت»، «ـَش»: mon، ton، son
+scope: صفت ملکی برای من، تو و او: mon، ma، mes؛ ton، ta، tes؛ son، sa، ses، با mon، ton و son قبل از اسم مؤنثی که با صدادار یا h شروع می‌شود (mon école)؛ notre، votre و leur در واحد بعد می‌آیند.
+can_do: حالا می‌توانی از چیزها و آدم‌های خودت و دیگران حرف بزنی: ma maison، ton ami، sa famille.
+rule: mon، ton، son برای اسم مذکر، ma، ta، sa برای مؤنث و mes، tes، ses برای جمع؛ شکلش را جنسِ اسم تعیین می‌کند، نه صاحبش. قبل از مؤنثِ صدادار: mon، ton، son.
+mistake: فارسی «ـَش» را برای مرد و زن یکی می‌گوید و فارسی‌زبان‌ها خیال می‌کنند son یعنی «مالِ آن مرد» و sa یعنی «مالِ آن زن»، پس می‌نویسند «Paul aime son voiture»؛ درست: sa voiture، چون voiture مؤنث است. «ma école» و «ma amie» هم غلط است: mon école، mon amie.
+lesson:
+فرانسوی «ـَم» و «ـَت» و «ـَش» را قبل از اسم می‌گذارد: ma maison یعنی «خانه‌ام».
+شکلش به جنس و شمار همان اسم بستگی دارد: mon برای مذکر، ma برای مؤنث، mes برای جمع.
+برای تو: ton، ta، tes و برای او: son، sa، ses.
+son و sa به صاحب ربطی ندارند، فقط به خود اسم: Paul aime sa voiture (voiture مؤنث است) و Marie aime son chien.
+پس sa voiture هم «ماشینِ آن مرد» است و هم «ماشینِ آن زن»، درست مثل «ماشینش» در فارسی.
+قبل از اسم مؤنثی که با صدادار یا h شروع شود، برای راحتی تلفظ mon، ton و son می‌آید: mon école، ton amie، son idée.
+table:
+ | مذکر | مؤنث | مؤنثِ صدادار | جمع
+من | mon chien | ma maison | mon école | mes livres
+تو | ton chien | ta maison | ton école | tes livres
+او | son chien | sa maison | son école | ses livres
+sets:
+mon: chien, travail, nom, ami, livre
+ma: maison, voiture, famille, vie, ville
+mon + مؤنث: école, idée, amie
+examples:
+J'aime ma maison. | خانه‌ام را دوست دارم.
+Mon école est grande. | مدرسه‌ام بزرگ است.
+Paul aime sa voiture. | پل ماشینش را دوست دارد.
+Tu cherches tes livres ? | دنبال کتاب‌هایت می‌گردی؟
+targets:
+J'aime [ma] maison. | خانه‌ام را دوست دارم. | d: mon, mes, moi | hint: (mon)
+[Mon] chien est petit. | سگم کوچک است. | d: Ma, Mes, Moi | hint: (mon)
+[Mes] livres sont sur la table. | کتاب‌هایم روی میز هستند. | d: Mon, Ma, Moi
+[Mon] école est grande. | مدرسه‌ام بزرگ است. | d: Ma, Mes, Moi | hint: (mon)
+Tu cherches [ta] voiture ? | دنبال ماشینت می‌گردی؟ | d: ton, tes, toi | hint: (ton)
+[Ton] ami habite à Lyon ? | دوستت در لیون زندگی می‌کند؟ | d: Ta, Tes, Toi
+Où sont [tes] enfants ? | بچه‌هایت کجا هستند؟ | d: ton, ta, toi | hint: (ton)
+C'est [ton] idée ? | این ایدهٔ توست؟ | d: ta, tes, toi | hint: (ton)
+Paul aime [sa] voiture. | پل ماشینش را دوست دارد. | d: son, ses, lui | hint: (son)
+Marie cherche [son] chien. | ماری دنبال سگش می‌گردد. | d: sa, ses, lui | hint: (son)
+Paul habite avec [sa] famille. | پل با خانواده‌اش زندگی می‌کند. | d: son, ses, lui
+Marie parle avec [ses] amis. | ماری با دوستانش حرف می‌زند. | d: son, sa, lui | hint: (son)
+Paul aime [son] école. | پل مدرسه‌اش را دوست دارد. | d: sa, ses, lui | hint: (son)
+Marie est dans [sa] maison. | ماری در خانه‌اش است. | d: son, ses, lui
+J'habite avec [mon] amie Sophie. | با دوستم سوفی زندگی می‌کنم. | d: ma, mes, moi | hint: (mon)
+[Ma] famille habite à Téhéran. | خانواده‌ام در تهران زندگی می‌کند. | d: Mon, Mes, Moi
+[Mon] nom est Ali. | اسمم علی است. | d: Ma, Mes, Moi | hint: (mon)
+Je cherche [mes] livres. | دنبال کتاب‌هایم می‌گردم. | d: mon, ma, moi
+J'aime [mon] travail. | کارم را دوست دارم. | d: ma, mes, moi | hint: (mon)
+Tu aimes [ta] ville ? | شهرت را دوست داری؟ | d: ton, tes, toi
+[Tes] amis sont ici. | دوستانت اینجا هستند. | d: Ton, Ta, Toi | hint: (ton)
+C'est [ta] table ? | این میز توست؟ | d: ton, tes, toi
+Tu manges avec [ton] amie ? | با دوستت (دختر) غذا می‌خوری؟ | d: ta, tes, toi | hint: (ton)
+Paul cherche [ses] livres. | پل دنبال کتاب‌هایش می‌گردد. | d: son, sa, lui
+Marie aime [son] travail. | ماری کارش را دوست دارد. | d: sa, ses, lui | hint: (son)
+Paul parle avec [son] amie Léa. | پل با دوستش لئا حرف می‌زند. | d: sa, ses, lui
+C'est la voiture de Paul ? Oui, c'est [sa] voiture. | ماشینِ پل است؟ بله، ماشینِ اوست. | d: son, ses, lui | hint: (son)
+C'est le chien de Marie ? Oui, c'est [son] chien. | سگِ ماری است؟ بله، سگِ اوست. | d: sa, ses, lui
+J'aime [ma] vie. | زندگی‌ام را دوست دارم. | d: mon, mes, moi | hint: (mon)
+Où est [ton] chat ? | گربه‌ات کجاست؟ | d: ta, tes, toi
+[Mon] chien est dans [ma] voiture. | سگم در ماشینم است. | d: Ma, Mes, Moi / mon, mes, moi
+Paul cherche [sa] voiture et Marie cherche [son] chien. | پل دنبال ماشینش می‌گردد و ماری دنبال سگش. | d: son, ses, lui / sa, ses, lui | full: Marie cherche son chien et Paul cherche sa voiture.
+[Ton] ami et [ta] famille habitent ici ? | دوستت و خانواده‌ات اینجا زندگی می‌کنند؟ | d: Ta, Tes, Toi / ton, tes, toi | full: Ta famille et ton ami habitent ici ?
+J'aime [mon] école et [mes] amis. | مدرسه‌ام و دوستانم را دوست دارم. | d: ma, mes, moi / mon, ma, moi | full: J'aime mes amis et mon école.
+Marie habite avec [son] amie et [ses] chats. | ماری با دوستش و گربه‌هایش زندگی می‌کند. | d: sa, ses, lui / son, sa, lui | full: Marie habite avec ses chats et son amie.
+C'est [ta] voiture ? Oui, c'est [ma] voiture. | ماشینِ توست؟ بله، ماشینِ من است. | d: ton, tes, toi / mon, mes, moi
+transforms:
+Mon livre est sur la table. => Mes livres sont sur la table. | جمله را جمع کن.
+Ton ami est ici. => Tes amis sont ici. | جمله را جمع کن.
+J'aime ma maison. => Tu aimes ta maison. | جمله را با tu بنویس.
+Je cherche mon chien. => Paul cherche son chien. | جمله را برای Paul بنویس.
+Je cherche ma voiture. => Marie cherche sa voiture. | جمله را برای Marie بنویس.
+J'habite avec mon amie. => Tu habites avec ton amie. | جمله را با tu بنویس.
+translations:
+خانه‌ام را دوست دارم. => J'aime ma maison.
+پل ماشینش را دوست دارد. => Paul aime sa voiture.
+دوستانت اینجا هستند. => Tes amis sont ici. ; Tes amies sont ici.
+ماری دنبال سگش می‌گردد. => Marie cherche son chien.
+مدرسه‌ام بزرگ است. => Mon école est grande.

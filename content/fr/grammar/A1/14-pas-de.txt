@@ -1,0 +1,75 @@
+code: fr-a1-pas-de
+title: pas de: «ندارم» و «نیست»
+scope: در جملهٔ منفی un، une و des به de یا d' تبدیل می‌شوند (Je n'ai pas de voiture، Il n'y a pas d'enfants)؛ بعد از être و با le، la، les حرف تعریف عوض نمی‌شود. pas de بعد از du و de la در واحد «بعضی، کمی» دوباره می‌آید.
+can_do: حالا می‌توانی بگویی چه چیزی نداری یا جایی چه چیزی نیست: Je n'ai pas de voiture. Il n'y a pas de problème.
+rule: بعد از ne … pas، un، une و des می‌شوند de (قبل از صدادار d'). بعد از être و با le، la، les چیزی عوض نمی‌شود: Ce n'est pas un chien. Je n'aime pas le café.
+mistake: فارسی در «ندارم» فقط فعل را منفی می‌کند و قبل از اسم چیزی عوض نمی‌شود، برای همین فارسی‌زبان‌ها می‌نویسند «je n'ai pas une voiture» یا «il n'y a pas des enfants»؛ درست: je n'ai pas de voiture، il n'y a pas d'enfants. برعکسش هم غلط است: «ce n'est pas de chien»؛ بعد از être حرف تعریف می‌ماند: ce n'est pas un chien.
+lesson:
+در جملهٔ منفی، un، une و des به de تبدیل می‌شوند: J'ai un chien. → Je n'ai pas de chien.
+قبل از صدادار یا h، de می‌شود d': Je n'ai pas d'ami. Il n'y a pas d'école.
+با il y a هم همین است: Il y a des enfants. → Il n'y a pas d'enfants.
+de برای مذکر و مؤنث و جمع یکی است؛ فقط خود اسم مفرد یا جمع می‌ماند: pas de chien، pas d'enfants.
+دو جا de نمی‌آید: بعد از être (C'est un chien. → Ce n'est pas un chien.)
+و وقتی le، la یا les باشد، مثلاً بعد از aimer (J'aime le café. → Je n'aime pas le café.)
+table:
+مثبت | منفی
+J'ai un chien. | Je n'ai pas de chien.
+J'ai une voiture. | Je n'ai pas de voiture.
+Il y a des enfants. | Il n'y a pas d'enfants.
+C'est un chien. | Ce n'est pas un chien.
+J'aime le café. | Je n'aime pas le café.
+examples:
+Je n'ai pas de voiture. | من ماشین ندارم.
+Il n'y a pas d'école dans la rue. | در این خیابان مدرسه نیست.
+Ce n'est pas un chien, c'est un chat. | این سگ نیست، گربه است.
+Pas de problème ! | مشکلی نیست!
+targets:
+Je n'ai pas [de] voiture. | من ماشین ندارم. | d: une, un, des | hint: (pas de)
+Il n'y a pas [de] chat ici. | اینجا گربه نیست. | d: un, une, des
+Paul n'a pas [de] chien. | پل سگ ندارد. | d: un, une, des | hint: (pas de)
+Nous n'avons pas [d']enfants. | ما بچه نداریم. | d: des, un, une
+Il n'y a pas [d']école dans la rue. | در این خیابان مدرسه نیست. | d: une, un, des | hint: (pas de)
+Tu n'as pas [de] livre ? | کتاب نداری؟ | d: un, une, des
+Elle n'a pas [d']ami à Paris. | او در پاریس دوستی ندارد. | d: un, une, des | hint: (pas de)
+Il n'y a pas [de] problème. | مشکلی نیست. | d: un, une, des
+Je ne mange pas [de] pain. | من نان نمی‌خورم. | d: un, une, des | hint: (pas de)
+Vous n'avez pas [de] voiture ? | شما ماشین ندارید؟ | d: une, un, des
+Il n'y a pas [de] table dans la maison. | در خانه میز نیست. | d: une, un, des | hint: (pas de)
+Je n'ai pas [d']idée. | هیچ ایده‌ای ندارم. | d: une, un, des
+On n'a pas [de] café. | قهوه نداریم. | d: un, une, des
+Il n'y a pas [de] gens dans la rue. | در خیابان کسی نیست. | d: des, un, une | hint: (pas de)
+Ils ne cherchent pas [de] maison. | آن‌ها دنبال خانه نیستند. | d: une, un, des
+Il n'y a pas [d']enfants à l'école. | در مدرسه بچه نیست. | d: des, un, une | hint: (pas de)
+Marie n'a pas [de] famille à Paris. | ماری در پاریس خانواده ندارد. | d: une, un, des
+Tu n'as pas [d']amis ? | دوست نداری؟ | d: des, un, une | hint: (pas de)
+Il n'y a pas [de] voitures dans la rue. | در خیابان ماشین نیست. | d: des, un, une
+Nous n'avons pas [de] table. | ما میز نداریم. | d: une, un, des | hint: (pas de)
+Ce n'est pas [un] chien, c'est un chat. | این سگ نیست، گربه است. | d: de, une, des | hint: (un)
+Ce n'est pas [une] voiture. | این ماشین نیست. | d: de, un, des | hint: (un)
+Ce n'est pas [un] problème. | این مشکل نیست. | d: de, une, des
+Je n'aime pas [le] café. | من قهوه دوست ندارم. | d: de, du, des | hint: (le)
+Paul n'aime pas [les] chats. | پل گربه‌ها را دوست ندارد. | d: de, des, du
+Je n'ai pas [le] temps. | وقت ندارم. | d: du, des, la
+Pas [de] problème ! | مشکلی نیست! | d: une, des, du
+Je [n']ai pas de chien. | من سگ ندارم. | d: ne, pas, non
+Il n'y [a] pas d'eau. | آب نیست. | d: ont, sont, est | hint: (il y a)
+Ce n'est pas [une] idée de Paul. | این ایدهٔ پل نیست. | d: de, un, des | hint: (un)
+J'ai [un] chien, mais je n'ai pas [de] chat. | من سگ دارم، ولی گربه ندارم. | d: une, des, de / un, une, des | full: Je n'ai pas de chat, mais j'ai un chien.
+Il y a [des] maisons, mais il n'y a pas [d']école. | چند خانه هست، ولی مدرسه نیست. | d: un, une, de / une, un, des
+Tu as [une] voiture ? Non, je n'ai pas [de] voiture. | ماشین داری؟ نه، ماشین ندارم. | d: un, des, de / une, un, des
+Paul a [des] amis, mais il n'a pas [de] famille ici. | پل دوست دارد، ولی اینجا خانواده ندارد. | d: un, une, de / une, un, des
+Je n'aime pas [le] café et je ne mange pas [de] pain. | قهوه دوست ندارم و نان نمی‌خورم. | d: de, du, des / un, une, des | full: Je ne mange pas de pain et je n'aime pas le café.
+Il n'y a pas [de] chien, c'est [un] chat. | سگ نیست، گربه است. | d: un, une, des / de, une, des
+transforms:
+J'ai une voiture. => Je n'ai pas de voiture. | جمله را منفی کن.
+Il y a un chat ici. => Il n'y a pas de chat ici. | جمله را منفی کن.
+Nous avons des enfants. => Nous n'avons pas d'enfants. | جمله را منفی کن.
+C'est un chien. => Ce n'est pas un chien. | جمله را منفی کن.
+J'aime le café. => Je n'aime pas le café. | جمله را منفی کن.
+Paul a un ami à Lyon. => Paul n'a pas d'ami à Lyon. | جمله را منفی کن.
+translations:
+من ماشین ندارم. => Je n'ai pas de voiture.
+اینجا گربه نیست. => Il n'y a pas de chat ici. ; Ici, il n'y a pas de chat.
+این سگ نیست. => Ce n'est pas un chien.
+ما بچه نداریم. => Nous n'avons pas d'enfants. ; On n'a pas d'enfants.
+مشکلی نیست! => Pas de problème ! ; Il n'y a pas de problème. ; Ce n'est pas un problème.
