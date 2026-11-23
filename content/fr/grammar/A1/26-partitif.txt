@@ -1,0 +1,77 @@
+code: fr-a1-partitif
+title: du، de la، de l': «کمی از…»
+scope: حرف تعریف بخشی du، de la، de l' و des برای خوراکی و چیزهای شمرده‌نشدنی (du pain، de l'eau)؛ de بعد از منفی و بعد از مقدار (beaucoup de، un peu de، un kilo de، une bouteille de)؛ le، la، les بعد از aimer، adorer و détester.
+can_do: حالا می‌توانی بگویی چه می‌خوری و می‌نوشی، چه نمی‌خوری و در مغازه چقدر از چیزی می‌خواهی: Je bois de l'eau. Un kilo de pommes, s'il vous plaît.
+rule: du (مذکر)، de la (مؤنث)، de l' (صدادار)، des (جمع) برای مقداری از یک چیز؛ بعد از ne … pas و بعد از مقدارها فقط de؛ بعد از aimer: le، la، les.
+mistake: فارسی قبل از «نان» و «آب» چیزی نمی‌گذارد، برای همین فارسی‌زبان‌ها می‌نویسند «je mange pain» یا «je bois eau»؛ درست: je mange du pain، je bois de l'eau. برعکسش هم غلط است: «j'aime du chocolat»؛ بعد از aimer می‌آید j'aime le chocolat.
+lesson:
+برای مقداری از چیزی که شمرده نمی‌شود (نان، آب، گوشت) فرانسوی du، de la یا de l' می‌گذارد، جایی که فارسی چیزی نمی‌گذارد: Je mange du pain (نان می‌خورم).
+du برای مذکر، de la برای مؤنث، de l' قبل از صدادار و des برای جمع: du fromage، de la soupe، de l'eau، des légumes.
+در جملهٔ منفی همه‌شان de می‌شوند، مثل un و une: Je ne mange pas de viande.
+بعد از مقدارها هم فقط de می‌آید: beaucoup de fruits، un peu de lait، un kilo de pommes، une bouteille d'eau.
+اما بعد از aimer، adorer و détester حرف تعریف le، la یا les می‌آید، چون از آن چیز به‌طور کلی حرف می‌زنیم: J'aime le chocolat.
+پس J'aime le café (قهوه دوست دارم)، ولی Je bois du café (قهوه می‌خورم).
+table:
+ | مثبت | منفی
+مذکر | du pain | pas de pain
+مؤنث | de la soupe | pas de soupe
+صدادار | de l'eau | pas d'eau
+جمع | des légumes | pas de légumes
+sets:
+du: pain, fromage, café, thé, lait, riz, sucre, poisson
+de la: soupe, viande, salade
+de l': eau, argent
+examples:
+Je mange du pain. | نان می‌خورم.
+Tu veux de la soupe ? | سوپ می‌خواهی؟
+Je bois de l'eau. | آب می‌خورم.
+Je ne mange pas de viande. | گوشت نمی‌خورم.
+targets:
+Je mange [du] pain. | نان می‌خورم. | d: de la, des, de | hint: (du)
+Tu bois [de l']eau ? | آب می‌خوری؟ | d: du, de la, des | hint: (du)
+Elle veut [de la] soupe. | او (زن) سوپ می‌خواهد. | d: du, de l', des
+Nous achetons [du] fromage. | پنیر می‌خریم. | d: de la, de l', de | hint: (du)
+Il y a [de la] viande ? | گوشت هست؟ | d: du, de l', de
+Je prends [du] café. | قهوه می‌خورم. | d: de la, de l', des
+Vous voulez [du] thé ? | چای می‌خواهید؟ | d: de la, de l', des | hint: (du)
+Les enfants mangent [des] pâtes. | بچه‌ها ماکارونی می‌خورند. | d: du, de la, de
+On mange [du] poisson ce soir. | امشب ماهی می‌خوریم. | d: de la, de l', de | hint: (du)
+Je bois [du] lait. | شیر می‌خورم. | d: de la, de l', des
+Il mange [de la] salade. | او سالاد می‌خورد. | d: du, de l', des | hint: (du)
+Tu mets [du] sucre ? | شکر می‌ریزی؟ | d: de la, de l', des
+Marie achète [des] légumes. | ماری سبزی می‌خرد. | d: du, de la, de | hint: (du)
+Elle a [de l']argent. | او پول دارد. | d: du, de la, des
+Je voudrais [du] riz. | برنج می‌خواهم. | d: de la, de l', des | hint: (du)
+Je ne mange pas [de] viande. | گوشت نمی‌خورم. | d: de la, du, des | hint: (pas de)
+Il ne boit pas [de] café. | او قهوه نمی‌خورد. | d: du, de la, des
+Nous n'avons pas [d']argent. | پول نداریم. | d: de l', du, de la | hint: (pas de)
+Tu ne prends pas [de] sucre ? | شکر نمی‌ریزی؟ | d: du, de la, des
+Il n'y a pas [de] lait. | شیر نیست. | d: du, de la, des | hint: (pas de)
+Je mange beaucoup [de] fruits. | خیلی میوه می‌خورم. | d: du, de la, les | hint: (beaucoup de)
+Je voudrais un peu [de] lait. | کمی شیر می‌خواهم. | d: de la, des, le
+Un kilo [de] pommes, s'il vous plaît. | یک کیلو سیب، لطفاً. | d: des, du, les | hint: (un kilo de)
+Une bouteille [d']eau, s'il vous plaît. | یک بطری آب، لطفاً. | d: de l', du, de la
+Une tasse [de] thé ? | یک فنجان چای؟ | d: du, de la, des | hint: (une tasse de)
+J'aime [le] chocolat. | شکلات دوست دارم. | d: du, de, des | hint: (le)
+Il n'aime pas [le] poisson. | او ماهی دوست ندارد. | d: du, de, des
+Elle adore [les] gâteaux. | او عاشق کیک است. | d: des, de, du | hint: (le)
+Je déteste [le] lait. | از شیر بدم می‌آید. | d: du, de, des
+Tu aimes [la] viande ? | گوشت دوست داری؟ | d: de la, de, du | hint: (le)
+Je mange [du] pain et je bois [de l']eau. | نان می‌خورم و آب می‌نوشم. | d: de la, des, de / du, de la, des | full: Je bois de l'eau et je mange du pain.
+J'aime [le] café, mais je ne bois pas [de] thé. | قهوه دوست دارم، ولی چای نمی‌خورم. | d: du, de, des / du, de la, des
+Il y a [du] fromage, mais il n'y a pas [de] pain. | پنیر هست، ولی نان نیست. | d: de la, de l', de / du, de la, des
+Tu veux [de la] soupe ou [de la] salade ? | سوپ می‌خواهی یا سالاد؟ | d: du, de l', des / du, de l', des | full: Tu veux de la salade ou de la soupe ?
+Nous achetons [des] fruits et un kilo [de] riz. | میوه و یک کیلو برنج می‌خریم. | d: du, de la, de / du, des, le | full: Nous achetons un kilo de riz et des fruits.
+Elle n'aime pas [la] viande, alors elle mange [du] poisson. | او گوشت دوست ندارد، پس ماهی می‌خورد. | d: de la, de, du / de la, de l', de
+transforms:
+Je mange du pain. => Je ne mange pas de pain. | جمله را منفی کن.
+Il boit de l'eau. => Il ne boit pas d'eau. | جمله را منفی کن.
+Nous mangeons de la viande. => Nous mangeons beaucoup de viande. | beaucoup را به جمله اضافه کن.
+J'aime le fromage. => Je mange du fromage. | به‌جای aimer بنویس manger.
+Tu bois du lait ? => Tu ne bois pas de lait ? | جمله را منفی کن.
+translations:
+نان می‌خورم. => Je mange du pain.
+آب می‌خوری؟ => Tu bois de l'eau ?
+گوشت نمی‌خورم. => Je ne mange pas de viande.
+شکلات دوست دارم. => J'aime le chocolat.
+یک بطری آب، لطفاً. => Une bouteille d'eau, s'il vous plaît. ; Une bouteille d'eau, s'il te plaît.

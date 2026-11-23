@@ -1,0 +1,74 @@
+code: fr-a1-c-est-il-est
+title: c'est یا il est؟
+scope: انتخاب بین c'est / ce sont و il est / elle est / ils sont: اسم با حرف تعریف، اسم آدم و ضمیر جدا بعد از c'est؛ صفت و شغلِ بی‌حرف تعریف بعد از il یا elle est؛ c'est + صفتِ مذکر برای حرف کلی (C'est bon !).
+can_do: حالا می‌توانی کسی را معرفی کنی و از شغل و حالش بگویی: C'est Marie. Elle est professeur.
+rule: c'est یا ce sont + اسم با un، le، mon… یا اسم آدم؛ il est، elle est، ils sont + صفت یا شغلِ بی‌حرف تعریف؛ c'est + صفتِ مذکر وقتی حرفِ کلی می‌زنیم.
+mistake: فارسی‌زبان‌ها «او یک پزشک است» را کلمه به کلمه می‌گویند «Il est un médecin»؛ درست: Il est médecin یا C'est un médecin. برای یک زن هم «C'est grande» غلط است: Elle est grande.
+lesson:
+فارسی برای «او … است» و «این … است» یک «است» دارد، ولی فرانسوی دو راه دارد: c'est و il/elle est.
+بعد از c'est اسم با un، le، mon و مانند این‌ها، اسم آدم یا moi و toi می‌آید: C'est un ami. C'est mon frère. C'est Paul. C'est moi.
+بعد از il est و elle est صفت یا شغلِ بی‌حرف تعریف می‌آید: Il est grand. Elle est médecin.
+پس شغل دو جور گفته می‌شود: Il est médecin یا C'est un médecin، ولی «Il est un médecin» نه.
+وقتی صفت دربارهٔ چیزی کلی یا یک موقعیت است، c'est + صفتِ مذکر می‌آید: La soupe ? C'est bon ! Paris, c'est beau !
+برای جمع: ce sont + اسم (Ce sont mes amis) و ils یا elles sont + صفت (Ils sont gentils).
+table:
+c'est / ce sont | il est / elle est
+C'est un médecin. | Il est médecin.
+C'est mon amie. | Elle est gentille.
+C'est Paul. | Il est grand.
+Ce sont mes amis. | Ils sont iraniens.
+C'est bon ! | Elle est bonne.
+examples:
+C'est Paul. Il est médecin. | این پل است. پزشک است.
+C'est un bon médecin. | پزشک خوبی است.
+Ce sont mes amies. Elles sont gentilles. | این‌ها دوستانم هستند. مهربان‌اند.
+La soupe ? C'est bon ! | سوپ؟ خوشمزه است!
+targets:
+[C'est] Paul. | این پل است. | d: Il est, Elle est, Ce sont
+[C'est] mon ami Ali. | این دوستم علی است. | d: Il est, Elle est, Ce sont | hint: (c'est)
+[C'est] une amie de Marie. | یکی از دوستان ماری است. | d: Elle est, Il est, Ce sont
+Qui est-ce ? [C'est] ma sœur. | این کیست؟ خواهرم است. | d: Elle est, Il est, Ce sont | hint: (c'est)
+[C'est] un bon médecin. | پزشک خوبی است. | d: Il est, Elle est, Ce sont
+Marie ? [Elle est] professeur. | ماری؟ معلم است. | d: C'est, Ce sont, Il est | hint: (il est)
+Paul ? [Il est] médecin. | پل؟ پزشک است. | d: C'est, Ce sont, Elle est
+Marie ? [Elle est] grande. | ماری؟ قدبلند است. | d: C'est, Il est, Ce sont | hint: (il est)
+Les enfants ? [Ils sont] fatigués. | بچه‌ها؟ خسته‌اند. | d: C'est, Ce sont, Il est
+[Ce sont] mes amis. | این‌ها دوستانم هستند. | d: Il est, Elle est, Ces sont | hint: (c'est)
+[Ce sont] des livres français. | این‌ها کتاب‌های فرانسوی‌اند. | d: Il est, Elle est, Ces sont
+La soupe ? [C'est] bon ! | سوپ؟ خوشمزه است! | d: Elle est, Il est, Ce sont | hint: (c'est)
+Cette robe ? [C'est] joli ! | این لباس؟ قشنگ است! | d: Elle est, Il est, Ce sont
+Sophie ? [Elle est] française. | سوفی؟ فرانسوی است. | d: C'est, Il est, Ce sont | hint: (il est)
+Sara ? [Elle est] étudiante. | سارا؟ دانشجوست. | d: C'est, Ce sont, Il est
+Il y a un homme. [C'est] le père de Paul. | یک مرد هست. پدرِ پل است. | d: Il est, Elle est, Ce sont | hint: (c'est)
+Mon frère ? [Il est] ingénieur. | برادرم؟ مهندس است. | d: C'est, Ce sont, Elle est
+[C'est] un ingénieur. | او یک مهندس است. | d: Il est, Elle est, Ce sont | hint: (c'est)
+[C'est] une belle maison. | خانهٔ قشنگی است. | d: Elle est, Il est, Ce sont
+La maison ? [Elle est] belle. | خانه؟ قشنگ است. | d: C'est, Il est, Ce sont | hint: (il est)
+Mes sœurs ? [Elles sont] gentilles. | خواهرهایم؟ مهربان‌اند. | d: C'est, Ce sont, Elle est
+[C'est] moi. | منم. | d: Il est, Elle est, Ce sont | hint: (c'est)
+La viande ? [C'est] cher ici. | گوشت؟ اینجا گران است. | d: Elle est, Il est, Ce sont
+[C'est] la voiture de Marie. | ماشینِ ماری است. | d: Elle est, Il est, Ce sont | hint: (c'est)
+Les filles ? [Elles sont] iraniennes. | دخترها؟ ایرانی‌اند. | d: C'est, Ce sont, Elle est
+Mon père ? [Il est] chauffeur de taxi. | پدرم؟ رانندهٔ تاکسی است. | d: C'est, Ce sont, Elle est | hint: (il est)
+[C'est] un chauffeur sympathique. | رانندهٔ خوش‌اخلاقی است. | d: Il est, Elle est, Ce sont
+La ville ? [C'est] beau ! | شهر؟ قشنگ است! | d: Elle est, Il est, Ce sont | hint: (c'est)
+Ma mère ? [Elle est] infirmière. | مادرم؟ پرستار است. | d: C'est, Ce sont, Il est
+[Ce sont] mes parents. | این‌ها پدر و مادرم هستند. | d: Il est, Elle est, Ces sont | hint: (c'est)
+[C'est] Marie. [Elle est] professeur. | این ماری است. معلم است. | d: Il est, Elle est, Ce sont / C'est, Ce sont, Il est
+[C'est] mon frère. [Il est] médecin. | این برادرم است. پزشک است. | d: Il est, Elle est, Ce sont / C'est, Ce sont, Elle est
+[Ce sont] mes amies. [Elles sont] françaises. | این‌ها دوستانم هستند. فرانسوی‌اند. | d: Il est, Elle est, Ces sont / C'est, Ce sont, Elle est
+Paul ? [Il est] ingénieur. [C'est] un bon ingénieur. | پل؟ مهندس است. مهندس خوبی است. | d: C'est, Ce sont, Elle est / Il est, Elle est, Ce sont
+La robe ? [Elle est] belle. [C'est] une robe de Paris. | این لباس؟ قشنگ است. لباسی از پاریس است. | d: C'est, Il est, Ce sont / Elle est, Il est, Ce sont
+[Ce sont] Ali et Reza. [Ils sont] iraniens. | این‌ها علی و رضا هستند. ایرانی‌اند. | d: Il est, Elle est, Ces sont / C'est, Ce sont, Il est
+transforms:
+Il est médecin. => C'est un médecin. | جمله را با c'est بنویس.
+C'est une étudiante. => Elle est étudiante. | جمله را با elle est بنویس.
+C'est mon ami. => Ce sont mes amis. | جمله را جمع کن.
+Elle est grande. => Elles sont grandes. | جمله را جمع کن.
+Il est ingénieur. => Ils sont ingénieurs. | جمله را جمع کن.
+translations:
+این دوستم علی است. => C'est mon ami Ali.
+ماری معلم است. => Marie est professeur.
+این‌ها دوستانم هستند. => Ce sont mes amis. ; Ce sont mes amies.
+او یک مهندس است. => C'est un ingénieur. ; Il est ingénieur.
+سوپ؟ خوشمزه است! => La soupe ? C'est bon ! ; La soupe ? Elle est bonne !
