@@ -1,0 +1,78 @@
+code: fr-a1-passe-compose-participes
+title: اسم مفعول‌های دیگر: fini، pris، fait، vu
+scope: اسم مفعول فعل‌های -ir (fini، choisi، dormi) و فعل‌های بی‌قاعدهٔ A1 با avoir (pris، compris، appris، mis، fait، dit، écrit، lu، vu، bu، eu، été، voulu، pu، dû، attendu، répondu، ouvert، vécu، plu)؛ فعل‌هایی که با être می‌آیند در واحد بعد.
+can_do: حالا می‌توانی از کارهای بیشتری در گذشته بگویی: J'ai fini mon travail. Qu'est-ce que tu as fait hier ? J'ai vu un bon film.
+rule: finir → fini؛ prendre → pris، mettre → mis، faire → fait، dire → dit، écrire → écrit؛ lire → lu، voir → vu، boire → bu، avoir → eu، pouvoir → pu، vouloir → voulu، devoir → dû؛ être → été، ouvrir → ouvert.
+mistake: فارسی‌زبان‌ها قاعدهٔ -é را روی همهٔ فعل‌ها می‌برند و می‌نویسند «j'ai prendu»، «j'ai faisé» یا «j'ai finé»؛ درست: j'ai pris، j'ai fait، j'ai fini.
+tables: passé composé | irregular
+tables: passé composé | ir
+lesson:
+همهٔ فعل‌ها اسم مفعولِ -é ندارند؛ اسم مفعول فعل‌های دیگر را باید جدا یاد گرفت.
+فعل‌های -ir مثل finir با i: finir → fini، choisir → choisi، dormir → dormi.
+خیلی از فعل‌های بی‌قاعده با u: lire → lu، voir → vu، boire → bu، avoir → eu، vouloir → voulu، pouvoir → pu، devoir → dû، attendre → attendu، répondre → répondu.
+بعضی با is یا it: prendre → pris (compris، appris)، mettre → mis، faire → fait، dire → dit، écrire → écrit.
+چند تای دیگر: être → été، ouvrir → ouvert، vivre → vécu، pleuvoir → plu (Il a plu).
+ساخت همان است: avoir + اسم مفعول: j'ai fait، nous avons vu؛ و منفی: je n'ai pas compris.
+table:
+پایان | مصدر | اسم مفعول
+i | finir، choisir، dormir | fini، choisi، dormi
+u | lire، voir، boire، avoir | lu، vu، bu، eu
+u | attendre، répondre، entendre | attendu، répondu، entendu
+is | prendre، mettre | pris، mis
+it | faire، dire، écrire | fait، dit، écrit
+جدا | être، ouvrir، vivre | été، ouvert، vécu
+examples:
+J'ai fini mon travail. | کارم را تمام کردم.
+Qu'est-ce que tu as fait hier ? | دیروز چه کار کردی؟
+Nous avons vu un bon film. | یک فیلم خوب دیدیم.
+Il a pris le bus. | او اتوبوس سوار شد.
+targets:
+J'ai [fini] mon travail. | کارم را تمام کردم. | d: finé, finis, finit | hint: (finir)
+Tu as [choisi] un dessert ? | دسر انتخاب کردی؟ | d: choisé, choisis, choisit
+Nous avons [dormi] dix heures. | ده ساعت خوابیدیم. | d: dormé, dors, dormons | hint: (dormir)
+Il a [pris] le bus. | او اتوبوس سوار شد. | d: prendu, prené, prend | hint: (prendre)
+J'ai [compris] la leçon. | درس را فهمیدم. | d: comprendu, comprené, comprends
+Elle a [appris] le français à l'école. | او فرانسوی را در مدرسه یاد گرفت. | d: apprendu, apprené, apprend | hint: (apprendre)
+J'ai [fait] les courses. | خرید کردم. | d: faisé, faire, fais | hint: (faire)
+Qu'est-ce que tu as [fait] hier ? | دیروز چه کار کردی؟ | d: faisé, faire, fais
+Il a [dit] bonjour. | او سلام کرد. | d: disé, dire, dis | hint: (dire)
+Nous avons [écrit] une lettre. | یک نامه نوشتیم. | d: écrivé, écrire, écrivons
+Tu as [lu] ce livre ? | این کتاب را خواندی؟ | d: lisé, lire, lis | hint: (lire)
+J'ai [vu] un bon film. | یک فیلم خوب دیدم. | d: voyé, voir, vois | hint: (voir)
+Ils ont [bu] du café. | آن‌ها قهوه خوردند. | d: buvé, boire, boivent
+J'ai [eu] un problème. | یک مشکل برایم پیش آمد. | d: avu, avoir, ai | hint: (avoir)
+Elle a [été] malade. | او مریض بود. | d: êté, être, est | hint: (être)
+Vous avez [mis] vos chaussures ? | کفش‌هایتان را پوشیدید؟ | d: metté, mettre, mettez
+J'ai [attendu] le train. | منتظر قطار ماندم. | d: attendé, attendre, attends | hint: (attendre)
+Il a [répondu] à la question. | او به سؤال جواب داد. | d: répondé, répondre, répond
+Nous avons [ouvert] la fenêtre. | پنجره را باز کردیم. | d: ouvri, ouvré, ouvrons | hint: (ouvrir)
+Il a [voulu] venir. | او خواست بیاید. | d: voulé, vouloir, veut
+Je n'ai pas [pu] venir. | نتوانستم بیایم. | d: pouvé, pouvoir, peux | hint: (pouvoir)
+Elle a [dû] partir. | او مجبور شد برود. | d: devé, devoir, doit
+Tu as [entendu] ? | شنیدی؟ | d: entendé, entendre, entends | hint: (entendre)
+J'ai [connu] Paul à Lyon. | پل را در لیون شناختم. | d: connaissé, connaître, connais
+Ils ont [vendu] leur maison. | آن‌ها خانه‌شان را فروختند. | d: vendé, vendre, vendent | hint: (vendre)
+Hier, il a [plu]. | دیروز باران آمد. | d: pleuvu, pleut, pleuvé | hint: (pleuvoir)
+On a [couru] dans le parc. | در پارک دویدیم. | d: couri, couré, court
+Vous avez [vécu] à Paris ? | در پاریس زندگی کرده‌اید؟ | d: vivé, vivre, vivez | hint: (vivre)
+Les enfants ont [fini] l'exercice. | بچه‌ها تمرین را تمام کردند. | d: finé, finissent, finit
+Je n'ai pas [compris] la question. | سؤال را نفهمیدم. | d: comprendu, comprené, comprends | hint: (comprendre)
+J'ai [fini] mon travail et j'ai [pris] un café. | کارم را تمام کردم و یک قهوه خوردم. | d: finé, finis, finit / prendu, prené, prends
+Tu as [lu] le livre ou tu as [vu] le film ? | کتاب را خواندی یا فیلم را دیدی؟ | d: lisé, lire, lis / voyé, voir, vois | full: Tu as vu le film ou tu as lu le livre ?
+Nous avons [fait] les courses et nous avons [bu] un café. | خرید کردیم و یک قهوه خوردیم. | d: faisé, faire, faisons / buvé, boire, buvons | full: Nous avons bu un café et nous avons fait les courses.
+Il a [écrit] une lettre et il a [mis] la lettre dans son sac. | او نامه‌ای نوشت و نامه را در کیفش گذاشت. | d: écrivé, écrire, écris / metté, mettre, met
+J'ai [attendu] Marie, mais elle n'a pas [pu] venir. | منتظر ماری ماندم، ولی او نتوانست بیاید. | d: attendé, attendre, attends / pouvé, pouvoir, peut
+Qu'est-ce que tu as [fait] ? J'ai [dormi]. | چه کار کردی؟ خوابیدم. | d: faisé, faire, fais / dormé, dors, dormir
+transforms:
+Je prends le bus. => J'ai pris le bus. | جمله را به گذشته (passé composé) ببر.
+Nous faisons les courses. => Nous avons fait les courses. | جمله را به گذشته (passé composé) ببر.
+Il lit un livre. => Il a lu un livre. | جمله را به گذشته (passé composé) ببر.
+Tu finis ton travail ? => Tu as fini ton travail ? | جمله را به گذشته (passé composé) ببر.
+Ils voient un film. => Ils ont vu un film. | جمله را به گذشته (passé composé) ببر.
+J'ai compris. => Je n'ai pas compris. | جمله را منفی کن.
+translations:
+دیروز چه کار کردی؟ => Qu'est-ce que tu as fait hier ? ; Tu as fait quoi hier ? ; Hier, qu'est-ce que tu as fait ?
+درس را فهمیدم. => J'ai compris la leçon.
+یک فیلم خوب دیدم. => J'ai vu un bon film.
+کارم را تمام کردم. => J'ai fini mon travail.
+نتوانستم بیایم. => Je n'ai pas pu venir.

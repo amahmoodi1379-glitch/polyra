@@ -1,0 +1,81 @@
+code: fr-a1-passe-compose-etre
+title: گذشته با être: je suis allé، elle est allée
+scope: passé composé با être برای فعل‌های رفت‌وآمد (aller، venir، arriver، partir، entrer، sortir، rester، monter، descendre، rentrer) و فعل‌های ضمیری، با جور شدن اسم مفعول با فاعل (elle est allée، ils sont partis، elle s'est levée)؛ جور شدن با مفعولِ قبل از avoir در A2 می‌آید.
+can_do: حالا می‌توانی بگویی کجا رفتی، کی رسیدی و روزت چطور گذشت: Je suis allée au cinéma. Nous sommes rentrés tard.
+rule: aller، venir، arriver، partir، entrer، sortir، rester، monter، descendre، rentrer و فعل‌های ضمیری: être + اسم مفعول، که مثل صفت با فاعل جور می‌شود (elle est allée، ils sont partis).
+mistake: فارسی‌زبان‌ها برای همه avoir می‌گذارند («j'ai allé»، «il a arrivé») یا اسم مفعول را با فاعل جور نمی‌کنند («elle est allé»)؛ درست: je suis allé، il est arrivé، elle est allée.
+tables: passé composé | aux-etre
+lesson:
+چند فعلِ رفت‌وآمد گذشته‌شان را با être می‌سازند، نه avoir: aller، venir، arriver، partir، entrer، sortir، rester، monter، descendre، rentrer.
+Je suis allé (رفتم)، elle est venue (آمد)، nous sommes partis (رفتیم).
+با être اسم مفعول مثل صفت با فاعل جور می‌شود: مؤنث + e، جمع + s: il est allé، elle est allée، ils sont allés، elles sont allées.
+پس اگر گوینده زن باشد می‌نویسد: Je suis allée.
+همهٔ فعل‌های ضمیری هم با être می‌آیند: Je me suis levé، elle s'est levée.
+در منفی ne … pas دور être می‌آید: Je ne suis pas sorti. فعل‌های دیگر همان avoir را دارند: j'ai mangé، ولی je suis parti.
+table:
+ضمیر | aller | se lever
+je | suis allé، suis allée | me suis levé، me suis levée
+tu | es allé، es allée | t'es levé، t'es levée
+il | est allé | s'est levé
+elle | est allée | s'est levée
+nous | sommes allés، sommes allées | nous sommes levés، nous sommes levées
+vous | êtes allé، êtes allés | vous êtes levé، vous êtes levés
+ils | sont allés | se sont levés
+elles | sont allées | se sont levées
+sets:
+با être: aller, venir, arriver, partir, entrer, sortir, rester, monter, descendre, rentrer
+examples:
+Je suis allé à Paris. | به پاریس رفتم.
+Marie est arrivée hier. | ماری دیروز رسید.
+Les enfants sont partis. | بچه‌ها رفتند.
+Elle s'est levée tôt. | او زود از خواب بلند شد.
+targets:
+Je [suis] allé à Paris. | به پاریس رفتم. | d: ai, es, sommes | hint: (être)
+Tu [es] venu en voiture ? | با ماشین آمدی؟ | d: as, est, êtes | hint: (être)
+Paul [est] arrivé hier. | پل دیروز رسید. | d: a, es, sont
+Nous [sommes] partis à huit heures. | ساعت هشت راه افتادیم. | d: avons, êtes, sont | hint: (être)
+Vous [êtes] restés à la maison ? | خانه ماندید؟ | d: avez, sommes, sont
+Elles [sont] sorties hier soir. | آن‌ها دیشب بیرون رفتند. | d: ont, est, êtes | hint: (être)
+Il [est] rentré tard. | او دیر به خانه برگشت. | d: a, es, sont
+Ils [sont] montés dans le train. | آن‌ها سوار قطار شدند. | d: ont, est, êtes | hint: (être)
+Marie est [allée] au cinéma. | ماری به سینما رفت. | d: allé, allés, aller | hint: (aller)
+Les enfants sont [partis] à l'école. | بچه‌ها به مدرسه رفتند. | d: parti, partie, partir
+Elle est [arrivée] à midi. | او ظهر رسید. | d: arrivé, arrivés, arriver | hint: (arriver)
+Ma sœur est [venue] avec moi. | خواهرم با من آمد. | d: venu, venus, venir
+Les filles sont [sorties]. | دخترها بیرون رفتند. | d: sorti, sortis, sortir | hint: (sortir)
+Paul et Marie sont [restés] à Lyon. | پل و ماری در لیون ماندند. | d: resté, restées, rester
+Mes parents sont [rentrés] hier. | پدر و مادرم دیروز برگشتند. | d: rentré, rentrées, rentrer | hint: (rentrer)
+Sophie est [descendue] du bus. | سوفی از اتوبوس پیاده شد. | d: descendu, descendus, descendre
+Les garçons sont [entrés] dans la classe. | پسرها وارد کلاس شدند. | d: entré, entrées, entrer | hint: (entrer)
+Je suis [allé] au cinéma. | به سینما رفتم. | d: aller, vais, allés | ok: allée
+Je ne [suis] pas sorti. | بیرون نرفتم. | d: ai, es, est | hint: (être)
+Elle n'est pas [venue]. | او نیامد. | d: venu, venus, venir
+Nous ne sommes pas [partis]. | ما نرفتیم. | d: parti, partir, partons | ok: parties | hint: (partir)
+Je me [suis] levé à sept heures. | ساعت هفت از خواب بلند شدم. | d: ai, es, est | hint: (être)
+Elle s'est [levée] tôt. | او زود از خواب بلند شد. | d: levé, levés, lever
+Nous nous [sommes] promenés dans le parc. | در پارک قدم زدیم. | d: avons, êtes, sont | hint: (être)
+Ils se sont [couchés] tard. | آن‌ها دیر خوابیدند. | d: couché, couchée, coucher
+Tu t'es [reposé] ? | استراحت کردی؟ | d: reposer, reposes, reposés | ok: reposée | hint: (se reposer)
+Marie s'est [habillée]. | ماری لباس پوشید. | d: habillé, habillés, habiller
+Hier, nous [avons] travaillé. | دیروز کار کردیم. | d: sommes, êtes, ont | hint: (avoir)
+Elle [a] pris le train. | او قطار گرفت. | d: est, as, ont
+Ils [sont] arrivés à Paris. | آن‌ها به پاریس رسیدند. | d: ont, est, êtes | hint: (être)
+Paul [a] mangé une pomme et il [est] parti. | پل یک سیب خورد و رفت. | d: est, as, ont / a, es, sont
+Marie est [arrivée] et Paul est [parti]. | ماری رسید و پل رفت. | d: arrivé, arrivés, arriver / partie, partis, partir | full: Paul est parti et Marie est arrivée.
+Nous [sommes] allés au restaurant et nous [avons] mangé du poisson. | به رستوران رفتیم و ماهی خوردیم. | d: avons, êtes, sont / sommes, avez, ont
+Elle s'est [levée] et elle est [sortie]. | او از خواب بلند شد و بیرون رفت. | d: levé, levés, lever / sorti, sortis, sortir
+Les enfants sont [rentrés] et ils se sont [couchés]. | بچه‌ها برگشتند و خوابیدند. | d: rentré, rentrées, rentrer / couché, couchée, coucher
+Tu [es] resté à la maison ? Non, je [suis] allé au parc. | خانه ماندی؟ نه، به پارک رفتم. | d: as, est, êtes / ai, es, est
+transforms:
+Je vais à Paris. => Je suis allé à Paris. ; Je suis allée à Paris. | جمله را به گذشته (passé composé) ببر.
+Elle part à midi. => Elle est partie à midi. | جمله را به گذشته (passé composé) ببر.
+Nous arrivons à Lyon. => Nous sommes arrivés à Lyon. ; Nous sommes arrivées à Lyon. | جمله را به گذشته (passé composé) ببر.
+Il est venu. => Elle est venue. | جمله را با elle بنویس.
+Je me lève tôt. => Je me suis levé tôt. ; Je me suis levée tôt. | جمله را به گذشته (passé composé) ببر.
+Ils sont sortis. => Ils ne sont pas sortis. | جمله را منفی کن.
+translations:
+به پاریس رفتم. => Je suis allé à Paris. ; Je suis allée à Paris.
+ماری دیروز رسید. => Marie est arrivée hier. ; Hier, Marie est arrivée.
+بچه‌ها به مدرسه رفتند. => Les enfants sont partis à l'école. ; Les enfants sont allés à l'école.
+او (زن) نیامد. => Elle n'est pas venue.
+ساعت هفت از خواب بلند شدم. => Je me suis levé à sept heures. ; Je me suis levée à sept heures.
