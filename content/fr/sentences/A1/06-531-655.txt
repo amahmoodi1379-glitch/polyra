@@ -667,7 +667,7 @@ La pharmacie est [ouverte] la nuit. | داروخانه شب‌ها باز است
 Le livre est [ouvert] sur la table. | کتاب روی میز باز است. | d: fermé, nouveau, vieux
 # fermé
 La banque est [fermée] le samedi. | بانک شنبه‌ها تعطیل است.
-La porte est [fermée]. | در بسته است. | d: ouverte, grande, jolie
+La porte de la cuisine est [fermée]. | در آشپزخانه بسته است. | d: ouverte, grande, jolie
 Le restaurant est [fermé] aujourd'hui. | رستوران امروز تعطیل است. | d: ouvert, cher, petit
 Les magasins sont [fermés] le dimanche. | مغازه‌ها یکشنبه‌ها تعطیل‌اند.
 Il dort, les yeux [fermés]. | با چشم‌های بسته خوابیده است. | d: ouverts, bleus, noirs
