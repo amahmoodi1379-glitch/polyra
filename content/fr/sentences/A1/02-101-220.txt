@@ -1,0 +1,924 @@
+// French A1, card words 101–220 in teaching order (content/fr/words/A1.tsv).
+// papa (207) and maman (209) are colloquial: no sentences of their own (PRD §5.4).
+
+# devoir
+Je [dois] travailler. | باید کار کنم.
+Tu [dois] manger. | باید غذا بخوری.
+Il [doit] aller à l'école. | او باید به مدرسه برود.
+Nous [devons] parler avec Paul. | ما باید با پل حرف بزنیم.
+Vous [devez] boire de l'eau. | شما باید آب بنوشید.
+Les enfants [doivent] être à la maison. | بچه‌ها باید خانه باشند.
+
+# falloir
+Il [faut] manger. | باید غذا خورد. | d: falloir, fallu, faille
+Il [faut] parler français ici. | اینجا باید فرانسوی حرف زد. | d: falloir, fallu, faille
+Il ne [faut] pas boire ça. | نباید این را نوشید. | d: falloir, fallu, faille
+Il [faut] une voiture pour aller là. | برای رفتن به آنجا ماشین لازم است. | d: falloir, fallu, faille
+Qu'est-ce qu'il [faut] faire ? | چه کار باید کرد؟ | d: falloir, fallu, faille
+Il [faut] aller à l'école. | باید به مدرسه رفت. | d: falloir, fallu, faille
+
+# savoir
+Je ne [sais] pas. | نمی‌دانم.
+Tu [sais] où est Paul ? | می‌دانی پل کجاست؟
+Il [sait] parler français. | او فرانسوی حرف زدن بلد است.
+Nous [savons] qui est là. | ما می‌دانیم چه کسی آنجاست.
+Vous [savez] où est l'école ? | می‌دانید مدرسه کجاست؟
+Les enfants ne [savent] pas pourquoi. | بچه‌ها نمی‌دانند چرا.
+
+# connaître
+Je [connais] Paul. | من پل را می‌شناسم.
+Tu [connais] Marie ? | ماری را می‌شناسی؟
+Il [connaît] bien Paris. | او پاریس را خوب می‌شناسد.
+Nous ne [connaissons] pas cette ville. | ما این شهر را نمی‌شناسیم.
+Vous [connaissez] mon ami ? | دوستم را می‌شناسید؟
+Les enfants [connaissent] le chien. | بچه‌ها سگ را می‌شناسند.
+
+# venir
+Je [viens] avec toi. | با تو می‌آیم.
+Tu [viens] ? | می‌آیی؟
+Il [vient] de Paris. | او از پاریس می‌آید.
+Nous [venons] chez toi. | ما به خانه‌ات می‌آییم.
+Vous [venez] d'où ? | اهل کجایید؟
+Ils [viennent] avec leurs enfants. | آن‌ها با بچه‌هایشان می‌آیند.
+Tu peux [venir] ici ? | می‌توانی بیایی اینجا؟
+
+# prendre
+Je [prends] un café. | یک قهوه می‌گیرم.
+Tu [prends] la voiture ? | ماشین را برمی‌داری؟
+Il [prend] son livre. | او کتابش را برمی‌دارد.
+Nous [prenons] du pain. | ما نان می‌گیریم.
+Vous [prenez] quoi ? | شما چی می‌گیرید؟
+Les enfants [prennent] de l'eau. | بچه‌ها آب برمی‌دارند.
+Je peux [prendre] ta voiture ? | می‌توانم ماشینت را بردارم؟
+
+# voir
+Je [vois] la maison. | خانه را می‌بینم.
+Tu [vois] le chat ? | گربه را می‌بینی؟
+On se [voit] chez Paul ? | خانهٔ پل همدیگر را ببینیم؟
+Nous [voyons] Paul et Marie. | ما پل و ماری را می‌بینیم.
+Vous [voyez] ? C'est ça. | می‌بینید؟ همین است.
+Je veux [voir] ta maison. | می‌خواهم خانه‌ات را ببینم.
+Ils ne [voient] rien. | آن‌ها هیچ چیز نمی‌بینند.
+
+# dire
+Je [dis] bonjour. | من سلام می‌کنم.
+Qu'est-ce que tu [dis] ? | چه می‌گویی؟
+Il [dit] merci. | او می‌گوید ممنون.
+Nous [disons] au revoir. | ما خداحافظی می‌کنیم.
+Vous [dites] ça à qui ? | این را به چه کسی می‌گویید؟
+Ils [disent] que c'est bon. | آن‌ها می‌گویند خوب است.
+Je veux [dire] quelque chose. | می‌خواهم یک چیزی بگویم.
+
+# regarder
+Je [regarde] le chat. | به گربه نگاه می‌کنم.
+Tu [regardes] quoi ? | به چی نگاه می‌کنی؟
+Il [regarde] la rue. | او به خیابان نگاه می‌کند.
+Nous [regardons] les voitures. | ما ماشین‌ها را تماشا می‌کنیم.
+[Regardez], c'est Paul ! | نگاه کنید، پل است!
+Les enfants [regardent] le chien. | بچه‌ها سگ را نگاه می‌کنند.
+
+# écouter
+J'[écoute] Marie. | به ماری گوش می‌دهم.
+Tu m'[écoutes] ? | به من گوش می‌دهی؟
+Il n'[écoute] pas. | او گوش نمی‌دهد.
+Nous [écoutons] madame Martin. | ما به خانم مارتن گوش می‌دهیم.
+[Écoutez], s'il vous plaît ! | لطفاً گوش کنید!
+Les enfants [écoutent] bien. | بچه‌ها خوب گوش می‌دهند.
+
+# lire
+Je [lis] un livre. | من کتاب می‌خوانم.
+Tu [lis] quoi ? | چی می‌خوانی؟
+Il [lit] beaucoup. | او زیاد می‌خواند.
+Nous [lisons] en français. | ما به فرانسوی می‌خوانیم.
+Vous [lisez] le nom de la rue ? | اسم خیابان را می‌خوانید؟
+Les enfants [lisent] à l'école. | بچه‌ها در مدرسه کتاب می‌خوانند.
+J'aime [lire]. | من کتاب خواندن را دوست دارم.
+
+# écrire
+J'[écris] mon nom. | اسمم را می‌نویسم.
+Tu [écris] à Marie ? | برای ماری می‌نویسی؟
+Il [écrit] un livre. | او یک کتاب می‌نویسد.
+Nous [écrivons] en français. | ما به فرانسوی می‌نویسیم.
+Vous [écrivez] votre nom ici, s'il vous plaît. | لطفاً اسمتان را اینجا بنویسید.
+Les enfants [écrivent] bien. | بچه‌ها خوب می‌نویسند.
+Je ne sais pas [écrire] ce nom. | نمی‌دانم این اسم را چطور بنویسم.
+
+# donner
+Je te [donne] mon livre. | کتابم را به تو می‌دهم.
+Tu me [donnes] de l'eau ? | به من آب می‌دهی؟
+Il [donne] du pain au chien. | او به سگ نان می‌دهد.
+Nous [donnons] un livre à chaque enfant. | ما به هر بچه یک کتاب می‌دهیم.
+[Donnez]-moi un café, s'il vous plaît. | لطفاً یک قهوه به من بدهید.
+Ils [donnent] à manger au chat. | آن‌ها به گربه غذا می‌دهند.
+
+# mettre
+Je [mets] le livre sur la table. | کتاب را روی میز می‌گذارم.
+Tu [mets] le pain où ? | نان را کجا می‌گذاری؟
+Il [met] la voiture dans la rue. | او ماشین را توی خیابان می‌گذارد.
+Nous [mettons] la table. | ما میز را می‌چینیم.
+Vous [mettez] de l'eau sur la table ? | روی میز آب می‌گذارید؟
+Où est-ce qu'ils [mettent] les livres ? | آن‌ها کتاب‌ها را کجا می‌گذارند؟
+
+# chercher
+Je [cherche] mon livre. | دنبال کتابم می‌گردم.
+Tu [cherches] quoi ? | دنبال چی می‌گردی؟
+Il [cherche] un travail. | او دنبال کار می‌گردد.
+Nous [cherchons] une maison à Lyon. | ما دنبال یک خانه در لیون می‌گردیم.
+Vous [cherchez] quelqu'un ? | دنبال کسی می‌گردید؟
+Les enfants [cherchent] le chat. | بچه‌ها دنبال گربه می‌گردند.
+
+# trouver
+Je ne [trouve] pas mon livre. | کتابم را پیدا نمی‌کنم.
+J'ai [trouvé] un chat ! | یک گربه پیدا کردم!
+Il [trouve] un travail à Paris. | او در پاریس کار پیدا می‌کند.
+Nous ne [trouvons] pas la rue. | خیابان را پیدا نمی‌کنیم.
+Où est-ce que vous [trouvez] du pain ? | کجا نان پیدا می‌کنید؟
+Les enfants [trouvent] quelque chose. | بچه‌ها یک چیزی پیدا می‌کنند.
+
+# attendre
+J'[attends] Marie. | منتظر ماری هستم.
+Tu [attends] qui ? | منتظر کی هستی؟
+Il [attend] dans la voiture. | او توی ماشین منتظر است.
+Nous [attendons] le café. | ما منتظر قهوه هستیم.
+[Attendez], s'il vous plaît. | لطفاً صبر کنید.
+Les enfants [attendent] à l'école. | بچه‌ها در مدرسه منتظرند.
+Je ne peux pas [attendre]. | نمی‌توانم صبر کنم.
+
+# comprendre
+Je ne [comprends] pas. | نمی‌فهمم.
+Tu [comprends] le français ? | فرانسوی می‌فهمی؟
+Il [comprend] tout. | او همه چیز را می‌فهمد.
+Nous [comprenons] bien. | ما خوب می‌فهمیم.
+Vous [comprenez] ? | متوجه می‌شوید؟
+Les enfants ne [comprennent] pas pourquoi. | بچه‌ها نمی‌فهمند چرا.
+
+# apprendre
+J'[apprends] le français. | من فرانسوی یاد می‌گیرم.
+Tu [apprends] où ? | کجا یاد می‌گیری؟
+Il [apprend] à lire. | او دارد خواندن یاد می‌گیرد.
+Nous [apprenons] avec un bon livre. | ما با یک کتاب خوب یاد می‌گیریم.
+Vous [apprenez] le français pour le travail ? | برای کار فرانسوی یاد می‌گیرید؟
+Les enfants [apprennent] à écrire. | بچه‌ها نوشتن یاد می‌گیرند.
+Je veux [apprendre] le français. | می‌خواهم فرانسوی یاد بگیرم.
+
+# aider
+Je t'[aide] ? | کمکت کنم؟
+Tu m'[aides], s'il te plaît ? | لطفاً کمکم می‌کنی؟
+Il [aide] sa famille. | او به خانواده‌اش کمک می‌کند.
+Nous [aidons] les enfants. | ما به بچه‌ها کمک می‌کنیم.
+Vous pouvez m'[aider] ? | می‌توانید به من کمک کنید؟
+Ils [aident] Paul à la maison. | آن‌ها در خانه به پل کمک می‌کنند.
+
+# ouvrir
+J'[ouvre] la voiture. | در ماشین را باز می‌کنم.
+Tu [ouvres] le livre ? | کتاب را باز می‌کنی؟
+L'école [ouvre] quand ? | مدرسه کِی باز می‌شود؟
+Nous [ouvrons] nos livres. | ما کتاب‌هایمان را باز می‌کنیم.
+[Ouvrez] le livre, s'il vous plaît. | لطفاً کتاب را باز کنید.
+Les enfants [ouvrent] tout ! | بچه‌ها همه چیز را باز می‌کنند!
+Je peux [ouvrir] ? | می‌توانم باز کنم؟
+
+# fermer
+Je [ferme] la voiture. | در ماشین را می‌بندم.
+Tu [fermes] le livre ? | کتاب را می‌بندی؟
+L'école [ferme] quand ? | مدرسه کِی تعطیل می‌شود؟
+Nous [fermons] la maison. | ما در خانه را می‌بندیم.
+[Fermez] vos livres, s'il vous plaît. | لطفاً کتاب‌هایتان را ببندید.
+Ils ne [ferment] pas la voiture. | آن‌ها در ماشین را نمی‌بندند.
+
+# arriver
+J'[arrive] ! | آمدم!
+Tu [arrives] quand ? | کِی می‌رسی؟
+Il [arrive] à Paris. | او به پاریس می‌رسد.
+Nous [arrivons] à la maison. | ما به خانه می‌رسیم.
+Vous [arrivez] chez nous quand ? | کِی به خانهٔ ما می‌رسید؟
+Les enfants [arrivent] à l'école. | بچه‌ها به مدرسه می‌رسند.
+Paul est [arrivé]. | پل رسید.
+
+# partir
+Je [pars] à Lyon. | من عازم لیون هستم.
+Tu [pars] quand ? | کِی می‌روی؟
+Il [part] avec sa famille. | او با خانواده‌اش می‌رود.
+Nous [partons] ensemble. | ما با هم راه می‌افتیم.
+Vous [partez] en voiture ? | با ماشین می‌روید؟
+Ils [partent] de la maison. | آن‌ها از خانه راه می‌افتند.
+Je dois [partir]. | باید بروم.
+
+# sortir
+Je [sors] avec mes amis. | با دوستانم بیرون می‌روم.
+Tu [sors] ? | بیرون می‌روی؟
+Il [sort] de la maison. | او از خانه بیرون می‌آید.
+Nous [sortons] avec le chien. | ما با سگ بیرون می‌رویم.
+Vous [sortez] de l'école quand ? | کِی از مدرسه بیرون می‌آیید؟
+Les enfants [sortent] dans la rue. | بچه‌ها به کوچه می‌روند.
+Je veux [sortir]. | می‌خواهم بیرون بروم. | d: venir, regarder, dormir
+
+# entrer
+J'[entre] dans la maison. | وارد خانه می‌شوم.
+Tu [entres] ? | داخل می‌آیی؟
+Il [entre] dans l'école. | او وارد مدرسه می‌شود.
+Nous [entrons] chez Paul. | ما وارد خانهٔ پل می‌شویم.
+[Entrez], s'il vous plaît ! | لطفاً بفرمایید داخل!
+Le chien n'[entre] pas ici. | سگ اینجا وارد نمی‌شود.
+On peut [entrer] ? | می‌توانیم وارد شویم؟
+
+# dormir
+Je [dors] bien ici. | اینجا خوب می‌خوابم.
+Tu [dors] ? | خوابی؟
+L'enfant [dort]. | بچه خواب است.
+Nous [dormons] chez nos amis. | ما خانهٔ دوستانمان می‌خوابیم.
+Vous [dormez] bien ? | خوب می‌خوابید؟
+Les chats [dorment] beaucoup. | گربه‌ها زیاد می‌خوابند.
+Je veux [dormir]. | می‌خواهم بخوابم.
+
+# penser
+Je [pense] à toi. | به تو فکر می‌کنم.
+Tu [penses] à quoi ? | به چی فکر می‌کنی؟
+Il [pense] que c'est bon. | او فکر می‌کند خوب است.
+Nous [pensons] que Paul est là. | ما فکر می‌کنیم پل اینجاست.
+Qu'est-ce que vous en [pensez] ? | شما چه فکر می‌کنید؟
+Ils ne [pensent] pas comme nous. | آن‌ها مثل ما فکر نمی‌کنند.
+
+# demander
+Je [demande] à Paul. | از پل می‌پرسم.
+Tu [demandes] quoi ? | چی می‌پرسی؟
+Il [demande] où est la rue. | او می‌پرسد خیابان کجاست.
+Nous [demandons] de l'eau. | ما آب می‌خواهیم.
+Vous [demandez] le nom de l'homme ? | اسم آن مرد را می‌پرسید؟
+Les enfants [demandent] du pain. | بچه‌ها نان می‌خواهند.
+Je peux [demander] quelque chose ? | می‌توانم یک چیزی بپرسم؟
+
+# répondre
+Je [réponds] à Marie. | به ماری جواب می‌دهم.
+Tu ne [réponds] pas ? | جواب نمی‌دهی؟
+Il [répond] en français. | او به فرانسوی جواب می‌دهد.
+Nous [répondons] à tout. | ما به همه چیز جواب می‌دهیم.
+[Répondez], s'il vous plaît. | لطفاً جواب بدهید.
+Les enfants [répondent] bien. | بچه‌ها خوب جواب می‌دهند.
+
+# commencer
+Je [commence] le travail. | کار را شروع می‌کنم.
+Tu [commences] quand ? | کِی شروع می‌کنی؟
+Le livre [commence] bien. | کتاب خوب شروع می‌شود.
+Nous [commençons] à manger. | ما غذا خوردن را شروع می‌کنیم.
+Vous [commencez] à comprendre ? | کم‌کم می‌فهمید؟
+Ils [commencent] à travailler à Paris. | آن‌ها در پاریس شروع به کار می‌کنند.
+On peut [commencer] ? | می‌توانیم شروع کنیم؟
+
+# finir
+Je [finis] mon travail. | کارم را تمام می‌کنم.
+Tu [finis] quand ? | کِی تمام می‌کنی؟
+Il [finit] son café. | او قهوه‌اش را تمام می‌کند.
+Nous [finissons] le livre. | ما کتاب را تمام می‌کنیم.
+Vous [finissez] tout le pain ? | همهٔ نان را تمام می‌کنید؟
+Les enfants [finissent] de manger. | بچه‌ها غذایشان را تمام می‌کنند.
+C'est [fini] ! | تمام شد!
+
+# jouer
+Je [joue] avec mon chat. | با گربه‌ام بازی می‌کنم.
+Tu [joues] avec nous ? | با ما بازی می‌کنی؟
+Il [joue] dans la rue. | او توی کوچه بازی می‌کند.
+Nous [jouons] ensemble. | ما با هم بازی می‌کنیم.
+Vous [jouez] où ? | کجا بازی می‌کنید؟
+Les enfants [jouent] à l'école. | بچه‌ها در مدرسه بازی می‌کنند.
+Le chien veut [jouer]. | سگ می‌خواهد بازی کند.
+
+# chose
+J'ai une [chose] pour toi. | یک چیز برایت دارم.
+C'est une bonne [chose]. | چیز خوبی است.
+Il y a beaucoup de [choses] à faire. | کارهای زیادی برای انجام دادن هست.
+Je ne comprends pas une [chose]. | یک چیز را نمی‌فهمم.
+Les [choses] vont bien. | اوضاع خوب است.
+Je cherche une [chose] dans la voiture. | دنبال یک چیزی توی ماشین می‌گردم.
+
+# idée
+J'ai une [idée] ! | یک فکری دارم!
+Quelle [idée] ! | چه فکری!
+Tu as une [idée] ? | ایده‌ای داری؟
+Je n'ai pas d'[idée]. | هیچ فکری ندارم.
+C'est l'[idée] de Marie. | این فکر ماری است.
+Les [idées] de Paul sont bonnes. | ایده‌های پل خوب است.
+
+# bonne idée
+C'est une [bonne idée]. | فکر خوبی است. | d: bonne nuit, bonne journée, bonne soirée
+[Bonne idée] ! | فکر خوبی است! | d: Bonne nuit, Bonne journée, Bonne soirée
+On mange ensemble ? [Bonne idée] ! | با هم غذا بخوریم؟ فکر خوبی است! | d: Bonne nuit, Bonne journée, Bonne soirée
+Ce n'est pas une [bonne idée]. | فکر خوبی نیست. | d: bonne nuit, bonne journée, bonne soirée
+Tu as une [bonne idée] ? | ایدهٔ خوبی داری؟ | d: bonne nuit, bonne journée, bonne soirée
+Aller à Paris ? [Bonne idée]. | رفتن به پاریس؟ فکر خوبی است. | d: Bonne nuit, Bonne journée, Bonne soirée
+
+# problème
+J'ai un [problème]. | یک مشکل دارم.
+Il y a un [problème] ? | مشکلی هست؟
+Quel est le [problème] ? | مشکل چیست؟
+C'est un grand [problème]. | مشکل بزرگی است.
+Tu as des [problèmes] au travail ? | سر کار مشکل داری؟
+Le [problème], c'est la voiture. | مشکل ماشین است.
+
+# pas de problème
+[Pas de problème] ! | مشکلی نیست! | d: C'est ça, Bonne idée, Ça va
+Oui, [pas de problème]. | بله، مشکلی نیست. | d: c'est ça, bonne idée, ça va
+Tu peux m'aider ? [Pas de problème]. | می‌توانی کمکم کنی؟ مشکلی نیست. | d: C'est ça, Bonne idée, Ça va
+[Pas de problème], je viens. | مشکلی نیست، می‌آیم. | d: C'est ça, Bonne idée, Ça va
+Merci ! [Pas de problème]. | ممنون! مشکلی نیست. | d: C'est ça, Bonne idée, Ça va
+Pour moi, [pas de problème]. | برای من مشکلی نیست. | d: c'est ça, bonne idée, ça va
+
+# monde
+Le [monde] est grand. | دنیا بزرگ است.
+Je veux voir le [monde]. | می‌خواهم دنیا را ببینم.
+Le [monde] est petit ! | دنیا کوچک است!
+Il y a beaucoup de chats dans le [monde]. | در دنیا گربه‌های زیادی هست.
+Paris est une grande ville du{du-contr} [monde]. | پاریس یکی از شهرهای بزرگ دنیاست.
+
+# tout le monde
+[Tout le monde] est là. | همه اینجا هستند. | d: Quelqu'un, Quelque chose, Rien
+Bonjour à [tout le monde] ! | سلام به همه! | d: quelqu'un, quelque chose, rien
+Ici, [tout le monde] parle français. | اینجا همه فرانسوی حرف می‌زنند. | d: quelqu'un, quelque chose, rien
+Il connaît [tout le monde]. | او همه را می‌شناسد. | d: quelqu'un, quelque chose, rien
+[Tout le monde] mange ensemble. | همه با هم غذا می‌خورند. | d: Quelqu'un, Quelque chose, Rien
+Au revoir, [tout le monde] ! | خداحافظ همگی! | d: quelqu'un, quelque chose, rien
+
+# personne
+C'est une bonne [personne]. | آدم خوبی است.
+Il y a 3 [personnes] dans la voiture. | سه نفر توی ماشین هستند.
+Une table pour 2 [personnes], s'il vous plaît. | یک میز برای دو نفر، لطفاً.
+Chaque [personne] a un livre. | هر نفر یک کتاب دارد.
+Combien de [personnes] habitent ici ? | چند نفر اینجا زندگی می‌کنند؟
+Cette [personne] parle français. | این شخص فرانسوی حرف می‌زند.
+
+# gens
+Ici, les [gens] parlent français. | اینجا مردم فرانسوی حرف می‌زنند. | d: hommes, garçons, amis
+Il y a beaucoup de [gens] dans la rue. | توی خیابان آدم‌های زیادی هستند. | d: hommes, garçons, amis
+Je connais ces [gens]. | من این آدم‌ها را می‌شناسم. | d: hommes, garçons, amis
+Les [gens] aiment cette ville. | مردم این شهر را دوست دارند. | d: hommes, garçons, amis
+Beaucoup de [gens] travaillent à Paris. | خیلی‌ها در پاریس کار می‌کنند. | d: hommes, garçons, amis
+
+# vie
+C'est la [vie] ! | زندگی همین است!
+La [vie] est bonne ici. | اینجا زندگی خوب است.
+J'aime ma [vie]. | زندگی‌ام را دوست دارم.
+La [vie] à Paris, c'est comment ? | زندگی در پاریس چطور است؟
+Il travaille toute sa [vie]. | او تمام عمرش کار می‌کند.
+Tu aimes la [vie] en France ? | زندگی در فرانسه را دوست داری؟
+
+# temps
+Combien de [temps] ? | چقدر وقت؟ | d: jours, fois, livres
+Tu as du [temps] pour moi ? | برای من وقت داری؟ | d: travail, pain, café
+Il y a peu de [temps]. | وقت کم است. | d: travail, pain, monde
+Je n'ai pas beaucoup de [temps]. | وقت زیادی ندارم. | d: travail, pain, café
+Il faut du [temps] pour apprendre le français. | برای یاد گرفتن فرانسوی وقت لازم است. | d: pain, café, monde
+
+# avoir le temps
+Tu [as le temps] ? | وقت داری؟
+Oui, j'[ai le temps]. | بله، وقت دارم.
+Nous [avons le temps] de manger. | ما برای غذا خوردن وقت داریم.
+Vous [avez le temps] pour un café ? | برای یک قهوه وقت دارید؟
+Paul [a le temps] de lire. | پل وقت کتاب خواندن دارد.
+Ils [ont le temps] de jouer. | آن‌ها برای بازی وقت دارند.
+
+# tout le temps
+Il parle [tout le temps]. | او مدام حرف می‌زند. | d: de temps en temps, tous les jours, ce soir
+Je pense à toi [tout le temps]. | همیشه به تو فکر می‌کنم. | d: de temps en temps, ce soir, à demain
+Le chat dort [tout le temps]. | گربه مدام می‌خوابد. | d: de temps en temps, tous les jours, ce soir
+Tu manges [tout le temps] ! | تو مدام غذا می‌خوری! | d: de temps en temps, tous les jours, ce soir
+Les enfants jouent [tout le temps]. | بچه‌ها همیشه بازی می‌کنند. | d: de temps en temps, tous les jours, ce soir
+Elle travaille [tout le temps]. | او مدام کار می‌کند. | d: de temps en temps, tous les jours, ce soir
+
+# de temps en temps
+Je bois un café [de temps en temps]. | گاهی یک قهوه می‌نوشم. | d: tout le temps, tous les jours, ce soir
+[De temps en temps], je vais à Paris. | هر از گاهی به پاریس می‌روم. | d: Tout le temps, Tous les jours, Ce soir
+Il vient [de temps en temps]. | او گاهی می‌آید. | d: tout le temps, tous les jours, ce soir
+On mange ensemble [de temps en temps]. | ما گاهی با هم غذا می‌خوریم. | d: tout le temps, tous les jours, ce soir
+Je lis [de temps en temps]. | من گاهی کتاب می‌خوانم. | d: tout le temps, tous les jours, ce soir
+Elle m'aide [de temps en temps]. | او گاهی به من کمک می‌کند. | d: tout le temps, tous les jours, ce soir
+
+# jour
+Un [jour], je vais à Paris. | یک روز به پاریس می‌روم.
+Quel [jour] ? | چه روزی؟
+Je suis à Paris pour 3 [jours]. | من سه روز در پاریس هستم.
+C'est un grand [jour] ! | روز بزرگی است!
+Chaque [jour], je lis un peu. | هر روز کمی کتاب می‌خوانم.
+Le [jour], le chat dort. | گربه روزها می‌خوابد.
+
+# tous les jours
+Je bois un café [tous les jours]. | هر روز یک قهوه می‌نوشم. | d: tout le temps, de temps en temps, ce soir
+Il travaille [tous les jours]. | او هر روز کار می‌کند. | d: tout le temps, de temps en temps, ce soir
+[Tous les jours], je vais à l'école. | هر روز به مدرسه می‌روم. | d: Tout le temps, De temps en temps, Ce soir
+On mange du pain [tous les jours]. | ما هر روز نان می‌خوریم. | d: tout le temps, de temps en temps, ce soir
+Tu lis [tous les jours] ? | هر روز کتاب می‌خوانی؟ | d: tout le temps, de temps en temps, ce soir
+Les enfants jouent ensemble [tous les jours]. | بچه‌ها هر روز با هم بازی می‌کنند. | d: tout le temps, de temps en temps, ce soir
+
+# an
+J'ai 20 [ans]. | من بیست سالم است. | d: jours, mois, heures
+Il a 3 [ans]. | او سه سالش است. | d: jours, mois, heures
+Ma fille a 5 [ans]. | دخترم پنج ساله است. | d: jours, mois, heures
+Tous les [ans], on va à Nice. | هر سال به نیس می‌رویم. | d: jours, mois, heures
+Mon chat a 2 [ans]. | گربه‌ام دو سالش است. | d: jours, mois, heures
+Mes enfants ont 6 et 8 [ans]. | بچه‌هایم شش و هشت ساله‌اند. | d: jours, mois, heures
+
+# année
+Bonne [année] ! | سال نو مبارک! | d: journée, nuit, soirée
+C'est une bonne [année]. | سال خوبی است.
+Cette [année], je vais à Paris. | امسال به پاریس می‌روم.
+Toute l'[année], il travaille. | او تمام سال کار می‌کند.
+Il y a beaucoup de travail cette [année]. | امسال کار زیاد است.
+Chaque [année], nous allons en France. | هر سال به فرانسه می‌رویم.
+
+# heure
+Il est quelle [heure] ? | ساعت چند است؟
+Il est 3 [heures]. | ساعت سه است.
+À quelle [heure] tu arrives ? | ساعت چند می‌رسی؟
+On mange à 7 [heures]. | ساعت هفت غذا می‌خوریم.
+Je peux attendre une [heure]. | می‌توانم یک ساعت صبر کنم.
+Je lis une [heure] par jour. | روزی یک ساعت کتاب می‌خوانم.
+
+# fois
+Je bois un café 3 [fois] par jour. | روزی سه بار قهوه می‌نوشم.
+Une [fois] par an, on va à Paris. | سالی یک بار به پاریس می‌رویم.
+Combien de [fois] ? | چند بار؟
+Chaque [fois], il dit non. | هر بار می‌گوید نه.
+Cette [fois], je comprends. | این بار می‌فهمم.
+
+# moment
+Un [moment], s'il vous plaît. | یک لحظه، لطفاً.
+Ce n'est pas le [moment]. | الان وقتش نیست.
+En ce [moment], je travaille à Lyon. | این روزها در لیون کار می‌کنم.
+C'est un bon [moment] pour parler ? | وقت خوبی برای حرف زدن است؟
+Attends un [moment] ! | یک لحظه صبر کن!
+
+# pays
+La France est un grand [pays]. | فرانسه کشور بزرگی است.
+Mon [pays], c'est l'Iran. | کشور من ایران است.
+Tu viens de quel [pays] ? | اهل کدام کشوری؟
+J'aime ce [pays]. | من این کشور را دوست دارم.
+Il y a beaucoup de [pays] dans le monde. | در دنیا کشورهای زیادی هست.
+La Suisse est un petit [pays]. | سوئیس کشور کوچکی است.
+
+# argent
+Je n'ai pas d'[argent]. | پول ندارم.
+Tu as de l'[argent] ? | پول داری؟
+L'[argent], ce n'est pas tout. | پول همه چیز نیست.
+Il donne de l'[argent] à sa famille. | او به خانواده‌اش پول می‌دهد.
+Il faut beaucoup d'[argent] pour une maison. | برای یک خانه پول زیادی لازم است.
+Je cherche mon [argent]. | دنبال پولم می‌گردم.
+
+# porte
+Ouvre la [porte], s'il te plaît. | لطفاً در را باز کن.
+Ferme la [porte] ! | در را ببند!
+Il y a quelqu'un à la [porte]. | کسی دم در است.
+La [porte] est fermée. | در بسته است.
+Le chat attend à la [porte]. | گربه دم در منتظر است.
+Où est la [porte] de l'école ? | در مدرسه کجاست؟
+
+# main
+Donne-moi la [main]. | دستت را به من بده.
+J'ai mal à la [main]. | دستم درد می‌کند.
+Il a un livre à la [main]. | یک کتاب در دستش است.
+Les [mains] sur la table ! | دست‌ها روی میز!
+Je mange avec la [main]. | با دست غذا می‌خورم.
+Elle a de petites [mains]. | او دست‌های کوچکی دارد.
+
+# tête
+J'ai mal à la [tête]. | سرم درد می‌کند.
+Il a une grande [tête]. | او سر بزرگی دارد.
+Le chien a la [tête] sur la table. | سگ سرش را روی میز گذاشته است.
+Il dit oui de la [tête]. | او با سر می‌گوید بله.
+Tu as quoi dans la [tête] ? | توی سرت چی داری؟
+Où est ma [tête] ! | حواسم کجاست!
+
+# besoin
+Pas [besoin] ! | لازم نیست!
+Merci, pas [besoin]. | ممنون، لازم نیست.
+Il n'y a pas [besoin] de voiture. | ماشین لازم نیست.
+Pas [besoin] de venir. | لازم نیست بیایی.
+Tu n'as pas [besoin] de ça. | به این نیازی نداری.
+
+# avoir besoin de
+J'[ai besoin d']eau. | به آب نیاز دارم.
+Tu [as besoin de] quelque chose ? | چیزی لازم داری؟
+Il [a besoin d']argent. | او به پول نیاز دارد.
+Nous [avons besoin d']une voiture. | ما به یک ماشین نیاز داریم.
+Vous [avez besoin de] moi ? | به من نیاز دارید؟
+Les enfants [ont besoin de] dormir. | بچه‌ها به خواب نیاز دارند.
+
+# nouveau
+J'ai une [nouvelle]{nouveau} voiture. | من یک ماشین نو دارم. | d: petite, vieille, grande
+C'est un [nouveau] livre. | کتاب جدیدی است.
+Tu as un [nouveau] travail ? | کار جدید داری؟
+Les [nouveaux] amis de Paul sont là. | دوستان جدید پل اینجا هستند.
+C'est mon [nouvel]{nouveau} ami, Ali. | این دوست جدیدم، علی است. | d: vieil, bon, grand
+Nous avons une [nouvelle]{nouveau} maison. | ما یک خانهٔ جدید داریم. | d: petite, vieille, grande
+
+# vieux
+C'est une [vieille] maison. | خانهٔ قدیمی است.
+C'est un [vieux] monsieur. | او آقای مسنی است.
+J'ai une [vieille] voiture. | من یک ماشین کهنه دارم.
+Ce livre est très [vieux]. | این کتاب خیلی قدیمی است.
+J'aime les [vieilles] rues de Lyon. | کوچه‌های قدیمی لیون را دوست دارم.
+C'est un [vieil]{vieux} ami. | او یک دوست قدیمی است. | d: nouvel, bon, grand
+
+# jeune
+Il est très [jeune]. | او خیلی جوان است.
+C'est une [jeune] femme. | او زن جوانی است.
+Ici, les gens sont [jeunes]. | اینجا مردم جوان‌اند.
+Tu es trop [jeune] pour ça. | تو برای این کار زیادی جوانی.
+Un [jeune] homme attend Marie. | یک مرد جوان منتظر ماری است.
+Mes amis sont [jeunes]. | دوستانم جوان‌اند.
+
+# beau
+Paris est une [belle] ville. | پاریس شهر زیبایی است.
+C'est un [beau] livre. | کتاب قشنگی است.
+Tu as une [belle] maison ! | خانهٔ قشنگی داری!
+Les enfants sont [beaux]. | بچه‌ها زیبا هستند.
+C'est un [bel]{beau} homme. | او مرد خوش‌قیافه‌ای است. | d: vieil, jeune, grand
+Quelle [belle] voiture ! | چه ماشین قشنگی!
+
+# joli
+C'est un [joli] nom. | اسم قشنگی است.
+Elle a une [jolie] maison. | او خانهٔ قشنگی دارد.
+Quel [joli] chat ! | چه گربهٔ قشنگی!
+La rue est très [jolie]. | خیابان خیلی قشنگ است.
+J'aime les [jolies] choses. | من چیزهای قشنگ را دوست دارم.
+Le livre est [joli]. | کتاب قشنگ است.
+
+# autre
+Tu veux un [autre] café ? | یک قهوهٔ دیگر می‌خواهی؟
+Je cherche une [autre] maison. | دنبال یک خانهٔ دیگر می‌گردم.
+Les [autres] enfants sont à l'école. | بچه‌های دیگر در مدرسه هستند. | d: grands, jeunes, nouveaux
+C'est une [autre] chose. | این یک چیز دیگر است.
+Tu as une [autre] idée ? | ایدهٔ دیگری داری؟
+Un [autre] jour, peut-être. | شاید یک روز دیگر.
+
+# premier
+C'est la [première] fois. | این اولین بار است.
+C'est mon [premier] jour ici. | این اولین روز من اینجاست.
+Paul est [premier]. | پل اول است.
+C'est la [première] maison de la rue. | این اولین خانهٔ خیابان است.
+Les [premiers] jours, je ne comprends rien. | روزهای اول هیچ چیز نمی‌فهمم.
+C'est mon [premier] livre en français. | این اولین کتابم به فرانسوی است.
+
+# dernier
+C'est la [dernière] fois ! | این آخرین بار است!
+Le [dernier] jour, nous allons à Paris. | روز آخر به پاریس می‌رویم.
+C'est ma [dernière] année à l'école. | این آخرین سال من در مدرسه است.
+Paul est [dernier]. | پل آخر است.
+La [dernière] maison de la rue est à nous. | آخرین خانهٔ خیابان مال ماست.
+L'année [dernière], j'ai travaillé à Lyon. | پارسال در لیون کار کردم.
+
+# seul
+Je suis [seul]. | من تنها هستم.
+Elle habite [seule]. | او تنها زندگی می‌کند.
+Il mange [seul]. | او تنها غذا می‌خورد.
+Les enfants sont [seuls] à la maison. | بچه‌ها در خانه تنها هستند.
+C'est mon [seul] ami ici. | او تنها دوست من اینجاست.
+Tu peux faire ça [seul] ? | می‌توانی این کار را تنهایی انجام دهی؟
+
+# vrai
+C'est [vrai] ? | راست است؟
+Ce n'est pas [vrai] ! | راست نیست!
+C'est un [vrai] ami. | او یک دوست واقعی است.
+C'est [vrai], je ne sais pas. | درست است، نمی‌دانم.
+Tout est [vrai]. | همه‌اش راست است.
+C'est un [vrai] problème. | یک مشکل واقعی است.
+
+# faux
+C'est [faux] ! | غلط است!
+Vrai ou [faux] ? | درست یا غلط؟
+Ce nom est [faux]. | این اسم غلط است.
+C'est une [fausse] idée. | فکر غلطی است.
+Tout est [faux] dans ce livre. | در این کتاب همه چیز غلط است.
+Ce n'est pas [faux]. | غلط نیست.
+
+# facile
+C'est [facile] ! | آسان است!
+Le français n'est pas [facile]. | فرانسوی آسان نیست.
+C'est un livre [facile]. | کتاب ساده‌ای است.
+La vie n'est pas [facile]. | زندگی آسان نیست.
+Ce n'est pas [facile] de trouver une maison. | پیدا کردن خانه آسان نیست.
+C'est [facile] à comprendre. | فهمیدنش آسان است.
+
+# difficile
+C'est très [difficile]. | خیلی سخت است.
+Le français est [difficile] ? | فرانسوی سخت است؟
+C'est un travail [difficile]. | کار سختی است.
+La vie à Paris est [difficile]. | زندگی در پاریس سخت است.
+C'est [difficile] à dire. | گفتنش سخت است.
+Ce livre est trop [difficile] pour moi. | این کتاب برای من زیادی سخت است.
+
+# important
+C'est très [important]. | خیلی مهم است.
+C'est un jour [important]. | روز مهمی است.
+La famille est [importante] pour moi. | خانواده برایم مهم است.
+Ce n'est pas [important]. | مهم نیست.
+J'ai une chose [importante] à dire. | یک چیز مهم برای گفتن دارم.
+Ce sont des choses [importantes]. | این‌ها چیزهای مهمی هستند.
+
+# libre
+Tu es [libre] ? | وقتت آزاد است؟
+Cette table est [libre] ? | این میز آزاد است؟
+J'ai du temps [libre]. | وقت آزاد دارم.
+Je ne suis pas [libre], je travaille. | وقت ندارم، کار می‌کنم.
+Vous êtes [libre] pour un café ? | برای یک قهوه وقت آزاد دارید؟
+
+# zéro
+Il a [zéro] en français. | او در درس فرانسه صفر گرفته است.
+J'ai eu [zéro] ! | صفر گرفتم!
+Le [zéro], c'est rien. | صفر یعنی هیچ.
+Il est [zéro] heure. | ساعت صفر است.
+Paul a [zéro], Marie a 10. | پل صفر گرفته، ماری ده.
+
+# un-num
+J'ai [un] chat et 2 chiens. | من یک گربه و دو سگ دارم.
+Il est [une] heure. | ساعت یک است. | d: deux, trois, onze
+[Un] café, pas 2 ! | یک قهوه، نه دو تا!
+Ma fille a [un] an. | دخترم یک سالش است.
+Il y a [une] personne à la porte. | یک نفر دم در است. | d: deux, trois, quatre
+Je viens dans [une] heure. | یک ساعت دیگر می‌آیم. | d: deux, trois, dix
+
+# deux
+J'ai [deux] enfants. | دو تا بچه دارم.
+Il est [deux] heures. | ساعت دو است.
+[Deux] cafés, s'il vous plaît. | دو تا قهوه، لطفاً.
+Une table pour [deux], s'il vous plaît. | یک میز برای دو نفر، لطفاً.
+Je viens dans [deux] jours. | دو روز دیگر می‌آیم.
+Les [deux] garçons sont amis. | آن دو پسر با هم دوست‌اند.
+
+# trois
+Nous sommes [trois]. | ما سه نفریم.
+Il a [trois] ans. | او سه سالش است.
+Il y a [trois] chats dans la maison. | سه گربه در خانه هست.
+J'ai [trois] livres pour toi. | سه تا کتاب برایت دارم.
+Je bois [trois] cafés par jour. | روزی سه تا قهوه می‌نوشم.
+
+# quatre
+J'ai [quatre] enfants. | چهار تا بچه دارم.
+Une table pour [quatre] personnes. | یک میز برای چهار نفر.
+Le chat a [quatre] ans. | گربه چهار سالش است.
+Il est [quatre] heures. | ساعت چهار است.
+Nous sommes [quatre] dans la voiture. | ما چهار نفر توی ماشین هستیم.
+
+# cinq
+Il est [cinq] heures. | ساعت پنج است.
+Ma fille a [cinq] ans. | دخترم پنج سالش است.
+J'habite au [cinq], rue de Paris. | من در پلاک پنجِ خیابان پاریس زندگی می‌کنم.
+Il y a [cinq] personnes ici. | اینجا پنج نفر هستند.
+Il a [cinq] livres. | او پنج کتاب دارد.
+
+# six
+Il est [six] heures. | ساعت شش است.
+J'ai [six] ans ! | من شش سالم است!
+Nous sommes [six] à table. | ما شش نفر سر میزیم.
+Il y a [six] voitures dans la rue. | شش ماشین توی خیابان هست.
+Je dors [six] heures. | شش ساعت می‌خوابم.
+
+# sept
+Il est [sept] heures. | ساعت هفت است.
+Ma fille a [sept] ans. | دخترم هفت سالش است.
+On mange à [sept] heures. | ساعت هفت غذا می‌خوریم.
+J'ai [sept] amis à Paris. | من در پاریس هفت دوست دارم.
+Ils sont [sept] dans la famille. | آن‌ها در خانواده هفت نفرند.
+
+# huit
+Il est [huit] heures. | ساعت هشت است.
+Je travaille [huit] heures par jour. | روزی هشت ساعت کار می‌کنم.
+Le garçon a [huit] ans. | پسر هشت سالش است.
+Il y a [huit] personnes à table. | هشت نفر سر میز هستند.
+Je viens dans [huit] jours. | هشت روز دیگر می‌آیم.
+
+# neuf
+Il est [neuf] heures. | ساعت نه است.
+Elle a [neuf] ans. | او نه سالش است.
+Ils ont [neuf] enfants ! | آن‌ها نه تا بچه دارند!
+J'ai [neuf] livres de français. | من نه تا کتاب فرانسه دارم.
+L'école commence à [neuf] heures. | مدرسه ساعت نه شروع می‌شود.
+
+# dix
+Il est [dix] heures. | ساعت ده است.
+J'ai [dix] ans. | من ده سالم است.
+[Dix] personnes travaillent ici. | ده نفر اینجا کار می‌کنند.
+Il y a [dix] maisons dans la rue. | در این خیابان ده خانه هست.
+Il a [dix] en français. | او در درس فرانسه ده گرفته است.
+
+# onze
+Il est [onze] heures. | ساعت یازده است.
+Le garçon a [onze] ans. | پسر یازده سالش است.
+Nous sommes [onze]. | ما یازده نفریم.
+J'habite au [onze], rue de Lyon. | من در پلاک یازدهِ خیابان لیون زندگی می‌کنم.
+Il y a [onze] enfants à l'école. | یازده بچه در مدرسه هستند.
+
+# douze
+Il est [douze] heures. | ساعت دوازده است.
+Elle a [douze] ans. | او دوازده سالش است.
+J'ai [douze] amis à l'école. | در مدرسه دوازده تا دوست دارم.
+On mange à [douze] heures ? | ساعت دوازده غذا بخوریم؟
+Nous sommes [douze] dans la famille. | ما در خانواده دوازده نفریم.
+
+# treize
+Il a [treize] ans. | او سیزده سالش است.
+Il est [treize] heures. | ساعت سیزده است.
+Nous sommes [treize] à table. | ما سیزده نفر سر میزیم.
+Il travaille [treize] heures par jour ! | او روزی سیزده ساعت کار می‌کند!
+Elle a [treize] livres. | او سیزده کتاب دارد.
+
+# quatorze
+Il a [quatorze] ans. | او چهارده سالش است.
+Il est [quatorze] heures. | ساعت چهارده است.
+Il y a [quatorze] personnes ici. | اینجا چهارده نفر هستند.
+Elle a [quatorze] chats ! | او چهارده تا گربه دارد!
+Il y a [quatorze] maisons dans la rue. | چهارده خانه در این خیابان هست.
+
+# quinze
+Il est [quinze] heures. | ساعت پانزده است.
+Elle a [quinze] ans. | او پانزده سالش است.
+Je viens dans [quinze] jours. | پانزده روز دیگر می‌آیم.
+Il y a [quinze] voitures ici. | اینجا پانزده ماشین هست.
+J'ai [quinze] livres en français. | پانزده کتاب به فرانسوی دارم.
+
+# seize
+Il a [seize] ans. | او شانزده سالش است.
+Il est [seize] heures. | ساعت شانزده است.
+J'habite au [seize], rue de Nice. | من در پلاک شانزدهِ خیابان نیس زندگی می‌کنم.
+Il y a [seize] personnes dans la maison. | شانزده نفر در خانه هستند.
+Ils ont [seize] chiens ! | آن‌ها شانزده تا سگ دارند!
+
+# vingt
+J'ai [vingt] ans. | بیست سالم است.
+Il est [vingt] heures. | ساعت بیست است.
+Nous sommes [vingt]. | ما بیست نفریم.
+Je lis [vingt] livres par an. | سالی بیست کتاب می‌خوانم.
+[Vingt] personnes travaillent ici. | بیست نفر اینجا کار می‌کنند.
+
+# trente
+J'ai [trente] ans. | سی سالم است.
+Il est huit heures [trente]. | ساعت هشت و سی دقیقه است.
+Il y a [trente] personnes ici. | اینجا سی نفر هستند.
+Il y a [trente] enfants à l'école. | در مدرسه سی بچه هست.
+Il est une heure [trente]. | ساعت یک و سی دقیقه است.
+
+# quarante
+Il a [quarante] ans. | او چهل سال دارد.
+Il est dix heures [quarante]. | ساعت ده و چهل دقیقه است.
+Il y a [quarante] personnes dans la rue. | چهل نفر توی خیابان هستند.
+Il y a [quarante] maisons ici. | اینجا چهل خانه هست.
+Elle a [quarante] livres. | او چهل کتاب دارد.
+
+# cinquante
+Mon ami a [cinquante] ans. | دوستم پنجاه سال دارد.
+Il y a [cinquante] enfants à l'école. | در مدرسه پنجاه بچه هست.
+J'habite au [cinquante], rue de Lyon. | من در پلاک پنجاهِ خیابان لیون زندگی می‌کنم.
+Il est deux heures [cinquante]. | ساعت دو و پنجاه دقیقه است.
+[Cinquante] personnes travaillent ici. | پنجاه نفر اینجا کار می‌کنند.
+
+# soixante
+Il a [soixante] ans. | او شصت سال دارد.
+Il y a [soixante] maisons dans la rue. | در این خیابان شصت خانه هست.
+J'habite au [soixante], rue de Paris. | من در پلاک شصتِ خیابان پاریس زندگی می‌کنم.
+[Soixante] personnes habitent ici. | شصت نفر اینجا زندگی می‌کنند.
+Il est trois heures [soixante] ? Non ! | ساعت سه و شصت دقیقه؟ نه!
+
+# soixante-dix
+Il a [soixante-dix] ans. | او هفتاد سال دارد.
+Il y a [soixante-dix] personnes ici. | اینجا هفتاد نفر هستند.
+J'habite au [soixante-dix], rue de Nice. | من در پلاک هفتادِ خیابان نیس زندگی می‌کنم.
+[Soixante-dix] enfants vont à cette école. | هفتاد بچه به این مدرسه می‌روند.
+Ce livre a [soixante-dix] ans. | این کتاب هفتاد ساله است.
+
+# quatre-vingts
+Il a [quatre-vingts] ans. | او هشتاد سال دارد.
+Il y a [quatre-vingts] personnes ici. | اینجا هشتاد نفر هستند.
+J'habite au [quatre-vingts], rue de Lyon. | من در پلاک هشتادِ خیابان لیون زندگی می‌کنم.
+[Quatre-vingts] enfants sont à l'école. | هشتاد بچه در مدرسه هستند.
+Elle a [quatre-vingts] livres. | او هشتاد کتاب دارد.
+
+# quatre-vingt-dix
+Il a [quatre-vingt-dix] ans. | او نود سال دارد.
+Il y a [quatre-vingt-dix] personnes ici. | اینجا نود نفر هستند.
+J'habite au [quatre-vingt-dix], rue de Paris. | من در پلاک نودِ خیابان پاریس زندگی می‌کنم.
+[Quatre-vingt-dix] enfants vont à cette école. | نود بچه به این مدرسه می‌روند.
+Ce livre a [quatre-vingt-dix] ans. | این کتاب نود ساله است.
+
+# cent
+Il a [cent] ans ! | او صد سال دارد!
+Il y a [cent] personnes ici. | اینجا صد نفر هستند.
+Je dis ça [cent] fois ! | صد بار این را می‌گویم!
+Il y a [cent] livres dans la maison. | در خانه صد کتاب هست.
+Cette maison a [cent] ans. | این خانه صد ساله است.
+
+# mille
+Merci [mille] fois ! | هزار بار ممنون!
+Il y a [mille] personnes dans la rue. | هزار نفر توی خیابان هستند.
+Cette ville a [mille] ans. | این شهر هزار ساله است.
+J'ai [mille] choses à faire ! | هزار تا کار دارم!
+Il y a [mille] livres à l'école. | در مدرسه هزار کتاب هست.
+
+# numéro
+C'est quoi, ton [numéro] ? | شماره‌ات چیست؟
+Quel est votre [numéro] ? | شماره‌تان چیست؟
+J'habite au [numéro] 5. | من در پلاک پنج زندگی می‌کنم.
+Tu as le [numéro] de Paul ? | شمارهٔ پل را داری؟
+Je cherche le [numéro] 12. | دنبال شمارهٔ دوازده می‌گردم.
+Le [numéro] de la maison est 30. | شمارهٔ خانه سی است.
+
+# deuxième
+C'est la [deuxième] fois. | این بار دوم است.
+J'habite dans la [deuxième] maison. | در خانهٔ دوم زندگی می‌کنم.
+Paul est [deuxième]. | پل دوم است.
+C'est mon [deuxième] livre en français. | این دومین کتابم به فرانسوی است.
+Le [deuxième] jour, nous allons à Nice. | روز دوم به نیس می‌رویم.
+
+# père
+Mon [père] s'appelle Ali. | اسم پدرم علی است.
+Mon [père] travaille à Téhéran. | پدرم در تهران کار می‌کند.
+Ton [père] a 60 ans ? | پدرت شصت سالش است؟
+C'est le [père] de Marie. | او پدر ماری است.
+Le [père] de Paul est très grand. | پدر پل خیلی قدبلند است.
+Les [pères] attendent les enfants à l'école. | پدرها در مدرسه منتظر بچه‌ها هستند.
+
+# mère
+Ma [mère] s'appelle Maryam. | اسم مادرم مریم است.
+Ma [mère] est à la maison. | مادرم خانه است.
+Ta [mère] parle français ? | مادرت فرانسوی حرف می‌زند؟
+La [mère] de Léa est jeune. | مادر لئا جوان است.
+J'aide ma [mère]. | به مادرم کمک می‌کنم.
+C'est la [mère] de mon ami. | او مادر دوستم است.
+
+# parent
+Mes [parents] habitent à Ispahan. | پدر و مادرم در اصفهان زندگی می‌کنند.
+Tes [parents] sont là ? | پدر و مادرت هستند؟
+Les [parents] de Paul sont jeunes. | پدر و مادر پل جوان‌اند.
+Je mange chez mes [parents]. | خانهٔ پدر و مادرم غذا می‌خورم.
+Les [parents] attendent les enfants. | والدین منتظر بچه‌ها هستند.
+Un [parent] doit aider son enfant. | پدر یا مادر باید به بچه‌اش کمک کند.
+
+# frère
+J'ai un [frère]. | من یک برادر دارم.
+Mon [frère] a 20 ans. | برادرم بیست سالش است.
+Tu as des [frères] ? | برادر داری؟
+Mon [frère] habite à Lyon. | برادرم در لیون زندگی می‌کند.
+C'est le [frère] de Marie. | او برادر ماری است.
+Mes deux [frères] sont grands. | دو برادرم قدبلندند.
+
+# sœur
+J'ai une [sœur]. | من یک خواهر دارم.
+Ma [sœur] s'appelle Sara. | اسم خواهرم سارا است.
+Ta [sœur] est là ? | خواهرت هست؟
+Ma petite [sœur] a 5 ans. | خواهر کوچکم پنج سالش است.
+J'ai deux [sœurs]{sœur} et un frère. | دو خواهر و یک برادر دارم. | d: tantes, filles, femmes
+Ma [sœur] travaille à Paris. | خواهرم در پاریس کار می‌کند.
+
+# fils
+J'ai un [fils]. | من یک پسر دارم.
+Mon [fils] a 10 ans. | پسرم ده سالش است.
+Son [fils] habite à Paris. | پسرش در پاریس زندگی می‌کند.
+C'est mon [fils], Hugo. | این پسرم، هوگو است.
+Ils ont deux [fils]. | آن‌ها دو پسر دارند.
+Le [fils] de Marie est à l'école. | پسر ماری در مدرسه است.
+
+# mari
+Mon [mari] travaille à Lyon. | شوهرم در لیون کار می‌کند.
+C'est le [mari] de Sophie. | او شوهر سوفی است.
+Son [mari] s'appelle Pierre. | اسم شوهرش پیر است.
+Elle attend son [mari]. | او منتظر شوهرش است.
+Mon [mari] et moi, nous habitons à Nice. | من و شوهرم در نیس زندگی می‌کنیم.
+
+# bébé
+Le [bébé] dort. | نوزاد خواب است.
+Ma sœur a un [bébé]. | خواهرم یک نوزاد دارد.
+Le [bébé] mange bien. | نوزاد خوب غذا می‌خورد.
+Les [bébés] dorment beaucoup. | نوزادها زیاد می‌خوابند.
+Le [bébé] de Marie est très petit. | بچهٔ ماری خیلی کوچک است.
+
+# grand-père
+Mon [grand-père] a 80 ans. | پدربزرگم هشتاد سال دارد.
+Mon [grand-père] habite à Chiraz. | پدربزرگم در شیراز زندگی می‌کند.
+Le [grand-père] de Paul est là. | پدربزرگ پل اینجاست.
+J'aide mon [grand-père]. | به پدربزرگم کمک می‌کنم.
+Mon [grand-père] dort beaucoup. | پدربزرگم زیاد می‌خوابد.
+
+# grand-mère
+Ma [grand-mère] a 75 ans. | مادربزرگم هفتاد و پنج سال دارد.
+Je vais chez ma [grand-mère]. | به خانهٔ مادربزرگم می‌روم.
+Ma [grand-mère] fait du pain. | مادربزرگم نان درست می‌کند.
+La [grand-mère] de Léa est très jeune. | مادربزرگ لئا خیلی جوان است.
+Ma [grand-mère] parle un peu français. | مادربزرگم کمی فرانسوی حرف می‌زند.
+
+# grands-parents
+Mes [grands-parents] habitent à Ispahan. | پدربزرگ و مادربزرگم در اصفهان زندگی می‌کنند.
+Je mange chez mes [grands-parents]. | خانهٔ پدربزرگ و مادربزرگم غذا می‌خورم.
+Tes [grands-parents] vont bien ? | پدربزرگ و مادربزرگت خوب‌اند؟
+Les [grands-parents] de Paul sont là. | پدربزرگ و مادربزرگ پل اینجا هستند.
+J'aime mes [grands-parents]. | پدربزرگ و مادربزرگم را دوست دارم.
+
+# oncle
+Mon [oncle] habite à Téhéran. | عمویم در تهران زندگی می‌کند.
+J'ai deux [oncles]. | دو عمو دارم.
+C'est l'[oncle] de Paul. | او عموی پل است.
+Mon [oncle] a une grande voiture. | عمویم یک ماشین بزرگ دارد.
+Je vais chez mon [oncle]. | به خانهٔ عمویم می‌روم.
+
+# tante
+Ma [tante] est très jeune. | خاله‌ام خیلی جوان است.
+J'ai une [tante] à Paris. | یک خاله در پاریس دارم.
+C'est la [tante] de Léa. | او خالهٔ لئا است.
+Ma [tante] fait du café. | خاله‌ام قهوه درست می‌کند.
+Mes [tantes] habitent à Chiraz. | خاله‌هایم در شیراز زندگی می‌کنند.
