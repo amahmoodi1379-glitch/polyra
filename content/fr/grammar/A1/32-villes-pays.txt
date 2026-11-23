@@ -1,0 +1,77 @@
+code: fr-a1-villes-pays
+title: شهرها و کشورها: à Paris، en France، au Canada
+scope: à و de با اسم شهر؛ en، au و aux («در، به») و de، d'، du و des («از، اهلِ») با اسم کشور؛ جنس کشورها (la France، le Canada، l'Iran) و استثنای le Mexique.
+can_do: حالا می‌توانی بگویی اهل کجایی، کجا زندگی می‌کنی و به کدام کشور می‌روی: Je viens d'Iran. J'habite à Lyon, en France.
+rule: شهر: à Paris، de Paris. کشور مؤنث یا صدادار: en France، de France، en Iran، d'Iran. کشور مذکر: au Canada، du Canada. کشور جمع: aux États-Unis، des États-Unis.
+mistake: فارسی برای همه «در» و «به» و «از» می‌گوید، برای همین فارسی‌زبان‌ها می‌نویسند «à France» یا «en Canada»؛ درست: en France، au Canada. با اسم شهر هم en نمی‌آید: à Paris، نه «en Paris».
+lesson:
+با اسم شهر à می‌آید: à Paris، à Téhéran؛ و برای «از» یا «اهلِ» de: de Paris، d'Ispahan.
+اسم کشورها مثل اسم‌های دیگر جنس دارند و حرف تعریف می‌گیرند: la France، le Canada، l'Iran.
+بیشتر کشورهایی که به e ختم می‌شوند مؤنث‌اند (la France، l'Italie، la Suisse) و بقیه مذکر (le Canada، le Japon، le Maroc)؛ le Mexique استثناست.
+«در» یا «به» برای کشور مؤنث یا کشوری که با صدادار شروع شود en است: en France، en Italie، en Iran.
+کشور مذکر au می‌گیرد (au Canada، au Japon) و کشور جمع aux (aux États-Unis).
+برای «از» یا «اهلِ»: de یا d' برای کشور مؤنث یا صدادار (de France، d'Iran)، du برای مذکر (du Canada) و des برای جمع (des États-Unis).
+table:
+ | «در، به» | «از، اهلِ»
+شهر | à Paris | de Paris
+کشور مؤنث | en France | de France
+کشور صدادار | en Iran | d'Iran
+کشور مذکر | au Canada | du Canada
+کشور جمع | aux États-Unis | des États-Unis
+sets:
+en: France, Italie, Espagne, Allemagne, Suisse, Belgique, Iran
+au: Canada, Japon, Maroc, Portugal, Brésil, Mexique
+examples:
+J'habite à Téhéran, en Iran. | در تهران، ایران زندگی می‌کنم.
+Paul travaille au Canada. | پل در کانادا کار می‌کند.
+Nous allons en Italie. | به ایتالیا می‌رویم.
+Je viens du Japon. | اهل ژاپنم.
+targets:
+J'habite [en] France. | در فرانسه زندگی می‌کنم. | d: au, à, à la | hint: (la France)
+Paul habite [au] Canada. | پل در کانادا زندگی می‌کند. | d: en, à, à le | hint: (le Canada)
+Nous allons [en] Italie. | به ایتالیا می‌رویم. | d: au, à, à l' | hint: (l'Italie)
+Ali habite [en] Iran. | علی در ایران زندگی می‌کند. | d: au, à, à l' | hint: (l'Iran)
+Marie travaille [à] Londres. | ماری در لندن کار می‌کند. | d: en, au, à la
+Ils vont [au] Japon. | آن‌ها به ژاپن می‌روند. | d: en, à, à le | hint: (le Japon)
+Je suis [en] Espagne. | در اسپانیا هستم. | d: au, à, à la
+Tu habites [au] Maroc ? | در مراکش زندگی می‌کنی؟ | d: en, à, à le | hint: (le Maroc)
+Elle va [à] Rome. | او به رم می‌رود. | d: en, au, à la
+On part [en] Allemagne. | به آلمان می‌رویم. | d: au, à, à l' | hint: (l'Allemagne)
+Mon frère habite [au] Portugal. | برادرم در پرتغال زندگی می‌کند. | d: en, à, à le
+Vous allez [au] Mexique ? | به مکزیک می‌روید؟ | d: en, à, à le | hint: (le Mexique)
+Sara habite [à] Ispahan. | سارا در اصفهان زندگی می‌کند. | d: en, au, à la
+Il travaille [en] Suisse. | او در سوئیس کار می‌کند. | d: au, à, à la | hint: (la Suisse)
+Nous sommes [au] Brésil. | ما در برزیل هستیم. | d: en, à, à le
+Je viens [de] France. | اهل فرانسه‌ام. | d: du, des, en | hint: (la France)
+Il vient [du] Canada. | او اهل کاناداست. | d: de, de le, au | hint: (le Canada)
+Je viens [d']Iran. | اهل ایرانم. | d: du, de, en | hint: (l'Iran)
+Elle vient [d']Italie. | او اهل ایتالیاست. | d: du, de, en
+Ils viennent [du] Japon. | آن‌ها اهل ژاپن‌اند. | d: de, de le, au | hint: (le Japon)
+Tu viens [de] Suisse ? | اهل سوئیسی؟ | d: du, des, en
+Vous venez [du] Maroc ? | اهل مراکش هستید؟ | d: de, de le, au | hint: (le Maroc)
+Je viens [de] Berlin. | اهل برلینم. | d: du, des, en
+J'aime [la] France. | فرانسه را دوست دارم. | d: en, le, de | hint: (la France)
+[Le] Canada est grand. | کانادا بزرگ است. | d: La, Les, Au
+[L']Iran est un beau pays. | ایران کشور زیبایی است. | d: Le, La, En | hint: (l'Iran)
+[La] Belgique est petite. | بلژیک کوچک است. | d: Le, Les, En
+Bruxelles est [en] Belgique. | بروکسل در بلژیک است. | d: au, à, à la | hint: (la Belgique)
+Montréal est [au] Canada. | مونترال در کاناداست. | d: en, à, à le
+Je voudrais aller [en] Turquie. | می‌خواهم به ترکیه بروم. | d: au, à, à la | hint: (la Turquie)
+J'habite [à] Téhéran, [en] Iran. | در تهران، ایران زندگی می‌کنم. | d: en, au, à la / au, à, à l'
+Paul habite [à] Montréal, [au] Canada. | پل در مونترال، کانادا زندگی می‌کند. | d: en, au, à la / en, à, à le
+Je viens [d']Iran et j'habite [en] France. | اهل ایرانم و در فرانسه زندگی می‌کنم. | d: du, de, en / au, à, à la | full: J'habite en France et je viens d'Iran.
+Elle vient [du] Maroc et elle travaille [en] Espagne. | او اهل مراکش است و در اسپانیا کار می‌کند. | d: de, de le, au / au, à, à la | full: Elle travaille en Espagne et elle vient du Maroc.
+Nous allons [au] Japon et [en] Chine. | به ژاپن و چین می‌رویم. | d: en, à, à le / au, à, à la | full: Nous allons en Chine et au Japon.
+[La] Suisse est petite et [le] Brésil est grand. | سوئیس کوچک است و برزیل بزرگ. | d: Le, Les, En / la, les, au | full: Le Brésil est grand et la Suisse est petite.
+transforms:
+J'habite à Paris. => J'habite en France. | به‌جای Paris بنویس France.
+Il va en Espagne. => Il va au Portugal. | به‌جای Espagne بنویس Portugal.
+Je viens de France. => Je viens du Canada. | به‌جای France بنویس Canada.
+Nous habitons au Japon. => Nous habitons en Italie. | به‌جای Japon بنویس Italie.
+Elle vient d'Iran. => Elle vient de Suisse. | به‌جای Iran بنویس Suisse.
+translations:
+در فرانسه زندگی می‌کنم. => J'habite en France.
+پل در کانادا زندگی می‌کند. => Paul habite au Canada.
+اهل ایرانم. => Je viens d'Iran. ; Je suis iranien. ; Je suis iranienne.
+به ایتالیا می‌رویم. => Nous allons en Italie. ; On va en Italie.
+ماری در لندن کار می‌کند. => Marie travaille à Londres.
