@@ -1,0 +1,79 @@
+code: fr-a1-vouloir-pouvoir-devoir
+title: vouloir، pouvoir، devoir: خواستن، توانستن، باید
+scope: صرف بی‌قاعدهٔ vouloir، pouvoir و devoir در زمان حال و ساخت «فعل + مصدر» (Je veux manger، Tu peux venir، Il doit partir) در جملهٔ مثبت، منفی و سؤالی، با je voudrais برای درخواست مؤدبانه و il faut + مصدر.
+can_do: حالا می‌توانی بگویی چه می‌خواهی، چه کاری از دستت برمی‌آید و چه کاری باید بکنی، و مؤدبانه چیزی بخواهی: Je voudrais un café.
+rule: vouloir (je veux، il veut، ils veulent)، pouvoir (je peux، il peut، ils peuvent)، devoir (je dois، il doit، ils doivent) + مصدر؛ فعل دوم صرف نمی‌شود.
+mistake: فارسی بعد از «می‌خواهم» و «می‌توانم» فعل دوم را هم صرف می‌کند («می‌خواهم بروم»)، برای همین فارسی‌زبان‌ها می‌نویسند «je veux je vais» یا «je peux mange»؛ درست: je veux aller، je peux manger. فعل دوم همیشه مصدر است.
+tables: présent | vouloir
+tables: présent | pouvoir
+tables: présent | devoir
+lesson:
+vouloir یعنی «خواستن»، pouvoir یعنی «توانستن» و devoir یعنی «باید».
+هر سه بی‌قاعده‌اند و بعدشان فعل دوم به شکل مصدر می‌آید: Je veux manger. Tu peux venir. Il doit partir.
+فعل دوم صرف نمی‌شود: «می‌خواهم بروم» می‌شود je veux aller، نه «je veux je vais».
+برای منفی، ne … pas دور فعل اول می‌آید: Je ne peux pas venir.
+vouloir با اسم هم می‌آید (Tu veux un café ?) و je voudrais شکل مؤدبانهٔ آن است برای مغازه و کافه: Je voudrais un café.
+il faut + مصدر هم یعنی «باید»، وقتی نمی‌گوییم چه کسی: Il faut attendre.
+table:
+ضمیر | vouloir | pouvoir | devoir
+je | veux | peux | dois
+tu | veux | peux | dois
+il، elle، on | veut | peut | doit
+nous | voulons | pouvons | devons
+vous | voulez | pouvez | devez
+ils، elles | veulent | peuvent | doivent
+examples:
+Je veux apprendre le français. | می‌خواهم فرانسوی یاد بگیرم.
+Tu peux venir avec moi ? | می‌توانی با من بیایی؟
+Nous devons partir. | ما باید برویم.
+Je voudrais un café, s'il vous plaît. | یک قهوه می‌خواهم، لطفاً.
+targets:
+Je [veux] manger. | می‌خواهم غذا بخورم. | d: veut, voulons, veulent | hint: (vouloir)
+Tu [veux] un café ? | قهوه می‌خواهی؟ | d: veut, voulez, veulent | hint: (vouloir)
+Paul [veut] habiter à Paris. | پل می‌خواهد در پاریس زندگی کند. | d: veux, voulons, veulent | hint: (vouloir)
+Nous [voulons] apprendre le français. | ما می‌خواهیم فرانسوی یاد بگیریم. | d: voulez, veulent, veut
+Vous [voulez] jouer ? | می‌خواهید بازی کنید؟ | d: voulons, veulent, veut | hint: (vouloir)
+Les enfants [veulent] jouer dans la rue. | بچه‌ها می‌خواهند در خیابان بازی کنند. | d: veut, voulez, voulent
+Je [peux] entrer ? | می‌توانم بیایم تو؟ | d: peut, pouvons, peuvent | hint: (pouvoir)
+Tu [peux] aider Marie ? | می‌توانی به ماری کمک کنی؟ | d: peut, pouvez, peuvent
+Elle ne [peut] pas venir. | او (زن) نمی‌تواند بیاید. | d: peux, pouvons, peuvent | hint: (pouvoir)
+Nous [pouvons] parler français. | ما می‌توانیم فرانسوی حرف بزنیم. | d: pouvez, peuvent, peut
+Vous [pouvez] répondre ? | می‌توانید جواب بدهید؟ | d: pouvons, peuvent, peut | hint: (pouvoir)
+Ils ne [peuvent] pas dormir. | آن‌ها نمی‌توانند بخوابند. | d: peut, pouvez, pouvent
+Je [dois] travailler. | باید کار کنم. | d: doit, devons, doivent | hint: (devoir)
+Tu [dois] attendre ici. | باید اینجا منتظر بمانی. | d: doit, devez, doivent
+Paul [doit] partir. | پل باید برود. | d: dois, devons, doivent | hint: (devoir)
+Nous [devons] aller à l'école. | ما باید به مدرسه برویم. | d: devez, doivent, doit
+Vous [devez] écrire votre nom. | باید اسمتان را بنویسید. | d: devons, doivent, doit | hint: (devoir)
+Les enfants [doivent] dormir. | بچه‌ها باید بخوابند. | d: doit, devez, devent
+Je veux [manger] avec toi. | می‌خواهم با تو غذا بخورم. | d: mange, manges, mangé | hint: (manger)
+Tu peux [parler] français ? | می‌توانی فرانسوی حرف بزنی؟ | d: parles, parle, parlé
+Nous devons [travailler] ici. | ما باید اینجا کار کنیم. | d: travaillons, travaille, travaillé | hint: (travailler)
+Elle veut [habiter] à Lyon. | او (زن) می‌خواهد در لیون زندگی کند. | d: habite, habites, habité
+Vous pouvez [chercher] le chat ? | می‌توانید دنبال گربه بگردید؟ | d: cherchez, cherche, cherché | hint: (chercher)
+Ils doivent [aller] à Paris. | آن‌ها باید به پاریس بروند. | d: vont, va, allé | hint: (aller)
+Tu dois [écouter] Marie. | باید به حرف ماری گوش بدهی. | d: écoutes, écoute, écouté
+Je ne [veux] pas manger. | نمی‌خواهم غذا بخورم. | d: veut, voulons, veulent
+Je [voudrais] un café, s'il vous plaît. | یک قهوه می‌خواهم، لطفاً. | d: voudrait, voudrez, veulent | hint: (vouloir)
+Il [faut] attendre. | باید صبر کرد. | d: font, fais, faux
+Tu ne [peux] pas entrer. | نمی‌توانی بیایی تو. | d: peut, pouvez, peuvent
+On [peut] manger ici ? | می‌شود اینجا غذا خورد؟ | d: peux, pouvons, peuvent | hint: (pouvoir)
+Je [veux] partir, mais je [dois] travailler. | می‌خواهم بروم، ولی باید کار کنم. | d: veut, voulons, veulent / doit, devons, doivent
+Tu [peux] [aider] Paul ? | می‌توانی به پل کمک کنی؟ | d: peut, pouvez, peuvent / aides, aide, aidé
+Nous [voulons] [jouer] avec le chien. | ما می‌خواهیم با سگ بازی کنیم. | d: voulez, veulent, veut / jouons, joue, joué
+Ils [doivent] [attendre] ici. | آن‌ها باید اینجا منتظر بمانند. | d: doit, devez, devent / attendent, attend, attendu
+Vous [pouvez] venir ? Non, je ne [peux] pas. | می‌توانید بیایید؟ نه، نمی‌توانم. | d: pouvons, peuvent, peut / peut, pouvons, peuvent
+Marie [veut] lire, mais elle [doit] dormir. | ماری می‌خواهد کتاب بخواند، ولی باید بخوابد. | d: veux, voulons, veulent / dois, devons, doivent
+transforms:
+Je mange. => Je veux manger. | جمله را با vouloir بنویس.
+Tu parles français. => Tu peux parler français. | جمله را با pouvoir بنویس.
+Nous travaillons. => Nous devons travailler. | جمله را با devoir بنویس.
+Je veux partir. => Je ne veux pas partir. | جمله را منفی کن.
+Il peut venir. => Ils peuvent venir. | جمله را با ils بنویس.
+Vous devez attendre. => Tu dois attendre. | جمله را با tu بنویس.
+translations:
+می‌خواهم غذا بخورم. => Je veux manger.
+می‌توانی به ماری کمک کنی؟ => Tu peux aider Marie ? ; Est-ce que tu peux aider Marie ?
+ما باید کار کنیم. => Nous devons travailler. ; On doit travailler.
+آن‌ها نمی‌توانند بخوابند. => Ils ne peuvent pas dormir. ; Elles ne peuvent pas dormir.
+یک قهوه می‌خواهم، لطفاً. => Je voudrais un café, s'il vous plaît. ; Je voudrais un café, s'il te plaît. ; Je veux un café, s'il vous plaît.

@@ -1,0 +1,75 @@
+code: fr-a1-possessifs-2
+title: «ـِمان»، «ـِتان»، «ـِشان»: notre، votre، leur
+scope: صفت ملکی برای ما، شما و آن‌ها: notre، nos؛ votre، vos (votre برای «شما»ی مؤدبانه هم)؛ leur، leurs، و جدول همهٔ صفت‌های ملکی؛ leur به‌معنای «به آن‌ها» (je leur parle) در A2 می‌آید.
+can_do: حالا می‌توانی از خانه، خانواده و چیزهای خودتان و دیگران حرف بزنی: notre maison، votre voiture، leurs enfants.
+rule: notre، votre، leur برای یک چیز (مذکر یا مؤنث) و nos، vos، leurs برای چند چیز. وقتی صاحب‌ها چند نفرند، leur یا leurs می‌آید، نه son یا ses.
+mistake: فارسی «ـِشان» را برای یک چیز و چند چیز یکی می‌گوید، برای همین فارسی‌زبان‌ها leur و leurs را قاطی می‌کنند: «leur enfants»؛ درست: leurs enfants (چند بچه) و leur maison (یک خانه). برای «مالِ آن‌ها» هم son یا sa نمی‌آید: Ils aiment leur chien، نه «son chien».
+lesson:
+برای ما، شما و آن‌ها مذکر و مؤنث یک شکل دارند؛ فقط مفرد و جمع فرق می‌کند.
+notre و nos یعنی «ـِمان»: notre maison (خانه‌مان)، nos enfants (بچه‌هایمان).
+votre و vos یعنی «ـِتان»: votre voiture، vos livres. votre برای «شما»ی مؤدبانهٔ یک نفر هم هست: Madame, votre chien est ici.
+leur و leurs یعنی «ـِشان»: leur maison (یک خانه)، leurs maisons (چند خانه).
+وقتی صاحب‌ها چند نفرند son و sa نمی‌آید: Paul et Marie aiment leur maison.
+nos، vos و leurs قبل از صدادار با صدای z به اسم می‌چسبند: nos amis، leurs enfants.
+table:
+صاحب | مذکر | مؤنث | جمع
+je | mon | ma | mes
+tu | ton | ta | tes
+il، elle | son | sa | ses
+nous | notre | notre | nos
+vous | votre | votre | vos
+ils، elles | leur | leur | leurs
+examples:
+Nous aimons notre maison. | ما خانه‌مان را دوست داریم.
+Madame, votre chien est ici. | خانم، سگتان اینجاست.
+Ils habitent avec leurs enfants. | آن‌ها با بچه‌هایشان زندگی می‌کنند.
+Leur voiture est dans la rue. | ماشینشان در خیابان است.
+targets:
+Nous aimons [notre] maison. | ما خانه‌مان را دوست داریم. | d: nos, nous, mon | hint: (notre)
+[Notre] chien est petit. | سگمان کوچک است. | d: Nos, Nous, Ma | hint: (notre)
+[Nos] enfants sont à l'école. | بچه‌هایمان در مدرسه هستند. | d: Notre, Nous, Mon
+Nous habitons avec [nos] amis. | ما با دوستانمان زندگی می‌کنیم. | d: notre, nous, mon | hint: (notre)
+Vous cherchez [votre] voiture ? | دنبال ماشینتان می‌گردید؟ | d: vos, vous, ton | hint: (votre)
+[Vos] livres sont sur la table. | کتاب‌هایتان روی میز هستند. | d: Votre, Vous, Ton
+Madame, [votre] chien est ici. | خانم، سگتان اینجاست. | d: vos, vous, ta | hint: (votre)
+Vous jouez avec [vos] enfants ? | با بچه‌هایتان بازی می‌کنید؟ | d: votre, vous, ton
+Ils aiment [leur] maison. | آن‌ها خانه‌شان را دوست دارند. | d: leurs, eux, son | hint: (leur)
+Les enfants jouent avec [leur] chien. | بچه‌ها با سگشان بازی می‌کنند. | d: leurs, eux, sa | hint: (leur)
+Paul et Marie cherchent [leurs] livres. | پل و ماری دنبال کتاب‌هایشان می‌گردند. | d: leur, eux, son
+Elles habitent avec [leurs] enfants. | آن‌ها با بچه‌هایشان زندگی می‌کنند. | d: leur, eux, son | hint: (leur)
+[Leur] voiture est dans la rue. | ماشینشان در خیابان است. | d: Leurs, Eux, Son
+[Leurs] amis habitent à Nice. | دوستانشان در نیس زندگی می‌کنند. | d: Leur, Eux, Son | hint: (leur)
+C'est [notre] école. | این مدرسهٔ ماست. | d: nos, nous, ma | hint: (notre)
+[Notre] famille habite à Ispahan. | خانواده‌مان در اصفهان زندگی می‌کند. | d: Nos, Nous, Mon
+Nous cherchons [nos] chats. | دنبال گربه‌هایمان می‌گردیم. | d: notre, nous, mon | hint: (notre)
+C'est [votre] idée ? | این ایدهٔ شماست؟ | d: vos, vous, ta | hint: (votre)
+Où sont [vos] amis ? | دوستانتان کجا هستند؟ | d: votre, vous, ton
+[Votre] travail est à Paris ? | کارتان در پاریس است؟ | d: Vos, Vous, Ta | hint: (votre)
+Ils parlent de [leur] travail. | آن‌ها از کارشان حرف می‌زنند. | d: leurs, eux, sa
+Les filles aiment [leur] école. | دخترها مدرسه‌شان را دوست دارند. | d: leurs, eux, sa | hint: (leur)
+Ils travaillent dans [leur] ville. | آن‌ها در شهرشان کار می‌کنند. | d: leurs, eux, son
+Paul et Léa habitent avec [leurs] chats. | پل و لئا با گربه‌هایشان زندگی می‌کنند. | d: leur, eux, son | hint: (leur)
+Nous aimons [notre] vie à Paris. | زندگی‌مان در پاریس را دوست داریم. | d: nos, nous, mon
+Vous habitez avec [votre] famille ? | با خانواده‌تان زندگی می‌کنید؟ | d: vos, vous, ton | hint: (votre)
+[Nos] voitures sont dans la rue. | ماشین‌هایمان در خیابان هستند. | d: Notre, Nous, Ma
+C'est la maison de Paul et Marie ? Oui, c'est [leur] maison. | خانهٔ پل و ماری است؟ بله، خانهٔ آن‌هاست. | d: leurs, eux, son | hint: (leur)
+Les enfants cherchent [leurs] amis. | بچه‌ها دنبال دوستانشان می‌گردند. | d: leur, eux, son
+Monsieur, c'est [votre] livre ? | آقا، این کتاب شماست؟ | d: vos, vous, ta | hint: (votre)
+Nous aimons [notre] ville et [nos] amis. | ما شهرمان و دوستانمان را دوست داریم. | d: nos, nous, mon / notre, nous, mon | full: Nous aimons nos amis et notre ville.
+Ils cherchent [leur] chien et [leurs] chats. | آن‌ها دنبال سگشان و گربه‌هایشان می‌گردند. | d: leurs, eux, sa / leur, eux, son | full: Ils cherchent leurs chats et leur chien.
+Vous habitez avec [vos] enfants dans [votre] maison ? | با بچه‌هایتان در خانه‌تان زندگی می‌کنید؟ | d: votre, vous, ton / vos, vous, ton
+C'est [votre] voiture ? Oui, c'est [notre] voiture. | ماشینِ شماست؟ بله، ماشینِ ماست. | d: vos, vous, ton / nos, nous, mon
+Paul cherche [son] chien et ses amis cherchent [leur] chat. | پل دنبال سگش می‌گردد و دوستانش دنبال گربه‌شان. | d: sa, ses, lui / leurs, eux, sa
+[Leurs] enfants jouent avec [nos] enfants. | بچه‌هایشان با بچه‌های ما بازی می‌کنند. | d: Leur, Eux, Son / notre, nous, mon | full: Nos enfants jouent avec leurs enfants.
+transforms:
+Je cherche mon chien. => Nous cherchons notre chien. | جمله را با nous بنویس.
+Tu aimes ta maison ? => Vous aimez votre maison ? | جمله را با vous بنویس.
+Il habite avec ses amis. => Ils habitent avec leurs amis. | جمله را با ils بنویس.
+Notre livre est ici. => Nos livres sont ici. | جمله را جمع کن.
+Leur chat est sous la table. => Leurs chats sont sous la table. | جمله را جمع کن.
+translations:
+ما خانه‌مان را دوست داریم. => Nous aimons notre maison. ; On aime notre maison.
+آن‌ها با بچه‌هایشان زندگی می‌کنند. => Ils habitent avec leurs enfants. ; Elles habitent avec leurs enfants.
+خانم، سگتان اینجاست. => Madame, votre chien est ici. ; Votre chien est ici, madame.
+ماشینشان در خیابان است. => Leur voiture est dans la rue.
+دوستانتان کجا هستند؟ => Où sont vos amis ? ; Vos amis sont où ?
