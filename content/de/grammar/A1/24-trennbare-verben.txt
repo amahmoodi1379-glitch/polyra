@@ -1,0 +1,73 @@
+code: de-a1-trennbare-verben
+title: فعل‌های جداشدنی: Ich stehe um 7 Uhr auf
+scope: فعل‌های جداشدنی پرکاربرد (aufstehen، einkaufen، anrufen، anfangen، mitkommen، fernsehen، abfahren، ankommen، einsteigen، aussteigen، umsteigen، einladen، kennenlernen، ausfüllen) در Präsens: پیشوند در آخر جمله و فعل سر هم بعد از فعل وجهی، و فرقشان با فعل‌های be- و ver- که جدا نمی‌شوند؛ Perfekt این فعل‌ها (eingekauft) در واحدهای بعد می‌آید.
+can_do: حالا می‌توانی برنامه روزانه‌ات را بگویی: «ساعت هفت بیدار می‌شوم، بعد خرید می‌کنم».
+rule: در جمله ساده پیشوند به آخر جمله می‌رود (Ich stehe um 7 Uhr auf)؛ با فعل وجهی، فعل سر هم و بی‌تغییر آخر جمله می‌آید (Ich muss früh aufstehen).
+mistake: فارسی‌زبان‌ها فعل را سر هم در جای دوم می‌گذارند: «Ich aufstehe um 7 Uhr» غلط است؛ درست: Ich stehe um 7 Uhr auf. پیشوند را هم جا نینداز: Der Zug fährt um 8 Uhr ab.
+tables: Präsens | separable
+lesson:
+بعضی فعل‌ها یک پیشوند جداشدنی دارند: aufstehen (بیدار شدن)، einkaufen (خرید کردن)، anrufen (زنگ زدن).
+در جمله ساده فعل صرف‌شده جای دوم می‌نشیند و پیشوند به آخر جمله می‌رود: Ich stehe um 7 Uhr auf.
+این هم یک قاب جمله است، مثل möchte و können: Ich rufe Anna heute an.
+با فعل وجهی، فعل دوباره سر هم و بی‌تغییر آخر جمله می‌آید: Ich muss früh aufstehen.
+تغییر حرف صدادار هم سر جایش می‌ماند: fernsehen ← er sieht fern، anfangen ← er fängt an، einladen ← er lädt ein.
+پیشوندهای جداشدنی پرکاربرد: an، auf، aus، ein، mit، um، ab، fern. فعل‌هایی که با be- و ver- شروع می‌شوند جدا نمی‌شوند: Ich verstehe das. Ich besuche Anna.
+table:
+فعل | جمله ساده | با فعل وجهی
+aufstehen | Ich stehe um 7 Uhr auf. | Ich muss um 7 Uhr aufstehen.
+einkaufen | Wir kaufen heute ein. | Wir möchten heute einkaufen.
+anrufen | Anna ruft Max an. | Anna will Max anrufen.
+fernsehen | Paul sieht am Abend fern. | Paul darf am Abend fernsehen.
+sets:
+جداشدنی: aufstehen, einkaufen, anrufen, mitkommen, fernsehen, ankommen
+جدانشدنی: verstehen, bekommen, besuchen, bezahlen, verkaufen, wiederholen
+examples:
+Am Sonntag stehe ich spät auf. | یکشنبه دیر بیدار می‌شوم.
+Wir kaufen am Samstag ein. | ما شنبه خرید می‌کنیم.
+Kommst du mit? | با ما می‌آیی؟
+Ich muss Anna anrufen. | باید به آنا زنگ بزنم.
+targets:
+Ich [stehe um 7 Uhr auf]. | من ساعت هفت بیدار می‌شوم. | d: aufstehe um 7 Uhr, um 7 Uhr aufstehe, auf um 7 Uhr stehe | full: Um 7 Uhr stehe ich auf.
+Anna [ruft Max an]. | آنا به ماکس زنگ می‌زند. | d: anruft Max, ruft an Max, Max anruft
+Wir [kaufen heute ein]. | ما امروز خرید می‌کنیم. | d: einkaufen heute, heute einkaufen, ein heute kaufen | full: Heute kaufen wir ein.
+Der Kurs [fängt um 9 Uhr an]. | کلاس ساعت نه شروع می‌شود. | d: anfängt um 9 Uhr, um 9 Uhr anfängt, an um 9 Uhr fängt | full: Um 9 Uhr fängt der Kurs an.
+[Kommst du heute mit]? | امروز با ما می‌آیی؟ | d: Mitkommst du heute, Du heute mitkommst, Kommst mit du heute
+Wir [laden Lena ein]. | ما لنا را دعوت می‌کنیم. | d: einladen Lena, laden ein Lena, Lena einladen
+Ich [lerne{kennenlernen} Max heute kennen{kennenlernen}]. | امروز با ماکس آشنا می‌شوم. | d: kennenlerne Max heute, lerne kennen Max heute, Max heute kennenlerne | full: Heute lerne ich Max kennen.
+Die Kinder [sehen jeden Abend fern]. | بچه‌ها هر شب تلویزیون می‌بینند. | d: fernsehen jeden Abend, jeden Abend fernsehen, fern jeden Abend sehen | full: Jeden Abend sehen die Kinder fern.
+Paul [füllt das Formular aus]. | پاول فرم را پر می‌کند. | d: ausfüllt das Formular, füllt aus das Formular, das Formular ausfüllt
+Wann [kommt] der Zug an? | قطار کی می‌رسد؟ | d: ankommt, kommst, kommen | hint: (ankommen)
+Ich [steige] hier aus. | من اینجا پیاده می‌شوم. | d: aussteige, steigst, steigt | hint: (aussteigen) | full: Hier steige ich aus.
+[Steigst] du in Köln um? | در کلن قطار عوض می‌کنی؟ | d: Umsteigst, Steigt, Steige | hint: (umsteigen)
+Der Bus [fährt] um 8 Uhr ab. | اتوبوس ساعت هشت حرکت می‌کند. | d: abfährt, fahrt, fährst | hint: (abfahren) | full: Um 8 Uhr fährt der Bus ab.
+Wir [steigen] jetzt ein. | ما الان سوار می‌شویم. | d: einsteigen, steigt, steige | hint: (einsteigen) | full: Jetzt steigen wir ein.
+Max [ruft] morgen an. | ماکس فردا زنگ می‌زند. | d: anruft, rufst, rufe | hint: (anrufen) | full: Morgen ruft Max an.
+[Siehst] du gern fern? | دوست داری تلویزیون ببینی؟ | d: Fernsiehst, Sieht, Sehe | hint: (fernsehen)
+Wann [fängt] der Film an? | فیلم کی شروع می‌شود؟ | d: anfängt, fangt, fängst | hint: (anfangen)
+Lena [lädt] Max und Anna ein. | لنا ماکس و آنا را دعوت می‌کند. | d: einlädt, ladet, lädst | hint: (einladen)
+Du musst um 6 Uhr [aufstehen]. | باید ساعت شش بیدار شوی. | d: stehst auf, aufstehst, auf stehen | full: Um 6 Uhr musst du aufstehen.
+Wir möchten heute [einkaufen]. | ما امروز می‌خواهیم خرید کنیم. | d: kaufen ein, einkauft, ein kaufen | full: Heute möchten wir einkaufen.
+Kannst du morgen [mitkommen]? | فردا می‌توانی با ما بیایی؟ | d: kommst mit, mitkommst, mit kommen
+Ich will Anna heute [anrufen]. | می‌خواهم امروز به آنا زنگ بزنم. | d: rufe an, anrufe, an rufen | full: Heute will ich Anna anrufen.
+Wo müssen wir [umsteigen]? | کجا باید قطار عوض کنیم؟ | d: steigen um, umsteigt, um steigen
+Ich [stehe]{aufstehen} jeden Tag um 6 Uhr [auf]{aufstehen}. | من هر روز ساعت شش بیدار می‌شوم. | d: aufstehe, stehst, steht / aufstehen, aufsteht, stehen | full: Jeden Tag stehe ich um 6 Uhr auf.
+Wann [kommst]{ankommen} du in Berlin [an]{ankommen}? | کی به برلین می‌رسی؟ | d: ankommst, kommt, komme / ankommen, ankommt, kommen
+Der Zug [fährt]{abfahren} um 10 Uhr [ab]{abfahren}. | قطار ساعت ده حرکت می‌کند. | d: abfährt, fahrt, fährst / abfahren, abfährt, fahren | full: Um 10 Uhr fährt der Zug ab.
+[Rufst]{anrufen} du Lena heute [an]{anrufen}? | امروز به لنا زنگ می‌زنی؟ | d: Anrufst, Ruft, Rufe / anrufen, anruft, rufen
+Wir [kaufen]{einkaufen} im Supermarkt [ein]{einkaufen}. | ما در سوپرمارکت خرید می‌کنیم. | d: einkaufen, kauft, kaufe / einkaufen, einkauft, kaufen | full: Im Supermarkt kaufen wir ein.
+Der Film [fängt]{anfangen} um 8 Uhr [an]{anfangen}. | فیلم ساعت هشت شروع می‌شود. | d: anfängt, fangt, fängst / anfangen, anfängt, fangen | full: Um 8 Uhr fängt der Film an.
+[Kommt]{mitkommen} ihr morgen [mit]{mitkommen}? | فردا با ما می‌آیید؟ | d: Mitkommt, Kommen, Kommst / mitkommen, mitkommt, kommen
+Paul [sieht]{fernsehen} am Abend [fern]{fernsehen}. | پاول شب‌ها تلویزیون می‌بیند. | d: fernsieht, seht, siehst / fernsehen, fernsieht, sehen | full: Am Abend sieht Paul fern.
+Ich [lade]{einladen} Sara und Ali [ein]{einladen}. | من سارا و علی را دعوت می‌کنم. | d: einlade, lädst, lädt / einladen, einlädt, laden
+transforms:
+Ich muss früh aufstehen. => Ich stehe früh auf. ; Früh stehe ich auf. | بدون müssen بگو.
+Wir kaufen heute ein. => Wir möchten heute einkaufen. ; Heute möchten wir einkaufen. | با möchten بگو.
+Max ruft Anna an. => Max will Anna anrufen. | با wollen بگو.
+Ich sehe am Abend fern. => Paul sieht am Abend fern. ; Am Abend sieht Paul fern. | به‌جای ich، Paul را فاعل کن.
+Der Zug fährt um 8 Uhr ab. => Wann fährt der Zug ab? | برای «um 8 Uhr» سؤال بساز.
+translations:
+ساعت هفت بیدار می‌شوم. => Ich stehe um 7 Uhr auf. ; Ich stehe um sieben Uhr auf. ; Um 7 Uhr stehe ich auf. ; Um sieben Uhr stehe ich auf.
+قطار کی حرکت می‌کند؟ => Wann fährt der Zug ab?
+فردا به آنا زنگ می‌زنم. => Ich rufe Anna morgen an. ; Morgen rufe ich Anna an.
+با ما می‌آیی؟ => Kommst du mit?
+امروز باید خرید کنیم. => Wir müssen heute einkaufen. ; Heute müssen wir einkaufen.
