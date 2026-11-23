@@ -1,0 +1,57 @@
+{
+  "code": "fr-a1-d001",
+  "title_fa": "در خانه ماری",
+  "situation_fa": "مهمان خانه ماری هستی و او درباره خانه و حیوان‌هایش حرف می‌زند.",
+  "turns": [
+    {
+      "line": { "speaker": "Marie", "text": "Vous aimez la maison ?", "translation_fa": "خانه را دوست دارید؟" },
+      "choices": [
+        { "text": "J'aime la maison.", "translation_fa": "خانه را دوست دارم." },
+        { "text": "Je suis une maison.", "translation_fa": "من یک خانه هستم." },
+        { "text": "Il mange la maison.", "translation_fa": "او خانه را می‌خورد." }
+      ],
+      "correct": 0,
+      "why_fa": "ماری می‌پرسد خانه را دوست داری؛ فقط جواب اول به این پرسش جواب می‌دهد."
+    },
+    {
+      "line": { "speaker": "Marie", "text": "Le chat est dans la voiture.", "translation_fa": "گربه در ماشین است." },
+      "choices": [
+        { "text": "La voiture mange le chat.", "translation_fa": "ماشین گربه را می‌خورد." },
+        { "text": "Le chat est triste ?", "translation_fa": "گربه غمگین است؟" },
+        { "text": "Je suis la voiture.", "translation_fa": "من ماشین هستم." }
+      ],
+      "correct": 1,
+      "why_fa": "پرسیدن حال گربه جواب طبیعی است؛ دو جمله دیگر معنا ندارند."
+    },
+    {
+      "line": { "speaker": "Marie", "text": "Vous avez un chien ?", "translation_fa": "شما سگ دارید؟" },
+      "choices": [
+        { "text": "Je suis un chien.", "translation_fa": "من یک سگ هستم." },
+        { "text": "Le chien a une maison rouge.", "translation_fa": "سگ یک خانه قرمز دارد." },
+        { "text": "J'ai un petit chien.", "translation_fa": "یک سگ کوچک دارم." }
+      ],
+      "correct": 2,
+      "why_fa": "پرسش درباره داشتن سگ است و جواب سوم همین را می‌گوید."
+    },
+    {
+      "line": { "speaker": "Marie", "text": "Paul aime le vélo.", "translation_fa": "پل دوچرخه را دوست دارد." },
+      "choices": [
+        { "text": "Il a un vélo vert ?", "translation_fa": "یک دوچرخه سبز دارد؟" },
+        { "text": "Il est un vélo.", "translation_fa": "او یک دوچرخه است." },
+        { "text": "Le vélo aime Paul.", "translation_fa": "دوچرخه پل را دوست دارد." }
+      ],
+      "correct": 0,
+      "why_fa": "پرسیدن درباره دوچرخه پل گفتگو را درست ادامه می‌دهد."
+    },
+    {
+      "line": { "speaker": "Marie", "text": "Nous allons à la ville ?", "translation_fa": "به شهر برویم؟" },
+      "choices": [
+        { "text": "Nous sommes la ville.", "translation_fa": "ما شهر هستیم." },
+        { "text": "Nous allons à la ville.", "translation_fa": "به شهر می‌رویم." },
+        { "text": "La ville va à la maison.", "translation_fa": "شهر به خانه می‌رود." }
+      ],
+      "correct": 1,
+      "why_fa": "ماری پیشنهاد می‌دهد به شهر بروید و جواب دوم آن را می‌پذیرد."
+    }
+  ]
+}

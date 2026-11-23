@@ -114,7 +114,8 @@ Deploy: Runflare builds `main` (`docs/deploy-runflare.md`). Work on the session 
   The rest of a pack is built without a database in `packs/build.ts`: `morph.ts` (forms → words, from `data/lexicon/*-forms.tsv`
   made by `scripts/data/build-forms.ts`, Morphy, `closed.ts`), `analyze.ts` (tokens of a sentence, the usable-sentence rule),
   `distractors.ts` (automatic wrong options), `sentences.ts`, `grammar.ts`, `tables.ts` (tables from `standardTable` in
-  `conjugation-check.ts`). `packs/load.ts` loads what is new through the importers at every start (ledger `content_pack_item`),
+  `conjugation-check.ts`), `items.ts` (texts, dialogues, find the mistake, writing, phonics: JSON files without tokens, checked
+  with the importers' schemas and the pure rules in `src/server/content/practice-check.ts`). `packs/load.ts` loads what is new through the importers at every start (ledger `content_pack_item`),
   approves it and publishes it (`publishReady` with `only`). Fixture pack: `tests/fixtures/packs`.
 - «سلامت محتوا» (PRD §13.11): `src/server/content/health/usable.ts` is the pure usable-sentence count, `sentences.ts`
   loads it per level; its button opens P-S with `PlanOptions.wordIds`.

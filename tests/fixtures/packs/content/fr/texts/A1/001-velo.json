@@ -1,0 +1,39 @@
+{
+  "code": "fr-a1-t001",
+  "title": "Le vélo de Marie",
+  "kind": "dialogue",
+  "band": 1,
+  "placement_ok": false,
+  "sentences": [
+    { "speaker": "A", "text": "Paul, vous avez une voiture ?", "translation_fa": "پل، شما ماشین دارید؟" },
+    { "speaker": "B", "text": "J'ai une petite voiture rouge.", "translation_fa": "یک ماشین کوچک قرمز دارم." },
+    { "speaker": "A", "text": "Et vous aimez la voiture ?", "translation_fa": "ماشین را دوست دارید؟" },
+    { "speaker": "B", "text": "J'aime le vélo.", "translation_fa": "دوچرخه را دوست دارم." },
+    { "speaker": "A", "text": "Marie a un vélo vert et un chat.", "translation_fa": "ماری یک دوچرخه سبز و یک گربه دارد." },
+    { "speaker": "B", "text": "Le chat de Marie est dans la maison.", "translation_fa": "گربه ماری در خانه است." },
+    { "speaker": "A", "text": "Il est petit ?", "translation_fa": "کوچک است؟" }
+  ],
+  "key_words": ["vélo"],
+  "question_sets": {
+    "reading": {
+      "A": [
+        { "type": "mcq", "prompt": "پل چه ماشینی دارد؟", "options": ["یک ماشین کوچک قرمز", "یک ماشین بزرگ سبز", "یک ماشین زرد", "یک ماشین بزرگ قرمز"], "correct": 0, "explanation_fa": "پل می‌گوید یک ماشین کوچک قرمز دارد." },
+        { "type": "tf", "prompt": "گربه ماری در خانه است.", "correct": true, "explanation_fa": "جمله ششم همین را می‌گوید." }
+      ],
+      "B": [
+        { "type": "find", "prompt": "کدام جمله می‌گوید گربه کجاست؟", "correct_sentence": 5 },
+        { "type": "tf", "prompt": "پل ماشین را بیشتر از دوچرخه دوست دارد.", "correct": false }
+      ]
+    },
+    "listening": {
+      "A": [
+        { "type": "tf", "prompt": "ماری یک دوچرخه سبز دارد.", "correct": true },
+        { "type": "mcq", "prompt": "پل چه چیزی را دوست دارد؟", "options": ["دوچرخه", "ماشین", "گربه", "خانه"], "correct": 0 }
+      ],
+      "B": [
+        { "type": "dict", "sentence": 3 },
+        { "type": "tf", "prompt": "ماری سگ دارد.", "correct": false }
+      ]
+    }
+  }
+}

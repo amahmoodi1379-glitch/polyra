@@ -7,6 +7,7 @@ import { problem, zodProblems, type Problem } from "../problems";
 import { emptyRound } from "../report";
 import { loadVocabulary } from "../vocabulary";
 import { allowedWords } from "./allowed";
+import { checkMarks, correctedText, marksOf } from "../practice-check";
 import { mapSentence, tidy } from "./sentence-store";
 import { batchSize, example, labelOf, languageValues, lines, params, trace } from "./shared";
 import { nextLevel, openParams, unitLines, type LevelNext } from "./targets";
@@ -14,38 +15,7 @@ import type { ContentKind } from "./types";
 
 type ErrorfixParams = { level: string; count: number };
 
-/** PRD §8b.5: 2 or 3 mistakes, each one word, marked {{wrong|right}}. */
-const MARKS: [number, number] = [2, 3];
-const markPattern = /\{\{([^{}|]*)\|([^{}|]*)\}\}/g;
-const oneWord = (text: string) => text.trim() !== "" && !/\s/.test(text.trim());
-
-/** The marked mistakes in order: what was written and what it should be. */
-export function marksOf(marked: string) {
-  return [...marked.matchAll(markPattern)].map(([, wrong, right]) => ({ wrong: wrong.trim(), right: right.trim() }));
-}
-
-/**
- * Two or three marks, each one word that really changes, one explanation per mark, and no braces
- * left outside a mark (a `{{x}}` without "|" would show in the text) (PRD §8b.5).
- */
-export function checkMarks(marked: string, explanations: number): Problem[] {
-  const problems: Problem[] = [];
-  const marks = marksOf(marked);
-  if (/[{}]/.test(marked.replace(markPattern, ""))) problems.push(problem("strayBraces", { field: "marked_text" }));
-  if (marks.length < MARKS[0] || marks.length > MARKS[1]) problems.push(problem("marksCount", { field: "marked_text", count: marks.length }));
-  for (const mark of marks) {
-    if (!oneWord(mark.wrong) || !oneWord(mark.right) || fold(mark.wrong) === fold(mark.right)) {
-      problems.push(problem("markInvalid", { text: `${mark.wrong}|${mark.right}`, field: "marked_text" }));
-    }
-  }
-  if (marks.length > 0 && explanations !== marks.length) problems.push(problem("errorsCount", { count: explanations, expected: marks.length, field: "errors" }));
-  return problems;
-}
-
-/** The text with every mistake corrected: what the learner should end with. */
-export function correctedText(marked: string) {
-  return marked.replace(markPattern, (_, __, right: string) => right.trim());
-}
+export { checkMarks, correctedText, marksOf } from "../practice-check";
 
 async function errorfixCounts(language: string) {
   const [made, open] = await Promise.all([

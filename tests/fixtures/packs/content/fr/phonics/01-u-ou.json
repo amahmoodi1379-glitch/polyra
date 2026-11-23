@@ -1,0 +1,21 @@
+{
+  "kind": "contrast",
+  "sound_label": "u و ou",
+  "graphemes": ["u", "ou"],
+  "tip_fa": "برای u لب‌ها را مثل سوت گرد کن و «ای» بگو؛ ou همان «او» فارسی است.",
+  "example_words": [
+    { "text": "vous", "meaning_fa": "شما", "wrong_spellings": ["vu", "vouss"] },
+    { "text": "rue", "meaning_fa": "خیابان", "wrong_spellings": ["rou", "ru"] },
+    { "text": "loup", "meaning_fa": "گرگ", "wrong_spellings": ["lu", "lou"] },
+    { "text": "lune", "meaning_fa": "ماه", "wrong_spellings": ["loune", "lunne"] },
+    { "text": "tout", "meaning_fa": "همه", "wrong_spellings": ["tu", "tou"] },
+    { "text": "bus", "meaning_fa": "اتوبوس", "wrong_spellings": ["bous", "buss"] }
+  ],
+  "minimal_pairs": [
+    { "a": "tu", "b": "tout", "a_fa": "تو", "b_fa": "همه" },
+    { "a": "vu", "b": "vous", "a_fa": "دیده", "b_fa": "شما" },
+    { "a": "rue", "b": "roue", "a_fa": "خیابان", "b_fa": "چرخ" },
+    { "a": "pur", "b": "pour", "a_fa": "خالص", "b_fa": "برای" },
+    { "a": "dessus", "b": "dessous", "a_fa": "رو", "b_fa": "زیر" }
+  ]
+}
