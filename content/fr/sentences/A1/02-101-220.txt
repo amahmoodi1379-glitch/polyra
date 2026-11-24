@@ -40,7 +40,7 @@ Il [vient] de Paris. | او از پاریس می‌آید.
 Nous [venons] chez toi. | ما به خانه‌ات می‌آییم.
 Vous [venez] d'où ? | اهل کجایید؟
 Ils [viennent] avec leurs enfants. | آن‌ها با بچه‌هایشان می‌آیند.
-Tu peux [venir] ici ? | می‌توانی بیایی اینجا؟
+Tu [viens] ici ? | می‌آیی اینجا؟
 
 # prendre
 Je [prends] un café. | یک قهوه می‌گیرم.
@@ -49,7 +49,7 @@ Il [prend] son livre. | او کتابش را برمی‌دارد.
 Nous [prenons] du pain. | ما نان می‌گیریم.
 Vous [prenez] quoi ? | شما چی می‌گیرید؟
 Les enfants [prennent] de l'eau. | بچه‌ها آب برمی‌دارند.
-Je peux [prendre] ta voiture ? | می‌توانم ماشینت را بردارم؟
+Je [prends] ta voiture. | ماشینت را برمی‌دارم.
 
 # voir
 Je [vois] la maison. | خانه را می‌بینم.
@@ -142,7 +142,7 @@ Il [attend] dans la voiture. | او توی ماشین منتظر است.
 Nous [attendons] le café. | ما منتظر قهوه هستیم.
 [Attendez], s'il vous plaît. | لطفاً صبر کنید.
 Les enfants [attendent] à l'école. | بچه‌ها در مدرسه منتظرند.
-Je ne peux pas [attendre]. | نمی‌توانم صبر کنم.
+J'[attends] Marie. | منتظر ماری هستم.
 
 # comprendre
 Je ne [comprends] pas. | نمی‌فهمم.
@@ -166,7 +166,7 @@ Je t'[aide] ? | کمکت کنم؟
 Tu m'[aides], s'il te plaît ? | لطفاً کمکم می‌کنی؟
 Il [aide] sa famille. | او به خانواده‌اش کمک می‌کند.
 Nous [aidons] les enfants. | ما به بچه‌ها کمک می‌کنیم.
-Vous pouvez m'[aider] ? | می‌توانید به من کمک کنید؟
+Tu [aides] Paul ? | به پل کمک می‌کنی؟
 Ils [aident] Paul à la maison. | آن‌ها در خانه به پل کمک می‌کنند.
 
 # ouvrir
@@ -176,7 +176,7 @@ L'école [ouvre] quand ? | مدرسه کِی باز می‌شود؟
 Nous [ouvrons] nos livres. | ما کتاب‌هایمان را باز می‌کنیم.
 [Ouvrez] le livre, s'il vous plaît. | لطفاً کتاب را باز کنید.
 Les enfants [ouvrent] tout ! | بچه‌ها همه چیز را باز می‌کنند!
-Je peux [ouvrir] ? | می‌توانم باز کنم؟
+J'[ouvre] le livre. | کتاب را باز می‌کنم.
 
 # fermer
 Je [ferme] la voiture. | در ماشین را می‌بندم.
@@ -202,7 +202,7 @@ Il [part] avec sa famille. | او با خانواده‌اش می‌رود.
 Nous [partons] ensemble. | ما با هم راه می‌افتیم.
 Vous [partez] en voiture ? | با ماشین می‌روید؟
 Ils [partent] de la maison. | آن‌ها از خانه راه می‌افتند.
-Je dois [partir]. | باید بروم.
+Je [pars], au revoir ! | دارم می‌روم، خداحافظ!
 
 # sortir
 Je [sors] avec mes amis. | با دوستانم بیرون می‌روم.
@@ -220,7 +220,7 @@ Il [entre] dans l'école. | او وارد مدرسه می‌شود.
 Nous [entrons] chez Paul. | ما وارد خانهٔ پل می‌شویم.
 [Entrez], s'il vous plaît ! | لطفاً بفرمایید داخل!
 Le chien n'[entre] pas ici. | سگ اینجا وارد نمی‌شود.
-On peut [entrer] ? | می‌توانیم وارد شویم؟
+Paul [entre] dans la maison. | پل وارد خانه می‌شود.
 
 # dormir
 Je [dors] bien ici. | اینجا خوب می‌خوابم.
@@ -246,7 +246,7 @@ Il [demande] où est la rue. | او می‌پرسد خیابان کجاست.
 Nous [demandons] de l'eau. | ما آب می‌خواهیم.
 Vous [demandez] le nom de l'homme ? | اسم آن مرد را می‌پرسید؟
 Les enfants [demandent] du pain. | بچه‌ها نان می‌خواهند.
-Je peux [demander] quelque chose ? | می‌توانم یک چیزی بپرسم؟
+Je [demande] quelque chose à Paul. | از پل چیزی می‌پرسم.
 
 # répondre
 Je [réponds] à Marie. | به ماری جواب می‌دهم.
@@ -263,7 +263,7 @@ Le livre [commence] bien. | کتاب خوب شروع می‌شود.
 Nous [commençons] à manger. | ما غذا خوردن را شروع می‌کنیم.
 Vous [commencez] à comprendre ? | کم‌کم می‌فهمید؟
 Ils [commencent] à travailler à Paris. | آن‌ها در پاریس شروع به کار می‌کنند.
-On peut [commencer] ? | می‌توانیم شروع کنیم؟
+On [commence] ? | شروع کنیم؟
 
 # finir
 Je [finis] mon travail. | کارم را تمام می‌کنم.
@@ -281,7 +281,7 @@ Il [joue] dans la rue. | او توی کوچه بازی می‌کند.
 Nous [jouons] ensemble. | ما با هم بازی می‌کنیم.
 Vous [jouez] où ? | کجا بازی می‌کنید؟
 Les enfants [jouent] à l'école. | بچه‌ها در مدرسه بازی می‌کنند.
-Le chien veut [jouer]. | سگ می‌خواهد بازی کند.
+Le chien [joue] avec l'enfant. | سگ با بچه بازی می‌کند.
 
 # chose
 J'ai une [chose] pour toi. | یک چیز برایت دارم.
@@ -429,7 +429,7 @@ Il est quelle [heure] ? | ساعت چند است؟
 Il est 3 [heures]. | ساعت سه است.
 À quelle [heure] tu arrives ? | ساعت چند می‌رسی؟
 On mange à 7 [heures]. | ساعت هفت غذا می‌خوریم.
-Je peux attendre une [heure]. | می‌توانم یک ساعت صبر کنم.
+J'attends une [heure]. | یک ساعت منتظر می‌مانم.
 Je lis une [heure] par jour. | روزی یک ساعت کتاب می‌خوانم.
 
 # fois
@@ -563,7 +563,7 @@ Le [dernier] jour, nous allons à Paris. | روز آخر به پاریس می‌
 C'est ma [dernière] année à l'école. | این آخرین سال من در مدرسه است.
 Paul est [dernier]. | پل آخر است.
 La [dernière] maison de la rue est à nous. | آخرین خانهٔ خیابان مال ماست.
-L'année [dernière], j'ai travaillé à Lyon. | پارسال در لیون کار کردم.
+C'est le [dernier] jour. | این آخرین روز است.
 
 # seul
 Je suis [seul]. | من تنها هستم.
@@ -571,7 +571,7 @@ Elle habite [seule]. | او تنها زندگی می‌کند.
 Il mange [seul]. | او تنها غذا می‌خورد.
 Les enfants sont [seuls] à la maison. | بچه‌ها در خانه تنها هستند.
 C'est mon [seul] ami ici. | او تنها دوست من اینجاست.
-Tu peux faire ça [seul] ? | می‌توانی این کار را تنهایی انجام دهی؟
+Il habite [seul]. | او تنها زندگی می‌کند.
 
 # vrai
 C'est [vrai] ? | راست است؟
@@ -800,7 +800,7 @@ Ce livre a [quatre-vingt-dix] ans. | این کتاب نود ساله است.
 # cent
 Il a [cent] ans ! | او صد سال دارد!
 Il y a [cent] personnes ici. | اینجا صد نفر هستند.
-Je t'ai dit ça [cent] fois ! | صد بار این را به تو گفتم!
+J'ai [cent] livres. | صد کتاب دارم.
 Il y a [cent] livres dans la maison. | در خانه صد کتاب هست.
 Cette maison a [cent] ans. | این خانه صد ساله است.
 
@@ -848,7 +848,7 @@ Tes [parents] sont là ? | پدر و مادرت هستند؟
 Les [parents] de Paul sont jeunes. | پدر و مادر پل جوان‌اند.
 Je mange chez mes [parents]. | خانهٔ پدر و مادرم غذا می‌خورم.
 Les [parents] attendent les enfants. | والدین منتظر بچه‌ها هستند.
-Un [parent] doit aider son enfant. | پدر یا مادر باید به بچه‌اش کمک کند.
+Un [parent] aide son enfant. | پدر یا مادر به بچه‌اش کمک می‌کند.
 
 # frère
 J'ai un [frère]. | من یک برادر دارم.
