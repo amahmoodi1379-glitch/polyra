@@ -10,6 +10,8 @@ import { buildGrammar, type GrammarUnitSource } from "./grammar";
 import { Morph } from "./morph";
 import { buildSentences, type SentenceRecord } from "./sentences";
 import { buildTables, type PackTable } from "./tables";
+import { grammarTiming, type TimingNote } from "./timing";
+import { engineCatalog } from "@/server/settings/engine-catalog";
 import { checkWordPack, frequencyRanks, PACK_LEVELS, readWordFiles, type PackWord } from "./words";
 
 /**
@@ -32,7 +34,7 @@ export type PackLevel = {
   exceptions: Exception[];
   texts: TextSource[];
 };
-export type Pack = { language: LanguageCode; levels: PackLevel[]; words: PackWord[]; errors: Note[]; warnings: Note[]; notes: Note[] };
+export type Pack = { language: LanguageCode; levels: PackLevel[]; words: PackWord[]; errors: Note[]; warnings: Note[]; notes: Note[]; timing: TimingNote[] };
 
 /** A short, stable fingerprint of an item as loaded. */
 export const hashOf = (value: unknown) => createHash("sha1").update(JSON.stringify(value)).digest("hex").slice(0, 16);
@@ -83,6 +85,7 @@ export function buildPack(language: LanguageCode, options: BuildOptions = {}): P
     errors: wordPack.errors.map(({ file, line, lemma, text }) => ({ file, line, text: `${lemma}: ${text}` })),
     warnings: wordPack.warnings.map(({ file, line, lemma, text }) => ({ file, line, text: `${lemma}: ${text}` })),
     notes: [],
+    timing: [],
   };
   if (words.length === 0) return pack;
 
@@ -119,6 +122,11 @@ export function buildPack(language: LanguageCode, options: BuildOptions = {}): P
   pack.errors.push(...tables.errors);
   pack.warnings.push(...tables.warnings);
   pack.notes.push(...tables.notes);
+
+  // «Grammar before its lesson»: word sentences that use a grammar point well before its unit (warnings only).
+  const cardOrder = words.filter((item) => !item.word.no_card && isCardRegister(item.word.register)).sort((a, b) => levelRank(a.level) - levelRank(b.level) || a.order - b.order);
+  const gate = Number(engineCatalog.find((item) => item.key === "gate.grammar_words")?.default ?? 0);
+  pack.timing = grammarTiming(language, built.flatMap(({ sentences }) => sentences.lines), unitTables, cardOrder, gate);
 
   const unique = (list: Exception[]) => [...new Map(list.map((item) => [`${item.code}|${item.surface}`, item])).values()];
   for (const { level, grammar, sentences, texts } of built) {

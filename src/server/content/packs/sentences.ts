@@ -2,6 +2,7 @@ import { plausibleForm } from "@/engine/tokens";
 import type { Analyzer, MappedToken, Token } from "./analyze";
 import { autoDistractors } from "./distractors";
 import type { PackWord } from "./words";
+import type { TimingLine } from "./timing";
 
 /**
  * A word's fill-the-gap sentences (P-S, PRD §5.5 and §14.4), written in a short form:
@@ -24,7 +25,15 @@ export type SentenceRecord = {
   tokens: Token[];
   targets: { type: "word"; target: string; marked_text: string; blanks: 1; accepted: string[]; distractors: string[]; hint: string | null; accepted_full: null }[];
 };
-export type BuiltSentences = { records: SentenceRecord[]; errors: { file: string; line: number; text: string }[]; notes: { file: string; line: number; text: string }[]; exceptions: { code: string; surface: string }[]; wordsWithSentences: Map<PackWord, number> };
+export type BuiltSentences = {
+  records: SentenceRecord[];
+  errors: { file: string; line: number; text: string }[];
+  notes: { file: string; line: number; text: string }[];
+  exceptions: { code: string; surface: string }[];
+  wordsWithSentences: Map<PackWord, number>;
+  /** Every accepted line with its tokens, for the «grammar before its lesson» check (`timing.ts`). */
+  lines: TimingLine[];
+};
 
 const cell = (cells: string[], key: string) => {
   const found = cells.find((item) => item.startsWith(`${key}:`));
@@ -51,7 +60,7 @@ export function formExceptions(tokens: MappedToken[], lemmaOfCode: (code: string
 
 /** Builds the P-S records of the sentence files of one level. */
 export function buildSentences(analyzer: Analyzer, files: { file: string; text: string }[], level: string, firstWords: Set<PackWord>): BuiltSentences {
-  const out: BuiltSentences = { records: [], errors: [], notes: [], exceptions: [], wordsWithSentences: new Map() };
+  const out: BuiltSentences = { records: [], errors: [], notes: [], exceptions: [], wordsWithSentences: new Map(), lines: [] };
   const byText = new Map<string, SentenceRecord>();
   for (const { file, text } of files) {
     let target: PackWord | null = null;
@@ -123,6 +132,7 @@ export function buildSentences(analyzer: Analyzer, files: { file: string; text: 
         out.errors.push({ ...at, text: "d: needs exactly three wrong options" });
         continue;
       }
+      out.lines.push({ ...at, target, text: analysis.text, tokens: analysis.tokens.map((token) => ({ surface: token.surface, code: token.code, inGap: token.inGap !== null })) });
       const markedText = `${analysis.text.slice(0, gap.start)}{{${surface}}}${analysis.text.slice(gap.end)}`;
       const targetRecord = { type: "word" as const, target: target.word.code, marked_text: markedText, blanks: 1 as const, accepted: [surface, ...list(cell(more, "ok"))], distractors, hint, accepted_full: null };
       const existing = byText.get(analysis.text);

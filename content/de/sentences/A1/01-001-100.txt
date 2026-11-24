@@ -420,11 +420,11 @@ Wir [wissen] es nicht. | ما نمی‌دانیم.
 Frau Schmidt, [wissen] Sie, wo Max wohnt? | خانم اشمیت، می‌دانید ماکس کجا زندگی می‌کند؟
 
 # Tag
-Wie war dein [Tag]? | روزت چطور بود؟
-Das war ein guter [Tag]. | روز خوبی بود.
-Wir sind einen [Tag] in Wien. | ما یک روز در وین هستیم.
-Der [Tag] in Köln war sehr gut. | آن روز در کلن خیلی خوب بود.
-Ich bin einen [Tag] zu Hause. | من یک روز خانه هستم.
+Wie ist dein [Tag]? | روزت چطور است؟
+Mein [Tag] ist gut, danke. | روزم خوب است، ممنون.
+Das ist ein guter [Tag]. | این روز خوبی است.
+Der [Tag] in Köln ist sehr gut. | روز در کلن خیلی خوب است.
+Ein [Tag] zu Hause ist auch gut. | یک روز در خانه هم خوب است.
 
 # heute
 [Heute] bin ich zu Hause. | امروز خانه هستم.
@@ -692,11 +692,11 @@ Max [spielt] mit Paul. | ماکس با پاول بازی می‌کند.
 Das Kind will jetzt [spielen]. | بچه الان می‌خواهد بازی کند.
 
 # hören
-Ich [höre] dich nicht. | صدایت را نمی‌شنوم.
+Ich [höre] Anna nicht. | صدای آنا را نمی‌شنوم.
 Was [hörst] du? | چه گوش می‌دهی؟
 Das Kind [hört] nicht. | بچه حرف گوش نمی‌کند.
-Ich kann dich nicht [hören]. | نمی‌توانم صدایت را بشنوم.
-Herr Weber, [hören] Sie mich? | آقای وبر، صدای من را می‌شنوید؟
+[Hörst] du das? | این را می‌شنوی؟
+Herr Weber, [hören] Sie das? | آقای وبر، این را می‌شنوید؟
 
 # sehen
 Ich [sehe] das Haus. | من خانه را می‌بینم.
@@ -731,12 +731,11 @@ Kannst du bitte [antworten]? | می‌توانی لطفاً جواب بدهی؟
 Wir [antworten] morgen. | ما فردا جواب می‌دهیم.
 
 # geben
-Ich [gebe] dir das Buch. | من کتاب را به تو می‌دهم.
-Anna [gibt] dem Kind Wasser. | آنا به بچه آب می‌دهد.
-Du [gibst] mir dein Auto? | ماشینت را به من می‌دهی؟
-Wir [geben] Herrn Weber das Geld. | ما پول را به آقای وبر می‌دهیم.
-Bitte [geben] Sie mir das Buch. | لطفاً کتاب را به من بدهید.
-Kannst du mir das Wasser [geben]? | می‌توانی آب را به من بدهی؟
+Ich [gebe] Anna das Buch. | کتاب را به آنا می‌دهم.
+Anna [gibt] Max Wasser. | آنا به ماکس آب می‌دهد.
+Du [gibst] Paul dein Auto? | ماشینت را به پاول می‌دهی؟
+Wir [geben] Anna und Max das Geld. | پول را به آنا و ماکس می‌دهیم.
+Bitte [geben] Sie Frau Weber das Buch. | لطفاً کتاب را به خانم وبر بدهید.
 
 # es gibt
 Hier [gibt es] kein Wasser. | اینجا آب نیست. | d: gibst es, geben es, gebt es

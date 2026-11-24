@@ -145,6 +145,10 @@ Je [mange] une pomme. | من یک سیب می‌خورم.
   be split by other words of its clause (`Je n'ai pas faim.`, `Hast du morgen Zeit?`); a gap holds it whole.
 - Names come from `names.txt`; numbers in digits are numbers. A sentence written for two words (the same text
   in two blocks, same translation) becomes one sentence with two targets.
+- **Grammar before its lesson.** A sentence may use only grammar the learner has met by then, apart from
+  set chunks (*Wie geht es dir?*, *je m'appelle*). `npm run content:check -- --timing` lists the word sentences
+  that use a marked grammar point (war/hatte, mir/dir, modal verbs, mit dem, du pain, passé composé …) before the
+  unit that teaches it, estimated from the engine's pace (`src/server/content/packs/timing.ts`). Keep the list short.
 - 5 to 8 sentences per card word (`publish.word_min_targets` is 5), each a different situation, short at A1
   (4 to 8 words), natural, with the Persian a learner would say.
 

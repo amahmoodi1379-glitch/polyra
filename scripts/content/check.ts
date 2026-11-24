@@ -7,6 +7,7 @@
  *   npm run content:check                 (both languages)
  *   npm run content:check -- fr --notes   (also the notes: forms read by context, tables waiting for a unit)
  *   npm run content:check -- de --warnings
+ *   npm run content:check -- de --timing  (word sentences that use a grammar point before its unit)
  *
  * Exits with 1 when anything has an error. A clean check is what a content PR needs; the server then
  * loads it through the panel's importers (`npm run content:load` does the same on a local database).
@@ -39,6 +40,12 @@ for (const language of languages.length ? languages : (["fr", "de"] as LanguageC
   if (args.includes("--warnings")) show("Warnings", pack.warnings);
   else if (pack.warnings.length) console.log(`\n${pack.warnings.length} warnings (--warnings to list them)`);
   if (args.includes("--notes")) show("Notes", pack.notes);
+  if (pack.timing.length) {
+    const perUnit = new Map<string, number>();
+    for (const note of pack.timing) perUnit.set(note.unit, (perUnit.get(note.unit) ?? 0) + 1);
+    console.log(`\n${pack.timing.length} word sentences use grammar before its unit (--timing to list them): ${[...perUnit].map(([unit, n]) => `${unit} ${n}`).join(", ")}`);
+    if (args.includes("--timing")) show("Grammar before its unit", pack.timing);
+  }
   if (pack.errors.length > 0) failed = true;
 }
 if (failed) process.exitCode = 1;
