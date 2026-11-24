@@ -351,15 +351,15 @@ Ja, [aber] nicht hier. | آره، ولی نه اینجا. | d: oder, mit, nach
 
 # Freund
 Das ist mein [Freund] Max. | این دوستم ماکس است.
-Max ist ein [Freund] von mir. | ماکس یکی از دوستان من است.
+Paul ist ein [Freund] aus Wien. | پاول دوستی از وین است.
 Mein [Freund] wohnt in Köln. | دوستم در کلن زندگی می‌کند.
 Wo ist dein [Freund]? | دوستت کجاست؟
-Ich gehe zu meinem [Freund]. | من پیش دوستم می‌روم.
+Mein [Freund] ist hier. | دوستم اینجاست.
 Max und Paul sind [Freunde]. | ماکس و پاول با هم دوست‌اند.
 
 # Freundin
-Anna ist eine [Freundin] von mir. | آنا یکی از دوستان من است.
-Lena geht zu ihrer{ihr-det} [Freundin]. | لنا پیش دوستش می‌رود.
+Anna ist eine [Freundin] aus Wien. | آنا دوستی از وین است.
+Lena und ihre{ihr-det} [Freundin] wohnen in Hamburg. | لنا و دوستش در هامبورگ زندگی می‌کنند.
 Sara und ihre{ihr-det} [Freundin] wohnen in Wien. | سارا و دوستش در وین زندگی می‌کنند.
 Mia ist eine gute [Freundin]. | میا دوست خوبی است.
 Die [Freundinnen] gehen in die Stadt. | آن دوست‌ها به شهر می‌روند.
@@ -389,7 +389,7 @@ Herr Weber [liest] ein altes Buch. | آقای وبر یک کتاب قدیمی م
 Was [lest] ihr? | شما چه می‌خوانید؟
 
 # schreiben
-Ich [schreibe] meinen Namen. | من اسمم را می‌نویسم.
+Wie [schreibt] man das? | این را چطور می‌نویسند؟
 Wie [schreibt] man das? | این را چطور می‌نویسند؟
 Anna [schreibt] ein Buch. | آنا یک کتاب می‌نویسد.
 Was [schreibst] du? | چه می‌نویسی؟
@@ -408,7 +408,7 @@ Ich [verstehe] das nicht. | من این را نمی‌فهمم.
 Du [verstehst] sehr gut Deutsch. | تو آلمانی را خیلی خوب می‌فهمی.
 Anna [versteht] das Wort nicht. | آنا این کلمه را نمی‌فهمد.
 Wir [verstehen] Herrn Weber nicht. | ما حرف آقای وبر را نمی‌فهمیم.
-Frau Schmidt, [verstehen] Sie mich? | خانم اشمیت، حرف من را می‌فهمید؟
+Frau Schmidt, [verstehen] Sie das? | خانم اشمیت، این را می‌فهمید؟
 Ihr [versteht] das, oder? | شما این را می‌فهمید، نه؟
 
 # wissen
@@ -501,11 +501,11 @@ Ich gehe [mit] Anna in die Stadt. | من با آنا به شهر می‌روم.
 Das Kind spricht [mit] Herrn Weber. | بچه با آقای وبر حرف می‌زند.
 Wir essen [mit] den Kindern. | ما با بچه‌ها غذا می‌خوریم.
 Kommst du [mit] uns? | با ما می‌آیی؟
-Sprichst du [mit] mir? | با من حرف می‌زنی؟
+Ich spreche [mit] Anna. | من با آنا حرف می‌زنم.
 Ich trinke Tee [mit] Lena. | من با لنا چای می‌نوشم.
 
 # für
-Das Buch ist [für] dich. | این کتاب برای توست.
+Das Buch ist [für] Anna. | این کتاب برای آناست.
 Der Kaffee ist [für] Herrn Weber. | قهوه برای آقای وبر است.
 Ist das [für] mich? | این برای من است؟
 Wir machen das [für] die Kinder. | ما این کار را برای بچه‌ها می‌کنیم.
@@ -522,11 +522,11 @@ Wir haben kein [Auto]. | ما ماشین نداریم.
 
 # fahren
 Ich [fahre] in die Stadt. | من به شهر می‌روم.
-Anna [fährt] mit dem Auto. | آنا با ماشین می‌رود.
+Anna [fährt] nach Hause. | آنا به خانه می‌رود.
 Du [fährst] sehr gut! | تو خیلی خوب رانندگی می‌کنی!
 Wir [fahren] heute zu Anna. | ما امروز پیش آنا می‌رویم.
 Herr Weber [fährt] ein neues Auto. | آقای وبر یک ماشین نو می‌راند.
-Ihr [fahrt] mit dem Auto? | شما با ماشین می‌روید؟
+[Fahrt] ihr heute nach Hause? | امروز به خانه می‌روید؟
 
 # nach
 Wir fahren morgen [nach] Hamburg. | ما فردا به هامبورگ می‌رویم.
@@ -548,7 +548,7 @@ Ich habe heute keine [Arbeit]. | من امروز کار ندارم. | d: Schule,
 Meine [Arbeit] ist neu. | کارم جدید است. | d: Schule, Freundin, Sprache
 Wie ist die [Arbeit]? | کار چطور است؟ | d: Schule, Stadt, Sprache
 Ich gehe jetzt zur [Arbeit]. | الان سر کار می‌روم. | d: Schule, Kollegin, Freundin
-Ich fahre mit dem Auto zur [Arbeit]. | با ماشین سر کار می‌روم. | d: Schule, Kollegin, Freundin
+Meine [Arbeit] ist sehr gut. | کارم خیلی خوب است. | d: Schule, Kollegin, Freundin
 
 # Schule
 Das Kind geht in die [Schule]. | بچه به مدرسه می‌رود.
@@ -562,7 +562,7 @@ Max lernt in der [Schule] Deutsch. | ماکس در مدرسه آلمانی یا�
 Meine [Mutter] heißt Sara. | اسم مادرم سارا است. | d: Schwester, Tochter, Tante
 Die [Mutter] von Max arbeitet in Berlin. | مادر ماکس در برلین کار می‌کند. | d: Schwester, Tochter, Tante
 Wo ist deine [Mutter]? | مادرت کجاست؟ | d: Schwester, Tochter, Tante
-Ich wohne mit meiner{mein} [Mutter] in Köln. | من با مادرم در کلن زندگی می‌کنم. | d: Schwester, Tochter, Tante
+Meine{mein} [Mutter] wohnt in Köln. | مادرم در کلن زندگی می‌کند. | d: Schwester, Tochter, Tante
 Meine [Mutter] kommt aus Isfahan. | مادرم اهل اصفهان است. | d: Schwester, Tochter, Tante
 Die [Mütter] sind in der Schule. | مادرها در مدرسه هستند. | d: Schwestern, Töchter, Tanten
 
@@ -571,14 +571,14 @@ Mein [Vater] heißt Reza. | اسم پدرم رضا است.
 Mein [Vater] arbeitet in Teheran. | پدرم در تهران کار می‌کند.
 Der [Vater] von Lena ist sehr groß. | پدر لنا خیلی قدبلند است.
 Wo ist dein [Vater]? | پدرت کجاست؟
-Ich fahre mit meinem [Vater] nach Hamburg. | من با پدرم به هامبورگ می‌روم.
+Mein [Vater] fährt heute nach Hamburg. | پدرم امروز به هامبورگ می‌رود.
 Mein [Vater] liest ein Buch. | پدرم کتاب می‌خواند.
 
 # Eltern
 Meine [Eltern] wohnen in Köln. | پدر و مادرم در کلن زندگی می‌کنند. | d: Großeltern, Geschwister, Kinder
 Wo wohnen deine [Eltern]? | پدر و مادرت کجا زندگی می‌کنند؟ | d: Großeltern, Geschwister, Kinder
 Die [Eltern] von Anna kommen aus dem Iran. | پدر و مادر آنا اهل ایران هستند. | d: Großeltern, Geschwister, Kinder
-Ich gehe heute zu meinen [Eltern]. | امروز پیش پدر و مادرم می‌روم. | d: Großeltern, Geschwistern, Kindern
+Meine{mein} [Eltern] kommen heute. | پدر و مادرم امروز می‌آیند. | d: Großeltern, Geschwister, Kinder
 Meine [Eltern] sprechen kein Deutsch. | پدر و مادرم آلمانی بلد نیستند. | d: Großeltern, Geschwister, Kinder
 Sind deine [Eltern] zu Hause? | پدر و مادرت خانه هستند؟ | d: Großeltern, Geschwister, Kinder
 
@@ -626,7 +626,7 @@ Das Kind [muss] jetzt essen. | بچه الان باید غذا بخورد.
 # dürfen
 Hier [darf] man nicht essen. | اینجا نباید غذا خورد.
 Du [darfst] heute nicht in die Stadt. | تو امروز اجازه نداری بروی شهر.
-Das Kind [darf] keinen Kaffee trinken. | بچه اجازه ندارد قهوه بخورد.
+Das Kind [darf] jetzt nach Hause gehen. | بچه الان اجازه دارد به خانه برود.
 Wir [dürfen] hier wohnen. | ما اجازه داریم اینجا زندگی کنیم.
 Ihr [dürft] jetzt gehen. | حالا اجازه دارید بروید.
 Herr Weber, [darf] ich das Buch lesen? | آقای وبر، اجازه هست این کتاب را بخوانم؟
@@ -636,8 +636,8 @@ Ich [kaufe] Brot. | من نان می‌خرم.
 Was [kaufst] du? | چه می‌خری؟
 Anna [kauft] ein neues Auto. | آنا یک ماشین نو می‌خرد.
 Ich möchte ein Buch [kaufen]. | من می‌خواهم یک کتاب بخرم. | d: verkaufen, lesen, schreiben
-Wir müssen heute Brot [kaufen]. | ما امروز باید نان بخریم. | d: verkaufen, essen, nehmen
-Herr Weber will ein Haus [kaufen]. | آقای وبر می‌خواهد یک خانه بخرد. | d: verkaufen, sehen, haben
+Wir [kaufen] heute Brot. | ما امروز نان می‌خریم.
+Herr Weber [kauft] ein Haus. | آقای وبر یک خانه می‌خرد.
 
 # brauchen
 Ich [brauche] ein Auto. | من یک ماشین لازم دارم.
@@ -666,14 +666,14 @@ Hier wohnen [wenige] Kinder. | اینجا بچه‌های کمی زندگی می
 Ich habe kein [Geld]. | من پول ندارم.
 Hast du [Geld]? | پول داری؟
 Wir brauchen [Geld]. | ما پول لازم داریم.
-Das [Geld] ist für dich. | این پول برای توست.
+Das [Geld] ist für Anna. | این پول برای آناست.
 Herr Weber hat viel [Geld]. | آقای وبر پول زیادی دارد.
 Ich habe wenig [Geld]. | من پول کمی دارم.
 
 # schön
 Die Stadt ist sehr [schön]. | شهر خیلی زیباست.
 Das ist ein [schönes] Haus. | این خانه‌ی قشنگی است.
-Anna hat einen [schönen] Namen. | آنا اسم قشنگی دارد.
+Anna ist ein [schöner] Name. | آنا اسم قشنگی است.
 Wien ist [schön]. | وین زیباست.
 Das Auto ist neu und [schön]. | ماشین نو و قشنگ است.
 
@@ -686,10 +686,10 @@ Das ist nicht [schlecht]! | بد نیست!
 
 # spielen
 Die Kinder [spielen] zu Hause. | بچه‌ها در خانه بازی می‌کنند.
-Ich [spiele] mit dem Kind. | من با بچه بازی می‌کنم.
+Ich [spiele] mit Anna. | من با آنا بازی می‌کنم.
 Was [spielst] du? | چه بازی می‌کنی؟
 Max [spielt] mit Paul. | ماکس با پاول بازی می‌کند.
-Das Kind will jetzt [spielen]. | بچه الان می‌خواهد بازی کند.
+Das Kind [spielt] jetzt. | بچه الان بازی می‌کند.
 
 # hören
 Ich [höre] Anna nicht. | صدای آنا را نمی‌شنوم.
@@ -703,7 +703,7 @@ Ich [sehe] das Haus. | من خانه را می‌بینم.
 Was [siehst] du? | چه می‌بینی؟
 Anna [sieht] das Auto nicht. | آنا ماشین را نمی‌بیند.
 Ihr [seht] das Haus dort? | شما آن خانه را آنجا می‌بینید؟
-Ich kann dich nicht [sehen]. | نمی‌توانم تو را ببینم.
+Ich [sehe] Anna nicht. | آنا را نمی‌بینم.
 Wir [sehen] uns morgen! | فردا همدیگر را می‌بینیم!
 
 # sagen
@@ -711,15 +711,15 @@ Was [sagst] du? | چه می‌گویی؟
 Ich [sage] das nicht. | من این را نمی‌گویم.
 Was [sagt] Herr Weber? | آقای وبر چه می‌گوید؟
 Wie [sagt] man das? | این را چطور می‌گویند؟
-Das kann ich nicht [sagen]. | این را نمی‌توانم بگویم.
+Das [sage] ich nicht. | این را نمی‌گویم.
 Wir [sagen] danke. | ما می‌گوییم ممنون.
 
 # fragen
 Ich [frage] Herrn Weber. | من از آقای وبر می‌پرسم.
 Das Kind [fragt]: „Wo ist mein Vater?“ | بچه می‌پرسد: «پدرم کجاست؟»
 Wir [fragen] Anna. | ما از آنا می‌پرسیم.
-Du musst Anna [fragen]. | باید از آنا بپرسی.
-Darf ich Sie [fragen], woher Sie kommen? | اجازه هست بپرسم اهل کجا هستید؟
+Ich [frage] Anna. | از آنا می‌پرسم.
+Herr Weber [fragt]: Woher kommen Sie? | آقای وبر می‌پرسد: اهل کجا هستید؟
 Frau Schmidt [fragt], wo das Buch ist. | خانم اشمیت می‌پرسد کتاب کجاست.
 
 # antworten
@@ -727,7 +727,7 @@ Ich [antworte] nicht. | من جواب نمی‌دهم.
 Anna [antwortet] sehr gut. | آنا خیلی خوب جواب می‌دهد.
 Du [antwortest] nicht? | جواب نمی‌دهی؟
 Das Kind [antwortet]: „Ja.“ | بچه جواب می‌دهد: «بله.»
-Kannst du bitte [antworten]? | می‌توانی لطفاً جواب بدهی؟
+Anna [antwortet] nicht. | آنا جواب نمی‌دهد.
 Wir [antworten] morgen. | ما فردا جواب می‌دهیم.
 
 # geben
@@ -746,11 +746,11 @@ Heute [gibt es] Brot und Tee. | امروز نان و چای داریم. | d: gib
 [Es gibt] hier kein Brot. | اینجا نان نیست. | d: Es gibst, Es geben, Es gebt
 
 # nehmen
-Ich [nehme] einen Kaffee. | من یک قهوه می‌گیرم.
+Ich [nehme] Tee. | من چای می‌گیرم.
 Was [nimmst] du? | تو چه می‌گیری؟
 Anna [nimmt] das Buch. | آنا کتاب را برمی‌دارد.
 Wir [nehmen] das Auto. | ما ماشین را می‌بریم.
-Du kannst das Geld [nehmen]. | می‌توانی پول را برداری.
+[Nimmst] du das Geld? | پول را برمی‌داری؟
 Was [nehmen] Sie? | شما چه می‌گیرید؟
 
 # kennen
