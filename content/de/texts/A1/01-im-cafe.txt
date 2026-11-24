@@ -1,0 +1,24 @@
+code: de-a1-t001
+title: Im Café
+kind: dialogue
+key_words: Kuchen
+sentences:
+A: Guten Tag! Was möchten Sie trinken? | سلام! چه می‌خواهید بنوشید؟
+B: Einen Kaffee mit Milch, bitte. | یک قهوه با شیر، لطفاً.
+A: Und möchten Sie auch etwas essen? | و چیزی هم می‌خواهید بخورید؟
+B: Ja, ich hätte gern einen Kuchen. Was kostet der Kuchen? | بله، یک کیک می‌خواهم. کیک چند است؟
+A: Der Kuchen kostet 3 Euro. | کیک سه یورو است. | tts: Der Kuchen kostet drei Euro.
+B: Gut, und ich bezahle mit Karte. | خوب است، و با کارت پرداخت می‌کنم.
+A: Kein Problem. Guten Appetit! | مشکلی نیست. نوش جان!
+reading A:
+{"type":"mcq","prompt":"مشتری چه می‌نوشد؟","options":["چای","قهوه بدون شیر","قهوه با شیر","آب"],"correct":2,"explanation_fa":"مشتری می‌گوید: «Einen Kaffee mit Milch»."}
+{"type":"tf","prompt":"مشتری با پول نقد پرداخت می‌کند.","correct":false,"explanation_fa":"مشتری می‌گوید: «ich bezahle mit Karte»، یعنی با کارت."}
+reading B:
+{"type":"find","prompt":"کدام جمله قیمت کیک را می‌گوید؟","correct_sentence":4,"explanation_fa":"در «Der Kuchen kostet 3 Euro.» قیمت آمده."}
+{"type":"tf","prompt":"مشتری چیزی هم برای خوردن می‌خواهد.","correct":true,"explanation_fa":"مشتری می‌گوید: «ich hätte gern einen Kuchen»."}
+listening A:
+{"type":"num","prompt":"کیک چند یورو است؟","answer":"3","accepted":["3","3 Euro","drei"],"explanation_fa":"فروشنده می‌گوید: «Der Kuchen kostet 3 Euro.»"}
+{"type":"mcq","prompt":"مشتری چطور پرداخت می‌کند؟","options":["با کارت","با پول نقد","پرداخت نمی‌کند","بعداً"],"correct":0,"explanation_fa":"مشتری می‌گوید: «ich bezahle mit Karte»."}
+listening B:
+{"type":"dict","sentence":1}
+{"type":"tf","prompt":"در آخر، گارسون می‌گوید «نوش جان».","correct":true,"explanation_fa":"گارسون می‌گوید: «Guten Appetit!»"}

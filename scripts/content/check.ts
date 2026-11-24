@@ -33,7 +33,7 @@ for (const language of languages.length ? languages : (["fr", "de"] as LanguageC
   }
   for (const row of packSummary(pack)) {
     if (row.words + row.units + row.sentences + row.tables === 0) continue;
-    console.log(`${row.level}: ${row.words} words, ${row.units} units (${row.grammarTargets} targets), ${row.sentences} sentences (${row.targets} word targets), ${row.tables} tables`);
+    console.log(`${row.level}: ${row.words} words, ${row.units} units (${row.grammarTargets} targets), ${row.sentences} sentences (${row.targets} word targets), ${row.tables} tables, ${row.texts} texts`);
   }
   show("Errors", pack.errors);
   if (args.includes("--warnings")) show("Warnings", pack.warnings);

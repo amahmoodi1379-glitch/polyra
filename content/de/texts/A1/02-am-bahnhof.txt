@@ -1,0 +1,24 @@
+code: de-a1-t002
+title: Am Bahnhof
+kind: announcement
+key_words: Gleis, umsteigen
+sentences:
+- Guten Tag am Bahnhof Köln! | روز بخیر در ایستگاه قطار کلن!
+- Der Zug nach Berlin fährt heute nicht von Gleis 5. | قطار برلین امروز از سکوی ۵ حرکت نمی‌کند. | tts: Der Zug nach Berlin fährt heute nicht von Gleis fünf.
+- Er fährt von Gleis 8 ab. | از سکوی ۸ حرکت می‌کند. | tts: Er fährt von Gleis acht ab.
+- Die Abfahrt ist um 10 Uhr 15. | ساعت حرکت ۱۰ و ۱۵ دقیقه است. | tts: Die Abfahrt ist um zehn Uhr fünfzehn.
+- Der Zug ist zehn Minuten später. | قطار ده دقیقه دیرتر است.
+- Bitte steigen Sie in Frankfurt um. | لطفاً در فرانکفورت قطار عوض کنید.
+- Gute Reise! | سفر خوبی داشته باشید!
+reading A:
+{"type":"mcq","prompt":"قطار برلین از کدام سکو حرکت می‌کند؟","options":["سکوی ۵","سکوی ۸","سکوی ۱۰","سکوی ۱۵"],"correct":1,"explanation_fa":"در اعلام آمده: «Er fährt von Gleis 8 ab.»"}
+{"type":"tf","prompt":"مسافرها باید در فرانکفورت قطار عوض کنند.","correct":true,"explanation_fa":"در اعلام آمده: «Bitte steigen Sie in Frankfurt um.»"}
+reading B:
+{"type":"tf","prompt":"قطار امروز به‌موقع است.","correct":false,"explanation_fa":"در اعلام آمده: «Der Zug ist zehn Minuten später.»"}
+{"type":"find","prompt":"کدام جمله ساعت حرکت را می‌گوید؟","correct_sentence":3,"explanation_fa":"در «Die Abfahrt ist um 10 Uhr 15.» ساعت آمده."}
+listening A:
+{"type":"num","prompt":"قطار از سکوی چند حرکت می‌کند؟","answer":"8","accepted":["8","acht"],"explanation_fa":"در اعلام آمده: «von Gleis 8»."}
+{"type":"mcq","prompt":"قطار به کجا می‌رود؟","options":["کلن","فرانکفورت","برلین","هامبورگ"],"correct":2,"explanation_fa":"در اعلام آمده: «Der Zug nach Berlin»."}
+listening B:
+{"type":"dict","sentence":5}
+{"type":"num","prompt":"قطار چند دقیقه دیر است؟","answer":"10","accepted":["10","zehn"],"explanation_fa":"در اعلام آمده: «zehn Minuten später»."}

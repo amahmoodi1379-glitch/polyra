@@ -1,0 +1,25 @@
+code: de-a1-t004
+title: Die Speisekarte
+kind: menu
+key_words: Speisekarte, Hähnchen
+sentences:
+- Restaurant Weber, Speisekarte | رستوران وبر، منو
+- Heute haben wir Fisch mit Reis und Salat. | امروز ماهی با برنج و سالاد داریم.
+- Fisch mit Reis kostet 12 Euro. | ماهی با برنج ۱۲ یورو است. | tts: Fisch mit Reis kostet zwölf Euro.
+- Hähnchen mit Kartoffeln kostet 10 Euro. | مرغ با سیب‌زمینی ۱۰ یورو است. | tts: Hähnchen mit Kartoffeln kostet zehn Euro.
+- Für Kinder gibt es Nudeln mit Käse. | برای بچه‌ها ماکارونی با پنیر هست.
+- Wir haben Wasser, Saft, Cola und Tee. | آب، آبمیوه، کولا و چای داریم.
+- Kaffee und Kuchen gibt es nur am Nachmittag. | قهوه و کیک فقط بعدازظهر هست.
+- Am Montag ist das Restaurant geschlossen. | دوشنبه رستوران بسته است.
+reading A:
+{"type":"mcq","prompt":"مرغ با سیب‌زمینی چند است؟","options":["۸ یورو","۱۰ یورو","۱۲ یورو","۱۵ یورو"],"correct":1,"explanation_fa":"در منو آمده: «Hähnchen mit Kartoffeln kostet 10 Euro.»"}
+{"type":"tf","prompt":"رستوران دوشنبه باز است.","correct":false,"explanation_fa":"در منو آمده: «Am Montag ist das Restaurant geschlossen.»"}
+reading B:
+{"type":"match","prompt":"هر غذا را به قیمتش وصل کن.","left":["ماهی با برنج","مرغ با سیب‌زمینی"],"right":["۱۲ یورو","۱۰ یورو","۴ یورو"],"pairs":[[0,0],[1,1]],"explanation_fa":"ماهی ۱۲ یورو و مرغ ۱۰ یورو است."}
+{"type":"find","prompt":"کدام جمله می‌گوید برای بچه‌ها چه غذایی هست؟","correct_sentence":4,"explanation_fa":"در «Für Kinder gibt es Nudeln mit Käse.» غذای بچه‌ها آمده."}
+listening A:
+{"type":"num","prompt":"ماهی با برنج چند یورو است؟","answer":"12","accepted":["12","12 Euro","zwölf"],"explanation_fa":"در منو آمده: «Fisch mit Reis kostet 12 Euro.»"}
+{"type":"tf","prompt":"قهوه و کیک فقط بعدازظهر هست.","correct":true,"explanation_fa":"در منو آمده: «Kaffee und Kuchen gibt es nur am Nachmittag.»"}
+listening B:
+{"type":"mcq","prompt":"امروز ماهی با چه چیزی است؟","options":["با نان","با سیب‌زمینی","با برنج و سالاد","با ماکارونی"],"correct":2,"explanation_fa":"در منو آمده: «Fisch mit Reis und Salat»."}
+{"type":"dict","sentence":5}

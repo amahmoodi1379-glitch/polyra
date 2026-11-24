@@ -1,0 +1,24 @@
+code: de-a1-t005
+title: Fahrrad zu verkaufen
+kind: ad
+key_words: verkaufen, Preis
+sentences:
+- Ich verkaufe mein Fahrrad. | دوچرخه‌ام را می‌فروشم.
+- Das Fahrrad ist blau und drei Jahre alt. | دوچرخه آبی است و سه سال دارد.
+- Es ist nicht neu, aber sehr gut. | نو نیست، اما خیلی خوب است.
+- Der Preis ist 80 Euro. | قیمتش ۸۰ یورو است. | tts: Der Preis ist achtzig Euro.
+- Sie können das Fahrrad am Samstag sehen. | شنبه می‌توانید دوچرخه را ببینید.
+- Meine Telefonnummer ist 0176 5523. | شماره تلفنم ۰۱۷۶ ۵۵۲۳ است. | tts: Meine Telefonnummer ist null eins sieben sechs, fünf fünf zwei drei.
+- Rufen Sie bitte am Abend an. | لطفاً عصر زنگ بزنید.
+reading A:
+{"type":"mcq","prompt":"دوچرخه چه رنگی است؟","options":["قرمز","سیاه","سبز","آبی"],"correct":3,"explanation_fa":"در آگهی آمده: «Das Fahrrad ist blau»."}
+{"type":"tf","prompt":"دوچرخه نو است.","correct":false,"explanation_fa":"در آگهی آمده: «Es ist nicht neu»."}
+reading B:
+{"type":"find","prompt":"کدام جمله قیمت را می‌گوید؟","correct_sentence":3,"explanation_fa":"در «Der Preis ist 80 Euro.» قیمت آمده."}
+{"type":"tf","prompt":"بهتر است عصر زنگ بزنید.","correct":true,"explanation_fa":"در آگهی آمده: «Rufen Sie bitte am Abend an.»"}
+listening A:
+{"type":"num","prompt":"دوچرخه چند یورو است؟","answer":"80","accepted":["80","80 Euro","achtzig"],"explanation_fa":"در آگهی آمده: «Der Preis ist 80 Euro.»"}
+{"type":"mcq","prompt":"کی می‌شود دوچرخه را دید؟","options":["دوشنبه","شنبه","یکشنبه","جمعه"],"correct":1,"explanation_fa":"در آگهی آمده: «am Samstag sehen»."}
+listening B:
+{"type":"dict","sentence":0}
+{"type":"mcq","prompt":"دوچرخه چند سال دارد؟","options":["یک سال","دو سال","سه سال","هشت سال"],"correct":2,"explanation_fa":"در آگهی آمده: «drei Jahre alt»."}

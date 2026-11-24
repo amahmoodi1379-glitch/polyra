@@ -1,0 +1,24 @@
+code: de-a1-t010
+title: Deutsch in Leipzig
+kind: ad
+key_words: Kurs, Zentrum
+sentences:
+- Lernen Sie Deutsch in Leipzig! | در لایپزیگ آلمانی یاد بگیرید!
+- Unser Kurs beginnt im Oktober. | کلاس ما در اکتبر شروع می‌شود.
+- Die Klasse lernt von Montag bis Freitag am Vormittag. | کلاس از دوشنبه تا جمعه صبح‌ها درس می‌خواند.
+- Ein Kurs dauert vier Wochen. | هر دوره چهار هفته طول می‌کشد.
+- Der Preis ist 200 Euro. | قیمتش ۲۰۰ یورو است. | tts: Der Preis ist zweihundert Euro.
+- Die Schule ist im Zentrum, neben dem Bahnhof. | مدرسه در مرکز شهر است، کنار ایستگاه قطار.
+- Schreiben Sie uns eine E-Mail! | به ما ایمیل بزنید!
+reading A:
+{"type":"mcq","prompt":"کلاس کی شروع می‌شود؟","options":["در سپتامبر","در اکتبر","در نوامبر","در ژانویه"],"correct":1,"explanation_fa":"در آگهی آمده: «Unser Kurs beginnt im Oktober.»"}
+{"type":"tf","prompt":"کلاس عصرها است.","correct":false,"explanation_fa":"در آگهی آمده: «am Vormittag»، یعنی صبح."}
+reading B:
+{"type":"match","prompt":"هر چیز را به جوابش وصل کن.","left":["طول دوره","قیمت"],"right":["چهار هفته","۲۰۰ یورو","دو ماه"],"pairs":[[0,0],[1,1]],"explanation_fa":"دوره چهار هفته است و قیمتش ۲۰۰ یورو."}
+{"type":"tf","prompt":"مدرسه کنار ایستگاه قطار است.","correct":true,"explanation_fa":"در آگهی آمده: «neben dem Bahnhof»."}
+listening A:
+{"type":"num","prompt":"دوره چند یورو است؟","answer":"200","accepted":["200","200 Euro","zweihundert"],"explanation_fa":"در آگهی آمده: «Der Preis ist 200 Euro.»"}
+{"type":"mcq","prompt":"کلاس چه روزهایی است؟","options":["فقط شنبه","دوشنبه تا جمعه","هر روز","شنبه و یکشنبه"],"correct":1,"explanation_fa":"در آگهی آمده: «von Montag bis Freitag»."}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"mcq","prompt":"مدرسه کجاست؟","options":["کنار فرودگاه","در یک روستا","در مرکز شهر","کنار پارک"],"correct":2,"explanation_fa":"در آگهی آمده: «im Zentrum»."}

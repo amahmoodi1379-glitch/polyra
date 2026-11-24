@@ -1,0 +1,25 @@
+code: de-a1-t003
+title: Eine Party am Samstag
+kind: voice_message
+key_words: Party
+sentences:
+- Hallo Max, hier ist Anna. | سلام ماکس، آنا هستم.
+- Ich habe am Samstag Geburtstag. | شنبه تولدم است.
+- Ich mache eine Party bei mir zu Hause. | در خانه‌ام یک مهمانی می‌گیرم.
+- Die Party beginnt um 19 Uhr. | مهمانی ساعت ۱۹ شروع می‌شود. | tts: Die Party beginnt um neunzehn Uhr.
+- Kannst du Saft kaufen? | می‌توانی آبمیوه بخری؟
+- Lena und Tim kommen auch. | لنا و تیم هم می‌آیند.
+- Bitte schreib mir bis Freitag. | لطفاً تا جمعه به من پیام بده.
+- Tschüss, bis bald! | خداحافظ، تا بعد!
+reading A:
+{"type":"mcq","prompt":"مهمانی کجاست؟","options":["در کافه","در خانه آنا","در خانه ماکس","در پارک"],"correct":1,"explanation_fa":"آنا می‌گوید: «bei mir zu Hause»، یعنی در خانه خودش."}
+{"type":"tf","prompt":"آنا از ماکس می‌خواهد آبمیوه بخرد.","correct":true,"explanation_fa":"آنا می‌پرسد: «Kannst du Saft kaufen?»"}
+reading B:
+{"type":"tf","prompt":"آنا یکشنبه تولد دارد.","correct":false,"explanation_fa":"آنا می‌گوید: «Ich habe am Samstag Geburtstag.»، یعنی شنبه."}
+{"type":"match","prompt":"هر چیز را به روزش وصل کن.","left":["تولد آنا","آخرین روز برای جواب دادن"],"right":["شنبه","جمعه","یکشنبه"],"pairs":[[0,0],[1,1]],"explanation_fa":"تولد شنبه است و ماکس باید تا جمعه پیام بدهد."}
+listening A:
+{"type":"num","prompt":"مهمانی ساعت چند شروع می‌شود؟","answer":"19","accepted":["19","19 Uhr","neunzehn"],"explanation_fa":"آنا می‌گوید: «Die Party beginnt um 19 Uhr.»"}
+{"type":"mcq","prompt":"چه کسانی هم به مهمانی می‌آیند؟","options":["لنا و تیم","پل و میا","مادر و پدر آنا","هیچ‌کس"],"correct":0,"explanation_fa":"آنا می‌گوید: «Lena und Tim kommen auch.»"}
+listening B:
+{"type":"dict","sentence":1}
+{"type":"tf","prompt":"ماکس باید تا جمعه به آنا پیام بدهد.","correct":true,"explanation_fa":"آنا می‌گوید: «Bitte schreib mir bis Freitag.»"}
