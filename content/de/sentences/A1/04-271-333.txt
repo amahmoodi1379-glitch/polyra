@@ -43,7 +43,7 @@ Ich [warte] zehn Minuten. | ده دقیقه صبر می‌کنم.
 Wir [warten] schon eine Stunde. | یک ساعت است که منتظریم. | d: warte, wartest, wartet
 Bitte [warten] Sie einen Moment. | لطفاً یک لحظه صبر کنید. | d: warte, wartest, wartet
 Anna [wartet] zu Hause. | آنا در خانه منتظر است.
-Ich kann nicht mehr [warten]. | دیگر نمی‌توانم صبر کنم. | d: warte, wartest, wartet
+Ich [warte] hier. | من این‌جا منتظر می‌مانم.
 Warum [wartest] du hier? | چرا اینجا منتظری؟
 
 # bleiben
@@ -99,7 +99,7 @@ Wir machen das [Frühstück]. | ما صبحانه را آماده می‌کنی�
 Das [Mittagessen] ist um zwölf Uhr. | ناهار ساعت دوازده است.
 Was gibt es zum [Mittagessen]? | برای ناهار چه داریم؟
 Nach dem [Mittagessen] machen wir Pause. | بعد از ناهار استراحت می‌کنیم.
-Das [Mittagessen] ist heute bei meiner Großmutter. | ناهار امروز خانه مادربزرگم است.
+Das [Mittagessen] ist heute bei Anna. | ناهار امروز خانه آناست.
 Wir haben keine Zeit für das [Mittagessen]. | برای ناهار وقت نداریم.
 
 # Abendessen
@@ -121,7 +121,7 @@ Möchtest du mit uns [zu Abend essen]? | می‌خواهی با ما شام بخ
 Wir müssen heute früh [zu Abend essen]. | امروز باید زود شام بخوریم. | d: zu Abend isst, zu Abend esse, zu Abend trinken
 Ich weiß nicht, wann wir heute [zu Abend essen]. | نمی‌دانم امروز کی شام می‌خوریم. | d: zu Abend esse, zu Abend isst, zu Abend esst
 Die Familie [isst zu Abend] zusammen. | خانواده با هم شام می‌خورد.
-Ich [esse zu Abend] mit meiner Familie. | با خانواده‌ام شام می‌خورم.
+Ich [esse zu Abend] mit Anna. | با آنا شام می‌خورم.
 
 # kochen
 Ich [koche] gern. | من آشپزی را دوست دارم.
@@ -132,7 +132,7 @@ Kannst du [kochen]? | آشپزی بلدی؟ | d: koche, kochst, kocht
 Am Sonntag [kocht] mein Vater. | یکشنبه پدرم آشپزی می‌کند.
 
 # Kaffee kochen
-Ich [koche Kaffee] für dich. | برایت قهوه درست می‌کنم.
+Ich [koche Kaffee] für Anna. | برای آنا قهوه درست می‌کنم.
 Anna [kocht Kaffee] für alle. | آنا برای همه قهوه درست می‌کند.
 Kann ich [Kaffee kochen]? | می‌توانم قهوه درست کنم؟ | d: Kaffee kocht, Kaffee koche, Kaffee kochst
 Mein Mann [kocht Kaffee] und ich mache das Frühstück. | شوهرم قهوه درست می‌کند و من صبحانه را آماده می‌کنم.
@@ -142,7 +142,7 @@ Ich muss jetzt [Kaffee kochen]. | الان باید قهوه درست کنم. | 
 Das Brot [schmeckt] gut. | نان خوشمزه است.
 Der Kaffee [schmeckt] sehr gut. | قهوه خیلی خوشمزه است.
 Wie [schmeckt] der Tee? | مزه چای چطور است؟
-Das Essen [schmeckt] mir nicht. | غذا به دهانم مزه نمی‌دهد.
+Das Essen [schmeckt] gut. | غذا خوشمزه است.
 Das Mittagessen [schmeckt] den Kindern. | ناهار به بچه‌ها مزه می‌دهد.
 
 # lecker
@@ -244,10 +244,10 @@ Ich koche [Reis] für alle. | برای همه برنج می‌پزم.
 Möchtest du noch [Reis]? | باز هم برنج می‌خواهی؟
 
 # Salat
-Ich esse einen [Salat]. | یک سالاد می‌خورم.
+Der [Salat] ist sehr gut. | سالاد خیلی خوب است.
 Der [Salat] schmeckt gut. | سالاد خوشمزه است.
 Möchtest du [Salat] mit Fisch? | سالاد با ماهی می‌خواهی؟
-Ich mache einen [Salat]. | یک سالاد درست می‌کنم.
+Ich mache [Salat]. | من سالاد درست می‌کنم.
 Zum Abendessen gibt es [Salat]. | برای شام سالاد داریم.
 
 # Suppe
@@ -286,7 +286,7 @@ Meine Tochter isst kein [Gemüse]. | دخترم سبزیجات نمی‌خورد
 Ich koche [Gemüse] mit Reis. | سبزیجات را با برنج می‌پزم.
 
 # Apfel
-Ich esse einen [Apfel]. | یک سیب می‌خورم.
+Der [Apfel] ist für Anna. | این سیب برای آناست.
 Der [Apfel] ist sehr lecker. | سیب خیلی خوشمزه است.
 Möchtest du einen [Apfel]? | یک سیب می‌خواهی؟
 Wir kaufen fünf [Äpfel]. | پنج سیب می‌خریم.
@@ -309,7 +309,7 @@ Das Kind isst gern [Orangen]. | بچه پرتقال دوست دارد.
 # Tomate
 Ich kaufe vier [Tomaten]. | چهار گوجه‌فرنگی می‌خرم.
 Die [Tomaten] sind sehr gut. | گوجه‌فرنگی‌ها خیلی خوب‌اند.
-Ich mache einen Salat mit [Tomaten]. | یک سالاد با گوجه‌فرنگی درست می‌کنم.
+Ich mache Salat mit [Tomaten]. | با گوجه‌فرنگی سالاد درست می‌کنم.
 Brauchst du eine [Tomate]? | یک گوجه‌فرنگی لازم داری؟
 Die [Tomate] ist klein. | گوجه‌فرنگی کوچک است.
 
@@ -324,13 +324,13 @@ Die Kinder mögen [Kartoffeln] sehr. | بچه‌ها سیب‌زمینی را خ
 Der [Kuchen] ist sehr lecker. | کیک خیلی خوشمزه است.
 Möchtest du [Kuchen]? | کیک می‌خواهی؟
 Zum Geburtstag gibt es [Kuchen]. | برای تولد کیک داریم.
-Meine Großmutter macht einen [Kuchen]. | مادربزرگم یک کیک درست می‌کند.
+Meine{mein} Großmutter macht [Kuchen]. | مادربزرگم کیک درست می‌کند.
 Wir essen [Kuchen] und trinken Kaffee. | کیک می‌خوریم و قهوه می‌نوشیم.
 
 # Schokolade
 Ich esse gern [Schokolade]. | شکلات دوست دارم.
 Die Kinder mögen [Schokolade]. | بچه‌ها شکلات دوست دارند.
-Die [Schokolade] ist für dich. | این شکلات برای توست.
+Die [Schokolade] ist für Anna. | این شکلات برای آناست.
 Ich kaufe eine [Schokolade]. | یک شکلات می‌خرم.
 Möchtest du [Schokolade]? | شکلات می‌خواهی؟
 
@@ -339,18 +339,18 @@ Die Kinder essen gern [Eis]. | بچه‌ها بستنی دوست دارند.
 Im Sommer essen wir viel [Eis]. | در تابستان زیاد بستنی می‌خوریم.
 Möchtest du ein [Eis]? | یک بستنی می‌خواهی؟
 Das [Eis] ist sehr lecker. | بستنی خیلی خوشمزه است.
-Ich kaufe ein [Eis] für dich. | برایت یک بستنی می‌خرم.
+Ich kaufe ein [Eis] für Anna. | برای آنا یک بستنی می‌خرم.
 
 # Zucker
 Ich trinke Tee mit [Zucker]. | چای را با شکر می‌نوشم.
 Möchtest du [Zucker]? | شکر می‌خواهی؟
 Ich trinke Kaffee nie mit [Zucker]. | قهوه را هیچ‌وقت با شکر نمی‌نوشم.
-Wir haben keinen [Zucker] mehr. | دیگر شکر نداریم.
+Wo ist der [Zucker]? | شکر کجاست؟
 Der Kuchen braucht viel [Zucker]. | کیک شکر زیادی لازم دارد.
 
 # Salz
 Die Suppe braucht mehr [Salz]. | سوپ نمک بیشتری لازم دارد.
-Gibst du mir bitte das [Salz]? | لطفاً نمک را به من می‌دهی؟
+Wo ist das [Salz]? | نمک کجاست؟
 Hier ist zu viel [Salz]. | اینجا نمک خیلی زیاد است.
 Wir haben kein [Salz] mehr. | دیگر نمک نداریم.
 Ich esse wenig [Salz]. | من کم نمک می‌خورم.
@@ -363,7 +363,7 @@ Wir haben keine [Milch] mehr. | دیگر شیر نداریم.
 Die [Milch] ist für die Kinder. | شیر برای بچه‌هاست.
 
 # Saft
-Ich trinke einen [Saft]. | یک آبمیوه می‌نوشم.
+Ich trinke [Saft]. | من آبمیوه می‌نوشم.
 Möchtest du [Saft] oder Wasser? | آبمیوه می‌خواهی یا آب؟
 Die Kinder trinken gern [Saft]. | بچه‌ها آبمیوه دوست دارند.
 Der [Saft] ist sehr lecker. | آبمیوه خیلی خوشمزه است.
@@ -388,7 +388,7 @@ Ein [Glas] Wasser, bitte. | یک لیوان آب، لطفاً.
 Ich trinke ein [Glas] Milch. | یک لیوان شیر می‌نوشم.
 Wir brauchen sechs [Gläser]. | شش لیوان لازم داریم.
 Möchtest du ein [Glas] Saft? | یک لیوان آبمیوه می‌خواهی؟
-Gib mir bitte das [Glas]. | لطفاً لیوان را به من بده.
+Wo ist mein [Glas]? | لیوانم کجاست؟
 
 # Tasse
 Eine [Tasse] Kaffee, bitte. | یک فنجان قهوه، لطفاً.
@@ -406,10 +406,10 @@ Wo ist die [Flasche]? | بطری کجاست؟
 
 # Teller
 Der [Teller] ist sehr groß. | بشقاب خیلی بزرگ است.
-Ich brauche einen [Teller]. | یک بشقاب لازم دارم.
+Der [Teller] ist klein. | بشقاب کوچک است.
 Wir haben nur vier [Teller]. | فقط چهار بشقاب داریم.
 Der [Teller] ist für die Suppe. | این بشقاب برای سوپ است.
-Gib mir bitte einen [Teller]. | لطفاً یک بشقاب به من بده.
+Hier ist ein [Teller] für Anna. | این یک بشقاب برای آناست.
 
 # Restaurant
 Wir essen heute im [Restaurant]. | امروز در رستوران غذا می‌خوریم.
@@ -429,7 +429,7 @@ Kann ich die [Speisekarte] haben? | می‌توانم منو را داشته ب�
 Ich [bestelle] eine Pizza. | یک پیتزا سفارش می‌دهم.
 Was [bestellst] du? | چه سفارش می‌دهی؟
 Wir möchten [bestellen]. | می‌خواهیم سفارش بدهیم. | d: bestelle, bestellst, bestellt
-Anna [bestellt] einen Salat. | آنا یک سالاد سفارش می‌دهد.
+Anna [bestellt] Salat. | آنا سالاد سفارش می‌دهد.
 Ich möchte einen Kaffee [bestellen]. | می‌خواهم یک قهوه سفارش بدهم. | d: bestelle, bestellst, bestellt
 
 # Café

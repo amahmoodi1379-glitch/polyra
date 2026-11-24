@@ -63,7 +63,7 @@ Ich brauche noch zehn [Minuten]. | ده دقیقه دیگر لازم دارم.
 Es ist [Viertel] nach drei. | ساعت سه و ربع است.
 Ich komme um [Viertel] nach zehn. | ساعت ده و ربع می‌آیم.
 Wir essen um [Viertel] nach zwölf. | ساعت دوازده و ربع غذا می‌خوریم.
-Ein [Viertel] von dem Brot ist für dich. | یک چهارم نان مال توست.
+Es ist [Viertel] nach zwei. | ساعت دو و ربع است.
 Ein [Viertel] der Kinder spricht Persisch. | یک چهارم بچه‌ها فارسی حرف می‌زنند.
 
 # Wie spät ist es?
@@ -84,7 +84,7 @@ In zwei [Wochen] bin ich in Teheran. | دو هفته دیگر در تهرانم.
 # Monat
 Das Jahr hat zwölf [Monate]. | سال دوازده ماه دارد.
 Ich wohne schon drei [Monate] hier. | سه ماه است که اینجا زندگی می‌کنم.
-Jeden [Monat] fahren wir zu meiner Großmutter. | هر ماه پیش مادربزرگم می‌رویم.
+Jeden [Monat] fahren wir nach Wien. | هر ماه به وین می‌رویم.
 In einem [Monat] bin ich in Berlin. | یک ماه دیگر در برلینم.
 Welcher [Monat] ist jetzt? | الان چه ماهی است؟
 
@@ -213,7 +213,7 @@ Es ist noch [früh]. | هنوز زود است.
 Anna kommt immer [früh] nach Hause. | آنا همیشه زود به خانه می‌آید.
 Ich arbeite am [frühen] Morgen. | صبح زود کار می‌کنم.
 Ich gehe [früh] zur Arbeit. | زود سر کار می‌روم.
-Morgen muss ich [früh] in der Schule sein. | فردا باید زود در مدرسه باشم.
+Morgen bin ich [früh] in der Schule. | فردا زود در مدرسه هستم.
 
 # spät
 Es ist schon [spät]. | دیگر دیر است.
@@ -244,7 +244,7 @@ Wir essen am [Mittwoch] bei Anna. | چهارشنبه خانه آنا غذا می
 Am [Mittwoch] bin ich nicht zu Hause. | چهارشنبه خانه نیستم.
 
 # Donnerstag
-Am [Donnerstag] fahren wir zu meiner Großmutter. | پنجشنبه پیش مادربزرگم می‌رویم.
+Am [Donnerstag] fahren wir nach Hamburg. | پنجشنبه به هامبورگ می‌رویم.
 Morgen ist schon [Donnerstag]. | فردا دیگر پنجشنبه است.
 Ich arbeite von Montag bis [Donnerstag]. | از دوشنبه تا پنجشنبه کار می‌کنم.
 Am [Donnerstag] kommt mein Bruder. | پنجشنبه برادرم می‌آید.
@@ -258,7 +258,7 @@ Kommst du am [Freitag]? | جمعه می‌آیی؟
 Tschüss, bis [Freitag]! | خداحافظ، تا جمعه!
 
 # Samstag
-Am [Samstag] spiele ich mit meinem Sohn. | شنبه با پسرم بازی می‌کنم.
+Am [Samstag] spiele ich mit Max. | شنبه با ماکس بازی می‌کنم.
 Morgen ist [Samstag]. | فردا شنبه است.
 Am [Samstag] fahren wir nach Wien. | شنبه به وین می‌رویم.
 Am [Samstag] arbeitet mein Mann. | شنبه شوهرم کار می‌کند.
@@ -316,7 +316,7 @@ Nach dem Mai kommt der [Juni]. | بعد از ماه مه، ژوئن می‌آی�
 # Juli
 Im [Juli] haben die Kinder keine Schule. | در ژوئیه بچه‌ها مدرسه ندارند.
 Der [Juli] hat 31 Tage. | ژوئیه ۳۱ روز دارد.
-Im [Juli] fahren wir zu meinem Onkel. | در ژوئیه پیش عمویم می‌رویم.
+Im [Juli] fahren wir nach Wien. | در ژوئیه به وین می‌رویم.
 Wir kommen im [Juli] wieder. | در ژوئیه دوباره می‌آییم.
 Nach dem Juni kommt der [Juli]. | بعد از ژوئن، ژوئیه می‌آید.
 
@@ -412,11 +412,11 @@ Weißt du, wer [Geburtstag hat]? | می‌دانی تولد کیست؟
 Ich [habe Geburtstag] und bin jetzt zwanzig. | تولدم است و حالا بیست ساله‌ام.
 
 # Geschenk
-Das [Geschenk] ist für dich. | این هدیه برای توست.
+Das [Geschenk] ist für Anna. | این هدیه برای آناست.
 Ich habe ein [Geschenk] für Anna. | یک هدیه برای آنا دارم.
 Was für ein schönes [Geschenk]! | چه هدیه قشنگی!
 Ich suche ein [Geschenk] für meine Mutter. | دنبال یک هدیه برای مادرم می‌گردم.
-Zum Geburtstag kaufe ich ihm ein [Geschenk]. | برای تولدش برایش یک هدیه می‌خرم.
+Zum Geburtstag kaufe ich Max ein [Geschenk]. | برای تولد ماکس یک هدیه می‌خرم.
 
 # herzlichen Glückwunsch
 [Herzlichen Glückwunsch], Anna! | تبریک می‌گویم، آنا! | d: Gute Nacht, Auf Wiedersehen, Entschuldigung
@@ -426,11 +426,11 @@ Oh, [herzlichen Glückwunsch]! | وای، تبریک می‌گویم! | d: gute 
 [Herzlichen Glückwunsch] zum Baby! | تولد بچه‌تان مبارک! | d: Gute Nacht, Auf Wiedersehen, Entschuldigung
 
 # Termin
-Ich habe heute einen [Termin]. | امروز یک قرار دارم.
+Der [Termin] ist am Montag. | قرار دوشنبه است.
 Der [Termin] ist am Montag um zehn Uhr. | قرار دوشنبه ساعت ده است.
 Wann ist der [Termin]? | قرار کی است؟
-Ich brauche einen [Termin]. | یک وقت (قرار) لازم دارم.
-Am Freitag habe ich keinen [Termin]. | جمعه هیچ قراری ندارم.
+Ich habe heute keine Zeit, der [Termin] ist morgen. | امروز وقت ندارم، قرار فرداست.
+Der [Termin] ist am Freitag um acht. | قرار جمعه ساعت هشت است.
 
 # einen Termin haben
 Ich [habe einen Termin] um zehn Uhr. | ساعت ده قرار دارم.
@@ -463,7 +463,7 @@ Ich weiß nicht, wann wir [Pause machen]. | نمی‌دانم کی استراح�
 # Moment
 Einen [Moment], bitte! | یک لحظه، لطفاً!
 Im [Moment] habe ich keine Zeit. | فعلاً وقت ندارم.
-Im [Moment] wohne ich bei meinem Bruder. | فعلاً پیش برادرم زندگی می‌کنم.
+Im [Moment] wohne ich in Köln. | فعلاً در کلن زندگی می‌کنم.
 Einen [Moment], ich komme gleich. | یک لحظه، الان می‌آیم.
 Das war ein schöner [Moment]. | لحظه قشنگی بود.
 
@@ -493,4 +493,4 @@ Das Baby [schläft] jetzt. | بچه الان خواب است.
 Ich [schlafe] in der Nacht acht Stunden. | شب‌ها هشت ساعت می‌خوابم.
 Wo [schläfst] du heute? | امشب کجا می‌خوابی؟
 Die Kinder [schlafen] schon. | بچه‌ها دیگر خوابیده‌اند. | d: sagen, nehmen, finden
-Ich kann nicht [schlafen]. | نمی‌توانم بخوابم. | d: nehmen, geben, finden
+Ich [schlafe] nicht gut. | خوب نمی‌خوابم.

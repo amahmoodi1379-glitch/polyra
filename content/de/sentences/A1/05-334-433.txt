@@ -16,15 +16,15 @@ Die Pizza ist da. [Guten Appetit], Lena! | پیتزا رسید. نوش جان، 
 # Euro
 Das macht 8 [Euro], bitte. | می‌شود هشت یورو، لطفاً. | d: Cent, Kilo, Liter
 Ich habe nur 10 [Euro]. | من فقط ده یورو دارم. | d: Cent, Kilo, Liter
-Hast du 2 [Euro] für mich? | دو یورو برای من داری؟ | d: Cent, Kilo, Liter
+Hier sind 2 [Euro]. | این دو یورو.
 Das Geld in Deutschland ist der [Euro]. | پول آلمان یوروست.
 Ein Kaffee für 6 [Euro]? Das ist viel! | یک قهوه شش یورو؟ زیاد است! | d: Cent, Kilo, Liter
-Mein Vater gibt mir 20 [Euro]. | پدرم به من بیست یورو می‌دهد. | d: Cent, Kilo, Liter
+Mein Vater gibt Anna 20 [Euro]. | پدرم به آنا بیست یورو می‌دهد.
 # Cent
 Das macht 2 Euro und 50 [Cent]. | می‌شود دو یورو و پنجاه سنت. | d: Kilo, Gramm, Liter
 Ich habe noch 20 [Cent]. | هنوز بیست سنت دارم. | d: Euro, Kilo, Gramm
 Ein Euro hat hundert [Cent]. | هر یورو صد سنت است. | d: Kilo, Gramm, Liter
-Gibst du mir 50 [Cent]? | پنجاه سنت به من می‌دهی؟ | d: Euro, Kilo, Liter
+Hast du 50 [Cent]? | پنجاه سنت داری؟
 Hier sind 80 [Cent] für das Brötchen. | این هشتاد سنت برای نان. | d: Euro, Kilo, Gramm
 # kosten
 Das Brot [kostet] 2 Euro. | نان دو یورو است.
@@ -44,7 +44,7 @@ Der [Preis] ist gut. | قیمتش خوب است.
 Ich kenne den [Preis] nicht. | قیمت را نمی‌دانم.
 Die [Preise] sind heute gut. | قیمت‌ها امروز خوب است.
 Der [Preis] für ein Brötchen ist 50 Cent. | قیمت یک نان کوچک پنجاه سنت است.
-Wo ist der [Preis]? Ich sehe ihn nicht. | قیمت کجاست؟ نمی‌بینمش.
+Wo ist der [Preis]? | قیمت کجاست؟
 Wir fragen nach dem [Preis]. | ما قیمت را می‌پرسیم.
 # billig
 Das Brot ist hier [billig]. | نان این‌جا ارزان است.
@@ -86,7 +86,7 @@ Bitte bezahlen Sie an der [Kasse]. | لطفاً دم صندوق پول بدهی�
 An der [Kasse] warten viele Leute. | دم صندوق آدم‌های زیادی منتظرند.
 Meine Schwester arbeitet an der [Kasse]. | خواهرم پشت صندوق کار می‌کند.
 Die [Kasse] ist jetzt frei. | صندوق الان خالی است.
-Ich gehe mit dem Brot zur [Kasse]. | با نان به طرف صندوق می‌روم.
+Ich gehe zur [Kasse]. | به طرف صندوق می‌روم.
 # Geschäft
 Das [Geschäft] ist neu. | این مغازه نو است. | d: Restaurant, Café, Kino
 Meine Mutter hat ein kleines [Geschäft]. | مادرم یک مغازه کوچک دارد. | d: Restaurant, Café, Kino
