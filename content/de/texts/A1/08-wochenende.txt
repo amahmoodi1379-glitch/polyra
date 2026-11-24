@@ -22,4 +22,4 @@ listening A:
 {"type":"mcq","prompt":"چرا شنا نمی‌روند؟","options":["B کار دارد","استخر بسته است","هوا خوب نیست","پول ندارند"],"correct":2,"explanation_fa":"B می‌گوید: «Das Wetter ist am Sonntag nicht gut.»"}
 listening B:
 {"type":"dict","sentence":0}
-{"type":"tf","prompt":"B یکشنبه آزاد است.","correct":true,"explanation_fa":"B می‌گوید: «am Sonntag habe ich frei»."}
+{"type":"tf","prompt":"A اول سینما را پیشنهاد می‌دهد.","correct":false,"explanation_fa":"A اول شنا را پیشنهاد می‌دهد («Wollen wir am Sonntag schwimmen gehen?») و B سینما را («Gehen wir ins Kino?»)."}

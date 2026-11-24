@@ -1,6 +1,6 @@
 code: fr-a1-passe-compose-avoir
 title: گذشته با avoir: j'ai parlé
-scope: ساخت passé composé با avoir برای فعل‌های -er (j'ai parlé)، در جملهٔ مثبت، منفی (je n'ai pas mangé) و سؤالی، با hier، ce matin و le week-end dernier؛ اسم مفعول‌های بی‌قاعده و -ir در واحد بعد و فعل‌هایی که با être می‌آیند در واحد آخر.
+scope: ساخت passé composé با avoir برای فعل‌های -er (j'ai parlé)، در جملهٔ مثبت، منفی (je n'ai pas mangé) و سؤالی، با hier، ce matin و le week-end dernier؛ اسم مفعول‌های بی‌قاعده و -ir در واحد بعد و فعل‌هایی که با être می‌آیند دو واحد بعد.
 can_do: حالا می‌توانی بگویی دیروز یا آخر هفته چه کار کردی و از کارهای دیگران بپرسی: Hier, j'ai travaillé. Tu as mangé ?
 rule: avoir در زمان حال + اسم مفعول: j'ai parlé، tu as parlé، il a parlé، nous avons parlé، vous avez parlé، ils ont parlé؛ اسم مفعول -er با é ساخته می‌شود؛ منفی: je n'ai pas parlé.
 mistake: فارسی گذشته را با یک کلمه می‌گوید («خوردم»)، برای همین فارسی‌زبان‌ها avoir را جا می‌اندازند («je mangé») یا مصدر می‌نویسند («j'ai manger»)؛ درست: j'ai mangé. اسم مفعول هم صرف نمی‌شود: «nous avons parlons» غلط است؛ درست: nous avons parlé.

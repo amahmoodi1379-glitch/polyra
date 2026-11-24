@@ -1,6 +1,6 @@
 code: de-a1-dativ-praepositionen
 title: mit، zu، bei، von و حالت Dativ
-scope: حالت Dativ بعد از mit، zu، bei و von: der و das ← dem، die ← der، جمع ← den …n، ein ← einem/einer، mein ← meinem/meiner، و ترکیب‌های zum، zur، beim، vom (mit dem Bus، zum Arzt، beim Arzt، von der Arbeit)؛ حرف اضافه‌های جا (in، an، auf) در واحد بعد می‌آیند.
+scope: حالت Dativ بعد از mit، zu، bei و von: der و das ← dem، die ← der، جمع ← den …n، ein ← einem/einer، mein ← meinem/meiner، و ترکیب‌های zum، zur، beim، vom (mit dem Bus، zum Arzt، beim Arzt، von der Arbeit)؛ حرف اضافه‌های جا (in، an، auf) در واحد «wo و wohin» می‌آیند.
 can_do: حالا می‌توانی بگویی با چه وسیله‌ای به کجا می‌روی و پیش چه کسی هستی: «با اتوبوس به ایستگاه قطار می‌روم».
 rule: بعد از mit، bei، zu و von: der و das ← dem، die ← der، جمع ← den …n؛ zu + dem = zum، zu + der = zur، bei + dem = beim، von + dem = vom.
 mistake: فارسی‌زبان‌ها بعد از mit همان der و die را می‌گذارند: «mit der Bus» و «mit die U-Bahn» غلط است؛ درست: mit dem Bus، mit der U-Bahn. «Ich gehe zu Arzt» هم غلط است؛ درست: Ich gehe zum Arzt.

@@ -3,7 +3,7 @@ title: Am Flughafen
 kind: announcement
 key_words: Flughafen, Flugzeug
 sentences:
-- Guten Abend am Flughafen Hamburg. | عصر بخیر در فرودگاه هامبورگ.
+- Guten Abend und willkommen am Flughafen Hamburg. | عصر بخیر و به فرودگاه هامبورگ خوش آمدید.
 - Das Flugzeug nach Teheran fliegt heute nicht um 20 Uhr. | هواپیمای تهران امروز ساعت ۲۰ پرواز نمی‌کند. | tts: Das Flugzeug nach Teheran fliegt heute nicht um zwanzig Uhr.
 - Es fliegt um 22 Uhr 30. | ساعت ۲۲ و ۳۰ دقیقه پرواز می‌کند. | tts: Es fliegt um zweiundzwanzig Uhr dreißig.
 - Bitte warten Sie hier. | لطفاً این‌جا منتظر بمانید.
@@ -20,4 +20,4 @@ listening A:
 {"type":"mcq","prompt":"مسافرها باید چه کار کنند؟","options":["به خانه بروند","این‌جا منتظر بمانند","با قطار بروند","زنگ بزنند"],"correct":1,"explanation_fa":"در اعلام آمده: «Bitte warten Sie hier.»"}
 listening B:
 {"type":"dict","sentence":3}
-{"type":"tf","prompt":"این اعلام در فرودگاه هامبورگ است.","correct":true,"explanation_fa":"در اعلام آمده: «am Flughafen Hamburg»."}
+{"type":"tf","prompt":"پرواز تهران امروز انجام نمی‌شود.","correct":false,"explanation_fa":"پرواز فقط دیرتر است: «Es fliegt um 22 Uhr 30.»"}

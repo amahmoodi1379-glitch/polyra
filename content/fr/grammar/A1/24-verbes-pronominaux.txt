@@ -1,6 +1,6 @@
 code: fr-a1-verbes-pronominaux
 title: فعل‌های ضمیری: je me lève
-scope: فعل‌های ضمیری در زمان حال (se lever، se réveiller، se laver، s'habiller، se coucher، se reposer، se promener، s'appeler)، جای ضمیر در جملهٔ منفی و بعد از aller یا devoir + مصدر؛ امر این فعل‌ها (lève-toi) در واحد امر و گذشته‌شان با être در واحد آخر می‌آید.
+scope: فعل‌های ضمیری در زمان حال (se lever، se réveiller، se laver، s'habiller، se coucher، se reposer، se promener، s'appeler)، جای ضمیر در جملهٔ منفی و بعد از aller یا devoir + مصدر؛ امر این فعل‌ها (lève-toi) در واحد امر و گذشته‌شان با être در واحد گذشته با être می‌آید.
 can_do: حالا می‌توانی از کارهای هر روزت بگویی و اسم کسی را بپرسی: Je me lève à sept heures. Tu t'appelles comment ?
 rule: je me، tu te، il se، nous nous، vous vous، ils se + فعل؛ قبل از صدادار m'، t'، s'؛ منفی: je ne me lève pas؛ بعد از aller + مصدر ضمیر با فاعل جور می‌شود: je vais me coucher.
 mistake: فارسی‌زبان‌ها se را جزء ثابت فعل می‌بینند و می‌گویند «je se lève» یا «je vais se coucher»؛ درست: je me lève، je vais me coucher. ضمیر همیشه با فاعل جور می‌شود.

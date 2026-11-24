@@ -1,6 +1,6 @@
 code: fr-a1-faire
 title: faire: کردن، درست کردن و هوا
-scope: صرف بی‌قاعدهٔ faire در زمان حال؛ کارهای روزمره با faire (faire la cuisine، faire les courses، faire du sport، faire du vélo)، هوا با il fait (beau، chaud، froid) و سؤال Qu'est-ce que tu fais ? ؛ du و de la به‌تنهایی در درس «بعضی، کمی» می‌آیند.
+scope: صرف بی‌قاعدهٔ faire در زمان حال؛ کارهای روزمره با faire (faire la cuisine، faire les courses، faire du sport، faire du vélo)، هوا با il fait (beau، chaud، froid) و سؤال Qu'est-ce que tu fais ? ؛ du و de la به‌تنهایی در درس «بعضی، کمی» آمده‌اند.
 can_do: حالا می‌توانی از کارهای روزانه‌ات بگویی، بپرسی دیگران چه می‌کنند و از هوا حرف بزنی: Je fais les courses. Il fait beau.
 rule: faire: je fais، tu fais، il fait، nous faisons، vous faites، ils font. برای هوا: il fait + beau، chaud، froid.
 mistake: فارسی‌زبان‌ها از روی nous faisons می‌سازند «vous faisez» و «ils faisent»؛ درست: vous faites، ils font. برای هوا هم از روی «هوا سرد است» می‌گویند «le temps est froid»؛ درست: il fait froid.
