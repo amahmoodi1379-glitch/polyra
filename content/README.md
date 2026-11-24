@@ -13,6 +13,7 @@ content/
     names.txt             proper names sentences may use, one per line (Marie, Paris)
     grammar/A1/01-etre.txt …   one grammar unit per file, in teaching order by file name
     sentences/A1/*.txt    the fill-the-gap sentences of the level's words
+    texts/A1/01-im-cafe.txt …  listening and reading texts with their questions
 ```
 
 Conjugation tables are not written: the loader builds them from the open data (Lefff for French,
@@ -193,3 +194,11 @@ translations:
   level wins. Once a level has grammar, every tense of that level needs a unit.
 - Review cards (`review_card`) go to a verb whose forms in that tense leave its group's pattern and to the
   first verb of each regular group as its sample.
+
+## Texts: `content/<language>/texts/<LEVEL>/NN-name.txt`
+
+One listening and reading text per file (PRD §7.1–§7.4, P-T); file names give the order. Band and length come
+from `prompt.text_level_bands` and `prompt.text_bands` (A1: band 1, 30 to 60 words); the kind is one of the band's
+`prompt.text_kinds`. Every word must be of the text's level or lower. Format and an example: the comment at the
+top of `src/server/content/packs/texts.ts` and `content/de/texts/A1/01-im-cafe.txt`. Questions are one JSON object
+per line in the P-T shape, two to eight per set; the loader imports them through the panel's text importer.

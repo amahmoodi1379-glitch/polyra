@@ -1,0 +1,25 @@
+code: de-a1-t006
+title: Wo ist die Apotheke?
+kind: dialogue
+key_words: Apotheke, geradeaus
+sentences:
+A: Entschuldigung, wo ist hier eine Apotheke? | ببخشید، این‌جا داروخانه کجاست؟
+B: Die Apotheke ist nicht weit. | داروخانه دور نیست.
+B: Gehen Sie hier geradeaus und dann links. | از این‌جا مستقیم بروید و بعد سمت چپ.
+A: Ist sie neben der Post? | کنار اداره پست است؟
+B: Nein, sie ist zwischen dem Supermarkt und der Bank. | نه، بین سوپرمارکت و بانک است.
+A: Kann ich zu Fuß gehen? | می‌توانم پیاده بروم؟
+B: Ja, das dauert nur fünf Minuten. | بله، فقط پنج دقیقه طول می‌کشد.
+A: Vielen Dank! | خیلی ممنون!
+reading A:
+{"type":"mcq","prompt":"داروخانه کجاست؟","options":["کنار اداره پست","بین سوپرمارکت و بانک","روبه‌روی بانک","کنار ایستگاه"],"correct":1,"explanation_fa":"جواب این است: «zwischen dem Supermarkt und der Bank»."}
+{"type":"tf","prompt":"داروخانه دور است.","correct":false,"explanation_fa":"جواب این است: «Die Apotheke ist nicht weit.»"}
+reading B:
+{"type":"order","prompt":"این‌ها را به ترتیب متن مرتب کن.","items":["می‌پرسد آیا پیاده می‌شود رفت.","می‌پرسد داروخانه کجاست.","می‌پرسد آیا کنار اداره پست است.","تشکر می‌کند."],"correct_order":[1,2,0,3],"explanation_fa":"اول جای داروخانه، بعد اداره پست، بعد پیاده رفتن و آخر تشکر."}
+{"type":"tf","prompt":"راه پیاده پنج دقیقه است.","correct":true,"explanation_fa":"جواب این است: «das dauert nur fünf Minuten»."}
+listening A:
+{"type":"mcq","prompt":"اول باید چطور رفت؟","options":["سمت راست","مستقیم","با اتوبوس","سمت چپ"],"correct":1,"explanation_fa":"گفته می‌شود: «Gehen Sie hier geradeaus und dann links.»"}
+{"type":"tf","prompt":"داروخانه کنار اداره پست است.","correct":false,"explanation_fa":"جواب «Nein» است؛ داروخانه بین سوپرمارکت و بانک است."}
+listening B:
+{"type":"dict","sentence":1}
+{"type":"mcq","prompt":"راه تا داروخانه چقدر طول می‌کشد؟","options":["یک ساعت","پانزده دقیقه","ده دقیقه","پنج دقیقه"],"correct":3,"explanation_fa":"گفته می‌شود: «nur fünf Minuten»."}

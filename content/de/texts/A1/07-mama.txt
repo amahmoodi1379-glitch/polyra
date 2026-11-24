@@ -1,0 +1,24 @@
+code: de-a1-t007
+title: Eine Nachricht von Mama
+kind: voice_message
+key_words: Kühlschrank
+sentences:
+- Hallo Lukas, hier ist Mama. | سلام لوکاس، مامان هستم.
+- Ich bin noch im Büro und komme heute spät nach Hause. | هنوز در دفترم و امروز دیر به خانه می‌آیم.
+- Im Kühlschrank gibt es Suppe. | در یخچال سوپ هست.
+- Bitte mach deine Hausaufgaben. | لطفاً تکلیف‌هایت را انجام بده.
+- Papa kommt um 18 Uhr. | بابا ساعت ۱۸ می‌آید. | tts: Papa kommt um achtzehn Uhr.
+- Ich liebe dich. | دوستت دارم.
+- Bis später! | تا بعد!
+reading A:
+{"type":"mcq","prompt":"مامان کجاست؟","options":["در خانه","در مدرسه","در دفتر","در سوپرمارکت"],"correct":2,"explanation_fa":"مامان می‌گوید: «Ich bin noch im Büro»."}
+{"type":"tf","prompt":"در یخچال سوپ هست.","correct":true,"explanation_fa":"مامان می‌گوید: «Im Kühlschrank gibt es Suppe.»"}
+reading B:
+{"type":"tf","prompt":"مامان امروز زود به خانه می‌آید.","correct":false,"explanation_fa":"مامان می‌گوید: «komme heute spät nach Hause»."}
+{"type":"find","prompt":"کدام جمله می‌گوید لوکاس چه کاری باید بکند؟","correct_sentence":3,"explanation_fa":"در «Bitte mach deine Hausaufgaben.» کار لوکاس آمده."}
+listening A:
+{"type":"num","prompt":"بابا ساعت چند می‌آید؟","answer":"18","accepted":["18","18 Uhr","achtzehn"],"explanation_fa":"مامان می‌گوید: «Papa kommt um 18 Uhr.»"}
+{"type":"tf","prompt":"مامان دیر به خانه می‌آید.","correct":true,"explanation_fa":"مامان می‌گوید: «komme heute spät nach Hause»."}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"mcq","prompt":"چه چیزی برای خوردن هست؟","options":["پیتزا","سوپ","سالاد","نان و پنیر"],"correct":1,"explanation_fa":"مامان می‌گوید: «Im Kühlschrank gibt es Suppe.»"}

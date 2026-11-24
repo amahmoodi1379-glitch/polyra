@@ -1,0 +1,23 @@
+code: de-a1-t009
+title: Am Flughafen
+kind: announcement
+key_words: Flughafen, Flugzeug
+sentences:
+- Guten Abend am Flughafen Hamburg. | عصر بخیر در فرودگاه هامبورگ.
+- Das Flugzeug nach Teheran fliegt heute nicht um 20 Uhr. | هواپیمای تهران امروز ساعت ۲۰ پرواز نمی‌کند. | tts: Das Flugzeug nach Teheran fliegt heute nicht um zwanzig Uhr.
+- Es fliegt um 22 Uhr 30. | ساعت ۲۲ و ۳۰ دقیقه پرواز می‌کند. | tts: Es fliegt um zweiundzwanzig Uhr dreißig.
+- Bitte warten Sie hier. | لطفاً این‌جا منتظر بمانید.
+- Im Restaurant gibt es Essen und Getränke. | در رستوران غذا و نوشیدنی هست.
+- Vielen Dank! | خیلی ممنون!
+reading A:
+{"type":"mcq","prompt":"هواپیما به کجا می‌رود؟","options":["هامبورگ","برلین","تهران","اصفهان"],"correct":2,"explanation_fa":"در اعلام آمده: «Das Flugzeug nach Teheran»."}
+{"type":"tf","prompt":"هواپیما ساعت ۲۰ پرواز می‌کند.","correct":false,"explanation_fa":"در اعلام آمده: «fliegt heute nicht um 20 Uhr»."}
+reading B:
+{"type":"find","prompt":"کدام جمله ساعت تازه پرواز را می‌گوید؟","correct_sentence":2,"explanation_fa":"در «Es fliegt um 22 Uhr 30.» ساعت تازه آمده."}
+{"type":"tf","prompt":"در رستوران فرودگاه غذا هست.","correct":true,"explanation_fa":"در اعلام آمده: «Im Restaurant gibt es Essen und Getränke.»"}
+listening A:
+{"type":"num","prompt":"هواپیما حالا ساعت چند پرواز می‌کند؟","answer":"22:30","accepted":["22:30","22.30","22 Uhr 30","22h30"],"explanation_fa":"در اعلام آمده: «Es fliegt um 22 Uhr 30.»"}
+{"type":"mcq","prompt":"مسافرها باید چه کار کنند؟","options":["به خانه بروند","این‌جا منتظر بمانند","با قطار بروند","زنگ بزنند"],"correct":1,"explanation_fa":"در اعلام آمده: «Bitte warten Sie hier.»"}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"tf","prompt":"این اعلام در فرودگاه هامبورگ است.","correct":true,"explanation_fa":"در اعلام آمده: «am Flughafen Hamburg»."}

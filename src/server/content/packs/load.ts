@@ -7,6 +7,7 @@ import { demoStatus, removeDemo } from "../demo";
 import { conjugation } from "../kinds/conjugation";
 import { grammar } from "../kinds/grammar";
 import { sentences } from "../kinds/sentences";
+import { texts } from "../kinds/texts";
 import type { ContentKind, Tx } from "../kinds/types";
 import { unitList } from "../kinds/unit-list";
 import { words } from "../kinds/words";
@@ -170,6 +171,21 @@ async function loadLevel(run: Run, level: PackLevel) {
     for (const sentence of chunk) if (ok.has(sentence)) remember("sentence", sentence.text, sentence);
     count(run, "sentences", ok.size);
   }
+
+  // Texts last: their sentences use the words above.
+  codes = await wordCodes(tx, language);
+  const waitingTexts = level.texts.filter((text) => fresh("text", text.code));
+  const readyTexts = waitingTexts.filter((text) => text.codes.every((code) => codes.has(code)));
+  if (readyTexts.length < waitingTexts.length) run.report.skipped.push(`${waitingTexts.length - readyTexts.length} texts use words not in the database`);
+  if (readyTexts.length > 0) {
+    const band = readyTexts[0].band;
+    const length = (await appSetting<Record<string, [number, number]>>("prompt.text_bands"))[String(band)] ?? [30, 60];
+    const specs = readyTexts.map((text) => ({ code: text.code, level: level.level, band: text.band, kind: text.kind, topic: "", placement_ok: text.placement_ok }));
+    const round = await importAnswer(run, texts, await newBatch(run, "P_T", { level: level.level, band, length, words: null, texts: specs }), { texts: readyTexts.map((text) => text.answer), issues: [] });
+    const ok = accepted(round);
+    for (const text of readyTexts) if (ok.has(text.answer)) remember("text", text.code, text.answer);
+    count(run, "texts", ok.size);
+  }
 }
 
 /** Approves what this run imported, as if a teacher had checked it (PRD §13.4). */
@@ -184,6 +200,7 @@ async function approve(tx: Tx, batchIds: number[]) {
   await tx.transformItem.updateMany({ where: mine, data: approved });
   await tx.translateItem.updateMany({ where: mine, data: approved });
   await tx.conjugationTable.updateMany({ where: mine, data: approved });
+  await tx.text.updateMany({ where: mine, data: approved });
 }
 
 /**
@@ -202,6 +219,7 @@ async function rowsOf(language: string): Promise<Partial<Record<LibrarySlug, Set
     tables: ids(await db.conjugationTable.findMany(where)),
     transforms: ids(await db.transformItem.findMany(where)),
     translations: ids(await db.translateItem.findMany(where)),
+    texts: ids(await db.text.findMany(where)),
   };
   for (const slug of librarySlugs) if (out[slug]?.size === 0) delete out[slug];
   return out;
@@ -222,7 +240,7 @@ export async function loadPack(pack: Pack, options: { adminId?: number | null; l
 
   const batches: number[] = [];
   for (const level of pack.levels) {
-    if (level.words.length === 0 && level.units.length === 0 && level.sentences.length === 0 && level.tables.length === 0) continue;
+    if (level.words.length === 0 && level.units.length === 0 && level.sentences.length === 0 && level.tables.length === 0 && level.texts.length === 0) continue;
     const levelReport: LevelReport = { level: level.level, added: {}, rejected: [], skipped: [] };
     await db.$transaction(
       async (tx) => {

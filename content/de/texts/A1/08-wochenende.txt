@@ -1,0 +1,25 @@
+code: de-a1-t008
+title: Am Wochenende
+kind: dialogue
+key_words: frei haben
+sentences:
+A: Hast du am Wochenende Zeit? | آخر هفته وقت داری؟
+B: Am Samstag muss ich arbeiten, aber am Sonntag habe ich frei. | شنبه باید کار کنم، اما یکشنبه آزادم.
+A: Wollen wir am Sonntag schwimmen gehen? | یکشنبه برویم شنا؟
+B: Das Wetter ist am Sonntag nicht gut. | هوا یکشنبه خوب نیست.
+B: Gehen wir ins Kino? | برویم سینما؟
+A: Ja, gern. Wann beginnt der Film? | آره، با کمال میل. فیلم کی شروع می‌شود؟
+B: Der Film beginnt um 17 Uhr. | فیلم ساعت ۱۷ شروع می‌شود. | tts: Der Film beginnt um siebzehn Uhr.
+A: Super, bis Sonntag! | عالی، تا یکشنبه!
+reading A:
+{"type":"mcq","prompt":"آن دو یکشنبه کجا می‌روند؟","options":["استخر","سینما","پارک","رستوران"],"correct":1,"explanation_fa":"B می‌گوید «Gehen wir ins Kino?» و A می‌گوید «Ja, gern»."}
+{"type":"tf","prompt":"B شنبه کار می‌کند.","correct":true,"explanation_fa":"B می‌گوید: «Am Samstag muss ich arbeiten»."}
+reading B:
+{"type":"tf","prompt":"آن دو شنا می‌روند.","correct":false,"explanation_fa":"هوا خوب نیست، پس به سینما می‌روند."}
+{"type":"find","prompt":"کدام جمله ساعت فیلم را می‌گوید؟","correct_sentence":6,"explanation_fa":"در «Der Film beginnt um 17 Uhr.» ساعت آمده."}
+listening A:
+{"type":"num","prompt":"فیلم ساعت چند شروع می‌شود؟","answer":"17","accepted":["17","17 Uhr","siebzehn"],"explanation_fa":"B می‌گوید: «Der Film beginnt um 17 Uhr.»"}
+{"type":"mcq","prompt":"چرا شنا نمی‌روند؟","options":["B کار دارد","استخر بسته است","هوا خوب نیست","پول ندارند"],"correct":2,"explanation_fa":"B می‌گوید: «Das Wetter ist am Sonntag nicht gut.»"}
+listening B:
+{"type":"dict","sentence":0}
+{"type":"tf","prompt":"B یکشنبه آزاد است.","correct":true,"explanation_fa":"B می‌گوید: «am Sonntag habe ich frei»."}

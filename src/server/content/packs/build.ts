@@ -1,3 +1,4 @@
+import { buildTexts, type TextSource } from "./texts";
 import { createHash } from "node:crypto";
 import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
@@ -29,6 +30,7 @@ export type PackLevel = {
   tables: PackTable[];
   sentences: SentenceRecord[];
   exceptions: Exception[];
+  texts: TextSource[];
 };
 export type Pack = { language: LanguageCode; levels: PackLevel[]; words: PackWord[]; errors: Note[]; warnings: Note[]; notes: Note[] };
 
@@ -96,9 +98,10 @@ export function buildPack(language: LanguageCode, options: BuildOptions = {}): P
   const built = levels.map((level) => {
     const grammar = buildGrammar(analyzer, folder(contentRoot, join("content", language, "grammar", level)), level);
     const sentences = buildSentences(analyzer, folder(contentRoot, join("content", language, "sentences", level)), level, firstWords);
-    pack.errors.push(...grammar.errors, ...sentences.errors);
-    pack.notes.push(...grammar.notes, ...sentences.notes);
-    return { level, grammar, sentences };
+    const texts = buildTexts(analyzer, folder(contentRoot, join("content", language, "texts", level)), level);
+    pack.errors.push(...grammar.errors, ...sentences.errors, ...texts.errors);
+    pack.notes.push(...grammar.notes, ...sentences.notes, ...texts.notes);
+    return { level, grammar, sentences, texts };
   });
 
   // Unit codes are unique across the language.
@@ -118,14 +121,15 @@ export function buildPack(language: LanguageCode, options: BuildOptions = {}): P
   pack.notes.push(...tables.notes);
 
   const unique = (list: Exception[]) => [...new Map(list.map((item) => [`${item.code}|${item.surface}`, item])).values()];
-  for (const { level, grammar, sentences } of built) {
+  for (const { level, grammar, sentences, texts } of built) {
     pack.levels.push({
       level,
       words: words.filter((item) => item.level === level),
       units: grammar.units,
       tables: tables.tables.filter((table) => table.level === level),
       sentences: sentences.records,
-      exceptions: unique([...grammar.exceptions, ...sentences.exceptions]),
+      exceptions: unique([...grammar.exceptions, ...sentences.exceptions, ...texts.exceptions]),
+      texts: texts.texts,
     });
   }
   return pack;
@@ -141,5 +145,6 @@ export function packSummary(pack: Pack) {
     tables: level.tables.length,
     sentences: level.sentences.length,
     targets: level.sentences.reduce((sum, sentence) => sum + sentence.targets.length, 0),
+    texts: level.texts.length,
   }));
 }
