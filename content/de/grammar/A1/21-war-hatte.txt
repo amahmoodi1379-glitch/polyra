@@ -1,0 +1,74 @@
+code: de-a1-war-hatte
+title: war و hatte: «بود» و «داشت»
+scope: گذشته sein و haben با Präteritum (ich war، du warst، er war، wir waren، ihr wart، sie waren؛ ich hatte، du hattest، er hatte، wir hatten، ihr hattet، sie hatten) با gestern و am Wochenende و جای فعل بعد از آن‌ها؛ گذشته بقیه فعل‌ها با Perfekt در واحدهای بعد می‌آید.
+can_do: حالا می‌توانی بگویی دیروز کجا بودی، حالت چطور بود و چه داشتی: «دیروز خانه بودم»، «یک سگ داشتیم».
+rule: sein در گذشته: war، warst، war، waren، wart، waren. haben در گذشته: hatte، hattest، hatte، hatten، hattet، hatten. شکل ich و er/sie/es یکی است.
+mistake: فارسی‌زبان‌ها با gestern شکل حال را می‌گویند («Gestern ich bin krank») یا فعل را جای دوم نمی‌گذارند؛ درست: Gestern war ich krank. برای sein و haben آلمانی‌ها در گفتگو بیشتر war و hatte می‌گویند، نه Perfekt.
+lesson:
+برای گفتن «بودم» و «داشتم» آلمانی دو شکل کوتاه دارد: war و hatte.
+Ich war gestern zu Hause. یعنی «دیروز خانه بودم». Wir hatten einen Hund. یعنی «یک سگ داشتیم».
+
+شکل ich و er/sie/es یکی است و پایان ندارد: ich war، er war؛ ich hatte، sie hatte.
+بقیه پایان‌ها مثل زمان حال‌اند: du warst، wir waren، ihr wart، sie و Sie waren؛ du hattest، wir hatten، ihr hattet، sie و Sie hatten.
+
+اگر جمله با gestern یا am Wochenende شروع شود، war یا hatte در جای دوم می‌آید: Gestern war ich müde.
+گذشته بقیه فعل‌ها را بعداً در واحدهای Perfekt یاد می‌گیری.
+table:
+ضمیر | sein | haben
+ich | war | hatte
+du | warst | hattest
+er/sie/es | war | hatte
+wir | waren | hatten
+ihr | wart | hattet
+sie/Sie | waren | hatten
+examples:
+Wie war dein Tag? | روزت چطور بود؟
+Ich war gestern in Berlin. | دیروز در برلین بودم.
+Wir hatten ein Auto. | ما یک ماشین داشتیم.
+Das Wetter war sehr schön. | هوا خیلی خوب بود.
+targets:
+Ich [war] gestern zu Hause. | دیروز خانه بودم. | d: bin, warst, waren | full: Gestern war ich zu Hause.
+Wo [warst] du gestern? | دیروز کجا بودی؟ | d: bist, war, wart
+Anna [war] am Wochenende in Wien. | آنا آخر هفته در وین بود. | d: ist, waren, warst | full: Am Wochenende war Anna in Wien.
+Wir [waren] gestern im Kino. | ما دیروز سینما بودیم. | d: sind, wart, war | full: Gestern waren wir im Kino.
+[Wart] ihr gestern in der Schule? | دیروز مدرسه بودید؟ | d: Seid, Waren, Warst
+Die Kinder [waren] sehr müde. | بچه‌ها خیلی خسته بودند. | d: sind, war, wart
+Wie [war] der Film? | فیلم چطور بود؟ | d: ist, waren, wart
+Das Essen [war] sehr gut. | غذا خیلی خوب بود. | d: ist, waren, hatte
+Gestern [war] ich krank. | دیروز مریض بودم. | d: bin, warst, hatte
+Herr Weber, wo [waren] Sie gestern? | آقای وبر، دیروز کجا بودید؟ | d: sind, wart, war
+Das Wetter [war] am Sonntag schlecht. | هوا یکشنبه بد بود. | d: ist, waren, hatte | full: Am Sonntag war das Wetter schlecht.
+Wie [war] die Party? | مهمانی چطور بود؟ | d: ist, waren, hatte
+[Warst] du schon in Deutschland? | تا حالا آلمان بوده‌ای؟ | d: Bist, War, Wart
+Max und Lena [waren] am Montag beim Arzt. | ماکس و لنا دوشنبه پیش دکتر بودند. | d: sind, war, wart | full: Am Montag waren Max und Lena beim Arzt.
+Ich [hatte] ein Auto. | من یک ماشین داشتم. | d: habe, hattest, hatten
+[Hattest] du einen Hund? | تو سگ داشتی؟ | d: Hast, Hatte, Hattet
+Anna [hatte] eine Katze. | آنا یک گربه داشت. | d: hat, hatten, hattest
+Wir [hatten] kein Geld. | ما پول نداشتیم. | d: haben, hattet, hatte
+[Hattet] ihr am Wochenende eine Party? | آخر هفته مهمانی داشتید؟ | d: Habt, Hatten, Hattest
+Die Kinder [hatten] am Montag Schule. | بچه‌ها دوشنبه مدرسه داشتند. | d: haben, hatte, hattet | full: Am Montag hatten die Kinder Schule.
+Gestern [hatte] ich viel Arbeit. | دیروز کار زیادی داشتم. | d: habe, hattest, hatten | full: Ich hatte gestern viel Arbeit.
+Herr Weber, [hatten] Sie ein Problem? | آقای وبر، مشکلی داشتید؟ | d: haben, hattet, hatte
+Mein Vater [hatte] ein Fahrrad. | پدرم یک دوچرخه داشت. | d: hat, hatten, hattest
+Wir [hatten] im Sommer Urlaub. | تابستان مرخصی داشتیم. | d: haben, hattet, hatte | full: Im Sommer hatten wir Urlaub.
+Ich [war] müde, aber ich [hatte] viel Arbeit. | خسته بودم، ولی کار زیادی داشتم. | d: bin, warst, waren / habe, hattest, hatten
+Gestern [war] Anna krank und sie [hatte] Fieber. | دیروز آنا مریض بود و تب داشت. | d: ist, waren, hatte / hat, hatten, war
+Wo [warst] du? Du [hattest] heute Schule. | کجا بودی؟ امروز مدرسه داشتی. | d: bist, war, wart / hast, hatte, hattet
+Wir [waren] in Wien und wir [hatten] ein Hotel im Zentrum. | ما در وین بودیم و یک هتل در مرکز شهر داشتیم. | d: sind, wart, war / haben, hattet, hatte
+Das Wetter [war] gut und wir [hatten] Glück. | هوا خوب بود و ما شانس آوردیم. | d: ist, waren, hatte / haben, hattet, hatte
+Am Wochenende [war] ich in Köln. | آخر هفته در کلن بودم. | d: bin, warst, hatte | full: Ich war am Wochenende in Köln.
+[Wart] ihr gestern zu Hause? | دیروز خانه بودید؟ | d: Seid, Waren, Warst
+Das Hotel [war] klein, aber schön. | هتل کوچک بود، ولی قشنگ. | d: ist, waren, hatte
+transforms:
+Ich bin zu Hause. => Ich war zu Hause. | جمله را به گذشته ببر.
+Wir haben ein Auto. => Wir hatten ein Auto. | جمله را به گذشته ببر.
+Du bist müde. => Du warst müde. | جمله را به گذشته ببر.
+Anna hat eine Katze. => Anna hatte eine Katze. | جمله را به گذشته ببر.
+Ich war gestern krank. => Gestern war ich krank. | جمله را با Gestern شروع کن.
+Ihr seid im Kino. => Ihr wart im Kino. | جمله را به گذشته ببر.
+translations:
+دیروز خانه بودم. => Ich war gestern zu Hause. ; Gestern war ich zu Hause.
+فیلم چطور بود؟ => Wie war der Film?
+ما یک سگ داشتیم. => Wir hatten einen Hund.
+دیروز کجا بودی؟ => Wo warst du gestern?
+هوا خیلی خوب بود. => Das Wetter war sehr schön. ; Das Wetter war sehr gut.

@@ -1,6 +1,6 @@
 code: de-a1-kein
 title: kein و keine: منفی اسم
-scope: منفی کردن اسمی که ein یا eine دارد یا بی‌حرف تعریف است با kein و keine در حالت فاعلی و با اسم مؤنث، خنثی و جمع بعد از haben و فعل‌های دیگر (Ich habe kein Auto. Wir haben keine Kinder.)، و فرق آن با nicht؛ شکل مفعولی مذکر (keinen) در واحد بعد می‌آید.
+scope: منفی کردن اسمی که ein یا eine دارد یا بی‌حرف تعریف است با kein و keine در حالت فاعلی و با اسم مؤنث، خنثی و جمع بعد از haben و فعل‌های دیگر (Ich habe kein Auto. Wir haben keine Kinder.)، و فرق آن با nicht؛ شکل مفعولی مذکر (keinen) در واحد Akkusativ می‌آید.
 can_do: حالا می‌توانی بگویی «ماشین ندارم»، «پول ندارم» و «این مدرسه نیست».
 rule: ein ← kein، eine ← keine، اسم بی‌حرف تعریف ← kein یا keine (Ich habe kein Geld. Wir haben keine Kinder.)؛ برای فعل، صفت، جا و اسم با der، die، das همان nicht.
 mistake: فارسی فقط فعل را منفی می‌کند («ماشین ندارم») و فارسی‌زبان‌ها می‌گویند «Ich habe nicht ein Auto» یا «Ich habe nicht Auto»؛ درست: Ich habe kein Auto. جنس هم مهم است: keine Schule، نه «kein Schule».

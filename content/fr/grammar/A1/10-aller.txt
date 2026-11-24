@@ -1,6 +1,6 @@
 code: fr-a1-aller
 title: فعل aller (رفتن) در زمان حال
-scope: صرف بی‌قاعده aller در زمان حال (je vais، tu vas، il va، nous allons، vous allez، ils vont) با à + اسم شهر، à la، à l' و chez، و گفتن حال با aller (Je vais bien)؛ au و aux در واحد بعد و آینده نزدیک (aller + مصدر) در واحد جدا می‌آیند.
+scope: صرف بی‌قاعده aller در زمان حال (je vais، tu vas، il va، nous allons، vous allez، ils vont) با à + اسم شهر، à la، à l' و chez، و گفتن حال با aller (Je vais bien)؛ au و aux در واحد خودشان و آینده نزدیک (aller + مصدر) در واحد جدا می‌آیند.
 can_do: حالا می‌توانی بگویی کجا می‌روی و حالت چطور است: Je vais à Paris، Je vais bien.
 rule: aller بی‌قاعده است: je vais، tu vas، il/elle/on va، nous allons، vous allez، ils/elles vont.
 mistake: aller به -er ختم می‌شود ولی باقاعده نیست و فارسی‌زبان‌ها می‌گویند «j'alle» یا «ils allent»؛ درست: je vais، ils vont. خطای دیگر: پرسیدن حال با être («Comment tu es ?»)؛ در فرانسوی حال را با aller می‌گویند: Comment ça va ? Je vais bien.

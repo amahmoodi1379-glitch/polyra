@@ -1,0 +1,77 @@
+code: de-a1-dativ-pronomen
+title: mir، dir، Ihnen: «به من»، «به تو»
+scope: ضمیرهای شخصی در Dativ (mir، dir، ihm، ihr، uns، euch، Ihnen) بعد از mit، zu، bei و von (mit mir، bei dir)، بعد از helfen، gefallen و schmecken، و برای «به کسی» با geben، zeigen، schicken، bringen و kaufen (Gib mir das Buch)؛ و Wie geht es dir? و Wie geht es Ihnen?؛ ترتیب دو مفعول کامل در سطح بعد می‌آید.
+can_do: حالا می‌توانی بگویی چیزی را به چه کسی می‌دهی، از کسی کمک بخواهی و بگویی چیزی را دوست داری: «کمکم می‌کنی؟»، «این لباس را دوست دارم».
+rule: ich ← mir، du ← dir، er و es ← ihm، sie ← ihr، wir ← uns، ihr ← euch، Sie ← Ihnen. بعد از mit، zu، bei و von و برای «به کسی» این شکل‌ها می‌آیند.
+mistake: فارسی‌زبان‌ها mich را به‌جای mir می‌گذارند: «Kannst du mich helfen?» و «Gib mich das Buch» غلط است؛ درست: Kannst du mir helfen? Gib mir das Buch. با gefallen چیزی که دوستش داری فاعل است: Das Kleid gefällt mir (نه Ich gefalle das Kleid).
+lesson:
+وقتی چیزی «به کسی» می‌رسد، آلمانی شکل دیگری از ضمیر دارد: Dativ. Gib mir das Buch. یعنی «کتاب را به من بده».
+ich ← mir، du ← dir، wir ← uns، ihr ← euch، Sie ← Ihnen.
+er و es ← ihm، sie ← ihr: Ich helfe ihm. Ich schreibe ihr.
+
+بعد از mit، zu، bei و von همیشه همین شکل‌ها می‌آیند: mit mir، zu dir، bei uns، ein Freund von mir.
+چند فعل پرکاربرد همیشه Dativ می‌خواهند: helfen (Hilfst du mir?)، gefallen (Das gefällt mir.) و schmecken (Schmeckt dir die Suppe?).
+احوال‌پرسی هم با Dativ است: Wie geht es dir? و مؤدبانه: Wie geht es Ihnen?
+
+فرق با mich و dich: Ich sehe dich (تو را می‌بینم)، ولی Ich helfe dir (به تو کمک می‌کنم).
+table:
+فاعلی | Dativ
+ich | mir
+du | dir
+er | ihm
+sie | ihr
+es | ihm
+wir | uns
+ihr | euch
+Sie | Ihnen
+examples:
+Wie geht es dir? | حالت چطور است؟
+Kannst du mir helfen? | می‌توانی کمکم کنی؟
+Das Kleid gefällt mir. | این لباس را دوست دارم.
+Kommst du mit mir? | با من می‌آیی؟
+targets:
+Kannst du [mir] helfen? | می‌توانی کمکم کنی؟ | d: mich, ich, mein
+Gib [mir] bitte das Buch. | لطفاً کتاب را به من بده. | d: mich, ich, mein
+Die Jacke gefällt [mir]. | این کاپشن را دوست دارم. | d: mich, ich, mein
+Kommst du mit [mir] ins Kino? | با من سینما می‌آیی؟ | d: mich, ich, mein
+Max ist ein Freund von [mir]. | ماکس یکی از دوستان من است. | d: mich, ich, mein
+Wie geht es [dir]? | حالت چطور است؟ | d: dich, du, dein
+Ich helfe [dir] gern. | با کمال میل کمکت می‌کنم. | d: dich, du, dein
+Schmeckt [dir] die Suppe? | سوپ به تو مزه می‌دهد؟ | d: dich, du, dein
+Ich schicke [dir] ein Foto. | یک عکس برایت می‌فرستم. | d: dich, du, dein
+Ich komme morgen zu [dir]. | فردا پیش تو می‌آیم. | d: dich, du, dein | full: Morgen komme ich zu dir.
+Max hat Geburtstag. Ich kaufe [ihm] ein Buch. | تولد ماکس است. برایش یک کتاب می‌خرم. | d: ihn, er, sein
+Paul ist krank. Wir helfen [ihm]. | پاول مریض است. ما کمکش می‌کنیم. | d: ihn, er, sein
+Das Kind hat Hunger. Gib [ihm] einen Apfel. | بچه گرسنه است. یک سیب به او بده. | d: ihn, er, es
+Anna wohnt in Wien. Ich schreibe [ihr] einen Brief. | آنا در وین زندگی می‌کند. برایش نامه می‌نویسم. | d: sie, ihre, ihm
+Lena kommt heute. Ich zeige [ihr] die Stadt. | لنا امروز می‌آید. شهر را به او نشان می‌دهم. | d: sie, ihre, ihm
+Die Pizza schmeckt [uns] sehr gut. | پیتزا به ما خیلی مزه می‌دهد. | d: wir, unser, euch
+Kommt ihr heute zu [uns]? | امروز پیش ما می‌آیید؟ | d: wir, unser, euch
+Kannst du [uns] helfen? | می‌توانی به ما کمک کنی؟ | d: wir, unser, euch
+Wie gefällt [euch] die Wohnung? | خانه را چطور می‌بینید؟ | d: ihr, euer, uns
+Ich bringe [euch] Kuchen. | برایتان کیک می‌آورم. | d: ihr, euer, uns
+Wir kommen am Samstag zu [euch]. | شنبه پیش شما می‌آییم. | d: ihr, euer, uns | full: Am Samstag kommen wir zu euch.
+Wie geht es [Ihnen], Frau Weber? | خانم وبر، حال شما چطور است؟ | d: Sie, Ihr, Ihre
+Kann ich [Ihnen] helfen? | می‌توانم کمکتان کنم؟ | d: Sie, Ihr, Ihre
+Gefällt [Ihnen] das Zimmer? | اتاق را دوست دارید؟ | d: Sie, Ihr, Ihre
+Ich zeige [Ihnen] das Hotel. | هتل را به شما نشان می‌دهم. | d: Sie, Ihr, Ihre
+Wie geht es [dir]? – Gut, danke. Und [dir]? | حالت چطور است؟ – خوب، ممنون. تو چطوری؟ | d: dich, du, dein / dich, du, dein
+Hilfst du [mir]? – Ja, ich helfe [dir]. | کمکم می‌کنی؟ – بله، کمکت می‌کنم. | d: mich, ich, mein / dich, du, dein
+Anna gibt [mir] den Schlüssel und ich gebe [ihr] das Geld. | آنا کلید را به من می‌دهد و من پول را به او می‌دهم. | d: mich, ich, mein / sie, ihre, ihm
+Ich sehe [dich] und ich helfe [dir]. | تو را می‌بینم و به تو کمک می‌کنم. | d: dir, du, dein / dich, du, dein
+Der Tee schmeckt [mir], aber der Kaffee schmeckt [ihm] nicht. | چای به من مزه می‌دهد، ولی قهوه به او مزه نمی‌دهد. | d: mich, ich, mein / ihn, er, sein
+Wohnst du bei [ihr]? – Nein, sie wohnt bei [mir]. | پیش او زندگی می‌کنی؟ – نه، او پیش من زندگی می‌کند. | d: sie, ihre, ihm / mich, ich, mein
+Bring [uns] bitte Wasser. | لطفاً برایمان آب بیاور. | d: wir, unser, euch
+transforms:
+Ich helfe Anna. => Ich helfe ihr. | به‌جای Anna ضمیر بگذار.
+Ich gebe Max das Buch. => Ich gebe ihm das Buch. | به‌جای Max ضمیر بگذار.
+Du hilfst mir. => Ich helfe dir. | جای «من» و «تو» را عوض کن.
+Kommst du mit Anna und mir? => Kommst du mit uns? | به‌جای «Anna und mir» یک ضمیر بگذار.
+Wie geht es dir? => Wie geht es Ihnen? | سؤال را مؤدبانه بپرس.
+Ich zeige dir die Stadt. => Ich zeige euch die Stadt. | به‌جای «تو» بگو «شما» (جمع، خودمانی).
+translations:
+می‌توانی کمکم کنی؟ => Kannst du mir helfen?
+حالتان چطور است؟ (مؤدبانه) => Wie geht es Ihnen?
+لطفاً کتاب را به من بده. => Gib mir bitte das Buch. ; Bitte gib mir das Buch. ; Gib mir das Buch, bitte.
+این کاپشن را دوست دارم. => Die Jacke gefällt mir.
+فردا پیش تو می‌آیم. => Ich komme morgen zu dir. ; Morgen komme ich zu dir.

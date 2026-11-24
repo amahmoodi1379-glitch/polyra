@@ -1,6 +1,6 @@
 code: de-a1-personalpronomen-akkusativ
 title: mich، dich، ihn: ضمیر مفعولی
-scope: ضمیرهای شخصی در Akkusativ (mich، dich، ihn، sie، es، uns، euch، Sie) بعد از فعل‌هایی مثل sehen، besuchen، anrufen، fragen، kennen و lieben و بعد از für؛ و ihn، sie و es به‌جای اسم چیزها (der Kaffee ← ihn)؛ ضمیرهای Dativ (mir، dir) در سطح بعد می‌آیند.
+scope: ضمیرهای شخصی در Akkusativ (mich، dich، ihn، sie، es، uns، euch، Sie) بعد از فعل‌هایی مثل sehen، besuchen، anrufen، fragen، kennen و lieben و بعد از für؛ و ihn، sie و es به‌جای اسم چیزها (der Kaffee ← ihn)؛ ضمیرهای Dativ (mir، dir) بعد از واحد Dativ می‌آیند.
 can_do: حالا می‌توانی بگویی چه کسی را می‌بینی، می‌شناسی یا به چه کسی زنگ می‌زنی: «دوستت دارم»، «فردا به تو زنگ می‌زنم».
 rule: ich ← mich، du ← dich، er ← ihn، sie ← sie، es ← es، wir ← uns، ihr ← euch، Sie ← Sie.
 mistake: فارسی‌زبان‌ها شکل فاعلی را به‌جای مفعولی می‌گذارند: «Ich liebe du» و «Max ruft ich an» غلط است؛ درست: Ich liebe dich. Max ruft mich an. برای اسم مذکر چیزها هم ihn بگو: Der Kaffee ist kalt. Ich trinke ihn nicht.

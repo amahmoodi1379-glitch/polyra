@@ -1,0 +1,70 @@
+code: fr-a1-comparatif
+title: plus، moins، aussi … que: مقایسه
+scope: مقایسهٔ دو چیز یا دو نفر با صفت: plus … que (بیشتر)، moins … que (کمتر) و aussi … que (به همان اندازه)، با ضمیر جدا بعد از que (plus grand que moi)، و qu' پیش از صدادار؛ صفت مثل همیشه با اسمش جور می‌شود (Marie est plus grande)؛ meilleur و mieux در سطح بعد می‌آیند.
+can_do: حالا می‌توانی دو چیز یا دو نفر را با هم مقایسه کنی: «پل از من قدبلندتر است»، «قطار از اتوبوس سریع‌تر است».
+rule: plus + صفت + que = «…تر از»؛ moins + صفت + que = «کمتر … از»؛ aussi + صفت + que = «به اندازهٔ». بعد از que ضمیر جدا می‌آید: que moi، que toi.
+mistake: فارسی‌زبان‌ها «از» فارسی را de ترجمه می‌کنند: «plus grand de Marie» غلط است؛ درست: plus grand que Marie. بعد از que هم je و tu نمی‌آید: plus grand que moi، نه «que je».
+lesson:
+فارسی برای مقایسه به صفت «تر» اضافه می‌کند: «بزرگ‌تر». فرانسوی صفت را عوض نمی‌کند و یک کلمه پیش از آن می‌گذارد:
+plus grand = بزرگ‌تر، moins grand = کمتر بزرگ (کوچک‌تر)، aussi grand = به همان بزرگی.
+
+«از» در مقایسه que است، نه de: Paul est plus grand que Marie. پیش از صدادار que می‌شود qu': plus jeune qu'Hugo.
+بعد از que ضمیر جدا می‌آید: Il est plus jeune que moi. Tu es aussi grand que lui.
+
+صفت مثل همیشه با اسم خودش جور می‌شود: Marie est plus grande que Paul. Les maisons sont moins chères ici.
+table:
+مقایسه | معنی | مثال
+plus … que | بیشتر از، …تر از | Le train est plus rapide que le bus.
+moins … que | کمتر از | Le bus est moins rapide que le train.
+aussi … que | به اندازهٔ | Léa est aussi grande que moi.
+examples:
+Paul est plus grand que Marie. | پل از ماری قدبلندتر است.
+Le bus est moins cher que le train. | اتوبوس از قطار ارزان‌تر است.
+Léa est aussi grande que moi. | لئا به اندازهٔ من قدبلند است.
+Le thé est plus chaud que le café. | چای از قهوه داغ‌تر است.
+targets:
+Paul est [plus] grand que Marie. | پل از ماری قدبلندتر است. | d: moins, aussi, très
+Le train est [plus] rapide que le bus. | قطار از اتوبوس سریع‌تر است. | d: moins, aussi, très
+Mon frère est [plus] jeune que moi. | برادرم از من جوان‌تر است. | d: moins, aussi, très
+L'avion est [plus] cher que le train. | هواپیما از قطار گران‌تر است. | d: moins, aussi, très
+Le chien est [plus] gros que le chat. | سگ از گربه چاق‌تر است. | d: moins, aussi, très
+La ville est [plus] grande que le village. | شهر از روستا بزرگ‌تر است. | d: moins, aussi, très
+Le bus est [moins] cher que le train. | اتوبوس از قطار ارزان‌تر است. | d: plus, aussi, très
+Ma maison est [moins] grande que ta maison. | خانهٔ من از خانهٔ تو کوچک‌تر است. | d: plus, aussi, très
+Le vélo est [moins] rapide que la voiture. | دوچرخه از ماشین کندتر است. | d: plus, aussi, très
+L'hiver est [moins] long ici. | زمستان اینجا کوتاه‌تر است. | d: plus, aussi, très
+Le thé est [moins] chaud que le café. | چای از قهوه کمتر داغ است. | d: plus, aussi, très
+Léa est [aussi] grande que moi. | لئا به اندازهٔ من قدبلند است. | d: plus, moins, très
+Le chat est [aussi] vieux que le chien. | گربه هم‌سنِ سگ است. | d: plus, moins, très
+Mon appartement est [aussi] cher que ta maison. | آپارتمان من به اندازهٔ خانهٔ تو گران است. | d: plus, moins, très
+Paul est [aussi] sympa que son frère. | پل به اندازهٔ برادرش مهربان است. | d: plus, moins, très
+Marie est plus grande [que] Paul. | ماری از پل قدبلندتر است. | d: de, à, avec
+Le train est plus rapide [que] le bus. | قطار از اتوبوس سریع‌تر است. | d: de, à, avec
+Tu es plus jeune [que] moi. | تو از من جوان‌تری. | d: de, à, avec
+Elle est aussi intelligente [que] lui. | او به اندازهٔ او باهوش است. | d: de, à, avec
+Paul est plus grand que [moi]. | پل از من قدبلندتر است. | d: je, me, mon
+Je suis plus jeune que [toi]. | من از تو جوان‌ترم. | d: tu, te, ton
+Marie est aussi grande que [lui]. | ماری به اندازهٔ او قدبلند است. | d: il, le, son
+Nous sommes plus fatigués que [vous]. | ما از شما خسته‌تریم. | d: votre, vos, ton
+Ma sœur est plus [grande] que moi. | خواهرم از من قدبلندتر است. | d: grand, grands, grandes
+Les maisons sont moins [chères] ici. | خانه‌ها اینجا ارزان‌ترند. | d: cher, chère, chers
+La mer est plus [belle] que la montagne. | دریا از کوه قشنگ‌تر است. | d: beau, beaux, belles
+Le film est plus [long] que le livre. | فیلم از کتاب طولانی‌تر است. | d: longue, longs, longues
+Le train est [plus] rapide [que] le bus. | قطار از اتوبوس سریع‌تر است. | d: moins, aussi, très / de, à, avec
+Le café est [moins] cher [que] le thé. | قهوه از چای ارزان‌تر است. | d: plus, aussi, très / de, à, avec
+Léa est [aussi] grande [que] sa sœur. | لئا به اندازهٔ خواهرش قدبلند است. | d: plus, moins, très / de, à, avec
+Hugo est [plus] jeune que [moi]. | هوگو از من جوان‌تر است. | d: moins, aussi, très / je, me, mon
+Le village est [moins] grand que la ville, mais il est [plus] beau. | روستا از شهر کوچک‌تر است، ولی قشنگ‌تر است. | d: plus, aussi, très / moins, aussi, très
+transforms:
+Paul est grand. Marie est petite. => Paul est plus grand que Marie. | با plus … que یک جمله بساز.
+Le bus est cher. Le train est très cher. => Le bus est moins cher que le train. | با moins … que یک جمله بساز.
+Léa est grande. Je suis grande aussi. => Léa est aussi grande que moi. | با aussi … que یک جمله بساز.
+Marie est plus jeune que Paul. => Paul est plus vieux que Marie. ; Paul est moins jeune que Marie. | جمله را از طرف Paul بگو.
+Je suis plus grand que toi. => Tu es moins grand que moi. ; Tu es plus petit que moi. | جمله را از طرف «تو» بگو.
+Le train est plus rapide que le bus. => Le bus est moins rapide que le train. | جمله را با le bus شروع کن.
+translations:
+پل از ماری قدبلندتر است. => Paul est plus grand que Marie.
+اتوبوس از قطار ارزان‌تر است. => Le bus est moins cher que le train.
+من به اندازهٔ تو خسته‌ام. => Je suis aussi fatigué que toi. ; Je suis aussi fatiguée que toi.
+قطار از ماشین سریع‌تر است. => Le train est plus rapide que la voiture.
+تو از من جوان‌تری. => Tu es plus jeune que moi.
