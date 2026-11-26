@@ -74,6 +74,24 @@ describe("content packs", () => {
     expect(await testDb.word.count({ where: { code: "chien" } })).toBe(0);
   });
 
+  it("brings in short translations added to a loaded unit's file, never back one a teacher deleted", async () => {
+    await loadPack(pack());
+    const unit = await testDb.grammarUnit.findFirstOrThrow({ where: { unit_code: "fr-a1-etre" } });
+    const [first] = await testDb.translateItem.findMany({ where: { grammar_unit_id: unit.id } });
+    expect((await removeItems("translations", "fr", [first.id], null)).state).toBe("deleted");
+
+    type Translation = { prompt_fa: string; accepted_outputs: string[]; tokens: unknown[] };
+    const next = pack();
+    const list = (next.levels[0].units.find((item) => item.listItem.unit_code === "fr-a1-etre")!.answer as { translations: Translation[] }).translations;
+    list.push({ ...list[0], prompt_fa: "من خیلی بزرگم." });
+    const report = await loadPack(next);
+    expect(report.levels[0].added).toEqual({ translations: 1 });
+    const after = await testDb.translateItem.findMany({ where: { grammar_unit_id: unit.id } });
+    expect(after.map((row) => row.prompt_fa)).toEqual(["من خیلی بزرگم."]);
+    expect(after[0].status).not.toBe("draft");
+    expect((await loadPack(next)).levels[0].added).toEqual({});
+  });
+
   it("new items in the files come in at the next start", async () => {
     const first = pack();
     const level = first.levels[0];

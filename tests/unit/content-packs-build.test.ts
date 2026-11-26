@@ -240,6 +240,29 @@ describe("situational dialogues of a pack", () => {
   });
 });
 
+describe("answers of a unit", () => {
+  it("keeps a {code} mark out of the transforms and translations a learner types", () => {
+    const analyzer = analyzerOf("fr", pack.words);
+    const text = [
+      "code: fr-a1-x",
+      "title: عنوان",
+      "scope: être",
+      "rule: قاعده",
+      "mistake: اشتباه",
+      "lesson:",
+      "درس",
+      "transforms:",
+      "Il est grand. => Elle est grande{grand}. | جمله را با elle بنویس.",
+      "translations:",
+      "او (زن) بزرگ است. => Elle est grande{grand}.",
+    ].join("\n");
+    const built = buildGrammar(analyzer, [{ file: "u.txt", text }], "A1");
+    const answer = built.units[0].answer as { transforms: { accepted_outputs: string[] }[]; translations: { accepted_outputs: string[] }[] };
+    expect(answer.transforms[0].accepted_outputs).toEqual(["Elle est grande."]);
+    expect(answer.translations[0].accepted_outputs).toEqual(["Elle est grande."]);
+  });
+});
+
 describe("conjugation tables of a pack", () => {
   it("links each table to the most specific unit of its tense and marks review cards", () => {
     const table = (code: string, tense: string) => level.tables.find((item) => item.verb.word.code === code && item.tense === tense)!;

@@ -8,6 +8,7 @@ import { conjugation } from "../kinds/conjugation";
 import { dialogues } from "../kinds/dialogues";
 import { grammar } from "../kinds/grammar";
 import { phonics, type PlannedLesson } from "../kinds/phonics";
+import { translations } from "../kinds/translations";
 import { sentences } from "../kinds/sentences";
 import { texts } from "../kinds/texts";
 import type { ContentKind, Tx } from "../kinds/types";
@@ -149,6 +150,26 @@ async function loadLevel(run: Run, level: PackLevel) {
     count(run, "grammar targets", round.accepted.filter((item) => item.part === "targets").length);
   }
 
+  // Short translations added to the file of a unit loaded before come in on their own (P-TR). New means the
+  // unit's first load did not bring that Persian sentence and no later load did, so one a teacher deleted or
+  // changed stays as the teacher left it.
+  const loaded = unitTranslationsLoaded(await tx.importBatch.findMany({ where: { language, prompt_kind: "P_G", prompt_version: PACK_VERSION }, select: { raw_output: true } }));
+  for (const unit of level.units) {
+    const code = unit.listItem.unit_code;
+    const unitId = unitRows.get(code);
+    if (fresh("grammar", code) || !unitId) continue;
+    type Translation = { prompt_fa: string; tokens: { code: string | null }[] };
+    const before = loaded.get(code) ?? new Set<string>();
+    const records = (unit.answer as { translations: Translation[] }).translations.filter((item) => !before.has(item.prompt_fa) && fresh("translation", `${code}|${item.prompt_fa}`));
+    const ready = records.filter((item) => tokenCodes(item.tokens).every((word) => codes.has(word)));
+    if (ready.length < records.length) run.report.skipped.push(`translations of ${code}: ${records.length - ready.length} use words not in the database`);
+    if (ready.length === 0) continue;
+    const round = await importAnswer(run, translations, await newBatch(run, "P_TR", { level: level.level, unit_id: unitId, unit_code: code }), { unit_code: code, translations: ready, issues: [] });
+    const ok = accepted(round);
+    for (const item of ready) if (ok.has(item)) remember("translation", `${code}|${item.prompt_fa}`, item);
+    count(run, "translations", ok.size);
+  }
+
   const tables = level.tables.filter((table) => fresh("table", `${table.verb.word.code}|${table.tense}`) && codes.has(table.verb.word.code));
   if (tables.length > 0) {
     const unitsThere = new Set((await tx.grammarUnit.findMany({ where: { language }, select: { unit_code: true } })).map((row) => row.unit_code));
@@ -217,6 +238,21 @@ async function loadLevel(run: Run, level: PackLevel) {
       count(run, "phonics lessons", round.accepted.length);
     }
   }
+}
+
+/** The Persian sentences of the short translations each unit's pack load brought, from the answers of its P-G batches. */
+export function unitTranslationsLoaded(batches: { raw_output: string | null }[]): Map<string, Set<string>> {
+  const out = new Map<string, Set<string>>();
+  for (const batch of batches) {
+    if (!batch.raw_output) continue;
+    const answer = JSON.parse(batch.raw_output) as { unit?: { unit_code?: string }; translations?: { prompt_fa?: string }[] };
+    const code = answer.unit?.unit_code;
+    if (!code) continue;
+    const set = out.get(code) ?? new Set<string>();
+    for (const item of answer.translations ?? []) if (item.prompt_fa) set.add(item.prompt_fa);
+    out.set(code, set);
+  }
+  return out;
 }
 
 /** Approves what this run imported, as if a teacher had checked it (PRD §13.4). */

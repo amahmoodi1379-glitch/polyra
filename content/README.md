@@ -191,7 +191,12 @@ translations:
   (the gaps apart with « / »), `ok:` other right answers per gap, `hint:`, and `full:` other right word
   orders of the whole sentence (« ; »). A unit needs 30 targets to be published (`publish.unit_min_targets`).
 - `transforms`: «source => output ; other right output | Persian instruction». `translations`: «Persian
-  sentence => right answer ; other right answer».
+  sentence => right answer ; other right answer». Eight translations per unit (`prompt.grammar_counts`, PRD §8b.7),
+  each with **every** right answer a learner may type, since a typed answer must match one: nous and on, both
+  genders where the Persian does not say, the question forms, the other right German word orders.
+- Every item of a unit loads once, with the unit. The exception: short translations added to the file of a unit a
+  server has already loaded come in on their own at its next start (P-TR); a translation the unit's first load
+  brought and a teacher deleted or changed is never brought back.
 - Every word of the unit must be of its level or lower and in the word lists.
 - `tables: <tense>` makes this unit the home of that tense's conjugation tables (the tense as written in
   `conjugation.tenses.<language>`). `tables: <tense> | <class>` claims one class of verbs: a verb's lemma
