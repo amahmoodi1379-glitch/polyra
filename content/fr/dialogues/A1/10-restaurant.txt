@@ -1,0 +1,29 @@
+code: fr-a1-d010
+title: رستوران: سفارش غذا
+situation: با یک دوست به رستوران رفته‌ای. گارسون می‌آید.
+turns:
+B: Bonjour ! Vous êtes combien ? | سلام! چند نفرید؟
+- Nous avons deux. | ما دو داریم.
++ Nous sommes deux. | دو نفریم.
+- J'ai deux ans. | دو سالم است.
+why: تعداد نفرها را با être می‌گوییم: «Nous sommes deux». «J'ai deux ans» سن است.
+B: Voilà votre table et le menu. Vous voulez boire quelque chose ? | این میزتان و این منو. چیزی می‌نوشید؟
++ Oui, une bouteille d'eau, s'il vous plaît. | بله، یک بطری آب، لطفاً.
+- Oui, une bouteille de pain, s'il vous plaît. | بله، یک بطری نان، لطفاً.
+- Oui, une bouteille de eau, s'il vous plaît. | بله، یک بطری آب، لطفاً.
+why: پیش از واکه de می‌شود d': «une bouteille d'eau». نان را در بطری نمی‌فروشند.
+B: Et qu'est-ce que vous prenez ? | چه میل دارید؟
+- Pour moi, la poulet avec des pommes de terre. | برای من مرغ با سیب‌زمینی.
++ Pour moi, le poulet avec des pommes de terre. | برای من مرغ با سیب‌زمینی.
+- Pour moi, une bouteille de poulet. | برای من یک بطری مرغ.
+why: poulet مذکر است، پس «le poulet». «une bouteille de poulet» بی‌معنی است.
+B: Très bien. Et comme dessert ? | خیلی خوب. دسر چه؟
+- Un poulet au chocolat, s'il vous plaît. | یک مرغ شکلاتی، لطفاً.
+- Un glace au chocolat, s'il vous plaît. | یک بستنی شکلاتی، لطفاً.
++ Une glace au chocolat, s'il vous plaît. | یک بستنی شکلاتی، لطفاً.
+why: glace مؤنث است، پس «une glace». مرغ دسر نیست.
+B: Voilà. C'est bon ? | بفرمایید. خوب است؟
++ Oui, c'est délicieux ! L'addition, s'il vous plaît. | بله، خیلی خوشمزه است! صورت‌حساب، لطفاً.
+- Non, c'est délicieux ! | نه، خیلی خوشمزه است!
+- Oui, c'est délicieux ! L'addition, s'il te plaît. | بله، خیلی خوشمزه است! صورت‌حساب، لطفاً.
+why: «Oui, c'est délicieux» یعنی خوب است. «Non» با «délicieux» جور نیست، و با گارسون «s'il vous plaît» می‌گوییم.

@@ -1,0 +1,34 @@
+code: de-a1-d006
+title: در سوپرمارکت
+situation: در سوپرمارکت دنبال شیر می‌گردی. یک کارمند فروشگاه به تو نزدیک می‌شود.
+turns:
+B: Guten Tag! Kann ich Ihnen helfen? | روز بخیر! می‌توانم کمکتان کنم؟
++ Ja, bitte. Wo ist die Milch? | بله، لطفاً. شیر کجاست؟
+- Ja, bitte. Wo ist der Milch? | بله، لطفاً. شیر کجاست؟
+- Ja, bitte. Wer ist die Milch? | بله، لطفاً. شیر کیست؟
+why: Milch مؤنث است، پس «die Milch». «Wer» برای آدم است و برای جا «Wo» می‌پرسیم.
+B: Die Milch ist dort links. | شیر آنجاست، سمت چپ.
+- Danke! Ich bin links. | ممنون! من سمت چپم.
++ Danke! Und wo gibt es Eier? | ممنون! تخم‌مرغ کجا هست؟
+- Danke! Und wo gibst du Eier? | ممنون! تو کجا تخم‌مرغ می‌دهی؟
+why: «Wo gibt es Eier?» یعنی «تخم‌مرغ کجا هست؟». «gibst du» با کارمند خودمانی است و معنی دیگری دارد.
+B: Die Eier sind auch dort, neben der Milch. | تخم‌مرغ هم آنجاست، کنار شیر.
+- Super, danke! Sind Sie auch Äpfel? | عالی، ممنون! شما هم سیب هستید؟
+- Super, danke! Hast du auch Äpfel? | عالی، ممنون! سیب هم داری؟
++ Super, danke! Haben Sie auch Äpfel? | عالی، ممنون! سیب هم دارید؟
+why: «Haben Sie auch Äpfel?» یعنی «سیب هم دارید؟». «Sind Sie Äpfel» بی‌معنی است و با کارمند du نمی‌گوییم.
+B: Ja, das Obst ist rechts, neben der Tür. | بله، میوه سمت راست است، کنار در.
++ Danke! Und wo kann ich bezahlen? | ممنون! کجا می‌توانم پرداخت کنم؟
+- Danke! Und wo kann ich essen? | ممنون! کجا می‌توانم غذا بخورم؟
+- Danke! Und wer kann ich bezahlen? | ممنون! چه کسی می‌توانم پرداخت کنم؟
+why: برای جای پرداخت «Wo kann ich bezahlen?» می‌پرسیم. «wer kann ich» دستورش غلط است و غذا خوردن ربطی به خرید ندارد.
+B: Dort an der Kasse. Bezahlen Sie mit Karte? | آنجا، سر صندوق. با کارت پرداخت می‌کنید؟
+- Ja, für Karte. | بله، برای کارت.
++ Ja, mit Karte. | بله، با کارت.
+- Ja, ich bin eine Karte. | بله، من یک کارتم.
+why: «mit Karte» یعنی «با کارت». «für Karte» حرف اضافه غلطی دارد و «ich bin eine Karte» بی‌معنی است.
+B: Danke! Schönen Tag noch! | ممنون! روز خوبی داشته باشید!
+- Danke, gute Nacht! | ممنون، شب بخیر!
+- Danke, dir auch! | ممنون، تو هم!
++ Danke, Ihnen auch! | ممنون، شما هم!
+why: جواب مؤدبانه «Ihnen auch» است. روز است، نه شب، و با کارمند dir نمی‌گوییم.

@@ -1,0 +1,29 @@
+code: de-a1-d005
+title: در نانوایی
+situation: صبح در نانوایی هستی. فروشنده می‌پرسد چه می‌خواهی.
+turns:
+B: Guten Morgen! Was möchten Sie? | صبح بخیر! چه می‌خواهید؟
+- Guten Morgen! Ich bin vier Brötchen. | صبح بخیر! من چهار نان کوچکم.
+- Hallo! Gib mir vier Brötchen! | سلام! چهار نان کوچک بده به من!
++ Guten Morgen! Vier Brötchen, bitte. | صبح بخیر! چهار نان کوچک، لطفاً.
+why: «Vier Brötchen, bitte» سفارش مؤدبانه است. «Gib mir!» با فروشنده بی‌ادبانه است و «Ich bin vier Brötchen» بی‌معنی است.
+B: Gern. Noch etwas? | با کمال میل. چیز دیگری؟
++ Ja, ein Brot, bitte. | بله، یک نان، لطفاً.
+- Ja, eine Brot, bitte. | بله، یک نان، لطفاً.
+- Ja, ein Auto, bitte. | بله، یک ماشین، لطفاً.
+why: Brot خنثی است، پس «ein Brot». در نانوایی ماشین نمی‌فروشند.
+B: Ein großes oder ein kleines Brot? | نان بزرگ یا کوچک؟
+- Ja, bitte. | بله، لطفاً.
+- Ein kleiner, bitte. | یک کوچک، لطفاً.
++ Ein kleines, bitte. | یک کوچک، لطفاً.
+why: سؤال «این یا آن؟» است و «Ja» جواب نیست. چون das Brot خنثی است، «ein kleines» درست است.
+B: Das macht 5 Euro 20. | پنج یورو و بیست سنت می‌شود. | tts: Das macht fünf Euro zwanzig.
++ Hier sind 10 Euro. | بفرمایید، ده یورو. | tts: Hier sind zehn Euro.
+- Hier sind 10 Uhr. | بفرمایید، ساعت ده. | tts: Hier sind zehn Uhr.
+- Hier bin 10 Euro. | من اینجا ده یورو هستم. | tts: Hier bin zehn Euro.
+why: پول را با Euro می‌دهیم: «Hier sind 10 Euro». Uhr ساعت است و «Hier bin» دستورش غلط است.
+B: Danke! Schönen Tag noch! | ممنون! روز خوبی داشته باشید!
+- Danke, dir auch! | ممنون، تو هم!
+- Danke, gute Nacht! | ممنون، شب بخیر!
++ Danke, Ihnen auch! | ممنون، شما هم!
+why: با فروشنده رسمی حرف می‌زنیم: «Ihnen auch». «dir» خودمانی است و صبح «gute Nacht» نمی‌گوییم.

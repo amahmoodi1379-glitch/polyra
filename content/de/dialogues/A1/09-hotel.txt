@@ -1,0 +1,29 @@
+code: de-a1-d009
+title: هتل: گرفتن کلید اتاق
+situation: شب به هتل رسیده‌ای و پیش پذیرش می‌روی تا کلید اتاقت را بگیری.
+turns:
+B: Guten Abend! Willkommen im Hotel Weber. | عصر بخیر! به هتل وبر خوش آمدید.
+- Guten Abend! Ich bin ein Zimmer für zwei Nächte. | عصر بخیر! من یک اتاق برای دو شبم.
++ Guten Abend! Ich habe ein Zimmer für zwei Nächte. | عصر بخیر! یک اتاق برای دو شب دارم.
+- Guten Abend! Ich habe einen Zug für zwei Nächte. | عصر بخیر! یک قطار برای دو شب دارم.
+why: «Ich habe ein Zimmer für zwei Nächte» یعنی اتاق گرفته‌ای. «Ich bin ein Zimmer» بی‌معنی است و در هتل قطار نمی‌گیریم.
+B: Wie ist Ihr Name, bitte? | نامتان چیست، لطفاً؟
++ Karimi. Sara Karimi. | کریمی. سارا کریمی.
+- Gut, danke. | خوبم، ممنون.
+- Ich habe Karimi. | من کریمی دارم.
+why: نامت را می‌گویی: «Karimi. Sara Karimi.». «Gut, danke» جواب احوالپرسی است و «Ich habe Karimi» بی‌معنی است.
+B: Danke. Hier ist Ihr Schlüssel. Ihr{Ihr-det} Zimmer hat die Nummer 24. | ممنون. این کلیدتان است. شماره اتاقتان ۲۴ است. | tts: Danke. Hier ist Ihr Schlüssel. Ihr Zimmer hat die Nummer vierundzwanzig.
+- Danke! Wer gibt es Frühstück? | ممنون! چه کسی صبحانه هست؟
++ Danke! Wann gibt es Frühstück? | ممنون! صبحانه کی هست؟
+- Danke! Wann gibt es Schlüssel? | ممنون! کلید کی هست؟
+why: زمان صبحانه را با «Wann gibt es Frühstück?» می‌پرسیم. «Wer» برای آدم است و کلید را همین الان گرفتی.
+B: Frühstück{Frühstück} gibt es von sieben bis zehn Uhr. | صبحانه از ساعت هفت تا ده است.
+- Super! Und wann ist das Frühstück? | عالی! صبحانه کی است؟
+- Super! Und wo bist das Restaurant? | عالی! رستوران کجایی؟
++ Super! Und wo ist das Restaurant? | عالی! رستوران کجاست؟
+why: «Wo ist das Restaurant?» درست است؛ با das Restaurant شکل ist می‌آید. ساعت صبحانه را همین الان گفت.
+B: Hier links. Einen schönen Abend! | همین‌جا سمت چپ. عصر خوبی داشته باشید!
++ Danke, Ihnen auch! | ممنون، شما هم!
+- Danke, guten Morgen! | ممنون، صبح بخیر!
+- Danke, gute Reise! | ممنون، سفر خوش!
+why: جواب مؤدبانه «Ihnen auch» است. عصر است، نه صبح، و کارمند هتل سفر نمی‌رود.

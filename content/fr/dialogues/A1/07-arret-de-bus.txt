@@ -1,0 +1,29 @@
+code: fr-a1-d007
+title: در ایستگاه اتوبوس
+situation: در ایستگاه اتوبوس منتظری. یک خانم کنار تو با تو حرف می‌زند.
+turns:
+B: Bonjour ! Vous attendez le bus 12 ? | سلام! منتظر اتوبوس ۱۲ هستید؟ | tts: Bonjour ! Vous attendez le bus douze ?
++ Oui. Il arrive quand ? | بله. کی می‌رسد؟
+- Oui. Je suis le bus 12. | بله. من اتوبوس ۱۲ هستم. | tts: Oui. Je suis le bus douze.
+- Oui. Il arrive quelle ? | بله. کدام می‌رسد؟
+why: زمان رسیدن را با «quand» می‌پرسیم. «Il arrive quelle» دستورش غلط است و «Je suis le bus 12» بی‌معنی است.
+B: Il arrive à dix heures, mais il est souvent en retard. | ساعت ده می‌رسد، ولی اغلب دیر می‌کند.
+- Ah, et il est quel âge maintenant ? | آه، او الان چند سالش است؟
++ Ah, et il est quelle heure maintenant ? | آه، الان ساعت چند است؟
+- Ah, et il a quelle heure maintenant ? | آه، او الان ساعت چند دارد؟
+why: ساعت را با «il est quelle heure» می‌پرسیم. «quel âge» سن است و با avoir ساعت نمی‌گوییم.
+B: Il est dix heures cinq. | ساعت ده و پنج دقیقه است.
+- Alors il est à l'heure ! | پس سر وقت است!
+- Alors ils sont en retard ! | پس آن‌ها دیر کرده‌اند!
++ Alors il est en retard ! | پس دیر کرده!
+why: اتوبوس ساعت ده می‌آید و حالا ده و پنج دقیقه است، پس «il est en retard». اتوبوس یکی است، پس «ils sont» نه.
+B: Vous allez où ? | کجا می‌روید؟
++ Je vais à la gare. | به ایستگاه قطار می‌روم.
+- Je vais à le gare. | به ایستگاه قطار می‌روم.
+- Je viens de la gare. | از ایستگاه قطار می‌آیم.
+why: gare مؤنث است، پس «à la gare». سؤال «کجا می‌روید؟» است، نه «از کجا می‌آیید؟».
+B: Le bus 12 va à la gare. Ah, voilà le bus ! | اتوبوس ۱۲ به ایستگاه قطار می‌رود. آه، اتوبوس آمد! | tts: Le bus douze va à la gare. Ah, voilà le bus !
+- Super ! Je suis le bus. | عالی! من اتوبوسم.
+- Super ! Merci, tu es sympa. | عالی! ممنون، تو مهربانی.
++ Super ! Merci beaucoup. | عالی! خیلی ممنون.
+why: تشکر ساده درست است. «Je suis le bus» بی‌معنی است و با یک غریبه tu نمی‌گوییم.

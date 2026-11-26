@@ -1,0 +1,29 @@
+code: de-a1-d010
+title: رستوران: سفارش غذا
+situation: با یک دوست به رستوران رفته‌ای. گارسون می‌آید.
+turns:
+B: Guten Abend! Wie viele Personen? | عصر بخیر! چند نفرید؟
+- Zwei Jahre, bitte. | دو سال، لطفاً.
++ Zwei Personen, bitte. | دو نفر، لطفاً.
+- Wir haben zwei. | ما دو داریم.
+why: تعداد نفرها را می‌گوییم: «Zwei Personen». «Zwei Jahre» سن یا زمان است.
+B: Bitte, hier ist Ihr Tisch und die Speisekarte. Was möchten Sie trinken? | بفرمایید، این میزتان و این منو. چه می‌نوشید؟
++ Eine Flasche Wasser, bitte. | یک بطری آب، لطفاً.
+- Ein Flasche Wasser, bitte. | یک بطری آب، لطفاً.
+- Eine Flasche Brot, bitte. | یک بطری نان، لطفاً.
+why: Flasche مؤنث است، پس «eine Flasche». نان را در بطری نمی‌فروشند.
+B: Und was möchten Sie essen? | چه می‌خورید؟
+- Ich trinke das Hähnchen mit Kartoffeln. | مرغ را با سیب‌زمینی می‌نوشم.
++ Ich nehme das Hähnchen mit Kartoffeln. | مرغ با سیب‌زمینی برمی‌دارم.
+- Ich nehme der Hähnchen mit Kartoffeln. | مرغ با سیب‌زمینی برمی‌دارم.
+why: برای سفارش «Ich nehme …» می‌گوییم و Hähnchen خنثی است: «das Hähnchen». غذا را نمی‌نوشند.
+B: Möchten Sie auch ein Eis? | بستنی هم می‌خواهید؟
+- Ja, eine Eis, bitte. | بله، یک بستنی، لطفاً.
++ Ja, gern. Ein Eis, bitte. | بله، با کمال میل. یک بستنی، لطفاً.
+- Ja, ein Hähnchen mit Eis, bitte. | بله، یک مرغ با بستنی، لطفاً.
+why: Eis خنثی است، پس «ein Eis». مرغ با بستنی بی‌معنی است.
+B: Hat es geschmeckt? | خوشمزه بود؟
++ Ja, sehr lecker! Die Rechnung, bitte. | بله، خیلی خوشمزه! صورت‌حساب، لطفاً.
+- Nein, sehr lecker! | نه، خیلی خوشمزه!
+- Ja, sehr lecker! Gib mir die Rechnung! | بله، خیلی خوشمزه! صورت‌حساب را بده!
+why: «Ja, sehr lecker!» یعنی خوشمزه بود. «Nein» با «lecker» جور نیست و «Gib mir!» با گارسون بی‌ادبانه است.

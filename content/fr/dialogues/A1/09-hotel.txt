@@ -1,0 +1,29 @@
+code: fr-a1-d009
+title: هتل: گرفتن کلید اتاق
+situation: به هتل رسیده‌ای و پیش پذیرش می‌روی تا کلید اتاقت را بگیری.
+turns:
+B: Bonjour ! Bienvenue à l'hôtel. | سلام! به هتل خوش آمدید.
++ Bonjour ! J'ai réservé une chambre. | سلام! یک اتاق رزرو کرده‌ام.
+- Bonjour ! Je suis réservé une chambre. | سلام! یک اتاق رزرو کرده‌ام.
+- Bonjour ! J'ai réservé un train. | سلام! یک قطار رزرو کرده‌ام.
+why: réserver در گذشته با avoir می‌آید: «j'ai réservé». در هتل اتاق رزرو می‌کنیم، نه قطار.
+B: Très bien. Votre nom, s'il vous plaît ? | خیلی خوب. نامتان، لطفاً؟
+- Ça va, merci. | خوبم، ممنون.
++ Karimi. Sara Karimi. | کریمی. سارا کریمی.
+- J'ai Karimi. | من کریمی دارم.
+why: نامت را می‌گویی: «Karimi. Sara Karimi.». «Ça va, merci» جواب احوالپرسی است و «J'ai Karimi» بی‌معنی است.
+B: Merci. Voilà votre clé. C'est la chambre 24, au deuxième étage. | ممنون. این کلیدتان است. اتاق ۲۴، طبقه دوم. | tts: Merci. Voilà votre clé. C'est la chambre vingt-quatre, au deuxième étage.
+- Merci ! Où sont l'escalier ? | ممنون! پله‌ها کجاست؟
+- Merci ! Qui est l'escalier ? | ممنون! پله کیست؟
++ Merci ! Où est l'escalier ? | ممنون! پله‌ها کجاست؟
+why: escalier مفرد است، پس «Où est l'escalier ?». «Qui» برای آدم است، نه جا.
+B: L'escalier est là-bas, à gauche. Le petit-déjeuner commence à sept heures. | پله‌ها آنجاست، سمت چپ. صبحانه ساعت هفت شروع می‌شود.
++ Et il finit à quelle heure ? | کی تمام می‌شود؟
+- Et il commence à quelle heure ? | کی شروع می‌شود؟
+- Et il finit à quel jour ? | در چه روزی تمام می‌شود؟
+why: ساعت شروع را گفت، پس ساعت تمام شدن را می‌پرسیم. «à quel jour» برای صبحانه هر روز معنی ندارد.
+B: À dix heures. Bonne soirée ! | ساعت ده. شب خوبی داشته باشید!
+- Merci, bon voyage ! | ممنون، سفر خوش!
++ Merci, bonne soirée ! | ممنون، شب خوبی داشته باشید!
+- Merci, bonne matin ! | ممنون، صبح بخیر!
+why: جواب «Bonne soirée» همان «bonne soirée» است. کارمند هتل سفر نمی‌رود، و «bonne matin» دستورش غلط است و شب هم هست.

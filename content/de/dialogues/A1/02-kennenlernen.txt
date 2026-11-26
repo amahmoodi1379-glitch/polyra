@@ -1,0 +1,29 @@
+code: de-a1-d002
+title: آشنایی با یک همکلاسی
+situation: روز اول کلاس است. یک همکلاسی به تو سلام می‌کند.
+turns:
+B: Hallo! Ich heiße Lukas. Und du? | سلام! اسم من لوکاس است. تو چی؟
+- Tschüss, Lukas! Ich heiße Sara. | خداحافظ لوکاس! اسم من ساراست.
++ Hallo, Lukas! Ich heiße Sara. | سلام لوکاس! اسم من ساراست.
+- Hallo, Lukas! Ich heißt Sara. | سلام لوکاس! اسم من ساراست.
+why: در اول آشنایی «Hallo» می‌گوییم، نه «Tschüss». با ich شکل heiße می‌آید، نه heißt.
+B: Woher kommst du, Sara? | سارا، اهل کجایی؟
++ Ich komme aus Teheran. | اهل تهرانم.
+- Ich komme in Teheran. | در تهران می‌آیم.
+- Ich wohne hier. | اینجا زندگی می‌کنم.
+why: «Woher?» با «aus» جواب داده می‌شود: «Ich komme aus Teheran». «Ich wohne hier» جای زندگی را می‌گوید، نه اهل کجا بودن را.
+B: Und wo wohnst du jetzt? | حالا کجا زندگی می‌کنی؟
+- Ich wohne aus Berlin. | من از برلین زندگی می‌کنم.
+- Ich komme aus Teheran. | اهل تهرانم.
++ Ich wohne hier in Berlin. | اینجا در برلین زندگی می‌کنم.
+why: برای جای زندگی «wohnen in» می‌گوییم، نه «aus». اهل کجا بودنت را قبلاً گفتی.
+B: Sprichst du schon gut Deutsch? | آلمانی را خوب حرف می‌زنی؟
+- Nein, nur wenig. Ich lernst noch. | نه، فقط کم. هنوز یاد می‌گیرم.
++ Nein, nur wenig. Ich lerne noch. | نه، فقط کم. هنوز یاد می‌گیرم.
+- Nein, du sprichst nur wenig. | نه، تو فقط کم حرف می‌زنی.
+why: با ich شکل lerne می‌آید، نه lernst. «du sprichst» درباره همکلاسی است، نه خودت.
+B: Lernen wir zusammen? | با هم درس بخوانیم؟
++ Ja, gern! | آره، با کمال میل!
+- Ja, tschüss! | آره، خداحافظ!
+- Ja, ich lerne zusammen. | آره، من با هم درس می‌خوانم.
+why: «Ja, gern!» یعنی موافقی. «tschüss» یعنی می‌روی، و «ich lerne zusammen» برای یک نفر معنی ندارد.

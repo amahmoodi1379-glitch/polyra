@@ -1,0 +1,34 @@
+code: fr-a1-d006
+title: در سوپرمارکت
+situation: در سوپرمارکت دنبال شیر می‌گردی. یک کارمند فروشگاه به تو نزدیک می‌شود.
+turns:
+B: Bonjour ! Je peux vous aider ? | سلام! می‌توانم کمکتان کنم؟
+- Oui, s'il vous plaît. Où est la lait ? | بله، لطفاً. شیر کجاست؟
+- Oui, s'il vous plaît. Qui est le lait ? | بله، لطفاً. شیر کیست؟
++ Oui, s'il vous plaît. Où est le lait ? | بله، لطفاً. شیر کجاست؟
+why: lait مذکر است، پس «le lait». «Qui» یعنی «چه کسی» و برای جا «Où» می‌پرسیم.
+B: Le lait est là-bas, à gauche. | شیر آنجاست، سمت چپ.
++ Merci ! Et les œufs ? | ممنون! تخم‌مرغ چطور؟
+- Merci ! Je suis à gauche. | ممنون! من سمت چپم.
+- Merci ! Et le œufs ? | ممنون! تخم‌مرغ چطور؟
+why: «Et les œufs ?» یعنی «تخم‌مرغ کجاست؟». œufs جمع است و «les» می‌خواهد، و «Je suis à gauche» جای خودت را می‌گوید.
+B: Les œufs sont aussi là-bas. | تخم‌مرغ هم آنجاست.
+- Très bien. Vous êtes des pommes ? | خیلی خوب. شما سیب هستید؟
++ Très bien. Vous avez des pommes ? | خیلی خوب. سیب دارید؟
+- Très bien. Tu as des pommes ? | خیلی خوب. سیب داری؟
+why: «Vous avez des pommes ?» یعنی «سیب دارید؟». «Vous êtes des pommes» بی‌معنی است و با کارمند فروشگاه tu نمی‌گوییم.
+B: Oui, les fruits sont devant la porte. | بله، میوه‌ها جلوی در هستند.
+- Merci beaucoup ! Et je peux manger où ? | خیلی ممنون! کجا می‌توانم غذا بخورم؟
+- Merci beaucoup ! Et je peux payer qui ? | خیلی ممنون! چه کسی می‌توانم پرداخت کنم؟
++ Merci beaucoup ! Et je peux payer où ? | خیلی ممنون! کجا می‌توانم پرداخت کنم؟
+why: برای جای پرداخت «payer où» می‌پرسیم. «payer qui» دستورش غلط است و جای غذا خوردن ربطی به خرید ندارد.
+B: Là-bas, à droite. Vous payez par carte ? | آنجا، سمت راست. با کارت پرداخت می‌کنید؟
++ Oui, par carte. | بله، با کارت.
+- Oui, pour carte. | بله، برای کارت.
+- Oui, je suis une carte. | بله، من یک کارتم.
+why: «par carte» یعنی «با کارت». «pour carte» حرف اضافه غلطی دارد و «je suis une carte» بی‌معنی است.
+B: Très bien. Bonne journée ! | خیلی خوب. روز خوبی داشته باشید!
+- Merci, tu aussi ! | ممنون، تو هم!
++ Merci, vous aussi ! | ممنون، شما هم!
+- Merci, bonne nuit aussi ! | ممنون، شب شما هم بخیر!
+why: جواب «Bonne journée» می‌شود «vous aussi». با کارمند tu نمی‌گوییم و روز است، نه شب.

@@ -1,0 +1,29 @@
+code: de-a1-d007
+title: در ایستگاه اتوبوس
+situation: در ایستگاه اتوبوس منتظری. یک خانم کنار تو با تو حرف می‌زند.
+turns:
+B: Entschuldigung, warten Sie auf den Bus 12? | ببخشید، منتظر اتوبوس ۱۲ هستید؟ | tts: Entschuldigung, warten Sie auf den Bus zwölf?
+- Ja. Ich bin der Bus 12. | بله. من اتوبوس ۱۲ هستم. | tts: Ja. Ich bin der Bus zwölf.
++ Ja. Wann kommt er? | بله. کی می‌آید؟
+- Ja. Wann kommen er? | بله. کی می‌آید؟
+why: زمان آمدن را با «Wann kommt er?» می‌پرسیم؛ با er شکل kommt می‌آید. «Ich bin der Bus» بی‌معنی است.
+B: Er kommt um zehn Uhr, aber er kommt oft zu spät. | ساعت ده می‌آید، ولی اغلب دیر می‌آید.
++ Und wie spät ist es jetzt? | الان ساعت چند است؟
+- Und wie alt ist es jetzt? | الان چند سالش است؟
+- Und wie spät bin es jetzt? | الان ساعت چندم؟
+why: ساعت را با «Wie spät ist es?» می‌پرسیم. «wie alt» سن را می‌پرسد و «bin es» دستورش غلط است.
+B: Es ist zehn nach zehn. | ده دقیقه از ده گذشته.
+- Dann kommt er früh! | پس زود آمده!
++ Dann kommt er zu spät! | پس دیر کرده!
+- Dann kommen er zu spät! | پس دیر کرده!
+why: اتوبوس ساعت ده می‌آید و حالا ده و ده دقیقه است، پس دیر کرده. با er شکل kommt می‌آید.
+B: Wohin fahren Sie? | کجا می‌روید؟
+- Ich fahre im Bahnhof. | در ایستگاه قطار می‌رانم.
+- Ich komme vom Bahnhof. | از ایستگاه قطار می‌آیم.
++ Ich fahre zum Bahnhof. | به ایستگاه قطار می‌روم.
+why: برای مقصد «zum Bahnhof» می‌گوییم. سؤال «کجا می‌روید؟» است، نه «از کجا می‌آیید؟».
+B: Der Bus 12 fährt zum Bahnhof. Oh, da kommt er! | اتوبوس ۱۲ به ایستگاه قطار می‌رود. آه، دارد می‌آید! | tts: Der Bus zwölf fährt zum Bahnhof. Oh, da kommt er!
++ Super! Vielen Dank! | عالی! خیلی ممنون!
+- Super! Ich bin der Bus! | عالی! من اتوبوسم!
+- Super! Danke, du bist nett! | عالی! ممنون، تو مهربانی!
+why: تشکر مؤدبانه درست است. «Ich bin der Bus» بی‌معنی است و با یک غریبه du نمی‌گوییم.

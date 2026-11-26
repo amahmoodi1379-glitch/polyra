@@ -1,0 +1,29 @@
+code: fr-a1-d004
+title: پرسیدن ساعت و روز
+situation: در خیابان هستی و ساعت و روز را از یک رهگذر می‌پرسی.
+turns:
+B: Bonjour ! Je peux vous aider ? | سلام! می‌توانم کمکتان کنم؟
++ Oui, pardon. Il est quelle heure ? | بله، ببخشید. ساعت چند است؟
+- Oui, pardon. Vous êtes quelle heure ? | بله، ببخشید. شما ساعت چند هستید؟
+- Oui, pardon. Il a quel âge ? | بله، ببخشید. او چند سالش است؟
+why: ساعت را با «Il est quelle heure ?» می‌پرسیم. «Vous êtes quelle heure» بی‌معنی است و «Il a quel âge» سن کسی را می‌پرسد.
+B: Il est midi et demi. | ساعت دوازده و نیم است.
+- Merci ! Et on est quelle heure ? | ممنون! ما ساعت چندیم؟
++ Merci ! Et on est quel jour aujourd'hui ? | ممنون! امروز چه روزی است؟
+- Merci ! Et tu es quel jour ? | ممنون! تو چه روزی هستی؟
+why: «On est quel jour aujourd'hui ?» روز را می‌پرسد. ساعت را تازه شنیدی، و با رهگذر tu نمی‌گوییم.
+B: Aujourd'hui, c'est jeudi. | امروز پنجشنبه است.
+- Jeudi ! Merci, bonne nuit. | پنجشنبه! ممنون، شب بخیر.
+- Jeudi ! Merci, bon anniversaire. | پنجشنبه! ممنون، تولدت مبارک.
++ Jeudi ! Merci beaucoup. | پنجشنبه! خیلی ممنون.
+why: «Merci beaucoup» تشکر ساده است. ظهر است، پس «bonne nuit» جا ندارد، و «bon anniversaire» ربطی به این گفتگو ندارد.
+B: Pas de problème. Vous n'êtes pas d'ici ? | خواهش می‌کنم. شما اهل اینجا نیستید؟
++ Non, je viens d'Iran. | نه، اهل ایرانم.
+- Non, je suis d'accord. | نه، موافقم.
+- Non, je viens de Iran. | نه، اهل ایرانم.
+why: «je viens d'Iran» درست است؛ پیش از واکه de می‌شود d'. «je suis d'accord» یعنی موافقم و جواب نیست.
+B: Ah, l'Iran ! Bonne journée ! | آه، ایران! روز خوبی داشته باشید!
+- Merci, à tu aussi ! | ممنون، تو هم همین‌طور!
++ Merci, à vous aussi ! | ممنون، شما هم همین‌طور!
+- Merci, bonne nuit aussi ! | ممنون، شب تو هم بخیر!
+why: «à vous aussi» یعنی «شما هم همین‌طور». بعد از à شکل toi می‌آید نه tu، و با رهگذر vous می‌گوییم.

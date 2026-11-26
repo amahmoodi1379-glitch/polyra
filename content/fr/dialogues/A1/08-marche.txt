@@ -1,0 +1,29 @@
+code: fr-a1-d008
+title: خرید میوه از بازار
+situation: در بازار هستی و از میوه‌فروش میوه می‌خری.
+turns:
+B: Bonjour ! Qu'est-ce que vous voulez ? | سلام! چه می‌خواهید؟
+- Bonjour ! Un kilo des pommes, s'il vous plaît. | سلام! یک کیلو سیب، لطفاً.
+- Bonjour ! Je suis un kilo de pommes. | سلام! من یک کیلو سیبم.
++ Bonjour ! Un kilo de pommes, s'il vous plaît. | سلام! یک کیلو سیب، لطفاً.
+why: بعد از مقدار، مثل «un kilo»، فقط de می‌آید: «un kilo de pommes». «Je suis un kilo de pommes» بی‌معنی است.
+B: Des pommes rouges ou des pommes vertes ? | سیب قرمز یا سیب سبز؟
++ Des pommes rouges, s'il vous plaît. | سیب قرمز، لطفاً.
+- Oui, merci. | بله، ممنون.
+- Des pommes rouges, s'il te plaît. | سیب قرمز، لطفاً.
+why: سؤال «این یا آن؟» است و باید یکی را گفت. با فروشنده «s'il vous plaît» می‌گوییم، نه «s'il te plaît».
+B: Voilà. Et avec ça ? | بفرمایید. چیز دیگری؟
+- Trois heures aussi, s'il vous plaît. | سه ساعت هم، لطفاً.
++ Trois oranges aussi, s'il vous plaît. | سه پرتقال هم، لطفاً.
+- Une oranges aussi, s'il vous plaît. | یک پرتقال هم، لطفاً.
+why: «Trois oranges» درست است. ساعت را نمی‌شود خرید، و «une» با اسم جمع نمی‌آید.
+B: Ça fait cinq euros. | پنج یورو می‌شود.
+- Voilà. Tu as un sac ? | بفرمایید. کیسه داری؟
+- Voilà. Vous êtes un sac ? | بفرمایید. شما کیسه هستید؟
++ Voilà. Vous avez un sac ? | بفرمایید. کیسه دارید؟
+why: «Vous avez un sac ?» یعنی «کیسه دارید؟». با فروشنده tu نمی‌گوییم و «Vous êtes un sac» بی‌معنی است.
+B: Oui, voilà un sac. Bonne journée ! | بله، این هم کیسه. روز خوبی داشته باشید!
++ Merci, bonne journée ! | ممنون، روز خوبی داشته باشید!
+- Merci, bon anniversaire ! | ممنون، تولدتان مبارک!
+- Merci, bonne nuit ! | ممنون، شب بخیر!
+why: جواب «Bonne journée» همان «bonne journée» است. صبح در بازار «bonne nuit» نمی‌گوییم و «bon anniversaire» ربطی ندارد.

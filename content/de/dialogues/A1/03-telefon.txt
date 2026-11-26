@@ -1,0 +1,29 @@
+code: de-a1-d003
+title: تلفن به دوست برای قرار
+situation: به دوستت تام زنگ می‌زنی تا با هم وقت بگذرانید.
+turns:
+B: Hallo, hier ist Tom. | الو، تام هستم.
+- Guten Tag, Herr Tom! Hier ist Sara. | روز بخیر آقای تام! سارا هستم.
++ Hallo, Tom! Hier ist Sara. Hast du heute Zeit? | سلام تام! سارا هستم. امروز وقت داری؟
+- Hallo, Tom! Hier bin Sara. | سلام تام! سارا هستم.
+why: با دوست خودمانی حرف می‌زنیم: «Hallo, Tom! Hier ist Sara.». «Herr» با دوست خیلی رسمی است و «Hier bin Sara» دستورش غلط است.
+B: Ja, heute habe ich Zeit. Warum? | آره، امروز وقت دارم. چرا؟
+- Ich bin Kaffee. | من قهوه‌ام.
+- Wir können zusammen Kaffee trinkt. | می‌توانیم با هم قهوه بنوشیم.
++ Wir können zusammen Kaffee trinken. | می‌توانیم با هم قهوه بنوشیم.
+why: بعد از können فعل دوم به شکل مصدر می‌آید: «trinken». «Ich bin Kaffee» بی‌معنی است.
+B: Ja, gern! Wann? | آره، حتماً! کی؟
++ Um vier Uhr? | ساعت چهار؟
+- Zu Hause. | در خانه.
+- Vier Jahre alt. | چهار ساله.
+why: سؤال «کی؟» است، پس «Um vier Uhr». «Zu Hause» جای قرار است و «Vier Jahre alt» سن.
+B: Um vier, okay. Und wo? | ساعت چهار، باشد. کجا؟
+- Um vier Uhr. | ساعت چهار.
++ Bei mir zu Hause? | خانه من؟
+- Bei ich zu Hause? | خانه من؟
+why: بعد از bei شکل mir می‌آید: «bei mir». ساعت را قبلاً گفتید و حالا جای قرار پرسیده شده.
+B: Gut! Ich komme mit Anna, okay? | خوب! با آنا می‌آیم، باشد؟
+- Ja, gern! Hallo! | آره، حتماً! سلام!
+- Ja, gern! Kommst du mit mir? | آره، حتماً! با من می‌آیی؟
++ Ja, gern! Tschüss! | آره، حتماً! خداحافظ!
+why: آخر تلفن «Tschüss» می‌گوییم، نه «Hallo». تام با آنا می‌آید، نه با تو.

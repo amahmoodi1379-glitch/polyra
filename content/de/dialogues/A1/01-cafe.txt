@@ -1,0 +1,29 @@
+code: de-a1-d001
+title: سفارش در کافه
+situation: در یک کافه هستی. گارسون سفارشت را می‌پرسد.
+turns:
+B: Guten Tag! Was möchten Sie? | روز بخیر! چه میل دارید؟
++ Einen Kaffee, bitte. | یک قهوه، لطفاً.
+- Ich bin ein Kaffee. | من یک قهوه هستم.
+- Hallo! Hast du Kaffee? | سلام! قهوه داری؟
+why: «Einen Kaffee, bitte» سفارش مؤدبانه است. «Ich bin ein Kaffee» یعنی «من قهوه هستم»، و با گارسون du نمی‌گوییم.
+B: Groß oder klein? | بزرگ یا کوچک؟
+- Ja, danke. | بله، ممنون.
++ Klein, bitte. | کوچک، لطفاً.
+- Ich bin klein, bitte. | من کوچکم، لطفاً.
+why: گارسون می‌پرسد بزرگ یا کوچک، پس باید یکی را گفت. «Ich bin klein» درباره خودت است، نه قهوه.
+B: Möchten Sie auch Wasser? | آب هم می‌خواهید؟
+- Ja, ich esse Wasser. | بله، آب می‌خورم.
+- Ja, Sie möchten Wasser. | بله، شما آب می‌خواهید.
++ Ja, ein Wasser, bitte. | بله، یک آب، لطفاً.
+why: «ein Wasser, bitte» درست است. آب را نمی‌خورند (essen)، می‌نوشند، و «Sie möchten» درباره گارسون است، نه خودت.
+B: Möchten Sie auch etwas essen? | چیزی هم می‌خورید؟
++ Nein, danke. Nur Kaffee und Wasser. | نه، ممنون. فقط قهوه و آب.
+- Ja, ich trinke Brot. | بله، نان می‌نوشم.
+- Nein, danke. Ich bin Brot. | نه، ممنون. من نانم.
+why: «Nur Kaffee und Wasser» یعنی چیز دیگری نمی‌خواهی. نان را نمی‌نوشند و «Ich bin Brot» بی‌معنی است.
+B: Hier, bitte. Ihr Kaffee und Ihr Wasser. | بفرمایید. قهوه و آبتان.
+- Guten Tag! | روز بخیر!
+- Ja, ich bin Kaffee. | بله، من قهوه‌ام.
++ Danke sehr! | خیلی ممنون!
+why: وقتی سفارش را می‌آورند تشکر می‌کنیم. «Guten Tag» سلام است و اول گفتگو گفته شد.
