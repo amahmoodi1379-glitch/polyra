@@ -2,6 +2,8 @@ import { describe, expect, it } from "vitest";
 import { standardTable } from "@/server/content/conjugation-check";
 import { Analyzer } from "@/server/content/packs/analyze";
 import { buildPack } from "@/server/content/packs/build";
+import { buildDialogues } from "@/server/content/packs/dialogues";
+import { buildPhonics } from "@/server/content/packs/phonics";
 import { buildGrammar } from "@/server/content/packs/grammar";
 import { germanAdjectiveForms, Morph } from "@/server/content/packs/morph";
 import { buildSentences } from "@/server/content/packs/sentences";
@@ -173,6 +175,68 @@ describe("grammar units of a pack", () => {
     const built = buildGrammar(analyzer, [{ file: "u.txt", text }], "A1");
     const lines = built.errors.map((item) => `${item.line}: ${item.text}`);
     expect(lines).toEqual(expect.arrayContaining([expect.stringMatching(/^3: unknown header line/), expect.stringMatching(/^1: missing header «rule:»/), expect.stringMatching(/^7: d: needs three wrong options/)]));
+  });
+});
+
+describe("phonics lessons of a pack", () => {
+  it("builds a lesson of the teacher's list with its place, kind and paragraphs", () => {
+    expect(level.phonics).toHaveLength(1);
+    const lesson = level.phonics[0];
+    expect(lesson).toMatchObject({ order_no: 2, kind: "contrast", label: "u و ou" });
+    expect(lesson.record).toMatchObject({ graphemes: ["u", "û", "ou", "où"], minimal_pairs: expect.arrayContaining([{ a: "tu", b: "tout", a_fa: "تو", b_fa: "همه" }]) });
+    expect((lesson.record.example_words as { wrong_spellings: string[] }[])[0].wrong_spellings).toEqual(["tou", "teu"]);
+    expect(lesson.record.tip_fa).toMatch(/نگه دار\.\n\nou/);
+    expect(pack.levels.slice(1).every((other) => other.phonics.length === 0)).toBe(true);
+  });
+
+  it("refuses a lesson outside the list, another kind, too few words and letters of another language", () => {
+    const lesson = (head: string[], words: string[]) => ["tip:", "نکته‌ای کوتاه.", "words:", ...words].join("\n").replace(/^/, `${head.join("\n")}\n`);
+    const built = buildPhonics(
+      [
+        { file: "a.txt", text: lesson(["label: ä و a", "kind: contrast"], ["tu | تو | tou, teu"]) },
+        { file: "b.txt", text: lesson(["label: u و ou", "kind: rule"], ["tu | تو | tou, teu"]) },
+        { file: "c.txt", text: lesson(["label: e خاموش", "kind: rule"], ["table | میز | täble, tabl"]) },
+      ],
+      "fr",
+    );
+    const errors = built.errors.map((item) => `${item.file}: ${item.text}`);
+    expect(errors).toEqual(
+      expect.arrayContaining([
+        expect.stringMatching(/^a\.txt: «ä و a» is not a lesson/),
+        expect.stringMatching(/^b\.txt: the list gives «u و ou» the kind contrast/),
+        expect.stringMatching(/^c\.txt: «täble» has letters that are not fr/),
+        expect.stringMatching(/^c\.txt: .*example_words/),
+      ]),
+    );
+    expect(built.lessons).toEqual([]);
+  });
+});
+
+describe("situational dialogues of a pack", () => {
+  it("builds a dialogue whose lines and choices are mapped like text sentences", () => {
+    expect(level.dialogues).toHaveLength(1);
+    const dialogue = level.dialogues[0];
+    expect(dialogue).toMatchObject({ code: "fr-a1-d001", level: "A1", situation: "یک همسایه درباره خانه‌ات از تو می‌پرسد." });
+    type Sentence = { speaker?: string | null; text: string; tokens: { surface: string; code: string | null }[] };
+    const turns = (dialogue.answer.dialogue as { turns: { line: Sentence; choices: Sentence[]; correct: number; why_fa: string }[] }).turns;
+    expect(turns.map((turn) => turn.correct)).toEqual([0, 1, 2, 0, 1]);
+    expect(turns[0].line).toMatchObject({ speaker: "B", text: "Vous avez une maison ?" });
+    expect(turns[0].choices[0]).not.toHaveProperty("speaker");
+    // A wrong choice keeps its wrong form, mapped to the word it misuses.
+    expect(turns[0].choices[1].tokens.find((token) => token.surface === "un")?.code).toBe("un");
+    expect(turns[1].choices[0].tokens.find((token) => token.surface === "Il")?.code).toBe("il");
+    expect(dialogue.codes).toEqual(expect.arrayContaining(["maison", "chat", "pain", "aimer"]));
+  });
+
+  it("names a turn without one right choice or a why, and a right choice always in one place", () => {
+    const analyzer = analyzerOf("fr", pack.words);
+    const turn = (marks: string) =>
+      ["B: Vous avez une maison ? | خانه دارید؟", `${marks[0]} J'ai une maison. | خانه دارم.`, `${marks[1]} Je suis une maison. | من خانه‌ام.`, `${marks[2]} J'ai un chat. | گربه دارم.`, "why: دلیل."];
+    const text = ["code: fr-a1-d009", "title: عنوان", "situation: موقعیت.", "turns:", ...turn("+--"), ...turn("+--"), ...turn("+--"), ...turn("++-").slice(0, 4)].join("\n");
+    const built = buildDialogues(analyzer, [{ file: "d.txt", text }], "A1", "fr");
+    const errors = built.errors.map((item) => item.text);
+    expect(errors).toEqual(expect.arrayContaining(["a turn needs exactly one «+» choice, not 2", "a turn needs «why:»", "the right choice is in the same place in every turn; move it"]));
+    expect(built.dialogues).toEqual([]);
   });
 });
 

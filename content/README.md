@@ -14,6 +14,8 @@ content/
     grammar/A1/01-etre.txt …   one grammar unit per file, in teaching order by file name
     sentences/A1/*.txt    the fill-the-gap sentences of the level's words
     texts/A1/01-im-cafe.txt …  listening and reading texts with their questions
+    dialogues/A1/01-cafe.txt …  situational dialogues (PRD §8b.4)
+    phonics/01-….txt …    phonics lessons of the teacher's list (PRD §8), not tied to a level
 ```
 
 Conjugation tables are not written: the loader builds them from the open data (Lefff for French,
@@ -220,3 +222,59 @@ per line in the P-T shape, two to eight per set; the loader imports them through
   right order), `match` and `find` for reading; `mcq`, `tf`, `order`, `num` and `dict` for listening. A dictated
   sentence has no digits. `explanation_fa` quotes the text, with enough Persian around the quote to pass the
   Persian-field check.
+
+## Situational dialogues: `content/<language>/dialogues/<LEVEL>/NN-name.txt`
+
+One dialogue per file (PRD §8b.4, P-D); file names give the order. The other person's line (speaker `B`), then the
+learner's three choices: `+` the one right in this situation, `-` the two that are surely wrong, then `why:`.
+
+```
+code: fr-a1-d001
+title: سفارش در کافه
+situation: در یک کافه هستی. گارسون سفارشت را می‌پرسد.
+turns:
+B: Bonjour ! Vous voulez quelque chose ? | سلام! چیزی میل دارید؟
++ Oui, un café, s'il vous plaît. | بله، یک قهوه، لطفاً.
+- Oui, je suis un café. | بله، من یک قهوه هستم.
+- Salut ! Tu as un café ? | سلام! قهوه داری؟
+why: «Oui, un café, s'il vous plaît» سفارش مؤدبانه است …
+```
+
+- 5 to 8 turns. The code is `<language>-<level>-dNNN`, unique in the language.
+- A wrong choice is wrong by grammar, meaning or tone (tu/du with a stranger, a goodbye as a greeting) and never
+  right in another reading. Every choice is also heard, so a wrong one must **sound** different from the right one:
+  «je vient» or «deux croissant» are not wrong choices, «je va», «la lait» or «un glace» are.
+- Choices are shown in the order written: move the right one between turns (the checker refuses a dialogue that
+  keeps it in one place). A wrong form that is no form of any word names its word: `gegesst{essen}`.
+- Words: a learner meets a new dialogue once `known.threshold` (90%) of its words are known, after
+  `gate.dialogue_words` words. The first A1 dialogues use the first 200 words or so (PRD §14.9); the A1 situations
+  that need their own words (shop, bus, hotel, restaurant) use the whole level (DECISIONS.md, 26 Nov 2026).
+  `--texts` lists each dialogue's deepest card word too.
+
+## Phonics lessons: `content/<language>/phonics/NN-name.txt`
+
+One lesson per file (PRD §8, P-H). `label` and `kind` are exactly an entry of `phonics.lessons.<language>`, which
+gives the lesson its place; the language's lessons load with its first level.
+
+```
+label: u و ou
+kind: contrast
+graphemes: u, û, ou, où
+tip:
+u فرانسوی در فارسی نیست: لب‌ها را برای «او» گرد کن، ولی زبان را جای «ای» نگه دار …
+words:
+tu | تو | tou, teu
+pairs:
+tu | tout | تو | همه
+sentences:
+Les enfants jouent. | 0
+```
+
+- `contrast`: 6 to 10 words and at least 5 pairs, the lesson's sound first (`a`) and the sound Persian speakers
+  confuse it with second (`b`). `rule`: 8 to 12 words. `liaison`: at least 8 sentences, each with the indexes
+  (from 0, words split at spaces) of the words a liaison follows; obligatory liaisons only.
+- Every word has two wrong spellings in the language's own letters. P1 plays the word and offers its spelling and
+  the two wrong ones, so a wrong spelling is never another real word said the same way (vert/verre); in a
+  contrast lesson it shows the confused sound (tu → tou).
+- The tip says in at most three sentences where tongue and lips go, against the nearest Persian sound, or the
+  reading rule with an example; it never spells a pronunciation in Persian letters.

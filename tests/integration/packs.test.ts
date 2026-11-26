@@ -30,7 +30,7 @@ describe("content packs", () => {
     const level = report.levels[0];
     expect(level.rejected).toEqual([]);
     expect(level.skipped).toEqual([]);
-    expect(level.added).toMatchObject({ units: 2, words: 40, tables: 12, sentences: 13 });
+    expect(level.added).toMatchObject({ units: 2, words: 40, tables: 12, sentences: 13, dialogues: 1, "phonics lessons": 1 });
 
     const word = await testDb.word.findFirstOrThrow({ where: { language: "fr", code: "voiture" } });
     expect(word.status).toBe("published");
@@ -47,6 +47,16 @@ describe("content packs", () => {
     const batches = await testDb.importBatch.findMany({ where: { prompt_version: PACK_VERSION } });
     expect(batches.every((batch) => batch.state === "reviewed")).toBe(true);
     expect(report.published).toBeGreaterThan(0);
+
+    // A dialogue's lines and choices are sentences published with it; a phonics lesson takes its place in the list.
+    const dialogue = await testDb.dialogue.findFirstOrThrow({ where: { language: "fr", code: "fr-a1-d001" } });
+    expect(dialogue.status).toBe("published");
+    const turns = dialogue.turns as { sentence_id: number; choices: { sentence_id: number }[]; correct: number }[];
+    expect(turns).toHaveLength(5);
+    const ids = turns.flatMap((turn) => [turn.sentence_id, ...turn.choices.map((choice) => choice.sentence_id)]);
+    expect(await testDb.sentence.count({ where: { id: { in: ids }, status: "published" } })).toBe(20);
+    const lesson = await testDb.phonicsLesson.findFirstOrThrow({ where: { language: "fr" } });
+    expect(lesson).toMatchObject({ sound_label: "u و ou", kind: "contrast", order_no: 2, status: "published" });
   });
 
   it("loads an item once: the next start adds nothing, and an item a teacher deleted stays deleted", async () => {
