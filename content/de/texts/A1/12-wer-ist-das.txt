@@ -1,0 +1,26 @@
+code: de-a1-t012
+title: Wer ist das?
+kind: dialogue
+sentences:
+A: Wer ist das? | این کیست؟
+B: Das ist Herr Weber. | این آقای وبر است.
+A: Und die Frau? | و آن خانم؟
+B: Das ist Frau Weber. Sie kommt aus Wien. | این خانم وبر است. اهل وین است.
+A: Haben sie Kinder? | بچه دارند؟
+B: Ja, ein Kind. Es heißt Max. | بله، یک بچه. اسمش ماکس است.
+A: Ist Max groß? | ماکس بزرگ است؟
+B: Nein, er ist sehr klein. | نه، خیلی کوچک است.
+A: Wo wohnen sie? | کجا زندگی می‌کنند؟
+B: Hier, in Berlin. | همین‌جا، در برلین.
+reading A:
+{"type":"mcq","prompt":"خانم وبر اهل کجاست؟","options":["برلین","وین","زوریخ","مونیخ"],"correct":1,"explanation_fa":"گفته می‌شود: «Sie kommt aus Wien.»"}
+{"type":"tf","prompt":"آقا و خانم وبر دو بچه دارند.","correct":false,"explanation_fa":"گفته می‌شود: «Ja, ein Kind.»، یعنی یک بچه."}
+reading B:
+{"type":"match","prompt":"هر اسم را به جمله‌اش وصل کن.","left":["خانم وبر","ماکس"],"right":["اهل وین است","خیلی کوچک است","در هامبورگ زندگی می‌کند"],"pairs":[[0,0],[1,1]],"explanation_fa":"خانم وبر اهل وین است و ماکس خیلی کوچک است."}
+{"type":"find","prompt":"کدام جمله می‌گوید آن‌ها کجا زندگی می‌کنند؟","correct_sentence":9,"explanation_fa":"گفته می‌شود: «Hier, in Berlin.»"}
+listening A:
+{"type":"num","prompt":"آقا و خانم وبر چند بچه دارند؟","answer":"1","accepted":["1","eins"],"explanation_fa":"گفته می‌شود: «Ja, ein Kind.»"}
+{"type":"tf","prompt":"ماکس خیلی کوچک است.","correct":true,"explanation_fa":"گفته می‌شود: «Nein, er ist sehr klein.»"}
+listening B:
+{"type":"dict","sentence":7}
+{"type":"mcq","prompt":"آقا و خانم وبر کجا زندگی می‌کنند؟","options":["وین","برلین","هامبورگ","تهران"],"correct":1,"explanation_fa":"گفته می‌شود: «Hier, in Berlin.»"}

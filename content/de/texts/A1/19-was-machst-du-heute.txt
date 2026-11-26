@@ -1,0 +1,23 @@
+code: de-a1-t019
+title: Was machst du heute?
+kind: dialogue
+sentences:
+A: Was machst du heute, Laura? | لورا، امروز چه کار می‌کنی؟
+B: Heute arbeite ich. Und morgen gehe ich mit Mama in die Stadt. | امروز کار می‌کنم. فردا با مامان به شهر می‌روم.
+A: Was kauft ihr in der Stadt? | در شهر چه می‌خرید؟
+B: Mama möchte ein Buch kaufen. | مامان می‌خواهد یک کتاب بخرد.
+A: Ich möchte auch in die Stadt gehen! | من هم می‌خواهم به شهر بروم!
+B: Gut! Wir fahren um 10. | خوب! ساعت ۱۰ راه می‌افتیم. | tts: Gut! Wir fahren um zehn.
+A: Sehr gut, danke! | خیلی خوب، ممنون!
+reading A:
+{"type":"mcq","prompt":"لورا امروز چه کار می‌کند؟","options":["کار می‌کند","درس می‌خواند","به شهر می‌رود","خرید می‌کند"],"correct":0,"explanation_fa":"لورا می‌گوید: «Heute arbeite ich.»"}
+{"type":"tf","prompt":"لورا فردا با مامانش به شهر می‌رود.","correct":true,"explanation_fa":"لورا می‌گوید: «morgen gehe ich mit Mama in die Stadt»."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید مامان لورا چه می‌خواهد بخرد؟","correct_sentence":3,"explanation_fa":"لورا می‌گوید: «Mama möchte ein Buch kaufen.»"}
+{"type":"tf","prompt":"نفر اول نمی‌خواهد به شهر برود.","correct":false,"explanation_fa":"می‌گوید: «Ich möchte auch in die Stadt gehen!»"}
+listening A:
+{"type":"num","prompt":"ساعت چند راه می‌افتند؟","answer":"10","accepted":["10","zehn"],"explanation_fa":"لورا می‌گوید: «Wir fahren um 10.»"}
+{"type":"mcq","prompt":"مامان لورا می‌خواهد چه بخرد؟","options":["کتاب","نان","ماشین","چای"],"correct":0,"explanation_fa":"لورا می‌گوید: «Mama möchte ein Buch kaufen.»"}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"tf","prompt":"لورا امروز به شهر می‌رود.","correct":false,"explanation_fa":"لورا می‌گوید: «morgen»، یعنی فردا به شهر می‌رود."}

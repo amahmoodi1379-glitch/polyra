@@ -1,0 +1,24 @@
+code: fr-a1-t002
+title: Qui est-ce ?
+kind: dialogue
+sentences:
+A: Pardon, qui est l'homme là ? | ببخشید، آن مرد آنجا کیست؟
+B: C'est Paul, un ami. | پل است، یکی از دوستانم.
+A: Et la femme ? | و آن زن؟
+B: C'est Julie, la femme de Paul. | ژولی است، همسر پل.
+A: Ils ont des enfants ? | بچه دارند؟
+B: Oui, une fille et un garçon. | بله، یک دختر و یک پسر.
+A: Ils s'appellent comment ? | اسمشان چیست؟
+B: Emma et Lucas. Lucas est très grand ! | اِما و لوکا. لوکا خیلی قدبلند است!
+reading A:
+{"type":"mcq","prompt":"پل کیست؟","options":["یک دوست","پدرِ گوینده","برادرِ گوینده","یک معلم"],"correct":0,"explanation_fa":"گفته می‌شود: «C'est Paul, un ami.»"}
+{"type":"tf","prompt":"ژولی همسر پل است.","correct":true,"explanation_fa":"گفته می‌شود: «C'est Julie, la femme de Paul.»"}
+reading B:
+{"type":"match","prompt":"هر اسم را به آدمش وصل کن.","left":["پل","ژولی","لوکا"],"right":["یک دوست","همسر پل","پسرِ پل و ژولی","یک معلم"],"pairs":[[0,0],[1,1],[2,2]],"explanation_fa":"پل دوست است، ژولی همسر پل و لوکا پسرشان."}
+{"type":"tf","prompt":"پل و ژولی سه بچه دارند.","correct":false,"explanation_fa":"گفته می‌شود: «une fille et un garçon»، یعنی دو بچه."}
+listening A:
+{"type":"num","prompt":"پل و ژولی چند بچه دارند؟","answer":"2","accepted":["2","deux"],"explanation_fa":"گفته می‌شود: «une fille et un garçon»."}
+{"type":"tf","prompt":"لوکا خیلی قدبلند است.","correct":true,"explanation_fa":"گفته می‌شود: «Lucas est très grand !»"}
+listening B:
+{"type":"dict","sentence":4}
+{"type":"mcq","prompt":"اسم دختر چیست؟","options":["ژولی","اِما","لئا","سوفی"],"correct":1,"explanation_fa":"گفته می‌شود: «Emma et Lucas.»"}

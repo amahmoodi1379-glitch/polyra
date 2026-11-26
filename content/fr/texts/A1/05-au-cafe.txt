@@ -1,0 +1,24 @@
+code: fr-a1-t005
+title: Au café
+kind: dialogue
+sentences:
+A: Bonjour, madame ! | سلام خانم!
+B: Bonjour, monsieur. Je voudrais un café, s'il vous plaît. | سلام آقا. یک قهوه می‌خواهم، لطفاً.
+A: Un grand café ou un petit café ? | قهوه بزرگ یا قهوه کوچک؟
+B: Un petit café. Et de l'eau pour ma fille. | قهوه کوچک. و آب برای دخترم.
+A: Votre fille mange quelque chose ? | دخترتان چیزی می‌خورد؟
+B: Oui, un peu de pain, s'il vous plaît. | بله، کمی نان، لطفاً.
+A: Voilà ! Un petit café, de l'eau et du pain. | بفرمایید! یک قهوه کوچک، آب و نان.
+B: Merci beaucoup ! | خیلی ممنون!
+reading A:
+{"type":"mcq","prompt":"زن چه می‌نوشد؟","options":["قهوه بزرگ","قهوه کوچک","آب","چای"],"correct":1,"explanation_fa":"زن می‌گوید: «Un petit café.»"}
+{"type":"tf","prompt":"دختر هیچ چیزی نمی‌خورد.","correct":false,"explanation_fa":"زن می‌گوید: «un peu de pain»، یعنی دخترش کمی نان می‌خورد."}
+reading B:
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["گارسون می‌پرسد دختر چیزی می‌خورد یا نه.","زن قهوه می‌خواهد.","زن تشکر می‌کند.","گارسون می‌پرسد قهوه بزرگ باشد یا کوچک."],"correct_order":[1,3,0,2],"explanation_fa":"اول قهوه، بعد اندازه قهوه، بعد غذای دختر و آخر تشکر."}
+{"type":"find","prompt":"کدام جمله می‌گوید آب برای چه کسی است؟","correct_sentence":3,"explanation_fa":"زن می‌گوید: «Et de l'eau pour ma fille.»"}
+listening A:
+{"type":"mcq","prompt":"دختر چه می‌خورد؟","options":["کیک","نان","سیب","هیچ چیز"],"correct":1,"explanation_fa":"زن می‌گوید: «un peu de pain»."}
+{"type":"tf","prompt":"زن قهوه بزرگ می‌خواهد.","correct":false,"explanation_fa":"زن می‌گوید: «Un petit café.»"}
+listening B:
+{"type":"dict","sentence":4}
+{"type":"mcq","prompt":"آخر گفتگو زن چه می‌گوید؟","options":["خداحافظ","خیلی ممنون","ببخشید","سلام"],"correct":1,"explanation_fa":"زن می‌گوید: «Merci beaucoup !»"}

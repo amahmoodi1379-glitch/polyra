@@ -1,0 +1,25 @@
+code: de-a1-t016
+title: Kaffee oder Tee?
+kind: dialogue
+sentences:
+A: Möchtest du Kaffee oder Tee, Lena? | لنا، قهوه می‌خواهی یا چای؟
+B: Tee, bitte. | چای، لطفاً.
+A: Und möchtest du auch Brot? | نان هم می‌خواهی؟
+B: Nein, danke. Ich esse heute wenig. | نه، ممنون. امروز کم می‌خورم.
+A: Und Wasser? | آب چی؟
+B: Ja, bitte. Danke! | آره، لطفاً. ممنون!
+A: Hier ist dein Tee. | این هم چای تو.
+B: Danke! Der Tee ist sehr gut. | ممنون! چای خیلی خوب است.
+A: Mein Vater kauft den Tee in Teheran. | پدرم چای را در تهران می‌خرد.
+reading A:
+{"type":"mcq","prompt":"لنا چه می‌نوشد؟","options":["قهوه","چای","شیر","هیچ"],"correct":1,"explanation_fa":"لنا می‌گوید: «Tee, bitte.»"}
+{"type":"tf","prompt":"لنا نان می‌خواهد.","correct":false,"explanation_fa":"لنا می‌گوید: «Nein, danke.»"}
+reading B:
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["لنا آب می‌خواهد.","لنا چای می‌خواهد.","لنا می‌گوید چای خیلی خوب است.","لنا نان نمی‌خواهد."],"correct_order":[1,3,0,2],"explanation_fa":"اول چای، بعد نان نه، بعد آب، و آخر می‌گوید چای خوب است."}
+{"type":"find","prompt":"کدام جمله می‌گوید چای از کجا خریده شده؟","correct_sentence":8,"explanation_fa":"گفته می‌شود: «Mein Vater kauft den Tee in Teheran.»"}
+listening A:
+{"type":"mcq","prompt":"چای از کجا خریده شده؟","options":["برلین","تهران","وین","هامبورگ"],"correct":1,"explanation_fa":"گفته می‌شود: «Mein Vater kauft den Tee in Teheran.»"}
+{"type":"tf","prompt":"لنا امروز زیاد غذا می‌خورد.","correct":false,"explanation_fa":"لنا می‌گوید: «Ich esse heute wenig.»"}
+listening B:
+{"type":"dict","sentence":7}
+{"type":"tf","prompt":"لنا آب هم می‌خواهد.","correct":true,"explanation_fa":"لنا می‌گوید: «Ja, bitte. Danke!»"}

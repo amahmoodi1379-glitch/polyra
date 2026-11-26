@@ -1,0 +1,24 @@
+code: de-a1-t015
+title: Lernst du Deutsch?
+kind: dialogue
+sentences:
+A: Lernst du Deutsch, Ali? | علی، آلمانی یاد می‌گیری؟
+B: Ja, ich lerne Deutsch in der Schule. | آره، در مدرسه آلمانی یاد می‌گیرم.
+A: Und verstehst du viel? | زیاد می‌فهمی؟
+B: Ich verstehe viel, aber ich spreche wenig. | زیاد می‌فهمم، ولی کم حرف می‌زنم.
+A: Was liest du? | چه می‌خوانی؟
+B: Ich lese ein Buch für Kinder. Es ist klein und schön. | یک کتاب برای بچه‌ها می‌خوانم. کوچک و قشنگ است.
+A: Ich möchte auch Deutsch lernen! | من هم می‌خواهم آلمانی یاد بگیرم!
+B: Das ist gut! Deutsch{Deutsch} ist schön. | خوب است! آلمانی قشنگ است.
+reading A:
+{"type":"mcq","prompt":"علی کجا آلمانی یاد می‌گیرد؟","options":["در خانه","در مدرسه","سر کار","در برلین"],"correct":1,"explanation_fa":"علی می‌گوید: «ich lerne Deutsch in der Schule»."}
+{"type":"tf","prompt":"علی زیاد آلمانی حرف می‌زند.","correct":false,"explanation_fa":"علی می‌گوید: «ich spreche wenig»، یعنی کم حرف می‌زند."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید علی چه کتابی می‌خواند؟","correct_sentence":5,"explanation_fa":"علی می‌گوید: «Ich lese ein Buch für Kinder.»"}
+{"type":"tf","prompt":"نفر اول هم می‌خواهد آلمانی یاد بگیرد.","correct":true,"explanation_fa":"می‌گوید: «Ich möchte auch Deutsch lernen!»"}
+listening A:
+{"type":"mcq","prompt":"کتاب علی برای چه کسانی است؟","options":["بچه‌ها","معلم‌ها","پدر و مادرها","دانشجوها"],"correct":0,"explanation_fa":"علی می‌گوید: «ein Buch für Kinder»."}
+{"type":"tf","prompt":"علی زیاد می‌فهمد.","correct":true,"explanation_fa":"علی می‌گوید: «Ich verstehe viel.»"}
+listening B:
+{"type":"dict","sentence":6}
+{"type":"mcq","prompt":"کتاب علی چطور است؟","options":["بزرگ و قدیمی","کوچک و قشنگ","بزرگ و نو","کوچک و قدیمی"],"correct":1,"explanation_fa":"علی می‌گوید: «Es ist klein und schön.»"}

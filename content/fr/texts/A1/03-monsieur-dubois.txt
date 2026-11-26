@@ -1,0 +1,22 @@
+code: fr-a1-t003
+title: La maison de monsieur Dubois
+kind: dialogue
+sentences:
+A: Excusez-moi, madame. Où est la maison de monsieur Dubois ? | ببخشید خانم. خانه آقای دوبوا کجاست؟
+B: La maison de monsieur Dubois ? C'est la grande maison, là. | خانه آقای دوبوا؟ همان خانه بزرگ است، آنجا.
+A: Merci ! Il est là ? | ممنون! خانه است؟
+B: Non. Sa femme est là. | نه. همسرش هست.
+A: Merci, madame. Au revoir ! | ممنون خانم. خداحافظ!
+B: Au revoir, monsieur ! | خداحافظ آقا!
+reading A:
+{"type":"mcq","prompt":"مرد دنبال خانه چه کسی است؟","options":["آقای مارتن","آقای دوبوا","خانم مارتن","پل"],"correct":1,"explanation_fa":"مرد می‌پرسد: «Où est la maison de monsieur Dubois ?»"}
+{"type":"tf","prompt":"خانه آقای دوبوا کوچک است.","correct":false,"explanation_fa":"زن می‌گوید: «C'est la grande maison»، یعنی خانه بزرگ."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید آقای دوبوا خانه نیست؟","correct_sentence":3,"explanation_fa":"زن می‌گوید: «Non. Sa femme est là.»"}
+{"type":"tf","prompt":"همسر آقای دوبوا خانه است.","correct":true,"explanation_fa":"زن می‌گوید: «sa femme est là»."}
+listening A:
+{"type":"mcq","prompt":"آقای دوبوا خانه است؟","options":["بله، خانه است","نه، ولی همسرش هست","نه، هیچ‌کس نیست","زن نمی‌داند"],"correct":1,"explanation_fa":"زن می‌گوید: «Non. Sa femme est là.»"}
+{"type":"tf","prompt":"مرد اول گفتگو می‌گوید «ببخشید».","correct":true,"explanation_fa":"مرد می‌گوید: «Excusez-moi, madame.»"}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"mcq","prompt":"خانه آقای دوبوا کدام است؟","options":["خانه کوچک","خانه بزرگ","خانه دوم","خانه‌ای دور"],"correct":1,"explanation_fa":"زن می‌گوید: «C'est la grande maison, là.»"}

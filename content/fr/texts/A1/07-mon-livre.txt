@@ -1,0 +1,24 @@
+code: fr-a1-t007
+title: Où est mon livre ?
+kind: voice_message
+sentences:
+- Salut Julie, c'est Hugo. | سلام ژولی، هوگو هستم.
+- Mon livre de français n'est pas ici. | کتاب فرانسه‌ام اینجا نیست.
+- Il est peut-être chez toi ? | شاید خانه تو باشد؟
+- Il est sur la table ou dans ta voiture ? | روی میز است یا توی ماشینت؟
+- C'est un petit livre. | کتاب کوچکی است.
+- Sur le livre, il y a un chat. | روی کتاب یک گربه هست.
+- Je voudrais le livre pour l'école. | کتاب را برای مدرسه می‌خواهم.
+- Merci, Julie ! | ممنون ژولی!
+reading A:
+{"type":"mcq","prompt":"هوگو دنبال چه چیزی است؟","options":["کتاب","ماشین","گربه","میز"],"correct":0,"explanation_fa":"هوگو می‌گوید: «Mon livre de français n'est pas ici.»"}
+{"type":"tf","prompt":"کتاب بزرگ است.","correct":false,"explanation_fa":"هوگو می‌گوید: «C'est un petit livre.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید روی کتاب چه هست؟","correct_sentence":5,"explanation_fa":"هوگو می‌گوید: «Sur le livre, il y a un chat.»"}
+{"type":"tf","prompt":"هوگو کتاب را برای مدرسه می‌خواهد.","correct":true,"explanation_fa":"هوگو می‌گوید: «Je voudrais le livre pour l'école.»"}
+listening A:
+{"type":"mcq","prompt":"هوگو فکر می‌کند کتاب کجاست؟","options":["خانه ژولی","در مدرسه","در کافه","خانه خودش"],"correct":0,"explanation_fa":"هوگو می‌گوید: «Il est peut-être chez toi ?»"}
+{"type":"tf","prompt":"روی کتاب یک سگ هست.","correct":false,"explanation_fa":"هوگو می‌گوید: «il y a un chat»، یعنی یک گربه."}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"mcq","prompt":"کتاب برای یادگرفتن چه زبانی است؟","options":["انگلیسی","فرانسه","آلمانی","فارسی"],"correct":1,"explanation_fa":"هوگو می‌گوید: «Mon livre de français»."}

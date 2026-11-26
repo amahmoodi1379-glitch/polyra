@@ -1,0 +1,23 @@
+code: de-a1-t020
+title: Ich brauche ein Buch
+kind: dialogue
+sentences:
+A: Hallo! Ich brauche ein Buch für die Schule. | سلام! یک کتاب برای مدرسه لازم دارم.
+B: Was lernst du in der Schule? | در مدرسه چه یاد می‌گیری؟
+A: Ich lerne Deutsch. | آلمانی یاد می‌گیرم.
+B: Hier ist ein Buch für Deutsch. Es ist neu. | این یک کتاب برای آلمانی است. نو است.
+A: Ich habe aber wenig Geld. | ولی پول کمی دارم.
+B: Das Buch hier ist alt, aber gut. | این کتاب قدیمی است، ولی خوب است.
+A: Gut, ich nehme das alte Buch. Danke! | خوب، کتاب قدیمی را برمی‌دارم. ممنون!
+reading A:
+{"type":"mcq","prompt":"مشتری چه لازم دارد؟","options":["کتاب","دفتر","خودکار","کیف"],"correct":0,"explanation_fa":"مشتری می‌گوید: «Ich brauche ein Buch für die Schule.»"}
+{"type":"tf","prompt":"مشتری پول زیادی دارد.","correct":false,"explanation_fa":"مشتری می‌گوید: «Ich habe aber wenig Geld.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید مشتری پول کمی دارد؟","correct_sentence":4,"explanation_fa":"مشتری می‌گوید: «Ich habe aber wenig Geld.»"}
+{"type":"match","prompt":"هر کتاب را به توصیفش وصل کن.","left":["کتاب اول","کتاب دوم"],"right":["نو است","قدیمی ولی خوب است","خیلی کوچک است"],"pairs":[[0,0],[1,1]],"explanation_fa":"«Es ist neu.» و «Das Buch hier ist alt, aber gut.»"}
+listening A:
+{"type":"mcq","prompt":"مشتری آخر کدام کتاب را برمی‌دارد؟","options":["کتاب نو","کتاب قدیمی","هیچ کتابی","هر دو کتاب"],"correct":1,"explanation_fa":"مشتری می‌گوید: «ich nehme das alte Buch»."}
+{"type":"tf","prompt":"مشتری در مدرسه آلمانی یاد می‌گیرد.","correct":true,"explanation_fa":"مشتری می‌گوید: «Ich lerne Deutsch.»"}
+listening B:
+{"type":"dict","sentence":5}
+{"type":"tf","prompt":"کتاب اول نو است.","correct":true,"explanation_fa":"فروشنده می‌گوید: «Es ist neu.»"}

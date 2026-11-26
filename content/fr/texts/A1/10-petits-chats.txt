@@ -1,0 +1,24 @@
+code: fr-a1-t010
+title: Trois petits chats
+kind: ad
+sentences:
+- Trois petits chats cherchent une maison ! | سه بچه‌گربه دنبال خانه می‌گردند!
+- Ils sont jeunes et très beaux. | کم‌سن و خیلی قشنگ‌اند.
+- Ils mangent bien et dorment beaucoup. | خوب غذا می‌خورند و زیاد می‌خوابند.
+- Vous aimez les chats ? | گربه دوست دارید؟
+- Vous avez le temps et une grande maison ? | وقت و یک خانه بزرگ دارید؟
+- Les chats sont chez madame Dubois, à Lyon. | گربه‌ها خانه خانم دوبوا در لیون هستند.
+- Vous n'avez pas besoin d'argent. | پول لازم نیست.
+- Le numéro de madame Dubois : 06 12 34 56 78. | شماره خانم دوبوا: ۰۶ ۱۲ ۳۴ ۵۶ ۷۸. | tts: Le numéro de madame Dubois : zéro six, douze, trente-quatre, cinquante-six, soixante-dix-huit.
+reading A:
+{"type":"mcq","prompt":"این آگهی درباره چیست؟","options":["سگ","بچه‌گربه‌ها","خانه","ماشین"],"correct":1,"explanation_fa":"در آگهی آمده: «Trois petits chats cherchent une maison !»"}
+{"type":"tf","prompt":"برای گربه‌ها باید پول داد.","correct":false,"explanation_fa":"در آگهی آمده: «Vous n'avez pas besoin d'argent.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید گربه‌ها کجا هستند؟","correct_sentence":5,"explanation_fa":"در آگهی آمده: «Les chats sont chez madame Dubois, à Lyon.»"}
+{"type":"match","prompt":"هر چیز را به جوابش وصل کن.","left":["تعداد گربه‌ها","شهر"],"right":["سه","لیون","پاریس"],"pairs":[[0,0],[1,1]],"explanation_fa":"سه گربه در لیون هستند."}
+listening A:
+{"type":"num","prompt":"چند گربه هست؟","answer":"3","accepted":["3","trois"],"explanation_fa":"در آگهی آمده: «Trois petits chats»."}
+{"type":"tf","prompt":"گربه‌ها زیاد می‌خوابند.","correct":true,"explanation_fa":"در آگهی آمده: «Ils mangent bien et dorment beaucoup.»"}
+listening B:
+{"type":"mcq","prompt":"گربه‌ها کجا هستند؟","options":["خانه خانم دوبوا","در یک مدرسه","در یک کافه","خانه آقای مارتن"],"correct":0,"explanation_fa":"در آگهی آمده: «chez madame Dubois»."}
+{"type":"dict","sentence":3}
