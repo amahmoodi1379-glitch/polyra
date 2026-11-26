@@ -73,3 +73,6 @@ translations:
 مدرسه آنجاست. => L'école est là. ; L'école est là-bas.
 پل در خیابان است. => Paul est dans la rue.
 این ماشینِ ماری است. => C'est la voiture de Marie.
+مرد در ماشین است. => L'homme est dans la voiture.
+دختر در مدرسه است. => La fille est à l'école.
+خانه بزرگ است. => La maison est grande.
