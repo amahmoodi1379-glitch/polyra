@@ -1,0 +1,16 @@
+label: e خاموش
+kind: rule
+graphemes: e
+tip:
+e بی‌علامت آخر کلمه خوانده نمی‌شود، ولی حرف بی‌صدای پیش از خودش را خواندنی می‌کند: در petit t خوانده نمی‌شود و در petite خوانده می‌شود. وسط کلمه هم e در گفتار معمولی اغلب می‌افتد، مثل samedi و maintenant. در کلمه‌های یک‌هجایی مثل le، je و de خوانده می‌شود.
+words:
+petite | کوچک (مؤنث) | petit, ptit
+grande | بزرگ (مؤنث) | grand, grandé
+verte | سبز (مؤنث) | vert, verté
+samedi | شنبه | samdi, samédi
+maintenant | حالا | maintnant, mainténant
+madame | خانم | madam, madamé
+fenêtre | پنجره | fnêtre, fénêtre
+boulangerie | نانوایی | boulangri, boulangérie
+table | میز | tabl, tablé
+porte | در | port, porté

@@ -1,0 +1,16 @@
+label: ou، oi، au، eau، ai
+kind: rule
+graphemes: ou, oi, au, eau, ai
+tip:
+در فرانسوی گاهی چند حرف با هم یک صدا می‌سازند: ou مثل «او»، oi مثل «وا»، au و eau مثل «اُ» و ai مثل «اِ». این حرف‌ها را جدا جدا نخوان. eau با سه حرف فقط یک صداست.
+words:
+jour | روز | jor, jur
+moi | من | moa, mwa
+voiture | ماشین | voature, vouature
+beau | زیبا | bo, beo
+chaud | گرم | cho, chod
+maison | خانه | mezon, maïson
+noir | سیاه | noar, nouar
+gâteau | کیک | gato, gâtô
+bouche | دهان | buche, bauche
+lait | شیر | lè, lét

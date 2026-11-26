@@ -1,0 +1,16 @@
+label: h خاموش بعد از واکه
+kind: rule
+graphemes: ah, eh, ih, oh, uh, h
+tip:
+h پس از واکه خوانده نمی‌شود؛ فقط نشان می‌دهد واکه پیش از آن بلند است: fahren، Sohn، Uhr. اول کلمه یا اول بخش کلمه، h مثل «ه» فارسی خوانده می‌شود: Haus، Hotel.
+words:
+fahren | رانندگی کردن | faren, farren
+Sohn | پسر (فرزند) | Son, Sonn
+Uhr | ساعت | Uher, Uer
+gehen | رفتن | gen, gehhen
+zehn | ده | zen, zeen
+wohnen | زندگی کردن | wonen, wohenen
+Bahn | قطار | Ban, Bahen
+Zahl | عدد | Zal, Zahal
+Stuhl | صندلی | Stul, Stuhel
+früh | زود | frü, frühe

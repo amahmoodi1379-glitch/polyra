@@ -1,0 +1,16 @@
+label: ch در ich و ach
+kind: rule
+graphemes: ch, -ig
+tip:
+ch پس از a، o، u و au از ته گلو می‌آید، نزدیک «خ» فارسی، مثل acht و Buch. پس از واکه‌های دیگر و پس از l، n و r نرم است و از جلوی دهان می‌آید، با زبانی نزدیک جای «ی»، مثل ich و Milch. این ch نرم را «ش» نگو.
+words:
+ich | من | isch, ik
+acht | هشت | akt, ascht
+Buch | کتاب | Buk, Busch
+Milch | شیر | Milsch, Milk
+Nacht | شب | Nakt, Nascht
+Küche | آشپزخانه | Küsche, Küke
+Kuchen | کیک | Kuken, Kucken
+leicht | آسان | leischt, leikt
+Woche | هفته | Wosche, Woke
+noch | هنوز | nosch, nok

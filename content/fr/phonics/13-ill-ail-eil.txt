@@ -1,0 +1,15 @@
+label: ill، ail، eil
+kind: rule
+graphemes: ill, ail, eil, eille
+tip:
+ill پس از یک واکه معمولاً مثل «ی» خوانده می‌شود و l در آن خوانده نمی‌شود، مثل fille و famille. ail و eil آخر کلمه هم با همین صدای «ی» تمام می‌شوند، مثل travail و soleil. فقط چند کلمه مثل ville و mille صدای l دارند.
+words:
+fille | دختر | fiye, fil
+famille | خانواده | famiye, famile
+travail | کار | travaye, travai
+soleil | خورشید | soley, solèye
+oreille | گوش | orèye, oreil
+feuille | برگ | feuye, feuil
+juillet | ژوئیه | juiyet, juilet
+billet | بلیت | biyet, bilet
+bouteille | بطری | bouteye, boutèle

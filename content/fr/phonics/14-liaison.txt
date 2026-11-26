@@ -1,0 +1,16 @@
+label: liaison و enchaînement
+kind: liaison
+graphemes: s, x, z, t, n, d
+tip:
+liaison یعنی حرف آخرِ خاموشِ یک کلمه پیش از کلمه‌ای که با واکه یا h شروع می‌شود خوانده و به آن وصل می‌شود: les amis. در liaison حرف s و x مثل «ز» و d مثل «ت» خوانده می‌شوند. enchaînement یعنی حرف بی‌صدای آخر کلمه که همیشه خوانده می‌شود به واکه کلمه بعد می‌چسبد، مثل il arrive.
+sentences:
+Les enfants jouent. | 0
+Nous avons deux amis. | 0, 2
+Vous êtes français. | 0
+Ils aiment le café. | 0
+Mon ami habite ici. | 0
+Un petit enfant joue. | 1
+Elles arrivent demain. | 0
+Mes amis sont là. | 0
+Dix euros, s'il vous plaît. | 0
+Un enfant mange. | 0

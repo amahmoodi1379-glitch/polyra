@@ -1,0 +1,16 @@
+label: eu و œu
+kind: rule
+graphemes: eu, œu, œ
+tip:
+eu و œu در فارسی نیستند: لب‌ها را برای «او» گرد کن و زبان را جای «اِ» بگذار. وقتی بعد از این صدا حرف بی‌صدای خوانده‌شده بیاید، مثل sœur و heure، دهان بازتر است. eu را مثل «او» یا «اِ» نخوان: deux با dos و des فرق دارد.
+words:
+bleu | آبی | blé, blo
+jeu | بازی | jé, jou
+cheveu | مو | chevé, chevou
+heureux | خوشحال | ureux, eureu
+sœur | خواهر | sur, seur
+cœur | قلب | cur, keur
+fleur | گل | flur, fler
+peu | کم | pé, pou
+neuf | نه | nef, nuf
+beurre | کره | bure, bèrre

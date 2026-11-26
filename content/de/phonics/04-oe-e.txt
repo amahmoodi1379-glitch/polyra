@@ -1,0 +1,20 @@
+label: ö و e
+kind: contrast
+graphemes: ö
+tip:
+ö در فارسی نیست: زبان را جای «اِ» بگذار و لب‌ها را مثل «او» گرد کن. اگر لب‌ها گرد نشوند، ö مثل e شنیده می‌شود و können (توانستن) می‌شود kennen (شناختن).
+words:
+schön | زیبا | schen, schon
+hören | شنیدن | heren, horen
+möchte | می‌خواهم | mechte, mochte
+zwölf | دوازده | zwelf, zwolf
+Brötchen | نان کوچک | Bretchen, Brotchen
+können | توانستن | kennen, konnen
+Löffel | قاشق | Leffel, Loffel
+Wörter | کلمه‌ها | Werter, Worter
+pairs:
+lösen | lesen | حل کردن | خواندن
+können | kennen | توانستن | شناختن
+Söhne | Sehne | پسرها | زردپی
+Höfe | Hefe | حیاط‌ها | خمیرمایه
+rösten | Resten | برشته کردن | باقی‌مانده‌ها

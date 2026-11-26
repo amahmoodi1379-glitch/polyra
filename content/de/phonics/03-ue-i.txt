@@ -1,0 +1,21 @@
+label: ü و i
+kind: contrast
+graphemes: ü, y
+tip:
+ü در فارسی نیست: زبان را جای «ای» بگذار و لب‌ها را مثل «او» گرد و جلو بیاور. اگر لب‌ها گرد نشوند، ü مثل i شنیده می‌شود و Tür (در) می‌شود Tier (حیوان).
+words:
+Tür | در | Tier, Tir
+für | برای | vier, fir
+müde | خسته | miede, mude
+grün | سبز | grien, grun
+Frühstück | صبحانه | Friestick, Fruhstuck
+über | بالای | iber, uber
+Glück | شانس | Glick, Gluck
+fünf | پنج | finf, funf
+pairs:
+Tür | Tier | در | حیوان
+für | vier | برای | چهار
+spülen | spielen | شستن (ظرف) | بازی کردن
+Bühne | Biene | صحنه | زنبور عسل
+fühlen | fielen | حس کردن | افتادند
+lügen | liegen | دروغ گفتن | دراز کشیدن

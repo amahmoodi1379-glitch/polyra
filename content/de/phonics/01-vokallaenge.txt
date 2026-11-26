@@ -1,0 +1,21 @@
+label: واکه کوتاه و بلند
+kind: contrast
+graphemes: a, aa, ah, e, ee, eh, i, ie, ih, o, oh, u, uh
+tip:
+در آلمانی کوتاه و بلند بودن واکه معنی کلمه را عوض می‌کند. واکه پیش از دو حرف بی‌صدا کوتاه است، مثل Bett و Mitte؛ واکه دوتایی، واکه با h بعدش و ie بلندند، مثل Staat، fahren و Miete. واکه بلند را کشیده‌تر و کمی بسته‌تر بگو.
+words:
+Bett | تخت | Beet, Beht
+Stadt | شهر | Staat, Staht
+Mitte | وسط | Miete, Mite
+Name | اسم | Namme, Nome
+Sohn | پسر (فرزند) | Sonn, Sun
+Wasser | آب | Waser, Wahser
+Zimmer | اتاق | Zimer, Ziemer
+Bahn | قطار | Bann, Bänn
+pairs:
+Miete | Mitte | اجاره | وسط
+Ofen | offen | اجاق | باز
+Staat | Stadt | کشور | شهر
+Beet | Bett | باغچه | تخت
+fühlen | füllen | حس کردن | پر کردن
+Kahn | kann | قایق | می‌تواند

@@ -1,0 +1,16 @@
+label: b، d، g آخر کلمه
+kind: rule
+graphemes: -b, -d, -g
+tip:
+b، d و g آخر کلمه یا آخر بخش کلمه مثل p، t و k خوانده می‌شوند: halb، Kind، Tag. وقتی پسوند یا واکه‌ای بعدشان بیاید، دوباره b، d و g خوانده می‌شوند: Kinder، Tage. برای نوشتن، شکل جمع کلمه را به یاد بیاور.
+words:
+Kind | بچه | Kint, Kinnd
+Tag | روز | Tak, Tack
+halb | نیم | halp, hallb
+Hund | سگ | Hunt, Hond
+gelb | زرد | gelp, gelbe
+Geld | پول | Gelt, Gält
+Bild | عکس | Bilt, Bielt
+Freund | دوست | Freunt, Froind
+Abend | عصر | Abent, Abänd
+Berg | کوه | Berk, Bärg

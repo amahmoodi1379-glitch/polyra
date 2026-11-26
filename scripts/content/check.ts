@@ -8,7 +8,7 @@
  *   npm run content:check -- fr --notes   (also the notes: forms read by context, tables waiting for a unit)
  *   npm run content:check -- de --warnings
  *   npm run content:check -- de --timing  (word sentences that use a grammar point before its unit)
- *   npm run content:check -- fr --texts   (each text's length and how deep into the teaching order it reaches)
+ *   npm run content:check -- fr --texts   (each text's and dialogue's length and how deep into the teaching order it reaches)
  *
  * Exits with 1 when anything has an error. A clean check is what a content PR needs; the server then
  * loads it through the panel's importers (`npm run content:load` does the same on a local database).
@@ -43,6 +43,10 @@ function textReach(pack: Pack) {
       const deepest = text.codes.map((code) => [code, position.get(code) ?? 0] as const).sort((a, b) => b[1] - a[1])[0];
       console.log(`  ${text.file}  ${text.kind}${text.placement_ok ? ", placement" : ""}  ${words} words, deepest ${deepest ? `${deepest[0]} (${deepest[1]})` : "-"}`);
     }
+    for (const dialogue of level.dialogues) {
+      const deepest = dialogue.codes.map((code) => [code, position.get(code) ?? 0] as const).sort((a, b) => b[1] - a[1])[0];
+      console.log(`  ${dialogue.file}  dialogue, deepest ${deepest ? `${deepest[0]} (${deepest[1]})` : "-"}`);
+    }
   }
 }
 
@@ -56,8 +60,8 @@ for (const language of languages.length ? languages : (["fr", "de"] as LanguageC
     continue;
   }
   for (const row of packSummary(pack)) {
-    if (row.words + row.units + row.sentences + row.tables === 0) continue;
-    console.log(`${row.level}: ${row.words} words, ${row.units} units (${row.grammarTargets} targets), ${row.sentences} sentences (${row.targets} word targets), ${row.tables} tables, ${row.texts} texts`);
+    if (row.words + row.units + row.sentences + row.tables + row.phonics === 0) continue;
+    console.log(`${row.level}: ${row.words} words, ${row.units} units (${row.grammarTargets} targets), ${row.sentences} sentences (${row.targets} word targets), ${row.tables} tables, ${row.texts} texts, ${row.dialogues} dialogues${row.phonics ? `, ${row.phonics} phonics lessons` : ""}`);
   }
   show("Errors", pack.errors);
   if (args.includes("--warnings")) show("Warnings", pack.warnings);

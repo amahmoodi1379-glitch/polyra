@@ -1,0 +1,16 @@
+label: äu و eu
+kind: rule
+graphemes: eu, äu
+tip:
+äu و eu یک صدا دارند، نزدیک «اُی» فارسی، مثل heute و Häuser. äu بیشتر در کلمه‌هایی می‌آید که شکل اصلشان au دارد: Haus، Häuser. eu را با ei قاطی نکن: heiß یعنی داغ و heute یعنی امروز.
+words:
+heute | امروز | hoite, heite
+neu | نو | noi, nei
+neun | نه | noin, nein
+Deutsch | زبان آلمانی | Doitsch, Deitsch
+Freund | دوست | Froind, Freind
+Häuser | خانه‌ها | Hoiser, Hauser
+teuer | گران | toier, teier
+Leute | مردم | Loite, Leite
+träumen | خواب دیدن | troimen, treimen
+Euro | یورو | Oiro, Eiro

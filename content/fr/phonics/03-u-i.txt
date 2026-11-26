@@ -1,0 +1,21 @@
+label: u و i
+kind: contrast
+graphemes: u, û, i, î, y
+tip:
+برای u لب‌ها گرد و جلو می‌آیند و برای i کشیده‌اند، مثل لبخند. زبان در هر دو جای «ای» است و فقط لب‌ها فرق می‌کنند. اگر لب‌ها گرد نشوند، vu (دیده) مثل vie (زندگی) شنیده می‌شود.
+words:
+lune | ماه | line, loune
+jus | آبمیوه | ji, jou
+bus | اتوبوس | bis, bous
+sucre | شکر | sicre, soucre
+ami | دوست | amu, amou
+midi | ظهر | mudi, midu
+vite | سریع | vute, vete
+livre | کتاب | luvre, lovre
+pairs:
+vu | vie | دیده | زندگی
+lu | lit | خوانده | تخت
+su | si | دانسته | اگر
+cru | cri | خام | فریاد
+rue | riz | خیابان | برنج
+pur | pire | خالص | بدتر

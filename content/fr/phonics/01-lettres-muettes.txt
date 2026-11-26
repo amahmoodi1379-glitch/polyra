@@ -1,0 +1,17 @@
+label: حرف‌های خاموش: آخر کلمه و h
+kind: rule
+graphemes: -t, -d, -s, -x, -z, -p, h
+tip:
+در فرانسوی حرف‌های بی‌صدای آخر کلمه، یعنی t، d، s، x، z و p، بیشتر وقت‌ها خوانده نمی‌شوند. حرف h هیچ‌وقت خوانده نمی‌شود. ولی c، r، f و l آخر کلمه معمولاً خوانده می‌شوند، مثل sac و avec.
+words:
+petit | کوچک | peti, poti
+grand | بزرگ | gran, grant
+trois | سه | troi, troa
+deux | دو | deu, deuz
+froid | سرد | froi, froa
+salut | سلام | salu, salou
+homme | مرد | ome, omme
+hôtel | هتل | ôtel, otel
+heure | ساعت | eure, eur
+avec | با | avé, ave
+sac | کیف | sa, saque

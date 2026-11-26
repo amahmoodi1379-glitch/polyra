@@ -5,7 +5,9 @@ import { appSetting } from "@/server/settings/read";
 import { answerRecords } from "../batches";
 import { demoStatus, removeDemo } from "../demo";
 import { conjugation } from "../kinds/conjugation";
+import { dialogues } from "../kinds/dialogues";
 import { grammar } from "../kinds/grammar";
+import { phonics, type PlannedLesson } from "../kinds/phonics";
 import { sentences } from "../kinds/sentences";
 import { texts } from "../kinds/texts";
 import type { ContentKind, Tx } from "../kinds/types";
@@ -13,6 +15,7 @@ import { unitList } from "../kinds/unit-list";
 import { words } from "../kinds/words";
 import type { LanguageCode } from "../languages";
 import { librarySlugs, type LibrarySlug } from "../library/slugs";
+import { fold } from "@/engine/tokens";
 import { describeProblem } from "../problems";
 import { publishReady } from "../publish/run";
 import { mergeRound, type RoundResult } from "../report";
@@ -186,6 +189,34 @@ async function loadLevel(run: Run, level: PackLevel) {
     for (const text of readyTexts) if (ok.has(text.answer)) remember("text", text.code, text.answer);
     count(run, "texts", ok.size);
   }
+
+  // Situational dialogues, one per batch (P-D): their lines and choices are sentences of the words above.
+  const waitingDialogues = level.dialogues.filter((dialogue) => fresh("dialogue", dialogue.code));
+  const readyDialogues = waitingDialogues.filter((dialogue) => dialogue.codes.every((code) => codes.has(code)));
+  if (readyDialogues.length < waitingDialogues.length) run.report.skipped.push(`${waitingDialogues.length - readyDialogues.length} dialogues use words not in the database`);
+  for (const dialogue of readyDialogues) {
+    const round = await importAnswer(run, dialogues, await newBatch(run, "P_D", { level: level.level, code: dialogue.code, situation: dialogue.situation }), dialogue.answer);
+    if (round.accepted.length > 0) remember("dialogue", dialogue.code, dialogue.answer);
+    count(run, "dialogues", round.accepted.length);
+  }
+
+  // Phonics lessons: the teacher's list (`phonics.lessons.<language>`) names them and gives their place.
+  const lessons = level.phonics.filter((lesson) => fresh("phonics", fold(lesson.label)));
+  if (lessons.length > 0) {
+    const planned = await appSetting<PlannedLesson[]>(`phonics.lessons.${language}`);
+    const same = (a: string, b: string) => fold(a).replace(/\s+/g, " ").trim() === fold(b).replace(/\s+/g, " ").trim();
+    for (const lesson of lessons) {
+      const at = planned.findIndex((item) => same(item.label, lesson.label));
+      if (at < 0) {
+        run.report.skipped.push(`phonics «${lesson.label}»: not in the lesson list of the general settings`);
+        continue;
+      }
+      const params = { level: "A1", label: planned[at].label, kind: planned[at].kind, order_no: at + 1 };
+      const round = await importAnswer(run, phonics, await newBatch(run, "P_H", params), { lesson: lesson.record, issues: [] });
+      if (round.accepted.length > 0) remember("phonics", fold(lesson.label), lesson.record);
+      count(run, "phonics lessons", round.accepted.length);
+    }
+  }
 }
 
 /** Approves what this run imported, as if a teacher had checked it (PRD §13.4). */
@@ -201,6 +232,8 @@ async function approve(tx: Tx, batchIds: number[]) {
   await tx.translateItem.updateMany({ where: mine, data: approved });
   await tx.conjugationTable.updateMany({ where: mine, data: approved });
   await tx.text.updateMany({ where: mine, data: approved });
+  await tx.dialogue.updateMany({ where: mine, data: approved });
+  await tx.phonicsLesson.updateMany({ where: mine, data: approved });
 }
 
 /**
@@ -220,6 +253,8 @@ async function rowsOf(language: string): Promise<Partial<Record<LibrarySlug, Set
     transforms: ids(await db.transformItem.findMany(where)),
     translations: ids(await db.translateItem.findMany(where)),
     texts: ids(await db.text.findMany(where)),
+    dialogues: ids(await db.dialogue.findMany(where)),
+    phonics: ids(await db.phonicsLesson.findMany(where)),
   };
   for (const slug of librarySlugs) if (out[slug]?.size === 0) delete out[slug];
   return out;
@@ -240,7 +275,8 @@ export async function loadPack(pack: Pack, options: { adminId?: number | null; l
 
   const batches: number[] = [];
   for (const level of pack.levels) {
-    if (level.words.length === 0 && level.units.length === 0 && level.sentences.length === 0 && level.tables.length === 0 && level.texts.length === 0) continue;
+    const empty = [level.words, level.units, level.sentences, level.tables, level.texts, level.dialogues, level.phonics].every((list) => list.length === 0);
+    if (empty) continue;
     const levelReport: LevelReport = { level: level.level, added: {}, rejected: [], skipped: [] };
     await db.$transaction(
       async (tx) => {
