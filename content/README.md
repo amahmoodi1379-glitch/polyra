@@ -206,3 +206,17 @@ from `prompt.text_level_bands` and `prompt.text_bands` (A1: band 1, 30 to 60 wor
 `prompt.text_kinds`. Every word must be of the text's level or lower. Format and an example: the comment at the
 top of `src/server/content/packs/texts.ts` and `content/de/texts/A1/01-im-cafe.txt`. Questions are one JSON object
 per line in the P-T shape, two to eight per set; the loader imports them through the panel's text importer.
+
+- **Spread along the teaching order.** A learner gets a new text only once `text.known_share` (95%) of its words
+  are known, so a text built from late words waits until those words are taught. Follow `prompt.first_texts`:
+  the first three A1 texts are short dialogues from the first 40 card words, the next seven from the first 100,
+  the next ten from the first 200, and the rest use the whole level, spread over it rather than all at its end.
+  `npm run content:check -- fr --texts` lists each text's length and its deepest card word (its position in the
+  teaching order). Numbers in digits cost nothing; give the machine voice a `tts:` with them written out.
+- **Dialogues** have two speakers, `A` and `B` (the machine voice gives the second one the second voice).
+- **Placement.** Four texts of each level have `placement: yes` (`prompt.placement_texts`, PRD §11.2), taken from
+  the later half of the level, with at least four questions in `reading A` and `listening A`.
+- **Questions.** In band 1: `mcq`, `tf`, `order` (four or five items, `correct_order` lists the item indexes in the
+  right order), `match` and `find` for reading; `mcq`, `tf`, `order`, `num` and `dict` for listening. A dictated
+  sentence has no digits. `explanation_fa` quotes the text, with enough Persian around the quote to pass the
+  Persian-field check.
