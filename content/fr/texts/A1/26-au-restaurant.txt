@@ -1,0 +1,24 @@
+code: fr-a1-t026
+title: Au restaurant
+kind: dialogue
+sentences:
+A: Bonjour ! Une table pour deux ? | سلام! یک میز برای دو نفر؟
+B: Oui, s'il vous plaît. | بله، لطفاً.
+A: Voilà le menu. Qu'est-ce que vous prenez ? | این منوست. چه میل دارید؟
+B: Pour moi, le poulet. Et pour mon ami, le poisson. | برای من مرغ. و برای دوستم ماهی.
+A: Et comme boisson ? | نوشیدنی چه؟
+B: Une bouteille d'eau, s'il vous plaît. | یک بطری آب، لطفاً.
+A: Voilà, monsieur. | بفرمایید، آقا.
+B: Merci ! C'est délicieux. Et l'addition, s'il vous plaît ! | ممنون! خیلی خوشمزه است. صورت‌حساب را هم بیاورید، لطفاً!
+reading A:
+{"type":"mcq","prompt":"دوست مشتری چه می‌خورد؟","options":["ماهی","مرغ","سالاد","سوپ"],"correct":0,"explanation_fa":"مشتری می‌گوید: «pour mon ami, le poisson»."}
+{"type":"tf","prompt":"میز برای سه نفر است.","correct":false,"explanation_fa":"گارسون می‌پرسد: «Une table pour deux ?» و مشتری می‌گوید بله."}
+reading B:
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["مشتری آب می‌خواهد.","گارسون منو را می‌دهد.","مشتری صورت‌حساب را می‌خواهد.","مشتری غذا سفارش می‌دهد."],"correct_order":[1,3,0,2],"explanation_fa":"اول منو، بعد غذا، بعد نوشیدنی و آخر صورت‌حساب."}
+{"type":"find","prompt":"کدام جمله می‌گوید غذا خوشمزه است؟","correct_sentence":7,"explanation_fa":"مشتری می‌گوید: «C'est délicieux.»"}
+listening A:
+{"type":"mcq","prompt":"مشتری چه می‌نوشد؟","options":["آب","آب پرتقال","چای","قهوه"],"correct":0,"explanation_fa":"مشتری می‌گوید: «Une bouteille d'eau.»"}
+{"type":"tf","prompt":"مشتری مرغ سفارش می‌دهد.","correct":true,"explanation_fa":"مشتری می‌گوید: «Pour moi, le poulet.»"}
+listening B:
+{"type":"dict","sentence":4}
+{"type":"mcq","prompt":"مشتری آخر چه می‌خواهد؟","options":["صورت‌حساب","دسر","قهوه","منو"],"correct":0,"explanation_fa":"مشتری می‌گوید: «Et l'addition, s'il vous plaît !»"}
