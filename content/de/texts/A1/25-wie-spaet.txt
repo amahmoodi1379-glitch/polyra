@@ -1,0 +1,23 @@
+code: de-a1-t025
+title: Wie spät ist es?
+kind: dialogue
+sentences:
+A: Entschuldigung! Wie spät ist es? | ببخشید! ساعت چند است؟
+B: Es ist halb zehn. | ساعت نه و نیم است.
+A: Oh nein! Ich muss um zehn bei der Arbeit sein{sein}. | وای نه! باید ساعت ده سر کار باشم.
+B: Wo arbeiten Sie? | کجا کار می‌کنید؟
+A: In der Schule. Ich arbeite mit Kindern. | در مدرسه. با بچه‌ها کار می‌کنم.
+B: Die Schule ist hier! Sie haben noch Zeit. | مدرسه همین‌جاست! هنوز وقت دارید.
+A: Ach, gut! Danke! | آه، خوب است! ممنون!
+reading A:
+{"type":"mcq","prompt":"الان ساعت چند است؟","options":["نه و نیم","ده و نیم","نه","ده"],"correct":0,"explanation_fa":"گفته می‌شود: «Es ist halb zehn.» «halb zehn» یعنی نه و نیم."}
+{"type":"tf","prompt":"زن در مدرسه کار می‌کند.","correct":true,"explanation_fa":"زن می‌گوید: «In der Schule.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید زن باید ساعت ده سر کار باشد؟","correct_sentence":2,"explanation_fa":"زن می‌گوید: «Ich muss um zehn bei der Arbeit sein.»"}
+{"type":"tf","prompt":"مدرسه خیلی دور است.","correct":false,"explanation_fa":"مرد می‌گوید: «Die Schule ist hier!»"}
+listening A:
+{"type":"mcq","prompt":"زن با چه کسانی کار می‌کند؟","options":["با بچه‌ها","با پزشک‌ها","با دانشجوها","با آشپزها"],"correct":0,"explanation_fa":"زن می‌گوید: «Ich arbeite mit Kindern.»"}
+{"type":"tf","prompt":"زن هنوز وقت دارد.","correct":true,"explanation_fa":"مرد می‌گوید: «Sie haben noch Zeit.»"}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"mcq","prompt":"زن اول چه می‌پرسد؟","options":["ساعت چند است؟","مدرسه کجاست؟","اسمت چیست؟","کجا کار می‌کنید؟"],"correct":0,"explanation_fa":"زن می‌پرسد: «Wie spät ist es?»"}

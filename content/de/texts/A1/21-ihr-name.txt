@@ -1,0 +1,26 @@
+code: de-a1-t021
+title: Ihr Name, bitte?
+kind: dialogue
+sentences:
+A: Guten Tag! Wie ist Ihr Name, bitte? | روز بخیر! اسمتان چیست، لطفاً؟
+B: Mein Name ist Karimi. Mein Vorname ist Reza. | نام خانوادگی‌ام کریمی است. اسم کوچکم رضاست.
+A: Wie alt sind Sie, Herr Karimi? | آقای کریمی، چند سالتان است؟
+B: Ich bin 34 Jahre alt. | ۳۴ سالم است. | tts: Ich bin vierunddreißig Jahre alt.
+A: Sind Sie verheiratet? | متأهل هستید؟
+B: Ja, ich bin verheiratet. Ich habe eine Tochter. | بله، متأهلم. یک دختر دارم.
+A: Und wo wohnen Sie? | کجا زندگی می‌کنید؟
+B: In Leipzig. | در لایپزیگ.
+A: Und wie ist Ihre Telefonnummer? | شماره تلفنتان چیست؟
+B: 0176 52 38 91. | ۰۱۷۶ ۵۲ ۳۸ ۹۱. | tts: null eins sieben sechs, zweiundfünfzig, achtunddreißig, einundneunzig.
+reading A:
+{"type":"mcq","prompt":"اسم کوچک آقای کریمی چیست؟","options":["رضا","علی","امیر","کریمی"],"correct":0,"explanation_fa":"آقای کریمی می‌گوید: «Mein Vorname ist Reza.»"}
+{"type":"tf","prompt":"آقای کریمی متأهل نیست.","correct":false,"explanation_fa":"آقای کریمی می‌گوید: «Ja, ich bin verheiratet.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید آقای کریمی چند سال دارد؟","correct_sentence":3,"explanation_fa":"آقای کریمی می‌گوید: «Ich bin 34 Jahre alt.»"}
+{"type":"match","prompt":"هر چیز را به جوابش وصل کن.","left":["نام خانوادگی","اسم کوچک"],"right":["کریمی","رضا","احمدی"],"pairs":[[0,0],[1,1]],"explanation_fa":"کریمی نام خانوادگی و رضا اسم کوچک اوست."}
+listening A:
+{"type":"num","prompt":"آقای کریمی چند سال دارد؟","answer":"34","accepted":["34","vierunddreißig"],"explanation_fa":"آقای کریمی می‌گوید: «Ich bin 34 Jahre alt.»"}
+{"type":"tf","prompt":"آقای کریمی یک پسر دارد.","correct":false,"explanation_fa":"آقای کریمی می‌گوید: «Ich habe eine Tochter.»، یعنی یک دختر."}
+listening B:
+{"type":"dict","sentence":8}
+{"type":"mcq","prompt":"آقای کریمی کجا زندگی می‌کند؟","options":["لایپزیگ","برلین","تهران","هامبورگ"],"correct":0,"explanation_fa":"آقای کریمی می‌گوید: «In Leipzig.»"}

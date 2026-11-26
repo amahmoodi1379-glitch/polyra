@@ -1,0 +1,23 @@
+code: de-a1-t029
+title: Ein neues Mädchen
+kind: voice_message
+sentences:
+- Hallo Mama! Ich bin noch in der Schule. | سلام مامان! هنوز در مدرسه‌ام.
+- Wir haben ein neues Mädchen in der Schule. | یک دختر تازه در مدرسه داریم.
+- Sie heißt Mina und kommt aus Teheran. | اسمش میناست و اهل تهران است.
+- Sie spricht Persisch und Englisch, aber noch wenig Deutsch. | فارسی و انگلیسی حرف می‌زند، ولی هنوز کم آلمانی بلد است.
+- Ich mag sie sehr. | خیلی دوستش دارم.
+- Kann Mina heute zu uns kommen? | مینا می‌تواند امروز خانه ما بیاید؟
+- Tschüss! | خداحافظ!
+reading A:
+{"type":"mcq","prompt":"مینا اهل کجاست؟","options":["تهران","اصفهان","برلین","شیراز"],"correct":0,"explanation_fa":"گفته می‌شود: «Sie heißt Mina und kommt aus Teheran.»"}
+{"type":"tf","prompt":"مینا خیلی خوب آلمانی حرف می‌زند.","correct":false,"explanation_fa":"گفته می‌شود: «aber noch wenig Deutsch»."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید مینا چه زبان‌هایی حرف می‌زند؟","correct_sentence":3,"explanation_fa":"گفته می‌شود: «Sie spricht Persisch und Englisch.»"}
+{"type":"tf","prompt":"دختر از مامانش می‌پرسد مینا می‌تواند امروز به خانه‌شان بیاید یا نه.","correct":true,"explanation_fa":"می‌پرسد: «Kann Mina heute zu uns kommen?»"}
+listening A:
+{"type":"mcq","prompt":"دختر الان کجاست؟","options":["در مدرسه","خانه","خانه مینا","در شهر"],"correct":0,"explanation_fa":"می‌گوید: «Ich bin noch in der Schule.»"}
+{"type":"tf","prompt":"دختر مینا را دوست ندارد.","correct":false,"explanation_fa":"می‌گوید: «Ich mag sie sehr.»"}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"mcq","prompt":"مینا کدام زبان را کم بلد است؟","options":["آلمانی","فارسی","انگلیسی","هیچ‌کدام"],"correct":0,"explanation_fa":"گفته می‌شود: «aber noch wenig Deutsch»."}

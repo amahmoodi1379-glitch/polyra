@@ -1,0 +1,24 @@
+code: de-a1-t022
+title: Meine Familie
+kind: voice_message
+sentences:
+- Hallo Lena, hier ist Mina! | سلام لنا، مینا هستم!
+- Meine Familie ist groß. | خانواده‌ام بزرگ است.
+- Ich habe zwei Brüder und eine Schwester. | دو برادر و یک خواهر دارم.
+- Mein Bruder Amir ist 20 und arbeitet in Teheran. | برادرم امیر ۲۰ ساله است و در تهران کار می‌کند. | tts: Mein Bruder Amir ist zwanzig und arbeitet in Teheran.
+- Meine Schwester ist noch klein, sie ist 8. | خواهرم هنوز کوچک است، ۸ سالش است. | tts: Meine Schwester ist noch klein, sie ist acht.
+- Meine Großeltern wohnen auch in Teheran. | پدربزرگ و مادربزرگم هم در تهران زندگی می‌کنند.
+- Und du? Hast du Geschwister? | تو چی؟ خواهر و برادر داری؟
+- Tschüss! | خداحافظ!
+reading A:
+{"type":"mcq","prompt":"مینا چند برادر دارد؟","options":["یکی","دو تا","سه تا","هیچ"],"correct":1,"explanation_fa":"مینا می‌گوید: «Ich habe zwei Brüder.»"}
+{"type":"tf","prompt":"خانواده مینا کوچک است.","correct":false,"explanation_fa":"مینا می‌گوید: «Meine Familie ist groß.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید امیر کجا کار می‌کند؟","correct_sentence":3,"explanation_fa":"مینا می‌گوید: «Mein Bruder Amir ist 20 und arbeitet in Teheran.»"}
+{"type":"match","prompt":"هر آدم را به سنش وصل کن.","left":["امیر","خواهر مینا"],"right":["۲۰ سال","۸ سال","۱۲ سال"],"pairs":[[0,0],[1,1]],"explanation_fa":"امیر ۲۰ ساله است و خواهر مینا ۸ ساله."}
+listening A:
+{"type":"num","prompt":"خواهر مینا چند سال دارد؟","answer":"8","accepted":["8","acht"],"explanation_fa":"مینا می‌گوید: «sie ist 8»."}
+{"type":"tf","prompt":"پدربزرگ و مادربزرگ مینا در تهران زندگی می‌کنند.","correct":true,"explanation_fa":"مینا می‌گوید: «Meine Großeltern wohnen auch in Teheran.»"}
+listening B:
+{"type":"dict","sentence":1}
+{"type":"mcq","prompt":"مینا آخر پیام از لنا چه می‌پرسد؟","options":["خواهر و برادر داری؟","کجا زندگی می‌کنی؟","چند سالت است؟","کجا کار می‌کنی؟"],"correct":0,"explanation_fa":"مینا می‌پرسد: «Hast du Geschwister?»"}

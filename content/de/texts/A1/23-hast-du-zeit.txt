@@ -1,0 +1,24 @@
+code: de-a1-t023
+title: Hast du morgen Zeit?
+kind: dialogue
+sentences:
+A: Hallo Tim! Hast du heute Zeit? | سلام تیم! امروز وقت داری؟
+B: Nein, heute nicht. Ich arbeite bis 8. | نه، امروز نه. تا ساعت ۸ کار می‌کنم. | tts: Nein, heute nicht. Ich arbeite bis acht.
+A: Und morgen? | فردا چی؟
+B: Morgen habe ich Zeit. Was machen wir? | فردا وقت دارم. چه کار کنیم؟
+A: Wir können zusammen Deutsch lernen. | می‌توانیم با هم آلمانی یاد بگیریم.
+B: Gut! Wann? | خوب است! کی؟
+A: Um halb vier? | ساعت سه و نیم؟
+B: Okay, um halb vier. | باشد، ساعت سه و نیم.
+reading A:
+{"type":"mcq","prompt":"تیم امروز چه کار می‌کند؟","options":["کار می‌کند","آلمانی یاد می‌گیرد","خانه است","به شهر می‌رود"],"correct":0,"explanation_fa":"تیم می‌گوید: «Ich arbeite bis 8.»"}
+{"type":"tf","prompt":"تیم فردا وقت دارد.","correct":true,"explanation_fa":"تیم می‌گوید: «Morgen habe ich Zeit.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید آن‌ها فردا چه کار می‌کنند؟","correct_sentence":4,"explanation_fa":"گفته می‌شود: «Wir können zusammen Deutsch lernen.»"}
+{"type":"tf","prompt":"آن‌ها امروز با هم آلمانی یاد می‌گیرند.","correct":false,"explanation_fa":"تیم امروز وقت ندارد: «Nein, heute nicht.»"}
+listening A:
+{"type":"mcq","prompt":"فردا ساعت چند همدیگر را می‌بینند؟","options":["ساعت سه","ساعت سه و نیم","ساعت چهار و نیم","ساعت هشت"],"correct":1,"explanation_fa":"گفته می‌شود: «Um halb vier?» «halb vier» یعنی سه و نیم."}
+{"type":"num","prompt":"تیم امروز تا ساعت چند کار می‌کند؟","answer":"8","accepted":["8","acht"],"explanation_fa":"تیم می‌گوید: «Ich arbeite bis 8.»"}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"tf","prompt":"تیم قبول می‌کند.","correct":true,"explanation_fa":"تیم می‌گوید: «Okay, um halb vier.»"}
