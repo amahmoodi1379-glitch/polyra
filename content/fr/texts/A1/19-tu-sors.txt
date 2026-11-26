@@ -1,0 +1,24 @@
+code: fr-a1-t019
+title: Tu sors ?
+kind: dialogue
+sentences:
+A: Tu sors, Julie ? | ژولی، داری می‌روی بیرون؟
+B: Oui, je vais chez Camille. | آره، می‌روم خانه کامی.
+A: Tu es là à quelle heure ? | ساعت چند برمی‌گردی؟
+B: À 11 heures, peut-être. | شاید ساعت ۱۱. | tts: À onze heures, peut-être.
+A: Non, à 10 heures, pas plus. | نه، ساعت ۱۰، نه دیرتر. | tts: Non, à dix heures, pas plus.
+B: D'accord. | باشد.
+A: Tu as de l'argent ? | پول داری؟
+B: Oui, un peu. Merci ! | آره، کمی. ممنون!
+reading A:
+{"type":"mcq","prompt":"ژولی کجا می‌رود؟","options":["خانه کامی","مدرسه","خانه سوفی","کافه"],"correct":0,"explanation_fa":"ژولی می‌گوید: «je vais chez Camille»."}
+{"type":"tf","prompt":"ژولی پول ندارد.","correct":false,"explanation_fa":"ژولی می‌گوید: «Oui, un peu.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید ژولی باید ساعت ۱۰ برگردد؟","correct_sentence":4,"explanation_fa":"گفته می‌شود: «Non, à 10 heures, pas plus.»"}
+{"type":"tf","prompt":"ژولی اول می‌گوید شاید ساعت ۱۱ برگردد.","correct":true,"explanation_fa":"ژولی می‌گوید: «À 11 heures, peut-être.»"}
+listening A:
+{"type":"num","prompt":"ژولی باید ساعت چند برگردد؟","answer":"10","accepted":["10","dix"],"explanation_fa":"گفته می‌شود: «Non, à 10 heures, pas plus.»"}
+{"type":"tf","prompt":"ژولی قبول می‌کند.","correct":true,"explanation_fa":"ژولی می‌گوید: «D'accord.»"}
+listening B:
+{"type":"dict","sentence":6}
+{"type":"mcq","prompt":"ژولی چقدر پول دارد؟","options":["کمی","زیاد","هیچ","نمی‌گوید"],"correct":0,"explanation_fa":"ژولی می‌گوید: «Oui, un peu.»"}

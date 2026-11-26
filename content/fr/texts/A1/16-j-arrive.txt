@@ -1,0 +1,23 @@
+code: fr-a1-t016
+title: J'arrive à six heures
+kind: voice_message
+sentences:
+- Salut Marie, c'est Lucas. | سلام ماری، لوکا هستم.
+- Je pars de Lyon à 3 heures. | ساعت ۳ از لیون راه می‌افتم. | tts: Je pars de Lyon à trois heures.
+- J'arrive chez toi à 6 heures. | ساعت ۶ به خانه‌ات می‌رسم. | tts: J'arrive chez toi à six heures.
+- Tu peux m'attendre ? | می‌توانی منتظرم بمانی؟
+- Je n'ai pas ton nouveau numéro. | شماره جدیدت را ندارم.
+- Tu peux m'écrire ton numéro ? | می‌توانی شماره‌ات را برایم بنویسی؟
+- Merci, Marie ! | ممنون ماری!
+reading A:
+{"type":"mcq","prompt":"لوکا ساعت چند می‌رسد؟","options":["ساعت ۳","ساعت ۶","ساعت ۹","ساعت ۱۲"],"correct":1,"explanation_fa":"لوکا می‌گوید: «J'arrive chez toi à 6 heures.»"}
+{"type":"tf","prompt":"لوکا شماره جدید ماری را دارد.","correct":false,"explanation_fa":"لوکا می‌گوید: «Je n'ai pas ton nouveau numéro.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید لوکا از کجا راه می‌افتد؟","correct_sentence":1,"explanation_fa":"لوکا می‌گوید: «Je pars de Lyon à 3 heures.»"}
+{"type":"match","prompt":"هر ساعت را به کارش وصل کن.","left":["ساعت ۳","ساعت ۶"],"right":["لوکا راه می‌افتد","لوکا می‌رسد","لوکا می‌خوابد"],"pairs":[[0,0],[1,1]],"explanation_fa":"ساعت ۳ راه می‌افتد و ساعت ۶ می‌رسد."}
+listening A:
+{"type":"num","prompt":"لوکا ساعت چند از لیون راه می‌افتد؟","answer":"3","accepted":["3","trois"],"explanation_fa":"لوکا می‌گوید: «Je pars de Lyon à 3 heures.»"}
+{"type":"mcq","prompt":"لوکا از ماری چه می‌خواهد؟","options":["شماره‌اش را بنویسد","به لیون بیاید","غذا درست کند","زود بخوابد"],"correct":0,"explanation_fa":"لوکا می‌پرسد: «Tu peux m'écrire ton numéro ?»"}
+listening B:
+{"type":"dict","sentence":4}
+{"type":"tf","prompt":"لوکا به خانه ماری می‌آید.","correct":true,"explanation_fa":"لوکا می‌گوید: «J'arrive chez toi.»"}

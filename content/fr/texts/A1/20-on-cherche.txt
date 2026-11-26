@@ -1,0 +1,23 @@
+code: fr-a1-t020
+title: On cherche une personne
+kind: ad
+sentences:
+- Famille à Lyon cherche une personne pour aider deux enfants. | خانواده‌ای در لیون دنبال کسی است که به دو بچه کمک کند.
+- Les enfants ont 6 et 9 ans. | بچه‌ها ۶ و ۹ ساله‌اند. | tts: Les enfants ont six et neuf ans.
+- Vous jouez avec eux et vous lisez avec eux. | با آن‌ها بازی می‌کنید و با آن‌ها کتاب می‌خوانید.
+- Vous les aidez aussi pour l'école. | برای مدرسه هم کمکشان می‌کنید.
+- C'est de 4 heures à 7 heures. | از ساعت ۴ تا ساعت ۷ است. | tts: C'est de quatre heures à sept heures.
+- Vous parlez français ? C'est important. | فرانسوی حرف می‌زنید؟ این مهم است.
+- Notre numéro : 06 51 28 64 30. | شماره ما: ۰۶ ۵۱ ۲۸ ۶۴ ۳۰. | tts: Notre numéro : zéro six, cinquante et un, vingt-huit, soixante-quatre, trente.
+reading A:
+{"type":"mcq","prompt":"خانواده دنبال چه کسی است؟","options":["کسی که به بچه‌ها کمک کند","یک آشپز","یک راننده","یک معلم موسیقی"],"correct":0,"explanation_fa":"در آگهی آمده: «cherche une personne pour aider deux enfants»."}
+{"type":"tf","prompt":"خانواده سه بچه دارد.","correct":false,"explanation_fa":"در آگهی آمده: «deux enfants»، یعنی دو بچه."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید فرانسوی حرف زدن مهم است؟","correct_sentence":5,"explanation_fa":"در آگهی آمده: «Vous parlez français ? C'est important.»"}
+{"type":"match","prompt":"هر چیز را به جوابش وصل کن.","left":["سن بچه‌ها","ساعت کار"],"right":["۶ و ۹ سال","از ۴ تا ۷","از ۸ تا ۱۲"],"pairs":[[0,0],[1,1]],"explanation_fa":"بچه‌ها ۶ و ۹ ساله‌اند و کار از ۴ تا ۷ است."}
+listening A:
+{"type":"num","prompt":"بچه بزرگ‌تر چند سال دارد؟","answer":"9","accepted":["9","neuf"],"explanation_fa":"در آگهی آمده: «Les enfants ont 6 et 9 ans.»"}
+{"type":"tf","prompt":"کار از ساعت ۴ شروع می‌شود.","correct":true,"explanation_fa":"در آگهی آمده: «C'est de 4 heures à 7 heures.»"}
+listening B:
+{"type":"mcq","prompt":"خانواده کجا زندگی می‌کند؟","options":["لیون","پاریس","نیس","مارسی"],"correct":0,"explanation_fa":"در آگهی آمده: «Famille à Lyon»."}
+{"type":"dict","sentence":3}

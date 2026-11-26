@@ -1,0 +1,24 @@
+code: fr-a1-t015
+title: Le premier jour
+kind: dialogue
+sentences:
+A: Bonjour ! Vous êtes nouveau ici ? | سلام! شما اینجا تازه‌وارد هستید؟
+B: Oui, c'est mon premier jour. | بله، امروز روز اول من است.
+A: Ah, très bien ! Moi, c'est Sophie. | آه، خیلی خوب! من سوفی هستم.
+B: Bonjour, Sophie. Je m'appelle Ali. | سلام سوفی. اسم من علی است.
+A: Vous connaissez les gens ici ? | آدم‌های اینجا را می‌شناسید؟
+B: Non, je ne connais pas les gens. Et le travail est nouveau pour moi. | نه، آدم‌ها را نمی‌شناسم. کار هم برایم تازه است.
+A: Vous avez un problème ? Vous pouvez me demander. | مشکلی داشتید؟ می‌توانید از من بپرسید.
+B: Merci beaucoup, Sophie ! | خیلی ممنون سوفی!
+reading A:
+{"type":"mcq","prompt":"امروز برای علی چه روزی است؟","options":["روز اول کار","روز آخر کار","روز تولد","روز تعطیل"],"correct":0,"explanation_fa":"علی می‌گوید: «c'est mon premier jour»."}
+{"type":"tf","prompt":"علی آدم‌های اینجا را می‌شناسد.","correct":false,"explanation_fa":"علی می‌گوید: «je ne connais pas les gens»."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید علی می‌تواند از سوفی بپرسد؟","correct_sentence":6,"explanation_fa":"سوفی می‌گوید: «Vous pouvez me demander.»"}
+{"type":"tf","prompt":"کار برای علی تازه است.","correct":true,"explanation_fa":"علی می‌گوید: «le travail est nouveau pour moi»."}
+listening A:
+{"type":"mcq","prompt":"اسم زن چیست؟","options":["سوفی","ژولی","لئا","کامی"],"correct":0,"explanation_fa":"زن می‌گوید: «Moi, c'est Sophie.»"}
+{"type":"tf","prompt":"سوفی می‌خواهد به علی کمک کند.","correct":true,"explanation_fa":"سوفی می‌گوید: «Vous pouvez me demander.»"}
+listening B:
+{"type":"dict","sentence":1}
+{"type":"mcq","prompt":"علی آخر گفتگو چه می‌گوید؟","options":["خیلی ممنون","خداحافظ","ببخشید","مشکلی نیست"],"correct":0,"explanation_fa":"علی می‌گوید: «Merci beaucoup, Sophie !»"}

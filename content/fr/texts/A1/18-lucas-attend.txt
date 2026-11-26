@@ -1,0 +1,22 @@
+code: fr-a1-t018
+title: Lucas attend à l'école
+kind: voice_message
+sentences:
+- Bonjour madame, c'est madame Martin, de l'école. | سلام خانم، خانم مارتن هستم، از مدرسه.
+- Lucas est ici, avec moi. | لوکا اینجاست، پیش من.
+- L'école finit à 4 heures, mais il est 5 heures. | مدرسه ساعت ۴ تمام می‌شود، ولی الان ساعت ۵ است. | tts: L'école finit à quatre heures, mais il est cinq heures.
+- Vous pouvez venir, s'il vous plaît ? | می‌توانید بیایید، لطفاً؟
+- Lucas vous attend à la porte de l'école. | لوکا دمِ در مدرسه منتظرتان است.
+- Merci, au revoir ! | ممنون، خداحافظ!
+reading A:
+{"type":"mcq","prompt":"خانم مارتن کیست؟","options":["از مدرسه است","مادر لوکاست","پزشک است","همسایه است"],"correct":0,"explanation_fa":"خانم مارتن می‌گوید: «c'est madame Martin, de l'école»."}
+{"type":"tf","prompt":"لوکا تنهاست.","correct":false,"explanation_fa":"خانم مارتن می‌گوید: «Lucas est ici, avec moi.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید لوکا کجا منتظر است؟","correct_sentence":4,"explanation_fa":"خانم مارتن می‌گوید: «Lucas vous attend à la porte de l'école.»"}
+{"type":"tf","prompt":"الان ساعت ۵ است.","correct":true,"explanation_fa":"خانم مارتن می‌گوید: «il est 5 heures»."}
+listening A:
+{"type":"num","prompt":"مدرسه ساعت چند تمام می‌شود؟","answer":"4","accepted":["4","quatre"],"explanation_fa":"خانم مارتن می‌گوید: «L'école finit à 4 heures.»"}
+{"type":"mcq","prompt":"خانم مارتن از مادر لوکا چه می‌خواهد؟","options":["بیاید","پول بدهد","فردا زنگ بزند","کتاب بیاورد"],"correct":0,"explanation_fa":"خانم مارتن می‌پرسد: «Vous pouvez venir, s'il vous plaît ?»"}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"tf","prompt":"لوکا پیش خانم مارتن است.","correct":true,"explanation_fa":"خانم مارتن می‌گوید: «Lucas est ici, avec moi.»"}

@@ -1,0 +1,24 @@
+code: fr-a1-t013
+title: Une bonne idée
+kind: dialogue
+sentences:
+A: Tu es libre, Hugo ? | هوگو، وقتت آزاد است؟
+B: Oui, je suis libre. Pourquoi ? | آره، آزادم. چرا؟
+A: Je voudrais jouer avec toi et Lucas. | می‌خواهم با تو و لوکا بازی کنم.
+B: Bonne idée, Emma ! On joue où ? | فکر خوبی است اِما! کجا بازی کنیم؟
+A: Chez moi. Ma maison est grande. | خانه من. خانه‌ام بزرگ است.
+B: D'accord. Je viens avec mon chien ? | باشد. با سگم بیایم؟
+A: Non, pardon. Mon chat n'aime pas les chiens. | نه، ببخشید. گربه‌ام سگ‌ها را دوست ندارد.
+B: Pas de problème. Alors je viens seul. | مشکلی نیست. پس تنها می‌آیم.
+reading A:
+{"type":"mcq","prompt":"اِما می‌خواهد چه کار کند؟","options":["با هوگو و لوکا بازی کند","به مدرسه برود","سگ بخرد","کتاب بخواند"],"correct":0,"explanation_fa":"اِما می‌گوید: «Je voudrais jouer avec toi et Lucas.»"}
+{"type":"tf","prompt":"خانه اِما کوچک است.","correct":false,"explanation_fa":"اِما می‌گوید: «Ma maison est grande.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید گربه اِما سگ‌ها را دوست ندارد؟","correct_sentence":6,"explanation_fa":"اِما می‌گوید: «Mon chat n'aime pas les chiens.»"}
+{"type":"tf","prompt":"هوگو با سگش می‌آید.","correct":false,"explanation_fa":"هوگو می‌گوید: «Alors je viens seul.»"}
+listening A:
+{"type":"mcq","prompt":"کجا بازی می‌کنند؟","options":["خانه اِما","خانه هوگو","خانه لوکا","در مدرسه"],"correct":0,"explanation_fa":"اِما می‌گوید: «Chez moi.»"}
+{"type":"tf","prompt":"هوگو وقت آزاد دارد.","correct":true,"explanation_fa":"هوگو می‌گوید: «Oui, je suis libre.»"}
+listening B:
+{"type":"dict","sentence":1}
+{"type":"mcq","prompt":"هوگو آخر گفتگو چه می‌گوید؟","options":["تنها می‌آیم","با سگم می‌آیم","نمی‌آیم","با لوکا می‌آیم"],"correct":0,"explanation_fa":"هوگو می‌گوید: «Alors je viens seul.»"}

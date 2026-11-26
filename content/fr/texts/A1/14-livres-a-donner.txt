@@ -1,0 +1,23 @@
+code: fr-a1-t014
+title: Livres à donner
+kind: ad
+sentences:
+- Je donne des livres ! | کتاب رایگان می‌دهم!
+- J'ai 30 vieux livres en français. | سی کتاب قدیمی به فرانسوی دارم. | tts: J'ai trente vieux livres en français.
+- Il y a aussi des livres pour enfants. | کتاب بچه‌ها هم هست.
+- Les livres sont vieux, mais très beaux. | کتاب‌ها قدیمی‌اند، ولی خیلی قشنگ.
+- Je n'ai pas besoin d'argent. | پول نمی‌خواهم.
+- Vous pouvez venir chez moi, à Lyon. | می‌توانید به خانه من در لیون بیایید.
+- Mon numéro : 06 33 14 72 51. | شماره من: ۰۶ ۳۳ ۱۴ ۷۲ ۵۱. | tts: Mon numéro : zéro six, trente-trois, quatorze, soixante-douze, cinquante et un.
+reading A:
+{"type":"mcq","prompt":"این آگهی درباره چیست؟","options":["کتاب رایگان","فروش ماشین","یک خانه","کلاس فرانسه"],"correct":0,"explanation_fa":"در آگهی آمده: «Je donne des livres !» و «Je n'ai pas besoin d'argent.»"}
+{"type":"tf","prompt":"برای کتاب‌ها باید پول داد.","correct":false,"explanation_fa":"در آگهی آمده: «Je n'ai pas besoin d'argent.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید کتاب بچه‌ها هم هست؟","correct_sentence":2,"explanation_fa":"در آگهی آمده: «Il y a aussi des livres pour enfants.»"}
+{"type":"match","prompt":"هر چیز را به جوابش وصل کن.","left":["تعداد کتاب‌ها","شهر"],"right":["۳۰","لیون","۱۳"],"pairs":[[0,0],[1,1]],"explanation_fa":"سی کتاب در لیون."}
+listening A:
+{"type":"num","prompt":"چند کتاب هست؟","answer":"30","accepted":["30","trente"],"explanation_fa":"در آگهی آمده: «J'ai 30 vieux livres.»"}
+{"type":"tf","prompt":"کتاب‌ها نو هستند.","correct":false,"explanation_fa":"در آگهی آمده: «Les livres sont vieux.»"}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"mcq","prompt":"کتاب‌ها به چه زبانی‌اند؟","options":["فرانسوی","انگلیسی","آلمانی","فارسی"],"correct":0,"explanation_fa":"در آگهی آمده: «livres en français»."}
