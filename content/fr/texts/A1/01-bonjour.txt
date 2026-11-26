@@ -1,0 +1,25 @@
+code: fr-a1-t001
+title: Bonjour !
+kind: dialogue
+sentences:
+A: Bonjour ! Je m'appelle Léa. Et toi ? | سلام! اسم من لئاست. تو چی؟
+B: Salut, Léa ! Moi, c'est Hugo. | سلام لئا! من هوگو هستم.
+A: Ça va, Hugo ? | خوبی هوگو؟
+B: Oui, ça va, merci. | آره، خوبم، ممنون.
+A: Tu parles français ? | فرانسوی حرف می‌زنی؟
+B: Oui, je parle français. | آره، فرانسوی حرف می‌زنم.
+A: Où est ta maison ? | خانه‌ات کجاست؟
+B: Ma maison est ici. Elle est petite. | خانه‌ام همین‌جاست. کوچک است.
+A: Au revoir, Hugo ! | خداحافظ هوگو!
+reading A:
+{"type":"mcq","prompt":"اسم دوست لئا چیست؟","options":["پل","هوگو","توما","لوکا"],"correct":1,"explanation_fa":"دوستش می‌گوید: «Moi, c'est Hugo.»"}
+{"type":"tf","prompt":"هوگو فرانسوی حرف می‌زند.","correct":true,"explanation_fa":"هوگو می‌گوید: «Oui, je parle français.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید خانه هوگو کجاست؟","correct_sentence":7,"explanation_fa":"هوگو می‌گوید: «Ma maison est ici.»"}
+{"type":"tf","prompt":"خانه هوگو بزرگ است.","correct":false,"explanation_fa":"هوگو می‌گوید: «Elle est petite»، یعنی کوچک است."}
+listening A:
+{"type":"mcq","prompt":"حال هوگو چطور است؟","options":["خوب است","خسته است","بیمار است","ناراحت است"],"correct":0,"explanation_fa":"هوگو می‌گوید: «Oui, ça va, merci.»"}
+{"type":"tf","prompt":"اول گفتگو، لئا اسمش را می‌گوید.","correct":true,"explanation_fa":"لئا می‌گوید: «Je m'appelle Léa.»"}
+listening B:
+{"type":"dict","sentence":4}
+{"type":"mcq","prompt":"آخر گفتگو لئا چه می‌گوید؟","options":["سلام","ممنون","خداحافظ","ببخشید"],"correct":2,"explanation_fa":"لئا می‌گوید: «Au revoir, Hugo !»"}

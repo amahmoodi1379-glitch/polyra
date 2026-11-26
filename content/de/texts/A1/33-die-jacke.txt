@@ -1,0 +1,24 @@
+code: de-a1-t033
+title: Eine Jacke kaufen
+kind: dialogue
+sentences:
+A: Guten Tag! Kann ich Ihnen helfen? | روز بخیر! کمکتان کنم؟
+B: Ja, bitte. Ich suche eine Jacke. | بله، لطفاً. دنبال یک ژاکت می‌گردم.
+A: Welche Farbe möchten Sie? | چه رنگی می‌خواهید؟
+B: Schwarz oder blau. | مشکی یا آبی.
+A: Hier ist eine blaue Jacke. Sie kostet 80 Euro. | این یک ژاکت آبی است. ۸۰ یورو است. | tts: Hier ist eine blaue Jacke. Sie kostet achtzig Euro.
+B: Oh, das ist zu teuer. Haben Sie auch billige Jacken? | اوه، خیلی گران است. ژاکت ارزان هم دارید؟
+A: Ja, die schwarze Jacke dort kostet nur 45 Euro. | بله، آن ژاکت مشکی فقط ۴۵ یورو است. | tts: Ja, die schwarze Jacke dort kostet nur fünfundvierzig Euro.
+B: Gut, die nehme ich. | خوب، آن را برمی‌دارم.
+reading A:
+{"type":"mcq","prompt":"مشتری دنبال چیست؟","options":["ژاکت","شلوار","کفش","کیف"],"correct":0,"explanation_fa":"مشتری می‌گوید: «Ich suche eine Jacke.»"}
+{"type":"tf","prompt":"ژاکت آبی ارزان است.","correct":false,"explanation_fa":"مشتری می‌گوید: «das ist zu teuer»."}
+reading B:
+{"type":"match","prompt":"هر ژاکت را به قیمتش وصل کن.","left":["ژاکت آبی","ژاکت مشکی"],"right":["۸۰ یورو","۴۵ یورو","۶۰ یورو"],"pairs":[[0,0],[1,1]],"explanation_fa":"ژاکت آبی ۸۰ یورو و ژاکت مشکی ۴۵ یورو است."}
+{"type":"find","prompt":"کدام جمله می‌گوید مشتری چه رنگی می‌خواهد؟","correct_sentence":3,"explanation_fa":"مشتری می‌گوید: «Schwarz oder blau.»"}
+listening A:
+{"type":"num","prompt":"ژاکت مشکی چند یورو است؟","answer":"45","accepted":["45","fünfundvierzig"],"explanation_fa":"فروشنده می‌گوید: «die schwarze Jacke dort kostet nur 45 Euro»."}
+{"type":"mcq","prompt":"مشتری آخر کدام ژاکت را برمی‌دارد؟","options":["مشکی","آبی","هیچ‌کدام","هر دو"],"correct":0,"explanation_fa":"مشتری می‌گوید: «Gut, die nehme ich.»، یعنی ژاکت مشکی را."}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"tf","prompt":"مشتری می‌گوید ژاکت آبی خیلی گران است.","correct":true,"explanation_fa":"مشتری می‌گوید: «Oh, das ist zu teuer.»"}

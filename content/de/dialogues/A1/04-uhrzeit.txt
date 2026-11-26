@@ -1,0 +1,29 @@
+code: de-a1-d004
+title: پرسیدن ساعت و روز
+situation: در خیابان هستی. یک آقا ساعت و روز را از تو می‌پرسد.
+turns:
+B: Entschuldigung, wie spät ist es? | ببخشید، ساعت چند است؟
++ Es ist halb drei. | ساعت دو و نیم است.
+- Ich bin halb drei. | من دو و نیمم.
+- Es ist drei Jahre. | سه سال است.
+why: «Es ist halb drei» یعنی ساعت دو و نیم. «Ich bin» درباره خودت است و «drei Jahre» زمان ساعت نیست.
+B: Halb drei? Danke! Und welcher Tag ist heute? Dienstag? | دو و نیم؟ ممنون! امروز چه روزی است؟ سه‌شنبه؟
+- Nein, heute ist März. | نه، امروز مارس است.
++ Nein, heute ist Mittwoch. | نه، امروز چهارشنبه است.
+- Nein, heute bin Mittwoch. | نه، امروز چهارشنبه‌ام.
+why: روز هفته را می‌گوییم: «heute ist Mittwoch». März اسم ماه است و با heute شکل ist می‌آید، نه bin.
+B: Mittwoch? Oh nein, ich habe heute einen Termin! | چهارشنبه؟ وای نه، امروز یک قرار دارم!
+- Wer ist der Termin? | قرار کیست؟
+- Wann bist der Termin? | قرار کی هستی؟
++ Wann ist der Termin? | قرار کی است؟
+why: زمان قرار را با «Wann ist der Termin?» می‌پرسیم. «Wer» برای آدم است و با der Termin شکل ist می‌آید.
+B: Um drei Uhr. | ساعت سه.
++ Dann haben Sie noch Zeit. | پس هنوز وقت دارید.
+- Dann hast du noch Zeit. | پس هنوز وقت داری.
+- Dann haben Sie noch Geld. | پس هنوز پول دارید.
+why: ساعت دو و نیم است و قرار ساعت سه، پس «noch Zeit». با یک غریبه Sie می‌گوییم و حرف از پول نیست.
+B: Ja! Danke! | آره! ممنون!
+- Bitte! Guten Morgen! | خواهش می‌کنم! صبح بخیر!
++ Bitte! Auf Wiedersehen! | خواهش می‌کنم! خداحافظ!
+- Hallo! Auf Wiedersehen! | سلام! خداحافظ!
+why: جواب «Danke» می‌شود «Bitte». الان بعدازظهر است، پس «Guten Morgen» جا ندارد، و «Hallo» سلام است، نه جواب تشکر.

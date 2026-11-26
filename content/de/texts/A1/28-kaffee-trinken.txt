@@ -1,0 +1,23 @@
+code: de-a1-t028
+title: Was trinkst du gern?
+kind: dialogue
+sentences:
+A: Was trinkst du gern, Felix? | فلیکس، چه چیزی دوست داری بنوشی؟
+B: Ich trinke gern Tee. Und du? | من چای دوست دارم. تو چی؟
+A: Ich trinke nie Tee. Ich trinke immer Kaffee. | من هیچ‌وقت چای نمی‌نوشم. همیشه قهوه می‌نوشم.
+B: Wie viel Kaffee trinkst du? | چقدر قهوه می‌نوشی؟
+A: Vier oder fünf Kaffee am Tag. | روزی چهار یا پنج قهوه.
+B: Das ist sehr viel! Ich trinke oft Wasser. | خیلی زیاد است! من زیاد آب می‌نوشم.
+A: Ja, ich weiß. Aber ich mag Kaffee. | آره، می‌دانم. ولی قهوه دوست دارم.
+reading A:
+{"type":"mcq","prompt":"فلیکس چه چیزی دوست دارد بنوشد؟","options":["چای","قهوه","شیر","آبمیوه"],"correct":0,"explanation_fa":"فلیکس می‌گوید: «Ich trinke gern Tee.»"}
+{"type":"tf","prompt":"نفر اول گاهی چای می‌نوشد.","correct":false,"explanation_fa":"می‌گوید: «Ich trinke nie Tee.»، یعنی هیچ‌وقت."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید روزی چند قهوه می‌نوشد؟","correct_sentence":4,"explanation_fa":"می‌گوید: «Vier oder fünf Kaffee am Tag.»"}
+{"type":"tf","prompt":"فلیکس فکر می‌کند پنج قهوه زیاد است.","correct":true,"explanation_fa":"فلیکس می‌گوید: «Das ist sehr viel!»"}
+listening A:
+{"type":"mcq","prompt":"نفر اول همیشه چه می‌نوشد؟","options":["قهوه","چای","آب","هیچ"],"correct":0,"explanation_fa":"می‌گوید: «Ich trinke immer Kaffee.»"}
+{"type":"tf","prompt":"فلیکس زیاد آب می‌نوشد.","correct":true,"explanation_fa":"فلیکس می‌گوید: «Ich trinke oft Wasser.»"}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"mcq","prompt":"نفر اول روزی چند قهوه می‌نوشد؟","options":["یک یا دو","دو یا سه","چهار یا پنج","هفت یا هشت"],"correct":2,"explanation_fa":"می‌گوید: «Vier oder fünf Kaffee am Tag.»"}

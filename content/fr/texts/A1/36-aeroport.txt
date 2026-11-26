@@ -1,0 +1,22 @@
+code: fr-a1-t036
+title: À l'aéroport
+kind: announcement
+sentences:
+- Bienvenue à l'aéroport de Paris ! | به فرودگاه پاریس خوش آمدید!
+- L'avion pour Téhéran part à 22 heures. | هواپیمای تهران ساعت ۲۲ حرکت می‌کند. | tts: L'avion pour Téhéran part à vingt-deux heures.
+- Vous avez besoin de votre passeport et de votre billet. | به گذرنامه و بلیتتان نیاز دارید.
+- Une valise de plus de 20 kilos coûte 50 euros. | چمدانِ بیشتر از ۲۰ کیلو ۵۰ یورو هزینه دارد. | tts: Une valise de plus de vingt kilos coûte cinquante euros.
+- Il y a des magasins et des cafés au premier étage. | در طبقه اول مغازه و کافه هست.
+- Merci et bon voyage ! | ممنون و سفر خوش!
+reading A:
+{"type":"mcq","prompt":"هواپیمای تهران ساعت چند حرکت می‌کند؟","options":["ساعت ۲۰","ساعت ۲۲","ساعت ۱۲","ساعت ۲"],"correct":1,"explanation_fa":"گفته می‌شود: «L'avion pour Téhéran part à 22 heures.»"}
+{"type":"tf","prompt":"مسافرها گذرنامه لازم ندارند.","correct":false,"explanation_fa":"گفته می‌شود: «Vous avez besoin de votre passeport.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید مغازه‌ها کجا هستند؟","correct_sentence":4,"explanation_fa":"گفته می‌شود: «Il y a des magasins et des cafés au premier étage.»"}
+{"type":"match","prompt":"هر عدد را به معنی‌اش وصل کن.","left":["۲۰ کیلو","۵۰ یورو"],"right":["وزن چمدان","هزینه چمدان سنگین","ساعت پرواز"],"pairs":[[0,0],[1,1]],"explanation_fa":"چمدانِ بیشتر از ۲۰ کیلو ۵۰ یورو هزینه دارد."}
+listening A:
+{"type":"num","prompt":"چمدانِ سنگین چند یورو هزینه دارد؟","answer":"50","accepted":["50","cinquante"],"explanation_fa":"گفته می‌شود: «coûte 50 euros»."}
+{"type":"mcq","prompt":"این اعلام کجاست؟","options":["فرودگاه","ایستگاه قطار","سوپرمارکت","مدرسه"],"correct":0,"explanation_fa":"گفته می‌شود: «Bienvenue à l'aéroport de Paris !»"}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"tf","prompt":"در طبقه اول کافه هست.","correct":true,"explanation_fa":"گفته می‌شود: «des cafés au premier étage»."}

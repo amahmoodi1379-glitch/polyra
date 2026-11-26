@@ -164,9 +164,10 @@ export function buildGrammar(analyzer: Analyzer, files: { file: string; text: st
         continue;
       }
       const checked = sentence(source, "—", item.line);
-      const results = listOf(outputs, ";");
+      const results = listOf(outputs, ";").map((result) => sentence(result, "—", item.line));
       if (!checked) continue;
-      if (results.every((result) => sentence(result, "—", item.line))) transforms.push({ instruction_fa: instruction, source, accepted_outputs: results });
+      // The texts as learners see them: a {code} mark only tells the analyzer which word it is.
+      if (results.every((result) => result)) transforms.push({ instruction_fa: instruction, source: checked.core.text, accepted_outputs: results.map((result) => result!.core.text) });
     }
 
     const translations = [];
@@ -177,9 +178,9 @@ export function buildGrammar(analyzer: Analyzer, files: { file: string; text: st
         say(item.line, "a translation is «Persian sentence => right answer ; other right answer»");
         continue;
       }
-      const first = sentence(results[0], prompt, item.line);
-      if (!first || !results.slice(1).every((result) => sentence(result, prompt, item.line))) continue;
-      translations.push({ prompt_fa: prompt, accepted_outputs: results, tokens: first.core.tokens });
+      const built = results.map((result) => sentence(result, prompt, item.line));
+      if (built.some((result) => !result)) continue;
+      translations.push({ prompt_fa: prompt, accepted_outputs: built.map((result) => result!.core.text), tokens: built[0]!.core.tokens });
     }
 
     const buildTable = (sections.get("table") ?? []).map((item) => item.text.split("|").map((cell) => cell.trim()));

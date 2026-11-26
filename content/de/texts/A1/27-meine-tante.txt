@@ -1,0 +1,24 @@
+code: de-a1-t027
+title: Ist das deine Schwester?
+kind: dialogue
+sentences:
+A: Ist das deine Schwester, Jonas? | یوناس، این خواهرت است؟
+B: Nein, das ist meine Tante. Sie ist sehr jung. | نه، این خاله‌ام است. خیلی جوان است.
+A: Wie alt ist sie? | چند سالش است؟
+B: Sie ist 25. Sie ist die Schwester von meiner{mein} Mutter. | ۲۵ سالش است. خواهرِ مادرم است. | tts: Sie ist fünfundzwanzig. Sie ist die Schwester von meiner Mutter.
+A: Und der Junge? | آن پسر چی؟
+B: Das ist ihr Sohn, Leon. Er ist 2 Jahre alt. | پسرش است، لئون. دو سالش است. | tts: Das ist ihr Sohn, Leon. Er ist zwei Jahre alt.
+A: Und wo wohnen sie? | کجا زندگی می‌کنند؟
+B: In München. Aber sie kommen oft nach Berlin. | در مونیخ. ولی زیاد به برلین می‌آیند.
+reading A:
+{"type":"mcq","prompt":"زن جوان کیست؟","options":["خواهر یوناس","خاله یوناس","مادر یوناس","دوست یوناس"],"correct":1,"explanation_fa":"یوناس می‌گوید: «das ist meine Tante»؛ او «die Schwester von meiner Mutter» است."}
+{"type":"tf","prompt":"خاله یوناس یک دختر دارد.","correct":false,"explanation_fa":"یوناس می‌گوید: «Das ist ihr Sohn, Leon.»، یعنی پسر."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید آن‌ها کجا زندگی می‌کنند؟","correct_sentence":7,"explanation_fa":"یوناس می‌گوید: «In München.»"}
+{"type":"match","prompt":"هر آدم را به سنش وصل کن.","left":["خاله یوناس","لئون"],"right":["۲۵ سال","۲ سال","۵ سال"],"pairs":[[0,0],[1,1]],"explanation_fa":"خاله ۲۵ ساله است و لئون ۲ ساله."}
+listening A:
+{"type":"num","prompt":"خاله یوناس چند سال دارد؟","answer":"25","accepted":["25","fünfundzwanzig"],"explanation_fa":"یوناس می‌گوید: «Sie ist 25.»"}
+{"type":"tf","prompt":"آن‌ها زیاد به برلین می‌آیند.","correct":true,"explanation_fa":"یوناس می‌گوید: «sie kommen oft nach Berlin»."}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"mcq","prompt":"اسم پسر کوچک چیست؟","options":["لئون","یوناس","تیم","بن"],"correct":0,"explanation_fa":"یوناس می‌گوید: «Das ist ihr Sohn, Leon.»"}

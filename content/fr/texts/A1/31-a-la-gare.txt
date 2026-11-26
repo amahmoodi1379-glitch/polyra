@@ -1,0 +1,28 @@
+code: fr-a1-t031
+title: À la gare
+kind: announcement
+placement: yes
+sentences:
+- Bonjour ! | سلام!
+- Aujourd'hui, le train de 10 heures 15 pour Lyon est en retard. | امروز قطار ساعت ۱۰:۱۵ لیون تأخیر دارد. | tts: Aujourd'hui, le train de dix heures quinze pour Lyon est en retard.
+- Il part à 10 heures 35. | ساعت ۱۰:۳۵ حرکت می‌کند. | tts: Il part à dix heures trente-cinq.
+- Le train pour Marseille arrive à 11 heures. | قطار مارسی ساعت ۱۱ می‌رسد. | tts: Le train pour Marseille arrive à onze heures.
+- Il y a un café et des toilettes à côté de la porte 2. | کنار در شماره ۲ یک کافه و دستشویی هست. | tts: Il y a un café et des toilettes à côté de la porte deux.
+- N'oubliez pas vos valises ! | چمدان‌هایتان را فراموش نکنید!
+- Merci et bon voyage ! | ممنون و سفر خوش!
+reading A:
+{"type":"mcq","prompt":"قطار لیون امروز ساعت چند حرکت می‌کند؟","options":["۱۰:۱۵","۱۰:۳۵","۱۱:۰۰","۱۰:۵۵"],"correct":1,"explanation_fa":"گفته می‌شود: «Il part à 10 heures 35.»"}
+{"type":"tf","prompt":"قطار لیون امروز به‌موقع است.","correct":false,"explanation_fa":"گفته می‌شود: «le train est en retard»."}
+{"type":"mcq","prompt":"کدام قطار ساعت ۱۱ می‌رسد؟","options":["قطار مارسی","قطار لیون","قطار پاریس","قطار نیس"],"correct":0,"explanation_fa":"گفته می‌شود: «Le train pour Marseille arrive à 11 heures.»"}
+{"type":"tf","prompt":"کنار در شماره ۲ یک کافه هست.","correct":true,"explanation_fa":"گفته می‌شود: «Il y a un café et des toilettes à côté de la porte 2.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید چمدان‌ها را فراموش نکنید؟","correct_sentence":5,"explanation_fa":"گفته می‌شود: «N'oubliez pas vos valises !»"}
+{"type":"match","prompt":"هر قطار را به ساعتش وصل کن.","left":["قطار لیون (امروز)","قطار مارسی"],"right":["۱۰:۳۵","۱۱:۰۰","۱۰:۱۵"],"pairs":[[0,0],[1,1]],"explanation_fa":"قطار لیون امروز ۱۰:۳۵ حرکت می‌کند و قطار مارسی ساعت ۱۱ می‌رسد."}
+listening A:
+{"type":"mcq","prompt":"چرا قطار لیون دیرتر حرکت می‌کند؟","options":["چون تأخیر دارد","چون پر است","چون مسافر ندارد","چون باران می‌آید"],"correct":0,"explanation_fa":"گفته می‌شود: «le train est en retard»."}
+{"type":"num","prompt":"کافه کنار کدام در است؟","answer":"2","accepted":["2","deux"],"explanation_fa":"گفته می‌شود: «à côté de la porte 2»."}
+{"type":"tf","prompt":"قطار مارسی ساعت ۱۰ می‌رسد.","correct":false,"explanation_fa":"گفته می‌شود: «arrive à 11 heures»."}
+{"type":"mcq","prompt":"آخر اعلام چه گفته می‌شود؟","options":["سفر خوش","روز خوش","تولدت مبارک","نوش جان"],"correct":0,"explanation_fa":"گفته می‌شود: «Merci et bon voyage !»"}
+listening B:
+{"type":"dict","sentence":5}
+{"type":"tf","prompt":"این اعلام در ایستگاه قطار است.","correct":true,"explanation_fa":"از قطار لیون و مارسی و «bon voyage» حرف می‌زند."}

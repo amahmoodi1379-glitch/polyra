@@ -1,0 +1,23 @@
+code: fr-a1-t029
+title: Appartement libre
+kind: ad
+sentences:
+- Appartement libre à Paris, près de la gare. | آپارتمان خالی در پاریس، نزدیک ایستگاه قطار.
+- Il y a deux chambres, un salon, une cuisine et une salle de bain. | دو اتاق خواب، یک پذیرایی، یک آشپزخانه و یک حمام دارد.
+- L'appartement est au deuxième étage. | آپارتمان در طبقه دوم است.
+- Il est grand et très beau. | بزرگ و خیلی قشنگ است.
+- Le prix : 900 euros par mois. | قیمت: ماهی ۹۰۰ یورو. | tts: Le prix : neuf cents euros par mois.
+- L'appartement est libre en septembre. | آپارتمان از سپتامبر خالی است.
+- Téléphone : 01 45 22 13 87. | تلفن: ۰۱ ۴۵ ۲۲ ۱۳ ۸۷. | tts: Téléphone : zéro un, quarante-cinq, vingt-deux, treize, quatre-vingt-sept.
+reading A:
+{"type":"mcq","prompt":"آپارتمان چند اتاق خواب دارد؟","options":["یکی","دو تا","سه تا","چهار تا"],"correct":1,"explanation_fa":"در آگهی آمده: «Il y a deux chambres.»"}
+{"type":"tf","prompt":"آپارتمان دور از ایستگاه قطار است.","correct":false,"explanation_fa":"در آگهی آمده: «près de la gare»."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید آپارتمان در کدام طبقه است؟","correct_sentence":2,"explanation_fa":"در آگهی آمده: «L'appartement est au deuxième étage.»"}
+{"type":"match","prompt":"هر چیز را به جوابش وصل کن.","left":["قیمت","کی خالی است"],"right":["ماهی ۹۰۰ یورو","سپتامبر","ماهی ۹۰ یورو"],"pairs":[[0,0],[1,1]],"explanation_fa":"قیمت ماهی ۹۰۰ یورو است و آپارتمان از سپتامبر خالی است."}
+listening A:
+{"type":"num","prompt":"قیمت آپارتمان ماهی چند یورو است؟","answer":"900","accepted":["900","neuf cents"],"explanation_fa":"در آگهی آمده: «900 euros par mois»."}
+{"type":"mcq","prompt":"آپارتمان در کدام شهر است؟","options":["پاریس","لیون","نیس","مارسی"],"correct":0,"explanation_fa":"در آگهی آمده: «Appartement libre à Paris»."}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"tf","prompt":"آپارتمان آشپزخانه دارد.","correct":true,"explanation_fa":"در آگهی آمده: «une cuisine»."}

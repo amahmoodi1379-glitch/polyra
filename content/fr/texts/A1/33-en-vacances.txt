@@ -1,0 +1,24 @@
+code: fr-a1-t033
+title: En vacances à Nice
+kind: voice_message
+sentences:
+- Salut Léa, c'est Sophie ! | سلام لئا، سوفی هستم!
+- Je suis en vacances à Nice avec ma famille. | با خانواده‌ام در نیس در تعطیلاتم.
+- Il fait beau et très chaud. | هوا خوب و خیلی گرم است.
+- Le matin, nous allons à la plage. | صبح‌ها به ساحل می‌رویم.
+- La mer est bleue et l'eau n'est pas froide. | دریا آبی است و آب سرد نیست.
+- L'après-midi, on se promène en ville ou on visite un musée. | بعدازظهرها در شهر قدم می‌زنیم یا از یک موزه بازدید می‌کنیم.
+- Je rentre à Paris dimanche. | یکشنبه به پاریس برمی‌گردم.
+- À bientôt ! | به امید دیدار!
+reading A:
+{"type":"mcq","prompt":"سوفی کجاست؟","options":["نیس","پاریس","لیون","مارسی"],"correct":0,"explanation_fa":"سوفی می‌گوید: «Je suis en vacances à Nice.»"}
+{"type":"tf","prompt":"هوای نیس سرد است.","correct":false,"explanation_fa":"سوفی می‌گوید: «Il fait beau et très chaud.»"}
+reading B:
+{"type":"match","prompt":"هر زمان را به کارش وصل کن.","left":["صبح","بعدازظهر"],"right":["ساحل","قدم زدن در شهر یا موزه","کار"],"pairs":[[0,0],[1,1]],"explanation_fa":"صبح ساحل، بعدازظهر شهر یا موزه."}
+{"type":"find","prompt":"کدام جمله می‌گوید سوفی کی برمی‌گردد؟","correct_sentence":6,"explanation_fa":"سوفی می‌گوید: «Je rentre à Paris dimanche.»"}
+listening A:
+{"type":"mcq","prompt":"سوفی با چه کسی در تعطیلات است؟","options":["با خانواده‌اش","با لئا","تنها","با دوستانش"],"correct":0,"explanation_fa":"سوفی می‌گوید: «avec ma famille»."}
+{"type":"tf","prompt":"آب دریا سرد نیست.","correct":true,"explanation_fa":"سوفی می‌گوید: «l'eau n'est pas froide»."}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"mcq","prompt":"سوفی کی به پاریس برمی‌گردد؟","options":["یکشنبه","شنبه","دوشنبه","جمعه"],"correct":0,"explanation_fa":"سوفی می‌گوید: «Je rentre à Paris dimanche.»"}

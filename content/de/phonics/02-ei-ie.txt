@@ -1,0 +1,22 @@
+label: ei و ie
+kind: contrast
+graphemes: ei, ai, ie
+tip:
+ei در آلمانی نزدیک «آی» فارسی خوانده می‌شود، مثل mein و drei. ie یک «ای» کشیده است، مثل vier و Brief. این دو را با هم عوض نکن: Reise سفر است و Riese غول.
+words:
+mein | مال من | mien, meen
+drei | سه | drie, dray
+vier | چهار | veir, fir
+Brief | نامه | Breif, Brif
+schreiben | نوشتن | schrieben, schraiben
+spielen | بازی کردن | speilen, spilen
+nein | نه | nien, nain
+Zeit | زمان | Ziet, Zait
+wie | چطور | wei, wai
+pairs:
+Reise | Riese | سفر | غول
+Weise | Wiese | روش | چمنزار
+leider | Lieder | متأسفانه | آهنگ‌ها
+bleiben | blieben | ماندن | ماندند
+schreiben | schrieben | نوشتن | نوشتند
+steigen | stiegen | بالا رفتن | بالا رفتند

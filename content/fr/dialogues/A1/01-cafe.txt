@@ -1,0 +1,29 @@
+code: fr-a1-d001
+title: سفارش در کافه
+situation: در یک کافه هستی. گارسون سفارشت را می‌پرسد.
+turns:
+B: Bonjour ! Vous voulez quelque chose ? | سلام! چیزی میل دارید؟
++ Oui, un café, s'il vous plaît. | بله، یک قهوه، لطفاً.
+- Oui, je suis un café. | بله، من یک قهوه هستم.
+- Salut ! Tu as un café ? | سلام! قهوه داری؟
+why: «Oui, un café, s'il vous plaît» سفارش مؤدبانه است. «je suis un café» یعنی «من قهوه هستم»، و Salut و tu با گارسون خیلی خودمانی است.
+B: Un grand café ou un petit café ? | قهوه بزرگ یا قهوه کوچک؟
+- Oui, merci. | بله، ممنون.
++ Un petit café, s'il vous plaît. | یک قهوه کوچک، لطفاً.
+- Une petite café, s'il vous plaît. | یک قهوه کوچک، لطفاً.
+why: گارسون می‌پرسد بزرگ یا کوچک، پس باید یکی را گفت. café مذکر است و «un petit café» درست است، نه «une petite café».
+B: Avec de l'eau ? | با آب؟
+- Oui, avec eau de, merci. | بله، با آب، ممنون.
+- Non, je suis de l'eau. | نه، من آب هستم.
++ Oui, avec de l'eau, merci. | بله، با آب، ممنون.
+why: «avec de l'eau» ترتیب درست است. «avec eau de» دستورش غلط است و «je suis de l'eau» یعنی «من آب هستم».
+B: Vous mangez quelque chose aussi ? | چیزی هم می‌خورید؟
++ Oui, un peu de pain, s'il vous plaît. | بله، کمی نان، لطفاً.
+- Oui, je bois du pain. | بله، نان می‌نوشم.
+- Oui, vous mangez du pain. | بله، شما نان می‌خورید.
+why: «un peu de pain» جواب درست است. نان را نمی‌نوشند (boire)، و «vous mangez» درباره گارسون است، نه خودت.
+B: Voilà ! Vous voulez autre chose ? | بفرمایید! چیز دیگری می‌خواهید؟
+- Non, merci. C'est tous. | نه، ممنون. همین.
++ Non, merci. C'est tout. | نه، ممنون. همین.
+- Non, merci. Je suis très bien. | نه، ممنون. من خیلی خوبم.
+why: «C'est tout» یعنی «همین». «C'est tous» دستورش غلط است، و «je suis très bien» جواب این سؤال نیست.

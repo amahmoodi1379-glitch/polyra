@@ -1,0 +1,23 @@
+code: fr-a1-t028
+title: Les courses
+kind: voice_message
+sentences:
+- Salut Thomas, c'est Anne. | سلام توما، آن هستم.
+- Tu fais les courses ce soir ? | امشب خرید می‌کنی؟
+- Il n'y a plus de lait et plus d'œufs. | دیگر شیر و تخم‌مرغ نداریم.
+- Tu peux prendre aussi du fromage et un kilo de pommes ? | می‌توانی پنیر و یک کیلو سیب هم بخری؟
+- Le supermarché ferme à 8 heures. | سوپرمارکت ساعت ۸ می‌بندد. | tts: Le supermarché ferme à huit heures.
+- Moi, je rentre tard ce soir. | من امشب دیر برمی‌گردم.
+- Merci ! | ممنون!
+reading A:
+{"type":"mcq","prompt":"آن از توما چه می‌خواهد؟","options":["خرید کند","غذا درست کند","به سوپرمارکت زنگ بزند","زود بخوابد"],"correct":0,"explanation_fa":"آن می‌پرسد: «Tu fais les courses ce soir ?»"}
+{"type":"tf","prompt":"در خانه هنوز شیر هست.","correct":false,"explanation_fa":"آن می‌گوید: «Il n'y a plus de lait.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید سوپرمارکت کی می‌بندد؟","correct_sentence":4,"explanation_fa":"آن می‌گوید: «Le supermarché ferme à 8 heures.»"}
+{"type":"tf","prompt":"آن امشب زود به خانه می‌آید.","correct":false,"explanation_fa":"آن می‌گوید: «je rentre tard ce soir»."}
+listening A:
+{"type":"mcq","prompt":"توما چند کیلو سیب بخرد؟","options":["یک کیلو","دو کیلو","سه کیلو","نیم کیلو"],"correct":0,"explanation_fa":"آن می‌گوید: «un kilo de pommes»."}
+{"type":"num","prompt":"سوپرمارکت ساعت چند می‌بندد؟","answer":"8","accepted":["8","huit","20"],"explanation_fa":"آن می‌گوید: «à 8 heures»."}
+listening B:
+{"type":"dict","sentence":1}
+{"type":"tf","prompt":"آن پنیر هم می‌خواهد.","correct":true,"explanation_fa":"آن می‌گوید: «du fromage»."}

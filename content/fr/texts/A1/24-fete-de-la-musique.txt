@@ -1,0 +1,23 @@
+code: fr-a1-t024
+title: La fête de la musique
+kind: ad
+sentences:
+- Fête de la musique à Nice ! | جشن موسیقی در نیس!
+- Le 21 juin, il y a de la musique dans toute la ville. | ۲۱ ژوئن در همه شهر موسیقی هست. | tts: Le vingt et un juin, il y a de la musique dans toute la ville.
+- On peut écouter des chansons dans les rues et sur les places. | می‌شود در خیابان‌ها و میدان‌ها آهنگ گوش داد.
+- La grande fête est au parc, à 9 heures du soir. | جشن بزرگ ساعت ۹ شب در پارک است. | tts: La grande fête est au parc, à neuf heures du soir.
+- Vous aimez chanter et danser ? | آواز خواندن و رقصیدن را دوست دارید؟
+- Venez avec vos amis ! | با دوستانتان بیایید!
+- C'est pour tout le monde ! | برای همه است!
+reading A:
+{"type":"mcq","prompt":"جشن موسیقی کجاست؟","options":["نیس","پاریس","لیون","مارسی"],"correct":0,"explanation_fa":"در آگهی آمده: «Fête de la musique à Nice !»"}
+{"type":"tf","prompt":"جشن فقط برای جوان‌هاست.","correct":false,"explanation_fa":"در آگهی آمده: «C'est pour tout le monde»."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید جشن بزرگ کجاست؟","correct_sentence":3,"explanation_fa":"در آگهی آمده: «La grande fête est au parc.»"}
+{"type":"match","prompt":"هر چیز را به جوابش وصل کن.","left":["روز جشن","جای جشن بزرگ"],"right":["۲۱ ژوئن","پارک","ایستگاه قطار"],"pairs":[[0,0],[1,1]],"explanation_fa":"جشن ۲۱ ژوئن است و جشن بزرگ در پارک."}
+listening A:
+{"type":"num","prompt":"جشن بزرگ ساعت چند شب است؟","answer":"9","accepted":["9","neuf","21"],"explanation_fa":"در آگهی آمده: «à 9 heures du soir»."}
+{"type":"tf","prompt":"در خیابان‌ها هم موسیقی هست.","correct":true,"explanation_fa":"در آگهی آمده: «dans les rues et sur les places»."}
+listening B:
+{"type":"dict","sentence":4}
+{"type":"mcq","prompt":"آگهی می‌گوید با چه کسانی بیایید؟","options":["با دوستانتان","فقط با بچه‌ها","تنها","با معلمتان"],"correct":0,"explanation_fa":"در آگهی آمده: «Venez avec vos amis !»"}

@@ -1,0 +1,23 @@
+code: de-a1-t026
+title: Oma ist allein
+kind: voice_message
+sentences:
+- Hallo Tim, hier ist Papa. | سلام تیم، بابا هستم.
+- Oma ist heute allein zu Hause. | مادربزرگ امروز تنها در خانه است.
+- Kannst du nach der Schule zu Oma gehen? | می‌توانی بعد از مدرسه پیش مادربزرگ بروی؟
+- Sie braucht Brot und Wasser. | نان و آب لازم دارد.
+- Hast du noch Geld? | هنوز پول داری؟
+- Mama und ich kommen um 7 nach Hause. | من و مامان ساعت ۷ به خانه می‌آییم. | tts: Mama und ich kommen um sieben nach Hause.
+- Danke, Tim! | ممنون تیم!
+reading A:
+{"type":"mcq","prompt":"چه کسی امروز تنهاست؟","options":["مادربزرگ","مامان","تیم","پدربزرگ"],"correct":0,"explanation_fa":"بابا می‌گوید: «Oma ist heute allein zu Hause.»"}
+{"type":"tf","prompt":"بابا از تیم می‌خواهد قبل از مدرسه پیش مادربزرگ برود.","correct":false,"explanation_fa":"بابا می‌گوید: «nach der Schule»، یعنی بعد از مدرسه."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید مادربزرگ چه لازم دارد؟","correct_sentence":3,"explanation_fa":"بابا می‌گوید: «Sie braucht Brot und Wasser.»"}
+{"type":"tf","prompt":"بابا و مامان شب به خانه می‌آیند.","correct":true,"explanation_fa":"بابا می‌گوید: «Mama und ich kommen um 7 nach Hause.»"}
+listening A:
+{"type":"num","prompt":"بابا و مامان ساعت چند به خانه می‌آیند؟","answer":"7","accepted":["7","sieben"],"explanation_fa":"بابا می‌گوید: «um 7»."}
+{"type":"mcq","prompt":"مادربزرگ چه لازم دارد؟","options":["نان و آب","چای و نان","قهوه و آب","هیچ چیز"],"correct":0,"explanation_fa":"بابا می‌گوید: «Sie braucht Brot und Wasser.»"}
+listening B:
+{"type":"dict","sentence":4}
+{"type":"tf","prompt":"مادربزرگ امروز تنهاست.","correct":true,"explanation_fa":"بابا می‌گوید: «Oma ist heute allein zu Hause.»"}

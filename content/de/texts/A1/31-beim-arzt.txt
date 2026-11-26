@@ -1,0 +1,30 @@
+code: de-a1-t031
+title: Beim Arzt
+kind: dialogue
+placement: yes
+key_words: Tablette
+sentences:
+A: Guten Tag, Frau Schulz. Wie geht es Ihnen? | روز بخیر خانم شولتس. حالتان چطور است؟
+B: Nicht gut. Ich habe Kopfschmerzen und Fieber. | خوب نیستم. سردرد و تب دارم.
+A: Haben Sie auch Schmerzen im Bauch? | شکمتان هم درد می‌کند؟
+B: Nein, nur der Kopf. Und ich bin sehr müde. | نه، فقط سرم. و خیلی خسته‌ام.
+A: Sie sind krank. Bleiben Sie drei Tage zu Hause. | شما بیمارید. سه روز در خانه بمانید.
+A: Und nehmen Sie diese Tablette am Morgen und am Abend. | این قرص را هم صبح و شب بخورید.
+B: Danke schön! | خیلی ممنون!
+A: Gute Besserung, Frau Schulz! | زود خوب شوید، خانم شولتس!
+reading A:
+{"type":"mcq","prompt":"خانم شولتس چه مشکلی دارد؟","options":["سردرد و تب","دل‌درد","دندان‌درد","پادرد"],"correct":0,"explanation_fa":"خانم شولتس می‌گوید: «Ich habe Kopfschmerzen und Fieber.»"}
+{"type":"tf","prompt":"شکم خانم شولتس هم درد می‌کند.","correct":false,"explanation_fa":"خانم شولتس می‌گوید: «Nein, nur der Kopf.»"}
+{"type":"tf","prompt":"خانم شولتس خیلی خسته است.","correct":true,"explanation_fa":"خانم شولتس می‌گوید: «ich bin sehr müde»."}
+{"type":"mcq","prompt":"پزشک می‌گوید خانم شولتس چند روز در خانه بماند؟","options":["یک روز","دو روز","سه روز","یک هفته"],"correct":2,"explanation_fa":"پزشک می‌گوید: «Bleiben Sie drei Tage zu Hause.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید قرص را کی باید خورد؟","correct_sentence":5,"explanation_fa":"پزشک می‌گوید: «nehmen Sie diese Tablette am Morgen und am Abend»."}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["پزشک می‌گوید سه روز در خانه بماند.","پزشک حال خانم شولتس را می‌پرسد.","پزشک می‌گوید «زود خوب شوید».","خانم شولتس می‌گوید سردرد و تب دارد."],"correct_order":[1,3,0,2],"explanation_fa":"اول احوالپرسی، بعد مشکل، بعد سفارش پزشک و آخر «Gute Besserung»."}
+listening A:
+{"type":"mcq","prompt":"قرص را کی باید خورد؟","options":["صبح و شب","فقط صبح","فقط شب","ظهر"],"correct":0,"explanation_fa":"پزشک می‌گوید: «am Morgen und am Abend»."}
+{"type":"tf","prompt":"خانم شولتس دل‌درد دارد.","correct":false,"explanation_fa":"خانم شولتس می‌گوید: «Nein, nur der Kopf.»"}
+{"type":"num","prompt":"خانم شولتس چند روز باید در خانه بماند؟","answer":"3","accepted":["3","drei"],"explanation_fa":"پزشک می‌گوید: «Bleiben Sie drei Tage zu Hause.»"}
+{"type":"tf","prompt":"پزشک آخر می‌گوید «زود خوب شوید».","correct":true,"explanation_fa":"پزشک می‌گوید: «Gute Besserung, Frau Schulz!»"}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"mcq","prompt":"خانم شولتس آخر چه می‌گوید؟","options":["خیلی ممنون","خداحافظ","ببخشید","باشد"],"correct":0,"explanation_fa":"خانم شولتس می‌گوید: «Danke schön!»"}

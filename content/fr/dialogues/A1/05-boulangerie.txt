@@ -1,0 +1,29 @@
+code: fr-a1-d005
+title: در نانوایی
+situation: در نانوایی هستی. فروشنده می‌پرسد چه می‌خواهی.
+turns:
+B: Bonjour ! Qu'est-ce que vous voulez ? | سلام! چه می‌خواهید؟
+- Bonjour ! Un baguette, s'il vous plaît. | سلام! یک باگت، لطفاً.
++ Bonjour ! Une baguette, s'il vous plaît. | سلام! یک باگت، لطفاً.
+- Bonjour ! Je suis une baguette. | سلام! من یک باگت هستم.
+why: baguette مؤنث است، پس «une baguette». «Je suis une baguette» یعنی «من باگت هستم».
+B: Voilà. Et avec ça ? | بفرمایید. چیز دیگری؟
++ Deux croissants, s'il vous plaît. | دو کروسان، لطفاً.
+- Deux croissants, s'il te plaît. | دو کروسان، لطفاً.
+- Une boulangerie, s'il vous plaît. | یک نانوایی، لطفاً.
+why: با فروشنده «s'il vous plaît» می‌گوییم؛ «s'il te plaît» برای دوست است. نانوایی را نمی‌شود خرید!
+B: Des croissants ou des pains au chocolat ? | کروسان معمولی یا نان شکلاتی؟
+- Oui, s'il vous plaît. | بله، لطفاً.
+- Du croissants, s'il vous plaît. | کروسان، لطفاً.
++ Des croissants, s'il vous plaît. | کروسان معمولی، لطفاً.
+why: سؤال «این یا آن؟» است، پس «Oui» جواب نیست. برای جمع «des croissants» می‌گوییم، نه «du».
+B: Ça fait quatre euros. | چهار یورو می‌شود.
+- Voilà quatre heures. | بفرمایید، چهار ساعت.
++ Voilà cinq euros. | بفرمایید، پنج یورو.
+- Voilà cinq ans. | بفرمایید، پنج سال.
+why: پول را با euros می‌دهیم. heures ساعت است و ans سال.
+B: Merci ! Et voilà un euro. Bonne journée ! | ممنون! این هم یک یورو. روز خوبی داشته باشید!
++ Merci, à vous aussi ! Au revoir ! | ممنون، شما هم همین‌طور! خداحافظ!
+- Merci, à toi aussi ! Salut ! | ممنون، تو هم همین‌طور! سلام!
+- Merci, bon anniversaire ! | ممنون، تولدتان مبارک!
+why: با فروشنده رسمی حرف می‌زنیم: «à vous aussi». «à toi» و «Salut» خودمانی‌اند و «bon anniversaire» ربطی ندارد.

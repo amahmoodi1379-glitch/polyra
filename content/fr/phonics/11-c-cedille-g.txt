@@ -1,0 +1,16 @@
+label: c و ç، g نرم و سخت
+kind: rule
+graphemes: c, ç, g, gu, ge
+tip:
+c پیش از e، i و y مثل «س» است و پیش از a، o و u مثل «ک»؛ ç همیشه «س» است، مثل garçon. g پیش از e و i مثل «ژ» است و پیش از a، o و u مثل «گ». gu و ge این را عوض می‌کنند: guitare «گ» دارد و mangeons «ژ».
+words:
+garçon | پسر | garcon, garsson
+français | فرانسوی | francais, fransais
+leçon | درس | lecon, lesson
+cinéma | سینما | sinéma, kinéma
+ici | اینجا | isi, iki
+glace | بستنی | glase, glake
+gare | ایستگاه قطار | jare, guare
+guitare | گیتار | gitare, jitare
+commencer | شروع کردن | commenser, comencer
+cuisine | آشپزخانه | kuisine, quisine

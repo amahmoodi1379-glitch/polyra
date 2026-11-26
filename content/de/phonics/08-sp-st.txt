@@ -1,0 +1,16 @@
+label: sp و st در اول کلمه
+kind: rule
+graphemes: sp, st, sch
+tip:
+در sp و st اول کلمه یا اول بخش اصلی کلمه، s مثل «ش» خوانده می‌شود: sprechen، Straße، verstehen. ولی وسط و آخر کلمه همان «س» است: Fenster، ist. این قاعده را در نوشتن هم یادت باشد: «ش» را در این کلمه‌ها با s می‌نویسیم، نه sch.
+words:
+sprechen | حرف زدن | schprechen, sbrechen
+Straße | خیابان | Schtraße, Strase
+Stadt | شهر | Schtadt, Stat
+spielen | بازی کردن | schpielen, spilen
+Stuhl | صندلی | Schtuhl, Stul
+Sport | ورزش | Schport, Spord
+stehen | ایستادن | schtehen, steen
+Spaß | خوشی | Schpaß, Spas
+verstehen | فهمیدن | verschtehen, ferstehen
+Fenster | پنجره | Fenschter, Fenstr

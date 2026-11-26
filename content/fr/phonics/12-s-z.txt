@@ -1,0 +1,21 @@
+label: s و z
+kind: contrast
+graphemes: s, ss, z
+tip:
+s تنها بین دو واکه مثل «ز» خوانده می‌شود، مثل maison و rose. ss بین دو واکه «س» است، مثل poisson. این فرق معنی را عوض می‌کند: poisson ماهی است و poison سم.
+words:
+maison | خانه | maisson, mèsson
+poisson | ماهی | poison, poissan
+rose | صورتی | rosse, rause
+chaise | صندلی | chaisse, chèsse
+cousin | پسرعمو، پسرخاله | coussin, cosin
+musique | موسیقی | mussique, mousique
+douze | دوازده | douce, douse
+aussi | هم | ausi, auzi
+pairs:
+poisson | poison | ماهی | سم
+dessert | désert | دسر | بیابان
+russe | ruse | روسی | حیله
+basse | base | پایین (مؤنث) | پایه
+coussin | cousin | کوسن | پسرعمو
+ils sont | ils ont | آن‌ها هستند | آن‌ها دارند

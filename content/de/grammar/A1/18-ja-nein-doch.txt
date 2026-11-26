@@ -67,3 +67,6 @@ translations:
 نه، پول ندارم. => Nein, ich habe kein Geld.
 بله، فردا می‌آیم. => Ja, ich komme morgen. ; Ja, morgen komme ich.
 چرا، آلمانی می‌فهمم. => Doch, ich verstehe Deutsch.
+چرا، خانه‌ام. => Doch, ich bin zu Hause.
+نه، امروز نمی‌آیم. => Nein, ich komme heute nicht. ; Nein, heute komme ich nicht.
+بله، آلمانی حرف می‌زنم. => Ja, ich spreche Deutsch.

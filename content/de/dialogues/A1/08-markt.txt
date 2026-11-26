@@ -1,0 +1,29 @@
+code: de-a1-d008
+title: خرید میوه از بازار
+situation: در بازار هستی و از میوه‌فروش میوه می‌خری.
+turns:
+B: Guten Tag! Was möchten Sie? | روز بخیر! چه می‌خواهید؟
++ Ein Kilo Äpfel, bitte. | یک کیلو سیب، لطفاً.
+- Ich bin ein Kilo Äpfel. | من یک کیلو سیبم.
+- Ein Kilo Äpfeln, bitte. | یک کیلو سیب، لطفاً.
+why: «Ein Kilo Äpfel» درست است؛ بعد از Kilo اسم بی‌تغییر می‌آید. «Ich bin ein Kilo Äpfel» بی‌معنی است.
+B: Rote oder grüne Äpfel? | سیب قرمز یا سبز؟
+- Ja, bitte. | بله، لطفاً.
++ Rote, bitte. | قرمز، لطفاً.
+- Ich bin rot, bitte. | من قرمزم، لطفاً.
+why: سؤال «این یا آن؟» است، پس باید یکی را گفت. «Ich bin rot» درباره خودت است، نه سیب.
+B: Gern. Noch etwas? | با کمال میل. چیز دیگری؟
+- Ja, eine Bananen, bitte. | بله، یک موزها، لطفاً.
++ Ja, drei Bananen, bitte. | بله، سه موز، لطفاً.
+- Ja, drei Uhr, bitte. | بله، ساعت سه، لطفاً.
+why: «drei Bananen» درست است. «eine» با اسم جمع نمی‌آید، و ساعت را نمی‌شود خرید.
+B: Das macht 6 Euro. | شش یورو می‌شود. | tts: Das macht sechs Euro.
+- Hier, bitte. Hast du eine Tasche? | بفرمایید. کیسه داری؟
++ Hier, bitte. Haben Sie eine Tasche? | بفرمایید. کیسه دارید؟
+- Hier, bitte. Sind Sie eine Tasche? | بفرمایید. شما کیسه هستید؟
+why: «Haben Sie eine Tasche?» یعنی «کیسه دارید؟». با فروشنده du نمی‌گوییم و «Sind Sie eine Tasche» بی‌معنی است.
+B: Ja, hier. Schönen Tag noch! | بله، بفرمایید. روز خوبی داشته باشید!
++ Danke, Ihnen auch! | ممنون، شما هم!
+- Danke, herzlichen Glückwunsch! | ممنون، تبریک می‌گویم!
+- Danke, gute Nacht! | ممنون، شب بخیر!
+why: جواب «Schönen Tag noch» می‌شود «Ihnen auch». تبریک ربطی ندارد و روز است، نه شب.

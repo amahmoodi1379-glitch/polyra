@@ -1,0 +1,23 @@
+code: fr-a1-t025
+title: Le menu du jour
+kind: menu
+sentences:
+- Restaurant Chez Marie : menu du jour. | رستوران «پیش ماری»: منوی روز.
+- Le menu coûte 15 euros. | منو ۱۵ یورو است. | tts: Le menu coûte quinze euros.
+- Pour commencer : salade de tomates ou soupe de légumes. | برای شروع: سالاد گوجه یا سوپ سبزی.
+- Après : poulet avec des pommes de terre, ou poisson avec du riz. | بعد: مرغ با سیب‌زمینی، یا ماهی با برنج.
+- Dessert : gâteau au chocolat ou glace. | دسر: کیک شکلاتی یا بستنی.
+- Boissons : eau, jus d'orange, café ou thé. | نوشیدنی: آب، آب پرتقال، قهوه یا چای.
+- Le restaurant est fermé le lundi. | رستوران دوشنبه‌ها بسته است.
+reading A:
+{"type":"mcq","prompt":"منوی روز چند یورو است؟","options":["۱۰ یورو","۱۵ یورو","۲۰ یورو","۵۰ یورو"],"correct":1,"explanation_fa":"در منو آمده: «Le menu coûte 15 euros.»"}
+{"type":"tf","prompt":"رستوران دوشنبه‌ها باز است.","correct":false,"explanation_fa":"در منو آمده: «Le restaurant est fermé le lundi.»"}
+reading B:
+{"type":"match","prompt":"هر غذای اصلی را به همراهش وصل کن.","left":["مرغ","ماهی"],"right":["با سیب‌زمینی","با برنج","با نان"],"pairs":[[0,0],[1,1]],"explanation_fa":"در منو آمده: «poulet avec des pommes de terre, ou poisson avec du riz»."}
+{"type":"find","prompt":"کدام جمله دسرها را می‌گوید؟","correct_sentence":4,"explanation_fa":"در منو آمده: «Dessert : gâteau au chocolat ou glace.»"}
+listening A:
+{"type":"num","prompt":"منوی روز چند یورو است؟","answer":"15","accepted":["15","quinze"],"explanation_fa":"در منو آمده: «Le menu coûte 15 euros.»"}
+{"type":"mcq","prompt":"کدام نوشیدنی در منو نیست؟","options":["شیر","آب","قهوه","چای"],"correct":0,"explanation_fa":"در منو آمده: «eau, jus d'orange, café ou thé»؛ شیر نیست."}
+listening B:
+{"type":"dict","sentence":6}
+{"type":"tf","prompt":"برای شروع سوپ هم هست.","correct":true,"explanation_fa":"در منو آمده: «salade de tomates ou soupe de légumes»."}

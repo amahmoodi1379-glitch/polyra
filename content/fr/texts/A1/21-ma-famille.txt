@@ -1,0 +1,24 @@
+code: fr-a1-t021
+title: Tu as des frères et sœurs ?
+kind: dialogue
+sentences:
+A: Tu as des frères et sœurs, Chloé ? | کلوئه، خواهر و برادر داری؟
+B: Oui, j'ai un frère et deux sœurs. | آره، یک برادر و دو خواهر دارم.
+A: Et tes parents, ils habitent où ? | پدر و مادرت کجا زندگی می‌کنند؟
+B: Mes parents habitent à Marseille avec ma grand-mère. | پدر و مادرم با مادربزرگم در مارسی زندگی می‌کنند.
+A: Ton frère est marié ? | برادرت متأهل است؟
+B: Oui, il est marié et il a un bébé. | آره، متأهل است و یک نوزاد دارد.
+A: Alors tu es tante ! | پس تو عمه‌ای!
+B: Oui, et j'adore ce bébé. | آره، و این بچه را خیلی دوست دارم.
+reading A:
+{"type":"mcq","prompt":"کلوئه چند خواهر دارد؟","options":["یکی","دو تا","سه تا","هیچ"],"correct":1,"explanation_fa":"کلوئه می‌گوید: «j'ai un frère et deux sœurs»."}
+{"type":"tf","prompt":"پدر و مادر کلوئه در پاریس زندگی می‌کنند.","correct":false,"explanation_fa":"کلوئه می‌گوید: «Mes parents habitent à Marseille.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید برادر کلوئه بچه دارد؟","correct_sentence":5,"explanation_fa":"کلوئه می‌گوید: «il a un bébé»."}
+{"type":"match","prompt":"هر آدم را به جمله‌اش وصل کن.","left":["پدر و مادر کلوئه","برادر کلوئه"],"right":["در مارسی زندگی می‌کنند","متأهل است","مجرد است"],"pairs":[[0,0],[1,1]],"explanation_fa":"پدر و مادر در مارسی‌اند و برادر متأهل است."}
+listening A:
+{"type":"mcq","prompt":"پدر و مادر کلوئه با چه کسی زندگی می‌کنند؟","options":["با مادربزرگ","با برادر کلوئه","تنها","با کلوئه"],"correct":0,"explanation_fa":"کلوئه می‌گوید: «avec ma grand-mère»."}
+{"type":"tf","prompt":"کلوئه یک برادر دارد.","correct":true,"explanation_fa":"کلوئه می‌گوید: «j'ai un frère»."}
+listening B:
+{"type":"dict","sentence":4}
+{"type":"mcq","prompt":"کلوئه درباره نوزاد چه می‌گوید؟","options":["خیلی دوستش دارد","هنوز او را ندیده","خیلی بزرگ است","زیاد گریه می‌کند"],"correct":0,"explanation_fa":"کلوئه می‌گوید: «j'adore ce bébé»."}

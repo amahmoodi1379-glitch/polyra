@@ -1,0 +1,24 @@
+code: fr-a1-t004
+title: Le message de Léa
+kind: voice_message
+sentences:
+- Salut Paul, c'est Léa ! | سلام پل، لئا هستم!
+- Je suis chez Sophie avec Hugo. | با هوگو خانه سوفی هستم.
+- Nous mangeons ensemble. | با هم غذا می‌خوریم.
+- Tu manges avec nous ? | تو هم با ما غذا می‌خوری؟
+- La maison de Sophie est dans la rue de l'école. | خانه سوفی در خیابانِ مدرسه است.
+- C'est une petite maison avec un grand chien. | خانه کوچکی است با یک سگ بزرگ.
+- Le chien aime beaucoup les enfants ! | سگ بچه‌ها را خیلی دوست دارد!
+- Merci, au revoir ! | ممنون، خداحافظ!
+reading A:
+{"type":"mcq","prompt":"لئا کجاست؟","options":["خانه خودش","خانه سوفی","در مدرسه","در کافه"],"correct":1,"explanation_fa":"لئا می‌گوید: «Je suis chez Sophie avec Hugo.»"}
+{"type":"tf","prompt":"لئا تنهاست.","correct":false,"explanation_fa":"لئا می‌گوید: «avec Hugo»، یعنی با هوگو است."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید خانه سوفی کجاست؟","correct_sentence":4,"explanation_fa":"در پیام آمده: «La maison de Sophie est dans la rue de l'école.»"}
+{"type":"match","prompt":"هر چیز را به توصیفش وصل کن.","left":["خانه سوفی","سگ"],"right":["کوچک","بزرگ","قدیمی"],"pairs":[[0,0],[1,1]],"explanation_fa":"در پیام آمده: «une petite maison avec un grand chien»."}
+listening A:
+{"type":"mcq","prompt":"لئا از پل چه می‌خواهد؟","options":["با آن‌ها غذا بخورد","سگ بیاورد","به مدرسه برود","زنگ بزند"],"correct":0,"explanation_fa":"لئا می‌پرسد: «Tu manges avec nous ?»"}
+{"type":"tf","prompt":"سوفی یک سگ کوچک دارد.","correct":false,"explanation_fa":"در پیام آمده: «un grand chien»، یعنی سگ بزرگ."}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"tf","prompt":"سگ بچه‌ها را دوست دارد.","correct":true,"explanation_fa":"در پیام آمده: «Le chien aime beaucoup les enfants !»"}

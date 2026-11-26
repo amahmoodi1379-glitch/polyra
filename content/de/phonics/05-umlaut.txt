@@ -1,0 +1,21 @@
+label: ä، ö، ü در برابر a، o، u
+kind: contrast
+graphemes: ä, ö, ü, a, o, u
+tip:
+دو نقطه روی a، o و u صدا را عوض می‌کند و اغلب معنی را هم: Mutter یعنی مادر و Mütter یعنی مادرها. ä نزدیک «اِ» است و ö و ü را با لب‌های گرد بگو. بسیاری از جمع‌های آلمانی همین دو نقطه را می‌گیرند.
+words:
+Äpfel | سیب‌ها | Apfel, Öpfel
+Mädchen | دختر | Madchen, Mödchen
+Käse | پنیر | Kase, Köse
+Brüder | برادرها | Bruder, Brieder
+Tür | در | Tur, Tor
+schön | زیبا | schon, schün
+Bücher | کتاب‌ها | Bucher, Böcher
+müde | خسته | mude, möde
+pairs:
+schön | schon | زیبا | قبلاً
+Mütter | Mutter | مادرها | مادر
+Brüder | Bruder | برادرها | برادر
+Väter | Vater | پدرها | پدر
+Töchter | Tochter | دخترها | دختر
+Küchen | Kuchen | آشپزخانه‌ها | کیک

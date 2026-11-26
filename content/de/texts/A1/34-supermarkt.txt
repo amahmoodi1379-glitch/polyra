@@ -1,0 +1,29 @@
+code: de-a1-t034
+title: Im Supermarkt
+kind: announcement
+placement: yes
+sentences:
+- Guten Tag! | روز بخیر!
+- Heute ist Samstag, und wir haben tolle Preise. | امروز شنبه است و قیمت‌های عالی داریم.
+- Ein Kilo Äpfel kostet heute nur 2 Euro. | یک کیلو سیب امروز فقط ۲ یورو است. | tts: Ein Kilo Äpfel kostet heute nur zwei Euro.
+- Eine Flasche Milch kostet 1 Euro. | یک بطری شیر ۱ یورو است. | tts: Eine Flasche Milch kostet einen Euro.
+- Brötchen kosten heute nur 30 Cent. | نان کوچک امروز فقط ۳۰ سنت است. | tts: Brötchen kosten heute nur dreißig Cent.
+- Der Supermarkt ist heute bis 20 Uhr offen. | سوپرمارکت امروز تا ساعت ۲۰ باز است. | tts: Der Supermarkt ist heute bis zwanzig Uhr offen.
+- Am Sonntag ist der Supermarkt geschlossen. | یکشنبه سوپرمارکت بسته است.
+- Vielen Dank! | خیلی ممنون!
+reading A:
+{"type":"mcq","prompt":"یک کیلو سیب چند است؟","options":["۱ یورو","۲ یورو","۳ یورو","۵ یورو"],"correct":1,"explanation_fa":"گفته می‌شود: «Ein Kilo Äpfel kostet heute nur 2 Euro.»"}
+{"type":"tf","prompt":"سوپرمارکت یکشنبه باز است.","correct":false,"explanation_fa":"گفته می‌شود: «Am Sonntag ist der Supermarkt geschlossen.»"}
+{"type":"mcq","prompt":"امروز چه روزی است؟","options":["شنبه","یکشنبه","جمعه","دوشنبه"],"correct":0,"explanation_fa":"گفته می‌شود: «Heute ist Samstag.»"}
+{"type":"tf","prompt":"یک بطری شیر ۱ یورو است.","correct":true,"explanation_fa":"گفته می‌شود: «Eine Flasche Milch kostet 1 Euro.»"}
+reading B:
+{"type":"match","prompt":"هر چیز را به قیمتش وصل کن.","left":["یک کیلو سیب","یک بطری شیر","نان کوچک"],"right":["۲ یورو","۱ یورو","۳۰ سنت","۵ یورو"],"pairs":[[0,0],[1,1],[2,2]],"explanation_fa":"سیب ۲ یورو، شیر ۱ یورو و نان کوچک ۳۰ سنت است."}
+{"type":"find","prompt":"کدام جمله می‌گوید سوپرمارکت امروز تا کی باز است؟","correct_sentence":5,"explanation_fa":"گفته می‌شود: «Der Supermarkt ist heute bis 20 Uhr offen.»"}
+listening A:
+{"type":"num","prompt":"سوپرمارکت امروز تا ساعت چند باز است؟","answer":"20","accepted":["20","zwanzig"],"explanation_fa":"گفته می‌شود: «bis 20 Uhr offen»."}
+{"type":"mcq","prompt":"نان کوچک چند است؟","options":["۳۰ سنت","۵۰ سنت","۱ یورو","۲ یورو"],"correct":0,"explanation_fa":"گفته می‌شود: «Brötchen kosten heute nur 30 Cent.»"}
+{"type":"tf","prompt":"سوپرمارکت یکشنبه بسته است.","correct":true,"explanation_fa":"گفته می‌شود: «Am Sonntag ist der Supermarkt geschlossen.»"}
+{"type":"mcq","prompt":"این اعلام کجا پخش می‌شود؟","options":["در سوپرمارکت","در ایستگاه قطار","در فرودگاه","در مدرسه"],"correct":0,"explanation_fa":"گفته می‌شود: «der Supermarkt ist heute bis 20 Uhr offen»."}
+listening B:
+{"type":"dict","sentence":6}
+{"type":"tf","prompt":"یک کیلو سیب امروز ۵ یورو است.","correct":false,"explanation_fa":"گفته می‌شود: «nur 2 Euro»."}

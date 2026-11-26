@@ -1,0 +1,25 @@
+code: fr-a1-t011
+title: Je viens d'Iran
+kind: dialogue
+sentences:
+A: Tu viens d'où, Reza ? | رضا، اهل کجایی؟
+B: Je viens d'Iran, de Chiraz. | از ایران می‌آیم، از شیراز.
+A: Et tu habites à Paris ? | و در پاریس زندگی می‌کنی؟
+B: Oui, j'habite à Paris avec mon ami Ali. | آره، با دوستم علی در پاریس زندگی می‌کنم.
+A: Tu parles très bien français ! | خیلی خوب فرانسوی حرف می‌زنی!
+B: Merci ! J'apprends le français tous les jours. | ممنون! هر روز فرانسوی یاد می‌گیرم.
+A: Quel est ton numéro ? | شماره‌ات چند است؟
+B: C'est le 06 45 22 18 90. | ۰۶ ۴۵ ۲۲ ۱۸ ۹۰. | tts: C'est le zéro six, quarante-cinq, vingt-deux, dix-huit, quatre-vingt-dix.
+A: Merci ! Et voilà mon numéro. | ممنون! این هم شماره من.
+reading A:
+{"type":"mcq","prompt":"رضا اهل کدام شهر است؟","options":["تهران","شیراز","اصفهان","پاریس"],"correct":1,"explanation_fa":"رضا می‌گوید: «Je viens d'Iran, de Chiraz.»"}
+{"type":"tf","prompt":"رضا تنها زندگی می‌کند.","correct":false,"explanation_fa":"رضا می‌گوید: «avec mon ami Ali»، یعنی با دوستش علی."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید رضا هر روز فرانسوی یاد می‌گیرد؟","correct_sentence":5,"explanation_fa":"رضا می‌گوید: «J'apprends le français tous les jours.»"}
+{"type":"tf","prompt":"رضا در پاریس زندگی می‌کند.","correct":true,"explanation_fa":"رضا می‌گوید: «Oui, j'habite à Paris.»"}
+listening A:
+{"type":"num","prompt":"شماره رضا با ۰۶ شروع می‌شود. عدد بعدی چند است؟","answer":"45","accepted":["45","quarante-cinq"],"explanation_fa":"رضا می‌گوید: «C'est le 06 45 22 18 90.»"}
+{"type":"mcq","prompt":"دوست رضا کیست؟","options":["علی","پل","هوگو","توما"],"correct":0,"explanation_fa":"رضا می‌گوید: «avec mon ami Ali»."}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"tf","prompt":"رضا خوب فرانسوی حرف می‌زند.","correct":true,"explanation_fa":"گفته می‌شود: «Tu parles très bien français !»"}

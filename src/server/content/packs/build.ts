@@ -1,4 +1,6 @@
 import { buildTexts, type TextSource } from "./texts";
+import { buildDialogues, type DialogueSource } from "./dialogues";
+import { buildPhonics, type PhonicsSource } from "./phonics";
 import { createHash } from "node:crypto";
 import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
@@ -33,6 +35,9 @@ export type PackLevel = {
   sentences: SentenceRecord[];
   exceptions: Exception[];
   texts: TextSource[];
+  dialogues: DialogueSource[];
+  /** The language's phonics lessons, with its first level (PRD §8: they belong to the start, not a level). */
+  phonics: PhonicsSource[];
 };
 export type Pack = { language: LanguageCode; levels: PackLevel[]; words: PackWord[]; errors: Note[]; warnings: Note[]; notes: Note[]; timing: TimingNote[] };
 
@@ -102,10 +107,25 @@ export function buildPack(language: LanguageCode, options: BuildOptions = {}): P
     const grammar = buildGrammar(analyzer, folder(contentRoot, join("content", language, "grammar", level)), level);
     const sentences = buildSentences(analyzer, folder(contentRoot, join("content", language, "sentences", level)), level, firstWords);
     const texts = buildTexts(analyzer, folder(contentRoot, join("content", language, "texts", level)), level);
-    pack.errors.push(...grammar.errors, ...sentences.errors, ...texts.errors);
-    pack.notes.push(...grammar.notes, ...sentences.notes, ...texts.notes);
-    return { level, grammar, sentences, texts };
+    const dialogues = buildDialogues(analyzer, folder(contentRoot, join("content", language, "dialogues", level)), level, language);
+    pack.errors.push(...grammar.errors, ...sentences.errors, ...texts.errors, ...dialogues.errors);
+    pack.notes.push(...grammar.notes, ...sentences.notes, ...texts.notes, ...dialogues.notes);
+    return { level, grammar, sentences, texts, dialogues };
   });
+
+  const phonics = buildPhonics(folder(contentRoot, join("content", language, "phonics")), language);
+  pack.errors.push(...phonics.errors);
+  pack.notes.push(...phonics.notes);
+
+  // Dialogue codes are unique across the language.
+  const dialogueCodes = new Map<string, string>();
+  for (const { dialogues } of built) {
+    for (const dialogue of dialogues.dialogues) {
+      const other = dialogueCodes.get(dialogue.code);
+      if (other) pack.errors.push({ file: dialogue.file, line: 1, text: `code «${dialogue.code}» is also the code of ${other}` });
+      dialogueCodes.set(dialogue.code, dialogue.file);
+    }
+  }
 
   // Unit codes are unique across the language.
   const seen = new Map<string, string>();
@@ -129,15 +149,17 @@ export function buildPack(language: LanguageCode, options: BuildOptions = {}): P
   pack.timing = grammarTiming(language, built.flatMap(({ sentences }) => sentences.lines), unitTables, cardOrder, gate);
 
   const unique = (list: Exception[]) => [...new Map(list.map((item) => [`${item.code}|${item.surface}`, item])).values()];
-  for (const { level, grammar, sentences, texts } of built) {
+  for (const [index, { level, grammar, sentences, texts, dialogues }] of built.entries()) {
     pack.levels.push({
       level,
       words: words.filter((item) => item.level === level),
       units: grammar.units,
       tables: tables.tables.filter((table) => table.level === level),
       sentences: sentences.records,
-      exceptions: unique([...grammar.exceptions, ...sentences.exceptions, ...texts.exceptions]),
+      exceptions: unique([...grammar.exceptions, ...sentences.exceptions, ...texts.exceptions, ...dialogues.exceptions]),
       texts: texts.texts,
+      dialogues: dialogues.dialogues,
+      phonics: index === 0 ? phonics.lessons : [],
     });
   }
   return pack;
@@ -154,5 +176,7 @@ export function packSummary(pack: Pack) {
     sentences: level.sentences.length,
     targets: level.sentences.reduce((sum, sentence) => sum + sentence.targets.length, 0),
     texts: level.texts.length,
+    dialogues: level.dialogues.length,
+    phonics: level.phonics.length,
   }));
 }

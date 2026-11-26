@@ -1,0 +1,28 @@
+code: de-a1-t035
+title: Wohnung frei
+kind: ad
+placement: yes
+sentences:
+- Wohnung in Köln frei! | آپارتمان خالی در کلن!
+- Die Wohnung hat zwei Zimmer, eine Küche und ein Bad. | آپارتمان دو اتاق، یک آشپزخانه و یک حمام دارد.
+- Sie hat auch einen Balkon. | بالکن هم دارد.
+- Die Wohnung ist nah am Zentrum. | آپارتمان نزدیک مرکز شهر است.
+- Die Miete ist 650 Euro im Monat. | اجاره ماهی ۶۵۰ یورو است. | tts: Die Miete ist sechshundertfünfzig Euro im Monat.
+- Die Wohnung ist im März frei. | آپارتمان از ماه مارس خالی است.
+- Rufen Sie an: 0221 45 67 89. | زنگ بزنید: ۰۲۲۱ ۴۵ ۶۷ ۸۹. | tts: Rufen Sie an: null zwei zwei eins, fünfundvierzig, siebenundsechzig, neunundachtzig.
+reading A:
+{"type":"mcq","prompt":"آپارتمان چند اتاق دارد؟","options":["یک","دو","سه","چهار"],"correct":1,"explanation_fa":"در آگهی آمده: «Die Wohnung hat zwei Zimmer.»"}
+{"type":"tf","prompt":"آپارتمان بالکن ندارد.","correct":false,"explanation_fa":"در آگهی آمده: «Sie hat auch einen Balkon.»"}
+{"type":"mcq","prompt":"آپارتمان در کدام شهر است؟","options":["کلن","برلین","مونیخ","وین"],"correct":0,"explanation_fa":"در آگهی آمده: «Wohnung in Köln frei!»"}
+{"type":"tf","prompt":"آپارتمان نزدیک مرکز شهر است.","correct":true,"explanation_fa":"در آگهی آمده: «Die Wohnung ist nah am Zentrum.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله اجاره آپارتمان را می‌گوید؟","correct_sentence":4,"explanation_fa":"در آگهی آمده: «Die Miete ist 650 Euro im Monat.»"}
+{"type":"match","prompt":"هر چیز را به جوابش وصل کن.","left":["اجاره","کی خالی است"],"right":["۶۵۰ یورو در ماه","از مارس","۵۶۰ یورو در ماه"],"pairs":[[0,0],[1,1]],"explanation_fa":"اجاره ۶۵۰ یورو است و آپارتمان از مارس خالی است."}
+listening A:
+{"type":"num","prompt":"اجاره ماهی چند یورو است؟","answer":"650","accepted":["650","sechshundertfünfzig"],"explanation_fa":"در آگهی آمده: «Die Miete ist 650 Euro im Monat.»"}
+{"type":"mcq","prompt":"آپارتمان کی خالی است؟","options":["مارس","مه","ژوئن","ژانویه"],"correct":0,"explanation_fa":"در آگهی آمده: «Die Wohnung ist im März frei.»"}
+{"type":"tf","prompt":"آپارتمان آشپزخانه دارد.","correct":true,"explanation_fa":"در آگهی آمده: «eine Küche»."}
+{"type":"tf","prompt":"آپارتمان دو حمام دارد.","correct":false,"explanation_fa":"در آگهی آمده: «ein Bad»، یعنی یک حمام."}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"mcq","prompt":"آگهی می‌گوید برای این آپارتمان چه کار کنید؟","options":["زنگ بزنید","ایمیل بزنید","نامه بنویسید","فردا بیایید"],"correct":0,"explanation_fa":"در آگهی آمده: «Rufen Sie an»."}

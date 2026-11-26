@@ -1,0 +1,21 @@
+label: u و ou
+kind: contrast
+graphemes: u, û, ou, où
+tip:
+u فرانسوی در فارسی نیست: لب‌ها را برای «او» گرد کن، ولی زبان را جای «ای» نگه دار. ou همان «او» فارسی است. این دو صدا معنی را عوض می‌کنند: tu یعنی «تو» و tout یعنی «همه».
+words:
+tu | تو | tou, teu
+rue | خیابان | rou, reu
+vu | دیده | vou, veu
+sur | روی | sour, sir
+tout | همه | tu, tut
+jour | روز | jur, jeur
+vous | شما | vu, vus
+loup | گرگ | lu, lup
+pairs:
+tu | tout | تو | همه
+rue | roue | خیابان | چرخ
+vu | vous | دیده | شما
+dessus | dessous | رویش | زیرش
+lu | loup | خوانده | گرگ
+bu | bout | نوشیده | انتها

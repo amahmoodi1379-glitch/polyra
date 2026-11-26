@@ -1,0 +1,24 @@
+code: fr-a1-t006
+title: Tu habites où ?
+kind: dialogue
+sentences:
+A: Tu habites où, Camille ? | کامی، کجا زندگی می‌کنی؟
+B: J'habite à Lyon, dans une petite rue. | در لیون زندگی می‌کنم، در یک خیابان کوچک.
+A: Et tu travailles à Lyon ? | در لیون هم کار می‌کنی؟
+B: Oui, je travaille dans une école. | آره، در یک مدرسه کار می‌کنم.
+A: Tu aimes ton travail ? | کارت را دوست داری؟
+B: Oui, beaucoup ! J'aime les enfants. | آره، خیلی! بچه‌ها را دوست دارم.
+A: Tu vas à l'école en voiture ? | با ماشین به مدرسه می‌روی؟
+B: Non, je vais à l'école avec un ami. Il a une voiture. | نه، با یک دوست به مدرسه می‌روم. او ماشین دارد.
+reading A:
+{"type":"mcq","prompt":"کامی کجا زندگی می‌کند؟","options":["پاریس","لیون","مارسی","نیس"],"correct":1,"explanation_fa":"کامی می‌گوید: «J'habite à Lyon.»"}
+{"type":"tf","prompt":"کامی در یک بیمارستان کار می‌کند.","correct":false,"explanation_fa":"کامی می‌گوید: «je travaille dans une école»، یعنی در یک مدرسه."}
+reading B:
+{"type":"tf","prompt":"کامی کارش را دوست دارد.","correct":true,"explanation_fa":"کامی می‌گوید: «Oui, beaucoup !»"}
+{"type":"match","prompt":"هر آدم را به جمله‌اش وصل کن.","left":["کامی","دوستِ کامی"],"right":["در مدرسه کار می‌کند","ماشین دارد","در پاریس زندگی می‌کند"],"pairs":[[0,0],[1,1]],"explanation_fa":"کامی در مدرسه کار می‌کند و دوستش ماشین دارد: «Il a une voiture.»"}
+listening A:
+{"type":"mcq","prompt":"کامی چطور به مدرسه می‌رود؟","options":["با اتوبوس","پیاده","با دوستش","با دوچرخه"],"correct":2,"explanation_fa":"کامی می‌گوید: «je vais à l'école avec un ami»."}
+{"type":"tf","prompt":"کامی در یک خیابان بزرگ زندگی می‌کند.","correct":false,"explanation_fa":"کامی می‌گوید: «dans une petite rue»، یعنی در یک خیابان کوچک."}
+listening B:
+{"type":"dict","sentence":4}
+{"type":"mcq","prompt":"کامی چه چیزی را دوست دارد؟","options":["ماشین","بچه‌ها","شهرهای بزرگ","قهوه"],"correct":1,"explanation_fa":"کامی می‌گوید: «J'aime les enfants.»"}

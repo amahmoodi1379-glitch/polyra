@@ -1,0 +1,25 @@
+code: fr-a1-t022
+title: Mon anniversaire
+kind: voice_message
+key_words: fête
+sentences:
+- Salut Hugo, c'est Camille ! | سلام هوگو، کامی هستم!
+- Samedi, c'est mon anniversaire. | شنبه تولد من است.
+- Je fais une fête chez moi, à 8 heures du soir. | ساعت ۸ شب در خانه‌ام جشن می‌گیرم. | tts: Je fais une fête chez moi, à huit heures du soir.
+- Tu viens ? | می‌آیی؟
+- Il y a de la musique et un grand gâteau au chocolat. | موسیقی هست و یک کیک شکلاتی بزرگ.
+- Ta sœur peut venir aussi. | خواهرت هم می‌تواند بیاید.
+- Tu peux me répondre avant jeudi ? | می‌توانی تا قبل از پنجشنبه جوابم را بدهی؟
+- À samedi ! | تا شنبه!
+reading A:
+{"type":"mcq","prompt":"شنبه چه خبر است؟","options":["تولد کامی","عروسی","امتحان","مسابقه"],"correct":0,"explanation_fa":"کامی می‌گوید: «Samedi, c'est mon anniversaire.»"}
+{"type":"tf","prompt":"جشن در رستوران است.","correct":false,"explanation_fa":"کامی می‌گوید: «Je fais une fête chez moi»، یعنی در خانه‌اش."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید جشن ساعت چند است؟","correct_sentence":2,"explanation_fa":"کامی می‌گوید: «à 8 heures du soir»."}
+{"type":"tf","prompt":"خواهر هوگو هم می‌تواند بیاید.","correct":true,"explanation_fa":"کامی می‌گوید: «Ta sœur peut venir aussi.»"}
+listening A:
+{"type":"num","prompt":"جشن ساعت چند شب شروع می‌شود؟","answer":"8","accepted":["8","huit","20"],"explanation_fa":"کامی می‌گوید: «à 8 heures du soir»."}
+{"type":"mcq","prompt":"هوگو باید تا کی جواب بدهد؟","options":["تا پنجشنبه","تا شنبه","تا جمعه","تا فردا"],"correct":0,"explanation_fa":"کامی می‌پرسد: «Tu peux me répondre avant jeudi ?»"}
+listening B:
+{"type":"dict","sentence":5}
+{"type":"tf","prompt":"در جشن کیک شکلاتی هست.","correct":true,"explanation_fa":"کامی می‌گوید: «un grand gâteau au chocolat»."}

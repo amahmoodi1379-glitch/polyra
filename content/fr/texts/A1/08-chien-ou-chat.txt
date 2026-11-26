@@ -1,0 +1,24 @@
+code: fr-a1-t008
+title: Un chien ou un chat ?
+kind: dialogue
+sentences:
+A: Thomas, tu as un chat ? | توما، گربه داری؟
+B: Non, j'ai un chien. Il est grand et il mange beaucoup ! | نه، سگ دارم. بزرگ است و زیاد می‌خورد!
+A: Moi, je voudrais un chat. | من گربه می‌خواهم.
+B: Pourquoi un chat ? | چرا گربه؟
+A: Parce que les chats sont petits. Et ma maison est petite ! | چون گربه‌ها کوچک‌اند. خانه من هم کوچک است!
+B: Mais un chat, c'est aussi beaucoup de travail. | ولی گربه هم کار زیادی دارد.
+A: Oui, peut-être. Mais j'aime vraiment les chats. | آره، شاید. ولی من واقعاً گربه‌ها را دوست دارم.
+B: Alors, un chat pour toi, Sophie ! | پس یک گربه برای تو، سوفی!
+reading A:
+{"type":"tf","prompt":"توما گربه دارد.","correct":false,"explanation_fa":"توما می‌گوید: «Non, j'ai un chien.»"}
+{"type":"mcq","prompt":"چرا سوفی گربه می‌خواهد؟","options":["چون گربه‌ها کوچک‌اند","چون گربه‌ها کم می‌خورند","چون سگ دارد","چون توما گربه دارد"],"correct":0,"explanation_fa":"سوفی می‌گوید: «Parce que les chats sont petits.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید سگ توما زیاد می‌خورد؟","correct_sentence":1,"explanation_fa":"توما می‌گوید: «il mange beaucoup !»"}
+{"type":"tf","prompt":"خانه سوفی بزرگ است.","correct":false,"explanation_fa":"سوفی می‌گوید: «ma maison est petite»."}
+listening A:
+{"type":"mcq","prompt":"توما چه حیوانی دارد؟","options":["گربه","سگ","هیچ حیوانی","یک گربه و یک سگ"],"correct":1,"explanation_fa":"توما می‌گوید: «j'ai un chien»."}
+{"type":"tf","prompt":"سوفی واقعاً گربه‌ها را دوست دارد.","correct":true,"explanation_fa":"سوفی می‌گوید: «j'aime vraiment les chats»."}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"mcq","prompt":"توما درباره گربه چه می‌گوید؟","options":["کار زیادی دارد","زیاد می‌خورد","خیلی بزرگ است","بچه‌ها را دوست ندارد"],"correct":0,"explanation_fa":"توما می‌گوید: «un chat, c'est aussi beaucoup de travail»."}

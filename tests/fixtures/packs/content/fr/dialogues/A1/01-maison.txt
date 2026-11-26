@@ -1,0 +1,29 @@
+code: fr-a1-d001
+title: خانه و حیوان‌ها
+situation: یک همسایه درباره خانه‌ات از تو می‌پرسد.
+turns:
+B: Vous avez une maison ? | خانه دارید؟
++ J'ai une petite maison. | یک خانه کوچک دارم.
+- J'ai un petite maison. | یک خانه کوچک دارم.
+- Je suis une maison. | من یک خانه‌ام.
+why: maison مؤنث است، پس «une petite maison». «Je suis une maison» یعنی «من خانه هستم».
+B: Elle est dans la ville ? | در شهر است؟
+- Il est dans la ville. | او در شهر است.
++ Elle est dans la ville. | در شهر است.
+- Elle mange dans la ville. | او در شهر غذا می‌خورد.
+why: maison مؤنث است و با elle به آن اشاره می‌کنیم. خانه غذا نمی‌خورد.
+B: Vous avez un chat ? | گربه دارید؟
+- Je suis un chat. | من یک گربه‌ام.
+- J'ai une chat. | یک گربه دارم.
++ J'ai un chat et un chien. | یک گربه و یک سگ دارم.
+why: chat مذکر است، پس «un chat». «Je suis un chat» یعنی «من گربه هستم».
+B: Il est grand ? | بزرگ است؟
++ Il est petit. | کوچک است.
+- Elle est petite. | او کوچک است.
+- Il mange petit. | او کوچک می‌خورد.
+why: درباره chat می‌پرسد که مذکر است: «Il est petit». «Il mange petit» بی‌معنی است.
+B: Vous aimez le pain ? | نان دوست دارید؟
+- J'aime la pain. | نان دوست دارم.
++ J'aime le pain. | نان دوست دارم.
+- Je mange la ville. | شهر را می‌خورم.
+why: pain مذکر است، پس «le pain». «Je mange la ville» بی‌معنی است.

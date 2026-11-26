@@ -1,0 +1,22 @@
+code: de-a1-t013
+title: Bist du zu Hause?
+kind: dialogue
+sentences:
+A: Hallo, Lisa! Wo bist du? | سلام لیزا! کجایی؟
+B: Ich bin zu Hause. Und du? | خانه‌ام. تو چی؟
+A: Ich bin in der Stadt. Ist Tom auch zu Hause? | در شهرم. تام هم خانه است؟
+B: Nein, Tom ist nicht hier. Er ist in Hamburg. | نه، تام اینجا نیست. هامبورگ است.
+A: Gut. Ich komme nach Hause. | خوب. دارم می‌آیم خانه.
+B: Sehr gut, Paul! | خیلی خوب، پاول!
+reading A:
+{"type":"mcq","prompt":"لیزا کجاست؟","options":["خانه","در شهر","هامبورگ","مدرسه"],"correct":0,"explanation_fa":"لیزا می‌گوید: «Ich bin zu Hause.»"}
+{"type":"tf","prompt":"تام هم خانه است.","correct":false,"explanation_fa":"لیزا می‌گوید: «Tom ist nicht hier.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید تام کجاست؟","correct_sentence":3,"explanation_fa":"لیزا می‌گوید: «Er ist in Hamburg.»"}
+{"type":"tf","prompt":"پاول الان در شهر است.","correct":true,"explanation_fa":"پاول می‌گوید: «Ich bin in der Stadt.»"}
+listening A:
+{"type":"mcq","prompt":"تام کجاست؟","options":["خانه","در شهر","هامبورگ","برلین"],"correct":2,"explanation_fa":"لیزا می‌گوید: «Er ist in Hamburg.»"}
+{"type":"tf","prompt":"پاول به خانه می‌آید.","correct":true,"explanation_fa":"پاول می‌گوید: «Ich komme nach Hause.»"}
+listening B:
+{"type":"dict","sentence":1}
+{"type":"mcq","prompt":"پاول اول از لیزا چه می‌پرسد؟","options":["کجایی؟","چطوری؟","اسمت چیست؟","اهل کجایی؟"],"correct":0,"explanation_fa":"پاول می‌پرسد: «Wo bist du?»"}

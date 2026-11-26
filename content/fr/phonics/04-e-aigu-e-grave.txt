@@ -1,0 +1,21 @@
+label: é و è
+kind: contrast
+graphemes: é, è, ê, ai, -er, -ez
+tip:
+é بسته است: دهان کمی باز و لب‌ها کشیده، بین «اِ» و «ای». è و ê بازترند، نزدیک «اِ» فارسی. آخر فعل‌های -er و -ez هم مثل é خوانده می‌شود: parler، parlez.
+words:
+café | قهوه | cafè, cafai
+été | تابستان | ètè, étai
+bébé | نوزاد | bèbè, bébè
+père | پدر | pére, pir
+mère | مادر | mére, mir
+fête | جشن | féte, fite
+tête | سر | téte, tite
+chez | خانه (کسی) | chè, chi
+pairs:
+été | était | بوده | بود
+parlé | parlait | حرف زده | حرف می‌زد
+mangé | mangeait | خورده | می‌خورد
+allé | allait | رفته | می‌رفت
+chanté | chantait | خوانده (آواز) | می‌خواند (آواز)
+fée | fait | پری | کرده

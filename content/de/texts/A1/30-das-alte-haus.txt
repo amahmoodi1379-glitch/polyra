@@ -1,0 +1,24 @@
+code: de-a1-t030
+title: Das alte Haus
+kind: dialogue
+sentences:
+A: Wohnen deine Großeltern allein? | پدربزرگ و مادربزرگت تنها زندگی می‌کنند؟
+B: Nein, sie wohnen mit meinem Onkel zusammen. | نه، با عمویم زندگی می‌کنند.
+A: Ist das Haus groß? | خانه بزرگ است؟
+B: Ja, sehr groß und sehr alt. Es ist 100 Jahre alt! | آره، خیلی بزرگ و خیلی قدیمی. صد سالش است! | tts: Ja, sehr groß und sehr alt. Es ist hundert Jahre alt!
+A: Oh, sehr alt! | آه، خیلی قدیمی!
+B: Ja. Meine Oma ist dort geboren. | آره. مادربزرگم آنجا به دنیا آمده.
+A: Und wo ist dein Opa geboren? | پدربزرگت کجا به دنیا آمده؟
+B: In Wien. Er kommt aus Österreich. | در وین. اهل اتریش است.
+reading A:
+{"type":"mcq","prompt":"پدربزرگ و مادربزرگ با چه کسی زندگی می‌کنند؟","options":["با عمو","تنها","با پدر و مادر","با خاله"],"correct":0,"explanation_fa":"گفته می‌شود: «sie wohnen mit meinem Onkel zusammen»."}
+{"type":"tf","prompt":"خانه نو است.","correct":false,"explanation_fa":"گفته می‌شود: «sehr groß und sehr alt»."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید مادربزرگ کجا به دنیا آمده؟","correct_sentence":5,"explanation_fa":"گفته می‌شود: «Meine Oma ist dort geboren.»"}
+{"type":"match","prompt":"هر آدم را به جای تولدش وصل کن.","left":["مادربزرگ","پدربزرگ"],"right":["در همین خانه","در وین","در مونیخ"],"pairs":[[0,0],[1,1]],"explanation_fa":"مادربزرگ در همین خانه به دنیا آمده و پدربزرگ در وین."}
+listening A:
+{"type":"num","prompt":"خانه چند سال دارد؟","answer":"100","accepted":["100","hundert"],"explanation_fa":"گفته می‌شود: «Es ist 100 Jahre alt!»"}
+{"type":"mcq","prompt":"پدربزرگ اهل کجاست؟","options":["اتریش","آلمان","سوئیس","ایران"],"correct":0,"explanation_fa":"گفته می‌شود: «Er kommt aus Österreich.»"}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"tf","prompt":"خانه خیلی بزرگ است.","correct":true,"explanation_fa":"گفته می‌شود: «Ja, sehr groß.»"}

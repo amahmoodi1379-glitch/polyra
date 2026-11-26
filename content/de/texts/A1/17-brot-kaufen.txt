@@ -1,0 +1,24 @@
+code: de-a1-t017
+title: Kannst du Brot kaufen?
+kind: voice_message
+sentences:
+- Hallo Jonas, hier ist Mia. | سلام یوناس، میا هستم.
+- Ich bin jetzt bei der Arbeit. | الان سر کارم.
+- Kannst du heute Brot kaufen? | می‌توانی امروز نان بخری؟
+- Wir brauchen auch Wasser und Kaffee. | آب و قهوه هم لازم داریم.
+- Du kannst mein Geld nehmen. | می‌توانی پول من را برداری.
+- Meine Eltern kommen heute. | پدر و مادرم امروز می‌آیند.
+- Morgen kaufe ich Tee. | فردا من چای می‌خرم.
+- Danke! | ممنون!
+reading A:
+{"type":"mcq","prompt":"میا از یوناس چه می‌خواهد؟","options":["نان بخرد","غذا بپزد","سر کار برود","به پدر و مادرش زنگ بزند"],"correct":0,"explanation_fa":"میا می‌پرسد: «Kannst du heute Brot kaufen?»"}
+{"type":"tf","prompt":"میا الان خانه است.","correct":false,"explanation_fa":"میا می‌گوید: «Ich bin jetzt bei der Arbeit.»"}
+reading B:
+{"type":"match","prompt":"هر روز را به کارش وصل کن.","left":["امروز","فردا"],"right":["پدر و مادر میا می‌آیند","میا چای می‌خرد","میا به برلین می‌رود"],"pairs":[[0,0],[1,1]],"explanation_fa":"«Meine Eltern kommen heute.» و «Morgen kaufe ich Tee.»"}
+{"type":"find","prompt":"کدام جمله می‌گوید یوناس می‌تواند پول میا را بردارد؟","correct_sentence":4,"explanation_fa":"میا می‌گوید: «Du kannst mein Geld nehmen.»"}
+listening A:
+{"type":"mcq","prompt":"چه چیزهای دیگری لازم دارند؟","options":["آب و قهوه","چای و شیر","نان و پنیر","آب و چای"],"correct":0,"explanation_fa":"میا می‌گوید: «Wir brauchen auch Wasser und Kaffee.»"}
+{"type":"tf","prompt":"میا فردا چای می‌خرد.","correct":true,"explanation_fa":"میا می‌گوید: «Morgen kaufe ich Tee.»"}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"tf","prompt":"پدر و مادر میا فردا می‌آیند.","correct":false,"explanation_fa":"میا می‌گوید: «Meine Eltern kommen heute.»، یعنی امروز."}

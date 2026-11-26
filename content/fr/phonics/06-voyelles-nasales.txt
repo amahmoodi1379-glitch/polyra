@@ -1,0 +1,22 @@
+label: صداهای دماغی an، on، in
+kind: contrast
+graphemes: an, en, on, in, ain, un
+tip:
+در این صداها n خوانده نمی‌شود؛ هوا از بینی هم بیرون می‌آید و واکه دماغی می‌شود. an و en با دهان باز، on با لب‌های گرد و in و ain با لب‌های کشیده گفته می‌شوند. اگر بعد از n واکه بیاید، مثل bonne، n خوانده می‌شود و صدا دیگر دماغی نیست.
+words:
+enfant | بچه | enfan, onfon
+maison | خانه | maisan, maisin
+pain | نان | pan, pon
+bonjour | سلام | banjour, binjour
+vingt | بیست | vant, vont
+français | فرانسوی | frinçais, fronçais
+lundi | دوشنبه | landi, londi
+maman | مامان | momon, mamin
+temps | وقت | ton, tin
+pairs:
+sans | son | بدون | صدا
+lent | long | آهسته | دراز
+vent | vont | باد | می‌روند
+blanc | blond | سفید | بور
+pain | pont | نان | پل
+fin | fond | پایان | ته

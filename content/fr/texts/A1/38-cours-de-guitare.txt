@@ -1,0 +1,28 @@
+code: fr-a1-t038
+title: Cours de guitare
+kind: ad
+placement: yes
+sentences:
+- Vous voulez jouer de la guitare ? | می‌خواهید گیتار بزنید؟
+- Je suis professeur de musique à Lyon. | معلم موسیقی در لیون هستم.
+- Je donne des cours pour tout le monde. | برای همه کلاس می‌گذارم.
+- Les cours sont le mercredi et le samedi. | کلاس‌ها چهارشنبه‌ها و شنبه‌هاست.
+- Un cours d'une heure coûte 20 euros. | یک کلاس یک‌ساعته ۲۰ یورو است. | tts: Un cours d'une heure coûte vingt euros.
+- Pour le premier cours, vous ne payez pas. | برای کلاس اول پول نمی‌دهید.
+- Mon numéro : 06 72 18 45 93. | شماره من: ۰۶ ۷۲ ۱۸ ۴۵ ۹۳. | tts: Mon numéro : zéro six, soixante-douze, dix-huit, quarante-cinq, quatre-vingt-treize.
+reading A:
+{"type":"mcq","prompt":"این آگهی درباره چیست؟","options":["کلاس گیتار","فروش گیتار","کنسرت","کلاس فرانسه"],"correct":0,"explanation_fa":"در آگهی آمده: «Vous voulez jouer de la guitare ?» و «Je donne des cours»."}
+{"type":"tf","prompt":"کلاس‌ها فقط برای بچه‌هاست.","correct":false,"explanation_fa":"در آگهی آمده: «pour tout le monde»."}
+{"type":"mcq","prompt":"کلاس‌ها چه روزهایی است؟","options":["چهارشنبه و شنبه","دوشنبه و پنجشنبه","فقط یکشنبه","هر روز"],"correct":0,"explanation_fa":"در آگهی آمده: «le mercredi et le samedi»."}
+{"type":"tf","prompt":"کلاس اول رایگان است.","correct":true,"explanation_fa":"در آگهی آمده: «Pour le premier cours, vous ne payez pas.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله قیمت یک کلاس را می‌گوید؟","correct_sentence":4,"explanation_fa":"در آگهی آمده: «Un cours d'une heure coûte 20 euros.»"}
+{"type":"match","prompt":"هر چیز را به جوابش وصل کن.","left":["شهر","طول هر کلاس"],"right":["لیون","یک ساعت","پاریس"],"pairs":[[0,0],[1,1]],"explanation_fa":"کلاس‌ها در لیون است و هر کلاس یک ساعت."}
+listening A:
+{"type":"num","prompt":"یک کلاس چند یورو است؟","answer":"20","accepted":["20","vingt"],"explanation_fa":"در آگهی آمده: «coûte 20 euros»."}
+{"type":"mcq","prompt":"شغل نویسنده آگهی چیست؟","options":["معلم موسیقی","فروشنده","آشپز","پزشک"],"correct":0,"explanation_fa":"در آگهی آمده: «Je suis professeur de musique.»"}
+{"type":"tf","prompt":"کلاس‌ها دوشنبه‌هاست.","correct":false,"explanation_fa":"در آگهی آمده: «le mercredi et le samedi»."}
+{"type":"tf","prompt":"هر کلاس یک ساعت است.","correct":true,"explanation_fa":"در آگهی آمده: «Un cours d'une heure»."}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"mcq","prompt":"برای کلاس اول چقدر پول می‌دهید؟","options":["هیچ","۱۰ یورو","۲۰ یورو","۴۰ یورو"],"correct":0,"explanation_fa":"در آگهی آمده: «Pour le premier cours, vous ne payez pas.»"}

@@ -1,0 +1,23 @@
+code: de-a1-t011
+title: Woher kommst du?
+kind: dialogue
+sentences:
+A: Hallo! Ich heiße Anna. Und du? | سلام! اسم من آناست. تو چی؟
+B: Hallo, Anna! Ich bin Reza. | سلام آنا! من رضا هستم.
+A: Woher kommst du, Reza? | رضا، اهل کجایی؟
+B: Ich komme aus Teheran. Und du? | اهل تهرانم. تو چی؟
+A: Ich komme aus Berlin. Wo wohnst du? | اهل برلینم. کجا زندگی می‌کنی؟
+B: Ich wohne hier. Das Haus dort ist mein Haus. | همین‌جا زندگی می‌کنم. آن خانه آنجا خانه من است.
+A: Das Haus ist sehr groß! | خانه خیلی بزرگ است!
+reading A:
+{"type":"mcq","prompt":"رضا اهل کجاست؟","options":["برلین","تهران","وین","هامبورگ"],"correct":1,"explanation_fa":"رضا می‌گوید: «Ich komme aus Teheran.»"}
+{"type":"tf","prompt":"آنا اهل برلین است.","correct":true,"explanation_fa":"آنا می‌گوید: «Ich komme aus Berlin.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید خانه رضا کجاست؟","correct_sentence":5,"explanation_fa":"رضا می‌گوید: «Das Haus dort ist mein Haus.»"}
+{"type":"tf","prompt":"خانه رضا کوچک است.","correct":false,"explanation_fa":"آنا می‌گوید: «Das Haus ist sehr groß!»"}
+listening A:
+{"type":"mcq","prompt":"اسم دوست رضا چیست؟","options":["آنا","لیزا","میا","لنا"],"correct":0,"explanation_fa":"آنا می‌گوید: «Ich heiße Anna.»"}
+{"type":"tf","prompt":"رضا همین‌جا زندگی می‌کند.","correct":true,"explanation_fa":"رضا می‌گوید: «Ich wohne hier.»"}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"mcq","prompt":"آنا درباره خانه رضا چه می‌گوید؟","options":["خیلی بزرگ است","خیلی کوچک است","قدیمی است","نو است"],"correct":0,"explanation_fa":"آنا می‌گوید: «Das Haus ist sehr groß!»"}

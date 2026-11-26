@@ -1,0 +1,16 @@
+label: s، z و ß
+kind: rule
+graphemes: s, z, tz, ß, ss
+tip:
+s پیش از واکه مثل «ز» خوانده می‌شود: Sonne، lesen. z همیشه مثل «تس» است: zehn، Zeit. ß و ss مثل «س» هستند: ß پس از واکه بلند و دوصدایی می‌آید، مثل Straße، و ss پس از واکه کوتاه، مثل Wasser.
+words:
+Sonne | خورشید | Zonne, Sone
+sieben | هفت | zieben, siben
+zehn | ده | tsehn, sehn
+Zeit | زمان | Tseit, Seit
+Zimmer | اتاق | Tsimmer, Simmer
+Straße | خیابان | Strase, Straze
+Wasser | آب | Waser, Wazer
+heißen | نام داشتن | heisen, heizen
+Salz | نمک | Zalz, Salts
+zwei | دو | tswei, swei

@@ -1,0 +1,15 @@
+label: r فرانسوی
+kind: rule
+graphemes: r, rr
+tip:
+r فرانسوی از ته گلو ساخته می‌شود، نزدیک «غ» فارسی ولی نرم‌تر و بی‌لرزش. نوک زبان پایین، پشت دندان‌های پایین می‌ماند. آخر فعل‌های -er، حرف r خوانده نمی‌شود: parler.
+words:
+rouge | قرمز | ruge, rougue
+frère | برادر | frèr, frer
+merci | ممنون | mersi, merçi
+partir | رفتن | parti, partire
+carte | کارت | cart, carté
+droite | راست | droit, droate
+croissant | کروسان | croisant, croassant
+prendre | گرفتن | prender, prandre
+rester | ماندن | raister, rest

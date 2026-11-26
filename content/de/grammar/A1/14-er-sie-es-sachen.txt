@@ -71,3 +71,6 @@ translations:
 کتاب‌ها اینجا هستند. نو هستند. => Die Bücher sind hier. Sie sind neu.
 مدرسه آنجاست. بزرگ است. => Die Schule ist dort. Sie ist groß.
 چای اینجاست. ایرانی است. => Der Tee ist hier. Er ist aus Iran.
+ماشین کجاست؟ آنجاست. => Wo ist das Auto? Es ist dort. ; Wo ist das Auto? Es ist da.
+قهوه خوب است. داغ است. => Der Kaffee ist gut. Er ist heiß{heiß}.
+روزنامه کجاست؟ اینجاست. => Wo ist die Zeitung? Sie ist hier.

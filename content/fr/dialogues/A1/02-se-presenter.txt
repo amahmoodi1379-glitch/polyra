@@ -1,0 +1,29 @@
+code: fr-a1-d002
+title: آشنایی با یک همکلاسی
+situation: روز اول کلاس است. یک همکلاسی به تو سلام می‌کند.
+turns:
+B: Salut ! Je m'appelle Léa. Et toi ? | سلام! اسم من لئاست. تو چی؟
+- Au revoir, Léa ! Je m'appelle Sara. | خداحافظ لئا! اسم من ساراست.
++ Salut, Léa ! Moi, je m'appelle Sara. | سلام لئا! اسم من ساراست.
+- Salut, Léa ! Je suis appelle{s'appeler} Sara. | سلام لئا! اسم من ساراست.
+why: در اول آشنایی «Salut» می‌گوییم، نه «Au revoir». «je m'appelle» شکل درست است و «je suis appelle» غلط است.
+B: Tu viens d'où, Sara ? | سارا، اهل کجایی؟
+- Je viens à l'école. | به مدرسه می‌آیم.
+- Je viens de Iran. | اهل ایرانم.
++ Je viens d'Iran, de Téhéran. | اهل ایرانم، از تهران.
+why: «Je viens d'Iran» یعنی اهل ایرانم؛ پیش از واکه de می‌شود d'. «Je viens à l'école» یعنی «به مدرسه می‌آیم» و جواب سؤال نیست.
+B: Et tu habites où ? | کجا زندگی می‌کنی؟
++ J'habite ici, avec ma famille. | اینجا با خانواده‌ام زندگی می‌کنم.
+- J'habite ici, avec mon famille. | اینجا با خانواده‌ام زندگی می‌کنم.
+- Oui, j'habite. | بله، زندگی می‌کنم.
+why: famille مؤنث است، پس «ma famille». «Oui, j'habite» جواب «کجا؟» نیست.
+B: Tu parles bien français ! | خوب فرانسوی حرف می‌زنی!
+- Merci ! Je parlons un peu. | ممنون! کمی حرف می‌زنم.
++ Merci ! Je parle un peu. | ممنون! کمی حرف می‌زنم.
+- Merci ! Tu parles un peu. | ممنون! تو کمی حرف می‌زنی.
+why: با je شکل parle می‌آید، نه parlons. «Tu parles un peu» درباره همکلاسی است، نه خودت.
+B: On travaille ensemble ? | با هم کار کنیم؟
+- Oui, au revoir ! | آره، خداحافظ!
+- Oui, je travaille ensemble. | آره، من با هم کار می‌کنم.
++ Oui, bonne idée ! | آره، فکر خوبی است!
+why: «Oui, bonne idée !» یعنی موافقی. «au revoir» یعنی می‌روی، و «je travaille ensemble» برای یک نفر معنی ندارد.

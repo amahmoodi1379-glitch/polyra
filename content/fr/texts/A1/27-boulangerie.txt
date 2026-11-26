@@ -1,0 +1,25 @@
+code: fr-a1-t027
+title: À la boulangerie
+kind: dialogue
+sentences:
+A: Bonjour, madame ! Qu'est-ce que vous voulez ? | سلام خانم! چه می‌خواهید؟
+B: Bonjour ! Une baguette et deux croissants, s'il vous plaît. | سلام! یک باگت و دو کروسان، لطفاً.
+A: Voilà. Et avec ça ? | بفرمایید. چیز دیگری؟
+B: Vous avez des gâteaux au chocolat ? | کیک شکلاتی دارید؟
+A: Oui, ils sont délicieux ! 3 euros le gâteau. | بله، خیلی خوشمزه‌اند! هر کیک ۳ یورو. | tts: Oui, ils sont délicieux ! Trois euros le gâteau.
+B: Alors un gâteau aussi. Ça fait combien ? | پس یک کیک هم. چقدر می‌شود؟
+A: Ça fait 6 euros. | ۶ یورو می‌شود. | tts: Ça fait six euros.
+B: Voilà. Merci, au revoir ! | بفرمایید. ممنون، خداحافظ!
+A: Merci, bonne journée ! | ممنون، روز خوبی داشته باشید!
+reading A:
+{"type":"mcq","prompt":"زن چند کروسان می‌خرد؟","options":["یکی","دو تا","سه تا","هیچ"],"correct":1,"explanation_fa":"زن می‌گوید: «Une baguette et deux croissants.»"}
+{"type":"tf","prompt":"زن کیک نمی‌خرد.","correct":false,"explanation_fa":"زن می‌گوید: «Alors un gâteau aussi.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله قیمت هر کیک را می‌گوید؟","correct_sentence":4,"explanation_fa":"گفته می‌شود: «3 euros le gâteau»."}
+{"type":"match","prompt":"هر چیز را به تعدادش وصل کن.","left":["باگت","کروسان"],"right":["یکی","دو تا","پنج تا"],"pairs":[[0,0],[1,1]],"explanation_fa":"زن یک باگت و دو کروسان می‌خرد."}
+listening A:
+{"type":"num","prompt":"زن روی هم چند یورو می‌دهد؟","answer":"6","accepted":["6","six"],"explanation_fa":"فروشنده می‌گوید: «Ça fait 6 euros.»"}
+{"type":"mcq","prompt":"زن چه کیکی می‌خرد؟","options":["کیک شکلاتی","کیک سیب","کیک پرتقال","کیک موز"],"correct":0,"explanation_fa":"زن می‌پرسد: «Vous avez des gâteaux au chocolat ?»"}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"tf","prompt":"فروشنده می‌گوید کیک‌ها خوشمزه‌اند.","correct":true,"explanation_fa":"فروشنده می‌گوید: «ils sont délicieux !»"}

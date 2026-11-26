@@ -1,0 +1,16 @@
+label: w و v
+kind: rule
+graphemes: w, v
+tip:
+w آلمانی مثل «و» فارسی است: Wasser، wohnen. v در بیشتر کلمه‌های آلمانی مثل «ف» خوانده می‌شود: Vater، vier. فقط در کلمه‌های قرضی مثل Vase مثل «و» است.
+words:
+Wasser | آب | Vasser, Waser
+wohnen | زندگی کردن | vohnen, wonen
+Vater | پدر | Fater, Water
+vier | چهار | fier, wier
+Vogel | پرنده | Fogel, Wogel
+warm | گرم | varm, worm
+wie | چطور | vie, wi
+Woche | هفته | Voche, Wohe
+Wetter | هوا | Vetter, Weter
+Vase | گلدان | Wase, Fase

@@ -1,0 +1,24 @@
+code: fr-a1-t017
+title: Une nouvelle voiture
+kind: dialogue
+sentences:
+A: Tu as une nouvelle voiture ? | ماشین تازه داری؟
+B: Oui ! Elle est belle, non ? | آره! قشنگ است، نه؟
+A: Très belle ! Et elle est grande. | خیلی قشنگ! بزرگ هم هست.
+B: Oui, parce que nous avons trois enfants. | آره، چون سه بچه داریم.
+A: Et l'autre voiture, la vieille ? | ماشین دیگرت چه، آن قدیمی؟
+B: Je la donne à un ami. | آن را به یک دوست می‌دهم.
+A: C'est vrai ? Tu donnes ta voiture ? | راست می‌گویی؟ ماشینت را می‌دهی؟
+B: Oui, il a besoin d'une voiture pour son travail. | آره، برای کارش ماشین لازم دارد.
+reading A:
+{"type":"mcq","prompt":"چرا ماشین تازه بزرگ است؟","options":["چون سه بچه دارند","چون ارزان بود","چون برای کار است","چون قدیمی است"],"correct":0,"explanation_fa":"گفته می‌شود: «parce que nous avons trois enfants»."}
+{"type":"tf","prompt":"ماشین قدیمی را می‌فروشد.","correct":false,"explanation_fa":"گفته می‌شود: «Je la donne à un ami.»، یعنی آن را به دوستش می‌دهد."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید دوستش برای چه ماشین لازم دارد؟","correct_sentence":7,"explanation_fa":"گفته می‌شود: «il a besoin d'une voiture pour son travail»."}
+{"type":"tf","prompt":"ماشین تازه قشنگ است.","correct":true,"explanation_fa":"گفته می‌شود: «Très belle !»"}
+listening A:
+{"type":"num","prompt":"آن‌ها چند بچه دارند؟","answer":"3","accepted":["3","trois"],"explanation_fa":"گفته می‌شود: «nous avons trois enfants»."}
+{"type":"tf","prompt":"ماشین تازه کوچک است.","correct":false,"explanation_fa":"گفته می‌شود: «elle est grande»."}
+listening B:
+{"type":"dict","sentence":5}
+{"type":"mcq","prompt":"ماشین قدیمی را به چه کسی می‌دهد؟","options":["به یک دوست","به پدرش","به بچه‌اش","به همسایه"],"correct":0,"explanation_fa":"گفته می‌شود: «Je la donne à un ami.»"}

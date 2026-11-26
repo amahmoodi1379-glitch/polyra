@@ -1,0 +1,15 @@
+label: r آلمانی و -er آخر کلمه
+kind: rule
+graphemes: r, -er
+tip:
+r اول کلمه و بین دو واکه از ته گلو می‌آید، نزدیک «غ» فارسی ولی نرم‌تر: rot، hören. r پس از واکه بلند و -er آخر کلمه تقریباً مثل یک «اَ» کوتاه خوانده می‌شود: vier، Vater، Lehrer. r را مثل «ر» فارسی نلرزان.
+words:
+rot | قرمز | ghot, rott
+Vater | پدر | Vata, Vatr
+Lehrer | معلم | Lehra, Lehrr
+Mutter | مادر | Mutta, Muter
+Bruder | برادر | Bruda, Bruter
+Zimmer | اتاق | Zimma, Zimmr
+Radio | رادیو | Ghadio, Radjo
+Uhr | ساعت | Uha, Uer
+Ohren | گوش‌ها | Oghen, Ohen

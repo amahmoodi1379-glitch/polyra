@@ -1,0 +1,25 @@
+code: fr-a1-t035
+title: Un pull pour l'hiver
+kind: dialogue
+sentences:
+A: Bonjour ! Je cherche un pull pour l'hiver. | سلام! دنبال یک پلیور برای زمستان می‌گردم.
+B: Quelle couleur ? | چه رنگی؟
+A: Gris ou noir. | خاکستری یا مشکی.
+B: Voilà un pull noir. Il coûte 40 euros. | این یک پلیور مشکی است. ۴۰ یورو است. | tts: Voilà un pull noir. Il coûte quarante euros.
+A: C'est un peu cher. Vous avez un autre pull ? | کمی گران است. پلیور دیگری دارید؟
+B: Oui, ce pull gris coûte 25 euros. | بله، این پلیور خاکستری ۲۵ یورو است. | tts: Oui, ce pull gris coûte vingt-cinq euros.
+A: Il est joli ! Je le prends. | قشنگ است! برش می‌دارم.
+B: Vous payez par carte ? | با کارت پرداخت می‌کنید؟
+A: Oui, par carte. | بله، با کارت.
+reading A:
+{"type":"mcq","prompt":"مشتری دنبال چیست؟","options":["پلیور","شلوار","کفش","ژاکت"],"correct":0,"explanation_fa":"مشتری می‌گوید: «Je cherche un pull pour l'hiver.»"}
+{"type":"tf","prompt":"مشتری فکر می‌کند پلیور مشکی ارزان است.","correct":false,"explanation_fa":"مشتری می‌گوید: «C'est un peu cher.»"}
+reading B:
+{"type":"match","prompt":"هر پلیور را به قیمتش وصل کن.","left":["پلیور مشکی","پلیور خاکستری"],"right":["۴۰ یورو","۲۵ یورو","۵۰ یورو"],"pairs":[[0,0],[1,1]],"explanation_fa":"پلیور مشکی ۴۰ یورو و پلیور خاکستری ۲۵ یورو است."}
+{"type":"find","prompt":"کدام جمله می‌گوید مشتری چه رنگی می‌خواهد؟","correct_sentence":2,"explanation_fa":"مشتری می‌گوید: «Gris ou noir.»"}
+listening A:
+{"type":"num","prompt":"پلیور خاکستری چند یورو است؟","answer":"25","accepted":["25","vingt-cinq"],"explanation_fa":"فروشنده می‌گوید: «ce pull gris coûte 25 euros»."}
+{"type":"mcq","prompt":"مشتری چطور پرداخت می‌کند؟","options":["با کارت","با پول نقد","بعداً","پرداخت نمی‌کند"],"correct":0,"explanation_fa":"مشتری می‌گوید: «Oui, par carte.»"}
+listening B:
+{"type":"dict","sentence":6}
+{"type":"tf","prompt":"مشتری آخر پلیور خاکستری را می‌خرد.","correct":true,"explanation_fa":"مشتری درباره پلیور خاکستری می‌گوید: «Il est joli ! Je le prends.»"}

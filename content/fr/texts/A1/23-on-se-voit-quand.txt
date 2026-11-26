@@ -1,0 +1,25 @@
+code: fr-a1-t023
+title: On se voit quand ?
+kind: dialogue
+sentences:
+A: On se voit quand, Nicolas ? | نیکولا، کی همدیگر را ببینیم؟
+B: Lundi, je travaille. Mardi matin ? | دوشنبه کار می‌کنم. سه‌شنبه صبح؟
+A: Mardi matin, j'ai rendez-vous chez le médecin. | سه‌شنبه صبح پیش پزشک وقت دارم.
+B: Et mardi après-midi ? | سه‌شنبه بعدازظهر چطور؟
+A: Oui, je suis libre l'après-midi. | آره، بعدازظهر آزادم.
+B: À quelle heure ? À 3 heures ? | ساعت چند؟ ساعت ۳؟ | tts: À quelle heure ? À trois heures ?
+A: À 4 heures, d'accord ? | ساعت ۴، باشد؟ | tts: À quatre heures, d'accord ?
+B: D'accord. Au café de la gare ? | باشد. در کافه ایستگاه قطار؟
+A: Très bien. À mardi ! | خیلی خوب. تا سه‌شنبه!
+reading A:
+{"type":"mcq","prompt":"آن‌ها کی همدیگر را می‌بینند؟","options":["سه‌شنبه بعدازظهر","سه‌شنبه صبح","دوشنبه","چهارشنبه"],"correct":0,"explanation_fa":"گفته می‌شود: «Et mardi après-midi ?» و «Oui, je suis libre l'après-midi.»"}
+{"type":"tf","prompt":"نیکولا دوشنبه کار می‌کند.","correct":true,"explanation_fa":"نیکولا می‌گوید: «Lundi, je travaille.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید سه‌شنبه صبح چه کاری هست؟","correct_sentence":2,"explanation_fa":"گفته می‌شود: «Mardi matin, j'ai rendez-vous chez le médecin.»"}
+{"type":"match","prompt":"هر زمان را به کارش وصل کن.","left":["دوشنبه","سه‌شنبه صبح"],"right":["نیکولا کار می‌کند","وقت پزشک","کلاس فرانسه"],"pairs":[[0,0],[1,1]],"explanation_fa":"دوشنبه نیکولا کار می‌کند و سه‌شنبه صبح وقت پزشک است."}
+listening A:
+{"type":"num","prompt":"ساعت چند همدیگر را می‌بینند؟","answer":"4","accepted":["4","quatre","16"],"explanation_fa":"گفته می‌شود: «À 4 heures, d'accord ?»"}
+{"type":"mcq","prompt":"کجا همدیگر را می‌بینند؟","options":["در کافه ایستگاه قطار","پیش پزشک","در خانه نیکولا","در پارک"],"correct":0,"explanation_fa":"نیکولا می‌گوید: «Au café de la gare ?»"}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"tf","prompt":"اول نیکولا ساعت ۳ را پیشنهاد می‌کند.","correct":true,"explanation_fa":"نیکولا می‌پرسد: «À 3 heures ?»"}

@@ -1,0 +1,24 @@
+code: de-a1-t018
+title: Mein Freund Ali
+kind: dialogue
+sentences:
+A: Wer ist das, Sara? | سارا، این کیست؟
+B: Das ist Ali, mein Freund. Er kommt aus Schiras. | این علی است، دوستم. اهل شیراز است.
+A: Was macht er hier? | اینجا چه کار می‌کند؟
+B: Er arbeitet in Berlin. | در برلین کار می‌کند.
+A: Spricht er Deutsch? | آلمانی حرف می‌زند؟
+B: Ja, sehr gut! Er lernt viel. | آره، خیلی خوب! زیاد درس می‌خواند.
+A: Hat er ein Auto? | ماشین دارد؟
+B: Nein, aber er möchte ein Auto kaufen. | نه، ولی می‌خواهد ماشین بخرد.
+reading A:
+{"type":"mcq","prompt":"علی اهل کجاست؟","options":["تهران","شیراز","اصفهان","برلین"],"correct":1,"explanation_fa":"سارا می‌گوید: «Er kommt aus Schiras.»"}
+{"type":"tf","prompt":"علی در برلین کار می‌کند.","correct":true,"explanation_fa":"سارا می‌گوید: «Er arbeitet in Berlin.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید علی آلمانی خوب حرف می‌زند؟","correct_sentence":5,"explanation_fa":"سارا می‌گوید: «Ja, sehr gut!»"}
+{"type":"tf","prompt":"علی ماشین دارد.","correct":false,"explanation_fa":"سارا می‌گوید: «Nein, aber er möchte ein Auto kaufen.»"}
+listening A:
+{"type":"mcq","prompt":"علی می‌خواهد چه بخرد؟","options":["خانه","ماشین","کتاب","دوچرخه"],"correct":1,"explanation_fa":"سارا می‌گوید: «er möchte ein Auto kaufen»."}
+{"type":"tf","prompt":"علی دوستِ ساراست.","correct":true,"explanation_fa":"سارا می‌گوید: «Das ist Ali, mein Freund.»"}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"mcq","prompt":"سارا درباره علی چه می‌گوید؟","options":["زیاد درس می‌خواند","کم حرف می‌زند","خیلی جوان است","ماشین نو دارد"],"correct":0,"explanation_fa":"سارا می‌گوید: «Er lernt viel.»"}

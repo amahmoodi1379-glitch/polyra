@@ -1,0 +1,29 @@
+code: fr-a1-d003
+title: تلفن به دوست برای قرار
+situation: به دوستت هوگو زنگ می‌زنی تا با هم بیرون بروید.
+turns:
+B: Salut ! Ça va ? | سلام! خوبی؟
+- Bonjour, monsieur Hugo ! Comment allez-vous ? | روز بخیر آقای هوگو! حالتان چطور است؟
++ Salut, Hugo ! Ça va bien, et toi ? | سلام هوگو! خوبم، تو چطوری؟
+- Salut, Hugo ! Je va bien. | سلام هوگو! خوبم.
+why: با دوست خودمانی حرف می‌زنیم: «Salut, Hugo ! Ça va bien, et toi ?». «monsieur» و vous با دوست خیلی رسمی است و «je va» غلط است؛ درستش je vais است.
+B: Ça va. Qu'est-ce qu'il y a ? | خوبم. چی شده؟
++ Tu as le temps ? On va au café ensemble ? | وقت داری؟ با هم برویم کافه؟
+- Tu as le temps ? Tu es un café ? | وقت داری؟ تو یک قهوه‌ای؟
+- Tu as le temps ? On allons au café ? | وقت داری؟ برویم کافه؟
+why: «On va au café ensemble ?» پیشنهاد درست است. «Tu es un café ?» بی‌معنی است و با on شکل va می‌آید، نه allons.
+B: Oui, bonne idée ! À quelle heure ? | آره، فکر خوبی است! ساعت چند؟
+- À la maison. | در خانه.
+- À cinq ans. | در پنج‌سالگی.
++ À cinq heures, ça va ? | ساعت پنج، خوب است؟
+why: سؤال «ساعت چند؟» است، پس «À cinq heures». «À la maison» جای قرار را می‌گوید و «À cinq ans» سن است، نه ساعت.
+B: Cinq heures, d'accord. Et où ? | ساعت پنج، باشد. کجا؟
++ Au café, dans la rue de l'école. | در کافه، در خیابانِ مدرسه.
+- Au café, dans le rue de l'école. | در کافه، در خیابانِ مدرسه.
+- À cinq heures, au café. | ساعت پنج، در کافه.
+why: rue مؤنث است، پس «la rue». ساعت را قبلاً گفتید و حالا جای قرار پرسیده شده.
+B: Très bien ! Je viens avec Lucas, d'accord ? | خیلی خوب! با لوکا می‌آیم، باشد؟
+- Oui, bien sûr ! Bonjour ! | آره، حتماً! سلام!
++ Oui, bien sûr ! Au revoir ! | آره، حتماً! خداحافظ!
+- Oui, bien sûr ! Tu viens avec moi ? | آره، حتماً! با من می‌آیی؟
+why: آخر تلفن «Au revoir» می‌گوییم، نه «Bonjour». هوگو با لوکا می‌آید، نه با تو.

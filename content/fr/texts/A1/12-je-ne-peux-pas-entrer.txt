@@ -1,0 +1,23 @@
+code: fr-a1-t012
+title: Je ne peux pas entrer
+kind: voice_message
+sentences:
+- Salut Léa, c'est Paul. | سلام لئا، پل هستم.
+- Je suis chez toi, mais je ne peux pas entrer. | دمِ خانه‌ات هستم، ولی نمی‌توانم بیایم تو.
+- Tu n'es pas là ? | خانه نیستی؟
+- Tu as peut-être un problème ? | شاید مشکلی داری؟
+- Je t'attends une heure, pas plus. | یک ساعت منتظرت می‌مانم، نه بیشتر.
+- Tu peux me répondre, s'il te plaît ? | می‌توانی جوابم را بدهی، لطفاً؟
+- Merci ! | ممنون!
+reading A:
+{"type":"mcq","prompt":"پل کجاست؟","options":["دمِ خانه لئا","خانه خودش","در مدرسه","در کافه"],"correct":0,"explanation_fa":"پل می‌گوید: «Je suis chez toi.»"}
+{"type":"tf","prompt":"پل می‌تواند وارد خانه شود.","correct":false,"explanation_fa":"پل می‌گوید: «je ne peux pas entrer»."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید پل چقدر منتظر می‌ماند؟","correct_sentence":4,"explanation_fa":"پل می‌گوید: «Je t'attends une heure, pas plus.»"}
+{"type":"tf","prompt":"پل از لئا می‌خواهد جواب بدهد.","correct":true,"explanation_fa":"پل می‌گوید: «Tu peux me répondre, s'il te plaît ?»"}
+listening A:
+{"type":"mcq","prompt":"پل چقدر منتظر می‌ماند؟","options":["یک ساعت","دو ساعت","یک دقیقه","یک روز"],"correct":0,"explanation_fa":"پل می‌گوید: «Je t'attends une heure.»"}
+{"type":"tf","prompt":"پل فکر می‌کند شاید لئا مشکلی دارد.","correct":true,"explanation_fa":"پل می‌پرسد: «Tu as peut-être un problème ?»"}
+listening B:
+{"type":"dict","sentence":5}
+{"type":"tf","prompt":"پل همین الان می‌رود.","correct":false,"explanation_fa":"پل می‌گوید: «Je t'attends une heure»، یعنی یک ساعت می‌ماند."}

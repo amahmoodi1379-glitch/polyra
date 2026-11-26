@@ -1,0 +1,15 @@
+label: ch، j، g، gn
+kind: rule
+graphemes: ch, j, ge, gi, gn
+tip:
+ch مثل «ش» و j مثل «ژ» فارسی است. g پیش از e، i و y هم «ژ» خوانده می‌شود، ولی پیش از a، o و u «گ». gn صدای n نرم با «ی» دارد، مثل montagne.
+words:
+chat | گربه | sha, chah
+chien | سگ | shien, chiain
+jupe | دامن | gupe, chupe
+jardin | باغ | gardin, jarden
+manger | خوردن | manjer, mancher
+orange | پرتقال | oranje, oranche
+montagne | کوه | montanie, montangne
+campagne | روستا | campanie, campagnie
+bonjour | سلام | bonchour, bonjur

@@ -1,0 +1,16 @@
+label: -ig و -ng
+kind: rule
+graphemes: -ig, ng, nk
+tip:
+-ig آخر کلمه مثل ich خوانده می‌شود، یعنی g آن نرم و بی‌صداست: billig، zwanzig. ng یک صدای دماغی است و g آن جدا خوانده نمی‌شود، مثل lang و singen. در nk صدای k شنیده می‌شود: danke.
+words:
+billig | ارزان | billich, billik
+zwanzig | بیست | zwanzich, zwanzik
+richtig | درست | richtich, richtik
+lustig | خنده‌دار | lustich, lustik
+wichtig | مهم | wichtich, wichtik
+lang | بلند (دراز) | langk, lanng
+singen | آواز خواندن | singgen, sinken
+Junge | پسر | Jungge, Junke
+Zeitung | روزنامه | Zeitunk, Zeitungg
+jung | جوان | junk, jungk

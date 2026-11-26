@@ -1,0 +1,24 @@
+code: fr-a1-t009
+title: Je cherche ta maison
+kind: voice_message
+sentences:
+- Salut Marie, c'est Thomas. | سلام ماری، توما هستم.
+- J'ai un problème. | یک مشکل دارم.
+- Je cherche ta maison, mais je ne la trouve pas. | دنبال خانه‌ات می‌گردم، ولی پیدایش نمی‌کنم.
+- Je suis dans ma voiture, dans la rue de l'école. | توی ماشینم هستم، در خیابانِ مدرسه.
+- Quel est ton numéro ? Le 12 ou le 22 ? | پلاک خانه‌ات چند است؟ ۱۲ یا ۲۲؟ | tts: Quel est ton numéro ? Le douze ou le vingt-deux ?
+- J'attends ici. | اینجا منتظر می‌مانم.
+- Tu peux venir m'aider ? | می‌توانی بیایی کمکم کنی؟
+- Merci ! | ممنون!
+reading A:
+{"type":"mcq","prompt":"توما چه مشکلی دارد؟","options":["خانه ماری را پیدا نمی‌کند","ماشینش خراب است","دیر کرده است","کتابش را گم کرده است"],"correct":0,"explanation_fa":"توما می‌گوید: «Je cherche ta maison, mais je ne la trouve pas.»"}
+{"type":"tf","prompt":"توما الان در خانه ماری است.","correct":false,"explanation_fa":"توما می‌گوید: «Je suis dans ma voiture»، یعنی توی ماشینش است."}
+reading B:
+{"type":"find","prompt":"کدام جمله پلاک خانه را می‌پرسد؟","correct_sentence":4,"explanation_fa":"توما می‌پرسد: «Quel est ton numéro ?»"}
+{"type":"tf","prompt":"توما در خیابانِ مدرسه است.","correct":true,"explanation_fa":"توما می‌گوید: «dans la rue de l'école»."}
+listening A:
+{"type":"num","prompt":"اولین شماره‌ای که توما می‌گوید چند است؟","answer":"12","accepted":["12","douze"],"explanation_fa":"توما می‌پرسد: «Le 12 ou le 22 ?»"}
+{"type":"mcq","prompt":"توما از ماری چه می‌خواهد؟","options":["بیاید کمکش کند","به او زنگ بزند","ماشین بیاورد","غذا درست کند"],"correct":0,"explanation_fa":"توما می‌پرسد: «Tu peux venir m'aider ?»"}
+listening B:
+{"type":"dict","sentence":6}
+{"type":"tf","prompt":"توما منتظر می‌ماند.","correct":true,"explanation_fa":"توما می‌گوید: «J'attends ici.»"}

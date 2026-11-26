@@ -1,0 +1,23 @@
+code: de-a1-t024
+title: Persisch lernen
+kind: ad
+sentences:
+- Möchten Sie Persisch lernen? | می‌خواهید فارسی یاد بگیرید؟
+- Ich heiße Leila und komme aus Isfahan. | اسمم لیلاست و اهل اصفهانم.
+- Ich wohne in Köln und spreche Persisch, Deutsch und Englisch. | در کلن زندگی می‌کنم و فارسی، آلمانی و انگلیسی حرف می‌زنم.
+- Wir lernen zusammen, immer zwei Stunden. | با هم یاد می‌گیریم، هر بار دو ساعت.
+- Sie lesen, schreiben und sprechen viel. | زیاد می‌خوانید، می‌نویسید و حرف می‌زنید.
+- Auch Kinder können mit mir lernen. | بچه‌ها هم می‌توانند با من یاد بگیرند.
+- Meine Telefonnummer ist 0157 83 22 41. | شماره تلفن من ۰۱۵۷ ۸۳ ۲۲ ۴۱ است. | tts: Meine Telefonnummer ist null eins fünf sieben, dreiundachtzig, zweiundzwanzig, einundvierzig.
+reading A:
+{"type":"mcq","prompt":"لیلا اهل کجاست؟","options":["تهران","اصفهان","شیراز","کلن"],"correct":1,"explanation_fa":"در آگهی آمده: «Ich heiße Leila und komme aus Isfahan.»"}
+{"type":"tf","prompt":"لیلا فقط فارسی حرف می‌زند.","correct":false,"explanation_fa":"در آگهی آمده: «spreche Persisch, Deutsch und Englisch»."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید بچه‌ها هم می‌توانند یاد بگیرند؟","correct_sentence":5,"explanation_fa":"در آگهی آمده: «Auch Kinder können mit mir lernen.»"}
+{"type":"match","prompt":"هر چیز را به جوابش وصل کن.","left":["شهر لیلا الان","طول هر کلاس"],"right":["کلن","دو ساعت","اصفهان"],"pairs":[[0,0],[1,1]],"explanation_fa":"لیلا در کلن زندگی می‌کند و هر کلاس دو ساعت است."}
+listening A:
+{"type":"mcq","prompt":"این آگهی برای چیست؟","options":["یاد گرفتن فارسی","یاد گرفتن انگلیسی","فروش کتاب","کار در کلن"],"correct":0,"explanation_fa":"در آگهی آمده: «Möchten Sie Persisch lernen?»"}
+{"type":"num","prompt":"هر کلاس چند ساعت است؟","answer":"2","accepted":["2","zwei"],"explanation_fa":"در آگهی آمده: «immer zwei Stunden»."}
+listening B:
+{"type":"dict","sentence":4}
+{"type":"tf","prompt":"لیلا در کلن زندگی می‌کند.","correct":true,"explanation_fa":"در آگهی آمده: «Ich wohne in Köln.»"}

@@ -1,0 +1,23 @@
+code: de-a1-t014
+title: Eine Nachricht von Mama
+kind: voice_message
+sentences:
+- Hallo Tom, hier ist Mama. | سلام تام، مامان هستم.
+- Ich bin jetzt bei der Arbeit. | الان سر کارم.
+- Papa ist heute in Hamburg. | بابا امروز هامبورگ است.
+- Zu Hause gibt es Brot und Tee. | خانه نان و چای هست.
+- Du musst heute auch für die Schule lernen. | امروز باید برای مدرسه هم درس بخوانی.
+- Ich komme um 6 nach Hause. | ساعت ۶ می‌آیم خانه. | tts: Ich komme um sechs nach Hause.
+- Tschüss, Tom! | خداحافظ تام!
+reading A:
+{"type":"mcq","prompt":"مامان الان کجاست؟","options":["خانه","سر کار","هامبورگ","مدرسه"],"correct":1,"explanation_fa":"مامان می‌گوید: «Ich bin jetzt bei der Arbeit.»"}
+{"type":"tf","prompt":"بابا امروز خانه است.","correct":false,"explanation_fa":"مامان می‌گوید: «Papa ist heute in Hamburg.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید خانه چه خوراکی هست؟","correct_sentence":3,"explanation_fa":"مامان می‌گوید: «Zu Hause gibt es Brot und Tee.»"}
+{"type":"match","prompt":"هر آدم را به جایش وصل کن.","left":["مامان","بابا"],"right":["سر کار است","در هامبورگ است","در مدرسه است"],"pairs":[[0,0],[1,1]],"explanation_fa":"مامان سر کار است و بابا در هامبورگ."}
+listening A:
+{"type":"num","prompt":"مامان ساعت چند به خانه می‌آید؟","answer":"6","accepted":["6","sechs"],"explanation_fa":"مامان می‌گوید: «Ich komme um 6 nach Hause.»"}
+{"type":"tf","prompt":"تام باید امروز درس بخواند.","correct":true,"explanation_fa":"مامان می‌گوید: «Du musst heute auch für die Schule lernen.»"}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"mcq","prompt":"خانه چه نوشیدنی‌ای هست؟","options":["قهوه","چای","آب","شیر"],"correct":1,"explanation_fa":"مامان می‌گوید: «Brot und Tee»."}
