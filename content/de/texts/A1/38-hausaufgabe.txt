@@ -1,0 +1,23 @@
+code: de-a1-t038
+title: Die Hausaufgabe
+kind: dialogue
+sentences:
+A: Ben, machst du die Hausaufgaben? | بن، داری تکلیف‌هایت را انجام می‌دهی؟
+B: Ja, aber ich verstehe den Text nicht. | آره، ولی متن را نمی‌فهمم.
+A: Lies den Text noch einmal, langsam. | متن را یک بار دیگر بخوان، آهسته.
+B: Ach, jetzt verstehe ich! Die Antwort ist Hamburg. | آهان، حالا می‌فهمم! جواب هامبورگ است.
+A: Richtig! Sehr gut! | درست است! خیلی خوب!
+B: Und Frage zwei? Hier mache ich immer Fehler. | سؤال دو چی؟ اینجا همیشه اشتباه می‌کنم.
+A: Das ist nicht schwer. Wir machen das zusammen. | سخت نیست. با هم انجامش می‌دهیم.
+reading A:
+{"type":"mcq","prompt":"بن چه مشکلی دارد؟","options":["متن را نمی‌فهمد","کتاب ندارد","خسته است","وقت ندارد"],"correct":0,"explanation_fa":"بن می‌گوید: «ich verstehe den Text nicht»."}
+{"type":"tf","prompt":"جواب سؤال اول برلین است.","correct":false,"explanation_fa":"بن می‌گوید: «Die Antwort ist Hamburg.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید بن همیشه اشتباه می‌کند؟","correct_sentence":5,"explanation_fa":"بن می‌گوید: «Hier mache ich immer Fehler.»"}
+{"type":"tf","prompt":"سؤال دو سخت است.","correct":false,"explanation_fa":"گفته می‌شود: «Das ist nicht schwer.»"}
+listening A:
+{"type":"mcq","prompt":"به بن چه پیشنهادی می‌دهند؟","options":["متن را دوباره آهسته بخواند","به معلم زنگ بزند","فردا بخواند","کتاب را ببندد"],"correct":0,"explanation_fa":"گفته می‌شود: «Lies den Text noch einmal, langsam.»"}
+{"type":"tf","prompt":"آن‌ها سؤال دو را با هم انجام می‌دهند.","correct":true,"explanation_fa":"گفته می‌شود: «Wir machen das zusammen.»"}
+listening B:
+{"type":"dict","sentence":1}
+{"type":"mcq","prompt":"جواب سؤال اول چیست؟","options":["هامبورگ","برلین","مونیخ","وین"],"correct":0,"explanation_fa":"بن می‌گوید: «Die Antwort ist Hamburg.»"}

@@ -1,0 +1,24 @@
+code: de-a1-t036
+title: Die neue Kollegin
+kind: dialogue
+sentences:
+A: Hallo! Sind Sie die neue Kollegin? | سلام! شما همکار جدید هستید؟
+B: Ja, ich heiße Sara Ahmadi. Heute ist mein erster Tag. | بله، اسمم سارا احمدی است. امروز روز اولم است.
+A: Freut mich! Ich bin Peter Wagner. | خوشوقتم! من پیتر واگنر هستم.
+B: Was machen Sie hier in der Firma? | شما اینجا در شرکت چه کار می‌کنید؟
+A: Ich bin Ingenieur. Und Sie? | مهندسم. شما چطور؟
+B: Ich arbeite im Büro, mit dem Chef. | در دفتر کار می‌کنم، با رئیس.
+A: Der Chef ist sehr nett. Sie haben Glück! | رئیس خیلی مهربان است. خوش‌شانسید!
+B: Das ist gut! Danke, Herr Wagner. | چه خوب! ممنون آقای واگنر.
+reading A:
+{"type":"mcq","prompt":"امروز برای سارا چه روزی است؟","options":["روز اول کار","روز آخر کار","روز تولدش","روز تعطیل"],"correct":0,"explanation_fa":"سارا می‌گوید: «Heute ist mein erster Tag.»"}
+{"type":"tf","prompt":"پیتر در دفتر با رئیس کار می‌کند.","correct":false,"explanation_fa":"پیتر می‌گوید: «Ich bin Ingenieur.» سارا در دفتر کار می‌کند."}
+reading B:
+{"type":"match","prompt":"هر آدم را به کارش وصل کن.","left":["سارا","پیتر"],"right":["در دفتر کار می‌کند","مهندس است","رئیس است"],"pairs":[[0,0],[1,1]],"explanation_fa":"سارا در دفتر کار می‌کند و پیتر مهندس است."}
+{"type":"find","prompt":"کدام جمله می‌گوید رئیس مهربان است؟","correct_sentence":6,"explanation_fa":"پیتر می‌گوید: «Der Chef ist sehr nett.»"}
+listening A:
+{"type":"mcq","prompt":"شغل پیتر چیست؟","options":["مهندس","معلم","پزشک","فروشنده"],"correct":0,"explanation_fa":"پیتر می‌گوید: «Ich bin Ingenieur.»"}
+{"type":"tf","prompt":"سارا با رئیس کار می‌کند.","correct":true,"explanation_fa":"سارا می‌گوید: «Ich arbeite im Büro, mit dem Chef.»"}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"mcq","prompt":"نام خانوادگی سارا چیست؟","options":["احمدی","کریمی","واگنر","وبر"],"correct":0,"explanation_fa":"سارا می‌گوید: «ich heiße Sara Ahmadi»."}

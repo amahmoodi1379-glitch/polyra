@@ -1,0 +1,31 @@
+code: de-a1-t040
+title: Ein Geschenk für Mama
+kind: dialogue
+placement: yes
+key_words: Geschenk
+sentences:
+A: Mama hat am Sonntag Geburtstag. Was kaufen wir? | مامان یکشنبه تولدش است. چه بخریم؟
+B: Vielleicht Blumen? | شاید گل؟
+A: Mama hat schon viele Blumen im Garten. | مامان کلی گل در باغچه دارد.
+B: Dann eine Tasche? Ihre Tasche ist sehr alt. | پس یک کیف؟ کیفش خیلی قدیمی است.
+A: Ja, gut! Eine rote Tasche? | آره، خوب است! یک کیف قرمز؟
+B: Ja, rot ist schön. Aber wie viel kostet eine Tasche? | آره، قرمز قشنگ است. ولی یک کیف چند است؟
+A: Vielleicht 40 Euro. | شاید ۴۰ یورو. | tts: Vielleicht vierzig Euro.
+B: Okay, ich gebe 20 Euro und du 20 Euro. | باشد، من ۲۰ یورو می‌دهم و تو ۲۰ یورو. | tts: Okay, ich gebe zwanzig Euro und du zwanzig Euro.
+A: Super! Das Geschenk kaufen wir am Samstag. | عالی! هدیه را شنبه می‌خریم.
+reading A:
+{"type":"mcq","prompt":"تولد مامان کی است؟","options":["شنبه","یکشنبه","جمعه","دوشنبه"],"correct":1,"explanation_fa":"گفته می‌شود: «Mama hat am Sonntag Geburtstag.»"}
+{"type":"tf","prompt":"مامان گل زیادی در باغچه دارد.","correct":true,"explanation_fa":"گفته می‌شود: «Mama hat schon viele Blumen im Garten.»"}
+{"type":"mcq","prompt":"چرا کیف می‌خرند؟","options":["چون کیف مامان خیلی قدیمی است","چون کیف ارزان است","چون مامان کیف ندارد","چون مامان گل دوست ندارد"],"correct":0,"explanation_fa":"گفته می‌شود: «Ihre Tasche ist sehr alt.»"}
+{"type":"tf","prompt":"هدیه را یکشنبه می‌خرند.","correct":false,"explanation_fa":"گفته می‌شود: «Das Geschenk kaufen wir am Samstag.»، یعنی شنبه."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید کیف مامان قدیمی است؟","correct_sentence":3,"explanation_fa":"گفته می‌شود: «Ihre Tasche ist sehr alt.»"}
+{"type":"tf","prompt":"آن‌ها یک کیف مشکی می‌خرند.","correct":false,"explanation_fa":"گفته می‌شود: «Eine rote Tasche?»، یعنی کیف قرمز."}
+listening A:
+{"type":"mcq","prompt":"چه رنگی انتخاب می‌کنند؟","options":["قرمز","مشکی","آبی","سفید"],"correct":0,"explanation_fa":"گفته می‌شود: «Eine rote Tasche?» و «rot ist schön»."}
+{"type":"num","prompt":"یک کیف شاید چند یورو است؟","answer":"40","accepted":["40","vierzig"],"explanation_fa":"گفته می‌شود: «Vielleicht 40 Euro.»"}
+{"type":"tf","prompt":"هر کدام ۲۰ یورو می‌دهند.","correct":true,"explanation_fa":"گفته می‌شود: «ich gebe 20 Euro und du 20 Euro»."}
+{"type":"mcq","prompt":"هدیه را کی می‌خرند؟","options":["شنبه","یکشنبه","امروز","فردا"],"correct":0,"explanation_fa":"گفته می‌شود: «Das Geschenk kaufen wir am Samstag.»"}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"tf","prompt":"مامان کیف نو دارد.","correct":false,"explanation_fa":"گفته می‌شود: «Ihre Tasche ist sehr alt.»"}

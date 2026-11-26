@@ -1,0 +1,22 @@
+code: de-a1-t039
+title: Der Bus kommt später
+kind: announcement
+sentences:
+- Guten Morgen! Hier eine Information. | صبح بخیر! یک خبر برای شما.
+- Der Bus 12 kommt heute 20 Minuten später. | اتوبوس ۱۲ امروز ۲۰ دقیقه دیرتر می‌آید. | tts: Der Bus zwölf kommt heute zwanzig Minuten später.
+- Die Straße im Zentrum ist geschlossen. | خیابان مرکز شهر بسته است.
+- Zum Bahnhof fahren Sie bitte mit der U-Bahn. | برای رفتن به ایستگاه قطار لطفاً با مترو بروید.
+- Die U-Bahn fährt alle 5 Minuten. | مترو هر ۵ دقیقه حرکت می‌کند. | tts: Die U-Bahn fährt alle fünf Minuten.
+- Entschuldigung und vielen Dank! | ببخشید و خیلی ممنون!
+reading A:
+{"type":"mcq","prompt":"اتوبوس ۱۲ چقدر دیر می‌آید؟","options":["۵ دقیقه","۱۰ دقیقه","۲۰ دقیقه","یک ساعت"],"correct":2,"explanation_fa":"گفته می‌شود: «Der Bus 12 kommt heute 20 Minuten später.»"}
+{"type":"tf","prompt":"خیابان مرکز شهر باز است.","correct":false,"explanation_fa":"گفته می‌شود: «Die Straße im Zentrum ist geschlossen.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید برای رفتن به ایستگاه قطار چه کنیم؟","correct_sentence":3,"explanation_fa":"گفته می‌شود: «Zum Bahnhof fahren Sie bitte mit der U-Bahn.»"}
+{"type":"tf","prompt":"مترو هر ۵ دقیقه حرکت می‌کند.","correct":true,"explanation_fa":"گفته می‌شود: «Die U-Bahn fährt alle 5 Minuten.»"}
+listening A:
+{"type":"num","prompt":"کدام اتوبوس دیر می‌آید؟","answer":"12","accepted":["12","zwölf"],"explanation_fa":"گفته می‌شود: «Der Bus 12 kommt heute 20 Minuten später.»"}
+{"type":"mcq","prompt":"برای رفتن به ایستگاه قطار با چه بروید؟","options":["مترو","تاکسی","اتوبوس ۱۲","پیاده"],"correct":0,"explanation_fa":"گفته می‌شود: «mit der U-Bahn»."}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"tf","prompt":"مترو هر ۲۰ دقیقه حرکت می‌کند.","correct":false,"explanation_fa":"گفته می‌شود: «alle 5 Minuten»، یعنی هر ۵ دقیقه."}

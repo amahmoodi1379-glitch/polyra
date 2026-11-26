@@ -1,0 +1,24 @@
+code: de-a1-t032
+title: Das Wetter in Hamburg
+kind: voice_message
+sentences:
+- Hallo Lisa, hier ist Ben aus Hamburg. | سلام لیزا، بن هستم از هامبورگ.
+- Das Wetter hier ist schlecht. | هوا اینجا بد است.
+- Es regnet, und es ist kalt: nur 8 Grad. | باران می‌بارد و سرد است: فقط ۸ درجه. | tts: Es regnet, und es ist kalt: nur acht Grad.
+- Ich brauche eine warme Jacke. | یک ژاکت گرم لازم دارم.
+- Ist das Wetter in München gut? | هوا در مونیخ خوب است؟
+- Hier sagen alle: Morgen scheint die Sonne. | اینجا همه می‌گویند: فردا آفتاب می‌شود.
+- Dann gehe ich in den Park. | آن‌وقت به پارک می‌روم.
+- Tschüss! | خداحافظ!
+reading A:
+{"type":"mcq","prompt":"هوا در هامبورگ چطور است؟","options":["بارانی و سرد","آفتابی و گرم","برفی","بادی و گرم"],"correct":0,"explanation_fa":"بن می‌گوید: «Es regnet, und es ist kalt.»"}
+{"type":"tf","prompt":"در هامبورگ ۸ درجه است.","correct":true,"explanation_fa":"بن می‌گوید: «nur 8 Grad»."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید بن چه لازم دارد؟","correct_sentence":3,"explanation_fa":"بن می‌گوید: «Ich brauche eine warme Jacke.»"}
+{"type":"tf","prompt":"بن می‌خواهد امروز به پارک برود.","correct":false,"explanation_fa":"بن فردا، وقتی آفتاب شد، به پارک می‌رود: «Morgen scheint die Sonne. Dann gehe ich in den Park.»"}
+listening A:
+{"type":"num","prompt":"در هامبورگ چند درجه است؟","answer":"8","accepted":["8","acht"],"explanation_fa":"بن می‌گوید: «nur 8 Grad»."}
+{"type":"mcq","prompt":"بن از لیزا چه می‌پرسد؟","options":["هوا در مونیخ خوب است؟","کی می‌آیی؟","ژاکت داری؟","کجایی؟"],"correct":0,"explanation_fa":"بن می‌پرسد: «Ist das Wetter in München gut?»"}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"tf","prompt":"همه می‌گویند فردا باران می‌آید.","correct":false,"explanation_fa":"بن می‌گوید: «Morgen scheint die Sonne.»"}

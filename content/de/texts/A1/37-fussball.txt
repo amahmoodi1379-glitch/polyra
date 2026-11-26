@@ -1,0 +1,23 @@
+code: de-a1-t037
+title: Fußball am Samstag
+kind: voice_message
+sentences:
+- Hallo Leon, hier ist Felix. | سلام لئون، فلیکس هستم.
+- Spielst du am Samstag mit uns Fußball? | شنبه با ما فوتبال بازی می‌کنی؟
+- Wir spielen im Park, von 10 bis 12 Uhr. | در پارک بازی می‌کنیم، از ساعت ۱۰ تا ۱۲. | tts: Wir spielen im Park, von zehn bis zwölf Uhr.
+- Wir sind schon acht Leute. | الان هشت نفریم.
+- Kannst du Wasser bringen? | می‌توانی آب بیاوری؟
+- Nach dem Spiel gehen wir zusammen Pizza essen. | بعد از بازی با هم می‌رویم پیتزا بخوریم.
+- Kannst du mich heute anrufen? | می‌توانی امروز به من زنگ بزنی؟
+reading A:
+{"type":"mcq","prompt":"بازی کجاست؟","options":["در پارک","در مدرسه","در ورزشگاه","خانه فلیکس"],"correct":0,"explanation_fa":"فلیکس می‌گوید: «Wir spielen im Park.»"}
+{"type":"tf","prompt":"بازی یکشنبه است.","correct":false,"explanation_fa":"فلیکس می‌گوید: «am Samstag»، یعنی شنبه."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید بعد از بازی چه کار می‌کنند؟","correct_sentence":5,"explanation_fa":"فلیکس می‌گوید: «Nach dem Spiel gehen wir zusammen Pizza essen.»"}
+{"type":"tf","prompt":"فلیکس از لئون می‌خواهد آب بیاورد.","correct":true,"explanation_fa":"فلیکس می‌پرسد: «Kannst du Wasser bringen?»"}
+listening A:
+{"type":"num","prompt":"بازی ساعت چند شروع می‌شود؟","answer":"10","accepted":["10","zehn"],"explanation_fa":"فلیکس می‌گوید: «von 10 bis 12 Uhr»."}
+{"type":"mcq","prompt":"الان چند نفرند؟","options":["شش","هشت","ده","دوازده"],"correct":1,"explanation_fa":"فلیکس می‌گوید: «Wir sind schon acht Leute.»"}
+listening B:
+{"type":"dict","sentence":4}
+{"type":"tf","prompt":"بعد از بازی پیتزا می‌خورند.","correct":true,"explanation_fa":"فلیکس می‌گوید: «Pizza essen»."}
