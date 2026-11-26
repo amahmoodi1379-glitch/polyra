@@ -1,0 +1,29 @@
+code: fr-a1-t040
+title: Le nouveau professeur
+kind: dialogue
+placement: yes
+sentences:
+A: Tu as un nouveau professeur de français ? | معلم فرانسوی جدید داری؟
+B: Oui, il s'appelle monsieur Dubois. Il est très sympa. | آره، اسمش آقای دوبواست. خیلی خوش‌برخورد است.
+A: Il est comment ? | چه شکلی است؟
+B: Il est jeune et grand, avec des lunettes. | جوان و قدبلند است، با عینک.
+A: Et ses cours sont difficiles ? | کلاس‌هایش سخت است؟
+B: Non. Hier, nous avons appris vingt mots. | نه. دیروز بیست کلمه یاد گرفتیم.
+A: Vingt mots ! C'est beaucoup ! | بیست کلمه! زیاد است!
+B: Oui, mais il répète tout et il répond à toutes les questions. | آره، ولی همه چیز را تکرار می‌کند و به همه سؤال‌ها جواب می‌دهد.
+reading A:
+{"type":"mcq","prompt":"اسم معلم جدید چیست؟","options":["آقای دوبوا","آقای مارتن","پل","هوگو"],"correct":0,"explanation_fa":"گفته می‌شود: «il s'appelle monsieur Dubois»."}
+{"type":"tf","prompt":"معلم پیر است.","correct":false,"explanation_fa":"گفته می‌شود: «Il est jeune et grand.»"}
+{"type":"tf","prompt":"معلم عینک دارد.","correct":true,"explanation_fa":"گفته می‌شود: «avec des lunettes»."}
+{"type":"mcq","prompt":"دیروز چند کلمه یاد گرفتند؟","options":["ده","بیست","سی","پنج"],"correct":1,"explanation_fa":"گفته می‌شود: «nous avons appris vingt mots»."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید معلم به سؤال‌ها جواب می‌دهد؟","correct_sentence":7,"explanation_fa":"گفته می‌شود: «il répond à toutes les questions»."}
+{"type":"match","prompt":"هر سؤال را به جوابش وصل کن.","left":["معلم چه شکلی است؟","دیروز چه کردند؟"],"right":["جوان و قدبلند با عینک","بیست کلمه یاد گرفتند","به سینما رفتند"],"pairs":[[0,0],[1,1]],"explanation_fa":"معلم جوان و قدبلند و عینکی است و دیروز بیست کلمه یاد گرفتند."}
+listening A:
+{"type":"num","prompt":"دیروز چند کلمه یاد گرفتند؟","answer":"20","accepted":["20","vingt"],"explanation_fa":"گفته می‌شود: «vingt mots»."}
+{"type":"mcq","prompt":"معلم چه درسی می‌دهد؟","options":["فرانسوی","موسیقی","ریاضی","انگلیسی"],"correct":0,"explanation_fa":"گفته می‌شود: «un nouveau professeur de français»."}
+{"type":"tf","prompt":"معلم همه چیز را تکرار می‌کند.","correct":true,"explanation_fa":"گفته می‌شود: «il répète tout»."}
+{"type":"tf","prompt":"به نظر شاگرد، معلم بداخلاق است.","correct":false,"explanation_fa":"گفته می‌شود: «Il est très sympa.»"}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"mcq","prompt":"نفر اول درباره بیست کلمه چه می‌گوید؟","options":["زیاد است","کم است","آسان است","سخت است"],"correct":0,"explanation_fa":"می‌گوید: «C'est beaucoup !»"}

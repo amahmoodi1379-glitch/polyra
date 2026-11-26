@@ -1,0 +1,31 @@
+code: fr-a1-t034
+title: Chez le médecin
+kind: dialogue
+placement: yes
+key_words: médicament
+sentences:
+A: Bonjour, madame. Qu'est-ce que vous avez ? | سلام خانم. چه مشکلی دارید؟
+B: J'ai mal à la tête et au ventre. | سرم و شکمم درد می‌کند.
+A: Depuis quand ? | از کی؟
+B: Depuis hier. Et je suis très fatiguée. | از دیروز. خیلی هم خسته‌ام.
+A: Vous avez froid ? | سردتان است؟
+B: Oui, un peu. | بله، کمی.
+A: Vous êtes malade. Prenez ce médicament le matin et le soir. | شما بیمارید. این دارو را صبح و شب بخورید.
+A: Et restez trois jours à la maison. | و سه روز در خانه بمانید.
+B: Merci beaucoup ! | خیلی ممنون!
+reading A:
+{"type":"mcq","prompt":"کجای زن درد می‌کند؟","options":["سر و شکم","فقط سر","دندان","پا"],"correct":0,"explanation_fa":"زن می‌گوید: «J'ai mal à la tête et au ventre.»"}
+{"type":"tf","prompt":"زن از امروز بیمار است.","correct":false,"explanation_fa":"زن می‌گوید: «Depuis hier.»، یعنی از دیروز."}
+{"type":"tf","prompt":"زن خیلی خسته است.","correct":true,"explanation_fa":"زن می‌گوید: «je suis très fatiguée»."}
+{"type":"mcq","prompt":"پزشک می‌گوید زن چند روز در خانه بماند؟","options":["یک روز","دو روز","سه روز","یک هفته"],"correct":2,"explanation_fa":"پزشک می‌گوید: «restez trois jours à la maison»."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید دارو را کی باید خورد؟","correct_sentence":6,"explanation_fa":"پزشک می‌گوید: «Prenez ce médicament le matin et le soir.»"}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["پزشک می‌گوید سه روز در خانه بماند.","زن می‌گوید سر و شکمش درد می‌کند.","زن تشکر می‌کند.","پزشک می‌پرسد از کی بیمار است."],"correct_order":[1,3,0,2],"explanation_fa":"اول درد، بعد «از کی؟»، بعد سفارش پزشک و آخر تشکر."}
+listening A:
+{"type":"mcq","prompt":"دارو را کی باید خورد؟","options":["صبح و شب","فقط صبح","فقط شب","ظهر"],"correct":0,"explanation_fa":"پزشک می‌گوید: «le matin et le soir»."}
+{"type":"tf","prompt":"زن سردش است.","correct":true,"explanation_fa":"زن می‌گوید: «Oui, un peu.»"}
+{"type":"num","prompt":"زن چند روز باید در خانه بماند؟","answer":"3","accepted":["3","trois"],"explanation_fa":"پزشک می‌گوید: «restez trois jours à la maison»."}
+{"type":"tf","prompt":"زن از دیروز بیمار است.","correct":true,"explanation_fa":"زن می‌گوید: «Depuis hier.»"}
+listening B:
+{"type":"dict","sentence":1}
+{"type":"mcq","prompt":"پزشک اول چه می‌پرسد؟","options":["چه مشکلی دارید؟","اسمتان چیست؟","کجا زندگی می‌کنید؟","چند سالتان است؟"],"correct":0,"explanation_fa":"پزشک می‌پرسد: «Qu'est-ce que vous avez ?»"}

@@ -1,0 +1,23 @@
+code: fr-a1-t037
+title: Le match de samedi
+kind: voice_message
+sentences:
+- Salut Lucas, c'est Hugo. | سلام لوکا، هوگو هستم.
+- Samedi après-midi, on joue au football au parc. | شنبه بعدازظهر در پارک فوتبال بازی می‌کنیم.
+- Le match commence à 3 heures. | بازی ساعت ۳ شروع می‌شود. | tts: Le match commence à trois heures.
+- Tu viens jouer avec nous ? | می‌آیی با ما بازی کنی؟
+- Après le match, on va manger un sandwich ensemble. | بعد از بازی با هم ساندویچ می‌خوریم.
+- Tu peux prendre de l'eau ? | می‌توانی آب بیاوری؟
+- Tu me réponds vite ? | زود جوابم را می‌دهی؟
+reading A:
+{"type":"mcq","prompt":"بازی کجاست؟","options":["در پارک","در مدرسه","در ورزشگاه","خانه هوگو"],"correct":0,"explanation_fa":"هوگو می‌گوید: «on joue au football au parc»."}
+{"type":"tf","prompt":"بازی یکشنبه است.","correct":false,"explanation_fa":"هوگو می‌گوید: «Samedi après-midi»، یعنی شنبه بعدازظهر."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید بعد از بازی چه کار می‌کنند؟","correct_sentence":4,"explanation_fa":"هوگو می‌گوید: «Après le match, on va manger un sandwich ensemble.»"}
+{"type":"tf","prompt":"هوگو از لوکا می‌خواهد آب بیاورد.","correct":true,"explanation_fa":"هوگو می‌پرسد: «Tu peux prendre de l'eau ?»"}
+listening A:
+{"type":"num","prompt":"بازی ساعت چند شروع می‌شود؟","answer":"3","accepted":["3","trois","15"],"explanation_fa":"هوگو می‌گوید: «Le match commence à 3 heures.»"}
+{"type":"mcq","prompt":"بعد از بازی چه می‌خورند؟","options":["ساندویچ","کیک","سالاد","هیچ"],"correct":0,"explanation_fa":"هوگو می‌گوید: «on va manger un sandwich»."}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"tf","prompt":"هوگو می‌خواهد لوکا زود جواب بدهد.","correct":true,"explanation_fa":"هوگو می‌پرسد: «Tu me réponds vite ?»"}

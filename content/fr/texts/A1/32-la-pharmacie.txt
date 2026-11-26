@@ -1,0 +1,24 @@
+code: fr-a1-t032
+title: Où est la pharmacie ?
+kind: dialogue
+sentences:
+A: Pardon, monsieur. Il y a une pharmacie près d'ici ? | ببخشید آقا. این نزدیکی داروخانه هست؟
+B: Oui, ce n'est pas loin. | بله، دور نیست.
+B: Allez tout droit, puis tournez à gauche. | مستقیم بروید، بعد به چپ بپیچید.
+B: La pharmacie est à côté de la banque, en face de la poste. | داروخانه کنار بانک است، روبه‌روی اداره پست.
+A: C'est loin à pied ? | پیاده دور است؟
+B: Non, cinq minutes. | نه، پنج دقیقه.
+A: Merci beaucoup ! | خیلی ممنون!
+B: De rien. Bonne journée ! | خواهش می‌کنم. روز خوبی داشته باشید!
+reading A:
+{"type":"mcq","prompt":"زن دنبال چه جایی است؟","options":["داروخانه","بانک","اداره پست","ایستگاه قطار"],"correct":0,"explanation_fa":"زن می‌پرسد: «Il y a une pharmacie près d'ici ?»"}
+{"type":"tf","prompt":"داروخانه خیلی دور است.","correct":false,"explanation_fa":"مرد می‌گوید: «ce n'est pas loin»."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید داروخانه دقیقاً کجاست؟","correct_sentence":3,"explanation_fa":"مرد می‌گوید: «La pharmacie est à côté de la banque, en face de la poste.»"}
+{"type":"match","prompt":"هر جا را به جمله‌اش وصل کن.","left":["بانک","اداره پست"],"right":["کنار داروخانه است","روبه‌روی داروخانه است","پشت داروخانه است"],"pairs":[[0,0],[1,1]],"explanation_fa":"داروخانه کنار بانک و روبه‌روی اداره پست است."}
+listening A:
+{"type":"mcq","prompt":"بعد از مستقیم رفتن، به کدام طرف باید پیچید؟","options":["چپ","راست","عقب","هیچ طرف"],"correct":0,"explanation_fa":"مرد می‌گوید: «puis tournez à gauche»."}
+{"type":"num","prompt":"پیاده چند دقیقه راه است؟","answer":"5","accepted":["5","cinq"],"explanation_fa":"مرد می‌گوید: «Non, cinq minutes.»"}
+listening B:
+{"type":"dict","sentence":4}
+{"type":"tf","prompt":"مرد آخر می‌گوید «خواهش می‌کنم».","correct":true,"explanation_fa":"مرد می‌گوید: «De rien.»"}

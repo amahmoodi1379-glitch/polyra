@@ -1,0 +1,24 @@
+code: fr-a1-t039
+title: Ce week-end
+kind: dialogue
+sentences:
+A: Tu fais quoi ce week-end, Marie ? | ماری، این آخر هفته چه کار می‌کنی؟
+B: Samedi, je vais au cinéma avec Julie. | شنبه با ژولی به سینما می‌روم.
+A: Quel film ? | چه فیلمی؟
+B: Un film français{français}, une histoire de famille. | یک فیلم فرانسوی، یک داستان خانوادگی.
+A: Et dimanche ? | یکشنبه چه؟
+B: Dimanche, on va au musée, puis on se promène au parc. | یکشنبه به موزه می‌رویم، بعد در پارک قدم می‌زنیم.
+A: Je peux venir dimanche ? | می‌توانم یکشنبه بیایم؟
+B: Bien sûr ! On part à 10 heures. | البته! ساعت ۱۰ راه می‌افتیم. | tts: Bien sûr ! On part à dix heures.
+reading A:
+{"type":"mcq","prompt":"ماری شنبه کجا می‌رود؟","options":["سینما","موزه","پارک","ساحل"],"correct":0,"explanation_fa":"ماری می‌گوید: «Samedi, je vais au cinéma.»"}
+{"type":"tf","prompt":"فیلم آمریکایی است.","correct":false,"explanation_fa":"ماری می‌گوید: «Un film français»."}
+reading B:
+{"type":"match","prompt":"هر روز را به برنامه‌اش وصل کن.","left":["شنبه","یکشنبه"],"right":["سینما","موزه و پارک","خرید"],"pairs":[[0,0],[1,1]],"explanation_fa":"شنبه سینما، یکشنبه موزه و پارک."}
+{"type":"find","prompt":"کدام جمله می‌گوید یکشنبه ساعت چند راه می‌افتند؟","correct_sentence":7,"explanation_fa":"ماری می‌گوید: «On part à 10 heures.»"}
+listening A:
+{"type":"mcq","prompt":"ماری با چه کسی به سینما می‌رود؟","options":["ژولی","سوفی","لئا","کامی"],"correct":0,"explanation_fa":"ماری می‌گوید: «avec Julie»."}
+{"type":"num","prompt":"یکشنبه ساعت چند راه می‌افتند؟","answer":"10","accepted":["10","dix"],"explanation_fa":"ماری می‌گوید: «On part à 10 heures.»"}
+listening B:
+{"type":"dict","sentence":6}
+{"type":"tf","prompt":"دوستِ ماری یکشنبه با آن‌ها می‌رود.","correct":true,"explanation_fa":"دوستش می‌پرسد «Je peux venir dimanche ?» و ماری می‌گوید: «Bien sûr !»"}
