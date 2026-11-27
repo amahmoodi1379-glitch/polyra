@@ -182,7 +182,9 @@ export class Analyzer {
 
   /** Is this surface in names.txt (an apostrophe may be left out)? */
   private listedName(surface: string): boolean {
-    return this.names.has(surface) || this.names.has(surface.replace(APOSTROPHE, ""));
+    if (this.names.has(surface) || this.names.has(surface.replace(APOSTROPHE, ""))) return true;
+    // A German name in the genitive: Annas Auto, Peters Bruder (Max' has the apostrophe above).
+    return this.language === "de" && surface.length > 2 && surface.endsWith("s") && this.names.has(surface.slice(0, -1));
   }
 
   /**

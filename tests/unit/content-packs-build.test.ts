@@ -145,6 +145,14 @@ describe("verb phrases of a pack", () => {
     expect(read("Wein")).toEqual(["Wein=Wein"]);
   });
 
+  it("reads a German name with the genitive s as the name (Annas Auto)", () => {
+    const list = words("de", ["Auto\tnoun\tdas\tAutos\tماشین\tماشین\ttransport", "sein\tverb\t\t\tبودن\tبودن\tactions", "das\tdet\t\t\tحرف تعریف\tحرف تعریف\tfunction", "neu\tadj\t\t\tنو\tنو\tqualities"]);
+    const analyzer = new Analyzer("de", list, new Morph("de", list), new Set(["Anna"]));
+    const analysis = analyzer.analyze("Annas Auto ist neu.", { level: "A1" });
+    expect(analysis.errors).toEqual([]);
+    expect(analysis.tokens[0]).toMatchObject({ surface: "Annas", kind: "name" });
+  });
+
   it("reads «euch» as the pronoun «ihr», never as the possessive", () => {
     const list = words("de", ["ihr\tpron\t\t\tشما\tihr: شما\tfunction\tno_card:1", "ihr\tdet\t\t\tمالِ او\tihr: مال او\tfunction\tno_card:1\tcode:ihr-det"]);
     expect(new Morph("de", list).candidates("euch").map((candidate) => candidate.word.word.code)).toEqual(["ihr"]);
