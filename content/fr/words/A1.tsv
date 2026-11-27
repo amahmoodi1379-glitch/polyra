@@ -80,28 +80,28 @@ salut	interj			سلام	سلام	people	register:familier
 merci	interj			ممنون، مرسی، متشکرم	ممنون	people	coll:merci beaucoup → خیلی ممنون
 oui	adv			بله، آره	بله	function
 non	adv			نه، خیر	نه	function	homophones:nom
-être	verb			بودن	بودن	function
+être	verb			بودن	بودن	function	note:هم‌ریشه با «است» در فارسی (il est یعنی او است).
 c'est ça	phrase			همین است، درست است	درست است	abstract	parts:être
 avoir	verb			داشتن	داشتن	function
 homme	noun	m		مرد	مرد	people
 femme	noun	f		زن	زن	people
 enfant	noun	mf		بچه، کودک	بچه	people
-garçon	noun	m		پسر، پسربچه	پسر	people
+garçon	noun	m		پسر، پسربچه	پسر	people	note:«گارسون» در فارسی یعنی پیشخدمت، ولی garçon یعنی «پسر».
 fille	noun	f		دختر	دختر	people
 ami	noun	m		دوست	دوست	people
-nom	noun	m		اسم، نام	اسم	people	homophones:non
+nom	noun	m		اسم، نام	اسم	people	homophones:non	note:هم‌ریشه با «نام» در فارسی.
 s'appeler	verb			اسم داشتن، نامیده شدن	اسم داشتن	people
 aller	verb			رفتن	رفتن	actions
 bien	adv			خوب (قید)، به‌خوبی	bien: خوب	qualities	note:قید است و با فعل می‌آید: Je vais bien. «خوب» با اسم bon است: un bon livre.	coll:très bien → خیلی خوب
 très	adv			خیلی	خیلی	qualities
-bon	adj			خوب	bon: خوب	qualities	note:صفت است و با اسم می‌آید: un bon livre. «خوب» با فعل bien است: Il parle bien.
+bon	adj			خوب	bon: خوب	qualities	note:صفت است و با اسم می‌آید: un bon livre. «خوب» با فعل bien است: Il parle bien. «بُن» در فارسی یعنی کوپن خرید، ولی bon یعنی «خوب».
 grand	adj			بزرگ، قدبلند	بزرگ	qualities
 petit	adj			کوچک، قدکوتاه	کوچک	qualities
 maison	noun	f		خانه	خانه	home	coll:à la maison → در خانه
 ici	adv			اینجا	اینجا	space
 là	adv			آنجا، همین‌جا	آنجا	space	homophones:la
 où	adv			کجا	کجا	function	homophones:ou,août
-qui	pron			چه کسی، کی	چه کسی	function
+qui	pron			چه کسی، کی	چه کسی	function	note:هم‌ریشه با «کی» (چه کسی) در فارسی.
 quoi	pron			چه، چی	quoi: چه	function
 comment	adv			چطور، چگونه	چطور	function
 au revoir	interj			خداحافظ	خداحافظ	people
@@ -131,12 +131,12 @@ livre	noun	m		کتاب	کتاب	education
 voiture	noun	f		ماشین، خودرو	ماشین	transport	coll:en voiture → با ماشین
 eau	noun	f	eaux	آب	آب	drink	homophones:au,oh	note:با اینکه به eau ختم می‌شود مؤنث است: l'eau، de l'eau.
 pain	noun	m		نان	نان	food
-café	noun	m		قهوه	قهوه	drink	coll:un café au lait → یک شیرقهوه
+café	noun	m		قهوه	قهوه	drink	coll:un café au lait → یک شیرقهوه	note:«کافه» در فارسی فقط مکان است، ولی café اینجا یعنی خودِ «قهوه».
 ville	noun	f		شهر	شهر	city
 rue	noun	f		خیابان، کوچه	خیابان	city
 école	noun	f		مدرسه	مدرسه	education
 travail	noun	m	travaux	کار	کار	work
-famille	noun	f		خانواده	خانواده	family
+famille	noun	f		خانواده	خانواده	family	note:«فامیل» در فارسی یعنی خویشاوندان یا نام خانوادگی، ولی famille یعنی «خانواده».
 table	noun	f		میز	میز	home
 chien	noun	m		سگ	سگ	animals
 chat	noun	m		گربه	گربه	animals
@@ -193,7 +193,7 @@ regarder	verb			نگاه کردن، تماشا کردن	نگاه کردن	action
 écouter	verb			گوش دادن	گوش دادن	actions
 lire	verb			خواندن (کتاب و متن)	خواندن متن	education
 écrire	verb			نوشتن	نوشتن	education
-donner	verb			دادن	دادن	actions
+donner	verb			دادن	دادن	actions	note:هم‌ریشه با «دادن» در فارسی.
 mettre	verb			گذاشتن	گذاشتن	actions
 chercher	verb			دنبالِ ... گشتن، جستجو کردن	جستجو کردن	actions
 trouver	verb			پیدا کردن	پیدا کردن	actions
@@ -244,9 +244,9 @@ main	noun	f		دست	دست	body
 tête	noun	f		سر	سر	body
 besoin	noun	m		نیاز، احتیاج	نیاز	abstract
 avoir besoin de	phrase			نیاز داشتن به، لازم داشتن	نیاز داشتن	abstract	parts:avoir besoin
-nouveau	adj			نو، جدید	جدید	qualities
+nouveau	adj			نو، جدید	جدید	qualities	note:هم‌ریشه با «نو» در فارسی.
 vieux	adj			پیر، کهنه، قدیمی	پیر	qualities
-jeune	adj			جوان	جوان	character
+jeune	adj			جوان	جوان	character	note:هم‌ریشه با «جوان» در فارسی.
 beau	adj			زیبا، قشنگ	زیبا	qualities
 joli	adj			قشنگ، زیبا	زیبا	qualities
 autre	adj			دیگر	دیگر	qualities
@@ -263,15 +263,15 @@ libre	adj			آزاد، بیکار (وقت آزاد)	آزاد	time
 # numbers
 zéro	num			صفر (۰)	صفر	numbers	family:nombre
 un	num			یک (۱)	یک	numbers	family:nombre	code:un-num
-deux	num			دو (۲)	دو	numbers	family:nombre
+deux	num			دو (۲)	دو	numbers	family:nombre	note:هم‌ریشه با «دو» در فارسی.
 trois	num			سه (۳)	سه	numbers	family:nombre
 quatre	num			چهار (۴)	چهار	numbers	family:nombre
 cinq	num			پنج (۵)	پنج	numbers	family:nombre
-six	num			شش (۶)	شش	numbers	family:nombre
+six	num			شش (۶)	شش	numbers	family:nombre	note:هم‌ریشه با «شش» در فارسی.
 sept	num			هفت (۷)	هفت	numbers	family:nombre	homophones:cette	note:p نوشته می‌شود ولی خوانده نمی‌شود: «سِت».
 huit	num			هشت (۸)	هشت	numbers	family:nombre
-neuf	num			نُه (۹)	نُه	numbers	family:nombre
-dix	num			دَه (۱۰)	دَه	numbers	family:nombre
+neuf	num			نُه (۹)	نُه	numbers	family:nombre	note:هم‌ریشه با «نُه» در فارسی.
+dix	num			دَه (۱۰)	دَه	numbers	family:nombre	note:هم‌ریشه با «دَه» در فارسی.
 onze	num			یازده (۱۱)	یازده	numbers	family:nombre
 douze	num			دوازده (۱۲)	دوازده	numbers	family:nombre
 treize	num			سیزده (۱۳)	سیزده	numbers	family:nombre
@@ -286,18 +286,18 @@ soixante	num			شصت (۶۰)	شصت	numbers	family:nombre
 soixante-dix	num			هفتاد (۷۰)	هفتاد	numbers	family:nombre	checked:level	note:یعنی «شصت و ده»؛ ۷۱ تا ۷۹ هم همین‌طور ساخته می‌شوند: soixante et onze.
 quatre-vingts	num			هشتاد (۸۰)	هشتاد	numbers	family:nombre	checked:level	note:یعنی «چهار بیست»؛ پیش از عدد دیگر s ندارد: quatre-vingt-deux.
 quatre-vingt-dix	num			نود (۹۰)	نود	numbers	family:nombre	checked:level
-cent	num			صد (۱۰۰)	صد	numbers	family:nombre	homophones:sans
+cent	num			صد (۱۰۰)	صد	numbers	family:nombre	homophones:sans	note:هم‌ریشه با «صد» در فارسی.
 mille	num			هزار (۱۰۰۰)	هزار	numbers	family:nombre
-numéro	noun	m		شماره	شماره	numbers
+numéro	noun	m		شماره	شماره	numbers	note:«نمره» در فارسی بیشتر نمرهٔ درسی است، ولی numéro یعنی «شماره».
 deuxième	adj			دوم	دوم	numbers
 
 # family
-père	noun	m		پدر	پدر	family	family:famille
+père	noun	m		پدر	پدر	family	family:famille	note:هم‌ریشه با «پدر» در فارسی.
 papa	noun	m		بابا	پدر	family	register:familier
-mère	noun	f		مادر	مادر	family	family:famille	homophones:mer
+mère	noun	f		مادر	مادر	family	family:famille	homophones:mer	note:هم‌ریشه با «مادر» در فارسی.
 maman	noun	f		مامان	مادر	family	register:familier
 parent	noun	m		والد، پدر یا مادر	والد	family	family:famille	coll:mes parents → پدر و مادرم
-frère	noun	m		برادر	برادر	family	family:famille
+frère	noun	m		برادر	برادر	family	family:famille	note:هم‌ریشه با «برادر» در فارسی.
 sœur	noun	f		خواهر	خواهر	family	family:famille
 fils	noun	m		پسر (فرزند)	پسر (فرزند)	family	family:famille	note:پسرِ کسی (فرزند) fils است و garçon یعنی پسربچه. s آخرش خوانده می‌شود: «فیس».
 mari	noun	m		شوهر	شوهر	family	family:famille
@@ -326,7 +326,7 @@ anglais	noun	m		زبان انگلیسی	زبان انگلیسی	education	code:a
 
 # time: parts of the day, days, months, seasons
 semaine	noun	f		هفته	هفته	time
-mois	noun	m		ماه (از سال)	ماه سال	time
+mois	noun	m		ماه (از سال)	ماه سال	time	note:هم‌ریشه با «ماه» در فارسی.
 minute	noun	f		دقیقه	دقیقه	time
 matin	noun	m		صبح	صبح	time
 midi	noun	m		ظهر	ظهر	time
@@ -449,14 +449,14 @@ pâtes	noun	f		ماکارونی، پاستا	ماکارونی	food	number:pl_onl
 légume	noun	m		سبزیجات، صیفی	سبزیجات	food	note:مذکر است: un légume.
 fruit	noun	m		میوه	میوه	food
 pomme	noun	f		سیب	سیب	food
-orange	noun	f		پرتقال	پرتقال	food
+orange	noun	f		پرتقال	پرتقال	food	note:از «نارنج» فارسی آمده، از راه عربی.
 banane	noun	f		موز	موز	food
 tomate	noun	f		گوجه‌فرنگی	گوجه‌فرنگی	food
 pomme de terre	noun	f	pommes de terre	سیب‌زمینی	سیب‌زمینی	food
 salade	noun	f		سالاد، کاهو	سالاد	food
 fromage	noun	m		پنیر	پنیر	food
 beurre	noun	m		کره (خوراکی)	کره خوراکی	food
-sucre	noun	m		شکر، قند	شکر	food
+sucre	noun	m		شکر، قند	شکر	food	note:از «شکر» فارسی آمده، از راه عربی.
 sel	noun	m		نمک	نمک	food
 soupe	noun	f		سوپ	سوپ	food
 gâteau	noun	m	gâteaux	کیک، شیرینی	کیک	food
@@ -474,7 +474,7 @@ menu	noun	m		منو، فهرست غذا	منو	food
 addition	noun	f		صورت‌حساب (رستوران)	صورت‌حساب	food	note:در رستوران یعنی «صورت‌حساب»: L'addition, s'il vous plaît.
 commander	verb			سفارش دادن	سفارش دادن	food
 réserver	verb			رزرو کردن	رزرو کردن	travel
-tasse	noun	f		فنجان	فنجان	drink
+tasse	noun	f		فنجان	فنجان	drink	note:از «تشت» فارسی آمده، از راه عربی.
 assiette	noun	f		بشقاب	بشقاب	food
 couteau	noun	m	couteaux	چاقو	چاقو	food
 fourchette	noun	f		چنگال	چنگال	food
@@ -485,7 +485,7 @@ kilo	noun	m		کیلو	کیلو	numbers	coll:un kilo de pommes → یک کیلو 
 # home
 appartement	noun	m		آپارتمان	آپارتمان	home
 chambre	noun	f		اتاق خواب، اتاق	اتاق خواب	home
-salon	noun	m		اتاق نشیمن، پذیرایی	اتاق نشیمن	home
+salon	noun	m		اتاق نشیمن، پذیرایی	اتاق نشیمن	home	note:در فارسی هم «سالن» می‌گوییم (سالن پذیرایی).
 salle de bain	noun	f	salles de bain	حمام (اتاق)	حمام	home
 douche	noun	f		دوش (حمام)	دوش	home
 prendre une douche	phrase			دوش گرفتن	دوش گرفتن	home	parts:prendre douche
@@ -530,7 +530,7 @@ vendre	verb			فروختن	فروختن	shopping
 prix	noun	m		قیمت	قیمت	shopping
 euro	noun	m		یورو	یورو	shopping	checked:level
 cher	adj			گران	گران	shopping
-sac	noun	m		کیف، کیسه	کیف	shopping
+sac	noun	m		کیف، کیسه	کیف	shopping	note:در فارسی هم «ساک» می‌گوییم.
 cadeau	noun	m	cadeaux	هدیه، کادو	هدیه	shopping
 carte	noun	f		کارت	کارت	shopping
 banque	noun	f		بانک	بانک	city
@@ -550,7 +550,7 @@ bibliothèque	noun	f		کتابخانه	کتابخانه	education
 piscine	noun	f		استخر	استخر	leisure
 hôtel	noun	m		هتل	هتل	travel
 bus	noun	m		اتوبوس	اتوبوس	transport
-train	noun	m		قطار	قطار	transport
+train	noun	m		قطار	قطار	transport	note:در فارسی قدیم «ترن» می‌گفتند (مثل ترن هوایی).
 métro	noun	m		مترو	مترو	transport
 taxi	noun	m		تاکسی	تاکسی	transport
 vélo	noun	m		دوچرخه	دوچرخه	transport
@@ -562,7 +562,7 @@ gare	noun	f		ایستگاه قطار	ایستگاه قطار	transport
 aéroport	noun	m		فرودگاه	فرودگاه	transport
 ticket	noun	m		بلیت (اتوبوس و مترو)	بلیت	transport
 billet	noun	m		بلیت (قطار و هواپیما)	بلیت	transport
-pied	noun	m		پا، کف پا	پا	body	coll:à pied → پیاده
+pied	noun	m		پا، کف پا	پا	body	coll:à pied → پیاده	note:هم‌ریشه با «پا» در فارسی.
 aller à pied	phrase			پیاده رفتن	پیاده رفتن	transport	parts:aller pied
 voyage	noun	m		سفر	سفر	travel
 bon voyage	phrase			سفر بخیر	سفر بخیر	travel	parts:bon voyage
@@ -573,26 +573,26 @@ bonnes vacances	phrase			تعطیلات خوش بگذرد	تعطیلات خوش 
 valise	noun	f		چمدان	چمدان	travel
 passeport	noun	m		گذرنامه، پاسپورت	گذرنامه	travel
 touriste	noun	mf		گردشگر، توریست	گردشگر	travel
-visiter	verb			بازدید کردن (از جایی)، دیدن (شهر یا موزه)	بازدید کردن	travel	note:فقط برای جا می‌آید: visiter Paris. دیدنِ کسی voir یا rendre visite à است.
+visiter	verb			بازدید کردن (از جایی)، دیدن (شهر یا موزه)	بازدید کردن	travel	note:فقط برای جا می‌آید: visiter Paris. دیدنِ کسی voir یا rendre visite à است. «ویزیت» در فارسی معاینهٔ پزشک است، ولی visiter یعنی دیدن جایی.
 mer	noun	f		دریا	دریا	nature	homophones:mère
-plage	noun	f		ساحل	ساحل	nature
+plage	noun	f		ساحل	ساحل	nature	note:در فارسی هم «پلاژ» می‌گوییم (پلاژ کنار دریا).
 montagne	noun	f		کوه	کوه	nature
 campagne	noun	f		بیرون شهر، حومه	بیرون شهر	nature
 
 # clothes
 vêtement	noun	m		لباس	لباس	clothes
 pantalon	noun	m		شلوار	شلوار	clothes
-chemise	noun	f		پیراهن (دکمه‌دار)	پیراهن دکمه‌دار	clothes
+chemise	noun	f		پیراهن (دکمه‌دار)	پیراهن دکمه‌دار	clothes	note:«شومیز» در فارسی بلوز زنانه است، ولی chemise یعنی «پیراهن» دکمه‌دار.
 t-shirt	noun	m		تی‌شرت	تی‌شرت	clothes	checked:level
 pull	noun	m		پلیور	پلیور	clothes
 jean	noun	m		شلوار جین، جین	شلوار جین	clothes	checked:level
 robe	noun	f		پیراهن زنانه، لباس زنانه	پیراهن زنانه	clothes
 jupe	noun	f		دامن	دامن	clothes
 veste	noun	f		کت	کت	clothes
-manteau	noun	m	manteaux	پالتو	پالتو	clothes
+manteau	noun	m	manteaux	پالتو	پالتو	clothes	note:«مانتو» در فارسی روپوش زنانه است، ولی manteau یعنی «پالتو».
 chaussure	noun	f		کفش	کفش	clothes
 chaussette	noun	f		جوراب	جوراب	clothes
-chapeau	noun	m	chapeaux	کلاه	کلاه	clothes
+chapeau	noun	m	chapeaux	کلاه	کلاه	clothes	note:در فارسی «کلاه شاپو» از همین واژه آمده.
 lunettes	noun	f		عینک	عینک	clothes	number:pl_only
 porter	verb			پوشیدن، به تن داشتن	پوشیدن	clothes
 
@@ -604,7 +604,7 @@ nez	noun	m		بینی، دماغ	بینی	body
 oreille	noun	f		گوش	گوش	body
 cheveu	noun	m	cheveux	مو، موی سر	مو	body	note:برای موی سر جمع می‌آید: J'ai les cheveux noirs (نه le cheveu).
 visage	noun	m		صورت، چهره	صورت	body
-dent	noun	f		دندان	دندان	body	homophones:dans
+dent	noun	f		دندان	دندان	body	homophones:dans	note:هم‌ریشه با «دندان» در فارسی.
 bras	noun	m		بازو	بازو	body	note:فارسی هر دو را «دست» می‌گوید؛ bras همهٔ بازوست و main از مچ به پایین.
 doigt	noun	m		انگشت	انگشت	body
 jambe	noun	f		ساق پا	ساق پا	body	note:فارسی هر دو را «پا» می‌گوید؛ jambe از ران تا مچ است و pied از مچ به پایین.
@@ -654,22 +654,22 @@ jaune	adj			زرد	زرد	colors	family:couleur
 noir	adj			سیاه، مشکی	سیاه	colors	family:couleur
 blanc	adj			سفید	سفید	colors	family:couleur
 gris	adj			خاکستری	خاکستری	colors	family:couleur
-orange	adj			نارنجی	نارنجی	colors	family:couleur	code:orange-adj
+orange	adj			نارنجی	نارنجی	colors	family:couleur	code:orange-adj	note:مثل «نارنجی»، از «نارنج» فارسی آمده.
 rose	adj			صورتی	صورتی	colors	family:couleur
 marron	adj			قهوه‌ای	قهوه‌ای	colors	family:couleur
 violet	adj			بنفش	بنفش	colors	family:couleur
-blond	adj			بور، طلایی (مو)	بور	character
+blond	adj			بور، طلایی (مو)	بور	character	note:در فارسی هم «بلوند» می‌گوییم.
 brun	adj			قهوه‌ای (مو)، سبزه	قهوه‌ای مو	character
 
 # free time and media
-sport	noun	m		ورزش	ورزش	leisure
+sport	noun	m		ورزش	ورزش	leisure	note:«اسپرت» در فارسی یعنی راحت و ورزشی (لباس اسپرت)، ولی sport یعنی «ورزش».
 faire du sport	phrase			ورزش کردن	ورزش کردن	leisure	parts:faire sport
 football	noun	m		فوتبال	فوتبال	leisure
 jouer au football	phrase			فوتبال بازی کردن	فوتبال بازی کردن	leisure	parts:jouer football
 tennis	noun	m		تنیس	تنیس	leisure
 jeu	noun	m	jeux	بازی	بازی	leisure
 match	noun	m		مسابقه	مسابقه	leisure
-musique	noun	f		موسیقی	موسیقی	leisure
+musique	noun	f		موسیقی	موسیقی	leisure	note:در فارسی هم «موزیک» می‌گوییم.
 chanson	noun	f		آهنگ، ترانه	آهنگ	leisure
 chanter	verb			آواز خواندن	آواز خواندن	leisure
 danser	verb			رقصیدن	رقصیدن	leisure
@@ -692,13 +692,13 @@ message	noun	m		پیام	پیام	media
 e-mail	noun	m		ایمیل	ایمیل	media	checked:level
 internet	noun	m		اینترنت	اینترنت	media	checked:level
 lettre	noun	f		نامه	نامه	media
-journal	noun	m	journaux	روزنامه	روزنامه	media
+journal	noun	m	journaux	روزنامه	روزنامه	media	note:«ژورنال» در فارسی مجلهٔ مد یا نشریه است، ولی journal یعنی «روزنامه».
 radio	noun	f		رادیو	رادیو	media
 
 # work and school
 métier	noun	m		شغل، حرفه	شغل	work
 bureau	noun	m	bureaux	دفتر کار، اداره	دفتر کار	work
-professeur	noun	mf		معلم، استاد	معلم	education
+professeur	noun	mf		معلم، استاد	معلم	education	note:«پروفسور» در فارسی استاد بلندپایهٔ دانشگاه است، ولی professeur هر معلمی است.
 étudiant	noun	m		دانشجو	دانشجو	education
 élève	noun	mf		دانش‌آموز، شاگرد	دانش‌آموز	education
 ingénieur	noun	m		مهندس	مهندس	work
@@ -708,7 +708,7 @@ secrétaire	noun	mf		منشی	منشی	work
 policier	noun	m		پلیس، مأمور پلیس	مأمور پلیس	work
 infirmier	noun	m		پرستار	پرستار	health
 cuisinier	noun	m		آشپز	آشپز	work
-chauffeur	noun	m		راننده	راننده	work
+chauffeur	noun	m		راننده	راننده	work	note:در فارسی قدیم «شوفر» می‌گفتند.
 acteur	noun	m		بازیگر	بازیگر	culture
 chanteur	noun	m		خواننده (آواز)	خواننده	culture
 classe	noun	f		کلاس	کلاس	education
@@ -717,7 +717,7 @@ leçon	noun	f		درس	درس	education
 cahier	noun	m		دفتر (مشق)	دفتر مشق	education
 stylo	noun	m		خودکار	خودکار	education
 crayon	noun	m		مداد	مداد	education
-tableau	noun	m	tableaux	تخته (کلاس)	تخته کلاس	education
+tableau	noun	m	tableaux	تخته (کلاس)	تخته کلاس	education	note:«تابلو» در فارسی نقاشی یا تابلوی راهنماست؛ در کلاس tableau یعنی «تخته».
 mot	noun	m		کلمه، واژه	کلمه	education
 phrase	noun	f		جمله	جمله	education	note:دوست دروغین با phrase انگلیسی؛ یعنی «جمله».
 question	noun	f		سؤال، پرسش	سؤال	education
@@ -747,7 +747,7 @@ long	adj			بلند، دراز	بلند	qualities
 court	adj			کوتاه	کوتاه	qualities	homophones:cours
 rapide	adj			سریع، تند	سریع	qualities
 vite	adv			به‌سرعت، با عجله	به‌سرعت	qualities
-super	adj			عالی، خیلی خوب	عالی	qualities
+super	adj			عالی، خیلی خوب	عالی	qualities	note:«سوپر» در فارسی یعنی بقالی، ولی super یعنی «عالی».
 ouvert	adj			باز	باز	qualities
 fermé	adj			بسته	بسته	qualities
 propre	adj			تمیز	تمیز	qualities

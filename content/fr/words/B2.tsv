@@ -531,13 +531,13 @@ colonel	noun	m		سرهنگ	سرهنگ	society	mastery:recognize
 sergent	noun	m		گروهبان	گروهبان	society	mastery:recognize
 sein	noun	m		سینه (زن)، آغوش	سینه (زن)	body
 toile	noun	f		پارچهٔ کتان، بوم (نقاشی)	پارچهٔ کتان	culture
-figure	noun	f		چهره (شخصیت)، شکل (هندسه)	چهره (شخصیت)	abstract
+figure	noun	f		چهره (شخصیت)، شکل (هندسه)	چهره (شخصیت)	abstract	note:«فیگور» در فارسی یعنی ژست، ولی figure اینجا یعنی «چهره» یا «شکل».
 trait	noun	m		خط، ویژگی (چهره یا شخصیت)	خط	character
 poil	noun	m		مو (بدن)، کرک	مو (بدن)	body
 avoir un poil dans la main	phrase			تنبل بودن	تنبل	character	parts:avoir poil main	register:familier
 acte	noun	m		عمل (کار انجام‌شده)، پردهٔ (نمایش)	عمل (کار انجام‌شده)	abstract
 passer à l'acte	phrase			دست به کار شدن	دست به کار شدن	actions	parts:passer acte
-mine	noun	f		قیافه، معدن	قیافه	body	coll:avoir bonne mine → سرحال به نظر رسیدن
+mine	noun	f		قیافه، معدن	قیافه	body	coll:avoir bonne mine → سرحال به نظر رسیدن	note:«مین» در فارسی مین انفجاری است؛ mine اینجا یعنی «قیافه» یا «معدن».
 époux	noun	m		همسر (شوهر)	همسر (شوهر)	family	register:formal
 épouse	noun	f		همسر (زن)	همسر (زن)	family	register:formal
 amant	noun	m		معشوق، فاسق	معشوق	feelings
@@ -546,7 +546,7 @@ tirer au sort	phrase			قرعه کشیدن	قرعه کشیدن	leisure	parts:tir
 cadavre	noun	m		جسد، لاشه	جسد	society
 croix	noun	f		صلیب، علامت ضربدر	صلیب	culture
 vierge	adj			باکره، دست‌نخورده	باکره	qualities
-terme	noun	m		اصطلاح، پایان (مهلت)	اصطلاح	education
+terme	noun	m		اصطلاح، پایان (مهلت)	اصطلاح	education	note:«ترم» در فارسی نیم‌سال تحصیلی است، ولی terme یعنی «اصطلاح» یا «پایان».
 à court terme	adv			کوتاه‌مدت	کوتاه‌مدت	time	parts:court terme
 à long terme	adv			درازمدت	درازمدت	time	parts:long terme
 éclat	noun	m		درخشش، تکه (شکسته)	درخشش	qualities
@@ -555,7 +555,7 @@ masse	noun	f		توده، انبوه	توده	numbers
 vaisseau	noun	m	vaisseaux	کشتی (بزرگ)، رگ (خون)	کشتی (بزرگ)	transport	mastery:recognize
 allié	noun	m		متحد، هم‌پیمان	متحد	society
 comte	noun	m		کنت	کنت	society	mastery:recognize
-piste	noun	f		باند (فرودگاه)، سرنخ	باند (فرودگاه)	transport
+piste	noun	f		باند (فرودگاه)، سرنخ	باند (فرودگاه)	transport	note:در فارسی هم «پیست» (مثل پیست اسکی) می‌گوییم.
 boule	noun	f		گلوله (گرد)، گوی	گلوله (گرد)	space
 aise	noun	f		راحتی، آسایش	راحتی	feelings
 aube	noun	f		سپیده‌دم	سپیده‌دم	time	mastery:recognize
@@ -583,7 +583,7 @@ coupe	noun	f		جام، مدل کوتاهی (مو)	جام	leisure
 égard	noun	m		ملاحظه، توجه	ملاحظه	feelings	mastery:recognize
 sorcier	noun	m		جادوگر	جادوگر	culture
 sorcière	noun	f		جادوگر (زن)	جادوگر (زن)	culture
-charge	noun	f		بارِ سنگین، مسئولیت	بارِ سنگین	work
+charge	noun	f		بارِ سنگین، مسئولیت	بارِ سنگین	work	note:«شارژ» در فارسی بیشتر شارژ باتری است؛ charge اینجا یعنی «بار» یا «مسئولیت».
 prendre en charge	phrase			به عهده گرفتن، رسیدگی کردن به	به عهده گرفتن	work	parts:prendre charge
 revenir à la charge	phrase			دوباره اصرار کردن	دوباره اصرار کردن	actions	parts:revenir charge
 esclave	noun	mf		برده	برده	society
@@ -626,7 +626,7 @@ fonction	noun	f		کارکرد، سِمت	کارکرد	work
 en fonction de	prep			بسته به، بر حسبِ	بسته به	function	parts:fonction
 poignée	noun	f		دستگیره، مشت (پر)	دستگیره	home	coll:une poignée de main → دست دادن
 trouble	noun	m		آشفتگی، اختلال	آشفتگی	health
-cabinet	noun	m		مطب، دفتر (وکالت)	مطب	work
+cabinet	noun	m		مطب، دفتر (وکالت)	مطب	work	note:«کابینه» در فارسی هیئت دولت است، ولی cabinet اینجا یعنی «مطب» یا «دفتر».
 pompe	noun	f		تلمبه، پمپ	تلمبه	science
 épée	noun	f		شمشیر	شمشیر	society	mastery:recognize
 semblant	noun	m		ظاهر، نمود	ظاهر	abstract	mastery:recognize
@@ -636,7 +636,7 @@ désespoir	noun	m		یأس، ناامیدی مطلق	یأس	feelings
 drapeau	noun	m	drapeaux	پرچم	پرچم	society
 ruine	noun	f		ویرانه، ورشکستگی	ویرانه	society
 reflet	noun	m		بازتاب، انعکاس	بازتاب	nature
-filet	noun	m		تور	تور	leisure
+filet	noun	m		تور	تور	leisure	note:«فیله» در فارسی گوشت بی‌استخوان است، ولی filet اینجا یعنی «تور».
 division	noun	f		تقسیم، لشکر	تقسیم	numbers
 flot	noun	m		موج (جمعیت یا آب)، سیل (کلمات)	موج (جمعیت یا آب)	nature	mastery:recognize
 vertu	noun	f		فضیلت	فضیلت	character	mastery:recognize
@@ -700,7 +700,7 @@ pipe	noun	f		پیپ	پیپ	health
 star	noun	f		ستاره (مشهور)	ستاره (مشهور)	culture
 boucle	noun	f		حلقه، گوشواره (boucle d'oreille)	حلقه	clothes
 royaume	noun	m		پادشاهی، قلمرو	پادشاهی	society
-file	noun	f		ردیف، لاین (خیابان)	ردیف	transport
+file	noun	f		ردیف، لاین (خیابان)	ردیف	transport	note:«فایل» در فارسی پروندهٔ رایانه است، ولی file یعنی «صف» یا «ردیف».
 rein	noun	m		کلیه	کلیه	body
 alerte	noun	f		هشدار، آماده‌باش	هشدار	society
 motif	noun	m		انگیزه، طرح (پارچه)	انگیزه	abstract
@@ -747,7 +747,7 @@ chapelle	noun	f		نمازخانه (کلیسای کوچک)	نمازخانه (کل
 cité	noun	f		شهرک، شهر	شهرک	city
 proie	noun	f		شکار (طعمه)	شکار (طعمه)	animals
 couvent	noun	m		صومعه	صومعه	culture
-plomb	noun	m		سرب	سرب	science
+plomb	noun	m		سرب	سرب	science	note:«پلمب» در فارسی یعنی مهر و موم، ولی plomb یعنی «سرب».
 ouvrage	noun	m		اثر (کتاب)، کار (دستی)	اثر (کتاب)	culture
 baraque	noun	f		خونه، آلونک	خانه	home	register:familier	mastery:recognize
 enthousiasme	noun	m		شور و شوق	شور و شوق	feelings
@@ -759,7 +759,7 @@ tronc	noun	m		تنه (درخت)	تنه (درخت)	nature
 guerrier	noun	m		جنگجو	جنگجو	society
 puce	noun	f		کک، تراشه (الکترونیکی)	کک	science
 mettre la puce à l'oreille	phrase			کنجکاو یا مشکوک کردن	کنجکاو یا مشکوک کردن	abstract	parts:mettre puce oreille
-terreur	noun	f		وحشت، رعب	وحشت	feelings
+terreur	noun	f		وحشت، رعب	وحشت	feelings	note:«ترور» در فارسی کشتن سیاسی است، ولی terreur یعنی «وحشت».
 dalle	noun	f		سنگ‌فرش (تخته‌سنگ)	سنگ‌فرش (تخته‌سنگ)	city
 cigare	noun	m		سیگار برگ	سیگار برگ	health
 combattant	noun	m		رزمنده	رزمنده	society
@@ -778,8 +778,8 @@ pâte	noun	f		خمیر	خمیر	food
 puits	noun	m		چاه	چاه	nature
 exécution	noun	f		اجرای (حکم یا طرح)، اعدام	اجرای (حکم یا طرح)	society
 mélange	noun	m		مخلوط	مخلوط	food
-mèche	noun	f		طره (مو)، فتیله	طره (مو)	body
-magie	noun	f		جادو	جادو	culture
+mèche	noun	f		طره (مو)، فتیله	طره (مو)	body	note:در فارسی «مش» (مش کردن مو) از همین واژه است.
+magie	noun	f		جادو	جادو	culture	note:از «مُغ» (روحانی ایران باستان) آمده.
 excellence	noun	f		برتری، کمال	برتری	qualities
 apparition	noun	f		پیدا شدن، ظهور	پیدا شدن	abstract
 asile	noun	m		پناهندگی، پناهگاه	پناهندگی	society
@@ -813,7 +813,7 @@ deuil	noun	m		سوگ، عزا	سوگ	culture
 caresse	noun	f		نوازش	نوازش	feelings
 maximum	noun	m		حداکثر	حداکثر	numbers
 minimum	noun	m		حداقل	حداقل	numbers
-blouse	noun	f		روپوش	روپوش	clothes
+blouse	noun	f		روپوش	روپوش	clothes	note:«بلوز» در فارسی پیراهن یا پلیور است، ولی blouse یعنی «روپوش».
 remords	noun	m		عذاب وجدان	عذاب وجدان	feelings
 noce	noun	f		جشن عروسی	جشن عروسی	culture
 reconnaissance	noun	f		قدردانی، شناسایی	قدردانی	feelings
@@ -926,7 +926,7 @@ inattendu	adj			غیرمنتظره	غیرمنتظره	abstract
 vulgaire	adj			عامیانه، بی‌نزاکت	عامیانه	character
 intense	adj			شدید، پرشور	شدید	qualities
 humble	adj			فروتن، متواضع	فروتن	character
-interne	adj			داخلی	داخلی	space
+interne	adj			داخلی	داخلی	space	note:«انترن» در فارسی دانشجوی سال آخر پزشکی است، ولی interne (صفت) یعنی «داخلی».
 désagréable	adj			ناخوشایند	ناخوشایند	qualities
 légitime	adj			مشروع، به‌حق	مشروع	society
 mondial	adj			جهانی	جهانی	society
@@ -940,7 +940,7 @@ probable	adj			محتمل	محتمل	abstract
 imaginaire	adj			خیالی	خیالی	abstract
 clandestin	adj			مخفی، غیرقانونی (پنهانی)	مخفی	society
 atroce	adj			وحشیانه، دهشتناک	وحشیانه	qualities
-sentimental	adj			احساساتی	احساساتی	feelings
+sentimental	adj			احساساتی	احساساتی	feelings	note:در فارسی هم «سانتی‌مانتال» می‌گوییم.
 surprenant	adj			غافلگیرکننده	غافلگیرکننده	qualities
 inconscient	adj			بیهوش، ناآگاه	بیهوش	health
 inverse	adj			وارونه، معکوس	وارونه	abstract
@@ -953,13 +953,13 @@ actif	adj			فعال	فعال	character
 insensé	adj			بی‌معنی، جنون‌آمیز	بی‌معنی	abstract
 splendide	adj			باشکوه، بسیار زیبا	باشکوه	qualities
 souverain	adj			مستقل (کشور)، دارای حاکمیت	مستقل (کشور)	society
-isolé	adj			منزوی، دورافتاده	منزوی	space
+isolé	adj			منزوی، دورافتاده	منزوی	space	note:در فارسی هم «ایزوله» می‌گوییم.
 sanglant	adj			خونین	خونین	society
 étonné	adj			متعجب، شگفت‌زده	متعجب	feelings
 inquiétant	adj			نگران‌کننده	نگران‌کننده	feelings
 remarquable	adj			قابل توجه، برجسته	قابل توجه	qualities
 singulier	adj			عجیب، مفرد (دستور)	عجیب	qualities
-antique	adj			باستانی	باستانی	culture
+antique	adj			باستانی	باستانی	culture	note:در فارسی «آنتیک» (عتیقه) از همین واژه است.
 gigantesque	adj			غول‌پیکر	غول‌پیکر	qualities
 pointu	adj			نوک‌تیز	نوک‌تیز	qualities
 impérial	adj			شاهنشاهی، امپراتوری (صفت)	شاهنشاهی	society	mastery:recognize
@@ -1049,7 +1049,7 @@ assemblée nationale	noun	f		مجلس ملی (فرانسه)	مجلس ملی (ف�
 constitution	noun	f		قانون اساسی	قانون اساسی	society
 réforme	noun	f		اصلاحات	اصلاحات	society
 opposition	noun	f		مخالفت، اپوزیسیون	مخالفت	society
-partisan	noun	m		هوادار، طرفدار (یک عقیده)	هوادار	society
+partisan	noun	m		هوادار، طرفدار (یک عقیده)	هوادار	society	note:«پارتیزان» در فارسی چریک است، ولی partisan یعنی «هوادار».
 militant	noun	m		فعال (سیاسی)	فعال (سیاسی)	society
 élu	noun	m		منتخب (نماینده)	منتخب (نماینده)	society
 électeur	noun	m		رأی‌دهنده	رأی‌دهنده	society
@@ -1256,7 +1256,7 @@ progrès technique	noun	m		پیشرفت فنی	پیشرفت فنی	science	parts
 technologie de pointe	noun	f		فناوری پیشرفته	فناوری پیشرفته	science	parts:technologie pointe
 intelligence artificielle	noun	f		هوش مصنوعی	هوش مصنوعی	science	parts:intelligence artificiel	checked:level
 données	noun	f		داده‌ها	داده‌ها	science	number:pl_only
-algorithme	noun	m		الگوریتم	الگوریتم	science	checked:level
+algorithme	noun	m		الگوریتم	الگوریتم	science	checked:level	note:از نام «خوارزمی»، ریاضی‌دان ایرانی، آمده.
 programme	noun	m		برنامه (رایانه)	برنامه (رایانه)	science	code:programme-2	sense_of:programme
 programmer	verb			برنامه‌نویسی کردن	برنامه‌نویسی کردن	science
 informatique	noun	f		علوم رایانه، انفورماتیک	علوم رایانه	science
@@ -1288,7 +1288,7 @@ molécule	noun	f		مولکول	مولکول	science
 atome	noun	m		اتم	اتم	science
 chimie	noun	f		شیمی	شیمی	science
 physique	noun	f		فیزیک	فیزیک	science	code:physique-n
-biologie	noun	f		زیست‌شناسی	زیست‌شناسی	science
+biologie	noun	f		زیست‌شناسی	زیست‌شناسی	science	note:در فارسی هم «بیولوژی» می‌گوییم.
 astronomie	noun	f		ستاره‌شناسی	ستاره‌شناسی	science	checked:level
 expérimenter	verb			آزمایش کردن (علمی)	آزمایش کردن (علمی)	science
 mesure	noun	f		اقدام (رسمی)، تدبیر	اقدام (رسمی)	society	code:mesure-2	sense_of:mesure	coll:prendre des mesures → اقدام کردن
@@ -1389,7 +1389,7 @@ handicap	noun	m		معلولیت	معلولیت	health
 handicapé	adj			معلول	معلول	health
 fauteuil roulant	noun	m	fauteuils roulants	ویلچر	ویلچر	health	parts:fauteuil	checked:level
 béquille	noun	f		چوب زیر بغل	چوب زیر بغل	health
-pansement	noun	m		چسب زخم، باند (زخم)	چسب زخم	health
+pansement	noun	m		چسب زخم، باند (زخم)	چسب زخم	health	note:در فارسی هم «پانسمان» می‌گوییم.
 brûlure	noun	f		سوختگی	سوختگی	health
 fracture	noun	f		شکستگی (استخوان)	شکستگی (استخوان)	health
 entorse	noun	f		پیچ‌خوردگی	پیچ‌خوردگی	health	checked:level
@@ -1435,7 +1435,7 @@ critère	noun	m		معیار (سنجش)	معیار (سنجش)	abstract
 priorité	noun	f		اولویت	اولویت	abstract
 enjeu	noun	m	enjeux	آنچه در میان است، مسئلهٔ اصلی	آنچه در میان است	abstract	checked:level
 défaut	noun	m		کمبود (نبود)	کمبود (نبود)	abstract	code:défaut-2	sense_of:défaut	coll:à défaut de → در نبودِ
-stratégie	noun	f		راهبرد	راهبرد	abstract
+stratégie	noun	f		راهبرد	راهبرد	abstract	note:در فارسی هم «استراتژی» می‌گوییم.
 tactique	noun	f		تاکتیک	تاکتیک	abstract
 objectif	adj			بی‌طرف، عینی	بی‌طرف	abstract	code:objectif-adj
 subjectif	adj			شخصی (نظر)، درون‌ذهنی	شخصی (نظر)	abstract
@@ -1563,7 +1563,7 @@ maîtriser	verb			تسلط داشتن (بر)، مهار کردن	تسلط داش
 maîtrise	noun	f		تسلط، کارشناسی ارشد (قدیم)	تسلط	education
 assimiler	verb			یاد گرفتن (کامل)، هضم کردن (مطلب)	یاد گرفتن (کامل)	education
 mémoriser	verb			به خاطر سپردن (حفظ کردن)	به خاطر سپردن (حفظ کردن)	education
-discipline	noun	f		انضباط، رشته (علمی)	انضباط	education
+discipline	noun	f		انضباط، رشته (علمی)	انضباط	education	note:در فارسی هم «دیسیپلین» می‌گوییم.
 
 # more nouns of B2 (Lexique ranks 3000 to 5000)
 tube	noun	m		لوله، آهنگ پرطرفدار	لوله	culture
@@ -1590,7 +1590,7 @@ dégoût	noun	m		انزجار، دل‌زدگی	انزجار	feelings
 adversaire	noun	mf		حریف، رقیب	حریف	leisure
 refus	noun	m		امتناع، جوابِ رد	امتناع	abstract
 cap	noun	m		دماغه، جهت (مسیر)	دماغه	space
-pose	noun	f		ژست (عکس)، نصب	ژست (عکس)	culture
+pose	noun	f		ژست (عکس)، نصب	ژست (عکس)	culture	note:در فارسی «پُز» (پز دادن) از همین واژه است.
 grimace	noun	f		شکلک، اخم (از درد)	شکلک	body
 faire la grimace	phrase			قیافه گرفتن، اخم کردن (از نارضایتی)	قیافه گرفتن	body	parts:faire grimace
 dialogue	noun	m		گفت‌وگو (دو یا چند نفر)، دیالوگ	گفت‌وگو (دو یا چند نفر)	culture
@@ -1703,7 +1703,7 @@ sabot	noun	m		سم (اسب)، کفش چوبی	سم (اسب)	animals
 remède	noun	m		درمان، چاره	درمان	health
 haie	noun	f		پرچین	پرچین	nature
 récompense	noun	f		پاداش	پاداش	abstract
-divan	noun	m		کاناپه، نیمکت (خوابیدنی)	کاناپه	home
+divan	noun	m		کاناپه، نیمکت (خوابیدنی)	کاناپه	home	note:از «دیوان» فارسی آمده، از راه ترکی.
 organe	noun	m		عضو (بدن)، اندامِ داخلی	عضو (بدن)	body
 intervention	noun	f		دخالت، مداخله	دخالت	society
 serrure	noun	f		قفل (در)	قفل (در)	home
@@ -1716,14 +1716,14 @@ roche	noun	f		سنگ (جنس)	سنگ (جنس)	nature
 confusion	noun	f		سردرگمی، قاطی شدن	سردرگمی	abstract
 borne	noun	f		سنگ نشان، دستگاه (خودپرداز)	سنگ نشان	city
 machin	noun	m		چیز (اسمش یادم نیست)، فلان چیز	چیز	function	register:familier
-maillot	noun	m		پیراهن (ورزشی)	پیراهن (ورزشی)	clothes
+maillot	noun	m		پیراهن (ورزشی)	پیراهن (ورزشی)	clothes	note:«مایو» در فارسی لباس شناست، ولی maillot اینجا یعنی «پیراهن ورزشی».
 dentelle	noun	f		تور (پارچهٔ توری)	تور (پارچهٔ توری)	clothes
 sirène	noun	f		آژیر، پری دریایی	آژیر	society
 montant	noun	m		مبلغ	مبلغ	economy
 ivrogne	noun	mf		دائم‌الخمر	دائم‌الخمر	health
 cachette	noun	f		مخفیگاه	مخفیگاه	space
 fauve	noun	m		جانور درنده	جانور درنده	animals
-camionnette	noun	f		وانت	وانت	transport
+camionnette	noun	f		وانت	وانت	transport	note:در فارسی هم «کامیونت» می‌گوییم.
 cristal	noun	m	cristaux	کریستال، بلور	کریستال	nature
 tremblement	noun	m		لرزش	لرزش	body
 revers	noun	m		پشت (دست یا سکه)، شکست (ناگهانی)	پشت (دست یا سکه)	abstract
@@ -1815,12 +1815,12 @@ provision	noun	f		آذوقه، اندوخته	آذوقه	food
 caserne	noun	f		پادگان	پادگان	society
 clan	noun	m		طایفه، دار و دسته	طایفه	society
 coïncidence	noun	f		تصادف (هم‌زمانی)	تصادف (هم‌زمانی)	abstract
-dépôt	noun	m		انبار، سپرده	انبار	economy
+dépôt	noun	m		انبار، سپرده	انبار	economy	note:در فارسی «دپو» (دپو کردن کالا) از همین واژه است.
 pudeur	noun	f		حیا	حیا	character
 rouleau	noun	m	rouleaux	رول، غلتک	رول	home
 être au bout du rouleau	phrase			به ته خط رسیدن (خستگی)	به ته خط رسیدن (خستگی)	feelings	parts:être bout rouleau
 prudence	noun	f		احتیاط	احتیاط	character
-chiffon	noun	m		کهنه (دستمال)	کهنه (دستمال)	home
+chiffon	noun	m		کهنه (دستمال)	کهنه (دستمال)	home	note:«شیفون» در فارسی پارچهٔ نازک است، ولی chiffon یعنی «کهنه» (دستمال).
 acide	noun	m		اسید	اسید	science
 parcours	noun	m		مسیر (طی‌شده)، سابقه (تحصیلی)	مسیر (طی‌شده)	abstract
 manie	noun	f		عادت عجیب، وسواس	عادت عجیب	character
@@ -1857,18 +1857,18 @@ héritier	noun	m		وارث	وارث	family
 rêveur	adj			رؤیاپرداز	رؤیاپرداز	character
 mœurs	noun	f		آداب، اخلاق (اجتماعی)	آداب	society	number:pl_only
 protecteur	noun	m		حامی	حامی	society
-jury	noun	m		هیئت داوران	هیئت داوران	society
+jury	noun	m		هیئت داوران	هیئت داوران	society	note:در فارسی هم «ژوری» (هیئت ژوری) می‌گوییم.
 bronze	noun	m		برنز	برنز	culture
 amertume	noun	f		تلخی (دل)، رنجش	تلخی (دل)	feelings
 dégât	noun	m		خسارت	خسارت	society
 ambiance	noun	f		حال‌وهوا، فضا (جمع)	حال‌وهوا	feelings
 hache	noun	f		تبر	تبر	home
-fantaisie	noun	f		خیال‌پردازی، هوس	خیال‌پردازی	character
+fantaisie	noun	f		خیال‌پردازی، هوس	خیال‌پردازی	character	note:در فارسی «فانتزی» از همین واژه است.
 échantillon	noun	m		نمونه (کالا یا آزمایش)	نمونه (کالا یا آزمایش)	science
 épingle	noun	f		سنجاق	سنجاق	clothes
 tirer son épingle du jeu	phrase			گلیمِ خود را از آب بیرون کشیدن	گلیمِ خود را از آب بیرون کشیدن	actions	parts:tirer-2 épingle jeu
 rangée	noun	f		ردیف	ردیف	space
-pince	noun	f		انبر، گیره	انبر	home
+pince	noun	f		انبر، گیره	انبر	home	note:در فارسی هم «پنس» (موچین یا گیرهٔ سر) می‌گوییم.
 vanité	noun	f		خودپسندی، بیهودگی	خودپسندی	character
 lenteur	noun	f		کندی	کندی	time
 mélancolie	noun	f		اندوه (آرام)، مالیخولیا	اندوه (آرام)	feelings
@@ -1913,7 +1913,7 @@ déesse	noun	f		الهه	الهه	culture
 chevet	noun	m		بالای سر (تخت)	بالای سر (تخت)	home	coll:table de chevet → میز کنار تخت
 tombeau	noun	m	tombeaux	آرامگاه	آرامگاه	culture
 dessein	noun	m		قصد، طرح (پنهان)	قصد	abstract	mastery:recognize
-caoutchouc	noun	m		لاستیک (ماده)	لاستیک (ماده)	science
+caoutchouc	noun	m		لاستیک (ماده)	لاستیک (ماده)	science	note:در فارسی هم «کائوچو» می‌گوییم.
 béton	noun	m		بتن	بتن	home
 gage	noun	m		ضمانت، گرو	ضمانت	economy
 sursaut	noun	m		جهش (از ترس)، تکان	جهش (از ترس)	body
@@ -1991,7 +1991,7 @@ conserve	noun	f		کنسرو	کنسرو	food
 épave	noun	f		لاشه (کشتی یا ماشین)	لاشه (کشتی یا ماشین)	transport
 écurie	noun	f		اصطبل	اصطبل	animals
 case	noun	f		خانه (جدول)، کلبه	خانه (جدول)	space
-virage	noun	m		پیچ (جاده)	پیچ (جاده)	transport
+virage	noun	m		پیچ (جاده)	پیچ (جاده)	transport	note:در فارسی «ویراژ دادن» از همین واژه است.
 préférence	noun	f		ترجیح	ترجیح	feelings
 arrangement	noun	m		توافق، چیدمان	توافق	abstract
 emplacement	noun	m		محل، جا (مشخص)	محل	space
@@ -2003,7 +2003,7 @@ fente	noun	f		شکاف (باریک)	شکاف (باریک)	space
 catégorie	noun	f		دسته، گروه (طبقه)	دسته	abstract
 perron	noun	m		پله‌های جلوی ساختمان	پله‌های جلوی ساختمان	home	mastery:recognize
 trompette	noun	f		شیپور، ترومپت	شیپور	culture
-prestige	noun	m		اعتبار، وجهه	اعتبار	society
+prestige	noun	m		اعتبار، وجهه	اعتبار	society	note:در فارسی هم «پرستیژ» می‌گوییم.
 académie	noun	f		فرهنگستان، آکادمی	فرهنگستان	education
 bisou	noun	m		بوس، ماچ	بوسه	people	register:familier	coll:gros bisous → (آخر نامه) می‌بوسمت
 impasse	noun	f		بن‌بست	بن‌بست	city
@@ -2012,7 +2012,7 @@ ampleur	noun	f		گستره، دامنه	گستره	abstract
 prendre de l'ampleur	phrase			بالا گرفتن، گسترش یافتن	بالا گرفتن	abstract	parts:prendre ampleur
 atteinte	noun	f		لطمه، تجاوز (به حق)	لطمه	society
 porter atteinte à	phrase			لطمه زدن به	لطمه زدن به	society	parts:porter atteinte
-ton	noun	m		لحنِ (صدا یا نوشته)	لحن	media	code:ton-n	checked:level
+ton	noun	m		لحنِ (صدا یا نوشته)	لحن	media	code:ton-n	checked:level	note:در فارسی هم «تُن صدا» می‌گوییم.
 donner le ton	phrase			فضا را تعیین کردن	فضا را تعیین کردن	society	parts:donner ton-n
 unanimité	noun	f		اتفاقِ آرا	اتفاقِ آرا	society
 faire l'unanimité	phrase			موردِ قبولِ همه بودن	موردِ قبولِ همه بودن	society	parts:faire unanimité
@@ -2022,7 +2022,7 @@ errer	verb			پرسه زدن، سرگردان بودن	پرسه زدن	actions
 figer	verb			خشک کردن (از ترس)، منجمد کردن	خشک کردن (از ترس)	actions
 déboucher	verb			باز کردن (بطری)، رسیدن (به خیابان)	باز کردن (بطری)	actions
 célébrer	verb			جشن گرفتن، برگزار کردن (مراسم)	جشن گرفتن	culture
-isoler	verb			جدا کردن، عایق‌بندی کردن	جدا کردن	actions
+isoler	verb			جدا کردن، عایق‌بندی کردن	جدا کردن	actions	note:در فارسی هم «ایزوله کردن» (عایق کردن) می‌گوییم.
 abîmer	verb			خراب کردن، آسیب زدن (به شیء)	خراب کردن	actions
 surmonter	verb			غلبه کردن (بر سختی)	غلبه کردن (بر سختی)	actions
 déployer	verb			گستردن، به کار گرفتن (نیرو)	گستردن	actions
@@ -2194,7 +2194,7 @@ passionner	verb			به شوق آوردن	به شوق آوردن	feelings
 boiter	verb			لنگیدن	لنگیدن	health
 abaisser	verb			پایین آوردن (رسمی)، کاستن	پایین آوردن (رسمی)	actions
 proclamer	verb			اعلام کردن (رسمی و باشکوه)	اعلام کردن (رسمی و باشکوه)	society
-masquer	verb			پنهان کردن (پشت چیزی)	پنهان کردن (پشت چیزی)	actions
+masquer	verb			پنهان کردن (پشت چیزی)	پنهان کردن (پشت چیزی)	actions	note:هم‌خانوادهٔ masque است، همان «ماسک» در فارسی.
 gifler	verb			سیلی زدن	سیلی زدن	actions
 commenter	verb			اظهار نظر کردن، تفسیر کردن	اظهار نظر کردن	media
 frissonner	verb			لرزیدن (از سرما)	لرزیدن (از سرما)	body

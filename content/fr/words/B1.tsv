@@ -491,7 +491,7 @@ frotter	verb			مالیدن، ساییدن	مالیدن	home
 se méfier	verb			بدگمان بودن، احتیاط کردن	بدگمان بودن	feelings	coll:méfie-toi ! → مواظب باش! (اعتماد نکن)
 se venger	verb			انتقام گرفتن	انتقام گرفتن	feelings
 punir	verb			تنبیه کردن، مجازات کردن	تنبیه کردن	society
-bloquer	verb			مسدود کردن، گیر انداختن	مسدود کردن	actions
+bloquer	verb			مسدود کردن، گیر انداختن	مسدود کردن	actions	note:در فارسی «بلوکه کردن» (مثلاً پول) از همین واژه است.
 composer	verb			تشکیل دادن، آهنگ ساختن	تشکیل دادن	culture	coll:composer un numéro → شماره گرفتن
 confirmer	verb			تأیید کردن (درستی)	تأیید کردن (درستی)	abstract
 exposer	verb			به نمایش گذاشتن	به نمایش گذاشتن	culture
@@ -529,7 +529,7 @@ affronter	verb			روبه‌رو شدن (با سختی)، مقابله کردن	
 vieillir	verb			پیر شدن	پیر شدن	people
 comparer	verb			مقایسه کردن	مقایسه کردن	abstract
 justifier	verb			توجیه کردن	توجیه کردن	abstract
-chauffer	verb			گرم کردن	گرم کردن	home
+chauffer	verb			گرم کردن	گرم کردن	home	note:هم‌خانوادهٔ chauffage است، همان «شوفاژ» در فارسی.
 approuver	verb			تأیید کردن (نظر)، موافقت کردن با	تأیید کردن (نظر)	abstract
 échouer	verb			شکست خوردن، رد شدن (در امتحان)	شکست خوردن	education
 autoriser	verb			اجازه دادن (رسمی)، مجاز کردن	اجازه دادن (رسمی)	society
@@ -569,7 +569,7 @@ faire de la peine	phrase			ناراحت کردن (کسی)، غصه‌دار کر
 à peine	adv			به‌زحمت، تازه (همین الان)	به‌زحمت	function	parts:peine
 ce n'est pas la peine	phrase			لازم نیست، زحمت نکش	لازم نیست	function	parts:peine
 valoir la peine	phrase			ارزشش را داشتن	ارزشش را داشتن	abstract	parts:valoir peine
-suite	noun	f		ادامه، دنباله	ادامه	abstract	checked:level
+suite	noun	f		ادامه، دنباله	ادامه	abstract	checked:level	note:«سوئیت» در فارسی آپارتمان کوچک است، ولی suite یعنی «ادامه».
 par la suite	adv			بعدها، پس از آن	بعدها	time	parts:suite
 façon	noun	f		شیوه، طرز	شیوه	abstract	checked:level
 manière	noun	f		روش، شیوه (انجام کار)	شیوه	abstract
@@ -586,7 +586,7 @@ sans doute	adv			احتمالاً، لابد	احتمالاً	function	parts:dou
 ordre	noun	m		ترتیب، نظم	ترتیب	abstract	checked:level
 ordre	noun	m		دستور، فرمان	دستور	society	code:ordre-2	sense_of:ordre	checked:level
 sorte	noun	f		نوع، گونه (از یک چیز)	نوع	abstract	checked:level
-genre	noun	m		نوع، سبک (فیلم یا موسیقی)	نوع	culture	checked:level
+genre	noun	m		نوع، سبک (فیلم یا موسیقی)	نوع	culture	checked:level	note:در فارسی هم «ژانر» می‌گوییم.
 cause	noun	f		علت، سبب	علت	abstract	checked:level
 grâce à	prep			به لطفِ، به کمکِ (چیز خوب)	به لطفِ	function	note:à cause de برای علت بد است و grâce à برای علت خوب.
 face	noun	f		رو، طرف (رو)	رو	space	checked:level
@@ -604,7 +604,7 @@ tenir parole	phrase			سر قول ماندن	سر قول ماندن	feelings	par
 prendre la parole	phrase			رشتهٔ سخن را به دست گرفتن، شروع به صحبت کردن	رشتهٔ سخن را به دست گرفتن	society	parts:prendre parole
 donner sa parole	phrase			قول دادن	قول دادن	feelings	parts:donner parole
 couper la parole	phrase			حرف (کسی را) قطع کردن	حرف (کسی را) قطع کردن	people	parts:couper parole
-rapport	noun	m		ربط، نسبت	ربط	abstract	checked:level
+rapport	noun	m		ربط، نسبت	ربط	abstract	checked:level	note:«راپورت» در فارسی یعنی گزارش و خبرچینی، ولی rapport اینجا یعنی «ربط».
 par rapport à	prep			در مقایسه با، نسبت به	در مقایسه با	function	parts:rapport
 espèce	noun	f		گونه (جانور یا گیاه)	گونه (جانور یا گیاه)	nature
 confiance	noun	f		اعتماد	اعتماد	feelings
@@ -619,12 +619,12 @@ point de vue	noun	m		دیدگاه، نقطه‌نظر	دیدگاه	abstract	part
 à propos de	prep			دربارهٔ، در موردِ	دربارهٔ	function
 honneur	noun	m		افتخار، شرف	افتخار	society
 mouvement	noun	m		حرکت، جنبش	حرکت	actions
-scène	noun	f		صحنه	صحنه	culture
+scène	noun	f		صحنه	صحنه	culture	note:در فارسی هم «سِن» (صحنهٔ نمایش) می‌گوییم.
 courant	noun	m		جریان (آب یا برق)	جریان (آب یا برق)	nature
 tenir au courant	phrase			در جریان گذاشتن، باخبر کردن	در جریان گذاشتن	media	parts:tenir courant
 mettre au courant	phrase			باخبر کردن (از چیزی تازه)	باخبر کردن (از چیزی تازه)	media	parts:mettre courant
 au courant	adj			باخبر، در جریان	باخبر	media	parts:courant	coll:je ne suis pas au courant → خبر ندارم
-passage	noun	m		عبور، گذرگاه	عبور	transport
+passage	noun	m		عبور، گذرگاه	عبور	transport	note:«پاساژ» در فارسی مرکز خرید است، ولی passage یعنی «عبور» یا «گذرگاه».
 trou	noun	m		سوراخ، چاله	سوراخ	space
 public	noun	m		تماشاگران، مخاطبان	تماشاگران	culture
 loi	noun	f		قانون	قانون	society
@@ -642,13 +642,13 @@ hasard	noun	m		اتفاق، تصادف (بخت)	اتفاق	abstract
 par hasard	adv			تصادفاً، اتفاقی	تصادفاً	function	parts:hasard
 mémoire	noun	f		حافظه	حافظه	education
 vague	noun	f		موج	موج	nature
-compagnie	noun	f		همراهی، هم‌نشینی	همراهی	people
+compagnie	noun	f		همراهی، هم‌نشینی	همراهی	people	note:«کمپانی» در فارسی یعنی شرکت، ولی compagnie اینجا یعنی «همراهی».
 tenir compagnie	phrase			همدم (کسی) شدن، تنها نگذاشتن	همدم (کسی) شدن	people	parts:tenir compagnie
 compagnie aérienne	noun	f	compagnies aériennes	شرکت هواپیمایی	شرکت هواپیمایی	travel	parts:compagnie
-occasion	noun	f		فرصت، مناسبت	فرصت	abstract
+occasion	noun	f		فرصت، مناسبت	فرصت	abstract	note:«اوکازیون» در فارسی یعنی حراج، ولی occasion یعنی «فرصت».
 avoir l'occasion de	phrase			فرصتِ (کاری را) داشتن	فرصتِ (کاری را) داشتن	abstract	parts:avoir occasion
 d'occasion	adj			دست‌دوم	دست‌دوم	shopping	parts:occasion
-rôle	noun	m		نقش	نقش	culture
+rôle	noun	m		نقش	نقش	culture	note:در فارسی هم «رُل» می‌گوییم (رل اول فیلم).
 jouer un rôle	phrase			نقش داشتن، نقشی بازی کردن	نقش داشتن	abstract	parts:jouer rôle
 espoir	noun	m		امید	امید	feelings
 mesure	noun	f		اندازه، معیار	اندازه	numbers
@@ -656,15 +656,15 @@ fil	noun	m		نخ، رشته	نخ	home
 passer un coup de fil	phrase			تلفن زدن	تلفن زدن	media	register:familier	parts:passer coup fil
 coup de fil	noun	m	coups de fil	تلفن (تماس)	تماس تلفنی	media	register:familier	parts:coup fil
 désir	noun	m		میل، خواسته	میل	feelings
-parti	noun	m		حزب	حزب	society
-agent	noun	m		مأمور، کارگزار	مأمور	work
+parti	noun	m		حزب	حزب	society	note:«پارتی» در فارسی یعنی آشنای بانفوذ، ولی parti یعنی «حزب».
+agent	noun	m		مأمور، کارگزار	مأمور	work	note:در فارسی قدیم به مأمور پلیس «آژان» می‌گفتند.
 action	noun	f		عمل، اقدام	عمل	actions
-machine	noun	f		ماشین (دستگاه مکانیکی)	ماشین (دستگاه مکانیکی)	science
+machine	noun	f		ماشین (دستگاه مکانیکی)	ماشین (دستگاه مکانیکی)	science	note:«ماشین» در فارسی بیشتر یعنی خودرو، ولی machine یعنی «دستگاه».
 sécurité	noun	f		امنیت، ایمنی	امنیت	society
 victime	noun	f		قربانی	قربانی	society
 à l'avance	adv			از قبل، از پیش	از قبل	time
 fer	noun	m		آهن	آهن	science
-bande	noun	f		گروه (دوستان یا دزدان)، دسته	گروه (دوستان یا دزدان)	people
+bande	noun	f		گروه (دوستان یا دزدان)، دسته	گروه (دوستان یا دزدان)	people	note:در فارسی هم «باند» (مثل باند قاچاق) می‌گوییم.
 malheur	noun	m		بدبختی، مصیبت	بدبختی	feelings
 porter malheur	phrase			بدیمن بودن، بدشانسی آوردن	بدیمن بودن	culture	parts:porter malheur
 combat	noun	m		نبرد، درگیری	نبرد	society
@@ -682,7 +682,7 @@ recherche	noun	f		پژوهش، جست‌وجو	پژوهش	science
 foi	noun	f		ایمان	ایمان	culture
 adieu	interj			بدرود، خداحافظ برای همیشه	بدرود	people
 héros	noun	m		قهرمان (داستان)	قهرمان (داستان)	culture
-dossier	noun	m		پرونده	پرونده	work
+dossier	noun	m		پرونده	پرونده	work	note:در فارسی قدیم «دوسیه» می‌گفتند.
 relation	noun	f		رابطه، ارتباط	رابطه	people
 terrain	noun	m		زمین (ورزش)، قطعه زمین	زمین (ورزش)	leisure
 souffle	noun	m		نفس، دم	نفس	body
@@ -720,7 +720,7 @@ connaissance	noun	f		آشنایی، شناخت	آشنایی	education
 faire la connaissance de	phrase			آشنا شدن با	آشنا شدن با	people	parts:connaissance
 perdre connaissance	phrase			بیهوش شدن	غش کردن	health	parts:perdre connaissance
 autorité	noun	f		اقتدار، مقامات	اقتدار	society
-étude	noun	f		پژوهش (علمی)، بررسی	پژوهش (علمی)	science
+étude	noun	f		پژوهش (علمی)، بررسی	پژوهش (علمی)	science	note:«اتود» در فارسی طرح اولیه است، ولی étude یعنی «پژوهش».
 faire des études	phrase			تحصیل کردن	تحصیل کردن	education	parts:étude
 demande	noun	f		درخواست	درخواست	actions
 faire une demande	phrase			درخواست دادن	درخواست دادن	work	parts:faire demande
@@ -825,7 +825,7 @@ révolution	noun	f		انقلاب	انقلاب	society
 angle	noun	m		زاویه، گوشه (خیابان)	زاویه	space
 épreuve	noun	f		آزمون، محنت	آزمون	education
 curiosité	noun	f		کنجکاوی	کنجکاوی	character
-contrat	noun	m		قرارداد	قرارداد	work
+contrat	noun	m		قرارداد	قرارداد	work	note:در فارسی «کنتراتی» (کار قراردادی) از همین واژه است.
 domaine	noun	m		حوزه، زمینه (کاری)	حوزه	work
 bêtise	noun	f		کار احمقانه، حرف مفت	کار احمقانه	character
 chute	noun	f		سقوط، افت	سقوط	actions
@@ -862,7 +862,7 @@ inquiétude	noun	f		نگرانی	نگرانی	feelings
 avantage	noun	m		مزیت، امتیاز	مزیت	abstract
 inconvénient	noun	m		عیب (مقابل مزیت)، اشکال	عیب (مقابل مزیت)	abstract
 possibilité	noun	f		امکان	امکان	abstract
-cadre	noun	m		چارچوب، قاب	چارچوب	abstract
+cadre	noun	m		چارچوب، قاب	چارچوب	abstract	note:در فارسی هم «کادر» می‌گوییم (کادر عکس).
 désordre	noun	m		بی‌نظمی، به‌هم‌ریختگی	بی‌نظمی	home
 produit	noun	m		محصول، فراورده	محصول	economy
 intelligence	noun	f		هوش	هوش	character
@@ -870,7 +870,7 @@ séance	noun	f		نوبت (درمان یا ورزش)، سانس	نوبت (درم�
 drame	noun	m		درام، ماجرای غم‌انگیز	درام	culture
 cérémonie	noun	f		مراسم	مراسم	culture
 tradition	noun	f		سنّت، آیین	سنّت	culture
-luxe	noun	m		تجمل	تجمل	economy
+luxe	noun	m		تجمل	تجمل	economy	note:در فارسی «لوکس» از همین واژه است.
 merveille	noun	f		شگفتی، چیز بی‌نظیر	شگفتی	qualities
 conséquence	noun	f		پیامد	پیامد	abstract
 aspect	noun	m		جنبه	جنبه	abstract
@@ -914,7 +914,7 @@ capable	adj			توانا، قادر	توانا	character
 fier	adj			مغرور، سربلند	مغرور	feelings
 sombre	adj			تاریک، تیره	تاریک	colors
 profond	adj			عمیق، ژرف	عمیق	space
-personnel	adj			شخصی	شخصی	people
+personnel	adj			شخصی	شخصی	people	note:«پرسنل» در فارسی یعنی کارکنان، ولی personnel (صفت) یعنی «شخصی».
 inutile	adj			بی‌فایده، بیهوده	بی‌فایده	qualities
 inconnu	adj			ناشناخته، ناشناس	ناشناخته	people
 merveilleux	adj			شگفت‌انگیز، فوق‌العاده زیبا	شگفت‌انگیز	qualities
@@ -926,7 +926,7 @@ malheureux	adj			بدبخت، ناخشنود	بدبخت	feelings
 ridicule	adj			مسخره، خنده‌دار (به‌طرز بد)	مسخره	qualities
 exact	adj			دقیق، درست (بی‌خطا)	دقیق	qualities
 immobile	adj			بی‌حرکت	بی‌حرکت	actions
-double	adj			دوتایی، دوبرابر	دوتایی	numbers
+double	adj			دوتایی، دوبرابر	دوتایی	numbers	note:در فارسی «دوبل» (مثل دوبل پارک کردن) از همین واژه است.
 incroyable	adj			باورنکردنی	باورنکردنی	qualities
 rare	adj			کمیاب، نادر	کمیاب	qualities
 divers	adj			گوناگون	گوناگون	qualities
@@ -1013,13 +1013,13 @@ quotidien	adj			روزانه، هرروزه	روزانه	time
 officiel	adj			رسمی	رسمی	society
 prudent	adj			محتاط	محتاط	character
 local	adj			محلی	محلی	society
-mort	noun	f		مرگ	مرگ	health	code:mort-n	checked:level
+mort	noun	f		مرگ	مرگ	health	code:mort-n	checked:level	note:هم‌ریشه با «مرگ» در فارسی.
 mortel	adj			کشنده، مرگبار	کشنده	health
 électrique	adj			برقی، الکتریکی	برقی	science
 habituel	adj			همیشگی، معمول	همیشگی	time
 intime	adj			صمیمی، خصوصی (خیلی نزدیک)	صمیمی	people
 douloureux	adj			دردناک	دردناک	health
-glacé	adj			یخ‌زده، یخ	یخ‌زده	weather
+glacé	adj			یخ‌زده، یخ	یخ‌زده	weather	note:«گلاسه» در فارسی کاغذ براق است، ولی glacé یعنی «یخ‌زده».
 populaire	adj			مردمی، پرطرفدار	مردمی	society
 étonnant	adj			شگفت‌آور، تعجب‌آور	شگفت‌آور	qualities
 discret	adj			رازدار، بی‌سروصدا	رازدار	character
@@ -1041,7 +1041,7 @@ môme	noun	mf		بچه، کوچولو	بچه	people	register:familier
 camarade	noun	mf		همکلاسی، رفیق (هم‌گروه)	همکلاسی	people
 compagnon	noun	m		همراه، همدم (شریک زندگی)	همراه	family
 se fiancer	verb			نامزد شدن	نامزد شدن	family
-veuf	noun	m		مرد بیوه، همسرمرده	مرد بیوه	family
+veuf	noun	m		مرد بیوه، همسرمرده	مرد بیوه	family	note:هم‌ریشه با «بیوه» در فارسی.
 aîné	adj			بزرگ‌تر (فرزند)، ارشد	بزرگ‌تر (فرزند)	family
 cadet	adj			کوچک‌تر (فرزند)	کوچک‌تر (فرزند)	family
 ancêtre	noun	mf		نیا، جد	نیا	family
@@ -1076,7 +1076,7 @@ voisinage	noun	m		همسایگی، همسایه‌ها	همسایگی	people
 
 # society, politics and the state
 société	noun	f		جامعه	جامعه	society
-politique	noun	f		سیاست	سیاست	society
+politique	noun	f		سیاست	سیاست	society	note:«پلتیک» در فارسی یعنی کلک و زرنگی، ولی politique یعنی «سیاست».
 politique	adj			سیاسی	سیاسی	society	code:politique-adj
 gouvernement	noun	m		دولت، کابینه	دولت	society
 ministre	noun	m		وزیر	وزیر	society
@@ -1109,12 +1109,12 @@ chrétien	adj			مسیحی	مسیحی	culture
 musulman	adj			مسلمان	مسلمان	culture
 juif	adj			یهودی	یهودی	culture
 catholique	adj			کاتولیک	کاتولیک	culture
-paradis	noun	m		بهشت	بهشت	culture
+paradis	noun	m		بهشت	بهشت	culture	note:از «پردیس» (باغ) در ایران باستان آمده.
 enfer	noun	m		جهنم، دوزخ	جهنم	culture
 diable	noun	m		شیطان	شیطان	culture
 prêtre	noun	m		کشیش	کشیش	culture
-prince	noun	m		شاهزاده	شاهزاده	society
-princesse	noun	f		شاهزاده خانم	شاهزاده خانم	society
+prince	noun	m		شاهزاده	شاهزاده	society	note:در فارسی هم «پرنس» می‌گوییم.
+princesse	noun	f		شاهزاده خانم	شاهزاده خانم	society	note:در فارسی هم «پرنسس» می‌گوییم.
 empire	noun	m		امپراتوری	امپراتوری	society
 palais	noun	m		کاخ	کاخ	culture
 
@@ -1129,7 +1129,7 @@ pistolet	noun	m		تپانچه، اسلحهٔ کمری	تپانچه	society
 fusil	noun	m		تفنگ	تفنگ	society
 balle	noun	f		توپ (کوچک، مثل تنیس)	توپ (کوچک	leisure
 balle	noun	f		گلوله	گلوله	society	code:balle-2	sense_of:balle
-capitaine	noun	m		ناخدا، سروان	ناخدا	society
+capitaine	noun	m		ناخدا، سروان	ناخدا	society	note:در فارسی هم «کاپیتان» می‌گوییم.
 officier	noun	m		افسر	افسر	society
 général	noun	m	généraux	ژنرال، تیمسار	ژنرال	society	code:général-n	checked:level
 camp	noun	m		اردوگاه	اردوگاه	society
@@ -1161,7 +1161,7 @@ drogue	noun	f		مواد مخدر	مواد مخدر	health
 # work and careers
 bosser	verb			کار کردن (زیاد)	کار کردن	work	register:familier
 fric	noun	m		پول، مایه	پول	economy	register:familier
-poste	noun	m		سِمت، جایگاه شغلی	سِمت	work	code:poste-m
+poste	noun	m		سِمت، جایگاه شغلی	سِمت	work	code:poste-m	note:در فارسی هم «پست» (مثل پست مدیریت) می‌گوییم.
 candidat	noun	m		متقاضی، کاندیدا	متقاضی	work
 candidature	noun	f		درخواست (کار)، نامزدی	درخواست (کار)	work	checked:level
 poser sa candidature	phrase			درخواست کار دادن	درخواست کار دادن	work	parts:candidature
@@ -1186,7 +1186,7 @@ informaticien	noun	m		کارشناس کامپیوتر، برنامه‌نویس	
 électricien	noun	m		برق‌کار	برق‌کار	work
 plombier	noun	m		لوله‌کش	لوله‌کش	work
 agriculteur	noun	m		کشاورز	کشاورز	work	checked:level
-atelier	noun	m		کارگاه	کارگاه	work
+atelier	noun	m		کارگاه	کارگاه	work	note:در فارسی «آتلیه» (کارگاه هنری یا عکاسی) از همین واژه است.
 
 # money and the economy
 économie	noun	f		اقتصاد	اقتصاد	economy
@@ -1236,7 +1236,7 @@ connaissances	noun	f		دانسته‌ها، معلومات	دانسته‌ها	e
 savoir	noun	m		دانایی	دانایی	education	code:savoir-n	checked:level
 progrès	noun	m		پیشرفت	پیشرفت	education
 faire des progrès	phrase			پیشرفت کردن	پیشرفت کردن	education	parts:progrès
-résumé	noun	m		خلاصه	خلاصه	education
+résumé	noun	m		خلاصه	خلاصه	education	note:«رزومه» در فارسی سابقهٔ کاری است، ولی résumé یعنی «خلاصه».
 résumer	verb			خلاصه کردن	خلاصه کردن	education
 exposé	noun	m		ارائه (کلاسی)، کنفرانس	ارائه (کلاسی)	education
 
@@ -1250,12 +1250,12 @@ présentateur	noun	m		مجری	مجری	media
 auditeur	noun	m		شنونده	شنونده	media
 spectateur	noun	m		تماشاگر	تماشاگر	culture
 lecteur	noun	m		خواننده (کتاب یا روزنامه)	خواننده (کتاب یا روزنامه)	media
-abonnement	noun	m		اشتراک	اشتراک	media
+abonnement	noun	m		اشتراک	اشتراک	media	note:در فارسی «آبونمان» (هزینهٔ اشتراک در قبض) از همین واژه است.
 s'abonner	verb			مشترک شدن	مشترک شدن	media
 critique	noun	f		نقد، انتقاد	نقد	culture
 critiquer	verb			انتقاد کردن	انتقاد کردن	culture
 débat	noun	m		مناظره، بحث (عمومی)	مناظره	media
-annonce	noun	f		آگهی، اعلان	آگهی	media
+annonce	noun	f		آگهی، اعلان	آگهی	media	note:«آنونس» در فارسی پیش‌نمایش فیلم است، ولی annonce یعنی «آگهی».
 petite annonce	noun	f	petites annonces	آگهی (نیازمندی‌ها)	آگهی (نیازمندی‌ها)	media	parts:annonce
 
 # computers, phones and the internet
@@ -1349,7 +1349,7 @@ graine	noun	f		دانه (گیاه)، تخم (کاشتنی)	دانه (گیاه)	n
 blé	noun	m		گندم	گندم	nature
 paille	noun	f		کاه، نی (نوشیدنی)	کاه	nature
 tempête	noun	f		طوفان	طوفان	weather
-éclair	noun	m		برق آسمان	برق آسمان	weather
+éclair	noun	m		برق آسمان	برق آسمان	weather	note:«اکلر» در فارسی نوعی شیرینی است، ولی éclair یعنی «برق آسمان».
 tonnerre	noun	m		رعد، تندر	رعد	weather
 inondation	noun	f		سیل	سیل	weather
 tremblement de terre	noun	m	tremblements de terre	زلزله	زلزله	nature
@@ -1378,11 +1378,11 @@ chasse	noun	f		شکار	شکار	animals
 locataire	noun	mf		مستأجر	مستأجر	home
 déménagement	noun	m		اسباب‌کشی	اسباب‌کشی	home
 meublé	adj			مبله	مبله	home
-placard	noun	m		کمد دیواری	کمد دیواری	home
+placard	noun	m		کمد دیواری	کمد دیواری	home	note:«پلاکارد» در فارسی پارچه‌نوشته است، ولی placard یعنی «کمد دیواری».
 drap	noun	m		ملافه	ملافه	home
 cheminée	noun	f		شومینه	شومینه	home
 climatisation	noun	f		کولر، تهویهٔ مطبوع	کولر	home	checked:level
-ampoule	noun	f		حباب لامپ	حباب لامپ	home
+ampoule	noun	f		حباب لامپ	حباب لامپ	home	note:«آمپول» در فارسی تزریق است، ولی ampoule اینجا یعنی «حباب لامپ».
 prise	noun	f		پریز	پریز	home
 pile	noun	f		باتری (قلمی)	باتری (قلمی)	home
 outil	noun	m		ابزار	ابزار	home
@@ -1412,11 +1412,11 @@ plateau	noun	m	plateaux	سینی	سینی	food
 poêle	noun	f		ماهیتابه	ماهیتابه	food
 micro-ondes	noun	m		مایکروویو	مایکروویو	food	checked:level
 chou	noun	m	choux	کلم	کلم	food
-épinards	noun	m		اسفناج	اسفناج	food	number:pl_only
+épinards	noun	m		اسفناج	اسفناج	food	number:pl_only	note:از «اسفناج» فارسی آمده، از راه عربی.
 vinaigre	noun	m		سرکه	سرکه	food
 noix	noun	f		گردو	گردو	food
 amande	noun	f		بادام	بادام	food
-pistache	noun	f		پسته	پسته	food	checked:level
+pistache	noun	f		پسته	پسته	food	checked:level	note:از «پسته» فارسی آمده.
 datte	noun	f		خرما	خرما	food	checked:level
 grenade	noun	f		انار	انار	food
 safran	noun	m		زعفران	زعفران	food	checked:level
@@ -1465,7 +1465,7 @@ sculpture	noun	f		مجسمه‌سازی، مجسمه	مجسمه‌سازی	cultu
 statue	noun	f		مجسمه (بزرگ)	مجسمه (بزرگ)	culture
 galerie	noun	f		نگارخانه، گالری	نگارخانه	culture
 pièce	noun	f		نمایشنامه	نمایشنامه	culture	code:pièce-3	sense_of:pièce	checked:level
-comédien	noun	m		بازیگر (تئاتر)	بازیگر (تئاتر)	culture
+comédien	noun	m		بازیگر (تئاتر)	بازیگر (تئاتر)	culture	note:«کمدین» در فارسی بازیگر طنز است، ولی comédien هر بازیگری است.
 comédie	noun	f		کمدی	کمدی	culture
 chant	noun	m		آواز	آواز	culture
 orchestre	noun	m		ارکستر	ارکستر	culture
@@ -1559,7 +1559,7 @@ centimètre	noun	m		سانتی‌متر	سانتی‌متر	numbers
 quantité	noun	f		مقدار، کمیت	مقدار	numbers
 longueur	noun	f		طول، درازا	طول	numbers
 profondeur	noun	f		عمق	عمق	numbers
-volume	noun	m		حجم، بلندی صدا	حجم	numbers
+volume	noun	m		حجم، بلندی صدا	حجم	numbers	note:در فارسی هم «وُلوم» صدا می‌گوییم.
 durée	noun	f		مدت، طول زمان	مدت	time
 période	noun	f		بازهٔ زمانی، مدت (معین)	بازهٔ زمانی	time
 matinée	noun	f		صبح (تمام صبح)، پیش از ظهر	صبح (تمام صبح)	time
@@ -1591,7 +1591,7 @@ spécialement	adv			به‌طور ویژه، صرفاً برای	به‌طور �
 # more people, society and work
 individu	noun	m		فرد	فرد	people
 assistant	noun	m		دستیار	دستیار	work
-visiteur	noun	m		بازدیدکننده، مهمان (موزه یا سایت)	بازدیدکننده	travel
+visiteur	noun	m		بازدیدکننده، مهمان (موزه یا سایت)	بازدیدکننده	travel	note:«ویزیتور» در فارسی بازاریاب است، ولی visiteur یعنی «بازدیدکننده».
 passant	noun	m		رهگذر	رهگذر	city
 partenaire	noun	mf		شریک، هم‌تیمی	شریک	work
 expert	noun	m		کارشناس، متخصص (خبره)	کارشناس	work
@@ -1654,7 +1654,7 @@ délai	noun	m		مهلت	مهلت	time
 étape	noun	f		گام، مرحله (کار یا سفر)	گام	abstract
 tentative	noun	f		اقدام (برای کاری)	اقدام (برای کاری)	actions
 réussite	noun	f		کامیابی، موفقیت	موفقیت	work
-échec	noun	m		شکست، ناکامی	شکست	work
+échec	noun	m		شکست، ناکامی	شکست	work	note:از «شاه» فارسی آمده: échec et mat همان «شاه مات» است.
 obstacle	noun	m		مانع	مانع	abstract
 défi	noun	m		چالش	چالش	abstract
 exception	noun	f		استثنا	استثنا	abstract
@@ -1668,21 +1668,21 @@ remarque	noun	f		تذکر، نکته	تذکر	abstract
 commentaire	noun	m		نظر (نوشته‌شده)، تفسیر	نظر (نوشته‌شده)	media
 réflexion	noun	f		تأمل، فکر (عمیق)	تأمل	abstract
 conclusion	noun	f		نتیجه‌گیری	نتیجه‌گیری	abstract
-analyse	noun	f		تحلیل، آزمایش (پزشکی)	تحلیل	science
-théorie	noun	f		نظریه	نظریه	science
+analyse	noun	f		تحلیل، آزمایش (پزشکی)	تحلیل	science	note:در فارسی هم «آنالیز» می‌گوییم.
+théorie	noun	f		نظریه	نظریه	science	note:در فارسی هم «تئوری» می‌گوییم.
 observation	noun	f		مشاهده	مشاهده	science
-laboratoire	noun	m		آزمایشگاه	آزمایشگاه	science
+laboratoire	noun	m		آزمایشگاه	آزمایشگاه	science	note:در فارسی هم «لابراتوار» می‌گوییم.
 scientifique	adj			علمی	علمی	science
 logique	adj			منطقی	منطقی	abstract
 philosophie	noun	f		فلسفه	فلسفه	culture
 littérature	noun	f		ادبیات	ادبیات	culture
-thème	noun	m		مضمون، موضوع (اصلی)	مضمون	culture
-symbole	noun	m		نماد	نماد	culture
+thème	noun	m		مضمون، موضوع (اصلی)	مضمون	culture	note:در فارسی هم «تِم» می‌گوییم.
+symbole	noun	m		نماد	نماد	culture	note:در فارسی هم «سمبل» می‌گوییم.
 version	noun	f		نسخه (از متن یا برنامه)، روایت	نسخه (از متن یا برنامه)	abstract
 document	noun	m		سند، مدرک (نوشته)	سند	work
 contenu	noun	m		محتوا	محتوا	media
-épisode	noun	m		قسمت (سریال)	قسمت (سریال)	media
-affiche	noun	f		پوستر، آگهی دیواری	پوستر	media
+épisode	noun	m		قسمت (سریال)	قسمت (سریال)	media	note:در فارسی هم «اپیزود» می‌گوییم.
+affiche	noun	f		پوستر، آگهی دیواری	پوستر	media	note:در فارسی «آفیش» (پوستر فیلم) از همین واژه است.
 afficher	verb			به دیوار زدن (آگهی)، نمایش دادن (روی صفحه)	به دیوار زدن (آگهی)	media
 communication	noun	f		ارتباطات، ارتباط‌گیری	ارتباطات	media
 communiquer	verb			ارتباط برقرار کردن	ارتباط برقرار کردن	media
@@ -1692,8 +1692,8 @@ renseignement	noun	m		اطلاعات (پرسیده‌شده)	اطلاعات (پ�
 mentionner	verb			اشاره کردن به، نام بردن از	اشاره کردن به	media
 citer	verb			نقل قول کردن	نقل قول کردن	media
 souligner	verb			زیرش خط کشیدن، تأکید کردن	زیرش خط کشیدن	education
-copie	noun	f		رونوشت، برگهٔ امتحان	رونوشت	education
-fiche	noun	f		فرم (کاغذی)، کارت (اطلاعات)	فرم (کاغذی)	work
+copie	noun	f		رونوشت، برگهٔ امتحان	رونوشت	education	note:در فارسی هم «کپی» می‌گوییم.
+fiche	noun	f		فرم (کاغذی)، کارت (اطلاعات)	فرم (کاغذی)	work	note:در فارسی «فیش» (مثل فیش حقوقی) از همین واژه است.
 autorisation	noun	f		مجوز	مجوز	society
 règlement	noun	m		آیین‌نامه، مقررات	آیین‌نامه	society
 
@@ -1753,7 +1753,7 @@ empoisonner	verb			مسموم کردن	مسموم کردن	health
 poison	noun	m		سم، زهر	سم	health
 ivre	adj			مست	مست	health
 alcool	noun	m		الکل، مشروب الکلی	الکل	drink
-tabac	noun	m		توتون، دخانیات	توتون	health
+tabac	noun	m		توتون، دخانیات	توتون	health	note:همان واژه‌ای است که در فارسی «تنباکو» شده.
 endormi	adj			خوابیده، خواب‌آلود	خوابیده	health
 mouillé	adj			خیس	خیس	weather
 geler	verb			یخ زدن	یخ زدن	weather
@@ -1789,7 +1789,7 @@ construction	noun	f		ساخت‌وساز، ساختمان‌سازی	ساخت‌
 bâtir	verb			ساختن (بنا)	ساختن (بنا)	work
 échelle	noun	f		نردبان	نردبان	home
 barre	noun	f		میله	میله	home
-bâton	noun	m		چوب‌دستی، چوب	چوب‌دستی	home
+bâton	noun	m		چوب‌دستی، چوب	چوب‌دستی	home	note:در فارسی «باتوم» (چوب پلیس) از همین واژه است.
 planche	noun	f		تخته	تخته	home
 tunnel	noun	m		تونل	تونل	transport
 véhicule	noun	m		وسیلهٔ نقلیه	وسیلهٔ نقلیه	transport
@@ -1826,7 +1826,7 @@ répétition	noun	f		تمرین (نمایش)، تکرار	تمرین (نمایش
 vedette	noun	f		ستاره (سینما یا ورزش)	ستاره (سینما یا ورزش)	culture
 humour	noun	m		شوخ‌طبعی	شوخ‌طبعی	character
 plaisanterie	noun	f		شوخی	شوخی	feelings
-compliment	noun	m		تعریف، تمجید	تعریف	feelings
+compliment	noun	m		تعریف، تمجید	تعریف	feelings	note:در فارسی هم «کمپلیمان» می‌گوییم.
 médaille	noun	f		مدال	مدال	leisure
 entraînement	noun	m		تمرین (ورزشی)	تمرین (ورزشی)	leisure
 amateur	noun	m		علاقه‌مند، آماتور	علاقه‌مند	leisure	checked:gender

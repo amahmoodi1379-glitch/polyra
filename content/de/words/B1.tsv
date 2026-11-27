@@ -48,7 +48,7 @@ allerdings	adv			البته، با این حال	البته (ولی)	function
 nämlich	adv			آخر، چون (توضیح دلیل)	آخر (دلیل)	function	note:nämlich دلیل جمله قبل را می‌گوید و هیچ‌وقت اول جمله نمی‌آید: Ich komme nicht, ich bin nämlich krank.
 übrigens	adv			راستی، ضمناً	راستی	function
 schließlich	adv			بالاخره، آخر سر	آخر سر	time
-nun	adv			حالا، اکنون	حالا (رسمی)	time	checked:level
+nun	adv			حالا، اکنون	حالا (رسمی)	time	checked:level	note:هم‌ریشه با «کنون» و «اکنون» در فارسی.
 wohl	adv			احتمالاً، لابد	لابد	function	checked:level
 eben	adv			همین الان، درست (همین)	eben: همین الان	time
 etwa	adv			حدوداً، تقریباً	حدوداً	numbers	checked:level
@@ -320,7 +320,7 @@ erwachsen	adj			بالغ، بزرگ	بالغ	family
 Alter	noun	das		پیری	پیری	family	number:sg_only	code:Alter-2	sense_of:Alter
 Senior	noun	der	Senioren	سالمند	سالمند	family
 schwanger	adj			باردار	باردار	family
-Witwe	noun	die	Witwen	زن بیوه	بیوه	family	mastery:recognize
+Witwe	noun	die	Witwen	زن بیوه	بیوه	family	mastery:recognize	note:هم‌ریشه با «بیوه» در فارسی.
 sich trennen	verb			جدا شدن	جدا شدن	family
 Trennung	noun	die	Trennungen	جدایی	جدایی	family
 Beerdigung	noun	die	Beerdigungen	مراسم خاکسپاری	خاکسپاری	family	mastery:recognize
@@ -430,7 +430,7 @@ Leiterin	noun	die	Leiterinnen	مدیر (زن)، سرپرست (زن)	سرپرست
 Direktor	noun	der	Direktoren	مدیر	مدیر	work
 Direktorin	noun	die	Direktorinnen	مدیر (زن)	مدیر زن	work
 Unternehmen	noun	das	Unternehmen	شرکت، بنگاه اقتصادی	شرکت	economy
-Fabrik	noun	die	Fabriken	کارخانه	کارخانه	economy
+Fabrik	noun	die	Fabriken	کارخانه	کارخانه	economy	note:«فابریک» در فارسی یعنی دست‌نخورده از کارخانه، ولی Fabrik خودِ «کارخانه» است.
 Industrie	noun	die	Industrien	صنعت	صنعت	economy
 Handel	noun	der		تجارت، داد و ستد	تجارت	economy	number:sg_only
 Wirtschaft	noun	die		اقتصاد	اقتصاد	economy	number:sg_only
@@ -479,7 +479,7 @@ Schein	noun	der	Scheine	اسکناس	اسکناس	economy
 Währung	noun	die	Währungen	واحد پول، ارز	ارز	economy	checked:level
 reich	adj			ثروتمند، پولدار	ثروتمند	economy
 arm	adj			فقیر	فقیر	economy
-Architekt	noun	der	Architekten	معمار	معمار	work
+Architekt	noun	der	Architekten	معمار	معمار	work	note:در فارسی هم «آرشیتکت» می‌گوییم.
 Bäcker	noun	der	Bäcker	نانوا	نانوا	work	checked:level
 Elektriker	noun	der	Elektriker	برق‌کار	برق‌کار	work	checked:level
 Maler	noun	der	Maler	نقاش	نقاش	work
@@ -493,7 +493,7 @@ Musiker	noun	der	Musiker	نوازنده، موسیقی‌دان	نوازنده	c
 Sportler	noun	der	Sportler	ورزشکار	ورزشکار	leisure
 Trainer	noun	der	Trainer	مربی	مربی	leisure
 Wissenschaftler	noun	der	Wissenschaftler	دانشمند	دانشمند	science
-Professor	noun	der	Professoren	استاد (دانشگاه)	استاد دانشگاه	education
+Professor	noun	der	Professoren	استاد (دانشگاه)	استاد دانشگاه	education	note:در فارسی هم «پروفسور» می‌گوییم.
 Professorin	noun	die	Professorinnen	استاد (زن)	استاد دانشگاه زن	education	checked:level
 Pilot	noun	der	Piloten	خلبان	خلبان	transport
 Soldat	noun	der	Soldaten	سرباز	سرباز	society
@@ -595,7 +595,7 @@ Behandlung	noun	die	Behandlungen	درمان	درمان	health
 behandeln	verb			درمان کردن، رفتار کردن با	درمان کردن	health
 Patient	noun	der	Patienten	بیمار	بیمار (شخص)	health
 Patientin	noun	die	Patientinnen	بیمار (زن)	بیمار زن	health
-Klinik	noun	die	Kliniken	درمانگاه، بیمارستان	درمانگاه	health
+Klinik	noun	die	Kliniken	درمانگاه، بیمارستان	درمانگاه	health	note:در فارسی هم «کلینیک» می‌گوییم.
 Notaufnahme	noun	die	Notaufnahmen	اورژانس (بیمارستان)	اورژانس	health
 Notarzt	noun	der	Notärzte	پزشک اورژانس	پزشک اورژانس	health
 Medizin	noun	die		پزشکی، دارو	پزشکی	health	number:sg_only
@@ -735,10 +735,10 @@ Besteck	noun	das		قاشق و چنگال	قاشق و چنگال	food	number:sg_o
 Linse	noun	die	Linsen	عدس	عدس	food	checked:level
 Kürbis	noun	der	Kürbisse	کدو حلوایی	کدو حلوایی	food
 Mandel	noun	die	Mandeln	بادام	بادام	food
-Pistazie	noun	die	Pistazien	پسته	پسته	food
+Pistazie	noun	die	Pistazien	پسته	پسته	food	note:از «پسته» فارسی آمده.
 Dattel	noun	die	Datteln	خرما	خرما	food
 Granatapfel	noun	der	Granatäpfel	انار	انار	food
-Pfirsich	noun	der	Pfirsiche	هلو	هلو	food	checked:level
+Pfirsich	noun	der	Pfirsiche	هلو	هلو	food	checked:level	note:نامش از «پارس» آمده: در لاتین یعنی «میوه‌ی پارسی».
 Melone	noun	die	Melonen	خربزه، طالبی	خربزه	food	checked:level
 Wassermelone	noun	die	Wassermelonen	هندوانه	هندوانه	food	checked:level
 Quark	noun	der		پنیر نرم تازه (کوارک)	پنیر نرم	food	number:sg_only
@@ -869,14 +869,14 @@ wissenschaftlich	adj			علمی	علمی	education	checked:level
 Forschung	noun	die	Forschungen	پژوهش، تحقیق	پژوهش	education
 forschen	verb			پژوهش کردن	پژوهش کردن	education	checked:level
 Experiment	noun	das	Experimente	آزمایش (علمی)	آزمایش علمی	education
-Theorie	noun	die	Theorien	نظریه	نظریه	education
-Methode	noun	die	Methoden	روش	روش	abstract
+Theorie	noun	die	Theorien	نظریه	نظریه	education	note:در فارسی هم «تئوری» می‌گوییم.
+Methode	noun	die	Methoden	روش	روش	abstract	note:در فارسی هم «متد» به کار می‌رود.
 Kenntnis	noun	die	Kenntnisse	آگاهی، دانسته (بیشتر جمع)	آگاهی	education	note:بیشتر جمع می‌آید: Deutschkenntnisse یعنی «آشنایی با آلمانی».
 Fähigkeit	noun	die	Fähigkeiten	توانایی	توانایی	abstract
 Bildung	noun	die		آموزش و پرورش، تحصیلات	تحصیلات	education	number:sg_only
 Physik	noun	die		فیزیک	فیزیک	education	number:sg_only
 Chemie	noun	die		شیمی	شیمی	education	number:sg_only
-Biologie	noun	die		زیست‌شناسی	زیست‌شناسی	education	number:sg_only	checked:level
+Biologie	noun	die		زیست‌شناسی	زیست‌شناسی	education	number:sg_only	checked:level	note:در فارسی هم «بیولوژی» می‌گوییم.
 Erdkunde	noun	die		جغرافیا	جغرافیا	education	number:sg_only
 Wortschatz	noun	der		واژگان، دایره‌ی لغت	واژگان	education	number:sg_only
 Fremdsprache	noun	die	Fremdsprachen	زبان خارجی	زبان خارجی	education	checked:level
@@ -927,7 +927,7 @@ Serie	noun	die	Serien	سریال	سریال	media
 Sieg	noun	der	Siege	پیروزی	پیروزی	leisure
 Niederlage	noun	die	Niederlagen	شکست	شکست	leisure
 Wettbewerb	noun	der	Wettbewerbe	مسابقه، رقابت	مسابقه	leisure
-Stadion	noun	das	Stadien	ورزشگاه	ورزشگاه	leisure
+Stadion	noun	das	Stadien	ورزشگاه	ورزشگاه	leisure	note:در فارسی هم «استادیوم» می‌گوییم.
 Mitgliedschaft	noun	die	Mitgliedschaften	عضویت	عضویت	leisure	checked:level
 
 # describing people
@@ -1042,7 +1042,7 @@ Bedürfnis	noun	das	Bedürfnisse	نیاز	نیاز	abstract
 Stimmung	noun	die	Stimmungen	حال و هوا	حال و هوا	feelings
 Stelle	noun	die	Stellen	جا، نقطه	جا	space	code:Stelle-2	sense_of:Stelle
 System	noun	das	Systeme	سیستم، نظام	سیستم	abstract
-Prozess	noun	der	Prozesse	روند، فرایند	روند	abstract
+Prozess	noun	der	Prozesse	روند، فرایند	روند	abstract	note:در فارسی هم «پروسه» می‌گوییم.
 Schritt	noun	der	Schritte	قدم، گام	گام	abstract
 Stufe	noun	die	Stufen	پله، مرحله	مرحله	abstract
 Niveau	noun	das	Niveaus	سطح	سطح	abstract
@@ -1077,7 +1077,7 @@ Neuigkeit	noun	die	Neuigkeiten	خبر تازه	خبر تازه	media
 Unsinn	noun	der		حرف بی‌معنی، چرند	چرند	people	number:sg_only
 Quatsch	noun	der		چرت و پرت، حرف مفت	چرند	people	number:sg_only	register:familier
 Scherz	noun	der	Scherze	شوخی	شوخی	people
-Maschine	noun	die	Maschinen	ماشین (دستگاه)	دستگاه ماشینی	work
+Maschine	noun	die	Maschinen	ماشین (دستگاه)	دستگاه ماشینی	work	note:«ماشین» در فارسی بیشتر یعنی خودرو، ولی Maschine یعنی «دستگاه».
 Loch	noun	das	Löcher	سوراخ	سوراخ	qualities
 Haufen	noun	der	Haufen	کپه، تل	کپه	numbers	note:ein Haufen Arbeit یعنی «کلی کار».
 Kiste	noun	die	Kisten	جعبه‌ی بزرگ	جعبه بزرگ	home
@@ -1181,7 +1181,7 @@ Titel	noun	der	Titel	عنوان	عنوان	media
 Stil	noun	der	Stile	شیوه (هنری یا نوشتن)، استایل	شیوه هنری	culture
 folgend	adj			زیر، بعدی (آنچه می‌آید)	بعدی	function	note:Die folgenden Fragen یعنی «پرسش‌های زیر».
 auftauchen	verb			پیدا شدن، سر و کله‌ی کسی پیدا شدن	پیدا شدن	actions
-Tour	noun	die	Touren	گشت، سفر کوتاه	گشت	travel
+Tour	noun	die	Touren	گشت، سفر کوتاه	گشت	travel	note:در فارسی هم «تور» می‌گوییم (تور مسافرتی).
 Gedächtnis	noun	das	Gedächtnisse	حافظه	حافظه	body
 Wirklichkeit	noun	die	Wirklichkeiten	واقعیت	واقعیت	abstract
 bestrafen	verb			تنبیه کردن	تنبیه کردن	society
@@ -1244,7 +1244,7 @@ bewerten	verb			ارزیابی کردن، نمره دادن	ارزیابی کر�
 bewundern	verb			تحسین کردن	تحسین کردن	feelings
 bezeichnen	verb			نامیدن (به عنوانِ)، توصیف کردن	نامیدن به عنوان	people	mastery:recognize
 bilden	verb			تشکیل دادن، ساختن	تشکیل دادن	actions
-binden	verb			بستن (با طناب یا نخ)	گره زدن	actions
+binden	verb			بستن (با طناب یا نخ)	گره زدن	actions	note:هم‌ریشه با «بند» و «بستن» در فارسی.
 bügeln	verb			اتو کردن	اتو کردن	home	checked:level
 Bügeleisen	noun	das	Bügeleisen	اتو	اتو	home	checked:level
 darstellen	verb			نشان دادن، نمایش دادن	نمایش دادن	culture
@@ -1354,7 +1354,7 @@ Matratze	noun	die	Matratzen	تشک	تشک	home
 Föhn	noun	der	Föhne	سشوار	سشوار	home
 Becher	noun	der	Becher	لیوان (دسته‌دار یا یک‌بار مصرف)	لیوان دسته‌دار	food
 Serviette	noun	die	Servietten	دستمال سفره	دستمال سفره	food	checked:level
-Tablett	noun	das	Tabletts	سینی	سینی	food
+Tablett	noun	das	Tabletts	سینی	سینی	food	note:«تبلت» در فارسی دستگاه است، ولی Tablett یعنی «سینی».
 
 # a few more nouns of work and offices
 Wille	noun	der		اراده، خواست	اراده	abstract	number:sg_only	checked:plural
@@ -1452,13 +1452,13 @@ Weiterbildung	noun	die	Weiterbildungen	دوره‌ی آموزشی ضمن کار�
 Fortbildung	noun	die	Fortbildungen	دوره‌ی بازآموزی	بازآموزی	work	checked:level	mastery:recognize
 Bewerber	noun	der	Bewerber	متقاضی (کار)	متقاضی کار	work	checked:level
 Bewerberin	noun	die	Bewerberinnen	متقاضی کار (زن)	متقاضی کار زن	work	checked:level
-Personal	noun	das		کارکنان	کارکنان	work	number:sg_only	checked:level
+Personal	noun	das		کارکنان	کارکنان	work	number:sg_only	checked:level	note:در فارسی هم «پرسنل» می‌گوییم.
 brutto	adv			ناخالص (پیش از کسر مالیات)	ناخالص	economy	checked:level
 netto	adv			خالص (پس از کسر مالیات)	خالص	economy	checked:level
 Jobcenter	noun	das	Jobcenter	اداره‌ی کار	اداره کار	work	checked:level
 Aufenthaltserlaubnis	noun	die	Aufenthaltserlaubnisse	اجازه‌ی اقامت	اجازه اقامت	society	checked:level
 Genehmigung	noun	die	Genehmigungen	مجوز	مجوز	society	checked:level
-Original	noun	das	Originale	اصل (مدرک)، نسخه‌ی اصلی	نسخه اصلی	city	checked:level
+Original	noun	das	Originale	اصل (مدرک)، نسخه‌ی اصلی	نسخه اصلی	city	checked:level	note:در فارسی هم «اورجینال» می‌گوییم.
 Frist	noun	die	Fristen	مهلت	مهلت	city	checked:level
 Sachbearbeiter	noun	der	Sachbearbeiter	کارمند مسئول (پرونده)	کارمند مسئول	city	checked:level
 Sachbearbeiterin	noun	die	Sachbearbeiterinnen	کارمند مسئول (زن)	کارمند مسئول زن	city	checked:level
@@ -1638,7 +1638,7 @@ alltäglich	adj			روزمره، عادی	روزمره	qualities
 Anlass	noun	der	Anlässe	مناسبت، بهانه	مناسبت	abstract
 Anleitung	noun	die	Anleitungen	دستورالعمل، راهنما (طرز کار)	دستورالعمل	media	checked:level
 anstrengend	adj			خسته‌کننده، طاقت‌فرسا	طاقت‌فرسا	qualities
-Atmosphäre	noun	die	Atmosphären	حال و هوا، فضا	فضای حاکم	abstract
+Atmosphäre	noun	die	Atmosphären	حال و هوا، فضا	فضای حاکم	abstract	note:در فارسی هم «اتمسفر» به کار می‌رود.
 aufmerksam	adj			دقیق، حواس‌جمع	حواس‌جمع	character
 ausreichend	adj			کافی	کافی	numbers
 außergewöhnlich	adj			فوق‌العاده، غیرمعمول	غیرمعمول	qualities	mastery:recognize
@@ -1673,7 +1673,7 @@ Ersatz	noun	der		جایگزین، یدکی	جایگزین	abstract	number:sg_onl
 erstaunt	adj			شگفت‌زده	شگفت‌زده	feelings
 Erwartung	noun	die	Erwartungen	انتظار، توقع	توقع	feelings	checked:level
 Erzählung	noun	die	Erzählungen	داستان، روایت	روایت	culture	checked:level
-Festival	noun	das	Festivals	جشنواره	جشنواره	culture	checked:level
+Festival	noun	das	Festivals	جشنواره	جشنواره	culture	checked:level	note:در فارسی هم «فستیوال» می‌گوییم.
 flexibel	adj			انعطاف‌پذیر	انعطاف‌پذیر	qualities	checked:level
 Flüssigkeit	noun	die	Flüssigkeiten	مایع	مایع	health
 Forderung	noun	die	Forderungen	خواسته، مطالبه	مطالبه	society	checked:level
@@ -1703,7 +1703,7 @@ Muster	noun	das	Muster	نقش، طرح (روی پارچه)، نمونه	نقش �
 Not	noun	die	Nöte	تنگدستی، نیاز شدید	تنگدستی	abstract
 Öffentlichkeit	noun	die		مردم، عموم	عموم	society	number:sg_only	mastery:recognize
 Organisation	noun	die	Organisationen	سازمان	سازمان	society
-Phase	noun	die	Phasen	مرحله (زمانی)، دوره	دوره زمانی	time
+Phase	noun	die	Phasen	مرحله (زمانی)، دوره	دوره زمانی	time	note:در فارسی هم «فاز» می‌گوییم (فاز اول کار).
 Rand	noun	der	Ränder	لبه، کنار	لبه	space
 Spannung	noun	die	Spannungen	هیجان، تنش	هیجان	feelings
 Summe	noun	die	Summen	جمع، مبلغ	مبلغ	numbers

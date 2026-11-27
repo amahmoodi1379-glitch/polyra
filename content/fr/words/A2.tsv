@@ -117,7 +117,7 @@ se passer	verb			اتفاق افتادن، گذشتن	اتفاق افتادن	ab
 se trouver	verb			واقع بودن، قرار داشتن (در جایی)	واقع بودن	space	coll:où se trouve la gare ? → ایستگاه کجاست؟
 se tromper	verb			اشتباه کردن	اشتباه کردن	abstract
 naître	verb			به دنیا آمدن، متولد شدن	به دنیا آمدن	people	coll:il est né en mai → در ماه مه به دنیا آمد
-mourir	verb			مردن، درگذشتن	مردن	people
+mourir	verb			مردن، درگذشتن	مردن	people	note:هم‌ریشه با «مردن» در فارسی.
 tuer	verb			کشتن	کشتن	actions
 rire	verb			خندیدن	خندیدن	feelings
 sourire	verb			لبخند زدن	لبخند زدن	feelings
@@ -196,10 +196,10 @@ léger	adj			سبک	سبک	qualities
 dur	adj			سفت، سخت (جنس)	سفت	qualities
 doux	adj			نرم، ملایم	نرم	qualities
 vivant	adj			زنده	زنده	people
-mort	adj			مرده	مرده	people
+mort	adj			مرده	مرده	people	note:هم‌ریشه با «مرده» و «مرگ» در فارسی.
 ancien	adj			قدیمی (تاریخی)، سابق	سابق	qualities
 moderne	adj			مدرن، امروزی	مدرن	qualities
-normal	adj			عادی، معمولی	عادی	qualities
+normal	adj			عادی، معمولی	عادی	qualities	note:در فارسی هم «نرمال» می‌گوییم.
 bizarre	adj			عجیب، غریب	عجیب	qualities
 grave	adj			جدی (خطرناک)، وخیم	وخیم	health
 ce n'est pas grave	phrase			مهم نیست، اشکالی ندارد	مهم نیست	abstract	parts:être grave
@@ -283,7 +283,7 @@ perdre du poids	phrase			وزن کم کردن	وزن کم کردن	body	parts:pe
 # body
 épaule	noun	f		شانه (کتف)	کتف	body
 cou	noun	m		گردن	گردن	body	homophones:coup
-genou	noun	m	genoux	زانو	زانو	body
+genou	noun	m	genoux	زانو	زانو	body	note:هم‌ریشه با «زانو» در فارسی.
 gorge	noun	f		گلو	گلو	body
 peau	noun	f		پوست	پوست	body
 lèvre	noun	f		لب	لب	body
@@ -292,7 +292,7 @@ sang	noun	m		خون	خون	body	homophones:cent,sans
 estomac	noun	m		معده	معده	body
 joue	noun	f		گونه (صورت)	گونه	body
 front	noun	m		پیشانی	پیشانی	body
-os	noun	m		استخوان	استخوان	body
+os	noun	m		استخوان	استخوان	body	note:هم‌ریشه با «استخوان» در فارسی.
 
 # health
 santé	noun	f		سلامتی، تندرستی	سلامتی	health
@@ -314,7 +314,7 @@ pharmacien	noun	m		داروساز	داروساز	health
 ordonnance	noun	f		نسخه (پزشک)	نسخه	health
 comprimé	noun	m		قرص	قرص	health
 au secours	interj			کمک!، به دادم برسید!	کمک!	health
-forme	noun	f		شکل	شکل	abstract
+forme	noun	f		شکل	شکل	abstract	note:در فارسی هم «فرم» می‌گوییم (فرم بدن).
 être en forme	phrase			سرحال بودن، روبه‌راه بودن	سرحال بودن	health	parts:être forme
 sommeil	noun	m		خواب (حالت)	خواب	health
 avoir sommeil	phrase			خواب‌آلود بودن، خوابِ (کسی) آمدن	خواب‌آلود بودن	health	parts:avoir sommeil
@@ -326,7 +326,7 @@ bain	noun	m		وان حمام، حمام (در وان)	وان حمام	home
 prendre un bain	phrase			حمام کردن (در وان)	حمام کردن در وان	home	parts:prendre bain
 savon	noun	m		صابون	صابون	home
 serviette	noun	f		حوله	حوله	home
-brosse à dents	noun	f	brosses à dents	مسواک	مسواک	home
+brosse à dents	noun	f	brosses à dents	مسواک	مسواک	home	note:بخش brosse همان «برس» در فارسی است.
 se dépêcher	verb			عجله کردن	عجله کردن	time
 s'amuser	verb			خوش گذراندن، تفریح کردن	خوش گذراندن	leisure
 s'ennuyer	verb			حوصلهٔ (کسی) سر رفتن، کسل شدن	حوصله سر رفتن	feelings
@@ -366,12 +366,12 @@ oignon	noun	m		پیاز	پیاز	food
 haricot	noun	m		لوبیا	لوبیا	food
 champignon	noun	m		قارچ	قارچ	food
 concombre	noun	m		خیار	خیار	food	checked:level
-aubergine	noun	f		بادمجان	بادمجان	food	checked:level
+aubergine	noun	f		بادمجان	بادمجان	food	checked:level	note:از «بادنجان» فارسی آمده، از راه عربی.
 citron	noun	m		لیمو، لیموترش	لیمو	food
 fraise	noun	f		توت‌فرنگی	توت‌فرنگی	food
 raisin	noun	m		انگور	انگور	food	note:دوست دروغین: raisin یعنی «انگور»؛ کشمش raisin sec است.
 poire	noun	f		گلابی	گلابی	food
-pêche	noun	f		هلو	هلو	food
+pêche	noun	f		هلو	هلو	food	note:نامش از «پارس» است: رومی‌ها هلو را «میوهٔ پارسی» می‌گفتند.
 cerise	noun	f		گیلاس	گیلاس	food
 melon	noun	m		طالبی، خربزه	طالبی	food
 pastèque	noun	f		هندوانه	هندوانه	food	checked:level
@@ -381,7 +381,7 @@ farine	noun	f		آرد	آرد	food
 confiture	noun	f		مربا	مربا	food
 miel	noun	m		عسل	عسل	food
 yaourt	noun	m		ماست	ماست	food
-crème	noun	f		خامه	خامه	food
+crème	noun	f		خامه	خامه	food	note:«کرم» در فارسی بیشتر کرم پوست است؛ crème در آشپزی یعنی «خامه».
 bœuf	noun	m		گوشت گاو	گوشت گاو	food
 agneau	noun	m	agneaux	گوشت بره، بره	گوشت بره	food
 porc	noun	m		گوشت خوک	گوشت خوک	food	homophones:port
@@ -416,7 +416,7 @@ loyer	noun	m		اجاره‌بها، کرایهٔ خانه	اجاره‌بها	ho
 propriétaire	noun	mf		صاحبخانه، مالک	صاحبخانه	home
 déménager	verb			اسباب‌کشی کردن، نقل مکان کردن	اسباب‌کشی کردن	home
 s'installer	verb			ساکن شدن، جاافتادن	ساکن شدن	home
-studio	noun	m		آپارتمان یک‌اتاقه، سوئیت	آپارتمان یک‌اتاقه	home
+studio	noun	m		آپارتمان یک‌اتاقه، سوئیت	آپارتمان یک‌اتاقه	home	note:«استودیو» در فارسی جای ضبط یا عکاسی است؛ studio اینجا آپارتمان یک‌اتاقه است.
 rez-de-chaussée	noun	m		طبقهٔ همکف	طبقه همکف	home
 ascenseur	noun	m		آسانسور	آسانسور	home
 balcon	noun	m		بالکن	بالکن	home
@@ -428,7 +428,7 @@ couloir	noun	m		راهرو	راهرو	home
 entrée	noun	f		ورودی، راه ورود	ورودی	home	code:entrée-2	sense_of:entrée
 cour	noun	f		حیاط	حیاط	home	homophones:cours,court
 salle à manger	noun	f	salles à manger	اتاق ناهارخوری	ناهارخوری	home
-meuble	noun	m		اثاثیه (یک تکه)، وسیلهٔ خانه	اثاثیه	home
+meuble	noun	m		اثاثیه (یک تکه)، وسیلهٔ خانه	اثاثیه	home	note:«مبل» از همین واژه است، ولی meuble هر تکه اثاثیهٔ خانه است، نه فقط مبل.
 armoire	noun	f		کمد لباس	کمد لباس	home
 étagère	noun	f		قفسه	قفسه	home
 fauteuil	noun	m		مبل یک‌نفره، صندلی راحتی	مبل یک‌نفره	home
@@ -492,7 +492,7 @@ capitale	noun	f		پایتخت	پایتخت	society
 région	noun	f		منطقه، ناحیه	منطقه	society
 banlieue	noun	f		حومهٔ شهر	حومه	city
 centre-ville	noun	m	centres-villes	مرکز شهر	مرکز شهر	city	checked:level
-plan	noun	m		نقشهٔ شهر، نقشهٔ ساختمان	نقشه شهر	city
+plan	noun	m		نقشهٔ شهر، نقشهٔ ساختمان	نقشه شهر	city	note:در فارسی هم «پلان» (نقشهٔ ساختمان) می‌گوییم.
 nord	noun	m		شمال	شمال	space
 sud	noun	m		جنوب	جنوب	space
 est	noun	m		شرق	شرق	space	code:est-noun
@@ -510,7 +510,7 @@ réduction	noun	f		تخفیف	تخفیف	shopping	checked:level
 soldes	noun	m		حراج (فصلی)	حراج	shopping	number:pl_only
 marque	noun	f		مارک، برند	مارک	shopping
 liste	noun	f		فهرست، لیست	فهرست	abstract
-paquet	noun	m		بسته (کالا)، بستهٔ (بیسکویت و ...)	بسته کالا	shopping
+paquet	noun	m		بسته (کالا)، بستهٔ (بیسکویت و ...)	بسته کالا	shopping	note:در فارسی هم «پاکت» می‌گوییم (پاکت شیر، پاکت سیگار).
 boîte	noun	f		جعبه، قوطی	جعبه	shopping
 litre	noun	m		لیتر	لیتر	numbers
 gramme	noun	m		گرم (وزن)	گرم وزن	numbers
@@ -527,7 +527,7 @@ faire les magasins	phrase			مغازه‌گردی کردن، خرید رفتن	�
 # clothes
 pointure	noun	f		شمارهٔ کفش	شماره کفش	clothes	checked:level
 blouson	noun	m		کاپشن	کاپشن	clothes
-short	noun	m		شلوارک	شلوارک	clothes
+short	noun	m		شلوارک	شلوارک	clothes	note:«شورت» در فارسی لباس زیر است، ولی short یعنی «شلوارک».
 costume	noun	m		کت و شلوار	کت و شلوار	clothes
 cravate	noun	f		کراوات	کراوات	clothes
 foulard	noun	m		روسری	روسری	clothes
@@ -545,7 +545,7 @@ poche	noun	f		جیب	جیب	clothes
 parapluie	noun	m		چتر	چتر	weather
 mode	noun	f		مُد	مد	clothes
 maillot de bain	noun	m	maillots de bain	مایو، لباس شنا	مایو	clothes
-pyjama	noun	m		لباس خواب، پیژامه	لباس خواب	clothes
+pyjama	noun	m		لباس خواب، پیژامه	لباس خواب	clothes	note:از «پای‌جامه» فارسی آمده (جامهٔ پا).
 coton	noun	m		پنبه، نخ (پارچه)	پنبه	clothes
 
 # transport and travel
@@ -558,7 +558,7 @@ autoroute	noun	f		بزرگراه، اتوبان	بزرگراه	transport
 circulation	noun	f		آمد و شد (خودروها)، ترافیک	ترافیک	transport
 embouteillage	noun	m		راه‌بندان، ترافیک سنگین	راه‌بندان	transport	checked:level
 vitesse	noun	f		سرعت	سرعت	transport
-essence	noun	f		بنزین	بنزین	transport
+essence	noun	f		بنزین	بنزین	transport	note:«اسانس» در فارسی عصاره و عطر است، ولی essence یعنی «بنزین».
 accident	noun	m		تصادف، حادثه	تصادف	transport
 panne	noun	f		خرابی (ماشین یا دستگاه)	خرابی	transport
 tomber en panne	phrase			خراب شدن (ماشین یا دستگاه)	خراب شدن	transport	parts:tomber panne
@@ -582,7 +582,7 @@ sac à dos	noun	m	sacs à dos	کوله‌پشتی	کوله‌پشتی	travel
 réservation	noun	f		رزرو، جا گرفتن	رزرو	travel	checked:level
 visa	noun	m		ویزا، روادید	ویزا	travel
 frontière	noun	f		مرز	مرز	travel
-douane	noun	f		گمرک	گمرک	travel
+douane	noun	f		گمرک	گمرک	travel	note:از «دیوان» فارسی (دفتر دولتی) آمده، از راه عربی.
 séjour	noun	m		اقامت (کوتاه)، مدت ماندن	اقامت	travel
 bon séjour	phrase			اقامت خوبی داشته باشید	اقامت خوش	travel	parts:bon séjour
 guide	noun	m		راهنمای تور، راهنما	راهنمای تور	travel
@@ -598,7 +598,7 @@ endroit	noun	m		جا، مکان	مکان	space
 lieu	noun	m	lieux	مکان، محل	مکان	space
 milieu	noun	m	milieux	وسط، میانه	وسط	space	coll:au milieu de la rue → وسط خیابان
 bout	noun	m		ته، نوک	ته	space	coll:au bout de la rue → ته خیابان
-tour	noun	m		گشت، یک دور (گردش)	گشت	leisure	code:tour-m
+tour	noun	m		گشت، یک دور (گردش)	گشت	leisure	code:tour-m	note:«تور» مسافرتی در فارسی از همین واژه است.
 faire un tour	phrase			گشتی زدن، دوری زدن	گشت زدن	leisure	parts:faire tour-m
 promenade	noun	f		گردش (کوتاه)، پیاده‌روی	گردش	leisure
 faire une promenade	phrase			قدم زدن، گردش کردن	قدم زدن	leisure	parts:faire promenade
@@ -609,7 +609,7 @@ trouver du travail	phrase			کار پیدا کردن	کار پیدا کردن	wo
 boulot	noun	m		کار	کار	work	register:familier
 entreprise	noun	f		شرکت، کسب‌وکار	شرکت	work
 patron	noun	m		صاحب‌کار، کارفرما	صاحب‌کار	work
-chef	noun	m		رئیس، سرپرست	رئیس	work
+chef	noun	m		رئیس، سرپرست	رئیس	work	note:«شف» در فارسی آشپز ماهر است، ولی chef یعنی «رئیس».
 directeur	noun	m		مدیر	مدیر	work
 collègue	noun	mf		همکار	همکار	work
 employé	noun	m		کارمند	کارمند	work
@@ -626,15 +626,15 @@ chômage	noun	m		بیکاری	بیکاری	work
 retraite	noun	f		بازنشستگی	بازنشستگی	work
 être à la retraite	phrase			بازنشسته بودن	بازنشسته بودن	work	parts:être retraite
 avocat	noun	m		وکیل	وکیل	work
-journaliste	noun	mf		روزنامه‌نگار، خبرنگار	روزنامه‌نگار	work
+journaliste	noun	mf		روزنامه‌نگار، خبرنگار	روزنامه‌نگار	work	note:در فارسی هم «ژورنالیست» می‌گوییم.
 coiffeur	noun	m		آرایشگر	آرایشگر	work
 boulanger	noun	m		نانوا	نانوا	work
-facteur	noun	m		نامه‌رسان، پستچی	نامه‌رسان	work
+facteur	noun	m		نامه‌رسان، پستچی	نامه‌رسان	work	note:«فاکتور» در فارسی یعنی عامل یا صورت‌حساب، ولی facteur یعنی «نامه‌رسان».
 pompier	noun	m		آتش‌نشان	آتش‌نشان	work
 mécanicien	noun	m		مکانیک	مکانیک	work
-architecte	noun	mf		معمار	معمار	work
+architecte	noun	mf		معمار	معمار	work	note:در فارسی هم «آرشیتکت» می‌گوییم.
 écrivain	noun	m		نویسنده	نویسنده	culture
-artiste	noun	mf		هنرمند	هنرمند	culture
+artiste	noun	mf		هنرمند	هنرمند	culture	note:«آرتیست» در فارسی بیشتر بازیگر سینماست، ولی artiste یعنی «هنرمند».
 musicien	noun	m		نوازنده، موسیقی‌دان	نوازنده	culture
 photographe	noun	mf		عکاس	عکاس	culture
 
@@ -642,7 +642,7 @@ photographe	noun	mf		عکاس	عکاس	culture
 examen	noun	m		امتحان	امتحان	education
 passer un examen	phrase			امتحان دادن	امتحان دادن	education	parts:passer examen
 réussir un examen	phrase			در امتحان قبول شدن	در امتحان قبول شدن	education	parts:réussir examen
-note	noun	f		نمره	نمره	education
+note	noun	f		نمره	نمره	education	note:«نُت» در فارسی نت موسیقی یا یادداشت است؛ note در مدرسه یعنی «نمره».
 devoir	noun	m		تکلیف (درسی)، مشق	تکلیف	education	code:devoir-noun	coll:faire ses devoirs → تکالیفش را انجام دادن
 avoir cours	phrase			کلاس داشتن	کلاس داشتن	education	parts:avoir cours
 diplôme	noun	m		مدرک تحصیلی، دیپلم	مدرک تحصیلی	education
@@ -669,7 +669,7 @@ corriger	verb			تصحیح کردن، درست کردن (غلط)	تصحیح کر
 traduire	verb			ترجمه کردن	ترجمه کردن	education
 enseigner	verb			درس دادن، آموزش دادن	درس دادن	education
 lecture	noun	f		خواندن، مطالعه	مطالعه	education	note:دوست دروغین: lecture یعنی «خواندن، مطالعه»، نه سخنرانی.
-sujet	noun	m		موضوع	موضوع	abstract
+sujet	noun	m		موضوع	موضوع	abstract	note:در فارسی «سوژه» از همین واژه است.
 s'inscrire	verb			ثبت‌نام کردن	ثبت‌نام کردن	education
 formulaire	noun	m		فرم، برگهٔ درخواست	فرم	abstract
 remplir	verb			پر کردن	پر کردن	actions
@@ -692,18 +692,18 @@ roman	noun	m		رمان	رمان	culture
 bande dessinée	noun	f	bandes dessinées	داستان مصور، کمیک	داستان مصور	culture
 magazine	noun	m		مجله	مجله	media
 jeu vidéo	noun	m	jeux vidéo	بازی ویدئویی، بازی کامپیوتری	بازی ویدئویی	leisure
-échecs	noun	m		شطرنج	شطرنج	leisure	number:pl_only
+échecs	noun	m		شطرنج	شطرنج	leisure	number:pl_only	note:از «شاه» فارسی آمده (بازی شاه).
 jouer aux échecs	phrase			شطرنج بازی کردن	شطرنج بازی کردن	leisure	parts:jouer échecs
 jouer aux cartes	phrase			ورق بازی کردن، پاسور بازی کردن	ورق بازی کردن	leisure	parts:jouer carte
-ballon	noun	m		توپ، بادکنک	توپ	leisure
+ballon	noun	m		توپ، بادکنک	توپ	leisure	note:«بالن» در فارسی بالن هوایی است، ولی ballon بیشتر یعنی «توپ».
 joueur	noun	m		بازیکن	بازیکن	leisure
-course	noun	f		مسابقهٔ دو	مسابقهٔ دو	leisure
+course	noun	f		مسابقهٔ دو	مسابقهٔ دو	leisure	note:در فارسی هم «کورس» (مسابقه) می‌گوییم.
 ski	noun	m		اسکی	اسکی	leisure
 faire du ski	phrase			اسکی کردن، اسکی رفتن	اسکی کردن	leisure	parts:faire ski
 natation	noun	f		شنا (ورزش)	شنا	leisure	checked:level
 faire du cheval	phrase			اسب‌سواری کردن	اسب‌سواری	leisure	parts:faire cheval
 faire de la musique	phrase			ساز زدن، موسیقی کار کردن	موسیقی کار کردن	leisure	parts:faire musique
-club	noun	m		باشگاه	باشگاه	leisure
+club	noun	m		باشگاه	باشگاه	leisure	note:در فارسی هم «کلوپ» می‌گوییم.
 foot	noun	m		فوتبال	فوتبال	leisure	register:familier
 ciné	noun	m		سینما	سینما	leisure	register:familier
 resto	noun	m		رستوران	رستوران	city	register:familier
@@ -828,7 +828,7 @@ environnement	noun	m		محیط زیست	محیط زیست	nature
 pollution	noun	f		آلودگی	آلودگی	nature	checked:level
 planète	noun	f		سیاره	سیاره	nature
 lune	noun	f		ماه (کرهٔ ماه)	کره ماه	nature
-étoile	noun	f		ستاره	ستاره	nature
+étoile	noun	f		ستاره	ستاره	nature	note:هم‌ریشه با «ستاره» در فارسی.
 rivière	noun	f		رودخانه، رود (کوچک)	رودخانه	nature
 fleuve	noun	m		رود بزرگ	رود بزرگ	nature
 océan	noun	m		اقیانوس	اقیانوس	nature
@@ -855,10 +855,10 @@ lion	noun	m		شیر (جانور)	شیر جانور	animals
 tigre	noun	m		ببر	ببر	animals
 éléphant	noun	m		فیل	فیل	animals
 singe	noun	m		میمون	میمون	animals
-ours	noun	m		خرس	خرس	animals
+ours	noun	m		خرس	خرس	animals	note:هم‌ریشه با «خرس» در فارسی.
 loup	noun	m		گرگ	گرگ	animals
 serpent	noun	m		مار	مار	animals
-papillon	noun	m		پروانه	پروانه	animals
+papillon	noun	m		پروانه	پروانه	animals	note:«پاپیون» در فارسی کراوات پروانه‌ای است، ولی papillon یعنی «پروانه».
 insecte	noun	m		حشره	حشره	animals
 
 # ideas, opinions and things
@@ -932,9 +932,9 @@ horrible	adj			وحشتناک، افتضاح	وحشتناک	qualities
 énorme	adj			عظیم، خیلی بزرگ	عظیم	qualities
 urgent	adj			فوری، اضطراری	فوری	abstract
 classique	adj			کلاسیک	کلاسیک	culture
-neuf	adj			نو (دست‌نخورده)، تازه‌ساخته	دست‌نخورده	qualities	code:neuf-adj	note:neuf یعنی تازه‌ساخته و کارنکرده (une voiture neuve)؛ nouveau یعنی جدید و تازه‌رسیده (ma nouvelle voiture، شاید دست دوم).
+neuf	adj			نو (دست‌نخورده)، تازه‌ساخته	دست‌نخورده	qualities	code:neuf-adj	note:neuf یعنی تازه‌ساخته و کارنکرده (une voiture neuve)؛ nouveau یعنی جدید و تازه‌رسیده (ma nouvelle voiture، شاید دست دوم). هم‌ریشه با «نو» در فارسی.
 pire	adj			بدتر، بدترین (le pire)	بدتر	qualities
-général	adj			کلی، عمومی	کلی	abstract	coll:en général → معمولاً، به طور کلی
+général	adj			کلی، عمومی	کلی	abstract	coll:en général → معمولاً، به طور کلی	note:«ژنرال» در فارسی درجهٔ نظامی است، ولی général (صفت) یعنی «کلی».
 tellement	adv			آن‌قدر، به قدری	آن‌قدر	qualities
 debout	adv			ایستاده، سرپا	ایستاده	space
 humide	adj			مرطوب، نم‌دار	مرطوب	weather
@@ -975,7 +975,7 @@ changement	noun	m		تغییر	تغییر	abstract
 reste	noun	m		بقیه، باقی‌مانده	بقیه	abstract
 activité	noun	f		فعالیت	فعالیت	leisure
 niveau	noun	m	niveaux	سطح، مرحله	سطح	education
-caractère	noun	m		اخلاق، منش	اخلاق	character
+caractère	noun	m		اخلاق، منش	اخلاق	character	note:«کاراکتر» در فارسی بیشتر شخصیت داستان است، ولی caractère یعنی «اخلاق».
 amitié	noun	f		دوستی	دوستی	people
 fatigue	noun	f		خستگی	خستگی	health
 blague	noun	f		شوخی، جوک	شوخی	leisure
@@ -984,7 +984,7 @@ ombre	noun	f		سایه	سایه	nature
 bord	noun	m		کنار، لبه	لبه	space	coll:au bord de la mer → کنار دریا
 intérieur	noun	m		داخل، درون	درون	space	coll:à l'intérieur → داخل، درون
 demi-heure	noun	f	demi-heures	نیم ساعت	نیم ساعت	time
-équipe	noun	f		تیم، گروه (ورزشی یا کاری)	تیم	leisure
+équipe	noun	f		تیم، گروه (ورزشی یا کاری)	تیم	leisure	note:در فارسی هم «اکیپ» می‌گوییم.
 voleur	noun	m		دزد	دزد	people
 vol	noun	m		دزدی، سرقت	دزدی	actions	code:vol-2	sense_of:vol
 incendie	noun	m		آتش‌سوزی	آتش‌سوزی	city
@@ -994,11 +994,11 @@ trottoir	noun	m		پیاده‌رو	پیاده‌رو	city
 panneau	noun	m	panneaux	تابلو (راهنما)، علامت	تابلو راهنما	city
 agence	noun	f		آژانس، دفتر (خدمات)	آژانس	city	coll:une agence de voyages → آژانس مسافرتی
 commissariat	noun	m		کلانتری	کلانتری	city
-guichet	noun	m		باجه	باجه	city
+guichet	noun	m		باجه	باجه	city	note:در فارسی هم «گیشه» می‌گوییم.
 distributeur	noun	m		دستگاه خودپرداز، عابربانک	خودپرداز	shopping
 code	noun	m		کد، رمز (کارت)	کد	media
 facture	noun	f		قبض، فاکتور	قبض	shopping
-portefeuille	noun	m		کیف پول	کیف پول	shopping
+portefeuille	noun	m		کیف پول	کیف پول	shopping	note:«پرتفوی» در فارسی سبد سهام است، ولی portefeuille یعنی «کیف پول».
 panier	noun	m		سبد	سبد	shopping
 carte d'identité	noun	f	cartes d'identité	کارت شناسایی، کارت ملی	کارت شناسایی	travel
 ambassade	noun	f		سفارت	سفارت	travel

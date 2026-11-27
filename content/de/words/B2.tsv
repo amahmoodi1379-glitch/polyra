@@ -139,7 +139,7 @@ Debatte	noun	die	Debatten	بحث (عمومی)، مناظره	مناظره	societ
 Ebene	noun	die	Ebenen	سطح، دشت	سطح (لایه)	abstract
 Effekt	noun	der	Effekte	اثر، جلوه	جلوه	abstract
 Erkenntnis	noun	die	Erkenntnisse	شناخت، یافته	یافته	education
-Faktor	noun	der	Faktoren	عامل	عامل	abstract
+Faktor	noun	der	Faktoren	عامل	عامل	abstract	note:«فاکتور» در فارسی بیشتر صورت‌حساب است، ولی Faktor یعنی «عامل».
 Funktion	noun	die	Funktionen	کارکرد، نقش	کارکرد	abstract
 Gesichtspunkt	noun	der	Gesichtspunkte	دیدگاه، نکته (از یک نظر)	نقطه نظر	abstract	mastery:recognize
 Grundlage	noun	die	Grundlagen	پایه، اساس	پایه	abstract
@@ -161,14 +161,14 @@ Potenzial	noun	das	Potenziale	توان بالقوه	توان بالقوه	abstra
 Prinzip	noun	das	Prinzipien	اصل	اصل	abstract	note:im Prinzip یعنی «اصولاً».
 Priorität	noun	die	Prioritäten	اولویت	اولویت	abstract
 Rahmen	noun	der	Rahmen	قاب، چارچوب	چارچوب	abstract
-Reform	noun	die	Reformen	اصلاحات	اصلاحات	society	mastery:recognize
+Reform	noun	die	Reformen	اصلاحات	اصلاحات	society	mastery:recognize	note:در فارسی هم «رفرم» می‌گوییم.
 Ressource	noun	die	Ressourcen	منبع (ذخیره)	منبع ذخیره	nature	mastery:recognize
 Schwerpunkt	noun	der	Schwerpunkte	محور اصلی، تمرکز	محور اصلی	abstract
 Stellungnahme	noun	die	Stellungnahmen	اظهار نظر رسمی	اظهار نظر	people	mastery:recognize
-Strategie	noun	die	Strategien	راهبرد	راهبرد	abstract
+Strategie	noun	die	Strategien	راهبرد	راهبرد	abstract	note:در فارسی هم «استراتژی» می‌گوییم.
 Struktur	noun	die	Strukturen	ساختار	ساختار	abstract
 Tendenz	noun	die	Tendenzen	گرایش، روند	گرایش	abstract
-These	noun	die	Thesen	فرضیه، ادعا (در بحث)	فرضیه	education	mastery:recognize
+These	noun	die	Thesen	فرضیه، ادعا (در بحث)	فرضیه	education	mastery:recognize	note:در فارسی هم «تز» می‌گوییم.
 Umfang	noun	der	Umfänge	اندازه، حجم	حجم	numbers
 Umfrage	noun	die	Umfragen	نظرسنجی	نظرسنجی	society
 Umgang	noun	der		رفتار، برخورد (با چیزی)	نحوه برخورد	people	number:sg_only
@@ -258,10 +258,10 @@ verurteilen	verb			محکوم کردن	محکوم کردن	society	mastery:recog
 Anklage	noun	die	Anklagen	اتهام، کیفرخواست	کیفرخواست	society	mastery:recognize
 Vorschrift	noun	die	Vorschriften	مقررات، دستور (اداری)	مقررات	society
 Bestimmung	noun	die	Bestimmungen	مقرره، تعیین	مقرره	society	mastery:recognize
-Paragraf	noun	der	Paragrafen	ماده (قانون)، بند	ماده قانون	society	mastery:recognize
+Paragraf	noun	der	Paragrafen	ماده (قانون)، بند	ماده قانون	society	mastery:recognize	note:«پاراگراف» در فارسی بند متن است، ولی Paragraf یعنی «ماده‌ی قانون».
 Täter	noun	der	Täter	مجرم، عامل (جرم)	عامل جرم	society	mastery:recognize
 Verbrecher	noun	der	Verbrecher	جنایتکار	جنایتکار	society	mastery:recognize
-Mord	noun	der	Morde	قتل	قتل	society	mastery:recognize
+Mord	noun	der	Morde	قتل	قتل	society	mastery:recognize	note:هم‌ریشه با «مرگ» و «مردن» در فارسی.
 Mörder	noun	der	Mörder	قاتل	قاتل	society	mastery:recognize
 töten	verb			کشتن	کشتن	society	mastery:recognize	checked:level
 Leiche	noun	die	Leichen	جسد	جسد	society	mastery:recognize
@@ -289,7 +289,7 @@ Bulle	noun	der	Bullen	پلیس (عامیانه)	مأمور پلیس	society	regi
 Knast	noun	der		زندان (عامیانه)	زندان	society	number:sg_only	register:familier	mastery:recognize
 Partei	noun	die	Parteien	حزب	حزب	society	mastery:recognize
 staatlich	adj			دولتی	دولتی	society
-Bürokratie	noun	die		کاغذبازی، دیوان‌سالاری	کاغذبازی	society	number:sg_only
+Bürokratie	noun	die		کاغذبازی، دیوان‌سالاری	کاغذبازی	society	number:sg_only	note:در فارسی هم «بوروکراسی» می‌گوییم.
 Steuerzahler	noun	der	Steuerzahler	مالیات‌دهنده	مالیات‌دهنده	economy	mastery:recognize
 Recht	noun	das	Rechte	حق (قانونی)	حق قانونی	society	code:Recht-2	sense_of:Recht	note:die Rechte der Kinder یعنی «حقوق کودکان».	checked:level
 Unrecht	noun	das		ناحق، بی‌عدالتی	ناحق	society	number:sg_only	note:Unrecht haben یعنی «اشتباه کردن (حق با کسی نبودن)».
@@ -363,7 +363,7 @@ Studie	noun	die	Studien	مطالعه (پژوهشی)	مطالعه پژوهشی	ed
 Hypothese	noun	die	Hypothesen	فرض علمی	فرض علمی	science	mastery:recognize
 Erfinder	noun	der	Erfinder	مخترع	مخترع	science
 Entdeckung	noun	die	Entdeckungen	کشف	کشف	science
-Technologie	noun	die	Technologien	فناوری (پیشرفته)	فناوری پیشرفته	science
+Technologie	noun	die	Technologien	فناوری (پیشرفته)	فناوری پیشرفته	science	note:در فارسی هم «تکنولوژی» می‌گوییم.
 künstlich	adj			مصنوعی	مصنوعی	science
 Intelligenz	noun	die		هوش	هوش	science	number:sg_only
 künstliche Intelligenz	phrase			هوش مصنوعی	هوش مصنوعی	science	parts:künstlich Intelligenz
@@ -385,12 +385,12 @@ Waldbrand	noun	der	Waldbrände	آتش‌سوزی جنگل	آتش‌سوزی جن
 Umweltverschmutzung	noun	die		آلودگی محیط زیست	آلودگی محیط	nature	number:sg_only
 Schadstoff	noun	der	Schadstoffe	ماده‌ی آلاینده	آلاینده	nature
 Emission	noun	die	Emissionen	انتشار (گاز)	انتشار گاز	nature	mastery:recognize
-Algorithmus	noun	der	Algorithmen	الگوریتم	الگوریتم	media	mastery:recognize
+Algorithmus	noun	der	Algorithmen	الگوریتم	الگوریتم	media	mastery:recognize	note:از نام «خوارزمی»، ریاضی‌دان ایرانی، گرفته شده.
 Hacker	noun	der	Hacker	هکر	هکر	media
 Virus	noun	das	Viren	ویروس (کامپیوتر)	ویروس کامپیوتری	media	code:Virus-2	sense_of:Virus
 Bildschirmzeit	noun	die		زمانِ پای صفحه‌ی گوشی	زمان صفحه	media	number:sg_only	mastery:recognize
 Schlagzeile	noun	die	Schlagzeilen	تیتر خبر	تیتر	media
-Reportage	noun	die	Reportagen	گزارش (مستند)	گزارش مستند	media
+Reportage	noun	die	Reportagen	گزارش (مستند)	گزارش مستند	media	note:در فارسی هم «رپورتاژ» می‌گوییم.
 Sender	noun	der	Sender	شبکه (رادیو یا تلویزیون)، فرستنده	شبکه تلویزیون	media
 Falschmeldung	noun	die	Falschmeldungen	خبر دروغ	خبر دروغ	media
 Quelle	noun	die	Quellen	منبع (خبر)	منبع خبر	media	code:Quelle-2	sense_of:Quelle
@@ -398,7 +398,7 @@ Leser	noun	der	Leser	خواننده (متن)	خواننده متن	media
 Leserin	noun	die	Leserinnen	خواننده (زن)	خواننده متن زن	media
 Zuhörer	noun	der	Zuhörer	شنونده	شنونده	media
 Meldung	noun	die	Meldungen	خبر کوتاه، گزارش	خبر کوتاه	media
-Kommentar	noun	der	Kommentare	نظر، تفسیر	تفسیر	media
+Kommentar	noun	der	Kommentare	نظر، تفسیر	تفسیر	media	note:در فارسی هم «کامنت» می‌گوییم.
 kommentieren	verb			نظر دادن، تفسیر کردن	تفسیر کردن	media
 Beitrag	noun	der	Beiträge	پست (در شبکه)، برنامه	پست شبکه	media	code:Beitrag-2	sense_of:Beitrag
 Plattform	noun	die	Plattformen	سکو، پلتفرم	پلتفرم	media
@@ -406,28 +406,28 @@ Signal	noun	das	Signale	علامت، سیگنال	سیگنال	media
 Code	noun	der	Codes	کد، رمز	کد	media
 Maschine	noun	die	Maschinen	هواپیما (عامیانه)	هواپیما	transport	code:Maschine-2	sense_of:Maschine	mastery:recognize
 Roboter	noun	der	Roboter	ربات	ربات	science
-automatisch	adj			خودکار	اتوماتیک	science
+automatisch	adj			خودکار	اتوماتیک	science	note:در فارسی هم «اتوماتیک» می‌گوییم.
 virtuell	adj			مجازی	مجازی	media
 Bildungssystem	noun	das	Bildungssysteme	نظام آموزشی	نظام آموزشی	education
 
 # culture, history, everyday life
 Epoche	noun	die	Epochen	دوره (تاریخی)	دوره تاریخی	time	mastery:recognize
 Jubiläum	noun	das	Jubiläen	سالگرد (مثلاً بیست‌وپنج‌ساله)	سالگرد	culture	mastery:recognize
-Kaiser	noun	der	Kaiser	امپراتور	امپراتور	culture	mastery:recognize
-Prinz	noun	der	Prinzen	شاهزاده	شاهزاده	culture
-Prinzessin	noun	die	Prinzessinnen	شاهزاده خانم	شاهزاده خانم	culture
+Kaiser	noun	der	Kaiser	امپراتور	امپراتور	culture	mastery:recognize	note:همان «قیصر» است (قیصر روم)؛ هر دو از نام «سزار» آمده‌اند.
+Prinz	noun	der	Prinzen	شاهزاده	شاهزاده	culture	note:در فارسی هم «پرنس» می‌گوییم.
+Prinzessin	noun	die	Prinzessinnen	شاهزاده خانم	شاهزاده خانم	culture	note:در فارسی هم «پرنسس» می‌گوییم.
 Riese	noun	der	Riesen	غول	غول	culture
 Hexe	noun	die	Hexen	جادوگر (زن، در قصه)	جادوگر	culture
-Magie	noun	die		جادو	جادو	culture	number:sg_only
+Magie	noun	die		جادو	جادو	culture	number:sg_only	note:از «مُغ» (روحانی زرتشتی) در فارسی باستان آمده.
 Schatz	noun	der	Schätze	گنج	گنج	culture	checked:level
 Schwert	noun	das	Schwerter	شمشیر	شمشیر	culture	mastery:recognize
 Monster	noun	das	Monster	هیولا	هیولا	culture
 Schlacht	noun	die	Schlachten	نبرد	نبرد	culture	mastery:recognize
 Kapitän	noun	der	Kapitäne	ناخدا، کاپیتان	ناخدا	transport
 Bord	noun	der		عرشه (کشتی یا هواپیما)	عرشه	transport	number:sg_only	note:an Bord یعنی «در کشتی یا هواپیما».
-Band	noun	die	Bands	گروه موسیقی	گروه موسیقی	culture
+Band	noun	die	Bands	گروه موسیقی	گروه موسیقی	culture	note:«باند» در فارسی یعنی دار و دسته یا بلندگو، ولی Band یعنی «گروه موسیقی».
 Ball	noun	der	Bälle	توپ	توپ	leisure
-Sack	noun	der	Säcke	کیسه‌ی بزرگ، گونی	گونی	home
+Sack	noun	der	Säcke	کیسه‌ی بزرگ، گونی	گونی	home	note:«ساک» در فارسی کیف سفری است، ولی Sack یعنی «گونی».
 Grab	noun	das	Gräber	قبر	قبر	society
 begraben	verb			دفن کردن	دفن کردن	society	mastery:recognize
 Scheidung	noun	die	Scheidungen	طلاق	طلاق	family	mastery:recognize
@@ -770,7 +770,7 @@ Jagd	noun	die	Jagden	شکار	شکار (اسم)	animals
 Jäger	noun	der	Jäger	شکارچی	شکارچی	animals
 
 # body and looks: more
-Augenbraue	noun	die	Augenbrauen	ابرو	ابرو	body
+Augenbraue	noun	die	Augenbrauen	ابرو	ابرو	body	note:بخش Braue آن با «ابرو» در فارسی هم‌ریشه است.
 Wimper	noun	die	Wimpern	مژه	مژه	body
 Wange	noun	die	Wangen	گونه	گونه	body
 Kinn	noun	das	Kinne	چانه	چانه	body
@@ -1164,7 +1164,7 @@ Reporter	noun	der	Reporter	خبرنگار	گزارشگر	media
 Reporterin	noun	die	Reporterinnen	خبرنگار (زن)	گزارشگر زن	media
 Klient	noun	der	Klienten	مراجع، مشتری (وکیل یا مشاور)	مراجع	work
 Klientin	noun	die	Klientinnen	مراجع (زن)	مراجع زن	work
-Kandidat	noun	der	Kandidaten	نامزد، داوطلب	نامزد (انتخابات)	society
+Kandidat	noun	der	Kandidaten	نامزد، داوطلب	نامزد (انتخابات)	society	note:در فارسی هم «کاندیدا» می‌گوییم.
 Kandidatin	noun	die	Kandidatinnen	نامزد (زن)	نامزد زن	society
 Käufer	noun	der	Käufer	خریدار	خریدار	shopping
 Käuferin	noun	die	Käuferinnen	خریدار (زن)	خریدار زن	shopping
@@ -1241,7 +1241,7 @@ Anwesenheit	noun	die		حضور	حضور	people	number:sg_only
 Abwesenheit	noun	die		غیبت، نبودن	نبودن	people	number:sg_only
 Abschied	noun	der	Abschiede	خداحافظی	خداحافظی	people
 Existenz	noun	die	Existenzen	وجود، هستی	هستی	abstract
-Symbol	noun	das	Symbole	نماد	نماد	culture
+Symbol	noun	das	Symbole	نماد	نماد	culture	note:در فارسی هم «سمبل» می‌گوییم.
 Aktion	noun	die	Aktionen	اقدام؛ حراج ویژه	اقدام	actions
 Loyalität	noun	die		وفاداری	وفاداری	character	number:sg_only
 Kompliment	noun	das	Komplimente	تعریف، تحسین	تعریف و تمجید	people
@@ -1270,7 +1270,7 @@ Manieren	noun	die		آداب، ادب	آداب	people	number:pl_only
 Alternative	noun	die	Alternativen	راه دیگر، جایگزین	راه دیگر	abstract
 Ferne	noun	die		دوردست	دوردست	space	number:sg_only
 Kommunikation	noun	die		ارتباط	ارتباط (گفتگو)	people	number:sg_only
-Analyse	noun	die	Analysen	تحلیل	تحلیل	science
+Analyse	noun	die	Analysen	تحلیل	تحلیل	science	note:در فارسی هم «آنالیز» می‌گوییم.
 Elend	noun	das		فلاکت، بدبختی	فلاکت	society	number:sg_only	mastery:recognize
 Zeitverschwendung	noun	die		اتلاف وقت	اتلاف وقت	time	number:sg_only
 Aufstand	noun	der	Aufstände	شورش، قیام	شورش	society	mastery:recognize
@@ -1292,12 +1292,12 @@ Ruhestand	noun	der		بازنشستگی	بازنشستگی	work	number:sg_only
 Geschrei	noun	das		داد و فریاد	داد و فریاد	people	number:sg_only
 Autorität	noun	die	Autoritäten	اقتدار، مرجعیت	اقتدار	society
 Kürze	noun	die		کوتاهی، اختصار	اختصار	time	number:sg_only	note:Das Ergebnis kommt in Kürze. یعنی «نتیجه به‌زودی می‌آید».
-Disziplin	noun	die	Disziplinen	انضباط؛ رشته (ورزشی)	انضباط	character
+Disziplin	noun	die	Disziplinen	انضباط؛ رشته (ورزشی)	انضباط	character	note:در فارسی هم «دیسیپلین» می‌گوییم.
 Charme	noun	der		جذابیت رفتار	جذابیت رفتار	character	number:sg_only
 Ablenkung	noun	die	Ablenkungen	سرگرمی، حواس‌پرتی	حواس پرتی	feelings
 Gleichgewicht	noun	das		تعادل	تعادل	body	number:sg_only
 Zuneigung	noun	die		محبت، علاقه	علاقه و محبت	feelings	number:sg_only
-Dosis	noun	die	Dosen	مقدار مصرف دارو	دوز دارو	health
+Dosis	noun	die	Dosen	مقدار مصرف دارو	دوز دارو	health	note:در فارسی هم «دوز» می‌گوییم (دوز دارو).
 Begleitung	noun	die	Begleitungen	همراهی، همراه	همراهی	people
 Echo	noun	das	Echos	پژواک	پژواک	nature
 Illusion	noun	die	Illusionen	توهم، خیال باطل	خیال باطل	feelings
@@ -1394,7 +1394,7 @@ Zone	noun	die	Zonen	منطقه	منطقه (محدوده)	space
 Sektor	noun	der	Sektoren	بخش (اقتصاد)	بخش اقتصادی	economy	mastery:recognize
 Bezirk	noun	der	Bezirke	منطقه (شهر)، ناحیه	ناحیه شهری	city
 Standort	noun	der	Standorte	محل، موقعیت مکانی	موقعیت مکانی	space
-Halle	noun	die	Hallen	سالن بزرگ	سالن بزرگ	city
+Halle	noun	die	Hallen	سالن بزرگ	سالن بزرگ	city	note:«هال» در فارسی اتاق نشیمن است، ولی Halle یعنی «سالن بزرگ».
 Saal	noun	der	Säle	تالار	تالار	city
 Salon	noun	der	Salons	سالن (آرایش)	سالن آرایش	city
 Villa	noun	die	Villen	ویلا	ویلا	home
@@ -1497,7 +1497,7 @@ Applaus	noun	der		تشویق (کف زدن)	کف زدن	culture	number:sg_only
 Auftritt	noun	der	Auftritte	اجرا (روی صحنه)	اجرای صحنه	culture
 Akt	noun	der	Akte	پرده (نمایش)؛ عمل	پرده نمایش	culture	mastery:recognize
 Chor	noun	der	Chöre	گروه کُر	گروه کر	culture
-Drama	noun	das	Dramen	نمایش‌نامه؛ ماجرای پرهیاهو	نمایش نامه	culture
+Drama	noun	das	Dramen	نمایش‌نامه؛ ماجرای پرهیاهو	نمایش نامه	culture	note:در فارسی هم «درام» می‌گوییم.
 Finale	noun	das	Finale	فینال	فینال	leisure
 Zeremonie	noun	die	Zeremonien	مراسم	مراسم	culture
 Hochzeitstag	noun	der	Hochzeitstage	سالگرد ازدواج	سالگرد ازدواج	family
@@ -1657,7 +1657,7 @@ Stille	noun	die		سکوت، آرامش	سکوت	feelings	number:sg_only
 Leere	noun	die		خلأ، تهی بودن	خلأ	feelings	number:sg_only
 Legende	noun	die	Legenden	افسانه	اسطوره	culture
 Last	noun	die	Lasten	بار (سنگین)	بار سنگین	abstract
-Bande	noun	die	Banden	دار و دسته	دار و دسته	society	mastery:recognize
+Bande	noun	die	Banden	دار و دسته	دار و دسته	society	mastery:recognize	note:در فارسی هم «باند» می‌گوییم (باند تبهکاری).
 Bau	noun	der	Bauten	ساختمان‌سازی؛ بنا	ساخت و ساز	city
 Vision	noun	die	Visionen	چشم‌انداز، رؤیا	چشم انداز	abstract
 Tiefe	noun	die	Tiefen	عمق	عمق	space
@@ -1665,7 +1665,7 @@ Treue	noun	die		وفاداری (به کسی)	وفاداری	character	number:sg_
 Sieger	noun	der	Sieger	برنده	برنده	leisure
 Siegerin	noun	die	Siegerinnen	برنده (زن)	برنده زن	leisure
 Klinge	noun	die	Klingen	تیغه	تیغه	home	mastery:recognize
-Jury	noun	die	Jurys	هیئت داوران	هیئت داوران	leisure
+Jury	noun	die	Jurys	هیئت داوران	هیئت داوران	leisure	note:در فارسی هم «ژوری» می‌گوییم.
 Heirat	noun	die	Heiraten	ازدواج	ازدواج	family
 Reichweite	noun	die	Reichweiten	دسترس، برد	برد	space
 Schrecken	noun	der	Schrecken	وحشت، ترس ناگهانی	ترس ناگهانی	feelings
@@ -1675,7 +1675,7 @@ Dichterin	noun	die	Dichterinnen	شاعر (زن)	شاعر زن	culture
 Herde	noun	die	Herden	گله	گله	animals
 Kammer	noun	die	Kammern	اتاقک؛ اتاق (اصناف)	اتاقک	home
 Anweisung	noun	die	Anweisungen	دستورالعمل	دستورالعمل	work
-Geste	noun	die	Gesten	اشاره (با دست)؛ کار نمادین	ژست	body
+Geste	noun	die	Gesten	اشاره (با دست)؛ کار نمادین	ژست	body	note:در فارسی هم «ژست» می‌گوییم.
 Privatleben	noun	das		زندگی خصوصی	زندگی خصوصی	society	number:sg_only
 Kaugummi	noun	der	Kaugummis	آدامس	آدامس	food
 Weltkrieg	noun	der	Weltkriege	جنگ جهانی	جنگ جهانی	society	mastery:recognize
@@ -1729,7 +1729,7 @@ Vorsprung	noun	der	Vorsprünge	برتری، فاصله‌ی پیشتازی	پی�
 Höhepunkt	noun	der	Höhepunkte	اوج	اوج	abstract
 Wachmann	noun	der	Wachmänner	نگهبان (ساختمان)	نگهبان ساختمان	work
 Tinte	noun	die	Tinten	جوهر	جوهر	education
-Lizenz	noun	die	Lizenzen	مجوز	مجوز	work
+Lizenz	noun	die	Lizenzen	مجوز	مجوز	work	note:«لیسانس» در فارسی مدرک دانشگاهی است، ولی Lizenz یعنی «مجوز».
 Schwindel	noun	der		سرگیجه؛ کلک	سرگیجه (اسم)	health	number:sg_only
 Biss	noun	der	Bisse	گاز (گرفتن)	گاز گرفتگی	animals
 Philosophie	noun	die	Philosophien	فلسفه	فلسفه	science
@@ -1745,7 +1745,7 @@ Motto	noun	das	Mottos	شعار	شعار	culture
 Rekord	noun	der	Rekorde	رکورد	رکورد	leisure
 Armband	noun	das	Armbänder	دستبند	دستبند	clothes
 Handschrift	noun	die	Handschriften	دست‌خط	دست خط	education
-Luxus	noun	der		تجمل	تجمل	economy	number:sg_only
+Luxus	noun	der		تجمل	تجمل	economy	number:sg_only	note:در فارسی هم «لوکس» می‌گوییم.
 Schwung	noun	der	Schwünge	شور، انرژی؛ تاب	شور و انرژی	feelings
 Hülle	noun	die	Hüllen	جلد، پوشش	جلد	home
 Einkaufszentrum	noun	das	Einkaufszentren	مرکز خرید	مرکز خرید	shopping
@@ -1760,7 +1760,7 @@ Inspiration	noun	die	Inspirationen	الهام	الهام	culture
 Parfüm	noun	das	Parfüms	عطر	عطر	body
 Entlassung	noun	die	Entlassungen	اخراج؛ ترخیص	اخراج	work
 Hauch	noun	der	Hauche	نفس؛ کمی، ردی از	کمی از	abstract	mastery:recognize
-Routine	noun	die	Routinen	روال، عادت روزانه	روال روزانه	time
+Routine	noun	die	Routinen	روال، عادت روزانه	روال روزانه	time	note:در فارسی هم «روتین» می‌گوییم.
 Umkreis	noun	der		اطراف، شعاع	اطراف	space	number:sg_only
 Ärmel	noun	der	Ärmel	آستین	آستین	clothes
 Tausch	noun	der	Tausche	مبادله، عوض	مبادله	shopping
@@ -2020,7 +2020,7 @@ Ablehnung	noun	die	Ablehnungen	رد، مخالفت	رد (اسم)	people
 Personalabteilung	noun	die	Personalabteilungen	بخش کارگزینی	کارگزینی	work
 Begründung	noun	die	Begründungen	دلیل آوردن، توجیه	توجیه	abstract
 Injektion	noun	die	Injektionen	تزریق	تزریق	health
-Dekoration	noun	die	Dekorationen	تزئینات	تزئینات	home
+Dekoration	noun	die	Dekorationen	تزئینات	تزئینات	home	note:در فارسی هم «دکوراسیون» می‌گوییم.
 Aggression	noun	die	Aggressionen	پرخاشگری	پرخاشگری	feelings
 Formalität	noun	die	Formalitäten	تشریفات اداری	تشریفات	work
 Versöhnung	noun	die	Versöhnungen	آشتی	آشتی	people
@@ -2035,7 +2035,7 @@ Optimismus	noun	der		خوش‌بینی	خوش بینی	feelings	number:sg_only
 Verpflegung	noun	die		غذا (در سفر یا اردو)	غذای سفر	travel	number:sg_only
 Zurückhaltung	noun	die		خودداری، محافظه‌کاری	خودداری	character	number:sg_only
 Orientierung	noun	die		جهت‌یابی	جهت یابی	space	number:sg_only
-Mechanismus	noun	der	Mechanismen	سازوکار	سازوکار	science
+Mechanismus	noun	der	Mechanismen	سازوکار	سازوکار	science	note:در فارسی هم «مکانیزم» می‌گوییم.
 Normalität	noun	die		حالت عادی	حالت عادی	abstract	number:sg_only
 Meditation	noun	die	Meditationen	مراقبه	مراقبه	health
 Kur	noun	die	Kuren	دوره‌ی درمان (آب‌درمانی)	دوره درمان	health
@@ -2053,7 +2053,7 @@ Unfähigkeit	noun	die		ناتوانی	ناتوانی	character	number:sg_only
 Ethik	noun	die		اخلاق (علم)	علم اخلاق	science	number:sg_only
 Infrastruktur	noun	die	Infrastrukturen	زیرساخت	زیرساخت	society
 Transaktion	noun	die	Transaktionen	تراکنش	تراکنش	economy
-Opposition	noun	die	Oppositionen	مخالفان (حزب)	اپوزیسیون	society	mastery:recognize
+Opposition	noun	die	Oppositionen	مخالفان (حزب)	اپوزیسیون	society	mastery:recognize	note:در فارسی هم «اپوزیسیون» می‌گوییم.
 Verlängerung	noun	die	Verlängerungen	تمدید	تمدید	work
 Erfrischung	noun	die	Erfrischungen	نوشیدنی خنک، تازه شدن	نوشیدنی خنک	drink
 Feuchtigkeit	noun	die		رطوبت	رطوبت	weather	number:sg_only
@@ -2103,7 +2103,7 @@ Steuererklärung	noun	die	Steuererklärungen	اظهارنامه‌ی مالیا�
 
 # words the B2 phrases are built from
 Mittelpunkt	noun	der	Mittelpunkte	مرکز، کانون	کانون	space
-Bilanz	noun	die	Bilanzen	ترازنامه؛ جمع‌بندی نتیجه	ترازنامه	economy
+Bilanz	noun	die	Bilanzen	ترازنامه؛ جمع‌بندی نتیجه	ترازنامه	economy	note:در فارسی هم «بیلان» می‌گوییم (بیلان کار).
 Gebrauch	noun	der	Gebräuche	به‌کار بردن، مصرف	مصرف و کاربرد	abstract
 Bezug	noun	der	Bezüge	ارتباط، نسبت؛ روکش	ارتباط و نسبت	abstract
 leisten	verb			انجام دادن، به ثمر رساندن	به انجام رساندن	work	note:Sie hat viel geleistet. یعنی «او کارهای زیادی انجام داده است».

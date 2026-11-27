@@ -103,7 +103,7 @@ vorgestern	adv			پریروز	پریروز	time	checked:level
 pünktlich	adj			سر وقت، وقت‌شناس	سر وقت	time
 Anfang	noun	der	Anfänge	شروع، اول (ماه، کار)	شروع	time
 Ende	noun	das	Enden	پایان، آخر	پایان	time
-Mitte	noun	die		وسط، اواسط	وسط	space	number:sg_only
+Mitte	noun	die		وسط، اواسط	وسط	space	number:sg_only	note:هم‌ریشه با «میان» در فارسی.
 Zukunft	noun	die		آینده	آینده	time	number:sg_only
 Jahrhundert	noun	das	Jahrhunderte	قرن، سده	قرن	time
 Sekunde	noun	die	Sekunden	ثانیه	ثانیه	time
@@ -302,7 +302,7 @@ Geburt	noun	die	Geburten	به دنیا آمدن، تولد	به دنیا آمد�
 sich kümmern	verb			مراقبت کردن، رسیدگی کردن	مراقبت کردن	family	note:بعد از این فعل um می‌آید: Ich kümmere mich um meine Oma (از مادربزرگم مراقبت می‌کنم).
 
 # home: furniture, the building, moving, housework
-Möbel	noun	das	Möbel	مبلمان، اثاثیه	اثاثیه	home	note:بیشتر جمع به کار می‌رود: die Möbel.
+Möbel	noun	das	Möbel	مبلمان، اثاثیه	اثاثیه	home	note:بیشتر جمع به کار می‌رود: die Möbel. «مبل» در فارسی یعنی کاناپه، ولی Möbel یعنی همه‌ی اثاثیه‌ی خانه.
 Regal	noun	das	Regale	قفسه	قفسه	home	checked:level
 Schreibtisch	noun	der	Schreibtische	میز تحریر	میز تحریر	home
 Sessel	noun	der	Sessel	مبل تک‌نفره	مبل تک‌نفره	home	checked:level
@@ -398,7 +398,7 @@ Marmelade	noun	die	Marmeladen	مربا	مربا	food	checked:level
 Joghurt	noun	der	Joghurts	ماست	ماست	food	checked:level
 Müsli	noun	das	Müslis	موسلی (غلات صبحانه)	موسلی	food	checked:level
 Sahne	noun	die		خامه	خامه	food	number:sg_only	checked:level
-Keks	noun	der	Kekse	بیسکویت، کلوچه	بیسکویت	food
+Keks	noun	der	Kekse	بیسکویت، کلوچه	بیسکویت	food	note:با «کیک» هم‌ریشه است، ولی Keks یعنی «بیسکویت»، نه کیک.
 Bonbon	noun	das	Bonbons	آب‌نبات	آب‌نبات	food	checked:level
 Nuss	noun	die	Nüsse	گردو، آجیل	آجیل	food	checked:level
 Erdbeere	noun	die	Erdbeeren	توت‌فرنگی	توت‌فرنگی	food	checked:level
@@ -418,7 +418,7 @@ Lammfleisch	noun	das		گوشت بره	گوشت بره	food	number:sg_only
 Hackfleisch	noun	das		گوشت چرخ‌کرده	گوشت چرخ‌کرده	food	number:sg_only	checked:level
 Pommes	noun	die		سیب‌زمینی سرخ‌کرده	سیب‌زمینی سرخ‌کرده	food	number:pl_only
 Mineralwasser	noun	das	Mineralwässer	آب معدنی	آب معدنی	drink	checked:level
-Limonade	noun	die	Limonaden	لیموناد، نوشابه	لیموناد	drink
+Limonade	noun	die	Limonaden	لیموناد، نوشابه	لیموناد	drink	note:ریشه‌اش «لیمو»ی فارسی است (از راه عربی و فرانسوی).
 Kakao	noun	der	Kakaos	کاکائو	کاکائو	drink	checked:level
 Gericht	noun	das	Gerichte	غذا (یک نوع خوراک)، خوراک	خوراک	food
 Vorspeise	noun	die	Vorspeisen	پیش‌غذا	پیش‌غذا	food	checked:level
@@ -453,7 +453,7 @@ einen Tisch reservieren	phrase			میز رزرو کردن	میز رزرو کرد
 # shopping, clothes, money and the bank
 Laden	noun	der	Läden	مغازه، دکان	مغازه	shopping
 Kaufhaus	noun	das	Kaufhäuser	فروشگاه بزرگ	فروشگاه بزرگ	shopping	checked:level
-Kiosk	noun	der	Kioske	کیوسک، دکه	دکه	shopping	checked:level
+Kiosk	noun	der	Kioske	کیوسک، دکه	دکه	shopping	checked:level	note:از «کوشک» فارسی آمده (از راه ترکی).
 Buchhandlung	noun	die	Buchhandlungen	کتاب‌فروشی	کتاب‌فروشی	shopping	checked:level
 Drogerie	noun	die	Drogerien	فروشگاه لوازم بهداشتی	فروشگاه لوازم بهداشتی	shopping	checked:level
 Kunde	noun	der	Kunden	مشتری	مشتری	shopping
@@ -475,7 +475,7 @@ ausziehen	verb			درآوردن (لباس)	درآوردن لباس	clothes	code:
 Bluse	noun	die	Blusen	بلوز زنانه	بلوز	clothes	checked:level
 Anzug	noun	der	Anzüge	کت و شلوار	کت و شلوار	clothes
 Krawatte	noun	die	Krawatten	کراوات	کراوات	clothes
-Schal	noun	der	Schals	شال گردن	شال گردن	clothes
+Schal	noun	der	Schals	شال گردن	شال گردن	clothes	note:از «شال» فارسی آمده.
 Mütze	noun	die	Mützen	کلاه (بافتنی)	کلاه بافتنی	clothes
 Hut	noun	der	Hüte	کلاه (لبه‌دار)	کلاه لبه‌دار	clothes
 Handschuh	noun	der	Handschuhe	دستکش	دستکش	clothes	checked:level
@@ -490,7 +490,7 @@ Dose	noun	die	Dosen	قوطی، کنسرو	قوطی	shopping
 Paar	noun	das	Paare	جفت	جفت	numbers
 bunt	adj			رنگارنگ، رنگی	رنگارنگ	colors	checked:level
 rosa	adj			صورتی	صورتی	colors
-lila	adj			بنفش	بنفش	colors
+lila	adj			بنفش	بنفش	colors	note:از «نیلک» (مایل به آبی) فارسی آمده، هم‌خانواده‌ی «نیلی».
 Konto	noun	das	Konten	حساب بانکی	حساب بانکی	economy
 Bargeld	noun	das		پول نقد	پول نقد	economy	number:sg_only
 bar	adv			نقد، نقدی	نقدی	shopping
@@ -523,7 +523,7 @@ Unterschrift	noun	die	Unterschriften	امضا	امضا	city
 ein Formular ausfüllen	phrase			فرم پر کردن	فرم پر کردن	city	parts:Formular ausfüllen
 Schalter	noun	der	Schalter	باجه	باجه	city
 Briefmarke	noun	die	Briefmarken	تمبر	تمبر	media	checked:level
-Paket	noun	das	Pakete	بسته پستی	بسته پستی	media
+Paket	noun	das	Pakete	بسته پستی	بسته پستی	media	note:«پاکت» در فارسی بیشتر پاکت نامه است، ولی Paket یعنی «بسته‌ی پستی».
 Briefkasten	noun	der	Briefkästen	صندوق پست	صندوق پست	media	checked:level
 Postleitzahl	noun	die	Postleitzahlen	کد پستی	کد پستی	media
 Absender	noun	der	Absender	فرستنده	فرستنده	media	checked:level
@@ -625,7 +625,7 @@ Rezeption	noun	die	Rezeptionen	پذیرش (هتل)	پذیرش	travel	checked:lev
 übernachten	verb			شب ماندن، اقامت شبانه	شب ماندن	travel
 Übernachtung	noun	die	Übernachtungen	اقامت شبانه، یک شب (هتل)	اقامت شبانه	travel
 Jugendherberge	noun	die	Jugendherbergen	مسافرخانه جوانان	مسافرخانه جوانان	travel
-Pension	noun	die	Pensionen	مسافرخانه	مسافرخانه	travel
+Pension	noun	die	Pensionen	مسافرخانه	مسافرخانه	travel	note:در فارسی هم «پانسیون» می‌گوییم.
 Ausflug	noun	der	Ausflüge	گردش یک‌روزه، گشت	گردش	travel
 einen Ausflug machen	phrase			به گردش رفتن	به گردش رفتن	travel	parts:Ausflug machen
 Tourist	noun	der	Touristen	گردشگر، توریست	گردشگر	travel	checked:level
@@ -689,9 +689,9 @@ Handwerker	noun	der	Handwerker	استادکار، صنعتگر	استادکار	
 Bauer	noun	der	Bauern	کشاورز	کشاورز	work
 Anwalt	noun	der	Anwälte	وکیل	وکیل	work
 Anwältin	noun	die	Anwältinnen	وکیل (زن)	وکیل زن	work
-Journalist	noun	der	Journalisten	روزنامه‌نگار	روزنامه‌نگار	work
+Journalist	noun	der	Journalisten	روزنامه‌نگار	روزنامه‌نگار	work	note:در فارسی هم «ژورنالیست» می‌گوییم.
 Rentner	noun	der	Rentner	بازنشسته	بازنشسته	work	checked:level
-Rente	noun	die	Renten	حقوق بازنشستگی	حقوق بازنشستگی	work
+Rente	noun	die	Renten	حقوق بازنشستگی	حقوق بازنشستگی	work	note:«رانت» در فارسی یعنی امتیاز ویژه، ولی Rente یعنی «حقوق بازنشستگی».
 in Rente gehen	phrase			بازنشسته شدن	بازنشسته شدن	work	parts:Rente gehen
 Drucker	noun	der	Drucker	چاپگر، پرینتر	چاپگر	work	checked:level
 drucken	verb			چاپ کردن، پرینت گرفتن	چاپ کردن	work	checked:level
@@ -712,7 +712,7 @@ Mathematik	noun	die		ریاضی	ریاضی	education	number:sg_only	checked:leve
 Mathe	noun	die		ریاضی	ریاضی	education	number:sg_only	register:familier
 Geschichte	noun	die	Geschichten	داستان، قصه	داستان	culture
 Geschichte	noun	die		تاریخ (درس)	تاریخ	education	number:sg_only	code:Geschichte-2	sense_of:Geschichte
-Note	noun	die	Noten	نمره	نمره	education	checked:level
+Note	noun	die	Noten	نمره	نمره	education	checked:level	note:«نت» در فارسی نت موسیقی است، ولی Note اینجا یعنی «نمره».
 Wörterbuch	noun	das	Wörterbücher	فرهنگ لغت، دیکشنری	فرهنگ لغت	education	checked:level
 Übung	noun	die	Übungen	تمرین	تمرین	education
 üben	verb			تمرین کردن	تمرین کردن	education
@@ -720,7 +720,7 @@ Lösung	noun	die	Lösungen	راه‌حل، جواب (تمرین)	راه‌حل	a
 lösen	verb			حل کردن	حل کردن	education
 korrigieren	verb			تصحیح کردن، غلط گرفتن	تصحیح کردن	education	checked:level
 Bedeutung	noun	die	Bedeutungen	معنی	معنی	education
-Grammatik	noun	die		دستور زبان	دستور زبان	education	number:sg_only	checked:level
+Grammatik	noun	die		دستور زبان	دستور زبان	education	number:sg_only	checked:level	note:در فارسی هم «گرامر» می‌گوییم.
 Aussprache	noun	die		تلفظ	تلفظ	education	number:sg_only	checked:level
 aussprechen	verb			تلفظ کردن	تلفظ کردن	education
 Thema	noun	das	Themen	موضوع	موضوع	education
@@ -745,7 +745,7 @@ Husten	noun	der		سرفه	سرفه	health	number:sg_only
 husten	verb			سرفه کردن	سرفه کردن	health
 Schnupfen	noun	der		آبریزش بینی، زکام	زکام	health	number:sg_only	checked:level
 Grippe	noun	die	Grippen	آنفولانزا	آنفولانزا	health
-Allergie	noun	die	Allergien	حساسیت	حساسیت	health	checked:level
+Allergie	noun	die	Allergien	حساسیت	حساسیت	health	checked:level	note:در فارسی هم «آلرژی» می‌گوییم.
 sich verletzen	verb			زخمی شدن، آسیب دیدن	آسیب دیدن	health
 verletzt	adj			زخمی، آسیب‌دیده	زخمی	health
 Blut	noun	das		خون	خون	body	number:sg_only
@@ -805,8 +805,8 @@ nass	adj			خیس	خیس	weather
 trocken	adj			خشک	خشک	weather
 kühl	adj			خنک	خنک	weather
 Himmel	noun	der	Himmel	آسمان	آسمان	nature
-Stern	noun	der	Sterne	ستاره	ستاره	nature
-Mond	noun	der	Monde	ماه (در آسمان)	ماه آسمان	nature
+Stern	noun	der	Sterne	ستاره	ستاره	nature	note:هم‌ریشه با «ستاره» در فارسی.
+Mond	noun	der	Monde	ماه (در آسمان)	ماه آسمان	nature	note:هم‌ریشه با «ماه» در فارسی.
 Erde	noun	die		زمین (سیاره)، خاک	کره زمین	nature	number:sg_only
 Welt	noun	die	Welten	دنیا، جهان	دنیا	nature
 Natur	noun	die		طبیعت	طبیعت	nature	number:sg_only
@@ -823,10 +823,10 @@ Blatt	noun	das	Blätter	برگ	برگ	nature
 Gras	noun	das	Gräser	علف، چمن	علف	nature
 Stein	noun	der	Steine	سنگ	سنگ	nature
 Feuer	noun	das	Feuer	آتش	آتش	nature
-Kuh	noun	die	Kühe	گاو	گاو	animals
+Kuh	noun	die	Kühe	گاو	گاو	animals	note:هم‌ریشه با «گاو» در فارسی.
 Schaf	noun	das	Schafe	گوسفند	گوسفند	animals
 Huhn	noun	das	Hühner	مرغ (جانور)	مرغ زنده	animals
-Maus	noun	die	Mäuse	موش	موش	animals
+Maus	noun	die	Mäuse	موش	موش	animals	note:هم‌ریشه با «موش» در فارسی.
 Kaninchen	noun	das	Kaninchen	خرگوش (اهلی)	خرگوش	animals
 Haustier	noun	das	Haustiere	حیوان خانگی	حیوان خانگی	animals	checked:level
 Plastik	noun	das		پلاستیک	پلاستیک	nature	number:sg_only	checked:level
@@ -838,7 +838,7 @@ Mannschaft	noun	die	Mannschaften	تیم (ورزشی)	تیم	leisure
 Team	noun	das	Teams	تیم، گروه	تیم	leisure
 Spieler	noun	der	Spieler	بازیکن	بازیکن	leisure
 Spielerin	noun	die	Spielerinnen	بازیکن (زن)	بازیکن زن	leisure
-Tor	noun	das	Tore	دروازه، گل (فوتبال)	دروازه	leisure
+Tor	noun	das	Tore	دروازه، گل (فوتبال)	دروازه	leisure	note:هم‌ریشه با «در» در فارسی.
 Training	noun	das	Trainings	تمرین (ورزشی)	تمرین ورزشی	leisure
 ein Spiel gewinnen	phrase			بازی را بردن	بردن بازی	leisure	parts:Spiel gewinnen
 trainieren	verb			تمرین کردن (ورزشی)	تمرین ورزشی کردن	leisure
@@ -851,7 +851,7 @@ Ski fahren	phrase			اسکی کردن	اسکی کردن	leisure	parts:fahren
 Spaziergang	noun	der	Spaziergänge	پیاده‌روی کوتاه، گردش	پیاده‌روی کوتاه	leisure
 einen Spaziergang machen	phrase			قدم زدن	قدم زدن	leisure	parts:Spaziergang machen
 Tennis	noun	das		تنیس	تنیس	leisure	number:sg_only	checked:level
-Schach	noun	das		شطرنج	شطرنج	leisure	number:sg_only
+Schach	noun	das		شطرنج	شطرنج	leisure	number:sg_only	note:از «شاه» فارسی آمده (بازی شاه).
 malen	verb			نقاشی کردن (با رنگ)	نقاشی کردن	leisure
 zeichnen	verb			طراحی کردن، نقاشی کشیدن (با مداد)	طراحی کردن	leisure
 sammeln	verb			جمع کردن، کلکسیون کردن	جمع کردن	leisure
@@ -950,7 +950,7 @@ anders	adv			جور دیگر، متفاوت	متفاوت	qualities
 normal	adj			عادی، معمولی	عادی	qualities
 typisch	adj			معمول، خاصِ (کسی یا جایی)	خاص (نمونه)	qualities
 besonders	adv			به‌خصوص، مخصوصاً	به‌خصوص	qualities
-voll	adj			پر	پر	qualities
+voll	adj			پر	پر	qualities	note:هم‌ریشه با «پُر» در فارسی.
 leer	adj			خالی	خالی	qualities
 kaputt	adj			خراب، شکسته	خراب	qualities
 praktisch	adj			کاربردی، به‌دردبخور	کاربردی	qualities
