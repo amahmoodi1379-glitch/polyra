@@ -164,7 +164,16 @@ export function buildPack(language: LanguageCode, options: BuildOptions = {}): P
   // «Grammar before its lesson»: word sentences that use a grammar point well before its unit (warnings only).
   const cardOrder = words.filter((item) => !item.word.no_card && isCardRegister(item.word.register)).sort((a, b) => levelRank(a.level) - levelRank(b.level) || a.order - b.order);
   const gate = Number(engineCatalog.find((item) => item.key === "gate.grammar_words")?.default ?? 0);
-  pack.timing = grammarTiming(language, built.flatMap(({ sentences }) => sentences.lines), unitTables, cardOrder, gate, { words, forms: tenseForms(language, tables.tables) });
+  // Texts and dialogues count from their deepest card word of their level (a learner meets one about then).
+  const position = new Map(cardOrder.map((item, index) => [item.word.code, index]));
+  const readLines = built.flatMap(({ level, texts, dialogues }) =>
+    [...texts.texts, ...dialogues.dialogues].flatMap((item) => {
+      const own = cardOrder.filter((word) => word.level === level);
+      const deepest = item.codes.map((code) => cardOrder[position.get(code) ?? -1]).filter((word) => word?.level === level).sort((a, b) => position.get(b.word.code)! - position.get(a.word.code)!)[0] ?? own[0];
+      return deepest ? item.lines.map((line) => ({ file: item.file, line: line.line, target: deepest, text: line.text, tokens: line.tokens })) : [];
+    }),
+  );
+  pack.timing = grammarTiming(language, [...built.flatMap(({ sentences }) => sentences.lines), ...readLines], unitTables, cardOrder, gate, { words, forms: tenseForms(language, tables.tables) });
 
   const unique = (list: Exception[]) => [...new Map(list.map((item) => [`${item.code}|${item.surface}`, item])).values()];
   for (const [index, { level, grammar, sentences, texts, dialogues }] of built.entries()) {

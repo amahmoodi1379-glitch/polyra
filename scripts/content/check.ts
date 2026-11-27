@@ -7,7 +7,7 @@
  *   npm run content:check                 (both languages)
  *   npm run content:check -- fr --notes   (also the notes: forms read by context, tables waiting for a unit)
  *   npm run content:check -- de --warnings
- *   npm run content:check -- de --timing  (word sentences that use a grammar point before its unit)
+ *   npm run content:check -- de --timing  (word sentences, texts and dialogues that use a grammar point before its unit)
  *   npm run content:check -- fr --texts   (each text's and dialogue's length and how deep into the teaching order it reaches)
  *
  * Exits with 1 when anything has an error. A clean check is what a content PR needs; the server then
@@ -71,7 +71,7 @@ for (const language of languages.length ? languages : (["fr", "de"] as LanguageC
   if (pack.timing.length) {
     const perUnit = new Map<string, number>();
     for (const note of pack.timing) perUnit.set(note.unit, (perUnit.get(note.unit) ?? 0) + 1);
-    console.log(`\n${pack.timing.length} word sentences use grammar before its unit (--timing to list them): ${[...perUnit].map(([unit, n]) => `${unit} ${n}`).join(", ")}`);
+    console.log(`\n${pack.timing.length} sentences (of words, texts, dialogues) use grammar before its unit (--timing to list them): ${[...perUnit].map(([unit, n]) => `${unit} ${n}`).join(", ")}`);
     if (args.includes("--timing")) show("Grammar before its unit", pack.timing);
   }
   if (args.includes("--texts")) textReach(pack);

@@ -28,7 +28,9 @@ import { formExceptions } from "./sentences";
  */
 
 type Note = { file: string; line: number; text: string };
-export type TextSource = { file: string; level: string; order: number; code: string; kind: string; band: number; placement_ok: boolean; answer: Record<string, unknown>; codes: string[] };
+/** A sentence as read, for the «grammar before its unit» check (`timing.ts`); not loaded. */
+export type ReadLine = { line: number; text: string; tokens: { surface: string; code: string | null; inGap: boolean }[] };
+export type TextSource = { file: string; level: string; order: number; code: string; kind: string; band: number; placement_ok: boolean; answer: Record<string, unknown>; codes: string[]; lines: ReadLine[] };
 export type BuiltTexts = { texts: TextSource[]; errors: Note[]; notes: Note[]; exceptions: { code: string; surface: string }[] };
 
 const SETS = ["reading A", "reading B", "listening A", "listening B"] as const;
@@ -75,6 +77,7 @@ export function buildTexts(analyzer: Analyzer, files: { file: string; text: stri
 
     const records: Record<string, unknown>[] = [];
     const codes: string[] = [];
+    const read: ReadLine[] = [];
     let ok = true;
     for (const item of sentences) {
       const [main, translation, ...rest] = item.text.split("|").map((cell) => cell.trim());
@@ -92,6 +95,7 @@ export function buildTexts(analyzer: Analyzer, files: { file: string; text: stri
       }
       out.exceptions.push(...formExceptions(analysis.tokens, (code) => analyzer.word(code)?.word.lemma));
       codes.push(...analysis.tokens.map((token) => token.code).filter((code): code is string => code !== null));
+      read.push({ line: item.line, text: analysis.text, tokens: analysis.tokens.map((token) => ({ surface: token.surface, code: token.code, inGap: false })) });
       const tts = rest.find((cell) => cell.startsWith("tts:"));
       records.push({ speaker, text: analysis.text, tts_text: tts ? tts.slice(4).trim() : null, translation_fa: translation, tokens: tokensOf(analysis.tokens) });
     }
@@ -129,6 +133,7 @@ export function buildTexts(analyzer: Analyzer, files: { file: string; text: stri
       band,
       placement_ok,
       codes: [...new Set(codes)],
+      lines: read,
       answer: { code: header.get("code"), title: header.get("title"), kind: header.get("kind"), level, band, placement_ok, sentences: records, key_words: keyWords, question_sets: questionSets },
     });
   }

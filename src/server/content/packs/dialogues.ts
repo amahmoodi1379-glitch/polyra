@@ -3,6 +3,7 @@ import { dialogueRecord, dialogueTurn } from "@/schemas/speaking";
 import { describeProblem, zodProblems } from "../problems";
 import type { Analyzer, Token } from "./analyze";
 import { formExceptions } from "./sentences";
+import type { ReadLine } from "./texts";
 
 /**
  * A situational dialogue (P-D, PRD §8b.4) in one file, `content/<language>/dialogues/<LEVEL>/NN-name.txt`;
@@ -23,7 +24,8 @@ import { formExceptions } from "./sentences";
  * (`gegesst{essen}`). Choices are shown in the order written, so the right one moves between turns.
  */
 
-export type DialogueSource = { file: string; level: string; order: number; code: string; situation: string; answer: Record<string, unknown>; codes: string[] };
+/** The other person's lines and the right choices as read, for the «grammar before its unit» check; not loaded. */
+export type DialogueSource = { file: string; level: string; order: number; code: string; situation: string; answer: Record<string, unknown>; codes: string[]; lines: ReadLine[] };
 type Note = { file: string; line: number; text: string };
 export type BuiltDialogues = { dialogues: DialogueSource[]; errors: Note[]; notes: Note[]; exceptions: { code: string; surface: string }[] };
 
@@ -41,11 +43,12 @@ export function buildDialogues(analyzer: Analyzer, files: { file: string; text: 
     const header = new Map<string, string>();
     const turns: Turn[] = [];
     const codes: string[] = [];
+    const read: ReadLine[] = [];
     let inTurns = false;
     let ok = true;
 
     /** One sentence of the dialogue: analysed, its words mapped. */
-    const sentence = (line: number, raw: string, speaker?: string | null) => {
+    const sentence = (line: number, raw: string, speaker?: string | null, wrong = false) => {
       const [main, translation, ...rest] = raw.split("|").map((cell) => cell.trim());
       if (!translation) say(line, "missing the Persian translation after «|»");
       const analysis = analyzer.analyze(main, { level });
@@ -57,6 +60,8 @@ export function buildDialogues(analyzer: Analyzer, files: { file: string; text: 
       }
       out.exceptions.push(...formExceptions(analysis.tokens, (code) => analyzer.word(code)?.word.lemma));
       codes.push(...analysis.tokens.map((token) => token.code).filter((code): code is string => code !== null));
+      // A wrong choice may be wrong on purpose: only the lines a learner takes as a model count.
+      if (!wrong) read.push({ line, text: analysis.text, tokens: analysis.tokens.map((token) => ({ surface: token.surface, code: token.code, inGap: false })) });
       const tts = rest.find((cell) => cell.startsWith("tts:"));
       return { ...(speaker === undefined ? {} : { speaker }), text: analysis.text, tts_text: tts ? tts.slice(4).trim() : null, translation_fa: translation, tokens: tokensOf(analysis.tokens) };
     };
@@ -83,7 +88,7 @@ export function buildDialogues(analyzer: Analyzer, files: { file: string; text: 
           continue;
         }
         if (line.startsWith("+")) turn.correct.push(turn.choices.length);
-        const choice = sentence(at, line.slice(2));
+        const choice = sentence(at, line.slice(2), undefined, line.startsWith("-"));
         if (choice) turn.choices.push(choice);
       } else if (line.startsWith("why:")) {
         if (!turn) say(at, "«why:» before the first turn");
@@ -123,7 +128,7 @@ export function buildDialogues(analyzer: Analyzer, files: { file: string; text: 
     }
     for (const problem of problems) say(1, describeProblem(problem, "chatbot"));
     if (problems.length > 0) continue;
-    out.dialogues.push({ file, level, order, code, situation: dialogue.situation_fa, answer: { dialogue, issues: [] }, codes: [...new Set(codes)] });
+    out.dialogues.push({ file, level, order, code, situation: dialogue.situation_fa, answer: { dialogue, issues: [] }, codes: [...new Set(codes)], lines: read });
   }
   return out;
 }
