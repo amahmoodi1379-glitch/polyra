@@ -1,0 +1,90 @@
+code: de-a2-doch-mal
+title: نرم کردن درخواست: mal، doch و bitte
+scope: کلمه‌های کوچک mal و doch در جمله امری و درخواست (Komm mal! Kannst du mir mal helfen? Komm doch mit! Setzen Sie sich doch!)، ترتیب doch mal، جای bitte در جمله و فرق لحن آن‌ها؛ ja، eben و halt برای سطح‌های بالاتر می‌ماند.
+can_do: حالا می‌توانی دوستانه و مؤدبانه از کسی چیزی بخواهی یا کسی را دعوت کنی، مثل «یک لحظه بیا!» و «بفرمایید بنشینید!».
+rule: mal و doch بعد از فعل و ضمیرهای کوتاه می‌آیند، نه اول جمله و نه آخر آن (Komm doch mit! Kannst du mir mal helfen?)؛ با هم: doch mal؛ bitte: Kommen Sie bitte! یا Bitte kommen Sie!، نه بین فعل و Sie.
+mistake: در فارسی «دیگر» آخر جمله و «یک لحظه» اول آن می‌آید («بیا دیگر!»، «یک لحظه بیا!»)، پس فارسی‌زبان‌ها می‌گویند «Komm mit doch!» یا «Mal komm!»؛ درست: Komm doch mit! و Komm mal! با Sie هم bitte را بین فعل و Sie نگذار: «Warten bitte Sie» غلط است؛ درست: Warten Sie bitte!
+lesson:
+فعل امر خالی (Komm! Gib mir das Buch!) در آلمانی می‌تواند تند و دستوری به گوش برسد. آلمانی‌ها آن را با کلمه‌های کوچکی مثل mal، doch و bitte نرم می‌کنند. این کلمه‌ها معنی جمله را عوض نمی‌کنند، فقط لحن را.
+mal درخواست را خودمانی و سبک می‌کند، یعنی «کار کوچکی است»، مثل «یک لحظه» یا «یک» در فارسی: Komm mal her! (یک لحظه بیا اینجا!) Schau mal! (ببین!) Kannst du mal das Fenster aufmachen? (می‌شود یک لحظه پنجره را باز کنی؟)
+doch در جمله امری تشویق و دعوت دوستانه است، مثل «خب … دیگر» یا «بفرمایید»: Komm doch mit! (خب تو هم بیا!) Setzen Sie sich doch! (بفرمایید بنشینید!) این doch با doch به معنی «چرا» که در A1 یاد گرفتی فرق دارد.
+مواظب صدایت باش: اگر doch را با صدای تند بگویی، بی‌حوصلگی نشان می‌دهد: Hör doch zu! (خب گوش کن دیگر!)
+doch و mal با هم هم می‌آیند و همیشه به این ترتیب: doch mal. این دعوتی گرم است: Komm doch mal vorbei! (یک سری به ما بزن دیگر!)
+جای mal و doch: بعد از فعل و بعد از ضمیرهای کوتاه (mir، mich، dich، sich …)، ولی پیش از قسمت دوم فعل جداشدنی و پیش از مصدر آخر جمله: Ruf mich doch mal an! Kannst du mir mal helfen? این دو کلمه هیچ‌وقت اول یا آخر جمله نمی‌آیند.
+bitte مؤدبانه‌ترین است و جایش آزادتر است: اول جمله، بعد از فعل (با Sie بعد از Sie) یا آخر جمله: Bitte warten Sie! Warten Sie bitte! ولی هیچ‌وقت بین فعل و Sie نمی‌آید.
+با Sie، doch و bitte گرم و مؤدب‌اند؛ mal بیشتر برای دوستان، خانواده و همکلاسی‌هاست.
+table:
+آلمانی | لحن | فارسی
+Komm mit! | دستور ساده | با ما بیا!
+Komm bitte mit! | مؤدبانه | لطفاً با ما بیا!
+Komm mal mit! | خودمانی و سبک | یک لحظه با من بیا!
+Komm doch mit! | تشویق و دعوت | خب تو هم بیا!
+Komm doch mal vorbei! | دعوت گرم | یک سری به ما بزن دیگر!
+sets:
+mal: Schau mal!, Hör mal!, Warte mal!, Moment mal!, Sag mal
+doch: Komm doch mit!, Setz dich doch!, Hab doch keine Angst!
+bitte: Bitte warten Sie!, Warten Sie bitte!, Kannst du mir bitte helfen?
+examples:
+Komm{mitkommen} doch mit{mitkommen}! | خب تو هم بیا!
+Setzen{sich setzen} Sie sich doch! | بفرمایید بنشینید!
+Gib mir mal das Buch! | یک لحظه آن کتاب را به من بده!
+Hör{zuhören} doch zu{zuhören}! | خب گوش کن دیگر!
+targets:
+[Sag mal], wo wohnst du jetzt? | بگو ببینم، الان کجا زندگی می‌کنی؟ | d: Mal sag, Sagen mal, Mal sagen
+Paul, [schau mal]! Da ist Lena. | پاول، ببین! لنا آنجاست. | d: mal schau, schaut mal, mal schaut
+Max, [hör{zuhören} mir mal zu{zuhören}]! Das ist wichtig. | ماکس، یک لحظه به حرفم گوش کن! این مهم است. | d: hör mich mal zu, hör mal zu mir, mal hör mir zu
+Kinder, [hört{zuhören} mal zu{zuhören}]! Ich lese jetzt den Text. | بچه‌ها، یک لحظه گوش کنید! حالا متن را می‌خوانم. | d: hör mal zu, hört zu mal, mal hört zu
+Herr Wagner, [schauen Sie mal], das ist mein Sohn! | آقای واگنر، نگاه کنید، این پسر من است! | d: schauen mal Sie, schaut Sie mal, mal schauen Sie
+Kannst du [mir mal] deinen Kuli geben? | می‌شود یک لحظه خودکارت را به من بدهی؟ | d: mich mal, mal mich, ich mal
+Kannst du [mal das Wort wiederholen]? | می‌شود یک لحظه آن کلمه را تکرار کنی؟ | d: das Wort wiederholen mal, mal das Wort wiederholst, das Wort mal wiederholst | ok: das Wort mal wiederholen
+Tim, mach{zumachen} [mal das Fenster zu{zumachen}]! | تیم، یک لحظه پنجره را ببند! | d: das Fenster zu mal, mal zu das Fenster, zu mal das Fenster | ok: das Fenster mal zu{zumachen}
+Lena, [kannst du mal] kurz kommen? | لنا، می‌توانی یک لحظه بیایی؟ | d: kannst mal du, mal kannst du, kann du mal
+[Gibst du mir mal] das Salz? | نمک را به من می‌دهی؟ | d: Gibst mal du mir, Mal gibst du mir, Gibst mir du mal
+Max und Lena, [erzählt mal], wie war euer Urlaub? | ماکس و لنا، تعریف کنید ببینم، تعطیلاتتان چطور بود؟ | d: erzähl mal, mal erzählt, erzählen mal
+Guten Tag, Frau Schmidt! [Setzen{sich setzen} Sie sich doch]! | سلام خانم اشمیت! بفرمایید بنشینید! | d: Setzen Sie doch sich, Setzen doch Sie sich, Setzen sich Sie doch
+Du bist müde. [Mach doch eine Pause]! | خسته‌ای. خب کمی استراحت کن! | d: Mach eine Pause doch, Mach eine doch Pause, Doch eine Pause mach
+Es ist kalt. [Zieh{anziehen} doch deine Jacke an{anziehen}]! | هوا سرد است. خب کاپشنت را بپوش! | d: Zieh deine Jacke an doch, Zieh doch an deine Jacke, Doch deine Jacke zieh an | ok: Zieh{anziehen} deine Jacke doch an{anziehen}
+Lena, [sei doch nicht] traurig! | لنا، ناراحت نباش دیگر! | d: sei nicht doch, sein doch nicht, seid doch nicht
+Tim, [hab doch] keine Angst! Der Hund ist lieb{lieb}. | تیم، نترس دیگر! سگ مهربان است. | d: haben doch, hat doch, habt doch | hint: (haben)
+Ihr habt Hunger? [Esst doch] noch Kuchen! | گرسنه‌اید؟ خب باز هم کیک بخورید! | d: Iss doch, Isst doch, Essen doch | hint: (essen)
+[Kommen{vorbeikommen} Sie doch] am Wochenende bei uns vorbei{vorbeikommen}! | آخر هفته حتماً به ما سر بزنید! | d: Kommen doch Sie, Kommt Sie doch, Komm Sie doch | ok: Kommt{vorbeikommen} doch
+Du hast Fieber? [Geh doch zum Arzt]! | تب داری؟ خب برو دکتر! | d: Geh zum Arzt doch, Zum Arzt geh doch, Geh zum doch Arzt
+Ihr versteht das nicht? [Fragt doch] den Lehrer! | این را نمی‌فهمید؟ خب از معلم بپرسید! | d: Frag doch, Fragst doch, Fragen doch | hint: (fragen)
+[Komm{vorbeikommen} doch mal] bei uns vorbei{vorbeikommen}! | یک سری به ما بزن دیگر! | d: Komm mal doch, Mal komm doch, Doch mal komm
+Ruf{anrufen} [mich doch mal] an{anrufen}! | یک زنگی به من بزن دیگر! | d: mich mal doch, mal doch mich, ich doch mal
+Das Essen ist toll. [Probier doch mal] die Suppe! | غذا عالی است. خب سوپ را امتحان کن! | d: Probier mal doch, Probieren doch mal, Mal probier doch
+Ihr kennt Wien nicht? [Fahrt doch mal] im Sommer nach Wien! | وین را نمی‌شناسید؟ خب تابستان یک سفر به وین بروید! | d: Fahrt mal doch, Fahr doch mal, Fährt doch mal
+Herr Müller, [warten Sie bitte{bitte}] einen Moment! | آقای مولر، لطفاً یک لحظه صبر کنید! | d: warten bitte Sie, bitte Sie warten, Sie bitte warten | ok: bitte{bitte} warten Sie | full: Herr Müller, warten Sie einen Moment, bitte!
+Frau Weber, [können Sie bitte{bitte}] etwas langsamer sprechen? | خانم وبر، می‌شود لطفاً کمی آهسته‌تر صحبت کنید؟ | d: können bitte Sie, bitte Sie können, Sie bitte können | full: Frau Weber, können Sie etwas langsamer sprechen, bitte?
+[Hilf mir bitte{bitte}]! Der Koffer ist schwer. | لطفاً کمکم کن! چمدان سنگین است. | d: Helfen mir bitte, Hilf mich bitte, Bitte mir hilf | ok: Bitte{bitte} hilf mir
+Entschuldigung, [können Sie mir bitte{bitte}] den Weg zeigen? | ببخشید، می‌شود لطفاً راه را به من نشان دهید؟ | d: können bitte Sie mir, können Sie mich bitte, bitte Sie können mir | ok: könnt ihr mir bitte{bitte}
+Lena, [sprich bitte{bitte}] lauter! | لنا، لطفاً بلندتر حرف بزن! | d: sprechen bitte, sprech bitte, sprecht bitte | ok: bitte{bitte} sprich | full: Lena, sprich lauter, bitte!
+Kinder, [seid bitte{bitte}] leise! Das Baby schläft. | بچه‌ها، لطفاً آرام باشید! نوزاد خواب است. | d: sei bitte, sind bitte, seien bitte | ok: bitte{bitte} seid | full: Kinder, seid leise, bitte! Das Baby schläft.
+Frau Weber, [bleiben Sie doch] noch ein bisschen! | خانم وبر، حالا کمی بیشتر بمانید! | d: bleiben doch Sie, bleibt Sie doch, bleib Sie doch
+[Bitte{bitte} schreiben Sie] hier Ihren Namen! | لطفاً اسمتان را اینجا بنویسید! | d: Bitte Sie schreiben, Bitte schreibt Sie, Bitte schreiben sich | ok: Schreiben Sie bitte{bitte}
+Lena, [komm mal]! [Zeig mir mal] dein Heft! | لنا، یک لحظه بیا! دفترت را به من نشان بده! | d: mal komm, kommt mal, kommen mal / Zeigt mir mal, Zeig mich mal, Mal zeig mir
+[Hast du] heute Zeit? Wir gehen ins Kino. [Komm{mitkommen} doch mit{mitkommen}]! | امروز وقت داری؟ ما به سینما می‌رویم. خب تو هم بیا! | d: Hat du, Habst du, Hab du / Komm mit doch, Mit komm doch, Mit doch komm
+Du bist krank? [Bleib doch] im Bett und [schlaf] viel! | مریضی؟ خب در رختخواب بمان و زیاد بخواب! | d: Bleiben doch, Bleibt doch, Blieb doch / schläfst, schläf, schlafen
+[Nehmen{Platz nehmen} Sie doch] Platz{Platz nehmen}! Ich [bringe] Ihnen einen Tee. | بفرمایید بنشینید! برایتان یک چای می‌آورم. | d: Nehmen doch Sie, Nehmt Sie doch, Nimm Sie doch / bringt, bringen, bring
+Lena, [setz{sich setzen} dich doch]! [Möchtest du] etwas trinken? | لنا، بیا بنشین! چیزی می‌خوری؟ | d: setz doch dich, setzt dich doch, setz sich doch / Möchte du, Möchtet du, Möchten du
+[Komm doch] zu mir und [bring{mitbringen}] deine Fotos mit{mitbringen}! | خب بیا پیش من و عکس‌هایت را هم بیاور! | d: Kommen doch, Kommt doch, Kam doch / bringst, bringt, bringen
+Ihr seid müde? [Setzt{sich setzen} euch doch] und [trinkt] einen Tee! | خسته‌اید؟ خب بنشینید و یک چای بنوشید! | d: Setzt doch euch, Setz euch doch, Setzt sich doch / trink, trinken, trinkst
+Anna, [warte mal]! [Kannst du mir mal] helfen? | آنا، یک لحظه صبر کن! می‌شود کمکم کنی؟ | d: mal warte, wartet mal, mal wartet / Kannst mal du mir, Mal kannst du mir, Kannst mir du mal
+transforms:
+Komm{mitkommen} mit{mitkommen}! => Komm{mitkommen} doch mit{mitkommen}! | با doch آن را به یک دعوت دوستانه تبدیل کن.
+Setzen{sich setzen} Sie sich! => Setzen{sich setzen} Sie sich doch! | با doch آن را گرم‌تر کن.
+Kannst du mir helfen? => Kannst du mir mal helfen? | با mal آن را خودمانی‌تر کن.
+Gib mir das Salz! => Gib mir mal das Salz! ; Gib mir das Salz mal! | با mal آن را نرم‌تر کن.
+Ruf{anrufen} mich an{anrufen}! => Ruf{anrufen} mich doch mal an{anrufen}! | doch mal را اضافه کن.
+Warten Sie! => Warten Sie bitte{bitte}! ; Bitte{bitte} warten Sie! | bitte را اضافه کن.
+Kommen{vorbeikommen} Sie am Wochenende vorbei{vorbeikommen}! => Kommen{vorbeikommen} Sie doch am Wochenende vorbei{vorbeikommen}! ; Kommen{vorbeikommen} Sie am Wochenende doch vorbei{vorbeikommen}! | doch را اضافه کن.
+Sei nicht traurig! => Sei doch nicht traurig! | doch را اضافه کن.
+translations:
+خانم مولر، بفرمایید بنشینید! => Frau Müller, setzen{sich setzen} Sie sich doch! ; Frau Müller, setzen{sich setzen} Sie sich bitte{bitte}! ; Frau Müller, bitte{bitte} setzen{sich setzen} Sie sich! ; Frau Müller, setzen{sich setzen} Sie sich doch bitte{bitte}! ; Frau Müller, setzen{sich setzen} Sie sich! ; Frau Müller, nehmen Sie doch Platz! ; Frau Müller, nehmen Sie bitte{bitte} Platz! ; Frau Müller, bitte{bitte} nehmen Sie Platz! ; Frau Müller, nehmen Sie doch bitte{bitte} Platz! ; Frau Müller, nehmen Sie Platz!
+خب تو هم با ما بیا! => Komm{mitkommen} doch mit{mitkommen}! ; Komm{mitkommen} doch auch mit{mitkommen}! ; Komm{mitkommen} mit{mitkommen}! ; Komm{mitkommen} auch mit{mitkommen}! ; Komm doch mit uns! ; Komm doch auch mit uns! ; Komm mit uns! ; Komm auch mit uns!
+می‌شود یک لحظه به من کمک کنی؟ => Kannst du mir mal helfen? ; Kannst du mir mal kurz helfen? ; Kannst du mir kurz helfen? ; Kannst du mir einen Moment helfen? ; Kannst du mir bitte{bitte} mal helfen? ; Hilfst du mir mal? ; Hilfst du mir kurz? ; Hilfst du mir mal kurz?
+لطفاً اینجا منتظر بمانید! => Warten Sie bitte{bitte} hier! ; Bitte{bitte} warten Sie hier! ; Warten Sie hier bitte{bitte}! ; Warten Sie hier, bitte{bitte}! ; Wartet bitte{bitte} hier! ; Bitte{bitte} wartet hier! ; Wartet hier bitte{bitte}! ; Wartet hier, bitte{bitte}!
+آقای وبر، لطفاً فردا به من زنگ بزنید! => Herr Weber, rufen{anrufen} Sie mich bitte{bitte} morgen an{anrufen}! ; Herr Weber, bitte{bitte} rufen{anrufen} Sie mich morgen an{anrufen}! ; Herr Weber, rufen{anrufen} Sie mich morgen bitte{bitte} an{anrufen}! ; Herr Weber, rufen{anrufen} Sie mich morgen an{anrufen}, bitte{bitte}!
+ماکس، این‌قدر سر و صدا نکن دیگر! => Max, sei doch nicht so laut! ; Max, sei nicht so laut! ; Max, mach doch nicht so viel Lärm! ; Max, mach nicht so viel Lärm!
+عجله کن دیگر! => Beeil dich doch! ; Beeil dich! ; Beeile dich doch! ; Beeile dich! ; Mach doch schnell! ; Mach schnell!
+ببین، این سگ من است! => Schau mal, das ist mein Hund! ; Schau, das ist mein Hund! ; Sieh mal, das ist mein Hund! ; Sieh, das ist mein Hund! ; Guck mal, das ist mein Hund! ; Guck, das ist mein Hund!

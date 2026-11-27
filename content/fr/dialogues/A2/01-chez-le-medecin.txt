@@ -1,0 +1,34 @@
+code: fr-a2-d001
+title: مطب دکتر
+situation: در مطب دکتر هستی. چند روز است حالت خوب نیست و دکتر از تو سؤال می‌کند.
+turns:
+B: Bonjour ! Asseyez-vous. Qu'est-ce que vous avez ? | سلام! بنشینید. چه مشکلی دارید؟
+- Merci. Je vais bien, et vous ? | ممنون. خوبم، شما چطورید؟
++ J'ai mal à la gorge et à la tête. | گلویم و سرم درد می‌کند.
+- Je suis{être} mal à la gorge et à la tête. | گلویم و سرم درد می‌کند.
+why: درد را با avoir می‌گوییم: «J'ai mal à la gorge». «Je suis mal» غلط است، و دکتر حالت را نپرسیده که بگویی «خوبم».
+B: Depuis quand{quand} ? | از کی؟
++ Depuis trois jours. | از سه روز پیش.
+- Pour trois jours. | برای سه روز.
+- Dans trois jours. | سه روز دیگر.
+why: depuis برای دردی است که از گذشته شروع شده و هنوز هست: «Depuis trois jours». «Dans trois jours» یعنی سه روز بعد، و pour اینجا معنی ندارد.
+B: Vous avez de la fièvre ? | تب دارید؟
+- Oui, j'ai du fièvre. | بله، تب دارم.
+- Oui, j'ai trente-huit ans. | بله، سی‌وهشت سالم است.
++ Oui, un peu. Et je tousse beaucoup. | بله، کمی. خیلی هم سرفه می‌کنم.
+why: «Oui, un peu» جواب سؤال است. fièvre مؤنث است و «du fièvre» غلط است؛ «trente-huit ans» سن است، نه تب.
+B: Ouvrez la bouche, s'il vous plaît. Bon, ce n'est pas grave : c'est{être} un rhume. | دهانتان را باز کنید، لطفاً. خب، چیز مهمی نیست: سرماخوردگی است.
++ Ah, d'accord. Je dois prendre des médicaments ? | آهان، باشد. باید دارو بخورم؟
+- Ah, d'accord. Je dois prends des médicaments ? | آهان، باشد. باید دارو بخورم؟
+- Ah, d'accord. Tu as des médicaments pour moi ? | آهان، باشد. برایم دارو داری؟
+why: بعد از devoir فعل دوم مصدر می‌آید: «je dois prendre». با دکتر tu نمی‌گوییم.
+B: Oui. Voilà une ordonnance. Prenez deux comprimés par jour, le matin et le soir. | بله. این نسخه‌تان است. روزی دو قرص بخورید، صبح و شب.
+- Merci. Je les mange pendant combien de jours ? | ممنون. چند روز بخورمشان؟
++ Merci. Je les prends pendant combien de jours ? | ممنون. چند روز بخورمشان؟
+- Merci. Tu les prends pendant combien de jours ? | ممنون. تو چند روز می‌خوری‌شان؟
+why: برای دارو در فرانسوی prendre می‌گوییم، نه manger: «manger un comprimé» غلط است. «Tu les prends» درباره خود دکتر است و با دکتر tu هم نمی‌گوییم.
+B: Pendant cinq jours. Et demain, restez à la maison et buvez beaucoup d'eau. | پنج روز. فردا هم در خانه بمانید و زیاد آب بنوشید.
+- D'accord. Je reste à la maison hier. | باشد. دیروز در خانه می‌مانم.
+- D'accord. Merci beaucoup, docteur. Bonjour ! | باشد. خیلی ممنون، دکتر. سلام!
++ D'accord. Merci beaucoup, docteur. Au revoir ! | باشد. خیلی ممنون، دکتر. خداحافظ!
+why: آخر گفتگو «Au revoir» می‌گوییم، نه «Bonjour». دکتر گفت فردا (demain)، نه دیروز (hier).

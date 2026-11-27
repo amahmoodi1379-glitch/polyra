@@ -1,0 +1,88 @@
+code: fr-a2-futur-simple
+title: آینده: je parlerai، je finirai
+scope: futur simple فعل‌های باقاعده: مصدر + -ai، -as، -a، -ons، -ez، -ont (je parlerai، je finirai) و فعل‌های -re که e آخرشان می‌افتد (je prendrai)، در جملهٔ مثبت، منفی و سؤالی، برای برنامه، پیش‌بینی و قول (demain، l'année prochaine، un jour)، و فرق کوتاهش با آیندهٔ نزدیک؛ ریشه‌های بی‌قاعده (serai، ferai، irai…) در واحد بعد می‌آیند.
+can_do: حالا می‌توانی از برنامه‌هایت برای آینده بگویی، پیش‌بینی کنی و قول بدهی: L'année prochaine, j'habiterai à Lyon. Je te téléphonerai ce soir.
+rule: مصدر + -ai، -as، -a، -ons، -ez، -ont: je parlerai، tu finiras، il prendra (در فعل‌های -re، e آخر مصدر می‌افتد)؛ منفی: je ne parlerai pas.
+mistake: در فارسی آینده با فعل کمکیِ جدا ساخته می‌شود («خواهم رفت»)، ولی در فرانسوی پایانه به خود مصدر می‌چسبد؛ فارسی‌زبان‌ها پایانه‌های شبیه -ons و -ont را قاطی می‌کنند («ils parlerons») و در فعل‌های -re حرف e را نگه می‌دارند («je prendreai») یا پایانه را به ریشهٔ زمان حال می‌چسبانند («je prenderai»)؛ درست: ils parleront، je prendrai.
+tables: futur simple
+lesson:
+futur simple زمان آیندهٔ فرانسوی است، مثل «کار خواهم کرد» در فارسی.
+ساختنش ساده است: مصدر + پایانه: parler → je parlerai، finir → je finirai.
+پایانه‌ها: -ai، -as، -a، -ons، -ez، -ont. شبیه avoir در زمان حال‌اند (j'ai، tu as، il a، ils ont)، پس یادگرفتنشان آسان است.
+در فعل‌های -re، e آخر مصدر می‌افتد: prendre → je prendrai، attendre → j'attendrai، écrire → j'écrirai.
+پس در همهٔ شخص‌ها پیش از پایانه یک r هست: parlerai، parleras، parlera، parlerons، parlerez، parleront.
+futur simple برای برنامه‌ها، پیش‌بینی‌ها و قول‌هاست: L'année prochaine, j'habiterai à Lyon. Un jour, tu parleras bien français. Je te téléphonerai ce soir.
+آیندهٔ نزدیک (je vais partir) بیشتر برای کاری است که خیلی نزدیک و تقریباً قطعی است؛ futur simple برای آیندهٔ دورتر، پیش‌بینی و قول. خیلی وقت‌ها هر دو درست‌اند.
+منفی و ضمیرها مثل زمان حال‌اند: Je ne mangerai pas. Je te téléphonerai.
+table:
+ضمیر | parler | finir | prendre
+je | parlerai | finirai | prendrai
+tu | parleras | finiras | prendras
+il، elle، on | parlera | finira | prendra
+nous | parlerons | finirons | prendrons
+vous | parlerez | finirez | prendrez
+ils، elles | parleront | finiront | prendront
+examples:
+L'année prochaine, j'habiterai à Lyon. | سال آینده در لیون زندگی خواهم کرد.
+Un jour, tu parleras bien français. | یک روز خوب فرانسوی حرف خواهی زد.
+Je te téléphonerai ce soir. | امشب به تو تلفن خواهم زد.
+Nous partirons à huit heures. | ما ساعت هشت راه خواهیم افتاد.
+targets:
+Demain, je [travaillerai] à la maison. | فردا در خانه کار خواهم کرد. | d: travaillera, travailleras, travaillerons | hint: (travailler) | full: Je travaillerai à la maison demain.
+Tu [finiras] tes devoirs ce soir ? | امشب تکالیفت را تمام خواهی کرد؟ | d: finirai, finira, finirez | hint: (finir) | full: Ce soir, tu finiras tes devoirs ?
+Il [prendra] le train de sept heures. | او قطار ساعت هفت را خواهد گرفت. | d: prendera, prendrera, prendras | hint: (prendre)
+Nous [mangerons] au restaurant samedi. | شنبه در رستوران غذا خواهیم خورد. | d: mangeront, mangerez, mangerai | hint: (manger) | full: Samedi, nous mangerons au restaurant.
+Vous [arriverez] à quelle heure ? | ساعت چند خواهید رسید؟ | d: arriverons, arriveront, arriveras | hint: (arriver) | full: À quelle heure vous arriverez ? ; À quelle heure arriverez-vous ?
+Elles [partiront] en vacances en juillet. | آن‌ها در ژوئیه به تعطیلات خواهند رفت. | d: partirons, partira, partirez | hint: (partir) | full: En juillet, elles partiront en vacances.
+Je t'[attendrai] devant la gare. | جلوی ایستگاه منتظرت خواهم ماند. | d: attenderai, attendrerai, attendras | hint: (attendre)
+On [regardera] le match ensemble. | با هم مسابقه را تماشا خواهیم کرد. | d: regarderons, regarderont, regarderai | hint: (regarder)
+Mes parents [vendront] leur maison l'année prochaine. | پدر و مادرم سال آینده خانه‌شان را خواهند فروخت. | d: vendrons, venderont, vendra | full: L'année prochaine, mes parents vendront leur maison.
+Tu [écriras] à ta grand-mère ? | به مادربزرگت نامه خواهی نوشت؟ | d: écrireras, écriveras, écrira | hint: (écrire)
+Un jour, je [visiterai] le Japon. | یک روز از ژاپن دیدن خواهم کرد. | d: visitera, visiteras, visiterons | full: Je visiterai le Japon un jour.
+Ce soir, nous [dormirons] à l'hôtel. | امشب در هتل خواهیم خوابید. | d: dormirez, dormiront, dormira | hint: (dormir) | full: Nous dormirons à l'hôtel ce soir.
+Les magasins [ouvriront] à dix heures. | مغازه‌ها ساعت ده باز خواهند کرد. | d: ouvrirons, ouvrira, ouvreront
+Vous [comprendrez] bientôt. | به‌زودی خواهید فهمید. | d: comprenderez, comprendrerez, comprendrons | hint: (comprendre) | full: Bientôt, vous comprendrez.
+Elle [choisira] une robe pour la fête. | او برای جشن یک لباس انتخاب خواهد کرد. | d: choisiras, choisirai, choisiront
+Je ne [mangerai] pas de viande ce soir. | امشب گوشت نخواهم خورد. | d: mangera, mangeras, mangerons | hint: (manger) | full: Ce soir, je ne mangerai pas de viande.
+Ils ne [rentreront] pas tard. | آن‌ها دیر برنخواهند گشت. | d: rentrerons, rentrera, rentrerez | hint: (rentrer)
+Tu ne [répondras] pas ? | جواب نخواهی داد؟ | d: répondreras, réponderas, répondra
+Est-ce que vous [resterez] longtemps à Paris ? | مدت زیادی در پاریس خواهید ماند؟ | d: resterons, resteront, restera | hint: (rester)
+Je vous [écrirai] un e-mail demain. | فردا برایتان یک ایمیل خواهم نوشت. | d: écrira, écrireai, écriverai | hint: (écrire) | full: Demain, je vous écrirai un e-mail.
+Je ne l'[oublierai] jamais. | هرگز فراموشش نخواهم کرد. | d: oubliera, oublirai, oublieras | hint: (oublier)
+Nous [jouerons] au football dimanche. | یکشنبه فوتبال بازی خواهیم کرد. | d: joueront, jourons, jouerez | full: Dimanche, nous jouerons au football.
+Avec ce livre, tu [apprendras] vite. | با این کتاب زود یاد خواهی گرفت. | d: apprenderas, apprendreras, apprendra | hint: (apprendre) | full: Tu apprendras vite avec ce livre.
+Il [lira] ce livre pendant les vacances. | او در تعطیلات این کتاب را خواهد خواند. | d: lisera, lirera, liras | hint: (lire) | full: Pendant les vacances, il lira ce livre.
+Vous [prendrez] un café ? | قهوه میل خواهید کرد؟ | d: prendrerez, prenderez, prendrons
+Les enfants [grandiront] vite. | بچه‌ها زود بزرگ خواهند شد. | d: grandirons, grandira, grandissront | hint: (grandir)
+Ma sœur [réussira] son examen. | خواهرم در امتحانش قبول خواهد شد. | d: réussiras, réussirai, réussiront | hint: (réussir)
+Ce soir, je me [coucherai] tôt. | امشب زود خواهم خوابید. | d: couchera, coucheras, coucherons | hint: (se coucher) | full: Je me coucherai tôt ce soir.
+Nous nous [reposerons] ce week-end. | این آخر هفته استراحت خواهیم کرد. | d: reposerez, reposeront, reposera | full: Ce week-end, nous nous reposerons.
+Il [boira] du thé au petit-déjeuner. | او سر صبحانه چای خواهد نوشید. | d: boivra, boirera, boiras | hint: (boire)
+Tu [sortiras] avec tes amis samedi ? | شنبه با دوستانت بیرون خواهی رفت؟ | d: sortirai, sortira, sortirez | full: Samedi, tu sortiras avec tes amis ?
+Qu'est-ce que vous [direz] à votre professeur ? | به معلمتان چه خواهید گفت؟ | d: dirons, diront, direrez | hint: (dire)
+Demain, je [finirai] mon travail et je [rentrerai] tôt. | فردا کارم را تمام خواهم کرد و زود به خانه برخواهم گشت. | d: finira, finiras, finirons / rentrera, rentreras, rentrerons | full: Je finirai mon travail demain et je rentrerai tôt.
+Nous [prendrons] le bus et nous [arriverons] à midi. | اتوبوس خواهیم گرفت و ظهر خواهیم رسید. | d: prendrerons, prenderons, prendront / arriveront, arriverez, arrivera
+Tu [travailleras] ici et tu [habiteras] chez nous. | اینجا کار خواهی کرد و در خانهٔ ما زندگی خواهی کرد. | d: travaillera, travaillerai, travaillerez / habitera, habiterai, habiterez | full: Tu habiteras chez nous et tu travailleras ici.
+Ils [vendront] leur voiture et ils [voyageront] en train. | ماشینشان را خواهند فروخت و با قطار سفر خواهند کرد. | d: vendrons, venderont, vendra / voyagerons, voyagera, voyagerez
+L'année prochaine, j'[apprendrai] l'anglais et je [lirai] beaucoup. | سال آینده انگلیسی یاد خواهم گرفت و زیاد کتاب خواهم خواند. | d: apprendra, apprendrerai, apprenderai / lira, liserai, lirerai
+Je vous [attendrai] et nous [partirons] ensemble. | منتظرتان خواهم ماند و با هم خواهیم رفت. | d: attendra, attenderai, attendrerai / partirez, partiront, partira
+Marie [écrira] le texte et Paul [choisira] les photos. | ماری متن را خواهد نوشت و پل عکس‌ها را انتخاب خواهد کرد. | d: écriras, écrivera, écrirera / choisiras, choisiront, choisissera | full: Paul choisira les photos et Marie écrira le texte.
+On ne [restera] pas à la maison : on [sortira] au restaurant. | خانه نخواهیم ماند: برای غذا به رستوران خواهیم رفت. | d: resterons, resteras, resterai / sortirons, sortiras, sortirai
+transforms:
+Je vais travailler demain. => Je travaillerai demain. | آیندهٔ نزدیک را به futur simple ببر.
+Nous allons partir à midi. => Nous partirons à midi. | آیندهٔ نزدیک را به futur simple ببر.
+Ils vont prendre le train. => Ils prendront le train. | آیندهٔ نزدیک را به futur simple ببر.
+Je mange au restaurant. => Je mangerai au restaurant. | جمله را به futur simple ببر.
+Tu finis ton travail. => Tu finiras ton travail. | جمله را به futur simple ببر.
+Elle écrit une lettre. => Elle écrira une lettre. | جمله را به futur simple ببر.
+Je parlerai à Paul. => Je ne parlerai pas à Paul. | جمله را منفی کن.
+Il arrivera demain. => Ils arriveront demain. | جمله را با ils بنویس.
+translations:
+او (مرد) قطار را خواهد گرفت. => Il prendra le train. ; Il va prendre le train.
+هرگز فراموشت نخواهم کرد. => Je ne t'oublierai jamais. ; Je ne vais jamais t'oublier.
+ما با هم غذا خواهیم خورد. => Nous mangerons ensemble. ; On mangera ensemble. ; Nous allons manger ensemble. ; On va manger ensemble.
+تکالیفم را تمام خواهم کرد. => Je finirai mes devoirs. ; Je vais finir mes devoirs.
+او (زن) جواب نخواهد داد. => Elle ne répondra pas. ; Elle ne va pas répondre.
+در پاریس خواهید ماند؟ => Vous resterez à Paris ? ; Est-ce que vous resterez à Paris ? ; Vous allez rester à Paris ? ; Est-ce que vous allez rester à Paris ? ; Resterez-vous à Paris ? ; Allez-vous rester à Paris ?
+بچه‌ها زود بزرگ خواهند شد. => Les enfants grandiront vite. ; Les enfants vont grandir vite. ; Les enfants vont vite grandir.
+به مادربزرگم نامه خواهم نوشت. => J'écrirai à ma grand-mère. ; Je vais écrire à ma grand-mère. ; J'écrirai une lettre à ma grand-mère. ; Je vais écrire une lettre à ma grand-mère.

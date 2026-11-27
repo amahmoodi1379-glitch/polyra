@@ -1,0 +1,86 @@
+code: de-a2-werden
+title: werden یعنی «شدن»: Ich werde Lehrer. Es wird kalt.
+scope: فعل werden به معنی «شدن» با صرف بی‌قاعده‌اش در زمان حال (ich werde، du wirst، er wird، wir werden، ihr werdet، sie werden) برای شغل (Ich werde Lehrer)، حالت و هوا (Es wird kalt) و سن (Sie wird zwanzig)، Perfekt آن با sein (Er ist Arzt geworden) و شناختن wurde در متن‌ها؛ werden همراه مصدر (آینده) در B1 می‌آید.
+can_do: حالا می‌توانی بگویی چه کسی چه می‌شود: «معلم می‌شوم»، «هوا سرد می‌شود»، «پسرم ده ساله می‌شود»، «او پزشک شده است».
+rule: werden یعنی «شدن» و صرفش بی‌قاعده است: ich werde، du wirst، er/sie/es wird، wir werden، ihr werdet، sie/Sie werden؛ Perfekt آن با sein است: Ich bin müde geworden.
+mistake: «شدن» در فارسی باقاعده است (می‌شوم، می‌شوی، می‌شود)، برای همین فارسی‌زبان‌ها می‌گویند «du werdest» یا «er werdet»؛ درست: du wirst، er wird. bekommen را هم با werden قاطی نکن: «Ich bekomme Lehrer» یعنی «معلم می‌گیرم»! درست: Ich werde Lehrer.
+tables: Präsens | werden
+lesson:
+werden یعنی «شدن»: Ich werde Lehrer. (معلم می‌شوم.) Es wird kalt. (هوا سرد می‌شود.)
+صرفش بی‌قاعده است: ich werde، du wirst، er/sie/es wird، wir werden، ihr werdet، sie و Sie werden.
+برای شغل حرف تعریف نمی‌آید: Meine Schwester wird Ärztin. (خواهرم پزشک می‌شود.)
+با صفت، عوض شدن حال یا هوا را می‌گوید: Ich werde müde. Es wird dunkel. Das Wetter wird besser.
+برای سن فقط عدد کافی است: Mein Sohn wird morgen zehn. (پسرم فردا ده ساله می‌شود.)
+Perfekt آن با sein ساخته می‌شود: Er ist Lehrer geworden. Es ist kalt geworden.
+در داستان‌ها گذشته ساده آن را هم می‌بینی: Am Abend wurde es kalt. (عصر هوا سرد شد.) فعلاً فقط آن را بشناس.
+مواظب باش: bekommen یعنی «گرفتن»، نه «شدن»: Ich bekomme ein Geschenk. Ich werde Lehrer.
+table:
+کاربرد | مثال | معنی
+شغل | Ich werde Lehrer. | معلم می‌شوم.
+حال و هوا | Es wird kalt. | هوا سرد می‌شود.
+سن | Sie wird zwanzig. | بیست ساله می‌شود.
+Perfekt | Er ist Arzt geworden. | پزشک شده است.
+examples:
+Mein Bruder wird Arzt. | برادرم پزشک می‌شود.
+Im Sommer wird es spät dunkel. | تابستان هوا دیر تاریک می‌شود.
+Meine Oma wird morgen achtzig. | مادربزرگم فردا هشتاد ساله می‌شود.
+Am Abend ist es kalt geworden. | عصر هوا سرد شد.
+targets:
+Ich studiere Mathe und [werde] Lehrer. | ریاضی می‌خوانم و معلم می‌شوم. | d: wird, wirst, werdet | hint: (werden)
+Du [wirst] bestimmt eine gute Ärztin. | تو حتماً پزشک خوبی می‌شوی. | d: wird, werdet, werden | hint: (werden) | full: Bestimmt wirst du eine gute Ärztin.
+Im Winter [wird] es sehr kalt. | زمستان هوا خیلی سرد می‌شود. | d: wirst, werden, werdet | hint: (werden) | full: Es wird im Winter sehr kalt.
+Am Abend [wird] es dunkel. | عصر هوا تاریک می‌شود. | d: wirst, werden, werdet | full: Es wird am Abend dunkel.
+[Wirst] du oft krank? | اغلب مریض می‌شوی؟ | d: Wird, Werdet, Werden | hint: (werden)
+Wir [werden] immer nervös, wenn wir eine Prüfung haben. | وقتی امتحان داریم، همیشه مضطرب می‌شویم. | d: wird, wirst, werdet | full: Wenn wir eine Prüfung haben, werden wir immer nervös.
+[Werdet] ihr auch so schnell müde? | شما هم این‌قدر زود خسته می‌شوید؟ | d: Wird, Wirst, Werde | hint: (werden)
+Im Herbst [werden] die Tage kürzer. | پاییز روزها کوتاه‌تر می‌شوند. | d: wird, wirst, werdet | full: Die Tage werden im Herbst kürzer.
+Morgen [wird] das Wetter besser. | فردا هوا بهتر می‌شود. | d: wirst, werden, werdet | full: Das Wetter wird morgen besser.
+Mein Sohn [wird] am Samstag zehn. | پسرم شنبه ده ساله می‌شود. | d: wirst, werden, werdet | hint: (werden) | full: Am Samstag wird mein Sohn zehn.
+Wie alt [wirst] du im Mai? | ماه مه چند ساله می‌شوی؟ | d: wird, werdet, werden
+Herr Schmidt, Sie [werden] bald sechzig, oder? | آقای اشمیت، شما به‌زودی شصت ساله می‌شوید، نه؟ | d: wirst, werdet, werdest | hint: (werden)
+Unsere Kinder [werden] schnell groß. | بچه‌هایمان زود بزرگ می‌شوند. | d: wird, wirst, werdet
+Meine Schwester [wird] Ärztin. | خواهرم پزشک می‌شود. | d: wirst, werden, werdet | hint: (werden)
+Lena möchte Sängerin [werden]. | لنا می‌خواهد خواننده بشود. | d: wird, wirst, geworden
+Was willst du später [werden]? | بعداً می‌خواهی چه‌کاره بشوی؟ | d: wirst, wird, geworden
+Ich will nicht krank [werden]. | نمی‌خواهم مریض بشوم. | d: werde, wird, geworden
+Komm schnell, das Essen [wird] kalt! | زود بیا، غذا سرد می‌شود! | d: wirst, werden, werdet
+Es [wird] spät. Wir müssen gehen. | دیر می‌شود. باید برویم. | d: wirst, werden, werdet | hint: (werden)
+Im Auto [werde] ich immer müde. | در ماشین همیشه خسته می‌شوم. | d: wird, wirst, werdet | full: Ich werde im Auto immer müde.
+Meine Eltern [werden] langsam alt. | پدر و مادرم کم‌کم پیر می‌شوند. | d: wird, wirst, werdet
+Max [wird] wütend, wenn er Hunger hat. | ماکس وقتی گرسنه است، عصبانی می‌شود. | d: wirst, werden, werdet | hint: (werden) | full: Wenn Max Hunger hat, wird er wütend. ; Wenn er Hunger hat, wird Max wütend.
+Warum [wirst] du rot? | چرا سرخ می‌شوی؟ | d: wird, werdet, werden
+Bald [wird] es Frühling. | به‌زودی بهار می‌شود. | d: wirst, werden, werdet | full: Es wird bald Frühling.
+Die Kinder [werden] laut, wenn sie spielen. | بچه‌ها وقتی بازی می‌کنند، پرسروصدا می‌شوند. | d: wird, wirst, werdet | full: Wenn die Kinder spielen, werden sie laut. ; Wenn sie spielen, werden die Kinder laut.
+Mein Bruder [ist] Ingenieur geworden. | برادرم مهندس شده است. | d: hat, bist, sind | hint: (sein)
+Anna ist Lehrerin [geworden]. | آنا معلم شده است. | d: gewordet, gewerdet, werden | hint: (werden)
+Es ist plötzlich kalt [geworden]. | ناگهان هوا سرد شد. | d: gewordet, gewerdet, wird
+[Bist] du wieder gesund geworden? | دوباره خوب شدی؟ | d: Hast, Ist, Seid | hint: (sein)
+Wir [sind] im Urlaub ganz braun geworden. | در تعطیلات حسابی برنزه شدیم. | d: haben, seid, habt | full: Im Urlaub sind wir ganz braun geworden.
+Das Wetter ist am Nachmittag schlecht [geworden]. | بعدازظهر هوا بد شد. | d: gewordet, gewerdet, werden | full: Am Nachmittag ist das Wetter schlecht geworden.
+Meine Tochter ist gestern acht [geworden]. | دخترم دیروز هشت ساله شد. | d: gewordet, werden, wird | hint: (werden) | full: Gestern ist meine Tochter acht geworden.
+Ich [werde] Arzt und meine Schwester [wird] Lehrerin. | من پزشک می‌شوم و خواهرم معلم. | d: wird, wirst, werdet / wirst, werden, werdet | full: Meine Schwester wird Lehrerin und ich werde Arzt.
+Im Winter [wird] es früh dunkel und wir [werden] schnell müde. | زمستان هوا زود تاریک می‌شود و ما زود خسته می‌شویم. | d: wirst, werden, werdet / wird, wirst, werdet | full: Es wird im Winter früh dunkel und wir werden schnell müde.
+[Wirst] du schnell müde? – Ja, ich [werde] sehr schnell müde. | زود خسته می‌شوی؟ – بله، خیلی زود خسته می‌شوم. | d: Wird, Werdet, Werden / wird, wirst, werdet
+Max [ist] Koch{Koch} [geworden]. | ماکس آشپز شده است. | d: hat, bist, sind / gewordet, gewerdet, werden
+Es [ist] spät [geworden]. | دیر شده است. | d: hat, bin, sind / gewordet, gewerdet, werden
+Wenn es Sommer [wird], [werden] die Tage länger. | وقتی تابستان می‌شود، روزها بلندتر می‌شوند. | d: wirst, werden, werdet / wird, wirst, werdet | full: Die Tage werden länger, wenn es Sommer wird.
+Lena [ist] krank [geworden], deshalb bleibt sie zu Hause. | لنا مریض شده، برای همین در خانه می‌ماند. | d: hat, bist, sind / gewordet, gewerdet, werden
+Wann [wirst] du achtzehn? – Ich [werde] im Mai achtzehn. | کی هجده ساله می‌شوی؟ – ماه مه هجده ساله می‌شوم. | d: wird, werdet, werden / wird, wirst, werdet | full: Wann wirst du achtzehn? – Im Mai werde ich achtzehn.
+transforms:
+Ich bin müde. => Ich werde müde. | به‌جای sein، فعل werden بگذار.
+Es ist kalt. => Es wird kalt. | به‌جای sein، فعل werden بگذار.
+Ich werde Lehrer. => Du wirst Lehrer. | جمله را با du بنویس.
+Wir werden müde. => Ihr werdet müde. | جمله را با ihr بنویس.
+Sie wird Ärztin. => Sie ist Ärztin geworden. | جمله را به Perfekt ببر.
+Es wird dunkel. => Es ist dunkel geworden. | جمله را به Perfekt ببر.
+Ich werde Ingenieur. => Ich möchte Ingenieur werden. | جمله را با möchte بنویس.
+Du wirst Koch{Koch}. => Wirst du Koch{Koch}? | جمله را سؤالی کن.
+translations:
+هوا سرد می‌شود. => Es wird kalt. ; Das Wetter wird kalt.
+پسرم فردا ده ساله می‌شود. => Mein Sohn wird morgen zehn. ; Mein Sohn wird morgen zehn Jahre alt. ; Morgen wird mein Sohn zehn. ; Morgen wird mein Sohn zehn Jahre alt.
+می‌خواهم پزشک بشوم. => Ich möchte Arzt werden. ; Ich will Arzt werden. ; Ich möchte Ärztin werden. ; Ich will Ärztin werden.
+او معلم شده است. => Er ist Lehrer geworden. ; Sie ist Lehrerin geworden.
+زود خسته می‌شوی؟ => Wirst du schnell müde? ; Wirst du früh müde?
+زمستان هوا زود تاریک می‌شود. => Im Winter wird es früh dunkel. ; Es wird im Winter früh dunkel.
+چند ساله می‌شوی؟ => Wie alt wirst du?
+هوا بهتر شد. => Das Wetter ist besser geworden. ; Das Wetter wurde besser.

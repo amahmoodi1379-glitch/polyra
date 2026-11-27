@@ -1,0 +1,34 @@
+code: fr-a2-d016
+title: خرید بلیت سینما
+situation: با دوستت به سینما رفته‌ای و از باجه برای هر دو نفر بلیت می‌خری.
+turns:
+B: Bonsoir ! Pour quel film ? | عصر بخیر! برای کدام فیلم؟
+- Bonsoir ! Deux places pour la film de vingt heures, s'il vous plaît. | عصر بخیر! دو بلیت برای فیلم ساعت هشت شب، لطفاً.
+- Bonsoir ! Deux chaises pour le film de vingt heures, s'il vous plaît. | عصر بخیر! دو صندلی برای فیلم ساعت هشت شب، لطفاً.
++ Bonsoir ! Deux places pour le film de vingt heures, s'il vous plaît. | عصر بخیر! دو بلیت برای فیلم ساعت هشت شب، لطفاً.
+why: در سینما place یعنی جا و بلیت؛ chaise فقط خودِ صندلی است و در سینما صندلی نمی‌خرند. film مذکر است: «le film».
+B: Désolé, il n'y a plus{plus-2} de places à vingt heures. Il y en a encore à vingt-deux heures. | متأسفم، برای ساعت هشت دیگر جا نیست. برای ساعت ده شب هنوز هست.
++ Dommage ! Le film dure{durer} combien de temps ? | حیف شد! فیلم چقدر طول می‌کشد؟
+- Dommage ! Le film dure{durer} quelle heure ? | حیف شد! فیلم چه ساعتی طول می‌کشد؟
+- Dommage ! Le film est combien de temps ? | حیف شد! فیلم چقدر طول می‌کشد؟
+why: مدت را با «dure combien de temps» می‌پرسیم. «quelle heure» برای ساعت است، و «est combien de temps» دستورش غلط است.
+B: Deux heures. Il finit à minuit. | دو ساعت. نیمه‌شب تمام می‌شود.
+- Ce n'est pas grave. On prend deux, alors. | مهم نیست. پس دو تا برمی‌داریم.
++ Ce n'est pas grave. On en prend deux, alors. | مهم نیست. پس دو تا برمی‌داریم.
+- Minuit ? C'est{être} trop tôt pour nous. | نیمه‌شب؟ برای ما خیلی زود است.
+why: en جای «بلیت» می‌نشیند: «on en prend deux»؛ بدون en جمله ناقص است. نیمه‌شب دیر است، نه زود.
+B: Vous avez moins de vingt-six ans ? C'est{être} moins cher. | کمتر از بیست‌وشش سال دارید؟ ارزان‌تر است.
+- Oui, je suis{être} vingt ans, et mon ami est vingt-deux ans. | بله، من بیست سالم است و دوستم بیست‌ودو سال.
+- Oui, j'ai vingt ans, et mon ami a vingt-huit ans. | بله، من بیست سالم است و دوستم بیست‌وهشت سال.
++ Oui, j'ai vingt ans, et mon ami a vingt-deux ans. | بله، من بیست سالم است و دوستم بیست‌ودو سال.
+why: سن را با avoir می‌گوییم: «j'ai vingt ans». بیست‌وهشت از بیست‌وشش بیشتر است، پس دوستت تخفیف نمی‌گیرد.
+B: Alors, c'est{être} sept euros la place. Quatorze euros, s'il vous plaît. | پس هر بلیت هفت یورو است. چهارده یورو، لطفاً.
++ Voilà. La salle est où ? | بفرمایید. سالن کجاست؟
+- Voilà. Le salle est où ? | بفرمایید. سالن کجاست؟
+- Voilà. La salle est quand{quand} ? | بفرمایید. سالن کی است؟
+why: salle مؤنث است: «la salle». برای جا où می‌پرسیم، نه quand.
+B: Salle trois, au premier étage. Bon film ! | سالن سه، طبقه اول. فیلم خوبی ببینید!
+- Merci, vous aussi ! | ممنون، شما هم!
++ Merci ! Bonne soirée ! | ممنون! شب خوبی داشته باشید!
+- Merci ! Bonne journée ! | ممنون! روز خوبی داشته باشید!
+why: کارمند باجه فیلم نمی‌بیند که بگویی «vous aussi». شب است، پس «Bonne soirée»، نه «Bonne journée».

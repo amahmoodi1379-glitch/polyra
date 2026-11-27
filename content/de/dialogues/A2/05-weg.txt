@@ -1,0 +1,34 @@
+code: de-a2-d005
+title: پرسیدن آدرس در خیابان
+situation: در شهر دنبال موزه می‌گردی و نقشه دستت است. یک خانم می‌بیند که راه را پیدا نمی‌کنی.
+turns:
+B: Entschuldigung, kann ich Ihnen helfen? | ببخشید، کمکتان کنم؟
+- Ja, gern! Wann komme ich zum Museum? | بله، لطفاً! کی به موزه می‌رسم؟
++ Ja, gern! Wie komme ich zum Museum? | بله، لطفاً! چطور به موزه بروم؟
+- Ja, gern! Wie komme ich zur Museum? | بله، لطفاً! چطور به موزه بروم؟
+why: راه را با «Wie komme ich zum …?» می‌پرسیم و wann زمان را می‌پرسد. Museum خنثی است، پس zum، نه zur.
+B: Zum Museum? Gehen Sie hier geradeaus und dann die erste Straße links. | به موزه؟ از اینجا مستقیم بروید و بعد اولین خیابان سمت چپ.
++ Geradeaus und dann links. Ist es weit? | مستقیم و بعد چپ. دور است؟
+- Geradeaus und dann rechts. Ist es weit? | مستقیم و بعد راست. دور است؟
+- Geradeaus und dann links. Ist er weit? | مستقیم و بعد چپ. او دور است؟
+why: راه را درست تکرار می‌کنی: چپ، نه راست. das Museum خنثی است، پس ضمیرش es است، نه er.
+B: Nein, nicht sehr. Zu Fuß sind es zehn Minuten. | نه، خیلی نه. پیاده ده دقیقه راه است.
+- Super. Ich fahre zehn Minuten zu Fuß. | عالی. ده دقیقه پیاده می‌رانم.
+- Super. Und gibt es auch ein Bus? | عالی. اتوبوس هم هست؟
++ Super. Und gibt es auch einen Bus? | عالی. اتوبوس هم هست؟
+why: بعد از es gibt حالت مفعولی می‌آید: «einen Bus». پیاده رفتن با gehen است، نه fahren.
+B: Ja, der Bus 5 fährt zum Museum. Die Haltestelle ist dort, neben der Bank. | بله، اتوبوس ۵ به موزه می‌رود. ایستگاهش آنجاست، کنار بانک. | tts: Ja, der Bus fünf fährt zum Museum. Die Haltestelle ist dort, neben der Bank.
++ Danke{danke}! Ist das Museum heute offen? | ممنون! موزه امروز باز است؟
+- Danke{danke}! Bist das Museum heute offen? | ممنون! موزه امروز باز هستی؟
+- Danke{danke}! Ist die Bank heute offen? | ممنون! بانک امروز باز است؟
+why: می‌پرسی موزه امروز باز است یا نه؛ با das Museum شکل ist می‌آید، نه bist. تو به موزه می‌روی، نه به بانک.
+B: Ja, bis 18 Uhr. Aber am Montag ist es geschlossen{geschlossen}. | بله، تا ساعت ۱۸. ولی دوشنبه‌ها بسته است. | tts: Ja, bis achtzehn Uhr. Aber am Montag ist es geschlossen.
+- Gut, dann gehe ich am Montag. | خوب، پس دوشنبه می‌روم.
+- Gut, dann ich gehe jetzt. | خوب، پس الان می‌روم.
++ Gut, dann gehe ich jetzt. | خوب، پس الان می‌روم.
+why: امروز موزه باز است، پس الان می‌روی؛ دوشنبه بسته است. بعد از dann اول فعل می‌آید: «dann gehe ich».
+B: Viel Spaß im Museum! | در موزه خوش بگذرد!
++ Danke schön! Sie{Sie-3} sind sehr nett. | خیلی ممنون! شما خیلی مهربانید.
+- Danke schön! Viel Spaß im Museum! | خیلی ممنون! در موزه خوش بگذرد!
+- Danke schön! Du bist sehr nett. | خیلی ممنون! تو خیلی مهربانی.
+why: تشکر می‌کنی و با یک غریبه Sie می‌گویی، نه du. خانم به موزه نمی‌رود که به او «Viel Spaß im Museum» بگویی.

@@ -1,0 +1,88 @@
+code: de-a2-sondern
+title: nicht … sondern: «نه …، بلکه …»
+scope: sondern بعد از جمله منفی برای درست کردن حرف (nicht …, sondern …؛ kein …, sondern …)، فرق sondern و aber، nicht nur …, sondern auch …، جای nicht پیش از چیزی که درست می‌شود، و ترتیب عادی کلمه‌ها بعد از sondern؛ weder … noch در سطح B1 می‌آید.
+can_do: حالا می‌توانی حرف اشتباه را درست کنی («نه دوشنبه، بلکه سه‌شنبه») و بگویی کسی نه فقط این کار، بلکه آن کار را هم می‌کند.
+rule: بعد از nicht یا kein، اگر قسمت دوم جای قسمت منفی را می‌گیرد sondern می‌آید (Das ist kein Tee, sondern Kaffee)؛ اگر چیز دیگری اضافه می‌کند aber (Das Hotel ist teuer, aber schön)؛ nicht nur …, sondern auch.
+mistake: فارسی برای «ولی» و «بلکه» گاهی فقط «ولی» می‌گوید، پس فارسی‌زبان‌ها بعد از جمله منفی aber می‌گذارند: «Er heißt nicht Peter, aber Paul» غلط است؛ درست: Er heißt nicht Peter, sondern Paul. بعد از sondern هم فعل جلو نمی‌آید: sondern ich bleibe zu Hause، نه «sondern bleibe ich».
+lesson:
+sondern یعنی «بلکه». بعد از یک جمله منفی با nicht یا kein می‌آید و حرف را درست می‌کند: Ich komme nicht aus Österreich, sondern aus der Schweiz.
+با kein هم همین‌طور: Das ist kein Tee, sondern Kaffee.
+aber یعنی «ولی»: هر دو قسمت درست‌اند و قسمت دوم چیز دیگری می‌گوید: Das Hotel ist teuer, aber schön. Ich bin müde, aber ich kann nicht schlafen.
+یک راه ساده: اگر می‌توانی بگویی «نه این، بلکه آن»، sondern بگذار؛ اگر «این هست، ولی آن هم هست»، aber.
+بدون nicht، kein یا nie پیش از آن، sondern نمی‌آید.
+nicht درست پیش از چیزی می‌آید که درستش می‌کنی: Ich fahre nicht nach Berlin, sondern nach Hamburg.
+sondern مثل und و aber جای صفر است و ترتیب کلمه‌ها را عوض نمی‌کند: Ich gehe nicht ins Kino, sondern ich bleibe zu Hause.
+nicht nur …, sondern auch … یعنی «نه فقط …، بلکه … هم»: Sie spricht nicht nur Deutsch, sondern auch Englisch. پیش از sondern همیشه ویرگول می‌آید.
+table:
+ساختار | معنی | مثال
+nicht …, sondern … | نه …، بلکه … | Er heißt nicht Peter, sondern Paul.
+kein …, sondern … | … نه، بلکه … | Das ist kein Tee, sondern Kaffee.
+nicht nur …, sondern auch … | نه فقط …، بلکه … هم | Ich spreche nicht nur Persisch, sondern auch Deutsch.
+…, aber … | …، ولی … | Das Zimmer ist klein, aber schön.
+sets:
+sondern: nicht heute, sondern morgen; kein Tee, sondern Kaffee; nicht rot, sondern blau
+aber: teuer, aber schön; müde, aber glücklich; klein, aber gemütlich
+examples:
+Er heißt nicht Peter, sondern Paul. | اسمش پیتر نیست، بلکه پاول است.
+Das ist kein Tee, sondern Kaffee. | این چای نیست، بلکه قهوه است.
+Das Zimmer ist klein, aber schön. | اتاق کوچک است، ولی قشنگ است.
+Sie spricht nicht nur Deutsch, sondern auch Englisch. | او نه فقط آلمانی، بلکه انگلیسی هم حرف می‌زند.
+targets:
+Ich komme nicht aus Österreich, [sondern] aus der Schweiz. | من اهل اتریش نیستم، بلکه اهل سوئیس هستم. | d: aber, denn, sondern auch
+Das ist nicht mein Auto, [sondern] das Auto von Max. | این ماشین من نیست، بلکه ماشین ماکس است. | d: aber, denn, aber auch
+Mein Bruder heißt nicht Tim, [sondern] Tom. | اسم برادرم تیم نیست، بلکه تام است. | d: aber, denn, sondern auch
+Der Kurs beginnt nicht am Montag, [sondern] am Dienstag. | کلاس دوشنبه شروع نمی‌شود، بلکه سه‌شنبه. | d: aber, denn, sondern auch
+Wir fahren nicht mit dem Auto, [sondern] mit dem Zug. | ما با ماشین نمی‌رویم، بلکه با قطار. | d: aber, denn, aber auch
+Meine Schwester wohnt nicht in Köln, [sondern] in Bremen. | خواهرم در کلن زندگی نمی‌کند، بلکه در برمن. | d: aber, deshalb, sondern auch
+Wir treffen uns nicht um acht, [sondern] um neun Uhr. | ساعت هشت همدیگر را نمی‌بینیم، بلکه ساعت نه. | d: aber, denn, aber auch
+Die Prüfung war nicht leicht, [sondern] sehr schwer. | امتحان آسان نبود، بلکه خیلی سخت بود. | d: aber, denn, sondern auch
+Die Jacke ist nicht rot, [sondern] blau. | کاپشن قرمز نیست، بلکه آبی است. | d: aber, deshalb, aber auch
+Das Konzert ist nicht heute, [sondern] morgen. | کنسرت امروز نیست، بلکه فرداست. | d: aber, denn, sondern auch
+Wir haben nicht verloren, [sondern] gewonnen! | ما نباختیم، بلکه بردیم! | d: aber, denn, aber auch
+Anna ist nicht neunzehn, [sondern] zwanzig. | آنا نوزده ساله نیست، بلکه بیست ساله است. | d: aber, denn, sondern auch
+Das ist [kein] Wasser, sondern Milch. | این آب نیست، بلکه شیر است. | d: keine, keinen, nein | ok: nicht | hint: (kein)
+Sie ist [keine] Lehrerin, sondern Ärztin. | او معلم نیست، بلکه پزشک است. | d: kein, keinen, nein | ok: nicht | hint: (kein)
+Das ist [keine] Bank, sondern die Post. | اینجا بانک نیست، بلکه اداره پست است. | d: kein, keinen, nicht | hint: (kein)
+Ich habe [keinen] Bruder, sondern eine Schwester. | من برادر ندارم، بلکه یک خواهر دارم. | d: kein, keine, nicht | hint: (kein)
+Das Hotel ist teuer, [aber] sehr schön. | هتل گران است، ولی خیلی قشنگ است. | d: sondern, sondern auch, denn
+Die Wohnung ist klein, [aber] gemütlich. | آپارتمان کوچک است، ولی دنج است. | d: sondern, sondern auch, denn
+Das Essen war nicht teuer, [aber] sehr lecker. | غذا گران نبود، ولی خیلی خوشمزه بود. | d: sondern, sondern auch, denn
+Max hat heute keine Zeit, [aber] Anna kommt mit. | ماکس امروز وقت ندارد، ولی آنا با ما می‌آید. | d: sondern, sondern auch, deshalb
+Ich spreche nicht gut Deutsch, [aber] ich verstehe viel. | آلمانی را خوب حرف نمی‌زنم، ولی خیلی چیزها را می‌فهمم. | d: sondern, sondern auch, trotzdem
+Der Pullover ist nicht billig, [aber] er ist sehr warm. | پلیور ارزان نیست، ولی خیلی گرم است. | d: sondern, sondern auch, deshalb
+Ich bin müde, [aber] ich kann nicht schlafen. | خسته‌ام، ولی نمی‌توانم بخوابم. | d: sondern, sondern auch, deshalb
+Das Wetter war schlecht, [aber] der Urlaub war schön. | هوا بد بود، ولی تعطیلات خوب بود. | d: sondern, sondern auch, deshalb
+Sie spricht nicht [nur] Persisch, sondern auch Englisch. | او نه فقط فارسی، بلکه انگلیسی هم حرف می‌زند. | d: auch, mehr, noch
+Ich trinke nicht nur Tee, sondern [auch] Kaffee. | من نه فقط چای، بلکه قهوه هم می‌نوشم. | d: nur, nicht, aber | ok: sogar
+Er kann nicht nur kochen, sondern [auch] backen. | او نه فقط آشپزی، بلکه شیرینی‌پزی هم بلد است. | d: nur, nicht, aber | ok: sogar
+Das Hotel war nicht nur billig, [sondern] auch sehr sauber. | هتل نه فقط ارزان، بلکه خیلی تمیز هم بود. | d: denn, deshalb, sonst
+Ich gehe heute nicht ins Kino, sondern [ich bleibe] zu Hause. | امروز سینما نمی‌روم، بلکه خانه می‌مانم. | d: bleibe ich, bleiben ich, ich bleiben | ok: bleibe
+Wir essen heute nicht im Restaurant, sondern [wir kochen] zu Hause. | امروز در رستوران غذا نمی‌خوریم، بلکه در خانه آشپزی می‌کنیم. | d: kochen wir, wir kocht, kocht wir | ok: kochen
+Max ruft nicht an, sondern [er schreibt] eine E-Mail. | ماکس زنگ نمی‌زند، بلکه یک ایمیل می‌نویسد. | d: schreibt er, er schreiben, schreiben er | ok: schreibt
+Ich fahre [nicht nach Berlin], sondern nach Hamburg. | من به برلین نمی‌روم، بلکه به هامبورگ. | d: nach Berlin nicht, kein nach Berlin, nach nicht Berlin
+Das ist [nicht] mein Handy, [sondern] das Handy von Anna. | این گوشی من نیست، بلکه گوشی آناست. | d: kein, nein, nichts / aber, denn, sondern auch
+Das ist [keine] Katze, [sondern] ein Hund. | این گربه نیست، بلکه سگ است. | d: kein, keinen, nicht / aber, denn, aber auch
+Ich wohne [nicht] in der Stadt, [sondern] in einem Dorf. | من در شهر زندگی نمی‌کنم، بلکه در یک روستا. | d: kein, nein, nichts / aber, denn, aber auch | full: In der Stadt wohne ich nicht, sondern in einem Dorf.
+Paul ist [nicht] krank, [sondern] nur müde. | پاول مریض نیست، فقط خسته است. | d: kein, nein, nichts / denn, deshalb, sondern auch
+Wir haben nicht [nur] Brot, [sondern] auch Kuchen gekauft. | ما نه فقط نان، بلکه کیک هم خریدیم. | d: auch, mehr, noch / denn, deshalb, sonst
+Der Film war [nicht nur] lang, [sondern] auch langweilig. | فیلم نه فقط طولانی، بلکه خسته‌کننده هم بود. | d: nur nicht, kein nur, nicht auch / denn, deshalb, sonst
+Die Wohnung ist [nicht] groß, [aber] sie ist hell. | آپارتمان بزرگ نیست، ولی روشن است. | d: kein, keine, nein / sondern, sondern auch, deshalb
+Ich habe [kein] Auto, [aber] meine Eltern haben zwei. | من ماشین ندارم، ولی پدر و مادرم دو تا دارند. | d: nicht, keine, keinen / sondern, sondern auch, deshalb
+transforms:
+Das ist kein Kaffee. Das ist Tee. => Das ist kein Kaffee, sondern Tee. | دو جمله را با sondern یکی کن.
+Er heißt nicht Peter. Er heißt Paul. => Er heißt nicht Peter, sondern Paul. ; Er heißt nicht Peter, sondern er heißt Paul. | دو جمله را با sondern یکی کن.
+Wir fahren nicht mit dem Auto. Wir fahren mit dem Zug. => Wir fahren nicht mit dem Auto, sondern mit dem Zug. ; Wir fahren nicht mit dem Auto, sondern wir fahren mit dem Zug. | دو جمله را با sondern یکی کن.
+Ich gehe nicht ins Kino. Ich bleibe zu Hause. => Ich gehe nicht ins Kino, sondern ich bleibe zu Hause. ; Ich gehe nicht ins Kino, sondern bleibe zu Hause. | دو جمله را با sondern یکی کن.
+Der Kurs ist am Dienstag. => Der Kurs ist nicht am Montag, sondern am Dienstag. | بگو: «کلاس دوشنبه نیست، بلکه سه‌شنبه است».
+Sie spricht Deutsch. Sie spricht auch Englisch. => Sie spricht nicht nur Deutsch, sondern auch Englisch. ; Sie spricht nicht nur Deutsch, sondern sie spricht auch Englisch. | دو جمله را با nicht nur … sondern auch یکی کن.
+Das Hotel ist teuer. Es ist schön. => Das Hotel ist teuer, aber schön. ; Das Hotel ist teuer, aber es ist schön. | دو جمله را با aber یکی کن.
+Ich habe kein Auto. Ich habe ein Fahrrad. => Ich habe kein Auto, aber ein Fahrrad. ; Ich habe kein Auto, aber ich habe ein Fahrrad. | دو جمله را با aber یکی کن.
+translations:
+من اهل اتریش نیستم، بلکه اهل سوئیس هستم. => Ich komme nicht aus Österreich, sondern aus der Schweiz. ; Ich bin nicht aus Österreich, sondern aus der Schweiz. ; Ich komme nicht aus Österreich, sondern ich komme aus der Schweiz.
+این چای نیست، بلکه قهوه است. => Das ist kein Tee, sondern Kaffee. ; Das ist nicht Tee, sondern Kaffee.
+او نه فقط آلمانی، بلکه انگلیسی هم حرف می‌زند. => Er spricht nicht nur Deutsch, sondern auch Englisch. ; Sie spricht nicht nur Deutsch, sondern auch Englisch.
+هتل گران است، ولی قشنگ است. => Das Hotel ist teuer, aber schön. ; Das Hotel ist teuer, aber es ist schön.
+ما با ماشین نمی‌رویم، بلکه با قطار. => Wir fahren nicht mit dem Auto, sondern mit dem Zug. ; Wir fahren nicht mit dem Auto, sondern mit der Bahn.
+اسمش پیتر نیست، بلکه پاول است. => Er heißt nicht Peter, sondern Paul. ; Sein Name ist nicht Peter, sondern Paul.
+کلاس دوشنبه نیست، بلکه سه‌شنبه است. => Der Kurs ist nicht am Montag, sondern am Dienstag. ; Der Kurs ist nicht Montag, sondern Dienstag.
+خسته‌ام، ولی نمی‌توانم بخوابم. => Ich bin müde, aber ich kann nicht schlafen. ; Ich bin müde, kann aber nicht schlafen.

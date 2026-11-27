@@ -1,0 +1,87 @@
+code: de-a2-welcher-dieser
+title: welcher، dieser و was für ein: کدام، این و چه جور
+scope: welcher (کدام) و dieser (این) با پسوندهای حرف تعریف der در حالت فاعلی، مفعولی و Dativ (Welcher Bus? Welchen Film? Mit welchem Zug? – Diesen hier.)، و was für ein برای پرسیدن نوع چیزی (Was für ein Auto hast du?)؛ این کلمه‌ها در حالت اضافی (Genitiv) در سطح B1 می‌آیند.
+can_do: حالا می‌توانی در مغازه بپرسی «کدام را می‌خواهی؟»، بگویی «این یکی را برمی‌دارم» و بپرسی چیزی چه جور است.
+rule: welcher و dieser مثل der عوض می‌شوند: der ← -er، den ← -en، dem ← -em، die ← -e، das ← -es (welchen Film، mit diesem Bus)؛ ein در was für ein مثل همیشه عوض می‌شود (Was für einen Hund?).
+mistake: «کدام» و «این» در فارسی هیچ‌وقت عوض نمی‌شوند؛ برای همین فارسی‌زبان‌ها همیشه welche یا diese می‌گویند: «Welche Film siehst du?» و «mit diese Bus» غلط است؛ درست: Welchen Film siehst du? و mit diesem Bus.
+lesson:
+در فارسی «کدام» و «این» همیشه همین‌اند؛ در آلمانی welcher (کدام) و dieser (این) پسوندشان را از حرف تعریف der می‌گیرند.
+پسوند همان حرف آخر حرف تعریف است: der Film ← dieser Film، den Film ← diesen Film، dem Bus ← diesem Bus، die Jacke ← diese Jacke، das Buch ← dieses Buch.
+پس اول ببین اسم چه جنسی دارد و در جمله چه نقشی دارد: فاعل (Welcher Bus fährt?)، مفعول (Welchen Film siehst du?) یا بعد از mit، in، bei و مانند آن‌ها (Mit welchem Bus?).
+در جواب، dieser بدون اسم هم می‌آید و یعنی «این یکی»: Welchen Pullover nimmst du? – Diesen hier.
+was für ein یعنی «چه جور، چه نوع»؛ ein در آن مثل همیشه عوض می‌شود: Was für ein Auto? Was für einen Hund? In was für einem Haus?
+در جمع و برای چیزهای شمردنی‌نشدنی ein نمی‌آید: Was für Schuhe suchst du? Was für Musik hörst du?
+welcher برای انتخاب از میان چیزهای معلوم است (کدام یکی؟)، was für ein برای نوع و ویژگی چیز (چه جور؟).
+table:
+حالت | مذکر | مؤنث | خنثی | جمع
+فاعلی | welcher / dieser | welche / diese | welches / dieses | welche / diese
+مفعولی | welchen / diesen | welche / diese | welches / dieses | welche / diese
+Dativ | welchem / diesem | welcher / dieser | welchem / diesem | welchen / diesen
+sets:
+welcher / dieser: Bus, Film, Pullover, Zug, Tag
+welche / diese: Jacke, Straße, Farbe, Tasche, Sprache
+welches / dieses: Buch, Zimmer, Auto, Hotel, Kleid
+examples:
+Welche Linie fährt zum Bahnhof? | کدام خط به ایستگاه قطار می‌رود؟
+Welches Kleid nimmst du? – Dieses hier. | کدام لباس را برمی‌داری؟ – این یکی را.
+Wir essen heute in diesem Restaurant. | امروز در این رستوران غذا می‌خوریم.
+Was für ein Auto hast du? | چه جور ماشینی داری؟
+targets:
+[Welcher] Zug fährt nach Hamburg? | کدام قطار به هامبورگ می‌رود؟ | d: Welchen, Welches, Welchem | hint: (welcher)
+[Welche] Farbe hat dein Fahrrad? | دوچرخه‌ات چه رنگی است؟ | d: Welcher, Welches, Welchen | hint: (welcher)
+[Welches] Zimmer ist noch frei? | کدام اتاق هنوز خالی است؟ | d: Welcher, Welche, Welchen
+[Welche] Schuhe gefallen dir? | از کدام کفش‌ها خوشت می‌آید؟ | d: Welcher, Welches, Welchen
+[Dieser] Pullover ist zu teuer. | این پلیور زیادی گران است. | d: Diesen, Dieses, Diese | hint: (dieser)
+[Diese] Jacke ist sehr warm. | این کاپشن خیلی گرم است. | d: Dieser, Dieses, Diesen
+[Dieses] Hotel ist sehr gut. | این هتل خیلی خوب است. | d: Dieser, Diese, Diesen | hint: (dieser)
+[Diese] Äpfel sind sehr süß. | این سیب‌ها خیلی شیرین‌اند. | d: Dieser, Dieses, Diesen
+[Welchen] Film möchtest du sehen? | کدام فیلم را می‌خواهی ببینی؟ | d: Welcher, Welches, Welchem | hint: (welcher)
+[Welche] Sprache sprichst du zu Hause? | در خانه به چه زبانی حرف می‌زنی؟ | d: Welcher, Welches, Welchen
+[Welches] Buch liest du gerade? | الان کدام کتاب را می‌خوانی؟ | d: Welcher, Welchen, Welchem | hint: (welcher)
+Ich nehme [diesen] Rock. | این دامن را برمی‌دارم. | d: dieser, dieses, diesem | hint: (dieser)
+Kennst du [diese] Frau? | این خانم را می‌شناسی؟ | d: dieser, dieses, diesen
+Wir kaufen [dieses] Sofa. | ما این کاناپه را می‌خریم. | d: dieser, diesen, diesem | hint: (dieser)
+Ich finde [diesen] Film langweilig. | به نظرم این فیلم خسته‌کننده است. | d: dieser, dieses, diesem
+Mit [welchem] Bus fährst du zur Arbeit? | با کدام اتوبوس سر کار می‌روی؟ | d: welchen, welcher, welches | hint: (welcher)
+In [welcher] Straße wohnt ihr? | شما در کدام خیابان زندگی می‌کنید؟ | d: welche, welchem, welchen
+In [welchem] Stock wohnst du? | در کدام طبقه زندگی می‌کنی؟ | d: welchen, welcher, welches | hint: (welcher)
+Meine Oma wohnt in [diesem] Haus. | مادربزرگم در این خانه زندگی می‌کند. | d: diesen, dieser, dieses | full: In diesem Haus wohnt meine Oma.
+Wir treffen uns vor [diesem] Café. | جلوی این کافه همدیگر را می‌بینیم. | d: diesen, dieser, dieses | hint: (dieser) | full: Vor diesem Café treffen wir uns.
+Mit [dieser] Linie kommst du direkt zum Bahnhof. | با این خط مستقیم به ایستگاه قطار می‌رسی. | d: diese, diesem, diesen | full: Du kommst mit dieser Linie direkt zum Bahnhof.
+Ich gebe [diesem] Kind ein Eis. | به این بچه یک بستنی می‌دهم. | d: dieses, diesen, dieser | hint: (dieser)
+Bei [welcher] Firma arbeitest du? | در کدام شرکت کار می‌کنی؟ | d: welche, welchem, welchen | hint: (welcher)
+[Welchem] Kind gehört{gehören} das Fahrrad? | دوچرخه مال کدام بچه است؟ | d: Welches, Welchen, Welcher
+Mit [welchen] Freunden fährst du in Urlaub? | با کدام دوستانت به تعطیلات می‌روی؟ | d: welche, welchem, welcher | hint: (welcher)
+Ich spiele oft mit [diesen] Kindern. | من اغلب با این بچه‌ها بازی می‌کنم. | d: diese, diesem, dieser
+Was für [ein] Handy hast du? | چه جور گوشی‌ای داری؟ | d: einen, eine, einem | hint: (ein)
+Was für [einen] Hund habt ihr? | شما چه جور سگی دارید؟ | d: ein, eine, einem
+Was für [eine] Wohnung sucht ihr? | دنبال چه جور آپارتمانی می‌گردید؟ | d: ein, einen, einer | hint: (ein)
+In was für [einem] Haus wohnst du? | در چه جور خانه‌ای زندگی می‌کنی؟ | d: ein, einen, einer
+Was für [ein] Mensch ist dein Chef? | رئیست چه جور آدمی است؟ | d: einen, eine, einem | hint: (ein)
+[Diesen] Sommer fahren wir ans Meer. | این تابستان به کنار دریا می‌رویم. | d: Dieser, Diesem, Dieses | full: Wir fahren diesen Sommer ans Meer.
+Hier sind zwei Kuchen. [Welchen] möchtest du? | اینجا دو تا کیک هست. کدام را می‌خواهی؟ | d: Welcher, Welches, Welchem
+[Welcher] Pullover gefällt dir? – [Dieser] hier. | از کدام پلیور خوشت می‌آید؟ – از این یکی. | d: Welchen, Welches, Welchem / Diesen, Dieses, Diesem
+[Welchen] Kuchen nimmst du? – [Diesen] hier. | کدام کیک را برمی‌داری؟ – این یکی را. | d: Welcher, Welches, Welchem / Dieser, Dieses, Diesem
+[Welche] Tasche kaufst du? – [Diese] da. | کدام کیف را می‌خری؟ – آن یکی را. | d: Welcher, Welches, Welchen / Dieser, Dieses, Diesen
+In [welchem] Hotel wohnt ihr? – In [diesem] hier. | در کدام هتل می‌مانید؟ – در همین یکی. | d: welchen, welcher, welches / diesen, dieser, dieses
+[Welches] Auto gehört{gehören} dir? – [Dieses] da. | کدام ماشین مال توست؟ – آن یکی. | d: Welcher, Welchen, Welchem / Dieser, Diesen, Diesem
+[Dieses] Hemd ist schön, aber [diese] Hose ist zu lang. | این پیراهن قشنگ است، ولی این شلوار زیادی بلند است. | d: Dieser, Diese, Diesen / dieser, dieses, diesen
+Kennst du [diesen] Mann? – [Welchen] Mann? | این مرد را می‌شناسی؟ – کدام مرد را؟ | d: dieser, dieses, diesem / Welcher, Welches, Welchem
+transforms:
+Ich nehme den Pullover. => Ich nehme diesen Pullover. | به‌جای den از dieser استفاده کن.
+Die Jacke ist warm. => Diese Jacke ist warm. | به‌جای Die از dieser استفاده کن.
+Wir wohnen in dem Haus. => Wir wohnen in diesem Haus. | به‌جای dem از dieser استفاده کن.
+Der Zug fährt nach Köln. => Welcher Zug fährt nach Köln? | با welcher بپرس: «کدام قطار؟»
+Du siehst den Film. => Welchen Film siehst du? | با welcher بپرس: «کدام فیلم را؟»
+Du fährst mit dem Zug. => Mit welchem Zug fährst du? | با welcher بپرس: «با کدام قطار؟»
+Ich habe einen Hund. => Was für einen Hund hast du? | با was für ein بپرس: «چه جور سگی داری؟»
+Anna sucht eine Wohnung. => Was für eine Wohnung sucht Anna? | با was für ein بپرس: «آنا دنبال چه جور آپارتمانی است؟»
+translations:
+کدام قطار به برلین می‌رود؟ => Welcher Zug fährt nach Berlin? ; Welcher Zug geht nach Berlin?
+این کاپشن را می‌خرم. => Ich kaufe diese Jacke. ; Diese Jacke kaufe ich.
+چه جور ماشینی داری؟ => Was für ein Auto hast du? ; Was für einen Wagen hast du?
+کدام کتاب را می‌خوانی؟ => Welches Buch liest du?
+در کدام خیابان زندگی می‌کنید؟ => In welcher Straße wohnen Sie? ; In welcher Straße wohnt ihr? ; In welcher Straße leben Sie? ; In welcher Straße lebt ihr?
+در کدام شرکت کار می‌کنی؟ => Bei welcher Firma arbeitest du? ; In welcher Firma arbeitest du? ; Für welche Firma arbeitest du?
+این کفش‌ها خیلی راحت‌اند. => Diese Schuhe sind sehr bequem.
+چه جور آپارتمانی می‌خواهی؟ => Was für eine Wohnung möchtest du? ; Was für eine Wohnung willst du?

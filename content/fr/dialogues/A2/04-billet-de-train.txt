@@ -1,0 +1,34 @@
+code: fr-a2-d004
+title: باجه بلیت قطار
+situation: در ایستگاه قطار پاریس جلوی باجه بلیت هستی. برای فردا بلیت لیون می‌خواهی.
+turns:
+B: Bonjour ! C'est{être} pour aller où ? | سلام! برای کجا؟
+- Bonjour ! Un billet en Lyon, s'il vous plaît. | سلام! یک بلیت برای لیون، لطفاً.
++ Bonjour ! Un billet pour Lyon, s'il vous plaît. | سلام! یک بلیت برای لیون، لطفاً.
+- Salut ! Un billet pour Lyon, s'il te plaît. | سلام! یک بلیت برای لیون، لطفاً.
+why: مقصد بلیت را با pour می‌گوییم: «un billet pour Lyon»؛ en پیش از اسم شهر غلط است. Salut و «s'il te plaît» با کارمند باجه خودمانی است.
+B: Pour quand{quand} ? | برای کی؟
++ Pour demain matin, vers huit heures. | برای فردا صبح، حدود ساعت هشت.
+- Pour hier matin, vers huit heures. | برای دیروز صبح، حدود ساعت هشت.
+- Il est huit heures du{du-contr} matin. | ساعت هشت صبح است.
+why: بلیت برای آینده است: «demain matin». hier یعنی دیروز، و «Il est huit heures» ساعتِ الان را می‌گوید.
+B: Il y a un train à huit heures douze. Et pour revenir, vous voulez aussi un billet ? | یک قطار ساعت هشت و دوازده دقیقه هست. برای برگشت هم بلیت می‌خواهید؟
+- Oui, je suis{être} revenu dimanche soir. | بله، یکشنبه شب برگشتم.
+- Oui, je reviens dimanche dernier. | بله، یکشنبه گذشته برمی‌گردم.
++ Oui, je reviens dimanche soir. | بله، یکشنبه شب برمی‌گردم.
+why: برگشتن در آینده است، پس «je reviens dimanche soir». «je suis revenu» گذشته است و «dimanche dernier» یعنی یکشنبه گذشته.
+B: Alors, deux billets. Vous avez une carte d'étudiant ? C'est{être} moins cher pour les étudiants. | پس دو بلیت. کارت دانشجویی دارید؟ برای دانشجوها ارزان‌تر است.
++ Oui, voilà ma carte. | بله، این کارتم است.
+- Oui, voilà mon carte. | بله، این کارتم است.
+- Non, merci. Voilà ma carte. | نه، ممنون. این کارتم است.
+why: carte مؤنث است، پس «ma carte». «Non, merci» با نشان دادن کارت دانشجویی جور نیست.
+B: Très bien. Ça fait cinquante-deux euros pour les deux billets. | خیلی خوب. برای دو بلیت پنجاه‌ودو یورو می‌شود.
+- Voilà. Il faut combien d'argent pour aller à Lyon ? | بفرمایید. برای رفتن به لیون چقدر پول لازم است؟
++ Voilà. Il faut combien de temps pour aller à Lyon ? | بفرمایید. رفتن به لیون چقدر طول می‌کشد؟
+- Voilà. Il fait combien de temps pour aller à Lyon ? | بفرمایید. رفتن به لیون چقدر طول می‌کشد؟
+why: مدت سفر را با «Il faut combien de temps» می‌پرسیم؛ «il fait» برای هواست. قیمت را هم کارمند تازه گفت.
+B: Deux heures. Voilà vos billets. Bon voyage ! | دو ساعت. این بلیت‌هایتان. سفر خوش!
+- Merci, à vous aussi ! | ممنون، شما هم همین‌طور!
+- Avec plaisir ! Au revoir ! | با کمال میل! خداحافظ!
++ Merci beaucoup ! Bonne journée ! | خیلی ممنون! روز خوبی داشته باشید!
+why: کارمند باجه سفر نمی‌رود، پس «à vous aussi» جا ندارد. «Avec plaisir» جواب دعوت یا درخواست است، نه جواب «سفر خوش».

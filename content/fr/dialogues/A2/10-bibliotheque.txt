@@ -1,0 +1,34 @@
+code: fr-a2-d010
+title: کتابخانه
+situation: برای اولین بار به کتابخانه شهر رفته‌ای و می‌خواهی کتاب امانت بگیری.
+turns:
+B: Bonjour ! Vous cherchez un livre ? | سلام! دنبال کتاب می‌گردید؟
+- Bonjour ! Oui, mais je n'ai pas encore de carte. Je voudrais me inscrire. | سلام! بله، ولی هنوز کارت ندارم. می‌خواهم ثبت‌نام کنم.
++ Bonjour ! Oui, mais je n'ai pas encore de carte. Je voudrais m'inscrire. | سلام! بله، ولی هنوز کارت ندارم. می‌خواهم ثبت‌نام کنم.
+- Salut ! Ouais, mais j'ai pas encore de carte. Je peux m'inscrire ? | سلام! آره، ولی هنوز کارت ندارم. می‌توانم ثبت‌نام کنم؟
+why: پیش از واکه me می‌شود m': «je voudrais m'inscrire». با کتابدار Salut و ouais نمی‌گوییم؛ این‌ها برای دوست‌اند.
+B: Bien sûr. Remplissez ce formulaire, s'il vous plaît. Vous avez votre passeport ? | حتماً. لطفاً این فرم را پر کنید. گذرنامه‌تان را دارید؟
++ Oui, voilà mon passeport. | بله، این گذرنامه‌ام است.
+- Oui, voilà ma passeport. | بله، این گذرنامه‌ام است.
+- Oui, voilà votre passeport. | بله، این گذرنامه شماست.
+why: passeport مذکر است: «mon passeport». «votre passeport» یعنی گذرنامه کتابدار، نه مال خودت.
+B: Merci. Voilà votre carte. Elle est gratuite. | ممنون. این کارتتان است. رایگان است.
+- Gratuite ? Super ! Je peux prêter combien de livres ? | رایگان؟ عالی! چند کتاب می‌توانم قرض بدهم؟
+- Gratuite ? Super ! Je peux emprunter combien des{des-contr} livres ? | رایگان؟ عالی! چند کتاب می‌توانم امانت بگیرم؟
++ Gratuite ? Super ! Je peux emprunter combien de livres ? | رایگان؟ عالی! چند کتاب می‌توانم امانت بگیرم؟
+why: emprunter یعنی «قرض گرفتن» و prêter یعنی «قرض دادن». بعد از combien فقط de می‌آید: «combien de livres».
+B: Cinq livres, pour trois semaines. | پنج کتاب، برای سه هفته.
+- Trois mois ? Et je peux les garder plus longtemps ? | سه ماه؟ می‌توانم بیشتر نگهشان دارم؟
++ Trois semaines ? Et je peux les garder plus longtemps ? | سه هفته؟ می‌توانم بیشتر نگهشان دارم؟
+- Trois semaines ? Et je peux garder les{les-pron} plus longtemps ? | سه هفته؟ می‌توانم بیشتر نگهشان دارم؟
+why: کتابدار گفت سه هفته (semaines)، نه سه ماه. ضمیر les پیش از مصدر می‌آید: «je peux les garder».
+B: Oui, une semaine de plus. Vous pouvez faire ça sur notre site internet. | بله، یک هفته بیشتر. می‌توانید این کار را در سایت ما انجام دهید.
++ Très bien. Et où sont les dictionnaires ? | خیلی خوب. فرهنگ لغت‌ها کجا هستند؟
+- Très bien. Et où est les dictionnaires ? | خیلی خوب. فرهنگ لغت‌ها کجا هستند؟
+- Très bien. Et qui sont les dictionnaires ? | خیلی خوب. فرهنگ لغت‌ها چه کسانی هستند؟
+why: dictionnaires جمع است، پس «où sont». qui برای آدم است و برای جا où می‌پرسیم.
+B: Au premier étage. Mais attention : on ne peut pas les emprunter, il faut les utiliser ici. | طبقه اول. ولی دقت کنید: نمی‌شود امانتشان گرفت، باید همین‌جا از آن‌ها استفاده کنید.
+- D'accord, je vais les emprunter tout de suite. | باشد، همین الان امانتشان می‌گیرم.
+- D'accord, je vais aller y tout de suite. | باشد، همین الان می‌روم آنجا.
++ D'accord, je vais y aller tout de suite. | باشد، همین الان می‌روم آنجا.
+why: y پیش از مصدر می‌آید: «je vais y aller». کتابدار گفت فرهنگ لغت‌ها را نمی‌شود امانت گرفت.

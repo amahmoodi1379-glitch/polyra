@@ -1,0 +1,34 @@
+code: fr-a2-d013
+title: ثبت‌نام در باشگاه ورزشی
+situation: به یک باشگاه ورزشی رفته‌ای و می‌خواهی ثبت‌نام کنی.
+turns:
+B: Bonjour ! Vous voulez des informations sur le club ? | سلام! درباره باشگاه اطلاعات می‌خواهید؟
++ Oui, je voudrais m'inscrire. C'est{être} combien par mois ? | بله، می‌خواهم ثبت‌نام کنم. ماهی چند است؟
+- Oui, je voudrais m'inscrire. Tu prends combien par mois ? | آره، می‌خواهم ثبت‌نام کنم. ماهی چقدر می‌گیری؟
+- Oui, je voudrais m'inscrire. C'est{être} combien à mois ? | بله، می‌خواهم ثبت‌نام کنم. ماهی چند است؟
+why: قیمت ماهانه را با «par mois» می‌پرسیم. با کارمند باشگاه tu نمی‌گوییم.
+B: Trente-cinq euros par mois. Mais pour les étudiants, il y a une réduction : c'est{être} vingt-cinq euros. | ماهی سی‌وپنج یورو. ولی دانشجوها تخفیف دارند: بیست‌وپنج یورو.
+- Je suis{être} à la université, alors je paie vingt-cinq euros ? | دانشجوی دانشگاهم، پس بیست‌وپنج یورو می‌دهم؟
+- Je suis{être} à l'université, alors je paie trente-cinq euros ? | دانشجوی دانشگاهم، پس سی‌وپنج یورو می‌دهم؟
++ Je suis{être} à l'université, alors je paie vingt-cinq euros ? | دانشجوی دانشگاهم، پس بیست‌وپنج یورو می‌دهم؟
+why: پیش از واکه la می‌شود l': «à l'université». قیمت دانشجویی بیست‌وپنج یورو است، نه سی‌وپنج.
+B: Oui. Vous avez une carte d'étudiant ? Il faut aussi remplir ce formulaire. | بله. کارت دانشجویی دارید؟ این فرم را هم باید پر کنید.
+- Oui, le{le-pron} voilà. Je remplis le formulaire maintenant ? | بله، بفرمایید. فرم را الان پر کنم؟
++ Oui, la{la-pron} voilà. Je remplis le formulaire maintenant ? | بله، بفرمایید. فرم را الان پر کنم؟
+- Oui, la{la-pron} voilà. Je remplis la formulaire maintenant ? | بله، بفرمایید. فرم را الان پر کنم؟
+why: carte مؤنث است، پس «la voilà». formulaire مذکر است: «le formulaire».
+B: Oui, s'il vous plaît. Vous faites déjà du sport ? | بله، لطفاً. الان ورزش می‌کنید؟
++ Oui, je fais de la natation deux fois par semaine. | بله، هفته‌ای دو بار شنا می‌کنم.
+- Oui, je fais du natation deux fois par semaine. | بله، هفته‌ای دو بار شنا می‌کنم.
+- Non, je fais de la natation deux fois par semaine. | نه، هفته‌ای دو بار شنا می‌کنم.
+why: natation مؤنث است: «de la natation». اگر شنا می‌کنی، ورزش می‌کنی و جواب Non نیست.
+B: Très bien ! Il y a une piscine ici. Le club est ouvert{ouvert} tous les jours, de sept heures à vingt-deux heures. | خیلی خوب! اینجا استخر هم هست. باشگاه هر روز از ساعت هفت تا ساعت بیست‌ودو باز است.
+- Parfait. Je peux commencer hier ? | عالی. می‌توانم دیروز شروع کنم؟
+- Parfait. Je peux commence aujourd'hui ? | عالی. می‌توانم امروز شروع کنم؟
++ Parfait. Je peux commencer aujourd'hui ? | عالی. می‌توانم امروز شروع کنم؟
+why: بعد از pouvoir فعل مصدر می‌آید: «je peux commencer». hier یعنی دیروز و نمی‌شود دیروز شروع کرد.
+B: Oui, bien sûr ! Voilà votre carte du{du-contr} club. Amusez-vous bien ! | بله، حتماً! این کارت باشگاهتان. خوش بگذرد!
+- Merci, vous aussi ! | ممنون، به شما هم!
++ Merci beaucoup ! À bientôt ! | خیلی ممنون! به‌زودی می‌بینمتان!
+- Pardon ! À bientôt ! | ببخشید! به‌زودی می‌بینمتان!
+why: کارمند باشگاه سر کار است و ورزش نمی‌کند که بگویی «vous aussi». Pardon برای عذرخواهی است، نه تشکر.

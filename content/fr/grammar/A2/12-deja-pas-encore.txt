@@ -1,0 +1,88 @@
+code: fr-a2-deja-pas-encore
+title: déjà و pas encore: «تا حالا» و «هنوز نه»
+scope: déjà («قبلاً، تا حالا»)، pas encore («هنوز نه») و jamais در سؤال و جواب و در passé composé (Tu as déjà mangé ? Non, pas encore. Je n'ai pas encore fini.)، و جای قیدهای کوتاه bien، mal، beaucoup، déjà، toujours و souvent بین avoir یا être و اسم مفعول (j'ai bien dormi، il a beaucoup travaillé).
+can_do: حالا می‌توانی بپرسی کسی کاری را کرده یا نه و جواب بدهی «بله، قبلاً»، «هنوز نه» یا «هرگز»، و بگویی کاری را خوب یا زیاد انجام دادی: Tu as déjà vu ce film ? Non, pas encore. J'ai bien dormi.
+rule: در passé composé قیدهای کوتاه (déjà، bien، mal، beaucoup، toujours، souvent) بین avoir یا être و اسم مفعول می‌آیند: j'ai déjà vu، j'ai bien dormi؛ pas encore جای pas می‌نشیند: je n'ai pas encore fini.
+mistake: فارسی «خوب» و «خیلی» را هم با اسم و هم با فعل می‌گوید، برای همین فارسی‌زبان‌ها می‌نویسند «j'ai bon dormi» یا «j'ai très travaillé»؛ درست: j'ai bien dormi، j'ai beaucoup travaillé. قید را هم مثل زمان حال بعد از فعل می‌گذارند («j'ai dormi bien»، «tu as vu déjà ce film»)؛ درست: j'ai bien dormi، tu as déjà vu ce film. «هنوز نه» هم «encore non» نیست؛ درست: pas encore.
+lesson:
+déjà یعنی «قبلاً، تا حالا»: Tu as déjà mangé ? (غذا خورده‌ای؟) Tu es déjà allé à Paris ? (تا حالا پاریس رفته‌ای؟)
+سه جواب رایج: Oui, déjà. (بله، قبلاً.) Non, pas encore. (نه، هنوز نه.) Non, jamais. (نه، هرگز.)
+pas encore یعنی «هنوز نه» و در جمله جای pas می‌نشیند: Je n'ai pas encore fini. (هنوز تمام نکرده‌ام.) Il n'est pas encore là. (هنوز نیامده.)
+در passé composé قیدهای کوتاه بین avoir یا être و اسم مفعول می‌آیند، نه بعد از اسم مفعول: j'ai déjà vu، je suis déjà allé، j'ai bien dormi، j'ai mal compris، il a beaucoup travaillé، elle a toujours aimé la musique، nous avons souvent parlé.
+bien و mal قید هستند و با فعل می‌آیند (j'ai bien mangé)؛ bon و mauvais صفت‌اند و با اسم (un bon repas).
+«خیلی» با فعل beaucoup است، نه très: J'ai beaucoup travaillé. très فقط قبل از صفت و قید می‌آید: très bon، très bien.
+jamais در جواب کوتاه تنها می‌آید (Non, jamais.)، ولی در جمله با ne: Je n'ai jamais pris l'avion.
+table:
+قید | passé composé
+déjà | Tu as déjà mangé ?
+pas encore | Je n'ai pas encore mangé.
+jamais | Je n'ai jamais mangé ici.
+bien | J'ai bien mangé.
+mal | J'ai mal dormi.
+beaucoup | J'ai beaucoup mangé.
+toujours | J'ai toujours aimé le chocolat.
+souvent | J'ai souvent mangé ici.
+examples:
+Tu as déjà vu la mer ? Oui, déjà. | تا حالا دریا را دیده‌ای؟ بله، قبلاً.
+Je n'ai pas encore fini mes devoirs. | هنوز تکالیفم را تمام نکرده‌ام.
+Hier, nous avons beaucoup marché{marcher}. | دیروز خیلی پیاده‌روی کردیم.
+J'ai bien dormi cette nuit. | دیشب خوب خوابیدم.
+targets:
+J'ai [bien] dormi. | خوب خوابیدم. | d: bon, bonne, très
+Tu as [bien] mangé ? | خوب غذا خوردی؟ | d: bon, bonne, très
+Nous avons [mal] dormi. | ما بد خوابیدیم. | d: mauvais, mauvaise, très
+Il a [beaucoup] travaillé hier. | او (مرد) دیروز خیلی کار کرد. | d: très, beaucoup de, très beaucoup
+Elles ont [beaucoup] dansé à la fête. | آن‌ها (زن‌ها) در جشن خیلی رقصیدند. | d: très, très beaucoup, beaucoup de
+J'ai [beaucoup] aimé ce film. | از این فیلم خیلی خوشم آمد. | d: très, beaucoup de, très beaucoup
+Vous avez [bien dormi] ? | خوب خوابیدید؟ | d: dormi bien, bon dormi, bien dormir | hint: (dormir)
+Tu [as bien travaillé] aujourd'hui. | امروز خوب کار کردی. | d: as travaillé bien, as bon travaillé, bien as travaillé | hint: (travailler)
+J'ai [mal compris] la question. | سؤال را بد فهمیدم. | d: compris mal, mauvais compris, mal comprendre | hint: (comprendre)
+On [a beaucoup ri]. | خیلی خندیدیم. | d: a très ri, très a ri, a beaucoup de ri | hint: (rire)
+Il [a mal dormi] cette nuit. | او (مرد) دیشب بد خوابید. | d: a dormi mal, a mauvais dormi, mal a dormi | hint: (dormir)
+Les élèves [ont bien répondu]. | دانش‌آموزان خوب جواب دادند. | d: ont répondu bien, ont bon répondu, bien ont répondu | hint: (répondre)
+Le professeur [a bien expliqué] la leçon. | معلم درس را خوب توضیح داد. | d: a expliqué bien, a bon expliqué, bien a expliqué | hint: (expliquer)
+Vous [avez beaucoup marché{marcher}] ? | خیلی پیاده‌روی کردید؟ | d: avez très marché, très avez marché, avez marché très | hint: (marcher)
+Tu [as déjà vu] ce film ? | این فیلم را قبلاً دیده‌ای؟ | d: as vu déjà, déjà as vu, as déjà voir | hint: (voir)
+Elle [a déjà fini] ses devoirs. | او (زن) تکالیفش را تمام کرده است. | d: a fini déjà, déjà a fini, a déjà finir | hint: (finir)
+Nous [avons déjà visité] ce musée. | ما قبلاً از این موزه دیدن کرده‌ایم. | d: avons visité déjà, déjà avons visité, avons déjà visiter | hint: (visiter)
+[Tu es déjà] allé en Italie ? | تا حالا به ایتالیا رفته‌ای؟ | d: Déjà tu es, Tu déjà es, Tu as déjà
+Vous [êtes déjà venus] ici ? | قبلاً اینجا آمده‌اید؟ | d: êtes venus déjà, déjà êtes venus, avez déjà venus | ok: êtes déjà venu, êtes déjà venue, êtes déjà venues | hint: (venir)
+Les enfants [ont déjà mangé] leur gâteau. | بچه‌ها کیکشان را خورده‌اند. | d: ont mangé déjà, déjà ont mangé, ont déjà manger | hint: (manger)
+Elle [est déjà partie{partir}] ? | او (زن) رفته است؟ | d: déjà est partie, a déjà partie, est déjà partir | hint: (partir)
+Je [n'ai pas encore] fini. | هنوز تمام نکرده‌ام. | d: encore n'ai pas, n'ai encore, ne ai pas encore
+Elle [n'est pas encore] arrivée{arriver}. | او (زن) هنوز نرسیده است. | d: encore n'est pas, n'est encore, n'a pas encore
+Nous [n'avons pas encore] mangé. | ما هنوز غذا نخورده‌ایم. | d: encore n'avons pas, n'avons encore, ne avons pas encore
+Le train [n'est pas encore] parti. | قطار هنوز حرکت نکرده است. | d: encore n'est pas, n'est encore, n'a pas encore
+Ils [n'ont pas encore] téléphoné. | آن‌ها هنوز تلفن نزده‌اند. | d: encore n'ont pas, n'ont encore, ne ont pas encore
+Je [ne suis{être} pas encore] prêt. | هنوز آماده نیستم. | d: encore ne suis pas, ne suis encore, ne suis non encore
+Le film a commencé ? Non, [pas encore]. | فیلم شروع شده؟ نه، هنوز نه. | d: encore non, ne pas encore, non encore
+Tu es déjà allé au Japon ? Non, [jamais]. | تا حالا به ژاپن رفته‌ای؟ نه، هرگز. | d: pas jamais, ne jamais, jamais pas
+Tu as déjà pris l'avion ? Non, je [n'ai jamais pris] l'avion. | تا حالا سوار هواپیما شده‌ای؟ نه، هرگز سوار هواپیما نشده‌ام. | d: n'ai pas jamais pris, n'ai pris jamais, ne jamais ai pris
+Ma grand-mère [a toujours habité] à Ispahan. | مادربزرگم همیشه در اصفهان زندگی کرده است. | d: toujours a habité, a toujours habiter, est toujours habité | hint: (habiter)
+Nous [avons souvent parlé] de ce problème. | ما بارها دربارهٔ این مشکل حرف زده‌ایم. | d: souvent avons parlé, avons souvent parler, sommes souvent parlé | hint: (parler)
+Tu [as déjà] mangé ? Non, [pas encore]. | غذا خورده‌ای؟ نه، هنوز نه. | d: déjà as, es déjà, déjà es / encore non, ne pas encore, non encore
+J'ai [bien] mangé et j'ai [bien] dormi. | خوب غذا خوردم و خوب خوابیدم. | d: bon, bonne, très / bon, bonne, très | full: J'ai bien dormi et j'ai bien mangé.
+Il a [beaucoup] travaillé, mais il n'a [pas encore] fini. | او (مرد) خیلی کار کرده، ولی هنوز تمام نکرده است. | d: très, beaucoup de, très beaucoup / encore, jamais pas, non encore
+Elle [n'est pas encore] rentrée, mais elle [a déjà] téléphoné. | او (زن) هنوز برنگشته، ولی تلفن زده است. | d: encore n'est pas, n'est encore, n'a pas encore / déjà a, est déjà, déjà est | full: Elle a déjà téléphoné, mais elle n'est pas encore rentrée.
+Nous [avons bien] mangé et nous [avons beaucoup] parlé. | ما خوب غذا خوردیم و خیلی حرف زدیم. | d: avons bon, bien avons, sommes bien / avons très, très avons, avons beaucoup de | full: Nous avons beaucoup parlé et nous avons bien mangé.
+Tu [as déjà vu] la mer ? Non, je [n'ai jamais vu] la mer. | تا حالا دریا را دیده‌ای؟ نه، هرگز دریا را ندیده‌ام. | d: as vu déjà, déjà as vu, as déjà voir / n'ai pas jamais vu, n'ai vu jamais, ne jamais ai vu
+Les invités [sont déjà arrivés], mais le dîner [n'est pas encore] prêt. | مهمان‌ها رسیده‌اند، ولی شام هنوز آماده نیست. | d: déjà sont arrivés, sont déjà arriver, ont déjà arrivés / encore n'est pas, n'est encore, ne est pas encore | full: Le dîner n'est pas encore prêt, mais les invités sont déjà arrivés.
+Hier, j'ai [beaucoup] mangé, mais j'ai [mal] dormi. | دیروز خیلی غذا خوردم، ولی بد خوابیدم. | d: très, beaucoup de, très beaucoup / mauvais, mauvaise, très | full: J'ai beaucoup mangé hier, mais j'ai mal dormi.
+transforms:
+J'ai dormi. => J'ai bien dormi. | bien را به جمله اضافه کن.
+Tu as vu ce film ? => Tu as déjà vu ce film ? | déjà را به جمله اضافه کن.
+J'ai fini. => Je n'ai pas encore fini. | با pas encore منفی کن.
+Elle est arrivée{arriver}. => Elle n'est pas encore arrivée{arriver}. | با pas encore منفی کن.
+Nous avons mangé. => Nous avons bien mangé. | bien را به جمله اضافه کن.
+Vous avez visité ce musée ? => Vous avez déjà visité ce musée ? | déjà را به جمله اضافه کن.
+J'ai compris. => J'ai mal compris. | mal را به جمله اضافه کن.
+Je suis{être} déjà allé à Rome. => Je ne suis{être} jamais allé à Rome. | به‌جای déjà، با ne … jamais منفی کن.
+translations:
+خوب خوابیدم. => J'ai bien dormi.
+تا حالا به پاریس رفته‌ای؟ => Tu es déjà allé à Paris ? ; Tu es déjà allée à Paris ? ; Est-ce que tu es déjà allé à Paris ? ; Est-ce que tu es déjà allée à Paris ? ; Es-tu déjà allé à Paris ? ; Es-tu déjà allée à Paris ?
+هنوز تمام نکرده‌ام. => Je n'ai pas encore fini. ; Je n'ai pas encore terminé.
+نه، هنوز نه. => Non, pas encore.
+او (مرد) دیروز خیلی کار کرد. => Il a beaucoup travaillé hier. ; Hier, il a beaucoup travaillé.
+این فیلم را قبلاً دیده‌ام. => J'ai déjà vu ce film.
+قطار هنوز نرسیده است. => Le train n'est pas encore arrivé.
+ما خیلی خندیدیم. => Nous avons beaucoup ri. ; On a beaucoup ri.

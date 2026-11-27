@@ -1,0 +1,91 @@
+code: de-a2-schon-noch-erst
+title: schon، noch و erst: «دیگر»، «هنوز» و «تازه»
+scope: schon (دیگر، قبلاً)، noch (هنوز)، noch nicht و noch kein (هنوز نه)، nicht mehr و kein … mehr (دیگر نه)، noch nie (هیچ‌وقت تا حالا)، و erst (تازه، نه زودتر) برای سن و زمان، و فرق schon و erst (Er ist schon 20 / erst 15)؛ noch به معنی «یکی دیگر» (noch ein Kaffee) جدا در واژه‌ها می‌آید.
+can_do: حالا می‌توانی بگویی چه کاری را کرده‌ای و چه کاری را هنوز نه، چه چیزی دیگر نیست، و این‌که چیزی زودتر یا دیرتر از انتظار است.
+rule: schon = دیگر، قبلاً؛ noch = هنوز؛ noch nicht = هنوز نه؛ nicht mehr = دیگر نه و با اسم kein … mehr (Ich habe kein Geld mehr)؛ erst = تازه، نه زودتر (Es ist erst acht Uhr).
+mistake: در فارسی «دیگر» هم برای schon است («دیگر آمد») هم برای nicht mehr («دیگر نمی‌آید»)، پس فارسی‌زبان‌ها این دو را قاطی می‌کنند یا با اسم nicht می‌گذارند: «Ich habe nicht Geld mehr» غلط است؛ درست: Ich habe kein Geld mehr. «nur» هم برای زمان غلط است: «Ich bin nur um zehn aufgestanden» نه، بلکه Ich bin erst um zehn aufgestanden.
+lesson:
+schon یعنی «دیگر، قبلاً، زودتر از انتظار»: Ich habe schon gegessen. Paul ist schon da.
+noch یعنی «هنوز»، یعنی کاری که ادامه دارد: Das Baby schläft noch. Ich wohne noch in Köln.
+noch nicht یعنی «هنوز نه»؛ ترتیبش مثل فارسی است، اول noch بعد nicht: Ich habe noch nicht gegessen. با اسم noch kein می‌آید: Ich habe noch keine Kinder.
+nicht mehr یعنی «دیگر نه»، یعنی چیزی که قبلاً بود و حالا نیست: Ich wohne nicht mehr in Köln. با اسم kein … mehr می‌آید و mehr آخر می‌رود: Ich habe kein Geld mehr.
+در فارسی «دیگر» دو معنی دارد: «دیگر آمد» یعنی schon و «دیگر نمی‌آید» یعنی nicht mehr. از مثبت یا منفی بودن جمله بفهم کدام است.
+erst یعنی «تازه، نه زودتر»: Es ist erst acht Uhr (زود است). Ich bin erst um zehn aufgestanden (دیر بیدار شدم). برای زمان nur نگو.
+schon و erst برعکس هم‌اند: Max ist schon zwanzig (بزرگ است)، Lena ist erst fünfzehn (هنوز کوچک است).
+noch nie یعنی «هیچ‌وقت تا حالا»: Ich war noch nie in Wien. جواب کوتاه به سؤال با schon: Ja, schon. یا Nein, noch nicht.
+table:
+کلمه | معنی | مثال
+schon | دیگر، قبلاً | Ich bin schon fertig.
+noch | هنوز | Er schläft noch.
+noch nicht / noch kein | هنوز نه | Der Bus ist noch nicht da.
+nicht mehr | دیگر نه | Ich wohne nicht mehr hier.
+kein … mehr | دیگر … نه | Ich habe keine Zeit mehr.
+erst | تازه، نه زودتر | Es ist erst acht Uhr.
+sets:
+schon ↔ noch nicht: schon fertig, noch nicht fertig, schon da, noch nicht da
+noch ↔ nicht mehr: noch müde, nicht mehr müde, noch hier, nicht mehr hier
+noch ↔ kein … mehr: noch Zeit, keine Zeit mehr, noch Geld, kein Geld mehr
+examples:
+Ich habe schon gegessen. | من غذا خورده‌ام.
+Der Film hat noch nicht angefangen. | فیلم هنوز شروع نشده.
+Wir haben keine Zeit mehr{mehr}. | دیگر وقت نداریم.
+Es ist erst acht Uhr. | تازه ساعت هشت است.
+targets:
+Ich habe [noch nicht] gegessen. | هنوز غذا نخورده‌ام. | d: nicht noch, noch kein, kein noch
+Der Bus ist noch [nicht] da. | اتوبوس هنوز نیامده. | d: kein, keine, nichts
+Ich bin [noch] nicht fertig. | هنوز کارم تمام نشده. | d: mehr, erst, kein
+Das Kind kann [noch nicht] lesen, es ist erst vier. | بچه هنوز نمی‌تواند بخواند، تازه چهار سالش است. | d: nicht noch, nicht mehr, noch kein
+Ich habe [noch] keine Kinder. | هنوز بچه ندارم. | d: mehr, schon, erst
+Ich war [noch nie] in Wien. | تا حالا هیچ‌وقت در وین نبوده‌ام. | d: nie noch, mehr nie, noch kein
+Wir wohnen [nicht mehr{mehr}] in Köln. | ما دیگر در کلن زندگی نمی‌کنیم. | d: mehr nicht, kein mehr, nicht noch
+Ich bin [nicht mehr{mehr}] müde. | دیگر خسته نیستم. | d: mehr nicht, kein mehr, nicht noch
+Bist du noch krank? – Nein, ich bin [nicht mehr{mehr}] krank. | هنوز مریضی؟ – نه، دیگر مریض نیستم. | d: mehr nicht, kein mehr, noch nicht
+Wohnst du noch in Teheran? – Nein, [nicht mehr{mehr}]. | هنوز در تهران زندگی می‌کنی؟ – نه، دیگر نه. | d: mehr nicht, noch nicht, kein mehr
+Meine Oma arbeitet [nicht mehr{mehr}], sie ist schon siebzig. | مادربزرگم دیگر کار نمی‌کند، هفتاد سالش است. | d: mehr nicht, noch nicht, kein mehr
+Er arbeitet nicht [mehr]{mehr} bei dieser Firma. | او دیگر در این شرکت کار نمی‌کند. | d: schon, kein, nie
+Ich habe [kein] Geld mehr{mehr}. | دیگر پول ندارم. | d: nicht, keine, keinen | hint: (kein)
+Es gibt [keinen] Kuchen mehr{mehr}. | دیگر کیک نمانده. | d: nicht, kein, keinem | hint: (kein)
+Ich habe [keinen] Hunger mehr{mehr}. | دیگر گرسنه نیستم. | d: nicht, kein, keine | hint: (kein)
+Ich esse [kein] Fleisch mehr{mehr}. | دیگر گوشت نمی‌خورم. | d: nicht, keine, keinen | hint: (kein)
+Hast du noch Fragen? – Nein, ich habe [keine] Fragen mehr{mehr}. | باز هم سؤال داری؟ – نه، دیگر سؤالی ندارم. | d: nicht, kein, keinen | hint: (kein)
+Wir haben keinen Kaffee [mehr]{mehr}. | دیگر قهوه نداریم. | d: noch, nicht, schon
+Schläft das Baby noch? – Ja, es schläft [noch]. | بچه هنوز خواب است؟ – بله، هنوز خواب است. | d: nicht mehr, mehr, erst
+Es ist [noch] früh, wir haben viel Zeit. | هنوز زود است، خیلی وقت داریم. | d: mehr, nicht mehr, kein
+Der Laden ist [noch] offen, wir können einkaufen. | مغازه هنوز باز است، می‌توانیم خرید کنیم. | d: nicht mehr, mehr, erst
+Arbeitest du noch? – Ja, ich bin [noch] im Büro. | هنوز کار می‌کنی؟ – بله، هنوز در دفترم. | d: nicht mehr, mehr, kein
+Ist das Essen schon fertig? – Ja, es ist [schon] fertig. | غذا آماده است؟ – بله، آماده است. | d: erst, mehr, noch nicht
+Paul ist [schon] da, wir können anfangen. | پاول دیگر آمده، می‌توانیم شروع کنیم. | d: erst, mehr, noch nicht
+Kennst du Berlin? – Ja, ich war [schon] dort. | برلین را می‌شناسی؟ – بله، قبلاً آنجا بوده‌ام. | d: mehr, noch nicht, erste
+Es ist [schon] zehn Uhr, wir kommen zu spät! | ساعت دیگر ده است، دیر می‌رسیم! | d: erst, noch, mehr
+Ich warte [schon] seit einer Stunde! | یک ساعت است که منتظرم! | d: noch, mehr, noch nicht
+Es ist [erst] sieben Uhr. | تازه ساعت هفت است. | d: erste, ersten, zuerst
+Ich bin gestern [erst] um zwölf Uhr ins Bett gegangen. | دیروز تازه ساعت دوازده خوابیدم. | d: nur, zuerst, erste | full: Gestern bin ich erst um zwölf Uhr ins Bett gegangen.
+Sie ist [erst] um zehn Uhr aufgestanden. | او تازه ساعت ده از خواب بیدار شد. | d: nur, zuerst, erste
+Lena ist [erst] drei Jahre alt. | لنا تازه سه سالش است. | d: erste, ersten, zuerst
+Wir haben noch Zeit, der Zug fährt [erst] um zehn. | هنوز وقت داریم، قطار تازه ساعت ده حرکت می‌کند. | d: erste, ersten, zuerst
+Ich lerne [erst] seit drei Monaten Deutsch. | فقط سه ماه است که آلمانی یاد می‌گیرم. | d: erste, zuerst, ersten | full: Erst seit drei Monaten lerne ich Deutsch.
+Max ist [schon] zwanzig, aber Lena ist [erst] fünfzehn. | ماکس دیگر بیست سالش است، ولی لنا تازه پانزده سالش است. | d: erst, erste, mehr / schon, erste, mehr
+Sie ist [erst] fünf, aber sie kann [schon] lesen. | او تازه پنج سالش است، ولی دیگر می‌تواند بخواند. | d: schon, erste, mehr / erst, erste, nicht mehr
+Es ist [erst] acht Uhr, aber Paul ist [schon] im Büro. | تازه ساعت هشت است، ولی پاول از همین حالا در دفتر است. | d: schon, erste, zuerst / erst, erste, mehr
+Bist du [schon] fertig? – Nein, [noch nicht]. | کارت تمام شده؟ – نه، هنوز نه. | d: erst, mehr, noch / nicht noch, nicht mehr, noch kein
+Ich wohne [nicht mehr{mehr}] in Wien, aber meine Eltern wohnen [noch] dort. | من دیگر در وین زندگی نمی‌کنم، ولی پدر و مادرم هنوز آنجا هستند. | d: mehr nicht, kein mehr, nicht noch / mehr, erst, nicht mehr
+Hast du noch Geld? – Nein, ich habe [kein] Geld [mehr]{mehr}. | هنوز پول داری؟ – نه، دیگر پول ندارم. | d: nicht, keine, keinen / noch, schon, erst
+Wir haben [keine] Eier [mehr]{mehr}. | دیگر تخم‌مرغ نداریم. | d: nicht, kein, keinen / noch, schon, nicht
+transforms:
+Ich wohne noch in Köln. => Ich wohne nicht mehr{mehr} in Köln. | منفی کن: «دیگر در کلن زندگی نمی‌کنم».
+Er ist noch müde. => Er ist nicht mehr{mehr} müde. | منفی کن: «دیگر خسته نیست».
+Ich habe noch Geld. => Ich habe kein Geld mehr{mehr}. | منفی کن: «دیگر پول ندارم».
+Wir haben noch Zeit. => Wir haben keine Zeit mehr{mehr}. | منفی کن: «دیگر وقت نداریم».
+Ich habe schon gegessen. => Ich habe noch nicht gegessen. | منفی کن: «هنوز غذا نخورده‌ام».
+Der Bus ist schon da. => Der Bus ist noch nicht da. | منفی کن: «اتوبوس هنوز نیامده».
+Ich habe schon Kinder. => Ich habe noch keine Kinder. | منفی کن: «هنوز بچه ندارم».
+Es ist schon zehn Uhr. => Es ist erst zehn Uhr. | به‌جای schon کلمه‌ای بگذار که بگوید هنوز زود است.
+translations:
+هنوز غذا نخورده‌ام. => Ich habe noch nicht gegessen. ; Ich habe noch nichts gegessen.
+دیگر در تهران زندگی نمی‌کنم. => Ich wohne nicht mehr{mehr} in Teheran. ; Ich lebe nicht mehr{mehr} in Teheran. ; In Teheran wohne ich nicht mehr{mehr}. ; In Teheran lebe ich nicht mehr{mehr}.
+دیگر پول ندارم. => Ich habe kein Geld mehr{mehr}.
+تازه ساعت هشت است. => Es ist erst acht Uhr. ; Es ist erst acht.
+او تازه پانزده سالش است. => Er ist erst fünfzehn. ; Sie ist erst fünfzehn. ; Er ist erst fünfzehn Jahre alt. ; Sie ist erst fünfzehn Jahre alt.
+اتوبوس هنوز نیامده. => Der Bus ist noch nicht da. ; Der Bus ist noch nicht gekommen. ; Der Bus ist noch nicht angekommen.
+آنا هنوز خواب است. => Anna schläft noch. ; Anna schläft immer noch.
+دیگر خسته نیستم. => Ich bin nicht mehr{mehr} müde.

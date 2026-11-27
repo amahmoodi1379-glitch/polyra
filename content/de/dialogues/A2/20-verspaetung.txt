@@ -1,0 +1,34 @@
+code: de-a2-d020
+title: خبر دادن تأخیر به همکار
+situation: صبح در اتوبوس هستی و ساعت نه جلسه داری، ولی در ترافیک گیر کرده‌ای. به همکارت آقای بکر زنگ می‌زنی.
+turns:
+B: Becker, guten Morgen! | بکر هستم، صبح بخیر!
++ Guten Morgen, Herr Becker! Hier ist Sara Karimi. | صبح بخیر آقای بکر! سارا کریمی هستم.
+- Guten Morgen, Herr Becker! Hier bin Sara Karimi. | صبح بخیر آقای بکر! سارا کریمی هستم.
+- Gute Nacht, Herr Becker! Hier ist Sara Karimi. | شب بخیر آقای بکر! سارا کریمی هستم.
+why: پشت تلفن خودمان را با «Hier ist …» معرفی می‌کنیم، نه «Hier bin». صبح است، پس «Guten Morgen».
+B: Hallo, Frau Karimi! Wo sind Sie? Die Besprechung beginnt um neun. | سلام خانم کریمی! کجایید؟ جلسه ساعت نه شروع می‌شود.
+- Es tut mir leid, ich komme heute zu{zu-adv} früh. Ich stehe im Stau. | متأسفم، امروز زیادی زود می‌آیم. در ترافیک گیر کرده‌ام.
++ Es tut mir leid, ich komme heute zu spät. Ich stehe im Stau. | متأسفم، امروز دیر می‌رسم. در ترافیک گیر کرده‌ام.
+- Es tut mir leid, ich komme heute zu spät. Ich stehe{stehen} in den Stau. | متأسفم، امروز دیر می‌رسم. در ترافیک گیر کرده‌ام.
+why: در ترافیک گیر کرده‌ای، پس دیر می‌رسی (zu spät)، نه زود (zu früh). «im Stau stehen» با im می‌آید، نه in den.
+B: Oh nein! Wie viel Verspätung haben Sie? | وای نه! چقدر تأخیر دارید؟
+- Ich glaube, seit ungefähr zwanzig Minuten. | فکر کنم از حدود بیست دقیقه پیش.
+- Ich glaube, ungefähr zwanzig Kilometer. | فکر کنم حدود بیست کیلومتر.
++ Ich glaube, ungefähr zwanzig Minuten. | فکر کنم حدود بیست دقیقه.
+why: تأخیر را با دقیقه می‌گوییم: «ungefähr zwanzig Minuten». seit یعنی «از … تا حالا» و کیلومتر فاصله است، نه زمان.
+B: Warum sind Sie nicht mit der U-Bahn gefahren? | چرا با مترو نیامدید؟
++ Weil die U-Bahn heute nicht fährt. | چون مترو امروز کار نمی‌کند.
+- Weil die U-Bahn fährt heute nicht. | چون مترو امروز کار نمی‌کند.
+- Weil ich die U-Bahn sehr mag. | چون مترو را خیلی دوست دارم.
+why: بعد از weil فعل به آخر جمله می‌رود: «weil die U-Bahn heute nicht fährt». دوست داشتن مترو دلیل سوار نشدن نیست.
+B: Kein Problem. Wir können die Besprechung auch um halb zehn anfangen. | مشکلی نیست. می‌توانیم جلسه را ساعت نه و نیم شروع کنیم.
+- Super, danke{danke}! Kannst du den Kollegen bitte{bitte} Bescheid sagen? | عالی، ممنون! می‌توانی لطفاً به همکارها خبر بدهی؟
++ Super, danke{danke}! Können Sie den Kollegen bitte{bitte} Bescheid sagen? | عالی، ممنون! می‌توانید لطفاً به همکارها خبر بدهید؟
+- Super, danke{danke}! Können Sie die Kollegen bitte{bitte} Bescheid sagen? | عالی، ممنون! می‌توانید لطفاً همکارها را خبر بدهید؟
+why: Bescheid sagen با Dativ می‌آید: «den Kollegen Bescheid sagen»، نه die. آقای بکر با تو رسمی حرف می‌زند، پس Sie، نه du.
+B: Natürlich, das mache ich. Bis gleich! | البته، این کار را می‌کنم. تا چند دقیقه دیگر!
+- Danke{danke}! Bis morgen! | ممنون! تا فردا!
++ Danke{danke}! Bis gleich! | ممنون! تا چند دقیقه دیگر!
+- Danke{danke}! Gute Besserung! | ممنون! زودتر خوب شوید!
+why: تا نیم ساعت دیگر می‌رسی، پس «Bis gleich». جلسه امروز است، نه فردا، و آقای بکر مریض نیست.

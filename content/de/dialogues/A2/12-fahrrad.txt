@@ -1,0 +1,39 @@
+code: de-a2-d012
+title: اجاره دوچرخه
+situation: در یک مغازه کرایه دوچرخه هستی و می‌خواهی برای یک روز دوچرخه کرایه کنی.
+turns:
+B: Hallo! Was kann ich für Sie tun{tun}? | سلام! چه کاری برایتان بکنم؟
+- Hallo! Ich möchte ein Fahrrad vermieten. | سلام! می‌خواهم یک دوچرخه کرایه بدهم.
++ Hallo! Ich möchte ein Fahrrad mieten. | سلام! می‌خواهم یک دوچرخه کرایه کنم.
+- Hallo! Ich möchte einen Fahrrad mieten. | سلام! می‌خواهم یک دوچرخه کرایه کنم.
+why: mieten یعنی کرایه کردن و vermieten یعنی کرایه دادن. Fahrrad خنثی است: «ein Fahrrad».
+B: Gern. Für wie lange? | با کمال میل. برای چه مدت؟
++ Für einen Tag. Was kostet das? | برای یک روز. چقدر می‌شود؟
+- Für ein Tag. Was kostet das? | برای یک روز. چقدر می‌شود؟
+- Für meinen Bruder. Was kostet das? | برای برادرم. چقدر می‌شود؟
+why: Tag مذکر است و بعد از für می‌شود «einen Tag». «Für meinen Bruder» می‌گوید برای کیست، نه چه مدت.
+B: Fünfzehn Euro pro Tag oder fünf Euro pro Stunde. | روزی پانزده یورو یا ساعتی پنج یورو.
+- Gut, dann nehme ich ihn für den ganzen{ganz} Tag. | خوب، پس آن را برای کل روز برمی‌دارم.
+- Gut, dann nehme ich es für die ganze{ganz} Tag. | خوب، پس آن را برای کل روز برمی‌دارم.
++ Gut, dann nehme ich es für den ganzen{ganz} Tag. | خوب، پس آن را برای کل روز برمی‌دارم.
+why: das Fahrrad خنثی است، پس ضمیرش es است، نه ihn. Tag مذکر است: «für den ganzen Tag».
+B: Gut. Ich brauche nur Ihren Ausweis. | خوب. فقط کارت شناسایی‌تان را لازم دارم.
++ Hier, bitte{bitte}. Brauchen Sie auch meine Telefonnummer? | بفرمایید. شماره تلفنم را هم لازم دارید؟
+- Hier, bitte{bitte}. Brauchst du auch meine Telefonnummer? | بفرمایید. شماره تلفنم را هم لازم داری؟
+- Hier, bitte{bitte}. Brauchen Sie auch mein Telefonnummer? | بفرمایید. شماره تلفنم را هم لازم دارید؟
+why: با فروشنده رسمی حرف می‌زنیم: «Brauchen Sie». Telefonnummer مؤنث است، پس «meine Telefonnummer».
+B: Nein, das ist nicht nötig. Wann kommen Sie zurück? | نه، لازم نیست. کی برمی‌گردید؟
+- Ich zurückkomme{zurückkommen} um sechs Uhr. | ساعت شش برمی‌گردم.
++ Ich komme um sechs Uhr zurück. | ساعت شش برمی‌گردم.
+- Ich bin um sechs Uhr zurückgekommen. | ساعت شش برگشتم.
+why: zurückkommen جدا می‌شود: «Ich komme … zurück». «Ich bin zurückgekommen» گذشته است، ولی تو بعداً برمی‌گردی.
+B: Gut, wir haben bis sieben Uhr offen. Und schließen Sie das Fahrrad immer ab! | خوب، تا ساعت هفت باز هستیم. و همیشه دوچرخه را قفل کنید!
+- Natürlich. Ich schließe das Fahrrad nie ab. | البته. هیچ‌وقت دوچرخه را قفل نمی‌کنم.
+- Natürlich. Und wenn das Fahrrad ist kaputt, was mache ich dann? | البته. اگر دوچرخه خراب شد، چه کار کنم؟
++ Natürlich. Und wenn das Fahrrad kaputt ist, was mache ich dann? | البته. اگر دوچرخه خراب شد، چه کار کنم؟
+why: در جمله wenn فعل به آخر می‌رود: «wenn das Fahrrad kaputt ist». «nie ab» یعنی هیچ‌وقت قفل نمی‌کنی و با «Natürlich» جور نیست.
+B: Dann rufen Sie uns an. Viel Spaß! | آن‌وقت به ما زنگ بزنید. خوش بگذرد!
++ Danke{danke}! Bis später! | ممنون! تا بعد!
+- Danke{danke}! Bis gestern! | ممنون! تا دیروز!
+- Danke{danke}! Gute Besserung! | ممنون! زودتر خوب شوید!
+why: عصر دوچرخه را برمی‌گردانی، پس «Bis später». دیروز گذشته است و «Gute Besserung» را به آدم مریض می‌گوییم.

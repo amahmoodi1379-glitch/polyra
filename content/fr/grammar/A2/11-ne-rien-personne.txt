@@ -1,0 +1,85 @@
+code: fr-a2-ne-rien-personne
+title: ne … rien و ne … personne: «هیچ چیز» و «هیچ‌کس»
+scope: ne … rien («هیچ چیز») و ne … personne («هیچ‌کس») در زمان حال و passé composé (je ne vois rien، je n'ai rien mangé، je n'ai vu personne)، rien و personne در جای فاعل (Personne n'est venu. Rien n'est facile.) و در جواب کوتاه (Rien. Personne.)؛ ne … aucun در B1 می‌آید.
+can_do: حالا می‌توانی بگویی هیچ چیز ندیدی یا هیچ‌کس را نمی‌شناسی و به سؤال با یک کلمه جواب بدهی: Je n'ai rien vu. Qui est là ? Personne.
+rule: rien و personne جای pas می‌نشینند: je ne vois rien، je ne connais personne؛ در passé composé، rien قبل از اسم مفعول می‌آید (je n'ai rien mangé) و personne بعد از آن (je n'ai vu personne)؛ اول جمله: Personne n'est venu. Rien n'est facile.
+mistake: در فارسی «هیچ‌کس» و «هیچ چیز» با فعل منفی می‌آیند («هیچ‌کس را نمی‌بینم»)، برای همین فارسی‌زبان‌ها pas را هم می‌گذارند («je ne vois pas personne»، «personne n'est pas venu»)؛ درست: je ne vois personne، personne n'est venu. جای این دو در passé composé هم فرق دارد: «je n'ai mangé rien» و «je n'ai personne vu» غلط‌اند؛ درست: je n'ai rien mangé، je n'ai vu personne.
+lesson:
+ne … rien یعنی «هیچ چیز … نه»: Je ne vois rien. (هیچ چیز نمی‌بینم.)
+ne … personne یعنی «هیچ‌کس … نه»: Je ne connais personne ici. (اینجا هیچ‌کس را نمی‌شناسم.)
+مثل plus و jamais، rien و personne جای pas را می‌گیرند و pas دیگر نمی‌آید: «je ne vois pas rien» غلط است.
+در passé composé جایشان فرق دارد: rien قبل از اسم مفعول می‌آید (Je n'ai rien mangé.) ولی personne بعد از آن (Je n'ai vu personne.).
+با حرف اضافه هم می‌آیند: Je ne parle à personne. Je n'ai besoin de rien.
+rien و personne می‌توانند فاعل باشند و اول جمله بیایند؛ ne باز لازم است، ولی pas نه: Personne n'est venu. (هیچ‌کس نیامد.) Rien n'est facile. (هیچ چیز آسان نیست.)
+در جواب کوتاهِ بی‌فعل، فقط خود کلمه می‌آید: Qu'est-ce que tu fais ? Rien. Qui est là ? Personne.
+این personne «شخص» نیست و حرف تعریف ندارد؛ فعل بعدش مفرد است: Personne n'est venu.
+table:
+جمله | rien | personne
+زمان حال | Je ne vois rien. | Je ne vois personne.
+passé composé | Je n'ai rien vu. | Je n'ai vu personne.
+فاعل | Rien n'est facile. | Personne n'est venu.
+جواب کوتاه | Rien. | Personne.
+examples:
+Je ne comprends rien. | هیچ چیز نمی‌فهمم.
+Il ne connaît personne{personne-pron} à Paris. | او در پاریس هیچ‌کس را نمی‌شناسد.
+Hier, je n'ai rien fait. | دیروز هیچ کاری نکردم.
+Personne{personne-pron} n'a téléphoné ce matin. | امروز صبح هیچ‌کس تلفن نزد.
+targets:
+Je [ne vois rien]. | هیچ چیز نمی‌بینم. | d: ne vois pas rien, ne rien vois, vois ne rien | hint: (voir)
+Il [ne dit rien]. | او (مرد) هیچ چیز نمی‌گوید. | d: ne dit pas rien, ne rien dit, dit ne rien | hint: (dire)
+Nous [ne faisons rien] le dimanche. | ما یکشنبه‌ها هیچ کاری نمی‌کنیم. | d: ne faisons pas rien, ne rien faisons, faisons ne rien | hint: (faire)
+Tu [ne comprends rien] ? | هیچ چیز نمی‌فهمی؟ | d: ne comprends pas rien, ne rien comprends, comprends ne rien
+Elle [n'achète rien] au marché. | او (زن) از بازار هیچ چیز نمی‌خرد. | d: ne achète rien, n'achète pas rien, ne rien achète | hint: (acheter)
+Je [n']ai besoin de rien. | به هیچ چیز احتیاج ندارم. | d: ne, non, pas
+Il [n'y a rien] dans le frigo. | در یخچال هیچ چیز نیست. | d: n'y a pas rien, ne y a rien, n'y rien a
+Je [ne mange rien] le matin. | صبح‌ها هیچ چیز نمی‌خورم. | d: ne mange pas rien, ne rien mange, mange ne rien
+Je [ne connais personne{personne-pron}] ici. | اینجا هیچ‌کس را نمی‌شناسم. | d: ne connais pas personne, ne personne connais, connais ne personne | hint: (connaître)
+Il [n'attend personne{personne-pron}]. | او (مرد) منتظر هیچ‌کس نیست. | d: ne attend personne, n'attend pas personne, ne personne attend | hint: (attendre)
+Vous [n'invitez personne{personne-pron}] ? | هیچ‌کس را دعوت نمی‌کنید؟ | d: n'invitez pas personne, ne personne invitez, ne invitez personne
+Elle [ne parle] à personne{personne-pron}. | او (زن) با هیچ‌کس حرف نمی‌زند. | d: ne parle pas, ne pas parle, parle ne
+Nous [ne voyons personne{personne-pron}] dans la rue. | در خیابان هیچ‌کس را نمی‌بینیم. | d: ne voyons pas personne, ne personne voyons, voyons ne personne | hint: (voir)
+Ils [n'aident personne{personne-pron}]. | آن‌ها به هیچ‌کس کمک نمی‌کنند. | d: ne aident personne, n'aident pas personne, ne personne aident
+Il [n'y a personne{personne-pron}] à la maison ? | هیچ‌کس خانه نیست؟ | d: n'y a pas personne, ne y a personne, n'y personne a
+Je [n'ai rien mangé] ce matin. | امروز صبح هیچ چیز نخوردم. | d: n'ai mangé rien, n'ai pas rien mangé, ne rien ai mangé | hint: (manger)
+Tu [n'as rien compris] ? | هیچ چیز نفهمیدی؟ | d: n'as compris rien, n'as pas rien compris, ne rien as compris
+Il [n'a rien dit]. | او (مرد) هیچ چیز نگفت. | d: n'a dit rien, n'a pas rien dit, ne rien a dit | hint: (dire)
+Nous [n'avons rien acheté]. | ما هیچ چیز نخریدیم. | d: n'avons acheté rien, n'avons pas rien acheté, ne rien avons acheté
+Elle [n'a rien fait] hier. | او (زن) دیروز هیچ کاری نکرد. | d: n'a fait rien, n'a pas rien fait, ne rien a fait | hint: (faire)
+Vous [n'avez rien oublié] ? | هیچ چیز را فراموش نکردید؟ | d: n'avez oublié rien, n'avez pas rien oublié, ne rien avez oublié
+Je [n'ai vu personne{personne-pron}]. | هیچ‌کس را ندیدم. | d: n'ai personne vu, n'ai pas vu personne, ne personne ai vu | hint: (voir)
+Tu [n'as appelé personne{personne-pron}] ? | به هیچ‌کس زنگ نزدی؟ | d: n'as personne appelé, n'as pas appelé personne, ne personne as appelé | hint: (appeler)
+Elle [n'a invité personne{personne-pron}]. | او (زن) هیچ‌کس را دعوت نکرد. | d: n'a personne invité, n'a pas invité personne, ne personne a invité
+Nous [n'avons trouvé personne{personne-pron}] à la maison. | در خانه هیچ‌کس را پیدا نکردیم. | d: n'avons personne trouvé, n'avons pas trouvé personne, ne personne avons trouvé | hint: (trouver)
+Il [n'a parlé] à personne{personne-pron}. | او (مرد) با هیچ‌کس حرف نزد. | d: n'a pas parlé, ne a parlé, n'a parler
+[Personne{personne-pron} n'est] venu. | هیچ‌کس نیامد. | d: Personne n'est pas, Personne ne est, Ne personne est
+[Rien n'est] facile. | هیچ چیز آسان نیست. | d: Rien n'est pas, Rien ne est, Ne rien est
+Personne{personne-pron} [ne] parle français ici. | اینجا هیچ‌کس فرانسوی حرف نمی‌زند. | d: n', pas, non
+Personne{personne-pron} [n'a téléphoné]. | هیچ‌کس تلفن نزد. | d: n'a pas téléphoné, ne a téléphoné, n'a téléphoné pas | hint: (téléphoner)
+Rien [n'a changé]. | هیچ چیز عوض نشده است. | d: n'a pas changé, ne a changé, n'a changé pas | hint: (changer)
+Qu'est-ce que tu fais ? [Rien]. | چه کار می‌کنی؟ هیچ. | d: Ne rien, Rien pas, Pas de rien
+Qui est là ? [Personne{personne-pron}]. | کی آنجاست؟ هیچ‌کس. | d: Ne personne, Personne pas, Pas personne
+Je [n'ai rien mangé] et je [n'ai vu personne{personne-pron}]. | هیچ چیز نخوردم و هیچ‌کس را ندیدم. | d: n'ai mangé rien, n'ai pas rien mangé, ne rien ai mangé / n'ai personne vu, n'ai pas vu personne, ne personne ai vu | full: Je n'ai vu personne et je n'ai rien mangé.
+[Personne{personne-pron} n'a] téléphoné et [rien n'est] arrivé. | هیچ‌کس تلفن نزد و هیچ اتفاقی نیفتاد. | d: Personne n'a pas, Personne ne a, Ne personne a / rien n'est pas, rien ne est, ne rien est | full: Rien n'est arrivé et personne n'a téléphoné.
+Il [ne fait rien] et il [n'aide{aider} personne{personne-pron}]. | او (مرد) هیچ کاری نمی‌کند و به هیچ‌کس کمک نمی‌کند. | d: ne fait pas rien, ne rien fait, fait ne rien / n'aide pas personne, ne aide personne, ne personne aide | full: Il n'aide personne et il ne fait rien.
+Qu'est-ce que tu as acheté ? [Rien]. Et qui est venu ? [Personne{personne-pron}]. | چه خریدی؟ هیچ. و کی آمد؟ هیچ‌کس. | d: Ne rien, Rien pas, Pas de rien / Ne personne, Personne pas, Pas personne
+Nous [ne connaissons personne{personne-pron}] et nous [ne comprenons rien]. | ما هیچ‌کس را نمی‌شناسیم و هیچ چیز نمی‌فهمیم. | d: ne connaissons pas personne, ne personne connaissons, connaissons ne personne / ne comprenons pas rien, ne rien comprenons, comprenons ne rien | full: Nous ne comprenons rien et nous ne connaissons personne.
+Elle [n'a rien dit] et elle [n'a regardé personne{personne-pron}]. | او (زن) هیچ چیز نگفت و به هیچ‌کس نگاه نکرد. | d: n'a dit rien, n'a pas rien dit, ne rien a dit / n'a personne regardé, n'a pas regardé personne, ne personne a regardé | full: Elle n'a regardé personne et elle n'a rien dit.
+Tu [ne manges rien] ? Tu [n'as plus{plus-2}] faim ? | هیچ چیز نمی‌خوری؟ دیگر گرسنه نیستی؟ | d: ne manges pas rien, ne rien manges, manges ne rien / ne as plus, ne plus as, as ne plus
+transforms:
+Je vois quelque chose. => Je ne vois rien. | منفی کن و بگو «هیچ چیز».
+Il connaît quelqu'un ici. => Il ne connaît personne{personne-pron} ici. | منفی کن و بگو «هیچ‌کس».
+J'ai mangé quelque chose. => Je n'ai rien mangé. | منفی کن و بگو «هیچ چیز».
+Nous avons vu quelqu'un. => Nous n'avons vu personne{personne-pron}. | منفی کن و بگو «هیچ‌کس».
+Quelqu'un est venu. => Personne{personne-pron} n'est venu. | منفی کن و بگو «هیچ‌کس».
+Tu achètes quelque chose ? => Tu n'achètes rien ? | منفی کن و بگو «هیچ چیز».
+Elle a invité quelqu'un. => Elle n'a invité personne{personne-pron}. | منفی کن و بگو «هیچ‌کس».
+Quelque chose a changé. => Rien n'a changé. | منفی کن و بگو «هیچ چیز».
+translations:
+هیچ چیز نمی‌بینم. => Je ne vois rien.
+اینجا هیچ‌کس را نمی‌شناسم. => Je ne connais personne{personne-pron} ici. ; Ici, je ne connais personne{personne-pron}.
+امروز صبح هیچ چیز نخوردم. => Je n'ai rien mangé ce matin. ; Ce matin, je n'ai rien mangé.
+هیچ‌کس نیامد. => Personne{personne-pron} n'est venu.
+هیچ‌کس را ندیدی؟ => Tu n'as vu personne{personne-pron} ? ; Est-ce que tu n'as vu personne{personne-pron} ?
+هیچ چیز آسان نیست. => Rien n'est facile.
+او (مرد) هیچ چیز نگفت. => Il n'a rien dit.
+ما هیچ کاری نکردیم. => Nous n'avons rien fait. ; On n'a rien fait.

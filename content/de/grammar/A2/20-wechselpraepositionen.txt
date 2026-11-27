@@ -1,0 +1,87 @@
+code: de-a2-wechselpraepositionen
+title: auf den Tisch یا auf dem Tisch: legen و liegen
+scope: حرف‌های اضافه دوطرفه (in، an، auf، unter، über، vor، hinter، neben، zwischen) با Akkusativ برای «به کجا؟» (wohin) و با Dativ برای «کجا؟» (wo)، با جفت‌فعل‌های legen/liegen، stellen/stehen، hängen/hängen و sich setzen/sitzen، و ترکیب‌های ins، ans، im و am؛ Perfekt فعل‌های liegen، stehen و sitzen در این واحد نمی‌آید.
+can_do: حالا می‌توانی بگویی چیزی را کجا می‌گذاری و هر چیز کجاست: «کتاب را روی میز می‌گذارم»، «کتاب روی میز است».
+rule: حرکت به یک جا (wohin?) ← Akkusativ: Ich lege das Buch auf den Tisch؛ جای ثابت (wo?) ← Dativ: Das Buch liegt auf dem Tisch. با legen، stellen، hängen (آویزان کردن) و sich setzen ← Akkusativ؛ با liegen، stehen، hängen (آویزان بودن) و sitzen ← Dativ.
+mistake: در فارسی «روی میز می‌گذارم» و «روی میز است» هر دو «روی میز» دارند، برای همین فارسی‌زبان‌ها حالت را عوض نمی‌کنند یا دو فعل را قاطی می‌کنند: «Ich lege das Buch auf dem Tisch» و «Ich liege das Buch auf den Tisch» غلط است؛ درست: Ich lege das Buch auf den Tisch. Das Buch liegt auf dem Tisch.
+lesson:
+in، an، auf، unter، über، vor، hinter، neben و zwischen را از A1 می‌شناسی: برای «کجا؟» (wo?) بعدشان Dativ می‌آید: Die Zeitung liegt auf dem Tisch.
+همین حرف‌های اضافه برای «به کجا؟» (wohin?)، یعنی وقتی چیزی یا کسی به جایی می‌رود، Akkusativ می‌گیرند: Ich lege die Zeitung auf den Tisch.
+در فارسی هر دو «روی میز» است؛ در آلمانی حرف تعریف عوض می‌شود: auf den Tisch (به آنجا می‌رود) و auf dem Tisch (آنجا هست).
+برای همین فعل‌ها جفت‌جفت‌اند: legen (خوابیده گذاشتن) و liegen (خوابیده بودن)، stellen (ایستاده گذاشتن) و stehen (ایستاده بودن)، sich setzen (نشستن، حرکت) و sitzen (نشسته بودن). hängen هر دو معنی را دارد: آویزان کردن و آویزان بودن.
+فعل اول هر جفت مفعول دارد و حرکت است، پس Akkusativ: Ich stelle die Flasche in den Kühlschrank. فعل دوم جای ثابت است، پس Dativ: Die Flasche steht im Kühlschrank.
+ترکیب‌ها را همیشه می‌گویند: in dem = im، an dem = am، in das = ins، an das = ans (ans Meer، ans Fenster).
+راه آسان: از خودت بپرس. Wohin? ← Akkusativ؛ Wo? ← Dativ.
+table:
+حرکت (wohin? + Akkusativ) | جای ثابت (wo? + Dativ)
+Ich lege das Handy auf den Tisch. | Das Handy liegt auf dem Tisch.
+Ich stelle die Milch in den Kühlschrank. | Die Milch steht im Kühlschrank.
+Ich hänge das Bild an die Wand. | Das Bild hängt an der Wand.
+Ich setze mich auf das Sofa. | Ich sitze auf dem Sofa.
+sets:
+حرکت + Akkusativ: legen, stellen, hängen, sich setzen
+جای ثابت + Dativ: liegen, stehen, hängen, sitzen
+examples:
+Ich lege die Zeitung auf den Tisch. | روزنامه را روی میز می‌گذارم.
+Die Zeitung liegt auf dem Tisch. | روزنامه روی میز است.
+Wir hängen die Uhr an die Wand. | ما ساعت را به دیوار آویزان می‌کنیم.
+Setz{sich setzen} dich bitte{bitte} neben mich! | لطفاً کنار من بنشین!
+targets:
+Ich lege das Buch auf [den] Tisch. | کتاب را روی میز می‌گذارم. | d: dem, der, das
+Max stellt die Milch in [den] Kühlschrank. | ماکس شیر را در یخچال می‌گذارد. | d: dem, der, das
+Anna hängt das Bild an [die] Wand. | آنا تابلو را به دیوار آویزان می‌کند. | d: der, den, dem
+Wir stellen das Sofa vor [das] Fenster. | ما مبل را جلوی پنجره می‌گذاریم. | d: dem, den, der
+Ich setze{sich setzen} mich auf [den] Stuhl. | روی صندلی می‌نشینم. | d: dem, der, das
+Leg den Schlüssel bitte{bitte} in [die] Tasche! | لطفاً کلید را توی کیف بگذار! | d: der, den, dem | full: Leg bitte den Schlüssel in die Tasche! ; Bitte leg den Schlüssel in die Tasche!
+Die Kinder stellen ihre{ihr-det} Schuhe unter [das] Bett. | بچه‌ها کفش‌هایشان را زیر تخت می‌گذارند. | d: dem, den, der
+Wohin hast du meine Brille gelegt? – Auf [den] Schreibtisch. | عینکم را کجا گذاشتی؟ – روی میز تحریر. | d: dem, der, das
+Er hängt seine Jacke in [den] Schrank. | او کاپشنش را در کمد آویزان می‌کند. | d: dem, der, das
+Habt ihr die Teller auf [den] Tisch gestellt? | بشقاب‌ها را روی میز گذاشتید؟ | d: dem, der, das
+Legen Sie Ihren Mantel bitte{bitte} auf [das] Sofa. | لطفاً پالتویتان را روی مبل بگذارید. | d: dem, den, der | full: Legen Sie bitte Ihren Mantel auf das Sofa. ; Bitte legen Sie Ihren Mantel auf das Sofa.
+Wir fahren am Wochenende [ans] Meer. | ما آخر هفته به کنار دریا می‌رویم. | d: am, an, an dem | full: Am Wochenende fahren wir ans Meer.
+Stell die Blumen bitte{bitte} [ans] Fenster! | لطفاً گل‌ها را کنار پنجره بگذار! | d: am, an, an dem | full: Stell bitte die Blumen ans Fenster! ; Bitte stell die Blumen ans Fenster!
+Ich gehe jetzt [ins] Bett. | من الان می‌روم بخوابم. | d: im, in, in dem | full: Jetzt gehe ich ins Bett.
+Die Brille liegt auf [dem] Schreibtisch. | عینک روی میز تحریر است. | d: den, der, das
+Die Milch steht{stehen} [im] Kühlschrank. | شیر در یخچال است. | d: ins, in, in den
+Das Bild hängt an [der] Wand. | تابلو به دیوار آویزان است. | d: die, den, dem
+Der Teppich liegt vor [dem] Sofa. | فرش جلوی مبل است. | d: das, den, der
+Meine Jacke hängt hinter [der] Tür. | کاپشنم پشت در آویزان است. | d: die, den, dem
+Wir sitzen [am] Tisch und essen. | ما سر میز نشسته‌ایم و غذا می‌خوریم. | d: an den, an, auf den
+Die Katze schläft unter [dem] Bett. | گربه زیر تخت خوابیده است. | d: das, den, der
+Das Auto steht{stehen} in [der] Garage. | ماشین در گاراژ است. | d: die, den, dem
+Die Lampe hängt über [dem] Tisch. | چراغ بالای میز آویزان است. | d: den, der, das
+Ich [lege] das Handy auf den Tisch. | گوشی را روی میز می‌گذارم. | d: liege, stehe, sitze
+Das Handy [liegt] auf dem Tisch. | گوشی روی میز است. | d: legt, stellt, setzt
+Wir [stellen] die Flaschen in den Kühlschrank. | ما بطری‌ها را در یخچال می‌گذاریم. | d: stehen, liegen, sitzen | ok: legen
+Die Gläser [stehen]{stehen} im Schrank. | لیوان‌ها در کمد هستند. | d: stellen, legen, setzen
+Paul [setzt]{sich setzen} sich auf das Sofa. | پاول روی مبل می‌نشیند. | d: sitzt, sitzen, liegt
+Max [sitzt] auf dem Sofa und liest. | ماکس روی مبل نشسته و کتاب می‌خواند. | d: setzt, legt, stellt
+Wohin hast du die Butter [gestellt]? | کره را کجا گذاشتی؟ | d: gestanden, gelegen, gesessen | ok: gelegt | hint: (stellen)
+Ich habe dein Buch ins Regal [gestellt]. | کتابت را در قفسه گذاشتم. | d: gestanden, gelegen, gesessen | ok: gelegt | hint: (stellen)
+Wer hat das Bild an die Wand [gehängt]? | چه کسی تابلو را به دیوار آویزان کرد؟ | d: gehängen, gehangt, hängen | hint: (hängen)
+Wir stellen den Tisch zwischen [das] Sofa und [den] Sessel. | ما میز را بین مبل و صندلی راحتی می‌گذاریم. | d: dem, den, der / dem, der, das
+Zwischen [dem] Bett und [dem] Schrank steht{stehen} ein Stuhl. | بین تخت و کمد یک صندلی هست. | d: das, den, der / den, der, das | full: Ein Stuhl steht zwischen dem Bett und dem Schrank.
+Ich lege die Brille auf [den] Tisch. Jetzt liegt sie auf [dem] Tisch. | عینک را روی میز می‌گذارم. حالا روی میز است. | d: dem, der, das / den, der, das | full: Ich lege die Brille auf den Tisch. Sie liegt jetzt auf dem Tisch.
+Die Lampe steht{stehen} neben [dem] Sofa, aber ich stelle sie neben [das] Bett. | چراغ کنار مبل است، ولی من آن را کنار تخت می‌گذارم. | d: das, den, der / dem, den, der
+Wir sitzen [im] Wohnzimmer und die Kinder gehen [ins] Bett. | ما در اتاق نشیمن نشسته‌ایم و بچه‌ها می‌روند بخوابند. | d: ins, in, in das / im, in, in dem | full: Die Kinder gehen ins Bett und wir sitzen im Wohnzimmer.
+Paul [setzt]{sich setzen} sich [an den] Tisch. | پاول پشت میز می‌نشیند. | d: sitzt, sitzen, liegt / am, an, an dem
+Stell die Flasche bitte{bitte} in [den] Kühlschrank, nicht auf [den] Boden! | لطفاً بطری را در یخچال بگذار، نه روی زمین! | d: dem, der, das / dem, der, das | full: Stell bitte die Flasche in den Kühlschrank, nicht auf den Boden! ; Bitte stell die Flasche in den Kühlschrank, nicht auf den Boden!
+Die Katze liegt unter [dem] Tisch und der Hund liegt auf [dem] Teppich. | گربه زیر میز خوابیده و سگ روی فرش. | d: den, der, das / den, der, das | full: Der Hund liegt auf dem Teppich und die Katze liegt unter dem Tisch.
+transforms:
+Ich lege das Buch auf den Tisch. => Das Buch liegt auf dem Tisch. | بگو کتاب حالا کجاست (با liegen).
+Ich stelle die Flasche in den Kühlschrank. => Die Flasche steht{stehen} im Kühlschrank. | بگو بطری حالا کجاست (با stehen).
+Ich hänge das Bild an die Wand. => Das Bild hängt an der Wand. | بگو تابلو حالا کجاست (با hängen).
+Ich setze{sich setzen} mich auf das Sofa. => Ich sitze auf dem Sofa. | بگو حالا کجا نشسته‌ای (با sitzen).
+Die Tasse steht{stehen} auf dem Tisch. => Wo steht{stehen} die Tasse? | برای «auf dem Tisch» سؤال بساز.
+Ich lege den Schlüssel in die Tasche. => Wohin legst du den Schlüssel? | برای «in die Tasche» سؤال بساز (با du).
+Ich stelle die Lampe neben das Bett. => Ich habe die Lampe neben das Bett gestellt. | جمله را به گذشته ببر (Perfekt).
+Die Jacke liegt auf dem Stuhl. => Ich lege die Jacke auf den Stuhl. | بگو خودت کاپشن را آنجا می‌گذاری (با ich و legen).
+translations:
+کتاب را روی میز می‌گذارم. => Ich lege das Buch auf den Tisch. ; Ich stelle das Buch auf den Tisch.
+تابلو به دیوار آویزان است. => Das Bild hängt an der Wand.
+کاپشنت را در کمد آویزان کن! => Häng deine Jacke in den Schrank! ; Hänge deine Jacke in den Schrank!
+روی صندلی بنشین! => Setz{sich setzen} dich auf den Stuhl! ; Setze{sich setzen} dich auf den Stuhl!
+ماکس پشت میز نشسته است. => Max sitzt am Tisch.
+کلید را کجا گذاشتی؟ => Wohin hast du den Schlüssel gelegt?
+گل‌ها را کنار پنجره می‌گذارم. => Ich stelle die Blumen ans Fenster. ; Ich stelle die Blumen an das Fenster. ; Ich stelle die Blumen neben das Fenster.
+چراغ بالای میز آویزان است. => Die Lampe hängt über dem Tisch.

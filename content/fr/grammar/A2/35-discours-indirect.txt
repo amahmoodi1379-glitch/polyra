@@ -1,0 +1,85 @@
+code: fr-a2-discours-indirect
+title: نقل قول: Il dit que…، Elle demande si…
+scope: نقل حرف دیگران وقتی فعل اصلی در زمان حال است: dire que برای جملهٔ خبری (Il dit qu'il est fatigué)، demander si برای سؤال بله و نه (Elle demande si tu viens) و demander با où، quand، comment، pourquoi، combien یا qui (Il demande où tu habites)، با ترتیب جملهٔ معمولی بعد از کلمهٔ پرسشی و عوض شدن ضمیر و صفت ملکی (je → il، mon → son)؛ نقل قول در گذشته با تغییر زمان‌ها در B1 می‌آید.
+can_do: حالا می‌توانی حرف و سؤال کسی را برای دیگری نقل کنی: Paul dit qu'il est malade. Le serveur demande si nous voulons un dessert. Elle demande où tu habites.
+rule: dire que + جمله؛ demander si + جمله برای سؤال بله و نه؛ demander où، quand، comment، pourquoi، combien یا qui + فاعل + فعل، بدون جابه‌جایی و بدون est-ce que؛ ضمیر و صفت ملکی از دید گوینده عوض می‌شوند: je → il، mon → son.
+mistake: فارسی «که» را در نقل قول می‌اندازد و سؤال را همان‌طور که بود نقل می‌کند («می‌پرسد کجا زندگی می‌کنی؟»)، برای همین فارسی‌زبان‌ها می‌نویسند «Il dit il est fatigué»، «Il demande où habites-tu» یا «Il demande est-ce que tu viens»؛ درست: Il dit qu'il est fatigué، Il demande où tu habites، Il demande si tu viens.
+lesson:
+وقتی حرف کسی را برای دیگری نقل می‌کنیم (نقل قول غیرمستقیم)، فرانسوی چند قاعدهٔ ساده دارد.
+جملهٔ خبری: dire que + جمله: Paul dit : « Je suis fatigué. » → Paul dit qu'il est fatigué. در فارسی «که» را می‌شود انداخت («می‌گوید خسته است»)، ولی que در فرانسوی همیشه لازم است.
+سؤال بله و نه: demander si + جمله: « Tu viens ? » → Il demande si tu viens. si قبل از il و ils می‌شود s': Il demande s'il peut entrer.
+سؤال با کلمهٔ پرسشی: همان کلمه را نگه دار و بعدش ترتیب معمولی بیاور (فاعل + فعل)، بدون جابه‌جایی و بدون est-ce que: « Où habites-tu ? » → Il demande où tu habites.
+ضمیر و صفت ملکی از دید کسی که نقل می‌کند عوض می‌شوند: Marie dit : « Mon frère est malade. » → Marie dit que son frère est malade.
+صرف dire: je dis، tu dis، il dit، nous disons، vous dites (نه «disez»)، ils disent.
+در این درس فعل اصلی در زمان حال است (il dit، elle demande)، پس زمان جملهٔ نقل‌شده عوض نمی‌شود.
+table:
+گفتهٔ مستقیم | نقل غیرمستقیم
+« Je suis fatigué. » | Il dit qu'il est fatigué.
+« Tu viens ? » | Il demande si tu viens.
+« Où habites-tu ? » | Il demande où tu habites.
+« Pourquoi est-ce que tu pars ? » | Il demande pourquoi tu pars.
+« Mon frère est malade. » | Il dit que son frère est malade.
+examples:
+Marie dit qu'elle est malade. | ماری می‌گوید که مریض است.
+Le guide demande si nous avons des questions. | راهنما می‌پرسد که سؤالی داریم یا نه.
+Je demande où est la pharmacie. | می‌پرسم داروخانه کجاست.
+Paul dit que sa sœur habite à Paris. | پل می‌گوید که خواهرش در پاریس زندگی می‌کند.
+targets:
+Paul [dit] qu'il est fatigué. | پل می‌گوید که خسته است. | d: dis, disent, dire | hint: (dire)
+Mes parents [disent] que le dîner est prêt. | پدر و مادرم می‌گویند که شام آماده است. | d: dit, dites, disons | hint: (dire)
+Vous [dites] que le magasin est fermé{fermé} ? | می‌گویید که مغازه بسته است؟ | d: disez, dit, disons | hint: (dire)
+Nous [disons] que nous sommes d'accord. | ما می‌گوییم که موافقیم. | d: dites, disent, dis
+Je [dis] que ce film est bon. | من می‌گویم که این فیلم خوب است. | d: dit, dire, disons | hint: (dire)
+Marie dit [que] son frère est malade. | ماری می‌گوید که برادرش مریض است. | d: quoi, ce, qu'est-ce que
+Le professeur dit [que] l'examen est facile. | معلم می‌گوید که امتحان آسان است. | d: quoi, ce, qu'est-ce que
+Elle demande [si] tu viens ce soir. | او (زن) می‌پرسد که امشب می‌آیی یا نه. | d: que, quoi, qu'est-ce que
+Le serveur demande [si] nous voulons un dessert. | گارسون می‌پرسد که دسر می‌خواهیم یا نه. | d: que, quoi, qu'est-ce que
+Je demande à Paul [si] Marie est là. | از پل می‌پرسم که ماری آنجاست یا نه. | d: que, quoi, qu'est-ce que
+Il demande [où] tu habites. | او (مرد) می‌پرسد کجا زندگی می‌کنی. | d: quoi, qu'est-ce que, qui
+Le touriste demande [où] est la gare. | توریست می‌پرسد ایستگاه قطار کجاست. | d: que, quoi, qu'est-ce que
+Ma mère demande [quand]{quand} nous rentrons. | مادرم می‌پرسد کی برمی‌گردیم. | d: que, quoi, qu'est-ce que
+Elle me demande [pourquoi] je suis{être} triste. | او (زن) از من می‌پرسد چرا غمگینم. | d: que, quoi, qu'est-ce que
+Il demande [comment] tu t'appelles. | او (مرد) می‌پرسد اسمت چیست. | d: quoi, qu'est-ce que, qui
+Le client demande [combien] coûte ce pull. | مشتری می‌پرسد این پلیور چند است. | d: quoi, quel, combien de | full: Le client demande combien ce pull coûte.
+Elle demande [qui] vient à la fête. | او (زن) می‌پرسد چه کسی به جشن می‌آید. | d: que, quoi, qu'est-ce que
+Les enfants disent [qu'ils] ont faim. | بچه‌ها می‌گویند که گرسنه‌اند. | d: que nous, qu'il, qu'on
+Léa dit que [sa] valise est trop lourde. | لئا می‌گوید که چمدانش خیلی سنگین است. | d: son, ses, lui
+Mes amis disent que [leur] voiture est en panne. | دوستانم می‌گویند که ماشینشان خراب است. | d: leurs, son, ses
+Il dit que [son] père travaille à Lyon. | او (مرد) می‌گوید که پدرش در لیون کار می‌کند. | d: sa, ses, lui
+Tu [dis] toujours que tu es fatigué ! | همیشه می‌گویی که خسته‌ای! | d: dit, dites, dire | hint: (dire)
+Elle demande [si] le musée est ouvert{ouvert} le lundi. | می‌پرسد که موزه دوشنبه‌ها باز است یا نه. | d: que, quoi, qu'est-ce que
+Le médecin [demande] si j'ai de la fièvre. | پزشک می‌پرسد که تب دارم یا نه. | d: demandes, demandent, demander | hint: (demander)
+Je lui demande [pourquoi] il ne vient pas. | از او می‌پرسم چرا نمی‌آید. | d: que, quoi, qu'est-ce que
+Ils demandent [combien] de temps il faut pour aller à Nice. | می‌پرسند برای رفتن به نیس چقدر وقت لازم است. | d: que, quoi, qu'est-ce que
+Le guide explique [que] le musée ferme{fermer} à six heures. | راهنما توضیح می‌دهد که موزه ساعت شش می‌بندد. | d: quoi, ce, qu'est-ce que
+Il répond [que] Marie n'est pas là. | او (مرد) جواب می‌دهد که ماری آنجا نیست. | d: quoi, ce, qu'est-ce que
+Sophie dit [qu'elle] aime le chocolat. | سوفی می‌گوید که شکلات دوست دارد. | d: que je, que tu, que nous
+Nous demandons au vendeur [si] le magasin est ouvert{ouvert} dimanche. | از فروشنده می‌پرسیم که مغازه یکشنبه باز است یا نه. | d: que, quoi, qu'est-ce que
+Vous [demandez] où est la poste ? | می‌پرسید پست کجاست؟ | d: demandes, demandons, demander
+Le petit garçon demande [quand]{quand} il peut jouer. | پسر کوچک می‌پرسد کی می‌تواند بازی کند. | d: que, quoi, qu'est-ce que
+Paul [dit] qu'il est malade et il [demande] si tu peux venir. | پل می‌گوید که مریض است و می‌پرسد که می‌توانی بیایی یا نه. | d: dis, disent, dire / demandes, demandent, demander
+Elle demande [où] tu habites et [quand]{quand} tu pars. | می‌پرسد کجا زندگی می‌کنی و کی می‌روی. | d: quoi, qu'est-ce que, qui / que, quoi, qu'est-ce que
+Marie dit [que] [sa] mère est malade. | ماری می‌گوید که مادرش مریض است. | d: quoi, ce, qu'est-ce que / son, ses, lui
+Les enfants [disent] qu'ils ont faim et [demandent] si le dîner est prêt. | بچه‌ها می‌گویند که گرسنه‌اند و می‌پرسند که شام آماده است یا نه. | d: dit, dites, disons / demande, demandez, demandons
+Il me demande [comment] je vais et [si] je viens demain. | از من می‌پرسد حالم چطور است و فردا می‌آیم یا نه. | d: que, quoi, qu'est-ce que / que, quoi, qu'est-ce que
+Le professeur demande [qui] a fini et [pourquoi] Paul est absent. | معلم می‌پرسد چه کسی تمام کرده و چرا پل غایب است. | d: que, quoi, qu'est-ce que / que, quoi, qu'est-ce que
+Nous [disons] que nous partons et nous [demandons] si tu viens. | می‌گوییم که داریم می‌رویم و می‌پرسیم که تو هم می‌آیی یا نه. | d: dites, disent, dis / demandez, demandent, demander
+Ma sœur dit [que] [son] chat est malade. | خواهرم می‌گوید که گربه‌اش مریض است. | d: quoi, ce, qu'est-ce que / sa, ses, lui
+transforms:
+Paul dit : « Je suis{être} fatigué. » => Paul dit qu'il est fatigué. | حرف پل را غیرمستقیم نقل کن.
+Marie dit : « Je suis{être} malade. » => Marie dit qu'elle est malade. | حرف ماری را غیرمستقیم نقل کن.
+Il demande : « Tu viens ? » => Il demande si tu viens. | سؤال را غیرمستقیم نقل کن.
+Elle demande : « Où habites-tu ? » => Elle demande où tu habites. | سؤال را غیرمستقیم نقل کن.
+Il demande : « Pourquoi est-ce que tu pars ? » => Il demande pourquoi tu pars. | سؤال را غیرمستقیم نقل کن.
+Léa dit : « Mon frère est à Paris. » => Léa dit que son frère est à Paris. | حرف لئا را غیرمستقیم نقل کن.
+Les enfants disent : « Nous avons faim. » => Les enfants disent qu'ils ont faim. | حرف بچه‌ها را غیرمستقیم نقل کن.
+Il demande : « Est-ce que le musée est ouvert{ouvert} ? » => Il demande si le musée est ouvert{ouvert}. | سؤال را غیرمستقیم نقل کن.
+translations:
+پل می‌گوید که خسته است. => Paul dit qu'il est fatigué.
+می‌پرسد که می‌آیی یا نه. => Il demande si tu viens. ; Elle demande si tu viens.
+ماری می‌پرسد کجا زندگی می‌کنی. => Marie demande où tu habites. ; Marie demande où tu vis{vivre}.
+می‌گویند که خانه‌شان بزرگ است. => Ils disent que leur maison est grande. ; Elles disent que leur maison est grande.
+از او می‌پرسم چرا غمگین است. => Je lui demande pourquoi il est triste. ; Je lui demande pourquoi elle est triste.
+معلم می‌پرسد که تمام کرده‌ایم یا نه. => Le professeur demande si nous avons fini. ; Le professeur demande si on a fini. ; Le professeur demande si nous avons terminé. ; Le professeur demande si on a terminé.
+می‌پرسد قطار کی حرکت می‌کند. => Il demande quand{quand} le train part. ; Elle demande quand{quand} le train part. ; Il demande quand{quand} part le train. ; Elle demande quand{quand} part le train.
+سوفی می‌گوید که برادرش در پاریس است. => Sophie dit que son frère est à Paris.

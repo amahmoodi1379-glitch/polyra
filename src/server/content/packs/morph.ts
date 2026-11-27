@@ -190,6 +190,8 @@ export class Morph {
       if (typeof value === "string") add(this.forms, value, { word: item, score: 8, via: "verb" });
       else if (Array.isArray(value) && value.length === 2 && typeof value[0] === "string" && typeof value[1] === "string" && info.hasPrefix) {
         add(this.forms, value[0], { word: item, score: 8, via: "verb", particle: value[1] });
+        // Joined at the end of a subordinate clause: weil er morgen ankommt, als sie anrief.
+        add(this.forms, `${value[1]}${value[0]}`, { word: item, score: 8, via: "verb" });
       } else if (Array.isArray(value)) value.forEach(visit);
       else if (value && typeof value === "object") Object.values(value).forEach(visit);
     };
@@ -199,6 +201,14 @@ export class Morph {
     if (prefix && verb.startsWith(prefix)) add(this.forms, `${prefix}zu${verb.slice(prefix.length)}`, { word: item, score: 8, via: "verb" });
     const imperative = (info.IMP as { S?: unknown } | undefined)?.S;
     if (typeof imperative === "string" && imperative.endsWith("e")) add(this.forms, imperative.slice(0, -1), { word: item, score: 7, via: "verb" });
+    // A separable verb has no imperative in Morphy: the base verb's, with the particle (Ruf mich an, Hör zu).
+    if (prefix && verb.startsWith(prefix) && verb.length > prefix.length) {
+      const base = (germanVerb(verb.slice(prefix.length), { root, weak: true })?.entry?.IMP as { S?: unknown } | undefined)?.S;
+      if (typeof base === "string") {
+        add(this.forms, base, { word: item, score: 7, via: "verb", particle: prefix });
+        if (base.endsWith("e")) add(this.forms, base.slice(0, -1), { word: item, score: 7, via: "verb", particle: prefix });
+      }
+    }
   }
 
   /** Words of the lists this surface may be a form of (any level; the caller filters). */

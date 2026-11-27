@@ -1,0 +1,84 @@
+code: de-a2-indirekte-fragen
+title: سؤال غیرمستقیم: Weißt du, wo …? Ich weiß nicht, ob …
+scope: سؤال غیرمستقیم با کلمه پرسشی (Weißt du, wo der Bahnhof ist? Können Sie mir sagen, wann der Zug fährt?) و با ob برای سؤال‌های بله/نه (Ich weiß nicht, ob er kommt)، رفتن فعل صرف‌شده به آخر جمله، عوض کردن ضمیر بعد از fragen، و جمله‌های مؤدبانه Können Sie mir sagen و Wissen Sie.
+can_do: حالا می‌توانی مؤدبانه از غریبه‌ها سؤال کنی («می‌دانید ایستگاه قطار کجاست؟») و بگویی چیزی را نمی‌دانی: «نمی‌دانم می‌آید یا نه».
+rule: بعد از Weißt du، Wissen Sie، Können Sie mir sagen، Ich weiß nicht و fragen، سؤال جمله فرعی می‌شود: کلمه پرسشی (wo، wann، wie، was …) یا برای سؤال بله/نه ob می‌آید و فعل صرف‌شده به آخر جمله می‌رود: Wo ist der Bahnhof? ← Weißt du, wo der Bahnhof ist?
+mistake: در فارسی «آیا» را می‌شود انداخت و ترتیب کلمه‌ها عوض نمی‌شود: «نمی‌دانم می‌آید یا نه»، «می‌دانی ایستگاه کجاست؟». برای همین فارسی‌زبان‌ها ob را جا می‌اندازند یا فعل را سر جای سؤال نگه می‌دارند: «Ich weiß nicht, kommt er» و «Weißt du, wo ist der Bahnhof?» غلط‌اند؛ درست: Ich weiß nicht, ob er kommt. Weißt du, wo der Bahnhof ist?
+lesson:
+سؤال مستقیم: Wo ist der Bahnhof? (ایستگاه قطار کجاست؟) مؤدبانه‌تر: Weißt du, wo der Bahnhof ist? (می‌دانی ایستگاه قطار کجاست؟)
+در سؤال غیرمستقیم کلمه پرسشی اول جمله دوم می‌آید و فعل صرف‌شده به آخر می‌رود، درست مثل جمله‌های weil و dass.
+اگر سؤال کلمه پرسشی ندارد و جوابش «بله» یا «نه» است، ob می‌گذاری: Kommt Max heute? ← Ich weiß nicht, ob Max heute kommt. (نمی‌دانم ماکس امروز می‌آید یا نه.)
+فعل جداشدنی در آخر سرهم می‌شود و فعل وجهی آخرِ آخر می‌آید: Weißt du, wann der Film anfängt? Ich weiß nicht, ob ich morgen kommen kann.
+بعد از fragen ضمیر را هم درست کن: Lena fragt mich: Hast du Zeit? ← Lena fragt, ob ich Zeit habe.
+برای سؤال از غریبه‌ها این دو شروع خیلی مفیدند: Können Sie mir sagen, …? و Wissen Sie, …?
+ob یعنی «آیا» و با wenn («اگر»، «وقتی») فرق دارد: Ich weiß nicht, ob er kommt.
+table:
+سؤال مستقیم | سؤال غیرمستقیم
+Wo ist die Post? | Wissen Sie, wo die Post ist?
+Was kostet das? | Ich weiß nicht, was das kostet.
+Wann fängt der Kurs an? | Weißt du, wann der Kurs anfängt?
+Hat Anna ein Auto? | Ich weiß nicht, ob Anna ein Auto hat.
+examples:
+Weißt du, wo der Bahnhof ist? | می‌دانی ایستگاه قطار کجاست؟
+Können Sie mir sagen, wann der Zug fährt? | می‌توانید به من بگویید قطار کی حرکت می‌کند؟
+Ich weiß nicht, ob Max heute kommt. | نمی‌دانم ماکس امروز می‌آید یا نه.
+Lena fragt, ob wir Zeit haben. | لنا می‌پرسد که آیا وقت داریم.
+targets:
+Entschuldigung, wissen Sie, [wo] der Bahnhof ist? | ببخشید، می‌دانید ایستگاه قطار کجاست؟ | d: wohin, woher, wen
+Wissen Sie, [wie] spät es ist? | می‌دانید ساعت چند است؟ | d: wo, was, wer
+Ich weiß nicht, [wo] Lena wohnt. | نمی‌دانم لنا کجا زندگی می‌کند. | d: wohin, woher, wen
+Weißt du, [wann] der Film anfängt{anfangen}? | می‌دانی فیلم کی شروع می‌شود؟ | d: wohin, woher, wen
+Kannst du mir sagen, [was] das bedeutet? | می‌توانی به من بگویی این یعنی چه؟ | d: wo, wohin, wann
+Weißt du, [wie] man das schreibt? | می‌دانی این را چطور می‌نویسند؟ | d: was, wer, wen
+Können Sie mir sagen, [was] die Fahrkarte kostet? | می‌توانید به من بگویید بلیت چند است؟ | d: wohin, woher, wer
+Weißt du, [welcher] Bus zum Bahnhof fährt? | می‌دانی کدام اتوبوس به ایستگاه قطار می‌رود؟ | d: welchen, welches, welche
+Ich weiß nicht, [warum] Anna traurig ist. | نمی‌دانم چرا آنا ناراحت است. | d: wer, wen, wohin
+Weißt du, [wer] heute Geburtstag hat? | می‌دانی امروز تولد کیست؟ | d: wen, wem, wohin
+Ich frage den Lehrer, [ob] wir Hausaufgaben haben. | از معلم می‌پرسم که آیا تکلیف داریم. | d: dass, denn, und | hint: (آیا)
+Lena fragt, [ob] wir morgen Zeit haben. | لنا می‌پرسد که آیا فردا وقت داریم. | d: dass, denn, aber | hint: (آیا)
+Ich weiß nicht, [ob] der Supermarkt heute offen ist. | نمی‌دانم سوپرمارکت امروز باز است یا نه. | d: denn, aber, und | hint: (آیا)
+Weißt du, [ob] Anna einen Bruder hat? | می‌دانی آنا برادر دارد یا نه؟ | d: denn, aber, deshalb
+Ich bin nicht sicher, [ob] das richtig ist. | مطمئن نیستم این درست باشد. | d: denn, aber, und
+Wissen Sie, [ob] es hier eine Apotheke gibt? | می‌دانید این‌جا داروخانه هست یا نه؟ | d: denn, aber, deshalb | hint: (آیا)
+Der Kellner fragt, [ob] wir etwas trinken möchten. | گارسون می‌پرسد که آیا چیزی می‌خواهیم بنوشیم. | d: dass, denn, und
+Ich weiß nicht, [ob] es morgen regnet. | نمی‌دانم فردا باران می‌آید یا نه. | d: denn, aber, und
+Weißt du, wo die Toilette [ist]? | می‌دانی دستشویی کجاست؟ | d: bist, sind, sein | hint: (sein)
+Ich weiß nicht, ob ich morgen Zeit [habe]. | نمی‌دانم فردا وقت دارم یا نه. | d: hast, hat, haben | hint: (haben)
+Ich weiß nicht, ob Anna gut Deutsch sprechen [kann]. | نمی‌دانم آنا خوب آلمانی حرف می‌زند یا نه. | d: können, kannst, könnt | hint: (können)
+Können Sie mir sagen, wann der Zug in Berlin [ankommt]{ankommen}? | می‌توانید به من بگویید قطار کی به برلین می‌رسد؟ | d: ankommen, ankommst, angekommen | hint: (ankommen)
+Weißt du, wann ich morgen aufstehen [muss]? | می‌دانی فردا کی باید بیدار شوم؟ | d: müssen, musst, müsst | hint: (müssen)
+Weißt du, wann der Unterricht [anfängt]{anfangen}? | می‌دانی کلاس کی شروع می‌شود؟ | d: fängt, anfangen, anfängst | hint: (anfangen)
+Lena fragt, ob du heute Abend [mitkommst]{mitkommen}. | لنا می‌پرسد که آیا امشب همراه ما می‌آیی. | d: mitkommen, mitkommt, mitgekommen | hint: (mitkommen)
+Ich weiß nicht, wie viel das Zimmer [kostet]. | نمی‌دانم اتاق چند است. | d: kosten, kostest, gekostet | hint: (kosten)
+Weißt du, was Max zum Geburtstag [möchte]? | می‌دانی ماکس برای تولدش چه می‌خواهد؟ | d: möchten, möchtest, möchtet
+Weißt du, ob Max einen Hund [hat]? | می‌دانی ماکس سگ دارد یا نه؟ | d: habe, hast, haben
+Max fragt, ob du Fußball [spielst]. | ماکس می‌پرسد که آیا فوتبال بازی می‌کنی. | d: spielen, spielt, spiele | hint: (spielen)
+Anna fragt mich, ob [ich] heute Zeit habe. | آنا از من می‌پرسد که آیا امروز وقت دارم. | d: du, wir, ihr | hint: (ich)
+Können Sie [mir] sagen, wo die Post ist? | می‌توانید به من بگویید اداره پست کجاست؟ | d: mich, ich, mein
+Sag mir bitte{bitte}, wann du [kommst]. | لطفاً به من بگو کی می‌آیی. | d: kommen, komme, kommt
+Weißt du, [wo] Max [wohnt]? | می‌دانی ماکس کجا زندگی می‌کند؟ | d: wohin, woher, wen / wohnen, wohnst, gewohnt
+Ich weiß nicht, [ob] ich morgen kommen [kann]. | نمی‌دانم فردا می‌توانم بیایم یا نه. | d: denn, aber, und / können, kannst, könnt
+Können Sie mir sagen, [wann] der Zug [abfährt]{abfahren}? | می‌توانید به من بگویید قطار کی حرکت می‌کند؟ | d: wohin, woher, wen / abfahren, abfährst, abgefahren
+Lena fragt, [ob] wir Hunger [haben]. | لنا می‌پرسد که آیا گرسنه‌ایم. | d: dass, denn, und / habe, hast, hat
+Weißt du, [wie] der Film [heißt]? | می‌دانی اسم فیلم چیست؟ | d: wo, wer, wen / heiße, heißen, geheißen
+Ich frage Anna, [ob] sie heute [mitkommt]{mitkommen}. | از آنا می‌پرسم که آیا امروز همراه ما می‌آید. | d: dass, denn, und / mitkommen, mitkommst, mitgekommen
+Wissen Sie, [wie] ich zum Bahnhof [komme]? | می‌دانید چطور به ایستگاه قطار بروم؟ | d: was, wer, wen / kommen, kommst, kommt
+Ich weiß nicht, [warum] der Bus heute nicht [kommt]. | نمی‌دانم چرا اتوبوس امروز نمی‌آید. | d: wer, wen, welche / kommen, kommst, komme
+transforms:
+Wo ist die Haltestelle? => Weißt du, wo die Haltestelle ist? | سؤال را با «Weißt du, …» شروع کن.
+Wann beginnt der Kurs? => Können Sie mir sagen, wann der Kurs beginnt? | سؤال را با «Können Sie mir sagen, …» شروع کن.
+Kommt Paul morgen? => Ich weiß nicht, ob Paul morgen kommt. | جمله را با «Ich weiß nicht, …» شروع کن.
+Wie heißt das Hotel? => Wissen Sie, wie das Hotel heißt? | سؤال را با «Wissen Sie, …» شروع کن.
+Was kostet das Buch? => Ich weiß nicht, was das Buch kostet. | جمله را با «Ich weiß nicht, …» شروع کن.
+Fängt der Film um acht an? => Weißt du, ob der Film um acht anfängt{anfangen}? | سؤال را با «Weißt du, …» شروع کن.
+Kann ich hier parken? => Wissen Sie, ob ich hier parken kann? | سؤال را با «Wissen Sie, …» شروع کن.
+Hast du Zeit? => Lena fragt, ob ich Zeit habe. ; Lena fragt mich, ob ich Zeit habe. | لنا این را از تو می‌پرسد؛ جمله را با «Lena fragt, …» بنویس.
+translations:
+می‌دانی داروخانه کجاست؟ => Weißt du, wo die Apotheke ist?
+نمی‌دانم او می‌آید یا نه. => Ich weiß nicht, ob er kommt. ; Ich weiß nicht, ob sie kommt. ; Ich weiß nicht, ob er kommt oder nicht. ; Ich weiß nicht, ob sie kommt oder nicht.
+می‌توانید به من بگویید ساعت چند است؟ => Können Sie mir sagen, wie spät es ist? ; Können Sie mir sagen, wie viel Uhr es ist? ; Könnt ihr mir sagen, wie spät es ist? ; Könnt ihr mir sagen, wie viel Uhr es ist?
+می‌دانید این کلمه چه معنی می‌دهد؟ => Wissen Sie, was dieses Wort bedeutet? ; Wissen Sie, was das Wort bedeutet? ; Wisst ihr, was dieses Wort bedeutet? ; Wisst ihr, was das Wort bedeutet?
+او می‌پرسد که آیا وقت دارم. => Er fragt, ob ich Zeit habe. ; Sie fragt, ob ich Zeit habe. ; Er fragt mich, ob ich Zeit habe. ; Sie fragt mich, ob ich Zeit habe.
+نمی‌دانم ماکس کجا کار می‌کند. => Ich weiß nicht, wo Max arbeitet.
+می‌دانی قطار کی می‌رسد؟ => Weißt du, wann der Zug ankommt{ankommen}? ; Weißt du, wann der Zug kommt?
+نمی‌دانم این درست است یا نه. => Ich weiß nicht, ob das richtig ist. ; Ich weiß nicht, ob das stimmt. ; Ich weiß nicht, ob das richtig ist oder nicht. ; Ich weiß nicht, ob das stimmt oder nicht.

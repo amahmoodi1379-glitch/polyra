@@ -1,0 +1,34 @@
+code: de-a2-d002
+title: در داروخانه
+situation: در داروخانه هستی. سرت درد می‌کند و قرص می‌خواهی.
+turns:
+B: Guten Tag! Bitte schön? | روز بخیر! بفرمایید؟
+- Guten Tag! Ich habe Kopfschmerzen. Hast du Tabletten? | روز بخیر! سردرد دارم. قرص داری؟
++ Guten Tag! Ich habe Kopfschmerzen. Haben Sie Tabletten? | روز بخیر! سردرد دارم. قرص دارید؟
+- Guten Tag! Ich habe Kopfschmerzen. Sind Sie Tabletten? | روز بخیر! سردرد دارم. شما قرص هستید؟
+why: با داروساز رسمی حرف می‌زنیم: «Haben Sie …?». «Hast du» خودمانی است و «Sind Sie Tabletten» یعنی «شما قرص هستید؟».
+B: Ja, diese Tabletten hier sind sehr gut. Möchten Sie zehn oder zwanzig Stück? | بله، این قرص‌ها خیلی خوب‌اند. ده‌تا می‌خواهید یا بیست‌تا؟
+- Ja, bitte{bitte}. | بله، لطفاً.
+- Um zehn Uhr, bitte{bitte}. | ساعت ده، لطفاً.
++ Zehn Stück, bitte{bitte}. | ده‌تا، لطفاً.
+why: سؤال «این یا آن؟» است، پس یکی را می‌گوییم: «Zehn Stück». «Ja» جواب این سؤال نیست و «um zehn Uhr» ساعت است.
+B: Gern. Haben Sie auch Fieber? | با کمال میل. تب هم دارید؟
++ Nein, ich habe kein Fieber. | نه، تب ندارم.
+- Nein, ich habe nicht Fieber. | نه، تب ندارم.
+- Nein, ich bin kein Fieber. | نه، من تب نیستم.
+why: اسم را با kein منفی می‌کنیم: «kein Fieber»، نه «nicht Fieber». برای تب haben می‌آید، نه sein.
+B: Gut. Aber Sie dürfen nur drei Tabletten am Tag nehmen. | خوب. ولی روزی فقط سه قرص می‌توانید بخورید.
+- Alles klar. Darf ich auch Kaffee trinkt? | باشه. قهوه هم می‌توانم بنوشم؟
+- Alles klar. Ich nehme zehn am Tag. | باشه. روزی ده‌تا می‌خورم.
++ Alles klar. Darf ich auch Kaffee trinken? | باشه. قهوه هم می‌توانم بنوشم؟
+why: بعد از darf فعل دوم مصدر است: «trinken»، نه trinkt. داروساز گفت روزی فقط سه قرص، نه ده‌تا.
+B: Ja, kein Problem. Aber trinken Sie auch viel Wasser. Das macht 6 Euro 50. | بله، مشکلی نیست. ولی آب هم زیاد بنوشید. می‌شود شش یورو و پنجاه سنت. | tts: Ja, kein Problem. Aber trinken Sie auch viel Wasser. Das macht sechs Euro fünfzig.
++ Okay. Kann ich mit Karte bezahlen? | باشه. می‌توانم با کارت پرداخت کنم؟
+- Okay. Können Sie mit Karte bezahlen? | باشه. شما می‌توانید با کارت پرداخت کنید؟
+- Okay. Wie viel kostet das? | باشه. این چند است؟
+why: تو پول می‌دهی، پس «Kann ich …?». «Können Sie» درباره داروساز است، و قیمت را همین الان گفت.
+B: Ja, natürlich. Gute Besserung! | بله، البته. زودتر خوب شوید!
+- Danke{danke}! Guten Appetit! | ممنون! نوش جان!
++ Vielen Dank! Auf Wiedersehen! | خیلی ممنون! خداحافظ!
+- Bitte{bitte}! Auf Wiedersehen! | خواهش می‌کنم! خداحافظ!
+why: برای آرزوی سلامتی تشکر می‌کنیم: «Vielen Dank». «Guten Appetit» برای سر غذاست و «Bitte» جواب تشکر است، نه خود تشکر.

@@ -1,0 +1,34 @@
+code: de-a2-d018
+title: برنامه‌ریزی آخر هفته با دوست
+situation: با دوستت لنا در کافه نشسته‌ای و درباره آخر هفته حرف می‌زنید.
+turns:
+B: Und? Was machst du am Wochenende? | خب؟ آخر هفته چه کار می‌کنی؟
++ Ich habe noch keine Pläne. Hast du eine Idee? | هنوز برنامه‌ای ندارم. تو فکری داری؟
+- Ich habe noch keine Pläne. Haben Sie eine Idee? | هنوز برنامه‌ای ندارم. شما فکری دارید؟
+- Am Wochenende habe ich viel gearbeitet. | آخر هفته خیلی کار کردم.
+why: با دوست du می‌گوییم: «Hast du …?». لنا درباره همین آخر هفته می‌پرسد، نه آخر هفته گذشته.
+B: Wir können am Samstag einen Ausflug machen. Ich möchte gern im Wald wandern. | می‌توانیم شنبه برویم گردش. دلم می‌خواهد در جنگل پیاده‌روی کنم.
+- Gute Idee! Aber wie wird der Wetter? | فکر خوبی است! ولی هوا چطور می‌شود؟
++ Gute Idee! Aber wie wird das Wetter? | فکر خوبی است! ولی هوا چطور می‌شود؟
+- Gute Idee! Aber wie war das Wetter? | فکر خوبی است! ولی هوا چطور بود؟
+why: Wetter خنثی است: «das Wetter». درباره هوای شنبه می‌پرسی، پس war (گذشته) جا ندارد.
+B: Ich glaube, am Samstag regnet es. Aber am Sonntag wird es sonnig. | فکر کنم شنبه باران می‌آید. ولی یکشنبه هوا آفتابی می‌شود.
+- Dann gehen wir lieber am Samstag wandern. | پس بهتر است شنبه برویم پیاده‌روی.
+- Dann geht wir lieber am Sonntag wandern. | پس بهتر است یکشنبه برویم پیاده‌روی.
++ Dann gehen wir lieber am Sonntag wandern. | پس بهتر است یکشنبه برویم پیاده‌روی.
+why: یکشنبه هوا آفتابی است، پس یکشنبه بهتر است. با wir شکل gehen می‌آید، نه geht.
+B: Gut, dann am Sonntag! Wann treffen wir uns? | باشه، پس یکشنبه! کی همدیگر را ببینیم؟
++ Um neun Uhr? Ich kann dich mit dem Auto abholen. | ساعت نه؟ می‌توانم با ماشین بیایم دنبالت.
+- Um neun Uhr? Ich kann dir mit dem Auto abholen. | ساعت نه؟ می‌توانم با ماشین بیایم دنبالت.
+- Am Samstag um neun? Ich kann dich mit dem Auto abholen. | شنبه ساعت نه؟ می‌توانم با ماشین بیایم دنبالت.
+why: abholen مفعول مستقیم می‌گیرد: «dich abholen»، نه dir. قرار حالا یکشنبه است، نه شنبه.
+B: Super! Machen wir auch ein Picknick? | عالی! پیک‌نیک هم بگیریم؟
+- Ja, toll! Ich mitbringe{mitbringen} Brötchen und Obst. | آره، عالی! نان و میوه می‌آورم.
++ Ja, toll! Ich bringe Brötchen und Obst mit. | آره، عالی! نان و میوه می‌آورم.
+- Ja, toll! Bringen Sie Brötchen und Obst mit? | آره، عالی! شما نان و میوه می‌آورید؟
+why: mitbringen جدا می‌شود: «Ich bringe … mit». با لنا خودمانی حرف می‌زنی، نه با Sie.
+B: Ich nehme Wasser und Kuchen mit. Das wird ein schöner Tag! | من آب و کیک می‌آورم. روز قشنگی می‌شود!
++ Ja, ich freue mich schon! Bis Sonntag! | آره، از حالا خوشحالم! تا یکشنبه!
+- Ja, ich freue mir schon! Bis Sonntag! | آره، از حالا خوشحالم! تا یکشنبه!
+- Ja, ich freue mich schon! Bis Samstag! | آره، از حالا خوشحالم! تا شنبه!
+why: با ich ضمیر mich می‌آید: «ich freue mich»، نه mir. قرارتان یکشنبه است، نه شنبه.

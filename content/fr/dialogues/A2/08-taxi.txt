@@ -1,0 +1,34 @@
+code: fr-a2-d008
+title: تاکسی
+situation: از فرودگاه سوار تاکسی شده‌ای و می‌خواهی به هتلت نزدیک ایستگاه قطار بروی.
+turns:
+B: Bonjour ! Vous allez où ? | سلام! کجا می‌روید؟
+- Je vais bien, merci, et vous ? | خوبم، ممنون، شما چطورید؟
++ À cette adresse, s'il vous plaît. C'est{être} un hôtel près de la gare. | به این آدرس، لطفاً. یک هتل نزدیک ایستگاه قطار است.
+- À cette adresse, s'il vous plaît. C'est{être} un hôtel près du{du-contr} gare. | به این آدرس، لطفاً. یک هتل نزدیک ایستگاه قطار است.
+why: gare مؤنث است، پس «près de la gare»، نه «près du gare». راننده می‌پرسد کجا می‌روی، نه حالت چطور است.
+B: D'accord. C'est{être} à trente minutes, environ. Vous venez pour les vacances ? | باشد. حدود سی دقیقه راه است. برای تعطیلات آمده‌اید؟
++ Non, je suis{être} ici pour le travail. | نه، برای کار اینجا هستم.
+- Non, je suis{être} ici pour la travail. | نه، برای کار اینجا هستم.
+- Oui, je suis{être} ici pour le travail. | بله، برای کار اینجا هستم.
+why: travail مذکر است: «le travail». اگر برای کار آمده‌ای، جواب «برای تعطیلات؟» نه است، نه بله.
+B: Ah, d'accord. Vous connaissez déjà la ville ? | آهان. شهر را از قبل می‌شناسید؟
+- Oui, c'est{être} la première fois que je viens en France. | بله، اولین بار است که به فرانسه می‌آیم.
+- Non, c'est{être} le premier fois que je viens en France. | نه، اولین بار است که به فرانسه می‌آیم.
++ Non, c'est{être} la première fois que je viens en France. | نه، اولین بار است که به فرانسه می‌آیم.
+why: fois مؤنث است: «la première fois». اگر بار اول است، شهر را نمی‌شناسی و جواب Non است.
+B: Oh là là, il y a beaucoup de voitures aujourd'hui ! On va arriver un peu en retard. | ای وای، امروز خیلی ماشین هست! کمی دیر می‌رسیم.
+- Ce n'est pas grave, je n'ai pas pressé. | مهم نیست، عجله ندارم.
++ Ce n'est pas grave, je ne suis{être} pas pressé. | مهم نیست، عجله ندارم.
+- Ce n'est pas grave, je suis{être} très pressé. | مهم نیست، خیلی عجله دارم.
+why: «عجله داشتن» در فرانسوی با être است: «je ne suis pas pressé». اگر خیلی عجله داری، «مهم نیست» با آن جور نیست.
+B: Voilà, nous sommes arrivés. C'est{être} cet hôtel, à droite ? | خب، رسیدیم. همین هتل است، سمت راست؟
+- Oui, c'est ça. Tu peux t'arrêter devant la porte ? | آره، همین است. می‌توانی جلوی در نگه داری؟
+- Oui, c'est ça. Vous pouvez vous arrêter derrière la porte ? | بله، همین است. می‌توانید پشت در نگه دارید؟
++ Oui, c'est ça. Vous pouvez vous arrêter devant la porte ? | بله، همین است. می‌توانید جلوی در نگه دارید؟
+why: «devant la porte» یعنی جلوی در؛ ماشین پشت در هتل نمی‌رود. با راننده tu نمی‌گوییم.
+B: Bien sûr. Ça fait quarante-deux euros. | حتماً. چهل‌ودو یورو می‌شود.
++ Voilà cinquante euros. Gardez la monnaie. | بفرمایید، پنجاه یورو. بقیه‌اش مال خودتان.
+- Voilà quarante euros. Gardez la monnaie. | بفرمایید، چهل یورو. بقیه‌اش مال خودتان.
+- Voilà cinquante euros. Gardez le monnaie. | بفرمایید، پنجاه یورو. بقیه‌اش مال خودتان.
+why: کرایه چهل‌ودو یورو است، پس چهل یورو کم است. monnaie مؤنث است: «la monnaie»؛ «Gardez la monnaie» یعنی «بقیه پول مال شما».

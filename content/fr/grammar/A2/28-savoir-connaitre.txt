@@ -1,0 +1,91 @@
+code: fr-a2-savoir-connaitre
+title: savoir یا connaître: «دانستن» و «شناختن»
+scope: savoir برای دانستن یک خبر و بلد بودن یک کار (je sais nager، je sais qu'il est là، je ne sais pas où il habite) و connaître برای شناختن آدم، جا یا چیز (je connais Paris)، صرف هر دو در زمان حال، j'ai connu در passé composé و je savais و je connaissais در imparfait؛ j'ai su کم‌کاربرد است و فقط در درسنامه می‌آید.
+can_do: حالا می‌توانی بگویی چه کاری بلدی، چه چیزی را می‌دانی و چه کسی یا چه جایی را می‌شناسی: Je sais nager. Je connais bien Paris.
+rule: savoir + مصدر، que یا کلمهٔ پرسشی (où، quand، comment، pourquoi) یعنی «دانستن، بلد بودن»؛ connaître + آدم، جا یا چیز یعنی «شناختن»: je sais nager، je connais Marie.
+mistake: فارسی برای جا و راه هم «بلدم» می‌گوید («پاریس را بلدم») و برای کار هم «می‌دانم»، برای همین فارسی‌زبان‌ها می‌نویسند «je sais Paris» یا «je connais nager»؛ درست: je connais Paris، je sais nager. اسم مفعول connaître هم connu است، نه «connaissé»: J'ai connu Paul à l'université.
+tables: présent | savoir
+tables: présent | connaître
+lesson:
+فرانسوی برای «دانستن» و «شناختن» دو فعل جدا دارد: savoir و connaître.
+savoir یعنی دانستن یک خبر یا بلد بودن یک کار. بعدش مصدر، que یا یک کلمهٔ پرسشی می‌آید: Je sais nager (شنا بلدم)، Je sais qu'il est malade (می‌دانم که مریض است)، Je ne sais pas où il habite (نمی‌دانم کجا زندگی می‌کند).
+connaître یعنی شناختن یا آشنا بودن با یک آدم، یک جا یا یک چیز، و بعدش اسم می‌آید: Je connais Marie، Je connais Paris، Tu connais ce film ?
+راه ساده: اگر بعد از فعل اسم آدم یا جا یا چیزی آمد، connaître؛ اگر مصدر یا یک جملهٔ دیگر (با que، où، quand، comment…) آمد، savoir.
+هر دو بی‌قاعده‌اند: je sais، il sait، nous savons، ils savent؛ je connais، il connaît (با ^ روی i)، nous connaissons، ils connaissent.
+در گذشته j'ai connu یعنی «آشنا شدم»: J'ai connu Paul à l'université. اسم مفعول savoir هم su است، ولی j'ai su («فهمیدم، خبردار شدم») کم به کار می‌رود.
+برای «می‌دانستم» و «می‌شناختم» imparfait می‌آید: Je ne savais pas que tu étais là. Avant, je ne connaissais personne ici.
+table:
+ضمیر | savoir | connaître
+je | sais | connais
+tu | sais | connais
+il، elle، on | sait | connaît
+nous | savons | connaissons
+vous | savez | connaissez
+ils، elles | savent | connaissent
+sets:
+savoir: nager, conduire, que…, où…, quand…, comment…
+connaître: Marie, Paris, ce quartier, ce film, un bon restaurant
+examples:
+Je sais nager. | من شنا بلدم.
+Tu connais Marie ? | ماری را می‌شناسی؟
+Je ne sais pas où il habite. | نمی‌دانم او کجا زندگی می‌کند.
+J'ai connu Paul à l'université. | با پل در دانشگاه آشنا شدم.
+targets:
+Je [sais] conduire, mais je n'ai pas de voiture. | رانندگی بلدم، ولی ماشین ندارم. | d: connais, sait, savons | hint: (savoir)
+Tu [sais] jouer de la guitare ? | گیتار زدن بلدی؟ | d: connais, sait, savez | hint: (savoir)
+Mon petit frère [sait] déjà lire. | برادر کوچکم دیگر خواندن بلد است. | d: connaît, sais, savent
+Nous [savons] faire du pain. | ما نان پختن بلدیم. | d: connaissons, savez, savent | hint: (savoir)
+Vous [savez] où est la gare ? | می‌دانید ایستگاه قطار کجاست؟ | d: connaissez, savons, sais
+Mes sœurs [savent] faire du ski. | خواهرهایم اسکی بلدند. | d: connaissent, sait, savez | hint: (savoir)
+Je [connais] bien ce quartier. | این محله را خوب می‌شناسم. | d: sais, connaît, connaissez | hint: (connaître)
+Tu [connais] mon frère ? | برادرم را می‌شناسی؟ | d: sais, connaît, connaissez
+Marie [connaît] tous les voisins. | ماری همهٔ همسایه‌ها را می‌شناسد. | d: sait, connais, connaissent | hint: (connaître)
+Nous [connaissons] un bon restaurant près d'ici. | ما یک رستوران خوب نزدیک اینجا می‌شناسیم. | d: savons, connaissez, connaissent
+Vous [connaissez] ce film ? | این فیلم را می‌شناسید؟ | d: savez, connaissons, connaît | hint: (connaître)
+Mes parents [connaissent] bien la France. | پدر و مادرم فرانسه را خوب می‌شناسند. | d: savent, connaissez, connaît
+Je ne [sais] pas où sont mes clés. | نمی‌دانم کلیدهایم کجا هستند. | d: connais, sait, savons | hint: (savoir)
+Tu [sais] quand{quand} le train part ? | می‌دانی قطار کی حرکت می‌کند؟ | d: connais, sait, savez
+Paul ne [sait] pas pourquoi Marie est triste. | پل نمی‌داند چرا ماری غمگین است. | d: connaît, sais, savent | hint: (savoir)
+Nous ne [savons] pas comment aller au musée. | نمی‌دانیم چطور به موزه برویم. | d: connaissons, savez, savent
+Je [sais] que tu es fatigué. | می‌دانم که خسته‌ای. | d: connais, sait, savons | hint: (savoir)
+Tout le monde [sait] que Paris est une belle ville. | همه می‌دانند که پاریس شهر زیبایی است. | d: connaît, savent, sais
+Tu [connais] le nouveau professeur ? | معلم جدید را می‌شناسی؟ | d: sais, connaît, connaissez | hint: (connaître)
+Je ne [connais] personne dans cette ville. | در این شهر هیچ‌کس را نمی‌شناسم. | d: sais, connaît, connaissons
+Elle ne [connaît] pas Lyon. | او (زن) لیون را نمی‌شناسد. | d: sait, connais, connaissent | hint: (connaître)
+Vous [savez] utiliser cet ordinateur ? | کار با این کامپیوتر را بلدید؟ | d: connaissez, savons, sais | hint: (savoir)
+On [connaît] ce chemin, on vient souvent ici. | این راه را بلدیم، اغلب به اینجا می‌آییم. | d: sait, connaissons, connais | hint: (connaître)
+Ils [connaissent] le directeur de l'école. | آن‌ها مدیر مدرسه را می‌شناسند. | d: savent, connaît, connaissez
+Est-ce que vous [connaissez] un bon médecin ? | آیا یک پزشک خوب می‌شناسید؟ | d: savez, connaissons, connaît | hint: (connaître)
+Tu [sais] comment il s'appelle ? | می‌دانی اسمش چیست؟ | d: connais, sait, savez
+J'ai [connu] Sophie au lycée. | با سوفی در دبیرستان آشنا شدم. | d: connaissé, su, connais | hint: (connaître)
+Où est-ce que tu as [connu] ton ami Paul ? | با دوستت پل کجا آشنا شدی؟ | d: connaissé, su, connaître
+Je ne [savais] pas que tu parlais persan. | نمی‌دانستم که فارسی حرف می‌زنی. | d: connaissais, savait, savions | hint: (savoir)
+Tu [savais] que Marie était malade ? | می‌دانستی که ماری مریض بود؟ | d: connaissais, savait, saviez
+Avant, je ne [connaissais] personne ici. | قبلاً اینجا هیچ‌کس را نمی‌شناختم. | d: savais, connaissait, connaissions | hint: (connaître)
+Mon grand-père [connaissait] toutes les rues de la ville. | پدربزرگم همهٔ خیابان‌های شهر را می‌شناخت. | d: savait, connaissais, connaissaient
+Je [connais] Paul, mais je ne [sais] pas où il travaille. | پل را می‌شناسم، ولی نمی‌دانم کجا کار می‌کند. | d: sais, connaît, connaissons / connais, sait, savons
+Tu [connais] Marie ? Oui, et je [sais] qu'elle habite à Lyon. | ماری را می‌شناسی؟ بله، و می‌دانم که در لیون زندگی می‌کند. | d: sais, connaît, connaissez / connais, sait, savons
+Nous [connaissons] cette ville, mais nous ne [savons] pas où est l'hôtel. | این شهر را می‌شناسیم، ولی نمی‌دانیم هتل کجاست. | d: savons, connaissez, connaissent / connaissons, savez, savent
+Elle [sait] parler anglais et elle [connaît] bien Londres. | او (زن) انگلیسی بلد است و لندن را خوب می‌شناسد. | d: connaît, sais, savent / sait, connais, connaissent | full: Elle connaît bien Londres et elle sait parler anglais.
+Vous [savez] que Paul a un nouveau travail ? Non, je ne [savais] pas. | می‌دانید که پل یک کار جدید دارد؟ نه، نمی‌دانستم. | d: connaissez, savons, sait / connaissais, savait, savions
+J'ai [connu] Ali à Téhéran, mais je ne [connaissais] pas sa famille. | علی را در تهران شناختم، ولی خانواده‌اش را نمی‌شناختم. | d: connaissé, su, connais / savais, connaissait, connaissions
+Tu [connais] ce quartier ? Non, mais je [sais] où est la poste. | این محله را می‌شناسی؟ نه، ولی می‌دانم پست کجاست. | d: sais, connaît, connaissez / connais, sait, savez
+Mon fils [sait] compter jusqu'à cent et il [connaît] tous les enfants de l'école. | پسرم تا صد شمردن بلد است و همهٔ بچه‌های مدرسه را می‌شناسد. | d: connaît, sais, savent / sait, connais, connaissent
+transforms:
+Je connais Marie. => Nous connaissons Marie. | جمله را با nous بنویس.
+Il sait nager. => Ils savent nager. | جمله را با ils بنویس.
+Tu connais ce quartier ? => Vous connaissez ce quartier ? | جمله را با vous بنویس.
+Je sais où il habite. => Je ne sais pas où il habite. | جمله را منفی کن.
+Elle connaît Paris. => Elle ne connaît pas Paris. | جمله را منفی کن.
+Marie sait cuisiner. => Marie et Sophie savent cuisiner. | فاعل جمله را Marie et Sophie کن.
+Nous connaissons ses parents. => Nous connaissions ses parents. | جمله را به imparfait ببر.
+Je sais que tu es là. => Je savais que tu étais là. | هر دو فعل را به imparfait ببر.
+translations:
+من شنا بلدم. => Je sais nager.
+ماری را می‌شناسی؟ => Tu connais Marie ? ; Est-ce que tu connais Marie ? ; Connais-tu Marie ?
+نمی‌دانم او کجا زندگی می‌کند. => Je ne sais pas où il habite. ; Je ne sais pas où elle habite. ; Je ne sais pas où il vit{vivre}. ; Je ne sais pas où elle vit{vivre}.
+پاریس را خوب می‌شناسیم. => Nous connaissons bien Paris. ; On connaît bien Paris.
+می‌دانستی که پل مریض بود؟ => Tu savais que Paul était malade ? ; Est-ce que tu savais que Paul était malade ? ; Savais-tu que Paul était malade ?
+با سوفی در دانشگاه آشنا شدم. => J'ai connu Sophie à l'université. ; J'ai rencontré Sophie à l'université.
+رانندگی بلدید؟ => Vous savez conduire ? ; Est-ce que vous savez conduire ? ; Savez-vous conduire ?
+اینجا هیچ‌کس را نمی‌شناسم. => Je ne connais personne ici. ; Ici, je ne connais personne.

@@ -1,0 +1,86 @@
+code: fr-a2-ne-plus-jamais
+title: ne … plus و ne … jamais: «دیگر … نه» و «هرگز»
+scope: ne … plus («دیگر … نه») و ne … jamais («هرگز، هیچ‌وقت») در زمان حال، آیندهٔ نزدیک و passé composé (je ne travaille plus ici، je ne suis jamais allé à Rome)، و de به‌جای du، de la و des بعد از آن‌ها (je ne mange plus de viande)؛ ne … rien و ne … personne در واحد بعد می‌آیند.
+can_do: حالا می‌توانی بگویی چه کاری را دیگر نمی‌کنی و چه کاری را هرگز نکرده‌ای: Je ne travaille plus ici. Je ne suis jamais allé à Rome.
+rule: plus و jamais جای pas می‌نشینند: ne + فعل + plus یا jamais (je ne mange plus)؛ در passé composé بین avoir یا être و اسم مفعول (je n'ai jamais vu)؛ بعدشان du، de la و des می‌شوند de.
+mistake: در فارسی «هرگز» و «دیگر» کنار یک فعل منفی می‌آیند («هرگز نرفته‌ام»)، برای همین فارسی‌زبان‌ها pas را هم نگه می‌دارند («je ne suis pas jamais allé») یا jamais را بعد از اسم مفعول می‌گذارند («je n'ai vu jamais la mer»)؛ درست: je ne suis jamais allé، je n'ai jamais vu la mer. «je ne mange plus de la viande» هم غلط است؛ درست: je ne mange plus de viande.
+lesson:
+ne … plus یعنی «دیگر … نه»: کاری که قبلاً می‌کردی و حالا نمی‌کنی. Je ne travaille plus ici. (دیگر اینجا کار نمی‌کنم.)
+ne … jamais یعنی «هرگز، هیچ‌وقت»: Il ne mange jamais de poisson. (او هیچ‌وقت ماهی نمی‌خورد.)
+جایشان مثل ne … pas است: ne قبل از فعل و plus یا jamais بعد از فعل؛ قبل از صدادار ne می‌شود n': Elle n'habite plus à Lyon.
+plus و jamais جای pas را می‌گیرند، پس pas دیگر نمی‌آید: «je ne mange pas jamais» غلط است.
+در passé composé، plus و jamais بین avoir یا être و اسم مفعول می‌نشینند: Je n'ai jamais vu la mer. Je ne suis jamais allé à Rome. (هرگز به رم نرفته‌ام.)
+در آیندهٔ نزدیک و بعد از pouvoir و vouloir، دور فعل اول می‌آیند: Je ne vais plus prendre le bus. Je ne peux plus marcher.
+مثل pas de، بعد از plus و jamais هم du، de la، de l' و des می‌شوند de یا d': Il n'y a plus de pain. Je ne bois jamais de café. ولی بعد از aimer و être عوض نمی‌شوند: Je n'aime plus le café. Ce n'est plus un enfant.
+در ne … plus، s آخر plus خوانده نمی‌شود.
+table:
+جمله | با plus | با jamais
+زمان حال | Je ne travaille plus. | Je ne travaille jamais.
+با صدادار | Elle n'habite plus ici. | Elle n'habite jamais ici.
+passé composé با avoir | Je n'ai plus téléphoné. | Je n'ai jamais téléphoné.
+passé composé با être | Il n'est plus venu. | Il n'est jamais venu.
+بعدش de | Je n'ai plus de pain. | Je ne bois jamais de thé.
+examples:
+Je ne travaille plus{plus-2} à Paris. | من دیگر در پاریس کار نمی‌کنم.
+Mon frère ne mange jamais de poisson. | برادرم هیچ‌وقت ماهی نمی‌خورد.
+Je ne suis{être} jamais allé au Canada. | من هرگز به کانادا نرفته‌ام.
+Il n'y a plus{plus-2} de sucre. | دیگر شکر نداریم.
+targets:
+Je [ne travaille plus{plus-2}] ici. | من دیگر اینجا کار نمی‌کنم. | d: ne plus travaille, plus ne travaille, travaille ne plus | hint: (travailler)
+Elle [n'habite plus{plus-2}] à Lyon. | او (زن) دیگر در لیون زندگی نمی‌کند. | d: ne habite plus, ne plus habite, habite ne plus | hint: (habiter)
+Nous [ne jouons plus{plus-2}] au tennis. | ما دیگر تنیس بازی نمی‌کنیم. | d: ne plus jouons, jouons ne plus, plus ne jouons
+Mon grand-père [ne conduit plus{plus-2}]. | پدربزرگم دیگر رانندگی نمی‌کند. | d: ne plus conduit, conduit ne plus, plus ne conduit | hint: (conduire)
+Tu [n'as plus{plus-2}] faim ? | دیگر گرسنه نیستی؟ | d: ne as plus, ne plus as, as ne plus
+Le magasin [n'est plus{plus-2}] ouvert{ouvert} le dimanche. | مغازه دیگر یکشنبه‌ها باز نیست. | d: ne est plus, ne plus est, est ne plus | hint: (être)
+Il [ne mange jamais] de viande. | او (مرد) هیچ‌وقت گوشت نمی‌خورد. | d: ne mange pas jamais, ne jamais mange, mange ne jamais | hint: (manger)
+Nous [ne regardons jamais] la télé le matin. | ما صبح‌ها هیچ‌وقت تلویزیون تماشا نمی‌کنیم. | d: ne regardons pas jamais, ne jamais regardons, regardons ne jamais
+Vous [n'êtes jamais] en retard. | شما هیچ‌وقت دیر نمی‌کنید. | d: ne êtes jamais, n'êtes pas jamais, ne jamais êtes | hint: (être)
+Il [ne pleut jamais] ici en été{été}. | اینجا تابستان هیچ‌وقت باران نمی‌آید. | d: ne pleut pas jamais, ne jamais pleut, pleut ne jamais | hint: (pleuvoir)
+Mes parents [ne prennent jamais] le taxi. | پدر و مادرم هیچ‌وقت تاکسی نمی‌گیرند. | d: ne prennent pas jamais, ne jamais prennent, prennent ne jamais
+Tu [n'oublies jamais] mon anniversaire. | تو هیچ‌وقت تولدم را فراموش نمی‌کنی. | d: ne oublies jamais, n'oublies pas jamais, ne jamais oublies | hint: (oublier)
+Je n'ai plus{plus-2} [d']argent. | دیگر پول ندارم. | d: de l', du, des
+Il n'y a plus{plus-2} [de] lait. | دیگر شیر نداریم. | d: du, de la, des
+Elle ne mange jamais [de] fruits. | او (زن) هیچ‌وقت میوه نمی‌خورد. | d: des, du, de les
+Je ne bois{boire} jamais [de] café le soir. | شب‌ها هیچ‌وقت قهوه نمی‌خورم. | d: du, de la, des
+Il n'y a plus{plus-2} [d']eau dans la bouteille. | در بطری دیگر آب نیست. | d: de l', de la, des
+Tu ne fais jamais [de] sport ? | تو هیچ‌وقت ورزش نمی‌کنی؟ | d: du, de la, des
+Je n'aime plus{plus-2} [le] fromage. | دیگر پنیر دوست ندارم. | d: de, du, des
+Ce n'est plus{plus-2} [un] enfant. | او دیگر بچه نیست. | d: d', de, des
+Je [ne suis{être} jamais allé] à Rome. | من هرگز به رم نرفته‌ام. | d: ne suis pas jamais allé, ne suis allé jamais, ne jamais suis allé | ok: ne suis jamais allée | hint: (aller)
+Tu [n'as jamais vu] la mer ? | تو هیچ‌وقت دریا را ندیده‌ای؟ | d: n'as pas jamais vu, n'as vu jamais, ne jamais as vu | hint: (voir)
+Elle [n'a jamais pris] l'avion. | او (زن) هرگز سوار هواپیما نشده است. | d: n'a pas jamais pris, n'a pris jamais, ne jamais a pris | hint: (prendre)
+Nous [ne sommes jamais allés] au Japon. | ما هرگز به ژاپن نرفته‌ایم. | d: ne sommes pas jamais allés, ne sommes allés jamais, ne jamais sommes allés | ok: ne sommes jamais allées
+Mes amis [n'ont jamais visité] Paris. | دوستانم هرگز از پاریس دیدن نکرده‌اند. | d: n'ont pas jamais visité, n'ont visité jamais, ne jamais ont visité | hint: (visiter)
+Vous n'avez jamais mangé [de] fromage français{français} ? | شما هیچ‌وقت پنیر فرانسوی نخورده‌اید؟ | d: du, de la, des
+Après ça, il [n'a plus{plus-2} téléphoné]. | بعد از آن، او (مرد) دیگر تلفن نزد. | d: n'a téléphoné plus, ne plus a téléphoné, ne a plus téléphoné | hint: (téléphoner)
+Sophie [n'est plus{plus-2} venue] au cours. | سوفی دیگر سر کلاس نیامد. | d: n'est venue plus, ne plus est venue, ne est plus venue | hint: (venir)
+Nous [n'allons plus{plus-2}] prendre le bus. | ما دیگر با اتوبوس نمی‌رویم. | d: ne allons plus, ne plus allons, plus n'allons
+Je [ne] peux plus{plus-2} marcher. | دیگر نمی‌توانم راه بروم. | d: n', non, pas
+On [n']écoute jamais la radio. | ما هیچ‌وقت رادیو گوش نمی‌دهیم. | d: ne, non, pas
+Ce ne sont plus{plus-2} [des] enfants. | آن‌ها دیگر بچه نیستند. | d: de, d', du
+Je [ne mange plus{plus-2}] [de] viande, je mange du poisson. | من دیگر گوشت نمی‌خورم، ماهی می‌خورم. | d: ne plus mange, mange ne plus, plus ne mange / de la, du, des
+Elle [ne boit jamais] [de] thé. | او (زن) هیچ‌وقت چای نمی‌نوشد. | d: ne boit pas jamais, ne jamais boit, boit ne jamais / du, de la, des
+Paul [n'a jamais vu] la neige et il [n'est jamais allé] à la montagne. | پل هرگز برف ندیده و هرگز به کوه نرفته است. | d: n'a pas jamais vu, n'a vu jamais, ne jamais a vu / n'est pas jamais allé, n'est allé jamais, ne jamais est allé | full: Paul n'est jamais allé à la montagne et il n'a jamais vu la neige.
+Il n'y a plus{plus-2} [de] pain, mais il y a [du] riz. | دیگر نان نداریم، ولی برنج هست. | d: du, de la, des / de, de la, des | full: Il y a du riz, mais il n'y a plus de pain.
+Marie [n'habite plus{plus-2}] ici et elle [ne vient jamais] nous voir. | ماری دیگر اینجا زندگی نمی‌کند و هیچ‌وقت به دیدن ما نمی‌آید. | d: ne habite plus, ne plus habite, habite ne plus / ne vient pas jamais, ne jamais vient, vient ne jamais
+Avant, il faisait du sport, mais maintenant il [ne fait plus{plus-2}] [de] sport. | قبلاً ورزش می‌کرد، ولی حالا دیگر ورزش نمی‌کند. | d: ne plus fait, fait ne plus, plus ne fait / du, de la, des
+Tu [ne manges jamais] [de] poisson ? | تو هیچ‌وقت ماهی نمی‌خوری؟ | d: ne manges pas jamais, ne jamais manges, manges ne jamais / du, de la, des
+Je [n'ai jamais mangé] [de] pizza. | من هرگز پیتزا نخورده‌ام. | d: n'ai pas jamais mangé, n'ai mangé jamais, ne jamais ai mangé / de la, des, du
+transforms:
+Je travaille ici. => Je ne travaille plus{plus-2} ici. | با ne … plus بگو که دیگر این کار را نمی‌کنی.
+Il mange de la viande. => Il ne mange plus{plus-2} de viande. | با ne … plus منفی کن.
+Nous regardons la télé. => Nous ne regardons jamais la télé. | با ne … jamais منفی کن.
+Je suis{être} allé à Rome. => Je ne suis{être} jamais allé à Rome. | با ne … jamais منفی کن.
+Elle a pris l'avion. => Elle n'a jamais pris l'avion. | با ne … jamais منفی کن.
+Il y a du pain. => Il n'y a plus{plus-2} de pain. | با ne … plus منفی کن.
+Je ne travaille pas le samedi. => Je ne travaille plus{plus-2} le samedi. | به‌جای pas، plus بگذار.
+Ils font du sport. => Ils ne font jamais de sport. | با ne … jamais منفی کن.
+translations:
+من دیگر اینجا کار نمی‌کنم. => Je ne travaille plus{plus-2} ici. ; Ici, je ne travaille plus{plus-2}.
+او (مرد) هیچ‌وقت گوشت نمی‌خورد. => Il ne mange jamais de viande.
+من هرگز به پاریس نرفته‌ام. => Je ne suis{être} jamais allé à Paris. ; Je ne suis{être} jamais allée à Paris.
+دیگر پول ندارم. => Je n'ai plus{plus-2} d'argent.
+ما دیگر تلویزیون تماشا نمی‌کنیم. => Nous ne regardons plus{plus-2} la télévision. ; Nous ne regardons plus{plus-2} la télé. ; On ne regarde plus{plus-2} la télévision. ; On ne regarde plus{plus-2} la télé.
+تو هیچ‌وقت دریا را ندیده‌ای؟ => Tu n'as jamais vu la mer ? ; Est-ce que tu n'as jamais vu la mer ?
+دیگر نان نیست. => Il n'y a plus{plus-2} de pain.
+او (زن) دیگر در لیون زندگی نمی‌کند. => Elle n'habite plus{plus-2} à Lyon. ; Elle ne vit plus{plus-2} à Lyon. ; Elle n'habite plus{plus-2} Lyon.

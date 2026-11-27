@@ -1,0 +1,34 @@
+code: fr-a2-d007
+title: اداره پست
+situation: در اداره پست هستی و می‌خواهی یک بسته برای خانواده‌ات در ایران بفرستی.
+turns:
+B: Bonjour ! C'est{être} pour une lettre ou pour un paquet ? | سلام! برای نامه است یا بسته؟
+- Bonjour ! C'est{être} pour cette paquet. Je voudrais l'envoyer en Iran. | سلام! برای این بسته. می‌خواهم آن را به ایران بفرستم.
+- Bonjour ! C'est{être} pour ce paquet. Je voudrais l'envoyer à Iran. | سلام! برای این بسته. می‌خواهم آن را به ایران بفرستم.
++ Bonjour ! C'est{être} pour ce paquet. Je voudrais l'envoyer en Iran. | سلام! برای این بسته. می‌خواهم آن را به ایران بفرستم.
+why: paquet مذکر است: «ce paquet». پیش از اسم کشوری که با واکه شروع می‌شود en می‌آید: «en Iran».
+B: Très bien. Qu'est-ce qu'il y a dans le paquet ? | خیلی خوب. داخل بسته چیست؟
++ Des livres et des vêtements pour ma famille. | کتاب و لباس برای خانواده‌ام.
+- Des livres et des vêtements pour mon famille. | کتاب و لباس برای خانواده‌ام.
+- Il fait deux kilos, je crois. | فکر کنم دو کیلو است.
+why: famille مؤنث است: «ma famille». کارمند پرسید داخل بسته چیست، نه وزنش.
+B: D'accord. Le paquet fait trois kilos. Ça fait trente-cinq euros. | باشد. بسته سه کیلوست. سی‌وپنج یورو می‌شود.
+- D'accord. Il va arriver depuis combien de jours ? | باشد. از چند روز پیش می‌رسد؟
++ D'accord. Il va arriver dans combien de jours ? | باشد. چند روز دیگر می‌رسد؟
+- D'accord. Il va arrive dans combien de jours ? | باشد. چند روز دیگر می‌رسد؟
+why: برای آینده «dans combien de jours» می‌پرسیم؛ depuis برای کاری است که از گذشته شروع شده. بعد از va فعل مصدر می‌آید: «va arriver».
+B: Dans dix jours, environ. Vous voulez autre chose ? | حدود ده روز دیگر. چیز دیگری می‌خواهید؟
+- Oui, je voudrais aussi envoyer ce lettre en Allemagne. | بله، این نامه را هم می‌خواهم به آلمان بفرستم.
+- Non, merci. Je voudrais aussi envoyer cette lettre en Allemagne. | نه، ممنون. این نامه را هم می‌خواهم به آلمان بفرستم.
++ Oui, je voudrais aussi envoyer cette lettre en Allemagne. | بله، این نامه را هم می‌خواهم به آلمان بفرستم.
+why: lettre مؤنث است: «cette lettre». «Non, merci» یعنی چیز دیگری نمی‌خواهی، ولی بعدش نامه‌ای هم می‌فرستی.
+B: Bien sûr. Écrivez l'adresse ici, s'il vous plaît. | حتماً. لطفاً آدرس را اینجا بنویسید.
++ D'accord. Vous avez un stylo, s'il vous plaît ? | باشد. خودکار دارید، لطفاً؟
+- D'accord. Vous avez une stylo, s'il vous plaît ? | باشد. خودکار دارید، لطفاً؟
+- D'accord. Tu as un stylo, s'il te plaît ? | باشد. خودکار داری، لطفاً؟
+why: stylo مذکر است: «un stylo». با کارمند پست tu و «s'il te plaît» نمی‌گوییم.
+B: Voilà un stylo. Et avec ce numéro, vous pouvez suivre votre paquet sur internet. | این خودکار. با این شماره هم می‌توانید بسته‌تان را در اینترنت دنبال کنید.
+- Très pratique ! Je peux suivre le{le-pron} sur mon portable ? | خیلی به‌دردبخور است! می‌توانم با موبایلم دنبالش کنم؟
++ Très pratique ! Je peux le suivre sur mon portable ? | خیلی به‌دردبخور است! می‌توانم با موبایلم دنبالش کنم؟
+- Très pratique ! Je peux le suivre sur ma portable ? | خیلی به‌دردبخور است! می‌توانم با موبایلم دنبالش کنم؟
+why: ضمیر le پیش از مصدر می‌آید: «je peux le suivre». portable مذکر است: «mon portable».

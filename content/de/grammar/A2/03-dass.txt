@@ -1,0 +1,87 @@
+code: de-a2-dass
+title: dass: «که» با فعل در آخر جمله
+scope: جمله dass بعد از glauben، denken، wissen، hoffen، sagen و hören (Ich glaube, dass …) و بعد از Es ist schön / wichtig / schade, dass … و Ich bin froh / sicher, dass …، با ویرگول پیش از dass و فعل صرف‌شده در آخر جمله (فعل وجهی، Perfekt و فعل جداشدنی سر هم)، و فرق dass (که) با das (حرف تعریف و «این»)؛ سؤال غیرمستقیم با ob در واحدهای بعد می‌آید.
+can_do: حالا می‌توانی نظرت، امیدت و چیزی را که می‌دانی بگویی: «Ich glaube, dass Max krank ist»، «Ich hoffe, dass du bald kommst».
+rule: dass یعنی «که»؛ پیش از آن ویرگول می‌آید و فعل صرف‌شده به آخر جمله می‌رود: Ich glaube, dass er krank ist. dass با دو s حرف ربط است و das با یک s حرف تعریف یا «این».
+mistake: در فارسی بعد از «که» ترتیب جمله عوض نمی‌شود، برای همین فارسی‌زبان‌ها می‌نویسند «Ich glaube, dass er ist krank»؛ درست: Ich glaube, dass er krank ist. das و dass را هم قاطی می‌کنند: «Ich weiß, das du müde bist» غلط است؛ درست: Ich weiß, dass du müde bist.
+lesson:
+dass یعنی «که» و یک جمله را به فعل‌هایی مثل glauben (فکر کردن، باور داشتن)، denken، wissen، hoffen، sagen و hören وصل می‌کند: Ich glaube, dass Max krank ist. یعنی «فکر می‌کنم که ماکس مریض است».
+جمله dass هم مثل جمله weil وابسته است: پیش از dass ویرگول می‌آید و فعل صرف‌شده به آخر جمله می‌رود.
+با فعل وجهی، Perfekt و فعل جداشدنی هم همین‌طور: dass er nicht kommen kann، dass sie angerufen hat، dass der Kurs um 9 Uhr anfängt.
+بعد از جمله‌هایی مثل Es ist schön، Es ist wichtig، Es ist schade و Ich bin froh هم dass می‌آید: Es ist wichtig, dass du pünktlich bist.
+
+dass با دو s حرف ربط است؛ das با یک s حرف تعریف است (das Buch) یا یعنی «این» (Das ist gut). هر دو می‌توانند پشت هم بیایند: Ich weiß, dass das Buch gut ist.
+بعد از glauben، denken و hoffen گاهی dass را نمی‌گویند؛ آن‌وقت ترتیب جمله معمولی است: Ich glaube, Max ist krank. ولی اگر dass بگویی، فعل حتماً آخر است.
+table:
+جمله معمولی | با dass
+Max ist krank. | Ich glaube, dass Max krank ist.
+Du kannst kommen. | Ich hoffe, dass du kommen kannst.
+Sie hat angerufen. | Ich weiß, dass sie angerufen hat.
+Der Kurs fängt um 9 Uhr an. | Er sagt, dass der Kurs um 9 Uhr anfängt.
+sets:
+dass (که): Ich glaube, dass …, Ich weiß, dass …, Es ist schön, dass …
+das (حرف تعریف یا «این»): das Buch, das Auto, Das ist gut.
+examples:
+Ich glaube, dass er Recht hat. | فکر می‌کنم که حق با اوست.
+Ich hoffe, dass du morgen Zeit hast. | امیدوارم فردا وقت داشته باشی.
+Es ist schön, dass du hier bist. | خیلی خوب است که اینجا هستی.
+Ich weiß, dass das Buch gut ist. | می‌دانم که این کتاب خوب است.
+targets:
+Ich glaube, [dass] Max krank ist. | فکر می‌کنم ماکس مریض است. | d: das, denn, und | full: Dass Max krank ist, glaube ich.
+Ich hoffe, [dass] es dir gut geht. | امیدوارم حالت خوب باشد. | d: das, denn, dann
+Weißt du, [dass] Anna in Wien wohnt? | می‌دانی که آنا در وین زندگی می‌کند؟ | d: das, denn, dann
+Es ist wichtig, [dass] du pünktlich bist. | مهم است که سر وقت باشی. | d: das, denn, dann
+Es ist schade, [dass] du keine Zeit hast. | حیف است که وقت نداری. | d: das, denn, und
+Der Lehrer sagt, [dass] die Prüfung leicht ist. | معلم می‌گوید که امتحان آسان است. | d: das, denn, dann | full: Dass die Prüfung leicht ist, sagt der Lehrer.
+Ich weiß, [dass] du müde bist. | می‌دانم که خسته‌ای. | d: das, denn, und | full: Dass du müde bist, weiß ich.
+Wir denken, [dass] das Hotel zu{zu-adv} teuer ist. | ما فکر می‌کنیم که هتل خیلی گران است. | d: das, denn, dann | full: Dass das Hotel zu teuer ist, denken wir.
+Es ist toll, [dass] du so gut kochen kannst. | عالی است که این‌قدر خوب آشپزی می‌کنی. | d: das, denn, dann
+Es ist normal, [dass] man am Anfang Fehler macht. | طبیعی است که آدم اول کار اشتباه کند. | d: das, denn, und
+Hast du gewusst, [dass] Lena eine Schwester hat? | می‌دانستی که لنا یک خواهر دارد؟ | d: das, denn, dann
+Ich bin froh, [dass] die Prüfung vorbei ist. | خوشحالم که امتحان تمام شده است. | d: das, denn, und
+Ich glaube, dass Max heute nicht [kommen kann]. | فکر می‌کنم ماکس امروز نمی‌تواند بیاید. | d: kann kommen, kommen können, kommen kannst | full: Dass Max heute nicht kommen kann, glaube ich. | hint: (können)
+Anna sagt, dass sie den Film schon [gesehen hat]. | آنا می‌گوید که فیلم را قبلاً دیده است. | d: hat gesehen, gesehen ist, geseht hat | full: Dass sie den Film schon gesehen hat, sagt Anna.
+Ich hoffe, dass der Zug pünktlich [ankommt]{ankommen}. | امیدوارم قطار سر وقت برسد. | d: kommt an, ankommen, ankommst | full: Dass der Zug pünktlich ankommt, hoffe ich. | hint: (ankommen)
+Es ist schade, dass ihr nicht [mitkommen könnt]. | حیف است که نمی‌توانید با ما بیایید. | d: könnt mitkommen, mitkommen können, mitkommen kannst | hint: (können)
+Weißt du, dass Lena [umgezogen ist]? | می‌دانی که لنا اسباب‌کشی کرده است؟ | d: ist umgezogen, umgezogen hat, geumzogen ist
+Ich finde es toll, dass du Deutsch [lernen willst]. | به نظرم عالی است که می‌خواهی آلمانی یاد بگیری. | d: willst lernen, lernen wollen, lernen will | hint: (wollen)
+Der Arzt sagt, dass ich im Bett [bleiben muss]. | دکتر می‌گوید که باید در رختخواب بمانم. | d: muss bleiben, bleiben müssen, bleiben musst | full: Dass ich im Bett bleiben muss, sagt der Arzt.
+Ich bin froh, dass wir uns endlich [getroffen haben]. | خوشحالم که بالاخره همدیگر را دیدیم. | d: haben getroffen, getroffen sind, getrefft haben
+Wir wissen, dass der Kurs um 9 Uhr [anfängt]{anfangen}. | می‌دانیم که کلاس ساعت نه شروع می‌شود. | d: fängt an, anfangen, anfängst | full: Dass der Kurs um 9 Uhr anfängt, wissen wir. | hint: (anfangen)
+Ich habe gehört, dass das Museum am Montag [geschlossen ist]. | شنیده‌ام که موزه دوشنبه بسته است. | d: ist geschlossen, geschlossen sind, geschlossen bist | ok: geschlossen hat | full: Dass das Museum am Montag geschlossen ist, habe ich gehört.
+Max schreibt, dass er am Samstag [zurückkommt]{zurückkommen}. | ماکس می‌نویسد که شنبه برمی‌گردد. | d: kommt zurück, zurückkommen, zurückkommst | full: Dass er am Samstag zurückkommt, schreibt Max. | hint: (zurückkommen)
+Mama sagt, dass wir unser Zimmer [aufräumen müssen]. | مامان می‌گوید که باید اتاقمان را مرتب کنیم. | d: müssen aufräumen, aufräumen müsst, aufräumen muss | full: Dass wir unser Zimmer aufräumen müssen, sagt Mama.
+Ich glaube, dass Tim seinen Pass [verloren hat]. | فکر می‌کنم تیم گذرنامه‌اش را گم کرده است. | d: hat verloren, verloren ist, geverloren hat | full: Dass Tim seinen Pass verloren hat, glaube ich.
+Wir hoffen, dass ihr gut [angekommen seid]. | امیدواریم که به سلامت رسیده باشید. | d: seid angekommen, angekommen habt, angekommt seid | full: Dass ihr gut angekommen seid, hoffen wir.
+Es ist wichtig, dass die Kinder früh [ins Bett gehen]. | مهم است که بچه‌ها زود بخوابند. | d: gehen ins Bett, ins Bett geht, ins Bett gehst
+Ich bin sicher, dass du die Prüfung [bestehen kannst]. | مطمئنم که می‌توانی در امتحان قبول شوی. | d: kannst bestehen, bestehen können, bestehen kann | hint: (können)
+Ich hoffe, dass du [dich] gut erholst. | امیدوارم حسابی استراحت کنی. | d: sich, dir, mich | full: Dass du dich gut erholst, hoffe ich.
+Ich weiß, dass [das] richtig ist. | می‌دانم که این درست است. | d: dass, den, dem | ok: es | full: Dass das richtig ist, weiß ich.
+Glaubst du, dass [das] Buch interessant ist? | فکر می‌کنی این کتاب جالب است؟ | d: dass, der, die | ok: dieses
+Ich glaube, [das] stimmt. | فکر می‌کنم درست است. | d: dass, den, dem | ok: es
+Ich hoffe, [dass] [das] Wetter morgen schön ist. | امیدوارم که هوا فردا خوب باشد. | d: das, denn, dann / dass, der, den | full: Ich hoffe, dass morgen das Wetter schön ist. ; Dass das Wetter morgen schön ist, hoffe ich.
+Ich glaube, [dass] [das] Kind Hunger hat. | فکر می‌کنم که بچه گرسنه است. | d: das, denn, und / dass, der, den | full: Dass das Kind Hunger hat, glaube ich.
+Es ist gut, [dass] [das] Restaurant offen ist. | خوب است که رستوران باز است. | d: das, denn, dann / dass, der, die
+Ich glaube, [dass] er nicht kommt, [weil] er krank ist. | فکر می‌کنم که نمی‌آید، چون مریض است. | d: das, denn, und / das, denn, dann
+Anna sagt, [dass] sie morgen [anruft]{anrufen}. | آنا می‌گوید که فردا زنگ می‌زند. | d: das, denn, dann / ruft an, anrufen, anrufst | full: Dass sie morgen anruft, sagt Anna.
+Es ist schön, [dass] ihr uns [besucht habt]. | خیلی خوب است که به دیدن ما آمدید. | d: das, denn, und / habt besucht, besucht seid, gebesucht habt
+Ich hoffe, [dass] wir [uns] bald treffen. | امیدوارم به‌زودی همدیگر را ببینیم. | d: das, denn, dann / sich, ihnen, wir | full: Dass wir uns bald treffen, hoffe ich.
+Der Chef sagt, [dass] ich am Montag [anfangen kann]. | رئیس می‌گوید که می‌توانم دوشنبه شروع کنم. | d: das, denn, dann / kann anfangen, anfangen können, anfangen kannst | full: Dass ich am Montag anfangen kann, sagt der Chef.
+transforms:
+Max ist krank. => Ich glaube, dass Max krank ist. | جمله را با «Ich glaube, dass …» بنویس.
+Du kommst morgen. => Ich hoffe, dass du morgen kommst. | جمله را با «Ich hoffe, dass …» بنویس.
+Der Zug kommt um 8 Uhr an. => Ich weiß, dass der Zug um 8 Uhr ankommt{ankommen}. | جمله را با «Ich weiß, dass …» بنویس.
+Ich kann nicht kommen. => Anna sagt, dass sie nicht kommen kann. | جمله را با «Anna sagt, dass …» بنویس.
+Du bist pünktlich. => Es ist wichtig, dass du pünktlich bist. | جمله را با «Es ist wichtig, dass …» بنویس.
+Er hat den Film gesehen. => Ich glaube, dass er den Film gesehen hat. | جمله را با «Ich glaube, dass …» بنویس.
+Ich glaube, Lena ist müde. => Ich glaube, dass Lena müde ist. | جمله را با dass بنویس.
+Wir treffen uns am Freitag. => Ich hoffe, dass wir uns am Freitag treffen. | جمله را با «Ich hoffe, dass …» بنویس.
+translations:
+می‌دانم که خسته‌ای. => Ich weiß, dass du müde bist. ; Ich weiß, du bist müde. ; Dass du müde bist, weiß ich.
+امیدوارم که به‌زودی بیایی. => Ich hoffe, dass du bald kommst. ; Ich hoffe, du kommst bald. ; Hoffentlich kommst du bald. ; Dass du bald kommst, hoffe ich.
+مهم است که آلمانی یاد بگیری. => Es ist wichtig, dass du Deutsch lernst. ; Wichtig ist, dass du Deutsch lernst. ; Dass du Deutsch lernst, ist wichtig.
+حیف است که باران می‌آید. => Es ist schade, dass es regnet. ; Schade, dass es regnet. ; Dass es regnet, ist schade.
+می‌دانی که پاول فارسی حرف می‌زند؟ => Weißt du, dass Paul Persisch spricht?
+شنیده‌ام که آنا مریض است. => Ich habe gehört, dass Anna krank ist. ; Ich habe gehört, Anna ist krank. ; Dass Anna krank ist, habe ich gehört.
+پدرم می‌گوید که باید کار کنم. => Mein Vater sagt, dass ich arbeiten muss. ; Mein Vater sagt, ich muss arbeiten. ; Dass ich arbeiten muss, sagt mein Vater.
+ماکس می‌گوید که فردا می‌آید. => Max sagt, dass er morgen kommt. ; Max sagt, er kommt morgen. ; Dass er morgen kommt, sagt Max.

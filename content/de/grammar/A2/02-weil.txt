@@ -1,0 +1,85 @@
+code: de-a2-weil
+title: weil: «چون» با فعل در آخر جمله
+scope: جمله weil برای گفتن دلیل، با ویرگول پیش از weil و فعل صرف‌شده در آخر جمله: با فعل وجهی (weil ich arbeiten muss)، با Perfekt و war/hatte (weil ich krank gewesen bin، weil ich keine Zeit hatte)، با فعل جداشدنی سر هم (weil der Zug um 8 Uhr ankommt)، و جواب کوتاه Warum? – Weil …؛ جمله weil در اول جمله فقط کمی می‌آید و در واحد wenn کامل تمرین می‌شود.
+can_do: حالا می‌توانی دلیل کارهایت را بگویی و به «چرا؟» جواب بدهی: «Ich bleibe zu Hause, weil ich krank bin.»
+rule: weil یعنی «چون»؛ پیش از آن ویرگول می‌آید و فعل صرف‌شده به آخر جمله می‌رود: …, weil ich müde bin. / …, weil ich arbeiten muss. / …, weil der Zug um 8 Uhr ankommt.
+mistake: در فارسی بعد از «چون» ترتیب جمله عوض نمی‌شود، برای همین فارسی‌زبان‌ها بعد از weil همان ترتیب جمله معمولی را می‌گذارند: «weil ich bin müde» و «weil der Zug kommt um 8 Uhr an» در آلمانی معیار غلط است؛ درست: weil ich müde bin، weil der Zug um 8 Uhr ankommt.
+lesson:
+weil یعنی «چون» و دلیل چیزی را می‌گوید: Ich bleibe zu Hause, weil ich krank bin. یعنی «در خانه می‌مانم، چون مریضم».
+جمله‌ای که با weil شروع می‌شود تنهایی کامل نیست و به جمله اصلی وصل است. به آن جمله وابسته می‌گویند. پیش از weil همیشه ویرگول می‌آید.
+مهم‌ترین قاعده: در جمله weil فعل صرف‌شده به آخرِ جمله می‌رود: Ich bin müde. ← …, weil ich müde bin.
+
+اگر فعل دوتکه باشد، فعل صرف‌شده بعد از تکه دیگر و آخرِ آخر می‌آید: weil ich arbeiten muss، weil ich schlecht geschlafen habe، weil ich krank gewesen bin.
+فعل جداشدنی در جمله weil جدا نمی‌شود: Der Zug kommt um 8 Uhr an. ← …, weil der Zug um 8 Uhr ankommt.
+جواب کوتاه به Warum? (چرا؟) با Weil شروع می‌شود: Warum lernst du Deutsch? – Weil ich in Wien studieren will.
+جمله weil می‌تواند اول هم بیاید؛ آن‌وقت جمله اصلی با فعل شروع می‌شود: Weil es regnet, bleiben wir zu Hause. این را در واحد wenn بیشتر تمرین می‌کنی.
+table:
+جمله معمولی | با weil
+Ich bin müde. | …, weil ich müde bin.
+Ich muss arbeiten. | …, weil ich arbeiten muss.
+Ich habe schlecht geschlafen. | …, weil ich schlecht geschlafen habe.
+Der Zug kommt um 8 Uhr an. | …, weil der Zug um 8 Uhr ankommt.
+examples:
+Ich lerne Deutsch, weil ich in Wien studieren will. | من آلمانی یاد می‌گیرم، چون می‌خواهم در وین درس بخوانم.
+Warum bist du müde? – Weil ich schlecht geschlafen habe. | چرا خسته‌ای؟ – چون بد خوابیدم.
+Wir nehmen ein Taxi, weil der Bus nicht kommt. | تاکسی می‌گیریم، چون اتوبوس نمی‌آید.
+Weil es regnet, bleiben wir zu Hause. | چون باران می‌آید، در خانه می‌مانیم.
+targets:
+Ich bleibe zu Hause, [weil] ich krank bin. | در خانه می‌مانم، چون مریضم. | d: denn, und, aber | full: Weil ich krank bin, bleibe ich zu Hause. ; Zu Hause bleibe ich, weil ich krank bin.
+Ich spare Geld, [weil] ich ein Auto kaufen will. | پول پس‌انداز می‌کنم، چون می‌خواهم یک ماشین بخرم. | d: denn, dann, und | full: Weil ich ein Auto kaufen will, spare ich Geld.
+Wir fahren mit dem Bus, [weil] unser Auto kaputt ist. | ما با اتوبوس می‌رویم، چون ماشینمان خراب است. | d: denn, aber, oder | full: Weil unser Auto kaputt ist, fahren wir mit dem Bus. ; Mit dem Bus fahren wir, weil unser Auto kaputt ist.
+Warum isst du nichts? – [Weil] ich keinen Hunger habe. | چرا چیزی نمی‌خوری؟ – چون گرسنه نیستم. | d: Denn, Dann, Und
+Lena ist traurig, [weil] ihre{ihr-det} Katze krank ist. | لنا ناراحت است، چون گربه‌اش مریض است. | d: denn, aber, und | full: Weil ihre Katze krank ist, ist Lena traurig.
+Er geht früh ins Bett, [weil] er um 5 Uhr aufstehen muss. | او زود به رختخواب می‌رود، چون باید ساعت پنج بیدار شود. | d: denn, und, dann | full: Weil er um 5 Uhr aufstehen muss, geht er früh ins Bett.
+Ich schreibe dir eine E-Mail, [weil] ich eine Frage habe. | برایت ایمیل می‌نویسم، چون یک سؤال دارم. | d: denn, und, oder | full: Weil ich eine Frage habe, schreibe ich dir eine E-Mail.
+Sara kommt nicht mit, [weil] sie arbeiten muss. | سارا با ما نمی‌آید، چون باید کار کند. | d: denn, aber, dann | full: Weil sie arbeiten muss, kommt Sara nicht mit. ; Weil Sara arbeiten muss, kommt sie nicht mit.
+Warum kommt ihr nicht? – [Weil] wir keine Zeit haben. | چرا نمی‌آیید؟ – چون وقت نداریم. | d: Denn, Und, Dann
+Warum weinst du? – [Weil] ich meinen Schlüssel verloren habe. | چرا گریه می‌کنی؟ – چون کلیدم را گم کرده‌ام. | d: Denn, Aber, Dann
+Warum sprichst du so gut Persisch? – [Weil] meine Eltern aus Iran kommen. | چرا این‌قدر خوب فارسی حرف می‌زنی؟ – چون پدر و مادرم اهل ایران‌اند. | d: Denn, Aber, Oder
+Ich koche nicht, [weil] wir im Restaurant essen. | من آشپزی نمی‌کنم، چون در رستوران غذا می‌خوریم. | d: denn, und, dann | full: Weil wir im Restaurant essen, koche ich nicht.
+Wir essen im Restaurant, [weil] der Kühlschrank leer ist. | ما در رستوران غذا می‌خوریم، چون یخچال خالی است. | d: denn, aber, dann | full: Weil der Kühlschrank leer ist, essen wir im Restaurant. ; Im Restaurant essen wir, weil der Kühlschrank leer ist.
+Ich mache das Fenster auf, [weil] es so warm ist. | پنجره را باز می‌کنم، چون خیلی گرم است. | d: denn, aber, oder | full: Weil es so warm ist, mache ich das Fenster auf.
+Ich kann nicht kommen, weil ich Hausaufgaben [machen muss]. | نمی‌توانم بیایم، چون باید تکلیف‌هایم را انجام بدهم. | d: muss machen, machen müssen, machen musst | full: Weil ich Hausaufgaben machen muss, kann ich nicht kommen. | hint: (müssen)
+Max ist müde, weil er nicht gut [geschlafen hat]. | ماکس خسته است، چون خوب نخوابیده است. | d: hat geschlafen, geschlafen ist, geschlaft hat | full: Weil er nicht gut geschlafen hat, ist Max müde. ; Weil Max nicht gut geschlafen hat, ist er müde.
+Wir müssen uns beeilen, weil der Zug um 8 Uhr [abfährt]{abfahren}. | باید عجله کنیم، چون قطار ساعت هشت حرکت می‌کند. | d: fährt ab, abfahren, abfährst | full: Weil der Zug um 8 Uhr abfährt, müssen wir uns beeilen. | hint: (abfahren)
+Ich rufe dich später an, weil ich jetzt [einkaufe]{einkaufen}. | بعداً به تو زنگ می‌زنم، چون الان دارم خرید می‌کنم. | d: kaufe ein, einkaufen, einkauft | full: Weil ich jetzt einkaufe, rufe ich dich später an. | hint: (einkaufen)
+Anna ist glücklich, weil sie die Prüfung [bestanden hat]. | آنا خوشحال است، چون در امتحان قبول شده است. | d: hat bestanden, bestanden ist, gebestanden hat | full: Weil sie die Prüfung bestanden hat, ist Anna glücklich. ; Weil Anna die Prüfung bestanden hat, ist sie glücklich.
+Ich bin nicht zum Kurs gekommen, weil ich krank [gewesen bin]. | به کلاس نیامدم، چون مریض بودم. | d: bin gewesen, gewesen habe, gewesen hat | ok: war | full: Weil ich krank gewesen bin, bin ich nicht zum Kurs gekommen.
+Weil es kalt ist, [trinken wir] einen Tee. | چون هوا سرد است، یک چای می‌نوشیم. | d: wir trinken, trinkt wir, wir trinkt | full: Wir trinken einen Tee, weil es kalt ist.
+Weil ich keine Zeit hatte, [habe ich] nicht gekocht. | چون وقت نداشتم، آشپزی نکردم. | d: ich habe, hat ich, ich hat | full: Ich habe nicht gekocht, weil ich keine Zeit hatte.
+Ich nehme ein Taxi, weil ich mich [beeilen muss]. | تاکسی می‌گیرم، چون باید عجله کنم. | d: muss beeilen, beeilen müssen, beeilen musst | full: Weil ich mich beeilen muss, nehme ich ein Taxi. | hint: (müssen)
+Mia ist wütend, weil ihr{ihr-det} Bruder ihr{ihr-det} Handy [genommen hat]. | میا عصبانی است، چون برادرش گوشی‌اش را برداشته است. | d: hat genommen, genommen ist, genehmt hat | full: Weil ihr Bruder ihr Handy genommen hat, ist Mia wütend.
+Wir warten am Bahnhof, weil Oma um 10 Uhr [ankommt]{ankommen}. | ما در ایستگاه قطار منتظریم، چون مادربزرگ ساعت ده می‌رسد. | d: kommt an, ankommen, ankommst | full: Weil Oma um 10 Uhr ankommt, warten wir am Bahnhof. ; Am Bahnhof warten wir, weil Oma um 10 Uhr ankommt. | hint: (ankommen)
+Ich gehe zur Apotheke, weil ich Tabletten [kaufen muss]. | به داروخانه می‌روم، چون باید قرص بخرم. | d: muss kaufen, kaufen müssen, kaufen musst | full: Weil ich Tabletten kaufen muss, gehe ich zur Apotheke.
+Tim ist traurig, weil er nicht Fußball [spielen darf]. | تیم ناراحت است، چون اجازه ندارد فوتبال بازی کند. | d: darf spielen, spielen dürfen, spielen darfst | full: Weil er nicht Fußball spielen darf, ist Tim traurig. ; Weil Tim nicht Fußball spielen darf, ist er traurig. | hint: (dürfen)
+Wir fahren nach Berlin, weil wir unsere Freunde [besuchen wollen]. | ما به برلین می‌رویم، چون می‌خواهیم دوستانمان را ببینیم. | d: wollen besuchen, besuchen will, besuchen wollt | full: Weil wir unsere Freunde besuchen wollen, fahren wir nach Berlin. ; Nach Berlin fahren wir, weil wir unsere Freunde besuchen wollen. | hint: (wollen)
+Ich frage den Lehrer, weil ich das Wort nicht [verstehen kann]. | از معلم می‌پرسم، چون نمی‌توانم این کلمه را بفهمم. | d: kann verstehen, verstehen können, verstehen kannst | full: Weil ich das Wort nicht verstehen kann, frage ich den Lehrer.
+Lena ist müde, weil sie lange [gelaufen ist]. | لنا خسته است، چون مدت زیادی دویده است. | d: ist gelaufen, gelaufen hat, gelauft ist | full: Weil sie lange gelaufen ist, ist Lena müde. ; Weil Lena lange gelaufen ist, ist sie müde.
+Ich bin müde, weil ich um 5 Uhr [aufgestanden bin]. | خسته‌ام، چون ساعت پنج بیدار شدم. | d: bin aufgestanden, aufgestanden habe, geaufstanden bin | full: Weil ich um 5 Uhr aufgestanden bin, bin ich müde.
+Weil es draußen regnet, [spielen die Kinder] im Haus. | چون بیرون باران می‌آید، بچه‌ها توی خانه بازی می‌کنند. | d: die Kinder spielen, spielt die Kinder, die Kinder spielt | full: Die Kinder spielen im Haus, weil es draußen regnet. ; Im Haus spielen die Kinder, weil es draußen regnet.
+Ich habe Hunger, [weil] ich nicht [gefrühstückt habe]. | گرسنه‌ام، چون صبحانه نخورده‌ام. | d: denn, und, aber / habe gefrühstückt, gefrühstückt bin, gefrühstückt hat | full: Weil ich nicht gefrühstückt habe, habe ich Hunger.
+Wir sind nicht gekommen, [weil] der Bus nicht [gefahren ist]. | ما نیامدیم، چون اتوبوس حرکت نکرد. | d: denn, dann, oder / ist gefahren, gefahren hat, gefahrt ist | full: Weil der Bus nicht gefahren ist, sind wir nicht gekommen.
+Warum hast du nicht angerufen? – [Weil] ich mein Handy [vergessen habe]. | چرا زنگ نزدی؟ – چون گوشی‌ام را جا گذاشتم. | d: Denn, Und, Dann / habe vergessen, vergessen bin, gevergessen habe
+[Weil] ich krank war, [bin ich] zu Hause geblieben. | چون مریض بودم، در خانه ماندم. | d: Denn, Und, Aber / ich bin, ich habe, habe ich | full: Ich bin zu Hause geblieben, weil ich krank war. ; Zu Hause bin ich geblieben, weil ich krank war.
+Ich gehe zum Arzt, [weil] mir der Kopf [wehtut]{wehtun}. | پیش دکتر می‌روم، چون سرم درد می‌کند. | d: denn, und, dann / tut weh, wehtun, wehtust | full: Weil mir der Kopf wehtut, gehe ich zum Arzt. ; Ich gehe zum Arzt, weil der Kopf mir wehtut. ; Weil der Kopf mir wehtut, gehe ich zum Arzt.
+[Warum] bist du traurig? – [Weil] mein Freund nach Hamburg umgezogen ist. | چرا ناراحتی؟ – چون دوستم به هامبورگ اسباب‌کشی کرده است. | d: Weil, Denn, Dass / Denn, Und, Dann | ok: Wieso / Weil
+[Weil] Oma kommt, freuen wir [uns]. | چون مادربزرگ می‌آید، خوشحالیم. | d: Denn, Dann, Aber / sich, ihnen, mir | full: Wir freuen uns, weil Oma kommt.
+Ich stehe früh auf, [weil] mein Kurs um 8 Uhr [anfängt]{anfangen}. | زود بیدار می‌شوم، چون کلاسم ساعت هشت شروع می‌شود. | d: denn, und, aber / fängt an, anfangen, anfängst | full: Weil mein Kurs um 8 Uhr anfängt, stehe ich früh auf.
+transforms:
+Ich bin krank. => Weil ich krank bin. | جواب «Warum?» را با Weil بنویس.
+Ich muss arbeiten. => Weil ich arbeiten muss. | جواب «Warum?» را با Weil بنویس.
+Der Zug kommt um 8 Uhr an. => Weil der Zug um 8 Uhr ankommt{ankommen}. | جواب «Warum?» را با Weil بنویس.
+Ich habe schlecht geschlafen. => Weil ich schlecht geschlafen habe. | جواب «Warum?» را با Weil بنویس.
+Ich beeile mich. => Weil ich mich beeile. | جواب «Warum?» را با Weil بنویس.
+Ich nehme den Bus. Mein Fahrrad ist kaputt. => Ich nehme den Bus, weil mein Fahrrad kaputt ist. ; Weil mein Fahrrad kaputt ist, nehme ich den Bus. | دو جمله را با weil وصل کن.
+Wir gehen nicht schwimmen. Es ist kalt. => Wir gehen nicht schwimmen, weil es kalt ist. ; Weil es kalt ist, gehen wir nicht schwimmen. | دو جمله را با weil وصل کن.
+Wir essen im Restaurant, weil wir keine Zeit haben. => Weil wir keine Zeit haben, essen wir im Restaurant. | جمله weil را اول بیاور.
+translations:
+چون خسته‌ام. => Weil ich müde bin.
+چون وقت ندارم. => Weil ich keine Zeit habe.
+چون دیروز مریض بودم. => Weil ich gestern krank war. ; Weil ich gestern krank gewesen bin.
+چون باید عجله کنیم. => Weil wir uns beeilen müssen.
+چون فردا زود بیدار می‌شوم. => Weil ich morgen früh aufstehe{aufstehen}.
+چون باید کار کنم. => Weil ich arbeiten muss.
+در خانه می‌مانم، چون باران می‌آید. => Ich bleibe zu Hause, weil es regnet. ; Weil es regnet, bleibe ich zu Hause. ; Ich bleibe zu Hause, denn es regnet. ; Zu Hause bleibe ich, weil es regnet. ; Zu Hause bleibe ich, denn es regnet.
+لنا نمی‌آید، چون مریض است. => Lena kommt nicht, weil sie krank ist. ; Weil Lena krank ist, kommt sie nicht. ; Weil sie krank ist, kommt Lena nicht. ; Lena kommt nicht, denn sie ist krank.

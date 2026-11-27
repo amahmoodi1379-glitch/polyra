@@ -1,0 +1,34 @@
+code: fr-a2-d019
+title: دفتر اطلاعات گردشگری
+situation: در دفتر اطلاعات گردشگری شهر لیون هستی و برای یک روز گردش در شهر راهنمایی می‌خواهی.
+turns:
+B: Bonjour ! Bienvenue à Lyon ! Qu'est-ce que vous cherchez ? | سلام! به لیون خوش آمدید! دنبال چه می‌گردید؟
+- Au revoir ! Vous avez un plan de la ville, s'il vous plaît ? | خداحافظ! نقشه شهر دارید، لطفاً؟
++ Bonjour ! Vous avez un plan de la ville, s'il vous plaît ? | سلام! نقشه شهر دارید، لطفاً؟
+- Bonjour ! Vous avez une plan de la ville, s'il vous plaît ? | سلام! نقشه شهر دارید، لطفاً؟
+why: اول گفتگو «Bonjour» می‌گوییم، نه «Au revoir». plan مذکر است: «un plan».
+B: Oui, voilà. Il est gratuit. Vous restez combien de temps à Lyon ? | بله، بفرمایید. رایگان است. چه مدت در لیون می‌مانید؟
++ Juste une journée. Qu'est-ce que je peux visiter ? | فقط یک روز. چه جاهایی را می‌توانم ببینم؟
+- Juste un journée. Qu'est-ce que je peux visiter ? | فقط یک روز. چه جاهایی را می‌توانم ببینم؟
+- Depuis une journée. Qu'est-ce que je peux visiter ? | از یک روز پیش. چه جاهایی را می‌توانم ببینم؟
+why: journée مؤنث است: «une journée». depuis برای چیزی است که از گذشته شروع شده؛ اینجا مدت ماندن در آینده را می‌گویی.
+B: La vieille ville est magnifique. Il y a aussi un grand musée d'art moderne, à côté du{du-contr} fleuve. | شهر قدیمی خیلی زیباست. یک موزه بزرگ هنر مدرن هم کنار رودخانه هست.
+- Super ! La musée est ouverte{ouvert} aujourd'hui ? | عالی! موزه امروز باز است؟
+- Super ! Le musée est ouvert{ouvert} hier ? | عالی! موزه دیروز باز است؟
++ Super ! Le musée est ouvert{ouvert} aujourd'hui ? | عالی! موزه امروز باز است؟
+why: musée مذکر است: «le musée est ouvert». «est» زمان حال است و با hier (دیروز) جور نیست.
+B: Non, malheureusement, il est fermé{fermé} le lundi. Mais il y a une visite de la vieille ville avec un guide, à quatorze heures. | نه، متأسفانه دوشنبه‌ها بسته است. ولی ساعت دو بعدازظهر گشتی در شهر قدیمی با راهنما هست.
+- Avec un guide ? Je m'intéresse ! C'est{être} combien ? | با راهنما؟ برایم جالب است! چقدر است؟
++ Avec un guide ? Ça m'intéresse ! C'est{être} combien ? | با راهنما؟ برایم جالب است! چقدر است؟
+- Avec un guide ? Non, merci ! C'est{être} combien ? | با راهنما؟ نه، ممنون! چقدر است؟
+why: «Ça m'intéresse» یعنی «برایم جالب است»؛ «Je m'intéresse» تنها ناقص است. اگر نمی‌خواهی، قیمتش را نمی‌پرسی.
+B: Douze euros. Le départ est ici, devant notre bureau. | دوازده یورو. حرکت از همین‌جاست، جلوی دفتر ما.
++ Très bien, je reviens ici à quatorze heures. | خیلی خوب، ساعت دو بعدازظهر اینجا برمی‌گردم.
+- Très bien, je reviens ici dans quatorze heures. | خیلی خوب، چهارده ساعت دیگر اینجا برمی‌گردم.
+- Très bien, je revenir ici à quatorze heures. | خیلی خوب، ساعت دو بعدازظهر اینجا برمی‌گردم.
+why: ساعت را با à می‌گوییم: «à quatorze heures»؛ «dans quatorze heures» یعنی چهارده ساعت دیگر. فعل باید صرف شود: «je reviens».
+B: Et pour déjeuner, il y a de bons restaurants près du{du-contr} fleuve. Bonne journée ! | برای ناهار هم چند رستوران خوب نزدیک رودخانه هست. روز خوبی داشته باشید!
+- Merci pour rien ! Au revoir ! | بابت هیچ‌چیز ممنون! خداحافظ!
+- Merci pour tout ! Bienvenue ! | بابت همه‌چیز ممنون! خوش آمدید!
++ Merci pour tout ! Au revoir ! | بابت همه‌چیز ممنون! خداحافظ!
+why: «Merci pour tout» یعنی «بابت همه‌چیز ممنون». «Merci pour rien» بی‌ادبانه است. «Bienvenue» را کسی می‌گوید که از مهمان استقبال می‌کند، نه کسی که می‌رود.

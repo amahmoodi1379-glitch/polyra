@@ -1,0 +1,34 @@
+code: fr-a2-d009
+title: دعوت دوست به مهمانی
+situation: دوستت لوکا را در دانشگاه می‌بینی. می‌خواهی او را به جشن تولدت دعوت کنی.
+turns:
+B: Salut ! Ça va ? Qu'est-ce que tu fais ce week-end ? | سلام! خوبی؟ این آخر هفته چه کار می‌کنی؟
++ Samedi, c'est{être} mon anniversaire ! Je fais une petite fête chez moi. Tu veux venir ? | شنبه تولدم است! در خانه یک جشن کوچک می‌گیرم. می‌خواهی بیایی؟
+- Samedi, c'est{être} mon anniversaire ! Je fais un petit fête chez moi. Tu veux venir ? | شنبه تولدم است! در خانه یک جشن کوچک می‌گیرم. می‌خواهی بیایی؟
+- Samedi, c'est{être} ton anniversaire ! Je fais une petite fête chez moi. Tu veux venir ? | شنبه تولد توست! در خانه یک جشن کوچک می‌گیرم. می‌خواهی بیایی؟
+why: fête مؤنث است: «une petite fête». تولد خودت است، پس «mon anniversaire»، نه «ton».
+B: Super ! Avec plaisir. C'est{être} à quelle heure ? | عالی! با کمال میل. ساعت چند است؟
+- Chez moi, dans mon appartement. | خانه‌ام، در آپارتمانم.
++ Vers sept heures. Tu peux venir avec ta sœur, si tu veux. | حدود ساعت هفت. اگر بخواهی، می‌توانی با خواهرت بیایی.
+- Vers sept heures. Tu peux venir avec ton sœur, si tu veux. | حدود ساعت هفت. اگر بخواهی، می‌توانی با خواهرت بیایی.
+why: سؤال «ساعت چند؟» است، نه «کجا؟». sœur مؤنث است و پیش از آن ta می‌آید.
+B: Merci, c'est{être} gentil ! J'apporte quelque chose ? | ممنون، لطف داری! چیزی بیاورم؟
+- Personne ! Ma mère fait un grand gâteau. | هیچ‌کس! مادرم یک کیک بزرگ درست می‌کند.
+- Rien du{du-contr} tout ! Ma mère fait une grande gâteau. | هیچ‌چیز! مادرم یک کیک بزرگ درست می‌کند.
++ Rien du{du-contr} tout ! Ma mère fait un grand gâteau. | هیچ‌چیز! مادرم یک کیک بزرگ درست می‌کند.
+why: برای چیز rien می‌گوییم و برای آدم personne. gâteau مذکر است: «un grand gâteau».
+B: Génial ! Et tu habites où, déjà ? | عالی! راستی، کجا زندگی می‌کنی؟
+- À côté de le parc. Je t'envoie l'adresse par message. | کنار پارک. آدرس را برایت پیام می‌دهم.
++ À côté du{du-contr} parc. Je t'envoie l'adresse par message. | کنار پارک. آدرس را برایت پیام می‌دهم.
+- À côté du{du-contr} parc. Je te envoie l'adresse par message. | کنار پارک. آدرس را برایت پیام می‌دهم.
+why: de و le با هم du می‌شوند: «à côté du parc». پیش از واکه te می‌شود t': «je t'envoie».
+B: Ah, attends ! Samedi, je travaille jusqu'à huit heures. Je peux arriver un peu en retard ? | آه، صبر کن! شنبه تا ساعت هشت کار می‌کنم. می‌توانم کمی دیر بیایم؟
+- Bien sûr, ce n'est pas grave ! Je viens quand je peux. | البته، مهم نیست! هر وقت بتوانم می‌آیم.
+- Bien sûr, monsieur, ce n'est pas grave ! Viens quand tu peux. | البته، آقا، مهم نیست! هر وقت توانستی بیا.
++ Bien sûr, ce n'est pas grave ! Viens quand tu peux. | البته، مهم نیست! هر وقت توانستی بیا.
+why: «Viens quand tu peux» یعنی «هر وقت توانستی بیا». «Je viens» درباره خودت است، و به دوست monsieur نمی‌گوییم.
+B: Merci ! Alors, à samedi, et merci pour l'invitation ! | ممنون! پس تا شنبه، و ممنون بابت دعوت!
++ De rien ! À samedi ! | خواهش می‌کنم! تا شنبه!
+- De rien ! Bon anniversaire ! | خواهش می‌کنم! تولدت مبارک!
+- De rien ! Au samedi ! | خواهش می‌کنم! تا شنبه!
+why: تولدِ خودت است، پس به لوکا «Bon anniversaire» نمی‌گوییم. برای «تا شنبه» à می‌آید، نه au: «À samedi».

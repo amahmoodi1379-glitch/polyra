@@ -1,0 +1,29 @@
+code: fr-a2-d006
+title: هتل: مشکل اتاق
+situation: در اتاق هتل هستی و آب گرم نیست. به پذیرش هتل زنگ می‌زنی.
+turns:
+B: Allô, bonjour ! Je vous écoute. | الو، سلام! بفرمایید.
++ Bonjour ! Il n'y a pas d'eau chaude dans ma salle de bain. | سلام! در حمام اتاقم آب گرم نیست.
+- Bonjour ! Il n'y a pas de l'eau chaude dans ma salle de bain. | سلام! در حمام اتاقم آب گرم نیست.
+- Salut ! Il n'y a pas d'eau chaude dans ma salle de bain. | سلام! در حمام اتاقم آب گرم نیست.
+why: بعد از «il n'y a pas» فقط de می‌آید: «pas d'eau». با کارمند هتل Salut نمی‌گوییم.
+B: Oh, je suis{être} désolée. C'est{être} quelle chambre ? | اوه، متأسفم. کدام اتاق؟
+- C'est{être} le chambre vingt-quatre, au deuxième étage. | اتاق بیست‌وچهار، طبقه دوم.
++ C'est{être} la chambre vingt-quatre, au deuxième étage. | اتاق بیست‌وچهار، طبقه دوم.
+- Je m'appelle Sara Karimi. | اسمم سارا کریمی است.
+why: chambre مؤنث است: «la chambre». کارمند شماره اتاق را پرسید، نه اسمت را.
+B: D'accord. Je vais envoyer quelqu'un, mais dans une heure. | باشد. کسی را می‌فرستم، ولی یک ساعت دیگر.
+- Dans une heure ? C'est{être} long. Je peux changer la chambre ? | یک ساعت دیگر؟ زیاد است. می‌توانم خودِ اتاق را تغییر بدهم؟
+- Dans une heure ? C'est{être} court. Je peux changer de chambre ? | یک ساعت دیگر؟ کم است. می‌توانم اتاقم را عوض کنم؟
++ Dans une heure ? C'est{être} long. Je peux changer de chambre ? | یک ساعت دیگر؟ زیاد است. می‌توانم اتاقم را عوض کنم؟
+why: برای عوض کردن اتاق «changer de chambre» می‌گوییم؛ «changer la chambre» یعنی خودِ اتاق را تغییر دادن. یک ساعت بی‌آب‌گرم زیاد است، نه کم.
+B: Oui, bien sûr. J'ai une chambre au premier étage, mais elle est un peu plus petite. | بله، حتماً. یک اتاق در طبقه اول دارم، ولی کمی کوچک‌تر است.
++ Ce n'est pas grave. Il y a de l'eau chaude, au moins ? | مهم نیست. حداقل آب گرم دارد؟
+- Ce n'est pas grave. Il y a du eau chaude, au moins ? | مهم نیست. حداقل آب گرم دارد؟
+- Ce n'est pas grave. Elle est plus{plus} grande, alors ? | مهم نیست. پس بزرگ‌تر است؟
+why: eau مؤنث است و با واکه شروع می‌شود، پس «de l'eau». کارمند گفت اتاق کوچک‌تر است، نه بزرگ‌تر.
+B: Oui, pas de problème. Venez chercher la nouvelle clé en bas. | بله، مشکلی نیست. بیایید پایین و کلید جدید را بگیرید.
+- D'accord, je monte tout de suite. Merci ! | باشد، همین الان بالا می‌آیم. ممنون!
++ D'accord, je descends tout de suite. Merci ! | باشد، همین الان پایین می‌آیم. ممنون!
+- D'accord, je descends tout à coup. Merci ! | باشد، ناگهان پایین می‌آیم. ممنون!
+why: پذیرش پایین است، پس «je descends». «tout de suite» یعنی «همین الان»، ولی «tout à coup» یعنی «ناگهان».

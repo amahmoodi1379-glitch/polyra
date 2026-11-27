@@ -1,0 +1,106 @@
+code: fr-a2-futur-irreguliers
+title: آیندهٔ بی‌قاعده: je serai، j'aurai، j'irai، je ferai
+scope: ریشه‌های بی‌قاعدهٔ futur simple: être → ser-، avoir → aur-، aller → ir-، faire → fer-، venir → viendr-، pouvoir → pourr-، vouloir → voudr-، devoir → devr-، voir → verr-، savoir → saur-، il faudra، il pleuvra، il y aura؛ و فعل‌های -er با ریشهٔ عوض‌شده (j'achèterai، j'appellerai، j'enverrai، je me lèverai)؛ پایانه‌ها همان واحد قبل‌اند.
+can_do: حالا می‌توانی با پرکاربردترین فعل‌ها دربارهٔ آینده حرف بزنی: Demain, il fera beau. Je serai à Paris. Nous irons au cinéma. Tu pourras venir ?
+rule: پایانه‌ها همان -ai، -as، -a، -ons، -ez، -ont‌اند، ولی ریشه بی‌قاعده است: serai، aurai، irai، ferai، viendrai، pourrai، voudrai، devrai، verrai، saurai؛ il faudra، il pleuvra؛ j'achèterai، j'appellerai، j'enverrai.
+mistake: فارسی‌زبان‌ها قاعدهٔ واحد قبل را روی همهٔ فعل‌ها پیاده می‌کنند و آینده را از مصدر می‌سازند («j'allerai»، «je pouvoirai»، «j'avoirai»)؛ درست: j'irai، je pourrai، j'aurai. در acheter و appeler هم تغییر ریشه را فراموش می‌کنند («j'acheterai»، «j'appelerai»)؛ درست: j'achèterai، j'appellerai.
+tables: futur simple | irregular
+tables: futur simple | acheter
+tables: futur simple | appeler
+tables: futur simple | rappeler
+tables: futur simple | envoyer
+tables: futur simple | jeter
+tables: futur simple | se lever
+tables: futur simple | se promener
+tables: futur simple | enlever
+tables: futur simple | emmener
+tables: futur simple | amener
+tables: futur simple | nettoyer
+tables: futur simple | s'ennuyer
+lesson:
+بعضی فعل‌های خیلی رایج در futur simple ریشهٔ بی‌قاعده دارند. پایانه‌ها همان‌اند: -ai، -as، -a، -ons، -ez، -ont.
+مهم‌ترین‌ها: être → je serai، avoir → j'aurai، aller → j'irai، faire → je ferai.
+بعد: venir → je viendrai، pouvoir → je pourrai، vouloir → je voudrai، devoir → je devrai، voir → je verrai، savoir → je saurai.
+فعل‌هایی که از این‌ها ساخته شده‌اند همان ریشه را دارند: revenir → je reviendrai، devenir → je deviendrai، revoir → je reverrai.
+سه شکل فقط با il می‌آیند: il faut → il faudra (لازم خواهد بود)، il pleut → il pleuvra (باران خواهد آمد)، il y a → il y aura (… خواهد بود).
+چند فعل -er ریشه‌شان را مثل زمان حال عوض می‌کنند (j'achète، j'appelle): acheter → j'achèterai، appeler → j'appellerai، se lever → je me lèverai، se promener → je me promènerai، jeter → je jetterai. envoyer هم بی‌قاعده است: j'enverrai.
+نکته: ریشهٔ futur همیشه به r ختم می‌شود: ser-، aur-، ir-، fer-، pourr-.
+table:
+مصدر | je | nous
+être | serai | serons
+avoir | aurai | aurons
+aller | irai | irons
+faire | ferai | ferons
+venir | viendrai | viendrons
+pouvoir | pourrai | pourrons
+vouloir | voudrai | voudrons
+devoir | devrai | devrons
+voir | verrai | verrons
+savoir | saurai | saurons
+acheter | achèterai | achèterons
+appeler | appellerai | appellerons
+envoyer | enverrai | enverrons
+examples:
+Demain, il fera beau. | فردا هوا خوب خواهد بود.
+Je serai à Paris la semaine prochaine. | هفتهٔ آینده در پاریس خواهم بود.
+Nous irons au cinéma samedi. | شنبه به سینما خواهیم رفت.
+Tu pourras venir avec nous ? | خواهی توانست با ما بیایی؟
+targets:
+Demain, il [fera] froid. | فردا هوا سرد خواهد بود. | d: faira, fairra, feras | hint: (faire) | full: Il fera froid demain.
+Je [serai] à la maison à six heures. | ساعت شش خانه خواهم بود. | d: êtrai, sera, seras | hint: (être) | full: À six heures, je serai à la maison.
+Tu [seras] fatigué demain. | فردا خسته خواهی بود. | d: êtras, serai, sera | hint: (être) | full: Demain, tu seras fatigué.
+Nous [aurons] le temps samedi. | شنبه وقت خواهیم داشت. | d: avoirons, auront, aurez | hint: (avoir) | full: Samedi, nous aurons le temps.
+Il y [aura] beaucoup de monde au concert. | در کنسرت خیلی شلوغ خواهد بود. | d: avoira, aurai, auras | hint: (avoir)
+J'[irai] à Ispahan cet été{été}. | این تابستان به اصفهان خواهم رفت. | d: allerai, ira, iras | hint: (aller) | full: Cet été, j'irai à Ispahan.
+Vous [irez] à la plage demain ? | فردا به ساحل خواهید رفت؟ | d: allerez, irons, iront | hint: (aller) | full: Demain, vous irez à la plage ?
+Qu'est-ce que tu [feras] ce week-end ? | این آخر هفته چه کار خواهی کرد؟ | d: fairas, ferai, fera | hint: (faire)
+Ils [viendront] avec leurs enfants. | آن‌ها با بچه‌هایشان خواهند آمد. | d: veniront, viendrons, viendra | hint: (venir)
+Je [pourrai] t'aider demain. | فردا خواهم توانست کمکت کنم. | d: pouvoirai, pouverai, pourra | hint: (pouvoir) | full: Demain, je pourrai t'aider.
+Tu [pourras] venir à ma fête ? | خواهی توانست به جشنم بیایی؟ | d: pouvoiras, pourrai, pourra
+Demain, tu [voudras] dormir tard. | فردا دلت خواهد خواست تا دیروقت بخوابی. | d: vouloiras, voudrai, voudra | hint: (vouloir) | full: Tu voudras dormir tard demain.
+Nous [devrons] partir tôt. | مجبور خواهیم بود زود راه بیفتیم. | d: devoirons, devrez, devront | hint: (devoir)
+Vous [devrez] attendre un peu. | مجبور خواهید بود کمی صبر کنید. | d: devoirez, devrons, devra
+On se [verra] demain ! | فردا همدیگر را خواهیم دید! | d: voira, voirra, verrai | hint: (voir) | full: Demain, on se verra !
+Tu [verras], c'{ce-pron}est{être} facile. | خواهی دید، آسان است. | d: voiras, verrai, verra
+Je [saurai] la réponse demain. | فردا جواب را خواهم دانست. | d: savoirai, saura, sauras | hint: (savoir) | full: Demain, je saurai la réponse.
+Il [faudra] prendre un taxi. | لازم خواهد بود تاکسی بگیریم. | d: fallera, falloira, faudras | hint: (falloir)
+Il [pleuvra] ce week-end. | این آخر هفته باران خواهد آمد. | d: pleuvoira, pleuvera, pleuvras | hint: (pleuvoir) | full: Ce week-end, il pleuvra.
+J'[achèterai] du pain ce soir. | امشب نان خواهم خرید. | d: acheterai, achetrai, achèteras | hint: (acheter) | full: Ce soir, j'achèterai du pain.
+Nous [achèterons] une nouvelle voiture. | یک ماشین جدید خواهیم خرید. | d: acheterons, achetrons, achèteront
+Je t'[appellerai]{appeler} ce soir. | امشب به تو زنگ خواهم زد. | d: appelerai, appelrai, appellera | hint: (appeler) | full: Ce soir, je t'appellerai.
+Vous m'[enverrez] les photos ? | عکس‌ها را برایم خواهید فرستاد؟ | d: envoyerez, envoierez, enverrons | hint: (envoyer)
+Demain, je me [lèverai] à six heures. | فردا ساعت شش از خواب بلند خواهم شد. | d: leverai, lèveras, lèvera | hint: (se lever) | full: Je me lèverai à six heures demain.
+Paul ne [sera] pas là lundi. | پل دوشنبه اینجا نخواهد بود. | d: êtra, serai, seront | hint: (être) | full: Lundi, Paul ne sera pas là.
+Elles ne [feront] pas la cuisine ce soir. | آن‌ها امشب آشپزی نخواهند کرد. | d: fairont, ferons, fera | full: Ce soir, elles ne feront pas la cuisine.
+Est-ce que tu [viendras] à la réunion ? | به جلسه خواهی آمد؟ | d: veniras, viendrai, viendra | hint: (venir)
+Nous [reviendrons] l'année prochaine. | سال آینده برخواهیم گشت. | d: revenirons, reviendront, reviendrez | hint: (revenir) | full: L'année prochaine, nous reviendrons.
+Il [deviendra] médecin. | او پزشک خواهد شد. | d: devenira, deviendras, deviendrai | hint: (devenir)
+Vous [aurez] votre billet demain. | فردا بلیتتان را خواهید داشت. | d: avoirez, aurons, auront | full: Demain, vous aurez votre billet.
+Ils ne [pourront] pas venir. | آن‌ها نخواهند توانست بیایند. | d: pouvoiront, pourrons, pourra | hint: (pouvoir)
+Les enfants [seront] contents. | بچه‌ها خوشحال خواهند شد. | d: êtront, serons, sera | hint: (être)
+Demain, je [serai] à Lyon et j'[irai] au musée. | فردا در لیون خواهم بود و به موزه خواهم رفت. | d: êtrai, sera, seras / allerai, ira, iras
+Il [fera] beau et nous [ferons] un pique-nique. | هوا خوب خواهد بود و پیک‌نیک خواهیم رفت. | d: faira, fairra, feras / fairons, feront, ferez
+Tu [auras] le temps ? Tu [pourras] m'aider ? | وقت خواهی داشت؟ خواهی توانست کمکم کنی؟ | d: avoiras, aurai, aura / pouvoiras, pourrai, pourra
+Nous [viendrons] en train et nous [verrons] la mer. | با قطار خواهیم آمد و دریا را خواهیم دید. | d: venirons, viendront, viendrez / voirons, verront, verrez
+Il [faudra] partir tôt, alors je me [lèverai] à cinq heures. | لازم خواهد بود زود راه بیفتیم، پس ساعت پنج بلند خواهم شد. | d: fallera, falloira, faudras / leverai, lèveras, lèvera
+J'[achèterai] les fruits et tu [feras] le gâteau. | من میوه‌ها را خواهم خرید و تو کیک را درست خواهی کرد. | d: acheterai, achetrai, achèteras / fairas, ferai, fera | full: Tu feras le gâteau et j'achèterai les fruits.
+Elle [voudra] venir, mais elle [devra] travailler. | دلش خواهد خواست بیاید، ولی مجبور خواهد بود کار کند. | d: vouloira, voudras, voudrai / devoira, devras, devrai
+Je vous [appellerai]{appeler} et je vous [enverrai] l'adresse. | به شما زنگ خواهم زد و آدرس را برایتان خواهم فرستاد. | d: appelerai, appelrai, appellera / envoyerai, envoierai, enverra | full: Je vous enverrai l'adresse et je vous appellerai.
+transforms:
+Je vais à Paris. => J'irai à Paris. | جمله را به futur simple ببر.
+Il fait beau. => Il fera beau. | جمله را به futur simple ببر.
+Nous sommes en retard. => Nous serons en retard. | جمله را به futur simple ببر.
+Tu as le temps ? => Tu auras le temps ? | جمله را به futur simple ببر.
+Ils viennent demain. => Ils viendront demain. | جمله را به futur simple ببر.
+Je peux t'aider. => Je pourrai t'aider. | جمله را به futur simple ببر.
+Il faut partir. => Il faudra partir. | جمله را به futur simple ببر.
+Je vais acheter du pain. => J'achèterai du pain. | آیندهٔ نزدیک را به futur simple ببر.
+translations:
+هوا سرد خواهد بود. => Il fera froid. ; Il va faire froid.
+به پاریس خواهم رفت. => J'irai à Paris. ; Je vais aller à Paris.
+خسته خواهی بود. => Tu seras fatigué. ; Tu seras fatiguée. ; Tu vas être fatigué. ; Tu vas être fatiguée.
+وقت خواهی داشت؟ => Tu auras le temps ? ; Est-ce que tu auras le temps ? ; Tu vas avoir le temps ? ; Est-ce que tu vas avoir le temps ? ; Auras-tu le temps ? ; Vas-tu avoir le temps ?
+باران خواهد آمد. => Il pleuvra. ; Il va pleuvoir.
+آن‌ها (مردها) با ما خواهند آمد. => Ils viendront avec nous. ; Ils vont venir avec nous.
+یک ماشین خواهیم خرید. => Nous achèterons une voiture. ; On achètera une voiture. ; Nous allons acheter une voiture. ; On va acheter une voiture.
+خواهی دید! => Tu verras ! ; Tu vas voir !

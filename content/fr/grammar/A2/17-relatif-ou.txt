@@ -1,0 +1,83 @@
+code: fr-a2-relatif-ou
+title: «که» برای جا و زمان: où (la ville où j'habite)
+scope: ضمیر موصولی où بعد از اسمِ جا (la ville où je travaille) و اسمِ زمان (le jour où il est arrivé)، و انتخاب بین qui، que و où؛ dont در B1 می‌آید.
+can_do: حالا می‌توانی از جاها و روزهای مهم زندگی‌ات بگویی: C'est la ville où je suis né. Je me souviens du jour où j'ai commencé l'école.
+rule: اسمِ جا یا زمان + où + فاعل + فعل: la ville où je travaille، le jour où il est arrivé؛ qui اگر بعدش فعل بیاید، que اگر فعل مفعول کم دارد، où اگر جا یا زمان کم دارد.
+mistake: فارسی می‌گوید «شهری که در آن کار می‌کنم» و «روزی که رسید»، برای همین فارسی‌زبان‌ها اینجا هم que می‌گذارند («la ville que je travaille»)، برای زمان quand می‌آورند («le jour quand il est arrivé») یا «در آن» را هم ترجمه می‌کنند («la ville où j'y travaille»)؛ درست: la ville où je travaille، le jour où il est arrivé.
+lesson:
+où فقط «کجا؟» نیست: بعد از اسمِ یک جا یا یک زمان، معنی «که آنجا» یا «که آن موقع» می‌دهد.
+برای جا: la ville où je travaille (شهری که در آن کار می‌کنم)، le restaurant où nous mangeons (رستورانی که آنجا غذا می‌خوریم).
+برای زمان: le jour où il est arrivé (روزی که رسید)، l'année où je suis né (سالی که به دنیا آمدم)، au moment où (درست وقتی که).
+بعد از اسمِ زمان، quand نمی‌آید: «le jour quand il est arrivé» غلط است.
+«در آن» یا «آنجا»ی فارسی را بعد از où تکرار نمی‌کنیم: «la ville où j'y travaille» غلط است.
+راه انتخاب: بعد از جای خالی فعل آمد → qui (le restaurant qui est en face de la gare)؛ فاعل آمد و فعل مفعول کم دارد → que (le restaurant que tu aimes)؛ فاعل آمد و فعل جا یا زمان کم دارد → où (le restaurant où nous mangeons).
+table:
+جملهٔ دوم کم دارد | ضمیر | مثال
+فاعل | qui | la ville qui est au bord de la mer
+مفعول | que | la ville que je préfère
+جا | où | la ville où je travaille
+زمان | où | le jour où je suis arrivé
+examples:
+C'est{être} la ville où je suis{être} né. | این شهری است که در آن به دنیا آمدم.
+Voici le café où nous allons après les cours. | این کافه‌ای است که بعد از کلاس به آنجا می‌رویم.
+Je me souviens du{du-contr} jour où j'ai vu la mer. | روزی را که دریا را دیدم به یاد دارم.
+Lundi, c'est{être} le jour où je travaille à la maison. | دوشنبه روزی است که در خانه کار می‌کنم.
+targets:
+La ville [où] j'habite est très calme. | شهری که در آن زندگی می‌کنم خیلی آرام است. | d: qui, dans, quand
+C'est{être} le restaurant [où] mon frère travaille. | این رستورانی است که برادرم آنجا کار می‌کند. | d: que, qui, dans
+Le parc [où] les enfants jouent est près d'ici. | پارکی که بچه‌ها آنجا بازی می‌کنند نزدیک اینجاست. | d: que, qui, dans
+Voici l'hôtel [où] nous dormons. | این هتلی است که در آن می‌خوابیم. | d: que, qui, dans
+Le pays [où] je suis{être} né s'appelle l'Iran. | کشوری که در آن به دنیا آمدم ایران نام دارد. | d: que, qui, dans
+La plage [où] nous allons est magnifique. | ساحلی که به آنجا می‌رویم فوق‌العاده است. | d: que, qui, dans
+C'est{être} le bureau [où] elle travaille. | این دفتری است که او (زن) آنجا کار می‌کند. | d: que, qui, dans
+Tu connais un magasin [où] on peut acheter des fleurs ? | مغازه‌ای می‌شناسی که بشود آنجا گل خرید؟ | d: que, qui, dans
+L'école [où] je vais est loin de la maison. | مدرسه‌ای که به آنجا می‌روم از خانه دور است. | d: que, qui, dans
+C'est{être} la ville [où] mon père est né. | این شهری است که پدرم در آن به دنیا آمد. | d: que, qui, dans
+Le musée [où] nous sommes allés était fermé{fermé}. | موزه‌ای که به آنجا رفتیم بسته بود. | d: que, qui, dans
+C'est{être} l'endroit [où] j'ai perdu mes clés. | این جایی است که کلیدهایم را آنجا گم کردم. | d: que, qui, dans
+Le quartier [où] je travaille est très bruyant. | محله‌ای که در آن کار می‌کنم خیلی پرسروصداست. | d: que, qui, dans
+Je n'oublie jamais la ville [où] j'ai grandi. | هیچ‌وقت شهری را که در آن بزرگ شدم فراموش نمی‌کنم. | d: que, qui, dans
+L'appartement [où] ils habitent est au troisième étage. | آپارتمانی که در آن زندگی می‌کنند در طبقهٔ سوم است. | d: qui, dans, quand
+La bibliothèque [où] je vais après l'école ferme{fermer} à huit heures. | کتابخانه‌ای که بعد از مدرسه به آنجا می‌روم ساعت هشت بسته می‌شود. | d: que, qui, dans
+Le jour [où] il est arrivé, il pleuvait. | روزی که او (مرد) رسید، باران می‌آمد. | d: qui, quand, dont
+Je me souviens du{du-contr} jour [où] j'ai commencé l'école. | روزی را که مدرسه را شروع کردم به یاد دارم. | d: qui, quand, dont
+L'année [où] nous sommes allés au Canada, il faisait très froid. | سالی که به کانادا رفتیم، هوا خیلی سرد بود. | d: qui, quand, dont
+C'est{être} le moment [où] le film commence. | این لحظه‌ای است که فیلم شروع می‌شود. | d: qui, quand, dont
+Le soir [où] tu as téléphoné, j'étais malade. | شبی که تلفن زدی، مریض بودم. | d: qui, quand, dont
+Juillet, c'est{être} le mois [où] nous partons en vacances. | ژوئیه ماهی است که به تعطیلات می‌رویم. | d: qui, quand, dont
+L'été est la saison [où] je voyage{voyager}. | تابستان فصلی است که در آن سفر می‌کنم. | d: qui, quand, dont
+Au moment [où] je suis{être} sorti, le téléphone a sonné. | درست وقتی که بیرون رفتم، تلفن زنگ زد. | d: qui, quand, dont
+Le restaurant [qui] est en face de la gare est très bon. | رستورانی که روبه‌روی ایستگاه قطار است خیلی خوب است. | d: que, où, qu'il
+Le restaurant [que] tu aimes est fermé{fermé} aujourd'hui. | رستورانی که دوست داری امروز بسته است. | d: qui, quoi, dont
+La ville [que] je préfère, c'est{être} Ispahan. | شهری که از همه بیشتر دوست دارم اصفهان است. | d: qui, où, dont
+La maison [qui] est au coin de la rue est très vieille. | خانه‌ای که سر کوچه است خیلی قدیمی است. | d: que, où, qu'elle
+Le musée [que] nous avons visité était très intéressant. | موزه‌ای که از آن دیدن کردیم خیلی جالب بود. | d: qui, où, quoi
+La boulangerie [qui] est près de chez moi ouvre à sept heures. | نانوایی‌ای که نزدیک خانهٔ من است ساعت هفت باز می‌شود. | d: que, où, qu'elle
+La ville [où j'habite] est petite. | شهری که در آن زندگی می‌کنم کوچک است. | d: où j'y habite, que j'y habite, dans j'habite
+Le café [où nous allons] est à côté de la gare. | کافه‌ای که به آنجا می‌رویم کنار ایستگاه قطار است. | d: où nous y allons, que nous y allons, qui nous allons
+La ville [où] j'habite et la ville [où] je travaille sont différentes. | شهری که در آن زندگی می‌کنم و شهری که در آن کار می‌کنم با هم فرق دارند. | d: qui, dans, quand / que, qui, dans | full: La ville où je travaille et la ville où j'habite sont différentes.
+Le restaurant [où] nous mangeons a un chef [qui] vient de Lyon. | رستورانی که آنجا غذا می‌خوریم سرآشپزی دارد که اهل لیون است. | d: qui, dans, quand / que, qu'il, où
+C'est{être} le parc [où] je cours{courir} et la piscine [où] je nage. | این پارکی است که در آن می‌دوم و استخری که در آن شنا می‌کنم. | d: qui, dans, quand / que, qui, dans
+Le livre [que] je lis parle d'une ville [où] il fait toujours froid. | کتابی که می‌خوانم دربارهٔ شهری است که همیشه آنجا سرد است. | d: qui, quoi, dont / que, qui, dans
+C'est{être} l'hôtel [où] nous avons dormi et le restaurant [que] nous avons aimé. | این هتلی است که در آن خوابیدیم و رستورانی که دوستش داشتیم. | d: que, qui, dans / qui, quoi, dont
+C'est{être} l'heure [où] les enfants [sortent] de l'école. | این ساعتی است که بچه‌ها از مدرسه بیرون می‌آیند. | d: qui, quand, dont / sort, sortons, sortir
+Voici la chambre [où] tu vas dormir et la salle de bain [qui] est à côté. | این اتاقی است که در آن می‌خوابی و این هم حمامی که کنارش است. | d: que, qui, dans / que, où, qu'elle
+La ville [que] je préfère, c'est{être} la ville [où] je suis{être} né. | شهری که از همه بیشتر دوست دارم شهری است که در آن به دنیا آمدم. | d: qui, où, dont / que, qui, dans
+transforms:
+C'est{être} la ville. Je travaille dans cette ville. => C'est{être} la ville où je travaille. | جملهٔ دوم را با où به جملهٔ اول وصل کن.
+Voici le restaurant. Nous mangeons dans ce restaurant. => Voici le restaurant où nous mangeons. | جملهٔ دوم را با où به جملهٔ اول وصل کن.
+C'est{être} le parc. Les enfants jouent dans ce parc. => C'est{être} le parc où les enfants jouent. ; C'est{être} le parc où jouent les enfants. | جملهٔ دوم را با où به جملهٔ اول وصل کن.
+La maison est grande. Je suis{être} né dans cette maison. => La maison où je suis{être} né est grande. | جملهٔ دوم را با où به جملهٔ اول وصل کن.
+C'est{être} un hôtel. Il est très confortable. => C'est{être} un hôtel qui est très confortable. | جملهٔ دوم را با qui، que یا où به جملهٔ اول وصل کن.
+C'est{être} un hôtel. Nous aimons cet hôtel. => C'est{être} un hôtel que nous aimons. | جملهٔ دوم را با qui، que یا où به جملهٔ اول وصل کن.
+C'est{être} un hôtel. Nous dormons dans cet hôtel. => C'est{être} un hôtel où nous dormons. | جملهٔ دوم را با qui، que یا où به جملهٔ اول وصل کن.
+C'est{être} le jour. Nous partons en vacances ce jour-là. => C'est{être} le jour où nous partons en vacances. | جملهٔ دوم را با où به جملهٔ اول وصل کن.
+translations:
+شهری که در آن کار می‌کنم خیلی بزرگ است. => La ville où je travaille est très grande.
+روزی که او (مرد) رسید، باران می‌آمد. => Le jour où il est arrivé, il pleuvait. ; Il pleuvait le jour où il est arrivé.
+این رستورانی است که یکشنبه‌ها آنجا غذا می‌خوریم. => C'est{être} le restaurant où nous mangeons le dimanche. ; C'est{être} le restaurant où on mange le dimanche.
+کشوری که در آن به دنیا آمدم ایران است. => Le pays où je suis{être} né, c'est{être} l'Iran. ; Le pays où je suis{être} née, c'est{être} l'Iran. ; Le pays où je suis{être} né est l'Iran. ; Le pays où je suis{être} née est l'Iran.
+پارکی که بچه‌ها در آن بازی می‌کنند بزرگ است. => Le parc où les enfants jouent est grand. ; Le parc où jouent les enfants est grand.
+این مدرسه‌ای است که به آنجا می‌روم. => C'est{être} l'école où je vais.
+درست وقتی که فیلم شروع شد، تلفن زنگ زد. => Au moment où le film a commencé, le téléphone a sonné. ; Le téléphone a sonné au moment où le film a commencé.
+هتلی که در آن خوابیدیم خیلی راحت بود. => L'hôtel où nous avons dormi était très confortable. ; L'hôtel où on a dormi était très confortable. ; L'hôtel où nous avons dormi a été très confortable. ; L'hôtel où on a dormi a été très confortable.

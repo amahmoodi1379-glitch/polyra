@@ -1,0 +1,92 @@
+code: de-a2-ordinalzahlen
+title: erste، zweite، dritte: عددهای ترتیبی و تاریخ
+scope: عددهای ترتیبی (erste، zweite، dritte، vierte …؛ تا ۱۹ با -te و از ۲۰ با -ste) که مثل صفت پسوند می‌گیرند (der erste Tag، im dritten Stock، mein erstes Auto)، و گفتن تاریخ: Heute ist der dritte Mai، Ich komme am dritten Mai، Wann hast du Geburtstag? – Am …، der Erste و am Ersten، و نوشتن تاریخ با نقطه (3. Mai)؛ گفتن سال در تاریخ در سطح‌های بعد می‌آید.
+can_do: حالا می‌توانی تاریخ امروز و روز تولدت را بگویی و بگویی در طبقه چندم زندگی می‌کنی.
+rule: عدد ترتیبی = عدد + -te تا ۱۹ (zweite، vierte) و + -ste از ۲۰ (zwanzigste)؛ بی‌قاعده: erste، dritte، siebte، achte؛ پسوند مثل صفت: der dritte Mai، am dritten Mai.
+mistake: در فارسی «سوم» از «سه» با -م ساخته می‌شود و تاریخ حرف اضافه نمی‌خواهد («سوم مه می‌آیم»)؛ برای همین فارسی‌زبان‌ها «dreite» یا «am drei Mai» می‌گویند؛ درست: dritte و Ich komme am dritten Mai.
+lesson:
+عدد ترتیبی یعنی «اول، دوم، سوم …». در آلمانی تا ۱۹ به عدد -te اضافه می‌کنیم: zwei ← zweite، vier ← vierte، zehn ← zehnte.
+از ۲۰ به بعد -ste می‌گیرد: zwanzig ← zwanzigste، einunddreißig ← einunddreißigste.
+چهار شکل بی‌قاعده را حفظ کن: eins ← erste، drei ← dritte، sieben ← siebte، acht ← achte.
+عدد ترتیبی صفت است و پسوندش مثل صفت عوض می‌شود: der erste Tag، den ersten Tag، am ersten Tag، mein erstes Auto، mein erster Lehrer.
+تاریخ با der و پسوند -e گفته می‌شود: Heute ist der dritte Mai. برای «در چه روزی» am می‌آید و پسوند -en: Ich habe am dritten Mai Geburtstag.
+در نوشتن، عدد ترتیبی را با رقم و یک نقطه بعد از آن می‌نویسند: «der 3. Mai» را der dritte Mai می‌خوانیم و «am 3. Mai» را am dritten Mai.
+der Erste با حرف بزرگ یعنی «روز اول ماه» یا «نفر اول»: Am Ersten bekomme ich mein Gehalt. Ich war der Erste im Büro.
+table:
+عدد | ترتیبی | تاریخ | «در این روز»
+1 | erste | der erste Mai | am ersten Mai
+2 | zweite | der zweite Mai | am zweiten Mai
+3 | dritte | der dritte Mai | am dritten Mai
+4 | vierte | der vierte Mai | am vierten Mai
+7 | siebte | der siebte Mai | am siebten Mai
+8 | achte | der achte Mai | am achten Mai
+20 | zwanzigste | der zwanzigste Mai | am zwanzigsten Mai
+31 | einunddreißigste | der einunddreißigste Mai | am einunddreißigsten Mai
+sets:
+-te: zweite, vierte, fünfte, zehnte, neunzehnte
+-ste: zwanzigste, einundzwanzigste, dreißigste, hundertste
+بی‌قاعده: erste, dritte, siebte, achte
+examples:
+Heute ist der dritte Oktober. | امروز سوم اکتبر است.
+Ich habe am ersten April Geburtstag. | تولد من اول آوریل است.
+Der erste Tag im Kurs war schön. | روز اول کلاس خوب بود.
+Das ist mein zweites Auto. | این دومین ماشین من است.
+targets:
+Heute ist der [erste] März. | امروز اول مارس است. | d: erster, ersten, eins | hint: (eins)
+Morgen ist der [dritte] Juli. | فردا سوم ژوئیه است. | d: drei, dreite, dritten | hint: (drei)
+Ich habe am [zweiten] Juni Geburtstag. | تولد من دوم ژوئن است. | d: zweite, zweiter, zwei | hint: (zwei) | full: Am zweiten Juni habe ich Geburtstag.
+Wann hast du Geburtstag? – Am [dritten] April. | تولدت کی است؟ – سوم آوریل. | d: dritte, drei, dreiten | hint: (drei)
+Welches Datum ist heute? – Der [erste] August. | امروز چه تاریخی است؟ – اول اوت. | d: ersten, erster, eins
+Die Ferien beginnen am [ersten] Juli. | تعطیلات اول ژوئیه شروع می‌شود. | d: erste, erster, eins | hint: (eins) | full: Am ersten Juli beginnen die Ferien.
+Heute haben wir den [dritten] Juni. | امروز سوم ژوئن است. | d: dritte, dritter, drei | hint: (drei) | full: Wir haben heute den dritten Juni.
+Heute ist Montag, der [zweite] Oktober. | امروز دوشنبه، دوم اکتبر است. | d: zweiten, zweiter, zwei
+Ich fahre am [zweiten] Mai nach Wien. | دوم مه به وین می‌روم. | d: zweite, zweiter, zwei | hint: (zwei) | full: Am zweiten Mai fahre ich nach Wien.
+Ab dem [ersten] Juni arbeite ich hier. | از اول ژوئن اینجا کار می‌کنم. | d: erste, erster, eins | full: Ich arbeite ab dem ersten Juni hier.
+Am [ersten] Januar ist Neujahr. | اول ژانویه روز سال نو است. | d: erste, erster, eins | full: Neujahr ist am ersten Januar.
+Am [Ersten] bekomme ich mein Gehalt. | اول ماه حقوقم را می‌گیرم. | d: Erste, Erster, Eins | full: Ich bekomme am Ersten mein Gehalt. ; Ich bekomme mein Gehalt am Ersten.
+Ich war heute der [Erste] im Büro. | امروز من اولین نفر در دفتر بودم. | d: Ersten, Erster, Erstes | full: Heute war ich der Erste im Büro.
+Wir wohnen im [dritten] Stock. | ما در طبقه سوم زندگی می‌کنیم. | d: dritte, dreiten, drei | hint: (drei)
+Die Toilette ist im [ersten] Stock. | دستشویی در طبقه اول است. | d: erste, erster, eins
+Das ist mein [erstes] Fahrrad. | این اولین دوچرخه من است. | d: erste, erster, ersten | hint: (eins)
+Das ist schon mein [drittes] Handy. | این دیگر سومین گوشی من است. | d: dritte, dritter, dritten | hint: (drei)
+Lena ist unser [drittes] Kind. | لنا سومین بچه ماست. | d: dritte, dritter, dritten | hint: (drei)
+Mein [erster] Lehrer war sehr streng. | اولین معلمم خیلی سخت‌گیر بود. | d: erste, ersten, erstes | hint: (eins)
+Ist das dein [erster] Besuch in Wien? | این اولین بار است که به وین می‌آیی؟ | d: erste, ersten, erstes
+Das ist meine [erste] Reise nach Deutschland. | این اولین سفر من به آلمان است. | d: erster, ersten, erstes | hint: (eins)
+Ich bin zum [ersten] Mal in Berlin. | اولین بار است که در برلین هستم. | d: erste, erstes, eins | full: Zum ersten Mal bin ich in Berlin. ; In Berlin bin ich zum ersten Mal.
+Mein Sohn geht in die [zweite] Klasse. | پسرم کلاس دوم است. | d: zweiten, zweiter, zwei | hint: (zwei)
+Sara ist im [zweiten] Jahr an der Uni. | سارا سال دوم دانشگاه است. | d: zweite, zweites, zwei
+Am [ersten] Tag war ich sehr nervös. | روز اول خیلی استرس داشتم. | d: erste, erster, eins | full: Ich war am ersten Tag sehr nervös.
+In der [zweiten] Woche haben wir eine Prüfung. | در هفته دوم امتحان داریم. | d: zweite, zweites, zwei | hint: (zwei) | full: Wir haben in der zweiten Woche eine Prüfung.
+Wir nehmen den [ersten] Zug am Morgen. | ما اولین قطار صبح را می‌گیریم. | d: erste, erster, erstes | hint: (eins)
+Hast du den [dritten] Film schon gesehen? | فیلم سوم را دیده‌ای؟ | d: dritte, dritter, drei
+Das [zweite] Zimmer rechts ist das Bad. | اتاق دوم سمت راست حمام است. | d: zweiter, zweiten, zwei
+Mein Büro ist die [zweite] Tür links. | دفتر من دومین در سمت چپ است. | d: zweiten, zweiter, zwei
+Ich steige an der [dritten] Haltestelle aus. | در ایستگاه سوم پیاده می‌شوم. | d: dritte, dritter, drei
+Der [zweite] Teil war besser. | قسمت دوم بهتر بود. | d: zweiten, zweites, zwei
+Der Kurs dauert vom [ersten] bis zum [dritten] März. | کلاس از اول تا سوم مارس طول می‌کشد. | d: erste, erster, eins / dritte, drei, dreiten | full: Vom ersten bis zum dritten März dauert der Kurs.
+Die [erste] Woche war schwer, aber die [zweite] war leichter. | هفته اول سخت بود، ولی هفته دوم آسان‌تر بود. | d: ersten, erster, eins / zweiten, zweiter, zwei
+Heute ist der [zweite] Mai, morgen ist der [dritte]. | امروز دوم مه است، فردا سوم. | d: zweiten, zweiter, zwei / dritten, drei, dreite
+Am [ersten] Tag hatten wir Deutsch, am [zweiten] Mathe. | روز اول آلمانی داشتیم، روز دوم ریاضی. | d: erste, erster, eins / zweite, zweiter, zwei
+Ich habe am [dritten] Mai Geburtstag und mein Bruder am [ersten] Juni. | تولد من سوم مه است و تولد برادرم اول ژوئن. | d: dritte, drei, dreiten / erste, erster, eins | full: Am dritten Mai habe ich Geburtstag und mein Bruder am ersten Juni.
+Ich wohne im [zweiten] Stock, Anna im [dritten]. | من در طبقه دوم زندگی می‌کنم، آنا در طبقه سوم. | d: zweite, zweiter, zwei / dritte, drei, dreiten
+Heute ist der [erste] Juni, und am [dritten] fliegen wir nach Teheran. | امروز اول ژوئن است و سوم ژوئن به تهران پرواز می‌کنیم. | d: ersten, erster, eins / dritte, drei, dreiten | full: Heute ist der erste Juni, und wir fliegen am dritten nach Teheran.
+Nehmen Sie die [zweite] Straße rechts und dann die [erste] links. | خیابان دوم سمت راست را بروید و بعد اولین خیابان سمت چپ را. | d: zweiten, zweiter, zwei / ersten, erster, eins
+transforms:
+Heute ist der dritte Mai. => Ich komme am dritten Mai. | جمله را با «Ich komme» شروع کن: «سوم مه می‌آیم».
+Heute ist der erste März. => Heute haben wir den ersten März. | جمله را با «Heute haben wir» بساز.
+Das ist der erste Zug. => Ich nehme den ersten Zug. | جمله را با «Ich nehme» بساز.
+Das ist das erste Auto. => Das ist mein erstes Auto. | به‌جای das دوم بگو mein.
+Er ist der erste Lehrer. => Er ist mein erster Lehrer. | به‌جای der بگو mein.
+Heute ist der zweite Juni. => Morgen ist der dritte Juni. ; Morgen ist der dritte. | بگو فردا چه تاریخی است.
+Die Ferien beginnen am ersten Juli. => Am ersten Juli beginnen die Ferien. | جمله را با «Am ersten Juli» شروع کن.
+Das ist die erste Woche. => Wir sind in der ersten Woche. | جمله را با «Wir sind in der» بساز.
+translations:
+امروز اول مه است. => Heute ist der erste Mai. ; Heute ist erster Mai. ; Heute haben wir den ersten Mai. ; Wir haben heute den ersten Mai.
+تولد من سوم مارس است. => Ich habe am dritten März Geburtstag. ; Am dritten März habe ich Geburtstag. ; Mein Geburtstag ist am dritten März.
+ما در طبقه دوم زندگی می‌کنیم. => Wir wohnen im zweiten Stock. ; Im zweiten Stock wohnen wir.
+این اولین سفر من است. => Das ist meine erste Reise. ; Es ist meine erste Reise. ; Das ist meine erste Fahrt.
+اولین بار است که در وین هستم. => Ich bin zum ersten Mal in Wien. ; Zum ersten Mal bin ich in Wien. ; Ich bin das erste Mal in Wien. ; Das erste Mal bin ich in Wien.
+کلاس اول ژوئیه شروع می‌شود. => Der Kurs beginnt am ersten Juli. ; Am ersten Juli beginnt der Kurs. ; Der Kurs fängt am ersten Juli an. ; Am ersten Juli fängt der Kurs an. ; Der Unterricht beginnt am ersten Juli. ; Am ersten Juli beginnt der Unterricht. ; Der Unterricht fängt am ersten Juli an. ; Am ersten Juli fängt der Unterricht an.
+روز اول خیلی سخت بود. => Der erste Tag war sehr schwer. ; Der erste Tag war sehr schwierig. ; Am ersten Tag war es sehr schwer. ; Am ersten Tag war es sehr schwierig.
+تولدت کی است؟ – سوم مه. => Wann hast du Geburtstag? – Am dritten Mai. ; Wann ist dein Geburtstag? – Am dritten Mai.

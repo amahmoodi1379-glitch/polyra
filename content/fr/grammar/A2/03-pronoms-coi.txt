@@ -1,0 +1,87 @@
+code: fr-a2-pronoms-coi
+title: ضمیر «به او، به آن‌ها»: lui، leur
+scope: ضمیرهای lui (به او) و leur (به آن‌ها) به‌جای à + آدم، با فعل‌هایی مثل parler à، téléphoner à، donner à، dire à، demander à، répondre à، écrire à و offrir à، قبل از فعلِ صرف‌شده در زمان حال؛ فرق le و lui، و فرق leur (به آن‌ها) با leur و leurs (صفت ملکی)؛ دو ضمیر با هم در B1 می‌آید.
+can_do: حالا می‌توانی بگویی به کسی زنگ می‌زنی، چیزی به او می‌دهی یا جوابش را می‌دهی: Je lui téléphone. Je leur donne du pain.
+rule: à + یک نفر → lui (برای مرد و زن)، à + چند نفر → leur؛ ضمیر قبل از فعل می‌آید: Je parle à Marie → Je lui parle. leur ضمیر هیچ‌وقت s نمی‌گیرد.
+mistake: فارسی‌زبان‌ها برای زن la می‌گذارند («je la téléphone») چون Marie مؤنث است؛ ولی بعد از à، lui هم برای مرد است و هم برای زن: je lui téléphone. عکسش هم پیش می‌آید: «زنگ زدن به» در فارسی «به» دارد، ولی appeler در فرانسوی à نمی‌گیرد: je l'appelle، نه «je lui appelle». leur ضمیر هم s نمی‌گیرد: «je leurs parle» غلط است.
+lesson:
+بعضی فعل‌ها آدم را با à می‌گیرند: parler à Paul (با پل حرف زدن)، donner à Marie (به ماری دادن)، téléphoner à mes parents.
+به‌جای à + یک نفر می‌گوییم lui: Je parle à Paul → Je lui parle. Je téléphone à Marie → Je lui téléphone.
+lui هم «به آن مرد» است و هم «به آن زن»؛ جنس مهم نیست.
+به‌جای à + چند نفر می‌گوییم leur: Je donne du pain aux enfants → Je leur donne du pain.
+lui و leur هم مثل le و la قبل از فعل می‌آیند: Je ne lui réponds pas. Tu leur écris ?
+le یا lui؟ اگر فعل à دارد lui، اگر ندارد le یا la: J'aide Paul → Je l'aide، ولی Je parle à Paul → Je lui parle.
+فعل‌هایی با à: parler، téléphoner، donner، dire، demander، répondre، écrire، offrir، montrer، expliquer. فعل‌های بی‌à: voir، aider، appeler، attendre، inviter، écouter.
+leur ضمیر همیشه بی‌s است و قبل از فعل می‌آید؛ leur و leurs صفت ملکی قبل از اسم می‌آیند: Je leur donne leurs livres.
+table:
+بی‌à (مفعول مستقیم) | با à
+Je vois Paul → Je le vois. | Je parle à Paul → Je lui parle.
+J'aide Marie → Je l'aide. | Je téléphone à Marie → Je lui téléphone.
+J'invite mes amis → Je les invite. | J'écris à mes amis → Je leur écris.
+sets:
+فعل با à: parler, téléphoner, donner, dire, demander, répondre, écrire, offrir
+فعل بی‌à: voir, aider, appeler, attendre, inviter, écouter
+examples:
+Marie est malade. Je lui téléphone{téléphoner} ce soir. | ماری مریض است. امشب به او زنگ می‌زنم.
+Les enfants ont faim. Je leur donne du pain. | بچه‌ها گرسنه‌اند. به آن‌ها نان می‌دهم.
+Paul ne trouve pas la gare. Je l'{le-pron}aide{aider}. | پل ایستگاه را پیدا نمی‌کند. کمکش می‌کنم.
+Mes amis m'écrivent et je leur réponds. | دوستانم برایم می‌نویسند و من جوابشان را می‌دهم.
+targets:
+Marie est malade. Je [lui] téléphone{téléphoner} ce soir. | ماری مریض است. امشب به او زنگ می‌زنم. | d: la, le, les | hint: (à Marie)
+Paul ne comprend pas. Je [lui] explique la leçon. | پل نمی‌فهمد. درس را برایش توضیح می‌دهم. | d: l', le, les
+C'est{être} l'anniversaire de ma mère. Je [lui] offre des fleurs. | تولد مادرم است. به او گل هدیه می‌دهم. | d: l', la, les | hint: (à ma mère)
+Le professeur parle à Léa et elle [lui] répond. | معلم با لئا حرف می‌زند و او جوابش را می‌دهد. | d: le, la, les
+Mon frère a faim. Je [lui] donne une pomme. | برادرم گرسنه است. به او یک سیب می‌دهم. | d: le, la, les | hint: (à mon frère)
+Sophie est triste. Tu [lui] parles ? | سوفی غمگین است. با او حرف می‌زنی؟ | d: la, le, leurs
+Mon voisin est gentil. Je [lui] dis bonjour chaque matin. | همسایه‌ام مهربان است. هر صبح به او سلام می‌کنم. | d: le, la, les | hint: (à mon voisin)
+Mon cousin habite au Canada. Je [lui] écris des messages. | پسرعمویم در کانادا زندگی می‌کند. برایش پیام می‌نویسم. | d: l', le, les
+Tu connais ma mère ? Ma sœur [lui] ressemble beaucoup. | مادرم را می‌شناسی؟ خواهرم خیلی شبیه اوست. | d: la, le, les | hint: (à ma mère)
+Le bébé me regarde et je [lui] souris{sourire}. | نوزاد نگاهم می‌کند و من به او لبخند می‌زنم. | d: le, la, les
+Ma sœur aime le bleu. Ce pull [lui] plaît. | خواهرم رنگ آبی را دوست دارد. از این پلیور خوشش می‌آید. | d: la, le, les | hint: (à ma sœur)
+Léa a dix ans aujourd'hui. Ses parents [lui] offrent un vélo. | لئا امروز ده‌ساله می‌شود. پدر و مادرش به او یک دوچرخه هدیه می‌دهند. | d: l', la, les
+Ton frère va à Paris ? Tu [lui] prêtes{prêter} ta valise ? | برادرت به پاریس می‌رود؟ چمدانت را به او قرض می‌دهی؟ | d: le, la, les | hint: (à ton frère)
+Mon père travaille tard. Ma mère [lui] prépare le dîner. | پدرم تا دیروقت کار می‌کند. مادرم برایش شام درست می‌کند. | d: le, la, les
+Le serveur est là. Tu [lui] demandes l'addition ? | گارسون آنجاست. صورت‌حساب را از او می‌خواهی؟ | d: le, la, les | hint: (au serveur)
+Je ne connais pas cet homme. Je ne [lui] réponds pas. | این مرد را نمی‌شناسم. جوابش را نمی‌دهم. | d: le, la, leurs
+Le petit garçon pleure. Sa mère [lui] chante une chanson. | پسر کوچک گریه می‌کند. مادرش برایش آواز می‌خواند. | d: le, la, les | hint: (au petit garçon)
+Ce cadeau ? Je [le] donne à Paul. | این هدیه؟ آن را به پل می‌دهم. | d: lui, leur, la | hint: (ce cadeau)
+Paul ne trouve pas la gare. Je [l']{le-pron}aide{aider}. | پل ایستگاه را پیدا نمی‌کند. کمکش می‌کنم. | d: lui, leur, le
+Mon grand-père est seul. Je [l']appelle souvent. | پدربزرگم تنهاست. اغلب به او زنگ می‌زنم. | d: lui, leur, la | hint: (mon grand-père)
+Mes parents sont en vacances. Je [leur]{leur} téléphone{téléphoner} chaque soir. | پدر و مادرم در تعطیلات‌اند. هر شب به آن‌ها زنگ می‌زنم. | d: les, leurs, la | hint: (à mes parents)
+Les enfants ont faim. Je [leur] donne du pain. | بچه‌ها گرسنه‌اند. به آن‌ها نان می‌دهم. | d: les, leurs, le
+Mes amis m'écrivent et je [leur] réponds. | دوستانم برایم می‌نویسند و من جوابشان را می‌دهم. | d: les, leurs, la | hint: (à mes amis)
+Les élèves ne comprennent pas. Le professeur [leur] explique l'exercice. | شاگردها نمی‌فهمند. معلم تمرین را برایشان توضیح می‌دهد. | d: les, leurs, l'
+Mes voisins sont gentils. Je [leur] dis bonjour. | همسایه‌هایم مهربان‌اند. به آن‌ها سلام می‌کنم. | d: les, leurs, le | hint: (à mes voisins)
+Mes cousins viennent demain. Je [leur]{leur} montre la ville. | پسرعموهایم فردا می‌آیند. شهر را به آن‌ها نشان می‌دهم. | d: les, leurs, la
+Les enfants aiment les histoires. Le soir, je [leur] raconte une histoire. | بچه‌ها قصه دوست دارند. شب‌ها برایشان قصه تعریف می‌کنم. | d: les, leurs, la | hint: (aux enfants)
+Mes parents ne savent pas. Je [leur]{leur} dis la vérité. | پدر و مادرم نمی‌دانند. حقیقت را به آن‌ها می‌گویم. | d: les, leurs, la
+Mes parents sont occupés{occupé}. Je ne [leur]{leur} téléphone{téléphoner} pas. | پدر و مادرم سرشان شلوغ است. به آن‌ها زنگ نمی‌زنم. | d: les, leurs, la | hint: (à mes parents)
+Tes amis sont français{français} ? Est-ce que tu [leur] parles en français ? | دوستانت فرانسوی‌اند؟ با آن‌ها فرانسوی حرف می‌زنی؟ | d: les, leurs, la
+Tes grands-parents sont à Ispahan ? Tu [leur] écris des lettres ? | پدربزرگ و مادربزرگت در اصفهان‌اند؟ برایشان نامه می‌نویسی؟ | d: les, leurs, l' | hint: (à tes grands-parents)
+Mes grands-parents habitent loin. Je [leur] envoie des photos. | پدربزرگ و مادربزرگم دور زندگی می‌کنند. برایشان عکس می‌فرستم. | d: les, leurs, la
+Les enfants ont faim. Je [leur] prépare [leur] goûter{goûter-noun}. | بچه‌ها گرسنه‌اند. عصرانه‌شان را برایشان درست می‌کنم. | d: les, leurs, la / leurs, lui, eux
+Mes amis partent. Je [leur] donne [leurs] billets. | دوستانم دارند می‌روند. بلیت‌هایشان را به آن‌ها می‌دهم. | d: les, leurs, la / leur, lui, eux
+Les élèves sont là. Le professeur [leur] rend [leurs] cahiers. | شاگردها اینجا هستند. معلم دفترهایشان را به آن‌ها پس می‌دهد. | d: les, leurs, la / leur, lui, eux
+Ma sœur ? Je [l']{la-pron}appelle et je [lui] parle de la fête. | خواهرم؟ به او زنگ می‌زنم و دربارهٔ جشن با او حرف می‌زنم. | d: lui, leur, le / la, le, les
+Mon frère est à la gare. Je [l']attends et je [lui] apporte sa valise. | برادرم در ایستگاه است. منتظرش می‌مانم و چمدانش را برایش می‌برم. | d: lui, leur, la / l', le, la
+Mes parents ? Je [les] aime et je [leur] écris des lettres. | پدر و مادرم؟ دوستشان دارم و برایشان نامه می‌نویسم. | d: leur, lui, le / les, leurs, l'
+Le professeur est gentil. Je [l']écoute et je [lui] pose des questions. | معلم مهربان است. به حرفش گوش می‌دهم و از او سؤال می‌پرسم. | d: lui, leur, la / le, la, les
+Tes grands-parents ? Tu [les] vois souvent ? Tu [leur]{leur} téléphones{téléphoner} ? | پدربزرگ و مادربزرگت؟ اغلب می‌بینی‌شان؟ به آن‌ها زنگ می‌زنی؟ | d: leur, lui, la / les, leurs, la
+transforms:
+Je téléphone à Marie. => Je lui téléphone. | به‌جای «à Marie» ضمیر بگذار.
+Je parle à mes amis. => Je leur parle. | به‌جای «à mes amis» ضمیر بگذار.
+Tu donnes le livre à Paul ? => Tu lui donnes le livre ? | به‌جای «à Paul» ضمیر بگذار.
+Nous écrivons à nos parents. => Nous leur écrivons. | به‌جای «à nos parents» ضمیر بگذار.
+J'aide{aider} Marie. => Je l'{la-pron}aide{aider}. | به‌جای «Marie» ضمیر بگذار.
+Je réponds au professeur. => Je lui réponds. | به‌جای «au professeur» ضمیر بگذار.
+Je lui parle. => Je ne lui parle pas. | جمله را منفی کن.
+Il dit bonjour aux voisins. => Il leur dit bonjour. | به‌جای «aux voisins» ضمیر بگذار.
+translations:
+ماری؟ به او زنگ می‌زنم. => Marie ? Je lui téléphone{téléphoner}. ; Marie ? Je l'{la-pron}appelle.
+بچه‌ها گرسنه‌اند. به آن‌ها نان می‌دهم. => Les enfants ont faim. Je leur donne du pain.
+پل؟ جوابش را نمی‌دهم. => Paul ? Je ne lui réponds pas.
+پدر و مادرم؟ به آن‌ها زنگ می‌زنم. => Mes parents ? Je leur{leur} téléphone{téléphoner}. ; Mes parents ? Je les appelle.
+برادرم گرسنه است. به او یک سیب می‌دهم. => Mon frère a faim. Je lui donne une pomme.
+مادرم؟ برایش گل می‌خرم. => Ma mère ? Je lui achète des fleurs. ; Ma mère ? J'achète des fleurs pour elle.
+دوستانم؟ شهر را به آن‌ها نشان می‌دهم. => Mes amis ? Je leur{leur} montre la ville. ; Mes amies ? Je leur{leur} montre la ville.
+سوفی غمگین است. با او حرف می‌زنم. => Sophie est triste. Je lui parle. ; Sophie est triste. Je parle avec elle.

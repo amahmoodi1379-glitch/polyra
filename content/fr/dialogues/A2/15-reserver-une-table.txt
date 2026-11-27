@@ -1,0 +1,34 @@
+code: fr-a2-d015
+title: رزرو میز رستوران با تلفن
+situation: به یک رستوران زنگ می‌زنی تا برای شنبه شب میز رزرو کنی.
+turns:
+B: Restaurant Le Jardin, bonjour ! | رستوران «باغ»، سلام!
+- Bonjour ! Je voudrais réserver un table pour samedi soir, s'il vous plaît. | سلام! می‌خواهم برای شنبه شب یک میز رزرو کنم، لطفاً.
++ Bonjour ! Je voudrais réserver une table pour samedi soir, s'il vous plaît. | سلام! می‌خواهم برای شنبه شب یک میز رزرو کنم، لطفاً.
+- Bonjour ! Je voudrais réserver une table pour samedi dernier, s'il vous plaît. | سلام! می‌خواهم برای شنبه گذشته یک میز رزرو کنم، لطفاً.
+why: table مؤنث است: «une table». رزرو برای آینده است، و «samedi dernier» یعنی شنبه گذشته.
+B: Oui, pour combien de personnes ? | بله، برای چند نفر؟
++ Pour quatre personnes : deux adultes et deux enfants. | برای چهار نفر: دو بزرگسال و دو بچه.
+- Pour quatre heures : deux adultes et deux enfants. | برای چهار ساعت: دو بزرگسال و دو بچه.
+- Pour quatre personnes : deux adultes et deux enfances. | برای چهار نفر: دو بزرگسال و دو دوران کودکی.
+why: تعداد نفرها را با personnes می‌گوییم؛ heures ساعت است. enfants یعنی بچه‌ها، ولی enfance یعنی «دوران کودکی».
+B: Très bien. À quelle heure ? | خیلی خوب. ساعت چند؟
+- Pendant huit heures, c'est{être} possible ? | به مدت هشت ساعت، ممکن است؟
+- Il y a huit heures, c'est{être} possible ? | هشت ساعت پیش، ممکن است؟
++ Vers huit heures, c'est{être} possible ? | حدود ساعت هشت، ممکن است؟
+why: «vers huit heures» یعنی «حدود ساعت هشت». pendant مدت را می‌گوید و «il y a» گذشته را.
+B: Je suis{être} désolé, à huit heures, c'est{être} complet. J'ai une table à neuf heures. | متأسفم، ساعت هشت پر است. ساعت نه یک میز دارم.
+- Neuf heures, c'est{être} un peu tôt, mais d'accord. | ساعت نه کمی زود است، ولی باشد.
++ Neuf heures, c'est{être} un peu tard, mais d'accord. | ساعت نه کمی دیر است، ولی باشد.
+- Neuf heures, c'est{être} un peu en retard, mais d'accord. | ساعت نه کمی دیر است، ولی باشد.
+why: ساعت نه از هشت دیرتر است: «c'est un peu tard». «en retard» برای کسی است که دیر می‌رسد، نه برای یک ساعت.
+B: Parfait. C'est{être} à quel nom ? | عالی. به چه اسمی؟
+- Dans le nom de Karimi. | به اسم کریمی.
+- Au nom de Karimi. Et toi, tu t'appelles comment ? | به اسم کریمی. اسم تو چیست؟
++ Au nom de Karimi, Maryam Karimi. | به اسم کریمی، مریم کریمی.
+why: در رزرو «au nom de» می‌گوییم. از کارمند رستوران اسمش را نمی‌پرسیم، و با او tu هم نمی‌گوییم.
+B: Merci, madame Karimi. Vous voulez une table sur la terrasse ou à l'intérieur ? | ممنون، خانم کریمی. میز روی تراس می‌خواهید یا داخل؟
++ Sur la terrasse, s'{si}il fait beau. | روی تراس، اگر هوا خوب باشد.
+- Sur la terrasse, s'{si}il fera beau. | روی تراس، اگر هوا خوب باشد.
+- Oui, s'il vous plaît. | بله، لطفاً.
+why: بعد از si فعل حال می‌آید: «s'il fait beau». سؤال «این یا آن؟» است و «Oui» جوابش نیست.

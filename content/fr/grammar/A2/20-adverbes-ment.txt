@@ -1,0 +1,91 @@
+code: fr-a2-adverbes-ment
+title: قید با -ment: lentement، heureusement
+scope: ساختن قید با -ment از صفت مؤنث (lent → lentement، heureux → heureusement، complet → complètement) و از صفت مذکری که به صدادار ختم می‌شود (vrai → vraiment)؛ قیدهای رایج seulement، exactement، complètement، probablement، heureusement، malheureusement، rarement، lentement و vraiment؛ جای قید بعد از فعل؛ و فرق bon / bien و mauvais / mal.
+can_do: حالا می‌توانی بگویی کاری را چطور یا چقدر انجام می‌دهی و دربارهٔ یک خبر نظرت را بگویی: Il parle lentement. Heureusement, il ne pleut pas. J'ai complètement oublié.
+rule: قید = صفت مؤنث + ment (lente → lentement، heureuse → heureusement، complète → complètement)؛ اگر صفت مذکر به صدادار ختم شود، -ment به خود آن می‌چسبد (vrai → vraiment)؛ قید عوض نمی‌شود و بعد از فعل می‌آید؛ «خوب» و «بد» برای فعل bien و mal است.
+mistake: در فارسی بیشتر صفت‌ها بی‌تغییر قید هم هستند («آهسته حرف می‌زند»، «خوب می‌خواند»)، برای همین فارسی‌زبان‌ها صفت را کنار فعل می‌گذارند («Il parle lent»، «Elle chante bon») یا -ment را به صفت مذکر می‌چسبانند («heureuxment»)؛ درست: Il parle lentement. Elle chante bien. Heureusement.
+lesson:
+قید کلمه‌ای است که می‌گوید کاری «چطور» یا «چقدر» انجام می‌شود: «آهسته حرف می‌زند»، «کاملاً فراموش کردم». در فارسی همان صفت را می‌گوییم، ولی در فرانسوی قید شکل خودش را دارد.
+بیشتر قیدها با -ment ساخته می‌شوند، از شکل مؤنث صفت: lent → lente → lentement (آهسته)، heureux → heureuse → heureusement (خوشبختانه)، complet → complète → complètement (کاملاً)، seul → seule → seulement (فقط).
+اگر صفت مذکر به صدادار ختم شود، -ment به خود آن می‌چسبد: vrai → vraiment (واقعاً)، نه «vraiement».
+exactement (دقیقاً)، probablement (احتمالاً)، rarement (به‌ندرت) و malheureusement (متأسفانه) هم همین‌طور ساخته شده‌اند.
+قید عوض نمی‌شود: il parle lentement، elle parle lentement، ils parlent lentement.
+جای قید معمولاً درست بعد از فعل است: Je vais rarement au cinéma. در passé composé قیدهای رایج مثل vraiment، complètement و probablement بین avoir یا être و اسم مفعول می‌آیند: J'ai complètement oublié.
+heureusement و malheureusement نظر گوینده را دربارهٔ کل جمله می‌گویند و اغلب اول جمله با ویرگول می‌آیند: Malheureusement, il pleut.
+یادت باشد: صفت با اسم می‌آید و قید با فعل. bon و mauvais صفت‌اند (un bon film، un mauvais film)، bien و mal قید (Il chante bien، il chante mal).
+table:
+صفت مذکر | صفت مؤنث | قید
+lent | lente | lentement
+heureux | heureuse | heureusement
+complet | complète | complètement
+seul | seule | seulement
+vrai | vraie | vraiment
+bon | bonne | bien
+mauvais | mauvaise | mal
+sets:
+صفت (با اسم یا بعد از être): bon, mauvais, lent, heureux, complet, vrai
+قید (با فعل): bien, mal, lentement, heureusement, complètement, vraiment
+examples:
+Parlez lentement, s'il vous plaît. | لطفاً آهسته صحبت کنید.
+Heureusement, il ne pleut pas. | خوشبختانه باران نمی‌آید.
+J'ai complètement oublié ton anniversaire. | تولدت را کاملاً فراموش کردم.
+Paul chante bien, mais il danse{danser} mal. | پل خوب آواز می‌خواند، ولی بد می‌رقصد.
+targets:
+Mon grand-père marche [lentement]. | پدربزرگم آهسته راه می‌رود. | d: lent, lente, lentment | hint: (lent)
+Tu peux parler plus [lentement], s'il te plaît ? | می‌شود لطفاً آهسته‌تر حرف بزنی؟ | d: lent, lente, lentment
+Mange [lentement], on n'est pas pressés ! | آهسته بخور، عجله نداریم! | d: lent, lente, lentment | hint: (lent)
+Ce train est très [lent]. | این قطار خیلی کند است. | d: lentement, lente, lents
+[Heureusement], il y a un bus à minuit. | خوشبختانه نیمه‌شب یک اتوبوس هست. | d: Heureux, Heureuse, Heureuxment | hint: (heureux) | full: Il y a un bus à minuit, heureusement.
+[Heureusement], il fait beau pour le pique-nique. | خوشبختانه برای پیک‌نیک هوا خوب است. | d: Heureux, Heureuse, Heureuxment | full: Il fait beau pour le pique-nique, heureusement.
+[Malheureusement], le magasin est fermé{fermé} le dimanche. | متأسفانه مغازه یکشنبه‌ها بسته است. | d: Malheureux, Malheureuse, Malheureuxment | full: Le magasin est fermé le dimanche, malheureusement. ; Le dimanche, malheureusement, le magasin est fermé.
+Nous voulions sortir, mais [malheureusement], il pleuvait. | می‌خواستیم بیرون برویم، ولی متأسفانه باران می‌آمد. | d: malheureux, malheureuse, malheureuxment
+Il n'y a [malheureusement] plus{plus-2} de pain. | متأسفانه دیگر نان نیست. | d: malheureux, malheureuse, malheureuxment | full: Malheureusement, il n'y a plus de pain.
+Elle a [complètement] fini son travail. | او کارش را کاملاً تمام کرد. | d: complet, complète, completment | hint: (complet)
+Le magasin est [complètement] vide. | مغازه کاملاً خالی است. | d: complet, complète, completment
+Tu as [complètement] raison. | کاملاً حق با توست. | d: complet, complète, completment | hint: (complet)
+Désolé, l'hôtel est [complet]. | ببخشید، هتل جای خالی ندارد. | d: complètement, complète, complets
+J'ai [seulement] dix euros. | فقط ده یورو دارم. | d: seul, seule, seulment | hint: (seul)
+Nous avons [seulement] une heure pour manger. | فقط یک ساعت برای غذا خوردن وقت داریم. | d: seul, seule, seulment
+Ce film est [vraiment] intéressant. | این فیلم واقعاً جالب است. | d: vrai, vraie, vraiement | hint: (vrai)
+Tu veux [vraiment] partir ? | واقعاً می‌خواهی بروی؟ | d: vrai, vraie, vraiement
+J'ai [vraiment] aimé ce restaurant. | واقعاً از این رستوران خوشم آمد. | d: vrai, vraie, vraiement | hint: (vrai)
+Ce{ce-pron} n'est pas [vraiment] cher. | واقعاً گران نیست. | d: vrai, vraie, vraiement
+C'{ce-pron}est{être} une histoire [vraie]. | این یک داستان واقعی است. | d: vraiment, vrai, vraies
+Il est [exactement] huit heures. | ساعت دقیقاً هشت است. | d: exact, exacte, exactment
+Ce{ce-pron} n'est pas [exactement] la même{même-adj} chose. | دقیقاً همان چیز نیست. | d: exact, exacte, exactment
+Il est [probablement] à la maison. | احتمالاً در خانه است. | d: probable, probables, probablment
+Ils ont [probablement] oublié. | احتمالاً یادشان رفته. | d: probable, probables, probablment
+Je vais [rarement] au cinéma. | به‌ندرت به سینما می‌روم. | d: rare, rares, rarment
+Elle mange [rarement] de la viande. | او به‌ندرت گوشت می‌خورد. | d: rare, rares, rarment
+Tu chantes très [bien] ! | خیلی خوب آواز می‌خوانی! | d: bon, bonne, bons | hint: (bon)
+C'{ce-pron}est{être} un très [bon] restaurant. | این رستوران خیلی خوبی است. | d: bien, bonne, bons
+Ma sœur dessine très [bien]. | خواهرم خیلی خوب نقاشی می‌کشد. | d: bon, bonne, bons | hint: (bon)
+Je dors [mal] depuis une semaine. | یک هفته است که بد می‌خوابم. | d: mauvais, mauvaise, malement | hint: (mauvais)
+C'{ce-pron}est{être} un [mauvais] film. | این فیلم بدی است. | d: mal, mauvaise, mauvaises
+Il a [mal] compris la question. | او سؤال را بد فهمید. | d: mauvais, mauvaise, malement | hint: (mauvais)
+Le train est [lent] : il roule [lentement] dans la montagne. | قطار کند است: در کوهستان آهسته حرکت می‌کند. | d: lentement, lente, lents / lent, lente, lentment
+Je suis{être} [vraiment] désolé : j'ai [complètement] oublié. | واقعاً متأسفم: کاملاً فراموش کردم. | d: vrai, vraie, vraiement / complet, complète, completment
+[Heureusement], il y a un train [exactement] à midi. | خوشبختانه دقیقاً ساعت دوازده یک قطار هست. | d: Heureux, Heureuse, Heureuxment / exact, exacte, exactment | full: Il y a un train exactement à midi, heureusement.
+Il parle [lentement] et il explique [bien]. | آهسته حرف می‌زند و خوب توضیح می‌دهد. | d: lent, lente, lentment / bon, bonne, bons | full: Il explique bien et il parle lentement.
+Je vois [rarement] mes cousins : ils habitent [vraiment] loin. | پسرعموهایم را به‌ندرت می‌بینم: واقعاً دور زندگی می‌کنند. | d: rare, rares, rarment / vrai, vraie, vraiement
+C'{ce-pron}est{être} un [bon] élève, mais il écrit [mal]. | شاگرد خوبی است، ولی بد می‌نویسد. | d: bien, bonne, bons / mauvais, mauvaise, malement
+[Malheureusement], il reste [seulement] deux places. | متأسفانه فقط دو جا مانده. | d: Malheureux, Malheureuse, Malheureuxment / seul, seule, seulment | full: Il reste seulement deux places, malheureusement.
+Tu as [probablement] raison, mais je ne suis{être} pas [complètement] sûr. | احتمالاً حق با توست، ولی کاملاً مطمئن نیستم. | d: probable, probables, probablment / complet, complète, completment
+transforms:
+Il parle lent. => Il parle lentement. | غلط جمله را درست کن.
+Elle chante bon. => Elle chante bien. | غلط جمله را درست کن.
+C'{ce-pron}est{être} un mal restaurant. => C'{ce-pron}est{être} un mauvais restaurant. | غلط جمله را درست کن.
+Je vais au cinéma. => Je vais rarement au cinéma. | rarement را سر جایش در جمله بگذار.
+Il fait beau. => Heureusement, il fait beau. ; Il fait beau, heureusement. | heureusement را به جمله اضافه کن.
+Tu as raison. => Tu as vraiment raison. | vraiment را سر جایش در جمله بگذار.
+Paul danse{danser} mal. => Paul danse{danser} bien. | «بد» را «خوب» کن.
+C'{ce-pron}est{être} un mauvais film. => C'{ce-pron}est{être} un bon film. | «بد» را «خوب» کن.
+translations:
+لطفاً آهسته‌تر حرف بزنید. => Parlez plus lentement, s'il vous plaît. ; S'il vous plaît, parlez plus lentement.
+خوشبختانه هوا خوب است. => Heureusement, il fait beau. ; Il fait beau, heureusement.
+کاملاً فراموش کردم. => J'ai complètement oublié.
+فقط ده یورو دارم. => J'ai seulement dix euros. ; J'ai seulement 10 euros. ; Je n'ai que dix euros. ; Je n'ai que 10 euros.
+این فیلم واقعاً جالب است. => Ce film est vraiment intéressant.
+به‌ندرت به سینما می‌روم. => Je vais rarement au cinéma.
+او (مرد) خوب آواز می‌خواند، ولی بد می‌رقصد. => Il chante bien, mais il danse{danser} mal. ; Il chante bien, mais danse{danser} mal.
+متأسفانه باران می‌آید. => Malheureusement, il pleut. ; Il pleut, malheureusement.

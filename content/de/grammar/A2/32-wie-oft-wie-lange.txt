@@ -1,0 +1,91 @@
+code: de-a2-zeit-fragen
+title: wie oft، wie lange، seit wann: پرسیدن از زمان و تکرار
+scope: پرسیدن از زمان با wann، wie oft، wie lange، seit wann، bis wann و ab wann و جواب‌هایشان (um zehn Uhr، jeden Tag، zwei Stunden، seit drei Jahren، bis sechs Uhr، ab Montag)، قیدهای تکرار immer، meistens، oft، manchmal، selten و nie و جایشان بعد از فعل، و jeden Tag، jede Woche، jedes Jahr و einmal pro Woche / in der Woche / im Monat / am Tag؛ حرف‌های اضافه زمان (seit، bis، ab) در واحد خودشان آمده‌اند.
+can_do: حالا می‌توانی بپرسی کسی چند وقت یک بار، چه مدت و از کی کاری را می‌کند، و از عادت‌هایت بگویی.
+rule: wann = کی، wie oft = چند وقت یک بار، wie lange = چه مدت، seit wann = از کی تا حالا، bis wann = تا کی، ab wann = از کی به بعد؛ immer، oft، nie و مانند آن‌ها بعد از فعل صرف‌شده می‌آیند (Ich trinke nie Kaffee).
+mistake: در فارسی قید پیش از فعل می‌آید («هیچ‌وقت قهوه نمی‌نوشم»)، پس فارسی‌زبان‌ها می‌گویند «Ich nie trinke Kaffee» یا با منفی دوتایی «Ich trinke nie nicht Kaffee»؛ درست: Ich trinke nie Kaffee. «هر روز» هم بی‌حرف اضافه است: jeden Tag، نه «in jeden Tag».
+lesson:
+wann? یعنی «کی؟» و جوابش یک زمان است: Wann kommst du? – Um acht Uhr. / Am Montag.
+wie oft? یعنی «چند وقت یک بار؟»: Wie oft gehst du schwimmen? – Einmal pro Woche. / Jeden Tag.
+wie lange? یعنی «چه مدت؟» و جوابش یک مدت است: Wie lange dauert der Film? – Zwei Stunden.
+seit wann? یعنی «از کی تا حالا؟» برای کاری که هنوز ادامه دارد: Seit wann wohnst du hier? – Seit drei Jahren. این را با Wie lange wohnst du schon hier? هم می‌پرسند.
+bis wann? یعنی «تا کی؟» (– Bis sechs Uhr.) و ab wann? یعنی «از کی به بعد؟» (– Ab Montag.).
+قیدهای تکرار از «همیشه» تا «هیچ‌وقت»: immer، meistens، oft، manchmal، selten، nie. در جمله بعد از فعل صرف‌شده می‌آیند، نه پیش از آن: Ich trinke nie Kaffee. Am Wochenende schlafe ich meistens lange.
+nie خودش منفی است و nicht نمی‌گیرد، هرچند در فارسی فعل را هم منفی می‌کنیم («هیچ‌وقت نمی‌نوشم»).
+jeden Tag، jede Woche و jedes Jahr حرف اضافه نمی‌خواهند و jeder پسوند مفعولی می‌گیرد. برای «چند بار در …» بگو: einmal pro Woche، einmal in der Woche، einmal im Monat، einmal am Tag.
+table:
+سؤال | معنی | جواب نمونه
+Wann? | کی؟ | Um acht Uhr. / Am Montag.
+Wie oft? | چند وقت یک بار؟ | Jeden Tag. / Einmal pro Woche.
+Wie lange? | چه مدت؟ | Zwei Stunden. / Eine Woche.
+Seit wann? | از کی تا حالا؟ | Seit drei Jahren.
+Bis wann? | تا کی؟ | Bis sechs Uhr.
+Ab wann? | از کی به بعد؟ | Ab Montag.
+sets:
+تکرار: immer, meistens, oft, manchmal, selten, nie
+jeder: jeden Tag, jede Woche, jedes Jahr, jeden Morgen
+چند بار: einmal pro Woche, einmal in der Woche, einmal im Monat, einmal am Tag
+examples:
+Wie oft gehst du schwimmen? – Jeden Tag. | چند وقت یک بار شنا می‌روی؟ – هر روز.
+Wie lange dauert der Kurs? – Drei Monate. | کلاس چه مدت طول می‌کشد؟ – سه ماه.
+Seit wann wohnst du hier? – Seit zwei Jahren. | از کی اینجا زندگی می‌کنی؟ – از دو سال پیش.
+Ich trinke nie Kaffee. | من هیچ‌وقت قهوه نمی‌نوشم.
+targets:
+[Wie oft] gehst du ins Kino? – Einmal im Monat. | چند وقت یک بار سینما می‌روی؟ – ماهی یک بار. | d: Wie lange, Seit wann, Bis wann
+[Wie oft] kommt der Bus? – Alle zehn Minuten. | اتوبوس هر چند وقت یک بار می‌آید؟ – هر ده دقیقه. | d: Wie lange, Seit wann, Bis wann | ok: Wann
+[Wie oft] putzt du dir die Zähne? – Morgens{morgens} und abends. | روزی چند بار مسواک می‌زنی؟ – صبح و شب. | d: Wie lange, Seit wann, Ab wann | ok: Wann
+[Wie lange] dauert der Film? – Zwei Stunden. | فیلم چقدر طول می‌کشد؟ – دو ساعت. | d: Wie oft, Seit wann, Ab wann
+[Wie lange] bleibst du in Deutschland? – Einen Monat. | چه مدت در آلمان می‌مانی؟ – یک ماه. | d: Wie oft, Seit wann, Bis wann
+[Wie lange] fährt man von Berlin nach Hamburg? – Ungefähr zwei Stunden. | از برلین تا هامبورگ چقدر راه است؟ – حدود دو ساعت. | d: Wie oft, Seit wann, Ab wann
+[Wie lange] hast du in Wien gewohnt? – Fünf Jahre. | چه مدت در وین زندگی کردی؟ – پنج سال. | d: Seit wann, Wie oft, Ab wann
+[Seit wann] wohnst du in Berlin? – Seit drei Jahren. | از کی در برلین زندگی می‌کنی؟ – از سه سال پیش. | d: Wie oft, Bis wann, Ab wann | ok: Wie lange
+[Seit wann] hast du Fieber? – Seit gestern. | از کی تب داری؟ – از دیروز. | d: Wie oft, Bis wann, Ab wann | ok: Wie lange
+[Bis wann] ist die Bibliothek offen? – Bis acht Uhr. | کتابخانه تا کی باز است؟ – تا ساعت هشت. | d: Seit wann, Wie oft, Ab wann | ok: Wie lange
+[Wann] fährt der nächste{nächste} Zug nach Köln? – Um zehn Uhr. | قطار بعدی به کلن کی حرکت می‌کند؟ – ساعت ده. | d: Wie oft, Wie lange, Seit wann | ok: Um wie viel Uhr
+[Wann] hast du Geburtstag? – Im Mai. | تولدت کی است؟ – در ماه مه. | d: Wie oft, Wie lange, Seit wann
+[Wie oft] siehst du deine Eltern? – Jeden Sonntag. | پدر و مادرت را هر چند وقت یک بار می‌بینی؟ – هر یکشنبه. | d: Wie lange, Seit wann, Bis wann | ok: Wann
+Am Sonntag [arbeite ich nie]. | یکشنبه‌ها هیچ‌وقت کار نمی‌کنم. | d: ich arbeite nie, ich nie arbeite, nie arbeite ich | full: Ich arbeite am Sonntag nie. ; Ich arbeite nie am Sonntag.
+Seit wann bist du hier? – Seit [einer] Woche. | از کی اینجایی؟ – از یک هفته پیش. | d: eine, einem, einen
+Wie lange hast du gewartet? – [Eine] Stunde. | چه مدت منتظر ماندی؟ – یک ساعت. | d: Einer, Einem, Einen
+Ab wann ist das Schwimmbad offen? – [Ab] neun Uhr. | استخر از چه ساعتی باز است؟ – از ساعت نه. | d: Bis, Vor, In | ok: Um
+Mein Vater [isst nie] Fisch. | پدرم هیچ‌وقت ماهی نمی‌خورد. | d: nie isst, isst nie nicht, nie nicht isst
+Am Wochenende [schlafe ich meistens] lange. | آخر هفته‌ها معمولاً تا دیروقت می‌خوابم. | d: ich schlafe meistens, ich meistens schlafe, meistens ich schlafe | full: Ich schlafe am Wochenende meistens lange. ; Meistens schlafe ich am Wochenende lange.
+Ich [gehe manchmal] zu Fuß zur Arbeit. | گاهی پیاده سر کار می‌روم. | d: manchmal gehe, manchmal geht, gehen manchmal | full: Manchmal gehe ich zu Fuß zur Arbeit.
+Er ist [immer] pünktlich, er kommt nie zu spät. | او همیشه سر وقت است، هیچ‌وقت دیر نمی‌آید. | d: nie, selten, manchmal
+Ich bin [selten] krank, vielleicht einmal im Jahr. | به‌ندرت مریض می‌شوم، شاید سالی یک بار. | d: immer, meistens, oft | ok: manchmal
+Wie oft isst du Fleisch? – [Nie], ich esse vegetarisch. | چند وقت یک بار گوشت می‌خوری؟ – هیچ‌وقت، من گیاه‌خوارم. | d: Immer, Oft, Meistens
+Gehst du oft ins Theater? – Nein, nur [selten]. | اغلب تئاتر می‌روی؟ – نه، فقط به‌ندرت. | d: immer, oft, meistens | ok: manchmal
+Ich fahre [jeden] Tag mit dem Fahrrad zur Arbeit. | من هر روز با دوچرخه سر کار می‌روم. | d: jeder, jedem, jedes | hint: (jeder) | full: Jeden Tag fahre ich mit dem Fahrrad zur Arbeit.
+Wir besuchen [jedes] Jahr unsere Großeltern. | ما هر سال به دیدن پدربزرگ و مادربزرگمان می‌رویم. | d: jeden, jeder, jede | hint: (jeder) | full: Jedes Jahr besuchen wir unsere Großeltern. ; Wir besuchen unsere Großeltern jedes Jahr.
+Ich telefoniere [jede] Woche mit meiner{mein} Mutter. | هر هفته با مادرم تلفنی حرف می‌زنم. | d: jeden, jeder, jedes | hint: (jeder) | full: Jede Woche telefoniere ich mit meiner Mutter.
+[Jeden] Morgen trinke ich einen Tee. | هر روز صبح یک چای می‌نوشم. | d: Jeder, Jedem, Jedes | hint: (jeder) | full: Ich trinke jeden Morgen einen Tee.
+Wir treffen uns [jeden] Freitag im Café. | ما هر جمعه در کافه همدیگر را می‌بینیم. | d: jeder, jedem, jede | hint: (jeder) | full: Jeden Freitag treffen wir uns im Café.
+Ich gehe einmal [pro] Woche schwimmen. | هفته‌ای یک بار شنا می‌روم. | d: für, im, am | ok: in der | full: Einmal pro Woche gehe ich schwimmen.
+Wir essen einmal [im] Monat im Restaurant. | ماهی یک بار در رستوران غذا می‌خوریم. | d: am, in, um | ok: pro | full: Einmal im Monat essen wir im Restaurant.
+Ich spiele einmal [in der] Woche Tennis. | هفته‌ای یک بار تنیس بازی می‌کنم. | d: im, in die, am | ok: pro | full: Einmal in der Woche spiele ich Tennis.
+Ich esse nur einmal [am] Tag warm. | فقط روزی یک بار غذای گرم می‌خورم. | d: in, um, an | ok: pro
+[Wie oft] fährt der Zug nach Köln? – [Jede] Stunde. | قطار به کلن هر چند وقت یک بار حرکت می‌کند؟ – هر ساعت. | d: Wie lange, Seit wann, Bis wann / Jeden, Jeder, Jedes
+[Seit wann] lernst du Deutsch? – Seit [einem] Jahr. | از کی آلمانی یاد می‌گیری؟ – از یک سال پیش. | d: Wie oft, Bis wann, Ab wann / ein, einen, einer | ok: Wie lange
+[Wie lange] warst du in Wien? – [Eine] Woche. | چه مدت در وین بودی؟ – یک هفته. | d: Seit wann, Wie oft, Ab wann / Einer, Einen, Einem
+[Bis wann] musst du heute arbeiten? – [Bis] sechs Uhr. | امروز تا کی باید کار کنی؟ – تا ساعت شش. | d: Seit wann, Ab wann, Wie oft / Seit, Ab, Von | ok: Wie lange
+[Ab wann] bist du im Urlaub? – [Ab] Montag. | از کی به مرخصی می‌روی؟ – از دوشنبه. | d: Seit wann, Bis wann, Wie oft / Bis, Um, Von | ok: Wann
+[Wann] beginnt der Kurs? – [Am] Montag. | کلاس کی شروع می‌شود؟ – دوشنبه. | d: Wie oft, Wie lange, Seit wann / Im, Um, An
+Ich gehe einmal [pro] Woche schwimmen, und Anna geht [jeden] Tag. | من هفته‌ای یک بار شنا می‌روم و آنا هر روز. | d: für, im, am / jeder, jedem, jedes | ok: in der
+transforms:
+Ich gehe oft ins Kino. => Wie oft gehst du ins Kino? | برای «oft» سؤال بساز و از du بپرس.
+Der Film dauert zwei Stunden. => Wie lange dauert der Film? | برای «zwei Stunden» سؤال بساز.
+Ich wohne seit drei Jahren hier. => Seit wann wohnst du hier? ; Wie lange wohnst du schon hier? ; Wie lange wohnst du hier? | برای «seit drei Jahren» سؤال بساز و از du بپرس.
+Ich arbeite bis sechs Uhr. => Bis wann arbeitest du? ; Wie lange arbeitest du? | برای «bis sechs Uhr» سؤال بساز و از du بپرس.
+Ich trinke Kaffee. => Ich trinke nie Kaffee. ; Nie trinke ich Kaffee. | با nie بگو «هیچ‌وقت قهوه نمی‌نوشم».
+Ich gehe am Montag schwimmen. => Ich gehe jeden Montag schwimmen. ; Jeden Montag gehe ich schwimmen. | به‌جای «am Montag» بگو «هر دوشنبه».
+Ich besuche diese Woche meine Oma. => Ich besuche jede Woche meine Oma. ; Jede Woche besuche ich meine Oma. ; Ich besuche meine Oma jede Woche. | به‌جای «diese Woche» بگو «هر هفته».
+Wir fahren dieses Jahr ans Meer. => Wir fahren jedes Jahr ans Meer. ; Jedes Jahr fahren wir ans Meer. | به‌جای «dieses Jahr» بگو «هر سال».
+translations:
+چند وقت یک بار سینما می‌روی؟ => Wie oft gehst du ins Kino?
+فیلم چقدر طول می‌کشد؟ => Wie lange dauert der Film?
+از کی اینجا زندگی می‌کنی؟ => Seit wann wohnst du hier? ; Seit wann lebst du hier? ; Wie lange wohnst du schon hier? ; Wie lange lebst du schon hier?
+من هیچ‌وقت قهوه نمی‌نوشم. => Ich trinke nie Kaffee.
+هر روز شنا می‌کنم. => Ich schwimme jeden Tag. ; Jeden Tag schwimme ich. ; Ich gehe jeden Tag schwimmen. ; Jeden Tag gehe ich schwimmen.
+هفته‌ای یک بار تنیس بازی می‌کنم. => Ich spiele einmal pro Woche Tennis. ; Ich spiele einmal in der Woche Tennis. ; Einmal pro Woche spiele ich Tennis. ; Einmal in der Woche spiele ich Tennis.
+کتابخانه تا کی باز است؟ => Bis wann ist die Bibliothek offen? ; Wie lange ist die Bibliothek offen? ; Bis wann ist die Bibliothek geöffnet? ; Wie lange ist die Bibliothek geöffnet?
+به‌ندرت مریض می‌شوم. => Ich bin selten krank. ; Ich werde selten krank.

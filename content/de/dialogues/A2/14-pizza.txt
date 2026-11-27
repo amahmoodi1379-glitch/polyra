@@ -1,0 +1,34 @@
+code: de-a2-d014
+title: سفارش غذا با تلفن
+situation: شب در هتل هستی و گرسنه‌ای. به یک پیتزافروشی زنگ می‌زنی تا برایت غذا بیاورند.
+turns:
+B: Guten Abend! Sie{Sie-3} möchten etwas bestellen? | عصر بخیر! می‌خواهید چیزی سفارش بدهید؟
++ Guten Abend! Ja, ich hätte gern eine große Pizza. | عصر بخیر! بله، یک پیتزای بزرگ می‌خواستم.
+- Guten Abend! Ja, ich hätte gern einen großen Pizza. | عصر بخیر! بله، یک پیتزای بزرگ می‌خواستم.
+- Guten Abend! Ja, ich hätte gern einen großen Tisch. | عصر بخیر! بله، یک میز بزرگ می‌خواستم.
+why: Pizza مؤنث است: «eine große Pizza». زنگ زده‌ای غذا سفارش بدهی، نه میز رزرو کنی.
+B: Gern. Welche Pizza möchten Sie? | با کمال میل. چه پیتزایی می‌خواهید؟
+- Eine vegetarische Pizza mit Hähnchen, bitte{bitte}. | یک پیتزای گیاهی با مرغ، لطفاً.
++ Eine vegetarische Pizza, bitte{bitte}. Ist sie scharf? | یک پیتزای گیاهی، لطفاً. تند است؟
+- Eine vegetarische Pizza, bitte{bitte}. Ist er scharf? | یک پیتزای گیاهی، لطفاً. او تند است؟
+why: vegetarisch یعنی بی‌گوشت، پس با مرغ جور نیست. Pizza مؤنث است و ضمیرش sie است، نه er.
+B: Nein, sie ist nicht scharf. Möchten Sie auch etwas trinken? | نه، تند نیست. چیزی هم برای نوشیدن می‌خواهید؟
+- Nein, danke{danke}. Eine Flasche Mineralwasser, bitte{bitte}. | نه، ممنون. یک بطری آب معدنی، لطفاً.
+- Ja, ein Flasche Mineralwasser, bitte{bitte}. | بله، یک بطری آب معدنی، لطفاً.
++ Ja, eine Flasche Mineralwasser, bitte{bitte}. | بله، یک بطری آب معدنی، لطفاً.
+why: وقتی چیزی می‌خواهی «Ja» می‌گویی، نه «Nein, danke». Flasche مؤنث است: «eine Flasche».
+B: Gut. Und wohin bringen wir das Essen? | خوب. غذا را کجا بیاوریم؟
+- Im Hotel Weber, bitte{bitte}. Zimmer zwölf. | در هتل وبر، لطفاً. اتاق دوازده.
++ Ins Hotel Weber, bitte{bitte}. Zimmer zwölf. | به هتل وبر، لطفاً. اتاق دوازده.
+- Aus dem Hotel Weber, bitte{bitte}. Zimmer zwölf. | از هتل وبر، لطفاً. اتاق دوازده.
+why: «Wohin?» مقصد را می‌پرسد، پس ins می‌آید (in + das)، نه im. aus یعنی «از».
+B: Alles klar. Das dauert ungefähr vierzig Minuten. | باشه. حدود چهل دقیقه طول می‌کشد.
++ Gut. Was kostet das zusammen? | خوب. روی هم چقدر می‌شود؟
+- Gut. Was kosten das zusammen? | خوب. روی هم چقدر می‌شود؟
+- Gut. Und wann kommt die Pizza? | خوب. پیتزا کی می‌آید؟
+why: حالا قیمت را می‌پرسی؛ با das شکل kostet می‌آید، نه kosten. زمان رسیدن پیتزا را همین الان گفت.
+B: Zusammen 16 Euro 50. Sie{Sie-3} können bar oder mit Karte bezahlen. | روی هم ۱۶ یورو و ۵۰ سنت. می‌توانید نقد یا با کارت پرداخت کنید. | tts: Zusammen sechzehn Euro fünfzig. Sie können bar oder mit Karte bezahlen.
+- Ich bezahle bar. Guten Appetit! | نقد می‌دهم. نوش جان!
++ Ich bezahle bar. Bis gleich! | نقد می‌دهم. تا چند دقیقه دیگر!
+- Ich bezahle bar. Bis morgen! | نقد می‌دهم. تا فردا!
+why: پیتزا تا چهل دقیقه دیگر می‌رسد، پس «Bis gleich»، نه «Bis morgen». «Guten Appetit» را به کسی می‌گوییم که غذا می‌خورد.

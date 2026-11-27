@@ -1,0 +1,39 @@
+code: de-a2-d003
+title: خرید لباس
+situation: در یک مغازه لباس دنبال کاپشن می‌گردی. فروشنده پیش تو می‌آید.
+turns:
+B: Guten Tag! Kann ich Ihnen helfen? | روز بخیر! کمکتان کنم؟
++ Ja, gern. Ich suche eine Jacke. | بله، لطفاً. دنبال یک کاپشن می‌گردم.
+- Ja, gern. Ich suche einen Jacke. | بله، لطفاً. دنبال یک کاپشن می‌گردم.
+- Ja, gern. Ich finde eine Jacke. | بله، لطفاً. یک کاپشن پیدا می‌کنم.
+why: Jacke مؤنث است، پس «eine Jacke». suchen یعنی دنبال چیزی گشتن و finden یعنی پیدا کردن.
+B: Welche Farbe möchten Sie? | چه رنگی می‌خواهید؟
+- Groß, bitte{bitte}. | بزرگ، لطفاً.
++ Blau oder schwarz. | آبی یا مشکی.
+- Für meinen Bruder. | برای برادرم.
+why: فروشنده رنگ را پرسیده: «Blau oder schwarz». «Groß» اندازه است و «Für meinen Bruder» می‌گوید برای کیست.
+B: Hier ist eine Jacke in Blau. Gefällt sie Ihnen? | این یک کاپشن آبی است. خوشتان می‌آید؟
+- Ja, sehr! Ich gefalle sie. | بله، خیلی! من مورد پسند آن هستم.
+- Ja, sehr! Gib mir die Jacke! | بله، خیلی! کاپشن را بده به من!
++ Ja, sehr! Kann ich sie anprobieren? | بله، خیلی! می‌توانم آن را پرو کنم؟
+why: برای امتحان کردن لباس anprobieren می‌گوییم. با gefallen لباس فاعل است («Sie gefällt mir»)، نه «Ich gefalle sie»، و «Gib mir!» با فروشنده بی‌ادبانه است.
+B: Natürlich. Welche Größe haben Sie? | البته. چه سایزی دارید؟
++ Größe 38, glaube ich. | سایز ۳۸، فکر کنم. | tts: Größe achtunddreißig, glaube ich.
+- 38 Euro, glaube ich. | ۳۸ یورو، فکر کنم. | tts: Achtunddreißig Euro, glaube ich.
+- Ich bin 38 Jahre alt. | من ۳۸ ساله‌ام. | tts: Ich bin achtunddreißig Jahre alt.
+why: فروشنده سایز را پرسیده: «Größe 38». ۳۸ یورو قیمت است و ۳۸ ساله سن.
+B: Und? Passt die Jacke? | خب؟ کاپشن اندازه است؟
+- Nein, er ist zu{zu-adv} klein. Haben Sie ihn auch in 40? | نه، زیادی کوچک است. آن را در ۴۰ هم دارید؟ | tts: Nein, er ist zu klein. Haben Sie ihn auch in vierzig?
++ Nein, sie ist zu{zu-adv} klein. Haben Sie sie auch in 40? | نه، زیادی کوچک است. آن را در ۴۰ هم دارید؟ | tts: Nein, sie ist zu klein. Haben Sie sie auch in vierzig?
+- Nein, sie ist zu{zu-adv} klein. Haben Sie sie auch in 36? | نه، زیادی کوچک است. آن را در ۳۶ هم دارید؟ | tts: Nein, sie ist zu klein. Haben Sie sie auch in sechsunddreißig?
+why: Jacke مؤنث است، پس sie، نه er و ihn. وقتی لباس کوچک است، سایز بزرگ‌تر می‌خواهی: ۴۰، نه ۳۶.
+B: Hier ist die Jacke in 40. | بفرمایید، این کاپشن در سایز ۴۰. | tts: Hier ist die Jacke in vierzig.
+- Die passt gut! Was kostet er? | این اندازه است! قیمتش چند است؟
+- Die passt gut! Wie alt ist sie? | این اندازه است! چند سالش است؟
++ Die passt gut! Was kostet sie? | این اندازه است! قیمتش چند است؟
+why: حالا قیمت را می‌پرسی. Jacke مؤنث است و ضمیرش sie است، نه er، و سن کاپشن را نمی‌پرسیم.
+B: Sie kostet 59 Euro. Bezahlen Sie bitte{bitte} dort an der Kasse. | ۵۹ یورو است. لطفاً آنجا سر صندوق پرداخت کنید. | tts: Sie kostet neunundfünfzig Euro. Bezahlen Sie bitte dort an der Kasse.
++ Gut, dann nehme ich sie. Vielen Dank! | خوب، پس برش می‌دارم. خیلی ممنون!
+- Gut, dann nehme ich ihr. Vielen Dank! | خوب، پس برایش برمی‌دارم. خیلی ممنون!
+- Gut, dann verkaufe ich sie. Vielen Dank! | خوب، پس آن را می‌فروشم. خیلی ممنون!
+why: «ich nehme sie» یعنی کاپشن را می‌خرم؛ ihr شکل Dativ است و اینجا جا ندارد. تو می‌خری، نمی‌فروشی (verkaufen).

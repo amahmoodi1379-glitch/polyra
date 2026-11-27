@@ -1,0 +1,85 @@
+code: fr-a2-imperatif-pronoms
+title: امر با ضمیر: Regarde-le ! Ne le regarde pas !
+scope: امر با یک ضمیر مفعولی: در جملهٔ مثبت ضمیر بعد از فعل و با خط تیره می‌آید (Regarde-le ! Aide-moi ! Donne-lui le livre ! Prends-en ! Vas-y !) و me و te می‌شوند moi و toi؛ در منفی ضمیر سر جای همیشگی‌اش قبل از فعل است (Ne le regarde pas ! Ne me parle pas !)؛ دو ضمیر با هم (Donne-le-moi) در B1 می‌آید.
+can_do: حالا می‌توانی کوتاه و طبیعی دستور بدهی، کمک بخواهی و کسی را از کاری منع کنی: Aide-moi ! Écoute-le ! Ne lui dis pas ! Vas-y !
+rule: امر مثبت: فعل + خط تیره + ضمیر (Regarde-le، Aide-moi، Parle-lui، Prends-en، Vas-y) و me و te می‌شوند moi و toi؛ امر منفی: ne + ضمیر + فعل + pas (Ne le regarde pas، Ne me parle pas).
+mistake: در فارسی ضمیر به آخر فعل امر می‌چسبد، چه مثبت چه منفی («نگاهش کن»، «نگاهش نکن»)، برای همین فارسی‌زبان‌ها در منفی هم ضمیر را بعد از فعل می‌گذارند («Ne regarde-le pas») یا در مثبت me می‌گویند («Aide-me»)؛ درست: Ne le regarde pas. Aide-moi.
+lesson:
+در امر مثبت، ضمیر مفعولی بعد از فعل می‌آید و با خط تیره به آن وصل می‌شود، تقریباً مثل فارسی: Regarde-le ! (نگاهش کن!)، Écoutez-la ! (به حرفش گوش کنید!).
+me و te در آخر فعل می‌شوند moi و toi: Aide-moi ! (کمکم کن!)، Assieds-toi ! (بنشین!).
+lui و leur یعنی «به او» و «به آن‌ها»: Donne-lui le livre ! (کتاب را به او بده!)، Téléphonez-leur ! (به آن‌ها تلفن بزنید!). فعلی که با à می‌آید (parler à، téléphoner à، répondre à) lui و leur می‌گیرد؛ فعلی که مستقیم می‌آید (aider، regarder، inviter) le، la و les.
+y و en هم همین‌طورند: Vas-y ! (برو!)، Prends-en ! (از آن بردار!). شکل tu فعل‌های -er و aller پیش از y و en دوباره s می‌گیرد: Va → Vas-y، Mange → Manges-en.
+در امر منفی همه چیز مثل جملهٔ معمولی است: ضمیر قبل از فعل، و ne … pas دور هر دو: Ne le regarde pas ! Ne me parle pas ! Ne leur téléphone pas ! N'y va pas !
+فرقش با فارسی همین‌جاست: در «نگاهش نکن» ضمیر آخر می‌ماند، ولی در فرانسوی منفی ضمیر به جلوی فعل می‌رود و moi دوباره me می‌شود.
+table:
+ضمیر | امر مثبت | امر منفی
+le، la، les | Regarde-le ! | Ne le regarde pas !
+me | Aide-moi ! | Ne me parle pas !
+te | Lève-toi ! | Ne te lève pas !
+lui، leur | Parle-lui ! | Ne lui parle pas !
+y | Vas-y ! | N'y va pas !
+en | Prends-en ! | N'en prends pas !
+examples:
+Aide{aider}-moi, s'il te plaît ! | لطفاً کمکم کن!
+Ce film est super, regarde-le{le-pron} ! | این فیلم عالی است، تماشایش کن!
+Ne lui dis pas ! | به او نگو!
+Il y a du gâteau, prends-en{en-pron} ! | کیک هست، کمی بردار!
+targets:
+Écoute-[moi] bien ! | خوب به حرفم گوش کن! | d: me, je, m'
+Attendez-[moi] devant le cinéma ! | جلوی سینما منتظرم بمانید! | d: me, je, mon
+Excuse-[moi], je suis en retard. | ببخشید، دیر کردم. | d: me, je, m'
+Dépêche-[toi], le bus arrive ! | عجله کن، اتوبوس دارد می‌آید! | d: te, tu, t'
+Amuse-[toi] bien à la fête ! | در جشن خوش بگذران! | d: te, tu, t'
+Si tu es fatiguée, repose-[toi] ! | اگر خسته‌ای، استراحت کن! | d: te, tu, t'
+Ne [me] regarde pas comme ça ! | این‌طوری نگاهم نکن! | d: moi, m', je
+Ne [me] parle pas pendant le film ! | وسط فیلم با من حرف نزن! | d: moi, je, m'
+Ce livre est super : lis-[le]{le-pron} ! | این کتاب عالی است: بخوانش! | d: la, les, l'
+Cette chanson est belle, écoute-[la]{la-pron} ! | این آهنگ قشنگ است، گوشش کن! | d: le, lui, les
+Tes clés ? Prends-[les]{les-pron} avec toi ! | کلیدهایت؟ با خودت ببرشان! | d: le, la, leur
+Paul est seul : invite-[le]{le-pron} à la fête ! | پل تنهاست: به جشن دعوتش کن! | d: lui, la, leur
+Ton frère a besoin d'aide : aide{aider}-[le]{le-pron} ! | برادرت کمک لازم دارد: کمکش کن! | d: lui, la, leur
+Marie et Léa arrivent : attendons-[les]{les-pron} ! | ماری و لئا دارند می‌آیند: منتظرشان بمانیم! | d: leur, la, elles
+Ta grand-mère est malade : téléphone{téléphoner}-[lui] ! | مادربزرگت مریض است: به او تلفن بزن! | d: la, le, leur
+Tes parents t'attendent : réponds-[leur]{leur} ! | پدر و مادرت منتظرت هستند: جوابشان را بده! | d: les, lui, leurs
+C'{ce-pron}est{être} l'anniversaire de Marie : offre-[lui] un cadeau ! | تولد ماری است: به او یک هدیه بده! | d: la, le, leur
+Les enfants ont faim : donne-[leur]{leur} du pain ! | بچه‌ها گرسنه‌اند: به آن‌ها نان بده! | d: les, lui, leurs
+Ce monsieur habite ici : demande-[lui] le chemin ! | این آقا اینجا زندگی می‌کند: راه را از او بپرس! | d: le, la, leur
+Écrivez-[nous] une carte postale ! | برای ما یک کارت‌پستال بنویسید! | d: notre, nos, on
+Le marché est ouvert{ouvert} : [vas]-y maintenant ! | بازار باز است: همین حالا برو! | d: va, vais, aller | hint: (aller)
+Tu as besoin de pain ? [Achètes]-en{en-pron} ! | نان لازم داری؟ کمی بخر! | d: Achète, Acheter, Acheté | hint: (acheter)
+Il y a des pommes : [manges]-en{en-pron} une ! | سیب هست: یکی بخور! | d: mange, manger, mangé | hint: (manger)
+Il reste de la soupe : prends-[en]{en-pron} ! | سوپ مانده: کمی بردار! | d: y, lui, des
+La piscine est fermée{fermé} : n'[y] va pas ! | استخر بسته است: آنجا نرو! | d: en, lui, le
+Ce gâteau est pour demain : ne [le] mange pas ! | این کیک برای فرداست: نخورش! | d: la, lui, les
+Ces chaussures sont sales : ne [les] mets pas ! | این کفش‌ها کثیف‌اند: نپوششان! | d: la, leur, le
+Paul dort : ne [lui] téléphone{téléphoner} pas maintenant ! | پل خواب است: الان به او تلفن نزن! | d: le, la, leur
+C'{ce-pron}est{être} une surprise pour tes parents : ne [leur] dis rien ! | این برای پدر و مادرت سورپرایز است: به آن‌ها هیچ چیز نگو! | d: les, leurs, eux
+Ce film est ennuyeux : [ne le regarde pas] ! | این فیلم خسته‌کننده است: تماشایش نکن! | d: ne regarde-le pas, le ne regarde pas, ne regarde pas le
+Tu as une question ? [Pose-la{la-pron}] au professeur ! | سؤال داری؟ از معلم بپرسش! | d: La pose, Pose-lui, Poses-la
+Votre passeport ? [Montrez-le{le-pron}] au policier ! | پاسپورتتان؟ به پلیس نشانش بدهید! | d: Le montrez, Montrez-lui, Montrez-la
+Écoute-[moi] et ne [me] parle pas comme ça ! | به حرفم گوش کن و این‌طوری با من حرف نزن! | d: me, je, m' / moi, je, m'
+Ton frère pleure : aide{aider}-[le]{le-pron} et ne [le] laisse pas seul ! | برادرت گریه می‌کند: کمکش کن و تنهایش نگذار! | d: lui, la, leur / lui, la, les
+Tes amis sont là : dis-[leur]{leur} bonjour et invite-[les]{les-pron} ! | دوستانت اینجا هستند: به آن‌ها سلام کن و دعوتشان کن! | d: les, lui, leurs / leur, la, le
+Ce sont tes devoirs : fais-[les]{les-pron} et ne [les] oublie pas ! | این‌ها تکالیف توست: انجامشان بده و فراموششان نکن! | d: leur, le, la / leur, le, la
+Paul est triste : téléphone{téléphoner}-[lui] et invite-[le]{le-pron} au cinéma ! | پل ناراحت است: به او تلفن بزن و به سینما دعوتش کن! | d: le, la, leur / lui, la, leur
+Il y a des fraises : [manges]-en{en-pron}, mais n'[en] mange pas trop ! | توت‌فرنگی هست: بخور، ولی زیاد نخور! | d: mange, manger, mangé / y, les, le
+C'{ce-pron}est{être} Marie qui chante : ne [me] regarde pas, regarde-[la]{la-pron} ! | ماری دارد آواز می‌خواند: به من نگاه نکن، به او نگاه کن! | d: moi, je, m' / lui, le, elle
+Vos enfants dorment : ne [leur] parlez pas, laissez-[les]{les-pron} dormir. | بچه‌هایتان خوابند: با آن‌ها حرف نزنید، بگذارید بخوابند. | d: les, lui, eux / leur, lui, eux
+transforms:
+Regarde le film ! => Regarde-le{le-pron} ! | به‌جای اسم ضمیر بگذار.
+Parle à Marie ! => Parle-lui ! | به‌جای اسم ضمیر بگذار.
+Prends du pain ! => Prends-en{en-pron} ! | به‌جای du pain ضمیر بگذار.
+Va au marché ! => Vas-y ! | به‌جای au marché ضمیر بگذار.
+Regarde-le{le-pron} ! => Ne le regarde pas ! | جمله را منفی کن.
+Aide{aider}-moi ! => Ne m'aide{aider} pas ! | جمله را منفی کن.
+Ne leur téléphone{téléphoner} pas ! => Téléphone{téléphoner}-leur{leur} ! | جمله را مثبت کن.
+Ne t'assieds pas ici ! => Assieds-toi ici ! ; Assois-toi ici ! | جمله را مثبت کن.
+translations:
+کمکم کن! => Aide{aider}-moi !
+به او (مرد) نگاه نکن! => Ne le regarde pas !
+به آن‌ها تلفن بزنید! => Téléphonez-leur{leur} ! ; Appelez-les{les-pron} !
+به او (زن) جواب بده! => Réponds-lui !
+با من حرف نزن! => Ne me parle pas !
+به او (زن) هیچ چیز نگو! => Ne lui dis rien !
+منتظرم بمانید! => Attendez-moi !
+دعوتشان کن! => Invite-les{les-pron} !

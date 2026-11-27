@@ -1,0 +1,34 @@
+code: de-a2-d015
+title: رزرو میز رستوران با تلفن
+situation: به یک رستوران زنگ می‌زنی تا برای شنبه شب میز رزرو کنی.
+turns:
+B: Restaurant Schmidt, guten Tag! | رستوران اشمیت، روز بخیر!
++ Guten Tag! Ich möchte gern einen Tisch für Samstag reservieren. | روز بخیر! می‌خواهم برای شنبه یک میز رزرو کنم.
+- Guten Tag! Ich möchte gern einen Tisch für Samstag kaufen. | روز بخیر! می‌خواهم برای شنبه یک میز بخرم.
+- Guten Tag! Ich möchte gern ein Tisch für Samstag reservieren. | روز بخیر! می‌خواهم برای شنبه یک میز رزرو کنم.
+why: میز را reservieren می‌کنیم، نمی‌خریم (kaufen). Tisch مذکر است: «einen Tisch».
+B: Gern. Für wie viele Personen und um wie viel Uhr? | با کمال میل. برای چند نفر و چه ساعتی؟
+- Für vier Stunden, um acht Uhr. | برای چهار ساعت، ساعت هشت.
++ Für vier Personen, um acht Uhr. | برای چهار نفر، ساعت هشت.
+- Für vier Personen, am acht Uhr. | برای چهار نفر، ساعت هشت.
+why: تعداد نفرها را می‌گوییم، نه چند ساعت. برای ساعت um می‌آید، نه am.
+B: Um acht ist leider alles voll. Aber um halb acht ist noch ein Tisch frei. | متأسفانه ساعت هشت همه‌جا پر است. ولی ساعت هفت و نیم هنوز یک میز خالی هست.
+- Gut, dann kommen wir um acht. | خوب، پس ساعت هشت می‌آییم.
+- Halb acht sind auch gut. | هفت و نیم هم خوب است.
++ Halb acht ist auch gut. | هفت و نیم هم خوب است.
+why: ساعت هشت پر است، پس هفت و نیم را قبول می‌کنی. با «halb acht» شکل ist می‌آید، نه sind.
+B: Gut. Auf welchen Namen, bitte{bitte}? | خوب. به چه نامی، لطفاً؟
++ Auf den Namen Ahmadi. | به نام احمدی.
+- Auf die Namen Ahmadi. | به نام احمدی.
+- Auf vier Personen. | به چهار نفر.
+why: نام را می‌پرسد: «Auf den Namen Ahmadi». Name مذکر است، پس den، نه die.
+B: Danke{danke}, Herr Ahmadi. Möchten Sie drinnen oder draußen sitzen? | ممنون آقای احمدی. می‌خواهید داخل بنشینید یا بیرون؟
+- Draußen, bitte{bitte}. Der Wetter ist so schön! | بیرون، لطفاً. هوا خیلی خوب است!
++ Draußen, bitte{bitte}. Das Wetter ist so schön! | بیرون، لطفاً. هوا خیلی خوب است!
+- Draußen, bitte{bitte}. Das Wetter ist so schlecht! | بیرون، لطفاً. هوا خیلی بد است!
+why: Wetter خنثی است: «das Wetter». وقتی هوا بد است، کسی نمی‌خواهد بیرون بنشیند.
+B: Gern. Dann bis Samstag um halb acht! | با کمال میل. پس تا شنبه ساعت هفت و نیم!
++ Vielen Dank! Bis Samstag! | خیلی ممنون! تا شنبه!
+- Vielen Dank! Bis Sonntag! | خیلی ممنون! تا یکشنبه!
+- Vielen Dank! Guten Appetit! | خیلی ممنون! نوش جان!
+why: قرار شنبه است، نه یکشنبه. «Guten Appetit» را سر غذا می‌گوییم.

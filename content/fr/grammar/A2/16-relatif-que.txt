@@ -1,0 +1,83 @@
+code: fr-a2-relatif-que
+title: «که» برای مفعول: que (le livre que je lis)
+scope: ضمیر موصولی que وقتی اسمِ قبلش مفعولِ جملهٔ دوم است (le livre que je lis، la femme que tu connais)، qu' پیش از صدادار، و انتخاب بین qui و que؛ جور شدن اسم مفعول بعد از que (la robe que j'ai achetée) در B1 می‌آید.
+can_do: حالا می‌توانی دربارهٔ چیزها و آدم‌هایی که می‌بینی، می‌خری یا دوست داری دقیق حرف بزنی: C'est le livre que je lis. Le film qu'il regarde est long.
+rule: اسم + que + فاعل + فعل: que جای مفعولِ جملهٔ دوم را می‌گیرد (le livre que je lis)؛ قبل از صدادار qu' (le film qu'il regarde)؛ بعد از جای خالی اگر فعل آمد qui، اگر فاعل آمد que.
+mistake: فارسی برای هر دو «که» می‌گوید، برای همین فارسی‌زبان‌ها qui و que را قاطی می‌کنند («le livre qui je lis») و ضمیر مفعولی را مثل «آن را» در فارسی دوباره می‌آورند («le livre que je le lis»)؛ درست: le livre que je lis. قبل از صدادار هم que کوتاه می‌شود: «le film que il regarde» غلط است؛ درست: le film qu'il regarde.
+lesson:
+que هم «که» است، ولی وقتی اسمِ قبلش مفعولِ جملهٔ دوم است، یعنی کار روی آن انجام می‌شود: le livre que je lis (کتابی که می‌خوانم).
+دو جمله را یکی کن: Je lis un livre. Le livre est intéressant. → Le livre que je lis est intéressant.
+بعد از que همیشه یک فاعل می‌آید (je، tu، Paul، mes parents…) و بعد فعل: la femme que tu connais، la maison que mes parents veulent acheter.
+قبل از صدادار que می‌شود qu': le film qu'il regarde، la ville qu'elle préfère، le plat qu'Ali aime. ولی qui هیچ‌وقت کوتاه نمی‌شود.
+فارسی می‌گوید «کتابی که آن را می‌خوانم»؛ در فرانسوی le، la یا les را بعد از que تکرار نمی‌کنیم: «le livre que je le lis» غلط است.
+راه انتخاب: بعد از جای خالی فعل آمد → qui (l'homme qui parle)؛ فاعل آمد → que (l'homme que je vois).
+با passé composé هم همین است: le film que j'ai vu hier، le cadeau que Paul m'a donné.
+table:
+بعد از جای خالی | ضمیر | مثال
+فعل | qui | l'homme qui parle
+فاعل + فعل | que | l'homme que je vois
+صدادار (il، elle، on…) | qu' | l'homme qu'elle connaît
+examples:
+J'aime beaucoup la musique que tu écoutes. | موسیقی‌ای را که گوش می‌دهی خیلی دوست دارم.
+Le pain qu'on achète ici est très bon. | نانی که اینجا می‌خریم خیلی خوب است.
+Voici le garçon que j'ai rencontré à l'école. | این پسری است که در مدرسه با او آشنا شدم.
+C'est{être} une ville que je ne connais pas. | این شهری است که نمی‌شناسم.
+targets:
+La femme [que] tu connais est mon professeur. | زنی که می‌شناسی معلم من است. | d: qui, où, quoi
+Le garçon [que] j'ai vu hier s'appelle Lucas. | پسری که دیروز دیدم اسمش لوکاس است. | d: qui, où, quoi
+Le film [qu']il regarde est très long. | فیلمی که او (مرد) تماشا می‌کند خیلی طولانی است. | d: que, qui, quoi
+Les amis [que] nous invitons arrivent à huit heures. | دوستانی که دعوت می‌کنیم ساعت هشت می‌رسند. | d: qui, où, quoi
+C'est{être} la chanson [que] je préfère. | این آهنگی است که از همه بیشتر دوست دارم. | d: qui, où, quoi
+Le bus [que] je prends le matin est toujours en retard. | اتوبوسی که صبح‌ها سوار می‌شوم همیشه دیر می‌کند. | d: qui, où, quoi
+La ville [qu']elle préfère, c'est{être} Bordeaux. | شهری که او (زن) از همه بیشتر دوست دارد بوردو است. | d: que, qui, où
+Voici la maison [que] mes parents veulent acheter. | این خانه‌ای است که پدر و مادرم می‌خواهند بخرند. | d: qui, quoi, dont
+Tu as le numéro [que] je cherche ? | شماره‌ای را که دنبالش می‌گردم داری؟ | d: qui, où, quoi
+Le gâteau [que] tu fais sent très bon. | کیکی که درست می‌کنی خیلی بوی خوبی می‌دهد. | d: qui, où, quoi
+Les chaussures [que] je porte{porter} sont neuves. | کفش‌هایی که پوشیده‌ام نو هستند. | d: qui, où, quoi
+C'est{être} un professeur [que] tous les élèves aiment. | معلمی است که همهٔ دانش‌آموزان دوستش دارند. | d: qui, où, quoi
+L'hôtel [qu']on a réservé est près de la gare. | هتلی که رزرو کردیم نزدیک ایستگاه قطار است. | d: que, qui, quoi
+Le médecin [qu']elle voit demain est très gentil. | پزشکی که او (زن) فردا پیشش می‌رود خیلی مهربان است. | d: que, qui, où
+Le chat [que] tu as vu est à nous. | گربه‌ای که دیدی مال ماست. | d: qui, où, quoi
+C'est{être} le cadeau [que] Paul m'a donné. | این هدیه‌ای است که پل به من داد. | d: qui, où, quoi
+J'ai perdu le stylo [que] tu m'as prêté. | خودکاری را که به من قرض دادی گم کردم. | d: qui, où, quoi
+C'est{être} une question [que] tout le monde pose. | این سؤالی است که همه می‌پرسند. | d: qui, où, quoi
+Les fruits [qu']on achète au marché sont frais. | میوه‌هایی که از بازار می‌خریم تازه‌اند. | d: que, qui, où
+La personne{personne} [qu']il attend n'est pas encore arrivée{arriver}. | کسی که منتظرش است هنوز نرسیده است. | d: que, qui, où
+Le pull [qu']elle porte{porter} est à sa sœur. | پلیوری که او (زن) پوشیده مال خواهرش است. | d: que, qui, où
+Les élèves [que] je connais parlent bien français. | دانش‌آموزانی که می‌شناسم خوب فرانسوی حرف می‌زنند. | d: qui, où, quoi
+L'émission [qu']on regarde commence à neuf heures. | برنامه‌ای که تماشا می‌کنیم ساعت نه شروع می‌شود. | d: que, qui, quoi
+Le vélo [que] mon père m'a acheté est rouge. | دوچرخه‌ای که پدرم برایم خرید قرمز است. | d: qui, où, quoi
+C'est{être} un plat [qu']Ali cuisine{cuisiner} souvent. | این غذایی است که علی اغلب درست می‌کند. | d: que, qui, quoi
+C'est{être} la langue [que] j'apprends. | این زبانی است که یاد می‌گیرم. | d: qui, où, quoi
+Le livre [que je] lis est à Marie. | کتابی که می‌خوانم مال ماری است. | d: qui je, que je le, qui je le
+La robe [que tu] portes{porter} est très jolie. | لباسی که پوشیده‌ای خیلی قشنگ است. | d: qui tu, que tu la, qui tu la
+Le café [que nous] buvons vient du{du-contr} Brésil. | قهوه‌ای که می‌نوشیم از برزیل می‌آید. | d: qui nous, que nous le, qui nous le
+Les enfants [que vous] voyez sont mes neveux. | بچه‌هایی که می‌بینید برادرزاده‌های من هستند. | d: qui vous, que vous les, qui vous les
+Le chat [qui] dort sur le lit est à Léa. | گربه‌ای که روی تخت خوابیده مال لئاست. | d: que, qu'il, où
+Voici le professeur [qui] enseigne le français. | این معلمی است که فرانسوی درس می‌دهد. | d: que, qu'il, où
+C'est{être} un film [qui] finit bien et [que] j'aime beaucoup. | این فیلمی است که خوب تمام می‌شود و خیلی دوستش دارم. | d: que, qu'il, où / qui, où, quoi
+Le pain [que] j'achète vient de la boulangerie [qui] est près d'ici. | نانی که می‌خرم از نانوایی‌ای می‌آید که نزدیک اینجاست. | d: qui, où, quoi / que, qu'elle, où
+Paul est un ami [que] j'aime beaucoup et [qui] m'aide{aider} souvent. | پل دوستی است که خیلی دوستش دارم و اغلب به من کمک می‌کند. | d: qui, où, quoi / que, qu'il, où
+Le train [que] je prends est le train [qui] part à huit heures. | قطاری که سوار می‌شوم قطاری است که ساعت هشت حرکت می‌کند. | d: qui, où, quoi / que, qu'il, où
+La musique [qu']il écoute, c'est{être} la musique [que] je préfère. | موسیقی‌ای که او (مرد) گوش می‌دهد همان موسیقی‌ای است که من از همه بیشتر دوست دارم. | d: que, qui, où / qui, où, quoi
+La dame [qui] est là et le monsieur [qu']elle attend sont mes voisins. | خانمی که آنجاست و آقایی که منتظرش است همسایه‌های من هستند. | d: que, qu'elle, où / que, qui, où | full: Le monsieur qu'elle attend et la dame qui est là sont mes voisins.
+Mon oncle, [qui] habite à Nice, a un chien [que] tout le monde aime. | عمویم که در نیس زندگی می‌کند سگی دارد که همه دوستش دارند. | d: que, qu'il, où / qui, où, quoi
+Le stylo [que] tu cherches est sous le livre [qui] est sur la table. | خودکاری که دنبالش می‌گردی زیر کتابی است که روی میز است. | d: qui, où, quoi / que, qu'il, où
+transforms:
+Voici le livre. Je lis ce livre. => Voici le livre que je lis. | جملهٔ دوم را با que به جملهٔ اول وصل کن.
+C'est{être} une ville. J'aime cette ville. => C'est{être} une ville que j'aime. | جملهٔ دوم را با que به جملهٔ اول وصل کن.
+Le film est long. Il regarde ce film. => Le film qu'il regarde est long. | جملهٔ دوم را با que به جملهٔ اول وصل کن.
+Voici l'ami. Tu connais cet ami. => Voici l'ami que tu connais. | جملهٔ دوم را با que به جملهٔ اول وصل کن.
+C'est{être} la robe. Elle porte{porter} cette robe. => C'est{être} la robe qu'elle porte{porter}. | جملهٔ دوم را با que به جملهٔ اول وصل کن.
+Voici le cadeau. Marie m'a donné ce cadeau. => Voici le cadeau que Marie m'a donné. | جملهٔ دوم را با que به جملهٔ اول وصل کن.
+Le pain est bon. Nous achetons ce pain ici. => Le pain que nous achetons ici est bon. | جملهٔ دوم را با que به جملهٔ اول وصل کن.
+J'ai un vélo. Il est rouge. => J'ai un vélo qui est rouge. | جملهٔ دوم را با qui یا que به جملهٔ اول وصل کن.
+translations:
+کتابی که می‌خوانم خیلی جالب است. => Le livre que je lis est très intéressant.
+فیلمی که او (مرد) تماشا می‌کند خیلی طولانی است. => Le film qu'il regarde est très long.
+این آهنگی است که از همه بیشتر دوست دارم. => C'est{être} la chanson que je préfère. ; C'est{être} la chanson que j'aime le plus.
+دوستانی که دعوت می‌کنیم ساعت هشت می‌رسند. => Les amis que nous invitons arrivent à huit heures. ; Les amis qu'on invite arrivent à huit heures. ; Les amies que nous invitons arrivent à huit heures. ; Les amies qu'on invite arrivent à huit heures.
+اتوبوسی که صبح‌ها سوار می‌شوم همیشه دیر می‌کند. => Le bus que je prends le matin est toujours en retard.
+کیکی که درست می‌کنی خیلی خوشمزه است. => Le gâteau que tu fais est très bon. ; Le gâteau que tu fais est délicieux.
+هتلی که رزرو کردیم نزدیک ایستگاه قطار است. => L'hôtel que nous avons réservé est près de la gare. ; L'hôtel qu'on a réservé est près de la gare.
+این هدیه‌ای است که پل به من داد. => C'est{être} le cadeau que Paul m'a donné. ; C'est{être} le cadeau que Paul m'a offert.

@@ -1,0 +1,87 @@
+code: fr-a2-meilleur-mieux
+title: «بهتر»: meilleur و mieux
+scope: bon → meilleur و le meilleur (صفت، با اسم جور می‌شود) و bien → mieux و le mieux (قید، با فعل)، بدون «plus bon» و «plus bien»؛ و مقایسهٔ مقدار با اسم: plus de … que و moins de … que؛ autant de در B1 می‌آید.
+can_do: حالا می‌توانی بگویی چه چیزی بهتر یا بهترین است، چه کسی کاری را بهتر انجام می‌دهد و چه کسی چیزی بیشتر یا کمتر دارد: Ce gâteau est meilleur. Tu chantes mieux que moi. J'ai moins de temps que toi.
+rule: «بهتر» برای اسم meilleur است و مثل bon جور می‌شود (meilleure، meilleurs)، برای فعل mieux که عوض نمی‌شود؛ «بهترین»: le meilleur، la meilleure، le mieux؛ با اسم: plus de / moins de + اسم + que.
+mistake: فارسی برای صفت و قید یک کلمه دارد («بهتر»)، برای همین فارسی‌زبان‌ها می‌گویند «plus bon» یا «Il chante meilleur»؛ درست: Ce gâteau est meilleur. Il chante mieux. با اسم هم de را جا می‌اندازند («J'ai plus livres») یا حرف تعریف می‌گذارند («plus des livres»)؛ درست: J'ai plus de livres.
+lesson:
+برای مقایسه معمولاً plus + صفت می‌گوییم (plus grand)، ولی bon و bien استثنا هستند.
+bon (خوب) صفت است و کنار اسم می‌آید. «بهتر» آن meilleur است، نه «plus bon»: Ce gâteau est meilleur que la tarte.
+meilleur مثل هر صفت دیگری با اسم جور می‌شود: un meilleur film، une meilleure idée، و در جمع meilleurs و meilleures.
+bien (خوب) قید است، یعنی کلمه‌ای که می‌گوید کاری «چطور» انجام می‌شود: Tu chantes bien. «بهتر» آن mieux است، نه «plus bien»: Tu chantes mieux que moi. mieux هیچ‌وقت عوض نمی‌شود.
+راه ساده: اگر در جملهٔ ساده bon می‌گفتی، حالا meilleur بگو؛ اگر bien می‌گفتی، mieux بگو. Je vais bien → Je vais mieux (حالم بهتر است).
+«بهترین» با le، la و les ساخته می‌شود: le meilleur restaurant، la meilleure amie، ma meilleure amie. با فعل همیشه le mieux است: C'est Léa qui danse le mieux.
+برای «بیشترِ» و «کمترِ» یک اسم، plus de و moins de می‌گوییم، بدون حرف تعریف: plus de temps (وقت بیشتر)، moins de voitures (ماشین کمتر)؛ قبل از صدادار d': plus d'argent.
+برای مقایسه que را اضافه کن: J'ai plus de livres que toi (من از تو کتاب بیشتری دارم).
+table:
+ | صفت: با اسم | قید: با فعل
+خوب | un bon film | Il chante bien.
+بهتر | un meilleur film | Il chante mieux.
+بهترین | le meilleur film | Il chante le mieux.
+sets:
+meilleur (جای bon): un meilleur film, une meilleure idée, le meilleur restaurant, ma meilleure amie
+mieux (جای bien): chanter mieux, dormir mieux, aller mieux, danser le mieux
+examples:
+Ce gâteau est meilleur que la tarte. | این کیک از تارت بهتر است.
+Tu chantes mieux que moi. | تو از من بهتر آواز می‌خوانی.
+C'{ce-pron}est{être} le meilleur restaurant de la ville. | این بهترین رستوران شهر است.
+J'ai moins de temps que toi. | من از تو وقت کمتری دارم.
+targets:
+Ta soupe est [meilleure] que la soupe du{du-contr} restaurant. | سوپ تو از سوپ رستوران بهتر است. | d: meilleur, plus bonne, meilleures | hint: (bon)
+Le pain de cette boulangerie est [meilleur] que le pain du{du-contr} supermarché. | نان این نانوایی از نان سوپرمارکت بهتر است. | d: plus bon, meilleure, meilleurs | hint: (bon)
+En été{été}, les fraises sont [meilleures]. | توت‌فرنگی‌ها در تابستان بهترند. | d: meilleurs, meilleure, meilleur | full: Les fraises sont meilleures en été.
+Mon frère nage [mieux] que moi. | برادرم از من بهتر شنا می‌کند. | d: meilleur, plus bien, plus bon | hint: (bien)
+Je dors [mieux] avec la fenêtre ouverte. | با پنجرهٔ باز بهتر می‌خوابم. | d: meilleur, bon, plus bon | hint: (bien)
+Vous allez [mieux] aujourd'hui, madame ? | امروز حالتان بهتر است، خانم؟ | d: meilleur, bon, plus bon | hint: (bien)
+Tu comprends [mieux] maintenant ? | حالا بهتر می‌فهمی؟ | d: meilleur, bon, plus bon | hint: (bien)
+Elle a [mieux] dormi cette nuit. | او دیشب بهتر خوابید. | d: meilleure, meilleur, bon | hint: (bien)
+On mange [mieux] à la maison qu'au restaurant. | در خانه بهتر از رستوران غذا می‌خوریم. | d: meilleur, plus bien, plus bon | hint: (bien)
+Le matin, je travaille [mieux]. | صبح‌ها بهتر کار می‌کنم. | d: meilleur, bon, plus bon | hint: (bien) | full: Je travaille mieux le matin.
+C'{ce-pron}est{être} [le meilleur] hôtel de Nice. | این بهترین هتل نیس است. | d: le mieux, le plus bon, la meilleure | hint: (bon)
+Marie est ma [meilleure] amie. | ماری بهترین دوست من است. | d: meilleur, mieux, plus bonne | hint: (bon)
+Ce sont [les meilleurs] joueurs de l'équipe. | این‌ها بهترین بازیکن‌های تیم‌اند. | d: les mieux, les plus bons, le meilleur | hint: (bon)
+C'{ce-pron}est{être} Léa qui danse{danser} [le mieux]. | لئا از همه بهتر می‌رقصد. | d: le meilleur, la meilleure, la mieux | hint: (bien)
+Qui chante [le mieux] dans ta famille ? | در خانواده‌ات چه کسی از همه بهتر آواز می‌خواند؟ | d: le meilleur, la meilleure, le plus bien | full: Dans ta famille, qui chante le mieux ?
+C'{ce-pron}est{être} la [meilleure] solution. | این بهترین راه‌حل است. | d: meilleur, mieux, plus bonne | hint: (bon)
+Nous avons visité les [meilleurs] musées de Paris. | از بهترین موزه‌های پاریس دیدن کردیم. | d: meilleures, mieux, plus bons | hint: (bon)
+Ce{ce-pron} n'est pas [le meilleur] film de l'année. | این بهترین فیلم سال نیست. | d: le mieux, la meilleure, le plus bon
+Quel est{être} [le meilleur] moment pour visiter Paris ? | بهترین وقت برای دیدن پاریس کی است؟ | d: le mieux, la meilleure, le plus bon | hint: (bon)
+C'était [la meilleure] journée de mes vacances. | آن بهترین روز تعطیلاتم بود. | d: le meilleur, la mieux, la plus bonne | hint: (bon)
+J'ai [plus{plus} de] livres que toi. | من از تو کتاب بیشتری دارم. | d: plus des, plus, plus que
+Il y a [moins de] voitures le dimanche. | یکشنبه‌ها ماشین کمتری هست. | d: moins des, moins, moins que | full: Le dimanche, il y a moins de voitures.
+Tu as plus{plus} [de] temps que moi ? | تو از من وقت بیشتری داری؟ | d: du, des, que
+Nous mangeons moins [de] viande maintenant. | حالا گوشت کمتری می‌خوریم. | d: du, la, de la | full: Maintenant, nous mangeons moins de viande.
+Il y a [plus de] touristes en été{été}. | تابستان توریست بیشتری هست. | d: plus des, plus, plus que | full: En été, il y a plus de touristes.
+Paul a [moins d']argent que son frère. | پل از برادرش پول کمتری دارد. | d: moins de l', moins, moins de
+Paris a plus{plus} [d']habitants que Lyon. | پاریس از لیون ساکنان بیشتری دارد. | d: des, de, les
+Ce café n'est pas [meilleur] que l'autre. | این قهوه از آن یکی بهتر نیست. | d: plus bon, meilleure, meilleurs | hint: (bon)
+Avec ses lunettes, il voit [mieux]. | با عینکش بهتر می‌بیند. | d: meilleur, bon, plus bon | full: Il voit mieux avec ses lunettes.
+Les enfants écoutent [mieux] le matin. | بچه‌ها صبح‌ها بهتر گوش می‌دهند. | d: meilleurs, meilleur, bons | hint: (bien) | full: Le matin, les enfants écoutent mieux.
+Hier, l'équipe a [mieux] joué. | دیروز تیم بهتر بازی کرد. | d: meilleure, meilleur, bon | full: L'équipe a mieux joué hier.
+Quelle est{être} la [meilleure] saison pour aller à Ispahan ? | بهترین فصل برای رفتن به اصفهان کدام است؟ | d: meilleur, mieux, plus bonne
+Tu cuisines{cuisiner} [mieux] que moi et ta soupe est [meilleure]. | تو از من بهتر آشپزی می‌کنی و سوپت هم بهتر است. | d: meilleur, plus bien, plus bon / meilleur, meilleures, meilleurs | full: Ta soupe est meilleure et tu cuisines mieux que moi.
+Ce livre est [meilleur] que le film et il explique [mieux] l'histoire. | این کتاب از فیلم بهتر است و داستان را بهتر توضیح می‌دهد. | d: meilleure, plus bon, meilleurs / meilleur, bon, plus bon
+J'ai [plus{plus} de] travail et [moins de] temps libre cette année. | امسال کار بیشتر و وقت آزاد کمتری دارم. | d: plus des, plus, plus que / moins des, moins, moins que | full: Cette année, j'ai plus de travail et moins de temps libre.
+Ma mère cuisine{cuisiner} [mieux] que moi : ses gâteaux sont [meilleurs]. | مادرم از من بهتر آشپزی می‌کند: کیک‌هایش بهترند. | d: meilleur, plus bien, plus bon / meilleur, meilleures, meilleure
+Ici, il y a [moins de] bruit et [plus d']arbres. | اینجا سروصدا کمتر و درخت بیشتر است. | d: moins du, moins, moins que / plus des, plus de, plus | full: Il y a moins de bruit et plus d'arbres ici.
+Elle parle [mieux] anglais que moi, mais j'ai [plus{plus} de] vocabulaire. | او از من بهتر انگلیسی حرف می‌زند، ولی من لغت بیشتری بلدم. | d: meilleur, plus bien, plus bon / plus du, plus, plus que
+Les croissants sont [meilleurs] ici, mais il y a [moins de] choix. | کروسان‌ها اینجا بهترند، ولی انتخاب کمتری هست. | d: meilleur, meilleures, meilleure / moins du, moins, moins que
+Paul est [le meilleur] élève, mais Léa travaille [le mieux]. | پل بهترین شاگرد است، ولی لئا از همه بهتر کار می‌کند. | d: le mieux, la meilleure, le plus bon / le meilleur, la meilleure, la mieux
+transforms:
+Ce gâteau est bon. => Ce gâteau est meilleur. | «خوب» را «بهتر» کن.
+Marie chante bien. => Marie chante mieux. | «خوب» را «بهتر» کن.
+C'{ce-pron}est{être} une bonne idée. => C'{ce-pron}est{être} une meilleure idée. | «خوب» را «بهتر» کن.
+Ces fraises sont bonnes. => Ces fraises sont meilleures. | «خوب» را «بهتر» کن.
+C'{ce-pron}est{être} un bon hôtel. => C'{ce-pron}est{être} le meilleur hôtel. | جمله را با «بهترین» بنویس.
+Il chante meilleur que moi. => Il chante mieux que moi. | غلط جمله را درست کن.
+J'ai du travail. => J'ai plus{plus} de travail. | با plus de بنویس: «کار بیشتری دارم».
+Il y a des voitures. => Il y a moins de voitures. | با moins de بنویس: «ماشین کمتری هست».
+translations:
+تو از من بهتر آواز می‌خوانی. => Tu chantes mieux que moi.
+این بهترین رستوران شهر است. => C'{ce-pron}est{être} le meilleur restaurant de la ville. ; Ce restaurant est le meilleur de la ville.
+حالم بهتر است. => Je vais mieux. ; Ça va mieux. ; Je me sens mieux.
+ماری بهترین دوست من است. => Marie est ma meilleure amie. ; Marie, c'{ce-pron}est{être} ma meilleure amie.
+من از تو کتاب بیشتری دارم. => J'ai plus{plus} de livres que toi.
+این کیک از تارت بهتر است. => Ce gâteau est meilleur que la tarte.
+یکشنبه‌ها ماشین کمتری هست. => Il y a moins de voitures le dimanche. ; Le dimanche, il y a moins de voitures.
+امروز بهتر کار کردم. => Aujourd'hui, j'ai mieux travaillé. ; J'ai mieux travaillé aujourd'hui.

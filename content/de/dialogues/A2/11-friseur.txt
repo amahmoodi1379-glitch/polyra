@@ -1,0 +1,34 @@
+code: de-a2-d011
+title: آرایشگاه
+situation: به آرایشگاه رفته‌ای. آرایشگر می‌پرسد موهایت را چطور می‌خواهی.
+turns:
+B: Guten Tag! Haben Sie einen Termin? | روز بخیر! وقت قبلی دارید؟
++ Ja, ich habe einen Termin um drei Uhr. | بله، ساعت سه وقت دارم.
+- Ja, ich habe ein Termin um drei Uhr. | بله، ساعت سه وقت دارم.
+- Ja, ich habe einen Termin für drei Stunden. | بله، برای سه ساعت وقت دارم.
+why: Termin مذکر است، پس «einen Termin». ساعت قرار را با um می‌گوییم؛ «für drei Stunden» یعنی سه ساعت طول می‌کشد.
+B: Gut. Bitte{bitte} nehmen Sie Platz. Was machen wir heute? | خوب. لطفاً بنشینید. امروز چه کار کنیم؟
+- Meine Haare sind zu{zu-adv} kurz. Bitte{bitte} ein bisschen kürzer. | موهایم زیادی کوتاه است. لطفاً کمی کوتاه‌تر.
++ Meine Haare sind zu{zu-adv} lang. Bitte{bitte} ein bisschen kürzer. | موهایم زیادی بلند است. لطفاً کمی کوتاه‌تر.
+- Meine Haare ist zu{zu-adv} lang. Bitte{bitte} ein bisschen kürzer. | موهایم زیادی بلند است. لطفاً کمی کوتاه‌تر.
+why: موی بلند را کوتاه‌تر می‌کنند، پس «zu lang». Haare جمع است، پس sind، نه ist.
+B: Wie kurz möchten Sie die Haare? | موها را چقدر کوتاه می‌خواهید؟
+- Nur drei Zentimeter kurzer, bitte{bitte}. | فقط سه سانتی‌متر کوتاه‌تر، لطفاً.
+- Nur drei Minuten kürzer, bitte{bitte}. | فقط سه دقیقه کوتاه‌تر، لطفاً.
++ Nur drei Zentimeter kürzer, bitte{bitte}. | فقط سه سانتی‌متر کوتاه‌تر، لطفاً.
+why: اندازه را با سانتی‌متر می‌گوییم، نه دقیقه. «کوتاه‌تر» در آلمانی kürzer است، با ü.
+B: Und waschen wir die Haare auch? | موها را هم بشوییم؟
+- Nein, danke{danke}. Ich bin sie heute Morgen gewaschen. | نه، ممنون. امروز صبح آن‌ها را شسته هستم.
++ Nein, danke{danke}. Ich habe sie heute Morgen gewaschen. | نه، ممنون. امروز صبح آن‌ها را شسته‌ام.
+- Nein, danke{danke}. Ich habe sie morgen gewaschen. | نه، ممنون. فردا آن‌ها را شسته‌ام.
+why: waschen در Perfekt با haben می‌آید: «Ich habe … gewaschen». morgen یعنی فردا و با زمان گذشته جور نیست.
+B: So, fertig! Schauen Sie mal in den Spiegel. Gefällt es Ihnen? | خب، تمام شد! یک نگاه به آینه بیندازید. خوشتان می‌آید؟
++ Ja, sehr! Das sieht toll aus. | بله، خیلی! عالی شده.
+- Ja, sehr! Das sieht toll an. | بله، خیلی! عالی نگاه می‌کند.
+- Ja, sehr! Es gefällt mich. | بله، خیلی! خوشم می‌آید.
+why: «Das sieht toll aus» یعنی عالی به نظر می‌رسد؛ فعل aussehen است، نه ansehen. با gefallen شکل mir می‌آید، نه mich.
+B: Das macht 25 Euro. | می‌شود ۲۵ یورو. | tts: Das macht fünfundzwanzig Euro.
+- Hier sind 28 Euro. Der Rest ist für mich. | بفرمایید ۲۸ یورو. بقیه‌اش برای خودم. | tts: Hier sind achtundzwanzig Euro. Der Rest ist für mich.
+- Hier sind 28 Euro. Der Rest ist für dich. | بفرمایید ۲۸ یورو. بقیه‌اش برای تو. | tts: Hier sind achtundzwanzig Euro. Der Rest ist für dich.
++ Hier sind 28 Euro. Der Rest ist für Sie. | بفرمایید ۲۸ یورو. بقیه‌اش برای شما. | tts: Hier sind achtundzwanzig Euro. Der Rest ist für Sie.
+why: سه یوروی اضافه انعام آرایشگر است: «für Sie». «für mich» یعنی برای خودت، و با آرایشگر dich نمی‌گوییم.

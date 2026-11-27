@@ -1,0 +1,89 @@
+code: de-a2-adjektiv-unbestimmt
+title: صفت بعد از ein، kein، mein: ein kleiner Hund
+scope: پایان صفت پیش از اسم بعد از ein، kein و کلمه‌های مالکیت (mein، dein، sein، ihr، unser …) در حالت فاعلی، مفعولی و Dativ: ein kleiner Hund، ein kleines Kind، eine kleine Wohnung، einen kleinen Hund، mit einem kleinen Hund، mit einer kleinen Katze، keine guten Ideen، meine neuen Schuhe؛ صفت بی‌حرف تعریف (frischer Kaffee) در واحدهای بعد می‌آید.
+can_do: حالا می‌توانی بگویی چه چیزی داری یا دنبال چه هستی: «Ich habe einen kleinen Bruder»، «Wir suchen eine billige Wohnung».
+rule: وقتی ein یا mein پایان جنس را نشان نمی‌دهد، صفت آن را نشان می‌دهد: ein kleiner Hund، ein kleines Kind؛ با eine صفت -e می‌گیرد (eine kleine Katze)، و در einen، Dativ و جمع همیشه -en است (einen kleinen Hund، mit einem kleinen Hund، keine guten Ideen).
+mistake: فارسی صفت را عوض نمی‌کند («یک سگ کوچک»، «یک بچه کوچک»)، برای همین فارسی‌زبان‌ها یک پایان را برای همه می‌گذارند: «ein klein Hund»، «ein kleine Hund» و «ein kleiner Kind» غلط است؛ درست: ein kleiner Hund، ein kleines Kind. «meine neue Schuhe» هم غلط است؛ درست: meine neuen Schuhe.
+lesson:
+در واحد قبل دیدی که بعد از der، die و das صفت فقط -e یا -en می‌گیرد، چون خود حرف تعریف جنس را نشان می‌دهد.
+ein، kein و کلمه‌های مالکیت (mein، dein، sein، ihr، unser …) در فاعلی مذکر و خنثی پایان ندارند؛ پس صفت جای آن‌ها پایان جنس را می‌گیرد.
+مذکر -er می‌گیرد، مثل der: ein kleiner Hund، mein neuer Freund. خنثی -es می‌گیرد، مثل das: ein kleines Kind، mein neues Auto.
+مؤنث با eine همیشه -e است: eine kleine Wohnung، meine kleine Schwester.
+
+در حالت مفعولی فقط مذکر عوض می‌شود: einen kleinen Hund؛ مؤنث و خنثی مثل فاعلی‌اند: Ich kaufe eine neue Jacke. Ich kaufe ein neues Handy.
+در Dativ همیشه -en: mit einem kleinen Hund، mit einer netten Frau، mit meinem neuen Auto.
+در جمع با keine و meine هم همیشه -en: keine guten Ideen، meine neuen Schuhe.
+table:
+حالت | مذکر | مؤنث | خنثی | جمع
+فاعلی | ein kleiner Hund | eine kleine Katze | ein kleines Kind | meine kleinen Kinder
+مفعولی | einen kleinen Hund | eine kleine Katze | ein kleines Kind | meine kleinen Kinder
+Dativ | einem kleinen Hund | einer kleinen Katze | einem kleinen Kind | meinen kleinen Kindern
+sets:
+-er: ein kleiner Hund, mein neuer Freund, kein guter Film
+-es: ein kleines Kind, mein neues Auto, kein gutes Wetter
+-e: eine kleine Katze, meine neue Jacke, keine gute Idee
+-en: einen kleinen Hund, mit einem kleinen Hund, keine guten Ideen
+examples:
+Das ist ein schönes Haus. | این خانه قشنگی است.
+Ich habe einen neuen Laptop. | من یک لپ‌تاپ نو دارم.
+Wir wohnen in einer kleinen Wohnung. | ما در یک آپارتمان کوچک زندگی می‌کنیم.
+Meine neuen Schuhe sind bequem. | کفش‌های نوی من راحت‌اند.
+targets:
+Im Garten ist ein [kleiner] Hund. | در باغ یک سگ کوچک هست. | d: kleine, kleinen, kleines | hint: (klein) | full: Ein kleiner Hund ist im Garten.
+Max ist ein [guter] Freund. | ماکس دوست خوبی است. | d: gute, guten, gutes | hint: (gut)
+Das ist eine [schöne] Stadt. | این شهر قشنگی است. | d: schöner, schönen, schönes
+Das ist ein [neues] Restaurant. | این یک رستوران جدید است. | d: neuer, neue, neuen | hint: (neu)
+Mein [alter] Computer ist kaputt. | کامپیوتر قدیمی‌ام خراب است. | d: alte, alten, altes
+Meine [kleine] Schwester ist sechs Jahre alt. | خواهر کوچکم شش سال دارد. | d: kleiner, kleinen, kleines | hint: (klein)
+Dein [neues] Fahrrad ist super! | دوچرخه جدیدت عالی است! | d: neuer, neue, neuen
+Das ist kein [schlechter] Film. | این فیلم بدی نیست. | d: schlechte, schlechten, schlechtes | hint: (schlecht)
+Unsere [neuen] Nachbarn sind sehr nett. | همسایه‌های جدیدمان خیلی مهربان‌اند. | d: neue, neuer, neues
+Meine [schwarzen] Schuhe sind schmutzig. | کفش‌های مشکی‌ام کثیف‌اند. | d: schwarze, schwarzer, schwarzes | hint: (schwarz)
+Mein Vater hat einen [großen] Garten. | پدرم یک باغ بزرگ دارد. | d: großer, große, großes | hint: (groß)
+Wir suchen ein [billiges] Hotel. | ما دنبال یک هتل ارزان می‌گردیم. | d: billiger, billigen, billige
+Anna kauft ein [rotes] Kleid. | آنا یک لباس قرمز می‌خرد. | d: roter, rote, roten | hint: (rot)
+Ich möchte einen [heißen] Tee. | یک چای داغ می‌خواهم. | d: heißer, heiße, heißes
+Hast du ein [scharfes] Messer? | یک چاقوی تیز داری؟ | d: scharfer, scharfe, scharfen | hint: (scharf)
+Er hat keinen [großen] Hunger. | او خیلی گرسنه نیست. | d: großer, große, großes
+Wir haben keine [guten] Ideen. | ما هیچ ایده خوبی نداریم. | d: gute, guter, gutes
+Ich suche meinen [blauen] Schal. | دنبال شال‌گردن آبی‌ام می‌گردم. | d: blauer, blaue, blaues | hint: (blau)
+Paul liest ein [spannendes] Buch. | پاول یک کتاب هیجان‌انگیز می‌خواند. | d: spannender, spannende, spannenden
+Sie hat eine [nette] Kollegin. | او یک همکار مهربان (خانم) دارد. | d: netter, netten, nettes | hint: (nett)
+Wir wohnen in einem [kleinen] Dorf. | ما در یک روستای کوچک زندگی می‌کنیم. | d: kleine, kleiner, kleinem
+Lena spielt mit ihrem{ihr-det} [kleinen] Bruder. | لنا با برادر کوچکش بازی می‌کند. | d: kleine, kleiner, kleinem | hint: (klein)
+Ich fahre mit meinem [neuen] Auto nach Köln. | با ماشین جدیدم به کلن می‌روم. | d: neue, neues, neuem | full: Nach Köln fahre ich mit meinem neuen Auto. ; Mit meinem neuen Auto fahre ich nach Köln.
+Wir essen in einem [guten] Restaurant. | ما در یک رستوران خوب غذا می‌خوریم. | d: gute, guter, gutem | hint: (gut)
+Max spricht mit einer [freundlichen] Verkäuferin. | ماکس با یک فروشنده مهربان (خانم) صحبت می‌کند. | d: freundliche, freundlicher, freundlichem
+Ich gehe mit meiner{mein} [kleinen] Tochter zum Arzt. | با دختر کوچکم پیش دکتر می‌روم. | d: kleine, kleiner, kleinem
+Anna wohnt bei einer [netten] Familie. | آنا پیش یک خانواده مهربان زندگی می‌کند. | d: nette, netter, nettem | hint: (nett)
+Der Brief ist von meinem [alten] Lehrer. | نامه از معلم قدیمی‌ام است. | d: alte, alter, altem
+Die Kinder spielen mit ihren{ihr-det} [neuen] Freunden. | بچه‌ها با دوستان جدیدشان بازی می‌کنند. | d: neue, neuer, neuem
+Hast du einen [warmen] Pullover? | یک پلیور گرم داری؟ | d: warmer, warme, warmes | hint: (warm)
+Ist das dein [neuer] Lehrer? | این معلم جدیدت است؟ | d: neue, neuen, neues
+Das ist keine [gute] Lösung. | این راه‌حل خوبی نیست. | d: guter, guten, gutes
+Ich habe einen [kleinen] Bruder und eine [große] Schwester. | من یک برادر کوچک و یک خواهر بزرگ دارم. | d: kleiner, kleine, kleines / großer, großen, großes | full: Ich habe eine große Schwester und einen kleinen Bruder.
+Mein [neuer] Kollege kommt aus einer [kleinen] Stadt. | همکار جدیدم اهل یک شهر کوچک است. | d: neue, neuen, neues / kleine, kleiner, kleinem
+Wir suchen ein [großes] Haus mit einem [schönen] Garten. | ما دنبال یک خانه بزرگ با یک باغ قشنگ می‌گردیم. | d: großer, große, großen / schöne, schöner, schönem
+Sara trägt eine [weiße] Bluse und einen [schwarzen] Rock. | سارا یک بلوز سفید و یک دامن مشکی پوشیده است. | d: weißer, weißen, weißes / schwarzer, schwarze, schwarzes | full: Sara trägt einen schwarzen Rock und eine weiße Bluse.
+Ein [kleines] Mädchen spielt mit einer [kleinen] Katze. | یک دختر کوچک با یک گربه کوچک بازی می‌کند. | d: kleiner, kleine, kleinen / kleine, kleiner, kleinem
+Ich möchte einen [schwarzen] Kaffee und ein [großes] Glas Wasser. | یک قهوه بدون شیر و یک لیوان بزرگ آب می‌خواهم. | d: schwarzer, schwarze, schwarzes / großer, große, großen | full: Ich möchte ein großes Glas Wasser und einen schwarzen Kaffee.
+Unser [neuer] Nachbar hat einen [lauten] Hund. | همسایه جدیدمان یک سگ پرسروصدا دارد. | d: neue, neuen, neues / laute, lauter, lautes
+Wir haben ein [kleines] Problem mit unserem [alten] Auto. | ما با ماشین قدیمی‌مان یک مشکل کوچک داریم. | d: kleiner, kleine, kleinen / alte, altes, altem
+transforms:
+Der Hund ist klein. => Das ist ein kleiner Hund. | جمله را با «Das ist ein …» و صفت پیش از اسم بنویس.
+Das Haus ist alt. => Das ist ein altes Haus. | جمله را با «Das ist ein …» و صفت پیش از اسم بنویس.
+Die Wohnung ist schön. => Das ist eine schöne Wohnung. | جمله را با «Das ist eine …» و صفت پیش از اسم بنویس.
+Ich habe einen Bruder. Er ist klein. => Ich habe einen kleinen Bruder. | دو جمله را یکی کن و صفت را پیش از اسم بگذار.
+Das ist ein neues Auto. => Ich fahre mit einem neuen Auto. | جمله را با «Ich fahre mit …» بنویس.
+Das ist ein guter Film. => Das ist kein guter Film. | جمله را با kein منفی کن.
+Das ist mein neues Buch. => Das sind meine neuen Bücher. | جمله را جمع کن.
+Das ist ein netter Mann. => Ich kenne einen netten Mann. | جمله را با «Ich kenne …» بنویس.
+translations:
+من یک برادر کوچک دارم. => Ich habe einen kleinen Bruder.
+ما دنبال یک آپارتمان ارزان می‌گردیم. => Wir suchen eine billige Wohnung. ; Wir suchen eine günstige Wohnung.
+گوشی جدیدت قشنگ است. => Dein neues Handy ist schön.
+او یک ماشین قرمز دارد. => Er hat ein rotes Auto. ; Sie hat ein rotes Auto.
+در یک شهر کوچک زندگی می‌کنم. => Ich wohne in einer kleinen Stadt. ; Ich lebe in einer kleinen Stadt.
+این فکر خوبی نیست. => Das ist keine gute Idee.
+یک قهوه بزرگ می‌خواهم. => Ich möchte einen großen Kaffee. ; Ich will einen großen Kaffee. ; Ich hätte gern einen großen Kaffee.
+کفش‌های نوی من کجاست؟ => Wo sind meine neuen Schuhe?

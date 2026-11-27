@@ -1,0 +1,90 @@
+code: fr-a2-passe-compose-pronominaux
+title: گذشتهٔ فعل‌های ضمیری: je me suis levé، elle s'est réveillée
+scope: passé composé فعل‌های ضمیری با être و جور شدن اسم مفعول با فاعل (je me suis levé، elle s'est réveillée، nous nous sommes promenés) با همهٔ ضمیرها، در جملهٔ منفی (je ne me suis pas levé) و سؤالی، با فعل‌های بیشتر (s'amuser، se dépêcher، se tromper، s'arrêter، se perdre، s'asseoir، s'endormir، se souvenir، s'inscrire…).
+can_do: حالا می‌توانی روزت را تعریف کنی: کی بیدار شدی، کجا قدم زدی، کجا گم شدی و چقدر خوش گذشت: Je me suis levé tôt. Nous nous sommes bien amusés.
+rule: ضمیر (me، te، se، nous، vous، se) + être + اسم مفعول: je me suis levé، tu t'es levé، il s'est levé، nous nous sommes levés، vous vous êtes levés، ils se sont levés؛ اسم مفعول با فاعل جور می‌شود (elle s'est levée)؛ منفی: je ne me suis pas levé.
+mistake: فارسی‌زبان‌ها اینجا هم مثل بیشتر فعل‌ها avoir می‌گذارند («je m'ai levé»، «elle s'a réveillée») یا ضمیر را با فاعل جور نمی‌کنند («nous se sommes promenés»)؛ درست: je me suis levé، elle s'est réveillée، nous nous sommes promenés. در منفی هم ne قبل از ضمیر می‌آید، نه بعد از آن: «je me ne suis pas levé» غلط است؛ درست: je ne me suis pas levé.
+tables: passé composé | reflexive
+lesson:
+فعل ضمیری فعلی است که ضمیر خودش را دارد: se lever (بلند شدن)، se dépêcher (عجله کردن)، s'amuser (خوش گذراندن).
+گذشتهٔ همهٔ فعل‌های ضمیری با être ساخته می‌شود، نه avoir: Je me suis levé. (بلند شدم.) Il s'est dépêché. (عجله کرد.)
+ترتیب: فاعل + ضمیر + être + اسم مفعول. ضمیر با فاعل عوض می‌شود: je me، tu te، il se، nous nous، vous vous، ils se.
+قبل از صدادار me، te و se کوتاه می‌شوند: je me suis، ولی tu t'es، il s'est، elle s'est.
+اسم مفعول مثل فعل‌های رفت‌وآمد با فاعل جور می‌شود: مؤنث + e و جمع + s: elle s'est levée، ils se sont levés، elles se sont levées. اگر گوینده زن باشد: Je me suis levée.
+در منفی ne قبل از ضمیر و pas بعد از être می‌آید: Je ne me suis pas levé. Elle ne s'est pas dépêchée.
+در سؤال ترتیب همان است: Tu t'es bien amusé ? Est-ce que vous vous êtes perdus ?
+چند اسم مفعول بی‌قاعده: s'asseoir → assis، se perdre → perdu، s'endormir → endormi، se souvenir → souvenu، s'inscrire → inscrit.
+table:
+ضمیر | se dépêcher | منفی
+je | me suis dépêché، me suis dépêchée | ne me suis pas dépêché
+tu | t'es dépêché، t'es dépêchée | ne t'es pas dépêché
+il | s'est dépêché | ne s'est pas dépêché
+elle | s'est dépêchée | ne s'est pas dépêchée
+nous | nous sommes dépêchés، nous sommes dépêchées | ne nous sommes pas dépêchés
+vous | vous êtes dépêché، vous êtes dépêchés | ne vous êtes pas dépêchés
+ils | se sont dépêchés | ne se sont pas dépêchés
+elles | se sont dépêchées | ne se sont pas dépêchées
+examples:
+Ce matin, je me suis{être} réveillé à six heures. | امروز صبح ساعت شش بیدار شدم.
+Elle s'est dépêchée pour prendre le train. | او برای رسیدن به قطار عجله کرد.
+Nous nous sommes bien amusés à la fête. | در جشن خیلی خوش گذراندیم.
+Les enfants ne se sont pas couchés tard. | بچه‌ها دیر نخوابیدند.
+targets:
+Je [me suis{être}] réveillé à six heures. | ساعت شش بیدار شدم. | d: m'ai, se suis, suis me
+Tu [t'es] trompé de numéro. | شماره را اشتباه گرفتی. | d: t'as, te es, s'es
+Il [s'est] dépêché pour prendre le bus. | او (مرد) برای رسیدن به اتوبوس عجله کرد. | d: s'a, se est, est se | hint: (se dépêcher)
+Nous [nous sommes] promenés au bord de la mer. | ما کنار دریا قدم زدیم. | d: nous avons, se sommes, sommes nous | hint: (se promener)
+Vous [vous êtes] perdus ? | گم شدید؟ | d: vous avez, se êtes, êtes vous
+Elles [se sont] bien amusées. | آن‌ها (زن‌ها) خیلی خوش گذراندند. | d: s'ont, se ont, sont se | hint: (s'amuser)
+On [s'est] arrêté devant la boulangerie. | جلوی نانوایی ایستادیم. | d: s'a, se est, s'ont | hint: (s'arrêter)
+Marie s'est [levée] tôt ce matin. | ماری امروز صبح زود از خواب بلند شد. | d: levé, levés, lever | hint: (se lever)
+Les enfants se sont [couchés] à neuf heures. | بچه‌ها ساعت نه خوابیدند. | d: couché, couchées, coucher | hint: (se coucher)
+Ma sœur s'est [trompée] de bus. | خواهرم اتوبوس را اشتباهی سوار شد. | d: trompé, trompés, tromper | hint: (se tromper)
+Les filles se sont [dépêchées]. | دخترها عجله کردند. | d: dépêché, dépêchés, dépêcher
+Paul s'est [assis] près de la fenêtre. | پل نزدیک پنجره نشست. | d: asseyé, assise, asseoir | hint: (s'asseoir)
+Elle s'est [assise] sur le canapé. | او (زن) روی کاناپه نشست. | d: assis, assises, asseyée
+Nous nous sommes [perdus] dans la ville. | ما در شهر گم شدیم. | d: perdu, perdés, perdre | ok: perdues | hint: (se perdre)
+Les garçons se sont bien [amusés] au parc. | پسرها در پارک خیلی خوش گذراندند. | d: amusé, amusées, amuser
+Mes parents se sont [inquiétés]. | پدر و مادرم نگران شدند. | d: inquiété, inquiétées, inquiéter | hint: (s'inquiéter)
+Elle s'est [endormie{s'endormir}] devant la télé. | او (زن) جلوی تلویزیون خوابش برد. | d: endormi, endormis, endormir | hint: (s'endormir)
+Tu t'es [souvenu] de son nom ? | اسمش یادت آمد؟ | d: souvenir, souviens, souvené | ok: souvenue | hint: (se souvenir)
+Il s'est [senti] mal hier soir. | او (مرد) دیشب حالش بد شد. | d: sentu, sentie, sentir | hint: (se sentir)
+Vous vous êtes bien [reposés] ? | خوب استراحت کردید؟ | d: reposer, reposez, reposais | ok: reposé, reposée, reposées
+Je [ne me suis{être} pas] réveillé à l'heure. | به‌موقع بیدار نشدم. | d: me ne suis pas, ne suis pas me, ne me pas suis
+Il [ne s'est pas] rasé ce matin. | او (مرد) امروز صبح صورتش را اصلاح نکرد. | d: se n'est pas, ne est pas se, ne s'a pas
+Nous [ne nous sommes pas] dépêchés. | ما عجله نکردیم. | d: nous ne sommes pas, ne sommes pas nous, ne nous avons pas
+Elle [ne s'est pas] couchée tard. | او (زن) دیر نخوابید. | d: se n'est pas, ne est pas se, ne s'a pas
+Tu [ne t'es pas] ennuyé ? | حوصله‌ات سر نرفت؟ | d: te n'es pas, ne t'as pas, ne es pas te
+Ils [ne se sont pas] arrêtés au feu rouge. | آن‌ها پشت چراغ قرمز نایستادند. | d: se ne sont pas, ne sont pas se, ne se ont pas
+Tu [t'es] bien amusé ? | خوش گذشت؟ | d: t'as, te es, es te
+Vous [vous êtes] levés à quelle heure ? | ساعت چند از خواب بلند شدید؟ | d: vous avez, vous sont, êtes vous
+Est-ce qu'elle [s'est] excusée ? | آیا او (زن) عذرخواهی کرد؟ | d: s'a, se est, est se | hint: (s'excuser)
+À quelle heure est-ce que tu t'es [couché] ? | ساعت چند خوابیدی؟ | d: coucher, couches, couchés | ok: couchée
+Ça s'est bien [passé] ? | خوب پیش رفت؟ | d: passer, passée, passés | hint: (se passer)
+Je me suis{être} [inscrit] au club de tennis. | در باشگاه تنیس ثبت‌نام کردم. | d: inscrire, inscris, inscrivé | ok: inscrite | hint: (s'inscrire)
+Les enfants se sont [baignés] dans le lac. | بچه‌ها در دریاچه شنا کردند. | d: baigné, baignées, baigner | hint: (se baigner)
+Je [me suis{être}] levé et je [me suis{être}] habillé. | از خواب بلند شدم و لباس پوشیدم. | d: m'ai, se suis, suis me / m'ai, se suis, suis me
+Elle s'est [réveillée] tard et elle s'est [dépêchée]. | او (زن) دیر بیدار شد و عجله کرد. | d: réveillé, réveillés, réveiller / dépêché, dépêchés, dépêcher
+Nous [nous sommes] promenés et nous [nous sommes] arrêtés au café. | قدم زدیم و در کافه توقف کردیم. | d: nous avons, se sommes, sommes nous / nous avons, se sommes, sommes nous
+Tu [t'es] couché tard ? Non, je [me suis{être}] couché à dix heures. | دیر خوابیدی؟ نه، ساعت ده خوابیدم. | d: t'as, te es, s'es / m'ai, se suis, me ai
+Les enfants [se sont] bien amusés, mais ils [ne se sont pas] reposés. | بچه‌ها خیلی خوش گذراندند، ولی استراحت نکردند. | d: s'ont, se ont, sont se / se ne sont pas, ne sont pas se, ne se ont pas
+Paul s'est [trompé] de route et il s'est [perdu]. | پل راه را اشتباه رفت و گم شد. | d: trompée, trompés, tromper / perdue, perdé, perdre
+Marie et Sophie se sont [assises] et elles se sont [reposées]. | ماری و سوفی نشستند و استراحت کردند. | d: assis, assise, asseyées / reposé, reposés, reposer
+transforms:
+Je me lève tôt. => Je me suis{être} levé tôt. ; Je me suis{être} levée tôt. | جمله را به گذشته (passé composé) ببر.
+Elle se réveille à sept heures. => Elle s'est réveillée à sept heures. | جمله را به گذشته (passé composé) ببر.
+Nous nous promenons dans le parc. => Nous nous sommes promenés dans le parc. ; Nous nous sommes promenées dans le parc. | جمله را به گذشته (passé composé) ببر.
+Ils s'amusent bien. => Ils se sont bien amusés. | جمله را به گذشته (passé composé) ببر.
+Il s'est dépêché. => Il ne s'est pas dépêché. | جمله را منفی کن.
+Tu t'es trompé. => Tu ne t'es pas trompé. | جمله را منفی کن.
+Paul s'est assis. => Marie s'est assise. | به‌جای Paul، Marie بگذار.
+Les garçons se sont couchés. => Les filles se sont couchées. | به‌جای les garçons، les filles بگذار.
+translations:
+امروز صبح ساعت شش بیدار شدم. => Ce matin, je me suis{être} réveillé à six heures. ; Ce matin, je me suis{être} réveillée à six heures. ; Je me suis{être} réveillé à six heures ce matin. ; Je me suis{être} réveillée à six heures ce matin.
+او (زن) دیر خوابید. => Elle s'est couchée tard. ; Elle s'est endormie{s'endormir} tard.
+بچه‌ها خیلی خوش گذراندند. => Les enfants se sont bien amusés. ; Les enfants se sont beaucoup amusés.
+ما عجله نکردیم. => Nous ne nous sommes pas dépêchés. ; Nous ne nous sommes pas dépêchées. ; On ne s'est pas dépêché. ; On ne s'est pas dépêchés. ; On ne s'est pas dépêchées.
+او (مرد) اشتباه کرد. => Il s'est trompé.
+پل نزدیک پنجره نشست. => Paul s'est assis près de la fenêtre.
+ماری عذرخواهی کرد. => Marie s'est excusée.
+آن‌ها (مرد) در شهر گم شدند. => Ils se sont perdus dans la ville. ; Ils se sont perdus en ville.

@@ -1,0 +1,87 @@
+code: fr-a2-celui-celle
+title: celui، celle: «آن یکی» و «مالِ…»
+scope: ضمیرهای اشارهٔ celui، celle، ceux و celles به‌جای اسمی که پیش‌تر آمده: با -là (celui-là)، با de (celle de Marie) و با qui یا que (celui qui parle، celle que je préfère)؛ celui-ci فقط در درسنامه می‌آید و ceci و cela (جز ça) در سطح‌های بعد.
+can_do: حالا می‌توانی بی‌آنکه اسم را تکرار کنی بگویی کدام یکی را می‌خواهی و چیزی مال کیست: Je préfère celle-là. C'est celui de Paul.
+rule: celui (مذکر مفرد)، celle (مؤنث مفرد)، ceux (مذکر جمع)، celles (مؤنث جمع) جای اسم می‌نشینند و تنها نمی‌آیند: celui-là، celle de Marie، ceux qui…، celles que…
+mistake: فارسی برای همه «مال…» و «آن یکی» می‌گوید و جنس و شمار ندارد، برای همین فارسی‌زبان‌ها برای اسم مؤنث یا جمع هم celui می‌گذارند («ma voiture et celui de Paul») یا حرف تعریف می‌گذارند («la de Paul»)؛ درست: ma voiture et celle de Paul، mes chaussures et celles de Léa.
+lesson:
+برای اینکه اسمی را دو بار نگوییم، فرانسوی ضمیر اشاره دارد: Ma voiture est rouge, celle de Paul est bleue (ماشین من قرمز است، مال پل آبی است).
+این ضمیر با اسمی که جایش می‌نشیند جور می‌شود: celui برای مذکر مفرد، celle برای مؤنث مفرد، ceux برای مذکر جمع و celles برای مؤنث جمع.
+این ضمیرها هیچ‌وقت تنها نمی‌آیند؛ همیشه چیزی بعدشان هست:
+با -là برای نشان دادن: Quel pull ? Celui-là (آن یکی). شکل -ci (celui-ci یعنی «این یکی») را بعداً تمرین می‌کنیم.
+با de برای «مالِ…»: le sac de Paul → celui de Paul. de با le و les مثل همیشه می‌چسبد: celles du marché.
+با qui یا que برای «آنکه…»: Celle qui chante est ma sœur (آنکه آواز می‌خواند). C'est celui que je préfère (همانی که ترجیح می‌دهم).
+بدون اسم قبلی، ceux qui یعنی «کسانی که»: Ceux qui ont fini peuvent sortir.
+table:
+جنس | مفرد | جمع
+مذکر | celui | ceux
+مؤنث | celle | celles
+sets:
+celui: le pull, le livre, le train
+celle: la voiture, la robe, la chambre
+ceux: les enfants, les gâteaux, les garçons
+celles: les chaussures, les pommes, les filles
+examples:
+Quel livre tu veux ? Celui-là. | کدام کتاب را می‌خواهی؟ آن یکی.
+Ma voiture est rouge, celle de Paul est bleue. | ماشین من قرمز است، مال پل آبی است.
+Tu vois ces filles ? Celle qui chante est ma sœur. | آن دخترها را می‌بینی؟ آنکه آواز می‌خواند خواهر من است.
+Ces chaussures sont celles que je préfère. | این کفش‌ها همان‌هایی هستند که ترجیح می‌دهم.
+targets:
+Quel pull tu préfères ? [Celui]-là. | کدام پلیور را ترجیح می‌دهی؟ آن یکی. | d: Celle, Celles, Ce
+Tu veux cette robe ? Non, je préfère [celle]-là, la rouge. | این پیراهن را می‌خواهی؟ نه، آن یکی را ترجیح می‌دهم، قرمزه را. | d: celui, ceux, celles
+Ces chaussures sont belles, mais [celles]-là sont moins chères. | این کفش‌ها قشنگ‌اند، ولی آن‌ها ارزان‌ترند. | d: ceux, celle, celui
+Ces gâteaux sont bons, mais [ceux]-là sont meilleurs. | این شیرینی‌ها خوب‌اند، ولی آن‌ها بهترند. | d: celles, celui, celle
+Ma voiture est vieille, [celle] de Paul est neuve. | ماشین من قدیمی است، مال پل نو است. | d: celui, celles, ce
+Ce n'est pas mon sac, c'est{être} [celui] de ma sœur. | این کیف من نیست، مال خواهرم است. | d: celle, le, ce
+Les enfants de Marie sont plus{plus} grands que [ceux] de Sophie. | بچه‌های ماری از بچه‌های سوفی بزرگ‌ترند. | d: celles, ce, les
+Ces lunettes ne sont pas à moi, ce sont [celles] de mon père. | این عینک مال من نیست، مال پدرم است. | d: ceux, celle, celui
+Tu vois ces deux garçons ? [Celui] qui parle est mon frère. | آن دو پسر را می‌بینی؟ آنکه حرف می‌زند برادر من است. | d: Celle, Ceux, Ce
+Tu vois les filles là-bas ? [Celles] qui jouent au tennis sont mes sœurs. | دخترهای آنجا را می‌بینی؟ آن‌هایی که تنیس بازی می‌کنند خواهرهای من هستند. | d: Ceux, Celle, Celui
+Ce restaurant est [celui] que je préfère dans le quartier. | این رستوران همانی است که در این محله ترجیح می‌دهم. | d: celle, ceux, celles
+Ton gâteau est bon, mais [celui] que ma mère fait est meilleur. | کیک تو خوب است، ولی کیکی که مادرم می‌پزد بهتر است. | d: celle, ceux, celles
+Les pommes du{du-contr} marché sont meilleures que [celles] du{du-contr} supermarché. | سیب‌های بازار از سیب‌های سوپرمارکت بهترند. | d: ceux, les, ce
+Quel train tu prends ? [Celui] de huit heures. | کدام قطار را می‌گیری؟ قطار ساعت هشت را. | d: Celle, Le, Ce
+Mon appartement est petit, mais [celui] de mes parents est grand. | آپارتمان من کوچک است، ولی مال پدر و مادرم بزرگ است. | d: celle, ceux, ce
+Ce n'est pas ma clé, c'est{être} [celle] de Julie. | این کلید من نیست، مال ژولی است. | d: celui, la, ce
+Ta chambre est plus{plus} grande que [celle] de ton frère. | اتاق تو از اتاق برادرت بزرگ‌تر است. | d: celui, la, ce
+Tes idées sont meilleures que [celles] de Paul. | ایده‌های تو از ایده‌های پل بهترند. | d: ceux, les, ce
+[Ceux] qui ont fini l'exercice peuvent sortir. | کسانی که تمرین را تمام کرده‌اند می‌توانند بیرون بروند. | d: Celui, Celle, Ce | ok: Celles
+Les fleurs rouges sont belles, mais je préfère [celles]-là, les blanches. | گل‌های قرمز قشنگ‌اند، ولی من آن‌ها را ترجیح می‌دهم، سفیدها را. | d: ceux, celle, celui
+Quel stylo est à toi ? [Celui]-là, le bleu. | کدام خودکار مال توست؟ آن یکی، آبی. | d: Celle, Ceux, Ce
+J'ai lu ton livre et [celui] de Marie. | کتاب تو و کتاب ماری را خواندم. | d: celle, le, ce
+De toutes ces robes, la bleue est [celle] que je préfère. | از میان همهٔ این پیراهن‌ها، آبیه همانی است که ترجیح می‌دهم. | d: celui, celles, ceux
+Ces garçons sont gentils, surtout [celui] qui porte{porter} un chapeau. | این پسرها مهربان‌اند، به‌خصوص آنکه کلاه سرش است. | d: celle, ceux, ce
+J'ai deux sœurs : [celle] qui habite à Paris est médecin. | دو خواهر دارم: آنکه در پاریس زندگی می‌کند پزشک است. | d: celui, celles, ce
+Quelles chaussures tu vas mettre ? [Celles] de ma sœur. | کدام کفش‌ها را می‌پوشی؟ کفش‌های خواهرم را. | d: Ceux, Celle, Les
+Je n'aime pas ce café, je préfère [celui] du{du-contr} restaurant. | این قهوه را دوست ندارم، قهوهٔ رستوران را ترجیح می‌دهم. | d: celle, le, ce
+Mon portable ne marche pas, je peux prendre [celui] de ton frère ? | گوشی‌ام کار نمی‌کند، می‌توانم مال برادرت را بردارم؟ | d: celle, le, ce
+Les étudiants qui travaillent beaucoup sont [ceux] qui réussissent. | دانشجوهایی که زیاد کار می‌کنند همان‌هایی هستند که موفق می‌شوند. | d: celles, celui, ce
+Quelle valise est à vous ? Pas [celle]-là, la grande. | کدام چمدان مال شماست؟ آن یکی نه، بزرگه. | d: celui, celles, ceux
+Le train de huit heures est plein, on prend [celui] de neuf heures. | قطار ساعت هشت پر است، قطار ساعت نه را می‌گیریم. | d: celle, le, ce
+Ce t-shirt est trop petit, je prends [celui]-là, le grand. | این تی‌شرت زیادی کوچک است، آن یکی را برمی‌دارم، بزرگه را. | d: celle, ceux, celles
+Ce livre est [celui] de Paul et ces cahiers sont [ceux] de Léa. | این کتاب مال پل است و این دفترها مال لئا. | d: celle, ceux, le / celles, celui, les | full: Ces cahiers sont ceux de Léa et ce livre est celui de Paul.
+Quelle robe tu préfères ? [Celle] de Sophie ou [celle] de Marie ? | کدام پیراهن را ترجیح می‌دهی؟ مال سوفی یا مال ماری؟ | d: Celui, La, Ce / celui, la, ce
+Mes notes sont meilleures que [celles] de Paul, mais moins bonnes que [celles] de Léa. | نمره‌هایم از نمره‌های پل بهترند، ولی به خوبی نمره‌های لئا نیستند. | d: ceux, les, ce / ceux, les, ce
+[Celle] qui parle est ma sœur et [celui] qui écoute est mon frère. | آنکه حرف می‌زند خواهرم است و آنکه گوش می‌دهد برادرم. | d: Celui, Celles, Ce / celle, ceux, ce | full: Celui qui écoute est mon frère et celle qui parle est ma sœur.
+Tu veux mon stylo ou [celui] de Paul ? [Celui] de Paul. | خودکار مرا می‌خواهی یا مال پل را؟ مال پل را. | d: celle, le, ce / Celle, Le, Ce
+Ce gâteau est [celui] de ma mère et cette tarte est [celle] de ma tante. | این کیک مال مادرم است و این تارت مال خاله‌ام. | d: celle, ceux, le / celui, celles, la | full: Cette tarte est celle de ma tante et ce gâteau est celui de ma mère.
+Ces filles sont [celles] qui chantent et ces garçons sont [ceux] qui dansent. | این دخترها همان‌هایی هستند که آواز می‌خوانند و این پسرها همان‌هایی که می‌رقصند. | d: ceux, celle, ce / celles, celui, ce | full: Ces garçons sont ceux qui dansent et ces filles sont celles qui chantent.
+J'ai lu deux livres : [celui] de Pierre est bon, [celui] de Paul est meilleur. | دو کتاب خواندم: کتاب پیر خوب است، کتاب پل بهتر است. | d: celle, ceux, le / celle, ceux, le
+transforms:
+La voiture de Paul est rouge. => Celle de Paul est rouge. | به‌جای «La voiture» ضمیر اشاره بگذار.
+Le livre de Marie est sur la table. => Celui de Marie est sur la table. | به‌جای «Le livre» ضمیر اشاره بگذار.
+Les enfants de Sophie jouent dans le jardin. => Ceux de Sophie jouent dans le jardin. | به‌جای «Les enfants» ضمیر اشاره بگذار.
+Les chaussures de Léa sont noires. => Celles de Léa sont noires. | به‌جای «Les chaussures» ضمیر اشاره بگذار.
+Je préfère le pull de Paul. => Je préfère celui de Paul. | به‌جای «le pull» ضمیر اشاره بگذار.
+La fille qui chante est ma sœur. => Celle qui chante est ma sœur. | به‌جای «La fille» ضمیر اشاره بگذار.
+Les garçons qui jouent au football sont mes frères. => Ceux qui jouent au football sont mes frères. | به‌جای «Les garçons» ضمیر اشاره بگذار.
+Ma maison est petite, la maison de Paul est grande. => Ma maison est petite, celle de Paul est grande. | اسم تکراری را با ضمیر اشاره عوض کن.
+translations:
+ماشین من قرمز است و مال پل آبی است. => Ma voiture est rouge et celle de Paul est bleue. ; Ma voiture est rouge et la voiture de Paul est bleue.
+کدام کتاب را می‌خواهی؟ آن یکی را. => Quel livre tu veux ? Celui-là. ; Tu veux quel livre ? Celui-là. ; Quel livre veux-tu ? Celui-là. ; Quel livre est-ce que tu veux ? Celui-là.
+آنکه آواز می‌خواند خواهر من است. => Celle qui chante est ma sœur. ; Celle qui chante, c'est{être} ma sœur.
+کفش‌های ماری از کفش‌های سوفی قشنگ‌ترند. => Les chaussures de Marie sont plus{plus} belles que celles de Sophie. ; Les chaussures de Marie sont plus{plus} jolies que celles de Sophie. ; Les chaussures de Marie sont plus{plus} belles que les chaussures de Sophie. ; Les chaussures de Marie sont plus{plus} jolies que les chaussures de Sophie.
+کسانی که تمام کرده‌اند می‌توانند بروند. => Ceux qui ont fini peuvent partir. ; Celles qui ont fini peuvent partir. ; Ceux qui ont terminé peuvent partir. ; Celles qui ont terminé peuvent partir.
+این کیف من نیست، مال خواهرم است. => Ce n'est pas mon sac, c'est{être} celui de ma sœur. ; Ce n'est pas mon sac à main, c'est{être} celui de ma sœur.
+پلیور پل آبی است و مال لئا سبز. => Le pull de Paul est bleu et celui de Léa est vert. ; Le pull de Paul est bleu et le pull de Léa est vert.
+این سیب‌ها از سیب‌های بازار گران‌ترند. => Ces pommes sont plus{plus} chères que celles du{du-contr} marché. ; Ces pommes sont plus{plus} chères que les pommes du{du-contr} marché.

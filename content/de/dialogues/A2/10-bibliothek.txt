@@ -1,0 +1,39 @@
+code: de-a2-d010
+title: کتابخانه
+situation: اولین بار است که به کتابخانه شهر می‌آیی و می‌خواهی کتاب امانت بگیری.
+turns:
+B: Guten Morgen! Wie kann ich Ihnen helfen? | صبح بخیر! چه کمکی از من برمی‌آید؟
+- Guten Morgen! Ich möchte Bücher verkaufen. | صبح بخیر! می‌خواهم کتاب بفروشم.
++ Guten Morgen! Ich möchte Bücher ausleihen. | صبح بخیر! می‌خواهم کتاب امانت بگیرم.
+- Guten Morgen! Ich möchte Bücher zurückgeben. | صبح بخیر! می‌خواهم کتاب پس بدهم.
+why: می‌خواهی کتاب امانت بگیری: ausleihen. verkaufen یعنی فروختن، و هنوز کتابی نگرفته‌ای که پس بدهی (zurückgeben).
+B: Haben Sie sich schon bei uns angemeldet? | قبلاً اینجا ثبت‌نام کرده‌اید؟
+- Ja, ich bin zum ersten Mal hier. | بله، اولین بار است که اینجا هستم.
+- Nein, ich habe zum ersten Mal hier. | نه، اولین بار است که اینجا دارم.
++ Nein, ich bin zum ersten Mal hier. | نه، اولین بار است که اینجا هستم.
+why: اولین بار است که می‌آیی، پس هنوز ثبت‌نام نکرده‌ای: «Nein». «hier sein» با bin می‌آید، نه habe.
+B: Dann füllen Sie bitte{bitte} dieses Formular aus. Ich brauche auch Ihren Ausweis. | پس لطفاً این فرم را پر کنید. کارت شناسایی‌تان را هم لازم دارم.
++ Hier ist mein Ausweis. Kostet das etwas? | این کارت شناسایی‌ام. هزینه دارد؟
+- Hier ist meine Ausweis. Kostet das etwas? | این کارت شناسایی‌ام. هزینه دارد؟
+- Hier ist Ihr Ausweis. Kostet das etwas? | این کارت شناسایی شماست. هزینه دارد؟
+why: Ausweis مذکر است، پس «mein Ausweis». کارت خودت را می‌دهی، نه کارت کارمند را (Ihr).
+B: Für Studenten ist es kostenlos. Sonst kostet es zwanzig Euro im Jahr. | برای دانشجوها رایگان است. وگرنه سالی بیست یورو است.
+- Schade, ich studiere hier an der Uni. | حیف، من اینجا در دانشگاه درس می‌خوانم.
++ Super, ich studiere hier an der Uni. | عالی، من اینجا در دانشگاه درس می‌خوانم.
+- Super, ich studiere hier an die Uni. | عالی، من اینجا در دانشگاه درس می‌خوانم.
+why: برای دانشجو رایگان است، پس خبر خوبی است: «Super». برای جای بودن بعد از an شکل der می‌آید: «an der Uni».
+B: Gut. Sie{Sie-3} haben dann drei Wochen Zeit für die Bücher. | خوب. آن‌وقت سه هفته برای کتاب‌ها وقت دارید.
+- Und wann ich mehr{mehr} Zeit brauche? | و کی من وقت بیشتری لازم دارم؟
++ Und wenn ich mehr{mehr} Zeit brauche? | و اگر وقت بیشتری لازم داشته باشم؟
+- Und wenn ich mehr{mehr} Zeit brauchen? | و اگر وقت بیشتری لازم داشته باشم؟
+why: برای «اگر» wenn می‌آید، نه wann (کی؟). با ich شکل brauche می‌آید، نه brauchen.
+B: Dann rufen Sie uns an. Das ist kein Problem. | آن‌وقت به ما زنگ بزنید. مشکلی نیست.
++ Alles klar. Und wo finde ich die Wörterbücher? | باشه. فرهنگ لغت‌ها را کجا پیدا کنم؟
+- Alles klar. Und wo finde ich die Wörterbuch? | باشه. فرهنگ لغت را کجا پیدا کنم؟
+- Alles klar. Und wann finde ich die Wörterbücher? | باشه. فرهنگ لغت‌ها را کی پیدا کنم؟
+why: جای چیزی را با wo می‌پرسیم، نه wann. جمع Wörterbuch می‌شود Wörterbücher.
+B: Dort oben, neben der Treppe. | آن بالا، کنار پله‌ها.
+- Vielen Dank für deine Hilfe! | خیلی ممنون از کمکت!
+- Entschuldigung für Ihre Hilfe! | ببخشید برای کمکتان!
++ Vielen Dank für Ihre Hilfe! | خیلی ممنون از کمکتان!
+why: برای کمک تشکر می‌کنیم: «Vielen Dank für Ihre Hilfe». با کارمند deine نمی‌گوییم و Entschuldigung یعنی عذرخواهی.

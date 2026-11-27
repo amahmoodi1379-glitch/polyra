@@ -1,0 +1,34 @@
+code: de-a2-d016
+title: خرید بلیت سینما
+situation: با یک دوست به سینما آمده‌ای و جلوی گیشه بلیت هستی.
+turns:
+B: Guten Abend! Was möchten Sie sehen? | عصر بخیر! چه می‌خواهید ببینید؟
+- Guten Abend! Zwei Karten für die Film um acht, bitte{bitte}. | عصر بخیر! دو بلیت برای فیلم ساعت هشت، لطفاً.
++ Guten Abend! Zwei Karten für den Film um acht, bitte{bitte}. | عصر بخیر! دو بلیت برای فیلم ساعت هشت، لطفاً.
+- Guten Abend! Zwei Karten für den Zug um acht, bitte{bitte}. | عصر بخیر! دو بلیت برای قطار ساعت هشت، لطفاً.
+why: Film مذکر است: «für den Film». در سینما بلیت فیلم می‌خریم، نه قطار.
+B: Der Film um acht ist leider schon voll. Aber um zehn gibt es noch Plätze. | متأسفانه فیلم ساعت هشت پر است. ولی ساعت ده هنوز جا هست.
++ Schade. Dann nehmen wir zwei Karten für zehn Uhr. | حیف. پس دو بلیت برای ساعت ده می‌گیریم.
+- Super! Dann nehmen wir zwei Karten für acht Uhr. | عالی! پس دو بلیت برای ساعت هشت می‌گیریم.
+- Schade. Dann wir nehmen zwei Karten für zehn Uhr. | حیف. پس دو بلیت برای ساعت ده می‌گیریم.
+why: سانس ساعت هشت پر است، پس ساعت ده را می‌گیری. بعد از dann اول فعل می‌آید: «Dann nehmen wir».
+B: Gern. Wo möchten Sie sitzen? Vorne, in der Mitte oder hinten? | با کمال میل. کجا می‌خواهید بنشینید؟ جلو، وسط یا عقب؟
+- In die Mitte, bitte{bitte}. | وسط، لطفاً.
+- Um zehn Uhr, bitte{bitte}. | ساعت ده، لطفاً.
++ In der Mitte, bitte{bitte}. | وسط، لطفاً.
+why: جای نشستن را با wo می‌پرسد، پس «in der Mitte» با der، نه die. «Um zehn Uhr» ساعت است، نه جا.
+B: Das macht 22 Euro. Sind Sie Studenten? | می‌شود ۲۲ یورو. دانشجو هستید؟ | tts: Das macht zweiundzwanzig Euro. Sind Sie Studenten?
++ Ja, wir sind beide Studenten. Hier sind unsere Ausweise. | بله، ما هر دو دانشجوییم. این‌ها کارت‌های ماست.
+- Ja, wir sind beide Studenten. Hier sind eure Ausweise. | بله، ما هر دو دانشجوییم. این‌ها کارت‌های شماست.
+- Ja, wir sind beide Lehrer. Hier sind unsere Ausweise. | بله، ما هر دو معلمیم. این‌ها کارت‌های ماست.
+why: شما دو نفر دانشجویید و کارت‌های خودتان (unsere) را نشان می‌دهید. eure یعنی «مال شما»، و معلم بودن ربطی به قیمت دانشجویی ندارد.
+B: Gut, für Studenten kostet es nur 16 Euro. | خوب، برای دانشجوها فقط ۱۶ یورو می‌شود. | tts: Gut, für Studenten kostet es nur sechzehn Euro.
+- Schade! Und wo kann man hier Getränke kaufen? | حیف! اینجا کجا می‌شود نوشیدنی خرید؟
++ Super! Und wo kann man hier Getränke kaufen? | عالی! اینجا کجا می‌شود نوشیدنی خرید؟
+- Super! Und wo kann man hier Getränke verkaufen? | عالی! اینجا کجا می‌شود نوشیدنی فروخت؟
+why: قیمت ارزان‌تر شد و این خبر خوبی است، پس «Super»، نه «Schade». تو نوشیدنی می‌خری (kaufen)، نمی‌فروشی.
+B: Dort links, neben dem Eingang. Viel Spaß beim Film! | آنجا سمت چپ، کنار ورودی. از فیلم لذت ببرید!
+- Danke schön! Viel Spaß beim Film! | خیلی ممنون! از فیلم لذت ببرید!
++ Danke schön! Einen schönen Abend noch! | خیلی ممنون! شب خوبی داشته باشید!
+- Danke schön! Dir auch einen schönen Abend! | خیلی ممنون! شب تو هم خوب باشد!
+why: تشکر می‌کنی و برایش شب خوبی آرزو می‌کنی. فروشنده فیلم نمی‌بیند، و با او dir نمی‌گوییم.

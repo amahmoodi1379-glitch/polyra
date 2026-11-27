@@ -1,0 +1,34 @@
+code: fr-a2-d018
+title: برنامه‌ریزی آخر هفته با دوست
+situation: با دوستت لوکا حرف می‌زنی و برای آخر هفته برنامه می‌ریزید.
+turns:
+B: Salut ! Tu as des projets pour ce week-end ? | سلام! برای این آخر هفته برنامه‌ای داری؟
+- Déjà. Et toi, tu as une idée ? | از قبل. تو فکری داری؟
++ Pas encore. Et toi, tu as une idée ? | هنوز نه. تو فکری داری؟
+- Pas encore. Et toi, tu as un idée ? | هنوز نه. تو فکری داری؟
+why: «Pas encore» یعنی «هنوز نه» و جواب سؤال است؛ «Déjà» تنها جواب نیست. idée مؤنث است: «une idée».
+B: On fait une randonnée à la montagne samedi ? Qu'est-ce que tu en penses ? | شنبه برویم کوه‌پیمایی؟ نظرت چیست؟
++ Bonne idée ! Mais s'{si}il pleut, on fera quoi ? | فکر خوبی است! ولی اگر باران بیاید، چه کار کنیم؟
+- Bonne idée ! Mais s'{si}il pleuvra, on fera quoi ? | فکر خوبی است! ولی اگر باران بیاید، چه کار کنیم؟
+- Bonne idée ! Mais si il pleut, on fera quoi ? | فکر خوبی است! ولی اگر باران بیاید، چه کار کنیم؟
+why: بعد از si فعل حال می‌آید: «s'il pleut»، نه «s'il pleuvra». پیش از il، si می‌شود s'.
+B: J'ai regardé la météo : il va faire beau samedi, mais dimanche, il va pleuvoir. | هواشناسی را نگاه کردم: شنبه هوا خوب است، ولی یکشنبه باران می‌آید.
+- Parfait, alors on y va dimanche ! | عالی، پس یکشنبه می‌رویم!
+- Parfait, alors on va y samedi ! | عالی، پس شنبه می‌رویم!
++ Parfait, alors on y va samedi ! | عالی، پس شنبه می‌رویم!
+why: y پیش از فعل می‌آید: «on y va». یکشنبه باران می‌آید، پس شنبه بهتر است.
+B: Super ! On prend le train ? Il y a un train à sept heures. | عالی! با قطار برویم؟ یک قطار ساعت هفت هست.
+- D'accord. Sept heures, ce n'est pas trop tôt pour tu ? | باشد. ساعت هفت برایت زیادی زود نیست؟
++ D'accord. Sept heures, ce n'est pas trop tôt pour toi ? | باشد. ساعت هفت برایت زیادی زود نیست؟
+- D'accord. Sept heures, ce n'est pas trop tôt pour vous, monsieur ? | باشد. ساعت هفت برای شما زیادی زود نیست، آقا؟
+why: بعد از حرف اضافه toi می‌آید، نه tu: «pour toi». با دوست vous و monsieur نمی‌گوییم.
+B: Non, ça va. Je me lève tôt. Et pour manger ? | نه، مشکلی نیست. زود بیدار می‌شوم. برای غذا چه کنیم؟
+- On fera une pique-nique ! J'apporte des sandwichs. | پیک‌نیک می‌کنیم! من ساندویچ می‌آورم.
+- On a fait un pique-nique ! J'apporte des sandwichs. | پیک‌نیک کردیم! من ساندویچ می‌آورم.
++ On fera un pique-nique ! J'apporte des sandwichs. | پیک‌نیک می‌کنیم! من ساندویچ می‌آورم.
+why: pique-nique مذکر است: «un pique-nique». برنامه برای آینده است، پس «on fera»، نه «on a fait».
+B: Génial ! Et moi, j'apporte de l'eau et des fruits. On se retrouve à la gare à sept heures moins le quart ? | عالی! من هم آب و میوه می‌آورم. ساعت یک ربع به هفت در ایستگاه همدیگر را ببینیم؟
++ D'accord ! À samedi, et ne sois pas en retard ! | باشد! تا شنبه، و دیر نکنی!
+- D'accord ! À dimanche, et ne sois pas en retard ! | باشد! تا یکشنبه، و دیر نکنی!
+- D'accord ! À samedi, et ne sois pas à l'heure ! | باشد! تا شنبه، و سر وقت نیایی!
+why: قرارتان شنبه است، نه یکشنبه. «ne sois pas en retard» یعنی «دیر نکن»، ولی «ne sois pas à l'heure» یعنی «سر وقت نیا».

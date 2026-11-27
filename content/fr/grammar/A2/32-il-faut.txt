@@ -1,0 +1,84 @@
+code: fr-a2-il-faut
+title: il faut: «باید» و «لازم است»
+scope: il faut + مصدر (Il faut partir)، il faut + اسم برای «… لازم است» (Il faut deux heures، Il faut des œufs)، il ne faut pas یعنی «نباید»، فرق il faut با devoir (Je dois partir)، و il fallait و il faudra؛ il faut que + subjonctif در B1 می‌آید.
+can_do: حالا می‌توانی بگویی چه کاری لازم است یا ممنوع است و برای کاری چه چیزی لازم است: Il faut partir. Il ne faut pas courir. Il faut deux heures.
+rule: il faut (حال)، il fallait (گذشته)، il faudra (آینده) + مصدر یا اسم، همیشه با فاعل il؛ il ne faut pas یعنی «نباید»؛ برای «من باید، تو باید…» devoir صرف می‌شود: je dois، tu dois.
+mistake: در فارسی بعد از «باید» فعل صرف می‌شود («باید برویم»)، برای همین فارسی‌زبان‌ها بعد از il faut هم فعل را صرف می‌کنند («il faut partons») یا به il faut فاعل دیگری می‌دهند («je faut»، «on faut»)؛ درست: il faut partir، je dois partir.
+lesson:
+il faut یعنی «باید» یا «لازم است»، برای همه و نه برای یک نفرِ مشخص: Il faut manger (باید غذا خورد).
+فاعلش همیشه il است و فقط این سه شکل را می‌خواهی: il faut (حال)، il fallait (گذشته، imparfait)، il faudra (آینده). «je faut» یا «on faut» وجود ندارد.
+بعد از il faut فعل دوم مصدر است و صرف نمی‌شود: Il faut partir، نه «il faut partons». در فارسی می‌گوییم «باید برویم» و فعل را صرف می‌کنیم، ولی در فرانسوی نه.
+il faut + اسم یعنی «… لازم است، … می‌خواهد»: Il faut deux heures (دو ساعت وقت لازم است)، Pour une omelette, il faut des œufs.
+il ne faut pas + مصدر یعنی «نباید» (ممنوع است یا کار درستی نیست): Il ne faut pas courir ici.
+اگر بخواهی بگویی چه کسی باید کاری بکند، devoir را صرف کن: Je dois partir (من باید بروم)، Tu dois travailler.
+گذشته و آینده: Quand j'étais petit, il fallait marcher. Demain, il faudra partir tôt.
+table:
+زمان | il faut | مثال
+حال | il faut | Il faut partir.
+گذشته (imparfait) | il fallait | Il fallait attendre.
+آینده (futur) | il faudra | Il faudra payer.
+منفی | il ne faut pas | Il ne faut pas courir.
+examples:
+Il faut travailler pour réussir. | برای موفق شدن باید کار کرد.
+Il faut une heure pour aller à la plage. | برای رفتن به ساحل یک ساعت وقت لازم است.
+Il ne faut pas parler pendant le film. | در طول فیلم نباید حرف زد.
+Je dois partir, il est tard. | باید بروم، دیر است.
+targets:
+Il [faut] partir maintenant, le train arrive. | باید الان برویم، قطار دارد می‌رسد. | d: faux, falloir, faire | hint: (falloir)
+Il faut [manger] des légumes tous les jours. | باید هر روز سبزی خورد. | d: mange, mangeons, mangé | hint: (manger)
+Il faut [faire] attention dans la rue. | در خیابان باید مواظب بود. | d: fait, fais, faisons
+Pour aller à Lyon, il [faut] deux heures en train. | برای رفتن به لیون، با قطار دو ساعت وقت لازم است. | d: faux, faute, falloir | hint: (falloir)
+Pour faire une omelette, il [faut] des œufs. | برای درست کردن املت، تخم‌مرغ لازم است. | d: faux, falloir, faute
+Il ne faut pas [courir] dans la piscine. | در استخر نباید دوید. | d: cours, court, couru | hint: (courir)
+Il ne faut pas [oublier] ton passeport. | نباید پاسپورتت را فراموش کنی. | d: oublies, oublie, oublié
+[Il] faut acheter du pain. | باید نان خرید. | d: Je, On, Nous
+Qu'est-ce qu'il faut [faire] ? | چه کار باید کرد؟ | d: fais, fait, faites | hint: (faire)
+Combien de temps [faut]-il pour aller à la gare ? | برای رفتن به ایستگاه چقدر وقت لازم است؟ | d: fait, est, faux
+Je [dois] travailler ce soir. | امشب باید کار کنم. | d: faut, fallait, faudra | hint: (devoir)
+Tu [dois] parler à ton professeur. | باید با معلمت صحبت کنی. | d: faut, doit, devons
+Il [faut] être patient avec les enfants. | با بچه‌ها باید صبور بود. | d: faux, falloir, faire
+Quand j'étais petit, il [fallait] aller à l'école à pied. | وقتی کوچک بودم، باید پیاده به مدرسه می‌رفتیم. | d: faut, faudra, falloir | hint: (falloir)
+Il y a cent ans, il [fallait] trois jours pour aller à Ispahan. | صد سال پیش برای رفتن به اصفهان سه روز وقت لازم بود. | d: faut, faudra, falloir
+Demain, il [faudra] se lever tôt. | فردا باید زود از خواب بلند شد. | d: fallait, fallira, falloir | ok: faut | hint: (falloir)
+L'année prochaine, il [faudra] travailler plus. | سال آینده باید بیشتر کار کرد. | d: fallait, fallira, falloir | ok: faut
+Il ne faut pas [faire] de bruit à la bibliothèque. | در کتابخانه نباید سر و صدا کرد. | d: fais, fait, faisons | hint: (faire)
+Il faut [prendre] le bus 12 pour aller au musée. | برای رفتن به موزه باید اتوبوس ۱۲ را گرفت. | d: prends, prend, pris
+Pour réussir l'examen, il [faut] beaucoup travailler. | برای قبول شدن در امتحان باید زیاد درس خواند. | d: faux, falloir, faire | hint: (falloir)
+Il faut [savoir] nager pour faire ce sport. | برای این ورزش باید شنا بلد بود. | d: sais, sait, su
+Il ne faut pas [toucher] ce bouton. | نباید به این دکمه دست زد. | d: touche, touches, touché | hint: (toucher)
+[Il] faut combien d'œufs pour ce gâteau ? | برای این کیک چند تا تخم‌مرغ لازم است؟ | d: On, Tu, Je
+Nous [devons] partir à six heures. | ما باید ساعت شش راه بیفتیم. | d: faut, devez, doivent | hint: (devoir)
+Les enfants [doivent] dormir à neuf heures. | بچه‌ها باید ساعت نه بخوابند. | d: faut, doit, devez
+Il ne faut pas [être] en retard demain. | فردا نباید دیر کرد. | d: es, est, été | hint: (être)
+Il faut [aller] chez le médecin. | باید پیش پزشک رفت. | d: vais, va, allé
+Est-ce qu'il [faut] payer pour entrer ? | برای ورود باید پول داد؟ | d: faux, falloir, faire
+Pour être en forme, il faut [dormir] huit heures. | برای سرحال بودن باید هشت ساعت خوابید. | d: dors, dort, dormi | hint: (dormir)
+Il ne faut pas [laisser] la porte ouverte. | نباید در را باز گذاشت. | d: laisses, laisse, laissé
+Il faut [répondre] à toutes les questions. | باید به همهٔ سؤال‌ها جواب داد. | d: réponds, répond, répondu | hint: (répondre)
+[Il] faut un billet pour entrer dans ce musée. | برای ورود به این موزه بلیت لازم است. | d: On, Je, Tu
+Il ne faut pas [courir], il faut [marcher]. | نباید دوید، باید راه رفت. | d: cours, court, couru / marche, marches, marché
+Il faut [prendre] un billet et [attendre] le train. | باید بلیت گرفت و منتظر قطار ماند. | d: prends, prend, pris / attends, attend, attendu
+Nous [devons] partir, il [faut] prendre le train de huit heures. | ما باید برویم، باید قطار ساعت هشت را گرفت. | d: faut, devez, doivent / faux, falloir, faire
+Il ne faut pas [être] triste, il faut [sourire] ! | نباید غمگین بود، باید لبخند زد! | d: es, est, été / souris, sourit, souri
+Demain, il [faudra] se lever tôt, alors il [faut] se coucher maintenant. | فردا باید زود بیدار شد، پس الان باید خوابید. | d: fallait, fallira, falloir / faux, falloir, faire | ok: faut / faut
+Il faut [acheter] du pain et [préparer] le dîner. | باید نان خرید و شام را آماده کرد. | d: achète, achètes, acheté / prépare, prépares, préparé
+Les élèves [doivent] écouter et il ne [faut] pas parler en classe. | دانش‌آموزان باید گوش بدهند و در کلاس نباید حرف زد. | d: faut, doit, devez / faux, falloir, faire
+Tu [dois] venir à huit heures ; il ne [faut] pas être en retard. | باید ساعت هشت بیایی؛ نباید دیر کرد. | d: faut, doit, devez / faux, falloir, faire
+transforms:
+Nous devons partir. => Il faut partir. | جمله را با il faut بنویس (برای همه).
+Il faut parler ici. => Il ne faut pas parler ici. | جمله را منفی کن.
+Il faut attendre. => Il fallait attendre. | جمله را به گذشته (imparfait) ببر.
+Il faut payer en euros. => Il faudra payer en euros. | جمله را به آینده (futur simple) ببر.
+Tu dois dormir. => Il faut dormir. | جمله را با il faut بنویس (برای همه).
+Il faut une heure. => Il fallait une heure. | جمله را به گذشته (imparfait) ببر.
+Il faut partir. => Je dois partir. | جمله را با devoir و فاعل je بنویس.
+Il faut manger. => Nous devons manger. | جمله را با devoir و فاعل nous بنویس.
+translations:
+باید رفت. => Il faut partir. ; Il faut y aller. ; On doit partir. ; On doit y aller.
+نباید در کلاس حرف زد. => Il ne faut pas parler en classe. ; Il ne faut pas parler dans la classe. ; En classe, il ne faut pas parler. ; On ne doit pas parler en classe. ; En classe, on ne doit pas parler.
+برای رفتن به پاریس دو ساعت وقت لازم است. => Il faut deux heures pour aller à Paris. ; Pour aller à Paris, il faut deux heures.
+برای این کیک تخم‌مرغ لازم است. => Il faut des œufs pour ce gâteau. ; Pour ce gâteau, il faut des œufs.
+من امشب باید کار کنم. => Je dois travailler ce soir. ; Ce soir, je dois travailler. ; Il faut que je travaille ce soir. ; Ce soir, il faut que je travaille.
+فردا باید زود راه افتاد. => Demain, il faudra partir tôt. ; Il faudra partir tôt demain. ; Demain, il faut partir tôt. ; Il faut partir tôt demain.
+نباید پاسپورتت را فراموش کنی. => Il ne faut pas oublier ton passeport. ; Tu ne dois pas oublier ton passeport. ; N'oublie pas ton passeport.
+باید به همهٔ سؤال‌ها جواب داد. => Il faut répondre à toutes les questions.

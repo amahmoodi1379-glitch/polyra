@@ -1,0 +1,87 @@
+code: de-a2-dativ-akkusativ
+title: Ich gebe dem Kind einen Apfel: دو مفعول در یک جمله
+scope: فعل‌هایی با دو مفعول، آدم در Dativ و چیز در Akkusativ (geben، schenken، zeigen، bringen، schicken، erklären، erzählen، empfehlen، leihen، kaufen)، و ترتیب آن‌ها: دو اسم ← اول آدم (Ich gebe dem Kind einen Apfel)، ضمیر پیش از اسم (Ich gebe ihm den Apfel. Ich gebe ihn dem Kind.)، دو ضمیر ← اول Akkusativ (Ich gebe ihn ihm)، و سؤال با wem؛ فعل‌های با یک مفعول Dativ در واحد قبل آمدند.
+can_do: حالا می‌توانی بگویی چه چیزی را به چه کسی می‌دهی، هدیه می‌دهی یا نشان می‌دهی: «یک شال به خواهرم هدیه می‌دهم»، «آن را به تو نشان می‌دهم».
+rule: آدم در Dativ، چیز در Akkusativ؛ دو اسم: اول آدم (dem Kind einen Apfel)؛ ضمیر پیش از اسم (ihm den Apfel، ihn dem Kind)؛ دو ضمیر: اول Akkusativ (ihn ihm، es dir).
+mistake: در فارسی اول چیز می‌آید و بعد آدم: «کتاب را به بچه می‌دهم»؛ فارسی‌زبان‌ها برای همین ترتیب را قاطی می‌کنند یا آدم را هم Akkusativ می‌گذارند: «Ich gebe den Kind das Buch» غلط است؛ درست: Ich gebe dem Kind das Buch. با دو ضمیر برعکس است: «Ich gebe ihm es» غلط است؛ درست: Ich gebe es ihm.
+lesson:
+بعضی فعل‌ها دو مفعول دارند: آدمی که چیزی به او می‌رسد (Dativ) و خود آن چیز (Akkusativ): Ich gebe dem Kind einen Apfel. یعنی «یک سیب به بچه می‌دهم».
+این فعل‌ها این‌طورند: geben، schenken (هدیه دادن)، zeigen، bringen، schicken، erklären (توضیح دادن)، erzählen (تعریف کردن)، empfehlen (پیشنهاد کردن)، leihen (قرض دادن) و kaufen (برای کسی خریدن).
+وقتی هر دو مفعول اسم‌اند، معمولاً اول آدم (Dativ) می‌آید و بعد چیز (Akkusativ): Ich schenke meiner Mutter eine Kette.
+ضمیر همیشه پیش از اسم می‌آید: Ich schenke ihr eine Kette. Ich schenke sie meiner Mutter.
+وقتی هر دو مفعول ضمیرند، ترتیب برعکس می‌شود: اول Akkusativ، بعد Dativ: Ich schenke sie ihr. Ich gebe es dir.
+پس این را یادت بماند: اسم + اسم ← اول آدم؛ ضمیر + ضمیر ← اول چیز؛ ضمیر + اسم ← اول ضمیر.
+برای پرسیدن درباره آدم از wem استفاده کن: Wem schenkst du die Blumen?
+table:
+مفعول‌ها | مثال
+اسم + اسم | Ich gebe dem Kind einen Apfel.
+ضمیر + اسم | Ich gebe ihm einen Apfel.
+اسم + ضمیر | Ich gebe ihn dem Kind.
+ضمیر + ضمیر | Ich gebe ihn ihm.
+sets:
+دادن و رساندن: geben, schenken, bringen, schicken, leihen
+گفتن و نشان دادن: zeigen, erklären, erzählen, empfehlen
+examples:
+Ich zeige dir die Stadt. | شهر را به تو نشان می‌دهم.
+Max schenkt seiner{sein-det} Mutter Blumen. | ماکس به مادرش گل هدیه می‌دهد.
+Der Kellner bringt uns die Speisekarte. | گارسون منو را برایمان می‌آورد.
+Gefällt dir das Buch? Ich leihe{leihen} es dir gern. | از این کتاب خوشت می‌آید؟ با کمال میل به تو قرضش می‌دهم.
+targets:
+Ich gebe [dem] Kind einen Apfel. | یک سیب به بچه می‌دهم. | d: den, das, der
+Ich schenke [meiner]{mein} Mutter Blumen. | به مادرم گل هدیه می‌دهم. | d: meine, meinem, meinen
+Der Kellner bringt [uns] zwei Gläser Wasser. | گارسون دو لیوان آب برای ما می‌آورد. | d: wir, unser, unsere | hint: (wir)
+Ich zeige [dir] mein Zimmer. | اتاقم را به تو نشان می‌دهم. | d: dich, du, dein | hint: (du)
+Kannst du [mir] das Wort erklären? | می‌توانی این کلمه را برایم توضیح بدهی؟ | d: mich, ich, mein | hint: (ich)
+Der Lehrer erklärt [den] Schülern die Regel. | معلم قاعده را برای دانش‌آموزان توضیح می‌دهد. | d: die, dem, der | full: Der Lehrer erklärt die Regel den Schülern.
+Ich schicke [meinem] Bruder eine E-Mail. | برای برادرم یک ایمیل می‌فرستم. | d: meinen, mein, meiner
+Wir kaufen [unserem]{unser} Sohn ein Fahrrad. | برای پسرمان یک دوچرخه می‌خریم. | d: unseren, unser, unsere
+Der Vater erzählt [dem] Kind eine Geschichte. | پدر برای بچه قصه تعریف می‌کند. | d: das, den, der
+Können Sie [mir] ein Restaurant empfehlen? | می‌توانید یک رستوران به من پیشنهاد کنید؟ | d: mich, ich, mein | hint: (ich)
+Ich leihe{leihen} [dir] mein Auto nicht. | ماشینم را به تو قرض نمی‌دهم. | d: dich, du, dein | hint: (du)
+Ich bringe [euch] einen Kuchen mit. | برایتان یک کیک می‌آورم. | d: euer, eure, dich | hint: (ihr)
+Lena kennt die Stadt nicht. Zeigst du [ihr]{sie} den Weg? | لنا شهر را نمی‌شناسد. راه را به او نشان می‌دهی؟ | d: sie, ihre, ihren | hint: (sie)
+Der Vater kauft dem Kind [ein] Eis. | پدر برای بچه یک بستنی می‌خرد. | d: einen, einem, eine
+Ich schenke meiner{mein} Schwester [einen] Schal. | به خواهرم یک شال گردن هدیه می‌دهم. | d: ein, eine, einem
+Kannst du mir [den] Schlüssel geben? | می‌توانی کلید را به من بدهی؟ | d: der, dem, das
+Kannst du [uns] ein Foto schicken? | می‌توانی یک عکس برایمان بفرستی؟ | d: wir, unser, unsere | hint: (wir)
+Max hat Hunger. Ich gebe [ihm] einen Apfel. | ماکس گرسنه است. یک سیب به او می‌دهم. | d: ihn, er, sein | hint: (er)
+Das Buch ist für Paul. Ich gebe [es] ihm. | این کتاب برای پاول است. آن را به او می‌دهم. | d: er, sein, ihm
+Der Kuchen ist lecker. Ich bringe [ihn] dir. | کیک خوشمزه است. برایت می‌آورمش. | d: ihm, er, sein
+Wo ist meine Zeitung? – Ich bringe [sie] dir. | روزنامه‌ام کجاست؟ – برایت می‌آورمش. | d: ihr, ihre, er
+Hast du den Schlüssel? – Ja, ich gebe [ihn] deinem Vater. | کلید را داری؟ – بله، آن را به پدرت می‌دهم. | d: ihm, er, sein
+Die Fotos sind schön. Ich schicke [sie] meiner{mein} Mutter. | عکس‌ها قشنگ‌اند. آن‌ها را برای مادرم می‌فرستم. | d: ihr, ihnen, ihre
+Ich verstehe das nicht. – Ich erkläre [es] dir. | این را نمی‌فهمم. – برایت توضیحش می‌دهم. | d: ihm, er, sein
+Das Handy ist von Anna. Gibst du [es] ihr{sie}? | این موبایل مال آناست. آن را به او می‌دهی؟ | d: ihm, er, sein
+Der Brief ist für Lena. Ich gebe ihn [ihr]{sie}. | نامه برای لناست. آن را به او می‌دهم. | d: sie, ihre, ihn | hint: (sie)
+Ich brauche den Kuli. Gibst du ihn [mir]? | خودکار را لازم دارم. آن را به من می‌دهی؟ | d: mich, ich, mein | hint: (ich)
+Die Regel ist schwer. Kannst du sie [uns] erklären? | این قاعده سخت است. می‌توانی آن را برایمان توضیح بدهی؟ | d: wir, unser, unsere | hint: (wir)
+Die Schüler haben eine Frage. Der Lehrer erklärt [ihnen]{sie-2} die Aufgabe. | دانش‌آموزان سؤال دارند. معلم تمرین را برایشان توضیح می‌دهد. | d: sie, ihre, ihren | hint: (sie)
+Ich habe [meinem] Vater ein Buch geschenkt. | به پدرم یک کتاب هدیه دادم. | d: meinen, mein, meine
+Lena war gestern hier. Hast du [ihr]{sie} die Fotos gezeigt? | لنا دیروز اینجا بود. عکس‌ها را به او نشان دادی؟ | d: sie, ihre, ihren
+[Wem] schenkst du die Blumen? | گل‌ها را به چه کسی هدیه می‌دهی؟ | d: Wer, Wen, Was
+Max hat Geburtstag. Ich kaufe [ihm] ein Buch und schenke [es] ihm. | تولد ماکس است. برایش یک کتاب می‌خرم و آن را به او هدیه می‌دهم. | d: ihn, er, sein / ihm, er, sein
+Der Arzt gibt [dem] Mann [eine] Tablette. | دکتر به آن مرد یک قرص می‌دهد. | d: den, der, das / ein, einen, einer
+Ich schicke [meiner]{mein} Tante [eine] Postkarte. | برای خاله‌ام یک کارت پستال می‌فرستم. | d: meine, meinem, meinen / ein, einen, einer
+Kannst du [mir] [den] Weg zeigen? | می‌توانی راه را به من نشان بدهی؟ | d: mich, ich, mein / der, dem, die
+Wo ist mein Handy? – Hier, ich gebe [es] [dir]. | موبایلم کجاست؟ – بیا، به تو می‌دهمش. | d: ihm, er, sein / dich, du, dein
+Der Kellner bringt [uns] [die] Rechnung. | گارسون صورت‌حساب را برایمان می‌آورد. | d: wir, unser, unsere / der, dem, den
+Kaufst du [den] Kindern [ein] Eis? | برای بچه‌ها بستنی می‌خری؟ | d: die, dem, der / einen, eine, einem
+Was schenkst du [deiner]{dein} Mutter? – Ich schenke [ihr]{sie} eine Kette. | به مادرت چه هدیه می‌دهی؟ – یک گردنبند به او هدیه می‌دهم. | d: deine, deinem, deinen / sie, ihre, ihren
+transforms:
+Ich gebe dem Kind den Apfel. => Ich gebe ihm den Apfel. | به‌جای «dem Kind» ضمیر بگذار.
+Ich gebe dem Kind den Apfel. => Ich gebe ihn dem Kind. | به‌جای «den Apfel» ضمیر بگذار.
+Ich gebe dem Kind den Apfel. => Ich gebe ihn ihm. | به‌جای هر دو مفعول ضمیر بگذار.
+Ich schenke meiner{mein} Mutter eine Kette. => Ich schenke ihr{sie} eine Kette. | به‌جای «meiner Mutter» ضمیر بگذار.
+Ich zeige dir das Foto. => Ich zeige es dir. | به‌جای «das Foto» ضمیر بگذار.
+Max bringt mir den Kaffee. => Max bringt ihn mir. | به‌جای «den Kaffee» ضمیر بگذار.
+Ich schicke dir die Fotos. => Ich schicke sie dir. | به‌جای «die Fotos» ضمیر بگذار.
+Der Lehrer erklärt den Schülern die Regel. => Der Lehrer erklärt sie ihnen{sie-2}. | به‌جای هر دو مفعول ضمیر بگذار.
+translations:
+عکس‌ها را به تو نشان می‌دهم. => Ich zeige dir die Fotos.
+به خواهرم یک کتاب هدیه می‌دهم. => Ich schenke meiner{mein} Schwester ein Buch.
+کتاب را به او می‌دهم. => Ich gebe ihm das Buch. ; Ich gebe ihr{sie} das Buch.
+گارسون منو را برایمان می‌آورد. => Der Kellner bringt uns die Speisekarte. ; Die Kellnerin bringt uns die Speisekarte.
+می‌توانی این را برایم توضیح بدهی؟ => Kannst du mir das erklären? ; Kannst du es mir erklären?
+برای پسرم یک دوچرخه می‌خرم. => Ich kaufe meinem Sohn ein Fahrrad. ; Ich kaufe ein Fahrrad für meinen Sohn.
+برایت یک ایمیل می‌فرستم. => Ich schicke dir eine E-Mail.
+کلید را به پدرت بده! => Gib deinem Vater den Schlüssel! ; Gib den Schlüssel deinem Vater!

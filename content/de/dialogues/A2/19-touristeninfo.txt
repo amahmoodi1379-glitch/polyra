@@ -1,0 +1,39 @@
+code: de-a2-d019
+title: دفتر اطلاعات گردشگری
+situation: اولین بار است که به درسدن آمده‌ای و به دفتر اطلاعات گردشگری شهر می‌روی.
+turns:
+B: Guten Tag! Wie kann ich Ihnen helfen? | روز بخیر! چه کمکی از من برمی‌آید؟
+- Hallo! Hast du einen Stadtplan von Dresden? | سلام! یک نقشه درسدن داری؟
++ Guten Tag! Haben Sie einen Stadtplan von Dresden? | روز بخیر! یک نقشه درسدن دارید؟
+- Guten Tag! Haben Sie ein Stadtplan von Dresden? | روز بخیر! یک نقشه درسدن دارید؟
+why: با کارمند رسمی حرف می‌زنیم: «Haben Sie». Stadtplan مذکر است: «einen Stadtplan».
+B: Ja, hier, bitte{bitte}. Der Stadtplan ist kostenlos. | بله، بفرمایید. نقشه رایگان است.
++ Danke{danke}! Was sind die wichtigsten Sehenswürdigkeiten? | ممنون! مهم‌ترین جاهای دیدنی کدام‌اند؟
+- Danke{danke}! Was kostet der Stadtplan? | ممنون! نقشه چند است؟
+- Danke{danke}! Was ist die wichtigsten Sehenswürdigkeiten? | ممنون! مهم‌ترین جاهای دیدنی کدام است؟
+why: حالا جاهای دیدنی را می‌پرسی. نقشه رایگان است و قیمت ندارد، و با اسم جمع sind می‌آید، نه ist.
+B: Die Altstadt ist sehr schön. Dort gibt es ein Schloss und viele Museen. | بافت قدیم شهر خیلی زیباست. آنجا یک قصر و موزه‌های زیادی هست.
+- Schade! Kann man das Schloss besichtigen? | حیف! می‌شود از قصر بازدید کرد؟
+- Toll! Kann man den Schloss besichtigen? | عالی! می‌شود از قصر بازدید کرد؟
++ Toll! Kann man das Schloss besichtigen? | عالی! می‌شود از قصر بازدید کرد؟
+why: خبر خوبی است، پس «Toll!»، نه «Schade!». Schloss خنثی است: «das Schloss».
+B: Ja, es gibt jeden Tag eine Führung um elf Uhr. | بله، هر روز ساعت یازده یک بازدید با راهنما هست.
++ Gibt es die Führung auch auf Englisch? | این بازدید به انگلیسی هم هست؟
+- Gibt es den Führung auch auf Englisch? | این بازدید به انگلیسی هم هست؟
+- Gibt es die Führung auch auf Deutschland? | این بازدید به آلمان هم هست؟
+why: Führung مؤنث است: «die Führung». برای زبان «auf Englisch» یا «auf Deutsch» می‌گوییم؛ Deutschland اسم کشور است.
+B: Nur am Wochenende. Heute ist sie nur auf Deutsch. | فقط آخر هفته. امروز فقط به آلمانی است.
+- Kein Problem. Ich verstehen schon ein bisschen Deutsch. | مشکلی نیست. کمی آلمانی می‌فهمم.
++ Kein Problem. Ich verstehe schon ein bisschen Deutsch. | مشکلی نیست. کمی آلمانی می‌فهمم.
+- Kein Problem. Ich verstehe schon ein bisschen Englisch. | مشکلی نیست. کمی انگلیسی می‌فهمم.
+why: بازدید امروز به آلمانی است، پس فهمیدن آلمانی مهم است، نه انگلیسی. با ich شکل verstehe می‌آید، نه verstehen.
+B: Prima. Die Führung beginnt vor dem Schloss. Der Eintritt kostet zwölf Euro. | عالی. بازدید جلوی قصر شروع می‌شود. ورودی دوازده یورو است.
++ Kann ich die Eintrittskarte hier kaufen? | می‌توانم بلیت ورودی را همین‌جا بخرم؟
+- Kann ich das Eintrittskarte hier kaufen? | می‌توانم بلیت ورودی را همین‌جا بخرم؟
+- Kannst du mir eine Eintrittskarte verkaufen? | می‌توانی یک بلیت ورودی به من بفروشی؟
+why: Eintrittskarte مؤنث است: «die Eintrittskarte». با کارمند du نمی‌گوییم.
+B: Ja, natürlich. Viel Spaß in Dresden! | بله، البته. در درسدن خوش بگذرد!
+- Vielen Dank! Sie{Sie-3} haben mich sehr geholfen. | خیلی ممنون! خیلی کمکم کردید.
++ Vielen Dank! Sie{Sie-3} haben mir sehr geholfen. | خیلی ممنون! خیلی کمکم کردید.
+- Vielen Dank! Ich habe Ihnen sehr geholfen. | خیلی ممنون! خیلی کمکتان کردم.
+why: helfen با Dativ می‌آید: «Sie haben mir geholfen»، نه mich. کارمند به تو کمک کرد، نه تو به او.

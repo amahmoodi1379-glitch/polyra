@@ -1,0 +1,94 @@
+code: de-a2-verben-praepositionen
+title: فعل و حرف اضافه ثابت: warten auf، denken an
+scope: فعل‌هایی که همیشه با یک حرف اضافه ثابت می‌آیند و حالت اسم بعد از آن: warten auf، denken an، sich erinnern an، sich freuen auf و über، sich interessieren für، sich kümmern um، sich ärgern über، sprechen mit و über، telefonieren mit، fragen nach، träumen von، Angst haben vor، teilnehmen an، danken für، gratulieren zu، Lust haben auf و bitten um، و سؤال با Auf wen …? و Mit wem …?؛ کلمه‌های darauf و worauf در سطح B1 می‌آیند.
+can_do: حالا می‌توانی بگویی منتظر چه کسی هستی، به چه فکر می‌کنی، به چه علاقه داری و از چه می‌ترسی.
+rule: فعل و حرف اضافه‌اش را با هم یاد بگیر (warten auf، denken an، Angst haben vor)؛ حالت اسم را حرف اضافه تعیین می‌کند: auf، an، über، für و um در این فعل‌ها ← Akkusativ؛ mit، nach، von، vor و zu ← Dativ.
+mistake: فارسی‌زبان‌ها حرف اضافه را از فارسی ترجمه می‌کنند: «Ich habe Angst von Hunden» (از) و «Ich warte für den Bus» غلط است؛ درست: Ich habe Angst vor Hunden. Ich warte auf den Bus. «Ich interessiere mich an Musik» هم غلط است؛ درست: Ich interessiere mich für Musik.
+lesson:
+بعضی فعل‌ها در آلمانی همیشه با یک حرف اضافه ثابت می‌آیند: warten auf یعنی «منتظرِ … بودن» و denken an یعنی «به … فکر کردن».
+این حرف اضافه بیشتر وقت‌ها با فارسی جور درنمی‌آید: «از سگ می‌ترسم» می‌شود Ich habe Angst vor Hunden، نه von. پس فعل و حرف اضافه‌اش را با هم حفظ کن، مثل یک کلمه.
+حالت اسم بعد از آن را خود حرف اضافه تعیین می‌کند: در این فعل‌ها auf، an، über، für و um حالت Akkusativ می‌گیرند (Ich warte auf den Bus) و mit، nach، von، vor و zu همیشه Dativ (Ich spreche mit meinem Chef).
+یک استثنا را به خاطر بسپار: teilnehmen an با Dativ است: Ich nehme am Kurs teil.
+sich freuen دو حرف اضافه دارد: auf برای چیزی که هنوز نیامده (Ich freue mich auf die Ferien: «مشتاقانه منتظر تعطیلاتم») و über برای چیزی که الان هست یا پیش آمده (Ich freue mich über das Geschenk: «از هدیه خوشحالم»).
+برای پرسیدن درباره یک آدم، حرف اضافه اول سؤال می‌آید: Auf wen wartest du? Mit wem telefonierst du?
+table:
+فعل | حرف اضافه + حالت | مثال
+warten | auf + Akk | Ich warte auf den Bus.
+denken | an + Akk | Ich denke an dich.
+sich erinnern | an + Akk | Erinnerst du dich an mich?
+sich freuen (آینده) | auf + Akk | Ich freue mich auf die Ferien.
+sich freuen (حالا) | über + Akk | Ich freue mich über das Geschenk.
+sich interessieren | für + Akk | Ich interessiere mich für Kunst.
+sich kümmern | um + Akk | Ich kümmere mich um meine Oma.
+sprechen | mit + Dat، über + Akk | Ich spreche mit Anna über den Film.
+telefonieren | mit + Dat | Ich telefoniere mit meiner Mutter.
+fragen | nach + Dat | Er fragt nach dem Preis.
+Angst haben | vor + Dat | Ich habe Angst vor Hunden.
+teilnehmen | an + Dat | Ich nehme am Kurs teil.
+sets:
++ Akkusativ: warten auf, denken an, sich freuen auf, sich interessieren für, sich kümmern um
++ Dativ: sprechen mit, fragen nach, Angst haben vor, träumen von, teilnehmen an
+examples:
+Wir warten auf das Taxi. | ما منتظر تاکسی هستیم.
+Ich denke oft an meine Großeltern. | اغلب به پدربزرگ و مادربزرگم فکر می‌کنم.
+Mein Bruder interessiert sich für Autos. | برادرم به ماشین علاقه دارد.
+Die Kinder freuen sich auf den Sommer. | بچه‌ها مشتاقانه منتظر تابستان‌اند.
+targets:
+Ich warte [auf] den Bus. | منتظر اتوبوس هستم. | d: für, an, nach
+Wir warten hier [auf] dich. | ما اینجا منتظرت هستیم. | d: für, an, nach
+Ich warte auf [meinen] Bruder. | منتظر برادرم هستم. | d: meinem, meiner, mein
+Denkst du oft [an] deine Familie? | اغلب به خانواده‌ات فکر می‌کنی؟ | d: von, zu, auf
+Ich denke [an] dich. | به تو فکر می‌کنم. | d: von, zu, auf
+Max denkt nur an [seinen] Urlaub. | ماکس فقط به تعطیلاتش فکر می‌کند. | d: seinem, seiner, sein
+Sara interessiert sich [für] Kunst. | سارا به هنر علاقه دارد. | d: an, über, zu
+Interessierst du dich [für] Fußball? | به فوتبال علاقه داری؟ | d: an, über, zu
+Ich interessiere mich für [das] Thema. | به این موضوع علاقه دارم. | d: dem, den, der
+Ich freue mich [auf] das Wochenende. | مشتاقانه منتظر آخر هفته‌ام. | d: für, an, zu
+Die Kinder freuen sich [über] die Geschenke. | بچه‌ها از هدیه‌ها خوشحال‌اند. | d: von, für, an
+Ich habe mich sehr über [deinen] Brief gefreut. | از نامه‌ات خیلی خوشحال شدم. | d: deinem, deiner, dein
+Freust du dich auf [die] Ferien? | مشتاقانه منتظر تعطیلات هستی؟ | d: den, der, dem
+Ich spreche morgen [mit] meinem Chef. | فردا با رئیسم صحبت می‌کنم. | d: an, aus, für | full: Morgen spreche ich mit meinem Chef.
+Habt ihr schon über [den] Plan gesprochen? | درباره برنامه صحبت کرده‌اید؟ | d: dem, der, das
+Wir sprechen [über] das Wetter. | ما درباره هوا صحبت می‌کنیم. | d: an, zu, auf
+Mit [wem] telefonierst du? | با چه کسی تلفنی صحبت می‌کنی؟ | d: wen, wer, wessen
+Ich telefoniere jeden Tag [mit] meiner{mein} Mutter. | هر روز با مادرم تلفنی صحبت می‌کنم. | d: zu, an, für | full: Jeden Tag telefoniere ich mit meiner Mutter.
+Lena hat [nach] dir gefragt. | لنا سراغ تو را گرفت. | d: von, an, um
+Erinnerst du dich [an] unseren Urlaub in Schiras? | تعطیلاتمان در شیراز یادت هست؟ | d: von, über, zu
+Ich erinnere mich gut an [meine] erste Lehrerin. | معلم اولم را خوب به یاد دارم. | d: meiner, meinen, meinem
+Meine Schwester hat Angst [vor] Hunden. | خواهرم از سگ‌ها می‌ترسد. | d: von, für, über
+Hast du Angst vor [dem] Zahnarzt? | از دندانپزشک می‌ترسی؟ | d: den, der, das
+Ich kümmere mich [um] meine Oma. | از مادربزرگم مراقبت می‌کنم. | d: für, an, über
+Wer kümmert sich um [den] Hund? | چه کسی به سگ رسیدگی می‌کند؟ | d: dem, der, die
+Ich träume [von] einem Haus am Meer. | آرزوی یک خانه کنار دریا را دارم. | d: an, nach, zu
+Möchtest du [am] Kurs teilnehmen? | می‌خواهی در کلاس شرکت کنی؟ | d: im, beim, zum
+Ich danke dir [für] das Geschenk. | برای هدیه از تو ممنونم. | d: über, an, um
+Wir gratulieren dir [zum] Geburtstag. | تولدت را به تو تبریک می‌گوییم. | d: für den, über den, an den
+Hast du Lust [auf] eine Pizza? | دلت پیتزا می‌خواهد؟ | d: für, an, über
+Sie bittet den Kellner [um] die Rechnung. | او از گارسون صورت‌حساب را می‌خواهد. | d: für, nach, an
+[Auf] wen wartest du? | منتظر چه کسی هستی؟ | d: Für, An, Nach
+Ich freue mich [auf] die Ferien und denke oft [an] das Meer. | مشتاقانه منتظر تعطیلاتم و اغلب به دریا فکر می‌کنم. | d: für, an, zu / von, zu, auf | full: Ich denke oft an das Meer und freue mich auf die Ferien.
+Anna wartet [auf] den Zug und telefoniert [mit] ihrer{ihr-det} Schwester. | آنا منتظر قطار است و با خواهرش تلفنی صحبت می‌کند. | d: für, an, nach / zu, an, für | full: Anna telefoniert mit ihrer Schwester und wartet auf den Zug.
+Ich habe mit [meinem] Chef über [das] Projekt gesprochen. | با رئیسم درباره پروژه صحبت کردم. | d: meinen, meiner, mein / dem, den, der | full: Ich habe über das Projekt mit meinem Chef gesprochen.
+Mein Sohn hat Angst [vor] der Prüfung, aber er freut sich [auf] die Ferien. | پسرم از امتحان می‌ترسد، ولی مشتاقانه منتظر تعطیلات است. | d: von, für, über / für, an, zu
+Erinnerst du dich [an] Max? Er fragt oft [nach] dir. | ماکس یادت هست؟ اغلب سراغت را می‌گیرد. | d: von, über, zu / von, an, um
+Ich danke dir [für] deine Hilfe und freue mich [über] die Blumen. | از تو برای کمکت ممنونم و از گل‌ها خوشحالم. | d: über, an, um / von, an, für
+Der Tourist fragt [nach] dem Preis und wartet [auf] die Antwort. | گردشگر قیمت را می‌پرسد و منتظر جواب می‌ماند. | d: von, für, um / für, an, nach
+Paul ärgert sich [über] den Stau und denkt [an] seinen Termin. | پاول از ترافیک حرص می‌خورد و به قرار ملاقاتش فکر می‌کند. | d: von, an, auf / von, zu, auf
+transforms:
+Ich warte auf den Bus. => Ich warte auf die Straßenbahn. | به‌جای Bus کلمه Straßenbahn را بگذار.
+Ich denke an meinen Vater. => Ich denke an meine Mutter. | به‌جای Vater بگو Mutter.
+Ich spreche mit dem Lehrer. => Ich spreche mit der Lehrerin. | به‌جای Lehrer بگو Lehrerin.
+Ich habe Angst vor dem Hund. => Ich habe Angst vor Hunden. | Hund را جمع کن، بدون حرف تعریف.
+Max wartet auf Anna. => Auf wen wartet Max? | برای «auf Anna» سؤال بساز.
+Lena telefoniert mit ihrem{ihr-det} Bruder. => Mit wem telefoniert Lena? | برای «mit ihrem Bruder» سؤال بساز.
+Ich interessiere mich für Musik. => Interessierst du dich für Musik? | جمله را با du سؤالی کن.
+Ich erinnere mich an den Urlaub. => Ich habe mich an den Urlaub erinnert. | جمله را به گذشته ببر (Perfekt).
+translations:
+منتظر تو هستم. => Ich warte auf dich.
+به خانواده‌ام فکر می‌کنم. => Ich denke an meine Familie.
+از سگ‌ها می‌ترسم. => Ich habe Angst vor Hunden.
+به موسیقی علاقه دارم. => Ich interessiere mich für Musik.
+با مادرم تلفنی صحبت کردم. => Ich habe mit meiner{mein} Mutter telefoniert. ; Ich telefonierte mit meiner{mein} Mutter.
+مشتاقانه منتظر تعطیلات هستیم. => Wir freuen uns auf die Ferien. ; Wir freuen uns auf den Urlaub.
+آن روز را یادت هست؟ => Erinnerst du dich an den Tag? ; Erinnerst du dich an diesen Tag?
+از هدیه خیلی خوشحال شدم. => Ich habe mich sehr über das Geschenk gefreut. ; Ich freute mich sehr über das Geschenk. ; Ich war sehr froh über das Geschenk.

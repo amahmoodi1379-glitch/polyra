@@ -1,0 +1,87 @@
+code: de-a2-wenn
+title: wenn: «اگر» و «هر وقت»، و فعل بعد از ویرگول
+scope: جمله wenn برای شرط («اگر») و برای کاری که هر بار تکرار می‌شود («هر وقت»، immer wenn)، با فعل صرف‌شده در آخر جمله؛ و وقتی جمله wenn، weil یا dass اول بیاید، فعل جمله اصلی بلافاصله بعد از ویرگول می‌آید (Wenn es regnet, bleibe ich zu Hause.)؛ فرق wenn با wann؛ als برای یک بار در گذشته در واحدهای بعد می‌آید.
+can_do: حالا می‌توانی شرط بگذاری و بگویی هر وقت چیزی پیش می‌آید چه می‌کنی: «Wenn ich Zeit habe, besuche ich dich».
+rule: wenn یعنی «اگر» یا «هر وقت»؛ فعل جمله wenn آخر می‌آید. اگر جمله wenn (یا weil و dass) اول بیاید، جمله اصلی با فعل شروع می‌شود: Wenn es regnet, bleibe ich zu Hause.
+mistake: در فارسی بعد از جمله «اگر …» فاعل اول می‌آید («اگر وقت داشته باشم، من می‌آیم»)، برای همین فارسی‌زبان‌ها می‌نویسند «Wenn ich Zeit habe, ich komme»؛ درست: Wenn ich Zeit habe, komme ich. wenn و wann را هم قاطی می‌کنند: «Wann es regnet, …» غلط است؛ wann فقط برای سؤال است: Wann kommst du?
+lesson:
+wenn یعنی «اگر»: Wenn es regnet, bleibe ich zu Hause. یعنی «اگر باران بیاید، در خانه می‌مانم».
+wenn یعنی «هر وقت» هم هست؛ برای تأکید immer wenn می‌گویند: Immer wenn ich nach Wien fahre, besuche ich Oma.
+مثل weil و dass، فعل صرف‌شده جمله wenn به آخر می‌رود: …, wenn du Zeit hast. / …, wenn du kommen kannst.
+
+اگر جمله wenn اول بیاید، کل آن جای اول جمله اصلی را می‌گیرد؛ پس فعل جمله اصلی بلافاصله بعد از ویرگول می‌آید و فاعل بعد از آن: Wenn ich Zeit habe, besuche ich dich. (فعل – ویرگول – فعل)
+همین قاعده برای weil و dass هم هست: Weil ich krank bin, bleibe ich zu Hause. Dass du Deutsch lernst, finde ich toll.
+wann یعنی «کی؟» و برای سؤال است: Wann kommst du? ولی «اگر» و «هر وقت» همیشه wenn است.
+برای یک اتفاق یک‌باره در گذشته («وقتی بچه بودم») کلمه دیگری به نام als می‌آید که بعداً یاد می‌گیری.
+table:
+جمله wenn آخر | جمله wenn اول
+Ich bleibe zu Hause, wenn es regnet. | Wenn es regnet, bleibe ich zu Hause.
+Ich besuche dich, wenn ich Zeit habe. | Wenn ich Zeit habe, besuche ich dich.
+Ich rufe dich an, wenn ich ankomme. | Wenn ich ankomme, rufe ich dich an.
+sets:
+wenn (اگر، هر وقت): Wenn es regnet, …, Immer wenn ich müde bin, …
+wann (کی؟): Wann kommst du?, Wann beginnt der Kurs?
+examples:
+Wenn es heiß{heiß} ist, gehen wir schwimmen. | وقتی هوا گرم است، شنا می‌رویم.
+Immer wenn ich nach Wien fahre, besuche ich Oma. | هر بار که به وین می‌روم، به مادربزرگ سر می‌زنم.
+Ruf{anrufen} mich an{anrufen}, wenn du Zeit hast. | هر وقت وقت داشتی، به من زنگ بزن.
+Weil ich krank bin, bleibe ich heute im Bett. | چون مریضم، امروز در رختخواب می‌مانم.
+targets:
+[Wenn] es regnet, fahren wir nicht ans Meer. | اگر باران بیاید، به کنار دریا نمی‌رویم. | d: Wann, Dann, Dass | full: Wir fahren nicht ans Meer, wenn es regnet.
+[Wenn] du Durst hast, nimm ein Glas Wasser. | اگر تشنه‌ای، یک لیوان آب بردار. | d: Wann, Dann, Dass | full: Nimm ein Glas Wasser, wenn du Durst hast.
+Ich trinke Kaffee, [wenn] ich müde bin. | وقتی خسته‌ام، قهوه می‌نوشم. | d: wann, dann, dass | full: Wenn ich müde bin, trinke ich Kaffee.
+Ruf{anrufen} mich an{anrufen}, [wenn] du in Berlin bist! | وقتی در برلین بودی، به من زنگ بزن! | d: wann, dann, dass | full: Wenn du in Berlin bist, ruf mich an!
+Immer [wenn] ich nach Köln fahre, besuche ich meine Tante. | هر بار که به کلن می‌روم، به عمه‌ام سر می‌زنم. | d: wann, dann, dass | full: Ich besuche meine Tante, immer wenn ich nach Köln fahre. ; Ich besuche immer meine Tante, wenn ich nach Köln fahre.
+Was machst du, [wenn] du Zeit hast? | وقتی وقت داری، چه کار می‌کنی؟ | d: wann, dann, dass
+[Wenn] das Wetter schön ist, gehen wir in den Park. | اگر هوا خوب باشد، به پارک می‌رویم. | d: Wann, Dann, Dass | full: Wir gehen in den Park, wenn das Wetter schön ist.
+Ich helfe dir gern, [wenn] du Hilfe brauchst. | اگر کمک لازم داری، با کمال میل کمکت می‌کنم. | d: wann, dann, dass | full: Wenn du Hilfe brauchst, helfe ich dir gern.
+[Wenn] ich krank bin, gehe ich zum Arzt. | وقتی مریض می‌شوم، پیش دکتر می‌روم. | d: Wann, Dann, Dass | full: Ich gehe zum Arzt, wenn ich krank bin.
+Ihr dürft fernsehen, [wenn] ihr euer Zimmer aufgeräumt habt. | اگر اتاقتان را مرتب کرده باشید، می‌توانید تلویزیون ببینید. | d: wann, dann, dass | full: Wenn ihr euer Zimmer aufgeräumt habt, dürft ihr fernsehen.
+Was machen Sie, [wenn] Sie frei haben? | وقتی کار ندارید، چه کار می‌کنید؟ | d: wann, dann, dass
+Ich bin glücklich, [wenn] die Sonne scheint. | وقتی آفتاب می‌تابد، خوشحالم. | d: wann, dann, als | full: Wenn die Sonne scheint, bin ich glücklich.
+[Wenn] du nach Deutschland fliegst, vergiss deinen Pass nicht! | اگر به آلمان پرواز می‌کنی، گذرنامه‌ات را فراموش نکن! | d: Wann, Dann, Dass | full: Vergiss deinen Pass nicht, wenn du nach Deutschland fliegst!
+[Wenn] ich in Teheran bin, wohne ich bei meinen Großeltern. | وقتی در تهران هستم، پیش پدربزرگ و مادربزرگم می‌مانم. | d: Wann, Dann, Dass | full: Ich wohne bei meinen Großeltern, wenn ich in Teheran bin.
+Wenn ich müde bin, [gehe ich] früh ins Bett. | وقتی خسته‌ام، زود می‌خوابم. | d: ich gehe, gehst ich, ich geht | full: Ich gehe früh ins Bett, wenn ich müde bin.
+Wenn es kalt ist, [trage ich] eine Mütze. | وقتی هوا سرد است، کلاه سرم می‌گذارم. | d: ich trage, trägst ich, ich trägt | full: Ich trage eine Mütze, wenn es kalt ist.
+Wenn du willst, [zeige ich] dir die Stadt. | اگر بخواهی، شهر را به تو نشان می‌دهم. | d: ich zeige, zeigst ich, ich zeigt | full: Ich zeige dir die Stadt, wenn du willst.
+Weil der Bus nicht kommt, [gehen wir] zu Fuß. | چون اتوبوس نمی‌آید، پیاده می‌رویم. | d: wir gehen, geht wir, wir geht | full: Wir gehen zu Fuß, weil der Bus nicht kommt.
+Dass du so gut Persisch sprichst, [finde ich] toll. | این‌که این‌قدر خوب فارسی حرف می‌زنی، به نظرم عالی است. | d: ich finde, findest ich, ich findet | full: Ich finde es toll, dass du so gut Persisch sprichst. ; Ich finde toll, dass du so gut Persisch sprichst.
+Weil es draußen so laut war, [konnten wir] nicht schlafen. | چون بیرون خیلی سر و صدا بود، نتوانستیم بخوابیم. | d: wir konnten, konntet wir, wir konntet | full: Wir konnten nicht schlafen, weil es draußen so laut war.
+Wenn ich nicht schlafen kann, [lese ich] ein Buch. | وقتی نمی‌توانم بخوابم، کتاب می‌خوانم. | d: ich lese, liest ich, ich liest | full: Ich lese ein Buch, wenn ich nicht schlafen kann.
+Immer wenn wir in Isfahan sind, [essen wir] bei Oma. | هر بار که در اصفهان هستیم، خانه مادربزرگ غذا می‌خوریم. | d: wir essen, esst wir, wir isst | full: Wir essen bei Oma, immer wenn wir in Isfahan sind. ; Wir essen immer bei Oma, wenn wir in Isfahan sind.
+Wenn es schneit, [fahren wir] nicht mit dem Auto. | اگر برف بیاید، با ماشین نمی‌رویم. | d: wir fahren, fährt wir, wir fährt | full: Wir fahren nicht mit dem Auto, wenn es schneit.
+Wenn man krank ist, [muss man] im Bett bleiben. | وقتی آدم مریض است، باید در رختخواب بماند. | d: man muss, müsst man, man müsst | full: Man muss im Bett bleiben, wenn man krank ist.
+Weil ich keinen Schlüssel habe, [warte ich] vor der Tür. | چون کلید ندارم، جلوی در منتظر می‌مانم. | d: ich warte, wartest ich, ich wartet | full: Ich warte vor der Tür, weil ich keinen Schlüssel habe.
+Wenn es heiß{heiß} ist, [trinken die Kinder] viel Wasser. | وقتی هوا گرم است، بچه‌ها زیاد آب می‌نوشند. | d: die Kinder trinken, trinkt die Kinder, die Kinder trinkt | full: Die Kinder trinken viel Wasser, wenn es heiß ist.
+Wenn ihr morgen nicht [kommen könnt], schreibt mir eine Nachricht. | اگر فردا نمی‌توانید بیایید، برایم پیام بنویسید. | d: könnt kommen, kommen können, kommen kannst | full: Schreibt mir eine Nachricht, wenn ihr morgen nicht kommen könnt. | hint: (können)
+Wenn der Film um 8 Uhr [anfängt]{anfangen}, essen wir vorher. | اگر فیلم ساعت هشت شروع می‌شود، قبلش غذا می‌خوریم. | d: fängt an, anfangen, anfängst | full: Wir essen vorher, wenn der Film um 8 Uhr anfängt. | hint: (anfangen)
+Wenn du gut [schlafen willst], trink abends keinen Kaffee. | اگر می‌خواهی خوب بخوابی، شب‌ها قهوه نخور. | d: willst schlafen, schlafen wollen, schlafen will | full: Trink abends keinen Kaffee, wenn du gut schlafen willst. | hint: (wollen)
+Wenn man Deutsch [lernen will], muss man viel üben. | اگر آدم بخواهد آلمانی یاد بگیرد، باید زیاد تمرین کند. | d: will lernen, lernen wollen, lernen willst | full: Man muss viel üben, wenn man Deutsch lernen will.
+Wenn du die Hausaufgaben [gemacht hast], darfst du spielen. | وقتی تکلیف‌هایت را انجام دادی، می‌توانی بازی کنی. | d: hast gemacht, gemacht bist, gemacht habt | full: Du darfst spielen, wenn du die Hausaufgaben gemacht hast.
+Wenn du [einkaufen gehst], kauf auch Brot. | اگر خرید می‌روی، نان هم بخر. | d: gehst einkaufen, einkaufen gehen, einkaufen geht | full: Kauf auch Brot, wenn du einkaufen gehst.
+[Wann] kommst du? – [Wenn] ich fertig bin. | کی می‌آیی؟ – وقتی کارم تمام شد. | d: Wenn, Als, Dass / Wann, Als, Dann
+[Wenn] es regnet, [nehme ich] den Bus. | اگر باران بیاید، با اتوبوس می‌روم. | d: Wann, Dann, Dass / ich nehme, nimmst ich, ich nimmt | full: Ich nehme den Bus, wenn es regnet.
+[Wenn] du Fragen hast, [kannst du] mich anrufen. | اگر سؤالی داری، می‌توانی به من زنگ بزنی. | d: Wann, Dann, Dass / du kannst, kann du, du kann | full: Du kannst mich anrufen, wenn du Fragen hast.
+Immer [wenn] ich Kopfschmerzen habe, [nehme ich] eine Tablette. | هر بار که سردرد دارم، یک قرص می‌خورم. | d: wann, dann, dass / ich nehme, nehmen ich, ich nehmen | full: Ich nehme eine Tablette, immer wenn ich Kopfschmerzen habe. ; Ich nehme immer eine Tablette, wenn ich Kopfschmerzen habe.
+Weil ich krank [war], [bin ich] nicht gekommen. | چون مریض بودم، نیامدم. | d: waren, warst, wart / ich bin, ich habe, habe ich | full: Ich bin nicht gekommen, weil ich krank war.
+Wenn du [dich] beeilst, [schaffen wir] den Zug. | اگر عجله کنی، به قطار می‌رسیم. | d: sich, dir, mich / wir schaffen, schafft wir, wir schafft | full: Wir schaffen den Zug, wenn du dich beeilst.
+[Wenn] ihr Lust habt, [können wir] am Samstag grillen. | اگر حوصله‌اش را دارید، می‌توانیم شنبه کباب درست کنیم. | d: Wann, Dann, Dass / wir können, könnt wir, wir könnt | full: Wir können am Samstag grillen, wenn ihr Lust habt. ; Am Samstag können wir grillen, wenn ihr Lust habt.
+Wenn der Zug [Verspätung hat], [kommen wir] zu{zu-adv} spät. | اگر قطار تأخیر داشته باشد، دیر می‌رسیم. | d: hat Verspätung, Verspätung haben, Verspätung hast / wir kommen, kommt wir, wir kommt | full: Wir kommen zu spät, wenn der Zug Verspätung hat.
+transforms:
+Das Wetter ist schön. Wir grillen im Garten. => Wenn das Wetter schön ist, grillen wir im Garten. ; Wir grillen im Garten, wenn das Wetter schön ist. ; Im Garten grillen wir, wenn das Wetter schön ist. | دو جمله را با wenn وصل کن.
+Ich komme, wenn ich Zeit habe. => Wenn ich Zeit habe, komme ich. | جمله wenn را اول بیاور.
+Ich trinke Tee, wenn ich krank bin. => Wenn ich krank bin, trinke ich Tee. | جمله wenn را اول بیاور.
+Wir gehen nach Hause, weil es spät ist. => Weil es spät ist, gehen wir nach Hause. | جمله weil را اول بیاور.
+Der Kurs ist zu Ende. Wir gehen essen. => Wenn der Kurs zu Ende ist, gehen wir essen. ; Wir gehen essen, wenn der Kurs zu Ende ist. | دو جمله را با wenn وصل کن.
+Ich besuche Oma, wenn ich in Wien bin. => Wenn ich in Wien bin, besuche ich Oma. | جمله wenn را اول بیاور.
+Man muss viel üben, wenn man gut spielen will. => Wenn man gut spielen will, muss man viel üben. | جمله wenn را اول بیاور.
+Ich kann nicht kommen, weil ich arbeiten muss. => Weil ich arbeiten muss, kann ich nicht kommen. | جمله weil را اول بیاور.
+translations:
+اگر وقت داشته باشی، به سینما می‌رویم. => Wenn du Zeit hast, gehen wir ins Kino. ; Wir gehen ins Kino, wenn du Zeit hast.
+وقتی وقت دارم، آشپزی می‌کنم. => Wenn ich Zeit habe, koche ich. ; Ich koche, wenn ich Zeit habe.
+اگر بخواهی، کمکت می‌کنم. => Wenn du willst, helfe ich dir. ; Ich helfe dir, wenn du willst.
+چون خسته‌ام، به خانه می‌روم. => Weil ich müde bin, gehe ich nach Hause. ; Ich gehe nach Hause, weil ich müde bin. ; Ich gehe nach Hause, denn ich bin müde.
+اگر باران بیاید، در خانه می‌مانیم. => Wenn es regnet, bleiben wir zu Hause. ; Wir bleiben zu Hause, wenn es regnet. ; Zu Hause bleiben wir, wenn es regnet.
+هر وقت برف می‌آید، بچه‌ها بیرون بازی می‌کنند. => Wenn es schneit, spielen die Kinder draußen. ; Die Kinder spielen draußen, wenn es schneit. ; Immer wenn es schneit, spielen die Kinder draußen. ; Die Kinder spielen draußen, immer wenn es schneit. ; Die Kinder spielen immer draußen, wenn es schneit.
+اگر گرسنه‌ای، چیزی بخور. => Wenn du Hunger hast, iss etwas. ; Iss etwas, wenn du Hunger hast. ; Wenn du hungrig bist, iss etwas. ; Iss etwas, wenn du hungrig bist.
+اگر نمی‌توانی بیایی، زنگ بزن. => Wenn du nicht kommen kannst, ruf{anrufen} an{anrufen}. ; Ruf{anrufen} an{anrufen}, wenn du nicht kommen kannst. ; Wenn du nicht kommen kannst, ruf{anrufen} mich an{anrufen}. ; Ruf{anrufen} mich an{anrufen}, wenn du nicht kommen kannst.

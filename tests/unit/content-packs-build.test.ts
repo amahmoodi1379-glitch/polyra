@@ -170,6 +170,170 @@ describe("verb phrases of a pack", () => {
   });
 });
 
+describe("reading a form in its context", () => {
+  const T = "\t";
+  const line = (...cells: string[]) => cells.join(T);
+  const french = words("fr", [
+    line("je", "pron", "", "", "من", "je: من", "function", "no_card:1"),
+    line("il", "pron", "", "", "او", "il: او", "function", "no_card:1"),
+    line("te", "pron", "", "", "تو را", "te: ضمیر", "function", "no_card:1"),
+    line("vous", "pron", "", "", "شما", "vous: شما", "function", "no_card:1"),
+    line("se", "pron", "", "", "خود", "se: ضمیر", "function", "no_card:1"),
+    line("ne", "adv", "", "", "نشانهٔ منفی", "ne: منفی", "function", "no_card:1"),
+    line("pas", "adv", "", "", "نشانهٔ منفی", "pas: منفی", "function", "no_card:1"),
+    line("de", "prep", "", "", "از", "de: حرف اضافه", "function", "no_card:1"),
+    line("en", "prep", "", "", "در", "en: حرف اضافه", "function", "no_card:1"),
+    line("ce", "det", "", "", "این", "ce: صفت اشاره", "function", "no_card:1"),
+    line("ce", "pron", "", "", "این", "ce: ضمیر", "function", "no_card:1", "code:ce-pron"),
+    line("la", "det", "", "", "حرف تعریف", "la: حرف تعریف", "function", "no_card:1"),
+    line("la", "pron", "", "", "او را", "la: ضمیر", "function", "no_card:1", "code:la-pron"),
+    line("quel", "det", "", "", "کدام", "کدام", "function"),
+    line("être", "verb", "", "", "بودن", "بودن", "function"),
+    line("avoir", "verb", "", "", "داشتن", "داشتن", "function"),
+    line("est", "noun", "m", "", "شرق", "شرق", "space", "code:est-noun"),
+    line("nom", "noun", "m", "noms", "اسم", "اسم", "people"),
+    line("suivre", "verb", "", "", "دنبال کردن", "دنبال کردن", "actions"),
+    line("content", "adj", "", "", "راضی", "راضی", "feelings"),
+    line("porte", "noun", "f", "portes", "در", "در ورودی", "home"),
+    line("porter", "verb", "", "", "بردن", "بردن", "actions"),
+    line("fermer", "verb", "", "", "بستن", "بستن", "actions"),
+    line("fermé", "adj", "", "", "بسته", "بسته", "qualities"),
+    line("boire", "verb", "", "", "نوشیدن", "نوشیدن", "drink"),
+    line("bois", "noun", "m", "", "چوب", "چوب", "nature"),
+    line("eau", "noun", "f", "eaux", "آب", "آب", "drink"),
+    line("été", "noun", "m", "étés", "تابستان", "تابستان", "time"),
+    line("vivre", "verb", "", "", "زندگی کردن", "زندگی کردن", "actions"),
+    line("voir", "verb", "", "", "دیدن", "دیدن", "actions"),
+    line("plus", "adv", "", "", "بیشتر", "بیشتر", "qualities"),
+    line("plus", "adv", "", "", "دیگر نه", "دیگر نه", "time", "code:plus-2", "sense_of:plus"),
+    line("grand", "adj", "", "", "بزرگ", "بزرگ", "qualities"),
+    line("si", "conj", "", "", "اگر", "اگر", "function"),
+    line("pleuvoir", "verb", "", "", "باران آمدن", "باران آمدن", "weather"),
+    line("quand", "adv", "", "", "کی", "چه وقت", "function"),
+    line("quand", "conj", "", "", "وقتی که", "وقتی که", "time", "code:quand-conj"),
+    line("partir", "verb", "", "", "رفتن", "رفتن", "actions"),
+    line("vouloir", "verb", "", "", "خواستن", "خواستن", "actions"),
+    line("je voudrais", "phrase", "", "", "می‌خواستم", "خواستن مؤدبانه", "shopping", "parts:vouloir"),
+    line("venir", "verb", "", "", "آمدن", "آمدن", "actions"),
+    line("venir de", "phrase", "", "", "تازه ... کردن", "گذشته نزدیک", "time", "parts:venir"),
+    line("manger", "verb", "", "", "خوردن", "خوردن", "food"),
+    line("mal", "adv", "", "", "بد", "بد", "qualities"),
+    line("avoir mal", "phrase", "", "", "درد داشتن", "درد داشتن", "health", "parts:avoir mal"),
+    line("dormir", "verb", "", "", "خوابیدن", "خوابیدن", "actions"),
+    line("appeler", "verb", "", "", "زنگ زدن", "زنگ زدن", "media"),
+    line("s'appeler", "verb", "", "", "اسم داشتن", "اسم داشتن", "people"),
+    line("demain", "adv", "", "", "فردا", "فردا", "time"),
+    line("trouver", "verb", "", "", "پیدا کردن", "پیدا کردن", "actions"),
+    line("se trouver", "verb", "", "", "واقع بودن", "واقع بودن", "space"),
+  ]);
+  const fr = analyzerOf("fr", french);
+  const read = (analyzer: Analyzer, text: string) => analyzer.analyze(text, { level: "A1" }).tokens.map((token) => `${token.surface}=${token.code ?? token.kind}`).join(" ");
+
+  it("reads French être, the verb after a subject, the pronoun before a verb and the noun after an article", () => {
+    expect(read(fr, "C'est content.")).toBe("C'=ce-pron est=être content=content");
+    expect(read(fr, "Quel est ton nom ?")).toMatch(/^Quel=quel est=être/);
+    expect(read(fr, "Ce n'est pas grand.")).toBe("Ce=ce-pron n'=ne est=être pas=pas grand=grand");
+    expect(read(fr, "Je suis content.")).toBe("Je=je suis=être content=content");
+    expect(read(fr, "Il porte la porte.")).toBe("Il=il porte=porter la=la porte=porte");
+    expect(read(fr, "Je la porte.")).toBe("Je=je la=la-pron porte=porter");
+    expect(read(fr, "Ferme la porte.")).toBe("Ferme=fermer la=la porte=porte");
+    expect(read(fr, "Je bois de l'eau.")).toMatch(/^Je=je bois=boire de=de/);
+    expect(read(fr, "Il vit.")).toBe("Il=il vit=vivre");
+    expect(read(fr, "En été.")).toBe("En=en été=été");
+    expect(read(fr, "S'il pleut.")).toBe("S'=si il=il pleut=pleuvoir");
+  });
+
+  it("reads French plus, quand, a participle after être and a reflexive pronoun of the same person", () => {
+    expect(read(fr, "Il est plus grand.")).toBe("Il=il est=être plus=plus grand=grand");
+    expect(read(fr, "Je ne bois plus.")).toBe("Je=je ne=ne bois=boire plus=plus-2");
+    expect(read(fr, "Quand il pleut, je pars.")).toMatch(/^Quand=quand-conj/);
+    expect(read(fr, "Tu pars quand ?")).toMatch(/quand=quand$/);
+    expect(read(fr, "La porte est fermée.")).toMatch(/fermée=fermé$/);
+    expect(read(fr, "Je t'appelle demain.")).toBe("Je=je t'=te appelle=appeler demain=demain");
+    expect(read(fr, "Vous ne trouvez pas ?")).toBe("Vous=vous ne=ne trouvez=trouver pas=pas");
+    expect(read(fr, "Vous vous trouvez demain ?")).toBe("Vous=vous vous=vous trouvez=se trouver demain=demain");
+  });
+
+  it("keeps a French phrase to its own form and place: je veux, venir de Paris, avoir mal dormi", () => {
+    expect(read(fr, "Je veux manger.")).toBe("Je=je veux=vouloir manger=manger");
+    expect(read(fr, "Je voudrais manger.")).toBe("Je voudrais=je voudrais manger=manger");
+    expect(read(fr, "Je viens de manger.")).toBe("Je=je viens de=venir de manger=manger");
+    expect(read(fr, "Je viens de la porte.")).toMatch(/viens=venir de=de/);
+    expect(read(fr, "J'ai mal dormi.")).toBe("J'=je ai=avoir mal=mal dormi=dormir");
+  });
+
+  it("prefers a reading the learner already knows when the context allows it", () => {
+    const later = words("fr", [line("la", "det", "", "", "حرف تعریف", "حرف تعریف", "function", "no_card:1"), line("être", "verb", "", "", "بودن", "بودن", "function"), line("porte", "noun", "f", "portes", "در", "در", "home"), line("fermer", "verb", "", "", "بستن", "بستن", "actions"), line("fermé", "adj", "", "", "بسته", "بسته", "qualities")]);
+    // fermer comes before porte, fermé after it: «fermée» in a sentence of porte is the verb's participle.
+    const order: Record<string, number> = { la: 1, être: 2, fermer: 3, porte: 4, fermé: 5 };
+    for (const item of later) item.order = order[item.word.code];
+    const analyzer = analyzerOf("fr", later);
+    const porte = later.find((item) => item.word.code === "porte")!;
+    const analysis = analyzer.analyze("La [porte] est fermée.", { level: "A1", target: porte });
+    expect(analysis.errors).toEqual([]);
+    expect(analysis.tokens.at(-1)?.code).toBe("fermer");
+  });
+
+  const german = words("de", [
+    line("ich", "pron", "", "", "من", "من", "function", "no_card:1"),
+    line("es", "pron", "", "", "آن", "es: آن", "function", "no_card:1"),
+    line("der", "det", "", "", "حرف تعریف", "der: حرف تعریف", "function", "no_card:1"),
+    line("das", "det", "", "", "حرف تعریف", "das: حرف تعریف", "function", "no_card:1"),
+    line("kein", "det", "", "", "هیچ", "kein: نفی", "function", "no_card:1"),
+    line("hier", "adv", "", "", "اینجا", "اینجا", "space"),
+    line("wissen", "verb", "", "", "دانستن", "دانستن", "abstract"),
+    line("weiß", "adj", "", "", "سفید", "سفید", "colors"),
+    line("bitten", "verb", "", "", "خواهش کردن", "خواهش کردن", "actions"),
+    line("bitte", "interj", "", "", "لطفاً", "لطفاً", "people"),
+    line("sein", "verb", "", "", "بودن", "بودن", "function"),
+    line("Laden", "noun", "der", "Läden", "مغازه", "مغازه", "shopping"),
+    line("schließen", "verb", "", "", "بستن", "بستن", "actions"),
+    line("geschlossen", "adj", "", "", "بسته", "بسته", "qualities"),
+    line("zu", "prep", "", "", "به", "zu: به", "function", "no_card:1"),
+    line("zu", "adv", "", "", "بیش از حد", "بیش از حد", "qualities", "code:zu-adv"),
+    line("spät", "adj", "", "", "دیر", "دیر", "qualities"),
+    line("rufen", "verb", "", "", "صدا زدن", "صدا زدن", "actions"),
+    line("anrufen", "verb", "", "", "زنگ زدن", "زنگ زدن", "media"),
+    line("morgen", "adv", "", "", "فردا", "فردا", "time"),
+    line("weil", "conj", "", "", "چون", "چون", "function"),
+    line("ankommen", "verb", "", "", "رسیدن", "رسیدن", "transport"),
+    line("Bus", "noun", "der", "Busse", "اتوبوس", "اتوبوس", "transport"),
+    line("fahren", "verb", "", "", "رفتن", "رفتن", "transport"),
+    line("Bus fahren", "phrase", "", "", "با اتوبوس رفتن", "با اتوبوس رفتن", "transport", "parts:Bus fahren"),
+    line("geben", "verb", "", "", "دادن", "دادن", "actions"),
+    line("es gibt", "phrase", "", "", "هست", "وجود داشتن", "function", "parts:geben"),
+    line("Wasser", "noun", "das", "", "آب", "آب", "drink", "number:sg_only"),
+    line("stehen", "verb", "", "", "ایستادن", "ایستادن", "actions"),
+    line("aufstehen", "verb", "", "", "برخاستن", "برخاستن", "actions"),
+    line("tun", "verb", "", "", "انجام دادن", "انجام دادن", "actions"),
+    line("wehtun", "verb", "", "", "درد کردن", "درد کردن", "health"),
+  ]);
+  const de = new Analyzer("de", german, new Morph("de", german), new Set(["Anna"]));
+
+  it("reads German verbs next to their subject, words written as their lemma, and adjectives after sein", () => {
+    expect(read(de, "Ich weiß es.")).toBe("Ich=ich weiß=wissen es=es");
+    expect(read(de, "Das weiß ich.")).toBe("Das=das weiß=wissen ich=ich");
+    expect(read(de, "Das ist weiß.")).toBe("Das=das ist=sein weiß=weiß");
+    expect(read(de, "weil ich es weiß.")).toMatch(/weiß=wissen$/);
+    expect(read(de, "Bitte hier.")).toBe("Bitte=bitte hier=hier");
+    expect(read(de, "Ich bitte es.")).toBe("Ich=ich bitte=bitten es=es");
+    expect(read(de, "Der Laden ist geschlossen.")).toMatch(/geschlossen=geschlossen$/);
+    expect(read(de, "Es ist zu spät.")).toBe("Es=es ist=sein zu=zu-adv spät=spät");
+    expect(read(de, "Ich stehe hier.")).toBe("Ich=ich stehe=stehen hier=hier");
+    expect(read(de, "Ich tun es.").split(" ")[1]).toBe("tun=tun");
+  });
+
+  it("joins German separable verbs in the imperative and at the end of a clause, and keeps phrases to their place", () => {
+    expect(read(de, "Ruf mich morgen an.")).toMatch(/^Ruf \.\.\. an=anrufen/);
+    expect(read(de, "weil ich morgen ankomme.")).toBe("weil=weil ich=ich morgen=morgen ankomme=ankommen");
+    expect(read(de, "Ich stehe morgen auf und fahre Bus.")).toMatch(/^Ich=ich stehe \.\.\. auf=aufstehen morgen=morgen/);
+    expect(read(de, "Der Bus fährt.")).toBe("Der=der Bus=Bus fährt=fahren");
+    expect(read(de, "Ich fahre Bus.")).toBe("Ich=ich fahre Bus=Bus fahren");
+    expect(read(de, "Hier gibt es kein Wasser.")).toBe("Hier=hier gibt es=es gibt kein=kein Wasser=Wasser");
+    expect(read(de, "Gib es Anna.")).toBe("Gib=geben es=es Anna=name");
+  });
+});
+
 describe("grammar units of a pack", () => {
   it("builds the unit, its targets, transforms and translations", () => {
     const unit = level.units[0];

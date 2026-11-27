@@ -1,0 +1,90 @@
+code: de-a2-hoeflich
+title: hätte gern، würde gern، könnten Sie: مؤدبانه حرف زدن
+scope: شکل‌های آماده مؤدبانه و توصیه: ich hätte gern …، ich würde gern …، Könnten Sie / Könntest du …?، Würden Sie / Würdest du …?، das wäre …، du solltest / Sie sollten، و فرق ich möchte و ich hätte gern؛ Konjunktiv II به‌عنوان یک زمان و جمله‌های wenn با آن (Wenn ich Zeit hätte …) در سطح B1 می‌آیند.
+can_do: حالا می‌توانی مؤدبانه سفارش بدهی، خواهش کنی، پیشنهاد بدهی و توصیه کنی: «یک قهوه می‌خواستم»، «می‌شود کمکم کنید؟»، «بهتر است بیشتر بخوابی».
+rule: hätte gern (… می‌خواستم)، würde gern (دلم می‌خواهد)، Könnten Sie / Könntest du …? و Würden Sie / Würdest du …? (خواهش مؤدبانه)، das wäre … (… می‌شد)، du solltest / Sie sollten (بهتر است …).
+mistake: در فارسی ادب بیشتر با کلمه‌هایی مثل «لطفاً» و «ببخشید» است، نه با شکل فعل؛ برای همین فارسی‌زبان‌ها در مغازه می‌گویند «Ich will einen Kaffee» که بی‌ادبانه است؛ مؤدبانه: Ich hätte gern einen Kaffee یا Ich möchte einen Kaffee. پایان فعل را هم قاطی می‌کنند: «Könntest Sie …» غلط است؛ درست: Könnten Sie …?
+lesson:
+برای مؤدب حرف زدن، آلمانی چند شکل آماده دارد که از haben، werden، können، sein و sollen ساخته می‌شوند. فعلاً آن‌ها را مثل جمله‌های آماده یاد بگیر.
+ich hätte gern … یعنی «… می‌خواستم» و برای سفارش و خرید است: Ich hätte gern einen Kaffee. هم‌معنی ich möchte است و هر دو مؤدب‌اند؛ ich will در مغازه بی‌ادبانه است.
+ich würde gern با یک فعل در آخر جمله یعنی «دلم می‌خواهد …»: Ich würde gern nach Wien fahren.
+برای خواهش مؤدبانه، به‌جای Kannst du …? و Können Sie …? بگو Könntest du …? و Könnten Sie …?، یا Würdest du …? و Würden Sie …?: Könnten Sie mir bitte helfen?
+das wäre … یعنی «… می‌شد» یا «… خوب است»: Das wäre schön! Morgen um zehn wäre gut.
+برای توصیه («بهتر است …») بگو du solltest یا Sie sollten: Du solltest mehr schlafen. در واحد قبل sollte با «دیروز» یعنی «قرار بود»؛ اینجا بدون زمان گذشته یعنی «بهتر است».
+پایان‌ها مثل Präteritum فعل‌های وجهی است: ich hätte، du hättest، er hätte، wir hätten، ihr hättet، sie/Sie hätten.
+table:
+ضمیر | haben | werden | können | sein | sollen
+ich | hätte | würde | könnte | wäre | sollte
+du | hättest | würdest | könntest | wärst | solltest
+er/sie/es | hätte | würde | könnte | wäre | sollte
+wir | hätten | würden | könnten | wären | sollten
+ihr | hättet | würdet | könntet | wärt | solltet
+sie/Sie | hätten | würden | könnten | wären | sollten
+sets:
+سفارش و خواسته: Ich hätte gern …, Ich möchte …, Ich würde gern …
+خواهش: Könnten Sie …?, Könntest du …?, Würden Sie …?, Würdest du …?
+توصیه و پیشنهاد: Du solltest …, Sie sollten …, Wir könnten …, Das wäre …
+examples:
+Ich hätte gern ein Stück Kuchen. | یک تکه کیک می‌خواستم.
+Könnten Sie das bitte{bitte} buchstabieren? | لطفاً می‌توانید هجی‌اش کنید؟
+Du solltest eine Jacke mitnehmen. | بهتر است یک کاپشن با خودت ببری.
+Das wäre super! | عالی می‌شد!
+targets:
+Ich [hätte] gern einen Kaffee. | یک قهوه می‌خواستم. | d: hättest, hätten, hättet | hint: (haben)
+Wir [hätten] gern zwei Brötchen. | ما دو تا نان صبحانه می‌خواستیم. | d: hätte, hättet, hättest | hint: (haben)
+[Hätten] Sie einen Moment Zeit? | یک لحظه وقت دارید؟ | d: Hätte, Hättest, Hättet
+[Hättest] du morgen Zeit? | فردا وقت داری؟ | d: Hätte, Hätten, Hättet
+[Hätten] Sie gern einen Tisch am Fenster? | میزی کنار پنجره می‌خواهید؟ | d: Hätte, Hättest, Hättet
+Ich [würde] gern ein Praktikum machen. | دلم می‌خواهد یک دوره کارآموزی بگذرانم. | d: würdest, würden, würdet | hint: (werden)
+Am liebsten [würde] ich heute zu Hause bleiben. | از همه بیشتر دلم می‌خواهد امروز خانه بمانم. | d: würdest, würden, würdet | full: Ich würde heute am liebsten zu Hause bleiben.
+Was [würdest] du gern machen? | دلت می‌خواهد چه کار کنی؟ | d: würde, würden, würdet
+Meine Eltern [würden] gern in Deutschland wohnen. | پدر و مادرم دلشان می‌خواهد در آلمان زندگی کنند. | d: würde, würdest, würdet | hint: (werden)
+Ich würde gern nach Wien [fahren]. | دلم می‌خواهد به وین بروم. | d: fahre, fährt, gefahren | hint: (fahren)
+[Würden] Sie bitte{bitte} das Fenster zumachen? | لطفاً پنجره را می‌بندید؟ | d: Würdest, Würde, Würdet | full: Würden Sie das Fenster bitte zumachen?
+Würdest du mir bitte{bitte} das Salz [geben]? | لطفاً نمک را به من می‌دهی؟ | d: gibst, gibt, gegeben | hint: (geben) | full: Würdest du mir das Salz bitte geben?
+Würden Sie bitte{bitte} langsamer [sprechen]? | لطفاً آهسته‌تر صحبت می‌کنید؟ | d: sprecht, spricht, gesprochen | hint: (sprechen)
+[Könnten] Sie mir bitte{bitte} den Weg zeigen? | لطفاً می‌توانید راه را به من نشان بدهید؟ | d: Könntest, Könnte, Könntet | hint: (können)
+[Könntest] du mich morgen anrufen? | می‌شود فردا به من زنگ بزنی؟ | d: Könnten, Könnte, Könntet | hint: (können)
+Könnten Sie das bitte{bitte} [wiederholen]? | لطفاً می‌توانید تکرارش کنید؟ | d: wiederholt, wiederhole, wiedergeholt | hint: (wiederholen) | full: Könnten Sie bitte das wiederholen?
+Könntest du mir dein Wörterbuch [leihen]{leihen}? | می‌شود فرهنگ لغتت را به من قرض بدهی؟ | d: leihst, leiht, geliehen | hint: (leihen)
+[Könntet] ihr bitte{bitte} leise sein{sein}? | لطفاً می‌شود ساکت باشید؟ | d: Könnten, Könntest, Könnte | hint: (können)
+Vielleicht [könnten] Sie den Bus nehmen. | شاید بتوانید با اتوبوس بروید. | d: könnte, könntest, könntet
+Wir [könnten] am Wochenende ins Kino gehen. | می‌توانیم آخر هفته به سینما برویم. | d: könnte, könntest, könntet | full: Am Wochenende könnten wir ins Kino gehen.
+Das [wäre] schön! | خیلی خوب می‌شد! | d: wären, wärst, wärt | hint: (sein)
+Morgen um zehn [wäre] gut. | فردا ساعت ده خوب است. | d: wären, wärst, wärt | hint: (sein)
+[Wäre] das okay für dich? | برایت اشکالی ندارد؟ | d: Wären, Wärst, Wärt
+Das [wäre] sehr nett von Ihnen. | خیلی لطف می‌کنید. | d: wären, wärst, wärt
+Du [solltest] mehr{mehr} schlafen. | بهتر است بیشتر بخوابی. | d: sollte, solltet, sollten | hint: (sollen)
+Bei Fieber [sollten] Sie zum Arzt gehen. | با تب بهتر است پیش دکتر بروید. | d: sollte, solltest, solltet | hint: (sollen) | full: Sie sollten bei Fieber zum Arzt gehen.
+Die Kinder [sollten] mehr{mehr} Obst essen. | بهتر است بچه‌ها بیشتر میوه بخورند. | d: sollte, solltest, solltet
+Wir [sollten] jetzt gehen, es ist schon spät. | بهتر است الان برویم، دیگر دیر است. | d: sollte, solltest, solltet | full: Jetzt sollten wir gehen, es ist schon spät.
+Er [sollte] weniger Kaffee trinken. | بهتر است او کمتر قهوه بنوشد. | d: solltest, sollten, solltet
+Du solltest nicht so spät ins Bett [gehen]. | بهتر است این‌قدر دیر نخوابی. | d: gehst, geht, gegangen | hint: (gehen)
+Ihr [solltet] eine Jacke mitnehmen, es ist kalt. | بهتر است کاپشن با خودتان ببرید، هوا سرد است. | d: sollte, solltest, sollten | hint: (sollen)
+Was [möchten] Sie trinken? | چه میل دارید بنوشید؟ | d: möchte, möchtest, möchtet
+[Könnten] Sie mir bitte{bitte} [helfen]? | لطفاً می‌توانید به من کمک کنید؟ | d: Könntest, Könnte, Könntet / helfe, hilft, geholfen
+Ich [hätte] gern einen Tee und meine Frau [hätte] gern einen Kaffee. | من یک چای می‌خواستم و همسرم یک قهوه. | d: hättest, hätten, hättet / hättest, hätten, hättet
+Du [solltest] weniger arbeiten und mehr{mehr} [schlafen]. | بهتر است کمتر کار کنی و بیشتر بخوابی. | d: sollte, solltet, sollten / schläfst, schlaf, geschlafen
+[Würdest] du bitte{bitte} das Licht [ausschalten]? | لطفاً چراغ را خاموش می‌کنی؟ | d: Würden, Würde, Würdet / schaltest aus, ausschaltest, ausgeschaltet | full: Würdest du das Licht bitte ausschalten?
+[Hättest] du heute Abend Zeit? Das [wäre] schön. | امشب وقت داری؟ خیلی خوب می‌شد. | d: Hätte, Hätten, Hättet / wären, wärst, wärt
+Ich [würde] gern kommen, aber ich muss [arbeiten]. | دلم می‌خواهد بیایم، ولی باید کار کنم. | d: würdest, würden, würdet / arbeite, arbeitet, gearbeitet
+Wir [sollten] den Zug um acht [nehmen]. | بهتر است قطار ساعت هشت را بگیریم. | d: sollte, solltest, solltet / nehmt, nimmt, genommen
+Herr Müller, [hätten] Sie Zeit? Ich [hätte] eine Frage. | آقای مولر، وقت دارید؟ یک سؤال داشتم. | d: hätte, hättest, hättet / hättest, hätten, hättet
+transforms:
+Ich möchte einen Kaffee. => Ich hätte gern einen Kaffee. ; Ich hätte gerne einen Kaffee. | با «hätte gern» بگو.
+Können Sie mir helfen? => Könnten Sie mir helfen? | مؤدبانه‌تر بپرس (با könnten).
+Kannst du das Fenster zumachen? => Könntest du das Fenster zumachen? ; Würdest du das Fenster zumachen? | مؤدبانه‌تر بپرس.
+Schlaf mehr{mehr}! => Du solltest mehr{mehr} schlafen. | به‌جای امر، توصیه کن (با du solltest).
+Gehen Sie zum Arzt! => Sie sollten zum Arzt gehen. | به‌جای امر، توصیه کن (با Sie sollten).
+Mach{zumachen} bitte{bitte} die Tür zu{zumachen}! => Würdest du bitte{bitte} die Tür zumachen? ; Könntest du bitte{bitte} die Tür zumachen? ; Würdest du die Tür bitte{bitte} zumachen? ; Könntest du die Tür bitte{bitte} zumachen? | این امر را به سؤال مؤدبانه تبدیل کن.
+Ich will nach Berlin fahren. => Ich würde gern nach Berlin fahren. ; Ich würde gerne nach Berlin fahren. | با «würde gern» مؤدبانه بگو.
+Hast du morgen Zeit? => Hättest du morgen Zeit? | مؤدبانه‌تر بپرس (با hättest).
+translations:
+یک چای می‌خواستم. => Ich hätte gern einen Tee. ; Ich hätte gerne einen Tee. ; Ich möchte einen Tee.
+لطفاً می‌توانید به من کمک کنید؟ => Könnten Sie mir bitte{bitte} helfen? ; Können Sie mir bitte{bitte} helfen? ; Würden Sie mir bitte{bitte} helfen?
+بهتر است بیشتر بخوابی. => Du solltest mehr{mehr} schlafen.
+دلم می‌خواهد به آلمان سفر کنم. => Ich würde gern nach Deutschland reisen. ; Ich möchte nach Deutschland reisen. ; Ich würde gern nach Deutschland fahren. ; Ich möchte nach Deutschland fahren. ; Ich würde gerne nach Deutschland reisen. ; Ich würde gerne nach Deutschland fahren.
+خیلی خوب می‌شد. => Das wäre sehr schön. ; Das wäre sehr gut.
+بهتر است پیش دکتر بروید (مؤدبانه). => Sie sollten zum Arzt gehen. ; Sie sollten zur Ärztin gehen.
+یک سؤال داشتم. => Ich hätte eine Frage. ; Ich habe eine Frage. ; Ich hatte eine Frage.
+بهتر است الان برویم. => Wir sollten jetzt gehen. ; Jetzt sollten wir gehen.

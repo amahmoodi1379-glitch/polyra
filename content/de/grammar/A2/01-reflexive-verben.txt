@@ -1,0 +1,92 @@
+code: de-a2-reflexive-verben
+title: فعل‌های انعکاسی: Ich freue mich
+scope: فعل‌های انعکاسی با ضمیر مفعولی (mich، dich، sich، uns، euch، sich) مثل sich freuen، sich setzen، sich beeilen، sich anziehen، sich ärgern، sich ausruhen و treffen (wir treffen uns)، جای ضمیر بعد از فعل صرف‌شده، در سؤال، با فعل وجهی و در امر، و Perfekt آن‌ها با haben (Ich habe mich gefreut)؛ ضمیر انعکاسی Dativ (Ich wasche mir die Hände) در واحدهای بعد می‌آید.
+can_do: حالا می‌توانی بگویی خوشحالی، عجله داری، حالت خوب نیست یا با کسی قرار داری: «Ich freue mich»، «Wir treffen uns am Samstag».
+rule: ضمیر انعکاسی با فاعل عوض می‌شود: ich ← mich، du ← dich، wir ← uns، ihr ← euch، و er، sie، es، sie و Sie ← sich (Ich beeile mich. Er beeilt sich.)؛ در Perfekt همیشه haben: Ich habe mich gefreut.
+mistake: در فارسی «خودم» و «خودت» را اغلب نمی‌گوییم («عجله می‌کنم»، «می‌نشینم»)، برای همین فارسی‌زبان‌ها ضمیر را جا می‌اندازند یا برای همه sich می‌گذارند: «Ich beeile» و «Wir treffen sich» غلط است؛ درست: Ich beeile mich، Wir treffen uns. «Ich fühle mir gut» هم غلط است؛ درست: Ich fühle mich gut.
+tables: Präsens | reflexive
+lesson:
+بعضی فعل‌های آلمانی یک ضمیر «خود» کنارشان دارند، چون کار به خود فاعل برمی‌گردد. به آن‌ها فعل انعکاسی می‌گویند: Ich setze mich. یعنی «(خودم را) می‌نشانم»، یعنی «می‌نشینم».
+در فهرست لغت این فعل‌ها با sich نوشته می‌شوند: sich freuen (خوشحال شدن)، sich beeilen (عجله کردن)، sich setzen (نشستن)، sich anziehen (لباس پوشیدن).
+ضمیر با فاعل عوض می‌شود: ich ← mich، du ← dich، wir ← uns، ihr ← euch. برای er، sie، es، sie (جمع) و Sie همیشه sich است: Anna freut sich. Setzen Sie sich!
+
+ضمیر درست بعد از فعل صرف‌شده می‌آید: Ich freue mich. در سؤال بعد از فاعل: Freust du dich?
+با فعل وجهی ضمیر بعد از فاعل می‌ماند و مصدر به آخر جمله می‌رود: Wir müssen uns beeilen.
+در امر هم ضمیر لازم است: Beeil dich! Setzt euch!
+در Perfekt همه این فعل‌ها haben می‌گیرند: Ich habe mich gefreut. Wir haben uns getroffen.
+اگر کار روی کس دیگری باشد، به‌جای ضمیر انعکاسی همان مفعول معمولی می‌آید: Ich ziehe mich an (لباس می‌پوشم)، ولی Ich ziehe das Kind an (به بچه لباس می‌پوشانم).
+table:
+ضمیر فاعلی | ضمیر انعکاسی | مثال
+ich | mich | ich freue mich
+du | dich | du freust dich
+er / sie / es | sich | er freut sich
+wir | uns | wir freuen uns
+ihr | euch | ihr freut euch
+sie / Sie | sich | sie freuen sich
+sets:
+همیشه با ضمیر: sich beeilen, sich erholen, sich ausruhen, sich bedanken, sich bewerben
+با ضمیر یا با مفعول دیگر: sich anziehen / anziehen, sich setzen / setzen, sich vorstellen / vorstellen, treffen
+examples:
+Ich freue mich sehr. | من خیلی خوشحالم.
+Wir treffen uns am Samstag. | ما شنبه همدیگر را می‌بینیم.
+Setzen{sich setzen} Sie sich bitte{bitte}! | لطفاً بنشینید!
+Hast du dich im Urlaub gut erholt? | در تعطیلات حسابی استراحت کردی؟
+targets:
+Es ist schon spät. Ich beeile [mich]. | دیر شده است. عجله می‌کنم. | d: sich, mir, dich | hint: (sich beeilen)
+Ich fühle [mich] heute nicht gut. | امروز حالم خوب نیست. | d: sich, mir, dir | full: Heute fühle ich mich nicht gut.
+Ich ziehe [mich] schnell an. | سریع لباس می‌پوشم. | d: sich, mir, dir | hint: (sich anziehen)
+Der Bus ist weg, aber ich ärgere [mich] nicht. | اتوبوس رفته، ولی حرص نمی‌خورم. | d: sich, mir, dir
+Ich langweile [mich] hier. | اینجا حوصله‌ام سر می‌رود. | d: sich, mir, dir | hint: (sich langweilen)
+Du musst [dich] nicht beeilen. | لازم نیست عجله کنی. | d: sich, dir, mich | hint: (sich beeilen)
+Warum ärgerst du [dich] so? | چرا این‌قدر حرص می‌خوری؟ | d: sich, dir, mir
+Du kannst [dich] hier setzen. | می‌توانی اینجا بنشینی. | d: sich, dir, mir | hint: (sich setzen)
+Beeil [dich], der Bus kommt! | عجله کن، اتوبوس دارد می‌آید! | d: sich, dir, euch
+Max beeilt [sich] nie. | ماکس هیچ‌وقت عجله نمی‌کند. | d: ihn, ihm, mich | hint: (sich beeilen)
+Lena bedankt [sich] beim Kellner. | لنا از گارسون تشکر می‌کند. | d: ihr, sie, mich | hint: (sich bedanken)
+Das Kind zieht [sich] allein an. | بچه تنهایی لباس می‌پوشد. | d: ihm, mir, dir
+Paul setzt{sich setzen} [sich] und liest die Zeitung. | پاول می‌نشیند و روزنامه می‌خواند. | d: ihm, mir, dir | hint: (sich setzen)
+Wann treffen wir [uns]? | کی همدیگر را ببینیم؟ | d: sich, ihnen, wir
+Am Sonntag ruhen wir [uns] aus. | ما یکشنبه استراحت می‌کنیم. | d: sich, euch, mich | full: Wir ruhen uns am Sonntag aus. | hint: (sich ausruhen)
+Wir müssen [uns] beim Chef entschuldigen. | ما باید از رئیس عذرخواهی کنیم. | d: sich, ihnen, wir | hint: (sich entschuldigen)
+Ihr müsst [euch] beeilen! | شما باید عجله کنید! | d: sich, uns, ihr
+Warum beeilt ihr [euch] so? | چرا این‌قدر عجله می‌کنید؟ | d: sich, uns, dich | hint: (sich beeilen)
+Die Kinder ziehen [sich] für die Party um. | بچه‌ها برای مهمانی لباس عوض می‌کنند. | d: ihnen, ihr, mir | hint: (sich umziehen)
+Meine Eltern freuen [sich] sehr. | پدر و مادرم خیلی خوشحال‌اند. | d: ihnen, ihr, mir | hint: (sich freuen)
+Erholen Sie [sich] gut! | خوب استراحت کنید! | d: Ihnen, Sie, euch
+Bitte{bitte} beeilen Sie [sich]! | لطفاً عجله کنید! | d: Ihnen, Sie, euch | full: Beeilen Sie sich bitte!
+Wie fühlen Sie [sich] heute? | امروز حالتان چطور است؟ | d: Ihnen, mir, dir | hint: (sich fühlen)
+Morgen kommt Oma. Freust du [dich]? | فردا مادربزرگ می‌آید. خوشحالی؟ | d: sich, dir, mir
+Ich möchte [mich] kurz vorstellen. | می‌خواهم خودم را کوتاه معرفی کنم. | d: sich, mir, ich | hint: (sich vorstellen)
+Ich [habe] mich sehr gefreut. | خیلی خوشحال شدم. | d: bin, hat, hast | hint: (haben)
+Max hat [sich] beim Fußball verletzt. | ماکس در فوتبال آسیب دید. | d: ihm, mir, dir
+Hast du [dich] schon angezogen? | لباس‌هایت را پوشیده‌ای؟ | d: sich, dir, mir
+Habt ihr [euch] bei Oma bedankt? | از مادربزرگ تشکر کردید؟ | d: sich, uns, dich
+Die Gäste haben [sich] schon verabschiedet. | مهمان‌ها خداحافظی کرده‌اند. | d: ihnen, ihr, mir | hint: (sich verabschieden)
+Ich habe [mich] mit meinen Freunden verabredet. | با دوستانم قرار گذاشتم. | d: sich, mir, dir
+Sara hat [sich] sehr geärgert. | سارا خیلی حرص خورد. | d: ihr, mir, dir | hint: (sich ärgern)
+Ich [habe] [mich] beeilt. | عجله کردم. | d: bin, hat, hast / sich, mir, dich
+Ich freue [mich] und meine Mutter freut [sich] auch. | من خوشحالم و مادرم هم خوشحال است. | d: sich, mir, dir / ihr, mir, dir | full: Meine Mutter freut sich und ich freue mich auch.
+Wir [haben] [uns] am Bahnhof getroffen. | ما در ایستگاه قطار همدیگر را دیدیم. | d: sind, habt, hat / sich, ihnen, wir | full: Am Bahnhof haben wir uns getroffen.
+Du [hast] [dich] nicht entschuldigt! | تو عذرخواهی نکردی! | d: bist, hat, habe / sich, dir, mir
+Sie [hat] [sich] am Wochenende gut erholt. | او آخر هفته حسابی استراحت کرد. | d: ist, habe, hast / ihr, sie, mich | full: Am Wochenende hat sie sich gut erholt.
+Er [hat] [sich] schnell umgezogen. | او سریع لباس عوض کرد. | d: ist, habe, hast / ihm, mir, dir
+Am Morgen wasche ich [mich] und ziehe [mich] an. | صبح خودم را می‌شویم و لباس می‌پوشم. | d: sich, mir, dir / sich, mir, dir | full: Ich wasche mich am Morgen und ziehe mich an.
+Zieh{sich anziehen} [dich] schnell an{sich anziehen}, wir müssen [uns] beeilen! | زود لباس بپوش، باید عجله کنیم! | d: sich, dir, mir / sich, euch, ihnen
+transforms:
+Ich freue mich. => Wir freuen uns. | جمله را با wir بنویس.
+Du beeilst dich. => Ihr beeilt euch. | جمله را با ihr بنویس.
+Ich ziehe mich an. => Anna zieht sich an. | جمله را با Anna بنویس.
+Wir treffen uns am Montag. => Wir haben uns am Montag getroffen. ; Am Montag haben wir uns getroffen. | جمله را به گذشته ببر (Perfekt).
+Max setzt{sich setzen} sich. => Max hat sich gesetzt. | جمله را به گذشته ببر (Perfekt).
+Du ärgerst dich. => Ärgerst du dich? | جمله را سؤالی کن.
+Ich ruhe mich aus. => Ich muss mich ausruhen. | جمله را با müssen بنویس.
+Lena fühlt sich gut. => Lena fühlt sich nicht gut. | جمله را منفی کن.
+translations:
+باید عجله کنی. => Du musst dich beeilen.
+دیروز همدیگر را دیدیم. => Wir haben uns gestern getroffen. ; Gestern haben wir uns getroffen. ; Wir haben uns gestern gesehen. ; Gestern haben wir uns gesehen.
+بچه‌ها لباس می‌پوشند. => Die Kinder ziehen sich an.
+ماکس عذرخواهی کرد. => Max hat sich entschuldigt.
+آنا آسیب دید. => Anna hat sich verletzt.
+خودم را معرفی می‌کنم. => Ich stelle mich vor.
+مادرم حرص می‌خورد. => Meine Mutter ärgert sich.
+کجا همدیگر را ببینیم؟ => Wo treffen wir uns? ; Wo sehen wir uns?

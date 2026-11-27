@@ -1,0 +1,34 @@
+code: de-a2-d006
+title: هتل: مشکل اتاق
+situation: شب در هتل هستی. اتاقت مشکل دارد و پیش کارمند پذیرش می‌روی.
+turns:
+B: Guten Abend! Kann ich Ihnen helfen? | عصر بخیر! کمکتان کنم؟
+- Gute Nacht! Ich habe ein Problem mit meinem Zimmer. | شب بخیر! با اتاقم مشکل دارم.
++ Guten Abend! Ich habe ein Problem mit meinem Zimmer. | عصر بخیر! با اتاقم مشکل دارم.
+- Guten Abend! Ich habe ein Problem mit mein Zimmer. | عصر بخیر! با اتاقم مشکل دارم.
+why: برای سلام «Guten Abend» می‌گوییم؛ «Gute Nacht» برای خداحافظی پیش از خواب است. بعد از mit شکل meinem می‌آید، نه mein.
+B: Oh, es tut mir leid. Was ist das Problem? | آه، متأسفم. مشکل چیست؟
++ Die Dusche funktioniert nicht. Das Wasser ist kalt. | دوش کار نمی‌کند. آب سرد است.
+- Der Dusche funktioniert nicht. Das Wasser ist kalt. | دوش کار نمی‌کند. آب سرد است.
+- Die Dusche funktioniert nicht. Ich bin kalt. | دوش کار نمی‌کند. من آدم سردی هستم.
+why: Dusche مؤنث است: «die Dusche». برای «سردم است» آلمانی‌ها «Mir ist kalt» می‌گویند؛ «Ich bin kalt» یعنی آدم سردی هستم.
+B: Welches Zimmer haben Sie? | کدام اتاق را دارید؟
+- Zwei Nächte. | دو شب.
+- Seit gestern. | از دیروز.
++ Zimmer 24. | اتاق ۲۴. | tts: Zimmer vierundzwanzig.
+why: شماره اتاق را می‌گوییم: «Zimmer 24». «Zwei Nächte» مدت ماندن است و «Seit gestern» می‌گوید از کی اینجایی.
+B: Ich schicke sofort jemanden. | همین الان کسی را می‌فرستم.
+- Danke{danke}. Wie viel dauert das? | ممنون. چقدر طول می‌کشد؟
+- Danke{danke}. Wie lange dauern das? | ممنون. چقدر طول می‌کشد؟
++ Danke{danke}. Wie lange dauert das? | ممنون. چقدر طول می‌کشد؟
+why: برای مدت زمان «Wie lange?» می‌پرسیم، نه «Wie viel?». با das شکل dauert می‌آید، نه dauern.
+B: Ungefähr zehn Minuten. Brauchen Sie noch etwas? | حدود ده دقیقه. چیز دیگری هم لازم دارید؟
++ Ja, bitte{bitte}. Haben Sie noch ein Handtuch? | بله، لطفاً. یک حوله دیگر هم دارید؟
+- Ja, bitte{bitte}. Haben Sie noch eine Handtuch? | بله، لطفاً. یک حوله دیگر هم دارید؟
+- Ja, bitte{bitte}. Ich habe noch ein Handtuch. | بله، لطفاً. من یک حوله دیگر هم دارم.
+why: حوله می‌خواهی، پس می‌پرسی: «Haben Sie …?». Handtuch خنثی است: «ein Handtuch»، و «Ich habe» یعنی خودت حوله داری.
+B: Natürlich. Ich bringe Ihnen gleich ein Handtuch. | البته. همین الان یک حوله برایتان می‌آورم.
+- Bitte schön! Das ist sehr nett von Ihnen. | خواهش می‌کنم! خیلی لطف دارید.
++ Vielen Dank! Das ist sehr nett von Ihnen. | خیلی ممنون! خیلی لطف دارید.
+- Vielen Dank! Das ist sehr nett von dir. | خیلی ممنون! خیلی لطف داری.
+why: تشکر می‌کنیم: «Vielen Dank». «Bitte schön» جواب تشکر است، و با کارمند هتل dir نمی‌گوییم.

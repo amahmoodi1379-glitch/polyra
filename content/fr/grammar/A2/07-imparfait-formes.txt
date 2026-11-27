@@ -1,0 +1,89 @@
+code: fr-a2-imparfait-formes
+title: ساخت imparfait: je parlais، j'étais
+scope: ساخت imparfait از ریشهٔ nous در زمان حال (nous parlons → parl-) + ‎-ais، ‎-ais، ‎-ait، ‎-ions، ‎-iez، ‎-aient، با être که ریشهٔ ét- دارد (j'étais)، فعل‌های ‎-ger و ‎-cer (je mangeais، je commençais) و جمله‌های رایج c'était، il y avait و il faisait؛ کاربرد imparfait برای عادت‌ها و توصیفِ گذشته در واحد بعد و فرقش با passé composé دو واحد بعد می‌آید.
+can_do: حالا می‌توانی هر فعلی را در imparfait صرف کنی و بگویی چیزی در گذشته چطور بود: C'était bien. Il faisait beau. J'habitais à Ispahan.
+rule: شکل nous در زمان حال منهای ons + ais، ais، ait، ions، iez، aient: nous finissons → je finissais؛ فقط être بی‌قاعده است: j'étais، il était.
+mistake: فارسی‌زبان‌ها ریشه را از مصدر می‌گیرند («je finais»، «je prendais»، «il boivait»)؛ درست: je finissais، je prenais، il buvait، چون ریشه از nous finissons، nous prenons و nous buvons می‌آید. در فعل‌های ‎-ger و ‎-cer هم e و ç را جا می‌اندازند («je mangais»، «je commencais»)؛ درست: je mangeais، je commençais. «c'été» هم غلط است؛ درست: c'était.
+tables: imparfait
+tables: imparfait | être
+lesson:
+imparfait یکی از زمان‌های گذشته است و معمولاً با «می‌کردم» یا «بودم» در فارسی جور درمی‌آید: je parlais (حرف می‌زدم)، j'étais (بودم).
+ساختنش یک قاعده دارد: شکل nous را در زمان حال بگیر و ons را بردار: nous parlons → parl-، nous finissons → finiss-، nous prenons → pren-.
+بعد این پایانه‌ها را اضافه کن: je ‎-ais، tu ‎-ais، il ‎-ait، nous ‎-ions، vous ‎-iez، ils ‎-aient. مثلاً je parlais، nous parlions، ils parlaient.
+‎-ais، ‎-ait و ‎-aient یک‌جور خوانده می‌شوند؛ فرقشان فقط در نوشتن است.
+فعل‌های بی‌قاعده هم همین قاعده را دارند: nous faisons → je faisais، nous buvons → je buvais، nous avons → j'avais، nous allons → j'allais.
+فقط être استثناست و ریشه‌اش ét- است: j'étais، tu étais، il était، nous étions، vous étiez، ils étaient.
+در فعل‌های ‎-ger قبل از a یک e می‌ماند (je mangeais) و در فعل‌های ‎-cer، c می‌شود ç (je commençais)؛ در nous و vous لازم نیست: nous mangions، nous commencions.
+سه جملهٔ خیلی رایج: C'était bien (خوب بود)، Il y avait beaucoup de gens (آدم زیادی بود)، Il faisait froid (هوا سرد بود).
+table:
+ضمیر | parler (nous parlons) | finir (nous finissons) | être
+je | parlais | finissais | étais
+tu | parlais | finissais | étais
+il، elle، on | parlait | finissait | était
+nous | parlions | finissions | étions
+vous | parliez | finissiez | étiez
+ils، elles | parlaient | finissaient | étaient
+examples:
+Quand j'étais petit, j'habitais à Ispahan. | وقتی بچه بودم، در اصفهان زندگی می‌کردم.
+Il faisait froid et il y avait beaucoup de neige. | هوا سرد بود و برف زیادی آمده بود.
+C'était une belle journée. | روز قشنگی بود.
+Avant, nous mangions souvent chez ma grand-mère. | قبلاً اغلب خانهٔ مادربزرگم غذا می‌خوردیم.
+targets:
+Quand j'étais petit, j'[habitais] à Ispahan. | وقتی بچه بودم، در اصفهان زندگی می‌کردم. | d: habitait, habitaient, habitiez | hint: (habiter)
+Avant, mon père [travaillait] dans une banque. | قبلاً پدرم در یک بانک کار می‌کرد. | d: travaillais, travaillaient, travaillé
+Quand nous étions petits, nous [jouions] au football. | وقتی بچه بودیم، فوتبال بازی می‌کردیم. | d: jouiez, jouaient, jouais | hint: (jouer)
+Quand tu étais petit, tu [aimais] l'école ? | وقتی بچه بودی، مدرسه را دوست داشتی؟ | d: aimait, aimiez, aimé
+Vous [habitiez] où avant ? | قبلاً کجا زندگی می‌کردید؟ | d: habitais, habitions, habitaient | hint: (habiter)
+Avant, mes grands-parents [vivaient] à la campagne. | قبلاً پدربزرگ و مادربزرگم بیرون شهر زندگی می‌کردند. | d: vivait, vivions, vivais
+Le soir, je [finissais] mes devoirs à huit heures. | شب‌ها تکلیف‌هایم را ساعت هشت تمام می‌کردم. | d: finais, finissait, finissaient | hint: (finir)
+À huit ans, Léa [lisait] beaucoup. | لئا در هشت‌سالگی زیاد کتاب می‌خواند. | d: lisais, lisaient, lu
+Avant, nous [prenions] le bus pour aller à l'école. | قبلاً برای رفتن به مدرسه اتوبوس سوار می‌شدیم. | d: prendions, preniez, prenaient | hint: (prendre)
+Petit, mon frère [buvait] beaucoup de lait. | برادرم بچه که بود، شیر زیادی می‌خورد. | d: boivait, buvais, buvaient
+L'été dernier, il [faisait] très chaud. | تابستان گذشته هوا خیلی گرم بود. | d: fesait, faisais, faisaient | hint: (faire)
+Hier, [il y avait] beaucoup de gens au marché. | دیروز توی بازار آدم زیادی بود. | d: il y avais, il y avaient, il y aviait | hint: (il y a)
+C'[était] une belle journée. | روز قشنگی بود. | d: été, étais, êtait | hint: (être)
+J'[étais] fatigué hier soir. | دیشب خسته بودم. | d: été, était, êtais
+Tu [étais] où à midi ? | ظهر کجا بودی؟ | d: était, été, étiez | hint: (être)
+Nous [étions] en vacances en juillet. | ژوئیه در تعطیلات بودیم. | d: étaient, étiez, étons
+Les enfants [étaient] malades la semaine dernière. | بچه‌ها هفتهٔ پیش مریض بودند. | d: était, étais, été | hint: (être)
+Quand j'étais petite, je [mangeais] beaucoup de chocolat. | وقتی بچه بودم، خیلی شکلات می‌خوردم. | d: mangais, mangeait, mangeaient | hint: (manger)
+Avant, nous [mangions] à l'école. | قبلاً در مدرسه غذا می‌خوردیم. | d: mangeions, mangiez, mangeaient
+Quand j'étais petit, l'école [commençait] à huit heures. | وقتی بچه بودم، مدرسه ساعت هشت شروع می‌شد. | d: commencait, commençaient, commençais | hint: (commencer)
+Avant, mon oncle [voyageait] beaucoup pour son travail. | قبلاً عمویم برای کارش زیاد سفر می‌کرد. | d: voyagait, voyageais, voyageaient
+En hiver, il [neigeait] souvent dans notre village. | زمستان‌ها اغلب در روستای ما برف می‌آمد. | d: neigait, neigeaient, neigé | hint: (neiger)
+À six ans, je ne [savais] pas nager. | شش‌ساله که بودم، شنا بلد نبودم. | d: savait, savaient, su
+Quand tu étais petit, tu [avais] un chien ? | وقتی بچه بودی، سگ داشتی؟ | d: avait, aviez, eu | hint: (avoir)
+Avant, mes parents n'[avaient] pas de voiture. | قبلاً پدر و مادرم ماشین نداشتند. | d: avait, avions, aviaient
+Avant, nous [allions] à la plage chaque été. | قبلاً هر تابستان به ساحل می‌رفتیم. | d: allaient, alliez, allé | hint: (aller)
+Petite, elle [voulait] devenir médecin. | بچه که بود، می‌خواست پزشک شود. | d: voulais, veulait, voulaient
+Quand vous étiez jeunes, vous [faisiez] du sport ? | وقتی جوان بودید، ورزش می‌کردید؟ | d: faisaient, faisions, fesiez | hint: (faire)
+Avant, ils [venaient] chez nous le dimanche. | قبلاً یکشنبه‌ها خانهٔ ما می‌آمدند. | d: viennaient, venait, venions
+Avant, je [connaissais] bien nos voisins. | قبلاً همسایه‌هایمان را خوب می‌شناختم. | d: connaîtais, connaissait, connaissaient | hint: (connaître)
+Mon grand-père [écrivait] souvent des lettres. | پدربزرگم اغلب نامه می‌نوشت. | d: écrisait, écrivais, écrivaient
+L'année dernière, nous [étudiions]{étudier} le français le soir. | پارسال شب‌ها فرانسه می‌خواندیم. | d: étudions, étudiiez, étudiaient | hint: (étudier)
+Quand j'[étais] petit, j'[aimais] les dessins animés. | وقتی بچه بودم، کارتون دوست داشتم. | d: été, était, êtais / aimait, aimaient, aimé
+Hier, il [faisait] beau et [il y avait] du soleil. | دیروز هوا خوب بود و آفتاب بود. | d: fesait, faisais, faisaient / il y avaient, il y avais, il y aviait
+Avant, nous [habitions] à Lyon et mon père [travaillait] à Paris. | قبلاً ما در لیون زندگی می‌کردیم و پدرم در پاریس کار می‌کرد. | d: habitiez, habitaient, habitais / travaillais, travaillaient, travaillé
+C'[était] une belle fête et tout le monde [dansait]. | جشن قشنگی بود و همه می‌رقصیدند. | d: été, étais, êtait / dansaient, dansais, dansé
+Tu [lisais] beaucoup quand tu [étais] jeune ? | وقتی جوان بودی، زیاد کتاب می‌خواندی؟ | d: lisait, lisiez, lu / était, été, étiez
+Avant, mes parents [prenaient] le train et nous [prenions] le bus. | قبلاً پدر و مادرم قطار سوار می‌شدند و ما اتوبوس. | d: prendaient, prenait, prenions / prendions, preniez, prenaient
+À dix ans, je [commençais] l'école à huit heures et je [finissais] à midi. | ده‌ساله که بودم، مدرسه را ساعت هشت شروع می‌کردم و ظهر تمام می‌کردم. | d: commencais, commençait, commençaient / finais, finissait, finissaient
+Il [neigeait] et les enfants [étaient] contents. | برف می‌آمد و بچه‌ها خوشحال بودند. | d: neigait, neigeaient, neigé / était, étions, été
+transforms:
+Je parle français. => Je parlais français. | جمله را به imparfait ببر.
+Nous finissons à midi. => Nous finissions à midi. | جمله را به imparfait ببر.
+Il fait froid. => Il faisait froid. | جمله را به imparfait ببر.
+Tu es fatigué ? => Tu étais fatigué ? | جمله را به imparfait ببر.
+Ils mangent à la maison. => Ils mangeaient à la maison. | جمله را به imparfait ببر.
+Il y a beaucoup de gens. => Il y avait beaucoup de gens. | جمله را به imparfait ببر.
+C'est difficile. => C'était difficile. | جمله را به imparfait ببر.
+Nous commençons à huit heures. => Nous commencions à huit heures. | جمله را به imparfait ببر.
+translations:
+هوا سرد بود. => Il faisait froid.
+خسته بودم. => J'étais fatigué. ; J'étais fatiguée.
+فیلم جالب بود. => Le film était intéressant. ; C'était un film intéressant.
+ما در لیون زندگی می‌کردیم. => Nous habitions à Lyon. ; On habitait à Lyon. ; Nous vivions à Lyon. ; On vivait à Lyon.
+در پارک بچه‌های زیادی بودند. => Il y avait beaucoup d'enfants dans le parc. ; Il y avait beaucoup d'enfants au parc.
+پدرم در یک بانک کار می‌کرد. => Mon père travaillait dans une banque.
+آن‌ها شیر زیادی می‌خوردند. => Ils buvaient beaucoup de lait. ; Elles buvaient beaucoup de lait.
+کجا بودی؟ => Tu étais où ? ; Où étais-tu ? ; Où est-ce que tu étais ?

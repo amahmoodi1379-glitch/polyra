@@ -1,0 +1,34 @@
+code: de-a2-d017
+title: مترو: بلیت و مسیر
+situation: در ایستگاه مترو هستی و می‌خواهی به باغ وحش بروی. یک آقا می‌بیند که دنبال راه می‌گردی.
+turns:
+B: Entschuldigung, brauchen Sie Hilfe? | ببخشید، کمک لازم دارید؟
++ Ja, bitte{bitte}. Welche Linie fährt zum Zoo? | بله، لطفاً. کدام خط به باغ وحش می‌رود؟
+- Ja, bitte{bitte}. Welcher Linie fährt zum Zoo? | بله، لطفاً. کدام خط به باغ وحش می‌رود؟
+- Ja, bitte{bitte}. Welche Linie fährt im Zoo? | بله، لطفاً. کدام خط در باغ وحش حرکت می‌کند؟
+why: Linie مؤنث است: «welche Linie». برای مقصد zum می‌گوییم، نه im.
+B: Nehmen Sie die Linie zwei bis zum Bahnhof. Dort steigen Sie in die Linie fünf um. | خط دو را تا ایستگاه قطار بگیرید. آنجا سوار خط پنج شوید.
+- Ich umsteige{umsteigen} also einmal, richtig? | پس یک بار خط عوض می‌کنم، درست است؟
++ Ich muss also einmal umsteigen, richtig? | پس باید یک بار خط عوض کنم، درست است؟
+- Ich muss also nicht umsteigen, richtig? | پس لازم نیست خط عوض کنم، درست است؟
+why: یک بار باید خط عوض کنی. umsteigen با muss کامل آخر جمله می‌آید؛ بدون muss جدا می‌شود («ich steige um»)، پس «ich umsteige» غلط است.
+B: Genau. Haben Sie schon eine Fahrkarte? | دقیقاً. بلیت دارید؟
+- Ja, schon. Wo kann ich eine Fahrkarte kaufen? | بله، دارم. کجا می‌توانم بلیت بخرم؟
+- Nein, noch nicht. Wo kann ich einen Fahrkarte kaufen? | نه، هنوز نه. کجا می‌توانم بلیت بخرم؟
++ Nein, noch nicht. Wo kann ich eine Fahrkarte kaufen? | نه، هنوز نه. کجا می‌توانم بلیت بخرم؟
+why: هنوز بلیت نداری، پس «Nein, noch nicht». Fahrkarte مؤنث است: «eine Fahrkarte».
+B: Dort, neben der Treppe. Eine Fahrkarte kostet drei Euro. | آنجا، کنار پله‌ها. بلیت سه یورو است.
++ Danke{danke}! Und wie lange fährt man bis zum Zoo? | ممنون! تا باغ وحش چقدر راه است؟
+- Danke{danke}! Und was kostet eine Fahrkarte? | ممنون! بلیت چند است؟
+- Danke{danke}! Und wie lange fährst du bis zum Zoo? | ممنون! تو تا باغ وحش چقدر راه می‌روی؟
+why: حالا مدت راه را می‌پرسی. قیمت بلیت را همین الان گفت، و با یک غریبه du نمی‌گوییم.
+B: Ungefähr zwanzig Minuten. Der Zoo ist die letzte Station. | حدود بیست دقیقه. باغ وحش ایستگاه آخر است.
+- Oh, die erste Station. Das ist leicht! | آهان، ایستگاه اول. آسان است!
++ Oh, die letzte Station. Das ist leicht! | آهان، ایستگاه آخر. آسان است!
+- Oh, das letzte Station. Das ist leicht! | آهان، ایستگاه آخر. آسان است!
+why: باغ وحش ایستگاه آخر است، نه اول. Station مؤنث است: «die letzte Station».
+B: Genau. Viel Spaß im Zoo! | دقیقاً. در باغ وحش خوش بگذرد!
+- Gern geschehen! Viel Spaß im Zoo! | خواهش می‌کنم! در باغ وحش خوش بگذرد!
+- Vielen Dank für deine Hilfe! | خیلی ممنون از کمکت!
++ Vielen Dank für Ihre Hilfe! | خیلی ممنون از کمکتان!
+why: برای کمک تشکر می‌کنیم: «Vielen Dank für Ihre Hilfe». «Gern geschehen» جواب تشکر است، و با غریبه deine نمی‌گوییم.

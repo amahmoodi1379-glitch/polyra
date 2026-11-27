@@ -1,0 +1,83 @@
+code: fr-a2-depuis-il-y-a-pendant
+title: زمان و مدت: depuis، il y a، pendant، dans
+scope: depuis + زمان حال برای کاری که هنوز ادامه دارد (j'habite ici depuis deux ans، depuis quand ?)، il y a + passé composé برای «… پیش» (je suis arrivé il y a trois jours)، pendant برای مدتِ یک کار (j'ai travaillé pendant dix ans) و dans برای «… دیگر» در آینده (dans une semaine)؛ ça fait … que در B1 می‌آید.
+can_do: حالا می‌توانی بگویی از کی جایی زندگی می‌کنی، چند وقت پیش کاری کردی، کاری چقدر طول کشید و کی چیزی اتفاق می‌افتد: J'apprends le français depuis six mois. Je suis arrivé il y a trois jours.
+rule: depuis + زمان حال (هنوز ادامه دارد): j'habite ici depuis deux ans؛ il y a + گذشته («… پیش»): je suis arrivé il y a trois jours؛ pendant + مدت: j'ai dormi pendant huit heures؛ dans + مدت در آینده («… دیگر»): le train part dans dix minutes.
+mistake: فارسی می‌گوید «دو سال است که اینجا زندگی می‌کنم» و «سه روز پیش رسیدم»، برای همین فارسی‌زبان‌ها il y a را به‌جای depuis می‌گذارند («j'habite ici il y a deux ans») یا با depuis فعل گذشته می‌آورند («j'ai habité ici depuis deux ans»)؛ درست: j'habite ici depuis deux ans. «… پیش» هم با avant ساخته نمی‌شود («je suis arrivé avant trois jours»)؛ درست: je suis arrivé il y a trois jours. «ده دقیقهٔ دیگر» هم dans dix minutes است، نه en dix minutes.
+lesson:
+depuis یعنی «از … تا حالا»: کاری که شروع شده و هنوز ادامه دارد. برای همین فعل در زمان حال است: J'habite à Lyon depuis deux ans. (دو سال است که در لیون زندگی می‌کنم.)
+بعد از depuis هم مدت می‌آید (depuis deux ans) و هم زمانِ شروع (depuis lundi، depuis ce matin). سؤال: Depuis quand … ? (از کی؟) Depuis combien de temps … ? (چند وقت است که…؟)
+il y a + مدت یعنی «… پیش» و با گذشته می‌آید: Je suis arrivé il y a trois jours. (سه روز پیش رسیدم.) اینجا il y a معنی «هست» نمی‌دهد.
+pendant یعنی «به مدتِ، در طولِ» و برای کاری است که شروع و پایانش معلوم است: J'ai travaillé à Paris pendant dix ans. (ده سال در پاریس کار کردم، و حالا دیگر نه.) pendant les vacances (در طول تعطیلات).
+dans + مدت یعنی «… دیگر» در آینده: Le train part dans dix minutes. (قطار ده دقیقهٔ دیگر حرکت می‌کند.) Je vais partir dans une semaine.
+فرق depuis و pendant: J'habite ici depuis deux ans (هنوز اینجا هستم) / J'ai habité ici pendant deux ans (دیگر اینجا نیستم).
+table:
+کلمه | معنی | زمان فعل | مثال
+depuis | از … تا حالا | حال | J'habite ici depuis deux ans.
+il y a | … پیش | گذشته | Je suis arrivé il y a trois jours.
+pendant | به مدتِ | گذشته (یا هر زمان) | J'ai dormi pendant huit heures.
+dans | … دیگر | آینده یا حال | Le train part dans dix minutes.
+examples:
+J'apprends le français depuis six mois. | شش ماه است که فرانسوی یاد می‌گیرم.
+Nous sommes arrivés à Paris il y a deux jours. | دو روز پیش به پاریس رسیدیم.
+Il a plu pendant toute la journée. | تمام روز باران آمد.
+Le film commence dans cinq minutes. | فیلم پنج دقیقهٔ دیگر شروع می‌شود.
+targets:
+J'habite à Lyon [depuis] deux ans. | دو سال است که در لیون زندگی می‌کنم. | d: il y a, avant, de
+Paul apprend le français [depuis] six mois. | پل شش ماه است که فرانسوی یاد می‌گیرد. | d: il y a, avant, de
+Il pleut [depuis] ce matin. | از امروز صبح باران می‌بارد. | d: il y a, dans, de
+Nous attendons le bus [depuis] vingt minutes. | بیست دقیقه است که منتظر اتوبوس هستیم. | d: il y a, avant, de
+Je connais Marie [depuis] l'école. | ماری را از دوران مدرسه می‌شناسم. | d: il y a, pendant, avant
+Elle est malade [depuis] trois jours. | سه روز است که مریض است. | d: il y a, avant, de
+[Depuis] quand tu habites ici ? | از کی اینجا زندگی می‌کنی؟ | d: Il y a, Pendant, Dans
+Tu travailles ici [depuis] combien de temps ? | چند وقت است که اینجا کار می‌کنی؟ | d: il y a, de, avant
+Elle étudie à l'université [depuis] septembre. | او (زن) از سپتامبر در دانشگاه درس می‌خواند. | d: il y a, dans, de
+Nous [habitons] ici depuis cinq ans. | پنج سال است که اینجا زندگی می‌کنیم. | d: avons habité, allons habiter, habiter | hint: (habiter)
+Je [travaille] dans cette entreprise depuis 2020. | از ۲۰۲۰ در این شرکت کار می‌کنم. | d: ai travaillé, vais travailler, travailler | hint: (travailler)
+Il [attend] depuis une{un-num} heure. | یک ساعت است که منتظر است. | d: a attendu, va attendre, attendre | hint: (attendre)
+Depuis combien de temps tu [apprends] le français ? | چند وقت است که فرانسوی یاد می‌گیری؟ | d: as appris, vas apprendre, apprendre | hint: (apprendre)
+Je suis{être} arrivé à Paris [il y a] trois jours. | سه روز پیش به پاریس رسیدم. | d: dans, avant, pendant
+Elle est partie [il y a] dix minutes. | او (زن) ده دقیقه پیش رفت. | d: dans, avant, de
+Mes grands-parents sont venus à Téhéran [il y a] vingt ans. | پدربزرگ و مادربزرگم بیست سال پیش به تهران آمدند. | d: dans, de, en
+Le bus est passé [il y a] cinq minutes. | اتوبوس پنج دقیقه پیش رد شد. | d: dans, avant, de
+Paul [a téléphoné] il y a cinq minutes. | پل پنج دقیقه پیش تلفن زد. | d: va téléphoner, a téléphoner, est téléphoné | hint: (téléphoner)
+Il y a deux ans, nous [sommes allés] en Espagne. | دو سال پیش به اسپانیا رفتیم. | d: allons aller, avons allé, allés | ok: sommes allées | hint: (aller)
+Le cours [a commencé] il y a dix minutes. | کلاس ده دقیقه پیش شروع شد. | d: va commencer, a commencer, commencer | hint: (commencer)
+Nous avons voyagé [pendant] trois semaines. | سه هفته سفر کردیم. | d: dans, en, de
+Il a travaillé à Paris [pendant] dix ans. | او (مرد) ده سال در پاریس کار کرد. | d: dans, en, de
+Elle a habité au Canada [pendant] un{un-num} an. | او (زن) یک سال در کانادا زندگی کرد. | d: dans, en, de
+Je suis{être} resté à la maison [pendant] les vacances. | در تعطیلات در خانه ماندم. | d: il y a, dans, en
+On a fait du sport [pendant] deux heures. | دو ساعت ورزش کردیم. | d: dans, en, de
+Hier, nous [avons marché] pendant deux heures. | دیروز دو ساعت پیاده‌روی کردیم. | d: allons marcher, sommes marchés, marcher | hint: (marcher)
+Le train part [dans] dix minutes. | قطار ده دقیقهٔ دیگر حرکت می‌کند. | d: en, il y a, depuis
+Je vais partir en vacances [dans] une{un-num} semaine. | یک هفتهٔ دیگر به تعطیلات می‌روم. | d: en, il y a, depuis
+Le spectacle commence [dans] un quart d'heure. | نمایش یک ربع دیگر شروع می‌شود. | d: en, il y a, depuis
+Nous allons arriver [dans] une{un-num} heure. | یک ساعت دیگر می‌رسیم. | d: il y a, depuis, pendant
+Le magasin ferme{fermer} [dans] cinq minutes. | مغازه پنج دقیقهٔ دیگر بسته می‌شود. | d: en, il y a, depuis
+Mes amis [vont arriver] dans deux jours. | دوستانم دو روز دیگر می‌رسند. | d: sont arrivés, arrivaient, ont arrivé | ok: arrivent | hint: (arriver)
+Elle est partie [il y a] dix minutes et elle revient [dans] une{un-num} heure. | او (زن) ده دقیقه پیش رفت و یک ساعت دیگر برمی‌گردد. | d: dans, avant, de / il y a, depuis, pendant
+J'ai travaillé [pendant] trois heures et je suis{être} parti [il y a] dix minutes. | سه ساعت کار کردم و ده دقیقه پیش رفتم. | d: dans, en, de / dans, avant, de
+Nous [habitons] à Nice [depuis] cinq ans. | پنج سال است که در نیس زندگی می‌کنیم. | d: avons habité, allons habiter, habiter / il y a, avant, de
+Il est arrivé [il y a] une{un-num} semaine et il part [dans] deux jours. | او (مرد) یک هفته پیش رسید و دو روز دیگر می‌رود. | d: dans, avant, pendant / il y a, depuis, en
+[Depuis] quand tu es malade ? [Depuis] lundi. | از کی مریضی؟ از دوشنبه. | d: Il y a, Pendant, Dans / Il y a, Pendant, Dans
+Tu es là [depuis] quand ? Je suis{être} arrivé [il y a] une{un-num} heure. | از کی اینجایی؟ یک ساعت پیش رسیدم. | d: il y a, pendant, dans / dans, pendant, de
+Je vais voyager [pendant] un{un-num} mois et je pars [dans] trois jours. | یک ماه سفر می‌کنم و سه روز دیگر راه می‌افتم. | d: depuis, il y a, de / il y a, depuis, en
+Il a plu [pendant] trois jours, mais il fait beau [depuis] hier. | سه روز باران آمد، ولی از دیروز هوا خوب است. | d: dans, en, de / il y a, pendant, dans
+transforms:
+J'habite ici. => J'habite ici depuis deux ans. | با depuis بگو که دو سال (deux ans) است اینجا زندگی می‌کنی.
+Je suis{être} arrivé. => Je suis{être} arrivé il y a trois jours. | با il y a بگو که سه روز (trois jours) پیش رسیدی.
+J'ai dormi. => J'ai dormi pendant huit heures. | با pendant بگو که هشت ساعت (huit heures) خوابیدی.
+Le train part. => Le train part dans dix minutes. | با dans بگو که قطار ده دقیقهٔ (dix minutes) دیگر حرکت می‌کند.
+J'ai habité à Lyon pendant deux ans. => J'habite à Lyon depuis deux ans. | جمله را طوری بگو که هنوز در لیون زندگی می‌کنی (با depuis).
+Nous allons partir. => Nous allons partir dans une{un-num} semaine. | با dans بگو «یک هفتهٔ دیگر» (une semaine).
+Elle a téléphoné. => Elle a téléphoné il y a cinq minutes. | با il y a بگو «پنج دقیقه پیش» (cinq minutes).
+Je travaille ici depuis un{un-num} an. => Depuis quand tu travailles ici ? ; Depuis quand est-ce que tu travailles ici ? ; Tu travailles ici depuis quand ? ; Depuis quand travailles-tu ici ? | با depuis quand از «تو» بپرس.
+translations:
+پل سه روز پیش رسید. => Paul est arrivé il y a trois jours. ; Il y a trois jours, Paul est arrivé.
+از کی فرانسوی یاد می‌گیری؟ => Depuis quand tu apprends le français ? ; Depuis quand est-ce que tu apprends le français ? ; Tu apprends le français depuis quand ? ; Depuis quand apprends-tu le français ?
+قطار ده دقیقهٔ دیگر حرکت می‌کند. => Le train part dans dix minutes. ; Le train va partir dans dix minutes. ; Dans dix minutes, le train part. ; Dans dix minutes, le train va partir.
+دیروز ده ساعت خوابیدم. => Hier, j'ai dormi pendant dix heures. ; Hier, j'ai dormi dix heures. ; J'ai dormi pendant dix heures hier. ; J'ai dormi dix heures hier.
+او (مرد) از دوشنبه مریض است. => Il est malade depuis lundi. ; Depuis lundi, il est malade.
+او (زن) یک سال پیش به کانادا رفت. => Elle est partie au Canada il y a un{un-num} an. ; Elle est allée au Canada il y a un{un-num} an. ; Il y a un{un-num} an, elle est partie au Canada. ; Il y a un{un-num} an, elle est allée au Canada. ; Elle est partie pour le Canada il y a un{un-num} an. ; Il y a un{un-num} an, elle est partie pour le Canada.
+یک هفتهٔ دیگر به تعطیلات می‌روم. => Je pars en vacances dans une{un-num} semaine. ; Je vais partir en vacances dans une{un-num} semaine. ; Dans une{un-num} semaine, je pars en vacances. ; Dans une{un-num} semaine, je vais partir en vacances.
+بیست دقیقه است که منتظر اتوبوس هستیم. => Nous attendons le bus depuis vingt minutes. ; On attend le bus depuis vingt minutes. ; Depuis vingt minutes, nous attendons le bus. ; Depuis vingt minutes, on attend le bus. ; Il y a vingt minutes que nous attendons le bus. ; Il y a vingt minutes qu'on attend le bus. ; Ça fait vingt minutes que nous attendons le bus. ; Ça fait vingt minutes qu'on attend le bus.

@@ -1,0 +1,82 @@
+code: fr-a2-tout-tous
+title: «همه»: tout، toute، tous، toutes
+scope: tout، toute، tous و toutes + حرف تعریف (یا صفت ملکی و اشاره) + اسم (tout le temps، toute la journée، tous les jours، toutes les semaines)، tout به‌معنای «همه چیز» (Tout va bien، C'est tout، J'ai tout compris)، و tous و toutes به‌معنای «همه» (Ils sont tous là) با s خوانده‌شدهٔ tous؛ tout le monde با فعل مفرد.
+can_do: حالا می‌توانی بگویی «هر روز»، «تمام روز» و «همه» و دربارهٔ یک گروه حرف بزنی: Je travaille toute la journée. Mes amis sont tous là. Tout va bien.
+rule: tout + مذکر مفرد (tout le temps)، toute + مؤنث مفرد (toute la journée)، tous + مذکر جمع (tous les jours)، toutes + مؤنث جمع (toutes les semaines)، و بینشان le، la، les، mon، ce…؛ tout تنها = همه چیز؛ tous و toutes تنها = همه.
+mistake: «همه» در فارسی عوض نمی‌شود و بعدش حرف تعریف نمی‌آید («همهٔ روزها»)، برای همین فارسی‌زبان‌ها می‌نویسند «tout les jours» یا «tous jours»؛ درست: tous les jours. tout le monde هم با اینکه یعنی «همه»، فعل مفرد می‌گیرد: «Tout le monde sont là» غلط است؛ درست: Tout le monde est là.
+lesson:
+tout یعنی «همه» یا «تمامِ» و مثل صفت با اسمش جور می‌شود: tout (مذکر مفرد)، toute (مؤنث مفرد)، tous (مذکر جمع)، toutes (مؤنث جمع).
+بعد از آن یک حرف تعریف (یا mon، ce…) و بعد اسم می‌آید: tout le temps (همیشه)، toute la journée (تمام روز)، tous les jours (هر روز)، toutes les semaines (هر هفته)، tous mes amis (همهٔ دوستانم).
+دقت کن: tous les jours یعنی «هر روز»، ولی toute la journée یعنی «تمام روز، از صبح تا شب».
+tout تنها یعنی «همه چیز»: Tout va bien (همه چیز خوب است)، C'est tout (همین)، J'ai tout compris (همه چیز را فهمیدم). در passé composé بین avoir و اسم مفعول می‌آید.
+tous و toutes تنها یعنی «همه» (آدم‌ها یا چیزهایی که اسمشان را گفتیم) و معمولاً بعد از فعل می‌آیند: Mes amis sont tous là (دوستانم همه اینجا هستند)، Je les connais toutes.
+تلفظ: در tous les jours، s آخر tous خوانده نمی‌شود، ولی وقتی tous تنها و به‌معنای «همه» است، s را می‌خوانیم: Ils sont tous là.
+tout le monde یعنی «همه، همهٔ آدم‌ها»، ولی فعلش مثل il مفرد است: Tout le monde est content.
+table:
+ | مفرد | جمع
+مذکر | tout le temps | tous les jours
+مؤنث | toute la journée | toutes les semaines
+examples:
+Je travaille toute la journée. | تمام روز کار می‌کنم.
+Il fait du sport tous les jours. | او هر روز ورزش می‌کند.
+Tout va bien, merci. | همه چیز خوب است، ممنون.
+Nos amis sont tous là. | دوستانمان همه اینجا هستند.
+targets:
+Il pleut [tout] le temps ici. | اینجا همیشه باران می‌آید. | d: toute, tous, toutes | full: Ici, il pleut tout le temps.
+J'ai dormi [toute] la nuit. | تمام شب خوابیدم. | d: tout, tous, toutes
+Elle travaille [toute] la semaine. | او تمام هفته کار می‌کند. | d: tout, tous, toutes
+Nous allons au marché [tous] les samedis. | ما هر شنبه به بازار می‌رویم. | d: tout, toute, toutes | full: Tous les samedis, nous allons au marché.
+Je bois{boire} un café [tous] les matins. | هر صبح یک قهوه می‌خورم. | d: tout, toute, toutes | full: Tous les matins, je bois un café.
+Ma mère téléphone{téléphoner} à ma grand-mère [toutes] les semaines. | مادرم هر هفته به مادربزرگم تلفن می‌زند. | d: tous, tout, toute | full: Toutes les semaines, ma mère téléphone à ma grand-mère.
+[Toutes] les boutiques sont fermées{fermé} le dimanche. | همهٔ مغازه‌ها یکشنبه‌ها بسته‌اند. | d: Tous, Tout, Toute | full: Le dimanche, toutes les boutiques sont fermées.
+[Tous] les enfants aiment le chocolat. | همهٔ بچه‌ها شکلات دوست دارند. | d: Tout, Toute, Toutes
+J'ai invité [tous] mes amis. | همهٔ دوستانم را دعوت کردم. | d: tout, toutes, toute
+[Toute] ma famille habite à Chiraz. | همهٔ خانواده‌ام در شیراز زندگی می‌کنند. | d: Tout, Tous, Toutes
+Tu as mangé [tout] le gâteau ? | تمام کیک را خوردی؟ | d: toute, tous, toutes
+Il a plu [toute] la journée. | تمام روز باران آمد. | d: tout, tous, toutes
+[Tout] le monde est content. | همه خوشحال‌اند. | d: Tous, Toute, Toutes
+Tout le monde [est] là ? | همه اینجا هستند؟ | d: sont, sommes, êtes | hint: (être)
+Tout le monde [aime] les vacances. | همه تعطیلات را دوست دارند. | d: aiment, aimons, aimez | hint: (aimer)
+Ne t'inquiète pas, [tout] va bien. | نگران نباش، همه چیز خوب است. | d: tous, toute, toutes
+Vous voulez autre chose ? Non, c'{ce-pron}est{être} [tout], merci. | چیز دیگری می‌خواهید؟ نه، همین، ممنون. | d: tous, toute, toutes
+Tu as [tout] fini ? | همه چیز را تمام کردی؟ | d: tous, toute, toutes
+Il a [tout] mangé. | او همه چیز را خورد. | d: tous, toute, toutes
+[Tout] est{être} prêt pour la fête. | همه چیز برای جشن آماده است. | d: Tous, Toute, Toutes
+Je n'ai pas [tout] compris. | همه چیز را نفهمیدم. | d: tous, toute, toutes
+Les invités sont [tous] là. | مهمان‌ها همه اینجا هستند. | d: tout, toute, toutes | full: Tous les invités sont là.
+Tes amis ? Je les connais [tous]. | دوستانت؟ همه‌شان را می‌شناسم. | d: tout, toute, toutes
+Les filles jouent [toutes] dans le jardin. | دخترها همه در باغ بازی می‌کنند. | d: tous, tout, toute | full: Toutes les filles jouent dans le jardin.
+Mes amis habitent [tous] à Téhéran. | دوستانم همه در تهران زندگی می‌کنند. | d: tout, toute, toutes | full: Tous mes amis habitent à Téhéran.
+Ces photos sont belles : je les aime [toutes]. | این عکس‌ها قشنگ‌اند: همه‌شان را دوست دارم. | d: tous, tout, toute
+Les garçons partent [tous] demain matin. | پسرها همه فردا صبح راه می‌افتند. | d: tout, toute, toutes | full: Demain matin, les garçons partent tous. ; Tous les garçons partent demain matin. ; Demain matin, tous les garçons partent.
+Tu as lu [tous] ces livres ? | همهٔ این کتاب‌ها را خوانده‌ای؟ | d: tout, toutes, toute
+J'ai rangé [toute] la maison. | تمام خانه را مرتب کردم. | d: tout, tous, toutes
+Paul et Marie sont [tous] les deux malades. | پل و ماری هر دو مریض‌اند. | d: tout, toute, toutes
+Il y a un bus [toutes] les dix minutes. | هر ده دقیقه یک اتوبوس هست. | d: tous, tout, toute | full: Toutes les dix minutes, il y a un bus.
+Mon frère joue aux jeux vidéo [tout] le week-end. | برادرم تمام آخر هفته بازی ویدیویی می‌کند. | d: toute, tous, toutes
+Je travaille [tous] les jours, [toute] la journée. | هر روز، تمام روز کار می‌کنم. | d: tout, toute, toutes / tout, tous, toutes
+[Tout] le monde [est] prêt ? | همه آماده‌اند؟ | d: Tous, Toute, Toutes / sont, sommes, êtes
+[Toute] la famille est venue et [tous] mes cousins aussi. | همهٔ خانواده آمدند و همهٔ پسرعموهایم هم. | d: Tout, Tous, Toutes / tout, toutes, toute
+J'ai [tout] lu, mais je n'ai pas [tout] compris. | همه را خواندم، ولی همه را نفهمیدم. | d: tous, toute, toutes / tous, toute, toutes
+Elle va à la piscine [toutes] les semaines et au cinéma [tous] les mois. | او هر هفته به استخر و هر ماه به سینما می‌رود. | d: tous, tout, toute / tout, toute, toutes
+Mes amis sont [tous] là et [tout] va bien. | دوستانم همه اینجا هستند و همه چیز خوب است. | d: tout, toute, toutes / tous, toute, toutes | full: Tous mes amis sont là et tout va bien.
+Il a mangé [toute] la pizza et [tous] les gâteaux ! | او تمام پیتزا و همهٔ کیک‌ها را خورد! | d: tout, tous, toutes / tout, toute, toutes
+[Toutes] les filles et [tous] les garçons dansent. | همهٔ دخترها و همهٔ پسرها می‌رقصند. | d: Tous, Tout, Toute / tout, toute, toutes | full: Tous les garçons et toutes les filles dansent.
+transforms:
+Je travaille le matin. => Je travaille tous les matins. | «هر صبح» را با tous بنویس.
+Il a mangé le gâteau. => Il a mangé tout le gâteau. | «تمامِ» را با tout اضافه کن.
+Mes amis sont là. => Mes amis sont tous là. ; Tous mes amis sont là. | «همه» را با tous اضافه کن.
+Les enfants aiment le chocolat. => Tous les enfants aiment le chocolat. ; Les enfants aiment tous le chocolat. | «همهٔ» را با tous اضافه کن.
+Les filles sont là. => Toutes les filles sont là. ; Les filles sont toutes là. | «همهٔ» را با toutes اضافه کن.
+Tout le monde sont là. => Tout le monde est là. | غلط جمله را درست کن.
+Tout les jours, je marche. => Tous les jours, je marche. | غلط جمله را درست کن.
+J'ai compris. => J'ai tout compris. | «همه چیز» را با tout اضافه کن.
+translations:
+هر روز ورزش می‌کنم. => Je fais du sport tous les jours. ; Tous les jours, je fais du sport. ; Je fais du sport chaque jour. ; Chaque jour, je fais du sport.
+تمام روز کار کردم. => J'ai travaillé toute la journée.
+همه چیز خوب است. => Tout va bien.
+همه اینجا هستند. => Tout le monde est là. ; Tout le monde est ici. ; Ils sont tous là. ; Ils sont tous ici. ; Elles sont toutes là. ; Elles sont toutes ici.
+همهٔ دوستانم را دعوت کردم. => J'ai invité tous mes amis. ; J'ai invité toutes mes amies.
+همین، ممنون. => C'{ce-pron}est{être} tout, merci.
+تمام کیک را خوردی؟ => Tu as mangé tout le gâteau ? ; Est-ce que tu as mangé tout le gâteau ?
+همهٔ بچه‌ها شکلات دوست دارند. => Tous les enfants aiment le chocolat. ; Les enfants aiment tous le chocolat.

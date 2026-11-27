@@ -1,0 +1,87 @@
+code: fr-a2-conditionnel-politesse
+title: درخواست مؤدبانه: je voudrais، vous pourriez، ce serait
+scope: شکل‌های ثابت مؤدبانه برای خواستن، خواهش و پیشنهاد: je voudrais، j'aimerais، tu pourrais و vous pourriez + مصدر، ce serait (bien، possible)، on pourrait برای پیشنهاد و il faudrait، و چند شکل نزدیک به آن‌ها (nous voudrions، tu aimerais، vous aimeriez)؛ این‌ها فقط به‌عنوان شکل‌های مؤدبانه می‌آیند و زمان conditionnel présent و si + imparfait در B1 درس داده می‌شوند.
+can_do: حالا می‌توانی در مغازه، رستوران و هتل مؤدبانه چیزی بخواهی، از کسی خواهش کنی و پیشنهاد بدهی: Je voudrais un café. Vous pourriez m'aider ? On pourrait sortir.
+rule: برای خواستن و خواهش و پیشنهاد مؤدبانه: je voudrais، j'aimerais، tu pourrais / vous pourriez + مصدر، on pourrait + مصدر، ce serait + صفت، il faudrait + مصدر.
+mistake: فارسی‌زبان‌ها «می‌خواهم» را مستقیم ترجمه می‌کنند («Je veux un café») که در مغازه تند و بی‌ادبانه به گوش می‌رسد؛ مؤدبانه: Je voudrais un café. در نوشتن هم ریشه را از مصدر می‌سازند («je vouloirais»، «vous pouvriez») یا پایان را عوض می‌کنند («je voudrait»)؛ درست: je voudrais، vous pourriez.
+lesson:
+در فارسی برای مؤدب بودن به‌جای «می‌خواهم» می‌گوییم «می‌خواستم…» یا می‌پرسیم «می‌شود…؟». فرانسوی هم برای این کار شکل نرم‌تری از فعل دارد.
+je veux (می‌خواهم) کمی تند است؛ در مغازه و رستوران بگو je voudrais: Je voudrais un café, s'il vous plaît.
+j'aimerais یعنی «دلم می‌خواهد، دوست داشتم»: J'aimerais visiter Paris.
+برای خواهش، tu pourrais یا vous pourriez + مصدر: Vous pourriez m'aider ? (می‌شود کمکم کنید؟)
+برای پیشنهاد، on pourrait + مصدر: On pourrait aller au cinéma (می‌توانیم برویم سینما).
+ce serait یعنی «… می‌شد، … است»: Ce serait bien (خوب می‌شد)، Ce serait possible ? (ممکن است؟). il faudrait یعنی «لازم است، بهتر است»: Il faudrait partir.
+ریشهٔ این شکل‌ها همان ریشهٔ futur است (voudr-، pourr-، aimer-، ser-، faudr-) و پایانشان -ais، -ait، -ions، -iez، -aient: je voudrais، il voudrait، nous voudrions، vous voudriez.
+مواظب باش: je voudrai (با ai) آینده است و je voudrais (با ais) مؤدبانه؛ ریشه را هم از مصدر نساز: «pouvriez» غلط است، درست pourriez.
+table:
+شکل | معنی | مثال
+je voudrais | می‌خواستم (مؤدبانهٔ je veux) | Je voudrais un café.
+j'aimerais | دلم می‌خواهد | J'aimerais venir.
+tu pourrais، vous pourriez | می‌شود…؟ | Vous pourriez m'aider ?
+on pourrait | می‌توانیم (پیشنهاد) | On pourrait sortir.
+ce serait | … می‌شد | Ce serait bien.
+il faudrait | لازم است، بهتر است | Il faudrait partir.
+examples:
+Je voudrais un café, s'il vous plaît. | لطفاً یک قهوه می‌خواستم.
+Vous pourriez m'appeler{appeler} demain ? | می‌شود فردا به من زنگ بزنید؟
+On pourrait aller au parc. | می‌توانیم به پارک برویم.
+Ce serait bien ! | خوب می‌شد!
+targets:
+Je [voudrais] un kilo de tomates, s'il vous plaît. | لطفاً یک کیلو گوجه‌فرنگی می‌خواستم. | d: voudrait, voudrions, vouloirais | ok: voulais | hint: (vouloir)
+Je [voudrais] réserver une table pour deux personnes. | می‌خواستم یک میز برای دو نفر رزرو کنم. | d: voudriez, voudraient, vouloirais | ok: voulais
+Bonjour, je [voudrais] parler à Madame Dubois. | سلام، می‌خواستم با خانم دوبوا صحبت کنم. | d: voudrait, voudriez, vouloirais | ok: voulais | hint: (vouloir)
+J'[aimerais] visiter le musée demain. | دلم می‌خواهد فردا از موزه دیدن کنم. | d: aimerait, aimerions, aimeriez | hint: (aimer)
+J'[aimerais] bien venir avec vous. | خیلی دلم می‌خواهد با شما بیایم. | d: aimerait, aimeraient, aimerions
+Tu [pourrais] fermer la fenêtre, s'il te plaît ? | می‌شود لطفاً پنجره را ببندی؟ | d: pourrait, pourriez, pouvrais | ok: peux | hint: (pouvoir)
+Vous [pourriez] parler plus lentement, s'il vous plaît ? | می‌شود لطفاً آهسته‌تر صحبت کنید؟ | d: pourrais, pourraient, pouvriez | ok: pouvez
+[Pourriez]-vous m'aider ? | می‌توانید به من کمک کنید؟ | d: Pourrais, Pourrait, Pouvriez | ok: Pouvez | hint: (pouvoir)
+Tu [pourrais] m'expliquer cet exercice ? | می‌شود این تمرین را برایم توضیح بدهی؟ | d: pourriez, pourraient, pouvrais | ok: peux
+Ce [serait] bien de partir tôt. | خوب می‌شد زود راه بیفتیم. | d: serais, seraient, êtrait | hint: (être)
+Ce [serait] possible de changer de place ? | ممکن است جایم را عوض کنم؟ | d: serais, seriez, êtrait
+On [pourrait] aller au cinéma ce soir. | می‌توانیم امشب به سینما برویم. | d: pourrais, pourraient, pouvrait | ok: peut | hint: (pouvoir)
+On [pourrait] manger au restaurant, non ? | می‌توانیم در رستوران غذا بخوریم، نه؟ | d: pourrions, pourriez, pouvrait | ok: peut
+Il [faudrait] acheter du pain. | لازم است نان بخریم. | d: faudrais, faudraient, fallerait | ok: faut | hint: (falloir)
+Il [faudrait] partir maintenant. | بهتر است الان راه بیفتیم. | d: faudrais, faudrions, fallerait | ok: faut
+Nous [voudrions] une chambre pour trois nuits. | یک اتاق برای سه شب می‌خواستیم. | d: voudriez, voudraient, vouloirions | ok: voulions | hint: (vouloir)
+Tu [aimerais] venir avec nous samedi ? | دلت می‌خواهد شنبه با ما بیایی؟ | d: aimerait, aimeriez, aimerions | ok: voudrais, veux | hint: (aimer)
+Vous [aimeriez] boire quelque chose ? | میل دارید چیزی بنوشید؟ | d: aimerais, aimeraient, aimerions | ok: voudriez, voulez
+Je [voudrais] savoir à quelle heure part le train. | می‌خواستم بدانم قطار ساعت چند حرکت می‌کند. | d: voudrait, voudriez, vouloirais | ok: voulais
+Excusez-moi, vous [pourriez] me dire où est la poste ? | ببخشید، می‌شود به من بگویید پست کجاست؟ | d: pourrais, pourrait, pouvriez | ok: pouvez | hint: (pouvoir)
+Je ne [voudrais] pas vous déranger. | نمی‌خواهم مزاحمتان بشوم. | d: voudrait, voudrions, vouloirais | ok: veux
+Ce{ce-pron} ne [serait] pas une bonne idée. | این فکر خوبی نمی‌شد. | d: serais, seraient, êtrait | hint: (être)
+Il ne [faudrait] pas oublier les billets. | نباید بلیت‌ها را فراموش کنیم. | d: faudrais, faudraient, fallerait | ok: faut
+Marie [voudrait] un thé, et moi un café. | ماری یک چای می‌خواست و من یک قهوه. | d: voudrais, voudraient, vouloirait | ok: voulait | hint: (vouloir)
+Est-ce que tu [pourrais] m'appeler{appeler} ce soir ? | می‌شود امشب به من زنگ بزنی؟ | d: pourrait, pourriez, pouvrais | ok: peux
+Vous [pourriez] répéter, s'il vous plaît ? | می‌شود لطفاً تکرار کنید؟ | d: pourrais, pourraient, pouvriez | ok: pouvez | hint: (pouvoir)
+Ce [serait] plus{plus} simple en voiture. | با ماشین ساده‌تر می‌شد. | d: serais, seraient, êtrait
+On [pourrait] se retrouver devant la gare ? | می‌شود جلوی ایستگاه همدیگر را ببینیم؟ | d: pourrais, pourraient, pouvrait | ok: peut | hint: (pouvoir)
+Il [faudrait] appeler le médecin. | باید به پزشک زنگ بزنیم. | d: faudrais, faudraient, fallerait | ok: faut
+J'[aimerais] parler avec le directeur. | دلم می‌خواهد با مدیر صحبت کنم. | d: aimerait, aimeriez, aimeraient | hint: (aimer)
+Tu [voudrais] un peu d'eau ? | کمی آب می‌خواهی؟ | d: voudrait, voudriez, vouloirais | ok: veux | hint: (vouloir)
+Ce [serait] dommage de rester à la maison. | حیف می‌شد در خانه بمانیم. | d: serais, seraient, êtrait
+Je [voudrais] un café et mon ami [voudrait] un thé. | من یک قهوه می‌خواستم و دوستم یک چای. | d: voudrait, voudrions, vouloirais / voudrais, voudraient, vouloirait | ok: voulais / voulait
+Tu [pourrais] m'aider ? Ce [serait] très gentil. | می‌شود کمکم کنی؟ خیلی لطف می‌کنی. | d: pourrait, pourriez, pouvrais / serais, seraient, êtrait | ok: peux
+On [pourrait] aller à la plage, ce [serait] bien ! | می‌توانیم به ساحل برویم، خوب می‌شد! | d: pourrais, pourraient, pouvrait / serais, seraient, êtrait | ok: peut
+J'[aimerais] partir en vacances, mais il [faudrait] trouver un hôtel. | دلم می‌خواهد به تعطیلات بروم، ولی باید یک هتل پیدا کنیم. | d: aimerait, aimerions, aimeriez / faudrais, faudraient, fallerait | ok: aimerais / faut
+[Pourriez]-vous m'aider ? Je [voudrais] acheter un billet. | می‌توانید کمکم کنید؟ می‌خواستم یک بلیت بخرم. | d: Pourrais, Pourrait, Pouvriez / voudrait, voudriez, vouloirais | ok: Pouvez / voulais
+Nous [voudrions] une table près de la fenêtre, ce [serait] possible ? | یک میز کنار پنجره می‌خواستیم، ممکن است؟ | d: voudriez, voudraient, vouloirions / serais, seriez, êtrait | ok: voulions
+Tu [aimerais] venir ? On [pourrait] manger ensemble. | دلت می‌خواهد بیایی؟ می‌توانیم با هم غذا بخوریم. | d: aimerait, aimeriez, aimerions / pourrais, pourriez, pouvrait | ok: voudrais, veux / peut
+Il [faudrait] partir tôt, vous [pourriez] être prêts à sept heures ? | باید زود راه بیفتیم، می‌شود ساعت هفت آماده باشید؟ | d: faudrais, faudraient, fallerait / pourrais, pourraient, pouvriez | ok: faut / pouvez
+transforms:
+Je veux un café. => Je voudrais un café. | جمله را مؤدبانه کن.
+Tu peux m'aider ? => Tu pourrais m'aider ? | جمله را مؤدبانه کن.
+Vous pouvez fermer la porte ? => Vous pourriez fermer la porte ? | جمله را مؤدبانه کن.
+Je veux visiter Paris. => J'aimerais visiter Paris. ; J'aimerais bien visiter Paris. | با aimer بگو «دلم می‌خواهد».
+On peut aller au cinéma. => On pourrait aller au cinéma. | پیشنهاد را مؤدبانه‌تر کن.
+C'est{être} bien. => Ce serait bien. | جمله را به «خوب می‌شد» تبدیل کن.
+Il faut partir. => Il faudrait partir. | جمله را نرم‌تر کن.
+Nous voulons une table pour deux. => Nous voudrions une table pour deux. | جمله را مؤدبانه کن.
+translations:
+یک قهوه می‌خواستم. => Je voudrais un café. ; J'aimerais un café. ; Je voulais un café.
+می‌شود کمکم کنید؟ => Vous pourriez m'aider ? ; Pourriez-vous m'aider ? ; Est-ce que vous pourriez m'aider ? ; Vous pouvez m'aider ? ; Pouvez-vous m'aider ? ; Est-ce que vous pouvez m'aider ?
+خوب می‌شد. => Ce serait bien. ; Ça serait bien.
+می‌خواستم یک اتاق رزرو کنم. => Je voudrais réserver une chambre. ; J'aimerais réserver une chambre. ; Je voulais réserver une chambre.
+می‌شود پنجره را ببندی؟ => Tu pourrais fermer la fenêtre ? ; Est-ce que tu pourrais fermer la fenêtre ? ; Pourrais-tu fermer la fenêtre ? ; Tu peux fermer la fenêtre ? ; Est-ce que tu peux fermer la fenêtre ? ; Peux-tu fermer la fenêtre ?
+نمی‌خواهم مزاحمتان بشوم. => Je ne voudrais pas vous déranger. ; Je ne veux pas vous déranger.
+لازم است نان بخریم. => Il faudrait acheter du pain. ; Il faut acheter du pain.
+ممکن است؟ => Ce serait possible ? ; Est-ce que ce{ce-pron} serait possible ? ; Ça serait possible ? ; C'est{être} possible ? ; Est-ce que c'est{être} possible ? ; Est-ce possible ?

@@ -1,0 +1,34 @@
+code: de-a2-d009
+title: دعوت دوست به مهمانی
+situation: به دوستت یوناس زنگ می‌زنی تا او را به جشن تولدت دعوت کنی.
+turns:
+B: Hallo, Sara! Wie geht's? | سلام سارا! چطوری؟
++ Gut, danke{danke}! Ich feiere am Samstag Geburtstag. Hast du Zeit? | خوبم، ممنون! شنبه تولدم را جشن می‌گیرم. وقت داری؟
+- Gut, danke{danke}! Ich feiere am Samstag Geburtstag. Haben Sie Zeit? | خوبم، ممنون! شنبه تولدم را جشن می‌گیرم. وقت دارید؟
+- Gut, danke{danke}! Am Samstag ich feiere Geburtstag. Hast du Zeit? | خوبم، ممنون! شنبه تولدم را جشن می‌گیرم. وقت داری؟
+why: با دوست du می‌گوییم: «Hast du Zeit?». وقتی am Samstag اول جمله است، فعل جای دوم می‌آید: «Am Samstag feiere ich».
+B: Am Samstag? Ja, ich glaube schon. Um wie viel Uhr? | شنبه؟ آره، فکر کنم. ساعت چند؟
+- Am Sonntag, bei mir zu Hause. | یکشنبه، خانه من.
++ Um sieben Uhr, bei mir zu Hause. | ساعت هفت، خانه من.
+- Um sieben Uhr, bei dich zu Hause. | ساعت هفت، خانه تو.
+why: ساعت را می‌گویی: «Um sieben Uhr». جشن شنبه است، نه یکشنبه، و بعد از bei شکل mir می‌آید؛ dich بعد از bei غلط است.
+B: Super! Kann ich etwas mitbringen? | عالی! چیزی بیاورم؟
+- Ja, gern! Mitbring{mitbringen} bitte{bitte} einen Salat. | آره، حتماً! لطفاً یک سالاد بیاور.
+- Ja, gern! Bring bitte{bitte} ein Salat mit. | آره، حتماً! لطفاً یک سالاد بیاور.
++ Ja, gern! Bring bitte{bitte} einen Salat mit. | آره، حتماً! لطفاً یک سالاد بیاور.
+why: mitbringen در امر هم جدا می‌شود: «Bring … mit». Salat مذکر است، پس «einen Salat».
+B: Gern! Kommt Anna auch? | حتماً! آنا هم می‌آید؟
++ Nein, sie kann leider nicht, weil sie krank ist. | نه، متأسفانه نمی‌تواند، چون مریض است.
+- Nein, sie kann leider nicht, weil sie ist krank. | نه، متأسفانه نمی‌تواند، چون مریض است.
+- Nein, er kann leider nicht, weil er krank ist. | نه، متأسفانه نمی‌تواند، چون مریض است.
+why: بعد از weil فعل آخر جمله می‌آید: «weil sie krank ist». آنا دختر است، پس sie، نه er.
+B: Oh, schade. Und wie ist deine Adresse noch mal? | آخ، حیف. آدرست دوباره چی بود؟
+- Ich weiß deine Adresse nicht. | آدرس تو را نمی‌دانم.
+- Ich schreibe dich eine Nachricht mit der Adresse. | یک پیام با آدرس برایت می‌نویسم.
++ Ich schreibe dir eine Nachricht mit der Adresse. | یک پیام با آدرس برایت می‌نویسم.
+why: «برای تو» اینجا dir است، نه dich: «Ich schreibe dir». یوناس آدرس تو را می‌پرسد، نه تو آدرس او را.
+B: Super, danke{danke}! Dann bis Samstag! | عالی، ممنون! پس تا شنبه!
+- Bis Samstag! Herzlichen Glückwunsch! | تا شنبه! تبریک می‌گویم!
++ Bis Samstag! Ich freue mich! | تا شنبه! خوشحالم!
+- Bis Samstag! Ich freue dich! | تا شنبه! تو را خوشحال می‌کنم!
+why: «Ich freue mich» یعنی خوشحالم؛ با ich ضمیر mich می‌آید، نه dich. تولد مال توست، پس تو به یوناس تبریک نمی‌گویی.

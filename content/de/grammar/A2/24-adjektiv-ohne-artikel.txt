@@ -1,0 +1,87 @@
+code: de-a2-adjektiv-ohne-artikel
+title: frischer Kaffee، kaltes Wasser: صفت بدون حرف تعریف
+scope: پایان صفت وقتی پیش از آن حرف تعریف نیست، در حالت فاعلی، مفعولی و Dativ (frischer Kaffee، kaltes Wasser، frische Milch، mit heißem Wasser)، بعد از عدد، viele، einige و ein paar در جمع (viele junge Leute)، و جمله‌های آماده (Guten Morgen، Schöne Grüße)؛ پایان صفت در Genitiv در سطح B1 می‌آید.
+can_do: حالا می‌توانی درباره غذا، نوشیدنی و چیزها بدون حرف تعریف حرف بزنی: «قهوه تازه»، «آب سرد»، «با شیر گرم»، «جوان‌های زیاد».
+rule: بدون حرف تعریف، صفت پایان der/die/das را خودش می‌گیرد: frischer Kaffee، frische Milch، frisches Brot، frische Brötchen؛ در Dativ: mit frischem Brot، mit frischer Milch، mit frischen Brötchen.
+mistake: صفت فارسی هیچ‌وقت عوض نمی‌شود، برای همین فارسی‌زبان‌ها صفت را بی‌پایان می‌گذارند یا همیشه -e می‌دهند: «Ich trinke kalt Wasser» و «frische Kaffee» غلط است؛ درست: kaltes Wasser، frischer Kaffee. بعد از viele هم «viele jungen Leute» غلط است؛ درست: viele junge Leute.
+lesson:
+در واحدهای قبل صفت بعد از der و ein آمد: der kalte Kaffee، ein kalter Kaffee.
+گاهی پیش از صفت هیچ حرف تعریفی نیست، مثلاً برای خوراکی‌ها، جمع‌ها و آگهی‌ها: Ich trinke kalten Kaffee. یعنی «قهوه سرد می‌نوشم».
+آن‌وقت خود صفت باید نشان بدهد اسم چه جنسی دارد و در چه حالتی است؛ پس آخر حرف تعریفی را می‌گیرد که آنجا نیامده: der ← kalter، den ← kalten، dem ← kaltem، das ← kaltes، die ← kalte.
+مثال: kalter Kaffee (der)، kalte Milch (die)، kaltes Wasser (das)، kalte Getränke (جمع).
+بعد از حرف اضافه Dativ هم همین‌طور: mit heißem Wasser (dem)، mit warmer Milch (der)، mit kleinen Kindern (den).
+بعد از عدد، viele، einige و ein paar هم صفت همین پایان را می‌گیرد: zwei kleine Kinder، viele junge Leute، einige gute Ideen.
+خیلی از جمله‌های آماده هم همین قاعده را دارند: Guten Morgen! Gute Nacht! Schönes Wochenende! Herzlichen Glückwunsch!
+table:
+حالت | مذکر | مؤنث | خنثی | جمع
+فاعلی | kalter Kaffee | kalte Milch | kaltes Wasser | kalte Getränke
+مفعولی | kalten Kaffee | kalte Milch | kaltes Wasser | kalte Getränke
+Dativ | mit kaltem Kaffee | mit kalter Milch | mit kaltem Wasser | mit kalten Getränken
+sets:
+-er / -en / -em (مذکر): frischer Kaffee, heißen Tee, mit frischem Käse
+-e / -er (مؤنث): frische Milch, mit warmer Milch, mit großer Freude
+-es / -em (خنثی): kaltes Wasser, frisches Brot, bei schönem Wetter
+examples:
+Frisches Brot schmeckt am besten. | نان تازه از همه خوشمزه‌تر است.
+Wir essen heute frischen Fisch. | امروز ماهی تازه می‌خوریم.
+Hamburg hat viele schöne Brücken. | هامبورگ پل‌های زیبای زیادی دارد.
+Ich koche Nudeln mit frischen Tomaten. | ماکارونی را با گوجه‌فرنگی تازه می‌پزم.
+targets:
+Ich trinke morgens [heißen] Tee. | صبح‌ها چای داغ می‌نوشم. | d: heißer, heißes, heißem | hint: (heiß) | full: Morgens trinke ich heißen Tee.
+[Frischer] Kaffee riecht gut. | قهوه تازه بوی خوبی دارد. | d: Frischen, Frisches, Frische | hint: (frisch)
+Ich trinke [kaltes] Wasser. | آب سرد می‌نوشم. | d: kalter, kalten, kaltem | hint: (kalt)
+Wir kaufen [frische] Milch im Supermarkt. | ما از سوپرمارکت شیر تازه می‌خریم. | d: frischer, frischen, frisches | hint: (frisch) | full: Im Supermarkt kaufen wir frische Milch.
+Hier gibt es [gutes] Brot. | اینجا نان خوب پیدا می‌شود. | d: guter, guten, gute | hint: (gut) | full: Es gibt hier gutes Brot.
+Ich esse gern [scharfes] Essen. | غذای تند دوست دارم. | d: scharfer, scharfen, scharfe | hint: (scharf)
+Wasch die Tasse mit [heißem] Wasser! | فنجان را با آب داغ بشوی! | d: heißes, heißen, heißer | hint: (heiß)
+Ich trinke Tee mit [warmer] Milch. | چای را با شیر گرم می‌نوشم. | d: warme, warmem, warmen | hint: (warm)
+Ich esse Reis mit [frischem] Gemüse. | برنج را با سبزیجات تازه می‌خورم. | d: frisches, frischen, frischer | hint: (frisch)
+[Schöne] Grüße aus Wien! | سلام گرم از وین! | d: Schönen, Schöner, Schönes
+In der Stadt gibt es viele [junge] Leute. | در شهر جوان‌های زیادی هست. | d: jungen, junger, jungem | hint: (jung) | full: Es gibt viele junge Leute in der Stadt.
+Ich habe einige [gute] Ideen. | چند ایده خوب دارم. | d: guten, guter, gutes
+Anna hat zwei [kleine] Kinder. | آنا دو بچه کوچک دارد. | d: kleinen, kleiner, kleines | hint: (klein)
+Wir haben ein paar [nette] Nachbarn. | ما چند همسایه مهربان داریم. | d: netten, netter, nettes
+Er spielt gern mit [kleinen] Kindern. | او دوست دارد با بچه‌های کوچک بازی کند. | d: kleine, kleiner, kleinem
+Das ist [deutsches] Brot. | این نان آلمانی است. | d: deutscher, deutschen, deutsche | hint: (deutsch)
+Ich suche [billige] Schuhe. | دنبال کفش ارزان می‌گردم. | d: billigen, billiger, billiges
+Hast du [frisches] Obst? | میوه تازه داری؟ | d: frischer, frischen, frische
+[Gutes] Essen ist mir wichtig. | غذای خوب برایم مهم است. | d: Guter, Guten, Gute | hint: (gut)
+Im Sommer trinke ich gern [kalten] Saft. | تابستان‌ها آب‌میوه سرد دوست دارم. | d: kalter, kaltes, kalte | full: Ich trinke im Sommer gern kalten Saft.
+[Heißer] Tee mit Honig ist gut für den Hals. | چای داغ با عسل برای گلو خوب است. | d: Heißen, Heißes, Heiße | hint: (heiß)
+Hier gibt es [günstige] Fahrräder. | اینجا دوچرخه ارزان هست. | d: günstigen, günstiger, günstiges | full: Es gibt hier günstige Fahrräder.
+Sie hat [lange] Haare. | او موی بلند دارد. | d: langen, langer, langes | hint: (lang)
+Er hat [blaue] Augen. | او چشم‌های آبی دارد. | d: blauen, blauer, blaues
+Magst du [starken] Kaffee? | قهوه غلیظ دوست داری؟ | d: starker, starkes, starke | hint: (stark)
+Ich wünsche dir [schöne] Ferien! | تعطیلات خوبی داشته باشی! | d: schönen, schöner, schönes
+Wir sprechen mit [deutschen] Studenten. | ما با دانشجوهای آلمانی صحبت می‌کنیم. | d: deutsche, deutscher, deutschem | hint: (deutsch)
+Ich habe deine E-Mail mit [großer] Freude gelesen. | ایمیلت را با خوشحالی زیاد خواندم. | d: große, großen, großem | hint: (groß) | full: Mit großer Freude habe ich deine E-Mail gelesen.
+Bei [hohem] Fieber musst du zum Arzt gehen. | با تب بالا باید پیش دکتر بروی. | d: hochem, hohes, hoher | hint: (hoch) | full: Du musst bei hohem Fieber zum Arzt gehen.
+Das Restaurant hat [vegetarisches] Essen. | این رستوران غذای گیاهی دارد. | d: vegetarischer, vegetarischen, vegetarische
+In [alten] Häusern ist es oft kalt. | در خانه‌های قدیمی اغلب سرد است. | d: alte, alter, altem | hint: (alt) | full: Es ist in alten Häusern oft kalt.
+Gibt es hier [gute] Restaurants? | اینجا رستوران‌های خوب هست؟ | d: guten, guter, gutes
+Möchtest du [schwarzen] Tee oder [grünen] Tee? | چای سیاه می‌خواهی یا چای سبز؟ | d: schwarzer, schwarzes, schwarze / grüner, grünes, grüne
+Zum Frühstück esse ich [frisches] Brot mit [weichem] Käse. | برای صبحانه نان تازه با پنیر نرم می‌خورم. | d: frischer, frischen, frische / weichen, weicher, weiches | full: Ich esse zum Frühstück frisches Brot mit weichem Käse.
+Bei [gutem] Wetter fahren wir Fahrrad, bei [schlechtem] Wetter lesen wir. | وقتی هوا خوب است دوچرخه‌سواری می‌کنیم و وقتی بد است کتاب می‌خوانیم. | d: gutes, guter, guten / schlechtes, schlechter, schlechten
+Ich trinke [starken] Kaffee mit [heißer] Milch. | قهوه غلیظ را با شیر داغ می‌نوشم. | d: starker, starkes, starke / heiße, heißen, heißem
+Auf dem Markt gibt es [frisches] Obst und [billige] Tomaten. | در بازار میوه تازه و گوجه‌فرنگی ارزان هست. | d: frischer, frischen, frische / billigen, billiger, billiges | full: Es gibt auf dem Markt frisches Obst und billige Tomaten.
+Wir suchen eine Wohnung mit [großem] Balkon und [hellen] Zimmern. | دنبال یک آپارتمان با بالکن بزرگ و اتاق‌های روشن هستیم. | d: großer, großen, großes / helle, heller, hellem
+Im Café gibt es [kalte] Getränke und [warmes] Essen. | در کافه نوشیدنی سرد و غذای گرم هست. | d: kalten, kalter, kaltes / warmer, warmen, warme | full: Es gibt im Café kalte Getränke und warmes Essen.
+Ich habe zwei [neue] Hosen und ein paar [schöne] Hemden gekauft. | دو شلوار نو و چند پیراهن قشنگ خریدم. | d: neuen, neuer, neues / schönen, schöner, schönes
+transforms:
+Der Kaffee ist frisch. => Das ist frischer Kaffee. | صفت را پیش از اسم بگذار: «Das ist … Kaffee».
+Die Milch ist kalt. => Das ist kalte Milch. | صفت را پیش از اسم بگذار: «Das ist … Milch».
+Das Brot ist frisch. => Das ist frisches Brot. | صفت را پیش از اسم بگذار: «Das ist … Brot».
+Ich trinke den heißen Tee. => Ich trinke heißen Tee. | حرف تعریف den را بردار.
+Ich esse das frische Obst. => Ich esse frisches Obst. | حرف تعریف das را بردار.
+Ich spiele mit dem kleinen Kind. => Ich spiele mit kleinen Kindern. | Kind را جمع کن و حرف تعریف را بردار.
+Die Leute sind jung. => Das sind junge Leute. | صفت را پیش از اسم بگذار: «Das sind … Leute».
+Ich trinke Tee mit der warmen Milch. => Ich trinke Tee mit warmer Milch. | حرف تعریف der را بردار.
+translations:
+آب سرد می‌خواهم. => Ich möchte kaltes Wasser. ; Ich will kaltes Wasser. ; Ich hätte gern kaltes Wasser. ; Ich hätte gerne kaltes Wasser.
+قهوه تازه داری؟ => Hast du frischen Kaffee?
+نان تازه می‌خرم. => Ich kaufe frisches Brot.
+در برلین جوان‌های زیادی زندگی می‌کنند. => In Berlin wohnen viele junge Leute. ; Viele junge Leute wohnen in Berlin. ; In Berlin leben viele junge Leute. ; Viele junge Leute leben in Berlin.
+چای را با شیر گرم می‌نوشم. => Ich trinke Tee mit warmer Milch. ; Ich trinke den Tee mit warmer Milch.
+او دو بچه کوچک دارد. => Er hat zwei kleine Kinder. ; Sie hat zwei kleine Kinder.
+غذای تند دوست ندارم. => Ich mag kein scharfes Essen. ; Ich esse nicht gern scharfes Essen. ; Ich mag scharfes Essen nicht. ; Ich esse scharfes Essen nicht gern. ; Ich esse nicht gerne scharfes Essen. ; Ich esse scharfes Essen nicht gerne.
+قهوه سیاه می‌نوشم. => Ich trinke schwarzen Kaffee.

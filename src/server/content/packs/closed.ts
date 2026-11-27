@@ -148,5 +148,5 @@ export const ELIDED = new Set(["l", "j", "m", "t", "s", "n", "c", "d", "qu", "ju
 export const SEPARABLE = [
   "ab", "an", "auf", "aus", "bei", "dabei", "dar", "durch", "ein", "entgegen", "fern", "fest", "fort", "her", "heraus", "herein", "herum", "herunter",
   "hin", "hinaus", "hinein", "hinunter", "kennen", "los", "mit", "nach", "nieder", "spazieren", "statt", "teil", "um", "vor", "voran", "vorbei",
-  "weg", "weiter", "wieder", "zu", "zurecht", "zurück", "zusammen", "bekannt", "frei", "gut", "schief", "sitzen", "stehen", "verloren"
+  "weg", "weiter", "wieder", "zu", "zurecht", "zurück", "zusammen", "bekannt", "frei", "gut", "schief", "sitzen", "stehen", "verloren", "weh", "leid"
 ];

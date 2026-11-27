@@ -1,0 +1,86 @@
+code: de-a2-perfekt-praeteritum
+title: Perfekt یا Präteritum؟ Ich habe gegessen، ich war müde
+scope: کدام گذشته کجا می‌آید: در گفتگو برای بیشتر فعل‌ها Perfekt (Ich habe Pizza gegessen)، ولی sein، haben، فعل‌های وجهی و es gab در گفتگو هم Präteritum‌اند (Ich war müde. Ich hatte keine Zeit. Ich musste arbeiten. Es gab keinen Bus.)؛ در داستان و متن نوشتاری Präteritum؛ و گفتن یک جمله به هر دو شکل.
+can_do: حالا می‌توانی در گفتگو طبیعی از گذشته‌ات حرف بزنی («Ich habe lange gearbeitet und war sehr müde») و داستان کوتاهی را با Präteritum بنویسی.
+rule: در گفتگو بیشتر فعل‌ها Perfekt‌اند: Ich habe Pizza gegessen. ولی sein، haben، فعل‌های وجهی و es gibt در گفتگو هم Präteritum‌اند: Ich war müde. Ich hatte keine Zeit. Ich musste arbeiten. Es gab keinen Bus. در داستان و متن نوشتاری همه فعل‌ها Präteritum‌اند.
+mistake: فارسی برای حرف زدن یک گذشته ساده دارد (رفتم، خوردم)، برای همین فارسی‌زبان‌ها در گفتگو برای همه فعل‌ها Präteritum می‌گویند («Gestern aß ich Pizza») که کتابی و عجیب است، یا شکل Präteritum را جای Partizip می‌گذارند: «Ich habe Pizza aß» غلط است؛ درست: Ich habe Pizza gegessen.
+lesson:
+آلمانی دو گذشته دارد: Perfekt (Ich habe gegessen) و Präteritum (Ich aß). معنی‌شان یکی است؛ فرقشان در جایی است که به کار می‌روند.
+در گفتگو، پیام و ایمیل دوستانه بیشتر فعل‌ها را با Perfekt می‌گویند: Gestern habe ich Pizza gegessen. Wir sind nach Hamburg gefahren.
+ولی sein و haben را در گفتگو هم Präteritum می‌گویند: Ich war müde. Ich hatte keine Zeit.
+فعل‌های وجهی و es gab هم همین‌طورند: Ich musste arbeiten. Ich konnte nicht kommen. Es gab keinen Bus.
+در داستان، کتاب و خبر همه فعل‌ها Präteritum‌اند: Am Morgen stand Max auf, trank einen Kaffee und fuhr zur Arbeit.
+پس یک جمله را می‌شود دو جور گفت: Ich habe den Film gesehen. (در گفتگو) Ich sah den Film. (در داستان)
+شکل Präteritum را جای Partizip نگذار: Ich habe gegessen، نه «Ich habe aß».
+table:
+فعل | در گفتگو | در داستان
+essen | Ich habe gegessen. | Ich aß.
+fahren | Wir sind gefahren. | Wir fuhren.
+sein | Ich war müde. | Ich war müde.
+haben | Ich hatte Zeit. | Ich hatte Zeit.
+müssen | Ich musste arbeiten. | Ich musste arbeiten.
+es gibt | Es gab keinen Bus. | Es gab keinen Bus.
+examples:
+Gestern habe ich lange gearbeitet. Ich war sehr müde. | دیروز تا دیروقت کار کردم. خیلی خسته بودم.
+Ich konnte nicht kommen, ich hatte keine Zeit. | نتوانستم بیایم، وقت نداشتم.
+Am Morgen trank Max einen Kaffee und fuhr zur Arbeit. | صبح ماکس یک قهوه نوشید و سر کار رفت.
+Ich habe dich angerufen, aber du warst nicht zu Hause. | به تو زنگ زدم، ولی خانه نبودی.
+targets:
+Ich habe gestern einen Film [gesehen]. | دیروز یک فیلم دیدم. | d: sah, gesahen, sehen | hint: (sehen) | full: Gestern habe ich einen Film gesehen.
+Was hast du am Wochenende [gemacht]? | آخر هفته چه کار کردی؟ | d: machte, gemachen, machst
+Wir haben im Restaurant Fisch [gegessen]. | ما در رستوران ماهی خوردیم. | d: aßen, gegesst, essen | hint: (essen) | full: Im Restaurant haben wir Fisch gegessen.
+Hast du das Buch [gelesen]? | کتاب را خواندی؟ | d: last, gelest, lesen | hint: (lesen)
+Ich bin mit dem Zug nach Köln [gefahren]. | با قطار به کلن رفتم. | d: fuhr, gefahrt, fahren | hint: (fahren) | full: Mit dem Zug bin ich nach Köln gefahren.
+Heute bin ich um sechs Uhr [aufgestanden]. | امروز ساعت شش بیدار شدم. | d: stand auf, aufgestehen, aufstand | hint: (aufstehen) | full: Ich bin heute um sechs Uhr aufgestanden.
+Lena hat mich gestern [angerufen]. | لنا دیروز به من زنگ زد. | d: rief an, angeruft, anrief | hint: (anrufen) | full: Gestern hat mich Lena angerufen. ; Gestern hat Lena mich angerufen.
+Ich habe eine E-Mail von Max [bekommen]. | از ماکس یک ایمیل گرفتم. | d: bekam, gebekommen, bekommt
+Wir haben unsere Freunde im Park [getroffen]. | دوستانمان را در پارک دیدیم. | d: trafen, getrefft, treffen | hint: (treffen) | full: Im Park haben wir unsere Freunde getroffen.
+Ich habe im Urlaub viel [fotografiert]. | در تعطیلات زیاد عکس گرفتم. | d: fotografierte, gefotografiert, fotografieren | full: Im Urlaub habe ich viel fotografiert.
+Paul ist am Wochenende zu Hause [geblieben]. | پاول آخر هفته در خانه ماند. | d: blieb, gebleibt, bleiben | hint: (bleiben) | full: Am Wochenende ist Paul zu Hause geblieben.
+Gestern [war] ich sehr müde. | دیروز خیلی خسته بودم. | d: warst, waren, gewesen | hint: (sein) | full: Ich war gestern sehr müde.
+[Wart] ihr am Samstag auf der Party? | شنبه در مهمانی بودید؟ | d: Waren, Warst, Gewesen | hint: (sein)
+Ich [hatte] gestern keine Zeit. | دیروز وقت نداشتم. | d: hattest, hatten, gehabt | hint: (haben) | full: Gestern hatte ich keine Zeit.
+[Hattest] du am Wochenende Besuch? | آخر هفته مهمان داشتی؟ | d: Hatte, Hattet, Gehabt
+Ich [musste] am Samstag arbeiten. | شنبه مجبور بودم کار کنم. | d: musstet, mussten, gemusst | hint: (müssen) | full: Am Samstag musste ich arbeiten.
+Leider [konnte] ich nicht kommen. | متأسفانه نتوانستم بیایم. | d: konnten, konntest, gekonnt | full: Ich konnte leider nicht kommen.
+Wir [wollten] Fußball spielen, aber es hat geregnet. | می‌خواستیم فوتبال بازی کنیم، ولی باران آمد. | d: wollte, wolltet, gewollt | hint: (wollen)
+Im Hotel [gab] es kein Frühstück. | در هتل صبحانه نبود. | d: gaben, gegeben, gabst | hint: (es gibt) | full: Es gab im Hotel kein Frühstück.
+Am Abend [durften] die Kinder lange fernsehen. | عصر بچه‌ها اجازه داشتند مدت زیادی تلویزیون ببینند. | d: durfte, durftet, gedurft | full: Die Kinder durften am Abend lange fernsehen.
+Gestern [hat] es den ganzen{ganz} Tag geregnet. | دیروز تمام روز باران آمد. | d: ist, sind, bist | full: Es hat gestern den ganzen Tag geregnet.
+Das Konzert [war] super. | کنسرت عالی بود. | d: wart, waren, gewesen
+Im Urlaub [hatten] wir ein schönes Hotel. | در تعطیلات یک هتل قشنگ داشتیم. | d: hattet, hatte, gehabt | full: Wir hatten im Urlaub ein schönes Hotel.
+[Konntest] du gestern gut schlafen? | دیروز توانستی خوب بخوابی؟ | d: Konnte, Konntet, Gekonnt | hint: (können)
+Wir [sind] am Samstag nach Berlin gefahren. | ما شنبه به برلین رفتیم. | d: haben, seid, habt | full: Am Samstag sind wir nach Berlin gefahren.
+[Hast] du gut geschlafen? | خوب خوابیدی؟ | d: Bist, Hat, Habt | hint: (haben)
+Max [ist] gestern spät nach Hause gekommen. | ماکس دیروز دیر به خانه آمد. | d: hat, bist, sind | hint: (sein) | full: Gestern ist Max spät nach Hause gekommen.
+Was [habt] ihr gestern gegessen? | دیروز چه خوردید؟ | d: seid, hat, haben
+Max stand früh auf. Dann [trank] er einen Kaffee. | ماکس زود بیدار شد. بعد یک قهوه نوشید. | d: getrunken, trinkte, tranken | hint: (trinken)
+Es regnete, und die Kinder [blieben] zu Hause. | باران می‌آمد و بچه‌ها در خانه ماندند. | d: geblieben, bleibten, blieb
+Anna öffnete die Tür und [sah] einen kleinen Hund. | آنا در را باز کرد و یک سگ کوچک دید. | d: gesehen, sehte, sahen | hint: (sehen)
+Der Mann lief zum Bahnhof, aber der Zug [fuhr] gerade ab. | مرد به طرف ایستگاه قطار دوید، ولی قطار داشت حرکت می‌کرد. | d: gefahren, fahrte, fuhren
+Ich [war] krank, deshalb [habe] ich zu Hause geschlafen. | مریض بودم، برای همین در خانه خوابیدم. | d: warst, waren, gewesen / bin, hat, hast
+Wir [hatten] keine Zeit, deshalb [sind] wir mit dem Taxi gefahren. | وقت نداشتیم، برای همین با تاکسی رفتیم. | d: hattet, hattest, gehabt / haben, seid, habt
+Ich [musste] lange warten, und der Bus [ist] nicht gekommen. | مجبور شدم مدت زیادی صبر کنم و اتوبوس نیامد. | d: musstet, mussten, gemusst / hat, bin, sind
+Es [gab] keinen Bus, deshalb bin ich zu Fuß [gegangen]. | اتوبوس نبود، برای همین پیاده رفتم. | d: gaben, gegeben, gabst / ging, gegeht, gehen
+[Warst] du gestern im Kurs? – Nein, ich [hatte] Fieber. | دیروز سر کلاس بودی؟ – نه، تب داشتم. | d: War, Wart, Waren / hattest, hatten, gehabt
+Am Wochenende [habe] ich viel gelesen und [war] oft im Park. | آخر هفته زیاد کتاب خواندم و اغلب در پارک بودم. | d: bin, hat, hast / warst, waren, gewesen
+Max [kam] nach Hause und [machte] das Fenster auf. | ماکس به خانه آمد و پنجره را باز کرد. | d: gekommen, kommte, kamen / gemacht, aufmachte, machten
+Gestern [habe] ich Lena [getroffen]. | دیروز لنا را دیدم. | d: bin, hat, hast / traf, getrefft, treffen | full: Ich habe gestern Lena getroffen. ; Ich habe Lena gestern getroffen.
+transforms:
+Ich sah den Film. => Ich habe den Film gesehen. | جمله را برای گفتگو بنویس (Perfekt).
+Wir fuhren nach Berlin. => Wir sind nach Berlin gefahren. | جمله را برای گفتگو بنویس (Perfekt).
+Er trank einen Kaffee. => Er hat einen Kaffee getrunken. | جمله را برای گفتگو بنویس (Perfekt).
+Ich habe Pizza gegessen. => Ich aß Pizza. | جمله را برای داستان بنویس (Präteritum).
+Sie ist früh aufgestanden. => Sie stand früh auf. | جمله را برای داستان بنویس (Präteritum).
+Ich bin müde gewesen. => Ich war müde. | جمله را طبیعی‌تر بگو: با Präteritum.
+Es hat keinen Bus gegeben. => Es gab keinen Bus. | جمله را طبیعی‌تر بگو: با Präteritum.
+Ich habe keine Zeit gehabt. => Ich hatte keine Zeit. | جمله را طبیعی‌تر بگو: با Präteritum.
+translations:
+دیروز خیلی خسته بودم. (در گفتگو) => Gestern war ich sehr müde. ; Ich war gestern sehr müde. ; Gestern bin ich sehr müde gewesen. ; Ich bin gestern sehr müde gewesen.
+دیروز پیتزا خوردم. (در گفتگو) => Gestern habe ich Pizza gegessen. ; Ich habe gestern Pizza gegessen. ; Gestern habe ich eine Pizza gegessen. ; Ich habe gestern eine Pizza gegessen.
+وقت نداشتی؟ (در گفتگو) => Hattest du keine Zeit? ; Hast du keine Zeit gehabt?
+مجبور بودم کار کنم. (در گفتگو) => Ich musste arbeiten. ; Ich habe arbeiten müssen.
+در هتل رستوران نبود. (در گفتگو) => Im Hotel gab es kein Restaurant. ; Es gab im Hotel kein Restaurant. ; Im Hotel hat es kein Restaurant gegeben. ; Es hat im Hotel kein Restaurant gegeben.
+ما با ماشین به هامبورگ رفتیم. (در گفتگو) => Wir sind mit dem Auto nach Hamburg gefahren. ; Mit dem Auto sind wir nach Hamburg gefahren.
+ماکس زود بیدار شد. (در داستان، با Präteritum) => Max stand früh auf.
+او به خانه آمد و تلویزیون دید. (در داستان، با Präteritum) => Er kam nach Hause und sah fern. ; Sie kam nach Hause und sah fern.

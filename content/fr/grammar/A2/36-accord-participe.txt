@@ -1,0 +1,88 @@
+code: fr-a2-accord-participe
+title: جور شدن اسم مفعول با مفعول: je l'ai prise، je les ai trouvées
+scope: جور شدن اسم مفعول با مفعولِ مستقیمی که پیش از avoir آمده، فقط با la، l' و les (La photo ? Je l'ai prise. Les clés ? Je les ai trouvées.)، هم جاهایی که تغییر شنیده می‌شود (prise، mise، faite، écrite، dite، ouverte) و هم جاهایی که فقط نوشته می‌شود (trouvée، vus)، و بی‌تغییر ماندن اسم مفعول با lui و leur؛ جور شدن بعد از que (la robe que j'ai achetée) در B1 می‌آید.
+can_do: حالا می‌توانی دربارهٔ چیزها و آدم‌هایی که اسمشان آمده با ضمیر در گذشته حرف بزنی و اسم مفعول را درست بنویسی: La photo ? Je l'ai prise. Les clés ? Je les ai trouvées.
+rule: با avoir، اگر la، l' یا les پیش از avoir بیاید، اسم مفعول با اسمی که این ضمیر جایش نشسته جور می‌شود: مؤنث + e، جمع + s (je l'ai prise، je les ai trouvées)؛ با lui و leur تغییری نیست (je lui ai parlé).
+mistake: در فارسی فعل هیچ‌وقت با مفعول جور نمی‌شود («آن را گرفتم») و فارسی‌زبان‌ها یاد گرفته‌اند که با avoir اسم مفعول ثابت است، برای همین می‌نویسند «La photo ? Je l'ai pris.»؛ درست: Je l'ai prise. با lui هم نباید جور کرد: «Je lui ai parlée» غلط است؛ درست: Je lui ai parlé.
+lesson:
+در passé composé با avoir، اسم مفعول معمولاً عوض نمی‌شود: J'ai pris la photo. J'ai trouvé les clés.
+ولی اگر مفعول مستقیم (همان چیزی که در فارسی «را» می‌گیرد) پیش از avoir بیاید، اسم مفعول مثل صفت با آن جور می‌شود: مؤنث + e، جمع + s.
+در این سطح این فقط با ضمیرهای la، l' و les پیش می‌آید: La photo ? Je l'ai prise. Les clés ? Je les ai trouvées.
+l' اگر جای اسم مذکر نشسته باشد، چیزی اضافه نمی‌شود: Le livre ? Je l'ai lu. اگر جای اسم مؤنث نشسته باشد، e می‌گیرد: La lettre ? Je l'ai lue.
+در بعضی فعل‌ها این تغییر شنیده هم می‌شود، چون حرف آخر خوانده می‌شود: pris → prise، mis → mise، fait → faite، écrit → écrite، dit → dite، ouvert → ouverte. در بقیه فقط در نوشتن پیداست: trouvé → trouvée، vu → vus.
+با lui و leur («به او»، «به آن‌ها») جور شدن نیست، چون مفعول مستقیم نیستند: Marie ? Je lui ai parlé.
+فارسی چنین چیزی ندارد؛ پیش از نوشتن اسم مفعول از خودت بپرس: «ضمیرِ پیش از avoir جای کدام اسم نشسته و آن اسم مؤنث است یا جمع؟»
+table:
+پیش از avoir | اسم مفعول | مثال
+le، l' (مذکر) | بدون تغییر | Le livre ? Je l'ai lu.
+la، l' (مؤنث) | + e | La lettre ? Je l'ai écrite.
+les (مذکر) | + s | Les gâteaux ? Je les ai faits.
+les (مؤنث) | + es | Les clés ? Je les ai trouvées.
+lui، leur | بدون تغییر | Marie ? Je lui ai parlé.
+sets:
+شنیده می‌شود: prise, mise, faite, écrite, dite, ouverte, apprise, comprise
+فقط نوشته می‌شود: trouvée, achetée, vue, lue, perdue, finie, choisie
+examples:
+La pomme ? Je l'ai mangée. | سیب؟ خوردمش.
+Les fenêtres ? Je les ai ouvertes. | پنجره‌ها؟ بازشان کردم.
+Le livre ? Je l'ai lu. | کتاب؟ خواندمش.
+Marie ? Je lui ai parlé. | ماری؟ با او حرف زدم.
+targets:
+La photo ? Je l'ai [prise] hier. | عکس؟ دیروز گرفتمش. | d: pris, prises, prendue | hint: (prendre)
+Les clés ? Je les ai [trouvées] sous le lit. | کلیدها؟ زیر تخت پیدایشان کردم. | d: trouvé, trouvés, trouver | hint: (trouver)
+Cette lettre, tu l'as [écrite] ? | این نامه را تو نوشتی؟ | d: écrit, écrites, écrivée | hint: (écrire)
+Ma valise ? Je l'ai [mise] dans la voiture. | چمدانم؟ گذاشتمش توی ماشین. | d: mis, mises, mettue | hint: (mettre)
+Ces chansons, nous les avons [apprises] à l'école. | این آهنگ‌ها را در مدرسه یاد گرفتیم. | d: appris, apprise, apprendues
+Tes livres ? Je les ai [lus] pendant les vacances. | کتاب‌هایت؟ در تعطیلات خواندمشان. | d: lu, lues, lisés | hint: (lire)
+Le film ? Je l'ai [vu] deux fois. | فیلم؟ دو بار دیدمش. | d: vue, vus, voyé
+La porte ? Je ne l'ai pas [ouverte]{ouvrir}. | در؟ من بازش نکردم. | d: ouvert, ouvertes, ouvrie | hint: (ouvrir)
+La vaisselle ? Je l'ai déjà [faite]. | ظرف‌ها؟ قبلاً شستمشان. | d: fait, faites, faisée
+Tes chaussures ? Je les ai [mises] dans ta chambre. | کفش‌هایت؟ گذاشتمشان در اتاقت. | d: mis, mise, mettues | hint: (mettre)
+Marie ? Je l'ai [vue] au marché. | ماری؟ در بازار دیدمش. | d: vu, vues, voyée
+Les enfants ? Je les ai [vus] au parc. | بچه‌ها؟ در پارک دیدمشان. | d: vu, vue, voyés | hint: (voir)
+Ta chambre, tu l'as [rangée] ? | اتاقت را مرتب کردی؟ | d: rangé, rangées, ranger
+Ces pommes, je les ai [achetées] au marché. | این سیب‌ها را از بازار خریدم. | d: acheté, achetés, acheter | hint: (acheter)
+La réponse ? Je ne l'ai pas [comprise]. | جواب؟ نفهمیدمش. | d: compris, comprises, comprendue
+Ta sœur, tu l'as [invitée] ? | خواهرت را دعوت کردی؟ | d: invité, invités, inviter | hint: (inviter)
+La fenêtre, qui l'a [ouverte] ? | پنجره را کی باز کرده؟ | d: ouvert, ouverts, ouvrie
+Ces fleurs, Paul les a [achetées] pour sa mère. | این گل‌ها را پل برای مادرش خرید. | d: acheté, achetés, achetée
+Les photos ? Elle les a [prises] avec son portable. | عکس‌ها؟ با گوشی‌اش گرفتشان. | d: pris, prise, prendues | hint: (prendre)
+La voiture, tu l'as [lavée] ? | ماشین را شستی؟ | d: lavé, lavées, laver
+Mes lunettes ? Je les ai [perdues]. | عینکم؟ گمش کردم. | d: perdu, perdus, perdées | hint: (perdre)
+Cette chanson, je l'ai [entendue] à la radio. | این آهنگ را از رادیو شنیدم. | d: entendu, entendues, entendée
+La vérité ? Il ne l'a pas [dite]. | حقیقت را؟ آن را نگفت. | d: dit, dites, disée | hint: (dire)
+Le gâteau ? Nous l'avons [mangé]. | کیک؟ خوردیمش. | d: mangée, mangés, manger
+Marie ? Je lui ai [téléphoné] hier. | ماری؟ دیروز به او تلفن زدم. | d: téléphonée, téléphonés, téléphoner | hint: (téléphoner)
+Mes parents ? Je leur ai [écrit] une lettre. | پدر و مادرم؟ برایشان نامه نوشتم. | d: écrits, écrite, écrivé
+Les devoirs, tu les as [finis] ? | تکلیف‌ها را تمام کردی؟ | d: fini, finies, finés | hint: (finir)
+Les exercices ? Je les ai [faits] hier soir. | تمرین‌ها؟ دیشب حلشان کردم. | d: fait, faites, faisés
+Cette robe ? Je l'ai [choisie] pour la fête. | این پیراهن؟ برای جشن انتخابش کردم. | d: choisi, choisies, choisée | hint: (choisir)
+Tes amies, tu les as [attendues] longtemps ? | خیلی منتظر دوستانت ماندی؟ | d: attendu, attendus, attendées
+Ces cartes postales, je les ai [envoyées] ce matin. | این کارت‌پستال‌ها را امروز صبح فرستادم. | d: envoyé, envoyés, envoyer | hint: (envoyer)
+La leçon ? Tu l'as [apprise] ? | درس را یاد گرفتی؟ | d: appris, apprises, apprendue
+La lettre ? Je l'ai [écrite] et je l'ai [mise] à la poste. | نامه؟ نوشتمش و پستش کردم. | d: écrit, écrites, écrivée / mis, mises, mettue
+Les photos ? Je les ai [prises] et je les ai [envoyées] à Léa. | عکس‌ها؟ گرفتمشان و برای لئا فرستادمشان. | d: pris, prise, prendues / envoyé, envoyés, envoyer
+Le pain ? Je l'ai [acheté], mais la salade, je l'ai [oubliée] ! | نان را خریدم، ولی سالاد را فراموش کردم! | d: achetée, achetés, acheter / oublié, oubliés, oublier
+La voiture ? Paul l'a [réparée] et il l'a [lavée]. | ماشین؟ پل تعمیرش کرد و شستش. | d: réparé, réparées, réparer / lavé, lavés, laver
+Tes clés ? Je les ai [cherchées], mais je ne les ai pas [trouvées]. | کلیدهایت؟ دنبالشان گشتم، ولی پیدایشان نکردم. | d: cherché, cherchés, chercher / trouvé, trouvés, trouver
+Ma sœur ? Je l'ai [vue] hier et je lui ai [parlé]. | خواهرم؟ دیروز دیدمش و با او حرف زدم. | d: vu, vues, voyée / parlée, parlés, parler
+Les devoirs ? Je les ai [faits], mais je ne les ai pas [compris]. | تکلیف‌ها؟ انجامشان دادم، ولی نفهمیدمشان. | d: fait, faites, faisés / comprise, comprises, comprendus
+Cette maison ? Mes parents l'ont [achetée], puis ils l'ont [vendue]. | این خانه؟ پدر و مادرم خریدندش و بعد فروختندش. | d: acheté, achetées, acheter / vendu, vendues, vendée
+transforms:
+J'ai pris la photo. => Je l'ai prise. | مفعول را با ضمیر عوض کن.
+J'ai trouvé les clés. => Je les ai trouvées. | مفعول را با ضمیر عوض کن.
+Tu as écrit la lettre ? => Tu l'as écrite ? | مفعول را با ضمیر عوض کن.
+Nous avons vu le film. => Nous l'avons vu. | مفعول را با ضمیر عوض کن.
+Elle a fait la vaisselle. => Elle l'a faite. | مفعول را با ضمیر عوض کن.
+J'ai acheté les chaussures. => Je les ai achetées. | مفعول را با ضمیر عوض کن.
+Il a mis la valise dans la voiture. => Il l'a mise dans la voiture. | مفعول را با ضمیر عوض کن.
+J'ai téléphoné à Marie. => Je lui ai téléphoné. | به‌جای «à Marie» ضمیر بگذار.
+translations:
+عکس را گرفتی؟ بله، گرفتمش. => Tu as pris la photo ? Oui, je l'ai prise. ; Est-ce que tu as pris la photo ? Oui, je l'ai prise. ; As-tu{tu} pris la photo ? Oui, je l'ai prise.
+کلیدها را پیدا کردی؟ نه، پیدایشان نکردم. => Tu as trouvé les clés ? Non, je ne les ai pas trouvées. ; Est-ce que tu as trouvé les clés ? Non, je ne les ai pas trouvées. ; As-tu{tu} trouvé les clés ? Non, je ne les ai pas trouvées.
+نامه را نوشتی؟ بله، نوشتمش. => Tu as écrit la lettre ? Oui, je l'ai écrite. ; Est-ce que tu as écrit la lettre ? Oui, je l'ai écrite. ; As-tu{tu} écrit la lettre ? Oui, je l'ai écrite.
+فیلم را دیدی؟ بله، دیدمش. => Tu as vu le film ? Oui, je l'ai vu. ; Est-ce que tu as vu le film ? Oui, je l'ai vu. ; As-tu{tu} vu le film ? Oui, je l'ai vu.
+ماری را دیدی؟ بله، دیروز دیدمش. => Tu as vu Marie ? Oui, je l'ai vue hier. ; Est-ce que tu as vu Marie ? Oui, je l'ai vue hier. ; As-tu{tu} vu Marie ? Oui, je l'ai vue hier. ; Tu as vu Marie ? Oui, hier, je l'ai vue. ; Est-ce que tu as vu Marie ? Oui, hier, je l'ai vue. ; As-tu{tu} vu Marie ? Oui, hier, je l'ai vue.
+سیب‌ها را خریدی؟ بله، خریدمشان. => Tu as acheté les pommes ? Oui, je les ai achetées. ; Est-ce que tu as acheté les pommes ? Oui, je les ai achetées. ; As-tu{tu} acheté les pommes ? Oui, je les ai achetées.
+در را باز کردی؟ نه، بازش نکردم. => Tu as ouvert la porte ? Non, je ne l'ai pas ouverte{ouvrir}. ; Est-ce que tu as ouvert la porte ? Non, je ne l'ai pas ouverte{ouvrir}. ; As-tu{tu} ouvert la porte ? Non, je ne l'ai pas ouverte{ouvrir}.
+تکلیف‌هایت را انجام دادی؟ بله، انجامشان دادم. => Tu as fait tes devoirs ? Oui, je les ai faits. ; Est-ce que tu as fait tes devoirs ? Oui, je les ai faits. ; As-tu{tu} fait tes devoirs ? Oui, je les ai faits.

@@ -1,0 +1,85 @@
+code: de-a2-praeteritum-regelmaessig
+title: گذشته ساده فعل‌های باقاعده: machte، wohnte، arbeitete
+scope: Präteritum فعل‌های باقاعده با پایان‌های -te، -test، -te، -ten، -tet، -ten (machte، wohnte، spielte)، -ete بعد از t و d و در öffnen و regnen (arbeitete، wartete، öffnete، regnete)، فعل جداشدنی (kaufte … ein)، و این‌که Präteritum بیشتر در داستان و متن نوشتاری می‌آید.
+can_do: حالا می‌توانی داستان کوتاهی از گذشته بخوانی و بنویسی: «Früher wohnte meine Familie in Isfahan. Mein Vater arbeitete in einer Bank.»
+rule: ریشه فعل + -te و پایان شخص: ich machte، du machtest، er machte، wir machten، ihr machtet، sie machten؛ بعد از t و d (و در öffnen و regnen) -ete می‌آید: arbeitete، wartete؛ فعل جداشدنی جدا می‌شود: Wir kauften am Samstag ein.
+mistake: در فارسی «من» و «او» در گذشته فرق دارند (کردم، کرد)، برای همین فارسی‌زبان‌ها برای ich پایان دیگری می‌سازند: «ich machtet» غلط است؛ درست: ich machte، er machte (یکسان). ge- هم مال Perfekt است و اینجا نمی‌آید: «ich gemachte» غلط است. بعد از t هم e را جا نینداز: «er arbeitte» غلط است؛ درست: er arbeitete.
+tables: Präteritum
+lesson:
+برای تعریف کردن داستان یا نوشتن از گذشته، آلمانی Präteritum (گذشته ساده) را به کار می‌برد: Früher wohnte meine Familie in Isfahan.
+فعل‌های باقاعده آسان‌اند: ریشه + -te: machen ← machte، wohnen ← wohnte، spielen ← spielte.
+پایان‌ها مثل konnte و wollte‌اند: ich machte، du machtest، er/sie/es machte، wir machten، ihr machtet، sie و Sie machten.
+اگر ریشه به t یا d ختم شود، یک e اضافه می‌شود تا تلفظ آسان شود: arbeiten ← arbeitete، warten ← wartete، reden ← redete. öffnen ← öffnete و regnen ← regnete هم همین‌طورند.
+فعل جداشدنی مثل زمان حال جدا می‌شود: Wir kauften am Samstag ein. Max holte seinen Sohn ab.
+Präteritum ge- نمی‌گیرد؛ ge- مال Perfekt است: Ich machte (Präteritum)، Ich habe gemacht (Perfekt).
+در گفتگوی روزمره بیشتر Perfekt می‌گویند؛ Präteritum را بیشتر در داستان، نامه و خبر می‌بینی و می‌نویسی.
+table:
+فعل | Präteritum | نکته
+machen | machte | ریشه + te
+arbeiten | arbeitete | بعد از t یا d: ete
+regnen | regnete | برای تلفظ آسان: ete
+einkaufen | kaufte … ein | جداشدنی، جدا می‌شود
+examples:
+Früher{früher} spielte ich jeden Tag im Park. | قبلاً هر روز در پارک بازی می‌کردم.
+Mein Opa arbeitete gern im Garten. | پدربزرگم دوست داشت در باغ کار کند.
+Es regnete den ganzen{ganz} Tag. | تمام روز باران آمد.
+Wir räumten zusammen die Küche auf. | با هم آشپزخانه را مرتب کردیم.
+targets:
+Früher{früher} [wohnte] meine Familie in Isfahan. | قبلاً خانواده‌ام در اصفهان زندگی می‌کرد. | d: wohnten, wohntest, gewohnt | hint: (wohnen) | full: Meine Familie wohnte früher in Isfahan.
+Mein Vater [arbeitete] in einer Bank. | پدرم در یک بانک کار می‌کرد. | d: arbeitte, arbeiteten, gearbeitet | hint: (arbeiten)
+Ich [spielte] jeden Tag Fußball. | هر روز فوتبال بازی می‌کردم. | d: spielten, spieltest, gespielt | full: Jeden Tag spielte ich Fußball.
+Damals [lernte] ich jeden Tag Englisch. | آن وقت‌ها هر روز انگلیسی یاد می‌گرفتم. | d: lernten, lerntest, gelernt | hint: (lernen) | full: Ich lernte damals jeden Tag Englisch.
+[Wohntest] du früher{früher} in Berlin? | قبلاً در برلین زندگی می‌کردی؟ | d: Wohnte, Wohntet, Wohnten | hint: (wohnen)
+Die Kinder [warteten] an der Haltestelle. | بچه‌ها در ایستگاه اتوبوس منتظر بودند. | d: wartete, wartetet, gewartet
+Am Montag [regnete] es sehr stark. | دوشنبه خیلی شدید باران آمد. | d: regnte, regneten, geregnet | hint: (regnen) | full: Es regnete am Montag sehr stark.
+Wer [öffnete] die Tür? | چه کسی در را باز کرد؟ | d: öffnte, öffneten, geöffnet | hint: (öffnen)
+Ihr [tanztet] auf der Party. | شما در مهمانی رقصیدید. | d: tanzten, tanztest, getanzt | hint: (tanzen)
+Der Film [dauerte] drei Stunden. | فیلم سه ساعت طول کشید. | d: dauerten, dauertest, gedauert
+Meine Oma [erzählte] uns jeden Abend eine Geschichte. | مادربزرگم هر شب برایمان یک قصه تعریف می‌کرد. | d: geerzählt, erzählten, erzähltest | hint: (erzählen) | full: Jeden Abend erzählte uns meine Oma eine Geschichte. ; Jeden Abend erzählte meine Oma uns eine Geschichte.
+Wir [feierten] den Geburtstag im Garten. | ما تولد را در باغ جشن گرفتیم. | d: feierte, feiertet, gefeiert | full: Im Garten feierten wir den Geburtstag.
+Ich [kochte] eine Suppe für die ganze{ganz} Familie. | برای همه خانواده یک سوپ پختم. | d: kochten, kochtest, gekocht | hint: (kochen)
+Er [sagte] den ganzen{ganz} Abend kein Wort. | او تمام شب یک کلمه هم نگفت. | d: sagten, sagtest, gesagt | full: Den ganzen Abend sagte er kein Wort.
+Wir [brauchten] ein neues Auto. | ما یک ماشین نو لازم داشتیم. | d: brauchte, brauchtet, gebraucht
+Paul [suchte] überall seinen Schlüssel. | پاول همه‌جا دنبال کلیدش گشت. | d: suchten, suchtest, gesucht | hint: (suchen) | full: Paul suchte seinen Schlüssel überall.
+Ihr [wartetet] eine Stunde vor dem Kino. | شما یک ساعت جلوی سینما منتظر ماندید. | d: warteten, wartetest, wartete | hint: (warten)
+Wir [frühstückten] immer zusammen. | ما همیشه با هم صبحانه می‌خوردیم. | d: frühstückte, frühstücktet, gefrühstückt
+Lena [studierte] in Wien Musik. | لنا در وین موسیقی خواند. | d: studierten, studiertest, gestudiert | full: Lena studierte Musik in Wien.
+Im Sommer [reisten] wir nach Österreich. | تابستان به اتریش سفر کردیم. | d: reiste, reistet, gereist | full: Wir reisten im Sommer nach Österreich.
+Die Kinder [lachten] den ganzen{ganz} Abend. | بچه‌ها تمام شب خندیدند. | d: lachte, lachtet, gelacht
+Ich [besuchte] im Mai meine Tante in Hamburg. | ماه مه به دیدن عمه‌ام در هامبورگ رفتم. | d: besuchten, gebesucht, besuchtest | hint: (besuchen) | full: Im Mai besuchte ich meine Tante in Hamburg.
+Das Hotel [kostete] hundert Euro pro Nacht. | هتل شبی صد یورو قیمت داشت. | d: kostte, kosteten, gekostet | hint: (kosten)
+Wir [bezahlten] an der Kasse. | ما پای صندوق پول دادیم. | d: bezahlte, gebezahlt, bezahltet
+Am Morgen [weckte] mich meine Mutter. | صبح مادرم مرا بیدار کرد. | d: weckten, wecktest, geweckt | full: Meine Mutter weckte mich am Morgen. ; Am Morgen weckte meine Mutter mich.
+Max [holte] seinen Sohn von der Schule ab. | ماکس پسرش را از مدرسه آورد. | d: abholte, holten, holtest | hint: (abholen)
+Der Unterricht [hörte] um zwölf Uhr auf. | کلاس ساعت دوازده تمام شد. | d: aufhörte, hörten, hörtest | full: Um zwölf Uhr hörte der Unterricht auf.
+Ich [wachte] um sechs Uhr auf. | ساعت شش بیدار شدم. | d: aufwachte, wachten, wachtest | hint: (aufwachen) | full: Um sechs Uhr wachte ich auf.
+Wir [räumten] am Sonntag die Wohnung auf. | ما یکشنبه خانه را مرتب کردیم. | d: aufräumten, räumte, räumtet | hint: (aufräumen) | full: Am Sonntag räumten wir die Wohnung auf.
+Das Essen [schmeckte] mir nicht. | غذا به دهانم مزه نکرد. | d: schmeckten, schmecktest, geschmeckt
+Leider [antwortete] Anna mir nicht. | متأسفانه آنا جوابم را نداد. | d: antwortte, antworteten, geantwortet | hint: (antworten) | full: Anna antwortete mir leider nicht. ; Leider antwortete mir Anna nicht.
+Am Anfang [glaubte] ich ihm nicht. | اولش حرفش را باور نکردم. | d: glaubten, glaubtest, geglaubt | full: Ich glaubte ihm am Anfang nicht.
+Ich [fragte] den Lehrer und er [antwortete] sofort. | از معلم پرسیدم و او فوراً جواب داد. | d: fragten, fragtest, gefragt / antwortte, antworteten, geantwortet
+Früher{früher} [wohnten] wir in Schiras und mein Vater [arbeitete] in einem Krankenhaus. | قبلاً در شیراز زندگی می‌کردیم و پدرم در یک بیمارستان کار می‌کرد. | d: wohnte, wohntet, gewohnt / arbeitte, arbeiteten, gearbeitet | full: Wir wohnten früher in Schiras und mein Vater arbeitete in einem Krankenhaus.
+Am Samstag [kauften] wir ein, und am Abend [kochten] wir zusammen. | شنبه خرید کردیم و عصر با هم آشپزی کردیم. | d: einkauften, kaufte, kauftet / kochte, kochtet, gekocht
+Die Kinder [spielten] im Garten und die Eltern [redeten] in der Küche. | بچه‌ها در باغ بازی می‌کردند و پدر و مادرها در آشپزخانه حرف می‌زدند. | d: spielte, spieltet, gespielt / redete, redetet, geredet
+Es [regnete] den ganzen{ganz} Tag, deshalb [spielten] wir zu Hause. | تمام روز باران آمد، برای همین در خانه بازی کردیم. | d: regnte, regneten, geregnet / spielte, spieltet, gespielt
+Max [öffnete] die Tür und [lachte]. | ماکس در را باز کرد و خندید. | d: öffnte, öffneten, geöffnet / lachten, lachtest, gelacht
+Am Abend [spielten] wir Karten und [lachten] viel. | عصر ورق بازی کردیم و زیاد خندیدیم. | d: spielte, spieltet, gespielt / lachte, lachtet, gelacht
+Im Urlaub [besuchten] wir ein Museum und [machten] viele Fotos. | در تعطیلات از یک موزه دیدن کردیم و عکس‌های زیادی گرفتیم. | d: besuchte, gebesucht, besuchtet / machte, machtet, gemacht
+transforms:
+Ich wohne in Berlin. => Ich wohnte in Berlin. | جمله را به Präteritum ببر.
+Wir spielen Fußball. => Wir spielten Fußball. | جمله را به Präteritum ببر.
+Er arbeitet viel. => Er arbeitete viel. | جمله را به Präteritum ببر.
+Es regnet. => Es regnete. | جمله را به Präteritum ببر.
+Ihr fragt den Lehrer. => Ihr fragtet den Lehrer. | جمله را به Präteritum ببر.
+Ich habe eine Pizza bestellt. => Ich bestellte eine Pizza. | جمله را از Perfekt به Präteritum ببر.
+Wir haben das Zimmer aufgeräumt. => Wir räumten das Zimmer auf. | جمله را از Perfekt به Präteritum ببر.
+Du hast lange gewartet. => Du wartetest lange. | جمله را از Perfekt به Präteritum ببر.
+translations:
+قبلاً در تهران زندگی می‌کردم. (با Präteritum) => Früher{früher} wohnte ich in Teheran. ; Ich wohnte früher{früher} in Teheran. ; Früher{früher} lebte ich in Teheran. ; Ich lebte früher{früher} in Teheran.
+مادرم در یک مدرسه کار می‌کرد. (با Präteritum) => Meine Mutter arbeitete in einer Schule. ; Meine Mutter arbeitete an einer Schule.
+دیروز باران آمد. (با Präteritum) => Gestern regnete es. ; Es regnete gestern.
+ما شنبه خرید کردیم. (با Präteritum) => Wir kauften am Samstag ein. ; Am Samstag kauften wir ein.
+او پنجره را باز کرد. (با Präteritum) => Er öffnete das Fenster. ; Sie öffnete das Fenster. ; Er machte das Fenster auf. ; Sie machte das Fenster auf.
+ما یک ساعت منتظر ماندیم. (با Präteritum) => Wir warteten eine Stunde. ; Wir warteten eine Stunde lang.
+فیلم دو ساعت طول کشید. (با Präteritum) => Der Film dauerte zwei Stunden.
+تولدم را در باغ جشن گرفتیم. (با Präteritum) => Wir feierten meinen Geburtstag im Garten. ; Meinen Geburtstag feierten wir im Garten. ; Im Garten feierten wir meinen Geburtstag.

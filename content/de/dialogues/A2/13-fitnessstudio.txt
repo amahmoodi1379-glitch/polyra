@@ -1,0 +1,34 @@
+code: de-a2-d013
+title: ثبت‌نام در باشگاه ورزشی
+situation: به یک باشگاه بدن‌سازی رفته‌ای و می‌خواهی ثبت‌نام کنی.
+turns:
+B: Hallo, willkommen im Fitnessstudio! Wie kann ich helfen? | سلام، به باشگاه خوش آمدید! چه کمکی از من برمی‌آید؟
++ Hallo! Ich möchte mich hier anmelden. | سلام! می‌خواهم اینجا ثبت‌نام کنم.
+- Hallo! Ich möchte mir hier anmelden. | سلام! می‌خواهم اینجا ثبت‌نام کنم.
+- Hallo! Ich möchte hier arbeiten. | سلام! می‌خواهم اینجا کار کنم.
+why: «sich anmelden» با ich می‌شود «mich anmelden»، نه mir. تو برای ورزش آمده‌ای، نه برای کار.
+B: Gern. Wie oft möchten Sie trainieren? | با کمال میل. هر چند وقت یک بار می‌خواهید تمرین کنید؟
+- Zwei oder drei Stunden. | دو یا سه ساعت.
++ Jeden Montag und Donnerstag. | هر دوشنبه و پنجشنبه.
+- Seit zwei Wochen. | از دو هفته پیش.
+why: «Wie oft?» یعنی هر چند وقت یک بار، پس «Jeden Montag und Donnerstag». ساعت‌ها می‌گوید چقدر طول می‌کشد و seit می‌گوید از کی.
+B: Wir haben ein gutes Angebot: dreißig Euro im Monat. | یک پیشنهاد خوب داریم: ماهی سی یورو.
+- Zu{zu-adv} teuer! Mach es billiger! | خیلی گران است! ارزان‌ترش کن!
+- Ist er für Studenten günstiger? | آن برای دانشجوها ارزان‌تر است؟
++ Ist es für Studenten günstiger? | برای دانشجوها ارزان‌تر است؟
+why: das Angebot خنثی است، پس ضمیرش es است، نه er. «Mach es billiger!» با کارمند خودمانی و بی‌ادبانه است.
+B: Ja, für Studenten kostet es nur zwanzig Euro. Aber Sie müssen einen Vertrag für ein Jahr unterschreiben. | بله، برای دانشجوها فقط بیست یورو است. ولی باید یک قرارداد یک‌ساله امضا کنید.
++ Ein ganzes{ganz} Jahr? Gibt es auch einen Vertrag für einen Monat? | یک سال کامل؟ قرارداد یک‌ماهه هم هست؟
+- Ein ganzes{ganz} Jahr? Gibt es auch einen Vertrag für zwei Jahre? | یک سال کامل؟ قرارداد دوساله هم هست؟
+- Ein ganzes{ganz} Jahr? Gibt es auch ein Vertrag für einen Monat? | یک سال کامل؟ قرارداد یک‌ماهه هم هست؟
+why: یک سال برایت طولانی است، پس قرارداد کوتاه‌تر می‌خواهی، نه دوساله. بعد از es gibt شکل einen می‌آید: «einen Vertrag».
+B: Ja, aber dann kostet es 35 Euro im Monat. | بله، ولی آن‌وقت ماهی ۳۵ یورو می‌شود. | tts: Ja, aber dann kostet es fünfunddreißig Euro im Monat.
+- Das ist teurer. Dann nehme ich lieber das Vertrag für ein Jahr. | این گران‌تر است. پس ترجیح می‌دهم قرارداد یک‌ساله را بگیرم.
++ Das ist teurer. Dann nehme ich lieber den Vertrag für ein Jahr. | این گران‌تر است. پس ترجیح می‌دهم قرارداد یک‌ساله را بگیرم.
+- Das ist billiger. Dann nehme ich lieber den Vertrag für ein Jahr. | این ارزان‌تر است. پس ترجیح می‌دهم قرارداد یک‌ساله را بگیرم.
+why: ۳۵ یورو از ۲۰ یورو گران‌تر است (teurer)، نه ارزان‌تر (billiger). Vertrag مذکر است: «den Vertrag».
+B: Gut. Dann füllen Sie bitte{bitte} dieses Formular aus. Möchten Sie heute schon trainieren? | خوب. پس لطفاً این فرم را پر کنید. می‌خواهید همین امروز تمرین کنید؟
+- Nein, danke{danke}! Ich möchte heute schon trainieren. | نه، ممنون! می‌خواهم همین امروز تمرین کنم.
++ Ja, gern! Kann ich hier ein Handtuch ausleihen? | بله، حتماً! می‌توانم اینجا یک حوله قرض بگیرم؟
+- Ja, gern! Gib mir ein Handtuch! | بله، حتماً! یک حوله بده به من!
+why: می‌خواهی امروز تمرین کنی، پس «Ja, gern» و بعد مؤدبانه حوله می‌خواهی. «Nein» با بقیه جمله جور نیست و «Gib mir!» بی‌ادبانه است.

@@ -1,0 +1,34 @@
+code: fr-a2-d003
+title: خرید لباس
+situation: در یک مغازه لباس هستی و برای زمستان یک پلیور می‌خواهی.
+turns:
+B: Bonjour ! Vous cherchez quelque chose ? | سلام! دنبال چیزی می‌گردید؟
+- Oui, je porte{porter} un pull pour l'hiver. | بله، برای زمستان پلیور می‌پوشم.
+- Oui, je cherche une pull pour l'hiver. | بله، دنبال یک پلیور برای زمستان می‌گردم.
++ Oui, je cherche un pull pour l'hiver. | بله، دنبال یک پلیور برای زمستان می‌گردم.
+why: pull مذکر است: «un pull». «je porte» یعنی «می‌پوشم» و جواب سؤال نیست.
+B: Vous faites quelle taille ? | چه سایزی می‌پوشید؟
++ Du quarante, je crois. | فکر کنم سایز چهل.
+- Quarante ans, je crois. | فکر کنم چهل سال.
+- Quarante euros, je crois. | فکر کنم چهل یورو.
+why: فروشنده سایز را می‌پرسد: «Du quarante». «quarante ans» سن است و «quarante euros» قیمت.
+B: Voilà. On l'a en bleu et en gris. Vous voulez l'essayer ? | بفرمایید. آبی و طوسی‌اش را داریم. می‌خواهید امتحانش کنید؟
+- Oui, je voudrais essayer la grise, s'il vous plaît. | بله، می‌خواهم طوسی را امتحان کنم، لطفاً.
++ Oui, je voudrais essayer le gris, s'il vous plaît. | بله، می‌خواهم طوسی را امتحان کنم، لطفاً.
+- Oui, je voudrais essayer le gris, s'il te plaît. | آره، می‌خواهم طوسی را امتحان کنم، لطفاً.
+why: pull مذکر است، پس «le gris»، نه «la grise». با فروشنده «s'il vous plaît» می‌گوییم.
+B: Alors ? La taille est bonne ? | خب؟ سایزش خوب است؟
+- Non, il est un peu petite. Vous l'avez en quarante-deux ? | نه، کمی کوچک است. سایز چهل‌ودو را دارید؟
+- Non, il est un peu petit. Vous l'avez en trente-huit ? | نه، کمی کوچک است. سایز سی‌وهشت را دارید؟
++ Non, il est un peu petit. Vous l'avez en quarante-deux ? | نه، کمی کوچک است. سایز چهل‌ودو را دارید؟
+why: pull مذکر است: «il est petit». وقتی لباس کوچک است، سایز بزرگ‌تر می‌خواهیم (۴۲)، نه کوچک‌تر (۳۸).
+B: Oui, voilà le quarante-deux. Il coûte trente-cinq euros. | بله، این هم سایز چهل‌ودو. سی‌وپنج یورو است.
++ Parfait, je le prends. | عالی است، برش می‌دارم.
+- Parfait, je la prends. | عالی است، برش می‌دارم.
+- Parfait, je prends le{le-pron}. | عالی است، برش می‌دارم.
+why: pull مذکر است، پس ضمیرش le است، و ضمیر پیش از فعل می‌آید: «je le prends».
+B: Très bien. Vous payez comment ? | خیلی خوب. چطور پرداخت می‌کنید؟
+- Bien, merci, et vous ? | خوبم، ممنون، شما چطورید؟
++ Par carte, s'il vous plaît. | با کارت، لطفاً.
+- Trente-cinq euros, s'il vous plaît. | سی‌وپنج یورو، لطفاً.
+why: comment اینجا یعنی «با چه روشی»، پس «Par carte». این سؤال احوالپرسی نیست، و قیمت را خود فروشنده گفت.

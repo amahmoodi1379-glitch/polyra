@@ -1,0 +1,88 @@
+code: fr-a2-inversion
+title: سؤال رسمی با جابه‌جایی: Où vas-tu ? Parlez-vous anglais ?
+scope: سؤال با جابه‌جا کردن فعل و ضمیر فاعل (Où vas-tu ? Parlez-vous anglais ? Peut-on entrer ?)، با خط تیره و با -t- میان فعلی که به صدادار تمام می‌شود و il، elle یا on (A-t-il … ?)، qu'est-ce que در برابر qu'est-ce qui، و سه شکل سؤال: با آهنگ صدا، با est-ce que و با جابه‌جایی؛ جابه‌جایی با je و با فاعلِ اسم (Marie vient-elle ?) در سطح‌های بعد.
+can_do: حالا می‌توانی مؤدبانه و رسمی سؤال کنی و بفهمی کسی چه می‌پرسد: Parlez-vous anglais ? Où habitez-vous ? Qu'est-ce qui se passe ?
+rule: جابه‌جایی: فعل + خط تیره + ضمیر (Où vas-tu ? Avez-vous … ?)؛ میان فعلی که به صدادار تمام می‌شود و il، elle یا on یک -t- می‌آید (A-t-il … ?)؛ qu'est-ce que برای مفعول (Qu'est-ce que tu fais ?) و qu'est-ce qui برای فاعل (Qu'est-ce qui se passe ?).
+mistake: در فارسی سؤال همان ترتیب جملهٔ معمولی را دارد و فقط آهنگ صدا عوض می‌شود، برای همین فارسی‌زبان‌ها در جابه‌جایی خط تیره یا t را جا می‌اندازند («A il une voiture ?») یا est-ce que را هم نگه می‌دارند («Où est-ce que vas-tu ?»)؛ درست: A-t-il une voiture ? و Où vas-tu ?. «چه» هم در فارسی یک شکل دارد، ولی وقتی فاعل است qu'est-ce qui می‌آید: Qu'est-ce qui se passe ?، نه «Qu'est-ce que se passe ?».
+lesson:
+فرانسوی سه راه برای سؤال دارد: با آهنگ صدا (Tu viens ?)، با est-ce que (Est-ce que tu viens ?) و با جابه‌جایی (Viens-tu ?). معنی هر سه یکی است و فقط لحن فرق دارد.
+جابه‌جایی (inversion) یعنی ضمیر فاعل را بعد از فعل بگذاریم و میانشان خط تیره بکشیم: tu viens → viens-tu، vous parlez → parlez-vous.
+این شکل رسمی‌تر است و بیشتر در نوشتن و با آدم‌های غریبه می‌آید: Parlez-vous anglais ? Avez-vous des enfants ?
+کلمهٔ پرسشی اول جمله می‌ماند: Où vas-tu ? Que fais-tu ? Comment vous appelez-vous ?
+اگر فعل به صدادار تمام شود و بعدش il، elle یا on بیاید، برای راحتی تلفظ یک -t- اضافه می‌شود: il a → A-t-il … ?، elle parle → Parle-t-elle … ?. فعلی که خودش به t یا d تمام می‌شود t اضافه نمی‌گیرد: Est-il là ? Peut-on entrer ? Prend-elle le bus ?
+در passé composé فقط فعل کمکی جابه‌جا می‌شود: As-tu mangé ? Où êtes-vous allés ?
+est-ce que و جابه‌جایی با هم نمی‌آیند: Où est-ce que tu vas ? یا Où vas-tu ?، ولی نه «Où est-ce que vas-tu ?».
+qu'est-ce que یعنی «چه چیزی را» و بعدش فاعل می‌آید: Qu'est-ce que tu fais ? (چه کار می‌کنی؟). qu'est-ce qui یعنی «چه چیزی» وقتی خودش فاعل است: Qu'est-ce qui se passe ? (چه اتفاقی می‌افتد؟).
+با je جابه‌جایی کم است؛ اگر فاعل اسم است (Marie)، فعلاً با est-ce que یا آهنگ صدا بپرس: Est-ce que Marie vient ?
+table:
+با آهنگ صدا | با est-ce que | با جابه‌جایی
+Tu viens ? | Est-ce que tu viens ? | Viens-tu ?
+Vous parlez anglais ? | Est-ce que vous parlez anglais ? | Parlez-vous anglais ?
+Il est là ? | Est-ce qu'il est là ? | Est-il là ?
+Elle a une voiture ? | Est-ce qu'elle a une voiture ? | A-t-elle une voiture ?
+Tu vas où ? | Où est-ce que tu vas ? | Où vas-tu ?
+Tu fais quoi ? | Qu'est-ce que tu fais ? | Que fais-tu ?
+examples:
+Où vas-tu{tu} ? | کجا می‌روی؟
+Parlez-vous anglais ? | شما انگلیسی حرف می‌زنید؟
+Peut-on entrer ? | می‌شود وارد شد؟
+Qu'est-ce qui ne va pas ? | چه مشکلی هست؟
+targets:
+Où [vas]-tu{tu} ce soir ? | امشب کجا می‌روی؟ | d: va, vais, allez | hint: (aller)
+[Travaillez]-vous le samedi ? | شما شنبه‌ها کار می‌کنید؟ | d: Travaillons, Travaille, Travailler | hint: (travailler)
+Avez-[vous] des enfants ? | شما بچه دارید؟ | d: tu, nous, vos
+Peut-[on] payer par carte ? | می‌شود با کارت پرداخت کرد؟ | d: nous, tu, t-on
+[Est]-il à la maison ? | او (مرد) خانه است؟ | d: Es, Est-t, Êtes | hint: (être)
+Que [fais]-tu{tu} le samedi ? | شنبه‌ها چه کار می‌کنی؟ | d: fait, faites, faire | hint: (faire)
+Comment t'appelles-[tu]{tu} ? | اسمت چیست؟ | d: toi, te, vous
+Comment vous [appelez]-vous ? | اسم شما چیست؟ | d: appelle, appelles, appelons | hint: (s'appeler)
+À quelle heure [te] lèves-tu{tu} ? | ساعت چند از خواب بلند می‌شوی؟ | d: toi, se, vous
+[As]-tu{tu} fini tes devoirs ? | تکلیف‌هایت را تمام کردی؟ | d: A, Es, Ai | hint: (avoir)
+[Avez]-vous vu ce film ? | این فیلم را دیده‌اید؟ | d: Avons, As, Ont
+Où [êtes]-vous allés en vacances ? | تعطیلات کجا رفتید؟ | d: avez, sommes, est | hint: (être)
+Quand{quand} [sont]-ils arrivés ? | آن‌ها کی رسیدند؟ | d: ont, est, sommes
+[Sait]-il nager ? | او (مرد) شنا بلد است؟ | d: Sais, Savent, Connaît | hint: (savoir)
+Quel temps [fait]-il à Paris ? | هوای پاریس چطور است؟ | d: fais, est, faire | hint: (faire)
+Quelle heure [est]-il ? | ساعت چند است؟ | d: es, a, fait
+[Vient]-elle avec nous ? | او (زن) با ما می‌آید؟ | d: Viens, Viennent, Venir | hint: (venir)
+[Veulent]-ils du thé ? | آن‌ها چای می‌خواهند؟ | d: Veut, Veux, Voulez | hint: (vouloir)
+Pourquoi ne [viens]-tu{tu} pas avec nous ? | چرا با ما نمی‌آیی؟ | d: vient, venez, venir
+Combien de frères [as]-tu{tu} ? | چند برادر داری؟ | d: a, es, ai | hint: (avoir)
+[Pouvez]-vous m'aider, s'il vous plaît ? | لطفاً می‌توانید به من کمک کنید؟ | d: Pouvons, Peux, Peut | hint: (pouvoir)
+[Qu'est-ce qui] se passe ? | چه اتفاقی می‌افتد؟ | d: Qu'est-ce que, Qui est-ce que, Quoi
+[Qu'est-ce que] tu fais demain ? | فردا چه کار می‌کنی؟ | d: Qu'est-ce qui, Que est-ce que, Quoi est-ce que
+[Qu'est-ce qui] est important pour toi ? | چه چیزی برایت مهم است؟ | d: Qu'est-ce que, Que est-ce qui, Quoi
+[Qu'est-ce que] vous voulez manger ? | چه می‌خواهید بخورید؟ | d: Qu'est-ce qui, Que est-ce que, Qui est-ce qui
+[Qu'est-ce qui] te fait peur ? | چه چیزی تو را می‌ترساند؟ | d: Qu'est-ce que, Qui est-ce que, Quoi
+Que [voulez]-vous boire ? | چه می‌خواهید بنوشید؟ | d: voulons, veut, vouloir | hint: (vouloir)
+Où est-ce que [tu habites] ? | کجا زندگی می‌کنی؟ | d: habites-tu, tu habite, habite-tu
+Comprend-[elle] le français ? | او (زن) فرانسوی می‌فهمد؟ | d: la, lui, t-elle
+Doit-[on] payer à l'entrée ? | باید دم در پول داد؟ | d: nous, vous, t-on
+Que [font]-ils le dimanche ? | آن‌ها یکشنبه‌ها چه کار می‌کنند؟ | d: fait, faites, faisons | hint: (faire)
+Que [prenez]-vous, un café ou un thé ? | چه میل دارید، قهوه یا چای؟ | d: prenons, prend, prendre | hint: (prendre)
+Où [allez]-vous et quand{quand} [partez]-vous ? | کجا می‌روید و کی راه می‌افتید؟ | d: allons, vont, va / partons, partent, part
+[As]-tu{tu} faim ? [Veux]-tu{tu} un sandwich ? | گرسنه‌ای؟ ساندویچ می‌خواهی؟ | d: A, Es, Ai / Veut, Voulez, Veulent
+Comment [allez]-vous ? Et vos enfants, comment [vont]-ils ? | حالتان چطور است؟ و بچه‌هایتان، حالشان چطور است؟ | d: allons, va, vas / va, allez, allons
+[Êtes]-vous prêts ? [Pouvons]-nous partir ? | آماده‌اید؟ می‌توانیم راه بیفتیم؟ | d: Sont, Sommes, Est / Pouvez, Peuvent, Peut
+[Qu'est-ce qui] se passe ? [Qu'est-ce que] tu as ? | چه شده؟ چه‌ات است؟ | d: Qu'est-ce que, Qui est-ce que, Quoi / Qu'est-ce qui, Que est-ce que, Quoi est-ce que
+Où [habitez]-vous et que [faites]-vous ? | کجا زندگی می‌کنید و چه کار می‌کنید؟ | d: habitons, habite, habites / faisons, fait, font
+Quand{quand} [es]-tu{tu} arrivé et où [as]-tu{tu} dormi ? | کی رسیدی و کجا خوابیدی؟ | d: as, est, êtes / es, a, ai
+[Voulez]-vous un café ? Non, mais [avez]-vous de l'eau ? | قهوه میل دارید؟ نه، ولی آب دارید؟ | d: Voulons, Veut, Veux / Avons, Ont, As
+transforms:
+Tu viens avec nous ? => Viens-tu{tu} avec nous ? | سؤال را با جابه‌جایی بنویس.
+Vous parlez français ? => Parlez-vous français ? | سؤال را با جابه‌جایی بنویس.
+Est-ce que vous avez une voiture ? => Avez-vous une voiture ? | سؤال را با جابه‌جایی بنویس.
+Où est-ce que tu habites ? => Où habites-tu{tu} ? | سؤال را با جابه‌جایی بنویس.
+Qu'est-ce que tu fais ? => Que fais-tu{tu} ? | سؤال را با جابه‌جایی بنویس.
+Est-ce qu'il est malade ? => Est-il malade ? | سؤال را با جابه‌جایی بنویس.
+Est-ce que tu as fini ? => As-tu{tu} fini ? | سؤال را با جابه‌جایی بنویس.
+Où vas-tu{tu} ? => Où est-ce que tu vas ? | سؤال را با est-ce que بنویس.
+translations:
+شما انگلیسی حرف می‌زنید؟ => Vous parlez anglais ? ; Est-ce que vous parlez anglais ? ; Parlez-vous anglais ?
+کجا می‌روی؟ => Où vas-tu{tu} ? ; Tu vas où ? ; Où est-ce que tu vas ? ; Où tu vas ?
+اسم شما چیست؟ => Comment vous appelez-vous ? ; Comment est-ce que vous vous appelez ? ; Vous vous appelez comment ? ; Comment vous vous appelez ? ; Quel est{être} votre nom ?
+چه اتفاقی افتاد؟ => Qu'est-ce qui s'est passé ? ; Que s'est-il passé ? ; Qu'est-ce qui est arrivé ? ; Qu'est-il arrivé ?
+امروز چه کار می‌کنی؟ => Qu'est-ce que tu fais aujourd'hui ? ; Que fais-tu{tu} aujourd'hui ? ; Tu fais quoi aujourd'hui ? ; Aujourd'hui, qu'est-ce que tu fais ? ; Aujourd'hui, que fais-tu{tu} ? ; Aujourd'hui, tu fais quoi ?
+می‌شود وارد شد؟ => Peut-on entrer ? ; On peut entrer ? ; Est-ce qu'on peut entrer ?
+ساعت چند است؟ => Quelle heure est-il ? ; Il est quelle heure ?
+او (زن) کجاست؟ => Où est-elle ? ; Elle est où ? ; Où est-ce qu'elle est ?

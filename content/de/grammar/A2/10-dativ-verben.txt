@@ -1,0 +1,91 @@
+code: de-a2-dativ-verben
+title: helfen، gehören، danken: فعل‌هایی که Dativ می‌خواهند
+scope: فعل‌هایی که مفعولشان در Dativ است (helfen، gefallen، schmecken، gehören، passen، danken، antworten، gratulieren، fehlen، zuhören) با ضمیرهای mir تا ihnen و Ihnen و با اسم (dem Lehrer، der Frau، den Kindern)، جور شدن فعل با چیزی که فاعل است (Die Schuhe gefallen mir) و سؤال با wem؛ فعل‌هایی که هم Dativ و هم Akkusativ دارند (Ich gebe dem Kind einen Apfel) در واحد بعد می‌آیند.
+can_do: حالا می‌توانی بگویی چیزی مال کیست، از کسی تشکر کنی، به کسی تبریک بگویی و بگویی لباسی اندازه‌ات هست یا نه.
+rule: این فعل‌ها آدمی را که کار به او می‌رسد در Dativ می‌آورند: mir، dir، ihm، ihr، uns، euch، ihnen، Ihnen و dem، der، den …n (Das Buch gehört mir. Ich danke dem Lehrer.).
+mistake: در فارسی «از کسی تشکر می‌کنیم» و «به کسی کمک می‌کنیم»؛ فارسی‌زبان‌ها برای همین می‌گویند «Ich danke von dir» یا بعد از یاد گرفتن Akkusativ می‌گویند «Ich helfe dich»؛ درست: Ich danke dir، Ich helfe dir. با gehören هم صاحب را فاعل می‌کنند: «Ich gehöre das Buch» غلط است؛ درست: Das Buch gehört mir.
+lesson:
+بعضی فعل‌ها مفعولشان را در Dativ می‌خواهند، نه در Akkusativ. سه تا را از قبل می‌شناسی: helfen، gefallen و schmecken (Ich helfe dir.).
+چند فعل پرکاربرد دیگر هم همین‌طورند: gehören (مال کسی بودن)، passen (اندازه بودن، جور بودن)، danken (تشکر کردن)، antworten (جواب دادن)، gratulieren (تبریک گفتن)، fehlen (کم بودن) و zuhören (گوش دادن به حرف کسی).
+Dativ همان شکلی است که بعد از mit دیدی: der و das ← dem، die ← der، جمع ← den و اسم جمع -n می‌گیرد: Ich danke dem Lehrer. Ich helfe der Frau. Ich antworte den Kindern.
+ضمیرهای Dativ: mir، dir، ihm، ihr، uns، euch، ihnen (به آن‌ها) و Ihnen (به شما، مؤدبانه): Ich helfe ihnen. Ich danke Ihnen.
+با gehören، gefallen، schmecken، passen و fehlen، چیز فاعل جمله است و آدم در Dativ: Die Jacke gehört mir. Mir fehlt ein Euro. (یک یورو کم دارم.)
+پس فعل با همان چیز جور می‌شود، نه با آدم: Das Kleid gefällt mir. ولی: Die Schuhe gefallen mir.
+برای پرسیدن درباره آدمِ Dativ از wem («به چه کسی، مال چه کسی») استفاده کن: Wem gehört das Handy? – Mir.
+table:
+فاعلی | Akkusativ | Dativ
+der Lehrer | den Lehrer | dem Lehrer
+die Frau | die Frau | der Frau
+das Kind | das Kind | dem Kind
+die Kinder | die Kinder | den Kindern
+ich / du | mich / dich | mir / dir
+er / sie / es | ihn / sie / es | ihm / ihr / ihm
+wir / ihr | uns / euch | uns / euch
+sie / Sie | sie / Sie | ihnen / Ihnen
+sets:
+آدم در Dativ: helfen, danken, antworten, gratulieren, zuhören
+چیز فاعل، آدم در Dativ: gehören, gefallen, schmecken, passen, fehlen
+examples:
+Wem gehört{gehören} der Schlüssel? – Er gehört{gehören} mir. | این کلید مال کیست؟ – مال من است.
+Ich danke Ihnen für die Hilfe. | از کمکتان ممنونم.
+Die Schuhe passen mir nicht. | این کفش‌ها اندازه‌ام نیستند.
+Wir gratulieren dir zum Geburtstag! | تولدت را به تو تبریک می‌گوییم!
+targets:
+Das Fahrrad gehört{gehören} [meinem] Bruder. | این دوچرخه مال برادرم است. | d: meinen, mein, meine
+Wem [gehört{gehören}] die Tasche? | این کیف مال کیست؟ | d: gehören, gehörst, gehöre | hint: (gehören)
+Die Tasche gehört{gehören} [mir] nicht. | این کیف مال من نیست. | d: mich, ich, mein | hint: (ich)
+[Wem] gehört{gehören} das Handy? | این موبایل مال کیست؟ | d: Wer, Wen, Was
+Das Handy gehört{gehören} [einer] Freundin von mir. | این موبایل مال یکی از دوستانم است. | d: eine, einem, einen
+Ich danke [dir] für die Hilfe. | از تو برای کمکت ممنونم. | d: dich, du, dein | hint: (du)
+Wir danken [dem] Lehrer. | ما از معلم تشکر می‌کنیم. | d: den, der, das
+Ich antworte [der] Lehrerin. | به خانم معلم جواب می‌دهم. | d: die, dem, den
+Warum antwortest du [mir] nicht? | چرا جوابم را نمی‌دهی؟ | d: mich, ich, mein | hint: (ich)
+Ich antworte [Ihnen] morgen. | فردا به شما جواب می‌دهم. | d: Sie, Ihre, Ihren | full: Morgen antworte ich Ihnen.
+Du hörst [mir] nie zu! | تو هیچ‌وقت به حرفم گوش نمی‌دهی! | d: mich, ich, mein | hint: (ich)
+Die Kinder hören [der] Lehrerin zu. | بچه‌ها به حرف خانم معلم گوش می‌دهند. | d: die, dem, den
+Das Essen schmeckt [den] Kindern sehr gut. | غذا به بچه‌ها خیلی مزه می‌دهد. | d: die, dem, der
+Ich gratuliere [dir] zum Geburtstag! | تولدت را تبریک می‌گویم! | d: dich, du, dein | hint: (du)
+Wir gratulieren [unserer]{unser} Oma zum Geburtstag. | تولد مادربزرگمان را به او تبریک می‌گوییم. | d: unsere, unser, unseren
+Die Hose [passt] mir nicht. | این شلوار اندازه‌ام نیست. | d: passe, passen, pass | hint: (passen)
+Paul hat neue Schuhe, aber sie passen [ihm] nicht. | پاول کفش نو دارد، ولی اندازه‌اش نیستند. | d: ihn, er, sein | hint: (er)
+Passt [Ihnen] der Termin am Montag? | وقت دوشنبه برایتان مناسب است؟ | d: Sie, Ihre, Ihren
+Was fehlt [dir]? – Ich habe Fieber. | چه‌ات شده؟ – تب دارم. | d: dich, du, dein | hint: (du)
+Mir [fehlt] ein Euro. | یک یورو کم دارم. | d: fehle, fehlst, fehlen | hint: (fehlen) | full: Ein Euro fehlt mir.
+Das Spiel macht [mir] viel Spaß. | از این بازی خیلی لذت می‌برم. | d: mich, ich, mein | hint: (ich)
+Wie geht es [deinen] Eltern? | حال پدر و مادرت چطور است؟ | d: deine, deinem, deiner
+Die Jacke [gefällt] mir sehr. | این کاپشن را خیلی دوست دارم. | d: gefalle, gefallen, gefallt | hint: (gefallen) | full: Mir gefällt die Jacke sehr.
+Die Blumen [gefallen] meiner{mein} Mutter. | مادرم از این گل‌ها خوشش می‌آید. | d: gefällt, gefalle, gefallt | hint: (gefallen) | full: Meiner Mutter gefallen die Blumen.
+Anna sucht ein Kleid, aber das rote Kleid gefällt [ihr]{sie} nicht. | آنا دنبال یک پیراهن است، ولی از پیراهن قرمز خوشش نمی‌آید. | d: sie, ihre, ihren | hint: (sie)
+Lena hat ein Problem. Kannst du [ihr]{sie} helfen? | لنا مشکلی دارد. می‌توانی کمکش کنی؟ | d: sie, ihre, ihren | hint: (sie)
+Ich helfe [meinem] Vater im Garten. | در باغچه به پدرم کمک می‌کنم. | d: meinen, mein, meiner | full: Im Garten helfe ich meinem Vater.
+Hilfst du [deiner]{dein} Schwester? | به خواهرت کمک می‌کنی؟ | d: deine, deinem, deinen
+Der Arzt hilft [den] Leuten. | دکتر به مردم کمک می‌کند. | d: die, dem, der
+Die Kinder haben Hunger. Die Pizza schmeckt [ihnen]{sie-2} sehr gut. | بچه‌ها گرسنه‌اند. پیتزا خیلی به آن‌ها مزه می‌دهد. | d: sie, ihre, ihren | hint: (sie)
+Wir danken [Ihnen] für die Einladung. | از دعوتتان ممنونیم. | d: Sie, Ihre, Ihren
+Gehört{gehören} der Hund [euch]? | این سگ مال شماست؟ | d: euer, eure, dich | hint: (ihr)
+[Wem] gehört{gehören} der Schlüssel? – Er gehört{gehören} [mir]. | این کلید مال کیست؟ – مال من است. | d: Wer, Wen, Was / mich, ich, mein
+Ich helfe [dem] Mann und [der] Frau. | به آن مرد و آن زن کمک می‌کنم. | d: den, der, das / die, dem, den
+Die Suppe schmeckt [mir], aber sie schmeckt [meinem] Bruder nicht. | سوپ به من مزه می‌دهد، ولی به برادرم نه. | d: mich, ich, mein / meinen, mein, meine
+Die Schuhe [passen] mir, aber sie [gefallen] mir nicht. | این کفش‌ها اندازه‌ام هستند، ولی از آن‌ها خوشم نمی‌آید. | d: passt, passe, pass / gefällt, gefalle, gefallt
+Gehört{gehören} das Fahrrad [deinem] Bruder oder [deiner]{dein} Schwester? | این دوچرخه مال برادرت است یا خواهرت؟ | d: deinen, dein, deine / deine, deinem, dein
+Gefällt [dir] die Wohnung? – Ja, sie gefällt [mir] sehr. | از این آپارتمان خوشت می‌آید؟ – بله، خیلی خوشم می‌آید. | d: dich, du, dein / mich, ich, mein | full: Gefällt dir die Wohnung? – Ja, mir gefällt sie sehr.
+Wir danken [euch] für die Blumen, sie gefallen [uns] sehr. | از شما برای گل‌ها ممنونیم، خیلی دوستشان داریم. | d: euer, eure, dich / wir, unser, unsere
+Die Jacke gehört{gehören} nicht [mir], sie gehört{gehören} [meiner]{mein} Schwester. | این کاپشن مال من نیست، مال خواهرم است. | d: mich, ich, mein / meine, meinem, mein
+transforms:
+Ich sehe dich. => Ich helfe dir. | به‌جای sehen فعل helfen را بگذار.
+Ich frage den Lehrer. => Ich antworte dem Lehrer. | به‌جای fragen فعل antworten را بگذار.
+Das ist mein Fahrrad. => Das Fahrrad gehört{gehören} mir. ; Mir gehört{gehören} das Fahrrad. | جمله را با gehören بگو.
+Ich mag die Jacke. => Die Jacke gefällt mir. ; Mir gefällt die Jacke. | جمله را با gefallen بگو.
+Ich danke Max und Lena. => Ich danke ihnen{sie-2}. | به‌جای Max und Lena ضمیر بگذار.
+Der Schuh gefällt mir. => Die Schuhe gefallen mir. | Schuh را جمع کن.
+Ich helfe dem Kind. => Ich helfe den Kindern. | Kind را جمع کن.
+Ich gratuliere dir. => Ich gratuliere Ihnen. | مؤدبانه بگو (به‌جای «تو»، «شما»).
+translations:
+این کیف مال کیست؟ => Wem gehört{gehören} die Tasche? ; Wem gehört{gehören} diese Tasche?
+به معلم جواب می‌دهم. => Ich antworte dem Lehrer. ; Ich antworte der Lehrerin.
+این کفش‌ها اندازه‌ام نیستند. => Die Schuhe passen mir nicht. ; Diese Schuhe passen mir nicht. ; Mir passen die Schuhe nicht. ; Mir passen diese Schuhe nicht.
+تولدت را تبریک می‌گویم. => Ich gratuliere dir zum Geburtstag. ; Herzlichen Glückwunsch zum Geburtstag! ; Alles Gute zum Geburtstag!
+حال پدر و مادرت چطور است؟ => Wie geht es deinen Eltern? ; Wie geht's deinen Eltern?
+به پدرم کمک می‌کنم. => Ich helfe meinem Vater.
+از شما تشکر می‌کنم. (مؤدبانه) => Ich danke Ihnen. ; Ich bedanke mich bei Ihnen.
+به آن‌ها کمک می‌کنیم. => Wir helfen ihnen{sie-2}.

@@ -1,0 +1,85 @@
+code: fr-a2-relatif-qui
+title: «که» برای فاعل: qui (l'homme qui parle)
+scope: ضمیر موصولی qui در جای فاعل، برای آدم و چیز (l'homme qui parle، le train qui part à huit heures)، و جور شدن فعلِ بعد از qui با اسمِ قبلش (les enfants qui jouent، c'est moi qui suis…)؛ que و où در دو واحد بعد می‌آیند.
+can_do: حالا می‌توانی دو جمله را با qui یکی کنی و آدم‌ها و چیزها را دقیق‌تر نشان بدهی: J'ai un ami qui habite à Paris. C'est le bus qui va à la gare.
+rule: اسم + qui + فعل: qui جای فاعلِ جملهٔ دوم را می‌گیرد (l'homme qui parle)؛ فعل بعد از qui با همان اسم جور می‌شود (les enfants qui jouent، c'est moi qui suis) و qui هیچ‌وقت qu' نمی‌شود.
+mistake: فارسی برای همه «که» می‌گوید، برای همین فارسی‌زبان‌ها به‌جای qui، que می‌گذارند («l'homme que parle») یا ضمیر را دوباره می‌آورند («l'homme qu'il parle»)؛ درست: l'homme qui parle. فعل بعد از qui هم با اسم قبلش جور می‌شود، نه با qui: «les enfants qui joue» و «c'est moi qui est» غلط‌اند؛ درست: les enfants qui jouent، c'est moi qui suis.
+lesson:
+با qui دو جمله را یکی می‌کنیم: J'ai un ami. Il habite à Paris. → J'ai un ami qui habite à Paris. (دوستی دارم که در پاریس زندگی می‌کند.)
+qui همان «که» فارسی است، وقتی اسمِ قبلش خودش کار را انجام می‌دهد، یعنی فاعل است: l'homme qui parle (مردی که حرف می‌زند).
+qui برای آدم و برای چیز هر دو می‌آید: la fille qui chante، le train qui part à huit heures.
+بعد از qui معمولاً فعل می‌آید، گاهی هم ne یا یک ضمیر مفعولی: la fille qui ne parle pas، le garçon qui t'a aidé.
+ضمیر il یا elle را بعد از qui تکرار نمی‌کنیم: «l'homme qui il parle» غلط است.
+فعل بعد از qui با اسمِ قبلش جور می‌شود: l'enfant qui joue، les enfants qui jouent، c'est moi qui suis là، c'est nous qui avons gagné.
+qui قبل از صدادار هم qui می‌ماند: l'ami qui habite ici (نه qu'habite).
+با c'est … qui روی یک نفر یا یک چیز تأکید می‌کنیم: C'est Paul qui a téléphoné. (پل بود که تلفن زد.)
+table:
+دو جمله | یک جمله با qui
+J'ai un ami. Il habite à Paris. | J'ai un ami qui habite à Paris.
+Le train part à huit heures. Il va à Lyon. | Le train qui part à huit heures va à Lyon.
+Les enfants jouent. Ils sont mes neveux. | Les enfants qui jouent sont mes neveux.
+Paul a téléphoné. | C'est Paul qui a téléphoné.
+examples:
+J'ai une sœur qui habite à Marseille. | خواهری دارم که در مارسی زندگی می‌کند.
+Le bus qui va à la gare part d'ici. | اتوبوسی که به ایستگاه قطار می‌رود از اینجا حرکت می‌کند.
+Les gens qui habitent ici sont très gentils. | آدم‌هایی که اینجا زندگی می‌کنند خیلی مهربان‌اند.
+C'est{être} moi qui ai les billets. | بلیت‌ها دست من است.
+targets:
+J'ai un ami [qui] habite à Paris. | دوستی دارم که در پاریس زندگی می‌کند. | d: que, qu'il, où
+L'homme [qui] parle avec Marie est mon oncle. | مردی که با ماری حرف می‌زند عموی من است. | d: que, qu'il, où
+Le train [qui] part à huit heures va à Lyon. | قطاری که ساعت هشت حرکت می‌کند به لیون می‌رود. | d: que, qu'il, où
+Paris est une ville [qui] ne dort jamais. | پاریس شهری است که هیچ‌وقت نمی‌خوابد. | d: que, qu'elle, où
+La fille [qui] chante est ma sœur. | دختری که آواز می‌خواند خواهر من است. | d: que, qu'elle, où
+Je cherche un restaurant [qui] est ouvert{ouvert} le dimanche. | دنبال رستورانی می‌گردم که یکشنبه‌ها باز باشد. | d: que, qu'il, où
+Les enfants [qui] jouent dans le parc sont mes voisins. | بچه‌هایی که در پارک بازی می‌کنند همسایه‌های من هستند. | d: que, qu'ils, où
+Tu connais la femme [qui] travaille à la poste ? | زنی را که در اداره پست کار می‌کند می‌شناسی؟ | d: que, qu'elle, où
+C'est{être} un livre [qui] parle de l'Iran. | این کتابی است که دربارهٔ ایران است. | d: que, qu'il, où
+Il y a un bus [qui] va à l'aéroport ? | اتوبوسی هست که به فرودگاه برود؟ | d: que, qu'il, où
+J'ai un chat [qui] dort toute la journée. | گربه‌ای دارم که تمام روز می‌خوابد. | d: que, qu'il, où
+C'est{être} Paul [qui] a téléphoné. | پل بود که تلفن زد. | d: que, qu'il, où
+Qui est la personne{personne} [qui] est à la porte ? | کسی که دم در است کیست؟ | d: que, qu'elle, où
+Je cherche quelqu'un [qui] parle anglais. | دنبال کسی می‌گردم که انگلیسی حرف بزند. | d: que, qu'il, où
+C'est{être} un élève [qui] ne travaille pas beaucoup. | دانش‌آموزی است که زیاد درس نمی‌خواند. | d: que, qu'il, où
+Le garçon [qui] t'a aidé s'appelle Hugo. | پسری که به تو کمک کرد اسمش هوگو است. | d: que, qu'il, où
+Les touristes [qui] sont arrivés hier sont allemands. | توریست‌هایی که دیروز رسیدند آلمانی‌اند. | d: que, qu'ils, où
+Le magasin [qui] vendait des glaces est fermé{fermé}. | مغازه‌ای که بستنی می‌فروخت بسته است. | d: que, qu'il, où
+Tu as vu le chien [qui] courait dans la rue ? | سگی را که در خیابان می‌دوید دیدی؟ | d: que, qu'il, où
+J'aime les films [qui] finissent bien. | فیلم‌هایی را دوست دارم که خوب تمام می‌شوند. | d: que, qu'ils, où
+Elle a une maison [qui] a un grand jardin. | او (زن) خانه‌ای دارد که باغ بزرگی دارد. | d: que, qu'elle, où
+Où est le stylo [qui] était sur la table ? | خودکاری که روی میز بود کجاست؟ | d: que, qu'il, où
+Les élèves qui [parlent] français sont dans cette classe. | دانش‌آموزانی که فرانسوی حرف می‌زنند در این کلاس هستند. | d: parle, parlons, parler | hint: (parler)
+J'ai deux sœurs qui [habitent] à Chiraz. | دو خواهر دارم که در شیراز زندگی می‌کنند. | d: habite, habitons, habitez | hint: (habiter)
+C'est{être} moi qui [suis{être}] en retard. | این منم که دیر کرده‌ام. | d: est, es, sont | hint: (être)
+C'est{être} toi qui [as] la clé ? | کلید دست توست؟ | d: a, ai, ont | hint: (avoir)
+C'est{être} nous qui [avons] gagné le match. | ما بودیم که مسابقه را بردیم. | d: a, ont, avez | hint: (avoir)
+Les gens qui [travaillent] ici sont très gentils. | آدم‌هایی که اینجا کار می‌کنند خیلی مهربان‌اند. | d: travaille, travailles, travailler | hint: (travailler)
+Ce sont mes amis qui [viennent] ce soir. | دوستانم هستند که امشب می‌آیند. | d: vient, venons, venir | hint: (venir)
+La voiture qui [est] devant la maison est à moi. | ماشینی که جلوی خانه است مال من است. | d: sont, es, a | hint: (être)
+Les bus qui [vont] au centre partent d'ici. | اتوبوس‌هایی که به مرکز شهر می‌روند از اینجا حرکت می‌کنند. | d: va, allons, aller | hint: (aller)
+C'est{être} vous qui [êtes] le nouveau professeur ? | شما معلم جدید هستید؟ | d: est, sont, sommes | hint: (être)
+J'ai un frère qui [habite] à Lyon et une sœur qui [travaille] à Nice. | برادری دارم که در لیون زندگی می‌کند و خواهری که در نیس کار می‌کند. | d: habitent, habites, habiter / travaillent, travailles, travailler | full: J'ai une sœur qui travaille à Nice et un frère qui habite à Lyon.
+Le garçon [qui] parle et la fille [qui] écoute sont mes enfants. | پسری که حرف می‌زند و دختری که گوش می‌دهد بچه‌های من هستند. | d: que, qu'il, où / que, qu'elle, où | full: La fille qui écoute et le garçon qui parle sont mes enfants.
+C'est{être} moi qui [ai] le billet et c'est{être} toi qui [as] la valise. | بلیت دست من است و چمدان دست تو. | d: a, as, ont / a, ai, ont | full: C'est toi qui as la valise et c'est moi qui ai le billet.
+Les enfants qui [sont] malades [restent] à la maison. | بچه‌هایی که مریض‌اند در خانه می‌مانند. | d: est, es, sommes / reste, restes, rester
+Je connais une fille [qui] parle persan et un garçon [qui] parle arabe. | دختری را می‌شناسم که فارسی حرف می‌زند و پسری را که عربی حرف می‌زند. | d: que, qu'elle, où / que, qu'il, où | full: Je connais un garçon qui parle arabe et une fille qui parle persan.
+Mon père, qui [travaille] beaucoup, [est] souvent fatigué. | پدرم که خیلی کار می‌کند اغلب خسته است. | d: travaillent, travailles, travailler / sont, es, êtes
+C'est{être} nous qui [faisons] la cuisine et vous qui [faites] la vaisselle. | ما آشپزی می‌کنیم و شما ظرف‌ها را می‌شویید. | d: fait, font, faites / fait, font, faisons | full: C'est vous qui faites la vaisselle et nous qui faisons la cuisine.
+L'homme [qui] est assis là-bas [est] mon professeur. | مردی که آنجا نشسته معلم من است. | d: que, qu'il, où / sont, es, êtes
+transforms:
+J'ai un ami. Il habite à Paris. => J'ai un ami qui habite à Paris. | جملهٔ دوم را با qui به جملهٔ اول وصل کن.
+Je connais une femme. Elle parle chinois. => Je connais une femme qui parle chinois. | جملهٔ دوم را با qui به جملهٔ اول وصل کن.
+Le train part à huit heures. Il va à Lyon. => Le train qui va à Lyon part à huit heures. | جملهٔ دوم را با qui به جملهٔ اول وصل کن.
+C'est{être} un livre. Il est très intéressant. => C'est{être} un livre qui est très intéressant. | جملهٔ دوم را با qui به جملهٔ اول وصل کن.
+Je cherche un restaurant. Il est ouvert{ouvert} le lundi. => Je cherche un restaurant qui est ouvert{ouvert} le lundi. | جملهٔ دوم را با qui به جملهٔ اول وصل کن.
+J'ai deux frères. Ils habitent à Lyon. => J'ai deux frères qui habitent à Lyon. | جملهٔ دوم را با qui به جملهٔ اول وصل کن.
+Paul a téléphoné. => C'est{être} Paul qui a téléphoné. | با c'est … qui روی Paul تأکید کن.
+Nous avons gagné. => C'est{être} nous qui avons gagné. | با c'est … qui روی nous تأکید کن.
+translations:
+دوستی دارم که در پاریس زندگی می‌کند. => J'ai un ami qui habite à Paris. ; J'ai une amie qui habite à Paris. ; J'ai un ami qui vit à Paris. ; J'ai une amie qui vit à Paris.
+مردی که حرف می‌زند پدر من است. => L'homme qui parle est mon père.
+قطاری که ساعت هشت حرکت می‌کند به لیون می‌رود. => Le train qui part à huit heures va à Lyon.
+پل بود که تلفن زد. => C'est{être} Paul qui a téléphoné.
+بچه‌هایی که در پارک بازی می‌کنند خوشحال‌اند. => Les enfants qui jouent dans le parc sont contents. ; Les enfants qui jouent dans le parc sont heureux. ; Les enfants qui jouent au parc sont contents. ; Les enfants qui jouent au parc sont heureux.
+دنبال کسی می‌گردم که انگلیسی حرف بزند. => Je cherche quelqu'un qui parle anglais.
+زنی که در داروخانه کار می‌کند خیلی مهربان است. => La femme qui travaille à la pharmacie est très gentille. ; La dame qui travaille à la pharmacie est très gentille.
+اتوبوسی که به فرودگاه می‌رود کجاست؟ => Où est le bus qui va à l'aéroport ? ; Le bus qui va à l'aéroport est où ?

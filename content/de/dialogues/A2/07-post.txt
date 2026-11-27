@@ -1,0 +1,34 @@
+code: de-a2-d007
+title: اداره پست
+situation: در اداره پست هستی و می‌خواهی یک بسته برای خانواده‌ات در تهران بفرستی.
+turns:
+B: Guten Tag! Der Nächste{nächste}, bitte{bitte}! | روز بخیر! نفر بعدی، لطفاً!
++ Guten Tag! Ich möchte dieses Paket nach Teheran schicken. | روز بخیر! می‌خواهم این بسته را به تهران بفرستم.
+- Guten Tag! Ich möchte dieser Paket nach Teheran schicken. | روز بخیر! می‌خواهم این بسته را به تهران بفرستم.
+- Guten Tag! Ich möchte dieses Paket aus Teheran schicken. | روز بخیر! می‌خواهم این بسته را از تهران بفرستم.
+why: Paket خنثی است، پس «dieses Paket». بسته را به تهران می‌فرستی، پس nach، نه aus.
+B: Gern. Was ist im Paket? | با کمال میل. در بسته چه هست؟
+- Nach Teheran. | به تهران.
++ Bücher und Kleidung. | کتاب و لباس.
+- Für meine Mutter. | برای مادرم.
+why: کارمند می‌پرسد در بسته چیست: «Bücher und Kleidung». مقصد را قبلاً گفتی و «Für meine Mutter» می‌گوید برای کیست.
+B: Das kostet 48 Euro. | می‌شود ۴۸ یورو. | tts: Das kostet achtundvierzig Euro.
+- Okay. Wann bist das Paket in Teheran? | باشه. بسته کی در تهران هستی؟
+- Okay. Wo ist das Paket in Teheran? | باشه. بسته در تهران کجاست؟
++ Okay. Wann ist das Paket in Teheran? | باشه. بسته کی به تهران می‌رسد؟
+why: می‌پرسی بسته کی می‌رسد: «Wann ist …?». با das Paket شکل ist می‌آید، نه bist، و wo جا را می‌پرسد، نه زمان را.
+B: In ungefähr zwei Wochen. | حدود دو هفته دیگر.
+- Gut. Und ich verkaufe noch fünf Briefmarken. | خوب. پنج تمبر هم می‌فروشم.
++ Gut. Und ich brauche noch fünf Briefmarken, bitte{bitte}. | خوب. پنج تمبر هم لازم دارم، لطفاً.
+- Gut. Und ich brauche noch fünf Briefe, bitte{bitte}. | خوب. پنج نامه هم لازم دارم، لطفاً.
+why: در پست تمبر (Briefmarke) می‌خرند، نه نامه (Brief). تو تمبر می‌خری، نمی‌فروشی (verkaufen).
+B: Gern. Schreiben Sie bitte{bitte} hier noch Ihren Namen und Ihre Adresse. | با کمال میل. لطفاً اینجا اسم و آدرستان را هم بنویسید.
++ Meine Adresse in Deutschland oder in Teheran? | آدرس خودم در آلمان یا در تهران؟
+- Ihre{Ihr-det} Adresse in Deutschland oder in Teheran? | آدرس شما در آلمان یا در تهران؟
+- Mein Adresse in Deutschland oder in Teheran? | آدرس من در آلمان یا در تهران؟
+why: درباره آدرس خودت می‌پرسی. Adresse مؤنث است، پس meine، نه mein، و «Ihre» یعنی آدرس کارمند.
+B: Ihre{Ihr-det} Adresse hier in Deutschland. | آدرس خودتان، همین‌جا در آلمان.
+- Okay. Hast du einen Kuli für mich? | باشه. یک خودکار برای من داری؟
++ Okay. Haben Sie einen Kuli für mich? | باشه. یک خودکار برای من دارید؟
+- Okay. Haben Sie ein Kuli für mich? | باشه. یک خودکار برای من دارید؟
+why: با کارمند پست رسمی حرف می‌زنیم: «Haben Sie». Kuli مذکر است، پس «einen Kuli».

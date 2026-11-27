@@ -1,0 +1,34 @@
+code: fr-a2-d014
+title: سفارش غذا با تلفن
+situation: به یک پیتزافروشی زنگ می‌زنی تا برای شام پیتزا سفارش بدهی.
+turns:
+B: Allô, bonjour ! Vous voulez commander ? | الو، سلام! می‌خواهید سفارش بدهید؟
+- Bonjour ! Oui, je voudrais commande deux pizzas, s'il vous plaît. | سلام! بله، می‌خواهم دو پیتزا سفارش بدهم، لطفاً.
++ Bonjour ! Oui, je voudrais commander deux pizzas, s'il vous plaît. | سلام! بله، می‌خواهم دو پیتزا سفارش بدهم، لطفاً.
+- Bonjour ! Oui, je voudrais commander deux pizzas, s'il te plaît. | سلام! بله، می‌خواهم دو پیتزا سفارش بدهم، لطفاً.
+why: بعد از «je voudrais» فعل مصدر می‌آید: «commander». با کارمند رستوران «s'il vous plaît» می‌گوییم.
+B: Oui, quelles pizzas ? | بله، چه پیتزاهایی؟
++ Une pizza au fromage et une pizza aux champignons. | یک پیتزای پنیر و یک پیتزای قارچ.
+- Un pizza au fromage et un pizza aux champignons. | یک پیتزای پنیر و یک پیتزای قارچ.
+- Une pizza au fromage et une pizza à les champignons. | یک پیتزای پنیر و یک پیتزای قارچ.
+why: pizza مؤنث است: «une pizza». à و les با هم aux می‌شوند: «aux champignons».
+B: Et avec ça, vous voulez une boisson ? | با آن نوشیدنی هم می‌خواهید؟
+- Oui, merci, on en a à la maison. | بله، ممنون، در خانه داریم.
+- Non, merci, on y a à la maison. | نه، ممنون، در خانه داریم.
++ Non, merci, on en a à la maison. | نه، ممنون، در خانه داریم.
+why: en جای «نوشیدنی» می‌نشیند: «on en a» یعنی «داریم»؛ y برای جاست. اگر در خانه نوشیدنی دارید، جواب Non است، نه Oui.
+B: D'accord. C'est{être} pour quelle adresse ? | باشد. برای چه آدرسی؟
+- Je m'appelle Reza Karimi. | اسمم رضا کریمی است.
++ Huit, rue de la Gare. C'est{être} au deuxième étage. | پلاک هشت، خیابان ایستگاه. طبقه دوم است.
+- Huit, rue de la Gare. C'est{être} à le deuxième étage. | پلاک هشت، خیابان ایستگاه. طبقه دوم است.
+why: à و le با هم au می‌شوند: «au deuxième étage». سؤال آدرس است، نه اسم.
+B: Il y a un code pour la porte de l'immeuble ? | درِ ساختمان رمز دارد؟
+- Oui, il n'y en a pas. Sonnez chez Karimi, s'il vous plaît. | بله، ندارد. لطفاً زنگ کریمی را بزنید.
+- Non, il n'y en a pas. Sonnez chez Karimi, s'il te plaît. | نه، ندارد. لطفاً زنگ کریمی را بزن.
++ Non, il n'y en a pas. Sonnez chez Karimi, s'il vous plaît. | نه، ندارد. لطفاً زنگ کریمی را بزنید.
+why: «il n'y en a pas» یعنی «ندارد»، پس جوابش Non است، نه Oui. با کارمند «s'il vous plaît» می‌گوییم.
+B: Parfait. Ça fait vingt-six euros. Les pizzas arrivent dans trente minutes. | عالی. بیست‌وشش یورو می‌شود. پیتزاها سی دقیقه دیگر می‌رسند.
+- Trente minutes ? C'est{être} long ! Alors, dans une heure ? | سی دقیقه؟ زیاد است! پس یک ساعت دیگر؟
++ Trente minutes ? Parfait. On a très faim ! | سی دقیقه؟ عالی. خیلی گرسنه‌ایم!
+- Trente minutes ? Parfait. On est très faim ! | سی دقیقه؟ عالی. خیلی گرسنه‌ایم!
+why: گرسنه بودن با avoir است: «on a faim». اگر سی دقیقه زیاد است، یک ساعت از آن هم بیشتر است.

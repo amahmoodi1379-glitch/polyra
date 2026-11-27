@@ -1,0 +1,83 @@
+code: fr-a2-verbes-infinitif
+title: فعل + مصدر: aimer lire، apprendre à nager، essayer de dormir
+scope: فعل + مصدر بی‌حرف اضافه (aimer، adorer، détester، préférer، vouloir، pouvoir، devoir، savoir، aller، espérer)، با à (commencer à، apprendre à، aider à، réussir à) و با de (essayer de، décider de، arrêter de، oublier de، finir de، accepter de، refuser de، promettre de، avoir besoin de، avoir envie de، avoir peur de)؛ فقط فعل‌های فهرست.
+can_do: حالا می‌توانی بگویی چه کاری را دوست داری، یاد می‌گیری، سعی می‌کنی یا یادت رفت: J'aime lire. J'apprends à nager. J'ai oublié de fermer la porte.
+rule: وقتی دو فعل پشت سر هم می‌آیند، فقط اولی صرف می‌شود و دومی مصدر است؛ بعضی فعل‌ها مستقیم (j'aime lire، je sais nager)، بعضی با à (j'apprends à nager) و بعضی با de (j'essaie de dormir)؛ حرف اضافه را با خود فعل یاد بگیر.
+mistake: در فارسی فعل دوم هم صرف می‌شود («دوست دارم بخوانم»، «سعی می‌کنم بخوابم») و حرف اضافه ندارد، برای همین فارسی‌زبان‌ها فعل دوم را صرف می‌کنند («Je veux mange») یا حرف اضافه را جا می‌اندازند و قاطی می‌کنند («J'essaie dormir»، «J'apprends de nager»)؛ درست: Je veux manger. J'essaie de dormir. J'apprends à nager.
+lesson:
+وقتی دو فعل پشت سر هم می‌آیند، فقط اولی صرف می‌شود و دومی مصدر است: Je veux manger. فارسی هر دو را صرف می‌کند («می‌خواهم بخورم»)، ولی فرانسوی نه.
+بعضی فعل‌ها مصدر را مستقیم و بی‌حرف اضافه می‌گیرند: aimer، adorer، détester، préférer، vouloir، pouvoir، devoir، savoir، aller و espérer: J'aime lire. Je sais nager. J'espère réussir.
+بعضی با à: commencer à، apprendre à، aider à و réussir à: J'apprends à conduire. Il commence à pleuvoir.
+بعضی با de: essayer de، décider de، arrêter de، oublier de، finir de، accepter de، refuser de و promettre de: J'essaie de dormir. Arrête de crier !
+عبارت‌های avoir besoin، avoir envie و avoir peur هم de می‌گیرند: J'ai envie de sortir. J'ai peur de tomber.
+de پیش از صدادار می‌شود d': J'ai décidé d'apprendre l'anglais. N'oublie pas d'acheter du pain.
+قاعدهٔ کلی برای انتخاب حرف اضافه نیست؛ هر فعل را با حرف اضافه‌اش یاد بگیر، مثل apprendre à و essayer de.
+منفی دور فعل اول می‌آید و ضمیر مفعولی قبل از مصدر: Je n'aime pas conduire. J'essaie de le comprendre.
+sets:
+بی‌حرف اضافه: aimer, adorer, préférer, vouloir, savoir, espérer
+با à: commencer à, apprendre à, aider à, réussir à
+با de: essayer de, décider de, arrêter de, oublier de, avoir envie de
+examples:
+J'aime lire le soir. | دوست دارم شب‌ها کتاب بخوانم.
+Mon fils apprend à nager. | پسرم دارد شنا یاد می‌گیرد.
+J'ai oublié de fermer la fenêtre. | یادم رفت پنجره را ببندم.
+Nous avons décidé de partir tôt. | تصمیم گرفتیم زود راه بیفتیم.
+targets:
+Je sais [nager]. | شنا بلدم. | d: nage, à nager, de nager | hint: (nager)
+Elle adore [danser]. | او عاشق رقصیدن است. | d: danse, à danser, dansé | hint: (danser)
+Tu préfères [rester] à la maison ? | ترجیح می‌دهی خانه بمانی؟ | d: restes, à rester, resté | hint: (rester)
+Nous voulons [visiter] le musée. | می‌خواهیم از موزه دیدن کنیم. | d: visitons, de visiter, à visiter | hint: (visiter)
+J'espère [réussir] mon examen. | امیدوارم در امتحانم قبول شوم. | d: réussis, à réussir, réussi | hint: (réussir)
+Ils détestent [attendre]. | آن‌ها از منتظر ماندن بدشان می‌آید. | d: attendent, à attendre, attendu | hint: (attendre)
+Je n'aime pas [conduire] la nuit. | دوست ندارم شب رانندگی کنم. | d: conduis, conduit, conduisant | hint: (conduire)
+J'apprends [à] conduire. | دارم رانندگی یاد می‌گیرم. | d: de, en, au
+Il commence [à] pleuvoir. | دارد باران می‌گیرد. | d: au, en, a
+Le professeur m'aide{aider} [à] comprendre. | معلم کمکم می‌کند بفهمم. | d: de, au, en
+Tu as réussi [à] trouver la gare ? | توانستی ایستگاه را پیدا کنی؟ | d: de, au, en
+Je n'ai pas réussi [à] dormir. | نتوانستم بخوابم. | d: de, au, en
+J'essaie [de] dormir. | سعی می‌کنم بخوابم. | d: à, en, du
+Nous avons décidé [de] vendre la voiture. | تصمیم گرفتیم ماشین را بفروشیم. | d: à, du, en
+Arrête [de] crier ! | داد نزن! | d: à, en, du
+N'oublie pas [d']acheter du pain ! | یادت نرود نان بخری! | d: à, de, en
+Tu as fini [de] manger ? | غذایت را تمام کردی؟ | d: à, en, du
+J'ai besoin [de] dormir. | نیاز دارم بخوابم. | d: à, du, en
+Tu as envie [de] sortir ce soir ? | امشب دلت می‌خواهد بیرون بروی؟ | d: à, du, en | full: Ce soir, tu as envie de sortir ?
+Elle a peur [de] tomber. | او می‌ترسد بیفتد. | d: à, du, en
+Il a promis [de] venir. | او قول داد بیاید. | d: à, du, en
+Mon père a accepté [de] m'aider. | پدرم قبول کرد کمکم کند. | d: à, en, du
+Ils refusent [de] parler. | آن‌ها حاضر نیستند حرف بزنند. | d: à, en, du
+J'ai arrêté [de] manger du sucre. | خوردن شکر را کنار گذاشتم. | d: à, du, en
+Il m'a aidé [à] faire mes devoirs. | او کمکم کرد تکالیفم را انجام بدهم. | d: de, au, en
+Elle a décidé [de partir]. | او تصمیم گرفت برود. | d: partir, à partir, part
+Tu sais [conduire] ? | رانندگی بلدی؟ | d: conduis, à conduire, de conduire | hint: (conduire)
+J'ai commencé [à travailler] à vingt ans. | از بیست سالگی شروع به کار کردم. | d: travailler, travaillé, à travaillé | full: À vingt ans, j'ai commencé à travailler.
+Il a oublié [d'appeler] sa mère. | یادش رفت به مادرش زنگ بزند. | d: appeler, à appeler, de appeler
+Vous pouvez [m'aider] ? | می‌توانید کمکم کنید؟ | d: m'aidez, à m'aider, de m'aider
+On doit [partir] maintenant. | باید الان برویم. | d: part, de partir, à partir | full: Maintenant, on doit partir.
+Les enfants aiment [jouer] dans le jardin. | بچه‌ها دوست دارند در باغ بازی کنند. | d: jouent, joué, jouant
+J'aime [lire], mais je n'ai pas le temps [de] lire. | دوست دارم کتاب بخوانم، ولی وقت خواندن ندارم. | d: lis, lu, lisant / à, du, en
+J'essaie [de] travailler, mais Paul commence [à] chanter. | سعی می‌کنم کار کنم، ولی پل شروع می‌کند به آواز خواندن. | d: à, du, en / au, en, a
+Elle veut [apprendre] [à] conduire. | او می‌خواهد رانندگی یاد بگیرد. | d: apprend, d'apprendre, appris / de, au, en
+N'oubliez pas [de] réserver et [d']acheter les billets. | یادتان نرود رزرو کنید و بلیت‌ها را بخرید. | d: à, en, du / de, à, en
+J'ai décidé [d']apprendre l'anglais et je commence [à] comprendre. | تصمیم گرفتم انگلیسی یاد بگیرم و کم‌کم دارم می‌فهمم. | d: de, à, en / au, en, a
+Tu as envie [de] sortir ou tu préfères [rester] ici ? | دلت می‌خواهد بیرون بروی یا ترجیح می‌دهی اینجا بمانی؟ | d: à, du, en / restes, à rester, resté
+Mon fils sait [lire] et il apprend [à] écrire. | پسرم خواندن بلد است و دارد نوشتن یاد می‌گیرد. | d: lit, à lire, de lire / de, au, en | full: Mon fils apprend à écrire et il sait lire.
+Arrête [de] parler et aide{aider}-moi [à] ranger la cuisine ! | حرف نزن و کمکم کن آشپزخانه را مرتب کنم! | d: à, du, en / de, au, en
+transforms:
+Je lis. => J'aime lire. | با aimer بنویس: «دوست دارم بخوانم».
+Je nage. => Je sais nager. | با savoir بنویس: «شنا بلدم».
+Il pleut. => Il commence à pleuvoir. | با commencer بنویس: «دارد باران می‌گیرد».
+Je dors. => J'essaie de dormir. ; J'essaye de dormir. | با essayer بنویس: «سعی می‌کنم بخوابم».
+Je conduis. => J'apprends à conduire. | با apprendre بنویس: «رانندگی یاد می‌گیرم».
+Je pars. => J'ai décidé de partir. | با décider در passé composé بنویس: «تصمیم گرفتم بروم».
+Il parle. => Il arrête de parler. | با arrêter بنویس: «دیگر حرف نمی‌زند».
+J'apprends de nager. => J'apprends à nager. | غلط جمله را درست کن.
+translations:
+شنا بلدم. => Je sais nager.
+دوست دارم کتاب بخوانم. => J'aime lire. ; J'aime lire des livres.
+سعی می‌کنم بخوابم. => J'essaie de dormir. ; J'essaye de dormir.
+یادم رفت در را ببندم. => J'ai oublié de fermer la porte.
+دارم رانندگی یاد می‌گیرم. => J'apprends à conduire. ; Je suis en train d'apprendre à conduire.
+تصمیم گرفتیم زود راه بیفتیم. => Nous avons décidé de partir tôt. ; On a décidé de partir tôt.
+دلم می‌خواهد بیرون بروم. => J'ai envie de sortir.
+دارد باران می‌گیرد. => Il commence à pleuvoir.

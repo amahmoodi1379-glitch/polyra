@@ -1,0 +1,34 @@
+code: fr-a2-d012
+title: اجاره دوچرخه
+situation: در یک مغازه کرایه دوچرخه هستی و می‌خواهی برای یک روز دوچرخه کرایه کنی.
+turns:
+B: Bonjour ! Vous voulez louer un vélo ? | سلام! می‌خواهید دوچرخه کرایه کنید؟
+- Oui, je voudrais vendre un vélo. | بله، می‌خواهم یک دوچرخه بفروشم.
+- Oui, pour tout la journée, s'il vous plaît. | بله، برای کل روز، لطفاً.
++ Oui, pour toute la journée, s'il vous plaît. | بله، برای کل روز، لطفاً.
+why: journée مؤنث است، پس «toute la journée». vendre یعنی فروختن، نه کرایه کردن.
+B: Pas de problème. C'est{être} quinze euros la journée, ou quatre euros de l'heure. | مشکلی نیست. روزی پانزده یورو، یا ساعتی چهار یورو.
++ Je prends la journée, alors. C'est{être} moins cher. | پس روزانه را برمی‌دارم. ارزان‌تر است.
+- Je prends le journée, alors. C'est{être} moins cher. | پس روزانه را برمی‌دارم. ارزان‌تر است.
+- Je prends la journée, alors. C'est{être} plus{plus} cher. | پس روزانه را برمی‌دارم. گران‌تر است.
+why: journée مؤنث است: «la journée». برای یک روز کامل، پانزده یورو از ساعتی چهار یورو ارزان‌تر است، نه گران‌تر.
+B: D'accord. Vous avez une carte d'identité ? | باشد. کارت شناسایی دارید؟
+- Oui, voilà ma carte de crédit. | بله، این کارت اعتباری‌ام است.
++ Oui, voilà ma carte d'identité. | بله، این کارت شناسایی‌ام است.
+- Oui, voilà mon carte d'identité. | بله، این کارت شناسایی‌ام است.
+why: پیش از واکه de می‌شود d': «carte d'identité». کارت اعتباری برای پرداخت است، نه برای شناسایی.
+B: Merci. Je la garde jusqu'à ce soir. Vous voulez aussi un casque ? | ممنون. تا امشب پیش من می‌ماند. کلاه ایمنی هم می‌خواهید؟
+- Oui, bonne idée. Elle est gratuite ? | بله، فکر خوبی است. رایگان است؟
+- Oui, bonne idée. Le vélo est gratuit ? | بله، فکر خوبی است. دوچرخه رایگان است؟
++ Oui, bonne idée. Il est gratuit ? | بله، فکر خوبی است. رایگان است؟
+why: casque مذکر است، پس «il est gratuit». قیمت دوچرخه را فروشنده گفته بود.
+B: Oui, il est gratuit. Rendez le vélo avant dix-neuf heures, d'accord ? | بله، رایگان است. دوچرخه را قبل از ساعت نوزده برگردانید، باشد؟
++ D'accord. Et si j'ai un problème avec le vélo, je vous appelle{appeler} ? | باشد. اگر با دوچرخه مشکلی پیدا کردم، به شما زنگ بزنم؟
+- D'accord. Et si j'aurai un problème avec le vélo, je vous appelle{appeler} ? | باشد. اگر با دوچرخه مشکلی پیدا کردم، به شما زنگ بزنم؟
+- D'accord. Je le rends après dix-neuf heures, alors. | باشد. پس بعد از ساعت نوزده برش می‌گردانم.
+why: بعد از si فعل حال می‌آید: «si j'ai»، نه «si j'aurai». فروشنده گفت قبل از ساعت نوزده، نه بعد از آن.
+B: Oui, voilà notre numéro. Bonne promenade ! | بله، این شماره ماست. گردش خوبی داشته باشید!
+- Merci ! À demain soir ! | ممنون! تا فردا شب!
++ Merci ! À ce soir ! | ممنون! تا امشب!
+- Merci ! Vous aussi ! | ممنون! شما هم همین‌طور!
+why: دوچرخه را امشب برمی‌گردانی، پس «À ce soir». فروشنده گردش نمی‌رود که بگویی «Vous aussi».

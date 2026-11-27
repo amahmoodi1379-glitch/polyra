@@ -1,0 +1,34 @@
+code: fr-a2-d011
+title: آرایشگاه
+situation: پیش آرایشگر رفته‌ای تا موهایت را کمی کوتاه کنی.
+turns:
+B: Bonjour ! Vous avez rendez-vous ? | سلام! وقت قبلی دارید؟
+- Oui, j'ai trois heures. Au nom de Karimi. | بله، سه ساعت وقت دارم. به اسم کریمی.
++ Oui, à trois heures. Au nom de Karimi. | بله، ساعت سه. به اسم کریمی.
+- Oui, à trois heures. À la nom de Karimi. | بله، ساعت سه. به اسم کریمی.
+why: ساعت قرار را با à می‌گوییم: «à trois heures»؛ «j'ai trois heures» یعنی «سه ساعت وقت دارم». nom مذکر است: «au nom de».
+B: Très bien. Asseyez-vous ici. Qu'est-ce que je vous fais aujourd'hui ? | خیلی خوب. اینجا بنشینید. امروز چه کار برایتان بکنم؟
++ Je voudrais les cheveux un peu plus courts, s'il vous plaît. | موهایم را کمی کوتاه‌تر می‌خواهم، لطفاً.
+- Je voudrais les cheveux un peu plus courtes, s'il vous plaît. | موهایم را کمی کوتاه‌تر می‌خواهم، لطفاً.
+- Je voudrais les cheveux un peu plus longs, s'il vous plaît. | موهایم را کمی بلندتر می‌خواهم، لطفاً.
+why: cheveux مذکر است، پس «courts»، نه «courtes». آرایشگر مو را کوتاه می‌کند و نمی‌تواند بلندترش کند.
+B: D'accord. Je coupe beaucoup ou juste un peu ? | باشد. زیاد کوتاه کنم یا فقط کمی؟
+- Beaucoup, s'il vous plaît. Pas trop court. | زیاد، لطفاً. نه خیلی کوتاه.
+- Juste une peu, s'il vous plaît. Pas trop court. | فقط کمی، لطفاً. نه خیلی کوتاه.
++ Juste un peu, s'il vous plaît. Pas trop court. | فقط کمی، لطفاً. نه خیلی کوتاه.
+why: «un peu» همیشه همین شکل را دارد و «une peu» نداریم. «Beaucoup» با «نه خیلی کوتاه» جور نیست.
+B: Et derrière ? Je les coupe aussi ? | پشتش چه؟ آن‌ها را هم کوتاه کنم؟
+- Non, vous pouvez les couper un peu aussi. | نه، می‌توانید آن‌ها را هم کمی کوتاه کنید.
++ Oui, vous pouvez les couper un peu aussi. | بله، می‌توانید آن‌ها را هم کمی کوتاه کنید.
+- Oui, vous pouvez couper les{les-pron} un peu aussi. | بله، می‌توانید آن‌ها را هم کمی کوتاه کنید.
+why: ضمیر les پیش از مصدر می‌آید: «vous pouvez les couper». «Non» با «کوتاهشان کنید» جور نیست.
+B: Voilà ! Regardez dans le miroir. Ça vous plaît ? | تمام شد! در آینه نگاه کنید. خوشتان می‌آید؟
++ Oui, ça me plaît beaucoup. C'est{être} parfait ! | بله، خیلی خوشم می‌آید. عالی است!
+- Oui, je plais beaucoup. C'est{être} parfait ! | بله، من خیلی به دل می‌نشینم. عالی است!
+- Oui, ça te plaît beaucoup. C'est{être} parfait ! | بله، تو خیلی خوشت می‌آید. عالی است!
+why: «ça me plaît» یعنی «خوشم می‌آید». «je plais» یعنی «من به دل دیگران می‌نشینم»، و «ça te plaît» درباره آرایشگر است.
+B: Merci ! Ça fait vingt-cinq euros. | ممنون! بیست‌وپنج یورو می‌شود.
+- Voilà. Je reviens il y a deux mois ! | بفرمایید. دو ماه پیش برمی‌گردم!
+- Voilà. Je reviens depuis deux mois ! | بفرمایید. از دو ماه پیش برمی‌گردم!
++ Voilà. Je reviens dans deux mois ! | بفرمایید. دو ماه دیگر برمی‌گردم!
+why: برای آینده dans می‌گوییم: «dans deux mois». «il y a» برای گذشته است و depuis برای چیزی که از گذشته ادامه دارد.

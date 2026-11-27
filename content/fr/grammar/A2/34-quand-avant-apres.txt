@@ -1,0 +1,86 @@
+code: fr-a2-temps
+title: quand، pendant que، avant de، après: «وقتی»، «قبل از»، «بعد از»
+scope: quand + جمله (Quand il pleut, je reste à la maison. Quand je suis arrivé, il dormait.)، pendant que + جمله در برابر pendant + اسم، avant + اسم و avant de + مصدر (avant le dîner، avant de partir)، و après + اسم (après le dîner)؛ après avoir + اسم مفعول و quand + futur در B1 می‌آیند.
+can_do: حالا می‌توانی بگویی کارهایت کِی، قبل از چه و بعد از چه انجام می‌شوند: Quand il pleut, je lis. Avant de partir, je ferme la porte. Après le dîner, on regarde un film.
+rule: quand و pendant que + جمله؛ pendant + اسم؛ avant + اسم، ولی avant de + مصدر؛ après + اسم.
+mistake: فارسی «قبل از» را هم جلوی اسم و هم جلوی فعل می‌گذارد («قبل از شام»، «قبل از رفتن») و «موقعِ» را هم جلوی اسم و هم جلوی جمله، برای همین فارسی‌زبان‌ها می‌نویسند «avant partir» یا «pendant je travaille»؛ درست: avant de partir، pendant que je travaille.
+lesson:
+quand یعنی «وقتی، هر وقت» و بعدش یک جملهٔ کامل (فاعل + فعل) می‌آید: Quand il pleut, je reste à la maison. Quand je suis arrivé, il dormait.
+pendant que یعنی «در حالی که، در همان مدتی که» و بعدش هم جمله می‌آید: Pendant que je fais la cuisine, tu mets la table.
+pendant بدون que فقط جلوی اسم می‌آید: pendant le film (در طول فیلم). پس pendant + اسم، ولی pendant que + جمله.
+avant + اسم یعنی «قبل از …»: avant le dîner. جلوی فعل باید avant de + مصدر بگذاری: avant de partir (قبل از رفتن)؛ «avant partir» غلط است.
+فعل بعد از avant de صرف نمی‌شود و فاعلش همان فاعل جملهٔ اصلی است: Avant de me coucher, je lis (me با je جور است).
+après + اسم یعنی «بعد از …»: après le travail، après l'école. «بعد از + فعل» در سطح بعد می‌آید.
+quand یا pendant que را می‌شود اول یا وسط جمله گذاشت: Quand il pleut, je lis = Je lis quand il pleut.
+table:
+کلمه | بعدش | مثال
+quand | جمله | quand il pleut
+pendant que | جمله | pendant que je travaille
+pendant | اسم | pendant le film
+avant | اسم | avant le dîner
+avant de | مصدر | avant de partir
+après | اسم | après le travail
+examples:
+Quand j'ai faim, je mange une pomme. | وقتی گرسنه‌ام، یک سیب می‌خورم.
+Pendant que je travaille, j'écoute de la musique. | وقتی کار می‌کنم، موسیقی گوش می‌دهم.
+Avant de partir, je ferme{fermer} la porte. | قبل از رفتن، در را می‌بندم.
+Après le dîner, nous regardons la télé. | بعد از شام تلویزیون تماشا می‌کنیم.
+targets:
+[Quand] il pleut, je reste à la maison. | وقتی باران می‌آید، در خانه می‌مانم. | d: Pendant, Avant, Après
+[Quand] il fait beau, nous allons à la plage. | وقتی هوا خوب است، به ساحل می‌رویم. | d: Pendant, Avant de, Après
+Je prends un taxi [quand] je suis en retard. | وقتی دیرم شده، تاکسی می‌گیرم. | d: pendant, avant, après
+[Quand] je suis{être} arrivé, Paul dormait. | وقتی رسیدم، پل خواب بود. | d: Pendant, Avant, Après
+[Quand] Marie a téléphoné, nous mangions. | وقتی ماری تلفن زد، داشتیم غذا می‌خوردیم. | d: Pendant, Avant de, Après
+[Pendant que] je fais la cuisine, tu mets la table. | وقتی من آشپزی می‌کنم، تو میز را می‌چینی. | d: Pendant, Avant de, Après | ok: Quand
+Les enfants jouent [pendant que] leurs parents travaillent. | بچه‌ها بازی می‌کنند در حالی که پدر و مادرشان کار می‌کنند. | d: pendant, avant de, après | ok: quand
+[Pendant que] tu dormais, j'ai rangé la maison. | وقتی تو خواب بودی، خانه را مرتب کردم. | d: Pendant, Avant de, Après | ok: Quand
+[Pendant] le film, mon frère a dormi. | در طول فیلم، برادرم خوابید. | d: Pendant que, Quand, Avant de
+[Avant de] sortir, prends ton parapluie. | قبل از بیرون رفتن، چترت را بردار. | d: Avant, Après, Pendant
+[Avant de] manger, lave{se laver}-toi les mains. | قبل از غذا خوردن، دست‌هایت را بشوی. | d: Avant, Après, Pendant que
+Avant de [dormir], je bois{boire} un verre de lait. | قبل از خواب، یک لیوان شیر می‌نوشم. | d: dors, dort, dormi | hint: (dormir)
+Avant de [me] coucher, je ferme{fermer} la porte à clé. | قبل از خوابیدن، در را قفل می‌کنم. | d: se, je, moi
+Il fait ses devoirs avant de [regarder] la télé. | او قبل از تلویزیون دیدن تکلیف‌هایش را انجام می‌دهد. | d: regarde, regardé, regardes | hint: (regarder)
+[Avant] le dîner, je fais mes devoirs. | قبل از شام، تکلیف‌هایم را انجام می‌دهم. | d: Avant de, Pendant que, Quand
+Je bois{boire} un café [avant] le travail. | قبل از کار یک قهوه می‌نوشم. | d: avant de, pendant que, quand
+[Après] le match, on mange une pizza. | بعد از مسابقه، پیتزا می‌خوریم. | d: Après de, Pendant que, Quand
+Nous allons au parc [après] l'école. | بعد از مدرسه به پارک می‌رویم. | d: après de, pendant que, quand
+Appelle-moi [après] le cours. | بعد از کلاس به من زنگ بزن. | d: après de, pendant que, quand
+Ne parle pas [pendant] le repas ! | موقع غذا خوردن حرف نزن! | d: pendant que, quand, avant de
+Avant de [partir], il faut éteindre la lumière. | قبل از رفتن، باید چراغ را خاموش کرد. | d: pars, part, parti | hint: (partir)
+Je me lave les mains avant de [faire] la cuisine. | قبل از آشپزی دست‌هایم را می‌شویم. | d: fais, fait, faites
+[Quand] tu es fatigué, tu dois dormir. | وقتی خسته‌ای، باید بخوابی. | d: Pendant, Avant, Après
+[Quand] j'étais petit, j'avais peur des chiens. | وقتی کوچک بودم، از سگ‌ها می‌ترسیدم. | d: Pendant, Avant, Après
+Ne pars pas [avant de] dire au revoir ! | قبل از خداحافظی نرو! | d: avant, après, pendant
+Qu'est-ce que tu fais [quand] tu as du temps libre ? | وقتی وقت آزاد داری چه کار می‌کنی؟ | d: pendant, avant, après
+Tu peux m'aider [après] le déjeuner ? | بعد از ناهار می‌توانی کمکم کنی؟ | d: après de, pendant que, quand
+Ma sœur chante [pendant que] ma mère fait la vaisselle. | خواهرم آواز می‌خواند در حالی که مادرم ظرف می‌شوید. | d: pendant, avant de, après | ok: quand
+[Quand] nous sommes arrivés à la gare, il pleuvait. | وقتی به ایستگاه رسیدیم، باران می‌آمد. | d: Pendant, Avant, Après
+Je fais du sport [avant] le petit-déjeuner. | قبل از صبحانه ورزش می‌کنم. | d: avant de, pendant que, quand
+Avant de [partir] en vacances, j'ai acheté une valise. | قبل از رفتن به تعطیلات، یک چمدان خریدم. | d: pars, parti, partons
+[Après] les cours, je vais à la bibliothèque. | بعد از کلاس‌ها به کتابخانه می‌روم. | d: Après de, Pendant que, Quand
+[Quand] il pleut, je lis [pendant que] mon frère joue. | وقتی باران می‌آید، من کتاب می‌خوانم در حالی که برادرم بازی می‌کند. | d: Pendant, Avant, Après / pendant, avant de, après | ok: Quand / quand
+[Avant] le dîner, je travaille et [après] le dîner, je me repose. | قبل از شام کار می‌کنم و بعد از شام استراحت می‌کنم. | d: Avant de, Pendant que, Quand / après de, pendant que, quand | full: Après le dîner, je me repose et avant le dîner, je travaille.
+[Avant de] dormir, je lis, et [quand] je me réveille, je bois{boire} un café. | قبل از خواب کتاب می‌خوانم و وقتی بیدار می‌شوم قهوه می‌نوشم. | d: Avant, Après, Pendant / pendant, avant, après
+[Pendant que] Paul fait les courses, je prépare le repas [avant] son retour. | وقتی پل خرید می‌کند، من قبل از برگشتنش غذا را آماده می‌کنم. | d: Pendant, Avant de, Après / avant de, pendant que, quand | ok: Quand
+[Quand] Léa est rentrée, sa mère [dormait]. | وقتی لئا به خانه برگشت، مادرش خواب بود. | d: Pendant, Avant, Après / dort, dormir, dormi
+Lave{se laver}-toi les mains [avant de] manger et [après] le repas. | قبل از غذا خوردن و بعد از غذا دست‌هایت را بشوی. | d: avant, après, pendant / après de, pendant que, quand
+[Pendant] l'été, je nage [quand] il fait chaud. | در تابستان، وقتی هوا گرم است شنا می‌کنم. | d: Pendant que, Quand, Avant de / pendant, avant, après
+Je regarde la télé [après] l'école et [avant de] faire mes devoirs. | بعد از مدرسه و قبل از انجام تکلیف‌هایم تلویزیون تماشا می‌کنم. | d: après de, pendant que, quand / avant, après, pendant
+transforms:
+Je pars. Avant, je ferme{fermer} la porte. => Avant de partir, je ferme{fermer} la porte. ; Je ferme{fermer} la porte avant de partir. | دو جمله را با avant de به هم وصل کن.
+Je mange. Avant, je me lave les mains. => Avant de manger, je me lave les mains. ; Je me lave les mains avant de manger. | دو جمله را با avant de به هم وصل کن.
+Avant de dîner, je fais mes devoirs. => Avant le dîner, je fais mes devoirs. ; Je fais mes devoirs avant le dîner. | به‌جای avant de dîner، avant + اسم (le dîner) بگذار.
+Je travaille et en même temps tu dors. => Je travaille pendant que tu dors. ; Pendant que tu dors, je travaille. | با pendant que یک جمله بساز.
+Il pleut, alors je reste à la maison. => Quand il pleut, je reste à la maison. ; Je reste à la maison quand il pleut. | با quand یک جمله بساز.
+Je regarde la télé, puis je dors. => Avant de dormir, je regarde la télé. ; Je regarde la télé avant de dormir. | با avant de یک جمله بساز.
+Je fais du sport, puis je prends une douche. => Après le sport, je prends une douche. ; Je prends une douche après le sport. | با après + اسم (le sport) بنویس.
+Je suis{être} arrivé et il dormait. => Quand je suis{être} arrivé, il dormait. ; Il dormait quand je suis{être} arrivé. | با quand یک جمله بساز.
+translations:
+قبل از رفتن، در را ببند. => Avant de partir, ferme{fermer} la porte. ; Ferme{fermer} la porte avant de partir.
+بعد از مدرسه به پارک می‌روم. => Après l'école, je vais au parc. ; Je vais au parc après l'école.
+وقتی باران می‌آید، در خانه می‌مانم. => Quand il pleut, je reste à la maison. ; Je reste à la maison quand il pleut. ; Quand il pleut, je reste chez moi. ; Je reste chez moi quand il pleut.
+وقتی رسیدم، پل خواب بود. => Quand je suis{être} arrivé, Paul dormait. ; Quand je suis{être} arrivée, Paul dormait. ; Paul dormait quand je suis{être} arrivé. ; Paul dormait quand je suis{être} arrivée.
+در حالی که تو آشپزی می‌کنی، من میز را می‌چینم. => Pendant que tu fais la cuisine, je mets la table. ; Pendant que tu cuisines{cuisiner}, je mets la table. ; Je mets la table pendant que tu fais la cuisine. ; Je mets la table pendant que tu cuisines{cuisiner}.
+قبل از شام ورزش می‌کنم. => Je fais du sport avant le dîner. ; Avant le dîner, je fais du sport.
+در طول فیلم خوابیدم. => J'ai dormi pendant le film. ; Pendant le film, j'ai dormi.
+قبل از غذا خوردن دست‌هایت را بشوی. => Avant de manger, lave{se laver}-toi les mains. ; Lave{se laver}-toi les mains avant de manger.

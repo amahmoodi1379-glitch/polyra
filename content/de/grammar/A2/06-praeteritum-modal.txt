@@ -1,0 +1,88 @@
+code: de-a2-praeteritum-modal
+title: گذشته فعل‌های وجهی: konnte، musste، wollte
+scope: Präteritum فعل‌های وجهی können، müssen، wollen، dürfen و mögen (konnte، musste، wollte، durfte، mochte) با پایان‌های -te، -test، -te، -ten، -tet، -ten، بدون Umlaut، با شکل یکسان برای ich و er/sie/es، و این‌که در گفتگو هم گذشته این فعل‌ها Präteritum است؛ sollte در واحد sollen می‌آید.
+can_do: حالا می‌توانی بگویی دیروز چه کاری را نتوانستی، مجبور بودی یا می‌خواستی بکنی: «Ich konnte nicht kommen»، «Ich musste arbeiten».
+rule: ریشه بدون Umlaut + -te: können ← konnte، müssen ← musste، dürfen ← durfte، wollen ← wollte، mögen ← mochte؛ ich و er/sie/es یک شکل دارند (ich konnte، er konnte)، و مصدر مثل زمان حال به آخر جمله می‌رود.
+mistake: فارسی‌زبان‌ها Umlaut زمان حال را نگه می‌دارند و می‌گویند «ich könnte» یا «ich müsste»؛ این‌ها معنی دیگری دارند («می‌توانستم/می‌شد»، «باید می‌کردم») و برای گذشته غلط‌اند؛ درست: Gestern konnte ich nicht kommen. Ich musste arbeiten. به ich هم -t اضافه نمی‌کنند: ich konnte، نه «ich konntet».
+tables: Präteritum | modal
+lesson:
+برای گفتن «نتوانستم»، «مجبور بودم» یا «می‌خواستم» آلمانی شکل گذشته ساده فعل‌های وجهی را می‌گوید که Präteritum نام دارد: Ich konnte gestern nicht kommen.
+ساختش آسان است: Umlaut (نقطه‌های روی حرف) می‌افتد و -te اضافه می‌شود: können ← konnte، müssen ← musste، dürfen ← durfte. wollen ← wollte و mögen ← mochte.
+پایان‌ها مثل war و hatte‌اند: ich konnte، du konntest، er konnte، wir konnten، ihr konntet، sie و Sie konnten. ich و er/sie/es یک شکل دارند.
+فعل دوم مثل زمان حال بی‌تغییر به آخر جمله می‌رود: Ich musste am Samstag arbeiten. Max wollte Pizza essen.
+
+در گفتگو برای گذشته بیشتر فعل‌ها Perfekt می‌گویند، ولی برای فعل‌های وجهی (مثل sein و haben) همین Präteritum را می‌گویند: Ich musste gestern arbeiten.
+مواظب باش: könnte و müsste با Umlaut شکل دیگری‌اند و معنی گذشته نمی‌دهند. برای گذشته همیشه بدون Umlaut: konnte، musste، durfte.
+möchte گذشته ندارد؛ برای «می‌خواستم» wollte می‌گویند: Ich wollte einen Kaffee.
+table:
+ضمیر | können | müssen | dürfen | wollen
+ich | konnte | musste | durfte | wollte
+du | konntest | musstest | durftest | wolltest
+er / sie / es | konnte | musste | durfte | wollte
+wir | konnten | mussten | durften | wollten
+ihr | konntet | musstet | durftet | wolltet
+sie / Sie | konnten | mussten | durften | wollten
+examples:
+Ich konnte gestern nicht kommen. | دیروز نتوانستم بیایم.
+Ich musste am Samstag arbeiten. | شنبه مجبور بودم کار کنم.
+Max wollte Pizza essen, aber das Restaurant war geschlossen. | ماکس می‌خواست پیتزا بخورد، ولی رستوران بسته بود.
+Mochtest du früher{früher} Gemüse? | قبلاً سبزی دوست داشتی؟
+targets:
+Gestern [konnte] ich nicht zum Kurs kommen. | دیروز نتوانستم به کلاس بیایم. | d: kann, könnte, konnten | hint: (können) | full: Ich konnte gestern nicht zum Kurs kommen.
+Früher{früher} [konnte] Max sehr gut schwimmen. | ماکس قبلاً خیلی خوب شنا می‌کرد. | d: kann, könnte, konntet | full: Max konnte früher sehr gut schwimmen.
+[Konntest] du den Text verstehen? | توانستی متن را بفهمی؟ | d: Konnte, Konntet, Konnten | hint: (können)
+Wir [konnten] die Haltestelle nicht finden. | ما نتوانستیم ایستگاه اتوبوس را پیدا کنیم. | d: konnte, konntet, konntest
+Max [konnte] seinen Schlüssel nicht finden. | ماکس نتوانست کلیدش را پیدا کند. | d: konnten, konntest, konntet | hint: (können)
+Am Anfang [konnte] ich nur wenig verstehen. | اوایل فقط کمی می‌فهمیدم. | d: konnten, konntest, konntet | full: Ich konnte am Anfang nur wenig verstehen.
+Ich [musste] gestern lange arbeiten. | دیروز مجبور بودم تا دیروقت کار کنم. | d: muss, müsste, mussten | hint: (müssen) | full: Gestern musste ich lange arbeiten.
+Anna [musste] am Samstag zum Arzt gehen. | آنا شنبه مجبور شد پیش دکتر برود. | d: musstet, mussten, musstest | full: Am Samstag musste Anna zum Arzt gehen.
+[Musstet] ihr am Flughafen lange warten? | مجبور شدید در فرودگاه مدت زیادی منتظر بمانید؟ | d: Musste, Mussten, Musstest | hint: (müssen)
+Die Kinder [mussten] früh ins Bett gehen. | بچه‌ها مجبور بودند زود بخوابند. | d: musste, musstet, musstest
+Warum [musstest] du gestern so früh gehen? | چرا دیروز مجبور شدی این‌قدر زود بروی؟ | d: musste, musst, müsstest | hint: (müssen)
+Tut{leidtun} mir leid{leidtun}, ich [musste] einkaufen. | ببخشید، باید خرید می‌کردم. | d: mussten, musstest, musstet
+Die Schüler [mussten] einen Text schreiben. | دانش‌آموزان مجبور بودند یک متن بنویسند. | d: musste, musstet, musstest | hint: (müssen)
+Früher{früher} [durfte] ich nicht allein in die Stadt fahren. | قبلاً اجازه نداشتم تنها به شهر بروم. | d: darf, dürfte, durften | hint: (dürfen) | full: Ich durfte früher nicht allein in die Stadt fahren.
+[Durftet] ihr im Museum fotografieren? | اجازه داشتید در موزه عکس بگیرید؟ | d: Durfte, Durften, Durftest
+Wir [durften] im Kurs kein Handy benutzen. | ما اجازه نداشتیم سر کلاس از گوشی استفاده کنیم. | d: durfte, durftet, durftest | hint: (dürfen)
+Max [durfte] gestern lange fernsehen. | ماکس دیروز اجازه داشت تا دیروقت تلویزیون ببیند. | d: darf, dürfte, durften | full: Gestern durfte Max lange fernsehen.
+Ich [durfte] den Brief nicht lesen. | من اجازه نداشتم نامه را بخوانم. | d: durften, durftest, durftet | hint: (dürfen)
+Vorgestern [durfte] ich das Auto von Papa fahren. | پریروز اجازه داشتم ماشین بابا را برانم. | d: darf, dürfte, durften | full: Ich durfte vorgestern das Auto von Papa fahren.
+Ich [wollte] dich gestern anrufen. | دیروز می‌خواستم به تو زنگ بزنم. | d: will, wollten, wolltest | hint: (wollen) | full: Gestern wollte ich dich anrufen.
+Was [wolltest] du im Supermarkt kaufen? | می‌خواستی از سوپرمارکت چه بخری؟ | d: wollte, wolltet, wollten
+Lena [wollte] in Berlin studieren. | لنا می‌خواست در برلین درس بخواند. | d: wollten, wolltest, wolltet | hint: (wollen) | full: In Berlin wollte Lena studieren.
+Wir [wollten] am Wochenende wandern, aber es hat geregnet. | می‌خواستیم آخر هفته پیاده‌روی کنیم، ولی باران آمد. | d: wollte, wolltet, wolltest | full: Am Wochenende wollten wir wandern, aber es hat geregnet.
+[Wolltet] ihr nicht mitkommen? | مگر نمی‌خواستید با ما بیایید؟ | d: Wollte, Wollten, Wolltest | hint: (wollen)
+Gestern [wollte] Lena nicht aufstehen. | دیروز لنا نمی‌خواست از رختخواب بلند شود. | d: will, wollten, wolltest | full: Lena wollte gestern nicht aufstehen.
+Sie [wollten] uns besuchen, aber sie hatten keine Zeit. | آن‌ها می‌خواستند به دیدن ما بیایند، ولی وقت نداشتند. | d: wolltet, wolltest, wollt
+Wir [wollten] ein kleines Haus kaufen. | ما می‌خواستیم یک خانه کوچک بخریم. | d: wollte, wolltet, wolltest | hint: (wollen)
+Früher{früher} [mochte] ich keinen Fisch. | قبلاً ماهی دوست نداشتم. | d: mag, möchte, mochten | hint: (mögen) | full: Ich mochte früher keinen Fisch.
+Mein Opa [mochte] keine Katzen. | پدربزرگم گربه دوست نداشت. | d: mochten, mochtest, mochtet
+Ich bin nicht gekommen, weil ich arbeiten [musste]. | نیامدم، چون مجبور بودم کار کنم. | d: musst, mussten, musstest | full: Weil ich arbeiten musste, bin ich nicht gekommen.
+Er sagt, dass er nicht kommen [konnte]. | او می‌گوید که نتوانسته بیاید. | d: konnten, konntest, konntet | hint: (können)
+Paul [musste] den Bus nehmen, weil sein Auto kaputt war. | پاول مجبور شد با اتوبوس برود، چون ماشینش خراب بود. | d: mussten, musstest, musstet | full: Weil sein Auto kaputt war, musste Paul den Bus nehmen.
+Ich [wollte] kommen, aber ich [musste] arbeiten. | می‌خواستم بیایم، ولی مجبور بودم کار کنم. | d: wollten, wolltest, wolltet / mussten, musstest, musstet
+Gestern [musste] ich lange arbeiten und [konnte] nicht kochen. | دیروز مجبور بودم تا دیروقت کار کنم و نتوانستم آشپزی کنم. | d: muss, müsste, mussten / kann, könnte, konnten | full: Ich musste gestern lange arbeiten und konnte nicht kochen.
+[Wolltest] du nicht mitkommen? – Doch, aber ich [durfte] nicht. | مگر نمی‌خواستی با ما بیایی؟ – چرا، ولی اجازه نداشتم. | d: Wollte, Wolltet, Wollten / durften, durftest, durftet
+Früher{früher} [konnte] ich kein Deutsch, aber jetzt [kann] ich ein bisschen. | قبلاً آلمانی بلد نبودم، ولی حالا کمی بلدم. | d: kann, könnte, konnten / konnte, kannst, können | full: Ich konnte früher kein Deutsch, aber jetzt kann ich ein bisschen.
+Wir [mussten] lange warten, weil der Zug Verspätung [hatte]. | ما مجبور شدیم مدت زیادی منتظر بمانیم، چون قطار تأخیر داشت. | d: musste, musstet, musstest / hatten, hattest, hattet | full: Weil der Zug Verspätung hatte, mussten wir lange warten.
+Die Kinder [wollten] spielen, aber sie [durften] nicht. | بچه‌ها می‌خواستند بازی کنند، ولی اجازه نداشتند. | d: wollte, wolltet, wolltest / durftet, durftest, darfst
+Letzte Woche [konnte] Anna nicht arbeiten, weil sie krank [war]. | هفته پیش آنا نتوانست کار کند، چون مریض بود. | d: kann, könnte, konnten / warst, wart, bin | full: Anna konnte letzte Woche nicht arbeiten, weil sie krank war. ; Weil sie krank war, konnte Anna letzte Woche nicht arbeiten. ; Weil Anna krank war, konnte sie letzte Woche nicht arbeiten.
+[Konntet] ihr gestern den Film sehen? – Nein, wir [mussten] lernen. | دیروز توانستید فیلم را ببینید؟ – نه، مجبور بودیم درس بخوانیم. | d: Konnte, Konnten, Könnt / musste, musstet, musstest
+transforms:
+Ich kann nicht kommen. => Ich konnte nicht kommen. | جمله را به گذشته ببر (Präteritum).
+Wir müssen lange warten. => Wir mussten lange warten. | جمله را به گذشته ببر (Präteritum).
+Darfst du hier parken? => Durftest du hier parken? | جمله را به گذشته ببر (Präteritum).
+Er will nach Hause gehen. => Er wollte nach Hause gehen. | جمله را به گذشته ببر (Präteritum).
+Ihr könnt gut schwimmen. => Ihr konntet gut schwimmen. | جمله را به گذشته ببر (Präteritum).
+Ich mag keine Tomaten. => Ich mochte keine Tomaten. | جمله را به گذشته ببر (Präteritum).
+Sie müssen viel arbeiten. => Sie mussten viel arbeiten. | جمله را به گذشته ببر (Präteritum).
+Ich wollte ins Kino gehen. => Wir wollten ins Kino gehen. | جمله را با wir بنویس.
+translations:
+مجبور بودم کار کنم. => Ich musste arbeiten. ; Ich habe arbeiten müssen.
+می‌خواستی چه بگویی؟ => Was wolltest du sagen? ; Was hast du sagen wollen?
+اجازه نداشتیم عکس بگیریم. => Wir durften nicht fotografieren. ; Wir haben nicht fotografieren dürfen. ; Wir durften keine Fotos machen. ; Wir haben keine Fotos machen dürfen.
+مجبور شدی پول بدهی؟ => Musstest du bezahlen? ; Hast du bezahlen müssen? ; Musstest du zahlen? ; Hast du zahlen müssen?
+من می‌خواستم بیایم. => Ich wollte kommen. ; Ich habe kommen wollen.
+دیروز مجبور بودم زود بیدار شوم. => Ich musste gestern früh aufstehen. ; Gestern musste ich früh aufstehen. ; Ich habe gestern früh aufstehen müssen. ; Gestern habe ich früh aufstehen müssen.
+اجازه داشتی تلویزیون ببینی؟ => Durftest du fernsehen? ; Hast du fernsehen dürfen?
+نتوانستم بخوابم. => Ich konnte nicht schlafen. ; Ich habe nicht schlafen können.

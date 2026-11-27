@@ -1,0 +1,39 @@
+code: de-a2-d008
+title: تاکسی
+situation: سوار تاکسی شده‌ای و به فرودگاه می‌روی. پروازت ساعت دوازده است.
+turns:
+B: Guten Morgen! Wohin möchten Sie? | صبح بخیر! کجا می‌خواهید بروید؟
+- Nach Flughafen, bitte{bitte}. | به فرودگاه، لطفاً.
++ Zum Flughafen, bitte{bitte}. | به فرودگاه، لطفاً.
+- Vom Flughafen, bitte{bitte}. | از فرودگاه، لطفاً.
+why: برای رفتن به یک جا در شهر zum می‌گوییم: «zum Flughafen». nach برای شهر و کشور است و vom یعنی «از».
+B: Gern. Wann geht Ihr Flug? | با کمال میل. پروازتان کی است؟
++ Um zwölf Uhr. Wie lange brauchen wir zum Flughafen? | ساعت دوازده. تا فرودگاه چقدر وقت لازم داریم؟
+- Zwölf Kilometer. Wie lange brauchen wir zum Flughafen? | دوازده کیلومتر. تا فرودگاه چقدر وقت لازم داریم؟
+- Um zwölf Uhr. Wie lange braucht wir zum Flughafen? | ساعت دوازده. تا فرودگاه چقدر وقت لازم داریم؟
+why: ساعت پرواز را می‌گویی: «Um zwölf Uhr»؛ کیلومتر فاصله است، نه ساعت. با wir شکل brauchen می‌آید، نه braucht.
+B: Normalerweise dreißig Minuten. Aber heute gibt es viel Verkehr. | معمولاً سی دقیقه. ولی امروز ترافیک زیاد است.
+- Oh nein! Kannst du bitte{bitte} schnell fahren? | وای نه! می‌شود لطفاً تند برانی؟
+- Oh nein! Können Sie bitte{bitte} langsam fahren? | وای نه! می‌شود لطفاً آهسته برانید؟
++ Oh nein! Können Sie bitte{bitte} schnell fahren? | وای نه! می‌شود لطفاً تند برانید؟
+why: دیرت شده، پس می‌خواهی تند برود (schnell)، نه آهسته (langsam). با راننده تاکسی Sie می‌گوییم، نه du.
+B: Ich versuche es. Aber ich darf nicht zu{zu-adv} schnell fahren. | سعی می‌کنم. ولی اجازه ندارم خیلی تند برانم.
++ Natürlich. Ich bin nur nervös, weil mein Flug um zwölf geht. | البته. فقط نگرانم، چون پروازم ساعت دوازده است.
+- Natürlich. Ich bin nur nervös, weil mein Flug geht um zwölf. | البته. فقط نگرانم، چون پروازم ساعت دوازده است.
+- Natürlich. Ich bin nur nervös, weil ich viel Zeit habe. | البته. فقط نگرانم، چون وقت زیادی دارم.
+why: بعد از weil فعل به آخر جمله می‌رود: «weil mein Flug um zwölf geht». وقت زیاد داشتن دلیل نگرانی نیست.
+B: So, hier ist der Flughafen. Das macht 38 Euro 50. | خب، این هم فرودگاه. می‌شود ۳۸ یورو و ۵۰ سنت. | tts: So, hier ist der Flughafen. Das macht achtunddreißig Euro fünfzig.
+- Hier sind 30 Euro. Stimmt so. | بفرمایید، ۳۰ یورو. بقیه‌اش مال خودتان. | tts: Hier sind dreißig Euro. Stimmt so.
+- Hier hast du 40 Euro. Stimmt so. | بیا، ۴۰ یورو. بقیه‌اش مال خودت. | tts: Hier hast du vierzig Euro. Stimmt so.
++ Hier sind 40 Euro. Stimmt so. | بفرمایید، ۴۰ یورو. بقیه‌اش مال خودتان. | tts: Hier sind vierzig Euro. Stimmt so.
+why: ۴۰ یورو بیشتر از کرایه است و «Stimmt so» یعنی بقیه‌اش مال راننده. ۳۰ یورو کم است، و با راننده du نمی‌گوییم.
+B: Danke schön! Kann ich Ihnen mit dem Koffer helfen? | خیلی ممنون! در آوردن چمدان کمکتان کنم؟
+- Ja, gern. Die Koffer ist sehr schwer. | بله، لطفاً. چمدان خیلی سنگین است.
++ Ja, gern. Der Koffer ist sehr schwer. | بله، لطفاً. چمدان خیلی سنگین است.
+- Ja, gern. Der Koffer ist sehr leicht. | بله، لطفاً. چمدان خیلی سبک است.
+why: کمک می‌خواهی چون چمدان سنگین است (schwer)؛ leicht یعنی سبک. Koffer مذکر است: «der Koffer».
+B: Bitte schön. Gute Reise! | بفرمایید. سفر بخیر!
++ Danke{danke}! Einen schönen Tag noch! | ممنون! روز خوبی داشته باشید!
+- Danke{danke}! Gute Reise! | ممنون! سفر بخیر!
+- Danke{danke}! Gute Besserung! | ممنون! زودتر خوب شوید!
+why: تشکر می‌کنی و برای راننده روز خوبی آرزو می‌کنی. راننده به سفر نمی‌رود و مریض هم نیست.

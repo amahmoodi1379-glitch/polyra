@@ -1,0 +1,83 @@
+code: fr-a2-y
+title: ضمیر y: j'y vais
+scope: ضمیر y به‌جای جایی که قبلاً گفته شده (à Paris، au cinéma، chez Paul، dans sa chambre)، قبل از فعل در زمان حال (j'y vais، on y va، il n'y va pas)، قبل از مصدر (je vais y aller) و قبل از فعل کمکی در passé composé (j'y suis allé، je n'y suis pas allé)؛ y برای à + چیز (j'y pense) در سطح بعد می‌آید.
+can_do: حالا می‌توانی بی‌آن‌که اسم جایی را تکرار کنی، بگویی آنجا می‌روی، آنجا بوده‌ای یا آنجا زندگی می‌کنی: Paris ? J'y vais demain. On y va ?
+rule: y یعنی «آنجا» و به‌جای à، au، chez، dans، en + جا می‌آید؛ جایش مثل ضمیرهای دیگر است: قبل از فعل (j'y vais)، قبل از مصدر (je vais y aller) و قبل از فعل کمکی (j'y suis allé)؛ je و ne قبلش می‌شوند j' و n'.
+mistake: فارسی‌زبان‌ها «آنجا» را مثل فارسی بعد از فعل یا با là می‌گویند («je vais là» یا «je là vais»)؛ وقتی جا از قبل معلوم است، فرانسوی y را قبل از فعل می‌گذارد: j'y vais. y را هم بعد از je و ne کوتاه نکردن خطاست: «je y vais» غلط است؛ درست: j'y vais، je n'y vais pas.
+lesson:
+y یعنی «آنجا» و به‌جای جایی می‌نشیند که همین الان اسمش آمده: Tu vas à Paris ? Oui, j'y vais (بله، می‌روم آنجا).
+به‌جای همهٔ این‌ها می‌آید: à Paris، au cinéma، à la plage، chez Marie، dans sa chambre، en France.
+y هم مثل le و lui قبل از فعل می‌آید: Nous y allons. Il y habite. On y va ? (برویم؟)
+je و ne قبل از y کوتاه می‌شوند: j'y vais، je n'y vais pas.
+با فعل + مصدر، y قبل از مصدر می‌آید: Je vais y aller demain. Tu veux y aller ?
+در passé composé، y قبل از فعل کمکی می‌آید: J'y suis allé. Nous n'y sommes pas allés.
+là-bas هم یعنی «آنجا» و بعد از فعل می‌آید (Je vais là-bas)، ولی در گفت‌وگو y خیلی رایج‌تر است.
+table:
+زمان | مثال
+حال | J'y vais. Je n'y vais pas.
+فعل + مصدر | Je vais y aller. Je ne peux pas y aller.
+passé composé | J'y suis allé. Je n'y suis pas allé.
+examples:
+Tu vas à la plage ? Oui, j'y vais. | به ساحل می‌روی؟ بله، می‌روم آنجا.
+Le cinéma ? On y va ce soir ? | سینما؟ امشب برویم آنجا؟
+Le musée ? Je vais y aller demain. | موزه؟ فردا می‌روم آنجا.
+Rome ? Je n'y suis{être} pas allé. | رم؟ آنجا نرفته‌ام.
+targets:
+Le cinéma ? On [y] va ce soir ? | سینما؟ امشب برویم آنجا؟ | d: en, le, là | hint: (au cinéma)
+Paul va à l'école à pied ? Non, il [y] va en bus. | پل پیاده به مدرسه می‌رود؟ نه، با اتوبوس می‌رود. | d: en, le, là
+Tes parents vont à Ispahan ? Oui, ils [y] vont en voiture. | پدر و مادرت به اصفهان می‌روند؟ بله، با ماشین می‌روند آنجا. | d: en, les, là | hint: (à Ispahan)
+Ton oncle habite à Chiraz ? Oui, il [y] habite avec sa famille. | عمویت در شیراز زندگی می‌کند؟ بله، با خانواده‌اش آنجا زندگی می‌کند. | d: en, le, là
+Marie travaille à la banque ? Oui, elle [y] travaille. | ماری در بانک کار می‌کند؟ بله، آنجا کار می‌کند. | d: en, la, là | hint: (à la banque)
+Le parc est près d'ici. Les enfants [y] jouent l'après-midi. | پارک نزدیک اینجاست. بچه‌ها بعدازظهرها آنجا بازی می‌کنند. | d: lui, leur, là
+Vous habitez à Téhéran ? Oui, nous [y] habitons. | در تهران زندگی می‌کنید؟ بله، آنجا زندگی می‌کنیم. | d: en, la, là | hint: (à Téhéran)
+Ce café{café-2} est agréable. Nous [y] allons souvent. | این کافه دلپذیر است. اغلب می‌رویم آنجا. | d: en, le, là
+Ta sœur est à l'université ? Oui, elle [y] étudie. | خواهرت در دانشگاه است؟ بله، آنجا درس می‌خواند. | d: en, la, là | hint: (à l'université)
+Ton père est au bureau ? Oui, il [y] est jusqu'à six heures. | پدرت در اداره است؟ بله، تا ساعت شش آنجاست. | d: en, le, là
+Les enfants sont prêts ? Alors, on [y] va ! | بچه‌ها آماده‌اند؟ پس برویم! | d: en, le, là
+Tu restes à la maison ce soir ? Oui, [j'y] reste. | امشب خانه می‌مانی؟ بله، می‌مانم. | d: je y, j'en, je la
+Tu vas à Paris quand{quand} ? [J'y] vais en mai. | کی به پاریس می‌روی؟ ماه مه می‌روم آنجا. | d: Je y, J'en, Je le | hint: (à Paris)
+Tu vas en France cet été{été} ? Oui, [j'y] vais avec ma famille. | امسال تابستان به فرانسه می‌روی؟ بله، با خانواده‌ام می‌روم. | d: je y, j'en, je la
+Tu vas au marché ? Non, je [n'y] vais pas aujourd'hui. | به بازار می‌روی؟ نه، امروز نمی‌روم. | d: ne y, y ne, ne là | hint: (au marché)
+Il est dans sa chambre ? Non, il [n'y] est pas. | توی اتاقش است؟ نه، آنجا نیست. | d: ne y, y ne, ne là
+Vous allez au restaurant ? Non, nous [n'y] allons pas. | به رستوران می‌روید؟ نه، نمی‌رویم. | d: ne y, y ne, ne là | hint: (au restaurant)
+Le musée ? Je vais [y aller] demain. | موزه؟ فردا می‌روم آنجا. | d: aller y, y vais, en aller
+Il y a un concert au parc. Tu veux [y aller] avec moi ? | در پارک کنسرت هست. می‌خواهی با من بروی آنجا؟ | d: aller y, y vas, en aller
+La gare est près d'ici. On peut [y aller] à pied. | ایستگاه نزدیک اینجاست. می‌توانیم پیاده برویم آنجا. | d: aller y, y va, en aller
+La fête ? Je ne peux pas [y aller] ce soir. | جشن؟ امشب نمی‌توانم بروم. | d: aller y, y peux, en aller
+Nice est belle. Nous allons [y] rester une semaine. | نیس زیباست. قرار است یک هفته آنجا بمانیم. | d: en, la, là | hint: (à Nice)
+Tu connais Rome ? Oui, [j'y suis{être}] allé l'été{été} dernier. | رم را می‌شناسی؟ بله، تابستان گذشته رفتم آنجا. | d: je suis y, j'ai y, je y suis
+Marie est allée à Paris ? Oui, elle [y] est allée en train. | ماری به پاریس رفت؟ بله، با قطار رفت آنجا. | d: en, la, là
+Lyon ? Nous [y sommes] allés en voiture. | لیون؟ با ماشین رفتیم آنجا. | d: sommes y, y avons, avons y
+Nice ? Ils [y sont] restés deux jours. | نیس؟ دو روز آنجا ماندند. | d: sont y, y ont, ont y
+Le musée ? Tu [y es] allé comment ? | موزه؟ چطور رفتی آنجا؟ | d: es y, y as, as y
+Le concert ? Je [n'y suis{être}] pas allé. | کنسرت؟ نرفتم. | d: ne y suis, y ne suis, ne suis y
+Tes parents sont allés au marché ? Non, ils [n'y sont] pas allés. | پدر و مادرت به بازار رفتند؟ نه، نرفتند. | d: ne y sont, y ne sont, ne sont y
+Vous êtes allés chez Paul ? Oui, nous [y] sommes allés hier. | خانهٔ پل رفتید؟ بله، دیروز رفتیم آنجا. | d: en, le, là | hint: (chez Paul)
+Tu vas souvent à la piscine ? Oui, [j'y] vais le samedi. | اغلب به استخر می‌روی؟ بله، شنبه‌ها می‌روم. | d: je y, j'en, je la
+Ma grand-mère habite à la campagne. Nous [y] allons en été{été}. | مادربزرگم بیرون شهر زندگی می‌کند. تابستان‌ها می‌رویم آنجا. | d: en, la, là
+Tu vas à la plage ? Oui, [j'y] vais. Tu [y] vas aussi ? | به ساحل می‌روی؟ بله، می‌روم. تو هم می‌روی؟ | d: je y, j'en, je la / en, la, là
+Paris ? Nous [y] allons en juin et nous [y] restons une semaine. | پاریس؟ ژوئن می‌رویم آنجا و یک هفته آنجا می‌مانیم. | d: en, le, là / en, le, là
+Tu vas chez Marie ? Oui, [j'y] vais et je [lui] apporte des fleurs. | پیش ماری می‌روی؟ بله، می‌روم و برایش گل می‌برم. | d: je y, j'en, je lui / la, le, les
+Le musée ? [J'y suis{être}] allé hier, et je vais [y retourner] dimanche. | موزه؟ دیروز رفتم آنجا و یکشنبه دوباره می‌روم. | d: Je suis y, J'ai y, Je y suis / retourner y, y retourne, en retourner
+La piscine ? Je [n'y] vais pas, mais ma sœur [y] va. | استخر؟ من نمی‌روم، ولی خواهرم می‌رود. | d: ne y, y ne, ne là / en, la, là
+Tu es allé au marché ? Non, je [n'y suis{être}] pas allé, je vais [y aller] demain. | به بازار رفتی؟ نه، نرفتم؛ فردا می‌روم. | d: ne y suis, y ne suis, ne suis y / aller y, y vais, en aller
+Mon frère habite à Nice. Il [y] travaille et il [y] est heureux. | برادرم در نیس زندگی می‌کند. آنجا کار می‌کند و آنجا خوشحال است. | d: en, le, là / en, le, là
+Ce restaurant est bon. Nous [y] allons le dimanche et nous [y] retrouvons nos amis. | این رستوران خوب است. یکشنبه‌ها می‌رویم آنجا و دوستانمان را آنجا می‌بینیم. | d: en, le, là / en, le, là
+transforms:
+Je vais à Paris. => J'y vais. | به‌جای «à Paris» ضمیر بگذار.
+Nous habitons à Lyon. => Nous y habitons. | به‌جای «à Lyon» ضمیر بگذار.
+Il va au cinéma. => Il y va. | به‌جای «au cinéma» ضمیر بگذار.
+J'y vais. => Je n'y vais pas. | جمله را منفی کن.
+Je vais aller à la plage. => Je vais y aller. | به‌جای «à la plage» ضمیر بگذار.
+Je suis{être} allé au musée. => J'y suis{être} allé. | به‌جای «au musée» ضمیر بگذار.
+J'y vais. => Je vais y aller. | جمله را با aller + مصدر بنویس.
+Nous y sommes allés. => Nous n'y sommes pas allés. | جمله را منفی کن.
+translations:
+پاریس؟ می‌روم آنجا. => Paris ? J'y vais. ; Paris ? Je vais là-bas.
+سینما؟ نمی‌روم. => Le cinéma ? Je n'y vais pas.
+رم؟ رفته‌ام آنجا. => Rome ? J'y suis{être} allé. ; Rome ? J'y suis{être} allée. ; Rome ? Je suis{être} allé là-bas. ; Rome ? Je suis{être} allée là-bas.
+موزه؟ می‌خواهم بروم آنجا. => Le musée ? Je veux{vouloir} y aller. ; Le musée ? Je veux{vouloir} aller là-bas.
+شیراز؟ پدر و مادرم آنجا زندگی می‌کنند. => Chiraz ? Mes parents y habitent. ; Chiraz ? Mes parents habitent là-bas. ; Chiraz ? Mes parents y vivent. ; Chiraz ? Mes parents vivent là-bas.
+پارک؟ بچه‌ها آنجا بازی می‌کنند. => Le parc ? Les enfants y jouent. ; Le parc ? Les enfants jouent là-bas.
+کنسرت؟ نرفتم. => Le concert ? Je n'y suis{être} pas allé. ; Le concert ? Je n'y suis{être} pas allée.
+با ماشین می‌روی آنجا؟ => Tu y vas en voiture ? ; Est-ce que tu y vas en voiture ? ; Tu vas là-bas en voiture ? ; Est-ce que tu vas là-bas en voiture ?

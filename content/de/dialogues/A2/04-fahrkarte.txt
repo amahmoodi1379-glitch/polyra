@@ -1,0 +1,34 @@
+code: de-a2-d004
+title: باجه بلیت قطار
+situation: در ایستگاه قطار کلن جلوی باجه بلیت هستی و می‌خواهی امروز به هامبورگ بروی.
+turns:
+B: Guten Tag! Wohin möchten Sie fahren? | روز بخیر! کجا می‌خواهید بروید؟
+- In Hamburg, bitte{bitte}. | در هامبورگ، لطفاً.
+- Aus Hamburg, bitte{bitte}. | از هامبورگ، لطفاً.
++ Nach Hamburg, bitte{bitte}. | به هامبورگ، لطفاً.
+why: برای رفتن به یک شهر nach می‌گوییم: «nach Hamburg». in جای بودن را می‌گوید و aus یعنی «از».
+B: Und wann möchten Sie fahren? | کی می‌خواهید بروید؟
++ Heute Nachmittag, bitte{bitte}. | امروز بعدازظهر، لطفاً.
+- Gestern Nachmittag, bitte{bitte}. | دیروز بعدازظهر، لطفاً.
+- Mit dem Zug, bitte{bitte}. | با قطار، لطفاً.
+why: زمان را می‌گوییم: «Heute Nachmittag». دیروز گذشته است و «mit dem Zug» می‌گوید با چه، نه کی.
+B: Um 14:10 Uhr fährt ein Zug. Sie{Sie-3} müssen in Bremen umsteigen. | ساعت ۱۴:۱۰ یک قطار حرکت می‌کند. باید در برمن قطار عوض کنید. | tts: Um vierzehn Uhr zehn fährt ein Zug. Sie müssen in Bremen umsteigen.
+- Okay. Und wann sind Sie in Hamburg? | باشه. شما کی در هامبورگ هستید؟
++ Okay. Und wann bin ich in Hamburg? | باشه. کی به هامبورگ می‌رسم؟
+- Okay. Und wann ist ich in Hamburg? | باشه. کی من در هامبورگ است؟
+why: می‌پرسی خودت کی می‌رسی: «Wann bin ich …?». با ich شکل bin می‌آید، نه ist، و «Sie» درباره کارمند است، نه خودت.
+B: Um 17:30 Uhr. | ساعت ۱۷:۳۰. | tts: Um siebzehn Uhr dreißig.
++ Gut. Was kostet die Fahrkarte? | خوب. بلیت چند است؟
+- Gut. Was kostet der Fahrkarte? | خوب. بلیت چند است؟
+- Gut. Was kostet ein Zimmer in Hamburg? | خوب. یک اتاق در هامبورگ چند است؟
+why: حالا قیمت بلیت را می‌پرسی. Fahrkarte مؤنث است: «die Fahrkarte». قیمت اتاق را از هتل می‌پرسند، نه از باجه بلیت.
+B: Das macht 49 Euro. | می‌شود ۴۹ یورو. | tts: Das macht neunundvierzig Euro.
+- Hier, bitte{bitte}. Wo fahrt der Zug ab? | بفرمایید. قطار از کجا حرکت می‌کند؟
+- Hier, bitte{bitte}. Wann fährt der Zug ab? | بفرمایید. قطار کی حرکت می‌کند؟
++ Hier, bitte{bitte}. Wo fährt der Zug ab? | بفرمایید. قطار از کجا حرکت می‌کند؟
+why: حالا می‌پرسی قطار از کجا حرکت می‌کند. با der Zug شکل fährt می‌آید، نه fahrt، و ساعت حرکت را کارمند قبلاً گفت.
+B: Von Gleis 7. Gute Reise! | از سکوی ۷. سفر بخیر! | tts: Von Gleis sieben. Gute Reise!
+- Danke{danke}, gute Reise! | ممنون، سفر بخیر!
++ Danke schön! Auf Wiedersehen! | خیلی ممنون! خداحافظ!
+- Bitte schön! Auf Wiedersehen! | خواهش می‌کنم! خداحافظ!
+why: برای «Gute Reise» تشکر می‌کنیم. کارمند به سفر نمی‌رود که به او «gute Reise» بگوییم، و «Bitte schön» جواب تشکر است.

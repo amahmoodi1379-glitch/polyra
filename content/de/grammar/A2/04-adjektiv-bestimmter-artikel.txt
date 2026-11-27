@@ -1,0 +1,86 @@
+code: de-a2-adjektiv-bestimmt
+title: صفت بعد از der، die، das: der kleine Hund
+scope: پایان صفت پیش از اسم بعد از der، die، das (و dieser، jeder) در حالت فاعلی، مفعولی و Dativ: -e در فاعلی هر سه جنس و مفعولی مؤنث و خنثی (der kleine Hund، die kleine Katze، das kleine Kind)، و -en در بقیه جاها (den kleinen Hund، mit dem kleinen Hund، die kleinen Kinder)، همراه با im، am، zum، zur و beim؛ صفت بعد از ein و mein در واحد بعد و صفت بی‌حرف تعریف در واحدهای بعد می‌آید.
+can_do: حالا می‌توانی چیزها و آدم‌ها را دقیق‌تر نشان بدهی: «Ich nehme den roten Pullover»، «Ich fahre mit dem neuen Fahrrad».
+rule: بعد از der، die، das صفت فقط -e یا -en می‌گیرد: -e برای der/die/das فاعلی و die/das مفعولی (der kleine Hund، die kleine Katze، das kleine Kind)، و -en برای همه جاهای دیگر (den kleinen Hund، dem kleinen Hund، die kleinen Kinder).
+mistake: در فارسی صفت بعد از اسم می‌آید و هیچ‌وقت عوض نمی‌شود («سگ کوچک»، «با سگ کوچک»)، برای همین فارسی‌زبان‌ها صفت را بی‌پایان می‌گذارند یا همیشه -e می‌گذارند: «der klein Hund» و «mit dem kleine Hund» غلط است؛ درست: der kleine Hund، mit dem kleinen Hund.
+lesson:
+وقتی صفت بعد از sein می‌آید، پایان ندارد: Der Hund ist klein. ولی وقتی پیش از اسم می‌آید، یک پایان می‌گیرد: der kleine Hund (سگ کوچک).
+بعد از der، die و das (و dieser و jeder) فقط دو پایان هست: -e یا -en. خود حرف تعریف نشان می‌دهد اسم در چه حالتی است.
+پایان -e فقط در پنج جا می‌آید: der، die و das در حالت فاعلی (der kleine Hund، die kleine Katze، das kleine Kind) و die و das در حالت مفعولی (Ich sehe die kleine Katze. Ich sehe das kleine Kind.).
+
+همه جاهای دیگر -en است: مذکر مفعولی (Ich sehe den kleinen Hund.)، همه Dativها (mit dem kleinen Hund، mit der kleinen Katze) و همه جمع‌ها (die kleinen Kinder، mit den kleinen Kindern).
+ترکیب‌هایی مثل im، am، zum، zur و beim هم Dativ‌اند: im alten Haus، zum großen Bahnhof.
+چند صفت شکلشان کمی عوض می‌شود: dunkel ← der dunkle Wald، hoch ← das hohe Haus.
+table:
+حالت | مذکر | مؤنث | خنثی | جمع
+فاعلی | der alte Mann | die alte Frau | das alte Haus | die alten Leute
+مفعولی | den alten Mann | die alte Frau | das alte Haus | die alten Leute
+Dativ | dem alten Mann | der alten Frau | dem alten Haus | den alten Leuten
+sets:
+-e: der kleine Hund, die kleine Katze, das kleine Kind, Ich sehe die kleine Katze., Ich sehe das kleine Kind.
+-en: den kleinen Hund, mit dem kleinen Hund, mit der kleinen Katze, die kleinen Kinder
+examples:
+Der kleine Hund ist sehr lustig. | سگ کوچک خیلی بامزه است.
+Ich nehme den schwarzen Mantel. | پالتوی مشکی را برمی‌دارم.
+Wir wohnen im alten Haus am Park. | ما در خانه قدیمی کنار پارک زندگی می‌کنیم.
+Die neuen Schüler kommen aus Iran. | دانش‌آموزان جدید اهل ایران‌اند.
+targets:
+Der [kleine] Hund spielt im Garten. | سگ کوچک در باغ بازی می‌کند. | d: kleinen, kleiner, klein | hint: (klein) | full: Im Garten spielt der kleine Hund.
+Die [neue] Lehrerin ist sehr nett. | خانم معلم جدید خیلی مهربان است. | d: neuen, neuer, neues | hint: (neu)
+Das [alte] Auto ist kaputt. | ماشین قدیمی خراب است. | d: alten, altes, alter
+Wo ist die [rote] Tasche? | کیف قرمز کجاست؟ | d: roten, roter, rotes | hint: (rot)
+Dieser [blaue] Pullover gefällt mir. | از این پلیور آبی خوشم می‌آید. | d: blauen, blauer, blaues
+Jeder [neue] Schüler bekommt ein Buch. | هر دانش‌آموز جدید یک کتاب می‌گیرد. | d: neuen, neuer, neues
+Ich kaufe den [schwarzen] Mantel. | پالتوی مشکی را می‌خرم. | d: schwarze, schwarzer, schwarzes | hint: (schwarz)
+Kennst du den [jungen] Mann dort? | آن مرد جوان آنجا را می‌شناسی؟ | d: junge, junger, jungem
+Wir nehmen die [große] Wohnung. | ما آپارتمان بزرگ را می‌گیریم. | d: großen, großer, großes | hint: (groß)
+Ich esse die [kalte] Suppe nicht. | سوپ سرد را نمی‌خورم. | d: kalten, kalter, kaltes
+Hast du den [neuen] Film gesehen? | فیلم جدید را دیده‌ای؟ | d: neue, neuer, neues
+Anna trägt die [weiße] Bluse. | آنا بلوز سفید را پوشیده است. | d: weißen, weißer, weißes | hint: (weiß)
+Ich finde das [kleine] Café sehr gemütlich. | به نظرم آن کافه کوچک خیلی دنج است. | d: kleinen, kleines, kleiner
+Nimmst du diesen [grünen] Rock? | این دامن سبز را برمی‌داری؟ | d: grüne, grüner, grünes | hint: (grün)
+Max wohnt im [kleinen] Haus am Park. | ماکس در خانه کوچک کنار پارک زندگی می‌کند. | d: kleine, kleines, kleinem
+Ich fahre mit dem [neuen] Fahrrad. | با دوچرخه جدید می‌روم. | d: neue, neues, neuem | hint: (neu)
+Anna spricht mit der [jungen] Ärztin. | آنا با خانم دکتر جوان صحبت می‌کند. | d: junge, jungem, junges
+Der Bus fährt zum [großen] Bahnhof. | اتوبوس به ایستگاه بزرگ قطار می‌رود. | d: große, großer, großem
+Ich war gestern beim [neuen] Zahnarzt. | دیروز پیش دندان‌پزشک جدید بودم. | d: neue, neuer, neuem | full: Gestern war ich beim neuen Zahnarzt.
+Das Geschenk ist von der [netten] Nachbarin. | هدیه از طرف خانم همسایه مهربان است. | d: nette, netter, nettem | hint: (nett)
+Wir sitzen auf der [grünen] Wiese. | ما روی چمنزار سبز نشسته‌ایم. | d: grüne, grüner, grünem
+Lena arbeitet in der [neuen] Bibliothek. | لنا در کتابخانه جدید کار می‌کند. | d: neue, neuer, neuem
+Die [alten] Leute sitzen im Park. | آدم‌های پیر در پارک نشسته‌اند. | d: alte, alter, altes | hint: (alt) | full: Im Park sitzen die alten Leute.
+Ich mag die [roten] Äpfel. | سیب‌های قرمز را دوست دارم. | d: rote, roter, rotes
+Wo sind die [neuen] Socken? | جوراب‌های نو کجاست؟ | d: neue, neuer, neues
+Ich spiele mit den [kleinen] Kindern. | با بچه‌های کوچک بازی می‌کنم. | d: kleine, kleiner, kleinem | hint: (klein)
+Die Lehrerin spricht mit den [neuen] Schülern. | خانم معلم با دانش‌آموزان جدید صحبت می‌کند. | d: neue, neuem, neuer
+Ich verstehe die [lange] Frage nicht. | سؤال طولانی را نمی‌فهمم. | d: langen, langer, langes | hint: (lang)
+Gefällt dir das [blaue] Kleid? | از لباس آبی خوشت می‌آید؟ | d: blauen, blauer, blaues
+Wie heißt die [neue] Kollegin? | اسم همکار جدید (خانم) چیست؟ | d: neuen, neuer, neues
+Wir gehen nicht in den [dunklen] Wald. | ما به جنگل تاریک نمی‌رویم. | d: dunkle, dunkelen, dunkler | hint: (dunkel)
+Das [hohe] Haus dort ist ein Hotel. | آن ساختمان بلند آنجا یک هتل است. | d: hoche, hohen, hoher | hint: (hoch)
+Der [neue] Lehrer spricht mit dem [kleinen] Mädchen. | معلم جدید با دختر کوچک صحبت می‌کند. | d: neuen, neuer, neues / kleine, kleines, kleinem
+Ich nehme den [roten] Pullover und die [blaue] Hose. | پلیور قرمز و شلوار آبی را برمی‌دارم. | d: rote, roter, rotes / blauen, blauer, blaues | full: Ich nehme die blaue Hose und den roten Pullover.
+Die [kleinen] Kinder spielen mit dem [großen] Hund. | بچه‌های کوچک با سگ بزرگ بازی می‌کنند. | d: kleine, kleiner, kleines / große, großer, großem
+Kennst du die [junge] Frau mit dem [schwarzen] Hund? | آن زن جوانی را که سگ سیاه دارد می‌شناسی؟ | d: jungen, junger, junges / schwarze, schwarzer, schwarzem
+Das [frische] Brot ist vom [kleinen] Markt. | نان تازه از بازار کوچک است. | d: frischen, frischer, frisches / kleine, kleiner, kleinem
+Ich treffe meine Freunde im [neuen] Café am [großen] Platz. | دوستانم را در کافه جدید کنار میدان بزرگ می‌بینم. | d: neue, neues, neuem / große, großer, großem | full: Im neuen Café am großen Platz treffe ich meine Freunde.
+Das [kleine] Kind sucht die [schwarze] Katze. | بچه کوچک دنبال گربه سیاه می‌گردد. | d: kleinen, kleiner, kleines / schwarzen, schwarzer, schwarzes
+Der [alte] Mann wohnt im [ersten] Stock. | مرد پیر در طبقه اول زندگی می‌کند. | d: alten, alter, altes / erste, erster, erstem
+transforms:
+Der alte Mann ist hier. => Ich sehe den alten Mann. | جمله را با «Ich sehe …» بنویس.
+Die neue Lehrerin kommt. => Ich spreche mit der neuen Lehrerin. | جمله را با «Ich spreche mit …» بنویس.
+Das kleine Kind spielt. => Die kleinen Kinder spielen. | جمله را جمع کن.
+Der rote Pullover ist schön. => Ich kaufe den roten Pullover. | جمله را با «Ich kaufe …» بنویس.
+Das alte Fahrrad ist kaputt. => Ich fahre mit dem alten Fahrrad. | جمله را با «Ich fahre mit …» بنویس.
+Der junge Arzt arbeitet hier. => Die jungen Ärzte arbeiten hier. | جمله را جمع کن.
+Das Buch ist interessant. Ich lese das Buch. => Ich lese das interessante Buch. | دو جمله را یکی کن و صفت را پیش از اسم بگذار.
+Der Stuhl ist bequem. Ich sitze auf dem Stuhl. => Ich sitze auf dem bequemen Stuhl. | دو جمله را یکی کن و صفت را پیش از اسم بگذار.
+translations:
+سگ کوچک را می‌بینم. => Ich sehe den kleinen Hund.
+پنجره بزرگ را باز می‌کنم. => Ich mache das große Fenster auf. ; Ich öffne das große Fenster.
+بچه‌های کوچک در باغ بازی می‌کنند. => Die kleinen Kinder spielen im Garten. ; Im Garten spielen die kleinen Kinder.
+این کیف قهوه‌ای را دوست دارم. => Ich mag die braune Tasche. ; Die braune Tasche gefällt mir. ; Mir gefällt die braune Tasche. ; Ich mag diese braune Tasche. ; Diese braune Tasche gefällt mir. ; Mir gefällt diese braune Tasche.
+معلم جدید را می‌شناسی؟ => Kennst du den neuen Lehrer? ; Kennst du die neue Lehrerin?
+آب سرد را نمی‌نوشم. => Ich trinke das kalte Wasser nicht. ; Das kalte Wasser trinke ich nicht.
+کفش‌های سیاه کجاست؟ => Wo sind die schwarzen Schuhe?
+مرد پیر در پارک نشسته است. => Der alte Mann sitzt im Park. ; Im Park sitzt der alte Mann.

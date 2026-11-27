@@ -1,0 +1,87 @@
+code: de-a2-praeteritum-unregelmaessig
+title: گذشته ساده فعل‌های بی‌قاعده: ging، kam، sah
+scope: Präteritum فعل‌های بی‌قاعده پرکاربرد (ging، kam، fuhr، sah، gab، nahm، aß، trank، schrieb، las، fand، blieb، lief، sprach، traf) با عوض شدن صدای وسط فعل و بدون پایان در ich و er/sie/es، فعل‌های جداشدنی (rief … an، stand … auf)، و فعل‌های مخلوط (dachte، brachte، wusste، kannte).
+can_do: حالا می‌توانی داستانی از گذشته را بخوانی و تعریف کنی: «Wir fuhren nach Wien, sahen viele Museen und aßen jeden Abend im Restaurant.»
+rule: فعل‌های بی‌قاعده در Präteritum صدای وسطشان عوض می‌شود و -te نمی‌گیرند: gehen ← ging، kommen ← kam، sehen ← sah؛ ich و er/sie/es پایان ندارند (ich ging، er ging) و بقیه: du gingst، wir gingen، ihr gingt، sie gingen. فعل‌های مخلوط هم صدا عوض می‌کنند و هم -te می‌گیرند: denken ← dachte، bringen ← brachte.
+mistake: فارسی‌زبان‌ها قاعده فعل‌های باقاعده را روی همه فعل‌ها می‌گذارند و می‌گویند «ich gehte» یا «er kommte»؛ این‌ها غلط‌اند؛ درست: ich ging، er kam. ich و er هم پایان نمی‌گیرند: «ich gingte» غلط است؛ درست: ich ging.
+tables: Präteritum | irregular
+lesson:
+خیلی از فعل‌های پرکاربرد در Präteritum بی‌قاعده‌اند: صدای وسطشان عوض می‌شود و -te نمی‌گیرند: gehen ← ging، kommen ← kam، sehen ← sah.
+مثل فارسی که «رفتن ← رفت» و «دیدن ← دید» را حفظ کرده‌ای، این شکل‌ها را هم باید حفظ کنی؛ هر کدام در جدول فعل‌ها هست.
+ich و er/sie/es هیچ پایانی نمی‌گیرند: ich kam، er kam. بقیه: du kamst، wir kamen، ihr kamt، sie و Sie kamen.
+چند الگوی رایج: ei ← ie (schreiben ← schrieb، bleiben ← blieb)، e ← a (sprechen ← sprach، geben ← gab)، i ← a (trinken ← trank، finden ← fand)، a ← u (fahren ← fuhr).
+فعل جداشدنی جدا می‌شود: Ich stand um sieben Uhr auf. Meine Oma rief mich an.
+چند فعل «مخلوط» هم صدا عوض می‌کنند و هم -te می‌گیرند: denken ← dachte، bringen ← brachte، wissen ← wusste، kennen ← kannte.
+Präteritum با Perfekt فرق دارد: ich ging (Präteritum)، ich bin gegangen (Perfekt). در داستان‌ها و متن‌ها Präteritum را زیاد می‌بینی.
+table:
+Infinitiv | Präteritum | Perfekt
+gehen | ging | ist gegangen
+kommen | kam | ist gekommen
+sehen | sah | hat gesehen
+schreiben | schrieb | hat geschrieben
+trinken | trank | hat getrunken
+denken | dachte | hat gedacht
+examples:
+Am Morgen kam ein Brief für mich. | صبح یک نامه برایم آمد.
+Wir fuhren mit dem Auto nach München. | با ماشین به مونیخ رفتیم.
+Lena schrieb ihrer{ihr-det} Oma eine Karte. | لنا برای مادربزرگش یک کارت نوشت.
+Ich dachte, du kommst heute. | فکر کردم امروز می‌آیی.
+targets:
+Gestern [ging] ich mit Anna zum Supermarkt. | دیروز با آنا به سوپرمارکت رفتم. | d: gehte, gingte, gegangen | hint: (gehen) | full: Ich ging gestern mit Anna zum Supermarkt.
+Um acht Uhr [kam] der Bus. | ساعت هشت اتوبوس آمد. | d: kommte, kamte, kamen | hint: (kommen) | full: Der Bus kam um acht Uhr.
+Im Sommer [fuhren] wir nach Hamburg. | تابستان به هامبورگ رفتیم. | d: fahrten, fuhrt, fuhr | hint: (fahren) | full: Wir fuhren im Sommer nach Hamburg.
+Ich [sah] einen Hund im Park. | یک سگ در پارک دیدم. | d: sehte, sahen, gesehen | hint: (sehen) | full: Im Park sah ich einen Hund.
+Max [brachte] Blumen mit. | ماکس گل آورد. | d: bringte, mitbrachte, brachten | hint: (mitbringen)
+Mein Vater [gab] mir zehn Euro. | پدرم ده یورو به من داد. | d: gebte, gaben, gegeben | hint: (geben)
+Ich [nahm] den Bus zur Arbeit. | با اتوبوس سر کار رفتم. | d: nehmte, nahmen, genommen | hint: (nehmen)
+Am Abend [aßen] wir Pizza. | عصر پیتزا خوردیم. | d: essten, aß, gegessen | hint: (essen) | full: Wir aßen am Abend Pizza.
+Die Kinder [tranken] viel Wasser. | بچه‌ها آب زیادی نوشیدند. | d: trinkten, trank, getrunken
+Lena [schrieb] einen langen Brief. | لنا یک نامه طولانی نوشت. | d: schreibte, schrieben, geschrieben | hint: (schreiben)
+Ich [las] jeden Abend ein Buch. | هر شب یک کتاب می‌خواندم. | d: leste, lasen, gelesen | hint: (lesen) | full: Jeden Abend las ich ein Buch.
+Paul [fand] seinen Schlüssel im Auto. | پاول کلیدش را در ماشین پیدا کرد. | d: findete, fanden, gefunden
+Es regnete, deshalb [blieben] wir zu Hause. | باران می‌آمد، برای همین در خانه ماندیم. | d: bleibten, blieb, geblieben | hint: (bleiben)
+Der Junge [lief] schnell zur Schule. | پسر تند به مدرسه دوید. | d: laufte, liefen, gelaufen | hint: (laufen)
+Wir [sprachen] lange mit dem Lehrer. | ما مدت زیادی با معلم حرف زدیم. | d: sprechten, sprach, gesprochen
+Ich [traf] Max am Bahnhof. | ماکس را در ایستگاه قطار دیدم. | d: treffte, trafen, getroffen | hint: (treffen) | full: Am Bahnhof traf ich Max.
+Am Sonntag [rief] mich meine Oma an. | یکشنبه مادربزرگم به من زنگ زد. | d: anrief, rufte, riefen | hint: (anrufen) | full: Meine Oma rief mich am Sonntag an. ; Am Sonntag rief meine Oma mich an.
+Ich [stand] heute um sechs Uhr auf. | امروز ساعت شش بیدار شدم. | d: aufstand, stehte, standen | hint: (aufstehen) | full: Heute stand ich um sechs Uhr auf.
+Der Film [fing] um acht Uhr an. | فیلم ساعت هشت شروع شد. | d: anfing, fangte, fingen | full: Um acht Uhr fing der Film an.
+Das Baby [schlief] schnell ein. | نوزاد زود خوابش برد. | d: einschlief, schlafte, schliefen | hint: (einschlafen)
+Wir [saßen] zwei Stunden im Café. | دو ساعت در کافه نشستیم. | d: sitzten, saß, gesessen | hint: (sitzen)
+Mein Bruder [half] mir bei den Hausaufgaben. | برادرم در تکلیف‌ها به من کمک کرد. | d: helfte, halfen, geholfen | hint: (helfen)
+[Kanntest] du den Mann? | آن مرد را می‌شناختی؟ | d: Kanntet, Kannten, Gekannt | hint: (kennen)
+Ich [dachte], du bist krank. | فکر کردم مریضی. | d: denkte, dachten, gedacht | hint: (denken)
+Max [wusste] die Antwort nicht. | ماکس جواب را نمی‌دانست. | d: wisste, wussten, gewusst | hint: (wissen)
+Wir [flogen] im Mai nach Teheran. | ماه مه به تهران پرواز کردیم. | d: fliegten, flog, geflogen | full: Im Mai flogen wir nach Teheran.
+Ich [verlor] im Bus mein Handy. | در اتوبوس موبایلم را گم کردم. | d: verlierte, verloren, verlort | hint: (verlieren) | full: Ich verlor mein Handy im Bus.
+Leider [vergaß] ich den Termin. | متأسفانه قرار را فراموش کردم. | d: vergesste, vergaßen, vergessen | hint: (vergessen) | full: Ich vergaß leider den Termin.
+Das Kind [fiel] vom Fahrrad. | بچه از دوچرخه افتاد. | d: fallte, fielen, gefallen
+Ich [bekam] ein Geschenk von meiner{mein} Tante. | از عمه‌ام یک هدیه گرفتم. | d: bekommte, bekamen, bekommen | hint: (bekommen)
+Wir [verstanden] den Lehrer nicht. | ما حرف معلم را نفهمیدیم. | d: verstehten, verstand, verstandet
+Ihr [kamt] zu{zu-adv} spät zum Kurs. | شما دیر به کلاس آمدید. | d: kommtet, kamen, kamst | hint: (kommen)
+Ich [stand] früh auf. Dann [ging] ich zur Arbeit. | زود بیدار شدم. بعد سر کار رفتم. | d: aufstand, stehte, standen / gehte, gingen, gegangen
+Wir [fuhren] nach Wien und [sahen] viele Museen. | به وین رفتیم و موزه‌های زیادی دیدیم. | d: fahrten, fuhr, fuhrt / sehten, sah, saht
+Max [kam] nach Hause und [aß] eine Pizza. | ماکس به خانه آمد و یک پیتزا خورد. | d: kommte, kamen, kamst / esste, aßen, aßt
+Ich [rief] Lena an, und wir [sprachen] lange. | به لنا زنگ زدم و مدت زیادی حرف زدیم. | d: anrief, rufte, riefen / sprechten, sprach, gesprochen
+Anna [brachte] einen Kuchen und wir [tranken] Tee. | آنا یک کیک آورد و ما چای نوشیدیم. | d: bringte, brachten, brachtest / trinkten, trank, getrunken
+Der Zug [kam] um zehn Uhr an, und wir [stiegen] aus. | قطار ساعت ده رسید و ما پیاده شدیم. | d: ankam, kommte, kamen / ausstiegen, steigten, stieg
+[Fandet] ihr den Film gut? – Ja, wir [fanden] ihn sehr gut. | فیلم به نظرتان خوب بود؟ – بله، به نظرمان خیلی خوب بود. | d: Findetet, Fand, Fandest / findeten, fand, gefunden
+Wir [blieben] eine Woche in Wien und [trafen] viele Freunde. | یک هفته در وین ماندیم و با دوستان زیادی دیدار کردیم. | d: bleibten, blieb, geblieben / trefften, traf, getroffen
+transforms:
+Ich gehe nach Hause. => Ich ging nach Hause. | جمله را به Präteritum ببر.
+Er kommt spät. => Er kam spät. | جمله را به Präteritum ببر.
+Wir sehen einen Film. => Wir sahen einen Film. | جمله را به Präteritum ببر.
+Du schreibst einen Brief. => Du schriebst einen Brief. | جمله را به Präteritum ببر.
+Ich bin um sieben Uhr aufgestanden. => Ich stand um sieben Uhr auf. | جمله را از Perfekt به Präteritum ببر.
+Sie hat mich angerufen. => Sie rief mich an. | جمله را از Perfekt به Präteritum ببر.
+Wir haben Tee getrunken. => Wir tranken Tee. | جمله را از Perfekt به Präteritum ببر.
+Ich habe das nicht gewusst. => Ich wusste das nicht. | جمله را از Perfekt به Präteritum ببر.
+translations:
+ما با قطار به وین رفتیم. (با Präteritum) => Wir fuhren mit dem Zug nach Wien. ; Mit dem Zug fuhren wir nach Wien.
+او یک نامه نوشت. (با Präteritum) => Er schrieb einen Brief. ; Sie schrieb einen Brief.
+ما پیتزا خوردیم. (با Präteritum) => Wir aßen Pizza. ; Wir aßen eine Pizza.
+لنا را در پارک دیدم. (با Präteritum) => Ich sah Lena im Park. ; Im Park sah ich Lena. ; Ich traf Lena im Park. ; Im Park traf ich Lena.
+کلاس شروع شد. (با Präteritum) => Der Kurs fing an. ; Der Kurs begann. ; Der Unterricht fing an. ; Der Unterricht begann.
+نمی‌دانستم. (با Präteritum) => Ich wusste es nicht. ; Ich wusste das nicht.
+او به من کمک کرد. (با Präteritum) => Er half mir. ; Sie half mir.
+فکر کردم تو خانه‌ای. (با Präteritum) => Ich dachte, du bist zu Hause. ; Ich dachte, dass du zu Hause bist.

@@ -1,0 +1,34 @@
+code: fr-a2-d017
+title: مترو: بلیت و مسیر
+situation: در پاریس در یک ایستگاه مترو هستی و می‌خواهی به ایستگاه قطار «گار دو لیون» بروی. از کارمند مترو کمک می‌خواهی.
+turns:
+B: Bonjour ! Vous avez une question ? | سلام! سؤالی دارید؟
+- Oui. Je voudrais aller au gare de Lyon. C'est{être} quelle ligne ? | بله. می‌خواهم به گار دو لیون بروم. کدام خط است؟
++ Oui. Je voudrais aller à la gare de Lyon. C'est{être} quelle ligne ? | بله. می‌خواهم به گار دو لیون بروم. کدام خط است؟
+- Oui. Je voudrais aller à Lyon. C'est{être} quelle ligne ? | بله. می‌خواهم به شهر لیون بروم. کدام خط است؟
+why: gare مؤنث است: «à la gare de Lyon». لیون شهر دیگری است و با مترو نمی‌شود به آن رفت.
+B: C'est{être} facile : c'est{être} la ligne un{un-num}, et il n'y a pas de changement. Vous avez un ticket ? | آسان است: خط یک است و لازم نیست خط عوض کنید. بلیت دارید؟
++ Non, pas encore. Où est-ce que je peux en acheter ? | نه، هنوز نه. کجا می‌توانم بخرم؟
+- Non, déjà. Où est-ce que je peux en acheter ? | نه، از قبل. کجا می‌توانم بخرم؟
+- Non, pas encore. Où est-ce que je peux y acheter ? | نه، هنوز نه. کجا می‌توانم بخرم؟
+why: «pas encore» یعنی «هنوز نه». en جای «بلیت» می‌نشیند: «en acheter»؛ y برای جاست.
+B: Là-bas, au distributeur. Vous pouvez payer par carte. | آنجا، از دستگاه. می‌توانید با کارت پرداخت کنید.
+- Merci. Et je descends à quelle heure ? | ممنون. ساعت چند پیاده شوم؟
+- Merci. Et je descends quelle station ? | ممنون. در کدام ایستگاه پیاده شوم؟
++ Merci. Et je descends à quelle station ? | ممنون. در کدام ایستگاه پیاده شوم؟
+why: «descendre à» یعنی در جایی پیاده شدن: «à quelle station». کارمند ساعتِ رسیدنِ تو را نمی‌داند؛ جای پیاده شدن را می‌پرسیم.
+B: À la station Gare de Lyon, bien sûr ! C'est{être} à quatre stations d'ici. | در ایستگاه گار دو لیون، معلوم است! چهار ایستگاه با اینجا فاصله دارد.
+- Ah, bien sûr ! Et il fait quel temps{temps-2} ? | آه، معلوم است! هوا چطور است؟
++ Ah, bien sûr ! Et ça prend combien de temps ? | آه، معلوم است! چقدر طول می‌کشد؟
+- Ah, bien sûr ! Et ça prend combien de fois ? | آه، معلوم است! چند بار طول می‌کشد؟
+why: مدت را با «combien de temps» می‌پرسیم. «quel temps» برای هواست و «combien de fois» تعداد دفعه‌ها را می‌پرسد.
+B: Environ dix minutes. Il y a un métro toutes les trois minutes. | حدود ده دقیقه. هر سه دقیقه یک مترو هست.
++ Super ! Alors je ne vais pas être en retard. | عالی! پس دیر نمی‌کنم.
+- Super ! Alors je ne vais pas avoir en retard. | عالی! پس دیر نمی‌کنم.
+- Super ! Alors je vais être en retard. | عالی! پس دیر می‌کنم.
+why: «دیر کردن» با être است: «être en retard». ده دقیقه کوتاه است، و «عالی» با «دیر می‌کنم» جور نیست.
+B: Non, ne vous inquiétez pas. Bonne journée ! | نه، نگران نباشید. روز خوبی داشته باشید!
+- Merci beaucoup pour votre aider ! | خیلی ممنون بابت کمکتان!
+- Merci beaucoup pour ton aide ! | خیلی ممنون بابت کمکت!
++ Merci beaucoup pour votre aide ! | خیلی ممنون بابت کمکتان!
+why: aide اسم است و aider فعل، پس «votre aide». با کارمند مترو ton نمی‌گوییم.

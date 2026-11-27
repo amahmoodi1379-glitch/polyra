@@ -1,0 +1,88 @@
+code: de-a2-als-wenn
+title: als یا wenn: «وقتی که» در گذشته، حال و آینده
+scope: als برای یک بار یا یک دوره در گذشته (Als ich klein war … / Als wir gestern ankamen …)، wenn برای کاری که در گذشته بارها تکرار شده (immer wenn …) و برای حال و آینده، فعل صرف‌شده آخر هر دو جمله، و wann که فقط کلمه پرسشی است؛ جمله‌های دیگر زمان (bevor، nachdem، während) در سطح B1 می‌آیند.
+can_do: حالا می‌توانی از کودکی‌ات و از اتفاق‌های گذشته تعریف کنی: «وقتی کوچک بودم، یک سگ داشتم.»
+rule: یک بار یا یک دوره در گذشته ← als؛ چند بار در گذشته (immer wenn) و حال و آینده ← wenn؛ سؤال «کی؟» ← wann. بعد از als و wenn فعل صرف‌شده آخر جمله می‌رود.
+mistake: فارسی برای همه این‌ها یک کلمه دارد: «وقتی». برای همین فارسی‌زبان‌ها می‌گویند «Wenn ich klein war» یا «Wann ich nach Berlin kam»؛ درست: Als ich klein war، Als ich nach Berlin kam. wann فقط برای سؤال است: Wann kommst du? – Wenn ich fertig bin.
+lesson:
+فارسی برای «وقتی که» یک کلمه دارد، ولی آلمانی سه کلمه دارد: als، wenn و wann.
+als برای چیزی در گذشته است که فقط یک بار اتفاق افتاده یا یک دوره بوده: Als wir gestern in Wien ankamen, regnete es. (یک بار) Als ich klein war, hatte ich einen Hund. (یک دوره از زندگی)
+wenn برای کاری در گذشته است که بارها تکرار شده، و بیشتر با immer می‌آید: Immer wenn ich krank war, kochte meine Oma Suppe. یعنی «هر بار که…».
+در حال و آینده همیشه wenn می‌آید، هم به معنی «وقتی» و هم «اگر»: Wenn ich Zeit habe, lese ich. Wenn du nach Teheran kommst, zeige ich dir die Stadt.
+wann فقط کلمه پرسشی است، یعنی «کی؟»: Wann kommst du? – Wenn ich fertig bin.
+بعد از als و wenn، فعل صرف‌شده آخر جمله می‌رود و فعل جداشدنی سر هم می‌شود: als wir in Wien ankamen.
+اگر جمله als یا wenn اول بیاید، فعل جمله دوم درست بعد از ویرگول می‌آید: Als ich klein war, wohnte ich in Isfahan.
+table:
+کی؟ | کلمه | مثال
+یک بار در گذشته | als | Als ich gestern anrief, warst du nicht da.
+یک دوره در گذشته | als | Als ich klein war, hatte ich einen Hund.
+چند بار در گذشته | immer wenn | Immer wenn es regnete, spielten wir drinnen.
+حال و آینده | wenn | Wenn ich Zeit habe, lese ich.
+سؤال | wann | Wann kommst du?
+sets:
+نشانه‌های als: gestern, letzte Woche, letztes Jahr, zum ersten Mal, als ich klein war
+نشانه‌های wenn: immer wenn, jedes Mal, jetzt, morgen
+examples:
+Als{als-2} ich klein war, wohnte ich in Isfahan. | وقتی کوچک بودم، در اصفهان زندگی می‌کردم.
+Als{als-2} ich gestern nach Hause kam, war niemand da. | دیروز وقتی به خانه آمدم، هیچ‌کس آنجا نبود.
+Immer wenn ich Oma besuchte, erzählte sie eine Geschichte. | هر بار که به دیدن مادربزرگ می‌رفتم، یک قصه تعریف می‌کرد.
+Wenn ich Zeit habe, rufe ich dich an. | وقتی وقت داشته باشم، به تو زنگ می‌زنم.
+targets:
+[Als]{als-2} ich klein war, hatte ich einen Hund. | وقتی کوچک بودم، یک سگ داشتم. | d: Wenn, Wann, Ob | full: Ich hatte einen Hund, als ich klein war.
+[Als]{als-2} ich gestern aufwachte{aufwachen}, schien die Sonne. | دیروز وقتی بیدار شدم، آفتاب می‌تابید. | d: Wenn, Wann, Ob | full: Die Sonne schien, als ich gestern aufwachte.
+Ich war sehr froh, [als]{als-2} ich gestern deinen Brief bekam. | دیروز وقتی نامه‌ات به دستم رسید، خیلی خوشحال شدم. | d: wenn, wann, ob | full: Als ich gestern deinen Brief bekam, war ich sehr froh.
+[Als]{als-2} ich 18 war, habe ich den Führerschein gemacht. | وقتی ۱۸ ساله بودم، گواهینامه گرفتم. | d: Wenn, Wann, Ob | full: Ich habe den Führerschein gemacht, als ich 18 war.
+[Als]{als-2} Paul gestern nach Hause kam, schliefen die Kinder schon. | دیروز وقتی پاول به خانه آمد، بچه‌ها خواب بودند. | d: Wenn, Wann, Ob | full: Die Kinder schliefen schon, als Paul gestern nach Hause kam.
+[Als]{als-2} du gestern angerufen hast, war ich unter der Dusche. | دیروز وقتی زنگ زدی، زیر دوش بودم. | d: Wenn, Wann, Ob | full: Ich war unter der Dusche, als du gestern angerufen hast.
+Was hast du gemacht, [als]{als-2} du letzte Woche in Hamburg warst? | هفته پیش وقتی در هامبورگ بودی، چه کار کردی؟ | d: wenn, wann, ob
+[Als]{als-2} ihr letzten Sommer in Berlin wart, habt ihr Max besucht? | تابستان گذشته وقتی در برلین بودید، به دیدن ماکس رفتید؟ | d: Wenn, Wann, Ob | full: Habt ihr Max besucht, als ihr letzten Sommer in Berlin wart?
+[Als]{als-2} ich zum ersten Mal in Deutschland war, habe ich wenig verstanden. | بار اول که در آلمان بودم، کم می‌فهمیدم. | d: Wenn, Wann, Ob | full: Ich habe wenig verstanden, als ich zum ersten Mal in Deutschland war.
+Wir haben viel gelacht, [als]{als-2} wir gestern den Film gesehen haben. | دیروز وقتی فیلم را دیدیم، خیلی خندیدیم. | d: wenn, wann, ob | full: Als wir gestern den Film gesehen haben, haben wir viel gelacht.
+[Als]{als-2} mein Bruder gestern anrief{anrufen}, kochte ich gerade. | دیروز وقتی برادرم زنگ زد، داشتم آشپزی می‌کردم. | d: Wenn, Wann, Ob | full: Ich kochte gerade, als mein Bruder gestern anrief.
+Ich habe dich nicht gesehen, [als]{als-2} du gestern im Büro warst. | دیروز وقتی در دفتر بودی، تو را ندیدم. | d: wenn, wann, ob | full: Als du gestern im Büro warst, habe ich dich nicht gesehen.
+[Als]{als-2} ich letztes Jahr nach Berlin kam, konnte ich noch kein Deutsch. | پارسال وقتی به برلین آمدم، هنوز آلمانی بلد نبودم. | d: Wenn, Wann, Ob | full: Ich konnte noch kein Deutsch, als ich letztes Jahr nach Berlin kam.
+Meine Eltern haben in Teheran gewohnt, [als]{als-2} sie jung waren. | پدر و مادرم وقتی جوان بودند، در تهران زندگی می‌کردند. | d: wenn, wann, ob | full: Als sie jung waren, haben meine Eltern in Teheran gewohnt.
+[Als]{als-2} meine Großeltern jung waren, gab es kein Internet. | وقتی پدربزرگ و مادربزرگم جوان بودند، اینترنت نبود. | d: Wenn, Wann, Ob | full: Es gab kein Internet, als meine Großeltern jung waren.
+Paul war 25, [als]{als-2} er nach Deutschland kam. | پاول وقتی به آلمان آمد، ۲۵ ساله بود. | d: wenn, wann, ob | full: Als er nach Deutschland kam, war Paul 25.
+[Als]{als-2} Sie zum ersten Mal nach Deutschland kamen, konnten Sie schon Deutsch? | بار اول که به آلمان آمدید، آلمانی بلد بودید؟ | d: Wenn, Wann, Ob | full: Konnten Sie schon Deutsch, als Sie zum ersten Mal nach Deutschland kamen?
+Immer [wenn] wir Oma besuchten, gab es Kuchen. | هر بار که به دیدن مادربزرگ می‌رفتیم، کیک بود. | d: als, wann, ob | full: Es gab Kuchen, immer wenn wir Oma besuchten.
+Immer [wenn] es regnete, spielten die Kinder drinnen. | هر بار که باران می‌آمد، بچه‌ها توی خانه بازی می‌کردند. | d: als, wann, ob | full: Die Kinder spielten drinnen, immer wenn es regnete.
+Immer [wenn] ich nach Hause kam, war meine Mutter schon da. | هر بار که به خانه می‌آمدم، مادرم آنجا بود. | d: als, wann, ob | full: Meine Mutter war schon da, immer wenn ich nach Hause kam.
+Immer [wenn] wir in Schiras waren, haben wir viele Fotos gemacht. | هر بار که در شیراز بودیم، کلی عکس می‌گرفتیم. | d: als, wann, ob | full: Wir haben viele Fotos gemacht, immer wenn wir in Schiras waren.
+[Wenn] ich Zeit habe, lese ich ein Buch. | وقتی وقت دارم، کتاب می‌خوانم. | d: Als, Wann, Ob | full: Ich lese ein Buch, wenn ich Zeit habe.
+[Wenn] es morgen regnet, bleiben wir zu Hause. | اگر فردا باران بیاید، در خانه می‌مانیم. | d: Als, Wann, Ob | full: Wir bleiben zu Hause, wenn es morgen regnet. ; Wenn es regnet, bleiben wir morgen zu Hause. ; Wir bleiben morgen zu Hause, wenn es regnet.
+Ruf{anrufen} mich an{anrufen}, [wenn] du in Köln bist! | وقتی در کلن هستی، به من زنگ بزن! | d: als, wann, ob | full: Wenn du in Köln bist, ruf mich an!
+[Wenn] ihr Hunger habt, kocht Papa Nudeln. | اگر گرسنه‌اید، بابا ماکارونی می‌پزد. | d: Als, Wann, Ob | full: Papa kocht Nudeln, wenn ihr Hunger habt.
+[Wenn] Sie Fragen haben, rufen Sie mich bitte{bitte} an. | اگر سؤالی دارید، لطفاً به من زنگ بزنید. | d: Als, Wann, Ob | full: Wenn Sie Fragen haben, bitte rufen Sie mich an. ; Rufen Sie mich bitte an, wenn Sie Fragen haben. ; Bitte rufen Sie mich an, wenn Sie Fragen haben.
+Meine Schwester ist immer nervös, [wenn] sie eine Prüfung hat. | خواهرم همیشه وقتی امتحان دارد، دلشوره دارد. | d: als, wann, ob | full: Wenn sie eine Prüfung hat, ist meine Schwester immer nervös.
+[Wenn] ich groß bin, werde ich Ärztin. | وقتی بزرگ شدم، دکتر می‌شوم. | d: Als, Wann, Ob | full: Ich werde Ärztin, wenn ich groß bin.
+[Wenn] du nach Teheran kommst, zeige ich dir die Stadt. | وقتی به تهران بیایی، شهر را نشانت می‌دهم. | d: Als, Wann, Ob | full: Ich zeige dir die Stadt, wenn du nach Teheran kommst.
+[Wenn] ich keine Zeit habe, koche ich nicht. | وقتی وقت ندارم، آشپزی نمی‌کنم. | d: Als, Wann, Ob | full: Ich koche nicht, wenn ich keine Zeit habe.
+Was machst du, [wenn] du am Wochenende frei hast? | آخر هفته‌ها وقتی تعطیلی، چه کار می‌کنی؟ | d: als, wann, ob
+Als{als-2} ich in München [wohnte], bin ich oft ins Museum gegangen. | وقتی در مونیخ زندگی می‌کردم، اغلب به موزه می‌رفتم. | d: wohne, wohnt, wohnen | hint: (wohnen) | full: Ich bin oft ins Museum gegangen, als ich in München wohnte.
+[Als]{als-2} ich klein war, hatte ich immer Angst, [wenn] es dunkel war. | وقتی کوچک بودم، همیشه وقتی هوا تاریک بود می‌ترسیدم. | d: Wenn, Wann, Ob / als, wann, ob
+[Als]{als-2} wir gestern in Wien [ankamen]{ankommen}, war es schon dunkel. | دیروز وقتی به وین رسیدیم، هوا دیگر تاریک بود. | d: Wenn, Wann, Ob / kamen an, ankommen, ankommten | full: Es war schon dunkel, als wir gestern in Wien ankamen.
+Immer [wenn] ich krank [war], kochte meine Oma Suppe. | هر بار که مریض بودم، مادربزرگم سوپ می‌پخت. | d: als, wann, ob / bin, ist, sein
+[Wenn] ich morgen Zeit [habe], komme ich vorbei. | اگر فردا وقت داشته باشم، سر می‌زنم. | d: Als, Wann, Ob / hatte, hat, haben | full: Ich komme morgen vorbei, wenn ich Zeit habe. ; Wenn ich Zeit habe, komme ich morgen vorbei.
+[Wann] gehen wir? – [Wenn] du fertig bist. | کی می‌رویم؟ – وقتی آماده شدی. | d: Wenn, Als, Ob / Als, Wann, Ob
+[Wann] rufst du Oma an? – [Wenn] ich zu Hause bin. | کی به مادربزرگ زنگ می‌زنی؟ – وقتی خانه باشم. | d: Wenn, Als, Ob / Als, Wann, Ob
+[Wann] bist du nach Berlin gekommen? – [Als]{als-2} ich 20 war. | کی به برلین آمدی؟ – وقتی ۲۰ ساله بودم. | d: Wenn, Als, Ob / Wenn, Wann, Ob
+[Wann] hast du Deutsch gelernt? – [Als]{als-2} ich in Wien gewohnt habe. | کی آلمانی یاد گرفتی؟ – وقتی در وین زندگی می‌کردم. | d: Wenn, Als, Ob / Wenn, Wann, Ob
+transforms:
+Ich war klein. Ich hatte einen Hund. => Als{als-2} ich klein war, hatte ich einen Hund. | دو جمله را با als وصل کن؛ جمله als اول بیاید.
+Es regnet. Wir bleiben zu Hause. => Wenn es regnet, bleiben wir zu Hause. | دو جمله را با wenn وصل کن؛ جمله wenn اول بیاید.
+Wir kamen gestern in Wien an. Es regnete. => Als{als-2} wir gestern in Wien ankamen{ankommen}, regnete es. | دو جمله را با als وصل کن؛ جمله als اول بیاید.
+Ich war Student. Ich wohnte in Wien. => Als{als-2} ich Student war, wohnte ich in Wien. | دو جمله را با als وصل کن؛ جمله als اول بیاید.
+Wenn ich Zeit habe, koche ich. => Immer wenn ich Zeit hatte, kochte ich. ; Immer wenn ich Zeit hatte, habe ich gekocht. | جمله را به گذشته ببر و immer را اول جمله بگذار.
+Als{als-2} ich in Köln war, habe ich Max besucht. => Ich habe Max besucht, als{als-2} ich in Köln war. | جمله als را به آخر ببر.
+Wenn ich nach Hause komme, rufe ich dich an. => Ich rufe dich an, wenn ich nach Hause komme. | جمله wenn را به آخر ببر.
+Max kommt, wenn er fertig ist. => Wann kommt Max? | برای این جمله سؤال با wann بساز.
+translations:
+وقتی کوچک بودم، یک گربه داشتم. => Als{als-2} ich klein war, hatte ich eine Katze. ; Ich hatte eine Katze, als{als-2} ich klein war. ; Als{als-2} ich klein war, habe ich eine Katze gehabt. ; Ich habe eine Katze gehabt, als{als-2} ich klein war.
+وقتی باران می‌آید، در خانه می‌مانم. => Wenn es regnet, bleibe ich zu Hause. ; Ich bleibe zu Hause, wenn es regnet.
+وقتی وقت داری، به من زنگ بزن. => Wenn du Zeit hast, ruf{anrufen} mich an{anrufen}. ; Ruf{anrufen} mich an{anrufen}, wenn du Zeit hast. ; Wenn du Zeit hast, rufe mich an. ; Rufe mich an, wenn du Zeit hast.
+وقتی به وین رسیدیم، هوا سرد بود. => Als{als-2} wir in Wien ankamen{ankommen}, war es kalt. ; Es war kalt, als{als-2} wir in Wien ankamen{ankommen}. ; Als{als-2} wir in Wien angekommen sind, war es kalt. ; Es war kalt, als{als-2} wir in Wien angekommen sind.
+وقتی هوا خوب است، به پارک می‌رویم. => Wenn das Wetter schön ist, gehen wir in den Park. ; Wenn das Wetter gut ist, gehen wir in den Park. ; Wir gehen in den Park, wenn das Wetter schön ist. ; Wir gehen in den Park, wenn das Wetter gut ist.
+وقتی پدرم جوان بود، اینترنت نبود. => Als{als-2} mein Vater jung war, gab es kein Internet. ; Es gab kein Internet, als{als-2} mein Vater jung war. ; Als{als-2} mein Vater jung war, hat es kein Internet gegeben. ; Es hat kein Internet gegeben, als{als-2} mein Vater jung war.
+کی به تهران آمدی؟ => Wann bist du nach Teheran gekommen? ; Wann kamst du nach Teheran?
+وقتی بزرگ شدم، معلم می‌شوم. => Wenn ich groß bin, werde ich Lehrer. ; Wenn ich groß bin, werde ich Lehrerin. ; Ich werde Lehrer, wenn ich groß bin. ; Ich werde Lehrerin, wenn ich groß bin.

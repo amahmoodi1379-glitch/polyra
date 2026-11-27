@@ -1,0 +1,82 @@
+code: fr-a2-indefinis
+title: quelqu'un، quelque chose، quelque part
+scope: quelqu'un (کسی)، quelque chose (چیزی)، quelque part (جایی)، chaque (هر) و plusieurs (چند تا)؛ quelque chose de + صفت مذکر (quelque chose de bon) و quelqu'un de + صفت؛ و جفت منفی‌شان: ne … personne و ne … rien (rien de grave)؛ nulle part و aucun در B1 می‌آیند.
+can_do: حالا می‌توانی دربارهٔ کسی، چیزی یا جایی نامشخص حرف بزنی و بگویی هیچ‌کس یا هیچ چیز: Quelqu'un a téléphoné. Je veux manger quelque chose de bon. Je ne connais personne ici.
+rule: quelqu'un ↔ ne … personne، quelque chose ↔ ne … rien، quelque part = یک جایی؛ chaque + اسم مفرد و فعل مفرد، plusieurs + اسم جمع بی‌حرف تعریف؛ quelque chose de، rien de و quelqu'un de + صفت مذکر.
+mistake: در فارسی صفت بی‌واسطه بعد از «چیز» می‌آید («چیز خوبی»)، برای همین فارسی‌زبان‌ها می‌گویند «quelque chose bon» یا چون chose مؤنث است صفت را مؤنث می‌کنند («quelque chose de bonne»)؛ درست: quelque chose de bon. بعد از chaque هم چون معنی‌اش «همه» است، اسم و فعل را جمع می‌کنند («chaque enfants ont»)؛ درست: Chaque enfant a un cadeau.
+lesson:
+quelqu'un یعنی «کسی، یک نفر»، quelque chose یعنی «چیزی، یک چیز» و quelque part یعنی «یک جایی»: Quelqu'un a téléphoné. Tu veux quelque chose ? Mes lunettes sont quelque part dans la maison.
+فعل بعد از quelqu'un و quelque chose مفرد است: Quelqu'un est là ? Quelque chose est tombé.
+برای اینکه به آن‌ها صفت بدهی، de لازم است و صفت همیشه مذکر می‌ماند، حتی با chose: quelque chose de bon (یک چیز خوب)، quelque chose d'intéressant، quelqu'un de gentil (یک آدم مهربان).
+جفت منفی‌شان: quelqu'un → ne … personne، quelque chose → ne … rien: Tu vois quelqu'un ? – Non, je ne vois personne. Tu veux quelque chose ? – Non, je ne veux rien. rien de هم مثل quelque chose de است: Ce n'est rien de grave.
+chaque یعنی «هر» و همیشه با اسم مفرد و فعل مفرد می‌آید و عوض نمی‌شود: Chaque élève a un livre. Chaque matin, je bois un thé.
+plusieurs یعنی «چندین، چند تا» و همیشه با اسم جمع می‌آید، بی‌حرف تعریف، و برای مذکر و مؤنث یکی است: plusieurs amis، plusieurs fois.
+table:
+مثبت | منفی | مثال
+quelqu'un | ne … personne | Je ne vois personne.
+quelque chose | ne … rien | Je ne veux rien.
+quelque chose de bon | rien de bon | Il n'y a rien de bon à la télé.
+examples:
+Quelqu'un a téléphoné pour toi. | کسی برایت تلفن زد.
+Je veux manger quelque chose de bon. | می‌خواهم یک چیز خوب بخورم.
+Chaque élève a un livre. | هر شاگرد یک کتاب دارد.
+J'ai vu ce film plusieurs fois. | این فیلم را چند بار دیده‌ام.
+targets:
+Je voudrais boire quelque chose [de chaud]. | دلم می‌خواهد یک چیز گرم بنوشم. | d: chaud, de chaude, du chaud
+Tu as fait quelque chose [d']intéressant ce week-end ? | این آخر هفته کار جالبی کردی؟ | d: de, du, des
+On va manger quelque chose [de bon] ce soir. | امشب یک چیز خوب می‌خوریم. | d: bon, de bonne, du bon
+J'ai acheté quelque chose [de joli] pour ma mère. | برای مادرم یک چیز قشنگ خریدم. | d: joli, de jolie, du joli
+Ce{ce-pron} n'est rien [de grave]. | چیز مهمی نیست. | d: grave, du grave, de graves
+Paul est quelqu'un [de sérieux]. | پل آدم جدی‌ای است. | d: sérieux, du sérieux, très sérieux
+Il n'y a rien [d']intéressant à la télé. | در تلویزیون هیچ چیز جالبی نیست. | d: de, du, des
+Je cherche quelqu'un [de sympa] pour partager l'appartement. | دنبال یک آدم خوش‌اخلاق برای هم‌خانه شدن می‌گردم. | d: sympa, du sympa, très sympa
+Il y a quelque chose [de bizarre] dans cette maison. | در این خانه یک چیز عجیب هست. | d: bizarre, du bizarre, des bizarres
+Tu connais quelqu'un [de célèbre] ? | آدم مشهوری می‌شناسی؟ | d: célèbre, du célèbre, très célèbre
+Quelqu'un [a] pris mon stylo. | کسی خودکارم را برداشته. | d: ont, avez, avons | hint: (avoir)
+Quelqu'un [est] venu ce matin. | امروز صبح کسی آمد. | d: sont, a, ont | hint: (être) | full: Ce matin, quelqu'un est venu.
+Quelque chose [est] tombé dans la cuisine. | چیزی در آشپزخانه افتاد. | d: a, sont, ont | hint: (être)
+Personne ne [sait] la réponse. | هیچ‌کس جواب را نمی‌داند. | d: savent, savons, sais | hint: (savoir)
+Rien n'[est] prêt pour la fête. | هیچ چیز برای جشن آماده نیست. | d: sont, a, es | hint: (être)
+Tu vas [quelque part] ce week-end ? | این آخر هفته جایی می‌روی؟ | d: quelqu'un, quelque chose, quelques parts | full: Ce week-end, tu vas quelque part ?
+J'ai laissé mon parapluie [quelque part]. | چترم را یک جایی جا گذاشتم. | d: quelqu'un, quelque chose, quelques parts
+Mes lunettes sont [quelque part] dans la maison. | عینکم یک جایی در خانه است. | d: quelqu'un, quelque chose, quelques parts
+Il habite [quelque part] dans le sud. | یک جایی در جنوب زندگی می‌کند. | d: quelqu'un, quelque chose, quelques parts
+Tu as vu quelqu'un ? Non, je n'ai vu [personne]. | کسی را دیدی؟ نه، هیچ‌کس را ندیدم. | d: rien, quelqu'un, pas
+Tu veux quelque chose ? Non, je ne veux [rien]. | چیزی می‌خواهی؟ نه، هیچ چیز نمی‌خواهم. | d: quelque chose, quelqu'un, aucun
+Je n'ai [rien] mangé ce matin. | امروز صبح هیچ چیز نخوردم. | d: personne, quelque chose, aucun | full: Ce matin, je n'ai rien mangé.
+Je ne connais [personne] dans cette ville. | در این شهر هیچ‌کس را نمی‌شناسم. | d: quelqu'un, aucun, pas | full: Dans cette ville, je ne connais personne.
+[Chaque] matin, je bois{boire} un thé. | هر صبح یک چای می‌نوشم. | d: Chaques, Chacun, Tous | full: Je bois un thé chaque matin.
+Chaque enfant [a] un cadeau. | هر بچه یک هدیه دارد. | d: ont, avons, avez | hint: (avoir)
+Je vais à la piscine [chaque] samedi. | هر شنبه به استخر می‌روم. | d: chaques, chacun, tous | full: Chaque samedi, je vais à la piscine.
+[Chaque] chambre a une salle de bain. | هر اتاق یک حمام دارد. | d: Chaques, Chacune, Toutes
+Chaque personne [peut] prendre deux livres. | هر نفر می‌تواند دو کتاب بردارد. | d: peuvent, pouvons, pouvez | hint: (pouvoir)
+Il a [plusieurs] voitures. | او چند ماشین دارد. | d: plusieur, plusieures, des plusieurs
+J'ai [plusieurs] questions. | چند سؤال دارم. | d: plusieur, plusieures, des plusieurs
+Nous sommes restés [plusieurs] jours à Nice. | چند روز در نیس ماندیم. | d: plusieur, plusieures, des plusieurs
+Il y a [plusieurs] restaurants dans la rue. | در این خیابان چند رستوران هست. | d: plusieur, des plusieurs, chaque
+Quelqu'un [a] téléphoné, mais personne n'[a] répondu. | کسی تلفن زد، ولی هیچ‌کس جواب نداد. | d: ont, avez, sont / ont, avons, es
+[Chaque] élève a [plusieurs] livres. | هر شاگرد چند کتاب دارد. | d: Chaques, Chacun, Tous / plusieur, plusieures, des plusieurs
+Tu veux boire quelque chose [de chaud] ou quelque chose [de froid] ? | چیز گرم می‌خواهی بنوشی یا چیز سرد؟ | d: chaud, de chaude, du chaud / froid, de froide, du froid
+Quelqu'un [est] là ? Non, il n'y a [personne]. | کسی آنجاست؟ نه، هیچ‌کس نیست. | d: sont, a, ont / quelqu'un, aucun, personnes
+[Chaque] jour, je lis quelque chose [d']intéressant. | هر روز یک چیز جالب می‌خوانم. | d: Chaques, Chacun, Tous / de, du, des | full: Je lis quelque chose d'intéressant chaque jour.
+J'ai cherché pendant [plusieurs] heures, mais je n'ai [rien] trouvé. | چند ساعت گشتم، ولی هیچ چیز پیدا نکردم. | d: plusieur, plusieures, des plusieurs / personne, quelque chose, aucun
+Je connais [plusieurs] personnes ici, mais [personne] ne parle persan. | اینجا چند نفر را می‌شناسم، ولی هیچ‌کس فارسی حرف نمی‌زند. | d: plusieur, plusieures, des plusieurs / quelqu'un, rien, chaque
+Tu as [quelque chose] à faire ? Non, je n'ai [rien] à faire. | کاری داری؟ نه، هیچ کاری ندارم. | d: quelqu'un, quelque part, quelques chose / quelque chose, personne, aucun
+transforms:
+Je vois quelqu'un. => Je ne vois personne. | جمله را منفی کن.
+Je veux quelque chose. => Je ne veux rien. | جمله را منفی کن.
+Quelqu'un est venu. => Personne n'est venu. | جمله را منفی کن.
+J'ai mangé quelque chose. => Je n'ai rien mangé. | جمله را منفی کن.
+Il y a quelqu'un. => Il n'y a personne. | جمله را منفی کن.
+Tous les élèves ont un livre. => Chaque élève a un livre. | با chaque بنویس.
+Je veux manger quelque chose bon. => Je veux manger quelque chose de bon. | غلط جمله را درست کن.
+Chaque enfants ont un cadeau. => Chaque enfant a un cadeau. | غلط جمله را درست کن.
+translations:
+کسی تلفن زد. => Quelqu'un a téléphoné. ; Quelqu'un a appelé.
+هیچ‌کس را نمی‌شناسم. => Je ne connais personne.
+می‌خواهم یک چیز خوب بخورم. => Je veux manger quelque chose de bon. ; Je voudrais manger quelque chose de bon.
+امروز صبح هیچ چیز نخوردم. => Je n'ai rien mangé ce matin. ; Ce matin, je n'ai rien mangé.
+هر شاگرد یک کتاب دارد. => Chaque élève a un livre.
+چند سؤال دارم. => J'ai plusieurs questions. ; J'ai quelques questions.
+این آخر هفته جایی می‌روی؟ => Tu vas quelque part ce week-end ? ; Est-ce que tu vas quelque part ce week-end ? ; Ce week-end, tu vas quelque part ?
+چیز مهمی نیست. => Ce{ce-pron} n'est rien de grave. ; Ce{ce-pron} n'est pas grave. ; Ce{ce-pron} n'est rien. ; Rien de grave.

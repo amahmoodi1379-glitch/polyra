@@ -1,0 +1,29 @@
+code: fr-a2-d005
+title: پرسیدن آدرس در خیابان
+situation: در خیابان دنبال موزه شهر می‌گردی. یک رهگذر می‌بیند که راه را پیدا نمی‌کنی.
+turns:
+B: Bonjour ! Je peux vous aider ? | سلام! می‌توانم کمکتان کنم؟
++ Oui, pardon. Le musée de la ville, c'est{être} loin d'ici ? | بله، ببخشید. موزه شهر از اینجا دور است؟
+- Oui, pardon. Le musée de la ville, c'est{être} loin de ici ? | بله، ببخشید. موزه شهر از اینجا دور است؟
+- Oui, pardon. Je cherche le musée. Tu sais où il est ? | آره، ببخشید. دنبال موزه می‌گردم. می‌دانی کجاست؟
+why: پیش از واکه de می‌شود d': «loin d'ici». با رهگذر tu نمی‌گوییم.
+B: Non, pas très loin. Vous voyez la banque, là-bas ? | نه، خیلی دور نیست. آن بانک را آنجا می‌بینید؟
+- Oui, je le vois. | بله، می‌بینمش.
++ Oui, je la vois. | بله، می‌بینمش.
+- Oui, je vois la{la-pron}. | بله، می‌بینمش.
+why: banque مؤنث است، پس ضمیرش la است، و ضمیر پیش از فعل می‌آید: «je la vois».
+B: Alors, allez jusqu'à la banque et tournez à droite. Le musée est dans cette rue, à côté du{du-contr} cinéma. | پس تا بانک بروید و به راست بپیچید. موزه در همان خیابان است، کنار سینما.
+- J'y peux aller à pied ? | می‌توانم پیاده بروم؟
+- Je peux y aller en pied ? | می‌توانم پیاده بروم؟
++ Je peux y aller à pied ? | می‌توانم پیاده بروم؟
+why: y پیش از مصدر می‌آید: «je peux y aller». پیاده رفتن «à pied» است، نه «en pied».
+B: Oui, bien sûr ! C'est{être} à cinq minutes. Vous êtes touriste ? | بله، حتماً! پنج دقیقه راه است. گردشگرید؟
++ Oui, je suis{être} de Téhéran. Je visite{visiter} Paris avec ma sœur. | بله، اهل تهرانم. با خواهرم پاریس را می‌گردیم.
+- Oui, je suis{être} de Téhéran. Je visite{visiter} Paris avec mon sœur. | بله، اهل تهرانم. با خواهرم پاریس را می‌گردیم.
+- Oui, je suis{être} de Téhéran. Je visite{visiter} à Paris avec ma sœur. | بله، اهل تهرانم. با خواهرم پاریس را می‌گردیم.
+why: sœur مؤنث است و پیش از آن ma می‌آید. visiter مفعولش را بی‌واسطه می‌گیرد: «je visite Paris»، بدون à.
+B: Ah, Téhéran ! Alors, bonne journée à Paris ! | آه، تهران! پس روز خوبی در پاریس داشته باشید!
+- Merci, c'est{être} très gentille ! | ممنون، خیلی لطف دارید!
++ Merci, c'est{être} très gentil ! | ممنون، خیلی لطف دارید!
+- Merci, à demain ! | ممنون، تا فردا!
+why: بعد از «c'est» صفت مذکر می‌آید: «c'est très gentil». فردا این رهگذر را نمی‌بینی، پس «à demain» جا ندارد.

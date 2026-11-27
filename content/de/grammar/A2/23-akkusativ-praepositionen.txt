@@ -1,0 +1,89 @@
+code: de-a2-akkusativ-praepositionen
+title: für، ohne، gegen، durch، um: همیشه Akkusativ
+scope: حرف‌های اضافه‌ای که همیشه Akkusativ می‌گیرند: für، ohne، gegen، durch، um (um den Tisch و um 8 Uhr) و bis (bis Montag، bis nächsten Montag)، با اسم و با ضمیر (für dich، ohne mich، gegen ihn)؛ حرف‌های اضافه‌ای که Genitiv می‌گیرند در سطح B1 می‌آیند.
+can_do: حالا می‌توانی بگویی چیزی برای کیست، بدون چه کسی می‌روی و از کجا رد می‌شوی: «برای پدرم»، «بدون تو»، «از وسط پارک».
+rule: für، ohne، gegen، durch، um و bis همیشه Akkusativ می‌گیرند: für meinen Vater، durch den Park، ohne dich، gegen ihn.
+mistake: فارسی‌زبان‌ها بعد از mit و zu یاد گرفته‌اند Dativ بگذارند و همین را بعد از für و ohne هم تکرار می‌کنند: «für dir» و «ohne meinem Schlüssel» غلط است؛ درست: für dich، ohne meinen Schlüssel.
+lesson:
+für (برای)، ohne (بدون)، gegen (در برابرِ، علیه)، durch (از میانِ، از وسطِ)، um (دورِ) و bis (تا) همیشه Akkusativ می‌گیرند.
+پس مثل مفعول، فقط مذکر عوض می‌شود: der ← den، ein ← einen، mein ← meinen: für meinen Vater، durch den Park. مؤنث، خنثی و جمع همان می‌مانند: für meine Mutter، durch das Fenster.
+ضمیرها هم شکل مفعولی می‌گیرند: für mich، ohne dich، gegen ihn، für sie، für uns، ohne euch، für Sie.
+بعد از mit، zu و bei حالت Dativ می‌آید (mit dir)، ولی بعد از این شش حرف اضافه نه: «für dir» غلط است و درستش für dich است.
+um دو معنی دارد: um den Tisch («دور میز») و um 8 Uhr («ساعت ۸»). gegen هم با ساعت یعنی «حدودِ»: gegen 8 Uhr.
+bis بیشتر بدون حرف تعریف می‌آید: bis Montag، bis morgen؛ با nächste می‌شود bis nächsten Montag.
+برای حفظ کردن، این پنج کلمه را پشت سر هم تکرار کن: für، ohne، gegen، durch، um.
+table:
+حرف اضافه | معنی | مثال
+für | برای | für meinen Vater، für dich
+ohne | بدون | ohne den Schlüssel، ohne mich
+gegen | در برابرِ، علیه | gegen die Mannschaft aus Köln
+durch | از میانِ | durch den Park
+um | دورِ؛ ساعتِ | um den Tisch، um 8 Uhr
+bis | تا | bis Montag، bis nächsten Montag
+sets:
+حرف‌های اضافه Akkusativ: für, ohne, gegen, durch, um, bis
+ضمیر بعد از آن‌ها: mich, dich, ihn, sie, es, uns, euch, Sie
+examples:
+Diese Blumen sind für dich. | این گل‌ها برای توست.
+Ich trinke Kaffee ohne Zucker. | قهوه را بدون شکر می‌نوشم.
+Der Weg geht durch den Wald. | راه از وسط جنگل می‌گذرد.
+Ich komme gegen 8 Uhr. | حدود ساعت ۸ می‌آیم.
+targets:
+Das Geschenk ist für [meinen] Vater. | هدیه برای پدرم است. | d: meinem, mein, meiner | hint: (mein)
+Ich kaufe Blumen für [meine] Mutter. | برای مادرم گل می‌خرم. | d: meiner, meinem, meinen | hint: (mein)
+Für [wen] ist der Kuchen? | کیک برای کیست؟ | d: wem, wer, wessen
+Ist der Kaffee für [mich]? | این قهوه برای من است؟ | d: mir, ich, mein | hint: (ich)
+Danke{danke} für [den] Tipp! | ممنون بابت راهنمایی! | d: dem, der, das
+Wir haben ein Zimmer für [eine] Nacht gebucht. | یک اتاق برای یک شب رزرو کردیم. | d: einer, einem, einen
+Heute habe ich leider keine Zeit für [euch]. | امروز متأسفانه برای شما وقت ندارم. | d: euer, ihr, eure | hint: (ihr) | full: Ich habe heute leider keine Zeit für euch. ; Leider habe ich heute keine Zeit für euch.
+Das ist ein Brief für [Sie], Frau Weber. | این یک نامه برای شماست، خانم وبر. | d: Ihnen, Ihr, Ihre | hint: (Sie)
+Sara arbeitet für [eine] Firma in München. | سارا برای یک شرکت در مونیخ کار می‌کند. | d: einer, einem, einen
+Hast du ein Geschenk für [ihn]? | برای او هدیه‌ای داری؟ | d: ihm, er, sein | hint: (er)
+Für [den] Kurs brauchst du ein Wörterbuch. | برای این کلاس به یک فرهنگ لغت نیاز داری. | d: dem, der, das | full: Du brauchst für den Kurs ein Wörterbuch. ; Du brauchst ein Wörterbuch für den Kurs.
+Ohne [dich] ist die Party langweilig. | بدون تو مهمانی خسته‌کننده است. | d: dir, du, dein | hint: (du) | full: Die Party ist ohne dich langweilig.
+Geh nicht ohne [deine] Jacke! | بدون کاپشنت بیرون نرو! | d: deiner, deinem, dein | hint: (dein)
+Wir fahren ohne [unseren] Hund in Urlaub. | ما بدون سگمان به تعطیلات می‌رویم. | d: unserem, unser, unserer | hint: (unser) | full: Ohne unseren Hund fahren wir in Urlaub.
+Max ist ohne [seinen] Schlüssel aus dem Haus gegangen. | ماکس بدون کلیدش از خانه بیرون رفت. | d: seinem, seiner, sein | hint: (sein)
+Kommst du heute? – Nein, geht ohne [mich]! | امروز می‌آیی؟ – نه، بدون من بروید! | d: mir, ich, mein | hint: (ich)
+Lena kommt später, wir essen ohne [sie]. | لنا دیرتر می‌آید، ما بدون او غذا می‌خوریم. | d: ihr, ihre, ihrer | hint: (sie)
+Er ist ohne [ein] Wort gegangen. | او بدون یک کلمه حرف رفت. | d: einem, einen, eine
+Wir gehen durch [den] Park. | ما از وسط پارک می‌رویم. | d: dem, der, das
+Die Straßenbahn fährt durch [die] Altstadt. | تراموا از وسط شهر قدیمی رد می‌شود. | d: der, dem, den
+Die Katze ist durch [das] Fenster gesprungen. | گربه از پنجره پرید. | d: dem, den, der
+Gehen Sie bitte{bitte} durch [diese] Tür. | لطفاً از این در بروید. | d: dieser, diesem, dieses | full: Bitte gehen Sie durch diese Tür.
+Fahren wir [durch] den Wald? | از وسط جنگل می‌رویم؟ | d: von, aus, mit
+Wir spielen morgen gegen [die] Mannschaft aus Köln. | فردا مقابل تیم کلن بازی می‌کنیم. | d: der, dem, den | full: Morgen spielen wir gegen die Mannschaft aus Köln.
+Ich habe nichts gegen [deinen] Freund. | با دوستت مشکلی ندارم. | d: deinem, deiner, dein | hint: (dein)
+Diese Tabletten sind [gegen] Fieber. | این قرص‌ها ضد تب‌اند. | d: von, mit, aus
+Das Auto ist gegen [einen] Baum gefahren. | ماشین به یک درخت خورد. | d: einem, einer, ein
+Wir sitzen alle um [den] Tisch. | همه دور میز نشسته‌ایم. | d: dem, der, das
+Das Café ist gleich um [die] Ecke. | کافه همین نزدیکی، سر کوچه است. | d: der, dem, den
+Wir laufen jeden Morgen um [den] See. | ما هر صبح دور دریاچه می‌دویم. | d: dem, der, das | full: Jeden Morgen laufen wir um den See.
+Der Film beginnt pünktlich [um] 20 Uhr. | فیلم سر ساعت ۲۰ شروع می‌شود. | d: am, im, in
+Ich bin bis [nächsten]{nächste} Montag in Wien. | تا دوشنبه آینده در وین هستم. | d: nächstem, nächster, nächstes | full: Bis nächsten Montag bin ich in Wien.
+Ich kaufe ein Geschenk für [meinen] Bruder und Blumen für [meine] Oma. | برای برادرم یک هدیه و برای مادربزرگم گل می‌خرم. | d: meinem, meiner, mein / meiner, meinem, meinen
+Wir gehen [durch] den Park und dann [um] den See. | از وسط پارک می‌رویم و بعد دور دریاچه. | d: von, aus, mit / von, aus, mit
+Ich fahre nicht ohne [dich]. Das Ticket ist für [dich]. | بدون تو نمی‌روم. بلیت برای توست. | d: dir, du, dein / dir, du, dein
+Die Straßenbahn fährt durch [die] Stadt und um [den] Park. | تراموا از وسط شهر و دور پارک می‌گذرد. | d: der, dem, den / dem, der, das
+Für [wen] ist das Geschenk? – Für [meinen] Opa. | هدیه برای کیست؟ – برای پدربزرگم. | d: wem, wer, wessen / meinem, meiner, mein
+Ohne [meinen] Kaffee und ohne [mein] Frühstück kann ich nicht arbeiten. | بدون قهوه و صبحانه‌ام نمی‌توانم کار کنم. | d: meinem, meiner, mein / meinem, meinen, meiner | full: Ich kann ohne meinen Kaffee und ohne mein Frühstück nicht arbeiten.
+Wir laufen durch [den] Wald und um [das] Dorf. | ما از وسط جنگل و دور روستا می‌دویم. | d: dem, der, das / dem, den, der
+Ist das für [mich]? – Ja, das ist für [dich]! | این برای من است؟ – بله، برای توست! | d: mir, ich, mein / dir, du, dein
+transforms:
+Das Geschenk ist für mich. => Das Geschenk ist für dich. | به‌جای «من» بگو «تو».
+Ich gehe mit meinem Bruder. => Ich gehe ohne meinen Bruder. | به‌جای «با برادرم» بگو «بدون برادرم».
+Wir fahren mit dem Hund. => Wir fahren ohne den Hund. | به‌جای mit بگو ohne.
+Die Blumen sind für die Mutter. => Die Blumen sind für den Vater. | به‌جای Mutter بگو Vater.
+Ich kaufe das für Anna. => Ich kaufe das für sie. | به‌جای Anna ضمیر بگذار.
+Wir spielen gegen Max. => Wir spielen gegen ihn. | به‌جای Max ضمیر بگذار.
+Das ist für Max und Anna. => Das ist für sie. | به‌جای «Max und Anna» ضمیر بگذار.
+Der Weg geht durch die Stadt. => Der Weg geht durch den Park. | به‌جای Stadt بگو Park.
+translations:
+این هدیه برای توست. => Das Geschenk ist für dich. ; Dieses Geschenk ist für dich.
+بدون من نرو! => Geh nicht ohne mich! ; Gehe nicht ohne mich! ; Fahr nicht ohne mich! ; Fahre nicht ohne mich!
+ما از وسط پارک می‌رویم. => Wir gehen durch den Park. ; Wir laufen durch den Park. ; Wir fahren durch den Park.
+برای پدرم یک کتاب می‌خرم. => Ich kaufe für meinen Vater ein Buch. ; Ich kaufe ein Buch für meinen Vater. ; Ich kaufe meinem Vater ein Buch.
+قهوه را بدون شکر می‌نوشم. => Ich trinke Kaffee ohne Zucker. ; Ich trinke den Kaffee ohne Zucker. ; Ich trinke meinen Kaffee ohne Zucker.
+ما دور دریاچه می‌دویم. => Wir laufen um den See. ; Wir joggen um den See.
+این نامه برای شماست (مؤدبانه). => Dieser Brief ist für Sie. ; Der Brief ist für Sie.
+با او (مرد) مشکلی ندارم. => Ich habe nichts gegen ihn. ; Ich habe kein Problem mit ihm.

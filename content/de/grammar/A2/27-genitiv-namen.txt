@@ -1,0 +1,90 @@
+code: de-a2-genitiv-namen
+title: Annas Auto، Max' Fahrrad: مالِ چه کسی؟
+scope: مالکیت با اسم آدم‌ها: اسم + s قبل از چیز (Annas Auto، Peters Bruder، Frau Müllers Büro)، فقط آپاستروف بعد از اسم‌هایی که به s، z یا x ختم می‌شوند (Max' Fahrrad، Lukas' Schwester) و در گفتار von + Dativ (das Auto von Anna، die Tochter von meinem Freund)؛ Genitiv با حرف تعریف (des Mannes) در سطح B1 می‌آید.
+can_do: حالا می‌توانی بگویی چیزی مال چه کسی است: «ماشینِ آنا»، «برادرِ پیتر»، «دخترِ دوستم».
+rule: اسم صاحب + s، بعد چیز، بدون حرف تعریف: Annas Auto؛ بعد از s، z یا x فقط آپاستروف: Max' Fahrrad؛ در گفتار: das Auto von Anna.
+mistake: در فارسی اول چیز را می‌گوییم و بعد صاحبش را («ماشینِ آنا»)، برای همین فارسی‌زبان‌ها می‌نویسند «das Auto Anna» یا «das Annas Auto»؛ درست: Annas Auto یا das Auto von Anna.
+lesson:
+در فارسی می‌گوییم «ماشینِ آنا»: اول چیز، بعد صاحبش. در آلمانی اول صاحب می‌آید، بعد چیز: Annas Auto.
+به آخر اسمِ صاحب یک s می‌چسبانیم و قبل از چیز حرف تعریف نمی‌گذاریم: Peters Bruder («برادرِ پیتر»)، Saras Tasche، Frau Müllers Büro. «das Annas Auto» غلط است.
+اگر اسم به s، z یا x ختم شود، s اضافه نمی‌کنیم و فقط یک آپاستروف (') می‌گذاریم: Max' Fahrrad، Lukas' Schwester، Felix' Handy، Frau Schulz' Garten.
+در اسم‌های دیگر، برخلاف انگلیسی، آپاستروف نمی‌گذاریم: Peters Auto، نه «Peter's Auto».
+در حرف زدن، آلمانی‌ها بیشتر von می‌گویند و ترتیبش مثل فارسی است: das Auto von Anna («ماشینِ آنا»)، die Tochter von meinem Freund («دخترِ دوستم»).
+بعد از von همیشه Dativ می‌آید: von meinem Vater، von meiner Mutter، von meinen Eltern. بعد از von به اسم s اضافه نمی‌شود: von Anna، نه «von Annas».
+برای پرسیدن صاحبِ چیزی بگو: Wem gehört die Tasche? – Das ist Saras Tasche.
+اسمِ این حالت Genitiv (حالت ملکی) است؛ Genitiv با حرف تعریف (des Mannes) را در B1 یاد می‌گیری.
+table:
+صاحب | با s یا آپاستروف | در گفتار: von + Dativ
+Anna | Annas Auto | das Auto von Anna
+Peter | Peters Bruder | der Bruder von Peter
+Frau Müller | Frau Müllers Büro | das Büro von Frau Müller
+Max | Max' Fahrrad | das Fahrrad von Max
+Lukas | Lukas' Schwester | die Schwester von Lukas
+mein Freund | – | die Tochter von meinem Freund
+sets:
+اسم + s: Annas, Peters, Saras, Pauls, Rezas, Lenas
+فقط آپاستروف (بعد از s، z، x): Max', Lukas', Jonas', Felix', Frau Schulz'
+examples:
+Das ist Annas Auto. | این ماشینِ آناست.
+Max' Fahrrad ist neu. | دوچرخه‌ی ماکس نو است.
+Das ist die Tochter von meinem Freund. | این دخترِ دوستم است.
+Wem gehört{gehören} die Tasche? – Das ist Saras Tasche. | این کیف مال کیست؟ – کیفِ ساراست.
+targets:
+[Annas] Auto ist rot. | ماشین آنا قرمز است. | d: Anna, Anna', von Anna
+Kennst du [Peters] Schwester? | خواهر پیتر را می‌شناسی؟ | d: Peter, Peter', von Peter
+Ist das [Saras] Tasche? | این کیف ساراست؟ | d: Sara, Sara', die Sara
+Wir feiern heute [Pauls] Geburtstag. | امروز تولد پاول را جشن می‌گیریم. | d: Paul, Paul', von Paul | full: Heute feiern wir Pauls Geburtstag.
+[Rezas] Eltern kommen aus Isfahan. | پدر و مادر رضا اهل اصفهان‌اند. | d: Reza, Reza', von Reza
+Hast du [Lenas] Telefonnummer? | شماره تلفن لنا را داری؟ | d: Lena, Lena', von Lena
+Ich fahre heute mit [Toms] Fahrrad. | امروز با دوچرخه‌ی تام می‌روم. | d: Tom, Tom', von Tom | full: Heute fahre ich mit Toms Fahrrad.
+Das ist nicht [Mias] Jacke. | این کاپشنِ میا نیست. | d: Mia, Mia', die Mia
+Wo ist Frau [Müllers] Büro? | دفتر کار خانم مولر کجاست؟ | d: Müller, Müller', von Müller
+Ich wohne jetzt in [Amirs] Wohnung. | الان در آپارتمان امیر زندگی می‌کنم. | d: Amir, Amir', von Amir | full: Jetzt wohne ich in Amirs Wohnung.
+[Lisas] Hund ist sehr klein. | سگ لیزا خیلی کوچک است. | d: Lisa, Lisa', die Lisa
+Wo ist [Maryams] Rucksack? | کوله‌پشتی مریم کجاست؟ | d: Maryam, Maryam', von Maryam
+Wem gehört{gehören} der Schlüssel? – Das ist [Tims] Schlüssel. | این کلید مال کیست؟ – کلیدِ تیم است. | d: Tim, Tim', von Tim
+[Sophies] Mutter ist Ärztin. | مادر سوفی پزشک است. | d: Sophie, Sophie', die Sophie
+Ich finde{finden-2} [Alis] Idee gut. | به نظرم ایده‌ی علی خوب است. | d: Ali, Ali', von Ali
+Am Wochenende sind wir bei [Minas] Oma. | آخر هفته پیش مادربزرگِ مینا هستیم. | d: Mina, Mina', von Mina | full: Wir sind am Wochenende bei Minas Oma.
+[Max'] Schwester spielt sehr gut Gitarre. | خواهر ماکس خیلی خوب گیتار می‌زند. | d: Maxs, Maxes, von Max
+[Lukas'] Eltern wohnen in Hamburg. | پدر و مادر لوکاس در هامبورگ زندگی می‌کنند. | d: Lukass, Lukases, von Lukas
+Hast du [Felix'] Handy gesehen? | گوشی فلیکس را دیده‌ای؟ | d: Felixs, Felixes, von Felix
+Wir machen die Hausaufgaben in [Jonas'] Zimmer. | تکالیف را در اتاقِ یوناس انجام می‌دهیم. | d: Jonass, Jonases, von Jonas
+Frau [Schulz'] Garten ist sehr schön. | باغ خانم شولتس خیلی قشنگ است. | d: Schulzs, Schulzen, von Schulz
+Das ist das Auto von [meinem] Vater. | این ماشینِ پدرم است. | d: meinen, mein, meiner | hint: (mein)
+Das Zimmer von [meiner]{mein} Schwester ist sehr klein. | اتاق خواهرم خیلی کوچک است. | d: meine, meinem, meinen | hint: (mein)
+Das Haus von [meinen] Eltern hat einen großen Garten. | خانه‌ی پدر و مادرم باغ بزرگی دارد. | d: meine, meiner, meinem | hint: (mein)
+Ist das die Jacke von [deinem] Bruder? | این کاپشنِ برادرت است؟ | d: deinen, dein, deiner | hint: (dein)
+Das ist die Tochter von [unserem] Lehrer. | این دخترِ معلم ماست. | d: unseren, unser, unserer | hint: (unser)
+Die Katze von [der] Nachbarin ist wieder in unserem Garten. | گربه‌ی خانمِ همسایه دوباره در حیاط ماست. | d: die, den, das
+Wie heißt der Hund von [deiner]{dein} Tante? | اسم سگِ عمه‌ات چیست؟ | d: deine, deinem, deinen | hint: (dein)
+Das ist das Büro von [unserer]{unser} Chefin. | این دفتر کارِ رئیسِ ماست. | d: unsere, unserem, unseren | hint: (unser)
+Das Fahrrad von [ihrem]{ihr-det} Sohn ist kaputt. | دوچرخه‌ی پسرش خراب است. | d: ihren, ihre, ihrer | hint: (ihr)
+Die Kinder von [meinem] Onkel wohnen in Teheran. | بچه‌های عمویم در تهران زندگی می‌کنند. | d: meinen, meiner, mein | hint: (mein)
+Ist das die Tasche von [Mia]? | این کیفِ میاست؟ | d: Mias, Mia', Mias'
+[Annas] Bruder und [Lukas'] Schwester sind in einer Klasse. | برادر آنا و خواهر لوکاس هم‌کلاسی‌اند. | d: Anna, Anna', von Anna / Lukass, Lukases, von Lukas
+Das ist nicht [Pauls] Auto, das ist das Auto von [seinem] Vater. | این ماشینِ پاول نیست، ماشینِ پدرش است. | d: Paul, Paul', von Paul / seinen, sein, seiner
+Ist das [Saras] Heft? – Nein, das ist [Jonas'] Heft. | این دفترِ ساراست؟ – نه، دفترِ یوناس است. | d: Sara, Sara', von Sara / Jonass, Jonases, von Jonas
+[Lauras] Mutter und [Leons] Vater sind Kollegen. | مادر لورا و پدر لئون همکارند. | d: Laura, Laura', von Laura / Leon, Leon', von Leon
+Das Auto von [meiner]{mein} Tante ist neu, aber das Auto von [meinem] Onkel ist alt. | ماشین خاله‌ام نو است، ولی ماشین دایی‌ام قدیمی است. | d: meine, meinem, meinen / meinen, meiner, mein
+[Julias] Zimmer ist groß, aber das Zimmer von [ihrem]{ihr-det} Bruder ist klein. | اتاق یولیا بزرگ است، ولی اتاق برادرش کوچک است. | d: Julia, Julia', von Julia / ihren, ihre, ihrer
+Sind das [Leilas] Schuhe oder die Schuhe von [ihrer]{ihr-det} Mutter? | این کفش‌ها مال لیلاست یا مال مادرش؟ | d: Leila, Leila', von Leila / ihre, ihrem, ihren
+Ich trage heute [Toms] Jacke und [Felix'] Mütze. | امروز کاپشنِ تام و کلاهِ فلیکس را پوشیده‌ام. | d: Tom, Tom', von Tom / Felixs, Felixes, von Felix | full: Heute trage ich Toms Jacke und Felix' Mütze.
+transforms:
+Das ist das Auto von Anna. => Das ist Annas Auto. | با s بگو.
+Das ist der Bruder von Peter. => Das ist Peters Bruder. | با s بگو.
+Das Fahrrad von Max ist neu. => Max' Fahrrad ist neu. | با آپاستروف بگو.
+Das ist das Büro von Frau Müller. => Das ist Frau Müllers Büro. | با s بگو.
+Das ist Saras Tasche. => Das ist die Tasche von Sara. | با von بگو.
+Lukas' Schwester wohnt in Wien. => Die Schwester von Lukas wohnt in Wien. | با von بگو.
+Das ist das Zimmer von meinem Bruder. => Das ist das Zimmer von meiner{mein} Schwester. | به‌جای Bruder بگو Schwester.
+Das ist Pauls Hund. => Das ist Felix' Hund. | به‌جای Paul بگو Felix.
+translations:
+دوچرخه‌ی ماکس نو است. => Max' Fahrrad ist neu. ; Das Fahrrad von Max ist neu.
+سگ سارا سفید است. => Saras Hund ist weiß{weiß}. ; Der Hund von Sara ist weiß{weiß}.
+گوشی پاول کجاست؟ => Wo ist Pauls Handy? ; Wo ist das Handy von Paul? ; Wo ist Pauls Telefon? ; Wo ist das Telefon von Paul?
+کیف لنا سنگین است. => Lenas Tasche ist schwer. ; Die Tasche von Lena ist schwer.
+خواهر لوکاس دوازده سال دارد. => Lukas' Schwester ist zwölf Jahre alt. ; Lukas' Schwester ist zwölf. ; Die Schwester von Lukas ist zwölf Jahre alt. ; Die Schwester von Lukas ist zwölf.
+دفتر کار خانم مولر اینجاست. => Frau Müllers Büro ist hier. ; Hier ist Frau Müllers Büro. ; Das Büro von Frau Müller ist hier. ; Hier ist das Büro von Frau Müller.
+سگ عمویم خیلی بزرگ است. => Der Hund von meinem Onkel ist sehr groß. ; Der Hund meines Onkels ist sehr groß.
+کاپشن رضا آبی است. => Rezas Jacke ist blau. ; Die Jacke von Reza ist blau.
