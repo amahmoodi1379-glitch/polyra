@@ -1,0 +1,12 @@
+// Two find-the-mistake items (the format of content/README.md).
+units: fr-a1-etre, fr-a1-er
+text: Le chat {{es|est}} petit et nous {{mange|mangeons}} une pomme.
+fa: گربه کوچک است و ما یک سیب می‌خوریم.
+why: برای il و elle (و اسم مفرد) شکل être می‌شود est.
+why: با nous فعل -er به ons ختم می‌شود: mangeons.
+
+units: fr-a1-etre
+text: La femme {{es|est}} triste et le garçon {{sont|est}} triste.
+fa: زن غمگین است و پسر غمگین است.
+why: la femme مفرد است: est.
+why: le garçon مفرد است: est، نه sont.

@@ -15,6 +15,8 @@ content/
     sentences/A1/*.txt    the fill-the-gap sentences of the level's words
     texts/A1/01-im-cafe.txt …  listening and reading texts with their questions
     dialogues/A1/01-cafe.txt …  situational dialogues (PRD §8b.4)
+    errorfix/B1/01-….txt …  find-the-mistake items, B1 and B2 (PRD §8b.5)
+    writing/B1/01-….txt …   guided writing tasks, B1 and B2 (PRD §8b.6)
     phonics/01-….txt …    phonics lessons of the teacher's list (PRD §8), not tied to a level
 ```
 
@@ -255,6 +257,51 @@ why: «Oui, un café, s'il vous plaît» سفارش مؤدبانه است …
   `gate.dialogue_words` words. The first A1 dialogues use the first 200 words or so (PRD §14.9); the A1 situations
   that need their own words (shop, bus, hotel, restaurant) use the whole level (DECISIONS.md, 26 Nov 2026).
   `--texts` lists each dialogue's deepest card word too.
+
+## Find the mistake: `content/<language>/errorfix/<LEVEL>/NN-name.txt`
+
+Short texts with two or three real mistakes of Persian speakers (PRD §8b.5, P-E), for B1 and B2
+(`targets.<language>`: 60 per level). Several items per file, a blank line between them:
+
+```
+units: fr-a1-passe-compose-avoir, fr-a1-possessifs-2
+text: Hier, nous {{sommes|avons}} mangé au restaurant avec {{notre|nos}} amis.
+fa: دیروز با دوستانمان در رستوران غذا خوردیم.
+why: manger در گذشته با avoir می‌آید، نه être.
+why: amis جمع است، پس صفت ملکی nos است، نه notre.
+```
+
+- Two to five natural sentences on one everyday subject; two or three mistakes, each one word, `{{wrong|right}}`,
+  each with exactly one right correction, and one `why:` per mistake in their order. Apart from the marks the
+  text is flawless. A mark never changes the word before it (no `je {{suis|ai}}`, which needs `j'ai`).
+- `units`: the grammar units the mistakes belong to, of this level or below. The corrected text uses words of its
+  level or lower; `{code}` after a word (also right after a mark) names a word read wrongly.
+
+## Guided writing: `content/<language>/writing/<LEVEL>/NN-name.txt`
+
+One task per file (PRD §8b.6, P-WR), for B1 and B2 (20 per level):
+
+```
+prompt: برای دوستت ایمیل بنویس و آخر هفته‌ات را تعریف کن.
+words: 60-120
+checklist:
+- دست‌کم دو فعل در passé composé
+- یک جمله با parce que
+- یک سؤال از دوستت در آخر
+phrases:
+Ce week-end, je suis allé(e)… | این آخر هفته رفتم…
+C'était très agréable. | خیلی خوشایند بود.
+Et toi, qu'est-ce que tu as fait ? | تو چه کار کردی؟
+Bises | می‌بوسمت (پایان نامه دوستانه)
+model:
+Salut Léa ! Ce week-end, je suis allée à la campagne …
+model_fa:
+سلام لئا! این آخر هفته به روستا رفتم …
+```
+
+- `words` lies inside `prompt.writing_words` of the level (B1 60–120, B2 150–250); 3 to 5 checklist items a learner
+  can check alone («دست‌کم دو فعل در گذشته», not «متن خوب بنویس»); 4 to 6 useful phrases; the model answer has a
+  word count inside `words`, ticks every checklist item and uses only words of its level or lower.
 
 ## Phonics lessons: `content/<language>/phonics/NN-name.txt`
 

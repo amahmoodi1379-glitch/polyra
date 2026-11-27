@@ -1,5 +1,8 @@
 import { buildTexts, type TextSource } from "./texts";
 import { buildDialogues, type DialogueSource } from "./dialogues";
+import { buildErrorfix, type ErrorfixSource } from "./errorfix";
+import { buildWriting, type WritingSource } from "./writing";
+import type { Range } from "../production-rules";
 import { buildPhonics, type PhonicsSource } from "./phonics";
 import { createHash } from "node:crypto";
 import { readdirSync, readFileSync } from "node:fs";
@@ -36,6 +39,9 @@ export type PackLevel = {
   exceptions: Exception[];
   texts: TextSource[];
   dialogues: DialogueSource[];
+  /** Find the mistake and guided writing (PRD §8b.5, §8b.6; B1 and B2). */
+  errorfix: ErrorfixSource[];
+  writing: WritingSource[];
   /** The language's phonics lessons, with its first level (PRD §8: they belong to the start, not a level). */
   phonics: PhonicsSource[];
 };
@@ -117,6 +123,18 @@ export function buildPack(language: LanguageCode, options: BuildOptions = {}): P
   pack.errors.push(...phonics.errors);
   pack.notes.push(...phonics.notes);
 
+  // Find the mistake and guided writing: their units are those of their level and below.
+  const writingWords = appSettingDefaults["prompt.writing_words"] as Record<string, Range>;
+  const unitsSoFar = new Set<string>();
+  const production = built.map(({ level, grammar }) => {
+    for (const unit of grammar.units) unitsSoFar.add(unit.listItem.unit_code);
+    const errorfix = buildErrorfix(analyzer, folder(contentRoot, join("content", language, "errorfix", level)), level, new Set(unitsSoFar));
+    const writing = buildWriting(analyzer, folder(contentRoot, join("content", language, "writing", level)), level, writingWords[level] ?? [60, 120]);
+    pack.errors.push(...errorfix.errors, ...writing.errors);
+    pack.notes.push(...errorfix.notes, ...writing.notes);
+    return { errorfix, writing };
+  });
+
   // Dialogue codes are unique across the language.
   const dialogueCodes = new Map<string, string>();
   for (const { dialogues } of built) {
@@ -156,9 +174,11 @@ export function buildPack(language: LanguageCode, options: BuildOptions = {}): P
       units: grammar.units,
       tables: tables.tables.filter((table) => table.level === level),
       sentences: sentences.records,
-      exceptions: unique([...grammar.exceptions, ...sentences.exceptions, ...texts.exceptions, ...dialogues.exceptions]),
+      exceptions: unique([...grammar.exceptions, ...sentences.exceptions, ...texts.exceptions, ...dialogues.exceptions, ...production[index].errorfix.exceptions]),
       texts: texts.texts,
       dialogues: dialogues.dialogues,
+      errorfix: production[index].errorfix.items,
+      writing: production[index].writing.tasks,
       phonics: index === 0 ? phonics.lessons : [],
     });
   }
@@ -177,6 +197,8 @@ export function packSummary(pack: Pack) {
     targets: level.sentences.reduce((sum, sentence) => sum + sentence.targets.length, 0),
     texts: level.texts.length,
     dialogues: level.dialogues.length,
+    errorfix: level.errorfix.length,
+    writing: level.writing.length,
     phonics: level.phonics.length,
   }));
 }

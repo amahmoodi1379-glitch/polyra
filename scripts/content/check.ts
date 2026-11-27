@@ -61,7 +61,8 @@ for (const language of languages.length ? languages : (["fr", "de"] as LanguageC
   }
   for (const row of packSummary(pack)) {
     if (row.words + row.units + row.sentences + row.tables + row.phonics === 0) continue;
-    console.log(`${row.level}: ${row.words} words, ${row.units} units (${row.grammarTargets} targets), ${row.sentences} sentences (${row.targets} word targets), ${row.tables} tables, ${row.texts} texts, ${row.dialogues} dialogues${row.phonics ? `, ${row.phonics} phonics lessons` : ""}`);
+    const production = row.errorfix + row.writing > 0 ? `, ${row.errorfix} find-the-mistake, ${row.writing} writing tasks` : "";
+    console.log(`${row.level}: ${row.words} words, ${row.units} units (${row.grammarTargets} targets), ${row.sentences} sentences (${row.targets} word targets), ${row.tables} tables, ${row.texts} texts, ${row.dialogues} dialogues${production}${row.phonics ? `, ${row.phonics} phonics lessons` : ""}`);
   }
   show("Errors", pack.errors);
   if (args.includes("--warnings")) show("Warnings", pack.warnings);

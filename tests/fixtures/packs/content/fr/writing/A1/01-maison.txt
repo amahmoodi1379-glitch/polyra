@@ -1,0 +1,23 @@
+prompt: خانه و حیوان‌هایت را برای یک دوست توصیف کن.
+words: 60-120
+checklist:
+- دست‌کم سه صفت با اسمشان
+- یک جمله با nous
+- یک سؤال از دوستت
+phrases:
+Nous avons une maison. | ما یک خانه داریم.
+La maison est belle. | خانه زیباست.
+Le chat est petit. | گربه کوچک است.
+Vous aimez la ville ? | شما شهر را دوست دارید؟
+model:
+Je suis un garçon et j'aime la maison. Nous avons une petite maison dans la ville.
+La maison est jaune et belle. Dans la maison, nous avons une grande table et une chaise rouge.
+Le chat est petit et il aime la chaise rouge. Le chien est grand et il aime le vélo vert.
+Nous mangeons le pain et une pomme à la table. Elle aime les fleurs roses.
+Nous allons à la ville à vélo. Vous aimez la ville ?
+model_fa:
+من یک پسرم و خانه را دوست دارم. ما یک خانهٔ کوچک در شهر داریم.
+خانه زرد و زیباست. در خانه یک میز بزرگ و یک صندلی قرمز داریم.
+گربه کوچک است و صندلی قرمز را دوست دارد. سگ بزرگ است و دوچرخهٔ سبز را دوست دارد.
+ما سر میز نان و یک سیب می‌خوریم. او گل‌های صورتی را دوست دارد.
+ما با دوچرخه به شهر می‌رویم. شما شهر را دوست دارید؟

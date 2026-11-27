@@ -6,6 +6,7 @@ import { answerRecords } from "../batches";
 import { demoStatus, removeDemo } from "../demo";
 import { conjugation } from "../kinds/conjugation";
 import { dialogues } from "../kinds/dialogues";
+import { errorfix } from "../kinds/errorfix";
 import { grammar } from "../kinds/grammar";
 import { phonics, type PlannedLesson } from "../kinds/phonics";
 import { translations } from "../kinds/translations";
@@ -14,6 +15,7 @@ import { texts } from "../kinds/texts";
 import type { ContentKind, Tx } from "../kinds/types";
 import { unitList } from "../kinds/unit-list";
 import { words } from "../kinds/words";
+import { writing } from "../kinds/writing";
 import type { LanguageCode } from "../languages";
 import { logChange } from "../library/log";
 import { librarySlugs, type LibrarySlug } from "../library/slugs";
@@ -223,6 +225,27 @@ async function loadLevel(run: Run, level: PackLevel) {
     count(run, "dialogues", round.accepted.length);
   }
 
+  // Find the mistake (P-E) and guided writing (P-WR), B1 and B2: an item waits for its words and units.
+  const unitCodes = new Set((await tx.grammarUnit.findMany({ where: { language }, select: { unit_code: true } })).map((row) => row.unit_code));
+  const waitingErrorfix = level.errorfix.filter((item) => fresh("errorfix", item.key));
+  const readyErrorfix = waitingErrorfix.filter((item) => item.codes.every((code) => codes.has(code)) && (item.record.unit_codes as string[]).every((code) => unitCodes.has(code)));
+  if (readyErrorfix.length < waitingErrorfix.length) run.report.skipped.push(`${waitingErrorfix.length - readyErrorfix.length} find-the-mistake items use words or units not in the database`);
+  if (readyErrorfix.length > 0) {
+    const round = await importAnswer(run, errorfix, await newBatch(run, "P_E", { level: level.level, count: readyErrorfix.length }), { items: readyErrorfix.map((item) => item.record), issues: [] });
+    const ok = accepted(round);
+    for (const item of readyErrorfix) if (ok.has(item.record)) remember("errorfix", item.key, item.record);
+    count(run, "find the mistake", ok.size);
+  }
+  const waitingWriting = level.writing.filter((task) => fresh("writing", task.key));
+  const readyWriting = waitingWriting.filter((task) => task.codes.every((code) => codes.has(code)));
+  if (readyWriting.length < waitingWriting.length) run.report.skipped.push(`${waitingWriting.length - readyWriting.length} writing tasks use words not in the database`);
+  if (readyWriting.length > 0) {
+    const round = await importAnswer(run, writing, await newBatch(run, "P_WR", { level: level.level, count: readyWriting.length }), { tasks: readyWriting.map((task) => task.record), issues: [] });
+    const ok = accepted(round);
+    for (const task of readyWriting) if (ok.has(task.record)) remember("writing", task.key, task.record);
+    count(run, "writing tasks", ok.size);
+  }
+
   // Phonics lessons: the teacher's list (`phonics.lessons.<language>`) names them and gives their place.
   const lessons = level.phonics.filter((lesson) => fresh("phonics", fold(lesson.label)));
   if (lessons.length > 0) {
@@ -298,6 +321,8 @@ async function approve(tx: Tx, batchIds: number[]) {
   await tx.text.updateMany({ where: mine, data: approved });
   await tx.dialogue.updateMany({ where: mine, data: approved });
   await tx.phonicsLesson.updateMany({ where: mine, data: approved });
+  await tx.errorfixItem.updateMany({ where: mine, data: approved });
+  await tx.writingTask.updateMany({ where: mine, data: approved });
 }
 
 /**
@@ -319,6 +344,8 @@ async function rowsOf(language: string): Promise<Partial<Record<LibrarySlug, Set
     texts: ids(await db.text.findMany(where)),
     dialogues: ids(await db.dialogue.findMany(where)),
     phonics: ids(await db.phonicsLesson.findMany(where)),
+    errorfix: ids(await db.errorfixItem.findMany(where)),
+    writing: ids(await db.writingTask.findMany(where)),
   };
   for (const slug of librarySlugs) if (out[slug]?.size === 0) delete out[slug];
   return out;

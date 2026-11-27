@@ -57,6 +57,15 @@ describe("content packs", () => {
     expect(await testDb.sentence.count({ where: { id: { in: ids }, status: "published" } })).toBe(20);
     const lesson = await testDb.phonicsLesson.findFirstOrThrow({ where: { language: "fr" } });
     expect(lesson).toMatchObject({ sound_label: "u و ou", kind: "contrast", order_no: 2, status: "published" });
+
+    // Find the mistake and guided writing (B1 and B2 in the real packs; the fixture keeps them in A1).
+    expect(level.added).toMatchObject({ "find the mistake": 2, "writing tasks": 1 });
+    const item = await testDb.errorfixItem.findFirstOrThrow({ where: { language: "fr", marked_text: { startsWith: "Le chat" } } });
+    expect(item).toMatchObject({ unit_codes: ["fr-a1-etre", "fr-a1-er"], status: "published" });
+    expect((item.errors as { wrong: string; right: string }[]).map((mark) => mark.right)).toEqual(["est", "mangeons"]);
+    const task = await testDb.writingTask.findFirstOrThrow({ where: { language: "fr" } });
+    expect(task).toMatchObject({ min_words: 60, max_words: 120, status: "published" });
+    expect(task.model_answer).toMatch(/^Je suis un garçon/);
   });
 
   it("loads an item once: the next start adds nothing, and an item a teacher deleted stays deleted", async () => {
