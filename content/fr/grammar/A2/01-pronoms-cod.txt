@@ -3,7 +3,7 @@ title: ضمیر مفعولی: le، la، les
 scope: ضمیرهای مفعولی مستقیم le، la، l' و les به‌جای چیزها و آدم‌ها، قبل از فعلِ صرف‌شده در زمان حال، در جملهٔ مثبت، منفی (je ne le vois pas) و سؤالی؛ me، te، nous و vous در واحد بعد، lui و leur دو واحد بعد، و جای ضمیر با مصدر و passé composé در واحد چهارم می‌آید.
 can_do: حالا می‌توانی به‌جای تکرار یک اسم، ضمیرش را بگویی: Le livre ? Je le prends. Marie ? Je la connais.
 rule: مفعول مستقیم (چیز یا کسی که بی‌حرف اضافه بعد از فعل می‌آید) می‌شود le (مذکر)، la (مؤنث)، l' (قبل از صدادار) یا les (جمع)، و ضمیر قبل از فعل می‌آید: Je vois Paul → Je le vois.
-mistake: در فارسی ضمیر مفعولی ته فعل می‌چسبد («می‌بینمش»)، برای همین فارسی‌زبان‌ها ضمیر را بعد از فعل می‌گذارند («je vois le»)؛ درست: je le vois. «ـش» و «آن را» هم جنس ندارند، ولی در فرانسوی ضمیر جنس اسم را نگه می‌دارد: la voiture → je la prends، نه «je le prends». و با فعلی که خودش مفعول می‌گیرد (aider، appeler، attendre) lui یا leur نمی‌آید: درست je l'aide، نه «je lui aide».
+mistake: در فارسی ضمیر مفعولی ته فعل می‌چسبد («می‌بینمش»)، برای همین فارسی‌زبان‌ها ضمیر را بعد از فعل می‌گذارند («je vois le»)؛ درست: je le vois. «ـش» و «آن را» هم جنس ندارند، ولی در فرانسوی ضمیر جنس اسم را نگه می‌دارد: la voiture → je la prends، نه «je le prends». aider و appeler هم در فرانسوی بی‌حرف اضافه می‌آیند، هرچند در فارسی «به او کمک می‌کنم» و «به او زنگ می‌زنم» می‌گوییم: درست je l'aide، نه «je lui aide».
 lesson:
 مفعول مستقیم چیز یا کسی است که کار مستقیم رویش انجام می‌شود، مثل «کتاب را» در «کتاب را می‌خوانم»: Je lis le livre.
 برای این‌که اسم را تکرار نکنیم، به‌جایش ضمیر می‌گذاریم: مذکر → le، مؤنث → la، جمع → les.
@@ -29,7 +29,7 @@ Où est mon sac ? Je ne [le] trouve pas. | کیفم کجاست؟ پیدایش ن
 Tu connais Paul ? Oui, je [le] connais. | پل را می‌شناسی؟ بله، می‌شناسمش. | d: la, lui, les | hint: (Paul)
 Le professeur parle vite. Tu [le] comprends ? | معلم تند حرف می‌زند. حرفش را می‌فهمی؟ | d: la, lui, les
 Mon frère arrive à midi. Je [l']attends à la gare. | برادرم ظهر می‌رسد. در ایستگاه منتظرش می‌مانم. | d: le, lui, la | hint: (mon frère)
-Mon oncle habite à Lyon. Je [le] vois en été{été}. | عمویم در لیون زندگی می‌کند. تابستان‌ها می‌بینمش. | d: la, lui, les
+Mon oncle habite à Lyon. Je [le] vois en été{été}. | عمویم در لیون زندگی می‌کند. تابستان‌ها می‌بینمش. | d: la, lui, les | full: Mon oncle habite à Lyon. En été, je le vois.
 Le train part à huit heures. On [le] prend ? | قطار ساعت هشت حرکت می‌کند. سوارش شویم؟ | d: la, les, leur
 Le café est chaud. Je [le]{le-pron} bois{boire} lentement. | قهوه داغ است. آهسته می‌نوشمش. | d: la, les, lui | hint: (le café)
 Tu as ton passeport ? Oui, je [l']ai. | گذرنامه‌ات را داری؟ بله، دارمش. | d: le, la, lui
@@ -37,17 +37,17 @@ Tu cherches ta clé ? Je [la] vois sur la table. | دنبال کلیدت می‌
 Marie est très gentille. Je [la] connais bien. | ماری خیلی مهربان است. خوب می‌شناسمش. | d: le, lui, les
 La fenêtre est ouverte{ouvert}. Tu [la]{la-pron} fermes{fermer}, s'il te plaît ? | پنجره باز است. لطفاً می‌بندی‌اش؟ | d: le, les, leur | hint: (la fenêtre)
 Ma mère est malade. Je [l']{la-pron}aide{aider} à la maison. | مادرم مریض است. در خانه کمکش می‌کنم. | d: lui, la, le
-La voiture est sale. Paul [la] lave le samedi. | ماشین کثیف است. پل شنبه‌ها می‌شویدش. | d: le, les, leur
+La voiture est sale. Paul [la] lave le samedi. | ماشین کثیف است. پل شنبه‌ها می‌شویدش. | d: le, les, leur | full: La voiture est sale. Le samedi, Paul la lave.
 Cette robe est très belle. Je [la] prends. | این پیراهن خیلی قشنگ است. همین را برمی‌دارم. | d: le, les, leur | hint: (cette robe)
 Ma grand-mère habite près d'ici. Nous [la] voyons souvent. | مادربزرگم نزدیک اینجا زندگی می‌کند. اغلب می‌بینیمش. | d: le, lui, les
 La leçon est difficile. Vous [la] comprenez ? | درس سخت است. می‌فهمیدش؟ | d: le, lui, les | hint: (la leçon)
 La porte est fermée{fermé}. Tu [l']{la-pron}ouvres ? | در بسته است. بازش می‌کنی؟ | d: la, le, les
 Où sont mes lunettes ? Je ne [les] trouve pas. | عینکم کجاست؟ پیدایش نمی‌کنم. | d: la, le, leur | hint: (mes lunettes)
-Mes grands-parents habitent à Chiraz. Je [les] appelle le dimanche. | پدربزرگ و مادربزرگم در شیراز زندگی می‌کنند. یکشنبه‌ها به آن‌ها زنگ می‌زنم. | d: leur, lui, la
-Les devoirs ? Je [les] finis ce soir. | تکلیف‌ها؟ امشب تمامشان می‌کنم. | d: le, la, leur
+Mes grands-parents habitent à Chiraz. Je [les] appelle le dimanche. | پدربزرگ و مادربزرگم در شیراز زندگی می‌کنند. یکشنبه‌ها به آن‌ها زنگ می‌زنم. | d: leur, lui, la | full: Mes grands-parents habitent à Chiraz. Le dimanche, je les appelle.
+Les devoirs ? Je [les] finis ce soir. | تکلیف‌ها؟ امشب تمامشان می‌کنم. | d: le, la, leur | full: Les devoirs ? Ce soir, je les finis.
 Tu as les billets ? Oui, je [les] ai dans mon sac. | بلیت‌ها را داری؟ بله، توی کیفم دارمشان. | d: le, la, leur | hint: (les billets)
 Les fenêtres sont ouvertes{ouvert}. Nous [les] fermons. | پنجره‌ها بازند. می‌بندیمشان. | d: la, le, leur
-Tes amis sont en ville. Tu [les] vois ce soir ? | دوستانت در شهرند. امشب می‌بینی‌شان؟ | d: leur, le, lui | hint: (tes amis)
+Tes amis sont en ville. Tu [les] vois ce soir ? | دوستانت در شهرند. امشب می‌بینی‌شان؟ | d: leur, le, lui | hint: (tes amis) | full: Tes amis sont en ville. Ce soir, tu les vois ?
 Ces exercices sont faciles. Les élèves [les] comprennent. | این تمرین‌ها آسان‌اند. شاگردها می‌فهمندشان. | d: leur, le, la
 Ce garçon ? Je ne [le] connais pas. | این پسر؟ نمی‌شناسمش. | d: la, lui, les | hint: (ce garçon)
 Paul n'aime pas la télé. Il ne [la] regarde pas. | پل تلویزیون دوست ندارد. تماشایش نمی‌کند. | d: le, lui, les
@@ -60,11 +60,11 @@ Le chat n'est pas là. Les enfants [le] cherchent. | گربه اینجا نیس�
 Ce film ? Je [le] connais, mais je ne [l']aime pas. | این فیلم؟ می‌شناسمش، ولی دوستش ندارم. | d: la, les, lui / le, la, lui
 Le bus arrive ! Tu [le] vois ? Non, je ne [le] vois pas. | اتوبوس دارد می‌رسد! می‌بینی‌اش؟ نه، نمی‌بینمش. | d: la, les, lui / la, les, lui
 Cette chanson est belle. Tu [la] connais ? Oui, je [l']{la-pron}adore ! | این آهنگ قشنگ است. می‌شناسی‌اش؟ بله، عاشقش هستم! | d: le, les, lui / le, la, lui
-Mes parents ? Je [les] appelle le soir et je [les] vois le dimanche. | پدر و مادرم؟ شب‌ها به آن‌ها زنگ می‌زنم و یکشنبه‌ها می‌بینمشان. | d: leur, lui, la / leur, le, la
+Mes parents ? Je [les] appelle le soir et je [les] vois le dimanche. | پدر و مادرم؟ شب‌ها به آن‌ها زنگ می‌زنم و یکشنبه‌ها می‌بینمشان. | d: leur, lui, la / leur, le, la | full: Mes parents ? Le soir, je les appelle et le dimanche, je les vois. ; Mes parents ? Je les vois le dimanche et je les appelle le soir.
 Les pommes sont bonnes. Je [les] lave et je [les] mange. | سیب‌ها خوب‌اند. می‌شویمشان و می‌خورمشان. | d: la, le, leur / la, le, leur
-Le journal ? Mon père [l']achète le matin et il [l']oublie dans le bus. | روزنامه؟ پدرم صبح‌ها می‌خردش و توی اتوبوس جایش می‌گذارد. | d: le, la, les / le, la, lui
+Le journal ? Mon père [l']achète le matin et il [l']oublie dans le bus. | روزنامه؟ پدرم صبح‌ها می‌خردش و توی اتوبوس جایش می‌گذارد. | d: le, la, les / le, la, lui | full: Le journal ? Le matin, mon père l'achète et il l'oublie dans le bus.
 Ton frère et ta sœur sont là ? Oui, je [les] vois. Tu ne [les] vois pas ? | برادر و خواهرت آنجا هستند؟ بله، می‌بینمشان. تو نمی‌بینی‌شان؟ | d: leur, le, la / leur, le, la
-Tu prends la robe ? Oui, je [la] prends et je [la]{la-pron} porte{porter} ce soir. | پیراهن را برمی‌داری؟ بله، برش می‌دارم و امشب می‌پوشمش. | d: le, les, leur / le, les, leur
+Tu prends la robe ? Oui, je [la] prends et je [la]{la-pron} porte{porter} ce soir. | پیراهن را برمی‌داری؟ بله، برش می‌دارم و امشب می‌پوشمش. | d: le, les, leur / le, les, leur | full: Tu prends la robe ? Oui, je la prends et ce soir, je la porte.
 transforms:
 Je regarde la télé. => Je la regarde. | به‌جای مفعول، ضمیر بگذار.
 Tu connais Paul ? => Tu le connais ? | به‌جای مفعول، ضمیر بگذار.
@@ -81,5 +81,5 @@ translations:
 پل را می‌بینی؟ نه، نمی‌بینمش. => Tu vois Paul ? Non, je ne le vois pas. ; Est-ce que tu vois Paul ? Non, je ne le vois pas. ; Vois-tu Paul ? Non, je ne le vois pas.
 این کتاب؟ دارمش. => Ce livre ? Je l'ai.
 پدر و مادرم؟ دوستشان دارم. => Mes parents ? Je les aime.
-در بسته است. بازش می‌کنی؟ => La porte est fermée{fermé}. Tu l'{la-pron}ouvres ? ; La porte est fermée{fermé}. Est-ce que tu l'{la-pron}ouvres ?
+در بسته است. بازش می‌کنی؟ => La porte est fermée{fermé}. Tu l'{la-pron}ouvres ? ; La porte est fermée{fermé}. Est-ce que tu l'{la-pron}ouvres ? ; La porte est fermée{fermé}. L'{la-pron}ouvres-tu ?
 مادرم مریض است. کمکش می‌کنم. => Ma mère est malade. Je l'{la-pron}aide{aider}.

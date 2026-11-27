@@ -1,6 +1,6 @@
 code: de-a2-indefinitpronomen
 title: jemand، nichts، einer و keiner: کسی، چیزی، یکی
-scope: jemand و niemand (کسی، هیچ‌کس)، etwas و nichts (چیزی، هیچ‌چیز)، alles و alle، man، و einer، eine، eins و keiner، keine، keins به‌جای اسمی که گفته شده (Hast du einen Kuli? – Ja, ich habe einen. / Nein, ich habe keinen.)، و welche برای جمع و چیزهای شمردنی‌نشدنی (Gibt es noch Brot? – Ja, es gibt noch welches.)؛ شکل‌های irgend- (irgendjemand، irgendetwas) در سطح B1 می‌آیند.
+scope: jemand و niemand (کسی، هیچ‌کس)، etwas و nichts (چیزی، هیچ‌چیز)، alles و alle، man، و einer، eine، eins و keiner، keine، keins به‌جای اسمی که گفته شده (Hast du einen Kuli? – Ja, ich habe einen. / Nein, ich habe keinen.)، و welche برای جمع و چیزهایی که شمرده نمی‌شوند (Gibt es noch Brot? – Ja, es gibt noch welches.)؛ شکل‌های irgend- (irgendjemand، irgendetwas) در سطح B1 می‌آیند.
 can_do: حالا می‌توانی بپرسی «کسی خانه هست؟»، بگویی «هیچ‌چیز نخریدم» و به‌جای تکرار اسم بگویی «یکی دارم» یا «ندارم».
 rule: niemand و nichts خودشان منفی‌اند و nicht نمی‌خواهند (Niemand ist gekommen)؛ به‌جای ein یا kein + اسم: einer، eine، eins و keiner، keine، keins، و برای جمع welche (Ich habe einen. Ich habe keine.).
 mistake: در فارسی با «هیچ‌کس» فعل را هم منفی می‌کنیم («هیچ‌کس نیامد»)، پس فارسی‌زبان‌ها می‌گویند «Niemand ist nicht gekommen»؛ درست: Niemand ist gekommen. در فارسی «یکی دارم» یا فقط «دارم» می‌گوییم، پس می‌گویند «Ja, ich habe ein.»؛ درست: Ja, ich habe einen (برای der Kuli).
@@ -12,7 +12,7 @@ alles یعنی «همه چیز» و فعلش مفرد است (Alles ist gut)؛ a
 man یعنی «آدم، مردم» به طور کلی، مثل «می‌گویند» یا «می‌شود» در فارسی؛ ولی فعلش مثل er صرف می‌شود: man sagt، man kann، man darf.
 برای این‌که اسمی را تکرار نکنی، به‌جای ein + اسم یک کلمه می‌گویی: Hast du einen Kuli? – Ja, ich habe einen. منفی‌اش با keiner است: Nein, ich habe keinen.
 این کلمه‌ها جنس و حالت اسم را نشان می‌دهند: مذکر einer / einen / einem، مؤنث eine / einer، خنثی eins (یا eines): Dort ist ein Supermarkt. ← Dort ist einer.
-برای جمع و چیزهای شمردنی‌نشدنی (Brot، Milch، Geld) welche می‌آید: Gibt es noch Brot? – Ja, es gibt noch welches. Haben wir Eier? – Ja, wir haben welche.
+برای جمع و چیزهایی که شمرده نمی‌شوند (Brot، Milch، Geld) welche می‌آید: Gibt es noch Brot? – Ja, es gibt noch welches. Haben wir Eier? – Ja, wir haben welche.
 table:
 حالت | مذکر | مؤنث | خنثی | جمع
 فاعلی | einer / keiner | eine / keine | eins / keins | welche / keine
@@ -28,11 +28,11 @@ Niemand hat angerufen. | هیچ‌کس زنگ نزد.
 Hast du einen Kuli? – Ja, ich habe einen. | خودکار داری؟ – بله، یکی دارم.
 Gibt es noch Brot? – Ja, es gibt noch welches. | هنوز نان هست؟ – بله، هنوز هست.
 targets:
-Hast du einen Bleistift? – Ja, ich habe [einen]. | مداد داری؟ – بله، یکی دارم. | d: ein, eins, einer | ok: welche | hint: (ein)
+Hast du einen Bleistift? – Ja, ich habe [einen]. | مداد داری؟ – بله، یکی دارم. | d: ein, eins, einer | hint: (ein)
 Ist hier ein Supermarkt? – Ja, da vorne ist [einer]. | اینجا سوپرمارکت هست؟ – بله، آن جلو یکی هست. | d: ein, einen, eins | hint: (ein)
-Hast du ein Fahrrad? – Ja, ich habe [eins]{ein}. | دوچرخه داری؟ – بله، یکی دارم. | d: ein, einen, einer | ok: eines, welche | hint: (ein)
-Brauchen Sie eine Tüte? – Nein, danke{danke}, ich habe schon [eine]. | کیسه لازم دارید؟ – نه، ممنون، خودم یکی دارم. | d: ein, einen, eins | ok: welche
-Gibt es hier einen Geldautomaten? – Ja, am Bahnhof gibt es [einen]. | اینجا دستگاه خودپرداز هست؟ – بله، در ایستگاه قطار یکی هست. | d: einer, ein, eins | ok: welche | full: Gibt es hier einen Geldautomaten? – Ja, es gibt einen am Bahnhof.
+Hast du ein Fahrrad? – Ja, ich habe [eins]{ein}. | دوچرخه داری؟ – بله، یکی دارم. | d: ein, einen, einer | ok: eines | hint: (ein)
+Brauchen Sie eine Tüte? – Nein, danke{danke}, ich habe schon [eine]. | کیسه لازم دارید؟ – نه، ممنون، خودم یکی دارم. | d: ein, einen, eins
+Gibt es hier einen Geldautomaten? – Ja, am Bahnhof gibt es [einen]. | اینجا دستگاه خودپرداز هست؟ – بله، در ایستگاه قطار یکی هست. | d: einer, ein, eins | full: Gibt es hier einen Geldautomaten? – Ja, es gibt einen am Bahnhof.
 Ich habe zwei Schwestern. Mit [einer] telefoniere ich jeden Tag. | دو خواهر دارم. با یکی‌شان هر روز تلفنی حرف می‌زنم. | d: eine, einem, einen | full: Ich habe zwei Schwestern. Ich telefoniere jeden Tag mit einer.
 Hast du einen Kuli für mich? – Nein, ich habe [keinen]. | یک خودکار برای من داری؟ – نه، ندارم. | d: kein, keins, keiner | ok: keine | hint: (kein)
 Ist hier ein Arzt? – Nein, hier ist [keiner]. | اینجا دکتر هست؟ – نه، اینجا دکتری نیست. | d: kein, keinen, keins
@@ -43,7 +43,7 @@ Gibt es hier Kuchen? – Nein, heute haben wir [keinen]. | اینجا کیک ه�
 Hast du heute Zeit? – Nein, ich habe [keine]. | امروز وقت داری؟ – نه، ندارم. | d: kein, keinen, keins | hint: (kein)
 Ich brauche Eier. Haben wir noch [welche]? | تخم‌مرغ لازم دارم. هنوز داریم؟ | d: welches, welcher, welchen
 Möchtest du Kaffee? – Danke{danke}, ich habe schon [welchen]. | قهوه می‌خواهی؟ – ممنون، خودم دارم. | d: welcher, welches, welche | ok: einen
-Haben wir noch Brot? – Ja, in der Küche ist noch [welches]. | هنوز نان هست؟ – بله، توی آشپزخانه هنوز هست. | d: welcher, welchen, welche
+Haben wir noch Brot? – Ja, in der Küche ist noch [welches]. | هنوز نان هست؟ – بله، توی آشپزخانه هنوز هست. | d: welcher, welchen, welche | ok: eins, eines
 Brauchst du Geld? – Nein, ich habe noch [welches]. | پول لازم داری؟ – نه، هنوز دارم. | d: welcher, welchen, welche
 Hat [jemand] meinen Schlüssel gesehen? | کسی کلیدم را دیده؟ | d: jemanden, jemandem, niemanden | hint: (jemand)
 Ich kenne hier [niemanden]. | من اینجا هیچ‌کس را نمی‌شناسم. | d: niemandem, jemandem, keinem | ok: niemand, keinen | hint: (niemand) | full: Hier kenne ich niemanden.

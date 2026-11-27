@@ -13,7 +13,7 @@ lesson:
 اسم مفعول مثل فعل‌های رفت‌وآمد با فاعل جور می‌شود: مؤنث + e و جمع + s: elle s'est levée، ils se sont levés، elles se sont levées. اگر گوینده زن باشد: Je me suis levée.
 در منفی ne قبل از ضمیر و pas بعد از être می‌آید: Je ne me suis pas levé. Elle ne s'est pas dépêchée.
 در سؤال ترتیب همان است: Tu t'es bien amusé ? Est-ce que vous vous êtes perdus ?
-چند اسم مفعول بی‌قاعده: s'asseoir → assis، se perdre → perdu، s'endormir → endormi، se souvenir → souvenu، s'inscrire → inscrit.
+اسم مفعول چند فعل دیگر: s'asseoir → assis و s'inscrire → inscrit (بی‌قاعده)، se perdre → perdu، s'endormir → endormi، se souvenir → souvenu.
 table:
 ضمیر | se dépêcher | منفی
 je | me suis dépêché، me suis dépêchée | ne me suis pas dépêché
@@ -21,7 +21,7 @@ tu | t'es dépêché، t'es dépêchée | ne t'es pas dépêché
 il | s'est dépêché | ne s'est pas dépêché
 elle | s'est dépêchée | ne s'est pas dépêchée
 nous | nous sommes dépêchés، nous sommes dépêchées | ne nous sommes pas dépêchés
-vous | vous êtes dépêché، vous êtes dépêchés | ne vous êtes pas dépêchés
+vous | vous êtes dépêché، dépêchée، dépêchés، dépêchées | ne vous êtes pas dépêchés
 ils | se sont dépêchés | ne se sont pas dépêchés
 elles | se sont dépêchées | ne se sont pas dépêchées
 examples:
@@ -34,7 +34,7 @@ Je [me suis{être}] réveillé à six heures. | ساعت شش بیدار شدم.
 Tu [t'es] trompé de numéro. | شماره را اشتباه گرفتی. | d: t'as, te es, s'es
 Il [s'est] dépêché pour prendre le bus. | او (مرد) برای رسیدن به اتوبوس عجله کرد. | d: s'a, se est, est se | hint: (se dépêcher)
 Nous [nous sommes] promenés au bord de la mer. | ما کنار دریا قدم زدیم. | d: nous avons, se sommes, sommes nous | hint: (se promener)
-Vous [vous êtes] perdus ? | گم شدید؟ | d: vous avez, se êtes, êtes vous
+Vous [vous êtes] perdus ? | گم شدید؟ | d: vous avez, se êtes, vous sont
 Elles [se sont] bien amusées. | آن‌ها (زن‌ها) خیلی خوش گذراندند. | d: s'ont, se ont, sont se | hint: (s'amuser)
 On [s'est] arrêté devant la boulangerie. | جلوی نانوایی ایستادیم. | d: s'a, se est, s'ont | hint: (s'arrêter)
 Marie s'est [levée] tôt ce matin. | ماری امروز صبح زود از خواب بلند شد. | d: levé, levés, lever | hint: (se lever)
@@ -57,7 +57,7 @@ Elle [ne s'est pas] couchée tard. | او (زن) دیر نخوابید. | d: se 
 Tu [ne t'es pas] ennuyé ? | حوصله‌ات سر نرفت؟ | d: te n'es pas, ne t'as pas, ne es pas te
 Ils [ne se sont pas] arrêtés au feu rouge. | آن‌ها پشت چراغ قرمز نایستادند. | d: se ne sont pas, ne sont pas se, ne se ont pas
 Tu [t'es] bien amusé ? | خوش گذشت؟ | d: t'as, te es, es te
-Vous [vous êtes] levés à quelle heure ? | ساعت چند از خواب بلند شدید؟ | d: vous avez, vous sont, êtes vous
+Vous [vous êtes] levés à quelle heure ? | ساعت چند از خواب بلند شدید؟ | d: vous avez, vous sont, se êtes
 Est-ce qu'elle [s'est] excusée ? | آیا او (زن) عذرخواهی کرد؟ | d: s'a, se est, est se | hint: (s'excuser)
 À quelle heure est-ce que tu t'es [couché] ? | ساعت چند خوابیدی؟ | d: coucher, couches, couchés | ok: couchée
 Ça s'est bien [passé] ? | خوب پیش رفت؟ | d: passer, passée, passés | hint: (se passer)
@@ -84,7 +84,7 @@ translations:
 او (زن) دیر خوابید. => Elle s'est couchée tard. ; Elle s'est endormie{s'endormir} tard.
 بچه‌ها خیلی خوش گذراندند. => Les enfants se sont bien amusés. ; Les enfants se sont beaucoup amusés.
 ما عجله نکردیم. => Nous ne nous sommes pas dépêchés. ; Nous ne nous sommes pas dépêchées. ; On ne s'est pas dépêché. ; On ne s'est pas dépêchés. ; On ne s'est pas dépêchées.
-او (مرد) اشتباه کرد. => Il s'est trompé.
+او (مرد) اشتباه کرد. => Il s'est trompé. ; Il a fait une erreur. ; Il a fait une faute.
 پل نزدیک پنجره نشست. => Paul s'est assis près de la fenêtre.
-ماری عذرخواهی کرد. => Marie s'est excusée.
+ماری عذرخواهی کرد. => Marie s'est excusée. ; Marie a demandé pardon.
 آن‌ها (مرد) در شهر گم شدند. => Ils se sont perdus dans la ville. ; Ils se sont perdus en ville.

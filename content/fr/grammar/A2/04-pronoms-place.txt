@@ -31,27 +31,27 @@ Mes cousins sont au Canada. Je veux{vouloir} [leur] écrire une lettre. | پسر
 Ce film est très bon. Tu veux [le] voir ? | این فیلم خیلی خوب است. می‌خواهی ببینی‌اش؟ | d: lui, la, les
 Les enfants dorment. Je ne veux pas [les] réveiller. | بچه‌ها خوابند. نمی‌خواهم بیدارشان کنم. | d: leur, le, lui | hint: (les enfants)
 Ta sœur ? Je viens de [la] voir dans le parc. | خواهرت؟ همین الان در پارک دیدمش. | d: le, lui, les
-Paul ne connaît pas la ville. Je vais [lui] montrer le musée. | پل شهر را نمی‌شناسد. موزه را نشانش می‌دهم. | d: le, la, les | hint: (à Paul)
+Paul ne connaît pas la ville. Je vais [lui] montrer le musée. | پل شهر را نمی‌شناسد. موزه را نشانش می‌دهم. | d: la, les, leur | hint: (à Paul)
 Ce stylo est à moi, mais tu peux [le] prendre. | این خودکار مال من است، ولی می‌توانی برش داری. | d: lui, la, les
-Ma grand-mère est seule. Nous allons [la] voir dimanche. | مادربزرگم تنهاست. یکشنبه به دیدنش می‌رویم. | d: lui, le, les | hint: (ma grand-mère)
+Ma grand-mère est seule. Nous allons [la] voir dimanche. | مادربزرگم تنهاست. یکشنبه به دیدنش می‌رویم. | d: lui, le, les | hint: (ma grand-mère) | full: Ma grand-mère est seule. Dimanche, nous allons la voir.
 Mes parents arrivent. On va [les] attendre devant la maison. | پدر و مادرم دارند می‌آیند. جلوی خانه منتظرشان می‌مانیم. | d: leur, lui, le
 J'ai vu Paul et je [lui] ai parlé. | پل را دیدم و با او حرف زدم. | d: l', le, la | hint: (à Paul)
 Marie m'a écrit, mais je ne [lui] ai pas répondu. | ماری برایم نوشت، ولی جوابش را ندادم. | d: l', la, le
 Le professeur [nous] a donné des exercices. | معلم به ما تمرین داد. | d: notre, nos, on
-Mes parents ? Je [leur] ai téléphoné hier soir. | پدر و مادرم؟ دیشب به آن‌ها زنگ زدم. | d: les, leurs, l' | hint: (à mes parents)
+Mes parents ? Je [leur] ai téléphoné hier soir. | پدر و مادرم؟ دیشب به آن‌ها زنگ زدم. | d: les, leurs, l' | hint: (à mes parents) | full: Mes parents ? Hier soir, je leur ai téléphoné.
 Mon frère [m']a prêté son vélo. | برادرم دوچرخه‌اش را به من قرض داد. | d: me, moi, mon
 Tu as fini ton livre ? Oui, je [l']ai fini hier. | کتابت را تمام کردی؟ بله، دیروز تمامش کردم. | d: lui, le, la | hint: (ton livre)
 Paul [t']a téléphoné ? | پل به تو زنگ زد؟ | d: te, toi, ton
-Ton père ? Je [l']ai rencontré ce matin. | پدرت؟ امروز صبح دیدمش. | d: lui, le, la
+Ton père ? Je [l']ai rencontré ce matin. | پدرت؟ امروز صبح دیدمش. | d: lui, le, la | full: Ton père ? Ce matin, je l'ai rencontré.
 Tes grands-parents ? Tu [leur] as dit bonjour ? | پدربزرگ و مادربزرگت؟ به آن‌ها سلام کردی؟ | d: les, leurs, l' | hint: (à tes grands-parents)
 Les enfants ont faim. Je vais [leur] préparer le dîner. | بچه‌ها گرسنه‌اند. قرار است برایشان شام درست کنم. | d: les, leurs, la
-Paul est à Paris. Je vais [le voir] demain. | پل در پاریس است. فردا می‌روم ببینمش. | d: voir le, lui voir, le vois
+Paul est à Paris. Je vais [le voir] demain. | پل در پاریس است. فردا می‌روم ببینمش. | d: voir le, lui voir, le vois | full: Paul est à Paris. Demain, je vais le voir.
 Tu peux [m'aider], s'il te plaît ? | لطفاً می‌توانی کمکم کنی؟ | d: aider moi, me aider, moi aider
 Ton père est là ? Je veux{vouloir} [lui parler]. | پدرت هست؟ می‌خواهم با او حرف بزنم. | d: parler lui, lui parle, le parle
-Tes cousins sont gentils. Nous allons [les inviter] samedi. | پسرعموهایت مهربان‌اند. شنبه دعوتشان می‌کنیم. | d: inviter les, leur inviter, les invitons
-Je ne peux pas [te répondre] maintenant. | الان نمی‌توانم جوابت را بدهم. | d: répondre toi, toi répondre, te réponds
-Ta mère t'attend. Tu dois [l'{la-pron}appeler] ce soir. | مادرت منتظرت است. باید امشب به او زنگ بزنی. | d: appeler la, lui appeler, la appeler
-Le film ? Je [l'ai] vu hier. | فیلم؟ دیروز دیدمش. | d: ai le, le ai, lui ai
+Tes cousins sont gentils. Nous allons [les inviter] samedi. | پسرعموهایت مهربان‌اند. شنبه دعوتشان می‌کنیم. | d: inviter les, leur inviter, les invitons | full: Tes cousins sont gentils. Samedi, nous allons les inviter.
+Je ne peux pas [te répondre] maintenant. | الان نمی‌توانم جوابت را بدهم. | d: répondre toi, toi répondre, te réponds | full: Maintenant, je ne peux pas te répondre.
+Ta mère t'attend. Tu dois [l'{la-pron}appeler] ce soir. | مادرت منتظرت است. باید امشب به او زنگ بزنی. | d: appeler la, lui appeler, la appeler | full: Ta mère t'attend. Ce soir, tu dois l'appeler.
+Le film ? Je [l'ai] vu hier. | فیلم؟ دیروز دیدمش. | d: ai le, le ai, lui ai | full: Le film ? Hier, je l'ai vu.
 Paul ? Nous [lui avons] téléphoné. | پل؟ به او زنگ زدیم. | d: avons lui, l'avons, le avons
 Le livre ? Je ne [l'ai] pas lu. | کتاب؟ نخواندمش. | d: ai le, le ai, l'a
 Ton père ? Tu [lui as] parlé ? | پدرت؟ با او حرف زدی؟ | d: as lui, l'as, le as
@@ -64,7 +64,7 @@ Mon frère veut [t'aider]. Tu{tu} [lui as] téléphoné ? | برادرم می‌
 Je dois [vous parler]. Vous pouvez [m'attendre] ? | باید با شما حرف بزنم. می‌توانید منتظرم بمانید؟ | d: parler vous, vous parlez, vous parle / attendre moi, me attendre, moi attendre
 Le gâteau ? Paul [l'a] mangé et il [m'a] dit merci. | کیک؟ پل خوردش و از من تشکر کرد. | d: a le, le a, lui a / a me, me a, moi a
 Tes amis arrivent ? Je vais [les attendre] et je vais [leur montrer] la ville. | دوستانت دارند می‌آیند؟ منتظرشان می‌مانم و شهر را نشانشان می‌دهم. | d: attendre les, leur attendre, les attends / montrer leur, les montrer, leur montre
-Tu as appelé ton oncle ? Oui, je [l'ai] appelé et je vais [le voir] demain. | به عمویت زنگ زدی؟ بله، زنگ زدم و فردا می‌روم ببینمش. | d: ai le, le ai, lui ai / voir le, lui voir, le vois
+Tu as appelé ton oncle ? Oui, je [l'ai] appelé et je vais [le voir] demain. | به عمویت زنگ زدی؟ بله، زنگ زدم و فردا می‌روم ببینمش. | d: ai le, le ai, lui ai / voir le, lui voir, le vois | full: Tu as appelé ton oncle ? Oui, je l'ai appelé et demain, je vais le voir.
 transforms:
 Je vais voir Paul. => Je vais le voir. | به‌جای «Paul» ضمیر بگذار.
 Tu peux aider ta sœur ? => Tu peux l'{la-pron}aider ? | به‌جای «ta sœur» ضمیر بگذار.
@@ -75,7 +75,7 @@ Je l'ai vu. => Je ne l'ai pas vu. | جمله را منفی کن.
 Je lui parle. => Je vais lui parler. | جمله را با aller + مصدر بنویس.
 Je le regarde. => Je l'ai regardé. | جمله را به گذشته (passé composé) ببر.
 translations:
-پل؟ می‌خواهم ببینمش. => Paul ? Je veux{vouloir} le voir.
+پل؟ می‌خواهم ببینمش. => Paul ? Je veux{vouloir} le voir. ; Paul ? Je voudrais le voir.
 می‌توانی کمکم کنی؟ => Tu peux m'aider ? ; Est-ce que tu peux m'aider ? ; Peux-tu m'aider ?
 فیلم؟ دیدمش. => Le film ? Je l'ai vu.
 ماری؟ با او حرف زدم. => Marie ? Je lui ai parlé. ; Marie ? J'ai parlé avec elle.

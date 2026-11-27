@@ -28,7 +28,7 @@ B: Très bien ! Il y a une piscine ici. Le club est ouvert{ouvert} tous les jour
 + Parfait. Je peux commencer aujourd'hui ? | عالی. می‌توانم امروز شروع کنم؟
 why: بعد از pouvoir فعل مصدر می‌آید: «je peux commencer». hier یعنی دیروز و نمی‌شود دیروز شروع کرد.
 B: Oui, bien sûr ! Voilà votre carte du{du-contr} club. Amusez-vous bien ! | بله، حتماً! این کارت باشگاهتان. خوش بگذرد!
-- Merci, vous aussi ! | ممنون، به شما هم!
+- Merci, bon appétit ! | ممنون، نوش جان!
 + Merci beaucoup ! À bientôt ! | خیلی ممنون! به‌زودی می‌بینمتان!
 - Pardon ! À bientôt ! | ببخشید! به‌زودی می‌بینمتان!
-why: کارمند باشگاه سر کار است و ورزش نمی‌کند که بگویی «vous aussi». Pardon برای عذرخواهی است، نه تشکر.
+why: «Bon appétit» برای سر غذاست، نه برای خداحافظی در باشگاه. Pardon برای عذرخواهی است، نه تشکر.

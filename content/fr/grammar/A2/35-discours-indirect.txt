@@ -8,7 +8,7 @@ lesson:
 وقتی حرف کسی را برای دیگری نقل می‌کنیم (نقل قول غیرمستقیم)، فرانسوی چند قاعدهٔ ساده دارد.
 جملهٔ خبری: dire que + جمله: Paul dit : « Je suis fatigué. » → Paul dit qu'il est fatigué. در فارسی «که» را می‌شود انداخت («می‌گوید خسته است»)، ولی que در فرانسوی همیشه لازم است.
 سؤال بله و نه: demander si + جمله: « Tu viens ? » → Il demande si tu viens. si قبل از il و ils می‌شود s': Il demande s'il peut entrer.
-سؤال با کلمهٔ پرسشی: همان کلمه را نگه دار و بعدش ترتیب معمولی بیاور (فاعل + فعل)، بدون جابه‌جایی و بدون est-ce que: « Où habites-tu ? » → Il demande où tu habites.
+سؤال با کلمهٔ پرسشی: همان کلمه را نگه دار و بعدش ترتیب معمولی بیاور (فاعل + فعل)، بدون جابه‌جایی و بدون est-ce que: « Où habites-tu ? » → Il demande où tu habites. اگر فاعل اسم است (نه ضمیر)، فعل را می‌شود پیش از آن هم آورد و با فعل کوتاهی مثل est این شکل رایج‌تر است: Il demande où est la gare.
 ضمیر و صفت ملکی از دید کسی که نقل می‌کند عوض می‌شوند: Marie dit : « Mon frère est malade. » → Marie dit que son frère est malade.
 صرف dire: je dis، tu dis، il dit، nous disons، vous dites (نه «disez»)، ils disent.
 در این درس فعل اصلی در زمان حال است (il dit، elle demande)، پس زمان جملهٔ نقل‌شده عوض نمی‌شود.
@@ -36,7 +36,7 @@ Elle demande [si] tu viens ce soir. | او (زن) می‌پرسد که امشب 
 Le serveur demande [si] nous voulons un dessert. | گارسون می‌پرسد که دسر می‌خواهیم یا نه. | d: que, quoi, qu'est-ce que
 Je demande à Paul [si] Marie est là. | از پل می‌پرسم که ماری آنجاست یا نه. | d: que, quoi, qu'est-ce que
 Il demande [où] tu habites. | او (مرد) می‌پرسد کجا زندگی می‌کنی. | d: quoi, qu'est-ce que, qui
-Le touriste demande [où] est la gare. | توریست می‌پرسد ایستگاه قطار کجاست. | d: que, quoi, qu'est-ce que
+Le touriste demande [où] est la gare. | توریست می‌پرسد ایستگاه قطار کجاست. | d: que, quoi, qu'est-ce que | full: Le touriste demande où la gare est.
 Ma mère demande [quand]{quand} nous rentrons. | مادرم می‌پرسد کی برمی‌گردیم. | d: que, quoi, qu'est-ce que
 Elle me demande [pourquoi] je suis{être} triste. | او (زن) از من می‌پرسد چرا غمگینم. | d: que, quoi, qu'est-ce que
 Il demande [comment] tu t'appelles. | او (مرد) می‌پرسد اسمت چیست. | d: quoi, qu'est-ce que, qui
@@ -55,10 +55,10 @@ Le guide explique [que] le musée ferme{fermer} à six heures. | راهنما ت
 Il répond [que] Marie n'est pas là. | او (مرد) جواب می‌دهد که ماری آنجا نیست. | d: quoi, ce, qu'est-ce que
 Sophie dit [qu'elle] aime le chocolat. | سوفی می‌گوید که شکلات دوست دارد. | d: que je, que tu, que nous
 Nous demandons au vendeur [si] le magasin est ouvert{ouvert} dimanche. | از فروشنده می‌پرسیم که مغازه یکشنبه باز است یا نه. | d: que, quoi, qu'est-ce que
-Vous [demandez] où est la poste ? | می‌پرسید پست کجاست؟ | d: demandes, demandons, demander
+Vous [demandez] où est la poste ? | می‌پرسید پست کجاست؟ | d: demandes, demandons, demander | full: Vous demandez où la poste est ?
 Le petit garçon demande [quand]{quand} il peut jouer. | پسر کوچک می‌پرسد کی می‌تواند بازی کند. | d: que, quoi, qu'est-ce que
 Paul [dit] qu'il est malade et il [demande] si tu peux venir. | پل می‌گوید که مریض است و می‌پرسد که می‌توانی بیایی یا نه. | d: dis, disent, dire / demandes, demandent, demander
-Elle demande [où] tu habites et [quand]{quand} tu pars. | می‌پرسد کجا زندگی می‌کنی و کی می‌روی. | d: quoi, qu'est-ce que, qui / que, quoi, qu'est-ce que
+Elle demande [où] tu habites et [quand]{quand} tu pars. | می‌پرسد کجا زندگی می‌کنی و کی می‌روی. | d: quoi, qu'est-ce que, qui / que, quoi, qu'est-ce que | full: Elle demande quand tu pars et où tu habites.
 Marie dit [que] [sa] mère est malade. | ماری می‌گوید که مادرش مریض است. | d: quoi, ce, qu'est-ce que / son, ses, lui
 Les enfants [disent] qu'ils ont faim et [demandent] si le dîner est prêt. | بچه‌ها می‌گویند که گرسنه‌اند و می‌پرسند که شام آماده است یا نه. | d: dit, dites, disons / demande, demandez, demandons
 Il me demande [comment] je vais et [si] je viens demain. | از من می‌پرسد حالم چطور است و فردا می‌آیم یا نه. | d: que, quoi, qu'est-ce que / que, quoi, qu'est-ce que
@@ -76,10 +76,10 @@ Les enfants disent : « Nous avons faim. » => Les enfants disent qu'ils ont fai
 Il demande : « Est-ce que le musée est ouvert{ouvert} ? » => Il demande si le musée est ouvert{ouvert}. | سؤال را غیرمستقیم نقل کن.
 translations:
 پل می‌گوید که خسته است. => Paul dit qu'il est fatigué.
-می‌پرسد که می‌آیی یا نه. => Il demande si tu viens. ; Elle demande si tu viens.
+می‌پرسد که می‌آیی یا نه. => Il demande si tu viens. ; Elle demande si tu viens. ; Il demande si tu viens ou non. ; Elle demande si tu viens ou non. ; Il demande si tu viens ou pas. ; Elle demande si tu viens ou pas.
 ماری می‌پرسد کجا زندگی می‌کنی. => Marie demande où tu habites. ; Marie demande où tu vis{vivre}.
 می‌گویند که خانه‌شان بزرگ است. => Ils disent que leur maison est grande. ; Elles disent que leur maison est grande.
 از او می‌پرسم چرا غمگین است. => Je lui demande pourquoi il est triste. ; Je lui demande pourquoi elle est triste.
-معلم می‌پرسد که تمام کرده‌ایم یا نه. => Le professeur demande si nous avons fini. ; Le professeur demande si on a fini. ; Le professeur demande si nous avons terminé. ; Le professeur demande si on a terminé.
+معلم می‌پرسد که تمام کرده‌ایم یا نه. => Le professeur demande si nous avons fini. ; Le professeur demande si on a fini. ; Le professeur demande si nous avons terminé. ; Le professeur demande si on a terminé. ; Le professeur demande si nous avons fini ou non. ; Le professeur demande si on a fini ou non. ; Le professeur demande si nous avons terminé ou non. ; Le professeur demande si on a terminé ou non.
 می‌پرسد قطار کی حرکت می‌کند. => Il demande quand{quand} le train part. ; Elle demande quand{quand} le train part. ; Il demande quand{quand} part le train. ; Elle demande quand{quand} part le train.
 سوفی می‌گوید که برادرش در پاریس است. => Sophie dit que son frère est à Paris.

@@ -7,7 +7,7 @@ mistake: فارسی برای هر دو «که» می‌گوید، برای هم�
 lesson:
 que هم «که» است، ولی وقتی اسمِ قبلش مفعولِ جملهٔ دوم است، یعنی کار روی آن انجام می‌شود: le livre que je lis (کتابی که می‌خوانم).
 دو جمله را یکی کن: Je lis un livre. Le livre est intéressant. → Le livre que je lis est intéressant.
-بعد از que همیشه یک فاعل می‌آید (je، tu، Paul، mes parents…) و بعد فعل: la femme que tu connais، la maison que mes parents veulent acheter.
+بعد از que یک فاعل می‌آید (je، tu، Paul، mes parents…) و بعد فعل: la femme que tu connais، la maison que mes parents veulent acheter.
 قبل از صدادار que می‌شود qu': le film qu'il regarde، la ville qu'elle préfère، le plat qu'Ali aime. ولی qui هیچ‌وقت کوتاه نمی‌شود.
 فارسی می‌گوید «کتابی که آن را می‌خوانم»؛ در فرانسوی le، la یا les را بعد از que تکرار نمی‌کنیم: «le livre que je le lis» غلط است.
 راه انتخاب: بعد از جای خالی فعل آمد → qui (l'homme qui parle)؛ فاعل آمد → que (l'homme que je vois).
@@ -47,7 +47,7 @@ Le pull [qu']elle porte{porter} est à sa sœur. | پلیوری که او (زن)
 Les élèves [que] je connais parlent bien français. | دانش‌آموزانی که می‌شناسم خوب فرانسوی حرف می‌زنند. | d: qui, où, quoi
 L'émission [qu']on regarde commence à neuf heures. | برنامه‌ای که تماشا می‌کنیم ساعت نه شروع می‌شود. | d: que, qui, quoi
 Le vélo [que] mon père m'a acheté est rouge. | دوچرخه‌ای که پدرم برایم خرید قرمز است. | d: qui, où, quoi
-C'est{être} un plat [qu']Ali cuisine{cuisiner} souvent. | این غذایی است که علی اغلب درست می‌کند. | d: que, qui, quoi
+C'est{être} un plat [qu']Ali cuisine{cuisiner} souvent. | این غذایی است که علی اغلب درست می‌کند. | d: qui, où, quoi
 C'est{être} la langue [que] j'apprends. | این زبانی است که یاد می‌گیرم. | d: qui, où, quoi
 Le livre [que je] lis est à Marie. | کتابی که می‌خوانم مال ماری است. | d: qui je, que je le, qui je le
 La robe [que tu] portes{porter} est très jolie. | لباسی که پوشیده‌ای خیلی قشنگ است. | d: qui tu, que tu la, qui tu la
@@ -78,6 +78,6 @@ translations:
 این آهنگی است که از همه بیشتر دوست دارم. => C'est{être} la chanson que je préfère. ; C'est{être} la chanson que j'aime le plus.
 دوستانی که دعوت می‌کنیم ساعت هشت می‌رسند. => Les amis que nous invitons arrivent à huit heures. ; Les amis qu'on invite arrivent à huit heures. ; Les amies que nous invitons arrivent à huit heures. ; Les amies qu'on invite arrivent à huit heures.
 اتوبوسی که صبح‌ها سوار می‌شوم همیشه دیر می‌کند. => Le bus que je prends le matin est toujours en retard.
-کیکی که درست می‌کنی خیلی خوشمزه است. => Le gâteau que tu fais est très bon. ; Le gâteau que tu fais est délicieux.
+کیکی که درست می‌کنی خیلی خوشمزه است. => Le gâteau que tu fais est très bon. ; Le gâteau que tu fais est délicieux. ; Le gâteau que tu prépares est très bon. ; Le gâteau que tu prépares est délicieux.
 هتلی که رزرو کردیم نزدیک ایستگاه قطار است. => L'hôtel que nous avons réservé est près de la gare. ; L'hôtel qu'on a réservé est près de la gare.
 این هدیه‌ای است که پل به من داد. => C'est{être} le cadeau que Paul m'a donné. ; C'est{être} le cadeau que Paul m'a offert.

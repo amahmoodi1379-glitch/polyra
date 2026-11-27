@@ -27,29 +27,29 @@ Ich bin krank, deshalb bleibe ich zu Hause. | مریضم، برای همین د�
 Ich bin krank, trotzdem gehe ich zur Arbeit. | مریضم، با این حال سر کار می‌روم.
 Es ist kalt, wir gehen trotzdem spazieren. | هوا سرد است، با این حال قدم می‌زنیم.
 targets:
-Ich bleibe heute zu Hause, [denn] ich habe Fieber. | امروز در خانه می‌مانم، چون تب دارم. | d: weil, deshalb, trotzdem | hint: (چون) | full: Heute bleibe ich zu Hause, denn ich habe Fieber.
-Wir essen jetzt, [denn] wir haben Hunger. | الان غذا می‌خوریم، چون گرسنه‌ایم. | d: weil, deshalb, trotzdem | hint: (چون) | full: Jetzt essen wir, denn wir haben Hunger.
-Lena lernt viel, [denn] sie hat morgen eine Prüfung. | لنا زیاد درس می‌خواند، چون فردا امتحان دارد. | d: weil, deshalb, dass | full: Lena lernt viel, denn morgen hat sie eine Prüfung.
-Paul kommt nicht mit, [denn] er hat keine Zeit. | پاول همراه ما نمی‌آید، چون وقت ندارد. | d: weil, wenn, deshalb | hint: (چون)
-Ich mache das Fenster zu, [denn] es ist kalt. | پنجره را می‌بندم، چون سرد است. | d: weil, deshalb, trotzdem
-Wir gehen nicht in den Park, [denn] das Wetter ist schlecht. | به پارک نمی‌رویم، چون هوا بد است. | d: weil, dass, trotzdem | hint: (چون)
-Ich trinke keinen Kaffee, [denn] ich mag ihn nicht. | قهوه نمی‌خورم، چون دوستش ندارم. | d: weil, deshalb, trotzdem
-Anna ist glücklich, [denn] sie hat eine neue Wohnung. | آنا خوشحال است، چون یک آپارتمان نو دارد. | d: weil, deshalb, wenn
-Wir fahren mit dem Zug, [denn] er ist schneller als der Bus. | با قطار می‌رویم، چون از اتوبوس سریع‌تر است. | d: weil, deshalb, trotzdem
+Ich bleibe heute zu Hause, [denn] ich habe Fieber. | امروز در خانه می‌مانم، چون تب دارم. | d: dass, deshalb, trotzdem | hint: (چون) | full: Heute bleibe ich zu Hause, denn ich habe Fieber.
+Wir essen jetzt, [denn] wir haben Hunger. | الان غذا می‌خوریم، چون گرسنه‌ایم. | d: wenn, deshalb, trotzdem | hint: (چون) | full: Jetzt essen wir, denn wir haben Hunger.
+Lena lernt viel, [denn] sie hat morgen eine Prüfung. | لنا زیاد درس می‌خواند، چون فردا امتحان دارد. | d: dass, deshalb, trotzdem | full: Lena lernt viel, denn morgen hat sie eine Prüfung.
+Paul kommt nicht mit, [denn] er hat keine Zeit. | پاول همراه ما نمی‌آید، چون وقت ندارد. | d: dass, wenn, deshalb | hint: (چون)
+Ich mache das Fenster zu, [denn] es ist kalt. | پنجره را می‌بندم، چون سرد است. | d: wenn, deshalb, trotzdem
+Wir gehen nicht in den Park, [denn] das Wetter ist schlecht. | به پارک نمی‌رویم، چون هوا بد است. | d: deshalb, dass, trotzdem | hint: (چون)
+Ich trinke keinen Kaffee, [denn] ich mag ihn nicht. | قهوه نمی‌خورم، چون دوستش ندارم. | d: dass, deshalb, trotzdem
+Anna ist glücklich, [denn] sie hat eine neue Wohnung. | آنا خوشحال است، چون یک آپارتمان نو دارد. | d: dass, deshalb, wenn
+Wir fahren mit dem Zug, [denn] er ist schneller als der Bus. | با قطار می‌رویم، چون از اتوبوس سریع‌تر است. | d: wenn, deshalb, trotzdem
 Max kommt zu spät, [weil] er den Bus verpasst hat. | ماکس دیر می‌آید، چون به اتوبوس نرسیده است. | d: denn, deshalb, aber | hint: (چون) | full: Weil er den Bus verpasst hat, kommt Max zu spät.
 Ich lerne Deutsch, [weil] ich in Deutschland studieren möchte. | آلمانی یاد می‌گیرم، چون می‌خواهم در آلمان درس بخوانم. | d: denn, deshalb, aber | hint: (چون) | full: Weil ich in Deutschland studieren möchte, lerne ich Deutsch.
 Wir kaufen heute nichts, [weil] wir kein Geld haben. | امروز چیزی نمی‌خریم، چون پول نداریم. | d: denn, deshalb, und | full: Heute kaufen wir nichts, weil wir kein Geld haben. ; Weil wir kein Geld haben, kaufen wir heute nichts.
 Sara ist traurig, [weil] ihre{ihr-det} Katze krank ist. | سارا غمگین است، چون گربه‌اش مریض است. | d: denn, deshalb, aber | hint: (چون) | full: Weil ihre Katze krank ist, ist Sara traurig.
 Ich rufe dich an, [weil] ich eine Frage habe. | به تو زنگ می‌زنم، چون یک سؤال دارم. | d: denn, deshalb, und | full: Weil ich eine Frage habe, rufe ich dich an.
-Ich bin müde, [deshalb] gehe ich früh ins Bett. | خسته‌ام، برای همین زود به رختخواب می‌روم. | d: denn, weil, aber | full: Ich bin müde, ich gehe deshalb früh ins Bett.
-Es ist sehr kalt, [deshalb] trage ich einen Mantel. | هوا خیلی سرد است، برای همین پالتو می‌پوشم. | d: denn, weil, dass | full: Es ist sehr kalt, ich trage deshalb einen Mantel.
-Der Bus kommt nicht, [deshalb] gehen wir zu Fuß. | اتوبوس نمی‌آید، برای همین پیاده می‌رویم. | d: denn, weil, aber | full: Der Bus kommt nicht, wir gehen deshalb zu Fuß.
-Mein Handy ist kaputt, [deshalb] kann ich dich nicht anrufen. | موبایلم خراب است، برای همین نمی‌توانم به تو زنگ بزنم. | d: denn, weil, wenn | full: Mein Handy ist kaputt, ich kann dich deshalb nicht anrufen.
-Wir haben morgen eine Prüfung, [deshalb] lernen wir viel. | فردا امتحان داریم، برای همین زیاد درس می‌خوانیم. | d: denn, weil, aber | full: Morgen haben wir eine Prüfung, deshalb lernen wir viel. ; Wir haben morgen eine Prüfung, wir lernen deshalb viel. ; Morgen haben wir eine Prüfung, wir lernen deshalb viel.
-Anna hat Fieber, [deshalb] bleibt sie im Bett. | آنا تب دارد، برای همین در رختخواب می‌ماند. | d: denn, weil, dass | full: Anna hat Fieber, sie bleibt deshalb im Bett.
-Ich habe keinen Hunger, [deshalb] esse ich nichts. | گرسنه نیستم، برای همین چیزی نمی‌خورم. | d: denn, weil, aber | full: Ich habe keinen Hunger, ich esse deshalb nichts.
-Das Restaurant ist sehr teuer, [deshalb] kochen wir zu Hause. | رستوران خیلی گران است، برای همین در خانه آشپزی می‌کنیم. | d: denn, weil, wenn | full: Das Restaurant ist sehr teuer, wir kochen deshalb zu Hause.
-Ich habe heute frei. [Deshalb] besuche ich meine Oma. | امروز کار ندارم. برای همین به دیدن مادربزرگم می‌روم. | d: Denn, Weil, Aber | full: Ich habe heute frei. Ich besuche deshalb meine Oma. ; Heute habe ich frei. Deshalb besuche ich meine Oma. ; Heute habe ich frei. Ich besuche deshalb meine Oma.
+Ich bin müde, [deshalb] gehe ich früh ins Bett. | خسته‌ام، برای همین زود به رختخواب می‌روم. | d: denn, weil, aber | ok: also | full: Ich bin müde, ich gehe deshalb früh ins Bett.
+Es ist sehr kalt, [deshalb] trage ich einen Mantel. | هوا خیلی سرد است، برای همین پالتو می‌پوشم. | d: denn, weil, dass | ok: also | full: Es ist sehr kalt, ich trage deshalb einen Mantel.
+Der Bus kommt nicht, [deshalb] gehen wir zu Fuß. | اتوبوس نمی‌آید، برای همین پیاده می‌رویم. | d: denn, weil, aber | ok: also | full: Der Bus kommt nicht, wir gehen deshalb zu Fuß.
+Mein Handy ist kaputt, [deshalb] kann ich dich nicht anrufen. | موبایلم خراب است، برای همین نمی‌توانم به تو زنگ بزنم. | d: denn, weil, wenn | ok: also | full: Mein Handy ist kaputt, ich kann dich deshalb nicht anrufen.
+Wir haben morgen eine Prüfung, [deshalb] lernen wir viel. | فردا امتحان داریم، برای همین زیاد درس می‌خوانیم. | d: denn, weil, aber | ok: also | full: Morgen haben wir eine Prüfung, deshalb lernen wir viel. ; Wir haben morgen eine Prüfung, wir lernen deshalb viel. ; Morgen haben wir eine Prüfung, wir lernen deshalb viel.
+Anna hat Fieber, [deshalb] bleibt sie im Bett. | آنا تب دارد، برای همین در رختخواب می‌ماند. | d: denn, weil, dass | ok: also | full: Anna hat Fieber, sie bleibt deshalb im Bett.
+Ich habe keinen Hunger, [deshalb] esse ich nichts. | گرسنه نیستم، برای همین چیزی نمی‌خورم. | d: denn, weil, aber | ok: also | full: Ich habe keinen Hunger, ich esse deshalb nichts.
+Das Restaurant ist sehr teuer, [deshalb] kochen wir zu Hause. | رستوران خیلی گران است، برای همین در خانه آشپزی می‌کنیم. | d: denn, weil, wenn | ok: also | full: Das Restaurant ist sehr teuer, wir kochen deshalb zu Hause.
+Ich habe heute frei. [Deshalb] besuche ich meine Oma. | امروز کار ندارم. برای همین به دیدن مادربزرگم می‌روم. | d: Denn, Weil, Aber | ok: Also | full: Ich habe heute frei. Ich besuche deshalb meine Oma. ; Heute habe ich frei. Deshalb besuche ich meine Oma. ; Heute habe ich frei. Ich besuche deshalb meine Oma.
 Es regnet, [trotzdem] gehen wir spazieren. | باران می‌آید، با این حال قدم می‌زنیم. | d: denn, weil, aber | full: Es regnet, wir gehen trotzdem spazieren.
 Ich bin müde, [trotzdem] mache ich meine Hausaufgaben. | خسته‌ام، با این حال تکلیف‌هایم را انجام می‌دهم. | d: denn, weil, dass | full: Ich bin müde, ich mache trotzdem meine Hausaufgaben.
 Max ist krank, [trotzdem] geht er zur Arbeit. | ماکس مریض است، با این حال سر کار می‌رود. | d: denn, weil, aber | full: Max ist krank, er geht trotzdem zur Arbeit.
@@ -59,13 +59,13 @@ Ich habe wenig Zeit, [trotzdem] helfe ich dir. | وقت کمی دارم، با �
 Der Film war lang, [trotzdem] war er nicht langweilig. | فیلم طولانی بود، با این حال خسته‌کننده نبود. | d: denn, weil, aber | full: Der Film war lang, er war trotzdem nicht langweilig.
 Lena hat viel gelernt, [trotzdem] hat sie die Prüfung nicht bestanden. | لنا زیاد درس خواند، با این حال در امتحان قبول نشد. | d: denn, weil, dass | full: Lena hat viel gelernt, sie hat die Prüfung trotzdem nicht bestanden. ; Lena hat viel gelernt, sie hat trotzdem die Prüfung nicht bestanden.
 Wir haben viel gearbeitet. [Trotzdem] sind wir nicht fertig. | خیلی کار کردیم. با این حال هنوز کارمان تمام نشده است. | d: Denn, Weil, Aber | full: Wir haben viel gearbeitet. Wir sind trotzdem nicht fertig.
-Max hat keine Zeit, [denn] er muss arbeiten. [Deshalb] kommt er nicht mit. | ماکس وقت ندارد، چون باید کار کند. برای همین همراه ما نمی‌آید. | d: weil, deshalb, trotzdem / Denn, Weil, Aber | full: Max hat keine Zeit, denn er muss arbeiten. Er kommt deshalb nicht mit.
+Max hat keine Zeit, [denn] er muss arbeiten. [Deshalb] kommt er nicht mit. | ماکس وقت ندارد، چون باید کار کند. برای همین همراه ما نمی‌آید. | d: dass, deshalb, trotzdem / Denn, Weil, Aber | ok: denn / Also | full: Max hat keine Zeit, denn er muss arbeiten. Er kommt deshalb nicht mit.
 Ich komme nicht, [weil] ich arbeiten [muss]. | نمی‌آیم، چون باید کار کنم. | d: denn, deshalb, aber / müssen, musst, müsst | full: Weil ich arbeiten muss, komme ich nicht.
-Mein Fahrrad ist kaputt, [deshalb] nehme ich den Bus. [Trotzdem] komme ich pünktlich. | دوچرخه‌ام خراب است، برای همین با اتوبوس می‌روم. با این حال سر وقت می‌رسم. | d: denn, weil, aber / Denn, Weil, Aber | full: Mein Fahrrad ist kaputt, ich nehme deshalb den Bus. Trotzdem komme ich pünktlich. ; Mein Fahrrad ist kaputt, deshalb nehme ich den Bus. Ich komme trotzdem pünktlich. ; Mein Fahrrad ist kaputt, ich nehme deshalb den Bus. Ich komme trotzdem pünktlich.
+Mein Fahrrad ist kaputt, [deshalb] nehme ich den Bus. [Trotzdem] komme ich pünktlich. | دوچرخه‌ام خراب است، برای همین با اتوبوس می‌روم. با این حال سر وقت می‌رسم. | d: denn, weil, aber / Denn, Weil, Aber | ok: also | full: Mein Fahrrad ist kaputt, ich nehme deshalb den Bus. Trotzdem komme ich pünktlich. ; Mein Fahrrad ist kaputt, deshalb nehme ich den Bus. Ich komme trotzdem pünktlich. ; Mein Fahrrad ist kaputt, ich nehme deshalb den Bus. Ich komme trotzdem pünktlich.
 [Weil] es regnet, bleiben wir zu Hause. [Trotzdem] haben wir viel Spaß. | چون باران می‌آید، در خانه می‌مانیم. با این حال خیلی خوش می‌گذرانیم. | d: Denn, Deshalb, Aber / Denn, Weil, Aber | full: Wir bleiben zu Hause, weil es regnet. Trotzdem haben wir viel Spaß. ; Weil es regnet, bleiben wir zu Hause. Wir haben trotzdem viel Spaß. ; Wir bleiben zu Hause, weil es regnet. Wir haben trotzdem viel Spaß.
-Lena kommt nicht, [denn] sie ist krank. [Trotzdem] macht sie ihre{ihr-det} Hausaufgaben. | لنا نمی‌آید، چون مریض است. با این حال تکلیف‌هایش را انجام می‌دهد. | d: weil, deshalb, trotzdem / Denn, Weil, Aber | full: Lena kommt nicht, denn sie ist krank. Sie macht trotzdem ihre Hausaufgaben.
-Ich spare Geld, [denn] ich will ein Auto kaufen. [Deshalb] gehe ich nicht oft essen. | پول پس‌انداز می‌کنم، چون می‌خواهم یک ماشین بخرم. برای همین زیاد بیرون غذا نمی‌خورم. | d: weil, deshalb, trotzdem / Denn, Weil, Aber | full: Ich spare Geld, denn ich will ein Auto kaufen. Ich gehe deshalb nicht oft essen.
-Es ist spät, [deshalb] [muss] ich jetzt gehen. | دیر است، برای همین الان باید بروم. | d: denn, weil, aber / müssen, musst, müsst | full: Es ist spät, ich muss deshalb jetzt gehen.
+Lena kommt nicht, [denn] sie ist krank. [Trotzdem] macht sie ihre{ihr-det} Hausaufgaben. | لنا نمی‌آید، چون مریض است. با این حال تکلیف‌هایش را انجام می‌دهد. | d: wenn, deshalb, trotzdem / Denn, Weil, Aber | full: Lena kommt nicht, denn sie ist krank. Sie macht trotzdem ihre Hausaufgaben.
+Ich spare Geld, [denn] ich will ein Auto kaufen. [Deshalb] gehe ich nicht oft essen. | پول پس‌انداز می‌کنم، چون می‌خواهم یک ماشین بخرم. برای همین زیاد بیرون غذا نمی‌خورم. | d: dass, deshalb, trotzdem / Denn, Weil, Aber | ok: denn / Also | full: Ich spare Geld, denn ich will ein Auto kaufen. Ich gehe deshalb nicht oft essen.
+Es ist spät, [deshalb] [muss] ich jetzt gehen. | دیر است، برای همین الان باید بروم. | d: denn, weil, aber / müssen, musst, müsst | ok: also | full: Es ist spät, ich muss deshalb jetzt gehen.
 Ich trinke abends keinen Kaffee, [weil] ich dann nicht schlafen [kann]. | شب‌ها قهوه نمی‌خورم، چون بعدش نمی‌توانم بخوابم. | d: denn, deshalb, aber / können, kannst, könnt | full: Abends trinke ich keinen Kaffee, weil ich dann nicht schlafen kann. ; Weil ich dann nicht schlafen kann, trinke ich abends keinen Kaffee.
 transforms:
 Ich bleibe zu Hause, weil ich krank bin. => Ich bleibe zu Hause, denn ich bin krank. | به‌جای weil از denn استفاده کن.
@@ -74,7 +74,7 @@ Ich bin müde. Ich gehe ins Bett. => Ich bin müde, deshalb gehe ich ins Bett. ;
 Es regnet. Wir gehen spazieren. => Es regnet, trotzdem gehen wir spazieren. ; Es regnet, wir gehen trotzdem spazieren. | دو جمله را با trotzdem در یک جمله به هم وصل کن.
 Ich habe keine Zeit, deshalb komme ich nicht. => Ich komme nicht, denn ich habe keine Zeit. | جمله را با denn بنویس: اول «نمی‌آیم»، بعد دلیلش.
 Ich komme nicht, denn ich habe keine Zeit. => Ich habe keine Zeit, deshalb komme ich nicht. ; Ich habe keine Zeit, ich komme deshalb nicht. | جمله را با deshalb بنویس: اول دلیل، بعد نتیجه.
-Max ist krank, deshalb geht er nicht zur Arbeit. => Max ist krank, trotzdem geht er zur Arbeit. ; Max ist krank, er geht trotzdem zur Arbeit. | بگو «با این حال سر کار می‌رود» (با trotzdem).
+Max ist krank, deshalb geht er nicht zur Arbeit. => Max ist krank, trotzdem geht er zur Arbeit. ; Max ist krank, er geht trotzdem zur Arbeit. ; Max ist krank, aber er geht trotzdem zur Arbeit. | بگو «با این حال سر کار می‌رود» (با trotzdem).
 Wir haben Hunger. Wir essen jetzt. => Wir essen jetzt, denn wir haben Hunger. ; Jetzt essen wir, denn wir haben Hunger. | دو جمله را با denn وصل کن: اول «الان غذا می‌خوریم».
 translations:
 مریضم، برای همین در خانه می‌مانم. => Ich bin krank, deshalb bleibe ich zu Hause. ; Ich bin krank. Deshalb bleibe ich zu Hause. ; Ich bin krank, ich bleibe deshalb zu Hause. ; Ich bin krank, also bleibe ich zu Hause. ; Ich bleibe zu Hause, weil ich krank bin. ; Ich bleibe zu Hause, denn ich bin krank. ; Weil ich krank bin, bleibe ich zu Hause.

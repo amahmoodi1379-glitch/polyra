@@ -9,7 +9,7 @@ lesson:
 از ۲۰ به بعد -ste می‌گیرد: zwanzig ← zwanzigste، einunddreißig ← einunddreißigste.
 چهار شکل بی‌قاعده را حفظ کن: eins ← erste، drei ← dritte، sieben ← siebte، acht ← achte.
 عدد ترتیبی صفت است و پسوندش مثل صفت عوض می‌شود: der erste Tag، den ersten Tag، am ersten Tag، mein erstes Auto، mein erster Lehrer.
-تاریخ با der و پسوند -e گفته می‌شود: Heute ist der dritte Mai. برای «در چه روزی» am می‌آید و پسوند -en: Ich habe am dritten Mai Geburtstag.
+تاریخ با der و پسوند -e گفته می‌شود: Heute ist der dritte Mai. با haben حالت مفعولی دارد: Heute haben wir den dritten Mai. برای «در چه روزی» am می‌آید و پسوند -en: Ich habe am dritten Mai Geburtstag.
 در نوشتن، عدد ترتیبی را با رقم و یک نقطه بعد از آن می‌نویسند: «der 3. Mai» را der dritte Mai می‌خوانیم و «am 3. Mai» را am dritten Mai.
 der Erste با حرف بزرگ یعنی «روز اول ماه» یا «نفر اول»: Am Ersten bekomme ich mein Gehalt. Ich war der Erste im Büro.
 table:
@@ -39,7 +39,7 @@ Wann hast du Geburtstag? – Am [dritten] April. | تولدت کی است؟ – 
 Welches Datum ist heute? – Der [erste] August. | امروز چه تاریخی است؟ – اول اوت. | d: ersten, erster, eins
 Die Ferien beginnen am [ersten] Juli. | تعطیلات اول ژوئیه شروع می‌شود. | d: erste, erster, eins | hint: (eins) | full: Am ersten Juli beginnen die Ferien.
 Heute haben wir den [dritten] Juni. | امروز سوم ژوئن است. | d: dritte, dritter, drei | hint: (drei) | full: Wir haben heute den dritten Juni.
-Heute ist Montag, der [zweite] Oktober. | امروز دوشنبه، دوم اکتبر است. | d: zweiten, zweiter, zwei
+Der [zweite] Oktober ist ein Montag. | دوم اکتبر دوشنبه است. | d: zweiten, zweiter, zwei
 Ich fahre am [zweiten] Mai nach Wien. | دوم مه به وین می‌روم. | d: zweite, zweiter, zwei | hint: (zwei) | full: Am zweiten Mai fahre ich nach Wien.
 Ab dem [ersten] Juni arbeite ich hier. | از اول ژوئن اینجا کار می‌کنم. | d: erste, erster, eins | full: Ich arbeite ab dem ersten Juni hier.
 Am [ersten] Januar ist Neujahr. | اول ژانویه روز سال نو است. | d: erste, erster, eins | full: Neujahr ist am ersten Januar.
@@ -78,7 +78,7 @@ Heute ist der erste März. => Heute haben wir den ersten März. | جمله را 
 Das ist der erste Zug. => Ich nehme den ersten Zug. | جمله را با «Ich nehme» بساز.
 Das ist das erste Auto. => Das ist mein erstes Auto. | به‌جای das دوم بگو mein.
 Er ist der erste Lehrer. => Er ist mein erster Lehrer. | به‌جای der بگو mein.
-Heute ist der zweite Juni. => Morgen ist der dritte Juni. ; Morgen ist der dritte. | بگو فردا چه تاریخی است.
+Heute ist der zweite Juni. => Morgen ist der dritte Juni. ; Morgen ist der dritte. ; Morgen haben wir den dritten Juni. ; Morgen haben wir den dritten. | بگو فردا چه تاریخی است.
 Die Ferien beginnen am ersten Juli. => Am ersten Juli beginnen die Ferien. | جمله را با «Am ersten Juli» شروع کن.
 Das ist die erste Woche. => Wir sind in der ersten Woche. | جمله را با «Wir sind in der» بساز.
 translations:

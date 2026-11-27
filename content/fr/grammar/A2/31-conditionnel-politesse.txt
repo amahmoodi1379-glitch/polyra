@@ -48,7 +48,7 @@ Vous [aimeriez] boire quelque chose ? | میل دارید چیزی بنوشید�
 Je [voudrais] savoir à quelle heure part le train. | می‌خواستم بدانم قطار ساعت چند حرکت می‌کند. | d: voudrait, voudriez, vouloirais | ok: voulais
 Excusez-moi, vous [pourriez] me dire où est la poste ? | ببخشید، می‌شود به من بگویید پست کجاست؟ | d: pourrais, pourrait, pouvriez | ok: pouvez | hint: (pouvoir)
 Je ne [voudrais] pas vous déranger. | نمی‌خواهم مزاحمتان بشوم. | d: voudrait, voudrions, vouloirais | ok: veux
-Ce{ce-pron} ne [serait] pas une bonne idée. | این فکر خوبی نمی‌شد. | d: serais, seraient, êtrait | hint: (être)
+Ce{ce-pron} ne [serait] pas une bonne idée. | فکر خوبی نیست. | d: serais, seraient, êtrait | hint: (être)
 Il ne [faudrait] pas oublier les billets. | نباید بلیت‌ها را فراموش کنیم. | d: faudrais, faudraient, fallerait | ok: faut
 Marie [voudrait] un thé, et moi un café. | ماری یک چای می‌خواست و من یک قهوه. | d: voudrais, voudraient, vouloirait | ok: voulait | hint: (vouloir)
 Est-ce que tu [pourrais] m'appeler{appeler} ce soir ? | می‌شود امشب به من زنگ بزنی؟ | d: pourrait, pourriez, pouvrais | ok: peux
@@ -68,14 +68,14 @@ Nous [voudrions] une table près de la fenêtre, ce [serait] possible ? | یک �
 Tu [aimerais] venir ? On [pourrait] manger ensemble. | دلت می‌خواهد بیایی؟ می‌توانیم با هم غذا بخوریم. | d: aimerait, aimeriez, aimerions / pourrais, pourriez, pouvrait | ok: voudrais, veux / peut
 Il [faudrait] partir tôt, vous [pourriez] être prêts à sept heures ? | باید زود راه بیفتیم، می‌شود ساعت هفت آماده باشید؟ | d: faudrais, faudraient, fallerait / pourrais, pourraient, pouvriez | ok: faut / pouvez
 transforms:
-Je veux un café. => Je voudrais un café. | جمله را مؤدبانه کن.
-Tu peux m'aider ? => Tu pourrais m'aider ? | جمله را مؤدبانه کن.
-Vous pouvez fermer la porte ? => Vous pourriez fermer la porte ? | جمله را مؤدبانه کن.
+Je veux un café. => Je voudrais un café. ; J'aimerais un café. | جمله را مؤدبانه کن.
+Tu peux m'aider ? => Tu pourrais m'aider ? ; Pourrais-tu m'aider ? | جمله را مؤدبانه کن.
+Vous pouvez fermer la porte ? => Vous pourriez fermer la porte ? ; Pourriez-vous fermer la porte ? | جمله را مؤدبانه کن.
 Je veux visiter Paris. => J'aimerais visiter Paris. ; J'aimerais bien visiter Paris. | با aimer بگو «دلم می‌خواهد».
 On peut aller au cinéma. => On pourrait aller au cinéma. | پیشنهاد را مؤدبانه‌تر کن.
-C'est{être} bien. => Ce serait bien. | جمله را به «خوب می‌شد» تبدیل کن.
+C'est{être} bien. => Ce serait bien. ; Ça serait bien. | جمله را به «خوب می‌شد» تبدیل کن.
 Il faut partir. => Il faudrait partir. | جمله را نرم‌تر کن.
-Nous voulons une table pour deux. => Nous voudrions une table pour deux. | جمله را مؤدبانه کن.
+Nous voulons une table pour deux. => Nous voudrions une table pour deux. ; Nous aimerions une table pour deux. | جمله را مؤدبانه کن.
 translations:
 یک قهوه می‌خواستم. => Je voudrais un café. ; J'aimerais un café. ; Je voulais un café.
 می‌شود کمکم کنید؟ => Vous pourriez m'aider ? ; Pourriez-vous m'aider ? ; Est-ce que vous pourriez m'aider ? ; Vous pouvez m'aider ? ; Pouvez-vous m'aider ? ; Est-ce que vous pouvez m'aider ?
@@ -83,5 +83,5 @@ translations:
 می‌خواستم یک اتاق رزرو کنم. => Je voudrais réserver une chambre. ; J'aimerais réserver une chambre. ; Je voulais réserver une chambre.
 می‌شود پنجره را ببندی؟ => Tu pourrais fermer la fenêtre ? ; Est-ce que tu pourrais fermer la fenêtre ? ; Pourrais-tu fermer la fenêtre ? ; Tu peux fermer la fenêtre ? ; Est-ce que tu peux fermer la fenêtre ? ; Peux-tu fermer la fenêtre ?
 نمی‌خواهم مزاحمتان بشوم. => Je ne voudrais pas vous déranger. ; Je ne veux pas vous déranger.
-لازم است نان بخریم. => Il faudrait acheter du pain. ; Il faut acheter du pain.
-ممکن است؟ => Ce serait possible ? ; Est-ce que ce{ce-pron} serait possible ? ; Ça serait possible ? ; C'est{être} possible ? ; Est-ce que c'est{être} possible ? ; Est-ce possible ?
+لازم است نان بخریم. => Il faudrait acheter du pain. ; Il faut acheter du pain. ; On doit acheter du pain. ; Nous devons acheter du pain.
+ممکن است؟ => Ce serait possible ? ; Est-ce que ce{ce-pron} serait possible ? ; Ça serait possible ? ; C'est{être} possible ? ; Est-ce que c'est{être} possible ? ; Est-ce possible ? ; Serait-ce possible ?

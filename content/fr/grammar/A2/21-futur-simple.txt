@@ -42,7 +42,7 @@ Un jour, je [visiterai] le Japon. | یک روز از ژاپن دیدن خواه�
 Ce soir, nous [dormirons] à l'hôtel. | امشب در هتل خواهیم خوابید. | d: dormirez, dormiront, dormira | hint: (dormir) | full: Nous dormirons à l'hôtel ce soir.
 Les magasins [ouvriront] à dix heures. | مغازه‌ها ساعت ده باز خواهند کرد. | d: ouvrirons, ouvrira, ouvreront
 Vous [comprendrez] bientôt. | به‌زودی خواهید فهمید. | d: comprenderez, comprendrerez, comprendrons | hint: (comprendre) | full: Bientôt, vous comprendrez.
-Elle [choisira] une robe pour la fête. | او برای جشن یک لباس انتخاب خواهد کرد. | d: choisiras, choisirai, choisiront
+Elle [choisira] une robe pour la fête. | او برای جشن یک لباس انتخاب خواهد کرد. | d: choisiras, choisirai, choisiront | full: Pour la fête, elle choisira une robe.
 Je ne [mangerai] pas de viande ce soir. | امشب گوشت نخواهم خورد. | d: mangera, mangeras, mangerons | hint: (manger) | full: Ce soir, je ne mangerai pas de viande.
 Ils ne [rentreront] pas tard. | آن‌ها دیر برنخواهند گشت. | d: rentrerons, rentrera, rentrerez | hint: (rentrer)
 Tu ne [répondras] pas ? | جواب نخواهی داد؟ | d: répondreras, réponderas, répondra
@@ -57,7 +57,7 @@ Les enfants [grandiront] vite. | بچه‌ها زود بزرگ خواهند شد
 Ma sœur [réussira] son examen. | خواهرم در امتحانش قبول خواهد شد. | d: réussiras, réussirai, réussiront | hint: (réussir)
 Ce soir, je me [coucherai] tôt. | امشب زود خواهم خوابید. | d: couchera, coucheras, coucherons | hint: (se coucher) | full: Je me coucherai tôt ce soir.
 Nous nous [reposerons] ce week-end. | این آخر هفته استراحت خواهیم کرد. | d: reposerez, reposeront, reposera | full: Ce week-end, nous nous reposerons.
-Il [boira] du thé au petit-déjeuner. | او سر صبحانه چای خواهد نوشید. | d: boivra, boirera, boiras | hint: (boire)
+Il [boira] du thé au petit-déjeuner. | او سر صبحانه چای خواهد نوشید. | d: boivra, boirera, boiras | hint: (boire) | full: Au petit-déjeuner, il boira du thé.
 Tu [sortiras] avec tes amis samedi ? | شنبه با دوستانت بیرون خواهی رفت؟ | d: sortirai, sortira, sortirez | full: Samedi, tu sortiras avec tes amis ?
 Qu'est-ce que vous [direz] à votre professeur ? | به معلمتان چه خواهید گفت؟ | d: dirons, diront, direrez | hint: (dire)
 Demain, je [finirai] mon travail et je [rentrerai] tôt. | فردا کارم را تمام خواهم کرد و زود به خانه برخواهم گشت. | d: finira, finiras, finirons / rentrera, rentreras, rentrerons | full: Je finirai mon travail demain et je rentrerai tôt.

@@ -65,7 +65,7 @@ Es [gab] keinen Bus, deshalb bin ich zu Fuß [gegangen]. | اتوبوس نبود
 [Warst] du gestern im Kurs? – Nein, ich [hatte] Fieber. | دیروز سر کلاس بودی؟ – نه، تب داشتم. | d: War, Wart, Waren / hattest, hatten, gehabt
 Am Wochenende [habe] ich viel gelesen und [war] oft im Park. | آخر هفته زیاد کتاب خواندم و اغلب در پارک بودم. | d: bin, hat, hast / warst, waren, gewesen
 Max [kam] nach Hause und [machte] das Fenster auf. | ماکس به خانه آمد و پنجره را باز کرد. | d: gekommen, kommte, kamen / gemacht, aufmachte, machten
-Gestern [habe] ich Lena [getroffen]. | دیروز لنا را دیدم. | d: bin, hat, hast / traf, getrefft, treffen | full: Ich habe gestern Lena getroffen. ; Ich habe Lena gestern getroffen.
+Gestern [habe] ich Lena [getroffen]. | دیروز لنا را دیدم. | d: bin, hat, hast / traf, getrefft, treffen | ok: habe / gesehen | full: Ich habe gestern Lena getroffen. ; Ich habe Lena gestern getroffen.
 transforms:
 Ich sah den Film. => Ich habe den Film gesehen. | جمله را برای گفتگو بنویس (Perfekt).
 Wir fuhren nach Berlin. => Wir sind nach Berlin gefahren. | جمله را برای گفتگو بنویس (Perfekt).
@@ -82,5 +82,5 @@ translations:
 مجبور بودم کار کنم. (در گفتگو) => Ich musste arbeiten. ; Ich habe arbeiten müssen.
 در هتل رستوران نبود. (در گفتگو) => Im Hotel gab es kein Restaurant. ; Es gab im Hotel kein Restaurant. ; Im Hotel hat es kein Restaurant gegeben. ; Es hat im Hotel kein Restaurant gegeben.
 ما با ماشین به هامبورگ رفتیم. (در گفتگو) => Wir sind mit dem Auto nach Hamburg gefahren. ; Mit dem Auto sind wir nach Hamburg gefahren.
-ماکس زود بیدار شد. (در داستان، با Präteritum) => Max stand früh auf.
+ماکس زود بیدار شد. (در داستان، با Präteritum) => Max stand früh auf. ; Max wachte früh auf.
 او به خانه آمد و تلویزیون دید. (در داستان، با Präteritum) => Er kam nach Hause und sah fern. ; Sie kam nach Hause und sah fern.

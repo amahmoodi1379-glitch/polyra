@@ -3,7 +3,7 @@ title: imparfait برای عادت و توصیف: quand j'étais petit…
 scope: کاربرد imparfait برای کارهایی که در گذشته عادت بود (avant، quand j'étais petit، à cette époque، souvent، d'habitude، le samedi) و برای توصیفِ گذشته: آدم‌ها، جاها، هوا و حس‌ها (il faisait froid، j'avais peur، elle était contente)، و avant … maintenant برای مقایسهٔ گذشته با حالا؛ فرق imparfait با passé composé برای یک اتفاقِ تمام‌شده در واحد بعد می‌آید.
 can_do: حالا می‌توانی از بچگی‌ات، از عادت‌های قدیمت و از هوا و حالِ یک روزِ گذشته تعریف کنی: Quand j'étais petit, je jouais dans le jardin. Il faisait froid et j'avais faim.
 rule: کاری که در گذشته بارها تکرار می‌شد (عادت) و توصیفِ گذشته (چطور بود، چه حسی داشتیم، هوا چطور بود) با imparfait گفته می‌شود: Avant, j'habitais à Chiraz. Il faisait beau. J'étais content.
-mistake: فارسی برای «زندگی می‌کردم» و «زندگی کردم» دو شکل دارد، ولی فارسی‌زبان‌ها در فرانسوی گاهی برای عادت و توصیفِ گذشته زمان حال می‌گذارند («quand j'étais petit, je joue au football») یا برای «بودم» و «داشتم» شکل‌های دیگر؛ درست: quand j'étais petit, je jouais au football؛ il faisait froid، j'avais peur. هر جا در فارسی «می‌کردم» یا «بودم» برای توصیف می‌گویی، در فرانسوی معمولاً imparfait لازم است.
+mistake: فارسی برای «زندگی می‌کردم» و «زندگی کردم» دو شکل دارد، ولی فارسی‌زبان‌ها در فرانسوی گاهی برای عادت و توصیفِ گذشته زمان حال می‌گذارند («quand j'étais petit, je joue au football») یا برای «بودم» و «داشتم» passé composé می‌گذارند («quand j'ai été petit»)؛ درست: quand j'étais petit, je jouais au football؛ il faisait froid، j'avais peur. هر جا در فارسی «می‌کردم» یا «بودم» برای توصیف می‌گویی، در فرانسوی معمولاً imparfait لازم است.
 lesson:
 imparfait زمانِ «چطور بود» و «چه کار می‌کردیم» است؛ مثل «می‌رفتم» و «بودم» در فارسی.
 ۱) عادت در گذشته: کاری که بارها انجام می‌شد: Quand j'étais petit, je jouais dans le jardin (بچه که بودم، توی باغ بازی می‌کردم).
@@ -25,43 +25,43 @@ Le samedi, nous allions chez ma grand-mère. | شنبه‌ها خانهٔ ماد
 Il faisait froid et j'avais faim. | هوا سرد بود و گرسنه بودم.
 Avant, j'habitais à Chiraz ; maintenant, j'habite à Téhéran. | قبلاً در شیراز زندگی می‌کردم؛ حالا در تهران زندگی می‌کنم.
 targets:
-Quand j'étais petit, je [jouais] souvent dans le jardin. | بچه که بودم، اغلب توی باغ بازی می‌کردم. | d: joue, jouait, jouaient | hint: (jouer)
-Quand nous habitions à Nice, nous [allions] à la plage le dimanche. | وقتی در نیس زندگی می‌کردیم، یکشنبه‌ها به ساحل می‌رفتیم. | d: allons, allaient, alliez | hint: (aller)
-À cette époque, ma mère [faisait] la cuisine chaque soir. | آن موقع، مادرم هر شب آشپزی می‌کرد. | d: fait, faisais, fesait
+Quand j'étais petit, je [jouais] souvent dans le jardin. | بچه که بودم، اغلب توی باغ بازی می‌کردم. | d: joue, jouait, jouaient | hint: (jouer) | full: Je jouais souvent dans le jardin quand j'étais petit.
+Quand nous habitions à Nice, nous [allions] à la plage le dimanche. | وقتی در نیس زندگی می‌کردیم، یکشنبه‌ها به ساحل می‌رفتیم. | d: allons, allaient, alliez | hint: (aller) | full: Nous allions à la plage le dimanche quand nous habitions à Nice.
+À cette époque, ma mère [faisait] la cuisine chaque soir. | آن موقع، مادرم هر شب آشپزی می‌کرد. | d: fait, faisais, fesait | full: Ma mère faisait la cuisine chaque soir à cette époque.
 Quand j'étais petite, le samedi, nous [regardions] un film ensemble. | بچه که بودم، شنبه‌ها با هم فیلم تماشا می‌کردیم. | d: regardons, regardiez, regardaient | hint: (regarder)
-L'année dernière, tu [prenais] le bus ou le métro ? | پارسال اتوبوس سوار می‌شدی یا مترو؟ | d: prends, prenait, prendais
-Quand vous étiez jeunes, vous [travailliez] le samedi ? | وقتی جوان بودید، شنبه‌ها کار می‌کردید؟ | d: travaillez, travaillions, travaillaient | hint: (travailler)
-À la campagne, mes grands-parents se [levaient] à cinq heures. | پدربزرگ و مادربزرگم بیرون شهر ساعت پنج بیدار می‌شدند. | d: levait, levions, lever
-Quand il était étudiant, Paul [lisait] beaucoup. | پل وقتی دانشجو بود، زیاد کتاب می‌خواند. | d: lit, lisais, lisaient | hint: (lire)
-Quand j'étais au lycée, d'habitude, je [rentrais] à pied. | وقتی دبیرستانی بودم، معمولاً پیاده به خانه برمی‌گشتم. | d: rentre, rentrait, rentré
-Quand j'étais enfant, on [mangeait] toujours ensemble. | بچه که بودم، همیشه با هم غذا می‌خوردیم. | d: mange, mangait, mangeaient | hint: (manger)
-Quand j'habitais à Paris, j'[allais] souvent au musée. | وقتی در پاریس زندگی می‌کردم، اغلب به موزه می‌رفتم. | d: allait, allaient, allé
-L'été dernier, nous [nagions] tous les jours. | تابستان گذشته هر روز شنا می‌کردیم. | d: nageons, nageions, nagiez | hint: (nager)
-À cette époque, il ne [travaillait] pas le samedi. | آن موقع، او شنبه‌ها کار نمی‌کرد. | d: travaille, travaillais, travaillé
-Quand tu étais petit, tu n'[aimais] pas les légumes ? | بچه که بودی، سبزیجات دوست نداشتی؟ | d: aimes, aimait, aimé | hint: (aimer)
+L'année dernière, tu [prenais] le bus ou le métro ? | پارسال اتوبوس سوار می‌شدی یا مترو؟ | d: prends, prenait, prendais | full: Tu prenais le bus ou le métro l'année dernière ?
+Quand vous étiez jeunes, vous [travailliez] le samedi ? | وقتی جوان بودید، شنبه‌ها کار می‌کردید؟ | d: travaillez, travaillions, travaillaient | hint: (travailler) | full: Vous travailliez le samedi quand vous étiez jeunes ?
+À la campagne, mes grands-parents se [levaient] à cinq heures. | پدربزرگ و مادربزرگم بیرون شهر ساعت پنج بیدار می‌شدند. | d: levait, levions, lever | full: Mes grands-parents se levaient à cinq heures à la campagne.
+Quand il était étudiant, Paul [lisait] beaucoup. | پل وقتی دانشجو بود، زیاد کتاب می‌خواند. | d: lit, lisais, lisaient | hint: (lire) | full: Paul lisait beaucoup quand il était étudiant.
+Quand j'étais au lycée, d'habitude, je [rentrais] à pied. | وقتی دبیرستانی بودم، معمولاً پیاده به خانه برمی‌گشتم. | d: rentre, rentrait, rentré | full: D'habitude, je rentrais à pied quand j'étais au lycée.
+Quand j'étais enfant, on [mangeait] toujours ensemble. | بچه که بودم، همیشه با هم غذا می‌خوردیم. | d: mange, mangait, mangeaient | hint: (manger) | full: On mangeait toujours ensemble quand j'étais enfant.
+Quand j'habitais à Paris, j'[allais] souvent au musée. | وقتی در پاریس زندگی می‌کردم، اغلب به موزه می‌رفتم. | d: allait, allaient, allé | full: J'allais souvent au musée quand j'habitais à Paris.
+L'été dernier, nous [nagions] tous les jours. | تابستان گذشته هر روز شنا می‌کردیم. | d: nageons, nageions, nagiez | hint: (nager) | ok: avons nagé | full: Nous nagions tous les jours l'été dernier.
+À cette époque, il ne [travaillait] pas le samedi. | آن موقع، او شنبه‌ها کار نمی‌کرد. | d: travaille, travaillais, travaillé | full: Il ne travaillait pas le samedi à cette époque.
+Quand tu étais petit, tu n'[aimais] pas les légumes ? | بچه که بودی، سبزیجات دوست نداشتی؟ | d: aimes, aimait, aimé | hint: (aimer) | full: Tu n'aimais pas les légumes quand tu étais petit ?
 Mon grand-père [était] grand et il avait les cheveux blancs. | پدربزرگم قدبلند بود و موهای سفید داشت. | d: été, étais, étaient | hint: (être)
-Quand j'étais petit, notre maison [avait] un petit jardin. | بچه که بودم، خانه‌مان یک باغچهٔ کوچک داشت. | d: a, avais, avaient
-Avant, [il y avait] beaucoup d'arbres dans notre rue. | قبلاً در خیابانمان درخت‌های زیادی بود. | d: il y avais, il y avaient, il y aviait | hint: (il y a)
+Quand j'étais petit, notre maison [avait] un petit jardin. | بچه که بودم، خانه‌مان یک باغچهٔ کوچک داشت. | d: a, avais, avaient | full: Notre maison avait un petit jardin quand j'étais petit.
+Avant, [il y avait] beaucoup d'arbres dans notre rue. | قبلاً در خیابانمان درخت‌های زیادی بود. | d: il y avais, il y avaient, il y aviait | hint: (il y a) | full: Il y avait beaucoup d'arbres dans notre rue avant.
 Mon premier professeur [était] très gentil. | معلم اولم خیلی مهربان بود. | d: étais, étaient, été
 La ville [était] calme et il n'y avait pas de bruit. | شهر آرام بود و سروصدایی نبود. | d: été, étais, étaient | hint: (être)
-Hier, il [faisait] froid et il y avait du vent. | دیروز هوا سرد بود و باد می‌آمد. | d: fait, faisais, fesait
-Hier matin, il [pleuvait] beaucoup. | دیروز صبح باران زیادی می‌آمد. | d: pleut, pleuvais, pleuvaient | hint: (pleuvoir)
-L'hiver dernier, il [neigeait] presque tous les jours. | زمستان گذشته تقریباً هر روز برف می‌آمد. | d: neige, neigait, neigeaient
+Hier, il [faisait] froid et il y avait du vent. | دیروز هوا سرد بود و باد می‌آمد. | d: fait, faisais, fesait | ok: a fait
+Hier matin, il [pleuvait] beaucoup. | دیروز صبح باران زیادی می‌آمد. | d: pleut, pleuvais, pleuvaient | hint: (pleuvoir) | ok: a plu | full: Il pleuvait beaucoup hier matin.
+L'hiver dernier, il [neigeait] presque tous les jours. | زمستان گذشته تقریباً هر روز برف می‌آمد. | d: neige, neigait, neigeaient | ok: a neigé | full: Il neigeait presque tous les jours l'hiver dernier.
 Il [faisait] beau et le ciel était bleu. | هوا خوب بود و آسمان آبی بود. | d: fesait, faisais, faisaient | hint: (faire)
-Quand j'étais petit, j'[avais] peur du chien des voisins. | بچه که بودم، از سگ همسایه‌ها می‌ترسیدم. | d: ai, avait, eu
+Quand j'étais petit, j'[avais] peur du chien des voisins. | بچه که بودم، از سگ همسایه‌ها می‌ترسیدم. | d: ai, avait, eu | full: J'avais peur du chien des voisins quand j'étais petit.
 Elle [était] triste parce que son chat était malade. | غمگین بود چون گربه‌اش مریض بود. | d: été, étais, étaient | hint: (être)
-Après le match, nous [avions] faim et soif. | بعد از مسابقه گرسنه و تشنه بودیم. | d: avaient, aviez, eu
+Après le match, nous [avions] faim et soif. | بعد از مسابقه گرسنه و تشنه بودیم. | d: avaient, aviez, eu | ok: avons eu | full: Nous avions faim et soif après le match.
 Les enfants [étaient] contents parce qu'ils étaient en vacances. | بچه‌ها خوشحال بودند چون تعطیلات بود. | d: était, étions, été | hint: (être)
-Tu [étais] malade hier ? | دیروز مریض بودی؟ | d: es, était, été
+Tu [étais] malade hier ? | دیروز مریض بودی؟ | d: es, était, été | ok: as été | full: Hier, tu étais malade ?
 J'[étais] timide et je ne parlais pas beaucoup. | خجالتی بودم و زیاد حرف نمی‌زدم. | d: était, été, étions | hint: (être)
-Quand j'étais au lycée, je [voulais] devenir pilote. | وقتی دبیرستانی بودم، می‌خواستم خلبان شوم. | d: veux, voulait, voulu
-Le dimanche, mon père [lisait] le journal dans le jardin. | یکشنبه‌ها پدرم توی باغ روزنامه می‌خواند. | d: lisais, lisaient, lu | hint: (lire)
-À cette époque, nous [vivions] dans un petit appartement. | آن موقع در یک آپارتمان کوچک زندگی می‌کردیم. | d: vivons, viviez, vivaient
+Quand j'étais au lycée, je [voulais] devenir pilote. | وقتی دبیرستانی بودم، می‌خواستم خلبان شوم. | d: veux, voulait, voulu | full: Je voulais devenir pilote quand j'étais au lycée.
+Le dimanche, mon père [lisait] le journal dans le jardin. | یکشنبه‌ها پدرم توی باغ روزنامه می‌خواند. | d: lisais, lisaient, lu | hint: (lire) | full: Mon père lisait le journal dans le jardin le dimanche.
+À cette époque, nous [vivions] dans un petit appartement. | آن موقع در یک آپارتمان کوچک زندگی می‌کردیم. | d: vivons, viviez, vivaient | full: Nous vivions dans un petit appartement à cette époque.
 Avant, j'[habitais] à Chiraz ; maintenant, j'[habite] à Téhéran. | قبلاً در شیراز زندگی می‌کردم؛ حالا در تهران زندگی می‌کنم. | d: habite, habitait, habité / habitais, habitait, habitent
 Avant, mon frère [était] timide, mais maintenant il [parle] beaucoup. | قبلاً برادرم خجالتی بود، ولی حالا زیاد حرف می‌زند. | d: est, été, étais / parlait, parlais, parlé
 Avant, nous [prenions] le bus ; maintenant, nous [avons] une voiture. | قبلاً اتوبوس سوار می‌شدیم؛ حالا ماشین داریم. | d: prenons, prenaient, prendions / avions, avaient, avez
-Quand j'[étais] petit, je [voulais] être professeur. | بچه که بودم، می‌خواستم معلم شوم. | d: été, était, êtais / veux, voulait, voulu
-Quand il [faisait] beau, nous [mangions] dans le jardin. | هر وقت هوا خوب بود، توی باغ غذا می‌خوردیم. | d: fesait, faisais, faisaient / mangeons, mangeaient, mangiez
+Quand j'[étais] petit, je [voulais] être professeur. | بچه که بودم، می‌خواستم معلم شوم. | d: été, était, êtais / veux, voulait, voulu | full: Je voulais être professeur quand j'étais petit.
+Quand il [faisait] beau, nous [mangions] dans le jardin. | هر وقت هوا خوب بود، توی باغ غذا می‌خوردیم. | d: fesait, faisais, faisaient / mangeons, mangeaient, mangiez | full: Nous mangions dans le jardin quand il faisait beau.
 Chaque été, nous [allions] chez mes grands-parents et nous [nagions] dans la rivière. | هر تابستان به خانهٔ پدربزرگ و مادربزرگم می‌رفتیم و در رودخانه شنا می‌کردیم. | d: allaient, alliez, allé / nageions, nageaient, nagiez
 Il [était] tard et les enfants [dormaient]. | دیروقت بود و بچه‌ها خواب بودند. | d: été, étais, étaient / dorment, dormait, dormi
 Le restaurant [était] petit, mais les plats [étaient] très bons. | رستوران کوچک بود، ولی غذاهایش خیلی خوب بود. | d: été, étais, étaient / été, était, étiez

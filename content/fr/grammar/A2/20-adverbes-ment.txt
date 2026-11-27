@@ -51,7 +51,7 @@ Tu veux [vraiment] partir ? | واقعاً می‌خواهی بروی؟ | d: vra
 J'ai [vraiment] aimé ce restaurant. | واقعاً از این رستوران خوشم آمد. | d: vrai, vraie, vraiement | hint: (vrai)
 Ce{ce-pron} n'est pas [vraiment] cher. | واقعاً گران نیست. | d: vrai, vraie, vraiement
 C'{ce-pron}est{être} une histoire [vraie]. | این یک داستان واقعی است. | d: vraiment, vrai, vraies
-Il est [exactement] huit heures. | ساعت دقیقاً هشت است. | d: exact, exacte, exactment
+Il est [exactement] huit heures. | ساعت دقیقاً هشت است. | d: exact, exacte, exactment | full: Il est huit heures exactement.
 Ce{ce-pron} n'est pas [exactement] la même{même-adj} chose. | دقیقاً همان چیز نیست. | d: exact, exacte, exactment
 Il est [probablement] à la maison. | احتمالاً در خانه است. | d: probable, probables, probablment
 Ils ont [probablement] oublié. | احتمالاً یادشان رفته. | d: probable, probables, probablment
@@ -60,7 +60,7 @@ Elle mange [rarement] de la viande. | او به‌ندرت گوشت می‌خو�
 Tu chantes très [bien] ! | خیلی خوب آواز می‌خوانی! | d: bon, bonne, bons | hint: (bon)
 C'{ce-pron}est{être} un très [bon] restaurant. | این رستوران خیلی خوبی است. | d: bien, bonne, bons
 Ma sœur dessine très [bien]. | خواهرم خیلی خوب نقاشی می‌کشد. | d: bon, bonne, bons | hint: (bon)
-Je dors [mal] depuis une semaine. | یک هفته است که بد می‌خوابم. | d: mauvais, mauvaise, malement | hint: (mauvais)
+Je dors [mal] depuis une semaine. | یک هفته است که بد می‌خوابم. | d: mauvais, mauvaise, malement | hint: (mauvais) | full: Depuis une semaine, je dors mal.
 C'{ce-pron}est{être} un [mauvais] film. | این فیلم بدی است. | d: mal, mauvaise, mauvaises
 Il a [mal] compris la question. | او سؤال را بد فهمید. | d: mauvais, mauvaise, malement | hint: (mauvais)
 Le train est [lent] : il roule [lentement] dans la montagne. | قطار کند است: در کوهستان آهسته حرکت می‌کند. | d: lentement, lente, lents / lent, lente, lentment

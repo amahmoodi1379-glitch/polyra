@@ -41,7 +41,7 @@ Ich [las] jeden Abend ein Buch. | هر شب یک کتاب می‌خواندم. |
 Paul [fand] seinen Schlüssel im Auto. | پاول کلیدش را در ماشین پیدا کرد. | d: findete, fanden, gefunden
 Es regnete, deshalb [blieben] wir zu Hause. | باران می‌آمد، برای همین در خانه ماندیم. | d: bleibten, blieb, geblieben | hint: (bleiben)
 Der Junge [lief] schnell zur Schule. | پسر تند به مدرسه دوید. | d: laufte, liefen, gelaufen | hint: (laufen)
-Wir [sprachen] lange mit dem Lehrer. | ما مدت زیادی با معلم حرف زدیم. | d: sprechten, sprach, gesprochen
+Wir [sprachen] lange mit dem Lehrer. | ما مدت زیادی با معلم حرف زدیم. | d: sprechten, sprach, gesprochen | ok: redeten
 Ich [traf] Max am Bahnhof. | ماکس را در ایستگاه قطار دیدم. | d: treffte, trafen, getroffen | hint: (treffen) | full: Am Bahnhof traf ich Max.
 Am Sonntag [rief] mich meine Oma an. | یکشنبه مادربزرگم به من زنگ زد. | d: anrief, rufte, riefen | hint: (anrufen) | full: Meine Oma rief mich am Sonntag an. ; Am Sonntag rief meine Oma mich an.
 Ich [stand] heute um sechs Uhr auf. | امروز ساعت شش بیدار شدم. | d: aufstand, stehte, standen | hint: (aufstehen) | full: Heute stand ich um sechs Uhr auf.
@@ -62,7 +62,7 @@ Ihr [kamt] zu{zu-adv} spät zum Kurs. | شما دیر به کلاس آمدید. 
 Ich [stand] früh auf. Dann [ging] ich zur Arbeit. | زود بیدار شدم. بعد سر کار رفتم. | d: aufstand, stehte, standen / gehte, gingen, gegangen
 Wir [fuhren] nach Wien und [sahen] viele Museen. | به وین رفتیم و موزه‌های زیادی دیدیم. | d: fahrten, fuhr, fuhrt / sehten, sah, saht
 Max [kam] nach Hause und [aß] eine Pizza. | ماکس به خانه آمد و یک پیتزا خورد. | d: kommte, kamen, kamst / esste, aßen, aßt
-Ich [rief] Lena an, und wir [sprachen] lange. | به لنا زنگ زدم و مدت زیادی حرف زدیم. | d: anrief, rufte, riefen / sprechten, sprach, gesprochen
+Ich [rief] Lena an, und wir [sprachen] lange. | به لنا زنگ زدم و مدت زیادی حرف زدیم. | d: anrief, rufte, riefen / sprechten, sprach, gesprochen | ok: rief / redeten
 Anna [brachte] einen Kuchen und wir [tranken] Tee. | آنا یک کیک آورد و ما چای نوشیدیم. | d: bringte, brachten, brachtest / trinkten, trank, getrunken
 Der Zug [kam] um zehn Uhr an, und wir [stiegen] aus. | قطار ساعت ده رسید و ما پیاده شدیم. | d: ankam, kommte, kamen / ausstiegen, steigten, stieg
 [Fandet] ihr den Film gut? – Ja, wir [fanden] ihn sehr gut. | فیلم به نظرتان خوب بود؟ – بله، به نظرمان خیلی خوب بود. | d: Findetet, Fand, Fandest / findeten, fand, gefunden
@@ -82,6 +82,6 @@ translations:
 ما پیتزا خوردیم. (با Präteritum) => Wir aßen Pizza. ; Wir aßen eine Pizza.
 لنا را در پارک دیدم. (با Präteritum) => Ich sah Lena im Park. ; Im Park sah ich Lena. ; Ich traf Lena im Park. ; Im Park traf ich Lena.
 کلاس شروع شد. (با Präteritum) => Der Kurs fing an. ; Der Kurs begann. ; Der Unterricht fing an. ; Der Unterricht begann.
-نمی‌دانستم. (با Präteritum) => Ich wusste es nicht. ; Ich wusste das nicht.
+نمی‌دانستم. (با Präteritum) => Ich wusste es nicht. ; Ich wusste das nicht. ; Das wusste ich nicht.
 او به من کمک کرد. (با Präteritum) => Er half mir. ; Sie half mir.
 فکر کردم تو خانه‌ای. (با Präteritum) => Ich dachte, du bist zu Hause. ; Ich dachte, dass du zu Hause bist.

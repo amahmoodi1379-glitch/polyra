@@ -24,46 +24,46 @@ Il faisait beau, alors nous sommes sortis. | هوا خوب بود، پس بیر�
 Quand je suis{être} arrivé, les enfants dormaient. | وقتی رسیدم، بچه‌ها خواب بودند.
 Je dormais et tout à coup, le téléphone a sonné. | خواب بودم و ناگهان تلفن زنگ زد.
 targets:
-Je [regardais] la télé quand Paul a téléphoné. | داشتم تلویزیون تماشا می‌کردم که پل زنگ زد. | d: regardé, regardait, regardaient | hint: (regarder)
-Quand je suis{être} arrivé, les enfants [dormaient]. | وقتی رسیدم، بچه‌ها خواب بودند. | d: dormi, dormait, dormions | hint: (dormir)
-Il [pleuvait] quand nous sommes sortis. | وقتی بیرون رفتیم، باران می‌آمد. | d: plu, pleuvais, pleuvaient | hint: (pleuvoir)
-Nous [mangions] quand le téléphone a sonné. | داشتیم غذا می‌خوردیم که تلفن زنگ زد. | d: mangé, mangeions, mangeaient
-Tu [dormais] quand j'ai téléphoné ? | وقتی زنگ زدم خواب بودی؟ | d: dormi, dormait, dormiez | hint: (dormir)
+Je [regardais] la télé quand Paul a téléphoné. | داشتم تلویزیون تماشا می‌کردم که پل زنگ زد. | d: regardé, regardait, regardaient | hint: (regarder) | full: Quand Paul a téléphoné, je regardais la télé.
+Quand je suis{être} arrivé, les enfants [dormaient]. | وقتی رسیدم، بچه‌ها خواب بودند. | d: dormi, dormait, dormions | hint: (dormir) | full: Les enfants dormaient quand je suis arrivé.
+Il [pleuvait] quand nous sommes sortis. | وقتی بیرون رفتیم، باران می‌آمد. | d: plu, pleuvais, pleuvaient | hint: (pleuvoir) | full: Quand nous sommes sortis, il pleuvait.
+Nous [mangions] quand le téléphone a sonné. | داشتیم غذا می‌خوردیم که تلفن زنگ زد. | d: mangé, mangeions, mangeaient | full: Quand le téléphone a sonné, nous mangions.
+Tu [dormais] quand j'ai téléphoné ? | وقتی زنگ زدم خواب بودی؟ | d: dormi, dormait, dormiez | hint: (dormir) | full: Quand j'ai téléphoné, tu dormais ?
 Il [faisait] beau, alors nous sommes allés au parc. | هوا خوب بود، پس به پارک رفتیم. | d: fesait, faisais, faisaient
 J'[étais] fatigué, alors je suis{être} rentré. | خسته بودم، پس به خانه برگشتم. | d: été, était, êtais | hint: (être)
-Les rues [étaient] vides quand je suis{être} sorti. | وقتی بیرون رفتم، خیابان‌ها خالی بودند. | d: était, été, étions
-Vous [attendiez] le bus quand l'accident est arrivé ? | وقتی تصادف شد، منتظر اتوبوس بودید؟ | d: attendu, attendait, attendions | hint: (attendre)
-Mon père [travaillait] dans le jardin quand le facteur est arrivé. | پدرم داشت توی باغ کار می‌کرد که نامه‌رسان رسید. | d: travaillé, travaillais, travaillaient
-On [était] à table quand Paul est arrivé. | سر میز بودیم که پل رسید. | d: été, étions, étais | hint: (être)
-Les enfants [jouaient] dans le parc quand Léa est tombée. | بچه‌ها داشتند توی پارک بازی می‌کردند که لئا زمین خورد. | d: joué, jouait, jouions
-Quand je me suis{être} réveillé, il [neigeait]. | وقتی بیدار شدم، برف می‌آمد. | d: neigé, neigait, neigeaient | hint: (neiger)
-Léa [avait] dix ans quand elle est venue en France. | لئا ده‌ساله بود که به فرانسه آمد. | d: eu, avais, avaient
-Mes amis [attendaient] devant le cinéma quand je suis{être} arrivé. | وقتی رسیدم، دوستانم جلوی سینما منتظر بودند. | d: attendu, attendait, attendions | hint: (attendre)
-Quand nous sommes arrivés, [il y avait] beaucoup de gens. | وقتی رسیدیم، آدم زیادی آنجا بود. | d: il y avaient, il y avais, il y eu
+Les rues [étaient] vides quand je suis{être} sorti. | وقتی بیرون رفتم، خیابان‌ها خالی بودند. | d: était, été, étions | full: Quand je suis sorti, les rues étaient vides.
+Vous [attendiez] le bus quand l'accident est arrivé ? | وقتی تصادف شد، منتظر اتوبوس بودید؟ | d: attendu, attendait, attendions | hint: (attendre) | full: Quand l'accident est arrivé, vous attendiez le bus ?
+Mon père [travaillait] dans le jardin quand le facteur est arrivé. | پدرم داشت توی باغ کار می‌کرد که نامه‌رسان رسید. | d: travaillé, travaillais, travaillaient | full: Quand le facteur est arrivé, mon père travaillait dans le jardin.
+On [était] à table quand Paul est arrivé. | سر میز بودیم که پل رسید. | d: été, étions, étais | hint: (être) | full: Quand Paul est arrivé, on était à table.
+Les enfants [jouaient] dans le parc quand Léa est tombée. | بچه‌ها داشتند توی پارک بازی می‌کردند که لئا زمین خورد. | d: joué, jouait, jouions | full: Quand Léa est tombée, les enfants jouaient dans le parc.
+Quand je me suis{être} réveillé, il [neigeait]. | وقتی بیدار شدم، برف می‌آمد. | d: neigé, neigait, neigeaient | hint: (neiger) | full: Il neigeait quand je me suis réveillé.
+Léa [avait] dix ans quand elle est venue en France. | لئا ده‌ساله بود که به فرانسه آمد. | d: eu, avais, avaient | full: Quand elle est venue en France, Léa avait dix ans.
+Mes amis [attendaient] devant le cinéma quand je suis{être} arrivé. | وقتی رسیدم، دوستانم جلوی سینما منتظر بودند. | d: attendu, attendait, attendions | hint: (attendre) | full: Quand je suis arrivé, mes amis attendaient devant le cinéma.
+Quand nous sommes arrivés, [il y avait] beaucoup de gens. | وقتی رسیدیم، آدم زیادی آنجا بود. | d: il y avaient, il y avais, il y eu | full: Il y avait beaucoup de gens quand nous sommes arrivés.
 Les magasins [étaient] fermés{fermé}, alors nous sommes rentrés. | مغازه‌ها بسته بودند، پس برگشتیم. | d: été, était, étions | hint: (être)
-Je dormais quand le téléphone [a sonné]. | خواب بودم که تلفن زنگ زد. | d: sonné, a sonner, ai sonné | hint: (sonner)
-Nous regardions un film quand Paul [est arrivé]. | داشتیم فیلم تماشا می‌کردیم که پل رسید. | d: a arrivé, arrivé, sommes arrivés
+Je dormais quand le téléphone [a sonné]. | خواب بودم که تلفن زنگ زد. | d: sonné, a sonner, ai sonné | hint: (sonner) | full: Quand le téléphone a sonné, je dormais.
+Nous regardions un film quand Paul [est arrivé]. | داشتیم فیلم تماشا می‌کردیم که پل رسید. | d: a arrivé, arrivé, sommes arrivés | full: Quand Paul est arrivé, nous regardions un film.
 Il pleuvait, alors nous [sommes restés] à la maison. | باران می‌آمد، پس در خانه ماندیم. | d: avons restés, restés, sommes rester | ok: sommes restées | hint: (rester)
 J'étais malade, alors je [suis{être} allé] chez le médecin. | مریض بودم، پس پیش دکتر رفتم. | d: ai allé, allé, suis aller | ok: suis allée
 Il faisait froid, alors Marie [a mis] son manteau. | هوا سرد بود، پس ماری پالتویش را پوشید. | d: mis, a mettre, a mettait | hint: (mettre)
-Quand je suis{être} entré, tout le monde [a dit] bonjour. | وقتی وارد شدم، همه سلام کردند. | d: dit, ont dit, a dire
+Quand je suis{être} entré, tout le monde [a dit] bonjour. | وقتی وارد شدم، همه سلام کردند. | d: dit, ont dit, a dire | full: Tout le monde a dit bonjour quand je suis entré.
 Il était tard, alors les enfants [sont partis]. | دیروقت بود، پس بچه‌ها رفتند. | d: ont partis, partis, sont partir | hint: (partir)
-Nous marchions dans la rue quand nous [avons vu] Sophie. | داشتیم توی خیابان راه می‌رفتیم که سوفی را دیدیم. | d: vu, avons voir, avez vu
+Nous marchions dans la rue quand nous [avons vu] Sophie. | داشتیم توی خیابان راه می‌رفتیم که سوفی را دیدیم. | d: vu, avons voir, avez vu | full: Quand nous avons vu Sophie, nous marchions dans la rue.
 Il faisait trop chaud, alors nous [avons ouvert] la fenêtre. | هوا زیادی گرم بود، پس پنجره را باز کردیم. | d: ouvert, avons ouvrir, avez ouvert | hint: (ouvrir)
-Tu dormais quand Paul [est parti] ? | وقتی پل رفت، خواب بودی؟ | d: a parti, parti, es parti
-Nous parlions de toi quand tu [es entré] ! | داشتیم درباره‌ات حرف می‌زدیم که وارد شدی! | d: as entré, entré, est entré | ok: es entrée | hint: (entrer)
-Il faisait nuit quand le train [est arrivé]. | هوا تاریک بود که قطار رسید. | d: a arrivé, arrivé, est arriver
+Tu dormais quand Paul [est parti] ? | وقتی پل رفت، خواب بودی؟ | d: a parti, parti, es parti | full: Quand Paul est parti, tu dormais ?
+Nous parlions de toi quand tu [es entré] ! | داشتیم درباره‌ات حرف می‌زدیم که وارد شدی! | d: as entré, entré, est entré | ok: es entrée | hint: (entrer) | full: Quand tu es entré, nous parlions de toi !
+Il faisait nuit quand le train [est arrivé]. | هوا تاریک بود که قطار رسید. | d: a arrivé, arrivé, est arriver | full: Quand le train est arrivé, il faisait nuit.
 Le bébé pleurait, alors sa mère l'[a pris] dans ses bras. | نوزاد گریه می‌کرد، پس مادرش او را بغل کرد. | d: a prendre, a prenait, ai pris | hint: (prendre)
-Je [regardais] la télé quand mon frère [est rentré]. | داشتم تلویزیون تماشا می‌کردم که برادرم به خانه برگشت. | d: regardé, regardait, regardaient / rentré, est rentrer, sont rentrés
+Je [regardais] la télé quand mon frère [est rentré]. | داشتم تلویزیون تماشا می‌کردم که برادرم به خانه برگشت. | d: regardé, regardait, regardaient / rentré, est rentrer, sont rentrés | full: Quand mon frère est rentré, je regardais la télé.
 Il [faisait] beau, alors nous [sommes allés] à la plage. | هوا خوب بود، پس به ساحل رفتیم. | d: fesait, faisais, faisaient / avons allés, allés, sommes aller | ok: faisait / sommes allées
-Quand je [suis{être} arrivé], Marie [dormait]. | وقتی رسیدم، ماری خواب بود. | d: ai arrivé, arrivé, suis arriver / dormi, dormais, dormaient | ok: suis arrivée / dormait
+Quand je [suis{être} arrivé], Marie [dormait]. | وقتی رسیدم، ماری خواب بود. | d: ai arrivé, arrivé, suis arriver / dormi, dormais, dormaient | ok: suis arrivée / dormait | full: Marie dormait quand je suis arrivé.
 J'[avais] faim, alors [j'ai mangé] une pomme. | گرسنه بودم، پس یک سیب خوردم. | d: avait, avaient, eu / je mangé, j'ai manger, j'ai mangeais
 Il [pleuvait] et tout à coup, le soleil [est sorti]. | باران می‌آمد و ناگهان خورشید بیرون آمد. | d: plu, pleuvais, pleuvaient / sorti, est sortir, sont sortis
-Quand Paul [a téléphoné], j'[étais] sous la douche. | وقتی پل زنگ زد، زیر دوش بودم. | d: téléphoné, a téléphoner, ai téléphoné / été, était, êtais
-Nous [étions] fatigués, alors nous [sommes rentrés]. | خسته بودیم، پس به خانه برگشتیم. | d: été, étaient, étiez / avons rentrés, rentrés, sommes rentrer | ok: étions / sommes rentrées
-Elle [lisait] dans sa chambre quand sa mère [est entrée]. | داشت توی اتاقش کتاب می‌خواند که مادرش وارد شد. | d: lu, lisais, lisaient / entrée, est entré, est entrer
-Quand nous [sommes sortis], il [neigeait]. | وقتی بیرون رفتیم، برف می‌آمد. | d: avons sortis, sortis, sommes sortir / neigé, neigait, neigeaient | ok: sommes sorties / neigeait
-J'[étais] dans le bus quand j'[ai vu] mon professeur. | توی اتوبوس بودم که معلمم را دیدم. | d: été, était, êtais / ai voir, ai vus, ai voyais
+Quand Paul [a téléphoné], j'[étais] sous la douche. | وقتی پل زنگ زد، زیر دوش بودم. | d: téléphoné, a téléphoner, ai téléphoné / été, était, êtais | full: J'étais sous la douche quand Paul a téléphoné.
+Nous [étions] fatigués, alors nous [sommes rentrés]. | خسته بودیم، پس به خانه برگشتیم. | d: été, étaient, étiez / avons rentrés, rentrés, sommes rentrer
+Elle [lisait] dans sa chambre quand sa mère [est entrée]. | داشت توی اتاقش کتاب می‌خواند که مادرش وارد شد. | d: lu, lisais, lisaient / entrée, est entré, est entrer | full: Quand sa mère est entrée, elle lisait dans sa chambre.
+Quand nous [sommes sortis], il [neigeait]. | وقتی بیرون رفتیم، برف می‌آمد. | d: avons sortis, sortis, sommes sortir / neigé, neigait, neigeaient | ok: sommes sorties / neigeait | full: Il neigeait quand nous sommes sortis.
+J'[étais] dans le bus quand j'[ai vu] mon professeur. | توی اتوبوس بودم که معلمم را دیدم. | d: été, était, êtais / ai voir, ai vus, ai voyais | full: Quand j'ai vu mon professeur, j'étais dans le bus.
 transforms:
 Je regarde la télé quand Paul téléphone. => Je regardais la télé quand Paul a téléphoné. | جمله را به گذشته ببر: کارِ در جریان با imparfait، اتفاق با passé composé.
 Il fait beau, alors nous sortons. => Il faisait beau, alors nous sommes sortis. ; Il faisait beau, alors nous sommes sorties. | جمله را به گذشته ببر: پس‌زمینه با imparfait، کار با passé composé.
@@ -74,11 +74,11 @@ Il est fatigué, alors il rentre. => Il était fatigué, alors il est rentré. |
 Quand Marie entre, nous mangeons. => Quand Marie est entrée, nous mangions. | جمله را به گذشته ببر: اتفاق با passé composé، کارِ در جریان با imparfait.
 Il fait froid, alors je mets mon manteau. => Il faisait froid, alors j'ai mis mon manteau. | جمله را به گذشته ببر: پس‌زمینه با imparfait، کار با passé composé.
 translations:
-داشتم تلویزیون تماشا می‌کردم که پل زنگ زد. => Je regardais la télé quand Paul a téléphoné. ; Je regardais la télévision quand Paul a téléphoné. ; Je regardais la télé quand Paul a appelé. ; Je regardais la télévision quand Paul a appelé.
+داشتم تلویزیون تماشا می‌کردم که پل زنگ زد. => Je regardais la télé quand Paul a téléphoné. ; Je regardais la télévision quand Paul a téléphoné. ; Je regardais la télé quand Paul a appelé. ; Je regardais la télévision quand Paul a appelé. ; Quand Paul a téléphoné, je regardais la télé. ; Quand Paul a appelé, je regardais la télé.
 وقتی رسیدم، بچه‌ها خواب بودند. => Quand je suis{être} arrivé, les enfants dormaient. ; Quand je suis{être} arrivée, les enfants dormaient. ; Les enfants dormaient quand je suis{être} arrivé. ; Les enfants dormaient quand je suis{être} arrivée.
-خواب بودم که تلفن زنگ زد. => Je dormais quand le téléphone a sonné.
+خواب بودم که تلفن زنگ زد. => Je dormais quand le téléphone a sonné. ; Quand le téléphone a sonné, je dormais.
 پل وارد شد. ما داشتیم غذا می‌خوردیم. => Paul est entré. Nous mangions. ; Paul est entré. On mangeait.
 وقتی ماری زنگ زد، من سر کار بودم. => Quand Marie a téléphoné, j'étais au travail. ; Quand Marie a appelé, j'étais au travail. ; J'étais au travail quand Marie a téléphoné. ; J'étais au travail quand Marie a appelé.
-داشتم کتاب می‌خواندم که مادرم آمد. => Je lisais quand ma mère est arrivée. ; Je lisais un livre quand ma mère est arrivée. ; Je lisais quand ma mère est venue. ; Je lisais un livre quand ma mère est venue.
+داشتم کتاب می‌خواندم که مادرم آمد. => Je lisais quand ma mère est arrivée. ; Je lisais un livre quand ma mère est arrivée. ; Je lisais quand ma mère est venue. ; Je lisais un livre quand ma mère est venue. ; Quand ma mère est arrivée, je lisais. ; Quand ma mère est venue, je lisais.
 وقتی بیرون آمدم، برف می‌آمد. => Quand je suis{être} sorti, il neigeait. ; Quand je suis{être} sortie, il neigeait. ; Il neigeait quand je suis{être} sorti. ; Il neigeait quand je suis{être} sortie.
 دیروز پل را دیدم. خسته بود. => Hier, j'ai vu Paul. Il était fatigué. ; J'ai vu Paul hier. Il était fatigué.

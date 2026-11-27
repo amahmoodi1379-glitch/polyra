@@ -10,7 +10,7 @@ lesson:
 سه شکل بی‌قاعده را حفظ کن: gut ← besser، viel ← mehr، gern ← lieber (Ich trinke lieber Tee. یعنی «چای را بیشتر دوست دارم»).
 
 «از» در مقایسه als است، نه von: Max ist älter als Anna.
-بعد از als و wie ضمیر فاعلی می‌آید: Er ist älter als ich. Du bist so groß wie er.
+وقتی فاعل‌ها را مقایسه می‌کنیم، بعد از als و wie ضمیر فاعلی می‌آید: Er ist älter als ich. Du bist so groß wie er.
 برای «به اندازه» so … wie می‌گوییم: Anna ist so groß wie Max. و برای «نه به اندازه» nicht so … wie: Der Bus ist nicht so schnell wie der Zug.
 اگر صفت مقایسه‌ای پیش از اسم بیاید، پایان معمولی صفت را هم می‌گیرد: eine größere Wohnung، ein billigeres Handy.
 table:
@@ -47,7 +47,7 @@ Der Bus ist nicht so schnell [wie] der Zug. | اتوبوس به سرعت قطا�
 Er ist größer als [ich]. | او از من قدبلندتر است. | d: mich, mir, mein
 Ich bin nicht so alt wie [du]. | من به سن تو نیستم. | d: dich, dir, dein
 Im Sommer sind die Tage [länger]. | در تابستان روزها بلندترند. | d: langer, langere, mehr lang | hint: (lang) | full: Die Tage sind im Sommer länger.
-Mathe ist [schwerer] als Deutsch. | ریاضی از آلمانی سخت‌تر است. | d: schwer, mehr schwer, schwerere | hint: (schwer)
+Mathe ist [schwerer] als Deutsch. | ریاضی از آلمانی سخت‌تر است. | d: schwer, mehr schwer, schwerere | ok: schwieriger | hint: (schwer)
 Mein Zimmer ist [kleiner] als dein Zimmer. | اتاق من از اتاق تو کوچک‌تر است. | d: klein, kleinerer, mehr klein | hint: (klein)
 Kannst du [langsamer] sprechen? | می‌توانی آهسته‌تر صحبت کنی؟ | d: mehr langsam, langsamere, langsamerer | hint: (langsam)
 Wer läuft [schneller], du oder Max? | کی سریع‌تر می‌دود، تو یا ماکس؟ | d: mehr schnell, schnellere, schnellst
@@ -56,11 +56,11 @@ Am Wochenende schlafe ich [länger]. | آخر هفته بیشتر می‌خوا�
 Bei dir ist es [ruhiger] als bei mir. | خانه تو از خانه من آرام‌تر است. | d: ruhig, mehr ruhig, ruhigere | hint: (ruhig) | full: Es ist bei dir ruhiger als bei mir.
 Meine Schwester spricht [besser] Englisch als ich. | خواهرم از من بهتر انگلیسی حرف می‌زند. | d: guter, gut, mehr gut | full: Meine Schwester spricht Englisch besser als ich.
 Wir suchen eine [größere] Wohnung. | ما دنبال یک آپارتمان بزرگ‌تر می‌گردیم. | d: größer, größeren, größerer | hint: (groß)
-Haben Sie ein [billigeres] Handy? | گوشی ارزان‌تری دارید؟ | d: billiger, billigere, billigeren | hint: (billig)
+Haben Sie ein [billigeres] Handy? | گوشی ارزان‌تری دارید؟ | d: billiger, billigere, billigeren | ok: günstigeres | hint: (billig)
 Im Zug ist es [wärmer] als draußen. | داخل قطار از بیرون گرم‌تر است. | d: warmer, mehr warm, warm | hint: (warm) | full: Es ist im Zug wärmer als draußen.
-Der Rock ist zu{zu-adv} kurz. Haben Sie einen [längeren]? | این دامن خیلی کوتاه است. بلندترش را دارید؟ | d: länger, längere, längerer
+Der Rock ist zu{zu-adv} kurz. Haben Sie einen [längeren]? | این دامن زیادی کوتاه است. یکی بلندتر دارید؟ | d: länger, längere, längerer
 Meine Oma kocht [besser] als jedes Restaurant. | مادربزرگم از هر رستورانی بهتر آشپزی می‌کند. | d: guter, gut, mehr gut | hint: (gut)
-Mein Vater arbeitet [mehr] als ich. | پدرم بیشتر از من کار می‌کند. | d: viel, vieler, mehrer
+Mein Vater arbeitet [mehr] als ich. | پدرم بیشتر از من کار می‌کند. | d: viel, vieler, mehrer | hint: (viel)
 Mit dem Fahrrad bin ich [schneller] als mit dem Bus. | با دوچرخه از اتوبوس سریع‌ترم. | d: schnell, mehr schnell, schnellere | full: Ich bin mit dem Fahrrad schneller als mit dem Bus.
 Mein Bruder ist [stärker] als ich. | برادرم از من قوی‌تر است. | d: starker, stark, mehr stark | hint: (stark)
 Dieser Weg ist [kürzer] als der andere. | این راه از آن یکی کوتاه‌تر است. | d: kurzer, kurz, mehr kurz | hint: (kurz)
@@ -69,7 +69,7 @@ Paul ist [größer] [als] sein Bruder. | پاول از برادرش قدبلند
 Im Winter sind die Tage [kürzer] und [kälter]. | در زمستان روزها کوتاه‌تر و سردترند. | d: kurzer, mehr kurz, kurze / kalter, mehr kalt, kalte | full: Die Tage sind im Winter kürzer und kälter.
 Ich trinke [lieber] Wasser [als] Cola. | آب را به نوشابه ترجیح می‌دهم. | d: gerner, mehr gern, lieb / von, aus, dann
 Lena ist so [alt] wie [ich]. | لنا هم‌سن من است. | d: älter, alter, ältere / mich, mir, mein
-Der Bus ist nicht so [schnell] wie die U-Bahn, aber er ist [billiger]. | اتوبوس به سرعت مترو نیست، ولی ارزان‌تر است. | d: schneller, schnelle, schnellste / billige, mehr billig, billigere
+Der Bus ist nicht so [schnell] wie die U-Bahn, aber er ist [billiger]. | اتوبوس به سرعت مترو نیست، ولی ارزان‌تر است. | d: schneller, schnelle, schnellste / billige, mehr billig, billigere | ok: schnell / günstiger
 Mein Opa ist [älter] als meine Oma, aber er ist [gesünder]. | پدربزرگم از مادربزرگم پیرتر است، ولی سالم‌تر است. | d: alter, mehr alt, ältere / mehr gesund, gesündere, gesündeste | ok: älter / gesunder
 Ich bin [jünger] als meine Schwester, aber [größer] als sie. | من از خواهرم کوچک‌ترم، ولی از او قدبلندترم. | d: junger, mehr jung, jüngste / großer, mehr groß, größte
 Heute habe ich [mehr] Zeit [als] gestern. | امروز از دیروز وقت بیشتری دارم. | d: viel, vieler, mehrer / von, aus, dann | full: Ich habe heute mehr Zeit als gestern.
@@ -80,13 +80,13 @@ Der Tee ist gut. => Der Tee ist besser als der Kaffee. | چای را با der Ka
 Ich trinke gern Tee. => Ich trinke lieber Tee. | gern را به شکل مقایسه‌ای ببر.
 Anna ist so groß wie Max. => Anna ist nicht so groß wie Max. | جمله را منفی کن.
 Ich habe viel Zeit. => Ich habe mehr Zeit als du. | خودت را با du مقایسه کن (als).
-Heute ist es kalt. => Heute ist es kälter als gestern. | امروز را با gestern مقایسه کن (als).
+Heute ist es kalt. => Heute ist es kälter als gestern. ; Es ist heute kälter als gestern. | امروز را با gestern مقایسه کن (als).
 Lena ist jung. => Lena ist jünger als ihr{ihr-det} Bruder. | لنا را با ihr Bruder مقایسه کن (als).
 translations:
 برادرم از من بزرگ‌تر است. => Mein Bruder ist älter als ich. ; Mein Bruder ist größer als ich.
 ماشین از دوچرخه سریع‌تر است. => Das Auto ist schneller als das Fahrrad. ; Ein Auto ist schneller als ein Fahrrad.
-من چای را بیشتر دوست دارم. => Ich mag Tee lieber. ; Ich trinke lieber Tee. ; Ich mag lieber Tee. ; Ich mag Tee mehr. ; Tee mag ich lieber.
-امروز از دیروز گرم‌تر است. => Heute ist es wärmer als gestern. ; Es ist heute wärmer als gestern.
+من چای را بیشتر دوست دارم. => Ich mag Tee lieber. ; Ich trinke lieber Tee. ; Ich mag lieber Tee. ; Ich mag Tee mehr. ; Tee mag ich lieber. ; Ich trinke Tee lieber. ; Tee trinke ich lieber.
+امروز از دیروز گرم‌تر است. => Heute ist es wärmer als gestern. ; Es ist heute wärmer als gestern. ; Heute ist es heißer als gestern. ; Es ist heute heißer als gestern.
 آنا هم‌قد ماکس است. => Anna ist so groß wie Max. ; Anna und Max sind gleich{gleich-adj} groß.
 کتاب از فیلم بهتر است. => Das Buch ist besser als der Film.
 من به اندازه تو وقت ندارم. => Ich habe nicht so viel Zeit wie du. ; Ich habe weniger Zeit als du.

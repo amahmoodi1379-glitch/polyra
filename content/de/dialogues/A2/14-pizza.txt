@@ -18,10 +18,10 @@ B: Nein, sie ist nicht scharf. Möchten Sie auch etwas trinken? | نه، تند 
 + Ja, eine Flasche Mineralwasser, bitte{bitte}. | بله، یک بطری آب معدنی، لطفاً.
 why: وقتی چیزی می‌خواهی «Ja» می‌گویی، نه «Nein, danke». Flasche مؤنث است: «eine Flasche».
 B: Gut. Und wohin bringen wir das Essen? | خوب. غذا را کجا بیاوریم؟
-- Im Hotel Weber, bitte{bitte}. Zimmer zwölf. | در هتل وبر، لطفاً. اتاق دوازده.
+- Nach Hotel Weber, bitte{bitte}. Zimmer zwölf. | به هتل وبر، لطفاً. اتاق دوازده.
 + Ins Hotel Weber, bitte{bitte}. Zimmer zwölf. | به هتل وبر، لطفاً. اتاق دوازده.
 - Aus dem Hotel Weber, bitte{bitte}. Zimmer zwölf. | از هتل وبر، لطفاً. اتاق دوازده.
-why: «Wohin?» مقصد را می‌پرسد، پس ins می‌آید (in + das)، نه im. aus یعنی «از».
+why: «Wohin?» مقصد را می‌پرسد و برای رفتن به یک ساختمان ins (in + das) می‌آید؛ nach برای شهر و کشور است و aus یعنی «از».
 B: Alles klar. Das dauert ungefähr vierzig Minuten. | باشه. حدود چهل دقیقه طول می‌کشد.
 + Gut. Was kostet das zusammen? | خوب. روی هم چقدر می‌شود؟
 - Gut. Was kosten das zusammen? | خوب. روی هم چقدر می‌شود؟

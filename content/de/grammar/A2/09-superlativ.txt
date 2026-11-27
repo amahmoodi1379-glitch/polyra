@@ -3,11 +3,11 @@ title: «‌ترین»: am schnellsten، der größte
 scope: Superlativ با am + -sten بعد از فعل و بعد از sein (am schnellsten، am ältesten، am besten، am liebsten، am meisten)، با -esten بعد از d، t، s، ß و z (am ältesten، am kürzesten)، با Umlaut و شکل‌های بی‌قاعده مثل Komparativ، و der/die/das + -ste پیش از اسم فقط در حالت فاعلی (der größte Berg، die beste Pizza، die besten Schüler)؛ Superlativ پیش از اسم در حالت‌های دیگر در سطح‌های بعد می‌آید.
 can_do: حالا می‌توانی بگویی چه چیزی از همه بهتر، بزرگ‌تر یا دوست‌داشتنی‌تر است: «Ich trinke am liebsten Tee»، «Das ist der höchste Berg».
 rule: بعد از فعل: am + صفت + -sten (Max läuft am schnellsten). پیش از اسم: der/die/das + صفت + -ste (der schnellste Zug، die beste Pizza)، جمع -sten (die besten Schüler). بی‌قاعده: gut ← am besten، viel ← am meisten، gern ← am liebsten.
-mistake: فارسی «‌ترین» را فقط پیش از اسم می‌گذارد و برای بعد از فعل «از همه …‌تر» می‌گوید؛ فارسی‌زبان‌ها am را بی -n می‌گذارند یا mehr و meisten را جلوی صفت می‌آورند: «Max läuft am schnellste» و «am meisten schnell» غلط است؛ درست: am schnellsten. «am gutesten» هم غلط است؛ درست: am besten.
+mistake: فارسی «‌ترین» را فقط پیش از اسم می‌گذارد و برای بعد از فعل «از همه …‌تر» می‌گوید؛ فارسی‌زبان‌ها صفت بعد از am را بی -n می‌گذارند یا mehr و meisten را جلوی صفت می‌آورند: «Max läuft am schnellste» و «am meisten schnell» غلط است؛ درست: am schnellsten. «am gutesten» هم غلط است؛ درست: am besten.
 lesson:
 Superlativ یعنی «‌ترین» یا «از همه …‌تر». آلمانی دو شکل برایش دارد.
 بعد از فعل (و معمولاً بعد از sein) شکل am + صفت + -sten می‌آید: Max läuft am schnellsten. (ماکس از همه سریع‌تر می‌دود.) Im August ist es am heißesten.
-اگر صفت به d، t، s، ß یا z ختم شود، یک e اضافه می‌شود: alt ← am ältesten، kurz ← am kürzesten، heiß ← am heißesten. (فقط groß ← am größten.)
+اگر صفت به d، t، s، ß یا z ختم شود، معمولاً یک e اضافه می‌شود: alt ← am ältesten، kurz ← am kürzesten، heiß ← am heißesten. (فقط groß ← am größten.)
 
 Umlaut و شکل‌های بی‌قاعده مثل Komparativ‌اند: jung ← am jüngsten، hoch ← am höchsten، gut ← am besten، viel ← am meisten، gern ← am liebsten.
 پیش از اسم der/die/das + صفت + -ste می‌آید و پایانش همان پایان واحد ۴ است: der höchste Berg، die beste Pizza، das schönste Haus؛ در جمع -en: die besten Schüler.
@@ -34,25 +34,25 @@ Max läuft am [schnellsten]. | ماکس از همه سریع‌تر می‌دو�
 Wer ist am [ältesten] in deiner{dein} Familie? | در خانواده‌ات چه کسی از همه بزرگ‌تر است؟ | d: älteste, ältsten, älter | hint: (alt) | full: Wer ist in deiner Familie am ältesten?
 Im August ist es am [heißesten]. | در ماه اوت هوا از همه ماه‌ها گرم‌تر است. | d: heißsten, heißeste, heißer | hint: (heiß) | full: Es ist im August am heißesten.
 Welcher Weg ist am [kürzesten]? | کدام راه از همه کوتاه‌تر است؟ | d: kürzsten, kürzeste, kurzesten | hint: (kurz)
-Ich finde Mathe am [schwersten]. | به نظرم ریاضی از همه سخت‌تر است. | d: schwerste, schweresten, schwerer
+Ich finde Mathe am [schwersten]. | به نظرم ریاضی از همه سخت‌تر است. | d: schwerste, schweresten, schwerer | ok: schwierigsten
 Im Dezember sind die Nächte am [längsten]. | در دسامبر شب‌ها از همه بلندترند. | d: längste, langsten, längesten | hint: (lang) | full: Die Nächte sind im Dezember am längsten.
 Wer singt [am besten]? | کی از همه بهتر آواز می‌خواند؟ | d: am gutesten, am beste, am bester | hint: (gut)
 Meine Tochter spielt [am liebsten] im Garten. | دخترم از همه بیشتر دوست دارد در باغ بازی کند. | d: am gernsten, am liebste, am lieber | hint: (gern) | full: Am liebsten spielt meine Tochter im Garten. ; Im Garten spielt meine Tochter am liebsten.
 Was hat dir in Wien [am besten] gefallen? | در وین از چه چیزی بیشتر از همه خوشت آمد؟ | d: am gutesten, am beste, am bessten | ok: am meisten | full: Was hat dir am besten in Wien gefallen?
-Wer hat [am meisten] gegessen? | کی از همه بیشتر غذا خورد؟ | d: am vielsten, am meiste, am mehrsten | hint: (viel)
+Wer hat [am meisten] gegessen? | کی از همه بیشتر غذا خورد؟ | d: am vielsten, am meiste, am meistens | hint: (viel)
 Am Wochenende schlafe ich [am liebsten] lange. | آخر هفته از همه بیشتر دوست دارم تا دیروقت بخوابم. | d: am gernsten, am liebste, am lieber | full: Ich schlafe am Wochenende am liebsten lange. ; Am liebsten schlafe ich am Wochenende lange.
 Welche Jacke ist am [wärmsten]? | کدام کاپشن از همه گرم‌تر است؟ | d: wärmste, warmsten, wärmesten | hint: (warm)
-Von allen Kindern ist Mia am [jüngsten]. | میا از همه بچه‌ها کوچک‌تر است. | d: jüngste, jungsten, jüngesten | full: Mia ist von allen Kindern am jüngsten. ; Mia ist am jüngsten von allen Kindern.
-Diese Aufgabe ist am [einfachsten]. | این تمرین از همه آسان‌تر است. | d: einfachste, einfacher, einfachesten | hint: (einfach)
+Von allen Kindern ist Mia am [jüngsten]. | میا از همه بچه‌ها کوچک‌تر است. | d: jüngste, jungsten, jüngesten | hint: (jung) | full: Mia ist von allen Kindern am jüngsten. ; Mia ist am jüngsten von allen Kindern.
+Diese Aufgabe ist am [einfachsten]. | این تمرین از همه آسان‌تر است. | d: einfachste, einfacher, einfachesten | ok: leichtesten | hint: (einfach)
 Dieses Café ist am [gemütlichsten]. | این کافه از همه دنج‌تر است. | d: gemütlichste, gemütlicher, gemütlichesten
 Welches Zimmer ist am [ruhigsten]? | کدام اتاق از همه آرام‌تر است؟ | d: ruhigste, ruhiger, ruhigesten | hint: (ruhig)
 Meine Mutter steht am [frühesten]{früh} auf. | مادرم از همه زودتر بیدار می‌شود. | d: früheste, früher, frühe | ok: frühsten | hint: (früh)
-Welches Fach magst du am [meisten]? | کدام درس را از همه بیشتر دوست داری؟ | d: meiste, mehrsten, vielsten | ok: liebsten
+Welches Fach magst du am [meisten]? | کدام درس را از همه بیشتر دوست داری؟ | d: meiste, meistens, vielsten | ok: liebsten
 Welcher Turm ist am [höchsten]? | کدام برج از همه بلندتر است؟ | d: hochsten, höchste, höhsten | hint: (hoch)
 Am Freitag habe ich am [wenigsten] Zeit. | جمعه از همه روزها کمتر وقت دارم. | d: wenigste, weniger, wenigesten | full: Ich habe am Freitag am wenigsten Zeit.
 Das ist der [höchste] Berg in Deutschland. | این بلندترین کوه آلمان است. | d: höhste, hochste, höher | hint: (hoch)
 Für mich ist Isfahan die [schönste] Stadt im Iran. | برای من اصفهان زیباترین شهر ایران است. | d: schönsten, schöner, schönstes | hint: (schön) | full: Isfahan ist für mich die schönste Stadt im Iran.
-Der [älteste] Sohn wohnt in Hamburg. | بزرگ‌ترین پسر در هامبورگ زندگی می‌کند. | d: ältester, ältesten, ältste | full: In Hamburg wohnt der älteste Sohn.
+Der [älteste] Sohn wohnt in Hamburg. | بزرگ‌ترین پسر در هامبورگ زندگی می‌کند. | d: ältester, ältesten, ältste | hint: (alt) | full: In Hamburg wohnt der älteste Sohn.
 Das ist das [beste] Restaurant in der Stadt. | این بهترین رستوران شهر است. | d: besten, bestes, guteste | hint: (gut)
 Die [teuerste] Jacke kostet 200 Euro. | گران‌ترین کاپشن ۲۰۰ یورو قیمت دارد. | d: teurste, teuersten, teurerste | hint: (teuer)
 Die [besten] Schüler bekommen ein Geschenk. | بهترین دانش‌آموزان یک هدیه می‌گیرند. | d: beste, bester, bestes
@@ -66,10 +66,10 @@ Das [schnellste] Auto ist nicht immer das [beste]. | سریع‌ترین ماش�
 Anna ist groß, Max ist [größer], aber Paul ist am [größten]. | آنا قدبلند است، ماکس قدبلندتر، ولی پاول از همه قدبلندتر است. | d: großer, größte, mehr groß / größte, großsten, größeren
 Tee trinke ich gern, Kaffee [lieber] und Wasser [am liebsten]. | چای را دوست دارم، قهوه را بیشتر و آب را از همه بیشتر. | d: gerner, mehr gern, liebsten / am gernsten, am liebste, am lieber
 Welcher Koffer ist am [leichtesten]? – Der rote Koffer ist der [leichteste]. | کدام چمدان از همه سبک‌تر است؟ – چمدان قرمز سبک‌ترین است. | d: leichteste, leichtsten, leichter / leichtesten, leichtester, leichtste
-Paul ist [älter] als ich, aber Lena ist am [ältesten]. | پاول از من بزرگ‌تر است، ولی لنا از همه بزرگ‌تر است. | d: alter, mehr alt, älteste / älteste, ältsten, älter
-Die [kleinste] Wohnung ist am [billigsten]. | کوچک‌ترین آپارتمان از همه ارزان‌تر است. | d: kleinsten, kleinster, kleineste / billigste, billiger, billigesten
-Welches Getränk magst du [am liebsten]? – Ich trinke [am liebsten] Tee. | کدام نوشیدنی را از همه بیشتر دوست داری؟ – از همه بیشتر چای می‌نوشم. | d: am gernsten, am liebste, am lieber / am gernsten, am liebste, am lieber | full: Welches Getränk magst du am liebsten? – Am liebsten trinke ich Tee. ; Welches Getränk magst du am liebsten? – Ich trinke Tee am liebsten.
-Der Montag ist der [schwerste] Tag, der Freitag ist der [schönste]. | دوشنبه سخت‌ترین روز است و جمعه قشنگ‌ترین. | d: schwersten, schwerster, schwereste / schönsten, schönster, schöneste
+Paul ist [älter] als ich, aber Lena ist am [ältesten]. | پاول از من بزرگ‌تر است، ولی لنا از همه بزرگ‌تر است. | d: alter, mehr alt, älteste / älteste, ältsten, älter | hint: (alt)
+Die [kleinste] Wohnung ist am [billigsten]. | کوچک‌ترین آپارتمان از همه ارزان‌تر است. | d: kleinsten, kleinster, kleineste / billigste, billiger, billigesten | ok: kleinste / günstigsten
+Welches Getränk magst du [am liebsten]? – Ich trinke [am liebsten] Tee. | کدام نوشیدنی را از همه بیشتر دوست داری؟ – از همه بیشتر چای می‌نوشم. | d: am gernsten, am liebste, am lieber / am gernsten, am liebste, am lieber | ok: am meisten / am meisten | full: Welches Getränk magst du am liebsten? – Am liebsten trinke ich Tee. ; Welches Getränk magst du am liebsten? – Ich trinke Tee am liebsten.
+Der Montag ist der [schwerste] Tag, der Freitag ist der [schönste]. | دوشنبه سخت‌ترین روز است و جمعه قشنگ‌ترین. | d: schwersten, schwerster, schwereste / schönsten, schönster, schöneste | ok: schwierigste / schönste
 transforms:
 Lena schwimmt schnell. => Lena schwimmt am schnellsten. | جمله را به «از همه …‌تر» (am …sten) ببر.
 Paul kocht gut. => Paul kocht am besten. | جمله را به «از همه …‌تر» (am …sten) ببر.
@@ -86,5 +86,5 @@ translations:
 کدام اتاق از همه بزرگ‌تر است؟ => Welches Zimmer ist am größten? ; Welches Zimmer ist das größte? ; Welcher Raum ist am größten? ; Welcher Raum ist der größte?
 آنا از همه بهتر آواز می‌خواند. => Anna singt am besten.
 کوچک‌ترین بچه چهار سال دارد. => Das jüngste Kind ist vier Jahre alt. ; Das kleinste Kind ist vier Jahre alt. ; Das jüngste Kind ist vier. ; Das kleinste Kind ist vier.
-در ژانویه هوا از همه ماه‌ها سردتر است. => Im Januar ist es am kältesten. ; Es ist im Januar am kältesten.
+در ژانویه هوا از همه ماه‌ها سردتر است. => Im Januar ist es am kältesten. ; Es ist im Januar am kältesten. ; Der Januar ist der kälteste Monat.
 کی از همه بیشتر کار می‌کند؟ => Wer arbeitet am meisten?

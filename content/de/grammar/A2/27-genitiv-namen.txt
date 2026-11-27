@@ -22,8 +22,8 @@ Max | Max' Fahrrad | das Fahrrad von Max
 Lukas | Lukas' Schwester | die Schwester von Lukas
 mein Freund | – | die Tochter von meinem Freund
 sets:
-اسم + s: Annas, Peters, Saras, Pauls, Rezas, Lenas
-فقط آپاستروف (بعد از s، z، x): Max', Lukas', Jonas', Felix', Frau Schulz'
+اسم + s (Annas Auto): Anna, Peter, Sara, Paul, Reza, Lena
+فقط آپاستروف (Max' Auto): Max, Lukas, Jonas, Felix, Frau Schulz
 examples:
 Das ist Annas Auto. | این ماشینِ آناست.
 Max' Fahrrad ist neu. | دوچرخه‌ی ماکس نو است.

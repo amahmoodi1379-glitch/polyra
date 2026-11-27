@@ -11,6 +11,7 @@ lesson:
 کلمهٔ پرسشی اول جمله می‌ماند: Où vas-tu ? Que fais-tu ? Comment vous appelez-vous ?
 اگر فعل به صدادار تمام شود و بعدش il، elle یا on بیاید، برای راحتی تلفظ یک -t- اضافه می‌شود: il a → A-t-il … ?، elle parle → Parle-t-elle … ?. فعلی که خودش به t یا d تمام می‌شود t اضافه نمی‌گیرد: Est-il là ? Peut-on entrer ? Prend-elle le bus ?
 در passé composé فقط فعل کمکی جابه‌جا می‌شود: As-tu mangé ? Où êtes-vous allés ?
+ضمیر مفعولی یا انعکاسی (me، te، vous…) جلوی فعل می‌ماند: Comment t'appelles-tu ? À quelle heure te lèves-tu ? در منفی، ne پیش از فعل و pas بعد از ضمیر می‌آید: Pourquoi ne viens-tu pas ?
 est-ce que و جابه‌جایی با هم نمی‌آیند: Où est-ce que tu vas ? یا Où vas-tu ?، ولی نه «Où est-ce que vas-tu ?».
 qu'est-ce que یعنی «چه چیزی را» و بعدش فاعل می‌آید: Qu'est-ce que tu fais ? (چه کار می‌کنی؟). qu'est-ce qui یعنی «چه چیزی» وقتی خودش فاعل است: Qu'est-ce qui se passe ? (چه اتفاقی می‌افتد؟).
 با je جابه‌جایی کم است؛ اگر فاعل اسم است (Marie)، فعلاً با est-ce que یا آهنگ صدا بپرس: Est-ce que Marie vient ?
@@ -81,8 +82,8 @@ translations:
 شما انگلیسی حرف می‌زنید؟ => Vous parlez anglais ? ; Est-ce que vous parlez anglais ? ; Parlez-vous anglais ?
 کجا می‌روی؟ => Où vas-tu{tu} ? ; Tu vas où ? ; Où est-ce que tu vas ? ; Où tu vas ?
 اسم شما چیست؟ => Comment vous appelez-vous ? ; Comment est-ce que vous vous appelez ? ; Vous vous appelez comment ? ; Comment vous vous appelez ? ; Quel est{être} votre nom ?
-چه اتفاقی افتاد؟ => Qu'est-ce qui s'est passé ? ; Que s'est-il passé ? ; Qu'est-ce qui est arrivé ? ; Qu'est-il arrivé ?
+چه اتفاقی افتاد؟ => Qu'est-ce qui s'est passé ? ; Qu'est-ce qu'il s'est passé ? ; Que s'est-il passé ? ; Qu'est-ce qui est arrivé ? ; Qu'est-il arrivé ?
 امروز چه کار می‌کنی؟ => Qu'est-ce que tu fais aujourd'hui ? ; Que fais-tu{tu} aujourd'hui ? ; Tu fais quoi aujourd'hui ? ; Aujourd'hui, qu'est-ce que tu fais ? ; Aujourd'hui, que fais-tu{tu} ? ; Aujourd'hui, tu fais quoi ?
 می‌شود وارد شد؟ => Peut-on entrer ? ; On peut entrer ? ; Est-ce qu'on peut entrer ?
-ساعت چند است؟ => Quelle heure est-il ? ; Il est quelle heure ?
-او (زن) کجاست؟ => Où est-elle ? ; Elle est où ? ; Où est-ce qu'elle est ?
+ساعت چند است؟ => Quelle heure est-il ? ; Il est quelle heure ? ; Quelle heure il est ?
+او (زن) کجاست؟ => Où est-elle ? ; Elle est où ? ; Où est-ce qu'elle est ? ; Où elle est ?

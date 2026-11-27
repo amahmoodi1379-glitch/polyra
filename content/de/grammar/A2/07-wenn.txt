@@ -19,8 +19,8 @@ Ich bleibe zu Hause, wenn es regnet. | Wenn es regnet, bleibe ich zu Hause.
 Ich besuche dich, wenn ich Zeit habe. | Wenn ich Zeit habe, besuche ich dich.
 Ich rufe dich an, wenn ich ankomme. | Wenn ich ankomme, rufe ich dich an.
 sets:
-wenn (اگر، هر وقت): Wenn es regnet, …, Immer wenn ich müde bin, …
-wann (کی؟): Wann kommst du?, Wann beginnt der Kurs?
+wenn (اگر، هر وقت): wenn es regnet, wenn ich Zeit habe, immer wenn ich müde bin
+wann (کی؟): Wann kommst du?, Wann beginnt der Kurs?, Wann hast du Zeit?
 examples:
 Wenn es heiß{heiß} ist, gehen wir schwimmen. | وقتی هوا گرم است، شنا می‌رویم.
 Immer wenn ich nach Wien fahre, besuche ich Oma. | هر بار که به وین می‌روم، به مادربزرگ سر می‌زنم.
@@ -32,12 +32,12 @@ targets:
 Ich trinke Kaffee, [wenn] ich müde bin. | وقتی خسته‌ام، قهوه می‌نوشم. | d: wann, dann, dass | full: Wenn ich müde bin, trinke ich Kaffee.
 Ruf{anrufen} mich an{anrufen}, [wenn] du in Berlin bist! | وقتی در برلین بودی، به من زنگ بزن! | d: wann, dann, dass | full: Wenn du in Berlin bist, ruf mich an!
 Immer [wenn] ich nach Köln fahre, besuche ich meine Tante. | هر بار که به کلن می‌روم، به عمه‌ام سر می‌زنم. | d: wann, dann, dass | full: Ich besuche meine Tante, immer wenn ich nach Köln fahre. ; Ich besuche immer meine Tante, wenn ich nach Köln fahre.
-Was machst du, [wenn] du Zeit hast? | وقتی وقت داری، چه کار می‌کنی؟ | d: wann, dann, dass
+Was machst du, [wenn] du Zeit hast? | وقتی وقت داری، چه کار می‌کنی؟ | d: wann, dann, als
 [Wenn] das Wetter schön ist, gehen wir in den Park. | اگر هوا خوب باشد، به پارک می‌رویم. | d: Wann, Dann, Dass | full: Wir gehen in den Park, wenn das Wetter schön ist.
 Ich helfe dir gern, [wenn] du Hilfe brauchst. | اگر کمک لازم داری، با کمال میل کمکت می‌کنم. | d: wann, dann, dass | full: Wenn du Hilfe brauchst, helfe ich dir gern.
 [Wenn] ich krank bin, gehe ich zum Arzt. | وقتی مریض می‌شوم، پیش دکتر می‌روم. | d: Wann, Dann, Dass | full: Ich gehe zum Arzt, wenn ich krank bin.
 Ihr dürft fernsehen, [wenn] ihr euer Zimmer aufgeräumt habt. | اگر اتاقتان را مرتب کرده باشید، می‌توانید تلویزیون ببینید. | d: wann, dann, dass | full: Wenn ihr euer Zimmer aufgeräumt habt, dürft ihr fernsehen.
-Was machen Sie, [wenn] Sie frei haben? | وقتی کار ندارید، چه کار می‌کنید؟ | d: wann, dann, dass
+Was machen Sie, [wenn] Sie frei haben? | وقتی کار ندارید، چه کار می‌کنید؟ | d: wann, dann, als
 Ich bin glücklich, [wenn] die Sonne scheint. | وقتی آفتاب می‌تابد، خوشحالم. | d: wann, dann, als | full: Wenn die Sonne scheint, bin ich glücklich.
 [Wenn] du nach Deutschland fliegst, vergiss deinen Pass nicht! | اگر به آلمان پرواز می‌کنی، گذرنامه‌ات را فراموش نکن! | d: Wann, Dann, Dass | full: Vergiss deinen Pass nicht, wenn du nach Deutschland fliegst!
 [Wenn] ich in Teheran bin, wohne ich bei meinen Großeltern. | وقتی در تهران هستم، پیش پدربزرگ و مادربزرگم می‌مانم. | d: Wann, Dann, Dass | full: Ich wohne bei meinen Großeltern, wenn ich in Teheran bin.
@@ -79,7 +79,7 @@ Ich kann nicht kommen, weil ich arbeiten muss. => Weil ich arbeiten muss, kann i
 translations:
 اگر وقت داشته باشی، به سینما می‌رویم. => Wenn du Zeit hast, gehen wir ins Kino. ; Wir gehen ins Kino, wenn du Zeit hast.
 وقتی وقت دارم، آشپزی می‌کنم. => Wenn ich Zeit habe, koche ich. ; Ich koche, wenn ich Zeit habe.
-اگر بخواهی، کمکت می‌کنم. => Wenn du willst, helfe ich dir. ; Ich helfe dir, wenn du willst.
+اگر بخواهی، کمکت می‌کنم. => Wenn du willst, helfe ich dir. ; Ich helfe dir, wenn du willst. ; Wenn du möchtest, helfe ich dir. ; Ich helfe dir, wenn du möchtest.
 چون خسته‌ام، به خانه می‌روم. => Weil ich müde bin, gehe ich nach Hause. ; Ich gehe nach Hause, weil ich müde bin. ; Ich gehe nach Hause, denn ich bin müde.
 اگر باران بیاید، در خانه می‌مانیم. => Wenn es regnet, bleiben wir zu Hause. ; Wir bleiben zu Hause, wenn es regnet. ; Zu Hause bleiben wir, wenn es regnet.
 هر وقت برف می‌آید، بچه‌ها بیرون بازی می‌کنند. => Wenn es schneit, spielen die Kinder draußen. ; Die Kinder spielen draußen, wenn es schneit. ; Immer wenn es schneit, spielen die Kinder draußen. ; Die Kinder spielen draußen, immer wenn es schneit. ; Die Kinder spielen immer draußen, wenn es schneit.

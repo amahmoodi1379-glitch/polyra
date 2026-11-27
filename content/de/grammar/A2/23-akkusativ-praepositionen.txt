@@ -10,7 +10,7 @@ für (برای)، ohne (بدون)، gegen (در برابرِ، علیه)، durch
 ضمیرها هم شکل مفعولی می‌گیرند: für mich، ohne dich، gegen ihn، für sie، für uns، ohne euch، für Sie.
 بعد از mit، zu و bei حالت Dativ می‌آید (mit dir)، ولی بعد از این شش حرف اضافه نه: «für dir» غلط است و درستش für dich است.
 um دو معنی دارد: um den Tisch («دور میز») و um 8 Uhr («ساعت ۸»). gegen هم با ساعت یعنی «حدودِ»: gegen 8 Uhr.
-bis بیشتر بدون حرف تعریف می‌آید: bis Montag، bis morgen؛ با nächste می‌شود bis nächsten Montag.
+bis بیشتر بدون حرف تعریف می‌آید: bis Montag، bis morgen؛ با nächste می‌شود bis nächsten Montag. اگر بعد از bis حرف اضافه دیگری بیاید، حالت را آن حرف تعیین می‌کند: bis zum Bahnhof.
 برای حفظ کردن، این پنج کلمه را پشت سر هم تکرار کن: für، ohne، gegen، durch، um.
 table:
 حرف اضافه | معنی | مثال
@@ -21,8 +21,8 @@ durch | از میانِ | durch den Park
 um | دورِ؛ ساعتِ | um den Tisch، um 8 Uhr
 bis | تا | bis Montag، bis nächsten Montag
 sets:
-حرف‌های اضافه Akkusativ: für, ohne, gegen, durch, um, bis
-ضمیر بعد از آن‌ها: mich, dich, ihn, sie, es, uns, euch, Sie
++ Akkusativ: für, ohne, gegen, durch, um, bis
++ Dativ: mit, zu, bei, von, aus, nach
 examples:
 Diese Blumen sind für dich. | این گل‌ها برای توست.
 Ich trinke Kaffee ohne Zucker. | قهوه را بدون شکر می‌نوشم.
@@ -39,21 +39,21 @@ Heute habe ich leider keine Zeit für [euch]. | امروز متأسفانه بر
 Das ist ein Brief für [Sie], Frau Weber. | این یک نامه برای شماست، خانم وبر. | d: Ihnen, Ihr, Ihre | hint: (Sie)
 Sara arbeitet für [eine] Firma in München. | سارا برای یک شرکت در مونیخ کار می‌کند. | d: einer, einem, einen
 Hast du ein Geschenk für [ihn]? | برای او هدیه‌ای داری؟ | d: ihm, er, sein | hint: (er)
-Für [den] Kurs brauchst du ein Wörterbuch. | برای این کلاس به یک فرهنگ لغت نیاز داری. | d: dem, der, das | full: Du brauchst für den Kurs ein Wörterbuch. ; Du brauchst ein Wörterbuch für den Kurs.
+Für [den] Kurs brauchst du ein Wörterbuch. | برای این کلاس به یک فرهنگ لغت نیاز داری. | d: dem, der, das | ok: diesen | full: Du brauchst für den Kurs ein Wörterbuch. ; Du brauchst ein Wörterbuch für den Kurs.
 Ohne [dich] ist die Party langweilig. | بدون تو مهمانی خسته‌کننده است. | d: dir, du, dein | hint: (du) | full: Die Party ist ohne dich langweilig.
 Geh nicht ohne [deine] Jacke! | بدون کاپشنت بیرون نرو! | d: deiner, deinem, dein | hint: (dein)
 Wir fahren ohne [unseren] Hund in Urlaub. | ما بدون سگمان به تعطیلات می‌رویم. | d: unserem, unser, unserer | hint: (unser) | full: Ohne unseren Hund fahren wir in Urlaub.
 Max ist ohne [seinen] Schlüssel aus dem Haus gegangen. | ماکس بدون کلیدش از خانه بیرون رفت. | d: seinem, seiner, sein | hint: (sein)
 Kommst du heute? – Nein, geht ohne [mich]! | امروز می‌آیی؟ – نه، بدون من بروید! | d: mir, ich, mein | hint: (ich)
 Lena kommt später, wir essen ohne [sie]. | لنا دیرتر می‌آید، ما بدون او غذا می‌خوریم. | d: ihr, ihre, ihrer | hint: (sie)
-Er ist ohne [ein] Wort gegangen. | او بدون یک کلمه حرف رفت. | d: einem, einen, eine
+Er ist ohne [ein] Wort gegangen. | او بی‌آنکه حرفی بزند رفت. | d: einem, einen, eine
 Wir gehen durch [den] Park. | ما از وسط پارک می‌رویم. | d: dem, der, das
 Die Straßenbahn fährt durch [die] Altstadt. | تراموا از وسط شهر قدیمی رد می‌شود. | d: der, dem, den
 Die Katze ist durch [das] Fenster gesprungen. | گربه از پنجره پرید. | d: dem, den, der
 Gehen Sie bitte{bitte} durch [diese] Tür. | لطفاً از این در بروید. | d: dieser, diesem, dieses | full: Bitte gehen Sie durch diese Tür.
 Fahren wir [durch] den Wald? | از وسط جنگل می‌رویم؟ | d: von, aus, mit
 Wir spielen morgen gegen [die] Mannschaft aus Köln. | فردا مقابل تیم کلن بازی می‌کنیم. | d: der, dem, den | full: Morgen spielen wir gegen die Mannschaft aus Köln.
-Ich habe nichts gegen [deinen] Freund. | با دوستت مشکلی ندارم. | d: deinem, deiner, dein | hint: (dein)
+Ich habe nichts gegen [deinen] Plan. | با برنامه‌ات مشکلی ندارم. | d: deinem, deiner, dein | hint: (dein)
 Diese Tabletten sind [gegen] Fieber. | این قرص‌ها ضد تب‌اند. | d: von, mit, aus
 Das Auto ist gegen [einen] Baum gefahren. | ماشین به یک درخت خورد. | d: einem, einer, ein
 Wir sitzen alle um [den] Tisch. | همه دور میز نشسته‌ایم. | d: dem, der, das

@@ -32,36 +32,36 @@ Si nous [partons] maintenant, nous serons à l'heure. | اگر الان راه �
 S'{si}ils [arrivent] en retard, nous mangerons sans eux. | اگر دیر برسند، بدون آن‌ها غذا می‌خوریم. | d: arriveront, arriveraient, arrivaient | full: Nous mangerons sans eux s'ils arrivent en retard.
 Si vous [voulez], je peux vous aider. | اگر بخواهید، می‌توانم کمکتان کنم. | d: voudrez, voudriez, voulons | hint: (vouloir) | full: Je peux vous aider si vous voulez.
 Si Paul [a] le temps, il passera chez toi. | اگر پل وقت داشته باشد، سری به تو می‌زند. | d: aura, aurait, avait | hint: (avoir)
-S'{si}il fait beau dimanche, nous [ferons] du vélo. | اگر یکشنبه هوا خوب باشد، دوچرخه‌سواری می‌کنیم. | d: ferions, faisions, fairons | hint: (faire) | full: Nous ferons du vélo s'il fait beau dimanche.
-Si tu travailles bien, tu [réussiras] ton examen. | اگر خوب درس بخوانی، در امتحانت قبول می‌شوی. | d: réussirais, réussissais, réussirai | hint: (réussir) | full: Tu réussiras ton examen si tu travailles bien.
+S'{si}il fait beau dimanche, nous [ferons] du vélo. | اگر یکشنبه هوا خوب باشد، دوچرخه‌سواری می‌کنیم. | d: ferions, faisions, fairons | ok: faisons | hint: (faire) | full: Nous ferons du vélo s'il fait beau dimanche.
+Si tu travailles bien, tu [réussiras] ton examen. | اگر خوب درس بخوانی، در امتحانت قبول می‌شوی. | d: réussirais, réussissais, réussirai | ok: réussis | hint: (réussir) | full: Tu réussiras ton examen si tu travailles bien.
 Si tu ne te dépêches pas, tu [seras] en retard. | اگر عجله نکنی، دیر می‌رسی. | d: serais, étais, serai | hint: (être) | full: Tu seras en retard si tu ne te dépêches pas.
-S'{si}il neige{neiger}, les enfants [joueront] dans le jardin. | اگر برف بیاید، بچه‌ها در باغ بازی می‌کنند. | d: joueraient, jouaient, jouerons | full: Les enfants joueront dans le jardin s'il neige.
-Si vous prenez ce bus, vous [arriverez] au centre-ville. | اگر این اتوبوس را بگیرید، به مرکز شهر می‌رسید. | d: arriveriez, arriviez, arriverons | hint: (arriver) | full: Vous arriverez au centre-ville si vous prenez ce bus.
-Si elle a le temps, elle te [téléphonera]. | اگر وقت داشته باشد، به تو تلفن می‌زند. | d: téléphonerait, téléphonait, téléphoneras | full: Elle te téléphonera si elle a le temps.
+S'{si}il neige{neiger}, les enfants [joueront] dans le jardin. | اگر برف بیاید، بچه‌ها در باغ بازی می‌کنند. | d: joueraient, jouaient, jouerons | ok: jouent | full: Les enfants joueront dans le jardin s'il neige.
+Si vous prenez ce bus, vous [arriverez] au centre-ville. | اگر این اتوبوس را بگیرید، به مرکز شهر می‌رسید. | d: arriveriez, arriviez, arriverons | ok: arrivez | hint: (arriver) | full: Vous arriverez au centre-ville si vous prenez ce bus.
+Si elle a le temps, elle te [téléphonera]. | اگر وقت داشته باشد، به تو تلفن می‌زند. | d: téléphonerait, téléphonait, téléphoneras | ok: téléphone | full: Elle te téléphonera si elle a le temps.
 Si tu as froid, [mets] ton pull. | اگر سردت است، پلیورت را بپوش. | d: mettras, mettrais, met | hint: (mettre) | full: Mets ton pull si tu as froid.
 Si vous êtes fatigués, [reposez]-vous. | اگر خسته‌اید، استراحت کنید. | d: repose, reposer, reposé | full: Reposez-vous si vous êtes fatigués.
 Si tu vas au marché, [achète] des tomates. | اگر به بازار می‌روی، گوجه‌فرنگی بخر. | d: achètes, achèteras, achèterais | hint: (acheter) | full: Achète des tomates si tu vas au marché.
 S'{si}il pleut, [prenez] un parapluie. | اگر باران بیاید، چتر بردارید. | d: prendrez, prendriez, preniez | hint: (prendre) | full: Prenez un parapluie s'il pleut.
-Si tu veux, on [va] au cinéma ce soir. | اگر بخواهی، امشب به سینما می‌رویم. | d: allait, vont, aller | hint: (aller) | full: On va au cinéma ce soir si tu veux. ; Ce soir, si tu veux, on va au cinéma.
-Si je suis{être} malade, je [reste] au lit. | اگر مریض باشم، در رختخواب می‌مانم. | d: restais, resterais, restes | hint: (rester) | full: Je reste au lit si je suis malade.
+Si tu veux, on [va] au cinéma ce soir. | اگر بخواهی، امشب به سینما می‌رویم. | d: allait, vont, aller | ok: ira | hint: (aller) | full: On va au cinéma ce soir si tu veux. ; Ce soir, si tu veux, on va au cinéma.
+Si je suis{être} malade, je [reste] au lit. | اگر مریض باشم، در رختخواب می‌مانم. | d: restais, resterais, restes | ok: resterai | hint: (rester) | full: Je reste au lit si je suis malade.
 [S']{si}il fait chaud, nous mangerons dehors. | اگر هوا گرم باشد، بیرون غذا می‌خوریم. | d: Si, Se, C' | full: Nous mangerons dehors s'il fait chaud.
 [Si] elle est malade, elle ne viendra pas. | اگر مریض باشد، نمی‌آید. | d: S', Se, Ce | full: Elle ne viendra pas si elle est malade.
 [S']{si}ils ont faim, ils mangeront avec nous. | اگر گرسنه باشند، با ما غذا می‌خورند. | d: Si, Se, C' | full: Ils mangeront avec nous s'ils ont faim.
 [Si] on part tôt, on aura le temps. | اگر زود راه بیفتیم، وقت خواهیم داشت. | d: S', Se, Ce | full: On aura le temps si on part tôt.
-Qu'est-ce que vous ferez si le train [est] en retard ? | اگر قطار تأخیر داشته باشد، چه کار می‌کنید؟ | d: sera, serait, était | hint: (être)
+Qu'est-ce que vous ferez si le train [est] en retard ? | اگر قطار تأخیر داشته باشد، چه کار می‌کنید؟ | d: sera, serait, était | hint: (être) | full: Si le train est en retard, qu'est-ce que vous ferez ?
 Tu viendras avec nous si tu [finis] ton travail ? | اگر کارت را تمام کنی، با ما می‌آیی؟ | d: finiras, finirais, finissais | hint: (finir) | full: Si tu finis ton travail, tu viendras avec nous ?
 Si tu n'[aimes] pas la viande, prends le poisson. | اگر گوشت دوست نداری، ماهی بگیر. | d: aimeras, aimerais, aime | full: Prends le poisson si tu n'aimes pas la viande.
 Si vous ne [trouvez]{trouver} pas la gare, demandez à un policier. | اگر ایستگاه را پیدا نکردید، از یک پلیس بپرسید. | d: trouverez, trouveriez, trouviez | hint: (trouver) | full: Demandez à un policier si vous ne trouvez pas la gare.
 Si on [a] le temps, on visitera le musée. | اگر وقت داشته باشیم، از موزه دیدن می‌کنیم. | d: aura, aurait, avait | full: On visitera le musée si on a le temps.
-Je te [prêterai] mon vélo si tu veux. | اگر بخواهی، دوچرخه‌ام را به تو قرض می‌دهم. | d: prêtera, prêtais, prêteras | hint: (prêter) | full: Si tu veux, je te prêterai mon vélo.
-S'{si}il [fait] beau, nous [mangerons] dans le jardin. | اگر هوا خوب باشد، در باغ غذا می‌خوریم. | d: fera, ferait, faisait / mangerions, mangions, mangeront | full: Nous mangerons dans le jardin s'il fait beau.
+Je te [prêterai] mon vélo si tu veux. | اگر بخواهی، دوچرخه‌ام را به تو قرض می‌دهم. | d: prêtera, prêtais, prêteras | ok: prête | hint: (prêter) | full: Si tu veux, je te prêterai mon vélo.
+S'{si}il [fait] beau, nous [mangerons] dans le jardin. | اگر هوا خوب باشد، در باغ غذا می‌خوریم. | d: fera, ferait, faisait / mangerions, mangions, mangeront | ok: fait / mangeons | full: Nous mangerons dans le jardin s'il fait beau.
 Si tu [es] libre, [viens] chez moi ce soir. | اگر وقتت آزاد است، امشب بیا خانهٔ من. | d: seras, serais, étais / viendras, viendrais, vient | full: Viens chez moi ce soir si tu es libre.
-[S']{si}il pleut, je [prendrai] un taxi. | اگر باران بیاید، تاکسی می‌گیرم. | d: Si, Se, C' / prendrais, prenais, prendras | full: Je prendrai un taxi s'il pleut.
+[S']{si}il pleut, je [prendrai] un taxi. | اگر باران بیاید، تاکسی می‌گیرم. | d: Si, Se, C' / prendrais, prenais, prendras | ok: S' / prends | full: Je prendrai un taxi s'il pleut.
 Si vous [avez] soif, [prenez] de l'eau. | اگر تشنه‌اید، آب بنوشید. | d: aurez, auriez, ayez / prendrez, preniez, prendriez | full: Prenez de l'eau si vous avez soif.
-Si Marie [vient], nous [ferons] un gâteau. | اگر ماری بیاید، کیک درست می‌کنیم. | d: viendra, viendrait, venait / ferions, faisions, fairons | full: Nous ferons un gâteau si Marie vient.
+Si Marie [vient], nous [ferons] un gâteau. | اگر ماری بیاید، کیک درست می‌کنیم. | d: viendra, viendrait, venait / ferions, faisions, fairons | ok: vient / faisons | full: Nous ferons un gâteau si Marie vient.
 Si tu [veux], on [peut] partir maintenant. | اگر بخواهی، می‌توانیم الان راه بیفتیم. | d: voudras, voudrais, veut / peuvent, pouvait, peux | full: On peut partir maintenant si tu veux.
 [S']{si}ils ne [sont] pas là, nous partirons sans eux. | اگر آنجا نباشند، بدون آن‌ها می‌رویم. | d: Si, Se, C' / seront, seraient, étaient | full: Nous partirons sans eux s'ils ne sont pas là.
-Si on [sort] ce soir, je te [téléphonerai]. | اگر امشب بیرون برویم، به تو تلفن می‌زنم. | d: sortira, sortirait, sortait / téléphonerais, téléphonais, téléphoneras | full: Je te téléphonerai si on sort ce soir.
+Si on [sort] ce soir, je te [téléphonerai]. | اگر امشب بیرون برویم، به تو تلفن می‌زنم. | d: sortira, sortirait, sortait / téléphonerais, téléphonais, téléphoneras | ok: sort / téléphone | full: Je te téléphonerai si on sort ce soir.
 transforms:
 Il pleut. Je reste à la maison. => S'{si}il pleut, je reste à la maison. ; Je reste à la maison s'{si}il pleut. | دو جمله را با si به هم وصل کن.
 Tu as faim. Mange une pomme. => Si tu as faim, mange une pomme. ; Mange une pomme si tu as faim. | دو جمله را با si به هم وصل کن.

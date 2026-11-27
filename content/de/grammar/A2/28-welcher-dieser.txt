@@ -7,10 +7,10 @@ mistake: «کدام» و «این» در فارسی هیچ‌وقت عوض نم�
 lesson:
 در فارسی «کدام» و «این» همیشه همین‌اند؛ در آلمانی welcher (کدام) و dieser (این) پسوندشان را از حرف تعریف der می‌گیرند.
 پسوند همان حرف آخر حرف تعریف است: der Film ← dieser Film، den Film ← diesen Film، dem Bus ← diesem Bus، die Jacke ← diese Jacke، das Buch ← dieses Buch.
-پس اول ببین اسم چه جنسی دارد و در جمله چه نقشی دارد: فاعل (Welcher Bus fährt?)، مفعول (Welchen Film siehst du?) یا بعد از mit، in، bei و مانند آن‌ها (Mit welchem Bus?).
+پس اول ببین اسم چه جنسی دارد و در جمله چه نقشی دارد: فاعل (Welcher Bus fährt?)، مفعول (Welchen Film siehst du?) یا بعد از حرف اضافه‌ای که Dativ می‌خواهد، مثل mit و bei، یا in برای «کجا؟» (Mit welchem Bus? In welcher Straße?).
 در جواب، dieser بدون اسم هم می‌آید و یعنی «این یکی»: Welchen Pullover nimmst du? – Diesen hier.
 was für ein یعنی «چه جور، چه نوع»؛ ein در آن مثل همیشه عوض می‌شود: Was für ein Auto? Was für einen Hund? In was für einem Haus?
-در جمع و برای چیزهای شمردنی‌نشدنی ein نمی‌آید: Was für Schuhe suchst du? Was für Musik hörst du?
+در جمع و برای چیزهایی که شمرده نمی‌شوند ein نمی‌آید: Was für Schuhe suchst du? Was für Musik hörst du?
 welcher برای انتخاب از میان چیزهای معلوم است (کدام یکی؟)، was für ein برای نوع و ویژگی چیز (چه جور؟).
 table:
 حالت | مذکر | مؤنث | خنثی | جمع
@@ -66,7 +66,7 @@ Hier sind zwei Kuchen. [Welchen] möchtest du? | اینجا دو تا کیک ه�
 In [welchem] Hotel wohnt ihr? – In [diesem] hier. | در کدام هتل می‌مانید؟ – در همین یکی. | d: welchen, welcher, welches / diesen, dieser, dieses
 [Welches] Auto gehört{gehören} dir? – [Dieses] da. | کدام ماشین مال توست؟ – آن یکی. | d: Welcher, Welchen, Welchem / Dieser, Diesen, Diesem
 [Dieses] Hemd ist schön, aber [diese] Hose ist zu lang. | این پیراهن قشنگ است، ولی این شلوار زیادی بلند است. | d: Dieser, Diese, Diesen / dieser, dieses, diesen
-Kennst du [diesen] Mann? – [Welchen] Mann? | این مرد را می‌شناسی؟ – کدام مرد را؟ | d: dieser, dieses, diesem / Welcher, Welches, Welchem
+Kennst du [diesen] Mann? – [Welchen] Mann meinst du? | این مرد را می‌شناسی؟ – منظورت کدام مرد است؟ | d: dieser, dieses, diesem / Welcher, Welches, Welchem
 transforms:
 Ich nehme den Pullover. => Ich nehme diesen Pullover. | به‌جای den از dieser استفاده کن.
 Die Jacke ist warm. => Diese Jacke ist warm. | به‌جای Die از dieser استفاده کن.

@@ -19,9 +19,9 @@ B: Normalerweise dreißig Minuten. Aber heute gibt es viel Verkehr. | معمول
 why: دیرت شده، پس می‌خواهی تند برود (schnell)، نه آهسته (langsam). با راننده تاکسی Sie می‌گوییم، نه du.
 B: Ich versuche es. Aber ich darf nicht zu{zu-adv} schnell fahren. | سعی می‌کنم. ولی اجازه ندارم خیلی تند برانم.
 + Natürlich. Ich bin nur nervös, weil mein Flug um zwölf geht. | البته. فقط نگرانم، چون پروازم ساعت دوازده است.
-- Natürlich. Ich bin nur nervös, weil mein Flug geht um zwölf. | البته. فقط نگرانم، چون پروازم ساعت دوازده است.
+- Natürlich. Ich bin nur nervös, weil geht mein Flug um zwölf. | البته. فقط نگرانم، چون پروازم ساعت دوازده است.
 - Natürlich. Ich bin nur nervös, weil ich viel Zeit habe. | البته. فقط نگرانم، چون وقت زیادی دارم.
-why: بعد از weil فعل به آخر جمله می‌رود: «weil mein Flug um zwölf geht». وقت زیاد داشتن دلیل نگرانی نیست.
+why: بعد از weil فعل به آخر جمله می‌رود: «weil mein Flug um zwölf geht»، نه درست بعد از weil. وقت زیاد داشتن دلیل نگرانی نیست.
 B: So, hier ist der Flughafen. Das macht 38 Euro 50. | خب، این هم فرودگاه. می‌شود ۳۸ یورو و ۵۰ سنت. | tts: So, hier ist der Flughafen. Das macht achtunddreißig Euro fünfzig.
 - Hier sind 30 Euro. Stimmt so. | بفرمایید، ۳۰ یورو. بقیه‌اش مال خودتان. | tts: Hier sind dreißig Euro. Stimmt so.
 - Hier hast du 40 Euro. Stimmt so. | بیا، ۴۰ یورو. بقیه‌اش مال خودت. | tts: Hier hast du vierzig Euro. Stimmt so.

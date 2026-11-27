@@ -13,11 +13,11 @@ lesson:
 پس این را یادت بماند: اسم + اسم ← اول آدم؛ ضمیر + ضمیر ← اول چیز؛ ضمیر + اسم ← اول ضمیر.
 برای پرسیدن درباره آدم از wem استفاده کن: Wem schenkst du die Blumen?
 table:
-مفعول‌ها | مثال
-اسم + اسم | Ich gebe dem Kind einen Apfel.
-ضمیر + اسم | Ich gebe ihm einen Apfel.
-اسم + ضمیر | Ich gebe ihn dem Kind.
-ضمیر + ضمیر | Ich gebe ihn ihm.
+مفعول‌ها | ترتیب | مثال
+هر دو اسم | اول Dativ | Ich gebe dem Kind einen Apfel.
+Dativ ضمیر، Akkusativ اسم | اول ضمیر | Ich gebe ihm einen Apfel.
+Dativ اسم، Akkusativ ضمیر | اول ضمیر | Ich gebe ihn dem Kind.
+هر دو ضمیر | اول Akkusativ | Ich gebe ihn ihm.
 sets:
 دادن و رساندن: geben, schenken, bringen, schicken, leihen
 گفتن و نشان دادن: zeigen, erklären, erzählen, empfehlen
@@ -82,6 +82,6 @@ translations:
 کتاب را به او می‌دهم. => Ich gebe ihm das Buch. ; Ich gebe ihr{sie} das Buch.
 گارسون منو را برایمان می‌آورد. => Der Kellner bringt uns die Speisekarte. ; Die Kellnerin bringt uns die Speisekarte.
 می‌توانی این را برایم توضیح بدهی؟ => Kannst du mir das erklären? ; Kannst du es mir erklären?
-برای پسرم یک دوچرخه می‌خرم. => Ich kaufe meinem Sohn ein Fahrrad. ; Ich kaufe ein Fahrrad für meinen Sohn.
+برای پسرم یک دوچرخه می‌خرم. => Ich kaufe meinem Sohn ein Fahrrad. ; Ich kaufe ein Fahrrad für meinen Sohn. ; Ich kaufe für meinen Sohn ein Fahrrad.
 برایت یک ایمیل می‌فرستم. => Ich schicke dir eine E-Mail.
 کلید را به پدرت بده! => Gib deinem Vater den Schlüssel! ; Gib den Schlüssel deinem Vater!

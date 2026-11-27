@@ -19,9 +19,9 @@ B: Super! Kann ich etwas mitbringen? | عالی! چیزی بیاورم؟
 why: mitbringen در امر هم جدا می‌شود: «Bring … mit». Salat مذکر است، پس «einen Salat».
 B: Gern! Kommt Anna auch? | حتماً! آنا هم می‌آید؟
 + Nein, sie kann leider nicht, weil sie krank ist. | نه، متأسفانه نمی‌تواند، چون مریض است.
-- Nein, sie kann leider nicht, weil sie ist krank. | نه، متأسفانه نمی‌تواند، چون مریض است.
+- Nein, sie kann leider nicht, weil ist sie krank. | نه، متأسفانه نمی‌تواند، چون مریض است.
 - Nein, er kann leider nicht, weil er krank ist. | نه، متأسفانه نمی‌تواند، چون مریض است.
-why: بعد از weil فعل آخر جمله می‌آید: «weil sie krank ist». آنا دختر است، پس sie، نه er.
+why: بعد از weil فعل آخر جمله می‌آید: «weil sie krank ist»، نه درست بعد از weil. آنا دختر است، پس sie، نه er.
 B: Oh, schade. Und wie ist deine Adresse noch mal? | آخ، حیف. آدرست دوباره چی بود؟
 - Ich weiß deine Adresse nicht. | آدرس تو را نمی‌دانم.
 - Ich schreibe dich eine Nachricht mit der Adresse. | یک پیام با آدرس برایت می‌نویسم.

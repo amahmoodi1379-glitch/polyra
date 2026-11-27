@@ -3,25 +3,25 @@ title: گذشته فعل‌های وجهی: konnte، musste، wollte
 scope: Präteritum فعل‌های وجهی können، müssen، wollen، dürfen و mögen (konnte، musste، wollte، durfte، mochte) با پایان‌های -te، -test، -te، -ten، -tet، -ten، بدون Umlaut، با شکل یکسان برای ich و er/sie/es، و این‌که در گفتگو هم گذشته این فعل‌ها Präteritum است؛ sollte در واحد sollen می‌آید.
 can_do: حالا می‌توانی بگویی دیروز چه کاری را نتوانستی، مجبور بودی یا می‌خواستی بکنی: «Ich konnte nicht kommen»، «Ich musste arbeiten».
 rule: ریشه بدون Umlaut + -te: können ← konnte، müssen ← musste، dürfen ← durfte، wollen ← wollte، mögen ← mochte؛ ich و er/sie/es یک شکل دارند (ich konnte، er konnte)، و مصدر مثل زمان حال به آخر جمله می‌رود.
-mistake: فارسی‌زبان‌ها Umlaut زمان حال را نگه می‌دارند و می‌گویند «ich könnte» یا «ich müsste»؛ این‌ها معنی دیگری دارند («می‌توانستم/می‌شد»، «باید می‌کردم») و برای گذشته غلط‌اند؛ درست: Gestern konnte ich nicht kommen. Ich musste arbeiten. به ich هم -t اضافه نمی‌کنند: ich konnte، نه «ich konntet».
+mistake: فارسی‌زبان‌ها Umlaut زمان حال را نگه می‌دارند و می‌گویند «ich könnte» یا «ich müsste»؛ این‌ها شکل فرضی و مؤدبانه‌اند (مثل «اگر می‌شد…») و گذشته نیستند؛ درست: Gestern konnte ich nicht kommen. Ich musste arbeiten. به ich هم -t اضافه نمی‌کنند: ich konnte، نه «ich konntet».
 tables: Präteritum | modal
 lesson:
 برای گفتن «نتوانستم»، «مجبور بودم» یا «می‌خواستم» آلمانی شکل گذشته ساده فعل‌های وجهی را می‌گوید که Präteritum نام دارد: Ich konnte gestern nicht kommen.
-ساختش آسان است: Umlaut (نقطه‌های روی حرف) می‌افتد و -te اضافه می‌شود: können ← konnte، müssen ← musste، dürfen ← durfte. wollen ← wollte و mögen ← mochte.
-پایان‌ها مثل war و hatte‌اند: ich konnte، du konntest، er konnte، wir konnten، ihr konntet، sie و Sie konnten. ich و er/sie/es یک شکل دارند.
+ساختش آسان است: Umlaut (نقطه‌های روی حرف) می‌افتد و -te اضافه می‌شود: können ← konnte، müssen ← musste، dürfen ← durfte. wollen ← wollte، و در mögen حرف g هم ch می‌شود: mochte.
+پایان‌ها مثل hatte است: ich konnte، du konntest، er konnte، wir konnten، ihr konntet، sie و Sie konnten. ich و er/sie/es یک شکل دارند.
 فعل دوم مثل زمان حال بی‌تغییر به آخر جمله می‌رود: Ich musste am Samstag arbeiten. Max wollte Pizza essen.
 
 در گفتگو برای گذشته بیشتر فعل‌ها Perfekt می‌گویند، ولی برای فعل‌های وجهی (مثل sein و haben) همین Präteritum را می‌گویند: Ich musste gestern arbeiten.
 مواظب باش: könnte و müsste با Umlaut شکل دیگری‌اند و معنی گذشته نمی‌دهند. برای گذشته همیشه بدون Umlaut: konnte، musste، durfte.
 möchte گذشته ندارد؛ برای «می‌خواستم» wollte می‌گویند: Ich wollte einen Kaffee.
 table:
-ضمیر | können | müssen | dürfen | wollen
-ich | konnte | musste | durfte | wollte
-du | konntest | musstest | durftest | wolltest
-er / sie / es | konnte | musste | durfte | wollte
-wir | konnten | mussten | durften | wollten
-ihr | konntet | musstet | durftet | wolltet
-sie / Sie | konnten | mussten | durften | wollten
+ضمیر | können | müssen | dürfen | wollen | mögen
+ich | konnte | musste | durfte | wollte | mochte
+du | konntest | musstest | durftest | wolltest | mochtest
+er / sie / es | konnte | musste | durfte | wollte | mochte
+wir | konnten | mussten | durften | wollten | mochten
+ihr | konntet | musstet | durftet | wolltet | mochtet
+sie / Sie | konnten | mussten | durften | wollten | mochten
 examples:
 Ich konnte gestern nicht kommen. | دیروز نتوانستم بیایم.
 Ich musste am Samstag arbeiten. | شنبه مجبور بودم کار کنم.

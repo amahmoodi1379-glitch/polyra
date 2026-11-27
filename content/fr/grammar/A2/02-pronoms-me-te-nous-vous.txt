@@ -11,7 +11,7 @@ lesson:
 مثل le و la، این ضمیرها هم قبل از فعل می‌آیند: Je t'attends (منتظرت هستم)، نه «j'attends toi».
 قبل از صدادار یا h، me و te می‌شوند m' و t': Tu m'aides ? Je t'écoute.
 در جملهٔ منفی ne قبل از ضمیر می‌آید: Il ne me répond pas. در سؤال هم ضمیر قبل از فعل می‌ماند: Tu me vois ?
-moi و toi فقط بعد از حرف اضافه یا تنها می‌آیند (avec moi، Et toi ?)، نه قبل از فعل.
+moi و toi بعد از حرف اضافه، بعد از c'est یا تنها می‌آیند (avec moi، c'est moi، Et toi ?)، نه قبل از فعل.
 table:
 فارسی | ضمیر | مثال
 مرا، به من | me، m' | Paul m'appelle.
@@ -26,7 +26,7 @@ Je ne vous entends{entendre} pas bien. | صدایتان را خوب نمی‌ش�
 targets:
 Paul [me] regarde. | پل نگاهم می‌کند. | d: moi, je, mon | hint: (moi)
 Tu [m']aides, s'il te plaît ? | لطفاً کمکم می‌کنی؟ | d: me, moi, se
-Ma mère [m']appelle{appeler} tous les jours. | مادرم هر روز به من زنگ می‌زند. | d: me, moi, mon | hint: (moi)
+Ma mère [m']appelle{appeler} tous les jours. | مادرم هر روز به من زنگ می‌زند. | d: me, moi, mon | hint: (moi) | full: Tous les jours, ma mère m'appelle.
 Mes parents [m']attendent à la maison. | پدر و مادرم در خانه منتظرم هستند. | d: me, moi, mon
 Pourquoi est-ce que tu [me] regardes ? | چرا نگاهم می‌کنی؟ | d: moi, je, se | hint: (moi)
 Ma grand-mère [me] donne un cadeau. | مادربزرگم به من یک هدیه می‌دهد. | d: moi, mon, je
@@ -34,10 +34,10 @@ Mon frère [me] ressemble beaucoup. | برادرم خیلی شبیه من است
 Tu [me] prêtes{prêter} ton stylo ? | خودکارت را به من قرض می‌دهی؟ | d: moi, mon, se
 Cette ville [me] plaît beaucoup. | از این شهر خیلی خوشم می‌آید. | d: moi, mon, je | hint: (moi)
 Je [t']attends devant le cinéma. | جلوی سینما منتظرت هستم. | d: te, toi, se | hint: (toi)
-Paul [te] téléphone{téléphoner} ce soir. | پل امشب به تو زنگ می‌زند. | d: toi, ton, tu
+Paul [te] téléphone{téléphoner} ce soir. | پل امشب به تو زنگ می‌زند. | d: toi, ton, tu | full: Ce soir, Paul te téléphone.
 Je ne [te] comprends pas. | حرفت را نمی‌فهمم. | d: toi, tu, se | hint: (toi)
 Qui [t']aide{aider} ? | کی کمکت می‌کند؟ | d: te, toi, ton
-Je [t']écris demain. | فردا برایت می‌نویسم. | d: te, toi, se | hint: (toi)
+Je [t']écris demain. | فردا برایت می‌نویسم. | d: te, toi, se | hint: (toi) | full: Demain, je t'écris.
 Cette robe [te] plaît ? | از این پیراهن خوشت می‌آید؟ | d: toi, ton, tu
 Attends, je [t']aide{aider} ! | صبر کن، کمکت می‌کنم! | d: te, toi, se | hint: (toi)
 Ta grand-mère [t']aime beaucoup. | مادربزرگت خیلی دوستت دارد. | d: te, toi, ton
@@ -47,7 +47,7 @@ Vous [nous] attendez ? | منتظر ما هستید؟ | d: notre, nos, se
 Mon père [nous] emmène à l'école. | پدرم ما را به مدرسه می‌برد. | d: notre, nos, on | hint: (nous)
 Le serveur [nous] apporte le menu. | گارسون منو را برایمان می‌آورد. | d: notre, nos, on
 Ils ne [nous] répondent pas. | آن‌ها جوابمان را نمی‌دهند. | d: notre, nos, on | hint: (nous)
-Tu [nous] invites chez toi samedi ? | شنبه ما را به خانه‌ات دعوت می‌کنی؟ | d: notre, nos, on
+Tu [nous] invites chez toi samedi ? | شنبه ما را به خانه‌ات دعوت می‌کنی؟ | d: notre, nos, on | full: Samedi, tu nous invites chez toi ?
 Je [vous] invite à mon anniversaire. | شما را به تولدم دعوت می‌کنم. | d: votre, vos, se | hint: (vous)
 Le médecin [vous] attend, madame. | خانم، دکتر منتظرتان است. | d: votre, vos, tu
 Je ne [vous] connais pas, monsieur. | آقا، من شما را نمی‌شناسم. | d: votre, vos, se | hint: (vous)
@@ -63,7 +63,7 @@ Mon ami [m']écrit souvent, mais il ne [me] téléphone{téléphoner} pas. | د�
 Je [te] donne mon numéro et tu [m']envoies un message. | شماره‌ام را به تو می‌دهم و تو برایم پیام می‌فرستی. | d: toi, ton, se / me, moi, se
 Ma sœur [me] prête{prêter} ses livres et elle [m']aide{aider}. | خواهرم کتاب‌هایش را به من قرض می‌دهد و کمکم می‌کند. | d: moi, mon, je / me, moi, mon
 Le professeur [vous] parle, mais vous ne [l']écoutez pas ! | معلم با شما حرف می‌زند، ولی شما به حرفش گوش نمی‌دهید! | d: votre, vos, tu / lui, le, la
-Je [t']appelle{appeler} ce soir et tu [me] racontes ta journée. | امشب به تو زنگ می‌زنم و روزت را برایم تعریف می‌کنی. | d: te, toi, se / moi, mon, se
+Je [t']appelle{appeler} ce soir et tu [me] racontes ta journée. | امشب به تو زنگ می‌زنم و روزت را برایم تعریف می‌کنی. | d: te, toi, se / moi, mon, se | full: Ce soir, je t'appelle et tu me racontes ta journée.
 transforms:
 Paul invite Marie et moi. => Paul nous invite. | به‌جای «Marie et moi» ضمیر بگذار.
 Tu me parles. => Je te parle. | جای «من» و «تو» را عوض کن.
@@ -74,11 +74,11 @@ Il m'appelle. => Ils m'appellent. | جمله را با ils بنویس.
 Je t'écoute. => Nous t'écoutons. | جمله را با nous بنویس.
 Paul nous écrit. => Paul ne nous écrit pas. | جمله را منفی کن.
 translations:
-کمکم می‌کنی؟ => Tu m'aides ? ; Est-ce que tu m'aides ?
+کمکم می‌کنی؟ => Tu m'aides ? ; Est-ce que tu m'aides ? ; M'aides-tu ?
 مادرم به من زنگ می‌زند. => Ma mère m'appelle{appeler}. ; Ma mère me téléphone{téléphoner}.
 حرفت را نمی‌فهمم. => Je ne te comprends pas.
 منتظرتان هستیم. => Nous vous attendons. ; On vous attend.
-مرا می‌بینی؟ => Tu me vois ? ; Est-ce que tu me vois ?
+مرا می‌بینی؟ => Tu me vois ? ; Est-ce que tu me vois ? ; Me vois-tu ?
 پل به ما زنگ می‌زند. => Paul nous appelle{appeler}. ; Paul nous téléphone{téléphoner}.
 دوستانم مرا دعوت می‌کنند. => Mes amis m'invitent. ; Mes amies m'invitent.
 چرا جوابم را نمی‌دهی؟ => Pourquoi tu ne me réponds pas ? ; Pourquoi est-ce que tu ne me réponds pas ? ; Pourquoi ne me réponds-tu pas ?

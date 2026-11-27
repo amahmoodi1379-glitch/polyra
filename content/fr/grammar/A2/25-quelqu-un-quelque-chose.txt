@@ -23,14 +23,14 @@ Chaque élève a un livre. | هر شاگرد یک کتاب دارد.
 J'ai vu ce film plusieurs fois. | این فیلم را چند بار دیده‌ام.
 targets:
 Je voudrais boire quelque chose [de chaud]. | دلم می‌خواهد یک چیز گرم بنوشم. | d: chaud, de chaude, du chaud
-Tu as fait quelque chose [d']intéressant ce week-end ? | این آخر هفته کار جالبی کردی؟ | d: de, du, des
-On va manger quelque chose [de bon] ce soir. | امشب یک چیز خوب می‌خوریم. | d: bon, de bonne, du bon
+Tu as fait quelque chose [d']intéressant ce week-end ? | این آخر هفته کار جالبی کردی؟ | d: de, du, des | full: Ce week-end, tu as fait quelque chose d'intéressant ?
+On va manger quelque chose [de bon] ce soir. | امشب یک چیز خوب می‌خوریم. | d: bon, de bonne, du bon | full: Ce soir, on va manger quelque chose de bon.
 J'ai acheté quelque chose [de joli] pour ma mère. | برای مادرم یک چیز قشنگ خریدم. | d: joli, de jolie, du joli
 Ce{ce-pron} n'est rien [de grave]. | چیز مهمی نیست. | d: grave, du grave, de graves
 Paul est quelqu'un [de sérieux]. | پل آدم جدی‌ای است. | d: sérieux, du sérieux, très sérieux
-Il n'y a rien [d']intéressant à la télé. | در تلویزیون هیچ چیز جالبی نیست. | d: de, du, des
+Il n'y a rien [d']intéressant à la télé. | در تلویزیون هیچ چیز جالبی نیست. | d: de, du, des | full: À la télé, il n'y a rien d'intéressant.
 Je cherche quelqu'un [de sympa] pour partager l'appartement. | دنبال یک آدم خوش‌اخلاق برای هم‌خانه شدن می‌گردم. | d: sympa, du sympa, très sympa
-Il y a quelque chose [de bizarre] dans cette maison. | در این خانه یک چیز عجیب هست. | d: bizarre, du bizarre, des bizarres
+Il y a quelque chose [de bizarre] dans cette maison. | در این خانه یک چیز عجیب هست. | d: bizarre, du bizarre, des bizarres | full: Dans cette maison, il y a quelque chose de bizarre.
 Tu connais quelqu'un [de célèbre] ? | آدم مشهوری می‌شناسی؟ | d: célèbre, du célèbre, très célèbre
 Quelqu'un [a] pris mon stylo. | کسی خودکارم را برداشته. | d: ont, avez, avons | hint: (avoir)
 Quelqu'un [est] venu ce matin. | امروز صبح کسی آمد. | d: sont, a, ont | hint: (être) | full: Ce matin, quelqu'un est venu.
@@ -52,15 +52,15 @@ Je vais à la piscine [chaque] samedi. | هر شنبه به استخر می‌ر
 Chaque personne [peut] prendre deux livres. | هر نفر می‌تواند دو کتاب بردارد. | d: peuvent, pouvons, pouvez | hint: (pouvoir)
 Il a [plusieurs] voitures. | او چند ماشین دارد. | d: plusieur, plusieures, des plusieurs
 J'ai [plusieurs] questions. | چند سؤال دارم. | d: plusieur, plusieures, des plusieurs
-Nous sommes restés [plusieurs] jours à Nice. | چند روز در نیس ماندیم. | d: plusieur, plusieures, des plusieurs
-Il y a [plusieurs] restaurants dans la rue. | در این خیابان چند رستوران هست. | d: plusieur, des plusieurs, chaque
+Nous sommes restés [plusieurs] jours à Nice. | چند روز در نیس ماندیم. | d: plusieur, plusieures, des plusieurs | full: Nous sommes restés à Nice plusieurs jours.
+Il y a [plusieurs] restaurants dans la rue. | در این خیابان چند رستوران هست. | d: plusieur, des plusieurs, chaque | full: Dans la rue, il y a plusieurs restaurants.
 Quelqu'un [a] téléphoné, mais personne n'[a] répondu. | کسی تلفن زد، ولی هیچ‌کس جواب نداد. | d: ont, avez, sont / ont, avons, es
 [Chaque] élève a [plusieurs] livres. | هر شاگرد چند کتاب دارد. | d: Chaques, Chacun, Tous / plusieur, plusieures, des plusieurs
 Tu veux boire quelque chose [de chaud] ou quelque chose [de froid] ? | چیز گرم می‌خواهی بنوشی یا چیز سرد؟ | d: chaud, de chaude, du chaud / froid, de froide, du froid
 Quelqu'un [est] là ? Non, il n'y a [personne]. | کسی آنجاست؟ نه، هیچ‌کس نیست. | d: sont, a, ont / quelqu'un, aucun, personnes
 [Chaque] jour, je lis quelque chose [d']intéressant. | هر روز یک چیز جالب می‌خوانم. | d: Chaques, Chacun, Tous / de, du, des | full: Je lis quelque chose d'intéressant chaque jour.
 J'ai cherché pendant [plusieurs] heures, mais je n'ai [rien] trouvé. | چند ساعت گشتم، ولی هیچ چیز پیدا نکردم. | d: plusieur, plusieures, des plusieurs / personne, quelque chose, aucun
-Je connais [plusieurs] personnes ici, mais [personne] ne parle persan. | اینجا چند نفر را می‌شناسم، ولی هیچ‌کس فارسی حرف نمی‌زند. | d: plusieur, plusieures, des plusieurs / quelqu'un, rien, chaque
+Je connais [plusieurs] personnes ici, mais [personne] ne parle persan. | اینجا چند نفر را می‌شناسم، ولی هیچ‌کس فارسی حرف نمی‌زند. | d: plusieur, plusieures, des plusieurs / quelqu'un, rien, chaque | full: Ici, je connais plusieurs personnes, mais personne ne parle persan.
 Tu as [quelque chose] à faire ? Non, je n'ai [rien] à faire. | کاری داری؟ نه، هیچ کاری ندارم. | d: quelqu'un, quelque part, quelques chose / quelque chose, personne, aucun
 transforms:
 Je vois quelqu'un. => Je ne vois personne. | جمله را منفی کن.

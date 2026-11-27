@@ -9,7 +9,7 @@ lesson:
 ich hätte gern … یعنی «… می‌خواستم» و برای سفارش و خرید است: Ich hätte gern einen Kaffee. هم‌معنی ich möchte است و هر دو مؤدب‌اند؛ ich will در مغازه بی‌ادبانه است.
 ich würde gern با یک فعل در آخر جمله یعنی «دلم می‌خواهد …»: Ich würde gern nach Wien fahren.
 برای خواهش مؤدبانه، به‌جای Kannst du …? و Können Sie …? بگو Könntest du …? و Könnten Sie …?، یا Würdest du …? و Würden Sie …?: Könnten Sie mir bitte helfen?
-das wäre … یعنی «… می‌شد» یا «… خوب است»: Das wäre schön! Morgen um zehn wäre gut.
+das wäre … یعنی «… می‌شد» یا شکل مؤدبانه‌ترِ «… است»: Das wäre schön! («خیلی خوب می‌شد!») Morgen um zehn wäre gut. («فردا ساعت ده خوب است.»)
 برای توصیه («بهتر است …») بگو du solltest یا Sie sollten: Du solltest mehr schlafen. در واحد قبل sollte با «دیروز» یعنی «قرار بود»؛ اینجا بدون زمان گذشته یعنی «بهتر است».
 پایان‌ها مثل Präteritum فعل‌های وجهی است: ich hätte، du hättest، er hätte، wir hätten، ihr hättet، sie/Sie hätten.
 table:
@@ -23,7 +23,7 @@ sie/Sie | hätten | würden | könnten | wären | sollten
 sets:
 سفارش و خواسته: Ich hätte gern …, Ich möchte …, Ich würde gern …
 خواهش: Könnten Sie …?, Könntest du …?, Würden Sie …?, Würdest du …?
-توصیه و پیشنهاد: Du solltest …, Sie sollten …, Wir könnten …, Das wäre …
+توصیه و پیشنهاد: Du solltest …, Sie sollten …, Wir könnten …, Du könntest …
 examples:
 Ich hätte gern ein Stück Kuchen. | یک تکه کیک می‌خواستم.
 Könnten Sie das bitte{bitte} buchstabieren? | لطفاً می‌توانید هجی‌اش کنید؟
@@ -32,8 +32,8 @@ Das wäre super! | عالی می‌شد!
 targets:
 Ich [hätte] gern einen Kaffee. | یک قهوه می‌خواستم. | d: hättest, hätten, hättet | hint: (haben)
 Wir [hätten] gern zwei Brötchen. | ما دو تا نان صبحانه می‌خواستیم. | d: hätte, hättet, hättest | hint: (haben)
-[Hätten] Sie einen Moment Zeit? | یک لحظه وقت دارید؟ | d: Hätte, Hättest, Hättet
-[Hättest] du morgen Zeit? | فردا وقت داری؟ | d: Hätte, Hätten, Hättet
+[Hätten] Sie einen Moment Zeit? | یک لحظه وقت دارید؟ | d: Hätte, Hättest, Hättet | ok: Haben
+[Hättest] du morgen Zeit? | فردا وقت داری؟ | d: Hätte, Hätten, Hättet | ok: Hast
 [Hätten] Sie gern einen Tisch am Fenster? | میزی کنار پنجره می‌خواهید؟ | d: Hätte, Hättest, Hättet
 Ich [würde] gern ein Praktikum machen. | دلم می‌خواهد یک دوره کارآموزی بگذرانم. | d: würdest, würden, würdet | hint: (werden)
 Am liebsten [würde] ich heute zu Hause bleiben. | از همه بیشتر دلم می‌خواهد امروز خانه بمانم. | d: würdest, würden, würdet | full: Ich würde heute am liebsten zu Hause bleiben.
@@ -43,17 +43,17 @@ Ich würde gern nach Wien [fahren]. | دلم می‌خواهد به وین بر�
 [Würden] Sie bitte{bitte} das Fenster zumachen? | لطفاً پنجره را می‌بندید؟ | d: Würdest, Würde, Würdet | full: Würden Sie das Fenster bitte zumachen?
 Würdest du mir bitte{bitte} das Salz [geben]? | لطفاً نمک را به من می‌دهی؟ | d: gibst, gibt, gegeben | hint: (geben) | full: Würdest du mir das Salz bitte geben?
 Würden Sie bitte{bitte} langsamer [sprechen]? | لطفاً آهسته‌تر صحبت می‌کنید؟ | d: sprecht, spricht, gesprochen | hint: (sprechen)
-[Könnten] Sie mir bitte{bitte} den Weg zeigen? | لطفاً می‌توانید راه را به من نشان بدهید؟ | d: Könntest, Könnte, Könntet | hint: (können)
-[Könntest] du mich morgen anrufen? | می‌شود فردا به من زنگ بزنی؟ | d: Könnten, Könnte, Könntet | hint: (können)
+[Könnten] Sie mir bitte{bitte} den Weg zeigen? | لطفاً می‌توانید راه را به من نشان بدهید؟ | d: Könntest, Könnte, Könntet | ok: Können | hint: (können)
+[Könntest] du mich morgen anrufen? | می‌شود فردا به من زنگ بزنی؟ | d: Könnten, Könnte, Könntet | ok: Kannst | hint: (können)
 Könnten Sie das bitte{bitte} [wiederholen]? | لطفاً می‌توانید تکرارش کنید؟ | d: wiederholt, wiederhole, wiedergeholt | hint: (wiederholen) | full: Könnten Sie bitte das wiederholen?
 Könntest du mir dein Wörterbuch [leihen]{leihen}? | می‌شود فرهنگ لغتت را به من قرض بدهی؟ | d: leihst, leiht, geliehen | hint: (leihen)
-[Könntet] ihr bitte{bitte} leise sein{sein}? | لطفاً می‌شود ساکت باشید؟ | d: Könnten, Könntest, Könnte | hint: (können)
-Vielleicht [könnten] Sie den Bus nehmen. | شاید بتوانید با اتوبوس بروید. | d: könnte, könntest, könntet
-Wir [könnten] am Wochenende ins Kino gehen. | می‌توانیم آخر هفته به سینما برویم. | d: könnte, könntest, könntet | full: Am Wochenende könnten wir ins Kino gehen.
+[Könntet] ihr bitte{bitte} leise sein{sein}? | لطفاً می‌شود ساکت باشید؟ | d: Könnten, Könntest, Könnte | ok: Könnt | hint: (können)
+Vielleicht [könnten] Sie den Bus nehmen. | شاید بتوانید با اتوبوس بروید. | d: könnte, könntest, könntet | ok: können
+Wir [könnten] am Wochenende ins Kino gehen. | می‌توانیم آخر هفته به سینما برویم. | d: könnte, könntest, könntet | ok: können | full: Am Wochenende könnten wir ins Kino gehen.
 Das [wäre] schön! | خیلی خوب می‌شد! | d: wären, wärst, wärt | hint: (sein)
-Morgen um zehn [wäre] gut. | فردا ساعت ده خوب است. | d: wären, wärst, wärt | hint: (sein)
-[Wäre] das okay für dich? | برایت اشکالی ندارد؟ | d: Wären, Wärst, Wärt
-Das [wäre] sehr nett von Ihnen. | خیلی لطف می‌کنید. | d: wären, wärst, wärt
+Morgen um zehn [wäre] gut. | فردا ساعت ده خوب است. | d: wären, wärst, wärt | ok: ist | hint: (sein)
+[Wäre] das okay für dich? | برایت اشکالی ندارد؟ | d: Wären, Wärst, Wärt | ok: Ist
+Das [wäre] sehr nett von Ihnen. | خیلی لطف می‌کنید. | d: wären, wärst, wärt | ok: ist
 Du [solltest] mehr{mehr} schlafen. | بهتر است بیشتر بخوابی. | d: sollte, solltet, sollten | hint: (sollen)
 Bei Fieber [sollten] Sie zum Arzt gehen. | با تب بهتر است پیش دکتر بروید. | d: sollte, solltest, solltet | hint: (sollen) | full: Sie sollten bei Fieber zum Arzt gehen.
 Die Kinder [sollten] mehr{mehr} Obst essen. | بهتر است بچه‌ها بیشتر میوه بخورند. | d: sollte, solltest, solltet
@@ -62,14 +62,14 @@ Er [sollte] weniger Kaffee trinken. | بهتر است او کمتر قهوه ب�
 Du solltest nicht so spät ins Bett [gehen]. | بهتر است این‌قدر دیر نخوابی. | d: gehst, geht, gegangen | hint: (gehen)
 Ihr [solltet] eine Jacke mitnehmen, es ist kalt. | بهتر است کاپشن با خودتان ببرید، هوا سرد است. | d: sollte, solltest, sollten | hint: (sollen)
 Was [möchten] Sie trinken? | چه میل دارید بنوشید؟ | d: möchte, möchtest, möchtet
-[Könnten] Sie mir bitte{bitte} [helfen]? | لطفاً می‌توانید به من کمک کنید؟ | d: Könntest, Könnte, Könntet / helfe, hilft, geholfen
+[Könnten] Sie mir bitte{bitte} [helfen]? | لطفاً می‌توانید به من کمک کنید؟ | d: Könntest, Könnte, Könntet / helfe, hilft, geholfen | ok: Können
 Ich [hätte] gern einen Tee und meine Frau [hätte] gern einen Kaffee. | من یک چای می‌خواستم و همسرم یک قهوه. | d: hättest, hätten, hättet / hättest, hätten, hättet
 Du [solltest] weniger arbeiten und mehr{mehr} [schlafen]. | بهتر است کمتر کار کنی و بیشتر بخوابی. | d: sollte, solltet, sollten / schläfst, schlaf, geschlafen
 [Würdest] du bitte{bitte} das Licht [ausschalten]? | لطفاً چراغ را خاموش می‌کنی؟ | d: Würden, Würde, Würdet / schaltest aus, ausschaltest, ausgeschaltet | full: Würdest du das Licht bitte ausschalten?
-[Hättest] du heute Abend Zeit? Das [wäre] schön. | امشب وقت داری؟ خیلی خوب می‌شد. | d: Hätte, Hätten, Hättet / wären, wärst, wärt
+[Hättest] du heute Abend Zeit? Das [wäre] schön. | امشب وقت داری؟ خیلی خوب می‌شد. | d: Hätte, Hätten, Hättet / wären, wärst, wärt | ok: Hast
 Ich [würde] gern kommen, aber ich muss [arbeiten]. | دلم می‌خواهد بیایم، ولی باید کار کنم. | d: würdest, würden, würdet / arbeite, arbeitet, gearbeitet
 Wir [sollten] den Zug um acht [nehmen]. | بهتر است قطار ساعت هشت را بگیریم. | d: sollte, solltest, solltet / nehmt, nimmt, genommen
-Herr Müller, [hätten] Sie Zeit? Ich [hätte] eine Frage. | آقای مولر، وقت دارید؟ یک سؤال داشتم. | d: hätte, hättest, hättet / hättest, hätten, hättet
+Herr Müller, [hätten] Sie Zeit? Ich [hätte] eine Frage. | آقای مولر، وقت دارید؟ یک سؤال داشتم. | d: hätte, hättest, hättet / hättest, hätten, hättet | ok: haben / habe
 transforms:
 Ich möchte einen Kaffee. => Ich hätte gern einen Kaffee. ; Ich hätte gerne einen Kaffee. | با «hätte gern» بگو.
 Können Sie mir helfen? => Könnten Sie mir helfen? | مؤدبانه‌تر بپرس (با könnten).

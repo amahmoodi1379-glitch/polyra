@@ -40,7 +40,7 @@ Paul est seul : invite-[le]{le-pron} à la fête ! | پل تنهاست: به ج�
 Ton frère a besoin d'aide : aide{aider}-[le]{le-pron} ! | برادرت کمک لازم دارد: کمکش کن! | d: lui, la, leur
 Marie et Léa arrivent : attendons-[les]{les-pron} ! | ماری و لئا دارند می‌آیند: منتظرشان بمانیم! | d: leur, la, elles
 Ta grand-mère est malade : téléphone{téléphoner}-[lui] ! | مادربزرگت مریض است: به او تلفن بزن! | d: la, le, leur
-Tes parents t'attendent : réponds-[leur]{leur} ! | پدر و مادرت منتظرت هستند: جوابشان را بده! | d: les, lui, leurs
+Tes parents t'ont écrit : réponds-[leur]{leur} ! | پدر و مادرت برایت نوشته‌اند: جوابشان را بده! | d: les, lui, leurs
 C'{ce-pron}est{être} l'anniversaire de Marie : offre-[lui] un cadeau ! | تولد ماری است: به او یک هدیه بده! | d: la, le, leur
 Les enfants ont faim : donne-[leur]{leur} du pain ! | بچه‌ها گرسنه‌اند: به آن‌ها نان بده! | d: les, lui, leurs
 Ce monsieur habite ici : demande-[lui] le chemin ! | این آقا اینجا زندگی می‌کند: راه را از او بپرس! | d: le, la, leur
@@ -59,7 +59,7 @@ Tu as une question ? [Pose-la{la-pron}] au professeur ! | سؤال داری؟ ا
 Votre passeport ? [Montrez-le{le-pron}] au policier ! | پاسپورتتان؟ به پلیس نشانش بدهید! | d: Le montrez, Montrez-lui, Montrez-la
 Écoute-[moi] et ne [me] parle pas comme ça ! | به حرفم گوش کن و این‌طوری با من حرف نزن! | d: me, je, m' / moi, je, m'
 Ton frère pleure : aide{aider}-[le]{le-pron} et ne [le] laisse pas seul ! | برادرت گریه می‌کند: کمکش کن و تنهایش نگذار! | d: lui, la, leur / lui, la, les
-Tes amis sont là : dis-[leur]{leur} bonjour et invite-[les]{les-pron} ! | دوستانت اینجا هستند: به آن‌ها سلام کن و دعوتشان کن! | d: les, lui, leurs / leur, la, le
+Tes amis sont là : dis-[leur]{leur} bonjour et invite-[les]{les-pron} à manger ! | دوستانت اینجا هستند: به آن‌ها سلام کن و برای غذا دعوتشان کن! | d: les, lui, leurs / leur, la, le
 Ce sont tes devoirs : fais-[les]{les-pron} et ne [les] oublie pas ! | این‌ها تکالیف توست: انجامشان بده و فراموششان نکن! | d: leur, le, la / leur, le, la
 Paul est triste : téléphone{téléphoner}-[lui] et invite-[le]{le-pron} au cinéma ! | پل ناراحت است: به او تلفن بزن و به سینما دعوتش کن! | d: le, la, leur / lui, la, leur
 Il y a des fraises : [manges]-en{en-pron}, mais n'[en] mange pas trop ! | توت‌فرنگی هست: بخور، ولی زیاد نخور! | d: mange, manger, mangé / y, les, le

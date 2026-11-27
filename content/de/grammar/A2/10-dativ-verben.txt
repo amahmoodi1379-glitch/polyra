@@ -36,7 +36,7 @@ Wem [gehört{gehören}] die Tasche? | این کیف مال کیست؟ | d: gehö
 Die Tasche gehört{gehören} [mir] nicht. | این کیف مال من نیست. | d: mich, ich, mein | hint: (ich)
 [Wem] gehört{gehören} das Handy? | این موبایل مال کیست؟ | d: Wer, Wen, Was
 Das Handy gehört{gehören} [einer] Freundin von mir. | این موبایل مال یکی از دوستانم است. | d: eine, einem, einen
-Ich danke [dir] für die Hilfe. | از تو برای کمکت ممنونم. | d: dich, du, dein | hint: (du)
+Ich danke [dir] für die Hilfe. | از تو به خاطر کمکت ممنونم. | d: dich, du, dein | hint: (du)
 Wir danken [dem] Lehrer. | ما از معلم تشکر می‌کنیم. | d: den, der, das
 Ich antworte [der] Lehrerin. | به خانم معلم جواب می‌دهم. | d: die, dem, den
 Warum antwortest du [mir] nicht? | چرا جوابم را نمی‌دهی؟ | d: mich, ich, mein | hint: (ich)
@@ -47,7 +47,7 @@ Das Essen schmeckt [den] Kindern sehr gut. | غذا به بچه‌ها خیلی 
 Ich gratuliere [dir] zum Geburtstag! | تولدت را تبریک می‌گویم! | d: dich, du, dein | hint: (du)
 Wir gratulieren [unserer]{unser} Oma zum Geburtstag. | تولد مادربزرگمان را به او تبریک می‌گوییم. | d: unsere, unser, unseren
 Die Hose [passt] mir nicht. | این شلوار اندازه‌ام نیست. | d: passe, passen, pass | hint: (passen)
-Paul hat neue Schuhe, aber sie passen [ihm] nicht. | پاول کفش نو دارد، ولی اندازه‌اش نیستند. | d: ihn, er, sein | hint: (er)
+Paul hat Schuhe gekauft, aber sie passen [ihm] nicht. | پاول کفش خریده است، ولی اندازه‌اش نیستند. | d: ihn, er, sein | hint: (er)
 Passt [Ihnen] der Termin am Montag? | وقت دوشنبه برایتان مناسب است؟ | d: Sie, Ihre, Ihren
 Was fehlt [dir]? – Ich habe Fieber. | چه‌ات شده؟ – تب دارم. | d: dich, du, dein | hint: (du)
 Mir [fehlt] ein Euro. | یک یورو کم دارم. | d: fehle, fehlst, fehlen | hint: (fehlen) | full: Ein Euro fehlt mir.

@@ -29,7 +29,7 @@ Tu préfères [rester] à la maison ? | ترجیح می‌دهی خانه بما
 Nous voulons [visiter] le musée. | می‌خواهیم از موزه دیدن کنیم. | d: visitons, de visiter, à visiter | hint: (visiter)
 J'espère [réussir] mon examen. | امیدوارم در امتحانم قبول شوم. | d: réussis, à réussir, réussi | hint: (réussir)
 Ils détestent [attendre]. | آن‌ها از منتظر ماندن بدشان می‌آید. | d: attendent, à attendre, attendu | hint: (attendre)
-Je n'aime pas [conduire] la nuit. | دوست ندارم شب رانندگی کنم. | d: conduis, conduit, conduisant | hint: (conduire)
+Je n'aime pas [conduire] la nuit. | دوست ندارم شب رانندگی کنم. | d: conduis, conduit, conduisant | hint: (conduire) | full: La nuit, je n'aime pas conduire.
 J'apprends [à] conduire. | دارم رانندگی یاد می‌گیرم. | d: de, en, au
 Il commence [à] pleuvoir. | دارد باران می‌گیرد. | d: au, en, a
 Le professeur m'aide{aider} [à] comprendre. | معلم کمکم می‌کند بفهمم. | d: de, au, en
@@ -70,7 +70,7 @@ Il pleut. => Il commence à pleuvoir. | با commencer بنویس: «دارد ب
 Je dors. => J'essaie de dormir. ; J'essaye de dormir. | با essayer بنویس: «سعی می‌کنم بخوابم».
 Je conduis. => J'apprends à conduire. | با apprendre بنویس: «رانندگی یاد می‌گیرم».
 Je pars. => J'ai décidé de partir. | با décider در passé composé بنویس: «تصمیم گرفتم بروم».
-Il parle. => Il arrête de parler. | با arrêter بنویس: «دیگر حرف نمی‌زند».
+Il parle. => Il arrête de parler. | با arrêter بنویس: «دست از حرف زدن می‌کشد».
 J'apprends de nager. => J'apprends à nager. | غلط جمله را درست کن.
 translations:
 شنا بلدم. => Je sais nager.
@@ -79,5 +79,5 @@ translations:
 یادم رفت در را ببندم. => J'ai oublié de fermer la porte.
 دارم رانندگی یاد می‌گیرم. => J'apprends à conduire. ; Je suis en train d'apprendre à conduire.
 تصمیم گرفتیم زود راه بیفتیم. => Nous avons décidé de partir tôt. ; On a décidé de partir tôt.
-دلم می‌خواهد بیرون بروم. => J'ai envie de sortir.
+دلم می‌خواهد بیرون بروم. => J'ai envie de sortir. ; Je veux sortir. ; J'aimerais sortir. ; Je voudrais sortir.
 دارد باران می‌گیرد. => Il commence à pleuvoir.

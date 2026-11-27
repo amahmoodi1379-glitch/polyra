@@ -5,8 +5,8 @@ turns:
 B: Bonjour ! Vous avez une question ? | سلام! سؤالی دارید؟
 - Oui. Je voudrais aller au gare de Lyon. C'est{être} quelle ligne ? | بله. می‌خواهم به گار دو لیون بروم. کدام خط است؟
 + Oui. Je voudrais aller à la gare de Lyon. C'est{être} quelle ligne ? | بله. می‌خواهم به گار دو لیون بروم. کدام خط است؟
-- Oui. Je voudrais aller à Lyon. C'est{être} quelle ligne ? | بله. می‌خواهم به شهر لیون بروم. کدام خط است؟
-why: gare مؤنث است: «à la gare de Lyon». لیون شهر دیگری است و با مترو نمی‌شود به آن رفت.
+- Non. Je voudrais aller à la gare de Lyon. C'est{être} quelle ligne ? | نه. می‌خواهم به گار دو لیون بروم. کدام خط است؟
+why: gare مؤنث است: «à la gare de Lyon». سؤال داری، پس جواب «Oui» است، نه «Non».
 B: C'est{être} facile : c'est{être} la ligne un{un-num}, et il n'y a pas de changement. Vous avez un ticket ? | آسان است: خط یک است و لازم نیست خط عوض کنید. بلیت دارید؟
 + Non, pas encore. Où est-ce que je peux en acheter ? | نه، هنوز نه. کجا می‌توانم بخرم؟
 - Non, déjà. Où est-ce que je peux en acheter ? | نه، از قبل. کجا می‌توانم بخرم؟

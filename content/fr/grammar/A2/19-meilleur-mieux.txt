@@ -10,7 +10,7 @@ bon (خوب) صفت است و کنار اسم می‌آید. «بهتر» آن m
 meilleur مثل هر صفت دیگری با اسم جور می‌شود: un meilleur film، une meilleure idée، و در جمع meilleurs و meilleures.
 bien (خوب) قید است، یعنی کلمه‌ای که می‌گوید کاری «چطور» انجام می‌شود: Tu chantes bien. «بهتر» آن mieux است، نه «plus bien»: Tu chantes mieux que moi. mieux هیچ‌وقت عوض نمی‌شود.
 راه ساده: اگر در جملهٔ ساده bon می‌گفتی، حالا meilleur بگو؛ اگر bien می‌گفتی، mieux بگو. Je vais bien → Je vais mieux (حالم بهتر است).
-«بهترین» با le، la و les ساخته می‌شود: le meilleur restaurant، la meilleure amie، ma meilleure amie. با فعل همیشه le mieux است: C'est Léa qui danse le mieux.
+«بهترین» با le، la و les (یا با mon، ma…) ساخته می‌شود: le meilleur restaurant، la meilleure idée، ma meilleure amie. با فعل همیشه le mieux است: C'est Léa qui danse le mieux.
 برای «بیشترِ» و «کمترِ» یک اسم، plus de و moins de می‌گوییم، بدون حرف تعریف: plus de temps (وقت بیشتر)، moins de voitures (ماشین کمتر)؛ قبل از صدادار d': plus d'argent.
 برای مقایسه que را اضافه کن: J'ai plus de livres que toi (من از تو کتاب بیشتری دارم).
 table:
@@ -31,10 +31,10 @@ Ta soupe est [meilleure] que la soupe du{du-contr} restaurant. | سوپ تو ا�
 Le pain de cette boulangerie est [meilleur] que le pain du{du-contr} supermarché. | نان این نانوایی از نان سوپرمارکت بهتر است. | d: plus bon, meilleure, meilleurs | hint: (bon)
 En été{été}, les fraises sont [meilleures]. | توت‌فرنگی‌ها در تابستان بهترند. | d: meilleurs, meilleure, meilleur | full: Les fraises sont meilleures en été.
 Mon frère nage [mieux] que moi. | برادرم از من بهتر شنا می‌کند. | d: meilleur, plus bien, plus bon | hint: (bien)
-Je dors [mieux] avec la fenêtre ouverte. | با پنجرهٔ باز بهتر می‌خوابم. | d: meilleur, bon, plus bon | hint: (bien)
+Je dors [mieux] avec la fenêtre ouverte. | با پنجرهٔ باز بهتر می‌خوابم. | d: meilleur, bon, plus bon | hint: (bien) | full: Avec la fenêtre ouverte, je dors mieux.
 Vous allez [mieux] aujourd'hui, madame ? | امروز حالتان بهتر است، خانم؟ | d: meilleur, bon, plus bon | hint: (bien)
-Tu comprends [mieux] maintenant ? | حالا بهتر می‌فهمی؟ | d: meilleur, bon, plus bon | hint: (bien)
-Elle a [mieux] dormi cette nuit. | او دیشب بهتر خوابید. | d: meilleure, meilleur, bon | hint: (bien)
+Tu comprends [mieux] maintenant ? | حالا بهتر می‌فهمی؟ | d: meilleur, bon, plus bon | hint: (bien) | full: Maintenant, tu comprends mieux ?
+Elle a [mieux] dormi cette nuit. | او دیشب بهتر خوابید. | d: meilleure, meilleur, bon | hint: (bien) | full: Cette nuit, elle a mieux dormi.
 On mange [mieux] à la maison qu'au restaurant. | در خانه بهتر از رستوران غذا می‌خوریم. | d: meilleur, plus bien, plus bon | hint: (bien)
 Le matin, je travaille [mieux]. | صبح‌ها بهتر کار می‌کنم. | d: meilleur, bon, plus bon | hint: (bien) | full: Je travaille mieux le matin.
 C'{ce-pron}est{être} [le meilleur] hôtel de Nice. | این بهترین هتل نیس است. | d: le mieux, le plus bon, la meilleure | hint: (bon)
@@ -65,7 +65,7 @@ J'ai [plus{plus} de] travail et [moins de] temps libre cette année. | امسا�
 Ma mère cuisine{cuisiner} [mieux] que moi : ses gâteaux sont [meilleurs]. | مادرم از من بهتر آشپزی می‌کند: کیک‌هایش بهترند. | d: meilleur, plus bien, plus bon / meilleur, meilleures, meilleure
 Ici, il y a [moins de] bruit et [plus d']arbres. | اینجا سروصدا کمتر و درخت بیشتر است. | d: moins du, moins, moins que / plus des, plus de, plus | full: Il y a moins de bruit et plus d'arbres ici.
 Elle parle [mieux] anglais que moi, mais j'ai [plus{plus} de] vocabulaire. | او از من بهتر انگلیسی حرف می‌زند، ولی من لغت بیشتری بلدم. | d: meilleur, plus bien, plus bon / plus du, plus, plus que
-Les croissants sont [meilleurs] ici, mais il y a [moins de] choix. | کروسان‌ها اینجا بهترند، ولی انتخاب کمتری هست. | d: meilleur, meilleures, meilleure / moins du, moins, moins que
+Les croissants sont [meilleurs] ici, mais il y a [moins de] choix. | کروسان‌ها اینجا بهترند، ولی انتخاب کمتری هست. | d: meilleur, meilleures, meilleure / moins du, moins, moins que | full: Ici, les croissants sont meilleurs, mais il y a moins de choix.
 Paul est [le meilleur] élève, mais Léa travaille [le mieux]. | پل بهترین شاگرد است، ولی لئا از همه بهتر کار می‌کند. | d: le mieux, la meilleure, le plus bon / le meilleur, la meilleure, la mieux
 transforms:
 Ce gâteau est bon. => Ce gâteau est meilleur. | «خوب» را «بهتر» کن.

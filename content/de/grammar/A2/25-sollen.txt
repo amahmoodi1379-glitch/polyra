@@ -8,7 +8,7 @@ tables: Präsens | sollen
 lesson:
 sollen هم مثل müssen یعنی «باید»، ولی وقتی کس دیگری این کار را از ما خواسته یا توصیه کرده: Der Arzt sagt, ich soll mehr schlafen. یعنی «دکتر می‌گوید باید بیشتر بخوابم».
 müssen بیشتر یعنی «مجبورم» یا «لازم است»: Ich muss heute arbeiten.
-صرف sollen مثل können است: ich soll، du sollst، er soll، wir sollen، ihr sollt، sie/Sie sollen؛ ich و er/sie/es هیچ پایانی نمی‌گیرند.
+صرف sollen مثل بقیه فعل‌های وجهی است، ولی حرف صدادارش عوض نمی‌شود: ich soll، du sollst، er soll، wir sollen، ihr sollt، sie/Sie sollen؛ ich و er/sie/es هیچ پایانی نمی‌گیرند.
 با Soll ich …? کمک پیشنهاد می‌دهی یا می‌پرسی طرف چه می‌خواهد: Soll ich das Fenster öffnen? («پنجره را باز کنم؟») Was soll ich machen? («چه کار کنم؟»)
 فعل دوم مثل بقیه فعل‌های وجهی بی‌تغییر آخر جمله می‌رود: Ich soll mehr Gemüse essen.
 گذشته sollen، یعنی sollte، برای کاری است که «قرار بود» انجام شود: Ich sollte gestern Oma anrufen, aber ich habe es vergessen.
@@ -22,54 +22,54 @@ wir | sollen | sollten
 ihr | sollt | solltet
 sie/Sie | sollen | sollten
 sets:
-sollen (خواست کس دیگر): Der Arzt sagt, ich soll …, Soll ich …?, Was soll ich machen?
-müssen (لازم، مجبور): Ich muss arbeiten., Wir müssen gehen.
+Präsens (باید، کس دیگر خواسته): ich soll, du sollst, er soll, wir sollen, ihr sollt
+Präteritum (قرار بود): ich sollte, du solltest, er sollte, wir sollten, ihr solltet
 examples:
 Der Arzt sagt, ich soll weniger Kaffee trinken. | دکتر می‌گوید باید کمتر قهوه بنوشم.
 Soll ich die Tür zumachen? | در را ببندم؟
 Wir sollen um acht Uhr im Büro sein{sein}. | (گفته‌اند) باید ساعت هشت در دفتر باشیم.
 Ich sollte gestern einkaufen, aber ich hatte keine Zeit. | قرار بود دیروز خرید کنم، ولی وقت نداشتم.
 targets:
-Der Arzt sagt, ich [soll] mehr{mehr} schlafen. | دکتر می‌گوید باید بیشتر بخوابم. | d: sollst, sollen, sollt | hint: (sollen)
+Der Arzt sagt, ich [soll] mehr{mehr} schlafen. | دکتر می‌گوید باید بیشتر بخوابم. | d: sollst, sollen, sollt | ok: sollte | hint: (sollen)
 [Soll] ich das Fenster öffnen? | پنجره را باز کنم؟ | d: Sollst, Sollen, Sollt | hint: (sollen)
-Meine Mutter sagt, du [sollst] sofort nach Hause kommen. | مادرم می‌گوید فوراً به خانه بیایی. | d: soll, sollt, sollen | hint: (sollen)
-Der Lehrer sagt, wir [sollen] den Text lesen. | معلم می‌گوید باید متن را بخوانیم. | d: sollt, soll, sollst | hint: (sollen)
-Die Lehrerin sagt, ihr [sollt] leise sein{sein}. | خانم معلم می‌گوید باید ساکت باشید. | d: sollen, sollst, soll | hint: (sollen)
-Was [soll] ich machen? | چه کار کنم؟ | d: sollst, sollen, sollt
+Meine Mutter sagt, du [sollst] sofort nach Hause kommen. | مادرم می‌گوید فوراً به خانه بیایی. | d: soll, sollt, sollen | ok: solltest | hint: (sollen)
+Der Lehrer sagt, wir [sollen] den Text lesen. | معلم می‌گوید باید متن را بخوانیم. | d: sollt, soll, sollst | ok: sollten | hint: (sollen)
+Die Lehrerin sagt, ihr [sollt] leise sein{sein}. | خانم معلم می‌گوید باید ساکت باشید. | d: sollen, sollst, soll | ok: solltet | hint: (sollen)
+Was [soll] ich machen? | چه کار کنم؟ | d: sollst, sollen, sollt | ok: sollte
 Wo [soll] ich unterschreiben? | کجا را امضا کنم؟ | d: sollst, sollen, sollt
-Wann [sollen] wir morgen kommen? | فردا کی بیاییم؟ | d: sollt, soll, sollst
-Paul [soll] jeden Tag eine Tablette nehmen. | پاول باید هر روز یک قرص بخورد (دکتر گفته). | d: sollt, sollst, sollen | hint: (sollen)
-Anna [soll] am Montag zum Chef kommen. | آنا باید دوشنبه پیش رئیس برود (رئیس خواسته). | d: sollt, sollst, sollen | full: Am Montag soll Anna zum Chef kommen.
-Die Kinder [sollen] um neun Uhr ins Bett gehen. | بچه‌ها باید ساعت نه به رختخواب بروند. | d: soll, sollt, sollst | hint: (sollen) | full: Um neun Uhr sollen die Kinder ins Bett gehen.
+Wann [sollen] wir morgen kommen? | فردا کی بیاییم؟ | d: sollt, soll, sollst | ok: sollten
+Paul [soll] jeden Tag eine Tablette nehmen. | پاول باید هر روز یک قرص بخورد (دکتر گفته). | d: sollt, sollst, sollen | ok: sollte | hint: (sollen)
+Anna [soll] am Montag zum Chef kommen. | آنا باید دوشنبه پیش رئیس برود (رئیس خواسته). | d: sollt, sollst, sollen | ok: sollte | full: Am Montag soll Anna zum Chef kommen.
+Die Kinder [sollen] um neun Uhr ins Bett gehen. | بچه‌ها باید ساعت نه به رختخواب بروند. | d: soll, sollt, sollst | ok: sollten | hint: (sollen) | full: Um neun Uhr sollen die Kinder ins Bett gehen.
 [Sollen] wir dich abholen? | بیاییم دنبالت؟ | d: Sollt, Soll, Sollst
-Du [sollst] nicht so viel Zucker essen. | (دکتر گفته) نباید این‌قدر شکر بخوری. | d: soll, sollt, sollen | hint: (sollen)
+Du [sollst] nicht so viel Zucker essen. | (دکتر گفته) نباید این‌قدر شکر بخوری. | d: soll, sollt, sollen | ok: solltest | hint: (sollen)
 Ich soll dich von Anna [grüßen]. | آنا سلام رساند. | d: grüße, grüßt, gegrüßt | hint: (grüßen)
 Mein Vater sagt, ich soll mehr{mehr} Gemüse [essen]. | پدرم می‌گوید باید بیشتر سبزی بخورم. | d: esse, isst, gegessen | hint: (essen)
 Sie sollen bitte{bitte} im Wartezimmer [warten]. | (گفته‌اند) لطفاً در اتاق انتظار منتظر بمانید. | d: wartet, wartest, gewartet | hint: (warten) | full: Sie sollen im Wartezimmer bitte warten.
-Was hat der Arzt gesagt? – Ich [soll] im Bett bleiben. | دکتر چه گفت؟ – باید در رختخواب بمانم. | d: sollst, sollen, sollt
+Was hat der Arzt gesagt? – Ich [soll] im Bett bleiben. | دکتر چه گفت؟ – باید در رختخواب بمانم. | d: sollst, sollen, sollt | ok: sollte
 Der Lehrer hat gesagt, dass ich mehr{mehr} üben [soll]. | معلم گفت که باید بیشتر تمرین کنم. | d: sollst, sollen, sollt | ok: sollte | hint: (sollen)
-Weißt du, was wir mitbringen [sollen]? | می‌دانی چه چیزی باید با خودمان بیاوریم؟ | d: sollt, soll, sollst
+Weißt du, was wir mitbringen [sollen]? | می‌دانی چه چیزی باید با خودمان بیاوریم؟ | d: sollt, soll, sollst | ok: sollten
 Ich [sollte] gestern Oma anrufen, aber ich habe es vergessen. | قرار بود دیروز به مادربزرگ زنگ بزنم، ولی یادم رفت. | d: soll, sollten, solltest | hint: (sollen) | full: Gestern sollte ich Oma anrufen, aber ich habe es vergessen.
-Wir [sollten] um acht Uhr am Bahnhof sein{sein}, aber der Bus hatte Verspätung. | قرار بود ساعت هشت در ایستگاه باشیم، ولی اتوبوس تأخیر داشت. | d: sollen, sollte, solltet | full: Um acht Uhr sollten wir am Bahnhof sein, aber der Bus hatte Verspätung.
+Wir [sollten] gestern um acht Uhr am Bahnhof sein{sein}, aber der Bus hatte Verspätung. | قرار بود دیروز ساعت هشت در ایستگاه باشیم، ولی اتوبوس تأخیر داشت. | d: sollen, sollte, solltet | full: Gestern sollten wir um acht Uhr am Bahnhof sein, aber der Bus hatte Verspätung.
 Max [sollte] letzte Woche die Rechnung bezahlen. | قرار بود ماکس هفته پیش صورت‌حساب را بپردازد. | d: soll, sollten, solltest | hint: (sollen) | full: Letzte Woche sollte Max die Rechnung bezahlen.
-[Solltest] du nicht gestern zum Arzt gehen? | مگر قرار نبود دیروز پیش دکتر بروی؟ | d: Sollst, Sollte, Solltet
+[Solltest] du nicht gestern zum Arzt gehen? | مگر قرار نبود دیروز پیش دکتر بروی؟ | d: Sollst, Sollte, Solltet | full: Solltest du gestern nicht zum Arzt gehen?
 Ihr [solltet] gestern um sechs zu Hause sein{sein}. | قرار بود دیروز ساعت شش خانه باشید. | d: sollt, solltest, sollten | full: Gestern solltet ihr um sechs zu Hause sein.
 Das Paket [sollte] am Montag kommen, aber es ist nicht gekommen. | قرار بود بسته دوشنبه برسد، ولی نرسید. | d: soll, sollten, solltest | full: Am Montag sollte das Paket kommen, aber es ist nicht gekommen.
-Man [soll] im Kino nicht telefonieren. | در سینما نباید با تلفن حرف زد. | d: sollt, sollst, sollen | full: Im Kino soll man nicht telefonieren.
-Frau Weber sagt, Sie [sollen] sie morgen zurückrufen. | خانم وبر می‌گوید فردا با او تماس بگیرید. | d: soll, sollt, sollst
-Du [sollst] deine Hausaufgaben machen, sagt Mama. | مامان می‌گوید باید تکلیف‌هایت را انجام بدهی. | d: soll, sollt, sollen
+Man [soll] im Kino nicht telefonieren. | در سینما نباید با تلفن حرف زد. | d: sollt, sollst, sollen | ok: sollte | full: Im Kino soll man nicht telefonieren.
+Frau Weber sagt, Sie [sollen] sie morgen zurückrufen. | خانم وبر می‌گوید فردا با او تماس بگیرید. | d: soll, sollt, sollst | ok: sollten
+Du [sollst] deine Hausaufgaben machen, sagt Mama. | مامان می‌گوید باید تکلیف‌هایت را انجام بدهی. | d: soll, sollt, sollen | ok: solltest
 [Soll] ich dir einen Tee machen? | برایت یک چای درست کنم؟ | d: Sollst, Sollen, Sollt
-Wie viele Tabletten [soll] ich nehmen? | چند تا قرص باید بخورم؟ | d: sollst, sollen, sollt
+Wie viele Tabletten [soll] ich nehmen? | چند تا قرص باید بخورم؟ | d: sollst, sollen, sollt | ok: sollte
 Was sollen wir zum Essen [mitbringen]? | برای غذا چه چیزی با خودمان بیاوریم؟ | d: bringen mit, mitbringt, mitgebracht | hint: (mitbringen)
-Der Zug [soll] um 10 Uhr ankommen. | قطار قرار است ساعت ۱۰ برسد. | d: sollt, sollst, sollen | full: Um 10 Uhr soll der Zug ankommen.
-Der Arzt sagt, du [sollst] weniger [arbeiten]. | دکتر می‌گوید باید کمتر کار کنی. | d: soll, sollt, sollen / arbeitest, arbeitet, gearbeitet
+Der Zug [soll] um 10 Uhr ankommen. | قطار قرار است ساعت ۱۰ برسد. | d: sollt, sollst, sollen | ok: sollte | full: Um 10 Uhr soll der Zug ankommen.
+Der Arzt sagt, du [sollst] weniger [arbeiten]. | دکتر می‌گوید باید کمتر کار کنی. | d: soll, sollt, sollen / arbeitest, arbeitet, gearbeitet | ok: solltest
 [Soll] ich das Fenster zumachen oder [sollen] wir es offen lassen? | پنجره را ببندم یا بازش بگذاریم؟ | d: Sollst, Sollen, Sollt / sollt, soll, sollst
-Mama sagt, ihr [sollt] das Zimmer [aufräumen]. | مامان می‌گوید باید اتاق را مرتب کنید. | d: sollen, sollst, soll / räumt auf, aufräumt, aufgeräumt
+Mama sagt, ihr [sollt] das Zimmer [aufräumen]. | مامان می‌گوید باید اتاق را مرتب کنید. | d: sollen, sollst, soll / räumt auf, aufräumt, aufgeräumt | ok: solltet
 Ich [sollte] gestern kommen, aber ich [war] krank. | قرار بود دیروز بیایم، ولی مریض بودم. | d: soll, sollten, solltest / bin, ist, sein | full: Gestern sollte ich kommen, aber ich war krank.
-Wir [sollten] das Paket am Freitag [abholen]. | قرار بود بسته را جمعه تحویل بگیریم. | d: sollen, sollte, solltet / holen ab, abholt, abgeholt | full: Am Freitag sollten wir das Paket abholen.
-Was [soll] ich tun{tun}? – Du [sollst] ruhig bleiben. | چه کار کنم؟ – (گفته‌اند) باید آرام بمانی. | d: sollst, sollen, sollt / soll, sollt, sollen
-Wir [sollen] leise sein{sein} und Max [soll] an die Tafel kommen. | ما باید ساکت باشیم و ماکس باید پای تخته بیاید. | d: sollt, soll, sollst / sollt, sollst, sollen | full: Max soll an die Tafel kommen und wir sollen leise sein.
-Lena sagt, du [sollst] sie morgen [anrufen]. | لنا می‌گوید فردا به او زنگ بزنی. | d: soll, sollt, sollen / rufst an, anrufst, angerufen
+Wir [sollten] das Paket letzten Freitag [abholen]. | قرار بود جمعه گذشته بسته را تحویل بگیریم. | d: sollen, sollte, solltet / holen ab, abholt, abgeholt | full: Letzten Freitag sollten wir das Paket abholen.
+Was [soll] ich tun{tun}? – Du [sollst] ruhig bleiben. | چه کار کنم؟ – (گفته‌اند) باید آرام بمانی. | d: sollst, sollen, sollt / soll, sollt, sollen | ok: sollte / solltest
+Wir [sollen] leise sein{sein} und Max [soll] an die Tafel kommen. | ما باید ساکت باشیم و ماکس باید پای تخته بیاید. | d: sollt, soll, sollst / sollt, sollst, sollen | ok: sollten / sollte | full: Max soll an die Tafel kommen und wir sollen leise sein.
+Lena sagt, du [sollst] sie morgen [anrufen]. | لنا می‌گوید فردا به او زنگ بزنی. | d: soll, sollt, sollen / rufst an, anrufst, angerufen | ok: solltest
 transforms:
 Ich soll mehr{mehr} schlafen. => Du sollst mehr{mehr} schlafen. | جمله را با du بنویس.
 Er soll um acht Uhr kommen. => Wir sollen um acht Uhr kommen. | جمله را با wir بنویس.

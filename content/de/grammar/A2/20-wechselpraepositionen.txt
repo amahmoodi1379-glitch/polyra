@@ -10,7 +10,7 @@ in، an، auf، unter، über، vor، hinter، neben و zwischen را از A1 م
 در فارسی هر دو «روی میز» است؛ در آلمانی حرف تعریف عوض می‌شود: auf den Tisch (به آنجا می‌رود) و auf dem Tisch (آنجا هست).
 برای همین فعل‌ها جفت‌جفت‌اند: legen (خوابیده گذاشتن) و liegen (خوابیده بودن)، stellen (ایستاده گذاشتن) و stehen (ایستاده بودن)، sich setzen (نشستن، حرکت) و sitzen (نشسته بودن). hängen هر دو معنی را دارد: آویزان کردن و آویزان بودن.
 فعل اول هر جفت مفعول دارد و حرکت است، پس Akkusativ: Ich stelle die Flasche in den Kühlschrank. فعل دوم جای ثابت است، پس Dativ: Die Flasche steht im Kühlschrank.
-ترکیب‌ها را همیشه می‌گویند: in dem = im، an dem = am، in das = ins، an das = ans (ans Meer، ans Fenster).
+این ترکیب‌ها را تقریباً همیشه به کار می‌برند: in dem = im، an dem = am، in das = ins، an das = ans (ans Meer، ans Fenster).
 راه آسان: از خودت بپرس. Wohin? ← Akkusativ؛ Wo? ← Dativ.
 table:
 حرکت (wohin? + Akkusativ) | جای ثابت (wo? + Dativ)
@@ -19,8 +19,8 @@ Ich stelle die Milch in den Kühlschrank. | Die Milch steht im Kühlschrank.
 Ich hänge das Bild an die Wand. | Das Bild hängt an der Wand.
 Ich setze mich auf das Sofa. | Ich sitze auf dem Sofa.
 sets:
-حرکت + Akkusativ: legen, stellen, hängen, sich setzen
-جای ثابت + Dativ: liegen, stehen, hängen, sitzen
+حرکت + Akkusativ: auf den Tisch legen, in den Kühlschrank stellen, an die Wand hängen, sich auf das Sofa setzen, ins Bett gehen
+جای ثابت + Dativ: auf dem Tisch liegen, im Kühlschrank stehen, an der Wand hängen, auf dem Sofa sitzen, im Bett liegen
 examples:
 Ich lege die Zeitung auf den Tisch. | روزنامه را روی میز می‌گذارم.
 Die Zeitung liegt auf dem Tisch. | روزنامه روی میز است.
@@ -39,7 +39,7 @@ Er hängt seine Jacke in [den] Schrank. | او کاپشنش را در کمد آ�
 Habt ihr die Teller auf [den] Tisch gestellt? | بشقاب‌ها را روی میز گذاشتید؟ | d: dem, der, das
 Legen Sie Ihren Mantel bitte{bitte} auf [das] Sofa. | لطفاً پالتویتان را روی مبل بگذارید. | d: dem, den, der | full: Legen Sie bitte Ihren Mantel auf das Sofa. ; Bitte legen Sie Ihren Mantel auf das Sofa.
 Wir fahren am Wochenende [ans] Meer. | ما آخر هفته به کنار دریا می‌رویم. | d: am, an, an dem | full: Am Wochenende fahren wir ans Meer.
-Stell die Blumen bitte{bitte} [ans] Fenster! | لطفاً گل‌ها را کنار پنجره بگذار! | d: am, an, an dem | full: Stell bitte die Blumen ans Fenster! ; Bitte stell die Blumen ans Fenster!
+Stell die Blumen bitte{bitte} [ans] Fenster! | لطفاً گل‌ها را کنار پنجره بگذار! | d: am, an, an dem | ok: an das | full: Stell bitte die Blumen ans Fenster! ; Bitte stell die Blumen ans Fenster!
 Ich gehe jetzt [ins] Bett. | من الان می‌روم بخوابم. | d: im, in, in dem | full: Jetzt gehe ich ins Bett.
 Die Brille liegt auf [dem] Schreibtisch. | عینک روی میز تحریر است. | d: den, der, das
 Die Milch steht{stehen} [im] Kühlschrank. | شیر در یخچال است. | d: ins, in, in den

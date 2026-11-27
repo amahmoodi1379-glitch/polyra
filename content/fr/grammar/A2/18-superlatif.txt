@@ -8,7 +8,7 @@ lesson:
 برای «ـترین»، فرانسوی le، la یا les می‌گذارد و بعد plus و صفت: le plus grand (بزرگ‌ترین)، la plus belle (زیباترین)، les plus chers (گران‌ترین‌ها).
 برای «کم‌…ترین» moins می‌آید: le moins cher (کم‌قیمت‌ترین، یعنی ارزان‌ترین)، la moins difficile (آسان‌ترین).
 حرف تعریف و صفت با اسم جور می‌شوند: le plus grand garçon، la plus grande fille، les plus grands arbres.
-صفت جای خودش را نگه می‌دارد. صفت‌های کوتاهی که قبل از اسم می‌آیند: la plus grande ville، le plus beau jour.
+صفت جای خودش را نگه می‌دارد. صفت‌های کوتاهی که قبل از اسم می‌آیند: la plus grande ville، le plus beau jour (بعد از اسم هم درست است: la ville la plus grande).
 صفت‌هایی که بعد از اسم می‌آیند، حرف تعریف را دو بار دارند: la ville la plus moderne، l'hôtel le moins cher. «l'hôtel moins cher» برای «ـترین» کافی نیست.
 «…ِ کلاس» یا «در دنیا» بعد از صفت عالی با de می‌آید: le plus grand de la classe، la plus belle ville du monde (de + le = du). que مال مقایسهٔ دو چیز است (plus grand que moi)، نه اینجا.
 با فعل، همیشه le plus و le moins است، حتی برای زن و جمع: C'est Marie qui parle le plus. (ماری از همه بیشتر حرف می‌زند.)
@@ -46,7 +46,7 @@ Ce sont les magasins les plus chers [de] Paris. | این‌ها گران‌تر�
 C'est{être} Marie qui parle [le plus]. | ماری از همه بیشتر حرف می‌زند. | d: la plus, les plus, le plus de
 Dans ma famille, c'est{être} mon père qui travaille [le plus]. | در خانواده‌ام، پدرم از همه بیشتر کار می‌کند. | d: la plus, les plus, le plus de
 C'est{être} toi qui manges [le moins] ! | تو از همه کمتر غذا می‌خوری! | d: la moins, les moins, le moins de
-Qui travaille [le plus] dans ta classe ? | در کلاس شما چه کسی از همه بیشتر درس می‌خواند؟ | d: la plus, les plus, le plus de
+Qui travaille [le plus] dans ta classe ? | در کلاست چه کسی از همه بیشتر درس می‌خواند؟ | d: la plus, les plus, le plus de
 Ce sont les filles qui dansent [le plus]. | دخترها از همه بیشتر می‌رقصند. | d: les plus, la plus, le plus de
 C'est{être} le sport que j'aime [le plus]. | این ورزشی است که از همه بیشتر دوست دارم. | d: la plus, les plus, le plus de
 Cette montagne est la plus [haute] de France. | این کوه بلندترین کوه فرانسه است. | d: haut, hauts, hautes | hint: (haut)
@@ -65,7 +65,7 @@ Ce n'est pas la voiture [la plus] rapide, mais c'est{être} [la moins] chère. |
 Pour moi, l'été est [la plus] belle saison [de] l'année. | برای من، تابستان زیباترین فصل سال است. | d: le plus, plus, les plus / que, à, du
 C'est{être} l'exercice [le plus] facile [du{du-contr}] livre. | این آسان‌ترین تمرین کتاب است. | d: plus, la plus, les plus / de le, que le, à le
 transforms:
-Paris est une grande ville. => Paris est la plus grande ville de France. | با la plus و de France بگو «بزرگ‌ترین شهر فرانسه».
+Paris est une grande ville. => Paris est la plus grande ville de France. ; Paris est la ville la plus grande de France. | با la plus و de France بگو «بزرگ‌ترین شهر فرانسه».
 C'est{être} un hôtel cher. => C'est{être} l'hôtel le plus cher de la ville. | با le plus و de la ville بگو «گران‌ترین هتل شهر».
 C'est{être} un hôtel cher. => C'est{être} l'hôtel le moins cher de la ville. | با le moins و de la ville بگو «ارزان‌ترین هتل شهر».
 Marie parle beaucoup. => C'est{être} Marie qui parle le plus. | با c'est … qui و le plus بگو «ماری از همه بیشتر حرف می‌زند».
@@ -74,11 +74,11 @@ C'est{être} le plus beau jardin du{du-contr} quartier. => Ce sont les plus beau
 C'est{être} la ville la plus moderne du{du-contr} pays. => C'est{être} la ville la moins moderne du{du-contr} pays. | به‌جای plus، moins بگذار.
 C'est{être} un film intéressant. => C'est{être} le film le plus intéressant de l'année. | با le plus و de l'année بگو «جالب‌ترین فیلم سال».
 translations:
-پاریس بزرگ‌ترین شهر فرانسه است. => Paris est la plus grande ville de France. ; Paris est la plus grande ville de la France.
-این ارزان‌ترین هتل شهر است. => C'est{être} l'hôtel le moins cher de la ville. ; C'est{être} l'hôtel le plus bon marché de la ville.
+پاریس بزرگ‌ترین شهر فرانسه است. => Paris est la plus grande ville de France. ; Paris est la plus grande ville de la France. ; Paris est la ville la plus grande de France.
+این ارزان‌ترین هتل شهر است. => C'est{être} l'hôtel le moins cher de la ville.
 ماری از همه بیشتر حرف می‌زند. => C'est{être} Marie qui parle le plus. ; Marie parle le plus.
 این جالب‌ترین فیلم سال است. => C'est{être} le film le plus intéressant de l'année.
 پل قدبلندترینِ کلاس است. => Paul est le plus grand de la classe. ; Paul est le plus grand élève de la classe. ; Paul est l'élève le plus grand de la classe.
-این زیباترین روز زندگی من است. => C'est{être} le plus beau jour de ma vie.
+این زیباترین روز زندگی من است. => C'est{être} le plus beau jour de ma vie. ; C'est{être} le jour le plus beau de ma vie.
 این‌ها گران‌ترین کفش‌های مغازه‌اند. => Ce sont les chaussures les plus chères du{du-contr} magasin.
 تابستان گرم‌ترین فصل سال است. => L'été est la saison la plus chaude de l'année. ; L'été, c'est{être} la saison la plus chaude de l'année.

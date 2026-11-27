@@ -12,21 +12,21 @@ B: Seit wann haben Sie Fieber? | از کی تب دارید؟
 + Seit gestern. | از دیروز.
 - Seit morgen. | از فردا.
 why: به «Seit wann?» با seit جواب می‌دهیم: «Seit gestern». «Bis gestern» یعنی تب دیگر تمام شده، و «seit morgen» ممکن نیست چون فردا هنوز نیامده.
-B: Haben Sie auch Schmerzen? | درد هم دارید؟
+B: Tut Ihnen noch etwas weh? | جای دیگری هم درد می‌کند؟
 - Nein, ich habe Schmerzen im Bauch. | نه، در شکمم درد دارم.
 - Ja, ich habe Schmerzen in der Bauch. | بله، در شکمم درد دارم.
 + Ja, ich habe Schmerzen im Bauch. | بله، در شکمم درد دارم.
 why: درد داری، پس «Ja» می‌گویی، نه «Nein». Bauch مذکر است، پس «im Bauch» (in dem)، نه «in der».
 B: Sie{Sie-3} haben 39 Grad Fieber. Das ist ziemlich viel. | سی‌ونه درجه تب دارید. نسبتاً زیاد است. | tts: Sie haben neununddreißig Grad Fieber. Das ist ziemlich viel.
 + Oh nein! Was muss ich jetzt machen? | وای نه! حالا باید چه کار کنم؟
-- Oh nein! Was musst ich jetzt machen? | وای نه! حالا باید چه کار کنم؟
+- Oh nein! Was müssen ich jetzt machen? | وای نه! حالا باید چه کار کنم؟
 - Oh, super! Das ist sehr gut! | آه، عالی! خیلی خوب است!
-why: تب بالا خبر خوبی نیست، پس می‌پرسی چه کار کنی. با ich شکل muss می‌آید، نه musst.
+why: تب بالا خبر خوبی نیست، پس می‌پرسی چه کار کنی. با ich شکل muss می‌آید، نه müssen.
 B: Nehmen Sie drei Tabletten am Tag, nach dem Essen. | روزی سه قرص بخورید، بعد از غذا.
 - Gut. Ich esse die Tabletten nach dem Essen. | باشه. قرص‌ها را بعد از غذا می‌خورم.
 + Gut. Und wie lange muss ich sie nehmen? | باشه. تا کی باید آن‌ها را بخورم؟
 - Gut. Gib mir die Tabletten, bitte{bitte}. | باشه. قرص‌ها را به من بده، لطفاً.
-why: می‌پرسی چند روز باید قرص بخوری. در آلمانی قرص را nehmen می‌کنند، نه essen، و با دکتر du نمی‌گوییم («Gib mir»).
+why: می‌پرسی چند روز باید قرص بخوری. در آلمانی برای قرص خوردن nehmen می‌گوییم، نه essen، و با دکتر du نمی‌گوییم («Gib mir»).
 B: Eine Woche. Und bleiben Sie zwei Tage zu Hause. | یک هفته. دو روز هم در خانه بمانید.
 - Gut, das macht ich. | باشه، این کار را می‌کنم.
 - Gut, ich gehe morgen zur Arbeit. | باشه، فردا سر کار می‌روم.

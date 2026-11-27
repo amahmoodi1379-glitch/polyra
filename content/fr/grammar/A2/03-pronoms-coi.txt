@@ -27,43 +27,43 @@ Les enfants ont faim. Je leur donne du pain. | بچه‌ها گرسنه‌اند
 Paul ne trouve pas la gare. Je l'{le-pron}aide{aider}. | پل ایستگاه را پیدا نمی‌کند. کمکش می‌کنم.
 Mes amis m'écrivent et je leur réponds. | دوستانم برایم می‌نویسند و من جوابشان را می‌دهم.
 targets:
-Marie est malade. Je [lui] téléphone{téléphoner} ce soir. | ماری مریض است. امشب به او زنگ می‌زنم. | d: la, le, les | hint: (à Marie)
-Paul ne comprend pas. Je [lui] explique la leçon. | پل نمی‌فهمد. درس را برایش توضیح می‌دهم. | d: l', le, les
+Marie est malade. Je [lui] téléphone{téléphoner} ce soir. | ماری مریض است. امشب به او زنگ می‌زنم. | d: la, le, les | hint: (à Marie) | full: Marie est malade. Ce soir, je lui téléphone.
+Paul ne comprend pas. Je [lui] explique la leçon. | پل نمی‌فهمد. درس را برایش توضیح می‌دهم. | d: le, les, leur
 C'est{être} l'anniversaire de ma mère. Je [lui] offre des fleurs. | تولد مادرم است. به او گل هدیه می‌دهم. | d: l', la, les | hint: (à ma mère)
 Le professeur parle à Léa et elle [lui] répond. | معلم با لئا حرف می‌زند و او جوابش را می‌دهد. | d: le, la, les
 Mon frère a faim. Je [lui] donne une pomme. | برادرم گرسنه است. به او یک سیب می‌دهم. | d: le, la, les | hint: (à mon frère)
 Sophie est triste. Tu [lui] parles ? | سوفی غمگین است. با او حرف می‌زنی؟ | d: la, le, leurs
-Mon voisin est gentil. Je [lui] dis bonjour chaque matin. | همسایه‌ام مهربان است. هر صبح به او سلام می‌کنم. | d: le, la, les | hint: (à mon voisin)
+Mon voisin est gentil. Je [lui] dis bonjour chaque matin. | همسایه‌ام مهربان است. هر صبح به او سلام می‌کنم. | d: le, la, les | hint: (à mon voisin) | full: Mon voisin est gentil. Chaque matin, je lui dis bonjour.
 Mon cousin habite au Canada. Je [lui] écris des messages. | پسرعمویم در کانادا زندگی می‌کند. برایش پیام می‌نویسم. | d: l', le, les
 Tu connais ma mère ? Ma sœur [lui] ressemble beaucoup. | مادرم را می‌شناسی؟ خواهرم خیلی شبیه اوست. | d: la, le, les | hint: (à ma mère)
 Le bébé me regarde et je [lui] souris{sourire}. | نوزاد نگاهم می‌کند و من به او لبخند می‌زنم. | d: le, la, les
 Ma sœur aime le bleu. Ce pull [lui] plaît. | خواهرم رنگ آبی را دوست دارد. از این پلیور خوشش می‌آید. | d: la, le, les | hint: (à ma sœur)
 Léa a dix ans aujourd'hui. Ses parents [lui] offrent un vélo. | لئا امروز ده‌ساله می‌شود. پدر و مادرش به او یک دوچرخه هدیه می‌دهند. | d: l', la, les
-Ton frère va à Paris ? Tu [lui] prêtes{prêter} ta valise ? | برادرت به پاریس می‌رود؟ چمدانت را به او قرض می‌دهی؟ | d: le, la, les | hint: (à ton frère)
-Mon père travaille tard. Ma mère [lui] prépare le dîner. | پدرم تا دیروقت کار می‌کند. مادرم برایش شام درست می‌کند. | d: le, la, les
-Le serveur est là. Tu [lui] demandes l'addition ? | گارسون آنجاست. صورت‌حساب را از او می‌خواهی؟ | d: le, la, les | hint: (au serveur)
+Ton frère va à Paris ? Tu [lui] prêtes{prêter} ta valise ? | برادرت به پاریس می‌رود؟ چمدانت را به او قرض می‌دهی؟ | d: le, les, leur | hint: (à ton frère)
+Mon père travaille tard. Ma mère [lui] prépare le dîner. | پدرم تا دیروقت کار می‌کند. مادرم برایش شام درست می‌کند. | d: la, les, leur
+Le serveur est là. Tu [lui] demandes l'addition ? | گارسون آنجاست. صورت‌حساب را از او می‌خواهی؟ | d: le, les, leur | hint: (au serveur)
 Je ne connais pas cet homme. Je ne [lui] réponds pas. | این مرد را نمی‌شناسم. جوابش را نمی‌دهم. | d: le, la, leurs
 Le petit garçon pleure. Sa mère [lui] chante une chanson. | پسر کوچک گریه می‌کند. مادرش برایش آواز می‌خواند. | d: le, la, les | hint: (au petit garçon)
 Ce cadeau ? Je [le] donne à Paul. | این هدیه؟ آن را به پل می‌دهم. | d: lui, leur, la | hint: (ce cadeau)
 Paul ne trouve pas la gare. Je [l']{le-pron}aide{aider}. | پل ایستگاه را پیدا نمی‌کند. کمکش می‌کنم. | d: lui, leur, le
 Mon grand-père est seul. Je [l']appelle souvent. | پدربزرگم تنهاست. اغلب به او زنگ می‌زنم. | d: lui, leur, la | hint: (mon grand-père)
-Mes parents sont en vacances. Je [leur]{leur} téléphone{téléphoner} chaque soir. | پدر و مادرم در تعطیلات‌اند. هر شب به آن‌ها زنگ می‌زنم. | d: les, leurs, la | hint: (à mes parents)
+Mes parents sont en vacances. Je [leur]{leur} téléphone{téléphoner} chaque soir. | پدر و مادرم در تعطیلات‌اند. هر شب به آن‌ها زنگ می‌زنم. | d: les, leurs, la | hint: (à mes parents) | full: Mes parents sont en vacances. Chaque soir, je leur téléphone.
 Les enfants ont faim. Je [leur] donne du pain. | بچه‌ها گرسنه‌اند. به آن‌ها نان می‌دهم. | d: les, leurs, le
 Mes amis m'écrivent et je [leur] réponds. | دوستانم برایم می‌نویسند و من جوابشان را می‌دهم. | d: les, leurs, la | hint: (à mes amis)
-Les élèves ne comprennent pas. Le professeur [leur] explique l'exercice. | شاگردها نمی‌فهمند. معلم تمرین را برایشان توضیح می‌دهد. | d: les, leurs, l'
+Les élèves ne comprennent pas. Le professeur [leur] explique l'exercice. | شاگردها نمی‌فهمند. معلم تمرین را برایشان توضیح می‌دهد. | d: les, leurs, lui
 Mes voisins sont gentils. Je [leur] dis bonjour. | همسایه‌هایم مهربان‌اند. به آن‌ها سلام می‌کنم. | d: les, leurs, le | hint: (à mes voisins)
-Mes cousins viennent demain. Je [leur]{leur} montre la ville. | پسرعموهایم فردا می‌آیند. شهر را به آن‌ها نشان می‌دهم. | d: les, leurs, la
-Les enfants aiment les histoires. Le soir, je [leur] raconte une histoire. | بچه‌ها قصه دوست دارند. شب‌ها برایشان قصه تعریف می‌کنم. | d: les, leurs, la | hint: (aux enfants)
-Mes parents ne savent pas. Je [leur]{leur} dis la vérité. | پدر و مادرم نمی‌دانند. حقیقت را به آن‌ها می‌گویم. | d: les, leurs, la
+Mes cousins viennent demain. Je [leur]{leur} montre la ville. | پسرعموهایم فردا می‌آیند. شهر را به آن‌ها نشان می‌دهم. | d: les, leurs, lui
+Les enfants aiment les histoires. Le soir, je [leur] raconte une histoire. | بچه‌ها قصه دوست دارند. شب‌ها برایشان قصه تعریف می‌کنم. | d: les, leurs, la | hint: (aux enfants) | full: Les enfants aiment les histoires. Je leur raconte une histoire le soir.
+Mes parents ne savent pas. Je [leur]{leur} dis la vérité. | پدر و مادرم نمی‌دانند. حقیقت را به آن‌ها می‌گویم. | d: les, leurs, lui
 Mes parents sont occupés{occupé}. Je ne [leur]{leur} téléphone{téléphoner} pas. | پدر و مادرم سرشان شلوغ است. به آن‌ها زنگ نمی‌زنم. | d: les, leurs, la | hint: (à mes parents)
 Tes amis sont français{français} ? Est-ce que tu [leur] parles en français ? | دوستانت فرانسوی‌اند؟ با آن‌ها فرانسوی حرف می‌زنی؟ | d: les, leurs, la
 Tes grands-parents sont à Ispahan ? Tu [leur] écris des lettres ? | پدربزرگ و مادربزرگت در اصفهان‌اند؟ برایشان نامه می‌نویسی؟ | d: les, leurs, l' | hint: (à tes grands-parents)
 Mes grands-parents habitent loin. Je [leur] envoie des photos. | پدربزرگ و مادربزرگم دور زندگی می‌کنند. برایشان عکس می‌فرستم. | d: les, leurs, la
 Les enfants ont faim. Je [leur] prépare [leur] goûter{goûter-noun}. | بچه‌ها گرسنه‌اند. عصرانه‌شان را برایشان درست می‌کنم. | d: les, leurs, la / leurs, lui, eux
-Mes amis partent. Je [leur] donne [leurs] billets. | دوستانم دارند می‌روند. بلیت‌هایشان را به آن‌ها می‌دهم. | d: les, leurs, la / leur, lui, eux
-Les élèves sont là. Le professeur [leur] rend [leurs] cahiers. | شاگردها اینجا هستند. معلم دفترهایشان را به آن‌ها پس می‌دهد. | d: les, leurs, la / leur, lui, eux
+Mes amis partent. Je [leur] donne [leurs] billets. | دوستانم دارند می‌روند. بلیت‌هایشان را به آن‌ها می‌دهم. | d: lui, leurs, la / leur, lui, eux
+Les élèves sont là. Le professeur [leur] rend [leurs] cahiers. | شاگردها اینجا هستند. معلم دفترهایشان را به آن‌ها پس می‌دهد. | d: lui, leurs, la / leur, lui, eux
 Ma sœur ? Je [l']{la-pron}appelle et je [lui] parle de la fête. | خواهرم؟ به او زنگ می‌زنم و دربارهٔ جشن با او حرف می‌زنم. | d: lui, leur, le / la, le, les
-Mon frère est à la gare. Je [l']attends et je [lui] apporte sa valise. | برادرم در ایستگاه است. منتظرش می‌مانم و چمدانش را برایش می‌برم. | d: lui, leur, la / l', le, la
+Mon frère est à la gare. Je [l']attends et je [lui] apporte sa valise. | برادرم در ایستگاه است. منتظرش می‌مانم و چمدانش را برایش می‌برم. | d: lui, leur, la / le, la, leur
 Mes parents ? Je [les] aime et je [leur] écris des lettres. | پدر و مادرم؟ دوستشان دارم و برایشان نامه می‌نویسم. | d: leur, lui, le / les, leurs, l'
 Le professeur est gentil. Je [l']écoute et je [lui] pose des questions. | معلم مهربان است. به حرفش گوش می‌دهم و از او سؤال می‌پرسم. | d: lui, leur, la / le, la, les
 Tes grands-parents ? Tu [les] vois souvent ? Tu [leur]{leur} téléphones{téléphoner} ? | پدربزرگ و مادربزرگت؟ اغلب می‌بینی‌شان؟ به آن‌ها زنگ می‌زنی؟ | d: leur, lui, la / les, leurs, la

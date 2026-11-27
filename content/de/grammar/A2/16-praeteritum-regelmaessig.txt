@@ -48,7 +48,7 @@ Im Sommer [reisten] wir nach Österreich. | تابستان به اتریش سف�
 Die Kinder [lachten] den ganzen{ganz} Abend. | بچه‌ها تمام شب خندیدند. | d: lachte, lachtet, gelacht
 Ich [besuchte] im Mai meine Tante in Hamburg. | ماه مه به دیدن عمه‌ام در هامبورگ رفتم. | d: besuchten, gebesucht, besuchtest | hint: (besuchen) | full: Im Mai besuchte ich meine Tante in Hamburg.
 Das Hotel [kostete] hundert Euro pro Nacht. | هتل شبی صد یورو قیمت داشت. | d: kostte, kosteten, gekostet | hint: (kosten)
-Wir [bezahlten] an der Kasse. | ما پای صندوق پول دادیم. | d: bezahlte, gebezahlt, bezahltet
+Wir [bezahlten] an der Kasse. | ما پای صندوق پول دادیم. | d: bezahlte, gebezahlt, bezahltet | ok: zahlten
 Am Morgen [weckte] mich meine Mutter. | صبح مادرم مرا بیدار کرد. | d: weckten, wecktest, geweckt | full: Meine Mutter weckte mich am Morgen. ; Am Morgen weckte meine Mutter mich.
 Max [holte] seinen Sohn von der Schule ab. | ماکس پسرش را از مدرسه آورد. | d: abholte, holten, holtest | hint: (abholen)
 Der Unterricht [hörte] um zwölf Uhr auf. | کلاس ساعت دوازده تمام شد. | d: aufhörte, hörten, hörtest | full: Um zwölf Uhr hörte der Unterricht auf.
@@ -60,7 +60,7 @@ Am Anfang [glaubte] ich ihm nicht. | اولش حرفش را باور نکردم.
 Ich [fragte] den Lehrer und er [antwortete] sofort. | از معلم پرسیدم و او فوراً جواب داد. | d: fragten, fragtest, gefragt / antwortte, antworteten, geantwortet
 Früher{früher} [wohnten] wir in Schiras und mein Vater [arbeitete] in einem Krankenhaus. | قبلاً در شیراز زندگی می‌کردیم و پدرم در یک بیمارستان کار می‌کرد. | d: wohnte, wohntet, gewohnt / arbeitte, arbeiteten, gearbeitet | full: Wir wohnten früher in Schiras und mein Vater arbeitete in einem Krankenhaus.
 Am Samstag [kauften] wir ein, und am Abend [kochten] wir zusammen. | شنبه خرید کردیم و عصر با هم آشپزی کردیم. | d: einkauften, kaufte, kauftet / kochte, kochtet, gekocht
-Die Kinder [spielten] im Garten und die Eltern [redeten] in der Küche. | بچه‌ها در باغ بازی می‌کردند و پدر و مادرها در آشپزخانه حرف می‌زدند. | d: spielte, spieltet, gespielt / redete, redetet, geredet
+Die Kinder [spielten] im Garten und die Eltern [redeten] in der Küche. | بچه‌ها در باغ بازی می‌کردند و پدر و مادرها در آشپزخانه حرف می‌زدند. | d: spielte, spieltet, gespielt / redete, redetet, geredet | ok: spielten / sprachen
 Es [regnete] den ganzen{ganz} Tag, deshalb [spielten] wir zu Hause. | تمام روز باران آمد، برای همین در خانه بازی کردیم. | d: regnte, regneten, geregnet / spielte, spieltet, gespielt
 Max [öffnete] die Tür und [lachte]. | ماکس در را باز کرد و خندید. | d: öffnte, öffneten, geöffnet / lachten, lachtest, gelacht
 Am Abend [spielten] wir Karten und [lachten] viel. | عصر ورق بازی کردیم و زیاد خندیدیم. | d: spielte, spieltet, gespielt / lachte, lachtet, gelacht
@@ -82,4 +82,4 @@ translations:
 او پنجره را باز کرد. (با Präteritum) => Er öffnete das Fenster. ; Sie öffnete das Fenster. ; Er machte das Fenster auf. ; Sie machte das Fenster auf.
 ما یک ساعت منتظر ماندیم. (با Präteritum) => Wir warteten eine Stunde. ; Wir warteten eine Stunde lang.
 فیلم دو ساعت طول کشید. (با Präteritum) => Der Film dauerte zwei Stunden.
-تولدم را در باغ جشن گرفتیم. (با Präteritum) => Wir feierten meinen Geburtstag im Garten. ; Meinen Geburtstag feierten wir im Garten. ; Im Garten feierten wir meinen Geburtstag.
+تولدم را در باغ جشن گرفتیم. (با Präteritum) => Wir feierten meinen Geburtstag im Garten. ; Meinen Geburtstag feierten wir im Garten. ; Im Garten feierten wir meinen Geburtstag. ; Wir feierten im Garten meinen Geburtstag.

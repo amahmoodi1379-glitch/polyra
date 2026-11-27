@@ -19,9 +19,9 @@ B: Oh nein! Wie viel Verspätung haben Sie? | وای نه! چقدر تأخیر �
 why: تأخیر را با دقیقه می‌گوییم: «ungefähr zwanzig Minuten». seit یعنی «از … تا حالا» و کیلومتر فاصله است، نه زمان.
 B: Warum sind Sie nicht mit der U-Bahn gefahren? | چرا با مترو نیامدید؟
 + Weil die U-Bahn heute nicht fährt. | چون مترو امروز کار نمی‌کند.
-- Weil die U-Bahn fährt heute nicht. | چون مترو امروز کار نمی‌کند.
+- Weil fährt die U-Bahn heute nicht. | چون مترو امروز کار نمی‌کند.
 - Weil ich die U-Bahn sehr mag. | چون مترو را خیلی دوست دارم.
-why: بعد از weil فعل به آخر جمله می‌رود: «weil die U-Bahn heute nicht fährt». دوست داشتن مترو دلیل سوار نشدن نیست.
+why: بعد از weil فعل به آخر جمله می‌رود: «weil die U-Bahn heute nicht fährt»، نه درست بعد از weil. دوست داشتن مترو دلیل سوار نشدن نیست.
 B: Kein Problem. Wir können die Besprechung auch um halb zehn anfangen. | مشکلی نیست. می‌توانیم جلسه را ساعت نه و نیم شروع کنیم.
 - Super, danke{danke}! Kannst du den Kollegen bitte{bitte} Bescheid sagen? | عالی، ممنون! می‌توانی لطفاً به همکارها خبر بدهی؟
 + Super, danke{danke}! Können Sie den Kollegen bitte{bitte} Bescheid sagen? | عالی، ممنون! می‌توانید لطفاً به همکارها خبر بدهید؟

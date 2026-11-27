@@ -10,7 +10,7 @@ wie oft? یعنی «چند وقت یک بار؟»: Wie oft gehst du schwimmen? �
 wie lange? یعنی «چه مدت؟» و جوابش یک مدت است: Wie lange dauert der Film? – Zwei Stunden.
 seit wann? یعنی «از کی تا حالا؟» برای کاری که هنوز ادامه دارد: Seit wann wohnst du hier? – Seit drei Jahren. این را با Wie lange wohnst du schon hier? هم می‌پرسند.
 bis wann? یعنی «تا کی؟» (– Bis sechs Uhr.) و ab wann? یعنی «از کی به بعد؟» (– Ab Montag.).
-قیدهای تکرار از «همیشه» تا «هیچ‌وقت»: immer، meistens، oft، manchmal، selten، nie. در جمله بعد از فعل صرف‌شده می‌آیند، نه پیش از آن: Ich trinke nie Kaffee. Am Wochenende schlafe ich meistens lange.
+قیدهای تکرار از «همیشه» تا «هیچ‌وقت»: immer، meistens، oft، manchmal، selten، nie. در جمله بعد از فعل صرف‌شده می‌آیند، نه بین فاعل و فعل: Ich trinke nie Kaffee. Am Wochenende schlafe ich meistens lange. اگر اول جمله بیایند، فعل درست بعد از آن‌ها می‌آید: Manchmal gehe ich zu Fuß.
 nie خودش منفی است و nicht نمی‌گیرد، هرچند در فارسی فعل را هم منفی می‌کنیم («هیچ‌وقت نمی‌نوشم»).
 jeden Tag، jede Woche و jedes Jahr حرف اضافه نمی‌خواهند و jeder پسوند مفعولی می‌گیرد. برای «چند بار در …» بگو: einmal pro Woche، einmal in der Woche، einmal im Monat، einmal am Tag.
 table:
@@ -84,7 +84,7 @@ translations:
 چند وقت یک بار سینما می‌روی؟ => Wie oft gehst du ins Kino?
 فیلم چقدر طول می‌کشد؟ => Wie lange dauert der Film?
 از کی اینجا زندگی می‌کنی؟ => Seit wann wohnst du hier? ; Seit wann lebst du hier? ; Wie lange wohnst du schon hier? ; Wie lange lebst du schon hier?
-من هیچ‌وقت قهوه نمی‌نوشم. => Ich trinke nie Kaffee.
+من هیچ‌وقت قهوه نمی‌نوشم. => Ich trinke nie Kaffee. ; Nie trinke ich Kaffee.
 هر روز شنا می‌کنم. => Ich schwimme jeden Tag. ; Jeden Tag schwimme ich. ; Ich gehe jeden Tag schwimmen. ; Jeden Tag gehe ich schwimmen.
 هفته‌ای یک بار تنیس بازی می‌کنم. => Ich spiele einmal pro Woche Tennis. ; Ich spiele einmal in der Woche Tennis. ; Einmal pro Woche spiele ich Tennis. ; Einmal in der Woche spiele ich Tennis.
 کتابخانه تا کی باز است؟ => Bis wann ist die Bibliothek offen? ; Wie lange ist die Bibliothek offen? ; Bis wann ist die Bibliothek geöffnet? ; Wie lange ist die Bibliothek geöffnet?

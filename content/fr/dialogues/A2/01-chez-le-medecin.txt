@@ -6,7 +6,7 @@ B: Bonjour ! Asseyez-vous. Qu'est-ce que vous avez ? | سلام! بنشینید.
 - Merci. Je vais bien, et vous ? | ممنون. خوبم، شما چطورید؟
 + J'ai mal à la gorge et à la tête. | گلویم و سرم درد می‌کند.
 - Je suis{être} mal à la gorge et à la tête. | گلویم و سرم درد می‌کند.
-why: درد را با avoir می‌گوییم: «J'ai mal à la gorge». «Je suis mal» غلط است، و دکتر حالت را نپرسیده که بگویی «خوبم».
+why: درد را با avoir می‌گوییم: «J'ai mal à la gorge». «Je suis mal à la gorge» غلط است، و دکتر حالت را نپرسیده که بگویی «خوبم».
 B: Depuis quand{quand} ? | از کی؟
 + Depuis trois jours. | از سه روز پیش.
 - Pour trois jours. | برای سه روز.
@@ -29,6 +29,6 @@ B: Oui. Voilà une ordonnance. Prenez deux comprimés par jour, le matin et le s
 why: برای دارو در فرانسوی prendre می‌گوییم، نه manger: «manger un comprimé» غلط است. «Tu les prends» درباره خود دکتر است و با دکتر tu هم نمی‌گوییم.
 B: Pendant cinq jours. Et demain, restez à la maison et buvez beaucoup d'eau. | پنج روز. فردا هم در خانه بمانید و زیاد آب بنوشید.
 - D'accord. Je reste à la maison hier. | باشد. دیروز در خانه می‌مانم.
-- D'accord. Merci beaucoup, docteur. Bonjour ! | باشد. خیلی ممنون، دکتر. سلام!
+- D'accord. Merci beaucoup, docteur. Bon voyage ! | باشد. خیلی ممنون، دکتر. سفر بخیر!
 + D'accord. Merci beaucoup, docteur. Au revoir ! | باشد. خیلی ممنون، دکتر. خداحافظ!
-why: آخر گفتگو «Au revoir» می‌گوییم، نه «Bonjour». دکتر گفت فردا (demain)، نه دیروز (hier).
+why: موقع رفتن «Au revoir» می‌گوییم؛ «Bon voyage» برای کسی است که به سفر می‌رود. دکتر گفت فردا (demain)، نه دیروز (hier).

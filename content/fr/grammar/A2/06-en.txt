@@ -28,7 +28,7 @@ targets:
 Tu veux du pain ? Oui, [j'en] veux un peu. | نان می‌خواهی؟ بله، کمی می‌خواهم. | d: je le, je les, j'y
 Marie a des enfants ? Oui, elle [en] a trois. | ماری بچه دارد؟ بله، سه تا دارد. | d: les, y, le | hint: (des enfants)
 Tu manges de la viande ? Oui, [j'en] mange un peu. | گوشت می‌خوری؟ بله، کمی می‌خورم. | d: je la, je les, je en
-Tu as un stylo ? Oui, [j'en] ai un. | خودکار داری؟ بله، یکی دارم. | d: je l', je le, j'y
+Tu as un stylo ? Oui, [j'en] ai un{un-num}. | خودکار داری؟ بله، یکی دارم. | d: je l', je le, j'y
 Il y a combien d'élèves dans ta classe ? Il [y en] a vingt. | در کلاست چند شاگرد هست؟ بیست تا. | d: en y, y les, y le
 Tu veux encore de l'eau ? Non merci, [j'en] ai assez. | باز هم آب می‌خواهی؟ نه ممنون، به اندازهٔ کافی دارم. | d: je l', je la, j'y
 Des fraises ? Je vais [en acheter] au marché. | توت‌فرنگی؟ می‌روم از بازار بخرم. | d: acheter en, en achète, en acheté
@@ -40,11 +40,11 @@ Il y a des magasins dans ta rue ? Oui, il [y en] a beaucoup. | توی خیابا
 Tu veux des bonbons ? Non, je [n'en] veux pas. | آب‌نبات می‌خواهی؟ نه، نمی‌خواهم. | d: n'y, ne en, en ne | hint: (des bonbons)
 On achète des tomates ? Oui, on [en] prend deux kilos. | گوجه‌فرنگی بخریم؟ بله، دو کیلو برمی‌داریم. | d: les, le, la
 J'ai trois sœurs. Et toi, tu [en] as combien ? | من سه خواهر دارم. تو چند تا داری؟ | d: y, leur, le | hint: (des sœurs)
-Du café ? Je ne veux pas [en boire] le soir. | قهوه؟ نمی‌خواهم شب‌ها بخورم. | d: boire en, en bois, en bu
+Du café ? Je ne veux pas [en boire] le soir. | قهوه؟ نمی‌خواهم شب‌ها بخورم. | d: boire en, en bois, en bu | full: Du café ? Le soir, je ne veux pas en boire.
 Ton frère a une voiture ? Non, il [n'en] a pas. | برادرت ماشین دارد؟ نه، ندارد. | d: ne la, n'y, ne en
-Il y a un bus ce soir ? Oui, il [y en] a un à dix heures. | امشب اتوبوس هست؟ بله، یکی ساعت ده هست. | d: en y, y le, y les | hint: (un bus)
-Du fromage ? Les enfants [en] mangent tous les jours. | پنیر؟ بچه‌ها هر روز می‌خورند. | d: lui, leur, la
-Des tomates ? Il [en] faut trois pour la soupe. | گوجه‌فرنگی؟ برای سوپ سه تا لازم است. | d: les, le, la | hint: (des tomates)
+Il y a un bus ce soir ? Oui, il [y en] a un{un-num} à dix heures. | امشب اتوبوس هست؟ بله، یکی ساعت ده هست. | d: en y, y le, y les | hint: (un bus)
+Du fromage ? Les enfants [en] mangent tous les jours. | پنیر؟ بچه‌ها هر روز می‌خورند. | d: lui, leur, la | full: Du fromage ? Tous les jours, les enfants en mangent.
+Des tomates ? Il [en] faut trois pour la soupe. | گوجه‌فرنگی؟ برای سوپ سه تا لازم است. | d: les, le, la | hint: (des tomates) | full: Des tomates ? Pour la soupe, il en faut trois.
 Il y a du gâteau. Tu [en] veux ? | کیک هست. می‌خواهی؟ | d: les, y, lui
 Des cartes postales ? Nous [en avons] envoyé dix. | کارت‌پستال؟ ده تا فرستادیم. | d: avons en, les avons, en sommes
 Il n'y a pas de pain. Tu peux [en acheter] ? | نان نیست. می‌توانی بخری؟ | d: acheter en, en achètes, en acheté
@@ -52,19 +52,19 @@ Il me faut des timbres. Tu [en] as ? | تمبر لازم دارم. داری؟ | 
 Des enfants ? Mes voisins [en] ont cinq. | بچه؟ همسایه‌هایم پنج تا دارند. | d: les, y, leur
 Tu as des stylos ? Non, mais Paul [en] a. | خودکار داری؟ نه، ولی پل دارد. | d: y, le, lui
 Il y a des chaises ? Oui, il [y en] a dans la cuisine. | صندلی هست؟ بله، توی آشپزخانه هست. | d: en y, y les, y le | hint: (des chaises)
-Tu veux un café ? Non merci, [j'en] ai bu un ce matin. | قهوه می‌خواهی؟ نه ممنون، امروز صبح یکی خوردم. | d: je l', je le, je en
+Tu veux un café ? Non merci, [j'en] ai bu un{un-num} ce matin. | قهوه می‌خواهی؟ نه ممنون، امروز صبح یکی خوردم. | d: je l', je le, je en | full: Tu veux un café ? Non merci, ce matin, j'en ai bu un.
 Tu achètes des oranges ? Oui, je vais [en acheter] deux kilos. | پرتقال می‌خری؟ بله، دو کیلو می‌خرم. | d: acheter en, les acheter, en achète
-Tu as des questions ? Oui, [j'en] ai une. | سؤالی داری؟ بله، یکی دارم. | d: je l', je la, j'y
-Ma mère fait des gâteaux. Elle [en] fait un pour ma fête. | مادرم کیک درست می‌کند. یکی برای جشنم درست می‌کند. | d: le, les, y
+Tu as des questions ? Oui, [j'en] ai une{un-num}. | سؤالی داری؟ بله، یکی دارم. | d: je l', je la, j'y
+Ma mère fait des gâteaux. Elle [en] fait un{un-num} pour ma fête. | مادرم کیک درست می‌کند. یکی برای جشنم درست می‌کند. | d: le, les, y | full: Ma mère fait des gâteaux. Pour ma fête, elle en fait un.
 Il y a un hôtel près d'ici ? Oui, il [y en] a deux. | نزدیک اینجا هتل هست؟ بله، دو تا هست. | d: en y, y les, y le
-Tu as des frères ? Oui, [j'en] ai un. Et des sœurs ? [J'en] ai deux. | برادر داری؟ بله، یکی دارم. خواهر چطور؟ دو تا دارم. | d: je l', je le, j'y / Je les, Je le, J'y
+Tu as des frères ? Oui, [j'en] ai un{un-num}. Et des sœurs ? [J'en] ai deux. | برادر داری؟ بله، یکی دارم. خواهر چطور؟ دو تا دارم. | d: je l', je le, j'y / Je les, Je le, J'y
 Il y a du lait ? Oui, il [y en] a, mais il n'[y en] a pas beaucoup. | شیر هست؟ بله، هست، ولی زیاد نیست. | d: en y, y le, y les / en y, y les, y le
 Des pommes ? [J'en] prends un kilo. Et toi, tu [en] prends combien ? | سیب؟ یک کیلو برمی‌دارم. تو چقدر برمی‌داری؟ | d: Je les, Je le, J'y / les, y, le
 Ta sœur a des enfants ? Oui, elle [en] a deux, mais moi, je [n'en] ai pas. | خواهرت بچه دارد؟ بله، دو تا دارد، ولی من ندارم. | d: les, y, le / ne les, n'y, ne en
 Tu manges des fruits ? Oui, [j'en] mange beaucoup. Et des légumes ? [J'en] mange peu. | میوه می‌خوری؟ بله، زیاد می‌خورم. سبزیجات چطور؟ کم می‌خورم. | d: je les, je le, je en / Je les, Je le, Je en
 Des photos ? [J'en ai] pris beaucoup, et Marie [en a] pris trois. | عکس؟ من خیلی گرفتم و ماری سه تا گرفت. | d: J'ai en, Je les ai, En j'ai / a en, l'a, les a
 Il y a des œufs ? Non, il [n'y en] a pas. Je vais [en acheter]. | تخم‌مرغ هست؟ نه، نیست. می‌روم بخرم. | d: n'en y, ne y en, n'y les / acheter en, en achète, en acheté
-Du café ? [J'en{en-pron}] bois{boire} le matin, mais je [n'en{en-pron}] bois{boire} pas le soir. | قهوه؟ صبح‌ها می‌خورم، ولی شب‌ها نمی‌خورم. | d: Je les, Je en, En je / ne les, ne en, en ne
+Du café ? [J'en{en-pron}] bois{boire} le matin, mais je [n'en{en-pron}] bois{boire} pas le soir. | قهوه؟ صبح‌ها می‌خورم، ولی شب‌ها نمی‌خورم. | d: Je les, Je en, En je / ne les, ne en, en ne | full: Du café ? Le matin, j'en bois, mais le soir, je n'en bois pas.
 transforms:
 Je veux du pain. => J'en veux. | به‌جای «du pain» ضمیر بگذار.
 J'ai deux frères. => J'en ai deux. | به‌جای «frères» ضمیر بگذار.
@@ -75,11 +75,11 @@ Il y en a. => Il n'y en a pas. | جمله را منفی کن.
 Je vais acheter des pommes. => Je vais en acheter. | به‌جای «des pommes» ضمیر بگذار.
 Elle prend un kilo de tomates. => Elle en prend un kilo. | به‌جای «de tomates» ضمیر بگذار.
 translations:
-نان؟ بله، کمی می‌خواهم. => Du pain ? Oui, j'en veux un peu.
+نان؟ بله، کمی می‌خواهم. => Du pain ? Oui, j'en veux un peu. ; Du pain ? Oui, j'en voudrais un peu.
 بچه؟ دو تا دارم. => Des enfants ? J'en ai deux.
 شکر؟ نه، ندارم. => Du sucre ? Non, je n'en ai pas.
 سیب؟ یک کیلو برمی‌دارم. => Des pommes ? J'en prends un kilo. ; Les pommes ? J'en prends un kilo.
 تخم‌مرغ؟ نیست. => Des œufs ? Il n'y en a pas.
 قهوه؟ نمی‌خورم. => Du café ? Je n'en{en-pron} bois{boire} pas. ; Du café ? Je n'en prends pas.
 شاگرد؟ بیست تا هست. => Des élèves ? Il y en a vingt.
-خودکار داری؟ بله، یکی دارم. => Tu as un stylo ? Oui, j'en ai un. ; Est-ce que tu as un stylo ? Oui, j'en ai un. ; As-tu un stylo ? Oui, j'en ai un.
+خودکار داری؟ بله، یکی دارم. => Tu as un stylo ? Oui, j'en ai un{un-num}. ; Est-ce que tu as un stylo ? Oui, j'en ai un{un-num}. ; As-tu un stylo ? Oui, j'en ai un{un-num}.

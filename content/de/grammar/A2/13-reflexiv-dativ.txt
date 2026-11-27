@@ -49,10 +49,10 @@ Siehst du [dir] die Fotos an? | عکس‌ها را نگاه می‌کنی؟ | d:
 Mach [dir] keine Sorgen! | نگران نباش! | d: dich, dein, deine | hint: (du)
 Meine Mutter macht [sich] oft Sorgen. | مادرم اغلب نگران است. | d: sie, ihre, er
 Ich nehme [mir] ein Stück Kuchen. | یک تکه کیک برای خودم برمی‌دارم. | d: mich, ich, mein
-Nimm [dir] Zeit für das Frühstück! | برای صبحانه وقت بگذار! | d: dich, dein, deine
+Nimm [dir] Zeit für das Frühstück! | برای صبحانه وقت بگذار! | d: dich, dein, deinen
 Ich wünsche [mir] ein Fahrrad zum Geburtstag. | برای تولدم یک دوچرخه می‌خواهم. | d: mich, ich, mein | full: Zum Geburtstag wünsche ich mir ein Fahrrad.
 Was wünschst du [dir] zum Geburtstag? | برای تولدت چه هدیه‌ای می‌خواهی؟ | d: dich, du, dein | hint: (du)
-Im Urlaub leihen{leihen} wir [uns] Fahrräder. | در تعطیلات برای خودمان دوچرخه قرض می‌گیریم. | d: wir, unser, unsere | full: Wir leihen uns im Urlaub Fahrräder.
+Im Urlaub leihen{leihen} wir [uns] Fahrräder. | در تعطیلات برای خودمان دوچرخه قرض می‌گیریم. | d: wir, unser, sich | full: Wir leihen uns im Urlaub Fahrräder.
 Ich ziehe [mich] schnell an. | سریع لباس می‌پوشم. | d: mir, ich, mein | hint: (ich)
 Du musst [dich] jetzt anziehen. | الان باید لباس بپوشی. | d: dir, du, dein
 Ich habe [mir] die Hände gewaschen. | دست‌هایم را شستم. | d: mich, ich, mein
@@ -80,9 +80,9 @@ Ich mache mir einen Tee. => Machst du dir einen Tee? | جمله را با du س�
 translations:
 دست‌هایم را می‌شویم. => Ich wasche mir die Hände. ; Ich wasche meine Hände.
 مسواک زدی؟ => Hast du dir die Zähne geputzt? ; Hast du deine Zähne geputzt?
-برای خودم یک کتاب می‌خرم. => Ich kaufe mir ein Buch. ; Ich kaufe ein Buch für mich.
-باید کاپشنت را بپوشی. => Du musst dir die Jacke anziehen. ; Du musst deine Jacke anziehen. ; Du musst die Jacke anziehen.
+برای خودم یک کتاب می‌خرم. => Ich kaufe mir ein Buch. ; Ich kaufe ein Buch für mich. ; Ich kaufe für mich ein Buch.
+باید کاپشنت را بپوشی. => Du musst dir die Jacke anziehen. ; Du musst deine Jacke anziehen. ; Du musst die Jacke anziehen. ; Du musst dir deine Jacke anziehen.
 نگران نباش! => Mach dir keine Sorgen! ; Mache dir keine Sorgen! ; Keine Sorge!
 بچه‌ها دست‌هایشان را می‌شویند. => Die Kinder waschen sich die Hände. ; Die Kinder waschen ihre{ihr-det} Hände.
-برای خودت یک چای درست کن! => Mach dir einen Tee! ; Mache dir einen Tee! ; Koch dir einen Tee! ; Koche dir einen Tee!
+برای خودت یک چای درست کن! => Mach dir einen Tee! ; Mache dir einen Tee! ; Koch{kochen} dir einen Tee! ; Koche dir einen Tee!
 کفش‌هایم را درآوردم. => Ich habe mir die Schuhe ausgezogen{ausziehen-2}. ; Ich habe meine Schuhe ausgezogen{ausziehen-2}.

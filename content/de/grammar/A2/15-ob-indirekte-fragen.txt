@@ -30,9 +30,9 @@ Ich weiß nicht, [wo] Lena wohnt. | نمی‌دانم لنا کجا زندگی �
 Weißt du, [wann] der Film anfängt{anfangen}? | می‌دانی فیلم کی شروع می‌شود؟ | d: wohin, woher, wen
 Kannst du mir sagen, [was] das bedeutet? | می‌توانی به من بگویی این یعنی چه؟ | d: wo, wohin, wann
 Weißt du, [wie] man das schreibt? | می‌دانی این را چطور می‌نویسند؟ | d: was, wer, wen
-Können Sie mir sagen, [was] die Fahrkarte kostet? | می‌توانید به من بگویید بلیت چند است؟ | d: wohin, woher, wer
-Weißt du, [welcher] Bus zum Bahnhof fährt? | می‌دانی کدام اتوبوس به ایستگاه قطار می‌رود؟ | d: welchen, welches, welche
-Ich weiß nicht, [warum] Anna traurig ist. | نمی‌دانم چرا آنا ناراحت است. | d: wer, wen, wohin
+Können Sie mir sagen, [was] die Fahrkarte kostet? | می‌توانید به من بگویید بلیت چند است؟ | d: wohin, woher, wer | ok: wie viel
+Weißt du, [woher] Lena kommt? | می‌دانی لنا اهل کجاست؟ | d: wer, wen, wem
+Ich weiß nicht, [warum] Anna traurig ist. | نمی‌دانم چرا آنا ناراحت است. | d: wer, wen, wohin | ok: wieso
 Weißt du, [wer] heute Geburtstag hat? | می‌دانی امروز تولد کیست؟ | d: wen, wem, wohin
 Ich frage den Lehrer, [ob] wir Hausaufgaben haben. | از معلم می‌پرسم که آیا تکلیف داریم. | d: dass, denn, und | hint: (آیا)
 Lena fragt, [ob] wir morgen Zeit haben. | لنا می‌پرسد که آیا فردا وقت داریم. | d: dass, denn, aber | hint: (آیا)
@@ -44,7 +44,7 @@ Der Kellner fragt, [ob] wir etwas trinken möchten. | گارسون می‌پرس
 Ich weiß nicht, [ob] es morgen regnet. | نمی‌دانم فردا باران می‌آید یا نه. | d: denn, aber, und
 Weißt du, wo die Toilette [ist]? | می‌دانی دستشویی کجاست؟ | d: bist, sind, sein | hint: (sein)
 Ich weiß nicht, ob ich morgen Zeit [habe]. | نمی‌دانم فردا وقت دارم یا نه. | d: hast, hat, haben | hint: (haben)
-Ich weiß nicht, ob Anna gut Deutsch sprechen [kann]. | نمی‌دانم آنا خوب آلمانی حرف می‌زند یا نه. | d: können, kannst, könnt | hint: (können)
+Ich weiß nicht, ob Anna gut Deutsch sprechen [kann]. | نمی‌دانم آنا می‌تواند خوب آلمانی حرف بزند یا نه. | d: können, kannst, könnt | hint: (können)
 Können Sie mir sagen, wann der Zug in Berlin [ankommt]{ankommen}? | می‌توانید به من بگویید قطار کی به برلین می‌رسد؟ | d: ankommen, ankommst, angekommen | hint: (ankommen)
 Weißt du, wann ich morgen aufstehen [muss]? | می‌دانی فردا کی باید بیدار شوم؟ | d: müssen, musst, müsst | hint: (müssen)
 Weißt du, wann der Unterricht [anfängt]{anfangen}? | می‌دانی کلاس کی شروع می‌شود؟ | d: fängt, anfangen, anfängst | hint: (anfangen)
@@ -58,12 +58,12 @@ Können Sie [mir] sagen, wo die Post ist? | می‌توانید به من بگو
 Sag mir bitte{bitte}, wann du [kommst]. | لطفاً به من بگو کی می‌آیی. | d: kommen, komme, kommt
 Weißt du, [wo] Max [wohnt]? | می‌دانی ماکس کجا زندگی می‌کند؟ | d: wohin, woher, wen / wohnen, wohnst, gewohnt
 Ich weiß nicht, [ob] ich morgen kommen [kann]. | نمی‌دانم فردا می‌توانم بیایم یا نه. | d: denn, aber, und / können, kannst, könnt
-Können Sie mir sagen, [wann] der Zug [abfährt]{abfahren}? | می‌توانید به من بگویید قطار کی حرکت می‌کند؟ | d: wohin, woher, wen / abfahren, abfährst, abgefahren
+Können Sie mir sagen, [wann] der Zug [abfährt]{abfahren}? | می‌توانید به من بگویید قطار کی حرکت می‌کند؟ | d: wer, wen, was / abfahren, abfährst, abgefahren
 Lena fragt, [ob] wir Hunger [haben]. | لنا می‌پرسد که آیا گرسنه‌ایم. | d: dass, denn, und / habe, hast, hat
 Weißt du, [wie] der Film [heißt]? | می‌دانی اسم فیلم چیست؟ | d: wo, wer, wen / heiße, heißen, geheißen
 Ich frage Anna, [ob] sie heute [mitkommt]{mitkommen}. | از آنا می‌پرسم که آیا امروز همراه ما می‌آید. | d: dass, denn, und / mitkommen, mitkommst, mitgekommen
 Wissen Sie, [wie] ich zum Bahnhof [komme]? | می‌دانید چطور به ایستگاه قطار بروم؟ | d: was, wer, wen / kommen, kommst, kommt
-Ich weiß nicht, [warum] der Bus heute nicht [kommt]. | نمی‌دانم چرا اتوبوس امروز نمی‌آید. | d: wer, wen, welche / kommen, kommst, komme
+Ich weiß nicht, [warum] der Bus heute nicht [kommt]. | نمی‌دانم چرا اتوبوس امروز نمی‌آید. | d: wer, wen, welche / kommen, kommst, komme | ok: wieso
 transforms:
 Wo ist die Haltestelle? => Weißt du, wo die Haltestelle ist? | سؤال را با «Weißt du, …» شروع کن.
 Wann beginnt der Kurs? => Können Sie mir sagen, wann der Kurs beginnt? | سؤال را با «Können Sie mir sagen, …» شروع کن.
@@ -74,7 +74,7 @@ Fängt der Film um acht an? => Weißt du, ob der Film um acht anfängt{anfangen}
 Kann ich hier parken? => Wissen Sie, ob ich hier parken kann? | سؤال را با «Wissen Sie, …» شروع کن.
 Hast du Zeit? => Lena fragt, ob ich Zeit habe. ; Lena fragt mich, ob ich Zeit habe. | لنا این را از تو می‌پرسد؛ جمله را با «Lena fragt, …» بنویس.
 translations:
-می‌دانی داروخانه کجاست؟ => Weißt du, wo die Apotheke ist?
+می‌دانی داروخانه کجاست؟ => Weißt du, wo die Apotheke ist? ; Weißt du, wo eine Apotheke ist?
 نمی‌دانم او می‌آید یا نه. => Ich weiß nicht, ob er kommt. ; Ich weiß nicht, ob sie kommt. ; Ich weiß nicht, ob er kommt oder nicht. ; Ich weiß nicht, ob sie kommt oder nicht.
 می‌توانید به من بگویید ساعت چند است؟ => Können Sie mir sagen, wie spät es ist? ; Können Sie mir sagen, wie viel Uhr es ist? ; Könnt ihr mir sagen, wie spät es ist? ; Könnt ihr mir sagen, wie viel Uhr es ist?
 می‌دانید این کلمه چه معنی می‌دهد؟ => Wissen Sie, was dieses Wort bedeutet? ; Wissen Sie, was das Wort bedeutet? ; Wisst ihr, was dieses Wort bedeutet? ; Wisst ihr, was das Wort bedeutet?

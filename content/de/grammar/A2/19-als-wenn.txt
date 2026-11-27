@@ -53,7 +53,7 @@ Immer [wenn] wir in Schiras waren, haben wir viele Fotos gemacht. | هر بار 
 [Wenn] es morgen regnet, bleiben wir zu Hause. | اگر فردا باران بیاید، در خانه می‌مانیم. | d: Als, Wann, Ob | full: Wir bleiben zu Hause, wenn es morgen regnet. ; Wenn es regnet, bleiben wir morgen zu Hause. ; Wir bleiben morgen zu Hause, wenn es regnet.
 Ruf{anrufen} mich an{anrufen}, [wenn] du in Köln bist! | وقتی در کلن هستی، به من زنگ بزن! | d: als, wann, ob | full: Wenn du in Köln bist, ruf mich an!
 [Wenn] ihr Hunger habt, kocht Papa Nudeln. | اگر گرسنه‌اید، بابا ماکارونی می‌پزد. | d: Als, Wann, Ob | full: Papa kocht Nudeln, wenn ihr Hunger habt.
-[Wenn] Sie Fragen haben, rufen Sie mich bitte{bitte} an. | اگر سؤالی دارید، لطفاً به من زنگ بزنید. | d: Als, Wann, Ob | full: Wenn Sie Fragen haben, bitte rufen Sie mich an. ; Rufen Sie mich bitte an, wenn Sie Fragen haben. ; Bitte rufen Sie mich an, wenn Sie Fragen haben.
+[Wenn] Sie Fragen haben, rufen Sie mich bitte{bitte} an. | اگر سؤالی دارید، لطفاً به من زنگ بزنید. | d: Als, Wann, Ob | full: Rufen Sie mich bitte an, wenn Sie Fragen haben. ; Bitte rufen Sie mich an, wenn Sie Fragen haben.
 Meine Schwester ist immer nervös, [wenn] sie eine Prüfung hat. | خواهرم همیشه وقتی امتحان دارد، دلشوره دارد. | d: als, wann, ob | full: Wenn sie eine Prüfung hat, ist meine Schwester immer nervös.
 [Wenn] ich groß bin, werde ich Ärztin. | وقتی بزرگ شدم، دکتر می‌شوم. | d: Als, Wann, Ob | full: Ich werde Ärztin, wenn ich groß bin.
 [Wenn] du nach Teheran kommst, zeige ich dir die Stadt. | وقتی به تهران بیایی، شهر را نشانت می‌دهم. | d: Als, Wann, Ob | full: Ich zeige dir die Stadt, wenn du nach Teheran kommst.
@@ -76,7 +76,7 @@ Ich war Student. Ich wohnte in Wien. => Als{als-2} ich Student war, wohnte ich i
 Wenn ich Zeit habe, koche ich. => Immer wenn ich Zeit hatte, kochte ich. ; Immer wenn ich Zeit hatte, habe ich gekocht. | جمله را به گذشته ببر و immer را اول جمله بگذار.
 Als{als-2} ich in Köln war, habe ich Max besucht. => Ich habe Max besucht, als{als-2} ich in Köln war. | جمله als را به آخر ببر.
 Wenn ich nach Hause komme, rufe ich dich an. => Ich rufe dich an, wenn ich nach Hause komme. | جمله wenn را به آخر ببر.
-Max kommt, wenn er fertig ist. => Wann kommt Max? | برای این جمله سؤال با wann بساز.
+Max kommt, wenn er fertig ist. => Wann kommt Max? ; Wann kommt er? | برای این جمله سؤال با wann بساز.
 translations:
 وقتی کوچک بودم، یک گربه داشتم. => Als{als-2} ich klein war, hatte ich eine Katze. ; Ich hatte eine Katze, als{als-2} ich klein war. ; Als{als-2} ich klein war, habe ich eine Katze gehabt. ; Ich habe eine Katze gehabt, als{als-2} ich klein war.
 وقتی باران می‌آید، در خانه می‌مانم. => Wenn es regnet, bleibe ich zu Hause. ; Ich bleibe zu Hause, wenn es regnet.

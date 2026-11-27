@@ -17,7 +17,7 @@ table:
 دو جمله | یک جمله با qui
 J'ai un ami. Il habite à Paris. | J'ai un ami qui habite à Paris.
 Le train part à huit heures. Il va à Lyon. | Le train qui part à huit heures va à Lyon.
-Les enfants jouent. Ils sont mes neveux. | Les enfants qui jouent sont mes neveux.
+Les enfants jouent. Ce sont mes neveux. | Les enfants qui jouent sont mes neveux.
 Paul a téléphoné. | C'est Paul qui a téléphoné.
 examples:
 J'ai une sœur qui habite à Marseille. | خواهری دارم که در مارسی زندگی می‌کند.
@@ -32,7 +32,7 @@ Paris est une ville [qui] ne dort jamais. | پاریس شهری است که هی
 La fille [qui] chante est ma sœur. | دختری که آواز می‌خواند خواهر من است. | d: que, qu'elle, où
 Je cherche un restaurant [qui] est ouvert{ouvert} le dimanche. | دنبال رستورانی می‌گردم که یکشنبه‌ها باز باشد. | d: que, qu'il, où
 Les enfants [qui] jouent dans le parc sont mes voisins. | بچه‌هایی که در پارک بازی می‌کنند همسایه‌های من هستند. | d: que, qu'ils, où
-Tu connais la femme [qui] travaille à la poste ? | زنی را که در اداره پست کار می‌کند می‌شناسی؟ | d: que, qu'elle, où
+Tu connais la femme [qui] travaille à la poste ? | زنی را که در ادارهٔ پست کار می‌کند می‌شناسی؟ | d: que, qu'elle, où
 C'est{être} un livre [qui] parle de l'Iran. | این کتابی است که دربارهٔ ایران است. | d: que, qu'il, où
 Il y a un bus [qui] va à l'aéroport ? | اتوبوسی هست که به فرودگاه برود؟ | d: que, qu'il, où
 J'ai un chat [qui] dort toute la journée. | گربه‌ای دارم که تمام روز می‌خوابد. | d: que, qu'il, où
@@ -53,10 +53,10 @@ C'est{être} moi qui [suis{être}] en retard. | این منم که دیر کرد
 C'est{être} toi qui [as] la clé ? | کلید دست توست؟ | d: a, ai, ont | hint: (avoir)
 C'est{être} nous qui [avons] gagné le match. | ما بودیم که مسابقه را بردیم. | d: a, ont, avez | hint: (avoir)
 Les gens qui [travaillent] ici sont très gentils. | آدم‌هایی که اینجا کار می‌کنند خیلی مهربان‌اند. | d: travaille, travailles, travailler | hint: (travailler)
-Ce sont mes amis qui [viennent] ce soir. | دوستانم هستند که امشب می‌آیند. | d: vient, venons, venir | hint: (venir)
+Ce sont mes amis qui [viennent] ce soir. | این دوستانم هستند که امشب می‌آیند. | d: vient, venons, venir | hint: (venir)
 La voiture qui [est] devant la maison est à moi. | ماشینی که جلوی خانه است مال من است. | d: sont, es, a | hint: (être)
 Les bus qui [vont] au centre partent d'ici. | اتوبوس‌هایی که به مرکز شهر می‌روند از اینجا حرکت می‌کنند. | d: va, allons, aller | hint: (aller)
-C'est{être} vous qui [êtes] le nouveau professeur ? | شما معلم جدید هستید؟ | d: est, sont, sommes | hint: (être)
+C'est{être} vous qui [êtes] le nouveau professeur ? | معلم جدید شما هستید؟ | d: est, sont, sommes | hint: (être)
 J'ai un frère qui [habite] à Lyon et une sœur qui [travaille] à Nice. | برادری دارم که در لیون زندگی می‌کند و خواهری که در نیس کار می‌کند. | d: habitent, habites, habiter / travaillent, travailles, travailler | full: J'ai une sœur qui travaille à Nice et un frère qui habite à Lyon.
 Le garçon [qui] parle et la fille [qui] écoute sont mes enfants. | پسری که حرف می‌زند و دختری که گوش می‌دهد بچه‌های من هستند. | d: que, qu'il, où / que, qu'elle, où | full: La fille qui écoute et le garçon qui parle sont mes enfants.
 C'est{être} moi qui [ai] le billet et c'est{être} toi qui [as] la valise. | بلیت دست من است و چمدان دست تو. | d: a, as, ont / a, ai, ont | full: C'est toi qui as la valise et c'est moi qui ai le billet.
@@ -68,7 +68,7 @@ L'homme [qui] est assis là-bas [est] mon professeur. | مردی که آنجا �
 transforms:
 J'ai un ami. Il habite à Paris. => J'ai un ami qui habite à Paris. | جملهٔ دوم را با qui به جملهٔ اول وصل کن.
 Je connais une femme. Elle parle chinois. => Je connais une femme qui parle chinois. | جملهٔ دوم را با qui به جملهٔ اول وصل کن.
-Le train part à huit heures. Il va à Lyon. => Le train qui va à Lyon part à huit heures. | جملهٔ دوم را با qui به جملهٔ اول وصل کن.
+Le train part à huit heures. Il va à Lyon. => Le train qui va à Lyon part à huit heures. ; Le train qui part à huit heures va à Lyon. | جملهٔ دوم را با qui به جملهٔ اول وصل کن.
 C'est{être} un livre. Il est très intéressant. => C'est{être} un livre qui est très intéressant. | جملهٔ دوم را با qui به جملهٔ اول وصل کن.
 Je cherche un restaurant. Il est ouvert{ouvert} le lundi. => Je cherche un restaurant qui est ouvert{ouvert} le lundi. | جملهٔ دوم را با qui به جملهٔ اول وصل کن.
 J'ai deux frères. Ils habitent à Lyon. => J'ai deux frères qui habitent à Lyon. | جملهٔ دوم را با qui به جملهٔ اول وصل کن.

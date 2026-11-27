@@ -24,46 +24,46 @@ Je suis en retard à cause de la pluie. | به خاطر باران دیر کرد
 Il pleut, donc je prends le bus. | باران می‌آید، پس اتوبوس سوار می‌شوم.
 Pourquoi tu ris ? Parce que c'est{être} drôle. | چرا می‌خندی؟ چون خنده‌دار است.
 targets:
-Je ne sors pas [parce que] je suis{être} malade. | بیرون نمی‌روم چون مریضم. | d: à cause de, pourquoi, pour | ok: car
-Paul ne vient pas [parce que] sa voiture est en panne. | پل نمی‌آید چون ماشینش خراب است. | d: à cause de, pourquoi, pour | ok: car
-Nous sommes en retard [à cause de] la neige. | به خاطر برف دیر کرده‌ایم. | d: parce que, car, donc
-On ne joue pas au football [à cause de] la pluie. | به خاطر باران فوتبال بازی نمی‌کنیم. | d: parce que, car, donc
-Je n'ai pas dormi à cause{à cause de} [du]{du-contr} bruit. | به خاطر سر و صدا نخوابیدم. | d: de le, de, des
+Je ne sors pas [parce que] je suis{être} malade. | بیرون نمی‌روم چون مریضم. | d: à cause de, pourquoi, pour | ok: car | full: Parce que je suis malade, je ne sors pas.
+Paul ne vient pas [parce que] sa voiture est en panne. | پل نمی‌آید چون ماشینش خراب است. | d: à cause de, pourquoi, pour | ok: car | full: Parce que sa voiture est en panne, Paul ne vient pas.
+Nous sommes en retard [à cause de] la neige. | به خاطر برف دیر کرده‌ایم. | d: parce que, car, donc | full: À cause de la neige, nous sommes en retard.
+On ne joue pas au football [à cause de] la pluie. | به خاطر باران فوتبال بازی نمی‌کنیم. | d: parce que, car, donc | full: À cause de la pluie, on ne joue pas au football.
+Je n'ai pas dormi à cause{à cause de} [du]{du-contr} bruit. | به خاطر سر و صدا نخوابیدم. | d: de le, de, des | full: À cause du bruit, je n'ai pas dormi.
 Pourquoi tu ne manges pas ? [Parce que] je n'ai pas faim. | چرا غذا نمی‌خوری؟ چون گرسنه نیستم. | d: Car, À cause de, Donc
 Pourquoi apprenez-vous le français ? [Parce que] j'aime voyager. | چرا فرانسوی یاد می‌گیرید؟ چون سفر را دوست دارم. | d: Car, À cause de, Pour
 Il pleut, [donc] je prends mon parapluie. | باران می‌آید، پس چترم را برمی‌دارم. | d: à cause de, pourquoi, pour | ok: alors
 Je suis{être} fatigué, [alors] je vais me coucher. | خسته‌ام، پس می‌روم بخوابم. | d: à cause de, pourquoi, pour | ok: donc
 Le magasin est fermé{fermé}, [donc] nous rentrons à la maison. | مغازه بسته است، پس به خانه برمی‌گردیم. | d: à cause de, pourquoi, pour | ok: alors
-J'ai beaucoup marché, [donc] je suis{être} fatigué. | زیاد راه رفتم، برای همین خسته‌ام. | d: à cause de, pourquoi, pour | ok: alors
+J'ai beaucoup marché, [donc] je suis{être} fatigué. | زیاد راه رفتم، برای همین خسته‌ام. | d: à cause de, pourquoi, pour | ok: alors, c'est pour ça que
 Elle est malade, c'est{être} pour ça [qu']elle reste au lit. | او مریض است، برای همین در رختخواب می‌ماند. | d: que, qui, parce qu'
 Il fait froid, c'est{être} pour ça [que] je porte{porter} un manteau. | هوا سرد است، برای همین پالتو پوشیده‌ام. | d: qui, quoi, parce que
 La piscine est fermée{fermé} [car] le directeur est malade. | استخر بسته است، چون مدیر مریض است. | d: à cause de, pourquoi, pour | ok: parce que
 Je t'écris [car] je ne peux pas venir demain. | برایت می‌نویسم، چون فردا نمی‌توانم بیایم. | d: à cause de, pourquoi, pour | ok: parce que
 C'est{être} [à cause de] toi que nous sommes en retard ! | به خاطر توست که دیر کرده‌ایم! | d: parce que, car, donc
-Paul est content [parce que] son équipe a gagné. | پل خوشحال است چون تیمش برده است. | d: à cause de, pourquoi, pour | ok: car
-Ma mère est fâchée [à cause de] mes notes. | مادرم به خاطر نمره‌هایم عصبانی است. | d: parce que, car, donc
-On ne peut pas sortir [à cause de] l'orage. | به خاطر طوفان نمی‌توانیم بیرون برویم. | d: parce que, car, donc
-Je suis en retard à cause{à cause de} [des]{des-contr} embouteillages. | به خاطر ترافیک دیر کرده‌ام. | d: de les, de, du
+Paul est content [parce que] son équipe a gagné. | پل خوشحال است چون تیمش برده است. | d: à cause de, pourquoi, pour | ok: car | full: Parce que son équipe a gagné, Paul est content.
+Ma mère est fâchée [à cause de] mes notes. | مادرم به خاطر نمره‌هایم عصبانی است. | d: parce que, car, donc | full: À cause de mes notes, ma mère est fâchée.
+On ne peut pas sortir [à cause de] l'orage. | به خاطر طوفان نمی‌توانیم بیرون برویم. | d: parce que, car, donc | full: À cause de l'orage, on ne peut pas sortir.
+Je suis en retard à cause{à cause de} [des]{des-contr} embouteillages. | به خاطر ترافیک دیر کرده‌ام. | d: de les, de, du | full: À cause des embouteillages, je suis en retard.
 Pourquoi pleures-tu ? [Parce que] j'ai perdu mon chat. | چرا گریه می‌کنی؟ چون گربه‌ام را گم کرده‌ام. | d: Car, À cause de, Donc
 Pourquoi tu ris ? [Parce que] cette histoire est drôle. | چرا می‌خندی؟ چون این داستان خنده‌دار است. | d: Car, À cause de, Pour
-Je ne viens pas [parce que] je dois travailler. | نمی‌آیم چون باید کار کنم. | d: à cause de, pourquoi, pour | ok: car
-Nous ne nous sommes pas baignés [parce que] la mer était froide. | شنا نکردیم چون دریا سرد بود. | d: à cause de, pourquoi, pour | ok: car
+Je ne viens pas [parce que] je dois travailler. | نمی‌آیم چون باید کار کنم. | d: à cause de, pourquoi, pour | ok: car | full: Parce que je dois travailler, je ne viens pas.
+Nous ne nous sommes pas baignés [parce que] la mer était froide. | شنا نکردیم چون دریا سرد بود. | d: à cause de, pourquoi, pour | ok: car | full: Parce que la mer était froide, nous ne nous sommes pas baignés.
 Il n'y avait plus{plus-2} de pain, [alors] j'ai acheté des croissants. | دیگر نان نبود، پس کروسان خریدم. | d: à cause de, pourquoi, pour | ok: donc
-Le train était en retard, [donc] je suis{être} arrivé tard. | قطار تأخیر داشت، برای همین دیر رسیدم. | d: à cause de, pourquoi, pour | ok: alors
+Le train était en retard, [donc] je suis{être} arrivé tard. | قطار تأخیر داشت، برای همین دیر رسیدم. | d: à cause de, pourquoi, pour | ok: alors, c'est pour ça que
 Tu as faim ? [Alors] mange une pomme ! | گرسنه‌ای؟ پس یک سیب بخور! | d: À cause de, Pourquoi, Pour | ok: Donc
 J'ai oublié mes clés, c'est{être} pour ça [que] je ne peux pas entrer. | کلیدهایم را فراموش کردم، برای همین نمی‌توانم وارد شوم. | d: qui, quoi, parce que
-[Pourquoi] est-ce que tu es triste ? Parce que mon ami est parti. | چرا ناراحتی؟ چون دوستم رفته است. | d: Parce que, Car, Donc
-Je ne vais pas à l'école [à cause de] ma fièvre. | به خاطر تبم به مدرسه نمی‌روم. | d: parce que, car, donc
+[Pourquoi] est-ce que tu es triste ? Parce que mon ami est parti. | چرا ناراحتی؟ چون دوستم رفته است. | d: Parce que, Car, À cause de
+Je ne vais pas à l'école [à cause de] ma fièvre. | به خاطر تبم به مدرسه نمی‌روم. | d: parce que, car, donc | full: À cause de ma fièvre, je ne vais pas à l'école.
 Pourquoi as-tu{tu} pris un taxi ? [Parce que] le bus ne venait pas. | چرا تاکسی گرفتی؟ چون اتوبوس نمی‌آمد. | d: Car, À cause de, Donc
-Il a manqué le bus, [donc] il est arrivé en retard. | اتوبوس را از دست داد، برای همین دیر رسید. | d: à cause de, pourquoi, pour | ok: alors
+Il a manqué le bus, [donc] il est arrivé en retard. | اتوبوس را از دست داد، برای همین دیر رسید. | d: à cause de, pourquoi, pour | ok: alors, c'est pour ça que
 Je suis{être} fatigué [parce que] je n'ai pas bien dormi, [donc] je reste au lit. | خسته‌ام چون خوب نخوابیدم، پس در رختخواب می‌مانم. | d: à cause de, pourquoi, pour / à cause de, pourquoi, pour | ok: car / alors
-[À cause de] la neige, l'école est fermée{fermé}, [alors] on reste à la maison. | به خاطر برف مدرسه تعطیل است، پس در خانه می‌مانیم. | d: Parce que, Car, Donc / à cause de, pourquoi, pour | ok: À cause de / donc
-Je ne sors pas [à cause de] la pluie et [parce que] je suis{être} fatigué. | به خاطر باران و چون خسته‌ام بیرون نمی‌روم. | d: parce que, car, donc / à cause de, pourquoi, pour | ok: à cause de / car
+[À cause de] la neige, l'école est fermée{fermé}, [alors] on reste à la maison. | به خاطر برف مدرسه تعطیل است، پس در خانه می‌مانیم. | d: Parce que, Car, Donc / à cause de, pourquoi, pour | ok: À cause de / donc | full: L'école est fermée à cause de la neige, alors on reste à la maison.
+Je ne sors pas [à cause de] la pluie et [parce que] je suis{être} fatigué. | به خاطر باران و چون خسته‌ام بیرون نمی‌روم. | d: parce que, car, donc / à cause de, pourquoi, pour | full: À cause de la pluie et parce que je suis fatigué, je ne sors pas.
 Pourquoi tu ne viens pas ? [Parce que] je suis{être} malade, [alors] je reste ici. | چرا نمی‌آیی؟ چون مریضم، پس همین‌جا می‌مانم. | d: Car, À cause de, Donc / à cause de, pourquoi, pour | ok: Parce que / donc
 Marie est triste [à cause de] son examen, [alors] je l'appelle. | ماری به خاطر امتحانش ناراحت است، پس به او زنگ می‌زنم. | d: parce que, car, donc / à cause de, pourquoi, pour | ok: à cause de / donc
 Le café est fermé{fermé} [parce que] c'est{être} dimanche, [donc] on va au parc. | کافه بسته است چون یکشنبه است، پس به پارک می‌رویم. | d: à cause de, pourquoi, pour / à cause de, pourquoi, pour | ok: car / alors
 Pourquoi tu cours ? [Parce que] mon train part, [alors] je me dépêche. | چرا می‌دوی؟ چون قطارم دارد حرکت می‌کند، پس عجله می‌کنم. | d: Car, À cause de, Donc / à cause de, pourquoi, pour | ok: Parce que / donc
-Il n'a pas pu venir [à cause de] sa fièvre, [donc] je suis{être} venu seul. | به خاطر تبش نتوانست بیاید، پس تنها آمدم. | d: parce que, car, donc / à cause de, pourquoi, pour | ok: à cause de / alors
+Il n'a pas pu venir [à cause de] sa fièvre, [donc] je suis{être} venu seul. | به خاطر تبش نتوانست بیاید، پس تنها آمدم. | d: parce que, car, donc / à cause de, pourquoi, pour | ok: à cause de / alors | full: À cause de sa fièvre, il n'a pas pu venir, donc je suis venu seul.
 transforms:
 Il pleut. Je reste à la maison. => Il pleut, donc je reste à la maison. ; Il pleut, alors je reste à la maison. | دو جمله را با donc یا alors به هم وصل کن.
 Je reste à la maison. Il pleut. => Je reste à la maison parce qu'il pleut. | دو جمله را با parce que به هم وصل کن.
@@ -77,7 +77,7 @@ translations:
 چرا؟ چون خسته‌ام. => Pourquoi ? Parce que je suis{être} fatigué. ; Pourquoi ? Parce que je suis{être} fatiguée.
 به خاطر باران در خانه می‌مانم. => Je reste à la maison à cause de la pluie. ; À cause de la pluie, je reste à la maison.
 باران می‌آید، پس چترم را برمی‌دارم. => Il pleut, donc je prends mon parapluie. ; Il pleut, alors je prends mon parapluie. ; Il pleut, c'est{être} pour ça que je prends mon parapluie.
-نمی‌آیم چون مریضم. => Je ne viens pas parce que je suis{être} malade. ; Je ne viens pas car je suis{être} malade.
+نمی‌آیم چون مریضم. => Je ne viens pas parce que je suis{être} malade. ; Je ne viens pas car je suis{être} malade. ; Parce que je suis{être} malade, je ne viens pas.
 او (مرد) خوشحال است چون تیمش برده است. => Il est content parce que son équipe a gagné. ; Il est content car son équipe a gagné. ; Il est heureux parce que son équipe a gagné. ; Il est heureux car son équipe a gagné.
 به خاطر سر و صدا نخوابیدم. => Je n'ai pas dormi à cause{à cause de} du{du-contr} bruit. ; À cause{à cause de} du{du-contr} bruit, je n'ai pas dormi.
 برای همین زود می‌خوابم. => C'est{être} pour ça que je me couche tôt. ; C'est{être} pour cela que je me couche tôt. ; C'est{être} pourquoi je me couche tôt. ; Donc je me couche tôt. ; Alors je me couche tôt.

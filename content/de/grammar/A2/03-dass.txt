@@ -19,8 +19,8 @@ Du kannst kommen. | Ich hoffe, dass du kommen kannst.
 Sie hat angerufen. | Ich weiß, dass sie angerufen hat.
 Der Kurs fängt um 9 Uhr an. | Er sagt, dass der Kurs um 9 Uhr anfängt.
 sets:
-dass (که): Ich glaube, dass …, Ich weiß, dass …, Es ist schön, dass …
-das (حرف تعریف یا «این»): das Buch, das Auto, Das ist gut.
+بعد از این فعل‌ها dass (که) می‌آید: glauben, wissen, hoffen, denken, sagen
+این اسم‌ها حرف تعریف das دارند: Buch, Auto, Kind, Wetter, Zimmer
 examples:
 Ich glaube, dass er Recht hat. | فکر می‌کنم که حق با اوست.
 Ich hoffe, dass du morgen Zeit hast. | امیدوارم فردا وقت داشته باشی.
@@ -34,8 +34,8 @@ Es ist wichtig, [dass] du pünktlich bist. | مهم است که سر وقت با
 Es ist schade, [dass] du keine Zeit hast. | حیف است که وقت نداری. | d: das, denn, und
 Der Lehrer sagt, [dass] die Prüfung leicht ist. | معلم می‌گوید که امتحان آسان است. | d: das, denn, dann | full: Dass die Prüfung leicht ist, sagt der Lehrer.
 Ich weiß, [dass] du müde bist. | می‌دانم که خسته‌ای. | d: das, denn, und | full: Dass du müde bist, weiß ich.
-Wir denken, [dass] das Hotel zu{zu-adv} teuer ist. | ما فکر می‌کنیم که هتل خیلی گران است. | d: das, denn, dann | full: Dass das Hotel zu teuer ist, denken wir.
-Es ist toll, [dass] du so gut kochen kannst. | عالی است که این‌قدر خوب آشپزی می‌کنی. | d: das, denn, dann
+Wir denken, [dass] das Hotel zu{zu-adv} teuer ist. | ما فکر می‌کنیم که هتل زیادی گران است. | d: das, denn, dann | full: Dass das Hotel zu teuer ist, denken wir.
+Es ist toll, [dass] du so gut kochen kannst. | عالی است که این‌قدر خوب آشپزی بلدی. | d: das, denn, dann
 Es ist normal, [dass] man am Anfang Fehler macht. | طبیعی است که آدم اول کار اشتباه کند. | d: das, denn, und
 Hast du gewusst, [dass] Lena eine Schwester hat? | می‌دانستی که لنا یک خواهر دارد؟ | d: das, denn, dann
 Ich bin froh, [dass] die Prüfung vorbei ist. | خوشحالم که امتحان تمام شده است. | d: das, denn, und
@@ -71,7 +71,7 @@ transforms:
 Max ist krank. => Ich glaube, dass Max krank ist. | جمله را با «Ich glaube, dass …» بنویس.
 Du kommst morgen. => Ich hoffe, dass du morgen kommst. | جمله را با «Ich hoffe, dass …» بنویس.
 Der Zug kommt um 8 Uhr an. => Ich weiß, dass der Zug um 8 Uhr ankommt{ankommen}. | جمله را با «Ich weiß, dass …» بنویس.
-Ich kann nicht kommen. => Anna sagt, dass sie nicht kommen kann. | جمله را با «Anna sagt, dass …» بنویس.
+Ich kann nicht kommen. => Anna sagt, dass sie nicht kommen kann. | این حرف آناست؛ جمله را با «Anna sagt, dass …» بنویس.
 Du bist pünktlich. => Es ist wichtig, dass du pünktlich bist. | جمله را با «Es ist wichtig, dass …» بنویس.
 Er hat den Film gesehen. => Ich glaube, dass er den Film gesehen hat. | جمله را با «Ich glaube, dass …» بنویس.
 Ich glaube, Lena ist müde. => Ich glaube, dass Lena müde ist. | جمله را با dass بنویس.

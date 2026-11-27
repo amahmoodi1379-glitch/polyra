@@ -65,7 +65,7 @@ Kennst du die [junge] Frau mit dem [schwarzen] Hund? | آن زن جوانی را
 Das [frische] Brot ist vom [kleinen] Markt. | نان تازه از بازار کوچک است. | d: frischen, frischer, frisches / kleine, kleiner, kleinem
 Ich treffe meine Freunde im [neuen] Café am [großen] Platz. | دوستانم را در کافه جدید کنار میدان بزرگ می‌بینم. | d: neue, neues, neuem / große, großer, großem | full: Im neuen Café am großen Platz treffe ich meine Freunde.
 Das [kleine] Kind sucht die [schwarze] Katze. | بچه کوچک دنبال گربه سیاه می‌گردد. | d: kleinen, kleiner, kleines / schwarzen, schwarzer, schwarzes
-Der [alte] Mann wohnt im [ersten] Stock. | مرد پیر در طبقه اول زندگی می‌کند. | d: alten, alter, altes / erste, erster, erstem
+Der [alte] Mann wohnt im [gelben] Haus. | مرد پیر در خانه زرد زندگی می‌کند. | d: alten, alter, altes / gelbe, gelbes, gelbem
 transforms:
 Der alte Mann ist hier. => Ich sehe den alten Mann. | جمله را با «Ich sehe …» بنویس.
 Die neue Lehrerin kommt. => Ich spreche mit der neuen Lehrerin. | جمله را با «Ich spreche mit …» بنویس.

@@ -23,7 +23,7 @@ lesson:
 بعد: venir → je viendrai، pouvoir → je pourrai، vouloir → je voudrai، devoir → je devrai، voir → je verrai، savoir → je saurai.
 فعل‌هایی که از این‌ها ساخته شده‌اند همان ریشه را دارند: revenir → je reviendrai، devenir → je deviendrai، revoir → je reverrai.
 سه شکل فقط با il می‌آیند: il faut → il faudra (لازم خواهد بود)، il pleut → il pleuvra (باران خواهد آمد)، il y a → il y aura (… خواهد بود).
-چند فعل -er ریشه‌شان را مثل زمان حال عوض می‌کنند (j'achète، j'appelle): acheter → j'achèterai، appeler → j'appellerai، se lever → je me lèverai، se promener → je me promènerai، jeter → je jetterai. envoyer هم بی‌قاعده است: j'enverrai.
+چند فعل -er ریشه‌شان را مثل زمان حال عوض می‌کنند (j'achète، j'appelle): acheter → j'achèterai، appeler → j'appellerai، se lever → je me lèverai، se promener → je me promènerai، jeter → je jetterai. در فعل‌های -oyer و -uyer حرف y پیش از پایانه i می‌شود: nettoyer → je nettoierai، s'ennuyer → je m'ennuierai. envoyer هم بی‌قاعده است: j'enverrai.
 نکته: ریشهٔ futur همیشه به r ختم می‌شود: ser-، aur-، ir-، fer-، pourr-.
 table:
 مصدر | je | nous
@@ -50,7 +50,7 @@ Demain, il [fera] froid. | فردا هوا سرد خواهد بود. | d: faira,
 Je [serai] à la maison à six heures. | ساعت شش خانه خواهم بود. | d: êtrai, sera, seras | hint: (être) | full: À six heures, je serai à la maison.
 Tu [seras] fatigué demain. | فردا خسته خواهی بود. | d: êtras, serai, sera | hint: (être) | full: Demain, tu seras fatigué.
 Nous [aurons] le temps samedi. | شنبه وقت خواهیم داشت. | d: avoirons, auront, aurez | hint: (avoir) | full: Samedi, nous aurons le temps.
-Il y [aura] beaucoup de monde au concert. | در کنسرت خیلی شلوغ خواهد بود. | d: avoira, aurai, auras | hint: (avoir)
+Il y [aura] beaucoup de monde au concert. | در کنسرت خیلی شلوغ خواهد بود. | d: avoira, aurai, auras | hint: (avoir) | full: Au concert, il y aura beaucoup de monde.
 J'[irai] à Ispahan cet été{été}. | این تابستان به اصفهان خواهم رفت. | d: allerai, ira, iras | hint: (aller) | full: Cet été, j'irai à Ispahan.
 Vous [irez] à la plage demain ? | فردا به ساحل خواهید رفت؟ | d: allerez, irons, iront | hint: (aller) | full: Demain, vous irez à la plage ?
 Qu'est-ce que tu [feras] ce week-end ? | این آخر هفته چه کار خواهی کرد؟ | d: fairas, ferai, fera | hint: (faire)
@@ -78,7 +78,7 @@ Il [deviendra] médecin. | او پزشک خواهد شد. | d: devenira, deviend
 Vous [aurez] votre billet demain. | فردا بلیتتان را خواهید داشت. | d: avoirez, aurons, auront | full: Demain, vous aurez votre billet.
 Ils ne [pourront] pas venir. | آن‌ها نخواهند توانست بیایند. | d: pouvoiront, pourrons, pourra | hint: (pouvoir)
 Les enfants [seront] contents. | بچه‌ها خوشحال خواهند شد. | d: êtront, serons, sera | hint: (être)
-Demain, je [serai] à Lyon et j'[irai] au musée. | فردا در لیون خواهم بود و به موزه خواهم رفت. | d: êtrai, sera, seras / allerai, ira, iras
+Demain, je [serai] à Lyon et j'[irai] au musée. | فردا در لیون خواهم بود و به موزه خواهم رفت. | d: êtrai, sera, seras / allerai, ira, iras | full: Je serai à Lyon demain et j'irai au musée.
 Il [fera] beau et nous [ferons] un pique-nique. | هوا خوب خواهد بود و پیک‌نیک خواهیم رفت. | d: faira, fairra, feras / fairons, feront, ferez
 Tu [auras] le temps ? Tu [pourras] m'aider ? | وقت خواهی داشت؟ خواهی توانست کمکم کنی؟ | d: avoiras, aurai, aura / pouvoiras, pourrai, pourra
 Nous [viendrons] en train et nous [verrons] la mer. | با قطار خواهیم آمد و دریا را خواهیم دید. | d: venirons, viendront, viendrez / voirons, verront, verrez

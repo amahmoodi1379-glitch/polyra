@@ -3,7 +3,7 @@ title: vor، seit، in، nach: «… پیش»، «… است که»، «… دی
 scope: حرف‌های اضافه زمان: vor (… پیش)، seit (از … تا حالا، با زمان حال)، in (… دیگر) و nach و vor (بعد از، قبل از)، همه با Dativ و -n جمع (vor zwei Jahren، seit einem Monat، in einer Woche، nach dem Essen)، سؤال Seit wann …?، bis و ab بدون حرف تعریف (bis Freitag، ab morgen) و von … bis؛ während در سطح B1 می‌آید.
 can_do: حالا می‌توانی بگویی چیزی کی اتفاق افتاده، از کی ادامه دارد و کی پیش می‌آید: «دو سال پیش»، «سه سال است که…»، «یک هفته دیگر».
 rule: vor (… پیش)، seit (از … تا حالا)، in (… دیگر) و nach (بعد از) با Dativ: vor zwei Jahren، seit einem Monat، in einer Woche، nach dem Essen؛ bis (تا) و ab (از … به بعد) معمولاً بدون حرف تعریف: bis Freitag، ab morgen.
-mistake: فارسی‌زبان‌ها «دو سال پیش» را کلمه‌به‌کلمه می‌گویند: «zwei Jahre vor» یا «vor zwei Jahre» غلط است؛ درست: vor zwei Jahren (vor اول و -n آخر اسم جمع). برای «سه سال است که…» هم گاهی für می‌گذارند: «Ich wohne hier für drei Jahre» غلط است؛ درست: Ich wohne seit drei Jahren hier.
+mistake: فارسی‌زبان‌ها «دو سال پیش» را کلمه‌به‌کلمه می‌گویند: «zwei Jahre vor» یا «vor zwei Jahre» غلط است؛ درست: vor zwei Jahren (vor اول و -n آخر اسم جمع). برای «سه سال است که…» هم گاهی für می‌گذارند، ولی «Ich wohne hier für drei Jahre» این معنی را نمی‌دهد؛ درست: Ich wohne seit drei Jahren hier.
 lesson:
 برای گفتن زمان، آلمانی چند حرف اضافه دارد که بیشترشان Dativ می‌گیرند.
 vor یعنی «… پیش» برای گذشته: vor zwei Jahren («دو سال پیش»). در فارسی «پیش» بعد از عدد می‌آید، در آلمانی vor قبل از آن.
@@ -25,7 +25,7 @@ von … bis | از … تا | von 8 bis 17 Uhr
 sets:
 گذشته: vor zwei Jahren, vor einer Woche, vor drei Tagen
 از گذشته تا حالا: seit einem Jahr, seit drei Monaten, seit wann
-آینده: in einer Stunde, in zwei Monaten, ab morgen, bis Freitag
+آینده: in einer Stunde, in zwei Monaten, in einer Woche, ab morgen
 examples:
 Wir sind vor zwei Jahren nach Hamburg umgezogen. | ما دو سال پیش به هامبورگ اسباب‌کشی کردیم.
 Paul spielt seit drei Jahren Fußball. | پاول سه سال است که فوتبال بازی می‌کند.
@@ -37,7 +37,7 @@ Wir haben uns vor drei [Tagen] getroffen. | سه روز پیش همدیگر را
 Max hat [vor] einer Stunde angerufen. | ماکس یک ساعت پیش زنگ زد. | d: seit, ab, für | full: Vor einer Stunde hat Max angerufen.
 Vor [einem] Monat war ich in Wien. | یک ماه پیش در وین بودم. | d: einen, ein, eine | hint: (der Monat) | full: Ich war vor einem Monat in Wien.
 Wir haben vor [einer] Woche telefoniert. | یک هفته پیش با هم تلفنی صحبت کردیم. | d: eine, einem, einen | hint: (die Woche) | full: Vor einer Woche haben wir telefoniert.
-Wann seid ihr angekommen? – [Vor] zwei Stunden. | کی رسیدید؟ – دو ساعت پیش. | d: Seit, In, Ab
+Wann seid ihr angekommen? – [Vor] zwei Stunden. | کی رسیدید؟ – دو ساعت پیش. | d: Bis, In, Ab
 Ich wohne [seit] drei Jahren in Berlin. | سه سال است که در برلین زندگی می‌کنم. | d: vor, für, ab | full: Seit drei Jahren wohne ich in Berlin.
 Anna lernt seit einem [Jahr] Deutsch. | آنا یک سال است که آلمانی یاد می‌گیرد. | d: Jahren, Jahre, Jahres | hint: (Jahr) | full: Seit einem Jahr lernt Anna Deutsch.
 Wir warten seit [einer] Stunde auf den Bus. | یک ساعت است که منتظر اتوبوس هستیم. | d: eine, einem, ein | hint: (die Stunde) | full: Seit einer Stunde warten wir auf den Bus.
@@ -65,19 +65,19 @@ Der Kurs ist von Montag [bis] Freitag. | کلاس از دوشنبه تا جمع�
 Ich bleibe [bis] Sonntag in Hamburg. | تا یکشنبه در هامبورگ می‌مانم. | d: um, zu, an | full: Bis Sonntag bleibe ich in Hamburg.
 [Ab] morgen mache ich jeden Tag Sport. | از فردا هر روز ورزش می‌کنم. | d: Seit, In, Um | full: Ich mache ab morgen jeden Tag Sport.
 [Ab] jetzt spreche ich nur Deutsch. | از حالا فقط آلمانی حرف می‌زنم. | d: Seit, In, Um | full: Ich spreche ab jetzt nur Deutsch.
-Ich habe [vor] zwei [Jahren] in Wien gewohnt. | دو سال پیش در وین زندگی می‌کردم. | d: seit, ab, für / Jahre, Jahr, Jahres | full: Vor zwei Jahren habe ich in Wien gewohnt.
-[Seit] drei [Monaten] lerne ich Deutsch. | سه ماه است که آلمانی یاد می‌گیرم. | d: Vor, Für, Ab / Monate, Monat, Monats | full: Ich lerne seit drei Monaten Deutsch.
-Mein Bruder wohnt [seit] vier [Jahren] in Köln. | برادرم چهار سال است که در کلن زندگی می‌کند. | d: vor, für, ab / Jahre, Jahr, Jahres | full: Seit vier Jahren wohnt mein Bruder in Köln.
+Ich habe [vor] zwei [Jahren] in Wien gewohnt. | دو سال پیش در وین زندگی می‌کردم. | d: seit, ab, bis / Jahre, Jahr, Jahres | full: Vor zwei Jahren habe ich in Wien gewohnt.
+[Seit] drei [Monaten] lerne ich Deutsch. | سه ماه است که آلمانی یاد می‌گیرم. | d: Vor, Bis, Ab / Monate, Monat, Monats | full: Ich lerne seit drei Monaten Deutsch.
+Mein Bruder wohnt [seit] vier [Jahren] in Köln. | برادرم چهار سال است که در کلن زندگی می‌کند. | d: vor, bis, ab / Jahre, Jahr, Jahres | full: Seit vier Jahren wohnt mein Bruder in Köln.
 Vor [dem] Essen gehe ich einkaufen und nach [dem] Essen spüle ich. | قبل از غذا خرید می‌روم و بعد از غذا ظرف می‌شویم. | d: das, den, der / das, den, der | full: Ich gehe vor dem Essen einkaufen und nach dem Essen spüle ich.
 Der Zug ist [vor] fünf Minuten abgefahren, der nächste{nächste} kommt [in] einer Stunde. | قطار پنج دقیقه پیش رفت؛ بعدی یک ساعت دیگر می‌آید. | d: seit, ab, für / vor, seit, ab
 Wir sind [seit] einer Woche in Wien und bleiben [bis] Sonntag. | یک هفته است که در وین هستیم و تا یکشنبه می‌مانیم. | d: vor, für, ab / um, zu, an
 Ich bin [vor] einer Woche angekommen und bleibe noch [bis] Freitag. | یک هفته پیش رسیدم و تا جمعه می‌مانم. | d: seit, ab, für / um, zu, an
 transforms:
 Ich komme vor dem Essen. => Ich komme nach dem Essen. | به‌جای «قبل از غذا» بگو «بعد از غذا».
-Der Zug ist vor einer Stunde abgefahren. => Der Zug fährt in einer Stunde ab. | بگو قطار یک ساعت دیگر حرکت می‌کند (زمان حال).
+Der Zug ist vor einer Stunde abgefahren. => Der Zug fährt in einer Stunde ab. ; In einer Stunde fährt der Zug ab. | بگو قطار یک ساعت دیگر حرکت می‌کند (زمان حال).
 Ich lerne seit einem Monat Deutsch. => Ich lerne seit zwei Monaten Deutsch. | به‌جای «یک ماه» بگو «دو ماه».
 Max hat vor einem Tag angerufen. => Max hat vor zwei Tagen angerufen. | به‌جای «یک روز» بگو «دو روز».
-Ich wohne seit drei Jahren hier. => Seit wann wohnst du hier? ; Seit wann wohnst du schon hier? | برای «seit drei Jahren» سؤال بساز (با du).
+Ich wohne seit drei Jahren hier. => Seit wann wohnst du hier? ; Seit wann wohnst du schon hier? ; Wie lange wohnst du schon hier? | برای «seit drei Jahren» سؤال بساز (با du).
 Ich habe vor dem Kurs Zeit. => Vor dem Kurs habe ich Zeit. | جمله را با «Vor dem Kurs» شروع کن.
 Nach der Arbeit gehe ich einkaufen. => Ich gehe nach der Arbeit einkaufen. | جمله را با Ich شروع کن.
 Wir fahren in einem Monat nach Iran. => Wir fahren in zwei Monaten nach Iran. | به‌جای «یک ماه» بگو «دو ماه».
@@ -89,4 +89,4 @@ translations:
 از کی آلمانی یاد می‌گیری؟ => Seit wann lernst du Deutsch? ; Seit wann lernst du schon Deutsch?
 تا جمعه در وین می‌مانم. => Ich bleibe bis Freitag in Wien. ; Bis Freitag bleibe ich in Wien.
 از فردا ورزش می‌کنم. => Ab morgen mache ich Sport. ; Ich mache ab morgen Sport.
-یک ساعت پیش زنگ زدی؟ => Hast du vor einer Stunde angerufen?
+یک ساعت پیش زنگ زدی؟ => Hast du vor einer Stunde angerufen? ; Hast du mich vor einer Stunde angerufen?
