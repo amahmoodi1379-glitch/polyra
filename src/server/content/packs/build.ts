@@ -12,7 +12,7 @@ import { buildGrammar, type GrammarUnitSource } from "./grammar";
 import { Morph } from "./morph";
 import { buildSentences, type SentenceRecord } from "./sentences";
 import { buildTables, type PackTable } from "./tables";
-import { grammarTiming, type TimingNote } from "./timing";
+import { grammarTiming, tenseForms, type TimingNote } from "./timing";
 import { engineCatalog } from "@/server/settings/engine-catalog";
 import { checkWordPack, frequencyRanks, PACK_LEVELS, readWordFiles, type PackWord } from "./words";
 
@@ -146,7 +146,7 @@ export function buildPack(language: LanguageCode, options: BuildOptions = {}): P
   // «Grammar before its lesson»: word sentences that use a grammar point well before its unit (warnings only).
   const cardOrder = words.filter((item) => !item.word.no_card && isCardRegister(item.word.register)).sort((a, b) => levelRank(a.level) - levelRank(b.level) || a.order - b.order);
   const gate = Number(engineCatalog.find((item) => item.key === "gate.grammar_words")?.default ?? 0);
-  pack.timing = grammarTiming(language, built.flatMap(({ sentences }) => sentences.lines), unitTables, cardOrder, gate);
+  pack.timing = grammarTiming(language, built.flatMap(({ sentences }) => sentences.lines), unitTables, cardOrder, gate, { words, forms: tenseForms(language, tables.tables) });
 
   const unique = (list: Exception[]) => [...new Map(list.map((item) => [`${item.code}|${item.surface}`, item])).values()];
   for (const [index, { level, grammar, sentences, texts, dialogues }] of built.entries()) {

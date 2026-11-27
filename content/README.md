@@ -56,7 +56,7 @@ Then any of these optional `key:value` cells, in any order:
 | `family` | A closed set, one target-language word shared by all members: `couleur`, `jour`, `mois`, `Farbe`, `Zahl` … |
 | `parts` | Phrases: the codes of the content words that build it, space-separated (`parts:avoir faim`). Each must be in the lists at this level or lower. |
 | `homophones` | Common words of this level or lower pronounced exactly the same, comma-separated (`homophones:vert,verre,vers`). |
-| `note` | Persian note, only for a false friend or a mistake Persian speakers typically make. |
+| `note` | Persian note, only for a false friend, a mistake Persian speakers typically make, or a real link with Persian (a loanword Persian uses, a word that came from Persian, a well-known cognate: owner, 27 Nov 2026), never a guessed one. A note added to a word a server has already loaded reaches it once, if the word has no note and no teacher has edited it. |
 | `coll` | Up to three common collocations: `coll:en voiture → با ماشین ; prendre la voiture → ماشین برداشتن`. Every word in them must be of this level or lower. |
 | `checked` | A checker warning you looked at and the word is right anyway: `checked:gender`, `checked:plural`, `checked:level` (comma-separated). |
 

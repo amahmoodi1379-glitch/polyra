@@ -15,6 +15,7 @@ import type { ContentKind, Tx } from "../kinds/types";
 import { unitList } from "../kinds/unit-list";
 import { words } from "../kinds/words";
 import type { LanguageCode } from "../languages";
+import { logChange } from "../library/log";
 import { librarySlugs, type LibrarySlug } from "../library/slugs";
 import { fold } from "@/engine/tokens";
 import { describeProblem } from "../problems";
@@ -116,6 +117,7 @@ async function loadLevel(run: Run, level: PackLevel) {
     for (const item of newWords) if (ok.has(item.word)) remember("word", item.word.code, item.word);
     count(run, "words", ok.size);
   }
+  await loadWordNotes(run, level, fresh, remember);
 
   let codes = await wordCodes(tx, language);
   const ids = new Map((await tx.word.findMany({ where: { language, code: { in: level.exceptions.map((item) => item.code) } }, select: { id: true, code: true } })).map((row) => [row.code, row.id]));
@@ -238,6 +240,32 @@ async function loadLevel(run: Run, level: PackLevel) {
       count(run, "phonics lessons", round.accepted.length);
     }
   }
+}
+
+/**
+ * A note added to the file of a word loaded before (the «link with Persian» notes, owner 27 Nov 2026) comes
+ * in once, and only onto a word that still has no note and that no teacher has edited: a note a teacher
+ * wrote, changed or deleted stays as they left it. The change is written to the change log like an edit.
+ */
+async function loadWordNotes(run: Run, level: PackLevel, fresh: (kind: string, key: string) => boolean, remember: (kind: string, key: string, value: unknown) => void) {
+  const { tx, language } = run;
+  const noted = level.words.filter((item) => item.word.note_fa && !fresh("word", item.word.code) && fresh("word-note", `${item.word.code}|${item.word.note_fa}`));
+  if (noted.length === 0) return;
+  const rows = new Map((await tx.word.findMany({ where: { language, code: { in: noted.map((item) => item.word.code) } }, select: { id: true, code: true, note_fa: true } })).map((row) => [row.code, row]));
+  const edited = new Set(
+    (await tx.adminLog.findMany({ where: { entity: "word", action: { in: ["edit", "revert"] }, entity_id: { in: [...rows.values()].map((row) => String(row.id)) } }, select: { entity_id: true } })).map((row) => row.entity_id),
+  );
+  let added = 0;
+  for (const item of noted) {
+    const note = item.word.note_fa as string;
+    const row = rows.get(item.word.code);
+    remember("word-note", `${item.word.code}|${note}`, note);
+    if (!row || row.note_fa || edited.has(String(row.id))) continue;
+    await tx.word.update({ where: { id: row.id }, data: { note_fa: note } });
+    await logChange(tx, run.adminId, { action: "edit", entity: "word", entityId: row.id, before: { note_fa: null }, after: { note_fa: note } });
+    added++;
+  }
+  if (added > 0) count(run, "word notes", added);
 }
 
 /** The Persian sentences of the short translations each unit's pack load brought, from the answers of its P-G batches. */

@@ -1,11 +1,11 @@
 import { describe, expect, it } from "vitest";
-import { grammarTiming, type TimingLine, type TimingToken } from "@/server/content/packs/timing";
+import { grammarTiming, tenseForms, type TimingLine, type TimingToken } from "@/server/content/packs/timing";
 import { checkWordPack, frequencyRanks } from "@/server/content/packs/words";
 
 /** «Grammar before its lesson» (content:check --timing): word sentences that lean on a unit the learner meets later. */
 const header = "lemma\tpos\tgender\tplural\tmeaning_fa\tconcept_fa\ttopic";
-const words = (language: "fr" | "de", lines: string[]) => {
-  const built = checkWordPack(language, [{ level: "A1", file: "A1.tsv", text: [header, ...lines].join("\n") }], frequencyRanks(language));
+const words = (language: "fr" | "de", lines: string[], level = "A1") => {
+  const built = checkWordPack(language, [{ level, file: `${level}.tsv`, text: [header, ...lines].join("\n") }], frequencyRanks(language));
   expect(built.errors).toEqual([]);
   return built.words;
 };
@@ -63,6 +63,37 @@ describe("grammar before its unit", () => {
     expect(notes.map((note) => [note.line, note.unit])).toEqual([
       [1, "fr-a1-partitif"],
       [2, "fr-a1-passe-compose-avoir"],
+    ]);
+  });
+
+  it("reads A2 marks only in A2 sentences: a tense's forms, a relative qui, an object pronoun", () => {
+    const a1 = words("fr", ["hier\tadv\t\t\tدیروز\tدیروز\ttime"]);
+    const a2 = words("fr", ["homme\tnoun\tm\t\tمرد\tمرد\tpeople", "parler\tverb\t\t\tحرف زدن\tحرف زدن\tactions", "voir\tverb\t\t\tدیدن\tدیدن\tactions"], "A2");
+    const [hier] = a1;
+    const [homme, parler, voir] = a2;
+    const cards = [...a1, ...a2];
+    const units = [
+      { unit_code: "fr-a2-imparfait-formes", level: "A2", order: 7 },
+      { unit_code: "fr-a2-relatif-qui", level: "A2", order: 15 },
+      { unit_code: "fr-a2-pronoms-cod", level: "A2", order: 1 },
+    ];
+    const forms = tenseForms("fr", [
+      { tense: "présent", forms: { je: "parle", il_elle_on: "parle" } },
+      { tense: "imparfait", forms: { je: "parlais", il_elle_on: "parlait" } },
+    ]);
+    const lines: TimingLine[] = [
+      { file: "f", line: 1, target: hier, text: "", tokens: tokens("[Hier]=hier il=il parlait=parler") },
+      { file: "f", line: 2, target: homme, text: "", tokens: tokens("Il=il parlait=parler à=à un=un [homme]=homme") },
+      { file: "f", line: 3, target: voir, text: "", tokens: tokens("L'=le homme=homme qui=qui parle=parler [voit]=voir") },
+      { file: "f", line: 4, target: homme, text: "", tokens: tokens("Je=je le=le-pron vois=voir [homme]=homme") },
+      { file: "f", line: 5, target: parler, text: "", tokens: tokens("Qui=qui [parle]=parler ?") },
+    ];
+    // Gate 2, one A1 card, three A2 cards and three A2 units: the pronouns arrive at word 3, imparfait at 4, qui at 5.
+    const notes = grammarTiming("fr", lines, units, cards, 2, { words: cards, forms });
+    expect(notes.map((note) => [note.line, note.unit])).toEqual([
+      [2, "fr-a2-imparfait-formes"],
+      [3, "fr-a2-relatif-qui"],
+      [4, "fr-a2-pronoms-cod"],
     ]);
   });
 });

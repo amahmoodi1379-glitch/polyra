@@ -104,4 +104,29 @@ describe("content packs", () => {
     const sentence = await testDb.sentence.findFirstOrThrow({ where: { text: "Je vais à la maison." } });
     expect(sentence.status).toBe("published");
   });
+
+  it("brings a note added to a loaded word's file onto it once, never over a teacher's edit", async () => {
+    await loadPack(pack());
+    const note = "پیوند با فارسی: …";
+    const next = pack();
+    const words = next.levels[0].words;
+    const voiture = words.find((item) => item.word.code === "voiture")!;
+    const chien = words.find((item) => item.word.code === "chien")!;
+    voiture.word = { ...voiture.word, note_fa: note };
+    chien.word = { ...chien.word, note_fa: note };
+    // A teacher edited chien (any field): its note is left to the teacher.
+    const chienRow = await testDb.word.findFirstOrThrow({ where: { code: "chien" } });
+    await testDb.adminLog.create({ data: { action: "edit", entity: "word", entity_id: String(chienRow.id), before: { meaning_fa: "سگ" }, after: { meaning_fa: "سگ، توله" } } });
+
+    const report = await loadPack(next);
+    expect(report.levels[0].added).toEqual({ "word notes": 1 });
+    expect((await testDb.word.findFirstOrThrow({ where: { code: "voiture" } })).note_fa).toBe(note);
+    expect((await testDb.word.findFirstOrThrow({ where: { code: "chien" } })).note_fa).toBeNull();
+    expect(await testDb.adminLog.count({ where: { entity: "word", entity_id: String((await testDb.word.findFirstOrThrow({ where: { code: "voiture" } })).id) } })).toBe(1);
+
+    // Deleted by a teacher afterwards: the next start does not bring it back.
+    await testDb.word.updateMany({ where: { code: "voiture" }, data: { note_fa: null } });
+    expect((await loadPack(next)).levels[0].added).toEqual({});
+    expect((await testDb.word.findFirstOrThrow({ where: { code: "voiture" } })).note_fa).toBeNull();
+  });
 });
