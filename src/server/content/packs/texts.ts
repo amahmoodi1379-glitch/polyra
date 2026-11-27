@@ -11,7 +11,8 @@ import { formExceptions } from "./sentences";
  *
  *   code: de-a1-t001
  *   title: Im Café
- *   kind: dialogue                        (a kind of the level's band in `prompt.text_kinds`)
+ *   band: 2                               (optional; one of the level's bands, else its first: A2 has 1 and 2)
+ *   kind: dialogue                        (a kind of the text's band in `prompt.text_kinds`)
  *   placement: yes                        (optional; placement_ok)
  *   key_words: Kaffee, Kuchen             (optional, up to 5 word codes of the text)
  *   sentences:
@@ -34,15 +35,14 @@ const SETS = ["reading A", "reading B", "listening A", "listening B"] as const;
 const tokensOf = (tokens: Token[]): Token[] => tokens.map(({ surface, kind, code, meaning_fa }) => ({ surface, kind, code, meaning_fa }));
 const wordCount = (text: string) => text.split(/\s+/u).filter((piece) => /[\p{L}\p{N}]/u.test(piece)).length;
 
-export function textBand(level: string) {
-  return ((appSettingDefaults["prompt.text_level_bands"] as Record<string, number[]>)[level] ?? [1])[0];
+/** The bands a level's texts use (`prompt.text_level_bands`); the first is the default. */
+export function textBands(level: string) {
+  return (appSettingDefaults["prompt.text_level_bands"] as Record<string, number[]>)[level] ?? [1];
 }
 
 export function buildTexts(analyzer: Analyzer, files: { file: string; text: string }[], level: string): BuiltTexts {
   const out: BuiltTexts = { texts: [], errors: [], notes: [], exceptions: [] };
-  const band = textBand(level);
-  const [min, max] = (appSettingDefaults["prompt.text_bands"] as Record<string, [number, number]>)[String(band)];
-  const kinds = (appSettingDefaults["prompt.text_kinds"] as Record<string, { kind: string; speakers: boolean }[]>)[String(band)] ?? [];
+  const bands = textBands(level);
   for (const [order, { file, text }] of files.entries()) {
     const say = (line: number, message: string) => out.errors.push({ file, line, text: message });
     const header = new Map<string, string>();
@@ -66,6 +66,10 @@ export function buildTexts(analyzer: Analyzer, files: { file: string; text: stri
       }
     }
     for (const key of ["code", "title", "kind"]) if (!header.get(key)) say(1, `missing header «${key}:»`);
+    const band = header.get("band") ? Number(header.get("band")) : bands[0];
+    if (!bands.includes(band)) say(1, `band «${header.get("band")}» is not a band of ${level} (${bands.join(", ")})`);
+    const [min, max] = (appSettingDefaults["prompt.text_bands"] as Record<string, [number, number]>)[String(band)] ?? [0, 0];
+    const kinds = (appSettingDefaults["prompt.text_kinds"] as Record<string, { kind: string; speakers: boolean }[]>)[String(band)] ?? [];
     const kind = kinds.find((item) => item.kind === header.get("kind"));
     if (header.get("kind") && !kind) say(1, `kind «${header.get("kind")}» is not a kind of band ${band}`);
 

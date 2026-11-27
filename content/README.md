@@ -211,8 +211,9 @@ translations:
 ## Texts: `content/<language>/texts/<LEVEL>/NN-name.txt`
 
 One listening and reading text per file (PRD §7.1–§7.4, P-T); file names give the order. Band and length come
-from `prompt.text_level_bands` and `prompt.text_bands` (A1: band 1, 30 to 60 words); the kind is one of the band's
-`prompt.text_kinds`. Every word must be of the text's level or lower. Format and an example: the comment at the
+from `prompt.text_level_bands` and `prompt.text_bands` (A1: band 1, 30 to 60 words; A2: bands 1 and 2, the second
+60 to 120 words, named with a `band: 2` header; without it a text takes its level's first band); the kind is one of
+the band's `prompt.text_kinds`. Every word must be of the text's level or lower. Format and an example: the comment at the
 top of `src/server/content/packs/texts.ts` and `content/de/texts/A1/01-im-cafe.txt`. Questions are one JSON object
 per line in the P-T shape, two to eight per set; the loader imports them through the panel's text importer.
 

@@ -3,6 +3,9 @@ import { standardTable } from "@/server/content/conjugation-check";
 import { Analyzer } from "@/server/content/packs/analyze";
 import { buildPack } from "@/server/content/packs/build";
 import { buildDialogues } from "@/server/content/packs/dialogues";
+import { buildErrorfix, splitMarked } from "@/server/content/packs/errorfix";
+import { buildTexts } from "@/server/content/packs/texts";
+import { buildWriting } from "@/server/content/packs/writing";
 import { buildPhonics } from "@/server/content/packs/phonics";
 import { buildGrammar } from "@/server/content/packs/grammar";
 import { germanAdjectiveForms, Morph } from "@/server/content/packs/morph";
@@ -393,5 +396,45 @@ describe("conjugation tables of a pack", () => {
     const analysis = analyzerOf("de", list).analyze("Ich muss. Kommst du mit?", { level: "A1" });
     expect(analysis.errors).toEqual([]);
     expect(analysis.tokens.map((token) => `${token.surface}=${token.code}`)).toEqual(["Ich=ich", "muss=müssen", "Kommst ... mit=mitkommen", "du=du"]);
+  });
+});
+
+describe("find the mistake, writing and A2 texts in a pack", () => {
+  it("keeps the marks and drops {code} in the stored text, and reads the corrected one", () => {
+    expect(splitMarked("Il {{es|est}} grand{grand} et nous {{mange|mangeons}}{manger}.")).toEqual({
+      marked: "Il {{es|est}} grand et nous {{mange|mangeons}}.",
+      corrected: "Il est grand{grand} et nous mangeons{manger}.",
+    });
+  });
+
+  it("checks the marks, the explanations and the units of a find-the-mistake item", () => {
+    const analyzer = analyzerOf("fr", pack.words);
+    const text = ["units: fr-a1-etre, fr-a9-nothing", "text: Le chat {{es|est}} petit.", "fa: گربه کوچک است.", "why: با il شکل est است."].join("\n");
+    const built = buildErrorfix(analyzer, [{ file: "e.txt", text }], "A1", new Set(["fr-a1-etre"]));
+    const errors = built.errors.map((item) => item.text);
+    expect(errors).toContain("«fr-a9-nothing» is not a grammar unit of A1 or below");
+    expect(errors.some((error) => error.includes("marked_text"))).toBe(true);
+    expect(built.items).toEqual([]);
+    expect(level.errorfix.map((item) => item.key)).toEqual(["Le chat est petit et nous mangeons une pomme.", "La femme est triste et le garçon est triste."]);
+  });
+
+  it("checks a writing task's range, lists and model answer", () => {
+    const analyzer = analyzerOf("fr", pack.words);
+    const text = ["prompt: درباره خانه‌ات بنویس.", "words: 10-200", "checklist:", "- یک صفت", "phrases:", "La maison | خانه", "model:", "La maison est belle.", "model_fa:", "خانه زیباست."].join("\n");
+    const built = buildWriting(analyzer, [{ file: "w.txt", text }], "B1", [60, 120]);
+    expect(built.tasks).toEqual([]);
+    expect(built.errors.length).toBeGreaterThanOrEqual(3);
+    expect(level.writing).toHaveLength(1);
+  });
+
+  it("gives an A2 text the band it names, with that band's kinds and length", () => {
+    const analyzer = analyzerOf("fr", pack.words);
+    const text = (band: string, kind: string) => [`code: fr-a2-t001`, "title: La maison", band, `kind: ${kind}`, "sentences:", "- La maison est petite. | خانه کوچک است."].join("\n");
+    const two = buildTexts(analyzer, [{ file: "t.txt", text: text("band: 2", "email") }], "A2");
+    expect(two.errors.map((item) => item.text)).toContain("4 words; band 2 needs 60 to 120");
+    const wrong = buildTexts(analyzer, [{ file: "t.txt", text: text("band: 3", "news") }], "A2");
+    expect(wrong.errors.map((item) => item.text)).toContain("band «3» is not a band of A2 (1, 2)");
+    const kind = buildTexts(analyzer, [{ file: "t.txt", text: text("band: 2", "menu") }], "A2");
+    expect(kind.errors.map((item) => item.text)).toContain("kind «menu» is not a kind of band 2");
   });
 });

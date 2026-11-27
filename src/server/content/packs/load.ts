@@ -205,13 +205,14 @@ async function loadLevel(run: Run, level: PackLevel) {
   const waitingTexts = level.texts.filter((text) => fresh("text", text.code));
   const readyTexts = waitingTexts.filter((text) => text.codes.every((code) => codes.has(code)));
   if (readyTexts.length < waitingTexts.length) run.report.skipped.push(`${waitingTexts.length - readyTexts.length} texts use words not in the database`);
-  if (readyTexts.length > 0) {
-    const band = readyTexts[0].band;
+  // One batch per band (A2 has two): a batch's length and kinds are its band's.
+  for (const band of [...new Set(readyTexts.map((text) => text.band))]) {
+    const inBand = readyTexts.filter((text) => text.band === band);
     const length = (await appSetting<Record<string, [number, number]>>("prompt.text_bands"))[String(band)] ?? [30, 60];
-    const specs = readyTexts.map((text) => ({ code: text.code, level: level.level, band: text.band, kind: text.kind, topic: "", placement_ok: text.placement_ok }));
-    const round = await importAnswer(run, texts, await newBatch(run, "P_T", { level: level.level, band, length, words: null, texts: specs }), { texts: readyTexts.map((text) => text.answer), issues: [] });
+    const specs = inBand.map((text) => ({ code: text.code, level: level.level, band: text.band, kind: text.kind, topic: "", placement_ok: text.placement_ok }));
+    const round = await importAnswer(run, texts, await newBatch(run, "P_T", { level: level.level, band, length, words: null, texts: specs }), { texts: inBand.map((text) => text.answer), issues: [] });
     const ok = accepted(round);
-    for (const text of readyTexts) if (ok.has(text.answer)) remember("text", text.code, text.answer);
+    for (const text of inBand) if (ok.has(text.answer)) remember("text", text.code, text.answer);
     count(run, "texts", ok.size);
   }
 
