@@ -113,6 +113,29 @@ describe("grammar before its unit", () => {
     expect(notes.map((note) => note.line)).toEqual([3]);
   });
 
+  it("reads im, am, zum as articles and lets greetings like «Liebe Grüße» pass as chunks", () => {
+    const a1 = words("de", ["lieb\tadj\t\t\tعزیز\tعزیز\tfeelings", "Gruß\tnoun\tder\tGrüße\tسلام\tسلام\tpeople", "Stock\tnoun\tder\tStöcke\tطبقه\tطبقه\thome", "erste\tadj\t\t\tاول\tاول\tnumbers", "Kaffee\tnoun\tder\t\tقهوه\tقهوه\tdrink\tnumber:sg_only"]);
+    const a2 = words("de", ["kommen\tverb\t\t\tآمدن\tآمدن\tactions", "frisch\tadj\t\t\tتازه\tتازه\tqualities"], "A2");
+    const [kommen] = a2;
+    const cards = [...a1, ...a2];
+    const units = [{ unit_code: "de-a2-adjektiv-ohne-artikel", level: "A2", order: 24 }];
+    const lines: TimingLine[] = [
+      { file: "f", line: 1, target: kommen, text: "", tokens: tokens("Liebe=lieb Grüße=Gruß und=und [komm]=kommen bald=bald") },
+      { file: "f", line: 2, target: kommen, text: "", tokens: tokens("Sie=Sie [kommen]=kommen im=im ersten=erste Stock=Stock an=an") },
+      { file: "f", line: 3, target: kommen, text: "", tokens: tokens("Frischer=frisch Kaffee=Kaffee [kommt]=kommen") },
+    ];
+    const notes = grammarTiming("de", lines, units, cards, 2, { words: cards, forms: tenseForms("de", []) });
+    expect(notes.map((note) => note.line)).toEqual([3]);
+  });
+
+  it("does not take a German participle of a compound tense for a Präteritum (habe verloren)", () => {
+    const forms = tenseForms("de", [
+      { tense: "Präteritum", forms: { ich: "verlor", wir: "verloren", er: "kaufte" } },
+      { tense: "Perfekt", forms: { ich: "habe verloren" } },
+    ]);
+    expect([...forms.get("Präteritum")!]).toEqual(["verlor", "kaufte"]);
+  });
+
   it("lets «ich hätte gern» pass as an A1 chunk, but not würde or hätten without gern", () => {
     const a2 = words("de", ["kommen\tverb\t\t\tآمدن\tآمدن\tactions", "Kaffee\tnoun\tder\t\tقهوه\tقهوه\tdrink\tnumber:sg_only"], "A2");
     const [kommen] = a2;

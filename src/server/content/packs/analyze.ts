@@ -97,6 +97,11 @@ const REFLEXIVE_PERSON: Record<string, Record<string, number>> = {
   fr: { me: 0, m: 0, te: 1, t: 1, nous: 3, vous: 4 },
 };
 const REFLEXIVE_PIECE: Record<string, string> = { de: "sich", fr: "se" };
+/** Verbs before a participle or infinitive (for a reflexive phrase's verb form). */
+const AUXILIARY: Record<string, string[]> = {
+  fr: ["avoir", "être", "aller", "pouvoir", "vouloir", "devoir"],
+  de: ["haben", "sein", "werden", "können", "müssen", "wollen", "sollen", "dürfen", "möchten", "mögen", "zu"],
+};
 /** Phrases that are themselves only before an infinitive: «je viens de manger», not «je viens de Paris». */
 const BEFORE_INFINITIVE = new Set(["venir de"]);
 /** French object pronouns that may stand between a word and its infinitive (vient de lui parler). */
@@ -106,6 +111,8 @@ const FR_SUBJECT = /^(je|j'|tu|il|elle|on|nous|vous|ils|elles)$/u;
 
 /** French elided words and the pieces of a lemma they stand for: «besoin d'eau» is «besoin de». */
 const ELIDED: Record<string, string[]> = { d: ["de"], l: ["le", "la"], qu: ["que"], j: ["je"], m: ["me"], t: ["te"], s: ["se", "si"], n: ["ne"], c: ["ce"] };
+/** French «de» and «à» joined with le and les. */
+const CONTRACTED: Record<string, string[]> = { du: ["de"], des: ["de"], au: ["à", "a"], aux: ["à", "a"] };
 /** Words that may stand between a phrase's verb and the rest of it in one clause (hast du morgen Zeit, n'ai pas faim). */
 const SPLIT_GAP = 4;
 const CLAUSE_END = /[.,;:!?]/;
@@ -161,6 +168,8 @@ export class Analyzer {
     const piece = phrase.pieces[k];
     if (surface === piece) return true;
     if (APOSTROPHE.test(unit.surface) && (ELIDED[surface] ?? []).includes(piece)) return true;
+    // A phrase that ends in «de» or «à» takes the article with it: à cause du froid, jusqu'au soir, près des gares.
+    if (this.language === "fr" && k === phrase.pieces.length - 1 && k > 0 && (CONTRACTED[surface] ?? []).includes(piece)) return true;
     if (piece === REFLEXIVE_PIECE[this.language] && phrase.pieces.length >= 3 && REFLEXIVE_PERSON[this.language]?.[surface] !== undefined && (surface.length > 1 || APOSTROPHE.test(unit.surface))) return true;
     // A verb is never an elided piece (Lexique lists «n'» under avoir); after je/ich it is the phrase's own form.
     if (phrase.personal && phrase.verb?.index === k && piece !== fold(bareLemma(phrase.verb.word.word.lemma))) return false;
@@ -175,9 +184,16 @@ export class Analyzer {
   private phraseAt(phrase: Phrase, list: Unit[], i: number, text: string): { at: number[]; split: boolean } | null {
     const n = phrase.pieces.length;
     const range = (from: number, count: number) => Array.from({ length: count }, (_, k) => from + k);
-    const fits = (indexes: number[], order: number[]) => indexes.length === order.length && indexes.every((index, k) => index < list.length && this.pieceMatches(phrase, order[k], list[index]));
+    // Pieces side by side never stand on both sides of a clause end (Wäsche: Waschmaschine is not «Wäsche waschen»).
+    const apart = (indexes: number[]) => indexes.some((index, k) => k > 0 && index === indexes[k - 1] + 1 && CLAUSE_END.test(text.slice(list[index - 1].end, list[index].start)));
+    const fits = (indexes: number[], order: number[]) => indexes.length === order.length && indexes.every((index, k) => index < list.length && this.pieceMatches(phrase, order[k], list[index])) && !apart(indexes);
     const lemmaOrder = range(0, n);
     if (fits(range(i, n), lemmaOrder)) return { at: range(i, n), split: false };
+    // A hyphenated noun in another form of the forms data: week-ends, t-shirts, e-mails.
+    if (i + n <= list.length && phrase.word.word.lemma.includes("-")) {
+      const joined = text.slice(list[i].start, list[i + n - 1].end);
+      if (/^[\p{L}'’]+(-[\p{L}'’]+)+$/u.test(joined) && this.morph.candidates(joined).some((candidate) => candidate.word === phrase.word)) return { at: range(i, n), split: false };
+    }
     // A noun of several words in the plural (pommes de terre).
     const plural = phrase.plural;
     if (plural && plural.every((piece, k) => i + k < list.length && fold(list[i + k].surface.replace(APOSTROPHE, "")) === piece)) return { at: range(i, plural.length), split: false };
@@ -243,16 +259,36 @@ export class Analyzer {
     if (!verb) return false;
     const surface = fold(verb.surface);
     let finite = false;
+    let other = false;
     for (const group of verbFormGroups(this.language, phrase.verb.word.word.lemma)) {
       const forms = group.forms.map(fold);
       if (forms.length !== 6) {
-        if (forms.includes(surface)) return false;
+        if (forms.includes(surface)) other = true;
         continue;
       }
       if (forms[persons[pronoun]] === surface) return false;
       if (forms.includes(surface)) finite = true;
     }
-    return finite;
+    if (!finite) return false;
+    // Both a finite form of another person and a participle or imperative (fait, macht): the participle
+    // only after an auxiliary or modal earlier in the sentence (vous vous êtes fait mal, ça vous fait mal).
+    return !other || !list.slice(0, list.indexOf(verb)).some((unit) => this.morph.candidates(unit.surface).some((candidate) => AUXILIARY[this.language]?.includes(candidate.word.word.lemma)));
+  }
+
+  /**
+   * A German phrase whose verb is separable and stands as its bare stem (Ich gebe viel Geld aus): the index of its
+   * particle later in the sentence, -1 when none follows, null when the verb is not such a stem.
+   */
+  private strandedParticle(phrase: Phrase, at: number[], list: Unit[]): number | null {
+    const verb = phrase.verb;
+    if (this.language !== "de" || !verb) return null;
+    const lemma = fold(verb.word.word.lemma);
+    const particle = SEPARABLE.filter((item) => lemma.startsWith(item) && lemma.length > item.length + 2).sort((a, b) => b.length - a.length)[0];
+    if (!particle) return null;
+    const verbAt = at.find((index) => this.pieceMatches(phrase, verb.index, list[index]));
+    if (verbAt === undefined || fold(list[verbAt].surface).startsWith(particle)) return null;
+    const after = list.findIndex((unit, index) => index > Math.max(...at) && fold(unit.surface) === particle);
+    return after;
   }
 
   private germanPhraseBlocked(phrase: Phrase, at: number[], list: Unit[]): boolean {
@@ -265,6 +301,8 @@ export class Analyzer {
       if (this.morph.candidates(before.surface).some((candidate) => candidate.word.word.pos === "det")) return true;
     }
     const verb = phrase.verb;
+    // A separable verb read from its bare stem (gebe … Geld … zurück is not «Geld ausgeben»): its own particle must follow.
+    if (this.strandedParticle(phrase, at, list) === -1) return true;
     if (verb && phrase.pieces.includes("es")) {
       const verbAt = at.find((index) => this.pieceMatches(phrase, verb.index, list[index]));
       if (verbAt === undefined) return false;
@@ -339,12 +377,19 @@ export class Analyzer {
         const wholeGap = !found.split && holding && holding.start === first.start && holding.end === last.end;
         const overlaps = gaps.some((item) => item.start < last.end && item.end > first.start);
         if (overlaps && !wholeGap) continue;
+        // A word the author marked with another code is that word, not a piece of the phrase (Bon{bon} week-end,
+        // Am Anfang{Anfang}); a mark naming the phrase's own verb keeps it (c'est{être} un peu en retard).
+        const own = [phrase.word.word.code, phrase.verb?.word.word.code];
+        if (run.some((unit) => marks.some((mark) => mark.start < unit.end && mark.end > unit.start && !own.includes(mark.code)))) continue;
         if (hyphenated || wholeGap || this.knownBefore(phrase.word, scope)) {
           hit = { phrase, ...found };
           break;
         }
       }
       if (hit) {
+        // The particle of a separable phrase verb joins the phrase (gebe … Geld aus).
+        const particle = this.strandedParticle(hit.phrase, hit.at, list);
+        if (particle !== null && particle >= 0 && !taken.has(particle) && hit.at[0] === Math.min(...hit.at)) hit = { ...hit, at: [...hit.at, particle], split: true };
         const run = hit.at.map((index) => list[index]);
         for (const index of hit.at) taken.add(index);
         if (hit.split) {

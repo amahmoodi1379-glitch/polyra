@@ -250,6 +250,15 @@ describe("reading a form in its context", () => {
     line("demain", "adv", "", "", "فردا", "فردا", "time"),
     line("trouver", "verb", "", "", "پیدا کردن", "پیدا کردن", "actions"),
     line("se trouver", "verb", "", "", "واقع بودن", "واقع بودن", "space"),
+    line("à cause de", "prep", "", "", "به خاطرِ", "به خاطر", "abstract"),
+    line("froid", "noun", "m", "", "سرما", "سرما", "weather"),
+    line("week-end", "noun", "m", "", "آخر هفته", "آخر هفته", "time"),
+    line("bon", "adj", "", "", "خوب", "خوب", "qualities"),
+    line("bon week-end", "phrase", "", "", "آخر هفتهٔ خوبی داشته باشی", "آخر هفتهٔ خوب", "time", "parts:bon week-end"),
+    line("cent", "num", "", "", "صد", "صد", "numbers"),
+    line("deux", "num", "", "", "دو", "دو", "numbers"),
+    line("faire", "verb", "", "", "کردن", "کردن", "actions"),
+    line("se faire mal", "phrase", "", "", "به خود صدمه زدن", "صدمه دیدن", "health", "parts:faire mal"),
   ]);
   const fr = analyzerOf("fr", french);
   const read = (analyzer: Analyzer, text: string) => analyzer.analyze(text, { level: "A1" }).tokens.map((token) => `${token.surface}=${token.code ?? token.kind}`).join(" ");
@@ -285,6 +294,19 @@ describe("reading a form in its context", () => {
     expect(read(fr, "Je viens de manger.")).toBe("Je=je viens de=venir de manger=manger");
     expect(read(fr, "Je viens de la porte.")).toMatch(/viens=venir de=de/);
     expect(read(fr, "J'ai mal dormi.")).toBe("J'=je ai=avoir mal=mal dormi=dormir");
+  });
+
+  it("reads a phrase ending in de with the article it takes, a hyphenated noun in the plural, and cents", () => {
+    expect(read(fr, "Je dors à cause du froid.")).toBe("Je=je dors=dormir à cause du=à cause de froid=froid");
+    expect(read(fr, "Deux week-ends, je dors.")).toBe("Deux=deux week-ends=week-end je=je dors=dormir");
+    expect(read(fr, "Il a deux cents noms.")).toBe("Il=il a=avoir deux=deux cents=cent noms=nom");
+  });
+
+  it("lets a mark split a phrase, and reads a form of another person as the phrase only after an auxiliary", () => {
+    expect(read(fr, "Bon week-end !")).toBe("Bon week-end=bon week-end");
+    expect(read(fr, "Bon{bon} week-end !")).toBe("Bon=bon week-end=week-end");
+    expect(read(fr, "Il se fait mal.")).toBe("Il=il se fait mal=se faire mal");
+    expect(read(fr, "Ça vous fait mal ?")).not.toMatch(/se faire mal/);
   });
 
   it("prefers a reading the learner already knows when the context allows it", () => {
@@ -338,6 +360,10 @@ describe("reading a form in its context", () => {
     line("machen", "verb", "", "", "کردن", "کردن", "actions"),
     line("Sorge", "noun", "die", "Sorgen", "نگرانی", "نگرانی", "feelings"),
     line("sich Sorgen machen", "phrase", "", "", "نگران بودن", "نگران بودن", "feelings", "parts:Sorge machen"),
+    line("Geld", "noun", "das", "", "پول", "پول", "economy", "number:sg_only"),
+    line("ausgeben", "verb", "", "", "خرج کردن", "خرج کردن", "economy"),
+    line("zurückgeben", "verb", "", "", "پس دادن", "پس دادن", "actions"),
+    line("Geld ausgeben", "phrase", "", "", "پول خرج کردن", "پول خرج کردن", "economy", "parts:Geld ausgeben"),
   ]);
   const de = new Analyzer("de", german, new Morph("de", german), new Set(["Anna"]));
 
@@ -368,6 +394,11 @@ describe("reading a form in its context", () => {
     expect(read(de, "Ich mache mir Sorgen.")).toBe("Ich=ich mache mir Sorgen=sich Sorgen machen");
     expect(read(de, "Er macht sich Sorgen.")).toBe("Er=er macht sich Sorgen=sich Sorgen machen");
     expect(read(de, "Er macht mir Sorgen.")).toBe("Er=er macht=machen mir=mir Sorgen=Sorge");
+  });
+
+  it("reads a separable phrase verb from its stem only with its own particle, and joins the particle", () => {
+    expect(read(de, "Ich gebe Geld aus.")).toBe("Ich=ich gebe ... Geld aus=Geld ausgeben");
+    expect(read(de, "Er gibt mir das Geld zurück.")).not.toMatch(/Geld ausgeben/);
   });
 });
 
@@ -645,5 +676,13 @@ describe("find the mistake, writing and A2 texts in a pack", () => {
     expect(wrong.errors.map((item) => item.text)).toContain("band «3» is not a band of A2 (1, 2)");
     const kind = buildTexts(analyzer, [{ file: "t.txt", text: text("band: 2", "menu") }], "A2");
     expect(kind.errors.map((item) => item.text)).toContain("kind «menu» is not a kind of band 2");
+  });
+
+  it("reads a speaker only from a letter before the colon, never from a time (9:30)", () => {
+    const analyzer = analyzerOf("fr", pack.words);
+    const dialogue = (line: string) => ["code: fr-a2-t001", "title: La maison", "band: 1", "kind: dialogue", "sentences:", line].join("\n");
+    const errors = (line: string) => buildTexts(analyzer, [{ file: "t.txt", text: dialogue(line) }], "A2").errors.map((item) => item.text);
+    expect(errors("- 9:30 : La maison est petite. | ساعت ۹:۳۰: خانه کوچک است. | tts: Neuf heures trente : la maison est petite.")).toContain("every sentence of a dialogue needs a speaker («A: …»)");
+    expect(errors("A: La maison est petite. | خانه کوچک است.")).not.toContain("every sentence of a dialogue needs a speaker («A: …»)");
   });
 });

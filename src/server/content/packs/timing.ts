@@ -50,7 +50,7 @@ const posOf = (token: TimingToken | undefined, context: TimingContext) => (token
 /** «ne» or «n'» among the few tokens before `index`. */
 const negatedBefore = (tokens: TimingToken[], index: number) => tokens.slice(Math.max(0, index - 4), index).some((token) => /^(ne|n')$/u.test(lower(token)));
 
-const DE_DEFINITE = ["der", "die", "das", "dem", "den", "des", "dieser", "diese", "dieses", "diesem", "diesen", "jeder", "jede", "jedes", "jedem", "jeden", "welcher", "welche", "welches", "welchem", "welchen"];
+const DE_DEFINITE = ["der", "die", "das", "dem", "den", "des", "im", "am", "zum", "zur", "beim", "vom", "ins", "ans", "dieser", "diese", "dieses", "diesem", "diesen", "jeder", "jede", "jedes", "jedem", "jeden", "welcher", "welche", "welches", "welchem", "welchen"];
 const DE_INDEFINITE = /^(ein|kein|mein|dein|sein|ihr|unser|euer|eur|Ihr)(e|er|es|em|en)?$/iu;
 /** A German adjective with an ending right before a noun (ein kleines Kind, mit dem alten Auto). */
 const attributive = (tokens: TimingToken[], index: number, context: TimingContext) =>
@@ -66,6 +66,8 @@ const FR_ETRE_PRESENT = ["suis", "es", "est", "sommes", "êtes", "sont"];
 const DE_MODAL_PAST = ["wollte", "wolltest", "wollten", "wolltet", "konnte", "konntest", "konnten", "konntet", "musste", "musstest", "mussten", "musstet", "durfte", "durftest", "durften", "durftet", "mochte", "mochtest", "mochten", "mochtet"];
 const DE_POLITE = ["hätte", "hättest", "hätten", "hättet", "würde", "würdest", "würden", "würdet", "könnte", "könntest", "könnten", "könntet", "wäre", "wärst", "wären", "wärt"];
 
+/** Greetings and wishes learned as chunks: Liebe Grüße, Gute Reise, Schönes Wochenende, Lieber Herr Wolf. */
+const DE_CHUNK_NOUNS = ["grüße", "grüßen", "tag", "morgen", "abend", "nacht", "reise", "fahrt", "besserung", "wochenende", "weihnachten", "ostern", "glückwunsch", "appetit", "spaß", "glück", "frau", "herr", "herrn", "freunde", "kollegen", "kolleginnen"];
 const DE_TIME_NOUNS = ["woche", "monat", "jahr", "mal", "tag", "wochenende", "sommer", "winter", "montag", "dienstag", "mittwoch", "donnerstag", "freitag", "samstag", "sonntag"];
 const DE_DATIVE_ARTICLES = ["dem", "einem", "meinem", "deinem", "seinem", "ihrem", "unserem", "einer", "meiner", "deiner", "seiner", "ihrer", "unserer"];
 
@@ -116,6 +118,8 @@ export const TIMING_MARKERS: Record<LanguageCode, Marker[]> = {
         // viele Leute, wenig Zeit and nächste Woche, letztes Jahr are learned as words and chunks in A1.
         if (["viel", "wenig"].includes(tokens[index].code ?? "")) return false;
         if (["nächste", "letzte"].includes(tokens[index].code ?? "") && DE_TIME_NOUNS.includes(lower(tokens[index + 1]))) return false;
+        // Lieber Opa, Liebe Kollegen: «lieb» without an article opens a letter or a greeting.
+        if (tokens[index].code === "lieb" || DE_CHUNK_NOUNS.includes(lower(tokens[index + 1]))) return false;
         const before = articleBefore(tokens, index, context);
         return !DE_DEFINITE.includes(lower(before)) && !DE_INDEFINITE.test(lower(before));
       },
@@ -227,14 +231,21 @@ export function tenseForms(language: LanguageCode, tables: { tense: string; form
     return word.replace(/^\p{L}'/u, "");
   };
   const byTense = new Map<string, Set<string>>();
+  /** German participles of the compound tenses (habe verloren): «verloren» is not taken for a Präteritum. */
+  const lastWords = new Map<string, Set<string>>();
   for (const table of tables) {
     const set = byTense.get(table.tense) ?? new Set<string>();
-    for (const form of Object.values(table.forms)) set.add(verbWord(form));
+    const last = lastWords.get(table.tense) ?? new Set<string>();
+    for (const form of Object.values(table.forms)) {
+      set.add(verbWord(form));
+      if (language === "de") last.add(form.toLowerCase().split(" ").pop()!);
+    }
     byTense.set(table.tense, set);
+    lastWords.set(table.tense, last);
   }
   const out = new Map<string, Set<string>>();
   for (const [tense, forms] of byTense) {
-    const elsewhere = new Set([...byTense].filter(([other]) => other !== tense).flatMap(([, set]) => [...set]));
+    const elsewhere = new Set([...byTense, ...lastWords].filter(([other]) => other !== tense).flatMap(([, set]) => [...set]));
     out.set(tense, new Set([...forms].filter((form) => !elsewhere.has(form))));
   }
   return out;

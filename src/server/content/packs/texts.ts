@@ -82,7 +82,8 @@ export function buildTexts(analyzer: Analyzer, files: { file: string; text: stri
     for (const item of sentences) {
       const [main, translation, ...rest] = item.text.split("|").map((cell) => cell.trim());
       const at = main.indexOf(":");
-      const speakerPart = at > 0 && at < 4 ? main.slice(0, at).trim() : null;
+      // A speaker is a letter or two (A, B) or «-»; «- 9:30 Uhr: …» is a line without one.
+      const speakerPart = at > 0 && at < 4 && /^(-|\p{L}{1,2})$/u.test(main.slice(0, at).trim()) ? main.slice(0, at).trim() : null;
       const source = speakerPart !== null ? main.slice(at + 1).trim() : main.replace(/^-\s*/, "");
       const speaker = speakerPart && speakerPart !== "-" ? speakerPart : null;
       if (!translation) say(item.line, "missing the Persian translation after «|»");
