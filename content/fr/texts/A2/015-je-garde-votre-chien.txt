@@ -9,7 +9,7 @@ sentences:
 - Je prépare leur repas et je joue avec eux. | غذایشان را آماده می‌کنم و با آن‌ها بازی می‌کنم.
 - Je propose un petit prix : 10 euros par jour. | قیمتم ارزان است: روزی ۱۰ یورو. | tts: Je propose un petit prix : dix euros par jour.
 - J'accepte aussi les oiseaux ! | پرنده هم قبول می‌کنم!
-- Julie : 06 12 34 56 78 | ژولی: ۰۶ ۱۲ ۳۴ ۵۶ ۷۸ | tts: Julie : zéro six, douze, trente-quatre, cinquante-six, soixante-dix-huit.
+- Julie : 06 47 29 83 15 | ژولی: ۰۶ ۴۷ ۲۹ ۸۳ ۱۵ | tts: Julie : zéro six, quarante-sept, vingt-neuf, quatre-vingt-trois, quinze.
 reading A:
 {"type":"mcq","prompt":"ژولی در این آگهی چه کاری پیشنهاد می‌کند؟","options":["درس دادن زبان","تمیز کردن خانه","نگهداری از حیوان‌ها","فروختن حیوان‌ها"],"correct":2,"explanation_fa":"ژولی می‌گوید: «Je garde votre chien ou votre chat !»"}
 {"type":"tf","prompt":"ژولی از سگ‌های بزرگ می‌ترسد.","correct":false,"explanation_fa":"ژولی می‌گوید: «Je n'ai pas peur des gros chiens.»"}
