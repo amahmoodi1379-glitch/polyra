@@ -29,7 +29,7 @@ listening A:
 {"type":"tf","prompt":"توی بسته کتاب است.","correct":true,"explanation_fa":"لویی دربارهٔ بسته می‌گوید: «Ce sont des livres.»، یعنی چند تا کتاب است."}
 {"type":"tf","prompt":"همسایه نمی‌خواهد لویی امشب پیشش برود.","correct":false,"explanation_fa":"همسایه می‌گوید: «Bien sûr ! Venez prendre un café»، یعنی حتماً بیایید یک قهوه بخوریم."}
 listening B:
-{"type":"mcq","prompt":"دختر لویی از کی در رم است؟","options":["از ماه پیش","از ژوئن","از دیروز","از سپتامبر"],"correct":3,"explanation_fa":"لویی می‌گوید: «Elle fait un stage dans un journal à Rome depuis septembre.»، یعنی از سپتامبر."}
+{"type":"mcq","prompt":"دختر لویی از کی در رم است؟","options":["از ژانویه","از ژوئن","از دیروز","از سپتامبر"],"correct":3,"explanation_fa":"لویی می‌گوید: «Elle fait un stage dans un journal à Rome depuis septembre.»، یعنی از سپتامبر."}
 {"type":"mcq","prompt":"همسایه لویی را به چه دعوت می‌کند؟","options":["یک شام","یک قهوه","یک چای","یک کنسرت"],"correct":1,"explanation_fa":"همسایه می‌گوید: «Venez prendre un café»، یعنی بیایید یک قهوه بخوریم."}
 {"type":"tf","prompt":"برای لویی سه پاکت نامه آمده است.","correct":false,"explanation_fa":"همسایه می‌گوید: «deux enveloppes et une carte postale»، یعنی دو پاکت و یک کارت‌پستال."}
 {"type":"tf","prompt":"لویی می‌خواهد اولین مقالهٔ دخترش را به همسایه نشان بدهد.","correct":true,"explanation_fa":"لویی می‌گوید: «je vais vous montrer le premier article de ma fille»، یعنی اولین مقالهٔ دخترم را نشانتان می‌دهم."}

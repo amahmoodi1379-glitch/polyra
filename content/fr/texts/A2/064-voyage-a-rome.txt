@@ -3,7 +3,7 @@ title: Voyage à Rome
 band: 2
 kind: schedule
 sentences:
-- Voyage{voyage} à Rome : les horaires | سفر به رم: ساعت‌ها
+- Voyage{voyage} à Rome : les horaires | سفر به رم: برنامهٔ ساعت‌ها
 - Vendredi : rendez-vous à l'aéroport à 6 heures, devant la porte 4. | جمعه: قرار ساعت ۶ در فرودگاه، جلوی درِ شمارهٔ ۴. | tts: Vendredi : rendez-vous à l'aéroport à six heures, devant la porte quatre.
 - Départ du{du-contr} vol à 8 heures, arrivée à Rome à 10 heures. | حرکت پرواز ساعت ۸، رسیدن به رم ساعت ۱۰. | tts: Départ du vol à huit heures, arrivée à Rome à dix heures.
 - On vole seulement deux heures ! | فقط دو ساعت پرواز می‌کنیم!
@@ -13,7 +13,7 @@ sentences:
 - Le soir, à 20 heures, dîner ensemble au restaurant de l'hôtel. | شب، ساعت ۲۰، شام با هم در رستوران هتل. | tts: Le soir, à vingt heures, dîner ensemble au restaurant de l'hôtel.
 - Dimanche : départ de l'hôtel à 13 heures. | یکشنبه: حرکت از هتل ساعت ۱۳. | tts: Dimanche : départ de l'hôtel à treize heures.
 - Départ du{du-contr} vol pour Paris à 16 heures, arrivée à 18 heures. | حرکت پرواز به پاریس ساعت ۱۶، رسیدن ساعت ۱۸. | tts: Départ du vol pour Paris à seize heures, arrivée à dix-huit heures.
-- Attention, voyageurs : les horaires des{des-contr} vols peuvent changer. Regardez vos messages le matin ! | توجه، مسافران: ساعت پروازها ممکن است عوض شود. صبح‌ها پیام‌هایتان را نگاه کنید!
+- Chers voyageurs, attention : les horaires des{des-contr} vols peuvent changer. Regardez vos messages chaque matin ! | مسافران عزیز، توجه کنید: ساعت پروازها ممکن است عوض شود. هر روز صبح پیام‌هایتان را نگاه کنید!
 reading A:
 {"type":"mcq","prompt":"این متن چیست؟","options":["آگهی فروش بلیت هواپیما","نامهٔ یک مسافر به هتل","برنامهٔ ساعت‌های یک سفر به رم","فهرست رستوران‌های رم"],"correct":2,"explanation_fa":"عنوان متن «Voyage à Rome : les horaires» است و بعد ساعت‌های هر روز سفر آمده است."}
 {"type":"tf","prompt":"مسافران شنبه وقت آزاد دارند.","correct":true,"explanation_fa":"در برنامه آمده: «Samedi : journée libre.»، یعنی شنبه روز آزاد است."}
@@ -31,6 +31,6 @@ listening A:
 {"type":"tf","prompt":"پرواز برگشت به پاریس شنبه است.","correct":false,"explanation_fa":"می‌شنویم: «Dimanche : départ de l'hôtel à 13 heures» و بعد «Départ du vol pour Paris à 16 heures»؛ پس پرواز برگشت یکشنبه است."}
 listening B:
 {"type":"num","prompt":"پرواز برگشت ساعت چند به پاریس می‌رسد؟","answer":"18","accepted":["18","dix-huit","18h"],"explanation_fa":"می‌شنویم: «Départ du vol pour Paris à 16 heures, arrivée à 18 heures.»، یعنی رسیدن ساعت هجده."}
-{"type":"mcq","prompt":"مسافران صبح‌ها چه کار کنند؟","options":["به فرودگاه زنگ بزنند","زود صبحانه بخورند","بلیتشان را عوض کنند","پیام‌هایشان را نگاه کنند"],"correct":3,"explanation_fa":"می‌شنویم: «les horaires des vols peuvent changer. Regardez vos messages le matin !»، یعنی صبح‌ها پیام‌هایتان را نگاه کنید."}
+{"type":"mcq","prompt":"مسافران هر روز صبح چه کار کنند؟","options":["به فرودگاه زنگ بزنند","زود صبحانه بخورند","بلیتشان را عوض کنند","پیام‌هایشان را نگاه کنند"],"correct":3,"explanation_fa":"می‌شنویم: «les horaires des vols peuvent changer. Regardez vos messages chaque matin !»، یعنی هر روز صبح پیام‌هایتان را نگاه کنید."}
 {"type":"tf","prompt":"قرار جمعه جلوی درِ شمارهٔ ۴ فرودگاه است.","correct":true,"explanation_fa":"می‌شنویم: «rendez-vous à l'aéroport à 6 heures, devant la porte 4»، یعنی جلوی درِ شمارهٔ چهار."}
 {"type":"tf","prompt":"شنبه همهٔ مسافران با هم بناهای تاریخی را می‌بینند.","correct":false,"explanation_fa":"می‌شنویم: «Samedi : journée libre.»؛ هر کس می‌تواند بناهای تاریخی را ببیند یا به مغازه‌ها برود."}

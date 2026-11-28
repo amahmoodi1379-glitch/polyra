@@ -8,8 +8,8 @@ sentences:
 - Pour mon cours, votre enfant doit avoir un cahier, une règle, une gomme et des crayons. | فرزندتان برای کلاس من باید یک دفتر، یک خط‌کش، یک پاک‌کن و چند مداد داشته باشد.
 - Il a aussi besoin de feuilles{feuille-2} de papier. | چند برگهٔ کاغذ هم لازم دارد.
 - Les cours commencent lundi 4 septembre, à 8 heures. | کلاس‌ها دوشنبه ۴ سپتامبر، ساعت ۸ شروع می‌شود. | tts: Les cours commencent lundi quatre septembre, à huit heures.
-- Le collège ouvre à 7 heures 30. | در مدرسه ساعت ۷:۳۰ باز می‌شود. | tts: Le collège ouvre à sept heures trente.
-- Le matin, je regarde qui est présent et qui est absent. | صبح‌ها نگاه می‌کنم چه کسی حاضر است و چه کسی غایب.
+- Le collège ouvre à 7 heures 30. | مدرسه ساعت ۷:۳۰ باز می‌شود. | tts: Le collège ouvre à sept heures trente.
+- À chaque cours, je regarde qui est présent et qui est absent. | سر هر کلاس نگاه می‌کنم چه کسی حاضر است و چه کسی غایب.
 - Votre enfant est absent ? Vous devez m'envoyer un message le matin. | فرزندتان غایب است؟ باید صبح برایم پیام بفرستید.
 - Attention : le collège et le lycée sont dans la même rue, et à 8 heures, la rue est pleine de voitures. | توجه کنید: مدرسه و دبیرستان در یک خیابان‌اند و ساعت ۸ خیابان پر از ماشین است. | tts: Attention : le collège et le lycée sont dans la même rue, et à huit heures, la rue est pleine de voitures.
 - Le matin, venez à pied, c'est mieux ! | صبح‌ها پیاده بیایید، بهتر است!
@@ -18,20 +18,20 @@ sentences:
 reading A:
 {"type":"mcq","prompt":"این ایمیل را چه کسی نوشته است؟","options":["مدیر دبیرستان","معلم ریاضی مدرسه","یکی از پدر و مادرها","یک دانش‌آموز دبیرستان"],"correct":1,"explanation_fa":"نویسنده می‌گوید: «je serai le professeur de mathématiques de votre enfant»، یعنی امسال معلم ریاضی فرزندتان هستم."}
 {"type":"tf","prompt":"بچه‌ها برای کلاس ریاضی خط‌کش لازم دارند.","correct":true,"explanation_fa":"در ایمیل آمده: «votre enfant doit avoir un cahier, une règle, une gomme et des crayons»؛ «règle» یعنی خط‌کش."}
-{"type":"tf","prompt":"کلاس‌ها ساعت ۷:۳۰ شروع می‌شود.","correct":false,"explanation_fa":"در ایمیل آمده: «Les cours commencent… à 8 heures» و «Le collège ouvre à 7 heures 30»؛ ساعت ۷:۳۰ فقط در مدرسه باز می‌شود."}
+{"type":"tf","prompt":"کلاس‌ها ساعت ۷:۳۰ شروع می‌شود.","correct":false,"explanation_fa":"در ایمیل آمده: «Les cours commencent… à 8 heures» و «Le collège ouvre à 7 heures 30»؛ ساعت ۷:۳۰ فقط مدرسه باز می‌شود."}
 {"type":"find","prompt":"کدام جمله می‌گوید وقتی بچه غایب است، پدر و مادرها چه کار کنند؟","correct_sentence":7,"explanation_fa":"در ایمیل آمده: «Votre enfant est absent ? Vous devez m'envoyer un message le matin.»، یعنی باید صبح برایم پیام بفرستید."}
 reading B:
 {"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Attention : le collège et le {{1}} sont dans la même rue, et à 8 heures, la rue est {{2}} de voitures.","bank":["lycée","pleine","collège","gomme","cour"],"answers":["lycée","pleine"],"explanation_fa":"در ایمیل آمده: «le collège et le lycée sont dans la même rue, et à 8 heures, la rue est pleine de voitures.»"}
-{"type":"match","prompt":"هر ساعت را به چیزی که در آن ساعت اتفاق می‌افتد وصل کن.","left":["ساعت ۷:۳۰","ساعت ۸"],"right":["در مدرسه باز می‌شود","کلاس‌ها شروع می‌شود","مدرسه تعطیل می‌شود"],"pairs":[[0,0],[1,1]],"explanation_fa":"در ایمیل آمده: «Le collège ouvre à 7 heures 30» و «Les cours commencent… à 8 heures»."}
-{"type":"mcq","prompt":"معلم صبح‌ها چه کار می‌کند؟","options":["به پدر و مادرها پیام می‌فرستد","تکلیف بچه‌ها را نگاه می‌کند","نگاه می‌کند چه کسی حاضر و چه کسی غایب است","جلوی دبیرستان منتظر بچه‌ها می‌ماند"],"correct":2,"explanation_fa":"معلم می‌نویسد: «Le matin, je regarde qui est présent et qui est absent.»"}
+{"type":"match","prompt":"هر ساعت را به چیزی که در آن ساعت اتفاق می‌افتد وصل کن.","left":["ساعت ۷:۳۰","ساعت ۸"],"right":["مدرسه باز می‌شود","کلاس‌ها شروع می‌شود","مدرسه تعطیل می‌شود"],"pairs":[[0,0],[1,1]],"explanation_fa":"در ایمیل آمده: «Le collège ouvre à 7 heures 30» و «Les cours commencent… à 8 heures»."}
+{"type":"mcq","prompt":"معلم سر هر کلاس چه کار می‌کند؟","options":["به پدر و مادرها پیام می‌فرستد","تکلیف بچه‌ها را نگاه می‌کند","نگاه می‌کند چه کسی حاضر و چه کسی غایب است","جلوی دبیرستان منتظر بچه‌ها می‌ماند"],"correct":2,"explanation_fa":"معلم می‌نویسد: «À chaque cours, je regarde qui est présent et qui est absent.»"}
 {"type":"mcq","prompt":"چرا معلم می‌گوید صبح‌ها پیاده بیایید؟","options":["چون ساعت ۸ خیابان پر از ماشین است","چون مدرسه پارکینگ ندارد","چون پیاده‌روی برای بچه‌ها خوب است","چون آن ساعت اتوبوس نیست"],"correct":0,"explanation_fa":"معلم می‌نویسد: «à 8 heures, la rue est pleine de voitures» و بعد: «Le matin, venez à pied, c'est mieux !»"}
 listening A:
 {"type":"num","prompt":"کلاس‌ها روز چندم سپتامبر شروع می‌شود؟","answer":"4","accepted":["4","quatre"],"explanation_fa":"معلم می‌گوید: «Les cours commencent lundi 4 septembre»، یعنی دوشنبه چهارم سپتامبر."}
 {"type":"mcq","prompt":"دبیرستان کجاست؟","options":["کنار پارک محله","روبه‌روی ایستگاه قطار","کنار کتابخانهٔ شهر","در همان خیابان مدرسه"],"correct":3,"explanation_fa":"معلم می‌گوید: «le collège et le lycée sont dans la même rue»، یعنی مدرسه و دبیرستان در یک خیابان‌اند."}
 {"type":"tf","prompt":"اسم معلم پی‌یر دوبوا است.","correct":true,"explanation_fa":"معلم می‌گوید: «Je m'appelle Pierre Dubois.»، یعنی اسم من پی‌یر دوبوا است."}
-{"type":"tf","prompt":"در مدرسه ساعت ۸ باز می‌شود.","correct":false,"explanation_fa":"معلم می‌گوید: «Le collège ouvre à 7 heures 30.»؛ ساعت ۸ کلاس‌ها شروع می‌شود."}
+{"type":"tf","prompt":"مدرسه ساعت ۸ باز می‌شود.","correct":false,"explanation_fa":"معلم می‌گوید: «Le collège ouvre à 7 heures 30.»؛ ساعت ۸ کلاس‌ها شروع می‌شود."}
 listening B:
 {"type":"mcq","prompt":"وقتی بچه غایب است، پدر و مادرها چه کار کنند؟","options":["به مدیر مدرسه زنگ بزنند","صبح به معلم پیام بفرستند","بچه را عصر به مدرسه بیاورند","یک نامه به دبیرستان بنویسند"],"correct":1,"explanation_fa":"معلم می‌گوید: «Vous devez m'envoyer un message le matin.»، یعنی باید صبح برایم پیام بفرستید."}
-{"type":"num","prompt":"در مدرسه ساعت چند باز می‌شود؟","answer":"7:30","accepted":["7:30","7h30","7 h 30","7.30","sept heures trente"],"explanation_fa":"معلم می‌گوید: «Le collège ouvre à 7 heures 30.»، یعنی ساعت هفت و سی دقیقه."}
+{"type":"num","prompt":"مدرسه ساعت چند باز می‌شود؟","answer":"7:30","accepted":["7:30","7h30","7 h 30","7.30","sept heures trente"],"explanation_fa":"معلم می‌گوید: «Le collège ouvre à 7 heures 30.»، یعنی ساعت هفت و سی دقیقه."}
 {"type":"tf","prompt":"بچه‌ها چند برگهٔ کاغذ هم لازم دارند.","correct":true,"explanation_fa":"معلم می‌گوید: «Il a aussi besoin de feuilles de papier.»، یعنی چند برگهٔ کاغذ هم لازم دارد."}
 {"type":"tf","prompt":"معلم می‌گوید صبح‌ها بچه‌ها را با ماشین بیاورید.","correct":false,"explanation_fa":"معلم می‌گوید: «Le matin, venez à pied, c'est mieux !»، یعنی صبح‌ها پیاده بیایید."}

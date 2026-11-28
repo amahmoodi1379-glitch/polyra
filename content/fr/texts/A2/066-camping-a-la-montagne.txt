@@ -6,13 +6,13 @@ sentences:
 - Chère grand-mère, | مادربزرگ عزیزم،
 - Nous faisons du camping à la montagne depuis cinq jours, près d'un petit lac. | پنج روز است که در کوهستان، نزدیک یک دریاچهٔ کوچک، کمپینگ می‌کنیم.
 - Notre tente est petite, mais on dort bien. | چادرمان کوچک است، ولی خوب می‌خوابیم.
-- Le matin, il fait froid, mais l'après-midi, on nage dans le lac. | صبح‌ها هوا سرد است، ولی بعدازظهرها در دریاچه شنا می‌کنیم.
+- Le matin, il fait froid, mais l'après-midi, on fait du vélo autour du lac. | صبح‌ها هوا سرد است، ولی بعدازظهرها دور دریاچه دوچرخه‌سواری می‌کنیم.
 - Hier, nous avons fait une randonnée de six heures avec un guide. | دیروز با یک راهنما شش ساعت کوه‌پیمایی کردیم.
 - Il connaît très bien la montagne, et il nous a montré beaucoup d'animaux. | او کوهستان را خیلی خوب می‌شناسد و حیوان‌های زیادی به ما نشان داد.
 - En haut, c'était vraiment beau ! | آن بالا واقعاً زیبا بود!
 - Malheureusement, Chloé a eu mal aux pieds, alors nous sommes rentrés tard. | متأسفانه پاهای کلوئه درد گرفت، برای همین دیر برگشتیم.
 - Le soir, on fait la cuisine devant la tente et on chante. | شب‌ها جلوی چادر غذا می‌پزیم و آواز می‌خوانیم.
-- Notre séjour finit samedi, et on rentre à Lyon dimanche. | اقامتمان شنبه تمام می‌شود و یکشنبه به لیون برمی‌گردیم.
+- Notre séjour finit dimanche : on rentre à Lyon le soir. | اقامتمان یکشنبه تمام می‌شود: شب به لیون برمی‌گردیم.
 - C'est le meilleur camping de la région ! | این بهترین کمپینگ منطقه است!
 - Je t'embrasse, Lucas | می‌بوسمت، لوکا
 reading A:
@@ -27,11 +27,11 @@ reading B:
 {"type":"mcq","prompt":"لوکا دربارهٔ این کمپینگ چه می‌گوید؟","options":["خیلی گران است","آبش خیلی گرم است","چادرهایش خیلی بزرگ است","بهترین کمپینگ منطقه است"],"correct":3,"explanation_fa":"لوکا می‌نویسد: «C'est le meilleur camping de la région !»، یعنی این بهترین کمپینگ منطقه است."}
 listening A:
 {"type":"num","prompt":"کوه‌پیمایی دیروز چند ساعت طول کشید؟","answer":"6","accepted":["6","six"],"explanation_fa":"لوکا می‌گوید: «une randonnée de six heures»، یعنی کوه‌پیمایی شش‌ساعته."}
-{"type":"mcq","prompt":"آن‌ها بعدازظهرها چه کار می‌کنند؟","options":["در چادر می‌خوابند","در دریاچه شنا می‌کنند","به شهر می‌روند","کوه‌پیمایی می‌کنند"],"correct":1,"explanation_fa":"لوکا می‌گوید: «l'après-midi, on nage dans le lac»، یعنی بعدازظهرها در دریاچه شنا می‌کنیم."}
+{"type":"mcq","prompt":"آن‌ها بعدازظهرها چه کار می‌کنند؟","options":["در چادر می‌خوابند","دور دریاچه دوچرخه‌سواری می‌کنند","به شهر می‌روند","برای شام ماهی می‌خرند"],"correct":1,"explanation_fa":"لوکا می‌گوید: «l'après-midi, on fait du vélo autour du lac»، یعنی بعدازظهرها دور دریاچه دوچرخه‌سواری می‌کنیم."}
 {"type":"tf","prompt":"صبح‌ها هوا سرد است.","correct":true,"explanation_fa":"لوکا می‌گوید: «Le matin, il fait froid»، یعنی صبح‌ها هوا سرد است."}
 {"type":"tf","prompt":"سر کلوئه درد گرفت.","correct":false,"explanation_fa":"لوکا می‌گوید: «Chloé a eu mal aux pieds»؛ یعنی پاهای کلوئه درد گرفت، نه سرش."}
 listening B:
-{"type":"mcq","prompt":"آن‌ها کی به لیون برمی‌گردند؟","options":["شنبه","یکشنبه","دوشنبه","جمعه"],"correct":1,"explanation_fa":"لوکا می‌گوید: «Notre séjour finit samedi, et on rentre à Lyon dimanche.»، یعنی یکشنبه به لیون برمی‌گردیم."}
+{"type":"mcq","prompt":"آن‌ها کی به لیون برمی‌گردند؟","options":["شنبه","یکشنبه","دوشنبه","جمعه"],"correct":1,"explanation_fa":"لوکا می‌گوید: «Notre séjour finit dimanche : on rentre à Lyon le soir.»، یعنی یکشنبه شب به لیون برمی‌گردیم."}
 {"type":"mcq","prompt":"شب‌ها جلوی چادر چه کار می‌کنند؟","options":["کتاب می‌خوانند و زود می‌خوابند","فیلم می‌بینند و حرف می‌زنند","در دریاچه شنا می‌کنند","غذا می‌پزند و آواز می‌خوانند"],"correct":3,"explanation_fa":"لوکا می‌گوید: «Le soir, on fait la cuisine devant la tente et on chante.»، یعنی غذا می‌پزیم و آواز می‌خوانیم."}
 {"type":"tf","prompt":"راهنما کوهستان را خیلی خوب می‌شناسد.","correct":true,"explanation_fa":"لوکا دربارهٔ راهنما می‌گوید: «Il connaît très bien la montagne»، یعنی کوهستان را خیلی خوب می‌شناسد."}
-{"type":"tf","prompt":"لوکا این ایمیل را برای مادرش نوشته است.","correct":false,"explanation_fa":"ایمیل با «Chère grand-mère» شروع می‌شود؛ یعنی لوکا برای مادربزرگش نوشته است، نه مادرش."}
+{"type":"tf","prompt":"لوکا این ایمیل را برای مادرش نوشته است.","correct":false,"explanation_fa":"لوکا می‌گوید: «Chère grand-mère»؛ یعنی ایمیل را برای مادربزرگش نوشته است، نه مادرش."}

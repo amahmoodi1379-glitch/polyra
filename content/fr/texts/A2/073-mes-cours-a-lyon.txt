@@ -10,7 +10,7 @@ sentences:
 - Ma matière préférée, c'est l'histoire{histoire-2} : le professeur raconte la vie des{des-contr} rois de France ! | درس مورد علاقه‌ام تاریخ است: استاد از زندگی پادشاهان فرانسه تعریف می‌کند!
 - La grammaire est plus difficile pour moi, mais j'aime bien le vocabulaire. | دستور زبان برایم سخت‌تر است، ولی واژگان را دوست دارم.
 - Et les mathématiques ? Je n'en fais plus, heureusement ! | ریاضی چطور؟ خوشبختانه دیگر ریاضی نمی‌خوانم!
-- En classe, on n'a pas le droit d'utiliser le téléphone. | سر کلاس اجازه نداریم از تلفن استفاده کنیم.
+- En classe, le téléphone est interdit. | سر کلاس استفاده از تلفن ممنوع است.
 - Alors j'ai acheté un gros dictionnaire en papier ! | برای همین یک فرهنگ لغت کاغذیِ بزرگ خریدم!
 - L'examen du{du-contr} diplôme sera en juin : j'ai encore le temps ! | امتحان مدرک در ماه ژوئن است؛ هنوز وقت دارم!
 - Je t'écrirai bientôt. Bises, Sara | به‌زودی باز برایت می‌نویسم. می‌بوسمت، سارا
@@ -21,13 +21,13 @@ reading A:
 {"type":"find","prompt":"کدام جمله می‌گوید امتحان مدرک کی است؟","correct_sentence":9,"explanation_fa":"سارا می‌نویسد: «L'examen du diplôme sera en juin»، یعنی امتحان مدرک در ماه ژوئن است."}
 reading B:
 {"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"J'ai quatre {{1}} : la grammaire, le {{2}}, l'histoire et la géographie de la France.","bank":["matières","vocabulaire","dictionnaire","diplômes","papier"],"answers":["matières","vocabulaire"],"explanation_fa":"سارا می‌نویسد: «J'ai quatre matières : la grammaire, le vocabulaire, l'histoire et la géographie de la France.»"}
-{"type":"mcq","prompt":"چرا سارا یک فرهنگ لغت کاغذی خرید؟","options":["چون تلفنش خراب شده است","چون سر کلاس اجازهٔ استفاده از تلفن ندارند","چون استادش آن را به او داد","چون فرهنگ لغت کاغذی ارزان است"],"correct":1,"explanation_fa":"سارا می‌نویسد: «on n'a pas le droit d'utiliser le téléphone. Alors j'ai acheté un gros dictionnaire en papier !»"}
+{"type":"mcq","prompt":"چرا سارا یک فرهنگ لغت کاغذی خرید؟","options":["چون تلفنش خراب شده است","چون سر کلاس استفاده از تلفن ممنوع است","چون استادش آن را به او داد","چون فرهنگ لغت کاغذی ارزان است"],"correct":1,"explanation_fa":"سارا می‌نویسد: «En classe, le téléphone est interdit. Alors j'ai acheté un gros dictionnaire en papier !»"}
 {"type":"match","prompt":"هر درس را به چیزی که سارا دربارهٔ آن می‌گوید وصل کن.","left":["تاریخ","دستور زبان","ریاضی"],"right":["دیگر آن را نمی‌خواند","درس مورد علاقهٔ اوست","برایش سخت‌تر است","امتحانش فرداست"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"سارا می‌نویسد: «Ma matière préférée, c'est l'histoire»، «La grammaire est plus difficile pour moi» و دربارهٔ ریاضی: «Je n'en fais plus»."}
 {"type":"order","prompt":"این‌ها را به ترتیبی که در ایمیل آمده بچین.","items":["از درس ریاضی می‌گوید.","از فرهنگ لغت کاغذی‌اش می‌گوید.","درس‌هایش را نام می‌برد.","از مدرکی که می‌خواهد بگیرد می‌گوید."],"correct_order":[3,2,0,1],"explanation_fa":"اول «je prépare un diplôme»، بعد «J'ai quatre matières»، بعد «Et les mathématiques ?» و بعد «un gros dictionnaire en papier»."}
 listening A:
 {"type":"mcq","prompt":"استاد تاریخ از چه چیزی تعریف می‌کند؟","options":["جغرافیای شهر لیون","دستور زبان فرانسه","زندگی پادشاهان فرانسه","زندگی دانشجوهای خارجی"],"correct":2,"explanation_fa":"سارا می‌گوید: «le professeur raconte la vie des rois de France»، یعنی استاد از زندگی پادشاهان فرانسه تعریف می‌کند."}
 {"type":"tf","prompt":"سارا دیگر ریاضی نمی‌خواند.","correct":true,"explanation_fa":"سارا دربارهٔ ریاضی می‌گوید: «Je n'en fais plus, heureusement !»، یعنی خوشبختانه دیگر ریاضی نمی‌خوانم."}
-{"type":"tf","prompt":"سارا سر کلاس از تلفنش استفاده می‌کند.","correct":false,"explanation_fa":"سارا می‌گوید: «En classe, on n'a pas le droit d'utiliser le téléphone.»، یعنی سر کلاس اجازه نداریم از تلفن استفاده کنیم."}
+{"type":"tf","prompt":"سارا سر کلاس از تلفنش استفاده می‌کند.","correct":false,"explanation_fa":"سارا می‌گوید: «En classe, le téléphone est interdit.»، یعنی سر کلاس استفاده از تلفن ممنوع است."}
 {"type":"mcq","prompt":"امتحان مدرک کی است؟","options":["در ماه مه","در ماه ژوئن","در ماه ژوئیه","در ماه سپتامبر"],"correct":1,"explanation_fa":"سارا می‌گوید: «L'examen du diplôme sera en juin»، یعنی امتحان در ماه ژوئن است."}
 listening B:
 {"type":"mcq","prompt":"کلاس‌های سارا کی شروع شد؟","options":["سه‌شنبه","چهارشنبه","شنبه","دوشنبه"],"correct":3,"explanation_fa":"سارا می‌گوید: «Mes cours à l'université de Lyon ont commencé lundi !»، یعنی دوشنبه."}

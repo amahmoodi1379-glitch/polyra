@@ -7,9 +7,9 @@ sentences:
 - Je ne suis pas au bureau aujourd'hui : hier soir, ma mère est tombée dans son jardin. | امروز سر کار نیستم: دیشب مادرم توی باغچه‌اش زمین خورد.
 - Je viens de rentrer de l'hôpital avec elle. | همین الان با او از بیمارستان برگشتم.
 - Elle a mal au bras, mais elle va mieux. Pour le médecin, ce n'est pas grave. | بازویش درد می‌کند، ولی حالش بهتر است. به گفتهٔ دکتر، چیز مهمی نیست.
-- Maintenant, elle dort, et je suis en train de préparer le dîner. | الان خوابیده و من دارم شام درست می‌کنم.
+- Maintenant, elle dort, et je suis en train de préparer le déjeuner. | الان خوابیده و من دارم ناهار درست می‌کنم.
 - Demain matin, je vais chercher ses médicaments à la pharmacie, et je reste avec elle. | فردا صبح می‌روم داروهایش را از داروخانه می‌گیرم و پیشش می‌مانم.
-- Le médecin viendra pour une visite jeudi. | دکتر پنجشنبه برای معاینه به خانه می‌آید.
+- Le médecin viendra jeudi pour une visite. | دکتر پنجشنبه برای معاینه به خانه می‌آید.
 - Samedi, ma sœur va rendre visite à maman avec ses enfants. | شنبه خواهرم با بچه‌هایش به دیدن مامان می‌آید.
 - Tu peux parler au chef, s'il te plaît ? | لطفاً می‌توانی با رئیس صحبت کنی؟
 - Je te rappelle ce soir pour la réunion de lundi. | امشب دوباره بهت زنگ می‌زنم، برای جلسهٔ دوشنبه.
@@ -18,9 +18,9 @@ reading A:
 {"type":"mcq","prompt":"اِما چرا امروز سر کار نیست؟","options":["خودش مریض شده است","بچه‌هایش مریض‌اند","جلسهٔ امروز لغو شده است","مادرش دیشب زمین خورده است"],"correct":3,"explanation_fa":"اِما می‌نویسد: «Je ne suis pas au bureau aujourd'hui : hier soir, ma mère est tombée dans son jardin.»، یعنی دیشب مادرم زمین خورد."}
 {"type":"tf","prompt":"حال مادر اِما بهتر است.","correct":true,"explanation_fa":"اِما می‌نویسد: «elle va mieux»، یعنی حالش بهتر است."}
 {"type":"tf","prompt":"اِما فردا صبح سر کار می‌آید.","correct":false,"explanation_fa":"اِما می‌نویسد فردا صبح «je vais chercher ses médicaments à la pharmacie, et je reste avec elle»؛ یعنی پیش مادرش می‌ماند."}
-{"type":"find","prompt":"کدام جمله می‌گوید اِما الان چه کار می‌کند؟","correct_sentence":4,"explanation_fa":"اِما می‌نویسد: «je suis en train de préparer le dîner»، یعنی دارم شام درست می‌کنم."}
+{"type":"find","prompt":"کدام جمله می‌گوید اِما الان چه کار می‌کند؟","correct_sentence":4,"explanation_fa":"اِما می‌نویسد: «je suis en train de préparer le déjeuner»، یعنی دارم ناهار درست می‌کنم."}
 reading B:
-{"type":"match","prompt":"هر روز را به کاری که آن روز انجام می‌شود وصل کن.","left":["فردا صبح","پنجشنبه","شنبه","دوشنبه"],"right":["خواهر اِما به دیدن مادر می‌آید","اِما به بیمارستان برمی‌گردد","اِما داروها را از داروخانه می‌گیرد","جلسهٔ کاری هست","دکتر برای معاینه می‌آید"],"pairs":[[0,2],[1,4],[2,0],[3,3]],"explanation_fa":"اِما می‌نویسد: «Demain matin, je vais chercher ses médicaments»، «Le médecin viendra pour une visite jeudi»، «Samedi, ma sœur va rendre visite à maman» و «la réunion de lundi»."}
+{"type":"match","prompt":"هر روز را به کاری که آن روز انجام می‌شود وصل کن.","left":["فردا صبح","پنجشنبه","شنبه","دوشنبه"],"right":["خواهر اِما به دیدن مادر می‌آید","اِما به بیمارستان برمی‌گردد","اِما داروها را از داروخانه می‌گیرد","جلسهٔ کاری هست","دکتر برای معاینه می‌آید"],"pairs":[[0,2],[1,4],[2,0],[3,3]],"explanation_fa":"اِما می‌نویسد: «Demain matin, je vais chercher ses médicaments»، «Le médecin viendra jeudi pour une visite»، «Samedi, ma sœur va rendre visite à maman» و «la réunion de lundi»."}
 {"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Demain matin, je vais {{1}} ses médicaments à la {{2}}, et je reste avec elle.","bank":["chercher","pharmacie","dormir","boulangerie","piscine"],"answers":["chercher","pharmacie"],"explanation_fa":"اِما می‌نویسد: «je vais chercher ses médicaments à la pharmacie»، یعنی می‌روم داروهایش را از داروخانه می‌گیرم."}
 {"type":"mcq","prompt":"اِما از پل چه می‌خواهد؟","options":["داروها را برایش بخرد","به بیمارستان بیاید","با رئیس صحبت کند","جلسه را لغو کند"],"correct":2,"explanation_fa":"اِما می‌نویسد: «Tu peux parler au chef, s'il te plaît ?»، یعنی لطفاً می‌توانی با رئیس صحبت کنی؟"}
 listening A:
@@ -31,5 +31,5 @@ listening A:
 listening B:
 {"type":"mcq","prompt":"اِما کی دوباره به پل زنگ می‌زند؟","options":["فردا صبح","پنجشنبه","امشب","دوشنبه"],"correct":2,"explanation_fa":"اِما می‌گوید: «Je te rappelle ce soir»، یعنی امشب دوباره بهت زنگ می‌زنم."}
 {"type":"tf","prompt":"خواهر اِما شنبه با بچه‌هایش به دیدن مادر می‌آید.","correct":true,"explanation_fa":"اِما می‌گوید: «Samedi, ma sœur va rendre visite à maman avec ses enfants.»، یعنی شنبه خواهرم با بچه‌هایش به دیدن مامان می‌آید."}
-{"type":"tf","prompt":"اِما الان در داروخانه است.","correct":false,"explanation_fa":"اِما می‌گوید: «je suis en train de préparer le dîner»؛ یعنی الان دارد شام درست می‌کند و داروها را فردا صبح می‌گیرد."}
-{"type":"mcq","prompt":"دکتر کی برای معاینه می‌آید؟","options":["پنجشنبه","شنبه","فردا صبح","امشب"],"correct":0,"explanation_fa":"اِما می‌گوید: «Le médecin viendra pour une visite jeudi.»، یعنی دکتر پنجشنبه برای معاینه می‌آید."}
+{"type":"tf","prompt":"اِما الان در داروخانه است.","correct":false,"explanation_fa":"اِما می‌گوید: «je suis en train de préparer le déjeuner»؛ یعنی الان دارد ناهار درست می‌کند و داروها را فردا صبح می‌گیرد."}
+{"type":"mcq","prompt":"دکتر کی برای معاینه می‌آید؟","options":["پنجشنبه","شنبه","فردا صبح","امشب"],"correct":0,"explanation_fa":"اِما می‌گوید: «Le médecin viendra jeudi pour une visite.»، یعنی دکتر پنجشنبه برای معاینه می‌آید."}

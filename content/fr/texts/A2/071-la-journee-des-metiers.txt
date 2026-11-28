@@ -7,11 +7,11 @@ sentences:
 - Jeudi 14 mars, des parents viennent parler de leur travail aux élèves. | پنجشنبه ۱۴ مارس، چند نفر از پدر و مادرها می‌آیند و با بچه‌ها دربارهٔ کارشان حرف می‌زنند. | tts: Jeudi quatorze mars, des parents viennent parler de leur travail aux élèves.
 - 9 heures : le papa de Hugo est boulanger. Il apportera des croissants pour la classe ! | ساعت ۹: بابای هوگو نانواست. برای کلاس کروسان می‌آورد! | tts: Neuf heures : le papa de Hugo est boulanger. Il apportera des croissants pour la classe !
 - 10 heures : le papa de Léa est pompier. Les enfants vont voir son camion rouge dans la cour. | ساعت ۱۰: بابای لئا آتش‌نشان است. بچه‌ها کامیون قرمزش را در حیاط می‌بینند. | tts: Dix heures : le papa de Léa est pompier. Les enfants vont voir son camion rouge dans la cour.
-- 11 heures : Monsieur Martin, notre facteur, expliquera son travail dans le quartier. | ساعت ۱۱: آقای مارتن، نامه‌رسان ما، کارش را در محله توضیح می‌دهد. | tts: Onze heures : Monsieur Martin, notre facteur, expliquera son travail dans le quartier.
+- 11 heures : monsieur Martin, notre facteur, expliquera son travail dans le quartier. | ساعت ۱۱: آقای مارتن، نامه‌رسان ما، کارش را در محله توضیح می‌دهد. | tts: Onze heures : monsieur Martin, notre facteur, expliquera son travail dans le quartier.
 - 14 heures : la maman de Louis est architecte. Elle montrera les plans d'une maison. | ساعت ۱۴: مامان لویی معمار است. نقشه‌های یک خانه را نشان می‌دهد. | tts: Quatorze heures : la maman de Louis est architecte. Elle montrera les plans d'une maison.
 - 15 heures : un écrivain lira une page de son nouveau livre. | ساعت ۱۵: یک نویسنده یک صفحه از کتاب تازه‌اش را می‌خواند. | tts: Quinze heures : un écrivain lira une page de son nouveau livre.
 - 16 heures : une artiste chantera avec les enfants. | ساعت ۱۶: یک هنرمند با بچه‌ها آواز می‌خواند. | tts: Seize heures : une artiste chantera avec les enfants.
-- Les élèves prépareront leurs questions en classe mercredi. | بچه‌ها چهارشنبه سر کلاس سؤال‌هایشان را آماده می‌کنند.
+- Les élèves prépareront leurs questions en classe mardi. | بچه‌ها سه‌شنبه سر کلاس سؤال‌هایشان را آماده می‌کنند.
 reading A:
 {"type":"mcq","prompt":"این برنامه برای چه روزی است؟","options":["جشن آخر سال بچه‌های مدرسه","روز امتحان بچه‌های مدرسه","روز حرف زدن والدین از شغلشان","روز گردش بچه‌ها در شهر"],"correct":2,"explanation_fa":"در برنامه آمده: «des parents viennent parler de leur travail aux élèves»، یعنی پدر و مادرها می‌آیند و دربارهٔ کارشان با بچه‌ها حرف می‌زنند."}
 {"type":"tf","prompt":"مامان لویی معمار است.","correct":true,"explanation_fa":"در برنامه آمده: «la maman de Louis est architecte»، یعنی مامان لویی معمار است."}
@@ -19,16 +19,16 @@ reading A:
 {"type":"find","prompt":"کدام جمله می‌گوید بچه‌ها یک کامیون را کجا می‌بینند؟","correct_sentence":3,"explanation_fa":"در برنامه آمده: «Les enfants vont voir son camion rouge dans la cour.»، یعنی بچه‌ها کامیون قرمزش را در حیاط می‌بینند."}
 reading B:
 {"type":"match","prompt":"هر ساعت را به شغل کسی که آن ساعت می‌آید وصل کن.","left":["ساعت ۹","ساعت ۱۰","ساعت ۱۱","ساعت ۱۶"],"right":["نامه‌رسان","نانوا","هنرمند","آتش‌نشان","مکانیک"],"pairs":[[0,1],[1,3],[2,0],[3,2]],"explanation_fa":"در برنامه آمده: ساعت ۹ «boulanger»، ساعت ۱۰ «pompier»، ساعت ۱۱ «facteur» و ساعت ۱۶ «une artiste»."}
-{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"11 heures : Monsieur Martin, notre {{1}}, expliquera son travail dans le {{2}}.","bank":["facteur","quartier","pompier","camion","livre"],"answers":["facteur","quartier"],"explanation_fa":"در برنامه آمده: «11 heures : Monsieur Martin, notre facteur, expliquera son travail dans le quartier.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"11 heures : monsieur Martin, notre {{1}}, expliquera son travail dans le {{2}}.","bank":["facteur","quartier","pompier","camion","livre"],"answers":["facteur","quartier"],"explanation_fa":"در برنامه آمده: «11 heures : monsieur Martin, notre facteur, expliquera son travail dans le quartier.»"}
 {"type":"mcq","prompt":"نویسنده چه کار می‌کند؟","options":["با بچه‌ها آواز می‌خواند","یک صفحه از کتاب تازه‌اش را می‌خواند","نقشه‌های یک خانه را نشان می‌دهد","برای کلاس کروسان می‌آورد"],"correct":1,"explanation_fa":"در برنامه آمده: «un écrivain lira une page de son nouveau livre»، یعنی یک صفحه از کتاب تازه‌اش را می‌خواند."}
 {"type":"order","prompt":"این آدم‌ها را به ترتیب ساعت آمدنشان بچین.","items":["معمار","نانوا","نویسنده","آتش‌نشان"],"correct_order":[1,3,0,2],"explanation_fa":"ساعت ۹ «boulanger»، ساعت ۱۰ «pompier»، ساعت ۱۴ «architecte» و ساعت ۱۵ «écrivain»."}
 listening A:
 {"type":"num","prompt":"روز شغل‌ها چندم مارس است؟","answer":"14","accepted":["14","quatorze"],"explanation_fa":"می‌شنویم: «Jeudi 14 mars»، یعنی پنجشنبه چهاردهم مارس."}
 {"type":"mcq","prompt":"بابای هوگو برای کلاس چه می‌آورد؟","options":["کیک","نان","شکلات","کروسان"],"correct":3,"explanation_fa":"می‌شنویم: «Il apportera des croissants pour la classe !»، یعنی برای کلاس کروسان می‌آورد."}
-{"type":"tf","prompt":"آقای مارتن نامه‌رسان است.","correct":true,"explanation_fa":"می‌شنویم: «Monsieur Martin, notre facteur»، یعنی آقای مارتن نامه‌رسان ماست."}
+{"type":"tf","prompt":"آقای مارتن نامه‌رسان است.","correct":true,"explanation_fa":"می‌شنویم: «monsieur Martin, notre facteur»، یعنی آقای مارتن نامه‌رسان ماست."}
 {"type":"tf","prompt":"هنرمند با بچه‌ها نقاشی می‌کند.","correct":false,"explanation_fa":"می‌شنویم: «une artiste chantera avec les enfants»، یعنی هنرمند با بچه‌ها آواز می‌خواند، نه نقاشی."}
 listening B:
 {"type":"num","prompt":"معمار ساعت چند به کلاس می‌آید؟","answer":"14","accepted":["14","quatorze","14h"],"explanation_fa":"می‌شنویم: «14 heures : la maman de Louis est architecte.»، یعنی ساعت چهارده."}
-{"type":"mcq","prompt":"بچه‌ها کی سؤال‌هایشان را آماده می‌کنند؟","options":["دوشنبه","سه‌شنبه","چهارشنبه","پنجشنبه"],"correct":2,"explanation_fa":"می‌شنویم: «Les élèves prépareront leurs questions en classe mercredi.»، یعنی چهارشنبه."}
+{"type":"mcq","prompt":"بچه‌ها کی سؤال‌هایشان را آماده می‌کنند؟","options":["دوشنبه","سه‌شنبه","چهارشنبه","پنجشنبه"],"correct":1,"explanation_fa":"می‌شنویم: «Les élèves prépareront leurs questions en classe mardi.»، یعنی سه‌شنبه."}
 {"type":"tf","prompt":"بچه‌ها کامیون آتش‌نشان را در حیاط مدرسه می‌بینند.","correct":true,"explanation_fa":"می‌شنویم: «Les enfants vont voir son camion rouge dans la cour.»، یعنی در حیاط."}
 {"type":"tf","prompt":"نویسنده از یک کتاب قدیمی‌اش می‌خواند.","correct":false,"explanation_fa":"می‌شنویم: «une page de son nouveau livre»، یعنی از کتاب تازه‌اش می‌خواند، نه کتاب قدیمی."}

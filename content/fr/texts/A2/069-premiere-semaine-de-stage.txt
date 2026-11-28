@@ -4,7 +4,7 @@ band: 2
 kind: schedule
 sentences:
 - Bienvenue, Camille ! Voici votre première semaine de stage. | خوش آمدید، کامی! این هم هفتهٔ اول کارآموزی شما.
-- Lundi, 9 heures : le directeur, Monsieur Dubois, vous attend dans son bureau. | دوشنبه، ساعت ۹: مدیر، آقای دوبوا، در دفترش منتظر شماست. | tts: Lundi, neuf heures : le directeur, Monsieur Dubois, vous attend dans son bureau.
+- Lundi, 9 heures : le directeur, monsieur Dubois, vous attend dans son bureau. | دوشنبه، ساعت ۹: مدیر، آقای دوبوا، در دفترش منتظر شماست. | tts: Lundi, neuf heures : le directeur, monsieur Dubois, vous attend dans son bureau.
 - Lundi après-midi : vous rencontrez vos collègues du{du-contr} bureau. | دوشنبه بعدازظهر: با همکاران اداره آشنا می‌شوید.
 - Mardi : une journée à l'usine avec les ouvriers. | سه‌شنبه: یک روز در کارخانه با کارگرها.
 - Mercredi, 10 heures : réunion avec les employés du{du-contr} bureau. | چهارشنبه، ساعت ۱۰: جلسه با کارمندان اداره. | tts: Mercredi, dix heures : réunion avec les employés du bureau.
@@ -32,5 +32,5 @@ listening A:
 listening B:
 {"type":"num","prompt":"جلسهٔ چهارشنبه ساعت چند است؟","answer":"10","accepted":["10","dix","10h"],"explanation_fa":"می‌شنویم: «Mercredi, 10 heures : réunion»، یعنی جلسه ساعت ده است."}
 {"type":"mcq","prompt":"کامی برای ناهار چقدر وقت دارد؟","options":["نیم ساعت","دو ساعت","ده دقیقه","یک ساعت"],"correct":3,"explanation_fa":"می‌شنویم: «avec une heure pour le déjeuner»، یعنی با یک ساعت برای ناهار."}
-{"type":"tf","prompt":"اسم مدیر آقای دوبوا است.","correct":true,"explanation_fa":"می‌شنویم: «le directeur, Monsieur Dubois»، یعنی مدیر آقای دوبوا است."}
+{"type":"tf","prompt":"اسم مدیر آقای دوبوا است.","correct":true,"explanation_fa":"می‌شنویم: «le directeur, monsieur Dubois»، یعنی مدیر آقای دوبوا است."}
 {"type":"tf","prompt":"کامی سه‌شنبه در اداره کار می‌کند.","correct":false,"explanation_fa":"می‌شنویم: «Mardi : une journée à l'usine avec les ouvriers.»؛ سه‌شنبه در کارخانه است، نه در اداره."}

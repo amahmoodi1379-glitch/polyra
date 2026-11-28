@@ -1,0 +1,37 @@
+code: fr-a2-t072
+title: Les notes de Chloé
+band: 2
+kind: phone_call
+sentences:
+A: Allô, papa ? C'est Chloé. J'ai les notes de mes examens ! | الو، بابا؟ کلوئه هستم. نمره‌های امتحان‌هایم آمده!
+B: Alors ? Raconte ! | خب؟ تعریف کن!
+A: J'ai réussi mon examen d'anglais ! J'ai eu 16 sur 20. | در امتحان انگلیسی قبول شدم! ۱۶ از ۲۰ گرفتم. | tts: J'ai réussi mon examen d'anglais ! J'ai eu seize sur vingt.
+B: Bravo ! Tu as beaucoup travaillé. | آفرین! خیلی زحمت کشیدی.
+A: Oui, j'ai fait mes devoirs le soir, et le week-end aussi. | آره، شب‌ها تکلیف‌هایم را انجام دادم، آخر هفته‌ها هم.
+A: Mais en musique, j'ai eu une note moins bonne : 11 sur 20. | ولی در موسیقی نمرهٔ کمتری گرفتم: ۱۱ از ۲۰. | tts: Mais en musique, j'ai eu une note moins bonne : onze sur vingt.
+B: Ce n'est pas grave. Tu ne veux pas devenir musicienne ! | مهم نیست. تو که نمی‌خواهی نوازنده بشوی!
+A: Non, moi, je veux devenir photographe ! | نه، من می‌خواهم عکاس بشوم!
+B: On va au restaurant ce soir ? | امشب برویم رستوران؟
+A: Je ne peux pas : j'ai cours jusqu'à 19 heures, et demain, je passe encore un examen. | نمی‌توانم: تا ساعت ۱۹ کلاس دارم و فردا هم یک امتحان دیگر می‌دهم. | tts: Je ne peux pas : j'ai cours jusqu'à dix-neuf heures, et demain, je passe encore un examen.
+B: Alors samedi, d'accord ? Je réserverai une table. | پس شنبه، باشد؟ یک میز رزرو می‌کنم.
+A: Super ! Merci, papa. | عالی! ممنون، بابا.
+reading A:
+{"type":"mcq","prompt":"کلوئه چرا به پدرش زنگ می‌زند؟","options":["تا بگوید امشب دیر به خانه می‌آید","تا نمره‌های امتحان‌هایش را بگوید","تا برای رستوران پول بخواهد","تا بگوید کلاس امروزش لغو شده"],"correct":1,"explanation_fa":"کلوئه می‌گوید: «J'ai les notes de mes examens !»، یعنی نمره‌های امتحان‌هایم آمده."}
+{"type":"tf","prompt":"کلوئه در امتحان انگلیسی قبول شد.","correct":true,"explanation_fa":"کلوئه می‌گوید: «J'ai réussi mon examen d'anglais !»، یعنی در امتحان انگلیسی قبول شدم."}
+{"type":"tf","prompt":"کلوئه می‌خواهد نوازنده بشود.","correct":false,"explanation_fa":"کلوئه می‌گوید: «je veux devenir photographe !»، یعنی می‌خواهم عکاس بشوم، نه نوازنده."}
+{"type":"find","prompt":"کدام جمله می‌گوید کلوئه فردا یک امتحان دیگر دارد؟","correct_sentence":9,"explanation_fa":"کلوئه می‌گوید: «demain, je passe encore un examen»، یعنی فردا هم یک امتحان دیگر می‌دهم."}
+reading B:
+{"type":"match","prompt":"هر مورد را به چیزی که در گفتگو دربارهٔ آن گفته می‌شود وصل کن.","left":["امتحان انگلیسی","امتحان موسیقی","کلاس امروز"],"right":["تا ساعت ۱۹","نمرهٔ ۱۱","نمرهٔ ۱۶","نمرهٔ ۱۹"],"pairs":[[0,2],[1,1],[2,0]],"explanation_fa":"کلوئه می‌گوید در انگلیسی «16 sur 20»، در موسیقی «11 sur 20» گرفته و «j'ai cours jusqu'à 19 heures»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Je ne peux pas : j'ai {{1}} jusqu'à 19 heures, et demain, je passe encore un {{2}}.","bank":["cours","examen","note","table","musicien"],"answers":["cours","examen"],"explanation_fa":"کلوئه می‌گوید: «Je ne peux pas : j'ai cours jusqu'à 19 heures, et demain, je passe encore un examen.»"}
+{"type":"mcq","prompt":"کلوئه دوست دارد چه کاره بشود؟","options":["نوازنده","معلم انگلیسی","عکاس","آشپز"],"correct":2,"explanation_fa":"کلوئه می‌گوید: «je veux devenir photographe !»، یعنی می‌خواهم عکاس بشوم."}
+{"type":"mcq","prompt":"پدر اول چه پیشنهادی می‌دهد؟","options":["امشب به رستوران بروند","فردا با هم درس بخوانند","کلوئه کلاس موسیقی را رها کند","شنبه به سینما بروند"],"correct":0,"explanation_fa":"پدر می‌پرسد: «On va au restaurant ce soir ?»، یعنی امشب برویم رستوران؟"}
+listening A:
+{"type":"num","prompt":"کلوئه در امتحان انگلیسی چه نمره‌ای گرفت؟","answer":"16","accepted":["16","seize"],"explanation_fa":"کلوئه می‌گوید: «J'ai eu 16 sur 20.»، یعنی شانزده از بیست گرفتم."}
+{"type":"mcq","prompt":"کلوئه امروز تا ساعت چند کلاس دارد؟","options":["تا ساعت ۱۷","تا ساعت ۱۸","تا ساعت ۱۹","تا ساعت ۲۰"],"correct":2,"explanation_fa":"کلوئه می‌گوید: «j'ai cours jusqu'à 19 heures»، یعنی تا ساعت نوزده کلاس دارم."}
+{"type":"tf","prompt":"کلوئه شب‌ها و آخر هفته‌ها تکلیف‌هایش را انجام داد.","correct":true,"explanation_fa":"کلوئه می‌گوید: «j'ai fait mes devoirs le soir, et le week-end aussi»."}
+{"type":"tf","prompt":"کلوئه امشب با پدرش به رستوران می‌رود.","correct":false,"explanation_fa":"کلوئه جواب می‌دهد: «Je ne peux pas»، چون امشب کلاس دارد؛ برای همین پدر می‌گوید: «Alors samedi»."}
+listening B:
+{"type":"num","prompt":"کلوئه در موسیقی چه نمره‌ای گرفت؟","answer":"11","accepted":["11","onze"],"explanation_fa":"کلوئه می‌گوید: «en musique, j'ai eu une note moins bonne : 11 sur 20»، یعنی یازده از بیست."}
+{"type":"mcq","prompt":"آخر کی به رستوران می‌روند؟","options":["شنبه","امشب","فردا","یکشنبه"],"correct":0,"explanation_fa":"پدر می‌گوید: «Alors samedi, d'accord ? Je réserverai une table.»، یعنی پس شنبه."}
+{"type":"tf","prompt":"پدر می‌گوید نمرهٔ موسیقی مهم نیست.","correct":true,"explanation_fa":"پدر می‌گوید: «Ce n'est pas grave.»، یعنی مهم نیست."}
+{"type":"tf","prompt":"کلوئه فردا امتحان ندارد.","correct":false,"explanation_fa":"کلوئه می‌گوید: «demain, je passe encore un examen»، یعنی فردا هم امتحان دارد."}

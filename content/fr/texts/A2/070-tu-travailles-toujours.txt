@@ -4,26 +4,26 @@ band: 1
 kind: dialogue
 sentences:
 A: Salut Paul ! Tu travailles toujours comme avocat ? | سلام پل! هنوز وکالت می‌کنی؟
-B: Non, je suis à la retraite depuis mars ! Et toi, Nicolas ? | نه، از مارس بازنشسته شده‌ام! تو چی، نیکولا؟
+B: Non, je suis à la retraite depuis janvier ! Et toi, Sophie ? | نه، از ژانویه بازنشسته شده‌ام! تو چی، سوفی؟
 A: Moi, je suis journaliste maintenant, à Bordeaux. | من حالا روزنامه‌نگارم، در بوردو.
-B: Et ta femme{femme-2} ? | زنت چی؟
-A: Elle était au chômage, mais elle a trouvé un emploi en mai. | بیکار بود، ولی در ماه مه کار پیدا کرد.
+B: Et ton mari ? | شوهرت چی؟
+A: Il était au chômage, mais il a trouvé un emploi en mai. | بیکار بود، ولی در ماه مه کار پیدا کرد.
 B: Et votre fils ? | پسرتان چی؟
 A: Il fait un stage dans une entreprise à Lyon. Il rentrera en juillet. | در یک شرکت در لیون کارآموزی می‌کند. ژوئیه برمی‌گردد.
 reading A:
-{"type":"mcq","prompt":"پل حالا چه کار می‌کند؟","options":["وکیل است","بازنشسته است","روزنامه‌نگار است","کارآموزی می‌کند"],"correct":1,"explanation_fa":"پل می‌گوید: «je suis à la retraite depuis mars»، یعنی از مارس بازنشسته شده‌ام."}
-{"type":"tf","prompt":"نیکولا حالا روزنامه‌نگار است.","correct":true,"explanation_fa":"نیکولا می‌گوید: «Moi, je suis journaliste maintenant»، یعنی من حالا روزنامه‌نگارم."}
-{"type":"tf","prompt":"زن نیکولا هنوز بیکار است.","correct":false,"explanation_fa":"نیکولا می‌گوید: «Elle était au chômage, mais elle a trouvé un emploi en mai.»، یعنی بیکار بود ولی کار پیدا کرد."}
+{"type":"mcq","prompt":"پل حالا چه کار می‌کند؟","options":["وکیل است","بازنشسته است","روزنامه‌نگار است","کارآموزی می‌کند"],"correct":1,"explanation_fa":"پل می‌گوید: «je suis à la retraite depuis janvier»، یعنی از ژانویه بازنشسته شده‌ام."}
+{"type":"tf","prompt":"سوفی حالا روزنامه‌نگار است.","correct":true,"explanation_fa":"سوفی می‌گوید: «Moi, je suis journaliste maintenant»، یعنی من حالا روزنامه‌نگارم."}
+{"type":"tf","prompt":"شوهر سوفی هنوز بیکار است.","correct":false,"explanation_fa":"سوفی می‌گوید: «Il était au chômage, mais il a trouvé un emploi en mai.»، یعنی بیکار بود ولی کار پیدا کرد."}
 reading B:
-{"type":"match","prompt":"هر کس را به وضع کارش وصل کن.","left":["پل","زن نیکولا","پسر نیکولا"],"right":["کارآموزی می‌کند","از ماه مه کار دارد","بازنشسته است","وکیل است"],"pairs":[[0,2],[1,1],[2,0]],"explanation_fa":"پل می‌گوید «je suis à la retraite»، زن نیکولا «a trouvé un emploi en mai» و پسرش «fait un stage»."}
-{"type":"find","prompt":"کدام جمله می‌گوید پسر نیکولا کی برمی‌گردد؟","correct_sentence":6,"explanation_fa":"نیکولا دربارهٔ پسرش می‌گوید: «Il rentrera en juillet.»، یعنی ژوئیه برمی‌گردد."}
-{"type":"mcq","prompt":"نیکولا در کدام شهر روزنامه‌نگار است؟","options":["در بوردو","در لیون","در پاریس","در نیس"],"correct":0,"explanation_fa":"نیکولا می‌گوید: «je suis journaliste maintenant, à Bordeaux»، یعنی در بوردو."}
+{"type":"match","prompt":"هر کس را به وضع کارش وصل کن.","left":["پل","شوهر سوفی","پسر سوفی"],"right":["کارآموزی می‌کند","از ماه مه کار دارد","بازنشسته است","وکیل است"],"pairs":[[0,2],[1,1],[2,0]],"explanation_fa":"پل می‌گوید «je suis à la retraite»، شوهر سوفی «a trouvé un emploi en mai» و پسرش «fait un stage»."}
+{"type":"find","prompt":"کدام جمله می‌گوید پسر سوفی کی برمی‌گردد؟","correct_sentence":6,"explanation_fa":"سوفی دربارهٔ پسرش می‌گوید: «Il rentrera en juillet.»، یعنی ژوئیه برمی‌گردد."}
+{"type":"mcq","prompt":"سوفی در کدام شهر روزنامه‌نگار است؟","options":["در بوردو","در لیون","در پاریس","در نیس"],"correct":0,"explanation_fa":"سوفی می‌گوید: «je suis journaliste maintenant, à Bordeaux»، یعنی در بوردو."}
 listening A:
-{"type":"mcq","prompt":"پل از کی بازنشسته است؟","options":["از ماه مه","از ماه ژوئیه","از ماه مارس","از پارسال"],"correct":2,"explanation_fa":"پل می‌گوید: «je suis à la retraite depuis mars»، یعنی از مارس بازنشسته‌ام."}
-{"type":"tf","prompt":"پل دیگر وکیل نیست.","correct":true,"explanation_fa":"وقتی نیکولا می‌پرسد «Tu travailles toujours comme avocat ?»، پل جواب می‌دهد: «Non, je suis à la retraite»."}
-{"type":"tf","prompt":"پسر نیکولا در بوردو کارآموزی می‌کند.","correct":false,"explanation_fa":"نیکولا می‌گوید: «Il fait un stage dans une entreprise à Lyon.»، یعنی پسرش در لیون کارآموزی می‌کند."}
+{"type":"mcq","prompt":"پل از کی بازنشسته است؟","options":["از ماه مه","از ماه ژوئیه","از ماه ژانویه","از پارسال"],"correct":2,"explanation_fa":"پل می‌گوید: «je suis à la retraite depuis janvier»، یعنی از ژانویه بازنشسته‌ام."}
+{"type":"tf","prompt":"پل دیگر وکیل نیست.","correct":true,"explanation_fa":"وقتی سوفی می‌پرسد «Tu travailles toujours comme avocat ?»، پل جواب می‌دهد: «Non, je suis à la retraite»."}
+{"type":"tf","prompt":"پسر سوفی در بوردو کارآموزی می‌کند.","correct":false,"explanation_fa":"سوفی می‌گوید: «Il fait un stage dans une entreprise à Lyon.»، یعنی پسرش در لیون کارآموزی می‌کند."}
 listening B:
 {"type":"dict","sentence":2}
-{"type":"mcq","prompt":"پسر نیکولا کی برمی‌گردد؟","options":["در ماه ژوئیه","در ماه مه","در ماه مارس","در ماه اوت"],"correct":0,"explanation_fa":"نیکولا می‌گوید: «Il rentrera en juillet.»، یعنی ژوئیه برمی‌گردد."}
-{"type":"tf","prompt":"زن نیکولا در ماه مه کار پیدا کرد.","correct":true,"explanation_fa":"نیکولا می‌گوید: «elle a trouvé un emploi en mai»، یعنی در ماه مه کار پیدا کرد."}
-{"type":"tf","prompt":"نیکولا وکیل است.","correct":false,"explanation_fa":"نیکولا می‌گوید: «Moi, je suis journaliste maintenant»؛ او روزنامه‌نگار است. سؤال دربارهٔ وکالت را از پل پرسید."}
+{"type":"mcq","prompt":"پسر سوفی کی برمی‌گردد؟","options":["در ماه ژوئیه","در ماه مه","در ماه مارس","در ماه اوت"],"correct":0,"explanation_fa":"سوفی می‌گوید: «Il rentrera en juillet.»، یعنی ژوئیه برمی‌گردد."}
+{"type":"tf","prompt":"شوهر سوفی در ماه مه کار پیدا کرد.","correct":true,"explanation_fa":"سوفی می‌گوید: «il a trouvé un emploi en mai»، یعنی در ماه مه کار پیدا کرد."}
+{"type":"tf","prompt":"سوفی وکیل است.","correct":false,"explanation_fa":"سوفی می‌گوید: «Moi, je suis journaliste maintenant»؛ او روزنامه‌نگار است. سؤال دربارهٔ وکالت را از پل پرسید."}

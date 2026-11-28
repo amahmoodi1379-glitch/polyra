@@ -4,7 +4,7 @@ band: 1
 kind: ad
 sentences:
 - Nouveau dans le quartier ? Vous voulez vous faire des amis ? | تازه به محله آمده‌اید؟ می‌خواهید دوست پیدا کنید؟
-- Le café de la place organise un repas entre voisins le premier vendredi du{du-contr} mois. | کافهٔ میدان اولین جمعهٔ هر ماه یک شام همسایه‌ها ترتیب می‌دهد.
+- Le café de la place organise un dîner entre voisins le premier vendredi du{du-contr} mois. | کافهٔ میدان اولین جمعهٔ هر ماه یک شام برای همسایه‌ها ترتیب می‌دهد.
 - Chacun apporte un plat à partager. | هر کس یک غذا برای تقسیم با بقیه می‌آورد.
 - Vous vous intéressez aux langues ? Après le repas, on parle anglais, allemand ou persan ! | به زبان‌ها علاقه دارید؟ بعد از غذا انگلیسی، آلمانی یا فارسی حرف می‌زنیم!
 - Les enfants peuvent accompagner leurs parents. | بچه‌ها می‌توانند همراه پدر و مادرشان بیایند.
@@ -16,12 +16,12 @@ reading A:
 {"type":"find","prompt":"کدام جمله می‌گوید بچه‌ها هم می‌توانند بیایند؟","correct_sentence":4,"explanation_fa":"در آگهی آمده: «Les enfants peuvent accompagner leurs parents.»، یعنی بچه‌ها می‌توانند همراه پدر و مادرشان بیایند."}
 reading B:
 {"type":"tf","prompt":"این شام هر هفته برگزار می‌شود.","correct":false,"explanation_fa":"در آگهی آمده شام «le premier vendredi du mois» است، یعنی فقط اولین جمعهٔ هر ماه."}
-{"type":"tf","prompt":"این شام را یک کافه ترتیب می‌دهد.","correct":true,"explanation_fa":"در آگهی آمده: «Le café de la place organise un repas»، یعنی کافهٔ میدان این شام را ترتیب می‌دهد."}
+{"type":"tf","prompt":"این شام را یک کافه ترتیب می‌دهد.","correct":true,"explanation_fa":"در آگهی آمده: «Le café de la place organise un dîner»، یعنی کافهٔ میدان این شام را ترتیب می‌دهد."}
 {"type":"mcq","prompt":"بعد از غذا چه کار می‌کنند؟","options":["با هم آشپزی می‌کنند","به زبان‌های مختلف حرف می‌زنند","با هم فیلم می‌بینند","در کافه می‌رقصند"],"correct":1,"explanation_fa":"در آگهی آمده: «Après le repas, on parle anglais, allemand ou persan !»، یعنی بعد از غذا به چند زبان حرف می‌زنند."}
 {"type":"match","prompt":"هر چیز را به توضیحش در آگهی وصل کن.","left":["قیمت","جای رزرو","زبان‌ها"],"right":["انگلیسی، آلمانی یا فارسی","سه یورو","خود کافه","ده یورو"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"در آگهی آمده: «Prix : 3 euros. Réservation au café.» و «on parle anglais, allemand ou persan»."}
 listening A:
 {"type":"num","prompt":"شرکت در این شام چند یورو است؟","answer":"3","accepted":["3","trois"],"explanation_fa":"گفته می‌شود: «Prix : 3 euros.»، یعنی قیمت سه یورو است."}
-{"type":"tf","prompt":"این شام در مدرسهٔ محله برگزار می‌شود.","correct":false,"explanation_fa":"گفته می‌شود: «Le café de la place organise un repas»؛ یعنی شام در کافهٔ میدان است، نه در مدرسه."}
+{"type":"tf","prompt":"این شام در مدرسهٔ محله برگزار می‌شود.","correct":false,"explanation_fa":"گفته می‌شود: «Le café de la place organise un dîner»؛ یعنی شام در کافهٔ میدان است، نه در مدرسه."}
 {"type":"tf","prompt":"بچه‌ها هم می‌توانند همراه پدر و مادرشان بیایند.","correct":true,"explanation_fa":"گفته می‌شود: «Les enfants peuvent accompagner leurs parents.»، یعنی بچه‌ها می‌توانند همراه پدر و مادرشان بیایند."}
 {"type":"mcq","prompt":"شام کی است؟","options":["هر جمعه شب","آخرین جمعهٔ ماه","اولین جمعهٔ ماه","اولین شنبهٔ ماه"],"correct":2,"explanation_fa":"گفته می‌شود: «le premier vendredi du mois»، یعنی اولین جمعهٔ هر ماه."}
 listening B:

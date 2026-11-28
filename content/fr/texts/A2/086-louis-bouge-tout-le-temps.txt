@@ -3,7 +3,7 @@ title: Louis bouge tout le temps !
 band: 2
 kind: email
 sentences:
-- Salut Anne ! | سلام آن!
+- Salut Léa ! | سلام لئا!
 - Merci pour ton message. Ici, tout va bien, mais nous sommes très fatigués ! | ممنون از پیامت. این‌جا همه‌چیز خوب است، ولی خیلی خسته‌ایم!
 - Louis a maintenant un{un-num} an, et il marche depuis deux semaines. | لویی حالا یک سالش است و دو هفته است که راه می‌رود.
 - Il bouge tout le temps ! | مدام وول می‌خورد!
@@ -12,7 +12,7 @@ sentences:
 - Hier, il a découvert l'escalier : maintenant, il veut monter seul ! | دیروز پله‌ها را کشف کرد: حالا می‌خواهد تنهایی بالا برود!
 - Avec son père, il construit des tours{tour-f} avec des boîtes. | با پدرش با جعبه‌ها برج می‌سازد.
 - À table, il laisse tomber sa cuillère par terre dix fois par repas ! | سر میز، هر وعده ده بار قاشقش را می‌اندازد زمین!
-- Et il veut tout toucher : la semaine dernière, il a touché le four chaud. | می‌خواهد به همه‌چیز دست بزند: هفتهٔ پیش به فرِ داغ دست زد.
+- Et il veut tout toucher : la semaine dernière, il a touché le four chaud{chaud}. | می‌خواهد به همه‌چیز دست بزند: هفتهٔ پیش به فرِ داغ دست زد.
 - Heureusement, il ne s'est pas brûlé ! | خوشبختانه نسوخت!
 - Viens nous voir bientôt ! | زود بیا ما را ببین!
 - Bises, Sophie | می‌بوسمت، سوفی
@@ -34,4 +34,4 @@ listening B:
 {"type":"num","prompt":"لویی سر هر وعدهٔ غذا چند بار قاشقش را می‌اندازد؟","answer":"10","accepted":["10","dix"],"explanation_fa":"سوفی می‌گوید: «dix fois par repas»، یعنی هر وعده ده بار."}
 {"type":"mcq","prompt":"سوفی و خانواده‌اش این روزها چه حالی دارند؟","options":["مریض‌اند","ناراحت‌اند","حوصله‌شان سر رفته","خیلی خسته‌اند"],"correct":3,"explanation_fa":"سوفی می‌گوید: «tout va bien, mais nous sommes très fatigués !»، یعنی همه‌چیز خوب است، ولی خیلی خسته‌ایم."}
 {"type":"tf","prompt":"لویی موهای پدرش را می‌کشد.","correct":false,"explanation_fa":"سوفی می‌گوید: «il tire les cheveux de sa sœur»، یعنی لویی موهای خواهرش را می‌کشد، نه پدرش."}
-{"type":"tf","prompt":"سوفی از آن می‌خواهد زود به دیدنشان بیاید.","correct":true,"explanation_fa":"سوفی می‌گوید: «Viens nous voir bientôt !»، یعنی زود بیا ما را ببین."}
+{"type":"tf","prompt":"سوفی از لئا می‌خواهد زود به دیدنشان بیاید.","correct":true,"explanation_fa":"سوفی می‌گوید: «Viens nous voir bientôt !»، یعنی زود بیا ما را ببین."}

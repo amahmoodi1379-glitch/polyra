@@ -4,29 +4,29 @@ band: 2
 kind: email
 sentences:
 - Salut Reza ! | سلام رضا!
-- J'ai une bonne nouvelle{nouvelle} : j'ai trouvé du travail ! | یک خبر خوب دارم: کار پیدا کردم!
-- Depuis lundi, je travaille pour une chaîne de télévision, à Paris. | از دوشنبه برای یک شبکهٔ تلویزیونی در پاریس کار می‌کنم.
+- J'ai une bonne nouvelle{nouvelle} : mardi prochain, dans mon émission, on fait un plat iranien ! | یک خبر خوب دارم: سه‌شنبهٔ آینده در برنامه‌ام یک غذای ایرانی درست می‌کنند!
+- Depuis septembre, je travaille pour une chaîne de télévision, à Paris. | از سپتامبر برای یک شبکهٔ تلویزیونی در پاریس کار می‌کنم.
 - Je prépare une émission de cuisine : chaque semaine, un cuisinier fait un plat d'un pays différent. | یک برنامهٔ آشپزی آماده می‌کنم: هر هفته یک آشپز غذایی از یک کشور دیگر درست می‌کند.
-- Mardi prochain, c'est un plat iranien ! | سه‌شنبهٔ آینده نوبت یک غذای ایرانی است!
+- C'est mon idée, et le cuisinier est de Chiraz ! | این فکرِ من بود، و آشپزش اهل شیراز است!
 - Moi, je cherche des informations sur internet pour l'émission, et je fais de petites vidéos pour le site de la chaîne. | من برای برنامه در اینترنت اطلاعات پیدا می‌کنم و برای سایت شبکه ویدئوهای کوتاه درست می‌کنم.
-- Le travail est intéressant. Un seul problème : pendant l'émission, il y a beaucoup de publicité ! | کار جالبی است. فقط یک مشکل دارد: وسط برنامه خیلی تبلیغ پخش می‌شود!
+- J'adore ce travail. Un seul problème : pendant l'émission, il y a beaucoup de publicité ! | عاشق این کارم. فقط یک مشکل دارد: وسط برنامه خیلی تبلیغ پخش می‌شود!
 - Tu peux regarder l'émission en Iran : télécharge l'application de la chaîne sur ton téléphone. | می‌توانی برنامه را در ایران ببینی: اپلیکیشن شبکه را روی تلفنت دانلود کن.
 - C'est gratuit, et tu n'as pas besoin de mot de passe. | مجانی است و رمز هم لازم نداری.
 - Tu m'écris après l'émission ? | بعد از برنامه برایم می‌نویسی؟
 - Bises, Maryam | می‌بوسمت، مریم
 reading A:
-{"type":"mcq","prompt":"خبر خوب مریم چیست؟","options":["به شهر پاریس رفته است","آشپزی یاد گرفته است","کار پیدا کرده است","یک اپلیکیشن ساخته است"],"correct":2,"explanation_fa":"مریم می‌نویسد: «J'ai une bonne nouvelle : j'ai trouvé du travail !»، یعنی خبر خوبی دارم: کار پیدا کردم."}
+{"type":"mcq","prompt":"خبر خوب مریم چیست؟","options":["به یک شهر تازه رفته است","در یک کلاس آشپزی ثبت‌نام کرده است","در برنامه‌اش یک غذای ایرانی درست می‌کنند","برای شبکه یک اپلیکیشن ساخته است"],"correct":2,"explanation_fa":"مریم می‌نویسد: «J'ai une bonne nouvelle : mardi prochain, dans mon émission, on fait un plat iranien !»، یعنی سه‌شنبهٔ آینده در برنامه‌اش یک غذای ایرانی درست می‌کنند."}
 {"type":"tf","prompt":"مریم برای یک شبکهٔ تلویزیونی کار می‌کند.","correct":true,"explanation_fa":"مریم می‌نویسد: «je travaille pour une chaîne de télévision»، یعنی برای یک شبکهٔ تلویزیونی کار می‌کنم."}
-{"type":"tf","prompt":"در این برنامه، هر هفته یک غذای ایرانی پخته می‌شود.","correct":false,"explanation_fa":"مریم می‌نویسد: «chaque semaine, un cuisinier fait un plat d'un pays différent»؛ هر هفته غذای یک کشور دیگر است و فقط سه‌شنبهٔ آینده غذای ایرانی است."}
+{"type":"tf","prompt":"در این برنامه، هر هفته یک غذای ایرانی پخته می‌شود.","correct":false,"explanation_fa":"مریم می‌نویسد: «chaque semaine, un cuisinier fait un plat d'un pays différent»؛ هر هفته غذای یک کشور دیگر است و سه‌شنبهٔ آینده نوبت غذای ایرانی است."}
 {"type":"find","prompt":"کدام جمله می‌گوید رضا برای دیدن برنامه رمز لازم ندارد؟","correct_sentence":8,"explanation_fa":"مریم می‌نویسد: «tu n'as pas besoin de mot de passe»، یعنی رمز لازم نداری."}
 reading B:
 {"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Moi, je cherche des {{1}} sur internet pour l'émission, et je fais de petites {{2}} pour le site de la chaîne.","bank":["informations","vidéos","télécharge","pays","écris"],"answers":["informations","vidéos"],"explanation_fa":"مریم می‌نویسد: «je cherche des informations sur internet pour l'émission, et je fais de petites vidéos pour le site»، یعنی اطلاعات پیدا می‌کنم و ویدئوهای کوتاه درست می‌کنم."}
 {"type":"match","prompt":"هر کس را به کاری که در ایمیل دربارهٔ او آمده وصل کن.","left":["مریم","آشپز برنامه","رضا"],"right":["می‌تواند برنامه را روی تلفنش ببیند","اطلاعات پیدا می‌کند و ویدئو می‌سازد","تبلیغ‌های برنامه را می‌سازد","هر هفته غذای یک کشور را درست می‌کند"],"pairs":[[0,1],[1,3],[2,0]],"explanation_fa":"مریم می‌نویسد: «je cherche des informations ... et je fais de petites vidéos»، دربارهٔ آشپز «un cuisinier fait un plat d'un pays différent» و به رضا «télécharge l'application de la chaîne sur ton téléphone»."}
-{"type":"order","prompt":"این‌ها را به ترتیبی که در ایمیل آمده بچین.","items":["از تبلیغ‌های زیاد می‌گوید.","خبر پیدا کردن کار را می‌دهد.","از غذای ایرانی سه‌شنبه می‌گوید.","می‌گوید رضا اپلیکیشن را دانلود کند."],"correct_order":[1,2,0,3],"explanation_fa":"اول «j'ai trouvé du travail»، بعد «Mardi prochain, c'est un plat iranien»، بعد «il y a beaucoup de publicité» و آخر «télécharge l'application»."}
+{"type":"order","prompt":"این‌ها را به ترتیبی که در ایمیل آمده بچین.","items":["از تبلیغ‌های زیاد می‌گوید.","می‌گوید کجا کار می‌کند.","از آشپزِ اهل شیراز می‌گوید.","می‌گوید رضا اپلیکیشن را دانلود کند."],"correct_order":[1,2,0,3],"explanation_fa":"اول «je travaille pour une chaîne de télévision»، بعد «le cuisinier est de Chiraz»، بعد «il y a beaucoup de publicité» و آخر «télécharge l'application»."}
 listening A:
-{"type":"mcq","prompt":"مریم از کی در این شبکه کار می‌کند؟","options":["از ماه پیش","از دوشنبه","از سه‌شنبه","از دیروز"],"correct":1,"explanation_fa":"مریم می‌گوید: «Depuis lundi, je travaille pour une chaîne de télévision»، یعنی از دوشنبه."}
+{"type":"mcq","prompt":"مریم از کی در این شبکه کار می‌کند؟","options":["از ژانویه","از سپتامبر","از سه‌شنبه","از دیروز"],"correct":1,"explanation_fa":"مریم می‌گوید: «Depuis septembre, je travaille pour une chaîne de télévision»، یعنی از سپتامبر."}
 {"type":"mcq","prompt":"برنامه‌ای که مریم آماده می‌کند دربارهٔ چیست؟","options":["سفر","ورزش","آشپزی","خبرها"],"correct":2,"explanation_fa":"مریم می‌گوید: «Je prépare une émission de cuisine»، یعنی یک برنامهٔ آشپزی آماده می‌کنم."}
-{"type":"tf","prompt":"سه‌شنبهٔ آینده در برنامه یک غذای ایرانی درست می‌کنند.","correct":true,"explanation_fa":"مریم می‌گوید: «Mardi prochain, c'est un plat iranien !»، یعنی سه‌شنبهٔ آینده نوبت یک غذای ایرانی است."}
+{"type":"tf","prompt":"سه‌شنبهٔ آینده در برنامه یک غذای ایرانی درست می‌کنند.","correct":true,"explanation_fa":"مریم می‌گوید: «mardi prochain, dans mon émission, on fait un plat iranien !»، یعنی سه‌شنبهٔ آینده در برنامه‌اش یک غذای ایرانی درست می‌کنند."}
 {"type":"tf","prompt":"اپلیکیشن شبکه پولی است.","correct":false,"explanation_fa":"مریم دربارهٔ اپلیکیشن می‌گوید: «C'est gratuit»، یعنی مجانی است."}
 listening B:
 {"type":"mcq","prompt":"به گفتهٔ مریم، کارش چه مشکلی دارد؟","options":["کارش خیلی سخت است","وسط برنامه خیلی تبلیغ هست","حقوقش کم است","همکارهایش را دوست ندارد"],"correct":1,"explanation_fa":"مریم می‌گوید: «Un seul problème : pendant l'émission, il y a beaucoup de publicité !»، یعنی وسط برنامه خیلی تبلیغ پخش می‌شود."}

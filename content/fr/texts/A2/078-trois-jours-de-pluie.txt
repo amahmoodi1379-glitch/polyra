@@ -8,7 +8,7 @@ B: Oh non ! Et les enfants ? | ای وای! بچه‌ها چه می‌کنند؟
 A: Hugo joue à son jeu vidéo du{du-contr} matin au soir ! | هوگو از صبح تا شب با بازی ویدئویی‌اش بازی می‌کند!
 B: Et Léa ? | لئا چی؟
 A: Elle lit les vieux magazines de ma mère. | مجله‌های قدیمی مادرم را می‌خواند.
-B: Ils ne jouent pas aux cartes avec ton père ? | با پدرت ورق بازی نمی‌کنند؟
+B: Ils ne jouent pas aux cartes avec leur grand-père ? | با پدربزرگشان ورق بازی نمی‌کنند؟
 A: Si{si-adv}, hier soir, mais papa gagne chaque fois ! | چرا، دیشب بازی کردند، ولی بابا هر بار می‌برد!
 A: Ce matin, il voulait jouer aux échecs avec Hugo, mais Hugo a dit non : c'est trop long. | امروز صبح می‌خواست با هوگو شطرنج بازی کند، ولی هوگو گفت نه: خیلی طول می‌کشد.
 B: Et le ballon ? Je l'ai mis dans la voiture. | توپ چی؟ گذاشتمش توی ماشین.
@@ -32,6 +32,6 @@ listening A:
 {"type":"mcq","prompt":"چند روز است که باران می‌بارد؟","options":["دو روز","یک هفته","سه روز","چهار روز"],"correct":2,"explanation_fa":"زن می‌گوید: «il pleut depuis trois jours»، یعنی سه روز است که باران می‌بارد."}
 listening B:
 {"type":"num","prompt":"مسابقهٔ دو چند کیلومتر است؟","answer":"2","accepted":["2","deux"],"explanation_fa":"پیر می‌گوید: «deux kilomètres dans la forêt»، یعنی مسابقه دو کیلومتر در جنگل است."}
-{"type":"mcq","prompt":"بچه‌ها دیشب با پدربزرگ چه بازی کردند؟","options":["ورق","شطرنج","فوتبال","تنیس"],"correct":0,"explanation_fa":"پیر می‌پرسد: «Ils ne jouent pas aux cartes avec ton père ?» و زن جواب می‌دهد: «Si, hier soir»، یعنی دیشب ورق بازی کردند."}
+{"type":"mcq","prompt":"بچه‌ها دیشب با پدربزرگ چه بازی کردند؟","options":["ورق","شطرنج","فوتبال","تنیس"],"correct":0,"explanation_fa":"پیر می‌پرسد: «Ils ne jouent pas aux cartes avec leur grand-père ?» و زن جواب می‌دهد: «Si, hier soir»، یعنی دیشب ورق بازی کردند."}
 {"type":"tf","prompt":"پیر می‌گوید لئا می‌تواند عکس بگیرد.","correct":true,"explanation_fa":"پیر می‌گوید: «Et Léa peut prendre des photos !»، یعنی لئا هم می‌تواند عکس بگیرد."}
 {"type":"tf","prompt":"هوگو فوتبال را خوب بازی نمی‌کند.","correct":false,"explanation_fa":"زن می‌گوید: «Hugo est un bon joueur de football»، یعنی هوگو فوتبالیست خوبی است."}

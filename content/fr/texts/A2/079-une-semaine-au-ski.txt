@@ -13,7 +13,7 @@ sentences:
 - Le soir, à l'hôtel, des gens du{du-contr} village font de la musique. | شب‌ها در هتل چند نفر از اهالی روستا ساز می‌زنند.
 - Hier, Emma a chanté une chanson avec eux ! | دیروز اِما با آن‌ها یک آهنگ خواند!
 - On est fatigués, mais très heureux. | خسته‌ایم، ولی خیلی خوشحال.
-- Si tu veux, l'année prochaine, venez avec nous, Paul et toi ! | اگر بخواهی، سال دیگر تو و پل هم با ما بیایید!
+- Si vous voulez, l'année prochaine, venez avec nous, Paul et toi ! | اگر بخواهید، سال دیگر تو و پل هم با ما بیایید!
 - Bises, Camille | می‌بوسمت، کامی
 reading A:
 {"type":"mcq","prompt":"کامی این ایمیل را از کجا می‌نویسد؟","options":["از خانهٔ خودش در شهر","از یک هتل کنار دریا","از یک هتل در کوهستان","از خانهٔ ژولی و پل"],"correct":2,"explanation_fa":"کامی می‌نویسد: «Nous sommes à la montagne pour une semaine, dans un petit hôtel du village.»، یعنی در یک هتل کوچک در کوهستان هستیم."}

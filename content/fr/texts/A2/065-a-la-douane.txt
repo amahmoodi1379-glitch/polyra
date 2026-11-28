@@ -4,22 +4,22 @@ band: 1
 kind: voice_message
 sentences:
 - Salut Sara, c'est Maryam ! Je suis à Paris ! | سلام سارا، مریم هستم! من در پاریسم!
-- Mais il y a une longue queue à la douane. | ولی در گمرک صف طولانی است.
-- Après, je dois encore prendre mes bagages : une valise et un sac à dos. | بعد هنوز باید بارهایم را بگیرم: یک چمدان و یک کوله‌پشتی.
+- Maintenant, j'attends mes bagages : une valise et un sac à dos. | الان منتظر بارهایم هستم: یک چمدان و یک کوله‌پشتی.
+- Après, je dois encore passer la douane, et il y a une longue queue. | بعد هنوز باید از گمرک رد شوم، و آن‌جا صف طولانی است.
 - Tu peux venir à l'aéroport à 18 heures ? | می‌توانی ساعت ۱۸ به فرودگاه بیایی؟ | tts: Tu peux venir à l'aéroport à dix-huit heures ?
 - J'ai un billet aller-retour : je suis de retour à Téhéran le 20 août. | بلیت رفت‌وبرگشت دارم؛ بیستم اوت به تهران برمی‌گردم. | tts: J'ai un billet aller-retour : je suis de retour à Téhéran le vingt août.
 - À tout à l'heure ! | فعلاً، می‌بینمت!
 reading A:
-{"type":"mcq","prompt":"مریم الان کجاست؟","options":["در خانهٔ سارا","در هواپیما","در گمرک فرودگاه","در ایستگاه قطار"],"correct":2,"explanation_fa":"مریم می‌گوید: «il y a une longue queue à la douane»، یعنی در گمرک صف طولانی است و او هنوز آنجاست."}
+{"type":"mcq","prompt":"مریم الان کجاست؟","options":["در خانهٔ سارا","در هواپیما","در فرودگاه پاریس","در ایستگاه قطار"],"correct":2,"explanation_fa":"مریم می‌گوید: «Je suis à Paris !» و «j'attends mes bagages»، و از سارا می‌خواهد به فرودگاه بیاید؛ پس الان در فرودگاه پاریس است."}
 {"type":"tf","prompt":"مریم یک کوله‌پشتی دارد.","correct":true,"explanation_fa":"مریم می‌گوید: «une valise et un sac à dos»، یعنی یک چمدان و یک کوله‌پشتی."}
 {"type":"tf","prompt":"مریم فقط بلیت رفت دارد.","correct":false,"explanation_fa":"مریم می‌گوید: «J'ai un billet aller-retour»، یعنی بلیت رفت‌وبرگشت دارد."}
 reading B:
 {"type":"find","prompt":"کدام جمله می‌گوید مریم کی به تهران برمی‌گردد؟","correct_sentence":4,"explanation_fa":"مریم می‌گوید: «je suis de retour à Téhéran le 20 août»، یعنی بیستم اوت به تهران برمی‌گردم."}
 {"type":"match","prompt":"هر زمان را به چیزی که در پیام دربارهٔ آن گفته می‌شود وصل کن.","left":["ساعت ۱۸","۲۰ اوت"],"right":["برگشتن مریم به تهران","آمدن سارا به فرودگاه","رسیدن مریم به پاریس"],"pairs":[[0,1],[1,0]],"explanation_fa":"مریم می‌پرسد: «Tu peux venir à l'aéroport à 18 heures ?» و می‌گوید: «je suis de retour à Téhéran le 20 août»."}
-{"type":"mcq","prompt":"مریم بعد از گمرک چه کار باید بکند؟","options":["بلیت قطار بخرد","بارهایش را بگیرد","به هتل زنگ بزند","پاسپورتش را پیدا کند"],"correct":1,"explanation_fa":"مریم می‌گوید: «Après, je dois encore prendre mes bagages»، یعنی بعد هنوز باید بارهایم را بگیرم."}
+{"type":"mcq","prompt":"مریم بعد از گرفتن بارهایش چه کار باید بکند؟","options":["بلیت قطار بخرد","از گمرک رد شود","به هتل زنگ بزند","پاسپورتش را پیدا کند"],"correct":1,"explanation_fa":"مریم می‌گوید: «Après, je dois encore passer la douane»، یعنی بعد هنوز باید از گمرک رد شوم."}
 listening A:
 {"type":"num","prompt":"سارا ساعت چند به فرودگاه بیاید؟","answer":"18","accepted":["18","dix-huit","18h"],"explanation_fa":"مریم می‌پرسد: «Tu peux venir à l'aéroport à 18 heures ?»، یعنی ساعت هجده."}
-{"type":"tf","prompt":"در گمرک صف طولانی است.","correct":true,"explanation_fa":"مریم می‌گوید: «il y a une longue queue à la douane»، یعنی در گمرک صف طولانی است."}
+{"type":"tf","prompt":"در گمرک صف طولانی است.","correct":true,"explanation_fa":"مریم دربارهٔ گمرک می‌گوید: «il y a une longue queue»، یعنی آن‌جا صف طولانی است."}
 {"type":"tf","prompt":"مریم دو چمدان دارد.","correct":false,"explanation_fa":"مریم می‌گوید: «une valise et un sac à dos»؛ یعنی یک چمدان و یک کوله‌پشتی دارد، نه دو چمدان."}
 listening B:
 {"type":"dict","sentence":1}

@@ -1,0 +1,36 @@
+code: fr-a2-t067
+title: Perdue dans la forêt
+band: 2
+kind: phone_call
+sentences:
+A: Allô, Louis ? C'est Emma. Je suis perdue dans la forêt ! | الو، لویی؟ اِما هستم. توی جنگل گم شده‌ام!
+B: Quoi ? Tu n'es pas avec le groupe ? | چی؟ با گروه نیستی؟
+A: Non. Je me suis arrêtée pour prendre des photos, et le groupe est parti ! | نه. ایستادم که عکس بگیرم، و گروه رفت!
+B: Ne t'inquiète pas. Tu vois quoi autour de toi ? | نگران نباش. دور و برت چه می‌بینی؟
+A: Je suis au milieu d'un petit chemin. Au bout, il y a une vieille maison. | وسط یک راه باریکم. تهِ راه یک خانهٔ قدیمی هست.
+B: Ah, je connais cet endroit ! Va jusqu'à la maison, et prends le chemin à droite, en direction du lac. | آهان، این‌جا را می‌شناسم! تا خانه برو و راهِ سمت راست را بگیر، به طرف دریاچه.
+B: Au lac, tourne à gauche : je t'attends au parking. | کنار دریاچه بپیچ به چپ: توی پارکینگ منتظرت هستم.
+A: Merci ! J'ai demandé mon chemin à un monsieur, mais il ne connaissait pas la forêt. | ممنون! از یک آقا راه را پرسیدم، ولی او جنگل را نمی‌شناخت.
+B: Viens vite : le pique-nique est prêt ! | زود بیا: پیک‌نیک آماده است!
+B: Après, on va faire un tour en bateau ! | بعدش با قایق گشتی می‌زنیم!
+A: Super ! J'arrive dans vingt minutes. | عالی! بیست دقیقهٔ دیگر می‌رسم.
+reading A:
+{"type":"mcq","prompt":"اِما چرا به لویی زنگ می‌زند؟","options":["چون می‌خواهد پیک‌نیک را لغو کند","چون دوربینش را در جنگل گم کرده","چون در جنگل راه را گم کرده است","چون قایق‌سواری را دوست ندارد"],"correct":2,"explanation_fa":"اِما می‌گوید: «Je suis perdue dans la forêt !»، یعنی توی جنگل گم شده‌ام."}
+{"type":"tf","prompt":"اِما ایستاد تا عکس بگیرد.","correct":true,"explanation_fa":"اِما می‌گوید: «Je me suis arrêtée pour prendre des photos»، یعنی ایستادم که عکس بگیرم."}
+{"type":"tf","prompt":"لویی جایی را که اِما هست نمی‌شناسد.","correct":false,"explanation_fa":"لویی می‌گوید: «Ah, je connais cet endroit !»، یعنی این‌جا را می‌شناسم."}
+{"type":"find","prompt":"کدام جمله می‌گوید اِما از کسی راه را پرسیده است؟","correct_sentence":7,"explanation_fa":"اِما می‌گوید: «J'ai demandé mon chemin à un monsieur»، یعنی از یک آقا راه را پرسیدم."}
+reading B:
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Va jusqu'à la maison, et prends le {{1}} à droite, en {{2}} du lac.","bank":["chemin","direction","milieu","bout","groupe"],"answers":["chemin","direction"],"explanation_fa":"لویی می‌گوید: «Va jusqu'à la maison, et prends le chemin à droite, en direction du lac.»"}
+{"type":"match","prompt":"هر جا را به چیزی که در گفتگو دربارهٔ آن گفته می‌شود وصل کن.","left":["تهِ راه باریک","کنار دریاچه","پارکینگ"],"right":["لویی آن‌جا منتظر است","یک خانهٔ قدیمی هست","اِما باید به چپ بپیچد","گروه آن‌جا عکس می‌گیرد"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"در گفتگو آمده: «Au bout, il y a une vieille maison»، «Au lac, tourne à gauche» و «je t'attends au parking»."}
+{"type":"order","prompt":"راهی را که لویی می‌گوید به ترتیب بچین.","items":["به چپ بپیچد","تا خانهٔ قدیمی برود","به پارکینگ برسد","راه سمت راست را بگیرد"],"correct_order":[1,3,0,2],"explanation_fa":"لویی می‌گوید: «Va jusqu'à la maison»، بعد «prends le chemin à droite»، بعد «Au lac, tourne à gauche» و آخر «je t'attends au parking»."}
+{"type":"mcq","prompt":"آقایی که اِما از او راه را پرسید چه مشکلی داشت؟","options":["فرانسوی بلد نبود","جنگل را نمی‌شناخت","خیلی عجله داشت","حرف اِما را نفهمید"],"correct":1,"explanation_fa":"اِما می‌گوید: «il ne connaissait pas la forêt»، یعنی او جنگل را نمی‌شناخت."}
+listening A:
+{"type":"mcq","prompt":"اِما وقتی زنگ می‌زند کجاست؟","options":["کنار دریاچه","توی پارکینگ","وسط یک راه باریک در جنگل","توی یک خانهٔ قدیمی"],"correct":2,"explanation_fa":"اِما می‌گوید توی جنگل است و «Je suis au milieu d'un petit chemin.»، یعنی وسط یک راه باریکم."}
+{"type":"tf","prompt":"گروه بدون اِما رفته است.","correct":true,"explanation_fa":"اِما می‌گوید برای عکس گرفتن ایستاد «et le groupe est parti !»، یعنی و گروه رفت."}
+{"type":"tf","prompt":"لویی در خانهٔ قدیمی منتظر اِماست.","correct":false,"explanation_fa":"لویی می‌گوید: «je t'attends au parking»، یعنی توی پارکینگ منتظرت هستم."}
+{"type":"num","prompt":"اِما چند دقیقهٔ دیگر می‌رسد؟","answer":"20","accepted":["20","vingt"],"explanation_fa":"اِما می‌گوید: «J'arrive dans vingt minutes.»، یعنی بیست دقیقهٔ دیگر می‌رسم."}
+listening B:
+{"type":"mcq","prompt":"بعد از پیک‌نیک چه کار می‌کنند؟","options":["به شهر برمی‌گردند","با قایق گشتی می‌زنند","در جنگل عکس می‌گیرند","در خانهٔ قدیمی استراحت می‌کنند"],"correct":1,"explanation_fa":"لویی می‌گوید: «Après, on va faire un tour en bateau !»، یعنی بعدش با قایق گشتی می‌زنیم."}
+{"type":"mcq","prompt":"به گفتهٔ لویی، راه سمت راست به کدام طرف می‌رود؟","options":["به طرف خانهٔ قدیمی","به طرف شهر","به طرف دریاچه","به طرف ایستگاه قطار"],"correct":2,"explanation_fa":"لویی می‌گوید: «prends le chemin à droite, en direction du lac»، یعنی راه سمت راست را بگیر، به طرف دریاچه."}
+{"type":"tf","prompt":"پیک‌نیک آماده است.","correct":true,"explanation_fa":"لویی می‌گوید: «le pique-nique est prêt !»، یعنی پیک‌نیک آماده است."}
+{"type":"tf","prompt":"اِما باید کنار دریاچه به راست بپیچد.","correct":false,"explanation_fa":"لویی می‌گوید: «Au lac, tourne à gauche»، یعنی کنار دریاچه بپیچ به چپ."}
