@@ -52,7 +52,7 @@ Im Herbst [sammeln] wir Pilze. | پاییز قارچ جمع می‌کنیم.
 Im Praktikum kann ich viel [Erfahrung sammeln]. | در دورهٔ کارآموزی می‌توانم کلی تجربه کسب کنم.
 Mina möchte im Ausland [Erfahrung sammeln]. | مینا می‌خواهد در خارج از کشور تجربه کسب کند.
 Bei diesem Job habe ich viel [Erfahrung gesammelt]. | در این کار کلی تجربه به دست آوردم. | d: Erfahrung sammeln, Erfahrung sammelt, Erfahrung sammle
-Ich [sammle Erfahrung] in einer Firma. | من در یک شرکت تجربه کسب می‌کنم.
+Ich [sammle Erfahrung] in einer Firma. | من در یک شرکت تجربه کسب می‌کنم. | ok: sammle Erfahrungen
 Die Studenten [sammeln Erfahrung] in einem Krankenhaus. | دانشجوها در یک بیمارستان تجربه کسب می‌کنند.
 Für die Stelle muss man zuerst [Erfahrung sammeln]. | برای این شغل آدم اول باید تجربه کسب کند.
 # Gitarre
@@ -127,7 +127,7 @@ Am Sonntag ist der [Eintritt] ins Museum kostenlos. | یکشنبه‌ها ورو
 Ich bezahle den [Eintritt] an der Kasse. | پول ورودیه را دم صندوق می‌دهم.
 # Eintrittskarte
 Ich habe zwei [Eintrittskarten] für das Konzert. | دو تا بلیت برای کنسرت دارم.
-Die [Eintrittskarte] kostet zehn Euro. | بلیت ورودی ده یورو است.
+Die [Eintrittskarte] kostet zehn Euro. | بلیت ورودی ده یورو است. | ok: Karte
 Wo kann man [Eintrittskarten] für das Museum kaufen? | بلیت موزه را کجا می‌شود خرید؟
 Ich habe meine [Eintrittskarte] zu Hause vergessen! | بلیتم را خانه جا گذاشتم!
 Bitte zeigen Sie Ihre [Eintrittskarte] am Eingang. | لطفاً بلیتتان را دم ورودی نشان دهید.
@@ -404,7 +404,7 @@ Herr Weber möchte, dass Sie ihn [zurückrufen]. | آقای وبر می‌خوا
 Der Arzt hat noch nicht [zurückgerufen]. | دکتر هنوز جواب تماس را نداده است. | d: zurückrufen, zurückruft, zurückrufst
 Ich bin traurig, weil du mich nie [zurückrufst]. | ناراحتم، چون هیچ‌وقت جواب تماسم را نمی‌دهی. | d: zurückrufe, zurückruft, zurückrufen
 Hat Lena schon [zurückgerufen]? | لنا جواب تماس را داده؟ | d: zurückrufen, zurückruft, zurückrufst
-Meine Mutter hat angerufen, ich muss sie gleich [zurückrufen]. | مادرم زنگ زده، باید زود بهش زنگ بزنم.
+Meine Mutter hat angerufen, ich muss sie gleich [zurückrufen]. | مادرم زنگ زده، باید زود بهش زنگ بزنم. | ok: anrufen
 # besetzt
 Ich rufe Lena an, aber es ist immer [besetzt]. | به لنا زنگ می‌زنم، اما همیشه اشغال است.
 Ist dieser Platz noch frei? – Nein, er ist [besetzt]. | این صندلی خالی است؟ – نه، جای کسی است.
@@ -453,7 +453,7 @@ Tut mir leid, ich habe die [Verabredung] vergessen! | ببخشید، قرارم�
 Ich komme zu spät zu meiner [Verabredung]. | دیر به قرارم می‌رسم.
 Die [Verabredung] ist um drei Uhr am Bahnhof. | قرار ساعت سه در ایستگاه قطار است.
 Wir müssen die [Verabredung] leider absagen. | متأسفانه باید قرار را به هم بزنیم.
-Am Wochenende habe ich viele [Verabredungen]. | آخر هفته کلی قرار دارم.
+Am Wochenende habe ich viele [Verabredungen]. | آخر هفته کلی قرار دارم. | ok: Termine
 # Gefühl
 Ich habe ein gutes [Gefühl]. | حس خوبی دارم.
 Ich habe das [Gefühl], dass er traurig ist. | احساس می‌کنم که او ناراحت است.
@@ -469,10 +469,10 @@ Mina weint vor [Freude]. | مینا از خوشحالی گریه می‌کند.
 Viel [Freude] mit dem neuen Auto! | از ماشین جدیدت لذت ببری!
 Kochen ist für meine Mutter eine große [Freude]. | آشپزی برای مادرم مایهٔ شادی است.
 # froh
-Ich bin [froh], dass du da bist. | خوشحالم که این‌جایی.
+Ich bin [froh], dass du da bist. | خوشحالم که این‌جایی. | ok: glücklich
 Wir sind sehr [froh] über die gute Note. | از نمرهٔ خوب خیلی خوشحالیم.
 Mein Vater ist [froh], weil er eine neue Stelle hat. | پدرم خوشحال است، چون کار جدیدی پیدا کرده.
-Endlich Ferien! Die Kinder sind [froh]. | بالاخره تعطیلات! بچه‌ها خوشحال‌اند.
+Endlich Ferien! Die Kinder sind [froh]. | بالاخره تعطیلات! بچه‌ها خوشحال‌اند. | ok: glücklich
 Sei [froh], dass nichts passiert ist! | خوشحال باش که اتفاقی نیفتاده!
 Der Arzt sagt, alles ist gut. Ich bin so [froh]! | دکتر می‌گوید همه‌چیز خوب است. خیلی خوشحالم!
 # zufrieden
@@ -635,7 +635,7 @@ Ist es [normal], dass das Baby so viel schläft? | عادی است که بچه �
 Ein [normaler] Tag beginnt bei mir um sechs Uhr. | یک روز معمولی من ساعت شش شروع می‌شود.
 Die Temperatur ist wieder [normal]. | دما دوباره عادی است.
 Im Januar ist Schnee hier [normal]. | این‌جا برف در ژانویه عادی است.
-Ich möchte einen [normalen] Kaffee, bitte, ohne Milch. | یک قهوهٔ معمولی می‌خواهم، لطفاً، بدون شیر.
+Ich möchte bitte einen [normalen] Kaffee ohne Milch. | لطفاً یک قهوهٔ معمولی بدون شیر می‌خواهم.
 # typisch
 Das ist [typisch] für meinen Bruder! | این دقیقاً کار برادرم است!
 Was ist ein [typisches] Essen im Iran? | یک غذای مخصوص ایران چیست؟ | d: schnelles, modernes, teures
@@ -679,12 +679,12 @@ Das ist ein [praktisches] Geschenk. | این هدیهٔ به‌دردبخوری 
 Diese Jacke ist warm und [praktisch]. | این کاپشن گرم و کاربردی است.
 Für die Schule braucht Max eine [praktische] Tasche. | ماکس برای مدرسه یک کیف کاربردی لازم دارد.
 # schwierig
-Die Prüfung war sehr [schwierig]. | امتحان خیلی سخت بود.
-Deutsch{Deutsch} ist nicht so [schwierig]. | آلمانی آن‌قدرها سخت نیست.
-Das ist eine [schwierige] Frage. | این سؤال سختی است.
-Die Grammatik ist für mich [schwierig]. | دستور زبان برای من سخت است.
-Der Weg auf den Berg ist [schwierig]. | راه بالا رفتن از کوه سخت است.
-Mein Bruder hat gerade eine [schwierige] Zeit. | برادرم الان دوران سختی را می‌گذراند.
+Die Prüfung war sehr [schwierig]. | امتحان خیلی سخت بود. | ok: schwer
+Deutsch{Deutsch} ist nicht so [schwierig]. | آلمانی آن‌قدرها سخت نیست. | ok: schwer
+Das ist eine [schwierige] Frage. | این سؤال سختی است. | ok: schwere
+Die Grammatik ist für mich [schwierig]. | دستور زبان برای من سخت است. | ok: schwer
+Der Weg auf den Berg ist [schwierig]. | راه بالا رفتن از کوه سخت است. | ok: schwer
+Mein Bruder hat gerade eine [schwierige] Zeit. | برادرم الان دوران سختی را می‌گذراند. | ok: schwere
 # kompliziert
 Das Formular ist sehr [kompliziert]. | این فرم خیلی پیچیده است.
 Der Weg zum Bahnhof ist [kompliziert]. | راه ایستگاه قطار پیچیده است.
@@ -697,7 +697,7 @@ Das Brot ist sehr [hart]. | نان خیلی سفت است.
 Das Bett im Hotel war zu [hart]. | تخت هتل زیادی سفت بود.
 Ich esse gern [harte] Eier. | دوست دارم تخم‌مرغ سفت‌پز بخورم.
 Der Boden ist im Winter ganz [hart]. | زمین در زمستان کاملاً سفت است.
-Mein Vater arbeitet sehr [hart]. | پدرم خیلی سخت کار می‌کند.
+Mein Vater arbeitet sehr [hart]. | پدرم خیلی سخت کار می‌کند. | ok: schwer
 Das Training ist [hart], aber es macht Spaß. | تمرین سخت است، اما کیف می‌دهد.
 Das war ein [harter] Tag. | روز سختی بود.
 # weich

@@ -267,11 +267,11 @@ Der Chef spricht mit den [Mitarbeitern]. | رئیس با کارمندان صحب
 Wir suchen [Mitarbeiter] für unser Restaurant. | برای رستورانمان نیرو می‌خواهیم.
 # Mitarbeiterin
 Frau Becker ist eine neue [Mitarbeiterin]. | خانم بکر کارمند جدید است.
-Unsere [Mitarbeiterin] hilft Ihnen gern. | همکار ما با کمال میل کمکتان می‌کند.
+Unsere [Mitarbeiterin] hilft Ihnen gern. | کارمند ما با کمال میل کمکتان می‌کند. | d: Ausbildung, Arbeit, Polizistin
 Die [Mitarbeiterin] an der Rezeption ist sehr freundlich. | خانمِ کارمند پذیرش خیلی خوش‌برخورد است.
-Ich bin seit drei Jahren [Mitarbeiterin] bei dieser Firma. | سه سال است که کارمند این شرکت هستم.
+Ich bin seit drei Jahren [Mitarbeiterin] bei dieser Firma. | سه سال است که کارمند این شرکت هستم. | ok: Mitarbeiter
 Wir suchen eine [Mitarbeiterin] für das Büro. | برای دفتر یک کارمند خانم لازم داریم.
-Fragen Sie bitte meine [Mitarbeiterin]. | لطفاً از همکارم بپرسید.
+Fragen Sie bitte meine [Mitarbeiterin]. | لطفاً از کارمندم بپرسید.
 # Angestellte
 Meine Mutter ist [Angestellte] bei einer Bank. | مادرم در یک بانک کارمند است. | d: Köchin, Friseurin, Polizistin
 Die [Angestellten] haben am Samstag frei. | کارمندان شنبه‌ها تعطیل‌اند. | d: Polizisten, Verkäufer, Kellner
@@ -443,7 +443,7 @@ Hattest du mit der Bewerbung [Erfolg]? | با درخواست کارت موفق �
 # viel Erfolg
 [Viel Erfolg] bei der Prüfung! | در امتحان موفق باشی! | d: Gute Besserung, Guten Appetit, Herzlichen Glückwunsch
 Für die neue Stelle wünsche ich dir [viel Erfolg]. | برای کار جدیدت آرزوی موفقیت دارم. | d: gute Besserung, guten Appetit, herzlichen Glückwunsch
-Morgen ist dein Test? [Viel Erfolg]! | فردا آزمون داری؟ موفق باشی! | d: Gute Besserung, Guten Appetit, Herzlichen Glückwunsch
+Morgen ist dein Test? [Viel Erfolg]! | فردا آزمون داری؟ موفق باشی! | d: Gute Besserung, Guten Appetit, Herzlichen Glückwunsch | ok: Viel Glück
 [Viel Erfolg] mit deinem Projekt! | در پروژه‌ات موفق باشی! | d: Gute Besserung, Guten Appetit, Herzlichen Glückwunsch
 Tschüss, und [viel Erfolg] in Berlin! | خداحافظ، در برلین موفق باشی! | d: gute Besserung, guten Appetit, herzlichen Glückwunsch
 Wir wünschen Ihnen [viel Erfolg] bei der Arbeit. | برایتان در کار آرزوی موفقیت داریم. | d: gute Besserung, guten Appetit, herzlichen Glückwunsch
@@ -506,7 +506,7 @@ Er studiert [Geschichte] an der Uni. | او در دانشگاه تاریخ می�
 # Note
 Ich habe in Mathematik eine gute [Note] bekommen. | در ریاضی نمرهٔ خوبی گرفتم.
 Die [Noten] gehen in Deutschland von eins bis sechs. | نمره‌ها در آلمان از یک تا شش است.
-Was für eine [Note] hast du im Test? | در آزمون چه نمره‌ای گرفتی؟
+Was für eine [Note] hast du im Test bekommen? | در آزمون چه نمره‌ای گرفتی؟
 Für eine gute [Note] muss man viel lernen. | برای نمرهٔ خوب باید زیاد درس خواند.
 Die Lehrerin gibt uns morgen die [Noten]. | معلم فردا نمره‌ها را به ما می‌دهد.
 Warum ist deine [Note] so schlecht? | چرا نمره‌ات این‌قدر بد است؟

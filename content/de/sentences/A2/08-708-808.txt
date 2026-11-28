@@ -117,7 +117,7 @@ Meine Tante arbeitet als [Zahnärztin]. | خاله‌ام دندان‌پزشک 
 Die [Zahnärztin] schaut mir in den Mund. | خانم دندان‌پزشک دهانم را نگاه می‌کند.
 Unsere [Zahnärztin] hat heute keine Zeit. | خانم دندان‌پزشکمان امروز وقت ندارد.
 Meine Tochter möchte später [Zahnärztin] werden. | دخترم می‌خواهد بعداً دندان‌پزشک شود. | d: Lehrerin, Köchin, Polizistin
-Ich rufe die [Zahnärztin] an und mache einen Termin. | به خانم دندان‌پزشک زنگ می‌زنم و وقت می‌گیرم. | d: Tablette, Grippe, Erkältung
+Ich rufe die [Zahnärztin] an und mache einen Termin. | به خانم دندان‌پزشک زنگ می‌زنم و وقت می‌گیرم. | d: Kellnerin, Köchin, Polizistin
 # Praxis
 Am Montag ist die [Praxis] geschlossen. | مطب دوشنبه‌ها تعطیل است.
 Die [Praxis] von meiner Ärztin ist im Zentrum. | مطب دکترم در مرکز شهر است.
@@ -150,7 +150,7 @@ Der Arzt hat mir ein [Rezept] geschrieben. | دکتر برایم نسخه نوش
 Dieses [Medikament] hilft gegen Fieber. | این دارو برای تب خوب است.
 Wie oft muss ich das [Medikament] nehmen? | این دارو را هر چند وقت یک بار باید بخورم؟
 Die [Medikamente] gibt es in der Apotheke. | داروها را از داروخانه می‌شود گرفت.
-Opa nimmt jeden Morgen seine [Medikamente]. | پدربزرگ هر روز صبح داروهایش را می‌خورد.
+Opa nimmt jeden Morgen seine [Medikamente]. | پدربزرگ هر روز صبح داروهایش را می‌خورد. | ok: Tabletten
 Kinder dürfen keine [Medikamente] allein nehmen. | بچه‌ها نباید خودشان تنهایی دارو بخورند.
 Haben Sie eine Allergie gegen ein [Medikament]? | به دارویی حساسیت دارید؟
 # eine Tablette nehmen
@@ -677,7 +677,7 @@ Ich will ab Montag wieder [Sport treiben]. | می‌خواهم از دوشنبه
 Es ist schön, wenn wir zusammen [Sport treiben]. | خیلی خوب است وقتی با هم ورزش می‌کنیم. | d: Musik hören, Karten spielen, Fotos machen
 Auch alte Menschen sollen [Sport treiben]. | آدم‌های مسن هم باید ورزش کنند. | d: Musik hören, Karten spielen, Fotos machen
 Wo können wir hier [Sport treiben]? | این‌جا کجا می‌توانیم ورزش کنیم؟ | d: Musik hören, Karten spielen, Fotos machen
-Im Sommer kann man draußen [Sport treiben]. | تابستان می‌شود بیرون ورزش کرد. | d: Musik hören, Karten spielen, Fotos machen
+Im Sommer kann man draußen [Sport treiben]. | تابستان می‌شود بیرون ورزش کرد. | d: Musik hören, Karten spielen, Fotos machen | ok: Sport machen
 # joggen
 Ich [jogge] jeden Morgen im Park. | هر روز صبح در پارک می‌دوم.
 Gehst du mit mir [joggen]? | با من می‌آیی بدویم؟

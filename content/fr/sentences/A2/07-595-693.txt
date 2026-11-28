@@ -10,7 +10,7 @@ Tu as eu une bonne note dans quelle [matière] ? | در کدام درس نمره
 Mon frère est très fort en [mathématiques]. | برادرم در ریاضی خیلی قوی است.
 J'ai un examen de [mathématiques] demain. | فردا امتحان ریاضی دارم.
 Les [mathématiques], c'est ma matière préférée. | ریاضی درس مورد علاقهٔ من است.
-Le professeur de [mathématiques] explique très bien. | معلم ریاضی خیلی خوب توضیح می‌دهد.
+Le professeur de [mathématiques] explique très bien. | معلم ریاضی خیلی خوب توضیح می‌دهد. | ok: maths
 Elle n'aime pas beaucoup les [mathématiques]. | او ریاضی را چندان دوست ندارد.
 Nous avons cours de [mathématiques] le lundi. | دوشنبه‌ها کلاس ریاضی داریم.
 # histoire-2
@@ -102,15 +102,15 @@ Tous les élèves sont [présents] aujourd'hui. | امروز همهٔ دانش�
 Le directeur est [présent] à la réunion. | مدیر در جلسه حاضر است.
 Marie n'est pas [présente] ce matin. | ماری امروز صبح حاضر نیست.
 Toute la famille était [présente] pour l'anniversaire de grand-mère. | همهٔ خانواده برای تولد مادربزرگ حاضر بودند.
-Je serai [présent] à la fête de samedi. | شنبه در جشن حاضر می‌شوم.
+Je serai [présent] à la fête de samedi. | شنبه در جشن حاضر خواهم بود. | ok: présente
 Les deux parents doivent être [présents]. | پدر و مادر هر دو باید حاضر باشند.
 # absent
 Paul est [absent] aujourd'hui, il est malade. | پل امروز غایب است، مریض است.
 Elle était [absente] hier. | او دیروز غایب بود.
 Combien d'élèves sont [absents] ce matin ? | امروز صبح چند دانش‌آموز غایب‌اند؟
 Le directeur est [absent] cette semaine. | مدیر این هفته سر کار نیست.
-Je serai [absent] lundi, j'ai rendez-vous chez le médecin. | دوشنبه نیستم، وقت دکتر دارم.
-Pourquoi est-ce que tu étais [absent] mardi ? | چرا سه‌شنبه غایب بودی؟
+Je serai [absent] lundi, j'ai rendez-vous chez le médecin. | دوشنبه نیستم، وقت دکتر دارم. | ok: absente
+Pourquoi est-ce que tu étais [absent] mardi ? | چرا سه‌شنبه غایب بودی؟ | ok: absente
 # faute
 Il y a trois [fautes] dans ta phrase. | جمله‌ات سه غلط دارد. | ok: erreurs
 C'est ma [faute], je suis désolé. | تقصیر من است، متأسفم.
@@ -156,7 +156,7 @@ Je fais une heure de [lecture] chaque soir. | هر شب یک ساعت مطالع
 # sujet
 Quel est le [sujet] du{du-contr} film ? | موضوع فیلم چیست؟
 On change de [sujet] ? | موضوع را عوض کنیم؟
-L'argent est un [sujet] difficile en famille. | پول در خانواده موضوع سختی است.
+L'argent est un [sujet] difficile en famille. | پول در خانواده موضوع سختی است. | d: monde, type, secret
 Le [sujet] de l'examen était facile. | موضوع امتحان آسان بود.
 Nous avons parlé de beaucoup de [sujets]. | دربارهٔ موضوع‌های زیادی حرف زدیم.
 Il écrit un livre sur un [sujet] intéressant. | او دربارهٔ موضوع جالبی کتاب می‌نویسد.
@@ -469,11 +469,11 @@ Elle a eu le [courage] de parler devant toute la classe. | او جرئت کرد 
 Son [courage] est un exemple pour nous. | شجاعت او برای ما سرمشق است. | d: sommeil, retard, poids
 Avec du [courage], tout est possible. | با شجاعت، همه‌چیز ممکن است. | d: sommeil, retard, poids
 # bon courage
-Tu as un examen demain ? [Bon courage] ! | فردا امتحان داری؟ موفق باشی!
-[Bon courage] pour ton premier jour de travail ! | برای اولین روز کارت موفق باشی!
+Tu as un examen demain ? [Bon courage] ! | فردا امتحان داری؟ موفق باشی! | ok: Bonne chance
+[Bon courage] pour ton premier jour de travail ! | برای اولین روز کارت موفق باشی! | ok: Bonne chance
 Tu as encore beaucoup de travail ? [Bon courage] ! | هنوز کلی کار داری؟ خسته نباشی!
-Merci, et [bon courage] à toi aussi ! | ممنون، تو هم موفق باشی!
-Je dis [bon courage] à mon fils avant l'examen. | قبل از امتحان به پسرم می‌گویم موفق باشی.
+Merci, et [bon courage] à toi aussi ! | ممنون، تو هم موفق باشی! | ok: bonne chance
+Je dis [bon courage] à mon fils avant l'examen. | قبل از امتحان به پسرم می‌گویم موفق باشی. | ok: bonne chance
 [Bon courage] avec les enfants ce soir ! | امشب با بچه‌ها خسته نباشی!
 # culture
 J'aime la [culture] française. | فرهنگ فرانسه را دوست دارم.
@@ -565,7 +565,7 @@ Toutes les [informations] sont sur le site. | همهٔ اطلاعات روی س�
 Merci pour l'[information] ! | ممنون بابت اطلاعات!
 Je cherche des [informations] sur cette université. | دنبال اطلاعاتی دربارهٔ این دانشگاه می‌گردم.
 Cette [information] est fausse. | این اطلاعات غلط است.
-Le soir, mon père regarde les [informations] à la télévision. | پدرم شب‌ها اخبار تلویزیون را تماشا می‌کند.
+Le soir, mon père regarde les [informations] à la télévision. | پدرم شب‌ها اخبار تلویزیون را تماشا می‌کند. | ok: infos
 # nouvelle
 J'ai une bonne [nouvelle] pour toi ! | یک خبر خوب برایت دارم!
 C'est une mauvaise [nouvelle]. | این خبر بدی است. | d: télévision, publicité, radio
@@ -575,7 +575,7 @@ Je n'ai pas de [nouvelles]{nouvelle} de Sophie depuis un mois. | یک ماه ا�
 Les enfants étaient contents de la [nouvelle]. | بچه‌ها از این خبر خوشحال بودند.
 # article
 J'ai lu un [article] intéressant dans le journal. | در روزنامه یک مقالهٔ جالب خواندم.
-Cet [article] parle de la santé des{des-contr} enfants. | این مقاله دربارهٔ سلامت بچه‌هاست.
+Cet [article] parle de la santé des{des-contr} enfants. | این مقاله دربارهٔ سلامت بچه‌هاست. | d: écran, ordinateur, appareil photo
 Elle écrit des [articles] pour un magazine. | او برای یک مجله مقاله می‌نویسد.
 Le journaliste a écrit un [article] sur notre école. | روزنامه‌نگار دربارهٔ مدرسهٔ ما مقاله‌ای نوشت.
 Tu as lu l'[article] sur le sport ? | مقالهٔ مربوط به ورزش را خوانده‌ای؟
@@ -602,10 +602,10 @@ Combien coûte un [timbre] pour l'Iran ? | یک تمبر برای ایران چ�
 Il n'y a pas de [timbre] sur l'enveloppe. | روی پاکت تمبر نیست.
 Ce [timbre] est très ancien et très cher. | این تمبر خیلی قدیمی و خیلی گران است.
 # colis
-J'ai reçu un [colis] ce matin. | امروز صبح یک بستهٔ پستی گرفتم.
+J'ai reçu un [colis] ce matin. | امروز صبح یک بستهٔ پستی گرفتم. | ok: paquet
 Le facteur apporte un [colis] pour toi. | پستچی یک بسته برای تو می‌آورد.
 Ce [colis] est très lourd. | این بسته خیلی سنگین است.
-J'envoie un [colis] à ma famille en Iran. | یک بسته برای خانواده‌ام در ایران می‌فرستم.
+J'envoie un [colis] à ma famille en Iran. | یک بسته برای خانواده‌ام در ایران می‌فرستم. | ok: paquet
 Le [colis] n'est pas encore arrivé. | بسته هنوز نرسیده است.
 Il y a trois [colis] devant la porte. | سه بسته جلوی در است. | d: journaux, magazines, timbres
 # courrier
@@ -655,7 +655,7 @@ Je [vais chercher] les enfants à l'école. | می‌روم مدرسه دنبا�
 Tu peux [aller chercher] du pain ? | می‌توانی بروی نان بگیری؟
 Mon père [va chercher] ma grand-mère à la gare. | پدرم به ایستگاه می‌رود دنبال مادربزرگم.
 Attends ici, je [vais chercher] la voiture. | اینجا صبر کن، می‌روم ماشین را بیاورم.
-Nous sommes [allés chercher] nos amis à l'aéroport. | به فرودگاه رفتیم دنبال دوستانمان.
+Nous sommes [allés chercher] nos amis à l'aéroport. | به فرودگاه رفتیم دنبال دوستانمان. | ok: allées chercher
 Elle [va chercher] de l'eau à la cuisine. | او می‌رود از آشپزخانه آب بیاورد.
 # aller mieux
 Merci, je [vais mieux] aujourd'hui. | ممنون، امروز حالم بهتر است.

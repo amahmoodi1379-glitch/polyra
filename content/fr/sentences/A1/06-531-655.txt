@@ -49,15 +49,15 @@ Cet [oiseau] est très beau. | این پرنده خیلی زیباست.
 # cheval
 Mon oncle a deux [chevaux]. | عمویم دو اسب دارد.
 Ma fille aime les [chevaux]. | دخترم اسب‌ها را دوست دارد.
-Ce [cheval] est très beau. | این اسب خیلی زیباست. | d: chien, chat, oiseau
-À la campagne, il y a beaucoup de [chevaux]. | در روستا اسب زیادی هست. | d: chiens, chats, oiseaux
-Le [cheval] boit l'eau du{du-contr} lac. | اسب از آب دریاچه می‌خورد. | d: chien, chat, oiseau
+Ce [cheval] est très beau. | این اسب خیلی زیباست. | d: chien, chat, poisson
+À la campagne, il y a beaucoup de [chevaux]. | در روستا اسب زیادی هست. | d: chiens, chats, poissons
+Le [cheval] boit l'eau du{du-contr} lac. | اسب از آب دریاچه می‌خورد. | d: chien, chat, poisson
 # vache
 Les [vaches] donnent du lait. | گاوها شیر می‌دهند. | d: chevaux, chats, oiseaux
 Mon grand-père a dix [vaches]. | پدربزرگم ده گاو دارد. | d: chevaux, chiens, chats
 J'aime le lait de [vache]. | شیر گاو را دوست دارم. | d: chat, chien, cheval
 Les enfants regardent les [vaches]. | بچه‌ها گاوها را تماشا می‌کنند. | d: chevaux, oiseaux, chats
-Dans ce village, il y a beaucoup de [vaches]. | در این روستا گاو زیادی هست. | d: chevaux, chiens, oiseaux
+Dans ce village, il y a beaucoup de [vaches]. | در این روستا گاو زیادی هست. | d: chevaux, chiens, poissons
 # couleur
 Tu aimes quelle [couleur] ? | چه رنگی را دوست داری؟ | d: ville, langue, saison
 De quelle [couleur] est ta voiture ? | ماشینت چه رنگی است؟ | d: ville, année, rue
@@ -299,7 +299,7 @@ Mes parents [marchent] le soir dans le parc. | پدر و مادرم عصرها �
 J'aime [marcher] sous la pluie. | دوست دارم زیر باران راه بروم. | d: courir, danser, chanter
 Hier, nous avons [marché] deux heures. | دیروز دو ساعت راه رفتیم.
 # téléphone
-Où est le [téléphone] ? | تلفن کجاست؟ | d: journal, message, ordinateur
+Où est le [téléphone] ? | تلفن کجاست؟ | d: journal, message, stylo
 Elle parle au [téléphone] avec sa mère. | با مادرش تلفنی حرف می‌زند.
 Quel est ton numéro de [téléphone] ? | شماره‌ی تلفنت چیست؟ | d: chambre, passeport, bus
 Il y a un [téléphone] dans la chambre. | در اتاق یک تلفن هست. | d: ordinateur, lit, journal
@@ -338,7 +338,7 @@ On peut lire le menu sur [internet]. | می‌شود منو را در اینتر
 # lettre
 J'écris une [lettre] à ma grand-mère. | برای مادربزرگم نامه می‌نویسم. | d: chanson, histoire, carte
 Il y a une [lettre] pour toi. | یک نامه برای تو هست. | d: photo, carte, chambre
-Ma mère lit la [lettre]. | مادرم نامه را می‌خواند. | d: carte, histoire, télévision
+Ma mère lit la [lettre]. | مادرم نامه را می‌خواند. | d: carte, radio, télévision
 Je vais à la poste pour envoyer une [lettre]. | برای فرستادن یک نامه به پست می‌روم. | d: valise, photo, carte
 Mon grand-père a beaucoup de vieilles [lettres]. | پدربزرگم نامه‌های قدیمی زیادی دارد.
 # journal
@@ -390,7 +390,7 @@ Il travaille comme [ingénieur] à Lyon. | در لیون مهندس است. | d:
 Les [ingénieurs] travaillent dans ce bureau. | مهندس‌ها در این دفتر کار می‌کنند. | d: professeurs, médecins, étudiants
 Mon cousin est un très bon [ingénieur]. | پسرخاله‌ام مهندس خیلی خوبی است. | d: professeur, médecin, élève
 # vendeur
-Le [vendeur] est très jeune. | فروشنده خیلی جوان است. | d: professeur, médecin, ingénieur
+Le [vendeur] est très jeune. | فروشنده خیلی جوان است. | d: professeur, médecin, serveur
 Je demande le prix au [vendeur]. | قیمت را از فروشنده می‌پرسم. | d: professeur, médecin, touriste
 Il est [vendeur] dans un magasin de chaussures. | در یک کفش‌فروشی فروشنده است. | d: professeur, ingénieur, médecin
 Les [vendeurs] du{du-contr} marché arrivent tôt. | فروشنده‌های بازار زود می‌آیند. | d: professeurs, médecins, ingénieurs

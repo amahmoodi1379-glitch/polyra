@@ -357,8 +357,8 @@ Les [fermiers] vendent leurs légumes au marché. | کشاورزها سبزیج�
 La [fermière] nous donne du lait frais. | زن کشاورز به ما شیر تازه می‌دهد. | d: vendeuse, chanteuse, policière
 Nous connaissons un [fermier] qui vend du miel. | کشاورزی را می‌شناسیم که عسل می‌فروشد.
 # capitale
-Paris est la [capitale] de la France. | پاریس پایتخت فرانسه است. | d: banlieue, mairie, avenue
-Quelle est la [capitale] du{du-contr} Canada ? | پایتخت کانادا کجاست؟ | d: banlieue, mairie, avenue
+Paris est la [capitale] de la France. | پاریس پایتخت فرانسه است. | d: banlieue, mairie, rue
+Quelle est la [capitale] du{du-contr} Canada ? | پایتخت کانادا کجاست؟ | d: banlieue, mairie, rue
 J'habite dans la [capitale] depuis cinq ans. | پنج سال است در پایتخت زندگی می‌کنم. | d: mairie, poste, queue
 La vie est chère dans la [capitale]. | زندگی در پایتخت گران است. | d: mairie, poste, queue
 Rome est une [capitale] très ancienne. | رم پایتختی بسیار کهن است. | d: avenue, mairie, queue
@@ -454,7 +454,7 @@ J'ai perdu ma [carte de crédit] ! | کارت اعتباری‌ام را گم ک
 Ce magasin n'accepte pas les [cartes de crédit]. | این فروشگاه کارت اعتباری قبول نمی‌کند. | d: boucheries, boutiques, pâtisseries
 On peut réserver l'hôtel avec une [carte de crédit]. | می‌شود هتل را با کارت اعتباری رزرو کرد. | d: pâtisserie, boutique, librairie
 Ma [carte de crédit] est dans mon sac. | کارت اعتباری‌ام توی کیفم است.
-Mon père ne paie jamais avec sa [carte de crédit]. | پدرم هیچ‌وقت با کارت اعتباری‌اش پول نمی‌دهد. | d: épicerie, boutique, librairie
+Mon père ne paie jamais avec sa [carte de crédit]. | پدرم هیچ‌وقت با کارت اعتباری‌اش پول نمی‌دهد. | d: pharmacie, boutique, librairie
 # caisse
 Payez à la [caisse], s'il vous plaît. | لطفاً دم صندوق پرداخت کنید.
 Il y a une longue queue à la [caisse]. | دم صندوق صف درازی هست. | d: carte de crédit, pièce, monnaie
@@ -575,7 +575,7 @@ Nous [empruntons] de l'argent à la banque pour la maison. | برای خانه �
 Tu [empruntes] toujours mes vêtements ! | همیشه لباس‌هایم را قرض می‌گیری!
 Ils ont [emprunté] un vélo à leur voisin. | آن‌ها از همسایه‌شان یک دوچرخه قرض گرفتند.
 # prêter
-Tu peux me [prêter] ton stylo ? | می‌توانی خودکارت را به من قرض بدهی؟ | d: dépenser, coûter, habiter
+Tu peux me [prêter] ton stylo ? | می‌توانی خودکارت را به من قرض بدهی؟ | d: dépenser, coûter, laver
 Je [prête] souvent mes livres à mes amis. | اغلب کتاب‌هایم را به دوستانم قرض می‌دهم.
 Mon voisin m'a [prêté] sa voiture. | همسایه‌ام ماشینش را به من قرض داد.
 La banque ne [prête] pas d'argent aux étudiants. | بانک به دانشجوها وام نمی‌دهد.

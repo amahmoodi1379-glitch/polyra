@@ -1,6 +1,6 @@
-import { plausibleForm } from "@/engine/tokens";
+import { fold, plausibleForm } from "@/engine/tokens";
 import type { Analyzer, MappedToken, Token } from "./analyze";
-import { autoDistractors } from "./distractors";
+import { autoDistractors, fitsAfter } from "./distractors";
 import type { PackWord } from "./words";
 import type { TimingLine } from "./timing";
 
@@ -121,7 +121,8 @@ export function buildSentences(analyzer: Analyzer, files: { file: string; text: 
         used: new Set(analysis.tokens.map((token) => token.word).filter((word): word is PackWord => word !== null)),
         before: before && analysis.text.slice(before.end, gap.start).trim() === "" ? before.surface : null,
         after: after && analysis.text.slice(gap.end, after.start).trim() === "" ? after.surface : null,
-        first: gap.start === 0 || (opensSentence(analysis.text.slice(0, gap.start)) && /^\p{Lu}/u.test(surface)),
+        // After a colon too: «Auf der Karte steht: [Frohe Weihnachten]!» takes capitalised options.
+        first: gap.start === 0 || ((opensSentence(analysis.text.slice(0, gap.start)) || /:\s*$/u.test(analysis.text.slice(0, gap.start))) && /^\p{Lu}/u.test(surface)),
         knownBefore: (word) => analyzer.knownBefore(word, { level, target: target!, firstWords }),
         level,
       });
@@ -136,6 +137,13 @@ export function buildSentences(analyzer: Analyzer, files: { file: string; text: 
       }
       if (distractors.length !== 3) {
         out.errors.push({ ...at, text: "d: needs exactly three wrong options" });
+        continue;
+      }
+      // A written option the word before the gap rules out by its form (ma actrice, le ouest) gives the answer away.
+      const beforeWord = before && analysis.text.slice(before.end, gap.start).trim() === "" ? fold(before.surface) : null;
+      const byForm = given.filter((item) => !fitsAfter(analyzer.language, beforeWord, item, target!.word));
+      if (byForm.length > 0) {
+        out.errors.push({ ...at, text: `the wrong option «${byForm.join("», «")}» cannot follow «${beforeWord}», so its form gives the answer away: write another` });
         continue;
       }
       const okAnswers = new Set([surface, ...list(cell(more, "ok"))].map((item) => item.toLowerCase()));

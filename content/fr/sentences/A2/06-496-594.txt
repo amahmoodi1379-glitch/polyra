@@ -78,7 +78,7 @@ Mon père [gare]{garer} toujours la voiture dans le garage. | پدرم همیش�
 Au centre-ville, c'est difficile de se [garer]. | در مرکز شهر پارک کردن سخت است.
 Les voisins [garent] leurs voitures dans la rue. | همسایه‌ها ماشین‌هایشان را توی خیابان پارک می‌کنند.
 # camion
-Un gros [camion] est devant la maison. | یک کامیون بزرگ جلوی خانه است.
+Il y a un gros [camion] devant la maison. | جلوی خانه یک کامیون بزرگ هست.
 Mon oncle conduit un [camion]. | عمویم کامیون می‌راند.
 Les [camions] ne peuvent pas passer sur ce pont. | کامیون‌ها نمی‌توانند از روی این پل رد شوند.
 Pour déménager, nous avons loué un [camion]. | برای اسباب‌کشی یک کامیون اجاره کردیم.
@@ -128,7 +128,7 @@ Après l'[accident], la police est arrivée. | بعد از تصادف پلیس �
 Je suis en retard à cause d'un [accident]. | به خاطر یک تصادف دیر کرده‌ام.
 Pardon, c'était un [accident] : je n'ai pas vu ton verre. | ببخشید، اتفاقی بود: لیوانت را ندیدم.
 # panne
-La voiture est en [panne]. | ماشین خراب است.
+La voiture est en [panne]. | ماشین خراب است. | d: moto, valise, frontière
 L'ascenseur est encore en [panne] ! | آسانسور باز هم خراب است!
 Ma machine à laver est en [panne] depuis lundi. | ماشین لباس‌شویی‌ام از دوشنبه خراب است.
 Nous avons eu une [panne] sur l'autoroute. | در اتوبان ماشینمان خراب شد.
@@ -145,7 +145,7 @@ Ma vieille moto [tombe en panne] chaque hiver. | موتور قدیمی‌ام ه
 Il y a trois [passagers] dans la voiture. | سه سرنشین در ماشین هستند.
 Les [passagers] montent dans l'avion. | مسافران سوار هواپیما می‌شوند.
 Le bus peut prendre cinquante [passagers]. | اتوبوس جای پنجاه مسافر دارد.
-Aujourd'hui, je ne conduis pas, je suis [passager]. | امروز رانندگی نمی‌کنم، سرنشینم.
+Aujourd'hui, je ne conduis pas, je suis [passager]. | امروز رانندگی نمی‌کنم، سرنشینم. | ok: passagère
 Une [passagère] a perdu son sac dans le train. | یک خانم مسافر کیفش را در قطار گم کرد. | d: infirmière, chanteuse, actrice
 Les [passagers] doivent montrer leur passeport. | مسافران باید گذرنامه‌شان را نشان بدهند.
 # station
@@ -178,7 +178,7 @@ Mon travail a des [horaires] difficiles. | کار من ساعت‌های سخت�
 Regarde l'[horaire] sur le mur de la gare. | به جدول ساعت حرکت روی دیوار ایستگاه نگاه کن.
 # pilote
 Mon oncle est [pilote] depuis vingt ans. | عمویم بیست سال است که خلبان است.
-Le [pilote] parle aux passagers. | خلبان با مسافران حرف می‌زند.
+Le [pilote] parle aux passagers. | خلبان با مسافران حرف می‌زند. | d: bateau, camion, train
 Quand j'étais petit, je voulais être [pilote]. | وقتی بچه بودم، می‌خواستم خلبان بشوم.
 Ma cousine est la première femme [pilote] de la famille. | دخترخاله‌ام اولین خلبان زن خانواده است.
 Les [pilotes] travaillent souvent la nuit. | خلبان‌ها اغلب شب‌ها کار می‌کنند.
@@ -205,7 +205,7 @@ Il ne faut jamais [voler]{voler-2}. | هیچ‌وقت نباید دزدی کرد
 Ils ont [volé]{voler-2} la voiture de mon voisin. | ماشین همسایه‌ام را دزدیدند.
 Le chat a [volé]{voler-2} le poisson sur la table ! | گربه ماهیِ روی میز را دزدید!
 # voyageur
-Les [voyageurs] pour Lyon montent dans le train. | مسافران لیون سوار قطار می‌شوند. | ok: passagers
+Les [voyageurs] pour Lyon montent dans le train. | مسافران مقصد لیون سوار قطار می‌شوند. | ok: passagers
 La gare est pleine de [voyageurs]. | ایستگاه پر از مسافر است.
 Mon grand-père est un grand [voyageur] : il a visité trente pays. | پدربزرگم خیلی اهل سفر است: سی کشور را دیده است.
 Cet hôtel est plein de [voyageurs] étrangers. | این هتل پر از مسافران خارجی است.
@@ -275,7 +275,7 @@ Elle attend son [visa] depuis deux mois. | دو ماه است که منتظر و
 Pour la Turquie, on n'a pas besoin de [visa]. | برای ترکیه ویزا لازم نیست. | d: départ, quai, retour
 Combien coûte un [visa] pour le Japon ? | ویزای ژاپن چقدر هزینه دارد؟ | d: départ, quai, horaire
 # frontière
-La [frontière] est à vingt kilomètres. | مرز بیست کیلومتر آن‌طرف‌تر است.
+La [frontière] est à vingt kilomètres. | مرز بیست کیلومتر آن‌طرف‌تر است. | d: réservation, valise, vitesse
 Nous avons passé la [frontière] la nuit. | شب از مرز رد شدیم.
 Ma ville est près de la [frontière] avec la Turquie. | شهر من نزدیک مرز ترکیه است.
 À la [frontière], la police regarde les passeports. | سر مرز پلیس گذرنامه‌ها را نگاه می‌کند.
@@ -347,10 +347,10 @@ On va [faire une randonnée] demain matin. | فردا صبح می‌رویم ک�
 # chemin
 C'est le bon [chemin] pour aller à la gare ? | این راه درستِ رفتن به ایستگاه قطار است؟ | d: nord, sud, ouest
 Je connais un [chemin] plus court. | یک راه کوتاه‌تر بلدم.
-Sur le [chemin] de l'école, j'achète du pain. | سر راه مدرسه نان می‌خرم. | d: sud, nord, ouest
+Sur le [chemin] de l'école, j'achète du pain. | سر راه مدرسه نان می‌خرم. | d: sud, nord, bout
 On a perdu notre [chemin] dans la forêt. | در جنگل راهمان را گم کردیم.
 Ce [chemin] va jusqu'à la plage. | این راه تا ساحل می‌رود. | d: coin, sud, nord
-Tu peux me montrer le [chemin] ? | می‌توانی راه را به من نشان بدهی؟ | d: coin, ouest, côté
+Tu peux me montrer le [chemin] ? | می‌توانی راه را به من نشان بدهی؟ | d: coin, côté, sud
 # demander son chemin
 Le touriste [demande son chemin] à un policier. | توریست از یک پلیس راه را می‌پرسد.
 Elle a [demandé son chemin] à une vieille dame. | او از یک خانم مسن راه را پرسید.
@@ -367,7 +367,7 @@ Le vent vient de quelle [direction] ? | باد از کدام سمت می‌آی�
 Pour la plage, c'est dans cette [direction]. | ساحل از این طرف است.
 # endroit
 C'est un [endroit] très calme. | جای خیلی آرامی است. | d: sud, nord, ouest
-Je connais un bon [endroit] pour manger. | یک جای خوب برای غذا خوردن بلدم.
+Je connais un bon [endroit] pour manger. | یک جای خوب برای غذا خوردن بلدم. | ok: lieu
 Mets toujours les clés au même{même-adj} [endroit]. | کلیدها را همیشه همان‌جا بگذار.
 Ispahan a beaucoup de beaux [endroits] à visiter. | اصفهان جاهای دیدنی قشنگ زیادی دارد. | d: côtés, chemins, couloirs
 Ce parc est mon [endroit] préféré{préféré}. | این پارک جای مورد علاقهٔ من است. | d: côté, nord, chemin
@@ -385,7 +385,7 @@ Il s'est réveillé au [milieu] de la nuit. | نصف شب بیدار شد.
 Ne reste pas au [milieu] de la rue ! | وسط خیابان نایست!
 Au [milieu] du{du-contr} film, mon téléphone a sonné. | وسط فیلم تلفنم زنگ زد. | d: coin, sud, ouest
 Le [milieu] du{du-contr} gâteau n'est pas cuit. | وسط کیک نپخته است. | d: lieu, nord, sud
-Il y a un grand arbre au [milieu] du{du-contr} jardin. | وسط باغ یک درخت بزرگ هست. | d: lieu, chemin, couloir
+Il y a un grand arbre au [milieu] du{du-contr} jardin. | وسط باغ یک درخت بزرگ هست. | d: toit, chemin, couloir
 # bout
 La boulangerie est au [bout] de la rue. | نانوایی ته خیابان است.
 Il y a un café à l'autre [bout] de la place. | آن سر میدان یک کافه هست.
@@ -445,8 +445,8 @@ Je cherche du travail dans une [entreprise] française. | دنبال کار در
 # patron
 Mon [patron] est très sympathique. | صاحب‌کارم خیلی خوش‌برخورد است.
 Le [patron] du{du-contr} restaurant nous a offert le dessert. | صاحب رستوران دسر را مهمانمان کرد. | d: bureau, métier, salaire
-Je dois demander un jour libre à ma [patronne]. | باید از صاحب‌کارم یک روز مرخصی بخواهم. | d: infirmière, chanteuse, actrice
-La [patronne] de la boulangerie est très gentille. | صاحب نانوایی خیلی مهربان است. | d: infirmière, chanteuse, actrice
+Je dois demander un jour libre à ma [patronne]. | باید از صاحب‌کارم یک روز مرخصی بخواهم. | d: chanteuse, serveuse, coiffeuse
+La [patronne] de la boulangerie est très gentille. | صاحب نانوایی خیلی مهربان است. | d: chanteuse, policière, coiffeuse
 Le [patron] de l'hôtel parle trois langues. | صاحب هتل سه زبان حرف می‌زند.
 Le [patron] n'est pas content : nous sommes en retard. | صاحب‌کار راضی نیست: ما دیر کرده‌ایم.
 # chef
@@ -530,7 +530,7 @@ Mon cousin [fait un stage] dans une banque. | پسرعمویم در یک بان�
 Je suis en [congé] cette semaine. | این هفته مرخصی‌ام. | d: projet, salaire, chef
 J'ai pris trois jours de [congé]. | سه روز مرخصی گرفتم.
 Les [congés] d'été commencent en juillet. | مرخصی‌های تابستانی از ژوئیه شروع می‌شود.
-Le patron m'a donné un jour de [congé]. | صاحب‌کار یک روز مرخصی به من داد.
+Le patron m'a donné un jour de [congé]. | رئیسم یک روز مرخصی به من داد.
 Tu as combien de semaines de [congé] par an ? | سالی چند هفته مرخصی داری؟ | d: patron, chef, salaire
 Pendant son [congé], il est parti à la montagne. | در مرخصی‌اش به کوه رفت. | d: vendeur, ingénieur, salaire
 # chômage
@@ -551,7 +551,7 @@ Tu [es au chômage] depuis quand ? | از کی بیکاری؟
 Mon père part à la [retraite] l'année prochaine. | پدرم سال بعد بازنشسته می‌شود. | d: queue, valise, fenêtre
 Ma grand-mère a une petite [retraite]. | مادربزرگم حقوق بازنشستگی کمی دارد. | d: réunion, frontière, douane
 Depuis sa [retraite], mon grand-père voyage beaucoup. | پدربزرگم از وقتی بازنشسته شده زیاد سفر می‌کند.
-En France, on prend sa [retraite] à quel âge ? | در فرانسه آدم در چه سنی بازنشسته می‌شود؟
+En France, on prend sa [retraite] à quel âge ? | در فرانسه آدم در چه سنی بازنشسته می‌شود؟ | d: réunion, frontière, valise
 Elle a pris sa [retraite] après quarante ans de travail. | او بعد از چهل سال کار بازنشسته شد.
 Pour sa [retraite], ses collègues lui ont fait une fête. | همکارانش برای بازنشستگی‌اش جشن گرفتند.
 # être à la retraite
@@ -585,7 +585,7 @@ Le samedi, il y a beaucoup de monde chez le [coiffeur]. | شنبه‌ها آرا
 # boulanger
 Le [boulanger] se lève à quatre heures du{du-contr} matin. | نانوا ساعت چهار صبح بیدار می‌شود.
 Notre [boulanger] fait le meilleur pain du{du-contr} quartier. | نانوای ما بهترین نان محله را می‌پزد.
-La [boulangère] me donne toujours un croissant pour mon fils. | خانم نانوا همیشه یک کروسان برای پسرم به من می‌دهد. | d: infirmière, chanteuse, actrice
+La [boulangère] me donne toujours un croissant pour mon fils. | خانم نانوا همیشه یک کروسان برای پسرم به من می‌دهد. | d: chanteuse, policière, coiffeuse
 Mon grand-père était [boulanger] dans un village. | پدربزرگم در یک روستا نانوا بود.
 Les [boulangers] travaillent la nuit. | نانواها شب کار می‌کنند.
 J'achète ma baguette chez le [boulanger]. | باگتم را از نانوایی می‌خرم.
@@ -637,7 +637,7 @@ Les [musiciens] jouent dans le parc le dimanche. | نوازنده‌ها یکش�
 Ma cousine est une très bonne [musicienne]. | دخترخاله‌ام نوازندهٔ خیلی خوبی است. | d: infirmière, cuisinière, actrice
 Le [musicien] joue de la guitare et du{du-contr} piano. | نوازنده گیتار و پیانو می‌زند.
 Il y a quatre [musiciens] dans ce groupe. | این گروه چهار نوازنده دارد.
-Pour être [musicien], il faut travailler tous les jours. | برای نوازنده شدن باید هر روز تمرین کرد.
+Pour être [musicien], il faut travailler tous les jours. | برای نوازنده شدن باید هر روز تمرین کرد. | d: chanteur, acteur, serveur
 # photographe
 Le [photographe] a pris des photos de la fête. | عکاس از جشن عکس گرفت.
 Ma tante est [photographe] pour un journal. | خاله‌ام عکاس یک روزنامه است.

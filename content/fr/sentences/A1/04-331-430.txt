@@ -29,9 +29,9 @@ Il n'y a pas de [boisson] pour les enfants. | برای بچه‌ها نوشید�
 Le café est ma [boisson] du{du-contr} matin. | قهوه نوشیدنی صبح من است. | d: tasse, bouteille, glace
 # bouteille
 Une [bouteille] d'eau, s'il vous plaît. | یک بطری آب، لطفاً. | d: tasse, boisson, assiette
-La [bouteille] est sur la table. | بطری روی میز است. | d: tasse, assiette, boisson
+La [bouteille] est sur la table. | بطری روی میز است. | d: tasse, fourchette, boisson
 J'ai deux [bouteilles] de jus. | دو بطری آب‌میوه دارم.
-Où est la [bouteille] de lait ? | بطری شیر کجاست؟ | d: tasse, boisson, assiette
+Où est la [bouteille] de lait ? | بطری شیر کجاست؟ | d: tasse, boisson, fourchette
 Tu peux ouvrir la [bouteille] ? | می‌توانی بطری را باز کنی؟ | d: boisson, tasse, porte
 Cette [bouteille] est petite. | این بطری کوچک است.
 # verre
@@ -343,7 +343,7 @@ Les enfants ne prennent pas les [couteaux]. | بچه‌ها چاقوها را ب
 Ce [couteau] est très petit. | این چاقو خیلی کوچک است.
 # fourchette
 Je mange avec une [fourchette]. | با چنگال غذا می‌خورم. | d: cuillère, tasse, assiette
-Il n'y a pas de [fourchette] sur la table. | روی میز چنگال نیست. | d: cuillère, assiette, tasse
+Il n'y a pas de [fourchette] sur la table. | روی میز چنگال نیست. | d: cuillère, bouteille, tasse
 Tu peux me donner une [fourchette] ? | می‌توانی یک چنگال به من بدهی؟ | d: cuillère, assiette, tasse
 Mets les [fourchettes] et les couteaux sur la table. | چنگال‌ها و چاقوها را روی میز بگذار.
 Le bébé a une petite [fourchette]. | نوزاد یک چنگال کوچک دارد. | d: cuillère, tasse, assiette

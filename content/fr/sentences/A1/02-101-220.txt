@@ -348,10 +348,10 @@ Cette [personne] parle français. | این شخص فرانسوی حرف می‌�
 
 # gens
 Ici, les [gens] parlent français. | اینجا مردم فرانسوی حرف می‌زنند. | d: hommes, garçons, amis
-Il y a beaucoup de [gens] dans la rue. | توی خیابان آدم‌های زیادی هستند. | d: hommes, garçons, amis
+Il y a beaucoup de [gens] dans la rue. | توی خیابان آدم‌های زیادی هستند. | d: pères, garçons, frères
 Je connais ces [gens]. | من این آدم‌ها را می‌شناسم. | d: hommes, garçons, amis
 Les [gens] aiment cette ville. | مردم این شهر را دوست دارند. | d: hommes, garçons, amis
-Beaucoup de [gens] travaillent à Paris. | خیلی‌ها در پاریس کار می‌کنند. | d: hommes, garçons, amis
+Beaucoup de [gens] travaillent à Paris. | خیلی‌ها در پاریس کار می‌کنند. | d: pères, garçons, frères
 
 # vie
 C'est la [vie] ! | زندگی همین است!

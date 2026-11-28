@@ -68,7 +68,7 @@ La [femme] est petite. | آن زن قدکوتاه است.
 
 # enfant
 J'ai un [enfant]. | من یک بچه دارم.
-L'[enfant] est petit. | بچه کوچک است. | d: homme, ami, garçon
+L'[enfant] est petit. | بچه کوچک است. | d: homme, ami, hôtel
 Les [enfants] sont à la maison. | بچه‌ها در خانه هستند. | d: hommes, amis, garçons
 L'[enfant] parle bien. | بچه خوب حرف می‌زند. | d: homme, ami, oncle
 Vous avez des [enfants] ? | شما بچه دارید؟
@@ -237,7 +237,7 @@ Et les enfants, [ça va] ? | بچه‌ها چطورند؟ | d: c'est ça, il y a
 # il y a
 [Il y a] un homme ici. | اینجا یک مرد هست. | d: C'est ça, Ça va, Je voudrais
 [Il y a] 3 enfants à la maison. | سه بچه در خانه هستند. | d: C'est ça, Ça va, Je voudrais
-Qu'est-ce qu'[il y a] ? | چی شده؟ | d: c'est ça, ça va, je voudrais
+Qu'est-ce qu'[il y a] ? | چی شده؟ | d: à demain, au revoir, ici
 Ici, [il y a] une grande maison. | اینجا یک خانهٔ بزرگ هست. | d: c'est ça, ça va, je voudrais
 [Il y a] des enfants ici ? | اینجا بچه هست؟ | d: C'est ça, Ça va, Je voudrais
 

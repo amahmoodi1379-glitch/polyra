@@ -57,12 +57,12 @@ Die Tasche ist [leicht], das Kind kann sie tragen. | کیف سبک است، بچ
 Das neue Fahrrad ist [leichter] als mein altes. | دوچرخهٔ جدید از دوچرخهٔ قدیمی‌ام سبک‌تر است.
 Für den Ausflug nehme ich nur einen [leichten] Rucksack mit. | برای گردش فقط یک کوله‌پشتی سبک با خودم می‌برم.
 # prima
-Das Wetter ist heute [prima]. | هوا امروز عالی است. | d: schlecht, kalt, langweilig
+Das Wetter ist heute [prima]. | هوا امروز عالی است. | d: schlecht, kalt, langweilig | ok: super, toll
 Du hast die Prüfung bestanden? [Prima]! | امتحان را قبول شدی؟ عالیه!
 Das Essen im Restaurant war [prima]. | غذای رستوران معرکه بود.
 Wir haben uns im Urlaub [prima] verstanden. | در سفر خیلی خوب با هم جور بودیم.
 Morgen um acht? Das passt mir [prima]. | فردا ساعت هشت؟ برای من عالی است.
-Der neue Nachbar ist wirklich [prima]. | همسایهٔ جدید واقعاً آدم معرکه‌ای است.
+Der neue Nachbar ist wirklich [prima]. | همسایهٔ جدید واقعاً آدم معرکه‌ای است. | ok: super, toll
 # wunderbar
 Die Aussicht vom Berg ist [wunderbar]. | منظره از بالای کوه فوق‌العاده است.
 Wir hatten einen [wunderbaren] Urlaub am Meer. | ما یک تعطیلات فوق‌العاده کنار دریا داشتیم.
@@ -74,7 +74,7 @@ Nach der Prüfung hatte ich ein [wunderbares] Gefühl. | بعد از امتحا�
 Dein Deutsch ist fast [perfekt]. | آلمانی‌ات تقریباً بی‌نقص است.
 Das Wetter ist [perfekt] für ein Picknick. | هوا برای پیک‌نیک کاملاً مناسب است.
 Keine Sorge, niemand ist [perfekt]. | نگران نباش، هیچ‌کس بی‌نقص نیست.
-Die Wohnung ist [perfekt] für unsere Familie. | این آپارتمان برای خانوادهٔ ما ایده‌آل است. | d: still, schmutzig, laut
+Die Wohnung ist [perfekt] für unsere Familie. | این آپارتمان برای خانوادهٔ ما ایده‌آل است. | d: still, schmutzig, laut | ok: ideal
 Der Kuchen sieht [perfekt] aus. | کیک بی‌نقص به نظر می‌رسد.
 Meine Tante spricht [perfekt] Englisch. | خاله‌ام انگلیسی را بی‌نقص صحبت می‌کند.
 # schrecklich
@@ -82,7 +82,7 @@ Das Wetter ist heute [schrecklich]. | هوا امروز افتضاح است.
 Ich hatte eine [schreckliche] Nacht. | شب وحشتناکی داشتم.
 Der Unfall auf der Autobahn war [schrecklich]. | تصادف توی اتوبان وحشتناک بود.
 Der Film war so [schrecklich], dass wir nach einer Stunde gegangen sind. | فیلم آن‌قدر بد بود که بعد از یک ساعت رفتیم.
-Dein Fahrrad ist weg? Das ist [schrecklich]! | دوچرخه‌ات گم شده؟ وحشتناک است! | d: klein, bequem, lustig
+Dein Fahrrad ist weg? Das ist [schrecklich]! | دوچرخه‌ات گم شده؟ وحشتناک است! | d: klein, bequem, lustig | ok: furchtbar
 Der Lärm von der Straße ist [schrecklich]. | سروصدای خیابان وحشتناک است.
 # furchtbar
 Ich habe [furchtbare] Schmerzen im Rücken. | کمرم به‌طرز وحشتناکی درد می‌کند.
@@ -166,7 +166,7 @@ Das kostet jetzt [doppelt] so viel. | قیمتش الان دو برابر شده
 Ich habe das Buch [doppelt], willst du eins? | این کتاب را دو تا دارم، یکی می‌خواهی؟
 Mein Bruder ist [doppelt] so alt wie ich. | برادرم دو برابر من سن دارد. | d: halb, genau, fast
 Unsere neue Wohnung ist [doppelt] so groß wie die alte. | آپارتمان جدیدمان دو برابر آپارتمان قبلی بزرگ است. | d: halb, genau, fast
-Oh nein, ich habe die Rechnung [doppelt] bezahlt! | وای نه، صورت‌حساب را دو بار پرداخت کردم!
+Oh nein, ich habe die Rechnung [doppelt] bezahlt! | وای نه، صورت‌حساب را دو بار پرداخت کردم! | ok: zweimal
 Der Kuchen ist so lecker, ich nehme eine [doppelte] Portion. | کیک خیلی خوشمزه است، یک پرس دوبل برمی‌دارم. | d: halbe, kleine, kalte
 # Million
 In Berlin leben fast vier [Millionen] Menschen. | در برلین تقریباً چهار میلیون نفر زندگی می‌کنند.
@@ -412,7 +412,7 @@ Kannst du mir helfen? – [Na klar], gern. | می‌توانی کمکم کنی؟
 [Na klar] kenne ich ihn, er ist mein Nachbar. | معلومه که می‌شناسمش، همسایه‌ام است. | d: Gute Besserung, Guten Appetit, Gute Reise
 Hast du an das Geschenk gedacht? – [Na klar]! | یادت بود کادو را بیاوری؟ – معلومه! | d: Gute Besserung, Guten Appetit, Gute Reise
 Darf ich dein Fahrrad nehmen? – [Na klar], hier ist der Schlüssel. | می‌توانم دوچرخه‌ات را بردارم؟ – البته، این هم کلیدش. | d: Gute Besserung, Guten Appetit, Gute Reise
-Weißt du, wo der Bahnhof ist? – [Na klar], gleich hier links. | می‌دانی ایستگاه قطار کجاست؟ – معلومه، همین سمت چپ. | d: Gute Besserung, Guten Appetit, Gute Reise
+Weißt du, wo der Bahnhof ist? – [Na klar], gleich hier links. | می‌دانی ایستگاه قطار کجاست؟ – معلومه، همین سمت چپ. | d: Gute Besserung, Guten Appetit, Gute Reise | ok: Klar, Natürlich
 # gern geschehen
 Vielen Dank für die Blumen! – [Gern geschehen]. | خیلی ممنون بابت گل‌ها! – خواهش می‌کنم. | d: Gute Besserung, Herzlichen Glückwunsch, Gute Reise | ok: Bitte schön, Bitte
 Danke für das schöne Geschenk! – [Gern geschehen]! | ممنون بابت کادوی قشنگ! – قابلی نداشت! | d: Gute Besserung, Herzlichen Glückwunsch, Gute Reise | ok: Bitte schön, Bitte
@@ -436,14 +436,14 @@ Der Film ist schon vorbei? [Schade]! | فیلم تمام شد؟ حیف!
 Ich finde es [schade], dass wir uns so selten sehen. | به نظرم حیف است که این‌قدر کم همدیگر را می‌بینیم.
 # mach's gut
 Also dann, tschüss und [mach's gut]! | خب دیگر، خداحافظ و مواظب خودت باش! | d: herzlichen Glückwunsch, wie bitte, vielen Dank
-Ich muss jetzt gehen. [Mach's gut]! | باید بروم. مواظب خودت باش! | d: Herzlichen Glückwunsch, Wie bitte, Vielen Dank
+Ich muss jetzt gehen. [Mach's gut]! | باید بروم. مواظب خودت باش! | d: Herzlichen Glückwunsch, Wie bitte, Vielen Dank | ok: Machs gut
 [Mach's gut] und ruf mich an, wenn du ankommst! | مواظب خودت باش و وقتی رسیدی بهم زنگ بزن! | d: Herzlichen Glückwunsch, Wie bitte, Vielen Dank
 Gute Reise nach Wien, [mach's gut]! | سفر به وین به خیر، مواظب خودت باش! | d: herzlichen Glückwunsch, wie bitte, vielen Dank
 [Mach's gut], wir sehen uns nächste Woche! | مواظب خودت باش، هفتهٔ بعد می‌بینمت! | d: Herzlichen Glückwunsch, Wie bitte, Vielen Dank
 Bis bald, Max, und [mach's gut]! | به امید دیدار، ماکس، مواظب خودت باش! | d: herzlichen Glückwunsch, wie bitte, vielen Dank
 # bis später
 Ich gehe jetzt einkaufen. [Bis später]! | من می‌روم خرید. تا بعد! | ok: Bis bald | d: Guten Appetit, Herzlichen Glückwunsch, Gute Besserung
-[Bis später], ich rufe dich am Abend an. | تا بعد، عصر بهت زنگ می‌زنم. | d: Guten Appetit, Herzlichen Glückwunsch, Gute Besserung
+[Bis später], ich rufe dich am Abend an. | تا بعد، عصر بهت زنگ می‌زنم. | d: Guten Appetit, Herzlichen Glückwunsch, Gute Besserung | ok: Bis dann, Bis bald
 Wir sehen uns um sechs. [Bis später]! | ساعت شش همدیگر را می‌بینیم. تا بعد! | d: Guten Appetit, Herzlichen Glückwunsch, Gute Besserung
 Okay, dann [bis später] im Büro! | باشه، پس تا بعد توی دفتر! | d: guten Appetit, herzlichen Glückwunsch, gute Besserung
 Ich gehe jetzt zu Lena, [bis später]! | الان می‌روم پیش لنا، تا بعد! | ok: bis bald | d: guten Appetit, herzlichen Glückwunsch, gute Besserung
@@ -463,12 +463,12 @@ Wie funktioniert das? – [Keine Ahnung], ich habe das nie benutzt. | این چ�
 Mein Vater hat [keine Ahnung] von Computern. | پدرم هیچ سررشته‌ای از کامپیوتر ندارد.
 Was machen wir am Wochenende? – [Keine Ahnung], hast du eine Idee? | آخر هفته چه کار کنیم؟ – نمی‌دانم، تو فکری داری؟
 # frohe Weihnachten
-[Frohe Weihnachten] und schöne Feiertage! | کریسمس مبارک و تعطیلات خوبی داشته باشید!
-Wir wünschen euch [frohe Weihnachten]! | کریسمس را به شما تبریک می‌گوییم!
-Auf der Karte steht: [Frohe Weihnachten]! | روی کارت نوشته: کریسمس مبارک!
-[Frohe Weihnachten], Frau Weber! Hier ist ein kleines Geschenk. | کریسمس مبارک، خانم وبر! این یک هدیهٔ کوچک است.
-Ich schicke meinen Kollegen in Berlin eine E-Mail: [Frohe Weihnachten]! | برای همکارانم در برلین ایمیل می‌فرستم: کریسمس مبارک!
-Im Dezember sagt man in Deutschland oft: [Frohe Weihnachten]! | در آلمان در ماه دسامبر زیاد می‌گویند: کریسمس مبارک!
+[Frohe Weihnachten] und schöne Feiertage! | کریسمس مبارک و تعطیلات خوبی داشته باشید! | ok: Fröhliche Weihnachten
+Wir wünschen euch [frohe Weihnachten]! | کریسمس را به شما تبریک می‌گوییم! | ok: fröhliche Weihnachten
+Auf der Karte steht: [Frohe Weihnachten]! | روی کارت نوشته: کریسمس مبارک! | ok: Fröhliche Weihnachten
+[Frohe Weihnachten], Frau Weber! Hier ist ein kleines Geschenk. | کریسمس مبارک، خانم وبر! این یک هدیهٔ کوچک است. | ok: Fröhliche Weihnachten
+Ich schicke meinen Kollegen in Berlin eine E-Mail: [Frohe Weihnachten]! | برای همکارانم در برلین ایمیل می‌فرستم: کریسمس مبارک! | ok: Fröhliche Weihnachten
+Im Dezember sagt man in Deutschland oft: [Frohe Weihnachten]! | در آلمان در ماه دسامبر زیاد می‌گویند: کریسمس مبارک! | ok: Fröhliche Weihnachten
 # frohes neues Jahr
 [Frohes neues Jahr]! Wie hast du Silvester gefeiert? | سال نو مبارک! شب سال نو را چطور جشن گرفتی؟
 Um zwölf Uhr nachts rufen alle: [Frohes neues Jahr]! | ساعت دوازده شب همه داد می‌زنند: سال نو مبارک!
@@ -492,7 +492,7 @@ Unter die E-Mail schreibe ich nur: [Viele Grüße], Tim. | زیر ایمیل ف�
 Meine Großeltern schicken dir [viele Grüße]. | پدربزرگ و مادربزرگم برایت سلام فرستادند.
 # mit freundlichen Grüßen
 Ich bitte um eine kurze Antwort. [Mit freundlichen Grüßen], Reza Ahmadi | لطفاً کوتاه جواب بدهید. با احترام، رضا احمدی
-In einem Brief an das Amt schreibt man: [Mit freundlichen Grüßen]. | در نامه به اداره آخرش می‌نویسند: با احترام.
+In einem Brief an das Amt schreibt man unten: [Mit freundlichen Grüßen]. | در نامه به اداره، آخرش می‌نویسند: «با احترام». | d: Viele Grüße, Sehr geehrte Damen und Herren, Viel Glück
 Vielen Dank für Ihre Hilfe. [Mit freundlichen Grüßen], Julia Becker | از کمکتان خیلی ممنونم. با احترام، یولیا بکر
 Ich freue mich auf Ihre Antwort. [Mit freundlichen Grüßen], Amir Karimi | منتظر پاسخ شما هستم. با احترام، امیر کریمی
 Bitte schicken Sie mir die Rechnung. [Mit freundlichen Grüßen], Peter Wagner | لطفاً صورت‌حساب را برایم بفرستید. با احترام، پتر واگنر
@@ -505,7 +505,7 @@ Im Hotel sagt der Chef: [Sehr geehrte Damen und Herren], willkommen! | در هت
 Die Durchsage beginnt: [Sehr geehrte Damen und Herren], der Zug hat Verspätung. | اطلاعیه این‌طور شروع می‌شود: خانم‌ها و آقایان محترم، قطار تأخیر دارد.
 Ich schreibe der Firma: [Sehr geehrte Damen und Herren], ich möchte mich bewerben. | به شرکت می‌نویسم: خانم‌ها و آقایان محترم، می‌خواهم درخواست کار بدهم.
 # Ort
-Das ist ein schöner [Ort] für ein Picknick. | این جای قشنگی برای پیک‌نیک است.
+Das ist ein schöner [Ort] für ein Picknick. | این جای قشنگی برای پیک‌نیک است. | ok: Platz
 Ich bin in einem kleinen [Ort] in den Bergen geboren. | من در یک شهر کوچک در کوهستان به دنیا آمده‌ام.
 Wir treffen uns am gleichen [Ort] wie gestern. | همان جای دیروز همدیگر را می‌بینیم.
 Bitte schreib [Ort] und Datum unter den Brief. | لطفاً محل و تاریخ را زیر نامه بنویس.
@@ -682,7 +682,7 @@ Nimm [auf jeden Fall] eine Jacke mit, es wird kalt. | حتماً یک کاپشن
 # im Moment
 [Im Moment] habe ich keine Zeit, ruf mich später an. | فعلاً وقت ندارم، بعداً بهم زنگ بزن. | d: Am Anfang, Am Ende, Ab und zu | ok: Jetzt, Gerade
 Mein Vater ist [im Moment] nicht zu Hause. | پدرم در حال حاضر خانه نیست. | d: am Anfang, am Ende, ab und zu | ok: jetzt, gerade
-[Im Moment] wohne ich bei meiner Tante. | فعلاً پیش خاله‌ام زندگی می‌کنم. | d: Am Anfang, Am Ende, Ab und zu | ok: Jetzt
+[Im Moment] wohne ich bei meiner Tante. | فعلاً پیش خاله‌ام زندگی می‌کنم. | d: Am Anfang, Am Ende, Ab und zu | ok: Jetzt, Gerade
 Das Wetter ist [im Moment] sehr schlecht. | هوا در حال حاضر خیلی بد است. | d: am Anfang, am Ende, ab und zu | ok: jetzt, gerade
 Der Chef ist [im Moment] in einer Besprechung. | رئیس فعلاً جلسه است. | d: am Anfang, am Ende, ab und zu | ok: gerade, jetzt
 Was liest du [im Moment]? | این روزها چه می‌خوانی؟ | d: am Anfang, am Ende, ab und zu | ok: gerade, jetzt
@@ -694,7 +694,7 @@ Wegen der [Nähe] zum Bahnhof ist das Hotel sehr praktisch. | این هتل به
 Ich möchte in deiner [Nähe] wohnen. | می‌خواهم نزدیک تو زندگی کنم.
 Kinder brauchen die [Nähe] von ihren Eltern. | بچه‌ها به نزدیکی پدر و مادرشان نیاز دارند.
 # in der Nähe
-Gibt es [in der Nähe] eine Apotheke? | این نزدیکی داروخانه هست؟
+Gibt es [in der Nähe] eine Apotheke? | این نزدیکی داروخانه هست؟ | d: links, rechts, oben
 Wir wohnen [in der Nähe] vom Bahnhof. | ما نزدیک ایستگاه قطار زندگی می‌کنیم.
 Meine Großeltern wohnen ganz [in der Nähe]. | پدربزرگ و مادربزرگم همین نزدیکی زندگی می‌کنند.
 Die Schule ist [in der Nähe], ich gehe zu Fuß. | مدرسه نزدیک است، پیاده می‌روم. | ok: nah

@@ -249,7 +249,7 @@ Heute Morgen gab es einen langen [Stau] in der Stadt. | امروز صبح در �
 Es gibt einen [Stau], wir kommen später. | راه‌بندان است، دیرتر می‌رسیم.
 Am Freitag gibt es hier immer [Stau]. | جمعه‌ها این‌جا همیشه راه‌بندان است. | d: Zug, Bus, Flughafen
 Ich fahre mit dem Zug, da gibt es keinen [Stau]. | با قطار می‌روم، آن‌جا راه‌بندان نیست.
-Nach einer Stunde war der [Stau] endlich weg. | بعد از یک ساعت بالاخره راه باز شد. | d: Bahnhof, Zug, Flughafen
+Nach einer Stunde war der [Stau] endlich weg. | بعد از یک ساعت بالاخره ترافیک باز شد. | d: Bahnhof, Zug, Flughafen
 Im Sommer gibt es viele [Staus]. | تابستان‌ها راه‌بندان زیاد است.
 # Unfall
 An der Kreuzung gab es heute einen [Unfall]. | امروز سر چهارراه تصادف شد.
@@ -308,7 +308,7 @@ Nachts fahren hier viele [Lkws]. | شب‌ها این‌جا کامیون زیا
 Der [Lkw] ist zu groß für diese Straße. | این کامیون برای این خیابان زیادی بزرگ است.
 Der [Lkw] bringt jeden Morgen Obst zum Supermarkt. | کامیون هر روز صبح برای سوپرمارکت میوه می‌آورد.
 # Wagen
-Unser [Wagen] ist schon zwölf Jahre alt. | ماشینمان دوازده سالش است.
+Unser [Wagen] ist schon zwölf Jahre alt. | ماشینمان دوازده سالش است. | ok: Auto
 Das Restaurant ist im [Wagen] Nummer 5. | رستوران در واگن شماره پنج است.
 Mein Vater wäscht am Samstag den [Wagen]. | پدرم شنبه‌ها ماشین را می‌شوید.
 Kannst du mir morgen deinen [Wagen] leihen? | می‌توانی فردا ماشینت را به من قرض بدهی؟
@@ -404,7 +404,7 @@ Der Zug hat Verspätung, mein [Anschluss] ist weg. | قطار تأخیر دار�
 Wann fährt der [Anschluss] nach Hamburg? | قطار بعدی به هامبورگ کی حرکت می‌کند؟
 Der [Anschluss] wartet leider nicht. | قطار بعدی متأسفانه منتظر نمی‌ماند. | d: Fahrplan, Stau, Unfall
 Am Bahnsteig gegenüber steht der [Anschluss] nach Leipzig. | قطار بعدی به لایپزیگ روی سکوی روبه‌رو است. | d: Stau, Unfall, Fahrplan
-Ich habe den [Anschluss] in München noch geschafft. | به قطار بعدی در مونیخ به موقع رسیدم. | d: Flughafen, Führerschein, Unfall
+Ich habe den [Anschluss] in München noch geschafft. | به قطار بعدی در مونیخ به موقع رسیدم. | d: Fahrplan, Flughafen, Unfall
 # verpassen
 Schnell, sonst [verpassen] wir den Bus! | زود باش، وگرنه از اتوبوس جا می‌مانیم! | d: verpasse, verpasst, verpasstest
 Ich habe den Anfang vom Film [verpasst]. | اول فیلم را از دست دادم.
@@ -446,7 +446,7 @@ Bis zum Bahnhof sind es nur drei [Stationen]. | تا ایستگاه قطار ف�
 Diese [Station] ist heute geschlossen. | این ایستگاه امروز بسته است.
 Die U-Bahn hält an jeder [Station]. | مترو در هر ایستگاه نگه می‌دارد.
 Wie heißt die nächste [Station]? | اسم ایستگاه بعدی چیست؟ | ok: Haltestelle
-Nach zwei [Stationen] steigen Sie um. | بعد از دو ایستگاه، قطارتان را عوض کنید.
+Nach zwei [Stationen] steigen Sie um. | بعد از دو ایستگاه، قطارتان را عوض کنید. | ok: Haltestellen
 # Linie
 Die [Linie] 5 fährt zum Bahnhof. | خط پنج به ایستگاه قطار می‌رود. | d: Verspätung, Abfahrt, Durchsage
 Welche [Linie] fährt zum Flughafen? | کدام خط به فرودگاه می‌رود؟ | d: Ankunft, Durchsage, Verspätung
@@ -467,7 +467,7 @@ Schnell, wir [kommen zu spät]! | زود باش، دیر می‌رسیم!
 Lena ist heute wieder [zu spät gekommen]. | لنا امروز باز هم دیر آمد.
 Ich darf heute nicht [zu spät kommen]. | امروز نباید دیر برسم.
 Der Lehrer mag es nicht, wenn wir [zu spät kommen]. | معلم خوشش نمی‌آید که دیر بیاییم.
-Ich [kam zu spät], weil der Bus Verspätung hatte. | دیر رسیدم، چون اتوبوس تأخیر داشت.
+Ich [kam zu spät], weil der Bus Verspätung hatte. | دیر رسیدم، چون اتوبوس تأخیر داشت. | ok: bin zu spät gekommen
 # den Bus nehmen
 Ich [nehme den Bus] zur Arbeit. | با اتوبوس سر کار می‌روم.
 Es regnet, wir [nehmen den Bus]. | باران می‌آید، با اتوبوس می‌رویم.
@@ -495,7 +495,7 @@ Wann wollt ihr [in Urlaub fahren]? | کی می‌خواهید به تعطیلا�
 Im Sommer sind wir nicht [in Urlaub gefahren]. | تابستان به تعطیلات نرفتیم.
 Die Nachbarn [fahren in Urlaub], wir haben ihren Schlüssel. | همسایه‌ها به تعطیلات می‌روند، کلیدشان پیش ماست.
 Ich habe keine Zeit, weil ich morgen [in Urlaub fahre]. | وقت ندارم، چون فردا به تعطیلات می‌روم.
-Wir können dieses Jahr leider nicht [in Urlaub fahren]. | امسال متأسفانه نمی‌توانیم به تعطیلات برویم. | d: den Koffer packen, den Zug verpassen, im Stau stehen
+Wir können dieses Jahr leider nicht [in Urlaub fahren]. | امسال متأسفانه نمی‌توانیم به تعطیلات برویم. | d: den Koffer packen, den Zug verpassen, im Stau stehen | ok: in den Urlaub fahren
 # ins Ausland gehen
 Nach der Uni möchte ich [ins Ausland gehen]. | بعد از دانشگاه می‌خواهم بروم خارج.
 Mein Cousin ist im Mai [ins Ausland gegangen]. | پسرعمویم ماه مه رفت خارج.
@@ -532,7 +532,7 @@ Mein Vater [bucht] jedes Jahr den Urlaub im Reisebüro. | پدرم هر سال �
 Man muss früh [buchen], sonst ist es teuer. | باید زود رزرو کرد، وگرنه گران می‌شود. | d: packen, landen, zelten
 Wir [buchen] ein Auto für die ganze Woche. | برای کل هفته یک ماشین رزرو می‌کنیم.
 # ein Zimmer buchen
-Ich möchte [ein Zimmer buchen]. | می‌خواهم یک اتاق رزرو کنم.
+Ich möchte [ein Zimmer buchen]. | می‌خواهم یک اتاق رزرو کنم. | d: den Zug verpassen, im Stau stehen, einen Unfall haben | ok: ein Zimmer reservieren
 Wir haben im Hotel [ein Zimmer gebucht]. | در هتل یک اتاق رزرو کردیم.
 Hast du schon [ein Zimmer gebucht]? | اتاق رزرو کرده‌ای؟
 Ich [buche ein Zimmer] für drei Nächte. | یک اتاق برای سه شب رزرو می‌کنم.
@@ -684,7 +684,7 @@ An der Wand hängt eine große [Landkarte]. | روی دیوار یک نقشه ب
 Wir brauchen keine [Landkarte], wir haben das Handy. | نقشه لازم نداریم، گوشی داریم.
 Mein Opa fährt immer mit einer alten [Landkarte]. | پدربزرگم همیشه با یک نقشه قدیمی رانندگی می‌کند. | d: Grenze, Rezeption, Führung
 Auf der [Landkarte] ist der Weg ganz einfach. | روی نقشه راه خیلی ساده است. | d: Pension, Rezeption, Grenze
-Hier auf der [Landkarte] ist unser Dorf. | روستای ما این‌جاست، روی نقشه.
+Hier auf der [Landkarte] ist unser Dorf. | روستای ما این‌جاست، روی نقشه. | ok: Karte
 # Strand
 Wir liegen den ganzen Tag am [Strand]. | تمام روز در ساحل دراز می‌کشیم.
 Vom Hotel zum [Strand] sind es nur fünf Minuten. | از هتل تا ساحل فقط پنج دقیقه راه است.

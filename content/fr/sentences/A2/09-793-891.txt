@@ -30,7 +30,7 @@ Mon grand-père [avait l'habitude de] se promener après le dîner. | پدربز
 # objet
 Il y a un [objet] bizarre sur la table. | یک شیء عجیب روی میز هست.
 Dans ce musée, il y a des [objets] très anciens. | در این موزه اشیای خیلی قدیمی هست.
-C'est quoi, cet [objet] ? | این شیء چیست؟
+C'est quoi, cet [objet] ? | این شیء چیست؟ | d: avis, arbre, hôpital
 Ma grand-mère garde tous ses vieux [objets]. | مادربزرگم همهٔ اشیای قدیمی‌اش را نگه می‌دارد.
 Ne touchez pas aux [objets] du{du-contr} musée, s'il vous plaît. | لطفاً به اشیای موزه دست نزنید.
 Le bébé met tous les [objets] dans sa bouche. | بچه هر چیزی را در دهانش می‌گذارد.
@@ -224,7 +224,7 @@ Grand-mère, tu nous [manques] ! | مادربزرگ، دلمان برایت تن
 J'ai [manqué] le train de huit heures. | به قطار ساعت هشت نرسیدم.
 Qu'est-ce qui [manque] dans ta valise ? | چه چیزی در چمدانت کم است؟
 # suffire
-Ça [suffit] ! | بس است!
+Ça [suffit] maintenant, les enfants ! | دیگر بس است، بچه‌ها!
 Deux heures [suffisent] pour visiter le musée. | دو ساعت برای دیدن موزه کافی است.
 Un café, ça me [suffit]. | یک قهوه برایم کافی است.
 Il [suffit] de prendre le métro. | کافی است سوار مترو شوی.
@@ -491,9 +491,9 @@ Le sud de la France est très [ensoleillé]. | جنوب فرانسه خیلی آ
 Nous cherchons une chambre [ensoleillée]. | دنبال یک اتاق آفتابگیر می‌گردیم.
 Le matin était [ensoleillé], mais l'après-midi il a plu. | صبح آفتابی بود، ولی بعدازظهر باران آمد.
 # nerveux
-Je suis [nerveux] avant l'examen. | قبل از امتحان مضطربم.
+Je suis [nerveux] avant l'examen. | قبل از امتحان مضطربم. | ok: nerveuse
 Elle est [nerveuse] aujourd'hui, elle ne parle pas. | امروز عصبی است، حرف نمی‌زند.
-Pourquoi tu es tellement [nerveux] ? | چرا این‌قدر عصبی هستی؟
+Pourquoi tu es tellement [nerveux] ? | چرا این‌قدر عصبی هستی؟ | ok: nerveuse
 Les enfants sont [nerveux] le premier jour d'école. | بچه‌ها روز اول مدرسه دلشوره دارند.
 Mon chien est [nerveux] pendant l'orage. | سگم موقع توفان مضطرب می‌شود.
 Le café me rend [nerveux]. | قهوه مرا عصبی می‌کند.
@@ -506,10 +506,10 @@ Le chauffeur de taxi était [bavard]. | رانندهٔ تاکسی پرحرف ب�
 Elle n'aime pas les gens [bavards]. | از آدم‌های پرحرف خوشش نمی‌آید.
 # gourmand
 Mon fils est très [gourmand]. | پسرم خیلی شکموست.
-Je suis [gourmand], j'adore les gâteaux. | من شکمو هستم، عاشق کیکم.
+Je suis [gourmand], j'adore les gâteaux. | من شکمو هستم، عاشق کیکم. | ok: gourmande
 Les enfants [gourmands] mangent tous les bonbons. | بچه‌های شکمو همهٔ آب‌نبات‌ها را می‌خورند.
 Elle est [gourmande] : elle prend toujours deux desserts. | شکموست: همیشه دو دسر برمی‌دارد.
-Ne sois pas [gourmand], laisse un peu de gâteau pour les autres ! | شکمو نباش، کمی کیک برای بقیه بگذار!
+Ne sois pas [gourmand], laisse un peu de gâteau pour les autres ! | شکمو نباش، کمی کیک برای بقیه بگذار! | ok: gourmande
 Mon chat est [gourmand] : il mange tout le temps. | گربه‌ام شکموست: مدام غذا می‌خورد.
 # travailleur
 C'est un élève très [travailleur]. | شاگرد خیلی سخت‌کوشی است.
@@ -649,7 +649,7 @@ Il n'y a plus de [place] dans le bus. | دیگر در اتوبوس جا نیست
 Cette [place] est libre ? | این صندلی خالی است؟
 J'ai réservé deux [places] pour le concert. | برای کنسرت دو جا رزرو کردم.
 Il donne sa [place] à une vieille dame. | جایش را به یک خانم مسن می‌دهد.
-Excusez-moi, vous êtes à ma [place]. | ببخشید، شما جای من نشسته‌اید.
+Excusez-moi, vous êtes à ma [place]. | ببخشید، شما جای من نشسته‌اید. | d: panne, valise, frontière
 Dans le train, je préfère une [place] près de la fenêtre. | در قطار، جای کنار پنجره را ترجیح می‌دهم.
 # odeur
 Quelle bonne [odeur] ! | چه بوی خوبی!

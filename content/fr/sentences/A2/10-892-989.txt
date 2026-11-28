@@ -221,7 +221,7 @@ Laissez la clé à la [réception]. | کلید را در پذیرش بگذاری
 Demandez à la [réception], ils peuvent vous aider. | از پذیرش بپرسید، می‌توانند کمکتان کنند.
 La [réception] est ouverte jour et nuit. | پذیرش شبانه‌روز باز است.
 Il y a un message pour vous à la [réception]. | در پذیرش برایتان پیغامی هست.
-La dame de la [réception] parle anglais. | خانم پذیرش انگلیسی حرف می‌زند.
+La dame de la [réception] parle anglais. | خانم پذیرش انگلیسی حرف می‌زند. | d: carte d'identité, frontière, valise
 J'ai appelé la [réception] pour demander une serviette. | به پذیرش زنگ زدم تا یک حوله بخواهم.
 # location
 La [location] d'un appartement à Paris coûte très cher. | اجاره آپارتمان در پاریس خیلی گران است.
@@ -234,7 +234,7 @@ Pendant les vacances, on habite dans une [location] près de la mer. | در تع
 Votre [signature] ici, s'il vous plaît. | لطفاً اینجا را امضا کنید.
 Il manque une [signature] sur ce papier. | روی این برگه یک امضا کم است.
 Ta [signature] est très jolie. | امضایت خیلی قشنگ است. | d: vie, liste, forme
-Je ne peux pas lire sa [signature]. | امضایش را نمی‌توانم بخوانم.
+Je ne peux pas lire sa [signature]. | امضایش را نمی‌توانم بخوانم. | d: monnaie, chance, valise
 Le directeur met sa [signature] en bas de la page. | مدیر پایین صفحه را امضا می‌کند.
 Sans ta [signature], je ne peux pas envoyer le formulaire. | بدون امضای تو نمی‌توانم فرم را بفرستم.
 # salle
@@ -249,7 +249,7 @@ J'ai froid, tu me donnes une [couverture] ? | سردم است، یک پتو به
 Il y a des [couvertures] dans l'armoire. | توی کمد پتو هست.
 En hiver, je dors avec deux [couvertures]. | زمستان با دو پتو می‌خوابم.
 Le bébé dort sous sa [couverture]. | نوزاد زیر پتویش خوابیده است.
-Cette [couverture] est très douce. | این پتو خیلی نرم است.
+Cette [couverture] est très douce. | این پتو خیلی نرم است. | d: fenêtre, valise, lampe
 Pour le pique-nique, on met une [couverture] sur l'herbe. | برای پیک‌نیک یک پتو روی چمن پهن می‌کنیم.
 # oreiller
 Je ne peux pas dormir sans mon [oreiller]. | بدون بالش خودم نمی‌توانم بخوابم.
@@ -285,12 +285,12 @@ L'[aspirateur] fait beaucoup de bruit. | جاروبرقی خیلی سروصدا 
 Le chat a peur de l'[aspirateur]. | گربه از جاروبرقی می‌ترسد. | d: étage, oreiller, immeuble
 Notre [aspirateur] est en panne. | جاروبرقی‌مان خراب است.
 Tu peux passer l'[aspirateur] dans le salon ? | می‌توانی سالن را جاروبرقی بکشی؟
-Je voudrais acheter un nouvel [aspirateur]. | می‌خواهم یک جاروبرقی جدید بخرم.
+Je voudrais acheter un nouvel [aspirateur]. | می‌خواهم یک جاروبرقی جدید بخرم. | d: ascenseur, escalier, étage
 # horloge
 Regarde l'[horloge] : il est déjà midi ! | به ساعت نگاه کن: ظهر شد!
 Il y a une grande [horloge] dans le salon. | در سالن یک ساعت دیواری بزرگ هست.
 L'[horloge] de la cuisine ne marche{marcher-2} plus. | ساعت دیواری آشپزخانه دیگر کار نمی‌کند.
-Cette vieille [horloge] était à mon grand-père. | این ساعت دیواری قدیمی مال پدربزرگم بود.
+Cette vieille [horloge] était à mon grand-père. | این ساعت دیواری قدیمی مال پدربزرگم بود. | d: pièce, cuisine, armoire
 Dans la classe, l'[horloge] est à côté du{du-contr} tableau. | در کلاس، ساعت دیواری کنار تخته است.
 La nuit, on entend l'[horloge]. | شب‌ها صدای ساعت دیواری شنیده می‌شود.
 # bougie
@@ -372,11 +372,11 @@ J'achète une boîte de [mouchoirs] à la pharmacie. | از داروخانه ی�
 Mon grand-père a toujours un [mouchoir] dans sa poche. | پدربزرگم همیشه یک دستمال در جیبش دارد. | d: infirmier, pharmacien, docteur
 # toux
 J'ai une [toux] depuis trois jours. | سه روز است سرفه می‌کنم.
-Ce médicament est bon contre la [toux]. | این دارو برای سرفه خوب است. | d: cigarette, pharmacie, ordonnance
-Sa [toux] ne passe pas. | سرفه‌اش خوب نمی‌شود. | d: pharmacie, ordonnance, cigarette
+Ce médicament est bon contre la [toux]. | این دارو برای سرفه خوب است. | d: cigarette, pharmacie, valise
+Sa [toux] ne passe pas. | سرفه‌اش خوب نمی‌شود. | d: pharmacie, cigarette, valise
 Avec cette [toux], je ne dors pas la nuit. | با این سرفه شب‌ها خوابم نمی‌برد. | d: cigarette, ordonnance, ambulance
 Mon fils a de la fièvre et une petite [toux]. | پسرم تب دارد و کمی سرفه می‌کند.
-Bois du thé au miel pour ta [toux]. | برای سرفه‌ات چای با عسل بخور. | d: pharmacie, ordonnance, cigarette
+Bois du thé au miel pour ta [toux]. | برای سرفه‌ات چای با عسل بخور. | d: pharmacie, cigarette, valise
 # clinique
 Ma tante travaille dans une [clinique]. | خاله‌ام در یک درمانگاه کار می‌کند.
 La [clinique] est ouverte le samedi matin. | درمانگاه شنبه صبح‌ها باز است.
@@ -458,7 +458,7 @@ J'utilise un dictionnaire pour l'[orthographe]. | برای املا از فره�
 La [prononciation] du{du-contr} français est difficile pour moi. | تلفظ فرانسوی برایم سخت است.
 Ta [prononciation] est très bonne ! | تلفظت خیلی خوب است!
 Je travaille ma [prononciation] avec des chansons. | با آهنگ تلفظم را تمرین می‌کنم.
-Quelle est la [prononciation] de ce mot ? | این کلمه چطور تلفظ می‌شود؟
+Quelle est la [prononciation] de ce mot ? | این کلمه چطور تلفظ می‌شود؟ | d: phrase, leçon, géographie
 Écoute bien la [prononciation] du{du-contr} professeur. | به تلفظ معلم خوب گوش کن. | d: mathématiques, règle, géographie
 En anglais, la [prononciation] et l'orthographe sont très différentes. | در انگلیسی تلفظ و املا خیلی با هم فرق دارند.
 # accent
@@ -509,7 +509,7 @@ Cette [série] est très drôle. | این سریال خیلی خنده‌دار 
 Tu connais cette nouvelle [série] ? | این سریال جدید را می‌شناسی؟
 Ma mère adore les [séries] françaises. | مادرم عاشق سریال‌های فرانسوی است.
 J'ai une [série] d'exercices à faire pour demain. | برای فردا یک سری تمرین دارم که باید حل کنم.
-On regarde la [série] ensemble ce soir ? | امشب سریال را با هم ببینیم؟ | d: conversation, lettre, enveloppe
+On regarde la [série] ensemble ce soir ? | امشب سریال را با هم ببینیم؟ | d: conversation, lettre, lampe
 # dessin animé
 Les enfants regardent un [dessin animé]. | بچه‌ها کارتون تماشا می‌کنند. | d: timbre, colis, courrier
 Quel est ton [dessin animé] préféré{préféré} ? | کارتون مورد علاقه‌ات چیست؟
@@ -651,18 +651,18 @@ Le matin, je [perds du temps] à chercher mes clés. | صبح‌ها سر پید
 Avec le bus, nous [perdons du temps] : prenons le métro ! | با اتوبوس وقت تلف می‌کنیم: با مترو برویم!
 Les élèves [perdent du temps] au début du{du-contr} cours. | دانش‌آموزان اول کلاس وقت تلف می‌کنند.
 # il y a longtemps
-J'ai vu ce film [il y a longtemps]. | این فیلم را خیلی وقت پیش دیدم.
+J'ai vu ce film [il y a longtemps]. | این فیلم را خیلی وقت پیش دیدم. | d: demain, après-demain, bientôt
 Mes grands-parents habitaient ici [il y a longtemps]. | پدربزرگ و مادربزرگم خیلی وقت پیش اینجا زندگی می‌کردند.
 [Il y a longtemps], cette ville était un petit village. | مدت‌ها پیش این شهر یک روستای کوچک بود.
 Je suis allé à Paris [il y a longtemps]. | خیلی وقت پیش به پاریس رفتم.
-On s'est rencontrés [il y a longtemps], à l'université. | مدت‌ها پیش در دانشگاه با هم آشنا شدیم.
+On s'est rencontrés [il y a longtemps], à l'université. | مدت‌ها پیش در دانشگاه با هم آشنا شدیم. | d: demain, après-demain, bientôt
 Elle a arrêté le piano [il y a longtemps]. | خیلی وقت پیش پیانو را کنار گذاشت.
 # tous les deux
-Nous sommes [tous les deux] professeurs. | ما هر دو معلمیم.
+Nous sommes [tous les deux] professeurs. | ما هر دو معلمیم. | ok: toutes les deux
 Mes parents travaillent [tous les deux] à l'hôpital. | پدر و مادرم هر دو در بیمارستان کار می‌کنند.
 J'ai deux frères ; ils habitent [tous les deux] à Lyon. | دو برادر دارم؛ هر دو در لیون زندگی می‌کنند. | d: bonne journée, bonnes vacances, pas de problème
-Vous venez [tous les deux] ce soir ? | شما دو نفر امشب می‌آیید؟
-On va au cinéma [tous les deux] ? | دوتایی برویم سینما؟
+Vous venez [tous les deux] ce soir ? | شما دو نفر امشب می‌آیید؟ | ok: toutes les deux
+On va au cinéma [tous les deux] ? | دوتایی برویم سینما؟ | ok: toutes les deux
 Mes fils aiment [tous les deux] le football. | پسرهایم هر دو فوتبال دوست دارند.
 # à votre santé
 Merci pour ce bon repas. [À votre santé] ! | ممنون بابت این غذای خوب. به سلامتی شما!

@@ -157,6 +157,21 @@ const hash = (text: string) => {
 };
 
 const VOWEL = /^[aeiouyàâäéèêëîïôöùûüœæh]/iu;
+
+/**
+ * Whether a French option can follow the word before the gap, so the form alone does not rule it out: after
+ * l', d', qu' only a vowel or h; after le, de, que, je only a consonant; ma, ta, sa only before a consonant;
+ * cet, nouvel, bel, vieil only before a vowel, and mon, ton, son before a feminine noun (mon amie) too.
+ * `before` is folded (lower case); `word` is the gap's word.
+ */
+export function fitsAfter(language: string, before: string | null, form: string, word: { pos: string; gender?: string | null }) {
+  if (language !== "fr" || !before) return true;
+  if (/'$/.test(before)) return VOWEL.test(form);
+  if (/^(le|la|de|ce|je|me|te|se|ne|que|si|ma|ta|sa)$/.test(before)) return !VOWEL.test(form);
+  if (/^(cet|nouvel|bel|vieil)$/.test(before)) return VOWEL.test(form);
+  if (/^(mon|ton|son)$/.test(before) && word.pos === "noun" && word.gender === "f") return VOWEL.test(form);
+  return true;
+}
 const capital = (form: string) => form.charAt(0).toUpperCase() + form.slice(1);
 
 /** The gap's surroundings that limit which forms fit. */
@@ -246,11 +261,7 @@ export function autoDistractors(morph: Morph, words: PackWord[], target: PackWor
     if (word.pos === "phrase" && (other.pos !== "phrase" || verbPhrase(item) !== targetVerbPhrase)) continue;
     let form = matchingForm(morph, language, target, surface, item);
     if (!form || fold(form) === right) continue;
-    // French elision: after l', d', qu' only a vowel or h; after le, de, que, je only a consonant.
-    if (language === "fr" && before) {
-      if (/'$/.test(before) && !VOWEL.test(form)) continue;
-      if (/^(le|la|de|ce|je|me|te|se|ne|que|si)$/.test(before) && VOWEL.test(form)) continue;
-    }
+    if (!fitsAfter(language, before, form, word)) continue;
     if (context.first) form = capital(form);
     const sameTopic = item.topic === target.topic;
     const known = context.knownBefore(item);

@@ -79,6 +79,22 @@ describe("sentences of a pack", () => {
     const built = buildSentences(analyzerOf("fr", list), [{ file: "s.txt", text: "# chat\nLe [chat]. | گربه. | d: minou, chien, lit | ok: minou" }], "A1", new Set(list));
     expect(built.errors.map((item) => item.text).join()).toMatch(/«minou» is also a right answer/);
   });
+
+  it("never offers a French option that the word before the gap rules out by its form (ma amie, cet chat)", () => {
+    const list = words("fr", [
+      "ma\tdet\t\t\tمال من\tma: صفت ملکی\tfunction\tno_card:1",
+      "mère\tnoun\tf\tmères\tمادر\tمادر\tfamily",
+      "amie\tnoun\tf\tamies\tدوست\tدوست مؤنث\tfamily",
+      "sœur\tnoun\tf\tsœurs\tخواهر\tخواهر\tfamily",
+      "tante\tnoun\tf\ttantes\tخاله\tخاله\tfamily",
+      "fille\tnoun\tf\tfilles\tدختر\tدختر\tfamily",
+    ]);
+    const build = (line: string) => buildSentences(analyzerOf("fr", list), [{ file: "s.txt", text: `# mère\n${line}` }], "A1", new Set(list));
+    const auto = build("Ma [mère]. | مادرم.");
+    expect(auto.errors).toEqual([]);
+    expect(auto.records[0].targets[0].distractors).not.toContain("Amie");
+    expect(build("Ma [mère]. | مادرم. | d: amie, sœur, tante").errors.map((item) => item.text).join()).toMatch(/«amie» cannot follow «ma»/);
+  });
 });
 
 describe("verb phrases of a pack", () => {
@@ -192,6 +208,20 @@ describe("a gap that opens a sentence inside a line", () => {
     expect(opensSentence("Il a dit : « ")).toBe(false);
     expect(opensSentence("Elle dit ")).toBe(false);
     expect(opensSentence("Je ")).toBe(false);
+  });
+
+  it("gets capital wrong options after a colon when the answer is written with a capital", () => {
+    const list = words("fr", [
+      "il\tpron\t\t\tاو\til: او\tfunction\tno_card:1",
+      "dire\tverb\t\t\tگفتن\tگفتن\tactions",
+      "merci\tinterj\t\t\tممنون\tممنون\tpeople",
+      "bonjour\tinterj\t\t\tسلام\tسلام\tpeople",
+      "pardon\tinterj\t\t\tببخشید\tببخشید\tpeople",
+      "au revoir\tinterj\t\t\tخداحافظ\tخداحافظ\tpeople",
+    ]);
+    const built = buildSentences(analyzerOf("fr", list), [{ file: "s.txt", text: "# merci\nIl dit : [Merci] ! | او می‌گوید: ممنون!" }], "A1", new Set(list));
+    expect(built.errors).toEqual([]);
+    expect(built.records[0].targets[0].distractors.every((option) => /^\p{Lu}/u.test(option))).toBe(true);
   });
 });
 

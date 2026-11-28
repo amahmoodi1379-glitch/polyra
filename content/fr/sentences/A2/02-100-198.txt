@@ -269,7 +269,7 @@ Vous [avez l'air] malade, ça va ? | مریض به نظر می‌رسید، حا
 Ton nouveau voisin [a l'air] sympathique. | همسایهٔ جدیدت مهربان به نظر می‌رسد.
 # voix
 Elle a une belle [voix]. | صدای قشنگی دارد. | d: nationalité, date, semaine
-J'entends la [voix] de mon père. | صدای پدرم را می‌شنوم. | d: nationalité, adresse, date
+J'entends la [voix] de mon père. | صدای پدرم را می‌شنوم. | d: nationalité, photo, date
 Il est malade, il a perdu sa [voix]. | مریض است، صدایش گرفته. | d: nationalité, date, personne
 Au téléphone, ta [voix] est triste. Ça va ? | پشت تلفن صدایت غمگین است. خوبی؟
 Dans le jardin, j'entends des [voix]. | توی حیاط صدای چند نفر را می‌شنوم.
@@ -588,7 +588,7 @@ Tu as cassé un verre ? [Ce n'est pas grave]. | لیوان را شکستی؟ ا�
 Pardon, je suis en retard ! – [Ce n'est pas grave]. | ببخشید، دیر کردم! – اشکالی ندارد.
 Tu as oublié ? [Ce n'est pas grave], je comprends. | یادت رفت؟ مهم نیست، درک می‌کنم.
 Il pleut, mais [ce n'est pas grave] : on reste à la maison. | باران می‌آید، اما مهم نیست: خانه می‌مانیم.
-Le médecin dit que [ce n'est pas grave]. | دکتر می‌گوید چیز مهمی نیست. | d: faire attention, dire la vérité, avoir raison
+Le médecin dit que [ce n'est pas grave]. | دکتر می‌گوید چیز مهمی نیست. | d: bon appétit, bonne chance, joyeux anniversaire
 # sérieux
 C'est un élève très [sérieux]. | او دانش‌آموز خیلی جدی‌ای است.
 Tu es [sérieux] ? | جدی می‌گویی؟ | ok: sérieuse
