@@ -593,7 +593,7 @@ peine	noun	f		زحمت، دل‌آزردگی	زحمت	feelings	checked:level
 avoir de la peine	phrase			غمگین بودن، دلخور بودن	غمگین بودن	feelings	parts:avoir peine
 faire de la peine	phrase			ناراحت کردن (کسی)، غصه‌دار کردن	ناراحت کردن (کسی)	feelings	parts:faire peine
 à peine	adv			به‌زحمت، تازه (همین الان)	به‌زحمت	function	parts:peine
-ce n'est pas la peine	phrase			لازم نیست، زحمت نکش	لازم نیست	function	parts:peine
+ce n'est pas la peine	phrase			لازم نیست، زحمت نکش	لازم نیست	function	parts:être peine
 valoir la peine	phrase			ارزشش را داشتن	ارزشش را داشتن	abstract	parts:valoir peine
 suite	noun	f		ادامه، دنباله	ادامه	abstract	checked:level	note:«سوئیت» در فارسی آپارتمان کوچک است، ولی suite یعنی «ادامه».
 par la suite	adv			بعدها، پس از آن	بعدها	time	parts:suite
@@ -634,14 +634,14 @@ rapport	noun	m		ربط، نسبت	ربط	abstract	checked:level	note:«راپو�
 par rapport à	prep			در مقایسه با، نسبت به	در مقایسه با	function	parts:rapport
 espèce	noun	f		گونه (جانور یا گیاه)	گونه (جانور یا گیاه)	nature
 confiance	noun	f		اعتماد	اعتماد	feelings
-faire confiance	phrase			اعتماد کردن (به)	اعتماد کردن (به)	feelings	parts:confiance
+faire confiance	phrase			اعتماد کردن (به)	اعتماد کردن (به)	feelings	parts:faire confiance
 avoir confiance en	phrase			اعتماد داشتن به	اعتماد داشتن به	feelings	parts:avoir confiance
 impression	noun	f		برداشت، احساس (که ...)	برداشت	feelings
-avoir l'impression	phrase			حس کردن که، به نظرِ (کسی) آمدن که	حس کردن که	feelings	parts:impression
+avoir l'impression	phrase			حس کردن که، به نظرِ (کسی) آمدن که	حس کردن که	feelings	parts:avoir impression
 signe	noun	m		نشانه، اشاره	نشانه	abstract
-faire signe	phrase			اشاره کردن (با دست)	اشاره کردن (با دست)	body	parts:signe
+faire signe	phrase			اشاره کردن (با دست)	اشاره کردن (با دست)	body	parts:faire signe
 vue	noun	f		چشم‌انداز (از پنجره)، دید	چشم‌انداز (از پنجره)	space
-point de vue	noun	m		دیدگاه، نقطه‌نظر	دیدگاه	abstract	parts:vue
+point de vue	noun	m	points de vue	دیدگاه، نقطه‌نظر	دیدگاه	abstract	parts:vue
 à propos de	prep			دربارهٔ، در موردِ	دربارهٔ	function
 honneur	noun	m		افتخار، شرف	افتخار	society
 mouvement	noun	m		حرکت، جنبش	حرکت	actions
@@ -726,7 +726,7 @@ membre	noun	m		عضو	عضو	society
 témoin	noun	m		شاهد	شاهد	society
 destin	noun	m		سرنوشت	سرنوشت	abstract
 intention	noun	f		قصد، نیت	قصد	abstract
-avoir l'intention de	phrase			قصد داشتن	قصد داشتن	abstract	parts:intention
+avoir l'intention de	phrase			قصد داشتن	قصد داشتن	abstract	parts:avoir intention
 risque	noun	m		ریسک، احتمال خطر	ریسک	abstract
 prendre le risque	phrase			خطر کردن، ریسک کردن	خطر کردن	abstract	parts:prendre risque
 personnage	noun	m		شخصیت (داستان یا فیلم)	شخصیت (داستان یا فیلم)	culture
@@ -1080,7 +1080,7 @@ ancêtre	noun	mf		نیا، جد	نیا	family
 personnalité	noun	f		شخصیت (فرد)	شخصیت (فرد)	character
 qualité	noun	f		ویژگی خوب، حسن	ویژگی خوب	character	code:qualité-2	sense_of:qualité
 honte	noun	f		شرم، خجالت	شرم	feelings
-avoir honte	phrase			خجالت کشیدن	خجالت کشیدن	feelings	parts:honte
+avoir honte	phrase			خجالت کشیدن	خجالت کشیدن	feelings	parts:avoir honte
 fierté	noun	f		غرور، سربلندی	غرور	feelings
 jalousie	noun	f		حسادت	حسادت	feelings
 se mettre en colère	phrase			عصبانی شدن (به‌شدت)، از کوره در رفتن	عصبانی شدن (به‌شدت)	feelings	parts:mettre colère
@@ -1124,7 +1124,7 @@ public	noun	m		عموم مردم	عموم مردم	society	code:public-2	sense_o
 manifestation	noun	f		تظاهرات، راهپیمایی	تظاهرات	society
 manifester	verb			تظاهرات کردن	تظاهرات کردن	society
 grève	noun	f		اعتصاب	اعتصاب	work
-faire grève	phrase			اعتصاب کردن	اعتصاب کردن	work	parts:grève
+faire grève	phrase			اعتصاب کردن	اعتصاب کردن	work	parts:faire grève
 syndicat	noun	m		سندیکا، اتحادیهٔ کارگری	سندیکا	work
 droit	noun	m		حقوق (رشتهٔ دانشگاهی)	حقوق (رشتهٔ دانشگاهی)	education	code:droit-2	sense_of:droit	checked:level
 droits de l'homme	noun	m		حقوق بشر	حقوق بشر	society	parts:droit	number:pl_only
@@ -1866,3 +1866,10 @@ favori	adj			محبوب، مورد علاقه (از همه)	محبوب	feelings
 photographier	verb			عکس گرفتن (از)	عکس گرفتن (از)	leisure
 filmer	verb			فیلم گرفتن	فیلم گرفتن	leisure
 se balader	verb			گشت زدن، قدم زدن	قدم زدن	leisure	register:familier
+# Added during the B1 content writing (28 Nov 2026): words the sentences and texts needed, taught last
+bar	noun	m		بار، کافه	بار	food
+typique	adj			مخصوصِ (جایی)، نمونه	مخصوص	qualities
+propre	adj			خودِ (کسی)، مالِ خود	مال خود	abstract	code:propre-2	sense_of:propre	checked:level	coll:ma propre voiture → ماشین خودم
+règle	noun	f		قاعده، قانون	قاعده	education	code:règle-2	sense_of:règle	coll:les règles du jeu → قانون‌های بازی
+calmement	adv			با آرامش	با آرامش	feelings
+situé	adj			واقع، قرارگرفته	واقع	space	checked:level
