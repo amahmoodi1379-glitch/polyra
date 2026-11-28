@@ -5,7 +5,7 @@ kind: voice_message
 key_words: fallen, weinen, lachen
 sentences:
 - Guten Tag, Frau Becker, hier ist Herr Wagner von der Schule. | روز بخیر خانم بکر، آقای واگنر از مدرسه هستم.
-- Ihr Sohn Ben ist heute beim Sport gefallen{fallen}. | پسرتان بن امروز موقع ورزش زمین خورده است.
+- Ihr{Ihr-det} Sohn Ben ist heute beim Sport gefallen{fallen}. | پسرتان بن امروز موقع ورزش زمین خورده است.
 - Sein Arm tut ein bisschen weh. | بازویش کمی درد می‌کند.
 - Er hat zuerst viel geweint, aber jetzt lacht er schon wieder. | اولش خیلی گریه کرد، ولی حالا دوباره می‌خندد.
 - Aber vielleicht gehen Sie heute noch mit ihm zum Arzt. | ولی شاید امروز با او پیش دکتر بروید.

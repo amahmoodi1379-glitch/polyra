@@ -1,0 +1,28 @@
+code: de-a2-t019
+title: Karten gewinnen
+band: 1
+kind: announcement
+key_words: gewinnen, mitbringen
+sentences:
+- Guten Morgen bei Radio Hamburg! | صبح بخیر، این‌جا رادیو هامبورگ است!
+- Heute können Sie zwei Karten für das große Spiel am Samstag gewinnen. | امروز می‌توانید دو بلیت برای بازی بزرگ شنبه برنده شوید.
+- Das Spiel beginnt um 15:30 Uhr. | بازی ساعت ۱۵:۳۰ شروع می‌شود. | tts: Das Spiel beginnt um fünfzehn Uhr dreißig.
+- Rufen Sie einfach an und sagen Sie uns Ihren Namen. | فقط زنگ بزنید و اسمتان را به ما بگویید.
+- Unsere Nummer ist 040 11 22 33. | شماره ما ۰۴۰ ۱۱ ۲۲ ۳۳ است. | tts: Unsere Nummer ist null vier null, elf, zweiundzwanzig, dreiunddreißig.
+- Sie{Sie-3} können also auch einen Freund mitbringen. | پس می‌توانید یک دوست را هم با خودتان بیاورید.
+- Um 12 Uhr wissen Sie mehr. | ساعت ۱۲ بیشتر خبردار می‌شوید. | tts: Um zwölf Uhr wissen Sie mehr.
+- Viel Glück! | موفق باشید!
+reading A:
+{"type":"mcq","prompt":"در این برنامه چه چیزی را می‌شود برد؟","options":["دو بلیت کنسرت","دو بلیت بازی شنبه","یک رادیو","یک توپ فوتبال"],"correct":1,"explanation_fa":"در رادیو گفته می‌شود: «zwei Karten für das große Spiel am Samstag»."}
+{"type":"tf","prompt":"بازی ساعت ۱۵:۳۰ شروع می‌شود.","correct":true,"explanation_fa":"در رادیو گفته می‌شود: «Das Spiel beginnt um 15:30 Uhr.»"}
+{"type":"tf","prompt":"برای بردن بلیت باید به یک سؤال جواب بدهید.","correct":false,"explanation_fa":"در رادیو گفته می‌شود: «Rufen Sie einfach an und sagen Sie uns Ihren Namen»؛ فقط زنگ زدن و گفتن اسم لازم است."}
+reading B:
+{"type":"find","prompt":"کدام جمله شماره تلفن رادیو را می‌گوید؟","correct_sentence":4,"explanation_fa":"در جمله «Unsere Nummer ist 040 11 22 33.» شماره آمده است."}
+{"type":"match","prompt":"هر چیز را به جوابش وصل کن.","left":["شروع بازی","روز بازی","خبر بیشتر"],"right":["شنبه","ساعت ۱۲","یکشنبه","ساعت ۱۵:۳۰"],"pairs":[[0,3],[1,0],[2,1]],"explanation_fa":"بازی «am Samstag» و «um 15:30 Uhr» است و «Um 12 Uhr wissen Sie mehr»."}
+listening A:
+{"type":"num","prompt":"بازی ساعت چند شروع می‌شود؟","answer":"15:30","accepted":["15:30","15.30","halb vier"],"explanation_fa":"در رادیو گفته می‌شود: «Das Spiel beginnt um 15:30 Uhr.»"}
+{"type":"mcq","prompt":"برای بردن بلیت چه باید کرد؟","options":["ایمیل زد","به رادیو رفت","زنگ زد و اسم را گفت","نامه نوشت"],"correct":2,"explanation_fa":"در رادیو گفته می‌شود: «Rufen Sie einfach an und sagen Sie uns Ihren Namen.»"}
+listening B:
+{"type":"dict","sentence":5}
+{"type":"tf","prompt":"برنده می‌تواند یک دوست را هم با خودش ببرد.","correct":true,"explanation_fa":"در رادیو گفته می‌شود: «Sie können also auch einen Freund mitbringen.»"}
+{"type":"tf","prompt":"بازی یکشنبه است.","correct":false,"explanation_fa":"در رادیو گفته می‌شود: «das große Spiel am Samstag»، یعنی شنبه."}

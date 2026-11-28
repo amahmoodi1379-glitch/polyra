@@ -13,7 +13,7 @@ sentences:
 - Die Eltern von Mia, bitte kommen Sie zu Kasse 3. | پدر و مادر میا، لطفاً به صندوق ۳ بیایید. | tts: Die Eltern von Mia, bitte kommen Sie zu Kasse drei.
 - Vielen Dank! | خیلی ممنون!
 reading A:
-{"type":"mcq","prompt":"میا چند سال دارد؟","options":["سه سال","چهار سال","پنج سال","شش سال"],"correct":1,"explanation_fa":"در اعلام آمده: «Mia ist vier Jahre alt.»"}
+{"type":"mcq","prompt":"میا چند سال دارد؟","options":["سه سال","پنج سال","شش سال","چهار سال"],"correct":3,"explanation_fa":"در اعلام آمده: «Mia ist vier Jahre alt.»"}
 {"type":"tf","prompt":"میا عینک می‌زند.","correct":true,"explanation_fa":"در اعلام آمده: «sie trägt eine Brille»."}
 {"type":"tf","prompt":"موهای میا تیره است.","correct":false,"explanation_fa":"در اعلام آمده: «Ihre Haare sind blond»، یعنی موهایش بور است."}
 reading B:

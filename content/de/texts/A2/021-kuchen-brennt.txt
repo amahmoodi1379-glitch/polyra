@@ -1,0 +1,28 @@
+code: de-a2-t021
+title: Der Kuchen brennt
+band: 1
+kind: dialogue
+key_words: riechen, brennen, aufmachen, zumachen
+sentences:
+A: Riechst du das? Brennt da etwas? | بویش را حس می‌کنی؟ چیزی دارد می‌سوزد؟
+B: Oh nein, mein Kuchen für Oma! | وای نه، کیکم برای مادربزرگ!
+A: Schnell, mach das Fenster auf! | زود باش، پنجره را باز کن!
+B: Zu spät. Ich habe ihn vergessen, und jetzt ist er ganz schwarz. | دیگر دیر است. فراموشش کردم و حالا کاملاً سیاه شده است.
+A: Mach bitte auch die Tür zu, sonst riecht die ganze Wohnung. | لطفاً در را هم ببند، وگرنه همه خانه بو می‌گیرد.
+B: Und was mache ich jetzt? | حالا چه کار کنم؟
+A: Kein Problem. Ich kaufe schnell einen Kuchen in der Bäckerei. | مشکلی نیست. من زود یک کیک از نانوایی می‌خرم.
+B: Danke! Du bist super! | ممنون! تو فوق‌العاده‌ای!
+reading A:
+{"type":"mcq","prompt":"چه چیزی سوخته است؟","options":["پیتزا","کیک","نان","سوپ"],"correct":1,"explanation_fa":"گفته می‌شود: «Oh nein, mein Kuchen für Oma!» و بعد: «jetzt ist er ganz schwarz»."}
+{"type":"tf","prompt":"کیک برای مادربزرگ است.","correct":true,"explanation_fa":"گفته می‌شود: «mein Kuchen für Oma»."}
+{"type":"tf","prompt":"کیک هنوز خوب است.","correct":false,"explanation_fa":"گفته می‌شود: «Zu spät … jetzt ist er ganz schwarz.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید چرا کیک سوخته است؟","correct_sentence":3,"explanation_fa":"گفته می‌شود: «Ich habe ihn vergessen»، یعنی کیک را فراموش کرده است."}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو مرتب کن.","items":["یکی می‌گوید در را ببند.","یکی بوی سوختن را حس می‌کند.","یکی می‌گوید از نانوایی کیک می‌خرد.","یکی می‌گوید پنجره را باز کن."],"correct_order":[1,3,0,2],"explanation_fa":"اول «Riechst du das?»، بعد «mach das Fenster auf!»، بعد «Mach bitte auch die Tür zu» و آخر «Ich kaufe schnell einen Kuchen in der Bäckerei.»"}
+listening A:
+{"type":"mcq","prompt":"اول چه چیزی را باید باز کرد؟","options":["در را","یخچال را","پنجره را","کمد را"],"correct":2,"explanation_fa":"گفته می‌شود: «Schnell, mach das Fenster auf!»"}
+{"type":"tf","prompt":"باید در را ببندند تا همه خانه بو نگیرد.","correct":true,"explanation_fa":"گفته می‌شود: «Mach bitte auch die Tür zu, sonst riecht die ganze Wohnung.»"}
+{"type":"tf","prompt":"کسی که کیک را پخته، خودش کیک تازه را می‌خرد.","correct":false,"explanation_fa":"دوستش می‌گوید: «Ich kaufe schnell einen Kuchen in der Bäckerei.»"}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"mcq","prompt":"کیک تازه را از کجا می‌خرند؟","options":["از سوپرمارکت","از کافه","از بازار","از نانوایی"],"correct":3,"explanation_fa":"گفته می‌شود: «Ich kaufe schnell einen Kuchen in der Bäckerei.»"}

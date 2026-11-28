@@ -13,7 +13,7 @@ B: Gut! Er war leichter als der letzte Test. | خوب بود! از امتحان 
 A: Siehst du? Du bist klug und fleißig. | دیدی؟ تو باهوش و سخت‌کوشی.
 B: Ich habe aber auch viel gelernt. | ولی خیلی هم درس خوانده بودم.
 reading A:
-{"type":"mcq","prompt":"معلم جدید وقتی بچه‌ها چیزی را نمی‌فهمند، چه کار می‌کند؟","options":["عصبانی می‌شود","دوباره توضیح می‌دهد","امتحان می‌گیرد","کلاس را تمام می‌کند"],"correct":1,"explanation_fa":"گفته می‌شود: «sie erklärt alles noch einmal, wenn wir etwas nicht verstehen»."}
+{"type":"mcq","prompt":"معلم جدید وقتی بچه‌ها چیزی را نمی‌فهمند، چه کار می‌کند؟","options":["دوباره توضیح می‌دهد","عصبانی می‌شود","امتحان می‌گیرد","کلاس را تمام می‌کند"],"correct":0,"explanation_fa":"گفته می‌شود: «sie erklärt alles noch einmal, wenn wir etwas nicht verstehen»."}
 {"type":"tf","prompt":"لنا دیروز سر امتحان استرس داشت.","correct":true,"explanation_fa":"لنا می‌گوید: «Beim Test gestern war ich sehr nervös.»"}
 {"type":"tf","prompt":"امتحان دیروز از امتحان قبلی سخت‌تر بود.","correct":false,"explanation_fa":"لنا می‌گوید: «Er war leichter als der letzte Test»، یعنی آسان‌تر بود."}
 reading B:

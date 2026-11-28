@@ -13,7 +13,7 @@ B: Am Donnerstag? Ich brauche es aber jeden Tag. | پنجشنبه؟ ولی من 
 A: Kein Problem. Sie{Sie-3} können so lange ein altes Handy von uns benutzen. | مشکلی نیست. تا آن موقع می‌توانید از یک گوشی قدیمی ما استفاده کنید.
 B: Super, danke! | عالی است، ممنون!
 reading A:
-{"type":"mcq","prompt":"مشکل گوشی مشتری چیست؟","options":["نمی‌شود با آن عکس گرفت","نمی‌شود با آن تلفن زد","نمی‌شود با آن ایمیل زد","نمی‌شود با آن موسیقی گوش داد"],"correct":1,"explanation_fa":"مشتری می‌گوید: «Ich kann nicht telefonieren.»"}
+{"type":"mcq","prompt":"مشکل گوشی مشتری چیست؟","options":["نمی‌شود با آن عکس گرفت","نمی‌شود با آن ایمیل زد","نمی‌شود با آن موسیقی گوش داد","نمی‌شود با آن تلفن زد"],"correct":3,"explanation_fa":"مشتری می‌گوید: «Ich kann nicht telefonieren.»"}
 {"type":"tf","prompt":"فروشنده می‌تواند گوشی را تعمیر کند.","correct":true,"explanation_fa":"فروشنده می‌گوید: «Ja, das kann ich reparieren.»"}
 {"type":"tf","prompt":"گوشی فردا آماده می‌شود.","correct":false,"explanation_fa":"فروشنده می‌گوید گوشی پنجشنبه آماده است: «Am Donnerstag.»"}
 reading B:
@@ -25,5 +25,5 @@ listening A:
 {"type":"mcq","prompt":"گوشی کی آماده می‌شود؟","options":["سه‌شنبه","چهارشنبه","پنجشنبه","جمعه"],"correct":2,"explanation_fa":"فروشنده می‌گوید: «Am Donnerstag.»"}
 listening B:
 {"type":"dict","sentence":3}
-{"type":"tf","prompt":"فروشنده به مشتری یک گوشی قدیمی می‌دهد.","correct":true,"explanation_fa":"فروشنده می‌گوید: «Sie können so lange ein altes Handy von uns benutzen.»"}
+{"type":"tf","prompt":"مشتری می‌تواند تا پنجشنبه از یک گوشی قدیمی استفاده کند.","correct":true,"explanation_fa":"فروشنده می‌گوید: «Sie können so lange ein altes Handy von uns benutzen.»"}
 {"type":"tf","prompt":"مشتری خودش گوشی را تعمیر می‌کند.","correct":false,"explanation_fa":"فروشنده می‌گوید: «das kann ich reparieren»، یعنی فروشنده آن را تعمیر می‌کند."}

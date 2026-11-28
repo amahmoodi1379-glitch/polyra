@@ -2,18 +2,18 @@ code: de-a2-t024
 title: Paul ist krank
 band: 1
 kind: dialogue
-key_words: sich fühlen, sich ausruhen, Sorge
+key_words: sich fühlen, sich ausruhen, sich freuen
 sentences:
 A: Hallo Paul! Wie fühlst du dich heute? | سلام پاول! امروز حالت چطور است؟
 B: Nicht so gut. Ich habe noch Fieber. | خیلی خوب نیست. هنوز تب دارم.
 A: Warst du schon beim Arzt? | پیش دکتر رفته‌ای؟
 B: Ja. Ich muss eine Woche zu Hause bleiben und mich ausruhen. | آره. باید یک هفته در خانه بمانم و استراحت کنم.
-A: Keine Sorge, du bist bald wieder gesund. Kann ich dir etwas bringen? | نگران نباش، زود خوب می‌شوی. می‌توانم چیزی برایت بیاورم؟
+A: Du bist bestimmt bald wieder gesund. Kann ich dir etwas bringen? | حتماً زود خوب می‌شوی. می‌توانم چیزی برایت بیاورم؟
 B: Ja, gern! Vielleicht Obst und Tee? | آره، ممنون می‌شوم! شاید میوه و چای؟
 A: Klar, ich komme heute Abend vorbei. | حتماً، امشب سری به تو می‌زنم.
 B: Danke, ich freue mich! | ممنون، خوشحال می‌شوم!
 reading A:
-{"type":"mcq","prompt":"پاول چه مشکلی دارد؟","options":["سرفه می‌کند","تب دارد","پایش درد می‌کند","دندانش درد می‌کند"],"correct":1,"explanation_fa":"پاول می‌گوید: «Ich habe noch Fieber.»"}
+{"type":"mcq","prompt":"پاول چه مشکلی دارد؟","options":["تب دارد","سرفه می‌کند","پایش درد می‌کند","دندانش درد می‌کند"],"correct":0,"explanation_fa":"پاول می‌گوید: «Ich habe noch Fieber.»"}
 {"type":"tf","prompt":"پاول باید یک هفته در خانه بماند.","correct":true,"explanation_fa":"پاول می‌گوید: «Ich muss eine Woche zu Hause bleiben.»"}
 {"type":"tf","prompt":"پاول هنوز پیش دکتر نرفته است.","correct":false,"explanation_fa":"دوستش می‌پرسد «Warst du schon beim Arzt?» و پاول می‌گوید: «Ja.»"}
 reading B:

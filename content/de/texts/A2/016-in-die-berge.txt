@@ -1,0 +1,28 @@
+code: de-a2-t016
+title: Morgen in die Berge
+band: 1
+kind: voice_message
+key_words: schaffen, vergessen, ungefähr
+sentences:
+- Hallo Sophie, hier ist Laura. | سلام سوفی، لورا هستم.
+- Morgen fahren wir endlich in die Berge! | فردا بالاخره به کوه می‌رویم!
+- Ich bin um 7 Uhr mit dem Auto bei dir. | ساعت ۷ با ماشین دم خانه‌ات هستم. | tts: Ich bin um sieben Uhr mit dem Auto bei dir.
+- Wir laufen ungefähr vier Stunden, aber wir machen oft Pause. | حدود چهار ساعت پیاده می‌رویم، ولی مرتب استراحت می‌کنیم.
+- Ich glaube, wir schaffen das! | فکر می‌کنم از پسش برمی‌آییم!
+- Vergiss bitte deine Jacke nicht, oben ist es kalt. | لطفاً کاپشنت را فراموش نکن، آن بالا هوا سرد است.
+- Ich habe Brot und Käse für uns. | من برای هردومان نان و پنیر دارم.
+- Bis morgen! | تا فردا!
+reading A:
+{"type":"mcq","prompt":"لورا و سوفی فردا کجا می‌روند؟","options":["به دریا","به کوه","به شهر","به پارک"],"correct":1,"explanation_fa":"لورا می‌گوید: «Morgen fahren wir endlich in die Berge!»"}
+{"type":"tf","prompt":"لورا ساعت ۷ با ماشین پیش سوفی می‌آید.","correct":true,"explanation_fa":"لورا می‌گوید: «Ich bin um 7 Uhr mit dem Auto bei dir.»"}
+{"type":"tf","prompt":"آن‌ها حدود دو ساعت پیاده می‌روند.","correct":false,"explanation_fa":"لورا می‌گوید: «Wir laufen ungefähr vier Stunden»، یعنی حدود چهار ساعت."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید سوفی چه چیزی را فراموش نکند؟","correct_sentence":5,"explanation_fa":"لورا می‌گوید: «Vergiss bitte deine Jacke nicht.»"}
+{"type":"mcq","prompt":"چرا سوفی باید کاپشنش را بیاورد؟","options":["چون فردا باران می‌آید","چون شب دیر برمی‌گردند","چون لورا کاپشن ندارد","چون آن بالا سرد است"],"correct":3,"explanation_fa":"لورا می‌گوید: «oben ist es kalt»، یعنی آن بالا سرد است."}
+listening A:
+{"type":"num","prompt":"لورا ساعت چند پیش سوفی است؟","answer":"7","accepted":["7","7 Uhr","sieben"],"explanation_fa":"لورا می‌گوید: «Ich bin um 7 Uhr mit dem Auto bei dir.»"}
+{"type":"tf","prompt":"لورا فکر می‌کند که آن‌ها از پس این راه برمی‌آیند.","correct":true,"explanation_fa":"لورا می‌گوید: «Ich glaube, wir schaffen das!»"}
+{"type":"tf","prompt":"لورا برای خوردن چیزی ندارد.","correct":false,"explanation_fa":"لورا می‌گوید: «Ich habe Brot und Käse für uns.»"}
+listening B:
+{"type":"dict","sentence":4}
+{"type":"mcq","prompt":"لورا چه غذایی با خودش دارد؟","options":["نان و کالباس","سیب و موز","نان و پنیر","کیک و شکلات"],"correct":2,"explanation_fa":"لورا می‌گوید: «Ich habe Brot und Käse für uns.»"}

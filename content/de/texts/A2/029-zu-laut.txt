@@ -6,9 +6,9 @@ key_words: Nachbarin, laut, leise
 sentences:
 A: Guten Abend, Herr Neumann! Ich bin Ihre Nachbarin von oben. | عصر بخیر آقای نویمان! من همسایه طبقه بالای شما هستم.
 B: Guten Abend! Ist etwas passiert? | عصر بخیر! اتفاقی افتاده؟
-A: Ihre Musik ist sehr laut, und ich kann nicht schlafen. | موسیقی شما خیلی بلند است و نمی‌توانم بخوابم.
+A: Ihre{Ihr-det} Musik ist sehr laut, und ich kann nicht schlafen. | موسیقی شما خیلی بلند است و نمی‌توانم بخوابم.
 B: Oh, das tut mir leid! Wir feiern heute meinen Geburtstag. | اوه، ببخشید! امروز داریم تولدم را جشن می‌گیریم.
-A: Ach so! Herzlichen Glückwunsch! | آهان! تولدتان مبارک!
+A: Dann herzlichen Glückwunsch! | پس تولدتان مبارک!
 B: Danke! Ab jetzt sind wir leiser. Möchten Sie vielleicht ein Stück Kuchen? | ممنون! از حالا آرام‌تریم. شاید یک تکه کیک میل دارید؟
 A: Gern, das ist sehr nett von Ihnen! | با کمال میل، خیلی لطف دارید!
 reading A:

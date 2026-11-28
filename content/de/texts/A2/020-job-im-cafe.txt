@@ -1,0 +1,28 @@
+code: de-a2-t020
+title: Ein Job im Café
+band: 1
+kind: dialogue
+key_words: sich vorstellen
+sentences:
+A: Guten Tag, Herr Karimi! Bitte stellen Sie sich kurz vor. | روز بخیر آقای کریمی! لطفاً خودتان را کوتاه معرفی کنید.
+B: Gern. Ich bin 23 Jahre alt und studiere in Köln. | با کمال میل. ۲۳ سالم است و در کلن دانشجو هستم. | tts: Gern. Ich bin dreiundzwanzig Jahre alt und studiere in Köln.
+A: Haben Sie schon in einem Café gearbeitet? | قبلاً در کافه کار کرده‌اید؟
+B: Ja, letztes Jahr war ich Kellner in einem Restaurant. | بله، پارسال در یک رستوران گارسون بودم.
+A: Schön. Können Sie auch am Wochenende arbeiten? | خوب است. آخر هفته هم می‌توانید کار کنید؟
+B: Ja, am Wochenende habe ich Zeit. | بله، آخر هفته وقت دارم.
+A: Sehr gut! Können Sie am Montag anfangen? | خیلی خوب! می‌توانید دوشنبه شروع کنید؟
+B: Ja, sehr gern! | بله، با کمال میل!
+reading A:
+{"type":"mcq","prompt":"آقای کریمی چه کار می‌کند؟","options":["در کافه آشپز است","معلم است","در کلن دانشجوست","در بانک کار می‌کند"],"correct":2,"explanation_fa":"آقای کریمی می‌گوید: «Ich bin 23 Jahre alt und studiere in Köln.»"}
+{"type":"tf","prompt":"آقای کریمی قبلاً گارسون بوده است.","correct":true,"explanation_fa":"آقای کریمی می‌گوید: «letztes Jahr war ich Kellner in einem Restaurant»."}
+{"type":"tf","prompt":"آقای کریمی آخر هفته وقت ندارد.","correct":false,"explanation_fa":"آقای کریمی می‌گوید: «Ja, am Wochenende habe ich Zeit.»"}
+reading B:
+{"type":"order","prompt":"سؤال‌ها را به ترتیب گفتگو مرتب کن.","items":["می‌پرسند آخر هفته هم می‌تواند کار کند.","از او می‌خواهند خودش را معرفی کند.","می‌پرسند دوشنبه می‌تواند شروع کند.","درباره کار قبلی‌اش می‌پرسند."],"correct_order":[1,3,0,2],"explanation_fa":"اول «Bitte stellen Sie sich kurz vor»، بعد «Haben Sie schon in einem Café gearbeitet?»، بعد «am Wochenende» و آخر «am Montag anfangen»."}
+{"type":"find","prompt":"کدام جمله درباره کار قبلی آقای کریمی است؟","correct_sentence":3,"explanation_fa":"آقای کریمی می‌گوید: «letztes Jahr war ich Kellner in einem Restaurant»."}
+listening A:
+{"type":"num","prompt":"آقای کریمی چند سال دارد؟","answer":"23","accepted":["23","dreiundzwanzig"],"explanation_fa":"آقای کریمی می‌گوید: «Ich bin 23 Jahre alt.»"}
+{"type":"mcq","prompt":"آقای کریمی پارسال کجا کار کرد؟","options":["در یک کافه","در یک رستوران","در یک هتل","در یک سوپرمارکت"],"correct":1,"explanation_fa":"آقای کریمی می‌گوید: «letztes Jahr war ich Kellner in einem Restaurant»."}
+listening B:
+{"type":"dict","sentence":5}
+{"type":"tf","prompt":"آقای کریمی می‌تواند از دوشنبه کار را شروع کند.","correct":true,"explanation_fa":"وقتی می‌پرسند «Können Sie am Montag anfangen?»، می‌گوید: «Ja, sehr gern!»"}
+{"type":"tf","prompt":"آقای کریمی در هامبورگ دانشجوست.","correct":false,"explanation_fa":"آقای کریمی می‌گوید: «studiere in Köln»، یعنی در کلن."}

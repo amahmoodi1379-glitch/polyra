@@ -13,7 +13,7 @@ sentences:
 - Bringen Sie auch Ihre Freunde mit! | دوستانتان را هم با خودتان بیاورید!
 - Wenn es regnet, feiern wir in der Schule. | اگر باران ببارد، در مدرسه جشن می‌گیریم.
 reading A:
-{"type":"mcq","prompt":"جشن کی است؟","options":["جمعه","شنبه","یکشنبه","دوشنبه"],"correct":1,"explanation_fa":"در آگهی آمده: «Am Samstag feiern wir.»"}
+{"type":"mcq","prompt":"جشن کی است؟","options":["جمعه","یکشنبه","دوشنبه","شنبه"],"correct":3,"explanation_fa":"در آگهی آمده: «Am Samstag feiern wir.»"}
 {"type":"tf","prompt":"بچه‌ها برای جشن پول نمی‌دهند.","correct":true,"explanation_fa":"در آگهی آمده: «Erwachsene bezahlen 5 Euro, Kinder nichts.»"}
 {"type":"tf","prompt":"جشن تا ساعت ۱۸ است.","correct":false,"explanation_fa":"در آگهی آمده: «von 12 bis 22 Uhr»، یعنی تا ساعت ۲۲."}
 reading B:
