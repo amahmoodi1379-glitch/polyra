@@ -1,6 +1,7 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { fold } from "@/engine/tokens";
+import { standardTable } from "../conjugation-check";
 import { germanVerb } from "../german-verbs";
 import { closedTable } from "./closed";
 import type { PackWord } from "./words";
@@ -125,6 +126,9 @@ const frenchMasculine = (lemma: string) => {
 };
 const FRENCH_BEFORE_VOWEL: Record<string, string> = { bel: "beau", nouvel: "nouveau", vieil: "vieux", fol: "fou", mol: "mou" };
 
+/** The French tenses whose forms the reader takes from the conjugation tables too (the last word: the participle of passé composé). */
+const FRENCH_READ_TENSES = ["présent", "imparfait", "futur simple", "conditionnel présent", "subjonctif présent", "passé composé", "impératif"];
+
 /** A word's lemma without a reflexive pronoun (se laver → laver, sich freuen → freuen). */
 export const bareLemma = (lemma: string) => lemma.replace(/^(se |s'|sich )/u, "");
 
@@ -171,6 +175,30 @@ export class Morph {
           const fits = language === "fr" ? frenchPos(reading.tag).includes(owner.word.pos) : owner.word.pos === "noun";
           if (fits) add(this.forms, form, { word: owner, score: 5 + Math.min(4, Math.log10(1 + reading.freq)), via: "form", gn: reading.gn });
         }
+      }
+    }
+    // French verb forms Lexique lacks (réserverais, avertirons, étudiions): from the conjugation tables, below its readings.
+    if (language === "fr") {
+      for (const item of words) {
+        if (item.word.pos !== "verb") continue;
+        for (const tense of FRENCH_READ_TENSES) {
+          const table = standardTable("fr", item.word.lemma, tense);
+          if (!table) continue;
+          for (const value of [...Object.values(table.forms), ...Object.values(table.variants).flat()]) {
+            const form = value.split(" ").pop()!.replace(/^\p{L}'/u, "");
+            if (form && !(this.forms.get(fold(form)) ?? []).some((candidate) => candidate.word === item)) add(this.forms, form, { word: item, score: 5, via: "verb" });
+          }
+        }
+      }
+    }
+    // A French noun whose plural Lexique files only under another part of speech (portables, lacs, smartphones):
+    // the regular plural, below every reading the lexicon gives.
+    if (language === "fr") {
+      for (const item of words) {
+        const lemma = item.word.lemma;
+        if (item.word.pos !== "noun" || item.word.plural || /[\s'-]/u.test(lemma) || /[sxz]$/u.test(lemma) || /(al|au|eu)$/u.test(lemma)) continue;
+        const plural = `${lemma}s`;
+        if (!(this.forms.get(fold(plural)) ?? []).some((candidate) => candidate.word === item)) add(this.forms, plural, { word: item, score: 5, via: "form", gn: "p" });
       }
     }
     // Function words.

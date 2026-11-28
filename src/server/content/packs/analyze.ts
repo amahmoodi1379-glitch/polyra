@@ -106,6 +106,12 @@ const AUXILIARY: Record<string, string[]> = {
 const BEFORE_INFINITIVE = new Set(["venir de"]);
 /** French object pronouns that may stand between a word and its infinitive (vient de lui parler). */
 const FR_CLITIC = /^(me|m'|te|t'|se|s'|le|la|les|l'|lui|leur|y|en|nous|vous)$/u;
+/** A French verb phrase's possessive (prendre son temps) and the possessives that stand for it in other persons. */
+const FR_POSSESSIVE: Record<string, string[]> = {
+  son: ["mon", "ton", "notre", "votre", "leur"],
+  sa: ["ma", "ta", "notre", "votre", "leur"],
+  ses: ["mes", "tes", "nos", "vos", "leurs"],
+};
 /** French subject pronouns (for a reflexive pronoun's person). */
 const FR_SUBJECT = /^(je|j'|tu|il|elle|on|nous|vous|ils|elles)$/u;
 
@@ -192,7 +198,15 @@ export class Analyzer {
     if (APOSTROPHE.test(unit.surface) && (ELIDED[surface] ?? []).includes(piece)) return true;
     // A phrase that ends in «de» or «à» takes the article with it: à cause du froid, jusqu'au soir, près des gares.
     if (this.language === "fr" && k === phrase.pieces.length - 1 && k > 0 && (CONTRACTED[surface] ?? []).includes(piece)) return true;
-    if (piece === REFLEXIVE_PIECE[this.language] && phrase.pieces.length >= 3 && REFLEXIVE_PERSON[this.language]?.[surface] !== undefined && (surface.length > 1 || APOSTROPHE.test(unit.surface))) return true;
+    // «s'en aller»: the elided se of a verb phrase in another person too (je m'en vais).
+    const reflexive = piece === REFLEXIVE_PIECE[this.language] || (this.language === "fr" && piece === "s" && !!phrase.verb && phrase.verb.index > k);
+    if (reflexive && phrase.pieces.length >= 3 && REFLEXIVE_PERSON[this.language]?.[surface] !== undefined && (surface.length > 1 || APOSTROPHE.test(unit.surface))) return true;
+    if (this.language === "fr" && phrase.verb && !phrase.personal) {
+      // A verb phrase's possessive in every person (passer mon permis, donner votre avis, faire de leur mieux) …
+      if (k > phrase.verb.index && FR_POSSESSIVE[piece]?.includes(surface)) return true;
+      // … and its object pronoun before the verb (ça te plaît, ça ne lui dit rien).
+      if (k < phrase.verb.index && /^(me|m)$/u.test(piece) && /^(te|t|lui|nous|vous|leur)$/u.test(surface) && (surface.length > 1 || APOSTROPHE.test(unit.surface))) return true;
+    }
     // A verb is never an elided piece (Lexique lists «n'» under avoir); after je/ich it is the phrase's own form.
     if (phrase.personal && phrase.verb?.index === k && piece !== fold(bareLemma(phrase.verb.word.word.lemma))) return false;
     return phrase.verb?.index === k && !APOSTROPHE.test(unit.surface) && this.morph.candidates(unit.surface).some((candidate) => candidate.word === phrase.verb!.word);

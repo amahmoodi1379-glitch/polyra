@@ -547,6 +547,30 @@ describe("a French reflexive phrase in a compound tense", () => {
   });
 });
 
+describe("French verb phrases in every person, and verb forms Lexique lacks", () => {
+  it("reads prends ton temps, ça te plaît and réserverais", () => {
+    const list = words("fr", [
+      "je\tpron\t\t\tمن\tمن\tpeople",
+      "ça\tpron\t\t\tآن\tآن\tfunction",
+      "me\tpron\t\t\tمرا\tمرا\tfunction",
+      "te\tpron\t\t\tتو را\tتو را\tfunction",
+      "ton\tdet\t\t\tـت\tـت\tfunction",
+      "son\tdet\t\t\tـش\tـش\tfunction",
+      "prendre\tverb\t\t\tگرفتن\tگرفتن\tactions",
+      "plaire\tverb\t\t\tخوشایند بودن\tخوشایند بودن\tfeelings",
+      "réserver\tverb\t\t\tرزرو کردن\tرزرو کردن\ttravel",
+      "temps\tnoun\tm\t\tوقت\tوقت\ttime",
+      "prendre son temps\tphrase\t\t\tوقت گذاشتن\tوقت گذاشتن\ttime\tparts:prendre temps",
+      "ça me plaît\tphrase\t\t\tخوشم می‌آید\tخوشم می‌آید\tfeelings\tparts:plaire",
+    ]);
+    const analyzer = analyzerOf("fr", list);
+    const codes = (text: string) => analyzer.analyze(text, { level: "A1" }).tokens.map((token) => token.code);
+    expect(codes("Prends ton temps.")).toEqual(["prendre son temps"]);
+    expect(codes("Ça te plaît ?")).toEqual(["ça me plaît"]);
+    expect(codes("Je réserverais.")).toEqual(["je", "réserver"]);
+  });
+});
+
 describe("answers of a unit", () => {
   it("takes «ok:  / x» as another answer of the second gap only", () => {
     const analyzer = analyzerOf("fr", pack.words);

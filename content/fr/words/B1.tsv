@@ -254,7 +254,7 @@ il paraît que	phrase			ظاهراً، شنیده‌ام که	ظاهراً	media
 reprendre	verb			دوباره گرفتن، از سر گرفتن	دوباره گرفتن	actions	checked:level	coll:reprendre le travail → کار را از سر گرفتن
 reprendre des forces	phrase			جان گرفتن، دوباره قوی شدن	جان گرفتن	health	parts:reprendre
 agir	verb			عمل کردن، اقدام کردن	عمل کردن	actions	checked:level
-s'agir de	verb			موضوعِ ... بودن، صحبت از ... بودن	موضوع بودن	abstract	coll:il s'agit de ton avenir → موضوع آیندهٔ توست
+s'agir de	verb			موضوعِ ... بودن، صحبت از ... بودن	موضوع بودن	abstract	parts:agir	coll:il s'agit de ton avenir → موضوع آیندهٔ توست
 valoir	verb			ارزش داشتن، بها داشتن	ارزش داشتن	economy	checked:level	coll:il vaut mieux partir → بهتر است برویم
 ça vaut le coup	phrase			ارزشش را دارد، می‌ارزد	ارزشش را داشتن	abstract	parts:valoir coup	register:familier
 il vaut mieux	phrase			بهتر است (که)	بهتر است (که)	abstract	parts:valoir mieux
