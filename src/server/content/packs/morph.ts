@@ -200,6 +200,15 @@ export class Morph {
         const plural = `${lemma}s`;
         if (!(this.forms.get(fold(plural)) ?? []).some((candidate) => candidate.word === item)) add(this.forms, plural, { word: item, score: 5, via: "form", gn: "p" });
       }
+      // An adjective in -é that Lexique lists only in the masculine (stressé): stressée, stressés, stressées.
+      for (const item of words) {
+        const lemma = item.word.lemma;
+        if (item.word.pos !== "adj" || !/é$/u.test(lemma) || /[\s'-]/u.test(lemma)) continue;
+        for (const [ending, gn] of [["e", "fs"], ["s", "mp"], ["es", "fp"]] as const) {
+          const form = `${lemma}${ending}`;
+          if (!(this.forms.get(fold(form)) ?? []).some((candidate) => candidate.word === item)) add(this.forms, form, { word: item, score: 5, via: "form", gn });
+        }
+      }
     }
     // Function words.
     for (const item of words) {
