@@ -1,0 +1,36 @@
+code: de-a2-t068
+title: Deine Fahrt nach Köln
+band: 2
+kind: schedule
+key_words: Anschluss, verpassen, Bahnsteig, Ausgang, Eingang
+sentences:
+- Hallo Tante Leila, so fährst du am Samstag zu uns: | سلام خاله لیلا، شنبه این‌طوری پیش ما می‌آیی:
+- 09:12 Uhr: Abfahrt in München, Bahnsteig 14. | ساعت ۹:۱۲: حرکت از مونیخ، سکوی ۱۴. | tts: Neun Uhr zwölf: Abfahrt in München, Bahnsteig vierzehn.
+- 12:30 Uhr: Ankunft in Frankfurt. Dort musst du umsteigen. | ساعت ۱۲:۳۰: رسیدن به فرانکفورت. آنجا باید قطار عوض کنی. | tts: Zwölf Uhr dreißig: Ankunft in Frankfurt. Dort musst du umsteigen.
+- 12:45 Uhr: Dein Anschluss nach Köln fährt von Bahnsteig 9 ab. | ساعت ۱۲:۴۵: قطار بعدی‌ات به کلن از سکوی ۹ حرکت می‌کند. | tts: Zwölf Uhr fünfundvierzig: Dein Anschluss nach Köln fährt von Bahnsteig neun ab.
+- Du hast nur 15 Minuten Zeit. Hör bei den Durchsagen gut zu! | فقط ۱۵ دقیقه وقت داری. وقتی از بلندگو چیزی اعلام می‌کنند، خوب گوش بده! | tts: Du hast nur fünfzehn Minuten Zeit. Hör bei den Durchsagen gut zu!
+- Wenn du den Anschluss verpasst, ist das kein Problem. Jede Stunde fährt ein Zug nach Köln. | اگر به قطار بعدی نرسیدی، اشکالی ندارد. هر ساعت یک قطار به کلن می‌رود.
+- Ruf mich dann bitte an. Du erreichst mich immer auf dem Handy. | آن‌وقت لطفاً به من زنگ بزن. همیشه با موبایل در دسترسم.
+- 13:55 Uhr: Ankunft in Köln. Ich warte am Ausgang, gleich neben dem Kiosk. | ساعت ۱۳:۵۵: رسیدن به کلن. کنار در خروجی منتظرت هستم، درست کنار کیوسک. | tts: Dreizehn Uhr fünfundfünfzig: Ankunft in Köln. Ich warte am Ausgang, gleich neben dem Kiosk.
+- Unsere Wohnung ist nicht weit vom Bahnhof. Wir gehen zu Fuß. | خانه ما از ایستگاه دور نیست. پیاده می‌رویم.
+- Der Eingang von unserem Haus ist hinten im Hof. | در ورودی ساختمان ما پشت ساختمان، توی حیاط است.
+- Gute Fahrt! Deine Mina | سفر بخیر! مینا
+reading A:
+{"type":"mcq","prompt":"مینا این متن را برای چه نوشته است؟","options":["تا بگوید خودش به مونیخ می‌آید","تا خاله‌اش بداند چطور با قطار به کلن بیاید","تا خاله‌اش برایش بلیت بخرد","تا بگوید شنبه قطاری نیست"],"correct":1,"explanation_fa":"مینا می‌نویسد: «so fährst du am Samstag zu uns» و بعد ساعت‌ها و سکوهای قطار را می‌گوید."}
+{"type":"tf","prompt":"خاله لیلا در فرانکفورت باید قطار عوض کند.","correct":true,"explanation_fa":"در برنامه آمده: «Ankunft in Frankfurt. Dort musst du umsteigen.»"}
+{"type":"tf","prompt":"اگر خاله لیلا به قطار بعدی نرسد، تا فردا قطاری به کلن نیست.","correct":false,"explanation_fa":"مینا می‌نویسد: «Jede Stunde fährt ein Zug nach Köln.»"}
+{"type":"mcq","prompt":"مینا در کلن کجا منتظر خاله‌اش است؟","options":["روی سکوی ۹","جلوی در خانه","کنار در خروجی، نزدیک کیوسک","در حیاط خانه"],"correct":2,"explanation_fa":"مینا می‌نویسد: «Ich warte am Ausgang, gleich neben dem Kiosk.»"}
+reading B:
+{"type":"match","prompt":"هر ساعت را به برنامه‌اش وصل کن.","left":["۰۹:۱۲","۱۲:۴۵","۱۳:۵۵"],"right":["رسیدن به کلن","حرکت از مونیخ","حرکت قطار بعدی به کلن","رسیدن به فرانکفورت"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"در برنامه آمده: «09:12 Uhr: Abfahrt in München»، «12:45 Uhr: Dein Anschluss nach Köln» و «13:55 Uhr: Ankunft in Köln»."}
+{"type":"find","prompt":"کدام جمله می‌گوید در ورودی خانه مینا کجاست؟","correct_sentence":9,"explanation_fa":"مینا می‌نویسد: «Der Eingang von unserem Haus ist hinten im Hof.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Wenn du den {{1}} verpasst, ist das kein Problem. Jede {{2}} fährt ein Zug nach Köln.","bank":["Anschluss","Stunde","Ausgang","Minute","Bahnsteig"],"answers":["Anschluss","Stunde"],"explanation_fa":"مینا می‌نویسد: «Wenn du den Anschluss verpasst, ist das kein Problem. Jede Stunde fährt ein Zug nach Köln.»"}
+listening A:
+{"type":"num","prompt":"قطار از مونیخ ساعت چند حرکت می‌کند؟","answer":"9:12","accepted":["9:12","09:12","9.12","9:12 Uhr","neun Uhr zwölf"],"explanation_fa":"مینا می‌گوید: «09:12 Uhr: Abfahrt in München.»"}
+{"type":"num","prompt":"خاله لیلا در فرانکفورت چند دقیقه وقت دارد؟","answer":"15","accepted":["15","fünfzehn","15 Minuten"],"explanation_fa":"مینا می‌گوید: «Du hast nur 15 Minuten Zeit.»"}
+{"type":"tf","prompt":"خانه مینا از ایستگاه دور است.","correct":false,"explanation_fa":"مینا می‌گوید: «Unsere Wohnung ist nicht weit vom Bahnhof.»"}
+{"type":"tf","prompt":"مینا همیشه با موبایل در دسترس است.","correct":true,"explanation_fa":"مینا می‌گوید: «Du erreichst mich immer auf dem Handy.»"}
+listening B:
+{"type":"num","prompt":"قطار بعدی به کلن از کدام سکو حرکت می‌کند؟","answer":"9","accepted":["9","neun","Bahnsteig 9"],"explanation_fa":"مینا می‌گوید: «Dein Anschluss nach Köln fährt von Bahnsteig 9 ab.»"}
+{"type":"mcq","prompt":"از ایستگاه کلن تا خانه مینا چطور می‌روند؟","options":["با تاکسی","با اتوبوس","پیاده","با ماشین مینا"],"correct":2,"explanation_fa":"مینا می‌گوید: «Wir gehen zu Fuß.»"}
+{"type":"tf","prompt":"اگر خاله لیلا به قطار بعدی نرسید، باید به مینا زنگ بزند.","correct":true,"explanation_fa":"مینا بعد از «Wenn du den Anschluss verpasst» می‌گوید: «Ruf mich dann bitte an.»"}
+{"type":"tf","prompt":"در ورودی خانه مینا رو به خیابان است.","correct":false,"explanation_fa":"مینا می‌گوید: «Der Eingang von unserem Haus ist hinten im Hof»، یعنی در پشت ساختمان و توی حیاط است."}

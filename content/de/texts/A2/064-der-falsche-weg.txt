@@ -1,0 +1,37 @@
+code: de-a2-t064
+title: Der falsche Weg
+band: 2
+kind: email
+key_words: Kindergarten, Feuerwehr, Richtung, Polizistin, nach dem Weg fragen
+sentences:
+- Liebe{lieb} Anna, | آنای عزیز،
+- wir wohnen jetzt schon drei Wochen in Köln, und es gefällt uns gut. | الان سه هفته است که در کلن زندگی می‌کنیم و از این‌جا خوشمان می‌آید.
+- Aber gestern hatte ich ein kleines Problem. | ولی دیروز یک مشکل کوچک داشتم.
+- Ich wollte Reza allein vom Kindergarten abholen. Das war neu für mich. | می‌خواستم رضا را تنهایی از مهدکودک بیاورم. این کار برایم تازه بود.
+- Der Kindergarten ist neben der Feuerwehr. | مهدکودک کنار ایستگاه آتش‌نشانی است.
+- Aber ich bin in die falsche Richtung gegangen, und plötzlich war alles fremd. | ولی راه را اشتباهی رفتم و یک‌دفعه همه جا برایم ناآشنا بود.
+- Mein Handy funktionierte auch nicht. | گوشی‌ام هم کار نمی‌کرد.
+- Dann habe ich eine Polizistin nach dem Weg gefragt. | بعد از یک خانم پلیس راه را پرسیدم.
+- Sie war sehr nett und hat mir den Weg gezeigt: zurück zur Kreuzung und dann links. | خیلی مهربان بود و راه را نشانم داد: برگردم تا چهارراه و بعد بپیچم سمت چپ.
+- Ich bin zwanzig Minuten später angekommen, aber Reza war gar nicht traurig. | بیست دقیقه دیرتر رسیدم، ولی رضا اصلاً ناراحت نبود.
+- Er hat mit den anderen Kindern im Garten gespielt. | با بچه‌های دیگر توی حیاط بازی کرده بود.
+- Jetzt habe ich immer einen Stadtplan in meiner Tasche! | حالا همیشه یک نقشه شهر توی کیفم دارم!
+- Grüße{Gruß} aus Köln, deine Maryam | سلام از کلن، مریم
+reading A:
+{"type":"mcq","prompt":"مریم دیروز چه مشکلی داشت؟","options":["رضا مریض شد","ماشینش خراب شد","راه مهدکودک را گم کرد","کیفش را گم کرد"],"correct":2,"explanation_fa":"مریم می‌نویسد: «ich bin in die falsche Richtung gegangen, und plötzlich war alles fremd»، یعنی راه را گم کرد."}
+{"type":"tf","prompt":"مریم و خانواده‌اش سه هفته است که در کلن زندگی می‌کنند.","correct":true,"explanation_fa":"مریم می‌نویسد: «wir wohnen jetzt schon drei Wochen in Köln»."}
+{"type":"tf","prompt":"گوشی مریم خوب کار می‌کرد.","correct":false,"explanation_fa":"مریم می‌نویسد: «Mein Handy funktionierte auch nicht.»"}
+{"type":"mcq","prompt":"مهدکودک کجاست؟","options":["کنار ایستگاه پلیس","کنار ایستگاه آتش‌نشانی","روبه‌روی خانه مریم","کنار یک پارک"],"correct":1,"explanation_fa":"مریم می‌نویسد: «Der Kindergarten ist neben der Feuerwehr.»"}
+reading B:
+{"type":"order","prompt":"این‌ها را به ترتیبی که اتفاق افتاد بچین.","items":["مریم از یک خانم پلیس راه را پرسید.","مریم راه را اشتباهی رفت.","مریم به مهدکودک رسید.","خانم پلیس راه را به مریم نشان داد."],"correct_order":[1,0,3,2],"explanation_fa":"اول «ich bin in die falsche Richtung gegangen»، بعد «habe ich eine Polizistin nach dem Weg gefragt»، بعد «hat mir den Weg gezeigt» و آخر «Ich bin zwanzig Minuten später angekommen»."}
+{"type":"find","prompt":"کدام جمله می‌گوید رضا ناراحت نبود؟","correct_sentence":9,"explanation_fa":"مریم می‌نویسد: «aber Reza war gar nicht traurig»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Dann habe ich eine {{1}} nach dem Weg gefragt. Sie war sehr nett und hat mir den {{2}} gezeigt.","bank":["Polizistin","Weg","Richtung","Kreuzung","Feuerwehr"],"answers":["Polizistin","Weg"],"explanation_fa":"مریم می‌نویسد: «Dann habe ich eine Polizistin nach dem Weg gefragt. Sie war sehr nett und hat mir den Weg gezeigt.»"}
+listening A:
+{"type":"mcq","prompt":"مریم از چه کسی کمک گرفت؟","options":["از معلم مهدکودک","از دوستش آنا","از یک راننده تاکسی","از یک خانم پلیس"],"correct":3,"explanation_fa":"مریم می‌گوید: «Dann habe ich eine Polizistin nach dem Weg gefragt.»"}
+{"type":"tf","prompt":"مریم بیست دقیقه دیرتر به مهدکودک رسید.","correct":true,"explanation_fa":"مریم می‌گوید: «Ich bin zwanzig Minuten später angekommen.»"}
+{"type":"tf","prompt":"وقتی مریم رسید، رضا ناراحت بود و گریه می‌کرد.","correct":false,"explanation_fa":"مریم می‌گوید: «Reza war gar nicht traurig» و با بچه‌های دیگر بازی کرده بود."}
+{"type":"mcq","prompt":"خانم پلیس چه راهی را نشان داد؟","options":["به راست بپیچد و از پل رد شود","تا چهارراه برگردد و بعد به چپ بپیچد","تا ایستگاه آتش‌نشانی مستقیم برود","سوار اتوبوس شود و دو ایستگاه برود"],"correct":1,"explanation_fa":"مریم می‌گوید خانم پلیس راه را این‌طور نشان داد: «zurück zur Kreuzung und dann links»."}
+listening B:
+{"type":"mcq","prompt":"وقتی مریم رسید، رضا چه کار کرده بود؟","options":["خوابیده بود","غذا خورده بود","با بچه‌های دیگر بازی کرده بود","با معلمش کتاب خوانده بود"],"correct":2,"explanation_fa":"مریم می‌گوید: «Er hat mit den anderen Kindern im Garten gespielt.»"}
+{"type":"tf","prompt":"مریم حالا همیشه یک نقشه شهر همراهش دارد.","correct":true,"explanation_fa":"مریم می‌گوید: «Jetzt habe ich immer einen Stadtplan in meiner Tasche!»"}
+{"type":"tf","prompt":"مریم با همسرش به مهدکودک رفت.","correct":false,"explanation_fa":"مریم می‌گوید: «Ich wollte Reza allein vom Kindergarten abholen»، یعنی تنها رفت."}

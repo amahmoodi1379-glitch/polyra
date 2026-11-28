@@ -1,0 +1,34 @@
+code: de-a2-t072
+title: Jugendherberge München
+band: 2
+kind: schedule
+key_words: Jugendherberge, Übernachtung, Führung, besichtigen, Pension
+sentences:
+- Willkommen in der Jugendherberge München! Das gibt es diese Woche für unsere Gäste: | به مسافرخانه جوانان مونیخ خوش آمدید! این هفته برای مهمان‌هایمان این برنامه‌ها را داریم:
+- Montag, 10:00 Uhr: Führung in der Altstadt. Wir besichtigen eine alte Kirche und ein Schloss. | دوشنبه، ساعت ۱۰: بازدید با راهنما در بافت قدیم شهر. از یک کلیسای قدیمی و یک کاخ دیدن می‌کنیم. | tts: Montag, zehn Uhr: Führung in der Altstadt. Wir besichtigen eine alte Kirche und ein Schloss.
+- Für Touristen aus dem Ausland gibt es die Führung auch auf Englisch. | برای گردشگرهای خارجی، این بازدید به زبان انگلیسی هم هست.
+- Dienstag, 9:00 Uhr: Ausflug mit dem Zug in die Berge. Bitte bringen Sie Wasser mit. | سه‌شنبه، ساعت ۹: گردش با قطار به کوهستان. لطفاً آب همراهتان بیاورید. | tts: Dienstag, neun Uhr: Ausflug mit dem Zug in die Berge. Bitte bringen Sie Wasser mit.
+- Mittwoch, 19:00 Uhr: Wir grillen im Garten. | چهارشنبه، ساعت ۱۹: در باغ کباب درست می‌کنیم. | tts: Mittwoch, neunzehn Uhr: Wir grillen im Garten.
+- Donnerstag: Das Museum am Markt ist für unsere Gäste kostenlos. | پنجشنبه: موزه کنار میدان بازار برای مهمان‌های ما رایگان است.
+- Eine Übernachtung mit Frühstück kostet 32 Euro. | یک شب اقامت با صبحانه ۳۲ یورو است. | tts: Eine Übernachtung mit Frühstück kostet zweiunddreißig Euro.
+- Bitte melden Sie sich für die Führung und den Ausflug bis 18 Uhr am Tag vorher an der Rezeption an. | لطفاً برای بازدید و گردش تا ساعت ۱۸ روز قبل در پذیرش ثبت‌نام کنید. | tts: Bitte melden Sie sich für die Führung und den Ausflug bis achtzehn Uhr am Tag vorher an der Rezeption an.
+- Ihre Freunde brauchen noch ein Zimmer? Wir haben leider keine Zimmer mehr. Fragen Sie in der Pension Müller gleich gegenüber. | دوستانتان هنوز اتاق لازم دارند؟ متأسفانه ما دیگر اتاق نداریم. از مسافرخانه مولر، درست روبه‌رو، بپرسید.
+reading A:
+{"type":"mcq","prompt":"این متن چیست؟","options":["فهرست قیمت‌های یک هتل بزرگ","برنامه هفته یک مسافرخانه جوانان","برنامه کلاس‌های یک مدرسه","آگهی یک فروشگاه دوچرخه"],"correct":1,"explanation_fa":"متن با «Willkommen in der Jugendherberge München!» شروع می‌شود و برنامه روزهای هفته را برای مهمان‌ها می‌گوید."}
+{"type":"tf","prompt":"بازدید دوشنبه به زبان انگلیسی هم هست.","correct":true,"explanation_fa":"در برنامه آمده: «Für Touristen aus dem Ausland gibt es die Führung auch auf Englisch.»"}
+{"type":"tf","prompt":"گردش سه‌شنبه با دوچرخه است.","correct":false,"explanation_fa":"در برنامه آمده: «Ausflug mit dem Zug in die Berge»، یعنی گردش با قطار است."}
+{"type":"mcq","prompt":"یک شب اقامت با صبحانه چند یورو است؟","options":["۲۳ یورو","۳۹ یورو","۱۸ یورو","۳۲ یورو"],"correct":3,"explanation_fa":"در برنامه آمده: «Eine Übernachtung mit Frühstück kostet 32 Euro.»"}
+reading B:
+{"type":"match","prompt":"هر روز را به برنامه‌اش وصل کن.","left":["دوشنبه","سه‌شنبه","چهارشنبه","پنجشنبه"],"right":["کباب در باغ","گردش با قطار به کوهستان","بازدید با راهنما در بافت قدیم","موزه رایگان","شنا در دریاچه"],"pairs":[[0,2],[1,1],[2,0],[3,3]],"explanation_fa":"در برنامه آمده: «Montag … Führung in der Altstadt»، «Dienstag … Ausflug mit dem Zug in die Berge»، «Mittwoch … Wir grillen im Garten» و «Donnerstag: Das Museum … kostenlos»."}
+{"type":"find","prompt":"کدام جمله می‌گوید کجا و تا کی باید برای برنامه‌ها ثبت‌نام کرد؟","correct_sentence":7,"explanation_fa":"در برنامه آمده: «Bitte melden Sie sich … bis 18 Uhr am Tag vorher an der Rezeption an.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Montag, 10:00 Uhr: {{1}} in der Altstadt. Wir {{2}} eine alte Kirche und ein Schloss.","bank":["Führung","besichtigen","Übernachtung","grillen","Pension"],"answers":["Führung","besichtigen"],"explanation_fa":"در برنامه آمده: «Montag, 10:00 Uhr: Führung in der Altstadt. Wir besichtigen eine alte Kirche und ein Schloss.»"}
+listening A:
+{"type":"num","prompt":"بازدید دوشنبه ساعت چند شروع می‌شود؟","answer":"10","accepted":["10","10:00","10 Uhr","zehn"],"explanation_fa":"در برنامه آمده: «Montag, 10:00 Uhr: Führung in der Altstadt.»"}
+{"type":"mcq","prompt":"برای گردش سه‌شنبه چه باید همراه بیاورند؟","options":["غذا","دوچرخه","آب","نقشه"],"correct":2,"explanation_fa":"در برنامه آمده: «Bitte bringen Sie Wasser mit.»"}
+{"type":"tf","prompt":"چهارشنبه شب در باغ کباب درست می‌کنند.","correct":true,"explanation_fa":"در برنامه آمده: «Mittwoch, 19:00 Uhr: Wir grillen im Garten.»"}
+{"type":"tf","prompt":"مسافرخانه جوانان این هفته اتاق خالی زیادی دارد.","correct":false,"explanation_fa":"در برنامه آمده: «Wir haben leider keine Zimmer mehr.»"}
+listening B:
+{"type":"num","prompt":"یک شب اقامت با صبحانه چند یورو است؟","answer":"32","accepted":["32","32 Euro","zweiunddreißig"],"explanation_fa":"در برنامه آمده: «Eine Übernachtung mit Frühstück kostet 32 Euro.»"}
+{"type":"mcq","prompt":"اگر دوستانتان اتاق لازم دارند، کجا بپرسند؟","options":["در پذیرش همین مسافرخانه","در مسافرخانه مولر، روبه‌رو","در موزه کنار میدان","در هتل کنار ایستگاه"],"correct":1,"explanation_fa":"در برنامه آمده: «Fragen Sie in der Pension Müller gleich gegenüber.»"}
+{"type":"tf","prompt":"برای بازدید و گردش باید تا ساعت ۱۸ روز قبل ثبت‌نام کرد.","correct":true,"explanation_fa":"در برنامه آمده: «bis 18 Uhr am Tag vorher an der Rezeption»."}
+{"type":"tf","prompt":"بازدید فقط به زبان آلمانی است.","correct":false,"explanation_fa":"در برنامه آمده: «gibt es die Führung auch auf Englisch»."}

@@ -1,0 +1,25 @@
+code: de-a2-t065
+title: Der Verkehr am Morgen
+kind: announcement
+key_words: Verkehr, Stau, einen Unfall haben, Norden, Osten
+sentences:
+- Guten Morgen! Hier ist der Verkehr für München. | صبح بخیر! این هم خبر رفت و آمد در مونیخ.
+- Im Norden von München gibt es einen langen Stau. | در شمال مونیخ یک راه‌بندان طولانی هست.
+- Dort hatte ein Auto einen Unfall. Die Polizei ist schon da. | آنجا یک ماشین تصادف کرده است. پلیس هم الان آنجاست.
+- Im Osten ist die Brücke am Bahnhof heute geschlossen. | در شرق، پل کنار ایستگاه قطار امروز بسته است.
+- Im Süden und im Westen gibt es keine Probleme. | در جنوب و غرب مشکلی نیست.
+- Am Nachmittag regnet es. Bitte fahren Sie langsam! | بعدازظهر باران می‌آید. لطفاً آهسته رانندگی کنید!
+reading A:
+{"type":"mcq","prompt":"این متن درباره چیست؟","options":["هوای فردا در مونیخ","وضعیت رفت و آمد در مونیخ","یک جشن در مونیخ","قطارهای ایستگاه مونیخ"],"correct":1,"explanation_fa":"گوینده می‌گوید: «Hier ist der Verkehr für München.» و بعد از راه‌بندان، تصادف و پل بسته می‌گوید."}
+{"type":"tf","prompt":"در شمال مونیخ راه‌بندان است.","correct":true,"explanation_fa":"در متن آمده: «Im Norden von München gibt es einen langen Stau.»"}
+{"type":"tf","prompt":"در غرب شهر یک تصادف شده است.","correct":false,"explanation_fa":"تصادف در شمال است. درباره غرب آمده: «Im Süden und im Westen gibt es keine Probleme.»"}
+reading B:
+{"type":"match","prompt":"هر منطقه را به خبرش وصل کن.","left":["شمال","شرق","جنوب و غرب"],"right":["مشکلی نیست","پل بسته است","راه‌بندان و تصادف","برف سنگین"],"pairs":[[0,2],[1,1],[2,0]],"explanation_fa":"در متن آمده: «Im Norden … Stau» و «Unfall»، «Im Osten ist die Brücke … geschlossen» و «Im Süden und im Westen gibt es keine Probleme»."}
+{"type":"find","prompt":"کدام جمله می‌گوید پلیس آنجاست؟","correct_sentence":2,"explanation_fa":"در متن آمده: «Die Polizei ist schon da.»"}
+listening A:
+{"type":"mcq","prompt":"در شرق شهر چه خبر است؟","options":["یک تصادف شده است","راه‌بندان طولانی است","پل کنار ایستگاه قطار بسته است","خیابان‌ها خالی است"],"correct":2,"explanation_fa":"گوینده می‌گوید: «Im Osten ist die Brücke am Bahnhof heute geschlossen.»"}
+{"type":"tf","prompt":"بعدازظهر باران می‌آید.","correct":true,"explanation_fa":"گوینده می‌گوید: «Am Nachmittag regnet es.»"}
+{"type":"tf","prompt":"پلیس هنوز به محل تصادف نرسیده است.","correct":false,"explanation_fa":"گوینده می‌گوید: «Die Polizei ist schon da.»"}
+listening B:
+{"type":"dict","sentence":4}
+{"type":"mcq","prompt":"گوینده از راننده‌ها چه می‌خواهد؟","options":["در خانه بمانند","با قطار بیایند","از پل استفاده کنند","آهسته رانندگی کنند"],"correct":3,"explanation_fa":"گوینده می‌گوید: «Bitte fahren Sie langsam!»"}

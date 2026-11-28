@@ -1,0 +1,36 @@
+code: de-a2-t063
+title: Unser Samstag
+band: 2
+kind: schedule
+key_words: Werkstatt, zum Friseur gehen, Bibliothek, Spielplatz, Tankstelle
+sentences:
+- Unser Samstag – bitte alle lesen! | شنبه ما – همه لطفاً بخوانند!
+- 08:30 Uhr: Papa bringt das Auto in die Werkstatt. | ساعت ۸:۳۰: بابا ماشین را به تعمیرگاه می‌برد. | tts: Acht Uhr dreißig: Papa bringt das Auto in die Werkstatt.
+- 10:00 Uhr: Mia und Mama gehen zum Friseur. | ساعت ۱۰: میا و مامان به آرایشگاه می‌روند. | tts: Zehn Uhr: Mia und Mama gehen zum Friseur.
+- 11:30 Uhr: Ben gibt seine Bücher in der Bibliothek zurück. | ساعت ۱۱:۳۰: بن کتاب‌هایش را به کتابخانه پس می‌دهد. | tts: Elf Uhr dreißig: Ben gibt seine Bücher in der Bibliothek zurück.
+- 13:00 Uhr: Mittagessen bei Oma und Opa. | ساعت ۱۳: ناهار پیش مادربزرگ و پدربزرگ. | tts: Dreizehn Uhr: Mittagessen bei Oma und Opa.
+- 15:00 Uhr: Wir gehen alle zusammen in den Zoo. Danach können die Kinder noch auf den Spielplatz. | ساعت ۱۵: همه با هم به باغ وحش می‌رویم. بعدش بچه‌ها می‌توانند به زمین بازی هم بروند. | tts: Fünfzehn Uhr: Wir gehen alle zusammen in den Zoo. Danach können die Kinder noch auf den Spielplatz.
+- 18:00 Uhr: Papa holt das Auto ab. Die Werkstatt ist nur bis 18:30 Uhr offen! | ساعت ۱۸: بابا ماشین را از تعمیرگاه می‌گیرد. تعمیرگاه فقط تا ساعت ۱۸:۳۰ باز است! | tts: Achtzehn Uhr: Papa holt das Auto ab. Die Werkstatt ist nur bis achtzehn Uhr dreißig offen!
+- Danach fährt er noch zur Tankstelle. | بعد از آن به پمپ بنزین هم می‌رود.
+- 19:00 Uhr: Lena kommt und passt auf die Kinder auf. | ساعت ۱۹: لنا می‌آید و مراقب بچه‌ها است. | tts: Neunzehn Uhr: Lena kommt und passt auf die Kinder auf.
+- 19:30 Uhr: Mama und Papa sind im Theater. Die Karten liegen auf dem Schreibtisch. | ساعت ۱۹:۳۰: مامان و بابا در تئاتر هستند. بلیت‌ها روی میز تحریر است. | tts: Neunzehn Uhr dreißig: Mama und Papa sind im Theater. Die Karten liegen auf dem Schreibtisch.
+- Kinder, um 21 Uhr seid ihr bitte im Bett! | بچه‌ها، لطفاً ساعت ۲۱ توی رختخواب باشید! | tts: Kinder, um einundzwanzig Uhr seid ihr bitte im Bett!
+reading A:
+{"type":"mcq","prompt":"این متن چیست؟","options":["برنامه کلاس‌های یک مدرسه","فهرست خرید برای آخر هفته","برنامه شنبه یک خانواده","برنامه یک تئاتر"],"correct":2,"explanation_fa":"متن با «Unser Samstag – bitte alle lesen!» شروع می‌شود و کارهای بابا، مامان و بچه‌ها را در طول روز می‌گوید."}
+{"type":"tf","prompt":"بن ساعت ۱۱:۳۰ کتاب‌هایش را به کتابخانه پس می‌دهد.","correct":true,"explanation_fa":"در برنامه آمده: «11:30 Uhr: Ben gibt seine Bücher in der Bibliothek zurück.»"}
+{"type":"tf","prompt":"خانواده شام را پیش مادربزرگ و پدربزرگ می‌خورد.","correct":false,"explanation_fa":"در برنامه آمده: «Mittagessen bei Oma und Opa»، یعنی ناهار را آنجا می‌خورند، نه شام."}
+{"type":"mcq","prompt":"شب چه کسی مراقب بچه‌ها است؟","options":["مادربزرگ","لنا","بابا","میا"],"correct":1,"explanation_fa":"در برنامه آمده: «Lena kommt und passt auf die Kinder auf.»"}
+reading B:
+{"type":"match","prompt":"هر ساعت را به کارش وصل کن.","left":["۰۸:۳۰","۱۰:۰۰","۱۵:۰۰"],"right":["رفتن به باغ وحش","بردن ماشین به تعمیرگاه","رفتن به آرایشگاه","رفتن به تئاتر"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"در برنامه آمده: «08:30 Uhr: … Werkstatt»، «10:00 Uhr: … zum Friseur» و «15:00 Uhr: … in den Zoo»."}
+{"type":"find","prompt":"کدام جمله می‌گوید بلیت‌ها کجاست؟","correct_sentence":9,"explanation_fa":"در برنامه آمده: «Die Karten liegen auf dem Schreibtisch.»"}
+{"type":"order","prompt":"کارهای بابا را به ترتیب بچین.","items":["ماشین را از تعمیرگاه می‌گیرد.","به تئاتر می‌رود.","ماشین را به تعمیرگاه می‌برد.","به پمپ بنزین می‌رود."],"correct_order":[2,0,3,1],"explanation_fa":"اول «Papa bringt das Auto in die Werkstatt»، بعد «Papa holt das Auto ab»، بعد «Danach fährt er noch zur Tankstelle» و آخر «Mama und Papa sind im Theater»."}
+listening A:
+{"type":"num","prompt":"تعمیرگاه تا ساعت چند باز است؟","answer":"18:30","accepted":["18:30","18.30","18:30 Uhr","achtzehn Uhr dreißig"],"explanation_fa":"در برنامه آمده: «Die Werkstatt ist nur bis 18:30 Uhr offen!»"}
+{"type":"mcq","prompt":"میا با چه کسی به آرایشگاه می‌رود؟","options":["با بابا","با مادربزرگ","با مامان","با لنا"],"correct":2,"explanation_fa":"در برنامه آمده: «Mia und Mama gehen zum Friseur.»"}
+{"type":"tf","prompt":"بچه‌ها بعد از باغ وحش می‌توانند به زمین بازی بروند.","correct":true,"explanation_fa":"در برنامه آمده: «Danach können die Kinder noch auf den Spielplatz.»"}
+{"type":"tf","prompt":"مامان و بابا شب به سینما می‌روند.","correct":false,"explanation_fa":"در برنامه آمده: «Mama und Papa sind im Theater»، یعنی به تئاتر می‌روند، نه سینما."}
+listening B:
+{"type":"num","prompt":"بچه‌ها باید ساعت چند در رختخواب باشند؟","answer":"21","accepted":["21","21:00","21 Uhr","einundzwanzig"],"explanation_fa":"در برنامه آمده: «Kinder, um 21 Uhr seid ihr bitte im Bett!»"}
+{"type":"mcq","prompt":"ساعت ۱۳ چه برنامه‌ای هست؟","options":["ناهار پیش مادربزرگ و پدربزرگ","شام پیش مادربزرگ و پدربزرگ","ناهار در یک رستوران","رفتن همه با هم به باغ وحش"],"correct":0,"explanation_fa":"در برنامه آمده: «13:00 Uhr: Mittagessen bei Oma und Opa.»"}
+{"type":"tf","prompt":"بابا بعد از تعمیرگاه به پمپ بنزین می‌رود.","correct":true,"explanation_fa":"بعد از گرفتن ماشین آمده: «Danach fährt er noch zur Tankstelle.»"}
+{"type":"tf","prompt":"لنا ساعت ۲۱ می‌آید.","correct":false,"explanation_fa":"در برنامه آمده: «19:00 Uhr: Lena kommt»، یعنی لنا ساعت ۱۹ می‌آید."}

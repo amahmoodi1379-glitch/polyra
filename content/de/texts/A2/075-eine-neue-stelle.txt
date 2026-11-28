@@ -1,0 +1,38 @@
+code: de-a2-t075
+title: Eine neue Stelle
+band: 2
+kind: email
+placement: yes
+key_words: Stelle, sich bewerben, Bewerbung, Lebenslauf, Erfahrung
+sentences:
+- Hallo Paul, | سلام پاول،
+- ich suche eine neue Stelle. | دنبال یک کار تازه می‌گردم.
+- Mein Arbeitsplatz ist sehr weit weg, und ich fahre jeden Tag zwei Stunden mit dem Zug. | محل کارم خیلی دور است و هر روز دو ساعت با قطار در راهم.
+- Gestern habe ich etwas gefunden: Ein Hotel hier in Stuttgart sucht einen Koch. | دیروز چیزی پیدا کردم: یک هتل همین‌جا در اشتوتگارت دنبال آشپز است.
+- Ich möchte mich dort bewerben, denn das Hotel ist ganz{ganz-adv} nah bei meiner Wohnung. | می‌خواهم آنجا درخواست کار بدهم، چون هتل خیلی نزدیک خانه‌ام است.
+- Ich habe schon acht Jahre Erfahrung in der Küche: fünf Jahre in Schiras und drei Jahre hier in Deutschland. | هشت سال سابقه کار در آشپزخانه دارم: پنج سال در شیراز و سه سال این‌جا در آلمان.
+- Für die Bewerbung brauche ich einen Lebenslauf auf Deutsch. | برای درخواست کار یک رزومه به آلمانی لازم دارم.
+- Ich habe ihn schon geschrieben, aber er hat bestimmt noch Fehler. | آن را نوشته‌ام، ولی حتماً هنوز غلط دارد.
+- Kannst du ihn bitte lesen? Du schreibst viel besser als ich. | می‌توانی لطفاً آن را بخوانی؟ تو خیلی بهتر از من می‌نویسی.
+- Meine Zeugnisse habe ich schon. | گواهی‌هایم را هم دارم.
+- Ich schicke dir den Lebenslauf mit dieser E-Mail. | رزومه را با همین ایمیل برایت می‌فرستم.
+- Danke und bis bald, dein Amir | ممنون و تا بعد، امیر
+reading A:
+{"type":"mcq","prompt":"امیر چرا این ایمیل را نوشته است؟","options":["می‌خواهد پاول برایش کار پیدا کند","می‌خواهد پاول رزومه‌اش را بخواند","می‌خواهد پاول را به هتل دعوت کند","می‌خواهد بگوید کار تازه‌اش را شروع کرده"],"correct":1,"explanation_fa":"امیر می‌نویسد: «Kannst du ihn bitte lesen?»، یعنی می‌خواهد پاول رزومه‌اش را بخواند."}
+{"type":"tf","prompt":"امیر هشت سال سابقه آشپزی دارد.","correct":true,"explanation_fa":"امیر می‌نویسد: «Ich habe schon acht Jahre Erfahrung in der Küche.»"}
+{"type":"tf","prompt":"محل کار فعلی امیر نزدیک خانه‌اش است.","correct":false,"explanation_fa":"امیر می‌نویسد: «Mein Arbeitsplatz ist sehr weit weg.»"}
+{"type":"mcq","prompt":"هتل دنبال چه کسی است؟","options":["پیشخدمت","کارمند پذیرش","آشپز","راننده"],"correct":2,"explanation_fa":"امیر می‌نویسد: «Ein Hotel hier in Stuttgart sucht einen Koch.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید امیر هر روز چقدر در راه است؟","correct_sentence":2,"explanation_fa":"امیر می‌نویسد: «ich fahre jeden Tag zwei Stunden mit dem Zug»."}
+{"type":"match","prompt":"هر مدت را به توضیحش وصل کن.","left":["هشت سال","پنج سال","سه سال"],"right":["سابقه کار امیر در آلمان","کل سابقه آشپزی امیر","سابقه کار امیر در شیراز","مدت کلاس آلمانی امیر"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"امیر می‌نویسد: «acht Jahre Erfahrung in der Küche: fünf Jahre in Schiras und drei Jahre hier in Deutschland»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Für die {{1}} brauche ich einen {{2}} auf Deutsch.","bank":["Bewerbung","Lebenslauf","Erfahrung","Zeugnis","Arbeitsplatz"],"answers":["Bewerbung","Lebenslauf"],"explanation_fa":"امیر می‌نویسد: «Für die Bewerbung brauche ich einen Lebenslauf auf Deutsch.»"}
+listening A:
+{"type":"mcq","prompt":"امیر هر روز چند ساعت با قطار در راه است؟","options":["یک ساعت","دو ساعت","سه ساعت","نیم ساعت"],"correct":1,"explanation_fa":"امیر می‌گوید: «ich fahre jeden Tag zwei Stunden mit dem Zug»."}
+{"type":"mcq","prompt":"چرا امیر می‌خواهد در این هتل کار کند؟","options":["چون حقوقش بیشتر است","چون دوستش آنجا کار می‌کند","چون هتل بزرگ و معروف است","چون هتل نزدیک خانه‌اش است"],"correct":3,"explanation_fa":"امیر می‌گوید: «denn das Hotel ist ganz nah bei meiner Wohnung»."}
+{"type":"tf","prompt":"هتل در اشتوتگارت است.","correct":true,"explanation_fa":"امیر می‌گوید: «Ein Hotel hier in Stuttgart sucht einen Koch.»"}
+{"type":"tf","prompt":"امیر هنوز رزومه‌اش را ننوشته است.","correct":false,"explanation_fa":"امیر درباره رزومه می‌گوید: «Ich habe ihn schon geschrieben.»"}
+listening B:
+{"type":"num","prompt":"امیر چند سال در آلمان در آشپزخانه کار کرده است؟","answer":"3","accepted":["3","drei","3 Jahre"],"explanation_fa":"امیر می‌گوید: «drei Jahre hier in Deutschland»."}
+{"type":"tf","prompt":"به نظر امیر، پاول بهتر از او می‌نویسد.","correct":true,"explanation_fa":"امیر می‌گوید: «Du schreibst viel besser als ich.»"}
+{"type":"tf","prompt":"امیر هنوز گواهی‌هایش را ندارد.","correct":false,"explanation_fa":"امیر می‌گوید: «Meine Zeugnisse habe ich schon.»"}
+{"type":"mcq","prompt":"امیر چه چیزی را با این ایمیل می‌فرستد؟","options":["گواهی‌هایش","رزومه‌اش","عکسش","نامه هتل"],"correct":1,"explanation_fa":"امیر می‌گوید: «Ich schicke dir den Lebenslauf mit dieser E-Mail.»"}

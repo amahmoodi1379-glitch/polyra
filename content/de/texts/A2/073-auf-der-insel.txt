@@ -1,0 +1,34 @@
+code: de-a2-t073
+title: Grüße von der Insel
+band: 2
+kind: email
+key_words: Insel, zelten, Strand, Hafen, Boot
+sentences:
+- Hallo Mama, hallo Papa, | سلام مامان، سلام بابا،
+- Mia und ich sind jetzt schon zwei Tage auf der Insel, und es ist sehr schön hier! | من و میا حالا دو روز است که در جزیره‌ایم و این‌جا خیلی قشنگ است!
+- Die Fahrt mit dem Schiff hat nur eine Stunde gedauert. | سفر با کشتی فقط یک ساعت طول کشید.
+- Wir zelten ganz nah am Strand. Unser Zelt ist klein, aber wir schlafen gut. | خیلی نزدیک ساحل چادر زده‌ایم. چادرمان کوچک است، ولی خوب می‌خوابیم.
+- Gestern sind wir mit einer Landkarte über die ganze Insel gelaufen. | دیروز با یک نقشه پیاده کل جزیره را گشتیم.
+- Heute Morgen waren wir am Hafen und haben Fisch für das Abendessen gekauft. | امروز صبح در بندر بودیم و برای شام ماهی خریدیم.
+- Morgen mieten wir ein Boot. Das wird bestimmt toll! | فردا یک قایق کرایه می‌کنیم. حتماً عالی می‌شود!
+- Das Wetter ist super, nur am Abend ist es am Wasser ein bisschen kalt. | هوا عالی است، فقط شب‌ها کنار آب کمی سرد است.
+- Am Samstag kommen wir mit dem Schiff zurück. | شنبه با کشتی برمی‌گردیم.
+- Grüße{Gruß} von der Insel, euer Lukas | سلام از جزیره، لوکاس
+reading A:
+{"type":"mcq","prompt":"لوکاس و میا کجا هستند؟","options":["در کوهستان","در یک شهر بزرگ","در خانه پدر و مادر","در یک جزیره"],"correct":3,"explanation_fa":"لوکاس می‌نویسد: «Mia und ich sind jetzt schon zwei Tage auf der Insel.»"}
+{"type":"tf","prompt":"لوکاس و میا در هتل می‌خوابند.","correct":false,"explanation_fa":"لوکاس می‌نویسد: «Wir zelten ganz nah am Strand.»، یعنی در چادر می‌خوابند."}
+{"type":"tf","prompt":"سفر با کشتی یک ساعت طول کشید.","correct":true,"explanation_fa":"لوکاس می‌نویسد: «Die Fahrt mit dem Schiff hat nur eine Stunde gedauert.»"}
+{"type":"mcq","prompt":"امروز صبح کجا بودند؟","options":["در ساحل","در بندر","در یک رستوران","روی قایق"],"correct":1,"explanation_fa":"لوکاس می‌نویسد: «Heute Morgen waren wir am Hafen.»"}
+reading B:
+{"type":"order","prompt":"این‌ها را به ترتیب زمان بچین.","items":["قایق کرایه می‌کنند.","با کشتی برمی‌گردند.","با نقشه کل جزیره را پیاده گشتند.","در بندر ماهی خریدند."],"correct_order":[2,3,0,1],"explanation_fa":"«Gestern» جزیره را گشتند، «Heute Morgen» ماهی خریدند، «Morgen mieten wir ein Boot» و «Am Samstag kommen wir … zurück»."}
+{"type":"find","prompt":"کدام جمله می‌گوید هوا کی سرد است؟","correct_sentence":7,"explanation_fa":"لوکاس می‌نویسد: «nur am Abend ist es am Wasser ein bisschen kalt»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Wir {{1}} ganz nah am {{2}}.","bank":["zelten","Strand","Hafen","Insel","Zelt"],"answers":["zelten","Strand"],"explanation_fa":"لوکاس می‌نویسد: «Wir zelten ganz nah am Strand.»"}
+listening A:
+{"type":"mcq","prompt":"فردا چه کار می‌کنند؟","options":["با کشتی برمی‌گردند","ماهی می‌خرند","یک قایق کرایه می‌کنند","به بندر می‌روند"],"correct":2,"explanation_fa":"لوکاس می‌گوید: «Morgen mieten wir ein Boot.»"}
+{"type":"tf","prompt":"شب‌ها کنار آب کمی سرد است.","correct":true,"explanation_fa":"لوکاس می‌گوید: «nur am Abend ist es am Wasser ein bisschen kalt»."}
+{"type":"tf","prompt":"لوکاس تنها به جزیره رفته است.","correct":false,"explanation_fa":"لوکاس می‌گوید: «Mia und ich sind jetzt schon zwei Tage auf der Insel»، یعنی با میا است."}
+{"type":"mcq","prompt":"کی برمی‌گردند؟","options":["جمعه","شنبه","یکشنبه","فردا"],"correct":1,"explanation_fa":"لوکاس می‌گوید: «Am Samstag kommen wir mit dem Schiff zurück.»"}
+listening B:
+{"type":"mcq","prompt":"ماهی را برای چه خریدند؟","options":["برای ناهار","برای پدر و مادر","برای صبحانه","برای شام"],"correct":3,"explanation_fa":"لوکاس می‌گوید: «haben Fisch für das Abendessen gekauft»."}
+{"type":"tf","prompt":"چادرشان بزرگ است.","correct":false,"explanation_fa":"لوکاس می‌گوید: «Unser Zelt ist klein.»"}
+{"type":"tf","prompt":"دیروز با یک نقشه کل جزیره را پیاده گشتند.","correct":true,"explanation_fa":"لوکاس می‌گوید: «Gestern sind wir mit einer Landkarte über die ganze Insel gelaufen.»"}

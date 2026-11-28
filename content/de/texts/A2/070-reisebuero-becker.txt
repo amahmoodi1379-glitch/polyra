@@ -1,0 +1,26 @@
+code: de-a2-t070
+title: Reisebüro Becker
+kind: ad
+key_words: Reisebüro, buchen, Grenze, Visum, Rucksack
+sentences:
+- Sie möchten in Urlaub fahren? Kommen Sie ins Reisebüro Becker in Leipzig! | می‌خواهید به تعطیلات بروید؟ به آژانس مسافرتی بکر در لایپزیگ بیایید!
+- Wir buchen Ihre Reise: ans Meer, in die Berge oder ins Ausland. | ما سفرتان را رزرو می‌کنیم: به کنار دریا، به کوهستان یا به خارج.
+- Mit dem Bus über die Grenze nach Wien: nur 49 Euro! | با اتوبوس از مرز تا وین: فقط ۴۹ یورو! | tts: Mit dem Bus über die Grenze nach Wien: nur neunundvierzig Euro!
+- Sie brauchen ein Visum? Wir helfen Ihnen gern. | ویزا لازم دارید؟ با کمال میل کمکتان می‌کنیم.
+- Für jede Reise bekommen Sie einen Rucksack kostenlos! | برای هر سفر یک کوله‌پشتی رایگان می‌گیرید!
+- Montag bis Freitag: 9 bis 18 Uhr. | دوشنبه تا جمعه: ساعت ۹ تا ۱۸. | tts: Montag bis Freitag: neun bis achtzehn Uhr.
+reading A:
+{"type":"mcq","prompt":"این آگهی برای چیست؟","options":["یک هتل کنار دریا","یک فروشگاه کوله‌پشتی","یک آژانس مسافرتی","یک کلاس زبان"],"correct":2,"explanation_fa":"در آگهی آمده: «Kommen Sie ins Reisebüro Becker» و «Wir buchen Ihre Reise»."}
+{"type":"tf","prompt":"سفر با اتوبوس به وین ۴۹ یورو است.","correct":true,"explanation_fa":"در آگهی آمده: «Mit dem Bus über die Grenze nach Wien: nur 49 Euro!»"}
+{"type":"tf","prompt":"آژانس در گرفتن ویزا کمک نمی‌کند.","correct":false,"explanation_fa":"در آگهی آمده: «Sie brauchen ein Visum? Wir helfen Ihnen gern.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید با هر سفر چه چیزی رایگان می‌دهند؟","correct_sentence":4,"explanation_fa":"در آگهی آمده: «Für jede Reise bekommen Sie einen Rucksack kostenlos!»"}
+{"type":"match","prompt":"هر چیز را به توضیحش وصل کن.","left":["اتوبوس به وین","کوله‌پشتی","ویزا"],"right":["آژانس کمک می‌کند","۴۹ یورو","۹۹ یورو","رایگان"],"pairs":[[0,1],[1,3],[2,0]],"explanation_fa":"در آگهی آمده: «nach Wien: nur 49 Euro»، «einen Rucksack kostenlos» و «Visum? Wir helfen Ihnen gern»."}
+listening A:
+{"type":"num","prompt":"سفر با اتوبوس به وین چند یورو است؟","answer":"49","accepted":["49","49 Euro","neunundvierzig"],"explanation_fa":"گوینده می‌گوید: «Mit dem Bus über die Grenze nach Wien: nur 49 Euro!»"}
+{"type":"mcq","prompt":"آژانس چه روزهایی باز است؟","options":["دوشنبه تا جمعه","دوشنبه تا شنبه","فقط آخر هفته","هر روز هفته"],"correct":0,"explanation_fa":"گوینده می‌گوید: «Montag bis Freitag: 9 bis 18 Uhr.»"}
+{"type":"tf","prompt":"آژانس ساعت ۹ باز می‌شود.","correct":true,"explanation_fa":"گوینده می‌گوید: «9 bis 18 Uhr»، یعنی از ساعت ۹ باز است."}
+{"type":"tf","prompt":"با هر سفر یک چمدان رایگان می‌دهند.","correct":false,"explanation_fa":"گوینده می‌گوید: «bekommen Sie einen Rucksack kostenlos»، یعنی کوله‌پشتی می‌دهند، نه چمدان."}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"mcq","prompt":"اتوبوس از مرز به کدام شهر می‌رود؟","options":["زوریخ","برلین","مونیخ","وین"],"correct":3,"explanation_fa":"گوینده می‌گوید: «Mit dem Bus über die Grenze nach Wien»."}

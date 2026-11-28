@@ -1,0 +1,36 @@
+code: de-a2-t066
+title: Endlich der Führerschein
+band: 2
+kind: email
+key_words: Führerschein, parken, tanken, Tankstelle, Motorrad
+sentences:
+- Hallo Opa, | سلام پدربزرگ،
+- ich habe es geschafft: Gestern habe ich endlich meinen Führerschein bekommen! | موفق شدم: دیروز بالاخره گواهی‌نامه رانندگی‌ام را گرفتم!
+- Ich war sehr nervös, aber ich habe keinen Fehler gemacht. | خیلی استرس داشتم، ولی هیچ اشتباهی نکردم.
+- Jetzt muss ich nicht mehr jeden Tag mit der S-Bahn und der Straßenbahn zur Schule fahren. | حالا دیگر لازم نیست هر روز با قطار شهری و تراموا به مدرسه بروم.
+- Mama leiht mir manchmal ihren Wagen. | مامان گاهی ماشینش را به من قرض می‌دهد.
+- Heute bin ich schon allein gefahren. | امروز دیگر تنهایی رانندگی کردم.
+- Ich kann noch nicht gut parken: Vor dem Supermarkt habe ich zehn Minuten gebraucht! | هنوز خوب پارک کردن بلد نیستم: جلوی سوپرمارکت ده دقیقه طول کشید!
+- Und an der Tankstelle wusste ich nicht, wie man tankt. | و در پمپ بنزین نمی‌دانستم چطور باید بنزین زد.
+- Ein Mann hat mir geholfen. Er ist Fahrer und fährt jeden Tag einen Lkw. | یک آقا کمکم کرد. راننده است و هر روز کامیون می‌راند.
+- Später möchte ich auch ein Motorrad haben, aber Mama sagt nein. | بعدها یک موتورسیکلت هم می‌خواهم، ولی مامان می‌گوید نه.
+- Am Sonntag hole ich dich ab, und wir trinken zusammen einen Kaffee in der Stadt. | یکشنبه دنبالت می‌آیم و با هم در شهر یک قهوه می‌خوریم.
+- Dein Ben | نوه‌ات، بن
+reading A:
+{"type":"mcq","prompt":"بن چه خبری به پدربزرگش می‌دهد؟","options":["یک موتورسیکلت خریده است","گواهی‌نامه رانندگی گرفته است","ماشین مادرش را خراب کرده است","در امتحان مدرسه قبول نشده است"],"correct":1,"explanation_fa":"بن می‌نویسد: «Gestern habe ich endlich meinen Führerschein bekommen!»"}
+{"type":"tf","prompt":"بن در امتحان رانندگی هیچ اشتباهی نکرد.","correct":true,"explanation_fa":"بن می‌نویسد: «aber ich habe keinen Fehler gemacht»."}
+{"type":"tf","prompt":"بن خوب پارک کردن بلد است.","correct":false,"explanation_fa":"بن می‌نویسد: «Ich kann noch nicht gut parken.»"}
+{"type":"mcq","prompt":"در پمپ بنزین چه کسی به بن کمک کرد؟","options":["مادرش","پدربزرگش","یک راننده کامیون","یک دوست مدرسه‌اش"],"correct":2,"explanation_fa":"بن می‌نویسد: «Ein Mann hat mir geholfen. Er ist Fahrer und fährt jeden Tag einen Lkw.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید مادر بن با موتورسیکلت موافق نیست؟","correct_sentence":9,"explanation_fa":"بن می‌نویسد: «Später möchte ich auch ein Motorrad haben, aber Mama sagt nein.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Mama {{1}} mir manchmal ihren {{2}}.","bank":["leiht","Wagen","parkt","Motorrad","Führerschein"],"answers":["leiht","Wagen"],"explanation_fa":"بن می‌نویسد: «Mama leiht mir manchmal ihren Wagen.»"}
+{"type":"match","prompt":"هر کس را به کارش در ایمیل وصل کن.","left":["مادر بن","یک راننده کامیون","بن"],"right":["در پمپ بنزین کمک کرد","یکشنبه دنبال پدربزرگ می‌رود","گاهی ماشینش را قرض می‌دهد","یک موتورسیکلت خرید"],"pairs":[[0,2],[1,0],[2,1]],"explanation_fa":"در ایمیل آمده: «Mama leiht mir manchmal ihren Wagen»، «Ein Mann hat mir geholfen. Er ist Fahrer … Lkw» و «Am Sonntag hole ich dich ab»."}
+listening A:
+{"type":"mcq","prompt":"بن قبلاً هر روز با چه وسیله‌ای به مدرسه می‌رفت؟","options":["با دوچرخه","با اتوبوس و تاکسی","با قطار شهری و تراموا","پیاده"],"correct":2,"explanation_fa":"بن می‌گوید: «Jetzt muss ich nicht mehr jeden Tag mit der S-Bahn und der Straßenbahn zur Schule fahren.»"}
+{"type":"num","prompt":"پارک کردن جلوی سوپرمارکت چند دقیقه طول کشید؟","answer":"10","accepted":["10","zehn","10 Minuten"],"explanation_fa":"بن می‌گوید: «Vor dem Supermarkt habe ich zehn Minuten gebraucht!»"}
+{"type":"tf","prompt":"بن دیروز گواهی‌نامه‌اش را گرفت.","correct":true,"explanation_fa":"بن می‌گوید: «Gestern habe ich endlich meinen Führerschein bekommen!»"}
+{"type":"tf","prompt":"بن امروز با مادرش رانندگی کرد.","correct":false,"explanation_fa":"بن می‌گوید: «Heute bin ich schon allein gefahren»، یعنی تنها رانندگی کرد."}
+listening B:
+{"type":"mcq","prompt":"بن یکشنبه چه کار می‌کند؟","options":["با مادرش به خرید می‌رود","موتورسیکلت می‌خرد","به پمپ بنزین می‌رود","دنبال پدربزرگش می‌رود"],"correct":3,"explanation_fa":"بن می‌گوید: «Am Sonntag hole ich dich ab»، یعنی دنبال پدربزرگش می‌رود."}
+{"type":"tf","prompt":"بن در امتحان رانندگی خیلی آرام بود.","correct":false,"explanation_fa":"بن می‌گوید: «Ich war sehr nervös.»"}
+{"type":"tf","prompt":"مردی که به بن کمک کرد هر روز کامیون می‌راند.","correct":true,"explanation_fa":"بن می‌گوید: «Er ist Fahrer und fährt jeden Tag einen Lkw.»"}

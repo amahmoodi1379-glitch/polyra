@@ -1,0 +1,38 @@
+code: de-a2-t069
+title: Felix steht im Stau
+band: 2
+kind: phone_call
+key_words: im Stau stehen, zu spät kommen, Station, Linie, ins Ausland gehen
+sentences:
+A: Hallo Julia, hier ist Felix. Ich komme leider zu spät. | سلام جولیا، فلیکس هستم. متأسفانه دیر می‌رسم.
+B: Wo bist du denn? | حالا کجایی؟
+A: Ich sitze im Bus, und wir stehen im Stau. | توی اتوبوسم و توی ترافیک گیر کرده‌ایم.
+B: Kannst du nicht ein Taxi nehmen? | نمی‌توانی تاکسی بگیری؟
+A: Ein Taxi steht auch im Stau. Aber an der nächsten Station kann ich in die U-Bahn umsteigen. | تاکسی هم توی ترافیک گیر می‌کند. ولی ایستگاه بعدی می‌توانم سوار مترو شوم.
+A: Die Linie 3 hält gleich neben dem Büro. | خط ۳ درست کنار دفتر نگه می‌دارد. | tts: Die Linie drei hält gleich neben dem Büro.
+B: Gut. Wir frühstücken um neun mit Tim. | باشه. ساعت نه با تیم صبحانه می‌خوریم.
+A: Ich weiß. Heute ist sein letzter Tag bei uns, oder? | می‌دانم. امروز روز آخرش پیش ماست، نه؟
+B: Ja, am Montag geht er ins Ausland. Er arbeitet dann in Wien. | آره، دوشنبه به خارج می‌رود. از آن به بعد در وین کار می‌کند.
+A: Und ist Frau Schulz auch da? | خانم شولتس هم هست؟
+B: Nein, sie ist diese Woche mit ihrer Familie in Urlaub gefahren. | نه، این هفته با خانواده‌اش به تعطیلات رفته است.
+A: Bitte esst nicht den ganzen Kuchen ohne mich! | لطفاً همه کیک را بدون من نخورید!
+B: Keine Angst, wir fangen erst an, wenn du da bist. Bis gleich! | نگران نباش، تا تو نیایی شروع نمی‌کنیم. فعلاً!
+reading A:
+{"type":"mcq","prompt":"فلیکس چرا زنگ می‌زند؟","options":["چون امروز مریض است","چون دیر به کار می‌رسد","چون به اتوبوس نرسیده است","چون می‌خواهد کیک بخرد"],"correct":1,"explanation_fa":"فلیکس می‌گوید: «Ich komme leider zu spät.»"}
+{"type":"tf","prompt":"فلیکس الان توی اتوبوس است.","correct":true,"explanation_fa":"فلیکس می‌گوید: «Ich sitze im Bus, und wir stehen im Stau.»"}
+{"type":"tf","prompt":"جولیا می‌گوید صبحانه را بدون فلیکس شروع می‌کنند.","correct":false,"explanation_fa":"جولیا می‌گوید: «wir fangen erst an, wenn du da bist»، یعنی تا فلیکس نیاید شروع نمی‌کنند."}
+{"type":"mcq","prompt":"تیم دوشنبه چه کار می‌کند؟","options":["به تعطیلات می‌رود","در همین شهر کار تازه‌ای شروع می‌کند","به خارج می‌رود","جشن تولد می‌گیرد"],"correct":2,"explanation_fa":"جولیا می‌گوید: «am Montag geht er ins Ausland. Er arbeitet dann in Wien.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید خانم شولتس کجاست؟","correct_sentence":10,"explanation_fa":"جولیا می‌گوید: «sie ist diese Woche mit ihrer Familie in Urlaub gefahren»."}
+{"type":"match","prompt":"هر کس را به خبرش وصل کن.","left":["فلیکس","تیم","خانم شولتس"],"right":["با خانواده‌اش به تعطیلات رفته است","توی ترافیک گیر کرده است","دوشنبه به خارج می‌رود","امروز کیک پخته است"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"در گفتگو آمده: فلیکس «wir stehen im Stau»، تیم «am Montag geht er ins Ausland» و خانم شولتس «mit ihrer Familie in Urlaub gefahren»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Ein Taxi steht auch im {{1}}. Aber an der nächsten {{2}} kann ich in die U-Bahn umsteigen.","bank":["Stau","Station","Büro","Linie","Bus"],"answers":["Stau","Station"],"explanation_fa":"فلیکس می‌گوید: «Ein Taxi steht auch im Stau. Aber an der nächsten Station kann ich in die U-Bahn umsteigen.»"}
+listening A:
+{"type":"mcq","prompt":"فلیکس چطور خودش را به کار می‌رساند؟","options":["با تاکسی می‌رود","با مترو می‌رود","پیاده می‌رود","با دوچرخه می‌رود"],"correct":1,"explanation_fa":"فلیکس می‌گوید: «an der nächsten Station kann ich in die U-Bahn umsteigen»."}
+{"type":"num","prompt":"فلیکس با کدام خط مترو می‌رود؟","answer":"3","accepted":["3","drei","Linie 3"],"explanation_fa":"فلیکس می‌گوید: «Die Linie 3 hält gleich neben dem Büro.»"}
+{"type":"tf","prompt":"تیم از امروز در وین کار می‌کند.","correct":false,"explanation_fa":"جولیا می‌گوید: «am Montag geht er ins Ausland»؛ امروز روز آخر تیم در این کار است."}
+{"type":"tf","prompt":"خانم شولتس این هفته در تعطیلات است.","correct":true,"explanation_fa":"جولیا می‌گوید: «sie ist diese Woche mit ihrer Familie in Urlaub gefahren»."}
+listening B:
+{"type":"mcq","prompt":"ساعت چند با تیم صبحانه می‌خورند؟","options":["ساعت هشت","ساعت ده","ساعت نه","ساعت نه و نیم"],"correct":2,"explanation_fa":"جولیا می‌گوید: «Wir frühstücken um neun mit Tim.»"}
+{"type":"tf","prompt":"امروز روز آخر تیم در این کار است.","correct":true,"explanation_fa":"فلیکس می‌پرسد «Heute ist sein letzter Tag bei uns, oder?» و جولیا می‌گوید: «Ja»."}
+{"type":"tf","prompt":"فلیکس می‌خواهد تاکسی بگیرد.","correct":false,"explanation_fa":"فلیکس می‌گوید: «Ein Taxi steht auch im Stau.» و با مترو می‌رود."}
+{"type":"mcq","prompt":"جولیا درباره صبحانه چه می‌گوید؟","options":["کیک تمام شده است","بدون فلیکس شروع می‌کنند","فلیکس باید کیک بخرد","تا فلیکس نیاید شروع نمی‌کنند"],"correct":3,"explanation_fa":"جولیا می‌گوید: «wir fangen erst an, wenn du da bist»."}

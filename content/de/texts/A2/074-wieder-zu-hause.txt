@@ -1,0 +1,36 @@
+code: de-a2-t074
+title: Wieder zu Hause
+band: 2
+kind: phone_call
+key_words: sich erholen, Unterkunft, Aussicht, Praktikum, eine Ausbildung machen
+sentences:
+A: Hallo Leon, hier ist Sara. Ich bin wieder da! | سلام لئون، سارا هستم. برگشتم!
+B: Hallo Sara! Wie war dein Urlaub in Österreich? | سلام سارا! تعطیلاتت در اتریش چطور بود؟
+A: Super! Ich habe mich richtig gut erholt. | عالی! حسابی استراحت کردم و سرحال شدم.
+A: Unsere Unterkunft war ein kleines altes Haus in den Bergen, mit einer tollen Aussicht. | محل اقامتمان یک خانه کوچک و قدیمی در کوهستان بود، با منظره‌ای فوق‌العاده.
+B: Ich weiß, ich habe deine Postkarte bekommen. Das Bild ist sehr schön! | می‌دانم، کارت پستالت به دستم رسید. عکسش خیلی قشنگ است!
+A: Danke! Und du? Was machst du im Sommer? | ممنون! تو چه؟ تابستان چه کار می‌کنی؟
+B: Im Juli mache ich ein Praktikum in einer Werkstatt in Stuttgart. | ماه ژوئیه در یک تعمیرگاه در اشتوتگارت کارآموزی می‌کنم.
+B: Ich repariere dort Autos. Das Praktikum dauert drei Monate. | آنجا ماشین تعمیر می‌کنم. کارآموزی سه ماه طول می‌کشد.
+B: Danach möchte ich dort eine Ausbildung machen. | بعدش می‌خواهم همان‌جا یک دوره آموزش حرفه‌ای بگذرانم.
+A: Das passt gut zu dir! Du hast Autos schon immer geliebt. | این کار خیلی به تو می‌آید! تو همیشه عاشق ماشین بوده‌ای.
+B: Ja, das stimmt. Aber vorher fahre ich noch eine Woche zur Erholung ans Meer. | آره، درست است. ولی قبلش یک هفته برای استراحت به کنار دریا می‌روم.
+A: Schön! Schick mir auch eine Postkarte! | چه خوب! برای من هم کارت پستال بفرست!
+reading A:
+{"type":"mcq","prompt":"سارا تعطیلاتش را کجا گذراند؟","options":["کنار دریا","در کوهستان اتریش","در اشتوتگارت","در سوئیس"],"correct":1,"explanation_fa":"لئون می‌پرسد «Wie war dein Urlaub in Österreich?» و سارا می‌گوید: «ein kleines altes Haus in den Bergen»."}
+{"type":"tf","prompt":"لئون کارت پستال سارا را گرفته است.","correct":true,"explanation_fa":"لئون می‌گوید: «ich habe deine Postkarte bekommen»."}
+{"type":"tf","prompt":"کارآموزی لئون شش ماه طول می‌کشد.","correct":false,"explanation_fa":"لئون می‌گوید: «Das Praktikum dauert drei Monate.»"}
+{"type":"mcq","prompt":"لئون بعد از کارآموزی چه می‌خواهد بکند؟","options":["به دانشگاه برود","به اتریش سفر کند","همان‌جا دوره حرفه‌ای ببیند","یک ماشین نو بخرد"],"correct":2,"explanation_fa":"لئون می‌گوید: «Danach möchte ich dort eine Ausbildung machen.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید محل اقامت سارا چطور بود؟","correct_sentence":3,"explanation_fa":"سارا می‌گوید: «Unsere Unterkunft war ein kleines altes Haus in den Bergen, mit einer tollen Aussicht.»"}
+{"type":"match","prompt":"هر جا را به توضیحش وصل کن.","left":["کوهستان اتریش","تعمیرگاهی در اشتوتگارت","کنار دریا"],"right":["جای کارآموزی لئون","جای تعطیلات سارا","جای استراحت لئون پیش از کارآموزی","جای کار سارا"],"pairs":[[0,1],[1,0],[2,2]],"explanation_fa":"سارا در تعطیلات «in den Bergen» در اتریش بود، لئون «ein Praktikum in einer Werkstatt in Stuttgart» دارد و قبلش «zur Erholung ans Meer» می‌رود."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Im Juli mache ich ein {{1}} in einer {{2}} in Stuttgart.","bank":["Praktikum","Werkstatt","Ausbildung","Unterkunft","Postkarte"],"answers":["Praktikum","Werkstatt"],"explanation_fa":"لئون می‌گوید: «Im Juli mache ich ein Praktikum in einer Werkstatt in Stuttgart.»"}
+listening A:
+{"type":"mcq","prompt":"لئون در کارآموزی چه کار می‌کند؟","options":["در هتل کار می‌کند","کارت پستال می‌فروشد","در دفتر کار می‌کند","ماشین تعمیر می‌کند"],"correct":3,"explanation_fa":"لئون می‌گوید: «Ich repariere dort Autos.»"}
+{"type":"num","prompt":"کارآموزی لئون چند ماه طول می‌کشد؟","answer":"3","accepted":["3","drei","3 Monate"],"explanation_fa":"لئون می‌گوید: «Das Praktikum dauert drei Monate.»"}
+{"type":"tf","prompt":"سارا در تعطیلات خوب استراحت کرد.","correct":true,"explanation_fa":"سارا می‌گوید: «Ich habe mich richtig gut erholt.»"}
+{"type":"tf","prompt":"لئون همین حالا کنار دریاست.","correct":false,"explanation_fa":"لئون می‌گوید پیش از کارآموزی «eine Woche zur Erholung ans Meer» می‌رود؛ یعنی هنوز نرفته است."}
+listening B:
+{"type":"mcq","prompt":"لئون قبل از کارآموزی کجا می‌رود؟","options":["به کنار دریا","به اتریش","به کوهستان","پیش خانواده‌اش"],"correct":0,"explanation_fa":"لئون می‌گوید: «Aber vorher fahre ich noch eine Woche zur Erholung ans Meer.»"}
+{"type":"tf","prompt":"سارا در یک هتل بزرگ در شهر اقامت داشت.","correct":false,"explanation_fa":"سارا می‌گوید: «Unsere Unterkunft war ein kleines altes Haus in den Bergen.»"}
+{"type":"tf","prompt":"سارا می‌گوید این کار به لئون می‌آید.","correct":true,"explanation_fa":"سارا می‌گوید: «Das passt gut zu dir!»"}

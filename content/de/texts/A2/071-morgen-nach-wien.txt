@@ -1,0 +1,37 @@
+code: de-a2-t071
+title: Morgen fliegen wir nach Wien
+band: 2
+kind: phone_call
+key_words: den Koffer packen, Flug, landen, Doppelzimmer, übernachten
+sentences:
+A: Hallo Sophie, hier ist Laura. Packst du schon? | سلام سوفی، لورا هستم. داری وسایلت را جمع می‌کنی؟
+B: Ja, ich packe gerade den Koffer. Wann startet unser Flug morgen? | آره، الان دارم چمدان را می‌بندم. پروازمان فردا کی بلند می‌شود؟
+A: Um 6:40 Uhr. Wir müssen schon um 5 Uhr am Flughafen sein. | ساعت ۶:۴۰. باید ساعت ۵ فرودگاه باشیم. | tts: Um sechs Uhr vierzig. Wir müssen schon um fünf Uhr am Flughafen sein.
+B: So früh! Und wann landen wir in Wien? | این‌قدر زود! کی در وین فرود می‌آییم؟
+A: Um 8:05 Uhr. Dann fahren wir mit dem Zug in die Stadt. | ساعت ۸:۰۵. بعد با قطار به شهر می‌رویم. | tts: Um acht Uhr fünf. Dann fahren wir mit dem Zug in die Stadt.
+B: Und wo übernachten wir? | شب‌ها کجا می‌مانیم؟
+A: In einem kleinen Hotel in der Altstadt. Ich habe ein Doppelzimmer gebucht. | در یک هتل کوچک در بافت قدیم شهر. یک اتاق دونفره رزرو کرده‌ام.
+B: Ein Doppelzimmer? Ich dachte, wir nehmen zwei Einzelzimmer. | اتاق دونفره؟ فکر می‌کردم دو اتاق یک‌نفره می‌گیریم.
+A: Zwei Einzelzimmer waren zu teuer. Aber unser Zimmer ist groß und hat einen Balkon. | دو اتاق یک‌نفره زیادی گران بود. ولی اتاقمان بزرگ است و بالکن دارد.
+B: Okay. Können wir am Morgen schon ins Zimmer? | باشه. صبح می‌توانیم برویم توی اتاق؟
+A: Nein, erst um 14 Uhr. Aber wir können unser Gepäck an der Rezeption lassen. | نه، تازه از ساعت ۱۴. ولی می‌توانیم بارمان را در پذیرش بگذاریم. | tts: Nein, erst um vierzehn Uhr. Aber wir können unser Gepäck an der Rezeption lassen.
+B: Gut. Dann bis morgen früh! | خوب. پس تا فردا صبح!
+reading A:
+{"type":"mcq","prompt":"لورا و سوفی به کدام شهر می‌روند؟","options":["زوریخ","برلین","وین","مونیخ"],"correct":2,"explanation_fa":"سوفی می‌پرسد: «wann landen wir in Wien?»"}
+{"type":"tf","prompt":"لورا دو اتاق یک‌نفره رزرو کرده است.","correct":false,"explanation_fa":"لورا می‌گوید: «Ich habe ein Doppelzimmer gebucht.»"}
+{"type":"tf","prompt":"اتاق هتل بالکن دارد.","correct":true,"explanation_fa":"لورا می‌گوید: «unser Zimmer ist groß und hat einen Balkon»."}
+{"type":"mcq","prompt":"چرا لورا اتاق دونفره گرفت؟","options":["چون دو اتاق یک‌نفره گران بود","چون هتل اتاق یک‌نفره نداشت","چون سوفی این‌طور خواست","چون اتاق‌های یک‌نفره کوچک بود"],"correct":0,"explanation_fa":"لورا می‌گوید: «Zwei Einzelzimmer waren zu teuer.»"}
+reading B:
+{"type":"order","prompt":"کارهای فردا را به ترتیب بچین.","items":["فرود آمدن در وین","رسیدن به فرودگاه","رفتن با قطار به شهر","بلند شدن هواپیما"],"correct_order":[1,3,0,2],"explanation_fa":"اول «um 5 Uhr am Flughafen»، بعد پرواز «Um 6:40 Uhr»، بعد فرود «Um 8:05 Uhr» و آخر «Dann fahren wir mit dem Zug in die Stadt»."}
+{"type":"find","prompt":"کدام جمله می‌گوید کجا می‌توانند بارشان را بگذارند؟","correct_sentence":10,"explanation_fa":"لورا می‌گوید: «wir können unser Gepäck an der Rezeption lassen»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Aber wir können unser {{1}} an der {{2}} lassen.","bank":["Gepäck","Rezeption","Zimmer","Flughafen","Balkon"],"answers":["Gepäck","Rezeption"],"explanation_fa":"لورا می‌گوید: «Aber wir können unser Gepäck an der Rezeption lassen.»"}
+listening A:
+{"type":"num","prompt":"پرواز ساعت چند بلند می‌شود؟","answer":"6:40","accepted":["6:40","06:40","6.40","6:40 Uhr","sechs Uhr vierzig"],"explanation_fa":"لورا می‌گوید: «Um 6:40 Uhr.»"}
+{"type":"num","prompt":"ساعت چند باید فرودگاه باشند؟","answer":"5","accepted":["5","5:00","05:00","5 Uhr","fünf"],"explanation_fa":"لورا می‌گوید: «Wir müssen schon um 5 Uhr am Flughafen sein.»"}
+{"type":"tf","prompt":"از فرودگاه با اتوبوس به شهر می‌روند.","correct":false,"explanation_fa":"لورا می‌گوید: «Dann fahren wir mit dem Zug in die Stadt.»"}
+{"type":"tf","prompt":"هتل در بافت قدیم شهر است.","correct":true,"explanation_fa":"لورا می‌گوید: «In einem kleinen Hotel in der Altstadt.»"}
+listening B:
+{"type":"num","prompt":"از ساعت چند می‌توانند به اتاق بروند؟","answer":"14","accepted":["14","14:00","14 Uhr","vierzehn"],"explanation_fa":"لورا می‌گوید: «Nein, erst um 14 Uhr.»"}
+{"type":"mcq","prompt":"سوفی الان چه کار می‌کند؟","options":["بلیت هواپیما می‌خرد","در فرودگاه منتظر است","هتل رزرو می‌کند","چمدانش را می‌بندد"],"correct":3,"explanation_fa":"سوفی می‌گوید: «ich packe gerade den Koffer»."}
+{"type":"tf","prompt":"سوفی فکر می‌کرد دو اتاق یک‌نفره می‌گیرند.","correct":true,"explanation_fa":"سوفی می‌گوید: «Ich dachte, wir nehmen zwei Einzelzimmer.»"}
+{"type":"tf","prompt":"هواپیما ساعت ۸:۰۵ بلند می‌شود.","correct":false,"explanation_fa":"ساعت ۸:۰۵ در وین فرود می‌آیند: «wann landen wir in Wien? – Um 8:05 Uhr.»؛ پرواز ساعت ۶:۴۰ بلند می‌شود."}

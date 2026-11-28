@@ -1,0 +1,36 @@
+code: de-a2-t061
+title: Der Weg zu Tim
+band: 2
+kind: phone_call
+key_words: Kreuzung, Ampel, Brücke, Ecke
+sentences:
+A: Hallo Tim, hier ist Sophie. Ich bin gerade aus der U-Bahn ausgestiegen, aber ich finde deine neue Wohnung nicht. | سلام تیم، سوفی هستم. همین الان از مترو پیاده شدم، ولی خانه جدیدت را پیدا نمی‌کنم.
+B: Hallo Sophie! Das ist nicht schwer. Was siehst du jetzt? | سلام سوفی! سخت نیست. الان چه می‌بینی؟
+A: Vor mir ist ein großer Supermarkt. | جلوی من یک سوپرمارکت بزرگ است.
+B: Gut. Geh nach rechts und dann immer geradeaus bis zur Kreuzung. | خوب. برو سمت راست و بعد مستقیم برو تا چهارراه.
+A: Bis zur Kreuzung, okay. Und dann? | تا چهارراه، باشه. بعدش؟
+B: An der Ampel gehst du über die Straße. Dann kommt eine kleine Brücke. | سر چراغ راهنمایی از خیابان رد می‌شوی. بعد به یک پل کوچک می‌رسی.
+B: Nach der Brücke siehst du an der Ecke eine Bäckerei. | بعد از پل، سر نبش یک نانوایی می‌بینی.
+B: Mein Haus ist neben der Bäckerei, Nummer 12. | خانه من کنار نانوایی است، پلاک ۱۲. | tts: Mein Haus ist neben der Bäckerei, Nummer zwölf.
+A: Super. Und in welchem Stock wohnst du? | عالی. در کدام طبقه زندگی می‌کنی؟
+B: Ganz oben, und es gibt leider keinen Aufzug. | طبقه آخر، و متأسفانه آسانسور هم نداریم.
+A: Das macht nichts. Ich bin gleich{gleich} bei dir! | اشکالی ندارد. الان می‌رسم!
+reading A:
+{"type":"mcq","prompt":"سوفی چرا به تیم زنگ می‌زند؟","options":["از مترو جا مانده است","می‌خواهد دیرتر بیاید","می‌خواهد تیم را به مهمانی دعوت کند","خانه جدید تیم را پیدا نمی‌کند"],"correct":3,"explanation_fa":"سوفی می‌گوید: «ich finde deine neue Wohnung nicht»، یعنی خانه جدید تیم را پیدا نمی‌کند."}
+{"type":"tf","prompt":"سوفی الان جلوی یک سوپرمارکت است.","correct":true,"explanation_fa":"سوفی می‌گوید: «Vor mir ist ein großer Supermarkt.»"}
+{"type":"tf","prompt":"ساختمان تیم آسانسور دارد.","correct":false,"explanation_fa":"تیم می‌گوید: «es gibt leider keinen Aufzug»، یعنی آسانسور ندارد."}
+{"type":"mcq","prompt":"خانه تیم کجاست؟","options":["روبه‌روی سوپرمارکت","کنار نانوایی","جلوی ایستگاه مترو","سر چهارراه"],"correct":1,"explanation_fa":"تیم می‌گوید: «Mein Haus ist neben der Bäckerei»، یعنی کنار نانوایی."}
+reading B:
+{"type":"order","prompt":"راه خانه تیم را به ترتیب بچین.","items":["از خیابان رد شدن","رسیدن به نانوایی سر نبش","رفتن به سمت راست","رد شدن از پل"],"correct_order":[2,0,3,1],"explanation_fa":"تیم اول می‌گوید «Geh nach rechts»، بعد «An der Ampel gehst du über die Straße»، بعد «Dann kommt eine kleine Brücke» و آخر «Nach der Brücke siehst du an der Ecke eine Bäckerei»."}
+{"type":"find","prompt":"کدام جمله می‌گوید تیم در کدام طبقه زندگی می‌کند؟","correct_sentence":9,"explanation_fa":"تیم می‌گوید: «Ganz oben»، یعنی طبقه آخر."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"An der {{1}} gehst du über die Straße. Dann kommt eine kleine {{2}}.","bank":["Ampel","Brücke","Bäckerei","Wohnung","Straße"],"answers":["Ampel","Brücke"],"explanation_fa":"تیم می‌گوید: «An der Ampel gehst du über die Straße. Dann kommt eine kleine Brücke.»"}
+listening A:
+{"type":"mcq","prompt":"سوفی با چه وسیله‌ای آمده است؟","options":["با اتوبوس","با مترو","با تاکسی","با دوچرخه"],"correct":1,"explanation_fa":"سوفی می‌گوید: «Ich bin gerade aus der U-Bahn ausgestiegen»، یعنی با مترو آمده است."}
+{"type":"num","prompt":"پلاک خانه تیم چند است؟","answer":"12","accepted":["12","zwölf","Nummer 12"],"explanation_fa":"تیم می‌گوید: «Mein Haus ist neben der Bäckerei, Nummer 12.»"}
+{"type":"tf","prompt":"سوفی سر راه از یک پل رد می‌شود.","correct":true,"explanation_fa":"تیم می‌گوید: «Dann kommt eine kleine Brücke.» و «Nach der Brücke …»."}
+{"type":"tf","prompt":"تیم در طبقه همکف زندگی می‌کند.","correct":false,"explanation_fa":"تیم می‌گوید: «Ganz oben»، یعنی در طبقه آخر زندگی می‌کند."}
+listening B:
+{"type":"mcq","prompt":"سوفی بعد از پل چه می‌بیند؟","options":["یک سوپرمارکت","یک ایستگاه مترو","یک نانوایی","یک چراغ راهنمایی"],"correct":2,"explanation_fa":"تیم می‌گوید: «Nach der Brücke siehst du an der Ecke eine Bäckerei.»"}
+{"type":"tf","prompt":"برای سوفی مهم نیست که ساختمان آسانسور ندارد.","correct":true,"explanation_fa":"سوفی درباره نبودن آسانسور می‌گوید: «Das macht nichts.»"}
+{"type":"tf","prompt":"تیم می‌گوید پیدا کردن خانه‌اش سخت است.","correct":false,"explanation_fa":"تیم می‌گوید: «Das ist nicht schwer.»"}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["تیم می‌پرسد سوفی چه می‌بیند.","سوفی می‌پرسد تیم در کدام طبقه است.","تیم از پل حرف می‌زند.","سوفی می‌گوید از مترو پیاده شده است."],"correct_order":[3,0,2,1],"explanation_fa":"اول سوفی می‌گوید «aus der U-Bahn ausgestiegen»، بعد تیم می‌پرسد «Was siehst du jetzt?»، بعد از «eine kleine Brücke» می‌گوید و آخر سوفی می‌پرسد «in welchem Stock wohnst du?»."}
