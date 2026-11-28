@@ -1,0 +1,35 @@
+code: de-a2-t119
+title: Ferien am See
+band: 2
+kind: schedule
+key_words: wach, durstig, Anruf, Uhrzeit, Besuch
+sentences:
+- Ferien am See: So sieht ein Tag bei uns aus | تعطیلات کنار دریاچه: یک روز ما این شکلی است
+- 7 Uhr: Alle stehen auf. Wer dann noch nicht wach ist, hört laute Musik! | ساعت ۷: همه بیدار می‌شوند. هر کس آن موقع هنوز بیدار نشده باشد، موسیقی بلند می‌شنود! | tts: Sieben Uhr: Alle stehen auf. Wer dann noch nicht wach ist, hört laute Musik!
+- 9 Uhr: Sport am See: schwimmen, Boot fahren oder Fußball spielen. | ساعت ۹: ورزش کنار دریاچه: شنا، قایق‌سواری یا فوتبال. | tts: Neun Uhr: Sport am See: schwimmen, Boot fahren oder Fußball spielen.
+- Es ist oft heiß. Wer durstig ist, bekommt bei uns immer Wasser. | هوا اغلب گرم است. هر کس تشنه باشد، پیش ما همیشه آب هست.
+- 12:30 Uhr: Mittagessen und danach eine Stunde Ruhe im Zimmer. | ساعت ۱۲:۳۰: ناهار و بعد یک ساعت استراحت در اتاق. | tts: Zwölf Uhr dreißig: Mittagessen und danach eine Stunde Ruhe im Zimmer.
+- 15 Uhr: Ausflug in den Wald oder Spiele auf der Wiese. | ساعت ۱۵: گردش در جنگل یا بازی روی چمن. | tts: Fünfzehn Uhr: Ausflug in den Wald oder Spiele auf der Wiese.
+- 19 Uhr: Zeit für Anrufe. Liebe{lieb} Eltern, bitte rufen Sie nur zu dieser Uhrzeit an. | ساعت ۱۹: وقت تلفن. پدر و مادرهای عزیز، لطفاً فقط در این ساعت تماس بگیرید. | tts: Neunzehn Uhr: Zeit für Anrufe. Liebe Eltern, bitte rufen Sie nur zu dieser Uhrzeit an.
+- 21 Uhr: Alle gehen ins Bett. Wer nachts auf die Toilette gehen muss, nimmt eine Lampe mit. | ساعت ۲۱: همه به رختخواب می‌روند. هر کس شب باید دستشویی برود، یک چراغ با خودش می‌برد. | tts: Einundzwanzig Uhr: Alle gehen ins Bett. Wer nachts auf die Toilette gehen muss, nimmt eine Lampe mit.
+- Besuch ist nur am Sonntag möglich. | ملاقات فقط یکشنبه‌ها ممکن است.
+- Bei uns finden die Kinder schnell Freunde und haben viel Spaß! | پیش ما بچه‌ها زود دوست پیدا می‌کنند و خیلی خوش می‌گذرانند!
+reading A:
+{"type":"mcq","prompt":"این برنامه دربارهٔ چیست؟","options":["یک روز در مدرسه","یک روز بچه‌ها در تعطیلات کنار دریاچه","یک سفر خانوادگی به کنار دریا","یک روز در بیمارستان"],"correct":1,"explanation_fa":"عنوان برنامه این است: «Ferien am See: So sieht ein Tag bei uns aus» و در آن از «die Kinder» و «Liebe Eltern» حرف می‌زند."}
+{"type":"tf","prompt":"پدر و مادرها هر وقت بخواهند می‌توانند زنگ بزنند.","correct":false,"explanation_fa":"در برنامه آمده: «Liebe Eltern, bitte rufen Sie nur zu dieser Uhrzeit an.»، یعنی فقط ساعت ۱۹."}
+{"type":"tf","prompt":"بعد از ناهار بچه‌ها یک ساعت در اتاق استراحت می‌کنند.","correct":true,"explanation_fa":"در برنامه آمده: «Mittagessen und danach eine Stunde Ruhe im Zimmer.»"}
+{"type":"mcq","prompt":"کسی که شب باید دستشویی برود، چه کار می‌کند؟","options":["مربی را بیدار می‌کند","به پدر و مادرش زنگ می‌زند","تا صبح صبر می‌کند","یک چراغ با خودش می‌برد"],"correct":3,"explanation_fa":"در برنامه آمده: «Wer nachts auf die Toilette gehen muss, nimmt eine Lampe mit.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید پدر و مادرها کی می‌توانند به دیدن بچه‌ها بیایند؟","correct_sentence":8,"explanation_fa":"در برنامه آمده: «Besuch ist nur am Sonntag möglich.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Es ist oft heiß. Wer {{1}} ist, bekommt bei uns immer {{2}}.","bank":["durstig","Wasser","Wald","Lampe","Uhrzeit"],"answers":["durstig","Wasser"],"explanation_fa":"در برنامه آمده: «Es ist oft heiß. Wer durstig ist, bekommt bei uns immer Wasser.»"}
+{"type":"order","prompt":"برنامه‌های روز را به ترتیب بچین.","items":["گردش در جنگل یا بازی روی چمن","ورزش کنار دریاچه","وقت تلفن","ناهار و استراحت"],"correct_order":[1,3,0,2],"explanation_fa":"ساعت ۹ «Sport am See»، ساعت ۱۲:۳۰ «Mittagessen … Ruhe»، ساعت ۱۵ «Ausflug in den Wald» و ساعت ۱۹ «Zeit für Anrufe»."}
+listening A:
+{"type":"num","prompt":"بچه‌ها ساعت چند بیدار می‌شوند؟","answer":"7","accepted":["7","7 Uhr","7:00","sieben"],"explanation_fa":"در برنامه آمده: «7 Uhr: Alle stehen auf.»"}
+{"type":"tf","prompt":"کسی که ساعت ۷ هنوز بیدار نیست، موسیقی بلند می‌شنود.","correct":true,"explanation_fa":"در برنامه آمده: «Wer dann noch nicht wach ist, hört laute Musik!»"}
+{"type":"tf","prompt":"بچه‌ها ساعت ۲۲ به رختخواب می‌روند.","correct":false,"explanation_fa":"در برنامه آمده: «21 Uhr: Alle gehen ins Bett.»، یعنی ساعت ۲۱."}
+{"type":"mcq","prompt":"ملاقات بچه‌ها کی ممکن است؟","options":["هر روز","فقط شنبه","فقط یکشنبه","فقط ساعت ۱۹"],"correct":2,"explanation_fa":"در برنامه آمده: «Besuch ist nur am Sonntag möglich.»"}
+listening B:
+{"type":"num","prompt":"وقت تلفن ساعت چند است؟","answer":"19","accepted":["19","19 Uhr","19:00","neunzehn"],"explanation_fa":"در برنامه آمده: «19 Uhr: Zeit für Anrufe.»"}
+{"type":"mcq","prompt":"بچه‌ها ساعت ۹ چه کار می‌کنند؟","options":["کنار دریاچه ورزش می‌کنند","به جنگل می‌روند","در اتاق استراحت می‌کنند","به خانه زنگ می‌زنند"],"correct":0,"explanation_fa":"در برنامه آمده: «9 Uhr: Sport am See: schwimmen, Boot fahren oder Fußball spielen.»"}
+{"type":"tf","prompt":"هر کس تشنه باشد، آب می‌گیرد.","correct":true,"explanation_fa":"در برنامه آمده: «Wer durstig ist, bekommt bei uns immer Wasser.»"}
+{"type":"tf","prompt":"بچه‌ها آنجا به‌سختی دوست پیدا می‌کنند.","correct":false,"explanation_fa":"در برنامه آمده: «Bei uns finden die Kinder schnell Freunde.»"}

@@ -1,0 +1,39 @@
+code: de-a2-t117
+title: Silvester in Wien
+band: 2
+kind: email
+placement: yes
+key_words: sehr geehrte Damen und Herren, mit freundlichen Grüßen, Doppelzimmer, Rezeption, Silvester
+sentences:
+- Sehr geehrte Damen und Herren, | خانم‌ها و آقایان محترم،
+- meine Frau und ich möchten dieses Jahr Silvester in Wien feiern. | من و همسرم می‌خواهیم امسال شب سال نو را در وین جشن بگیریم.
+- Haben Sie vom 30. Dezember bis zum 2. Januar ein Doppelzimmer für uns frei? | آیا از ۳۰ دسامبر تا ۲ ژانویه یک اتاق دوتخته برای ما خالی دارید؟ | tts: Haben Sie vom dreißigsten Dezember bis zum zweiten Januar ein Doppelzimmer für uns frei?
+- Wir möchten gern ein ruhiges Zimmer, nicht direkt an der Straße. | ترجیح می‌دهیم اتاقی آرام داشته باشیم، نه درست رو به خیابان.
+- Wir kommen am 30. Dezember mit dem Zug aus München und sind erst um 22 Uhr im Hotel. | ما ۳۰ دسامبر با قطار از مونیخ می‌آییم و تازه ساعت ۲۲ به هتل می‌رسیم. | tts: Wir kommen am dreißigsten Dezember mit dem Zug aus München und sind erst um zweiundzwanzig Uhr im Hotel.
+- Ist die Rezeption dann noch offen? | آیا آن موقع پذیرش هنوز باز است؟
+- Außerdem habe ich noch eine Frage: Gibt es in Ihrem Hotel am 31. Dezember ein Fest? | یک سؤال دیگر هم دارم: آیا ۳۱ دسامبر در هتل شما جشنی برگزار می‌شود؟ | tts: Außerdem habe ich noch eine Frage: Gibt es in Ihrem Hotel am einunddreißigsten Dezember ein Fest?
+- Wir möchten an diesem Abend gern im Hotel essen. | دوست داریم آن شب در هتل شام بخوریم.
+- Ich freue mich auf Ihre Antwort. | منتظر پاسخ شما هستم.
+- Mit freundlichen Grüßen | با احترام
+- Amir Karimi | امیر کریمی
+reading A:
+{"type":"mcq","prompt":"آقای کریمی برای چه این ایمیل را می‌نویسد؟","options":["تا بلیت قطار بخرد","تا یک اتاق در هتل رزرو کند","تا از هتل شکایت کند","تا در هتل کار پیدا کند"],"correct":1,"explanation_fa":"آقای کریمی می‌نویسد: «Haben Sie vom 30. Dezember bis zum 2. Januar ein Doppelzimmer für uns frei?»"}
+{"type":"tf","prompt":"آقای کریمی تنها به وین سفر می‌کند.","correct":false,"explanation_fa":"آقای کریمی می‌نویسد: «meine Frau und ich möchten dieses Jahr Silvester in Wien feiern»؛ پس با همسرش می‌آید."}
+{"type":"tf","prompt":"آقای کریمی اتاقی آرام می‌خواهد.","correct":true,"explanation_fa":"آقای کریمی می‌نویسد: «Wir möchten gern ein ruhiges Zimmer, nicht direkt an der Straße.»"}
+{"type":"mcq","prompt":"چرا آقای کریمی دربارهٔ پذیرش هتل می‌پرسد؟","options":["چون دیر وقت به هتل می‌رسد","چون کلید اتاق را گم کرده است","چون می‌خواهد صبح زود برود","چون بلیت قطار ندارد"],"correct":0,"explanation_fa":"آقای کریمی می‌نویسد: «und sind erst um 22 Uhr im Hotel. Ist die Rezeption dann noch offen?»"}
+{"type":"mcq","prompt":"آقای کریمی شب ۳۱ دسامبر کجا می‌خواهد شام بخورد؟","options":["در رستورانی در شهر","در خانهٔ دوستانش","در قطار","در هتل"],"correct":3,"explanation_fa":"آقای کریمی می‌نویسد: «Wir möchten an diesem Abend gern im Hotel essen.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید آقای کریمی با چه وسیله‌ای به وین می‌آید؟","correct_sentence":4,"explanation_fa":"آقای کریمی می‌نویسد: «Wir kommen am 30. Dezember mit dem Zug aus München.»"}
+{"type":"match","prompt":"هر تاریخ را به چیزی که دربارهٔ آن گفته می‌شود وصل کن.","left":["۳۰ دسامبر","۳۱ دسامبر","۲ ژانویه"],"right":["پایان اقامت در هتل","روز رسیدن به هتل","شبی که می‌پرسد هتل جشن دارد یا نه","روز خرید بلیت قطار"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"در ایمیل آمده: «vom 30. Dezember bis zum 2. Januar»، «Wir kommen am 30. Dezember» و «Gibt es in Ihrem Hotel am 31. Dezember ein Fest?»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Wir kommen am 30. Dezember mit dem {{1}} aus München und sind erst um 22 Uhr im {{2}}.","bank":["Zug","Hotel","Rezeption","Fest","Straße"],"answers":["Zug","Hotel"],"explanation_fa":"آقای کریمی می‌نویسد: «Wir kommen am 30. Dezember mit dem Zug aus München und sind erst um 22 Uhr im Hotel.»"}
+listening A:
+{"type":"num","prompt":"آقای کریمی ساعت چند به هتل می‌رسد؟","answer":"22","accepted":["22","22 Uhr","22:00","zweiundzwanzig"],"explanation_fa":"آقای کریمی می‌گوید: «und sind erst um 22 Uhr im Hotel»."}
+{"type":"mcq","prompt":"آقای کریمی از کجا می‌آید؟","options":["از مونیخ","از وین","از برلین","از هامبورگ"],"correct":0,"explanation_fa":"آقای کریمی می‌گوید: «mit dem Zug aus München»."}
+{"type":"tf","prompt":"آقای کریمی یک اتاق دوتخته می‌خواهد.","correct":true,"explanation_fa":"آقای کریمی می‌پرسد: «Haben Sie … ein Doppelzimmer für uns frei?»"}
+{"type":"tf","prompt":"آقای کریمی اتاقی رو به خیابان می‌خواهد.","correct":false,"explanation_fa":"آقای کریمی می‌گوید: «ein ruhiges Zimmer, nicht direkt an der Straße»."}
+{"type":"mcq","prompt":"آقای کریمی دربارهٔ شب ۳۱ دسامبر چه می‌پرسد؟","options":["آیا قطار دیرتر می‌رسد","آیا اتاق آن شب گران‌تر است","آیا هتل جشنی دارد","آیا پذیرش تمام شب باز است"],"correct":2,"explanation_fa":"آقای کریمی می‌پرسد: «Gibt es in Ihrem Hotel am 31. Dezember ein Fest?»"}
+listening B:
+{"type":"num","prompt":"آقای کریمی تا چه روزی از ژانویه در هتل می‌ماند؟","answer":"2","accepted":["2","2.","zwei","zweiten"],"explanation_fa":"آقای کریمی می‌گوید: «vom 30. Dezember bis zum 2. Januar»."}
+{"type":"tf","prompt":"آقای کریمی و همسرش می‌خواهند شب سال نو را در وین جشن بگیرند.","correct":true,"explanation_fa":"آقای کریمی می‌گوید: «meine Frau und ich möchten dieses Jahr Silvester in Wien feiern»."}
+{"type":"tf","prompt":"آقای کریمی با هواپیما به وین می‌آید.","correct":false,"explanation_fa":"آقای کریمی می‌گوید: «Wir kommen … mit dem Zug aus München»، یعنی با قطار می‌آید."}
+{"type":"mcq","prompt":"آقای کریمی دربارهٔ پذیرش چه می‌خواهد بداند؟","options":["آیا صبحانه هم دارد","آیا کارت اعتباری قبول می‌کند","آیا پارکینگ دارد","آیا ساعت ۲۲ هنوز باز است"],"correct":3,"explanation_fa":"آقای کریمی می‌گوید: «und sind erst um 22 Uhr im Hotel. Ist die Rezeption dann noch offen?»"}

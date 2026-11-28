@@ -1,0 +1,35 @@
+code: de-a2-t114
+title: Ein neues Spiel
+band: 2
+kind: phone_call
+key_words: Regel, Punkt, Tipp, Liste, Wahl
+sentences:
+A: Hallo Laura, hier ist Jonas. Hast du am Freitag Zeit? Wir spielen bei mir Karten. | سلام لورا، یوناس هستم. جمعه وقت داری؟ خانهٔ من ورق‌بازی می‌کنیم.
+B: Gern! Spielen wir wieder das Spiel von letzter Woche? | با کمال میل! باز همان بازی هفتهٔ پیش را بازی می‌کنیم؟
+A: Nein, ich habe ein neues Spiel gekauft. Die Regeln sind ganz einfach. | نه، یک بازی تازه خریده‌ام. قانون‌هایش خیلی ساده است.
+A: Für eine rote Karte bekommst du einen Punkt, für eine schwarze zwei Punkte. | برای هر کارت قرمز یک امتیاز می‌گیری، برای هر کارت سیاه دو امتیاز.
+B: Hast du einen Tipp für mich? Ich verliere immer! | یک راهنمایی برایم داری؟ من همیشه می‌بازم!
+A: Sammle die schwarzen Karten! Die bringen eine Menge Punkte. | کارت‌های سیاه را جمع کن! آن‌ها کلی امتیاز دارند.
+B: Soll ich etwas mitbringen? | چیزی بیاورم؟
+A: Ich mache gerade eine Liste. Wir haben schon Brot und Käse, aber noch keine Getränke. | دارم فهرست می‌نویسم. نان و پنیر داریم، ولی هنوز نوشیدنی نداریم.
+B: Dann bringe ich Saft und Bier mit. | پس من آبمیوه و آبجو می‌آورم.
+A: Super! Den Rest kaufe ich morgen. Und zum Essen gibt es Pizza oder Suppe. Du hast die Wahl! | عالی! بقیه را فردا می‌خرم. برای غذا هم پیتزا یا سوپ داریم. انتخاب با توست!
+B: Dann lieber Pizza! Bis Freitag! | پس پیتزا بهتر است! تا جمعه!
+reading A:
+{"type":"mcq","prompt":"یوناس برای جمعه چه برنامه‌ای دارد؟","options":["در خانه‌اش ورق‌بازی کنند","به رستوران پیتزا بروند","یک بازی تازه بخرند","به خانهٔ لورا بروند"],"correct":0,"explanation_fa":"یوناس می‌گوید: «Hast du am Freitag Zeit? Wir spielen bei mir Karten.»"}
+{"type":"tf","prompt":"قانون‌های بازی تازه سخت است.","correct":false,"explanation_fa":"یوناس می‌گوید: «Die Regeln sind ganz einfach.»"}
+{"type":"tf","prompt":"لورا در ورق‌بازی معمولاً می‌بازد.","correct":true,"explanation_fa":"لورا می‌گوید: «Ich verliere immer!»"}
+{"type":"mcq","prompt":"یوناس به لورا چه راهنمایی‌ای می‌کند؟","options":["کارت‌های قرمز را جمع کند","کارت‌های سیاه را جمع کند","همیشه اول بازی کند","کارت‌هایش را نشان ندهد"],"correct":1,"explanation_fa":"یوناس می‌گوید: «Sammle die schwarzen Karten! Die bringen eine Menge Punkte.»"}
+reading B:
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Für eine rote Karte bekommst du einen {{1}}, für eine schwarze zwei {{2}}.","bank":["Punkt","Punkte","Wahl","Liste","Regel"],"answers":["Punkt","Punkte"],"explanation_fa":"یوناس می‌گوید: «Für eine rote Karte bekommst du einen Punkt, für eine schwarze zwei Punkte.»"}
+{"type":"find","prompt":"کدام جمله می‌گوید هنوز چه چیزی برای جمعه ندارند؟","correct_sentence":7,"explanation_fa":"یوناس می‌گوید: «Wir haben schon Brot und Käse, aber noch keine Getränke.»"}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["لورا می‌پرسد چیزی بیاورد یا نه.","یوناس قانون‌های بازی را توضیح می‌دهد.","لورا پیتزا را انتخاب می‌کند.","لورا از یوناس راهنمایی می‌خواهد."],"correct_order":[1,3,0,2],"explanation_fa":"اول «Die Regeln sind ganz einfach»، بعد «Hast du einen Tipp für mich?»، بعد «Soll ich etwas mitbringen?» و آخر «Dann lieber Pizza!»."}
+listening A:
+{"type":"num","prompt":"برای هر کارت سیاه چند امتیاز می‌گیری؟","answer":"2","accepted":["2","zwei"],"explanation_fa":"یوناس می‌گوید: «für eine schwarze zwei Punkte»."}
+{"type":"tf","prompt":"یوناس یک بازی تازه خریده است.","correct":true,"explanation_fa":"یوناس می‌گوید: «ich habe ein neues Spiel gekauft»."}
+{"type":"tf","prompt":"لورا آبمیوه و شراب می‌آورد.","correct":false,"explanation_fa":"لورا می‌گوید: «Dann bringe ich Saft und Bier mit.»، یعنی آبمیوه و آبجو."}
+{"type":"mcq","prompt":"لورا برای غذا چه انتخاب می‌کند؟","options":["سوپ","سالاد","نان و پنیر","پیتزا"],"correct":3,"explanation_fa":"لورا می‌گوید: «Dann lieber Pizza!»"}
+listening B:
+{"type":"mcq","prompt":"یوناس الان دارد چه کار می‌کند؟","options":["فهرست می‌نویسد","پیتزا درست می‌کند","ورق‌بازی می‌کند","خرید می‌کند"],"correct":0,"explanation_fa":"یوناس می‌گوید: «Ich mache gerade eine Liste.»"}
+{"type":"tf","prompt":"یوناس و لورا هفتهٔ پیش هم با هم بازی کرده‌اند.","correct":true,"explanation_fa":"لورا می‌پرسد: «Spielen wir wieder das Spiel von letzter Woche?»"}
+{"type":"tf","prompt":"یوناس بقیهٔ چیزها را امروز می‌خرد.","correct":false,"explanation_fa":"یوناس می‌گوید: «Den Rest kaufe ich morgen.»، یعنی فردا می‌خرد."}

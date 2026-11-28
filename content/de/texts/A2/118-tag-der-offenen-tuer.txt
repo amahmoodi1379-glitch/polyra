@@ -1,0 +1,33 @@
+code: de-a2-t118
+title: Tag der offenen Tür
+band: 2
+kind: schedule
+key_words: Raum, Platz nehmen, Seite-2, Bank-2, Mal
+sentences:
+- Tag der offenen Tür an der Universität: Samstag, 10 bis 16 Uhr | روز درهای باز دانشگاه: شنبه، ساعت ۱۰ تا ۱۶ | tts: Tag der offenen Tür an der Universität: Samstag, zehn bis sechzehn Uhr
+- 10 Uhr: Willkommen! Der große Raum ist im Erdgeschoss. Bitte nehmen Sie dort Platz. | ساعت ۱۰: خوش آمدید! سالن بزرگ در طبقهٔ همکف است. لطفاً آنجا بنشینید. | tts: Zehn Uhr: Willkommen! Der große Raum ist im Erdgeschoss. Bitte nehmen Sie dort Platz.
+- 10:30 Uhr: Studenten erzählen von ihrem Leben an der Universität. | ساعت ۱۰:۳۰: دانشجوها از زندگی‌شان در دانشگاه تعریف می‌کنند. | tts: Zehn Uhr dreißig: Studenten erzählen von ihrem Leben an der Universität.
+- 11:30 Uhr: Wir zeigen Ihnen die Bibliothek. Sie ist auf der anderen Seite{Seite-2} von der Straße. | ساعت ۱۱:۳۰: کتابخانه را به شما نشان می‌دهیم. کتابخانه آن طرف خیابان است. | tts: Elf Uhr dreißig: Wir zeigen Ihnen die Bibliothek. Sie ist auf der anderen Seite von der Straße.
+- 12:30 Uhr: Mittagessen in der Mensa. Für Gäste kostet ein Essen heute nur 3 Euro. | ساعت ۱۲:۳۰: ناهار در سلف دانشگاه. امروز هر غذا برای مهمان‌ها فقط ۳ یورو است. | tts: Zwölf Uhr dreißig: Mittagessen in der Mensa. Für Gäste kostet ein Essen heute nur drei Euro.
+- 14 Uhr: Studenten machen Musik im Garten. Sie können dort auf den Bänken{Bank-2} sitzen. | ساعت ۱۴: دانشجوها در باغ موسیقی اجرا می‌کنند. می‌توانید آنجا روی نیمکت‌ها بنشینید. | tts: Vierzehn Uhr: Studenten machen Musik im Garten. Sie können dort auf den Bänken sitzen.
+- 15 Uhr: Dieses Mal gibt es auch eine Führung für Eltern. | ساعت ۱۵: این بار برای پدر و مادرها هم یک بازدید با راهنما هست. | tts: Fünfzehn Uhr: Dieses Mal gibt es auch eine Führung für Eltern.
+- Der Eintritt ist frei. Wir freuen uns auf Ihren Besuch! | ورود آزاد است. منتظر دیدار شما هستیم!
+reading A:
+{"type":"mcq","prompt":"این برنامه برای چه روزی است؟","options":["روز امتحان دانشجوها","جشن پایان سال تحصیلی","روز درهای باز دانشگاه","روز ثبت‌نام کلاس موسیقی"],"correct":2,"explanation_fa":"عنوان برنامه این است: «Tag der offenen Tür an der Universität»."}
+{"type":"tf","prompt":"ورود برای همه آزاد است.","correct":true,"explanation_fa":"در برنامه آمده: «Der Eintritt ist frei.»"}
+{"type":"tf","prompt":"کتابخانه در طبقهٔ همکف همین ساختمان است.","correct":false,"explanation_fa":"در برنامه آمده: «Sie ist auf der anderen Seite von der Straße.»، یعنی کتابخانه آن طرف خیابان است."}
+{"type":"mcq","prompt":"ساعت ۱۰ مهمان‌ها کجا می‌نشینند؟","options":["در سالن بزرگ طبقهٔ همکف","روی نیمکت‌های باغ","در کتابخانه","در سلف دانشگاه"],"correct":0,"explanation_fa":"در برنامه آمده: «Der große Raum ist im Erdgeschoss. Bitte nehmen Sie dort Platz.»"}
+reading B:
+{"type":"match","prompt":"هر ساعت را به برنامه‌اش وصل کن.","left":["ساعت ۱۰:۳۰","ساعت ۱۲:۳۰","ساعت ۱۴","ساعت ۱۵"],"right":["ناهار در سلف","بازدید با راهنما برای پدر و مادرها","دانشجوها از زندگی‌شان می‌گویند","موسیقی در باغ","کلاس زبان برای مهمان‌ها"],"pairs":[[0,2],[1,0],[2,3],[3,1]],"explanation_fa":"در برنامه آمده: «10:30 Uhr: Studenten erzählen …»، «12:30 Uhr: Mittagessen in der Mensa»، «14 Uhr: Studenten machen Musik im Garten» و «15 Uhr: … eine Führung für Eltern»."}
+{"type":"find","prompt":"کدام جمله می‌گوید غذا برای مهمان‌ها چقدر است؟","correct_sentence":4,"explanation_fa":"در برنامه آمده: «Für Gäste kostet ein Essen heute nur 3 Euro.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Der große {{1}} ist im Erdgeschoss. Bitte nehmen Sie dort {{2}}.","bank":["Raum","Platz","Seite","Bänken","Mensa"],"answers":["Raum","Platz"],"explanation_fa":"در برنامه آمده: «Der große Raum ist im Erdgeschoss. Bitte nehmen Sie dort Platz.»"}
+listening A:
+{"type":"num","prompt":"در سلف، غذا برای مهمان‌ها چند یورو است؟","answer":"3","accepted":["3","3 Euro","drei"],"explanation_fa":"در برنامه آمده: «Für Gäste kostet ein Essen heute nur 3 Euro.»"}
+{"type":"tf","prompt":"روز درهای باز شنبه است.","correct":true,"explanation_fa":"در برنامه آمده: «Tag der offenen Tür an der Universität: Samstag»."}
+{"type":"tf","prompt":"موسیقی در سالن بزرگ اجرا می‌شود.","correct":false,"explanation_fa":"در برنامه آمده: «Studenten machen Musik im Garten.»، یعنی در باغ."}
+{"type":"mcq","prompt":"برای پدر و مادرها چه برنامه‌ای هست؟","options":["یک کنسرت جداگانه","یک ناهار رایگان","یک کلاس زبان","یک بازدید با راهنما"],"correct":3,"explanation_fa":"در برنامه آمده: «Dieses Mal gibt es auch eine Führung für Eltern.»"}
+listening B:
+{"type":"num","prompt":"روز درهای باز ساعت چند تمام می‌شود؟","answer":"16","accepted":["16","16 Uhr","16:00","sechzehn"],"explanation_fa":"در برنامه آمده: «Samstag, 10 bis 16 Uhr»."}
+{"type":"mcq","prompt":"کتابخانه کجاست؟","options":["در طبقهٔ همکف","کنار سلف","آن طرف خیابان","پشت باغ"],"correct":2,"explanation_fa":"در برنامه آمده: «Sie ist auf der anderen Seite von der Straße.»"}
+{"type":"tf","prompt":"ساعت ۱۰:۳۰ دانشجوها از زندگی‌شان در دانشگاه تعریف می‌کنند.","correct":true,"explanation_fa":"در برنامه آمده: «10:30 Uhr: Studenten erzählen von ihrem Leben an der Universität.»"}
+{"type":"tf","prompt":"مهمان‌ها برای ورود باید پول بدهند.","correct":false,"explanation_fa":"در برنامه آمده: «Der Eintritt ist frei.»"}

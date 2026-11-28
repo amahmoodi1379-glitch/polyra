@@ -1,0 +1,37 @@
+code: de-a2-t107
+title: Gleich zwei Babys
+band: 2
+kind: phone_call
+key_words: wahr, echt, verschieden, unmöglich, nötig
+sentences:
+A: Hallo Laura, hier ist Tom. Ich habe gerade mit Paul gesprochen. Ist das wahr? Ihr habt ein Baby? | سلام لورا، تام هستم. همین الان با پاول حرف زدم. راست است؟ بچه‌دار شده‌اید؟
+B: Ja, das ist wahr! Aber nicht nur ein Baby: Wir haben zwei! | آره، راست است! ولی نه فقط یک بچه: دو تا داریم!
+A: Zwei Babys? Echt? Herzlichen Glückwunsch! | دو تا بچه؟ جدی؟ تبریک می‌گویم!
+B: Danke! Ein Junge und ein Mädchen. Sie sind seit Montag zu Hause. | ممنون! یک پسر و یک دختر. از دوشنبه در خانه‌اند.
+A: Sehen sie gleich{gleich-adj} aus? | شبیه هم هستند؟
+B: Nein, sie sind ganz verschieden. Lena hat dunkle Haare, und Max ist blond. | نه، کاملاً با هم فرق دارند. لنا موهای تیره دارد و ماکس بور است.
+A: Und wie geht es dir? Schlaft ihr genug? | خودت چطوری؟ به اندازهٔ کافی می‌خوابید؟
+B: Schlafen? Das ist jetzt unmöglich! Beide weinen jede Nacht. | خوابیدن؟ فعلاً غیرممکن است! هر دو هر شب گریه می‌کنند.
+A: Kann ich euch am Wochenende besuchen? | می‌توانم آخر هفته به دیدنتان بیایم؟
+B: Ja, am Sonntag ist das möglich. Am Samstag kommen meine Eltern. | آره، یکشنبه ممکن است. شنبه پدر و مادرم می‌آیند.
+A: Soll ich etwas mitbringen? | چیزی با خودم بیاورم؟
+B: Nein, das ist nicht nötig. Bring nur gute Laune mit! | نه، لازم نیست. فقط با حال خوب بیا!
+reading A:
+{"type":"mcq","prompt":"لورا چه خبری دارد؟","options":["فقط یک پسر به دنیا آورده است","دو بچه به دنیا آورده است","فقط یک دختر به دنیا آورده است","به خانهٔ تازه‌ای رفته است"],"correct":1,"explanation_fa":"لورا می‌گوید: «Aber nicht nur ein Baby: Wir haben zwei!»"}
+{"type":"tf","prompt":"دو بچه خیلی شبیه هم هستند.","correct":false,"explanation_fa":"لورا می‌گوید: «Nein, sie sind ganz verschieden.»، یعنی کاملاً با هم فرق دارند."}
+{"type":"tf","prompt":"بچه‌ها از دوشنبه در خانه‌اند.","correct":true,"explanation_fa":"لورا می‌گوید: «Sie sind seit Montag zu Hause.»"}
+{"type":"mcq","prompt":"چرا لورا این روزها نمی‌تواند بخوابد؟","options":["چون پدر و مادرش مهمان‌اند","چون شب‌ها کار می‌کند","چون خانه‌شان پرسروصداست","چون بچه‌ها هر شب گریه می‌کنند"],"correct":3,"explanation_fa":"لورا می‌گوید: «Schlafen? Das ist jetzt unmöglich! Beide weinen jede Nacht.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید دو بچه با هم فرق دارند؟","correct_sentence":5,"explanation_fa":"لورا می‌گوید: «Nein, sie sind ganz verschieden.»"}
+{"type":"match","prompt":"هر کس را به چیزی که دربارهٔ او گفته می‌شود وصل کن.","left":["لنا","ماکس","پدر و مادر لورا"],"right":["شنبه می‌آیند","موهای تیره دارد","یکشنبه می‌آیند","بور است"],"pairs":[[0,1],[1,3],[2,0]],"explanation_fa":"لورا می‌گوید: «Lena hat dunkle Haare, und Max ist blond» و «Am Samstag kommen meine Eltern»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Schlafen? Das ist jetzt {{1}}! Beide {{2}} jede Nacht.","bank":["unmöglich","weinen","Eltern","besuchen","Mädchen"],"answers":["unmöglich","weinen"],"explanation_fa":"لورا می‌گوید: «Schlafen? Das ist jetzt unmöglich! Beide weinen jede Nacht.»"}
+listening A:
+{"type":"mcq","prompt":"بچه‌های لورا چه هستند؟","options":["دو تا پسر","دو تا دختر","یک پسر و یک دختر","یک دختر و دو پسر"],"correct":2,"explanation_fa":"لورا می‌گوید: «Ein Junge und ein Mädchen.»"}
+{"type":"tf","prompt":"تام می‌خواهد آخر هفته به دیدن لورا برود.","correct":true,"explanation_fa":"تام می‌پرسد: «Kann ich euch am Wochenende besuchen?»"}
+{"type":"tf","prompt":"لورا می‌گوید تام شنبه بیاید.","correct":false,"explanation_fa":"لورا می‌گوید: «am Sonntag ist das möglich. Am Samstag kommen meine Eltern.»؛ پس تام یکشنبه می‌تواند بیاید."}
+{"type":"mcq","prompt":"لورا از تام می‌خواهد چه چیزی با خودش بیاورد؟","options":["غذا برای خانواده","فقط حال خوب","یک هدیه برای بچه‌ها","کیک و قهوه"],"correct":1,"explanation_fa":"لورا می‌گوید: «Nein, das ist nicht nötig. Bring nur gute Laune mit!»"}
+listening B:
+{"type":"tf","prompt":"ماکس موهای تیره دارد.","correct":false,"explanation_fa":"لورا می‌گوید: «Lena hat dunkle Haare, und Max ist blond.»؛ پس لنا موهای تیره دارد، نه ماکس."}
+{"type":"tf","prompt":"بچه‌ها هر شب گریه می‌کنند.","correct":true,"explanation_fa":"لورا می‌گوید: «Beide weinen jede Nacht.»"}
+{"type":"mcq","prompt":"پدر و مادر لورا کی به دیدن او می‌آیند؟","options":["جمعه","شنبه","یکشنبه","دوشنبه"],"correct":1,"explanation_fa":"لورا می‌گوید: «Am Samstag kommen meine Eltern.»"}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["تام می‌پرسد آیا خبر راست است.","لورا می‌گوید بچه‌ها با هم فرق دارند.","تام می‌پرسد آیا چیزی بیاورد.","تام می‌پرسد آیا آخر هفته بیاید."],"correct_order":[0,1,3,2],"explanation_fa":"اول «Ist das wahr?»، بعد «sie sind ganz verschieden»، بعد «am Wochenende besuchen» و آخر «Soll ich etwas mitbringen?»."}

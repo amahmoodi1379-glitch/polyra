@@ -1,0 +1,28 @@
+code: de-a2-t110
+title: Koffer Wagner
+band: 1
+kind: ad
+key_words: furchtbar, leicht-2, perfekt, Rucksack
+sentences:
+- Ihr{Ihr-det} alter Koffer ist kaputt und furchtbar schwer{schwer-2}? | چمدان قدیمی‌تان خراب و خیلی سنگین است؟
+- Dann kommen Sie zu Koffer Wagner! | پس به فروشگاه «چمدان واگنر» بیایید!
+- Unsere neuen Koffer sind ganz leicht{leicht-2}: nur zwei Kilo! | چمدان‌های تازهٔ ما خیلی سبک‌اند: فقط دو کیلو!
+- Sie sind perfekt für Reisen mit dem Flugzeug. | برای سفر با هواپیما عالی‌اند.
+- Wir haben auch Rucksäcke in vielen Farben. | کوله‌پشتی هم در رنگ‌های مختلف داریم.
+- Diese Woche ist jeder Koffer 20 Prozent billiger. | این هفته هر چمدان ۲۰ درصد ارزان‌تر است. | tts: Diese Woche ist jeder Koffer zwanzig Prozent billiger.
+- Wunderbar, oder? Sie finden uns neben dem Bahnhof. | فوق‌العاده است، نه؟ ما را کنار ایستگاه قطار پیدا می‌کنید.
+reading A:
+{"type":"mcq","prompt":"این آگهی برای چیست؟","options":["یک آژانس مسافرتی","یک شرکت هواپیمایی","یک فروشگاه چمدان","یک هتل کنار ایستگاه"],"correct":2,"explanation_fa":"در آگهی آمده: «Dann kommen Sie zu Koffer Wagner!» و «Unsere neuen Koffer …»."}
+{"type":"tf","prompt":"چمدان‌های تازه فقط دو کیلو وزن دارند.","correct":true,"explanation_fa":"در آگهی آمده: «Unsere neuen Koffer sind ganz leicht: nur zwei Kilo!»"}
+{"type":"tf","prompt":"این فروشگاه کوله‌پشتی نمی‌فروشد.","correct":false,"explanation_fa":"در آگهی آمده: «Wir haben auch Rucksäcke in vielen Farben.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید فروشگاه کجاست؟","correct_sentence":6,"explanation_fa":"در آگهی آمده: «Sie finden uns neben dem Bahnhof.»"}
+{"type":"match","prompt":"هر چیز را به توضیح درستش در آگهی وصل کن.","left":["چمدان‌های تازه","کوله‌پشتی‌ها","فروشگاه"],"right":["کنار ایستگاه قطار است","در رنگ‌های مختلف هست","فقط دو کیلو است","فقط آنلاین می‌فروشد"],"pairs":[[0,2],[1,1],[2,0]],"explanation_fa":"در آگهی آمده: «nur zwei Kilo»، «Rucksäcke in vielen Farben» و «neben dem Bahnhof»."}
+listening A:
+{"type":"num","prompt":"این هفته چمدان‌ها چند درصد ارزان‌ترند؟","answer":"20","accepted":["20","20 Prozent","20 %","20%","zwanzig"],"explanation_fa":"در آگهی آمده: «Diese Woche ist jeder Koffer 20 Prozent billiger.»"}
+{"type":"mcq","prompt":"چمدان‌های تازه برای چه سفری عالی‌اند؟","options":["سفر با قطار","سفر با کشتی","سفر با ماشین","سفر با هواپیما"],"correct":3,"explanation_fa":"در آگهی آمده: «Sie sind perfekt für Reisen mit dem Flugzeug.»"}
+{"type":"tf","prompt":"فروشگاه کنار ایستگاه قطار است.","correct":true,"explanation_fa":"در آگهی آمده: «Sie finden uns neben dem Bahnhof.»"}
+{"type":"tf","prompt":"تخفیف تا آخر ماه است.","correct":false,"explanation_fa":"در آگهی آمده: «Diese Woche ist jeder Koffer 20 Prozent billiger.»؛ یعنی تخفیف فقط برای این هفته است."}
+listening B:
+{"type":"dict","sentence":4}
+{"type":"mcq","prompt":"آگهی به چه کسانی می‌گوید به فروشگاه بیایند؟","options":["به کسانی که بلیت هواپیما می‌خواهند","به کسانی که در ایستگاه کار می‌کنند","به کسانی که چمدان قدیمی‌شان خراب است","به کسانی که چمدان دست‌دوم می‌فروشند"],"correct":2,"explanation_fa":"در آگهی آمده: «Ihr alter Koffer ist kaputt und furchtbar schwer? Dann kommen Sie zu Koffer Wagner!»"}

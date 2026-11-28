@@ -8,7 +8,7 @@ B: Ich brauche ein Zimmer für zwei Nächte. | یک اتاق برای دو شب 
 A: Gern. Ein Zimmer mit Bad kostet 75 Euro für eine Nacht. | با کمال میل. یک اتاق با حمام برای هر شب ۷۵ یورو است. | tts: Gern. Ein Zimmer mit Bad kostet fünfundsiebzig Euro für eine Nacht.
 B: Gut, ich nehme es. | خوب است، همین را می‌گیرم.
 A: Hier ist Ihr Schlüssel. Sie{Sie-3} haben Zimmer 12. | این هم کلیدتان. اتاقتان شماره ۱۲ است. | tts: Hier ist Ihr Schlüssel. Sie haben Zimmer zwölf.
-B: Danke! Kann ich den Koffer hier lassen? Ich möchte noch essen gehen, denn ich habe Hunger. | ممنون! می‌توانم چمدان را اینجا بگذارم؟ می‌خواهم اول بروم غذا بخورم، چون گرسنه‌ام.
+B: Danke! Kann ich meinen Koffer hier lassen? Ich möchte noch essen gehen, denn ich habe Hunger. | ممنون! می‌توانم چمدانم را اینجا بگذارم؟ می‌خواهم اول بروم غذا بخورم، چون گرسنه‌ام.
 A: Natürlich, kein Problem! | حتماً، مشکلی نیست!
 reading A:
 {"type":"mcq","prompt":"مهمان اتاق را برای چند شب می‌خواهد؟","options":["یک شب","سه شب","دو شب","یک هفته"],"correct":2,"explanation_fa":"مهمان می‌گوید: «Ich brauche ein Zimmer für zwei Nächte.»، یعنی برای دو شب."}
@@ -28,5 +28,5 @@ listening A:
 listening B:
 {"type":"dict","sentence":1}
 {"type":"num","prompt":"اتاق مهمان چه شماره‌ای دارد؟","answer":"12","accepted":["12","zwölf"],"explanation_fa":"کارمند هتل می‌گوید: «Sie haben Zimmer 12.»"}
-{"type":"tf","prompt":"مهمان چمدانش را در هتل می‌گذارد.","correct":true,"explanation_fa":"مهمان می‌پرسد: «Kann ich den Koffer hier lassen?» و کارمند می‌گوید: «Natürlich, kein Problem!»"}
+{"type":"tf","prompt":"مهمان چمدانش را در هتل می‌گذارد.","correct":true,"explanation_fa":"مهمان می‌پرسد: «Kann ich meinen Koffer hier lassen?» و کارمند می‌گوید: «Natürlich, kein Problem!»"}
 {"type":"tf","prompt":"مهمان اتاق را فقط برای یک شب می‌خواهد.","correct":false,"explanation_fa":"مهمان می‌گوید: «Ich brauche ein Zimmer für zwei Nächte.»"}

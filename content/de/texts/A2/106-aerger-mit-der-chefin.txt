@@ -1,0 +1,40 @@
+code: de-a2-t106
+title: Ärger mit der Chefin
+band: 2
+kind: email
+key_words: Ärger, wütend, Laune, träumen, Wunsch
+sentences:
+- Liebe{lieb} Mina, | مینای عزیز،
+- diese Woche war nicht leicht. | این هفته آسان نگذشت.
+- Am Montag hatte ich Ärger mit meiner Chefin. | دوشنبه با رئیسم به دردسر افتادم.
+- Ich habe einem Kunden die falschen Unterlagen geschickt, und sie war sehr wütend. | مدارک اشتباهی را برای یک مشتری فرستادم و او خیلی عصبانی شد.
+- Danach hatte ich drei Tage lang schlechte Laune. | بعد از آن سه روز تمام حالم گرفته بود.
+- Ich habe sogar nachts von ihr geträumt! | حتی شب خوابش را دیدم!
+- Im Traum war ich wieder in der Schule, und sie war meine Lehrerin. | در خواب دوباره در مدرسه بودم و او معلمم بود.
+- Aber gestern hat sie mich in ihr{ihr-det} Büro gerufen. | ولی دیروز مرا به دفترش صدا زد.
+- Ich war sehr aufgeregt. | خیلی دلشوره داشتم.
+- Sie hat gesagt, dass sie mit meiner Arbeit zufrieden ist. | گفت که از کارم راضی است.
+- Dann hat sie gefragt, ob ich einen Wunsch habe. | بعد پرسید که آیا خواسته‌ای دارم.
+- Mein Wunsch war: zwei Wochen Urlaub im August. Und sie hat Ja gesagt! | خواسته‌ام این بود: دو هفته مرخصی در ماه اوت. و او قبول کرد!
+- Jetzt habe ich wieder gute Laune. Kommst du im August mit mir ans Meer? | حالا دوباره سرحالم. ماه اوت با من به کنار دریا می‌آیی؟
+- Liebe{lieb} Grüße, deine Lisa | با مهر، لیزا
+reading A:
+{"type":"mcq","prompt":"چرا رئیس لیزا روز دوشنبه عصبانی شد؟","options":["لیزا مدارک اشتباه فرستاده بود","لیزا دیر سر کار آمده بود","لیزا با یک مشتری بد حرف زده بود","لیزا بی‌اجازه مرخصی رفته بود"],"correct":0,"explanation_fa":"لیزا می‌نویسد: «Ich habe einem Kunden die falschen Unterlagen geschickt, und sie war sehr wütend.»"}
+{"type":"tf","prompt":"لیزا بعد از آن ماجرا سه روز حالش گرفته بود.","correct":true,"explanation_fa":"لیزا می‌نویسد: «Danach hatte ich drei Tage lang schlechte Laune.»"}
+{"type":"tf","prompt":"لیزا در خوابش رئیسش را در دفتر کار دید.","correct":false,"explanation_fa":"لیزا می‌نویسد: «Im Traum war ich wieder in der Schule, und sie war meine Lehrerin.»؛ یعنی در خواب، رئیسش معلم او بود."}
+{"type":"mcq","prompt":"رئیس دیروز دربارهٔ کار لیزا چه گفت؟","options":["که باید بیشتر کار کند","که کارش پر از اشتباه است","که از کارش راضی است","که باید به بخش دیگری برود"],"correct":2,"explanation_fa":"لیزا می‌نویسد: «Sie hat gesagt, dass sie mit meiner Arbeit zufrieden ist.»"}
+reading B:
+{"type":"order","prompt":"این اتفاق‌ها را به ترتیب ایمیل بچین.","items":["رئیس لیزا را به دفترش صدا زد.","لیزا مدارک اشتباه را فرستاد.","لیزا خواب رئیسش را دید.","رئیس پرسید لیزا چه خواسته‌ای دارد."],"correct_order":[1,2,0,3],"explanation_fa":"اول «die falschen Unterlagen geschickt»، بعد «von ihr geträumt»، بعد «in ihr Büro gerufen» و آخر «ob ich einen Wunsch habe»."}
+{"type":"find","prompt":"کدام جمله می‌گوید لیزا وقتی رئیس صدایش زد چه حالی داشت؟","correct_sentence":8,"explanation_fa":"لیزا می‌نویسد: «Ich war sehr aufgeregt.»، یعنی خیلی دلشوره داشت."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Danach hatte ich drei Tage lang schlechte {{1}}. Ich habe sogar nachts von ihr {{2}}!","bank":["Laune","geträumt","Ärger","gerufen","Wunsch"],"answers":["Laune","geträumt"],"explanation_fa":"لیزا می‌نویسد: «Danach hatte ich drei Tage lang schlechte Laune. Ich habe sogar nachts von ihr geträumt!»"}
+{"type":"match","prompt":"هر زمان را به اتفاق درستش در ایمیل وصل کن.","left":["دوشنبه","دیروز","ماه اوت"],"right":["رئیس گفت از کار لیزا راضی است","لیزا با رئیسش به دردسر افتاد","لیزا دو هفته مرخصی دارد","لیزا کلاس زبان را شروع می‌کند"],"pairs":[[0,1],[1,0],[2,2]],"explanation_fa":"در ایمیل آمده: «Am Montag hatte ich Ärger mit meiner Chefin»، «gestern hat sie mich in ihr Büro gerufen» و «zwei Wochen Urlaub im August»."}
+listening A:
+{"type":"mcq","prompt":"لیزا در این ایمیل بیشتر دربارهٔ چه می‌گوید؟","options":["دربارهٔ سفرش به کنار دریا","دربارهٔ یک هفتهٔ سخت سر کار","دربارهٔ همکار تازه‌اش","دربارهٔ یک مشتری مهربان"],"correct":1,"explanation_fa":"لیزا می‌گوید: «diese Woche war nicht leicht» و «Am Montag hatte ich Ärger mit meiner Chefin»."}
+{"type":"tf","prompt":"لیزا وقتی رئیس صدایش زد، آرام و بی‌خیال بود.","correct":false,"explanation_fa":"لیزا می‌گوید: «Ich war sehr aufgeregt.»، یعنی خیلی دلشوره داشت."}
+{"type":"tf","prompt":"رئیس با مرخصی لیزا موافقت کرد.","correct":true,"explanation_fa":"لیزا دربارهٔ مرخصی‌اش می‌گوید: «Und sie hat Ja gesagt!»"}
+{"type":"mcq","prompt":"لیزا از مینا چه می‌پرسد؟","options":["آیا شنبه به دیدنش می‌آید","آیا در کار تازه کمکش می‌کند","آیا به رئیسش زنگ می‌زند","آیا ماه اوت با او به دریا می‌آید"],"correct":3,"explanation_fa":"لیزا می‌پرسد: «Kommst du im August mit mir ans Meer?»"}
+listening B:
+{"type":"tf","prompt":"لیزا یک شب خواب رئیسش را دید.","correct":true,"explanation_fa":"لیزا می‌گوید: «Ich habe sogar nachts von ihr geträumt!»"}
+{"type":"tf","prompt":"لیزا الان هنوز حالش گرفته است.","correct":false,"explanation_fa":"لیزا می‌گوید: «Jetzt habe ich wieder gute Laune.»، یعنی حالا دوباره سرحال است."}
+{"type":"num","prompt":"لیزا چند هفته مرخصی خواست؟","answer":"2","accepted":["2","zwei"],"explanation_fa":"لیزا می‌گوید: «Mein Wunsch war: zwei Wochen Urlaub im August.»"}
+{"type":"mcq","prompt":"رئیس دیروز از لیزا چه پرسید؟","options":["آیا خسته است","آیا فردا وقت دارد","آیا مشکلی دارد","آیا خواسته‌ای دارد"],"correct":3,"explanation_fa":"لیزا می‌گوید: «Dann hat sie gefragt, ob ich einen Wunsch habe.»"}

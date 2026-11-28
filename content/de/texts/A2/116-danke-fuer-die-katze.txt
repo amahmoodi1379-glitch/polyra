@@ -1,0 +1,34 @@
+code: de-a2-t116
+title: Danke für die Katze
+band: 2
+kind: phone_call
+key_words: Ruhe, in Ruhe lassen, gern geschehen, gleichfalls, mach's gut
+sentences:
+A: Hallo Emma, hier ist Felix. Ich bin wieder zu Hause! | سلام اما، فلیکس هستم. برگشتم خانه!
+B: Hallo Felix! Wie war dein Urlaub in den Bergen? | سلام فلیکس! تعطیلاتت در کوهستان چطور بود؟
+A: Wunderbar! Keine Autos, kein Lärm, nur Ruhe. Und vielen Dank für deine Hilfe mit der Katze! | فوق‌العاده! نه ماشینی، نه سروصدایی، فقط آرامش. خیلی ممنون که به گربه‌ام رسیدی!
+B: Gern geschehen! Aber sie hat mich keine Minute in Ruhe gelassen. Sie wollte immer spielen. | خواهش می‌کنم! ولی یک دقیقه هم راحتم نگذاشت. همه‌اش می‌خواست بازی کند.
+A: Ach so, das macht sie immer, wenn ich weg bin. Hat sie genug gegessen? | آهان، هر وقت من نیستم همین کار را می‌کند. به اندازهٔ کافی غذا خورد؟
+B: Na klar! Und sie hat viel geschlafen, auf deinem Sofa. | معلومه! کلی هم خوابید، روی مبل تو.
+A: Ich habe dir Käse aus den Bergen mitgebracht. Kann ich heute vorbeikommen? | برایت از کوهستان پنیر آورده‌ام. می‌توانم امروز سر بزنم؟
+B: Schade, heute habe ich keine Zeit. Ich muss gleich zur Arbeit. | حیف، امروز وقت ندارم. باید همین الان بروم سر کار.
+A: Dann komme ich am Montag. Schönes Wochenende! | پس دوشنبه می‌آیم. آخر هفتهٔ خوبی داشته باشی!
+B: Danke, gleichfalls! Mach's gut! | ممنون، تو هم همین‌طور! خداحافظ، مواظب خودت باش!
+reading A:
+{"type":"mcq","prompt":"فلیکس برای چه به اما زنگ می‌زند؟","options":["تا او را به مهمانی دعوت کند","تا او را به کوهستان ببرد","تا از او تشکر کند","تا از سروصدا شکایت کند"],"correct":2,"explanation_fa":"فلیکس می‌گوید: «Und vielen Dank für deine Hilfe mit der Katze!»"}
+{"type":"tf","prompt":"جایی که فلیکس تعطیلاتش را گذراند، آرام بود.","correct":true,"explanation_fa":"فلیکس می‌گوید: «Keine Autos, kein Lärm, nur Ruhe.»"}
+{"type":"tf","prompt":"گربه به اندازهٔ کافی غذا نخورد.","correct":false,"explanation_fa":"فلیکس می‌پرسد: «Hat sie genug gegessen?» و اما می‌گوید: «Na klar!»"}
+{"type":"mcq","prompt":"گربه کجا زیاد خوابید؟","options":["روی تخت اما","روی مبل فلیکس","کنار پنجره","در آشپزخانه"],"correct":1,"explanation_fa":"اما می‌گوید: «Und sie hat viel geschlafen, auf deinem Sofa.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید اما چرا امروز وقت ندارد؟","correct_sentence":7,"explanation_fa":"اما می‌گوید: «Schade, heute habe ich keine Zeit. Ich muss gleich zur Arbeit.»"}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["فلیکس می‌گوید برای اما پنیر آورده است.","اما از تعطیلات فلیکس می‌پرسد.","اما می‌گوید گربه همه‌اش می‌خواست بازی کند.","فلیکس می‌گوید دوشنبه می‌آید."],"correct_order":[1,2,0,3],"explanation_fa":"اول «Wie war dein Urlaub?»، بعد «Sie wollte immer spielen»، بعد «Ich habe dir Käse … mitgebracht» و آخر «Dann komme ich am Montag»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Gern geschehen! Aber sie hat mich keine Minute in {{1}} gelassen. Sie wollte immer {{2}}.","bank":["Ruhe","spielen","Sofa","gegessen","Minute"],"answers":["Ruhe","spielen"],"explanation_fa":"اما می‌گوید: «Aber sie hat mich keine Minute in Ruhe gelassen. Sie wollte immer spielen.»"}
+listening A:
+{"type":"mcq","prompt":"فلیکس تعطیلاتش را کجا گذراند؟","options":["کنار دریا","در کوهستان","در یک شهر بزرگ","در خانهٔ اما"],"correct":1,"explanation_fa":"اما می‌پرسد: «Wie war dein Urlaub in den Bergen?»"}
+{"type":"tf","prompt":"اما در نبودن فلیکس به گربه‌اش رسید.","correct":true,"explanation_fa":"فلیکس می‌گوید: «vielen Dank für deine Hilfe mit der Katze!»"}
+{"type":"tf","prompt":"فلیکس برای اما شکلات آورده است.","correct":false,"explanation_fa":"فلیکس می‌گوید: «Ich habe dir Käse aus den Bergen mitgebracht.»، یعنی پنیر آورده است."}
+{"type":"mcq","prompt":"فلیکس کی پیش اما می‌آید؟","options":["امروز","سه‌شنبه","دوشنبه","چهارشنبه"],"correct":2,"explanation_fa":"فلیکس می‌گوید: «Dann komme ich am Montag.»"}
+listening B:
+{"type":"tf","prompt":"اما امروز وقت دارد.","correct":false,"explanation_fa":"اما می‌گوید: «heute habe ich keine Zeit»."}
+{"type":"tf","prompt":"گربه زیاد خوابید.","correct":true,"explanation_fa":"اما می‌گوید: «Und sie hat viel geschlafen.»"}
+{"type":"mcq","prompt":"وقتی فلیکس برای اما آخر هفتهٔ خوبی آرزو می‌کند، اما چه جواب می‌دهد؟","options":["می‌گوید آخر هفته کار دارد","تشکر می‌کند و برای او هم همین را آرزو می‌کند","می‌گوید حیف شد","می‌پرسد فلیکس کجا می‌رود"],"correct":1,"explanation_fa":"اما می‌گوید: «Danke, gleichfalls!»، یعنی «ممنون، تو هم همین‌طور»."}

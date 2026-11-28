@@ -1,0 +1,28 @@
+code: de-a2-t115
+title: Heute im Schwimmbad
+band: 1
+kind: announcement
+key_words: verboten, erlaubt, Schild
+sentences:
+- Liebe{lieb} Gäste, hier ist eine wichtige Information für Sie. | مهمانان عزیز، یک اطلاعیهٔ مهم برای شما داریم.
+- Heute ist es sehr voll im Schwimmbad. | امروز استخر خیلی شلوغ است.
+- Deshalb ist das Springen heute verboten. | برای همین امروز شیرجه زدن ممنوع است.
+- Essen{Essen} ist nur auf der Wiese erlaubt, nicht am Wasser. | غذا خوردن فقط روی چمن مجاز است، نه کنار آب.
+- Kinder unter acht Jahren dürfen nur mit einem Erwachsenen ins Wasser. | بچه‌های زیر هشت سال فقط با یک بزرگسال می‌توانند داخل آب بروند.
+- Bitte lesen Sie auch die Schilder am Eingang. | لطفاً تابلوهای دم در ورودی را هم بخوانید.
+- Vielen Dank und viel Spaß! | خیلی ممنون و خوش بگذرد!
+reading A:
+{"type":"mcq","prompt":"چرا امروز شیرجه زدن ممنوع است؟","options":["چون آب خیلی سرد است","چون نجات‌غریق نیامده است","چون استخر خیلی شلوغ است","چون هوا بارانی است"],"correct":2,"explanation_fa":"در اطلاعیه آمده: «Heute ist es sehr voll im Schwimmbad. Deshalb ist das Springen heute verboten.»"}
+{"type":"tf","prompt":"غذا خوردن کنار آب مجاز است.","correct":false,"explanation_fa":"در اطلاعیه آمده: «Essen ist nur auf der Wiese erlaubt, nicht am Wasser.»"}
+{"type":"tf","prompt":"دم در ورودی چند تابلو هست.","correct":true,"explanation_fa":"در اطلاعیه آمده: «Bitte lesen Sie auch die Schilder am Eingang.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله دربارهٔ بچه‌های کوچک است؟","correct_sentence":4,"explanation_fa":"در اطلاعیه آمده: «Kinder unter acht Jahren dürfen nur mit einem Erwachsenen ins Wasser.»"}
+{"type":"order","prompt":"این‌ها را به ترتیب اطلاعیه بچین.","items":["دربارهٔ غذا خوردن می‌گوید.","می‌گوید استخر شلوغ است.","دربارهٔ بچه‌های زیر هشت سال می‌گوید.","می‌گوید شیرجه زدن ممنوع است."],"correct_order":[1,3,0,2],"explanation_fa":"اول «sehr voll»، بعد «das Springen … verboten»، بعد «Essen ist nur auf der Wiese erlaubt» و بعد «Kinder unter acht Jahren»."}
+listening A:
+{"type":"num","prompt":"بچه‌های زیر چند سال فقط با یک بزرگسال می‌توانند داخل آب بروند؟","answer":"8","accepted":["8","acht"],"explanation_fa":"در اطلاعیه آمده: «Kinder unter acht Jahren dürfen nur mit einem Erwachsenen ins Wasser.»"}
+{"type":"mcq","prompt":"کجا می‌شود غذا خورد؟","options":["کنار آب","روی چمن","دم در ورودی","در رختکن"],"correct":1,"explanation_fa":"در اطلاعیه آمده: «Essen ist nur auf der Wiese erlaubt.»"}
+{"type":"tf","prompt":"امروز استخر خلوت است.","correct":false,"explanation_fa":"در اطلاعیه آمده: «Heute ist es sehr voll im Schwimmbad.»"}
+{"type":"tf","prompt":"امروز شیرجه زدن ممنوع است.","correct":true,"explanation_fa":"در اطلاعیه آمده: «Deshalb ist das Springen heute verboten.»"}
+listening B:
+{"type":"dict","sentence":5}
+{"type":"mcq","prompt":"این اطلاعیه برای چه کسانی است؟","options":["برای مهمانان استخر","برای کارکنان استخر","برای معلم‌های مدرسه","برای مسافران قطار"],"correct":0,"explanation_fa":"اطلاعیه با این جمله شروع می‌شود: «Liebe Gäste, hier ist eine wichtige Information für Sie.»"}

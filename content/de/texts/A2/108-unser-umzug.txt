@@ -1,0 +1,36 @@
+code: de-a2-t108
+title: Unser Umzug am Samstag
+band: 2
+kind: schedule
+key_words: Umzug, kaputt, voll, leer, praktisch
+sentences:
+- Unser Umzug am Samstag: das Programm für alle | اسباب‌کشی ما در روز شنبه: برنامه برای همه
+- 7:30 Uhr: Frühstück bei uns in der alten Wohnung. | ساعت ۷:۳۰: صبحانه پیش ما در خانهٔ قدیمی. | tts: Sieben Uhr dreißig: Frühstück bei uns in der alten Wohnung.
+- 8 Uhr: Der Lkw kommt. Zuerst tragen wir die großen Möbel nach unten. | ساعت ۸: کامیون می‌آید. اول وسایل بزرگ را پایین می‌بریم. | tts: Acht Uhr: Der Lkw kommt. Zuerst tragen wir die großen Möbel nach unten.
+- Leider ist der Aufzug kaputt. Wir müssen alles über die Treppe tragen. | متأسفانه آسانسور خراب است. باید همه چیز را از راه‌پله ببریم.
+- Das ist nicht normal, aber typisch für unser Haus! | این عادی نیست، ولی در ساختمان ما همیشه همین‌طور است!
+- 11 Uhr: Der Lkw ist voll, und wir fahren in die neue Wohnung. | ساعت ۱۱: کامیون پر است و به خانهٔ تازه می‌رویم. | tts: Elf Uhr: Der Lkw ist voll, und wir fahren in die neue Wohnung.
+- 13 Uhr: Mittagessen. Es gibt Pizza und kalte Getränke. | ساعت ۱۳: ناهار. پیتزا و نوشیدنی خنک هست. | tts: Dreizehn Uhr: Mittagessen. Es gibt Pizza und kalte Getränke.
+- 15 Uhr: Die alte Wohnung ist jetzt leer. Wir putzen noch die Küche und das Bad. | ساعت ۱۵: خانهٔ قدیمی حالا خالی است. آشپزخانه و حمام را هم تمیز می‌کنیم. | tts: Fünfzehn Uhr: Die alte Wohnung ist jetzt leer. Wir putzen noch die Küche und das Bad.
+- 18 Uhr: Feierabend! Wir grillen zusammen auf dem neuen Balkon. | ساعت ۱۸: کار تمام! با هم روی بالکن تازه کباب درست می‌کنیم. | tts: Achtzehn Uhr: Feierabend! Wir grillen zusammen auf dem neuen Balkon.
+- Bitte bringt bequeme Kleidung mit. Handschuhe sind auch praktisch. | لطفاً لباس راحت بیاورید. دستکش هم به درد می‌خورد.
+- Danke für eure Hilfe! Leon und Emma | از کمکتان ممنونیم! لئون و اما
+reading A:
+{"type":"mcq","prompt":"این برنامه برای چیست؟","options":["برای یک جشن تولد","برای تعمیر آسانسور","برای یک سفر با کامیون","برای اسباب‌کشی لئون و اما"],"correct":3,"explanation_fa":"عنوان برنامه این است: «Unser Umzug am Samstag»، یعنی اسباب‌کشی ما در روز شنبه."}
+{"type":"tf","prompt":"آسانسور ساختمان کار نمی‌کند.","correct":true,"explanation_fa":"در برنامه آمده: «Leider ist der Aufzug kaputt.»"}
+{"type":"tf","prompt":"صبحانه در خانهٔ تازه است.","correct":false,"explanation_fa":"در برنامه آمده: «Frühstück bei uns in der alten Wohnung»، یعنی صبحانه در خانهٔ قدیمی است."}
+{"type":"mcq","prompt":"ساعت ۱۵ چه کار می‌کنند؟","options":["وسایل را به کامیون می‌برند","در خانهٔ تازه ناهار می‌خورند","آشپزخانه و حمام را تمیز می‌کنند","روی بالکن کباب درست می‌کنند"],"correct":2,"explanation_fa":"در برنامه آمده: «15 Uhr: Die alte Wohnung ist jetzt leer. Wir putzen noch die Küche und das Bad.»"}
+reading B:
+{"type":"order","prompt":"کارهای روز را به ترتیب برنامه بچین.","items":["کامیون پر است و به خانهٔ تازه می‌روند.","صبحانه می‌خورند.","روی بالکن کباب درست می‌کنند.","خانهٔ قدیمی را تمیز می‌کنند.","وسایل بزرگ را پایین می‌برند."],"correct_order":[1,4,0,3,2],"explanation_fa":"ترتیب برنامه: «Frühstück»، «die großen Möbel nach unten»، «Der Lkw ist voll»، «Wir putzen» و آخر «Wir grillen»."}
+{"type":"find","prompt":"کدام جمله می‌گوید دوستان چه چیزهایی با خودشان بیاورند؟","correct_sentence":9,"explanation_fa":"در برنامه آمده: «Bitte bringt bequeme Kleidung mit. Handschuhe sind auch praktisch.»"}
+{"type":"match","prompt":"هر ساعت را به کارش در برنامه وصل کن.","left":["ساعت ۸","ساعت ۱۳","ساعت ۱۸"],"right":["ناهار","کامیون می‌آید","کار تمام است و کباب درست می‌کنند","صبحانه"],"pairs":[[0,1],[1,0],[2,2]],"explanation_fa":"در برنامه آمده: «8 Uhr: Der Lkw kommt»، «13 Uhr: Mittagessen» و «18 Uhr: Feierabend! Wir grillen»."}
+listening A:
+{"type":"num","prompt":"کامیون ساعت چند می‌آید؟","answer":"8","accepted":["8","8 Uhr","8:00","acht"],"explanation_fa":"در برنامه آمده: «8 Uhr: Der Lkw kommt.»"}
+{"type":"tf","prompt":"به گفتهٔ لئون و اما، این جور مشکل در ساختمانشان زیاد پیش می‌آید.","correct":true,"explanation_fa":"دربارهٔ آسانسور خراب آمده: «Das ist nicht normal, aber typisch für unser Haus!»"}
+{"type":"tf","prompt":"برای ناهار سوپ و نوشیدنی گرم هست.","correct":false,"explanation_fa":"در برنامه آمده: «Es gibt Pizza und kalte Getränke.»، یعنی پیتزا و نوشیدنی خنک."}
+{"type":"mcq","prompt":"به گفتهٔ برنامه، چه چیزی به درد می‌خورد؟","options":["دستکش","کفش ورزشی","کلاه","چتر"],"correct":0,"explanation_fa":"در برنامه آمده: «Handschuhe sind auch praktisch.»"}
+listening B:
+{"type":"num","prompt":"کار ساعت چند تمام می‌شود؟","answer":"18","accepted":["18","18 Uhr","18:00","achtzehn"],"explanation_fa":"در برنامه آمده: «18 Uhr: Feierabend!»"}
+{"type":"tf","prompt":"ساعت ۱۱ کامیون پر است.","correct":true,"explanation_fa":"در برنامه آمده: «11 Uhr: Der Lkw ist voll.»"}
+{"type":"tf","prompt":"ساعت ۱۵ خانهٔ تازه خالی است.","correct":false,"explanation_fa":"در برنامه آمده: «Die alte Wohnung ist jetzt leer.»؛ یعنی خانهٔ قدیمی خالی است، نه خانهٔ تازه."}
+{"type":"mcq","prompt":"وسایل را از کجا پایین می‌برند؟","options":["با آسانسور","از پنجره","از بالکن","از راه‌پله"],"correct":3,"explanation_fa":"در برنامه آمده: «Leider ist der Aufzug kaputt. Wir müssen alles über die Treppe tragen.»"}

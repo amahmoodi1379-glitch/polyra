@@ -1,0 +1,37 @@
+code: de-a2-t113
+title: Unser Ausflug im Juni
+band: 2
+kind: email
+key_words: Grund, Idee, Ziel, Meinung, meiner Meinung nach
+sentences:
+- Liebe{lieb} Kolleginnen und Kollegen, | همکاران عزیز،
+- unser Ausflug ist dieses Jahr nicht im Mai, sondern im Juni. | گردش ما امسال نه در ماه مه، بلکه در ماه ژوئن است.
+- Der Grund: Im Mai haben viele von euch Urlaub. | دلیلش این است که خیلی از شما در ماه مه مرخصی هستید.
+- Ich habe zwei Ideen für den Tag. | برای آن روز دو فکر دارم.
+- Meine erste Idee: Wir fahren mit dem Fahrrad zum See. Das sind 30 Kilometer. | فکر اولم: با دوچرخه به دریاچه می‌رویم. ۳۰ کیلومتر راه است. | tts: Meine erste Idee: Wir fahren mit dem Fahrrad zum See. Das sind dreißig Kilometer.
+- Unser Ziel ist ein kleines Restaurant direkt am Wasser. | مقصدمان یک رستوران کوچک درست کنار آب است.
+- Meine zweite Idee: Wir fahren mit dem Zug nach Dresden und besichtigen dort das Schloss. | فکر دومم: با قطار به درسدن می‌رویم و آنجا از قصر دیدن می‌کنیم.
+- Danach essen wir zusammen in der Altstadt. | بعد با هم در بخش قدیمی شهر غذا می‌خوریم.
+- Meiner Meinung nach ist die erste Idee schöner, aber für einen Teil von euch ist die Fahrt vielleicht zu lang. | به نظر من فکر اول قشنگ‌تر است، ولی شاید این راه برای بعضی از شما زیادی طولانی باشد.
+- Bitte schreibt mir bis Freitag eure Meinung. | لطفاً تا جمعه نظرتان را برایم بنویسید.
+- Hat jemand einen anderen Plan? Dann schreibt ihn mir auch! | کسی برنامهٔ دیگری دارد؟ پس آن را هم برایم بنویسید!
+- Liebe{lieb} Grüße, Lisa | با مهر، لیزا
+reading A:
+{"type":"mcq","prompt":"گردش امسال کی است؟","options":["در ماه ژوئن","در ماه مه","در ماه ژوئیه","هنوز معلوم نیست"],"correct":0,"explanation_fa":"لیزا می‌نویسد: «unser Ausflug ist dieses Jahr nicht im Mai, sondern im Juni»."}
+{"type":"mcq","prompt":"چرا گردش در ماه مه نیست؟","options":["چون در ماه مه هوا بد است","چون رستوران بسته است","چون لیزا وقت ندارد","چون خیلی از همکاران مرخصی‌اند"],"correct":3,"explanation_fa":"لیزا می‌نویسد: «Der Grund: Im Mai haben viele von euch Urlaub.»"}
+{"type":"tf","prompt":"لیزا فکر دوم را بیشتر دوست دارد.","correct":false,"explanation_fa":"لیزا می‌نویسد: «Meiner Meinung nach ist die erste Idee schöner.»"}
+{"type":"tf","prompt":"در فکر دوم، همکاران با قطار به درسدن می‌روند.","correct":true,"explanation_fa":"لیزا می‌نویسد: «Meine zweite Idee: Wir fahren mit dem Zug nach Dresden.»"}
+reading B:
+{"type":"match","prompt":"هر فکر را به برنامه‌اش وصل کن.","left":["فکر اول","فکر دوم"],"right":["دیدن قصر و غذا در بخش قدیمی شهر","دوچرخه‌سواری تا یک رستوران کنار دریاچه","پیاده‌روی در جنگل و پیک‌نیک"],"pairs":[[0,1],[1,0]],"explanation_fa":"لیزا می‌نویسد: «Meine erste Idee: Wir fahren mit dem Fahrrad zum See» و «Meine zweite Idee: … besichtigen dort das Schloss. Danach essen wir zusammen in der Altstadt.»"}
+{"type":"find","prompt":"کدام جمله می‌گوید همکاران تا کی جواب بدهند؟","correct_sentence":9,"explanation_fa":"لیزا می‌نویسد: «Bitte schreibt mir bis Freitag eure Meinung.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Meiner Meinung nach ist die erste {{1}} schöner, aber für einen {{2}} von euch ist die Fahrt vielleicht zu lang.","bank":["Idee","Teil","Grund","Ziel","Zug"],"answers":["Idee","Teil"],"explanation_fa":"لیزا می‌نویسد: «Meiner Meinung nach ist die erste Idee schöner, aber für einen Teil von euch ist die Fahrt vielleicht zu lang.»"}
+listening A:
+{"type":"num","prompt":"تا رستوران با دوچرخه چند کیلومتر راه است؟","answer":"30","accepted":["30","30 km","30 Kilometer","dreißig"],"explanation_fa":"لیزا می‌گوید: «Das sind 30 Kilometer.»"}
+{"type":"tf","prompt":"رستوران کنار آب است.","correct":true,"explanation_fa":"لیزا می‌گوید: «ein kleines Restaurant direkt am Wasser»."}
+{"type":"tf","prompt":"لیزا می‌گوید راه دوچرخه برای همه کوتاه است.","correct":false,"explanation_fa":"لیزا می‌گوید: «für einen Teil von euch ist die Fahrt vielleicht zu lang»، یعنی شاید برای بعضی‌ها طولانی باشد."}
+{"type":"mcq","prompt":"لیزا از همکارانش چه می‌خواهد؟","options":["که بلیت قطار بخرند","که رستوران رزرو کنند","که دوچرخه بیاورند","که نظرشان را بنویسند"],"correct":3,"explanation_fa":"لیزا می‌گوید: «Bitte schreibt mir bis Freitag eure Meinung.»"}
+listening B:
+{"type":"mcq","prompt":"در فکر دوم، همکاران بعد از دیدن قصر چه می‌کنند؟","options":["به دریاچه می‌روند","با دوچرخه برمی‌گردند","در بخش قدیمی شهر غذا می‌خورند","به یک موزه می‌روند"],"correct":2,"explanation_fa":"لیزا می‌گوید: «Danach essen wir zusammen in der Altstadt.»"}
+{"type":"tf","prompt":"لیزا می‌گوید هر کس برنامهٔ دیگری دارد، آن را برایش بنویسد.","correct":true,"explanation_fa":"لیزا می‌گوید: «Hat jemand einen anderen Plan? Dann schreibt ihn mir auch!»"}
+{"type":"tf","prompt":"گردش امسال در ماه مه است.","correct":false,"explanation_fa":"لیزا می‌گوید: «nicht im Mai, sondern im Juni»."}
+{"type":"order","prompt":"این‌ها را به ترتیب ایمیل بچین.","items":["لیزا فکر اولش را می‌گوید.","لیزا می‌گوید گردش در ماه ژوئن است.","لیزا نظر خودش را می‌گوید.","لیزا فکر دومش را می‌گوید."],"correct_order":[1,0,3,2],"explanation_fa":"اول «im Juni»، بعد «Meine erste Idee»، بعد «Meine zweite Idee» و بعد «Meiner Meinung nach …»."}

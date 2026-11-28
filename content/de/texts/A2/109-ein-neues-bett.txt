@@ -1,0 +1,37 @@
+code: de-a2-t109
+title: Endlich ein neues Bett
+band: 2
+kind: email
+key_words: hart, weich, niedrig, breit, kompliziert
+sentences:
+- Liebe{lieb} Sara, | سارای عزیز،
+- wir haben endlich ein neues Bett! Aber das war schwierig. | بالاخره یک تخت تازه داریم! ولی کار سختی بود.
+- Im ersten Geschäft waren alle Betten zu hart. | در مغازهٔ اول همهٔ تخت‌ها خیلی سفت بودند.
+- Im anderen Geschäft waren sie zu weich. | در مغازهٔ دیگر خیلی نرم بودند.
+- Amir mag weiche Betten, aber ich mag lieber harte. | امیر تخت نرم دوست دارد، ولی من تخت سفت را بیشتر دوست دارم.
+- Am Samstag haben wir dann das richtige Bett gefunden. | شنبه بالاخره تخت مناسب را پیدا کردیم.
+- Es ist nicht zu hoch und nicht zu niedrig, und es ist breit genug für uns zwei. | نه خیلی بلند است و نه خیلی کوتاه، و برای ما دو نفر به اندازهٔ کافی پهن است.
+- Das Bett kam in vier Paketen, und die Arbeit war sehr kompliziert. | تخت در چهار بسته آمد و سر هم کردنش خیلی پیچیده بود.
+- Amir hat drei Stunden gearbeitet und war danach sehr müde. | امیر سه ساعت کار کرد و بعدش خیلی خسته بود.
+- Aber jetzt schlafen wir jede Nacht tief und gut. | ولی حالا هر شب عمیق و خوب می‌خوابیم.
+- Kommst du uns bald besuchen? Dann zeigen wir dir unser neues Schlafzimmer. | زود به دیدنمان می‌آیی؟ آن‌وقت اتاق‌خواب تازه‌مان را نشانت می‌دهیم.
+- Liebe{lieb} Grüße, deine Maryam | با مهر، مریم
+reading A:
+{"type":"mcq","prompt":"مشکل تخت‌های مغازهٔ اول چه بود؟","options":["خیلی گران بودند","خیلی کوچک بودند","خیلی نرم بودند","خیلی سفت بودند"],"correct":3,"explanation_fa":"مریم می‌نویسد: «Im ersten Geschäft waren alle Betten zu hart.»"}
+{"type":"tf","prompt":"مریم تخت سفت را بیشتر از تخت نرم دوست دارد.","correct":true,"explanation_fa":"مریم می‌نویسد: «aber ich mag lieber harte»."}
+{"type":"tf","prompt":"امیر هم تخت سفت دوست دارد.","correct":false,"explanation_fa":"مریم می‌نویسد: «Amir mag weiche Betten»، یعنی امیر تخت نرم دوست دارد."}
+{"type":"mcq","prompt":"تخت تازه چه ویژگی‌ای دارد؟","options":["خیلی بلند و باریک است","خیلی کوتاه و نرم است","برای دو نفر به اندازهٔ کافی پهن است","فقط برای یک نفر جا دارد"],"correct":2,"explanation_fa":"مریم می‌نویسد: «Es ist nicht zu hoch und nicht zu niedrig, und es ist breit genug für uns zwei.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید سر هم کردن تخت آسان نبود؟","correct_sentence":7,"explanation_fa":"مریم می‌نویسد: «Das Bett kam in vier Paketen, und die Arbeit war sehr kompliziert.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Im ersten Geschäft waren alle Betten zu {{1}}. Im anderen Geschäft waren sie zu {{2}}.","bank":["hart","weich","Paketen","müde","besuchen"],"answers":["hart","weich"],"explanation_fa":"مریم می‌نویسد: «Im ersten Geschäft waren alle Betten zu hart. Im anderen Geschäft waren sie zu weich.»"}
+{"type":"order","prompt":"این‌ها را به ترتیب ایمیل بچین.","items":["تخت مناسب را پیدا کردند.","تخت‌های مغازهٔ اول خیلی سفت بودند.","امیر سه ساعت کار کرد.","تخت‌های مغازهٔ دیگر خیلی نرم بودند."],"correct_order":[1,3,0,2],"explanation_fa":"اول «zu hart»، بعد «zu weich»، بعد «das richtige Bett gefunden» و آخر «Amir hat drei Stunden gearbeitet»."}
+listening A:
+{"type":"mcq","prompt":"مریم و امیر کی تخت مناسب را پیدا کردند؟","options":["جمعه","یکشنبه","شنبه","دوشنبه"],"correct":2,"explanation_fa":"مریم می‌گوید: «Am Samstag haben wir dann das richtige Bett gefunden.»"}
+{"type":"num","prompt":"تخت در چند بسته آمد؟","answer":"4","accepted":["4","vier"],"explanation_fa":"مریم می‌گوید: «Das Bett kam in vier Paketen.»"}
+{"type":"tf","prompt":"امیر بعد از کار خیلی خسته بود.","correct":true,"explanation_fa":"مریم می‌گوید: «Amir hat drei Stunden gearbeitet und war danach sehr müde.»"}
+{"type":"tf","prompt":"مریم و امیر حالا شب‌ها بد می‌خوابند.","correct":false,"explanation_fa":"مریم می‌گوید: «Aber jetzt schlafen wir jede Nacht tief und gut.»"}
+listening B:
+{"type":"num","prompt":"امیر چند ساعت کار کرد؟","answer":"3","accepted":["3","drei"],"explanation_fa":"مریم می‌گوید: «Amir hat drei Stunden gearbeitet.»"}
+{"type":"tf","prompt":"تخت تازه خیلی بلند است.","correct":false,"explanation_fa":"مریم می‌گوید: «Es ist nicht zu hoch und nicht zu niedrig.»"}
+{"type":"tf","prompt":"مریم از سارا می‌پرسد که آیا زود به دیدنشان می‌آید.","correct":true,"explanation_fa":"مریم می‌پرسد: «Kommst du uns bald besuchen?»"}
+{"type":"mcq","prompt":"مریم می‌خواهد چه چیزی را به سارا نشان بدهد؟","options":["اتاق‌خواب تازه","آشپزخانهٔ تازه","مغازهٔ تخت‌فروشی","بسته‌های تخت"],"correct":0,"explanation_fa":"مریم می‌گوید: «Dann zeigen wir dir unser neues Schlafzimmer.»"}

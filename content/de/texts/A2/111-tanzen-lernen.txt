@@ -1,0 +1,35 @@
+code: de-a2-t111
+title: Tanzen lernen vor der Hochzeit
+band: 2
+kind: phone_call
+key_words: gemeinsam, privat, beliebt, egal, komisch
+sentences:
+A: Guten Tag, Frau Becker, hier ist Paul Weber. Meine Freundin und ich heiraten im September, und wir möchten gemeinsam tanzen lernen. | روز بخیر خانم بکر، پاول وبر هستم. من و نامزدم سپتامبر عروسی می‌کنیم و می‌خواهیم با هم رقص یاد بگیریم.
+B: Herzlichen Glückwunsch! Möchten Sie in einer Gruppe lernen oder privat? | تبریک می‌گویم! می‌خواهید در گروه یاد بگیرید یا خصوصی؟
+A: Was kostet das? | قیمتش چقدر است؟
+B: In der Gruppe kostet ein Kurs 90 Euro. Privat kostet eine Stunde 50 Euro. | در گروه، یک دوره ۹۰ یورو است. خصوصی، هر ساعت ۵۰ یورو. | tts: In der Gruppe kostet ein Kurs neunzig Euro. Privat kostet eine Stunde fünfzig Euro.
+A: Privat ist uns zu teuer. Wir nehmen lieber die Gruppe. | خصوصی برای ما خیلی گران است. گروهی را ترجیح می‌دهیم.
+B: Der Kurs am Dienstag ist sehr beliebt und schon voll. Aber es gibt einen zweiten Kurs am Donnerstag. | دورهٔ سه‌شنبه خیلی پرطرفدار است و دیگر پر شده. ولی یک دورهٔ دوم پنجشنبه‌ها هست.
+A: Das ist uns egal. Donnerstag geht auch. | برای ما فرقی نمی‌کند. پنجشنبه هم خوب است.
+B: Prima! Dann können Sie direkt nächste Woche anfangen, um 19 Uhr. | عالی! پس می‌توانید از همین هفتهٔ بعد شروع کنید، ساعت ۱۹. | tts: Prima! Dann können Sie direkt nächste Woche anfangen, um neunzehn Uhr.
+A: Wunderbar. Aber ich tanze nicht gern. Ich finde das ein bisschen komisch. | عالی است. ولی من رقصیدن را دوست ندارم. به نظرم کمی عجیب است.
+B: Keine Sorge! Das sagen viele Männer, und nach drei Wochen tanzen alle gern. | نگران نباشید! خیلی از مردها این را می‌گویند و بعد از سه هفته همه با کمال میل می‌رقصند.
+reading A:
+{"type":"mcq","prompt":"چرا پاول به خانم بکر زنگ می‌زند؟","options":["می‌خواهد سالن عروسی رزرو کند","می‌خواهد با نامزدش رقص یاد بگیرد","می‌خواهد کلاس رقصش را لغو کند","می‌خواهد پیش خانم بکر کار کند"],"correct":1,"explanation_fa":"پاول می‌گوید: «Meine Freundin und ich heiraten im September, und wir möchten gemeinsam tanzen lernen.»"}
+{"type":"tf","prompt":"پاول و نامزدش کلاس خصوصی را انتخاب می‌کنند.","correct":false,"explanation_fa":"پاول می‌گوید: «Privat ist uns zu teuer. Wir nehmen lieber die Gruppe.»"}
+{"type":"tf","prompt":"کلاس سه‌شنبه دیگر جا ندارد.","correct":true,"explanation_fa":"خانم بکر می‌گوید: «Der Kurs am Dienstag ist sehr beliebt und schon voll.»"}
+{"type":"mcq","prompt":"پاول دربارهٔ رقصیدن چه می‌گوید؟","options":["رقصیدن را خیلی دوست دارد","قبلاً کلاس رقص رفته است","فقط با نامزدش می‌رقصد","به نظرش رقصیدن کمی عجیب است"],"correct":3,"explanation_fa":"پاول می‌گوید: «Aber ich tanze nicht gern. Ich finde das ein bisschen komisch.»"}
+reading B:
+{"type":"match","prompt":"هر کلاس را به اطلاعات درستش در گفتگو وصل کن.","left":["کلاس گروهی","کلاس خصوصی","کلاس دوم"],"right":["هر ساعت ۵۰ یورو","پنجشنبه‌ها","یک دوره ۹۰ یورو","یکشنبه‌ها"],"pairs":[[0,2],[1,0],[2,1]],"explanation_fa":"خانم بکر می‌گوید: «In der Gruppe kostet ein Kurs 90 Euro. Privat kostet eine Stunde 50 Euro» و «einen zweiten Kurs am Donnerstag»."}
+{"type":"find","prompt":"کدام جمله می‌گوید پاول و نامزدش کی ازدواج می‌کنند؟","correct_sentence":0,"explanation_fa":"پاول می‌گوید: «Meine Freundin und ich heiraten im September.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Der Kurs am Dienstag ist sehr {{1}} und schon {{2}}.","bank":["beliebt","voll","Gruppe","Stunde","heiraten"],"answers":["beliebt","voll"],"explanation_fa":"خانم بکر می‌گوید: «Der Kurs am Dienstag ist sehr beliebt und schon voll.»"}
+listening A:
+{"type":"num","prompt":"یک دورهٔ گروهی چند یورو است؟","answer":"90","accepted":["90","90 Euro","neunzig"],"explanation_fa":"خانم بکر می‌گوید: «In der Gruppe kostet ein Kurs 90 Euro.»"}
+{"type":"tf","prompt":"خانم بکر به پاول تبریک می‌گوید.","correct":true,"explanation_fa":"خانم بکر می‌گوید: «Herzlichen Glückwunsch!»"}
+{"type":"tf","prompt":"پاول و نامزدش فقط سه‌شنبه‌ها وقت دارند.","correct":false,"explanation_fa":"پاول می‌گوید: «Das ist uns egal. Donnerstag geht auch.»"}
+{"type":"mcq","prompt":"کلاس آن‌ها کی شروع می‌شود؟","options":["هفتهٔ بعد","همین امشب","ماه بعد","بعد از عروسی"],"correct":0,"explanation_fa":"خانم بکر می‌گوید: «Dann können Sie direkt nächste Woche anfangen.»"}
+listening B:
+{"type":"num","prompt":"کلاس ساعت چند است؟","answer":"19","accepted":["19","19 Uhr","19:00","neunzehn"],"explanation_fa":"خانم بکر می‌گوید: «um 19 Uhr»."}
+{"type":"tf","prompt":"کلاس خصوصی برای پاول و نامزدش خیلی گران است.","correct":true,"explanation_fa":"پاول می‌گوید: «Privat ist uns zu teuer.»"}
+{"type":"tf","prompt":"پاول کلاس پنجشنبه را نمی‌خواهد.","correct":false,"explanation_fa":"پاول دربارهٔ کلاس پنجشنبه می‌گوید: «Das ist uns egal. Donnerstag geht auch.»"}
+{"type":"mcq","prompt":"خانم بکر دربارهٔ مردها چه می‌گوید؟","options":["هیچ‌وقت رقص یاد نمی‌گیرند","همیشه کلاس خصوصی می‌گیرند","بعد از سه هفته همه با کمال میل می‌رقصند","سه‌شنبه‌ها وقت ندارند"],"correct":2,"explanation_fa":"خانم بکر می‌گوید: «Das sagen viele Männer, und nach drei Wochen tanzen alle gern.»"}

@@ -1,0 +1,26 @@
+code: de-a2-t120
+title: Zum ersten Mal klettern
+band: 1
+kind: dialogue
+key_words: zum ersten Mal, am Anfang, am Ende, ab und zu, auf jeden Fall
+sentences:
+A: Anna, ich bin gestern zum ersten Mal geklettert! | آنا، دیروز برای اولین بار صخره‌نوردی کردم!
+B: Toll, Jonas! Und, wie war es? | عالیه، یوناس! خب، چطور بود؟
+A: Am Anfang hatte ich ein bisschen Angst, aber am Ende war es super. | اولش کمی می‌ترسیدم، ولی آخرش عالی بود.
+B: Ich klettere ab und zu, zum Beispiel im Sommer in den Bergen. | من گاه‌گاهی صخره‌نوردی می‌کنم، مثلاً تابستان‌ها در کوهستان.
+A: Ich möchte das auf jeden Fall wieder machen. | حتماً می‌خواهم دوباره این کار را بکنم.
+B: Ich gehe am Samstag klettern. Komm doch mit! Ruf mich mal an. | من شنبه می‌روم صخره‌نوردی. تو هم بیا! یک زنگ به من بزن.
+reading A:
+{"type":"mcq","prompt":"یوناس دیروز چه کار کرد؟","options":["با آنا به کوهستان رفت","برای اولین بار شنا کرد","برای اولین بار صخره‌نوردی کرد","به آنا زنگ زد"],"correct":2,"explanation_fa":"یوناس می‌گوید: «ich bin gestern zum ersten Mal geklettert!»"}
+{"type":"tf","prompt":"یوناس اولش کمی می‌ترسید.","correct":true,"explanation_fa":"یوناس می‌گوید: «Am Anfang hatte ich ein bisschen Angst.»"}
+{"type":"tf","prompt":"آنا هر روز صخره‌نوردی می‌کند.","correct":false,"explanation_fa":"آنا می‌گوید: «Ich klettere ab und zu»، یعنی گاه‌گاهی."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید یوناس می‌خواهد دوباره صخره‌نوردی کند؟","correct_sentence":4,"explanation_fa":"یوناس می‌گوید: «Ich möchte das auf jeden Fall wieder machen.»"}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["آنا یوناس را برای شنبه دعوت می‌کند.","یوناس از ترس اولش می‌گوید.","یوناس می‌گوید دیروز صخره‌نوردی کرده است.","آنا می‌گوید گاهی صخره‌نوردی می‌کند."],"correct_order":[2,1,3,0],"explanation_fa":"اول «zum ersten Mal geklettert»، بعد «Am Anfang hatte ich ein bisschen Angst»، بعد «Ich klettere ab und zu» و آخر «Komm doch mit!»."}
+listening A:
+{"type":"mcq","prompt":"آنا کی می‌رود صخره‌نوردی؟","options":["جمعه","شنبه","یکشنبه","دوشنبه"],"correct":1,"explanation_fa":"آنا می‌گوید: «Ich gehe am Samstag klettern.»"}
+{"type":"tf","prompt":"آخرش صخره‌نوردی برای یوناس عالی بود.","correct":true,"explanation_fa":"یوناس می‌گوید: «aber am Ende war es super»."}
+{"type":"tf","prompt":"آنا هیچ‌وقت در کوهستان صخره‌نوردی نکرده است.","correct":false,"explanation_fa":"آنا می‌گوید: «zum Beispiel im Sommer in den Bergen»."}
+listening B:
+{"type":"dict","sentence":4}
+{"type":"mcq","prompt":"آنا آخر گفتگو از یوناس چه می‌خواهد؟","options":["برایش عکس بفرستد","کفش تازه بخرد","از دیروز تعریف کند","به او زنگ بزند"],"correct":3,"explanation_fa":"آنا می‌گوید: «Ruf mich mal an.»"}
