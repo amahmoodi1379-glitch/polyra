@@ -1,0 +1,27 @@
+code: fr-a2-t033
+title: Tu tousses !
+band: 1
+kind: dialogue
+sentences:
+A: Paul, tu tousses beaucoup ! Ça va ? | پل، خیلی سرفه می‌کنی! حالت خوب است؟
+B: Pas vraiment. J'ai mal à la gorge et je n'ai plus de voix. | نه چندان. گلویم درد می‌کند و دیگر صدایم درنمی‌آید.
+A: Tu as de la fièvre ? | تب داری؟
+B: Oui, un peu. J'ai froid et chaud en même temps. | آره، کمی. همزمان هم سردم است هم گرمم.
+A: C'est peut-être la grippe. Rentre chez toi ! | شاید آنفولانزا باشد. برو خانه!
+B: Mais j'ai beaucoup de travail… | ولی خیلی کار دارم…
+A: Ce n'est pas grave, je m'occupe de ton travail. | مهم نیست، من به کارهایت می‌رسم.
+B: Merci, Sophie, tu es gentille ! | ممنون سوفی، تو مهربانی!
+reading A:
+{"type":"mcq","prompt":"پل چه مشکلی دارد؟","options":["دندانش درد می‌کند","گلویش درد می‌کند","پایش درد می‌کند","گوشش درد می‌کند"],"correct":1,"explanation_fa":"پل می‌گوید: «J'ai mal à la gorge»، یعنی گلویم درد می‌کند."}
+{"type":"tf","prompt":"پل کمی تب دارد.","correct":true,"explanation_fa":"سوفی می‌پرسد «Tu as de la fièvre ?» و پل می‌گوید: «Oui, un peu.»، یعنی آره، کمی."}
+{"type":"tf","prompt":"سوفی می‌گوید پل باید سر کار بماند.","correct":false,"explanation_fa":"سوفی می‌گوید: «Rentre chez toi !»، یعنی برو خانه."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید سوفی به کار پل می‌رسد؟","correct_sentence":6,"explanation_fa":"سوفی می‌گوید: «je m'occupe de ton travail»، یعنی من به کارهایت می‌رسم."}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["سوفی می‌گوید شاید آنفولانزا باشد.","پل از سوفی تشکر می‌کند.","سوفی می‌پرسد پل تب دارد یا نه.","پل می‌گوید گلویش درد می‌کند."],"correct_order":[3,2,0,1],"explanation_fa":"اول «J'ai mal à la gorge»، بعد «Tu as de la fièvre ?»، بعد «C'est peut-être la grippe» و آخر «Merci, Sophie»."}
+listening A:
+{"type":"mcq","prompt":"سوفی فکر می‌کند پل چه بیماری‌ای دارد؟","options":["سرماخوردگی","معده‌درد","آنفولانزا","کمردرد"],"correct":2,"explanation_fa":"سوفی می‌گوید: «C'est peut-être la grippe.»، یعنی شاید آنفولانزا باشد."}
+{"type":"tf","prompt":"پل هم سردش است و هم گرمش.","correct":true,"explanation_fa":"پل می‌گوید: «J'ai froid et chaud en même temps.»، یعنی همزمان سردم است و گرمم."}
+{"type":"tf","prompt":"پل امروز کار زیادی ندارد.","correct":false,"explanation_fa":"پل می‌گوید: «Mais j'ai beaucoup de travail…»، یعنی خیلی کار دارد."}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"mcq","prompt":"چرا پل اول نمی‌خواهد به خانه برود؟","options":["چون کار زیادی دارد","چون خانه‌اش دور است","چون تب ندارد","چون دارو ندارد"],"correct":0,"explanation_fa":"وقتی سوفی می‌گوید برو خانه، پل می‌گوید: «Mais j'ai beaucoup de travail…»"}

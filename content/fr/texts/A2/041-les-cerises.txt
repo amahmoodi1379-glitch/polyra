@@ -1,0 +1,27 @@
+code: fr-a2-t041
+title: Les cerises du jardin
+band: 1
+kind: voice_message
+sentences:
+- Bonjour Léa, c'est ta grand-mère. | سلام لئا، مادربزرگت هستم.
+- Il y a beaucoup de cerises dans le jardin cette année ! | امسال توی باغچه کلی گیلاس هست!
+- J'en ai trop pour moi. | برای من زیادی است.
+- Tu veux venir dimanche avec ton frère ? | می‌خواهی یکشنبه با برادرت بیایی؟
+- On peut faire un gâteau aux cerises. | می‌توانیم کیک گیلاس درست کنیم.
+- Et ton grand-père a acheté un gros melon au marché. | پدربزرگت هم از بازار یک طالبی بزرگ خریده است.
+- Apportez un grand sac pour les fruits ! | یک کیسهٔ بزرگ برای میوه‌ها بیاورید!
+- À dimanche, je t'embrasse ! | تا یکشنبه، می‌بوسمت!
+reading A:
+{"type":"mcq","prompt":"مادربزرگ چرا پیام گذاشته است؟","options":["حالش خوب نیست","لئا را به خانه‌اش دعوت می‌کند","کیک تولد سفارش می‌دهد","کیفش را گم کرده است"],"correct":1,"explanation_fa":"مادربزرگ می‌گوید: «Tu veux venir dimanche avec ton frère ?»، یعنی می‌خواهی یکشنبه با برادرت بیایی؟"}
+{"type":"tf","prompt":"امسال در باغچه گیلاس زیادی هست.","correct":true,"explanation_fa":"مادربزرگ می‌گوید: «Il y a beaucoup de cerises dans le jardin cette année !»"}
+{"type":"tf","prompt":"مادربزرگ یک طالبی بزرگ خریده است.","correct":false,"explanation_fa":"مادربزرگ می‌گوید: «ton grand-père a acheté un gros melon»، یعنی پدربزرگ آن را خریده است."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید با گیلاس‌ها چه درست کنند؟","correct_sentence":4,"explanation_fa":"مادربزرگ می‌گوید: «On peut faire un gâteau aux cerises.»، یعنی می‌توانیم کیک گیلاس درست کنیم."}
+{"type":"mcq","prompt":"لئا باید چه چیزی با خودش بیاورد؟","options":["یک کیک","یک طالبی","گل","یک کیسهٔ بزرگ"],"correct":3,"explanation_fa":"مادربزرگ می‌گوید: «Apportez un grand sac pour les fruits !»، یعنی یک کیسهٔ بزرگ برای میوه‌ها بیاورید."}
+listening A:
+{"type":"mcq","prompt":"مادربزرگ می‌خواهد لئا با چه کسی بیاید؟","options":["با مادرش","با دوستش","با برادرش","با خواهرش"],"correct":2,"explanation_fa":"مادربزرگ می‌گوید: «avec ton frère»، یعنی با برادرت."}
+{"type":"tf","prompt":"مادربزرگ می‌گوید گیلاس‌ها برای او زیادی است.","correct":true,"explanation_fa":"مادربزرگ می‌گوید: «J'en ai trop pour moi.»، یعنی برای من زیادی است."}
+{"type":"tf","prompt":"مادربزرگ لئا را برای شنبه دعوت می‌کند.","correct":false,"explanation_fa":"مادربزرگ می‌گوید: «Tu veux venir dimanche ?» و «À dimanche»، یعنی یکشنبه."}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"mcq","prompt":"پدربزرگ از بازار چه خریده است؟","options":["یک طالبی بزرگ","گیلاس","یک کیک","یک کیسهٔ بزرگ"],"correct":0,"explanation_fa":"مادربزرگ می‌گوید: «ton grand-père a acheté un gros melon au marché»، یعنی یک طالبی بزرگ."}

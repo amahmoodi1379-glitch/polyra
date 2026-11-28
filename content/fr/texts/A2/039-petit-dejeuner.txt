@@ -1,0 +1,28 @@
+code: fr-a2-t039
+title: Petit-déjeuner au café
+band: 1
+kind: menu
+sentences:
+- Café{café-2} de la Gare : le petit-déjeuner | کافهٔ ایستگاه: صبحانه
+- Petit-déjeuner sucré : 7 euros. | صبحانهٔ شیرین: ۷ یورو. | tts: Petit-déjeuner sucré : sept euros.
+- Un croissant, du pain avec du beurre, et un chocolat chaud. | یک کروسان، نان و کره، و یک شیرکاکائوی داغ.
+- Petit-déjeuner salé : 9 euros. | صبحانهٔ شور: ۹ یورو. | tts: Petit-déjeuner salé : neuf euros.
+- Deux œufs, du pain avec du fromage, et un jus d'orange. | دو تخم‌مرغ، نان و پنیر، و یک آب پرتقال.
+- Le deuxième café est gratuit ! | قهوهٔ دوم رایگان است!
+- Goûtez nos gâteaux, faits ici chaque matin. | کیک‌هایمان را بچشید؛ هر روز صبح همین‌جا درست می‌شوند.
+- Petit-déjeuner servi de 7 heures à 11 heures, sauf le dimanche. | صبحانه از ساعت ۷ تا ۱۱ سرو می‌شود، به جز یکشنبه‌ها. | tts: Petit-déjeuner servi de sept heures à onze heures, sauf le dimanche.
+reading A:
+{"type":"mcq","prompt":"صبحانهٔ شور چند یورو است؟","options":["۷ یورو","۹ یورو","۱۱ یورو","۶ یورو"],"correct":1,"explanation_fa":"در منو آمده: «Petit-déjeuner salé : 9 euros.»، یعنی صبحانهٔ شور ۹ یورو است."}
+{"type":"tf","prompt":"در صبحانهٔ شیرین کروسان هست.","correct":true,"explanation_fa":"در منو برای صبحانهٔ شیرین آمده: «Un croissant, du pain avec du beurre…»"}
+{"type":"tf","prompt":"کافه یکشنبه‌ها هم صبحانه دارد.","correct":false,"explanation_fa":"در منو آمده: «sauf le dimanche»، یعنی به جز یکشنبه‌ها."}
+reading B:
+{"type":"match","prompt":"هر صبحانه را به نوشیدنی‌اش وصل کن.","left":["صبحانهٔ شیرین","صبحانهٔ شور"],"right":["شیرکاکائوی داغ","آب پرتقال","چای"],"pairs":[[0,0],[1,1]],"explanation_fa":"صبحانهٔ شیرین با «un chocolat chaud» است و صبحانهٔ شور با «un jus d'orange»."}
+{"type":"find","prompt":"کدام جمله می‌گوید کیک‌ها کجا درست می‌شوند؟","correct_sentence":6,"explanation_fa":"در منو آمده: «nos gâteaux, faits ici chaque matin»، یعنی کیک‌ها هر صبح همین‌جا درست می‌شوند."}
+listening A:
+{"type":"num","prompt":"صبحانهٔ شیرین چند یورو است؟","answer":"7","accepted":["7","sept"],"explanation_fa":"می‌شنویم: «Petit-déjeuner sucré : 7 euros.»، یعنی هفت یورو."}
+{"type":"mcq","prompt":"چه چیزی رایگان است؟","options":["کروسان دوم","کیک‌ها","قهوهٔ دوم","آب پرتقال"],"correct":2,"explanation_fa":"می‌شنویم: «Le deuxième café est gratuit !»، یعنی قهوهٔ دوم رایگان است."}
+{"type":"tf","prompt":"در صبحانهٔ شور تخم‌مرغ هست.","correct":true,"explanation_fa":"برای صبحانهٔ شور می‌شنویم: «Deux œufs, du pain avec du fromage…»، یعنی دو تخم‌مرغ."}
+{"type":"tf","prompt":"صبحانه تا ساعت ۱۲ سرو می‌شود.","correct":false,"explanation_fa":"می‌شنویم: «de 7 heures à 11 heures»، یعنی صبحانه تا ساعت ۱۱ است."}
+listening B:
+{"type":"dict","sentence":5}
+{"type":"mcq","prompt":"صبحانه از ساعت چند شروع می‌شود؟","options":["ساعت ۶","ساعت ۷","ساعت ۸","ساعت ۹"],"correct":1,"explanation_fa":"می‌شنویم: «Petit-déjeuner servi de 7 heures à 11 heures»، یعنی از ساعت ۷."}

@@ -1,0 +1,26 @@
+code: fr-a2-t043
+title: Chez Sara
+band: 1
+kind: ad
+sentences:
+- Nouveau dans le quartier : « Chez Sara » ! | تازه در محله: «پیش سارا»!
+- Ici, on mange des pizzas et des frites. | اینجا پیتزا و سیب‌زمینی سرخ‌کرده می‌خورید.
+- Pizza au jambon, au fromage ou aux légumes : 9 euros. | پیتزای ژامبون، پنیر یا سبزیجات: ۹ یورو. | tts: Pizza au jambon, au fromage ou aux légumes : neuf euros.
+- Menu enfant : une petite pizza, des frites, un jus de fruits et des bonbons : 6 euros ! | منوی کودک: یک پیتزای کوچک، سیب‌زمینی سرخ‌کرده، یک آب‌میوه و آب‌نبات: ۶ یورو! | tts: Menu enfant : une petite pizza, des frites, un jus de fruits et des bonbons : six euros !
+- Vous restez à la maison ? On vous apporte votre pizza ! | در خانه می‌مانید؟ پیتزایتان را برایتان می‌آوریم!
+- Ouvert{ouvert} tous les jours, de 11 heures à 23 heures. | هر روز باز است، از ساعت ۱۱ تا ۲۳. | tts: Ouvert tous les jours, de onze heures à vingt-trois heures.
+reading A:
+{"type":"mcq","prompt":"این آگهی برای چیست؟","options":["یک نانوایی تازه","یک رستوران تازه","یک سوپرمارکت تازه","یک کافهٔ کتاب"],"correct":1,"explanation_fa":"در آگهی آمده: «Nouveau dans le quartier» و «Ici, on mange des pizzas et des frites.»، یعنی یک رستوران تازه در محله."}
+{"type":"tf","prompt":"پیتزای پنیری ۹ یورو است.","correct":true,"explanation_fa":"در آگهی آمده: «Pizza au jambon, au fromage ou aux légumes : 9 euros.»"}
+{"type":"tf","prompt":"رستوران یکشنبه‌ها بسته است.","correct":false,"explanation_fa":"در آگهی آمده: «Ouvert tous les jours»، یعنی هر روز باز است."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید رستوران پیتزا را به خانه می‌آورد؟","correct_sentence":4,"explanation_fa":"در آگهی آمده: «On vous apporte votre pizza !»، یعنی پیتزایتان را برایتان می‌آوریم."}
+{"type":"mcq","prompt":"در منوی کودک چه چیزی نیست؟","options":["پیتزای کوچک","سیب‌زمینی سرخ‌کرده","بستنی","آب‌نبات"],"correct":2,"explanation_fa":"در آگهی آمده: «une petite pizza, des frites, un jus de fruits et des bonbons»؛ بستنی در منوی کودک نیست."}
+listening A:
+{"type":"num","prompt":"منوی کودک چند یورو است؟","answer":"6","accepted":["6","six"],"explanation_fa":"می‌شنویم: «Menu enfant : … 6 euros !»، یعنی شش یورو."}
+{"type":"mcq","prompt":"رستوران شب تا ساعت چند باز است؟","options":["ساعت ۲۱","ساعت ۲۲","ساعت ۲۳","ساعت ۲۴"],"correct":2,"explanation_fa":"می‌شنویم: «de 11 heures à 23 heures»، یعنی تا ساعت بیست‌وسه."}
+{"type":"tf","prompt":"این رستوران پیتزا را به خانه هم می‌آورد.","correct":true,"explanation_fa":"می‌شنویم: «On vous apporte votre pizza !»"}
+{"type":"tf","prompt":"در منوی کودک آب‌میوه نیست.","correct":false,"explanation_fa":"می‌شنویم: «un jus de fruits»، یعنی در منوی کودک آب‌میوه هست."}
+listening B:
+{"type":"dict","sentence":1}
+{"type":"mcq","prompt":"کدام پیتزا در آگهی نیست؟","options":["پیتزای ژامبون","پیتزای مرغ","پیتزای پنیر","پیتزای سبزیجات"],"correct":1,"explanation_fa":"می‌شنویم: «Pizza au jambon, au fromage ou aux légumes»؛ پیتزای مرغ نیست."}

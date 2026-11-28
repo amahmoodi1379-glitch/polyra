@@ -1,0 +1,34 @@
+code: fr-a2-t042
+title: Cours de cuisine
+band: 2
+kind: schedule
+sentences:
+- Cours{cours} de cuisine pour les enfants de 8 à 12 ans, à l'école du{du-contr} quartier | کلاس آشپزی برای بچه‌های ۸ تا ۱۲ ساله، در مدرسهٔ محله | tts: Cours de cuisine pour les enfants de huit à douze ans, à l'école du quartier
+- Lundi : le pain, avec de la farine, de l'eau et du sel. | دوشنبه: نان، با آرد، آب و نمک.
+- Mardi : le gâteau au yaourt. On le mange avec du miel ou de la confiture. | سه‌شنبه: کیک ماستی. آن را با عسل یا مربا می‌خوریم.
+- Mercredi : pas de cours. | چهارشنبه: کلاس نداریم.
+- Jeudi : une soupe de légumes avec un peu de crème. | پنجشنبه: سوپ سبزیجات با کمی خامه.
+- Vendredi : des pâtes avec du fromage, de l'huile et du poivre. | جمعه: ماکارونی با پنیر، روغن و فلفل.
+- Les cours commencent à 10 heures et finissent à midi. | کلاس‌ها ساعت ۱۰ شروع می‌شوند و ظهر تمام می‌شوند. | tts: Les cours commencent à dix heures et finissent à midi.
+- À la fin, les enfants goûtent leur plat ensemble. | آخر کلاس، بچه‌ها با هم غذایشان را می‌چشند.
+- Prix : 8 euros par jour, ou 30 euros pour la semaine. | قیمت: روزی ۸ یورو، یا ۳۰ یورو برای کل هفته. | tts: Prix : huit euros par jour, ou trente euros pour la semaine.
+- Votre enfant ne peut pas manger d'œufs ? Parlez au professeur avant le premier cours. | فرزندتان نمی‌تواند تخم‌مرغ بخورد؟ قبل از جلسهٔ اول با معلم حرف بزنید.
+reading A:
+{"type":"match","prompt":"هر روز را به غذایش وصل کن.","left":["دوشنبه","سه‌شنبه","پنجشنبه"],"right":["سوپ سبزیجات","نان","پیتزا","کیک ماستی"],"pairs":[[0,1],[1,3],[2,0]],"explanation_fa":"در برنامه آمده: «Lundi : le pain»، «Mardi : le gâteau au yaourt» و «Jeudi : une soupe de légumes»."}
+{"type":"tf","prompt":"چهارشنبه کلاس نیست.","correct":true,"explanation_fa":"در برنامه آمده: «Mercredi : pas de cours.»، یعنی چهارشنبه کلاس نداریم."}
+{"type":"tf","prompt":"این کلاس برای بچه‌های ۴ تا ۸ ساله است.","correct":false,"explanation_fa":"در برنامه آمده: «pour les enfants de 8 à 12 ans»، یعنی برای بچه‌های ۸ تا ۱۲ ساله."}
+{"type":"mcq","prompt":"کیک ماستی را با چه می‌خورند؟","options":["با خامه یا شکلات","با عسل یا مربا","با پنیر یا کره","با شیر یا آب‌میوه"],"correct":1,"explanation_fa":"در برنامه آمده: «On le mange avec du miel ou de la confiture.»، یعنی با عسل یا مربا."}
+reading B:
+{"type":"find","prompt":"کدام جمله دربارهٔ قیمت کلاس است؟","correct_sentence":8,"explanation_fa":"در برنامه آمده: «Prix : 8 euros par jour, ou 30 euros pour la semaine.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های برنامه پر کن.","text_with_gaps":"Vendredi : des pâtes avec du fromage, de l'{{1}} et du {{2}}.","bank":["huile","poivre","eau","sucre","miel"],"answers":["huile","poivre"],"explanation_fa":"در برنامه آمده: «de l'huile et du poivre»، یعنی روغن و فلفل."}
+{"type":"mcq","prompt":"کلاس‌ها کجا هستند؟","options":["در کتابخانه","در مدرسهٔ محله","در یک رستوران","در خانهٔ معلم"],"correct":1,"explanation_fa":"در برنامه آمده: «à l'école du quartier»، یعنی در مدرسهٔ محله."}
+listening A:
+{"type":"num","prompt":"کلاس برای کل هفته چند یورو است؟","answer":"30","accepted":["30","trente"],"explanation_fa":"می‌شنویم: «30 euros pour la semaine»، یعنی سی یورو برای هفته."}
+{"type":"mcq","prompt":"جمعه بچه‌ها چه درست می‌کنند؟","options":["سوپ","کیک","ماکارونی","نان"],"correct":2,"explanation_fa":"می‌شنویم: «Vendredi : des pâtes avec du fromage»، یعنی جمعه ماکارونی با پنیر."}
+{"type":"tf","prompt":"کلاس‌ها ساعت ۱۰ شروع می‌شوند.","correct":true,"explanation_fa":"می‌شنویم: «Les cours commencent à 10 heures»، یعنی کلاس‌ها ساعت ده شروع می‌شوند."}
+{"type":"tf","prompt":"پنجشنبه بچه‌ها نان درست می‌کنند.","correct":false,"explanation_fa":"می‌شنویم: «Jeudi : une soupe de légumes»؛ نان مال دوشنبه است."}
+listening B:
+{"type":"num","prompt":"یک روز کلاس چند یورو است؟","answer":"8","accepted":["8","huit"],"explanation_fa":"می‌شنویم: «8 euros par jour»، یعنی روزی هشت یورو."}
+{"type":"mcq","prompt":"اگر بچه نمی‌تواند تخم‌مرغ بخورد، پدر و مادر چه کار کنند؟","options":["بچه را به کلاس نیاورند","غذای خودش را بیاورند","پول بیشتری بدهند","با معلم حرف بزنند"],"correct":3,"explanation_fa":"می‌شنویم: «Parlez au professeur avant le premier cours.»، یعنی قبل از جلسهٔ اول با معلم حرف بزنید."}
+{"type":"tf","prompt":"آخر کلاس، بچه‌ها با هم غذایشان را می‌چشند.","correct":true,"explanation_fa":"می‌شنویم: «À la fin, les enfants goûtent leur plat ensemble.»"}
+{"type":"tf","prompt":"کلاس‌ها ساعت ۲ بعدازظهر تمام می‌شوند.","correct":false,"explanation_fa":"می‌شنویم: «et finissent à midi»، یعنی کلاس‌ها ظهر تمام می‌شوند."}

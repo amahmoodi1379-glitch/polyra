@@ -1,0 +1,37 @@
+code: fr-a2-t034
+title: Une dent cassée
+band: 2
+kind: phone_call
+sentences:
+A: Bonjour, vous êtes chez le docteur Martin, dentiste. | سلام، اینجا مطب دکتر مارتن، دندان‌پزشک است.
+B: Bonjour, madame. Je voudrais un rendez-vous pour aujourd'hui, s'il vous plaît. C'est une urgence. | سلام خانم. لطفاً یک وقت برای امروز می‌خواستم. کارم فوری است.
+A: Qu'est-ce que vous avez ? | چه مشکلی دارید؟
+B: Hier soir, j'ai mangé du poulet et j'ai cassé une dent sur un os. | دیشب مرغ خوردم و دندانم روی یک استخوان شکست.
+B: Maintenant, j'ai une forte douleur, en bas, à gauche. | حالا درد شدیدی دارم، پایین، سمت چپ.
+A: Ça vous fait très mal ? | خیلی درد دارید؟
+B: Oui, surtout la nuit. Je n'ai pas du tout dormi. | بله، مخصوصاً شب. اصلاً نخوابیدم.
+A: D'accord. Le docteur Martin peut vous voir à 17 heures 30. | باشد. دکتر مارتن ساعت ۱۷:۳۰ می‌تواند شما را ببیند. | tts: D'accord. Le docteur Martin peut vous voir à dix-sept heures trente.
+B: Parfait. Je peux prendre un médicament avant ? | عالی. قبلش می‌توانم دارو بخورم؟
+A: Oui, demandez au pharmacien. Il peut vous donner quelque chose contre la douleur. | بله، از داروساز بپرسید. می‌تواند چیزی برای درد به شما بدهد.
+A: Après le rendez-vous, le docteur va peut-être vous faire une ordonnance. | بعد از ویزیت، دکتر شاید برایتان نسخه بنویسد.
+A: Votre nom, s'il vous plaît ? | لطفاً اسمتان؟
+B: Nicolas Dubois. Merci beaucoup, madame ! | نیکولا دوبوا. خیلی ممنون خانم!
+reading A:
+{"type":"mcq","prompt":"نیکولا چرا زنگ می‌زند؟","options":["می‌خواهد وقتش را عوض کند","نسخه‌اش را گم کرده است","برای پسرش وقت می‌خواهد","دندانش شکسته و درد دارد"],"correct":3,"explanation_fa":"نیکولا می‌گوید: «j'ai cassé une dent sur un os» و «j'ai une forte douleur»، یعنی دندانش شکسته و درد شدیدی دارد."}
+{"type":"tf","prompt":"نیکولا دیشب خوب خوابید.","correct":false,"explanation_fa":"نیکولا می‌گوید: «Je n'ai pas du tout dormi.»، یعنی اصلاً نخوابیدم."}
+{"type":"tf","prompt":"دندان نیکولا موقع خوردن مرغ شکست.","correct":true,"explanation_fa":"نیکولا می‌گوید: «j'ai mangé du poulet et j'ai cassé une dent sur un os»، یعنی مرغ خورد و دندانش روی استخوان شکست."}
+{"type":"mcq","prompt":"دکتر ساعت چند نیکولا را می‌بیند؟","options":["۱۶:۳۰","۱۷:۳۰","۱۷:۰۰","۱۸:۳۰"],"correct":1,"explanation_fa":"منشی می‌گوید: «Le docteur Martin peut vous voir à 17 heures 30.»، یعنی ساعت ۱۷:۳۰."}
+reading B:
+{"type":"match","prompt":"هر کس را به کاری که برای نیکولا می‌کند وصل کن.","left":["داروساز","دکتر مارتن"],"right":["چیزی برای درد به او می‌دهد","شاید برایش نسخه بنویسد","وقتش را عوض می‌کند"],"pairs":[[0,0],[1,1]],"explanation_fa":"منشی می‌گوید داروساز «peut vous donner quelque chose contre la douleur» و دکتر «va peut-être vous faire une ordonnance»."}
+{"type":"find","prompt":"کدام جمله می‌گوید درد نیکولا کجای دهانش است؟","correct_sentence":4,"explanation_fa":"نیکولا می‌گوید: «j'ai une forte douleur, en bas, à gauche»، یعنی پایین، سمت چپ."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Oui, demandez au {{1}}. Il peut vous donner quelque chose contre la {{2}}.","bank":["pharmacien","douleur","professeur","dent","nuit"],"answers":["pharmacien","douleur"],"explanation_fa":"منشی می‌گوید: «demandez au pharmacien … contre la douleur»، یعنی از داروساز بپرسید، برای درد."}
+listening A:
+{"type":"num","prompt":"وقت نیکولا ساعت چند است؟","answer":"17:30","accepted":["17:30","17h30","17.30","17 h 30","5:30"],"explanation_fa":"منشی می‌گوید: «à 17 heures 30»، یعنی ساعت هفده و سی دقیقه."}
+{"type":"mcq","prompt":"درد نیکولا کی بیشتر است؟","options":["صبح‌ها","موقع غذا","شب‌ها","بعدازظهرها"],"correct":2,"explanation_fa":"منشی می‌پرسد «Ça vous fait très mal ?» و نیکولا می‌گوید: «Oui, surtout la nuit.»، یعنی مخصوصاً شب."}
+{"type":"tf","prompt":"نیکولا می‌تواند قبل از وقتش دارو بخورد.","correct":true,"explanation_fa":"نیکولا می‌پرسد «Je peux prendre un médicament avant ?» و منشی می‌گوید: «Oui, demandez au pharmacien.»"}
+{"type":"tf","prompt":"نیکولا فردا پیش دکتر می‌رود.","correct":false,"explanation_fa":"نیکولا وقتی برای «aujourd'hui»، یعنی امروز، می‌خواهد و دکتر امروز ساعت ۱۷:۳۰ او را می‌بیند."}
+listening B:
+{"type":"mcq","prompt":"نیکولا با کجا تماس گرفته است؟","options":["با مطب دندان‌پزشک","با داروخانه","با بیمارستان","با یک رستوران"],"correct":0,"explanation_fa":"منشی می‌گوید: «vous êtes chez le docteur Martin, dentiste»، یعنی اینجا مطب دندان‌پزشک است."}
+{"type":"tf","prompt":"منشی اسم نیکولا را می‌پرسد.","correct":true,"explanation_fa":"منشی می‌پرسد: «Votre nom, s'il vous plaît ?»، یعنی لطفاً اسمتان؟"}
+{"type":"tf","prompt":"نیکولا امروز صبح مرغ خورد.","correct":false,"explanation_fa":"نیکولا می‌گوید: «Hier soir, j'ai mangé du poulet»، یعنی دیشب مرغ خورد."}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["منشی ساعت وقت را می‌گوید.","نیکولا می‌گوید کارش فوری است.","منشی اسم نیکولا را می‌پرسد.","نیکولا می‌گوید دندانش شکسته است."],"correct_order":[1,3,0,2],"explanation_fa":"اول «C'est une urgence»، بعد «j'ai cassé une dent»، بعد «à 17 heures 30» و آخر «Votre nom, s'il vous plaît ?»."}

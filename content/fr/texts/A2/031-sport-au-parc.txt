@@ -1,0 +1,28 @@
+code: fr-a2-t031
+title: Sport au parc
+band: 1
+kind: ad
+sentences:
+- Vous avez mal au dos, au cou ou aux genoux ? | کمر، گردن یا زانوهایتان درد می‌کند؟
+- Vous voulez perdre du poids ? | می‌خواهید وزن کم کنید؟
+- Venez faire du sport au parc avec nous ! | بیایید با ما در پارک ورزش کنید!
+- Le matin, on marche et on court. | صبح‌ها راه می‌رویم و می‌دویم.
+- Le soir, on danse. | شب‌ها می‌رقصیم.
+- Nos professeurs sont patients et gentils. | معلم‌هایمان صبور و مهربان‌اند.
+- Le premier cours est gratuit ! | جلسهٔ اول رایگان است!
+- Cours{cours} du{du-contr} lundi au samedi, à 7 heures et à 19 heures. | کلاس‌ها از دوشنبه تا شنبه، ساعت ۷ و ساعت ۱۹. | tts: Cours du lundi au samedi, à sept heures et à dix-neuf heures.
+reading A:
+{"type":"mcq","prompt":"این آگهی دربارهٔ چیست؟","options":["مطب یک پزشک","کلاس رقص در مدرسه","کلاس ورزش در پارک","فروشگاه لباس ورزشی"],"correct":2,"explanation_fa":"در آگهی آمده: «Venez faire du sport au parc avec nous !»، یعنی بیایید با ما در پارک ورزش کنید."}
+{"type":"tf","prompt":"برای جلسهٔ اول پولی نمی‌دهید.","correct":true,"explanation_fa":"در آگهی آمده: «Le premier cours est gratuit !»، یعنی جلسهٔ اول رایگان است."}
+{"type":"tf","prompt":"کلاس‌ها یکشنبه‌ها هم هست.","correct":false,"explanation_fa":"در آگهی آمده: «du lundi au samedi»، یعنی از دوشنبه تا شنبه؛ پس یکشنبه کلاس نیست."}
+reading B:
+{"type":"match","prompt":"هر وقت روز را به کارش وصل کن.","left":["صبح","شب"],"right":["رقص","راه رفتن و دویدن","شنا"],"pairs":[[0,1],[1,0]],"explanation_fa":"در آگهی آمده: «Le matin, on marche et on court. Le soir, on danse.»، یعنی صبح راه رفتن و دویدن، شب رقص."}
+{"type":"find","prompt":"کدام جمله دربارهٔ معلم‌هاست؟","correct_sentence":5,"explanation_fa":"در آگهی آمده: «Nos professeurs sont patients et gentils.»، یعنی معلم‌هایمان صبور و مهربان‌اند."}
+listening A:
+{"type":"num","prompt":"کلاس صبح ساعت چند است؟","answer":"7","accepted":["7","7h","7:00","sept"],"explanation_fa":"در آگهی می‌شنویم: «à 7 heures et à 19 heures»؛ کلاس صبح ساعت ۷ است."}
+{"type":"mcq","prompt":"آگهی از کدام درد حرف نمی‌زند؟","options":["درد کمر","درد گردن","درد دندان","درد زانو"],"correct":2,"explanation_fa":"در آگهی می‌شنویم: «mal au dos, au cou ou aux genoux»، یعنی کمر، گردن و زانو؛ از دندان حرفی نیست."}
+{"type":"tf","prompt":"معلم‌ها صبورند.","correct":true,"explanation_fa":"در آگهی می‌شنویم: «Nos professeurs sont patients»، یعنی معلم‌هایمان صبورند."}
+{"type":"tf","prompt":"صبح‌ها می‌رقصند.","correct":false,"explanation_fa":"در آگهی می‌شنویم: «Le soir, on danse.»؛ رقص شب‌هاست و صبح‌ها راه می‌روند و می‌دوند."}
+listening B:
+{"type":"dict","sentence":1}
+{"type":"mcq","prompt":"آگهی چه کسانی را دعوت می‌کند؟","options":["کسانی که آشپزی دوست دارند","کسانی که می‌خواهند وزن کم کنند","کسانی که دنبال کار هستند","کسانی که بچهٔ کوچک دارند"],"correct":1,"explanation_fa":"در آگهی می‌شنویم: «Vous voulez perdre du poids ?»، یعنی می‌خواهید وزن کم کنید؟"}

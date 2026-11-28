@@ -1,0 +1,28 @@
+code: fr-a2-t035
+title: La salle de bain
+band: 1
+kind: dialogue
+sentences:
+A: Hugo, tu es encore dans la salle de bain ? Je suis en retard ! | هوگو، هنوز توی حمامی؟ دیرم شده!
+B: Une minute, Chloé ! Je me rase. | یک دقیقه، کلوئه! دارم صورتم را می‌تراشم.
+A: Tu te rases ? Tu{tu} n'as pas de barbe ! | ریش می‌تراشی؟ تو که ریش نداری!
+B: Si{si-adv}, regarde ! | چرا، دارم، نگاه کن!
+A: Vite ! Je dois me brosser les dents. | زود باش! باید دندان‌هایم را مسواک بزنم.
+B: Voilà, c'est libre. Tu as l'air fatiguée… | بفرما، خالی شد. خسته به نظر می‌رسی…
+A: Oui, j'ai sommeil. J'ai étudié tard hier soir. | آره، خوابم می‌آید. دیشب تا دیروقت درس خواندم.
+B: Moi, je suis en forme ! J'ai dormi dix heures. | من که سرحالم! ده ساعت خوابیدم.
+reading A:
+{"type":"mcq","prompt":"هوگو در حمام چه کار می‌کند؟","options":["دوش می‌گیرد","صورتش را اصلاح می‌کند","دندان‌هایش را مسواک می‌زند","موهایش را می‌شوید"],"correct":1,"explanation_fa":"هوگو می‌گوید: «Je me rase.»، یعنی دارم صورتم را می‌تراشم."}
+{"type":"tf","prompt":"کلوئه دیرش شده است.","correct":true,"explanation_fa":"کلوئه می‌گوید: «Je suis en retard !»، یعنی دیرم شده."}
+{"type":"tf","prompt":"هوگو خسته است.","correct":false,"explanation_fa":"هوگو می‌گوید: «Moi, je suis en forme !»، یعنی من سرحالم."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید چرا کلوئه خسته است؟","correct_sentence":6,"explanation_fa":"کلوئه می‌گوید: «J'ai étudié tard hier soir.»، یعنی دیشب تا دیروقت درس خواندم."}
+{"type":"match","prompt":"هر کس را به حالش وصل کن.","left":["کلوئه","هوگو"],"right":["سرحال است","خوابش می‌آید","گرسنه است"],"pairs":[[0,1],[1,0]],"explanation_fa":"کلوئه می‌گوید «j'ai sommeil»، یعنی خوابم می‌آید، و هوگو می‌گوید «je suis en forme»، یعنی سرحالم."}
+listening A:
+{"type":"num","prompt":"هوگو چند ساعت خوابیده است؟","answer":"10","accepted":["10","dix"],"explanation_fa":"هوگو می‌گوید: «J'ai dormi dix heures.»، یعنی ده ساعت خوابیدم."}
+{"type":"mcq","prompt":"کلوئه در حمام باید چه کار کند؟","options":["صورتش را بتراشد","دوش بگیرد","دندان‌هایش را مسواک بزند","لباسش را عوض کند"],"correct":2,"explanation_fa":"کلوئه می‌گوید: «Je dois me brosser les dents.»، یعنی باید دندان‌هایم را مسواک بزنم."}
+{"type":"tf","prompt":"به گفتهٔ کلوئه، هوگو ریش ندارد.","correct":true,"explanation_fa":"کلوئه می‌گوید: «Tu n'as pas de barbe !»، یعنی تو که ریش نداری."}
+{"type":"tf","prompt":"کلوئه دیشب زود خوابید.","correct":false,"explanation_fa":"کلوئه می‌گوید: «J'ai étudié tard hier soir.»، یعنی تا دیروقت درس خواند."}
+listening B:
+{"type":"dict","sentence":4}
+{"type":"mcq","prompt":"هوگو به کلوئه چه می‌گوید؟","options":["حمام کثیف است","دیرت شده","صبحانه آماده است","خسته به نظر می‌رسی"],"correct":3,"explanation_fa":"هوگو می‌گوید: «Tu as l'air fatiguée…»، یعنی خسته به نظر می‌رسی."}

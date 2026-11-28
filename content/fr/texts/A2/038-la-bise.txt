@@ -1,0 +1,35 @@
+code: fr-a2-t038
+title: La bise
+band: 2
+kind: email
+sentences:
+- Salut Ali ! | سلام علی!
+- J'étudie à Lyon maintenant, et la ville me plaît beaucoup. | حالا در لیون درس می‌خوانم و شهر را خیلی دوست دارم.
+- Mais en France, il y a des choses bizarres pour moi ! | ولی در فرانسه چیزهایی هست که برای من عجیب است!
+- Entre amis, on se fait la bise : on s'embrasse sur les joues, deux fois. | دوست‌ها با هم روبوسی می‌کنند: دو بار گونهٔ همدیگر را می‌بوسند.
+- La première fois, une fille de mon cours m'a fait la bise et j'étais très surpris ! | دفعهٔ اول، یک دختر از کلاسم با من روبوسی کرد و من خیلی تعجب کردم!
+- Maintenant, je fais la bise à mes amis, mais pas au professeur ! | حالا با دوستانم روبوسی می‌کنم، ولی با استاد نه!
+- Samedi, mes voisins m'ont invité à dîner. | شنبه همسایه‌هایم مرا به شام دعوت کردند.
+- J'ai apporté des fleurs, et ça leur a fait plaisir. | گل بردم و خوشحالشان کرد.
+- On est restés à table jusqu'à onze heures ! | تا ساعت یازده سر میز ماندیم!
+- Et toi ? Tu viens me voir cet été ? | تو چه؟ تابستان به دیدنم می‌آیی؟
+- Je te montre la ville avec plaisir ! | با کمال میل شهر را نشانت می‌دهم!
+- À bientôt, Reza | به امید دیدار، رضا
+reading A:
+{"type":"mcq","prompt":"رضا در این ایمیل بیشتر دربارهٔ چه می‌نویسد؟","options":["درس‌های سخت دانشگاه","رسم‌های فرانسوی‌ها","هوای لیون","خانهٔ تازه‌اش"],"correct":1,"explanation_fa":"رضا می‌نویسد: «il y a des choses bizarres pour moi» و بعد از روبوسی و شام با همسایه‌ها می‌گوید."}
+{"type":"tf","prompt":"در فرانسه دوست‌ها دو بار گونهٔ هم را می‌بوسند.","correct":true,"explanation_fa":"رضا می‌نویسد: «on s'embrasse sur les joues, deux fois»، یعنی دو بار گونهٔ همدیگر را می‌بوسند."}
+{"type":"tf","prompt":"رضا با استادش هم روبوسی می‌کند.","correct":false,"explanation_fa":"رضا می‌نویسد: «je fais la bise à mes amis, mais pas au professeur»، یعنی با استاد روبوسی نمی‌کند."}
+{"type":"find","prompt":"کدام جمله می‌گوید هدیهٔ رضا همسایه‌ها را خوشحال کرد؟","correct_sentence":7,"explanation_fa":"رضا می‌نویسد: «J'ai apporté des fleurs, et ça leur a fait plaisir.»، یعنی گل بردم و خوشحالشان کرد."}
+reading B:
+{"type":"order","prompt":"این‌ها را به ترتیب ایمیل بچین.","items":["رضا از شام با همسایه‌ها می‌گوید.","رضا علی را به لیون دعوت می‌کند.","رضا می‌گوید در فرانسه چیزهای عجیبی هست.","رضا از اولین روبوسی‌اش می‌گوید."],"correct_order":[2,3,0,1],"explanation_fa":"اول «des choses bizarres»، بعد «La première fois…»، بعد «mes voisins m'ont invité à dîner» و آخر «Tu viens me voir cet été ?»."}
+{"type":"mcq","prompt":"رضا برای همسایه‌ها چه برد؟","options":["کیک","شراب","گل","شکلات"],"correct":2,"explanation_fa":"رضا می‌نویسد: «J'ai apporté des fleurs»، یعنی گل بردم."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Entre amis, on se fait la {{1}} : on s'embrasse sur les {{2}}, deux fois.","bank":["bise","joues","fête","mains","dents"],"answers":["bise","joues"],"explanation_fa":"رضا می‌نویسد: «on se fait la bise : on s'embrasse sur les joues»، یعنی روبوسی می‌کنند و گونهٔ همدیگر را می‌بوسند."}
+listening A:
+{"type":"mcq","prompt":"رضا کجا درس می‌خواند؟","options":["در پاریس","در لیون","در مارسی","در نیس"],"correct":1,"explanation_fa":"رضا می‌گوید: «J'étudie à Lyon maintenant»، یعنی حالا در لیون درس می‌خوانم."}
+{"type":"tf","prompt":"رضا از لیون خوشش می‌آید.","correct":true,"explanation_fa":"رضا می‌گوید: «la ville me plaît beaucoup»، یعنی شهر را خیلی دوست دارم."}
+{"type":"tf","prompt":"دفعهٔ اول، رضا اصلاً تعجب نکرد.","correct":false,"explanation_fa":"رضا می‌گوید: «j'étais très surpris»، یعنی خیلی تعجب کردم."}
+{"type":"num","prompt":"شام تا ساعت چند طول کشید؟","answer":"11","accepted":["11","11h","23","23h","onze"],"explanation_fa":"رضا می‌گوید: «On est restés à table jusqu'à onze heures !»، یعنی تا ساعت یازده سر میز ماندیم."}
+listening B:
+{"type":"mcq","prompt":"چه کسانی رضا را به شام دعوت کردند؟","options":["استادش","یک دختر از کلاسش","دوستش علی","همسایه‌هایش"],"correct":3,"explanation_fa":"رضا می‌گوید: «mes voisins m'ont invité à dîner»، یعنی همسایه‌هایم مرا به شام دعوت کردند."}
+{"type":"tf","prompt":"رضا علی را برای تابستان به لیون دعوت می‌کند.","correct":true,"explanation_fa":"رضا می‌گوید: «Tu viens me voir cet été ? Je te montre la ville avec plaisir !»"}
+{"type":"tf","prompt":"اولین بار یک پسر از کلاس رضا با او روبوسی کرد.","correct":false,"explanation_fa":"رضا می‌گوید: «une fille de mon cours m'a fait la bise»، یعنی یک دختر از کلاسم."}

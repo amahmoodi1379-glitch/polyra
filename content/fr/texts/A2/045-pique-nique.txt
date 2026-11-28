@@ -1,0 +1,28 @@
+code: fr-a2-t045
+title: Pique-nique au parc
+band: 1
+kind: voice_message
+sentences:
+- Salut Hugo, c'est Camille ! | سلام هوگو، کامی هستم!
+- Demain, il va faire beau. | فردا هوا خوب است.
+- Alors, pique-nique au parc avec les amis du{du-contr} cours ! | پس پیک‌نیک در پارک با دوست‌های کلاس!
+- Moi, j'apporte une salade et une tarte aux fraises. | من یک سالاد و یک تارت توت‌فرنگی می‌آورم.
+- Elle est déjà au four ! | از همین حالا توی فر است!
+- Tu peux apporter des boissons bien froides ? | می‌توانی نوشیدنی‌های خیلی خنک بیاوری؟
+- On se retrouve à midi devant la grande porte du{du-contr} parc. | ظهر جلوی در بزرگ پارک همدیگر را می‌بینیم.
+- Tu me réponds ce soir ? À demain ! | امشب جوابم را می‌دهی؟ تا فردا!
+reading A:
+{"type":"mcq","prompt":"کامی چرا پیام گذاشته است؟","options":["هوگو را به پیک‌نیک دعوت می‌کند","از هوگو دستور تارت را می‌خواهد","می‌گوید فردا کلاس نیست","از هوگو برای درس کمک می‌خواهد"],"correct":0,"explanation_fa":"کامی می‌گوید: «pique-nique au parc avec les amis du cours !»، یعنی پیک‌نیک در پارک با دوست‌های کلاس."}
+{"type":"tf","prompt":"فردا هوا خوب است.","correct":true,"explanation_fa":"کامی می‌گوید: «Demain, il va faire beau.»، یعنی فردا هوا خوب است."}
+{"type":"tf","prompt":"کامی نوشیدنی‌ها را می‌آورد.","correct":false,"explanation_fa":"کامی از هوگو می‌پرسد: «Tu peux apporter des boissons bien froides ?»؛ پس نوشیدنی را هوگو می‌آورد."}
+reading B:
+{"type":"match","prompt":"هر کس را به چیزی که می‌آورد وصل کن.","left":["کامی","هوگو"],"right":["نوشیدنی‌های خنک","سالاد و تارت","نان و پنیر"],"pairs":[[0,1],[1,0]],"explanation_fa":"کامی می‌گوید «j'apporte une salade et une tarte» و از هوگو می‌خواهد «des boissons bien froides» بیاورد."}
+{"type":"find","prompt":"کدام جمله می‌گوید کجا همدیگر را می‌بینند؟","correct_sentence":6,"explanation_fa":"کامی می‌گوید: «On se retrouve à midi devant la grande porte du parc.»، یعنی جلوی در بزرگ پارک."}
+listening A:
+{"type":"num","prompt":"ساعت چند همدیگر را می‌بینند؟","answer":"12","accepted":["12","12h","12:00","midi","douze"],"explanation_fa":"کامی می‌گوید: «On se retrouve à midi»، یعنی ظهر، ساعت دوازده."}
+{"type":"mcq","prompt":"تارت کامی چه تارتی است؟","options":["تارت سیب","تارت توت‌فرنگی","تارت گیلاس","تارت شکلاتی"],"correct":1,"explanation_fa":"کامی می‌گوید: «une tarte aux fraises»، یعنی تارت توت‌فرنگی."}
+{"type":"tf","prompt":"تارت الان توی فر است.","correct":true,"explanation_fa":"کامی دربارهٔ تارت می‌گوید: «Elle est déjà au four !»، یعنی از همین حالا توی فر است."}
+{"type":"tf","prompt":"پیک‌نیک امروز است.","correct":false,"explanation_fa":"کامی می‌گوید: «Demain, il va faire beau. Alors, pique-nique au parc»، یعنی پیک‌نیک فرداست."}
+listening B:
+{"type":"dict","sentence":1}
+{"type":"mcq","prompt":"کامی از هوگو می‌خواهد کی جوابش را بدهد؟","options":["فردا صبح","امشب","ظهر","همین الان"],"correct":1,"explanation_fa":"کامی می‌گوید: «Tu me réponds ce soir ?»، یعنی امشب جوابم را می‌دهی؟"}

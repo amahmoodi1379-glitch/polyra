@@ -1,0 +1,33 @@
+code: fr-a2-t040
+title: Au marché
+band: 2
+kind: phone_call
+sentences:
+A: Allô, Camille ? Je suis au marché. Qu'est-ce que je prends pour ce soir ? | الو، کامی؟ توی بازارم. برای امشب چه بخرم؟
+B: Tu as déjà acheté le poulet, Thomas ? | توما، مرغ را خریده‌ای؟
+A: Oui, je l'ai déjà acheté. Pourquoi ? | آره، خریده‌ام. چطور؟
+B: Oh non ! Julie ne mange pas de viande. Elle est végétarienne. | ای وای! ژولی گوشت نمی‌خورد. گیاه‌خوار است.
+A: Ah bon ? Je ne savais pas. Alors, je fais aussi un plat de légumes. | جدی؟ نمی‌دانستم. پس یک غذای سبزیجات هم درست می‌کنم.
+B: Bonne idée ! Prends des carottes, des oignons et des champignons. | فکر خوبی است! هویج و پیاز و قارچ بخر.
+A: Et pour la salade ? | برای سالاد چه؟
+B: Des tomates et un concombre. Mais pas d'oignon dans la salade : Paul n'aime pas ça. | گوجه و یک خیار. ولی پیاز توی سالاد نه: پل دوست ندارد.
+A: D'accord. Et le pain ? | باشد. نان چه؟
+B: Je ne suis pas encore passée à la boulangerie. Tu peux y aller ? | هنوز به نانوایی نرفته‌ام. می‌توانی بروی؟
+A: Pas de problème. À tout à l'heure ! | مشکلی نیست. تا بعد!
+reading A:
+{"type":"mcq","prompt":"چرا کامی می‌گوید «Oh non !»؟","options":["چون بازار امروز بسته است","چون پل گوشت مرغ نمی‌خورد","چون ژولی گوشت نمی‌خورد","چون توما نان نخریده است"],"correct":2,"explanation_fa":"کامی می‌گوید: «Julie ne mange pas de viande.»، یعنی ژولی گوشت نمی‌خورد، ولی توما مرغ خریده است."}
+{"type":"tf","prompt":"توما مرغ را خریده است.","correct":true,"explanation_fa":"توما می‌گوید: «Oui, je l'ai déjà acheté.»، یعنی آره، خریده‌ام."}
+{"type":"tf","prompt":"کامی نان را خریده است.","correct":false,"explanation_fa":"کامی می‌گوید: «Je ne suis pas encore passée à la boulangerie.»، یعنی هنوز به نانوایی نرفته است."}
+reading B:
+{"type":"match","prompt":"هر غذا را به چیزهایی که برایش لازم است وصل کن.","left":["غذای سبزیجات","سالاد"],"right":["هویج، پیاز و قارچ","گوجه و خیار","مرغ و برنج"],"pairs":[[0,0],[1,1]],"explanation_fa":"کامی می‌گوید برای غذای سبزیجات «des carottes, des oignons et des champignons» و برای سالاد «Des tomates et un concombre»."}
+{"type":"find","prompt":"کدام جمله می‌گوید پل چه چیزی را دوست ندارد؟","correct_sentence":7,"explanation_fa":"کامی می‌گوید: «pas d'oignon dans la salade : Paul n'aime pas ça»، یعنی پل پیاز توی سالاد را دوست ندارد."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Julie ne mange pas de {{1}}. Elle est {{2}}.","bank":["viande","végétarienne","pain","malade","fatiguée"],"answers":["viande","végétarienne"],"explanation_fa":"کامی می‌گوید: «Julie ne mange pas de viande. Elle est végétarienne.»، یعنی ژولی گوشت نمی‌خورد و گیاه‌خوار است."}
+listening A:
+{"type":"mcq","prompt":"توما کجاست؟","options":["در بازار","در نانوایی","در خانه","در رستوران"],"correct":0,"explanation_fa":"توما می‌گوید: «Je suis au marché.»، یعنی توی بازارم."}
+{"type":"tf","prompt":"ژولی گیاه‌خوار است.","correct":true,"explanation_fa":"کامی می‌گوید: «Elle est végétarienne.»، یعنی گیاه‌خوار است."}
+{"type":"tf","prompt":"توما می‌دانست ژولی گوشت نمی‌خورد.","correct":false,"explanation_fa":"توما می‌گوید: «Je ne savais pas.»، یعنی نمی‌دانستم."}
+{"type":"mcq","prompt":"کامی از توما می‌خواهد بعد به کجا برود؟","options":["به سوپرمارکت","به نانوایی","به قصابی","به داروخانه"],"correct":1,"explanation_fa":"کامی دربارهٔ نان می‌گوید: «Je ne suis pas encore passée à la boulangerie. Tu peux y aller ?»"}
+listening B:
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["کامی از سالاد حرف می‌زند.","توما می‌گوید مرغ را خریده است.","کامی می‌پرسد توما به نانوایی می‌رود یا نه.","کامی می‌گوید ژولی گیاه‌خوار است."],"correct_order":[1,3,0,2],"explanation_fa":"اول «je l'ai déjà acheté»، بعد «Elle est végétarienne»، بعد حرف سالاد و آخر «Tu peux y aller ?»."}
+{"type":"tf","prompt":"پل پیاز توی سالاد را دوست ندارد.","correct":true,"explanation_fa":"کامی می‌گوید: «pas d'oignon dans la salade : Paul n'aime pas ça»."}
+{"type":"tf","prompt":"کامی می‌گوید قارچ نخرد.","correct":false,"explanation_fa":"کامی می‌گوید: «Prends des carottes, des oignons et des champignons.»، یعنی قارچ هم بخرد."}

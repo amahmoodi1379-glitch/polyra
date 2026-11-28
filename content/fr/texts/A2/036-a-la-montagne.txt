@@ -1,0 +1,36 @@
+code: fr-a2-t036
+title: À la montagne
+band: 2
+kind: email
+sentences:
+- Salut papa, salut maman ! | سلام بابا، سلام مامان!
+- Ici, à la montagne, ça va très bien. | اینجا در کوهستان همه‌چیز خیلی خوب است.
+- On se lève à 7 heures et on se couche à 22 heures. | ساعت ۷ بیدار می‌شویم و ساعت ۲۲ می‌خوابیم. | tts: On se lève à sept heures et on se couche à vingt-deux heures.
+- Le matin, on doit se dépêcher : on a seulement dix minutes pour se laver ! | صبح‌ها باید عجله کنیم: فقط ده دقیقه وقت داریم که خودمان را بشوییم!
+- Après, on marche dans la forêt, et l'après-midi, on nage dans le lac. | بعد در جنگل راه می‌رویم و بعدازظهر در دریاچه شنا می‌کنیم.
+- Il n'y a pas de télévision, mais personne ne s'ennuie ! | تلویزیون نیست، ولی حوصلهٔ هیچ‌کس سر نمی‌رود!
+- Je m'amuse beaucoup avec les autres garçons de ma chambre. | با پسرهای دیگر اتاقم خیلی خوش می‌گذرانم.
+- Mais j'ai un petit problème : j'ai oublié ma brosse à dents et ma serviette. | ولی یک مشکل کوچک دارم: مسواک و حوله‌ام را فراموش کرده‌ام.
+- Pour la serviette, ce n'est pas grave : mon ami Lucas en a deux. | حوله مهم نیست: دوستم لوکا دو تا دارد.
+- Vous pouvez m'envoyer une brosse à dents, s'il vous plaît ? | لطفاً می‌توانید یک مسواک برایم بفرستید؟
+- Ne vous inquiétez pas pour moi ! | نگران من نباشید!
+- À samedi ! Louis | تا شنبه! لویی
+reading A:
+{"type":"mcq","prompt":"لویی چه چیزهایی را فراموش کرده است؟","options":["کلاه و کفش","کتاب و دفتر","مسواک و حوله","صابون و لباس"],"correct":2,"explanation_fa":"لویی می‌نویسد: «j'ai oublié ma brosse à dents et ma serviette»، یعنی مسواک و حوله‌ام را فراموش کرده‌ام."}
+{"type":"tf","prompt":"آنجا تلویزیون نیست.","correct":true,"explanation_fa":"لویی می‌نویسد: «Il n'y a pas de télévision»، یعنی تلویزیون نیست."}
+{"type":"tf","prompt":"لویی آنجا حوصله‌اش سر می‌رود.","correct":false,"explanation_fa":"لویی می‌نویسد: «personne ne s'ennuie» و «Je m'amuse beaucoup»، یعنی حوصلهٔ کسی سر نمی‌رود و خیلی خوش می‌گذراند."}
+{"type":"find","prompt":"کدام جمله می‌گوید صبح‌ها وقت کمی برای شستن دارند؟","correct_sentence":3,"explanation_fa":"لویی می‌نویسد: «on a seulement dix minutes pour se laver»، یعنی فقط ده دقیقه برای شستن وقت داریم."}
+reading B:
+{"type":"match","prompt":"هر وقت روز را به کارش وصل کن.","left":["صبح","بعدازظهر"],"right":["شنا در دریاچه","راه رفتن در جنگل","تماشای تلویزیون"],"pairs":[[0,1],[1,0]],"explanation_fa":"لویی می‌نویسد: «Après, on marche dans la forêt, et l'après-midi, on nage dans le lac.»، یعنی صبح در جنگل راه می‌روند و بعدازظهر شنا می‌کنند."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Je m'amuse beaucoup avec les autres {{1}} de ma {{2}}.","bank":["garçons","chambre","filles","classe","maison"],"answers":["garçons","chambre"],"explanation_fa":"لویی می‌نویسد: «avec les autres garçons de ma chambre»، یعنی با پسرهای دیگر اتاقم."}
+{"type":"mcq","prompt":"لویی از پدر و مادرش چه می‌خواهد؟","options":["برایش حوله بفرستند","برایش مسواک بفرستند","شنبه زودتر بیایند","به لوکا زنگ بزنند"],"correct":1,"explanation_fa":"لویی می‌نویسد: «Vous pouvez m'envoyer une brosse à dents ?»؛ برای حوله می‌گوید «ce n'est pas grave»، چون لوکا دو تا دارد."}
+listening A:
+{"type":"num","prompt":"بچه‌ها صبح چند دقیقه برای شستن وقت دارند؟","answer":"10","accepted":["10","dix"],"explanation_fa":"لویی می‌گوید: «on a seulement dix minutes pour se laver»، یعنی فقط ده دقیقه."}
+{"type":"mcq","prompt":"لویی کجاست؟","options":["کنار دریا","در یک شهر بزرگ","پیش مادربزرگش","در کوهستان"],"correct":3,"explanation_fa":"لویی می‌گوید: «Ici, à la montagne, ça va très bien.»، یعنی اینجا در کوهستان."}
+{"type":"tf","prompt":"بچه‌ها ساعت ۷ بیدار می‌شوند.","correct":true,"explanation_fa":"لویی می‌گوید: «On se lève à 7 heures»، یعنی ساعت ۷ بیدار می‌شویم."}
+{"type":"tf","prompt":"لوکا فقط یک حوله دارد.","correct":false,"explanation_fa":"لویی می‌گوید: «mon ami Lucas en a deux»، یعنی لوکا دو تا حوله دارد."}
+listening B:
+{"type":"num","prompt":"بچه‌ها شب ساعت چند می‌خوابند؟","answer":"22","accepted":["22","22h","22:00","vingt-deux","10"],"explanation_fa":"لویی می‌گوید: «on se couche à 22 heures»، یعنی ساعت بیست‌ودو، ده شب."}
+{"type":"tf","prompt":"لویی آنجا خوش می‌گذراند.","correct":true,"explanation_fa":"لویی می‌گوید: «Je m'amuse beaucoup»، یعنی خیلی خوش می‌گذرانم."}
+{"type":"tf","prompt":"بچه‌ها صبح‌ها در دریاچه شنا می‌کنند.","correct":false,"explanation_fa":"لویی می‌گوید: «l'après-midi, on nage dans le lac»، یعنی بعدازظهرها شنا می‌کنند."}
+{"type":"mcq","prompt":"لویی آخر ایمیلش به پدر و مادرش چه می‌گوید؟","options":["زود بیایید دنبالم","پول برایم بفرستید","نگران من نباشید","به لوکا سلام برسانید"],"correct":2,"explanation_fa":"لویی می‌گوید: «Ne vous inquiétez pas pour moi !»، یعنی نگران من نباشید."}
