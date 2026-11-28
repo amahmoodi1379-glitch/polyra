@@ -1,0 +1,36 @@
+code: de-a2-t103
+title: Unser Kurs ist online
+band: 2
+kind: email
+key_words: Kamera, Bildschirm, herunterladen, Passwort, Datei
+sentences:
+- Hallo zusammen, | سلام به همه،
+- ab nächster Woche ist unser Kurs zwei Wochen lang online, denn die Schule bekommt neue Fenster. | از هفته آینده کلاس ما دو هفته آنلاین است، چون مدرسه پنجره‌های تازه می‌گیرد.
+- Sie brauchen einen Laptop oder ein Handy mit Kamera. | یک لپ‌تاپ یا یک موبایل با دوربین لازم دارید.
+- Ein großer Bildschirm ist besser, aber ein Handy geht auch. | صفحه نمایش بزرگ بهتر است، ولی موبایل هم می‌شود.
+- Bitte laden Sie vorher unsere App herunter. Sie finden sie auf unserer Internetseite. | لطفاً از قبل اپلیکیشن ما را دانلود کنید. آن را در سایت ما پیدا می‌کنید.
+- Das Passwort für den Kurs schicke ich Ihnen morgen. | رمز عبور کلاس را فردا برایتان می‌فرستم.
+- Am Montag um 18 Uhr öffnen Sie die App und klicken auf unseren Kurs. | دوشنبه ساعت ۱۸ اپلیکیشن را باز می‌کنید و روی کلاس ما کلیک می‌کنید. | tts: Am Montag um achtzehn Uhr öffnen Sie die App und klicken auf unseren Kurs.
+- Ihr{Ihr-det} WLAN zu Hause muss gut funktionieren. Bitte denken Sie auch an den Akku! | وای‌فای خانه‌تان باید خوب کار کند. لطفاً به باتری هم فکر کنید!
+- Die Hausaufgaben finden Sie als Datei in der App. Bitte speichern Sie sie auf Ihrem{Ihr-det} Laptop. | تکلیف‌ها را به شکل فایل در اپلیکیشن پیدا می‌کنید. لطفاً آن‌ها را روی لپ‌تاپتان ذخیره کنید.
+- Bei Fragen{Frage} rufen Sie mich an. | اگر سؤالی داشتید، به من زنگ بزنید.
+- Ihre{Ihr-det} Lehrerin Laura Schmidt | معلمتان، لاورا اشمیت
+reading A:
+{"type":"mcq","prompt":"چرا کلاس دو هفته آنلاین است؟","options":["چون معلم مریض است","چون مدرسه پنجره‌های تازه می‌گیرد","چون تعطیلات است","چون کلاس خیلی کوچک است"],"correct":1,"explanation_fa":"معلم می‌نویسد: «denn die Schule bekommt neue Fenster»."}
+{"type":"tf","prompt":"شرکت‌کننده‌ها رمز عبور را فردا می‌گیرند.","correct":true,"explanation_fa":"معلم می‌نویسد: «Das Passwort für den Kurs schicke ich Ihnen morgen.»"}
+{"type":"tf","prompt":"برای کلاس حتماً لپ‌تاپ لازم است.","correct":false,"explanation_fa":"معلم می‌نویسد: «einen Laptop oder ein Handy» و «ein Handy geht auch»."}
+{"type":"mcq","prompt":"تکلیف‌ها را کجا می‌شود پیدا کرد؟","options":["در سایت مدرسه","در ایمیل فردا","در کتاب کلاس","در اپلیکیشن، به شکل فایل"],"correct":3,"explanation_fa":"معلم می‌نویسد: «Die Hausaufgaben finden Sie als Datei in der App.»"}
+reading B:
+{"type":"match","prompt":"هر چیز را به کاری که باید با آن کرد وصل کن.","left":["اپلیکیشن","تکلیف‌ها","وای‌فای خانه"],"right":["باید خوب کار کند","باید آن را از قبل دانلود کرد","باید آن‌ها را روی لپ‌تاپ ذخیره کرد","باید آن را چاپ کرد"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"معلم می‌نویسد: «laden Sie vorher unsere App herunter»، «Bitte speichern Sie sie auf Ihrem Laptop» و «Ihr WLAN zu Hause muss gut funktionieren»."}
+{"type":"find","prompt":"کدام جمله می‌گوید کلاس دوشنبه ساعت چند شروع می‌شود؟","correct_sentence":6,"explanation_fa":"معلم می‌نویسد: «Am Montag um 18 Uhr öffnen Sie die App und klicken auf unseren Kurs.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Das {{1}} für den Kurs schicke ich Ihnen morgen. … Ihr {{2}} zu Hause muss gut funktionieren.","bank":["Passwort","WLAN","Kamera","Datei","App"],"answers":["Passwort","WLAN"],"explanation_fa":"معلم می‌نویسد: «Das Passwort für den Kurs schicke ich Ihnen morgen.» و «Ihr WLAN zu Hause muss gut funktionieren.»"}
+listening A:
+{"type":"num","prompt":"کلاس دوشنبه ساعت چند شروع می‌شود؟","answer":"18","accepted":["18","18 Uhr","18:00","18.00","achtzehn"],"explanation_fa":"معلم می‌گوید: «Am Montag um 18 Uhr öffnen Sie die App.»"}
+{"type":"mcq","prompt":"معلم رمز عبور را کی می‌فرستد؟","options":["امروز","فردا","دوشنبه","هفته بعد"],"correct":1,"explanation_fa":"معلم می‌گوید: «Das Passwort für den Kurs schicke ich Ihnen morgen.»"}
+{"type":"tf","prompt":"به گفته معلم، صفحه نمایش بزرگ بهتر است، ولی موبایل هم می‌شود.","correct":true,"explanation_fa":"معلم می‌گوید: «Ein großer Bildschirm ist besser, aber ein Handy geht auch.»"}
+{"type":"tf","prompt":"شرکت‌کننده‌ها اپلیکیشن را سر کلاس دانلود می‌کنند.","correct":false,"explanation_fa":"معلم می‌گوید: «Bitte laden Sie vorher unsere App herunter.»، یعنی باید از قبل دانلود کنند."}
+listening B:
+{"type":"num","prompt":"کلاس چند هفته آنلاین است؟","answer":"2","accepted":["2","zwei","2 Wochen"],"explanation_fa":"معلم می‌گوید: «ab nächster Woche ist unser Kurs zwei Wochen lang online»."}
+{"type":"mcq","prompt":"معلم می‌گوید به چه چیزی هم فکر کنند؟","options":["به کتاب","به دفتر","به باتری","به هدفون"],"correct":2,"explanation_fa":"معلم می‌گوید: «Bitte denken Sie auch an den Akku!»"}
+{"type":"tf","prompt":"اگر سؤالی بود، باید به معلم زنگ زد.","correct":true,"explanation_fa":"معلم می‌گوید: «Bei Fragen rufen Sie mich an.»"}
+{"type":"tf","prompt":"تکلیف‌ها را باید روی موبایل ذخیره کرد.","correct":false,"explanation_fa":"معلم می‌گوید: «Bitte speichern Sie sie auf Ihrem Laptop.»"}

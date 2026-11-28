@@ -1,0 +1,36 @@
+code: de-a2-t092
+title: Das Klima im Norden
+band: 2
+kind: email
+key_words: Klima, trocken, kühl, nass, Himmel
+sentences:
+- Hallo Maryam, | سلام مریم،
+- wie geht es dir? | حالت چطور است؟
+- Ich wohne jetzt seit drei Monaten in Hamburg. | حالا سه ماه است که در هامبورگ زندگی می‌کنم.
+- Das Klima hier ist nicht wie in Isfahan. | آب و هوای اینجا مثل اصفهان نیست.
+- In Isfahan ist es im Sommer heiß und trocken, aber hier ist es oft kühl und nass. | در اصفهان تابستان‌ها گرم و خشک است، ولی اینجا اغلب خنک و بارانی است.
+- Fast jeden Tag ist der Himmel grau, und es regnet ein bisschen. | تقریباً هر روز آسمان خاکستری است و کمی باران می‌آید.
+- Zuerst war das schwer für mich, aber jetzt trage ich immer eine warme Jacke. | اولش این برایم سخت بود، ولی حالا همیشه یک کاپشن گرم می‌پوشم.
+- Letztes Wochenende war ich mit Freunden am Meer. | آخر هفته پیش با چند تا از دوستانم کنار دریا بودم.
+- Dort war das Wetter schön, und am Abend war der Himmel ganz klar. | آنجا هوا خوب بود و شب آسمان کاملاً صاف بود.
+- Wir haben viele Sterne und einen großen, hellen Mond gesehen. | ستاره‌های زیادی و یک ماه بزرگ و روشن دیدیم.
+- Da habe ich an Isfahan gedacht. Dort haben wir im Sommer oft auf dem Dach geschlafen. | آن موقع یاد اصفهان افتادم. آنجا تابستان‌ها اغلب روی پشت‌بام می‌خوابیدیم.
+- Schreib mir bald! Dein Bruder Reza | زود برایم بنویس! برادرت رضا
+reading A:
+{"type":"mcq","prompt":"رضا بیشتر درباره چه چیزی برای مریم می‌نویسد؟","options":["درباره کارش در هامبورگ","درباره آب و هوای هامبورگ","درباره خانه تازه‌اش","درباره سفرش به اصفهان"],"correct":1,"explanation_fa":"رضا می‌نویسد: «Das Klima hier ist nicht wie in Isfahan.» و بعد درباره هوای هامبورگ و آسمان شب می‌نویسد."}
+{"type":"tf","prompt":"رضا یک سال است که در هامبورگ زندگی می‌کند.","correct":false,"explanation_fa":"رضا می‌نویسد: «Ich wohne jetzt seit drei Monaten in Hamburg.»، یعنی سه ماه است."}
+{"type":"tf","prompt":"در هامبورگ تقریباً هر روز آسمان خاکستری است.","correct":true,"explanation_fa":"رضا می‌نویسد: «Fast jeden Tag ist der Himmel grau.»"}
+{"type":"mcq","prompt":"رضا حالا برای هوای هامبورگ چه می‌کند؟","options":["کمتر بیرون می‌رود","همیشه چتر برمی‌دارد","همیشه یک کاپشن گرم می‌پوشد","با ماشین به همه جا می‌رود"],"correct":2,"explanation_fa":"رضا می‌نویسد: «jetzt trage ich immer eine warme Jacke»."}
+reading B:
+{"type":"match","prompt":"هر جا را به آب و هوایش وصل کن.","left":["اصفهان در تابستان","هامبورگ"],"right":["خنک و بارانی","گرم و خشک","سرد و برفی"],"pairs":[[0,1],[1,0]],"explanation_fa":"رضا می‌نویسد: «In Isfahan ist es im Sommer heiß und trocken, aber hier ist es oft kühl und nass.»"}
+{"type":"find","prompt":"کدام جمله می‌گوید رضا و دوستانش در آسمان شب چه دیدند؟","correct_sentence":9,"explanation_fa":"رضا می‌نویسد: «Wir haben viele Sterne und einen großen, hellen Mond gesehen.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"In Isfahan ist es im Sommer heiß und {{1}}, aber hier ist es oft {{2}} und nass.","bank":["trocken","kühl","grau","klar","schön"],"answers":["trocken","kühl"],"explanation_fa":"رضا می‌نویسد: «In Isfahan ist es im Sommer heiß und trocken, aber hier ist es oft kühl und nass.»"}
+listening A:
+{"type":"mcq","prompt":"رضا آخر هفته پیش کجا بود؟","options":["کنار دریا","در اصفهان","در کوهستان","در یک روستا"],"correct":0,"explanation_fa":"رضا می‌گوید: «Letztes Wochenende war ich mit Freunden am Meer.»"}
+{"type":"num","prompt":"رضا چند ماه است که در هامبورگ زندگی می‌کند؟","answer":"3","accepted":["3","drei","3 Monate"],"explanation_fa":"رضا می‌گوید: «Ich wohne jetzt seit drei Monaten in Hamburg.»"}
+{"type":"tf","prompt":"کنار دریا هم هوا بارانی بود.","correct":false,"explanation_fa":"رضا می‌گوید: «Dort war das Wetter schön»، یعنی آنجا هوا خوب بود."}
+{"type":"tf","prompt":"رضا کنار دریا یاد اصفهان افتاد.","correct":true,"explanation_fa":"رضا می‌گوید: «Da habe ich an Isfahan gedacht.»"}
+listening B:
+{"type":"mcq","prompt":"رضا و خانواده‌اش در اصفهان تابستان‌ها کجا می‌خوابیدند؟","options":["در حیاط","در باغ","کنار رودخانه","روی پشت‌بام"],"correct":3,"explanation_fa":"رضا می‌گوید: «Dort haben wir im Sommer oft auf dem Dach geschlafen.»"}
+{"type":"tf","prompt":"مریم خواهر رضا است.","correct":true,"explanation_fa":"رضا نامه را این‌طور تمام می‌کند: «Dein Bruder Reza»، پس مریم خواهر اوست."}
+{"type":"tf","prompt":"رضا از روز اول هوای هامبورگ را دوست داشت.","correct":false,"explanation_fa":"رضا می‌گوید: «Zuerst war das schwer für mich»، یعنی اولش برایش سخت بود."}

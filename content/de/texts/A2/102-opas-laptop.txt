@@ -1,0 +1,35 @@
+code: de-a2-t102
+title: Opas Laptop
+band: 2
+kind: phone_call
+key_words: Laptop, online, Internetseite, Werbung, App
+sentences:
+A: Hallo Lena, hier ist Opa. Hast du kurz Zeit? | سلام لنا، پدربزرگ هستم. یک لحظه وقت داری؟
+B: Hallo Opa! Ja, klar. Was ist passiert? | سلام بابابزرگ! آره، حتماً. چه شده؟
+A: Ich habe mir einen Laptop gekauft, aber ich verstehe nicht alles. | برای خودم یک لپ‌تاپ خریده‌ام، ولی همه چیزش را نمی‌فهمم.
+B: Was möchtest du denn machen? | خب، می‌خواهی چه کار کنی؟
+A: Ich möchte die Zeitung online lesen. Aber auf der Internetseite gibt es so viel Werbung! | می‌خواهم روزنامه را آنلاین بخوانم. ولی در سایتش این‌همه تبلیغ هست!
+B: Für die Zeitung gibt es auch eine App für das Handy. Da gibt es nicht so viel Werbung. | برای روزنامه یک اپلیکیشن موبایل هم هست. آنجا این‌قدر تبلیغ نیست.
+A: Eine App? Mein Handy ist sehr alt. Früher habe ich einfach Zeitungen und Zeitschriften gekauft. | اپلیکیشن؟ موبایل من خیلی قدیمی است. قبلاً خیلی ساده روزنامه و مجله می‌خریدم.
+A: Und im Fernsehen gibt es auch immer Werbung! | تازه در تلویزیون هم همیشه تبلیغ هست!
+B: Weißt du was? Am Sonntag komme ich zu dir und zeige dir alles. | می‌دانی چیه؟ یکشنبه پیشت می‌آیم و همه چیز را نشانت می‌دهم.
+A: Das ist lieb von dir! Dann backe ich einen Kuchen. | تو خیلی مهربانی! پس یک کیک می‌پزم.
+B: Super, Opa! Bis Sonntag! | عالی است، بابابزرگ! تا یکشنبه!
+reading A:
+{"type":"mcq","prompt":"پدربزرگ چه چیزی خریده است؟","options":["یک موبایل تازه","یک تلویزیون","یک لپ‌تاپ","چند مجله"],"correct":2,"explanation_fa":"پدربزرگ می‌گوید: «Ich habe mir einen Laptop gekauft.»"}
+{"type":"tf","prompt":"پدربزرگ می‌خواهد روزنامه را آنلاین بخواند.","correct":true,"explanation_fa":"پدربزرگ می‌گوید: «Ich möchte die Zeitung online lesen.»"}
+{"type":"tf","prompt":"موبایل پدربزرگ تازه است.","correct":false,"explanation_fa":"پدربزرگ می‌گوید: «Mein Handy ist sehr alt.»"}
+{"type":"mcq","prompt":"چه چیزی در سایت روزنامه پدربزرگ را ناراحت می‌کند؟","options":["تبلیغ زیاد","رمز عبور","عکس‌های کوچک","کلمه‌های سخت"],"correct":0,"explanation_fa":"پدربزرگ می‌گوید: «Aber auf der Internetseite gibt es so viel Werbung!»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید لنا کی پیش پدربزرگ می‌آید؟","correct_sentence":8,"explanation_fa":"لنا می‌گوید: «Am Sonntag komme ich zu dir und zeige dir alles.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Ich möchte die Zeitung {{1}} lesen. Aber auf der {{2}} gibt es so viel Werbung!","bank":["online","Internetseite","Handy","Fernsehen","Laptop"],"answers":["online","Internetseite"],"explanation_fa":"پدربزرگ می‌گوید: «Ich möchte die Zeitung online lesen. Aber auf der Internetseite gibt es so viel Werbung!»"}
+{"type":"match","prompt":"هر چیز را به چیزی که درباره‌اش در متن آمده وصل کن.","left":["سایت روزنامه","موبایل پدربزرگ","اپلیکیشن روزنامه"],"right":["خیلی قدیمی است","تبلیغ زیادی دارد","برای موبایل است","مجانی نیست"],"pairs":[[0,1],[1,0],[2,2]],"explanation_fa":"در متن آمده: «auf der Internetseite gibt es so viel Werbung»، «Mein Handy ist sehr alt» و «eine App für das Handy»."}
+listening A:
+{"type":"mcq","prompt":"زن کی به دیدن مرد می‌آید؟","options":["شنبه","یکشنبه","فردا","امشب"],"correct":1,"explanation_fa":"زن می‌گوید: «Am Sonntag komme ich zu dir.»"}
+{"type":"tf","prompt":"مرد قبلاً روزنامه و مجله می‌خرید.","correct":true,"explanation_fa":"مرد می‌گوید: «Früher habe ich einfach Zeitungen und Zeitschriften gekauft.»"}
+{"type":"tf","prompt":"زن می‌گوید در اپلیکیشن روزنامه هم تبلیغ زیادی هست.","correct":false,"explanation_fa":"زن درباره اپلیکیشن می‌گوید: «Da gibt es nicht so viel Werbung.»"}
+listening B:
+{"type":"mcq","prompt":"مرد برای یکشنبه چه کار می‌کند؟","options":["شام درست می‌کند","یک لپ‌تاپ تازه می‌خرد","به دیدن زن می‌رود","یک کیک می‌پزد"],"correct":3,"explanation_fa":"مرد می‌گوید: «Dann backe ich einen Kuchen.»"}
+{"type":"tf","prompt":"مرد می‌گوید در تلویزیون هم همیشه تبلیغ هست.","correct":true,"explanation_fa":"مرد می‌گوید: «Und im Fernsehen gibt es auch immer Werbung!»"}
+{"type":"tf","prompt":"مرد همه چیز لپ‌تاپش را می‌فهمد.","correct":false,"explanation_fa":"مرد می‌گوید: «aber ich verstehe nicht alles»."}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["زن از اپلیکیشن روزنامه می‌گوید.","مرد می‌گوید لپ‌تاپ خریده است.","مرد می‌گوید کیک می‌پزد.","زن می‌گوید یکشنبه می‌آید."],"correct_order":[1,0,3,2],"explanation_fa":"اول «Ich habe mir einen Laptop gekauft»، بعد «Für die Zeitung gibt es auch eine App»، بعد «Am Sonntag komme ich zu dir» و آخر «Dann backe ich einen Kuchen»."}

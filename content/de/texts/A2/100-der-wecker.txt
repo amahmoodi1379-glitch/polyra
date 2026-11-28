@@ -1,0 +1,29 @@
+code: de-a2-t100
+title: Der Wecker
+kind: voice_message
+key_words: einschlafen, Wecker, aufwachen, Picknick, verpassen
+sentences:
+- Hallo Laura, hier ist Tom. Es tut mir leid! | سلام لاورا، تام هستم. متأسفم!
+- Gestern Abend konnte ich lange nicht einschlafen. | دیشب تا دیروقت خوابم نبرد.
+- Und heute Morgen habe ich den Wecker nicht gehört. | و امروز صبح صدای ساعت زنگ‌دار را نشنیدم.
+- Ich bin um zehn Uhr aufgewacht! | ساعت ده بیدار شدم!
+- Jetzt habe ich unser Picknick im Park verpasst. | حالا پیک‌نیکمان در پارک را از دست داده‌ام.
+- Seid ihr noch dort? Ich kann in zwanzig Minuten da sein. | هنوز آنجایید؟ می‌توانم بیست دقیقه دیگر آنجا باشم.
+- Ich bringe Kuchen mit. Ruf mich bitte an! | کیک می‌آورم. لطفاً به من زنگ بزن!
+reading A:
+{"type":"mcq","prompt":"چرا تام دیر کرده است؟","options":["چون ماشینش خراب شد","چون صدای ساعت زنگ‌دار را نشنید","چون مریض بود","چون باید کار می‌کرد"],"correct":1,"explanation_fa":"تام می‌گوید: «heute Morgen habe ich den Wecker nicht gehört»."}
+{"type":"tf","prompt":"تام ساعت ده بیدار شد.","correct":true,"explanation_fa":"تام می‌گوید: «Ich bin um zehn Uhr aufgewacht!»"}
+{"type":"tf","prompt":"تام دیشب زود خوابش برد.","correct":false,"explanation_fa":"تام می‌گوید: «Gestern Abend konnte ich lange nicht einschlafen.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید تام چه چیزی را از دست داده است؟","correct_sentence":4,"explanation_fa":"تام می‌گوید: «Jetzt habe ich unser Picknick im Park verpasst.»"}
+{"type":"order","prompt":"این‌ها را به ترتیبی که اتفاق افتاده بچین.","items":["تام ساعت ده بیدار شد.","تام شب نتوانست بخوابد.","تام صدای ساعت زنگ‌دار را نشنید.","تام برای لاورا پیام گذاشت."],"correct_order":[1,2,0,3],"explanation_fa":"اول «Gestern Abend konnte ich lange nicht einschlafen»، بعد صبح «den Wecker nicht gehört»، بعد «um zehn Uhr aufgewacht» و آخر همین پیام را برای لاورا گذاشت."}
+{"type":"mcq","prompt":"تام چه چیزی با خودش می‌آورد؟","options":["میوه","نوشیدنی","کیک","نان"],"correct":2,"explanation_fa":"تام می‌گوید: «Ich bringe Kuchen mit.»"}
+listening A:
+{"type":"mcq","prompt":"تام کی می‌تواند به پارک برسد؟","options":["تا ده دقیقه دیگر","تا یک ساعت دیگر","فردا صبح","تا بیست دقیقه دیگر"],"correct":3,"explanation_fa":"تام می‌گوید: «Ich kann in zwanzig Minuten da sein.»"}
+{"type":"tf","prompt":"پیک‌نیک در پارک است.","correct":true,"explanation_fa":"تام می‌گوید: «unser Picknick im Park»."}
+{"type":"tf","prompt":"تام از لاورا می‌خواهد برایش پیام بنویسد.","correct":false,"explanation_fa":"تام می‌گوید: «Ruf mich bitte an!»، یعنی می‌خواهد لاورا به او زنگ بزند."}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"num","prompt":"تام ساعت چند بیدار شد؟","answer":"10","accepted":["10","zehn","10 Uhr"],"explanation_fa":"تام می‌گوید: «Ich bin um zehn Uhr aufgewacht!»"}
+{"type":"tf","prompt":"تام می‌پرسد که دوستانش هنوز در پارک هستند یا نه.","correct":true,"explanation_fa":"تام می‌پرسد: «Seid ihr noch dort?»"}
+{"type":"tf","prompt":"تام کیک را فراموش کرده است.","correct":false,"explanation_fa":"تام می‌گوید: «Ich bringe Kuchen mit.»"}

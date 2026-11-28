@@ -1,0 +1,36 @@
+code: de-a2-t099
+title: Museum und Theater
+band: 2
+kind: phone_call
+key_words: Ausstellung, Eintritt, Sängerin, Eintrittskarte, ins Theater gehen
+sentences:
+A: Hallo Emma, hier ist Ben. Hast du am Samstag Zeit? | سلام اما، بن هستم. شنبه وقت داری؟
+B: Ja, warum? | آره، چرا؟
+A: Im Museum gibt es eine neue Ausstellung mit alten Fotos von Hamburg. | در موزه یک نمایشگاه تازه با عکس‌های قدیمی از هامبورگ هست.
+B: Ist der Eintritt teuer? | ورودیه‌اش گران است؟
+A: Nein, am Samstag ist der Eintritt frei. | نه، شنبه ورود مجانی است.
+B: Gut, da komme ich gern mit. Und am Abend? Willst du mit mir ins Theater gehen? | خوب است، با کمال میل می‌آیم. شب چه؟ می‌خواهی با من به تئاتر بیایی؟
+A: Ins Theater? Was gibt es denn? | تئاتر؟ چه برنامه‌ای هست؟
+B: Eine Sängerin singt alte Lieder aus Berlin. Ich habe schon zwei Eintrittskarten. | یک خواننده ترانه‌های قدیمی برلین را می‌خواند. من از قبل دو تا بلیت دارم.
+A: Wirklich? Ich wusste nicht, dass du dich für Kultur interessierst! | واقعاً؟ نمی‌دانستم که به فرهنگ و هنر علاقه داری!
+B: Die Sängerin ist meine Cousine. Sie hat mir die Karten geschenkt. | خواننده دخترخاله من است. بلیت‌ها را به من هدیه داده.
+A: Also deshalb! Gut, ich komme gern mit. | پس به این خاطر است! باشد، با کمال میل می‌آیم.
+B: Toll! Nach dem Museum essen wir etwas, und um sieben gehen wir ins Theater. | عالی! بعد از موزه یک چیزی می‌خوریم و ساعت هفت به تئاتر می‌رویم.
+reading A:
+{"type":"mcq","prompt":"در نمایشگاه موزه چه چیزی هست؟","options":["عکس‌های قدیمی از هامبورگ","نقاشی‌های تازه از برلین","سازهای قدیمی","کتاب‌های قدیمی"],"correct":0,"explanation_fa":"بن می‌گوید: «eine neue Ausstellung mit alten Fotos von Hamburg»."}
+{"type":"tf","prompt":"شنبه ورود به موزه مجانی است.","correct":true,"explanation_fa":"بن می‌گوید: «am Samstag ist der Eintritt frei»."}
+{"type":"tf","prompt":"اما بلیت‌های تئاتر را خریده است.","correct":false,"explanation_fa":"اما می‌گوید: «Sie hat mir die Karten geschenkt.»، یعنی دخترخاله‌اش بلیت‌ها را به او هدیه داده است."}
+{"type":"mcq","prompt":"خواننده چه نسبتی با اما دارد؟","options":["خواهرش است","دخترخاله‌اش است","همکارش است","همسایه‌اش است"],"correct":1,"explanation_fa":"اما می‌گوید: «Die Sängerin ist meine Cousine.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید ورود به موزه پولی نمی‌خواهد؟","correct_sentence":4,"explanation_fa":"بن می‌گوید: «Nein, am Samstag ist der Eintritt frei.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Eine {{1}} singt alte {{2}} aus Berlin.","bank":["Sängerin","Lieder","Ausstellung","Fotos","Kultur"],"answers":["Sängerin","Lieder"],"explanation_fa":"اما می‌گوید: «Eine Sängerin singt alte Lieder aus Berlin.»"}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["اما می‌پرسد ورودیه گران است یا نه.","بن از نمایشگاه موزه می‌گوید.","اما می‌گوید خواننده دخترخاله‌اش است.","اما پیشنهاد می‌کند شب به تئاتر بروند."],"correct_order":[1,0,3,2],"explanation_fa":"اول بن از «Ausstellung» می‌گوید، بعد اما می‌پرسد «Ist der Eintritt teuer?»، بعد «Willst du mit mir ins Theater gehen?» و بعد «Die Sängerin ist meine Cousine.»"}
+listening A:
+{"type":"mcq","prompt":"زن چرا دو بلیت تئاتر دارد؟","options":["چون آن‌ها را ارزان خریده است","چون در تئاتر کار می‌کند","چون خواننده آن‌ها را به او هدیه داده است","چون دوستش نمی‌تواند برود"],"correct":2,"explanation_fa":"زن می‌گوید: «Die Sängerin ist meine Cousine. Sie hat mir die Karten geschenkt.»"}
+{"type":"num","prompt":"آن‌ها ساعت چند به تئاتر می‌روند؟","answer":"7","accepted":["7","7 Uhr","sieben","19","19 Uhr"],"explanation_fa":"زن می‌گوید: «um sieben gehen wir ins Theater»."}
+{"type":"tf","prompt":"مرد می‌دانست که زن به فرهنگ و هنر علاقه دارد.","correct":false,"explanation_fa":"مرد می‌گوید: «Ich wusste nicht, dass du dich für Kultur interessierst!»"}
+{"type":"tf","prompt":"مرد با زن به تئاتر می‌رود.","correct":true,"explanation_fa":"مرد می‌گوید: «Gut, ich komme gern mit.»"}
+listening B:
+{"type":"mcq","prompt":"مرد شنبه اول کجا می‌خواهد برود؟","options":["به سینما","به کنسرت","به کتابخانه","به موزه"],"correct":3,"explanation_fa":"مرد می‌گوید: «Im Museum gibt es eine neue Ausstellung.»"}
+{"type":"tf","prompt":"خواننده ترانه‌های قدیمی برلین را می‌خواند.","correct":true,"explanation_fa":"زن می‌گوید: «Eine Sängerin singt alte Lieder aus Berlin.»"}
+{"type":"tf","prompt":"آن‌ها بعد از تئاتر چیزی می‌خورند.","correct":false,"explanation_fa":"زن می‌گوید: «Nach dem Museum essen wir etwas»، یعنی بعد از موزه، نه بعد از تئاتر."}

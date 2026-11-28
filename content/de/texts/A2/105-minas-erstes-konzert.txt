@@ -1,0 +1,40 @@
+code: de-a2-t105
+title: Minas erstes Konzert
+band: 2
+kind: email
+placement: yes
+key_words: nervös, enttäuscht, überrascht, stolz, zufrieden
+sentences:
+- Liebe{lieb} Laura, | لاورای عزیز،
+- gestern war ein wichtiger Tag für unsere Familie. | دیروز روز مهمی برای خانواده ما بود.
+- Unsere Tochter Mina hat in der Schule ihr{ihr-det} erstes Konzert gegeben. | دخترمان مینا در مدرسه اولین کنسرتش را اجرا کرد.
+- Sie spielt seit zwei Jahren Klavier. | او دو سال است که پیانو می‌زند.
+- Vor dem Konzert war sie sehr nervös. | قبل از کنسرت خیلی استرس داشت.
+- Leider konnte mein Mann nicht kommen, denn er musste arbeiten. Mina war ein bisschen enttäuscht. | متأسفانه شوهرم نتوانست بیاید، چون باید کار می‌کرد. مینا کمی دلخور بود.
+- Aber fünf Minuten vor dem Konzert stand er plötzlich an der Tür! | ولی پنج دقیقه قبل از کنسرت ناگهان دم در ایستاده بود!
+- Mina war so überrascht und froh. | مینا خیلی غافلگیر و خوشحال شد.
+- Sie hat zwei Lieder gespielt und keinen Fehler gemacht. | دو آهنگ زد و هیچ اشتباهی نکرد.
+- Ihre{ihr-det} Lehrerin hat gesagt, dass sie mit Mina sehr zufrieden ist. | معلمش گفت که از مینا خیلی راضی است.
+- Wir waren so stolz auf sie! | ما خیلی به او افتخار کردیم!
+- Mein Mann hat ein Video gemacht. Wollen wir uns nächste Woche verabreden? Dann zeige ich es dir. | شوهرم یک ویدیو گرفته است. هفته بعد قرار بگذاریم؟ آن‌وقت نشانت می‌دهم.
+- Bis bald, deine Maryam | تا بعد، مریم
+reading A:
+{"type":"mcq","prompt":"این ایمیل بیشتر درباره چیست؟","options":["تولد مینا","اولین کنسرت مینا","کار تازه شوهر مریم","کلاس پیانوی مریم"],"correct":1,"explanation_fa":"مریم می‌نویسد: «Unsere Tochter Mina hat in der Schule ihr erstes Konzert gegeben.»"}
+{"type":"tf","prompt":"مینا دو سال است که پیانو می‌زند.","correct":true,"explanation_fa":"مریم می‌نویسد: «Sie spielt seit zwei Jahren Klavier.»"}
+{"type":"tf","prompt":"مینا قبل از کنسرت خیلی آرام بود.","correct":false,"explanation_fa":"مریم می‌نویسد: «Vor dem Konzert war sie sehr nervös.»، یعنی خیلی استرس داشت."}
+{"type":"mcq","prompt":"چرا مینا اول کمی دلخور بود؟","options":["چون پیانو خوب کار نمی‌کرد","چون معلمش آنجا نبود","چون پدرش نمی‌توانست بیاید","چون یک اشتباه کرد"],"correct":2,"explanation_fa":"مریم می‌نویسد: «Leider konnte mein Mann nicht kommen … Mina war ein bisschen enttäuscht.»"}
+{"type":"tf","prompt":"معلم مینا از او راضی است.","correct":true,"explanation_fa":"مریم می‌نویسد: «Ihre Lehrerin hat gesagt, dass sie mit Mina sehr zufrieden ist.»"}
+reading B:
+{"type":"order","prompt":"این‌ها را به ترتیبی که اتفاق افتاد بچین.","items":["مینا دو آهنگ زد.","پدر مینا ناگهان دم در بود.","مینا خیلی استرس داشت.","معلم گفت که از مینا راضی است."],"correct_order":[2,1,0,3],"explanation_fa":"اول «Vor dem Konzert war sie sehr nervös»، بعد «stand er plötzlich an der Tür»، بعد «Sie hat zwei Lieder gespielt» و بعد «Ihre Lehrerin hat gesagt, dass sie mit Mina sehr zufrieden ist»."}
+{"type":"find","prompt":"کدام جمله می‌گوید پدر مینا آخر سر به کنسرت آمد؟","correct_sentence":6,"explanation_fa":"مریم می‌نویسد: «Aber fünf Minuten vor dem Konzert stand er plötzlich an der Tür!»"}
+{"type":"match","prompt":"هر آدم را به چیزی که درباره‌اش آمده وصل کن.","left":["مینا","شوهر مریم","معلم مینا"],"right":["یک ویدیو گرفت","از مینا راضی است","دو آهنگ زد و اشتباه نکرد","کنسرت را لغو کرد"],"pairs":[[0,2],[1,0],[2,1]],"explanation_fa":"در متن آمده: «Sie hat zwei Lieder gespielt und keinen Fehler gemacht»، «Mein Mann hat ein Video gemacht» و معلم گفته «dass sie mit Mina sehr zufrieden ist»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Ihre Lehrerin hat gesagt, dass sie mit Mina sehr {{1}} ist. Wir waren so {{2}} auf sie!","bank":["zufrieden","stolz","überrascht","enttäuscht","nervös"],"answers":["zufrieden","stolz"],"explanation_fa":"مریم می‌نویسد: «dass sie mit Mina sehr zufrieden ist» و «Wir waren so stolz auf sie!»"}
+listening A:
+{"type":"mcq","prompt":"پدر مینا کی رسید؟","options":["پنج دقیقه قبل از کنسرت","بعد از کنسرت","وسط کنسرت","یک ساعت قبل از کنسرت"],"correct":0,"explanation_fa":"در متن می‌شنویم: «Aber fünf Minuten vor dem Konzert stand er plötzlich an der Tür!»"}
+{"type":"num","prompt":"مینا چند آهنگ زد؟","answer":"2","accepted":["2","zwei"],"explanation_fa":"در متن می‌شنویم: «Sie hat zwei Lieder gespielt.»"}
+{"type":"tf","prompt":"مینا در کنسرت هیچ اشتباهی نکرد.","correct":true,"explanation_fa":"در متن می‌شنویم: «und keinen Fehler gemacht»."}
+{"type":"tf","prompt":"شوهر مریم از کنسرت عکس گرفت.","correct":false,"explanation_fa":"در متن می‌شنویم: «Mein Mann hat ein Video gemacht.»، یعنی ویدیو گرفت، نه عکس."}
+listening B:
+{"type":"mcq","prompt":"مریم چه پیشنهادی به لاورا می‌دهد؟","options":["با هم به کنسرت بروند","لاورا پیانو یاد بگیرد","ویدیو را با ایمیل بفرستد","هفته بعد قرار بگذارند"],"correct":3,"explanation_fa":"مریم می‌پرسد: «Wollen wir uns nächste Woche verabreden? Dann zeige ich es dir.»"}
+{"type":"tf","prompt":"مینا وقتی پدرش را دید، خیلی غافلگیر شد.","correct":true,"explanation_fa":"در متن می‌شنویم: «Mina war so überrascht und froh.»"}
+{"type":"tf","prompt":"شوهر مریم آن روز کار نداشت.","correct":false,"explanation_fa":"در متن می‌شنویم: «Leider konnte mein Mann nicht kommen, denn er musste arbeiten.»"}

@@ -1,0 +1,36 @@
+code: de-a2-t093
+title: Ein Tag in der Natur
+band: 2
+kind: schedule
+key_words: Natur, Wald, Fluss, Wiese, Umwelt
+sentences:
+- Liebe{lieb} Eltern, am Freitag macht unsere Klasse einen Ausflug in die Natur. | والدین عزیز، جمعه کلاس ما یک گردش در طبیعت دارد.
+- 8.30 Uhr: Wir treffen uns am Bahnhof und fahren mit dem Zug in ein Dorf. | ساعت ۸:۳۰: در ایستگاه قطار همدیگر را می‌بینیم و با قطار به یک روستا می‌رویم. | tts: Acht Uhr dreißig: Wir treffen uns am Bahnhof und fahren mit dem Zug in ein Dorf.
+- 9.30 Uhr: Wir gehen zu Fuß durch den Wald zum Fluss. | ساعت ۹:۳۰: پیاده از میان جنگل تا رودخانه می‌رویم. | tts: Neun Uhr dreißig: Wir gehen zu Fuß durch den Wald zum Fluss.
+- Dort sehen wir Vögel und Fische. | آنجا پرنده‌ها و ماهی‌ها را می‌بینیم.
+- 12 Uhr: Mittagessen auf einer Wiese. Ihr{Ihr-det} Kind braucht ein Brot und eine Flasche Wasser. | ساعت ۱۲: ناهار روی یک چمنزار. فرزندتان یک ساندویچ و یک بطری آب لازم دارد. | tts: Zwölf Uhr: Mittagessen auf einer Wiese. Ihr Kind braucht ein Brot und eine Flasche Wasser.
+- 13 Uhr: Wir gehen an den Feldern vorbei zu einem See. | ساعت ۱۳: از کنار مزرعه‌ها تا یک دریاچه می‌رویم. | tts: Dreizehn Uhr: Wir gehen an den Feldern vorbei zu einem See.
+- Schwimmen dürfen die Kinder nicht, denn das Wasser ist im Mai zu{zu-adv} kalt. | بچه‌ها اجازه شنا ندارند، چون آب در ماه مه خیلی سرد است.
+- 16.30 Uhr: Ankunft am Bahnhof. | ساعت ۱۶:۳۰: رسیدن به ایستگاه قطار. | tts: Sechzehn Uhr dreißig: Ankunft am Bahnhof.
+- Wir nehmen unseren Müll wieder mit, denn die Umwelt ist uns wichtig. | زباله‌مان را با خودمان برمی‌گردانیم، چون محیط زیست برایمان مهم است.
+- Ein Tag an der frischen Luft ist gut für die Kinder! | یک روز در هوای آزاد برای بچه‌ها خوب است!
+- Ihre{Ihr-det} Lehrerin Anna Schmidt | معلمتان، آنا اشمیت
+reading A:
+{"type":"mcq","prompt":"این متن برای چه کسانی نوشته شده است؟","options":["برای بچه‌های کلاس","برای پدر و مادرها","برای معلم‌های دیگر","برای مسافرهای قطار"],"correct":1,"explanation_fa":"متن با «Liebe Eltern» شروع می‌شود و معلم می‌نویسد: «Ihr Kind braucht ein Brot und eine Flasche Wasser.»"}
+{"type":"tf","prompt":"بچه‌ها ساعت ۱۲ روی یک چمنزار ناهار می‌خورند.","correct":true,"explanation_fa":"در برنامه آمده: «12 Uhr: Mittagessen auf einer Wiese.»"}
+{"type":"tf","prompt":"بچه‌ها می‌توانند در دریاچه شنا کنند.","correct":false,"explanation_fa":"معلم می‌نویسد: «Schwimmen dürfen die Kinder nicht, denn das Wasser ist im Mai zu kalt.»"}
+{"type":"mcq","prompt":"چرا زباله‌ها را با خودشان برمی‌گردانند؟","options":["چون آنجا سطل زباله نیست","چون روستا خیلی کوچک است","چون بعداً با قطار برمی‌گردند","چون محیط زیست برایشان مهم است"],"correct":3,"explanation_fa":"معلم می‌نویسد: «Wir nehmen unseren Müll wieder mit, denn die Umwelt ist uns wichtig.»"}
+reading B:
+{"type":"order","prompt":"برنامه روز را به ترتیب بچین.","items":["ناهار روی چمنزار","رفتن به دریاچه","دیدار در ایستگاه قطار","پیاده‌روی در جنگل تا رودخانه"],"correct_order":[2,3,0,1],"explanation_fa":"اول ساعت ۸:۳۰ «Wir treffen uns am Bahnhof»، بعد ساعت ۹:۳۰ «durch den Wald zum Fluss»، بعد ساعت ۱۲ «Mittagessen auf einer Wiese» و ساعت ۱۳ «zu einem See»."}
+{"type":"find","prompt":"کدام جمله می‌گوید هر بچه چه چیزهایی باید همراه داشته باشد؟","correct_sentence":4,"explanation_fa":"معلم می‌نویسد: «Ihr Kind braucht ein Brot und eine Flasche Wasser.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Wir nehmen unseren {{1}} wieder mit, denn die {{2}} ist uns wichtig.","bank":["Müll","Umwelt","Wasser","Zug","Ausflug"],"answers":["Müll","Umwelt"],"explanation_fa":"معلم می‌نویسد: «Wir nehmen unseren Müll wieder mit, denn die Umwelt ist uns wichtig.»"}
+listening A:
+{"type":"num","prompt":"بچه‌ها ساعت چند به ایستگاه قطار برمی‌گردند؟","answer":"16.30","accepted":["16.30","16:30","16.30 Uhr","16:30 Uhr","sechzehn Uhr dreißig","halb fünf"],"explanation_fa":"در برنامه آمده: «16.30 Uhr: Ankunft am Bahnhof.»"}
+{"type":"mcq","prompt":"بچه‌ها کنار رودخانه چه می‌بینند؟","options":["گاو و گوسفند","پرنده و ماهی","اسب و سگ","گربه و موش"],"correct":1,"explanation_fa":"معلم می‌گوید: «Dort sehen wir Vögel und Fische.»"}
+{"type":"tf","prompt":"کلاس با اتوبوس به روستا می‌رود.","correct":false,"explanation_fa":"معلم می‌گوید: «fahren mit dem Zug in ein Dorf»، یعنی با قطار می‌روند."}
+{"type":"tf","prompt":"آب دریاچه در ماه مه خیلی سرد است.","correct":true,"explanation_fa":"معلم می‌گوید: «das Wasser ist im Mai zu kalt»."}
+listening B:
+{"type":"num","prompt":"بچه‌ها ساعت چند در ایستگاه قطار همدیگر را می‌بینند؟","answer":"8.30","accepted":["8.30","8:30","8.30 Uhr","8:30 Uhr","acht Uhr dreißig","halb neun"],"explanation_fa":"در برنامه آمده: «8.30 Uhr: Wir treffen uns am Bahnhof»."}
+{"type":"mcq","prompt":"ساعت ۱۳ کلاس به کجا می‌رود؟","options":["به یک دریاچه","به یک رودخانه","به یک جنگل","به یک رستوران"],"correct":0,"explanation_fa":"در برنامه آمده: «13 Uhr: Wir gehen an den Feldern vorbei zu einem See.»"}
+{"type":"tf","prompt":"معلم می‌گوید یک روز در هوای آزاد برای بچه‌ها خوب است.","correct":true,"explanation_fa":"معلم می‌گوید: «Ein Tag an der frischen Luft ist gut für die Kinder!»"}
+{"type":"tf","prompt":"بچه‌ها ناهار را در رستوران روستا می‌خورند.","correct":false,"explanation_fa":"معلم می‌گوید: «Mittagessen auf einer Wiese»، یعنی ناهار را روی چمنزار می‌خورند."}

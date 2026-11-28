@@ -1,0 +1,28 @@
+code: de-a2-t095
+title: Fußball für Mädchen
+kind: ad
+key_words: Verein, Mannschaft, Team, kostenlos
+sentences:
+- Fußball für Mädchen! | فوتبال برای دخترها!
+- Unser Verein hat eine neue Mannschaft für Mädchen von 8 bis 11 Jahren. | باشگاه ما یک تیم تازه برای دخترهای ۸ تا ۱۱ ساله دارد. | tts: Unser Verein hat eine neue Mannschaft für Mädchen von acht bis elf Jahren.
+- Wir spielen jeden Dienstag und Donnerstag von 16 bis 17.30 Uhr auf dem Platz hinter der Grundschule. | هر سه‌شنبه و پنجشنبه از ساعت ۱۶ تا ۱۷:۳۰ در زمین پشت دبستان بازی می‌کنیم. | tts: Wir spielen jeden Dienstag und Donnerstag von sechzehn bis siebzehn Uhr dreißig auf dem Platz hinter der Grundschule.
+- Du brauchst keine Erfahrung, nur Lust auf Sport. | تجربه لازم نداری، فقط باید به ورزش علاقه داشته باشی.
+- Der erste Monat ist kostenlos. | ماه اول مجانی است.
+- Komm zu uns ins Team! | به تیم ما بیا!
+- Ruf Frau Becker an: 0341 225890. | به خانم بکر زنگ بزن: ۰۳۴۱ ۲۲۵۸۹۰. | tts: Ruf Frau Becker an: null drei vier eins, zwei zwei fünf acht neun null.
+reading A:
+{"type":"mcq","prompt":"این آگهی برای چه کسانی است؟","options":["برای پسرهای ۸ تا ۱۱ ساله","برای دخترهای ۸ تا ۱۱ ساله","برای پدر و مادرهای فوتبالیست","برای معلم‌های دبستان"],"correct":1,"explanation_fa":"در آگهی آمده: «eine neue Mannschaft für Mädchen von 8 bis 11 Jahren»."}
+{"type":"tf","prompt":"بازی‌ها در زمین پشت دبستان است.","correct":true,"explanation_fa":"در آگهی آمده: «auf dem Platz hinter der Grundschule»."}
+{"type":"tf","prompt":"برای این تیم باید تجربه فوتبال داشت.","correct":false,"explanation_fa":"در آگهی آمده: «Du brauchst keine Erfahrung»، یعنی تجربه لازم نیست."}
+reading B:
+{"type":"match","prompt":"هر مورد را به اطلاعاتش در آگهی وصل کن.","left":["روزهای بازی","ماه اول","جای بازی"],"right":["مجانی","پشت دبستان","شنبه و یکشنبه","سه‌شنبه و پنجشنبه"],"pairs":[[0,3],[1,0],[2,1]],"explanation_fa":"در آگهی آمده: «jeden Dienstag und Donnerstag»، «Der erste Monat ist kostenlos» و «hinter der Grundschule»."}
+{"type":"find","prompt":"کدام جمله می‌گوید ماه اول پولی نمی‌خواهد؟","correct_sentence":4,"explanation_fa":"در آگهی آمده: «Der erste Monat ist kostenlos.»"}
+{"type":"mcq","prompt":"طبق آگهی، به چه کسی باید زنگ زد؟","options":["به مدیر دبستان","به آقای بکر","به خانم بکر","به معلم ورزش"],"correct":2,"explanation_fa":"در آگهی آمده: «Ruf Frau Becker an»."}
+listening A:
+{"type":"num","prompt":"بازی ساعت چند تمام می‌شود؟","answer":"17.30","accepted":["17.30","17:30","17.30 Uhr","17:30 Uhr","siebzehn Uhr dreißig","halb sechs"],"explanation_fa":"در آگهی می‌شنویم: «von 16 bis 17.30 Uhr»."}
+{"type":"tf","prompt":"دخترها هفته‌ای دو بار بازی می‌کنند.","correct":true,"explanation_fa":"در آگهی می‌شنویم: «jeden Dienstag und Donnerstag»، یعنی هفته‌ای دو بار."}
+{"type":"tf","prompt":"ماه اول ده یورو هزینه دارد.","correct":false,"explanation_fa":"در آگهی می‌شنویم: «Der erste Monat ist kostenlos»، یعنی مجانی است."}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"mcq","prompt":"دخترها کجا بازی می‌کنند؟","options":["در پارک شهر","کنار استخر","در زمین پشت دبستان","در سالن ورزش"],"correct":2,"explanation_fa":"در آگهی می‌شنویم: «auf dem Platz hinter der Grundschule»."}
+{"type":"num","prompt":"دخترها از چند سالگی می‌توانند به این تیم بیایند؟","answer":"8","accepted":["8","acht","8 Jahre"],"explanation_fa":"در آگهی می‌شنویم: «für Mädchen von 8 bis 11 Jahren»."}

@@ -1,0 +1,36 @@
+code: de-a2-t097
+title: Opa hat keine Zeit
+band: 2
+kind: email
+key_words: Rentner, joggen, wandern, Ski fahren, Schach
+sentences:
+- Liebe{lieb} Emma, | امای عزیز،
+- danke für deine E-Mail! Du fragst, was ich jetzt als Rentner den ganzen Tag mache. | ممنون از ایمیلت! می‌پرسی که حالا که بازنشسته‌ام، تمام روز چه کار می‌کنم.
+- Seit einem Jahr bin ich in Rente, aber ich habe mehr Termine als früher! | یک سال است که بازنشسته‌ام، ولی از قبل بیشتر برنامه دارم!
+- Jeden Montag gehe ich mit meinem Nachbarn joggen. | هر دوشنبه با همسایه‌ام به دویدن می‌روم.
+- Jeden Dienstag spielen Oma und ich Tennis. | هر سه‌شنبه من و مادربزرگ تنیس بازی می‌کنیم.
+- Am Mittwoch spiele ich im Verein Schach. Das ist gut für den Kopf. | چهارشنبه‌ها در باشگاه شطرنج بازی می‌کنم. این برای ذهن خوب است.
+- Am Wochenende wandern wir oft in den Bergen. | آخر هفته‌ها اغلب در کوهستان پیاده‌روی می‌کنیم.
+- Klettern möchte ich nicht, das finde ich zu gefährlich. | دلم نمی‌خواهد صخره‌نوردی کنم، به نظرم خیلی خطرناک است.
+- Im Winter gehen Oma und ich Ski fahren. | زمستان‌ها من و مادربزرگ به اسکی می‌رویم.
+- Und jeden Abend machen wir mit dem Hund einen Spaziergang. | و هر شب با سگ قدم می‌زنیم.
+- Du siehst, ich habe wirklich viel zu tun! | می‌بینی، واقعاً خیلی کار دارم!
+- Wann besuchst du uns? Dann gehen wir zusammen am Fluss spazieren. | کی به دیدنمان می‌آیی؟ آن‌وقت با هم کنار رودخانه قدم می‌زنیم.
+- Dein Opa | پدربزرگت
+reading A:
+{"type":"mcq","prompt":"پدربزرگ در این ایمیل به چه سؤالی جواب می‌دهد؟","options":["کی به دیدن اما می‌آید","حالا تمام روز چه کار می‌کند","چرا بازنشسته شده است","کجا به تعطیلات می‌رود"],"correct":1,"explanation_fa":"پدربزرگ می‌نویسد: «Du fragst, was ich jetzt als Rentner den ganzen Tag mache.»"}
+{"type":"tf","prompt":"پدربزرگ یک سال است که بازنشسته است.","correct":true,"explanation_fa":"پدربزرگ می‌نویسد: «Seit einem Jahr bin ich in Rente.»"}
+{"type":"tf","prompt":"پدربزرگ دوست دارد صخره‌نوردی کند.","correct":false,"explanation_fa":"پدربزرگ می‌نویسد: «Klettern möchte ich nicht, das finde ich zu gefährlich.»"}
+{"type":"mcq","prompt":"پدربزرگ با چه کسی تنیس بازی می‌کند؟","options":["با همسایه‌اش","با اما","با دوستانش در باشگاه","با مادربزرگ"],"correct":3,"explanation_fa":"پدربزرگ می‌نویسد: «Jeden Dienstag spielen Oma und ich Tennis.»"}
+reading B:
+{"type":"match","prompt":"هر روز را به کار پدربزرگ وصل کن.","left":["دوشنبه","سه‌شنبه","چهارشنبه"],"right":["شطرنج","دویدن","تنیس","شنا"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"پدربزرگ می‌نویسد: «Jeden Montag gehe ich … joggen»، «Jeden Dienstag spielen Oma und ich Tennis» و «Am Mittwoch spiele ich im Verein Schach»."}
+{"type":"find","prompt":"کدام جمله می‌گوید پدربزرگ هر شب با سگ قدم می‌زند؟","correct_sentence":9,"explanation_fa":"پدربزرگ می‌نویسد: «Und jeden Abend machen wir mit dem Hund einen Spaziergang.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Am Mittwoch spiele ich im {{1}} Schach. Das ist gut für den {{2}}.","bank":["Verein","Kopf","Fluss","Hand","Tennis"],"answers":["Verein","Kopf"],"explanation_fa":"پدربزرگ می‌نویسد: «Am Mittwoch spiele ich im Verein Schach. Das ist gut für den Kopf.»"}
+listening A:
+{"type":"mcq","prompt":"پدربزرگ آخر هفته‌ها اغلب چه کار می‌کند؟","options":["در پارک می‌دود","شطرنج بازی می‌کند","در کوهستان پیاده‌روی می‌کند","با همسایه تنیس بازی می‌کند"],"correct":2,"explanation_fa":"پدربزرگ می‌گوید: «Am Wochenende wandern wir oft in den Bergen.»"}
+{"type":"tf","prompt":"پدربزرگ زمستان‌ها با مادربزرگ به اسکی می‌رود.","correct":true,"explanation_fa":"پدربزرگ می‌گوید: «Im Winter gehen Oma und ich Ski fahren.»"}
+{"type":"tf","prompt":"پدربزرگ حالا کمتر از قبل برنامه دارد.","correct":false,"explanation_fa":"پدربزرگ می‌گوید: «ich habe mehr Termine als früher»، یعنی بیشتر از قبل برنامه دارد."}
+listening B:
+{"type":"mcq","prompt":"به نظر پدربزرگ، چرا شطرنج خوب است؟","options":["چون در خانه بازی می‌شود","چون برای ذهن خوب است","چون با همسایه بازی می‌کند","چون مجانی است"],"correct":1,"explanation_fa":"پدربزرگ درباره شطرنج می‌گوید: «Das ist gut für den Kopf.»"}
+{"type":"tf","prompt":"پدربزرگ هر دوشنبه با همسایه‌اش می‌دود.","correct":true,"explanation_fa":"پدربزرگ می‌گوید: «Jeden Montag gehe ich mit meinem Nachbarn joggen.»"}
+{"type":"tf","prompt":"پدربزرگ هر روز صبح با سگ قدم می‌زند.","correct":false,"explanation_fa":"پدربزرگ می‌گوید: «jeden Abend machen wir mit dem Hund einen Spaziergang»، یعنی شب‌ها، نه صبح‌ها."}

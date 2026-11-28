@@ -1,0 +1,34 @@
+code: de-a2-t098
+title: Kurse im Herbst
+band: 2
+kind: schedule
+key_words: malen, zeichnen, Gitarre, Klavier, Instrument
+sentences:
+- Unsere neuen Kurse im Herbst | دوره‌های تازه پاییزی ما
+- Montag, 18 Uhr: Wir malen{malen} Landschaften und Blumen. Sie brauchen keine Erfahrung. | دوشنبه، ساعت ۱۸: منظره و گل نقاشی می‌کنیم. لازم نیست تجربه داشته باشید. | tts: Montag, achtzehn Uhr: Wir malen Landschaften und Blumen. Sie brauchen keine Erfahrung.
+- Dienstag, 17 Uhr: Wir zeichnen Menschen und Tiere. Bitte bringen Sie einen Bleistift mit. | سه‌شنبه، ساعت ۱۷: از آدم‌ها و حیوان‌ها طراحی می‌کنیم. لطفاً یک مداد با خودتان بیاورید. | tts: Dienstag, siebzehn Uhr: Wir zeichnen Menschen und Tiere. Bitte bringen Sie einen Bleistift mit.
+- Mittwoch, 19 Uhr: Gitarre. Wir spielen einfache Lieder. | چهارشنبه، ساعت ۱۹: گیتار. آهنگ‌های ساده می‌زنیم. | tts: Mittwoch, neunzehn Uhr: Gitarre. Wir spielen einfache Lieder.
+- Donnerstag, 18.30 Uhr: Klavier. Sie haben nie ein Instrument gespielt? Kein Problem! | پنجشنبه، ساعت ۱۸:۳۰: پیانو. تا حالا هیچ سازی نزده‌اید؟ اشکالی ندارد! | tts: Donnerstag, achtzehn Uhr dreißig: Klavier. Sie haben nie ein Instrument gespielt? Kein Problem!
+- Freitag, 19 Uhr: Wir machen zusammen Musik. Bringen Sie Ihr{Ihr-det} Instrument mit! | جمعه، ساعت ۱۹: با هم موسیقی اجرا می‌کنیم. سازتان را با خودتان بیاورید! | tts: Freitag, neunzehn Uhr: Wir machen zusammen Musik. Bringen Sie Ihr Instrument mit!
+- Samstag, 10 Uhr: für Eltern und Kinder. Wir sammeln im Park bunte Blätter und malen sie. | شنبه، ساعت ۱۰: برای پدر و مادرها و بچه‌ها. در پارک برگ‌های رنگارنگ جمع می‌کنیم و نقاشی‌شان را می‌کشیم. | tts: Samstag, zehn Uhr: für Eltern und Kinder. Wir sammeln im Park bunte Blätter und malen sie.
+- Jeder Kurs hat zehn Termine und kostet 60 Euro. | هر دوره ده جلسه دارد و ۶۰ یورو هزینه دارد. | tts: Jeder Kurs hat zehn Termine und kostet sechzig Euro.
+- Anmeldung im Büro, von Montag bis Freitag, 9 bis 12 Uhr. | ثبت‌نام در دفتر، دوشنبه تا جمعه، ساعت ۹ تا ۱۲. | tts: Anmeldung im Büro, von Montag bis Freitag, neun bis zwölf Uhr.
+reading A:
+{"type":"mcq","prompt":"کدام دوره برای پدر و مادرها و بچه‌هاست؟","options":["دوره دوشنبه","دوره چهارشنبه","دوره جمعه","دوره شنبه"],"correct":3,"explanation_fa":"در برنامه آمده: «Samstag, 10 Uhr: für Eltern und Kinder.»"}
+{"type":"tf","prompt":"برای دوره نقاشی دوشنبه باید تجربه داشت.","correct":false,"explanation_fa":"در برنامه آمده: «Sie brauchen keine Erfahrung.»"}
+{"type":"tf","prompt":"برای دوره سه‌شنبه باید یک مداد آورد.","correct":true,"explanation_fa":"در برنامه آمده: «Bitte bringen Sie einen Bleistift mit.»"}
+{"type":"mcq","prompt":"هر دوره چند جلسه دارد؟","options":["پنج جلسه","هشت جلسه","ده جلسه","دوازده جلسه"],"correct":2,"explanation_fa":"در برنامه آمده: «Jeder Kurs hat zehn Termine.»"}
+reading B:
+{"type":"match","prompt":"هر روز را به دوره‌اش وصل کن.","left":["چهارشنبه","پنجشنبه","جمعه"],"right":["پیانو","گیتار","موسیقی با هم","آواز"],"pairs":[[0,1],[1,0],[2,2]],"explanation_fa":"در برنامه آمده: «Mittwoch … Gitarre»، «Donnerstag … Klavier» و «Freitag … Wir machen zusammen Musik»."}
+{"type":"find","prompt":"کدام جمله می‌گوید کجا و کی می‌شود ثبت‌نام کرد؟","correct_sentence":8,"explanation_fa":"در برنامه آمده: «Anmeldung im Büro, von Montag bis Freitag, 9 bis 12 Uhr.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Bitte bringen Sie einen {{1}} mit. … Wir spielen einfache {{2}}.","bank":["Bleistift","Lieder","Gitarre","Blätter","Klavier"],"answers":["Bleistift","Lieder"],"explanation_fa":"در برنامه آمده: «Bitte bringen Sie einen Bleistift mit.» و «Wir spielen einfache Lieder.»"}
+listening A:
+{"type":"num","prompt":"هر دوره چند یورو هزینه دارد؟","answer":"60","accepted":["60","60 Euro","sechzig"],"explanation_fa":"در برنامه می‌شنویم: «Jeder Kurs hat zehn Termine und kostet 60 Euro.»"}
+{"type":"mcq","prompt":"در دوره دوشنبه چه چیزهایی نقاشی می‌کنند؟","options":["آدم‌ها و حیوان‌ها","منظره و گل","برگ‌های پارک","عکس‌های قدیمی"],"correct":1,"explanation_fa":"در برنامه می‌شنویم: «Montag, 18 Uhr: Wir malen Landschaften und Blumen.»"}
+{"type":"tf","prompt":"دوره گیتار چهارشنبه ساعت ۱۹ است.","correct":true,"explanation_fa":"در برنامه می‌شنویم: «Mittwoch, 19 Uhr: Gitarre.»"}
+{"type":"tf","prompt":"دوره پیانو فقط برای کسانی است که قبلاً ساز زده‌اند.","correct":false,"explanation_fa":"در برنامه می‌شنویم: «Sie haben nie ein Instrument gespielt? Kein Problem!»"}
+listening B:
+{"type":"num","prompt":"دوره پیانو ساعت چند شروع می‌شود؟","answer":"18.30","accepted":["18.30","18:30","18.30 Uhr","18:30 Uhr","achtzehn Uhr dreißig","halb sieben"],"explanation_fa":"در برنامه می‌شنویم: «Donnerstag, 18.30 Uhr: Klavier.»"}
+{"type":"mcq","prompt":"شنبه در پارک چه کار می‌کنند؟","options":["گیتار می‌زنند","برگ‌های رنگارنگ جمع می‌کنند","از حیوان‌ها طراحی می‌کنند","با هم آواز می‌خوانند"],"correct":1,"explanation_fa":"در برنامه می‌شنویم: «Wir sammeln im Park bunte Blätter und malen sie.»"}
+{"type":"tf","prompt":"روز جمعه هر کس ساز خودش را می‌آورد.","correct":true,"explanation_fa":"در برنامه می‌شنویم: «Bringen Sie Ihr Instrument mit!»"}
+{"type":"tf","prompt":"شنبه‌ها هم می‌شود در دفتر ثبت‌نام کرد.","correct":false,"explanation_fa":"در برنامه می‌شنویم: «Anmeldung im Büro, von Montag bis Freitag»، یعنی شنبه نه."}
