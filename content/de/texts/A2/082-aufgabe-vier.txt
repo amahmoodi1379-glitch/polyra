@@ -1,0 +1,36 @@
+code: de-a2-t082
+title: Aufgabe 4
+band: 2
+kind: phone_call
+key_words: lösen, Lösung, korrigieren, Note, Bedeutung
+sentences:
+A: Hallo Sara, hier ist Jonas. Hast du die Übungen für Mathematik schon gemacht? | سلام سارا، یوناس هستم. تمرین‌های ریاضی را انجام داده‌ای؟
+B: Ja, alle. Aber bei Aufgabe 4 war ich nicht sicher. | آره، همه را. ولی سر مسئلهٔ ۴ مطمئن نبودم. | tts: Ja, alle. Aber bei Aufgabe vier war ich nicht sicher.
+A: Ich kann Aufgabe 4 gar nicht lösen. Was ist deine Lösung? | من اصلاً نمی‌توانم مسئلهٔ ۴ را حل کنم. جواب تو چیست؟ | tts: Ich kann Aufgabe vier gar nicht lösen. Was ist deine Lösung?
+B: Meine Lösung ist 120 Euro, aber ich weiß nicht, ob das richtig ist. | جواب من ۱۲۰ یوروست، ولی نمی‌دانم درست است یا نه. | tts: Meine Lösung ist hundertzwanzig Euro, aber ich weiß nicht, ob das richtig ist.
+A: Frau Schmidt korrigiert morgen alle Hausaufgaben, und wir bekommen eine Note. | خانم اشمیت فردا همهٔ تکلیف‌ها را تصحیح می‌کند و نمره می‌گیریم.
+B: Ich weiß. Ich möchte keine schlechte Note, deshalb übe ich heute noch ein bisschen. | می‌دانم. نمی‌خواهم نمرهٔ بد بگیرم، برای همین امروز باز هم کمی تمرین می‌کنم.
+A: Und lernst du auch für den Test in Englisch am Freitag? | برای امتحان انگلیسیِ جمعه هم درس می‌خوانی؟
+B: Ja, ich lerne jeden Tag zehn neue Wörter. | آره، هر روز ده کلمهٔ تازه یاد می‌گیرم.
+B: Ich suche sie im Wörterbuch und schreibe die Bedeutung in mein Heft. | آن‌ها را در دیکشنری پیدا می‌کنم و معنی‌شان را در دفترم می‌نویسم.
+A: Das mache ich jetzt auch. Danke, Sara! | من هم از حالا همین کار را می‌کنم. ممنون، سارا!
+reading A:
+{"type":"mcq","prompt":"یوناس برای چه به سارا زنگ می‌زند؟","options":["برای امتحان انگلیسی","برای یک مسئلهٔ ریاضی","برای دیکشنری‌اش","برای نمره‌اش"],"correct":1,"explanation_fa":"یوناس می‌پرسد: «Hast du die Übungen für Mathematik schon gemacht?» و می‌گوید: «Ich kann Aufgabe 4 gar nicht lösen.»"}
+{"type":"tf","prompt":"سارا همهٔ تمرین‌ها را انجام داده است.","correct":true,"explanation_fa":"سارا می‌گوید: «Ja, alle.»"}
+{"type":"tf","prompt":"سارا مطمئن است که جوابش درست است.","correct":false,"explanation_fa":"سارا می‌گوید: «ich weiß nicht, ob das richtig ist»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Ich kann Aufgabe 4 gar nicht {{1}}. Was ist deine {{2}}?","bank":["lösen","Lösung","korrigiert","Wörterbuch","Heft"],"answers":["lösen","Lösung"],"explanation_fa":"یوناس می‌گوید: «Ich kann Aufgabe 4 gar nicht lösen. Was ist deine Lösung?»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید معلم فردا تکلیف‌ها را تصحیح می‌کند؟","correct_sentence":4,"explanation_fa":"یوناس می‌گوید: «Frau Schmidt korrigiert morgen alle Hausaufgaben»."}
+{"type":"match","prompt":"هر کس را به چیزی که دربارهٔ او گفته می‌شود وصل کن.","left":["سارا","یوناس","خانم اشمیت"],"right":["فردا تکلیف‌ها را تصحیح می‌کند","هر روز ده کلمهٔ تازه یاد می‌گیرد","دیکشنری‌اش را گم کرده است","نمی‌تواند مسئلهٔ ۴ را حل کند"],"pairs":[[0,1],[1,3],[2,0]],"explanation_fa":"در گفتگو آمده: «ich lerne jeden Tag zehn neue Wörter»، «Ich kann Aufgabe 4 gar nicht lösen» و «Frau Schmidt korrigiert morgen alle Hausaufgaben»."}
+{"type":"tf","prompt":"امتحان انگلیسی جمعه است.","correct":true,"explanation_fa":"یوناس می‌پرسد: «lernst du auch für den Test in Englisch am Freitag?»"}
+{"type":"tf","prompt":"سارا معنی کلمه‌ها را در کتابش می‌نویسد.","correct":false,"explanation_fa":"سارا می‌گوید: «schreibe die Bedeutung in mein Heft»، یعنی در دفترش."}
+listening A:
+{"type":"num","prompt":"جواب سارا برای مسئلهٔ ۴ چند یوروست؟","answer":"120","accepted":["120","120 Euro","hundertzwanzig"],"explanation_fa":"سارا می‌گوید: «Meine Lösung ist 120 Euro»."}
+{"type":"mcq","prompt":"چرا سارا امروز باز هم کمی تمرین می‌کند؟","options":["نمی‌خواهد نمرهٔ بد بگیرد","امتحان انگلیسی فردا است","یوناس از او خواسته است","تکلیف‌هایش تمام نشده است"],"correct":0,"explanation_fa":"سارا می‌گوید: «Ich möchte keine schlechte Note, deshalb übe ich heute noch ein bisschen.»"}
+{"type":"tf","prompt":"امتحان انگلیسی دوشنبه است.","correct":false,"explanation_fa":"یوناس می‌گوید: «den Test in Englisch am Freitag»، یعنی جمعه."}
+{"type":"tf","prompt":"سارا هر روز ده کلمهٔ تازه یاد می‌گیرد.","correct":true,"explanation_fa":"سارا می‌گوید: «ich lerne jeden Tag zehn neue Wörter»."}
+listening B:
+{"type":"num","prompt":"یوناس و سارا دربارهٔ کدام مسئله حرف می‌زنند؟ شماره‌اش را بنویس.","answer":"4","accepted":["4","vier"],"explanation_fa":"سارا می‌گوید: «bei Aufgabe 4 war ich nicht sicher»."}
+{"type":"mcq","prompt":"سارا معنی کلمه‌ها را کجا می‌نویسد؟","options":["در دیکشنری","روی تخته","در کتاب","در دفترش"],"correct":3,"explanation_fa":"سارا می‌گوید: «schreibe die Bedeutung in mein Heft»."}
+{"type":"tf","prompt":"یوناس هم می‌خواهد مثل سارا کلمه‌ها را یاد بگیرد.","correct":true,"explanation_fa":"یوناس می‌گوید: «Das mache ich jetzt auch.»"}
+{"type":"tf","prompt":"خانم اشمیت هفتهٔ بعد تکلیف‌ها را تصحیح می‌کند.","correct":false,"explanation_fa":"یوناس می‌گوید: «Frau Schmidt korrigiert morgen alle Hausaufgaben»، یعنی فردا."}

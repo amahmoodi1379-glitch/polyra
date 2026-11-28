@@ -1,0 +1,38 @@
+code: de-a2-t083
+title: Die Prüfung am Samstag
+band: 2
+kind: schedule
+key_words: Teilnehmer, Grammatik, Thema, aussprechen, Aussprache
+sentences:
+- Liebe{lieb} Teilnehmer, am Samstag ist unsere Prüfung. | شرکت‌کنندگان عزیز، شنبه امتحانمان است.
+- 8:30 Uhr: Wir treffen uns vor Zimmer 12. Bringen Sie Ihren Ausweis mit. | ساعت ۸:۳۰: جلوی اتاق ۱۲ همدیگر را می‌بینیم. کارت شناسایی‌تان را همراه بیاورید. | tts: Acht Uhr dreißig: Wir treffen uns vor Zimmer zwölf. Bringen Sie Ihren Ausweis mit.
+- Ein Wörterbuch dürfen Sie nicht benutzen. | اجازه ندارید از دیکشنری استفاده کنید.
+- 9:00 Uhr: Lesen und Hören, auch mit Fragen zur Grammatik. | ساعت ۹: خواندن و شنیدن، با سؤال‌هایی دربارهٔ دستور زبان. | tts: Neun Uhr: Lesen und Hören, auch mit Fragen zur Grammatik.
+- 10:30 Uhr: Schreiben. Sie{Sie-3} schreiben eine kurze E-Mail an einen Freund. | ساعت ۱۰:۳۰: نوشتن. یک ایمیل کوتاه به یک دوست می‌نویسید. | tts: Zehn Uhr dreißig: Schreiben. Sie schreiben eine kurze E-Mail an einen Freund.
+- 11:15 Uhr: Pause. | ساعت ۱۱:۱۵: استراحت. | tts: Elf Uhr fünfzehn: Pause.
+- 11:30 Uhr: Sprechen, immer zwei Teilnehmer zusammen. | ساعت ۱۱:۳۰: صحبت کردن، همیشه دو شرکت‌کننده با هم. | tts: Elf Uhr dreißig: Sprechen, immer zwei Teilnehmer zusammen.
+- Jeder spricht zuerst zwei Minuten über ein Thema. Dann stellt jeder dem anderen eine Frage. | هر کس اول دو دقیقه دربارهٔ یک موضوع حرف می‌زند. بعد هر کدام از دیگری یک سؤال می‌پرسد.
+- Sprechen Sie die Wörter klar aus, denn die Aussprache ist wichtig. | کلمه‌ها را واضح تلفظ کنید، چون تلفظ مهم است.
+- Kleine Fehler sind kein Problem. | اشتباه‌های کوچک اشکالی ندارد.
+- In vier Wochen wissen Sie, ob Sie die Prüfung bestanden haben. | چهار هفته بعد می‌فهمید که در امتحان قبول شده‌اید یا نه.
+- Viel Erfolg! Ihre{Ihr-det} Lehrerin Lisa Weber | موفق باشید! معلمتان، لیزا وبر
+reading A:
+{"type":"mcq","prompt":"این متن دربارهٔ چیست؟","options":["نتیجهٔ امتحان","برنامهٔ روز امتحان","برنامهٔ یک کلاس تازه","یک سفر با کلاس"],"correct":1,"explanation_fa":"معلم می‌نویسد: «am Samstag ist unsere Prüfung» و بعد ساعت هر بخش امتحان را می‌گوید."}
+{"type":"tf","prompt":"شرکت‌کنندگان می‌توانند از دیکشنری استفاده کنند.","correct":false,"explanation_fa":"معلم می‌نویسد: «Ein Wörterbuch dürfen Sie nicht benutzen.»"}
+{"type":"tf","prompt":"در بخش صحبت کردن، دو نفر با هم امتحان می‌دهند.","correct":true,"explanation_fa":"معلم می‌نویسد: «Sprechen, immer zwei Teilnehmer zusammen»."}
+{"type":"order","prompt":"بخش‌های امتحان را به ترتیب بچین.","items":["نوشتن","صحبت کردن","خواندن و شنیدن","استراحت"],"correct_order":[2,0,3,1],"explanation_fa":"در برنامه آمده: «9:00 Uhr: Lesen und Hören»، «10:30 Uhr: Schreiben»، «11:15 Uhr: Pause» و «11:30 Uhr: Sprechen»."}
+reading B:
+{"type":"match","prompt":"هر ساعت را به برنامه‌اش وصل کن.","left":["ساعت ۸:۳۰","ساعت ۹","ساعت ۱۰:۳۰"],"right":["نوشتن ایمیل","دیدار جلوی اتاق ۱۲","خواندن و شنیدن","صحبت کردن"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"در برنامه آمده: «8:30 Uhr: Wir treffen uns vor Zimmer 12»، «9:00 Uhr: Lesen und Hören» و «10:30 Uhr: Schreiben»."}
+{"type":"find","prompt":"کدام جمله می‌گوید شرکت‌کنندگان کی می‌فهمند قبول شده‌اند یا نه؟","correct_sentence":10,"explanation_fa":"معلم می‌نویسد: «In vier Wochen wissen Sie, ob Sie die Prüfung bestanden haben.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Sprechen Sie die Wörter klar {{1}}, denn die {{2}} ist wichtig.","bank":["aus","Aussprache","auf","Wörterbuch","Fehler"],"answers":["aus","Aussprache"],"explanation_fa":"معلم می‌نویسد: «Sprechen Sie die Wörter klar aus, denn die Aussprache ist wichtig.»"}
+listening A:
+{"type":"num","prompt":"شرکت‌کنندگان ساعت چند جلوی اتاق همدیگر را می‌بینند؟","answer":"8:30","accepted":["8:30","8.30","halb neun","acht Uhr dreißig"],"explanation_fa":"معلم می‌گوید: «8:30 Uhr: Wir treffen uns vor Zimmer 12.»"}
+{"type":"num","prompt":"شمارهٔ اتاق چند است؟","answer":"12","accepted":["12","zwölf"],"explanation_fa":"معلم می‌گوید: «Wir treffen uns vor Zimmer 12.»"}
+{"type":"mcq","prompt":"شرکت‌کنندگان باید چه چیزی همراه بیاورند؟","options":["دیکشنری","کارت شناسایی","عکس","دفتر"],"correct":1,"explanation_fa":"معلم می‌گوید: «Bringen Sie Ihren Ausweis mit.»"}
+{"type":"tf","prompt":"در بخش نوشتن، یک ایمیل به یک دوست می‌نویسند.","correct":true,"explanation_fa":"معلم می‌گوید: «Sie schreiben eine kurze E-Mail an einen Freund.»"}
+{"type":"tf","prompt":"اشتباه‌های کوچک مشکل بزرگی است.","correct":false,"explanation_fa":"معلم می‌گوید: «Kleine Fehler sind kein Problem.»"}
+listening B:
+{"type":"mcq","prompt":"شرکت‌کنندگان چند وقت بعد می‌فهمند که قبول شده‌اند یا نه؟","options":["یک هفته بعد","دو هفته بعد","سه هفته بعد","چهار هفته بعد"],"correct":3,"explanation_fa":"معلم می‌گوید: «In vier Wochen wissen Sie, ob Sie die Prüfung bestanden haben.»"}
+{"type":"tf","prompt":"در بخش خواندن و شنیدن، سؤال دستور زبان هم هست.","correct":true,"explanation_fa":"معلم می‌گوید: «Lesen und Hören, auch mit Fragen zur Grammatik»."}
+{"type":"tf","prompt":"استراحت ساعت ۱۲ است.","correct":false,"explanation_fa":"معلم می‌گوید: «11:15 Uhr: Pause.»"}
+{"type":"num","prompt":"هر شرکت‌کننده اول چند دقیقه دربارهٔ یک موضوع حرف می‌زند؟","answer":"2","accepted":["2","zwei"],"explanation_fa":"معلم می‌گوید: «Jeder spricht zuerst zwei Minuten über ein Thema.»"}

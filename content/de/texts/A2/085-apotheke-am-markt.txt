@@ -1,0 +1,29 @@
+code: de-a2-t085
+title: Apotheke am Markt
+band: 1
+kind: ad
+key_words: erkältet, Husten, Schnupfen, Allergie, sich verletzen
+sentences:
+- Sind Sie erkältet? Haben Sie Husten oder Schnupfen? | سرما خورده‌اید؟ سرفه یا آبریزش بینی دارید؟
+- Dann kommen Sie in die Apotheke am Markt! | پس به داروخانهٔ کنار بازار بیایید!
+- Diese Woche sind alle Tees gegen Erkältung 20 Prozent billiger. | این هفته همهٔ چای‌های ضد سرماخوردگی ۲۰ درصد ارزان‌ترند. | tts: Diese Woche sind alle Tees gegen Erkältung zwanzig Prozent billiger.
+- Sie{Sie-3} haben eine Allergie? Sprechen Sie mit uns! | حساسیت دارید؟ با ما صحبت کنید!
+- Sie{Sie-3} haben sich beim Sport verletzt? Auch dann helfen wir Ihnen. | موقع ورزش آسیب دیده‌اید؟ آن‌وقت هم کمکتان می‌کنیم.
+- Wir sind Montag bis Samstag von 8 bis 20 Uhr da. | دوشنبه تا شنبه از ساعت ۸ تا ۲۰ اینجا هستیم. | tts: Wir sind Montag bis Samstag von acht bis zwanzig Uhr da.
+reading A:
+{"type":"mcq","prompt":"این متن چیست؟","options":["نامهٔ یک دکتر","آگهی یک داروخانه","برنامهٔ یک بیمارستان","پیام یک دوست"],"correct":1,"explanation_fa":"در متن آمده: «Dann kommen Sie in die Apotheke am Markt!»؛ داروخانه برای خودش تبلیغ می‌کند."}
+{"type":"tf","prompt":"این هفته چای‌های ضد سرماخوردگی ارزان‌تر است.","correct":true,"explanation_fa":"در متن آمده: «Diese Woche sind alle Tees gegen Erkältung 20 Prozent billiger.»"}
+{"type":"tf","prompt":"داروخانه یکشنبه‌ها باز است.","correct":false,"explanation_fa":"در متن آمده: «Wir sind Montag bis Samstag ... da»، پس یکشنبه باز نیست."}
+reading B:
+{"type":"find","prompt":"کدام جمله برای کسی است که موقع ورزش آسیب دیده است؟","correct_sentence":4,"explanation_fa":"در متن آمده: «Sie haben sich beim Sport verletzt? Auch dann helfen wir Ihnen.»"}
+{"type":"match","prompt":"هر مشکل را به چیزی که داروخانه برایش می‌گوید وصل کن.","left":["سرماخوردگی","حساسیت","آسیب موقع ورزش"],"right":["با ما صحبت کنید","پیش دکتر بروید","چای ارزان‌تر","آن‌وقت هم کمکتان می‌کنیم"],"pairs":[[0,2],[1,0],[2,3]],"explanation_fa":"در متن آمده: «alle Tees gegen Erkältung ... billiger»، «Sie haben eine Allergie? Sprechen Sie mit uns!» و «Sie haben sich beim Sport verletzt? Auch dann helfen wir Ihnen.»"}
+listening A:
+{"type":"num","prompt":"چای‌ها این هفته چند درصد ارزان‌ترند؟","answer":"20","accepted":["20","20 Prozent","zwanzig"],"explanation_fa":"در آگهی گفته می‌شود: «20 Prozent billiger»."}
+{"type":"tf","prompt":"داروخانه شنبه‌ها هم باز است.","correct":true,"explanation_fa":"در آگهی گفته می‌شود: «Wir sind Montag bis Samstag ... da.»"}
+{"type":"tf","prompt":"داروخانه ساعت ۱۸ بسته می‌شود.","correct":false,"explanation_fa":"در آگهی گفته می‌شود: «von 8 bis 20 Uhr»، یعنی تا ساعت ۲۰ باز است."}
+{"type":"dict","sentence":1,"explanation_fa":"جمله این است: «Dann kommen Sie in die Apotheke am Markt!»"}
+listening B:
+{"type":"mcq","prompt":"داروخانه کجاست؟","options":["کنار ایستگاه","کنار بیمارستان","کنار بازار","کنار مدرسه"],"correct":2,"explanation_fa":"در آگهی گفته می‌شود: «die Apotheke am Markt»."}
+{"type":"tf","prompt":"آگهی برای آدم‌های سرماخورده هم هست.","correct":true,"explanation_fa":"آگهی با این جمله شروع می‌شود: «Sind Sie erkältet?»"}
+{"type":"tf","prompt":"داروخانه فقط به کسانی کمک می‌کند که حساسیت دارند.","correct":false,"explanation_fa":"داروخانه از سرماخوردگی، حساسیت و آسیب موقع ورزش حرف می‌زند: «Auch dann helfen wir Ihnen.»"}
+{"type":"dict","sentence":3,"explanation_fa":"جمله این است: «Sie haben eine Allergie? Sprechen Sie mit uns!»"}

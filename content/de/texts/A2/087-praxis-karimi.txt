@@ -1,0 +1,35 @@
+code: de-a2-t087
+title: Die Praxis von Zahnärztin Karimi
+band: 2
+kind: schedule
+key_words: Zahnärztin, Praxis, Sprechstunde, Wartezimmer, Rezept-2
+sentences:
+- Willkommen in der Praxis von Zahnärztin Leila Karimi! | به مطب دندان‌پزشک، لیلا کریمی، خوش آمدید!
+- Unsere Sprechstunde ist Montag bis Freitag von 8 bis 13 Uhr. | ساعت ویزیت ما دوشنبه تا جمعه از ۸ تا ۱۳ است. | tts: Unsere Sprechstunde ist Montag bis Freitag von acht bis dreizehn Uhr.
+- Am Dienstag und Donnerstag sind wir auch von 15 bis 19 Uhr da. | سه‌شنبه و پنجشنبه از ۱۵ تا ۱۹ هم هستیم. | tts: Am Dienstag und Donnerstag sind wir auch von fünfzehn bis neunzehn Uhr da.
+- Bitte machen Sie immer einen Termin. Dann müssen Sie nicht lange im Wartezimmer warten. | لطفاً همیشه وقت بگیرید. آن‌وقت لازم نیست مدت زیادی در اتاق انتظار منتظر بمانید.
+- Haben Sie starke Schmerzen? Dann kommen Sie ohne Termin um 8 Uhr. | درد شدید دارید؟ پس بدون وقت قبلی ساعت ۸ بیایید. | tts: Haben Sie starke Schmerzen? Dann kommen Sie ohne Termin um acht Uhr.
+- Für Kinder gibt es im Wartezimmer Bücher und Spiele. | برای بچه‌ها در اتاق انتظار کتاب و اسباب‌بازی هست.
+- Brauchen Sie Tabletten? Das Rezept{Rezept-2} bekommen Sie nach dem Termin an der Anmeldung. | قرص لازم دارید؟ نسخه را بعد از ویزیت در پذیرش می‌گیرید.
+- Zwischen Weihnachten und Neujahr ist die Praxis geschlossen. | بین کریسمس و سال نو مطب بسته است.
+- Dann hilft Ihnen Zahnarzt Tom Becker am Bahnhof. | در آن روزها، دندان‌پزشک تام بکر، نزدیک ایستگاه قطار، به شما کمک می‌کند.
+- Wir wünschen Ihnen schöne Feiertage! | تعطیلات خوبی برایتان آرزو می‌کنیم!
+reading A:
+{"type":"mcq","prompt":"این متن از کجاست؟","options":["از یک داروخانه","از یک بیمارستان","از مطب یک دندان‌پزشک","از مدرسهٔ بچه‌ها"],"correct":2,"explanation_fa":"متن با این جمله شروع می‌شود: «Willkommen in der Praxis von Zahnärztin Leila Karimi!»"}
+{"type":"tf","prompt":"مطب دوشنبه بعدازظهر هم باز است.","correct":false,"explanation_fa":"در متن آمده: «Montag bis Freitag von 8 bis 13 Uhr» و بعدازظهر فقط «Am Dienstag und Donnerstag»."}
+{"type":"tf","prompt":"در اتاق انتظار برای بچه‌ها کتاب هست.","correct":true,"explanation_fa":"در متن آمده: «Für Kinder gibt es im Wartezimmer Bücher und Spiele.»"}
+{"type":"mcq","prompt":"کسی که درد شدید دارد چه کار کند؟","options":["اول تلفن بزند","ساعت ۸ بدون وقت قبلی بیاید","به داروخانه برود","یک هفته صبر کند"],"correct":1,"explanation_fa":"در متن آمده: «Haben Sie starke Schmerzen? Dann kommen Sie ohne Termin um 8 Uhr.»"}
+reading B:
+{"type":"match","prompt":"هر زمان را به چیزی که در متن دربارهٔ آن آمده وصل کن.","left":["دوشنبه تا جمعه","سه‌شنبه و پنجشنبه","بین کریسمس و سال نو"],"right":["مطب بسته است","از ۱۵ تا ۱۹ هم باز است","از ۸ تا ۱۳ باز است","فقط بعدازظهر باز است"],"pairs":[[0,2],[1,1],[2,0]],"explanation_fa":"در متن آمده: «Montag bis Freitag von 8 bis 13 Uhr»، «Am Dienstag und Donnerstag sind wir auch von 15 bis 19 Uhr da» و «Zwischen Weihnachten und Neujahr ist die Praxis geschlossen.»"}
+{"type":"find","prompt":"کدام جمله می‌گوید نسخه را کجا می‌دهند؟","correct_sentence":6,"explanation_fa":"در متن آمده: «Das Rezept bekommen Sie nach dem Termin an der Anmeldung.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Bitte machen Sie immer einen {{1}}. Dann müssen Sie nicht lange im {{2}} warten.","bank":["Termin","Wartezimmer","Rezept","Praxis","Feiertage"],"answers":["Termin","Wartezimmer"],"explanation_fa":"در متن آمده: «Bitte machen Sie immer einen Termin. Dann müssen Sie nicht lange im Wartezimmer warten.»"}
+listening A:
+{"type":"num","prompt":"مطب صبح‌ها تا ساعت چند باز است؟","answer":"13","accepted":["13","13 Uhr","13:00","dreizehn"],"explanation_fa":"گفته می‌شود: «Montag bis Freitag von 8 bis 13 Uhr»."}
+{"type":"mcq","prompt":"دندان‌پزشک کدام روزها عصر هم کار می‌کند؟","options":["دوشنبه و چهارشنبه","چهارشنبه و جمعه","دوشنبه و جمعه","سه‌شنبه و پنجشنبه"],"correct":3,"explanation_fa":"گفته می‌شود: «Am Dienstag und Donnerstag sind wir auch von 15 bis 19 Uhr da.»"}
+{"type":"tf","prompt":"بین کریسمس و سال نو، دندان‌پزشک دیگری کمک می‌کند.","correct":true,"explanation_fa":"گفته می‌شود: «Dann hilft Ihnen Zahnarzt Tom Becker am Bahnhof.»"}
+{"type":"tf","prompt":"همه می‌توانند هر وقت خواستند بدون وقت قبلی بیایند.","correct":false,"explanation_fa":"گفته می‌شود: «Bitte machen Sie immer einen Termin»؛ فقط با درد شدید می‌شود ساعت ۸ بدون وقت آمد."}
+listening B:
+{"type":"num","prompt":"کسی که درد شدید دارد ساعت چند بیاید؟","answer":"8","accepted":["8","8 Uhr","8:00","acht"],"explanation_fa":"گفته می‌شود: «Dann kommen Sie ohne Termin um 8 Uhr.»"}
+{"type":"tf","prompt":"مطب بین کریسمس و سال نو باز است.","correct":false,"explanation_fa":"گفته می‌شود: «Zwischen Weihnachten und Neujahr ist die Praxis geschlossen.»"}
+{"type":"tf","prompt":"نسخه را بعد از ویزیت در پذیرش می‌دهند.","correct":true,"explanation_fa":"گفته می‌شود: «Das Rezept bekommen Sie nach dem Termin an der Anmeldung.»"}
+{"type":"mcq","prompt":"اسم دندان‌پزشکی که در تعطیلات کمک می‌کند چیست؟","options":["لیلا کریمی","لیزا وبر","تام بکر","پتر واگنر"],"correct":2,"explanation_fa":"گفته می‌شود: «Dann hilft Ihnen Zahnarzt Tom Becker am Bahnhof.»"}

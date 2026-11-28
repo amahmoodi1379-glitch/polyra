@@ -1,0 +1,35 @@
+code: de-a2-t084
+title: Heute kein Unterricht für Reza
+band: 2
+kind: phone_call
+key_words: Sprachkurs, Erkältung, Tafel, Ergebnis, Wissen
+sentences:
+A: Guten Morgen, Frau Becker. Hier ist Reza Karimi aus Ihrem Sprachkurs. | صبح بخیر، خانم بکر. رضا کریمی هستم، از کلاس زبانتان.
+A: Leider bin ich krank und kann heute nicht zum Unterricht kommen. | متأسفانه بیمارم و امروز نمی‌توانم سر کلاس بیایم.
+B: Oh, das tut mir leid! Haben Sie Fieber? | اوه، متأسفم! تب دارید؟
+A: Ja, ein bisschen. Es ist nur eine Erkältung, aber ich bleibe lieber zu Hause. | بله، کمی. فقط سرماخوردگی است، ولی ترجیح می‌دهم در خانه بمانم.
+B: Gute Besserung! Wir wiederholen heute die Grammatik für die Prüfung. | زود خوب شوید! امروز دستور زبان را برای امتحان مرور می‌کنیم.
+B: Ich schreibe alles an die Tafel und schicke Ihnen ein Foto. | همه‌چیز را روی تخته می‌نویسم و یک عکس برایتان می‌فرستم.
+A: Danke, das ist sehr nett. Haben Sie schon die Ergebnisse vom Test? | ممنون، خیلی لطف دارید. نتیجه‌های آزمون را دارید؟
+B: Ja. Ihr{Ihr-det} Ergebnis ist sehr gut, Sie haben nur zwei Fehler gemacht. | بله. نتیجهٔ شما خیلی خوب است، فقط دو اشتباه داشتید.
+A: Dann kann ich am Freitag die Prüfung machen, oder? | پس جمعه می‌توانم امتحان بدهم، نه؟
+B: Natürlich. Ihr{Ihr-det} Wissen ist gut genug. Aber zuerst müssen Sie gesund werden! | حتماً. دانش شما کافی است. ولی اول باید خوب شوید!
+reading A:
+{"type":"mcq","prompt":"رضا چرا به خانم بکر زنگ می‌زند؟","options":["می‌خواهد کلاسش را عوض کند","امروز نمی‌تواند سر کلاس بیاید","نتیجهٔ امتحانش را نمی‌داند","می‌خواهد امتحان را عقب بیندازد"],"correct":1,"explanation_fa":"رضا می‌گوید: «Leider bin ich krank und kann heute nicht zum Unterricht kommen.»"}
+{"type":"tf","prompt":"رضا سرما خورده است.","correct":true,"explanation_fa":"رضا می‌گوید: «Es ist nur eine Erkältung»."}
+{"type":"tf","prompt":"امروز در کلاس درس تازه‌ای شروع می‌شود.","correct":false,"explanation_fa":"خانم بکر می‌گوید: «Wir wiederholen heute die Grammatik für die Prüfung»، یعنی دستور زبان را مرور می‌کنند."}
+{"type":"mcq","prompt":"رضا چطور می‌فهمد امروز در کلاس چه کردند؟","options":["یک همکلاسی برایش تعریف می‌کند","از کتاب درسی می‌خواند","خانم بکر عکس تخته را برایش می‌فرستد","خانم بکر به خانه‌اش می‌آید"],"correct":2,"explanation_fa":"خانم بکر می‌گوید: «Ich schreibe alles an die Tafel und schicke Ihnen ein Foto.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید نتیجهٔ آزمون رضا خوب است؟","correct_sentence":7,"explanation_fa":"خانم بکر می‌گوید: «Ihr Ergebnis ist sehr gut, Sie haben nur zwei Fehler gemacht.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Ich schreibe alles an die {{1}} und schicke Ihnen ein {{2}}.","bank":["Tafel","Foto","Fehler","Unterricht","Prüfung"],"answers":["Tafel","Foto"],"explanation_fa":"خانم بکر می‌گوید: «Ich schreibe alles an die Tafel und schicke Ihnen ein Foto.»"}
+{"type":"tf","prompt":"رضا در آزمون فقط دو اشتباه داشت.","correct":true,"explanation_fa":"خانم بکر می‌گوید: «Sie haben nur zwei Fehler gemacht.»"}
+{"type":"tf","prompt":"امتحان پنجشنبه است.","correct":false,"explanation_fa":"رضا می‌گوید: «Dann kann ich am Freitag die Prüfung machen»، یعنی امتحان جمعه است."}
+listening A:
+{"type":"num","prompt":"رضا در آزمون چند اشتباه داشت؟","answer":"2","accepted":["2","zwei"],"explanation_fa":"خانم بکر می‌گوید: «Sie haben nur zwei Fehler gemacht.»"}
+{"type":"mcq","prompt":"امتحان کی است؟","options":["پنجشنبه","شنبه","جمعه","دوشنبه"],"correct":2,"explanation_fa":"رضا می‌گوید: «Dann kann ich am Freitag die Prüfung machen»."}
+{"type":"tf","prompt":"رضا اصلاً تب ندارد.","correct":false,"explanation_fa":"خانم بکر می‌پرسد: «Haben Sie Fieber?» و رضا می‌گوید: «Ja, ein bisschen.»"}
+{"type":"tf","prompt":"خانم بکر برای رضا یک عکس می‌فرستد.","correct":true,"explanation_fa":"خانم بکر می‌گوید: «Ich ... schicke Ihnen ein Foto.»"}
+listening B:
+{"type":"mcq","prompt":"خانم بکر دربارهٔ دانش رضا چه می‌گوید؟","options":["باید بیشتر تمرین کند","دستور زبانش ضعیف است","باید به کلاس دیگری برود","برای امتحان کافی است"],"correct":3,"explanation_fa":"خانم بکر می‌گوید: «Ihr Wissen ist gut genug.»"}
+{"type":"tf","prompt":"امروز در کلاس دستور زبان را مرور می‌کنند.","correct":true,"explanation_fa":"خانم بکر می‌گوید: «Wir wiederholen heute die Grammatik für die Prüfung.»"}
+{"type":"tf","prompt":"رضا امروز سر کلاس می‌رود.","correct":false,"explanation_fa":"رضا می‌گوید: «kann heute nicht zum Unterricht kommen» و «ich bleibe lieber zu Hause»."}

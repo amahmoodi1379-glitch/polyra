@@ -1,0 +1,41 @@
+code: de-a2-t090
+title: Ein Tag in den Bergen
+band: 2
+kind: email
+placement: yes
+key_words: schwitzen, Wolke, frieren, um Hilfe bitten, vorsichtig
+sentences:
+- Hallo Mina, | سلام مینا،
+- am Sonntag war ich mit Ben in den Bergen. | یکشنبه با بن در کوه بودم.
+- Zuerst war es sehr heiß, und wir haben viel geschwitzt. | اول هوا خیلی گرم بود و خیلی عرق کردیم.
+- Am Mittag kamen plötzlich dunkle Wolken, und es wurde kalt. | ظهر ناگهان ابرهای تیره آمد و هوا سرد شد.
+- Ich hatte nur ein T-Shirt und habe sehr gefroren. | فقط یک تی‌شرت تنم بود و خیلی سردم شد.
+- Ben hat mir seine Jacke gegeben. | بن کاپشنش را به من داد.
+- «Mir ist schlecht», hat Ben dann gesagt. | بعد بن گفت: «حالم بد است.»
+- Er musste sich setzen. | مجبور شد بنشیند.
+- Zum Glück kam ein Mann vorbei, und ich habe ihn um Hilfe gebeten. | خوشبختانه مردی از آنجا رد شد و از او کمک خواستم.
+- Er hat uns heißen Tee gegeben, und wir haben eine Pause gemacht. | به ما چای داغ داد و کمی استراحت کردیم.
+- Dann sind wir zusammen langsam und vorsichtig nach unten gegangen. | بعد با هم آهسته و با احتیاط پایین آمدیم.
+- Also Vorsicht in den Bergen, und nimm immer eine warme Jacke mit! | پس در کوه مواظب باش و همیشه یک کاپشن گرم همراهت ببر!
+- Bis bald, deine Leila | به امید دیدار، لیلا
+reading A:
+{"type":"mcq","prompt":"لیلا در این ایمیل دربارهٔ چه چیزی می‌نویسد؟","options":["یک سفر به کنار دریا","یک روز سخت در کوه","یک روز کاری با بن","یک مهمانی در روز یکشنبه"],"correct":1,"explanation_fa":"لیلا می‌نویسد: «am Sonntag war ich mit Ben in den Bergen» و بعد از سرما و حال بد بن تعریف می‌کند."}
+{"type":"tf","prompt":"اول روز هوا خیلی گرم بود.","correct":true,"explanation_fa":"لیلا می‌نویسد: «Zuerst war es sehr heiß»."}
+{"type":"tf","prompt":"لیلا یک کاپشن گرم همراه داشت.","correct":false,"explanation_fa":"لیلا می‌نویسد: «Ich hatte nur ein T-Shirt» و «Ben hat mir seine Jacke gegeben.»"}
+{"type":"order","prompt":"اتفاق‌ها را به ترتیب بچین.","items":["مردی به آن‌ها چای داغ داد","ابرهای تیره آمد","بن گفت حالش بد است","خیلی عرق کردند"],"correct_order":[3,1,2,0],"explanation_fa":"اول «wir haben viel geschwitzt»، بعد «kamen plötzlich dunkle Wolken»، بعد «Mir ist schlecht» و آخر «Er hat uns heißen Tee gegeben»."}
+{"type":"mcq","prompt":"لیلا در آخر به مینا چه می‌گوید؟","options":["هیچ‌وقت تنها به کوه نرود","تلفنش را همراه ببرد","همیشه یک کاپشن گرم همراه ببرد","یکشنبه به کوه نرود"],"correct":2,"explanation_fa":"لیلا می‌نویسد: «nimm immer eine warme Jacke mit!»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید لیلا از کسی کمک خواست؟","correct_sentence":8,"explanation_fa":"لیلا می‌نویسد: «Zum Glück kam ein Mann vorbei, und ich habe ihn um Hilfe gebeten.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Ich hatte nur ein T-Shirt und habe sehr {{1}}. Ben hat mir seine {{2}} gegeben.","bank":["gefroren","Jacke","gebeten","Tee","Wolken"],"answers":["gefroren","Jacke"],"explanation_fa":"لیلا می‌نویسد: «Ich hatte nur ein T-Shirt und habe sehr gefroren. Ben hat mir seine Jacke gegeben.»"}
+{"type":"match","prompt":"هر کس را به کاری که کرد وصل کن.","left":["بن","لیلا","مرد"],"right":["چای داغ داد","از مرد کمک خواست","کاپشنش را داد","تنها پایین رفت"],"pairs":[[0,2],[1,1],[2,0]],"explanation_fa":"لیلا می‌نویسد: «Ben hat mir seine Jacke gegeben»، «ich habe ihn um Hilfe gebeten» و «Er hat uns heißen Tee gegeben»."}
+listening A:
+{"type":"mcq","prompt":"ظهر چه اتفاقی افتاد؟","options":["باران شدیدی آمد","بن زمین خورد","آن‌ها راه را گم کردند","ابرهای تیره آمد و هوا سرد شد"],"correct":3,"explanation_fa":"لیلا می‌گوید: «Am Mittag kamen plötzlich dunkle Wolken, und es wurde kalt.»"}
+{"type":"tf","prompt":"بن کاپشنش را به لیلا داد.","correct":true,"explanation_fa":"لیلا می‌گوید: «Ben hat mir seine Jacke gegeben.»"}
+{"type":"tf","prompt":"لیلا با تلفن کمک خواست.","correct":false,"explanation_fa":"لیلا با تلفن کمک نخواست؛ می‌گوید: «Zum Glück kam ein Mann vorbei, und ich habe ihn um Hilfe gebeten.»"}
+{"type":"tf","prompt":"آن‌ها با احتیاط پایین آمدند.","correct":true,"explanation_fa":"لیلا می‌گوید: «Dann sind wir zusammen langsam und vorsichtig nach unten gegangen.»"}
+{"type":"mcq","prompt":"مرد به آن‌ها چه داد؟","options":["آب","چای داغ","شکلات","کاپشن"],"correct":1,"explanation_fa":"لیلا می‌گوید: «Er hat uns heißen Tee gegeben»."}
+listening B:
+{"type":"mcq","prompt":"لیلا کدام روز در کوه بود؟","options":["یکشنبه","شنبه","جمعه","دوشنبه"],"correct":0,"explanation_fa":"لیلا می‌گوید: «am Sonntag war ich mit Ben in den Bergen»."}
+{"type":"tf","prompt":"بن گفت حالش بد است.","correct":true,"explanation_fa":"بن گفت: «Mir ist schlecht.»"}
+{"type":"tf","prompt":"لیلا تنها به کوه رفت.","correct":false,"explanation_fa":"لیلا می‌گوید: «am Sonntag war ich mit Ben in den Bergen»."}
+{"type":"order","prompt":"اتفاق‌ها را به ترتیب بچین.","items":["بن کاپشنش را به لیلا داد","هوا خیلی گرم بود","از یک مرد کمک خواستند","با احتیاط پایین آمدند"],"correct_order":[1,0,2,3],"explanation_fa":"اول «Zuerst war es sehr heiß»، بعد «Ben hat mir seine Jacke gegeben»، بعد «ich habe ihn um Hilfe gebeten» و آخر «nach unten gegangen»."}

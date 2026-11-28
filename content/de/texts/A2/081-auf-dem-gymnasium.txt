@@ -1,0 +1,36 @@
+code: de-a2-t081
+title: Auf dem Gymnasium
+band: 2
+kind: email
+key_words: Gymnasium, Grundschule, Unterricht, Fach, Kunst
+sentences:
+- Hallo Oma, | سلام مامان‌بزرگ،
+- jetzt bin ich schon zwei Wochen auf dem Gymnasium! | حالا دیگر دو هفته است که به دبیرستان می‌روم!
+- Die Grundschule war nur fünf Minuten von unserem Haus, aber jetzt fahre ich jeden Tag mit dem Bus. | دبستان فقط پنج دقیقه با خانه‌مان فاصله داشت، ولی حالا هر روز با اتوبوس می‌روم.
+- Der Unterricht beginnt um 7:45 Uhr. Das ist sehr früh für mich! | کلاس‌ها ساعت ۷:۴۵ شروع می‌شود. برای من خیلی زود است! | tts: Der Unterricht beginnt um sieben Uhr fünfundvierzig. Das ist sehr früh für mich!
+- Wir haben jetzt viele Fächer, auch Englisch und Geschichte{Geschichte-2}. | حالا درس‌های زیادی داریم، انگلیسی و تاریخ هم.
+- Kunst mag ich am liebsten. Unsere Bilder hängen jetzt im Flur. | از همه بیشتر هنر را دوست دارم. نقاشی‌هایمان حالا در راهرو آویزان است.
+- Mathematik ist leider schwer. Gestern hatten wir einen Test, und ich habe viele Fehler gemacht. | ریاضی متأسفانه سخت است. دیروز امتحان داشتیم و خیلی غلط داشتم.
+- Papa hilft mir jetzt jeden Abend. | بابا حالا هر شب کمکم می‌کند.
+- In Geschichte{Geschichte-2} erzählt uns der Lehrer oft eine Geschichte von früher. | در درس تاریخ، معلم اغلب برایمان داستانی از قدیم تعریف می‌کند.
+- Besuchst du uns bald? | به‌زودی به دیدنمان می‌آیی؟
+- Deine Emma | نوه‌ات، اِما
+reading A:
+{"type":"mcq","prompt":"اِما کدام درس را از همه بیشتر دوست دارد؟","options":["ریاضی","تاریخ","انگلیسی","هنر"],"correct":3,"explanation_fa":"اِما می‌نویسد: «Kunst mag ich am liebsten.»"}
+{"type":"tf","prompt":"اِما حالا با اتوبوس به مدرسه می‌رود.","correct":true,"explanation_fa":"اِما می‌نویسد: «jetzt fahre ich jeden Tag mit dem Bus»."}
+{"type":"tf","prompt":"کلاس‌ها ساعت ۸:۴۵ شروع می‌شود.","correct":false,"explanation_fa":"اِما می‌نویسد: «Der Unterricht beginnt um 7:45 Uhr.»"}
+{"type":"mcq","prompt":"حالا هر شب چه کسی به اِما کمک می‌کند؟","options":["مامان","بابا","معلم","مامان‌بزرگ"],"correct":1,"explanation_fa":"اِما می‌نویسد: «Papa hilft mir jetzt jeden Abend.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید دبستان نزدیک خانه بود؟","correct_sentence":2,"explanation_fa":"اِما می‌نویسد: «Die Grundschule war nur fünf Minuten von unserem Haus»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Wir haben jetzt viele {{1}}, auch Englisch und Geschichte. Unsere {{2}} hängen jetzt im Flur.","bank":["Fächer","Bilder","Unterricht","Grundschule","Test"],"answers":["Fächer","Bilder"],"explanation_fa":"اِما می‌نویسد: «Wir haben jetzt viele Fächer» و «Unsere Bilder hängen jetzt im Flur.»"}
+{"type":"order","prompt":"این چیزها را به همان ترتیبی بچین که اِما در ایمیلش نوشته است.","items":["امتحان ریاضی","درس هنر","ساعت شروع کلاس‌ها","داستان معلم تاریخ"],"correct_order":[2,1,0,3],"explanation_fa":"اِما اول از «Der Unterricht beginnt um 7:45 Uhr» می‌نویسد، بعد از «Kunst»، بعد از «einen Test» در ریاضی و آخر از داستان‌های معلم تاریخ."}
+listening A:
+{"type":"num","prompt":"کلاس‌ها ساعت چند شروع می‌شود؟","answer":"7:45","accepted":["7:45","7.45","sieben Uhr fünfundvierzig","Viertel vor acht"],"explanation_fa":"اِما می‌گوید: «Der Unterricht beginnt um 7:45 Uhr.»"}
+{"type":"mcq","prompt":"اِما چند وقت است که به مدرسهٔ تازه می‌رود؟","options":["دو ماه","پنج روز","دو هفته","پنج هفته"],"correct":2,"explanation_fa":"اِما می‌گوید: «jetzt bin ich schon zwei Wochen auf dem Gymnasium»."}
+{"type":"tf","prompt":"نقاشی‌های بچه‌ها در راهرو آویزان است.","correct":true,"explanation_fa":"اِما می‌گوید: «Unsere Bilder hängen jetzt im Flur.»"}
+{"type":"tf","prompt":"اِما در امتحان ریاضی هیچ غلطی نداشت.","correct":false,"explanation_fa":"اِما می‌گوید: «ich habe viele Fehler gemacht»."}
+listening B:
+{"type":"num","prompt":"دبستان چند دقیقه با خانهٔ اِما فاصله داشت؟","answer":"5","accepted":["5","fünf"],"explanation_fa":"اِما می‌گوید: «Die Grundschule war nur fünf Minuten von unserem Haus»."}
+{"type":"tf","prompt":"معلم تاریخ اغلب برای بچه‌ها داستان تعریف می‌کند.","correct":true,"explanation_fa":"اِما می‌گوید: «In Geschichte erzählt uns der Lehrer oft eine Geschichte von früher.»"}
+{"type":"tf","prompt":"اِما ریاضی را آسان می‌داند.","correct":false,"explanation_fa":"اِما می‌گوید: «Mathematik ist leider schwer.»"}
+{"type":"mcq","prompt":"بابا کی به اِما کمک می‌کند؟","options":["هر صبح","آخر هفته‌ها","هر ظهر","هر شب"],"correct":3,"explanation_fa":"اِما می‌گوید: «Papa hilft mir jetzt jeden Abend.»"}

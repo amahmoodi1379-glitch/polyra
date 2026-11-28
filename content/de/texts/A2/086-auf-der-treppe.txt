@@ -1,0 +1,36 @@
+code: de-a2-t086
+title: Ein Unfall auf der Treppe
+band: 2
+kind: email
+key_words: verletzt, Blut, Knie, Schulter, Finger
+sentences:
+- Hallo Julia, | سلام جولیا،
+- ich hatte gestern einen kleinen Unfall. | دیروز یک حادثهٔ کوچک برایم پیش آمد.
+- Ich bin mit der Wäsche auf der Treppe gefallen{fallen}. | با لباس‌های شسته روی پله‌ها زمین خوردم.
+- Mein Knie war verletzt, und es gab viel Blut. | زانویم زخمی شده بود و خون زیادی آمد.
+- Zum Glück ist mein Nachbar Krankenpfleger, und er hat mir sofort geholfen. | خوشبختانه همسایه‌ام پرستار است و فوراً کمکم کرد.
+- Heute tut mir auch die Schulter weh, und zwei Finger sind ganz blau. | امروز شانه‌ام هم درد می‌کند و دو تا از انگشت‌هایم کاملاً کبود شده‌اند.
+- Ich kann nicht gut laufen und muss ein paar Tage zu Hause bleiben. | نمی‌توانم خوب راه بروم و باید چند روز در خانه بمانم.
+- Kannst du morgen und am Samstag mit meinem Hund spazieren gehen? | می‌توانی فردا و شنبه سگم را بیرون ببری؟
+- Den Schlüssel hat mein Nachbar, Herr Schulz. Er wohnt im Erdgeschoss. | کلید پیش همسایه‌ام، آقای شولتس است. او در طبقهٔ همکف زندگی می‌کند.
+- Danke! Nächste Woche koche ich für dich. | ممنون! هفتهٔ بعد برایت غذا درست می‌کنم.
+- Deine Lisa | لیزا
+reading A:
+{"type":"mcq","prompt":"لیزا در این ایمیل از جولیا چه می‌خواهد؟","options":["برایش غذا درست کند","سگش را بیرون ببرد","او را پیش دکتر ببرد","کلیدش را پیدا کند"],"correct":1,"explanation_fa":"لیزا می‌نویسد: «Kannst du morgen und am Samstag mit meinem Hund spazieren gehen?»"}
+{"type":"tf","prompt":"لیزا روی پله‌ها زمین خورد.","correct":true,"explanation_fa":"لیزا می‌نویسد: «Ich bin mit der Wäsche auf der Treppe gefallen.»"}
+{"type":"tf","prompt":"همسایهٔ لیزا پزشک است.","correct":false,"explanation_fa":"لیزا می‌نویسد: «mein Nachbar ist Krankenpfleger»، یعنی پرستار است."}
+{"type":"mcq","prompt":"امروز کدام جای بدن لیزا هم درد می‌کند؟","options":["کمرش","شانه‌اش","سرش","گردنش"],"correct":1,"explanation_fa":"لیزا می‌نویسد: «Heute tut mir auch die Schulter weh»."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید کلید پیش چه کسی است؟","correct_sentence":8,"explanation_fa":"لیزا می‌نویسد: «Den Schlüssel hat mein Nachbar, Herr Schulz.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Heute tut mir auch die {{1}} weh, und zwei {{2}} sind ganz blau.","bank":["Schulter","Finger","Hund","Blut","Nachbar"],"answers":["Schulter","Finger"],"explanation_fa":"لیزا می‌نویسد: «Heute tut mir auch die Schulter weh, und zwei Finger sind ganz blau.»"}
+{"type":"tf","prompt":"لیزا هفتهٔ بعد برای جولیا غذا درست می‌کند.","correct":true,"explanation_fa":"لیزا می‌نویسد: «Nächste Woche koche ich für dich.»"}
+{"type":"tf","prompt":"لیزا می‌تواند خوب راه برود.","correct":false,"explanation_fa":"لیزا می‌نویسد: «Ich kann nicht gut laufen»."}
+listening A:
+{"type":"mcq","prompt":"لیزا کجا زمین خورد؟","options":["در حمام","در خیابان","در آشپزخانه","روی پله‌ها"],"correct":3,"explanation_fa":"لیزا می‌گوید: «Ich bin mit der Wäsche auf der Treppe gefallen.»"}
+{"type":"num","prompt":"چند تا از انگشت‌های لیزا کبود شده‌اند؟","answer":"2","accepted":["2","zwei"],"explanation_fa":"لیزا می‌گوید: «zwei Finger sind ganz blau»."}
+{"type":"tf","prompt":"همسایهٔ لیزا فوراً به او کمک کرد.","correct":true,"explanation_fa":"لیزا می‌گوید: «er hat mir sofort geholfen»."}
+{"type":"tf","prompt":"لیزا دیروز با ماشین تصادف کرد.","correct":false,"explanation_fa":"لیزا با ماشین تصادف نکرد؛ می‌گوید: «Ich bin mit der Wäsche auf der Treppe gefallen.»"}
+listening B:
+{"type":"mcq","prompt":"جولیا کی باید سگ را بیرون ببرد؟","options":["امروز و فردا","شنبه و یکشنبه","فردا و شنبه","فقط یکشنبه"],"correct":2,"explanation_fa":"لیزا می‌پرسد: «Kannst du morgen und am Samstag mit meinem Hund spazieren gehen?»"}
+{"type":"tf","prompt":"همسایهٔ لیزا در طبقهٔ همکف زندگی می‌کند.","correct":true,"explanation_fa":"لیزا می‌گوید: «Er wohnt im Erdgeschoss.»"}
+{"type":"tf","prompt":"از زانوی لیزا خون نیامد.","correct":false,"explanation_fa":"لیزا می‌گوید: «Mein Knie war verletzt, und es gab viel Blut.»"}

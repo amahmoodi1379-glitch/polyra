@@ -1,0 +1,35 @@
+code: de-a2-t076
+title: Endlich eine Stelle
+band: 2
+kind: email
+key_words: arbeitslos, einen Vertrag unterschreiben, Arbeitszeit, Gehalt, Lohn
+sentences:
+- Hallo Sara, | سلام سارا،
+- ich habe endlich eine Stelle! | بالاخره کار پیدا کردم!
+- Sechs Monate war ich arbeitslos, und gestern habe ich einen Vertrag unterschrieben. | شش ماه بیکار بودم و دیروز یک قرارداد امضا کردم.
+- Ab Montag arbeite ich als Verkäuferin in einer Buchhandlung in Bremen. | از دوشنبه در یک کتاب‌فروشی در برمن فروشنده‌ام.
+- Meine Arbeitszeit ist von 9 bis 15 Uhr, also habe ich am Nachmittag frei. | ساعت کارم از ۹ تا ۱۵ است، پس بعدازظهرها آزادم. | tts: Meine Arbeitszeit ist von neun bis fünfzehn Uhr, also habe ich am Nachmittag frei.
+- Das Gehalt ist gut. Ich bekomme 2100 Euro im Monat. | حقوقش خوب است. ماهی ۲۱۰۰ یورو می‌گیرم. | tts: Das Gehalt ist gut. Ich bekomme zweitausendeinhundert Euro im Monat.
+- Früher habe ich in einem Kiosk gearbeitet, aber der Lohn war schlecht, und ich habe nur wenig Geld verdient. | قبلاً در یک دکه کار می‌کردم، ولی دستمزدش بد بود و پول کمی درمی‌آوردم.
+- Der Chef hat meinen Lebenslauf gelesen. Meine Erfahrung im Kiosk hat ihm gefallen. | رئیس رزومه‌ام را خواند. تجربه‌ام در دکه به نظرش خوب آمد.
+- Im Sommer kann ich zwei Wochen Urlaub nehmen. Dann besuche ich dich in Wien. | تابستان می‌توانم دو هفته مرخصی بگیرم. آن‌وقت در وین به دیدنت می‌آیم.
+- Bis bald, deine Mina | به امید دیدار، مینا
+reading A:
+{"type":"mcq","prompt":"مینا در این ایمیل چه خبری به سارا می‌دهد؟","options":["به شهر وین می‌رود","کار تازه‌ای پیدا کرده است","یک کتاب‌فروشی خریده است","از کارش در دکه راضی است"],"correct":1,"explanation_fa":"مینا می‌نویسد: «ich habe endlich eine Stelle!»، یعنی بالاخره کار پیدا کرده است."}
+{"type":"tf","prompt":"مینا پیش از این کار، شش ماه بیکار بود.","correct":true,"explanation_fa":"مینا می‌نویسد: «Sechs Monate war ich arbeitslos»."}
+{"type":"tf","prompt":"مینا صبح‌ها آزاد است.","correct":false,"explanation_fa":"مینا می‌نویسد: «Meine Arbeitszeit ist von 9 bis 15 Uhr»؛ پس صبح‌ها کار می‌کند و بعدازظهرها آزاد است."}
+{"type":"mcq","prompt":"کار در دکه چه مشکلی داشت؟","options":["ساعت کارش خیلی زیاد بود","رئیسش مهربان نبود","دستمزدش بد بود","از خانه خیلی دور بود"],"correct":2,"explanation_fa":"مینا می‌نویسد: «der Lohn war schlecht, und ich habe nur wenig Geld verdient»."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید مینا کی می‌تواند مرخصی بگیرد؟","correct_sentence":8,"explanation_fa":"مینا می‌نویسد: «Im Sommer kann ich zwei Wochen Urlaub nehmen.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Sechs Monate war ich {{1}}, und gestern habe ich einen {{2}} unterschrieben.","bank":["arbeitslos","Vertrag","Lohn","Buchhandlung","Kiosk"],"answers":["arbeitslos","Vertrag"],"explanation_fa":"مینا می‌نویسد: «Sechs Monate war ich arbeitslos, und gestern habe ich einen Vertrag unterschrieben.»"}
+{"type":"match","prompt":"هر چیز را به اطلاعات درستش در ایمیل وصل کن.","left":["حقوق ماهانه","ساعت کار","مرخصی"],"right":["دو هفته در تابستان","۲۱۰۰ یورو","شش ماه","از ۹ تا ۱۵"],"pairs":[[0,1],[1,3],[2,0]],"explanation_fa":"مینا می‌نویسد: «Ich bekomme 2100 Euro im Monat»، «von 9 bis 15 Uhr» و «Im Sommer kann ich zwei Wochen Urlaub nehmen»."}
+listening A:
+{"type":"num","prompt":"مینا ماهی چند یورو حقوق می‌گیرد؟","answer":"2100","accepted":["2100","2.100","2100 Euro","zweitausendeinhundert"],"explanation_fa":"مینا می‌گوید: «Ich bekomme 2100 Euro im Monat.»"}
+{"type":"mcq","prompt":"مینا از دوشنبه کجا کار می‌کند؟","options":["در یک دکه","در یک سوپرمارکت","در یک کتابخانه","در یک کتاب‌فروشی"],"correct":3,"explanation_fa":"مینا می‌گوید: «Ab Montag arbeite ich als Verkäuferin in einer Buchhandlung»."}
+{"type":"tf","prompt":"کتاب‌فروشی در شهر وین است.","correct":false,"explanation_fa":"مینا می‌گوید: «in einer Buchhandlung in Bremen»؛ وین شهری است که سارا در آن زندگی می‌کند."}
+{"type":"tf","prompt":"رئیس رزومهٔ مینا را خوانده است.","correct":true,"explanation_fa":"مینا می‌گوید: «Der Chef hat meinen Lebenslauf gelesen.»"}
+listening B:
+{"type":"num","prompt":"کار مینا ساعت چند تمام می‌شود؟","answer":"15","accepted":["15","15 Uhr","15:00","fünfzehn"],"explanation_fa":"مینا می‌گوید: «Meine Arbeitszeit ist von 9 bis 15 Uhr»."}
+{"type":"tf","prompt":"مینا دیروز قرارداد را امضا کرد.","correct":true,"explanation_fa":"مینا می‌گوید: «gestern habe ich einen Vertrag unterschrieben»."}
+{"type":"tf","prompt":"مینا در دکه پول خوبی درمی‌آورد.","correct":false,"explanation_fa":"مینا می‌گوید: «der Lohn war schlecht, und ich habe nur wenig Geld verdient»."}
+{"type":"mcq","prompt":"مینا در تابستان چه کار می‌کند؟","options":["در دکه کار می‌کند","به برمن برمی‌گردد","به یک کلاس تازه می‌رود","به دیدن سارا می‌رود"],"correct":3,"explanation_fa":"مینا می‌گوید: «Im Sommer kann ich zwei Wochen Urlaub nehmen. Dann besuche ich dich in Wien.»"}

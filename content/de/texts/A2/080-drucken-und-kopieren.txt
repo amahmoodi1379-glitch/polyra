@@ -1,0 +1,31 @@
+code: de-a2-t080
+title: Drucken und kopieren
+band: 1
+kind: dialogue
+key_words: ausdrucken, Drucker, Kopie, kopieren, Unterlagen
+sentences:
+A: Entschuldigung, kann ich hier etwas ausdrucken? Mein Drucker zu Hause funktioniert nicht. | ببخشید، می‌توانم اینجا چیزی پرینت بگیرم؟ پرینتر خانه‌ام کار نمی‌کند.
+B: Ja, natürlich. Eine Seite kostet 20 Cent. | بله، حتماً. هر صفحه ۲۰ سنت است. | tts: Ja, natürlich. Eine Seite kostet zwanzig Cent.
+A: Gut. Und ich brauche zwei Kopien von meinem Pass. | خوب. دو تا کپی هم از پاسپورتم لازم دارم.
+B: Kein Problem, ich kopiere ihn gleich. Sind das Unterlagen für eine Bewerbung? | مشکلی نیست، همین الان کپی‌اش می‌کنم. این‌ها مدارک درخواست کار است؟
+A: Ja, morgen habe ich einen Termin bei einer Firma. | بله، فردا در یک شرکت قرار ملاقات دارم.
+B: Dann viel Erfolg! | پس موفق باشید!
+reading A:
+{"type":"mcq","prompt":"چرا مشتری می‌خواهد اینجا پرینت بگیرد؟","options":["پرینت اینجا ارزان‌تر است","کامپیوتر ندارد","پرینتر خانه‌اش کار نمی‌کند","اینجا کار می‌کند"],"correct":2,"explanation_fa":"مشتری می‌گوید: «Mein Drucker zu Hause funktioniert nicht.»"}
+{"type":"tf","prompt":"هر صفحه ۲۰ سنت است.","correct":true,"explanation_fa":"گفته می‌شود: «Eine Seite kostet 20 Cent.»"}
+{"type":"tf","prompt":"مشتری از کارنامه‌اش کپی می‌خواهد.","correct":false,"explanation_fa":"مشتری می‌گوید: «ich brauche zwei Kopien von meinem Pass»، یعنی از پاسپورتش."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید مشتری فردا کجا می‌رود؟","correct_sentence":4,"explanation_fa":"مشتری می‌گوید: «morgen habe ich einen Termin bei einer Firma»."}
+{"type":"mcq","prompt":"این مدارک برای چیست؟","options":["برای ثبت‌نام در دانشگاه","برای درخواست کار","برای گرفتن ویزا","برای کلاس زبان"],"correct":1,"explanation_fa":"گفته می‌شود: «Sind das Unterlagen für eine Bewerbung?» و مشتری می‌گوید: «Ja»."}
+{"type":"tf","prompt":"پاسپورت را همین الان کپی می‌کنند.","correct":true,"explanation_fa":"گفته می‌شود: «ich kopiere ihn gleich»."}
+{"type":"tf","prompt":"مشتری امروز در یک شرکت قرار دارد.","correct":false,"explanation_fa":"مشتری می‌گوید: «morgen habe ich einen Termin bei einer Firma»، یعنی فردا."}
+listening A:
+{"type":"num","prompt":"هر صفحه چند سنت است؟","answer":"20","accepted":["20","20 Cent","zwanzig"],"explanation_fa":"گفته می‌شود: «Eine Seite kostet 20 Cent.»"}
+{"type":"tf","prompt":"مشتری فردا در یک شرکت قرار دارد.","correct":true,"explanation_fa":"مشتری می‌گوید: «morgen habe ich einen Termin bei einer Firma»."}
+{"type":"tf","prompt":"پرینتر خانهٔ مشتری خوب کار می‌کند.","correct":false,"explanation_fa":"مشتری می‌گوید: «Mein Drucker zu Hause funktioniert nicht.»"}
+{"type":"dict","sentence":2,"explanation_fa":"جمله این است: «Gut. Und ich brauche zwei Kopien von meinem Pass.»"}
+listening B:
+{"type":"mcq","prompt":"مشتری چند کپی لازم دارد؟","options":["یکی","سه تا","دو تا","چهار تا"],"correct":2,"explanation_fa":"مشتری می‌گوید: «ich brauche zwei Kopien von meinem Pass»."}
+{"type":"tf","prompt":"در آخر برای مشتری آرزوی موفقیت می‌کنند.","correct":true,"explanation_fa":"در آخر گفته می‌شود: «Dann viel Erfolg!»"}
+{"type":"tf","prompt":"کپی کردن آنجا ممکن نیست.","correct":false,"explanation_fa":"گفته می‌شود: «Kein Problem, ich kopiere ihn gleich.»"}
+{"type":"dict","sentence":4,"explanation_fa":"جمله این است: «Ja, morgen habe ich einen Termin bei einer Firma.»"}

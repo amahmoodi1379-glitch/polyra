@@ -1,0 +1,34 @@
+code: de-a2-t089
+title: Ein Kurs für den Rücken
+band: 2
+kind: phone_call
+key_words: Krankenkasse, Gesundheit, schlimm, gefährlich, Gefahr
+sentences:
+A: Guten Tag, Krankenkasse, Sie sprechen mit Peter Wagner. | روز بخیر، بیمهٔ درمانی، پتر واگنر هستم.
+B: Guten Tag, hier ist Maryam Ahmadi. Ich sitze den ganzen Tag am Computer, und mein Rücken tut oft weh. | روز بخیر، مریم احمدی هستم. تمام روز پشت کامپیوتر می‌نشینم و کمرم اغلب درد می‌کند.
+B: Mein Arzt sagt, es ist nicht schlimm, aber ich soll mehr für meine Gesundheit tun. | دکترم می‌گوید چیز بدی نیست، ولی باید بیشتر به سلامتی‌ام برسم.
+B: Ich würde gern einen Kurs machen. Bezahlen Sie das? | دلم می‌خواهد در یک کلاس شرکت کنم. هزینه‌اش را شما می‌دهید؟
+A: Ja, wir haben einen Kurs für den Rücken, jeden Mittwoch um 18 Uhr. Er ist kostenlos. | بله، یک کلاس برای کمر داریم، هر چهارشنبه ساعت ۱۸. رایگان است. | tts: Ja, wir haben einen Kurs für den Rücken, jeden Mittwoch um achtzehn Uhr. Er ist kostenlos.
+B: Super! Aber ist Sport nicht gefährlich für mich? | عالی! ولی ورزش برای من خطرناک نیست؟
+A: Nein, da gibt es keine Gefahr. Die Lehrerin ist Ärztin. | نه، هیچ خطری ندارد. معلم کلاس پزشک است.
+A: Gehen Sie aber vorher noch einmal zum Arzt. Nach dem Kurs sind Sie bestimmt wieder fit! | ولی قبلش یک بار دیگر پیش دکتر بروید. بعد از کلاس حتماً دوباره سرحال می‌شوید!
+B: Danke! Könnten Sie mir die Informationen schicken? | ممنون! می‌شود اطلاعات را برایم بفرستید؟
+A: Gern, ich schicke Ihnen heute eine E-Mail. | با کمال میل، امروز برایتان یک ایمیل می‌فرستم.
+reading A:
+{"type":"mcq","prompt":"خانم احمدی چرا به بیمه زنگ می‌زند؟","options":["می‌خواهد دکترش را عوض کند","کارت بیمه‌اش را گم کرده است","می‌خواهد در یک کلاس شرکت کند","می‌خواهد وقت دکتر بگیرد"],"correct":2,"explanation_fa":"خانم احمدی می‌گوید: «Ich würde gern einen Kurs machen. Bezahlen Sie das?»"}
+{"type":"tf","prompt":"خانم احمدی تمام روز پشت کامپیوتر می‌نشیند.","correct":true,"explanation_fa":"خانم احمدی می‌گوید: «Ich sitze den ganzen Tag am Computer»."}
+{"type":"tf","prompt":"دکتر می‌گوید بیماری خانم احمدی خیلی بد است.","correct":false,"explanation_fa":"خانم احمدی می‌گوید: «Mein Arzt sagt, es ist nicht schlimm»."}
+{"type":"mcq","prompt":"معلم کلاس چه کاره است؟","options":["مربی ورزش","پزشک","پرستار","کارمند بیمه"],"correct":1,"explanation_fa":"آقای واگنر می‌گوید: «Die Lehrerin ist Ärztin.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید خانم احمدی پیش از کلاس دوباره پیش دکتر برود؟","correct_sentence":7,"explanation_fa":"آقای واگنر می‌گوید: «Gehen Sie aber vorher noch einmal zum Arzt.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Mein Arzt sagt, es ist nicht {{1}}, aber ich soll mehr für meine {{2}} tun.","bank":["schlimm","Gesundheit","Gefahr","Rücken","Kurs"],"answers":["schlimm","Gesundheit"],"explanation_fa":"خانم احمدی می‌گوید: «Mein Arzt sagt, es ist nicht schlimm, aber ich soll mehr für meine Gesundheit tun.»"}
+{"type":"match","prompt":"هر کس را به چیزی که دربارهٔ او گفته می‌شود وصل کن.","left":["خانم احمدی","آقای واگنر","معلم کلاس"],"right":["پزشک است","امروز یک ایمیل می‌فرستد","کمرش درد می‌کند","هر روز کلاس دارد"],"pairs":[[0,2],[1,1],[2,0]],"explanation_fa":"در گفتگو آمده: «mein Rücken tut oft weh»، «ich schicke Ihnen heute eine E-Mail» و «Die Lehrerin ist Ärztin»."}
+listening A:
+{"type":"num","prompt":"کلاس ساعت چند است؟","answer":"18","accepted":["18","18 Uhr","18:00","achtzehn"],"explanation_fa":"آقای واگنر می‌گوید: «jeden Mittwoch um 18 Uhr»."}
+{"type":"mcq","prompt":"کلاس کدام روز است؟","options":["دوشنبه","چهارشنبه","جمعه","شنبه"],"correct":1,"explanation_fa":"آقای واگنر می‌گوید: «jeden Mittwoch um 18 Uhr»."}
+{"type":"tf","prompt":"خانم احمدی برای کلاس پولی نمی‌دهد.","correct":true,"explanation_fa":"آقای واگنر می‌گوید: «Er ist kostenlos.»"}
+{"type":"tf","prompt":"آقای واگنر می‌گوید ورزش برای خانم احمدی خطرناک است.","correct":false,"explanation_fa":"آقای واگنر می‌گوید: «Nein, da gibt es keine Gefahr.»"}
+listening B:
+{"type":"tf","prompt":"کمر خانم احمدی اغلب درد می‌کند.","correct":true,"explanation_fa":"خانم احمدی می‌گوید: «mein Rücken tut oft weh»."}
+{"type":"tf","prompt":"آقای واگنر اطلاعات را با پست می‌فرستد.","correct":false,"explanation_fa":"آقای واگنر می‌گوید: «ich schicke Ihnen heute eine E-Mail»."}
+{"type":"mcq","prompt":"خانم احمدی در آخر از آقای واگنر چه می‌خواهد؟","options":["برایش وقت دکتر بگیرد","کلاس را عوض کند","او را پیش دکتر ببرد","اطلاعات کلاس را برایش بفرستد"],"correct":3,"explanation_fa":"خانم احمدی می‌پرسد: «Könnten Sie mir die Informationen schicken?»"}
