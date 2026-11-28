@@ -1,0 +1,39 @@
+code: fr-b1-d017
+title: تماس با لوله‌کش برای نشت آب
+situation: شیر آب آشپزخانه‌ات چکه می‌کند و کف آشپزخانه پر از آب شده. به یک لوله‌کش، آقای مورو، زنگ می‌زنی.
+turns:
+B: Allô, bonjour ! Monsieur Moreau, plombier. Je vous écoute. | الو، سلام! مورو هستم، لوله‌کش. بفرمایید.
+- Bonjour, monsieur. J'ai une fuite d'eau dans ma cuisine. Tu pourrais venir aujourd'hui ? | سلام، آقا. آشپزخانه‌ام آب نشت می‌کند. می‌توانی امروز بیایی؟
++ Bonjour, monsieur. J'ai une fuite d'eau dans ma cuisine. Vous pourriez venir aujourd'hui ? | سلام، آقا. آشپزخانه‌ام آب نشت می‌کند. می‌توانید امروز بیایید؟
+- Bonjour, monsieur. J'ai un fuite d'eau dans ma cuisine. Vous pourriez venir aujourd'hui ? | سلام، آقا. آشپزخانه‌ام آب نشت می‌کند. می‌توانید امروز بیایید؟
+why: با لوله‌کشی که نمی‌شناسی vous و «Vous pourriez …?» مؤدبانه است؛ tu خودمانی است. fuite مؤنث است: «une fuite»، نه «un fuite».
+B: D'accord. La fuite, elle est où, exactement ? | باشد. نشتی دقیقاً کجاست؟
+- C'est le robinet de la cuisine que coule, et il y a de l'eau partout par terre. | شیر آشپزخانه است که چکه می‌کند، و همه‌جای کف آب است.
++ C'est le robinet de la cuisine qui coule, et il y a de l'eau partout par terre. | شیر آشپزخانه است که چکه می‌کند، و همه‌جای کف آب است.
+- Ce sont le robinet de la cuisine qui coule, et il y a de l'eau partout par terre. | شیر آشپزخانه است که چکه می‌کند، و همه‌جای کف آب است.
+why: در «C'est … qui …» اسمی که برجسته می‌شود فاعل فعل بعدی است، پس qui می‌آید: «C'est le robinet qui coule»؛ que اینجا غلط است. robinet مفرد است، پس «C'est»، نه «Ce sont».
+B: Vous avez coupé{couper} l'eau ? | آب را بسته‌اید؟
++ Non, je ne sais pas comment faire. Qu'est-ce qu'il faut que je fasse ? | نه، نمی‌دانم چطور. باید چه کار کنم؟
+- Oui, je ne sais pas comment faire. Qu'est-ce qu'il faut que je fasse ? | بله، نمی‌دانم چطور. باید چه کار کنم؟
+- Non, je ne sais pas comment faire. Qu'est-ce qu'il faut que je fais ? | نه، نمی‌دانم چطور. باید چه کار کنم؟
+why: اگر نمی‌دانی چطور آب را ببندی، جوابت «Non» است، نه «Oui». بعد از «il faut que» وجه التزامی می‌آید: «que je fasse»، نه «que je fais».
+B: Cherchez un petit robinet en bas, derrière la machine à laver, et tournez-le à droite. | یک شیر کوچک پایین، پشت ماشین لباسشویی پیدا کنید و آن را به راست بچرخانید.
+- Ça y est, je lui ai tourné. L'eau ne coule plus ! | تمام شد، چرخاندمش. دیگر آب نمی‌آید!
+- Ça y est, je le tournerai. L'eau ne coule plus ! | تمام شد، می‌چرخانمش. دیگر آب نمی‌آید!
++ Ça y est, je l'ai tourné. L'eau ne coule plus ! | تمام شد، چرخاندمش. دیگر آب نمی‌آید!
+why: robinet مفعول بی‌واسطه است، پس ضمیرش l' است: «je l'ai tourné»؛ lui برای «به کسی» است. «Ça y est» یعنی کار انجام شده، پس آینده (je le tournerai) جور نیست.
+B: Parfait. Je peux passer vers seize heures. C'est à quelle adresse ? | عالی. می‌توانم حدود ساعت چهار بعدازظهر بیایم. نشانی‌تان کجاست؟
++ Au 8, rue de Rennes. C'est l'immeuble à côté duquel il y a une boulangerie. | خیابان رن، پلاک ۸. همان ساختمانی است که کنارش یک نانوایی هست. | tts: Au huit, rue de Rennes. C'est l'immeuble à côté duquel il y a une boulangerie.
+- Au 8, rue de Rennes. C'est l'immeuble à côté de lequel il y a une boulangerie. | خیابان رن، پلاک ۸. همان ساختمانی است که کنارش یک نانوایی هست. | tts: Au huit, rue de Rennes. C'est l'immeuble à côté de lequel il y a une boulangerie.
+- Au 8, rue de Rennes. C'est l'immeuble à côté de laquelle il y a une boulangerie. | خیابان رن، پلاک ۸. همان ساختمانی است که کنارش یک نانوایی هست. | tts: Au huit, rue de Rennes. C'est l'immeuble à côté de laquelle il y a une boulangerie.
+why: بعد از «à côté de»، de و lequel با هم می‌شوند duquel: «à côté duquel»؛ «de lequel» نمی‌گوییم. immeuble مذکر است، پس laquelle (مؤنث) غلط است.
+B: Très bien. Vous avez trouvé mon numéro en ligne ? | خیلی خوب. شماره‌ام را در اینترنت پیدا کردید؟
+- Non, c'est ma voisine que me l'a donné : vous avez réparé sa douche l'année dernière. | نه، همسایه‌ام آن را به من داد: پارسال دوش او را تعمیر کردید.
++ Non, c'est ma voisine qui me l'a donné : vous avez réparé sa douche l'année dernière. | نه، همسایه‌ام آن را به من داد: پارسال دوش او را تعمیر کردید.
+- Oui, c'est ma voisine qui me l'a donné : vous avez réparé sa douche l'année dernière. | بله، همسایه‌ام آن را به من داد: پارسال دوش او را تعمیر کردید.
+why: همسایه فاعل «me l'a donné» است، پس «c'est ma voisine qui»، نه que. لوله‌کش پرسید شماره را در اینترنت پیدا کرده‌ای یا نه؛ وقتی همسایه شماره را داده، جوابت «Non» است.
+B: Ah oui, madame Girard ! Bon, à seize heures, alors. En attendant, mettez des serviettes par terre. | آه بله، خانم ژیرار! خب، پس ساعت چهار. تا آن موقع چند حوله روی زمین بیندازید.
+- D'accord, c'est ce qui je vais faire. À tout à l'heure, et merci ! | باشد، همین کار را می‌کنم. تا چند ساعت دیگر، و ممنون!
++ D'accord, c'est ce que je vais faire. À tout à l'heure, et merci ! | باشد، همین کار را می‌کنم. تا چند ساعت دیگر، و ممنون!
+- D'accord, c'est ce que je vais faire. À demain, et merci ! | باشد، همین کار را می‌کنم. تا فردا، و ممنون!
+why: «ce que» مفعول «je vais faire» است، پس que، نه qui. لوله‌کش امروز ساعت چهار می‌آید، پس «À tout à l'heure»، نه «À demain».

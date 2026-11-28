@@ -1,0 +1,34 @@
+code: fr-b1-d015
+title: جا ماندن از قطار
+situation: ساعت ده و ربع صبح است. امروز عصر در تولوز مصاحبه کاری داری، ولی به خاطر اعتصاب مترو از قطار ساعت ده جا مانده‌ای. در ایستگاه قطار، جلوی باجه، با کارمند حرف می‌زنی.
+turns:
+B: Bonjour, madame. Je vous écoute. | سلام، خانم. بفرمایید.
+- Bonjour. J'ai manqué{manquer-2} le train de dix heures pour Toulouse, grâce à la grève du métro. | سلام. به لطف اعتصاب مترو از قطار ساعت ده به تولوز جا ماندم.
++ Bonjour. J'ai manqué{manquer-2} le train de dix heures pour Toulouse, à cause de la grève du métro. | سلام. به خاطر اعتصاب مترو از قطار ساعت ده به تولوز جا ماندم.
+- Bonjour. J'ai manqué{manquer-2} la train de dix heures pour Toulouse, à cause de la grève du métro. | سلام. به خاطر اعتصاب مترو از قطار ساعت ده به تولوز جا ماندم.
+why: اعتصاب دلیلی بد است، پس «à cause de»؛ «grâce à» برای دلیل خوب است. train مذکر است: «le train»، نه «la train».
+B: Ah, cette grève… Vous avez essayé de changer votre billet sur internet ? | آه، این اعتصاب… سعی کرده‌اید بلیتتان را در اینترنت عوض کنید؟
+- Oui, mais après attendre dix minutes, j'ai abandonné : le site ne marchait pas. | بله، ولی بعد از ده دقیقه انتظار ول کردم: سایت کار نمی‌کرد.
++ Oui, mais après avoir attendu dix minutes, j'ai abandonné : le site ne marchait pas. | بله، ولی بعد از اینکه ده دقیقه منتظر ماندم، ول کردم: سایت کار نمی‌کرد.
+- Oui, mais après avoir attendu dix minutes, j'abandonnerai : le site ne marchait pas. | بله، ولی بعد از اینکه ده دقیقه منتظر ماندم، ول خواهم کرد: سایت کار نمی‌کرد.
+why: بعد از après برای کاری که قبلاً تمام شده «avoir + اسم مفعول» می‌آید: «après avoir attendu»؛ «après attendre» غلط است. ول کردن هم در گذشته بوده: «j'ai abandonné»، نه آینده.
+B: D'accord. Le prochain train direct part à treize heures dix. | باشد. قطار مستقیم بعدی ساعت یک و ده دقیقه بعدازظهر حرکت می‌کند.
+- Treize heures dix ? C'est trop tard : j'ai un entretien à dix-sept heures. Il n'y en a pas un plus tard, même avec un changement ? | یک و ده دقیقه؟ خیلی دیر است: ساعت پنج عصر مصاحبه دارم. یکی دیرتر نیست، حتی با تعویض قطار؟
+- Treize heures dix ? C'est trop tard : j'ai un entretien à dix-sept heures. Il n'y a pas un plus tôt, même avec un changement ? | یک و ده دقیقه؟ خیلی دیر است: ساعت پنج عصر مصاحبه دارم. یکی زودتر نیست، حتی با تعویض قطار؟
++ Treize heures dix ? C'est trop tard : j'ai un entretien à dix-sept heures. Il n'y en a pas un plus tôt, même avec un changement ? | یک و ده دقیقه؟ خیلی دیر است: ساعت پنج عصر مصاحبه دارم. یکی زودتر نیست، حتی با تعویض قطار؟
+why: وقتی می‌گویی دیر است، قطار زودتر (plus tôt) می‌خواهی، نه دیرتر. با «un» بدون اسم، en لازم است: «Il n'y en a pas un …?»؛ بدون en جمله ناقص است.
+B: Si, il y en a un à onze heures trente, mais il faut changer à Bordeaux. | چرا، یکی ساعت یازده و نیم هست، ولی باید در بوردو قطار عوض کنید.
++ Ça me va. Je préfère changer de train : attendre trois heures ici, c'est trop long. | برایم خوب است. ترجیح می‌دهم قطار عوض کنم: سه ساعت اینجا منتظر ماندن خیلی طولانی است.
+- Ça me va. Je préfère changer le train : attendre trois heures ici, c'est trop long. | برایم خوب است. ترجیح می‌دهم خودِ قطار را تغییر بدهم: سه ساعت اینجا منتظر ماندن خیلی طولانی است.
+- Ça me va. Je préfère attendre trois heures ici : changer de train, c'est trop long. | برایم خوب است. ترجیح می‌دهم سه ساعت اینجا منتظر بمانم: عوض کردن قطار خیلی طول می‌کشد.
+why: «قطار عوض کردن» در فرانسوی «changer de train» است؛ «changer le train» یعنی خودِ قطار را تغییر بدهی. اگر ترجیح بدهی سه ساعت منتظر بمانی، «Ça me va» برای قطار یازده و نیم بی‌معنی است.
+B: Très bien. À cause de la grève, je vous le change, et vous ne payez rien. | خیلی خوب. به خاطر اعتصاب، عوضش می‌کنم و چیزی هم نمی‌پردازید.
+- Merci beaucoup ! Vous pouvez le me donner sur papier ? Mon téléphone ne marche plus. | خیلی ممنون! می‌شود آن را روی کاغذ به من بدهید؟ گوشی‌ام دیگر کار نمی‌کند.
++ Merci beaucoup ! Vous pouvez me le donner sur papier ? Mon téléphone ne marche plus. | خیلی ممنون! می‌شود آن را روی کاغذ به من بدهید؟ گوشی‌ام دیگر کار نمی‌کند.
+- Merci beaucoup ! Vous pouvez me lui donner sur papier ? Mon téléphone ne marche plus. | خیلی ممنون! می‌شود آن را روی کاغذ به من بدهید؟ گوشی‌ام دیگر کار نمی‌کند.
+why: وقتی دو ضمیر کنار هم می‌آیند، me پیش از le می‌آید: «me le donner»، نه «le me». بلیت مفعول بی‌واسطه است، پس le، نه lui؛ و me و lui با هم نمی‌آیند.
+B: Bien sûr, voilà. Le train part du quai 7. Après être arrivée à Bordeaux, vous aurez vingt minutes pour changer. | حتماً، بفرمایید. قطار از سکوی ۷ حرکت می‌کند. وقتی به بوردو رسیدید، بیست دقیقه برای عوض کردن قطار وقت دارید. | tts: Bien sûr, voilà. Le train part du quai sept. Après être arrivée à Bordeaux, vous aurez vingt minutes pour changer.
+- Vingt minutes, ça devait{devoir} suffire. Merci pour tout, monsieur ! | بیست دقیقه، قرار بود کافی باشد. ممنون بابت همه‌چیز، آقا!
+- Vingt minutes, ça devrait{devoir} suffire. Merci pour rien, monsieur ! | بیست دقیقه احتمالاً کافی است. ممنون که هیچ کاری نکردید، آقا!
++ Vingt minutes, ça devrait{devoir} suffire. Merci pour tout, monsieur ! | بیست دقیقه احتمالاً کافی است. ممنون بابت همه‌چیز، آقا!
+why: برای حدسی درباره آینده وجه شرطی devoir می‌آید: «ça devrait suffire» (احتمالاً کافی است)؛ «ça devait» گذشته است. «Merci pour rien» یعنی «ممنون که هیچ کاری نکردی» و بی‌ادبانه است، در حالی که کارمند به تو کمک کرده.

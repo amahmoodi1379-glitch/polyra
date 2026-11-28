@@ -1,0 +1,39 @@
+code: fr-b1-d010
+title: تأخیر پرواز در فرودگاه
+situation: در فرودگاه پاریس هستی. پروازت به مونترال تأخیر زیادی دارد و فردا عروسی خواهرت است. به باجه شرکت هواپیمایی رفته‌ای و با کارمند آنجا حرف می‌زنی.
+turns:
+B: Bonjour, madame. Je peux vous aider ? | سلام، خانم. کمکی از دستم برمی‌آید؟
+- Salut. Mon vol pour Montréal a trois heures de retard. Tu sais pourquoi ? | سلام. پروازم به مونترال سه ساعت تأخیر دارد. می‌دانی چرا؟
+- Bonjour, monsieur. Ma vol pour Montréal a trois heures de retard. Vous savez pourquoi ? | سلام، آقا. پروازم به مونترال سه ساعت تأخیر دارد. می‌دانید چرا؟
++ Bonjour, monsieur. Mon vol pour Montréal a trois heures de retard. Vous savez pourquoi ? | سلام، آقا. پروازم به مونترال سه ساعت تأخیر دارد. می‌دانید چرا؟
+why: vol مذکر است: «mon vol»، نه «ma vol». با کارمند فرودگاه Salut و tu نمی‌گوییم.
+B: Oui, il y a un problème avec un moteur. Les mécaniciens sont en train de le réparer. | بله، یکی از موتورها مشکل دارد. مکانیک‌ها دارند تعمیرش می‌کنند.
++ Je comprends. Mais à cause de ce retard, j'arriverai trop tard pour le mariage de ma sœur ! | می‌فهمم. ولی به خاطر این تأخیر، برای عروسی خواهرم دیر می‌رسم!
+- Je comprends. Mais malgré ce retard, j'arriverai trop tard pour le mariage de ma sœur ! | می‌فهمم. ولی با وجود این تأخیر، برای عروسی خواهرم دیر می‌رسم!
+- Je comprends. Mais à cause de ce retard, j'arriverai trop tôt pour le mariage de ma sœur ! | می‌فهمم. ولی به خاطر این تأخیر، برای عروسی خواهرم خیلی زود می‌رسم!
+why: تأخیر دلیل دیر رسیدن است، پس «à cause de» (به خاطرِ). «malgré» یعنی «با وجودِ» و برای چیزی است که مانع نمی‌شود، که اینجا معنی ندارد. با تأخیر کسی زود نمی‌رسد.
+B: Je suis vraiment désolé. Il y a un autre vol à dix-sept heures, avec une autre compagnie. Je peux vous mettre sur ce vol, si vous voulez. | واقعاً متأسفم. یک پرواز دیگر ساعت پنج عصر هست، با یک شرکت دیگر. اگر بخواهید، می‌توانم جایتان را در آن پرواز بگیرم.
+- Oui, s'il vous plaît ! Il arrivait à quelle heure à Montréal ? | بله، لطفاً! چه ساعتی به مونترال می‌رسید؟
+- Non, ce n'est pas la peine ! Il arrive à quelle heure à Montréal ? | نه، لازم نیست! چه ساعتی به مونترال می‌رسد؟
++ Oui, s'il vous plaît ! Il arrive à quelle heure à Montréal ? | بله، لطفاً! چه ساعتی به مونترال می‌رسد؟
+why: درباره پروازی که هنوز نرفته می‌پرسی، پس زمان حال: «il arrive»؛ «il arrivait» گذشته است. «ce n'est pas la peine» یعنی «لازم نیست»، ولی تو آن پرواز را لازم داری.
+B: À dix-neuf heures, heure de Montréal. Mais il ne reste{rester} qu'une place{place-2}, et elle est près des toilettes. | ساعت هفت عصر به وقت مونترال. ولی فقط یک صندلی مانده، آن هم کنار دستشویی.
++ Ce n'est pas grave. Même si la place{place-2} n'est pas bonne, je la prends ! | مهم نیست. حتی اگر صندلی خوب نیست، برش می‌دارم!
+- Ce n'est pas grave. Même si la place{place-2} ne sera pas bonne, je la prends ! | مهم نیست. حتی اگر صندلی خوب نخواهد بود، برش می‌دارم!
+- Ce n'est pas grave. Même si la place{place-2} n'est pas bonne, je le prends ! | مهم نیست. حتی اگر صندلی خوب نیست، برش می‌دارم!
+why: بعد از «même si» مثل si آینده نمی‌آید: «même si la place n'est pas bonne». place مؤنث است، پس ضمیرش la است: «je la prends».
+B: Très bien, je change votre billet. Et votre valise, vous l'avez déjà déposée ? | خیلی خوب، بلیتتان را عوض می‌کنم. چمدانتان را تحویل داده‌اید؟
+- Oui, je l'ai déposée dans une heure. Il faut que j'aille la chercher ? | بله، یک ساعت دیگر تحویلش دادم. باید بروم بیاورمش؟
++ Oui, je l'ai déposée il y a une heure. Il faut que j'aille la chercher ? | بله، یک ساعت پیش تحویلش دادم. باید بروم بیاورمش؟
+- Oui, je l'ai déposée il y a une heure. Il faut que je vais la chercher ? | بله، یک ساعت پیش تحویلش دادم. باید بروم بیاورمش؟
+why: برای گذشته «il y a une heure» (یک ساعت پیش) می‌گوییم؛ «dans une heure» برای آینده است. بعد از «il faut que» وجه التزامی می‌آید و التزامی aller می‌شود aille: «que j'aille»، نه «que je vais».
+B: Non, ne vous inquiétez pas. On va la mettre dans l'autre avion, pour que vous la retrouviez à Montréal. | نه، نگران نباشید. آن را در هواپیمای دیگر می‌گذاریم تا در مونترال تحویلش بگیرید.
+- Merci ! Au total, je perds seulement deux heures. Vous pouvez m'écrire l'heure du vol, pour que je l'oublie ? | ممنون! روی هم رفته فقط دو ساعت از دست می‌دهم. می‌شود ساعت پرواز را برایم بنویسید تا فراموشش کنم؟
++ Merci ! Au total, je perds seulement deux heures. Vous pouvez m'écrire l'heure du vol, pour que je ne l'oublie pas ? | ممنون! روی هم رفته فقط دو ساعت از دست می‌دهم. می‌شود ساعت پرواز را برایم بنویسید تا فراموشش نکنم؟
+- Merci ! Au total, je perds seulement deux heures. Vous pouvez m'écrire l'heure du vol, pour que je ne l'oublierai pas ? | ممنون! روی هم رفته فقط دو ساعت از دست می‌دهم. می‌شود ساعت پرواز را برایم بنویسید تا فراموشش نکنم؟
+why: «pour que» وقتی می‌آید که فاعل دو بخش فرق دارد (او می‌نویسد، تو فراموش نمی‌کنی)، و بعدش وجه التزامی می‌آید: «pour que je ne l'oublie pas»؛ آینده (oublierai) بعد از آن غلط است. «pour que je l'oublie» یعنی «تا فراموشش کنم» و برعکس است.
+B: Bien sûr. Voilà. Et la compagnie vous offre le repas au restaurant de l'aéroport. | حتماً. بفرمایید. شرکت هواپیمایی هم غذای شما را در رستوران فرودگاه مهمان می‌کند.
+- C'est très gentil de ta part. Merci pour ton aide ! | خیلی لطف داری. ممنون از کمکت!
++ C'est très gentil de votre part. Merci pour votre aide ! | خیلی لطف دارید. ممنون از کمکتان!
+- C'est très gentil de votre part. Je vous en prie ! | خیلی لطف دارید. خواهش می‌کنم!
+why: با کارمند فرودگاه vous می‌گوییم: «de votre part»، «votre aide». «Je vous en prie» جواب تشکر است، ولی او از تو تشکر نکرده؛ تو باید از او تشکر کنی.

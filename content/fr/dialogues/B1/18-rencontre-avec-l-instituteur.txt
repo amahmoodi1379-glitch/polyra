@@ -1,0 +1,34 @@
+code: fr-b1-d018
+title: جلسه با معلم پسرت
+situation: آقای روسو، معلم پسر نه‌ساله‌ات نیما، از تو خواسته به مدرسه بیایی. ماه پیش به خانه تازه‌ای اسباب‌کشی کرده‌اید. حالا در کلاس روبه‌روی او نشسته‌ای.
+turns:
+B: Bonjour, madame Karimi. Merci d'être venue. Asseyez-vous. | سلام، خانم کریمی. ممنون که آمدید. بنشینید.
+- Bonjour, monsieur. J'avoue que je suis un peu inquiet : il y a un problème avec Nima ? | سلام، آقا. راستش کمی نگرانم: نیما مشکلی دارد؟
++ Bonjour, monsieur. J'avoue que je suis un peu inquiète : il y a un problème avec Nima ? | سلام، آقا. راستش کمی نگرانم: نیما مشکلی دارد؟
+- Salut ! J'avoue que je suis un peu inquiète : il y a un problème avec Nima ? | سلام! راستش کمی نگرانم: نیما مشکلی دارد؟
+why: تو مادر نیما هستی، پس صفت مؤنث می‌آید: «inquiète»؛ «inquiet» مذکر است. با معلم فرزندت Salut نمی‌گوییم.
+B: Ne vous inquiétez pas, ce n'est pas grave. Mais depuis quelques semaines, Nima a du mal à se concentrer en classe. | نگران نباشید، چیز جدی‌ای نیست. ولی چند هفته است نیما سر کلاس به‌سختی تمرکز می‌کند.
+- Ah bon ? À la maison aussi, il est souvent fatigué depuis il a reçu un jeu vidéo pour son anniversaire. | جدی؟ در خانه هم، از وقتی برای تولدش یک بازی ویدئویی گرفته، اغلب خسته است.
++ Ah bon ? À la maison aussi, il est souvent fatigué depuis qu'il a reçu un jeu vidéo pour son anniversaire. | جدی؟ در خانه هم، از وقتی برای تولدش یک بازی ویدئویی گرفته، اغلب خسته است.
+- Ah bon ? À la maison aussi, il est souvent fatigué pendant qu'il a reçu un jeu vidéo pour son anniversaire. | جدی؟ در خانه هم، در حالی که برای تولدش یک بازی ویدئویی گرفته، اغلب خسته است.
+why: پیش از یک جمله کامل «depuis que» می‌آید: «depuis qu'il a reçu …» (از وقتی که)؛ depuis تنها فقط پیش از اسم یا زمان می‌آید. «pendant que» برای دو کار هم‌زمان است و اینجا معنی ندارد.
+B: Je vois. Et ses notes ont baissé, surtout en mathématiques. Regardez : ce sont ses deux derniers examens. | متوجهم. نمره‌هایش هم پایین آمده، مخصوصاً در ریاضی. نگاه کنید: این دو امتحان آخرش است.
++ Celui-ci n'est pas mal, mais celui-là est vraiment mauvais ! | این یکی بد نیست، ولی آن یکی واقعاً بد است!
+- Celui n'est pas mal, mais celui est vraiment mauvais ! | این یکی بد نیست، ولی آن یکی واقعاً بد است!
+- Celui-ci n'est pas mal, mais celui-là est vraiment mauvaise ! | این یکی بد نیست، ولی آن یکی واقعاً بد است!
+why: برای «این یکی … آن یکی» می‌گوییم «celui-ci … celui-là» (examen مذکر است)؛ celui تنها، بدون -ci/-là یا qui/que/de بعدش، به کار نمی‌رود. صفت هم با examen (مذکر) می‌آید: «mauvais»، نه «mauvaise».
+B: Oui. À votre place{place-2}, je lui interdirais les jeux vidéo le soir, pendant la semaine. | بله. اگر جای شما بودم، بازی ویدئویی را عصرهای وسط هفته برایش ممنوع می‌کردم.
+- Vous avez raison. Désormais, je veux qu'il fait ses devoirs{devoir-noun} avant de jouer. | حق با شماست. از این به بعد می‌خواهم قبل از بازی کردن تکالیفش را انجام بدهد.
++ Vous avez raison. Désormais, je veux qu'il fasse ses devoirs{devoir-noun} avant de jouer. | حق با شماست. از این به بعد می‌خواهم قبل از بازی کردن تکالیفش را انجام بدهد.
+- Vous avez raison. Désormais, je veux qu'il fasse ses devoirs{devoir-noun} avant que jouer. | حق با شماست. از این به بعد می‌خواهم قبل از بازی کردن تکالیفش را انجام بدهد.
+why: بعد از «je veux que» وجه التزامی می‌آید: «qu'il fasse»، نه «qu'il fait». پیش از مصدر «avant de» می‌آید: «avant de jouer»؛ «avant que» با جمله کامل می‌آید، نه با مصدر.
+B: C'est une très bonne idée. Et parlez-lui aussi : avec le déménagement, il est peut-être un peu stressé. | فکر خیلی خوبی است. با او حرف هم بزنید: با این اسباب‌کشی، شاید کمی استرس دارد.
+- C'est possible. Il ne nous y a jamais parlé, mais je lui poserai la question. | ممکن است. هیچ‌وقت درباره‌اش به ما چیزی نگفته، ولی از او می‌پرسم.
+- C'est possible. Il ne nous en a jamais parlé, mais je lui posais la question. | ممکن است. هیچ‌وقت درباره‌اش به ما چیزی نگفته، ولی از او می‌پرسیدم.
++ C'est possible. Il ne nous en a jamais parlé, mais je lui poserai la question. | ممکن است. هیچ‌وقت درباره‌اش به ما چیزی نگفته، ولی از او می‌پرسم.
+why: «parler de quelque chose» با de است، پس ضمیرش en است: «il ne nous en a jamais parlé»؛ y اینجا جا ندارد. پرسیدن کاری برای بعد است، پس آینده «je lui poserai»، نه ماضی استمراری «posais».
+B: Et si ça ne va pas mieux dans un mois, je vous rappellerai. | و اگر تا یک ماه دیگر بهتر نشد، دوباره به شما زنگ می‌زنم.
+- D'accord. Merci de m'être prévenue, et de prendre soin de lui. | باشد. ممنون که خبرم کردید و حواستان به او هست.
++ D'accord. Merci de m'avoir prévenue, et de prendre soin de lui. | باشد. ممنون که خبرم کردید و حواستان به او هست.
+- D'accord. Merci de m'avoir prévenue, et de prendre soin d'elle. | باشد. ممنون که خبرم کردید و حواستان به دخترم هست.
+why: prévenir با avoir صرف می‌شود، پس «de m'avoir prévenue»، نه «de m'être». نیما پسر است، پس «prendre soin de lui»، نه «d'elle».

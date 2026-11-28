@@ -1,0 +1,39 @@
+code: fr-b1-d001
+title: مصاحبه کاری در کتاب‌فروشی
+situation: صبح است و برای کار فروشندگی به یک کتاب‌فروشی در پاریس آمده‌ای. آقای ژیرار، مدیر کتاب‌فروشی، با تو مصاحبه می‌کند.
+turns:
+B: Bonjour, entrez ! Vous êtes Sara Karimi, c'est ça ? Asseyez-vous. | سلام، بفرمایید! شما سارا کریمی هستید، درست است؟ بنشینید.
++ Oui, c'est moi. Bonjour, monsieur, et merci de me recevoir. | بله، خودم هستم. سلام آقا، و ممنون که وقت مصاحبه دادید.
+- Oui, c'est moi. Bonjour, monsieur, et merci de vous recevoir. | بله، خودم هستم. سلام آقا، و ممنون که شما را می‌پذیرم.
+- Oui, c'est moi. Salut ! Tu vas bien ? | بله، خودم هستم. سلام! خوبی؟
+why: «merci de me recevoir» یعنی «ممنون که مرا پذیرفتید»؛ با «vous recevoir» برعکس می‌شود: «ممنون که شما را می‌پذیرم». در مصاحبه کاری Salut و tu خودمانی است.
+B: Alors, dites-moi : pourquoi est-ce que vous voulez travailler chez nous ? | خب، بگویید ببینم: چرا می‌خواهید پیش ما کار کنید؟
+- Pourtant, j'adore les livres et j'aime beaucoup parler avec les gens. | با این حال، عاشق کتابم و حرف زدن با مردم را خیلی دوست دارم.
++ Parce que j'adore les livres et que j'aime beaucoup parler avec les gens. | چون عاشق کتابم و حرف زدن با مردم را خیلی دوست دارم.
+- Parce que je ne lis jamais et que je n'aime pas beaucoup les gens. | چون هیچ‌وقت کتاب نمی‌خوانم و از مردم زیاد خوشم نمی‌آید.
+why: به «pourquoi» با «parce que» جواب می‌دهیم. «pourtant» یعنی «با این حال» و تضاد را نشان می‌دهد، نه دلیل را. جواب سوم هیچ دلیلی برای کار در کتاب‌فروشی نیست.
+B: Vous avez déjà travaillé dans une librairie ? | قبلاً در کتاب‌فروشی کار کرده‌اید؟
+- Oui. Avant de venir en France, je vais travailler deux ans dans une librairie à Téhéran. | بله. قبل از آمدن به فرانسه، می‌خواهم دو سال در یک کتاب‌فروشی در تهران کار کنم.
+- Oui. Avant de venir en France, j'étais travaillé{travailler} deux ans dans une librairie à Téhéran. | بله. قبل از آمدن به فرانسه، دو سال در یک کتاب‌فروشی در تهران کار کرده بودم.
++ Oui. Avant de venir en France, j'avais travaillé deux ans dans une librairie à Téhéran. | بله. قبل از آمدن به فرانسه، دو سال در یک کتاب‌فروشی در تهران کار کرده بودم.
+why: کارِ تهران پیش از آمدن به فرانسه بوده، یعنی پیش از یک کار دیگرِ گذشته؛ پس ماضی بعید: «j'avais travaillé». travailler با avoir صرف می‌شود، نه با être. «je vais travailler» برای آینده است و با گذشته جور نیست.
+B: Très bien. Ici, on travaille surtout le samedi et le dimanche. Ça vous pose un problème ? | خیلی خوب. اینجا بیشتر شنبه و یکشنبه کار می‌کنیم. برایتان مشکلی است؟
++ Non, pas du tout. Par contre, le lundi matin, je ne suis pas libre : j'ai cours. | نه، اصلاً. در عوض، دوشنبه صبح آزاد نیستم: کلاس دارم.
+- Non, pas du tout. C'est pourquoi le lundi matin, je ne suis pas libre : j'ai cours. | نه، اصلاً. به همین دلیل دوشنبه صبح آزاد نیستم: کلاس دارم.
+- Oui, beaucoup. Par contre, le samedi et le dimanche, je suis toujours libre. | بله، خیلی. در عوض، شنبه و یکشنبه همیشه آزادم.
+why: «par contre» یعنی «در عوض، از آن طرف» و یک محدودیت دیگر را کنار حرف قبلی می‌گذارد. «c'est pourquoi» یعنی «به همین دلیل»، ولی کار آخر هفته دلیل کلاس دوشنبه نیست. جواب سوم با خودش نمی‌خواند: می‌گوید آخر هفته مشکل است و بعد می‌گوید آخر هفته آزاد است.
+B: D'accord, on peut s'organiser. Vous avez des questions ? | باشد، می‌شود برنامه را جور کرد. سؤالی دارید؟
+- Oui. Je voudrais savoir combien d'heures je travaillais par semaine. | بله. می‌خواستم بدانم هفته‌ای چند ساعت کار می‌کردم.
+- Oui. Tu peux me dire combien d'heures je travaillerais par semaine ? | بله. می‌توانی بگویی هفته‌ای چند ساعت کار می‌کنم؟
++ Oui. Je voudrais savoir combien d'heures je travaillerais par semaine. | بله. می‌خواستم بدانم هفته‌ای چند ساعت کار خواهم کرد.
+why: هنوز استخدام نشده‌ای و کار فرضی است، پس وجه شرطی: «je travaillerais». «je travaillais» ماضی استمراری است و درباره گذشته می‌پرسد. با مدیر مصاحبه tu نمی‌گوییم.
+B: Vingt heures au début, peut-être plus après. Et vous pourriez commencer quand ? | اولش بیست ساعت، شاید بعداً بیشتر. کی می‌توانید شروع کنید؟
+- Depuis lundi prochain, si vous voulez. | از دوشنبه آینده تا حالا، اگر بخواهید.
++ Dès lundi prochain, si vous voulez. | از همین دوشنبه آینده، اگر بخواهید.
+- Lundi dernier, si vous voulez. | دوشنبه گذشته، اگر بخواهید.
+why: «dès» یعنی «از همان» و شروعی در آینده را می‌گوید. depuis برای کاری است که در گذشته شروع شده و هنوز ادامه دارد. «lundi dernier» گذشته است و نمی‌شود از آن روز شروع کرد.
+B: Parfait. Je dois encore voir deux personnes. En général, je donne ma réponse deux ou trois jours après. | عالی. باید دو نفر دیگر را هم ببینم. معمولاً دو سه روز بعد جواب می‌دهم.
++ Très bien. Merci beaucoup pour votre temps, monsieur. Bonne journée ! | خیلی خوب. خیلی ممنون که وقت گذاشتید، آقا. روز خوبی داشته باشید!
+- Très bien. Merci beaucoup pour ton temps. Bonne journée ! | خیلی خوب. خیلی ممنون که وقت گذاشتی. روز خوبی داشته باشی!
+- Très bien. Merci beaucoup pour votre temps, monsieur. Bonne nuit ! | خیلی خوب. خیلی ممنون که وقت گذاشتید، آقا. شب بخیر!
+why: موقع رفتن از مصاحبه با احترام تشکر می‌کنیم: «Merci pour votre temps». «ton temps» خودمانی است. صبح است و «Bonne nuit» فقط برای شب است.

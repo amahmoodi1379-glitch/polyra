@@ -1,0 +1,39 @@
+code: fr-b1-d003
+title: پس دادن جنس خراب به فروشگاه
+situation: شنبه از یک فروشگاه لوازم خانگی جاروبرقی خریده‌ای و حالا کار نمی‌کند. با جاروبرقی و رسید خرید به فروشگاه برگشته‌ای و با فروشنده حرف می‌زنی.
+turns:
+B: Bonjour, madame. Je peux vous aider ? | سلام، خانم. کمکی از دستم برمی‌آید؟
+- Bonjour, monsieur. J'ai vendu cet aspirateur ici samedi, et il ne marche déjà plus. | سلام، آقا. شنبه این جاروبرقی را اینجا فروختم و دیگر کار نمی‌کند.
+- Bonjour, monsieur. J'ai acheté cet aspirateur ici samedi prochain, et il ne marche déjà plus. | سلام، آقا. شنبه آینده این جاروبرقی را اینجا خریدم و دیگر کار نمی‌کند.
++ Bonjour, monsieur. J'ai acheté cet aspirateur ici samedi, et il ne marche déjà plus. | سلام، آقا. شنبه این جاروبرقی را اینجا خریدم و از همین حالا دیگر کار نمی‌کند.
+why: تو جاروبرقی را خریده‌ای (acheter)، نه فروخته‌ای (vendre). «samedi prochain» یعنی شنبه آینده و با گذشته «j'ai acheté» جور نیست.
+B: Ah bon ? Quel est le problème, exactement ? | جدی؟ دقیقاً چه مشکلی دارد؟
++ Hier, il s'est arrêté tout à coup. Et je l'avais utilisé seulement deux fois ! | دیروز یک‌دفعه خاموش شد. تازه فقط دو بار از آن استفاده کرده بودم!
+- Hier, il s'est arrêté tout à coup. Et je l'utiliserai seulement deux fois ! | دیروز یک‌دفعه خاموش شد. و فقط دو بار از آن استفاده خواهم کرد!
+- Hier, il s'est arrêté tout à coup. Je l'avais cassé exprès, vous savez. | دیروز یک‌دفعه خاموش شد. می‌دانید، عمداً خرابش کرده بودم.
+why: دو بار استفاده پیش از خراب شدنِ دیروز بوده، پس ماضی بعید: «je l'avais utilisé». «je l'utiliserai» آینده است و معنی ندارد. اگر بگویی عمداً (exprès) خرابش کرده‌ای، فروشگاه دلیلی برای کمک ندارد.
+B: Je vois. Vous avez le ticket de caisse ? | متوجهم. رسید خرید را دارید؟
+- Oui, la voilà. Et j'ai aussi gardé la boîte. | بله، بفرمایید. جعبه‌اش را هم نگه داشته‌ام.
++ Oui, le voilà. Et j'ai aussi gardé la boîte. | بله، بفرمایید. جعبه‌اش را هم نگه داشته‌ام.
+- Oui, le voilà. Je l'ai acheté il y a dix ans. | بله، بفرمایید. ده سال پیش خریدمش.
+why: ticket مذکر است، پس «le voilà»؛ la برای اسم مؤنث است. جاروبرقی را همین شنبه خریده‌ای، نه ده سال پیش.
+B: Bon. On peut le réparer, mais ça prend trois semaines. | خب. می‌شود تعمیرش کرد، ولی سه هفته طول می‌کشد.
+- Trois semaines ? Si ce serait possible, je préférerais un aspirateur neuf{neuf-adj}. | سه هفته؟ اگر ممکن باشد، یک جاروبرقی نو را ترجیح می‌دهم.
+- Trois semaines ? Si c'était possible, je préférais un aspirateur neuf{neuf-adj}. | سه هفته؟ اگر ممکن بود، یک جاروبرقی نو را ترجیح می‌دادم.
++ Trois semaines ? Si c'était possible, je préférerais un aspirateur neuf{neuf-adj}. | سه هفته؟ اگر ممکن بود، یک جاروبرقی نو را ترجیح می‌دادم.
+why: برای خواهش فرضی و مؤدبانه: si + ماضی استمراری، بعد وجه شرطی: «Si c'était possible, je préférerais». بعد از si هیچ‌وقت وجه شرطی (ce serait) نمی‌آید، و «je préférais» ماضی استمراری است، نه شرطی.
+B: Je regarde… Désolé, madame, nous n'avons plus cet aspirateur. Il y en a un autre, mais il coûte trente euros de plus. | نگاه می‌کنم… متأسفم، خانم، این جاروبرقی را دیگر نداریم. یکی دیگر هست، ولی سی یورو گران‌تر است.
+- Alors, est-ce que tu pourrais plutôt me rendre mon argent ? | پس، می‌شود به جایش پولم را پس بدهی؟
++ Alors, est-ce que vous pourriez plutôt me rendre mon argent ? | پس، می‌شود به جایش پولم را پس بدهید؟
+- Alors, est-ce que vous pourriez plutôt me vendre mon argent ? | پس، می‌شود به جایش پولم را به من بفروشید؟
+why: درخواست مؤدبانه از فروشنده با «vous pourriez» است؛ tu خودمانی است. پول را «پس می‌دهند» (rendre)، نه «می‌فروشند» (vendre).
+B: Oui, avec le ticket, c'est possible. Je vous rends l'argent sur votre carte ? | بله، با رسید ممکن است. پول را به کارتتان برگردانم؟
+- Oui, s'il vous plaît. C'est celui que j'ai utilisé samedi. | بله، لطفاً. همان (مذکر) است که شنبه استفاده کردم.
+- Oui, s'il vous plaît. C'est celle qui j'ai utilisée samedi. | بله، لطفاً. همانی است که شنبه استفاده کردم.
++ Oui, s'il vous plaît. C'est celle que j'ai utilisée samedi. | بله، لطفاً. همان کارتی است که شنبه استفاده کردم.
+why: carte مؤنث است، پس celle. بعد از آن que می‌آید، چون کارت مفعول «j'ai utilisée» است و فاعل جمله je است؛ qui فقط وقتی می‌آید که خودش فاعل باشد.
+B: Voilà, c'est fait. Vous verrez l'argent sur votre compte dans deux ou trois jours. | بفرمایید، انجام شد. دو سه روز دیگر پول را در حسابتان می‌بینید.
++ Merci beaucoup, monsieur. Vous avez été très gentil. Bonne journée ! | خیلی ممنون، آقا. خیلی لطف کردید. روز خوبی داشته باشید!
+- Ça m'étonnerait, monsieur. Bonne journée ! | بعید می‌دانم، آقا. روز خوبی داشته باشید!
+- Merci beaucoup, monsieur. Vous serez très gentil. Bonne journée ! | خیلی ممنون، آقا. شما مهربان خواهید بود. روز خوبی داشته باشید!
+why: فروشنده کمکت کرده، پس تشکر می‌کنی: «Vous avez été très gentil». «Ça m'étonnerait» یعنی «بعید می‌دانم» و حرف او را بی‌ادبانه باور نمی‌کند. «Vous serez» آینده است و برای کاری که تمام شده معنی ندارد.

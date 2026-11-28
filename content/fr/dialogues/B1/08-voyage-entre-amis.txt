@@ -1,0 +1,39 @@
+code: fr-b1-d008
+title: برنامه‌ریزی سفر با دوست
+situation: با دوستت ژولین در کافه نشسته‌ای. می‌خواهید برای تعطیلات آخر هفته ماه مه با هم به سفر بروید و برنامه‌اش را می‌چینید.
+turns:
+B: Alors, on part où, pour le long week-end de mai ? | خب، برای تعطیلات طولانی آخر هفته ماه مه کجا برویم؟
+- J'ai une idée : et si on ira en Bretagne ? Je n'ai jamais eu l'occasion d'y aller. | یک فکری دارم: اگر برویم برتانی چطور است؟ هیچ‌وقت فرصت نکرده‌ام بروم آنجا.
++ J'ai une idée : et si on allait en Bretagne ? Je n'ai jamais eu l'occasion d'y aller. | یک فکری دارم: برویم برتانی؟ هیچ‌وقت فرصت نکرده‌ام بروم آنجا.
+- J'ai une idée : et si on allait en Bretagne ? Je n'ai jamais eu l'occasion d'en aller. | یک فکری دارم: برویم برتانی؟ هیچ‌وقت فرصت نکرده‌ام بروم آنجا.
+why: برای پیشنهاد «et si» با ماضی استمراری می‌آید: «et si on allait …?»؛ بعد از si آینده (ira) نمی‌آید. برای جا ضمیر y است: «y aller»، نه «en aller».
+B: Bonne idée ! Mais comment on y va ? En ce moment, le train est très cher. | فکر خوبی است! ولی چطور برویم؟ این روزها قطار خیلی گران است.
++ Puisque le train est cher, on pourrait prendre ma voiture. On partagerait l'essence. | حالا که قطار گران است، می‌توانیم با ماشین من برویم. پول بنزین را نصف می‌کنیم.
+- Pourtant le train est cher, on pourrait prendre ma voiture. On partagerait l'essence. | با این حال قطار گران است، می‌توانیم با ماشین من برویم. پول بنزین را نصف می‌کنیم.
+- Puisque le train est cher, on pourrait prendre le train. On partagerait l'essence. | حالا که قطار گران است، می‌توانیم با قطار برویم. پول بنزین را نصف می‌کنیم.
+why: «puisque» دلیلی را می‌آورد که هر دو می‌دانید (ژولین همین الان گفت): «Puisque le train est cher …». «pourtant» تضاد است و اینجا جمله را بی‌معنی می‌کند. وقتی قطار گران است، دلیلی ندارد قطار را پیشنهاد کنی، و قطار هم بنزین نمی‌خواهد.
+B: D'accord. Et pour dormir ? Les hôtels, là-bas, ça coûte les yeux de la tête. | باشد. برای خوابیدن چه؟ هتل‌های آنجا خیلی گران درمی‌آیند.
+- Ma cousine habite à Rennes. À cause d'elle, on pourra dormir chez elle sans payer. | دختر عمه‌ام در رن زندگی می‌کند. به خاطر (تقصیر) او، می‌توانیم بی‌پول خانه‌اش بخوابیم.
+- Ma cousine habite à Rennes. Grâce à lui, on pourra dormir chez elle sans payer. | دختر عمه‌ام در رن زندگی می‌کند. به لطف او (مرد)، می‌توانیم بی‌پول خانه‌اش بخوابیم.
++ Ma cousine habite à Rennes. Grâce à elle, on pourra dormir chez elle sans payer. | دختر عمه‌ام در رن زندگی می‌کند. به لطف او، می‌توانیم بی‌پول خانه‌اش بخوابیم.
+why: برای علت خوب «grâce à» می‌گوییم؛ «à cause de» برای علت بد است. cousine مؤنث است، پس «grâce à elle»، نه «à lui».
+B: Super ! Et qu'est-ce que tu veux faire, là-bas ? | عالی! آنجا می‌خواهی چه کار کنی؟
++ Ce qui me plaît le plus, c'est la mer : je voudrais marcher au bord de l'eau. | چیزی که بیشتر از همه دوست دارم دریاست: دلم می‌خواهد کنار آب قدم بزنم.
+- Ce que me plaît le plus, c'est la mer : je voudrais marcher au bord de l'eau. | چیزی که بیشتر از همه دوست دارم دریاست: دلم می‌خواهد کنار آب قدم بزنم.
+- Ce dont me plaît le plus, c'est la mer : je voudrais marcher au bord de l'eau. | چیزی که بیشتر از همه دوست دارم دریاست: دلم می‌خواهد کنار آب قدم بزنم.
+why: «ce qui» فاعل فعل بعدی است و اینجا فاعل «plaît» است: «Ce qui me plaît». «ce que» برای مفعول است و «ce dont» برای فعل‌های با de، و هیچ‌کدام اینجا جا ندارند.
+B: Moi aussi ! Par contre, le vendredi, je travaille jusqu'à dix-huit heures. | من هم! ولی جمعه تا ساعت شش عصر کار می‌کنم.
+- Ce n'est pas grave. On partira vendredi matin, de bonne heure. | اشکالی ندارد. جمعه صبح زود راه می‌افتیم.
++ Ce n'est pas grave. On partira samedi matin, de bonne heure. | اشکالی ندارد. شنبه صبح زود راه می‌افتیم.
+- Ce n'est pas grave. On est partis samedi matin, de bonne heure. | اشکالی ندارد. شنبه صبح زود راه افتادیم.
+why: ژولین جمعه کار دارد، پس شنبه صبح راه می‌افتید. سفر هنوز انجام نشده و آینده است: «on partira»، نه گذشته «on est partis».
+B: Parfait. Tu peux appeler ta cousine pour lui demander si c'est d'accord ? | عالی. می‌توانی به دختر عمه‌ات زنگ بزنی و بپرسی موافق است یا نه؟
+- Oui, je lui appelle ce soir et je te tiens au courant. | بله، امشب به او زنگ می‌زنم و در جریانت می‌گذارم.
++ Oui, je l'appelle ce soir et je te tiens au courant. | بله، امشب به او زنگ می‌زنم و در جریانت می‌گذارم.
+- Oui, je l'appelle ce soir et je te tenais au courant. | بله، امشب به او زنگ می‌زنم و در جریانت می‌گذاشتم.
+why: appeler در فرانسوی مفعول بی‌واسطه می‌گیرد (appeler quelqu'un)، پس «je l'appelle»، نه «je lui». «tenir au courant» برای بعد از تماس است، پس زمان حال یا آینده، نه ماضی استمراری «tenais».
+B: Génial. Et comme tu conduis, moi, je paierai l'essence. Ça te va ? | محشر است. چون تو رانندگی می‌کنی، پول بنزین با من. موافقی؟
+- Ça te va très bien ! Merci, tu es génial. | خیلی به تو می‌آید! ممنون، تو محشری.
+- Ça me va très bien ! Merci, vous êtes génial. | برای من خیلی خوب است! ممنون، شما محشرید.
++ Ça me va très bien ! Merci, tu es génial. | برای من خیلی خوب است! ممنون، تو محشری.
+why: «Ça te va ?» یعنی «برای تو خوب است؟» و جوابش «Ça me va» است؛ «Ça te va très bien» یعنی «خیلی به تو می‌آید» (مثلاً لباس). با دوست صمیمی vous نمی‌گوییم.

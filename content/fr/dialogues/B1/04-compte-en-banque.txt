@@ -1,0 +1,39 @@
+code: fr-b1-d004
+title: باز کردن حساب بانکی
+situation: تازه به فرانسه آمده‌ای و پیش یک خانم دوست زندگی می‌کنی. در بانک هستی و کارمند بانک برای باز کردن حساب با تو حرف می‌زند.
+turns:
+B: Bonjour, madame, asseyez-vous. Qu'est-ce que je peux faire pour vous ? | سلام، خانم، بنشینید. چه کاری از دستم برمی‌آید؟
+- Bonjour. Je viens d'arriver en France et je voudrais ouvrir une compte. | سلام. تازه به فرانسه آمده‌ام و می‌خواهم یک حساب باز کنم.
++ Bonjour. Je viens d'arriver en France et je voudrais ouvrir un compte. | سلام. تازه به فرانسه آمده‌ام و می‌خواهم یک حساب باز کنم.
+- Bonjour. Je vais arriver en France et je voudrais ouvrir un compte. | سلام. قرار است به فرانسه بیایم و می‌خواهم یک حساب باز کنم.
+why: compte مذکر است: «un compte». «Je viens d'arriver» یعنی «تازه رسیده‌ام»؛ «Je vais arriver» آینده است، ولی تو همین حالا در بانکی در فرانسه نشسته‌ای.
+B: Très bien. Il me faut votre passeport, votre titre de séjour et une facture avec votre adresse. | خیلی خوب. پاسپورت، کارت اقامت و یک قبض با نشانی‌تان را لازم دارم.
++ Voilà mon passeport et mon titre de séjour. Par contre, je n'ai aucune facture à mon nom. | این پاسپورت و کارت اقامتم. ولی هیچ قبضی به اسم خودم ندارم.
+- Voilà mon passeport et mon titre de séjour. Par contre, je n'ai aucun facture à mon nom. | این پاسپورت و کارت اقامتم. ولی هیچ قبضی به اسم خودم ندارم.
+- Voilà mon passeport et mon titre de séjour. Par contre, je n'ai pas aucune facture à mon nom. | این پاسپورت و کارت اقامتم. ولی هیچ قبضی به اسم خودم ندارم.
+why: facture مؤنث است، پس «aucune facture». با aucun دیگر pas نمی‌آید: «je n'ai aucune …»، نه «je n'ai pas aucune …».
+B: Ce n'est pas grave. Vous habitez où, en ce moment ? | مهم نیست. الان کجا زندگی می‌کنید؟
+- Chez une amie. Je ne suis en France que depuis trois ans. | خانه یک دوست. فقط سه سال است که در فرانسه‌ام.
+- Chez une amie. Je ne suis en France pas depuis trois semaines. | خانه یک دوست. سه هفته نیست که در فرانسه‌ام.
++ Chez une amie. Je ne suis en France que depuis trois semaines. | خانه یک دوست. فقط سه هفته است که در فرانسه‌ام.
+why: «ne … que» یعنی «فقط»: «Je ne suis en France que depuis trois semaines». pas بعد از فعل می‌آید، نه وسط جمله بعد از en France، و معنی‌اش هم اینجا جور نیست. تو تازه آمده‌ای، پس «trois ans» با حرف اولت نمی‌خواند.
+B: Alors votre amie peut écrire un petit papier qui dit que vous habitez chez elle. Elle le signe, et elle ajoute une de ses factures. | پس دوستتان می‌تواند یک برگه کوچک بنویسد که در آن بگوید شما خانه او زندگی می‌کنید. امضایش می‌کند و یکی از قبض‌هایش را هم کنارش می‌گذارد.
++ Parfait, je lui demanderai ce soir. | عالی، امشب از او می‌خواهم.
+- Parfait, je la demanderai ce soir. | عالی، امشب او را درخواست می‌کنم.
+- Parfait, je lui demandais ce soir. | عالی، امشب از او می‌خواستم.
+why: demander à quelqu'un است، پس ضمیرش lui است: «je lui demanderai»؛ «je la demanderai» یعنی خود او را درخواست کنی. کار امشب آینده است: «demanderai»، نه ماضی استمراری «demandais».
+B: Maintenant, la carte. Vous avez une carte gratuite, ou une carte à cinq euros par mois pour payer partout dans le monde. | حالا کارت. یک کارت رایگان هست، یا یک کارت ماهی پنج یورو برای پرداخت در همه جای دنیا.
+- Je voyage tout le temps. Je vais donc prendre la carte gratuite. | همیشه سفر می‌کنم. پس کارت رایگان را می‌گیرم.
+- Je ne voyage presque jamais. Je vais pourtant prendre la carte gratuite. | تقریباً هیچ‌وقت سفر نمی‌کنم. با این حال کارت رایگان را می‌گیرم.
++ Je ne voyage presque jamais. Je vais donc prendre la carte gratuite. | تقریباً هیچ‌وقت سفر نمی‌کنم. پس کارت رایگان را می‌گیرم.
+why: سفر نکردن دلیل انتخاب کارت رایگان است، پس «donc» (پس). «pourtant» یعنی «با این حال» و تضادی می‌سازد که وجود ندارد. کسی که همیشه سفر می‌کند کارت مخصوص سفر را لازم دارد، نه کارت رایگان را.
+B: Très bien. Vous recevrez la carte chez votre amie dans une semaine. | خیلی خوب. یک هفته دیگر کارت را در خانه دوستتان دریافت می‌کنید.
+- D'accord. Et je pourrai retirer de l'argent sans je paie, avec cette carte ? | باشد. با این کارت می‌توانم بدون پول دادن پول بردارم؟
++ D'accord. Et je pourrai retirer de l'argent sans payer, avec cette carte ? | باشد. با این کارت می‌توانم بدون پول دادن پول بردارم؟
+- D'accord. Et je pourrai retirer de l'argent sans payer, avec ce carte ? | باشد. با این کارت می‌توانم بدون پول دادن پول بردارم؟
+why: بعد از sans فعل به شکل مصدر می‌آید: «sans payer». carte مؤنث است، پس «cette carte»، نه «ce carte».
+B: Oui, dans tous nos distributeurs. Et surtout, ne confiez jamais votre code à personne, même pas à vos amis. | بله، در همه دستگاه‌های خودپرداز ما. و مخصوصاً، رمزتان را هیچ‌وقت به هیچ‌کس نسپارید، حتی به دوستانتان.
++ Ne vous inquiétez pas, je ne le donnerai à personne. | نگران نباشید، به هیچ‌کس نمی‌دهمش.
+- Ne vous inquiétez pas, je ne la donnerai à personne. | نگران نباشید، به هیچ‌کس نمی‌دهمش.
+- Ne vous inquiétez pas, je ne le donnerai à quelqu'un. | نگران نباشید، به کسی نمی‌دهمش.
+why: code مذکر است، پس ضمیرش le است: «je ne le donnerai». در منفی «به هیچ‌کس» می‌شود «ne … à personne»؛ quelqu'un در جمله منفی جای personne را نمی‌گیرد.

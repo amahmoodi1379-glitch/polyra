@@ -1,0 +1,34 @@
+code: fr-b1-d007
+title: حرف زدن با همسایه درباره سروصدا
+situation: یک هفته است که شب‌ها از آپارتمان طبقه بالا صدای موسیقی بلند می‌آید و نمی‌توانی بخوابی. ساعت هفت عصر در خانه همسایه را می‌زنی و آقای همسایه در را باز می‌کند.
+turns:
+B: Bonsoir ! Je peux vous aider ? | عصر بخیر! کمکی از دستم برمی‌آید؟
+- Salut ! Excuse-moi de te déranger. J'habite juste en bas. | سلام! ببخش مزاحمت شدم. درست طبقه پایین زندگی می‌کنم.
++ Bonsoir, monsieur. Excusez-moi de vous déranger. J'habite juste en bas. | عصر بخیر، آقا. ببخشید مزاحمتان شدم. درست طبقه پایین زندگی می‌کنم.
+- Bonsoir, monsieur. Excusez-moi de me déranger. J'habite juste en bas. | عصر بخیر، آقا. ببخشید که مزاحم خودم شدم. درست طبقه پایین زندگی می‌کنم.
+why: با همسایه‌ای که نمی‌شناسی vous می‌گوییم: «Excusez-moi de vous déranger». Salut و tu خودمانی است. «de me déranger» یعنی مزاحم خودت شده‌ای و بی‌معنی است.
+B: Ah, enchanté ! Il y a un problème ? | آه، خوشبختم! مشکلی پیش آمده؟
++ Un peu, oui. Depuis une semaine, il y a de la musique très tard, et j'ai à peine dormi. | یک کم، بله. یک هفته است که تا دیروقت موسیقی پخش می‌شود و به‌زحمت خوابیده‌ام.
+- Un peu, oui. Il y a une semaine, il y a de la musique très tard, et j'ai à peine dormi. | یک کم، بله. یک هفته پیش، تا دیروقت موسیقی پخش می‌شود و به‌زحمت خوابیده‌ام.
+- Un peu, oui. Depuis une semaine, il y a de la musique très tard, et j'ai à peine dormir. | یک کم، بله. یک هفته است که تا دیروقت موسیقی پخش می‌شود و به‌زحمت خوابیده‌ام.
+why: موسیقی از یک هفته پیش شروع شده و هنوز ادامه دارد، پس «depuis une semaine» با زمان حال. «il y a une semaine» برای یک کار تمام‌شده در گذشته است. «à peine» یعنی «به‌زحمت» و بعد از «j'ai» اسم مفعول می‌آید: «dormi».
+B: Oh, je suis désolé ! C'est mon fils : il a dix-sept ans et il joue de la guitare avec ses copains. | اوه، متأسفم! پسرم است: هفده سالش است و با رفیق‌هایش گیتار می‌زند.
+- Je comprends, il est jeune. Mais je voudrais qu'il fait moins de bruit après vingt-deux heures. | می‌فهمم، جوان است. ولی دلم می‌خواهد بعد از ساعت ده شب کمتر سروصدا کند.
++ Je comprends, il est jeune. Mais je voudrais qu'il fasse moins de bruit après vingt-deux heures. | می‌فهمم، جوان است. ولی دلم می‌خواهد بعد از ساعت ده شب کمتر سروصدا کند.
+- Je comprends, il est jeune. Mais je voudrais faire moins de bruit après vingt-deux heures. | می‌فهمم، جوان است. ولی دلم می‌خواهد خودم بعد از ساعت ده شب کمتر سروصدا کنم.
+why: بعد از «je voudrais que» وجه التزامی می‌آید: «qu'il fasse»؛ fait زمان حال است. وقتی فاعل دو فعل یکی است مصدر می‌آید، پس «je voudrais faire» یعنی خودت کمتر سروصدا کنی، که منظورت نیست.
+B: Vous avez raison. Je vais lui parler ce soir. Mais le samedi, il pourrait jouer un peu plus tard ? | حق با شماست. امشب با او حرف می‌زنم. ولی شنبه‌ها می‌تواند کمی دیرتر بزند؟
+- Le samedi, ce n'est pas un problème : je travaille très tôt le dimanche. | شنبه‌ها مشکلی نیست: یکشنبه‌ها خیلی زود کار می‌کنم.
+- Le samedi, c'est un problème : je ne travaille pas le dimanche. | شنبه‌ها مشکل است: یکشنبه‌ها کار نمی‌کنم.
++ Le samedi, ce n'est pas un problème : je ne travaille pas le dimanche. | شنبه‌ها مشکلی نیست: یکشنبه‌ها کار نمی‌کنم.
+why: چون یکشنبه کار نمی‌کنی، شنبه شب دیر خوابیدن اشکالی ندارد: دلیل با حرف اولت جور است. در دو جواب دیگر دلیل و نتیجه با هم نمی‌خوانند.
+B: Parfait. Et si ça recommence, n'hésitez pas à venir frapper chez nous. | عالی. اگر دوباره تکرار شد، راحت بیایید در خانه ما را بزنید.
++ Merci. Ou alors, j'aimerais que vous me donniez votre numéro : je vous enverrai un message. | ممنون. یا اینکه، دوست دارم شماره‌تان را به من بدهید: برایتان پیام می‌فرستم.
+- Merci. Ou alors, j'aimerais que vous me donnez votre numéro : je vous enverrai un message. | ممنون. یا اینکه، دوست دارم شماره‌تان را به من بدهید: برایتان پیام می‌فرستم.
+- Merci. Ou alors, j'aimerais vous donner votre numéro : je vous enverrai un message. | ممنون. یا اینکه، دوست دارم شماره خودتان را به شما بدهم: برایتان پیام می‌فرستم.
+why: بعد از «j'aimerais que» وجه التزامی می‌آید: «que vous me donniez»؛ donnez زمان حال است. «j'aimerais vous donner votre numéro» یعنی شماره خود او را به او بدهی، که بی‌معنی است.
+B: Bien sûr. Et encore pardon pour le bruit, hein ! De toute façon, ça ne recommencera pas. | حتماً. باز هم بابت سروصدا ببخشید، ها! در هر صورت دیگر تکرار نمی‌شود.
+- C'est très grave, ce sont des choses qui arrivent. Bonne soirée ! | خیلی جدی است، از این چیزها پیش می‌آید. شب خوبی داشته باشید!
++ Ce n'est pas grave, ce sont des choses qui arrivent. Bonne soirée ! | مهم نیست، از این چیزها پیش می‌آید. شب خوبی داشته باشید!
+- Ce n'est pas grave, ce sont des choses que arrivent. Bonne soirée ! | مهم نیست، از این چیزها پیش می‌آید. شب خوبی داشته باشید!
+why: همسایه عذرخواهی کرد و تو با مهربانی جواب می‌دهی: «Ce n'est pas grave». «C'est très grave» با «از این چیزها پیش می‌آید» نمی‌خواند. «des choses» فاعل «arrivent» است، پس qui می‌آید، نه que.

@@ -1,0 +1,39 @@
+code: fr-b1-d023
+title: رد مؤدبانه دعوت همکار
+situation: در دفتر کار هستی. همکارت آنتوان تو را برای شنبه شب به شام دعوت می‌کند، ولی پدر و مادرت جمعه از ایران می‌رسند و نمی‌توانی بروی. در این شرکت همکارها به هم tu می‌گویند.
+turns:
+B: Dis, Sara, samedi soir, je fais un petit dîner chez moi avec quelques collègues. Rien de chic ! Tu viens ? | می‌گویم سارا، شنبه شب یک شام کوچک با چند تا از همکارها در خانه‌ام می‌دهم. هیچ تشریفاتی ندارد! می‌آیی؟
+- C'est vraiment gentil de t'inviter ! Mais samedi, malheureusement, je ne suis pas libre. | واقعاً لطف داری که خودت را دعوت می‌کنی! ولی شنبه متأسفانه وقت ندارم.
++ C'est vraiment gentil de m'inviter ! Mais samedi, malheureusement, je ne suis pas libre. | واقعاً لطف داری که دعوتم می‌کنی! ولی شنبه متأسفانه وقت ندارم.
+- C'est vraiment gentil de m'inviter ! Mais samedi, heureusement, je ne suis pas libre. | واقعاً لطف داری که دعوتم می‌کنی! ولی شنبه خوشبختانه وقت ندارم.
+why: آنتوان تو را دعوت کرده، پس «de m'inviter»؛ «de t'inviter» یعنی خودش را دعوت کرده. برای رد مؤدبانه «malheureusement» (متأسفانه) می‌گوییم؛ «heureusement» (خوشبختانه) یعنی از نرفتن خوشحالی، که بی‌ادبانه است.
+B: Ah, dommage ! Tu as déjà quelque chose de prévu ? | آه، حیف! برنامه دیگری داری؟
+- Oui, mes parents arrivent d'Iran vendredi, et je les ai promis de leur faire visiter Paris. | بله، پدر و مادرم جمعه از ایران می‌رسند و به آن‌ها قول داده‌ام پاریس را نشانشان بدهم.
+- Oui, mes parents arrivent d'Iran vendredi, et je leur ai promis de les faire visiter Paris. | بله، پدر و مادرم جمعه از ایران می‌رسند و به آن‌ها قول داده‌ام پاریس را نشانشان بدهم.
++ Oui, mes parents arrivent d'Iran vendredi, et je leur ai promis de leur faire visiter Paris. | بله، پدر و مادرم جمعه از ایران می‌رسند و به آن‌ها قول داده‌ام پاریس را نشانشان بدهم.
+why: promettre à quelqu'un است، پس «je leur ai promis». در «faire visiter Paris» مفعول اصلی Paris است و کسی که می‌بیند با à می‌آید، پس ضمیرش باز leur است: «leur faire visiter Paris»، نه «les faire visiter».
+B: Ah, c'est normal ! Ils restent combien de temps ? | آه، طبیعی است! چقدر می‌مانند؟
++ Trois semaines. Ça fait deux ans que je ne les ai pas vus. | سه هفته. دو سال است که ندیده‌امشان.
+- Trois semaines. Ça fait deux ans que je ne leur ai pas vus. | سه هفته. دو سال است که ندیده‌امشان.
+- Trois heures. Ça fait deux ans que je ne les ai pas vus. | سه ساعت. دو سال است که ندیده‌امشان.
+why: voir مفعول بی‌واسطه می‌گیرد (voir quelqu'un)، پس «je ne les ai pas vus»، نه leur. کسی سه ساعت از ایران به پاریس نمی‌آید؛ «trois heures» با این سفر جور نیست.
+B: Alors venez tous ensemble, avec tes parents ! | پس همه با هم بیایید، با پدر و مادرت!
+- C'est très gentil, mais ils ne parlent pas français. S'ils le parleraient, ils viendraient avec plaisir. | خیلی لطف داری، ولی فرانسوی بلد نیستند. اگر بلد بودند، با کمال میل می‌آمدند.
++ C'est très gentil, mais ils ne parlent pas français. S'ils le parlaient, ils viendraient avec plaisir. | خیلی لطف داری، ولی فرانسوی بلد نیستند. اگر بلد بودند، با کمال میل می‌آمدند.
+- C'est très gentil, mais ils ne parlent pas français. S'ils le parlaient, ils viennent avec plaisir. | خیلی لطف داری، ولی فرانسوی بلد نیستند. اگر بلد بودند، با کمال میل می‌آیند.
+why: برای فرضِ خلاف واقع: si + ماضی استمراری (parlaient)، بعد وجه شرطی (viendraient). بعد از si وجه شرطی (parleraient) نمی‌آید، و نتیجه هم زمان حال (viennent) نمی‌شود.
+B: Je comprends. Et après leur départ, tu serais libre un samedi ? | می‌فهمم. بعد از رفتنشان چطور، یک شنبه آزادی؟
+- Non, jamais. Je te le dirai dès que mes parents repartiront. | نه، هیچ‌وقت. به محض اینکه پدر و مادرم برگردند، خبرت می‌کنم.
++ Oui, je pense. Je te le dirai dès que mes parents repartiront. | بله، فکر کنم. به محض اینکه پدر و مادرم برگردند، خبرت می‌کنم.
+- Oui, je pense. Je te le dirai dès que mes parents repartiraient. | بله، فکر کنم. به محض اینکه پدر و مادرم برمی‌گشتند، خبرت می‌کنم.
+why: «Non, jamais» با قولِ خبر دادنِ بعدی جور نیست و بی‌ادبانه هم هست. بعد از «dès que» برای آینده، آینده ساده می‌آید: «dès que mes parents repartiront»، نه وجه شرطی «repartiraient».
+B: Super. Et dis-moi, si je voulais faire un plat iranien samedi, qu'est-ce que tu me conseillerais ? | عالی. راستی، اگر بخواهم شنبه یک غذای ایرانی درست کنم، چه پیشنهادی می‌دهی؟
++ Fais cuire du riz avec un peu de safran : tout le monde adore ça ! | برنج را با کمی زعفران بپز: همه عاشقش هستند!
+- Fais cuit du riz avec un peu de safran : tout le monde adore ça ! | برنج را با کمی زعفران بپز: همه عاشقش هستند!
+- Fais cuire du riz avec une peu de safran : tout le monde adore ça ! | برنج را با کمی زعفران بپز: همه عاشقش هستند!
+why: در «faire cuire» بعد از faire مصدر می‌آید: «Fais cuire»، نه «Fais cuit». «un peu de» همیشه با un است، نه «une peu».
+B: Merci pour l'idée ! Et bon séjour à tes parents. | ممنون از پیشنهادت! به پدر و مادرت هم خوش بگذرد.
+- Merci, je le les dirai ! Et passe une bonne soirée samedi. | ممنون، به آن‌ها می‌گویم! تو هم شنبه شب خوبی داشته باش.
++ Merci, je le leur dirai ! Et passe une bonne soirée samedi. | ممنون، به آن‌ها می‌گویم! تو هم شنبه شب خوبی داشته باش.
+- Merci, je le leur dirai ! Et passe une bonne soirée hier. | ممنون، به آن‌ها می‌گویم! دیروز هم شب خوبی داشته باش.
+why: «dire quelque chose à quelqu'un» است، پس برای «به آن‌ها» leur می‌آید: «je le leur dirai»؛ les اینجا غلط است. مهمانی شنبه آینده است، پس «hier» (دیروز) جور نیست.

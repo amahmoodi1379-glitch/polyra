@@ -1,0 +1,39 @@
+code: fr-b1-d005
+title: گم شدن کیف و رفتن به کلانتری
+situation: امروز صبح کیف دستی‌ات را در مترو گم کرده‌ای. به کلانتری رفته‌ای و با یک مأمور پلیس حرف می‌زنی.
+turns:
+B: Bonjour, madame. Je vous écoute. | سلام، خانم. بفرمایید.
+- Bonjour, monsieur. J'ai perdu ma sac à main ce matin, dans le métro. | سلام، آقا. امروز صبح کیف دستی‌ام را در مترو گم کردم.
+- Bonjour, monsieur. J'ai perdu mon sac à main demain matin, dans le métro. | سلام، آقا. فردا صبح کیف دستی‌ام را در مترو گم کردم.
++ Bonjour, monsieur. J'ai perdu mon sac à main ce matin, dans le métro. | سلام، آقا. امروز صبح کیف دستی‌ام را در مترو گم کردم.
+why: sac مذکر است، پس «mon sac»، نه «ma sac». کاری که گذشته است با «demain» (فردا) جور نیست؛ «ce matin» یعنی امروز صبح.
+B: Vous l'avez perdu, ou quelqu'un l'a pris ? | گمش کرده‌اید یا کسی برش داشته؟
++ Je ne sais pas. Quand je suis sortie du métro, il avait disparu. | نمی‌دانم. وقتی از مترو بیرون آمدم، کیفم دیگر نبود.
+- Oui. Quand je suis sortie du métro, il avait disparu. | بله. وقتی از مترو بیرون آمدم، کیفم دیگر نبود.
+- Je ne sais pas. Quand je suis sortie du métro, il disparaîtra. | نمی‌دانم. وقتی از مترو بیرون آمدم، ناپدید خواهد شد.
+why: ناپدید شدن کیف پیش از بیرون آمدنت بوده، پس ماضی بعید: «il avait disparu». «il disparaîtra» آینده است و با گذشته جور نیست. پلیس پرسید «گم شده یا دزدیده شده؟»؛ به سؤال «این یا آن» با «Oui» جواب نمی‌دهیم.
+B: Qu'est-ce qu'il y avait dedans ? | چه چیزهایی تویش بود؟
+- Mon portefeuille, mes clés, et surtout un carnet que j'ai besoin pour mon travail. | کیف پولم، کلیدهایم، و مخصوصاً دفترچه‌ای که برای کارم لازمش دارم.
++ Mon portefeuille, mes clés, et surtout un carnet dont j'ai besoin pour mon travail. | کیف پولم، کلیدهایم، و مخصوصاً دفترچه‌ای که برای کارم لازمش دارم.
+- Mon portefeuille, mes clés, et surtout un carnet où j'ai besoin pour mon travail. | کیف پولم، کلیدهایم، و مخصوصاً دفترچه‌ای که برای کارم لازمش دارم.
+why: «avoir besoin de» با de می‌آید، پس ضمیر موصولی‌اش dont است: «un carnet dont j'ai besoin». que برای مفعول بی‌واسطه است و où برای مکان و زمان.
+B: Il y avait de l'argent dans votre portefeuille ? | در کیف پولتان پول بود؟
+- Beaucoup. Je n'avais que vingt euros, mais il y avait aussi ma carte de crédit. | خیلی. فقط بیست یورو داشتم، ولی کارت بانکی‌ام هم بود.
+- Pas beaucoup. Je n'avais pas que vingt euros, mais il y avait aussi ma carte de crédit. | زیاد نه. نه فقط بیست یورو داشتم، ولی کارت بانکی‌ام هم بود.
++ Pas beaucoup. Je n'avais que vingt euros, mais il y avait aussi ma carte de crédit. | زیاد نه. فقط بیست یورو داشتم، ولی کارت بانکی‌ام هم بود.
+why: «ne … que» یعنی «فقط»: «je n'avais que vingt euros»، که با «Pas beaucoup» جور است. «ne … pas que» یعنی «نه فقط» و برعکس است. «Beaucoup» با «فقط بیست یورو» نمی‌خواند.
+B: Vous avez prévenu votre banque ? | به بانکتان خبر داده‌اید؟
++ Oui, je l'ai prévenue avant de venir ici. | بله، قبل از آمدن به اینجا به آن خبر دادم.
+- Oui, je lui ai prévenu avant de venir ici. | بله، قبل از آمدن به اینجا به آن خبر دادم.
+- Non, je l'ai prévenue avant de venir ici. | نه، قبل از آمدن به اینجا به آن خبر دادم.
+why: prévenir مفعول بی‌واسطه می‌گیرد (prévenir quelqu'un)، پس «je l'ai prévenue»، نه «je lui ai». «Non» با بقیه جمله جور نیست، چون می‌گویی خبر داده‌ای.
+B: Bien. Vous pouvez me donner un numéro où on peut vous joindre ? | خوب. می‌توانید شماره‌ای بدهید که بشود با شما تماس گرفت؟
+- Oui, c'est le 06 12 34 56 78. Malheureusement, mon téléphone était dans ma poche. | بله، ۰۶۱۲۳۴۵۶۷۸. متأسفانه تلفنم در جیبم بود. | tts: Oui, c'est le zéro six, douze, trente-quatre, cinquante-six, soixante-dix-huit. Malheureusement, mon téléphone était dans ma poche.
++ Oui, c'est le 06 12 34 56 78. Heureusement, mon téléphone était dans ma poche. | بله، ۰۶۱۲۳۴۵۶۷۸. خوشبختانه تلفنم در جیبم بود. | tts: Oui, c'est le zéro six, douze, trente-quatre, cinquante-six, soixante-dix-huit. Heureusement, mon téléphone était dans ma poche.
+- Non, c'est le 06 12 34 56 78. Heureusement, mon téléphone était dans ma poche. | نه، ۰۶۱۲۳۴۵۶۷۸. خوشبختانه تلفنم در جیبم بود. | tts: Non, c'est le zéro six, douze, trente-quatre, cinquante-six, soixante-dix-huit. Heureusement, mon téléphone était dans ma poche.
+why: تلفنت گم نشده و این خوب است، پس «Heureusement» (خوشبختانه)؛ «Malheureusement» یعنی متأسفانه. «Non» با شماره‌ای که می‌دهی جور نیست.
+B: Merci. Si quelqu'un rapporte votre sac, nous vous appellerons tout de suite. | ممنون. اگر کسی کیفتان را بیاورد، فوراً به شما زنگ می‌زنیم.
+- Merci beaucoup. J'espère que quelqu'un le trouvait. | خیلی ممنون. امیدوارم کسی پیدایش می‌کرد.
++ Merci beaucoup. J'espère que quelqu'un le trouvera. | خیلی ممنون. امیدوارم کسی پیدایش کند.
+- Merci beaucoup. J'espère que personne le trouvera. | خیلی ممنون. امیدوارم هیچ‌کس پیدایش نکند.
+why: بعد از «j'espère que» برای آینده، آینده ساده می‌آید: «quelqu'un le trouvera»؛ «trouvait» ماضی استمراری است. تو می‌خواهی کیفت پیدا شود، پس «personne» (هیچ‌کس) معنی را برعکس می‌کند.

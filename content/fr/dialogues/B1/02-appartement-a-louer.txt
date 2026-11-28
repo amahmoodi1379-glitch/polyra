@@ -1,0 +1,39 @@
+code: fr-b1-d002
+title: تلفن برای اجاره آپارتمان
+situation: آپارتمانی نزدیک دانشگاه برای اجاره پیدا کرده‌ای و به صاحبخانه، آقای مورو، زنگ می‌زنی تا بپرسی هنوز خالی است یا نه.
+turns:
+B: Allô, oui ? | الو، بله؟
+- Bonjour, monsieur. Je vous appelle pour l'appartement à louer. Vous êtes toujours libre ? | سلام آقا. برای آپارتمان اجاره‌ای زنگ می‌زنم. شما هنوز وقتتان آزاد است؟
++ Bonjour, monsieur. Je vous appelle pour l'appartement à louer. Il est toujours libre ? | سلام آقا. برای آپارتمان اجاره‌ای زنگ می‌زنم. هنوز خالی است؟
+- Salut ! C'est pour l'appartement. Il est encore libre ? | سلام! برای آپارتمان است. هنوز خالی است؟
+why: می‌خواهی بدانی آپارتمان (il) هنوز خالی است؛ «Vous êtes toujours libre» درباره خود صاحبخانه است. با غریبه پشت تلفن Salut نمی‌گوییم و خودت را معرفی می‌کنی.
+B: Oui, il est encore libre. Il a deux pièces, au troisième étage, mais il n'y a pas d'ascenseur. | بله، هنوز خالی است. دو اتاق دارد، طبقه سوم، ولی آسانسور ندارد.
++ Ça ne me dérange pas. Et le loyer, c'est combien par mois ? | برایم مهم نیست. اجاره‌اش ماهی چقدر است؟
+- Ça ne me dérange pas. Et l'ascenseur, il est de quel côté ? | برایم مهم نیست. آسانسورش کدام طرف است؟
+- Ça ne te dérange pas ? Et le loyer, c'est combien par mois ? | برای تو مهم نیست؟ اجاره‌اش ماهی چقدر است؟
+why: «Ça ne me dérange pas» یعنی «برای من مهم نیست، اذیتم نمی‌کند». صاحبخانه گفت آسانسور ندارد، پس سؤال از جای آسانسور بی‌معنی است. «Ça ne te dérange pas» از خود او می‌پرسد، آن هم با tu.
+B: Huit cents euros par mois, avec le chauffage et l'électricité. | ماهی هشتصد یورو، با گرمایش و برق.
+- C'est un peu cher pour moi, mais je voudrais bien la voir. Ce serait possible cette semaine ? | برایم کمی گران است، ولی دوست دارم آن (زن) را ببینم. این هفته ممکن است؟
+- C'est un peu cher pour moi, parce que je voudrais bien le voir. Ce serait possible cette semaine ? | برایم کمی گران است، چون دوست دارم ببینمش. این هفته ممکن است؟
++ C'est un peu cher pour moi, mais je voudrais bien le voir. Ce serait possible cette semaine ? | برایم کمی گران است، ولی دوست دارم ببینمش. این هفته ممکن است؟
+why: appartement مذکر است، پس ضمیرش le است: «je voudrais bien le voir»؛ la برای اسم مؤنث است. «parce que» اینجا بی‌معنی است: دیدن آپارتمان دلیل گرانی‌اش نیست؛ «mais» تضاد را درست نشان می‌دهد.
+B: Oui, bien sûr. Jeudi à dix-huit heures, ça vous irait ? | بله، حتماً. پنجشنبه ساعت شش عصر برایتان مناسب است؟
+- Jeudi, je ne pourrais pas : j'ai eu cours jusqu'à dix-neuf heures. Et vendredi ? | پنجشنبه نمی‌توانم: تا ساعت هفت کلاس داشتم. جمعه چطور؟
+- Jeudi, je ne pourrais pas : j'ai cours jusqu'à dix-neuf heures. Et jeudi à dix-huit heures ? | پنجشنبه نمی‌توانم: تا ساعت هفت کلاس دارم. پنجشنبه ساعت شش چطور؟
++ Jeudi, je ne pourrais pas : j'ai cours jusqu'à dix-neuf heures. Et vendredi ? | پنجشنبه نمی‌توانم: تا ساعت هفت کلاس دارم. جمعه چطور؟
+why: کلاس پنجشنبه برنامه ثابت آینده است، پس زمان حال: «j'ai cours»؛ «j'ai eu cours» گذشته است. همان ساعتی را که او پیشنهاد داد و تو نمی‌توانی، دوباره پیشنهاد نمی‌دهی.
+B: Vendredi, d'accord. Mais il vaut mieux apporter tous vos papiers : beaucoup de gens ont déjà appelé. | جمعه، باشد. ولی بهتر است همه مدارکتان را بیاورید: خیلی‌ها تا حالا زنگ زده‌اند.
++ Merci du conseil. J'apporterai mes papiers et ceux de mes parents. | ممنون از راهنمایی‌تان. مدارک خودم و مدارک پدر و مادرم را می‌آورم.
+- Merci du conseil. J'apporterai mes papiers et celles de mes parents. | ممنون از راهنمایی‌تان. مدارک خودم و مال پدر و مادرم را می‌آورم.
+- Merci du conseil. J'apportais mes papiers et ceux de mes parents. | ممنون از راهنمایی‌تان. مدارک خودم و پدر و مادرم را می‌آوردم.
+why: papiers مذکر جمع است، پس «ceux de mes parents»؛ celles برای اسم مؤنث جمع است. قولی که برای جمعه می‌دهی آینده است: «j'apporterai»؛ «j'apportais» ماضی استمراری است.
+B: Vos parents, d'accord. Et vous, vous travaillez ? | پدر و مادرتان، باشد. خودتان کار می‌کنید؟
+- Oui, je travaille le week-end dans une librairie il y a deux mois. | بله، دو ماه پیش آخر هفته‌ها در یک کتاب‌فروشی کار می‌کنم.
++ Oui, je travaille le week-end dans une librairie depuis deux mois. | بله، دو ماه است آخر هفته‌ها در یک کتاب‌فروشی کار می‌کنم.
+- Non, je travaille le week-end dans une librairie depuis deux mois. | نه، دو ماه است آخر هفته‌ها در یک کتاب‌فروشی کار می‌کنم.
+why: کاری که دو ماه پیش شروع شده و هنوز ادامه دارد با «depuis» و زمان حال می‌آید. «il y a» با زمان حال اینجا غلط است. «Non» با بقیه جمله جور نیست، چون می‌گویی کار می‌کنی.
+B: Très bien. Alors à vendredi, dix-huit heures. C'est au 12, rue de la Paix. | خیلی خوب. پس جمعه ساعت شش عصر. نشانی: خیابان صلح، پلاک ۱۲. | tts: Très bien. Alors à vendredi, dix-huit heures. C'est au douze, rue de la Paix.
+- D'accord. Merci beaucoup, monsieur. À tout à l'heure ! | باشد. خیلی ممنون، آقا. تا چند دقیقه دیگر!
++ D'accord. Merci beaucoup, monsieur. À vendredi ! | باشد. خیلی ممنون، آقا. تا جمعه!
+- D'accord. Merci beaucoup, mon chéri. À vendredi ! | باشد. خیلی ممنون، عزیزم. تا جمعه!
+why: قرار برای جمعه است، پس «À vendredi»؛ «À tout à l'heure» برای کسی است که همان روز دوباره می‌بینی. به صاحبخانه «mon chéri» نمی‌گوییم؛ این برای همسر یا عزیز است.

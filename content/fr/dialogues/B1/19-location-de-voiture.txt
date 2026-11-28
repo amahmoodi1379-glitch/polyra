@@ -1,0 +1,44 @@
+code: fr-b1-d019
+title: اجاره ماشین برای آخر هفته
+situation: با همسرت برای آخر هفته به پرووانس می‌روید. با تاکسی به دفتر یک شرکت اجاره ماشین در مارسی آمده‌اید و کارمند با تو حرف می‌زند. همسرت هنوز بیرون، کنار تاکسی است.
+turns:
+B: Bonjour, madame. Vous avez réservé ? | سلام، خانم. رزرو کرده‌اید؟
+- Non, au nom de Karimi. J'ai réservé une petite voiture pour le week-end. | نه، به اسم کریمی. یک ماشین کوچک برای آخر هفته رزرو کرده‌ام.
++ Oui, au nom de Karimi. J'ai réservé une petite voiture pour le week-end. | بله، به اسم کریمی. یک ماشین کوچک برای آخر هفته رزرو کرده‌ام.
+- Oui, au nom de Karimi. Je réserverai une petite voiture pour le week-end. | بله، به اسم کریمی. یک ماشین کوچک برای آخر هفته رزرو خواهم کرد.
+why: رزرو قبلاً انجام شده، پس «Oui» و گذشته «j'ai réservé». «Non» با بقیه جمله جور نیست، و «je réserverai» آینده است.
+B: Je vous ai trouvée. Vous avez besoin d'un siège pour enfant ? | پیدایتان کردم. صندلی بچه لازم دارید؟
++ Non, je n'en ai pas besoin : nous partons à deux, mon mari et moi. | نه، لازمش ندارم: دو نفری می‌رویم، من و همسرم.
+- Non, je n'y ai pas besoin : nous partons à deux, mon mari et moi. | نه، لازمش ندارم: دو نفری می‌رویم، من و همسرم.
+- Oui, je n'en ai pas besoin : nous partons à deux, mon mari et moi. | بله، لازمش ندارم: دو نفری می‌رویم، من و همسرم.
+why: «avoir besoin de» با de است، پس ضمیرش en است: «je n'en ai pas besoin»؛ y برای فعل‌های با à است. «Oui» با «لازمش ندارم» جور نیست.
+B: J'ai deux voitures libres : une rouge et une grise. Laquelle vous préférez ? | دو ماشین آزاد دارم: یکی قرمز و یکی خاکستری. کدام را ترجیح می‌دهید؟
+- Le gris, s'il vous plaît. Elle a l'air plus grande, et nous avons beaucoup de bagages. | خاکستری را، لطفاً. بزرگ‌تر به نظر می‌رسد و ما بار زیادی داریم.
+- La grise, s'il vous plaît. Elle a l'air plus petite, et nous avons beaucoup de bagages. | خاکستری را، لطفاً. کوچک‌تر به نظر می‌رسد و ما بار زیادی داریم.
++ La grise, s'il vous plaît. Elle a l'air plus grande, et nous avons beaucoup de bagages. | خاکستری را، لطفاً. بزرگ‌تر به نظر می‌رسد و ما بار زیادی داریم.
+why: voiture مؤنث است، پس «la grise»، نه «le gris». با بار زیاد ماشین بزرگ‌تر را می‌خواهی، پس «plus petite» دلیل درستی نیست.
+B: Le coffre est très grand, vous verrez. Vous allez conduire tous les deux ? | صندوق عقبش خیلی بزرگ است، می‌بینید. هر دو رانندگی می‌کنید؟
+- Oui, chacun conduiront la moitié du trajet. | بله، هر کدام نصف راه را رانندگی می‌کنیم.
++ Oui, chacun conduira la moitié du trajet. | بله، هر کدام نصف راه را رانندگی می‌کند.
+- Oui, personne conduira la moitié du trajet. | بله، هیچ‌کس نصف راه را رانندگی نمی‌کند.
+why: chacun (هر کدام) مفرد است، پس فعلش هم مفرد می‌آید: «chacun conduira»، نه «conduiront». «personne» یعنی «هیچ‌کس» و با «Oui» و منظورت جور نیست.
+B: Alors il me faut aussi le permis de conduire de votre mari. | پس گواهینامه همسرتان را هم لازم دارم.
+- Il est déjà parti : il est en train de payer le taxi. | او قبلاً رفته: دارد پول تاکسی را می‌دهد.
++ Il arrive tout de suite : il est en train de payer le taxi. | الان می‌آید: دارد پول تاکسی را می‌دهد.
+- Il arrive tout de suite : il est en train payer le taxi. | الان می‌آید: دارد پول تاکسی را می‌دهد.
+why: برای کاری که همین حالا در جریان است «être en train de» + مصدر می‌گوییم و de را نمی‌شود انداخت: «il est en train de payer le taxi». کسی که «رفته» نمی‌تواند همان لحظه آنجا پول تاکسی را بدهد و الان برسد.
+B: Parfait. On a fait le plein d'essence : pensez à le faire aussi avant de rendre la voiture. | عالی. باک را پر کرده‌ایم: یادتان باشد شما هم قبل از تحویل ماشین پرش کنید.
++ D'accord, j'y penserai. Il y a une station près de l'agence ? | باشد، یادم می‌ماند. نزدیک دفتر پمپ‌بنزین هست؟
+- D'accord, j'en penserai. Il y a une station près de l'agence ? | باشد، یادم می‌ماند. نزدیک دفتر پمپ‌بنزین هست؟
+- D'accord, je lui penserai. Il y a une station près de l'agence ? | باشد، یادم می‌ماند. نزدیک دفتر پمپ‌بنزین هست؟
+why: «penser à quelque chose» با à است، پس ضمیرش y است: «j'y penserai». en برای فعل‌های با de است، و lui برای «به کسی» با فعل‌هایی مثل parler؛ با penser برای چیزها فقط y می‌آید.
+B: Oui, juste en face. Et vous me la rapportez dimanche avant dix-neuf heures, d'accord ? | بله، درست روبه‌رو. و یکشنبه قبل از ساعت هفت عصر آن را برایم برمی‌گردانید، باشد؟
+- D'accord. Je la vous rapporterai dès que nous serons de retour. | باشد. به محض اینکه برگشتیم آن را برایتان برمی‌گردانم.
++ D'accord. Je vous la rapporterai dès que nous serons de retour. | باشد. به محض اینکه برگشتیم آن را برایتان برمی‌گردانم.
+- D'accord. Je vous la rapporterai dès que nous serions de retour. | باشد. به محض اینکه برمی‌گشتیم آن را برایتان برمی‌گردانم.
+why: وقتی دو ضمیر کنار هم می‌آیند، vous پیش از la می‌آید: «je vous la rapporterai». بعد از «dès que» برای آینده، آینده ساده می‌آید: «dès que nous serons»، نه وجه شرطی «serions».
+B: Parfait. Bonne route, et profitez bien de la Provence ! | عالی. سفر بخیر، و از پرووانس حسابی لذت ببرید!
+- Merci, on va y profiter ! Bonne fin de journée ! | ممنون، حسابی لذت می‌بریم! روزتان خوش!
+- Merci, on va le profiter ! Bonne fin de journée ! | ممنون، حسابی لذت می‌بریم! روزتان خوش!
++ Merci, on va en profiter ! Bonne fin de journée ! | ممنون، حسابی لذت می‌بریم! روزتان خوش!
+why: «profiter de» با de می‌آید، پس ضمیرش en است: «on va en profiter». y برای à است و le مفعول بی‌واسطه، و profiter هیچ‌کدام را نمی‌گیرد.

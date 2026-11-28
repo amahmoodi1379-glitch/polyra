@@ -1,0 +1,39 @@
+code: fr-b1-d009
+title: تعمیر گوشی
+situation: دیروز گوشی‌ات زمین افتاد و حالا صفحه‌اش کار نمی‌کند. در یک تعمیرگاه موبایل هستی و تعمیرکار با تو حرف می‌زند.
+turns:
+B: Bonjour, madame. Qu'est-ce qui ne va pas avec votre téléphone ? | سلام، خانم. گوشی‌تان چه مشکلی دارد؟
+- Bonjour. Il a tombé par terre hier, et depuis, l'écran ne marche plus. | سلام. دیروز افتاد زمین و از آن موقع صفحه‌اش کار نمی‌کند.
++ Bonjour. Il est tombé par terre hier, et depuis, l'écran ne marche plus. | سلام. دیروز افتاد زمین و از آن موقع صفحه‌اش کار نمی‌کند.
+- Bonjour. Il est tombé par terre demain, et depuis, l'écran ne marche plus. | سلام. فردا افتاد زمین و از آن موقع صفحه‌اش کار نمی‌کند.
+why: tomber در گذشته با être صرف می‌شود: «il est tombé»، نه «il a tombé». افتادن گوشی گذشته است، پس با demain (فردا) جور نیست.
+B: Montrez-moi… Ah oui, l'écran est complètement cassé. Il faut le changer. | نشانم بدهید… آه بله، صفحه کاملاً شکسته. باید عوضش کرد.
+- C'est ce qui je craignais. Ça va coûter combien ? | همان چیزی است که از آن می‌ترسیدم. چقدر خرج دارد؟
++ C'est ce que je craignais. Ça va coûter combien ? | همان چیزی است که از آن می‌ترسیدم. چقدر خرج دارد؟
+- C'est ce que je craindrai. Ça va coûter combien ? | همان چیزی است که از آن خواهم ترسید. چقدر خرج دارد؟
+why: «ce que» مفعول فعل بعدی است و اینجا فاعل je است: «ce que je craignais»؛ «ce qui» فقط وقتی می‌آید که خودش فاعل باشد. ترسیدن پیش از حرف تعمیرکار بوده، پس ماضی استمراری، نه آینده.
+B: Cent vingt euros, avec le nouvel écran et le travail. | صدوبیست یورو، با صفحه نو و دستمزد.
++ D'accord. Mais j'ai peur que vous perdiez toutes mes photos. | باشد. ولی می‌ترسم همه عکس‌هایم را از بین ببرید.
+- D'accord. Mais j'ai peur que vous perdez toutes mes photos. | باشد. ولی می‌ترسم همه عکس‌هایم را از بین ببرید.
+- D'accord. Mais j'ai peur de perdre toutes vos photos. | باشد. ولی می‌ترسم همه عکس‌های شما را از بین ببرم.
+why: بعد از «avoir peur que» وجه التزامی می‌آید: «que vous perdiez»؛ perdez زمان حال است. «j'ai peur de perdre toutes vos photos» یعنی خودت عکس‌های او را از بین ببری، که منظورت نیست.
+B: Ne vous faites aucun souci, on ne touche pas aux photos. Mais il vaut mieux les garder aussi sur un ordinateur. | نگران نباشید، ما به عکس‌ها دست نمی‌زنیم. ولی بهتر است آن‌ها را روی کامپیوتر هم نگه دارید.
+- C'est déjà fait : heureusement, je les avais mis sur mon ordinateur deux jours avant. | قبلاً انجامش داده‌ام: خوشبختانه دو روز قبلش آن‌ها را روی کامپیوترم گذاشته بودم.
+- C'est déjà fait : heureusement, je les mettrai sur mon ordinateur deux jours avant. | قبلاً انجامش داده‌ام: خوشبختانه دو روز قبلش آن‌ها را روی کامپیوترم خواهم گذاشت.
++ C'est déjà fait : heureusement, je les avais mises sur mon ordinateur deux jours avant. | قبلاً انجامش داده‌ام: خوشبختانه دو روز قبلش آن‌ها را روی کامپیوترم گذاشته بودم.
+why: کار پیش از افتادن گوشی انجام شده، پس ماضی بعید. les (همان photos) مؤنث جمع است و پیش از فعل آمده، پس اسم مفعول با آن مطابقت می‌کند: «je les avais mises». «je les mettrai» آینده است و با «C'est déjà fait» نمی‌خواند.
+B: Parfait. Vous pourrez récupérer votre téléphone jeudi après-midi. | عالی. پنجشنبه بعدازظهر می‌توانید گوشی‌تان را تحویل بگیرید.
++ Jeudi ? Je suis contente que ce soit aussi rapide ! | پنجشنبه؟ خوشحالم که این‌قدر زود است!
+- Jeudi ? Je suis contente que c'est aussi rapide ! | پنجشنبه؟ خوشحالم که این‌قدر زود است!
+- Jeudi ? Je suis triste que ce soit aussi rapide ! | پنجشنبه؟ ناراحتم که این‌قدر زود است!
+why: بعد از احساس‌هایی مثل «être content que» وجه التزامی می‌آید: «que ce soit»؛ «c'est» زمان حال است. زود آماده شدن خبر خوبی است و ناراحتی (triste) با آن جور نیست.
+B: Mais jusqu'à jeudi, vous n'aurez pas de téléphone. Vous voulez qu'on vous prête un vieux téléphone ? | ولی تا پنجشنبه گوشی ندارید. می‌خواهید یک گوشی قدیمی به شما قرض بدهیم؟
+- Oh oui, avec plaisir ! Pourtant, je ne pourrai joindre personne. | آه بله، با کمال میل! با این حال، با هیچ‌کس نمی‌توانم تماس بگیرم.
+- Oh oui, avec plaisir ! Sinon, je pourrai joindre tout le monde. | آه بله، با کمال میل! وگرنه با همه می‌توانم تماس بگیرم.
++ Oh oui, avec plaisir ! Sinon, je ne pourrai joindre personne. | آه بله، با کمال میل! وگرنه با هیچ‌کس نمی‌توانم تماس بگیرم.
+why: «sinon» یعنی «وگرنه»: اگر گوشی قرض نگیری، با هیچ‌کس نمی‌توانی تماس بگیری. «pourtant» (با این حال) اینجا بی‌معنی است، و «je pourrai joindre tout le monde» دلیلِ برعکس است.
+B: Voilà. Il faut juste que vous signiez ici, et c'est tout. | بفرمایید. فقط باید اینجا را امضا کنید و تمام.
++ Voilà. Merci beaucoup, vous m'avez vraiment rendu service. | بفرمایید. خیلی ممنون، واقعاً لطف کردید.
+- Voilà. Merci beaucoup, je vous ai vraiment rendu service. | بفرمایید. خیلی ممنون، واقعاً به شما لطف کردم.
+- Voilà. Merci beaucoup, tu m'as vraiment rendu service. | بفرمایید. خیلی ممنون، واقعاً لطف کردی.
+why: تعمیرکار به تو کمک کرده: «vous m'avez rendu service». «je vous ai rendu service» برعکس است و یعنی تو به او لطف کرده‌ای. با تعمیرکاری که نمی‌شناسی tu نمی‌گوییم.

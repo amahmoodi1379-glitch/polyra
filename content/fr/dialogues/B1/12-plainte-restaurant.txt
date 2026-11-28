@@ -1,0 +1,39 @@
+code: fr-b1-d012
+title: شکایت در رستوران
+situation: با یک دوست در رستوران هستی. پیشخدمت غذای اشتباهی برایت آورده و حالا می‌آید ببیند همه‌چیز خوب است یا نه.
+turns:
+B: Tout se passe bien, madame ? | همه‌چیز خوب است، خانم؟
+- Oui, très bien, merci. Je crois qu'il y a une erreur : ce n'est pas ce que j'ai commandé. | بله، خیلی خوب، ممنون. فکر کنم اشتباهی شده: این چیزی نیست که سفارش دادم.
++ Pas vraiment, excusez-moi. Je crois qu'il y a une erreur : ce n'est pas ce que j'ai commandé. | راستش نه، ببخشید. فکر کنم اشتباهی شده: این چیزی نیست که سفارش دادم.
+- Pas vraiment, excusez-moi. Je crois qu'il y a une erreur : ce n'est pas ce qui j'ai commandé. | راستش نه، ببخشید. فکر کنم اشتباهی شده: این چیزی نیست که سفارش دادم.
+why: «ce que» مفعول «j'ai commandé» است، پس que می‌آید، نه qui. اگر بگویی «Oui, très bien» و بعد از اشتباه شکایت کنی، حرفت با خودش نمی‌خواند.
+B: Ah bon ? Qu'est-ce que vous aviez commandé ? | جدی؟ چه سفارش داده بودید؟
+- Je demanderai le poisson du jour, et vous m'avez apporté du poulet. | ماهی روز را سفارش خواهم داد، و شما برایم مرغ آوردید.
+- J'avais demandé le poisson du jour, et vous m'avez apporté de la poulet. | ماهی روز را خواسته بودم، و شما برایم مرغ آوردید.
++ J'avais demandé le poisson du jour, et vous m'avez apporté du poulet. | ماهی روز را خواسته بودم، و شما برایم مرغ آوردید.
+why: سفارش پیش از آوردن غذا بوده، پس ماضی بعید: «j'avais demandé»؛ «je demanderai» آینده است. poulet مذکر است، پس «du poulet»، نه «de la poulet».
+B: Oh, je suis vraiment désolé ! Je vais vous chercher le poisson tout de suite. | اوه، واقعاً متأسفم! همین الان می‌روم ماهی را برایتان بیاورم.
++ Merci. Faites vite, s'il vous plaît : mon amie est en train de finir, et moi, je n'ai encore rien mangé. | ممنون. لطفاً زود باشید: دوستم دارد غذایش را تمام می‌کند و من هنوز هیچ چیز نخورده‌ام.
+- Merci. Faites vite, s'il vous plaît : mon amie est en train finir, et moi, je n'ai encore rien mangé. | ممنون. لطفاً زود باشید: دوستم دارد غذایش را تمام می‌کند و من هنوز هیچ چیز نخورده‌ام.
+- Merci. Faites vite, s'il vous plaît : mon amie est en train de finir, et moi, j'ai déjà tout mangé. | ممنون. لطفاً زود باشید: دوستم دارد غذایش را تمام می‌کند و من همه‌اش را خورده‌ام.
+why: «être en train de» همیشه با de و مصدر می‌آید: «en train de finir». غذای تو هنوز نیامده، پس «j'ai déjà tout mangé» با موقعیت جور نیست.
+B: Voilà votre poisson, madame. Encore pardon pour l'attente. | بفرمایید ماهی‌تان، خانم. باز هم بابت معطلی ببخشید.
+- Merci… Mais il est trop chaud. Vous pourriez le remettre au four quelques minutes ? | ممنون… ولی خیلی داغ است. می‌شود چند دقیقه دوباره بگذاریدش توی فر؟
++ Merci… Mais il est à peine chaud. Vous pourriez le remettre au four quelques minutes ? | ممنون… ولی به‌زحمت گرم است. می‌شود چند دقیقه دوباره بگذاریدش توی فر؟
+- Merci… Mais il est à peine chaud. Vous pourriez la remettre au four quelques minutes ? | ممنون… ولی به‌زحمت گرم است. می‌شود چند دقیقه دوباره بگذاریدش توی فر؟
+why: «à peine chaud» یعنی «به‌زحمت گرم»، پس دلیل خوبی برای گرم کردن دوباره است؛ غذای خیلی داغ را دوباره در فر نمی‌گذارند. poisson مذکر است، پس ضمیرش le است، نه la.
+B: Oh non, je suis désolé… Je demande au cuisinier d'en refaire un. | ای وای، متأسفم… به آشپز می‌گویم یکی دیگر درست کند.
+- D'accord. Quand il serait prêt, vous pourrez apporter l'addition en même temps ? | باشد. وقتی آماده می‌بود، می‌توانید صورت‌حساب را هم با آن بیاورید؟
++ D'accord. Quand il sera prêt, vous pourrez apporter l'addition en même temps ? | باشد. وقتی آماده شد، می‌توانید صورت‌حساب را هم با آن بیاورید؟
+- D'accord. Quand il était prêt, vous pourrez apporter l'addition en même temps ? | باشد. وقتی آماده بود، می‌توانید صورت‌حساب را هم با آن بیاورید؟
+why: آماده شدن غذا در آینده است و بعد از quand برای آینده، آینده ساده می‌آید: «quand il sera prêt». نه وجه شرطی (serait) جا دارد و نه ماضی استمراری (était).
+B: Bien sûr. Et pour nous excuser, on vous offre le dessert et les cafés. | حتماً. و برای عذرخواهی، دسر و قهوه‌ها مهمان ما هستید.
+- C'est très gentil ! Et arrêtez de m'excuser, ce n'est pas grave. | خیلی لطف دارید! و دیگر مرا نبخشید، مهم نیست.
+- C'est très gentil ! Et continuez à vous excuser, ce n'est pas grave. | خیلی لطف دارید! و به عذرخواهی ادامه بدهید، مهم نیست.
++ C'est très gentil ! Et arrêtez de vous excuser, ce n'est pas grave. | خیلی لطف دارید! و دیگر عذرخواهی نکنید، مهم نیست.
+why: «arrêter de» یعنی دست کشیدن از کاری: «arrêtez de vous excuser» یعنی «دیگر عذرخواهی نکنید». s'excuser با vous می‌شود «vous excuser»؛ «m'excuser» درباره خودت است. «continuez à vous excuser» یعنی «به عذرخواهی ادامه بدهید» و با «مهم نیست» نمی‌خواند.
+B: Alors, ce nouveau poisson, il vous plaît ? | خب، این ماهی تازه به دلتان نشست؟
++ Il est excellent ! Ça valait la peine d'attendre. | عالی است! ارزش صبر کردن را داشت.
+- Il est excellente ! Ça valait la peine d'attendre. | عالی است! ارزش صبر کردن را داشت.
+- Il est excellent ! Ça ne valait pas la peine d'attendre. | عالی است! ارزش صبر کردن را نداشت.
+why: poisson مذکر است، پس صفتش «excellent» است، نه «excellente». وقتی غذا عالی است، «ارزش صبر کردن را داشت»: «Ça valait la peine»؛ جمله منفی با «Il est excellent» نمی‌خواند.

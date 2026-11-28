@@ -1,0 +1,39 @@
+code: fr-b1-d014
+title: عوض کردن اتاق هتل
+situation: شب است و در یک هتل در مارسی هستی. پنجره اتاقت رو به یک خیابان شلوغ است و از سروصدا خوابت نمی‌برد. به پذیرش پایین رفته‌ای و با کارمند پذیرش حرف می‌زنی.
+turns:
+B: Bonsoir, madame. Que puis-je faire pour vous ? | عصر بخیر، خانم. چه کاری از دستم برمی‌آید؟
+- Bonsoir. Je suis dans la chambre 312, et je voudrais la changer, si c'est possible. | عصر بخیر. در اتاق ۳۱۲ هستم و اگر بشود می‌خواهم خودِ اتاق را تغییر بدهم. | tts: Bonsoir. Je suis dans la chambre trois cent douze, et je voudrais la changer, si c'est possible.
++ Bonsoir. Je suis dans la chambre 312, et je voudrais en changer, si c'est possible. | عصر بخیر. در اتاق ۳۱۲ هستم و اگر بشود می‌خواهم اتاقم را عوض کنم. | tts: Bonsoir. Je suis dans la chambre trois cent douze, et je voudrais en changer, si c'est possible.
+- Bonsoir. Je suis dans la chambre 312, et je voudrais y changer, si c'est possible. | عصر بخیر. در اتاق ۳۱۲ هستم و اگر بشود می‌خواهم آنجا عوض کنم. | tts: Bonsoir. Je suis dans la chambre trois cent douze, et je voudrais y changer, si c'est possible.
+why: «عوض کردن اتاق» در فرانسوی «changer de chambre» است و چون با de می‌آید، ضمیرش en است: «en changer». «la changer» یعنی خودِ اتاق را تغییر بدهی، و y اینجا جا ندارد.
+B: Il y a un problème avec la chambre ? | اتاق مشکلی دارد؟
++ Elle donne sur une rue très bruyante. Même en fermant la fenêtre, j'entends toutes les voitures. | پنجره‌اش رو به یک خیابان خیلی پرسروصداست. حتی وقتی پنجره را می‌بندم، صدای همه ماشین‌ها را می‌شنوم.
+- Elle donne sur une rue très bruyante. Même en fermer la fenêtre, j'entends toutes les voitures. | پنجره‌اش رو به یک خیابان خیلی پرسروصداست. حتی وقتی پنجره را می‌بندم، صدای همه ماشین‌ها را می‌شنوم.
+- Elle donne sur une rue très calme. Même en fermant la fenêtre, j'entends toutes les voitures. | پنجره‌اش رو به یک خیابان خیلی آرام است. حتی وقتی پنجره را می‌بندم، صدای همه ماشین‌ها را می‌شنوم.
+why: بعد از en شکل فعلی می‌آید که به ant ختم می‌شود: «en fermant» (موقع بستن)، نه مصدر «en fermer». اگر خیابان آرام (calme) بود، صدای ماشین‌ها دلیلی نداشت.
+B: Je suis désolé. Malheureusement, l'hôtel est presque complet ce soir. | متأسفم. متأسفانه امشب هتل تقریباً پر است.
+- Je comprends. Mais vous n'auriez pas une chambre du même côté, même plus petite ? | می‌فهمم. ولی اتاقی در همین طرف ندارید، حتی کوچک‌تر؟
++ Je comprends. Mais vous n'auriez pas une chambre de l'autre côté, même plus petite ? | می‌فهمم. ولی اتاقی در طرف دیگر ندارید، حتی کوچک‌تر؟
+- Je comprends. Mais tu n'aurais pas une chambre de l'autre côté, même plus petite ? | می‌فهمم. ولی اتاقی در طرف دیگر نداری، حتی کوچک‌تر؟
+why: «Vous n'auriez pas …?» درخواستی مؤدبانه با وجه شرطی است. اتاقی در همان طرف (du même côté) هم رو به خیابان شلوغ است. با کارمند هتل tu نمی‌گوییم.
+B: Attendez, je regarde… J'en ai une au deuxième étage, côté cour. Elle est très calme, mais il n'y a pas de bain, seulement une douche. | صبر کنید، نگاه می‌کنم… یکی در طبقه دوم دارم، رو به حیاط. خیلی آرام است، ولی وان ندارد، فقط دوش دارد.
+- C'est très grave : je peux très bien me passer de bain. Je la prends ! | خیلی جدی است: بدون وان هم کاملاً سر می‌کنم. برش می‌دارم!
++ Ce n'est pas grave : je peux très bien me passer de bain. Je la prends ! | مهم نیست: بدون وان هم کاملاً سر می‌کنم. برش می‌دارم!
+- Ce n'est pas grave : je peux très bien te passer de bain. Je la prends ! | مهم نیست: بدون وان هم کاملاً سر می‌کنم. برش می‌دارم!
+why: «se passer de» یعنی «بدون چیزی سر کردن»، و با je ضمیرش me است: «je peux me passer de bain»؛ te درباره کس دیگری است. «C'est très grave» با «بدون وان سر می‌کنم» نمی‌خواند.
+B: Très bien. Vous voulez que quelqu'un vous aide à monter vos affaires{affaires} ? | خیلی خوب. می‌خواهید کسی کمکتان کند وسایلتان را ببرید بالا؟
++ Non merci, ce n'est pas la peine : je n'ai qu'un petit sac. | نه ممنون، لازم نیست: فقط یک کیف کوچک دارم.
+- Oui merci, ce n'est pas la peine : je n'ai qu'un petit sac. | بله ممنون، لازم نیست: فقط یک کیف کوچک دارم.
+- Non merci, ce n'est pas la peine : je n'ai que trois grosses valises. | نه ممنون، لازم نیست: فقط سه چمدان بزرگ دارم.
+why: «ce n'est pas la peine» یعنی «لازم نیست» و با «Non merci» می‌آید، نه با «Oui». کسی که سه چمدان بزرگ دارد کمک را رد نمی‌کند؛ «je n'ai qu'un petit sac» یعنی فقط یک کیف کوچک.
+B: Voilà la clé de la 218. Et pour nous excuser, on vous offre le petit-déjeuner demain matin. | این کلید اتاق ۲۱۸. و برای عذرخواهی، صبحانه فردا صبح مهمان ما هستید. | tts: Voilà la clé de la deux cent dix-huit. Et pour nous excuser, on vous offre le petit-déjeuner demain matin.
+- C'est très gentil ! Je vous rapporte l'ancien clé en descendant tout à l'heure. | خیلی لطف دارید! کلید قبلی را وقتی کمی بعد پایین می‌آیم برایتان می‌آورم.
++ C'est très gentil ! Je vous rapporte l'ancienne clé en descendant tout à l'heure. | خیلی لطف دارید! کلید قبلی را وقتی کمی بعد پایین می‌آیم برایتان می‌آورم.
+- C'est très gentil ! Je vous rapporte l'ancienne clé en descendant hier soir. | خیلی لطف دارید! کلید قبلی را وقتی دیشب پایین آمدم برایتان می‌آورم.
+why: clé مؤنث است، پس «l'ancienne clé»، نه «l'ancien». «en descendant» یعنی «موقع پایین آمدن» و کاری که در آینده نزدیک می‌کنی با «tout à l'heure» می‌آید، نه با «hier soir» (دیشب).
+B: Parfait. Bonne nuit, madame, et encore désolé pour le bruit. | عالی. شب بخیر، خانم، و باز هم بابت سروصدا متأسفم.
++ Merci pour votre gentillesse. Bonne nuit ! | ممنون از مهربانی‌تان. شب بخیر!
+- Merci pour votre gentillesse. Bonjour ! | ممنون از مهربانی‌تان. سلام!
+- Merci pour ta gentillesse. Bonne nuit ! | ممنون از مهربانی‌ات. شب بخیر!
+why: موقع خداحافظی در شب «Bonne nuit» می‌گوییم؛ Bonjour برای سلام اول است. با کارمند هتل vous می‌گوییم: «votre gentillesse»، نه «ta».

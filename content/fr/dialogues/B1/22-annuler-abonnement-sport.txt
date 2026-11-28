@@ -1,0 +1,39 @@
+code: fr-b1-d022
+title: لغو اشتراک باشگاه ورزشی
+situation: شرکتت تو را از ماه آینده به بوردو می‌فرستد و می‌خواهی اشتراک یک‌ساله باشگاه ورزشی‌ات را لغو کنی. پشت پیشخوان باشگاه با کارمند حرف می‌زنی.
+turns:
+B: Bonjour ! Qu'est-ce que je peux faire pour vous ? | سلام! چه کاری از دستم برمی‌آید؟
+- Bonjour. Je voudrais prendre un abonnement, s'il vous plaît. | سلام. می‌خواهم یک اشتراک بگیرم، لطفاً.
++ Bonjour. Je voudrais annuler mon abonnement, s'il vous plaît. | سلام. می‌خواهم اشتراکم را لغو کنم، لطفاً.
+- Bonjour. Je voudrais annuler ma abonnement, s'il vous plaît. | سلام. می‌خواهم اشتراکم را لغو کنم، لطفاً.
+why: آمده‌ای اشتراک را لغو کنی (annuler)، نه اینکه اشتراک تازه بگیری. abonnement مذکر است و با واکه شروع می‌شود: «mon abonnement»، نه «ma abonnement».
+B: Ah, c'est dommage ! Je peux vous demander pourquoi ? | آه، حیف شد! می‌توانم بپرسم چرا؟
+- Mon entreprise m'envoie à Bordeaux, si bien que je pourrai venir plus souvent. | شرکتم مرا به بوردو می‌فرستد، در نتیجه می‌توانم بیشتر بیایم.
+- Mon entreprise m'envoie à Bordeaux, pourtant je ne pourrai plus venir. | شرکتم مرا به بوردو می‌فرستد، با این حال دیگر نمی‌توانم بیایم.
++ Mon entreprise m'envoie à Bordeaux, si bien que je ne pourrai plus venir. | شرکتم مرا به بوردو می‌فرستد، در نتیجه دیگر نمی‌توانم بیایم.
+why: «si bien que» نتیجه را می‌گوید: رفتن به بوردو نتیجه‌اش این است که دیگر نمی‌توانی بیایی. «pourtant» (با این حال) تضاد است و اینجا جا ندارد، و از شهری دیگر نمی‌شود بیشتر به این باشگاه آمد.
+B: Je comprends. Mais votre contrat a un engagement d'un an, et il reste{rester} encore six mois. | متوجهم. ولی قراردادتان تعهد یک‌ساله دارد و هنوز شش ماهش مانده.
++ Je sais, mais quand je me suis inscrite, on m'a dit qu'on pouvait l'annuler si on déménageait. | می‌دانم، ولی وقتی ثبت‌نام کردم، به من گفتند که اگر اسباب‌کشی کنیم می‌شود لغوش کرد.
+- Je sais, mais quand je me suis inscrite, on m'a dit si on pouvait l'annuler si on déménageait. | می‌دانم، ولی وقتی ثبت‌نام کردم، به من گفتند آیا اگر اسباب‌کشی کنیم می‌شود لغوش کرد.
+- Je sais, mais quand je me suis inscrite, on m'a dit qu'on ne pouvait jamais l'annuler si on déménageait. | می‌دانم، ولی وقتی ثبت‌نام کردم، به من گفتند که اگر اسباب‌کشی کنیم هیچ‌وقت نمی‌شود لغوش کرد.
+why: برای نقل یک خبر بعد از «on m'a dit» حرف que می‌آید و زمان حالِ آن حرف، ماضی استمراری می‌شود: «qu'on pouvait»؛ si فقط برای نقل سؤال است. جواب سوم به ضرر خودت است و حرف کارمند را تأیید می‌کند.
+B: C'est vrai, c'est une exception. Mais il me faut un document qui prouve votre déménagement. | درست است، این یک استثناست. ولی مدرکی لازم دارم که اسباب‌کشی‌تان را ثابت کند.
+- Je peux vous apporter le contrat de mon nouveau appartement. Ça vous suffit ? | می‌توانم قرارداد آپارتمان جدیدم را برایتان بیاورم. کافی است؟
+- Je peux vous apporter le contrat de mon ancien appartement. Ça vous suffit ? | می‌توانم قرارداد آپارتمان قبلی‌ام را برایتان بیاورم. کافی است؟
++ Je peux vous apporter le contrat de mon nouvel appartement. Ça vous suffit ? | می‌توانم قرارداد آپارتمان جدیدم را برایتان بیاورم. کافی است؟
+why: پیش از اسم مذکری که با واکه شروع می‌شود nouveau می‌شود nouvel: «mon nouvel appartement». قرارداد آپارتمان قبلی چیزی را درباره اسباب‌کشی ثابت نمی‌کند.
+B: Oui, ce sera parfait. Vous pouvez aussi me l'envoyer par e-mail. | بله، عالی است. می‌توانید با ایمیل هم برایم بفرستیدش.
++ D'accord. Et mon amie Claire voulait savoir si elle pouvait reprendre mon abonnement. | باشد. دوستم کلر هم می‌خواست بداند می‌تواند اشتراک مرا بگیرد یا نه.
+- D'accord. Et mon amie Claire voulait savoir qu'elle pouvait reprendre mon abonnement. | باشد. دوستم کلر هم می‌خواست بداند که می‌تواند اشتراک مرا بگیرد.
+- D'accord. Et mon amie Claire voulait savoir est-ce qu'elle pouvait reprendre mon abonnement. | باشد. دوستم کلر هم می‌خواست بداند آیا می‌تواند اشتراک مرا بگیرد.
+why: سؤال «بله یا نه» وقتی نقل می‌شود با si می‌آید: «voulait savoir si elle pouvait …». que برای نقل خبر است، نه سؤال، و «est-ce que» در سؤال غیرمستقیم نمی‌آید.
+B: Malheureusement non : chaque abonnement est personnel. Mais elle peut venir faire une séance gratuite. | متأسفانه نه: هر اشتراکی شخصی است. ولی می‌تواند بیاید و یک جلسه رایگان امتحان کند.
+- Je le lui dirai. Elle m'a aussi demandé qu'est-ce que coûtait un abonnement de six mois. | به او می‌گویم. از من پرسید اشتراک شش‌ماهه چقدر است.
++ Je le lui dirai. Elle m'a aussi demandé ce que coûtait un abonnement de six mois. | به او می‌گویم. از من پرسید اشتراک شش‌ماهه چقدر است.
+- Je le lui dirai. Elle m'a aussi demandé ce qui coûtait un abonnement de six mois. | به او می‌گویم. از من پرسید اشتراک شش‌ماهه چقدر است.
+why: در سؤال غیرمستقیم «qu'est-ce que» می‌شود «ce que»: «elle m'a demandé ce que coûtait …». «ce qui» برای فاعل است، ولی اینجا فاعل «un abonnement» است و ce مفعول است.
+B: Deux cent quarante euros. Je vous donne un document avec tous nos prix, pour elle. | دویست‌وچهل یورو. یک برگه با همه قیمت‌هایمان برای او به شما می‌دهم.
+- Merci beaucoup. Je vous ai beaucoup aidé. Au revoir ! | خیلی ممنون. خیلی به شما کمک کردم. خداحافظ!
++ Merci beaucoup. Vous m'avez beaucoup aidée. Au revoir ! | خیلی ممنون. خیلی کمکم کردید. خداحافظ!
+- Merci beaucoup. Tu m'as beaucoup aidée. Au revoir ! | خیلی ممنون. خیلی کمکم کردی. خداحافظ!
+why: کارمند به تو کمک کرده: «Vous m'avez beaucoup aidée»؛ «Je vous ai aidé» برعکس است. با کارمند باشگاه tu نمی‌گوییم.

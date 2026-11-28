@@ -1,0 +1,39 @@
+code: fr-b1-d016
+title: گم شدن چمدان در فرودگاه
+situation: از تهران، با توقف در استانبول، به فرودگاه نیس رسیده‌ای، ولی چمدانت نیامده. به باجه چمدان‌های گم‌شده رفته‌ای و کارمند آنجا با تو حرف می‌زند.
+turns:
+B: Bonjour, madame. Vous avez un problème avec votre valise ? | سلام، خانم. با چمدانتان مشکلی دارید؟
+- Oui. J'ai attendu une heure, mais ma valise n'a jamais arrivée. | بله. یک ساعت منتظر ماندم، ولی چمدانم هیچ‌وقت نرسید.
+- Oui. J'attendrai une heure, mais ma valise n'est jamais arrivée. | بله. یک ساعت منتظر خواهم ماند، ولی چمدانم هیچ‌وقت نرسید.
++ Oui. J'ai attendu une heure, mais ma valise n'est jamais arrivée. | بله. یک ساعت منتظر ماندم، ولی چمدانم هیچ‌وقت نرسید.
+why: arriver در گذشته با être صرف می‌شود: «elle n'est jamais arrivée»، نه «n'a jamais arrivée». انتظار تو هم گذشته است، پس «j'ai attendu»، نه آینده «j'attendrai».
+B: Je suis désolé. Vous arrivez d'où ? | متأسفم. از کجا می‌آیید؟
++ De Téhéran, avec un changement à Istanbul. Je crois qu'elle est restée là-bas. | از تهران، با تعویض هواپیما در استانبول. فکر کنم آنجا مانده.
+- De Téhéran, avec un changement à Istanbul. Je crois qu'elle a resté là-bas. | از تهران، با تعویض هواپیما در استانبول. فکر کنم آنجا مانده.
+- De Téhéran, sans changement. Je crois qu'elle est restée à Istanbul. | از تهران، بدون تعویض هواپیما. فکر کنم در استانبول مانده.
+why: rester در گذشته با être صرف می‌شود: «elle est restée»، نه «elle a resté». اگر پروازت بدون توقف بوده، چمدان نمی‌تواند در استانبول مانده باشد.
+B: Vous pouvez me décrire votre valise ? | می‌توانید چمدانتان را توصیف کنید؟
+- C'est une grande valise rouge, sur lequel j'ai écrit mon nom en blanc. | یک چمدان بزرگ قرمز است که رویش اسمم را با رنگ سفید نوشته‌ام.
++ C'est une grande valise rouge, sur laquelle j'ai écrit mon nom en blanc. | یک چمدان بزرگ قرمز است که رویش اسمم را با رنگ سفید نوشته‌ام.
+- C'est une grande valise rouge, sur que j'ai écrit mon nom en blanc. | یک چمدان بزرگ قرمز است که رویش اسمم را با رنگ سفید نوشته‌ام.
+why: بعد از حرف اضافه (sur) برای چیزها lequel می‌آید و با اسم مطابقت می‌کند؛ valise مؤنث است، پس «sur laquelle». que هیچ‌وقت بعد از حرف اضافه نمی‌آید.
+B: Et qu'est-ce qu'il y avait dedans ? Des objets de valeur ? | داخلش چه بود؟ چیز باارزشی؟
++ Surtout des vêtements. Et mes médicaments : c'est ce dont j'ai le plus besoin. | بیشتر لباس. و داروهایم: این چیزی است که از همه بیشتر لازمش دارم.
+- Surtout des vêtements. Et mes médicaments : c'est ce que j'ai le plus besoin. | بیشتر لباس. و داروهایم: این چیزی است که از همه بیشتر لازمش دارم.
+- Surtout des vêtements. Et mes médicaments : c'est ce dont j'ai le moins besoin. | بیشتر لباس. و داروهایم: این چیزی است که از همه کمتر لازمش دارم.
+why: «avoir besoin de» با de می‌آید، پس «ce dont j'ai besoin»؛ «ce que» برای مفعول بی‌واسطه است. اگر داروها را از همه کمتر لازم داری، لازم نیست جدا اسمشان را ببری.
+B: Pour les médicaments, allez à la pharmacie. La compagnie vous remboursera, mais gardez bien les reçus. | برای داروها به داروخانه بروید. شرکت هواپیمایی پولش را پس می‌دهد، ولی رسیدها را خوب نگه دارید.
+- D'accord. Je les vous envoie par e-mail, ou je vous les apporte ici ? | باشد. آن‌ها را برایتان ایمیل کنم یا اینجا برایتان بیاورم؟
+- D'accord. Je vous leur envoie par e-mail, ou je vous les apporte ici ? | باشد. آن‌ها را برایتان ایمیل کنم یا اینجا برایتان بیاورم؟
++ D'accord. Je vous les envoie par e-mail, ou je vous les apporte ici ? | باشد. آن‌ها را برایتان ایمیل کنم یا اینجا برایتان بیاورم؟
+why: وقتی دو ضمیر کنار هم می‌آیند، vous پیش از les می‌آید: «je vous les envoie»، نه «je les vous». reçus مفعول بی‌واسطه است، پس les، نه leur.
+B: Envoyez-les-nous par e-mail, c'est plus simple. Et si on retrouve la valise, on vous la livre à votre hôtel. | با ایمیل برایمان بفرستیدشان، ساده‌تر است. و اگر چمدان را پیدا کردیم، آن را به هتلتان می‌آوریم.
+- Parfait. Je suis à l'hôtel de la gare, chambre 24. Vous me teniez au courant ? | عالی. در هتل کنار ایستگاه هستم، اتاق ۲۴. در جریانم می‌گذاشتید؟ | tts: Parfait. Je suis à l'hôtel de la gare, chambre vingt-quatre. Vous me teniez au courant ?
++ Parfait. Je suis à l'hôtel de la gare, chambre 24. Vous me tiendrez au courant ? | عالی. در هتل کنار ایستگاه هستم، اتاق ۲۴. در جریانم می‌گذارید؟ | tts: Parfait. Je suis à l'hôtel de la gare, chambre vingt-quatre. Vous me tiendrez au courant ?
+- Parfait. Je suis à l'hôtel de la gare, chambre 24. Je vous tiendrai au courant ? | عالی. در هتل کنار ایستگاه هستم، اتاق ۲۴. شما را در جریان می‌گذارم؟ | tts: Parfait. Je suis à l'hôtel de la gare, chambre vingt-quatre. Je vous tiendrai au courant ?
+why: می‌خواهی کارمند خبرها را به تو بدهد، پس «Vous me tiendrez au courant ?» با آینده. «Vous me teniez» گذشته است، و «Je vous tiendrai» برعکس است: یعنی تو او را باخبر کنی.
+B: Bien sûr. En général, on retrouve les valises en deux ou trois jours. | حتماً. معمولاً چمدان‌ها را ظرف دو سه روز پیدا می‌کنیم.
+- Deux ou trois semaines ? C'est long ! Merci quand même pour votre aide. | دو سه هفته؟ چقدر طولانی! به هر حال ممنون از کمکتان.
++ Deux ou trois jours ? Bon, j'espère que ce sera plus rapide. Merci pour votre aide. | دو سه روز؟ خب، امیدوارم زودتر باشد. ممنون از کمکتان.
+- Deux ou trois jours ? Bon, j'espère que ce sera plus rapide. Merci pour ton aide. | دو سه روز؟ خب، امیدوارم زودتر باشد. ممنون از کمکت.
+why: کارمند گفت «دو سه روز» (jours)، نه «دو سه هفته» (semaines)؛ جوابت باید با حرف او بخواند. با کارمند فرودگاه vous می‌گوییم: «votre aide»، نه «ton aide».

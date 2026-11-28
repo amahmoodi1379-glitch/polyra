@@ -1,0 +1,39 @@
+code: fr-b1-d013
+title: خرید شراب برای مهمانی
+situation: دوستانت تو را شنبه برای شام دعوت کرده‌اند و می‌خواهی یک بطری شراب خوب برایشان ببری. در یک مغازه شراب‌فروشی هستی و فروشنده با تو حرف می‌زند.
+turns:
+B: Bonjour, madame ! Vous cherchez quelque chose en particulier ? | سلام، خانم! دنبال چیز خاصی هستید؟
+- Oui. Des amis m'ont invitée à dîner samedi, et j'aimerais les apporter une bonne bouteille. | بله. دوستانم مرا شنبه به شام دعوت کرده‌اند و دوست دارم یک بطری خوب برایشان ببرم.
++ Oui. Des amis m'ont invitée à dîner samedi, et j'aimerais leur apporter une bonne bouteille. | بله. دوستانم مرا شنبه به شام دعوت کرده‌اند و دوست دارم یک بطری خوب برایشان ببرم.
+- Oui. Des amis m'ont invitée à dîner samedi dernier, et j'aimerais leur apporter une bonne bouteille. | بله. دوستانم مرا شنبه گذشته به شام دعوت کرده بودند و دوست دارم یک بطری خوب برایشان ببرم.
+why: apporter quelque chose à quelqu'un است، پس برای «به آن‌ها» ضمیر leur می‌آید، نه les. شام شنبه آینده است؛ برای شامی که گذشته (samedi dernier) دیگر بطری نمی‌خری.
+B: Très bien. Qu'est-ce qu'ils vont servir ? Une viande, un poisson ? | خیلی خوب. چه غذایی می‌دهند؟ گوشت، ماهی؟
++ Je ne sais pas exactement, mais je crois qu'il y aura de l'agneau. | دقیق نمی‌دانم، ولی فکر کنم گوشت بره داشته باشند.
+- Je ne sais pas exactement, mais je crois qu'il y ait de l'agneau. | دقیق نمی‌دانم، ولی فکر کنم گوشت بره داشته باشند.
+- Je ne sais pas exactement, mais je crois qu'il y aura du agneau. | دقیق نمی‌دانم، ولی فکر کنم گوشت بره داشته باشند.
+why: بعد از «je crois que» (مثبت) فعل عادی (اخباری) می‌آید: «il y aura»، نه التزامی «il y ait». agneau با واکه شروع می‌شود، پس «de l'agneau»، نه «du agneau».
+B: Avec de l'agneau, je vous propose un vin rouge de Bordeaux. | با گوشت بره، یک شراب قرمز بوردو پیشنهاد می‌کنم.
+- Pourquoi pas, à condition que ce n'est pas trop cher : je suis étudiante. | چرا که نه، به شرطی که خیلی گران نباشد: دانشجو هستم.
+- Pourquoi pas, à condition que ce ne soit pas trop cher : j'ai beaucoup d'argent. | چرا که نه، به شرطی که خیلی گران نباشد: پول زیادی دارم.
++ Pourquoi pas, à condition que ce ne soit pas trop cher : je suis étudiante. | چرا که نه، به شرطی که خیلی گران نباشد: دانشجو هستم.
+why: بعد از «à condition que» وجه التزامی می‌آید: «que ce ne soit pas»؛ «ce n'est pas» اخباری است. کسی که پول زیادی دارد نگران گرانی نیست، پس دلیل آخر جمله با شرطش نمی‌خواند.
+B: J'en ai un à dix-huit euros, qui est excellent. Il est un peu fort, mais il plaît à tout le monde. | یکی هجده یورویی دارم که عالی است. طعمش کمی قوی است، ولی همه دوستش دارند.
++ Parfait, je le prends. Il faut l'ouvrir combien de temps avant de le servir ? | عالی است، برش می‌دارم. چقدر قبل از سرو کردن باید بازش کرد؟
+- Parfait, je le prends. Il faut l'ouvrir combien de temps avant que le servir ? | عالی است، برش می‌دارم. چقدر قبل از سرو کردن باید بازش کرد؟
+- Parfait, je la prends. Il faut l'ouvrir combien de temps avant de le servir ? | عالی است، برش می‌دارم. چقدر قبل از سرو کردن باید بازش کرد؟
+why: وقتی بعدش مصدر می‌آید (فاعل یکی است)، «avant de» می‌گوییم: «avant de le servir»؛ «avant que» با یک جمله و فعل التزامی می‌آید، نه با مصدر. vin مذکر است، پس «je le prends»، نه «je la prends».
+B: Une heure avant, c'est l'idéal. Et gardez-le au frais{frais} jusqu'à ce que vous partiez. | یک ساعت قبل، بهترین حالت است. و تا وقتی راه می‌افتید، جای خنک نگهش دارید.
+- D'accord. Et si mes amis n'aimeraient pas le vin rouge ? | باشد. و اگر دوستانم شراب قرمز دوست نداشته باشند؟
++ D'accord. Et si mes amis n'aimaient pas le vin rouge ? | باشد. و اگر دوستانم شراب قرمز دوست نداشتند چه؟
+- D'accord. Et si mes amis n'aimaient pas le vin blanc ? | باشد. و اگر دوستانم شراب سفید دوست نداشتند چه؟
+why: برای فرض: si + ماضی استمراری: «Et si mes amis n'aimaient pas …?»؛ بعد از si وجه شرطی (aimeraient) نمی‌آید. فروشنده شراب قرمز پیشنهاد کرده، پس نگرانی درباره شراب سفید اینجا بی‌ربط است.
+B: Alors prenez aussi une bouteille de blanc, d'Alsace par exemple. Comme ça, chacun choisira. | پس یک بطری سفید هم بردارید، مثلاً از آلزاس. این‌طوری هر کس خودش انتخاب می‌کند.
+- Bonne idée, je prends les deux. Vous pourriez les mettre dans un joli sac, pour je puisse les offrir ? | فکر خوبی است، هر دو را برمی‌دارم. می‌شود آن‌ها را در یک کیسه قشنگ بگذارید تا بتوانم هدیه‌شان بدهم؟
++ Bonne idée, je prends les deux. Vous pourriez les mettre dans un joli sac, pour que je puisse les offrir ? | فکر خوبی است، هر دو را برمی‌دارم. می‌شود آن‌ها را در یک کیسه قشنگ بگذارید تا بتوانم هدیه‌شان بدهم؟
+- Bonne idée, je prends les deux. Vous pourriez les mettre dans un joli sac, pour que je peux les offrir ? | فکر خوبی است، هر دو را برمی‌دارم. می‌شود آن‌ها را در یک کیسه قشنگ بگذارید تا بتوانم هدیه‌شان بدهم؟
+why: فاعل دو بخش فرق دارد (او می‌گذارد، تو هدیه می‌دهی)، پس «pour que» با وجه التزامی: «pour que je puisse». بدون que جمله غلط است، و «je peux» اخباری است.
+B: Bien sûr. Ça vous fait trente-quatre euros. Et bonne soirée samedi ! | حتماً. می‌شود سی‌وچهار یورو. شنبه شب خوبی داشته باشید!
+- Merci beaucoup pour tes conseils. Bonne journée ! | خیلی ممنون از راهنمایی‌هایت. روز خوبی داشته باشی!
++ Merci beaucoup pour vos conseils. Bonne journée ! | خیلی ممنون از راهنمایی‌هایتان. روز خوبی داشته باشید!
+- Merci beaucoup pour vos conseils. Bonne soirée samedi ! | خیلی ممنون از راهنمایی‌هایتان. شنبه شب خوبی داشته باشید!
+why: با فروشنده vous می‌گوییم: «vos conseils»؛ tes خودمانی است. مهمانی شنبه مال توست، نه فروشنده؛ پس همان آرزوی او را به خودش برنمی‌گردانی و فقط «Bonne journée» می‌گویی.

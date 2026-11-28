@@ -1,0 +1,39 @@
+code: fr-b1-d024
+title: نظر خواستن از دوست درباره عوض کردن کار
+situation: مهندس یک شرکت ساختمانی در پاریس هستی و به تو کاری بهتر در لیون پیشنهاد شده. با دوست صمیمی‌ات مارک در کافه نشسته‌ای و می‌خواهی نظرش را بدانی.
+turns:
+B: Salut Sara ! Tu as l'air inquiète. Ça va ? | سلام سارا! نگران به نظر می‌رسی. خوبی؟
+- Pas vraiment. J'ai choisi pour un poste{poste-m} à Lyon, et je ne sais pas quoi faire. | نه چندان. برای یک شغل در لیون انتخاب کردم، و نمی‌دانم چه کار کنم.
++ Pas vraiment. J'ai été choisie pour un poste{poste-m} à Lyon, et je ne sais pas quoi faire. | نه چندان. برای یک شغل در لیون انتخاب شده‌ام، و نمی‌دانم چه کار کنم.
+- Pas vraiment. Je suis été choisie pour un poste{poste-m} à Lyon, et je ne sais pas quoi faire. | نه چندان. برای یک شغل در لیون انتخاب شده‌ام، و نمی‌دانم چه کار کنم.
+why: تو انتخاب شده‌ای، یعنی جمله مجهول است: «j'ai été choisie» (être در گذشته = «ai été»، بعد اسم مفعول). «j'ai choisi» معلوم است و یعنی خودت انتخاب کرده‌ای، و «je suis été» اصلاً وجود ندارد.
+B: Mais c'est génial, ça ! Pourquoi tu hésites ? | ولی این که عالی است! چرا دودلی؟
++ Même si le salaire est meilleur, je devrais quitter Paris et tous mes amis. | حتی اگر حقوقش بهتر است، باید پاریس و همه دوستانم را ترک کنم.
+- Même si le salaire serait meilleur, je devrais quitter Paris et tous mes amis. | حتی اگر حقوقش بهتر باشد، باید پاریس و همه دوستانم را ترک کنم.
+- Malgré le salaire est meilleur, je devrais quitter Paris et tous mes amis. | با وجود حقوقش بهتر است، باید پاریس و همه دوستانم را ترک کنم.
+why: بعد از «même si» مثل si وجه شرطی (serait) نمی‌آید: «même si le salaire est meilleur». «malgré» فقط پیش از اسم می‌آید (malgré le salaire)، نه پیش از یک جمله کامل.
+B: Et là-bas, le travail serait plus intéressant ? | کار آنجا جالب‌تر است؟
+- Oui, beaucoup moins. Je dirigerais mes propres chantiers, alors qu'ici, je reste toujours au bureau. | بله، خیلی کمتر. کارگاه‌های ساختمانی خودم را اداره می‌کردم، در حالی که اینجا همیشه پشت میز می‌مانم.
++ Oui, beaucoup plus. Je dirigerais mes propres chantiers, alors qu'ici, je reste toujours au bureau. | بله، خیلی بیشتر. کارگاه‌های ساختمانی خودم را اداره می‌کردم، در حالی که اینجا همیشه پشت میز می‌مانم.
+- Oui, beaucoup plus. Je dirigeais mes propres chantiers, alors qu'ici, je reste toujours au bureau. | بله، خیلی بیشتر. قبلاً کارگاه‌های ساختمانی خودم را اداره می‌کردم، در حالی که اینجا همیشه پشت میز می‌مانم.
+why: کار لیون هنوز فرضی است، پس وجه شرطی: «je dirigerais»؛ «je dirigeais» ماضی استمراری است و درباره گذشته. «Oui, beaucoup moins» با خودش نمی‌خواند: «بله» و «خیلی کمتر جالب» با هم جور نیستند.
+B: Franchement, à ta place{place-2}, j'accepterais. Tu es jeune, c'est le moment de prendre des risques. | راستش اگر جای تو بودم قبول می‌کردم. جوانی، الان وقت ریسک کردن است.
+- Tu crois ? J'ai peur que mes amis me manqueront. | فکر می‌کنی؟ می‌ترسم دلم برای دوستانم تنگ شود.
++ Tu crois ? J'ai peur que mes amis me manquent. | فکر می‌کنی؟ می‌ترسم دلم برای دوستانم تنگ شود.
+- Tu crois ? J'ai peur que mes amis te manquent. | فکر می‌کنی؟ می‌ترسم دلت برای دوستانم تنگ شود.
+why: بعد از «j'ai peur que» وجه التزامی می‌آید: «que mes amis me manquent»؛ آینده (manqueront) غلط است. در «manquer» کسی که دلش تنگ می‌شود ضمیر مفعولی است: دل تو تنگ می‌شود، پس me، نه te.
+B: Lyon, ce n'est qu'à deux heures de Paris en train ! Tu pourras revenir le week-end. | لیون فقط دو ساعت با قطار تا پاریس فاصله دارد! آخر هفته‌ها می‌توانی برگردی.
+- C'est faux, je n'y avais pas pensé. | غلط است، به این فکر نکرده بودم.
++ C'est vrai, je n'y avais pas pensé. | راست می‌گویی، به این فکر نکرده بودم.
+- C'est vrai, je n'en avais pas pensé. | راست می‌گویی، به این فکر نکرده بودم.
+why: «penser à quelque chose» با à است، پس ضمیرش y است: «je n'y avais pas pensé». حرف مارک درست است و تو آن را می‌پذیری، پس «C'est faux» با بقیه جمله نمی‌خواند.
+B: Et ton chef actuel, qu'est-ce qu'il en pense ? | رئیس فعلی‌ات چه نظری دارد؟
++ Il ne sait encore rien. Et la décision doit être prise avant vendredi ! | هنوز هیچ چیز نمی‌داند. و تصمیم باید تا قبل از جمعه گرفته شود!
+- Il ne sait encore rien. Et la décision doit être pris avant vendredi ! | هنوز هیچ چیز نمی‌داند. و تصمیم باید تا قبل از جمعه گرفته شود!
+- Il ne sait encore rien. Et la décision doit avoir prise avant vendredi ! | هنوز هیچ چیز نمی‌داند. و تصمیم باید تا قبل از جمعه گرفته شود!
+why: در جمله مجهول با être اسم مفعول با فاعل مطابقت می‌کند؛ décision مؤنث است: «doit être prise»، نه «pris». مجهول با être ساخته می‌شود، نه با avoir.
+B: Alors réfléchis bien ce soir. Mais à mon avis, c'est une chance à ne pas manquer{manquer-2}. | پس امشب خوب فکر کن. ولی به نظر من، این فرصتی است که نباید از دستش داد.
+- Merci, Marc. Ça ne m'aide pas du tout de pouvoir en parler avec toi. | ممنون، مارک. اینکه بتوانم با تو درباره‌اش حرف بزنم اصلاً کمکم نمی‌کند.
+- Merci, Marc. Ça m'aide beaucoup de pouvoir en parler avec vous. | ممنون، مارک. اینکه بتوانم با شما درباره‌اش حرف بزنم خیلی کمکم می‌کند.
++ Merci, Marc. Ça m'aide beaucoup de pouvoir en parler avec toi. | ممنون، مارک. اینکه بتوانم با تو درباره‌اش حرف بزنم خیلی کمکم می‌کند.
+why: با دوست صمیمی toi می‌گوییم، نه vous. تشکر کردن و بعد گفتن اینکه حرف زدن با او «اصلاً کمک نمی‌کند» بی‌ادبانه است و با Merci نمی‌خواند.

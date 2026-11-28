@@ -1,0 +1,39 @@
+code: fr-b1-d006
+title: ثبت‌نام در کلاس زبان
+situation: در دفتر یک آموزشگاه زبان در لیون هستی و می‌خواهی در کلاس فرانسوی شبانه ثبت‌نام کنی. کارمند دفتر با تو حرف می‌زند.
+turns:
+B: Bonjour, madame. C'est pour une inscription ? | سلام، خانم. برای ثبت‌نام آمده‌اید؟
++ Oui, je voudrais m'inscrire au cours de français du soir. | بله، می‌خواهم در کلاس فرانسوی شبانه ثبت‌نام کنم.
+- Oui, je voudrais inscrire au cours de français du soir. | بله، می‌خواهم در کلاس فرانسوی شبانه ثبت‌نام کنم.
+- Oui, je voudrais t'inscrire au cours de français du soir. | بله، می‌خواهم تو را در کلاس فرانسوی شبانه ثبت‌نام کنم.
+why: s'inscrire فعل ضمیری است، پس با je می‌شود «m'inscrire». بدون me جمله ناقص است، و «t'inscrire» یعنی می‌خواهی خود کارمند را ثبت‌نام کنی.
+B: Très bien. Vous avez quel niveau ? | خیلی خوب. سطحتان چیست؟
+- Je me débrouille quand je parle, mais j'ai du mal d'écrire. | وقتی حرف می‌زنم از پسش برمی‌آیم، ولی نوشتن برایم سخت است.
+- Je me débrouille quand je parle, mais j'ai du mal à écrit{écrire}. | وقتی حرف می‌زنم از پسش برمی‌آیم، ولی نوشتن برایم سخت است.
++ Je me débrouille quand je parle, mais j'ai du mal à écrire. | وقتی حرف می‌زنم از پسش برمی‌آیم، ولی نوشتن برایم سخت است.
+why: «avoir du mal à» با à و مصدر می‌آید: «j'ai du mal à écrire». de اینجا غلط است، و بعد از à شکل مصدر (écrire) می‌آید، نه اسم مفعول (écrit).
+B: Alors il faut que vous passiez un petit examen avant le premier cours. | پس باید قبل از اولین جلسه یک امتحان کوچک بدهید.
+- D'accord. Il faut que je le fais aujourd'hui ? | باشد. باید امروز انجامش بدهم؟
++ D'accord. Il faut que je le fasse aujourd'hui ? | باشد. باید امروز انجامش بدهم؟
+- D'accord. Il faut que je le ferai aujourd'hui ? | باشد. باید امروز انجامش بدهم؟
+why: بعد از «il faut que» همیشه وجه التزامی می‌آید، و التزامی faire می‌شود fasse: «que je le fasse». fais زمان حال است و ferai آینده.
+B: Non, vous pouvez le faire sur internet, chez vous. Il faut seulement que vous le finissiez avant vendredi. | نه، می‌توانید در اینترنت و در خانه انجامش بدهید. فقط باید تا قبل از جمعه تمامش کنید.
++ Parfait. Et les cours, ils ont lieu quels jours ? | عالی. کلاس‌ها چه روزهایی برگزار می‌شوند؟
+- Parfait. Et les cours, ils avaient lieu quels jours ? | عالی. کلاس‌ها چه روزهایی برگزار می‌شدند؟
+- Parfait. Et les cours, ils ont lieu combien ? | عالی. کلاس‌ها چقدر برگزار می‌شوند؟
+why: درباره برنامه حالا و آینده می‌پرسی، پس زمان حال: «ils ont lieu». «ils avaient lieu» درباره گذشته است. «avoir lieu» یعنی «برگزار شدن» و با combien (چقدر) معنی ندارد.
+B: Le mardi et le jeudi, de dix-neuf heures à vingt et une heures. | سه‌شنبه‌ها و پنجشنبه‌ها، از ساعت هفت تا نه شب.
+- Le jeudi, je travaille jusqu'à dix-neuf heures. Si le cours commencera plus tard, ce serait plus facile. | پنجشنبه‌ها تا ساعت هفت کار می‌کنم. اگر کلاس دیرتر شروع شود، راحت‌تر می‌شود.
++ Le jeudi, je travaille jusqu'à dix-neuf heures. Si le cours commençait plus tard, ce serait plus facile. | پنجشنبه‌ها تا ساعت هفت کار می‌کنم. اگر کلاس دیرتر شروع می‌شد، راحت‌تر بود.
+- Le jeudi, je travaille jusqu'à dix-neuf heures. Si le cours commençait plus tard, ce sera plus facile. | پنجشنبه‌ها تا ساعت هفت کار می‌کنم. اگر کلاس دیرتر شروع می‌شد، راحت‌تر خواهد بود.
+why: برای فرض: si + ماضی استمراری (commençait)، بعد وجه شرطی (ce serait). بعد از si آینده (commencera) نمی‌آید، و با «si … commençait» جواب آینده (ce sera) نمی‌آید.
+B: Je comprends. Il y a aussi un groupe le samedi matin, mais il ne reste{rester} que deux places{place-2}. | متوجهم. یک گروه شنبه صبح هم هست، ولی فقط دو جا مانده.
+- Alors je prends le jeudi. Je peux payer maintenant, pour être sûre d'avoir ma place{place-2} ? | پس پنجشنبه را برمی‌دارم. می‌توانم الان پول بدهم تا مطمئن شوم جایم را دارم؟
++ Alors je prends le samedi. Je peux payer maintenant, pour être sûre d'avoir ma place{place-2} ? | پس شنبه را برمی‌دارم. می‌توانم الان پول بدهم تا مطمئن شوم جایم را دارم؟
+- Alors je prends le samedi. Je peux payer maintenant, pour être sûre d'avoir sa place{place-2} ? | پس شنبه را برمی‌دارم. می‌توانم الان پول بدهم تا مطمئن شوم جای او را دارم؟
+why: پنجشنبه برایت سخت بود، پس گروه شنبه را برمی‌داری. جای خودت را می‌خواهی: «ma place»؛ «sa place» یعنی جای کس دیگر.
+B: Oui, bien sûr. Et il faut que vous soyez là samedi à neuf heures, pour le premier cours. | بله، حتماً. و باید شنبه ساعت نه برای اولین جلسه اینجا باشید.
+- D'accord, j'y étais. Vous pourriez me préciser le numéro de la salle ? | باشد، آنجا بودم. می‌شود شماره کلاس را دقیق بگویید؟
+- D'accord, j'en serai. Vous pourriez me préciser le numéro de la salle ? | باشد، آنجا خواهم بود. می‌شود شماره کلاس را دقیق بگویید؟
++ D'accord, j'y serai. Vous pourriez me préciser le numéro de la salle ? | باشد، آنجا خواهم بود. می‌شود شماره کلاس را دقیق بگویید؟
+why: برای جا، ضمیر y است: «j'y serai» یعنی «آنجا خواهم بود»؛ en برای چیزی با de است، نه برای مکان. شنبه آینده است، پس «j'étais» (بودم) غلط است.

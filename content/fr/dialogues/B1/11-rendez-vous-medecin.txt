@@ -1,0 +1,39 @@
+code: fr-b1-d011
+title: گرفتن وقت دکتر با تلفن
+situation: سه روز است دلت درد می‌کند. به مطب دکتر لوران زنگ می‌زنی تا وقت بگیری، و خود دکتر گوشی را برمی‌دارد.
+turns:
+B: Docteur Laurent, bonjour ! | دکتر لوران هستم، سلام!
+- Bonjour, docteur. Je voudrais rendre rendez-vous, s'il vous plaît, le plus tôt possible. | سلام، آقای دکتر. می‌خواستم وقت را پس بدهم، لطفاً، هر چه زودتر.
++ Bonjour, docteur. Je voudrais prendre rendez-vous, s'il vous plaît, le plus tôt possible. | سلام، آقای دکتر. می‌خواستم وقت بگیرم، لطفاً، هر چه زودتر.
+- Bonjour, docteur. Je voudrais prendre rendez-vous, s'il vous plaît, le plus tard possible. | سلام، آقای دکتر. می‌خواستم وقت بگیرم، لطفاً، هر چه دیرتر.
+why: «وقت گرفتن» در فرانسوی «prendre rendez-vous» است؛ rendre یعنی پس دادن. وقتی مریضی، وقت را هر چه زودتر می‌خواهی، نه دیرتر.
+B: Bien sûr. Qu'est-ce qui vous arrive ? | حتماً. چه مشکلی دارید؟
++ Depuis trois jours, j'ai très mal au ventre, et cette nuit, j'ai eu de la fièvre. | سه روز است دلم خیلی درد می‌کند، و دیشب تب هم داشتم.
+- Depuis trois jours, j'ai eu très mal au ventre, et cette nuit, j'ai eu de la fièvre. | سه روز است دلم خیلی درد کرد، و دیشب تب هم داشتم.
+- Depuis trois jours, j'ai très mal à la ventre, et cette nuit, j'ai eu de la fièvre. | سه روز است دلم خیلی درد می‌کند، و دیشب تب هم داشتم.
+why: دردی که از سه روز پیش شروع شده و هنوز هست با «depuis» و زمان حال می‌آید: «j'ai mal». ventre مذکر است، پس «au ventre»، نه «à la ventre».
+B: Et vous avez encore de la fièvre ? | هنوز تب دارید؟
+- Non, plus maintenant. Je pense que ce ne soit pas très grave, mais je préfère vous voir. | نه، دیگر ندارم. فکر می‌کنم خیلی جدی نیست، ولی ترجیح می‌دهم شما را ببینم.
+- Oui, plus maintenant. Je ne pense pas que ce soit très grave, mais je préfère vous voir. | بله، دیگر ندارم. فکر نمی‌کنم خیلی جدی باشد، ولی ترجیح می‌دهم شما را ببینم.
++ Non, plus maintenant. Je ne pense pas que ce soit très grave, mais je préfère vous voir. | نه، دیگر ندارم. فکر نمی‌کنم خیلی جدی باشد، ولی ترجیح می‌دهم شما را ببینم.
+why: بعد از «je ne pense pas que» وجه التزامی می‌آید: «que ce soit»؛ ولی بعد از «je pense que» (مثبت) فعل عادی (اخباری) می‌آید، پس «je pense que ce ne soit» غلط است. «Oui» با «plus maintenant» (دیگر نه) جور نیست.
+B: Je comprends votre inquiétude. Je peux vous recevoir demain à dix heures, ou jeudi à quinze heures. | نگرانی‌تان را درک می‌کنم. می‌توانم فردا ساعت ده یا پنجشنبه ساعت سه بعدازظهر شما را ببینم.
+- Jeudi, s'il vous plaît. J'ai peur que ça devienne plus grave si j'attends jeudi. | پنجشنبه، لطفاً. می‌ترسم اگر تا پنجشنبه صبر کنم بدتر شود.
++ Demain, s'il vous plaît. J'ai peur que ça devienne plus grave si j'attends jeudi. | فردا، لطفاً. می‌ترسم اگر تا پنجشنبه صبر کنم بدتر شود.
+- Demain, s'il vous plaît. J'ai peur que ça devient plus grave si j'attends jeudi. | فردا، لطفاً. می‌ترسم اگر تا پنجشنبه صبر کنم بدتر شود.
+why: بعد از «j'ai peur que» وجه التزامی می‌آید: «que ça devienne»؛ devient زمان حال است. اگر می‌ترسی تا پنجشنبه بدتر شود، پنجشنبه را انتخاب نمی‌کنی.
+B: D'accord, demain à dix heures. C'est votre première visite chez nous ? | باشد، فردا ساعت ده. اولین بار است که پیش ما می‌آیید؟
++ Oui. Avant, j'allais chez un médecin à Lyon, mais j'ai déménagé le mois dernier. | بله. قبلاً پیش یک دکتر در لیون می‌رفتم، ولی ماه پیش اسباب‌کشی کردم.
+- Non. Avant, j'allais chez un médecin à Lyon, mais j'ai déménagé le mois dernier. | نه. قبلاً پیش یک دکتر در لیون می‌رفتم، ولی ماه پیش اسباب‌کشی کردم.
+- Oui. Avant, j'irai chez un médecin à Lyon, mais j'ai déménagé le mois dernier. | بله. قبلاً پیش یک دکتر در لیون خواهم رفت، ولی ماه پیش اسباب‌کشی کردم.
+why: عادت گذشته با ماضی استمراری گفته می‌شود: «Avant, j'allais»؛ «j'irai» آینده است. «Non» یعنی قبلاً پیش این دکتر آمده‌ای، ولی بقیه جمله می‌گوید پیش دکتر دیگری می‌رفتی.
+B: Vous prenez déjà des médicaments ? | الان دارویی مصرف می‌کنید؟
+- Oui, je les ai pris deux hier soir, mais ils n'ont rien changé. | بله، دیشب دو تا از آن‌ها را خوردم، ولی فرقی نکرد.
++ Oui, j'en ai pris deux hier soir, mais ils n'ont rien changé. | بله، دیشب دو تا خوردم، ولی فرقی نکرد.
+- Non, j'en ai pris deux hier soir, mais ils n'ont rien changé. | نه، دیشب دو تا خوردم، ولی فرقی نکرد.
+why: با عدد (deux) ضمیر en می‌آید: «j'en ai pris deux»؛ les با عدد جور نیست. «Non» با «دو تا خوردم» جور نیست.
+B: D'accord. Si la douleur devient très forte cette nuit, appelez le 15. | باشد. اگر امشب درد خیلی شدید شد، به شماره ۱۵ (اورژانس فرانسه) زنگ بزنید. | tts: D'accord. Si la douleur devient très forte cette nuit, appelez le quinze.
+- D'accord, merci. J'espère que ce sera nécessaire ! | باشد، ممنون. امیدوارم لازم شود!
+- D'accord, merci. J'espère que ce ne soit pas nécessaire ! | باشد، ممنون. امیدوارم لازم نشود!
++ D'accord, merci. J'espère que ce ne sera pas nécessaire ! | باشد، ممنون. امیدوارم لازم نشود!
+why: بعد از «j'espère que» وجه التزامی نمی‌آید، بلکه فعل عادی؛ برای آینده: «ce ne sera pas». کسی امیدوار نیست کارش به اورژانس بکشد، پس «ce sera nécessaire» معنی را برعکس می‌کند.

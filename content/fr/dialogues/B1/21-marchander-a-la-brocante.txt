@@ -1,0 +1,39 @@
+code: fr-b1-d021
+title: چانه زدن در بازار کهنه‌فروش‌ها
+situation: یکشنبه صبح در یک بازار کهنه‌فروش‌ها (brocante) در لیل قدم می‌زنی. یک ساعت دیواری قدیمی چشمت را گرفته و با فروشنده حرف می‌زنی. شوهرت گفته بود اینجا چیز جالبی پیدا نمی‌کنی.
+turns:
+B: Bonjour, madame ! Vous cherchez quelque chose ? | سلام، خانم! دنبال چیزی هستید؟
+- Salut ! Elle me plaît, ton horloge. Elle est de quelle époque ? | سلام! ساعتت را دوست دارم. مال چه دوره‌ای است؟
++ Bonjour. Cette horloge me plaît beaucoup. Elle est de quelle époque ? | سلام. این ساعت دیواری را خیلی دوست دارم. مال چه دوره‌ای است؟
+- Bonjour. Cette horloge me plaît beaucoup. Elle est de quelle couleur ? | سلام. این ساعت دیواری را خیلی دوست دارم. چه رنگی است؟
+why: با فروشنده‌ای که نمی‌شناسی Salut و tu (ton) نمی‌گوییم. رنگ ساعت را جلوی چشمت می‌بینی، پس پرسیدنش بی‌معنی است؛ دوره ساختش را می‌پرسی.
+B: Elle a presque cent ans. Et elle marche encore très bien, vous savez. | تقریباً صد سال دارد. و هنوز خیلی خوب کار می‌کند، می‌دانید.
+- Elle est magnifique. Et vous le vendez combien ? | خیلی قشنگ است. چند می‌فروشیدش؟
+- Elle est magnifique. Et vous l'achetez combien ? | خیلی قشنگ است. چند می‌خریدش؟
++ Elle est magnifique. Et vous la vendez combien ? | خیلی قشنگ است. چند می‌فروشیدش؟
+why: horloge مؤنث است، پس ضمیرش la است: «vous la vendez»؛ le مذکر است. فروشنده ساعت را می‌فروشد (vendre)، نمی‌خرد (acheter).
+B: Cent vingt euros. | صدوبیست یورو.
++ Cent vingt euros ? Elle est si belle que j'ai envie de la prendre, mais c'est trop cher pour moi. | صدوبیست یورو؟ آن‌قدر قشنگ است که دلم می‌خواهد برش دارم، ولی برایم خیلی گران است.
+- Cent vingt euros ? Elle est si belle comme j'ai envie de la prendre, mais c'est trop cher pour moi. | صدوبیست یورو؟ آن‌قدر قشنگ است که دلم می‌خواهد برش دارم، ولی برایم خیلی گران است.
+- Cent vingt euros ? Elle est si belle que j'ai envie de la prendre, mais c'est trop bon marché pour moi. | صدوبیست یورو؟ آن‌قدر قشنگ است که دلم می‌خواهد برش دارم، ولی برایم خیلی ارزان است.
+why: برای نتیجه «si … que» می‌گوییم: «si belle que …» (آن‌قدر قشنگ که …)؛ comme اینجا جا ندارد. وقتی چانه می‌زنی، قیمت را «trop cher» می‌دانی، نه «trop bon marché» (خیلی ارزان).
+B: Elle est en parfait état{état}, madame. Je peux descendre à cent dix, pas plus. | سالمِ سالم است، خانم. می‌توانم تا صدوده پایین بیایم، نه بیشتر.
+- Cent dix… Si vous me la laisserez à quatre-vingts euros, je la prends tout de suite. | صدوده… اگر هشتاد یورو به من بدهیدش، همین الان برش می‌دارم.
++ Cent dix… Si vous me la laissez à quatre-vingts euros, je la prends tout de suite. | صدوده… اگر هشتاد یورو به من بدهیدش، همین الان برش می‌دارم.
+- Cent dix… Si vous me la laissez à cent cinquante euros, je la prends tout de suite. | صدوده… اگر صدوپنجاه یورو به من بدهیدش، همین الان برش می‌دارم.
+why: بعد از si آینده (laisserez) نمی‌آید؛ زمان حال می‌آید: «si vous me la laissez». در چانه زدن قیمتی کمتر از حرف فروشنده پیشنهاد می‌دهی، نه بیشتر (cent cinquante).
+B: Quatre-vingts ? Vous plaisantez ! Ce matin, une dame m'a dit qu'elle reviendrait l'acheter pour cent euros. | هشتاد؟ شوخی می‌کنید! امروز صبح یک خانم به من گفت برمی‌گردد و آن را صد یورو می‌خرد.
+- Ah bon ? Mais elle n'est pas revenue, apparemment. Alors, cent trente euros : c'est ma dernière offre{offre} ! | جدی؟ ولی ظاهراً برنگشته. پس صدوسی یورو: پیشنهاد آخرم است!
++ Ah bon ? Mais elle n'est pas revenue, apparemment. Alors, quatre-vingt-dix euros : c'est ma dernière offre{offre} ! | جدی؟ ولی ظاهراً برنگشته. پس نود یورو: پیشنهاد آخرم است!
+- Ah bon ? Mais elle n'a pas revenue, apparemment. Alors, quatre-vingt-dix euros : c'est ma dernière offre{offre} ! | جدی؟ ولی ظاهراً برنگشته. پس نود یورو: پیشنهاد آخرم است!
+why: revenir در گذشته با être صرف می‌شود: «elle n'est pas revenue»، نه «n'a pas revenue». پیشنهاد آخرت باید بین هشتاد و صدوده باشد؛ صدوسی از قیمت خود فروشنده هم بیشتر است.
+B: Bon… D'accord pour quatre-vingt-dix, parce que c'est vous. | خب… باشد، نود، چون شما هستید.
+- Merci ! Mon mari m'a dit que je ne trouverais rien d'intéressant ici : il avait raison ! | ممنون! شوهرم به من گفت اینجا چیز جالبی پیدا نمی‌کنم: حق با او بود!
+- Merci ! Mon mari m'a dit si je ne trouverais rien d'intéressant ici : il avait tort ! | ممنون! شوهرم به من گفت اینجا چیز جالبی پیدا نمی‌کنم: اشتباه می‌کرد!
++ Merci ! Mon mari m'a dit que je ne trouverais rien d'intéressant ici : il avait tort ! | ممنون! شوهرم به من گفت اینجا چیز جالبی پیدا نمی‌کنم: اشتباه می‌کرد!
+why: برای نقل حرف کسی بعد از «il m'a dit» حرف que می‌آید، و آینده حرف او شرطی می‌شود: «que je ne trouverais rien»؛ si فقط برای نقل سؤال است. تو چیز جالبی پیدا کرده‌ای، پس شوهرت اشتباه می‌کرد (il avait tort).
+B: Eh bien, vous lui direz qu'ici, il y a toujours des surprises ! | خب، به او بگویید که اینجا همیشه غافلگیری هست!
++ Je le lui dirai ! Bonne journée, monsieur. | حتماً به او می‌گویم! روز خوبی داشته باشید، آقا.
+- Je lui le dirai ! Bonne journée, monsieur. | حتماً به او می‌گویم! روز خوبی داشته باشید، آقا.
+- Je le lui disais ! Bonne journée, monsieur. | به او می‌گفتم! روز خوبی داشته باشید، آقا.
+why: وقتی le و lui کنار هم می‌آیند، le پیش از lui است: «je le lui dirai». کار برای بعد است، پس آینده «dirai»، نه ماضی استمراری «disais».

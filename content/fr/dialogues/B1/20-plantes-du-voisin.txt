@@ -1,0 +1,39 @@
+code: fr-b1-d020
+title: خواهش از همسایه برای آب دادن به گیاه‌ها
+situation: هفته دیگر برای ده روز به ایران می‌روی و کسی نیست به گیاه‌هایت آب بدهد. در راه‌پله، همسایه‌ات آقای دوپون را می‌بینی.
+turns:
+B: Bonjour, madame Karimi ! Vous allez bien ? | سلام، خانم کریمی! حالتان خوب است؟
++ Très bien, merci. Dites, je peux vous demander un petit service ? | خیلی خوبم، ممنون. می‌گویم، می‌توانم یک خواهش کوچک از شما بکنم؟
+- Très bien, merci. Dites, je peux te demander un petit service ? | خیلی خوبم، ممنون. می‌گویم، می‌توانم یک خواهش کوچک از تو بکنم؟
+- Très bien, merci. Dites, je peux vous rendre un petit service ? | خیلی خوبم، ممنون. می‌گویم، می‌توانم یک کمک کوچک به شما بکنم؟
+why: همسایه با تو vous حرف می‌زند و تو هم vous می‌گویی؛ te خودمانی است. تو می‌خواهی خواهشی بکنی (demander un service)؛ «rendre un service» یعنی خودت به او کمک کنی.
+B: Bien sûr, avec plaisir. De quoi s'agit-il ? | البته، با کمال میل. موضوع چیست؟
+- Je suis partie en Iran pour une dizaine de jours. Vous pourriez donner de l'eau à mes plantes pendant mon absence ? | حدود ده روز به ایران رفته‌ام. می‌توانید در نبودنم به گیاه‌هایم آب بدهید؟
++ Je pars en Iran pour une dizaine de jours. Vous pourriez donner de l'eau à mes plantes pendant mon absence ? | حدود ده روز به ایران می‌روم. می‌توانید در نبودنم به گیاه‌هایم آب بدهید؟
+- Je pars en Iran pour une dizaine de jours. Vous pourriez donner de l'eau à mes plantes pendant ma présence ? | حدود ده روز به ایران می‌روم. می‌توانید وقتی خودم هستم به گیاه‌هایم آب بدهید؟
+why: سفر هنوز در پیش است، پس «je pars»؛ «je suis partie» یعنی رفته‌ای، ولی همین‌جا جلوی همسایه ایستاده‌ای. کمک را برای وقتی می‌خواهی که نیستی: «pendant mon absence»، نه «pendant ma présence».
+B: Pas de problème. Il faut leur donner de l'eau tous les jours ? | مشکلی نیست. باید هر روز به آن‌ها آب داد؟
+- Non. En été, elles ont besoin de plus de l'eau, mais en ce moment, deux fois par semaine, ça suffit. | نه. تابستان آب بیشتری لازم دارند، ولی این روزها هفته‌ای دو بار کافی است.
++ Non. En été, elles ont besoin de plus d'eau, mais en ce moment, deux fois par semaine, ça suffit. | نه. تابستان آب بیشتری لازم دارند، ولی این روزها هفته‌ای دو بار کافی است.
+- Non. En été, elles ont besoin de moins d'eau, mais en ce moment, deux fois par semaine, ça suffit. | نه. تابستان آب کمتری لازم دارند، ولی این روزها هفته‌ای دو بار کافی است.
+why: بعد از «plus de» برای مقدار، اسم بدون حرف تعریف می‌آید: «plus d'eau»، نه «plus de l'eau». گیاه در تابستانِ گرم آب بیشتری می‌خواهد، و «mais» هم نشان می‌دهد که حالا کمتر لازم است.
+B: D'accord. Et les grandes plantes du balcon ? | باشد. گیاه‌های بزرگ بالکن چه؟
+- Ceux du balcon ont besoin d'autant d'eau que ceux du salon. | آن‌هایی که در بالکن‌اند به اندازه آن‌هایی که در سالن‌اند آب لازم دارند.
++ Celles du balcon ont besoin d'autant d'eau que celles du salon. | آن‌هایی که در بالکن‌اند به اندازه آن‌هایی که در سالن‌اند آب لازم دارند.
+- Celles du balcon ont besoin d'autant de l'eau que celles du salon. | آن‌هایی که در بالکن‌اند به اندازه آن‌هایی که در سالن‌اند آب لازم دارند.
+why: plantes مؤنث جمع است، پس «celles»، نه «ceux». بعد از «autant de» هم اسم بدون حرف تعریف می‌آید: «autant d'eau».
+B: Très bien. Et votre courrier ? Je peux le prendre dans votre boîte aux lettres, si vous voulez. | خیلی خوب. نامه‌هایتان چه؟ اگر بخواهید می‌توانم از صندوق پستتان برشان دارم.
+- Ce serait très gentil. Je vous donnerai la clé de la boîte le lendemain de mon départ. | خیلی لطف می‌کنید. کلید صندوق را روز بعد از رفتنم به شما می‌دهم.
++ Ce serait très gentil. Je vous donnerai la clé de la boîte la veille de mon départ. | خیلی لطف می‌کنید. کلید صندوق را روز قبل از رفتنم به شما می‌دهم.
+- Ce serait très gentil. Je vous donnerai la clé de la boîte la veille de mon retour. | خیلی لطف می‌کنید. کلید صندوق را روز قبل از برگشتنم به شما می‌دهم.
+why: «la veille» یعنی روز قبل؛ «le lendemain» یعنی روز بعد، و آن موقع تو دیگر رفته‌ای. کلید را باید قبل از رفتن بدهی، نه روز قبل از برگشتن (la veille de mon retour)، چون آن موقع در ایرانی.
+B: Parfait. Et vous voulez que je vous envoie un message de temps en temps ? | عالی. می‌خواهید هر از گاهی برایتان پیام بفرستم؟
++ Oui, volontiers ! Plus j'aurai de nouvelles, moins je m'inquiéterai. | بله، با کمال میل! هر چه بیشتر خبر داشته باشم، کمتر نگران می‌شوم.
+- Oui, volontiers ! Plus j'aurai de nouvelles, plus je m'inquiéterai. | بله، با کمال میل! هر چه بیشتر خبر داشته باشم، بیشتر نگران می‌شوم.
+- Oui, volontiers ! Le plus j'aurai de nouvelles, le moins je m'inquiéterai. | بله، با کمال میل! هر چه بیشتر خبر داشته باشم، کمتر نگران می‌شوم.
+why: «Plus …, moins …» یعنی «هر چه بیشتر …، کمتر …» و در فرانسوی بدون le می‌آید. اگر خبر بیشتر نگرانت کند، دلیلی ندارد با خوشحالی «volontiers» بگویی.
+B: Alors bon voyage, et embrassez votre famille pour moi ! | پس سفر بخیر، و خانواده‌تان را از طرف من ببوسید!
+- Merci beaucoup ! Je vous rapporterai de la safran, pour vous remercier. | خیلی ممنون! برای تشکر برایتان زعفران می‌آورم.
+- Merci beaucoup ! Je vous rapporterai du safran, pour me remercier. | خیلی ممنون! برای تشکر از خودم برایتان زعفران می‌آورم.
++ Merci beaucoup ! Je vous rapporterai du safran, pour vous remercier. | خیلی ممنون! برای تشکر برایتان زعفران می‌آورم.
+why: safran مذکر است، پس «du safran»، نه «de la safran». از او تشکر می‌کنی: «pour vous remercier»؛ «pour me remercier» یعنی از خودت تشکر کنی.

@@ -1,0 +1,39 @@
+code: fr-b1-d025
+title: درخواست چند روز مرخصی از مدیر
+situation: ماه آینده عروسی خواهرت در تهران است و یک هفته مرخصی لازم داری. به دفتر مدیرت، آقای برنار، رفته‌ای. او با تو vous حرف می‌زند.
+turns:
+B: Entrez ! Ah, Sara. Vous vouliez me voir ? | بفرمایید! آه، سارا. می‌خواستید مرا ببینید؟
+- Oui, si tu as cinq minutes. J'aurais une petite demande{demande} à te faire. | بله، اگر پنج دقیقه وقت داری. یک خواهش کوچک از تو داشتم.
++ Oui, si vous avez cinq minutes. J'aurais une petite demande{demande} à vous faire. | بله، اگر پنج دقیقه وقت دارید. یک خواهش کوچک از شما داشتم.
+- Oui, si vous avez cinq minutes. J'avais eu une petite demande{demande} à vous faire. | بله، اگر پنج دقیقه وقت دارید. یک خواهش کوچک از شما داشته بودم.
+why: با مدیرت vous می‌گویی، همان‌طور که او با تو حرف می‌زند؛ tu خودمانی است. «J'aurais une demande» یعنی «یک خواهش داشتم» و با وجه شرطی مؤدبانه است؛ ماضی بعید «j'avais eu» اینجا معنی ندارد.
+B: Bien sûr, asseyez-vous. Je vous écoute. | حتماً، بنشینید. بفرمایید.
+- Ma sœur s'est mariée à Téhéran le mois prochain, et j'aimerais beaucoup y aller. | خواهرم ماه آینده در تهران ازدواج کرد و خیلی دوست دارم بروم آنجا.
++ Ma sœur se marie à Téhéran le mois prochain, et j'aimerais beaucoup y aller. | خواهرم ماه آینده در تهران ازدواج می‌کند و خیلی دوست دارم بروم آنجا.
+- Ma sœur se marie à Téhéran le mois prochain, et j'aimerais beaucoup en aller. | خواهرم ماه آینده در تهران ازدواج می‌کند و خیلی دوست دارم بروم آنجا.
+why: عروسی ماه آینده است، پس «se marie» (زمان حال برای آینده نزدیک)؛ «s'est mariée» گذشته است و با «le mois prochain» جور نیست. برای جا ضمیر y است: «y aller»، نه «en aller».
+B: C'est une très bonne nouvelle ! Et vous auriez besoin de combien de jours ? | چه خبر خوبی! چند روز لازم دارید؟
++ D'une semaine, si c'est possible. Je partirais le 10 et je reviendrais le 17. | یک هفته، اگر بشود. دهم می‌رفتم و هفدهم برمی‌گشتم. | tts: D'une semaine, si c'est possible. Je partirais le dix et je reviendrais le dix-sept.
+- D'une semaine, si c'est possible. Je partais le 10 et je revenais le 17. | یک هفته، اگر بشود. دهم می‌رفتم و هفدهم برمی‌گشتم (در گذشته). | tts: D'une semaine, si c'est possible. Je partais le dix et je revenais le dix-sept.
+- D'une année, si c'est possible. Je partirais le 10 et je reviendrais le 17. | یک سال، اگر بشود. دهم می‌رفتم و هفدهم برمی‌گشتم. | tts: D'une année, si c'est possible. Je partirais le dix et je reviendrais le dix-sept.
+why: مرخصی هنوز قبول نشده، پس برنامه‌ات را مؤدبانه با وجه شرطی می‌گویی: «je partirais … je reviendrais»؛ ماضی استمراری (partais) درباره گذشته است. از دهم تا هفدهم یک هفته است، نه یک سال.
+B: Le 10… C'est justement la semaine où nous recevons les clients japonais. | دهم… اتفاقاً همان هفته‌ای است که مشتری‌های ژاپنی را داریم.
+- Je sais, je suis désolée. Mais j'ai tout préparé : Julien s'en occupera d'eux pendant mon absence. | می‌دانم، متأسفم. ولی همه‌چیز را آماده کرده‌ام: ژولین در نبودنم به آن‌ها رسیدگی می‌کند.
++ Je sais, je suis désolée. Mais j'ai tout préparé : Julien s'occupera d'eux pendant mon absence. | می‌دانم، متأسفم. ولی همه‌چیز را آماده کرده‌ام: ژولین در نبودنم به آن‌ها رسیدگی می‌کند.
+- Je sais, je suis désolée. Mais j'ai tout préparé : Julien s'y occupera pendant mon absence. | می‌دانم، متأسفم. ولی همه‌چیز را آماده کرده‌ام: ژولین در نبودنم به آن‌ها رسیدگی می‌کند.
+why: «s'occuper de» با de است و برای آدم‌ها بعد از de ضمیر تأکیدی می‌آید: «s'occuper d'eux». وقتی «d'eux» آمده، en دیگر جا ندارد؛ و y برای فعل‌های با à است.
+B: Julien ? Il est au courant ? | ژولین؟ در جریان است؟
+- Oui, je l'en ai parlé hier, et nous nous sommes mis d'accord sur tout. | بله، دیروز با او درباره‌اش حرف زدم و سر همه‌چیز به توافق رسیدیم.
++ Oui, je lui en ai parlé hier, et nous nous sommes mis d'accord sur tout. | بله، دیروز با او درباره‌اش حرف زدم و سر همه‌چیز به توافق رسیدیم.
+- Oui, je lui en ai parlé hier, et nous nous avons mis d'accord sur tout. | بله، دیروز با او درباره‌اش حرف زدم و سر همه‌چیز به توافق رسیدیم.
+why: «parler à quelqu'un de quelque chose» است، پس «je lui en ai parlé» (lui برای آدم، en برای موضوع)؛ l' اینجا غلط است. فعل ضمیری «se mettre d'accord» در گذشته با être صرف می‌شود: «nous nous sommes mis»، نه «nous nous avons».
+B: Bon, dans ce cas, c'est d'accord. Mais envoyez-moi votre demande{demande} par e-mail, pour que ce soit officiel. | خب، در این صورت موافقم. ولی درخواستتان را با ایمیل برایم بفرستید تا رسمی باشد.
+- Bien sûr, je la vous envoie cet après-midi. Merci beaucoup, monsieur ! | حتماً، امروز بعدازظهر برایتان می‌فرستمش. خیلی ممنون، آقا!
++ Bien sûr, je vous l'envoie cet après-midi. Merci beaucoup, monsieur ! | حتماً، امروز بعدازظهر برایتان می‌فرستمش. خیلی ممنون، آقا!
+- Bien sûr, je vous l'envoyais cet après-midi. Merci beaucoup, monsieur ! | حتماً، امروز بعدازظهر برایتان می‌فرستادمش. خیلی ممنون، آقا!
+why: وقتی دو ضمیر کنار هم می‌آیند، vous پیش از la (l') می‌آید: «je vous l'envoie». فرستادن برای امروز بعدازظهر است، پس ماضی استمراری «envoyais» غلط است.
+B: Je vous en prie. Un mariage iranien typique, ça se fête pendant plusieurs jours, non ? | خواهش می‌کنم. یک عروسی ایرانیِ معمولی چند روز جشن گرفته می‌شود، نه؟
++ Pas pendant plusieurs jours, mais toute la nuit, oui ! Je vous rapporterai des photos. | چند روز نه، ولی تمام شب، بله! برایتان عکس می‌آورم.
+- Pas pendant plusieurs jours, mais toute la nuit, oui ! Je vous rapportais des photos. | چند روز نه، ولی تمام شب، بله! برایتان عکس می‌آوردم.
+- Pas pendant plusieurs jours, mais toute la nuit, oui ! Je vous rapporterai de photos. | چند روز نه، ولی تمام شب، بله! برایتان عکس می‌آورم.
+why: آوردن عکس بعد از سفر است، پس آینده: «je vous rapporterai»، نه ماضی استمراری «rapportais». برای تعدادی نامعین «des photos» می‌گوییم؛ «de photos» بدون کلمه‌ای مثل beaucoup غلط است.
