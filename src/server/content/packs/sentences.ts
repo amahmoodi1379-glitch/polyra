@@ -138,6 +138,12 @@ export function buildSentences(analyzer: Analyzer, files: { file: string; text: 
         out.errors.push({ ...at, text: "d: needs exactly three wrong options" });
         continue;
       }
+      const okAnswers = new Set([surface, ...list(cell(more, "ok"))].map((item) => item.toLowerCase()));
+      const alsoRight = distractors.filter((item) => okAnswers.has(item.toLowerCase()));
+      if (alsoRight.length > 0) {
+        out.errors.push({ ...at, text: `the wrong option «${alsoRight.join("», «")}» is also a right answer (the gap or ok:)${given.length ? "" : "; write d: with three surely wrong options"}` });
+        continue;
+      }
       out.lines.push({ ...at, target, text: analysis.text, tokens: analysis.tokens.map((token) => ({ surface: token.surface, code: token.code, inGap: token.inGap !== null })) });
       const markedText = `${analysis.text.slice(0, gap.start)}{{${surface}}}${analysis.text.slice(gap.end)}`;
       const targetRecord = { type: "word" as const, target: target.word.code, marked_text: markedText, blanks: 1 as const, accepted: [surface, ...list(cell(more, "ok"))], distractors, hint, accepted_full: null };
