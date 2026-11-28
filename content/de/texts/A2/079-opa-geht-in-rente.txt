@@ -10,7 +10,7 @@ A: Ja, genau. 45 Jahre war ich Mechaniker. | آره، دقیقاً. ۴۵ سال 
 B: Wolltest du immer Mechaniker werden? | همیشه می‌خواستی مکانیک بشوی؟
 A: Ja. Meine Eltern waren Bauern, aber ich wollte immer Handwerker werden. | آره. پدر و مادرم کشاورز بودند، ولی من همیشه می‌خواستم استادکار بشوم.
 A: Heute war sogar ein Journalist da und hat Fotos von mir gemacht. | امروز حتی یک روزنامه‌نگار آمد و از من عکس گرفت.
-A: Deshalb war ich heute früh noch bei der Friseurin. | برای همین امروز صبح زود رفتم آرایشگاه.
+A: Deshalb war ich heute früh noch bei der Friseurin. | برای همین امروز صبح رفتم آرایشگاه.
 B: Toll! Und was machst du jetzt mit so viel Freizeit? | عالی! حالا با این همه وقت آزاد چه کار می‌کنی؟
 A: Oma ist schon seit zwei Jahren in Rente, und wir wollen zusammen reisen. | مامان‌بزرگ دو سال است که بازنشسته است و می‌خواهیم با هم سفر کنیم.
 A: Die Rente ist kleiner als mein Lohn, aber wir brauchen nicht viel. | حقوق بازنشستگی از دستمزدم کمتر است، ولی ما چیز زیادی لازم نداریم.
@@ -20,17 +20,17 @@ reading A:
 {"type":"mcq","prompt":"چرا امروز برای پدربزرگ روز مهمی است؟","options":["تولدش است","آخرین روز کارش است","به سفر می‌رود","ماشین تازه‌ای خریده است"],"correct":1,"explanation_fa":"پدربزرگ می‌گوید: «Heute war mein letzter Tag in der Werkstatt.»"}
 {"type":"tf","prompt":"پدربزرگ ۴۵ سال مکانیک بوده است.","correct":true,"explanation_fa":"پدربزرگ می‌گوید: «45 Jahre war ich Mechaniker.»"}
 {"type":"tf","prompt":"پدر و مادر پدربزرگ هم مکانیک بودند.","correct":false,"explanation_fa":"پدربزرگ می‌گوید: «Meine Eltern waren Bauern»، یعنی کشاورز بودند."}
-{"type":"mcq","prompt":"چرا پدربزرگ امروز صبح پیش آرایشگر رفت؟","options":["چون مامان‌بزرگ از او خواست","چون به مهمانی می‌رفت","چون روزنامه‌نگار از او عکس می‌گرفت","چون به هامبورگ سفر می‌کرد"],"correct":2,"explanation_fa":"پدربزرگ می‌گوید: «Heute war sogar ein Journalist da und hat Fotos von mir gemacht. Deshalb war ich heute früh noch bei der Friseurin.»"}
+{"type":"mcq","prompt":"چرا پدربزرگ امروز صبح پیش آرایشگر رفت؟","options":["چون مادربزرگ از او خواست","چون به مهمانی می‌رفت","چون روزنامه‌نگار از او عکس می‌گرفت","چون به هامبورگ سفر می‌کرد"],"correct":2,"explanation_fa":"پدربزرگ می‌گوید: «Heute war sogar ein Journalist da und hat Fotos von mir gemacht. Deshalb war ich heute früh noch bei der Friseurin.»"}
 reading B:
 {"type":"find","prompt":"کدام جمله می‌گوید حقوق بازنشستگی از دستمزد کمتر است؟","correct_sentence":9,"explanation_fa":"پدربزرگ می‌گوید: «Die Rente ist kleiner als mein Lohn.»"}
 {"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Oma ist schon seit zwei Jahren in {{1}}, und wir wollen zusammen {{2}}.","bank":["Rente","reisen","Werkstatt","verkaufen","Zeitung"],"answers":["Rente","reisen"],"explanation_fa":"پدربزرگ می‌گوید: «Oma ist schon seit zwei Jahren in Rente, und wir wollen zusammen reisen.»"}
-{"type":"match","prompt":"هر کس را به چیزی که دربارهٔ او گفته می‌شود وصل کن.","left":["پدربزرگ","مامان‌بزرگ","روزنامه‌نگار"],"right":["از پدربزرگ عکس گرفت","دو سال است بازنشسته است","از فردا بازنشسته است","در هامبورگ زندگی می‌کند"],"pairs":[[0,2],[1,1],[2,0]],"explanation_fa":"در گفتگو آمده: «Dann bist du ab morgen Rentner?» و پدربزرگ می‌گوید «Ja, genau»؛ همچنین «Oma ist schon seit zwei Jahren in Rente» و «ein Journalist ... hat Fotos von mir gemacht»."}
+{"type":"match","prompt":"هر کس را به چیزی که دربارهٔ او گفته می‌شود وصل کن.","left":["پدربزرگ","مادربزرگ","روزنامه‌نگار"],"right":["از پدربزرگ عکس گرفت","دو سال است بازنشسته است","از فردا بازنشسته است","در هامبورگ زندگی می‌کند"],"pairs":[[0,2],[1,1],[2,0]],"explanation_fa":"در گفتگو آمده: «Dann bist du ab morgen Rentner?» و پدربزرگ می‌گوید «Ja, genau»؛ همچنین «Oma ist schon seit zwei Jahren in Rente» و «ein Journalist ... hat Fotos von mir gemacht»."}
 listening A:
 {"type":"num","prompt":"پدربزرگ چند سال مکانیک بوده است؟","answer":"45","accepted":["45","fünfundvierzig"],"explanation_fa":"پدربزرگ می‌گوید: «45 Jahre war ich Mechaniker.»"}
 {"type":"mcq","prompt":"پدر و مادر پدربزرگ چه کاره بودند؟","options":["مکانیک","کشاورز","آرایشگر","روزنامه‌نگار"],"correct":1,"explanation_fa":"پدربزرگ می‌گوید: «Meine Eltern waren Bauern.»"}
-{"type":"tf","prompt":"پدربزرگ و مامان‌بزرگ می‌خواهند با هم سفر کنند.","correct":true,"explanation_fa":"پدربزرگ می‌گوید: «wir wollen zusammen reisen»."}
-{"type":"tf","prompt":"پدربزرگ و مامان‌بزرگ با ماشین به هامبورگ می‌آیند.","correct":false,"explanation_fa":"پدربزرگ می‌گوید: «Wir kommen mit dem Zug»، یعنی با قطار می‌آیند."}
+{"type":"tf","prompt":"پدربزرگ و مادربزرگ می‌خواهند با هم سفر کنند.","correct":true,"explanation_fa":"پدربزرگ می‌گوید: «wir wollen zusammen reisen»."}
+{"type":"tf","prompt":"پدربزرگ و مادربزرگ با ماشین به هامبورگ می‌آیند.","correct":false,"explanation_fa":"پدربزرگ می‌گوید: «Wir kommen mit dem Zug»، یعنی با قطار می‌آیند."}
 listening B:
 {"type":"tf","prompt":"امروز یک روزنامه‌نگار پیش پدربزرگ آمد.","correct":true,"explanation_fa":"پدربزرگ می‌گوید: «Heute war sogar ein Journalist da.»"}
 {"type":"tf","prompt":"حقوق بازنشستگی پدربزرگ از دستمزدش بیشتر است.","correct":false,"explanation_fa":"پدربزرگ می‌گوید: «Die Rente ist kleiner als mein Lohn»، یعنی کمتر است."}
-{"type":"mcq","prompt":"میا پدربزرگ و مامان‌بزرگ را برای کی به هامبورگ دعوت می‌کند؟","options":["ماه مارس","آخر همین هفته","ماه ژوئن","ماه مه"],"correct":3,"explanation_fa":"میا می‌پرسد: «Kommt ihr im Mai zu uns nach Hamburg?»"}
+{"type":"mcq","prompt":"میا پدربزرگ و مادربزرگ را برای کی به هامبورگ دعوت می‌کند؟","options":["ماه مارس","آخر همین هفته","ماه ژوئن","ماه مه"],"correct":3,"explanation_fa":"میا می‌پرسد: «Kommt ihr im Mai zu uns nach Hamburg?»"}

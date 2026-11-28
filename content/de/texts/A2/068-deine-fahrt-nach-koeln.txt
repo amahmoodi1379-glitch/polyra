@@ -19,7 +19,7 @@ reading A:
 {"type":"mcq","prompt":"مینا این متن را برای چه نوشته است؟","options":["تا بگوید خودش به مونیخ می‌آید","تا خاله‌اش بداند چطور با قطار به کلن بیاید","تا خاله‌اش برایش بلیت بخرد","تا بگوید شنبه قطاری نیست"],"correct":1,"explanation_fa":"مینا می‌نویسد: «so fährst du am Samstag zu uns» و بعد ساعت‌ها و سکوهای قطار را می‌گوید."}
 {"type":"tf","prompt":"خاله لیلا در فرانکفورت باید قطار عوض کند.","correct":true,"explanation_fa":"در برنامه آمده: «Ankunft in Frankfurt. Dort musst du umsteigen.»"}
 {"type":"tf","prompt":"اگر خاله لیلا به قطار بعدی نرسد، تا فردا قطاری به کلن نیست.","correct":false,"explanation_fa":"مینا می‌نویسد: «Jede Stunde fährt ein Zug nach Köln.»"}
-{"type":"mcq","prompt":"مینا در کلن کجا منتظر خاله‌اش است؟","options":["روی سکوی ۹","جلوی در خانه","کنار در خروجی، نزدیک کیوسک","در حیاط خانه"],"correct":2,"explanation_fa":"مینا می‌نویسد: «Ich warte am Ausgang, gleich neben dem Kiosk.»"}
+{"type":"mcq","prompt":"مینا در کلن کجا منتظر خاله‌اش است؟","options":["روی سکوی ۹ در فرانکفورت","جلوی در ورودی خانه","کنار در خروجی، نزدیک کیوسک","در حیاط پشت خانه"],"correct":2,"explanation_fa":"مینا می‌نویسد: «Ich warte am Ausgang, gleich neben dem Kiosk.»"}
 reading B:
 {"type":"match","prompt":"هر ساعت را به برنامه‌اش وصل کن.","left":["۰۹:۱۲","۱۲:۴۵","۱۳:۵۵"],"right":["رسیدن به کلن","حرکت از مونیخ","حرکت قطار بعدی به کلن","رسیدن به فرانکفورت"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"در برنامه آمده: «09:12 Uhr: Abfahrt in München»، «12:45 Uhr: Dein Anschluss nach Köln» و «13:55 Uhr: Ankunft in Köln»."}
 {"type":"find","prompt":"کدام جمله می‌گوید در ورودی خانه مینا کجاست؟","correct_sentence":9,"explanation_fa":"مینا می‌نویسد: «Der Eingang von unserem Haus ist hinten im Hof.»"}

@@ -3,14 +3,14 @@ title: Der Verkehr am Morgen
 kind: announcement
 key_words: Verkehr, Stau, einen Unfall haben, Norden, Osten
 sentences:
-- Guten Morgen! Hier ist der Verkehr für München. | صبح بخیر! این هم خبر رفت و آمد در مونیخ.
+- Guten Morgen! Und jetzt der Verkehr in München. | صبح بخیر! و حالا گزارش ترافیک مونیخ.
 - Im Norden von München gibt es einen langen Stau. | در شمال مونیخ یک راه‌بندان طولانی هست.
-- Dort hatte ein Auto einen Unfall. Die Polizei ist schon da. | آنجا یک ماشین تصادف کرده است. پلیس هم الان آنجاست.
+- Dort hatte ein Fahrer einen Unfall. Die Polizei ist schon da. | آنجا یک راننده تصادف کرده است. پلیس هم الان آنجاست.
 - Im Osten ist die Brücke am Bahnhof heute geschlossen. | در شرق، پل کنار ایستگاه قطار امروز بسته است.
 - Im Süden und im Westen gibt es keine Probleme. | در جنوب و غرب مشکلی نیست.
 - Am Nachmittag regnet es. Bitte fahren Sie langsam! | بعدازظهر باران می‌آید. لطفاً آهسته رانندگی کنید!
 reading A:
-{"type":"mcq","prompt":"این متن درباره چیست؟","options":["هوای فردا در مونیخ","وضعیت رفت و آمد در مونیخ","یک جشن در مونیخ","قطارهای ایستگاه مونیخ"],"correct":1,"explanation_fa":"گوینده می‌گوید: «Hier ist der Verkehr für München.» و بعد از راه‌بندان، تصادف و پل بسته می‌گوید."}
+{"type":"mcq","prompt":"این متن درباره چیست؟","options":["هوای فردا در مونیخ","وضعیت رفت و آمد در مونیخ","یک جشن در مونیخ","قطارهای ایستگاه مونیخ"],"correct":1,"explanation_fa":"گوینده می‌گوید: «Und jetzt der Verkehr in München.» و بعد از راه‌بندان، تصادف و پل بسته می‌گوید."}
 {"type":"tf","prompt":"در شمال مونیخ راه‌بندان است.","correct":true,"explanation_fa":"در متن آمده: «Im Norden von München gibt es einen langen Stau.»"}
 {"type":"tf","prompt":"در غرب شهر یک تصادف شده است.","correct":false,"explanation_fa":"تصادف در شمال است. درباره غرب آمده: «Im Süden und im Westen gibt es keine Probleme.»"}
 reading B:

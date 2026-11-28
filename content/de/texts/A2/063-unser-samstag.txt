@@ -12,7 +12,7 @@ sentences:
 - 15:00 Uhr: Wir gehen alle zusammen in den Zoo. Danach können die Kinder noch auf den Spielplatz. | ساعت ۱۵: همه با هم به باغ وحش می‌رویم. بعدش بچه‌ها می‌توانند به زمین بازی هم بروند. | tts: Fünfzehn Uhr: Wir gehen alle zusammen in den Zoo. Danach können die Kinder noch auf den Spielplatz.
 - 18:00 Uhr: Papa holt das Auto ab. Die Werkstatt ist nur bis 18:30 Uhr offen! | ساعت ۱۸: بابا ماشین را از تعمیرگاه می‌گیرد. تعمیرگاه فقط تا ساعت ۱۸:۳۰ باز است! | tts: Achtzehn Uhr: Papa holt das Auto ab. Die Werkstatt ist nur bis achtzehn Uhr dreißig offen!
 - Danach fährt er noch zur Tankstelle. | بعد از آن به پمپ بنزین هم می‌رود.
-- 19:00 Uhr: Lena kommt und passt auf die Kinder auf. | ساعت ۱۹: لنا می‌آید و مراقب بچه‌ها است. | tts: Neunzehn Uhr: Lena kommt und passt auf die Kinder auf.
+- 19:00 Uhr: Lena kommt und passt auf die Kinder auf. | ساعت ۱۹: لنا می‌آید و از بچه‌ها مراقبت می‌کند. | tts: Neunzehn Uhr: Lena kommt und passt auf die Kinder auf.
 - 19:30 Uhr: Mama und Papa sind im Theater. Die Karten liegen auf dem Schreibtisch. | ساعت ۱۹:۳۰: مامان و بابا در تئاتر هستند. بلیت‌ها روی میز تحریر است. | tts: Neunzehn Uhr dreißig: Mama und Papa sind im Theater. Die Karten liegen auf dem Schreibtisch.
 - Kinder, um 21 Uhr seid ihr bitte im Bett! | بچه‌ها، لطفاً ساعت ۲۱ توی رختخواب باشید! | tts: Kinder, um einundzwanzig Uhr seid ihr bitte im Bett!
 reading A:

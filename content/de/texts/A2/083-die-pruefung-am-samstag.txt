@@ -15,7 +15,7 @@ sentences:
 - Sprechen Sie die Wörter klar aus, denn die Aussprache ist wichtig. | کلمه‌ها را واضح تلفظ کنید، چون تلفظ مهم است.
 - Kleine Fehler sind kein Problem. | اشتباه‌های کوچک اشکالی ندارد.
 - In vier Wochen wissen Sie, ob Sie die Prüfung bestanden haben. | چهار هفته بعد می‌فهمید که در امتحان قبول شده‌اید یا نه.
-- Viel Erfolg! Ihre{Ihr-det} Lehrerin Lisa Weber | موفق باشید! معلمتان، لیزا وبر
+- Viel Erfolg! Ihre{Ihr-det} Lehrerin Anna Müller | موفق باشید! معلمتان، آنا مولر
 reading A:
 {"type":"mcq","prompt":"این متن دربارهٔ چیست؟","options":["نتیجهٔ امتحان","برنامهٔ روز امتحان","برنامهٔ یک کلاس تازه","یک سفر با کلاس"],"correct":1,"explanation_fa":"معلم می‌نویسد: «am Samstag ist unsere Prüfung» و بعد ساعت هر بخش امتحان را می‌گوید."}
 {"type":"tf","prompt":"شرکت‌کنندگان می‌توانند از دیکشنری استفاده کنند.","correct":false,"explanation_fa":"معلم می‌نویسد: «Ein Wörterbuch dürfen Sie nicht benutzen.»"}

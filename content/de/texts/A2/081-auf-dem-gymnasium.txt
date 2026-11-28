@@ -22,7 +22,7 @@ reading A:
 {"type":"mcq","prompt":"حالا هر شب چه کسی به اِما کمک می‌کند؟","options":["مامان","بابا","معلم","مامان‌بزرگ"],"correct":1,"explanation_fa":"اِما می‌نویسد: «Papa hilft mir jetzt jeden Abend.»"}
 reading B:
 {"type":"find","prompt":"کدام جمله می‌گوید دبستان نزدیک خانه بود؟","correct_sentence":2,"explanation_fa":"اِما می‌نویسد: «Die Grundschule war nur fünf Minuten von unserem Haus»."}
-{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Wir haben jetzt viele {{1}}, auch Englisch und Geschichte. Unsere {{2}} hängen jetzt im Flur.","bank":["Fächer","Bilder","Unterricht","Grundschule","Test"],"answers":["Fächer","Bilder"],"explanation_fa":"اِما می‌نویسد: «Wir haben jetzt viele Fächer» و «Unsere Bilder hängen jetzt im Flur.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Wir haben jetzt viele {{1}}, auch Englisch und Geschichte. Kunst mag ich am liebsten. Unsere {{2}} hängen jetzt im Flur.","bank":["Fächer","Bilder","Unterricht","Grundschule","Test"],"answers":["Fächer","Bilder"],"explanation_fa":"اِما می‌نویسد: «Wir haben jetzt viele Fächer» و «Unsere Bilder hängen jetzt im Flur.»"}
 {"type":"order","prompt":"این چیزها را به همان ترتیبی بچین که اِما در ایمیلش نوشته است.","items":["امتحان ریاضی","درس هنر","ساعت شروع کلاس‌ها","داستان معلم تاریخ"],"correct_order":[2,1,0,3],"explanation_fa":"اِما اول از «Der Unterricht beginnt um 7:45 Uhr» می‌نویسد، بعد از «Kunst»، بعد از «einen Test» در ریاضی و آخر از داستان‌های معلم تاریخ."}
 listening A:
 {"type":"num","prompt":"کلاس‌ها ساعت چند شروع می‌شود؟","answer":"7:45","accepted":["7:45","7.45","sieben Uhr fünfundvierzig","Viertel vor acht"],"explanation_fa":"اِما می‌گوید: «Der Unterricht beginnt um 7:45 Uhr.»"}

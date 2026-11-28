@@ -12,12 +12,12 @@ sentences:
 - Kommst du mit dem Auto? Dann lass es lieber bei mir. | با ماشین می‌آیی؟ پس بهتر است آن را پیش من بگذاری.
 - In der Innenstadt gibt es nur wenige Parkplätze, und sie sind sehr teuer. | در مرکز شهر فقط چند جای پارک هست و خیلی هم گران است.
 - Meine Gegend ist ruhig, und vor dem Haus gibt es immer einen Parkplatz. | محله من آرام است و جلوی خانه همیشه جای پارک هست.
-- Von mir fahren wir dann mit dem Bus in die Stadt. | از خانه من با اتوبوس به شهر می‌رویم.
+- Von hier fahren wir dann mit dem Bus in die Stadt. | از اینجا با اتوبوس به شهر می‌رویم.
 - Ich habe auch einen Stadtplan für dich. | یک نقشه شهر هم برایت دارم.
 - Zieh bitte deine bequemen Schuhe an, wir laufen viel! | لطفاً کفش‌های راحتت را بپوش، خیلی راه می‌رویم!
 - Bis Samstag, deine Julia | تا شنبه، جولیا
 reading A:
-{"type":"mcq","prompt":"جولیا چرا این ایمیل را نوشته است؟","options":["برای دعوت علی به جشن تولد","برای فروش ماشین قدیمی‌اش","برای برنامه سفر علی به درسدن","برای خبر دادن از خانه جدیدش"],"correct":2,"explanation_fa":"جولیا می‌نویسد: «schön, dass du am Samstag nach Dresden kommst!» و بعد برنامه آن روز را می‌گوید."}
+{"type":"mcq","prompt":"جولیا چرا این ایمیل را نوشته است؟","options":["برای دعوت علی به جشن تولد","برای فروش ماشین قدیمی‌اش","برای گفتن برنامه سفر علی به درسدن","برای خبر دادن از خانه جدیدش"],"correct":2,"explanation_fa":"جولیا می‌نویسد: «schön, dass du am Samstag nach Dresden kommst!» و بعد برنامه آن روز را می‌گوید."}
 {"type":"tf","prompt":"به گفته جولیا، در مرکز شهر جای پارک ارزان زیاد است.","correct":false,"explanation_fa":"جولیا می‌نویسد: «In der Innenstadt gibt es nur wenige Parkplätze, und sie sind sehr teuer.»"}
 {"type":"tf","prompt":"جلوی خانه جولیا همیشه جای پارک هست.","correct":true,"explanation_fa":"جولیا می‌نویسد: «vor dem Haus gibt es immer einen Parkplatz»."}
 {"type":"mcq","prompt":"علی و جولیا اول به کجا می‌روند؟","options":["کلیسا","کاخ قدیمی","برج","بازار"],"correct":1,"explanation_fa":"جولیا می‌نویسد: «Wir besuchen zuerst das alte Schloss»، یعنی اول به کاخ قدیمی می‌روند."}
@@ -27,7 +27,7 @@ reading B:
 {"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"In der {{1}} gibt es nur wenige {{2}}, und sie sind sehr teuer.","bank":["Innenstadt","Parkplätze","Gegend","Schuhe","Busse"],"answers":["Innenstadt","Parkplätze"],"explanation_fa":"جولیا می‌نویسد: «In der Innenstadt gibt es nur wenige Parkplätze, und sie sind sehr teuer.»"}
 listening A:
 {"type":"mcq","prompt":"جولیا درباره ماشین علی چه پیشنهادی می‌دهد؟","options":["آن را در مرکز شهر پارک کند","ماشین را پیش جولیا بگذارد","با ماشین به کاخ برود","ماشین را به تعمیرگاه ببرد"],"correct":1,"explanation_fa":"جولیا می‌گوید: «Dann lass es lieber bei mir.»، یعنی بهتر است ماشین را پیش او بگذارد."}
-{"type":"tf","prompt":"جولیا و علی با اتوبوس به شهر می‌روند.","correct":true,"explanation_fa":"جولیا می‌گوید: «Von mir fahren wir dann mit dem Bus in die Stadt.»"}
+{"type":"tf","prompt":"جولیا و علی با اتوبوس به شهر می‌روند.","correct":true,"explanation_fa":"جولیا می‌گوید: «Von hier fahren wir dann mit dem Bus in die Stadt.»"}
 {"type":"tf","prompt":"کلیسا کنار ایستگاه قطار است.","correct":false,"explanation_fa":"جولیا می‌گوید: «die große Kirche am Markt»، یعنی کلیسا کنار میدان بازار است."}
 {"type":"mcq","prompt":"جولیا می‌گوید علی چه بپوشد؟","options":["یک کاپشن گرم","لباس رسمی","کفش‌های نو","کفش‌های راحتش"],"correct":3,"explanation_fa":"جولیا می‌گوید: «Zieh bitte deine bequemen Schuhe an, wir laufen viel!»"}
 listening B:

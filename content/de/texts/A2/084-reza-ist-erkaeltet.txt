@@ -15,7 +15,7 @@ B: Ja. Ihr{Ihr-det} Ergebnis ist sehr gut, Sie haben nur zwei Fehler gemacht. | 
 A: Dann kann ich am Freitag die Prüfung machen, oder? | پس جمعه می‌توانم امتحان بدهم، نه؟
 B: Natürlich. Ihr{Ihr-det} Wissen ist gut genug. Aber zuerst müssen Sie gesund werden! | حتماً. دانش شما کافی است. ولی اول باید خوب شوید!
 reading A:
-{"type":"mcq","prompt":"رضا چرا به خانم بکر زنگ می‌زند؟","options":["می‌خواهد کلاسش را عوض کند","امروز نمی‌تواند سر کلاس بیاید","نتیجهٔ امتحانش را نمی‌داند","می‌خواهد امتحان را عقب بیندازد"],"correct":1,"explanation_fa":"رضا می‌گوید: «Leider bin ich krank und kann heute nicht zum Unterricht kommen.»"}
+{"type":"mcq","prompt":"رضا چرا به خانم بکر زنگ می‌زند؟","options":["می‌خواهد کلاسش را عوض کند","امروز نمی‌تواند سر کلاس بیاید","می‌خواهد ساعت کلاس را بپرسد","می‌خواهد امتحان را عقب بیندازد"],"correct":1,"explanation_fa":"رضا می‌گوید: «Leider bin ich krank und kann heute nicht zum Unterricht kommen.»"}
 {"type":"tf","prompt":"رضا سرما خورده است.","correct":true,"explanation_fa":"رضا می‌گوید: «Es ist nur eine Erkältung»."}
 {"type":"tf","prompt":"امروز در کلاس درس تازه‌ای شروع می‌شود.","correct":false,"explanation_fa":"خانم بکر می‌گوید: «Wir wiederholen heute die Grammatik für die Prüfung»، یعنی دستور زبان را مرور می‌کنند."}
 {"type":"mcq","prompt":"رضا چطور می‌فهمد امروز در کلاس چه کردند؟","options":["یک همکلاسی برایش تعریف می‌کند","از کتاب درسی می‌خواند","خانم بکر عکس تخته را برایش می‌فرستد","خانم بکر به خانه‌اش می‌آید"],"correct":2,"explanation_fa":"خانم بکر می‌گوید: «Ich schreibe alles an die Tafel und schicke Ihnen ein Foto.»"}

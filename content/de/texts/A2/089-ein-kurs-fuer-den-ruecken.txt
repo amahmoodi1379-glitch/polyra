@@ -18,7 +18,7 @@ reading A:
 {"type":"mcq","prompt":"خانم احمدی چرا به بیمه زنگ می‌زند؟","options":["می‌خواهد دکترش را عوض کند","کارت بیمه‌اش را گم کرده است","می‌خواهد در یک کلاس شرکت کند","می‌خواهد وقت دکتر بگیرد"],"correct":2,"explanation_fa":"خانم احمدی می‌گوید: «Ich würde gern einen Kurs machen. Bezahlen Sie das?»"}
 {"type":"tf","prompt":"خانم احمدی تمام روز پشت کامپیوتر می‌نشیند.","correct":true,"explanation_fa":"خانم احمدی می‌گوید: «Ich sitze den ganzen Tag am Computer»."}
 {"type":"tf","prompt":"دکتر می‌گوید بیماری خانم احمدی خیلی بد است.","correct":false,"explanation_fa":"خانم احمدی می‌گوید: «Mein Arzt sagt, es ist nicht schlimm»."}
-{"type":"mcq","prompt":"معلم کلاس چه کاره است؟","options":["مربی ورزش","پزشک","پرستار","کارمند بیمه"],"correct":1,"explanation_fa":"آقای واگنر می‌گوید: «Die Lehrerin ist Ärztin.»"}
+{"type":"mcq","prompt":"معلم کلاس چه کاره است؟","options":["منشی","پزشک","پرستار","کارمند بیمه"],"correct":1,"explanation_fa":"آقای واگنر می‌گوید: «Die Lehrerin ist Ärztin.»"}
 reading B:
 {"type":"find","prompt":"کدام جمله می‌گوید خانم احمدی پیش از کلاس دوباره پیش دکتر برود؟","correct_sentence":7,"explanation_fa":"آقای واگنر می‌گوید: «Gehen Sie aber vorher noch einmal zum Arzt.»"}
 {"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Mein Arzt sagt, es ist nicht {{1}}, aber ich soll mehr für meine {{2}} tun.","bank":["schlimm","Gesundheit","Gefahr","Rücken","Kurs"],"answers":["schlimm","Gesundheit"],"explanation_fa":"خانم احمدی می‌گوید: «Mein Arzt sagt, es ist nicht schlimm, aber ich soll mehr für meine Gesundheit tun.»"}

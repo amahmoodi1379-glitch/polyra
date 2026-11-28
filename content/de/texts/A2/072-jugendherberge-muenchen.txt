@@ -12,7 +12,7 @@ sentences:
 - Donnerstag: Das Museum am Markt ist für unsere Gäste kostenlos. | پنجشنبه: موزه کنار میدان بازار برای مهمان‌های ما رایگان است.
 - Eine Übernachtung mit Frühstück kostet 32 Euro. | یک شب اقامت با صبحانه ۳۲ یورو است. | tts: Eine Übernachtung mit Frühstück kostet zweiunddreißig Euro.
 - Bitte melden Sie sich für die Führung und den Ausflug bis 18 Uhr am Tag vorher an der Rezeption an. | لطفاً برای بازدید و گردش تا ساعت ۱۸ روز قبل در پذیرش ثبت‌نام کنید. | tts: Bitte melden Sie sich für die Führung und den Ausflug bis achtzehn Uhr am Tag vorher an der Rezeption an.
-- Ihre Freunde brauchen noch ein Zimmer? Wir haben leider keine Zimmer mehr. Fragen Sie in der Pension Müller gleich gegenüber. | دوستانتان هنوز اتاق لازم دارند؟ متأسفانه ما دیگر اتاق نداریم. از مسافرخانه مولر، درست روبه‌رو، بپرسید.
+- Ihre Freunde brauchen noch ein Zimmer? Wir haben leider keine Zimmer mehr. Fragen Sie in der Pension Müller gleich gegenüber. | دوستانتان هنوز اتاق لازم دارند؟ متأسفانه ما دیگر اتاق نداریم. از پانسیون مولر، درست روبه‌رو، بپرسید.
 reading A:
 {"type":"mcq","prompt":"این متن چیست؟","options":["فهرست قیمت‌های یک هتل بزرگ","برنامه هفته یک مسافرخانه جوانان","برنامه کلاس‌های یک مدرسه","آگهی یک فروشگاه دوچرخه"],"correct":1,"explanation_fa":"متن با «Willkommen in der Jugendherberge München!» شروع می‌شود و برنامه روزهای هفته را برای مهمان‌ها می‌گوید."}
 {"type":"tf","prompt":"بازدید دوشنبه به زبان انگلیسی هم هست.","correct":true,"explanation_fa":"در برنامه آمده: «Für Touristen aus dem Ausland gibt es die Führung auch auf Englisch.»"}
@@ -29,6 +29,6 @@ listening A:
 {"type":"tf","prompt":"مسافرخانه جوانان این هفته اتاق خالی زیادی دارد.","correct":false,"explanation_fa":"در برنامه آمده: «Wir haben leider keine Zimmer mehr.»"}
 listening B:
 {"type":"num","prompt":"یک شب اقامت با صبحانه چند یورو است؟","answer":"32","accepted":["32","32 Euro","zweiunddreißig"],"explanation_fa":"در برنامه آمده: «Eine Übernachtung mit Frühstück kostet 32 Euro.»"}
-{"type":"mcq","prompt":"اگر دوستانتان اتاق لازم دارند، کجا بپرسند؟","options":["در پذیرش همین مسافرخانه","در مسافرخانه مولر، روبه‌رو","در موزه کنار میدان","در هتل کنار ایستگاه"],"correct":1,"explanation_fa":"در برنامه آمده: «Fragen Sie in der Pension Müller gleich gegenüber.»"}
+{"type":"mcq","prompt":"اگر دوستانتان اتاق لازم دارند، کجا بپرسند؟","options":["در پذیرش همین مسافرخانه","در پانسیون مولر، روبه‌رو","در موزه کنار میدان","در هتل کنار ایستگاه"],"correct":1,"explanation_fa":"در برنامه آمده: «Fragen Sie in der Pension Müller gleich gegenüber.»"}
 {"type":"tf","prompt":"برای بازدید و گردش باید تا ساعت ۱۸ روز قبل ثبت‌نام کرد.","correct":true,"explanation_fa":"در برنامه آمده: «bis 18 Uhr am Tag vorher an der Rezeption»."}
 {"type":"tf","prompt":"بازدید فقط به زبان آلمانی است.","correct":false,"explanation_fa":"در برنامه آمده: «gibt es die Führung auch auf Englisch»."}

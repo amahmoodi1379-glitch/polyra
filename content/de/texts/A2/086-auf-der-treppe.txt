@@ -18,7 +18,7 @@ sentences:
 reading A:
 {"type":"mcq","prompt":"لیزا در این ایمیل از جولیا چه می‌خواهد؟","options":["برایش غذا درست کند","سگش را بیرون ببرد","او را پیش دکتر ببرد","کلیدش را پیدا کند"],"correct":1,"explanation_fa":"لیزا می‌نویسد: «Kannst du morgen und am Samstag mit meinem Hund spazieren gehen?»"}
 {"type":"tf","prompt":"لیزا روی پله‌ها زمین خورد.","correct":true,"explanation_fa":"لیزا می‌نویسد: «Ich bin mit der Wäsche auf der Treppe gefallen.»"}
-{"type":"tf","prompt":"همسایهٔ لیزا پزشک است.","correct":false,"explanation_fa":"لیزا می‌نویسد: «mein Nachbar ist Krankenpfleger»، یعنی پرستار است."}
+{"type":"tf","prompt":"همسایهٔ لیزا پزشک است.","correct":false,"explanation_fa":"لیزا می‌نویسد: «Zum Glück ist mein Nachbar Krankenpfleger»، یعنی پرستار است."}
 {"type":"mcq","prompt":"امروز کدام جای بدن لیزا هم درد می‌کند؟","options":["کمرش","شانه‌اش","سرش","گردنش"],"correct":1,"explanation_fa":"لیزا می‌نویسد: «Heute tut mir auch die Schulter weh»."}
 reading B:
 {"type":"find","prompt":"کدام جمله می‌گوید کلید پیش چه کسی است؟","correct_sentence":8,"explanation_fa":"لیزا می‌نویسد: «Den Schlüssel hat mein Nachbar, Herr Schulz.»"}

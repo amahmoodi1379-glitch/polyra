@@ -9,28 +9,28 @@ sentences:
 - Er hat seit gestern Fieber und muss im Bett bleiben. | از دیروز تب دارد و باید در رختخواب بماند.
 - Heute war ich mit ihm beim Arzt. Der Arzt hat ihn untersucht und sagt, es ist nur eine Grippe. | امروز با او پیش دکتر بودم. دکتر معاینه‌اش کرد و می‌گوید فقط آنفولانزاست.
 - Leon soll morgens und abends eine Tablette nehmen. | لئون باید صبح و شب یک قرص بخورد.
-- Das Medikament ist im Kühlschrank. | دارو در یخچال است.
+- Das Medikament ist im Bad. | دارو در حمام است.
 - Bitte miss am Nachmittag Fieber. | لطفاً بعدازظهر تبش را اندازه بگیر.
 - Wenn er mehr als 39 Grad Fieber hat, ruf bitte die Praxis an. | اگر تبش از ۳۹ درجه بیشتر بود، لطفاً به مطب زنگ بزن. | tts: Wenn er mehr als neununddreißig Grad Fieber hat, ruf bitte die Praxis an.
 - Die Nummer liegt auf dem Tisch in der Küche. | شماره روی میز آشپزخانه است.
-- Er darf viel Tee trinken und fernsehen, aber er soll nicht nach draußen gehen. | می‌تواند زیاد چای بخورد و تلویزیون ببیند، ولی نباید بیرون برود.
+- Er soll viel Tee trinken und darf fernsehen, aber er darf nicht nach draußen gehen. | باید زیاد چای بخورد و می‌تواند تلویزیون ببیند، ولی نباید بیرون برود.
 - Ich komme um 18 Uhr nach Hause. Danke! Deine Laura | ساعت ۱۸ به خانه می‌آیم. ممنون! لورا | tts: Ich komme um achtzehn Uhr nach Hause. Danke! Deine Laura
 reading A:
 {"type":"mcq","prompt":"لورا چرا این ایمیل را نوشته است؟","options":["تا بگوید فردا خودش در خانه است","تا بگوید مادرش چطور از لئون مراقبت کند","تا مادرش را برای شام دعوت کند","تا از مادرش بخواهد پیش دکتر برود"],"correct":1,"explanation_fa":"لورا می‌نویسد: «danke, dass du morgen auf Leon aufpasst» و بعد می‌گوید مادرش چه کارهایی بکند."}
 {"type":"tf","prompt":"لئون از دیروز تب دارد.","correct":true,"explanation_fa":"لورا می‌نویسد: «Er hat seit gestern Fieber»."}
-{"type":"tf","prompt":"دارو روی میز آشپزخانه است.","correct":false,"explanation_fa":"لورا می‌نویسد: «Das Medikament ist im Kühlschrank»؛ روی میز آشپزخانه شمارهٔ تلفن است."}
+{"type":"tf","prompt":"دارو روی میز آشپزخانه است.","correct":false,"explanation_fa":"لورا می‌نویسد: «Das Medikament ist im Bad»؛ روی میز آشپزخانه شمارهٔ تلفن است."}
 {"type":"mcq","prompt":"لئون کی باید قرص بخورد؟","options":["فقط صبح","ظهر و شب","صبح و شب","سه بار در روز"],"correct":2,"explanation_fa":"لورا می‌نویسد: «Leon soll morgens und abends eine Tablette nehmen.»"}
 reading B:
 {"type":"find","prompt":"کدام جمله می‌گوید مادر لورا کی باید تب لئون را اندازه بگیرد؟","correct_sentence":6,"explanation_fa":"لورا می‌نویسد: «Bitte miss am Nachmittag Fieber.»"}
-{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Das {{1}} ist im Kühlschrank. Bitte miss am Nachmittag {{2}}.","bank":["Medikament","Fieber","Tablette","Praxis","Grippe"],"answers":["Medikament","Fieber"],"explanation_fa":"لورا می‌نویسد: «Das Medikament ist im Kühlschrank. Bitte miss am Nachmittag Fieber.»"}
-{"type":"match","prompt":"هر چیز را به جایی که هست یا کاری که می‌کند وصل کن.","left":["دارو","شمارهٔ تلفن مطب","لورا"],"right":["روی میز آشپزخانه است","ساعت ۱۸ به خانه می‌آید","در یخچال است","در کیف لورا است"],"pairs":[[0,2],[1,0],[2,1]],"explanation_fa":"لورا می‌نویسد: «Das Medikament ist im Kühlschrank»، «Die Nummer liegt auf dem Tisch in der Küche» و «Ich komme um 18 Uhr nach Hause»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Das {{1}} ist im Bad. Bitte miss am Nachmittag {{2}}.","bank":["Medikament","Fieber","Tablette","Praxis","Grippe"],"answers":["Medikament","Fieber"],"explanation_fa":"لورا می‌نویسد: «Das Medikament ist im Bad. Bitte miss am Nachmittag Fieber.»"}
+{"type":"match","prompt":"هر چیز را به جایی که هست یا کاری که می‌کند وصل کن.","left":["دارو","شمارهٔ تلفن مطب","لورا"],"right":["روی میز آشپزخانه است","ساعت ۱۸ به خانه می‌آید","در حمام است","در کیف لورا است"],"pairs":[[0,2],[1,0],[2,1]],"explanation_fa":"لورا می‌نویسد: «Das Medikament ist im Bad»، «Die Nummer liegt auf dem Tisch in der Küche» و «Ich komme um 18 Uhr nach Hause»."}
 listening A:
 {"type":"num","prompt":"اگر تب لئون از چند درجه بیشتر شد، باید به مطب زنگ زد؟","answer":"39","accepted":["39","39 Grad","neununddreißig"],"explanation_fa":"لورا می‌گوید: «Wenn er mehr als 39 Grad Fieber hat, ruf bitte die Praxis an.»"}
 {"type":"mcq","prompt":"دکتر دربارهٔ بیماری لئون چه می‌گوید؟","options":["سرماخوردگی ساده است","باید به بیمارستان برود","حساسیت دارد","فقط آنفولانزاست"],"correct":3,"explanation_fa":"لورا می‌گوید: «Der Arzt hat ihn untersucht und sagt, es ist nur eine Grippe.»"}
-{"type":"tf","prompt":"لئون می‌تواند تلویزیون ببیند.","correct":true,"explanation_fa":"لورا می‌گوید: «Er darf viel Tee trinken und fernsehen»."}
-{"type":"tf","prompt":"لئون می‌تواند بیرون برود.","correct":false,"explanation_fa":"لورا می‌گوید: «er soll nicht nach draußen gehen»."}
+{"type":"tf","prompt":"لئون می‌تواند تلویزیون ببیند.","correct":true,"explanation_fa":"لورا می‌گوید: «Er soll viel Tee trinken und darf fernsehen»، یعنی می‌تواند تلویزیون ببیند."}
+{"type":"tf","prompt":"لئون می‌تواند بیرون برود.","correct":false,"explanation_fa":"لورا می‌گوید: «er darf nicht nach draußen gehen»."}
 listening B:
 {"type":"num","prompt":"لورا ساعت چند به خانه می‌آید؟","answer":"18","accepted":["18","18 Uhr","18:00","achtzehn"],"explanation_fa":"لورا می‌گوید: «Ich komme um 18 Uhr nach Hause.»"}
 {"type":"tf","prompt":"لورا امروز لئون را پیش دکتر برد.","correct":true,"explanation_fa":"لورا می‌گوید: «Heute war ich mit ihm beim Arzt.»"}
-{"type":"tf","prompt":"لئون نباید چای بخورد.","correct":false,"explanation_fa":"لورا می‌گوید: «Er darf viel Tee trinken»."}
+{"type":"tf","prompt":"لئون نباید چای بخورد.","correct":false,"explanation_fa":"لورا می‌گوید: «Er soll viel Tee trinken»، یعنی باید زیاد چای بخورد."}
 {"type":"mcq","prompt":"لئون باید کجا بماند؟","options":["در باغ","در رختخواب","در مطب","در مدرسه"],"correct":1,"explanation_fa":"لورا می‌گوید: «Er ... muss im Bett bleiben.»"}
