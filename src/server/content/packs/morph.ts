@@ -117,6 +117,12 @@ const withLigature = (form: string, lemma: string) => (/œ/u.test(lemma) ? form.
  * offered as another adjective's form.
  */
 const FRENCH_ADJ_LEMMA: Record<string, string> = { nouvelle: "nouveau" };
+/** Feminine endings and their masculine, for the adjectives Lexique files under a lemma of their own (canadienne). */
+const FRENCH_FEMININE: [string, string][] = [["ienne", "ien"], ["éenne", "éen"], ["onne", "on"], ["euse", "eux"], ["ive", "if"], ["ère", "er"], ["ette", "et"], ["elle", "el"], ["sse", "s"], ["e", ""]];
+const frenchMasculine = (lemma: string) => {
+  const rule = FRENCH_FEMININE.find(([ending]) => lemma.endsWith(ending) && lemma.length > ending.length + 2);
+  return rule ? lemma.slice(0, lemma.length - rule[0].length) + rule[1] : null;
+};
 const FRENCH_BEFORE_VOWEL: Record<string, string> = { bel: "beau", nouvel: "nouveau", vieil: "vieux", fol: "fou", mol: "mou" };
 
 /** A word's lemma without a reflexive pronoun (se laver → laver, sich freuen → freuen). */
@@ -150,7 +156,12 @@ export class Morph {
         const adjective = language === "fr" && reading.tag === "ADJ";
         const beforeVowel = adjective ? FRENCH_BEFORE_VOWEL[fold(reading.lemma)] : undefined;
         const lemma = beforeVowel ?? (adjective ? FRENCH_ADJ_LEMMA[fold(reading.lemma)] : undefined) ?? reading.lemma;
-        const owners = byLemma.get(keyOf(lemma)) ?? [];
+        let owners = byLemma.get(keyOf(lemma)) ?? [];
+        // canadienne, italienne: the masculine adjective of the lists, when the lemma itself is no word of them.
+        if (adjective && !beforeVowel && owners.length === 0) {
+          const masculine = frenchMasculine(lemma);
+          if (masculine) owners = (byLemma.get(keyOf(masculine)) ?? []).filter((owner) => owner.word.pos === "adj");
+        }
         if (language === "fr" && !beforeVowel) {
           const lemmaForms = this.byLemma.get(lexKey(lemma)) ?? [];
           lemmaForms.push({ form, tag: reading.tag, gn: reading.gn });

@@ -259,6 +259,7 @@ describe("reading a form in its context", () => {
     line("deux", "num", "", "", "دو", "دو", "numbers"),
     line("faire", "verb", "", "", "کردن", "کردن", "actions"),
     line("se faire mal", "phrase", "", "", "به خود صدمه زدن", "صدمه دیدن", "health", "parts:faire mal"),
+    line("canadien", "adj", "", "", "کانادایی", "کانادایی", "people"),
   ]);
   const fr = analyzerOf("fr", french);
   const read = (analyzer: Analyzer, text: string) => analyzer.analyze(text, { level: "A1" }).tokens.map((token) => `${token.surface}=${token.code ?? token.kind}`).join(" ");
@@ -307,6 +308,11 @@ describe("reading a form in its context", () => {
     expect(read(fr, "Bon{bon} week-end !")).toBe("Bon=bon week-end=week-end");
     expect(read(fr, "Il se fait mal.")).toBe("Il=il se fait mal=se faire mal");
     expect(read(fr, "Ça vous fait mal ?")).not.toMatch(/se faire mal/);
+  });
+
+  it("reads a feminine adjective that the lexicon files under a lemma of its own as the masculine of the list", () => {
+    expect(read(fr, "Je suis canadienne.")).toBe("Je=je suis=être canadienne=canadien");
+    expect(read(fr, "Je suis contente.")).toBe("Je=je suis=être contente=content");
   });
 
   it("prefers a reading the learner already knows when the context allows it", () => {
