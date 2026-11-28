@@ -96,4 +96,20 @@ describe("grammar before its unit", () => {
       [4, "fr-a2-pronoms-cod"],
     ]);
   });
+
+  it("counts an adjective without an article, but not viele, wenig or nächste Woche", () => {
+    const a1 = words("de", ["viel\tadj\t\t\tزیاد\tزیاد\tqualities", "Leute\tnoun\tdie\t\tمردم\tمردم\tpeople\tnumber:pl_only", "Woche\tnoun\tdie\tWochen\tهفته\tهفته\ttime", "Kaffee\tnoun\tder\t\tقهوه\tقهوه\tdrink\tnumber:sg_only"]);
+    // kommen is the first A2 card, before the unit arrives.
+    const a2 = words("de", ["kommen\tverb\t\t\tآمدن\tآمدن\tactions", "nächste\tadj\t\t\tبعدی\tبعدی\ttime", "frisch\tadj\t\t\tتازه\tتازه\tqualities"], "A2");
+    const [kommen] = a2;
+    const cards = [...a1, ...a2];
+    const units = [{ unit_code: "de-a2-adjektiv-ohne-artikel", level: "A2", order: 24 }];
+    const lines: TimingLine[] = [
+      { file: "f", line: 1, target: kommen, text: "", tokens: tokens("Viele=viel Leute=Leute [kommen]=kommen") },
+      { file: "f", line: 2, target: kommen, text: "", tokens: tokens("Nächste=nächste Woche=Woche [kommen]=kommen wir=wir") },
+      { file: "f", line: 3, target: kommen, text: "", tokens: tokens("Frischer=frisch Kaffee=Kaffee [kommt]=kommen") },
+    ];
+    const notes = grammarTiming("de", lines, units, cards, 2, { words: cards, forms: tenseForms("de", []) });
+    expect(notes.map((note) => note.line)).toEqual([3]);
+  });
 });

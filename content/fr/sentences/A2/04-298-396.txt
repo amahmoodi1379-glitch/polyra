@@ -364,14 +364,14 @@ Il y a du [porc] dans ce plat ? | در این غذا گوشت خوک هست؟
 Ce sandwich est au poulet, pas au [porc]. | این ساندویچ مرغ است، نه گوشت خوک.
 Pardon, c'est du bœuf ou du [porc] ? | ببخشید، این گوشت گاو است یا گوشت خوک؟
 Au restaurant, Ali demande un plat sans [porc]. | علی در رستوران غذای بدون گوشت خوک می‌خواهد.
-Mon ami français{français} sait que je ne mange pas de [porc]. | دوست فرانسوی‌ام می‌داند که من گوشت خوک نمی‌خورم.
+En France, on mange souvent du [porc] et du poulet. | در فرانسه زیاد گوشت خوک و مرغ می‌خورند.
 # jambon
 Un sandwich au fromage, sans [jambon], s'il vous plaît. | لطفاً یک ساندویچ پنیر، بدون ژامبون.
 Le [jambon], c'est de la viande de porc. | ژامبون گوشت خوک است.
 Il y a du [jambon] dans cette salade ? | توی این سالاد ژامبون هست؟
-Je prends le croissant au fromage, pas au [jambon]. | کروسان پنیری را می‌گیرم، نه ژامبونی را.
+Le matin, mon grand-père mange du pain avec du [jambon]. | پدربزرگم صبح‌ها نان و ژامبون می‌خورد.
 Dans ce menu, beaucoup de plats ont du [jambon]. | در این منو خیلی از غذاها ژامبون دارند.
-Attention, il y a du [jambon] dans la soupe ! | مواظب باش، توی سوپ ژامبون هست!
+Les enfants aiment les pâtes au [jambon]. | بچه‌ها ماکارونی با ژامبون دوست دارند.
 # pizza
 On commande une [pizza] ce soir ? | امشب پیتزا سفارش بدهیم؟
 Les enfants adorent la [pizza]. | بچه‌ها عاشق پیتزا هستند.
@@ -411,16 +411,16 @@ J'ai fait une [tarte] pour l'anniversaire de mon père. | برای تولد پد
 Non, merci, je ne bois pas de [vin]. | نه، ممنون، من شراب نمی‌خورم.
 Pas de [vin] pour moi, de l'eau, s'il vous plaît. | برای من شراب نه، لطفاً آب.
 Il y a du [vin] dans ce plat ? | در این غذا شراب هست؟
-Mon père ne boit jamais de [vin]. | پدرم هیچ‌وقت شراب نمی‌خورد.
-Au restaurant, Ali demande de l'eau, pas de [vin]. | علی در رستوران آب می‌خواهد، نه شراب.
+En France, on boit souvent du [vin] avec le repas. | در فرانسه معمولاً همراه غذا شراب می‌نوشند.
+Mon oncle achète une bouteille de [vin] rouge pour le dîner. | عمویم برای شام یک بطری شراب قرمز می‌خرد.
 Les enfants n'ont pas le droit de boire du [vin]. | بچه‌ها اجازه ندارند شراب بخورند.
 # bière
-Ici, on ne vend pas de [bière]. | اینجا آبجو نمی‌فروشند. | d: tasse, bouteille, soupe
+Après le match, mes amis prennent une [bière] au café. | دوستانم بعد از مسابقه در کافه یک آبجو می‌گیرند. | d: tasse, bouteille, soupe
 Pas de [bière] pour moi, un jus, s'il vous plaît. | برای من آبجو نه، لطفاً یک آب‌میوه. | d: tasse, bouteille, soupe
 Mon ami ne boit pas de [bière], il prend un thé. | دوستم آبجو نمی‌خورد، چای می‌گیرد. | d: tasse, bouteille, soupe
 La [bière] est interdite aux moins de 18 ans. | آبجو برای افراد زیر ۱۸ سال ممنوع است. | d: tasse, bouteille, soupe | tts: La bière est interdite aux moins de dix-huit ans.
 Tu veux une [bière] ? – Non, je préfère de l'eau. | آبجو می‌خواهی؟ – نه، آب را ترجیح می‌دهم. | d: tasse, bouteille, soupe
-Ce café sert du thé et du jus, pas de [bière]. | این کافه چای و آب‌میوه دارد، نه آبجو. | d: tasse, bouteille, soupe
+La Belgique est célèbre pour sa [bière]. | بلژیک به‌خاطر آبجویش معروف است. | d: tasse, bouteille, soupe
 # prendre un verre
 On [prend un verre] après le travail ? | بعد از کار برویم یک چیزی بخوریم؟
 Je [prends un verre] avec des amis au café. | با چند دوست در کافه یک نوشیدنی می‌خورم.

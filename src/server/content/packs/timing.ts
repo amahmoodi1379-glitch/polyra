@@ -66,6 +66,7 @@ const FR_ETRE_PRESENT = ["suis", "es", "est", "sommes", "êtes", "sont"];
 const DE_MODAL_PAST = ["wollte", "wolltest", "wollten", "wolltet", "konnte", "konntest", "konnten", "konntet", "musste", "musstest", "mussten", "musstet", "durfte", "durftest", "durften", "durftet", "mochte", "mochtest", "mochten", "mochtet"];
 const DE_POLITE = ["hätte", "hättest", "hätten", "hättet", "würde", "würdest", "würden", "würdet", "könnte", "könntest", "könnten", "könntet", "wäre", "wärst", "wären", "wärt"];
 
+const DE_TIME_NOUNS = ["woche", "monat", "jahr", "mal", "tag", "wochenende", "sommer", "winter", "montag", "dienstag", "mittwoch", "donnerstag", "freitag", "samstag", "sonntag"];
 const DE_DATIVE_ARTICLES = ["dem", "einem", "meinem", "deinem", "seinem", "ihrem", "unserem", "einer", "meiner", "deiner", "seiner", "ihrer", "unserer"];
 
 export const TIMING_MARKERS: Record<LanguageCode, Marker[]> = {
@@ -112,6 +113,9 @@ export const TIMING_MARKERS: Record<LanguageCode, Marker[]> = {
       label: "frischer Kaffee",
       match: (tokens, index, context) => {
         if (!attributive(tokens, index, context)) return false;
+        // viele Leute, wenig Zeit and nächste Woche, letztes Jahr are learned as words and chunks in A1.
+        if (["viel", "wenig"].includes(tokens[index].code ?? "")) return false;
+        if (["nächste", "letzte"].includes(tokens[index].code ?? "") && DE_TIME_NOUNS.includes(lower(tokens[index + 1]))) return false;
         const before = articleBefore(tokens, index, context);
         return !DE_DEFINITE.includes(lower(before)) && !DE_INDEFINITE.test(lower(before));
       },

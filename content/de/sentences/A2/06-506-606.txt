@@ -1,0 +1,708 @@
+// German A2, card words 506–606 (the town and directions, traffic and transport, travel and holidays), in teaching order.
+# Kreuzung
+An der nächsten [Kreuzung] fahren Sie links. | سر چهارراه بعدی به چپ بپیچید. | d: Unterschrift, Briefmarke, Anmeldung
+Die Bäckerei ist gleich an der [Kreuzung]. | نانوایی درست سر چهارراه است. | d: Unterschrift, Briefmarke, Rechnung
+Ich warte an der [Kreuzung] auf dich. | سر چهارراه منتظرت می‌مانم. | d: Bank, Post, Apotheke
+Die Schule liegt hinter der großen [Kreuzung]. | مدرسه آن طرف چهارراه بزرگ است.
+An dieser [Kreuzung] ist es immer laut. | این چهارراه همیشه پرسروصداست. | d: Bank, Post, Apotheke
+Nach zwei [Kreuzungen] siehst du den Bahnhof. | بعد از دو تا چهارراه، ایستگاه قطار را می‌بینی.
+# Ampel
+Die [Ampel] ist rot, wir müssen warten. | چراغ قرمز است، باید صبر کنیم.
+Die [Ampel] ist grün, jetzt können wir gehen. | چراغ سبز شد، حالا می‌توانیم برویم.
+An der ersten [Ampel] fahren Sie rechts. | سر اولین چراغ راهنمایی به راست بپیچید. | d: Bank, Post, Apotheke
+Die [Ampel] an der Ecke funktioniert nicht. | چراغ راهنمایی سر نبش کار نمی‌کند.
+Wir warten schon fünf Minuten an der [Ampel]. | پنج دقیقه است پشت چراغ قرمز منتظریم. | d: Bank, Post, Apotheke
+In dieser Straße gibt es drei [Ampeln]. | در این خیابان سه تا چراغ راهنمایی هست.
+# über die Straße gehen
+Die Kinder [gehen über die Straße]. | بچه‌ها از خیابان رد می‌شوند.
+Hier darfst du nicht [über die Straße gehen]. | این‌جا نباید از خیابان رد شوی.
+Die Ampel ist grün, jetzt können wir [über die Straße gehen]. | چراغ سبز شد، حالا می‌توانیم از خیابان رد شویم.
+Oma ist langsam [über die Straße gegangen]. | مادربزرگ آهسته از خیابان رد شد.
+Pass{aufpassen} auf, wenn du [über die Straße gehst]! | وقتی از خیابان رد می‌شوی، مواظب باش!
+Mein kleiner Bruder kann allein [über die Straße gehen]. | برادر کوچکم می‌تواند تنهایی از خیابان رد شود.
+# Brücke
+Diese [Brücke] ist über 200 Jahre alt. | این پل بیش از دویست سال قدمت دارد.
+Wir gehen zu Fuß über die [Brücke]. | پیاده از روی پل رد می‌شویم.
+Hinter der [Brücke] ist der Bahnhof. | ایستگاه قطار آن طرف پل است.
+Die [Brücken] in Isfahan sind sehr schön. | پل‌های اصفهان خیلی زیبا هستند.
+Die [Brücke] ist heute geschlossen, wir fahren mit dem Bus. | پل امروز بسته است، با اتوبوس می‌رویم.
+Auf der [Brücke] machen wir ein Foto. | روی پل یک عکس می‌گیریم.
+# Kirche
+Die alte [Kirche] ist im Zentrum. | کلیسای قدیمی در مرکز شهر است.
+Neben der [Kirche] gibt es ein kleines Café. | کنار کلیسا یک کافه کوچک هست.
+Diese [Kirche] ist fast 800 Jahre alt. | این کلیسا تقریباً هشتصد سال قدمت دارد.
+Im Dorf gibt es eine [Kirche] und eine Schule. | در روستا یک کلیسا و یک مدرسه هست.
+Im Urlaub haben wir eine alte [Kirche] in Köln besucht. | در تعطیلات از یک کلیسای قدیمی در کلن دیدن کردیم.
+In dieser Stadt gibt es fünf [Kirchen]. | در این شهر پنج کلیسا هست.
+# Turm
+Vom [Turm] sieht man die ganze Stadt. | از بالای برج کل شهر پیداست.
+Der [Turm] hat leider keinen Aufzug. | برج متأسفانه آسانسور ندارد.
+Bis zum [Turm] sind es nur fünf Minuten zu Fuß. | تا برج پیاده فقط پنج دقیقه راه است.
+Am [Turm] ist eine große Uhr. | روی برج یک ساعت بزرگ هست.
+Der [Turm] ist heute geschlossen. | برج امروز بسته است.
+Die alte Kirche hat zwei [Türme]. | کلیسای قدیمی دو برج دارد.
+# Schloss
+In dem alten [Schloss] ist heute ein Museum. | در آن کاخ قدیمی حالا یک موزه است.
+Am Samstag besuchen wir ein [Schloss]. | شنبه از یک کاخ دیدن می‌کنیم.
+Das [Schloss] hat einen schönen Garten. | کاخ باغ قشنگی دارد.
+In Österreich gibt es viele [Schlösser]. | در اتریش کاخ‌های زیادی هست.
+Das [Schloss] liegt auf einem Berg. | کاخ روی یک کوه است.
+Kann man das [Schloss] auch am Montag besuchen? | می‌شود دوشنبه هم از کاخ دیدن کرد؟
+# Sehenswürdigkeit
+Welche [Sehenswürdigkeiten] gibt es in Berlin? | برلین چه جاهای دیدنی‌ای دارد؟
+Die alte Brücke ist eine bekannte [Sehenswürdigkeit]. | این پل قدیمی یک جای دیدنی معروف است. | d: Reise, Grenze, Rezeption
+Wir haben an einem Tag alle [Sehenswürdigkeiten] gesehen. | در یک روز همه جاهای دیدنی را دیدیم.
+Mein Onkel zeigt uns die [Sehenswürdigkeiten] von Wien. | عمویم جاهای دیدنی وین را به ما نشان می‌دهد.
+In Isfahan gibt es viele [Sehenswürdigkeiten]. | اصفهان جاهای دیدنی زیادی دارد.
+Die [Sehenswürdigkeiten] sind alle im Zentrum. | جاهای دیدنی همه در مرکز شهر هستند.
+# Stadtplan
+Ich brauche einen [Stadtplan] von München. | یک نقشه شهر مونیخ لازم دارم.
+Haben Sie einen [Stadtplan] für mich? | یک نقشه شهر برای من دارید؟
+Auf dem [Stadtplan] ist die Kirche ganz nah. | روی نقشه شهر، کلیسا خیلی نزدیک است.
+Ich finde das Hotel nicht auf dem [Stadtplan]. | هتل را روی نقشه شهر پیدا نمی‌کنم.
+Den [Stadtplan] gibt es kostenlos im Hotel. | نقشه شهر را در هتل مجانی می‌دهند.
+Ohne [Stadtplan] finde ich hier nichts. | بدون نقشه شهر این‌جا هیچ چیز پیدا نمی‌کنم.
+# Innenstadt
+Wir fahren am Samstag in die [Innenstadt]. | شنبه به مرکز شهر می‌رویم.
+In der [Innenstadt] gibt es ein großes Kaufhaus. | در مرکز شهر یک فروشگاه بزرگ هست.
+Die Wohnungen in der [Innenstadt] sind sehr teuer. | آپارتمان‌های مرکز شهر خیلی گران‌اند.
+Am Samstag ist die [Innenstadt] immer laut. | شنبه‌ها مرکز شهر همیشه شلوغ و پرسروصداست.
+Unser Hotel ist nicht weit von der [Innenstadt]. | هتلمان از مرکز شهر دور نیست.
+Mit der U-Bahn bist du in zehn Minuten in der [Innenstadt]. | با مترو ده دقیقه‌ای به مرکز شهر می‌رسی.
+# Altstadt
+Die [Altstadt] von Dresden ist sehr schön. | بافت قدیمی درسدن خیلی زیباست.
+In der [Altstadt] fahren keine Autos. | در بافت قدیم شهر ماشین رفت‌وآمد نمی‌کند.
+Am Abend wollen wir in der [Altstadt] spazieren gehen. | عصر می‌خواهیم در بافت قدیم شهر قدم بزنیم. | d: Kreuzung, Ampel, Ecke
+Unser Hotel ist in der [Altstadt], gleich neben der Kirche. | هتلمان در بافت قدیم شهر است، درست کنار کلیسا.
+Die [Altstadt] ist nicht groß, man kann alles zu Fuß sehen. | بافت قدیم شهر بزرگ نیست، می‌شود همه‌جا را پیاده دید.
+Gibt es in der [Altstadt] ein gutes Restaurant? | در بافت قدیم شهر رستوران خوبی هست؟
+# Gegend
+Wohnst du gern in dieser [Gegend]? | از زندگی در این منطقه راضی هستی؟
+Die [Gegend] hier ist sehr ruhig. | این‌جا منطقه خیلی آرامی است.
+Ich kenne die [Gegend] hier nicht gut. | این منطقه را خوب نمی‌شناسم.
+In unserer [Gegend] gibt es keinen Supermarkt. | در منطقه ما سوپرمارکت نیست.
+Die [Gegend] um München ist sehr schön. | منطقه اطراف مونیخ خیلی زیباست.
+Gibt es in der [Gegend] eine Apotheke? | این حوالی داروخانه هست؟
+# Parkplatz
+Ich suche seit zehn Minuten einen [Parkplatz]. | ده دقیقه است دنبال جای پارک می‌گردم.
+Vor dem Supermarkt gibt es einen großen [Parkplatz]. | جلوی سوپرمارکت یک پارکینگ بزرگ هست.
+In der Innenstadt gibt es keine [Parkplätze]. | در مرکز شهر جای پارک پیدا نمی‌شود. | d: Ausweise, Schalter, Türme
+Der [Parkplatz] am Bahnhof ist kostenlos. | پارکینگ ایستگاه قطار مجانی است.
+Hat das Hotel einen [Parkplatz]? | هتل پارکینگ دارد؟
+Wir haben vor dem Haus einen [Parkplatz] gefunden. | جلوی خانه یک جای پارک پیدا کردیم. | d: Ausweis, Schalter, Turm
+# Tankstelle
+Wo ist hier die nächste [Tankstelle]? | نزدیک‌ترین پمپ بنزین این‌جا کجاست؟
+An der [Tankstelle] kann man auch Brot kaufen. | در پمپ بنزین نان هم می‌شود خرید.
+Mein Bruder arbeitet nachts an einer [Tankstelle]. | برادرم شب‌ها در یک پمپ بنزین کار می‌کند.
+Wir halten kurz an der [Tankstelle]. | یک لحظه کنار پمپ بنزین نگه می‌داریم.
+Die [Tankstelle] ist 24 Stunden offen. | پمپ بنزین شبانه‌روز باز است.
+Hinter der [Tankstelle] fahren Sie rechts. | بعد از پمپ بنزین به راست بروید.
+# Werkstatt
+Mein Auto ist in der [Werkstatt]. | ماشینم در تعمیرگاه است.
+Die [Werkstatt] repariert auch Fahrräder. | این تعمیرگاه دوچرخه هم تعمیر می‌کند.
+Ich muss das Auto morgen in die [Werkstatt] bringen. | باید فردا ماشین را به تعمیرگاه ببرم.
+Die [Werkstatt] ist am Samstag geschlossen. | تعمیرگاه شنبه‌ها بسته است.
+Mein Onkel hat eine kleine [Werkstatt] im Keller. | عمویم در زیرزمین یک کارگاه کوچک دارد.
+Wie lange bleibt das Auto in der [Werkstatt]? | ماشین چقدر در تعمیرگاه می‌ماند؟
+# Bibliothek
+Ich leihe oft Bücher in der [Bibliothek] aus. | اغلب از کتابخانه کتاب امانت می‌گیرم.
+In der [Bibliothek] muss man leise sein. | در کتابخانه باید ساکت بود.
+Die [Bibliothek] ist bis 20 Uhr offen. | کتابخانه تا ساعت هشت شب باز است.
+Nach der Schule lerne ich in der [Bibliothek]. | بعد از مدرسه در کتابخانه درس می‌خوانم.
+Die Uni hat eine große [Bibliothek]. | دانشگاه یک کتابخانه بزرگ دارد.
+Morgen gebe ich das Buch in der [Bibliothek] zurück. | فردا کتاب را به کتابخانه پس می‌دهم.
+# Theater
+Am Freitag gehen wir ins [Theater]. | جمعه به تئاتر می‌رویم.
+Die Karten für das [Theater] sind ziemlich teuer. | بلیت‌های تئاتر نسبتاً گران است.
+Meine Schwester spielt in der Schule [Theater]. | خواهرم در مدرسه تئاتر بازی می‌کند.
+Das alte [Theater] liegt neben dem Rathaus. | تئاتر قدیمی کنار شهرداری است.
+Warst du schon einmal im [Theater]? | تا حالا تئاتر رفته‌ای؟
+Nach dem [Theater] essen wir im Restaurant. | بعد از تئاتر در رستوران غذا می‌خوریم.
+# Zoo
+Am Sonntag gehen wir mit den Kindern in den [Zoo]. | یکشنبه با بچه‌ها به باغ وحش می‌رویم.
+Im [Zoo] gibt es über 1000 Tiere. | باغ وحش بیش از هزار حیوان دارد.
+Der [Zoo] ist im Winter nur bis 16 Uhr offen. | باغ وحش زمستان‌ها فقط تا ساعت چهار باز است.
+Die Kinder finden den [Zoo] toll. | بچه‌ها باغ وحش را خیلی دوست دارند.
+Der [Zoo] kostet für Kinder nur 5 Euro. | باغ وحش برای بچه‌ها فقط پنج یورو است.
+Warst du schon im [Zoo] in Berlin? | باغ وحش برلین رفته‌ای؟
+# Spielplatz
+Die Kinder spielen auf dem [Spielplatz]. | بچه‌ها در زمین بازی بازی می‌کنند. | d: Stadtplan, Ausweis, Schalter
+Hinter unserem Haus ist ein [Spielplatz]. | پشت خانه‌مان یک زمین بازی هست.
+Nach der Schule gehe ich mit meiner Tochter auf den [Spielplatz]. | بعد از مدرسه با دخترم به زمین بازی می‌روم.
+Der [Spielplatz] im Park ist neu. | زمین بازی پارک نو است.
+Auf dem [Spielplatz] sind heute keine Kinder, es regnet. | امروز هیچ بچه‌ای در زمین بازی نیست، باران می‌آید.
+In unserer Stadt gibt es viele [Spielplätze]. | در شهر ما زمین بازی زیاد است.
+# Friseur
+Der [Friseur] schneidet mir die Haare. | آرایشگر موهایم را کوتاه می‌کند.
+Beim [Friseur] lasse ich mir die Haare kurz schneiden. | در آرایشگاه موهایم را کوتاه می‌کنم.
+Ich habe morgen einen Termin beim [Friseur], meine Haare sind zu lang. | فردا وقت آرایشگاه دارم، موهایم زیادی بلند است.
+Mein Bruder ist [Friseur] und schneidet auch meine Haare. | برادرم آرایشگر است و موهای من را هم کوتاه می‌کند.
+Der [Friseur] wäscht zuerst die Haare. | آرایشگر اول موها را می‌شوید.
+Der neue [Friseur] in unserer Straße ist sehr gut. | آرایشگر جدید خیابان ما خیلی خوب است.
+# zum Friseur gehen
+Meine Haare sind zu lang, ich muss [zum Friseur gehen]. | موهایم زیادی بلند است، باید بروم آرایشگاه.
+Papa [geht zum Friseur] und kommt gleich zurück. | بابا دارد می‌رود آرایشگاه و زود برمی‌گردد.
+Bist du [zum Friseur gegangen]? Deine Haare sind so kurz! | رفته‌ای آرایشگاه؟ موهایت چه کوتاه شده!
+Vor dem Fest will ich noch [zum Friseur gehen]. | قبل از جشن می‌خواهم بروم آرایشگاه.
+Ich komme später, weil ich [zum Friseur gehe]. | دیرتر می‌آیم، چون می‌روم آرایشگاه.
+Mein Sohn will nicht [zum Friseur gehen]. | پسرم نمی‌خواهد به آرایشگاه برود.
+# Feuerwehr
+Das Haus brennt! Ruf schnell die [Feuerwehr] an! | خانه آتش گرفته! زود به آتش‌نشانی زنگ بزن! | d: Post, Bank, Tankstelle
+In der Küche hat es gebrannt, aber die [Feuerwehr] war schnell da. | آشپزخانه آتش گرفت، اما آتش‌نشانی زود رسید.
+Die [Feuerwehr] hat die Katze vom Baum geholt. | آتش‌نشان‌ها گربه را از درخت پایین آوردند. | d: Post, Bank, Werkstatt
+Mein Sohn will später zur [Feuerwehr]. | پسرم می‌خواهد بزرگ که شد آتش‌نشان شود. | d: Post, Bank, Werkstatt
+Die Kinder besuchen heute die [Feuerwehr] und sehen die großen Autos. | بچه‌ها امروز به آتش‌نشانی می‌روند و ماشین‌های بزرگ را می‌بینند.
+Die Autos von der [Feuerwehr] sind rot. | ماشین‌های آتش‌نشانی قرمزند.
+# Notfall
+Im [Notfall] rufen Sie bitte diese Nummer an. | در موقع اضطراری لطفاً به این شماره زنگ بزنید.
+Das ist ein [Notfall], wir brauchen sofort einen Arzt. | این یک مورد اضطراری است، فوراً دکتر لازم داریم.
+Nur im [Notfall] darf man diese Tür öffnen. | فقط در مواقع اضطراری می‌شود این در را باز کرد.
+Am Wochenende ist der Arzt nur für [Notfälle] da. | آخر هفته دکتر فقط برای موارد اضطراری هست.
+Für den [Notfall] habe ich immer Tabletten in der Tasche. | همیشه برای مواقع اضطراری قرص توی کیفم دارم.
+Es ist kein [Notfall], ich kann auch morgen kommen. | اضطراری نیست، می‌توانم فردا هم بیایم.
+# Polizist
+Der [Polizist] hilft dem alten Mann über die Straße. | مأمور پلیس به پیرمرد کمک می‌کند از خیابان رد شود.
+Der [Polizist] kontrolliert die Autos an der Kreuzung. | مأمور پلیس ماشین‌ها را سر چهارراه کنترل می‌کند.
+Frag mal den [Polizisten] an der Ecke. | از آن مأمور پلیس سر نبش بپرس. | d: Friseur, Kellner, Verkäufer
+Zwei [Polizisten] stehen vor der Bank. | دو مأمور پلیس جلوی بانک ایستاده‌اند.
+Der [Polizist] möchte meinen Ausweis sehen. | مأمور پلیس می‌خواهد کارت شناسایی‌ام را ببیند.
+Der [Polizist] fragt: Ist das Ihr Auto? | مأمور پلیس می‌پرسد: «این ماشین شماست؟»
+# Polizistin
+Die [Polizistin] fragt nach meinem Namen. | خانم پلیس اسمم را می‌پرسد.
+Meine Tante ist [Polizistin] in Hamburg. | خاله‌ام در هامبورگ پلیس است.
+Eine [Polizistin] hat das Kind nach Hause gebracht. | یک خانم پلیس بچه را به خانه رساند.
+Die [Polizistin] kontrolliert meinen Ausweis. | خانم پلیس کارت شناسایی‌ام را کنترل می‌کند.
+Die [Polizistin] an der Ampel ist sehr freundlich. | خانم پلیسِ سر چراغ خیلی مهربان است.
+Meine Schwester möchte später [Polizistin] werden. | خواهرم می‌خواهد بزرگ که شد پلیس شود.
+# Kindergarten
+Mein Sohn geht noch in den [Kindergarten]. | پسرم هنوز مهدکودک می‌رود.
+Morgens bringe ich meine Tochter in den [Kindergarten]. | صبح‌ها دخترم را به مهدکودک می‌برم.
+Der [Kindergarten] ist gleich neben unserem Haus. | مهدکودک درست کنار خانه‌مان است.
+Im [Kindergarten] spielen die Kinder viel draußen. | در مهدکودک بچه‌ها زیاد بیرون بازی می‌کنند.
+Um 16 Uhr hole ich die Kinder vom [Kindergarten] ab. | ساعت چهار دنبال بچه‌ها به مهدکودک می‌روم.
+Meine Cousine arbeitet in einem [Kindergarten]. | دخترخاله‌ام در یک مهدکودک کار می‌کند.
+# Weg
+Ist das der richtige [Weg] zum Bahnhof? | راه ایستگاه قطار از این طرف است؟
+Der [Weg] zur Schule ist nicht lang. | راه مدرسه طولانی نیست.
+Auf dem [Weg] nach Hause kaufe ich Brot. | سر راه خانه نان می‌خرم.
+Kennst du den [Weg]? | راه را بلدی؟
+Wir haben den [Weg] nicht gefunden. | راه را پیدا نکردیم.
+Es gibt zwei [Wege] zum Bahnhof. | دو راه به ایستگاه قطار هست.
+# Richtung
+In welche [Richtung] müssen wir gehen? | باید به کدام سمت برویم؟
+Der Bahnhof ist in dieser [Richtung]. | ایستگاه قطار از این طرف است.
+Der Zug fährt in [Richtung] München. | قطار به سمت مونیخ می‌رود.
+Entschuldigung, ist das die [Richtung] zum Zentrum? | ببخشید، مرکز شهر از این طرف است؟
+Wir sind in die falsche [Richtung] gefahren. | به سمت اشتباه رفتیم.
+Die Leute laufen in alle [Richtungen]. | مردم به هر طرف می‌دوند.
+# den Weg zeigen
+Können Sie mir bitte [den Weg zeigen]? | می‌شود لطفاً راه را به من نشان بدهید؟
+Ein Polizist hat uns [den Weg gezeigt]. | یک مأمور پلیس راه را به ما نشان داد. | d: den Weg zeigen, den Weg zeigt, den Weg zeigte
+Komm mit, ich kann dir [den Weg zeigen]. | با من بیا، می‌توانم راه را نشانت بدهم.
+Danke, dass du mir [den Weg zeigst]. | ممنون که راه را نشانم می‌دهی.
+Der Mann an der Tankstelle hat mir [den Weg gezeigt]. | مرد پمپ بنزین راه را نشانم داد. | d: den Weg zeigen, den Weg zeigt, den Weg zeigte
+Kannst du ihm [den Weg zeigen]? Er ist neu hier. | می‌توانی راه را نشانش بدهی؟ او این‌جا تازه‌وارد است.
+# nach dem Weg fragen
+Ich habe einen Polizisten [nach dem Weg gefragt]. | از یک مأمور پلیس راه را پرسیدم. | d: nach dem Weg fragen, nach dem Weg fragt, nach dem Weg fragte
+Wir müssen jemanden [nach dem Weg fragen]. | باید از کسی راه را بپرسیم.
+Mein Bruder will nie [nach dem Weg fragen]. | برادرم هیچ‌وقت نمی‌خواهد راه را از کسی بپرسد.
+Ein Mann hat mich [nach dem Weg gefragt]. | یک مرد از من نشانی پرسید. | d: nach dem Weg fragen, nach dem Weg fragt, nach dem Weg fragte
+Wir haben an der Tankstelle [nach dem Weg gefragt]. | در پمپ بنزین راه را پرسیدیم. | d: nach dem Weg fragen, nach dem Weg fragt, nach dem Weg fragte
+In einer fremden Stadt muss man oft [nach dem Weg fragen]. | در یک شهر غریب آدم اغلب باید راه را بپرسد.
+# Norden
+Hamburg liegt im [Norden] von Deutschland. | هامبورگ در شمال آلمان است.
+Im [Norden] ist es im Winter sehr kalt. | در شمال، زمستان خیلی سرد است.
+Wir fahren im Urlaub in den [Norden]. | در تعطیلات به شمال می‌رویم.
+Meine Oma wohnt im [Norden] vom Iran, am Meer. | مادربزرگم در شمال ایران، کنار دریا زندگی می‌کند.
+Die Küche liegt nach [Norden], sie ist ziemlich dunkel. | آشپزخانه رو به شمال است و نسبتاً تاریک است.
+Mein Cousin studiert im [Norden], in Hamburg. | پسرخاله‌ام در شمال، در هامبورگ، درس می‌خواند.
+# Süden
+München liegt im [Süden] von Deutschland. | مونیخ در جنوب آلمان است.
+Im [Süden] vom Iran ist es auch im Winter warm. | در جنوب ایران زمستان هم هوا گرم است.
+Im Winter fliegen die Vögel in den [Süden]. | زمستان پرنده‌ها به جنوب پرواز می‌کنند.
+Im Sommer machen wir oft Urlaub im [Süden]. | تابستان‌ها اغلب در جنوب تعطیلات می‌گذرانیم.
+Die Schweiz liegt im [Süden] von Deutschland. | سوئیس در جنوب آلمان است.
+Unser Garten liegt nach [Süden], dort gibt es viel Sonne. | باغ ما رو به جنوب است و آفتاب زیادی دارد.
+# Osten
+Dresden liegt im [Osten] von Deutschland. | درسدن در شرق آلمان است.
+Morgens scheint die Sonne aus dem [Osten] in mein Zimmer. | صبح‌ها آفتاب از شرق به اتاقم می‌تابد.
+Wien liegt im [Osten] von Österreich. | وین در شرق اتریش است.
+Von Köln fahren wir nach [Osten], nach Berlin. | از کلن به سمت شرق می‌رویم، به برلین.
+Im [Osten] vom Iran ist es im Sommer sehr heiß. | در شرق ایران تابستان خیلی گرم است.
+Das Schlafzimmer liegt nach [Osten], deshalb ist es morgens hell. | اتاق خواب رو به شرق است، برای همین صبح‌ها روشن است.
+# Westen
+Köln liegt im [Westen] von Deutschland. | کلن در غرب آلمان است.
+Am Abend steht die Sonne im [Westen]. | عصر خورشید در غرب است.
+Morgen kommt Regen aus dem [Westen]. | فردا باران از غرب می‌آید.
+Am Abend ist das Wohnzimmer hell, es liegt nach [Westen]. | عصرها اتاق نشیمن روشن است، چون رو به غرب است.
+Im [Westen] vom Iran sind die Berge sehr schön. | در غرب ایران کوه‌ها خیلی زیبا هستند.
+Mein Freund wohnt im [Westen] von Berlin. | دوستم در غرب برلین زندگی می‌کند.
+# Verkehr
+Morgens gibt es hier viel [Verkehr]. | صبح‌ها این‌جا رفت‌وآمد زیاد است.
+In der Innenstadt ist der [Verkehr] am Abend sehr stark. | عصرها رفت‌وآمد در مرکز شهر خیلی زیاد است.
+Am Sonntag ist wenig [Verkehr] auf den Straßen. | یکشنبه‌ها در خیابان‌ها رفت‌وآمد کم است.
+Bei so viel [Verkehr] fahre ich lieber mit dem Fahrrad. | با این همه رفت‌وآمد، ترجیح می‌دهم با دوچرخه بروم.
+Im Radio gibt es Informationen über den [Verkehr]. | رادیو درباره وضع ترافیک خبر می‌دهد.
+Nachts gibt es in unserer Straße fast keinen [Verkehr]. | شب‌ها در خیابان ما تقریباً هیچ رفت‌وآمدی نیست.
+# Stau
+Heute Morgen gab es einen langen [Stau] in der Stadt. | امروز صبح در شهر راه‌بندان طولانی بود.
+Es gibt einen [Stau], wir kommen später. | راه‌بندان است، دیرتر می‌رسیم.
+Am Freitag gibt es hier immer [Stau]. | جمعه‌ها این‌جا همیشه راه‌بندان است. | d: Zug, Bus, Flughafen
+Ich fahre mit dem Zug, da gibt es keinen [Stau]. | با قطار می‌روم، آن‌جا راه‌بندان نیست.
+Nach einer Stunde war der [Stau] endlich weg. | بعد از یک ساعت بالاخره راه باز شد. | d: Bahnhof, Zug, Flughafen
+Im Sommer gibt es viele [Staus]. | تابستان‌ها راه‌بندان زیاد است.
+# Unfall
+An der Kreuzung gab es heute einen [Unfall]. | امروز سر چهارراه تصادف شد.
+Bei dem [Unfall] ist zum Glück nichts passiert. | خوشبختانه در این تصادف کسی آسیب ندید.
+Der Polizist fragt: Wie ist der [Unfall] passiert? | مأمور پلیس می‌پرسد: «تصادف چطور اتفاق افتاد؟»
+Auf dieser Straße gibt es oft [Unfälle]. | در این خیابان زیاد تصادف می‌شود.
+Nach dem [Unfall] ist das Auto in der Werkstatt. | بعد از تصادف، ماشین در تعمیرگاه است.
+Bei Regen passieren mehr [Unfälle]. | وقتی باران می‌آید، تصادف بیشتر می‌شود.
+# einen Unfall haben
+Mein Onkel hat gestern [einen Unfall gehabt]. | عمویم دیروز تصادف کرد.
+Ich [hatte einen Unfall], aber mir geht es gut. | تصادف کردم، اما حالم خوب است.
+Wir kommen später, weil wir [einen Unfall hatten]. | دیرتر می‌رسیم، چون تصادف کردیم.
+Lena hat mit dem Fahrrad [einen Unfall gehabt]. | لنا با دوچرخه تصادف کرد.
+Mein Opa hat noch nie [einen Unfall gehabt]. | پدربزرگم تا حالا هیچ‌وقت تصادف نکرده است.
+Ich hoffe, dass du nie [einen Unfall hast]. | امیدوارم هیچ‌وقت تصادف نکنی.
+# Fahrer
+Der [Fahrer] wartet schon vor dem Hotel. | راننده جلوی هتل منتظر است.
+Unser [Fahrer] kennt die Stadt sehr gut. | راننده‌مان شهر را خیلی خوب می‌شناسد.
+Mein Vater ist [Fahrer] bei einer Firma. | پدرم در یک شرکت راننده است.
+Der [Fahrer] hält an jeder Haltestelle. | راننده سر هر ایستگاه نگه می‌دارد. | d: Unfall, Stau, Verkehr
+Fragen Sie doch den [Fahrer]! | از راننده بپرسید!
+Die [Fahrer] müssen nach vier Stunden eine Pause machen. | راننده‌ها باید بعد از چهار ساعت استراحت کنند. | d: Unfälle, Staus, Busse
+# Führerschein
+Mein Bruder macht gerade den [Führerschein]. | برادرم دارد گواهی‌نامه می‌گیرد.
+Ohne [Führerschein] darfst du nicht Auto fahren. | بدون گواهی‌نامه نباید رانندگی کنی.
+Der Polizist möchte meinen [Führerschein] sehen. | مأمور پلیس می‌خواهد گواهی‌نامه‌ام را ببیند.
+Seit wann hast du den [Führerschein]? | از کی گواهی‌نامه داری؟
+Ich habe meinen [Führerschein] zu Hause vergessen. | گواهی‌نامه‌ام را خانه جا گذاشتم.
+Mit 17 kann man in Deutschland den [Führerschein] machen. | در آلمان از هفده سالگی می‌شود گواهی‌نامه گرفت.
+# Motorrad
+Mein Onkel fährt jeden Tag mit dem [Motorrad] zur Arbeit. | عمویم هر روز با موتورسیکلت سر کار می‌رود.
+Mein Vater fährt nicht gern [Motorrad]. | پدرم موتورسواری را دوست ندارد.
+Das [Motorrad] ist sehr laut. | این موتورسیکلت خیلی پرسروصداست.
+Mein Bruder möchte ein [Motorrad] kaufen, aber Mama sagt nein. | برادرم می‌خواهد موتورسیکلت بخرد، اما مامان مخالف است.
+Auf dem [Motorrad] ist es im Winter sehr kalt. | زمستان روی موتورسیکلت خیلی سرد است.
+Vor dem Café stehen drei [Motorräder]. | جلوی کافه سه تا موتورسیکلت پارک است.
+# Straßenbahn
+Ich fahre jeden Morgen mit der [Straßenbahn] zur Arbeit. | هر روز صبح با تراموا سر کار می‌روم.
+Die [Straßenbahn] hält vor unserem Haus. | تراموا جلوی خانه‌مان می‌ایستد. | d: Abfahrt, Ankunft, Fahrkarte
+In Leipzig fahren die [Straßenbahnen] bis spät in die Nacht. | در لایپزیگ تراموا تا دیروقت شب کار می‌کند.
+Die [Straßenbahn] kommt alle zehn Minuten. | تراموا هر ده دقیقه یک بار می‌آید.
+Mit der [Straßenbahn] ist man schneller als mit dem Bus. | با تراموا آدم زودتر از اتوبوس می‌رسد.
+Die [Straßenbahn] Nummer 4 fährt zum Zoo. | تراموای شماره چهار به باغ وحش می‌رود.
+# S-Bahn
+Die [S-Bahn] fährt zum Flughafen. | قطار شهری به فرودگاه می‌رود.
+Mit der [S-Bahn] sind wir in 20 Minuten in der Stadt. | با قطار شهری بیست دقیقه‌ای به شهر می‌رسیم. | d: Haltestelle, Fahrkarte, Ankunft
+Die [S-Bahn] fährt heute nicht, wir fahren mit dem Bus. | قطار شهری امروز کار نمی‌کند، با اتوبوس می‌رویم.
+Die Fahrkarte für die [S-Bahn] kostet 3 Euro. | بلیت قطار شهری سه یورو است. | d: Haltestelle, Ankunft, Abfahrt
+In der [S-Bahn] habe ich meine Kollegin getroffen. | در قطار شهری همکارم را دیدم.
+Die letzte [S-Bahn] fährt um eins. | آخرین قطار شهری ساعت یک حرکت می‌کند. | d: Abfahrt, Fahrkarte, Haltestelle
+# Lkw
+Auf der Straße steht ein großer [Lkw]. | یک کامیون بزرگ در خیابان ایستاده است.
+Mein Onkel fährt einen [Lkw]. | عمویم راننده کامیون است.
+Für den Umzug mieten wir einen [Lkw]. | برای اسباب‌کشی یک کامیون کرایه می‌کنیم.
+Nachts fahren hier viele [Lkws]. | شب‌ها این‌جا کامیون زیاد رد می‌شود.
+Der [Lkw] ist zu groß für diese Straße. | این کامیون برای این خیابان زیادی بزرگ است.
+Der [Lkw] bringt jeden Morgen Obst zum Supermarkt. | کامیون هر روز صبح برای سوپرمارکت میوه می‌آورد.
+# Wagen
+Unser [Wagen] ist schon zwölf Jahre alt. | ماشینمان دوازده سالش است.
+Das Restaurant ist im [Wagen] Nummer 5. | رستوران در واگن شماره پنج است.
+Mein Vater wäscht am Samstag den [Wagen]. | پدرم شنبه‌ها ماشین را می‌شوید.
+Kannst du mir morgen deinen [Wagen] leihen? | می‌توانی فردا ماشینت را به من قرض بدهی؟
+Der [Wagen] steht in der Garage. | ماشین در گاراژ است.
+Unser neuer [Wagen] ist rot. | ماشین جدیدمان قرمز است.
+# parken
+Hier darf man nicht [parken]. | این‌جا نمی‌شود پارک کرد.
+Wo hast du das Auto [geparkt]? | ماشین را کجا پارک کردی؟ | d: parken, parkt, parkte
+Ich [parke] immer vor dem Haus. | من همیشه جلوی خانه پارک می‌کنم.
+In der Innenstadt kann man schlecht [parken]. | در مرکز شهر به سختی می‌شود پارک کرد.
+Wir [parken] auf dem Parkplatz am Bahnhof. | در پارکینگ ایستگاه قطار پارک می‌کنیم.
+Mein Bruder [parkt] sein Motorrad im Hof. | برادرم موتورسیکلتش را توی حیاط پارک می‌کند.
+# tanken
+Ich muss noch [tanken]. | باید بنزین بزنم.
+Wir [tanken] an der Tankstelle an der Ecke. | در پمپ بنزین سر نبش بنزین می‌زنیم.
+Hast du schon [getankt]? | بنزین زده‌ای؟ | d: tanken, tankst, tankte
+Vor der Reise [tankt] Papa immer. | بابا قبل از سفر همیشه بنزین می‌زند.
+Wo kann man hier [tanken]? | این‌جا کجا می‌شود بنزین زد؟
+Wir haben in Österreich [getankt], da ist es billiger. | در اتریش بنزین زدیم، آن‌جا ارزان‌تر است. | d: tanken, tankt, tankte
+# Benzin
+Das [Benzin] ist wieder teurer geworden. | بنزین دوباره گران‌تر شده است.
+Wir haben kein [Benzin] mehr. | دیگر بنزین نداریم.
+Ein Liter [Benzin] kostet fast zwei Euro. | یک لیتر بنزین تقریباً دو یورو است.
+Das Auto braucht wenig [Benzin]. | این ماشین بنزین کمی مصرف می‌کند.
+Im Iran ist das [Benzin] billig. | در ایران بنزین ارزان است.
+Wir müssen tanken, wir haben nur noch wenig [Benzin]. | باید بنزین بزنیم، فقط کمی بنزین مانده.
+# Autobahn
+Auf der [Autobahn] darf man schnell fahren. | در اتوبان می‌شود تند رانندگی کرد.
+Wir fahren über die [Autobahn] nach Berlin. | از اتوبان به برلین می‌رویم.
+Auf der [Autobahn] gibt es einen langen Stau. | در اتوبان یک راه‌بندان طولانی هست.
+Unser Haus ist nah an der [Autobahn], deshalb ist es laut. | خانه‌مان نزدیک اتوبان است، برای همین پرسروصداست.
+Mit dem Fahrrad darf man nicht auf die [Autobahn]. | با دوچرخه نمی‌شود وارد اتوبان شد.
+Die [Autobahnen] in Deutschland sind für Autos kostenlos. | اتوبان‌های آلمان برای ماشین‌های سواری رایگان است.
+# abbiegen
+An der Ampel müssen Sie links [abbiegen]. | سر چراغ باید به چپ بپیچید.
+Der Bus ist an der Kreuzung rechts [abgebogen]. | اتوبوس سر چهارراه به راست پیچید. | d: abbiegen, abbiegt, abbog
+Hier darf man nicht [abbiegen]. | این‌جا پیچیدن ممنوع است.
+Wir sind zu früh [abgebogen]. | ما زیادی زود پیچیدیم. | d: abbiegen, abbiegt, abbog
+Ich weiß nicht, wo wir [abbiegen] müssen. | نمی‌دانم کجا باید بپیچیم. | d: abbiegt, abgebogen, abbog
+Du musst hier rechts [abbiegen], nicht links. | باید این‌جا به راست بپیچی، نه به چپ. | d: fliegen, tanken, umsteigen
+# Verspätung
+Entschuldigen Sie bitte die [Verspätung]. | ببخشید که دیر شد.
+Der Zug kommt mit 20 Minuten [Verspätung]. | قطار با بیست دقیقه تأخیر می‌رسد.
+Bei Schnee gibt es oft [Verspätungen]. | وقتی برف می‌بارد، اغلب تأخیر پیش می‌آید.
+Im Internet steht: 15 Minuten [Verspätung]. | در اینترنت نوشته: پانزده دقیقه تأخیر.
+Der Bus ist mit einer Stunde [Verspätung] angekommen. | اتوبوس با یک ساعت تأخیر رسید.
+Der Chef mag keine [Verspätungen]. | رئیس از تأخیر خوشش نمی‌آید.
+# Verspätung haben
+Der Zug [hat Verspätung]. | قطار تأخیر دارد.
+Wir kommen später, der Bus [hat Verspätung]. | دیرتر می‌رسیم، اتوبوس تأخیر دارد.
+Mein Zug hat eine Stunde [Verspätung gehabt]. | قطارم یک ساعت تأخیر داشت.
+Entschuldigung, die Straßenbahn [hatte Verspätung]. | ببخشید، تراموا تأخیر داشت.
+Ich glaube, dass der Zug [Verspätung hat]. | فکر می‌کنم قطار تأخیر دارد.
+Fast alle Züge [haben Verspätung]. | تقریباً همه قطارها تأخیر دارند.
+# Fahrplan
+Auf dem [Fahrplan] steht: Der Bus kommt um acht Uhr. | روی جدول حرکت نوشته: «اتوبوس ساعت هشت می‌آید.»
+Den [Fahrplan] findest du im Internet. | جدول حرکت را در اینترنت پیدا می‌کنی.
+An der Haltestelle gibt es einen [Fahrplan]. | در ایستگاه اتوبوس یک جدول حرکت هست.
+Im Winter gibt es einen neuen [Fahrplan]. | زمستان جدول حرکت جدیدی می‌آید.
+Kannst du mal auf den [Fahrplan] schauen? | می‌شود یک نگاه به جدول حرکت بیندازی؟
+Am Sonntag hat die Straßenbahn einen anderen [Fahrplan]. | یکشنبه‌ها تراموا جدول حرکت دیگری دارد.
+# Durchsage
+Hast du die [Durchsage] verstanden? | اعلام بلندگو را فهمیدی؟
+Die [Durchsage] war sehr leise. | صدای اعلام بلندگو خیلی آرام بود.
+In der [Durchsage] haben sie gesagt: Der Zug hat Verspätung. | در اعلام بلندگو گفتند: «قطار تأخیر دارد.»
+Im Zug gibt es viele [Durchsagen]. | در قطار اعلام‌های زیادی از بلندگو پخش می‌شود.
+Im Bahnhof gibt es eine [Durchsage] auf Englisch. | در ایستگاه قطار یک اعلام به انگلیسی پخش می‌شود.
+Ich habe die [Durchsage] nicht gehört. | اعلام بلندگو را نشنیدم.
+# Bahnsteig
+Der Zug fährt heute von einem anderen [Bahnsteig] ab. | قطار امروز از یک سکوی دیگر حرکت می‌کند. | d: Führerschein, Fahrplan, Lkw
+Wir warten am [Bahnsteig] auf den Zug. | روی سکو منتظر قطار می‌مانیم.
+Auf dem [Bahnsteig] ist es kalt. | روی سکو سرد است.
+Der [Bahnsteig] ist sehr lang, der Zug hält ganz hinten. | سکو خیلی طولانی است، قطار آن ته می‌ایستد. | d: Lkw, Fahrplan, Führerschein
+Zum [Bahnsteig] gehen Sie die Treppe nach oben. | برای رفتن به سکو، از پله‌ها بالا بروید.
+Am [Bahnsteig] gibt es einen Kiosk. | روی سکو یک دکه هست.
+# Eingang
+Der [Eingang] ist auf der anderen Seite. | ورودی آن طرف است.
+Wir treffen uns am [Eingang] vom Kino. | دم ورودی سینما همدیگر را می‌بینیم.
+Wo ist der [Eingang] zum Museum? | ورودی موزه کجاست؟
+Am [Eingang] muss man die Karte zeigen. | دم ورودی باید بلیت را نشان داد.
+Das Haus hat zwei [Eingänge]. | خانه دو ورودی دارد.
+Dieser [Eingang] ist heute geschlossen. | این ورودی امروز بسته است.
+# Ausgang
+Wo ist der [Ausgang]? | خروجی کجاست؟
+Der [Ausgang] ist hinten links. | خروجی ته سالن، سمت چپ است.
+Im Notfall nehmen Sie bitte diesen [Ausgang]. | در موقع اضطراری لطفاً از این خروجی بروید.
+Nach dem Film gehen alle zum [Ausgang]. | بعد از فیلم همه به طرف خروجی می‌روند.
+Der Bahnhof hat vier [Ausgänge]. | ایستگاه قطار چهار خروجی دارد.
+Am [Ausgang] wartet mein Vater mit dem Auto. | پدرم با ماشین دم خروجی منتظر است.
+# Anschluss
+In Frankfurt habe ich nur zehn Minuten für den [Anschluss]. | در فرانکفورت فقط ده دقیقه وقت دارم که به قطار بعدی برسم.
+Der Zug hat Verspätung, mein [Anschluss] ist weg. | قطار تأخیر دارد، قطار بعدی‌ام رفته است. | d: Stau, Unfall, Verkehr
+Wann fährt der [Anschluss] nach Hamburg? | قطار بعدی به هامبورگ کی حرکت می‌کند؟
+Der [Anschluss] wartet leider nicht. | قطار بعدی متأسفانه منتظر نمی‌ماند. | d: Fahrplan, Stau, Unfall
+Am Bahnsteig gegenüber steht der [Anschluss] nach Leipzig. | قطار بعدی به لایپزیگ روی سکوی روبه‌رو است. | d: Stau, Unfall, Fahrplan
+Ich habe den [Anschluss] in München noch geschafft. | به قطار بعدی در مونیخ به موقع رسیدم. | d: Flughafen, Führerschein, Unfall
+# verpassen
+Schnell, sonst [verpassen] wir den Bus! | زود باش، وگرنه از اتوبوس جا می‌مانیم! | d: verpasse, verpasst, verpasstest
+Ich habe den Anfang vom Film [verpasst]. | اول فیلم را از دست دادم.
+Du [verpasst] eine tolle Party! | یک مهمانی عالی را از دست می‌دهی!
+Mia hat ihren Anschluss [verpasst]. | میا به قطار بعدی‌اش نرسید.
+Ich will das Spiel heute nicht [verpassen]. | نمی‌خواهم بازی امروز را از دست بدهم.
+Wir haben unsere Haltestelle [verpasst]! | از ایستگاهمان رد شدیم!
+# den Zug verpassen
+Ich habe [den Zug verpasst]. | به قطار نرسیدم.
+Schnell, Lena [verpasst den Zug]! | زود باشید، لنا دارد از قطار جا می‌ماند!
+Ich will nicht schon wieder [den Zug verpassen]. | نمی‌خواهم باز هم از قطار جا بمانم.
+Gestern habe ich fast [den Zug verpasst]. | دیروز نزدیک بود از قطار جا بمانم.
+Ich habe Angst, dass ich [den Zug verpasse]. | می‌ترسم از قطار جا بمانم.
+Wir [verpassen den Zug], wenn wir nicht schneller gehen. | اگر تندتر نرویم، از قطار جا می‌مانیم.
+# erreichen
+Wir haben den Zug noch [erreicht]. | به موقع به قطار رسیدیم.
+Ich kann dich nicht [erreichen], dein Handy ist aus. | نمی‌توانم با تو تماس بگیرم، گوشی‌ات خاموش است.
+Um zehn Uhr [erreichen] wir Berlin. | ساعت ده به برلین می‌رسیم.
+Wie kann ich Sie [erreichen]? | چطور می‌توانم با شما تماس بگیرم؟
+Den Bahnhof [erreicht] man in zehn Minuten zu Fuß. | پیاده ده دقیقه‌ای به ایستگاه قطار می‌رسی.
+Meine Schwester ist im Urlaub, ich kann sie nicht [erreichen]. | خواهرم در تعطیلات است، نمی‌توانم با او تماس بگیرم.
+# Fahrt
+Die [Fahrt] nach München dauert vier Stunden. | راه تا مونیخ چهار ساعت طول می‌کشد.
+Wie war die [Fahrt]? | راه چطور بود؟
+Auf der [Fahrt] haben wir viel gesungen. | در راه کلی آواز خواندیم.
+Eine [Fahrt] mit dem Bus kostet 3 Euro. | هر بار سوار شدن به اتوبوس سه یورو است.
+Nach einer langen [Fahrt] sind wir endlich da. | بعد از یک راه طولانی بالاخره رسیدیم.
+Die [Fahrt] durch die Berge war sehr schön. | راه کوهستانی خیلی زیبا بود.
+# gute Fahrt
+Du fährst heute nach Wien? [Gute Fahrt]! | امروز می‌روی وین؟ سفر بخیر! | ok: Gute Reise | d: Guten Appetit, Gute Besserung, Guten Morgen
+Mama sagt: [Gute Fahrt] und ruf an, wenn du da bist! | مامان می‌گوید: «سفر بخیر، وقتی رسیدی زنگ بزن!» | ok: Gute Reise | d: Guten Appetit, Gute Besserung, Guten Morgen
+Tschüss, Oma, und [gute Fahrt] nach Hause! | خداحافظ مادربزرگ، به سلامت برسی خانه! | ok: gute Reise | d: guten Appetit, gute Besserung, guten Morgen
+Ihr fahrt mit dem Zug nach Hamburg? [Gute Fahrt]! | با قطار به هامبورگ می‌روید؟ سفر بخیر! | ok: Gute Reise | d: Guten Appetit, Gute Besserung, Guten Morgen
+Danke für alles und [gute Fahrt]! | ممنون بابت همه چیز، سفر بخیر! | ok: gute Reise | d: guten Appetit, gute Besserung, guten Morgen
+Das Auto ist fertig, ihr könnt fahren. [Gute Fahrt]! | ماشین آماده است، می‌توانید راه بیفتید. سفر بخیر! | ok: Gute Reise | d: Guten Appetit, Gute Besserung, Guten Morgen
+# Station
+An der nächsten [Station] müssen wir aussteigen. | ایستگاه بعدی باید پیاده شویم. | ok: Haltestelle
+Bis zum Bahnhof sind es nur drei [Stationen]. | تا ایستگاه قطار فقط سه ایستگاه راه است. | ok: Haltestellen
+Diese [Station] ist heute geschlossen. | این ایستگاه امروز بسته است.
+Die U-Bahn hält an jeder [Station]. | مترو در هر ایستگاه نگه می‌دارد.
+Wie heißt die nächste [Station]? | اسم ایستگاه بعدی چیست؟ | ok: Haltestelle
+Nach zwei [Stationen] steigen Sie um. | بعد از دو ایستگاه، قطارتان را عوض کنید.
+# Linie
+Die [Linie] 5 fährt zum Bahnhof. | خط پنج به ایستگاه قطار می‌رود. | d: Verspätung, Abfahrt, Durchsage
+Welche [Linie] fährt zum Flughafen? | کدام خط به فرودگاه می‌رود؟ | d: Ankunft, Durchsage, Verspätung
+Nehmen Sie die [Linie] 3 bis zum Rathaus. | خط سه را تا شهرداری سوار شوید. | d: Durchsage, Abfahrt, Verspätung
+Am Wochenende fährt diese [Linie] nicht. | آخر هفته این خط کار نمی‌کند.
+In Berlin gibt es viele [Linien]. | برلین خط‌های مترو و اتوبوس زیادی دارد. | d: Durchsagen, Ankünfte, Verspätungen
+Mit der [Linie] 7 sind Sie in zehn Minuten da. | با خط هفت ده دقیقه‌ای می‌رسید. | d: Fahrt, Durchsage, Verspätung
+# im Stau stehen
+Ich [stehe im Stau], ich komme später. | در ترافیک گیر کرده‌ام، دیرتر می‌آیم.
+Wir haben zwei Stunden [im Stau gestanden]. | دو ساعت در ترافیک گیر کرده بودیم.
+Papa [stand im Stau], deshalb war er nicht pünktlich. | بابا در ترافیک گیر کرده بود، برای همین سر وقت نرسید.
+Ich will nicht jeden Tag [im Stau stehen]. | نمی‌خواهم هر روز در ترافیک گیر کنم.
+Er kommt später, weil er [im Stau steht]. | دیرتر می‌آید، چون در ترافیک گیر کرده است.
+Mit dem Fahrrad muss man nie [im Stau stehen]. | با دوچرخه آدم هیچ‌وقت در ترافیک گیر نمی‌کند. | d: ein Formular ausfüllen, Weihnachten feiern, ein Auto mieten
+# zu spät kommen
+Entschuldigung, dass ich [zu spät komme]. | ببخشید که دیر کردم.
+Schnell, wir [kommen zu spät]! | زود باش، دیر می‌رسیم!
+Lena ist heute wieder [zu spät gekommen]. | لنا امروز باز هم دیر آمد.
+Ich darf heute nicht [zu spät kommen]. | امروز نباید دیر برسم.
+Der Lehrer mag es nicht, wenn wir [zu spät kommen]. | معلم خوشش نمی‌آید که دیر بیاییم.
+Ich [kam zu spät], weil der Bus Verspätung hatte. | دیر رسیدم، چون اتوبوس تأخیر داشت.
+# den Bus nehmen
+Ich [nehme den Bus] zur Arbeit. | با اتوبوس سر کار می‌روم.
+Es regnet, wir [nehmen den Bus]. | باران می‌آید، با اتوبوس می‌رویم.
+Heute habe ich [den Bus genommen], das Auto ist in der Werkstatt. | امروز با اتوبوس رفتم، ماشین در تعمیرگاه است.
+Du kannst auch [den Bus nehmen]. | می‌توانی با اتوبوس هم بروی.
+Mein Opa [nimmt den Bus] zum Arzt. | پدربزرگم با اتوبوس پیش دکتر می‌رود.
+Ich glaube, dass wir [den Bus nehmen] müssen. | فکر می‌کنم باید با اتوبوس برویم. | d: einen Unfall haben, im Stau stehen, Verspätung haben
+# ein Taxi nehmen
+Es ist spät, wir [nehmen ein Taxi]. | دیروقت است، تاکسی می‌گیریم.
+Zum Flughafen müssen wir [ein Taxi nehmen]. | تا فرودگاه باید تاکسی بگیریم. | d: den Zug verpassen, einen Unfall haben, Verspätung haben
+Gestern Nacht habe ich [ein Taxi genommen]. | دیشب تاکسی گرفتم.
+Mein Koffer ist schwer, ich [nehme ein Taxi]. | چمدانم سنگین است، تاکسی می‌گیرم.
+Der Bus fährt nicht mehr, wir können nur noch [ein Taxi nehmen]. | اتوبوس دیگر نمی‌آید، فقط می‌توانیم تاکسی بگیریم. | d: Verspätung haben, einen Unfall haben, den Zug verpassen
+Ich glaube, es ist besser, wenn wir [ein Taxi nehmen]. | فکر می‌کنم بهتر است تاکسی بگیریم. | d: im Stau stehen, einen Unfall haben, den Zug verpassen
+# Ausland
+Mein Bruder arbeitet im [Ausland]. | برادرم در خارج از کشور کار می‌کند.
+Im Sommer fahren wir ins [Ausland]. | تابستان به خارج از کشور سفر می‌کنیم.
+Kann ich mit dieser Karte auch im [Ausland] bezahlen? | با این کارت در خارج از کشور هم می‌شود پرداخت کرد؟
+Meine Tante lebt seit zehn Jahren im [Ausland]. | خاله‌ام ده سال است خارج از کشور زندگی می‌کند.
+Waren Sie schon einmal im [Ausland]? | تا حالا خارج از کشور رفته‌اید؟
+Das Paket kommt aus dem [Ausland]. | این بسته از خارج آمده است.
+# in Urlaub fahren
+Wir [fahren in Urlaub], unser Hund bleibt bei Oma. | ما به تعطیلات می‌رویم، سگمان پیش مادربزرگ می‌ماند.
+Wann wollt ihr [in Urlaub fahren]? | کی می‌خواهید به تعطیلات بروید؟ | d: den Koffer packen, den Zug verpassen, im Stau stehen
+Im Sommer sind wir nicht [in Urlaub gefahren]. | تابستان به تعطیلات نرفتیم.
+Die Nachbarn [fahren in Urlaub], wir haben ihren Schlüssel. | همسایه‌ها به تعطیلات می‌روند، کلیدشان پیش ماست.
+Ich habe keine Zeit, weil ich morgen [in Urlaub fahre]. | وقت ندارم، چون فردا به تعطیلات می‌روم.
+Wir können dieses Jahr leider nicht [in Urlaub fahren]. | امسال متأسفانه نمی‌توانیم به تعطیلات برویم. | d: den Koffer packen, den Zug verpassen, im Stau stehen
+# ins Ausland gehen
+Nach der Uni möchte ich [ins Ausland gehen]. | بعد از دانشگاه می‌خواهم بروم خارج.
+Mein Cousin ist im Mai [ins Ausland gegangen]. | پسرعمویم ماه مه رفت خارج.
+Warum willst du [ins Ausland gehen]? | چرا می‌خواهی بروی خارج؟
+Meine Eltern finden es nicht gut, dass ich [ins Ausland gehe]. | پدر و مادرم موافق نیستند که من بروم خارج.
+Mein Opa [ging ins Ausland], als er jung war. | پدربزرگم وقتی جوان بود رفت خارج.
+Mein Freund will für ein Jahr [ins Ausland gehen] und dort arbeiten. | دوستم می‌خواهد برای یک سال برود خارج و آن‌جا کار کند.
+# Grenze
+An der [Grenze] müssen wir den Pass zeigen. | سر مرز باید گذرنامه را نشان بدهیم. | d: Reise, Sehenswürdigkeit, Landkarte
+Die [Grenze] zu Österreich ist nicht weit. | مرز اتریش دور نیست. | d: Reise, Sehenswürdigkeit, Landkarte
+Wir haben zwei Stunden an der [Grenze] gewartet. | دو ساعت سر مرز منتظر ماندیم. | d: Reise, Landkarte, Sehenswürdigkeit
+Unser Dorf liegt nah an der [Grenze]. | روستای ما نزدیک مرز است. | d: Reise, Landkarte, Sehenswürdigkeit
+Deutschland hat [Grenzen] mit neun Ländern. | آلمان با نُه کشور مرز مشترک دارد.
+Hinter der [Grenze] ist das Benzin billiger. | آن طرف مرز بنزین ارزان‌تر است. | d: Reise, Landkarte, Sehenswürdigkeit
+# Visum
+Für Deutschland brauche ich ein [Visum]. | برای آلمان ویزا لازم دارم.
+Ich warte seit zwei Monaten auf mein [Visum]. | دو ماه است منتظر ویزایم هستم.
+Hast du das [Visum] schon bekommen? | ویزا را گرفته‌ای؟
+Für das [Visum] muss man ein Formular ausfüllen. | برای ویزا باید یک فرم پر کرد.
+Ohne [Visum] darf man nicht über die Grenze. | بدون ویزا نمی‌شود از مرز رد شد.
+Die [Visa] für die ganze Familie sind endlich da. | ویزاهای همه خانواده بالاخره آمد.
+# Reisebüro
+Das [Reisebüro] hat heute ein gutes Angebot für Wien. | آژانس مسافرتی امروز یک پیشنهاد خوب برای وین دارد.
+Meine Schwester arbeitet in einem [Reisebüro]. | خواهرم در یک آژانس مسافرتی کار می‌کند.
+Das [Reisebüro] ist neben der Bank. | آژانس مسافرتی کنار بانک است.
+Im [Reisebüro] hat man uns ein Hotel am Meer empfohlen. | در آژانس مسافرتی یک هتل کنار دریا به ما پیشنهاد کردند.
+Ich frage im [Reisebüro] nach dem Preis. | قیمت را از آژانس مسافرتی می‌پرسم.
+Heute kauft man die Tickets oft im Internet, nicht im [Reisebüro]. | امروزه بلیت را بیشتر از اینترنت می‌خرند، نه از آژانس مسافرتی.
+# buchen
+Ich habe die Fahrkarten im Internet [gebucht]. | بلیت‌ها را از اینترنت خریدم.
+Wir möchten zwei Nächte [buchen]. | می‌خواهیم دو شب رزرو کنیم. | d: packen, landen, starten
+Hast du das Hotel schon [gebucht]? | هتل را رزرو کرده‌ای؟
+Mein Vater [bucht] jedes Jahr den Urlaub im Reisebüro. | پدرم هر سال سفرمان را از آژانس مسافرتی می‌خرد.
+Man muss früh [buchen], sonst ist es teuer. | باید زود رزرو کرد، وگرنه گران می‌شود. | d: packen, landen, zelten
+Wir [buchen] ein Auto für die ganze Woche. | برای کل هفته یک ماشین رزرو می‌کنیم.
+# ein Zimmer buchen
+Ich möchte [ein Zimmer buchen]. | می‌خواهم یک اتاق رزرو کنم.
+Wir haben im Hotel [ein Zimmer gebucht]. | در هتل یک اتاق رزرو کردیم.
+Hast du schon [ein Zimmer gebucht]? | اتاق رزرو کرده‌ای؟
+Ich [buche ein Zimmer] für drei Nächte. | یک اتاق برای سه شب رزرو می‌کنم.
+Ich rufe das Hotel an, weil ich [ein Zimmer buchen] möchte. | به هتل زنگ می‌زنم، چون می‌خواهم یک اتاق رزرو کنم.
+Im Sommer muss man früh [ein Zimmer buchen]. | تابستان باید زود اتاق رزرو کرد.
+# eine Reise buchen
+Morgen gehen wir ins Reisebüro und [buchen eine Reise]. | فردا به آژانس مسافرتی می‌رویم و یک سفر رزرو می‌کنیم.
+Meine Eltern haben [eine Reise gebucht]. | پدر و مادرم یک سفر رزرو کرده‌اند.
+Ich [buche eine Reise] für die ganze Familie. | برای کل خانواده یک سفر رزرو می‌کنم.
+Für den Sommer hat Papa [eine Reise gebucht]. | بابا برای تابستان یک سفر رزرو کرده است.
+Wir sparen Geld, weil wir [eine Reise buchen] wollen. | پول پس‌انداز می‌کنیم، چون می‌خواهیم یک سفر رزرو کنیم.
+Im Internet kann man heute schnell [eine Reise buchen]. | امروزه در اینترنت می‌شود زود یک سفر رزرو کرد.
+# Gepäck
+Wir haben zu viel [Gepäck]. | بارمان زیادی است.
+Mein [Gepäck] ist noch nicht angekommen. | بارم هنوز نرسیده است.
+Das [Gepäck] bleibt im Hotel, wir gehen in die Stadt. | بارها در هتل می‌ماند، ما به شهر می‌رویم.
+Im Bus ist kein Platz für das [Gepäck]. | در اتوبوس برای بارها جا نیست.
+Ich reise immer mit wenig [Gepäck]. | من همیشه با بار کم سفر می‌کنم.
+Kannst du mir mit dem [Gepäck] helfen? | می‌توانی در بردن بارها کمکم کنی؟
+# Rucksack
+In meinem [Rucksack] sind Wasser und Brot. | توی کوله‌پشتی‌ام آب و نان است.
+Für die Reise nehme ich nur einen [Rucksack] mit. | برای سفر فقط یک کوله‌پشتی با خودم می‌برم.
+Mein [Rucksack] ist zu schwer. | کوله‌پشتی‌ام زیادی سنگین است.
+Mein Sohn trägt seine Bücher im [Rucksack] zur Schule. | پسرم کتاب‌هایش را توی کوله‌پشتی به مدرسه می‌برد.
+Ich habe meinen [Rucksack] im Zug vergessen. | کوله‌پشتی‌ام را در قطار جا گذاشتم.
+Der rote [Rucksack] gehört meiner Schwester. | کوله‌پشتی قرمز مال خواهرم است.
+# packen
+Hast du schon [gepackt]? | وسایلت را جمع کرده‌ای؟
+Ich muss heute Abend noch [packen]. | باید امشب وسایلم را جمع کنم.
+Wir [packen] Wasser und Obst in den Rucksack. | آب و میوه توی کوله‌پشتی می‌گذاریم.
+Der Verkäufer [packt] die Äpfel in eine Tüte. | فروشنده سیب‌ها را توی یک کیسه می‌گذارد.
+Ich [packe] immer zu viel. | من همیشه زیادی وسیله برمی‌دارم.
+Für den Umzug müssen wir die Bücher [packen]. | برای اسباب‌کشی باید کتاب‌ها را بسته‌بندی کنیم.
+# den Koffer packen
+Ich muss noch [den Koffer packen]. | هنوز باید چمدانم را ببندم.
+Hast du schon [den Koffer gepackt]? | چمدانت را بسته‌ای؟
+Mama [packt den Koffer] für die ganze Familie. | مامان چمدان را برای کل خانواده می‌بندد.
+Wir [packen den Koffer] am Abend vor der Reise. | شب قبل از سفر چمدان را می‌بندیم.
+Gestern Abend habe ich [den Koffer gepackt]. | دیشب چمدان را بستم.
+Ich habe keine Zeit, weil ich [den Koffer packe]. | وقت ندارم، چون دارم چمدان می‌بندم.
+# Flug
+Der [Flug] nach Teheran dauert fünf Stunden. | پرواز به تهران پنج ساعت طول می‌کشد.
+Wie war dein [Flug]? | پروازت چطور بود؟ | d: Pass, Rucksack, Koffer
+Unser [Flug] hat zwei Stunden Verspätung. | پروازمان دو ساعت تأخیر دارد.
+Die [Flüge] im Sommer sind sehr teuer. | پروازها در تابستان خیلی گران است.
+Ich habe einen [Flug] nach Wien gebucht. | یک پرواز به وین رزرو کرده‌ام.
+Der [Flug] ist um sieben Uhr, wir müssen früh aufstehen. | پرواز ساعت هفت است، باید زود بیدار شویم.
+# landen
+Das Flugzeug [landet] um 14 Uhr in Frankfurt. | هواپیما ساعت دو بعدازظهر در فرانکفورت فرود می‌آید.
+Wir sind pünktlich in Teheran [gelandet]. | سر وقت در تهران فرود آمدیم.
+Wann [landet] dein Flug? | پروازت کی فرود می‌آید؟
+Bei so viel Wind kann das Flugzeug nicht [landen]. | با این باد شدید هواپیما نمی‌تواند فرود بیاید.
+Ruf mich an, wenn du [gelandet] bist. | وقتی فرود آمدی، به من زنگ بزن.
+Die Flugzeuge [landen] hier alle fünf Minuten. | هواپیماها این‌جا هر پنج دقیقه یک بار فرود می‌آیند.
+# starten
+Das Flugzeug [startet] in zehn Minuten. | هواپیما ده دقیقه دیگر بلند می‌شود.
+Unser Flug ist pünktlich [gestartet]. | پروازمان سر وقت بلند شد.
+Der Kurs [startet] im Oktober. | کلاس در ماه اکتبر شروع می‌شود.
+Wir [starten] morgen früh um sechs. | فردا صبح ساعت شش راه می‌افتیم.
+Bei Schnee können die Flugzeuge nicht [starten]. | وقتی برف می‌آید، هواپیماها نمی‌توانند بلند شوند.
+Das Spiel [startet] um 20 Uhr. | بازی ساعت هشت شب شروع می‌شود.
+# Einzelzimmer
+Ich möchte ein [Einzelzimmer] für zwei Nächte. | یک اتاق یک‌نفره برای دو شب می‌خواهم.
+Ein [Einzelzimmer] kostet 60 Euro pro Nacht. | اتاق یک‌نفره شبی شصت یورو است.
+Haben Sie noch ein [Einzelzimmer] frei? | هنوز اتاق یک‌نفره خالی دارید؟
+Im [Einzelzimmer] gibt es nur ein Bett. | در اتاق یک‌نفره فقط یک تخت هست.
+Mein Kollege und ich haben zwei [Einzelzimmer] gebucht. | من و همکارم دو اتاق یک‌نفره رزرو کرده‌ایم.
+Das [Einzelzimmer] ist klein, aber sauber. | اتاق یک‌نفره کوچک است، اما تمیز است.
+# Doppelzimmer
+Wir möchten ein [Doppelzimmer] mit Balkon. | یک اتاق دونفره با بالکن می‌خواهیم.
+Das [Doppelzimmer] kostet 90 Euro pro Nacht. | اتاق دونفره شبی نود یورو است.
+Meine Schwester und ich schlafen in einem [Doppelzimmer]. | من و خواهرم در یک اتاق دونفره می‌خوابیم.
+Im [Doppelzimmer] gibt es zwei Betten. | در اتاق دونفره دو تخت هست.
+Leider haben wir nur noch ein [Doppelzimmer] frei. | متأسفانه فقط یک اتاق دونفره خالی داریم.
+Wir haben zwei [Doppelzimmer] für die Familie gebucht. | دو اتاق دونفره برای خانواده رزرو کرده‌ایم.
+# Rezeption
+Den Schlüssel bekommen Sie an der [Rezeption]. | کلید را از پذیرش می‌گیرید. | d: Grenze, Reise, Sehenswürdigkeit
+Bitte fragen Sie an der [Rezeption]. | لطفاً از پذیرش بپرسید. | d: Grenze, Reise, Sehenswürdigkeit
+Die Frau an der [Rezeption] spricht auch Englisch. | خانمِ پذیرش انگلیسی هم صحبت می‌کند.
+Wir treffen uns um neun an der [Rezeption]. | ساعت نه دم پذیرش همدیگر را می‌بینیم. | d: Grenze, Reise, Sehenswürdigkeit
+Ich rufe die [Rezeption] an, die Dusche funktioniert nicht. | به پذیرش زنگ می‌زنم، دوش کار نمی‌کند.
+An der [Rezeption] muss man den Pass zeigen. | در پذیرش باید گذرنامه را نشان داد. | d: Grenze, Reise, Sehenswürdigkeit
+# übernachten
+Wir [übernachten] in einem kleinen Hotel. | شب را در یک هتل کوچک می‌مانیم.
+Wo habt ihr [übernachtet]? | شب را کجا ماندید؟
+Kann ich heute bei dir [übernachten]? | می‌توانم امشب پیش تو بمانم؟
+Auf der Reise haben wir bei Freunden [übernachtet]. | در سفر شب را پیش دوستانمان ماندیم.
+Wir [übernachten] zwei Nächte in Wien. | دو شب در وین می‌مانیم.
+Mein Sohn [übernachtet] heute bei Oma. | پسرم امشب پیش مادربزرگ می‌ماند.
+# Übernachtung
+Eine [Übernachtung] kostet 50 Euro. | هر شب اقامت پنجاه یورو است. | d: Reise, Rezeption, Grenze
+Die [Übernachtung] mit Frühstück kostet 70 Euro. | یک شب اقامت با صبحانه هفتاد یورو است. | d: Reise, Rezeption, Grenze
+Wir brauchen drei [Übernachtungen] in München. | در مونیخ سه شب اقامت لازم داریم.
+Für die [Übernachtung] habe ich ein Hotel am Bahnhof gefunden. | برای شب‌ماندن یک هتل نزدیک ایستگاه قطار پیدا کردم.
+Im Sommer ist eine [Übernachtung] teurer. | تابستان یک شب اقامت گران‌تر است.
+Wie viele [Übernachtungen] haben Sie gebucht? | چند شب رزرو کرده‌اید؟
+# Jugendherberge
+In der [Jugendherberge] ist es billig. | مسافرخانه جوانان ارزان است. | d: Rezeption, Übernachtung, Grenze
+Die Klasse übernachtet in einer [Jugendherberge]. | کلاس شب را در یک مسافرخانه جوانان می‌ماند.
+In der [Jugendherberge] schlafen sechs Leute in einem Zimmer. | در مسافرخانه جوانان شش نفر در یک اتاق می‌خوابند.
+Die [Jugendherberge] liegt in der Altstadt. | مسافرخانه جوانان در بافت قدیم شهر است. | d: Grenze, Rezeption, Landkarte
+Das Frühstück in der [Jugendherberge] ist einfach, aber gut. | صبحانه مسافرخانه جوانان ساده است، اما خوب است. | d: Sehenswürdigkeit, Grenze, Rezeption
+Wir haben zwei Nächte in der [Jugendherberge] gebucht. | دو شب در مسافرخانه جوانان رزرو کرده‌ایم.
+# Pension
+Wir wohnen in einer kleinen [Pension] am Meer. | در یک پانسیون کوچک کنار دریا اقامت داریم. | d: Sehenswürdigkeit, Rezeption, Grenze
+Die [Pension] ist billiger als das Hotel. | پانسیون از هتل ارزان‌تر است. | d: Sehenswürdigkeit, Grenze, Rezeption
+In der [Pension] gibt es nur sechs Zimmer. | پانسیون فقط شش اتاق دارد. | d: Sehenswürdigkeit, Grenze, Rezeption
+Frau Weber hat eine [Pension] in den Bergen. | خانم وبر یک پانسیون در کوهستان دارد. | d: Sehenswürdigkeit, Grenze, Landkarte
+Die [Pension] ist sehr gemütlich. | پانسیون خیلی دنج است. | d: Grenze, Rezeption, Landkarte
+Die Leute in der [Pension] sind sehr nett. | آدم‌های پانسیون خیلی مهربان‌اند. | d: Reise, Grenze, Landkarte
+# Ausflug
+Der [Ausflug] in die Berge war toll. | گردش در کوه عالی بود.
+Morgen geht die Klasse auf einen [Ausflug]. | فردا کلاس به گردش می‌رود.
+Wohin geht der [Ausflug]? | مقصد گردش کجاست؟ | d: Pass, Koffer, Rucksack
+Für den [Ausflug] brauchen wir Wasser und Brot. | برای گردش آب و نان لازم داریم.
+Der [Ausflug] kostet 20 Euro pro Person. | این گشت برای هر نفر بیست یورو است.
+Wir planen einen [Ausflug] nach Dresden. | یک گردش به درسدن برنامه‌ریزی می‌کنیم.
+# einen Ausflug machen
+Wir [machen einen Ausflug] in die Berge. | به گردش در کوه می‌رویم.
+Am Samstag haben wir [einen Ausflug gemacht]. | شنبه به گردش رفتیم.
+Wollen wir am Wochenende [einen Ausflug machen]? | آخر هفته به گردش برویم؟
+Die Kinder freuen sich, weil sie [einen Ausflug machen]. | بچه‌ها خوشحال‌اند، چون به گردش می‌روند.
+Wenn das Wetter gut ist, können wir [einen Ausflug machen]. | اگر هوا خوب باشد، می‌توانیم به گردش برویم.
+Im Urlaub haben wir jeden Tag [einen Ausflug gemacht]. | در تعطیلات هر روز به گردش رفتیم.
+# Tourist
+Im Sommer sind viele [Touristen] in der Stadt. | تابستان گردشگران زیادی در شهر هستند.
+Der [Tourist] fragt nach dem Weg. | گردشگر راه را می‌پرسد.
+Viele [Touristen] besuchen Isfahan. | گردشگران زیادی به اصفهان می‌آیند.
+Wir sind hier auch nur [Touristen]. | ما هم این‌جا فقط توریست هستیم.
+Ein [Tourist] hat mich nach dem Bahnhof gefragt. | یک گردشگر سراغ ایستگاه قطار را از من گرفت.
+Die [Touristen] machen Fotos von der Brücke. | گردشگرها از پل عکس می‌گیرند.
+# Führung
+Die [Führung] durch das Schloss dauert eine Stunde. | بازدید با راهنما از کاخ یک ساعت طول می‌کشد.
+Die nächste [Führung] beginnt um 15 Uhr. | بازدید با راهنمای بعدی ساعت سه شروع می‌شود.
+Gibt es auch eine [Führung] auf Englisch? | بازدید با راهنما به زبان انگلیسی هم هست؟ | d: Sehenswürdigkeit, Rezeption, Übernachtung
+Die [Führung] im Museum war sehr interessant. | بازدید با راهنما در موزه خیلی جالب بود.
+Für die [Führung] muss man vorher eine Karte kaufen. | برای بازدید با راهنما باید از قبل بلیت خرید. | d: Übernachtung, Grenze, Rezeption
+Die [Führungen] sind für Kinder kostenlos. | بازدیدهای با راهنما برای بچه‌ها رایگان است.
+# besichtigen
+Morgen [besichtigen] wir das Schloss. | فردا از کاخ بازدید می‌کنیم.
+Habt ihr die Altstadt schon [besichtigt]? | از بافت قدیم شهر بازدید کرده‌اید؟
+In Isfahan möchte ich die Brücken [besichtigen]. | در اصفهان می‌خواهم پل‌ها را ببینم.
+Die Touristen [besichtigen] die Kirche. | گردشگرها از کلیسا بازدید می‌کنند.
+Wir haben die Wohnung [besichtigt], sie ist schön. | آپارتمان را دیدیم، قشنگ است.
+Man kann den Turm nur mit Führung [besichtigen]. | از برج فقط با راهنما می‌شود بازدید کرد.
+# Landkarte
+Kannst du mir Iran auf der [Landkarte] zeigen? | می‌توانی ایران را روی نقشه به من نشان بدهی؟ | d: Grenze, Führung, Rezeption
+An der Wand hängt eine große [Landkarte]. | روی دیوار یک نقشه بزرگ آویزان است.
+Wir brauchen keine [Landkarte], wir haben das Handy. | نقشه لازم نداریم، گوشی داریم.
+Mein Opa fährt immer mit einer alten [Landkarte]. | پدربزرگم همیشه با یک نقشه قدیمی رانندگی می‌کند. | d: Grenze, Rezeption, Führung
+Auf der [Landkarte] ist der Weg ganz einfach. | روی نقشه راه خیلی ساده است. | d: Pension, Rezeption, Grenze
+Hier auf der [Landkarte] ist unser Dorf. | روستای ما این‌جاست، روی نقشه.
+# Strand
+Wir liegen den ganzen Tag am [Strand]. | تمام روز در ساحل دراز می‌کشیم.
+Vom Hotel zum [Strand] sind es nur fünf Minuten. | از هتل تا ساحل فقط پنج دقیقه راه است.
+Die Kinder spielen am [Strand]. | بچه‌ها در ساحل بازی می‌کنند.
+Abends ist der [Strand] ruhig und schön. | عصرها ساحل آرام و زیباست.
+Die [Strände] im Norden vom Iran sind sehr schön. | ساحل‌های شمال ایران خیلی زیباست.
+Am [Strand] ist es heute zu heiß. | امروز ساحل زیادی گرم است.
+# Insel
+Wir machen Urlaub auf einer [Insel]. | ما در یک جزیره تعطیلات می‌گذرانیم.
+Die [Insel] ist sehr klein. | این جزیره خیلی کوچک است.
+Auf der [Insel] gibt es keine Autos. | در این جزیره ماشین نیست.
+Zur [Insel] fliegt man eine Stunde. | تا جزیره یک ساعت پرواز است.
+Im Süden vom Iran gibt es viele [Inseln]. | در جنوب ایران جزیره‌های زیادی هست.
+Auf der [Insel] wohnen nur 500 Menschen. | در این جزیره فقط پانصد نفر زندگی می‌کنند.
+# Zelt
+Im Sommer schlafen wir im [Zelt]. | تابستان در چادر می‌خوابیم.
+Unser [Zelt] ist groß genug für vier Personen. | چادر ما برای چهار نفر به اندازه کافی بزرگ است.
+Es regnet, alle gehen ins [Zelt]. | باران می‌آید، همه می‌روند توی چادر.
+Für den Urlaub nehmen wir das [Zelt] mit. | برای تعطیلات چادر را با خودمان می‌بریم.
+In unserem [Zelt] ist es nachts sehr kalt. | شب‌ها توی چادرمان خیلی سرد است.
+Wir kaufen ein neues [Zelt] für die Reise. | برای سفر یک چادر نو می‌خریم.
