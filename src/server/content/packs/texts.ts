@@ -108,6 +108,9 @@ export function buildTexts(analyzer: Analyzer, files: { file: string; text: stri
     for (const name of SETS) {
       const [track, set] = name.split(" ");
       for (const item of sets.get(name) ?? []) {
+        // A reading mark belongs to the sentences only: in a question the learner would see it.
+        const mark = item.text.match(/\p{L}+\{[\p{L}\d'’-]+\}/u);
+        if (mark) say(item.line, `a question shows the mark «${mark[0]}»: write the word without {…}`);
         try {
           questionSets[track][set].push(JSON.parse(item.text));
         } catch {

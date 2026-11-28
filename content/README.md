@@ -224,6 +224,11 @@ per line in the P-T shape, two to eight per set; the loader imports them through
   `npm run content:check -- fr --texts` lists each text's length and its deepest card word (its position in the
   teaching order). Numbers in digits cost nothing; give the machine voice a `tts:` with them written out.
 - **Dialogues** have two speakers, `A` and `B` (the machine voice gives the second one the second voice).
+- **Voices fit the people.** French's first machine voice is a woman's and its second a man's; German's first is a
+  man's and its second a woman's (`src/lib/audio/voices.ts`). The person who speaks first in a dialogue or phone
+  call gets the first voice, so make that person of the first voice's sex whenever the text shows it (a name,
+  Madame or Herr, a gendered form). A text without speakers is read in the first voice: a voice message comes from
+  a person of that sex. Emails, schedules, menus, ads and announcements are read by a narrator: any writer.
 - **Placement.** Four texts of each level have `placement: yes` (`prompt.placement_texts`, PRD §11.2), taken from
   the later half of the level, with at least four questions in `reading A` and `listening A`.
 - **Questions.** In band 1: `mcq`, `tf`, `order` (four or five items, `correct_order` lists the item indexes in the
@@ -249,6 +254,8 @@ why: «Oui, un café, s'il vous plaît» سفارش مؤدبانه است …
 ```
 
 - 5 to 8 turns. The code is `<language>-<level>-dNNN`, unique in the language.
+- The other person's lines are read in the second voice (French a man's, German a woman's) and the learner's
+  choices in the first: when the text shows the other person's sex (la boulangère, der Kellner), it should fit.
 - A wrong choice is wrong by grammar, meaning or tone (tu/du with a stranger, a goodbye as a greeting) and never
   right in another reading. Every choice is also heard, so a wrong one must **sound** different from the right one:
   «je vient» or «deux croissant» are not wrong choices, «je va», «la lait» or «un glace» are.

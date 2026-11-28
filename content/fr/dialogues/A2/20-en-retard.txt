@@ -1,16 +1,16 @@
 code: fr-a2-d020
 title: خبر دادن تأخیر به استاد
-situation: صبح در اتوبوس هستی و اتوبوس در ترافیک مانده. به استادت، خانم دوبوا، زنگ می‌زنی تا بگویی دیر می‌رسی.
+situation: صبح در اتوبوس هستی و اتوبوس در ترافیک مانده. به استادت، آقای دوبوا، زنگ می‌زنی تا بگویی دیر می‌رسی.
 turns:
 B: Allô, bonjour ! Qui est-ce ? | الو، سلام! شما؟
-+ Bonjour, madame. C'est{être} Reza Karimi, de votre cours de français. | سلام، خانم. رضا کریمی هستم، از کلاس فرانسوی شما.
-- Salut, madame ! C'est{être} Reza Karimi, de votre cours de français. | سلام، خانم! رضا کریمی هستم، از کلاس فرانسوی شما.
-- Bonjour, madame. C'est{être} Reza Karimi, de votre cours du{du-contr} français. | سلام، خانم. رضا کریمی هستم، از کلاس فرانسوی شما.
-why: با استاد «Bonjour, madame» می‌گوییم؛ Salut خودمانی است. نام درس بدون حرف تعریف می‌آید: «cours de français».
-B: Ah, bonjour Reza ! Qu'est-ce qui se passe ? | آه، سلام رضا! چه شده؟
-- Je suis{être} désolé, je vais arriver à l'heure. Il y a un accident et le bus n'avance pas. | متأسفم، سر وقت می‌رسم. تصادف شده و اتوبوس جلو نمی‌رود.
-+ Je suis{être} désolé, je vais arriver en retard. Il y a un accident et le bus n'avance pas. | متأسفم، دیر می‌رسم. تصادف شده و اتوبوس جلو نمی‌رود.
-- Je suis{être} désolé, je vais arriver en retard. Il y a un accident et le bus ne avance pas. | متأسفم، دیر می‌رسم. تصادف شده و اتوبوس جلو نمی‌رود.
++ Bonjour, monsieur. C'est{être} Sara Karimi, de votre cours de français. | سلام، آقا. سارا کریمی هستم، از کلاس فرانسوی شما.
+- Salut, monsieur ! C'est{être} Sara Karimi, de votre cours de français. | سلام، آقا! سارا کریمی هستم، از کلاس فرانسوی شما.
+- Bonjour, monsieur. C'est{être} Sara Karimi, de votre cours du{du-contr} français. | سلام، آقا. سارا کریمی هستم، از کلاس فرانسوی شما.
+why: با استاد «Bonjour, monsieur» می‌گوییم؛ Salut خودمانی است. نام درس بدون حرف تعریف می‌آید: «cours de français».
+B: Ah, bonjour Sara ! Qu'est-ce qui se passe ? | آه، سلام سارا! چه شده؟
+- Je suis{être} désolée, je vais arriver à l'heure. Il y a un accident et le bus n'avance pas. | متأسفم، سر وقت می‌رسم. تصادف شده و اتوبوس جلو نمی‌رود.
++ Je suis{être} désolée, je vais arriver en retard. Il y a un accident et le bus n'avance pas. | متأسفم، دیر می‌رسم. تصادف شده و اتوبوس جلو نمی‌رود.
+- Je suis{être} désolée, je vais arriver en retard. Il y a un accident et le bus ne avance pas. | متأسفم، دیر می‌رسم. تصادف شده و اتوبوس جلو نمی‌رود.
 why: اتوبوس جلو نمی‌رود، پس دیر می‌رسی: «en retard». پیش از واکه ne می‌شود n': «n'avance pas».
 B: Oh, ce n'est pas grave. Vous allez arriver quand{quand} ? | اوه، مهم نیست. کی می‌رسید؟
 - Il y a vingt minutes, je pense. Vous pouvez commencer sans moi. | فکر کنم بیست دقیقه پیش. می‌توانید بدون من شروع کنید.
@@ -23,12 +23,12 @@ B: D'accord. Mais attention : aujourd'hui, il y a un petit examen à la fin du{d
 + Oh non ! Je l'ai complètement oublié ! | ای وای! کاملاً یادم رفته بود!
 why: ضمیر مفعولی پیش از avoir می‌آید: «je l'ai oublié». oublier مفعول بی‌واسطه می‌گیرد، پس l'، نه lui.
 B: Ne vous inquiétez pas. Vous pourrez le faire après les autres. | نگران نباشید. می‌توانید بعد از بقیه امتحان بدهید.
-+ Merci beaucoup, madame. C'est{être} très gentil. | خیلی ممنون، خانم. لطف دارید.
-- Merci beaucoup, madame. Tu es très gentille. | خیلی ممنون، خانم. تو خیلی مهربانی.
-- Merci beaucoup, madame. Je suis{être} très gentil. | خیلی ممنون، خانم. من خیلی مهربانم.
-why: «C'est très gentil» یعنی «لطف دارید». با استاد tu نمی‌گوییم، و «Je suis très gentil» از خودت تعریف می‌کند.
-B: De rien. À tout à l'heure, Reza ! | خواهش می‌کنم. تا چند دقیقه دیگر، رضا!
-- À demain, madame ! Et encore désolé. | تا فردا، خانم! باز هم ببخشید.
-+ À tout à l'heure, madame ! Et encore désolé. | تا چند دقیقه دیگر، خانم! باز هم ببخشید.
-- Bonne nuit, madame ! Et encore désolé. | شب بخیر، خانم! باز هم ببخشید.
++ Merci beaucoup, monsieur. C'est{être} très gentil. | خیلی ممنون، آقا. لطف دارید.
+- Merci beaucoup, monsieur. Tu es très gentil. | خیلی ممنون، آقا. تو خیلی مهربانی.
+- Merci beaucoup, monsieur. Je suis{être} très gentille. | خیلی ممنون، آقا. من خیلی مهربانم.
+why: «C'est très gentil» یعنی «لطف دارید». با استاد tu نمی‌گوییم، و «Je suis très gentille» از خودت تعریف می‌کند.
+B: De rien. À tout à l'heure, Sara ! | خواهش می‌کنم. تا چند دقیقه دیگر، سارا!
+- À demain, monsieur ! Et encore désolée. | تا فردا، آقا! باز هم ببخشید.
++ À tout à l'heure, monsieur ! Et encore désolée. | تا چند دقیقه دیگر، آقا! باز هم ببخشید.
+- Bonne nuit, monsieur ! Et encore désolée. | شب بخیر، آقا! باز هم ببخشید.
 why: تا بیست دقیقه دیگر استاد را می‌بینی، پس «À tout à l'heure»، نه «À demain». صبح است و «Bonne nuit» جا ندارد.

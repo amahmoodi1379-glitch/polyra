@@ -1,8 +1,8 @@
 code: de-a2-d009
 title: دعوت دوست به مهمانی
-situation: به دوستت یوناس زنگ می‌زنی تا او را به جشن تولدت دعوت کنی.
+situation: به دوستت میا زنگ می‌زنی تا او را به جشن تولدت دعوت کنی.
 turns:
-B: Hallo, Sara! Wie geht's? | سلام سارا! چطوری؟
+B: Hallo, Reza! Wie geht's? | سلام رضا! چطوری؟
 + Gut, danke{danke}! Ich feiere am Samstag Geburtstag. Hast du Zeit? | خوبم، ممنون! شنبه تولدم را جشن می‌گیرم. وقت داری؟
 - Gut, danke{danke}! Ich feiere am Samstag Geburtstag. Haben Sie Zeit? | خوبم، ممنون! شنبه تولدم را جشن می‌گیرم. وقت دارید؟
 - Gut, danke{danke}! Am Samstag ich feiere Geburtstag. Hast du Zeit? | خوبم، ممنون! شنبه تولدم را جشن می‌گیرم. وقت داری؟
@@ -26,9 +26,9 @@ B: Oh, schade. Und wie ist deine Adresse noch mal? | آخ، حیف. آدرست �
 - Ich weiß deine Adresse nicht. | آدرس تو را نمی‌دانم.
 - Ich schreibe dich eine Nachricht mit der Adresse. | یک پیام با آدرس برایت می‌نویسم.
 + Ich schreibe dir eine Nachricht mit der Adresse. | یک پیام با آدرس برایت می‌نویسم.
-why: «برای تو» اینجا dir است، نه dich: «Ich schreibe dir». یوناس آدرس تو را می‌پرسد، نه تو آدرس او را.
+why: «برای تو» اینجا dir است، نه dich: «Ich schreibe dir». میا آدرس تو را می‌پرسد، نه تو آدرس او را.
 B: Super, danke{danke}! Dann bis Samstag! | عالی، ممنون! پس تا شنبه!
 - Bis Samstag! Herzlichen Glückwunsch! | تا شنبه! تبریک می‌گویم!
 + Bis Samstag! Ich freue mich! | تا شنبه! خوشحالم!
 - Bis Samstag! Ich freue dich! | تا شنبه! تو را خوشحال می‌کنم!
-why: «Ich freue mich» یعنی خوشحالم؛ با ich ضمیر mich می‌آید، نه dich. تولد مال توست، پس تو به یوناس تبریک نمی‌گویی.
+why: «Ich freue mich» یعنی خوشحالم؛ با ich ضمیر mich می‌آید، نه dich. تولد مال توست، پس تو به میا تبریک نمی‌گویی.

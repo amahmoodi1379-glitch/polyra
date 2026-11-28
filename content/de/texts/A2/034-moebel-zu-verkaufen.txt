@@ -17,7 +17,7 @@ B: Ja, gern. Ich schicke Ihnen die Adresse. | بله، حتماً. آدرس را
 A: Danke, bis Samstag! | ممنون، تا شنبه!
 reading A:
 {"type":"mcq","prompt":"تیم چرا زنگ می‌زند؟","options":["می‌خواهد آپارتمانی اجاره کند","می‌خواهد اثاثیهٔ خودش را بفروشد","می‌خواهد اثاثیه بخرد","می‌خواهد به این خانم کمک کند"],"correct":2,"explanation_fa":"تیم می‌گوید: «Ich suche einen Schreibtisch und ein Regal für mein Zimmer.»"}
-{"type":"tf","prompt":"این اثاثیه مال پدر خانم بوده است.","correct":true,"explanation_fa":"خانم می‌گوید: «Die Möbel haben meinem Vater gehört{gehören}.»"}
+{"type":"tf","prompt":"این اثاثیه مال پدر خانم بوده است.","correct":true,"explanation_fa":"خانم می‌گوید: «Die Möbel haben meinem Vater gehört.»"}
 {"type":"tf","prompt":"تیم دنبال یک کمد و یک مبل است.","correct":false,"explanation_fa":"تیم می‌گوید: «Ich suche einen Schreibtisch und ein Regal»، یعنی یک میز تحریر و یک قفسه."}
 reading B:
 {"type":"find","prompt":"کدام جمله می‌گوید اتاق تیم بزرگ نیست؟","correct_sentence":6,"explanation_fa":"تیم می‌گوید: «Mein Zimmer ist ziemlich klein.»"}

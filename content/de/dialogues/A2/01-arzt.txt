@@ -2,7 +2,7 @@ code: de-a2-d001
 title: در مطب دکتر
 situation: حالت خوب نیست و پیش دکتر رفته‌ای. دکتر می‌پرسد چه مشکلی داری.
 turns:
-B: Guten Tag, Frau Karimi. Was kann ich für Sie tun{tun}? | روز بخیر خانم کریمی. چه کاری می‌توانم برایتان بکنم؟
+B: Guten Tag, Herr Karimi. Was kann ich für Sie tun{tun}? | روز بخیر آقای کریمی. چه کاری می‌توانم برایتان بکنم؟
 + Ich bin krank. Ich habe Kopfschmerzen und Fieber. | مریضم. سردرد و تب دارم.
 - Ich habe krank. Ich habe Kopfschmerzen und Fieber. | مریض دارم. سردرد و تب دارم.
 - Ich bin gesund. Ich habe Kopfschmerzen und Fieber. | سالمم. سردرد و تب دارم.
@@ -32,7 +32,7 @@ B: Eine Woche. Und bleiben Sie zwei Tage zu Hause. | یک هفته. دو روز 
 - Gut, ich gehe morgen zur Arbeit. | باشه، فردا سر کار می‌روم.
 + Gut, das mache ich. | باشه، همین کار را می‌کنم.
 why: «Gut, das mache ich» یعنی قبول داری. با ich شکل mache می‌آید، نه macht، و دکتر گفت در خانه بمانی، نه این‌که سر کار بروی.
-B: Gute Besserung, Frau Karimi! | زودتر خوب شوید، خانم کریمی!
+B: Gute Besserung, Herr Karimi! | زودتر خوب شوید، آقای کریمی!
 + Danke schön! Auf Wiedersehen! | خیلی ممنون! خداحافظ!
 - Danke{danke}, Ihnen auch! | ممنون، شما هم!
 - Danke{danke}! Herzlichen Glückwunsch! | ممنون! تبریک می‌گویم!

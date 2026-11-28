@@ -678,6 +678,13 @@ describe("find the mistake, writing and A2 texts in a pack", () => {
     expect(kind.errors.map((item) => item.text)).toContain("kind «menu» is not a kind of band 2");
   });
 
+  it("refuses a reading mark inside a question, where the learner would see it", () => {
+    const analyzer = analyzerOf("fr", pack.words);
+    const file = ["code: fr-a2-t001", "title: La maison", "band: 1", "kind: menu", "sentences:", "- La maison est petite. | خانه کوچک است.", "reading A:", '{"type":"tf","prompt":"خانه کوچک است.","correct":true,"explanation_fa":"متن می‌گوید: «La maison est{être} petite.»"}'].join("\n");
+    const errors = buildTexts(analyzer, [{ file: "t.txt", text: file }], "A2").errors.map((item) => item.text);
+    expect(errors).toContain("a question shows the mark «est{être}»: write the word without {…}");
+  });
+
   it("reads a speaker only from a letter before the colon, never from a time (9:30)", () => {
     const analyzer = analyzerOf("fr", pack.words);
     const dialogue = (line: string) => ["code: fr-a2-t001", "title: La maison", "band: 1", "kind: dialogue", "sentences:", line].join("\n");
