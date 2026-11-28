@@ -1,0 +1,34 @@
+code: fr-a2-t096
+title: Un livre pour Emma
+band: 2
+kind: phone_call
+sentences:
+A: Allô, Thomas ? C'est maman. Je suis à la librairie. | الو، توما؟ مامانم. توی کتاب‌فروشی هستم.
+B: Ah ! Pour le cadeau d'Emma ? | آها! برای کادوی اِما؟
+A: Oui. J'ai trouvé deux livres sur les animaux, et je voudrais ton avis. | آره. دو تا کتاب دربارهٔ حیوان‌ها پیدا کرده‌ام و نظرت را می‌خواهم.
+A: Il y a celui sur les ours et les loups, avec de très belles photos. | یکی دربارهٔ خرس‌ها و گرگ‌هاست، با عکس‌های خیلی قشنگ.
+A: Et il y a celui sur les insectes, surtout les papillons. | یکی هم دربارهٔ حشره‌هاست، مخصوصاً پروانه‌ها.
+B: Emma a déjà un livre sur les insectes : celui que tu lui as offert à Noël ! | اِما یک کتاب دربارهٔ حشره‌ها دارد: همانی که کریسمس به او هدیه دادی!
+A: Ah oui, c'est vrai ! Alors, je prends celui sur les ours ? | آه، راست می‌گویی! پس کتاب خرس‌ها را بخرم؟
+B: Oui, mais attention : Emma a très peur des{des-contr} serpents ! | آره، ولی حواست باشد: اِما از مار خیلی می‌ترسد!
+A: Ne t'inquiète pas, il n'y en a pas dans ce livre. | نگران نباش، توی این کتاب مار نیست.
+A: Je prends aussi une carte avec un petit éléphant. | یک کارت با یک فیل کوچولو هم می‌خرم.
+B: Parfait, elle adore les éléphants ! Merci, maman. | عالی، عاشق فیل‌هاست! مرسی، مامان.
+reading A:
+{"type":"mcq","prompt":"مادر توما در کتاب‌فروشی چه کار می‌کند؟","options":["برای خودش یک کتاب می‌خرد","برای اِما کادو انتخاب می‌کند","کتاب‌های قدیمی‌اش را می‌فروشد","برای کریسمس کارت می‌فرستد"],"correct":1,"explanation_fa":"توما می‌پرسد: «Pour le cadeau d'Emma ?» و مادرش می‌گوید: «Oui.»؛ یعنی برای اِما کادو انتخاب می‌کند."}
+{"type":"tf","prompt":"اِما از قبل یک کتاب دربارهٔ حشره‌ها دارد.","correct":true,"explanation_fa":"توما می‌گوید: «Emma a déjà un livre sur les insectes»، یعنی اِما یک کتاب دربارهٔ حشره‌ها دارد."}
+{"type":"tf","prompt":"اِما از مار نمی‌ترسد.","correct":false,"explanation_fa":"توما می‌گوید: «Emma a très peur des serpents !»، یعنی اِما از مار خیلی می‌ترسد."}
+{"type":"find","prompt":"کدام جمله می‌گوید کتاب حشره‌های اِما کادوی چه کسی بوده است؟","correct_sentence":5,"explanation_fa":"توما می‌گوید: «celui que tu lui as offert à Noël !»، یعنی همانی که کریسمس به او هدیه دادی."}
+reading B:
+{"type":"match","prompt":"هر چیز را به موضوعش وصل کن.","left":["کتاب اول","کتاب دوم","کارت"],"right":["یک فیل کوچولو","خرس‌ها و گرگ‌ها","حشره‌ها و پروانه‌ها","میمون‌ها و مارها"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"مادر توما می‌گوید: «celui sur les ours et les loups»، «celui sur les insectes, surtout les papillons» و «une carte avec un petit éléphant»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Il y a celui sur les {{1}} et les loups, avec de très belles {{2}}.","bank":["ours","photos","papillons","cartes","éléphants"],"answers":["ours","photos"],"explanation_fa":"مادر توما می‌گوید: «Il y a celui sur les ours et les loups, avec de très belles photos.»"}
+{"type":"mcq","prompt":"آخر کدام کتاب را برای اِما می‌خرند؟","options":["کتاب حشره‌ها","کتاب مارها","کتاب پروانه‌ها","کتاب خرس‌ها و گرگ‌ها"],"correct":3,"explanation_fa":"مادر توما می‌پرسد: «je prends celui sur les ours ?» و توما جواب می‌دهد: «Oui»."}
+listening A:
+{"type":"mcq","prompt":"مادر توما چرا زنگ می‌زند؟","options":["کتابی را که خریده گم کرده است","می‌خواهد بداند اِما کی به خانه‌اش می‌آید","نظر توما را برای کادوی اِما می‌خواهد","می‌خواهد توما او را به کتاب‌فروشی ببرد"],"correct":2,"explanation_fa":"مادر توما می‌گوید: «J'ai trouvé deux livres sur les animaux, et je voudrais ton avis.»، یعنی دو کتاب پیدا کرده‌ام و نظرت را می‌خواهم."}
+{"type":"tf","prompt":"اِما عاشق فیل‌هاست.","correct":true,"explanation_fa":"توما می‌گوید: «elle adore les éléphants !»، یعنی عاشق فیل‌هاست."}
+{"type":"tf","prompt":"کتاب خرس‌ها عکس‌های قشنگی ندارد.","correct":false,"explanation_fa":"مادر توما دربارهٔ این کتاب می‌گوید: «avec de très belles photos»، یعنی با عکس‌های خیلی قشنگ."}
+listening B:
+{"type":"mcq","prompt":"اِما از چه حیوانی خیلی می‌ترسد؟","options":["از گرگ","از خرس","از مار","از پروانه"],"correct":2,"explanation_fa":"توما می‌گوید: «Emma a très peur des serpents !»، یعنی اِما از مار خیلی می‌ترسد."}
+{"type":"mcq","prompt":"کتاب حشره‌هایی که اِما دارد، کادوی کدام روز بوده است؟","options":["روز تولدش","کریسمس","عید پاک","روز آخر مدرسه"],"correct":1,"explanation_fa":"توما می‌گوید: «celui que tu lui as offert à Noël !»، یعنی همانی که کریسمس به او هدیه دادی."}
+{"type":"tf","prompt":"مادر توما یک کارت هم می‌خرد.","correct":true,"explanation_fa":"مادر توما می‌گوید: «Je prends aussi une carte avec un petit éléphant.»، یعنی یک کارت با یک فیل کوچولو هم می‌خرم."}
+{"type":"tf","prompt":"توما می‌گوید کتاب حشره‌ها را بخرند.","correct":false,"explanation_fa":"توما می‌گوید: «Emma a déjà un livre sur les insectes»، یعنی اِما کتاب حشره‌ها را دارد؛ برای همین کتاب خرس‌ها را انتخاب می‌کنند."}

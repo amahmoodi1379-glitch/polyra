@@ -1,0 +1,34 @@
+code: fr-a2-t103
+title: Une table ronde
+band: 2
+kind: phone_call
+sentences:
+A: Bonjour monsieur. J'ai vu une table ronde en bois clair sur votre site. Vous l'{la-pron}avez encore ? | سلام آقا. یک میز گرد از چوب روشن در سایت شما دیدم. هنوز آن را دارید؟
+B: Oui, madame. Elle fait 1 mètre 20 et c'est pour quatre personnes. | بله خانم. یک متر و بیست سانت است و برای چهار نفر است. | tts: Oui, madame. Elle fait un mètre vingt et c'est pour quatre personnes.
+B: Nous avons aussi une table carrée, un peu plus petite. | یک میز مربع هم داریم، کمی کوچک‌تر.
+A: Non, je préfère la ronde. Vous auriez aussi des chaises confortables ? | نه، گرد را ترجیح می‌دهم. صندلی راحت هم دارید؟
+B: Oui, en bois clair ou en bois foncé. | بله، از چوب روشن یا چوب تیره.
+A: Clair, comme la table. Vous pourriez tout apporter chez moi samedi ? | روشن، مثل میز. می‌توانید شنبه همه را به خانه‌ام بیاورید؟
+B: Désolé, samedi, c'est complet. Mardi, ce serait possible ? | متأسفم، شنبه برنامه‌مان پر است. سه‌شنبه می‌شود؟
+A: Mardi, d'accord. Mais attention : l'escalier de mon immeuble est très étroit. | سه‌شنبه، باشه. ولی دقت کنید: راه‌پلهٔ ساختمانم خیلی باریک است.
+B: Pas de problème. La table n'est pas très large, et nos employés montent lentement ! | مشکلی نیست. میز خیلی پهن نیست و کارگرهای ما آهسته بالا می‌روند!
+A: Parfait, merci beaucoup ! | عالی، خیلی ممنون!
+B: Je vous en prie, madame. | خواهش می‌کنم، خانم.
+reading A:
+{"type":"mcq","prompt":"زن چه چیزهایی می‌خواهد بخرد؟","options":["یک میز مربع و یک مبل","یک میز تیره برای آشپزخانه","یک میز گرد و چند صندلی","چند صندلی بدون میز"],"correct":2,"explanation_fa":"زن می‌گوید: «J'ai vu une table ronde» و بعد می‌پرسد: «Vous auriez aussi des chaises confortables ?»"}
+{"type":"tf","prompt":"میز گرد برای چهار نفر است.","correct":true,"explanation_fa":"فروشنده می‌گوید: «c'est pour quatre personnes»، یعنی برای چهار نفر است."}
+{"type":"tf","prompt":"زن صندلی‌هایی از چوب تیره انتخاب می‌کند.","correct":false,"explanation_fa":"زن می‌گوید: «Clair, comme la table.»، یعنی صندلی‌ها از چوب روشن باشند، مثل میز."}
+{"type":"find","prompt":"کدام جمله می‌گوید راه‌پلهٔ ساختمان زن باریک است؟","correct_sentence":7,"explanation_fa":"زن می‌گوید: «l'escalier de mon immeuble est très étroit»، یعنی راه‌پلهٔ ساختمانم خیلی باریک است."}
+reading B:
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"La table n'est pas très {{1}}, et nos employés montent {{2}} !","bank":["large","lentement","étroite","complet","confortable"],"answers":["large","lentement"],"explanation_fa":"فروشنده می‌گوید: «La table n'est pas très large, et nos employés montent lentement !»"}
+{"type":"mcq","prompt":"چرا فروشنده شنبه نمی‌تواند میز را بیاورد؟","options":["چون میز هنوز آماده نیست","چون زن شنبه خانه نیست","چون شنبه فروشگاه بسته است","چون برنامهٔ شنبه پر است"],"correct":3,"explanation_fa":"فروشنده می‌گوید: «Désolé, samedi, c'est complet.»، یعنی متأسفم، شنبه برنامه‌مان پر است."}
+{"type":"match","prompt":"هر چیز را به چیزی که در گفتگو دربارهٔ آن گفته می‌شود وصل کن.","left":["میز گرد","صندلی‌ها","راه‌پله"],"right":["خیلی باریک است","یک متر و بیست سانت است","راحت و از چوب روشن هستند","خیلی پهن است"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"فروشنده می‌گوید: «Elle fait 1 mètre 20»، زن دربارهٔ صندلی‌ها «des chaises confortables» و «Clair» را می‌گوید و «l'escalier … est très étroit»."}
+listening A:
+{"type":"mcq","prompt":"فروشنده کدام روز وسایل را می‌آورد؟","options":["شنبه","سه‌شنبه","دوشنبه","جمعه"],"correct":1,"explanation_fa":"فروشنده می‌پرسد: «Mardi, ce serait possible ?» و زن می‌گوید: «Mardi, d'accord.»، یعنی سه‌شنبه."}
+{"type":"tf","prompt":"فروشگاه یک میز مربع کوچک‌تر هم دارد.","correct":true,"explanation_fa":"فروشنده می‌گوید: «Nous avons aussi une table carrée, un peu plus petite.»، یعنی یک میز مربع کمی کوچک‌تر هم داریم."}
+{"type":"tf","prompt":"فروشنده می‌گوید میز خیلی پهن است.","correct":false,"explanation_fa":"فروشنده می‌گوید: «La table n'est pas très large»، یعنی میز خیلی پهن نیست."}
+listening B:
+{"type":"num","prompt":"میز گرد برای چند نفر است؟","answer":"4","accepted":["4","quatre"],"explanation_fa":"فروشنده می‌گوید: «c'est pour quatre personnes»، یعنی برای چهار نفر است."}
+{"type":"mcq","prompt":"زن صندلی‌ها را چطور می‌خواهد؟","options":["از چوب روشن","از چوب تیره","از فلز سیاه","از پلاستیک سفید"],"correct":0,"explanation_fa":"زن می‌گوید: «Clair, comme la table.»، یعنی از چوب روشن، مثل میز."}
+{"type":"tf","prompt":"زن میز گرد را به میز مربع ترجیح می‌دهد.","correct":true,"explanation_fa":"زن می‌گوید: «Non, je préfère la ronde.»، یعنی نه، گرد را ترجیح می‌دهم."}
+{"type":"tf","prompt":"کارگرهای فروشگاه تند از پله بالا می‌روند.","correct":false,"explanation_fa":"فروشنده می‌گوید: «nos employés montent lentement !»، یعنی کارگرهای ما آهسته بالا می‌روند."}

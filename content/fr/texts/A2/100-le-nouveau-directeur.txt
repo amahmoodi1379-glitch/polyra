@@ -1,0 +1,26 @@
+code: fr-a2-t100
+title: Le nouveau directeur
+band: 1
+kind: voice_message
+sentences:
+- Salut Hugo, c'est Camille. | سلام هوگو، کامی هستم.
+- La réunion recommence à 14 heures. | جلسه ساعت ۱۴ دوباره شروع می‌شود. | tts: La réunion recommence à quatorze heures.
+- Il manque deux chaises : tu peux en apporter ? | دو تا صندلی کم داریم: می‌توانی چند تا بیاوری؟
+- Le nouveau directeur est très sympa. | مدیر جدید خیلی خوش‌برخورد است.
+- Ce matin, il a salué tout le monde et il nous a serré la main. | امروز صبح به همه سلام کرد و با ما دست داد.
+- Je crois qu'on va bien{bien} s'entendre avec lui ! | فکر می‌کنم با او خوب کنار می‌آییم!
+- Je te rejoins devant l'ascenseur dans dix minutes. | ده دقیقهٔ دیگر جلوی آسانسور پیشت می‌آیم.
+reading A:
+{"type":"mcq","prompt":"کامی برای چه پیغام گذاشته است؟","options":["تا هوگو را به ناهار دعوت کند","تا ساعت جلسه را بگوید و صندلی بخواهد","تا بگوید مدیر جدید امروز نمی‌آید","تا از هوگو برای خرید کمک بخواهد"],"correct":1,"explanation_fa":"کامی می‌گوید: «La réunion recommence à 14 heures.» و «Il manque deux chaises : tu peux en apporter ?»"}
+{"type":"tf","prompt":"مدیر جدید با کامی و همکارهایش دست داد.","correct":true,"explanation_fa":"کامی می‌گوید: «il nous a serré la main»، یعنی با ما دست داد."}
+{"type":"tf","prompt":"جلسه ساعت ۱۰ دوباره شروع می‌شود.","correct":false,"explanation_fa":"کامی می‌گوید: «La réunion recommence à 14 heures.»، یعنی جلسه ساعت چهارده دوباره شروع می‌شود."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید برای جلسه چه چیزی کم است؟","correct_sentence":2,"explanation_fa":"کامی می‌گوید: «Il manque deux chaises»، یعنی دو تا صندلی کم داریم."}
+{"type":"mcq","prompt":"کامی دربارهٔ مدیر جدید چه فکر می‌کند؟","options":["که خیلی سخت‌گیر است","که خیلی کم حرف می‌زند","که همیشه دیر می‌آید","که با او خوب کنار می‌آیند"],"correct":3,"explanation_fa":"کامی می‌گوید: «Je crois qu'on va bien s'entendre avec lui !»، یعنی فکر می‌کنم با او خوب کنار می‌آییم."}
+listening A:
+{"type":"num","prompt":"جلسه ساعت چند دوباره شروع می‌شود؟","answer":"14","accepted":["14","14h","quatorze"],"explanation_fa":"می‌شنویم: «La réunion recommence à 14 heures.»، یعنی ساعت چهارده."}
+{"type":"mcq","prompt":"کامی کجا پیش هوگو می‌آید؟","options":["توی دفتر مدیر","جلوی در ساختمان","جلوی آسانسور","توی آشپزخانه"],"correct":2,"explanation_fa":"کامی می‌گوید: «Je te rejoins devant l'ascenseur»، یعنی جلوی آسانسور پیشت می‌آیم."}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"tf","prompt":"امروز صبح مدیر جدید به همه سلام کرد.","correct":true,"explanation_fa":"می‌شنویم: «Ce matin, il a salué tout le monde»، یعنی امروز صبح به همه سلام کرد."}
+{"type":"tf","prompt":"کامی یک ساعت دیگر پیش هوگو می‌آید.","correct":false,"explanation_fa":"می‌شنویم: «dans dix minutes»، یعنی ده دقیقهٔ دیگر، نه یک ساعت دیگر."}

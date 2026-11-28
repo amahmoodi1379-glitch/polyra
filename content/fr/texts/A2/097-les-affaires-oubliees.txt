@@ -1,0 +1,34 @@
+code: fr-a2-t097
+title: Les affaires oubliées
+band: 2
+kind: email
+sentences:
+- Bonjour à tous, | سلام به همه،
+- Chaque semaine, les élèves oublient beaucoup d'affaires à l'école : pulls, vestes, bonnets et gants. | هر هفته بچه‌ها کلی وسیله در مدرسه جا می‌گذارند: پلیور، کت، کلاه و دستکش.
+- Les enfants ont l'habitude de jouer dans la cour sans leur pull. | بچه‌ها عادت دارند بدون پلیور توی حیاط بازی کنند.
+- Aujourd'hui, nous avons plus de cent objets ! | الان بیشتر از صد وسیلهٔ جامانده داریم!
+- Beaucoup de vestes se ressemblent, et les enfants ne voient pas la différence. | خیلی از کت‌ها شبیه هم هستند و بچه‌ها فرقشان را نمی‌فهمند.
+- Nous avons une solution simple : écrivez le nom de votre enfant dans ses vêtements. | ما یک راه‌حل ساده داریم: اسم بچه‌تان را توی لباس‌هایش بنویسید.
+- Vendredi, de 16 heures à 18 heures, venez chercher les affaires de vos enfants dans la cour. | جمعه از ساعت ۱۶ تا ۱۸ بیایید و وسایل بچه‌هایتان را از حیاط ببرید. | tts: Vendredi, de seize heures à dix-huit heures, venez chercher les affaires de vos enfants dans la cour.
+- Après le 30 juin, nous n'aurons pas le choix : nous donnerons les vêtements à des familles du{du-contr} quartier. | بعد از ۳۰ ژوئن چاره‌ای نداریم: لباس‌ها را به خانواده‌های محله می‌دهیم. | tts: Après le trente juin, nous n'aurons pas le choix : nous donnerons les vêtements à des familles du quartier.
+- Merci pour votre aide ! | از کمکتان ممنونیم!
+- Anne Dubois, directrice de l'école | آن دوبوا، مدیر مدرسه
+reading A:
+{"type":"mcq","prompt":"این ایمیل دربارهٔ چیست؟","options":["فروش لباس در حیاط مدرسه","وسایلی که بچه‌ها در مدرسه جا می‌گذارند","جشن آخر سال در حیاط مدرسه","بازی‌های تازهٔ بچه‌ها در حیاط"],"correct":1,"explanation_fa":"مدیر مدرسه می‌نویسد: «les élèves oublient beaucoup d'affaires à l'école»، یعنی بچه‌ها کلی وسیله در مدرسه جا می‌گذارند."}
+{"type":"tf","prompt":"مدرسه الان بیشتر از صد وسیلهٔ جامانده دارد.","correct":true,"explanation_fa":"مدیر مدرسه می‌نویسد: «nous avons plus de cent objets !»، یعنی بیشتر از صد وسیله داریم."}
+{"type":"tf","prompt":"بچه‌ها به‌راحتی کت خودشان را پیدا می‌کنند.","correct":false,"explanation_fa":"مدیر مدرسه می‌نویسد: «Beaucoup de vestes se ressemblent, et les enfants ne voient pas la différence.»، یعنی خیلی از کت‌ها شبیه هم هستند و بچه‌ها فرقشان را نمی‌فهمند."}
+{"type":"find","prompt":"کدام جمله راه‌حل مدرسه را می‌گوید؟","correct_sentence":5,"explanation_fa":"مدیر مدرسه می‌نویسد: «Nous avons une solution simple : écrivez le nom de votre enfant dans ses vêtements.»، یعنی اسم بچه‌تان را توی لباس‌هایش بنویسید."}
+reading B:
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Beaucoup de vestes se {{1}}, et les enfants ne voient pas la {{2}}.","bank":["ressemblent","différence","solution","oublient","cour"],"answers":["ressemblent","différence"],"explanation_fa":"مدیر مدرسه می‌نویسد: «Beaucoup de vestes se ressemblent, et les enfants ne voient pas la différence.»"}
+{"type":"mcq","prompt":"مدرسه بعد از ۳۰ ژوئن با لباس‌ها چه کار می‌کند؟","options":["آن‌ها را دور می‌اندازد","آن‌ها را در حیاط می‌فروشد","آن‌ها را به کلاس‌ها می‌برد","آن‌ها را به خانواده‌های محله می‌دهد"],"correct":3,"explanation_fa":"مدیر مدرسه می‌نویسد: «nous donnerons les vêtements à des familles du quartier»، یعنی لباس‌ها را به خانواده‌های محله می‌دهیم."}
+{"type":"order","prompt":"این‌ها را به ترتیب ایمیل بچین.","items":["راه‌حل مدرسه","وسایلی که بچه‌ها جا می‌گذارند","روز و ساعت بردن وسایل","تشکر برای کمک"],"correct_order":[1,0,2,3],"explanation_fa":"اول «les élèves oublient beaucoup d'affaires»، بعد «une solution simple»، بعد «Vendredi, de 16 heures à 18 heures» و آخر «Merci pour votre aide !»."}
+listening A:
+{"type":"mcq","prompt":"بچه‌ها عادت دارند چه کار کنند؟","options":["کیفشان را در کلاس جا بگذارند","با دستکش توی حیاط بازی کنند","بدون پلیور توی حیاط بازی کنند","اسمشان را روی لباس بنویسند"],"correct":2,"explanation_fa":"می‌شنویم: «Les enfants ont l'habitude de jouer dans la cour sans leur pull.»، یعنی بچه‌ها عادت دارند بدون پلیور توی حیاط بازی کنند."}
+{"type":"num","prompt":"جمعه پدر و مادرها تا ساعت چند می‌توانند بیایند؟","answer":"18","accepted":["18","18h","dix-huit"],"explanation_fa":"می‌شنویم: «Vendredi, de 16 heures à 18 heures»، یعنی جمعه از ساعت شانزده تا هجده."}
+{"type":"tf","prompt":"مدیر مدرسه می‌خواهد اسم بچه‌ها توی لباس‌هایشان نوشته شود.","correct":true,"explanation_fa":"می‌شنویم: «écrivez le nom de votre enfant dans ses vêtements»، یعنی اسم بچه‌تان را توی لباس‌هایش بنویسید."}
+{"type":"tf","prompt":"پدر و مادرها باید وسایل را از دفتر مدیر بگیرند.","correct":false,"explanation_fa":"می‌شنویم: «venez chercher les affaires de vos enfants dans la cour»، یعنی وسایل را از حیاط ببرید، نه از دفتر مدیر."}
+listening B:
+{"type":"num","prompt":"مدرسه تا چندم ژوئن صبر می‌کند؟","answer":"30","accepted":["30","trente"],"explanation_fa":"می‌شنویم: «Après le 30 juin, nous n'aurons pas le choix»، یعنی بعد از سی‌ام ژوئن چاره‌ای نداریم."}
+{"type":"mcq","prompt":"جمعه وسایل بچه‌ها کجاست؟","options":["در حیاط مدرسه","در دفتر مدیر","در کلاس بچه‌ها","جلوی در مدرسه"],"correct":0,"explanation_fa":"می‌شنویم: «venez chercher les affaires de vos enfants dans la cour»، یعنی وسایل بچه‌هایتان را از حیاط ببرید."}
+{"type":"tf","prompt":"بچه‌ها هر هفته وسایل زیادی در مدرسه جا می‌گذارند.","correct":true,"explanation_fa":"می‌شنویم: «Chaque semaine, les élèves oublient beaucoup d'affaires à l'école»، یعنی هر هفته بچه‌ها کلی وسیله در مدرسه جا می‌گذارند."}
+{"type":"tf","prompt":"کت‌های بچه‌ها با هم خیلی فرق دارند.","correct":false,"explanation_fa":"می‌شنویم: «Beaucoup de vestes se ressemblent»، یعنی خیلی از کت‌ها شبیه هم هستند."}

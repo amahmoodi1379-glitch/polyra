@@ -1,0 +1,35 @@
+code: fr-a2-t104
+title: Une nuit horrible
+band: 2
+kind: email
+sentences:
+- Madame, Monsieur, | خانم محترم، آقای محترم،
+- Mon mari et moi avons passé deux nuits dans votre hôtel en mai. | من و همسرم در ماه مه دو شب در هتل شما ماندیم.
+- L'hôtel est neuf{neuf-adj}, et de notre chambre, on voit la mer : c'est magnifique ! | هتل نوساز است و از اتاقمان دریا پیداست: فوق‌العاده است!
+- Mais la chambre est juste à côté de la terrasse du{du-contr} restaurant, et elle est très bruyante. | ولی اتاق درست کنار تراس رستوران است و خیلی پرسروصداست.
+- La première nuit, il y avait de la musique jusqu'à minuit. | شب اول تا نیمه‌شب موسیقی بود.
+- La deuxième nuit, c'était pire : une énorme fête, avec de la musique jusqu'à trois heures du{du-contr} matin ! | شب دوم بدتر بود: یک جشن خیلی بزرگ، با موسیقی تا ساعت سه صبح!
+- Nous n'avons pas dormi : c'était horrible. | ما نخوابیدیم: وحشتناک بود.
+- Nous avons demandé une autre chambre, mais l'hôtel était complet. | یک اتاق دیگر خواستیم، ولی هتل پر بود.
+- Nous aimerions une réduction sur le prix de la deuxième nuit. | خواهش می‌کنیم برای شب دوم به ما تخفیف بدهید.
+- Ce n'est pas urgent, mais nous attendons votre réponse. | فوری نیست، ولی منتظر جوابتان هستیم.
+- Léa Dubois | لئا دوبوا
+reading A:
+{"type":"mcq","prompt":"لئا چرا این ایمیل را نوشته است؟","options":["تا یک اتاق برای ماه بعد رزرو کند","تا از سروصدای اتاقش شکایت کند","تا از غذای رستوران تشکر کند","تا بپرسد هتل کی باز می‌شود"],"correct":1,"explanation_fa":"لئا می‌نویسد: «elle est très bruyante»، «c'était horrible» و «Nous aimerions une réduction»؛ یعنی از سروصدای اتاق شکایت می‌کند."}
+{"type":"tf","prompt":"لئا و همسرش دو شب در هتل ماندند.","correct":true,"explanation_fa":"لئا می‌نویسد: «Mon mari et moi avons passé deux nuits dans votre hôtel»، یعنی من و همسرم دو شب در هتل شما ماندیم."}
+{"type":"tf","prompt":"هتل یک اتاق دیگر به آن‌ها داد.","correct":false,"explanation_fa":"لئا می‌نویسد: «Nous avons demandé une autre chambre, mais l'hôtel était complet.»، یعنی یک اتاق دیگر خواستیم، ولی هتل پر بود."}
+{"type":"find","prompt":"کدام جمله می‌گوید لئا و همسرش از هتل چه می‌خواهند؟","correct_sentence":8,"explanation_fa":"لئا می‌نویسد: «Nous aimerions une réduction sur le prix de la deuxième nuit.»، یعنی برای شب دوم تخفیف می‌خواهیم."}
+reading B:
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"La deuxième nuit, c'était {{1}} : une {{2}} fête, avec de la musique jusqu'à trois heures du matin !","bank":["pire","énorme","neuve","magnifique","urgente"],"answers":["pire","énorme"],"explanation_fa":"لئا می‌نویسد: «La deuxième nuit, c'était pire : une énorme fête»، یعنی شب دوم بدتر بود: یک جشن خیلی بزرگ."}
+{"type":"match","prompt":"هر کدام را به چیزی که لئا دربارهٔ آن می‌نویسد وصل کن.","left":["شب اول","شب دوم","اتاقشان"],"right":["دریا از آن پیداست","یک جشن خیلی بزرگ تا ساعت سه صبح","موسیقی تا نیمه‌شب","پارک شهر از آن پیداست"],"pairs":[[0,2],[1,1],[2,0]],"explanation_fa":"لئا می‌نویسد: «La première nuit … jusqu'à minuit»، «La deuxième nuit … une énorme fête … jusqu'à trois heures du matin» و «de notre chambre, on voit la mer»."}
+{"type":"mcq","prompt":"اتاق لئا کجاست؟","options":["بالای پارکینگ هتل","کنار آسانسور هتل","طبقهٔ آخر هتل","کنار تراس رستوران"],"correct":3,"explanation_fa":"لئا می‌نویسد: «la chambre est juste à côté de la terrasse du restaurant»، یعنی اتاق درست کنار تراس رستوران است."}
+listening A:
+{"type":"num","prompt":"جشن شب دوم تا ساعت چند بود؟","answer":"3","accepted":["3","3h","trois"],"explanation_fa":"می‌شنویم: «jusqu'à trois heures du matin»، یعنی تا ساعت سه صبح."}
+{"type":"tf","prompt":"هتل نوساز است.","correct":true,"explanation_fa":"می‌شنویم: «L'hôtel est neuf»، یعنی هتل نوساز است."}
+{"type":"tf","prompt":"لئا و همسرش شب دوم خوب خوابیدند.","correct":false,"explanation_fa":"می‌شنویم: «Nous n'avons pas dormi : c'était horrible.»، یعنی ما نخوابیدیم و وحشتناک بود."}
+{"type":"mcq","prompt":"لئا برای کدام شب تخفیف می‌خواهد؟","options":["شب اول","هر دو شب","شب دوم","شب سوم"],"correct":2,"explanation_fa":"می‌شنویم: «une réduction sur le prix de la deuxième nuit»، یعنی تخفیف برای قیمت شب دوم."}
+listening B:
+{"type":"num","prompt":"لئا و همسرش چند شب در هتل ماندند؟","answer":"2","accepted":["2","deux"],"explanation_fa":"می‌شنویم: «avons passé deux nuits dans votre hôtel»، یعنی دو شب در هتل شما ماندیم."}
+{"type":"mcq","prompt":"شب اول تا کی موسیقی بود؟","options":["تا ساعت ده","تا نیمه‌شب","تا ساعت سه صبح","تا صبح زود"],"correct":1,"explanation_fa":"می‌شنویم: «La première nuit, il y avait de la musique jusqu'à minuit.»، یعنی شب اول تا نیمه‌شب موسیقی بود."}
+{"type":"tf","prompt":"لئا می‌گوید جواب هتل فوری لازم است.","correct":false,"explanation_fa":"می‌شنویم: «Ce n'est pas urgent, mais nous attendons votre réponse.»، یعنی فوری نیست، ولی منتظر جوابتان هستیم."}
+{"type":"tf","prompt":"اتاقشان خیلی پرسروصداست.","correct":true,"explanation_fa":"می‌شنویم: «elle est très bruyante»، یعنی اتاق خیلی پرسروصداست."}

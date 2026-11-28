@@ -1,0 +1,35 @@
+code: fr-a2-t094
+title: Un week-end pour dessiner
+band: 2
+kind: schedule
+sentences:
+- Cours{cours} de dessin : un week-end à la campagne, les 14 et 15 juin | کلاس طراحی: یک آخر هفته بیرون شهر، ۱۴ و ۱۵ ژوئن | tts: Cours de dessin : un week-end à la campagne, les quatorze et quinze juin
+- Samedi, 8 heures : rendez-vous devant la gare. Un bus nous attend. | شنبه، ساعت ۸: قرار جلوی ایستگاه قطار. یک اتوبوس منتظر ماست. | tts: Samedi, huit heures : rendez-vous devant la gare. Un bus nous attend.
+- 10 heures : premier cours dans un champ, au milieu des{des-contr} moutons. | ساعت ۱۰: اولین کلاس در یک کشتزار، وسط گوسفندها. | tts: Dix heures : premier cours dans un champ, au milieu des moutons.
+- 12 heures 30 : pique-nique dans l'herbe. | ساعت ۱۲ و ۳۰ دقیقه: پیک‌نیک روی چمن. | tts: Douze heures trente : pique-nique dans l'herbe.
+- 14 heures : on dessine le paysage et les vieilles maisons en pierre du{du-contr} village. | ساعت ۱۴: منظره و خانه‌های سنگی قدیمی روستا را می‌کشیم. | tts: Quatorze heures : on dessine le paysage et les vieilles maisons en pierre du village.
+- Le soir : dîner et nuit à la ferme. | شب: شام و خواب در مزرعه.
+- Dimanche, 9 heures : dessin des{des-contr} plantes et des{des-contr} fleurs du{du-contr} jardin. | یکشنبه، ساعت ۹: طراحی گیاه‌ها و گل‌های باغ. | tts: Dimanche, neuf heures : dessin des plantes et des fleurs du jardin.
+- 11 heures : visite{visite} de la ferme, avec ses vaches et ses cochons. | ساعت ۱۱: بازدید از مزرعه، با گاوها و خوک‌هایش. | tts: Onze heures : visite de la ferme, avec ses vaches et ses cochons.
+- 15 heures : petite exposition de vos dessins dans la cour. | ساعت ۱۵: نمایشگاه کوچکی از نقاشی‌های شما در حیاط. | tts: Quinze heures : petite exposition de vos dessins dans la cour.
+- Prix : 120 euros, avec les repas, le papier et les crayons. | قیمت: ۱۲۰ یورو، با غذاها، کاغذ و مداد. | tts: Prix : cent vingt euros, avec les repas, le papier et les crayons.
+- Apportez un pull et de bonnes chaussures ! | یک پلیور و کفش مناسب بیاورید!
+reading A:
+{"type":"mcq","prompt":"این برنامه برای چیست؟","options":["یک سفر مدرسه به مزرعه","یک نمایشگاه نقاشی در شهر","یک آخر هفتهٔ طراحی بیرون شهر","یک کلاس آشپزی در روستا"],"correct":2,"explanation_fa":"در برنامه آمده: «Cours de dessin : un week-end à la campagne»، یعنی کلاس طراحی: یک آخر هفته بیرون شهر."}
+{"type":"tf","prompt":"شنبه ظهر روی چمن پیک‌نیک می‌کنند.","correct":true,"explanation_fa":"در برنامه آمده: «12 heures 30 : pique-nique dans l'herbe.»، یعنی ساعت دوازده و نیم پیک‌نیک روی چمن."}
+{"type":"tf","prompt":"شب در یک هتل در شهر می‌خوابند.","correct":false,"explanation_fa":"در برنامه آمده: «Le soir : dîner et nuit à la ferme.»، یعنی شام و خواب در مزرعه است، نه در هتل."}
+{"type":"find","prompt":"کدام جمله می‌گوید کاغذ و مداد هم در قیمت هست؟","correct_sentence":9,"explanation_fa":"در برنامه آمده: «Prix : 120 euros, avec les repas, le papier et les crayons.»، یعنی قیمت با غذاها، کاغذ و مداد است."}
+reading B:
+{"type":"match","prompt":"هر زمان را به برنامهٔ آن وصل کن.","left":["شنبه، ساعت ۱۰","شنبه، ساعت ۱۴","یکشنبه، ساعت ۹"],"right":["طراحی گیاه‌ها و گل‌ها","طراحی منظره و خانه‌های سنگی","کلاس در کشتزار، وسط گوسفندها","بازدید از موزهٔ روستا"],"pairs":[[0,2],[1,1],[2,0]],"explanation_fa":"در برنامه آمده: ساعت ۱۰ «premier cours dans un champ, au milieu des moutons»، ساعت ۱۴ «on dessine le paysage et les vieilles maisons en pierre» و یکشنبه ساعت ۹ «dessin des plantes et des fleurs»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"14 heures : on dessine le {{1}} et les vieilles maisons en {{2}} du village.","bank":["paysage","pierre","herbe","cochon","ferme"],"answers":["paysage","pierre"],"explanation_fa":"در برنامه آمده: «14 heures : on dessine le paysage et les vieilles maisons en pierre du village.»"}
+{"type":"mcq","prompt":"یکشنبه ساعت ۱۵ چه برنامه‌ای هست؟","options":["بازدید از مزرعه","نمایشگاه کوچکی از نقاشی‌ها","پیک‌نیک روی چمن","برگشتن با اتوبوس"],"correct":1,"explanation_fa":"در برنامه آمده: «15 heures : petite exposition de vos dessins dans la cour.»، یعنی نمایشگاه کوچکی از نقاشی‌های شما در حیاط."}
+listening A:
+{"type":"num","prompt":"این آخر هفته چند یورو است؟","answer":"120","accepted":["120","cent vingt","cent-vingt"],"explanation_fa":"می‌شنویم: «Prix : 120 euros»، یعنی قیمت صد و بیست یورو است."}
+{"type":"mcq","prompt":"شنبه صبح قرار کجاست؟","options":["جلوی مزرعه","توی کشتزار","جلوی مدرسه","جلوی ایستگاه قطار"],"correct":3,"explanation_fa":"می‌شنویم: «rendez-vous devant la gare»، یعنی قرار جلوی ایستگاه قطار است."}
+{"type":"tf","prompt":"یکشنبه از مزرعه و حیوان‌هایش بازدید می‌کنند.","correct":true,"explanation_fa":"می‌شنویم: «visite de la ferme, avec ses vaches et ses cochons»، یعنی بازدید از مزرعه، با گاوها و خوک‌هایش."}
+{"type":"tf","prompt":"کاغذ و مداد را باید خودشان بیاورند.","correct":false,"explanation_fa":"می‌شنویم: «120 euros, avec les repas, le papier et les crayons»؛ یعنی کاغذ و مداد در قیمت هست."}
+listening B:
+{"type":"num","prompt":"شنبه قرار ساعت چند است؟","answer":"8","accepted":["8","8h","huit"],"explanation_fa":"می‌شنویم: «Samedi, 8 heures : rendez-vous devant la gare.»، یعنی شنبه ساعت هشت."}
+{"type":"mcq","prompt":"چه چیزهایی را باید با خودشان بیاورند؟","options":["کاغذ و مداد","یک پلیور و کفش مناسب","غذا برای پیک‌نیک","یک دوربین عکاسی"],"correct":1,"explanation_fa":"می‌شنویم: «Apportez un pull et de bonnes chaussures !»، یعنی یک پلیور و کفش مناسب بیاورید."}
+{"type":"tf","prompt":"اولین کلاس توی یک کشتزار است.","correct":true,"explanation_fa":"می‌شنویم: «premier cours dans un champ»، یعنی اولین کلاس در یک کشتزار است."}
+{"type":"tf","prompt":"نمایشگاه نقاشی‌ها در شهر است.","correct":false,"explanation_fa":"می‌شنویم: «petite exposition de vos dessins dans la cour»، یعنی نمایشگاه در حیاط است، نه در شهر."}

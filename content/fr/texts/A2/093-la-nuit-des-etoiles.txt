@@ -1,0 +1,35 @@
+code: fr-a2-t093
+title: La Nuit des étoiles
+band: 2
+kind: phone_call
+sentences:
+A: Allô, Ali ? C'est Léa. Tu connais la Nuit des{des-contr} étoiles ? | الو، علی؟ لئا هستم. «شب ستاره‌ها» را می‌شناسی؟
+B: Non. Qu'est-ce que c'est ? | نه. چی هست؟
+A: C'est une fête en août : partout en France, on regarde le ciel. | جشنی است در ماه اوت: همه‌جای فرانسه آسمان را تماشا می‌کنند.
+A: Samedi, mon club organise une soirée près de la rivière, loin des{des-contr} lumières de la ville. | شنبه باشگاه من یک برنامهٔ شبانه نزدیک رودخانه دارد، دور از چراغ‌های شهر.
+B: Génial ! On pourra voir des planètes ? | محشر است! سیاره‌ها را هم می‌شود دید؟
+A: Oui, et la lune aussi. Un guide nous dira le nom des{des-contr} étoiles. | آره، ماه را هم. یک راهنما اسم ستاره‌ها را به ما می‌گوید.
+B: Moi, je ne connais pas le nom d'une seule étoile ! | من اسم حتی یک ستاره را هم نمی‌دانم!
+B: Tu sais, j'ai vu le plus beau ciel de ma vie dans le désert, en Iran. | می‌دانی، قشنگ‌ترین آسمان عمرم را در کویر، در ایران دیدم.
+A: Ah oui ? Tu me raconteras samedi ! Le rendez-vous est à 22 heures devant la gare. | جدی؟ شنبه برایم تعریف می‌کنی! قرارمان ساعت ۲۲ جلوی ایستگاه قطار است. | tts: Ah oui ? Tu me raconteras samedi ! Le rendez-vous est à vingt-deux heures devant la gare.
+A: Prends un pull : la nuit, il fait froid. | یک پلیور بردار: شب هوا سرد است.
+B: D'accord, à samedi ! | باشه، تا شنبه!
+reading A:
+{"type":"mcq","prompt":"لئا چرا به علی زنگ می‌زند؟","options":["تا از سفر علی به ایران بپرسد","تا علی را به تماشای آسمان در شب دعوت کند","تا ساعت حرکت قطار را از علی بپرسد","تا از علی یک پلیور قرض بگیرد"],"correct":1,"explanation_fa":"لئا از «la Nuit des étoiles» می‌گوید و بعد: «mon club organise une soirée près de la rivière»؛ یعنی علی را به یک برنامهٔ شبانه برای تماشای آسمان دعوت می‌کند."}
+{"type":"tf","prompt":"باشگاه لئا شنبه یک برنامهٔ شبانه نزدیک رودخانه دارد.","correct":true,"explanation_fa":"لئا می‌گوید: «Samedi, mon club organise une soirée près de la rivière»، یعنی شنبه باشگاهم یک برنامهٔ شبانه نزدیک رودخانه دارد."}
+{"type":"tf","prompt":"علی اسم خیلی از ستاره‌ها را می‌داند.","correct":false,"explanation_fa":"علی می‌گوید: «je ne connais pas le nom d'une seule étoile !»، یعنی اسم حتی یک ستاره را هم نمی‌دانم."}
+{"type":"find","prompt":"کدام جمله می‌گوید علی قشنگ‌ترین آسمان عمرش را کجا دیده است؟","correct_sentence":7,"explanation_fa":"علی می‌گوید: «j'ai vu le plus beau ciel de ma vie dans le désert, en Iran»، یعنی قشنگ‌ترین آسمان عمرم را در کویر، در ایران دیدم."}
+reading B:
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Oui, et la {{1}} aussi. Un guide nous dira le nom des {{2}}.","bank":["lune","étoiles","rivière","lumières","villes"],"answers":["lune","étoiles"],"explanation_fa":"لئا می‌گوید: «Oui, et la lune aussi. Un guide nous dira le nom des étoiles.»"}
+{"type":"mcq","prompt":"«شب ستاره‌ها» چیست؟","options":["فیلمی دربارهٔ آسمان و سیاره‌ها","کلاسی شبانه در باشگاه لئا","جشنی در ماه اوت در همهٔ فرانسه","سفری گروهی به کویرهای ایران"],"correct":2,"explanation_fa":"لئا می‌گوید: «C'est une fête en août : partout en France, on regarde le ciel.»، یعنی جشنی در ماه اوت است که همه‌جای فرانسه آسمان را تماشا می‌کنند."}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["علی از آسمان کویر ایران می‌گوید.","لئا از «شب ستاره‌ها» می‌پرسد.","لئا ساعت قرار را می‌گوید.","علی دربارهٔ دیدن سیاره‌ها می‌پرسد."],"correct_order":[1,3,0,2],"explanation_fa":"اول «Tu connais la Nuit des étoiles ?»، بعد «On pourra voir des planètes ?»، بعد «le plus beau ciel de ma vie» و آخر «Le rendez-vous est à 22 heures»."}
+listening A:
+{"type":"mcq","prompt":"برنامهٔ شبانهٔ باشگاه کجاست؟","options":["در مرکز شهر","توی ایستگاه قطار","روی یک کوه","نزدیک رودخانه"],"correct":3,"explanation_fa":"لئا می‌گوید: «une soirée près de la rivière, loin des lumières de la ville»، یعنی نزدیک رودخانه و دور از چراغ‌های شهر."}
+{"type":"num","prompt":"قرار شنبه ساعت چند است؟","answer":"22","accepted":["22","22h","vingt-deux"],"explanation_fa":"لئا می‌گوید: «Le rendez-vous est à 22 heures»، یعنی قرار ساعت بیست‌ودو است."}
+{"type":"tf","prompt":"علی «شب ستاره‌ها» را از قبل می‌شناسد.","correct":false,"explanation_fa":"وقتی لئا می‌پرسد «Tu connais la Nuit des étoiles ?»، علی جواب می‌دهد: «Non. Qu'est-ce que c'est ?»"}
+{"type":"tf","prompt":"لئا به علی می‌گوید یک پلیور با خودش بیاورد.","correct":true,"explanation_fa":"لئا می‌گوید: «Prends un pull : la nuit, il fait froid.»، یعنی یک پلیور بردار، شب هوا سرد است."}
+listening B:
+{"type":"mcq","prompt":"در برنامه چه کسی اسم ستاره‌ها را می‌گوید؟","options":["لئا","یک معلم","برادر لئا","یک راهنما"],"correct":3,"explanation_fa":"لئا می‌گوید: «Un guide nous dira le nom des étoiles.»، یعنی یک راهنما اسم ستاره‌ها را به ما می‌گوید."}
+{"type":"mcq","prompt":"علی قشنگ‌ترین آسمان عمرش را کجا دیده است؟","options":["کنار دریا، در فرانسه","در کویر، در ایران","روی کوه، در ایران","نزدیک رودخانه، در فرانسه"],"correct":1,"explanation_fa":"علی می‌گوید: «dans le désert, en Iran»، یعنی در کویر، در ایران."}
+{"type":"tf","prompt":"«شب ستاره‌ها» در ماه اوت است.","correct":true,"explanation_fa":"لئا می‌گوید: «C'est une fête en août»، یعنی جشنی در ماه اوت است."}
+{"type":"tf","prompt":"قرار شنبه جلوی باشگاه لئاست.","correct":false,"explanation_fa":"لئا می‌گوید: «Le rendez-vous est à 22 heures devant la gare.»، یعنی قرار جلوی ایستگاه قطار است، نه جلوی باشگاه."}

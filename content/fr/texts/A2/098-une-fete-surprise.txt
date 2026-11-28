@@ -1,0 +1,35 @@
+code: fr-a2-t098
+title: Une fête surprise
+band: 2
+kind: phone_call
+sentences:
+A: Salut Louis ! C'est pour la fête de papa. | سلام لویی! زنگ زدم برای جشن بابا.
+B: Oui, Chloé. Il ne sait rien, j'espère ? | آره، کلویی. امیدوارم بابا چیزی نداند!
+A: Non, rien. C'est une surprise ! | نه، هیچ‌چیز. قرار است غافلگیر شود!
+A: Samedi soir, tu l'emmènes au cinéma, et moi, je prépare la maison avec maman. | شنبه شب تو او را به سینما می‌بری و من با مامان خانه را آماده می‌کنم.
+B: D'accord. Et qui vient ? | باشه. کی‌ها می‌آیند؟
+A: Oncle Pierre va amener tous les collègues de papa. Et papa va revoir ses amis du{du-contr} lycée ! | عمو پیر همهٔ همکارهای بابا را با خودش می‌آورد. بابا دوست‌های دبیرستانش را هم دوباره می‌بیند!
+B: Génial ! Après trente ans, il ne va pas les reconnaître ! | محشر است! بعد از سی سال، آن‌ها را نمی‌شناسد!
+A: Il y a juste un problème : la vieille radio de papa ne marche{marcher-2} plus. | فقط یک مشکل هست: رادیوی قدیمی بابا دیگر کار نمی‌کند.
+B: Pas de problème, j'apporte mon ordinateur pour la musique. | مشکلی نیست، کامپیوترم را برای موسیقی می‌آورم.
+A: Super ! Et le gâteau ? Moi, je trouve{trouver-2} que le chocolat, c'est le meilleur. | عالی! کیک چی؟ به نظر من کیک شکلاتی از همه بهتر است.
+B: Oui, papa adore ça. Dommage, Julie ne peut pas venir. | آره، بابا عاشق شکلات است. حیف که ژولی نمی‌تواند بیاید.
+A: Oui, mais elle va appeler papa en vidéo. | آره، ولی با بابا تماس تصویری می‌گیرد.
+reading A:
+{"type":"mcq","prompt":"کلویی و لویی چه برنامه‌ای دارند؟","options":["یک سفر کوتاه برای بابا","یک جشن سورپرایز برای بابا","یک شام در رستوران با مامان","یک فیلم تازه در سینما برای مامان"],"correct":1,"explanation_fa":"کلویی دربارهٔ «la fête de papa» می‌گوید: «C'est une surprise !»، یعنی جشن بابا سورپرایز است."}
+{"type":"tf","prompt":"بابا از جشن خبر دارد.","correct":false,"explanation_fa":"لویی می‌پرسد: «Il ne sait rien, j'espère ?» و کلویی می‌گوید: «Non, rien.»؛ یعنی بابا هیچ‌چیز نمی‌داند."}
+{"type":"tf","prompt":"رادیوی قدیمی بابا دیگر کار نمی‌کند.","correct":true,"explanation_fa":"کلویی می‌گوید: «la vieille radio de papa ne marche plus»، یعنی رادیوی قدیمی بابا دیگر کار نمی‌کند."}
+{"type":"find","prompt":"کدام جمله می‌گوید لویی شنبه شب بابا را کجا می‌برد؟","correct_sentence":3,"explanation_fa":"کلویی می‌گوید: «Samedi soir, tu l'emmènes au cinéma»، یعنی شنبه شب تو او را به سینما می‌بری."}
+reading B:
+{"type":"match","prompt":"هر کس را به کاری که برای جشن می‌کند وصل کن.","left":["لویی","مامان","عمو پیر"],"right":["همکارهای بابا را می‌آورد","بابا را به سینما می‌برد","کیک شکلاتی را می‌خرد","با کلویی خانه را آماده می‌کند"],"pairs":[[0,1],[1,3],[2,0]],"explanation_fa":"کلویی می‌گوید: «tu l'emmènes au cinéma»، «je prépare la maison avec maman» و «Oncle Pierre va amener tous les collègues de papa»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Il y a juste un {{1}} : la vieille radio de papa ne {{2}} plus.","bank":["problème","marche","surprise","trouve","gâteau"],"answers":["problème","marche"],"explanation_fa":"کلویی می‌گوید: «Il y a juste un problème : la vieille radio de papa ne marche plus.»"}
+{"type":"mcq","prompt":"چرا لویی فکر می‌کند بابا دوست‌های دبیرستانش را نمی‌شناسد؟","options":["چون عینکش را گم کرده است","چون جشن توی تاریکی است","چون سی سال است آن‌ها را ندیده است","چون آن‌ها از یک شهر دیگر می‌آیند"],"correct":2,"explanation_fa":"لویی می‌گوید: «Après trente ans, il ne va pas les reconnaître !»، یعنی بعد از سی سال آن‌ها را نمی‌شناسد."}
+listening A:
+{"type":"mcq","prompt":"لویی برای موسیقی چه می‌آورد؟","options":["یک رادیوی تازه","کامپیوترش","گیتارش","تلفنش"],"correct":1,"explanation_fa":"لویی می‌گوید: «j'apporte mon ordinateur pour la musique»، یعنی کامپیوترم را برای موسیقی می‌آورم."}
+{"type":"num","prompt":"بابا چند سال است دوست‌های دبیرستانش را ندیده است؟","answer":"30","accepted":["30","trente"],"explanation_fa":"لویی می‌گوید: «Après trente ans, il ne va pas les reconnaître !»، یعنی بعد از سی سال."}
+{"type":"tf","prompt":"به نظر کلویی کیک شکلاتی از همه بهتر است.","correct":true,"explanation_fa":"کلویی می‌گوید: «je trouve que le chocolat, c'est le meilleur»، یعنی به نظر من شکلاتی از همه بهتر است."}
+{"type":"tf","prompt":"ژولی هم به جشن می‌آید.","correct":false,"explanation_fa":"لویی می‌گوید: «Dommage, Julie ne peut pas venir.»، یعنی حیف که ژولی نمی‌تواند بیاید."}
+listening B:
+{"type":"mcq","prompt":"ژولی چطور در جشن هست؟","options":["یک نامه برای بابا می‌فرستد","کمی دیرتر به جشن می‌رسد","با بابا تماس تصویری می‌گیرد","یک کادو برای بابا می‌فرستد"],"correct":2,"explanation_fa":"کلویی می‌گوید: «elle va appeler papa en vidéo»، یعنی با بابا تماس تصویری می‌گیرد."}
+{"type":"tf","prompt":"شنبه شب لویی بابا را به سینما می‌برد.","correct":true,"explanation_fa":"کلویی به لویی می‌گوید: «Samedi soir, tu l'emmènes au cinéma»، یعنی شنبه شب تو او را به سینما می‌بری."}
+{"type":"tf","prompt":"کلویی خانه را تنهایی آماده می‌کند.","correct":false,"explanation_fa":"کلویی می‌گوید: «je prépare la maison avec maman»، یعنی خانه را با مامان آماده می‌کنم."}

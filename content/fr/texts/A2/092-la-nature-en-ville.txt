@@ -1,0 +1,33 @@
+code: fr-a2-t092
+title: La nature en ville
+band: 2
+kind: schedule
+sentences:
+- Mairie de Bordeaux : la semaine de la nature, du{du-contr} 2 au 8 juin | شهرداری بوردو: هفتهٔ طبیعت، از ۲ تا ۸ ژوئن | tts: Mairie de Bordeaux : la semaine de la nature, du deux au huit juin
+- Lundi, 19 heures : un film sur le climat au cinéma du{du-contr} centre-ville. L'entrée{entrée-2} est gratuite. | دوشنبه، ساعت ۱۹: فیلمی دربارهٔ اقلیم زمین در سینمای مرکز شهر. ورود رایگان است. | tts: Lundi, dix-neuf heures : un film sur le climat au cinéma du centre-ville. L'entrée est gratuite.
+- Mercredi, 14 heures : au parc, les enfants découvrent les arbres et les oiseaux avec un guide. | چهارشنبه، ساعت ۱۴: در پارک، بچه‌ها همراه یک راهنما با درخت‌ها و پرنده‌ها آشنا می‌شوند. | tts: Mercredi, quatorze heures : au parc, les enfants découvrent les arbres et les oiseaux avec un guide.
+- Jeudi, 18 heures : réunion à la mairie sur la pollution de l'air dans nos quartiers. Venez poser vos questions ! | پنجشنبه، ساعت ۱۸: جلسه در شهرداری دربارهٔ آلودگی هوا در محله‌هایمان. بیایید و سؤال‌هایتان را بپرسید! | tts: Jeudi, dix-huit heures : réunion à la mairie sur la pollution de l'air dans nos quartiers. Venez poser vos questions !
+- Samedi matin, de 9 heures à 13 heures : pas de voitures dans le centre-ville ! | شنبه صبح، از ساعت ۹ تا ۱۳: هیچ ماشینی در مرکز شهر نیست! | tts: Samedi matin, de neuf heures à treize heures : pas de voitures dans le centre-ville !
+- Samedi après-midi : on nettoie ensemble le parc. La mairie donne les gants et les sacs. | شنبه بعدازظهر: با هم پارک را تمیز می‌کنیم. شهرداری دستکش و کیسه می‌دهد.
+- Dimanche, 12 heures : grand pique-nique au parc. Chacun apporte un plat ! | یکشنبه، ساعت ۱۲: پیک‌نیک بزرگ در پارک. هر کس یک غذا می‌آورد! | tts: Dimanche, douze heures : grand pique-nique au parc. Chacun apporte un plat !
+- Pour l'environnement, venez à pied ou à vélo ! | به خاطر محیط زیست، پیاده یا با دوچرخه بیایید!
+reading A:
+{"type":"mcq","prompt":"این برنامه دربارهٔ چیست؟","options":["هفتهٔ ورزش در مدرسه‌های بوردو","هفتهٔ طبیعت در شهر بوردو","جشنوارهٔ فیلم در سینمای بوردو","بازار هفتگی شهرداری بوردو"],"correct":1,"explanation_fa":"در برنامه آمده: «Mairie de Bordeaux : la semaine de la nature»، یعنی شهرداری بوردو: هفتهٔ طبیعت."}
+{"type":"tf","prompt":"برای دیدن فیلم دوشنبه باید پول داد.","correct":false,"explanation_fa":"در برنامه آمده: «L'entrée est gratuite.»، یعنی ورود رایگان است."}
+{"type":"tf","prompt":"پنجشنبه در شهرداری جلسه‌ای دربارهٔ آلودگی هوا هست.","correct":true,"explanation_fa":"در برنامه آمده: «réunion à la mairie sur la pollution de l'air»، یعنی جلسه در شهرداری دربارهٔ آلودگی هوا."}
+{"type":"find","prompt":"کدام جمله می‌گوید شهرداری برای تمیز کردن پارک چه چیزهایی می‌دهد؟","correct_sentence":5,"explanation_fa":"در برنامه آمده: «La mairie donne les gants et les sacs.»، یعنی شهرداری دستکش و کیسه می‌دهد."}
+reading B:
+{"type":"match","prompt":"هر روز را به برنامهٔ آن روز وصل کن.","left":["دوشنبه","چهارشنبه","یکشنبه"],"right":["پیک‌نیک بزرگ در پارک","فیلم دربارهٔ اقلیم","آشنایی بچه‌ها با درخت‌ها و پرنده‌ها","مسابقهٔ دوچرخه‌سواری در شهر"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"در برنامه آمده: دوشنبه «un film sur le climat»، چهارشنبه «les enfants découvrent les arbres et les oiseaux» و یکشنبه «grand pique-nique au parc»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Dimanche, 12 heures : grand {{1}} au parc. Chacun apporte un {{2}} !","bank":["pique-nique","plat","guide","gant","film"],"answers":["pique-nique","plat"],"explanation_fa":"در برنامه آمده: «Dimanche, 12 heures : grand pique-nique au parc. Chacun apporte un plat !»"}
+{"type":"mcq","prompt":"شنبه صبح از ساعت ۹ تا ۱۳ در مرکز شهر چه خبر است؟","options":["هیچ ماشینی در آن نیست","بچه‌ها با پرنده‌ها آشنا می‌شوند","جلسهٔ شهرداری برگزار می‌شود","مردم با هم پیک‌نیک می‌کنند"],"correct":0,"explanation_fa":"در برنامه آمده: «pas de voitures dans le centre-ville !»، یعنی هیچ ماشینی در مرکز شهر نیست."}
+{"type":"order","prompt":"این برنامه‌ها را به ترتیب روزشان بچین.","items":["تمیز کردن پارک","جلسه دربارهٔ آلودگی هوا","فیلم دربارهٔ اقلیم","پیک‌نیک بزرگ"],"correct_order":[2,1,0,3],"explanation_fa":"دوشنبه «un film sur le climat»، پنجشنبه «réunion … sur la pollution»، شنبه «on nettoie ensemble le parc» و یکشنبه «grand pique-nique»."}
+listening A:
+{"type":"num","prompt":"فیلم دوشنبه ساعت چند است؟","answer":"19","accepted":["19","19h","dix-neuf"],"explanation_fa":"می‌شنویم: «Lundi, 19 heures : un film sur le climat»، یعنی دوشنبه ساعت نوزده."}
+{"type":"mcq","prompt":"چهارشنبه بچه‌ها با چه کسی در پارک هستند؟","options":["با معلمشان","با یک راهنما","با پدر و مادرشان","با کارمندهای شهرداری"],"correct":1,"explanation_fa":"می‌شنویم: «les enfants découvrent les arbres et les oiseaux avec un guide»، یعنی همراه یک راهنما."}
+{"type":"tf","prompt":"یکشنبه هر کس یک غذا با خودش می‌آورد.","correct":true,"explanation_fa":"می‌شنویم: «Chacun apporte un plat !»، یعنی هر کس یک غذا می‌آورد."}
+{"type":"tf","prompt":"شهرداری از مردم می‌خواهد با ماشین بیایند.","correct":false,"explanation_fa":"می‌شنویم: «Pour l'environnement, venez à pied ou à vélo !»، یعنی پیاده یا با دوچرخه بیایید."}
+listening B:
+{"type":"num","prompt":"هفتهٔ طبیعت تا چندم ژوئن است؟","answer":"8","accepted":["8","huit"],"explanation_fa":"می‌شنویم: «du 2 au 8 juin»، یعنی از دوم تا هشتم ژوئن."}
+{"type":"mcq","prompt":"جلسهٔ پنجشنبه دربارهٔ چیست؟","options":["پارک‌های شهر","بچه‌ها و طبیعت","آلودگی هوا","دوچرخه‌سواری در شهر"],"correct":2,"explanation_fa":"می‌شنویم: «réunion à la mairie sur la pollution de l'air»، یعنی جلسه دربارهٔ آلودگی هوا."}
+{"type":"tf","prompt":"شنبه بعدازظهر مردم با هم پارک را تمیز می‌کنند.","correct":true,"explanation_fa":"می‌شنویم: «Samedi après-midi : on nettoie ensemble le parc.»، یعنی شنبه بعدازظهر با هم پارک را تمیز می‌کنیم."}
+{"type":"tf","prompt":"پیک‌نیک یکشنبه در مرکز شهر است.","correct":false,"explanation_fa":"می‌شنویم: «grand pique-nique au parc»، یعنی پیک‌نیک در پارک است، نه در مرکز شهر."}

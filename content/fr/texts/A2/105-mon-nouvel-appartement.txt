@@ -1,0 +1,40 @@
+code: fr-a2-t105
+title: Mon nouvel appartement
+band: 2
+kind: phone_call
+placement: yes
+sentences:
+A: Salut Ali ! Tu sais, j'ai déménagé samedi ! | سلام علی! می‌دانی، شنبه اسباب‌کشی کردم!
+B: Super, Julie ! Il est comment, ton appartement ? | عالی، ژولی! آپارتمانت چطور است؟
+A: Il est grand et très ensoleillé. Mon ancien studio était petit et humide. | بزرگ و خیلی آفتاب‌گیر است. سوئیت قبلی‌ام کوچک و نم‌دار بود.
+B: Et tu habites avec qui ? | با کی زندگی می‌کنی؟
+A: Avec Chloé, une amie de ma sœur. Elle est gentille, mais tellement bavarde ! | با کلویی، دوست خواهرم. مهربان است، ولی خیلی پرحرف!
+A: Elle parle même à sept heures du{du-contr} matin ! | حتی ساعت هفت صبح هم حرف می‌زند!
+B: Et elle fait la cuisine ? | آشپزی هم می‌کند؟
+A: Oui, et elle est très gourmande : il y a toujours un gâteau dans la cuisine ! | آره، و خیلی شکموست: همیشه یک کیک توی آشپزخانه هست!
+B: C'est super ! Moi, je suis un peu nerveux : je commence un nouveau travail lundi. | چه خوب! من کمی نگرانم: دوشنبه یک کار تازه را شروع می‌کنم.
+A: Ah oui ? Quel travail ? | جدی؟ چه کاری؟
+B: Je serai serveur dans un restaurant, debout toute la journée ! | گارسون یک رستوران می‌شوم و تمام روز سرپا هستم!
+A: Bon courage ! On viendra dîner un soir, avec Chloé ! | موفق باشی! یک شب با کلویی برای شام می‌آییم!
+reading A:
+{"type":"mcq","prompt":"ژولی چرا به علی زنگ می‌زند؟","options":["تا علی را به رستوران دعوت کند","تا بگوید اسباب‌کشی کرده است","تا یک کار تازه به علی پیشنهاد کند","تا دربارهٔ خواهرش حرف بزند"],"correct":1,"explanation_fa":"ژولی اول تلفن می‌گوید: «Tu sais, j'ai déménagé samedi !»، یعنی می‌دانی، شنبه اسباب‌کشی کردم."}
+{"type":"tf","prompt":"آپارتمان تازهٔ ژولی آفتاب‌گیر است.","correct":true,"explanation_fa":"ژولی می‌گوید: «Il est grand et très ensoleillé.»، یعنی بزرگ و خیلی آفتاب‌گیر است."}
+{"type":"tf","prompt":"سوئیت قبلی ژولی بزرگ بود.","correct":false,"explanation_fa":"ژولی می‌گوید: «Mon ancien studio était petit et humide.»، یعنی سوئیت قبلی‌ام کوچک و نم‌دار بود."}
+{"type":"find","prompt":"کدام جمله می‌گوید علی کجا کار خواهد کرد؟","correct_sentence":10,"explanation_fa":"علی می‌گوید: «Je serai serveur dans un restaurant»، یعنی گارسون یک رستوران می‌شوم."}
+{"type":"mcq","prompt":"کلویی کیست؟","options":["خواهر ژولی","همکار تازهٔ علی","دوست خواهر ژولی","صاحب‌خانهٔ ژولی"],"correct":2,"explanation_fa":"ژولی می‌گوید: «Avec Chloé, une amie de ma sœur.»، یعنی با کلویی، دوست خواهرم."}
+reading B:
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Oui, et elle est très {{1}} : il y a toujours un {{2}} dans la cuisine !","bank":["gourmande","gâteau","bavarde","nerveuse","restaurant"],"answers":["gourmande","gâteau"],"explanation_fa":"ژولی می‌گوید: «Oui, et elle est très gourmande : il y a toujours un gâteau dans la cuisine !»"}
+{"type":"match","prompt":"هر کس را به چیزی که دربارهٔ او گفته می‌شود وصل کن.","left":["ژولی","کلویی","علی"],"right":["کمی نگران است","آپارتمان تازه‌ای دارد","خیلی پرحرف است","از کارش راضی نیست"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"ژولی می‌گوید: «j'ai déménagé»، دربارهٔ کلویی: «tellement bavarde !» و علی می‌گوید: «je suis un peu nerveux»."}
+{"type":"mcq","prompt":"چرا علی نگران است؟","options":["چون آپارتمانش نم‌دار است","چون کلویی زیاد حرف می‌زند","چون رستوران محله‌اش بسته شده است","چون دوشنبه یک کار تازه را شروع می‌کند"],"correct":3,"explanation_fa":"علی می‌گوید: «je suis un peu nerveux : je commence un nouveau travail lundi»، یعنی کمی نگرانم، دوشنبه یک کار تازه را شروع می‌کنم."}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["علی از کار تازه‌اش می‌گوید.","ژولی از آپارتمان تازه‌اش می‌گوید.","ژولی از آشپزی کلویی می‌گوید.","ژولی می‌گوید با چه کسی زندگی می‌کند."],"correct_order":[1,3,2,0],"explanation_fa":"اول «Il est grand et très ensoleillé»، بعد «Avec Chloé, une amie de ma sœur»، بعد «il y a toujours un gâteau dans la cuisine» و آخر «Je serai serveur dans un restaurant»."}
+listening A:
+{"type":"mcq","prompt":"علی چه کاری پیدا کرده است؟","options":["فروشنده در یک مغازه","گارسون در یک رستوران","آشپز در یک هتل","معلم در یک مدرسه"],"correct":1,"explanation_fa":"علی می‌گوید: «Je serai serveur dans un restaurant»، یعنی گارسون یک رستوران می‌شوم."}
+{"type":"tf","prompt":"توی آشپزخانهٔ ژولی همیشه کیک هست.","correct":true,"explanation_fa":"ژولی می‌گوید: «il y a toujours un gâteau dans la cuisine !»، یعنی همیشه یک کیک توی آشپزخانه هست."}
+{"type":"tf","prompt":"علی سه‌شنبه کار تازه‌اش را شروع می‌کند.","correct":false,"explanation_fa":"علی می‌گوید: «je commence un nouveau travail lundi»، یعنی دوشنبه یک کار تازه را شروع می‌کنم، نه سه‌شنبه."}
+{"type":"mcq","prompt":"علی در کار تازه‌اش چطور است؟","options":["تمام روز پشت میز می‌نشیند","فقط شب‌ها کار می‌کند","تمام روز سرپاست","از خانه کار می‌کند"],"correct":2,"explanation_fa":"علی می‌گوید: «debout toute la journée !»، یعنی تمام روز سرپا هستم."}
+{"type":"num","prompt":"کلویی حتی ساعت چند صبح هم حرف می‌زند؟","answer":"7","accepted":["7","7h","sept"],"explanation_fa":"ژولی می‌گوید: «Elle parle même à sept heures du matin !»، یعنی حتی ساعت هفت صبح هم حرف می‌زند."}
+listening B:
+{"type":"mcq","prompt":"ژولی کی اسباب‌کشی کرد؟","options":["دوشنبه","یکشنبه","دیروز","شنبه"],"correct":3,"explanation_fa":"ژولی می‌گوید: «j'ai déménagé samedi !»، یعنی شنبه اسباب‌کشی کردم."}
+{"type":"tf","prompt":"کلویی خیلی شکموست.","correct":true,"explanation_fa":"ژولی می‌گوید: «elle est très gourmande»، یعنی خیلی شکموست."}
+{"type":"tf","prompt":"ژولی تنها زندگی می‌کند.","correct":false,"explanation_fa":"وقتی علی می‌پرسد «tu habites avec qui ?»، ژولی جواب می‌دهد: «Avec Chloé»؛ یعنی با کلویی زندگی می‌کند."}
+{"type":"mcq","prompt":"سوئیت قبلی ژولی چطور بود؟","options":["بزرگ و آفتاب‌گیر","کوچک و نم‌دار","گران و پرسروصدا","نو و راحت"],"correct":1,"explanation_fa":"ژولی می‌گوید: «Mon ancien studio était petit et humide.»، یعنی سوئیت قبلی‌ام کوچک و نم‌دار بود."}

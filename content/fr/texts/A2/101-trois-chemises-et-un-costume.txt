@@ -1,0 +1,37 @@
+code: fr-a2-t101
+title: Trois chemises et un costume
+band: 2
+kind: phone_call
+sentences:
+A: Bonjour monsieur. Vous lavez aussi les chemises ? | سلام آقا. پیراهن هم می‌شویید؟
+B: Oui, madame : nous les lavons, nous les séchons et nous les repassons. | بله خانم: می‌شوییم، خشک می‌کنیم و اتو می‌کنیم.
+A: Très bien. J'ai trois chemises et un costume pour samedi. | خیلی خوب. سه تا پیراهن دارم و یک کت و شلوار برای شنبه.
+B: Le costume, on le met dans un grand sac pour le protéger. | کت و شلوار را توی یک کیسهٔ بزرگ می‌گذاریم تا سالم بماند.
+A: Et c'est prêt quand ? | کی آماده می‌شود؟
+B: Si vous les apportez avant 10 heures, tout est prêt le soir. | اگر قبل از ساعت ۱۰ بیاوریدشان، عصر همه‌چیز آماده است. | tts: Si vous les apportez avant dix heures, tout est prêt le soir.
+A: Ça coûte combien ? | چقدر می‌شود؟
+B: 4 euros pour une chemise et 15 euros pour le costume. | هر پیراهن ۴ یورو و کت و شلوار ۱۵ یورو. | tts: Quatre euros pour une chemise et quinze euros pour le costume.
+B: Et videz bien les poches ! La semaine dernière, nous avons lavé un billet{billet-2} de 20 euros ! | جیب‌ها را هم خوب خالی کنید! هفتهٔ پیش یک اسکناس بیست یورویی را شستیم! | tts: Et videz bien les poches ! La semaine dernière, nous avons lavé un billet de vingt euros !
+A: Oh, d'accord ! Je peux payer par carte ? | آه، باشه! می‌توانم با کارت پول بدهم؟
+B: Oui. Il suffit de payer le soir, à la caisse. | بله. کافی است عصر، دم صندوق پول بدهید.
+A: Merci, monsieur ! À tout à l'heure ! | ممنون آقا! پس تا بعد!
+B: Je vous en prie, madame. | خواهش می‌کنم، خانم.
+reading A:
+{"type":"mcq","prompt":"زن به کجا زنگ می‌زند؟","options":["به یک لباس‌فروشی","به یک کفش‌فروشی","به یک خشک‌شویی","به یک بانک"],"correct":2,"explanation_fa":"مرد می‌گوید: «nous les lavons, nous les séchons et nous les repassons»، یعنی لباس‌ها را می‌شوییم، خشک می‌کنیم و اتو می‌کنیم؛ پس زن به یک خشک‌شویی زنگ زده است."}
+{"type":"tf","prompt":"زن یک کت و شلوار هم دارد.","correct":true,"explanation_fa":"زن می‌گوید: «J'ai trois chemises et un costume»، یعنی سه پیراهن و یک کت و شلوار دارم."}
+{"type":"tf","prompt":"شستن یک پیراهن ۱۵ یورو است.","correct":false,"explanation_fa":"مرد می‌گوید: «4 euros pour une chemise et 15 euros pour le costume»؛ یعنی پیراهن ۴ یورو است و ۱۵ یورو قیمت کت و شلوار است."}
+{"type":"find","prompt":"کدام جمله می‌گوید کت و شلوار را چطور سالم نگه می‌دارند؟","correct_sentence":3,"explanation_fa":"مرد می‌گوید: «on le met dans un grand sac pour le protéger»، یعنی آن را توی یک کیسهٔ بزرگ می‌گذاریم تا سالم بماند."}
+reading B:
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Oui, madame : nous les lavons, nous les {{1}} et nous les {{2}}.","bank":["séchons","repassons","vidons","payons","mettons"],"answers":["séchons","repassons"],"explanation_fa":"مرد می‌گوید: «nous les lavons, nous les séchons et nous les repassons»."}
+{"type":"match","prompt":"هر مبلغ را به چیزی که در گفتگو دربارهٔ آن گفته می‌شود وصل کن.","left":["۴ یورو","۱۵ یورو","۲۰ یورو"],"right":["قیمت کت و شلوار","پولی که هفتهٔ پیش شسته شد","قیمت یک پیراهن","قیمت یک کیسهٔ بزرگ"],"pairs":[[0,2],[1,0],[2,1]],"explanation_fa":"مرد می‌گوید: «4 euros pour une chemise et 15 euros pour le costume» و «nous avons lavé un billet de 20 euros»."}
+{"type":"mcq","prompt":"چرا مرد می‌گوید جیب‌ها را خوب خالی کنند؟","options":["چون جیب‌ها را اتو نمی‌کنند","چون هفتهٔ پیش یک اسکناس را شستند","چون ماشین لباس‌شویی خراب می‌شود","چون قیمت شستن بیشتر می‌شود"],"correct":1,"explanation_fa":"مرد می‌گوید: «La semaine dernière, nous avons lavé un billet de 20 euros !»، یعنی هفتهٔ پیش یک اسکناس بیست یورویی را شستیم."}
+listening A:
+{"type":"mcq","prompt":"اگر زن لباس‌ها را قبل از ساعت ۱۰ بیاورد، کی آماده است؟","options":["فردا صبح","همان روز عصر","شنبه صبح","دو روز بعد"],"correct":1,"explanation_fa":"مرد می‌گوید: «Si vous les apportez avant 10 heures, tout est prêt le soir.»، یعنی اگر قبل از ساعت ده بیاورید، عصر همه‌چیز آماده است."}
+{"type":"num","prompt":"زن چند تا پیراهن دارد؟","answer":"3","accepted":["3","trois"],"explanation_fa":"زن می‌گوید: «J'ai trois chemises»، یعنی سه تا پیراهن دارم."}
+{"type":"tf","prompt":"زن می‌تواند با کارت پول بدهد.","correct":true,"explanation_fa":"زن می‌پرسد: «Je peux payer par carte ?» و مرد جواب می‌دهد: «Oui.»"}
+{"type":"tf","prompt":"زن باید همین حالا پشت تلفن پول بدهد.","correct":false,"explanation_fa":"مرد می‌گوید: «Il suffit de payer le soir, à la caisse.»، یعنی کافی است عصر، دم صندوق پول بدهید."}
+listening B:
+{"type":"num","prompt":"شستن کت و شلوار چند یورو است؟","answer":"15","accepted":["15","quinze"],"explanation_fa":"مرد می‌گوید: «15 euros pour le costume»، یعنی کت و شلوار پانزده یورو است."}
+{"type":"mcq","prompt":"زن کت و شلوار را برای کدام روز لازم دارد؟","options":["برای شنبه","برای یکشنبه","برای فردا","برای امشب"],"correct":0,"explanation_fa":"زن می‌گوید: «J'ai trois chemises et un costume pour samedi.»، یعنی سه پیراهن و یک کت و شلوار برای شنبه دارم."}
+{"type":"tf","prompt":"آن‌ها پیراهن‌ها را اتو هم می‌کنند.","correct":true,"explanation_fa":"مرد می‌گوید: «nous les séchons et nous les repassons»، یعنی خشک می‌کنیم و اتو می‌کنیم."}
+{"type":"tf","prompt":"هفتهٔ پیش آن‌ها یک تلفن را شستند.","correct":false,"explanation_fa":"مرد می‌گوید: «nous avons lavé un billet de 20 euros !»؛ یعنی یک اسکناس بیست یورویی را شستند، نه تلفن."}
