@@ -1,0 +1,37 @@
+code: fr-a2-t078
+title: Trois jours de pluie
+band: 2
+kind: phone_call
+sentences:
+A: Allô, Pierre ? Ici, il pleut depuis trois jours ! | الو، پیر؟ این‌جا سه روز است که باران می‌بارد!
+B: Oh non ! Et les enfants ? | ای وای! بچه‌ها چه می‌کنند؟
+A: Hugo joue à son jeu vidéo du{du-contr} matin au soir ! | هوگو از صبح تا شب با بازی ویدئویی‌اش بازی می‌کند!
+B: Et Léa ? | لئا چی؟
+A: Elle lit les vieux magazines de ma mère. | مجله‌های قدیمی مادرم را می‌خواند.
+B: Ils ne jouent pas aux cartes avec ton père ? | با پدرت ورق بازی نمی‌کنند؟
+A: Si{si-adv}, hier soir, mais papa gagne chaque fois ! | چرا، دیشب بازی کردند، ولی بابا هر بار می‌برد!
+A: Ce matin, il voulait jouer aux échecs avec Hugo, mais Hugo a dit non : c'est trop long. | امروز صبح می‌خواست با هوگو شطرنج بازی کند، ولی هوگو گفت نه: خیلی طول می‌کشد.
+B: Et le ballon ? Je l'ai mis dans la voiture. | توپ چی؟ گذاشتمش توی ماشین.
+A: Avec cette pluie ? Impossible ! | با این باران؟ نمی‌شود!
+B: Demain, il fera beau. Et dimanche, il y a une course pour les enfants au village : deux kilomètres dans la forêt. | فردا هوا خوب می‌شود. یکشنبه هم در روستا یک مسابقهٔ دو برای بچه‌ها هست: دو کیلومتر در جنگل.
+A: Super ! Hugo est un bon joueur de football, il court vite. | عالی است! هوگو فوتبالیست خوبی است، تند می‌دود.
+B: Et Léa peut prendre des photos ! | لئا هم می‌تواند عکس بگیرد!
+reading A:
+{"type":"mcq","prompt":"زن دربارهٔ چه چیزی با پیر حرف می‌زند؟","options":["سفر تازهٔ خانواده به شهر","بچه‌ها در روزهای بارانی","مسابقهٔ فوتبال مدرسهٔ هوگو","ماشین تازهٔ پدرش"],"correct":1,"explanation_fa":"زن می‌گوید: «il pleut depuis trois jours»، و بعد تعریف می‌کند بچه‌ها در این روزهای بارانی چه کار می‌کنند."}
+{"type":"tf","prompt":"لئا مجله‌های قدیمی مادربزرگش را می‌خواند.","correct":true,"explanation_fa":"زن دربارهٔ لئا می‌گوید: «Elle lit les vieux magazines de ma mère.»، یعنی مجله‌های قدیمی مادرم را می‌خواند."}
+{"type":"tf","prompt":"هوگو امروز صبح با پدربزرگش شطرنج بازی کرد.","correct":false,"explanation_fa":"زن می‌گوید: «il voulait jouer aux échecs avec Hugo, mais Hugo a dit non»، یعنی هوگو قبول نکرد."}
+{"type":"find","prompt":"کدام جمله می‌گوید توپ کجاست؟","correct_sentence":8,"explanation_fa":"پیر می‌گوید: «Et le ballon ? Je l'ai mis dans la voiture.»، یعنی توپ را توی ماشین گذاشته‌ام."}
+reading B:
+{"type":"match","prompt":"هر آدم را به چیزی که در گفتگو دربارهٔ او گفته می‌شود وصل کن.","left":["هوگو","لئا","پدربزرگ"],"right":["در ورق‌بازی هر بار می‌برد","توپ را توی ماشین گذاشته است","از صبح تا شب بازی ویدئویی می‌کند","مجله‌های قدیمی می‌خواند"],"pairs":[[0,2],[1,3],[2,0]],"explanation_fa":"زن می‌گوید: «Hugo joue à son jeu vidéo du matin au soir»، دربارهٔ لئا «Elle lit les vieux magazines» و دربارهٔ پدرش «papa gagne chaque fois»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Hugo est un bon {{1}} de football, il {{2}} vite.","bank":["joueur","court","ballon","course","forêt"],"answers":["joueur","court"],"explanation_fa":"زن می‌گوید: «Hugo est un bon joueur de football, il court vite.»، یعنی هوگو فوتبالیست خوبی است و تند می‌دود."}
+{"type":"mcq","prompt":"یکشنبه در روستا چه خبر است؟","options":["یک مسابقهٔ شطرنج برای بزرگ‌ترها","یک مسابقهٔ فوتبال در مدرسه","یک مسابقهٔ دو برای بچه‌ها","یک جشن بزرگ در جنگل"],"correct":2,"explanation_fa":"پیر می‌گوید: «dimanche, il y a une course pour les enfants au village»، یعنی یکشنبه یک مسابقهٔ دو برای بچه‌ها هست."}
+listening A:
+{"type":"mcq","prompt":"چرا هوگو نمی‌خواهد شطرنج بازی کند؟","options":["چون بازی شطرنج را بلد نیست","چون به نظرش خیلی طول می‌کشد","چون پدربزرگ همیشه می‌برد","چون می‌خواهد بیرون بازی کند"],"correct":1,"explanation_fa":"زن می‌گوید: «Hugo a dit non : c'est trop long.»، یعنی به نظر هوگو شطرنج خیلی طول می‌کشد."}
+{"type":"tf","prompt":"پیر توپ را در ماشین گذاشته است.","correct":true,"explanation_fa":"پیر می‌گوید: «Je l'ai mis dans la voiture.»، یعنی توپ را توی ماشین گذاشته‌ام."}
+{"type":"tf","prompt":"پیر می‌گوید فردا هم باران می‌بارد.","correct":false,"explanation_fa":"پیر می‌گوید: «Demain, il fera beau.»، یعنی فردا هوا خوب می‌شود."}
+{"type":"mcq","prompt":"چند روز است که باران می‌بارد؟","options":["دو روز","یک هفته","سه روز","چهار روز"],"correct":2,"explanation_fa":"زن می‌گوید: «il pleut depuis trois jours»، یعنی سه روز است که باران می‌بارد."}
+listening B:
+{"type":"num","prompt":"مسابقهٔ دو چند کیلومتر است؟","answer":"2","accepted":["2","deux"],"explanation_fa":"پیر می‌گوید: «deux kilomètres dans la forêt»، یعنی مسابقه دو کیلومتر در جنگل است."}
+{"type":"mcq","prompt":"بچه‌ها دیشب با پدربزرگ چه بازی کردند؟","options":["ورق","شطرنج","فوتبال","تنیس"],"correct":0,"explanation_fa":"پیر می‌پرسد: «Ils ne jouent pas aux cartes avec ton père ?» و زن جواب می‌دهد: «Si, hier soir»، یعنی دیشب ورق بازی کردند."}
+{"type":"tf","prompt":"پیر می‌گوید لئا می‌تواند عکس بگیرد.","correct":true,"explanation_fa":"پیر می‌گوید: «Et Léa peut prendre des photos !»، یعنی لئا هم می‌تواند عکس بگیرد."}
+{"type":"tf","prompt":"هوگو فوتبال را خوب بازی نمی‌کند.","correct":false,"explanation_fa":"زن می‌گوید: «Hugo est un bon joueur de football»، یعنی هوگو فوتبالیست خوبی است."}

@@ -1,0 +1,35 @@
+code: fr-a2-t077
+title: La fête du livre
+band: 2
+kind: schedule
+sentences:
+- Bibliothèque du{du-contr} centre-ville : la fête du{du-contr} livre, samedi 12 avril | کتابخانهٔ مرکز شهر: جشن کتاب، شنبه ۱۲ آوریل | tts: Bibliothèque du centre-ville : la fête du livre, samedi douze avril
+- 10 heures : l'écrivain Paul Martin parle de son nouveau roman et répond à vos questions. | ساعت ۱۰: پل مارتن، نویسنده، دربارهٔ رمان تازه‌اش حرف می‌زند و به سؤال‌های شما جواب می‌دهد. | tts: Dix heures : l'écrivain Paul Martin parle de son nouveau roman et répond à vos questions.
+- 11 heures : pour les enfants, cours de dessin avec Hugo Karimi, l'artiste de la bande dessinée « Le chat bleu ». | ساعت ۱۱: برای بچه‌ها، کلاس طراحی با هوگو کریمی، هنرمندِ داستان مصورِ «گربهٔ آبی». | tts: Onze heures : pour les enfants, cours de dessin avec Hugo Karimi, l'artiste de la bande dessinée « Le chat bleu ».
+- Chaque enfant dessine avec lui et reçoit un livre. | هر بچه با او نقاشی می‌کشد و یک کتاب هدیه می‌گیرد.
+- 14 heures : au premier étage, exposition de peintures et de dessins des{des-contr} élèves du{du-contr} lycée du{du-contr} quartier. | ساعت ۱۴: در طبقهٔ اول، نمایشگاه نقاشی‌ها و طراحی‌های دانش‌آموزان دبیرستان محله. | tts: Quatorze heures : au premier étage, exposition de peintures et de dessins des élèves du lycée du quartier.
+- 15 heures 30 : spectacle de danse dans le jardin de la bibliothèque. | ساعت ۱۵:۳۰: نمایش رقص در باغ کتابخانه. | tts: Quinze heures trente : spectacle de danse dans le jardin de la bibliothèque.
+- 17 heures : lecture d'un roman pour les adultes, avec de la musique. | ساعت ۱۷: کتاب‌خوانی از یک رمان برای بزرگسالان، همراه با موسیقی. | tts: Dix-sept heures : lecture d'un roman pour les adultes, avec de la musique.
+- 20 heures : concert de guitare dans la cour. | ساعت ۲۰: کنسرت گیتار در حیاط. | tts: Vingt heures : concert de guitare dans la cour.
+- Pendant la journée, vous pouvez aussi acheter des livres et des magazines pas chers. | در طول روز می‌توانید کتاب و مجلهٔ ارزان هم بخرید.
+- Entrée{entrée-2} gratuite ! | ورود رایگان است!
+reading A:
+{"type":"mcq","prompt":"این برنامه برای چیست؟","options":["یک روز جشن کتاب در کتابخانه","روز امتحان دانش‌آموزان دبیرستان","یک کنسرت بزرگ در مرکز شهر","یک کلاس نقاشی برای بزرگسالان"],"correct":0,"explanation_fa":"در برنامه آمده: «Bibliothèque du centre-ville : la fête du livre»، یعنی جشن کتاب در کتابخانهٔ مرکز شهر."}
+{"type":"tf","prompt":"نمایش رقص در باغ کتابخانه است.","correct":true,"explanation_fa":"در برنامه آمده: «spectacle de danse dans le jardin de la bibliothèque»، یعنی نمایش رقص در باغ کتابخانه."}
+{"type":"tf","prompt":"برای ورود به جشن باید بلیت خرید.","correct":false,"explanation_fa":"در برنامه آمده: «Entrée gratuite !»، یعنی ورود رایگان است."}
+{"type":"find","prompt":"کدام جمله می‌گوید نقاشی‌های دانش‌آموزان را کجا می‌شود دید؟","correct_sentence":4,"explanation_fa":"در برنامه آمده: «au premier étage, exposition de peintures et de dessins des élèves»، یعنی نمایشگاه نقاشی‌های دانش‌آموزان در طبقهٔ اول است."}
+reading B:
+{"type":"match","prompt":"هر ساعت را به برنامهٔ آن وصل کن.","left":["ساعت ۱۰","ساعت ۱۱","ساعت ۱۷","ساعت ۲۰"],"right":["کلاس طراحی برای بچه‌ها","کنسرت گیتار","حرف زدن نویسنده دربارهٔ رمانش","کتاب‌خوانی برای بزرگسالان","نمایش رقص"],"pairs":[[0,2],[1,0],[2,3],[3,1]],"explanation_fa":"در برنامه آمده: ساعت ۱۰ «l'écrivain Paul Martin parle de son nouveau roman»، ساعت ۱۱ «cours de dessin»، ساعت ۱۷ «lecture d'un roman pour les adultes» و ساعت ۲۰ «concert de guitare»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"14 heures : au premier étage, {{1}} de peintures et de {{2}} des élèves du lycée du quartier.","bank":["exposition","dessins","concert","danse","cour"],"answers":["exposition","dessins"],"explanation_fa":"در برنامه آمده: «exposition de peintures et de dessins des élèves du lycée du quartier»، یعنی نمایشگاه نقاشی‌ها و طراحی‌های دانش‌آموزان."}
+{"type":"mcq","prompt":"بچه‌ها ساعت ۱۱ چه کار می‌کنند؟","options":["با یک نویسنده رمان می‌خوانند","در باغ کتابخانه می‌رقصند","با یک هنرمند نقاشی می‌کشند","برای بزرگ‌ترها گیتار می‌زنند"],"correct":2,"explanation_fa":"در برنامه آمده: «cours de dessin avec Hugo Karimi» و «Chaque enfant dessine avec lui»، یعنی هر بچه با این هنرمند نقاشی می‌کشد."}
+{"type":"order","prompt":"این برنامه‌ها را به ترتیب ساعتشان بچین.","items":["کنسرت گیتار","نمایش رقص","کلاس طراحی برای بچه‌ها","حرف زدن نویسنده دربارهٔ رمانش"],"correct_order":[3,2,1,0],"explanation_fa":"ساعت ۱۰ نویسنده حرف می‌زند، ساعت ۱۱ «cours de dessin»، ساعت ۱۵:۳۰ «spectacle de danse» و ساعت ۲۰ «concert de guitare»."}
+listening A:
+{"type":"num","prompt":"کنسرت ساعت چند است؟","answer":"20","accepted":["20","vingt"],"explanation_fa":"می‌شنویم: «20 heures : concert de guitare dans la cour»، یعنی کنسرت ساعت بیست است."}
+{"type":"mcq","prompt":"کنسرت گیتار کجاست؟","options":["در باغ کتابخانه","در طبقهٔ اول","در حیاط کتابخانه","در دبیرستان محله"],"correct":2,"explanation_fa":"می‌شنویم: «concert de guitare dans la cour»، یعنی کنسرت گیتار در حیاط است."}
+{"type":"tf","prompt":"عصر برای بزرگسالان از یک رمان کتاب‌خوانی هست.","correct":true,"explanation_fa":"می‌شنویم: «lecture d'un roman pour les adultes, avec de la musique»، یعنی کتاب‌خوانی از یک رمان برای بزرگسالان."}
+{"type":"tf","prompt":"هوگو کریمی نویسندهٔ یک رمان تازه است.","correct":false,"explanation_fa":"می‌شنویم که هوگو کریمی «l'artiste de la bande dessinée» است؛ نویسندهٔ رمان تازه پل مارتن است."}
+listening B:
+{"type":"mcq","prompt":"پل مارتن چه کاره است؟","options":["نوازندهٔ گیتار","معلم دبیرستان","هنرمند داستان مصور","نویسندهٔ رمان"],"correct":3,"explanation_fa":"می‌شنویم: «l'écrivain Paul Martin parle de son nouveau roman»، یعنی پل مارتن نویسنده است و دربارهٔ رمان تازه‌اش حرف می‌زند."}
+{"type":"num","prompt":"نمایش رقص ساعت چند شروع می‌شود؟","answer":"15:30","accepted":["15:30","15h30","15 h 30","15.30"],"explanation_fa":"می‌شنویم: «15 heures 30 : spectacle de danse»، یعنی نمایش رقص ساعت پانزده و سی دقیقه است."}
+{"type":"tf","prompt":"هر بچه‌ای که در کلاس طراحی است یک کتاب می‌گیرد.","correct":true,"explanation_fa":"می‌شنویم: «Chaque enfant dessine avec lui et reçoit un livre.»، یعنی هر بچه یک کتاب می‌گیرد."}
+{"type":"tf","prompt":"در کتابخانه فقط می‌شود کتاب خرید، نه مجله.","correct":false,"explanation_fa":"می‌شنویم: «vous pouvez aussi acheter des livres et des magazines pas chers»، یعنی کتاب و مجله هر دو را می‌شود خرید."}

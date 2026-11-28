@@ -1,0 +1,36 @@
+code: fr-a2-t079
+title: Une semaine au ski
+band: 2
+kind: email
+sentences:
+- Salut Julie ! | سلام ژولی!
+- Nous sommes à la montagne pour une semaine, dans un petit hôtel du{du-contr} village. | یک هفته آمده‌ایم کوهستان، در یک هتل کوچک در روستا.
+- Chaque matin, les enfants vont au club de ski : ils font du ski avec des enfants de leur âge. | هر روز صبح بچه‌ها به باشگاه اسکی می‌روند: با بچه‌های هم‌سن خودشان اسکی می‌کنند.
+- Moi, je ne fais pas de ski : c'est trop difficile ! | من اسکی نمی‌کنم: خیلی سخت است!
+- Alors, je vais à la piscine de l'hôtel : la natation, c'est mon sport préféré{préféré}. | برای همین به استخر هتل می‌روم: شنا ورزش مورد علاقهٔ من است.
+- Et Nicolas fait du cheval dans la forêt avec un guide. | نیکولا هم با یک راهنما در جنگل اسب‌سواری می‌کند.
+- Après le déjeuner, tout le monde fait la sieste ! | بعد از ناهار همه چرت می‌زنند!
+- Le soir, à l'hôtel, des gens du{du-contr} village font de la musique. | شب‌ها در هتل چند نفر از اهالی روستا ساز می‌زنند.
+- Hier, Emma a chanté une chanson avec eux ! | دیروز اِما با آن‌ها یک آهنگ خواند!
+- On est fatigués, mais très heureux. | خسته‌ایم، ولی خیلی خوشحال.
+- Si tu veux, l'année prochaine, venez avec nous, Paul et toi ! | اگر بخواهی، سال دیگر تو و پل هم با ما بیایید!
+- Bises, Camille | می‌بوسمت، کامی
+reading A:
+{"type":"mcq","prompt":"کامی این ایمیل را از کجا می‌نویسد؟","options":["از خانهٔ خودش در شهر","از یک هتل کنار دریا","از یک هتل در کوهستان","از خانهٔ ژولی و پل"],"correct":2,"explanation_fa":"کامی می‌نویسد: «Nous sommes à la montagne pour une semaine, dans un petit hôtel du village.»، یعنی در یک هتل کوچک در کوهستان هستیم."}
+{"type":"tf","prompt":"کامی هر روز صبح با بچه‌ها اسکی می‌کند.","correct":false,"explanation_fa":"کامی می‌نویسد: «Moi, je ne fais pas de ski»، یعنی من اسکی نمی‌کنم؛ فقط بچه‌ها اسکی می‌کنند."}
+{"type":"tf","prompt":"بعد از ناهار همه چرت می‌زنند.","correct":true,"explanation_fa":"کامی می‌نویسد: «Après le déjeuner, tout le monde fait la sieste !»، یعنی بعد از ناهار همه چرت می‌زنند."}
+{"type":"find","prompt":"کدام جمله می‌گوید نیکولا در این سفر چه کار می‌کند؟","correct_sentence":5,"explanation_fa":"کامی می‌نویسد: «Et Nicolas fait du cheval dans la forêt avec un guide.»، یعنی نیکولا در جنگل اسب‌سواری می‌کند."}
+reading B:
+{"type":"match","prompt":"هر کس را به کاری که در سفر می‌کند وصل کن.","left":["بچه‌ها","کامی","نیکولا"],"right":["شنا می‌کند","پیانو می‌زند","اسب‌سواری می‌کند","اسکی می‌کنند"],"pairs":[[0,3],[1,0],[2,2]],"explanation_fa":"کامی می‌نویسد بچه‌ها «font du ski»، خودش به استخر می‌رود چون «la natation, c'est mon sport préféré» و نیکولا «fait du cheval»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Alors, je vais à la {{1}} de l'hôtel : la {{2}}, c'est mon sport préféré.","bank":["piscine","natation","forêt","musique","chanson"],"answers":["piscine","natation"],"explanation_fa":"کامی می‌نویسد: «je vais à la piscine de l'hôtel : la natation, c'est mon sport préféré»، یعنی به استخر هتل می‌روم و شنا ورزش مورد علاقهٔ من است."}
+{"type":"order","prompt":"کارهای یک روز در این سفر را به ترتیب بچین.","items":["در هتل ساز می‌زنند.","بچه‌ها به باشگاه اسکی می‌روند.","همه چرت می‌زنند.","ناهار می‌خورند."],"correct_order":[1,3,2,0],"explanation_fa":"صبح «les enfants vont au club de ski»، بعد ناهار، «Après le déjeuner, tout le monde fait la sieste» و شب «des gens du village font de la musique»."}
+listening A:
+{"type":"mcq","prompt":"ورزش مورد علاقهٔ کامی چیست؟","options":["اسکی","شنا","اسب‌سواری","تنیس"],"correct":1,"explanation_fa":"کامی می‌گوید: «la natation, c'est mon sport préféré»، یعنی شنا ورزش مورد علاقهٔ من است."}
+{"type":"tf","prompt":"اِما دیروز با آدم‌های روستا آواز خواند.","correct":true,"explanation_fa":"کامی می‌گوید: «Hier, Emma a chanté une chanson avec eux !»، یعنی دیروز اِما با آن‌ها یک آهنگ خواند."}
+{"type":"tf","prompt":"به نظر کامی اسکی کار آسانی است.","correct":false,"explanation_fa":"کامی دربارهٔ اسکی می‌گوید: «je ne fais pas de ski : c'est trop difficile !»، یعنی اسکی نمی‌کنم، خیلی سخت است."}
+{"type":"mcq","prompt":"کامی به ژولی چه پیشنهادی می‌کند؟","options":["همین هفته به هتل بیاید","در باشگاه اسکی ثبت‌نام کند","برای او یک نامه بنویسد","سال دیگر با آن‌ها بیاید"],"correct":3,"explanation_fa":"کامی می‌گوید: «l'année prochaine, venez avec nous, Paul et toi !»، یعنی سال دیگر تو و پل هم با ما بیایید."}
+listening B:
+{"type":"mcq","prompt":"نیکولا با چه کسی اسب‌سواری می‌کند؟","options":["با بچه‌ها","با یک مربی اسکی","با کامی","با یک راهنما"],"correct":3,"explanation_fa":"کامی می‌گوید: «Nicolas fait du cheval dans la forêt avec un guide»، یعنی نیکولا با یک راهنما اسب‌سواری می‌کند."}
+{"type":"tf","prompt":"بچه‌ها با بچه‌های هم‌سن خودشان اسکی می‌کنند.","correct":true,"explanation_fa":"کامی می‌گوید بچه‌ها «avec des enfants de leur âge» اسکی می‌کنند، یعنی با بچه‌های هم‌سن خودشان."}
+{"type":"tf","prompt":"کامی و خانواده‌اش یک ماه در کوهستان می‌مانند.","correct":false,"explanation_fa":"کامی می‌گوید: «Nous sommes à la montagne pour une semaine»، یعنی برای یک هفته، نه یک ماه."}
+{"type":"mcq","prompt":"شب‌ها در هتل چه خبر است؟","options":["آدم‌های روستا ساز می‌زنند","بچه‌ها فیلم می‌بینند","همه ورق بازی می‌کنند","مربی اسکی کلاس دارد"],"correct":0,"explanation_fa":"کامی می‌گوید: «Le soir, à l'hôtel, des gens du village font de la musique.»، یعنی شب‌ها در هتل اهالی روستا ساز می‌زنند."}

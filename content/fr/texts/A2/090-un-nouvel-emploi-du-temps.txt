@@ -1,0 +1,41 @@
+code: fr-a2-t090
+title: Un nouvel emploi du temps
+band: 2
+kind: phone_call
+placement: yes
+sentences:
+A: Allô ? | الو؟
+B: Salut, c'est moi. Tu es où, en ce moment ? | سلام، منم. الان کجایی؟
+A: Au bureau. Pourquoi ? | سر کار. چطور؟
+B: Je viens de recevoir un message de l'école de Léa : elle a un nouvel emploi du temps. | همین الان از مدرسهٔ لئا پیام گرفتم: برنامهٔ هفتگی تازه‌ای دارد.
+A: Encore ? Elle a eu un nouvel emploi du temps avant-hier ! | باز هم؟ پریروز یک برنامهٔ هفتگی تازه گرفته بود!
+B: Oui, mais le nombre d'élèves a changé. | آره، ولی تعداد شاگردها عوض شده.
+B: Maintenant, le mercredi, Léa commence à 8 heures, et pas à 10 heures. | حالا چهارشنبه‌ها کلاس لئا ساعت ۸ شروع می‌شود، نه ساعت ۱۰. | tts: Maintenant, le mercredi, Léa commence à huit heures, et pas à dix heures.
+A: Mais le mercredi, je travaille tôt ! | ولی من چهارشنبه‌ها صبح زود کار می‌کنم!
+B: Pas de problème : je l'accompagne. | مشکلی نیست: من می‌برمش.
+A: Merci ! Et lundi, c'est un jour férié, non ? | ممنون! راستی دوشنبه تعطیل رسمی است، نه؟
+B: Oui, pas d'école. Et après-demain, il y a la fête de l'école. | آره، مدرسه تعطیل است. پس‌فردا هم جشن مدرسه است.
+A: Je sais ! Je vais faire un gâteau. | می‌دانم! یک کیک درست می‌کنم.
+B: Ce soir, je pars du{du-contr} bureau en avance. Je vais chercher Léa. | امشب زودتر از سر کار راه می‌افتم. می‌روم دنبال لئا.
+A: Super ! À ce soir ! | عالی است! تا امشب!
+reading A:
+{"type":"mcq","prompt":"مرد چرا به زن زنگ می‌زند؟","options":["لئا امروز مریض شده است","جشن مدرسه لغو شده است","برنامهٔ هفتگی لئا عوض شده است","امشب دیر به خانه می‌آید"],"correct":2,"explanation_fa":"مرد می‌گوید: «Je viens de recevoir un message de l'école de Léa : elle a un nouvel emploi du temps.»، یعنی برنامهٔ هفتگی لئا عوض شده است."}
+{"type":"tf","prompt":"لئا پریروز هم برنامهٔ هفتگی تازه گرفته بود.","correct":true,"explanation_fa":"زن می‌گوید: «Elle a eu un nouvel emploi du temps avant-hier !»، یعنی پریروز یک برنامهٔ هفتگی تازه گرفته بود."}
+{"type":"tf","prompt":"با برنامهٔ تازه، کلاس لئا چهارشنبه‌ها ساعت ۱۰ شروع می‌شود.","correct":false,"explanation_fa":"مرد می‌گوید: «le mercredi, Léa commence à 8 heures, et pas à 10 heures»، یعنی حالا ساعت ۸ شروع می‌شود، نه ۱۰."}
+{"type":"find","prompt":"کدام جمله می‌گوید چرا برنامهٔ لئا عوض شده است؟","correct_sentence":5,"explanation_fa":"مرد می‌گوید: «le nombre d'élèves a changé»، یعنی تعداد شاگردها عوض شده است."}
+{"type":"mcq","prompt":"چهارشنبه‌ها چه کسی لئا را به مدرسه می‌برد؟","options":["مادرش","مادربزرگش","همسایه‌شان","پدرش"],"correct":3,"explanation_fa":"زن می‌گوید چهارشنبه‌ها زود کار می‌کند و مرد جواب می‌دهد: «Pas de problème : je l'accompagne.»، یعنی من می‌برمش."}
+reading B:
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Ce soir, je pars du bureau en {{1}}. Je vais {{2}} Léa.","bank":["avance","chercher","moment","férié","nombre"],"answers":["avance","chercher"],"explanation_fa":"مرد می‌گوید: «Ce soir, je pars du bureau en avance. Je vais chercher Léa.»، یعنی امشب زودتر از سر کار راه می‌افتم و می‌روم دنبال لئا."}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["مرد می‌گوید چهارشنبه‌ها لئا را می‌برد.","مرد از پیام مدرسه می‌گوید.","زن دربارهٔ تعطیلی دوشنبه می‌پرسد.","زن می‌گوید کیک درست می‌کند."],"correct_order":[1,0,2,3],"explanation_fa":"اول «Je viens de recevoir un message de l'école»، بعد «je l'accompagne»، بعد «Et lundi, c'est un jour férié, non ?» و بعد «Je vais faire un gâteau»."}
+{"type":"match","prompt":"هر روز را به چیزی که دربارهٔ آن گفته می‌شود وصل کن.","left":["دوشنبه","چهارشنبه","پس‌فردا","امشب"],"right":["جشن مدرسه است","مرد زودتر از سر کار راه می‌افتد","روز تعطیل رسمی است","کلاس لئا ساعت ۸ شروع می‌شود","زن دیر به خانه می‌آید"],"pairs":[[0,2],[1,3],[2,0],[3,1]],"explanation_fa":"در گفتگو می‌شنویم: «lundi, c'est un jour férié»، «le mercredi, Léa commence à 8 heures»، «après-demain, il y a la fête de l'école» و «Ce soir, je pars du bureau en avance»."}
+listening A:
+{"type":"mcq","prompt":"زن الان کجاست؟","options":["در خانه","سر کار","در مدرسهٔ لئا","در فروشگاه"],"correct":1,"explanation_fa":"وقتی مرد می‌پرسد «Tu es où, en ce moment ?»، زن جواب می‌دهد: «Au bureau.»، یعنی سر کار است."}
+{"type":"num","prompt":"با برنامهٔ تازه، کلاس لئا چهارشنبه‌ها ساعت چند شروع می‌شود؟","answer":"8","accepted":["8","huit"],"explanation_fa":"مرد می‌گوید: «le mercredi, Léa commence à 8 heures»، یعنی ساعت هشت."}
+{"type":"tf","prompt":"دوشنبه مدرسه تعطیل است.","correct":true,"explanation_fa":"زن می‌پرسد دوشنبه تعطیل رسمی است یا نه و مرد جواب می‌دهد: «Oui, pas d'école.»، یعنی آره، مدرسه تعطیل است."}
+{"type":"tf","prompt":"مرد امشب دیر به خانه می‌آید.","correct":false,"explanation_fa":"مرد می‌گوید: «Ce soir, je pars du bureau en avance.»، یعنی امشب زودتر از سر کار راه می‌افتد."}
+{"type":"mcq","prompt":"پس‌فردا در مدرسه چه خبر است؟","options":["امتحان آخر سال","جلسهٔ پدر و مادرها","جشن مدرسه","کلاس آشپزی"],"correct":2,"explanation_fa":"مرد می‌گوید: «après-demain, il y a la fête de l'école»، یعنی پس‌فردا جشن مدرسه است."}
+listening B:
+{"type":"mcq","prompt":"چرا برنامهٔ هفتگی لئا عوض شده است؟","options":["معلمش عوض شده است","تعداد شاگردها عوض شده است","مدرسه‌اش عوض شده است","دوشنبه تعطیل است"],"correct":1,"explanation_fa":"مرد می‌گوید: «le nombre d'élèves a changé»، یعنی تعداد شاگردها عوض شده است."}
+{"type":"tf","prompt":"زن چهارشنبه‌ها صبح زود کار می‌کند.","correct":true,"explanation_fa":"زن می‌گوید: «le mercredi, je travaille tôt !»، یعنی چهارشنبه‌ها صبح زود کار می‌کنم."}
+{"type":"tf","prompt":"زن می‌خواهد برای جشن مدرسه یک کیک بخرد.","correct":false,"explanation_fa":"زن می‌گوید: «Je vais faire un gâteau.»، یعنی خودش کیک درست می‌کند، نه این‌که بخرد."}
+{"type":"mcq","prompt":"مرد بعد از کار چه کار می‌کند؟","options":["به مدرسه زنگ می‌زند","یک کیک می‌خرد","به خانه می‌رود و می‌خوابد","می‌رود دنبال لئا"],"correct":3,"explanation_fa":"مرد می‌گوید: «Je vais chercher Léa.»، یعنی می‌روم دنبال لئا."}

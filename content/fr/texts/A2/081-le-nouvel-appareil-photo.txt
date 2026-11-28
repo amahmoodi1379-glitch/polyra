@@ -1,0 +1,37 @@
+code: fr-a2-t081
+title: Le nouvel appareil photo
+band: 2
+kind: phone_call
+sentences:
+A: Allô, papa ? | الو، بابا؟
+B: Bonjour Julie ! J'ai un problème avec mon nouvel appareil photo. | سلام ژولی! با دوربین عکاسی تازه‌ام مشکل دارم.
+B: J'ai pris des photos, mais je ne les vois pas sur l'écran de mon ordinateur. | عکس گرفته‌ام، ولی روی صفحهٔ کامپیوترم نمی‌بینمشان.
+A: Tu as téléchargé l'application de l'appareil photo ? | اپلیکیشنِ دوربین را دانلود کرده‌ای؟
+B: Une application ? Non. Où est-ce que je la trouve ? | اپلیکیشن؟ نه. کجا پیدایش کنم؟
+A: Sur le site de la marque. | روی سایتِ مارکِ دوربین.
+B: Voilà, je suis sur le site. Mais c'est en anglais ! | خب، الان روی سایتم. ولی انگلیسی است!
+A: Ce n'est pas grave : en haut, tu peux choisir « français ». | مهم نیست: آن بالا می‌توانی «فرانسوی» را انتخاب کنی.
+B: Ah, c'est mieux ! J'ai téléchargé l'application, et je vois mes photos ! | آهان، این بهتر شد! اپلیکیشن را دانلود کردم و عکس‌هایم را می‌بینم!
+B: Demain, on va voir une exposition d'art avec ta mère. Je vais prendre des photos des{des-contr} peintures ! | فردا با مادرت به یک نمایشگاه هنری می‌رویم. از نقاشی‌ها عکس می‌گیرم!
+A: Attention : dans certains musées, les photos sont interdites ! | حواست باشد: در بعضی موزه‌ها عکس گرفتن ممنوع است!
+B: Ah bon ? Je vais demander à l'entrée{entrée-2}. | جدی؟ دمِ در ورودی می‌پرسم.
+A: Bon courage avec ton appareil photo, papa ! | با دوربینت موفق باشی، بابا!
+reading A:
+{"type":"mcq","prompt":"پدر چرا به ژولی زنگ می‌زند؟","options":["دوربین تازه‌اش را گم کرده است","می‌خواهد با او به موزه برود","عکس‌هایش را روی کامپیوتر نمی‌بیند","کامپیوترش روشن نمی‌شود"],"correct":2,"explanation_fa":"پدر می‌گوید: «J'ai pris des photos, mais je ne les vois pas sur l'écran de mon ordinateur.»، یعنی عکس‌هایش را روی صفحهٔ کامپیوتر نمی‌بیند."}
+{"type":"tf","prompt":"سایت مارک دوربین اول به زبان انگلیسی است.","correct":true,"explanation_fa":"پدر روی سایت می‌گوید: «Mais c'est en anglais !»، یعنی ولی انگلیسی است."}
+{"type":"tf","prompt":"پدر اپلیکیشن دوربین را از قبل روی کامپیوترش داشت.","correct":false,"explanation_fa":"وقتی ژولی دربارهٔ اپلیکیشن می‌پرسد، پدر جواب می‌دهد: «Une application ? Non.»؛ یعنی آن را نداشت و بعد دانلودش کرد."}
+{"type":"find","prompt":"کدام جمله می‌گوید پدر فردا کجا می‌رود؟","correct_sentence":9,"explanation_fa":"پدر می‌گوید: «Demain, on va voir une exposition d'art avec ta mère.»، یعنی فردا با مادرت به یک نمایشگاه هنری می‌رویم."}
+reading B:
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Demain, on va voir une {{1}} d'art avec ta mère. Je vais prendre des photos des {{2}} !","bank":["exposition","peintures","application","écrans","marque"],"answers":["exposition","peintures"],"explanation_fa":"پدر می‌گوید: «on va voir une exposition d'art avec ta mère. Je vais prendre des photos des peintures !»، یعنی به یک نمایشگاه هنری می‌رویم و از نقاشی‌ها عکس می‌گیرم."}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["پدر سایت مارک دوربین را پیدا می‌کند.","ژولی می‌پرسد اپلیکیشن را دانلود کرده یا نه.","پدر عکس‌هایش را روی کامپیوتر می‌بیند.","پدر می‌گوید با دوربین تازه‌اش مشکل دارد."],"correct_order":[3,1,0,2],"explanation_fa":"اول «J'ai un problème avec mon nouvel appareil photo»، بعد «Tu as téléchargé l'application de l'appareil photo ?»، بعد «je suis sur le site» و آخر «je vois mes photos»."}
+{"type":"mcq","prompt":"ژولی دربارهٔ موزه‌ها چه می‌گوید؟","options":["ورود به موزه‌ها رایگان است","موزه‌ها فردا بسته‌اند","در موزه‌ها اپلیکیشن لازم است","در بعضی موزه‌ها عکس گرفتن ممنوع است"],"correct":3,"explanation_fa":"ژولی می‌گوید: «dans certains musées, les photos sont interdites !»، یعنی در بعضی موزه‌ها عکس گرفتن ممنوع است."}
+listening A:
+{"type":"mcq","prompt":"پدر فردا با چه کسی به نمایشگاه می‌رود؟","options":["با ژولی","با مادر ژولی","با دوستش","با برادرش"],"correct":1,"explanation_fa":"پدر می‌گوید: «on va voir une exposition d'art avec ta mère»، یعنی با مادرِ ژولی می‌رود."}
+{"type":"tf","prompt":"اول، پدر نمی‌توانست عکس‌هایش را روی کامپیوتر ببیند.","correct":true,"explanation_fa":"پدر می‌گوید: «je ne les vois pas sur l'écran de mon ordinateur»، یعنی عکس‌ها را روی صفحهٔ کامپیوتر نمی‌بینم."}
+{"type":"tf","prompt":"پدر فردا به یک کنسرت می‌رود.","correct":false,"explanation_fa":"پدر می‌گوید: «Demain, on va voir une exposition d'art»؛ یعنی فردا به نمایشگاه هنری می‌رود، نه کنسرت."}
+{"type":"mcq","prompt":"به گفتهٔ ژولی، پدر کجای سایت می‌تواند زبان فرانسوی را انتخاب کند؟","options":["بالای صفحه","پایین صفحه","روی جعبهٔ دوربین","توی اپلیکیشن"],"correct":0,"explanation_fa":"ژولی می‌گوید: «en haut, tu peux choisir « français »»، یعنی آن بالا می‌توانی فرانسوی را انتخاب کنی."}
+listening B:
+{"type":"mcq","prompt":"پدر اپلیکیشن را از کجا پیدا می‌کند؟","options":["از سایت موزه","از سایت مارک دوربین","از تلفن ژولی","از ایمیل مادر ژولی"],"correct":1,"explanation_fa":"ژولی می‌گوید اپلیکیشن «Sur le site de la marque» است، یعنی روی سایت مارک دوربین."}
+{"type":"tf","prompt":"پدر می‌خواهد در نمایشگاه از نقاشی‌ها عکس بگیرد.","correct":true,"explanation_fa":"پدر می‌گوید: «Je vais prendre des photos des peintures !»، یعنی از نقاشی‌ها عکس می‌گیرم."}
+{"type":"tf","prompt":"سایت مارک دوربین فقط به زبان انگلیسی است.","correct":false,"explanation_fa":"ژولی می‌گوید: «en haut, tu peux choisir « français »»؛ پس سایت به زبان فرانسوی هم هست."}
+{"type":"tf","prompt":"پدر می‌خواهد دمِ در ورودی موزه دربارهٔ عکس گرفتن بپرسد.","correct":true,"explanation_fa":"پدر می‌گوید: «Je vais demander à l'entrée.»، یعنی دمِ در ورودی می‌پرسم."}

@@ -1,0 +1,39 @@
+code: fr-a2-t087
+title: Ne me mens pas !
+band: 2
+kind: phone_call
+sentences:
+A: Allô, Hugo ? C'est maman. Tout va bien ? | الو، هوگو؟ مامانم. همه‌چیز خوب است؟
+B: Oui, tout va bien. | آره، همه‌چیز خوب است.
+A: Tu as donné à manger au chat ? | به گربه غذا دادی؟
+B: Oui, ce matin et ce soir. | آره، امروز صبح و امشب.
+A: Et ton exercice de mathématiques ? Tu l'as fini ? | تمرین ریاضی‌ات چی؟ تمامش کردی؟
+B: Presque ! Je suis en train de le faire. | تقریباً! دارم انجامش می‌دهم.
+A: Hugo, ne me mens pas ! | هوگو، به من دروغ نگو!
+B: Ce n'est pas un mensonge, maman ! | دروغ نیست، مامان!
+A: Bon. Ton père rentre de Lyon ce soir, mais avec la neige, il va mettre du temps. D'habitude, le voyage dure{durer} deux heures. | باشد. بابات امشب از لیون برمی‌گردد، ولی با این برف، راهش طول می‌کشد. معمولاً سفر دو ساعت طول می‌کشد.
+B: Et toi, tu rentres quand ? | تو کی برمی‌گردی؟
+A: Samedi matin. Ici, à Bordeaux, j'ai encore deux réunions. | شنبه صبح. این‌جا در بوردو هنوز دو تا جلسه دارم.
+B: D'accord. Maman, j'ai faim... Je rêve d'une pizza ! | باشد. مامان، گرسنه‌ام... دلم یک پیتزا می‌خواهد!
+A: Il y a de la soupe dans le réfrigérateur ! | توی یخچال سوپ هست!
+B: De la soupe ? Bon, d'accord. | سوپ؟ خب، باشد.
+A: Je t'embrasse ! | می‌بوسمت!
+reading A:
+{"type":"mcq","prompt":"مادر برای چه به هوگو زنگ می‌زند؟","options":["تا بگوید امشب به خانه برمی‌گردد","تا برای هوگو پیتزا سفارش بدهد","تا بپرسد در خانه همه‌چیز خوب است","تا بگوید پدر در لیون می‌ماند"],"correct":2,"explanation_fa":"مادر می‌پرسد: «Tout va bien ?» و بعد دربارهٔ گربه، تمرین ریاضی و شام هوگو سؤال می‌کند."}
+{"type":"tf","prompt":"هوگو به گربه غذا داده است.","correct":true,"explanation_fa":"وقتی مادر دربارهٔ گربه می‌پرسد، هوگو جواب می‌دهد: «Oui, ce matin et ce soir.»، یعنی صبح و امشب به آن غذا داده است."}
+{"type":"tf","prompt":"پدر هوگو امشب از بوردو برمی‌گردد.","correct":false,"explanation_fa":"مادر می‌گوید: «Ton père rentre de Lyon ce soir»؛ پدر از لیون برمی‌گردد و خود مادر در بوردو است."}
+{"type":"find","prompt":"کدام جمله می‌گوید مادر کی به خانه برمی‌گردد؟","correct_sentence":10,"explanation_fa":"مادر می‌گوید: «Samedi matin.»، یعنی شنبه صبح برمی‌گردد."}
+reading B:
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Bon. Ton père rentre de Lyon ce soir, mais avec la {{1}}, il va mettre du {{2}}.","bank":["neige","temps","pizza","soupe","mensonge"],"answers":["neige","temps"],"explanation_fa":"مادر می‌گوید: «avec la neige, il va mettre du temps»، یعنی با این برف، راهش طول می‌کشد."}
+{"type":"match","prompt":"هر کس را به چیزی که در گفتگو دربارهٔ او گفته می‌شود وصل کن.","left":["پدر","مادر","هوگو"],"right":["شنبه صبح برمی‌گردد","دارد تمرین ریاضی‌اش را انجام می‌دهد","امشب از لیون برمی‌گردد","برای شام سوپ می‌پزد"],"pairs":[[0,2],[1,0],[2,1]],"explanation_fa":"مادر می‌گوید: «Ton père rentre de Lyon ce soir» و دربارهٔ خودش «Samedi matin»، و هوگو می‌گوید: «Je suis en train de le faire»."}
+{"type":"mcq","prompt":"هوگو دلش چه غذایی می‌خواهد؟","options":["سوپ","پیتزا","مرغ","ساندویچ"],"correct":1,"explanation_fa":"هوگو می‌گوید: «Je rêve d'une pizza !»، یعنی دلم یک پیتزا می‌خواهد."}
+listening A:
+{"type":"mcq","prompt":"مادر هوگو الان کجاست؟","options":["در لیون","در بوردو","در پاریس","در خانه"],"correct":1,"explanation_fa":"مادر می‌گوید: «Ici, à Bordeaux, j'ai encore deux réunions.»، یعنی الان در بوردو است."}
+{"type":"tf","prompt":"هوگو تمرین ریاضی‌اش را تمام کرده است.","correct":false,"explanation_fa":"هوگو می‌گوید: «Presque ! Je suis en train de le faire.»، یعنی هنوز تمامش نکرده و دارد انجامش می‌دهد."}
+{"type":"tf","prompt":"به خاطر برف، راه پدر طول می‌کشد.","correct":true,"explanation_fa":"مادر می‌گوید: «avec la neige, il va mettre du temps»، یعنی با این برف، راهش طول می‌کشد."}
+{"type":"num","prompt":"سفر پدر معمولاً چند ساعت طول می‌کشد؟","answer":"2","accepted":["2","deux"],"explanation_fa":"مادر می‌گوید: «D'habitude, le voyage dure deux heures.»، یعنی معمولاً دو ساعت."}
+listening B:
+{"type":"mcq","prompt":"توی یخچال چه غذایی هست؟","options":["پیتزا","سالاد","مرغ","سوپ"],"correct":3,"explanation_fa":"مادر می‌گوید: «Il y a de la soupe dans le réfrigérateur !»، یعنی توی یخچال سوپ هست."}
+{"type":"tf","prompt":"هوگو می‌گوید دروغ نمی‌گوید.","correct":true,"explanation_fa":"هوگو می‌گوید: «Ce n'est pas un mensonge, maman !»، یعنی دروغ نیست، مامان."}
+{"type":"tf","prompt":"مادر جمعه شب به خانه برمی‌گردد.","correct":false,"explanation_fa":"مادر می‌گوید: «Samedi matin.»، یعنی شنبه صبح برمی‌گردد، نه جمعه شب."}
+{"type":"num","prompt":"مادر در بوردو هنوز چند جلسه دارد؟","answer":"2","accepted":["2","deux"],"explanation_fa":"مادر می‌گوید: «j'ai encore deux réunions»، یعنی هنوز دو تا جلسه دارم."}

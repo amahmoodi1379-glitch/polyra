@@ -1,0 +1,32 @@
+code: fr-a2-t080
+title: Bon week-end !
+band: 1
+kind: dialogue
+sentences:
+A: Tu as reçu l'invitation de Thomas ? | دعوت‌نامهٔ توما به دستت رسید؟
+B: Oui ! Il fête ses 40 ans samedi soir, chez lui. | آره! شنبه شب توی خانه‌اش چهل‌سالگی‌اش را جشن می‌گیرد. | tts: Oui ! Il fête ses quarante ans samedi soir, chez lui.
+A: Tu y vas ? | تو می‌روی؟
+B: Bien sûr ! Thomas est toujours joyeux, et il adore faire la fête. | معلوم است! توما همیشه شاد و سرحال است و عاشق مهمانی و خوش‌گذرانی است.
+A: Moi, je ne peux pas : samedi, je pars à Lyon, au mariage de ma cousine. | من نمی‌توانم: شنبه به لیون می‌روم، به عروسی دخترخاله‌ام.
+B: Tu peux lui envoyer un message. | می‌توانی برایش یک پیام بفرستی.
+A: Bonne idée. Bon week-end ! | فکر خوبی است. آخر هفتهٔ خوبی داشته باشی!
+B: Merci, toi aussi ! | ممنون، تو هم همین‌طور!
+reading A:
+{"type":"mcq","prompt":"توما شنبه شب چه کار می‌کند؟","options":["به عروسی دخترخاله‌اش می‌رود","چهل‌سالگی‌اش را جشن می‌گیرد","با قطار به لیون می‌رود","برای دوستانش پیام می‌فرستد"],"correct":1,"explanation_fa":"مرد می‌گوید: «Il fête ses 40 ans samedi soir, chez lui.»، یعنی توما شنبه شب چهل‌سالگی‌اش را جشن می‌گیرد."}
+{"type":"tf","prompt":"مرد به مهمانی توما می‌رود.","correct":true,"explanation_fa":"زن می‌پرسد «Tu y vas ?» و مرد جواب می‌دهد: «Bien sûr !»، یعنی معلوم است که می‌روم."}
+{"type":"tf","prompt":"زن هم به مهمانی توما می‌رود.","correct":false,"explanation_fa":"زن می‌گوید: «Moi, je ne peux pas»، یعنی من نمی‌توانم بیایم، چون به عروسی در لیون می‌رود."}
+{"type":"find","prompt":"کدام جمله می‌گوید توما عاشق مهمانی و خوش‌گذرانی است؟","correct_sentence":3,"explanation_fa":"مرد می‌گوید: «il adore faire la fête»، یعنی توما عاشق مهمانی و خوش‌گذرانی است."}
+reading B:
+{"type":"tf","prompt":"زن شنبه در شهر خودش می‌ماند.","correct":false,"explanation_fa":"زن می‌گوید: «samedi, je pars à Lyon»، یعنی شنبه به لیون می‌رود."}
+{"type":"tf","prompt":"توما مهمانی را در خانهٔ خودش می‌گیرد.","correct":true,"explanation_fa":"مرد می‌گوید توما شنبه شب جشن می‌گیرد، «chez lui»، یعنی در خانهٔ خودش."}
+{"type":"match","prompt":"هر کس را به کاری که شنبه می‌کند وصل کن.","left":["توما","زن","مرد"],"right":["به مهمانی توما می‌رود","جشن می‌گیرد","سر کار می‌رود","به عروسی می‌رود"],"pairs":[[0,1],[1,3],[2,0]],"explanation_fa":"توما «fête ses 40 ans»، زن «au mariage de ma cousine» به لیون می‌رود و مرد به مهمانی توما می‌رود."}
+listening A:
+{"type":"num","prompt":"توما چند سالش می‌شود؟","answer":"40","accepted":["40","quarante"],"explanation_fa":"مرد می‌گوید: «Il fête ses 40 ans»، یعنی توما چهل‌سالگی‌اش را جشن می‌گیرد."}
+{"type":"tf","prompt":"زن برای یک عروسی به لیون می‌رود.","correct":true,"explanation_fa":"زن می‌گوید: «je pars à Lyon, au mariage de ma cousine»، یعنی به لیون می‌روم، به عروسی دخترخاله‌ام."}
+{"type":"tf","prompt":"زن برای کارش به لیون می‌رود.","correct":false,"explanation_fa":"زن می‌گوید به لیون می‌رود، «au mariage de ma cousine»، یعنی برای عروسی دخترخاله‌اش، نه برای کار."}
+{"type":"mcq","prompt":"مرد به زن چه پیشنهادی می‌کند؟","options":["با او به مهمانی برود","برای توما هدیه بخرد","برای توما پیام بفرستد","شنبه به توما زنگ بزند"],"correct":2,"explanation_fa":"مرد می‌گوید: «Tu peux lui envoyer un message.»، یعنی می‌توانی برایش یک پیام بفرستی."}
+listening B:
+{"type":"dict","sentence":5}
+{"type":"tf","prompt":"مهمانی توما در یک رستوران است.","correct":false,"explanation_fa":"مرد می‌گوید مهمانی «chez lui» است، یعنی در خانهٔ خود توما."}
+{"type":"tf","prompt":"مرد می‌گوید توما همیشه شاد و سرحال است.","correct":true,"explanation_fa":"مرد می‌گوید: «Thomas est toujours joyeux»، یعنی توما همیشه شاد و سرحال است."}
+{"type":"mcq","prompt":"مهمانی توما کی است؟","options":["جمعه شب","شنبه صبح","یکشنبه ظهر","شنبه شب"],"correct":3,"explanation_fa":"مرد می‌گوید: «Il fête ses 40 ans samedi soir»، یعنی مهمانی شنبه شب است."}

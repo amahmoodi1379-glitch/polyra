@@ -1,0 +1,37 @@
+code: fr-a2-t086
+title: Louis bouge tout le temps !
+band: 2
+kind: email
+sentences:
+- Salut Anne ! | سلام آن!
+- Merci pour ton message. Ici, tout va bien, mais nous sommes très fatigués ! | ممنون از پیامت. این‌جا همه‌چیز خوب است، ولی خیلی خسته‌ایم!
+- Louis a maintenant un{un-num} an, et il marche depuis deux semaines. | لویی حالا یک سالش است و دو هفته است که راه می‌رود.
+- Il bouge tout le temps ! | مدام وول می‌خورد!
+- Il pousse les chaises dans la cuisine et il tire les cheveux de sa sœur. | صندلی‌ها را توی آشپزخانه هل می‌دهد و موهای خواهرش را می‌کشد.
+- Sur notre lit, il saute et il rit. | روی تخت ما بالا و پایین می‌پرد و می‌خندد.
+- Hier, il a découvert l'escalier : maintenant, il veut monter seul ! | دیروز پله‌ها را کشف کرد: حالا می‌خواهد تنهایی بالا برود!
+- Avec son père, il construit des tours{tour-f} avec des boîtes. | با پدرش با جعبه‌ها برج می‌سازد.
+- À table, il laisse tomber sa cuillère par terre dix fois par repas ! | سر میز، هر وعده ده بار قاشقش را می‌اندازد زمین!
+- Et il veut tout toucher : la semaine dernière, il a touché le four chaud. | می‌خواهد به همه‌چیز دست بزند: هفتهٔ پیش به فرِ داغ دست زد.
+- Heureusement, il ne s'est pas brûlé ! | خوشبختانه نسوخت!
+- Viens nous voir bientôt ! | زود بیا ما را ببین!
+- Bises, Sophie | می‌بوسمت، سوفی
+reading A:
+{"type":"mcq","prompt":"سوفی در این ایمیل بیشتر دربارهٔ چه می‌نویسد؟","options":["کار تازهٔ شوهرش","کارهای پسر کوچکش","خانهٔ تازه‌شان","مهمانی تولد لویی"],"correct":1,"explanation_fa":"سوفی بیشتر از لویی می‌نویسد، مثلاً: «Louis a maintenant un an»، «Il bouge tout le temps !» و «il saute et il rit»."}
+{"type":"tf","prompt":"لویی دو هفته است که راه می‌رود.","correct":true,"explanation_fa":"سوفی می‌نویسد: «il marche depuis deux semaines»، یعنی دو هفته است که راه می‌رود."}
+{"type":"tf","prompt":"لویی هفتهٔ پیش دستش را سوزاند.","correct":false,"explanation_fa":"سوفی می‌نویسد لویی به فر داغ دست زد، ولی «Heureusement, il ne s'est pas brûlé !»، یعنی خوشبختانه نسوخت."}
+{"type":"find","prompt":"کدام جمله می‌گوید لویی با پدرش چه بازی‌ای می‌کند؟","correct_sentence":7,"explanation_fa":"سوفی می‌نویسد: «Avec son père, il construit des tours avec des boîtes.»، یعنی با پدرش با جعبه‌ها برج می‌سازد."}
+reading B:
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"À table, il laisse {{1}} sa cuillère par terre dix {{2}} par repas !","bank":["tomber","fois","sauter","heures","bouger"],"answers":["tomber","fois"],"explanation_fa":"سوفی می‌نویسد: «il laisse tomber sa cuillère par terre dix fois par repas !»، یعنی هر وعده ده بار قاشقش را می‌اندازد زمین."}
+{"type":"order","prompt":"این‌ها را به ترتیبی که در ایمیل آمده بچین.","items":["از قاشق سر میز می‌گوید.","از هل دادن صندلی‌ها می‌گوید.","از پله‌ها می‌گوید.","از فرِ داغ می‌گوید."],"correct_order":[1,2,0,3],"explanation_fa":"اول «Il pousse les chaises»، بعد «il a découvert l'escalier»، بعد «il laisse tomber sa cuillère» و آخر «il a touché le four chaud»."}
+{"type":"match","prompt":"هر چیز را به کاری که لویی با آن می‌کند وصل کن.","left":["صندلی‌ها","موهای خواهرش","تخت","قاشق"],"right":["رویش بالا و پایین می‌پرد","آن را می‌اندازد زمین","آن‌ها را هل می‌دهد","با آن‌ها برج می‌سازد","آن‌ها را می‌کشد"],"pairs":[[0,2],[1,4],[2,0],[3,1]],"explanation_fa":"سوفی می‌نویسد: «Il pousse les chaises»، «il tire les cheveux de sa sœur»، «Sur notre lit, il saute» و «il laisse tomber sa cuillère par terre»."}
+listening A:
+{"type":"num","prompt":"چند هفته است که لویی راه می‌رود؟","answer":"2","accepted":["2","deux"],"explanation_fa":"سوفی می‌گوید: «il marche depuis deux semaines»، یعنی دو هفته است که راه می‌رود."}
+{"type":"tf","prompt":"لویی روی تخت پدر و مادرش می‌پرد.","correct":true,"explanation_fa":"سوفی می‌گوید: «Sur notre lit, il saute et il rit.»، یعنی روی تخت ما می‌پرد و می‌خندد."}
+{"type":"tf","prompt":"لویی نمی‌خواهد از پله‌ها بالا برود.","correct":false,"explanation_fa":"سوفی می‌گوید: «maintenant, il veut monter seul !»، یعنی حالا می‌خواهد تنهایی از پله‌ها بالا برود."}
+{"type":"mcq","prompt":"لویی با پدرش با چه چیزی برج می‌سازد؟","options":["با کتاب‌ها","با صندلی‌ها","با جعبه‌ها","با قاشق‌ها"],"correct":2,"explanation_fa":"سوفی می‌گوید: «il construit des tours avec des boîtes»، یعنی با جعبه‌ها برج می‌سازد."}
+listening B:
+{"type":"num","prompt":"لویی سر هر وعدهٔ غذا چند بار قاشقش را می‌اندازد؟","answer":"10","accepted":["10","dix"],"explanation_fa":"سوفی می‌گوید: «dix fois par repas»، یعنی هر وعده ده بار."}
+{"type":"mcq","prompt":"سوفی و خانواده‌اش این روزها چه حالی دارند؟","options":["مریض‌اند","ناراحت‌اند","حوصله‌شان سر رفته","خیلی خسته‌اند"],"correct":3,"explanation_fa":"سوفی می‌گوید: «tout va bien, mais nous sommes très fatigués !»، یعنی همه‌چیز خوب است، ولی خیلی خسته‌ایم."}
+{"type":"tf","prompt":"لویی موهای پدرش را می‌کشد.","correct":false,"explanation_fa":"سوفی می‌گوید: «il tire les cheveux de sa sœur»، یعنی لویی موهای خواهرش را می‌کشد، نه پدرش."}
+{"type":"tf","prompt":"سوفی از آن می‌خواهد زود به دیدنشان بیاید.","correct":true,"explanation_fa":"سوفی می‌گوید: «Viens nous voir bientôt !»، یعنی زود بیا ما را ببین."}

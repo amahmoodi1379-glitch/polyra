@@ -1,0 +1,35 @@
+code: fr-a2-t083
+title: Un colis chez la voisine
+band: 2
+kind: phone_call
+sentences:
+A: Allô ? | الو؟
+B: Bonjour, madame Martin. C'est Louis Dubois, votre voisin. | سلام خانم مارتن. لویی دوبوا هستم، همسایه‌تان.
+B: Le facteur a laissé un papier : mon colis est chez vous ? | نامه‌رسان یک برگه گذاشته: بسته‌ام پیش شماست؟
+A: Oui, c'est un gros colis ! Il y a aussi du courrier pour vous : deux enveloppes et une carte postale. | بله، یک بستهٔ بزرگ است! چند نامه هم برایتان آمده: دو پاکت و یک کارت‌پستال.
+B: Une carte postale ? De qui ? | کارت‌پستال؟ از طرف کی؟
+A: Je ne lis pas le courrier de mes voisins ! Mais il y a une photo de Rome et un timbre d'Italie. | من نامه‌های همسایه‌هایم را نمی‌خوانم! ولی رویش عکس رم هست و یک تمبر ایتالیا.
+B: Ah, c'est ma fille ! Elle fait un stage dans un journal à Rome depuis septembre. | آهان، از دخترم است! از سپتامبر در یک روزنامه در رم کارآموزی می‌کند.
+A: Le colis est lourd ! | بسته سنگین است!
+B: Ce sont des livres. Je peux passer ce soir, vers 19 heures ? | چند تا کتاب است. می‌توانم امشب حدود ساعت ۱۹ بیایم؟ | tts: Ce sont des livres. Je peux passer ce soir, vers dix-neuf heures ?
+A: Bien sûr ! Venez prendre un café, on va discuter un peu ! | حتماً! بیایید یک قهوه بخوریم و کمی گپ بزنیم!
+B: Avec plaisir ! Je vais vous montrer le premier article de ma fille. | با کمال میل! اولین مقالهٔ دخترم را هم نشانتان می‌دهم.
+reading A:
+{"type":"mcq","prompt":"لویی چرا به همسایه‌اش زنگ می‌زند؟","options":["می‌خواهد او را به قهوه دعوت کند","بستهٔ پستی‌اش پیش اوست","کلید خانه‌اش را گم کرده است","می‌خواهد برایش کتاب بفرستد"],"correct":1,"explanation_fa":"لویی می‌پرسد: «mon colis est chez vous ?»، یعنی بسته‌ام پیش شماست؟"}
+{"type":"tf","prompt":"همسایه نامه‌های لویی را خوانده است.","correct":false,"explanation_fa":"همسایه می‌گوید: «je ne lis pas le courrier de mes voisins !»، یعنی من نامه‌های همسایه‌هایم را نمی‌خوانم."}
+{"type":"tf","prompt":"دختر لویی در رم کارآموزی می‌کند.","correct":true,"explanation_fa":"لویی می‌گوید: «Elle fait un stage dans un journal à Rome»، یعنی دخترم در یک روزنامه در رم کارآموزی می‌کند."}
+{"type":"find","prompt":"کدام جمله می‌گوید روی کارت‌پستال چه چیزهایی هست؟","correct_sentence":5,"explanation_fa":"همسایه می‌گوید: «il y a une photo de Rome et un timbre d'Italie»، یعنی رویش عکس رم و یک تمبر ایتالیا هست."}
+reading B:
+{"type":"match","prompt":"هر چیز را به توضیحش در گفتگو وصل کن.","left":["بسته","کارت‌پستال","دختر لویی"],"right":["عکس رم رویش است","پیش نامه‌رسان مانده است","سنگین است و تویش کتاب است","در یک روزنامه کارآموزی می‌کند"],"pairs":[[0,2],[1,0],[2,3]],"explanation_fa":"همسایه می‌گوید «Le colis est lourd !» و لویی «Ce sont des livres»، روی کارت‌پستال «une photo de Rome» است و دختر لویی «fait un stage dans un journal»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Oui, c'est un gros {{1}} ! Il y a aussi du {{2}} pour vous : deux enveloppes et une carte postale.","bank":["colis","courrier","enveloppes","timbres","lire"],"answers":["colis","courrier"],"explanation_fa":"همسایه می‌گوید: «c'est un gros colis ! Il y a aussi du courrier pour vous»، یعنی یک بستهٔ بزرگ است و چند نامه هم برایتان آمده."}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["لویی می‌گوید دخترش در رم است.","همسایه از بسته و نامه‌ها می‌گوید.","لویی خودش را معرفی می‌کند.","همسایه لویی را به قهوه دعوت می‌کند."],"correct_order":[2,1,0,3],"explanation_fa":"اول «C'est Louis Dubois, votre voisin»، بعد «c'est un gros colis»، بعد «c'est ma fille ! Elle fait un stage ... à Rome» و آخر «Venez prendre un café»."}
+listening A:
+{"type":"mcq","prompt":"تمبر کارت‌پستال مال کدام کشور است؟","options":["فرانسه","اسپانیا","ایتالیا","سوئیس"],"correct":2,"explanation_fa":"همسایه می‌گوید: «un timbre d'Italie»، یعنی یک تمبر ایتالیا."}
+{"type":"num","prompt":"لویی امشب حدود ساعت چند پیش همسایه می‌رود؟","answer":"19","accepted":["19","dix-neuf","19h"],"explanation_fa":"لویی می‌گوید: «Je peux passer ce soir, vers 19 heures ?»، یعنی امشب حدود ساعت نوزده."}
+{"type":"tf","prompt":"توی بسته کتاب است.","correct":true,"explanation_fa":"لویی دربارهٔ بسته می‌گوید: «Ce sont des livres.»، یعنی چند تا کتاب است."}
+{"type":"tf","prompt":"همسایه نمی‌خواهد لویی امشب پیشش برود.","correct":false,"explanation_fa":"همسایه می‌گوید: «Bien sûr ! Venez prendre un café»، یعنی حتماً بیایید یک قهوه بخوریم."}
+listening B:
+{"type":"mcq","prompt":"دختر لویی از کی در رم است؟","options":["از ماه پیش","از ژوئن","از دیروز","از سپتامبر"],"correct":3,"explanation_fa":"لویی می‌گوید: «Elle fait un stage dans un journal à Rome depuis septembre.»، یعنی از سپتامبر."}
+{"type":"mcq","prompt":"همسایه لویی را به چه دعوت می‌کند؟","options":["یک شام","یک قهوه","یک چای","یک کنسرت"],"correct":1,"explanation_fa":"همسایه می‌گوید: «Venez prendre un café»، یعنی بیایید یک قهوه بخوریم."}
+{"type":"tf","prompt":"برای لویی سه پاکت نامه آمده است.","correct":false,"explanation_fa":"همسایه می‌گوید: «deux enveloppes et une carte postale»، یعنی دو پاکت و یک کارت‌پستال."}
+{"type":"tf","prompt":"لویی می‌خواهد اولین مقالهٔ دخترش را به همسایه نشان بدهد.","correct":true,"explanation_fa":"لویی می‌گوید: «je vais vous montrer le premier article de ma fille»، یعنی اولین مقالهٔ دخترم را نشانتان می‌دهم."}

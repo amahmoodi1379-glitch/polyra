@@ -1,0 +1,35 @@
+code: fr-a2-t088
+title: Le silence de la campagne
+band: 2
+kind: email
+sentences:
+- Salut Chloé ! | سلام کلوئه!
+- Je suis à la campagne, chez ma tante, pour une semaine. | یک هفته‌ای آمده‌ام روستا، خانهٔ خاله‌ام.
+- À Paris, il y a toujours du bruit : les voitures, les voisins, la télévision du{du-contr} café en bas... | در پاریس همیشه سروصدا هست: ماشین‌ها، همسایه‌ها، تلویزیونِ کافهٔ پایینِ خانه...
+- Ici, seuls les oiseaux font du bruit le matin ! | این‌جا فقط پرنده‌ها صبح‌ها سروصدا می‌کنند!
+- Et la nuit, c'est le silence. | شب‌ها هم سکوت است.
+- Cette année, j'ai beaucoup travaillé, alors j'avais besoin d'une pause. | امسال خیلی کار کردم، برای همین به یک استراحت نیاز داشتم.
+- Le matin, je lis dans le jardin. L'après-midi, je marche dans la forêt et je fais une pause près du{du-contr} lac. | صبح‌ها توی باغ کتاب می‌خوانم. بعدازظهرها در جنگل پیاده‌روی می‌کنم و کنار دریاچه کمی استراحت می‌کنم.
+- Ça me fait du bien ! | حالم را خیلی خوب می‌کند!
+- Tu n'as pas pu venir avec moi, mais ça ne fait rien. | نتوانستی با من بیایی، ولی اشکالی ندارد.
+- L'année prochaine, on viendra ensemble ! | سال دیگر با هم می‌آییم!
+- Bises et à la prochaine ! Léa | می‌بوسمت، تا دفعهٔ بعد! لئا
+reading A:
+{"type":"mcq","prompt":"لئا چرا به روستا رفته است؟","options":["چون خاله‌اش مریض است","چون در پاریس کار پیدا نکرد","چون همسایه‌هایش را دوست ندارد","چون به استراحت نیاز داشت"],"correct":3,"explanation_fa":"لئا می‌نویسد: «j'ai beaucoup travaillé, alors j'avais besoin d'une pause»، یعنی خیلی کار کردم و به استراحت نیاز داشتم."}
+{"type":"tf","prompt":"در پاریس همیشه سروصدا هست.","correct":true,"explanation_fa":"لئا می‌نویسد: «À Paris, il y a toujours du bruit»، یعنی در پاریس همیشه سروصدا هست."}
+{"type":"tf","prompt":"کلوئه با لئا به روستا آمده است.","correct":false,"explanation_fa":"لئا می‌نویسد: «Tu n'as pas pu venir avec moi»، یعنی کلوئه نتوانسته با او بیاید."}
+{"type":"find","prompt":"کدام جمله می‌گوید شب‌ها در روستا چطور است؟","correct_sentence":4,"explanation_fa":"لئا می‌نویسد: «Et la nuit, c'est le silence.»، یعنی شب‌ها سکوت است."}
+reading B:
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Ici, seuls les oiseaux font du {{1}} le matin ! Et la nuit, c'est le {{2}}.","bank":["bruit","silence","lac","voisins","pause"],"answers":["bruit","silence"],"explanation_fa":"لئا می‌نویسد: «Ici, seuls les oiseaux font du bruit le matin ! Et la nuit, c'est le silence.»"}
+{"type":"order","prompt":"این‌ها را به ترتیبی که در ایمیل آمده بچین.","items":["از کتاب خواندن در باغ می‌گوید.","پیشنهاد می‌کند سال دیگر با هم بیایند.","از سروصدای پاریس می‌گوید.","از سکوت شب‌ها می‌گوید."],"correct_order":[2,3,0,1],"explanation_fa":"اول «À Paris, il y a toujours du bruit»، بعد «la nuit, c'est le silence»، بعد «je lis dans le jardin» و آخر «L'année prochaine, on viendra ensemble !»."}
+{"type":"match","prompt":"هر زمان را به چیزی که لئا دربارهٔ آن می‌نویسد وصل کن.","left":["صبح‌ها","بعدازظهرها","شب‌ها"],"right":["سکوت است","در باغ کتاب می‌خواند","در جنگل پیاده‌روی می‌کند","تلویزیون می‌بیند"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"لئا می‌نویسد: «Le matin, je lis dans le jardin»، «L'après-midi, je marche dans la forêt» و «la nuit, c'est le silence»."}
+listening A:
+{"type":"mcq","prompt":"لئا چند وقت در روستا می‌ماند؟","options":["دو هفته","یک ماه","یک هفته","سه روز"],"correct":2,"explanation_fa":"لئا می‌گوید: «Je suis à la campagne, chez ma tante, pour une semaine.»، یعنی یک هفته."}
+{"type":"mcq","prompt":"لئا در روستا کجا می‌ماند؟","options":["خانهٔ خاله‌اش","خانهٔ مادربزرگش","خانهٔ کلوئه","یک هتل کوچک"],"correct":0,"explanation_fa":"لئا می‌گوید: «chez ma tante»، یعنی خانهٔ خاله‌ام."}
+{"type":"tf","prompt":"لئا امسال کم کار کرده است.","correct":false,"explanation_fa":"لئا می‌گوید: «Cette année, j'ai beaucoup travaillé»، یعنی امسال خیلی کار کردم."}
+{"type":"tf","prompt":"زندگی در روستا حال لئا را خوب می‌کند.","correct":true,"explanation_fa":"لئا بعد از تعریف روزهایش می‌گوید: «Ça me fait du bien !»، یعنی حالم را خیلی خوب می‌کند."}
+listening B:
+{"type":"mcq","prompt":"لئا بعدازظهرها کجا کمی استراحت می‌کند؟","options":["توی باغ","توی کافه","کنار دریاچه","توی خانه"],"correct":2,"explanation_fa":"لئا می‌گوید: «je fais une pause près du lac»، یعنی کنار دریاچه کمی استراحت می‌کنم."}
+{"type":"tf","prompt":"در روستا صبح‌ها پرنده‌ها سروصدا می‌کنند.","correct":true,"explanation_fa":"لئا می‌گوید: «seuls les oiseaux font du bruit le matin»، یعنی فقط پرنده‌ها صبح‌ها سروصدا می‌کنند."}
+{"type":"tf","prompt":"لئا از این‌که کلوئه نیامده خیلی ناراحت است.","correct":false,"explanation_fa":"لئا می‌گوید: «mais ça ne fait rien»، یعنی اشکالی ندارد؛ پس ناراحت نیست."}
+{"type":"mcq","prompt":"لئا به کلوئه چه پیشنهادی می‌کند؟","options":["این هفته به روستا بیاید","سال دیگر با هم بیایند","به خاله‌اش زنگ بزند","با او به پاریس برگردد"],"correct":1,"explanation_fa":"لئا می‌گوید: «L'année prochaine, on viendra ensemble !»، یعنی سال دیگر با هم می‌آییم."}

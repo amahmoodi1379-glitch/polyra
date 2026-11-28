@@ -1,0 +1,31 @@
+code: fr-a2-t085
+title: Repas entre voisins
+band: 1
+kind: ad
+sentences:
+- Nouveau dans le quartier ? Vous voulez vous faire des amis ? | تازه به محله آمده‌اید؟ می‌خواهید دوست پیدا کنید؟
+- Le café de la place organise un repas entre voisins le premier vendredi du{du-contr} mois. | کافهٔ میدان اولین جمعهٔ هر ماه یک شام همسایه‌ها ترتیب می‌دهد.
+- Chacun apporte un plat à partager. | هر کس یک غذا برای تقسیم با بقیه می‌آورد.
+- Vous vous intéressez aux langues ? Après le repas, on parle anglais, allemand ou persan ! | به زبان‌ها علاقه دارید؟ بعد از غذا انگلیسی، آلمانی یا فارسی حرف می‌زنیم!
+- Les enfants peuvent accompagner leurs parents. | بچه‌ها می‌توانند همراه پدر و مادرشان بیایند.
+- Prix : 3 euros. Réservation au café. | قیمت: ۳ یورو. رزرو در خود کافه. | tts: Prix : trois euros. Réservation au café.
+reading A:
+{"type":"mcq","prompt":"این آگهی بیشتر برای چه کسانی است؟","options":["آشپزهای رستوران‌های شهر","کسانی که تازه به محله آمده‌اند","معلم‌های زبان انگلیسی","بچه‌های مدرسهٔ محله"],"correct":1,"explanation_fa":"آگهی با این جمله شروع می‌شود: «Nouveau dans le quartier ? Vous voulez vous faire des amis ?»، یعنی تازه به محله آمده‌اید و می‌خواهید دوست پیدا کنید؟"}
+{"type":"tf","prompt":"هر کس یک غذا با خودش می‌آورد.","correct":true,"explanation_fa":"در آگهی آمده: «Chacun apporte un plat à partager.»، یعنی هر کس یک غذا برای تقسیم می‌آورد."}
+{"type":"tf","prompt":"شرکت در این شام ده یورو است.","correct":false,"explanation_fa":"در آگهی آمده: «Prix : 3 euros.»، یعنی قیمت شام سه یورو است، نه ده یورو."}
+{"type":"find","prompt":"کدام جمله می‌گوید بچه‌ها هم می‌توانند بیایند؟","correct_sentence":4,"explanation_fa":"در آگهی آمده: «Les enfants peuvent accompagner leurs parents.»، یعنی بچه‌ها می‌توانند همراه پدر و مادرشان بیایند."}
+reading B:
+{"type":"tf","prompt":"این شام هر هفته برگزار می‌شود.","correct":false,"explanation_fa":"در آگهی آمده شام «le premier vendredi du mois» است، یعنی فقط اولین جمعهٔ هر ماه."}
+{"type":"tf","prompt":"این شام را یک کافه ترتیب می‌دهد.","correct":true,"explanation_fa":"در آگهی آمده: «Le café de la place organise un repas»، یعنی کافهٔ میدان این شام را ترتیب می‌دهد."}
+{"type":"mcq","prompt":"بعد از غذا چه کار می‌کنند؟","options":["با هم آشپزی می‌کنند","به زبان‌های مختلف حرف می‌زنند","با هم فیلم می‌بینند","در کافه می‌رقصند"],"correct":1,"explanation_fa":"در آگهی آمده: «Après le repas, on parle anglais, allemand ou persan !»، یعنی بعد از غذا به چند زبان حرف می‌زنند."}
+{"type":"match","prompt":"هر چیز را به توضیحش در آگهی وصل کن.","left":["قیمت","جای رزرو","زبان‌ها"],"right":["انگلیسی، آلمانی یا فارسی","سه یورو","خود کافه","ده یورو"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"در آگهی آمده: «Prix : 3 euros. Réservation au café.» و «on parle anglais, allemand ou persan»."}
+listening A:
+{"type":"num","prompt":"شرکت در این شام چند یورو است؟","answer":"3","accepted":["3","trois"],"explanation_fa":"گفته می‌شود: «Prix : 3 euros.»، یعنی قیمت سه یورو است."}
+{"type":"tf","prompt":"این شام در مدرسهٔ محله برگزار می‌شود.","correct":false,"explanation_fa":"گفته می‌شود: «Le café de la place organise un repas»؛ یعنی شام در کافهٔ میدان است، نه در مدرسه."}
+{"type":"tf","prompt":"بچه‌ها هم می‌توانند همراه پدر و مادرشان بیایند.","correct":true,"explanation_fa":"گفته می‌شود: «Les enfants peuvent accompagner leurs parents.»، یعنی بچه‌ها می‌توانند همراه پدر و مادرشان بیایند."}
+{"type":"mcq","prompt":"شام کی است؟","options":["هر جمعه شب","آخرین جمعهٔ ماه","اولین جمعهٔ ماه","اولین شنبهٔ ماه"],"correct":2,"explanation_fa":"گفته می‌شود: «le premier vendredi du mois»، یعنی اولین جمعهٔ هر ماه."}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"tf","prompt":"بعد از غذا می‌شود فارسی هم حرف زد.","correct":true,"explanation_fa":"گفته می‌شود: «on parle anglais, allemand ou persan»، یعنی فارسی هم حرف می‌زنند."}
+{"type":"tf","prompt":"بعد از غذا فقط فرانسوی حرف می‌زنند.","correct":false,"explanation_fa":"گفته می‌شود: «on parle anglais, allemand ou persan»، یعنی به انگلیسی، آلمانی یا فارسی حرف می‌زنند، نه فقط فرانسوی."}
+{"type":"mcq","prompt":"برای رزرو کجا باید رفت؟","options":["به کافه","به شهرداری","به کتابخانه","به مدرسهٔ محله"],"correct":0,"explanation_fa":"گفته می‌شود: «Réservation au café.»، یعنی رزرو در خود کافه است."}
