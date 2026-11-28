@@ -19,6 +19,7 @@ celui-là	pron			آن یکی	آن یکی	function	no_card:1
 celle-ci	pron			این یکی (مؤنث)	این یکی (مؤنث)	function	no_card:1
 celle-là	pron			آن یکی (مؤنث)	آن یکی (مؤنث)	function	no_card:1
 ceci	pron			این (چیز)	این (چیز)	function	no_card:1
+ci	adv			این (ce mois-ci: این ماه)	این	function	no_card:1
 mien	pron			مال من	مال من	function	no_card:1
 mienne	pron			مال من (مؤنث)	مال من (مؤنث)	function	no_card:1
 tien	pron			مال تو	مال تو	function	no_card:1

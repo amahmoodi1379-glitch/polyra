@@ -156,7 +156,10 @@ const hash = (text: string) => {
   return h >>> 0;
 };
 
-const VOWEL = /^[aeiouyàâäéèêëîïôöùûüœæh]/iu;
+const VOWEL_LETTER = /^[aeiouyàâäéèêëîïôöùûüœæh]/iu;
+/** Words with an h aspiré take no elision and no liaison: le hasard, la haine, ne hurle pas, cette hauteur. */
+const H_ASPIRE = /^(hasard|haut|hausse|hausser|haine|ha[iï]r|ha[iï]ss|hai[ts]|haricot|hall|hamburger|handica|handball|hangar|harcel|harc[eè]le|hache|hamac|hanche|harpe|hareng|halte|haleter|h[aâ]te|h[aâ]ter|hérisson|héros|hibou|hiérarchie|hippie|hockey|hors|homard|honte|hongr|hoquet|housse|hublot|hutte|huer|huée|huit|hurl|hollande)/iu;
+const VOWEL = { test: (form: string) => VOWEL_LETTER.test(form) && !H_ASPIRE.test(form) };
 
 /**
  * Whether a French option can follow the word before the gap, so the form alone does not rule it out: after

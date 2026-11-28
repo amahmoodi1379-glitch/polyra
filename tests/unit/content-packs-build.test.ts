@@ -11,7 +11,7 @@ import { buildGrammar } from "@/server/content/packs/grammar";
 import { germanAdjectiveForms, Morph } from "@/server/content/packs/morph";
 import { buildSentences, opensSentence } from "@/server/content/packs/sentences";
 import { buildTables } from "@/server/content/packs/tables";
-import { nearMeaning, verbDistractors } from "@/server/content/packs/distractors";
+import { fitsAfter, nearMeaning, verbDistractors } from "@/server/content/packs/distractors";
 import { checkWordPack, frequencyRanks, type PackWord } from "@/server/content/packs/words";
 import { appSettingDefaults } from "@/server/settings/app-catalog";
 
@@ -568,6 +568,17 @@ describe("French verb phrases in every person, and verb forms Lexique lacks", ()
     expect(codes("Prends ton temps.")).toEqual(["prendre son temps"]);
     expect(codes("Ça te plaît ?")).toEqual(["ça me plaît"]);
     expect(codes("Je réserverais.")).toEqual(["je", "réserver"]);
+  });
+});
+
+describe("an option after the word before the gap", () => {
+  it("takes a word with an h aspiré as starting with a consonant: le hasard, ne hurle, but l'homme", () => {
+    const noun = { pos: "noun", gender: "m" };
+    expect(fitsAfter("fr", "le", "hasard", noun)).toBe(true);
+    expect(fitsAfter("fr", "l'", "hasard", noun)).toBe(false);
+    expect(fitsAfter("fr", "ne", "hurle", { pos: "verb" })).toBe(true);
+    expect(fitsAfter("fr", "l'", "homme", noun)).toBe(true);
+    expect(fitsAfter("fr", "le", "homme", noun)).toBe(false);
   });
 });
 
