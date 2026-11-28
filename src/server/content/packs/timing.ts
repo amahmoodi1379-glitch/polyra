@@ -198,7 +198,6 @@ export const TIMING_MARKERS: Record<LanguageCode, Marker[]> = {
         (/^(avant|sans)$/u.test(lower(tokens[index])) && /^(que|qu')$/u.test(lower(tokens[index + 1]))) ||
         (lower(tokens[index]) === "ce" && lower(tokens[index - 1]) === "à" && /^(que|qu')$/u.test(lower(tokens[index + 1]))),
     },
-    { unit: "fr-b1-aspect", label: "sur le point de", codes: ["sur le point de", "être sur le point de"] },
     { unit: "fr-b1-gerondif", label: "en marchant", match: (tokens, index, context) => lower(tokens[index]) === "en" && isVerb(tokens[index + 1], context) && /ant$/u.test(lower(tokens[index + 1])) },
     { unit: "fr-b1-infinitif-passe", label: "après avoir mangé", pairs: [["après"], ["avoir", "être"]] },
     { unit: "fr-b1-doubles-pronoms", label: "je te le donne، il le lui dit", match: (tokens, index) => doublePronoun(tokens, index) },

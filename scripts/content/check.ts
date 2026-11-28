@@ -10,6 +10,7 @@
  *   npm run content:check -- de --timing  (word sentences, texts and dialogues that use a grammar point before its unit)
  *   npm run content:check -- fr --texts   (each text's and dialogue's length and how deep into the teaching order it reaches)
  *   npm run content:check -- fr --units   (each unit's deepest word of its level against when the unit arrives)
+ *   npm run content:check -- fr --only=sentences/B1/03 --options   (every word sentence with the wrong options it gets)
  *   npm run content:check -- fr --only=sentences/B1/03,texts/B1/0   (a writer's quick check: only these sentence,
  *                                          text, dialogue, find-the-mistake and writing files; words and units always)
  *
@@ -116,6 +117,12 @@ for (const language of languages.length ? languages : (["fr", "de"] as LanguageC
   }
   if (args.includes("--texts")) textReach(pack);
   if (args.includes("--units")) unitReach(pack);
+  if (args.includes("--options")) {
+    console.log("\nWord sentences with their wrong options (written d: or made by the builder):");
+    for (const level of pack.levels)
+      for (const sentence of level.sentences)
+        for (const target of sentence.targets) console.log(`  ${target.target}: ${target.marked_text}  →  ${target.distractors.join(", ")}${target.hint ? `  ${target.hint}` : ""}${target.accepted.length > 1 ? `  (ok: ${target.accepted.slice(1).join(", ")})` : ""}`);
+  }
   if (pack.errors.length > 0) failed = true;
 }
 if (failed) process.exitCode = 1;

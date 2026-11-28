@@ -97,6 +97,46 @@ describe("grammar before its unit", () => {
     ]);
   });
 
+  it("reads the B1 marks in B1 sentences only, and lets je voudrais and «nous les avons» pass", () => {
+    const verbs = words("fr", ["avoir\tverb\t\t\tداشتن\tداشتن\tactions", "faire\tverb\t\t\tانجام دادن\tانجام دادن\tactions", "vouloir\tverb\t\t\tخواستن\tخواستن\tactions", "parler\tverb\t\t\tحرف زدن\tحرف زدن\tactions", "donner\tverb\t\t\tدادن\tدادن\tactions", "mettre\tverb\t\t\tگذاشتن\tگذاشتن\tactions", "réparer\tverb\t\t\tتعمیر کردن\tتعمیر کردن\tactions", "compter\tverb\t\t\tمهم بودن\tمهم بودن\tactions"]);
+    const [cuisine] = words("fr", ["cuisine\tnoun\tf\t\tآشپزخانه\tآشپزخانه\thome"], "A2");
+    const [valise] = words("fr", ["valise\tnoun\tf\t\tچمدان\tچمدان\ttravel"], "B1");
+    const cards = [cuisine, valise];
+    const units = ["plus-que-parfait", "conditionnel", "ne-que", "relatif-dont", "subjonctif", "ce-qui-ce-que", "gerondif", "doubles-pronoms", "faire-infinitif"].map((name, k) => ({ unit_code: `fr-b1-${name}`, level: "B1", order: k + 1 }));
+    const forms = tenseForms("fr", [
+      { tense: "conditionnel présent", forms: { je: "ferais", tu: "voudrais" } },
+      { tense: "subjonctif présent", forms: { je: "que je fasse" } },
+    ]);
+    const b1 = (line: number, text: string): TimingLine => ({ file: "f", line, target: valise, text: "", tokens: tokens(text) });
+    const lines: TimingLine[] = [
+      b1(1, "Il=il avait=avoir déjà=déjà fait=faire sa=son [valise]=valise"),
+      b1(2, "Je=je voudrais=vouloir une=un [valise]=valise"),
+      b1(3, "Je=je ferais=faire ma=mon [valise]=valise"),
+      b1(4, "Je=je n'=ne ai=avoir qu'=que une=un [valise]=valise"),
+      b1(5, "La=le [valise]=valise dont=dont je=je parle=parler"),
+      b1(6, "Il=il faut=falloir que=que je=je fasse=faire ma=mon [valise]=valise"),
+      b1(7, "Ce=ce qui=qui compte=compter c'=ce est=être ma=mon [valise]=valise"),
+      b1(8, "Il=il parle=parler en=en faisant=faire sa=son [valise]=valise"),
+      b1(9, "Je=je te=te la=le donne=donner ta=ton [valise]=valise"),
+      b1(10, "Nous=nous les=le avons=avoir mis=mettre dans=dans la=le [valise]=valise"),
+      b1(11, "Je=je fais=faire réparer=réparer ma=mon [valise]=valise"),
+      { file: "f", line: 12, target: cuisine, text: "", tokens: tokens("Il=il avait=avoir fait=faire la=le [cuisine]=cuisine") },
+    ];
+    // Gate 5: every unit arrives after word 6, so each B1 mark in a sentence of word 2 is early; word 1 is A2.
+    const notes = grammarTiming("fr", lines, units, cards, 5, { words: [...verbs, ...cards], forms });
+    expect(notes.map((note) => [note.line, note.unit])).toEqual([
+      [1, "fr-b1-plus-que-parfait"],
+      [3, "fr-b1-conditionnel"],
+      [4, "fr-b1-ne-que"],
+      [5, "fr-b1-relatif-dont"],
+      [6, "fr-b1-subjonctif"],
+      [7, "fr-b1-ce-qui-ce-que"],
+      [8, "fr-b1-gerondif"],
+      [9, "fr-b1-doubles-pronoms"],
+      [11, "fr-b1-faire-infinitif"],
+    ]);
+  });
+
   it("counts an adjective without an article, but not viele, wenig or nächste Woche", () => {
     const a1 = words("de", ["viel\tadj\t\t\tزیاد\tزیاد\tqualities", "Leute\tnoun\tdie\t\tمردم\tمردم\tpeople\tnumber:pl_only", "Woche\tnoun\tdie\tWochen\tهفته\tهفته\ttime", "Kaffee\tnoun\tder\t\tقهوه\tقهوه\tdrink\tnumber:sg_only"]);
     // kommen is the first A2 card, before the unit arrives.
