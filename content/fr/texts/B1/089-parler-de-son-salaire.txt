@@ -1,0 +1,45 @@
+code: fr-b1-t089
+title: Parler de son salaire
+band: 3
+kind: long_dialogue
+key_words: gérer, mériter, argument, offre, négocier
+sentences:
+A: Monsieur Girard, je voulais savoir si vous aviez quelques minutes pour moi. J'aimerais vous parler de mon salaire. | آقای ژیرار، می‌خواستم بدانم چند دقیقه برای من وقت دارید. دلم می‌خواهد دربارهٔ حقوقم با شما حرف بزنم.
+B: Bien sûr, Nadia, asseyez-vous. Je vous écoute. | البته نادیا، بنشینید. گوش می‌کنم.
+A: Je travaille ici depuis quatre ans, et mon salaire n'a pas changé depuis deux ans. | چهار سال است که اینجا کار می‌کنم و دو سال است که حقوقم تغییری نکرده.
+A: Pourtant, depuis le départ de Paul en septembre, c'est moi qui gère l'équipe. | با این حال، از وقتی پل در سپتامبر رفت، من گروه را اداره می‌کنم.
+B: C'est vrai, et vous le faites très bien. Tout le monde le dit. | درست است، و خیلی هم خوب اداره‌اش می‌کنید. همه این را می‌گویند.
+A: Merci. J'ai aussi formé les deux nouveaux collègues, et je m'occupe maintenant des plus gros clients. | ممنون. دو همکار تازه را هم آموزش داده‌ام و حالا به بزرگ‌ترین مشتری‌ها رسیدگی می‌کنم.
+A: En janvier, vous m'aviez dit qu'on en parlerait de nouveau au printemps. Nous sommes en mai… | ژانویه به من گفته بودید که بهار دوباره درباره‌اش حرف می‌زنیم. الان ماه مه است…
+B: Je sais, je n'ai pas oublié. Vous avez raison de m'en parler. Vous pensez à quel salaire ? | می‌دانم، فراموش نکرده‌ام. حق دارید که موضوع را با من مطرح کنید. به چه حقوقی فکر می‌کنید؟
+A: J'aimerais gagner{gagner-2} 300 euros de plus par mois. Avec mes nouvelles responsabilités, je pense que je le mérite. | دلم می‌خواهد ماهی سیصد یورو بیشتر بگیرم. با مسئولیت‌های تازه‌ام، فکر می‌کنم حقم است. | tts: J'aimerais gagner trois cents euros de plus par mois. Avec mes nouvelles responsabilités, je pense que je le mérite.
+B: Je comprends vos arguments. Mais je dois être franc avec vous : cette année, le budget est très limité. | دلیل‌هایتان را می‌فهمم. ولی باید با شما رک باشم: امسال بودجه خیلی محدود است.
+B: Je peux vous proposer 150 euros tout de suite, et on en discute à nouveau en décembre. | می‌توانم همین حالا صدوپنجاه یورو پیشنهاد کنم و دسامبر دوباره صحبتش را می‌کنیم. | tts: Je peux vous proposer cent cinquante euros tout de suite, et on en discute à nouveau en décembre.
+A: C'est la moitié de ce que je demande. Et je dois vous dire qu'une autre entreprise m'a fait une offre le mois dernier. | این نصف چیزی است که می‌خواهم. باید این را هم بگویم که ماه پیش یک شرکت دیگر به من پیشنهاد کار داده است.
+B: Ah bon ? Je ne savais pas que vous cherchiez ailleurs. | جدی؟ نمی‌دانستم دنبال جای دیگری هستید.
+A: Je ne cherchais pas, ils m'ont appelée eux-mêmes. Mais je préfère rester ici : j'aime mon travail et l'équipe. | دنبالش نبودم، خودشان به من زنگ زدند. ولی ترجیح می‌دهم همین‌جا بمانم: کارم و گروهم را دوست دارم.
+B: Bon. Et si on disait 200 euros dès juin, et une formation pour apprendre à diriger une équipe ? | خب. اگر بگوییم دویست یورو از ژوئن، به‌علاوهٔ یک دورهٔ آموزشی برای یاد گرفتن اداره کردن گروه، چطور است؟ | tts: Bon. Et si on disait deux cents euros dès juin, et une formation pour apprendre à diriger une équipe ?
+A: Avec un jour de travail à la maison par semaine ? | با یک روز در هفته کار از خانه؟
+B: Vous savez négocier, Nadia ! D'accord, mais je dois d'abord en parler au directeur. | شما بلدید چانه بزنید، نادیا! باشد، ولی اول باید با مدیر کل صحبت کنم.
+A: Bien sûr. Quand est-ce que j'aurai une réponse ? | البته. کی جواب می‌گیرم؟
+B: Avant vendredi, je vous le promets. Je vous enverrai ma proposition par e-mail. | تا قبل از جمعه، قول می‌دهم. پیشنهادم را با ایمیل برایتان می‌فرستم.
+B: Et entre nous… je suis content que vous restiez avec nous. | و بین خودمان بماند… خوشحالم که پیش ما می‌مانید.
+reading A:
+{"type":"mcq","prompt":"Pourquoi Nadia veut-elle parler à Monsieur Girard ?","prompt_fa":"چرا نادیا می‌خواهد با آقای ژیرار حرف بزند؟","options":["Pour lui dire qu'elle quitte l'entreprise.","Pour lui demander de gagner plus d'argent.","Pour se plaindre d'un collègue.","Pour lui présenter un nouveau client."],"correct":1,"explanation_fa":"نادیا می‌گوید: «J'aimerais vous parler de mon salaire» و «J'aimerais gagner 300 euros de plus par mois»."}
+{"type":"tf","prompt":"Depuis septembre, Nadia a plus de travail qu'avant.","prompt_fa":"از سپتامبر کار نادیا بیشتر از قبل شده است.","correct":true,"explanation_fa":"نادیا می‌گوید: «depuis le départ de Paul en septembre, c'est moi qui gère l'équipe» و دو همکار تازه را هم آموزش داده است."}
+{"type":"tf","prompt":"Nadia cherchait un autre travail depuis longtemps.","prompt_fa":"نادیا مدت‌ها بود دنبال کار دیگری می‌گشت.","correct":false,"explanation_fa":"نادیا می‌گوید: «Je ne cherchais pas, ils m'ont appelée eux-mêmes.»"}
+{"type":"find","prompt":"Quelle phrase rappelle une promesse que Monsieur Girard avait faite ?","prompt_fa":"کدام جمله قولی را یادآوری می‌کند که آقای ژیرار داده بود؟","correct_sentence":6,"explanation_fa":"نادیا می‌گوید: «En janvier, vous m'aviez dit qu'on en parlerait de nouveau au printemps.»"}
+reading B:
+{"type":"ctx","word":"franc","prompt":"« je dois être franc avec vous » : Monsieur Girard veut…","prompt_fa":"«je dois être franc avec vous»: آقای ژیرار می‌خواهد…","options":["parler plus tard.","dire la vérité clairement.","raconter une histoire drôle.","parler moins fort."],"correct":1,"explanation_fa":"«franc» یعنی رک؛ آقای ژیرار بی‌پرده می‌گوید که بودجه «très limité» است."}
+{"type":"order","prompt":"Mettez les propositions dans l'ordre de la discussion.","prompt_fa":"پیشنهادها را به ترتیبی که در گفتگو آمده بچینید.","items":["Monsieur Girard propose 200 euros et une formation.","Nadia demande 300 euros de plus.","Nadia demande un jour de travail à la maison.","Monsieur Girard propose 150 euros."],"correct_order":[1,3,0,2],"explanation_fa":"اول نادیا «300 euros de plus» می‌خواهد، آقای ژیرار «150 euros» پیشنهاد می‌کند، بعد «200 euros dès juin, et une formation» و در آخر نادیا «un jour de travail à la maison» می‌خواهد."}
+{"type":"cloze","prompt":"Complétez la phrase de Nadia.","prompt_fa":"جملهٔ نادیا را کامل کنید.","text_with_gaps":"J'ai aussi {{1}} les deux nouveaux collègues, et je m'{{2}} maintenant des plus gros clients.","bank":["formé","occupe","appelé","parle","vendu"],"answers":["formé","occupe"],"explanation_fa":"نادیا می‌گوید: «J'ai aussi formé les deux nouveaux collègues, et je m'occupe maintenant des plus gros clients.»"}
+listening A:
+{"type":"num","prompt":"Depuis combien d'années Nadia travaille-t-elle dans l'entreprise ?","prompt_fa":"نادیا چند سال است در این شرکت کار می‌کند؟","answer":"4","accepted":["4","quatre"],"explanation_fa":"نادیا می‌گوید: «Je travaille ici depuis quatre ans»."}
+{"type":"mcq","prompt":"Que dit Monsieur Girard du budget ?","prompt_fa":"آقای ژیرار دربارهٔ بودجه چه می‌گوید؟","options":["Il est plus grand que l'année dernière.","Il est très limité cette année.","Il dépend des clients.","Il n'y a plus de budget."],"correct":1,"explanation_fa":"آقای ژیرار می‌گوید: «cette année, le budget est très limité»."}
+{"type":"tf","prompt":"Une autre entreprise a fait une offre à Nadia.","prompt_fa":"یک شرکت دیگر به نادیا پیشنهاد داده است.","correct":true,"explanation_fa":"نادیا می‌گوید: «une autre entreprise m'a fait une offre le mois dernier»."}
+{"type":"tf","prompt":"Monsieur Girard peut tout décider seul, tout de suite.","prompt_fa":"آقای ژیرار می‌تواند همین حالا همه‌چیز را تنهایی تصمیم بگیرد.","correct":false,"explanation_fa":"آقای ژیرار می‌گوید: «je dois d'abord en parler au directeur»."}
+listening B:
+{"type":"mcq","prompt":"Quand Nadia aura-t-elle une réponse ?","prompt_fa":"نادیا کی جواب می‌گیرد؟","options":["En décembre.","Dès juin.","Au printemps prochain.","Avant vendredi."],"correct":3,"explanation_fa":"آقای ژیرار می‌گوید: «Avant vendredi, je vous le promets.»"}
+{"type":"mcq","prompt":"Pourquoi Nadia préfère-t-elle rester ?","prompt_fa":"چرا نادیا ترجیح می‌دهد بماند؟","options":["Parce qu'elle aime son travail et son équipe.","Parce que l'autre salaire est plus petit.","Parce qu'elle habite à côté du bureau.","Parce que Paul revient en septembre."],"correct":0,"explanation_fa":"نادیا می‌گوید: «je préfère rester ici : j'aime mon travail et l'équipe»."}
+{"type":"tf","prompt":"Monsieur Girard trouve que Nadia gère bien l'équipe.","prompt_fa":"آقای ژیرار فکر می‌کند نادیا گروه را خوب اداره می‌کند.","correct":true,"explanation_fa":"آقای ژیرار می‌گوید: «vous le faites très bien. Tout le monde le dit.»"}
+{"type":"tf","prompt":"Monsieur Girard est triste que Nadia reste.","prompt_fa":"آقای ژیرار از ماندن نادیا ناراضی است.","correct":false,"explanation_fa":"آقای ژیرار می‌گوید: «je suis content que vous restiez avec nous»."}

@@ -1,0 +1,41 @@
+code: fr-b1-t096
+title: Une erreur dans mon dossier
+band: 3
+kind: letter
+key_words: rembourser, cheville, transport, copie, délai
+sentences:
+- Madame, Monsieur, | خانم‌ها، آقایان،
+- Le 3 mars, j'ai reçu votre lettre qui me demande de vous rembourser 420 euros. Je pense qu'il s'agit d'une erreur. | سوم مارس نامهٔ شما را دریافت کردم که در آن از من خواسته‌اید ۴۲۰ یورو به شما برگردانم. فکر می‌کنم اشتباهی پیش آمده است. | tts: Le trois mars, j'ai reçu votre lettre qui me demande de vous rembourser quatre cent vingt euros. Je pense qu'il s'agit d'une erreur.
+- Le 12 janvier, j'ai glissé dans l'escalier de la gare et je me suis cassé la cheville. | دوازدهم ژانویه در پله‌های ایستگاه قطار لیز خوردم و مچ پایم شکست. | tts: Le douze janvier, j'ai glissé dans l'escalier de la gare et je me suis cassé la cheville.
+- J'ai été transportée à l'hôpital en ambulance, et j'ai eu une opération le lendemain. | با آمبولانس به بیمارستان برده شدم و فردای آن روز عملم کردند.
+- Comme je ne pouvais pas marcher, le médecin m'a donné une ordonnance pour aller en taxi à mes rendez-vous chez le spécialiste. | چون نمی‌توانستم راه بروم، پزشک برایم نسخه‌ای نوشت که با تاکسی به وقت‌های دکتر متخصص بروم.
+- Pendant six semaines, j'y suis donc allée deux fois par semaine. | برای همین شش هفته، هفته‌ای دو بار آنجا رفتم.
+- Selon votre lettre, ces transports en taxi n'ont pas été demandés par un médecin, et vous ne pouvez donc pas les payer. | طبق نامهٔ شما، این رفت‌وآمدها با تاکسی را پزشک تجویز نکرده و برای همین نمی‌توانید هزینه‌اش را بپردازید.
+- C'est faux : l'ordonnance du docteur Rousseau est du 14 janvier, et je vous l'ai envoyée le 25 février avec mes factures. | این درست نیست: نسخهٔ دکتر روسو تاریخ چهاردهم ژانویه دارد و من آن را بیست‌وپنجم فوریه همراه با فاکتورهایم برایتان فرستادم. | tts: C'est faux : l'ordonnance du docteur Rousseau est du quatorze janvier, et je vous l'ai envoyée le vingt-cinq février avec mes factures.
+- J'ai aussi remarqué une deuxième erreur : la même visite chez le spécialiste, le 20 janvier, apparaît deux fois sur votre lettre. | متوجه اشتباه دومی هم شدم: یک ویزیت متخصص، در بیستم ژانویه، دو بار در نامهٔ شما آمده است. | tts: J'ai aussi remarqué une deuxième erreur : la même visite chez le spécialiste, le vingt janvier, apparaît deux fois sur votre lettre.
+- Vous trouverez avec ce courrier une copie de l'ordonnance et des douze factures de taxi. | همراه این نامه رونوشت نسخه و دوازده فاکتور تاکسی را می‌یابید.
+- Votre lettre me donne un délai de trente jours pour payer. | نامهٔ شما برای پرداخت سی روز به من مهلت داده است.
+- Je vous demande donc de vérifier mon dossier et d'annuler cette demande le plus vite possible. | برای همین از شما می‌خواهم پرونده‌ام را بررسی کنید و هر چه زودتر این درخواست را لغو کنید.
+- Si vous avez besoin d'autres documents, n'hésitez pas à me contacter au 06 72 15 48 30. | اگر به مدرک دیگری نیاز دارید، با شمارهٔ ۰۶ ۷۲ ۱۵ ۴۸ ۳۰ با من تماس بگیرید. | tts: Si vous avez besoin d'autres documents, n'hésitez pas à me contacter au zéro six, soixante-douze, quinze, quarante-huit, trente.
+- Je vous remercie de votre attention. | از توجه شما سپاسگزارم.
+- Cordialement, | با احترام،
+- Inès Lefèvre | اینس لوفور
+reading A:
+{"type":"mcq","prompt":"Pourquoi Inès Lefèvre écrit-elle cette lettre ?","prompt_fa":"اینس لوفور چرا این نامه را می‌نویسد؟","options":["Pour demander un rendez-vous chez un spécialiste.","Pour dire qu'elle ne doit pas payer 420 euros.","Pour se plaindre d'un chauffeur de taxi.","Pour remercier le docteur Rousseau."],"correct":1,"explanation_fa":"اینس می‌نویسد که نامه‌ای گرفته که از او ۴۲۰ یورو خواسته و «Je pense qu'il s'agit d'une erreur.»"}
+{"type":"tf","prompt":"Inès a eu un accident dans l'escalier de la gare.","prompt_fa":"اینس در پله‌های ایستگاه قطار حادثه‌ای داشته است.","correct":true,"explanation_fa":"اینس می‌نویسد: «j'ai glissé dans l'escalier de la gare et je me suis cassé la cheville»."}
+{"type":"tf","prompt":"Inès n'a jamais envoyé l'ordonnance.","prompt_fa":"اینس هیچ‌وقت نسخه را نفرستاده است.","correct":false,"explanation_fa":"اینس می‌نویسد: «je vous l'ai envoyée le 25 février avec mes factures»."}
+{"type":"find","prompt":"Quelle phrase parle d'une autre erreur sur la lettre ?","prompt_fa":"کدام جمله از اشتباه دیگری در نامه حرف می‌زند؟","correct_sentence":8,"explanation_fa":"اینس می‌نویسد: «J'ai aussi remarqué une deuxième erreur : la même visite chez le spécialiste … apparaît deux fois»."}
+reading B:
+{"type":"ctx","word":"délai","prompt":"« Votre lettre me donne un délai de trente jours pour payer » : Inès…","prompt_fa":"«Votre lettre me donne un délai de trente jours pour payer»: اینس…","options":["doit payer dans les trente jours.","a déjà payé trente euros.","paie trente euros par jour.","ne paiera pas avant trente ans."],"correct":0,"explanation_fa":"«délai» یعنی مهلت؛ اینس سی روز وقت دارد که پول را بپردازد."}
+{"type":"order","prompt":"Mettez les événements dans l'ordre.","prompt_fa":"رویدادها را به ترتیب بچینید.","items":["Inès reçoit une lettre qui lui demande 420 euros.","Inès se casse la cheville.","Inès envoie l'ordonnance et ses factures.","Inès a une opération."],"correct_order":[1,3,2,0],"explanation_fa":"«Le 12 janvier» مچ پایش شکست، «le lendemain» عمل شد، «le 25 février» نسخه را فرستاد و «Le 3 mars» نامه را گرفت."}
+{"type":"cloze","prompt":"Complétez la phrase de la lettre.","prompt_fa":"جملهٔ نامه را کامل کنید.","text_with_gaps":"Je vous demande donc de {{1}} mon dossier et d'{{2}} cette demande le plus vite possible.","bank":["vérifier","annuler","payer","ouvrir","envoyer"],"answers":["vérifier","annuler"],"explanation_fa":"اینس می‌نویسد: «Je vous demande donc de vérifier mon dossier et d'annuler cette demande le plus vite possible.»"}
+listening A:
+{"type":"num","prompt":"Combien de factures de taxi Inès envoie-t-elle ?","prompt_fa":"اینس چند فاکتور تاکسی می‌فرستد؟","answer":"12","accepted":["12","douze"],"explanation_fa":"اینس می‌گوید: «une copie de l'ordonnance et des douze factures de taxi»."}
+{"type":"mcq","prompt":"Comment Inès est-elle allée à l'hôpital après sa chute ?","prompt_fa":"اینس بعد از زمین خوردن چطور به بیمارستان رفت؟","options":["En taxi.","À pied.","En ambulance.","Avec son voisin."],"correct":2,"explanation_fa":"اینس می‌گوید: «J'ai été transportée à l'hôpital en ambulance»."}
+{"type":"tf","prompt":"Pendant six semaines, Inès est allée chez le spécialiste deux fois par semaine.","prompt_fa":"اینس شش هفته، هفته‌ای دو بار پیش متخصص رفت.","correct":true,"explanation_fa":"اینس می‌گوید: «Pendant six semaines, j'y suis donc allée deux fois par semaine.»"}
+{"type":"tf","prompt":"Inès pense que la lettre ne contient aucune erreur.","prompt_fa":"اینس فکر می‌کند نامه هیچ اشتباهی ندارد.","correct":false,"explanation_fa":"اینس می‌گوید: «Je pense qu'il s'agit d'une erreur.»"}
+listening B:
+{"type":"mcq","prompt":"Pourquoi Inès devait-elle aller en taxi chez le spécialiste ?","prompt_fa":"چرا اینس باید با تاکسی پیش متخصص می‌رفت؟","options":["Parce qu'elle n'avait pas de voiture.","Parce que le bus était trop cher.","Parce que le spécialiste habitait loin.","Parce qu'elle ne pouvait pas marcher."],"correct":3,"explanation_fa":"اینس می‌گوید: «Comme je ne pouvais pas marcher, le médecin m'a donné une ordonnance pour aller en taxi»."}
+{"type":"mcq","prompt":"Quel jour Inès a-t-elle reçu la lettre ?","prompt_fa":"اینس نامه را چه روزی دریافت کرد؟","options":["Le 12 janvier.","Le 3 mars.","Le 25 février.","Le 20 janvier."],"correct":1,"explanation_fa":"اینس می‌گوید: «Le 3 mars, j'ai reçu votre lettre»."}
+{"type":"tf","prompt":"Inès a eu une opération le lendemain de sa chute.","prompt_fa":"اینس فردای زمین خوردنش عمل شد.","correct":true,"explanation_fa":"اینس می‌گوید: «j'ai eu une opération le lendemain»."}
+{"type":"tf","prompt":"Inès ne veut plus qu'on la contacte.","prompt_fa":"اینس نمی‌خواهد کسی دیگر با او تماس بگیرد.","correct":false,"explanation_fa":"اینس می‌گوید: «n'hésitez pas à me contacter»."}

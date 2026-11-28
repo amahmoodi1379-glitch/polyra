@@ -1,0 +1,42 @@
+code: fr-b1-t085
+title: Un tableau sous le toit
+band: 3
+kind: news
+key_words: tableau-2, voler-2, poussière, gendarme, expert
+sentences:
+- Vingt-cinq ans après le vol{vol-2}, un tableau{tableau-2} volé{voler-2} dans un petit musée de Normandie va enfin rentrer chez lui. | بیست‌وپنج سال پس از دزدی، تابلویی که از موزهٔ کوچکی در نرماندی دزدیده شده بود سرانجام به خانه‌اش برمی‌گردد.
+- La nuit du 3 mars 1999, des voleurs étaient entrés par une fenêtre du musée de la mer, dans un village près de Rouen. | شب سوم مارس ۱۹۹۹، دزدها از یک پنجرهٔ موزهٔ دریا، در روستایی نزدیک روآن، وارد شده بودند. | tts: La nuit du trois mars mille neuf cent quatre-vingt-dix-neuf, des voleurs étaient entrés par une fenêtre du musée de la mer, dans un village près de Rouen.
+- Ils n'avaient pris qu'une seule œuvre : une vue du port que Louis Girard, un peintre de la région, avait peinte en 1890. | فقط یک اثر را برده بودند: منظره‌ای از بندر که لویی ژیرار، نقاشی از همان منطقه، در سال ۱۸۹۰ کشیده بود. | tts: Ils n'avaient pris qu'une seule œuvre : une vue du port que Louis Girard, un peintre de la région, avait peinte en mille huit cent quatre-vingt-dix.
+- Pendant des années, la police l'a cherchée partout, sans aucun résultat. | پلیس سال‌ها همه‌جا دنبالش گشت، بی‌هیچ نتیجه‌ای.
+- Le mois dernier, Nadia et Marc Laurent ont acheté une vieille maison en Bretagne. | ماه گذشته نادیا و مارک لوران خانهٔ قدیمی‌ای در برتانی خریدند.
+- En{en} vidant une petite pièce sous le toit, ils ont trouvé, derrière des boîtes pleines de poussière, un tableau{tableau-2} dans une vieille couverture. | وقتی اتاقک زیر شیروانی را خالی می‌کردند، پشت چند جعبهٔ پر از گرد و خاک، تابلویی پیچیده در یک پتوی کهنه پیدا کردند.
+- « Il était si beau que nous avons cherché son histoire sur internet », raconte Nadia. | نادیا تعریف می‌کند: «آن‌قدر زیبا بود که دنبال سرگذشتش در اینترنت گشتیم.»
+- Leur fils a vite trouvé une photo du tableau{tableau-2} dans une liste d'œuvres volées{voler-2}. | پسرشان خیلی زود عکس تابلو را در فهرستی از آثار دزدیده‌شده پیدا کرد.
+- Le couple a tout de suite appelé les gendarmes. | زن و شوهر فوراً به ژاندارمری زنگ زدند.
+- Deux experts sont venus de Paris : pour eux, il n'y a aucun doute, c'est bien le vrai tableau{tableau-2}. | دو کارشناس از پاریس آمدند: به نظر آن‌ها هیچ شکی نیست، این همان تابلوی اصلی است.
+- Mais comment est-il arrivé en Bretagne ? Pour l'instant, personne ne le sait. | ولی چطور به برتانی رسیده است؟ فعلاً هیچ‌کس نمی‌داند.
+- L'ancien propriétaire de la maison, mort en 2015, vivait seul et parlait peu avec ses voisins. | صاحب قبلی خانه که در سال ۲۰۱۵ درگذشته، تنها زندگی می‌کرد و با همسایه‌هایش کم حرف می‌زد. | tts: L'ancien propriétaire de la maison, mort en deux mille quinze, vivait seul et parlait peu avec ses voisins.
+- Les gendarmes pensent qu'il avait peut-être acheté le tableau{tableau-2} sans connaître son histoire. | ژاندارم‌ها فکر می‌کنند شاید او تابلو را بی‌آنکه سرگذشتش را بداند خریده بوده است.
+- Au village, on prépare déjà la fête. | در روستا از همین حالا تدارک جشن را می‌بینند.
+- « C'est une partie de notre histoire{histoire-2} qui revient », explique le maire, les larmes aux yeux. | شهردار با چشمانی پر از اشک می‌گوید: «تکه‌ای از تاریخ ما دارد برمی‌گردد.»
+- Le musée exposera de nouveau le tableau{tableau-2} dès le 15 juin, et il attend beaucoup de visiteurs cet été. | موزه از پانزدهم ژوئن دوباره تابلو را به نمایش می‌گذارد و امسال تابستان منتظر بازدیدکنندگان زیادی است. | tts: Le musée exposera de nouveau le tableau dès le quinze juin, et il attend beaucoup de visiteurs cet été.
+- Nadia et Marc, eux, seront les invités d'honneur. | نادیا و مارک هم مهمان‌های ویژهٔ این مراسم خواهند بود.
+reading A:
+{"type":"mcq","prompt":"Que raconte cet article ?","prompt_fa":"این خبر چه چیزی را تعریف می‌کند؟","options":["Un couple a vendu un vieux tableau très cher.","Un musée de Normandie a fermé après un vol.","Un couple a trouvé chez lui un tableau volé il y a longtemps.","Un peintre de Bretagne expose ses tableaux à Paris."],"correct":2,"explanation_fa":"خبر می‌گوید: «un tableau volé dans un petit musée de Normandie va enfin rentrer chez lui» و نادیا و مارک آن را در خانه‌شان پیدا کردند."}
+{"type":"tf","prompt":"Les voleurs avaient pris plusieurs tableaux.","prompt_fa":"دزدها چند تابلو برده بودند.","correct":false,"explanation_fa":"خبر می‌گوید: «Ils n'avaient pris qu'une seule œuvre»."}
+{"type":"tf","prompt":"On ne sait pas encore comment le tableau est arrivé en Bretagne.","prompt_fa":"هنوز معلوم نیست تابلو چطور به برتانی رسیده است.","correct":true,"explanation_fa":"خبر می‌گوید: «Pour l'instant, personne ne le sait.»"}
+{"type":"find","prompt":"Quelle phrase dit comment la famille a appris que c'était un tableau volé ?","prompt_fa":"کدام جمله توضیح می‌دهد چطور فهمیدند تابلو دزدی است؟","correct_sentence":7,"explanation_fa":"خبر می‌گوید: «Leur fils a vite trouvé une photo du tableau dans une liste d'œuvres volées.»"}
+reading B:
+{"type":"ctx","word":"poussière","prompt":"« des boîtes pleines de poussière » : ces boîtes…","prompt_fa":"«des boîtes pleines de poussière»: این جعبه‌ها…","options":["étaient là depuis longtemps.","étaient toutes neuves.","venaient du musée.","étaient pleines de photos."],"correct":0,"explanation_fa":"«poussière» یعنی گرد و خاک؛ جعبه‌های پر از خاک مدت‌ها دست‌نخورده آنجا مانده بودند."}
+{"type":"order","prompt":"Mettez les événements dans l'ordre.","prompt_fa":"رویدادها را به ترتیب بچینید.","items":["Le couple appelle les gendarmes.","Des voleurs entrent dans le musée.","Nadia et Marc achètent une maison.","Deux experts viennent voir le tableau."],"correct_order":[1,2,0,3],"explanation_fa":"اول در ۱۹۹۹ «des voleurs étaient entrés»، بعد «ont acheté une vieille maison»، بعد «a tout de suite appelé les gendarmes» و بعد «Deux experts sont venus de Paris»."}
+{"type":"match","prompt":"Associez.","prompt_fa":"به هم وصل کنید.","left":["Louis Girard","Le fils du couple","Le maire"],"right":["a trouvé une photo du tableau.","a peint le tableau.","parle d'une partie de l'histoire du village.","a acheté la maison en 2015."],"pairs":[[0,1],[1,0],[2,2]],"explanation_fa":"لویی ژیرار تابلو را «avait peinte en 1890»، پسر «a vite trouvé une photo du tableau» و شهردار می‌گوید: «C'est une partie de notre histoire qui revient»."}
+listening A:
+{"type":"num","prompt":"En quelle année le tableau a-t-il disparu du musée ?","prompt_fa":"تابلو در چه سالی از موزه ناپدید شد؟","answer":"1999","accepted":["1999","mille neuf cent quatre-vingt-dix-neuf"],"explanation_fa":"می‌شنویم: «La nuit du 3 mars 1999, des voleurs étaient entrés»."}
+{"type":"mcq","prompt":"Où Nadia et Marc ont-ils trouvé le tableau ?","prompt_fa":"نادیا و مارک تابلو را کجا پیدا کردند؟","options":["Dans le jardin de leur maison.","Dans une petite pièce sous le toit.","Dans un marché de Rouen.","Dans la cuisine du voisin."],"correct":1,"explanation_fa":"می‌شنویم: «En vidant une petite pièce sous le toit, ils ont trouvé … un tableau»."}
+{"type":"tf","prompt":"Les experts pensent que c'est le vrai tableau.","prompt_fa":"کارشناس‌ها فکر می‌کنند این تابلوی اصلی است.","correct":true,"explanation_fa":"می‌شنویم: «il n'y a aucun doute, c'est bien le vrai tableau»."}
+{"type":"tf","prompt":"L'ancien propriétaire de la maison avait beaucoup d'amis dans le village.","prompt_fa":"صاحب قبلی خانه در روستا دوستان زیادی داشت.","correct":false,"explanation_fa":"می‌شنویم: «vivait seul et parlait peu avec ses voisins»."}
+listening B:
+{"type":"mcq","prompt":"Que représente le tableau ?","prompt_fa":"تابلو چه چیزی را نشان می‌دهد؟","options":["Un village sous la neige.","Une vieille maison de Bretagne.","Le port.","Le maire du village."],"correct":2,"explanation_fa":"می‌شنویم: «une vue du port que Louis Girard … avait peinte en 1890»."}
+{"type":"mcq","prompt":"Quand pourra-t-on revoir le tableau au musée ?","prompt_fa":"از کی می‌شود دوباره تابلو را در موزه دید؟","options":["Dès le 15 juin.","Dès le 3 mars.","L'été prochain.","Dans vingt-cinq ans."],"correct":0,"explanation_fa":"می‌شنویم: «Le musée exposera de nouveau le tableau dès le 15 juin»."}
+{"type":"tf","prompt":"Nadia et Marc ont appelé les gendarmes une semaine plus tard.","prompt_fa":"نادیا و مارک یک هفته بعد به ژاندارمری زنگ زدند.","correct":false,"explanation_fa":"می‌شنویم: «Le couple a tout de suite appelé les gendarmes.»"}
+{"type":"tf","prompt":"Le maire parle du retour du tableau avec beaucoup d'émotion.","prompt_fa":"شهردار با احساس زیادی از برگشتن تابلو حرف می‌زند.","correct":true,"explanation_fa":"می‌شنویم: «explique le maire, les larmes aux yeux»."}

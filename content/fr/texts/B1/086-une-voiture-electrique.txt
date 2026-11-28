@@ -1,0 +1,47 @@
+code: fr-b1-t086
+title: Une voiture électrique ?
+band: 3
+kind: long_dialogue
+key_words: batterie, recharger, prise, offre, réputation
+sentences:
+A: Hugo, tu as une minute ? J'ai besoin de ton avis : je pense acheter une voiture électrique. | هوگو، یک دقیقه وقت داری؟ به نظرت احتیاج دارم: دارم فکر می‌کنم یک ماشین برقی بخرم.
+B: Ah bon, Camille ? Et ta vieille voiture rouge ? | جدی، کامی؟ پس ماشین قرمز قدیمی‌ات چه؟
+A: Elle est tombée en panne la semaine dernière, et le mécanicien m'a dit que la réparer coûterait plus cher que la voiture ! | هفتهٔ پیش خراب شد و مکانیک گفت تعمیرش از خود ماشین گران‌تر درمی‌آید!
+B: Une électrique, c'est bien, mais c'est cher, non ? | ماشین برقی خوب است، ولی گران است، نه؟
+A: Celle que j'ai vue coûte 30 000 euros. Mais l'État{état-2} donne une aide de 4 000 euros, et le vendeur m'a fait une offre spéciale. | آنی که دیدم سی هزار یورو است. ولی دولت چهار هزار یورو کمک می‌دهد و فروشنده هم یک پیشنهاد ویژه به من داده. | tts: Celle que j'ai vue coûte trente mille euros. Mais l'État donne une aide de quatre mille euros, et le vendeur m'a fait une offre spéciale.
+B: Et la batterie ? On dit qu'elle ne dure pas longtemps. | باتری‌اش چه؟ می‌گویند زیاد عمر نمی‌کند.
+A: Le vendeur m'a expliqué qu'il y avait une garantie de huit ans sur la batterie. | فروشنده برایم توضیح داد که باتری هشت سال گارانتی دارد.
+B: Les vendeurs disent toujours ça… Et où est-ce que tu vas la recharger ? Tu habites au quatrième étage ! | فروشنده‌ها همیشه همین را می‌گویند… تازه کجا می‌خواهی شارژش کنی؟ تو طبقهٔ چهارم زندگی می‌کنی!
+A: Il y a des prises dans le parking de l'immeuble. Une nuit suffit pour recharger complètement la batterie. | توی پارکینگ ساختمان پریز هست. یک شب کافی است تا باتری کاملاً شارژ شود.
+B: D'accord. Mais pour aller chez tes parents à Biarritz, ça fait 700 kilomètres ! | باشد. ولی برای رفتن پیش پدر و مادرت در بیاریتز، هفتصد کیلومتر راه است! | tts: D'accord. Mais pour aller chez tes parents à Biarritz, ça fait sept cents kilomètres !
+A: Il faudra s'arrêter deux fois, une demi-heure. J'en profiterai pour boire un café et me reposer. | باید دو بار نیم ساعت توقف کنم. از فرصت استفاده می‌کنم، یک قهوه می‌خورم و استراحت می‌کنم.
+B: Toi qui conduis toujours six heures sans t'arrêter ? | تو؟ تویی که همیشه شش ساعت یکسره رانندگی می‌کنی؟
+A: Justement, ce n'est pas très prudent. | خب همین دیگر، این کار خیلی عاقلانه نیست.
+B: C'est vrai. Mon frère en a acheté une l'année dernière, et il m'a dit qu'il ne reviendrait jamais à l'essence. | راست می‌گویی. برادرم پارسال یکی خرید و به من گفت دیگر هیچ‌وقت سراغ ماشین بنزینی نمی‌رود.
+A: Tu vois ! | دیدی!
+B: Mais il m'a dit aussi qu'en hiver, la batterie durait beaucoup moins longtemps. | ولی این را هم گفت که زمستان‌ها باتری خیلی زودتر تمام می‌شود.
+A: Je sais, je l'ai lu. Mais l'électricité coûte trois fois moins cher que l'essence, et je fais surtout des petits trajets. | می‌دانم، خوانده‌ام. ولی برق سه برابر از بنزین ارزان‌تر است و من بیشتر مسیرهای کوتاه می‌روم.
+B: Et c'est quelle marque ? | حالا چه مارکی است؟
+A: Une marque française qui a une très bonne réputation. | یک مارک فرانسوی که خیلی خوش‌نام است.
+B: Bon, tu as l'air sûre de toi. Pourquoi tu me demandes mon avis, alors ? | خب، به نظر می‌رسد مطمئنی. پس چرا نظر مرا می‌پرسی؟
+A: Parce que je vais l'essayer samedi, et j'ai besoin de quelqu'un qui pose les questions difficiles au vendeur ! | چون شنبه می‌خواهم امتحانش کنم و به کسی احتیاج دارم که سؤال‌های سخت را از فروشنده بپرسد!
+B: Ah, ça, je sais faire ! À samedi, alors. | آهان، این یکی کار من است! پس تا شنبه.
+reading A:
+{"type":"mcq","prompt":"Pourquoi Camille parle-t-elle à Hugo ?","prompt_fa":"چرا کامی با هوگو حرف می‌زند؟","options":["Elle veut lui vendre sa vieille voiture.","Elle lui demande de réparer sa voiture.","Elle veut connaître son avis sur une voiture.","Elle l'invite chez ses parents à Biarritz."],"correct":2,"explanation_fa":"کامی می‌گوید: «J'ai besoin de ton avis : je pense acheter une voiture électrique.»"}
+{"type":"tf","prompt":"La vieille voiture de Camille ne marche plus.","prompt_fa":"ماشین قدیمی کامی دیگر کار نمی‌کند.","correct":true,"explanation_fa":"کامی می‌گوید: «Elle est tombée en panne la semaine dernière»."}
+{"type":"tf","prompt":"Le frère d'Hugo regrette d'avoir acheté une voiture électrique.","prompt_fa":"برادر هوگو از خریدن ماشین برقی پشیمان است.","correct":false,"explanation_fa":"هوگو می‌گوید برادرش گفته: «qu'il ne reviendrait jamais à l'essence»."}
+{"type":"find","prompt":"Quelle phrase explique où Camille va recharger la voiture ?","prompt_fa":"کدام جمله توضیح می‌دهد کامی ماشین را کجا شارژ می‌کند؟","correct_sentence":8,"explanation_fa":"کامی می‌گوید: «Il y a des prises dans le parking de l'immeuble.»"}
+reading B:
+{"type":"ctx","word":"réputation","prompt":"« Une marque française qui a une très bonne réputation » : cette marque…","prompt_fa":"«Une marque française qui a une très bonne réputation»: این مارک…","options":["est la moins chère de France.","n'existe que depuis un an.","vend seulement des voitures rouges.","est connue pour être bonne."],"correct":3,"explanation_fa":"«réputation» یعنی شهرت و آبرو؛ همه این مارک را خوب می‌دانند."}
+{"type":"match","prompt":"Qui a dit quoi ?","prompt_fa":"چه کسی چه گفته است؟","left":["Le mécanicien","Le vendeur","Le frère d'Hugo"],"right":["La batterie a une garantie de huit ans.","Réparer la voiture coûterait trop cher.","Il ne reprendra jamais une voiture à essence.","La voiture rouge est encore en bon état."],"pairs":[[0,1],[1,0],[2,2]],"explanation_fa":"مکانیک گفته «la réparer coûterait plus cher que la voiture»، فروشنده «il y avait une garantie de huit ans» و برادر هوگو «il ne reviendrait jamais à l'essence»."}
+{"type":"cloze","prompt":"Complétez la phrase de Camille.","prompt_fa":"جملهٔ کامی را کامل کنید.","text_with_gaps":"Il faudra s'arrêter deux fois, une {{1}}. J'en {{2}} pour boire un café et me reposer.","bank":["demi-heure","profiterai","semaine","dormirai","minute"],"answers":["demi-heure","profiterai"],"explanation_fa":"کامی می‌گوید: «Il faudra s'arrêter deux fois, une demi-heure. J'en profiterai pour boire un café et me reposer.»"}
+listening A:
+{"type":"num","prompt":"Combien d'euros donne l'État pour acheter la voiture ?","prompt_fa":"دولت برای خرید ماشین چند یورو کمک می‌کند؟","answer":"4000","accepted":["4000","4 000","quatre mille"],"explanation_fa":"کامی می‌گوید: «l'État donne une aide de 4 000 euros»."}
+{"type":"mcq","prompt":"Quel est le problème de la batterie en hiver, d'après le frère d'Hugo ?","prompt_fa":"به گفتهٔ برادر هوگو، باتری در زمستان چه مشکلی دارد؟","options":["Elle dure moins longtemps.","Elle ne se recharge plus.","Elle coûte plus cher.","Elle fait beaucoup de bruit."],"correct":0,"explanation_fa":"هوگو می‌گوید: «en hiver, la batterie durait beaucoup moins longtemps»."}
+{"type":"tf","prompt":"Camille fait surtout de longs voyages en voiture.","prompt_fa":"کامی بیشتر سفرهای طولانی با ماشین می‌رود.","correct":false,"explanation_fa":"کامی می‌گوید: «je fais surtout des petits trajets»."}
+{"type":"tf","prompt":"Camille va essayer la voiture samedi.","prompt_fa":"کامی شنبه ماشین را امتحان می‌کند.","correct":true,"explanation_fa":"کامی می‌گوید: «je vais l'essayer samedi»."}
+listening B:
+{"type":"mcq","prompt":"Combien de temps faut-il pour recharger complètement la batterie ?","prompt_fa":"شارژ کامل باتری چقدر طول می‌کشد؟","options":["Une demi-heure.","Une nuit.","Deux heures.","Une journée entière."],"correct":1,"explanation_fa":"کامی می‌گوید: «Une nuit suffit pour recharger complètement la batterie.»"}
+{"type":"mcq","prompt":"Pourquoi Camille veut-elle qu'Hugo vienne avec elle samedi ?","prompt_fa":"چرا کامی می‌خواهد هوگو شنبه با او بیاید؟","options":["Pour conduire la voiture à sa place.","Pour payer une partie de la voiture.","Pour aller ensuite à Biarritz.","Pour poser les questions difficiles au vendeur."],"correct":3,"explanation_fa":"کامی می‌گوید: «j'ai besoin de quelqu'un qui pose les questions difficiles au vendeur !»"}
+{"type":"tf","prompt":"Pour aller chez ses parents, Camille devra s'arrêter deux fois.","prompt_fa":"کامی برای رفتن پیش پدر و مادرش باید دو بار توقف کند.","correct":true,"explanation_fa":"کامی می‌گوید: «Il faudra s'arrêter deux fois, une demi-heure.»"}
+{"type":"tf","prompt":"Hugo pense tout de suite que c'est une très bonne idée.","prompt_fa":"هوگو از همان اول فکر می‌کند این فکر خیلی خوبی است.","correct":false,"explanation_fa":"هوگو اول می‌گوید: «Une électrique, c'est bien, mais c'est cher, non ?» و دربارهٔ باتری و شارژ سؤال می‌کند."}

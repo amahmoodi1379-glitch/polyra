@@ -1,0 +1,42 @@
+code: fr-b1-t098
+title: Quatre nuits de lumière
+band: 3
+kind: news
+key_words: bougie, tradition, cathédrale, répétition, transports en commun
+sentences:
+- Du 5 au 8 décembre, Lyon fête sa célèbre Fête des Lumières, et la ville attend près de deux millions de visiteurs en quatre nuits. | از پنجم تا هشتم دسامبر، لیون جشن معروف نورهایش را برگزار می‌کند و شهر در این چهار شب منتظر نزدیک به دو میلیون بازدیدکننده است. | tts: Du cinq au huit décembre, Lyon fête sa célèbre Fête des Lumières, et la ville attend près de deux millions de visiteurs en quatre nuits.
+- Tout a commencé le 8 décembre 1852. | همه‌چیز از هشتم دسامبر ۱۸۵۲ شروع شد. | tts: Tout a commencé le huit décembre mille huit cent cinquante-deux.
+- Ce soir-là, il pleuvait, et la grande fête prévue pour l'arrivée d'une statue sur une colline de la ville a été annulée. | آن شب باران می‌بارید و جشن بزرگی که برای رسیدن یک مجسمه روی یکی از تپه‌های شهر در نظر گرفته بودند، لغو شد.
+- Alors, les habitants ont posé des bougies sur leurs fenêtres, et toute la ville a brillé dans la nuit. | آن‌وقت مردم پشت پنجره‌هایشان شمع گذاشتند و همهٔ شهر در شب درخشید.
+- La tradition continue : le 8 décembre au soir, beaucoup de familles allument encore des bougies chez elles. | این سنت ادامه دارد: شب هشتم دسامبر هنوز خیلی از خانواده‌ها در خانه شمع روشن می‌کنند. | tts: La tradition continue : le huit décembre au soir, beaucoup de familles allument encore des bougies chez elles.
+- Mais aujourd'hui, ce sont surtout les artistes qui font le spectacle. | ولی امروز بیشتر هنرمندان‌اند که نمایش را اجرا می‌کنند.
+- Plus de trente spectacles de lumière et de musique transforment les bâtiments du centre. | بیش از سی نمایش نور و موسیقی ساختمان‌های مرکز شهر را دگرگون می‌کنند.
+- Sur la cathédrale, les pierres semblent bouger et changer de couleur. | روی کلیسای جامع، سنگ‌ها انگار تکان می‌خورند و رنگ عوض می‌کنند.
+- Devant l'Opéra, des danseurs géants dansent avec des tambours, et sur une grande place, une fontaine devient un arbre de lumière. | جلوی ساختمان اپرا، رقصنده‌های غول‌پیکر با صدای طبل می‌رقصند و در یک میدان بزرگ، فواره‌ای به درختی از نور تبدیل می‌شود.
+- Pour préparer tout ça, les artistes ont fait leurs répétitions la nuit, pendant deux semaines. | هنرمندان برای آماده کردن این‌ها دو هفته شب‌ها تمرین کرده‌اند.
+- Avec autant de monde, la sécurité est très importante. | با این همه جمعیت، امنیت خیلی مهم است.
+- Le centre-ville sera fermé aux voitures de 18 heures à minuit. | مرکز شهر از ساعت شش عصر تا نیمه‌شب به روی ماشین‌ها بسته است. | tts: Le centre-ville sera fermé aux voitures de dix-huit heures à minuit.
+- La ville conseille de venir en transports en commun : le métro et les tramways rouleront jusqu'à 2 heures du matin. | شهر توصیه می‌کند با حمل‌ونقل عمومی بیایید: مترو و تراموا تا ساعت دو بامداد کار می‌کنند. | tts: La ville conseille de venir en transports en commun : le métro et les tramways rouleront jusqu'à deux heures du matin.
+- Certaines stations seront fermées pour éviter qu'il y ait trop de monde au même endroit. | بعضی ایستگاه‌ها بسته می‌شوند تا آدم‌ها یک‌جا جمع نشوند.
+- « Venez avec de bonnes chaussures, et tenez bien la main de vos enfants », conseille un policier. | یک مأمور پلیس توصیه می‌کند: «با کفش راحت بیایید و دست بچه‌هایتان را محکم بگیرید.»
+- Les commerçants, eux, ont mis des lumières dans leurs vitrines, et on boit du vin chaud dans les rues. | کاسب‌ها هم ویترین‌هایشان را چراغانی کرده‌اند و مردم در خیابان‌ها شراب گرم می‌نوشند.
+- Pour Maryam, venue de Téhéran avec sa sœur, c'est un rêve : « Je regarde des photos de cette fête depuis des années. Ce soir, enfin, je suis là ! » | برای مریم که با خواهرش از تهران آمده، این یک رؤیاست: «سال‌هاست عکس‌های این جشن را نگاه می‌کنم. امشب بالاخره اینجا هستم!»
+reading A:
+{"type":"mcq","prompt":"De quoi parle cet article ?","prompt_fa":"این خبر دربارهٔ چیست؟","options":["D'une nouvelle cathédrale à Lyon.","D'une grande fête de lumières à Lyon en décembre.","D'un concert à l'Opéra de Lyon.","D'une panne d'électricité à Lyon."],"correct":1,"explanation_fa":"خبر می‌گوید: «Du 5 au 8 décembre, Lyon fête sa célèbre Fête des Lumières»."}
+{"type":"tf","prompt":"La première Fête des Lumières est née à cause de la pluie.","prompt_fa":"اولین جشن نورها به‌خاطر باران به وجود آمد.","correct":true,"explanation_fa":"خبر می‌گوید: «il pleuvait, et la grande fête … a été annulée» و بعد مردم «ont posé des bougies sur leurs fenêtres»."}
+{"type":"tf","prompt":"Les voitures pourront entrer dans le centre-ville toute la nuit.","prompt_fa":"ماشین‌ها تمام شب می‌توانند وارد مرکز شهر شوند.","correct":false,"explanation_fa":"خبر می‌گوید: «Le centre-ville sera fermé aux voitures de 18 heures à minuit.»"}
+{"type":"find","prompt":"Quelle phrase dit comment les familles gardent la tradition ?","prompt_fa":"کدام جمله می‌گوید خانواده‌ها چطور این سنت را نگه می‌دارند؟","correct_sentence":4,"explanation_fa":"خبر می‌گوید: «le 8 décembre au soir, beaucoup de familles allument encore des bougies chez elles»."}
+reading B:
+{"type":"ctx","word":"répétitions","prompt":"« les artistes ont fait leurs répétitions la nuit » : les artistes…","prompt_fa":"«les artistes ont fait leurs répétitions la nuit»: هنرمندان…","options":["ont dormi la nuit.","se sont préparés en essayant leurs spectacles.","ont répété les noms des visiteurs.","ont vendu des bougies."],"correct":1,"explanation_fa":"«répétition» اینجا یعنی تمرین نمایش؛ هنرمندان دو هفته شب‌ها نمایش‌هایشان را تمرین کرده‌اند."}
+{"type":"match","prompt":"Associez chaque lieu à son spectacle.","prompt_fa":"هر جا را به نمایشش وصل کنید.","left":["La cathédrale","L'Opéra","Une grande place"],"right":["Des danseurs géants dansent avec des tambours.","Une fontaine devient un arbre de lumière.","Ses pierres semblent changer de couleur.","Une statue arrive en bateau."],"pairs":[[0,2],[1,0],[2,1]],"explanation_fa":"روی کلیسای جامع «les pierres semblent bouger et changer de couleur»، جلوی اپرا «des danseurs géants dansent avec des tambours» و در میدان «une fontaine devient un arbre de lumière»."}
+{"type":"cloze","prompt":"Complétez le conseil du policier.","prompt_fa":"توصیهٔ پلیس را کامل کنید.","text_with_gaps":"Venez avec de bonnes {{1}}, et tenez bien la {{2}} de vos enfants.","bank":["chaussures","main","bougies","voitures","porte"],"answers":["chaussures","main"],"explanation_fa":"پلیس می‌گوید: «Venez avec de bonnes chaussures, et tenez bien la main de vos enfants»."}
+listening A:
+{"type":"num","prompt":"Combien de nuits dure la fête ?","prompt_fa":"جشن چند شب طول می‌کشد؟","answer":"4","accepted":["4","quatre"],"explanation_fa":"می‌شنویم: «près de deux millions de visiteurs en quatre nuits»."}
+{"type":"mcq","prompt":"Jusqu'à quelle heure le métro roulera-t-il ?","prompt_fa":"مترو تا ساعت چند کار می‌کند؟","options":["Jusqu'à minuit.","Jusqu'à 18 heures.","Jusqu'à 2 heures du matin.","Toute la nuit."],"correct":2,"explanation_fa":"می‌شنویم: «le métro et les tramways rouleront jusqu'à 2 heures du matin»."}
+{"type":"tf","prompt":"La ville conseille de venir en voiture.","prompt_fa":"شهر توصیه می‌کند با ماشین بیایید.","correct":false,"explanation_fa":"می‌شنویم: «La ville conseille de venir en transports en commun»."}
+{"type":"tf","prompt":"Maryam rêvait depuis longtemps de voir cette fête.","prompt_fa":"مریم مدت‌ها آرزو داشت این جشن را ببیند.","correct":true,"explanation_fa":"مریم می‌گوید: «Je regarde des photos de cette fête depuis des années.»"}
+listening B:
+{"type":"mcq","prompt":"Combien de visiteurs la ville attend-elle ?","prompt_fa":"شهر منتظر چند بازدیدکننده است؟","options":["Près de deux mille.","Près de deux millions.","Plus de trente mille.","Près de huit cent mille."],"correct":1,"explanation_fa":"می‌شنویم: «la ville attend près de deux millions de visiteurs»."}
+{"type":"mcq","prompt":"Pourquoi certaines stations seront-elles fermées ?","prompt_fa":"چرا بعضی ایستگاه‌ها بسته می‌شوند؟","options":["Pour faire des répétitions.","À cause de la pluie.","Pour laisser passer les voitures.","Pour éviter qu'il y ait trop de monde au même endroit."],"correct":3,"explanation_fa":"می‌شنویم: «Certaines stations seront fermées pour éviter qu'il y ait trop de monde au même endroit.»"}
+{"type":"tf","prompt":"Maryam est venue à Lyon avec sa sœur.","prompt_fa":"مریم با خواهرش به لیون آمده است.","correct":true,"explanation_fa":"می‌شنویم: «Pour Maryam, venue de Téhéran avec sa sœur»."}
+{"type":"tf","prompt":"Pendant la fête, on ne peut pas boire de vin chaud dans les rues.","prompt_fa":"در طول جشن نمی‌شود در خیابان‌ها شراب گرم نوشید.","correct":false,"explanation_fa":"می‌شنویم: «on boit du vin chaud dans les rues»."}

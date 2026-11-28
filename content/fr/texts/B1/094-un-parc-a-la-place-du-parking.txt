@@ -1,0 +1,47 @@
+code: fr-b1-t094
+title: Un parc à la place du parking
+band: 3
+kind: long_dialogue
+placement: yes
+key_words: pelouse, chêne, se garer, arroser, chantier
+sentences:
+A: Bonsoir à tous, et merci d'être venus si nombreux. Je m'occupe des parcs et des jardins à la mairie. | شب همگی بخیر و ممنون که این‌قدر زیاد آمده‌اید. من در شهرداری مسئول پارک‌ها و باغ‌ها هستم.
+A: Comme vous le savez, le vieux parking derrière l'école va être transformé en parc. Ce projet a été choisi par les habitants l'année dernière. | همان‌طور که می‌دانید، پارکینگ قدیمی پشت مدرسه قرار است به پارک تبدیل شود. این طرح را پارسال خود اهالی انتخاب کردند.
+B: Excusez-moi, Madame. Qu'est-ce qu'il y aura exactement dans ce parc ? | ببخشید، خانم. دقیقاً توی این پارک چه چیزهایی خواهد بود؟
+A: Une grande pelouse, une centaine d'arbres, surtout des chênes, des jeux pour les enfants et des jardins pour ceux qui veulent cultiver leurs légumes. | یک چمن بزرگ، حدود صد درخت، بیشتر بلوط، وسایل بازی برای بچه‌ها و باغچه‌هایی برای کسانی که می‌خواهند سبزی خودشان را بکارند.
+B: Et les voitures ? Aujourd'hui, ce parking a 80 places{place-2}. Où est-ce qu'on va se garer ? | ماشین‌ها چه؟ این پارکینگ الان هشتاد جای پارک دارد. ما کجا پارک کنیم؟ | tts: Et les voitures ? Aujourd'hui, ce parking a quatre-vingts places. Où est-ce qu'on va se garer ?
+A: Un nouveau parking de 100 places{place-2} sera construit à 300 mètres, à côté de la gare. | یک پارکینگ تازهٔ صدجایی در سیصد متری، کنار ایستگاه قطار، ساخته می‌شود. | tts: Un nouveau parking de cent places sera construit à trois cents mètres, à côté de la gare.
+B: Trois cents mètres à pied avec les courses et les enfants… | سیصد متر پیاده با خرید و بچه‌ها…
+A: Je comprends. C'est pourquoi nous garderons dix places{place-2} devant l'école pour les parents et les personnes âgées. | می‌فهمم. برای همین ده جای پارک جلوی مدرسه برای پدر و مادرها و سالمندان نگه می‌داریم.
+B: Autre problème : le bruit. Le soir, des jeunes viendront faire la fête sous nos fenêtres. | یک مشکل دیگر: سروصدا. شب‌ها جوان‌ها می‌آیند زیر پنجره‌هایمان جشن می‌گیرند.
+A: Les portes du parc seront fermées de 22 heures à 7 heures, et il y aura de la lumière partout. | درهای پارک از ساعت ده شب تا هفت صبح بسته می‌شود و همه‌جا هم چراغ خواهد بود. | tts: Les portes du parc seront fermées de vingt-deux heures à sept heures, et il y aura de la lumière partout.
+B: Et en été, il faudra arroser tout ça. Avec quelle eau ? | تابستان هم باید همهٔ این‌ها را آب داد. با کدام آب؟
+A: Bonne question. L'eau de pluie du toit de l'école sera gardée sous la terre, puis utilisée pour la pelouse et les jardins. | سؤال خوبی است. آب باران پشت‌بام مدرسه زیر زمین نگه داشته می‌شود و بعد برای چمن و باغچه‌ها به کار می‌رود.
+B: Ah, c'est intelligent. Et combien tout ça va coûter ? | آهان، فکر هوشمندانه‌ای است. حالا همهٔ این‌ها چقدر خرج دارد؟
+A: Environ un million d'euros. La moitié sera payée par la région. | حدود یک میلیون یورو. نصفش را منطقه می‌پردازد.
+B: Et le chantier commence quand ? | کارهای ساختمانی کی شروع می‌شود؟
+A: En mars, si tout va bien. Le parc ouvrira en octobre. | اگر همه‌چیز خوب پیش برود، در مارس. پارک در اکتبر باز می‌شود.
+B: J'ai une dernière proposition : un petit espace pour les chiens. Il y en a beaucoup dans le quartier. | یک پیشنهاد آخر دارم: یک جای کوچک برای سگ‌ها. توی محله سگ زیاد است.
+A: Très bonne idée, je la note. Elle sera étudiée avec toutes les autres. | فکر خیلی خوبی است، یادداشتش می‌کنم. همراه با بقیهٔ پیشنهادها بررسی می‌شود.
+A: Le plan est affiché à l'entrée{entrée-2} de la mairie, et vous pouvez donner votre avis en ligne jusqu'au 15 février. | نقشه دم در ورودی شهرداری نصب شده و تا پانزدهم فوریه می‌توانید نظرتان را آنلاین بدهید. | tts: Le plan est affiché à l'entrée de la mairie, et vous pouvez donner votre avis en ligne jusqu'au quinze février.
+reading A:
+{"type":"mcq","prompt":"Quel est le but de cette réunion ?","prompt_fa":"هدف این جلسه چیست؟","options":["Choisir un nouveau maire.","Présenter le projet d'un nouveau parc aux habitants.","Construire une nouvelle école.","Vendre le vieux parking à une entreprise."],"correct":1,"explanation_fa":"خانم می‌گوید: «le vieux parking derrière l'école va être transformé en parc» و جزئیات طرح را برای اهالی توضیح می‌دهد."}
+{"type":"tf","prompt":"Ce sont les habitants qui ont choisi ce projet.","prompt_fa":"این طرح را خود اهالی انتخاب کرده‌اند.","correct":true,"explanation_fa":"خانم می‌گوید: «Ce projet a été choisi par les habitants l'année dernière.»"}
+{"type":"tf","prompt":"Le parc restera ouvert toute la nuit.","prompt_fa":"پارک تمام شب باز می‌ماند.","correct":false,"explanation_fa":"خانم می‌گوید: «Les portes du parc seront fermées de 22 heures à 7 heures»."}
+{"type":"find","prompt":"Quelle phrase explique comment on arrosera le parc ?","prompt_fa":"کدام جمله توضیح می‌دهد پارک را چطور آبیاری می‌کنند؟","correct_sentence":11,"explanation_fa":"خانم می‌گوید: «L'eau de pluie du toit de l'école sera gardée sous la terre, puis utilisée pour la pelouse et les jardins.»"}
+{"type":"mcq","prompt":"De quoi l'habitant s'inquiète-t-il d'abord ?","prompt_fa":"اول از همه چه چیزی این ساکن را نگران می‌کند؟","options":["Le prix des légumes.","Les arbres trop grands.","Les places pour se garer.","Les jeux des enfants."],"correct":2,"explanation_fa":"این ساکن اول می‌پرسد: «Où est-ce qu'on va se garer ?»"}
+reading B:
+{"type":"ctx","word":"chantier","prompt":"« Et le chantier commence quand ? » : l'habitant veut savoir quand…","prompt_fa":"«Et le chantier commence quand ?»: این ساکن می‌خواهد بداند کی…","options":["le parc ouvrira.","les travaux commenceront.","la réunion finira.","les arbres arriveront."],"correct":1,"explanation_fa":"«chantier» یعنی کارگاه و کارهای ساختمانی؛ جواب این است که کار «En mars» شروع می‌شود."}
+{"type":"match","prompt":"Associez chaque problème à la réponse de la mairie.","prompt_fa":"هر مشکل را به جواب شهرداری وصل کنید.","left":["Les places de parking","Le bruit le soir","L'eau pour arroser"],"right":["Le parc sera fermé la nuit.","Un nouveau parking à côté de la gare.","L'eau de pluie de l'école.","Plus de policiers dans le quartier."],"pairs":[[0,1],[1,0],[2,2]],"explanation_fa":"برای پارکینگ «Un nouveau parking … à côté de la gare»، برای سروصدا «Les portes du parc seront fermées» و برای آب «L'eau de pluie du toit de l'école»."}
+{"type":"cloze","prompt":"Complétez la description du parc.","prompt_fa":"توصیف پارک را کامل کنید.","text_with_gaps":"Une grande {{1}}, une centaine d'arbres, surtout des {{2}}, des jeux pour les enfants.","bank":["pelouse","chênes","rue","fleurs","maison"],"answers":["pelouse","chênes"],"explanation_fa":"خانم می‌گوید: «Une grande pelouse, une centaine d'arbres, surtout des chênes»."}
+listening A:
+{"type":"num","prompt":"Combien de places aura le nouveau parking ?","prompt_fa":"پارکینگ تازه چند جای پارک خواهد داشت؟","answer":"100","accepted":["100","cent"],"explanation_fa":"خانم می‌گوید: «Un nouveau parking de 100 places sera construit»."}
+{"type":"mcq","prompt":"Combien coûtera le parc ?","prompt_fa":"پارک چقدر خرج دارد؟","options":["Environ cent mille euros.","Environ un million d'euros.","Environ trois cents euros.","Environ dix millions d'euros."],"correct":1,"explanation_fa":"خانم می‌گوید: «Environ un million d'euros.»"}
+{"type":"tf","prompt":"La région va payer une partie du parc.","prompt_fa":"منطقه بخشی از هزینهٔ پارک را می‌پردازد.","correct":true,"explanation_fa":"خانم می‌گوید: «La moitié sera payée par la région.»"}
+{"type":"tf","prompt":"Le parc ouvrira en mars.","prompt_fa":"پارک در مارس باز می‌شود.","correct":false,"explanation_fa":"خانم می‌گوید کار «En mars» شروع می‌شود و «Le parc ouvrira en octobre.»"}
+{"type":"mcq","prompt":"Que propose l'habitant à la fin ?","prompt_fa":"این ساکن در آخر چه پیشنهادی می‌دهد؟","options":["Un espace pour les chiens.","Un parking plus grand.","Des jardins plus petits.","Une fête pour les jeunes."],"correct":0,"explanation_fa":"این ساکن می‌گوید: «J'ai une dernière proposition : un petit espace pour les chiens.»"}
+listening B:
+{"type":"mcq","prompt":"Où les habitants peuvent-ils voir le plan du parc ?","prompt_fa":"اهالی کجا می‌توانند نقشهٔ پارک را ببینند؟","options":["À l'école.","À la gare.","À l'entrée de la mairie.","Dans le vieux parking."],"correct":2,"explanation_fa":"خانم می‌گوید: «Le plan est affiché à l'entrée de la mairie»."}
+{"type":"tf","prompt":"On gardera quelques places de parking devant l'école.","prompt_fa":"چند جای پارک جلوی مدرسه نگه داشته می‌شود.","correct":true,"explanation_fa":"خانم می‌گوید: «nous garderons dix places devant l'école»."}
+{"type":"tf","prompt":"L'habitant pense que l'idée de l'eau de pluie est mauvaise.","prompt_fa":"این ساکن فکر می‌کند ایدهٔ آب باران بد است.","correct":false,"explanation_fa":"این ساکن می‌گوید: «Ah, c'est intelligent.»"}
+{"type":"mcq","prompt":"Jusqu'à quand peut-on donner son avis en ligne ?","prompt_fa":"تا کی می‌شود نظر را آنلاین داد؟","options":["Jusqu'au mois de mars.","Jusqu'au mois d'octobre.","Jusqu'à la fin de la réunion.","Jusqu'au 15 février."],"correct":3,"explanation_fa":"خانم می‌گوید: «vous pouvez donner votre avis en ligne jusqu'au 15 février»."}

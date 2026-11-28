@@ -1,0 +1,45 @@
+code: fr-b1-t090
+title: Une bibliothèque au Sénégal
+band: 3
+kind: letter
+key_words: association, logement, matelas, autorisation, bloquer
+sentences:
+- Chers tous, | عزیزانم،
+- Voilà déjà deux mois que je suis au Sénégal, dans un village à 70 kilomètres de Dakar ! | دو ماه است که در سنگال هستم، در روستایی هفتاد کیلومتری داکار! | tts: Voilà déjà deux mois que je suis au Sénégal, dans un village à soixante-dix kilomètres de Dakar !
+- Comme vous le savez, je suis venue avec une association qui construit une bibliothèque pour l'école du village. | همان‌طور که می‌دانید، با انجمنی آمده‌ام که برای مدرسهٔ روستا کتابخانه می‌سازد.
+- L'école a presque 400 élèves, mais avant notre arrivée, elle n'avait qu'une étagère de vieux livres. | مدرسه نزدیک چهارصد دانش‌آموز دارد، ولی پیش از آمدن ما فقط یک قفسه کتاب کهنه داشت. | tts: L'école a presque quatre cents élèves, mais avant notre arrivée, elle n'avait qu'une étagère de vieux livres.
+- Mon logement est simple : je dors chez une famille, sur un matelas par terre, avec deux coussins comme oreiller. | جای زندگی‌ام ساده است: پیش یک خانواده روی تشکی که روی زمین است می‌خوابم و دو تا کوسن را بالش کرده‌ام.
+- Le soir, nous mangeons tous ensemble du riz au poisson dans la cour. Les enfants m'apprennent leur langue, et moi, je leur apprends des chansons françaises. | شب‌ها همه با هم توی حیاط برنج و ماهی می‌خوریم. بچه‌ها زبانشان را به من یاد می‌دهند و من هم به آن‌ها ترانه‌های فرانسوی یاد می‌دهم.
+- Le travail, lui, n'a pas été facile. | اما کار آسان نبوده است.
+- Des écoles de Lyon nous avaient envoyé 800 livres par bateau, mais ils sont restés bloqués au port de Dakar pendant trois semaines. | چند مدرسه در لیون هشتصد کتاب با کشتی برایمان فرستاده بودند، ولی سه هفته در بندر داکار گیر ماندند. | tts: Des écoles de Lyon nous avaient envoyé huit cents livres par bateau, mais ils sont restés bloqués au port de Dakar pendant trois semaines.
+- Il manquait une autorisation, et personne ne savait qui devait la signer ! | یک مجوز کم بود و هیچ‌کس نمی‌دانست چه کسی باید امضایش کند!
+- Le directeur de l'école est allé quatre fois à Dakar, et chaque fois, on lui a dit de revenir le lendemain. | مدیر مدرسه چهار بار به داکار رفت و هر بار به او گفتند فردا برگردد.
+- Il m'a raconté qu'il n'avait jamais vu autant de papiers pour quelques livres ! | برایم تعریف کرد که هیچ‌وقت این‌همه کاغذبازی برای چند تا کتاب ندیده بود!
+- Finalement, les livres sont arrivés un jeudi matin, sur un vieux camion, sous les cris de joie des enfants. | آخر سر کتاب‌ها یک پنجشنبه صبح با یک کامیون قدیمی رسیدند، میان فریادهای شادی بچه‌ها.
+- Pendant ce temps, nous avions construit les étagères et peint les murs. | در این فاصله ما قفسه‌ها را ساخته بودیم و دیوارها را رنگ زده بودیم.
+- Les élèves avaient choisi les couleurs eux-mêmes. | رنگ‌ها را خود دانش‌آموزها انتخاب کرده بودند.
+- Samedi dernier, tout le village a fêté la nouvelle bibliothèque, avec de la musique, des danses et un long discours du chef du village. | شنبهٔ گذشته همهٔ روستا با موسیقی و رقص و سخنرانی بلند کدخدا برای کتابخانهٔ تازه جشن گرفتند.
+- Une petite fille m'a demandé si elle pouvait emporter un livre chez elle, et j'ai eu les larmes aux yeux. | دختر کوچکی از من پرسید که می‌تواند کتابی را با خودش به خانه ببرد یا نه، و اشک در چشمانم جمع شد.
+- J'ai l'impression d'avoir reçu ici beaucoup plus que ce que j'ai donné. | حس می‌کنم اینجا خیلی بیشتر از آنچه داده‌ام، گرفته‌ام.
+- Je rentre le 20 août. Préparez-vous : j'ai des centaines de photos à vous montrer ! | بیستم اوت برمی‌گردم. آماده باشید: صدها عکس دارم که نشانتان بدهم! | tts: Je rentre le vingt août. Préparez-vous : j'ai des centaines de photos à vous montrer !
+- Je vous embrasse, | می‌بوسمتان،
+- Manon | مانون
+reading A:
+{"type":"mcq","prompt":"Pourquoi Manon est-elle au Sénégal ?","prompt_fa":"مانون چرا در سنگال است؟","options":["Elle fait ses études à Dakar.","Elle aide une association à faire une bibliothèque pour une école.","Elle travaille comme professeur de français à Dakar.","Elle visite sa famille dans un village."],"correct":1,"explanation_fa":"مانون می‌نویسد: «je suis venue avec une association qui construit une bibliothèque pour l'école du village»."}
+{"type":"tf","prompt":"Avant l'arrivée de l'association, l'école avait déjà beaucoup de livres.","prompt_fa":"پیش از آمدن انجمن، مدرسه کتاب‌های زیادی داشت.","correct":false,"explanation_fa":"مانون می‌نویسد: «elle n'avait qu'une étagère de vieux livres»."}
+{"type":"tf","prompt":"Ce sont les élèves qui ont choisi les couleurs des murs.","prompt_fa":"رنگ دیوارها را خود دانش‌آموزها انتخاب کرده‌اند.","correct":true,"explanation_fa":"مانون می‌نویسد: «Les élèves avaient choisi les couleurs eux-mêmes»."}
+{"type":"find","prompt":"Quelle phrase explique pourquoi les livres sont restés au port ?","prompt_fa":"کدام جمله توضیح می‌دهد چرا کتاب‌ها در بندر ماندند؟","correct_sentence":8,"explanation_fa":"مانون می‌نویسد: «Il manquait une autorisation, et personne ne savait qui devait la signer !»"}
+reading B:
+{"type":"ctx","word":"logement","prompt":"« Mon logement est simple » : Manon parle…","prompt_fa":"«Mon logement est simple»: مانون دربارهٔ … حرف می‌زند.","options":["de l'endroit où elle vit.","de son travail à l'école.","de ses repas du soir.","de son voyage en bateau."],"correct":0,"explanation_fa":"«logement» یعنی جای زندگی؛ مانون بعدش می‌گوید: «je dors chez une famille, sur un matelas par terre»."}
+{"type":"order","prompt":"Mettez les événements dans l'ordre.","prompt_fa":"رویدادها را به ترتیب بچینید.","items":["Les livres arrivent sur un vieux camion.","Des écoles de Lyon envoient des livres.","Le village fête la nouvelle bibliothèque.","Le directeur va plusieurs fois à Dakar."],"correct_order":[1,3,0,2],"explanation_fa":"اول مدرسه‌های لیون «nous avaient envoyé 800 livres»، بعد مدیر «est allé quatre fois à Dakar»، بعد کتاب‌ها «sont arrivés … sur un vieux camion» و «Samedi dernier» جشن گرفتند."}
+{"type":"match","prompt":"Associez.","prompt_fa":"به هم وصل کنید.","left":["Les enfants de la famille","Le directeur de l'école","Le chef du village"],"right":["a fait un long discours.","apprennent leur langue à Manon.","est allé quatre fois à Dakar.","a signé l'autorisation."],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"«Les enfants m'apprennent leur langue»، مدیر «est allé quatre fois à Dakar» و جشن «un long discours du chef du village» داشت."}
+listening A:
+{"type":"num","prompt":"Combien de livres les écoles de Lyon ont-elles envoyés ?","prompt_fa":"مدرسه‌های لیون چند کتاب فرستادند؟","answer":"800","accepted":["800","huit cents"],"explanation_fa":"مانون می‌گوید: «nous avaient envoyé 800 livres par bateau»."}
+{"type":"mcq","prompt":"Combien de temps les livres sont-ils restés au port ?","prompt_fa":"کتاب‌ها چه مدت در بندر ماندند؟","options":["Deux mois.","Quatre jours.","Trois semaines.","Une semaine."],"correct":2,"explanation_fa":"مانون می‌گوید: «ils sont restés bloqués au port de Dakar pendant trois semaines»."}
+{"type":"tf","prompt":"Le soir, Manon mange avec sa famille dans la cour.","prompt_fa":"مانون شب‌ها با خانواده‌اش در حیاط غذا می‌خورد.","correct":true,"explanation_fa":"مانون می‌گوید: «Le soir, nous mangeons tous ensemble du riz au poisson dans la cour.»"}
+{"type":"tf","prompt":"Manon rentre en France au mois de juillet.","prompt_fa":"مانون در ماه ژوئیه به فرانسه برمی‌گردد.","correct":false,"explanation_fa":"مانون می‌گوید: «Je rentre le 20 août.»"}
+listening B:
+{"type":"mcq","prompt":"Qu'est-ce qu'une petite fille a demandé à Manon ?","prompt_fa":"یک دختر کوچک از مانون چه پرسید؟","options":["Si elle pouvait venir en France.","Si elle pouvait peindre les murs.","Si elle pouvait apprendre une chanson.","Si elle pouvait prendre un livre chez elle."],"correct":3,"explanation_fa":"مانون می‌گوید: «Une petite fille m'a demandé si elle pouvait emporter un livre chez elle»."}
+{"type":"mcq","prompt":"Combien d'élèves y a-t-il à peu près dans l'école ?","prompt_fa":"مدرسه تقریباً چند دانش‌آموز دارد؟","options":["400.","70.","800.","60."],"correct":0,"explanation_fa":"مانون می‌گوید: «presque 400 élèves»."}
+{"type":"tf","prompt":"Manon dort sur un matelas par terre.","prompt_fa":"مانون روی تشکی روی زمین می‌خوابد.","correct":true,"explanation_fa":"مانون می‌گوید: «je dors chez une famille, sur un matelas par terre»."}
+{"type":"tf","prompt":"Manon pense qu'elle a plus donné que reçu.","prompt_fa":"مانون فکر می‌کند بیشتر از آنچه گرفته، داده است.","correct":false,"explanation_fa":"مانون می‌گوید: «J'ai l'impression d'avoir reçu ici beaucoup plus que ce que j'ai donné.»"}

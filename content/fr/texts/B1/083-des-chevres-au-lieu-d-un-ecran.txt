@@ -1,0 +1,50 @@
+code: fr-b1-t083
+title: Des chèvres au lieu d'un écran
+band: 3
+kind: long_dialogue
+key_words: informaticien, se rendre compte, bête-n, centaine, la plupart
+sentences:
+A: Bonjour Julien, merci de nous recevoir dans votre ferme pour notre émission. | سلام ژولین، ممنون که ما را برای برنامه‌مان در مزرعه‌تان پذیرفتید.
+B: Avec plaisir, Sophie ! Bienvenue dans les Pyrénées. | با کمال میل، سوفی! به پیرنه خوش آمدید.
+A: Vous élevez des chèvres depuis quatre ans, mais avant, vous n'étiez pas agriculteur… | چهار سال است که بز پرورش می‌دهید، ولی قبلاً کشاورز نبودید…
+B: Pas du tout ! J'étais informaticien à Paris. Je passais dix heures par jour devant un écran, dans un bureau sans fenêtre. | اصلاً! در پاریس برنامه‌نویس بودم. روزی ده ساعت جلوی صفحهٔ کامپیوتر می‌گذراندم، در دفتری بی‌پنجره.
+A: Et un jour, vous avez tout quitté ? | و یک روز همه‌چیز را ول کردید؟
+B: Oui. Un soir d'hiver, dans le métro, je me suis rendu compte que je n'avais pas vu le soleil de la semaine. | بله. یک شب زمستانی توی مترو متوجه شدم که تمام هفته آفتاب را ندیده‌ام.
+A: Comment votre famille a-t-elle réagi ? | خانواده‌تان چه واکنشی نشان دادند؟
+B: Mes parents pensaient que c'était une folie. Mon père répétait sans cesse : « Tu n'as jamais touché une chèvre de ta vie ! » | پدر و مادرم فکر می‌کردند دیوانگی است. پدرم مدام تکرار می‌کرد: «تو در عمرت دستت به یک بز هم نخورده!»
+B: Et il avait raison. La première année a été très dure : je ne savais rien, et j'ai perdu trois chèvres pendant l'hiver. | و حق با او بود. سال اول خیلی سخت بود: هیچ چیز بلد نبودم و در زمستان سه تا از بزهایم را از دست دادم.
+A: Qu'est-ce qui vous a aidé à continuer ? | چه چیزی کمکتان کرد که ادامه بدهید؟
+B: Mon voisin, Pierre, un agriculteur de 75 ans. Il m'a appris à faire du fromage, à soigner les bêtes et à lire le ciel avant un orage. | همسایه‌ام، پیر، یک کشاورز هفتادوپنج‌ساله. او به من یاد داد پنیر درست کنم، از حیوان‌ها مراقبت کنم و پیش از توفان آسمان را بخوانم. | tts: Mon voisin, Pierre, un agriculteur de soixante-quinze ans. Il m'a appris à faire du fromage, à soigner les bêtes et à lire le ciel avant un orage.
+B: Sans lui, je ne serais pas ici aujourd'hui. | اگر او نبود، الان اینجا نبودم.
+A: Et aujourd'hui, la ferme marche{marcher-2} bien ? | حالا مزرعه خوب می‌چرخد؟
+B: J'ai quarante chèvres, et je fabrique une centaine de fromages par semaine. | چهل تا بز دارم و هفته‌ای حدود صد تا پنیر درست می‌کنم.
+B: J'en vends la plupart au marché de Lourdes, le samedi. Les autres partent par la poste, chez des clients qui commandent sur mon site. | بیشترشان را شنبه‌ها در بازار لورد می‌فروشم. بقیه با پست برای مشتری‌هایی فرستاده می‌شود که از سایتم سفارش می‌دهند.
+A: Votre ancien métier vous sert encore, alors ! | پس شغل قبلی‌تان هنوز به کارتان می‌آید!
+B: Justement ! J'ai créé le site moi-même, un dimanche de pluie. | دقیقاً! سایت را خودم ساختم، یک یکشنبهٔ بارانی.
+A: Vous gagnez{gagner-2} autant qu'à Paris ? | به اندازهٔ پاریس درآمد دارید؟
+B: Non, beaucoup moins. Mais je dépense aussi beaucoup moins, et je ne paie plus de loyer. | نه، خیلی کمتر. ولی خرجم هم خیلی کمتر است و دیگر اجاره نمی‌دهم.
+A: Vous ne regrettez rien ? | از هیچ چیز پشیمان نیستید؟
+B: Si, une chose : les vacances ! Les chèvres ne prennent jamais de congé, alors moi non plus. | چرا، یک چیز: تعطیلات! بزها هیچ‌وقت مرخصی نمی‌گیرند، پس من هم نمی‌گیرم.
+A: Et l'avenir ? | و آینده؟
+B: J'aimerais ouvrir la ferme aux écoles, pour que les enfants des villes voient d'où vient leur fromage. | دلم می‌خواهد مزرعه را به روی مدرسه‌ها باز کنم تا بچه‌های شهری ببینند پنیرشان از کجا می‌آید.
+A: Merci, Julien, et bon courage ! | ممنون، ژولین، خسته نباشید!
+reading A:
+{"type":"mcq","prompt":"De quoi parle surtout cette interview ?","prompt_fa":"این مصاحبه بیشتر دربارهٔ چیست؟","options":["D'un homme qui a changé de vie pour devenir agriculteur.","D'un informaticien qui cherche un nouveau bureau à Paris.","D'une école qui ouvre une ferme pour les enfants.","D'un vieux voisin qui vend sa ferme."],"correct":0,"explanation_fa":"ژولین می‌گوید: «J'étais informaticien à Paris» و حالا چهار سال است که بز پرورش می‌دهد."}
+{"type":"tf","prompt":"Les parents de Julien trouvaient son projet raisonnable.","prompt_fa":"پدر و مادر ژولین طرحش را معقول می‌دانستند.","correct":false,"explanation_fa":"ژولین می‌گوید: «Mes parents pensaient que c'était une folie.»"}
+{"type":"tf","prompt":"Julien a construit son site internet lui-même.","prompt_fa":"ژولین سایتش را خودش ساخته است.","correct":true,"explanation_fa":"ژولین می‌گوید: «J'ai créé le site moi-même, un dimanche de pluie.»"}
+{"type":"find","prompt":"Quelle phrase dit à quel moment Julien a compris qu'il voulait partir ?","prompt_fa":"کدام جمله می‌گوید ژولین چه موقع فهمید که می‌خواهد برود؟","correct_sentence":5,"explanation_fa":"ژولین می‌گوید: «Un soir d'hiver, dans le métro, je me suis rendu compte que je n'avais pas vu le soleil de la semaine.»"}
+reading B:
+{"type":"ctx","word":"sans cesse","prompt":"« Mon père répétait sans cesse » : son père le disait…","prompt_fa":"«Mon père répétait sans cesse»: پدرش این را…","options":["une seule fois.","très rarement.","tout le temps.","à voix basse."],"correct":2,"explanation_fa":"«sans cesse» یعنی مدام و بی‌وقفه؛ پدر ژولین این جمله را بارها تکرار می‌کرد."}
+{"type":"match","prompt":"Associez.","prompt_fa":"به هم وصل کنید.","left":["Pierre","Le père de Julien","Les clients du site"],"right":["reçoivent les fromages par la poste.","a appris à Julien à faire du fromage.","pensait que Julien ne savait rien des chèvres.","achète des chèvres au marché."],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"پیر «m'a appris à faire du fromage»، پدر می‌گفت «Tu n'as jamais touché une chèvre de ta vie !» و پنیرها «partent par la poste, chez des clients qui commandent sur mon site»."}
+{"type":"cloze","prompt":"Complétez la réponse de Julien.","prompt_fa":"جواب ژولین را کامل کنید.","text_with_gaps":"Non, beaucoup {{1}}. Mais je {{2}} aussi beaucoup moins, et je ne paie plus de {{3}}.","bank":["moins","dépense","loyer","plus","gagne","fromage"],"answers":["moins","dépense","loyer"],"explanation_fa":"ژولین می‌گوید: «Non, beaucoup moins. Mais je dépense aussi beaucoup moins, et je ne paie plus de loyer.»"}
+{"type":"mcq","prompt":"Qu'est-ce que Julien regrette ?","prompt_fa":"ژولین دلش برای چه چیزی تنگ است؟","options":["Son salaire de Paris.","Le métro et le bureau.","Les vacances.","Ses amis informaticiens."],"correct":2,"explanation_fa":"ژولین می‌گوید: «Si, une chose : les vacances !»"}
+listening A:
+{"type":"num","prompt":"Combien de chèvres Julien a-t-il aujourd'hui ?","prompt_fa":"ژولین الان چند بز دارد؟","answer":"40","accepted":["40","quarante"],"explanation_fa":"ژولین می‌گوید: «J'ai quarante chèvres»."}
+{"type":"mcq","prompt":"Où Julien vend-il la plupart de ses fromages ?","prompt_fa":"ژولین بیشتر پنیرهایش را کجا می‌فروشد؟","options":["Dans une école.","Au marché, le samedi.","Dans un magasin à Paris.","À la ferme de Pierre."],"correct":1,"explanation_fa":"ژولین می‌گوید: «J'en vends la plupart au marché de Lourdes, le samedi.»"}
+{"type":"tf","prompt":"La première année, Julien a perdu des chèvres.","prompt_fa":"ژولین در سال اول چند بز را از دست داد.","correct":true,"explanation_fa":"ژولین می‌گوید: «j'ai perdu trois chèvres pendant l'hiver»."}
+{"type":"tf","prompt":"Aujourd'hui, Julien gagne plus d'argent qu'à Paris.","prompt_fa":"ژولین الان بیشتر از پاریس پول درمی‌آورد.","correct":false,"explanation_fa":"ژولین می‌گوید: «Non, beaucoup moins.»"}
+listening B:
+{"type":"mcq","prompt":"Que voudrait faire Julien plus tard ?","prompt_fa":"ژولین بعدها دوست دارد چه کار کند؟","options":["Retourner travailler à Paris.","Acheter la ferme de son voisin.","Accueillir les enfants des écoles à la ferme.","Vendre ses fromages dans le métro."],"correct":2,"explanation_fa":"ژولین می‌گوید: «J'aimerais ouvrir la ferme aux écoles, pour que les enfants des villes voient d'où vient leur fromage.»"}
+{"type":"mcq","prompt":"Que faisait Julien à Paris ?","prompt_fa":"ژولین در پاریس چه کار می‌کرد؟","options":["Il travaillait devant un écran toute la journée.","Il vendait du fromage dans un magasin.","Il était journaliste à la radio.","Il travaillait dans le métro."],"correct":0,"explanation_fa":"ژولین می‌گوید: «Je passais dix heures par jour devant un écran»."}
+{"type":"tf","prompt":"Pour Julien, l'aide de Pierre a été très importante.","prompt_fa":"به نظر ژولین، کمک پیر خیلی مهم بوده است.","correct":true,"explanation_fa":"ژولین دربارهٔ پیر می‌گوید: «Sans lui, je ne serais pas ici aujourd'hui.»"}
+{"type":"tf","prompt":"Julien prend des vacances chaque été.","prompt_fa":"ژولین هر تابستان به تعطیلات می‌رود.","correct":false,"explanation_fa":"ژولین می‌گوید: «Les chèvres ne prennent jamais de congé, alors moi non plus.»"}

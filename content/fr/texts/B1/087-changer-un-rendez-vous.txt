@@ -1,0 +1,41 @@
+code: fr-b1-t087
+title: Changer un rendez-vous
+band: 3
+kind: letter
+key_words: séjour, fixer, modifier, actuel, joindre
+sentences:
+- Madame, Monsieur, | خانم‌ها، آقایان،
+- Je m'appelle Shirin Karimi. Je suis iranienne et je fais un master à l'université de Grenoble. | اسمم شیرین کریمی است. ایرانی هستم و در دانشگاه گرنوبل کارشناسی ارشد می‌خوانم.
+- Je vous écris au sujet de mon rendez-vous pour ma nouvelle carte de séjour, fixé au mardi 12 mars à 9h30 dans vos bureaux. | دربارهٔ وقت ملاقاتم در دفتر شما برای کارت اقامت جدیدم می‌نویسم که برای سه‌شنبه دوازدهم مارس ساعت نه و نیم گذاشته شده است. | tts: Je vous écris au sujet de mon rendez-vous pour ma nouvelle carte de séjour, fixé au mardi douze mars à neuf heures trente dans vos bureaux.
+- Malheureusement, je ne pourrai pas venir ce jour-là. | متأسفانه آن روز نمی‌توانم بیایم.
+- J'ai appris hier que mon examen le plus important de l'année aurait lieu le même matin, de 8 heures à midi. | دیروز فهمیدم که مهم‌ترین امتحان سالم همان صبح برگزار می‌شود، از ساعت هشت تا ظهر. | tts: J'ai appris hier que mon examen le plus important de l'année aurait lieu le même matin, de huit heures à midi.
+- Mon professeur m'a expliqué qu'il était impossible de changer la date, car quarante étudiants le passent en même temps. | استادم توضیح داد که عوض کردن تاریخ ممکن نیست، چون چهل دانشجو همزمان این امتحان را می‌دهند.
+- J'ai d'abord essayé de modifier le rendez-vous sur votre site internet, mais aucune date n'était libre avant le mois de juin. | اول سعی کردم وقتم را در سایت شما تغییر بدهم، ولی تا ماه ژوئن هیچ تاریخ خالی‌ای نبود.
+- Je vous ai ensuite appelés trois fois, sans jamais réussir à parler à quelqu'un. | بعد سه بار به شما زنگ زدم، ولی هیچ‌وقت نتوانستم با کسی حرف بزنم.
+- Le problème, c'est que ma carte actuelle n'est bonne que jusqu'au 30 avril, et je commence un stage dans une entreprise de Lyon le 2 mai. | مشکل اینجاست که کارت فعلی‌ام فقط تا سی‌ام آوریل اعتبار دارد و دوم مه کارآموزی‌ام را در شرکتی در لیون شروع می‌کنم. | tts: Le problème, c'est que ma carte actuelle n'est bonne que jusqu'au trente avril, et je commence un stage dans une entreprise de Lyon le deux mai.
+- Serait-il donc possible de me donner un autre rendez-vous avant cette date ? | آیا ممکن است وقت دیگری پیش از این تاریخ به من بدهید؟
+- Je suis libre tous les jours de la semaine du 18 mars, et je peux venir à n'importe quelle heure. | در هفتهٔ هجدهم مارس همهٔ روزها وقتم آزاد است و هر ساعتی می‌توانم بیایم. | tts: Je suis libre tous les jours de la semaine du dix-huit mars, et je peux venir à n'importe quelle heure.
+- Je joins à ce message la lettre de l'université avec la date de mon examen, et une photo de ma carte actuelle. | نامهٔ دانشگاه را که تاریخ امتحانم در آن آمده، همراه با عکسی از کارت فعلی‌ام، پیوست این پیام می‌کنم.
+- Vous pouvez me joindre par e-mail ou au 06 45 21 38 90. | می‌توانید از راه ایمیل یا با شمارهٔ ۰۶ ۴۵ ۲۱ ۳۸ ۹۰ با من تماس بگیرید. | tts: Vous pouvez me joindre par e-mail ou au zéro six, quarante-cinq, vingt et un, trente-huit, quatre-vingt-dix.
+- Je vous remercie beaucoup pour votre aide. | از کمکتان بسیار سپاسگزارم.
+- Cordialement, | با احترام،
+- Shirin Karimi | شیرین کریمی
+reading A:
+{"type":"mcq","prompt":"Que demande Shirin dans cette lettre ?","prompt_fa":"شیرین در این نامه چه درخواستی دارد؟","options":["Un autre rendez-vous pour sa carte de séjour.","Une nouvelle date pour son examen.","Un stage dans une entreprise de Lyon.","Une place dans un master à Grenoble."],"correct":0,"explanation_fa":"شیرین می‌نویسد: «Serait-il donc possible de me donner un autre rendez-vous avant cette date ?»"}
+{"type":"tf","prompt":"Le professeur de Shirin peut changer la date de l'examen.","prompt_fa":"استاد شیرین می‌تواند تاریخ امتحان را عوض کند.","correct":false,"explanation_fa":"شیرین می‌نویسد: «Mon professeur m'a expliqué qu'il était impossible de changer la date»."}
+{"type":"tf","prompt":"Shirin a essayé de changer son rendez-vous sur internet avant d'écrire.","prompt_fa":"شیرین قبل از نوشتن نامه سعی کرده وقتش را در اینترنت عوض کند.","correct":true,"explanation_fa":"شیرین می‌نویسد: «J'ai d'abord essayé de modifier le rendez-vous sur votre site internet»."}
+{"type":"find","prompt":"Quelle phrase explique pourquoi Shirin a besoin d'un rendez-vous rapidement ?","prompt_fa":"کدام جمله توضیح می‌دهد چرا شیرین زود به وقت ملاقات نیاز دارد؟","correct_sentence":8,"explanation_fa":"شیرین می‌نویسد: «ma carte actuelle n'est bonne que jusqu'au 30 avril, et je commence un stage … le 2 mai»."}
+reading B:
+{"type":"ctx","word":"joindre","prompt":"« Vous pouvez me joindre par e-mail » : ici, « joindre » veut dire…","prompt_fa":"در «Vous pouvez me joindre par e-mail»، «joindre» یعنی…","options":["envoyer une photo","entrer en contact avec","inviter à un rendez-vous","aider quelqu'un"],"correct":1,"explanation_fa":"اینجا «joindre» یعنی با کسی تماس گرفتن؛ شیرین ایمیل و شماره‌اش را می‌دهد."}
+{"type":"order","prompt":"Mettez ces moments dans l'ordre.","prompt_fa":"این لحظه‌ها را به ترتیب بچینید.","items":["Shirin appelle trois fois.","Shirin apprend la date de son examen.","Shirin commence son stage.","Shirin essaie de modifier le rendez-vous sur internet."],"correct_order":[1,3,0,2],"explanation_fa":"اول «J'ai appris hier» تاریخ امتحان را، بعد «J'ai d'abord essayé … sur votre site internet»، بعد «Je vous ai ensuite appelés trois fois» و کارآموزی «le 2 mai» شروع می‌شود."}
+{"type":"cloze","prompt":"Complétez la phrase de la lettre.","prompt_fa":"جملهٔ نامه را کامل کنید.","text_with_gaps":"Je suis {{1}} tous les jours de la semaine du 18 mars, et je peux venir à n'importe quelle {{2}}.","bank":["libre","heure","occupée","date","fois"],"answers":["libre","heure"],"explanation_fa":"شیرین می‌نویسد: «Je suis libre tous les jours de la semaine du 18 mars, et je peux venir à n'importe quelle heure.»"}
+listening A:
+{"type":"num","prompt":"Combien d'étudiants passent l'examen en même temps ?","prompt_fa":"چند دانشجو همزمان امتحان می‌دهند؟","answer":"40","accepted":["40","quarante"],"explanation_fa":"شیرین می‌گوید: «quarante étudiants le passent en même temps»."}
+{"type":"mcq","prompt":"À quelle heure est le rendez-vous de Shirin ?","prompt_fa":"وقت ملاقات شیرین ساعت چند است؟","options":["À 8 heures.","À midi.","À 9h30.","À 18 heures."],"correct":2,"explanation_fa":"شیرین می‌گوید: «fixé au mardi 12 mars à 9h30»."}
+{"type":"tf","prompt":"Shirin a réussi à parler à quelqu'un au téléphone.","prompt_fa":"شیرین توانسته تلفنی با کسی حرف بزند.","correct":false,"explanation_fa":"شیرین می‌گوید: «sans jamais réussir à parler à quelqu'un»."}
+{"type":"tf","prompt":"Shirin envoie la lettre de l'université avec son message.","prompt_fa":"شیرین نامهٔ دانشگاه را همراه پیامش می‌فرستد.","correct":true,"explanation_fa":"شیرین می‌گوید: «Je joins à ce message la lettre de l'université»."}
+listening B:
+{"type":"mcq","prompt":"Pourquoi Shirin ne peut-elle pas venir le 12 mars ?","prompt_fa":"چرا شیرین دوازدهم مارس نمی‌تواند بیاید؟","options":["Elle commence son stage ce jour-là.","Elle a un examen ce matin-là.","Elle sera en Iran.","Son professeur a besoin d'elle."],"correct":1,"explanation_fa":"شیرین می‌گوید: «mon examen le plus important de l'année aurait lieu le même matin»."}
+{"type":"mcq","prompt":"Jusqu'à quand la carte actuelle de Shirin est-elle bonne ?","prompt_fa":"کارت فعلی شیرین تا کی اعتبار دارد؟","options":["Jusqu'au 18 mars.","Jusqu'au 2 mai.","Jusqu'au mois de juin.","Jusqu'au 30 avril."],"correct":3,"explanation_fa":"شیرین می‌گوید: «ma carte actuelle n'est bonne que jusqu'au 30 avril»."}
+{"type":"tf","prompt":"Sur le site internet, il n'y avait pas de date libre avant juin.","prompt_fa":"در سایت تا ژوئن هیچ تاریخ خالی‌ای نبود.","correct":true,"explanation_fa":"شیرین می‌گوید: «aucune date n'était libre avant le mois de juin»."}
+{"type":"tf","prompt":"Shirin fait son master à Lyon.","prompt_fa":"شیرین کارشناسی ارشدش را در لیون می‌خواند.","correct":false,"explanation_fa":"شیرین می‌گوید: «je fais un master à l'université de Grenoble»؛ لیون جای کارآموزی‌اش است."}

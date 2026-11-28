@@ -1,0 +1,46 @@
+code: fr-b1-t092
+title: Ce que la prof a dit
+band: 3
+kind: long_dialogue
+key_words: poumon, foie, chapitre, vertige, malaise
+sentences:
+A: Karim ! J'ai raté le cours de jeudi, j'avais de la fièvre. Qu'est-ce que la prof a dit pour l'examen ? | کریم! کلاس پنجشنبه را از دست دادم، تب داشتم. استاد دربارهٔ امتحان چه گفت؟
+B: Tu as de la chance que je sois là, Inès, parce qu'elle a changé beaucoup de choses ! | شانس آوردی که من هستم، اینس، چون کلی چیز را عوض کرده!
+A: Ah bon ? Raconte ! | جدی؟ تعریف کن!
+B: D'abord, elle a dit que l'examen n'aurait pas lieu lundi, mais jeudi prochain, à 14 heures. | اول اینکه گفت امتحان دوشنبه برگزار نمی‌شود، بلکه پنجشنبهٔ آینده ساعت دو بعدازظهر است. | tts: D'abord, elle a dit que l'examen n'aurait pas lieu lundi, mais jeudi prochain, à quatorze heures.
+A: Super, trois jours de plus pour réviser ! | عالی، سه روز بیشتر برای مرور!
+B: Elle a expliqué qu'il durerait deux heures et qu'on n'aurait pas le droit d'utiliser nos livres ni nos cahiers. | توضیح داد که امتحان دو ساعت طول می‌کشد و حق نداریم از کتاب‌ها و دفترهایمان استفاده کنیم.
+A: Et qu'est-ce qu'il faudra savoir ? | حالا چه چیزهایی را باید بلد باشیم؟
+B: Elle a dit que les questions seraient surtout sur le cœur et les poumons. | گفت سؤال‌ها بیشتر دربارهٔ قلب و ریه‌ها است.
+A: Et le foie ? J'ai passé tout le week-end sur ce chapitre ! | پس کبد چه؟ تمام آخر هفته را روی این فصل گذاشتم!
+B: Justement, Lucas lui a demandé si le foie serait à l'examen, et elle a répondu que non. | اتفاقاً لوکا از او پرسید که کبد در امتحان می‌آید یا نه، و او گفت نه.
+A: Tu plaisantes ! Deux jours pour rien… | شوخی می‌کنی! دو روز برای هیچ…
+B: Pas pour rien : elle a ajouté que le foie serait au deuxième examen, en juin. | برای هیچ نه: اضافه کرد که کبد در امتحان دوم، در ژوئن، می‌آید.
+A: Bon, c'est déjà ça. Et il y aura un cas pratique ? | خب، باز خوب است. مورد عملی هم دارد؟
+B: Oui. Elle a dit qu'il y en aurait un à la fin : un patient{patient-n} qui a des vertiges et qui fait un malaise dans la rue. | آره. گفت آخر امتحان یکی هست: بیماری که سرگیجه دارد و توی خیابان حالش بد می‌شود.
+B: Il faudra expliquer ce qu'on fait d'abord, et pourquoi. | باید توضیح بدهیم اول چه کار می‌کنیم و چرا.
+A: Ça, j'aime bien. Elle a donné des exemples de questions ? | این را دوست دارم. نمونه‌سؤال هم داد؟
+B: Elle a dit qu'elle en avait mis sur le site de l'école la veille. Je les ai déjà imprimées. | گفت روز قبلش چندتایی روی سایت مدرسه گذاشته است. من پرینتشان را گرفته‌ام.
+A: Génial ! Tu veux qu'on révise ensemble ce week-end ? | محشر است! می‌خواهی این آخر هفته با هم مرور کنیم؟
+B: Avec plaisir, mais à une condition : c'est toi qui apportes le café ! | با کمال میل، ولی به یک شرط: قهوه را تو بیاوری!
+A: D'accord. Et toi, tu m'expliques les poumons ! | باشد. تو هم ریه‌ها را برایم توضیح بده!
+B: Ça marche{marcher-2} ! | قبول!
+reading A:
+{"type":"mcq","prompt":"Pourquoi Inès pose-t-elle des questions à Karim ?","prompt_fa":"چرا اینس از کریم سؤال می‌کند؟","options":["Elle veut savoir pourquoi Karim était absent.","Elle n'était pas au cours et veut savoir ce que la prof a dit.","Elle cherche un livre sur le cœur.","Elle veut changer la date de l'examen."],"correct":1,"explanation_fa":"اینس می‌گوید: «J'ai raté le cours de jeudi» و «Qu'est-ce que la prof a dit pour l'examen ?»"}
+{"type":"tf","prompt":"Pendant l'examen, les étudiants pourront regarder leurs cahiers.","prompt_fa":"در امتحان دانشجوها می‌توانند به دفترهایشان نگاه کنند.","correct":false,"explanation_fa":"کریم می‌گوید: «on n'aurait pas le droit d'utiliser nos livres ni nos cahiers»."}
+{"type":"tf","prompt":"La prof a mis des exemples de questions sur internet.","prompt_fa":"استاد نمونه‌سؤال‌هایی را در اینترنت گذاشته است.","correct":true,"explanation_fa":"کریم می‌گوید: «elle en avait mis sur le site de l'école la veille»."}
+{"type":"find","prompt":"Quelle phrase explique pourquoi Inès est déçue ?","prompt_fa":"کدام جمله توضیح می‌دهد چرا اینس ناامید می‌شود؟","correct_sentence":9,"explanation_fa":"کریم می‌گوید: «Lucas lui a demandé si le foie serait à l'examen, et elle a répondu que non.»"}
+reading B:
+{"type":"ctx","word":"Tu plaisantes","prompt":"« Tu plaisantes ! Deux jours pour rien… » : Inès…","prompt_fa":"«Tu plaisantes ! Deux jours pour rien…»: اینس…","options":["rit beaucoup.","est contente.","a du mal à croire ce qu'elle entend.","pense que Karim ment."],"correct":2,"explanation_fa":"«Tu plaisantes !» یعنی «شوخی می‌کنی!»؛ اینس باورش نمی‌شود که فصل کبد در امتحان نیست."}
+{"type":"match","prompt":"Qu'est-ce que la prof a dit sur chaque sujet ?","prompt_fa":"استاد دربارهٔ هر موضوع چه گفت؟","left":["L'examen","Le foie","Le cas pratique"],"right":["sera au deuxième examen.","aura lieu jeudi prochain.","sera à la fin de l'examen.","durera quatre heures."],"pairs":[[0,1],[1,0],[2,2]],"explanation_fa":"امتحان «n'aurait pas lieu lundi, mais jeudi prochain»، کبد «serait au deuxième examen» و مورد عملی «il y en aurait un à la fin»."}
+{"type":"cloze","prompt":"Complétez la phrase de Karim.","prompt_fa":"جملهٔ کریم را کامل کنید.","text_with_gaps":"Elle a dit que les questions {{1}} surtout sur le cœur et les {{2}}.","bank":["seraient","poumons","sont","pieds","étaient"],"answers":["seraient","poumons"],"explanation_fa":"کریم می‌گوید: «Elle a dit que les questions seraient surtout sur le cœur et les poumons.»"}
+listening A:
+{"type":"num","prompt":"Combien d'heures durera l'examen ?","prompt_fa":"امتحان چند ساعت طول می‌کشد؟","answer":"2","accepted":["2","deux"],"explanation_fa":"کریم می‌گوید: «il durerait deux heures»."}
+{"type":"mcq","prompt":"Pourquoi Inès n'était-elle pas au cours ?","prompt_fa":"چرا اینس سر کلاس نبود؟","options":["Elle avait de la fièvre.","Elle travaillait.","Elle révisait le foie.","Elle était chez ses parents."],"correct":0,"explanation_fa":"اینس می‌گوید: «j'avais de la fièvre»."}
+{"type":"tf","prompt":"L'examen aura lieu plus tard que prévu.","prompt_fa":"امتحان دیرتر از برنامهٔ قبلی برگزار می‌شود.","correct":true,"explanation_fa":"کریم می‌گوید: «l'examen n'aurait pas lieu lundi, mais jeudi prochain»."}
+{"type":"tf","prompt":"Dans le cas pratique, le patient a mal au pied.","prompt_fa":"در مورد عملی، پای بیمار درد می‌کند.","correct":false,"explanation_fa":"کریم می‌گوید: «un patient qui a des vertiges et qui fait un malaise dans la rue»."}
+listening B:
+{"type":"mcq","prompt":"Qu'est-ce que Karim demande à Inès pour réviser avec elle ?","prompt_fa":"کریم برای مرور کردن با اینس چه شرطی می‌گذارد؟","options":["Qu'elle lui explique le foie.","Qu'elle imprime les questions.","Qu'elle apporte le café.","Qu'elle vienne chez lui lundi."],"correct":2,"explanation_fa":"کریم می‌گوید: «à une condition : c'est toi qui apportes le café !»"}
+{"type":"mcq","prompt":"Qui a demandé si le foie serait à l'examen ?","prompt_fa":"چه کسی پرسید که کبد در امتحان می‌آید یا نه؟","options":["Inès.","Karim.","La prof.","Lucas."],"correct":3,"explanation_fa":"کریم می‌گوید: «Lucas lui a demandé si le foie serait à l'examen»."}
+{"type":"tf","prompt":"Inès a beaucoup travaillé sur le foie pendant le week-end.","prompt_fa":"اینس در آخر هفته روی کبد خیلی کار کرده است.","correct":true,"explanation_fa":"اینس می‌گوید: «J'ai passé tout le week-end sur ce chapitre !»"}
+{"type":"tf","prompt":"Le deuxième examen aura lieu en mars.","prompt_fa":"امتحان دوم در مارس برگزار می‌شود.","correct":false,"explanation_fa":"کریم می‌گوید: «le foie serait au deuxième examen, en juin»."}

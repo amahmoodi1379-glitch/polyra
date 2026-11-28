@@ -1,0 +1,47 @@
+code: fr-b1-t097
+title: Le mur des deux frères
+band: 3
+kind: long_dialogue
+key_words: hériter, légende, épouser, fontaine, vitrine
+sentences:
+A: Bonjour à tous ! Je m'appelle Claire, et je serai votre guide aujourd'hui. Bienvenue dans ce château de la Loire ! | سلام به همه! اسم من کلر است و امروز راهنمای شما هستم. به این قلعهٔ کنار رود لوار خوش آمدید!
+B: Bonjour ! Il a été construit quand, exactement ? | سلام! دقیقاً کی ساخته شده است؟
+A: En 1520, par un riche commerçant de Lyon. Il l'a fait bâtir pour sa femme. | در سال ۱۵۲۰، به دست یک تاجر ثروتمند اهل لیون. او آن را برای همسرش ساخت. | tts: En mille cinq cent vingt, par un riche commerçant de Lyon. Il l'a fait bâtir pour sa femme.
+B: Pour sa femme ? Quel cadeau ! | برای همسرش؟ عجب هدیه‌ای!
+A: Oui, mais la suite est moins belle. À sa mort, ses deux fils ont hérité du château, et ils se détestaient. | بله، ولی ادامه‌اش به این قشنگی نیست. پس از مرگش، دو پسرش قلعه را به ارث بردند و از هم متنفر بودند.
+B: Ah bon ? Pourquoi ? | جدی؟ چرا؟
+A: Selon la légende, ils étaient tombés amoureux de la même femme. | طبق افسانه، هر دو عاشق یک زن شده بودند.
+A: Ils ne se parlaient plus. Alors ils ont partagé le château en deux, et ils ont construit un mur au milieu de la cour. | دیگر با هم حرف نمی‌زدند. برای همین قلعه را دو قسمت کردند و وسط حیاط یک دیوار کشیدند.
+B: Un mur ? Ici ? Vous plaisantez ! | دیوار؟ همین‌جا؟ شوخی می‌کنید!
+A: Regardez par terre : vous voyez cette ligne de pierres plus sombres ? C'est là qu'il était. | به زمین نگاه کنید: این ردیف سنگ‌های تیره‌تر را می‌بینید؟ دیوار همین‌جا بود.
+A: Chaque frère avait sa porte, son escalier et sa cuisine. Pendant vingt ans, ils ne se sont jamais rencontrés ! | هر برادر در و پله و آشپزخانهٔ خودش را داشت. بیست سال هیچ‌وقت همدیگر را ندیدند!
+B: Et comment l'histoire a-t-elle fini ? | آخر ماجرا چه شد؟
+A: Par un mariage ! Le fils de l'un a épousé la fille de l'autre, et le mur a été détruit pour la fête. | با یک عروسی! پسر یکی با دختر دیگری ازدواج کرد و دیوار را برای جشن خراب کردند.
+B: C'est une vraie histoire de cinéma ! | درست مثل داستان فیلم‌هاست!
+A: Maintenant, suivez-moi dans le jardin. Vous voyez la fontaine ? Elle a été offerte par le roi en 1610. | حالا دنبال من به باغ بیایید. فواره را می‌بینید؟ پادشاه آن را در سال ۱۶۱۰ هدیه داد. | tts: Maintenant, suivez-moi dans le jardin. Vous voyez la fontaine ? Elle a été offerte par le roi en mille six cent dix.
+B: Le roi est venu ici ? | پادشاه اینجا آمده بود؟
+A: Oui, il a dormi deux nuits dans la grande chambre. Vous verrez son lit tout à l'heure. | بله، دو شب در اتاق بزرگ خوابید. کمی بعد تختش را می‌بینید.
+B: Et pendant la Révolution, le château n'a pas été attaqué ? | در انقلاب به قلعه حمله نشد؟
+A: Si, une partie des meubles a été volée{voler-2}. Mais les gens du village avaient caché les plus beaux tableaux{tableau-2} dans leurs caves. | چرا، بخشی از اثاثیه دزدیده شد. ولی اهالی روستا زیباترین تابلوها را در انبارهای زیرزمینی‌شان قایم کرده بودند.
+A: Et dans cette vitrine, voici les lettres des deux frères. Regardez, elles se lisent encore très bien. | و در این ویترین، نامه‌های آن دو برادر را می‌بینید. نگاه کنید، هنوز خیلی خوب خوانده می‌شوند.
+B: Et aujourd'hui, à qui appartient le château ? | حالا قلعه مال کیست؟
+A: À la région. Il est ouvert aux visiteurs depuis 1985. | مال منطقه. از سال ۱۹۸۵ به روی بازدیدکنندگان باز است. | tts: À la région. Il est ouvert aux visiteurs depuis mille neuf cent quatre-vingt-cinq.
+reading A:
+{"type":"mcq","prompt":"Qu'est-ce que la guide raconte surtout ?","prompt_fa":"راهنما بیشتر چه چیزی را تعریف می‌کند؟","options":["Comment on construit un château aujourd'hui.","L'histoire d'un château et de la famille qui l'a habité.","La vie du roi à Lyon.","Comment acheter un vieux château."],"correct":1,"explanation_fa":"کلر از ساخت قلعه، دو پسری که «ont hérité du château» و عروسی بچه‌هایشان تعریف می‌کند."}
+{"type":"tf","prompt":"Les deux frères s'entendaient très bien.","prompt_fa":"دو برادر با هم خیلی خوب کنار می‌آمدند.","correct":false,"explanation_fa":"کلر می‌گوید: «ils se détestaient» و «Ils ne se parlaient plus»."}
+{"type":"tf","prompt":"On peut encore voir où était le mur.","prompt_fa":"هنوز می‌شود دید دیوار کجا بوده است.","correct":true,"explanation_fa":"کلر می‌گوید: «vous voyez cette ligne de pierres plus sombres ? C'est là qu'il était.»"}
+{"type":"find","prompt":"Quelle phrase explique pourquoi le mur a disparu ?","prompt_fa":"کدام جمله توضیح می‌دهد چرا دیوار از بین رفت؟","correct_sentence":12,"explanation_fa":"کلر می‌گوید: «Le fils de l'un a épousé la fille de l'autre, et le mur a été détruit pour la fête.»"}
+reading B:
+{"type":"ctx","word":"légende","prompt":"« Selon la légende, ils étaient tombés amoureux de la même femme » : cette information…","prompt_fa":"«Selon la légende, ils étaient tombés amoureux de la même femme»: این خبر…","options":["est écrite dans les lettres des frères.","vient du roi.","est une histoire qu'on raconte, mais on n'est pas sûr qu'elle soit vraie.","a été trouvée dans une cave."],"correct":2,"explanation_fa":"«légende» یعنی افسانه؛ داستانی که نقل می‌شود ولی معلوم نیست راست باشد."}
+{"type":"order","prompt":"Mettez l'histoire du château dans l'ordre.","prompt_fa":"تاریخچهٔ قلعه را به ترتیب بچینید.","items":["Les deux frères construisent un mur.","Le château ouvre aux visiteurs.","Un commerçant fait bâtir le château.","Le mur est détruit pour un mariage."],"correct_order":[2,0,3,1],"explanation_fa":"اول در ۱۵۲۰ تاجر «l'a fait bâtir»، بعد برادرها «ont construit un mur»، بعد دیوار «a été détruit pour la fête» و از ۱۹۸۵ قلعه «est ouvert aux visiteurs»."}
+{"type":"match","prompt":"Associez.","prompt_fa":"به هم وصل کنید.","left":["La fontaine","La vitrine","La grande chambre"],"right":["montre les lettres des deux frères.","a été offerte par le roi.","a encore le lit du roi.","a été construite par les deux frères."],"pairs":[[0,1],[1,0],[2,2]],"explanation_fa":"فواره «a été offerte par le roi»، در ویترین «voici les lettres des deux frères» و پادشاه «a dormi deux nuits dans la grande chambre» و تختش آنجاست."}
+listening A:
+{"type":"num","prompt":"En quelle année le château a-t-il été construit ?","prompt_fa":"قلعه در چه سالی ساخته شد؟","answer":"1520","accepted":["1520","mille cinq cent vingt"],"explanation_fa":"کلر می‌گوید: «En 1520, par un riche commerçant de Lyon.»"}
+{"type":"mcq","prompt":"Pendant combien de temps les deux frères ne se sont-ils pas rencontrés ?","prompt_fa":"دو برادر چه مدت همدیگر را ندیدند؟","options":["Deux ans.","Vingt ans.","Deux nuits.","Cinquante ans."],"correct":1,"explanation_fa":"کلر می‌گوید: «Pendant vingt ans, ils ne se sont jamais rencontrés !»"}
+{"type":"tf","prompt":"Pendant la Révolution, des meubles du château ont été volés.","prompt_fa":"در انقلاب بخشی از اثاثیهٔ قلعه دزدیده شد.","correct":true,"explanation_fa":"کلر می‌گوید: «une partie des meubles a été volée»."}
+{"type":"tf","prompt":"Aujourd'hui, le château appartient à une famille de Lyon.","prompt_fa":"امروز قلعه مال یک خانوادهٔ اهل لیون است.","correct":false,"explanation_fa":"کلر می‌گوید: «À la région.»"}
+listening B:
+{"type":"mcq","prompt":"Pour qui le commerçant a-t-il fait bâtir le château ?","prompt_fa":"تاجر قلعه را برای چه کسی ساخت؟","options":["Pour le roi.","Pour ses deux fils.","Pour sa femme.","Pour les gens du village."],"correct":2,"explanation_fa":"کلر می‌گوید: «Il l'a fait bâtir pour sa femme.»"}
+{"type":"mcq","prompt":"Où les gens du village ont-ils caché les plus beaux tableaux ?","prompt_fa":"اهالی روستا زیباترین تابلوها را کجا قایم کرده بودند؟","options":["Dans la grande chambre.","Derrière la fontaine.","Dans le mur de la cour.","Dans leurs caves."],"correct":3,"explanation_fa":"کلر می‌گوید: «les gens du village avaient caché les plus beaux tableaux dans leurs caves»."}
+{"type":"tf","prompt":"Le roi a dormi au château.","prompt_fa":"پادشاه در قلعه خوابیده است.","correct":true,"explanation_fa":"کلر می‌گوید: «il a dormi deux nuits dans la grande chambre»."}
+{"type":"tf","prompt":"Les lettres des deux frères sont trop vieilles pour être lues.","prompt_fa":"نامه‌های دو برادر آن‌قدر کهنه‌اند که نمی‌شود خواندشان.","correct":false,"explanation_fa":"کلر می‌گوید: «elles se lisent encore très bien»."}

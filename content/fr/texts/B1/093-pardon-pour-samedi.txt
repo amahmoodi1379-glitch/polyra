@@ -1,0 +1,44 @@
+code: fr-b1-t093
+title: Pardon pour samedi
+band: 3
+kind: letter
+key_words: accoucher, s'évanouir, prévenir, avoir honte, en vouloir à
+sentences:
+- Chère Alice, | آلیس عزیزم،
+- Je ne sais pas comment commencer cette lettre, alors je commence par le plus important : pardonne-moi. | نمی‌دانم این نامه را چطور شروع کنم، پس با مهم‌ترین چیز شروع می‌کنم: مرا ببخش.
+- Samedi soir, tu m'attendais pour fêter ton anniversaire, et je ne suis jamais arrivée. | شنبه شب منتظرم بودی تا تولدت را جشن بگیریم و من هیچ‌وقت نرسیدم.
+- Je sais que tu étais inquiète et que tu m'as appelée plusieurs fois. Voilà ce qui s'est passé. | می‌دانم نگران بودی و چند بار به من زنگ زدی. ماجرا از این قرار است.
+- Vers 18 heures, j'étais en train de me maquiller quand ma sœur Claire m'a téléphoné : elle allait accoucher, trois semaines avant la date prévue ! | حدود ساعت شش عصر داشتم آرایش می‌کردم که خواهرم کلر زنگ زد: داشت زایمان می‌کرد، سه هفته زودتر از موعد! | tts: Vers dix-huit heures, j'étais en train de me maquiller quand ma sœur Claire m'a téléphoné : elle allait accoucher, trois semaines avant la date prévue !
+- Son mari était à Lyon pour son travail, et elle ne voulait pas aller seule à l'hôpital. Je l'ai donc emmenée tout de suite. | شوهرش برای کار در لیون بود و نمی‌خواست تنها به بیمارستان برود. برای همین فوراً بردمش.
+- Dans la voiture, elle avait si mal que j'ai eu peur qu'elle s'évanouisse. | توی ماشین آن‌قدر درد داشت که ترسیدم از حال برود.
+- Ensuite, tout est allé très vite, et j'ai oublié mon téléphone dans la voiture. | بعد همه‌چیز خیلی سریع پیش رفت و گوشی‌ام را توی ماشین جا گذاشتم.
+- Quand je l'ai retrouvé, à deux heures du matin, la batterie était vide. | وقتی دوباره پیدایش کردم، ساعت دو بامداد، باتری‌اش تمام شده بود.
+- Le petit Lucas est né une heure plus tard. Il pèse presque trois kilos ! | لوکای کوچولو یک ساعت بعد به دنیا آمد. نزدیک سه کیلو وزن دارد!
+- La mère et le bébé vont très bien, et moi, je me suis endormie sur une chaise de l'hôpital. | مادر و بچه هر دو حالشان خیلی خوب است و من هم روی یک صندلی بیمارستان خوابم برد.
+- Je sais que ce n'est pas une raison pour ne pas t'avoir prévenue le lendemain. | می‌دانم این دلیل نمی‌شود که فردایش هم خبرت نکردم.
+- Je n'ai pas osé t'appeler : j'avais trop honte. | جرئت نکردم زنگ بزنم: خیلی خجالت می‌کشیدم.
+- Hier, Julien m'a dit que tu avais gardé une part de gâteau pour moi, et ça m'a fait très plaisir. | دیروز ژولین به من گفت که یک تکه کیک برایم نگه داشته بودی و این خیلی خوشحالم کرد.
+- Pour me faire pardonner, j'aimerais t'inviter à dîner samedi prochain, dans le petit restaurant italien que tu aimes tant. | برای اینکه مرا ببخشی، دوست دارم شنبهٔ آینده تو را به شام دعوت کنم، در همان رستوران کوچک ایتالیایی که آن‌قدر دوستش داری.
+- C'est moi qui paie, bien sûr, et j'apporterai les photos du bébé ! | البته پولش با من، و عکس‌های بچه را هم می‌آورم!
+- J'espère que tu ne m'en veux{en vouloir à} pas trop. | امیدوارم زیاد از دستم دلخور نباشی.
+- Je t'embrasse très fort, | خیلی محکم می‌بوسمت،
+- Sarah | سارا
+reading A:
+{"type":"mcq","prompt":"Pourquoi Sarah écrit-elle à Alice ?","prompt_fa":"سارا چرا به آلیس نامه می‌نویسد؟","options":["Pour l'inviter à son anniversaire.","Pour lui annoncer qu'elle attend un bébé.","Pour s'excuser de ne pas être venue à sa fête.","Pour lui demander de l'aide avec sa sœur."],"correct":2,"explanation_fa":"سارا می‌نویسد: «pardonne-moi» و «tu m'attendais pour fêter ton anniversaire, et je ne suis jamais arrivée»."}
+{"type":"tf","prompt":"Le bébé de Claire est arrivé plus tôt que prévu.","prompt_fa":"بچهٔ کلر زودتر از موعد به دنیا آمد.","correct":true,"explanation_fa":"سارا می‌نویسد: «elle allait accoucher, trois semaines avant la date prévue !»"}
+{"type":"tf","prompt":"Sarah a appelé Alice le lendemain de la fête.","prompt_fa":"سارا فردای جشن به آلیس زنگ زد.","correct":false,"explanation_fa":"سارا می‌نویسد: «Je n'ai pas osé t'appeler : j'avais trop honte.»"}
+{"type":"find","prompt":"Quelle phrase explique pourquoi Sarah n'a pas pu répondre au téléphone ?","prompt_fa":"کدام جمله توضیح می‌دهد چرا سارا نتوانست تلفن را جواب بدهد؟","correct_sentence":7,"explanation_fa":"سارا می‌نویسد: «j'ai oublié mon téléphone dans la voiture»."}
+reading B:
+{"type":"ctx","word":"m'en veux","prompt":"« J'espère que tu ne m'en veux pas trop » : Sarah espère qu'Alice…","prompt_fa":"«J'espère que tu ne m'en veux pas trop»: سارا امیدوار است که آلیس…","options":["n'est pas trop fâchée contre elle.","ne veut pas venir au restaurant.","n'a pas trop mangé de gâteau.","ne veut pas voir le bébé."],"correct":0,"explanation_fa":"«en vouloir à quelqu'un» یعنی از کسی دلخور بودن؛ سارا امیدوار است آلیس زیاد از دستش ناراحت نباشد."}
+{"type":"order","prompt":"Mettez les événements de la soirée dans l'ordre.","prompt_fa":"رویدادهای آن شب را به ترتیب بچینید.","items":["Lucas est né.","Claire téléphone à Sarah.","Sarah retrouve son téléphone.","Sarah emmène sa sœur à l'hôpital."],"correct_order":[1,3,2,0],"explanation_fa":"«Vers 18 heures» کلر زنگ زد، سارا «l'ai donc emmenée tout de suite»، گوشی را «à deux heures du matin» پیدا کرد و لوکا «une heure plus tard» به دنیا آمد."}
+{"type":"cloze","prompt":"Complétez la phrase de Sarah.","prompt_fa":"جملهٔ سارا را کامل کنید.","text_with_gaps":"Je n'ai pas {{1}} t'appeler : j'avais trop {{2}}.","bank":["osé","honte","voulu","peur","faim"],"answers":["osé","honte"],"explanation_fa":"سارا می‌نویسد: «Je n'ai pas osé t'appeler : j'avais trop honte.»"}
+listening A:
+{"type":"num","prompt":"Combien de semaines avant la date prévue Claire a-t-elle accouché ?","prompt_fa":"کلر چند هفته زودتر از موعد زایمان کرد؟","answer":"3","accepted":["3","trois"],"explanation_fa":"سارا می‌گوید: «trois semaines avant la date prévue»."}
+{"type":"mcq","prompt":"Où était le mari de Claire ?","prompt_fa":"شوهر کلر کجا بود؟","options":["À l'hôpital.","À Lyon, pour son travail.","À la fête d'Alice.","À la maison avec Sarah."],"correct":1,"explanation_fa":"سارا می‌گوید: «Son mari était à Lyon pour son travail»."}
+{"type":"tf","prompt":"Sarah a dormi sur une chaise à l'hôpital.","prompt_fa":"سارا روی یک صندلی در بیمارستان خوابید.","correct":true,"explanation_fa":"سارا می‌گوید: «je me suis endormie sur une chaise de l'hôpital»."}
+{"type":"tf","prompt":"Le bébé ne va pas très bien.","prompt_fa":"حال بچه خیلی خوب نیست.","correct":false,"explanation_fa":"سارا می‌گوید: «La mère et le bébé vont très bien»."}
+listening B:
+{"type":"mcq","prompt":"Que propose Sarah à Alice ?","prompt_fa":"سارا به آلیس چه پیشنهادی می‌دهد؟","options":["De venir voir le bébé à l'hôpital.","De refaire la fête chez elle.","De partir en week-end ensemble.","De dîner ensemble dans un restaurant italien."],"correct":3,"explanation_fa":"سارا می‌گوید: «j'aimerais t'inviter à dîner samedi prochain, dans le petit restaurant italien que tu aimes tant»."}
+{"type":"mcq","prompt":"Que faisait Sarah quand sa sœur a appelé ?","prompt_fa":"وقتی خواهرش زنگ زد، سارا چه کار می‌کرد؟","options":["Elle dormait.","Elle conduisait.","Elle se maquillait.","Elle préparait un gâteau."],"correct":2,"explanation_fa":"سارا می‌گوید: «j'étais en train de me maquiller quand ma sœur Claire m'a téléphoné»."}
+{"type":"tf","prompt":"Alice avait gardé du gâteau pour Sarah.","prompt_fa":"آلیس برای سارا کیک نگه داشته بود.","correct":true,"explanation_fa":"سارا می‌گوید: «tu avais gardé une part de gâteau pour moi»."}
+{"type":"tf","prompt":"Au restaurant, Alice devra payer le repas.","prompt_fa":"در رستوران، آلیس باید پول غذا را بدهد.","correct":false,"explanation_fa":"سارا می‌گوید: «C'est moi qui paie, bien sûr»."}

@@ -1,0 +1,46 @@
+code: fr-b1-t084
+title: Les conseils de grand-mère
+band: 3
+kind: letter
+key_words: pratiquement, régulièrement, uniquement, faire la grasse matinée, tranquillement
+sentences:
+- Ma chère Léa, | لئای عزیزم،
+- Ta longue lettre m'a fait tellement plaisir que je l'ai lue trois fois, et ton grand-père en a parlé à tous les voisins ! | نامهٔ بلندت آن‌قدر خوشحالم کرد که سه بار خواندمش، و پدربزرگت هم تعریفش را برای همهٔ همسایه‌ها کرده!
+- Je suis si contente que tu sois heureuse à Madrid. | خیلی خوشحالم که در مادرید خوشحالی.
+- Tu me dis que les cours sont difficiles et que tu travailles pratiquement tous les soirs jusqu'à minuit. | می‌نویسی که درس‌ها سخت است و تقریباً هر شب تا نیمه‌شب درس می‌خوانی.
+- Je suis fière de toi, mais fais attention à ta santé. | به تو افتخار می‌کنم، ولی مواظب سلامتی‌ات باش.
+- À ton âge, on croit qu'on peut tout faire sans dormir. Moi aussi, je le croyais ! | آدم در سن تو فکر می‌کند می‌تواند بدون خواب همه کار بکند. من هم همین فکر را می‌کردم!
+- Alors voici les conseils d'une vieille dame. | پس این هم چند نصیحت از یک خانم پیر.
+- Mange régulièrement, et pas uniquement des pâtes. | مرتب غذا بخور، و نه فقط ماکارونی.
+- Le dimanche, fais la grasse matinée sans te sentir coupable. | یکشنبه‌ها تا دیروقت بخواب و احساس گناه هم نکن.
+- Ne reste pas toujours seule dans ta chambre avec tes livres : sors, va au marché, parle avec les gens. | همیشه با کتاب‌هایت توی اتاقت تنها نمان: بیرون برو، به بازار برو، با مردم حرف بزن.
+- C'est en{en} discutant avec la vendeuse de fruits que tu apprendras le mieux l'espagnol ! | با گپ زدن با فروشندهٔ میوه است که اسپانیایی را از همه بهتر یاد می‌گیری!
+- Et appelle ta mère de temps en temps : elle s'inquiète, même si elle ne le dit pas. | و هر از گاهی به مادرت زنگ بزن: نگران است، حتی اگر به زبان نیاورد.
+- Tu sais, moi aussi, j'avais vingt ans quand je suis partie travailler en Angleterre. | می‌دانی، من هم بیست سالم بود که برای کار به انگلستان رفتم.
+- Le premier mois, j'étais si triste loin de ma famille que je pleurais tous les soirs. | ماه اول آن‌قدر دور از خانواده‌ام غمگین بودم که هر شب گریه می‌کردم.
+- Et puis, peu à peu, je me suis fait des amis, et cette année est devenue l'une des plus belles de ma vie. | بعد کم‌کم دوست پیدا کردم و آن سال یکی از قشنگ‌ترین سال‌های عمرم شد.
+- Ici, tout va bien. Ton grand-père passe ses journées au jardin, et le chat dort tranquillement sur ton lit. | اینجا همه‌چیز خوب است. پدربزرگت روزهایش را توی باغچه می‌گذراند و گربه هم با خیال راحت روی تخت تو می‌خوابد.
+- En ce moment, nous sommes en train de peindre la cuisine en jaune : tu ne la reconnaîtras pas ! | این روزها داریم آشپزخانه را زرد رنگ می‌کنیم: دیگر نمی‌شناسی‌اش!
+- Je t'envoie aussi un petit paquet avec du chocolat et des photos de la famille. Dis-moi s'il arrive bien. | یک بستهٔ کوچک هم با شکلات و عکس‌های خانواده برایت می‌فرستم. خبرم کن که سالم به دستت رسید.
+- Je t'embrasse très fort, ma chérie. | خیلی محکم می‌بوسمت، عزیزم.
+- Ta grand-mère qui pense à toi | مادربزرگت که به یادت است
+reading A:
+{"type":"mcq","prompt":"Pourquoi la grand-mère écrit-elle à Léa ?","prompt_fa":"مادربزرگ چرا به لئا نامه می‌نویسد؟","options":["Pour lui demander de rentrer en France.","Pour répondre à sa lettre et lui donner des conseils.","Pour lui annoncer que le chat est malade.","Pour l'inviter en Angleterre."],"correct":1,"explanation_fa":"مادربزرگ از «Ta longue lettre» حرف می‌زند و بعد می‌نویسد: «voici les conseils d'une vieille dame»."}
+{"type":"tf","prompt":"Léa travaille presque tous les soirs jusqu'à minuit.","prompt_fa":"لئا تقریباً هر شب تا نیمه‌شب درس می‌خواند.","correct":true,"explanation_fa":"مادربزرگ می‌نویسد: «tu travailles pratiquement tous les soirs jusqu'à minuit»."}
+{"type":"tf","prompt":"La grand-mère a été heureuse en Angleterre dès le premier jour.","prompt_fa":"مادربزرگ از همان روز اول در انگلستان خوشحال بود.","correct":false,"explanation_fa":"مادربزرگ می‌نویسد: «Le premier mois, j'étais si triste loin de ma famille que je pleurais tous les soirs.»"}
+{"type":"find","prompt":"Quelle phrase dit comment Léa peut apprendre l'espagnol plus facilement ?","prompt_fa":"کدام جمله می‌گوید لئا چطور می‌تواند اسپانیایی را راحت‌تر یاد بگیرد؟","correct_sentence":10,"explanation_fa":"مادربزرگ می‌نویسد: «C'est en discutant avec la vendeuse de fruits que tu apprendras le mieux l'espagnol !»"}
+reading B:
+{"type":"ctx","word":"fais la grasse matinée","prompt":"« Le dimanche, fais la grasse matinée » : la grand-mère conseille à Léa de…","prompt_fa":"«Le dimanche, fais la grasse matinée»: مادربزرگ به لئا توصیه می‌کند که…","options":["se lever très tôt pour travailler.","manger beaucoup le matin.","rester au lit tard le matin.","aller au marché le matin."],"correct":2,"explanation_fa":"«faire la grasse matinée» یعنی صبح تا دیروقت خوابیدن؛ مادربزرگ می‌خواهد لئا یکشنبه‌ها استراحت کند."}
+{"type":"order","prompt":"Mettez ces moments de la vie de la grand-mère dans l'ordre.","prompt_fa":"این لحظه‌های زندگی مادربزرگ را به ترتیب بچینید.","items":["Elle se fait des amis.","Elle part travailler en Angleterre.","Elle pleure tous les soirs.","Elle peint sa cuisine en jaune."],"correct_order":[1,2,0,3],"explanation_fa":"اول «je suis partie travailler en Angleterre»، بعد ماه اول «je pleurais tous les soirs»، بعد «peu à peu, je me suis fait des amis» و حالا «nous sommes en train de peindre la cuisine en jaune»."}
+{"type":"cloze","prompt":"Complétez les conseils de la grand-mère.","prompt_fa":"نصیحت‌های مادربزرگ را کامل کنید.","text_with_gaps":"Mange {{1}}, et pas {{2}} des pâtes.","bank":["régulièrement","uniquement","tranquillement","rarement"],"answers":["régulièrement","uniquement"],"explanation_fa":"مادربزرگ می‌نویسد: «Mange régulièrement, et pas uniquement des pâtes.»"}
+{"type":"mcq","prompt":"Que dit la grand-mère de la mère de Léa ?","prompt_fa":"مادربزرگ دربارهٔ مادر لئا چه می‌گوید؟","options":["Elle est en colère contre Léa.","Elle va venir à Madrid.","Elle appelle Léa tous les jours.","Elle s'inquiète sans le dire."],"correct":3,"explanation_fa":"مادربزرگ می‌نویسد: «elle s'inquiète, même si elle ne le dit pas»."}
+listening A:
+{"type":"num","prompt":"Combien de fois la grand-mère a-t-elle lu la lettre de Léa ?","prompt_fa":"مادربزرگ نامهٔ لئا را چند بار خوانده است؟","answer":"3","accepted":["3","trois"],"explanation_fa":"مادربزرگ می‌گوید: «je l'ai lue trois fois»."}
+{"type":"mcq","prompt":"Où le chat dort-il ?","prompt_fa":"گربه کجا می‌خوابد؟","options":["Dans le jardin.","Sur le lit de Léa.","Dans la cuisine.","Sur le lit du grand-père."],"correct":1,"explanation_fa":"مادربزرگ می‌گوید: «le chat dort tranquillement sur ton lit»."}
+{"type":"tf","prompt":"La grand-mère envoie du chocolat et des photos à Léa.","prompt_fa":"مادربزرگ برای لئا شکلات و عکس می‌فرستد.","correct":true,"explanation_fa":"مادربزرگ می‌گوید: «un petit paquet avec du chocolat et des photos de la famille»."}
+{"type":"tf","prompt":"Léa étudie à Londres.","prompt_fa":"لئا در لندن درس می‌خواند.","correct":false,"explanation_fa":"مادربزرگ می‌گوید: «Je suis si contente que tu sois heureuse à Madrid.»"}
+listening B:
+{"type":"mcq","prompt":"Quel âge avait la grand-mère quand elle est partie en Angleterre ?","prompt_fa":"مادربزرگ وقتی به انگلستان رفت چند سالش بود؟","options":["Dix-huit ans.","Vingt ans.","Trente ans.","Vingt-cinq ans."],"correct":1,"explanation_fa":"مادربزرگ می‌گوید: «j'avais vingt ans quand je suis partie travailler en Angleterre»."}
+{"type":"mcq","prompt":"Que fait le grand-père pendant ses journées ?","prompt_fa":"پدربزرگ روزهایش را چطور می‌گذراند؟","options":["Il lit des livres dans sa chambre.","Il va au marché.","Il travaille au jardin.","Il peint la maison des voisins."],"correct":2,"explanation_fa":"مادربزرگ می‌گوید: «Ton grand-père passe ses journées au jardin»."}
+{"type":"tf","prompt":"La grand-mère conseille à Léa de sortir et de parler avec les gens.","prompt_fa":"مادربزرگ به لئا توصیه می‌کند بیرون برود و با مردم حرف بزند.","correct":true,"explanation_fa":"مادربزرگ می‌گوید: «sors, va au marché, parle avec les gens»."}
+{"type":"tf","prompt":"Pour la grand-mère, on peut bien travailler sans dormir.","prompt_fa":"به نظر مادربزرگ، می‌شود بدون خواب خوب کار کرد.","correct":false,"explanation_fa":"مادربزرگ می‌گوید: «À ton âge, on croit qu'on peut tout faire sans dormir. Moi aussi, je le croyais !» و از لئا می‌خواهد مواظب سلامتی‌اش باشد."}

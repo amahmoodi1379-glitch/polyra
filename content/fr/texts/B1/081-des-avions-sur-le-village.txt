@@ -1,0 +1,44 @@
+code: fr-b1-t081
+title: Des avions sur le village
+band: 3
+kind: letter
+key_words: au-dessus, oser, gâcher, nombreux
+sentences:
+- Madame, Monsieur, | خانم‌ها، آقایان،
+- Je lis votre journal tous les matins, et c'est la première fois que je vous écris. | هر روز صبح روزنامهٔ شما را می‌خوانم و این اولین بار است که برایتان می‌نویسم.
+- J'habite depuis vingt ans dans un petit village tranquille, à 15 kilomètres de Nantes. | بیست سال است که در روستای کوچک و آرامی زندگی می‌کنم، پانزده کیلومتری نانت. | tts: J'habite depuis vingt ans dans un petit village tranquille, à quinze kilomètres de Nantes.
+- Depuis le mois de mars, les avions qui partent de l'aéroport passent juste au-dessus de nos maisons. | از ماه مارس، هواپیماهایی که از فرودگاه بلند می‌شوند درست از بالای خانه‌های ما رد می‌شوند.
+- Avant, nous en entendions deux ou trois par jour, très loin. | قبلاً روزی دو سه تا می‌شنیدیم، آن هم خیلی دور.
+- Aujourd'hui, un avion passe toutes les quatre minutes, de six heures du matin à minuit. | حالا هر چهار دقیقه یک هواپیما رد می‌شود، از شش صبح تا نیمه‌شب.
+- Nous avons maintenant plus de bruit que les habitants de la ville, et pourtant, personne ne nous a demandé notre avis. | حالا سروصدای ما از ساکنان شهر هم بیشتر است و با این حال هیچ‌کس نظر ما را نپرسیده است.
+- À l'école, les enseignants doivent s'arrêter de parler à chaque avion. | در مدرسه، معلم‌ها با رد شدن هر هواپیما مجبورند حرفشان را قطع کنند.
+- Les enfants dorment mal, et ma voisine de 85 ans n'ose plus ouvrir ses fenêtres, même en été. | بچه‌ها بد می‌خوابند و همسایهٔ هشتادوپنج‌ساله‌ام دیگر جرئت نمی‌کند پنجره‌هایش را باز کند، حتی در تابستان. | tts: Les enfants dorment mal, et ma voisine de quatre-vingt-cinq ans n'ose plus ouvrir ses fenêtres, même en été.
+- Même sur les sentiers de la forêt, où je me promène chaque soir avec mon chien, on n'entend plus les oiseaux. | حتی در کوره‌راه‌های جنگل، که هر شب با سگم آنجا قدم می‌زنم، دیگر صدای پرنده‌ها شنیده نمی‌شود.
+- L'aéroport explique que ce nouveau trajet est plus court et que les avions consomment ainsi moins d'essence. | فرودگاه توضیح می‌دهد که این مسیر تازه کوتاه‌تر است و هواپیماها این‌طوری بنزین کمتری مصرف می‌کنند.
+- C'est peut-être vrai, mais je ne pense pas que ce soit une raison pour gâcher la vie de trois mille personnes. | شاید درست باشد، ولی فکر نمی‌کنم این دلیلی باشد که زندگی سه هزار نفر را خراب کنند.
+- Je ne suis pas contre l'aéroport : je prends moi-même l'avion deux fois par an pour voir ma fille à Montréal. | من مخالف فرودگاه نیستم: خودم سالی دو بار برای دیدن دخترم به مونترال هواپیما سوار می‌شوم.
+- Je demande seulement qu'on partage le bruit entre tous les villages de la région et qu'il n'y ait plus aucun avion avant sept heures. | فقط می‌خواهم سروصدا بین همهٔ روستاهای منطقه تقسیم شود و قبل از ساعت هفت دیگر هیچ هواپیمایی رد نشود.
+- Nous organisons une réunion le 14 avril à 20 heures, à la salle des fêtes, et tous vos lecteurs peuvent venir. | چهاردهم آوریل ساعت هشت شب در سالن جشن‌های روستا جلسه‌ای می‌گذاریم و همهٔ خوانندگان شما هم می‌توانند بیایند. | tts: Nous organisons une réunion le quatorze avril à vingt heures, à la salle des fêtes, et tous vos lecteurs peuvent venir.
+- Plus nous serons nombreux, plus on nous écoutera. | هر چه تعدادمان بیشتر باشد، بیشتر به حرفمان گوش می‌دهند.
+- Cordialement, | با احترام،
+- Marc Lefèvre | مارک لوفور
+reading A:
+{"type":"mcq","prompt":"Pourquoi Marc Lefèvre écrit-il au journal ?","prompt_fa":"مارک لوفور چرا به روزنامه نامه می‌نویسد؟","options":["Pour vendre sa maison près de l'aéroport.","Pour se plaindre du bruit des avions au-dessus de son village.","Pour raconter un voyage à Montréal.","Pour demander du travail à l'aéroport."],"correct":1,"explanation_fa":"مارک می‌نویسد: «les avions qui partent de l'aéroport passent juste au-dessus de nos maisons» و از سروصدای آن‌ها گله می‌کند."}
+{"type":"tf","prompt":"Marc est contre l'aéroport et ne prend jamais l'avion.","prompt_fa":"مارک مخالف فرودگاه است و هیچ‌وقت هواپیما سوار نمی‌شود.","correct":false,"explanation_fa":"مارک می‌نویسد: «Je ne suis pas contre l'aéroport : je prends moi-même l'avion deux fois par an»."}
+{"type":"tf","prompt":"Personne n'a demandé l'avis des habitants du village.","prompt_fa":"هیچ‌کس نظر ساکنان روستا را نپرسیده است.","correct":true,"explanation_fa":"مارک می‌نویسد: «personne ne nous a demandé notre avis»."}
+{"type":"find","prompt":"Quelle phrase donne la raison de l'aéroport pour ce nouveau trajet ?","prompt_fa":"کدام جمله دلیل فرودگاه را برای این مسیر تازه می‌گوید؟","correct_sentence":10,"explanation_fa":"مارک می‌نویسد: «ce nouveau trajet est plus court et que les avions consomment ainsi moins d'essence»."}
+reading B:
+{"type":"ctx","word":"gâcher","prompt":"« une raison pour gâcher la vie de trois mille personnes » : « gâcher » veut dire…","prompt_fa":"در این جمله «gâcher» یعنی…","options":["rendre plus facile","rendre beaucoup moins agréable","rendre plus longue","rendre plus calme"],"correct":1,"explanation_fa":"«gâcher» یعنی خراب کردن؛ به نظر مارک سروصدا زندگی سه هزار نفر را بد کرده است."}
+{"type":"cloze","prompt":"Complétez la phrase de la lettre.","prompt_fa":"جملهٔ نامه را کامل کنید.","text_with_gaps":"Les enfants dorment {{1}}, et ma voisine de 85 ans n'{{2}} plus ouvrir ses fenêtres, même en été.","bank":["mal","ose","bien","veut","doit"],"answers":["mal","ose"],"explanation_fa":"مارک می‌نویسد: «Les enfants dorment mal, et ma voisine de 85 ans n'ose plus ouvrir ses fenêtres»."}
+{"type":"match","prompt":"Associez.","prompt_fa":"به هم وصل کنید.","left":["Les enseignants","La voisine de Marc","La fille de Marc"],"right":["habite à Montréal.","n'ouvre plus ses fenêtres.","doivent s'arrêter de parler.","travaille à l'aéroport."],"pairs":[[0,2],[1,1],[2,0]],"explanation_fa":"معلم‌ها «doivent s'arrêter de parler à chaque avion»، همسایه «n'ose plus ouvrir ses fenêtres» و مارک برای دیدن دخترش «à Montréal» می‌رود."}
+{"type":"mcq","prompt":"Que pense Marc de l'explication de l'aéroport ?","prompt_fa":"مارک دربارهٔ توضیح فرودگاه چه فکر می‌کند؟","options":["Elle est peut-être vraie, mais elle ne suffit pas.","Elle est fausse du début à la fin.","Elle est bonne et il est d'accord.","Il ne l'a pas encore lue."],"correct":0,"explanation_fa":"مارک می‌نویسد: «C'est peut-être vrai, mais je ne pense pas que ce soit une raison pour gâcher la vie de trois mille personnes.»"}
+listening A:
+{"type":"num","prompt":"Toutes les combien de minutes un avion passe-t-il au-dessus du village ?","prompt_fa":"هر چند دقیقه یک هواپیما از بالای روستا رد می‌شود؟","answer":"4","accepted":["4","quatre"],"explanation_fa":"مارک می‌گوید: «un avion passe toutes les quatre minutes»."}
+{"type":"mcq","prompt":"Depuis quand les avions passent-ils au-dessus du village ?","prompt_fa":"از کی هواپیماها از بالای روستا رد می‌شوند؟","options":["Depuis vingt ans.","Depuis le mois d'avril.","Depuis le mois de mars.","Depuis l'été dernier."],"correct":2,"explanation_fa":"مارک می‌گوید: «Depuis le mois de mars, les avions … passent juste au-dessus de nos maisons»."}
+{"type":"tf","prompt":"Marc demande qu'il n'y ait plus d'avions avant sept heures du matin.","prompt_fa":"مارک می‌خواهد که قبل از ساعت هفت صبح دیگر هواپیمایی رد نشود.","correct":true,"explanation_fa":"مارک می‌گوید: «qu'il n'y ait plus aucun avion avant sept heures»."}
+{"type":"tf","prompt":"La réunion aura lieu à l'école du village.","prompt_fa":"جلسه در مدرسهٔ روستا برگزار می‌شود.","correct":false,"explanation_fa":"مارک می‌گوید: «Nous organisons une réunion … à la salle des fêtes»."}
+listening B:
+{"type":"mcq","prompt":"Combien de personnes habitent dans le village, d'après Marc ?","prompt_fa":"به گفتهٔ مارک، چند نفر در روستا زندگی می‌کنند؟","options":["Trois cents.","Trois mille.","Quinze cents.","Vingt mille."],"correct":1,"explanation_fa":"مارک می‌گوید: «gâcher la vie de trois mille personnes»."}
+{"type":"mcq","prompt":"Que veut Marc à la fin de sa lettre ?","prompt_fa":"مارک در آخر نامه‌اش چه می‌خواهد؟","options":["Que les lecteurs écrivent à l'aéroport.","Que le journal parle de sa fille.","Que l'aéroport ferme la nuit.","Que beaucoup de gens viennent à la réunion."],"correct":3,"explanation_fa":"مارک می‌گوید: «Plus nous serons nombreux, plus on nous écoutera.»"}
+{"type":"tf","prompt":"Avant, Marc entendait très peu d'avions.","prompt_fa":"قبلاً مارک خیلی کم صدای هواپیما می‌شنید.","correct":true,"explanation_fa":"مارک می‌گوید: «Avant, nous en entendions deux ou trois par jour, très loin.»"}
+{"type":"tf","prompt":"Marc habite au centre de Nantes.","prompt_fa":"مارک در مرکز شهر نانت زندگی می‌کند.","correct":false,"explanation_fa":"مارک می‌گوید: «dans un petit village tranquille, à 15 kilomètres de Nantes»."}

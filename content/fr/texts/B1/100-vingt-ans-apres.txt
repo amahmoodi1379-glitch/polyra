@@ -1,0 +1,48 @@
+code: fr-b1-t100
+title: Vingt ans après
+band: 3
+kind: long_dialogue
+key_words: bac, entraîneur, médaille, vedette, photographier
+sentences:
+A: Thomas ? Thomas Bernard ? C'est toi ? | توما؟ توما برنار؟ خودتی؟
+B: Julie ! Je n'y crois pas ! Ça fait combien de temps ? | ژولی! باورم نمی‌شود! چند وقت است؟
+A: Vingt ans ! On s'est vus pour la dernière fois le jour des résultats du bac. | بیست سال! آخرین بار روز اعلام نتیجه‌های دیپلم همدیگر را دیدیم.
+B: Viens, on va prendre un café. Il y a un petit bar très sympa, situé juste au bord de la Seine. | بیا برویم یک قهوه بخوریم. یک کافهٔ کوچک خیلی دنج هست، درست کنار رود سن.
+A: Alors, raconte ! Au lycée, tu voulais devenir joueur de football professionnel. | خب، تعریف کن! توی دبیرستان می‌خواستی فوتبالیست حرفه‌ای بشوی.
+B: Oui, mais à vingt ans, je me suis cassé le genou pendant un match. Pendant un an, je ne voulais plus voir un ballon. | آره، ولی بیست سالم که بود، وسط یک مسابقه زانویم شکست. یک سال تمام نمی‌خواستم چشمم به توپ بیفتد.
+A: Oh, je suis désolée… Et après ? | وای، متأسفم… بعدش چه؟
+B: Après, j'ai fait des études de sport, et aujourd'hui, je suis professeur de sport dans un lycée de Rouen. | بعدش رشتهٔ ورزش خواندم و حالا معلم ورزش یک دبیرستان در روآن هستم.
+B: Le mercredi, je suis aussi l'entraîneur d'une équipe de filles. L'année dernière, elles ont gagné une médaille d'or ! | چهارشنبه‌ها هم مربی یک تیم دخترانه‌ام. پارسال مدال طلا بردند!
+A: Bravo ! Et tu as toujours ton humour, j'espère ? | آفرین! امیدوارم هنوز همان‌قدر شوخ باشی؟
+B: Toujours ! Et toi ? Tu voulais être une vedette de cinéma, je m'en souviens très bien ! | همیشه! تو چه؟ می‌خواستی ستارهٔ سینما بشوی، خوب یادم است!
+A: Non, j'ai choisi quelque chose de plus calme : je suis vétérinaire, près de Lyon. | نه، یک کار آرام‌تر انتخاب کردم: دامپزشکم، نزدیک لیون.
+A: Je soigne surtout des chiens et des chats, mais parfois aussi des vaches et des chevaux. | بیشتر سگ و گربه درمان می‌کنم، ولی گاهی هم گاو و اسب.
+B: Et tu as des enfants ? | بچه هم داری؟
+A: Deux garçons, de huit et onze ans. Et ils adorent le football ! | دو پسر، هشت و یازده ساله. و عاشق فوتبال‌اند!
+B: Alors ils doivent venir voir un entraînement de mes filles ! | پس باید بیایند تمرین دخترهای من را ببینند!
+A: Avec plaisir ! Et toi, tu es marié ? | با کمال میل! تو چه، ازدواج کرده‌ای؟
+B: Oui, avec Sarah. Tu te souviens d'elle ? Celle qui photographiait tout le monde à chaque fête ? | آره، با سارا. یادت هست؟ همان که توی هر جشنی از همه عکس می‌گرفت؟
+B: Elle est devenue photographe. Elle a gardé toutes les photos de notre classe. | عکاس شده. همهٔ عکس‌های کلاسمان را نگه داشته است.
+A: Dis, pourquoi est-ce qu'on ne s'est plus jamais appelés, nous deux ? | بگو ببینم، چرا ما دو تا دیگر هیچ‌وقت به هم زنگ نزدیم؟
+B: Les études, les déménagements, le travail… On ne s'écrivait plus, et voilà. | درس، اسباب‌کشی‌ها، کار… دیگر به هم نامه نمی‌نوشتیم و همین شد.
+A: Et si on organisait une fête avec toute la classe ? Sarah apporterait ses photos ! | چطور است با همهٔ کلاس یک جشن بگیریم؟ سارا هم عکس‌هایش را می‌آورد!
+B: Bonne idée ! Donne-moi ton numéro, et cette fois, on ne se perd plus. | فکر خوبی است! شماره‌ات را بده، این بار دیگر همدیگر را گم نمی‌کنیم.
+reading A:
+{"type":"mcq","prompt":"Qu'est-ce qui se passe dans cette conversation ?","prompt_fa":"در این گفتگو چه اتفاقی می‌افتد؟","options":["Deux anciens amis de lycée se retrouvent par hasard.","Deux collègues préparent un match de football.","Un professeur parle avec la mère d'une élève.","Deux voisins organisent une fête pour la rue."],"correct":0,"explanation_fa":"ژولی می‌گوید: «Thomas ? Thomas Bernard ? C'est toi ?» و آن‌ها بیست سال است همدیگر را ندیده‌اند: «Vingt ans !»"}
+{"type":"tf","prompt":"Thomas est devenu joueur de football professionnel.","prompt_fa":"توما فوتبالیست حرفه‌ای شده است.","correct":false,"explanation_fa":"توما می‌گوید: «je me suis cassé le genou pendant un match» و حالا «professeur de sport dans un lycée» است."}
+{"type":"tf","prompt":"Les fils de Julie aiment beaucoup le football.","prompt_fa":"پسرهای ژولی فوتبال را خیلی دوست دارند.","correct":true,"explanation_fa":"ژولی می‌گوید: «Deux garçons, de huit et onze ans. Et ils adorent le football !»"}
+{"type":"find","prompt":"Quelle phrase explique pourquoi Julie et Thomas ne se sont plus parlé ?","prompt_fa":"کدام جمله توضیح می‌دهد چرا ژولی و توما دیگر با هم حرف نزدند؟","correct_sentence":20,"explanation_fa":"توما می‌گوید: «Les études, les déménagements, le travail… On ne s'écrivait plus, et voilà.»"}
+reading B:
+{"type":"ctx","word":"vedette","prompt":"« Tu voulais être une vedette de cinéma » : quand elle était jeune, Julie voulait…","prompt_fa":"«Tu voulais être une vedette de cinéma»: ژولی وقتی جوان بود می‌خواست…","options":["travailler dans un cinéma.","être une actrice très connue.","écrire des films.","vendre des places de cinéma."],"correct":1,"explanation_fa":"«vedette» یعنی ستاره؛ ژولی می‌خواست بازیگر معروف سینما بشود."}
+{"type":"match","prompt":"Qui fait quoi aujourd'hui ?","prompt_fa":"هر کس امروز چه کار می‌کند؟","left":["Thomas","Julie","Sarah"],"right":["est photographe.","soigne des animaux près de Lyon.","est professeur de sport à Rouen.","travaille dans un bar."],"pairs":[[0,2],[1,1],[2,0]],"explanation_fa":"توما «professeur de sport dans un lycée de Rouen»، ژولی «vétérinaire, près de Lyon» و سارا «est devenue photographe»."}
+{"type":"cloze","prompt":"Complétez la phrase de Thomas.","prompt_fa":"جملهٔ توما را کامل کنید.","text_with_gaps":"Le mercredi, je suis aussi l'{{1}} d'une équipe de filles. L'année dernière, elles ont gagné une {{2}} d'or !","bank":["entraîneur","médaille","joueur","fête","vedette"],"answers":["entraîneur","médaille"],"explanation_fa":"توما می‌گوید: «je suis aussi l'entraîneur d'une équipe de filles … elles ont gagné une médaille d'or !»"}
+listening A:
+{"type":"num","prompt":"Depuis combien d'années Julie et Thomas ne se sont-ils pas vus ?","prompt_fa":"چند سال است ژولی و توما همدیگر را ندیده‌اند؟","answer":"20","accepted":["20","vingt"],"explanation_fa":"ژولی می‌گوید: «Vingt ans !»"}
+{"type":"mcq","prompt":"Où vont-ils prendre un café ?","prompt_fa":"کجا قهوه می‌خورند؟","options":["Chez Thomas.","Dans un bar au bord de la Seine.","Au lycée.","Dans un restaurant près de Lyon."],"correct":1,"explanation_fa":"توما می‌گوید: «un petit bar très sympa, situé juste au bord de la Seine»."}
+{"type":"tf","prompt":"Thomas s'est cassé le genou pendant un match.","prompt_fa":"زانوی توما وسط یک مسابقه شکست.","correct":true,"explanation_fa":"توما می‌گوید: «je me suis cassé le genou pendant un match»."}
+{"type":"tf","prompt":"Julie soigne seulement des chiens et des chats.","prompt_fa":"ژولی فقط سگ و گربه درمان می‌کند.","correct":false,"explanation_fa":"ژولی می‌گوید: «mais parfois aussi des vaches et des chevaux»."}
+listening B:
+{"type":"mcq","prompt":"Qui est la femme de Thomas ?","prompt_fa":"همسر توما کیست؟","options":["Une vétérinaire de Lyon.","Une collègue de son lycée.","Une ancienne élève de leur classe.","Une joueuse de son équipe."],"correct":2,"explanation_fa":"توما می‌گوید: «Oui, avec Sarah. Tu te souviens d'elle ?» و سارا همان همکلاسی‌ای است که «photographiait tout le monde à chaque fête»."}
+{"type":"mcq","prompt":"Que propose Julie à la fin ?","prompt_fa":"ژولی در آخر چه پیشنهادی می‌دهد؟","options":["D'aller voir un match ensemble.","D'organiser une fête avec toute la classe.","De partir en vacances à Lyon.","D'écrire un livre sur le lycée."],"correct":1,"explanation_fa":"ژولی می‌گوید: «Et si on organisait une fête avec toute la classe ?»"}
+{"type":"tf","prompt":"L'équipe de Thomas a gagné une médaille l'année dernière.","prompt_fa":"تیم توما پارسال مدال برده است.","correct":true,"explanation_fa":"توما می‌گوید: «L'année dernière, elles ont gagné une médaille d'or !»"}
+{"type":"tf","prompt":"Julie a deux filles.","prompt_fa":"ژولی دو دختر دارد.","correct":false,"explanation_fa":"ژولی می‌گوید: «Deux garçons, de huit et onze ans.»"}

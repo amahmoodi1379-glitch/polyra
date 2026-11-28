@@ -1,0 +1,44 @@
+code: fr-b1-t099
+title: Trente-deux ans au collège
+band: 3
+kind: letter
+key_words: prendre sa retraite, humour, règle-2, calmement, favori
+sentences:
+- Chers collègues, | همکاران عزیزم،
+- Le 30 juin, après trente-deux ans dans ce collège, je prendrai ma retraite. J'ai encore du mal à le croire ! | سی‌ام ژوئن، پس از سی‌ودو سال در این مدرسه، بازنشسته می‌شوم. هنوز باورم نمی‌شود! | tts: Le trente juin, après trente-deux ans dans ce collège, je prendrai ma retraite. J'ai encore du mal à le croire !
+- Je me souviens très bien de mon premier jour, en septembre 1993. | روز اولم را، در سپتامبر ۱۹۹۳، خیلی خوب به یاد دارم. | tts: Je me souviens très bien de mon premier jour, en septembre mille neuf cent quatre-vingt-treize.
+- J'avais vingt-cinq ans, et j'avais si peur que mes mains tremblaient. | بیست‌وپنج سالم بود و آن‌قدر می‌ترسیدم که دست‌هایم می‌لرزید.
+- Ce jour-là, Anne, une collègue plus âgée, m'a dit qu'un bon professeur avait toujours deux choses dans son sac : du café et de l'humour. | همان روز، آن، یکی از همکارهای مسن‌تر، به من گفت که یک معلم خوب همیشه دو چیز توی کیفش دارد: قهوه و شوخ‌طبعی.
+- Elle avait raison, et j'ai suivi son conseil pendant trente-deux ans. | حق با او بود و من سی‌ودو سال به توصیه‌اش عمل کردم.
+- Ensemble, nous avons vécu des moments que je n'oublierai jamais : le voyage à Rome avec soixante élèves, la nuit de neige où nous avons tous dormi au collège… | با هم لحظه‌هایی را گذراندیم که هیچ‌وقت فراموش نمی‌کنم: سفر رم با شصت دانش‌آموز، آن شب برفی که همه در مدرسه خوابیدیم…
+- Dans les années difficiles, nous nous sommes toujours soutenus. | در سال‌های سخت همیشه پشت هم بودیم.
+- Je garderai en mémoire vos compliments, vos plaisanteries de la salle des profs, et même nos disputes sur l'emploi du temps ! | تعریف‌هایتان، شوخی‌هایتان در اتاق معلم‌ها و حتی بگومگوهایمان سر برنامهٔ هفتگی را به یاد نگه می‌دارم!
+- Aux plus jeunes, je voudrais donner un seul conseil. | به جوان‌ترها می‌خواهم فقط یک توصیه بکنم.
+- Les élèves oublient vite les règles{règle-2} de grammaire, mais ils n'oublient jamais la façon dont on les a traités. | دانش‌آموزها قاعده‌های دستور زبان را زود فراموش می‌کنند، ولی هیچ‌وقت یادشان نمی‌رود که با آن‌ها چطور رفتار کرده‌ایم.
+- Alors, restez patients, parlez calmement, même les jours de pluie, et gardez toujours un peu d'humour. | پس صبور باشید، با آرامش حرف بزنید، حتی در روزهای بارانی، و همیشه کمی شوخ‌طبعی داشته باشید.
+- Et moi, maintenant ? Je vais enfin apprendre le violon, mon instrument favori depuis l'enfance. | و من، حالا چه؟ بالاخره ویولن یاد می‌گیرم، ساز محبوبم از بچگی.
+- Mon mari pense que nos voisins vont vite déménager ! | شوهرم فکر می‌کند همسایه‌هایمان به‌زودی اسباب‌کشی می‌کنند!
+- Je vous invite tous à fêter mon départ le vendredi 27 juin, à 17 heures, dans la salle des profs. | همه‌تان را دعوت می‌کنم که جمعه بیست‌وهفتم ژوئن، ساعت پنج بعدازظهر، در اتاق معلم‌ها رفتنم را جشن بگیریم. | tts: Je vous invite tous à fêter mon départ le vendredi vingt-sept juin, à dix-sept heures, dans la salle des profs.
+- J'apporterai l'album de photos de nos trente-deux années ensemble : préparez-vous à rire ! | آلبوم عکس‌های سی‌ودو سال باهم بودنمان را می‌آورم: آمادهٔ خندیدن باشید!
+- Merci pour tout. Je penserai souvent à vous. | برای همه‌چیز ممنونم. زیاد به یادتان خواهم بود.
+- Avec toute mon amitié, | با همهٔ دوستی‌ام،
+- Sophie | سوفی
+reading A:
+{"type":"mcq","prompt":"Pourquoi Sophie écrit-elle à ses collègues ?","prompt_fa":"سوفی چرا به همکارانش نامه می‌نویسد؟","options":["Pour se plaindre de l'emploi du temps.","Pour leur dire au revoir avant sa retraite.","Pour organiser un voyage à Rome.","Pour leur présenter un nouveau professeur."],"correct":1,"explanation_fa":"سوفی می‌نویسد: «je prendrai ma retraite» و برای جشن رفتنش دعوت می‌کند."}
+{"type":"tf","prompt":"Le premier jour, Sophie était très calme.","prompt_fa":"سوفی روز اول خیلی آرام بود.","correct":false,"explanation_fa":"سوفی می‌نویسد: «j'avais si peur que mes mains tremblaient»."}
+{"type":"tf","prompt":"Sophie pense que les élèves se souviennent de la façon dont on les traite.","prompt_fa":"سوفی فکر می‌کند دانش‌آموزها یادشان می‌ماند که با آن‌ها چطور رفتار شده است.","correct":true,"explanation_fa":"سوفی می‌نویسد: «ils n'oublient jamais la façon dont on les a traités»."}
+{"type":"find","prompt":"Quelle phrase donne le conseil qu'Anne a donné à Sophie ?","prompt_fa":"کدام جمله توصیه‌ای را می‌گوید که آن به سوفی کرد؟","correct_sentence":4,"explanation_fa":"سوفی می‌نویسد: «un bon professeur avait toujours deux choses dans son sac : du café et de l'humour»."}
+reading B:
+{"type":"ctx","word":"humour","prompt":"« gardez toujours un peu d'humour » : Sophie conseille…","prompt_fa":"«gardez toujours un peu d'humour»: سوفی توصیه می‌کند…","options":["de savoir rire et faire rire.","de boire beaucoup de café.","de parler très fort.","de donner beaucoup de devoirs."],"correct":0,"explanation_fa":"«humour» یعنی شوخ‌طبعی؛ سوفی می‌خواهد همکارانش بتوانند بخندند و دیگران را بخندانند."}
+{"type":"order","prompt":"Mettez ces moments dans l'ordre.","prompt_fa":"این لحظه‌ها را به ترتیب بچینید.","items":["Sophie prend sa retraite.","Sophie arrive au collège.","Sophie fête son départ avec ses collègues.","Anne donne un conseil à Sophie."],"correct_order":[1,3,2,0],"explanation_fa":"سوفی «en septembre 1993» آمد، همان روز آن به او توصیه کرد، جشن «le vendredi 27 juin» است و بازنشستگی «Le 30 juin»."}
+{"type":"cloze","prompt":"Complétez les conseils de Sophie.","prompt_fa":"توصیه‌های سوفی را کامل کنید.","text_with_gaps":"Alors, restez {{1}}, parlez {{2}}, même les jours de pluie, et gardez toujours un peu d'{{3}}.","bank":["patients","calmement","humour","vite","argent","fatigués"],"answers":["patients","calmement","humour"],"explanation_fa":"سوفی می‌نویسد: «restez patients, parlez calmement, même les jours de pluie, et gardez toujours un peu d'humour»."}
+listening A:
+{"type":"num","prompt":"Combien d'années Sophie a-t-elle travaillé dans ce collège ?","prompt_fa":"سوفی چند سال در این مدرسه کار کرده است؟","answer":"32","accepted":["32","trente-deux"],"explanation_fa":"سوفی می‌گوید: «après trente-deux ans dans ce collège»."}
+{"type":"mcq","prompt":"Que va faire Sophie après sa retraite ?","prompt_fa":"سوفی بعد از بازنشستگی چه کار می‌کند؟","options":["Elle va déménager.","Elle va écrire un livre.","Elle va apprendre le violon.","Elle va voyager à Rome."],"correct":2,"explanation_fa":"سوفی می‌گوید: «Je vais enfin apprendre le violon»."}
+{"type":"tf","prompt":"Sophie apportera un album de photos à la fête.","prompt_fa":"سوفی یک آلبوم عکس به جشن می‌آورد.","correct":true,"explanation_fa":"سوفی می‌گوید: «J'apporterai l'album de photos de nos trente-deux années ensemble»."}
+{"type":"tf","prompt":"La fête aura lieu dans un restaurant.","prompt_fa":"جشن در یک رستوران برگزار می‌شود.","correct":false,"explanation_fa":"سوفی می‌گوید: «dans la salle des profs»."}
+listening B:
+{"type":"mcq","prompt":"Avec combien d'élèves les professeurs sont-ils allés à Rome ?","prompt_fa":"معلم‌ها با چند دانش‌آموز به رم رفتند؟","options":["Vingt-cinq.","Trente-deux.","Dix-sept.","Soixante."],"correct":3,"explanation_fa":"سوفی می‌گوید: «le voyage à Rome avec soixante élèves»."}
+{"type":"mcq","prompt":"Que pense le mari de Sophie ?","prompt_fa":"شوهر سوفی چه فکر می‌کند؟","options":["Que les voisins vont bientôt partir.","Que Sophie devrait encore travailler.","Que le violon est trop cher.","Que la fête sera trop longue."],"correct":0,"explanation_fa":"سوفی می‌گوید: «Mon mari pense que nos voisins vont vite déménager !»"}
+{"type":"tf","prompt":"Les professeurs ont dormi une nuit au collège à cause de la neige.","prompt_fa":"معلم‌ها یک شب به‌خاطر برف در مدرسه خوابیدند.","correct":true,"explanation_fa":"سوفی می‌گوید: «la nuit de neige où nous avons tous dormi au collège»."}
+{"type":"tf","prompt":"Sophie n'a jamais eu de disputes avec ses collègues.","prompt_fa":"سوفی هیچ‌وقت با همکارانش بگومگو نداشته است.","correct":false,"explanation_fa":"سوفی می‌گوید: «et même nos disputes sur l'emploi du temps !»"}

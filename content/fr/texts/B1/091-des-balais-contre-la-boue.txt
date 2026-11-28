@@ -1,0 +1,43 @@
+code: fr-b1-t091
+title: Des balais contre la boue
+band: 3
+kind: news
+key_words: inondation, boue, bénévole, seau, cave
+sentences:
+- Trois jours après les inondations dans le sud de la France, des centaines de bénévoles aident les habitants à nettoyer leurs maisons. | سه روز پس از سیل در جنوب فرانسه، صدها داوطلب به اهالی کمک می‌کنند تا خانه‌هایشان را تمیز کنند.
+- Dans la nuit de dimanche à lundi, la rivière est montée de quatre mètres en quelques heures dans plusieurs villages près de Montpellier. | شب یکشنبه به دوشنبه، آب رودخانه در چند روستای نزدیک مون‌پلیه ظرف چند ساعت چهار متر بالا آمد.
+- L'eau est entrée dans plus de 600 maisons, parfois jusqu'à 1,50 mètre de hauteur. | آب وارد بیش از ششصد خانه شد، گاهی تا ارتفاع یک متر و نیم. | tts: L'eau est entrée dans plus de six cents maisons, parfois jusqu'à un mètre cinquante de hauteur.
+- Heureusement, il n'y a eu aucune victime. | خوشبختانه هیچ‌کس آسیب ندید.
+- Mais en{en} partant, l'eau a laissé derrière elle une boue épaisse et une odeur terrible. | ولی آب وقتی رفت، گل غلیظ و بوی وحشتناکی از خودش به جا گذاشت.
+- Depuis mardi, des tas de meubles, de matelas et de jouets attendent devant chaque porte. | از سه‌شنبه، جلوی هر در کپه‌ای از مبل و تشک و اسباب‌بازی منتظر مانده است.
+- Avec des seaux, des balais et des brosses, les bénévoles vident les caves et lavent les murs. | داوطلب‌ها با سطل و جارو و برس زیرزمین‌ها را خالی می‌کنند و دیوارها را می‌شویند.
+- « Je suis venu avec toute mon équipe de football », raconte Karim, 19 ans, étudiant à Montpellier. | کریم، ۱۹ ساله و دانشجو در مون‌پلیه، تعریف می‌کند: «با کل تیم فوتبالم آمده‌ام.» | tts: « Je suis venu avec toute mon équipe de football », raconte Karim, dix-neuf ans, étudiant à Montpellier.
+- « On ne pouvait pas rester chez nous à regarder ça à la télé. » | «نمی‌توانستیم توی خانه بنشینیم و این‌ها را از تلویزیون تماشا کنیم.»
+- Chez Marie et Paul Rousseau, deux retraités, l'eau est montée jusqu'au plafond du sous-sol. | در خانهٔ ماری و پل روسو، دو بازنشسته، آب تا سقف زیرزمین بالا آمد.
+- « Nous avons perdu les photos de toute notre vie. Mais en{en} voyant arriver tous ces jeunes, j'ai pleuré de joie », dit Marie. | ماری می‌گوید: «عکس‌های تمام عمرمان را از دست دادیم. ولی وقتی دیدم این‌همه جوان دارند می‌آیند، از خوشحالی گریه کردم.»
+- L'électricité n'est pas encore revenue partout. | برق هنوز همه‌جا وصل نشده است.
+- Des techniciens vérifient chaque maison, et il est interdit de brancher un appareil avant leur visite. | تکنسین‌ها تک‌تک خانه‌ها را بررسی می‌کنند و تا پیش از سرزدن آن‌ها وصل کردن هر وسیلهٔ برقی ممنوع است.
+- Le maire a fait venir des camions de toute la région pour emporter les déchets. | شهردار از همهٔ منطقه کامیون آورده تا زباله‌ها را ببرند.
+- À la salle des fêtes, une association sert chaque midi 500 repas chauds, et le boulanger offre le pain. | در سالن جشن‌ها، یک انجمن هر ظهر پانصد وعدهٔ غذای گرم می‌دهد و نانوا هم نان را مجانی می‌دهد. | tts: À la salle des fêtes, une association sert chaque midi cinq cents repas chauds, et le boulanger offre le pain.
+- Au club des retraités, des dames du village cousent déjà de nouveaux rideaux pour l'école. | در باشگاه بازنشسته‌ها، چند خانم روستا از همین حالا دارند برای مدرسه پردهٔ نو می‌دوزند.
+- La mairie a encore besoin de bras pour le week-end. | شهرداری برای آخر هفته هنوز به نیروی کمکی نیاز دارد.
+- Les bénévoles ont rendez-vous samedi à 8 heures devant la mairie, avec des bottes et des gants. | داوطلب‌ها شنبه ساعت هشت جلوی شهرداری قرار دارند، با چکمه و دستکش. | tts: Les bénévoles ont rendez-vous samedi à huit heures devant la mairie, avec des bottes et des gants.
+reading A:
+{"type":"mcq","prompt":"Quel est le sujet de cet article ?","prompt_fa":"موضوع این خبر چیست؟","options":["Des bénévoles qui aident après des inondations.","Une équipe de football qui gagne un match.","Une rivière qu'on veut nettoyer avant l'été.","Des retraités qui vendent leurs meubles."],"correct":0,"explanation_fa":"خبر می‌گوید: «des centaines de bénévoles aident les habitants à nettoyer leurs maisons»."}
+{"type":"tf","prompt":"Il y a eu des victimes pendant les inondations.","prompt_fa":"در سیل کسانی آسیب دیدند یا جان باختند.","correct":false,"explanation_fa":"خبر می‌گوید: «Heureusement, il n'y a eu aucune victime.»"}
+{"type":"tf","prompt":"On ne peut pas encore utiliser l'électricité dans toutes les maisons.","prompt_fa":"هنوز در همهٔ خانه‌ها نمی‌شود از برق استفاده کرد.","correct":true,"explanation_fa":"خبر می‌گوید: «L'électricité n'est pas encore revenue partout.»"}
+{"type":"find","prompt":"Quelle phrase dit ce que les bénévoles font avec leurs outils ?","prompt_fa":"کدام جمله می‌گوید داوطلب‌ها با ابزارشان چه کار می‌کنند؟","correct_sentence":6,"explanation_fa":"خبر می‌گوید: «Avec des seaux, des balais et des brosses, les bénévoles vident les caves et lavent les murs.»"}
+reading B:
+{"type":"ctx","word":"bras","prompt":"« La mairie a encore besoin de bras » : la mairie cherche…","prompt_fa":"«La mairie a encore besoin de bras»: شهرداری دنبال … است.","options":["des médecins.","de l'argent.","des gens pour aider.","des camions."],"correct":2,"explanation_fa":"«avoir besoin de bras» یعنی به آدم برای کار نیاز داشتن؛ برای همین بعدش وقت قرار داوطلب‌ها را می‌گوید."}
+{"type":"match","prompt":"Associez.","prompt_fa":"به هم وصل کنید.","left":["Karim","Le maire","Des dames du village","Le boulanger"],"right":["offre le pain.","cousent des rideaux pour l'école.","est venu avec son équipe de football.","a fait venir des camions.","sert 500 repas chauds."],"pairs":[[0,2],[1,3],[2,1],[3,0]],"explanation_fa":"کریم «Je suis venu avec toute mon équipe de football»، شهردار «a fait venir des camions»، خانم‌ها «cousent déjà de nouveaux rideaux pour l'école» و «le boulanger offre le pain»."}
+{"type":"cloze","prompt":"Complétez la phrase de l'article.","prompt_fa":"جملهٔ خبر را کامل کنید.","text_with_gaps":"Mais en partant, l'eau a laissé derrière elle une boue {{1}} et une {{2}} terrible.","bank":["épaisse","odeur","chaude","pluie","légère"],"answers":["épaisse","odeur"],"explanation_fa":"خبر می‌گوید: «une boue épaisse et une odeur terrible»."}
+listening A:
+{"type":"num","prompt":"Dans combien de maisons l'eau est-elle entrée ?","prompt_fa":"آب وارد چند خانه شد؟","answer":"600","accepted":["600","six cents"],"explanation_fa":"می‌شنویم: «L'eau est entrée dans plus de 600 maisons»."}
+{"type":"mcq","prompt":"Qu'est-ce que Marie Rousseau a perdu ?","prompt_fa":"ماری روسو چه چیزی را از دست داده است؟","options":["Sa voiture.","Son chien.","Les photos de toute sa vie.","Les rideaux de sa cuisine."],"correct":2,"explanation_fa":"ماری می‌گوید: «Nous avons perdu les photos de toute notre vie.»"}
+{"type":"tf","prompt":"Les bénévoles doivent venir samedi avec des bottes et des gants.","prompt_fa":"داوطلب‌ها باید شنبه با چکمه و دستکش بیایند.","correct":true,"explanation_fa":"می‌شنویم: «samedi à 8 heures devant la mairie, avec des bottes et des gants»."}
+{"type":"tf","prompt":"Karim a préféré regarder les informations à la télé.","prompt_fa":"کریم ترجیح داد اخبار را از تلویزیون ببیند.","correct":false,"explanation_fa":"کریم می‌گوید: «On ne pouvait pas rester chez nous à regarder ça à la télé.»"}
+listening B:
+{"type":"mcq","prompt":"Où l'association sert-elle les repas ?","prompt_fa":"انجمن غذاها را کجا می‌دهد؟","options":["Devant la mairie.","À l'école.","Au club des retraités.","À la salle des fêtes."],"correct":3,"explanation_fa":"می‌شنویم: «À la salle des fêtes, une association sert chaque midi 500 repas chauds»."}
+{"type":"mcq","prompt":"Pourquoi Marie a-t-elle pleuré de joie ?","prompt_fa":"چرا ماری از خوشحالی گریه کرد؟","options":["Parce que l'électricité est revenue.","Parce que beaucoup de jeunes sont venus l'aider.","Parce qu'elle a retrouvé ses photos.","Parce que l'eau n'est pas entrée chez elle."],"correct":1,"explanation_fa":"ماری می‌گوید: «en voyant arriver tous ces jeunes, j'ai pleuré de joie»."}
+{"type":"tf","prompt":"Il est interdit de brancher un appareil avant la visite d'un technicien.","prompt_fa":"وصل کردن هر وسیلهٔ برقی پیش از سرزدن تکنسین ممنوع است.","correct":true,"explanation_fa":"می‌شنویم: «il est interdit de brancher un appareil avant leur visite»."}
+{"type":"tf","prompt":"La rivière est montée lentement pendant une semaine.","prompt_fa":"آب رودخانه در طول یک هفته آرام‌آرام بالا آمد.","correct":false,"explanation_fa":"می‌شنویم: «la rivière est montée de quatre mètres en quelques heures»."}
