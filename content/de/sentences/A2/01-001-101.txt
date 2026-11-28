@@ -108,7 +108,7 @@ Er ist krank, [also] kommt er heute nicht. | او مریض است، پس امر�
 # deshalb
 Ich bin krank, [deshalb] bleibe ich im Bett. | مریضم، برای همین در رختخواب می‌مانم. | d: trotzdem, nie, wohin
 Der Bus kommt nicht. [Deshalb] nehmen wir ein Taxi. | اتوبوس نمی‌آید. برای همین تاکسی می‌گیریم. | d: Trotzdem, Nie, Wohin
-Sie hat morgen eine Prüfung, [deshalb] lernt sie heute viel. | فردا امتحان دارد، برای همین امروز خیلی درس می‌خواند. | d: trotzdem, nie, wohin
+Sie hat morgen eine Prüfung, [deshalb] lernt sie heute viel. | فردا امتحان دارد، برای همین امروز خیلی درس می‌خواند. | d: trotzdem, nie, wohin | ok: also, deswegen, darum
 Mein Auto ist alt, [deshalb] fahre ich oft mit dem Fahrrad. | ماشینم قدیمی است، برای همین اغلب با دوچرخه می‌روم. | d: trotzdem, nie, wohin
 Es war sehr kalt, [deshalb] sind wir zu Hause geblieben. | هوا خیلی سرد بود، برای همین خانه ماندیم. | d: trotzdem, nie, wohin
 Ich habe Hunger. Ich koche [deshalb] eine Suppe. | گرسنه‌ام. برای همین یک سوپ درست می‌کنم. | d: trotzdem, nie, wohin
@@ -117,7 +117,7 @@ Es regnet, aber wir gehen [trotzdem] in den Park. | باران می‌آید، �
 Ich bin müde, [trotzdem] muss ich arbeiten. | خسته‌ام، با این حال باید کار کنم. | d: deshalb, also, nie
 Das Hotel war teuer und [trotzdem] nicht schön. | هتل گران بود و با این حال قشنگ نبود. | d: deshalb, also, nie
 Er hat Fieber, aber er geht [trotzdem] zur Arbeit. | تب دارد، اما باز هم سر کار می‌رود. | d: deshalb, also, nie
-Der Test war schwer. [Trotzdem] habe ich alles richtig gemacht. | امتحان سخت بود. با این حال همه را درست جواب دادم. | d: Deshalb, Also, Nie
+Der Test war schwer. [Trotzdem] habe ich alles richtig gemacht. | امتحان سخت بود. با این حال همه را درست جواب دادم. | d: Deshalb, Also, Nie | ok: Dennoch
 Wir haben wenig Geld, [trotzdem] sind wir glücklich. | پول کمی داریم، با این حال خوشحالیم. | d: deshalb, also, nie
 # sondern
 Das ist kein Tee, [sondern] Kaffee. | این چای نیست، بلکه قهوه است. | d: aber, oder, denn
@@ -131,10 +131,10 @@ Das Hotel ist schön. [Außerdem] ist es nicht teuer. | هتل قشنگ است. 
 Ich habe keine Zeit, und [außerdem] bin ich müde. | وقت ندارم، تازه خسته هم هستم.
 Wir brauchen Brot und Milch. [Außerdem] brauchen wir Eier. | نان و شیر لازم داریم. علاوه بر این تخم‌مرغ هم لازم داریم. | d: Woher, Wann, Wie viel
 Anna spricht Deutsch und Englisch. [Außerdem] lernt sie Persisch. | آنا آلمانی و انگلیسی صحبت می‌کند. به‌علاوه فارسی هم یاد می‌گیرد. | d: Woher, Wann, Wohin
-Die Wohnung ist groß und hat [außerdem] einen Garten. | آپارتمان بزرگ است و علاوه بر این یک باغچه هم دارد. | d: deshalb, wohin, wann
+Die Wohnung ist groß und hat [außerdem] einen Garten. | آپارتمان بزرگ است و علاوه بر این یک باغچه هم دارد. | d: deshalb, wohin, wann | ok: auch
 Es regnet, und [außerdem] ist es kalt. | باران می‌آید و علاوه بر این سرد هم هست.
 # zuerst
-[Zuerst] frühstücke ich, dann gehe ich zur Arbeit. | اول صبحانه می‌خورم، بعد سر کار می‌روم.
+[Zuerst] frühstücke ich, dann gehe ich zur Arbeit. | اول صبحانه می‌خورم، بعد سر کار می‌روم. | ok: Erst
 [Zuerst] müssen wir die Fahrkarten kaufen. | اول باید بلیت‌ها را بخریم.
 Mach [zuerst] deine Hausaufgaben! | اول تکلیف‌هایت را انجام بده!
 Ich war [zuerst] da! | من اول آمدم!
@@ -151,8 +151,8 @@ Der Kurs dauert eine Stunde, und [danach] trinken wir Tee. | کلاس یک سا�
 Wir essen um sieben. [Vorher] gehe ich einkaufen. | ساعت هفت غذا می‌خوریم. قبلش می‌روم خرید. | d: Später, Danach, Gestern
 Ruf mich bitte [vorher] an. | لطفاً قبلش به من زنگ بزن.
 Jetzt wohne ich in Berlin. [Vorher] habe ich in Köln gewohnt. | الان در برلین زندگی می‌کنم. قبلش در کلن زندگی می‌کردم. | ok: Früher | d: Später, Morgen, Bald
-Der Film beginnt um acht. [Vorher] essen wir eine Pizza. | فیلم ساعت هشت شروع می‌شود. قبلش یک پیتزا می‌خوریم. | d: Später, Danach, Nie
-Warum hast du das nicht [vorher] gesagt? | چرا این را زودتر نگفتی؟ | ok: früher, gleich | d: morgen, danach, oft
+Der Film beginnt um acht. [Vorher] essen wir eine Pizza. | فیلم ساعت هشت شروع می‌شود. قبلش یک پیتزا می‌خوریم. | d: Später, Danach, Nie | ok: Davor
+Warum hast du das nicht [vorher] gesagt? | چرا این را زودتر نگفتی؟ | ok: früher, gleich, sofort, eher | d: morgen, danach, oft
 Bitte fragt [vorher] eure Eltern. | لطفاً قبلش از پدر و مادرتان بپرسید. | d: danach, morgen, nie
 # mal
 Komm [mal] in die Küche! | یک لحظه بیا آشپزخانه! | ok: einmal
@@ -277,7 +277,7 @@ Ihr [beide] seid sehr nett. | شما دوتا خیلی مهربانید. | d: et
 [Einige] Leute warten an der Haltestelle. | چند نفر در ایستگاه منتظرند. | ok: Ein paar | d: Viele, Alle, Keine
 Ich habe noch [einige] Fragen. | هنوز چند سؤال دارم. | ok: ein paar | d: viele, alle, keine
 Wir bleiben [einige] Tage in Wien. | چند روزی در وین می‌مانیم. | ok: ein paar | d: viele, alle, keine
-[Einige] Schüler haben die Hausaufgaben nicht gemacht. | چند تا از دانش‌آموزها تکلیفشان را انجام نداده‌اند. | ok: Ein paar | d: Viele, Alle, Keine
+[Einige] Schüler haben die Hausaufgaben nicht gemacht. | چند تا از دانش‌آموزها تکلیفشان را انجام نداده‌اند. | ok: Ein paar, Manche | d: Viele, Alle, Keine
 Er hat [einige] Jahre in Deutschland gelebt. | او چند سال در آلمان زندگی کرده است. | ok: ein paar | d: viele, alle, keine
 Im Garten gibt es [einige] Blumen. | در باغچه چند تا گل هست. | ok: ein paar | d: viele, alle, keine
 # ein paar
@@ -324,7 +324,7 @@ Er spricht [ziemlich] gut Deutsch. | او نسبتاً خوب آلمانی صح�
 Wir wohnen [ziemlich] weit vom Zentrum. | ما نسبتاً دور از مرکز شهر زندگی می‌کنیم.
 # sogar
 Er spricht [sogar] Persisch! | او حتی فارسی هم صحبت می‌کند!
-Im Sommer ist es hier [sogar] am Abend warm. | این‌جا تابستان‌ها حتی شب‌ها هم گرم است.
+Im Sommer ist es hier [sogar] am Abend warm. | این‌جا تابستان‌ها حتی شب‌ها هم گرم است. | ok: selbst
 Mein Opa hat [sogar] ein Handy. | پدربزرگم حتی موبایل هم دارد.
 Das Kind kann [sogar] schon lesen. | این بچه حتی خواندن هم بلد است.
 Sie arbeitet [sogar] am Sonntag. | او حتی یکشنبه‌ها هم کار می‌کند.
@@ -341,8 +341,8 @@ Das ist [gar nicht] schwer. | این اصلاً سخت نیست.
 Ich habe [gar nicht] geschlafen. | اصلاً نخوابیدم.
 Der Film war [gar nicht] gut. | فیلم اصلاً خوب نبود.
 Ich kenne ihn [gar nicht]. | اصلاً او را نمی‌شناسم.
-Das stimmt [gar nicht]! | این اصلاً درست نیست!
-Er hat mich [gar nicht] gesehen. | او اصلاً مرا ندید.
+Das stimmt [gar nicht]! | این اصلاً درست نیست! | ok: überhaupt nicht
+Er hat mich [gar nicht] gesehen. | او اصلاً مرا ندید. | ok: überhaupt nicht
 # was für ein
 [Was für ein] Auto hast du? | چه جور ماشینی داری؟
 Und [was für ein] Buch liest du gerade? | و الان چه جور کتابی می‌خوانی؟
@@ -419,7 +419,7 @@ Alle sind da, [außer] Anna. | همه هستند، به‌جز آنا.
 Das Geschäft ist jeden Tag offen, [außer] am Sonntag. | مغازه هر روز باز است، به‌جز یکشنبه‌ها.
 Ich esse alles [außer] Fisch. | من همه چیز می‌خورم به‌جز ماهی.
 [Außer] Tee haben wir nichts. | غیر از چای چیزی نداریم. | d: In, Seit, Zwischen
-Ich habe alle Wörter gelernt, [außer] zwei. | همه کلمه‌ها را یاد گرفته‌ام، به‌جز دو تا. | d: nach, wegen, gegen
+Ich habe alle Wörter gelernt, [außer] zwei. | همه کلمه‌ها را یاد گرفته‌ام، به‌جز دو تا. | d: wegen, neben, hinter
 # pro
 Das Zimmer kostet 60 Euro [pro] Nacht. | اتاق شبی شصت یورو است.
 Ich trinke zwei Liter Wasser [pro] Tag. | روزی دو لیتر آب می‌نوشم.
@@ -470,11 +470,11 @@ Warte bitte [draußen]! | لطفاً بیرون صبر کن!
 Der Hund schläft [draußen] im Garten. | سگ بیرون توی باغچه می‌خوابد.
 Wie ist das Wetter [draußen]? | هوای بیرون چطور است؟
 # drinnen
-Es regnet, wir spielen heute [drinnen]. | باران می‌آید، امروز داخل بازی می‌کنیم.
+Es regnet, wir spielen heute [drinnen]. | باران می‌آید، امروز داخل بازی می‌کنیم. | d: draußen, geradeaus, nach Hause
 Draußen ist es kalt, aber [drinnen] ist es warm. | بیرون سرد است، اما داخل گرم است. | d: nach Hause, geradeaus, links
 Bleib bitte [drinnen], du bist krank. | لطفاً داخل بمان، مریضی.
 Wo ist Papa? – [Drinnen] im Wohnzimmer. | بابا کجاست؟ – داخل، توی اتاق نشیمن. | d: Geradeaus, Nach Hause, Draußen
-Wir essen heute [drinnen], es ist zu kalt. | امروز داخل غذا می‌خوریم، هوا زیادی سرد است.
+Wir essen heute [drinnen], es ist zu kalt. | امروز داخل غذا می‌خوریم، هوا زیادی سرد است. | d: draußen, geradeaus, links
 Ist jemand [drinnen]? | کسی داخل هست؟ | d: geradeaus, nach Hause, links
 # überall
 Ich habe meinen Schlüssel [überall] gesucht. | همه‌جا دنبال کلیدم گشتم.
@@ -498,8 +498,8 @@ Eine Fahrkarte nach Köln und [zurück], bitte. | یک بلیت رفت و برگ
 Wir sind seit gestern aus dem Urlaub [zurück]. | از دیروز از مرخصی برگشته‌ایم.
 Ich möchte mein Geld [zurück]. | پولم را پس می‌خواهم.
 # vorbei
-Der Sommer ist [vorbei]. | تابستان تمام شد.
-Die Prüfung ist [vorbei]! | امتحان تمام شد!
+Der Sommer ist [vorbei]. | تابستان تمام شد. | ok: zu Ende
+Die Prüfung ist [vorbei]! | امتحان تمام شد! | ok: zu Ende
 Der Film ist schon [vorbei]. | فیلم دیگر تمام شده است.
 Ist der Regen [vorbei]? | باران بند آمده؟
 Die Ferien sind leider [vorbei]. | تعطیلات متأسفانه تمام شد.
@@ -550,8 +550,8 @@ Wir sind [endlich] zu Hause. | بالاخره رسیدیم خانه.
 Es war warm, und [plötzlich] hat es geschneit. | هوا گرم بود و ناگهان برف آمد.
 [Plötzlich] war mein Handy weg! | یک‌دفعه موبایلم غیب شد!
 Er hatte [plötzlich] Fieber. | ناگهان تب کرد.
-Der Hund ist [plötzlich] auf die Straße gelaufen. | سگ ناگهان دوید توی خیابان.
-[Plötzlich] hat jemand meinen Namen gesagt. | ناگهان یک نفر اسمم را گفت.
+Der Hund ist [plötzlich] auf die Straße gelaufen. | سگ ناگهان دوید توی خیابان. | ok: auf einmal
+[Plötzlich] hat jemand meinen Namen gesagt. | ناگهان یک نفر اسمم را گفت. | ok: Auf einmal
 Warum bist du [plötzlich] so traurig? | چرا یک‌دفعه این‌قدر ناراحتی؟
 # sofort
 Komm [sofort] nach Hause! | فوراً بیا خانه! | ok: gleich | d: oft, nie, gestern
@@ -638,12 +638,12 @@ Heute ist Freitag, [vorgestern] war Mittwoch. | امروز جمعه است، پ�
 Seit [vorgestern] habe ich Fieber. | از پریروز تب دارم.
 [Vorgestern] hat es viel geregnet. | پریروز خیلی باران آمد.
 # pünktlich
-Der Zug ist [pünktlich]. | قطار سر وقت است.
-Bitte sei [pünktlich]! | لطفاً سر وقت باش!
-Er kommt nie [pünktlich]. | او هیچ‌وقت سر وقت نمی‌آید.
-Wir sind [pünktlich] um acht da. | ما سر ساعت هشت آن‌جاییم.
-Der Kurs beginnt [pünktlich] um neun Uhr. | کلاس سر ساعت نه شروع می‌شود.
-Meine Lehrerin ist immer sehr [pünktlich]. | معلمم همیشه خیلی وقت‌شناس است.
+Der Zug ist [pünktlich]. | قطار سر وقت است. | d: oft, nie, sehr
+Bitte sei [pünktlich]! | لطفاً سر وقت باش! | d: spät, müde, krank
+Er kommt nie [pünktlich]. | او هیچ‌وقت سر وقت نمی‌آید. | d: gestern, morgen, oft
+Wir sind [pünktlich] um acht da. | ما سر ساعت هشت آن‌جاییم. | d: gestern, letzte, nächste
+Der Kurs beginnt [pünktlich] um neun Uhr. | کلاس سر ساعت نه شروع می‌شود. | d: gestern, letzte, nächste
+Meine Lehrerin ist immer sehr [pünktlich]. | معلمم همیشه خیلی وقت‌شناس است. | d: gestern, morgen, oft
 # Anfang
 [Anfang] Mai fahren wir nach Wien. | اوایل ماه مه به وین می‌رویم.
 Am [Anfang] war der Kurs schwer. | اولش کلاس سخت بود.

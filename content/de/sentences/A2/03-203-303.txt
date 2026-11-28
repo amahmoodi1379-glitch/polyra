@@ -12,7 +12,7 @@ Meine Mutter [hat Recht]: Ich brauche eine Jacke. | مادرم راست می‌�
 Ich glaube, Sie [haben Recht]. | فکر می‌کنم حق با شماست.
 Der Lehrer sagt, dass wir [Recht haben]. | معلم می‌گوید که حق با ماست. | d: Recht habe, Recht hast, Recht hat
 Okay, ihr [habt Recht], wir nehmen den Zug. | باشه، حق با شماست، با قطار می‌رویم.
-Lukas [hat Recht], es ist schon spät. | لوکاس راست می‌گوید، دیگر دیر است.
+Lukas [hat Recht], es ist schon spät. | لوکاس راست می‌گوید، دیگر دیر است. | ok: hat recht
 # Lust haben
 Ich [habe Lust] auf eine Pizza. | دلم پیتزا می‌خواهد.
 Wer [hat Lust] auf ein Eis? | کی هوس بستنی کرده؟
@@ -126,7 +126,7 @@ Der Junge ist groß und [dünn]. | آن پسر قدبلند و لاغر است.
 Im Sommer trage ich ein [dünnes] Hemd. | تابستان یک پیراهن نازک می‌پوشم.
 Das Papier ist sehr [dünn]. | این کاغذ خیلی نازک است.
 # schlank
-Meine Tante ist groß und [schlank]. | خاله‌ام قدبلند و باریک‌اندام است.
+Meine Tante ist groß und [schlank]. | خاله‌ام قدبلند و باریک‌اندام است. | ok: dünn
 Viel Sport hält [schlank]. | ورزش زیاد آدم را لاغر نگه می‌دارد.
 Sie ist sehr [schlank], aber sie isst viel. | خیلی لاغر است، ولی زیاد غذا می‌خورد.
 Ich möchte [schlank] bleiben und esse wenig Zucker. | می‌خواهم لاغر بمانم و کم شکر می‌خورم.
@@ -162,7 +162,7 @@ Der Wind ist heute nur [schwach]. | باد امروز فقط ملایم است.
 Ohne Frühstück bin ich am Morgen ganz [schwach]. | بدون صبحانه صبح‌ها حسابی بی‌حالم.
 # lieb
 Unsere Oma ist sehr [lieb]. | مادربزرگمان خیلی مهربان است. | ok: nett
-Das ist [lieb] von dir, danke! | لطف داری، ممنون! | d: müde, dick, blond | ok: nett
+Das ist [lieb] von dir, danke! | لطف داری، ممنون! | d: müde, dick, blond | ok: nett, süß, freundlich
 Sei [lieb] zu deiner Schwester! | با خواهرت مهربان باش! | ok: nett
 [Lieber]{lieb} Max, vielen Dank für deinen Brief. | ماکس عزیز، خیلی ممنون برای نامه‌ات.
 Der Hund ist ganz [lieb], er tut nichts. | این سگ خیلی مهربان است، کاری به کسی ندارد. | d: lustig, fleißig, unhöflich
@@ -293,7 +293,7 @@ Die Musik ist zu [leise], ich höre nichts. | صدای موسیقی زیادی �
 Das Kind weint [leise]. | بچه آرام و بی‌صدا گریه می‌کند.
 Unser neuer Kühlschrank ist sehr [leise]. | یخچال جدیدمان خیلی بی‌صداست.
 Im Kino muss man [leise] sein. | در سینما باید ساکت بود. | d: schwer, offen, spät | ok: still, ruhig
-Sie macht die Tür ganz [leise] zu. | در را خیلی آهسته می‌بندد.
+Sie macht die Tür ganz [leise] zu. | در را خیلی بی‌صدا می‌بندد.
 # Nachbar
 Unser [Nachbar] hat einen großen Hund. | همسایه‌مان یک سگ بزرگ دارد.
 Die [Nachbarn] sind sehr nett. | همسایه‌ها خیلی مهربان‌اند.
@@ -348,13 +348,13 @@ In unserer Stadt leben viele [Ausländer]. | در شهر ما خارجی‌ها�
 Mein Freund ist [Ausländer], er kommt aus Iran. | دوستم خارجی است، اهل ایران است.
 Am Bahnhof fragt mich ein [Ausländer] etwas auf Englisch. | در ایستگاه قطار یک خارجی به انگلیسی چیزی از من می‌پرسد.
 Im Kurs sind nur [Ausländer]. | در این کلاس فقط خارجی‌ها هستند. | d: Geburtstage, Adressen, Fragen
-Ich bin hier [Ausländer], aber ich fühle mich zu Hause. | من اینجا خارجی‌ام، ولی احساس می‌کنم در خانه خودم هستم. | d: Name, Vorname, Geburtstag
+Ich bin hier [Ausländer], aber ich fühle mich zu Hause. | من اینجا خارجی‌ام، ولی احساس می‌کنم در خانه خودم هستم. | d: Name, Vorname, Geburtstag | ok: Ausländerin
 Viele [Ausländer] arbeiten in Deutschland. | خارجی‌های زیادی در آلمان کار می‌کنند. | d: Geburtstage, Namen, Fragen
 # Ausländerin
 Meine Kollegin ist [Ausländerin], sie kommt aus Österreich. | همکارم خارجی است، اهل اتریش است.
 Die [Ausländerin] spricht sehr gut Deutsch. | آن خانم خارجی خیلی خوب آلمانی حرف می‌زند.
 In der Klasse ist nur eine [Ausländerin]. | در کلاس فقط یک خانم خارجی هست.
-Ich bin hier [Ausländerin] und lerne Deutsch. | من اینجا خارجی هستم و آلمانی یاد می‌گیرم.
+Ich bin hier [Ausländerin] und lerne Deutsch. | من اینجا خارجی هستم و آلمانی یاد می‌گیرم. | ok: Ausländer
 Eine [Ausländerin] sucht eine Wohnung in Berlin. | یک خانم خارجی دنبال آپارتمان در برلین است.
 Die [Ausländerinnen] im Kurs lernen alle zusammen Deutsch. | خانم‌های خارجی کلاس همه با هم آلمانی یاد می‌گیرند.
 # Einwohner
@@ -398,7 +398,7 @@ Dein Gesicht ist mir [bekannt]. | چهره‌ات برایم آشناست. | d: 
 Isfahan ist eine [bekannte] Stadt im Iran. | اصفهان شهر معروفی در ایران است.
 Das Problem ist uns schon [bekannt]. | این مشکل را از قبل می‌دانیم.
 Die Straße ist mir [bekannt], hier wohnt meine Tante. | این خیابان برایم آشناست، خاله‌ام اینجا زندگی می‌کند.
-Das Café ist für seinen Kuchen [bekannt]. | این کافه به خاطر کیکش معروف است.
+Das Café ist für seinen Kuchen [bekannt]. | این کافه به خاطر کیکش معروف است. | ok: berühmt
 # berühmt
 Sie ist eine [berühmte] Ärztin. | او پزشک مشهوری است. | ok: bekannte
 Das Museum ist sehr [berühmt]. | این موزه خیلی مشهور است. | ok: bekannt
@@ -654,7 +654,7 @@ Ich sitze auf der [Treppe] vor dem Haus und warte. | روی پله‌های جل
 # Aufzug
 Der [Aufzug] funktioniert heute nicht. | آسانسور امروز کار نمی‌کند. | d: Teppich, Boden, Balkon
 Wir nehmen den [Aufzug], die Koffer sind schwer. | با آسانسور می‌رویم، چمدان‌ها سنگین‌اند.
-Gibt es hier einen [Aufzug]? | اینجا آسانسور هست؟
+Gibt es hier einen [Aufzug]? | اینجا آسانسور هست؟ | ok: Fahrstuhl, Lift
 Der [Aufzug] ist gleich rechts. | آسانسور همین سمت راست است.
 Im [Aufzug] habe ich unseren Nachbarn getroffen. | در آسانسور همسایه‌مان را دیدم.
 Unser Haus ist alt und hat keinen [Aufzug]. | خانه ما قدیمی است و آسانسور ندارد. | d: Schreibtisch, Teppich, Spiegel

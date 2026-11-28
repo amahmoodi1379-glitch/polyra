@@ -15,7 +15,7 @@ Wir haben keine Zeit, wir gehen schnell zum [Imbiss]. | وقت نداریم، س
 Mein Onkel arbeitet in einem [Imbiss]. | عمویم در یک اغذیه‌فروشی کار می‌کند.
 Das Essen vom [Imbiss] ist billig, aber nicht immer gesund. | غذای اغذیه‌فروشی ارزان است، ولی همیشه سالم نیست.
 # Kantine
-Mittags essen wir in der [Kantine]. | ظهرها در سلف غذا می‌خوریم.
+Mittags essen wir in der [Kantine]. | ظهرها در سلف محل کار غذا می‌خوریم.
 Das Essen in der [Kantine] ist heute sehr lecker. | غذای سلف امروز خیلی خوشمزه است.
 Unsere Firma hat eine große [Kantine]. | شرکت ما یک غذاخوری بزرگ دارد.
 Ich treffe meine Kollegen oft in der [Kantine]. | همکارانم را اغلب در سلف می‌بینم.
@@ -75,7 +75,7 @@ Ich habe die Erdbeeren heute gekauft, sie sind ganz [frisch]. | توت‌فرن�
 Die Schokolade ist sehr [süß]. | شکلات خیلی شیرین است.
 Der Kuchen ist mir zu [süß]. | این کیک برای من زیادی شیرین است.
 Diese Trauben sind wirklich [süß]. | این انگورها واقعاً شیرین‌اند.
-Oh, das Baby ist so [süß]! | وای، این بچه چقدر شیرین است!
+Oh, das Baby ist so [süß]! | وای، این بچه چقدر شیرین است! | ok: niedlich
 Der Nachtisch war sehr [süß]. | دسر خیلی شیرین بود.
 Mit Honig ist der Tee schön [süß]. | چای با عسل حسابی شیرین می‌شود.
 # sauer
@@ -260,7 +260,7 @@ Brauchen Sie noch den [Kassenbon]? | رسید را لازم دارید؟ | d: Ki
 Ohne [Kassenbon] gibt es kein Geld zurück. | بدون رسید، پولی پس داده نمی‌شود.
 Ich finde den [Kassenbon] nicht mehr. | رسید را دیگر پیدا نمی‌کنم. | d: Kiosk, Laden, Markt
 Der Preis steht auf dem [Kassenbon]. | قیمت روی رسید نوشته شده.
-Kann ich bitte einen [Kassenbon] haben? | لطفاً می‌شود یک رسید به من بدهید؟
+Kann ich bitte einen [Kassenbon] haben? | لطفاً می‌شود یک رسید به من بدهید؟ | ok: Bon
 # Größe
 Welche [Größe] haben Sie bei Schuhen? | سایز کفشتان چند است؟
 Haben Sie die Hose auch in [Größe] 40? | این شلوار را در سایز چهل هم دارید؟
@@ -277,11 +277,11 @@ Ich kaufe nichts, wenn ich es nicht [anprobiere]. | تا چیزی را پرو ن
 Der Mantel ist schön, darf ich ihn [anprobieren]? | پالتو قشنگ است، اجازه هست امتحانش کنم؟ | d: ausziehen, waschen, verkaufen
 # umtauschen
 Kann ich den Pullover [umtauschen]? | می‌توانم این پلیور را عوض کنم؟
-Die Hose ist zu klein, ich möchte sie [umtauschen]. | شلوار زیادی کوچک است، می‌خواهم عوضش کنم. | d: umtausche, umtauschst, umgetauscht
+Die Hose ist zu klein, ich möchte sie [umtauschen]. | شلوار زیادی کوچک است، می‌خواهم عوضش کنم. | d: umtausche, umtauschst, umgetauscht | ok: tauschen
 Ohne Kassenbon können wir nichts [umtauschen]. | بدون رسید نمی‌توانیم چیزی را عوض کنیم.
 Ich habe die Schuhe gestern [umgetauscht]. | کفش‌ها را دیروز عوض کردم. | d: umtauschen, umtauschst, umtauscht
 Das Geschenk passt nicht, aber du kannst es [umtauschen]. | هدیه اندازه نیست، ولی می‌توانی عوضش کنی.
-Man kann die Jacke zwei Wochen lang [umtauschen]. | ژاکت را تا دو هفته می‌شود عوض کرد.
+Man kann die Jacke zwei Wochen lang [umtauschen]. | ژاکت را تا دو هفته می‌شود عوض کرد. | ok: tauschen
 # aussuchen
 Du darfst ein Geschenk [aussuchen]. | می‌توانی یک هدیه انتخاب کنی. | ok: wählen
 Hast du schon ein Kleid [ausgesucht]? | لباس را انتخاب کرده‌ای؟ | d: aussuchen, aussuchst, aussucht | ok: gewählt
@@ -306,7 +306,7 @@ Die [Mode] von heute gefällt meiner Großmutter nicht. | مادربزرگم ا�
 Diese Jacke ist leider aus der [Mode]. | این ژاکت متأسفانه از مد افتاده است. | d: Brille, Tasche, Hose
 # anziehen
 Es ist kalt, du musst eine Jacke [anziehen]. | هوا سرد است، باید یک ژاکت بپوشی. | d: ausziehen, anprobieren, waschen
-Was möchtest du heute [anziehen]? | امروز چه می‌خواهی بپوشی؟ | d: ausziehen, anprobieren, waschen
+Was möchtest du heute [anziehen]? | امروز چه می‌خواهی بپوشی؟ | d: ausziehen, anprobieren, waschen | ok: tragen
 Ich habe heute meinen neuen Pullover [angezogen]. | امروز پلیور نوی‌ام را پوشیدم. | d: anziehen, anziehst, anzieht
 Die Kinder müssen noch ihre Schuhe [anziehen]. | بچه‌ها هنوز باید کفش‌هایشان را بپوشند. | d: ausziehen, anprobieren, waschen
 Hast du das Baby schon [angezogen]? | به بچه لباس پوشاندی؟ | d: anziehen, anziehst, anzieht
@@ -447,7 +447,7 @@ Die Wand im Bad ist [rosa]. | دیوار حمام صورتی است.
 # lila
 Die Blumen auf dem Balkon sind [lila]. | گل‌های بالکن بنفش‌اند.
 Ich suche eine [lila] Bluse. | دنبال یک بلوز بنفش می‌گردم. | d: rote, braune, grüne
-Die Tasche ist [lila] und sehr schön. | کیف بنفش است و خیلی قشنگ.
+Die Tasche ist [lila] und sehr schön. | کیف بنفش است و خیلی قشنگ. | ok: violett
 Mein neues Fahrrad ist [lila]. | دوچرخهٔ نوی‌ام بنفش است.
 Im Herbst trage ich gern meinen [lila] Schal. | پاییز دوست دارم شال‌گردن بنفشم را ببندم. | d: roten, braunen, grünen
 Die Wände sind gelb, die Tür ist [lila]. | دیوارها زردند، در بنفش است.
@@ -477,7 +477,7 @@ Kann ich hier auch [bar bezahlen]? | این‌جا نقد هم می‌توانم
 Ich [bezahle bar], ich habe keine Karte. | نقد می‌دهم، کارت ندارم.
 Wir [bezahlen bar], bitte – hier sind zwanzig Euro. | لطفاً نقد حساب می‌کنیم – بفرمایید، بیست یورو.
 Hast du gestern im Hotel [bar bezahlt]? | دیروز در هتل نقدی پرداخت کردی؟
-Auf dem Markt muss man oft [bar bezahlen]. | در بازار اغلب باید نقد پرداخت کرد. | d: mit Karte bezahlen, einkaufen gehen, essen gehen
+Auf dem Markt muss man oft [bar bezahlen]. | در بازار اغلب باید نقد پرداخت کرد. | d: mit Karte bezahlen, einkaufen gehen, essen gehen | ok: bar zahlen
 Mein Großvater möchte immer [bar bezahlen]. | پدربزرگم همیشه می‌خواهد نقد پول بدهد. | d: mit Karte bezahlen, einkaufen gehen, essen gehen
 # Kreditkarte
 Kann ich mit [Kreditkarte] bezahlen? | می‌توانم با کارت اعتباری پرداخت کنم؟ | d: Speisekarte, Briefmarke, Telefonnummer | ok: Karte

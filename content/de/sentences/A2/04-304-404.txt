@@ -7,7 +7,7 @@ Der [Herd] in dieser Wohnung ist sehr alt. | اجاق این آپارتمان خ
 Mama steht am [Herd] und kocht Reis. | مامان پای اجاق ایستاده و برنج می‌پزد.
 In der Küche gibt es einen [Herd] und einen Kühlschrank. | آشپزخانه یک اجاق و یک یخچال دارد.
 # Ofen
-Der Kuchen ist noch im [Ofen]. | کیک هنوز توی فر است.
+Der Kuchen ist noch im [Ofen]. | کیک هنوز توی فر است. | ok: Backofen
 Das Brot muss zwanzig Minuten in den [Ofen]. | نان باید بیست دقیقه برود توی فر.
 Im Winter sitzen wir gern am [Ofen]. | زمستان‌ها دوست داریم کنار بخاری بنشینیم. | d: Keller, Spiegel, Schrank
 Unser [Ofen] funktioniert nicht mehr. | فر ما دیگر کار نمی‌کند. | d: Tisch, Schrank, Teppich
@@ -106,7 +106,7 @@ Wie kann ich die Waschmaschine [einschalten]? | ماشین لباس‌شویی �
 Mein Sohn hat den Computer schon um sechs Uhr [eingeschaltet]. | پسرم ساعت شش صبح کامپیوتر را روشن کرده است. | d: einschalten, einschaltet, einschaltete
 # ausschalten
 Hast du den Herd [ausgeschaltet]? | اجاق را خاموش کرده‌ای؟ | d: ausschalten, ausschaltet, ausschaltete
-Kannst du das Radio [ausschalten]? Ich will schlafen. | می‌شود رادیو را خاموش کنی؟ می‌خواهم بخوابم.
+Kannst du das Radio [ausschalten]? Ich will schlafen. | می‌شود رادیو را خاموش کنی؟ می‌خواهم بخوابم. | ok: ausmachen
 Im Flugzeug muss man das Handy [ausschalten]. | در هواپیما باید موبایل را خاموش کرد.
 Mama ist böse, weil ich den Computer nicht [ausschalte]. | مامان عصبانی است، چون کامپیوتر را خاموش نمی‌کنم. | d: ausschaltest, ausschaltet, ausschalten
 Um zehn Uhr müssen die Kinder den Fernseher [ausschalten]. | ساعت ده بچه‌ها باید تلویزیون را خاموش کنند.
@@ -361,7 +361,7 @@ Für die Suppe brauchst du einen [Löffel]. | برای سوپ قاشق لازم 
 Im Iran isst man Reis oft mit [Löffel] und Gabel. | در ایران برنج را اغلب با قاشق و چنگال می‌خورند.
 Ich nehme einen [Löffel] Zucker in den Tee. | توی چایم یک قاشق شکر می‌ریزم.
 Das Baby isst schon mit dem [Löffel]. | بچه دیگر با قاشق غذا می‌خورد.
-Die [Löffel] sind in der Spülmaschine. | قاشق‌ها توی ماشین ظرف‌شویی است.
+Die [Löffel] sind in der Spülmaschine. | قاشق‌ها توی ماشین ظرف‌شویی است. | d: Messer, Teller, Gabeln
 Gib mir bitte einen kleinen [Löffel] für den Kuchen. | لطفاً یک قاشق کوچک برای کیک به من بده.
 # Schüssel
 Der Salat ist in der großen [Schüssel]. | سالاد توی کاسه بزرگ است.
@@ -477,7 +477,7 @@ Im Reis ist zu viel [Pfeffer]. | توی برنج فلفل زیادی است.
 Das Fleisch kommt mit Salz und [Pfeffer] in die Pfanne. | گوشت با نمک و فلفل می‌رود توی ماهیتابه.
 # Soße
 Die [Soße] ist sehr lecker. | سس خیلی خوشمزه است.
-Möchtest du [Soße] zu den Nudeln? | با ماکارونی سس می‌خواهی؟
+Möchtest du [Soße] zu den Nudeln? | با ماکارونی سس می‌خواهی؟ | ok: Sauce
 Ohne [Soße] schmeckt das Hähnchen nicht gut. | مرغ بدون سس مزه خوبی ندارد.
 Mama macht die beste [Soße]. | مامان بهترین سس را درست می‌کند.
 Ist in der [Soße] Fleisch? | توی سس گوشت هست؟
@@ -721,7 +721,7 @@ Nach der Vorspeise kommt das [Hauptgericht]. | بعد از پیش‌غذا غذ�
 Das [Hauptgericht] kostet 15 Euro. | غذای اصلی پانزده یورو است. | d: Glas, Rezept, Mehl
 Die Kinder essen das [Hauptgericht] nicht, sie wollen nur Eis. | بچه‌ها غذای اصلی را نمی‌خورند، فقط بستنی می‌خواهند.
 # Nachtisch
-Was gibt es zum [Nachtisch]? | دسر چی داریم؟
+Was gibt es zum [Nachtisch]? | دسر چی داریم؟ | ok: Dessert
 Ich nehme heute keinen [Nachtisch]. | امروز دسر نمی‌خورم.
 Nach dem Essen möchte ich noch einen [Nachtisch]. | بعد از غذا یک دسر هم می‌خواهم.
 Der [Nachtisch] im Restaurant war teuer. | دسر رستوران گران بود.
