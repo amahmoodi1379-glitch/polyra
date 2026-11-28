@@ -4,25 +4,26 @@ band: 1
 kind: dialogue
 key_words: Nachbarin, laut, leise
 sentences:
-A: Guten Abend, Herr Neumann! Ich bin Ihre Nachbarin von oben. | عصر بخیر آقای نویمان! من همسایه طبقه بالای شما هستم.
-B: Guten Abend! Ist etwas passiert? | عصر بخیر! اتفاقی افتاده؟
-A: Ihre{Ihr-det} Musik ist sehr laut, und ich kann nicht schlafen. | موسیقی شما خیلی بلند است و نمی‌توانم بخوابم.
-B: Oh, das tut mir leid! Wir feiern heute meinen Geburtstag. | اوه، ببخشید! امروز داریم تولدم را جشن می‌گیریم.
-A: Dann herzlichen Glückwunsch! | پس تولدتان مبارک!
-B: Danke! Ab jetzt sind wir leiser. Möchten Sie vielleicht ein Stück Kuchen? | ممنون! از حالا آرام‌تریم. شاید یک تکه کیک میل دارید؟
-A: Gern, das ist sehr nett von Ihnen! | با کمال میل، خیلی لطف دارید!
+A: Guten Abend! Ja, bitte? | عصر بخیر! بفرمایید؟
+B: Guten Abend, Herr Neumann! Ich bin Ihre Nachbarin von oben. | عصر بخیر آقای نویمان! من همسایه طبقه بالای شما هستم.
+A: Ist etwas passiert? | اتفاقی افتاده؟
+B: Ihre{Ihr-det} Musik ist sehr laut, und ich kann nicht schlafen. | موسیقی شما خیلی بلند است و نمی‌توانم بخوابم.
+A: Oh, das tut mir leid! Wir feiern heute meinen Geburtstag. | اوه، ببخشید! امروز داریم تولدم را جشن می‌گیریم.
+B: Dann herzlichen Glückwunsch! | پس تولدتان مبارک!
+A: Danke! Ab jetzt sind wir leiser. Möchten Sie vielleicht ein Stück Kuchen? | ممنون! از حالا صدایمان را کم می‌کنیم. یک تکه کیک میل دارید؟
+B: Gern, das ist sehr nett von Ihnen! | با کمال میل، خیلی لطف دارید!
 reading A:
 {"type":"mcq","prompt":"خانم همسایه چرا آمده است؟","options":["کیک می‌خواهد","موسیقی خیلی بلند است","کلیدش را گم کرده است","برای تولد دعوت شده است"],"correct":1,"explanation_fa":"همسایه می‌گوید: «Ihre Musik ist sehr laut, und ich kann nicht schlafen.»"}
 {"type":"tf","prompt":"خانم همسایه طبقه بالای آقای نویمان زندگی می‌کند.","correct":true,"explanation_fa":"همسایه می‌گوید: «Ich bin Ihre Nachbarin von oben.»"}
 {"type":"tf","prompt":"امروز تولد خانم همسایه است.","correct":false,"explanation_fa":"آقای نویمان می‌گوید: «Wir feiern heute meinen Geburtstag»؛ تولد خودش است."}
 reading B:
-{"type":"find","prompt":"کدام جمله می‌گوید آقای نویمان به همسایه کیک تعارف می‌کند؟","correct_sentence":5,"explanation_fa":"آقای نویمان می‌گوید: «Möchten Sie vielleicht ein Stück Kuchen?»"}
+{"type":"find","prompt":"کدام جمله می‌گوید آقای نویمان به همسایه کیک تعارف می‌کند؟","correct_sentence":6,"explanation_fa":"آقای نویمان می‌گوید: «Möchten Sie vielleicht ein Stück Kuchen?»"}
 {"type":"mcq","prompt":"آقای نویمان چه قولی می‌دهد؟","options":["موسیقی را خاموش کنند","مهمانی را تمام کنند","فردا جشن بگیرند","از حالا آرام‌تر باشند"],"correct":3,"explanation_fa":"آقای نویمان می‌گوید: «Ab jetzt sind wir leiser.»"}
 listening A:
 {"type":"mcq","prompt":"امروز چه مناسبتی است؟","options":["تولد خانم همسایه","کریسمس","تولد آقای نویمان","سال نو"],"correct":2,"explanation_fa":"آقای نویمان می‌گوید: «Wir feiern heute meinen Geburtstag.»"}
 {"type":"tf","prompt":"خانم همسایه نمی‌تواند بخوابد.","correct":true,"explanation_fa":"همسایه می‌گوید: «ich kann nicht schlafen»."}
 {"type":"tf","prompt":"خانم همسایه کیک را قبول نمی‌کند.","correct":false,"explanation_fa":"همسایه می‌گوید: «Gern, das ist sehr nett von Ihnen!»"}
 listening B:
-{"type":"dict","sentence":1}
+{"type":"dict","sentence":2}
 {"type":"tf","prompt":"آقای نویمان عذرخواهی می‌کند.","correct":true,"explanation_fa":"آقای نویمان می‌گوید: «Oh, das tut mir leid!»"}
 {"type":"tf","prompt":"آقای نویمان می‌گوید موسیقی بلند نیست.","correct":false,"explanation_fa":"آقای نویمان قبول می‌کند و می‌گوید: «Ab jetzt sind wir leiser.»"}

@@ -1,0 +1,28 @@
+code: de-a2-t016
+title: Mit dem Fahrrad zum Meer
+band: 1
+kind: voice_message
+key_words: schaffen, vergessen, ungefähr
+sentences:
+- Hallo Sophie, hier ist Leon. | سلام سوفی، لئون هستم.
+- Morgen fahren wir endlich mit dem Fahrrad zum Meer! | فردا بالاخره با دوچرخه به دریا می‌رویم!
+- Ich bin um 7 Uhr bei dir. | ساعت ۷ دم خانه‌ات هستم. | tts: Ich bin um sieben Uhr bei dir.
+- Wir fahren ungefähr vier Stunden, aber wir machen oft Pause. | حدود چهار ساعت رکاب می‌زنیم، ولی مرتب استراحت می‌کنیم.
+- Ich glaube, wir schaffen das! | فکر می‌کنم از پسش برمی‌آییم!
+- Vergiss bitte dein Wasser nicht, am Nachmittag ist es sehr heiß. | لطفاً آبت را فراموش نکن، بعدازظهر هوا خیلی گرم است.
+- Ich habe Brot und Käse für uns. | من برای هر دومان نان و پنیر دارم.
+- Bis morgen! | تا فردا!
+reading A:
+{"type":"mcq","prompt":"لئون و سوفی فردا کجا می‌روند؟","options":["به کوه","به دریا","به شهر","به پارک"],"correct":1,"explanation_fa":"لئون می‌گوید: «Morgen fahren wir endlich mit dem Fahrrad zum Meer!»"}
+{"type":"tf","prompt":"لئون و سوفی با دوچرخه می‌روند.","correct":true,"explanation_fa":"لئون می‌گوید: «mit dem Fahrrad zum Meer»، یعنی با دوچرخه به دریا."}
+{"type":"tf","prompt":"آن‌ها حدود دو ساعت در راه هستند.","correct":false,"explanation_fa":"لئون می‌گوید: «Wir fahren ungefähr vier Stunden»، یعنی حدود چهار ساعت."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید سوفی چه چیزی را فراموش نکند؟","correct_sentence":5,"explanation_fa":"لئون می‌گوید: «Vergiss bitte dein Wasser nicht»، یعنی آبش را فراموش نکند."}
+{"type":"mcq","prompt":"به گفته لئون، چرا سوفی باید آب بیاورد؟","options":["چون لئون آب ندارد","چون در دریا شنا می‌کنند","چون بعدازظهر خیلی گرم است","چون شب دیر برمی‌گردند"],"correct":2,"explanation_fa":"لئون می‌گوید: «am Nachmittag ist es sehr heiß»، یعنی بعدازظهر هوا خیلی گرم است."}
+listening A:
+{"type":"num","prompt":"لئون ساعت چند پیش سوفی است؟","answer":"7","accepted":["7","7 Uhr","sieben"],"explanation_fa":"لئون می‌گوید: «Ich bin um 7 Uhr bei dir.»"}
+{"type":"tf","prompt":"لئون فکر می‌کند که آن‌ها از پس این راه برمی‌آیند.","correct":true,"explanation_fa":"لئون می‌گوید: «Ich glaube, wir schaffen das!»"}
+{"type":"tf","prompt":"لئون برای خوردن چیزی ندارد.","correct":false,"explanation_fa":"لئون می‌گوید: «Ich habe Brot und Käse für uns.»"}
+listening B:
+{"type":"dict","sentence":4}
+{"type":"mcq","prompt":"لئون چه غذایی با خودش دارد؟","options":["نان و کالباس","سیب و موز","نان و پنیر","کیک و شکلات"],"correct":2,"explanation_fa":"لئون می‌گوید: «Ich habe Brot und Käse für uns.»"}

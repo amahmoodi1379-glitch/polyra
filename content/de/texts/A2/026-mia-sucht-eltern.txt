@@ -18,7 +18,7 @@ reading A:
 {"type":"tf","prompt":"موهای میا تیره است.","correct":false,"explanation_fa":"در اعلام آمده: «Ihre Haare sind blond»، یعنی موهایش بور است."}
 reading B:
 {"type":"find","prompt":"کدام جمله می‌گوید میا حالا کجا منتظر است؟","correct_sentence":5,"explanation_fa":"در اعلام آمده: «Mia wartet jetzt an Kasse 3.»"}
-{"type":"match","prompt":"هر چیز را به رنگش وصل کن.","left":["موهای میا","کاپشن میا","شلوار میا"],"right":["تیره","بور","سفید","قرمز"],"pairs":[[0,1],[1,3],[2,0]],"explanation_fa":"موهایش «blond»، کاپشنش «rot» و شلوارش «dunkel» است."}
+{"type":"match","prompt":"هر چیز را به رنگش وصل کن.","left":["موهای میا","کاپشن میا","شلوار میا"],"right":["تیره","بور","سفید","قرمز"],"pairs":[[0,1],[1,3],[2,0]],"explanation_fa":"موهایش «blond» است و او «eine rote Jacke und eine dunkle Hose» پوشیده است."}
 listening A:
 {"type":"num","prompt":"میا کنار صندوق شماره چند منتظر است؟","answer":"3","accepted":["3","drei","Kasse 3"],"explanation_fa":"در اعلام آمده: «Mia wartet jetzt an Kasse 3.»"}
 {"type":"mcq","prompt":"میا دنبال چه کسی می‌گردد؟","options":["پدر و مادرش","مادربزرگش","برادرش","معلمش"],"correct":0,"explanation_fa":"در اعلام آمده: «Die kleine Mia sucht ihre Eltern.»"}

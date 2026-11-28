@@ -18,11 +18,11 @@ reading A:
 {"type":"tf","prompt":"قطار دیگر از سکوی ۷ حرکت می‌کند.","correct":false,"explanation_fa":"گفته می‌شود: «ein anderer Zug von Gleis 5»، یعنی سکوی ۵."}
 reading B:
 {"type":"find","prompt":"کدام جمله می‌گوید قطار دیگر کی به هامبورگ می‌رسد؟","correct_sentence":5,"explanation_fa":"جواب «Wann ist er in Hamburg?» این است: «Um 14:15 Uhr.»"}
-{"type":"match","prompt":"هر چیز را به ساعتش وصل کن.","left":["حرکت قطار دیگر","رسیدن قطار دیگر به هامبورگ","قرار ملاقات مسافر"],"right":["ساعت سه","۱۲:۱۰","ساعت دو","۱۴:۱۵"],"pairs":[[0,1],[1,3],[2,0]],"explanation_fa":"قطار دیگر «um 12:10 Uhr» حرکت می‌کند و «um 14:15 Uhr» می‌رسد و قرار مسافر «um drei» است."}
+{"type":"match","prompt":"هر چیز را به ساعتش وصل کن.","left":["حرکت قطار دیگر","رسیدن قطار دیگر به هامبورگ","قرار ملاقات مسافر"],"right":["ساعت سه","۱۲:۱۰","ساعت دو","۱۴:۱۵"],"pairs":[[0,1],[1,3],[2,0]],"explanation_fa":"قطار دیگر «Um 12:10 Uhr» حرکت می‌کند و «Um 14:15 Uhr» می‌رسد و قرار مسافر «um drei» است."}
 listening A:
 {"type":"num","prompt":"قطار دیگر از سکوی شماره چند حرکت می‌کند؟","answer":"5","accepted":["5","fünf","Gleis 5"],"explanation_fa":"گفته می‌شود: «von Gleis 5»."}
 {"type":"mcq","prompt":"مسافر وقتی می‌شنود قطار دیر می‌آید، چه می‌گوید؟","options":["چه بدشانسی!","چه خوب!","مهم نیست.","چه جالب!"],"correct":0,"explanation_fa":"مسافر می‌گوید: «So ein Pech!»"}
 listening B:
 {"type":"dict","sentence":4}
-{"type":"tf","prompt":"مسافر با قطار دیگر قبل از ساعت سه به هامبورگ می‌رسد.","correct":true,"explanation_fa":"قطار دیگر «um 14:15 Uhr» در هامبورگ است و قرار مسافر «um drei» است."}
-{"type":"tf","prompt":"قطار دیگر ساعت دو حرکت می‌کند.","correct":false,"explanation_fa":"گفته می‌شود: «Um 12:10 Uhr fährt ein anderer Zug.»"}
+{"type":"tf","prompt":"مسافر با قطار دیگر قبل از ساعت سه به هامبورگ می‌رسد.","correct":true,"explanation_fa":"قطار دیگر «Um 14:15 Uhr» در هامبورگ است و قرار مسافر «um drei» است."}
+{"type":"tf","prompt":"قطار دیگر ساعت دو حرکت می‌کند.","correct":false,"explanation_fa":"گفته می‌شود: «Um 12:10 Uhr fährt ein anderer Zug von Gleis 5.»"}

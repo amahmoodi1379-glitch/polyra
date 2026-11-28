@@ -1,9 +1,9 @@
 code: de-a2-t011
-title: Das Wetter in Hamburg
+title: Das Wetter in Stuttgart
 band: 1
 kind: announcement
 sentences:
-- Guten Morgen! Hier ist das Wetter für Hamburg. | صبح بخیر! این هم هوای هامبورگ.
+- Guten Morgen! Hier ist das Wetter für Stuttgart. | صبح بخیر! این هم هوای اشتوتگارت.
 - Es ist schon Anfang April, aber der Winter ist noch nicht vorbei. | اوایل آوریل است، ولی زمستان هنوز تمام نشده.
 - Heute ist es kalt, nur 4 Grad. | امروز هوا سرد است، فقط ۴ درجه. | tts: Heute ist es kalt, nur vier Grad.
 - Morgens regnet es, und nachts schneit es sogar. | صبح باران می‌آید و شب حتی برف می‌بارد.
@@ -12,7 +12,7 @@ sentences:
 - Dann sind es mittags schon 15 Grad. | آن روز ظهر هوا به ۱۵ درجه می‌رسد. | tts: Dann sind es mittags schon fünfzehn Grad.
 - Tschüss und bis morgen! | خداحافظ و تا فردا!
 reading A:
-{"type":"mcq","prompt":"این خبر درباره چیست؟","options":["قطارهای هامبورگ","هوای هامبورگ","یک کنسرت در هامبورگ","مدرسه‌های هامبورگ"],"correct":1,"explanation_fa":"گوینده می‌گوید: «Hier ist das Wetter für Hamburg.»"}
+{"type":"mcq","prompt":"این خبر درباره چیست؟","options":["قطارهای اشتوتگارت","هوای اشتوتگارت","یک کنسرت در اشتوتگارت","مدرسه‌های اشتوتگارت"],"correct":1,"explanation_fa":"گوینده می‌گوید: «Hier ist das Wetter für Stuttgart.»"}
 {"type":"tf","prompt":"امروز هوا گرم است.","correct":false,"explanation_fa":"گوینده می‌گوید: «Heute ist es kalt, nur 4 Grad.»"}
 {"type":"tf","prompt":"پس‌فردا آفتاب درمی‌آید.","correct":true,"explanation_fa":"گوینده می‌گوید: «Aber übermorgen kommt endlich die Sonne.»"}
 {"type":"mcq","prompt":"طبق این خبر، شب چه می‌شود؟","options":["باران می‌آید","آفتاب است","برف می‌آید","هوا گرم است"],"correct":2,"explanation_fa":"گوینده می‌گوید: «nachts schneit es sogar»، یعنی شب حتی برف می‌آید."}

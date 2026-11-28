@@ -9,7 +9,7 @@ sentences:
 - Das Spiel beginnt um 15:30 Uhr. | بازی ساعت ۱۵:۳۰ شروع می‌شود. | tts: Das Spiel beginnt um fünfzehn Uhr dreißig.
 - Rufen Sie einfach an und sagen Sie uns Ihren Namen. | فقط زنگ بزنید و اسمتان را به ما بگویید.
 - Unsere Nummer ist 040 11 22 33. | شماره ما ۰۴۰ ۱۱ ۲۲ ۳۳ است. | tts: Unsere Nummer ist null vier null, elf, zweiundzwanzig, dreiunddreißig.
-- Sie{Sie-3} können also auch einen Freund mitbringen. | پس می‌توانید یک دوست را هم با خودتان بیاورید.
+- Sie{Sie-3} können auch einen Freund mitbringen. | می‌توانید یک دوست را هم با خودتان بیاورید.
 - Um 12 Uhr wissen Sie mehr. | ساعت ۱۲ بیشتر خبردار می‌شوید. | tts: Um zwölf Uhr wissen Sie mehr.
 - Viel Glück! | موفق باشید!
 reading A:
@@ -21,8 +21,8 @@ reading B:
 {"type":"match","prompt":"هر چیز را به جوابش وصل کن.","left":["شروع بازی","روز بازی","خبر بیشتر"],"right":["شنبه","ساعت ۱۲","یکشنبه","ساعت ۱۵:۳۰"],"pairs":[[0,3],[1,0],[2,1]],"explanation_fa":"بازی «am Samstag» و «um 15:30 Uhr» است و «Um 12 Uhr wissen Sie mehr»."}
 listening A:
 {"type":"num","prompt":"بازی ساعت چند شروع می‌شود؟","answer":"15:30","accepted":["15:30","15.30","halb vier"],"explanation_fa":"در رادیو گفته می‌شود: «Das Spiel beginnt um 15:30 Uhr.»"}
-{"type":"mcq","prompt":"برای بردن بلیت چه باید کرد؟","options":["ایمیل زد","به رادیو رفت","زنگ زد و اسم را گفت","نامه نوشت"],"correct":2,"explanation_fa":"در رادیو گفته می‌شود: «Rufen Sie einfach an und sagen Sie uns Ihren Namen.»"}
+{"type":"mcq","prompt":"برای بردن بلیت چه باید کرد؟","options":["ایمیل زد و اسم را نوشت","به رادیو رفت و اسم را گفت","زنگ زد و اسم را گفت","نامه نوشت و اسم را داد"],"correct":2,"explanation_fa":"در رادیو گفته می‌شود: «Rufen Sie einfach an und sagen Sie uns Ihren Namen.»"}
 listening B:
 {"type":"dict","sentence":5}
-{"type":"tf","prompt":"برنده می‌تواند یک دوست را هم با خودش ببرد.","correct":true,"explanation_fa":"در رادیو گفته می‌شود: «Sie können also auch einen Freund mitbringen.»"}
+{"type":"tf","prompt":"برنده می‌تواند یک دوست را هم با خودش ببرد.","correct":true,"explanation_fa":"در رادیو گفته می‌شود: «Sie können auch einen Freund mitbringen.»"}
 {"type":"tf","prompt":"بازی یکشنبه است.","correct":false,"explanation_fa":"در رادیو گفته می‌شود: «das große Spiel am Samstag»، یعنی شنبه."}

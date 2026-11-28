@@ -4,23 +4,23 @@ band: 1
 kind: ad
 key_words: lieb, stark, klug
 sentences:
-- Unser Hund Max sucht eine neue Familie! | سگ ما ماکس دنبال یک خانواده تازه است!
+- Unser Hund Max sucht eine neue Familie! | سگ ما ماکس دنبال یک خانواده جدید است!
 - Er ist drei Jahre alt und sehr lieb. | سه سال دارد و خیلی مهربان است.
 - Er ist groß und stark, aber ganz ruhig. | بزرگ و قوی است، ولی خیلی آرام است.
 - Er ist klug und lernt schnell. | باهوش است و زود یاد می‌گیرد.
-- Max mag Kinder und spielt gern im Garten. | ماکس بچه‌ها را دوست دارد و دوست دارد در باغچه بازی کند.
+- Max mag Kinder und spielt gern im Garten. | ماکس بچه‌ها را دوست دارد و از بازی در باغچه خوشش می‌آید.
 - Unsere neue Wohnung ist leider kleiner und hat keinen Garten. | آپارتمان جدید ما متأسفانه کوچک‌تر است و باغچه ندارد.
 - Rufen Sie uns an: 0176 22 33 44. | به ما زنگ بزنید: ۰۱۷۶ ۲۲ ۳۳ ۴۴. | tts: Rufen Sie uns an: null eins sieben sechs, zweiundzwanzig, dreiunddreißig, vierundvierzig.
 reading A:
 {"type":"mcq","prompt":"چرا خانواده نمی‌تواند ماکس را نگه دارد؟","options":["ماکس بچه‌ها را دوست ندارد","ماکس خیلی غذا می‌خورد","خانه جدیدشان کوچک‌تر است","ماکس شب‌ها سروصدا می‌کند"],"correct":2,"explanation_fa":"در آگهی آمده: «Unsere neue Wohnung ist leider kleiner und hat keinen Garten.»"}
 {"type":"tf","prompt":"ماکس سگ آرامی است.","correct":true,"explanation_fa":"در آگهی آمده: «aber ganz ruhig»."}
-{"type":"tf","prompt":"ماکس از بچه‌ها خوشش نمی‌آید.","correct":false,"explanation_fa":"در آگهی آمده: «Max mag Kinder.»"}
+{"type":"tf","prompt":"ماکس از بچه‌ها خوشش نمی‌آید.","correct":false,"explanation_fa":"در آگهی آمده: «Max mag Kinder»."}
 reading B:
 {"type":"find","prompt":"کدام جمله می‌گوید ماکس زود یاد می‌گیرد؟","correct_sentence":3,"explanation_fa":"در آگهی آمده: «Er ist klug und lernt schnell.»"}
 {"type":"mcq","prompt":"ماکس دوست دارد کجا بازی کند؟","options":["در باغچه","در پارک","در خانه","در خیابان"],"correct":0,"explanation_fa":"در آگهی آمده: «spielt gern im Garten»."}
 listening A:
-{"type":"num","prompt":"ماکس چند سال دارد؟","answer":"3","accepted":["3","drei"],"explanation_fa":"در آگهی آمده: «Er ist drei Jahre alt.»"}
-{"type":"tf","prompt":"ماکس بزرگ و قوی است.","correct":true,"explanation_fa":"در آگهی آمده: «Er ist groß und stark.»"}
+{"type":"num","prompt":"ماکس چند سال دارد؟","answer":"3","accepted":["3","drei"],"explanation_fa":"در آگهی آمده: «Er ist drei Jahre alt»."}
+{"type":"tf","prompt":"ماکس بزرگ و قوی است.","correct":true,"explanation_fa":"در آگهی آمده: «Er ist groß und stark»."}
 {"type":"tf","prompt":"آپارتمان جدید خانواده باغچه دارد.","correct":false,"explanation_fa":"در آگهی آمده: «hat keinen Garten»."}
 listening B:
 {"type":"dict","sentence":3}

@@ -7,7 +7,7 @@ A: Guten Abend! Was kann ich für Sie tun? | عصر بخیر! چه کاری می
 B: Ich brauche ein Zimmer für zwei Nächte. | یک اتاق برای دو شب لازم دارم.
 A: Gern. Ein Zimmer mit Bad kostet 75 Euro für eine Nacht. | با کمال میل. یک اتاق با حمام برای هر شب ۷۵ یورو است. | tts: Gern. Ein Zimmer mit Bad kostet fünfundsiebzig Euro für eine Nacht.
 B: Gut, ich nehme es. | خوب است، همین را می‌گیرم.
-A: Hier ist Ihr Schlüssel. Sie{Sie-3} haben Zimmer 12. | این هم کلیدتان. اتاقتان شماره ۱۲ است. | tts: Hier ist Ihr Schlüssel. Sie haben Zimmer zwölf.
+A: Hier ist Ihr Schlüssel. Sie{Sie-3} haben Zimmer 24. | این هم کلیدتان. اتاقتان شماره ۲۴ است. | tts: Hier ist Ihr Schlüssel. Sie haben Zimmer vierundzwanzig.
 B: Danke! Kann ich meinen Koffer hier lassen? Ich möchte noch essen gehen, denn ich habe Hunger. | ممنون! می‌توانم چمدانم را اینجا بگذارم؟ می‌خواهم اول بروم غذا بخورم، چون گرسنه‌ام.
 A: Natürlich, kein Problem! | حتماً، مشکلی نیست!
 reading A:
@@ -17,9 +17,9 @@ reading A:
 {"type":"mcq","prompt":"مهمان چرا می‌خواهد چمدانش را آنجا بگذارد؟","options":["چون چمدانش خیلی سنگین است","چون می‌خواهد برود غذا بخورد","چون اتاقش هنوز آماده نیست","چون می‌خواهد برود خرید کند"],"correct":1,"explanation_fa":"مهمان می‌گوید: «Ich möchte noch essen gehen, denn ich habe Hunger.»"}
 reading B:
 {"type":"find","prompt":"کدام جمله می‌گوید مهمان گرسنه است؟","correct_sentence":5,"explanation_fa":"مهمان می‌گوید: «denn ich habe Hunger»، یعنی چون گرسنه است."}
-{"type":"match","prompt":"هر مورد را به عددش وصل کن.","left":["تعداد شب‌ها","قیمت یک شب","شماره اتاق"],"right":["۱۲","دو","۷۵ یورو","۵۷ یورو"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"در متن آمده: «für zwei Nächte»، «75 Euro für eine Nacht» و «Sie haben Zimmer 12»."}
+{"type":"match","prompt":"هر مورد را به عددش وصل کن.","left":["تعداد شب‌ها","قیمت یک شب","شماره اتاق"],"right":["۲۴","دو","۷۵ یورو","۵۷ یورو"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"در متن آمده: «für zwei Nächte»، «75 Euro für eine Nacht» و «Sie haben Zimmer 24»."}
 {"type":"tf","prompt":"کارمند هتل می‌گوید مهمان می‌تواند چمدانش را آنجا بگذارد.","correct":true,"explanation_fa":"مهمان می‌پرسد چمدان را آنجا بگذارد و کارمند می‌گوید: «Natürlich, kein Problem!»"}
-{"type":"tf","prompt":"شماره اتاق مهمان ۲۱ است.","correct":false,"explanation_fa":"کارمند هتل می‌گوید: «Sie haben Zimmer 12.»، یعنی اتاق ۱۲."}
+{"type":"tf","prompt":"شماره اتاق مهمان ۴۲ است.","correct":false,"explanation_fa":"کارمند هتل می‌گوید: «Sie haben Zimmer 24.»، یعنی اتاق ۲۴."}
 listening A:
 {"type":"num","prompt":"یک شب در این اتاق چند یورو است؟","answer":"75","accepted":["75","fünfundsiebzig"],"explanation_fa":"کارمند هتل می‌گوید: «Ein Zimmer mit Bad kostet 75 Euro für eine Nacht.»"}
 {"type":"mcq","prompt":"مهمان بعد از گرفتن کلید چه می‌خواهد بکند؟","options":["برود غذا بخورد","برود بخوابد","برود دوش بگیرد","برود خرید کند"],"correct":0,"explanation_fa":"مهمان می‌گوید: «Ich möchte noch essen gehen»، یعنی می‌خواهد برود غذا بخورد."}
@@ -27,6 +27,6 @@ listening A:
 {"type":"tf","prompt":"مهمان می‌خواهد سه شب در هتل بماند.","correct":false,"explanation_fa":"مهمان می‌گوید: «für zwei Nächte»، یعنی دو شب."}
 listening B:
 {"type":"dict","sentence":1}
-{"type":"num","prompt":"اتاق مهمان چه شماره‌ای دارد؟","answer":"12","accepted":["12","zwölf"],"explanation_fa":"کارمند هتل می‌گوید: «Sie haben Zimmer 12.»"}
+{"type":"num","prompt":"اتاق مهمان چه شماره‌ای دارد؟","answer":"24","accepted":["24","vierundzwanzig"],"explanation_fa":"کارمند هتل می‌گوید: «Sie haben Zimmer 24.»"}
 {"type":"tf","prompt":"مهمان چمدانش را در هتل می‌گذارد.","correct":true,"explanation_fa":"مهمان می‌پرسد: «Kann ich meinen Koffer hier lassen?» و کارمند می‌گوید: «Natürlich, kein Problem!»"}
 {"type":"tf","prompt":"مهمان اتاق را فقط برای یک شب می‌خواهد.","correct":false,"explanation_fa":"مهمان می‌گوید: «Ich brauche ein Zimmer für zwei Nächte.»"}

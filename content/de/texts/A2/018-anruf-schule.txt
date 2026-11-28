@@ -8,11 +8,11 @@ sentences:
 - Ihr{Ihr-det} Sohn Ben ist heute beim Sport gefallen{fallen}. | پسرتان بن امروز موقع ورزش زمین خورده است.
 - Sein Arm tut ein bisschen weh. | بازویش کمی درد می‌کند.
 - Er hat zuerst viel geweint, aber jetzt lacht er schon wieder. | اولش خیلی گریه کرد، ولی حالا دوباره می‌خندد.
-- Aber vielleicht gehen Sie heute noch mit ihm zum Arzt. | ولی شاید امروز با او پیش دکتر بروید.
+- Aber vielleicht gehen Sie heute noch mit ihm zum Arzt. | ولی شاید بهتر باشد همین امروز با او پیش دکتر بروید.
 - Ben ist bis 13 Uhr in der Schule. | بن تا ساعت ۱۳ در مدرسه است. | tts: Ben ist bis dreizehn Uhr in der Schule.
 - Rufen Sie mich bitte an. | لطفاً به من زنگ بزنید.
 reading A:
-{"type":"mcq","prompt":"چه کسی این پیام را گذاشته است؟","options":["پدر بن","کسی از مدرسه بن","دکتر بن","دوست بن"],"correct":1,"explanation_fa":"در پیام آمده: «hier ist Herr Wagner von der Schule»؛ او از مدرسه زنگ می‌زند."}
+{"type":"mcq","prompt":"چه کسی این پیام را گذاشته است؟","options":["پدر خود بن","آقایی از مدرسه بن","دکتر خانواده بن","همسایه خانه بن"],"correct":1,"explanation_fa":"در پیام آمده: «hier ist Herr Wagner von der Schule»؛ او از مدرسه زنگ می‌زند."}
 {"type":"tf","prompt":"بن موقع ورزش زمین خورده است.","correct":true,"explanation_fa":"آقای واگنر می‌گوید: «Ihr Sohn Ben ist heute beim Sport gefallen.»"}
 {"type":"tf","prompt":"بازوی بن خیلی درد می‌کند.","correct":false,"explanation_fa":"آقای واگنر می‌گوید: «Sein Arm tut ein bisschen weh»، یعنی فقط کمی درد می‌کند."}
 reading B:
@@ -20,7 +20,7 @@ reading B:
 {"type":"mcq","prompt":"آقای واگنر چه پیشنهادی به خانم بکر می‌دهد؟","options":["فردا بن را به مدرسه نفرستد","برای بن غذا بیاورد","امروز با بن پیش دکتر برود","به مدرسه ایمیل بزند"],"correct":2,"explanation_fa":"آقای واگنر می‌گوید: «vielleicht gehen Sie heute noch mit ihm zum Arzt»."}
 listening A:
 {"type":"num","prompt":"بن تا ساعت چند در مدرسه است؟","answer":"13","accepted":["13","13 Uhr","dreizehn"],"explanation_fa":"آقای واگنر می‌گوید: «Ben ist bis 13 Uhr in der Schule.»"}
-{"type":"tf","prompt":"بن اولش گریه کرده است.","correct":true,"explanation_fa":"آقای واگنر می‌گوید: «Er hat zuerst viel geweint.»"}
+{"type":"tf","prompt":"بن اولش گریه کرده است.","correct":true,"explanation_fa":"آقای واگنر می‌گوید: «Er hat zuerst viel geweint»."}
 {"type":"tf","prompt":"آقای واگنر از خانم بکر می‌خواهد به او ایمیل بزند.","correct":false,"explanation_fa":"آقای واگنر می‌گوید: «Rufen Sie mich bitte an»، یعنی زنگ بزنید."}
 listening B:
 {"type":"dict","sentence":2}

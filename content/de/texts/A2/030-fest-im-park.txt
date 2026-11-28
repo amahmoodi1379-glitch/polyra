@@ -13,14 +13,14 @@ sentences:
 - Bringen Sie auch Ihre Freunde mit! | دوستانتان را هم با خودتان بیاورید!
 - Wenn es regnet, feiern wir in der Schule. | اگر باران ببارد، در مدرسه جشن می‌گیریم.
 reading A:
-{"type":"mcq","prompt":"جشن کی است؟","options":["جمعه","یکشنبه","دوشنبه","شنبه"],"correct":3,"explanation_fa":"در آگهی آمده: «Am Samstag feiern wir.»"}
+{"type":"mcq","prompt":"جشن کی است؟","options":["جمعه","یکشنبه","دوشنبه","شنبه"],"correct":3,"explanation_fa":"در آگهی آمده: «Am Samstag feiern wir von 12 bis 22 Uhr.»"}
 {"type":"tf","prompt":"بچه‌ها برای جشن پول نمی‌دهند.","correct":true,"explanation_fa":"در آگهی آمده: «Erwachsene bezahlen 5 Euro, Kinder nichts.»"}
 {"type":"tf","prompt":"جشن تا ساعت ۱۸ است.","correct":false,"explanation_fa":"در آگهی آمده: «von 12 bis 22 Uhr»، یعنی تا ساعت ۲۲."}
 reading B:
 {"type":"match","prompt":"هر ساعت را به کارش وصل کن.","left":["ساعت ۱۲","ساعت ۱۵","ساعت ۲۲"],"right":["بازی فوتبال","جشن تمام می‌شود","شام","جشن شروع می‌شود"],"pairs":[[0,3],[1,0],[2,1]],"explanation_fa":"جشن «von 12 bis 22 Uhr» است و فوتبال «um 15 Uhr»."}
 {"type":"find","prompt":"کدام جمله می‌گوید اگر باران ببارد چه می‌شود؟","correct_sentence":7,"explanation_fa":"در آگهی آمده: «Wenn es regnet, feiern wir in der Schule.»"}
 listening A:
-{"type":"num","prompt":"بزرگسالان چند یورو می‌دهند؟","answer":"5","accepted":["5","5 Euro","fünf"],"explanation_fa":"در آگهی آمده: «Erwachsene bezahlen 5 Euro.»"}
+{"type":"num","prompt":"بزرگسالان چند یورو می‌دهند؟","answer":"5","accepted":["5","5 Euro","fünf"],"explanation_fa":"در آگهی آمده: «Erwachsene bezahlen 5 Euro»."}
 {"type":"tf","prompt":"نوجوان‌ها هم می‌توانند فوتبال بازی کنند.","correct":true,"explanation_fa":"در آگهی آمده: «Kinder und Jugendliche können um 15 Uhr Fußball spielen.»"}
 {"type":"tf","prompt":"جشن ساعت ۱۰ شروع می‌شود.","correct":false,"explanation_fa":"در آگهی آمده: «von 12 bis 22 Uhr»، یعنی جشن ساعت ۱۲ شروع می‌شود."}
 listening B:

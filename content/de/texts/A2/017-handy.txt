@@ -15,7 +15,7 @@ B: Super, danke! | عالی است، ممنون!
 reading A:
 {"type":"mcq","prompt":"مشکل گوشی مشتری چیست؟","options":["نمی‌شود با آن عکس گرفت","نمی‌شود با آن ایمیل زد","نمی‌شود با آن موسیقی گوش داد","نمی‌شود با آن تلفن زد"],"correct":3,"explanation_fa":"مشتری می‌گوید: «Ich kann nicht telefonieren.»"}
 {"type":"tf","prompt":"فروشنده می‌تواند گوشی را تعمیر کند.","correct":true,"explanation_fa":"فروشنده می‌گوید: «Ja, das kann ich reparieren.»"}
-{"type":"tf","prompt":"گوشی فردا آماده می‌شود.","correct":false,"explanation_fa":"فروشنده می‌گوید گوشی پنجشنبه آماده است: «Am Donnerstag.»"}
+{"type":"tf","prompt":"گوشی همین امروز آماده می‌شود.","correct":false,"explanation_fa":"فروشنده می‌گوید گوشی پنجشنبه آماده است: «Am Donnerstag.»، برای همین مشتری تا آن روز یک گوشی دیگر لازم دارد."}
 reading B:
 {"type":"order","prompt":"این کارها را به ترتیب گفتگو مرتب کن.","items":["فروشنده قیمت را می‌گوید.","مشتری مشکل گوشی را می‌گوید.","فروشنده یک گوشی قدیمی پیشنهاد می‌کند.","فروشنده می‌گوید گوشی را تعمیر می‌کند."],"correct_order":[1,3,0,2],"explanation_fa":"اول مشتری مشکل را می‌گوید، بعد فروشنده می‌گوید «das kann ich reparieren»، بعد قیمت را می‌گوید و آخر از «ein altes Handy» حرف می‌زند."}
 {"type":"find","prompt":"کدام جمله می‌گوید مشتری تا آماده شدن گوشی چه کار می‌تواند بکند؟","correct_sentence":6,"explanation_fa":"فروشنده می‌گوید: «Sie können so lange ein altes Handy von uns benutzen.»"}

@@ -4,10 +4,10 @@ band: 1
 kind: dialogue
 key_words: riechen, brennen, aufmachen, zumachen
 sentences:
-A: Riechst du das? Brennt da etwas? | بویش را حس می‌کنی؟ چیزی دارد می‌سوزد؟
-B: Oh nein, mein Kuchen für Oma! | وای نه، کیکم برای مادربزرگ!
+A: Riechst du das? Brennt da etwas? | این بو را حس می‌کنی؟ چیزی دارد می‌سوزد؟
+B: Oh nein, mein Kuchen für Oma! | وای نه، کیکی که برای مادربزرگ درست می‌کردم!
 A: Schnell, mach das Fenster auf! | زود باش، پنجره را باز کن!
-B: Zu spät. Ich habe ihn vergessen, und jetzt ist er ganz schwarz. | دیگر دیر است. فراموشش کردم و حالا کاملاً سیاه شده است.
+B: Zu{zu-adv} spät. Ich habe ihn vergessen, und jetzt ist er ganz schwarz. | دیگر دیر است. فراموشش کردم و حالا کاملاً سیاه شده است.
 A: Mach bitte auch die Tür zu, sonst riecht die ganze Wohnung. | لطفاً در را هم ببند، وگرنه همه خانه بو می‌گیرد.
 B: Und was mache ich jetzt? | حالا چه کار کنم؟
 A: Kein Problem. Ich kaufe schnell einen Kuchen in der Bäckerei. | مشکلی نیست. من زود یک کیک از نانوایی می‌خرم.

@@ -20,7 +20,7 @@ reading B:
 {"type":"match","prompt":"هر کار را به جایش وصل کن.","left":["تحویل گرفتن دوچرخه","پس دادن دوچرخه"],"right":["هتل","ایستگاه قطار","فرودگاه"],"pairs":[[0,1],[1,0]],"explanation_fa":"دوچرخه را «am Bahnhof» تحویل می‌گیرید و «in Ihrem Hotel» پس می‌دهید."}
 {"type":"find","prompt":"کدام جمله می‌گوید برای بچه‌ها هم دوچرخه هست؟","correct_sentence":6,"explanation_fa":"در آگهی آمده: «Wir haben auch Fahrräder für Kinder.»"}
 listening A:
-{"type":"num","prompt":"کرایه دوچرخه برای یک روز چند یورو است؟","answer":"12","accepted":["12","12 Euro","zwölf"],"explanation_fa":"در آگهی آمده: «Ein Tag kostet 12 Euro.»"}
+{"type":"num","prompt":"کرایه دوچرخه برای یک روز چند یورو است؟","answer":"12","accepted":["12","12 Euro","zwölf"],"explanation_fa":"در آگهی آمده: «Ein Tag kostet 12 Euro»."}
 {"type":"mcq","prompt":"دوچرخه را کجا تحویل می‌گیرید؟","options":["در هتل","در فرودگاه","در ایستگاه قطار","در مرکز شهر"],"correct":2,"explanation_fa":"در آگهی آمده: «Sie können das Fahrrad am Bahnhof abholen.»"}
 listening B:
 {"type":"dict","sentence":1}

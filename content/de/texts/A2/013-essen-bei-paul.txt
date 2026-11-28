@@ -1,0 +1,34 @@
+code: de-a2-t013
+title: Essen bei Paul
+band: 1
+kind: voice_message
+sentences:
+- Hallo Sophie, hier ist Paul! | سلام سوفی، پاول هستم!
+- Ich bin aus Wien zurück. | از وین برگشته‌ام.
+- Am Freitag koche ich für ein paar Freunde. Kommst du auch? | جمعه برای چند تا از دوست‌هایم آشپزی می‌کنم. تو هم می‌آیی؟
+- Wir essen um 19:30 Uhr bei mir. | ساعت هفت و نیم شب خانه من غذا می‌خوریم. | tts: Wir essen um neunzehn Uhr dreißig bei mir.
+- Meine Wohnung ist neu, du kennst sie noch nicht. | آپارتمانم جدید است و هنوز آن را ندیده‌ای.
+- Ich schicke dir die Adresse. | آدرس را برایت می‌فرستم.
+- Kannst du vielleicht einen Salat machen? | اگر می‌شود، یک سالاد درست می‌کنی؟
+- Dann erzähle ich euch von meiner Reise. | آن موقع از سفرم برایتان تعریف می‌کنم.
+- Bis bald! | تا بعد!
+reading A:
+{"type":"mcq","prompt":"پاول چرا پیام گذاشته است؟","options":["برای خرید سالاد","برای سفر به وین","برای دعوت به شام","برای گرفتن آدرس"],"correct":2,"explanation_fa":"پاول می‌گوید: «Am Freitag koche ich für ein paar Freunde. Kommst du auch?»"}
+{"type":"tf","prompt":"پاول از سفر وین برگشته است.","correct":true,"explanation_fa":"پاول می‌گوید: «Ich bin aus Wien zurück.»"}
+{"type":"tf","prompt":"شام در یک رستوران است.","correct":false,"explanation_fa":"پاول می‌گوید: «Wir essen um 19:30 Uhr bei mir.»، یعنی در خانه خودش."}
+{"type":"mcq","prompt":"پاول از سوفی چه می‌خواهد؟","options":["یک کیک بخرد","یک سالاد درست کند","نوشیدنی بیاورد","زودتر از بقیه بیاید"],"correct":1,"explanation_fa":"پاول می‌پرسد: «Kannst du vielleicht einen Salat machen?»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید سوفی خانه پاول را هنوز ندیده است؟","correct_sentence":4,"explanation_fa":"پاول می‌گوید: «du kennst sie noch nicht»، یعنی سوفی هنوز آپارتمانش را ندیده است."}
+{"type":"order","prompt":"این‌ها را به ترتیب پیام بچین.","items":["پاول می‌گوید آدرس را می‌فرستد.","پاول می‌گوید از وین برگشته است.","پاول می‌گوید ساعت هفت و نیم شب غذا می‌خورند.","پاول می‌گوید از سفرش تعریف می‌کند."],"correct_order":[1,2,0,3],"explanation_fa":"اول «Ich bin aus Wien zurück»، بعد «um 19:30 Uhr»، بعد «Ich schicke dir die Adresse» و آخر «Dann erzähle ich euch von meiner Reise»."}
+{"type":"tf","prompt":"پاول آدرس را برای سوفی می‌فرستد.","correct":true,"explanation_fa":"پاول می‌گوید: «Ich schicke dir die Adresse.»"}
+{"type":"tf","prompt":"پاول فقط برای سوفی آشپزی می‌کند.","correct":false,"explanation_fa":"پاول می‌گوید: «Am Freitag koche ich für ein paar Freunde.»، یعنی برای چند دوست."}
+listening A:
+{"type":"num","prompt":"شام ساعت چند است؟","answer":"19:30","accepted":["19:30","19.30","7:30","halb acht"],"explanation_fa":"پاول می‌گوید: «Wir essen um 19:30 Uhr bei mir.»، یعنی ساعت هفت و نیم شب."}
+{"type":"mcq","prompt":"پاول از کجا برگشته است؟","options":["هامبورگ","برلین","مونیخ","وین"],"correct":3,"explanation_fa":"پاول می‌گوید: «Ich bin aus Wien zurück.»"}
+{"type":"tf","prompt":"آپارتمان پاول جدید است.","correct":true,"explanation_fa":"پاول می‌گوید: «Meine Wohnung ist neu»."}
+{"type":"tf","prompt":"شام شنبه است.","correct":false,"explanation_fa":"پاول می‌گوید: «Am Freitag koche ich für ein paar Freunde.»، یعنی جمعه."}
+listening B:
+{"type":"dict","sentence":5}
+{"type":"mcq","prompt":"شام کجاست؟","options":["خانه سوفی","یک کافه","خانه پاول","یک رستوران"],"correct":2,"explanation_fa":"پاول می‌گوید: «Wir essen um 19:30 Uhr bei mir.»، یعنی در خانه خودش."}
+{"type":"tf","prompt":"سوفی خانه پاول را هنوز ندیده است.","correct":true,"explanation_fa":"پاول می‌گوید: «du kennst sie noch nicht»."}
+{"type":"tf","prompt":"پاول از سوفی می‌خواهد نوشیدنی بخرد.","correct":false,"explanation_fa":"پاول می‌پرسد: «Kannst du vielleicht einen Salat machen?»، یعنی سالاد درست کند."}
