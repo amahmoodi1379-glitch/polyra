@@ -1,0 +1,28 @@
+code: fr-a2-t025
+title: Fête à la piscine
+band: 1
+kind: announcement
+key_words: habitant, adulte, adolescent, interdit
+sentences:
+- Aujourd'hui, c'est la fête à la piscine ! | امروز در استخر جشن است!
+- La piscine est gratuite pour les habitants du{du-contr} quartier. | استخر برای ساکنان محله رایگان است.
+- Les enfants de moins de 8 ans doivent venir avec un adulte. | بچه‌های زیر ۸ سال باید با یک بزرگسال بیایند. | tts: Les enfants de moins de huit ans doivent venir avec un adulte.
+- À 15 heures, il y a un jeu dans l'eau pour les adolescents. | ساعت ۱۵ یک بازی در آب برای نوجوان‌ها هست. | tts: À quinze heures, il y a un jeu dans l'eau pour les adolescents.
+- Il est interdit de courir autour de la piscine. | دویدن دور استخر ممنوع است.
+- Merci et bonne journée ! | ممنون، روز خوبی داشته باشید!
+reading A:
+{"type":"mcq","prompt":"امروز استخر برای چه کسانی رایگان است؟","options":["فقط برای بچه‌ها","برای همهٔ توریست‌ها","فقط برای بزرگسالان","برای ساکنان محله"],"correct":3,"explanation_fa":"گفته می‌شود: «La piscine est gratuite pour les habitants du quartier.»"}
+{"type":"tf","prompt":"بچه‌های زیر ۸ سال می‌توانند تنها بیایند.","correct":false,"explanation_fa":"گفته می‌شود: «Les enfants de moins de 8 ans doivent venir avec un adulte.»"}
+{"type":"tf","prompt":"دویدن دور استخر ممنوع است.","correct":true,"explanation_fa":"گفته می‌شود: «Il est interdit de courir autour de la piscine.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله دربارهٔ برنامهٔ نوجوان‌هاست؟","correct_sentence":3,"explanation_fa":"گفته می‌شود: «il y a un jeu dans l'eau pour les adolescents»."}
+{"type":"match","prompt":"هر گروه را به جمله‌اش وصل کن.","left":["بچه‌های زیر ۸ سال","نوجوان‌ها"],"right":["با یک بزرگسال می‌آیند","ساعت ۱۵ بازی در آب دارند","ساعت ۸ کلاس دارند"],"pairs":[[0,0],[1,1]],"explanation_fa":"گفته می‌شود بچه‌ها «avec un adulte» می‌آیند و «À 15 heures» برای نوجوان‌ها بازی هست."}
+listening A:
+{"type":"num","prompt":"بازی نوجوان‌ها ساعت چند است؟","answer":"15","accepted":["15","15h","15:00","quinze","3"],"explanation_fa":"گفته می‌شود: «À 15 heures, il y a un jeu dans l'eau»."}
+{"type":"mcq","prompt":"این اعلام کجاست؟","options":["در پارک","در استخر","در مدرسه","در ساحل"],"correct":1,"explanation_fa":"گفته می‌شود: «c'est la fête à la piscine»."}
+{"type":"tf","prompt":"امروز ساکنان محله برای استخر پول نمی‌دهند.","correct":true,"explanation_fa":"گفته می‌شود: «La piscine est gratuite pour les habitants du quartier.»"}
+{"type":"tf","prompt":"بازی در آب برای بچه‌های کوچک است.","correct":false,"explanation_fa":"گفته می‌شود: «un jeu dans l'eau pour les adolescents»، یعنی برای نوجوان‌ها."}
+listening B:
+{"type":"num","prompt":"بچه‌های زیر چند سال باید با یک بزرگسال بیایند؟","answer":"8","accepted":["8","huit"],"explanation_fa":"گفته می‌شود: «Les enfants de moins de 8 ans doivent venir avec un adulte.»"}
+{"type":"dict","sentence":0}
+{"type":"mcq","prompt":"چه کاری دور استخر ممنوع است؟","options":["خوردن","عکس گرفتن","دویدن","حرف زدن"],"correct":2,"explanation_fa":"گفته می‌شود: «Il est interdit de courir autour de la piscine.»"}

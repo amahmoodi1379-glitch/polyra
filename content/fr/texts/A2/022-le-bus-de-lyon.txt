@@ -1,0 +1,31 @@
+code: fr-a2-t022
+title: Le bus de Lyon
+band: 1
+kind: announcement
+key_words: ancien, moderne, sérieux
+sentences:
+- Bonjour et bienvenue dans notre bus ! | سلام و به اتوبوس ما خوش آمدید!
+- Aujourd'hui, nous visitons Lyon. | امروز از لیون دیدن می‌کنیم.
+- À gauche, vous voyez le quartier ancien. | سمت چپ، محلهٔ قدیمی را می‌بینید.
+- À droite, ce sont les immeubles modernes du{du-contr} centre. | سمت راست هم ساختمان‌های مدرن مرکز شهر هستند.
+- Nous nous arrêtons ici vingt minutes. | اینجا بیست دقیقه توقف می‌کنیم.
+- Vous pouvez prendre des photos ou boire un café. | می‌توانید عکس بگیرید یا قهوه‌ای بنوشید.
+- Attention : le bus part à 11 heures. | توجه: اتوبوس ساعت ۱۱ حرکت می‌کند. | tts: Attention : le bus part à onze heures.
+- Notre chauffeur est très sérieux : il n'attend pas ! | رانندهٔ ما خیلی جدی است: منتظر نمی‌ماند!
+reading A:
+{"type":"mcq","prompt":"این اعلام کجا پخش می‌شود؟","options":["در قطار","در اتوبوس","در موزه","در فرودگاه"],"correct":1,"explanation_fa":"گفته می‌شود: «bienvenue dans notre bus !»"}
+{"type":"tf","prompt":"محلهٔ قدیمی سمت راست است.","correct":false,"explanation_fa":"گفته می‌شود: «À gauche, vous voyez le quartier ancien.»، یعنی سمت چپ."}
+{"type":"tf","prompt":"مسافرها می‌توانند قهوه بنوشند.","correct":true,"explanation_fa":"گفته می‌شود: «Vous pouvez prendre des photos ou boire un café.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید اتوبوس چند دقیقه می‌ایستد؟","correct_sentence":4,"explanation_fa":"گفته می‌شود: «Nous nous arrêtons ici vingt minutes.»"}
+{"type":"match","prompt":"هر سمت را به چیزی که آنجاست وصل کن.","left":["سمت چپ","سمت راست"],"right":["محلهٔ قدیمی","ساختمان‌های مدرن","یک پارک بزرگ"],"pairs":[[0,0],[1,1]],"explanation_fa":"گفته می‌شود: «À gauche, … le quartier ancien» و «À droite, … les immeubles modernes»."}
+{"type":"mcq","prompt":"راننده چطور آدمی است؟","options":["خیلی مهربان","خیلی جوان","خیلی خسته","خیلی جدی"],"correct":3,"explanation_fa":"گفته می‌شود: «Notre chauffeur est très sérieux»."}
+listening A:
+{"type":"num","prompt":"اتوبوس ساعت چند حرکت می‌کند؟","answer":"11","accepted":["11","11h","11:00","onze"],"explanation_fa":"گفته می‌شود: «le bus part à 11 heures»."}
+{"type":"mcq","prompt":"امروز از کدام شهر دیدن می‌کنند؟","options":["لیون","پاریس","مارسی","بوردو"],"correct":0,"explanation_fa":"گفته می‌شود: «Aujourd'hui, nous visitons Lyon.»"}
+{"type":"tf","prompt":"راننده منتظر مسافرهای دیرکرده می‌ماند.","correct":false,"explanation_fa":"گفته می‌شود: «il n'attend pas !»، یعنی منتظر نمی‌ماند."}
+{"type":"tf","prompt":"مسافرها می‌توانند عکس بگیرند.","correct":true,"explanation_fa":"گفته می‌شود: «Vous pouvez prendre des photos»."}
+listening B:
+{"type":"num","prompt":"اتوبوس چند دقیقه اینجا می‌ایستد؟","answer":"20","accepted":["20","vingt"],"explanation_fa":"گفته می‌شود: «Nous nous arrêtons ici vingt minutes.»"}
+{"type":"dict","sentence":5}
+{"type":"mcq","prompt":"سمت راست چه چیزی هست؟","options":["محلهٔ قدیمی","ساختمان‌های مدرن","یک رودخانه","یک موزه"],"correct":1,"explanation_fa":"گفته می‌شود: «À droite, ce sont les immeubles modernes du centre.»"}

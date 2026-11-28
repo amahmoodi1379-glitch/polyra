@@ -1,0 +1,29 @@
+code: fr-a2-t018
+title: Souvenirs de Paris
+band: 1
+kind: ad
+key_words: souvenir-2, rêve, attention
+sentences:
+- Un week-end à Paris, c'est un rêve ! | یک آخر هفته در پاریس، یک رؤیاست!
+- Vous cherchez un souvenir{souvenir-2} pour votre famille ? | برای خانواده‌تان دنبال سوغاتی هستید؟
+- Venez dans notre magasin, à côté du{du-contr} musée. | به مغازهٔ ما، کنار موزه، بیایید.
+- Il y a des tasses, des sacs et des photos de la ville. | فنجان، کیف و عکس‌های شهر داریم.
+- Une tasse coûte seulement 5 euros ! | یک فنجان فقط ۵ یورو است! | tts: Une tasse coûte seulement cinq euros !
+- Attention : le dimanche, le magasin ferme à 18 heures. | توجه: یکشنبه‌ها مغازه ساعت ۱۸ می‌بندد. | tts: Attention : le dimanche, le magasin ferme à dix-huit heures.
+reading A:
+{"type":"mcq","prompt":"این آگهی برای چیست؟","options":["یک موزه","یک مغازهٔ سوغاتی","یک هتل","یک رستوران"],"correct":1,"explanation_fa":"در آگهی آمده: «Vous cherchez un souvenir pour votre famille ? Venez dans notre magasin»."}
+{"type":"tf","prompt":"مغازه کنار موزه است.","correct":true,"explanation_fa":"در آگهی آمده: «à côté du musée»."}
+{"type":"tf","prompt":"مغازه یکشنبه‌ها تعطیل است.","correct":false,"explanation_fa":"در آگهی آمده: «le dimanche, le magasin ferme à 18 heures»، یعنی یکشنبه‌ها تا ساعت ۱۸ باز است."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید در مغازه چه چیزهایی هست؟","correct_sentence":3,"explanation_fa":"در آگهی آمده: «Il y a des tasses, des sacs et des photos de la ville.»"}
+{"type":"match","prompt":"هر چیز را به جوابش وصل کن.","left":["قیمت یک فنجان","ساعت بسته شدن در روز یکشنبه"],"right":["ساعت ۱۸","۵ یورو","ساعت ۸ صبح"],"pairs":[[0,1],[1,0]],"explanation_fa":"در آگهی آمده: «Une tasse coûte seulement 5 euros» و «le dimanche, le magasin ferme à 18 heures»."}
+{"type":"mcq","prompt":"آگهی برای چه کسانی سوغاتی پیشنهاد می‌کند؟","options":["برای دوستان","برای همکاران","برای بچه‌های مدرسه","برای خانواده"],"correct":3,"explanation_fa":"در آگهی آمده: «un souvenir pour votre famille»."}
+listening A:
+{"type":"num","prompt":"یکشنبه‌ها مغازه ساعت چند می‌بندد؟","answer":"18","accepted":["18","18h","18:00","dix-huit","6"],"explanation_fa":"در آگهی گفته می‌شود: «le dimanche, le magasin ferme à 18 heures»."}
+{"type":"mcq","prompt":"مغازه کجاست؟","options":["کنار ایستگاه","کنار پارک","کنار هتل","کنار موزه"],"correct":3,"explanation_fa":"در آگهی گفته می‌شود: «à côté du musée»."}
+{"type":"tf","prompt":"در مغازه عکس‌های شهر هم هست.","correct":true,"explanation_fa":"در آگهی گفته می‌شود: «des photos de la ville»."}
+{"type":"tf","prompt":"یک فنجان ۱۵ یورو است.","correct":false,"explanation_fa":"در آگهی گفته می‌شود: «Une tasse coûte seulement 5 euros»، یعنی ۵ یورو."}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"mcq","prompt":"آگهی می‌گوید یک آخر هفته در پاریس چطور است؟","options":["خیلی گران","خیلی کوتاه","مثل یک رؤیا","خیلی خسته‌کننده"],"correct":2,"explanation_fa":"در آگهی گفته می‌شود: «Un week-end à Paris, c'est un rêve !»"}
+{"type":"num","prompt":"یک فنجان چند یورو است؟","answer":"5","accepted":["5","cinq"],"explanation_fa":"در آگهی گفته می‌شود: «Une tasse coûte seulement 5 euros»."}

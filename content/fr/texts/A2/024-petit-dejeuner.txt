@@ -1,0 +1,28 @@
+code: fr-a2-t024
+title: Petit-déjeuner au Café du Parc
+band: 1
+kind: menu
+key_words: calme, agréable, gratuit
+sentences:
+- Café du{du-contr} Parc : calme et agréable, près du{du-contr} lac. | کافهٔ پارک: آرام و دلنشین، نزدیک دریاچه.
+- Petit-déjeuner de 7 heures à 11 heures. | صبحانه از ساعت ۷ تا ۱۱. | tts: Petit-déjeuner de sept heures à onze heures.
+- Petit-déjeuner simple, à 4 euros : café ou thé, avec un croissant. | صبحانهٔ ساده، ۴ یورو: قهوه یا چای، با یک کروسان. | tts: Petit-déjeuner simple, à quatre euros : café ou thé, avec un croissant.
+- Grand petit-déjeuner, à 9 euros : jus d'orange, café, pain, beurre et deux œufs. | صبحانهٔ کامل، ۹ یورو: آب پرتقال، قهوه، نان، کره و دو تخم‌مرغ. | tts: Grand petit-déjeuner, à neuf euros : jus d'orange, café, pain, beurre et deux œufs.
+- Pour les enfants, à 5 euros : un chocolat chaud et des petits gâteaux. | برای بچه‌ها، ۵ یورو: یک شکلات داغ و چند کیک کوچک. | tts: Pour les enfants, à cinq euros : un chocolat chaud et des petits gâteaux.
+- Le deuxième café est gratuit ! | قهوهٔ دوم مجانی است!
+reading A:
+{"type":"mcq","prompt":"صبحانهٔ ساده چند یورو است؟","options":["۹ یورو","۵ یورو","۴ یورو","۷ یورو"],"correct":2,"explanation_fa":"در منو آمده: «Petit-déjeuner simple, à 4 euros»."}
+{"type":"tf","prompt":"کافه نزدیک دریاچه است.","correct":true,"explanation_fa":"در منو آمده: «près du lac»."}
+{"type":"tf","prompt":"صبحانه تا ساعت ۱۲ سرو می‌شود.","correct":false,"explanation_fa":"در منو آمده: «de 7 heures à 11 heures»، یعنی تا ساعت ۱۱."}
+reading B:
+{"type":"match","prompt":"هر صبحانه را به قیمتش وصل کن.","left":["صبحانهٔ ساده","صبحانهٔ کامل","صبحانهٔ بچه‌ها"],"right":["۹ یورو","۵ یورو","۴ یورو","۱۱ یورو"],"pairs":[[0,2],[1,0],[2,1]],"explanation_fa":"در منو آمده: ساده «à 4 euros»، کامل «à 9 euros» و برای بچه‌ها «à 5 euros»."}
+{"type":"find","prompt":"کدام جمله می‌گوید چه چیزی مجانی است؟","correct_sentence":5,"explanation_fa":"در منو آمده: «Le deuxième café est gratuit !»"}
+listening A:
+{"type":"num","prompt":"صبحانهٔ کامل چند یورو است؟","answer":"9","accepted":["9","neuf"],"explanation_fa":"گفته می‌شود: «Grand petit-déjeuner, à 9 euros»."}
+{"type":"mcq","prompt":"در صبحانهٔ کامل چند تخم‌مرغ هست؟","options":["یکی","دو تا","سه تا","چهار تا"],"correct":1,"explanation_fa":"گفته می‌شود: «pain, beurre et deux œufs»."}
+{"type":"tf","prompt":"قهوهٔ دوم مجانی است.","correct":true,"explanation_fa":"گفته می‌شود: «Le deuxième café est gratuit !»"}
+{"type":"tf","prompt":"صبحانهٔ بچه‌ها آب پرتقال دارد.","correct":false,"explanation_fa":"برای بچه‌ها گفته می‌شود: «un chocolat chaud et des petits gâteaux»؛ آب پرتقال در صبحانهٔ کامل است."}
+listening B:
+{"type":"num","prompt":"صبحانه از ساعت چند شروع می‌شود؟","answer":"7","accepted":["7","7h","7:00","sept"],"explanation_fa":"گفته می‌شود: «Petit-déjeuner de 7 heures à 11 heures.»"}
+{"type":"mcq","prompt":"کافه چطور جایی است؟","options":["شلوغ و پرسروصدا","آرام و دلنشین","بزرگ و گران","کوچک و تاریک"],"correct":1,"explanation_fa":"گفته می‌شود: «calme et agréable»."}
+{"type":"dict","sentence":5}

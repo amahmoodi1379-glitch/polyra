@@ -1,0 +1,27 @@
+code: fr-a2-t020
+title: Du sport au parc
+band: 1
+kind: ad
+key_words: fort, faible, simple
+sentences:
+- Vous voulez être plus fort ? | می‌خواهید قوی‌تر شوید؟
+- Faites du sport avec nous, au parc du{du-contr} centre ! | با ما در پارک مرکز شهر ورزش کنید!
+- Chez nous, tout le monde peut venir : jeunes, vieux, forts ou faibles. | پیش ما همه می‌توانند بیایند: جوان و پیر، قوی یا ضعیف.
+- Les cours sont simples et les professeurs sont très gentils. | کلاس‌ها ساده‌اند و مربی‌ها خیلی مهربان‌اند.
+- Des cours de tennis ? Nous en avons trois par semaine ! | کلاس تنیس می‌خواهید؟ هفته‌ای سه کلاس داریم!
+- Le premier mois coûte seulement 15 euros ! | ماه اول فقط ۱۵ یورو است! | tts: Le premier mois coûte seulement quinze euros !
+reading A:
+{"type":"mcq","prompt":"این آگهی برای چیست؟","options":["کلاس‌های ورزش","یک مغازهٔ لباس ورزشی","یک مسابقهٔ فوتبال","یک استخر تازه"],"correct":0,"explanation_fa":"در آگهی آمده: «Faites du sport avec nous» و از کلاس‌ها حرف می‌زند."}
+{"type":"tf","prompt":"فقط جوان‌ها می‌توانند بیایند.","correct":false,"explanation_fa":"در آگهی آمده: «tout le monde peut venir : jeunes, vieux, forts ou faibles»."}
+{"type":"tf","prompt":"کلاس‌ها در پارک برگزار می‌شود.","correct":true,"explanation_fa":"در آگهی آمده: «Faites du sport avec nous, au parc du centre !»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید مربی‌ها چطورند؟","correct_sentence":3,"explanation_fa":"در آگهی آمده: «les professeurs sont très gentils»."}
+{"type":"match","prompt":"هر چیز را به جوابش وصل کن.","left":["کلاس تنیس","ماه اول"],"right":["۱۵ یورو","سه بار در هفته","رایگان"],"pairs":[[0,1],[1,0]],"explanation_fa":"در آگهی آمده: «Nous en avons trois par semaine» و «Le premier mois coûte seulement 15 euros»."}
+listening A:
+{"type":"num","prompt":"ماه اول چند یورو است؟","answer":"15","accepted":["15","quinze"],"explanation_fa":"در آگهی گفته می‌شود: «Le premier mois coûte seulement 15 euros»."}
+{"type":"mcq","prompt":"آگهی دربارهٔ کلاس‌ها چه می‌گوید؟","options":["سخت‌اند","ساده‌اند","گران‌اند","طولانی‌اند"],"correct":1,"explanation_fa":"در آگهی گفته می‌شود: «Les cours sont simples»."}
+listening B:
+{"type":"dict","sentence":0}
+{"type":"num","prompt":"در هفته چند کلاس تنیس هست؟","answer":"3","accepted":["3","trois"],"explanation_fa":"در آگهی گفته می‌شود: «Nous en avons trois par semaine»."}
+{"type":"tf","prompt":"مربی‌ها خیلی مهربان‌اند.","correct":true,"explanation_fa":"در آگهی گفته می‌شود: «les professeurs sont très gentils»."}
+{"type":"tf","prompt":"آدم‌های ضعیف نمی‌توانند بیایند.","correct":false,"explanation_fa":"در آگهی گفته می‌شود همه می‌توانند بیایند، حتی «faibles»، یعنی ضعیف‌ها."}

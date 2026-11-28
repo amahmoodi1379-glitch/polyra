@@ -1,0 +1,32 @@
+code: fr-a2-t021
+title: La valise de Lucas
+band: 1
+kind: dialogue
+key_words: lourd, léger, plein
+sentences:
+A: Lucas, ta valise est prête ? | لوکا، چمدانت آماده است؟
+B: Oui, maman, mais elle est très lourde ! | آره مامان، ولی خیلی سنگین است!
+A: Oh, elle est pleine ! Tu prends combien de pulls ? | وای، پرِ پر است! چند تا پلیور می‌بری؟
+B: J'en prends six. | شش تا می‌برم.
+A: Six pulls ? On va à la plage, en Espagne ! | شش تا پلیور؟ داریم به ساحل می‌رویم، به اسپانیا!
+A: Prends deux pulls légers, c'est assez. | دو تا پلیور نازک بردار، کافی است.
+B: Et mes livres ? J'en prends quatre. | کتاب‌هایم چه؟ چهار تا می‌برم.
+A: Prends un{un-num} livre, pas quatre ! | یک کتاب بردار، نه چهار تا!
+B: Voilà, ma valise est légère ! | بفرما، چمدانم سبک شد!
+reading A:
+{"type":"mcq","prompt":"مشکل چمدان لوکا چیست؟","options":["خیلی کوچک است","خالی است","خیلی سنگین است","کهنه است"],"correct":2,"explanation_fa":"لوکا می‌گوید: «elle est très lourde !»، یعنی خیلی سنگین است."}
+{"type":"tf","prompt":"لوکا اول می‌خواهد شش پلیور ببرد.","correct":true,"explanation_fa":"لوکا می‌گوید: «J'en prends six.»"}
+{"type":"tf","prompt":"آن‌ها به کوه می‌روند.","correct":false,"explanation_fa":"مادر می‌گوید: «On va à la plage, en Espagne !»"}
+{"type":"mcq","prompt":"مادر می‌گوید لوکا چند پلیور ببرد؟","options":["یکی","دو تا","چهار تا","شش تا"],"correct":1,"explanation_fa":"مادر می‌گوید: «Prends deux pulls légers»."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید به کجا سفر می‌کنند؟","correct_sentence":4,"explanation_fa":"مادر می‌گوید: «On va à la plage, en Espagne !»"}
+{"type":"match","prompt":"هر چیز را به حرف مادر وصل کن.","left":["پلیورها","کتاب‌ها"],"right":["دو تا نازک ببرد","یکی ببرد","هیچ‌کدام را نبرد"],"pairs":[[0,0],[1,1]],"explanation_fa":"مادر می‌گوید: «Prends deux pulls légers» و «Prends un livre, pas quatre !»"}
+listening A:
+{"type":"num","prompt":"لوکا اول می‌خواهد چند کتاب ببرد؟","answer":"4","accepted":["4","quatre"],"explanation_fa":"لوکا می‌گوید: «J'en prends quatre.»"}
+{"type":"mcq","prompt":"آن‌ها به کدام کشور می‌روند؟","options":["ایتالیا","پرتغال","اسپانیا","مراکش"],"correct":2,"explanation_fa":"مادر می‌گوید: «en Espagne»."}
+{"type":"tf","prompt":"آخر گفتگو چمدان لوکا سبک است.","correct":true,"explanation_fa":"لوکا می‌گوید: «ma valise est légère !»"}
+{"type":"tf","prompt":"مادر می‌گوید چهار کتاب کافی است.","correct":false,"explanation_fa":"مادر می‌گوید: «Prends un livre, pas quatre !»"}
+listening B:
+{"type":"dict","sentence":1}
+{"type":"num","prompt":"لوکا اول می‌خواهد چند پلیور ببرد؟","answer":"6","accepted":["6","six"],"explanation_fa":"لوکا می‌گوید: «J'en prends six.»"}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["لوکا می‌گوید چمدانش سنگین است.","مادر می‌گوید دو پلیور نازک کافی است.","لوکا می‌گوید چمدانش سبک شد.","مادر می‌پرسد چمدان آماده است یا نه."],"correct_order":[3,0,1,2],"explanation_fa":"اول سؤال مادر، بعد «très lourde»، بعد «deux pulls légers» و آخر «ma valise est légère»."}

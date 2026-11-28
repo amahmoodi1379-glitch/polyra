@@ -1,0 +1,30 @@
+code: fr-a2-t028
+title: Les jumeaux arrivent
+band: 1
+kind: dialogue
+key_words: petits-enfants, jumeau, timide, curieux
+sentences:
+A: Bonjour, madame Dubois ! Vous avez l'air contente ! | سلام خانم دوبوا! خوشحال به نظر می‌رسید!
+B: Oui ! Mes petits-enfants arrivent ce soir. | بله! نوه‌هایم امشب می‌رسند.
+A: C'est génial ! Ils ont quel âge ? | چه عالی! چند سالشان است؟
+B: Six ans. Ce sont des jumeaux, Hugo et Louis. | شش سال. دوقلو هستند، اوگو و لویی.
+B: Hugo est timide, mais Louis est très curieux. | اوگو خجالتی است، ولی لویی خیلی کنجکاو است.
+B: Il pose beaucoup de questions ! | خیلی سؤال می‌پرسد!
+A: Ils restent combien de temps chez vous ? | چقدر پیش شما می‌مانند؟
+B: Une{un-num} semaine. Je vais être très occupée ! | یک هفته. حسابی سرم شلوغ می‌شود!
+reading A:
+{"type":"mcq","prompt":"چرا خانم دوبوا خوشحال است؟","options":["پسرش ازدواج می‌کند","نوه‌هایش امشب می‌رسند","به سفر می‌رود","یک سگ تازه دارد"],"correct":1,"explanation_fa":"خانم دوبوا می‌گوید: «Mes petits-enfants arrivent ce soir.»"}
+{"type":"tf","prompt":"نوه‌های خانم دوبوا دوقلو هستند.","correct":true,"explanation_fa":"خانم دوبوا می‌گوید: «Ce sont des jumeaux, Hugo et Louis.»"}
+{"type":"tf","prompt":"اوگو خیلی سؤال می‌پرسد.","correct":false,"explanation_fa":"خانم دوبوا می‌گوید اوگو «timide» است و لویی «très curieux»؛ لویی است که خیلی سؤال می‌پرسد."}
+reading B:
+{"type":"match","prompt":"هر بچه را به اخلاقش وصل کن.","left":["اوگو","لویی"],"right":["خجالتی","کنجکاو","تنبل"],"pairs":[[0,0],[1,1]],"explanation_fa":"خانم دوبوا می‌گوید: «Hugo est timide, mais Louis est très curieux.»"}
+{"type":"find","prompt":"کدام جمله می‌گوید نوه‌ها چقدر می‌مانند؟","correct_sentence":7,"explanation_fa":"خانم دوبوا می‌گوید: «Une semaine.»"}
+listening A:
+{"type":"num","prompt":"نوه‌ها چند سال دارند؟","answer":"6","accepted":["6","six"],"explanation_fa":"خانم دوبوا می‌گوید: «Six ans.»"}
+{"type":"mcq","prompt":"نوه‌ها چقدر پیش خانم دوبوا می‌مانند؟","options":["یک روز","یک هفته","یک ماه","دو هفته"],"correct":1,"explanation_fa":"همسایه می‌پرسد چقدر می‌مانند و خانم دوبوا می‌گوید: «Une semaine.»"}
+{"type":"tf","prompt":"نوه‌ها امشب می‌رسند.","correct":true,"explanation_fa":"خانم دوبوا می‌گوید: «Mes petits-enfants arrivent ce soir.»"}
+{"type":"tf","prompt":"لویی خجالتی است.","correct":false,"explanation_fa":"خانم دوبوا می‌گوید: «Hugo est timide, mais Louis est très curieux.»"}
+listening B:
+{"type":"dict","sentence":1}
+{"type":"mcq","prompt":"خانم دوبوا دربارهٔ این هفته چه می‌گوید؟","options":["خیلی آرام می‌گذرد","حوصله‌اش سر می‌رود","سرش خیلی شلوغ می‌شود","به سفر می‌رود"],"correct":2,"explanation_fa":"خانم دوبوا می‌گوید: «Je vais être très occupée !»"}
+{"type":"mcq","prompt":"اسم نوه‌ها چیست؟","options":["اوگو و لویی","توما و پل","لوکا و پیر","نیکلا و مارتن"],"correct":0,"explanation_fa":"خانم دوبوا می‌گوید: «Ce sont des jumeaux, Hugo et Louis.»"}

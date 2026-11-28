@@ -1,0 +1,30 @@
+code: fr-a2-t026
+title: L'enfance de grand-mère
+band: 1
+kind: dialogue
+key_words: enfance, grandir
+sentences:
+A: Grand-mère, tu as grandi où ? | مادربزرگ، کجا بزرگ شدی؟
+B: À la campagne, près de Bordeaux. Mon enfance était très heureuse. | در روستا، نزدیک بوردو. کودکی‌ام خیلی شاد بود.
+A: Tu allais à l'école à pied ? | پیاده به مدرسه می‌رفتی؟
+B: Oui, tous les jours, avec mon frère. | آره، هر روز، با برادرم.
+A: Et vous aviez une télévision ? | تلویزیون داشتید؟
+B: Non ! Le soir, on écoutait la radio ou on lisait. | نه! شب‌ها رادیو گوش می‌دادیم یا کتاب می‌خواندیم.
+A: C'était ennuyeux, non ? | حوصله‌سربر بود، نه؟
+B: Pas du tout ! On était souvent dehors. | اصلاً! بیشتر وقت‌ها بیرون بودیم.
+reading A:
+{"type":"mcq","prompt":"مادربزرگ کجا بزرگ شده است؟","options":["در پاریس","در لیون","نزدیک بوردو","نزدیک نیس"],"correct":2,"explanation_fa":"مادربزرگ می‌گوید: «À la campagne, près de Bordeaux.»"}
+{"type":"tf","prompt":"مادربزرگ کودکی شادی داشت.","correct":true,"explanation_fa":"مادربزرگ می‌گوید: «Mon enfance était très heureuse.»"}
+{"type":"tf","prompt":"خانوادهٔ مادربزرگ تلویزیون داشت.","correct":false,"explanation_fa":"نوه می‌پرسد تلویزیون داشتید و مادربزرگ می‌گوید: «Non !»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید شب‌ها چه کار می‌کردند؟","correct_sentence":5,"explanation_fa":"مادربزرگ می‌گوید: «Le soir, on écoutait la radio ou on lisait.»"}
+{"type":"mcq","prompt":"مادربزرگ چطور به مدرسه می‌رفت؟","options":["پیاده","با اتوبوس","با دوچرخه","با ماشین"],"correct":0,"explanation_fa":"نوه می‌پرسد: «Tu allais à l'école à pied ?» و مادربزرگ می‌گوید: «Oui»."}
+{"type":"match","prompt":"هر چیز را به جوابش وصل کن.","left":["رفتن به مدرسه","شب‌ها"],"right":["پیاده، با برادرش","رادیو یا کتاب","تلویزیون"],"pairs":[[0,0],[1,1]],"explanation_fa":"مادربزرگ با برادرش پیاده به مدرسه می‌رفت و «Le soir, on écoutait la radio ou on lisait.»"}
+listening A:
+{"type":"mcq","prompt":"مادربزرگ با چه کسی به مدرسه می‌رفت؟","options":["با خواهرش","با برادرش","با پدرش","با مادرش"],"correct":1,"explanation_fa":"مادربزرگ می‌گوید: «avec mon frère»."}
+{"type":"tf","prompt":"مادربزرگ می‌گوید زندگی‌اش آن موقع خسته‌کننده بود.","correct":false,"explanation_fa":"نوه می‌پرسد خسته‌کننده بود و مادربزرگ می‌گوید: «Pas du tout !»"}
+{"type":"tf","prompt":"آن‌ها اغلب بیرون بودند.","correct":true,"explanation_fa":"مادربزرگ می‌گوید: «On était souvent dehors.»"}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"mcq","prompt":"نوه دربارهٔ چه چیزی سؤال می‌کند؟","options":["کار مادربزرگ","کودکی مادربزرگ","سفرهای مادربزرگ","غذای مادربزرگ"],"correct":1,"explanation_fa":"نوه دربارهٔ مدرسه و شب‌های بچگی مادربزرگ می‌پرسد و مادربزرگ می‌گوید: «Mon enfance était très heureuse.»"}
+{"type":"mcq","prompt":"مادربزرگ شب‌ها چه کار می‌کرد؟","options":["تلویزیون می‌دید","به سینما می‌رفت","ورق‌بازی می‌کرد","رادیو گوش می‌داد"],"correct":3,"explanation_fa":"مادربزرگ می‌گوید: «Le soir, on écoutait la radio»."}

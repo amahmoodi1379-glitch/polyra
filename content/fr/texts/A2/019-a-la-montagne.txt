@@ -1,0 +1,29 @@
+code: fr-a2-t019
+title: À la montagne
+band: 1
+kind: dialogue
+key_words: prêt, sûr
+sentences:
+A: Tu es prête, Sophie ? On part à la montagne ! | سوفی، آماده‌ای؟ داریم به کوه می‌رویم!
+B: Presque. Mais tu es sûr ? Il va peut-être pleuvoir. | تقریباً. ولی مطمئنی؟ شاید باران بیاید.
+A: Mais non ! Regarde le ciel : il fait très beau. | نه بابا! آسمان را نگاه کن: هوا خیلی خوب است.
+B: D'accord, je prends un pull. | باشد، یک پلیور برمی‌دارم.
+B: Et le chien ? Il vient avec nous ? | سگ چه؟ با ما می‌آید؟
+A: Non, c'est trop loin pour lui. | نه، برایش خیلی دور است.
+B: Alors il reste chez ma mère ? | پس پیش مادرم می‌ماند؟
+A: Oui, je lui téléphone tout de suite. | آره، همین الان به او زنگ می‌زنم.
+reading A:
+{"type":"mcq","prompt":"سوفی و همراهش کجا می‌روند؟","options":["به دریا","به کوه","به جنگل","به شهر"],"correct":1,"explanation_fa":"همراه سوفی می‌گوید: «On part à la montagne !»"}
+{"type":"tf","prompt":"سوفی فکر می‌کند شاید باران بیاید.","correct":true,"explanation_fa":"سوفی می‌گوید: «Il va peut-être pleuvoir.»"}
+{"type":"tf","prompt":"سگ با آن‌ها به کوه می‌رود.","correct":false,"explanation_fa":"سوفی می‌پرسد سگ هم می‌آید و جواب این است: «Non, c'est trop loin pour lui.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید هوا خوب است؟","correct_sentence":2,"explanation_fa":"همراه سوفی می‌گوید: «Regarde le ciel : il fait très beau.»"}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["سوفی می‌گوید یک پلیور برمی‌دارد.","سوفی می‌پرسد سگ هم با آن‌ها می‌آید یا نه.","سوفی می‌گوید شاید باران بیاید.","همراه سوفی می‌گوید همین الان به مادر سوفی زنگ می‌زند."],"correct_order":[2,0,1,3],"explanation_fa":"اول حرف باران، بعد پلیور، بعد سؤال دربارهٔ سگ و آخر هم «je lui téléphone tout de suite»."}
+listening A:
+{"type":"mcq","prompt":"هوا چطور است؟","options":["بارانی است","سرد و ابری است","خیلی خوب است","برفی است"],"correct":2,"explanation_fa":"همراه سوفی می‌گوید: «il fait très beau»."}
+{"type":"tf","prompt":"سوفی کاملاً آماده است.","correct":false,"explanation_fa":"سوفی می‌گوید: «Presque.»، یعنی تقریباً."}
+{"type":"tf","prompt":"سگ پیش مادر سوفی می‌ماند.","correct":true,"explanation_fa":"سوفی می‌پرسد: «Alors il reste chez ma mère ?» و جواب «Oui» است."}
+listening B:
+{"type":"dict","sentence":4}
+{"type":"mcq","prompt":"سوفی چه چیزی با خودش برمی‌دارد؟","options":["یک چتر","یک ساندویچ","یک کتاب","یک پلیور"],"correct":3,"explanation_fa":"سوفی می‌گوید: «je prends un pull»."}
+{"type":"mcq","prompt":"چرا سگ با آن‌ها نمی‌رود؟","options":["چون بیمار است","چون آنجا برایش خیلی دور است","چون هوا بد است","چون سگ‌ها آنجا ممنوع‌اند"],"correct":1,"explanation_fa":"همراه سوفی می‌گوید: «c'est trop loin pour lui»."}

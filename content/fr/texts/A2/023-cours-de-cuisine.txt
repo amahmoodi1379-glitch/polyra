@@ -1,0 +1,30 @@
+code: fr-a2-t023
+title: Le cours de cuisine
+band: 1
+kind: dialogue
+key_words: amusant, drôle, ennuyeux
+sentences:
+A: Salut Camille ! Ton week-end, c'était comment ? | سلام کامی! آخر هفته‌ات چطور بود؟
+B: Génial ! Je suis allée à un cours de cuisine. | عالی! رفتم کلاس آشپزی.
+A: Ah bon ? C'était amusant ? | جدی؟ خوش گذشت؟
+B: Oui, très ! Le professeur était drôle et sympa. | آره، خیلی! معلم بامزه و خوش‌اخلاق بود.
+B: On a préparé un gâteau au chocolat. | یک کیک شکلاتی درست کردیم.
+A: Et il était bon ? | خوشمزه هم بود؟
+B: Parfait ! Mon père l'a mangé en cinq minutes ! | حرف نداشت! پدرم پنج دقیقه‌ای همه‌اش را خورد!
+A: Moi, je suis resté à la maison. C'était ennuyeux ! | من در خانه ماندم. خسته‌کننده بود!
+reading A:
+{"type":"mcq","prompt":"کامی آخر هفته چه کار کرد؟","options":["به سینما رفت","در خانه ماند","کلاس آشپزی رفت","به سفر رفت"],"correct":2,"explanation_fa":"کامی می‌گوید: «Je suis allée à un cours de cuisine.»"}
+{"type":"tf","prompt":"معلمِ کلاس بامزه بود.","correct":true,"explanation_fa":"کامی می‌گوید: «Le professeur était drôle et sympa.»"}
+{"type":"tf","prompt":"آخر هفتهٔ دوستِ کامی خیلی خوب بود.","correct":false,"explanation_fa":"دوست کامی می‌گوید در خانه ماند و «C'était ennuyeux !»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید در کلاس چه چیزی درست کردند؟","correct_sentence":4,"explanation_fa":"کامی می‌گوید: «On a préparé un gâteau au chocolat.»"}
+{"type":"match","prompt":"هر کس را به آخر هفته‌اش وصل کن.","left":["کامی","دوستِ کامی"],"right":["کلاس آشپزی","ماندن در خانه","سفر به نیس"],"pairs":[[0,0],[1,1]],"explanation_fa":"کامی کلاس آشپزی رفت و دوستش می‌گوید: «je suis resté à la maison»."}
+listening A:
+{"type":"mcq","prompt":"در کلاس چه چیزی درست کردند؟","options":["یک سوپ","یک سالاد","یک نان","یک کیک شکلاتی"],"correct":3,"explanation_fa":"کامی می‌گوید: «un gâteau au chocolat»."}
+{"type":"num","prompt":"پدر کامی کیک را در چند دقیقه خورد؟","answer":"5","accepted":["5","cinq"],"explanation_fa":"کامی می‌گوید: «Mon père l'a mangé en cinq minutes !»"}
+{"type":"tf","prompt":"کیک خوب نبود.","correct":false,"explanation_fa":"دوستش می‌پرسد کیک خوب بود و کامی می‌گوید: «Parfait !»"}
+{"type":"tf","prompt":"دوستِ کامی در خانه ماند.","correct":true,"explanation_fa":"دوست کامی می‌گوید: «je suis resté à la maison»."}
+listening B:
+{"type":"dict","sentence":4}
+{"type":"mcq","prompt":"کامی دربارهٔ آخر هفته‌اش چه می‌گوید؟","options":["عالی بود","بد بود","خسته‌کننده بود","معمولی بود"],"correct":0,"explanation_fa":"کامی جواب می‌دهد: «Génial !»"}
+{"type":"mcq","prompt":"چه کسی کیک را خورد؟","options":["کامی","خواهر کامی","پدر کامی","معلم"],"correct":2,"explanation_fa":"کامی می‌گوید: «Mon père l'a mangé»."}
