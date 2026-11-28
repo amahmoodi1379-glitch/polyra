@@ -1,4 +1,4 @@
-import { fold, splitPieces } from "@/engine/tokens";
+import { checkTokens, fold, splitPieces, type Vocabulary } from "@/engine/tokens";
 import { levelRank } from "../languages";
 import { SEPARABLE } from "./closed";
 import { isAuxiliary, verbFormGroups } from "./distractors";
@@ -130,6 +130,13 @@ function units(text: string, language: string): Unit[] {
 const isNoun = (candidate: Candidate) => candidate.word.word.pos === "noun";
 const orderKey = (item: PackWord) => levelRank(item.level) * 100000 + item.order;
 const sentenceStart = (text: string, at: number) => /^[\s"«„“(¿¡-]*$/u.test(text.slice(0, at)) || /[.!?:]["»“”)]?\s*["«„“(-]*\s*$/u.test(text.slice(0, at));
+
+/** A vocabulary that knows every code: only where the tokens stand is checked, not what they are. */
+const PLACING_ONLY: Vocabulary = {
+  byCode: (code) => ({ id: 0, lemma: code, plural: null, pos: "other", forms: [], partLemmas: [] }),
+  hasLemmaOrPlural: () => false,
+  isException: () => true,
+};
 
 export class Analyzer {
   private byCode: Map<string, PackWord>;
@@ -488,6 +495,11 @@ export class Analyzer {
           errors.push(`«${token.surface}» (${token.word.word.code}, ${token.word.level} #${token.word.order}) is taught after ${scope.target.word.code} (#${scope.target.order}): use words taught before it`);
         }
       }
+    }
+    // The importer maps the tokens onto the text the same way (PRD §14.1): a token it cannot place is refused there.
+    if (errors.length === 0) {
+      const mapped = checkTokens(text, tokens.map(({ surface, kind, code, meaning_fa }) => ({ surface, kind, code, meaning_fa })), PLACING_ONLY);
+      if (!mapped.ok) for (const item of mapped.problems) if (item.type === "not_found" || item.type === "uncovered") errors.push(`the import cannot place «${item.type === "not_found" ? item.surface : item.piece}» in the sentence: write it another way`);
     }
     return { text, tokens, gaps, errors, notes };
   }

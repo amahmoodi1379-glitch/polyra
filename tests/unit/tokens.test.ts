@@ -134,6 +134,15 @@ describe("checkTokens", () => {
     expect(result.rows[1].suspect).toBe(false);
   });
 
+  it("maps a split verb whose particle also stands earlier as a preposition (passt auf … auf)", () => {
+    const de = vocab({ sie: { lemma: "sie", pos: "pron" }, aufpassen: { lemma: "aufpassen", pos: "verb" }, auf: { lemma: "auf" }, die: { lemma: "die" }, Katze: { lemma: "Katze" } });
+    const result = checkTokens("Sie passt auf die Katze auf.", [w("Sie", "sie"), w("passt ... auf", "aufpassen"), w("auf", "auf"), w("die", "die"), w("Katze", "Katze")], de);
+    expect(result.ok).toBe(true);
+    if (!result.ok) return;
+    expect(result.rows[1].spans).toEqual([[4, 9], [24, 27]]);
+    expect(result.rows[2].spans).toEqual([[10, 13]]);
+  });
+
   it("checks a phrase by its parts", () => {
     const result = checkTokens("Il prend une décision.", [w("Il", null), w("prend une décision", "prendre une décision")], fr);
     expect(result.ok && result.rows[1].suspect).toBe(false);

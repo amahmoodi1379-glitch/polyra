@@ -30,7 +30,7 @@ describe("content packs", () => {
     const level = report.levels[0];
     expect(level.rejected).toEqual([]);
     expect(level.skipped).toEqual([]);
-    expect(level.added).toMatchObject({ units: 2, words: 40, tables: 12, sentences: 13, dialogues: 1, "phonics lessons": 1 });
+    expect(level.added).toMatchObject({ units: 2, words: 40, tables: 12, sentences: 14, dialogues: 1, "phonics lessons": 1 });
 
     const word = await testDb.word.findFirstOrThrow({ where: { language: "fr", code: "voiture" } });
     expect(word.status).toBe("published");
@@ -44,6 +44,11 @@ describe("content packs", () => {
     const shared = await testDb.sentence.findFirstOrThrow({ where: { text: "La maison est petite." }, include: { targets: true } });
     expect(shared.targets).toHaveLength(2);
     expect(await testDb.formException.count({ where: { word: { code: "être" }, surface: "sont" } })).toBe(1);
+    // «Rose» is a name of names.txt and also the adjective rose: settled as a name, so the sentence is published.
+    const rose = await testDb.sentence.findFirstOrThrow({ where: { text: "Rose a une voiture." }, include: { words: true } });
+    expect(rose.status).toBe("published");
+    expect(rose.words.find((row) => row.surface === "Rose")).toMatchObject({ kind: "name", word_id: null, candidate_reason: null });
+    expect(await testDb.adminLog.count({ where: { action: "resolve", entity: "sentence", entity_id: String(rose.id) } })).toBe(1);
     const batches = await testDb.importBatch.findMany({ where: { prompt_version: PACK_VERSION } });
     expect(batches.every((batch) => batch.state === "reviewed")).toBe(true);
     expect(report.published).toBeGreaterThan(0);

@@ -22,6 +22,7 @@ import { librarySlugs, type LibrarySlug } from "../library/slugs";
 import { fold } from "@/engine/tokens";
 import { describeProblem } from "../problems";
 import { publishReady } from "../publish/run";
+import { refreshDifficulty } from "../text-difficulty";
 import { mergeRound, type RoundResult } from "../report";
 import { buildPack, hashOf, type Pack, type PackLevel } from "./build";
 
@@ -50,7 +51,7 @@ export type LanguageReport = {
 };
 
 type Ledger = Set<string>;
-type Run = { tx: Tx; language: LanguageCode; adminId: number | null; batches: number[]; report: LevelReport; ledger: Ledger; loaded: { kind: string; key: string; hash: string }[] };
+type Run = { tx: Tx; language: LanguageCode; adminId: number | null; batches: number[]; report: LevelReport; ledger: Ledger; loaded: { kind: string; key: string; hash: string }[]; names: string[] };
 
 const ledgerKey = (kind: string, key: string) => `${kind}|${key}`;
 
@@ -76,7 +77,8 @@ async function importAnswer(run: Run, kind: ContentKind, batch: ImportBatch, ans
   if (!content) throw new Error(`Pack answer for ${kind.kind} has none of its keys`);
   const round = await kind.importRecords(run.tx, batch, content.records, content.parts, run.adminId);
   for (const item of round.rejected) run.report.rejected.push(`${kind.kind} ${item.label}: ${item.problems.map((problem) => describeProblem(problem, "chatbot")).join("; ")}`);
-  if (round.candidates > 0) run.report.rejected.push(`${kind.kind}: ${round.candidates} unknown words (candidates)`);
+  const candidates = round.candidates > 0 ? await settleNames(run, batch.id) : 0;
+  if (candidates > 0) run.report.rejected.push(`${kind.kind}: ${candidates} unknown words (candidates)`);
   if (round.suspects > 0) run.report.rejected.push(`${kind.kind}: ${round.suspects} doubtful word mappings (suspects)`);
   await run.tx.importBatch.update({
     where: { id: batch.id },
@@ -308,6 +310,31 @@ export function unitTranslationsLoaded(batches: { raw_output: string | null }[])
 }
 
 /** Approves what this run imported, as if a teacher had checked it (PRD §13.4). */
+/**
+ * A name of `names.txt` that is also a word of the lists (Pierre and pierre) comes in as a candidate, which the
+ * teacher would settle on «حل کردن» with «اسم است». The pack already says it is a name, so it is settled here the
+ * same way, one log row per name, and the sentence can be published. Returns the candidates left in the batch.
+ */
+async function settleNames(run: Run, batchId: number) {
+  const { tx } = run;
+  const sentence = { import_batch_id: batchId };
+  const rows = await tx.sentenceWord.findMany({
+    where: { candidate_reason: "name_matches_word", surface: { in: run.names }, sentence },
+    select: { id: true, sentence_id: true, surface: true },
+  });
+  if (rows.length > 0) {
+    await tx.sentenceWord.updateMany({ where: { id: { in: rows.map((row) => row.id) } }, data: { kind: "name", word_id: null, candidate_reason: null, suspect: false } });
+    await refreshDifficulty(tx, { sentenceIds: [...new Set(rows.map((row) => row.sentence_id))] });
+    for (const surface of new Set(rows.map((row) => row.surface))) {
+      const mine = rows.filter((row) => row.surface === surface);
+      const after = { decision: "candidate_name", surface, sentences: new Set(mine.map((row) => row.sentence_id)).size };
+      await logChange(tx, run.adminId, { action: "resolve", entity: "sentence", entityId: mine[0].sentence_id, before: null, after });
+    }
+  }
+  const left = await tx.sentenceWord.findMany({ where: { candidate_reason: { not: null }, sentence }, select: { code_given: true, surface: true } });
+  return new Set(left.map((row) => fold(row.code_given ?? row.surface))).size;
+}
+
 async function approve(tx: Tx, batchIds: number[]) {
   const mine = { import_batch_id: { in: batchIds }, status: { in: ["draft" as const, "needs_review" as const] } };
   const approved = { status: "approved" as const };
@@ -374,7 +401,7 @@ export async function loadPack(pack: Pack, options: { adminId?: number | null; l
       async (tx) => {
         await tx.$executeRaw`SELECT pg_advisory_xact_lock(${LOCK})`;
         const rows = await tx.contentPackItem.findMany({ where: { language }, select: { kind: true, key: true } });
-        const run: Run = { tx, language, adminId: options.adminId ?? null, batches: [], report: levelReport, ledger: new Set(rows.map((row) => ledgerKey(row.kind, row.key))), loaded: [] };
+        const run: Run = { tx, language, adminId: options.adminId ?? null, batches: [], report: levelReport, ledger: new Set(rows.map((row) => ledgerKey(row.kind, row.key))), loaded: [], names: pack.names };
         await loadLevel(run, level);
         await approve(tx, run.batches);
         if (run.loaded.length > 0) await tx.contentPackItem.createMany({ data: run.loaded.map((item) => ({ language, ...item })), skipDuplicates: true });

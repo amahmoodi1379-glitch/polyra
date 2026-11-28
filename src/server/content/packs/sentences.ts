@@ -68,6 +68,12 @@ export const opensSentence = (before: string) => /(^|[.!?…])\s*([–—]\s*)?(
 export function buildSentences(analyzer: Analyzer, files: { file: string; text: string }[], level: string, firstWords: Set<PackWord>): BuiltSentences {
   const out: BuiltSentences = { records: [], errors: [], notes: [], exceptions: [], wordsWithSentences: new Map(), lines: [] };
   const byText = new Map<string, SentenceRecord>();
+  // The words a written option can be, by lemma and plural: the import refuses an option that means the answer.
+  const byLemma = new Map<string, PackWord[]>();
+  for (const item of analyzer.words) {
+    for (const form of new Set([item.word.lemma, item.word.plural].filter((value): value is string => !!value).map(fold))) byLemma.set(form, [...(byLemma.get(form) ?? []), item]);
+  }
+  const tidyMeaning = (text: string | null | undefined) => (text ? text.replace(/[\s\u200c]+/g, " ").trim() : "");
   for (const { file, text } of files) {
     let target: PackWord | null = null;
     for (const [index, raw] of text.split("\n").entries()) {
@@ -150,6 +156,18 @@ export function buildSentences(analyzer: Analyzer, files: { file: string; text: 
       const alsoRight = distractors.filter((item) => okAnswers.has(item.toLowerCase()));
       if (alsoRight.length > 0) {
         out.errors.push({ ...at, text: `the wrong option «${alsoRight.join("», «")}» is also a right answer (the gap or ok:)${given.length ? "" : "; write d: with three surely wrong options"}` });
+        continue;
+      }
+      const target_ = target!;
+      const sameMeaning = given.filter((item) =>
+        (byLemma.get(fold(item)) ?? []).some(
+          (other) =>
+            other !== target_ &&
+            ((target_.word.concept_fa && other.word.concept_fa === target_.word.concept_fa) || (tidyMeaning(target_.word.meaning_fa) !== "" && tidyMeaning(other.word.meaning_fa) === tidyMeaning(target_.word.meaning_fa))),
+        ),
+      );
+      if (sameMeaning.length > 0) {
+        out.errors.push({ ...at, text: `the wrong option «${sameMeaning.join("», «")}» means what «${target_.word.lemma}» means, so the import refuses it: write another` });
         continue;
       }
       out.lines.push({ ...at, target, text: analysis.text, tokens: analysis.tokens.map((token) => ({ surface: token.surface, code: token.code, inGap: token.inGap !== null })) });

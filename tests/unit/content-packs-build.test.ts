@@ -80,6 +80,12 @@ describe("sentences of a pack", () => {
     expect(built.errors.map((item) => item.text).join()).toMatch(/«minou» is also a right answer/);
   });
 
+  it("refuses a written wrong option that means what the answer means, as the import does", () => {
+    const list = words("fr", ["le\tdet\t\t\tحرف تعریف\tحرف تعریف\tfunction\tno_card:1", "chat\tnoun\tm\t\tگربه\tگربه\tanimals", "minou\tnoun\tm\t\tگربه\tپیشی\tanimals", "chien\tnoun\tm\t\tسگ\tسگ\tanimals", "lit\tnoun\tm\t\tتخت\tتخت\thome"]);
+    const built = buildSentences(analyzerOf("fr", list), [{ file: "s.txt", text: "# chat\nLe [chat]. | گربه. | d: minou, chien, lit" }], "A1", new Set(list));
+    expect(built.errors.map((item) => item.text).join()).toMatch(/«minou» means what «chat» means/);
+  });
+
   it("never offers a French option that the word before the gap rules out by its form (ma amie, cet chat)", () => {
     const list = words("fr", [
       "ma\tdet\t\t\tمال من\tma: صفت ملکی\tfunction\tno_card:1",

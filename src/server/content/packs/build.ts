@@ -45,7 +45,17 @@ export type PackLevel = {
   /** The language's phonics lessons, with its first level (PRD §8: they belong to the start, not a level). */
   phonics: PhonicsSource[];
 };
-export type Pack = { language: LanguageCode; levels: PackLevel[]; words: PackWord[]; errors: Note[]; warnings: Note[]; notes: Note[]; timing: TimingNote[] };
+export type Pack = {
+  language: LanguageCode;
+  levels: PackLevel[];
+  words: PackWord[];
+  /** `names.txt`: the loader settles a name that is also a word of the lists (Pierre, pierre) as a name. */
+  names: string[];
+  errors: Note[];
+  warnings: Note[];
+  notes: Note[];
+  timing: TimingNote[];
+};
 
 /** A short, stable fingerprint of an item as loaded. */
 export const hashOf = (value: unknown) => createHash("sha1").update(JSON.stringify(value)).digest("hex").slice(0, 16);
@@ -89,10 +99,12 @@ export function buildPack(language: LanguageCode, options: BuildOptions = {}): P
   const levels = PACK_LEVELS.filter((level) => !options.levels || options.levels.includes(level));
   const wordPack = checkWordPack(language, readWordFiles(language, contentRoot).filter((file) => levels.includes(file.level as (typeof levels)[number])), frequencyRanks(language, root));
   const words = wordPack.words;
+  const names = readNames(contentRoot, language);
   const pack: Pack = {
     language,
     levels: [],
     words,
+    names: [...names],
     errors: wordPack.errors.map(({ file, line, lemma, text }) => ({ file, line, text: `${lemma}: ${text}` })),
     warnings: wordPack.warnings.map(({ file, line, lemma, text }) => ({ file, line, text: `${lemma}: ${text}` })),
     notes: [],
@@ -101,7 +113,7 @@ export function buildPack(language: LanguageCode, options: BuildOptions = {}): P
   if (words.length === 0) return pack;
 
   const morph = new Morph(language, words, root);
-  const analyzer = new Analyzer(language, words, morph, readNames(contentRoot, language));
+  const analyzer = new Analyzer(language, words, morph, names);
   const firstWords = new Set(
     words
       .filter((item) => !item.word.no_card && isCardRegister(item.word.register))

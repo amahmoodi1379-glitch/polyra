@@ -140,6 +140,15 @@ export function plausibleForm(surface: string, entry: VocabEntry, segments: stri
  * candidates (PRD §13.3).
  */
 export function checkTokens(text: string, tokens: TokenInput[], vocabulary: Vocabulary): CheckTokensResult {
+  const first = mapTokens(text, tokens, vocabulary, false);
+  if (first.ok) return first;
+  // «Sie passt auf die Katze auf»: the split verb's «auf» first took the preposition. Its later parts are
+  // tried again from the end of the sentence; the first answer stands unless that one maps every piece.
+  const again = mapTokens(text, tokens, vocabulary, true);
+  return again.ok ? again : first;
+}
+
+function mapTokens(text: string, tokens: TokenInput[], vocabulary: Vocabulary, laterFromEnd: boolean): CheckTokensResult {
   const pieces = splitPieces(text);
   const covered = pieces.map(() => false);
   const problems: TokenProblem[] = [];
@@ -164,7 +173,7 @@ export function checkTokens(text: string, tokens: TokenInput[], vocabulary: Voca
       }
       // Normally a token continues exactly where the previous one stopped. If it matches further
       // on, the pieces skipped in between stay uncovered and are reported as missing words.
-      const start = findRun(pieces, covered, wanted, at);
+      const start = index > 0 && laterFromEnd ? findLastRun(pieces, covered, wanted, at) : findRun(pieces, covered, wanted, at);
       if (start < 0) {
         found = false;
         return;
@@ -227,6 +236,13 @@ function matchesAt(pieces: Piece[], covered: boolean[], wanted: string[], start:
 
 function findRun(pieces: Piece[], covered: boolean[], wanted: string[], from: number) {
   for (let start = from; start + wanted.length <= pieces.length; start++) {
+    if (matchesAt(pieces, covered, wanted, start)) return start;
+  }
+  return -1;
+}
+
+function findLastRun(pieces: Piece[], covered: boolean[], wanted: string[], from: number) {
+  for (let start = pieces.length - wanted.length; start >= from; start--) {
     if (matchesAt(pieces, covered, wanted, start)) return start;
   }
   return -1;
