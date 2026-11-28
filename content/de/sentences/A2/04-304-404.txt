@@ -636,6 +636,20 @@ Ich esse gern Reis mit [Lammfleisch]. | برنج با گوشت بره را دو�
 Gibt es hier auch [Lammfleisch]? | این‌جا گوشت بره هم هست؟
 Das [Lammfleisch] ist sehr lecker, probier mal! | گوشت بره خیلی خوشمزه است، امتحان کن!
 Meine Mutter kauft das [Lammfleisch] auf dem Markt. | مادرم گوشت بره را از بازار می‌خرد.
+# Schweinefleisch
+In Deutschland isst man oft [Schweinefleisch]. | در آلمان زیاد گوشت خوک می‌خورند.
+Ich esse kein [Schweinefleisch], ich nehme das Hähnchen. | من گوشت خوک نمی‌خورم، مرغ را برمی‌دارم.
+Ist in der Wurst [Schweinefleisch]? | توی سوسیس گوشت خوک هست؟
+Das Essen ist mit Rindfleisch, nicht mit [Schweinefleisch]. | این غذا با گوشت گاو است، نه با گوشت خوک.
+Meine Mutter kocht am Sonntag [Schweinefleisch] mit Kartoffeln. | مادرم یکشنبه‌ها گوشت خوک با سیب‌زمینی می‌پزد.
+Entschuldigung, ist das Rindfleisch oder [Schweinefleisch]? | ببخشید، این گوشت گاو است یا گوشت خوک؟
+# Schinken
+Ich nehme ein Brötchen mit [Schinken] und Käse. | یک نان کوچک با ژامبون و پنیر برمی‌دارم.
+In Deutschland essen viele Leute zum Frühstück Brot mit [Schinken]. | در آلمان خیلی‌ها صبحانه نان با ژامبون می‌خورند.
+Ist auf der Pizza [Schinken]? | روی پیتزا ژامبون هست؟
+Eine Pizza ohne [Schinken], bitte. | لطفاً یک پیتزا بدون ژامبون.
+Der [Schinken] schmeckt sehr gut. | ژامبون خیلی خوشمزه است.
+Im Supermarkt kaufe ich Käse und [Schinken]. | در سوپرمارکت پنیر و ژامبون می‌خرم.
 # Hackfleisch
 Für die Soße brauche ich 500 Gramm [Hackfleisch]. | برای سس پانصد گرم گوشت چرخ‌کرده لازم دارم.
 Die Kinder essen gern Nudeln mit [Hackfleisch]. | بچه‌ها ماکارونی با گوشت چرخ‌کرده دوست دارند. | d: Müsli, Mehl, Obst
@@ -671,6 +685,20 @@ Der [Kakao] ist noch zu{zu-adv} heiß für das Kind. | کاکائو هنوز ب�
 Möchtest du [Kakao] oder Tee? | کاکائو می‌خواهی یا چای؟
 Für den Kuchen brauchen wir [Kakao] und Zucker. | برای کیک کاکائو و شکر لازم داریم.
 Im Café bestellt Lena einen [Kakao]. | لنا در کافه یک کاکائو سفارش می‌دهد.
+# Wein
+Zum Abendessen trinken meine Eltern manchmal [Wein]. | پدر و مادرم گاهی سر شام شراب می‌نوشند.
+Mein Vater kauft eine Flasche [Wein] für die Party. | پدرم برای مهمانی یک بطری شراب می‌خرد.
+Nein danke, ich trinke keinen [Wein]. | نه ممنون، من شراب نمی‌نوشم.
+Möchten Sie [Wein] oder Wasser? | شراب میل دارید یا آب؟
+Für die Kinder gibt es Saft, für die Erwachsenen [Wein]. | برای بچه‌ها آب‌میوه هست، برای بزرگ‌ترها شراب.
+Zum Geburtstag schenke ich meinem Onkel [Wein]. | برای تولد به عمویم شراب هدیه می‌دهم.
+# Bier
+Nach dem Spiel trinken die Männer ein [Bier]. | بعد از بازی، مردها یک آبجو می‌نوشند.
+München ist für sein [Bier] bekannt. | مونیخ به‌خاطر آبجویش معروف است.
+Ein [Bier] und ein Wasser, bitte! | یک آبجو و یک آب، لطفاً!
+Mein Bruder trinkt kein [Bier], er trinkt lieber Saft. | برادرم آبجو نمی‌نوشد، آب‌میوه را بیشتر دوست دارد.
+Im Sommer trinken viele Leute im Garten ein kaltes [Bier]. | تابستان خیلی‌ها در باغ یک آبجوی خنک می‌نوشند.
+Kinder dürfen kein [Bier] trinken. | بچه‌ها اجازه ندارند آبجو بنوشند.
 # Gericht
 Dieses [Gericht] kommt aus dem Iran. | این غذا ایرانی است.
 Auf der Speisekarte stehen viele [Gerichte]. | در منو غذاهای زیادی هست.

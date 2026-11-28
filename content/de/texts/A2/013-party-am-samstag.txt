@@ -1,0 +1,34 @@
+code: de-a2-t013
+title: Eine Party am Samstag
+band: 1
+kind: voice_message
+sentences:
+- Hallo Sophie, hier ist Lisa! | سلام سوفی، لیزا هستم!
+- Am Samstag habe ich Geburtstag. | شنبه تولدم است.
+- Ich mache eine Party bei mir zu Hause. | در خانه‌ام مهمانی می‌گیرم.
+- Die Party beginnt um 20 Uhr. | مهمانی ساعت ۸ شب شروع می‌شود. | tts: Die Party beginnt um zwanzig Uhr.
+- Meine Wohnung ist neu, du kennst sie noch nicht. | آپارتمانم تازه است و هنوز آن را ندیده‌ای.
+- Ich schicke dir die Adresse. | آدرس را برایت می‌فرستم.
+- Kannst du vielleicht einen Salat machen? | می‌توانی شاید یک سالاد درست کنی؟
+- Dann erzähle ich dir auch von meiner Reise nach Wien. | آن موقع از سفرم به وین هم برایت تعریف می‌کنم.
+- Bis bald! | تا بعد!
+reading A:
+{"type":"mcq","prompt":"لیزا چرا پیام گذاشته است؟","options":["برای خرید سالاد","برای سفر به وین","برای دعوت به مهمانی","برای گرفتن آدرس"],"correct":2,"explanation_fa":"لیزا می‌گوید: «Ich mache eine Party bei mir zu Hause.»"}
+{"type":"tf","prompt":"تولد لیزا شنبه است.","correct":true,"explanation_fa":"لیزا می‌گوید: «Am Samstag habe ich Geburtstag.»"}
+{"type":"tf","prompt":"مهمانی در یک رستوران است.","correct":false,"explanation_fa":"لیزا می‌گوید: «Ich mache eine Party bei mir zu Hause.»، یعنی در خانه خودش."}
+{"type":"mcq","prompt":"لیزا از سوفی چه می‌خواهد؟","options":["یک کیک تولد بخرد","یک سالاد درست کند","نوشیدنی بیاورد","زودتر از بقیه بیاید"],"correct":1,"explanation_fa":"لیزا می‌پرسد: «Kannst du vielleicht einen Salat machen?»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید سوفی خانه لیزا را هنوز ندیده است؟","correct_sentence":4,"explanation_fa":"لیزا می‌گوید: «du kennst sie noch nicht»، یعنی هنوز آپارتمانش را ندیده است."}
+{"type":"order","prompt":"این‌ها را به ترتیب پیام بچین.","items":["لیزا می‌گوید آدرس را می‌فرستد.","لیزا می‌گوید شنبه تولدش است.","لیزا می‌گوید مهمانی ساعت ۲۰ شروع می‌شود.","لیزا می‌گوید از سفرش تعریف می‌کند."],"correct_order":[1,2,0,3],"explanation_fa":"اول «Am Samstag habe ich Geburtstag»، بعد «um 20 Uhr»، بعد «Ich schicke dir die Adresse» و آخر «von meiner Reise nach Wien»."}
+{"type":"tf","prompt":"لیزا آدرس را برای سوفی می‌فرستد.","correct":true,"explanation_fa":"لیزا می‌گوید: «Ich schicke dir die Adresse.»"}
+{"type":"tf","prompt":"لیزا می‌خواهد از سفرش به برلین تعریف کند.","correct":false,"explanation_fa":"لیزا می‌گوید: «von meiner Reise nach Wien»، یعنی سفر به وین."}
+listening A:
+{"type":"num","prompt":"مهمانی ساعت چند شروع می‌شود؟","answer":"20","accepted":["20","zwanzig","20:00","8","acht"],"explanation_fa":"لیزا می‌گوید: «Die Party beginnt um 20 Uhr.»، یعنی ساعت ۸ شب."}
+{"type":"mcq","prompt":"لیزا به کجا سفر کرده است؟","options":["هامبورگ","برلین","مونیخ","وین"],"correct":3,"explanation_fa":"لیزا می‌گوید: «von meiner Reise nach Wien»."}
+{"type":"tf","prompt":"آپارتمان لیزا تازه است.","correct":true,"explanation_fa":"لیزا می‌گوید: «Meine Wohnung ist neu»."}
+{"type":"tf","prompt":"مهمانی یکشنبه است.","correct":false,"explanation_fa":"لیزا می‌گوید: «Am Samstag habe ich Geburtstag.»، یعنی شنبه."}
+listening B:
+{"type":"dict","sentence":5}
+{"type":"mcq","prompt":"مهمانی کجاست؟","options":["خانه سوفی","یک کافه","خانه لیزا","یک رستوران"],"correct":2,"explanation_fa":"لیزا می‌گوید: «bei mir zu Hause»، یعنی در خانه خودش."}
+{"type":"tf","prompt":"سوفی خانه لیزا را هنوز ندیده است.","correct":true,"explanation_fa":"لیزا می‌گوید: «du kennst sie noch nicht»."}
+{"type":"tf","prompt":"لیزا از سوفی می‌خواهد نوشیدنی بخرد.","correct":false,"explanation_fa":"لیزا می‌پرسد: «Kannst du vielleicht einen Salat machen?»، یعنی سالاد درست کند."}

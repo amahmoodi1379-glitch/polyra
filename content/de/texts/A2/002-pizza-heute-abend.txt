@@ -1,0 +1,33 @@
+code: de-a2-t002
+title: Pizza für heute Abend
+band: 1
+kind: voice_message
+sentences:
+- Hallo Jonas, hier ist Laura. | سلام یوناس، لورا هستم.
+- Ich mache heute Abend Pizza für uns. | امشب برای خودمان پیتزا درست می‌کنم.
+- Kannst du bitte Käse und Tomaten kaufen? | می‌شود لطفاً پنیر و گوجه‌فرنگی بخری؟
+- Außerdem brauchen wir noch Cola. | به‌علاوه کولا هم لازم داریم.
+- Ich kann heute nicht einkaufen, denn ich arbeite bis 7 Uhr. | من امروز نمی‌توانم خرید کنم، چون تا ساعت ۷ کار می‌کنم. | tts: Ich kann heute nicht einkaufen, denn ich arbeite bis sieben Uhr.
+- Um 8 Uhr bin ich zu Hause. | ساعت ۸ خانه‌ام. | tts: Um acht Uhr bin ich zu Hause.
+- Auf dem Tisch in der Küche sind 20 Euro. | روی میز آشپزخانه ۲۰ یورو هست. | tts: Auf dem Tisch in der Küche sind zwanzig Euro.
+- Also, bis heute Abend! | پس تا امشب!
+reading A:
+{"type":"mcq","prompt":"لورا امشب چه غذایی درست می‌کند؟","options":["سوپ","پیتزا","سالاد","ماکارونی"],"correct":1,"explanation_fa":"لورا می‌گوید: «Ich mache heute Abend Pizza für uns.»"}
+{"type":"tf","prompt":"یوناس باید پنیر و گوجه‌فرنگی بخرد.","correct":true,"explanation_fa":"لورا می‌پرسد: «Kannst du bitte Käse und Tomaten kaufen?»"}
+{"type":"tf","prompt":"لورا امروز خودش خرید می‌کند.","correct":false,"explanation_fa":"لورا می‌گوید: «Ich kann heute nicht einkaufen»، یعنی امروز نمی‌تواند خرید کند."}
+{"type":"mcq","prompt":"پول کجاست؟","options":["در کیف لورا","پیش یوناس","روی میز آشپزخانه","کنار در خانه"],"correct":2,"explanation_fa":"لورا می‌گوید: «Auf dem Tisch in der Küche sind 20 Euro.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید لورا چرا نمی‌تواند خرید کند؟","correct_sentence":4,"explanation_fa":"لورا می‌گوید: «denn ich arbeite bis 7 Uhr»، یعنی چون تا ساعت ۷ کار می‌کند."}
+{"type":"order","prompt":"این‌ها را به ترتیب پیام بچین.","items":["لورا می‌گوید پول کجاست.","لورا می‌گوید امشب پیتزا درست می‌کند.","لورا از یوناس می‌خواهد پنیر و گوجه‌فرنگی بخرد.","لورا می‌گوید ساعت ۸ خانه است."],"correct_order":[1,2,3,0],"explanation_fa":"اول «Ich mache heute Abend Pizza»، بعد خرید، بعد «Um 8 Uhr bin ich zu Hause» و آخر جای پول."}
+{"type":"tf","prompt":"لورا تا ساعت ۷ کار می‌کند.","correct":true,"explanation_fa":"لورا می‌گوید: «ich arbeite bis 7 Uhr»."}
+{"type":"tf","prompt":"یوناس باید آب هم بخرد.","correct":false,"explanation_fa":"لورا می‌گوید: «Außerdem brauchen wir noch Cola.»، یعنی کولا لازم دارند، نه آب."}
+listening A:
+{"type":"num","prompt":"لورا از ساعت چند خانه است؟","answer":"8","accepted":["8","acht"],"explanation_fa":"لورا می‌گوید: «Um 8 Uhr bin ich zu Hause.»"}
+{"type":"mcq","prompt":"یوناس غیر از پنیر و گوجه‌فرنگی چه بخرد؟","options":["آبمیوه","آب","کولا","شیر"],"correct":2,"explanation_fa":"لورا می‌گوید: «Außerdem brauchen wir noch Cola.»"}
+{"type":"tf","prompt":"لورا برای خودش و یوناس پیتزا درست می‌کند.","correct":true,"explanation_fa":"لورا می‌گوید: «Ich mache heute Abend Pizza für uns.»، یعنی برای هر دوشان."}
+{"type":"tf","prompt":"لورا الان در خانه است.","correct":false,"explanation_fa":"لورا می‌گوید تا ساعت ۷ کار می‌کند: «ich arbeite bis 7 Uhr»."}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"num","prompt":"روی میز آشپزخانه چند یورو هست؟","answer":"20","accepted":["20","zwanzig"],"explanation_fa":"لورا می‌گوید: «Auf dem Tisch in der Küche sind 20 Euro.»"}
+{"type":"tf","prompt":"یوناس باید خرید کند.","correct":true,"explanation_fa":"لورا می‌پرسد: «Kannst du bitte Käse und Tomaten kaufen?»، چون خودش نمی‌تواند."}
+{"type":"tf","prompt":"لورا تا ساعت ۸ کار می‌کند.","correct":false,"explanation_fa":"لورا می‌گوید: «ich arbeite bis 7 Uhr»، یعنی تا ساعت ۷؛ ساعت ۸ خانه است."}

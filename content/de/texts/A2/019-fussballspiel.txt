@@ -1,0 +1,28 @@
+code: de-a2-t019
+title: Das Spiel am Samstag
+band: 1
+kind: voice_message
+key_words: verlieren, gewinnen, mitbringen
+sentences:
+- Hallo Leon, hier ist Felix. | سلام لئون، فلیکس هستم.
+- Schade, dass du gestern nicht beim Spiel warst. | حیف که دیروز در بازی نبودی.
+- Bist du wieder gesund? | دوباره خوب شدی؟
+- Wir haben leider verloren, eins zu drei. | متأسفانه باختیم، یک بر سه.
+- Aber am Samstag spielen wir wieder, und ich hoffe, wir gewinnen. | ولی شنبه دوباره بازی داریم و امیدوارم ببریم.
+- Wir treffen uns um 14 Uhr am Bahnhof. | ساعت ۱۴ دم ایستگاه قطار همدیگر را می‌بینیم. | tts: Wir treffen uns um vierzehn Uhr am Bahnhof.
+- Bring bitte deine Schuhe und eine Flasche Wasser mit. | لطفاً کفش‌هایت و یک بطری آب با خودت بیاور.
+- Bis Samstag! | تا شنبه!
+reading A:
+{"type":"mcq","prompt":"تیم فلیکس دیروز چه کرد؟","options":["برد","باخت","مساوی کرد","بازی نکرد"],"correct":1,"explanation_fa":"فلیکس می‌گوید: «Wir haben leider verloren.»"}
+{"type":"tf","prompt":"لئون دیروز در بازی بود.","correct":false,"explanation_fa":"فلیکس می‌گوید: «Schade, dass du gestern nicht beim Spiel warst.»"}
+{"type":"tf","prompt":"بازی بعدی شنبه است.","correct":true,"explanation_fa":"فلیکس می‌گوید: «Aber am Samstag spielen wir wieder.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید لئون چه چیزهایی با خودش بیاورد؟","correct_sentence":6,"explanation_fa":"فلیکس می‌گوید: «Bring bitte deine Schuhe und eine Flasche Wasser mit.»"}
+{"type":"match","prompt":"هر چیز را به جوابش وصل کن.","left":["جای قرار","ساعت قرار","نتیجه بازی دیروز"],"right":["یک بر سه","ایستگاه قطار","پارک","ساعت ۱۴"],"pairs":[[0,1],[1,3],[2,0]],"explanation_fa":"قرار «um 14 Uhr am Bahnhof» است و نتیجه دیروز «eins zu drei» بود."}
+listening A:
+{"type":"num","prompt":"شنبه ساعت چند همدیگر را می‌بینند؟","answer":"14","accepted":["14","14 Uhr","vierzehn"],"explanation_fa":"فلیکس می‌گوید: «Wir treffen uns um 14 Uhr am Bahnhof.»"}
+{"type":"mcq","prompt":"نتیجه بازی دیروز چه بود؟","options":["سه بر یک","یک بر یک","یک بر سه","دو بر سه"],"correct":2,"explanation_fa":"فلیکس می‌گوید: «Wir haben leider verloren, eins zu drei.»"}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"tf","prompt":"فلیکس امیدوار است که شنبه ببرند.","correct":true,"explanation_fa":"فلیکس می‌گوید: «ich hoffe, wir gewinnen»."}
+{"type":"tf","prompt":"قرار شنبه در پارک است.","correct":false,"explanation_fa":"فلیکس می‌گوید قرار در ایستگاه قطار است: «am Bahnhof»."}

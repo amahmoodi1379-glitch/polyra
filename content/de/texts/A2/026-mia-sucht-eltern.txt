@@ -1,0 +1,29 @@
+code: de-a2-t026
+title: Mia sucht ihre Eltern
+band: 1
+kind: announcement
+key_words: blond, Brille, dunkel
+sentences:
+- Hier ist eine wichtige Information. | یک خبر مهم داریم.
+- Die kleine Mia sucht ihre Eltern. | میای کوچولو دنبال پدر و مادرش می‌گردد.
+- Mia ist vier Jahre alt. | میا چهار سال دارد.
+- Ihre Haare sind blond, und sie trägt eine Brille. | موهایش بور است و عینک می‌زند.
+- Sie trägt auch eine rote Jacke und eine dunkle Hose. | یک کاپشن قرمز و یک شلوار تیره هم پوشیده است.
+- Mia wartet jetzt an Kasse 3. | میا حالا کنار صندوق ۳ منتظر است. | tts: Mia wartet jetzt an Kasse drei.
+- Die Eltern von Mia, bitte kommen Sie zu Kasse 3. | پدر و مادر میا، لطفاً به صندوق ۳ بیایید. | tts: Die Eltern von Mia, bitte kommen Sie zu Kasse drei.
+- Vielen Dank! | خیلی ممنون!
+reading A:
+{"type":"mcq","prompt":"میا چند سال دارد؟","options":["سه سال","چهار سال","پنج سال","شش سال"],"correct":1,"explanation_fa":"در اعلام آمده: «Mia ist vier Jahre alt.»"}
+{"type":"tf","prompt":"میا عینک می‌زند.","correct":true,"explanation_fa":"در اعلام آمده: «sie trägt eine Brille»."}
+{"type":"tf","prompt":"موهای میا تیره است.","correct":false,"explanation_fa":"در اعلام آمده: «Ihre Haare sind blond»، یعنی موهایش بور است."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید میا حالا کجا منتظر است؟","correct_sentence":5,"explanation_fa":"در اعلام آمده: «Mia wartet jetzt an Kasse 3.»"}
+{"type":"match","prompt":"هر چیز را به رنگش وصل کن.","left":["موهای میا","کاپشن میا","شلوار میا"],"right":["تیره","بور","سفید","قرمز"],"pairs":[[0,1],[1,3],[2,0]],"explanation_fa":"موهایش «blond»، کاپشنش «rot» و شلوارش «dunkel» است."}
+listening A:
+{"type":"num","prompt":"میا کنار صندوق شماره چند منتظر است؟","answer":"3","accepted":["3","drei","Kasse 3"],"explanation_fa":"در اعلام آمده: «Mia wartet jetzt an Kasse 3.»"}
+{"type":"mcq","prompt":"میا دنبال چه کسی می‌گردد؟","options":["پدر و مادرش","مادربزرگش","برادرش","معلمش"],"correct":0,"explanation_fa":"در اعلام آمده: «Die kleine Mia sucht ihre Eltern.»"}
+{"type":"tf","prompt":"کاپشن میا آبی است.","correct":false,"explanation_fa":"در اعلام آمده: «eine rote Jacke»، یعنی کاپشن قرمز."}
+{"type":"tf","prompt":"میا چهار سال دارد.","correct":true,"explanation_fa":"در اعلام آمده: «Mia ist vier Jahre alt.»"}
+listening B:
+{"type":"dict","sentence":1}
+{"type":"mcq","prompt":"این اعلام از پدر و مادر میا چه می‌خواهد؟","options":["زنگ بزنند","بیرون منتظر بمانند","به صندوق ۳ بیایند","پیش پلیس بروند"],"correct":2,"explanation_fa":"در اعلام آمده: «bitte kommen Sie zu Kasse 3»."}

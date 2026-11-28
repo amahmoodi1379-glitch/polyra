@@ -1,0 +1,29 @@
+code: de-a2-t023
+title: Ein Konzert am Samstag
+band: 1
+kind: voice_message
+key_words: ausgehen, auf die Kinder aufpassen, vorbeikommen, zurückkommen
+sentences:
+- Hallo Mama, hier ist Julia. | سلام مامان، جولیا هستم.
+- Tom und ich möchten am Samstag ausgehen. | من و تام می‌خواهیم شنبه بیرون برویم.
+- Wir haben Karten für ein Konzert. | برای یک کنسرت بلیت داریم.
+- Kannst du am Abend auf die Kinder aufpassen? | می‌توانی شب مراقب بچه‌ها باشی؟
+- Du kannst um sechs vorbeikommen. | می‌توانی ساعت شش بیایی.
+- Um acht gehen die Kinder ins Bett. | بچه‌ها ساعت هشت به رختخواب می‌روند.
+- Wir kommen ungefähr um elf zurück. | ما حدود ساعت یازده برمی‌گردیم.
+- Die Kinder freuen sich bestimmt! | بچه‌ها حتماً خوشحال می‌شوند!
+- Wenn du keine Zeit hast, ruf mich einfach an. | اگر وقت نداری، فقط به من زنگ بزن.
+reading A:
+{"type":"mcq","prompt":"جولیا از مادرش چه می‌خواهد؟","options":["با آن‌ها به کنسرت بیاید","مراقب بچه‌ها باشد","برای بچه‌ها غذا بخرد","بچه‌ها را به مدرسه ببرد"],"correct":1,"explanation_fa":"جولیا می‌پرسد: «Kannst du am Abend auf die Kinder aufpassen?»"}
+{"type":"tf","prompt":"جولیا و تام شنبه به کنسرت می‌روند.","correct":true,"explanation_fa":"جولیا می‌گوید: «Wir haben Karten für ein Konzert.»"}
+{"type":"tf","prompt":"بچه‌ها ساعت ده به رختخواب می‌روند.","correct":false,"explanation_fa":"جولیا می‌گوید: «Um acht gehen die Kinder ins Bett»، یعنی ساعت هشت."}
+reading B:
+{"type":"match","prompt":"هر ساعت را به کارش وصل کن.","left":["ساعت شش","ساعت هشت","ساعت یازده"],"right":["بچه‌ها به رختخواب می‌روند","جولیا و تام برمی‌گردند","مادر جولیا می‌آید","بچه‌ها به مدرسه می‌روند"],"pairs":[[0,2],[1,0],[2,1]],"explanation_fa":"مادر «um sechs» می‌آید، بچه‌ها «um acht» می‌خوابند و جولیا و تام «um elf» برمی‌گردند."}
+{"type":"find","prompt":"کدام جمله می‌گوید مادر اگر وقت ندارد چه کند؟","correct_sentence":8,"explanation_fa":"جولیا می‌گوید: «Wenn du keine Zeit hast, ruf mich einfach an.»"}
+listening A:
+{"type":"mcq","prompt":"جولیا و تام شنبه کجا می‌روند؟","options":["سینما","رستوران","مهمانی","کنسرت"],"correct":3,"explanation_fa":"جولیا می‌گوید: «Wir haben Karten für ein Konzert.»"}
+{"type":"num","prompt":"جولیا و تام حدوداً ساعت چند برمی‌گردند؟","answer":"11","accepted":["11","23","elf"],"explanation_fa":"جولیا می‌گوید: «Wir kommen ungefähr um elf zurück.»"}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"tf","prompt":"مادر جولیا می‌تواند ساعت شش بیاید.","correct":true,"explanation_fa":"جولیا می‌گوید: «Du kannst um sechs vorbeikommen.»"}
+{"type":"tf","prompt":"جولیا و تام ساعت هشت برمی‌گردند.","correct":false,"explanation_fa":"جولیا می‌گوید: «Wir kommen ungefähr um elf zurück.»"}

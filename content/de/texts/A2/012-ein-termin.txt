@@ -1,0 +1,32 @@
+code: de-a2-t012
+title: Ein Termin beim Arzt
+band: 1
+kind: dialogue
+sentences:
+A: Guten Tag, ich bin Amir Karimi. Mein Rücken tut sehr weh! | روز بخیر، من امیر کریمی هستم. کمرم خیلی درد می‌کند!
+B: Einen Augenblick, ich sehe mal in den Kalender. | یک لحظه، نگاهی به تقویم می‌اندازم.
+B: Morgen ist leider ein Feiertag. Können Sie übermorgen kommen? | متأسفانه فردا تعطیل رسمی است. می‌توانید پس‌فردا بیایید؟
+A: Übermorgen arbeite ich bis 16 Uhr. | پس‌فردا تا ساعت ۱۶ کار می‌کنم. | tts: Übermorgen arbeite ich bis sechzehn Uhr.
+B: Kein Problem. Um 17 Uhr ist noch ein Termin frei. | مشکلی نیست. ساعت ۱۷ هنوز یک وقت خالی هست. | tts: Kein Problem. Um siebzehn Uhr ist noch ein Termin frei.
+A: Das geht. Vielen Dank! | خوب است. خیلی ممنون!
+B: Gern. Die Ärztin nimmt sich dann viel Zeit für Sie. | خواهش می‌کنم. خانم دکتر آن روز برایتان وقت زیادی می‌گذارد.
+reading A:
+{"type":"mcq","prompt":"آقای کریمی چه مشکلی دارد؟","options":["کمردرد","سردرد","دل‌درد","دندان‌درد"],"correct":0,"explanation_fa":"آقای کریمی می‌گوید: «Mein Rücken tut sehr weh!»"}
+{"type":"tf","prompt":"فردا تعطیل رسمی است.","correct":true,"explanation_fa":"گفته می‌شود: «Morgen ist leider ein Feiertag.»"}
+{"type":"tf","prompt":"آقای کریمی پس‌فردا تا ساعت ۱۷ کار می‌کند.","correct":false,"explanation_fa":"آقای کریمی می‌گوید: «Übermorgen arbeite ich bis 16 Uhr.»، یعنی تا ساعت ۱۶."}
+{"type":"mcq","prompt":"وقت آقای کریمی کی است؟","options":["فردا ساعت ۱۶","پس‌فردا ساعت ۱۶","فردا ساعت ۱۷","پس‌فردا ساعت ۱۷"],"correct":3,"explanation_fa":"پس‌فردا «Um 17 Uhr ist noch ein Termin frei» و آقای کریمی می‌گوید: «Das geht.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید کسی تقویم را نگاه می‌کند؟","correct_sentence":1,"explanation_fa":"گفته می‌شود: «ich sehe mal in den Kalender»، یعنی نگاهی به تقویم می‌اندازم."}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["گفته می‌شود فردا تعطیل است.","آقای کریمی می‌گوید کمرش درد می‌کند.","یک وقت برای ساعت ۱۷ پیشنهاد می‌شود.","آقای کریمی می‌گوید تا ساعت ۱۶ کار دارد."],"correct_order":[1,0,3,2],"explanation_fa":"اول «Mein Rücken tut sehr weh»، بعد «Morgen ist leider ein Feiertag»، بعد «bis 16 Uhr» و بعد «Um 17 Uhr ist noch ein Termin frei»."}
+{"type":"tf","prompt":"خانم دکتر برای آقای کریمی وقت زیادی می‌گذارد.","correct":true,"explanation_fa":"گفته می‌شود: «Die Ärztin nimmt sich dann viel Zeit für Sie.»"}
+{"type":"tf","prompt":"آقای کریمی وقت ساعت ۱۷ را نمی‌خواهد.","correct":false,"explanation_fa":"آقای کریمی می‌گوید: «Das geht. Vielen Dank!»، یعنی آن وقت را قبول می‌کند."}
+listening A:
+{"type":"num","prompt":"وقت آقای کریمی ساعت چند است؟","answer":"17","accepted":["17","siebzehn","5"],"explanation_fa":"گفته می‌شود: «Um 17 Uhr ist noch ein Termin frei.»"}
+{"type":"mcq","prompt":"چرا آقای کریمی فردا نمی‌تواند پیش دکتر برود؟","options":["چون دکتر مریض است","چون فردا تعطیل رسمی است","چون خودش فردا کار دارد","چون دکتر در سفر است"],"correct":1,"explanation_fa":"گفته می‌شود: «Morgen ist leider ein Feiertag.»"}
+{"type":"tf","prompt":"کمر آقای کریمی خیلی درد می‌کند.","correct":true,"explanation_fa":"آقای کریمی می‌گوید: «Mein Rücken tut sehr weh!»"}
+{"type":"tf","prompt":"آقای کریمی پس‌فردا کار ندارد.","correct":false,"explanation_fa":"آقای کریمی می‌گوید: «Übermorgen arbeite ich bis 16 Uhr.»"}
+listening B:
+{"type":"dict","sentence":1}
+{"type":"num","prompt":"آقای کریمی پس‌فردا تا ساعت چند کار می‌کند؟","answer":"16","accepted":["16","sechzehn","4"],"explanation_fa":"آقای کریمی می‌گوید: «Übermorgen arbeite ich bis 16 Uhr.»"}
+{"type":"tf","prompt":"آقای کریمی پس‌فردا پیش دکتر می‌رود.","correct":true,"explanation_fa":"پرسیده می‌شود «Können Sie übermorgen kommen?» و آقای کریمی وقت ساعت ۱۷ را قبول می‌کند: «Das geht.»"}
+{"type":"tf","prompt":"آقای کریمی فردا ساعت ۱۷ پیش دکتر می‌رود.","correct":false,"explanation_fa":"گفته می‌شود: «Morgen ist leider ein Feiertag.»؛ وقت او پس‌فرداست."}

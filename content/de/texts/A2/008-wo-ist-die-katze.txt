@@ -1,0 +1,32 @@
+code: de-a2-t008
+title: Wo ist die Katze?
+band: 1
+kind: dialogue
+sentences:
+A: Mama, wo ist die Katze? Ich suche sie überall. | مامان، گربه کجاست؟ همه‌جا دنبالش می‌گردم.
+B: Ist sie oben im Schlafzimmer? | بالا، توی اتاق خواب نیست؟
+A: Nein, da war ich gerade. | نه، همین الان آنجا بودم.
+B: Und unten in der Küche? Sie liegt oft unter dem Tisch. | پایین توی آشپزخانه چی؟ اغلب زیر میز دراز می‌کشد.
+A: Da ist sie auch nicht. Ist sie weg? | آنجا هم نیست. یعنی رفته؟
+B: Das glaube ich nicht. Vielleicht ist sie draußen. | فکر نمی‌کنم. شاید بیرون است.
+A: Da! Sie sitzt ganz hinten im Garten. | آنجا! ته حیاط نشسته.
+B: Und ab jetzt bleibt sie drinnen! | و از حالا به بعد توی خانه می‌ماند!
+reading A:
+{"type":"mcq","prompt":"بچه دنبال چه می‌گردد؟","options":["سگ","کلید","گربه","توپ"],"correct":2,"explanation_fa":"بچه می‌پرسد: «Mama, wo ist die Katze?»"}
+{"type":"tf","prompt":"گربه در اتاق خواب است.","correct":false,"explanation_fa":"بچه می‌گوید: «Nein, da war ich gerade.»؛ گربه آنجا نیست."}
+{"type":"tf","prompt":"گربه اغلب زیر میز آشپزخانه دراز می‌کشد.","correct":true,"explanation_fa":"مامان درباره آشپزخانه می‌گوید: «Sie liegt oft unter dem Tisch.»"}
+{"type":"mcq","prompt":"آخر گربه را کجا پیدا می‌کنند؟","options":["در آشپزخانه","ته حیاط","در اتاق خواب","زیر میز"],"correct":1,"explanation_fa":"بچه می‌گوید: «Sie sitzt ganz hinten im Garten.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید آخر گربه را کجا دیدند؟","correct_sentence":6,"explanation_fa":"بچه می‌گوید: «Da! Sie sitzt ganz hinten im Garten.»"}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["مامان می‌گوید شاید گربه بیرون باشد.","بچه می‌گوید همه‌جا را گشته است.","بچه گربه را ته حیاط می‌بیند.","مامان آشپزخانه را پیشنهاد می‌کند."],"correct_order":[1,3,0,2],"explanation_fa":"اول «Ich suche sie überall»، بعد «unten in der Küche»، بعد «Vielleicht ist sie draußen» و آخر «ganz hinten im Garten»."}
+{"type":"tf","prompt":"بچه همین الان در اتاق خواب بوده است.","correct":true,"explanation_fa":"بچه درباره اتاق خواب می‌گوید: «da war ich gerade»."}
+{"type":"tf","prompt":"مامان فکر می‌کند گربه رفته است.","correct":false,"explanation_fa":"بچه می‌پرسد «Ist sie weg?» و مامان می‌گوید: «Das glaube ich nicht.»"}
+listening A:
+{"type":"mcq","prompt":"مامان اول کجا را پیشنهاد می‌کند؟","options":["آشپزخانه","حیاط","اتاق خواب","حمام"],"correct":2,"explanation_fa":"مامان اول می‌پرسد: «Ist sie oben im Schlafzimmer?»"}
+{"type":"tf","prompt":"گربه بیرون از خانه است.","correct":true,"explanation_fa":"بچه گربه را پیدا می‌کند: «Sie sitzt ganz hinten im Garten.»"}
+{"type":"tf","prompt":"گربه زیر میز آشپزخانه است.","correct":false,"explanation_fa":"بچه درباره آشپزخانه می‌گوید: «Da ist sie auch nicht.»"}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"mcq","prompt":"مامان آخر چه می‌گوید؟","options":["گربه از حالا باید توی خانه بماند","گربه باید همیشه در حیاط بماند","بچه باید دوباره دنبالش بگردد","گربه باید در آشپزخانه بخوابد"],"correct":0,"explanation_fa":"مامان می‌گوید: «Und ab jetzt bleibt sie drinnen!»"}
+{"type":"tf","prompt":"بچه همه‌جا دنبال گربه گشته است.","correct":true,"explanation_fa":"بچه می‌گوید: «Ich suche sie überall.»"}
+{"type":"tf","prompt":"اتاق خواب در طبقه پایین است.","correct":false,"explanation_fa":"مامان می‌گوید: «oben im Schlafzimmer»، یعنی اتاق خواب بالاست."}

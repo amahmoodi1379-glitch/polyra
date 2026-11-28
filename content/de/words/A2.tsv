@@ -415,11 +415,15 @@ Bohne	noun	die	Bohnen	لوبیا	لوبیا	food	checked:level
 Pilz	noun	der	Pilze	قارچ	قارچ	food	checked:level
 Rindfleisch	noun	das		گوشت گاو	گوشت گاو	food	number:sg_only	checked:level
 Lammfleisch	noun	das		گوشت بره	گوشت بره	food	number:sg_only
+Schweinefleisch	noun	das		گوشت خوک	گوشت خوک	food	number:sg_only	checked:level
+Schinken	noun	der	Schinken	ژامبون	ژامبون	food
 Hackfleisch	noun	das		گوشت چرخ‌کرده	گوشت چرخ‌کرده	food	number:sg_only	checked:level
 Pommes	noun	die		سیب‌زمینی سرخ‌کرده	سیب‌زمینی سرخ‌کرده	food	number:pl_only
 Mineralwasser	noun	das	Mineralwässer	آب معدنی	آب معدنی	drink	checked:level
 Limonade	noun	die	Limonaden	لیموناد، نوشابه	لیموناد	drink	note:ریشه‌اش «لیمو»ی فارسی است (از راه عربی و فرانسوی).
 Kakao	noun	der	Kakaos	کاکائو	کاکائو	drink	checked:level
+Wein	noun	der	Weine	شراب	شراب	drink
+Bier	noun	das	Biere	آبجو	آبجو	drink
 Gericht	noun	das	Gerichte	غذا (یک نوع خوراک)، خوراک	خوراک	food
 Vorspeise	noun	die	Vorspeisen	پیش‌غذا	پیش‌غذا	food	checked:level
 Hauptgericht	noun	das	Hauptgerichte	غذای اصلی	غذای اصلی	food

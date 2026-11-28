@@ -1,0 +1,29 @@
+code: de-a2-t017
+title: Das Handy funktioniert nicht
+band: 1
+kind: dialogue
+key_words: funktionieren, reparieren, benutzen
+sentences:
+A: Guten Tag! Was kann ich für Sie tun? | روز بخیر! چه کاری می‌توانم برایتان بکنم؟
+B: Mein Handy funktioniert nicht. Ich kann nicht telefonieren. | گوشی‌ام کار نمی‌کند. نمی‌توانم تلفن بزنم.
+A: Darf ich mal sehen? Ja, das kann ich reparieren. | اجازه هست یک نگاهی بیندازم؟ بله، این را می‌توانم تعمیر کنم.
+B: Wann ist es fertig? | کی آماده می‌شود؟
+A: Am Donnerstag. Das kostet ungefähr 60 Euro. | پنجشنبه. حدود ۶۰ یورو هزینه دارد. | tts: Am Donnerstag. Das kostet ungefähr sechzig Euro.
+B: Am Donnerstag? Ich brauche es aber jeden Tag. | پنجشنبه؟ ولی من هر روز لازمش دارم.
+A: Kein Problem. Sie{Sie-3} können so lange ein altes Handy von uns benutzen. | مشکلی نیست. تا آن موقع می‌توانید از یک گوشی قدیمی ما استفاده کنید.
+B: Super, danke! | عالی است، ممنون!
+reading A:
+{"type":"mcq","prompt":"مشکل گوشی مشتری چیست؟","options":["نمی‌شود با آن عکس گرفت","نمی‌شود با آن تلفن زد","نمی‌شود با آن ایمیل زد","نمی‌شود با آن موسیقی گوش داد"],"correct":1,"explanation_fa":"مشتری می‌گوید: «Ich kann nicht telefonieren.»"}
+{"type":"tf","prompt":"فروشنده می‌تواند گوشی را تعمیر کند.","correct":true,"explanation_fa":"فروشنده می‌گوید: «Ja, das kann ich reparieren.»"}
+{"type":"tf","prompt":"گوشی فردا آماده می‌شود.","correct":false,"explanation_fa":"فروشنده می‌گوید گوشی پنجشنبه آماده است: «Am Donnerstag.»"}
+reading B:
+{"type":"order","prompt":"این کارها را به ترتیب گفتگو مرتب کن.","items":["فروشنده قیمت را می‌گوید.","مشتری مشکل گوشی را می‌گوید.","فروشنده یک گوشی قدیمی پیشنهاد می‌کند.","فروشنده می‌گوید گوشی را تعمیر می‌کند."],"correct_order":[1,3,0,2],"explanation_fa":"اول مشتری مشکل را می‌گوید، بعد فروشنده می‌گوید «das kann ich reparieren»، بعد قیمت را می‌گوید و آخر از «ein altes Handy» حرف می‌زند."}
+{"type":"find","prompt":"کدام جمله می‌گوید مشتری تا آماده شدن گوشی چه کار می‌تواند بکند؟","correct_sentence":6,"explanation_fa":"فروشنده می‌گوید: «Sie können so lange ein altes Handy von uns benutzen.»"}
+{"type":"mcq","prompt":"مشتری گوشی‌اش را چند وقت یک بار لازم دارد؟","options":["فقط آخر هفته","فقط پنجشنبه‌ها","هر روز","فقط شب‌ها"],"correct":2,"explanation_fa":"مشتری می‌گوید: «Ich brauche es aber jeden Tag.»"}
+listening A:
+{"type":"num","prompt":"تعمیر گوشی حدوداً چند یورو است؟","answer":"60","accepted":["60","60 Euro","sechzig"],"explanation_fa":"فروشنده می‌گوید: «Das kostet ungefähr 60 Euro.»"}
+{"type":"mcq","prompt":"گوشی کی آماده می‌شود؟","options":["سه‌شنبه","چهارشنبه","پنجشنبه","جمعه"],"correct":2,"explanation_fa":"فروشنده می‌گوید: «Am Donnerstag.»"}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"tf","prompt":"فروشنده به مشتری یک گوشی قدیمی می‌دهد.","correct":true,"explanation_fa":"فروشنده می‌گوید: «Sie können so lange ein altes Handy von uns benutzen.»"}
+{"type":"tf","prompt":"مشتری خودش گوشی را تعمیر می‌کند.","correct":false,"explanation_fa":"فروشنده می‌گوید: «das kann ich reparieren»، یعنی فروشنده آن را تعمیر می‌کند."}

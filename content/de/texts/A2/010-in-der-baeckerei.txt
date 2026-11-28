@@ -1,0 +1,33 @@
+code: de-a2-t010
+title: Ein Tag in der Bäckerei
+band: 1
+kind: dialogue
+sentences:
+A: Frau Becker, Sie arbeiten in einer Bäckerei. Wann beginnt Ihr Tag? | خانم بکر، شما در یک نانوایی کار می‌کنید. روزتان کی شروع می‌شود؟
+B: Normalerweise stehe ich um 3 Uhr auf. | معمولاً ساعت ۳ بیدار می‌شوم. | tts: Normalerweise stehe ich um drei Uhr auf.
+A: So früh! Sind Sie nicht müde? | این‌قدر زود! خسته نیستید؟
+B: Doch, manchmal. Aber ich gehe meistens schon um 8 ins Bett. | چرا، گاهی. ولی بیشتر وقت‌ها ساعت ۸ شب می‌خوابم. | tts: Doch, manchmal. Aber ich gehe meistens schon um acht ins Bett.
+A: Wie viele Brötchen machen Sie? | چند تا نان درست می‌کنید؟
+B: Täglich ungefähr 500! | هر روز حدوداً ۵۰۰ تا! | tts: Täglich ungefähr fünfhundert!
+A: Und mögen Sie Ihre Arbeit? | کارتان را دوست دارید؟
+B: Ja, sehr! Die Leute sind morgens immer so freundlich. | بله، خیلی! مردم صبح‌ها همیشه خیلی مهربان‌اند.
+reading A:
+{"type":"mcq","prompt":"خانم بکر کجا کار می‌کند؟","options":["در رستوران","در سوپرمارکت","در نانوایی","در کافه"],"correct":2,"explanation_fa":"گفته می‌شود: «Sie arbeiten in einer Bäckerei.»"}
+{"type":"tf","prompt":"خانم بکر معمولاً ساعت ۳ بیدار می‌شود.","correct":true,"explanation_fa":"خانم بکر می‌گوید: «Normalerweise stehe ich um 3 Uhr auf.»"}
+{"type":"tf","prompt":"خانم بکر هیچ‌وقت خسته نیست.","correct":false,"explanation_fa":"خانم بکر می‌گوید: «Doch, manchmal.»، یعنی گاهی خسته است."}
+{"type":"mcq","prompt":"خانم بکر بیشتر وقت‌ها ساعت چند می‌خوابد؟","options":["۸ شب","۹ شب","۱۰ شب","۱۱ شب"],"correct":0,"explanation_fa":"خانم بکر می‌گوید: «ich gehe meistens schon um 8 ins Bett»."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید نانوایی هر روز چند نان درست می‌کند؟","correct_sentence":5,"explanation_fa":"خانم بکر می‌گوید: «Täglich ungefähr 500!»"}
+{"type":"match","prompt":"هر ساعت را به کار خانم بکر وصل کن.","left":["ساعت ۳","ساعت ۸ شب"],"right":["می‌خوابد","ناهار می‌خورد","بیدار می‌شود"],"pairs":[[0,2],[1,0]],"explanation_fa":"خانم بکر می‌گوید: «um 3 Uhr auf» و «um 8 ins Bett»."}
+{"type":"tf","prompt":"خانم بکر کارش را دوست دارد.","correct":true,"explanation_fa":"خانم بکر به سؤال «mögen Sie Ihre Arbeit?» می‌گوید: «Ja, sehr!»"}
+{"type":"tf","prompt":"به گفته خانم بکر، مردم صبح‌ها بداخلاق‌اند.","correct":false,"explanation_fa":"خانم بکر می‌گوید: «Die Leute sind morgens immer so freundlich.»"}
+listening A:
+{"type":"num","prompt":"خانم بکر ساعت چند بیدار می‌شود؟","answer":"3","accepted":["3","drei"],"explanation_fa":"خانم بکر می‌گوید: «Normalerweise stehe ich um 3 Uhr auf.»"}
+{"type":"mcq","prompt":"به گفته خانم بکر، مردم صبح‌ها چطورند؟","options":["خیلی خسته‌اند","خیلی مهربان‌اند","خیلی عجله دارند","خیلی ساکت‌اند"],"correct":1,"explanation_fa":"خانم بکر می‌گوید: «Die Leute sind morgens immer so freundlich.»"}
+{"type":"tf","prompt":"خانم بکر گاهی خسته است.","correct":true,"explanation_fa":"به سؤال «Sind Sie nicht müde?» می‌گوید: «Doch, manchmal.»"}
+{"type":"tf","prompt":"خانم بکر شب‌ها دیر می‌خوابد.","correct":false,"explanation_fa":"خانم بکر می‌گوید: «ich gehe meistens schon um 8 ins Bett»، یعنی زود می‌خوابد."}
+listening B:
+{"type":"dict","sentence":6}
+{"type":"num","prompt":"نانوایی هر روز حدوداً چند نان درست می‌کند؟","answer":"500","accepted":["500","fünfhundert"],"explanation_fa":"خانم بکر می‌گوید: «Täglich ungefähr 500!»"}
+{"type":"tf","prompt":"خانم بکر در یک رستوران کار می‌کند.","correct":false,"explanation_fa":"گفته می‌شود: «Sie arbeiten in einer Bäckerei.»، یعنی در نانوایی."}
+{"type":"tf","prompt":"خانم بکر بیشتر وقت‌ها زود می‌خوابد.","correct":true,"explanation_fa":"خانم بکر می‌گوید: «ich gehe meistens schon um 8 ins Bett»."}

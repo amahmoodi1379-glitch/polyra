@@ -1,0 +1,28 @@
+code: de-a2-t024
+title: Paul ist krank
+band: 1
+kind: dialogue
+key_words: sich fühlen, sich ausruhen, Sorge
+sentences:
+A: Hallo Paul! Wie fühlst du dich heute? | سلام پاول! امروز حالت چطور است؟
+B: Nicht so gut. Ich habe noch Fieber. | خیلی خوب نیست. هنوز تب دارم.
+A: Warst du schon beim Arzt? | پیش دکتر رفته‌ای؟
+B: Ja. Ich muss eine Woche zu Hause bleiben und mich ausruhen. | آره. باید یک هفته در خانه بمانم و استراحت کنم.
+A: Keine Sorge, du bist bald wieder gesund. Kann ich dir etwas bringen? | نگران نباش، زود خوب می‌شوی. می‌توانم چیزی برایت بیاورم؟
+B: Ja, gern! Vielleicht Obst und Tee? | آره، ممنون می‌شوم! شاید میوه و چای؟
+A: Klar, ich komme heute Abend vorbei. | حتماً، امشب سری به تو می‌زنم.
+B: Danke, ich freue mich! | ممنون، خوشحال می‌شوم!
+reading A:
+{"type":"mcq","prompt":"پاول چه مشکلی دارد؟","options":["سرفه می‌کند","تب دارد","پایش درد می‌کند","دندانش درد می‌کند"],"correct":1,"explanation_fa":"پاول می‌گوید: «Ich habe noch Fieber.»"}
+{"type":"tf","prompt":"پاول باید یک هفته در خانه بماند.","correct":true,"explanation_fa":"پاول می‌گوید: «Ich muss eine Woche zu Hause bleiben.»"}
+{"type":"tf","prompt":"پاول هنوز پیش دکتر نرفته است.","correct":false,"explanation_fa":"دوستش می‌پرسد «Warst du schon beim Arzt?» و پاول می‌گوید: «Ja.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید دوست پاول کی پیش او می‌آید؟","correct_sentence":6,"explanation_fa":"دوستش می‌گوید: «Klar, ich komme heute Abend vorbei.»"}
+{"type":"mcq","prompt":"پاول چه چیزی می‌خواهد؟","options":["نان و پنیر","قهوه و کیک","میوه و چای","آب و شکلات"],"correct":2,"explanation_fa":"پاول می‌گوید: «Vielleicht Obst und Tee?»"}
+listening A:
+{"type":"mcq","prompt":"دوست پاول کی پیش او می‌رود؟","options":["امروز ظهر","امشب","فردا صبح","آخر هفته"],"correct":1,"explanation_fa":"دوستش می‌گوید: «ich komme heute Abend vorbei»."}
+{"type":"tf","prompt":"پاول خوشحال است که دوستش می‌آید.","correct":true,"explanation_fa":"پاول می‌گوید: «Danke, ich freue mich!»"}
+{"type":"tf","prompt":"حال پاول امروز خیلی خوب است.","correct":false,"explanation_fa":"پاول می‌گوید: «Nicht so gut. Ich habe noch Fieber.»"}
+listening B:
+{"type":"dict","sentence":1}
+{"type":"mcq","prompt":"پاول باید چه کار کند؟","options":["فردا سر کار برود","به بیمارستان برود","زیاد ورزش کند","در خانه استراحت کند"],"correct":3,"explanation_fa":"پاول می‌گوید: «Ich muss eine Woche zu Hause bleiben und mich ausruhen.»"}

@@ -1,0 +1,28 @@
+code: de-a2-t021
+title: Die Pizza brennt
+band: 1
+kind: dialogue
+key_words: riechen, brennen, aufmachen
+sentences:
+A: Riechst du das? Brennt da etwas? | بویش را حس می‌کنی؟ چیزی دارد می‌سوزد؟
+B: Oh nein, meine Pizza! Ich wollte uns ein schönes Abendessen machen. | وای نه، پیتزای من! می‌خواستم یک شام خوب برایمان درست کنم.
+A: Schnell, mach das Fenster auf! | زود باش، پنجره را باز کن!
+B: Zu spät. Ich habe sie vergessen, und jetzt ist sie ganz schwarz. | دیگر دیر است. فراموشش کردم و حالا کاملاً سیاه شده است.
+A: Und die ganze Wohnung riecht nach Pizza. | و تمام خانه بوی پیتزا می‌دهد.
+B: Entschuldigung! | ببخشید!
+A: Kein Problem. Und was essen wir jetzt? | مشکلی نیست. حالا چه بخوریم؟
+B: Wir bestellen eine Pizza. Ich bezahle! | یک پیتزا سفارش می‌دهیم. من حساب می‌کنم!
+reading A:
+{"type":"mcq","prompt":"چه چیزی سوخته است؟","options":["کیک","پیتزا","نان","سوپ"],"correct":1,"explanation_fa":"یکی از آن‌ها می‌گوید: «Oh nein, meine Pizza!» و بعد: «jetzt ist sie ganz schwarz»."}
+{"type":"tf","prompt":"آشپز می‌خواست شام درست کند.","correct":true,"explanation_fa":"آشپز می‌گوید: «Ich wollte uns ein schönes Abendessen machen.»"}
+{"type":"tf","prompt":"پیتزا هنوز خوب است.","correct":false,"explanation_fa":"آشپز می‌گوید: «Zu spät … jetzt ist sie ganz schwarz.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید چرا پیتزا سوخته است؟","correct_sentence":3,"explanation_fa":"آشپز می‌گوید: «Ich habe sie vergessen»، یعنی پیتزا را فراموش کرده است."}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو مرتب کن.","items":["تصمیم می‌گیرند پیتزا سفارش بدهند.","یکی بوی سوختن را حس می‌کند.","آشپز می‌گوید پیتزا را فراموش کرده است.","یکی می‌گوید پنجره را باز کن."],"correct_order":[1,3,2,0],"explanation_fa":"اول «Riechst du das?»، بعد «mach das Fenster auf!»، بعد «Ich habe sie vergessen» و آخر «Wir bestellen eine Pizza.»"}
+listening A:
+{"type":"mcq","prompt":"اول از آشپز چه خواسته می‌شود؟","options":["در را ببندد","پیتزا بخرد","پنجره را باز کند","به آتش‌نشانی زنگ بزند"],"correct":2,"explanation_fa":"دوستش می‌گوید: «Schnell, mach das Fenster auf!»"}
+{"type":"tf","prompt":"تمام خانه بوی پیتزا می‌دهد.","correct":true,"explanation_fa":"گفته می‌شود: «Und die ganze Wohnung riecht nach Pizza.»"}
+{"type":"tf","prompt":"دوست آشپز پول پیتزای تازه را می‌دهد.","correct":false,"explanation_fa":"آشپز خودش می‌گوید: «Ich bezahle!»"}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"mcq","prompt":"آخر برای شام چه کار می‌کنند؟","options":["به رستوران می‌روند","نان و پنیر می‌خورند","شام نمی‌خورند","پیتزا سفارش می‌دهند"],"correct":3,"explanation_fa":"آشپز می‌گوید: «Wir bestellen eine Pizza.»"}

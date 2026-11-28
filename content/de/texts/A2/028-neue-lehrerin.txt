@@ -1,0 +1,28 @@
+code: de-a2-t028
+title: Die neue Lehrerin
+band: 1
+kind: dialogue
+key_words: geduldig, nervös, fleißig
+sentences:
+A: Lena, wie findest du die neue Lehrerin? | لنا، نظرت درباره معلم جدید چیست؟
+B: Super! Sie ist sehr geduldig. | عالی است! خیلی صبور است.
+A: Ja, und sie erklärt alles noch einmal, wenn wir etwas nicht verstehen. | آره، و وقتی چیزی را نمی‌فهمیم، همه چیز را دوباره توضیح می‌دهد.
+B: Beim Test gestern war ich sehr nervös. | دیروز سر امتحان خیلی استرس داشتم.
+A: Und? Wie war der Test? | خب؟ امتحان چطور بود؟
+B: Gut! Er war leichter als der letzte Test. | خوب بود! از امتحان قبلی آسان‌تر بود.
+A: Siehst du? Du bist klug und fleißig. | دیدی؟ تو باهوش و سخت‌کوشی.
+B: Ich habe aber auch viel gelernt. | ولی خیلی هم درس خوانده بودم.
+reading A:
+{"type":"mcq","prompt":"معلم جدید وقتی بچه‌ها چیزی را نمی‌فهمند، چه کار می‌کند؟","options":["عصبانی می‌شود","دوباره توضیح می‌دهد","امتحان می‌گیرد","کلاس را تمام می‌کند"],"correct":1,"explanation_fa":"گفته می‌شود: «sie erklärt alles noch einmal, wenn wir etwas nicht verstehen»."}
+{"type":"tf","prompt":"لنا دیروز سر امتحان استرس داشت.","correct":true,"explanation_fa":"لنا می‌گوید: «Beim Test gestern war ich sehr nervös.»"}
+{"type":"tf","prompt":"امتحان دیروز از امتحان قبلی سخت‌تر بود.","correct":false,"explanation_fa":"لنا می‌گوید: «Er war leichter als der letzte Test»، یعنی آسان‌تر بود."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید لنا برای امتحان زیاد درس خوانده بود؟","correct_sentence":7,"explanation_fa":"لنا می‌گوید: «Ich habe aber auch viel gelernt.»"}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو مرتب کن.","items":["دوست لنا می‌پرسد امتحان چطور بود.","لنا می‌گوید زیاد درس خوانده است.","دوست لنا درباره معلم جدید می‌پرسد.","لنا می‌گوید سر امتحان استرس داشت."],"correct_order":[2,3,0,1],"explanation_fa":"اول «wie findest du die neue Lehrerin?»، بعد «war ich sehr nervös»، بعد «Wie war der Test?» و آخر «Ich habe aber auch viel gelernt.»"}
+listening A:
+{"type":"mcq","prompt":"امتحان دیروز چطور بود؟","options":["سخت‌تر از امتحان قبلی","مثل امتحان قبلی","آسان‌تر از امتحان قبلی","خیلی بدتر از امتحان قبلی"],"correct":2,"explanation_fa":"لنا می‌گوید: «Er war leichter als der letzte Test.»"}
+{"type":"tf","prompt":"لنا معلم جدید را دوست دارد.","correct":true,"explanation_fa":"لنا درباره معلم جدید می‌گوید: «Super! Sie ist sehr geduldig.»"}
+{"type":"tf","prompt":"معلم جدید کم‌حوصله است.","correct":false,"explanation_fa":"لنا می‌گوید: «Sie ist sehr geduldig»، یعنی خیلی صبور است."}
+listening B:
+{"type":"dict","sentence":4}
+{"type":"mcq","prompt":"دوست لنا درباره او چه می‌گوید؟","options":["تنبل است","بی‌دقت است","زیاد حرف می‌زند","باهوش و سخت‌کوش است"],"correct":3,"explanation_fa":"دوستش می‌گوید: «Du bist klug und fleißig.»"}

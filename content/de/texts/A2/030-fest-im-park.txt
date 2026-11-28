@@ -1,0 +1,29 @@
+code: de-a2-t030
+title: Das Fest im Park
+band: 1
+kind: ad
+key_words: Jugendliche, Erwachsene, Gast
+sentences:
+- Das große Fest im Park! | جشن بزرگ در پارک!
+- Am Samstag feiern wir von 12 bis 22 Uhr. | شنبه از ساعت ۱۲ تا ۲۲ جشن می‌گیریم. | tts: Am Samstag feiern wir von zwölf bis zweiundzwanzig Uhr.
+- Es gibt Musik, Spiele, Essen und Getränke. | موسیقی، بازی، غذا و نوشیدنی هست.
+- Kinder und Jugendliche können um 15 Uhr Fußball spielen. | بچه‌ها و نوجوان‌ها ساعت ۱۵ می‌توانند فوتبال بازی کنند. | tts: Kinder und Jugendliche können um fünfzehn Uhr Fußball spielen.
+- Erwachsene bezahlen 5 Euro, Kinder nichts. | بزرگسالان ۵ یورو می‌دهند و بچه‌ها هیچ پولی نمی‌دهند. | tts: Erwachsene bezahlen fünf Euro, Kinder nichts.
+- Alle Nachbarn und Gäste sind willkommen! | از همه همسایه‌ها و مهمان‌ها استقبال می‌کنیم!
+- Bringen Sie auch Ihre Freunde mit! | دوستانتان را هم با خودتان بیاورید!
+- Wenn es regnet, feiern wir in der Schule. | اگر باران ببارد، در مدرسه جشن می‌گیریم.
+reading A:
+{"type":"mcq","prompt":"جشن کی است؟","options":["جمعه","شنبه","یکشنبه","دوشنبه"],"correct":1,"explanation_fa":"در آگهی آمده: «Am Samstag feiern wir.»"}
+{"type":"tf","prompt":"بچه‌ها برای جشن پول نمی‌دهند.","correct":true,"explanation_fa":"در آگهی آمده: «Erwachsene bezahlen 5 Euro, Kinder nichts.»"}
+{"type":"tf","prompt":"جشن تا ساعت ۱۸ است.","correct":false,"explanation_fa":"در آگهی آمده: «von 12 bis 22 Uhr»، یعنی تا ساعت ۲۲."}
+reading B:
+{"type":"match","prompt":"هر ساعت را به کارش وصل کن.","left":["ساعت ۱۲","ساعت ۱۵","ساعت ۲۲"],"right":["بازی فوتبال","جشن تمام می‌شود","شام","جشن شروع می‌شود"],"pairs":[[0,3],[1,0],[2,1]],"explanation_fa":"جشن «von 12 bis 22 Uhr» است و فوتبال «um 15 Uhr»."}
+{"type":"find","prompt":"کدام جمله می‌گوید اگر باران ببارد چه می‌شود؟","correct_sentence":7,"explanation_fa":"در آگهی آمده: «Wenn es regnet, feiern wir in der Schule.»"}
+listening A:
+{"type":"num","prompt":"بزرگسالان چند یورو می‌دهند؟","answer":"5","accepted":["5","5 Euro","fünf"],"explanation_fa":"در آگهی آمده: «Erwachsene bezahlen 5 Euro.»"}
+{"type":"tf","prompt":"نوجوان‌ها هم می‌توانند فوتبال بازی کنند.","correct":true,"explanation_fa":"در آگهی آمده: «Kinder und Jugendliche können um 15 Uhr Fußball spielen.»"}
+{"type":"tf","prompt":"جشن ساعت ۱۰ شروع می‌شود.","correct":false,"explanation_fa":"در آگهی آمده: «von 12 bis 22 Uhr»، یعنی جشن ساعت ۱۲ شروع می‌شود."}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"mcq","prompt":"اگر باران ببارد، جشن کجاست؟","options":["در پارک","در خانه","در مدرسه","در سینما"],"correct":2,"explanation_fa":"در آگهی آمده: «Wenn es regnet, feiern wir in der Schule.»"}
+{"type":"mcq","prompt":"آگهی از مردم می‌خواهد چه کسانی را هم بیاورند؟","options":["دوستانشان","معلم‌هایشان","همکارانشان","حیواناتشان"],"correct":0,"explanation_fa":"در آگهی آمده: «Bringen Sie auch Ihre Freunde mit!»"}

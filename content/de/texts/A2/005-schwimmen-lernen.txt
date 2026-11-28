@@ -1,0 +1,30 @@
+code: de-a2-t005
+title: Schwimmen lernen
+band: 1
+kind: ad
+sentences:
+- Schwimmen lernen im Schwimmbad am Park! | شنا یاد بگیرید، در استخرِ کنار پارک!
+- Kann Ihr Kind noch nicht schwimmen? Kein Problem! | بچه‌تان هنوز شنا بلد نیست؟ مشکلی نیست!
+- Bei uns lernen Kinder von 5 bis 8 Jahren schwimmen. | پیش ما بچه‌های ۵ تا ۸ ساله شنا یاد می‌گیرند. | tts: Bei uns lernen Kinder von fünf bis acht Jahren schwimmen.
+- In jedem Kurs sind nur ein paar Kinder. | در هر کلاس فقط چند بچه هست.
+- Einige haben zuerst ein bisschen Angst, aber unsere Lehrer sind sehr nett. | بعضی‌ها اولش کمی می‌ترسند، ولی معلم‌های ما خیلی مهربان‌اند.
+- Der Kurs ist immer am Samstag um 10 Uhr. | کلاس همیشه شنبه‌ها ساعت ۱۰ است. | tts: Der Kurs ist immer am Samstag um zehn Uhr.
+- Er kostet 60 Euro. | قیمتش ۶۰ یورو است. | tts: Er kostet sechzig Euro.
+reading A:
+{"type":"mcq","prompt":"این آگهی برای چه بچه‌هایی است؟","options":["بچه‌های ۵ تا ۸ ساله","بچه‌های ۸ تا ۱۰ ساله","بچه‌های ۳ تا ۵ ساله","بچه‌های ۱۰ تا ۱۲ ساله"],"correct":0,"explanation_fa":"در آگهی آمده: «Bei uns lernen Kinder von 5 bis 8 Jahren schwimmen.»"}
+{"type":"tf","prompt":"در هر کلاس بچه‌های زیادی هستند.","correct":false,"explanation_fa":"در آگهی آمده: «In jedem Kurs sind nur ein paar Kinder.»، یعنی فقط چند بچه."}
+{"type":"tf","prompt":"معلم‌ها خیلی مهربان‌اند.","correct":true,"explanation_fa":"در آگهی آمده: «unsere Lehrer sind sehr nett»."}
+{"type":"mcq","prompt":"کلاس کی است؟","options":["شنبه‌ها ساعت ۸","یکشنبه‌ها ساعت ۱۰","شنبه‌ها ساعت ۱۰","جمعه‌ها ساعت ۱۰"],"correct":2,"explanation_fa":"در آگهی آمده: «Der Kurs ist immer am Samstag um 10 Uhr.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید بعضی بچه‌ها اول می‌ترسند؟","correct_sentence":4,"explanation_fa":"در آگهی آمده: «Einige haben zuerst ein bisschen Angst»، یعنی بعضی‌ها اولش کمی می‌ترسند."}
+{"type":"match","prompt":"هر مورد را به اطلاعاتش در آگهی وصل کن.","left":["سن بچه‌ها","روز کلاس","قیمت کلاس"],"right":["شنبه","۶۰ یورو","۵ تا ۸ سال","۸۰ یورو"],"pairs":[[0,2],[1,0],[2,1]],"explanation_fa":"در آگهی آمده: «von 5 bis 8 Jahren»، «am Samstag» و «Er kostet 60 Euro.»"}
+{"type":"tf","prompt":"کلاس در استخرِ کنار پارک است.","correct":true,"explanation_fa":"در آگهی آمده: «im Schwimmbad am Park»."}
+{"type":"tf","prompt":"کلاس ۸۰ یورو است.","correct":false,"explanation_fa":"در آگهی آمده: «Er kostet 60 Euro.»، یعنی ۶۰ یورو."}
+listening A:
+{"type":"num","prompt":"کلاس چند یورو است؟","answer":"60","accepted":["60","sechzig"],"explanation_fa":"در آگهی آمده: «Er kostet 60 Euro.»"}
+{"type":"tf","prompt":"بعضی بچه‌ها اولش کمی می‌ترسند.","correct":true,"explanation_fa":"در آگهی آمده: «Einige haben zuerst ein bisschen Angst»."}
+{"type":"tf","prompt":"کلاس هر روز است.","correct":false,"explanation_fa":"در آگهی آمده: «Der Kurs ist immer am Samstag»، یعنی فقط شنبه‌ها."}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"num","prompt":"کلاس ساعت چند است؟","answer":"10","accepted":["10","zehn"],"explanation_fa":"در آگهی آمده: «immer am Samstag um 10 Uhr»."}
+{"type":"mcq","prompt":"آگهی درباره معلم‌ها چه می‌گوید؟","options":["خیلی جوان‌اند","خیلی سخت‌گیرند","خیلی مهربان‌اند","خیلی جدی‌اند"],"correct":2,"explanation_fa":"در آگهی آمده: «unsere Lehrer sind sehr nett»، یعنی معلم‌ها خیلی مهربان‌اند."}

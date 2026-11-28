@@ -1,0 +1,28 @@
+code: de-a2-t022
+title: Fahrräder für den Urlaub
+band: 1
+kind: ad
+key_words: ausleihen, abholen, abgeben, mitnehmen
+sentences:
+- Fahrräder für Ihren Urlaub in Bremen! | دوچرخه برای تعطیلات شما در برمن!
+- Bei uns können Sie Fahrräder ausleihen. | پیش ما می‌توانید دوچرخه کرایه کنید.
+- Ein Tag kostet 12 Euro, eine Woche 50 Euro. | یک روز ۱۲ یورو و یک هفته ۵۰ یورو است. | tts: Ein Tag kostet zwölf Euro, eine Woche fünfzig Euro.
+- Sie{Sie-3} können das Fahrrad am Bahnhof abholen. | می‌توانید دوچرخه را در ایستگاه قطار تحویل بگیرید.
+- Am Ende geben Sie es einfach in Ihrem Hotel ab. | آخر کار آن را به همین سادگی در هتلتان تحویل می‌دهید.
+- Sie{Sie-3} können das Fahrrad auch im Zug mitnehmen. | دوچرخه را می‌توانید در قطار هم با خودتان ببرید.
+- Wir haben auch Fahrräder für Kinder. | برای بچه‌ها هم دوچرخه داریم.
+- Rufen Sie an: 0421 23 45 67. | زنگ بزنید: ۰۴۲۱ ۲۳ ۴۵ ۶۷. | tts: Rufen Sie an: null vier zwei eins, dreiundzwanzig, fünfundvierzig, siebenundsechzig.
+reading A:
+{"type":"mcq","prompt":"کرایه دوچرخه برای یک هفته چند است؟","options":["۱۲ یورو","۳۰ یورو","۵۰ یورو","۶۰ یورو"],"correct":2,"explanation_fa":"در آگهی آمده: «eine Woche 50 Euro»."}
+{"type":"tf","prompt":"دوچرخه را می‌شود در هتل پس داد.","correct":true,"explanation_fa":"در آگهی آمده: «Am Ende geben Sie es einfach in Ihrem Hotel ab.»"}
+{"type":"tf","prompt":"نمی‌شود دوچرخه را در قطار برد.","correct":false,"explanation_fa":"در آگهی آمده: «Sie können das Fahrrad auch im Zug mitnehmen.»"}
+reading B:
+{"type":"match","prompt":"هر کار را به جایش وصل کن.","left":["تحویل گرفتن دوچرخه","پس دادن دوچرخه"],"right":["هتل","ایستگاه قطار","فرودگاه"],"pairs":[[0,1],[1,0]],"explanation_fa":"دوچرخه را «am Bahnhof» تحویل می‌گیرید و «in Ihrem Hotel» پس می‌دهید."}
+{"type":"find","prompt":"کدام جمله می‌گوید برای بچه‌ها هم دوچرخه هست؟","correct_sentence":6,"explanation_fa":"در آگهی آمده: «Wir haben auch Fahrräder für Kinder.»"}
+listening A:
+{"type":"num","prompt":"کرایه دوچرخه برای یک روز چند یورو است؟","answer":"12","accepted":["12","12 Euro","zwölf"],"explanation_fa":"در آگهی آمده: «Ein Tag kostet 12 Euro.»"}
+{"type":"mcq","prompt":"دوچرخه را کجا تحویل می‌گیرید؟","options":["در هتل","در فرودگاه","در ایستگاه قطار","در مرکز شهر"],"correct":2,"explanation_fa":"در آگهی آمده: «Sie können das Fahrrad am Bahnhof abholen.»"}
+listening B:
+{"type":"dict","sentence":1}
+{"type":"tf","prompt":"برای بچه‌ها دوچرخه نیست.","correct":false,"explanation_fa":"در آگهی آمده: «Wir haben auch Fahrräder für Kinder.»"}
+{"type":"tf","prompt":"می‌شود دوچرخه را برای یک هفته کرایه کرد.","correct":true,"explanation_fa":"در آگهی آمده: «eine Woche 50 Euro»."}

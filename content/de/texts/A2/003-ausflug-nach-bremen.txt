@@ -1,0 +1,35 @@
+code: de-a2-t003
+title: Heute fahren wir nach Bremen
+band: 1
+kind: announcement
+sentences:
+- Guten Morgen, Kinder! | صبح بخیر بچه‌ها!
+- Heute fahren wir nach Bremen. | امروز به برمن می‌رویم.
+- Unser Zug fährt genau um 8 Uhr ab. | قطارمان دقیقاً ساعت ۸ حرکت می‌کند. | tts: Unser Zug fährt genau um acht Uhr ab.
+- Vorher bekommt jeder eine Fahrkarte von mir. | قبلش هر کس یک بلیت از من می‌گیرد.
+- In Bremen besuchen wir zuerst das Museum. | در برمن اول به موزه می‌رویم.
+- Es ist ganz neu und wirklich interessant. | موزه کاملاً نو و واقعاً جالب است.
+- Danach essen wir im Park zu Mittag. | بعدش در پارک ناهار می‌خوریم.
+- Um 4 Uhr fahren wir wieder nach Hause. | ساعت ۴ دوباره به طرف خانه راه می‌افتیم. | tts: Um vier Uhr fahren wir wieder nach Hause.
+- Seht mal, da kommt unser Zug! | نگاه کنید، قطارمان دارد می‌آید!
+reading A:
+{"type":"mcq","prompt":"بچه‌ها امروز به کجا می‌روند؟","options":["هامبورگ","برلین","برمن","کلن"],"correct":2,"explanation_fa":"معلم می‌گوید: «Heute fahren wir nach Bremen.»"}
+{"type":"tf","prompt":"قطار ساعت ۸ حرکت می‌کند.","correct":true,"explanation_fa":"معلم می‌گوید: «Unser Zug fährt genau um 8 Uhr ab.»"}
+{"type":"tf","prompt":"بچه‌ها در برمن اول در پارک ناهار می‌خورند.","correct":false,"explanation_fa":"معلم می‌گوید: «In Bremen besuchen wir zuerst das Museum.»؛ ناهار بعد از موزه است."}
+{"type":"mcq","prompt":"معلم درباره موزه چه می‌گوید؟","options":["خیلی قدیمی و بزرگ است","کاملاً نو و جالب است","امروز بسته است","کوچک ولی قشنگ است"],"correct":1,"explanation_fa":"معلم می‌گوید: «Es ist ganz neu und wirklich interessant.»"}
+reading B:
+{"type":"order","prompt":"برنامه امروز را به ترتیب بچین.","items":["ناهار در پارک","گرفتن بلیت از معلم","بازدید از موزه","راه افتادن به طرف خانه"],"correct_order":[1,2,0,3],"explanation_fa":"اول «Vorher bekommt jeder eine Fahrkarte»، بعد «zuerst das Museum»، بعد «Danach essen wir im Park» و آخر «Um 4 Uhr fahren wir wieder nach Hause»."}
+{"type":"find","prompt":"کدام جمله می‌گوید بچه‌ها کجا ناهار می‌خورند؟","correct_sentence":6,"explanation_fa":"معلم می‌گوید: «Danach essen wir im Park zu Mittag.»"}
+{"type":"tf","prompt":"هر بچه از معلم یک بلیت می‌گیرد.","correct":true,"explanation_fa":"معلم می‌گوید: «Vorher bekommt jeder eine Fahrkarte von mir.»"}
+{"type":"tf","prompt":"به نظر معلم، موزه خسته‌کننده است.","correct":false,"explanation_fa":"معلم می‌گوید موزه «wirklich interessant» است، یعنی واقعاً جالب."}
+listening A:
+{"type":"num","prompt":"قطار ساعت چند حرکت می‌کند؟","answer":"8","accepted":["8","acht"],"explanation_fa":"معلم می‌گوید: «Unser Zug fährt genau um 8 Uhr ab.»"}
+{"type":"mcq","prompt":"بچه‌ها بعد از موزه چه می‌کنند؟","options":["در پارک ناهار می‌خورند","به خانه برمی‌گردند","به ایستگاه قطار می‌روند","به یک موزه دیگر می‌روند"],"correct":0,"explanation_fa":"معلم بعد از موزه می‌گوید: «Danach essen wir im Park zu Mittag.»"}
+{"type":"tf","prompt":"بچه‌ها با قطار به برمن می‌روند.","correct":true,"explanation_fa":"معلم می‌گوید: «Unser Zug fährt genau um 8 Uhr ab.»"}
+{"type":"tf","prompt":"معلم بلیت‌ها را در برمن می‌دهد.","correct":false,"explanation_fa":"معلم می‌گوید: «Vorher bekommt jeder eine Fahrkarte»، یعنی قبل از حرکت قطار."}
+listening B:
+{"type":"dict","sentence":8}
+{"type":"num","prompt":"بچه‌ها ساعت چند به طرف خانه راه می‌افتند؟","answer":"4","accepted":["4","vier","16"],"explanation_fa":"معلم می‌گوید: «Um 4 Uhr fahren wir wieder nach Hause.»"}
+{"type":"mcq","prompt":"بچه‌ها در برمن اول به کجا می‌روند؟","options":["پارک","رستوران","موزه","ایستگاه قطار"],"correct":2,"explanation_fa":"معلم می‌گوید: «In Bremen besuchen wir zuerst das Museum.»"}
+{"type":"tf","prompt":"قطار بچه‌ها الان دارد می‌آید.","correct":true,"explanation_fa":"معلم آخر می‌گوید: «Seht mal, da kommt unser Zug!»"}
+{"type":"tf","prompt":"بچه‌ها شب در برمن می‌مانند.","correct":false,"explanation_fa":"معلم می‌گوید: «Um 4 Uhr fahren wir wieder nach Hause.»، یعنی همان روز برمی‌گردند."}

@@ -112,4 +112,17 @@ describe("grammar before its unit", () => {
     const notes = grammarTiming("de", lines, units, cards, 2, { words: cards, forms: tenseForms("de", []) });
     expect(notes.map((note) => note.line)).toEqual([3]);
   });
+
+  it("lets «ich hätte gern» pass as an A1 chunk, but not würde or hätten without gern", () => {
+    const a2 = words("de", ["kommen\tverb\t\t\tآمدن\tآمدن\tactions", "Kaffee\tnoun\tder\t\tقهوه\tقهوه\tdrink\tnumber:sg_only"], "A2");
+    const [kommen] = a2;
+    const units = [{ unit_code: "de-a2-hoeflich", level: "A2", order: 26 }];
+    const lines: TimingLine[] = [
+      { file: "f", line: 1, target: kommen, text: "", tokens: tokens("Ich=ich hätte=haben gern=gern einen=ein Kaffee=Kaffee und=und [komme]=kommen") },
+      { file: "f", line: 2, target: kommen, text: "", tokens: tokens("Ich=ich würde=werden gern=gern [kommen]=kommen") },
+      { file: "f", line: 3, target: kommen, text: "", tokens: tokens("Ich=ich hätte=haben Zeit=Zeit [gekommen]=kommen") },
+    ];
+    const notes = grammarTiming("de", lines, units, a2, 2, { words: a2, forms: tenseForms("de", []) });
+    expect(notes.map((note) => note.line)).toEqual([2, 3]);
+  });
 });

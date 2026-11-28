@@ -1,0 +1,26 @@
+code: de-a2-t020
+title: Der erste Tag
+band: 1
+kind: dialogue
+key_words: sich vorstellen, begrüßen, schauen
+sentences:
+A: Guten Morgen! Darf ich mich vorstellen? Ich bin Lisa Schulz, die neue Kollegin. | صبح بخیر! اجازه هست خودم را معرفی کنم؟ من لیزا شولتس هستم، همکار جدید.
+B: Willkommen! Ich bin Peter Hoffmann. Zuerst begrüßen wir die Kollegen, dann zeige ich Ihnen Ihr Büro. | خوش آمدید! من پتر هوفمان هستم. اول به همکاران سلام می‌کنیم، بعد دفترتان را نشانتان می‌دهم.
+A: Gern. Ich konnte heute Nacht nicht gut schlafen. | با کمال میل. دیشب نتوانستم خوب بخوابم.
+B: Das ist normal am ersten Tag. Schauen Sie, hier ist die Küche. | روز اول این عادی است. نگاه کنید، این‌جا آشپزخانه است.
+A: Gibt es hier auch Kaffee? | این‌جا قهوه هم هست؟
+B: Ja, Kaffee gibt es immer. | بله، قهوه همیشه هست.
+reading A:
+{"type":"mcq","prompt":"لیزا شولتس کیست؟","options":["یک مشتری","رئیس شرکت","همکار جدید","یک دانشجو"],"correct":2,"explanation_fa":"لیزا می‌گوید: «Ich bin Lisa Schulz, die neue Kollegin.»"}
+{"type":"tf","prompt":"پتر اول دفتر لیزا را به او نشان می‌دهد.","correct":false,"explanation_fa":"پتر می‌گوید: «Zuerst begrüßen wir die Kollegen, dann zeige ich Ihnen Ihr Büro»؛ اول سلام به همکاران است."}
+{"type":"tf","prompt":"لیزا دیشب خوب نخوابید.","correct":true,"explanation_fa":"لیزا می‌گوید: «Ich konnte heute Nacht nicht gut schlafen.»"}
+reading B:
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو مرتب کن.","items":["پتر آشپزخانه را نشان می‌دهد.","لیزا خودش را معرفی می‌کند.","لیزا درباره قهوه می‌پرسد.","لیزا می‌گوید دیشب خوب نخوابیده است."],"correct_order":[1,3,0,2],"explanation_fa":"اول لیزا خودش را معرفی می‌کند، بعد می‌گوید «Ich konnte heute Nacht nicht gut schlafen»، بعد پتر آشپزخانه را نشان می‌دهد و آخر لیزا درباره قهوه می‌پرسد."}
+{"type":"find","prompt":"کدام جمله می‌گوید قهوه همیشه هست؟","correct_sentence":5,"explanation_fa":"پتر می‌گوید: «Ja, Kaffee gibt es immer.»"}
+listening A:
+{"type":"mcq","prompt":"این گفتگو کجاست؟","options":["در مدرسه","در رستوران","در خانه","سر کار"],"correct":3,"explanation_fa":"لیزا «die neue Kollegin» است و پتر می‌خواهد «Ihr Büro» را نشانش بدهد؛ پس گفتگو سر کار است."}
+{"type":"tf","prompt":"پتر می‌گوید بد خوابیدن در روز اول عادی است.","correct":true,"explanation_fa":"پتر می‌گوید: «Das ist normal am ersten Tag.»"}
+{"type":"tf","prompt":"در آشپزخانه قهوه نیست.","correct":false,"explanation_fa":"پتر می‌گوید: «Ja, Kaffee gibt es immer.»"}
+listening B:
+{"type":"dict","sentence":4}
+{"type":"mcq","prompt":"پتر بعد از سلام به همکاران چه کار می‌کند؟","options":["قهوه درست می‌کند","دفتر لیزا را نشانش می‌دهد","به خانه می‌رود","به رئیس زنگ می‌زند"],"correct":1,"explanation_fa":"پتر می‌گوید: «dann zeige ich Ihnen Ihr Büro»."}

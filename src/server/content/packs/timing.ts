@@ -121,7 +121,12 @@ export const TIMING_MARKERS: Record<LanguageCode, Marker[]> = {
       },
     },
     { unit: "de-a2-sollen", label: "soll، sollte", codes: ["sollen"] },
-    { unit: "de-a2-hoeflich", label: "hätte gern، würde، könnten", forms: DE_POLITE },
+    // «Ich hätte gern …» is an A1 chunk (ordering, shopping); the other polite forms wait for their unit.
+    {
+      unit: "de-a2-hoeflich",
+      label: "würde، könnten، hätten Sie",
+      match: (tokens, index) => DE_POLITE.includes(lower(tokens[index])) && !(/^hätten?$/u.test(lower(tokens[index])) && tokens.slice(index + 1, index + 4).some((token) => /^gerne?$/u.test(lower(token)))),
+    },
     { unit: "de-a2-sondern", label: "sondern", codes: ["sondern"] },
   ],
   fr: [

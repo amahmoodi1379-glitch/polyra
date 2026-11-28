@@ -1,0 +1,32 @@
+code: de-a2-t007
+title: Café Sonne
+band: 1
+kind: menu
+sentences:
+- Café Sonne, gegenüber vom Bahnhof | کافه زونه، روبه‌روی ایستگاه قطار
+- Wir sind jeden Tag außer Montag offen. | ما هر روز به‌جز دوشنبه باز هستیم.
+- Frühstück von 8 bis 11 Uhr: Brötchen, Butter, Käse und Ei, 7,50 Euro | صبحانه از ساعت ۸ تا ۱۱: نان، کره، پنیر و تخم‌مرغ، ۷٫۵۰ یورو | tts: Frühstück von acht bis elf Uhr: Brötchen, Butter, Käse und Ei, sieben Euro fünfzig
+- Mittagessen ab 12 Uhr: Suppe mit Brot 5 Euro, Salat mit Hähnchen 9 Euro | ناهار از ساعت ۱۲: سوپ با نان ۵ یورو، سالاد مرغ ۹ یورو | tts: Mittagessen ab zwölf Uhr: Suppe mit Brot fünf Euro, Salat mit Hähnchen neun Euro
+- Unseren Kuchen machen wir selbst: 3 Euro pro Stück | کیکمان را خودمان درست می‌کنیم: هر تکه ۳ یورو | tts: Unseren Kuchen machen wir selbst: drei Euro pro Stück
+- Kaffee und Tee: 2 Euro pro Tasse | قهوه و چای: هر فنجان ۲ یورو | tts: Kaffee und Tee: zwei Euro pro Tasse
+reading A:
+{"type":"mcq","prompt":"کافه کجاست؟","options":["کنار پارک شهر","روبه‌روی ایستگاه قطار","پشت بانک مرکزی","کنار ایستگاه اتوبوس"],"correct":1,"explanation_fa":"در منو آمده: «Café Sonne, gegenüber vom Bahnhof»."}
+{"type":"tf","prompt":"کافه دوشنبه‌ها بسته است.","correct":true,"explanation_fa":"در منو آمده: «jeden Tag außer Montag offen»، یعنی هر روز به‌جز دوشنبه باز است."}
+{"type":"tf","prompt":"صبحانه تا ساعت ۱۲ است.","correct":false,"explanation_fa":"در منو آمده: «Frühstück von 8 bis 11 Uhr»، یعنی تا ساعت ۱۱."}
+{"type":"mcq","prompt":"یک تکه کیک چند است؟","options":["۵ یورو","۲ یورو","۷٫۵۰ یورو","۳ یورو"],"correct":3,"explanation_fa":"در منو آمده: «3 Euro pro Stück»."}
+reading B:
+{"type":"match","prompt":"هر غذا را به قیمتش وصل کن.","left":["صبحانه","سوپ با نان","سالاد مرغ"],"right":["۹ یورو","۷٫۵۰ یورو","۵ یورو","۳ یورو"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"در منو آمده: صبحانه «7,50 Euro»، «Suppe mit Brot 5 Euro» و «Salat mit Hähnchen 9 Euro»."}
+{"type":"find","prompt":"کدام جمله می‌گوید کیک را خود کافه درست می‌کند؟","correct_sentence":4,"explanation_fa":"در منو آمده: «Unseren Kuchen machen wir selbst»."}
+{"type":"tf","prompt":"یک فنجان چای ۲ یورو است.","correct":true,"explanation_fa":"در منو آمده: «Kaffee und Tee: 2 Euro pro Tasse»."}
+{"type":"tf","prompt":"سالاد با ماهی است.","correct":false,"explanation_fa":"در منو آمده: «Salat mit Hähnchen»، یعنی سالاد با مرغ."}
+listening A:
+{"type":"num","prompt":"یک تکه کیک چند یورو است؟","answer":"3","accepted":["3","drei"],"explanation_fa":"گفته می‌شود: «3 Euro pro Stück»."}
+{"type":"mcq","prompt":"ناهار از ساعت چند است؟","options":["از ساعت ۸","از ساعت ۱۱","از ساعت ۱۲","از ساعت ۲"],"correct":2,"explanation_fa":"گفته می‌شود: «Mittagessen ab 12 Uhr»."}
+{"type":"tf","prompt":"کافه هر روز هفته باز است.","correct":false,"explanation_fa":"گفته می‌شود: «jeden Tag außer Montag»، یعنی دوشنبه‌ها بسته است."}
+{"type":"tf","prompt":"کیک‌ها را خود کافه درست می‌کند.","correct":true,"explanation_fa":"گفته می‌شود: «Unseren Kuchen machen wir selbst»."}
+listening B:
+{"type":"dict","sentence":1}
+{"type":"num","prompt":"صبحانه چند یورو است؟","answer":"7,50","accepted":["7,50","7.50","7,5","7.5"],"explanation_fa":"گفته می‌شود صبحانه «7,50 Euro» است، یعنی هفت یورو و پنجاه سنت."}
+{"type":"mcq","prompt":"در صبحانه چه چیزهایی هست؟","options":["نان، کره، سوسیس و تخم‌مرغ","نان، کره، پنیر و ماهی","نان، کره، پنیر و تخم‌مرغ","نان، عسل، پنیر و تخم‌مرغ"],"correct":2,"explanation_fa":"گفته می‌شود: «Brötchen, Butter, Käse und Ei»."}
+{"type":"tf","prompt":"کافه روبه‌روی ایستگاه قطار است.","correct":true,"explanation_fa":"گفته می‌شود: «gegenüber vom Bahnhof»."}
+{"type":"tf","prompt":"یک فنجان قهوه ۳ یورو است.","correct":false,"explanation_fa":"گفته می‌شود: «Kaffee und Tee: 2 Euro pro Tasse»، یعنی ۲ یورو."}

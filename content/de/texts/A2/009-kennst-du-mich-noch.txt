@@ -1,0 +1,33 @@
+code: de-a2-t009
+title: Kennst du mich noch?
+band: 1
+kind: voice_message
+sentences:
+- Hallo Lukas, hier ist Felix. Kennst du mich noch? | سلام لوکاس، فلیکس هستم. هنوز من را یادت هست؟
+- Früher waren wir zusammen in der Schule. | قبلاً با هم مدرسه می‌رفتیم.
+- Damals haben wir jeden Tag Fußball gespielt. | آن وقت‌ها هر روز فوتبال بازی می‌کردیم.
+- Ich wohne jetzt in Wien. | من الان در وین زندگی می‌کنم.
+- Aber nächste Woche bin ich in Leipzig. | ولی هفته بعد لایپزیگ هستم.
+- Hast du am Samstag Zeit? Wir können um 7 zusammen essen gehen. | شنبه وقت داری؟ می‌توانیم ساعت ۷ با هم برویم بیرون غذا بخوریم. | tts: Hast du am Samstag Zeit? Wir können um sieben zusammen essen gehen.
+- Ich bin gerade unterwegs. Ruf mich bitte heute Abend an! | الان در راهم. لطفاً امشب به من زنگ بزن!
+- Tschüss! | خداحافظ!
+reading A:
+{"type":"mcq","prompt":"فلیکس و لوکاس قبلاً با هم چه رابطه‌ای داشتند؟","options":["همکار هم بودند","هم‌مدرسه‌ای بودند","همسایه هم بودند","هم‌اتاقی بودند"],"correct":1,"explanation_fa":"فلیکس می‌گوید: «Früher waren wir zusammen in der Schule.»"}
+{"type":"tf","prompt":"فلیکس الان در وین زندگی می‌کند.","correct":true,"explanation_fa":"فلیکس می‌گوید: «Ich wohne jetzt in Wien.»"}
+{"type":"tf","prompt":"فلیکس و لوکاس قبلاً با هم بسکتبال بازی می‌کردند.","correct":false,"explanation_fa":"فلیکس می‌گوید: «Damals haben wir jeden Tag Fußball gespielt.»، یعنی فوتبال."}
+{"type":"mcq","prompt":"فلیکس هفته بعد کجاست؟","options":["وین","برلین","مونیخ","لایپزیگ"],"correct":3,"explanation_fa":"فلیکس می‌گوید: «Aber nächste Woche bin ich in Leipzig.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید فلیکس الان در راه است؟","correct_sentence":6,"explanation_fa":"فلیکس می‌گوید: «Ich bin gerade unterwegs.»"}
+{"type":"order","prompt":"این‌ها را به ترتیب پیام بچین.","items":["فلیکس پیشنهاد می‌کند با هم بیرون غذا بخورند.","فلیکس می‌گوید کجا زندگی می‌کند.","فلیکس می‌پرسد لوکاس او را یادش هست یا نه.","فلیکس می‌گوید قبلاً هر روز فوتبال بازی می‌کردند."],"correct_order":[2,3,1,0],"explanation_fa":"اول «Kennst du mich noch?»، بعد «jeden Tag Fußball»، بعد «Ich wohne jetzt in Wien» و بعد «zusammen essen gehen»."}
+{"type":"tf","prompt":"فلیکس می‌خواهد لوکاس امشب به او زنگ بزند.","correct":true,"explanation_fa":"فلیکس می‌گوید: «Ruf mich bitte heute Abend an!»"}
+{"type":"tf","prompt":"فلیکس می‌خواهد یکشنبه لوکاس را ببیند.","correct":false,"explanation_fa":"فلیکس می‌پرسد: «Hast du am Samstag Zeit?»، یعنی شنبه."}
+listening A:
+{"type":"num","prompt":"فلیکس پیشنهاد می‌کند ساعت چند با هم غذا بخورند؟","answer":"7","accepted":["7","sieben","19"],"explanation_fa":"فلیکس می‌گوید: «Wir können um 7 zusammen essen gehen.»"}
+{"type":"mcq","prompt":"فلیکس الان کجا زندگی می‌کند؟","options":["وین","لایپزیگ","هامبورگ","کلن"],"correct":0,"explanation_fa":"فلیکس می‌گوید: «Ich wohne jetzt in Wien.»"}
+{"type":"tf","prompt":"فلیکس و لوکاس قبلاً هر روز فوتبال بازی می‌کردند.","correct":true,"explanation_fa":"فلیکس می‌گوید: «Damals haben wir jeden Tag Fußball gespielt.»"}
+{"type":"tf","prompt":"فلیکس الان در خانه است.","correct":false,"explanation_fa":"فلیکس می‌گوید: «Ich bin gerade unterwegs.»، یعنی الان در راه است."}
+listening B:
+{"type":"dict","sentence":1}
+{"type":"mcq","prompt":"فلیکس برای چه روزی قرار پیشنهاد می‌کند؟","options":["جمعه","یکشنبه","شنبه","امشب"],"correct":2,"explanation_fa":"فلیکس می‌پرسد: «Hast du am Samstag Zeit?»"}
+{"type":"tf","prompt":"فلیکس هفته بعد در لایپزیگ است.","correct":true,"explanation_fa":"فلیکس می‌گوید: «nächste Woche bin ich in Leipzig»."}
+{"type":"tf","prompt":"فلیکس می‌خواهد لوکاس برایش ایمیل بفرستد.","correct":false,"explanation_fa":"فلیکس می‌گوید: «Ruf mich bitte heute Abend an!»، یعنی زنگ بزند."}

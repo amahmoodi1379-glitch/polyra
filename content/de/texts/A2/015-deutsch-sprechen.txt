@@ -1,0 +1,31 @@
+code: de-a2-t015
+title: Deutsch sprechen im Café
+band: 1
+kind: ad
+sentences:
+- Hallo! Ich heiße Reza und komme aus Iran. | سلام! اسمم رضاست و اهل ایرانم.
+- Ich lebe seit einem Jahr in Köln und lerne Deutsch. | یک سال است که در کلن زندگی می‌کنم و آلمانی یاد می‌گیرم.
+- Ich lese viel, aber ich spreche nicht so gut. | زیاد می‌خوانم، ولی خیلی خوب حرف نمی‌زنم.
+- Ich suche jemanden: Wir treffen uns einmal pro Woche im Café und reden auf Deutsch. | دنبال کسی می‌گردم: هفته‌ای یک بار در کافه همدیگر را می‌بینیم و آلمانی حرف می‌زنیم.
+- Ich beantworte auch gern Fragen über Iran. | با کمال میل به سؤال‌ها درباره ایران هم جواب می‌دهم.
+- Ich hoffe, dass jemand Zeit hat! | امیدوارم کسی وقت داشته باشد!
+- Meine Nummer steht unten. | شماره‌ام پایین نوشته شده است.
+reading A:
+{"type":"mcq","prompt":"رضا دنبال چیست؟","options":["یک کلاس ارزان آلمانی","یک اتاق ارزان در کلن","کسی برای آلمانی حرف زدن","کسی برای تمرین انگلیسی"],"correct":2,"explanation_fa":"رضا می‌گوید: «Ich suche jemanden» و «reden auf Deutsch»."}
+{"type":"tf","prompt":"رضا یک سال است که در کلن زندگی می‌کند.","correct":true,"explanation_fa":"رضا می‌گوید: «Ich lebe seit einem Jahr in Köln»."}
+{"type":"tf","prompt":"رضا خیلی خوب آلمانی حرف می‌زند.","correct":false,"explanation_fa":"رضا می‌گوید: «aber ich spreche nicht so gut»."}
+{"type":"mcq","prompt":"رضا می‌خواهد چند وقت یک بار آن آدم را ببیند؟","options":["هر روز هفته","هفته‌ای یک بار","ماهی یک بار","هفته‌ای دو بار"],"correct":1,"explanation_fa":"رضا می‌گوید: «Wir treffen uns einmal pro Woche»."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید شماره رضا کجاست؟","correct_sentence":6,"explanation_fa":"رضا می‌نویسد: «Meine Nummer steht unten.»"}
+{"type":"match","prompt":"هر سؤال را به جوابش در آگهی وصل کن.","left":["رضا اهل کجاست؟","رضا کجا زندگی می‌کند؟","کجا همدیگر را می‌بینند؟"],"right":["کلن","ایران","در کافه","در دانشگاه"],"pairs":[[0,1],[1,0],[2,2]],"explanation_fa":"رضا می‌نویسد: «komme aus Iran»، «seit einem Jahr in Köln» و «im Café»."}
+{"type":"tf","prompt":"رضا می‌تواند به سؤال‌ها درباره ایران جواب بدهد.","correct":true,"explanation_fa":"رضا می‌نویسد: «Ich beantworte auch gern Fragen über Iran.»"}
+{"type":"tf","prompt":"رضا کم می‌خواند.","correct":false,"explanation_fa":"رضا می‌نویسد: «Ich lese viel»، یعنی زیاد می‌خواند."}
+listening A:
+{"type":"mcq","prompt":"رضا کجا زندگی می‌کند؟","options":["برلین","هامبورگ","کلن","مونیخ"],"correct":2,"explanation_fa":"رضا می‌گوید: «Ich lebe seit einem Jahr in Köln»."}
+{"type":"tf","prompt":"رضا اهل ایران است.","correct":true,"explanation_fa":"رضا می‌گوید: «Ich heiße Reza und komme aus Iran.»"}
+{"type":"tf","prompt":"رضا می‌خواهد انگلیسی تمرین کند.","correct":false,"explanation_fa":"رضا می‌گوید: «reden auf Deutsch»، یعنی می‌خواهد آلمانی حرف بزند."}
+listening B:
+{"type":"dict","sentence":5}
+{"type":"mcq","prompt":"رضا و آن آدم کجا همدیگر را می‌بینند؟","options":["در کتابخانه","در پارک","در خانه رضا","در کافه"],"correct":3,"explanation_fa":"رضا می‌گوید: «Wir treffen uns einmal pro Woche im Café»."}
+{"type":"tf","prompt":"رضا می‌خواهد هفته‌ای یک بار کسی را ببیند.","correct":true,"explanation_fa":"رضا می‌گوید: «einmal pro Woche»."}
+{"type":"tf","prompt":"رضا دو سال است که در کلن است.","correct":false,"explanation_fa":"رضا می‌گوید: «seit einem Jahr»، یعنی یک سال."}

@@ -1,0 +1,31 @@
+code: de-a2-t014
+title: Es tut mir leid
+band: 1
+kind: dialogue
+sentences:
+A: Hallo Lena! Hast du kurz Zeit? Ich möchte mit dir reden. | سلام لنا! یک لحظه وقت داری؟ می‌خواهم با تو حرف بزنم.
+B: Ja, natürlich. | آره، حتماً.
+A: Ich möchte mich entschuldigen. Gestern war ich nicht nett zu dir. | می‌خواهم عذرخواهی کنم. دیروز با تو مهربان نبودم.
+B: Das macht nichts. Du hattest viel Arbeit. | اشکالی ندارد. کارت زیاد بود.
+A: Ja, aber es tut mir leid. | آره، ولی متأسفم.
+B: Danke, Max, dass du das sagst. Komm, wir gehen ein bisschen spazieren und unterhalten uns. | ممنون ماکس که این را می‌گویی. بیا کمی قدم بزنیم و با هم گپ بزنیم.
+A: Gern! | باشد، برویم!
+reading A:
+{"type":"mcq","prompt":"ماکس چرا می‌خواهد با لنا حرف بزند؟","options":["می‌خواهد پول قرض بگیرد","می‌خواهد عذرخواهی کند","می‌خواهد او را دعوت کند","می‌خواهد کمک بگیرد"],"correct":1,"explanation_fa":"ماکس می‌گوید: «Ich möchte mich entschuldigen.»"}
+{"type":"tf","prompt":"دیروز ماکس با لنا مهربان نبود.","correct":true,"explanation_fa":"ماکس می‌گوید: «Gestern war ich nicht nett zu dir.»"}
+{"type":"tf","prompt":"لنا عذرخواهی ماکس را قبول نمی‌کند.","correct":false,"explanation_fa":"لنا می‌گوید: «Das macht nichts.» و از ماکس تشکر می‌کند."}
+{"type":"mcq","prompt":"به گفته لنا، ماکس دیروز چرا این‌طور بود؟","options":["چون مریض بود","چون پول نداشت","چون کار زیادی داشت","چون دیر خوابیده بود"],"correct":2,"explanation_fa":"لنا می‌گوید: «Du hattest viel Arbeit.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید لنا چه پیشنهادی می‌دهد؟","correct_sentence":5,"explanation_fa":"لنا می‌گوید: «Komm, wir gehen ein bisschen spazieren und unterhalten uns.»"}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["لنا پیشنهاد می‌دهد قدم بزنند.","ماکس می‌گوید می‌خواهد با لنا حرف بزند.","لنا می‌گوید اشکالی ندارد.","ماکس عذرخواهی می‌کند."],"correct_order":[1,3,2,0],"explanation_fa":"اول «Ich möchte mit dir reden»، بعد «Ich möchte mich entschuldigen»، بعد «Das macht nichts» و آخر «wir gehen ein bisschen spazieren»."}
+{"type":"tf","prompt":"لنا وقت دارد با ماکس حرف بزند.","correct":true,"explanation_fa":"ماکس می‌پرسد «Hast du kurz Zeit?» و لنا می‌گوید: «Ja, natürlich.»"}
+{"type":"tf","prompt":"ماکس امروز با لنا مهربان نبود.","correct":false,"explanation_fa":"ماکس می‌گوید: «Gestern war ich nicht nett zu dir.»، یعنی دیروز، نه امروز."}
+listening A:
+{"type":"mcq","prompt":"دیروز چه شد؟","options":["ماکس با لنا مهربان نبود","لنا با ماکس مهربان نبود","ماکس به لنا زنگ نزد","لنا دیر به خانه آمد"],"correct":0,"explanation_fa":"ماکس می‌گوید: «Gestern war ich nicht nett zu dir.»"}
+{"type":"tf","prompt":"ماکس دیروز کار زیادی داشت.","correct":true,"explanation_fa":"لنا می‌گوید: «Du hattest viel Arbeit.»"}
+{"type":"tf","prompt":"لنا می‌خواهد تنها باشد.","correct":false,"explanation_fa":"لنا می‌گوید: «Komm, wir gehen ein bisschen spazieren»، یعنی می‌خواهد با ماکس باشد."}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"mcq","prompt":"آخر گفتگو چه کار می‌کنند؟","options":["قهوه می‌خورند","به سینما می‌روند","غذا می‌پزند","قدم می‌زنند"],"correct":3,"explanation_fa":"لنا می‌گوید: «wir gehen ein bisschen spazieren» و ماکس می‌گوید: «Gern!»"}
+{"type":"tf","prompt":"ماکس عذرخواهی می‌کند.","correct":true,"explanation_fa":"ماکس می‌گوید: «Ich möchte mich entschuldigen.» و «es tut mir leid»."}
+{"type":"tf","prompt":"لنا از ماکس عذرخواهی می‌کند.","correct":false,"explanation_fa":"ماکس عذرخواهی می‌کند و لنا می‌گوید: «Das macht nichts.»"}
