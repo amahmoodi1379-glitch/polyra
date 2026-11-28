@@ -85,15 +85,22 @@ export function verbDistractors(language: string, lemma: string, surface: string
     const past = groups.find((group) => group.name === "IMPARFAIT" || group.name === "PRT")?.forms ?? [];
     push(groups.find((group) => group.name === "INFINITIF" || group.name === "INF")?.forms[0]);
     push(present[2]);
+    // German Präteritum forms of strong verbs can be old ones (buk); another person of the present comes first.
+    if (language === "de") push(present[1]);
     push(past[2]);
     push(present[5]);
     return out.slice(0, 3);
   }
-  // Other persons of the same tense first, then the same person in another tense.
+  // Other persons of the same tense first, then other persons of another tense: the same person in another
+  // tense is often right too (Ich überwies die Miete), and so is any form it shares (er überwies, ich überwies).
   const main = holding.find((group) => !NOT_FINITE.includes(group.name)) ?? holding[0];
   const persons = main.forms.map((form, index) => (fold(form) === right ? index : -1)).filter((index) => index >= 0);
   for (const form of main.forms) push(form);
-  for (const group of groups) if (group !== main && group.forms.length === 6) for (const index of persons) push(group.forms[index]);
+  for (const group of groups) {
+    if (group === main || group.forms.length !== 6) continue;
+    const same = new Set(persons.map((index) => fold(group.forms[index])));
+    for (const [index, form] of group.forms.entries()) if (!persons.includes(index) && !same.has(fold(form))) push(form);
+  }
   return out.slice(0, 3);
 }
 

@@ -58,6 +58,12 @@ export function formExceptions(tokens: MappedToken[], lemmaOfCode: (code: string
     .map((token) => ({ code: token.word!.word.code, surface: token.surface }));
 }
 
+/**
+ * Does a gap after this text open a sentence of its own («Tu viens ? – [Oui]», «Danke. [Gern] geschehen»)?
+ * Its wrong options are then written with a capital, like the answer, so the capital gives nothing away.
+ */
+export const opensSentence = (before: string) => /(^|[.!?…])\s*([–—]\s*)?([«„“"]\s*)?$/u.test(before.trimEnd());
+
 /** Builds the P-S records of the sentence files of one level. */
 export function buildSentences(analyzer: Analyzer, files: { file: string; text: string }[], level: string, firstWords: Set<PackWord>): BuiltSentences {
   const out: BuiltSentences = { records: [], errors: [], notes: [], exceptions: [], wordsWithSentences: new Map(), lines: [] };
@@ -115,7 +121,7 @@ export function buildSentences(analyzer: Analyzer, files: { file: string; text: 
         used: new Set(analysis.tokens.map((token) => token.word).filter((word): word is PackWord => word !== null)),
         before: before && analysis.text.slice(before.end, gap.start).trim() === "" ? before.surface : null,
         after: after && analysis.text.slice(gap.end, after.start).trim() === "" ? after.surface : null,
-        first: gap.start === 0,
+        first: gap.start === 0 || (opensSentence(analysis.text.slice(0, gap.start)) && /^\p{Lu}/u.test(surface)),
         knownBefore: (word) => analyzer.knownBefore(word, { level, target: target!, firstWords }),
         level,
       });

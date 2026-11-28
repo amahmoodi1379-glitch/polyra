@@ -1,0 +1,694 @@
+// French A2, card words 1–99 in teaching order (content/fr/words/A2.tsv): linking words, adverbs, places, common verbs.
+# si
+[Si] tu as faim, il y a du pain dans la cuisine. | اگر گرسنه‌ای، توی آشپزخانه نان هست. | d: Mais, Ou, Car
+[Si] tu es fatigué, va dormir. | اگر خسته‌ای، برو بخواب. | d: Mais, Ou, Car
+[Si] on prend le métro, on arrive à l'heure. | اگر با مترو برویم، سر وقت می‌رسیم. | d: Mais, Ou, Car
+Je viens avec vous [si] j'ai le temps. | اگر وقت داشته باشم، با شما می‌آیم. | d: ou, mais, comme
+[Si] vous avez une question, demandez au professeur. | اگر سؤالی دارید، از معلم بپرسید. | d: Mais, Ou, Car
+[Si] le magasin est fermé, nous allons au supermarché. | اگر مغازه بسته باشد، به سوپرمارکت می‌رویم. | d: Mais, Ou, Car
+# même
+Il travaille [même] le dimanche. | او حتی یکشنبه‌ها هم کار می‌کند.
+Mon grand-père fait du sport, [même] en hiver. | پدربزرگم حتی در زمستان هم ورزش می‌کند. | d: non, voilà, pourquoi
+Tout le monde est là, [même] Paul ! | همه آمده‌اند، حتی پل! | d: non, voici, pourquoi
+Elle parle français, anglais et [même] allemand. | او فرانسوی، انگلیسی و حتی آلمانی حرف می‌زند.
+Je ne sais [même] pas son nom. | من حتی اسمش را نمی‌دانم.
+[Même] les enfants comprennent ça. | حتی بچه‌ها این را می‌فهمند.
+# même-adj
+Nous avons le [même] âge. | ما هم‌سن هستیم.
+Nous habitons dans la [même] rue. | ما در همان خیابان زندگی می‌کنیم.
+Les deux frères ont les [mêmes] yeux. | این دو برادر چشم‌های یکسانی دارند.
+Il mange la [même] chose tous les jours. | او هر روز همان چیز را می‌خورد.
+C'est toujours la [même] histoire ! | همیشه همان داستان تکراری است!
+Marie et Léa sont dans la [même] classe. | ماری و لئا در یک کلاس هستند.
+# donc
+Il pleut, [donc] je prends la voiture. | باران می‌آید، پس با ماشین می‌روم. | d: comme, si, ou | ok: alors
+Je suis malade, [donc] je reste à la maison. | مریضم، پس در خانه می‌مانم. | ok: alors
+Le magasin est fermé, [donc] nous allons au marché. | مغازه بسته است، پس به بازار می‌رویم. | ok: alors
+Elle habite près de l'école, [donc] elle va à pied. | او نزدیک مدرسه زندگی می‌کند، پس پیاده می‌رود. | ok: alors
+Je n'ai pas d'argent, [donc] je ne sors pas ce soir. | پول ندارم، پس امشب بیرون نمی‌روم. | ok: alors
+Le train est en retard, [donc] nous attendons à la gare. | قطار تأخیر دارد، پس در ایستگاه منتظر می‌مانیم. | d: ou, si, comme | ok: alors
+# car
+Je reste à la maison, [car] je suis malade. | در خانه می‌مانم، چون مریضم. | ok: parce que
+Nous prenons un taxi, [car] le bus est en retard. | تاکسی می‌گیریم، چون اتوبوس دیر کرده. | d: si, ou, comme | ok: parce que
+Elle est fatiguée, [car] son travail est difficile. | او خسته است، چون کارش سخت است. | ok: parce que
+Prends un manteau, [car] ce soir, il fait froid. | یک پالتو بردار، چون امشب هوا سرد است. | ok: parce que
+Je ne mange pas, [car] je n'ai pas faim. | غذا نمی‌خورم، چون گرسنه نیستم. | d: comme, donc, si | ok: parce que
+Le restaurant est fermé, [car] c'est lundi. | رستوران بسته است، چون دوشنبه است. | d: comme, ou, donc | ok: parce que
+# quand-conj
+[Quand] il pleut, je prends le bus. | وقتی باران می‌آید، با اتوبوس می‌روم. | d: Mais, Ou, Car
+Je bois un thé [quand] j'ai froid. | وقتی سردم است، چای می‌خورم. | d: mais, ou, donc
+[Quand] je suis fatigué, je me couche tôt. | وقتی خسته‌ام، زود می‌خوابم. | d: Mais, Ou, Car
+Téléphone-moi [quand] tu arrives à la gare. | وقتی به ایستگاه رسیدی، به من زنگ بزن. | d: mais, donc, car
+[Quand] mon père rentre du{du-contr} travail, nous mangeons ensemble. | وقتی پدرم از سر کار برمی‌گردد، با هم غذا می‌خوریم. | d: Mais, Ou, Car
+Ma mère est contente [quand] nous sommes à la maison. | مادرم وقتی ما خانه‌ایم خوشحال است. | d: mais, ou, donc
+# plus-2
+Je n'ai [plus] faim, merci. | دیگر گرسنه نیستم، ممنون.
+Il ne pleut [plus], on peut sortir. | دیگر باران نمی‌آید، می‌توانیم بیرون برویم.
+Ma tante n'habite [plus] à Paris. | خاله‌ام دیگر در پاریس زندگی نمی‌کند.
+Il n'y a [plus] de lait dans la cuisine. | توی آشپزخانه دیگر شیر نیست. | d: toujours, d'abord, souvent
+Je ne travaille [plus] le samedi. | دیگر شنبه‌ها کار نمی‌کنم.
+Les enfants ne sont [plus] petits. | بچه‌ها دیگر کوچک نیستند.
+# encore-2
+Lis la phrase [encore] une fois, s'il te plaît. | لطفاً جمله را یک بار دیگر بخوان.
+Le bus est [encore] en retard ! | اتوبوس باز هم دیر کرده!
+Tu manges [encore] du chocolat ? | باز هم شکلات می‌خوری؟ | d: hier, tôt, puis
+Je voudrais [encore] un peu de soupe, s'il vous plaît. | لطفاً باز هم کمی سوپ می‌خواهم. | d: hier, tôt, puis
+Il pleut [encore] aujourd'hui. | امروز هم باز باران می‌آید. | d: tôt, hier, demain
+Paul a [encore] oublié sa clé. | پل باز هم کلیدش را جا گذاشته. | d: aujourd'hui, parfois, bientôt
+# personne-pron
+Il n'y a [personne] à la maison. | هیچ‌کس خانه نیست.
+Je ne connais [personne] dans cette ville. | در این شهر هیچ‌کس را نمی‌شناسم.
+[Personne] ne répond au téléphone. | هیچ‌کس تلفن را جواب نمی‌دهد.
+Tu attends quelqu'un ? – Non, [personne]. | منتظر کسی هستی؟ – نه، هیچ‌کس.
+Le dimanche, il n'y a [personne] dans la rue. | یکشنبه‌ها هیچ‌کس توی خیابان نیست.
+[Personne] ne comprend cet exercice. | هیچ‌کس این تمرین را نمی‌فهمد.
+# aucun
+Je n'ai [aucune] idée, désolé. | هیچ نظری ندارم، ببخشید. | d: chaque, cette, quelle
+Il n'y a [aucun] problème. | هیچ مشکلی نیست.
+Le dimanche, il n'y a [aucun] bus dans le village. | یکشنبه‌ها در روستا هیچ اتوبوسی نیست.
+Je n'ai [aucune] question, merci. | هیچ سؤالی ندارم، ممنون. | d: chaque, cette, quelle
+[Aucun] magasin n'est ouvert le dimanche ici. | اینجا یکشنبه‌ها هیچ مغازه‌ای باز نیست.
+Il ne connaît [aucun] mot de persan. | او هیچ کلمهٔ فارسی‌ای بلد نیست.
+# si-adv
+Tu ne viens pas ? – [Si], je viens ! | نمی‌آیی؟ – چرا، می‌آیم! | d: Oui, Non, Aussi
+Tu n'as pas faim ? – [Si], un peu. | گرسنه نیستی؟ – چرا، یک کم. | d: Oui, Non, Aussi
+Paul n'est pas là ? – [Si], il est dans sa chambre. | پل اینجا نیست؟ – چرا، توی اتاقش است. | d: Oui, Non, Aussi
+Vous ne parlez pas français ? – [Si], un peu. | فرانسوی حرف نمی‌زنید؟ – چرا، کمی. | d: Oui, Non, Aussi
+Ce n'est pas loin ? – [Si], c'est très loin. | دور نیست؟ – چرا، خیلی دور است. | d: Oui, Non, Aussi
+Tu n'aimes pas le thé ? – [Si], j'adore ça ! | چای دوست نداری؟ – چرا، عاشقش هستم! | d: Oui, Non, Aussi
+# seulement
+J'ai [seulement] dix euros dans mon sac. | فقط ده یورو توی کیفم دارم. | ok: juste
+Il travaille [seulement] le matin. | او فقط صبح‌ها کار می‌کند. | ok: juste
+Nous restons [seulement] deux jours à Lyon. | فقط دو روز در لیون می‌مانیم. | ok: juste
+Elle a [seulement] six ans, mais elle lit bien. | او فقط شش سالش است، اما خوب می‌خواند. | ok: juste
+La gare est [seulement] à cinq minutes à pied. | ایستگاه فقط پنج دقیقه پیاده راه است. | ok: juste
+Je bois [seulement] de l'eau pendant le repas. | موقع غذا فقط آب می‌خورم. | ok: juste
+# juste
+Je voudrais [juste] un café, merci. | فقط یک قهوه می‌خواهم، ممنون. | ok: seulement
+J'ai [juste] une petite question. | فقط یک سؤال کوچک دارم. | ok: seulement
+Non merci, je regarde [juste]. | نه ممنون، فقط نگاه می‌کنم. | ok: seulement
+Attends, [juste] une minute ! | صبر کن، فقط یک دقیقه! | ok: seulement
+Il n'est pas malade, il est [juste] fatigué. | مریض نیست، فقط خسته است. | ok: seulement
+Ce soir, je veux [juste] dormir. | امشب فقط می‌خواهم بخوابم. | ok: seulement
+# quelques
+J'ai [quelques] questions pour vous. | چند تا سؤال از شما دارم. | d: chaque, aucun, quel | ok: plusieurs
+Nous partons [quelques] jours à la montagne. | چند روزی به کوه می‌رویم. | d: chaque, aucun, quel | ok: plusieurs
+Elle connaît [quelques] mots de persan. | او چند کلمه فارسی بلد است. | d: chaque, aucun, quel | ok: plusieurs
+Il y a [quelques] nuages ce matin. | امروز صبح چند تکه ابر توی آسمان هست. | d: chaque, aucun, quel | ok: plusieurs
+J'achète [quelques] pommes au marché. | از بازار چند تا سیب می‌خرم. | d: chaque, aucun, quel | ok: plusieurs
+Attends [quelques] minutes, s'il te plaît. | لطفاً چند دقیقه صبر کن. | d: chaque, aucun, quel | ok: plusieurs
+# plusieurs
+Elle parle [plusieurs] langues. | او چندین زبان حرف می‌زند. | d: chaque, aucun, quel | ok: quelques
+Il y a [plusieurs] restaurants dans notre rue. | در خیابان ما چندین رستوران هست. | d: chaque, aucun, quel | ok: quelques
+J'ai téléphoné [plusieurs] fois ce matin. | امروز صبح چند بار زنگ زدم. | d: chaque, aucun, quel | ok: quelques
+Nous avons visité [plusieurs] musées à Paris. | در پاریس چندین موزه را دیدیم. | d: chaque, aucun, quel | ok: quelques
+Mon oncle a [plusieurs] voitures. | عمویم چندین ماشین دارد. | d: chaque, aucun, quel | ok: quelques
+Ce médecin travaille dans [plusieurs] hôpitaux. | این پزشک در چندین بیمارستان کار می‌کند. | d: chaque, aucun, quel | ok: quelques
+# certain
+[Certains] jours, je travaille à la maison. | بعضی روزها در خانه کار می‌کنم.
+[Certaines] personnes n'aiment pas le café. | بعضی‌ها قهوه دوست ندارند.
+[Certains] élèves parlent déjà bien français. | بعضی از شاگردها از همین حالا خوب فرانسوی حرف می‌زنند.
+Dans [certains] pays, il fait chaud toute l'année. | در بعضی کشورها تمام سال هوا گرم است.
+[Certaines] chansons sont très tristes. | بعضی ترانه‌ها خیلی غمگین‌اند.
+[Certains] restaurants sont fermés le lundi. | بعضی رستوران‌ها دوشنبه‌ها تعطیل‌اند.
+# chacun
+[Chacun] a sa chambre dans cette maison. | در این خانه هر کس اتاق خودش را دارد. | d: Quoi, Rien, Quelque chose
+Les enfants ont [chacun] un cadeau. | هر کدام از بچه‌ها یک هدیه دارد.
+[Chacun] de mes frères habite dans une autre ville. | هر کدام از برادرهایم در شهر دیگری زندگی می‌کند. | d: Personne, Quelqu'un, Rien
+Les billets coûtent dix euros [chacun]. | بلیت‌ها هر کدام ده یورو قیمت دارند.
+Dans la classe, [chacun] a un livre. | در کلاس هر کس یک کتاب دارد. | d: quoi, qui, rien
+Au restaurant, [chacun] paie son repas. | در رستوران هر کس پول غذای خودش را می‌دهد. | d: personne, quoi, rien
+# mieux
+Je vais [mieux] aujourd'hui, merci. | امروز حالم بهتر است، ممنون.
+Tu chantes [mieux] que moi. | تو از من بهتر آواز می‌خوانی.
+Mon frère nage [mieux] que moi. | برادرم از من بهتر شنا می‌کند.
+C'est [mieux] comme ça. | این‌طوری بهتر است. | d: très, vite, ensemble
+Avec mes lunettes, je vois [mieux]. | با عینکم بهتر می‌بینم.
+Mon fils dort [mieux] dans sa chambre. | پسرم توی اتاق خودش بهتر می‌خوابد.
+# meilleur
+C'est mon [meilleur] ami. | او بهترین دوست من است. | d: court, difficile, rapide
+Ce restaurant est [meilleur] que l'autre. | این رستوران از آن یکی بهتر است.
+Ma sœur est [meilleure] que moi en{en} anglais. | خواهرم در انگلیسی از من بهتر است.
+Ce gâteau est [meilleur] avec du chocolat. | این کیک با شکلات بهتر است.
+Les fruits sont [meilleurs] en été. | میوه‌ها در تابستان بهترند.
+C'est la [meilleure] boulangerie du{du-contr} quartier. | این بهترین نانوایی محله است. | d: facile, rapide, longue
+# assez
+Je n'ai pas [assez] d'argent pour ce voyage. | برای این سفر پول کافی ندارم. | d: mal, très, ensemble
+Tu dors [assez] la nuit ? | شب‌ها به اندازهٔ کافی می‌خوابی؟ | d: vite, très, ensemble
+Il y a [assez] de chaises pour tout le monde ? | برای همه صندلی کافی هست؟ | d: très, mieux, ensemble
+Cette valise n'est pas [assez] grande. | این چمدان به اندازهٔ کافی بزرگ نیست. | d: ensemble, mieux, vite
+Merci, j'ai [assez] mangé. | ممنون، به اندازهٔ کافی خوردم. | d: vite, très, ensemble
+Il fait [assez] chaud pour aller à la plage. | هوا به اندازهٔ کافی گرم است که به ساحل برویم. | d: mieux, ensemble, vite
+# presque
+Il est [presque] huit heures. | تقریباً ساعت هشت است.
+J'ai [presque] fini mon travail. | کارم تقریباً تمام شده. | d: très, ensemble, trop
+Nous sommes [presque] arrivés. | تقریباً رسیدیم.
+Elle va [presque] tous les jours à la piscine. | او تقریباً هر روز به استخر می‌رود.
+Mon fils est [presque] aussi grand que moi. | پسرم تقریباً هم‌قد من است.
+Ce pull coûte [presque] cent euros. | این پلیور تقریباً صد یورو قیمت دارد.
+# environ
+Il y a [environ] trente élèves dans la classe. | حدود سی شاگرد در کلاس هست. | d: toujours, souvent, beaucoup
+La gare est à [environ] dix minutes à pied. | ایستگاه حدود ده دقیقه پیاده راه است.
+Ce sac coûte [environ] cinquante euros. | این کیف حدوداً پنجاه یورو قیمت دارد.
+J'habite ici depuis [environ] deux ans. | حدود دو سال است که اینجا زندگی می‌کنم. | d: mieux, beaucoup, ensemble
+Mon grand-père a [environ] quatre-vingts ans. | پدربزرگم حدود هشتاد سال دارد.
+Il faut [environ] une heure pour aller à Lyon. | برای رفتن به لیون حدود یک ساعت وقت لازم است.
+# plutôt
+Le film est [plutôt] bon. | فیلم نسبتاً خوب است. | d: plus, peu, ensemble
+Il fait [plutôt] froid aujourd'hui. | امروز هوا نسبتاً سرد است. | d: mieux, ensemble, vite
+Mon nouvel appartement est [plutôt] grand. | آپارتمان جدیدم نسبتاً بزرگ است. | d: ensemble, mieux, vite
+Elle est [plutôt] contente de son travail. | او از کارش نسبتاً راضی است. | d: ensemble, vite, mieux
+Cet exercice est [plutôt] facile. | این تمرین نسبتاً آسان است. | d: beaucoup, ensemble, vite
+Les gens ici sont [plutôt] sympas. | مردم اینجا نسبتاً خوش‌برخوردند. | d: ensemble, beaucoup, vite
+# exactement
+Il est [exactement] midi. | ساعت دقیقاً دوازده ظهر است.
+Oui, c'est [exactement] ça ! | بله، دقیقاً همین است! | d: vite, ensemble, beaucoup
+Tu habites où [exactement] ? | دقیقاً کجا زندگی می‌کنی؟
+Le train arrive [exactement] à l'heure. | قطار دقیقاً سر وقت می‌رسد.
+Je ne sais pas [exactement] combien ça coûte. | دقیقاً نمی‌دانم چقدر قیمت دارد. | d: peu, moins, ensemble
+Ma fille a [exactement] dix ans aujourd'hui. | دخترم امروز درست ده ساله می‌شود.
+# complètement
+J'ai [complètement] oublié ton anniversaire ! | تولدت را کاملاً فراموش کردم!
+Le ciel est [complètement] gris. | آسمان کاملاً خاکستری است. | d: mieux, ensemble, vite
+Je ne suis pas [complètement] d'accord avec toi. | با تو کاملاً موافق نیستم. | d: ensemble, vite, mieux
+La maison est [complètement] propre maintenant. | خانه حالا کاملاً تمیز است. | d: mieux, ensemble, vite
+Mes chaussures sont [complètement] sales. | کفش‌هایم کاملاً کثیف‌اند. | d: ensemble, vite, mieux
+Ce mot est [complètement] nouveau pour moi. | این کلمه برای من کاملاً تازه است.
+# longtemps
+J'attends le bus depuis [longtemps]. | خیلی وقت است منتظر اتوبوسم.
+Tu restes [longtemps] à Paris ? | مدت زیادی در پاریس می‌مانی؟ | d: enfin, tard, puis
+Je ne peux pas rester [longtemps], je travaille ce soir. | نمی‌توانم زیاد بمانم، امشب کار دارم. | d: ensuite, souvent, hier
+Il parle [longtemps] au téléphone avec sa mère. | او مدت زیادی با مادرش تلفنی حرف می‌زند. | d: plus, puis, tôt
+On n'attend pas [longtemps] chez ce médecin. | پیش این پزشک زیاد منتظر نمی‌مانیم.
+Bonjour Marie ! Ça fait [longtemps] ! | سلام ماری! خیلی وقت است ندیدمت!
+# surtout
+J'aime les fruits, [surtout] les pommes. | میوه دوست دارم، مخصوصاً سیب. | d: oui, où, pourquoi
+Il fait froid ici, [surtout] le matin. | اینجا هوا سرد است، مخصوصاً صبح‌ها. | d: pourquoi, comment, oui
+Elle aime le sport, [surtout] le tennis. | او ورزش دوست دارد، مخصوصاً تنیس. | d: combien, voilà, comment
+[Surtout], n'oublie pas ton passeport ! | از همه مهم‌تر، پاسپورتت را فراموش نکن!
+Les enfants aiment ce parc, [surtout] en été. | بچه‌ها این پارک را دوست دارند، مخصوصاً در تابستان. | d: combien, comment, voilà
+Je travaille beaucoup, [surtout] le lundi. | خیلی کار می‌کنم، مخصوصاً دوشنبه‌ها. | d: pourquoi, comment, voilà
+# probablement
+Il va [probablement] pleuvoir demain. | احتمالاً فردا باران می‌آید. | ok: peut-être
+Paul est [probablement] chez lui. | پل احتمالاً خانه‌اش است. | ok: peut-être
+Nous partons [probablement] en juillet. | احتمالاً در ژوئیه راه می‌افتیم. | ok: peut-être
+C'est [probablement] la bonne réponse. | این احتمالاً جواب درست است. | ok: peut-être
+Le magasin est [probablement] fermé{fermé} maintenant. | مغازه احتمالاً الان بسته است. | d: bien sûr, d'accord, alors | ok: peut-être
+Elle a [probablement] oublié notre rendez-vous. | احتمالاً قرارمان را فراموش کرده. | d: d'accord, vraiment, alors | ok: peut-être
+# en fait
+[En fait], ce n'est pas loin d'ici. | در واقع، از اینجا دور نیست. | d: Combien, Où, Pourquoi
+[En fait], je préfère rester à la maison ce soir. | راستش، ترجیح می‌دهم امشب خانه بمانم. | d: Combien, Même, Où
+C'est facile, [en fait] ! | در واقع آسان است! | d: voici, combien, pourquoi
+[En fait], Marie est la sœur de Paul. | در واقع، ماری خواهر پل است. | d: Combien, Pourquoi, Voici
+Je n'ai pas faim, [en fait]. | راستش، گرسنه نیستم. | d: comment, voilà, combien
+[En fait], le musée est fermé le mardi. | در واقع، موزه سه‌شنبه‌ها تعطیل است. | d: Juste, Quand, Combien
+# quand même
+Il pleut, mais je sors [quand même]. | باران می‌آید، اما با این حال بیرون می‌روم. | d: voilà, comment, pourquoi
+Je suis fatigué, mais je vais [quand même] au travail. | خسته‌ام، ولی با این حال سر کار می‌روم. | d: voilà, si, combien
+Le film est long, mais je l'aime [quand même]. | فیلم طولانی است، اما با این حال دوستش دارم. | d: comment, combien, voilà
+Merci [quand même], c'est gentil ! | به هر حال ممنون، لطف داری! | d: pourquoi, même, combien
+Il n'a pas faim, mais il mange [quand même] un peu. | گرسنه نیست، اما با این حال کمی می‌خورد. | d: non, combien, voilà
+C'est cher, mais nous achetons [quand même] la voiture. | گران است، اما با این حال ماشین را می‌خریم. | d: comment, combien, voilà
+# pas du tout
+Je n'aime [pas du tout] le froid. | اصلاً سرما را دوست ندارم.
+Tu es fatigué ? – Non, [pas du tout] ! | خسته‌ای؟ – نه، اصلاً!
+Il ne comprend [pas du tout] la question. | او اصلاً سؤال را نمی‌فهمد.
+Ce n'est [pas du tout] cher. | اصلاً گران نیست.
+Elle ne parle [pas du tout] anglais. | او اصلاً انگلیسی حرف نمی‌زند.
+Le restaurant n'est [pas du tout] loin d'ici. | رستوران اصلاً از اینجا دور نیست.
+# au moins
+Il faut dormir [au moins] huit heures. | باید دست‌کم هشت ساعت خوابید.
+Bois [au moins] un verre d'eau ! | دست‌کم یک لیوان آب بخور!
+Il y a [au moins] cinquante personnes à la fête. | دست‌کم پنجاه نفر در جشن هستند.
+Ce voyage coûte [au moins] mille euros. | این سفر دست‌کم هزار یورو خرج دارد. | d: environ, près, ensemble
+Il fait froid, mais [au moins] il ne pleut pas. | هوا سرد است، اما دست‌کم باران نمی‌آید.
+Téléphone à ta mère [au moins] une fois par semaine. | دست‌کم هفته‌ای یک بار به مادرت زنگ بزن.
+# heureusement
+[Heureusement], il ne pleut pas aujourd'hui. | خوشبختانه امروز باران نمی‌آید.
+Le bus est en retard, mais [heureusement] nous avons le temps. | اتوبوس دیر کرده، اما خوشبختانه وقت داریم.
+[Heureusement], la pharmacie est ouverte le dimanche. | خوشبختانه داروخانه یکشنبه‌ها باز است.
+[Heureusement], mon frère a une voiture. | خوشبختانه برادرم ماشین دارد.
+[Heureusement] que tu es là ! | چه خوب که تو اینجایی! | d: Malheureusement, Complètement, Rarement
+Le magasin est fermé, mais [heureusement] le marché est ouvert. | مغازه بسته است، اما خوشبختانه بازار باز است.
+# malheureusement
+[Malheureusement], je ne peux pas venir ce soir. | متأسفانه امشب نمی‌توانم بیایم.
+Le magasin est [malheureusement] fermé{fermé} le lundi. | مغازه متأسفانه دوشنبه‌ها تعطیل است.
+[Malheureusement], le train est en retard. | متأسفانه قطار تأخیر دارد.
+J'aime le football, mais [malheureusement] je joue mal. | فوتبال دوست دارم، اما متأسفانه بد بازی می‌کنم.
+[Malheureusement], ma sœur est malade. | متأسفانه خواهرم مریض است.
+Nous avons [malheureusement] peu de temps. | متأسفانه وقت کمی داریم.
+# d'habitude
+[D'habitude], je me lève à sept heures. | معمولاً ساعت هفت از خواب بلند می‌شوم.
+[D'habitude], nous faisons les courses le samedi. | معمولاً شنبه‌ها خرید می‌کنیم.
+Il prend [d'habitude] le bus pour aller au travail. | او معمولاً با اتوبوس سر کار می‌رود.
+Elle boit [d'habitude] du thé, pas de café. | او معمولاً چای می‌خورد، نه قهوه.
+Le train est en retard ? [D'habitude], il est à l'heure. | قطار دیر کرده؟ معمولاً سر وقت است.
+Comme [d'habitude], Paul est en retard ! | پل طبق معمول دیر کرده! | d: tôt, tard, demain
+# quelquefois
+[Quelquefois], je vais au travail à pied. | گاهی پیاده سر کار می‌روم. | ok: Parfois
+Il pleut [quelquefois] en été. | تابستان‌ها گاهی باران می‌آید. | ok: parfois
+Nous mangeons [quelquefois] au restaurant. | گاهی در رستوران غذا می‌خوریم. | ok: parfois
+Mon grand-père oublie [quelquefois] ses lunettes. | پدربزرگم گاهی عینکش را جا می‌گذارد. | ok: parfois
+Les enfants regardent [quelquefois] la télé le soir. | بچه‌ها گاهی شب‌ها تلویزیون تماشا می‌کنند. | ok: parfois
+[Quelquefois], le bus ne vient pas. | گاهی اتوبوس نمی‌آید. | ok: Parfois
+# rarement
+Il pleut [rarement] ici en été. | اینجا تابستان‌ها به ندرت باران می‌آید.
+Je vais [rarement] au cinéma. | به ندرت به سینما می‌روم.
+Mon père mange [rarement] de la viande. | پدرم به ندرت گوشت می‌خورد. | d: aujourd'hui, encore, tôt
+Nous voyons [rarement] nos cousins. | ما به ندرت عموزاده‌هایمان را می‌بینیم. | d: demain, longtemps, tôt
+Elle est [rarement] malade. | او به ندرت مریض می‌شود.
+Ce train est [rarement] en retard. | این قطار به ندرت تأخیر دارد.
+# tout à coup
+[Tout à coup], il a commencé à pleuvoir. | ناگهان باران شروع شد.
+Je marche dans la rue et [tout à coup], je vois Paul. | توی خیابان راه می‌روم و یک‌دفعه پل را می‌بینم.
+[Tout à coup], quelqu'un a ouvert la porte. | ناگهان یک نفر در را باز کرد.
+Il fait beau et [tout à coup], il pleut. | هوا آفتابی است و یک‌دفعه باران می‌گیرد.
+[Tout à coup], elle a eu une idée. | یک‌دفعه فکری به سرش زد.
+[Tout à coup], mon frère est entré dans ma chambre. | ناگهان برادرم وارد اتاقم شد.
+# tout de suite
+Viens ici [tout de suite] ! | فوراً بیا اینجا! | d: ensuite, demain, hier
+J'arrive [tout de suite], attends-moi ! | همین الان می‌آیم، منتظرم باش!
+Le médecin arrive [tout de suite]. | پزشک همین الان می‌آید.
+Après le travail, je rentre [tout de suite] à la maison. | بعد از کار فوراً به خانه برمی‌گردم.
+Tu dois partir [tout de suite] ? | باید همین الان بروی؟
+Il a compris [tout de suite]. | او فوراً فهمید.
+# en même temps
+Nous arrivons [en même temps] à l'école. | ما همزمان به مدرسه می‌رسیم.
+Je ne peux pas parler et écrire [en même temps]. | نمی‌توانم همزمان حرف بزنم و بنویسم.
+Les deux trains partent [en même temps]. | دو قطار همزمان حرکت می‌کنند.
+Elle travaille et elle étudie [en même temps]. | او همزمان کار می‌کند و درس می‌خواند.
+Ne parlez pas tous [en même temps] ! | همه همزمان حرف نزنید! | ok: ensemble
+Il mange et il regarde la télé [en même temps]. | او همزمان غذا می‌خورد و تلویزیون تماشا می‌کند.
+# jusqu'à
+Je travaille [jusqu'à] six heures. | تا ساعت شش کار می‌کنم.
+Le magasin est ouvert [jusqu'à] midi. | مغازه تا ظهر باز است.
+Nous restons à Paris [jusqu'à] dimanche. | تا یکشنبه در پاریس می‌مانیم.
+Marchez [jusqu'à] la gare, puis tournez à gauche. | تا ایستگاه راه بروید، بعد به چپ بپیچید.
+Il dort [jusqu'à] dix heures le week-end. | آخر هفته‌ها تا ساعت ده می‌خوابد.
+Tu restes ici [jusqu'à] quand ? | تا کی اینجا می‌مانی؟
+# pendant que
+[Pendant que] je fais la cuisine, les enfants jouent. | در حالی که من آشپزی می‌کنم، بچه‌ها بازی می‌کنند. | d: Car, Ou, Donc
+Je lis un livre [pendant que] tu dors. | در حالی که تو خوابی، من کتاب می‌خوانم. | d: car, ou, donc
+Ma mère écoute la radio [pendant que] mon père fait la cuisine. | مادرم رادیو گوش می‌دهد، در حالی که پدرم آشپزی می‌کند. | d: car, ou, donc
+[Pendant que] tu attends, tu peux lire ce journal. | در مدتی که منتظری، می‌توانی این روزنامه را بخوانی. | d: Car, Ou, Donc
+[Pendant que] nous mangeons, le chat dort sous la table. | در حالی که ما غذا می‌خوریم، گربه زیر میز می‌خوابد. | d: Car, Ou, Donc
+Fais tes exercices [pendant que] je fais les courses. | در مدتی که من خرید می‌کنم، تمرین‌هایت را انجام بده. | d: car, ou, donc
+# contre
+Je suis [contre] cette idée. | من با این فکر مخالفم.
+Ce soir, Paris joue [contre] Marseille. | امشب پاریس مقابل مارسی بازی می‌کند.
+Tu es pour ou [contre] ? | موافقی یا مخالف؟
+Mes parents sont [contre] ce voyage. | پدر و مادرم با این سفر مخالف‌اند.
+Tout le monde est [contre] moi ! | همه با من مخالف‌اند!
+Elle est [contre] les voitures en ville. | او با ماشین در شهر مخالف است.
+# sauf
+Le magasin est ouvert tous les jours [sauf] le dimanche. | مغازه هر روز به جز یکشنبه باز است. | d: avec, pour, entre
+Tout le monde est là [sauf] Paul. | همه اینجا هستند، به جز پل. | d: avec, pour, entre
+J'aime tous les légumes [sauf] les tomates. | همهٔ سبزی‌ها را دوست دارم، به جز گوجه‌فرنگی. | d: avec, pour, entre
+Mon frère mange tout [sauf] le poisson. | برادرم همه چیز می‌خورد، به جز ماهی. | d: avec, pour, entre
+Toute la famille vient, [sauf] mon oncle. | همهٔ خانواده می‌آیند، به جز عمویم. | d: avec, pour, entre
+Tous les élèves ont compris, [sauf] moi. | همهٔ شاگردها فهمیدند، به جز من. | d: avec, pour, entre
+# à cause de
+Le train est en retard [à cause de] la neige. | قطار به خاطر برف تأخیر دارد.
+Nous restons à la maison [à cause de] la pluie. | به خاطر باران در خانه می‌مانیم.
+Je ne peux pas venir [à cause de] mon travail. | به خاطر کارم نمی‌توانم بیایم.
+Elle est triste [à cause de] son chien malade. | او به خاطر سگ مریضش ناراحت است.
+[À cause de] toi, nous sommes en retard ! | به خاطر تو دیر کردیم!
+Il ne mange pas de gâteau [à cause de] ses dents. | او به خاطر دندان‌هایش کیک نمی‌خورد. | d: contre, à côté de, sous
+# autour de
+Nous sommes assis [autour de] la table. | دور میز نشسته‌ایم.
+Il y a un jardin [autour de] la maison. | دور خانه باغ است.
+Les enfants courent [autour de] l'arbre. | بچه‌ها دور درخت می‌دوند.
+Il y a beaucoup de restaurants [autour de] la gare. | اطراف ایستگاه رستوران زیادی هست.
+Il y a des montagnes [autour de] la ville. | دور تا دور شهر کوه است.
+Les touristes se promènent [autour de] la place. | گردشگرها دور میدان قدم می‌زنند.
+# partout
+Je cherche mes clés [partout]. | همه‌جا دنبال کلیدهایم می‌گردم.
+Le samedi, il y a des gens [partout]. | شنبه‌ها همه‌جا آدم هست.
+Elle va [partout] à vélo. | او همه‌جا با دوچرخه می‌رود.
+Il y a de la neige [partout]. | همه‌جا برف است.
+On trouve ce fromage [partout] en France. | این پنیر همه‌جای فرانسه پیدا می‌شود.
+Tu as mis tes livres [partout] ! | کتاب‌هایت را همه‌جا گذاشته‌ای!
+# dehors
+Les enfants jouent [dehors] après l'école. | بچه‌ها بعد از مدرسه بیرون بازی می‌کنند.
+Prends ton manteau, il fait froid [dehors] ! | پالتویت را بردار، بیرون هوا سرد است!
+On mange [dehors] ce soir ? | امشب بیرون غذا بخوریم؟
+Le chien dort [dehors] en été. | سگ تابستان‌ها بیرون می‌خوابد.
+Attends-moi [dehors], s'il te plaît. | لطفاً بیرون منتظرم باش.
+Il fait beau, allons [dehors] ! | هوا خوب است، برویم بیرون!
+# quelque part
+Mes clés sont [quelque part] dans la maison. | کلیدهایم یک جایی توی خانه است.
+Tu vas [quelque part] ce week-end ? | این آخر هفته جایی می‌روی؟
+J'ai vu cet homme [quelque part]. | این مرد را یک جایی دیده‌ام.
+On mange [quelque part] près de la gare ? | یک جایی نزدیک ایستگاه غذا بخوریم؟
+Il habite [quelque part] en Suisse. | او یک جایی در سوئیس زندگی می‌کند.
+Je voudrais partir [quelque part] au soleil. | دلم می‌خواهد به یک جای آفتابی بروم.
+# en haut
+Ma chambre est [en haut]. | اتاقم طبقهٔ بالاست.
+Les enfants jouent [en haut]. | بچه‌ها طبقهٔ بالا بازی می‌کنند.
+Écrivez la date [en haut] de la page. | تاریخ را بالای صفحه بنویسید.
+Paul est [en haut], dans sa chambre. | پل بالاست، توی اتاقش.
+Les toilettes sont [en haut], à gauche. | دستشویی طبقهٔ بالاست، سمت چپ.
+Le bureau de mon père est [en haut]. | دفتر کار پدرم طبقهٔ بالاست.
+# en bas
+La cuisine est [en bas]. | آشپزخانه طبقهٔ پایین است.
+Je t'attends [en bas]. | پایین منتظرت هستم.
+Les enfants regardent la télé [en bas]. | بچه‌ها پایین تلویزیون تماشا می‌کنند.
+Le prix est écrit [en bas] de la page. | قیمت پایین صفحه نوشته شده.
+Tu dors en haut ou [en bas] ? | بالا می‌خوابی یا پایین؟
+Il y a une boulangerie [en bas] de chez moi. | پایین خانه‌ام یک نانوایی هست.
+# par terre
+Ne mets pas ton sac [par terre] ! | کیفت را روی زمین نگذار!
+Le chat dort [par terre]. | گربه روی زمین می‌خوابد.
+Les enfants sont assis [par terre]. | بچه‌ها روی زمین نشسته‌اند.
+Il y a de l'eau [par terre] dans la cuisine. | کف آشپزخانه آب ریخته.
+Pourquoi tes livres sont [par terre] ? | چرا کتاب‌هایت روی زمین است؟
+Chez ma grand-mère, nous mangeons [par terre]. | خانهٔ مادربزرگم روی زمین غذا می‌خوریم.
+# n'est-ce pas
+Tu viens ce soir, [n'est-ce pas] ? | امشب می‌آیی، مگر نه؟ | d: même, surtout, voilà
+Il fait beau aujourd'hui, [n'est-ce pas] ? | امروز هوا خوب است، نه؟ | d: surtout, voilà, même
+Vous êtes français, [n'est-ce pas] ? | شما فرانسوی هستید، این‌طور نیست؟ | d: voilà, même, surtout
+C'est ton frère, [n'est-ce pas] ? | این برادرت است، مگر نه؟ | d: même, voilà, surtout
+Le musée est ouvert le lundi, [n'est-ce pas] ? | موزه دوشنبه‌ها باز است، این‌طور نیست؟ | d: surtout, même, voilà
+Tu as fini tes exercices, [n'est-ce pas] ? | تمرین‌هایت را تمام کرده‌ای، مگر نه؟ | d: voilà, surtout, même
+# eh
+[Eh], Paul ! Viens ici ! | هی، پل! بیا اینجا!
+[Eh] bien, je ne sais pas. | خب، نمی‌دانم. | d: Bonjour, Allô, Enchanté
+[Eh], attends-moi ! | هی، منتظرم باش! | d: Enchanté, Merci, Bienvenue
+[Eh] oui, c'est la vie ! | خب دیگر، زندگی همین است!
+[Eh], regarde ! Il neige ! | هی، نگاه کن! برف می‌آید!
+[Eh] bien, bonne nuit, les enfants. | خب، شب بخیر بچه‌ها.
+# bravo
+[Bravo], c'est la bonne réponse ! | آفرین، جواب درست همین است! | d: Bienvenue, Bonjour, Allô
+[Bravo] pour ton travail ! | بابت کارت آفرین! | d: Enchanté, Allô, Bonjour
+Tu parles très bien français, [bravo] ! | خیلی خوب فرانسوی حرف می‌زنی، آفرین! | d: allô, enchanté, au revoir
+[Bravo] les enfants, c'est très beau ! | آفرین بچه‌ها، خیلی قشنگ است! | d: Allô, Enchanté, Excusez-moi
+Tu as fini le livre ? [Bravo] ! | کتاب را تمام کردی؟ آفرین! | d: Allô, Pardon, Enchanté
+Tout le monde dit [bravo] au chanteur. | همه به خواننده آفرین می‌گویند. | d: allô, enchanté, bienvenue
+# devenir
+Je veux [devenir] médecin. | می‌خواهم پزشک شوم.
+Le ciel [devient] gris. | آسمان خاکستری می‌شود.
+Ma fille est [devenue] professeur. | دخترم معلم شد.
+Les enfants [deviennent] grands. | بچه‌ها بزرگ می‌شوند.
+Ce quartier [devient] très cher. | این محله خیلی گران می‌شود.
+Nous sommes [devenus] amis à l'école. | ما در مدرسه با هم دوست شدیم.
+# revenir
+Je [reviens] dans cinq minutes. | پنج دقیقه دیگر برمی‌گردم.
+Quand est-ce que tu [reviens] de vacances ? | کی از تعطیلات برمی‌گردی؟
+Mon père [revient] du{du-contr} travail à six heures. | پدرم ساعت شش از سر کار برمی‌گردد. | ok: rentre
+Elle est [revenue] de Paris hier. | او دیروز از پاریس برگشت.
+[Reviens] vite, on t'attend ! | زود برگرد، منتظرت هستیم!
+Nous [revenons] ici chaque été. | ما هر تابستان به اینجا برمی‌گردیم.
+# retourner
+Je [retourne] en{en} Iran en{en} août. | ماه اوت به ایران برمی‌گردم.
+Nous voulons [retourner] à Rome. | می‌خواهیم دوباره به رم برویم.
+Elle est [retournée] à la maison pour chercher son sac. | او به خانه برگشت تا کیفش را بیاورد.
+Tu [retournes] au travail après le déjeuner ? | بعد از ناهار به سر کار برمی‌گردی؟
+Ils [retournent] chaque année dans leur village. | آن‌ها هر سال به روستایشان برمی‌گردند.
+Je ne veux pas [retourner] dans ce restaurant. | نمی‌خواهم دوباره به آن رستوران بروم.
+# laisser
+J'ai [laissé] mon sac dans le bus. | کیفم را توی اتوبوس جا گذاشتم.
+[Laisse] la porte ouverte, s'il te plaît. | لطفاً در را باز بگذار. | d: Laisses, Laissent, Laissez
+Je [laisse] la voiture devant la gare. | ماشین را جلوی ایستگاه می‌گذارم.
+Tu [laisses] ton chien seul à la maison ? | سگت را تنها در خانه می‌گذاری؟
+Les parents [laissent] les enfants chez leur grand-mère. | پدر و مادر بچه‌ها را پیش مادربزرگشان می‌گذارند.
+Nous [laissons] nos chaussures devant la porte. | کفش‌هایمان را جلوی در می‌گذاریم.
+# laisser un message
+Je [laisse un message] à Marie. | برای ماری پیام می‌گذارم.
+Vous voulez [laisser un message] ? | می‌خواهید پیام بگذارید؟
+Il n'est pas là, tu peux [laisser un message]. | او اینجا نیست، می‌توانی پیام بگذاری.
+J'ai [laissé un message] à ma mère. | برای مادرم پیام گذاشتم.
+[Laissez un message], s'il vous plaît. | لطفاً پیام بگذارید. | d: Laisse un message, Laisses un message, Laissent un message
+Paul [laisse un message] à son professeur. | پل برای معلمش پیام می‌گذارد.
+# suivre
+[Suivez]-moi, s'il vous plaît. | لطفاً دنبال من بیایید.
+Le chien [suit] les enfants partout. | سگ همه‌جا دنبال بچه‌ها می‌رود.
+Nous [suivons] un cours de français le soir. | ما شب‌ها کلاس فرانسوی می‌رویم.
+[Suivez] cette rue jusqu'à la place. | این خیابان را تا میدان مستقیم بروید. | d: Suit, Suivons, Suivent
+Mon père [suit] tous les matchs de football. | پدرم همهٔ مسابقه‌های فوتبال را دنبال می‌کند.
+Les élèves [suivent] le professeur dans le musée. | شاگردها در موزه دنبال معلم می‌روند.
+# arrêter
+[Arrête] de parler, s'il te plaît ! | لطفاً دیگر حرف نزن! | d: Arrêtes, Arrêtent, Arrêtez
+Mon père [arrête] de travailler à six heures. | پدرم ساعت شش دست از کار می‌کشد.
+Il a [arrêté] le football à vingt ans. | او در بیست سالگی فوتبال را کنار گذاشت.
+[Arrêtez] la voiture ici, s'il vous plaît. | لطفاً ماشین را اینجا نگه دارید. | d: Arrête, Arrêtes, Arrêtent
+Elle veut [arrêter] le café. | او می‌خواهد قهوه را ترک کند. | d: venir, dormir, continuer
+Les enfants, [arrêtez] de jouer, on mange ! | بچه‌ها، بازی را تمام کنید، وقت غذاست! | d: arrête, arrêtes, arrêtent
+# s'arrêter
+Le bus s'[arrête] devant l'école. | اتوبوس جلوی مدرسه می‌ایستد.
+Ce train ne s'[arrête] pas à Lyon. | این قطار در لیون توقف نمی‌کند.
+Nous nous [arrêtons] pour manger un sandwich. | می‌ایستیم تا یک ساندویچ بخوریم.
+La pluie ne s'[arrête] pas. | باران بند نمی‌آید.
+On s'[arrête] au café ? Je suis fatigué. | کمی توی کافه توقف کنیم؟ خسته‌ام.
+Les voitures s'[arrêtent] pour les enfants. | ماشین‌ها برای بچه‌ها می‌ایستند.
+# essayer
+J'[essaie] de comprendre. | سعی می‌کنم بفهمم. | d: essayons, essayez, essaient
+Je peux [essayer] cette veste ? | می‌توانم این کت را پرو کنم؟
+Tu [essaies] encore une fois ? | یک بار دیگر امتحان می‌کنی؟ | d: essayons, essayez, essaient
+Elle a [essayé] la robe bleue. | او لباس آبی را پرو کرد.
+Vous [essayez] ce gâteau ? Il est délicieux ! | این کیک را امتحان می‌کنید؟ خوشمزه است!
+Nous [essayons] de parler français à la maison. | سعی می‌کنیم در خانه فرانسوی حرف بزنیم.
+# perdre
+J'ai [perdu] mes clés. | کلیدهایم را گم کرده‌ام.
+Lyon a [perdu] le match hier. | لیون دیروز بازی را باخت.
+Tu [perds] toujours ton téléphone ! | تو همیشه گوشی‌ات را گم می‌کنی!
+Ne [perds] pas ton billet ! | بلیتت را گم نکن! | d: perd, perdez, perdent
+Je ne veux pas [perdre] mon temps. | نمی‌خواهم وقتم را تلف کنم.
+Elle a [perdu] son sac dans le métro. | او کیفش را توی مترو گم کرد.
+# gagner
+Qui [gagne] le match ? | چه کسی بازی را می‌برد؟
+Paris a [gagné] contre Lyon. | پاریس مقابل لیون برد.
+Tu [gagnes] toujours à ce jeu ! | تو همیشه توی این بازی می‌بری!
+Je veux [gagner] ce match. | می‌خواهم این مسابقه را ببرم.
+Elle a [gagné] un voyage à Rome. | او یک سفر به رم برنده شد.
+Nous [gagnons] souvent au tennis. | ما اغلب در تنیس برنده می‌شویم.
+# gagner-2
+Il [gagne] beaucoup d'argent. | او پول زیادی درمی‌آورد.
+Combien tu [gagnes] par mois ? | ماهی چقدر درآمد داری؟
+Elle [gagne] bien sa vie. | او درآمد خوبی دارد.
+Je travaille le samedi pour [gagner] un peu d'argent. | شنبه‌ها کار می‌کنم تا کمی پول دربیاورم.
+Les vendeurs [gagnent] peu dans ce magasin. | فروشنده‌های این مغازه درآمد کمی دارند.
+Nous [gagnons] assez pour vivre. | درآمدمان برای زندگی کافی است.
+# tomber
+Ne cours pas, tu vas [tomber] ! | ندو، می‌افتی!
+Le verre est [tombé] par terre. | لیوان افتاد روی زمین.
+Mon fils [tombe] souvent de son vélo. | پسرم اغلب از دوچرخه‌اش می‌افتد.
+Elle est [tombée] dans l'escalier. | او روی پله‌ها زمین خورد.
+Les pommes [tombent] de l'arbre. | سیب‌ها از درخت می‌افتند.
+Les enfants [tombent] souvent quand ils courent. | بچه‌ها وقتی می‌دوند اغلب زمین می‌خورند.
+# rendre
+Je te [rends] ton livre demain. | فردا کتابت را پس می‌دهم.
+[Rends]-moi mon stylo, s'il te plaît. | لطفاً خودکارم را پس بده.
+Il [rend] les livres à la bibliothèque. | او کتاب‌ها را به کتابخانه پس می‌دهد.
+J'ai [rendu] la voiture à mon frère. | ماشین را به برادرم پس دادم.
+Nous [rendons] les clés à l'hôtel. | کلیدها را به هتل پس می‌دهیم.
+Les élèves [rendent] leurs exercices au professeur. | شاگردها تمرین‌هایشان را به معلم تحویل می‌دهند.
+# tenir
+[Tiens], c'est pour toi ! | بیا، این مال توست!
+Elle [tient] son bébé dans ses bras. | او بچه‌اش را در آغوش گرفته.
+Je [tiens] la porte pour toi. | در را برایت نگه می‌دارم.
+[Tenez], voici votre billet. | بفرمایید، این هم بلیت شما. | d: Tient, Tenons, Tiennent
+Le petit garçon [tient] la main de sa mère. | پسر کوچک دست مادرش را گرفته.
+Tu peux [tenir] mon sac une minute ? | می‌توانی یک دقیقه کیفم را نگه داری؟ | d: suivre, entendre, vivre
+# garder
+Tu peux [garder] ce livre. | می‌توانی این کتاب را نگه داری.
+Ma grand-mère [garde] les enfants le mercredi. | مادربزرگم چهارشنبه‌ها از بچه‌ها نگهداری می‌کند.
+Je [garde] toutes mes photos sur l'ordinateur. | همهٔ عکس‌هایم را روی کامپیوتر نگه می‌دارم.
+[Gardez] votre billet jusqu'à la fin du{du-contr} voyage. | بلیتتان را تا آخر سفر نگه دارید. | d: Garde, Gardes, Gardent
+Nous [gardons] le chien de nos voisins pendant les vacances. | در تعطیلات سگ همسایه‌هایمان را نگه می‌داریم.
+Il a [gardé] son vieux vélo. | او دوچرخهٔ قدیمی‌اش را نگه داشته.
+# changer
+Je [change] de chemise pour la fête. | برای جشن پیراهنم را عوض می‌کنم.
+Tu as beaucoup [changé], Marie ! | ماری، چقدر عوض شده‌ای!
+Le temps [change] vite à la montagne. | در کوهستان هوا زود عوض می‌شود.
+Nous devons [changer] de train à Lyon. | باید در لیون قطار عوض کنیم.
+Il veut [changer] de travail. | او می‌خواهد کارش را عوض کند.
+Les prix [changent] tous les mois. | قیمت‌ها هر ماه عوض می‌شوند.
+# sentir
+Viens, [sens] ces fleurs ! | بیا، این گل‌ها را بو کن! | d: sent, sentez, sentent
+Ça [sent] le café ici. | اینجا بوی قهوه می‌آید.
+Le chien [sent] la viande. | سگ بوی گوشت را حس می‌کند.
+Ta maison [sent] le chocolat. | خانه‌ات بوی شکلات می‌دهد.
+Cette soupe [sent] le poisson. | این سوپ بوی ماهی می‌دهد.
+Les enfants [sentent] les fleurs dans le jardin. | بچه‌ها گل‌های باغ را بو می‌کنند.
+# sentir bon
+Ce gâteau [sent bon] ! | این کیک چه بوی خوبی می‌دهد!
+Les fleurs [sentent bon]. | گل‌ها بوی خوبی می‌دهند.
+Ça [sent bon] dans la cuisine ! | توی آشپزخانه بوی خوبی می‌آید!
+Ta chemise [sent bon]. | پیراهنت بوی خوبی می‌دهد.
+Après la pluie, la forêt [sent bon]. | بعد از باران جنگل بوی خوبی می‌دهد.
+Ta soupe [sent bon] ! | سوپت چه بوی خوبی می‌دهد!
+# sentir mauvais
+Ce poisson [sent mauvais]. | این ماهی بوی بد می‌دهد.
+Tes chaussures [sentent mauvais] ! | کفش‌هایت بوی بد می‌دهند!
+Ça [sent mauvais] ici, ouvre la fenêtre ! | اینجا بوی بد می‌آید، پنجره را باز کن!
+Le lait [sent mauvais], ne le bois pas. | شیر بوی بد می‌دهد، آن را نخور.
+Les toilettes [sentent mauvais]. | دستشویی بوی بد می‌دهد.
+Le chien est sale, il [sent mauvais]. | سگ کثیف است، بوی بد می‌دهد.
+# se sentir
+Je me [sens] fatigué aujourd'hui. | امروز احساس خستگی می‌کنم.
+Tu te [sens] bien aujourd'hui ? | امروز حالت خوب است؟
+Elle se [sent] seule dans cette ville. | او در این شهر احساس تنهایی می‌کند.
+Nous nous [sentons] bien ici. | ما اینجا احساس راحتی می‌کنیم.
+Mon père ne se [sent] pas bien. | پدرم حالش خوب نیست.
+Les enfants se [sentent] heureux chez leurs grands-parents. | بچه‌ها خانهٔ پدربزرگ و مادربزرگشان احساس خوشحالی می‌کنند.
+# raconter
+Mon grand-père [raconte] des histoires. | پدربزرگم قصه تعریف می‌کند.
+[Raconte]-moi ton voyage ! | از سفرت برایم تعریف کن!
+Qu'est-ce que tu [racontes] ? | چه داری می‌گویی؟
+Elle nous [raconte] sa journée. | او روزش را برایمان تعریف می‌کند.
+J'ai [raconté] l'histoire à mes enfants. | داستان را برای بچه‌هایم تعریف کردم.
+Les élèves [racontent] leurs vacances en français. | شاگردها تعطیلاتشان را به فرانسوی تعریف می‌کنند.
+# expliquer
+Le professeur [explique] la leçon. | معلم درس را توضیح می‌دهد.
+Tu peux [expliquer] ce mot ? | می‌توانی این کلمه را توضیح بدهی؟
+[Expliquez]-moi le problème, s'il vous plaît. | لطفاً مشکل را برایم توضیح بدهید.
+Je t'[explique] l'exercice. | تمرین را برایت توضیح می‌دهم.
+Ils ont [expliqué] le problème au médecin. | آن‌ها مشکل را برای پزشک توضیح دادند.
+Vous [expliquez] très bien ! | شما خیلی خوب توضیح می‌دهید!
+# recevoir
+J'ai [reçu] ton message. | پیامت را گرفتم.
+Tu [reçois] beaucoup de messages ? | پیام زیاد دریافت می‌کنی؟
+Elle [reçoit] une lettre de sa sœur. | او از خواهرش نامه می‌گیرد.
+Les enfants [reçoivent] des cadeaux pour leur anniversaire. | بچه‌ها برای تولدشان هدیه می‌گیرند.
+Nous [recevons] le journal tous les matins. | هر روز صبح روزنامه به دستمان می‌رسد.
+Vous avez [reçu] mon e-mail ? | ایمیلم به دستتان رسید؟
+# utiliser
+Tu [utilises] souvent ton ordinateur ? | اغلب از کامپیوترت استفاده می‌کنی؟
+Je peux [utiliser] ton téléphone ? | می‌توانم از تلفنت استفاده کنم؟
+Nous [utilisons] le vélo pour aller à l'école. | ما برای رفتن به مدرسه از دوچرخه استفاده می‌کنیم.
+[Utilisez] un stylo, pas un crayon. | از خودکار استفاده کنید، نه از مداد. | d: Utilises, Utilisent, Utilisait
+Elle [utilise] internet pour apprendre le français. | او برای یادگیری فرانسوی از اینترنت استفاده می‌کند.
+Les gens [utilisent] beaucoup le métro à Paris. | در پاریس مردم خیلی از مترو استفاده می‌کنند.
+# quitter
+Je [quitte] le bureau à six heures. | ساعت شش از اداره بیرون می‌آیم.
+Il a [quitté] Paris à vingt ans. | او در بیست سالگی پاریس را ترک کرد.
+Ne [quittez] pas, s'il vous plaît. | لطفاً گوشی را نگه دارید. | d: quitte, quittes, quittent
+Nous [quittons] l'hôtel demain matin. | فردا صبح هتل را ترک می‌کنیم.
+Elle ne veut pas [quitter] sa famille. | او نمی‌خواهد خانواده‌اش را ترک کند.
+Les élèves [quittent] l'école à quatre heures. | شاگردها ساعت چهار از مدرسه بیرون می‌روند.
+# retrouver
+J'ai [retrouvé] mes clés ! | کلیدهایم را پیدا کردم! | ok: trouvé
+On se [retrouve] devant le cinéma ? | جلوی سینما همدیگر را ببینیم؟
+Je te [retrouve] à la gare à midi. | ظهر توی ایستگاه می‌بینمت.
+Elle a [retrouvé] son chat dans le jardin. | او گربه‌اش را توی باغ پیدا کرد. | ok: trouvé
+Nous [retrouvons] nos amis au café le samedi. | شنبه‌ها دوستانمان را توی کافه می‌بینیم.
+Je ne [retrouve] pas mon passeport ! | پاسپورتم را پیدا نمی‌کنم! | ok: trouve
+# servir
+Le serveur [sert] le café. | پیشخدمت قهوه را سرو می‌کند.
+On [sert] le dîner à huit heures. | شام ساعت هشت سرو می‌شود.
+Je vous [sers] du thé ? | برایتان چای بریزم؟
+Ma mère [sert] la soupe aux enfants. | مادرم برای بچه‌ها سوپ می‌کشد.
+Ce restaurant [sert] des repas jusqu'à onze heures. | این رستوران تا ساعت یازده غذا سرو می‌کند.
+Nous [servons] le gâteau avec du thé. | کیک را با چای سرو می‌کنیم.
+# toucher
+Ne [touche] pas ça, c'est chaud ! | به آن دست نزن، داغ است! | d: touches, touchent, touchait
+Les enfants [touchent] tout dans le magasin. | بچه‌ها توی مغازه به همه چیز دست می‌زنند.
+Ne [touchez] pas les animaux, s'il vous plaît. | لطفاً به حیوان‌ها دست نزنید. | d: touches, touchent, touchait
+Je peux [toucher] ton chien ? | می‌توانم به سگت دست بزنم؟
+Elle [touche] l'eau : elle est froide ! | به آب دست می‌زند: سرد است!
+Qui a [touché] mon ordinateur ? | چه کسی به کامپیوترم دست زده؟
+# porter-2
+Je [porte] ta valise ? | چمدانت را من ببرم؟
+Il [porte] le bébé jusqu'à la voiture. | او بچه را بغل می‌کند و تا ماشین می‌برد.
+Tu peux [porter] ce sac pour moi ? | می‌توانی این کیسه را برایم ببری؟
+Les enfants [portent] leurs livres dans un sac. | بچه‌ها کتاب‌هایشان را در کیف می‌برند.
+Nous [portons] les chaises dans le jardin. | صندلی‌ها را به باغ می‌بریم.
+Mon père [porte] les courses à la maison. | پدرم خریدها را به خانه می‌برد.
+# apporter
+J'[apporte] le dessert ce soir. | امشب من دسر را می‌آورم.
+Les enfants, [apportez] vos livres demain. | بچه‌ها، فردا کتاب‌هایتان را بیاورید.
+Le serveur [apporte] l'addition. | پیشخدمت صورت‌حساب را می‌آورد.
+Tu m'[apportes] un verre d'eau ? | یک لیوان آب برایم می‌آوری؟
+Elle a [apporté] des fleurs pour ma mère. | او برای مادرم گل آورد.
+Nous [apportons] des gâteaux à la fête. | ما برای جشن کیک می‌آوریم.
+# offrir
+Je t'[offre] un café ? | یک قهوه مهمانت کنم؟
+Qu'est-ce que tu [offres] à ta mère pour son anniversaire ? | برای تولد مادرت چه هدیه‌ای می‌دهی؟
+Il a [offert] des fleurs à sa grand-mère. | او به مادربزرگش گل هدیه داد. | d: offrir, offre, offrent
+Nous [offrons] un livre à notre professeur. | ما به معلممان یک کتاب هدیه می‌دهیم.
+Mes parents m'[offrent] un vélo. | پدر و مادرم به من یک دوچرخه هدیه می‌دهند.
+Je voudrais [offrir] quelque chose à Marie. | می‌خواهم چیزی به ماری هدیه بدهم.
+# préparer
+Ce soir, je [prépare] le dîner. | امشب من شام درست می‌کنم.
+Tu [prépares] ta valise ? | چمدانت را می‌بندی؟
+Ma mère [prépare] un gâteau pour la fête. | مادرم برای جشن یک کیک درست می‌کند.
+Nous [préparons] le voyage ensemble. | با هم سفر را آماده می‌کنیم.
+Elle a [préparé] du thé pour tout le monde. | او برای همه چای درست کرد.
+Vous [préparez] le petit-déjeuner ? | شما صبحانه را آماده می‌کنید؟
+# décider
+Nous [décidons] de partir demain. | تصمیم می‌گیریم فردا برویم.
+Elle a [décidé] d'apprendre le français. | او تصمیم گرفته فرانسوی یاد بگیرد.
+Tu [décides], moi, je ne sais pas. | تو تصمیم بگیر، من نمی‌دانم.
+Je ne peux pas [décider] maintenant. | الان نمی‌توانم تصمیم بگیرم.
+Qui [décide] dans votre famille ? | در خانوادهٔ شما چه کسی تصمیم می‌گیرد؟
+Ils ont [décidé] de vendre leur maison. | آن‌ها تصمیم گرفته‌اند خانه‌شان را بفروشند.
+# compter
+Mon fils [compte] jusqu'à cent. | پسرم تا صد می‌شمارد.
+[Compte] l'argent, s'il te plaît. | لطفاً پول را بشمار. | d: Comptes, Comptent, Comptez
+Les enfants [comptent] les oiseaux dans l'arbre. | بچه‌ها پرنده‌های روی درخت را می‌شمارند.
+Je [compte] les jours avant les vacances. | روزهای مانده تا تعطیلات را می‌شمارم.
+Elle sait [compter] en français. | او بلد است به فرانسوی بشمارد.
+Vous avez [compté] les chaises ? | صندلی‌ها را شمردید؟
+# espérer
+J'[espère] que tu vas bien. | امیدوارم حالت خوب باشد.
+Nous [espérons] partir en vacances en juillet. | امیدواریم در ژوئیه به تعطیلات برویم.
+Il [espère] trouver un travail à Paris. | او امیدوار است در پاریس کار پیدا کند.
+Tu viens demain ? – J'[espère] que oui. | فردا می‌آیی؟ – امیدوارم.
+Elle [espère] qu'il va faire beau demain. | او امیدوار است فردا هوا خوب باشد.
+Mes parents [espèrent] venir en France cet{cet} été{été}. | پدر و مادرم امیدوارند این تابستان به فرانسه بیایند.
+# imaginer
+Je n'[imagine] pas Paul sans son vélo ! | نمی‌توانم پل را بدون دوچرخه‌اش تصور کنم!
+J'[imagine] que tu es fatigué. | تصور می‌کنم خسته باشی.
+Tu [imagines] ? Dix heures de train ! | تصورش را بکن! ده ساعت قطار!
+Je ne peux pas [imaginer] la vie sans musique. | نمی‌توانم زندگی بدون موسیقی را تصور کنم.
+Les enfants [imaginent] des histoires. | بچه‌ها توی ذهنشان داستان می‌سازند.
+Elle [imagine] sa vie à Paris. | او زندگی‌اش در پاریس را تصور می‌کند.
+# sembler
+Tu [sembles] fatigué ce matin. | امروز صبح خسته به نظر می‌آیی.
+Il [semble] content de son travail. | به نظر از کارش راضی است.
+Cette question [semble] facile. | این سؤال آسان به نظر می‌رسد.
+Les enfants [semblent] heureux. | بچه‌ها خوشحال به نظر می‌رسند.
+Il me [semble] que c'est trop cher. | به نظرم خیلی گران است.
+Vous [semblez] malade, ça va ? | به نظر مریض می‌آیید، حالتان خوب است؟
+# plaire
+Ton nouveau travail te [plaît] ? | از کار جدیدت خوشت می‌آید؟
+Ce film me [plaît] beaucoup. | از این فیلم خیلی خوشم می‌آید.
+Paris [plaît] beaucoup aux touristes. | پاریس خیلی به دل توریست‌ها می‌نشیند.
+Ces chaussures ne me [plaisent] pas. | از این کفش‌ها خوشم نمی‌آید.
+La ville vous [plaît] ? | از شهر خوشتان می‌آید؟
+Cette idée ne [plaît] pas à mon père. | پدرم از این فکر خوشش نمی‌آید.
+# se souvenir
+Je me [souviens] de ce jour. | آن روز را به یاد دارم.
+Tu te [souviens] de Marie ? | ماری یادت هست؟
+Il ne se [souvient] pas de mon nom. | او اسمم را یادش نیست.
+Nous nous [souvenons] bien de nos vacances en Italie. | تعطیلاتمان در ایتالیا را خوب به یاد داریم.
+Vous vous [souvenez] de cette chanson ? | این آهنگ یادتان هست؟
+Mes grands-parents se [souviennent] de tout. | پدربزرگ و مادربزرگم همه چیز یادشان است.
+# s'occuper
+Je m'[occupe] des{des-contr} enfants le mercredi. | چهارشنبه‌ها من از بچه‌ها مراقبت می‌کنم.
+Tu t'[occupes] du{du-contr} chien ce week-end ? | این آخر هفته تو به سگ می‌رسی؟
+Ma sœur s'[occupe] de notre grand-mère. | خواهرم از مادربزرگمان مراقبت می‌کند.
+Je m'[occupe] de tout ! | من به همه چیز رسیدگی می‌کنم!
+Nous nous [occupons] du{du-contr} jardin le dimanche. | یکشنبه‌ها به باغ رسیدگی می‌کنیم.
+Les infirmières s'[occupent] de mon grand-père. | پرستارها از پدربزرگم مراقبت می‌کنند.
+# se passer
+Il se [passe] quelque chose ? Tu es triste. | چیزی شده؟ ناراحتی.
+Tout se [passe] bien au travail ? | سر کار همه چیز خوب پیش می‌رود؟
+L'histoire se [passe] à Paris. | داستان در پاریس اتفاق می‌افتد.
+Comment se [passent] tes vacances ? | تعطیلاتت چطور می‌گذرد؟
+Le voyage se [passe] très bien. | سفر خیلی خوب پیش می‌رود.
+Ça se [passe] souvent comme ça. | اغلب همین‌طور پیش می‌آید.
+# se trouver
+La gare se [trouve] près du{du-contr} centre. | ایستگاه نزدیک مرکز شهر است.
+Où se [trouve] la pharmacie ? | داروخانه کجاست؟
+Notre hôtel se [trouve] en face de la plage. | هتل ما روبه‌روی ساحل است.
+Les toilettes se [trouvent] au premier étage. | دستشویی در طبقهٔ اول است.
+Le musée se [trouve] à côté de la poste. | موزه کنار ادارهٔ پست است.
+Mon village se [trouve] dans les montagnes. | روستای من در کوهستان قرار دارد.
+# se tromper
+Tu te [trompes], ce n'est pas lui. | اشتباه می‌کنی، او نیست.
+Je me [trompe] souvent de bus. | اغلب اتوبوس را اشتباهی سوار می‌شوم.
+Excusez-moi, vous vous [trompez] de numéro. | ببخشید، شماره را اشتباه گرفته‌اید.
+Tout le monde se [trompe] parfois. | همه گاهی اشتباه می‌کنند.
+Je crois que tu te [trompes] de jour. | فکر کنم روز را اشتباه گرفته‌ای.
+Les élèves se [trompent] souvent dans cet exercice. | شاگردها اغلب در این تمرین اشتباه می‌کنند.

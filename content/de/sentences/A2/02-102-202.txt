@@ -1,0 +1,709 @@
+// German A2, card words 102–202 (holidays and celebrations, speaking and asking, everyday actions, coming and going, feelings), in teaching order.
+# Feiertag
+Morgen ist ein [Feiertag], die Schule ist geschlossen. | فردا تعطیل رسمی است و مدرسه بسته است. | d: Kalender, Monat, Augenblick
+Am [Feiertag] sind die Geschäfte geschlossen. | روز تعطیل مغازه‌ها بسته‌اند. | d: Kalender, Monat, Termin
+Heute ist [Feiertag], ich muss nicht arbeiten. | امروز تعطیل است و لازم نیست کار کنم. | d: Kalender, Monat, Augenblick
+Im Mai haben wir zwei [Feiertage]. | در ماه مه دو روز تعطیل رسمی داریم. | d: Monate, Jahrhunderte, Sekunden
+An [Feiertagen] fahren wir oft zu den Großeltern. | روزهای تعطیل اغلب پیش پدربزرگ و مادربزرگ می‌رویم. | d: Kalendern, Sekunden, Augenblicken
+Ist Montag ein [Feiertag]? Dann schlafe ich lange. | دوشنبه تعطیل رسمی است؟ پس تا دیروقت می‌خوابم.
+# Silvester
+Was machst du an [Silvester]? | شب سال نو چه کار می‌کنی؟
+An [Silvester] sind wir bei Freunden. | شب سال نو پیش دوستانمان هستیم.
+Wir gehen an [Silvester] spät ins Bett. | شب سال نو دیر می‌خوابیم.
+Hast du an [Silvester] frei? | شب سال نو کار نداری؟
+Meine Eltern waren an [Silvester] in Wien. | پدر و مادرم شب سال نو وین بودند.
+Zu [Silvester] rufe ich meine Oma in Iran an. | شب سال نو به مادربزرگم در ایران زنگ می‌زنم.
+# Neujahr
+[Neujahr] ist in Deutschland ein Feiertag. | روز اول سال نو در آلمان تعطیل رسمی است. | d: Jahrhundert, Datum, Viertel
+An [Neujahr] sind alle Geschäfte geschlossen. | روز اول سال نو همهٔ مغازه‌ها بسته‌اند.
+An [Neujahr] schlafen wir lange. | روز اول سال تا دیروقت می‌خوابیم. | d: Jahrhundert, Datum, Viertel
+In Iran ist [Neujahr] im März. | در ایران سال نو در ماه مارس است.
+Wir besuchen an [Neujahr] meine Oma. | روز اول سال نو به دیدن مادربزرگم می‌رویم.
+Am Tag nach Silvester ist [Neujahr]. | روز بعد از شب سال نو، روز اول سال است. | d: Jahrhundert, Datum, Viertel
+# Weihnachten
+[Weihnachten] ist jedes Jahr im Dezember. | کریسمس هر سال در دسامبر است. | d: Jahrhundert, Datum, Viertel
+An [Weihnachten] besuchen wir unsere Familie. | کریسمس به دیدن خانواده‌مان می‌رویم.
+Zu [Weihnachten] bekommen die Kinder Geschenke. | کریسمس بچه‌ها هدیه می‌گیرند. | d: Jahr, Datum, Viertel
+Über [Weihnachten] fahren wir zu meinen Eltern. | تعطیلات کریسمس پیش پدر و مادرم می‌رویم. | d: Datum, Viertel, Jahrhundert
+Bis [Weihnachten] sind es noch zwei Wochen. | تا کریسمس هنوز دو هفته مانده. | d: Datum, Viertel, Jahrhundert
+In Deutschland ist es an [Weihnachten] oft kalt. | در آلمان کریسمس هوا اغلب سرد است.
+# Fest
+Das [Fest] ist am Samstag. | جشن شنبه است. | d: Jahr, Viertel, Jahrhundert
+Wir haben ein [Fest] in der Schule. | در مدرسه جشن داریم.
+Das [Fest] war sehr schön. | جشن خیلی قشنگ بود. | d: Datum, Viertel, Jahrhundert
+Kommst du zu unserem [Fest]? | به جشن ما می‌آیی؟ | d: Datum, Viertel, Jahrhundert
+Im Sommer gibt es im Dorf ein [Fest]. | تابستان در روستا جشنی برپا می‌شود.
+Weihnachten ist ein [Fest] für die Familie. | کریسمس جشنی خانوادگی است.
+Auf dem [Fest] haben wir getanzt. | در جشن رقصیدیم.
+# feiern
+Wir [feiern] heute mit unseren Freunden. | امروز با دوستانمان جشن می‌گیریم.
+Wo [feierst] du dieses Jahr Silvester? | امسال شب سال نو را کجا جشن می‌گیری؟
+In Iran [feiert] man Neujahr im März. | در ایران سال نو را در ماه مارس جشن می‌گیرند.
+Wir haben gestern lange [gefeiert]. | دیروز تا دیروقت جشن گرفتیم. | d: feiern, feiert, feierst
+Nach der Prüfung [feiert] die ganze Klasse. | بعد از امتحان، همهٔ کلاس جشن می‌گیرند.
+Mein Opa [feiert] Neujahr mit der ganzen Familie. | پدربزرگم سال نو را با همهٔ خانواده جشن می‌گیرد.
+# Geburtstag feiern
+Ich möchte zu Hause [Geburtstag feiern]. | می‌خواهم تولدم را در خانه بگیرم. | d: Geburtstag feiert, Geburtstag feierst, Geburtstag feiere
+Wir [feiern Geburtstag], kommst du auch? | داریم تولد می‌گیریم، تو هم می‌آیی؟
+Wir gehen zu Anna, weil sie heute [Geburtstag feiert]. | پیش آنا می‌رویم، چون امروز تولدش را جشن می‌گیرد.
+Wir haben gestern im Restaurant [Geburtstag gefeiert]. | دیروز در رستوران جشن تولد گرفتیم. | d: Geburtstag feiern, Geburtstag feiert, Geburtstag feierst
+Mein Bruder will im Park [Geburtstag feiern]. | برادرم می‌خواهد تولدش را در پارک بگیرد. | d: Geburtstag feiert, Geburtstag feierst, Geburtstag feiere
+Wo hast du [Geburtstag gefeiert]? | تولدت را کجا جشن گرفتی؟ | d: Geburtstag feiern, Geburtstag feiert, Geburtstag feierst
+# eine Party machen
+Wir [machen eine Party] im Garten. | در حیاط مهمانی می‌گیریم.
+Ich möchte zum Geburtstag [eine Party machen]. | می‌خواهم برای تولدم مهمانی بگیرم. | d: eine Party macht, eine Party machst, eine Party mache
+Dürfen wir am Freitag [eine Party machen]? | اجازه داریم جمعه مهمانی بگیریم؟ | d: eine Party macht, eine Party machst, eine Party mache
+Wir haben an Silvester [eine Party gemacht]. | شب سال نو مهمانی گرفتیم. | d: eine Party machen, eine Party macht, eine Party machst
+Ich kaufe Kuchen, weil wir heute [eine Party machen]. | کیک می‌خرم، چون امروز مهمانی داریم. | d: eine Party macht, eine Party machst, eine Party mache
+Meine Schwester [macht eine Party] für ihre Freundinnen. | خواهرم برای دوستانش مهمانی می‌گیرد.
+# Weihnachten feiern
+Wir [feiern Weihnachten] bei meiner Oma. | کریسمس را خانهٔ مادربزرگم جشن می‌گیریم.
+Wo möchtest du [Weihnachten feiern]? | کریسمس را کجا می‌خواهی جشن بگیری؟ | d: Weihnachten feiert, Weihnachten feierst, Weihnachten feiere
+Die Kinder [feiern Weihnachten] mit ihren Großeltern. | بچه‌ها کریسمس را با پدربزرگ و مادربزرگشان جشن می‌گیرند.
+Wir haben in Wien [Weihnachten gefeiert]. | ما کریسمس را در وین جشن گرفتیم. | d: Weihnachten feiern, Weihnachten feiert, Weihnachten feierst
+Tom will dieses Jahr in Hamburg [Weihnachten feiern]. | تام می‌خواهد امسال کریسمس را در هامبورگ جشن بگیرد. | d: Weihnachten feiert, Weihnachten feierst, Weihnachten feiere
+Ich fahre nach Hause, weil wir zusammen [Weihnachten feiern]. | به خانه می‌روم، چون کریسمس را با هم جشن می‌گیریم. | d: Weihnachten feiert, Weihnachten feierst, Weihnachten feiere
+# erzählen
+Opa [erzählt] viel von früher. | پدربزرگ زیاد از قدیم‌ها تعریف می‌کند.
+Was hat er dir [erzählt]? | چه چیزی برایت تعریف کرد؟
+Ich [erzähle] dir morgen alles. | فردا همه‌چیز را برایت تعریف می‌کنم.
+Die Lehrerin [erzählt] von ihrer Reise nach Iran. | معلم از سفرش به ایران تعریف می‌کند.
+Meine Kinder [erzählen] mir abends von der Schule. | بچه‌هایم شب‌ها از مدرسه برایم تعریف می‌کنند.
+[Erzählen] Sie bitte etwas über Ihre Familie. | لطفاً کمی دربارهٔ خانواده‌تان تعریف کنید.
+# erklären
+Der Lehrer [erklärt] das Wort noch einmal. | معلم کلمه را یک بار دیگر توضیح می‌دهد.
+[Erklärst] du mir das, bitte? | این را برایم توضیح می‌دهی، لطفاً؟
+Ich [erkläre] dir die Hausaufgabe. | تکلیف را برایت توضیح می‌دهم.
+Die Ärztin hat mir alles genau [erklärt]. | دکتر همه‌چیز را دقیق برایم توضیح داد.
+Der Chef [erklärt] mir die Arbeit. | رئیس کار را برایم توضیح می‌دهد.
+Können Sie mir das bitte [erklären]? | می‌شود لطفاً این را برایم توضیح بدهید؟ | d: erklärt, erklärst, erkläre
+# beschreiben
+Der Text [beschreibt] eine Stadt in Iran. | متن یک شهر در ایران را توصیف می‌کند.
+Ich [beschreibe] meine Familie auf Deutsch. | خانواده‌ام را به آلمانی توصیف می‌کنم.
+[Beschreiben] Sie bitte Ihre Wohnung. | لطفاً آپارتمانتان را توصیف کنید.
+In der Prüfung [beschreiben] wir ein Bild. | در امتحان یک تصویر را توصیف می‌کنیم.
+Anna hat ihre Reise genau [beschrieben]. | آنا سفرش را دقیق شرح داد. | d: beschreiben, beschreibt, beschreibst
+Wie [beschreibst] du deinen Freund? | دوستت را چطور توصیف می‌کنی؟
+# reden
+Wir [reden] oft über Fußball. | ما اغلب دربارهٔ فوتبال حرف می‌زنیم.
+Er [redet] sehr viel, aber er arbeitet wenig. | او خیلی حرف می‌زند، اما کم کار می‌کند.
+Gestern haben wir lange [geredet]. | دیروز مدت زیادی با هم حرف زدیم. | d: reden, redet, redest
+Die Kollegen [reden] in der Pause über die Arbeit. | همکارها موقع استراحت دربارهٔ کار حرف می‌زنند. | d: redet, rede, redest
+Du [redest] zu schnell, ich verstehe nichts. | خیلی تند حرف می‌زنی، هیچ نمی‌فهمم.
+Wir [reden] morgen, jetzt habe ich keine Zeit. | فردا حرف می‌زنیم، الان وقت ندارم.
+# sich unterhalten
+Wir [unterhalten] uns oft über Musik. | ما اغلب دربارهٔ موسیقی گپ می‌زنیم.
+Die Frauen [unterhalten] sich im Café. | خانم‌ها در کافه با هم گپ می‌زنند.
+Ich habe mich lange mit ihm [unterhalten]. | مدت زیادی با او گفتگو کردم.
+[Unterhältst] du dich gern mit Opa? | دوست داری با پدربزرگ گپ بزنی؟
+Nach dem Essen [unterhalten] wir uns im Wohnzimmer. | بعد از غذا در اتاق نشیمن گپ می‌زنیم.
+In der Pause [unterhält] sich Lena mit ihrer Kollegin. | موقع استراحت لنا با همکارش گپ می‌زند.
+# rufen
+Die Mutter [ruft] die Kinder zum Essen. | مادر بچه‌ها را برای غذا صدا می‌زند.
+Es ist spät, ich [rufe] ein Taxi. | دیر است، یک تاکسی خبر می‌کنم.
+Wer hat meinen Namen [gerufen]? | چه کسی اسمم را صدا زد؟ | d: rufen, ruft, rufst
+[Rufen] Sie bitte einen Arzt! | لطفاً یک دکتر خبر کنید!
+Der Lehrer [ruft] die Schüler in die Klasse. | معلم دانش‌آموزها را به کلاس صدا می‌زند.
+Mama, warum [rufst] du mich? | مامان، چرا صدایم می‌کنی؟
+# bitten
+Ich [bitte] den Kellner um die Rechnung. | از گارسون صورت‌حساب را می‌خواهم.
+Darf ich Sie um etwas [bitten]? | می‌توانم از شما خواهشی بکنم؟ | d: bittet, bittest, bitte
+Die Schüler [bitten] den Lehrer um eine Pause. | دانش‌آموزها از معلم یک استراحت کوتاه می‌خواهند. | d: bittet, bitte, bittest
+Anna hat mich um Geld [gebeten]. | آنا از من پول خواست. | d: bitten, bittet, bittest
+Er [bittet] seinen Vater um das Auto. | او از پدرش ماشین را می‌خواهد.
+Ich [bitte] dich, sei pünktlich! | خواهش می‌کنم، سر وقت باش!
+# danken
+Ich [danke] dir für das Geschenk. | برای هدیه از تو ممنونم.
+Wir [danken] Ihnen für die Information. | از شما برای این اطلاعات سپاسگزاریم.
+Er [dankt] der Lehrerin für das Buch. | او از معلم به خاطر کتاب تشکر می‌کند.
+Hast du Oma für den Kuchen [gedankt]? | از مادربزرگ برای کیک تشکر کردی؟ | d: danken, dankt, dankst
+Die Kinder [danken] ihrer Mutter für das Essen. | بچه‌ها از مادرشان برای غذا تشکر می‌کنند. | d: dankt, danke, dankst
+Warum [dankst] du ihm nicht? | چرا از او تشکر نمی‌کنی؟
+# sich bedanken
+Ich [bedanke] mich bei dir für den Kuchen. | برای کیک از تو تشکر می‌کنم.
+Er hat sich bei mir [bedankt]. | او از من تشکر کرد.
+Wir [bedanken] uns bei der Lehrerin. | از معلم تشکر می‌کنیم.
+Sophie [bedankt] sich für die Blumen. | سوفی برای گل‌ها تشکر می‌کند.
+Hast du dich schon [bedankt]? | تشکر کرده‌ای؟
+Max [bedankt] sich beim Kellner. | ماکس از گارسون تشکر می‌کند.
+# sich entschuldigen
+Ich [entschuldige] mich für den Fehler. | برای این اشتباه عذرخواهی می‌کنم.
+Du musst dich bei ihm [entschuldigen]. | باید از او عذرخواهی کنی. | d: entschuldigt, entschuldigst, entschuldige
+Er hat sich nicht [entschuldigt]. | او عذرخواهی نکرد.
+Max [entschuldigt] sich bei seiner Schwester. | ماکس از خواهرش عذرخواهی می‌کند.
+Wir [entschuldigen] uns bei Ihnen. | از شما عذرخواهی می‌کنیم.
+Warum [entschuldigst] du dich? Das macht nichts! | چرا عذرخواهی می‌کنی؟ اشکالی ندارد!
+# entschuldigen
+[Entschuldigen] Sie, wo ist der Bahnhof? | ببخشید، ایستگاه قطار کجاست؟
+[Entschuldige], Mama, ich komme zu spät. | ببخش مامان، دیر می‌رسم.
+Bitte [entschuldigen] Sie meinen Fehler. | لطفاً اشتباهم را ببخشید.
+Herr Weber, [entschuldigen] Sie, ist der Platz frei? | آقای وبر، ببخشید، این جا خالی است؟
+Das kann ich nicht [entschuldigen]. | این را نمی‌توانم ببخشم. | d: entschuldigt, entschuldigst, entschuldige
+[Entschuldigen] Sie bitte, wie spät ist es? | ببخشید، ساعت چند است؟
+# grüßen
+[Grüßen] Sie Ihre Frau von mir! | از طرف من به همسرتان سلام برسانید! | d: Grüße, Grüßt, Gegrüßt
+Er [grüßt] mich jeden Morgen. | او هر روز صبح به من سلام می‌کند. | d: grüße, grüßen, gegrüßt
+Anna und Max lassen dich [grüßen]. | آنا و ماکس سلام رساندند. | d: grüßt, grüße, gegrüßt
+Der Junge [grüßt] die Lehrerin freundlich. | پسر با ادب به معلم سلام می‌کند. | d: grüße, grüßen, gegrüßt
+Warum [grüßt] du ihn nicht? | چرا به او سلام نمی‌کنی؟ | d: grüße, grüßen, gegrüßt
+Hast du Oma von mir [gegrüßt]? | از طرف من به مادربزرگ سلام رساندی؟ | d: grüßen, grüßt, grüße
+# beantworten
+Ich [beantworte] heute alle E-Mails. | امروز به همهٔ ایمیل‌ها جواب می‌دهم.
+Hast du den Brief schon [beantwortet]? | به نامه جواب داده‌ای؟
+Der Chef [beantwortet] meine E-Mail nicht. | رئیس به ایمیلم جواب نمی‌دهد.
+Die Firma hat meinen Brief nicht [beantwortet]. | شرکت به نامه‌ام جواب نداد.
+Bitte [beantworten] Sie die E-Mail bis Montag. | لطفاً تا دوشنبه به ایمیل جواب بدهید.
+Mein Sohn [beantwortet] seine E-Mails immer sofort. | پسرم همیشه فوری به ایمیل‌هایش جواب می‌دهد.
+# eine Frage beantworten
+Können Sie mir [eine Frage beantworten]? | می‌توانید به یک سؤال من جواب بدهید؟ | d: eine Frage beantwortet, eine Frage beantwortest, eine Frage beantworte
+Jeder Schüler [beantwortet eine Frage]. | هر دانش‌آموز به یک سؤال جواب می‌دهد.
+Ich habe nur [eine Frage beantwortet]. | فقط به یک سؤال جواب دادم. | d: eine Frage beantworten, eine Frage beantwortest, eine Frage beantworte
+Im Test musst du nur [eine Frage beantworten]. | در آزمون فقط باید به یک سؤال جواب بدهی. | d: eine Frage beantwortet, eine Frage beantwortest, eine Frage beantworte
+Anna ist glücklich, weil sie [eine Frage beantwortet] hat. | آنا خوشحال است، چون به یک سؤال جواب داده.
+Der Lehrer [beantwortet eine Frage] von Max. | معلم به سؤالی از ماکس جواب می‌دهد.
+# meinen
+Was [meinst] du, kommt er heute? | به نظرت امروز می‌آید؟
+Ich [meine] das Buch auf dem Tisch. | منظورم کتابِ روی میز است.
+Wie [meinen] Sie das, Herr Weber? | منظورتان چیست، آقای وبر؟
+Das habe ich nicht so [gemeint]. | منظورم این نبود. | d: meinen, meint, meinst
+[Meinst] du den Mann dort? | منظورت آن مرد آنجاست؟
+Meine Mutter [meint], ich arbeite zu viel. | مادرم فکر می‌کند من زیادی کار می‌کنم.
+# hoffen
+Ich [hoffe], es geht dir gut. | امیدوارم حالت خوب باشد.
+Wir [hoffen], dass das Wetter morgen schön ist. | امیدواریم فردا هوا خوب باشد.
+Die Kinder [hoffen] auf Schnee. | بچه‌ها امیدوارند برف بیاید. | d: hofft, hoffe, hoffst
+[Hoffst] du, dass Max kommt? | امیدواری ماکس بیاید؟
+Sie [hofft] auf eine Antwort von der Firma. | او امیدوار است از شرکت جوابی بیاید.
+Meine Eltern [hoffen], dass ich in Deutschland studiere. | پدر و مادرم امیدوارند در آلمان درس بخوانم. | d: hofft, hoffe, hoffst
+# wünschen
+Ich [wünsche] dir alles Gute! | برایت بهترین‌ها را آرزو می‌کنم!
+Was [wünschst] du dir zum Geburtstag? | برای تولدت چه می‌خواهی؟
+Ich [wünsche] euch viel Spaß im Urlaub! | امیدوارم در تعطیلات به شما خوش بگذرد!
+Die Kinder [wünschen] sich einen Hund. | بچه‌ها آرزوی یک سگ دارند. | d: wünscht, wünsche, wünschst
+[Wünschen] Sie noch etwas, Frau Schmidt? | خانم اشمیت، چیز دیگری میل دارید؟
+Wir [wünschen] dir gute Besserung! | امیدواریم زود خوب شوی!
+# Glück wünschen
+Ich möchte dir für die Prüfung [Glück wünschen]. | می‌خواهم برای امتحان برایت آرزوی موفقیت کنم. | d: Glück wünscht, Glück wünschst, Glück wünsche
+Wir haben ihm viel [Glück gewünscht]. | برایش آرزوی موفقیت کردیم. | d: Glück wünschen, Glück wünscht, Glück wünschst
+Kannst du mir [Glück wünschen]? Morgen ist die Prüfung. | می‌شود برایم آرزوی موفقیت کنی؟ فردا امتحان است. | d: Glück wünscht, Glück wünschst, Glück wünsche
+Ich rufe Max an, weil ich ihm [Glück wünschen] will. | به ماکس زنگ می‌زنم، چون می‌خواهم برایش آرزوی موفقیت کنم. | d: Glück wünscht, Glück wünschst, Glück wünsche
+Meine Kollegen haben mir für den Test [Glück gewünscht]. | همکارانم برای آزمون برایم آرزوی موفقیت کردند. | d: Glück wünschen, Glück wünscht, Glück wünschst
+Wir möchten euch für die Zukunft viel [Glück wünschen]. | برای آینده‌تان آرزوی موفقیت داریم. | d: Glück wünscht, Glück wünschst, Glück wünsche
+# sich erinnern
+Ich [erinnere] mich nicht an seinen Namen. | اسمش یادم نمی‌آید.
+[Erinnerst] du dich an mich? | مرا یادت هست؟
+Ich [erinnere] mich gern an die Ferien in Isfahan. | تعطیلات اصفهان را با خوشی به یاد می‌آورم.
+Opa [erinnert] sich an alles. | پدربزرگ همه‌چیز یادش است.
+Wir [erinnern] uns gut an den Sommer in Wien. | تابستان وین را خوب یادمان هست.
+Kannst du dich an das Hotel in Wien [erinnern]? | هتل وین را یادت هست؟ | d: erinnert, erinnerst, erinnere
+# vergessen
+Ich habe meinen Schlüssel [vergessen]. | کلیدم را جا گذاشتم. | d: vergisst, vergesse, vergesst
+[Vergiss] deinen Pass nicht, Max! | ماکس، گذرنامه‌ات را فراموش نکن! | d: Vergisst, Vergesst, Vergessen
+Er [vergisst] immer meinen Geburtstag. | او همیشه تولد مرا فراموش می‌کند.
+Die Kinder [vergessen] beim Spielen{spielen} die Zeit. | بچه‌ها موقع بازی زمان را فراموش می‌کنند. | d: vergisst, vergesse, vergesst
+Ich [vergesse] die Wörter so schnell. | کلمه‌ها را خیلی زود فراموش می‌کنم.
+Mein Vater [vergisst] nie einen Termin. | پدرم هیچ‌وقت قراری را فراموش نمی‌کند.
+# überlegen
+Ich [überlege] noch, vielleicht komme ich mit. | هنوز دارم فکر می‌کنم، شاید با شما بیایم.
+Er [überlegt] lange und sagt dann ja. | او مدت زیادی فکر می‌کند و بعد قبول می‌کند.
+Wir haben lange [überlegt], dann haben wir das Auto gekauft. | مدت زیادی فکر کردیم، بعد ماشین را خریدیم.
+[Überlegen] Sie bitte genau, das ist wichtig. | لطفاً خوب فکر کنید، این مهم است.
+Was [überlegst] du so lange? | چرا این‌قدر فکر می‌کنی؟
+Anna [überlegt]: Pizza oder Salat? | آنا فکر می‌کند: پیتزا یا سالاد؟
+# versuchen
+Ich [versuche] es noch einmal. | یک بار دیگر امتحان می‌کنم.
+[Versuchen] Sie es bitte später. | لطفاً بعداً دوباره امتحان کنید.
+Wir haben alles [versucht], aber es geht nicht. | همه‌چیز را امتحان کردیم، اما نمی‌شود.
+Du [versuchst] es nicht einmal! | تو حتی امتحانش هم نمی‌کنی!
+Ich [versuche], morgen früh zu kommen. | سعی می‌کنم فردا زود بیایم.
+Max [versucht], Deutsch zu sprechen. | ماکس سعی می‌کند آلمانی حرف بزند.
+# probieren
+[Probieren] Sie mal die Suppe! | سوپ را بچشید!
+Ich [probiere] mal den Kuchen von Oma. | کیک مادربزرگ را امتحان می‌کنم.
+Hast du das Brot vom Markt schon [probiert]? | نان بازار را امتحان کرده‌ای؟
+Darf ich mal von deinem Eis [probieren]? | می‌شود کمی از بستنی‌ات بچشم؟ | d: probiert, probierst, probiere
+Im Restaurant [probiert] Lena den Fisch. | لنا در رستوران ماهی را امتحان می‌کند.
+Warum [probierst] du die Pizza nicht? | چرا پیتزا را امتحان نمی‌کنی؟
+# schaffen
+Keine Angst, ich [schaffe] das! | نگران نباش، از پسش برمی‌آیم!
+Hast du die Prüfung [geschafft]? | امتحان را قبول شدی؟ | d: schaffen, schafft, schaffst
+Wir [schaffen] den Zug noch. | هنوز به قطار می‌رسیم.
+[Schaffst] du das bis morgen? | تا فردا تمامش می‌کنی؟
+Die Arbeit ist viel, aber wir [schaffen] es. | کار زیاد است، اما از پسش برمی‌آییم.
+Das [schaffe] ich heute nicht mehr. | امروز دیگر به این کار نمی‌رسم.
+# passieren
+Was ist [passiert]? Du bist so traurig. | چه اتفاقی افتاده؟ خیلی ناراحتی. | d: passieren, passiere, passierst
+So etwas [passiert], kein Problem. | چنین چیزی پیش می‌آید، مشکلی نیست.
+Das [passiert] mir leider oft. | متأسفانه این اغلب برایم پیش می‌آید.
+In unserem Dorf [passiert] nie etwas. | در روستای ما هیچ‌وقت اتفاقی نمی‌افتد.
+Keine Angst, es ist nichts [passiert]. | نترس، اتفاقی نیفتاده.
+Was ist gestern in der Schule [passiert]? | دیروز در مدرسه چه اتفاقی افتاد؟
+# bedeuten
+Was [bedeutet] das Wort auf Persisch? | این کلمه به فارسی یعنی چه؟
+Was [bedeuten] diese Wörter im Text? | این کلمه‌های متن یعنی چه؟ | d: bedeutet, bedeutest, bedeute
+Die Familie [bedeutet] mir viel. | خانواده برایم خیلی مهم است.
+Das [bedeutet], wir müssen warten. | یعنی باید صبر کنیم.
+Rot [bedeutet]: Du musst warten. | قرمز یعنی باید صبر کنی.
+Das Geschenk [bedeutet] ihr{sie} sehr viel. | این هدیه برای او خیلی ارزش دارد.
+# gehören
+Das Buch auf dem Tisch [gehört] mir. | کتابِ روی میز مال من است.
+[Gehört] die Tasche hier dir? | این کیف مال توست؟
+Die Schuhe [gehören] meinem Bruder. | کفش‌ها مال برادرم است. | d: gehört, gehörst, gehöre
+Das Auto [gehört] nicht uns. | ماشین مال ما نیست.
+Der Hund [gehört] der Frau dort. | سگ مال آن خانم است.
+Das Haus [gehört] meinen Großeltern. | خانه مال پدربزرگ و مادربزرگم است.
+# passen
+Die Hose [passt] mir nicht. | شلوار اندازه‌ام نیست. | d: passe, passen, gepasst
+[Passt] dir Montag um zehn Uhr? | دوشنبه ساعت ده برایت مناسب است؟ | d: Passe, Passen, Gepasst
+Die Schuhe [passen] gut, ich nehme sie. | کفش‌ها خوب اندازه‌اند، آن‌ها را برمی‌دارم. | d: passt, passe, gepasst
+Das Bild [passt] gut ins Wohnzimmer. | این تابلو خیلی به اتاق نشیمن می‌آید. | d: passe, passen, gepasst
+Der Termin am Freitag [passt] mir gut. | قرار جمعه برایم خوب است. | d: passe, passen, gepasst
+Die Jacke hat nicht [gepasst]. | کاپشن اندازه نبود. | d: passen, passt, passe
+# fehlen
+Mir [fehlt] ein Euro für die Fahrkarte. | برای بلیت یک یورو کم دارم.
+Wer [fehlt] heute in der Klasse? | امروز چه کسی در کلاس غایب است؟
+Im Text [fehlen] zwei Wörter. | در متن دو کلمه جا افتاده. | d: fehlt, fehle, fehlst
+Was [fehlt] Ihnen? – Ich habe Kopfschmerzen. | مشکلتان چیست؟ – سرم درد می‌کند.
+Max hat gestern in der Schule [gefehlt]. | ماکس دیروز مدرسه غایب بود. | d: fehlen, fehlt, fehlst
+Meine Familie [fehlt] mir sehr. | دلم برای خانواده‌ام خیلی تنگ شده.
+# ändern
+Wir [ändern] den Termin auf Freitag. | قرار را به جمعه تغییر می‌دهیم.
+Das kann man nicht [ändern]. | نمی‌شود این را عوض کرد. | d: ändert, änderst, ändere
+Ich habe meine Adresse [geändert]. | آدرسم را عوض کردم. | d: ändern, ändert, änderst
+[Ändern] Sie bitte das Datum. | لطفاً تاریخ را تغییر دهید.
+Der Chef [ändert] oft die Termine. | رئیس اغلب قرارها را عوض می‌کند.
+In den Bergen [ändert] sich das Wetter schnell. | در کوهستان هوا زود عوض می‌شود.
+# benutzen
+Ich [benutze] jeden Tag den Computer. | هر روز از کامپیوتر استفاده می‌کنم. | d: benutzt, benutzen, benutztest
+Kann ich bitte Ihre Toilette [benutzen]? | می‌توانم از دستشویی شما استفاده کنم؟ | d: benutzt, benutze, benutzte
+[Benutzt] du oft das Fahrrad? | اغلب از دوچرخه استفاده می‌کنی؟ | d: Benutze, Benutzen, Benutzte
+In Berlin [benutzen] die Leute oft die U-Bahn. | در برلین مردم اغلب از مترو استفاده می‌کنند. | d: benutzt, benutze, benutzte
+Mein Opa [benutzt] kein Internet. | پدربزرگم از اینترنت استفاده نمی‌کند.
+Im Test dürfen die Schüler kein Handy [benutzen]. | در آزمون دانش‌آموزها اجازه ندارند از موبایل استفاده کنند. | d: benutzt, benutze, benutzte
+# funktionieren
+Mein Handy [funktioniert] seit gestern nicht. | موبایلم از دیروز کار نمی‌کند.
+Der Computer im Büro [funktioniert] wieder. | کامپیوتر دفتر دوباره کار می‌کند.
+Wie [funktioniert] das neue Handy? | این موبایل جدید چطور کار می‌کند؟
+Der Kühlschrank [funktioniert] nicht mehr. | یخچال دیگر کار نمی‌کند.
+Die Lampen im Bad [funktionieren] nicht. | لامپ‌های حمام کار نمی‌کنند. | d: funktioniert, funktioniere, funktionierst
+Hat mit der Reise alles gut [funktioniert]? | در سفر همه‌چیز خوب پیش رفت؟ | d: funktionieren, funktioniere, funktionierst
+# reparieren
+Mein Vater [repariert] das Auto. | پدرم ماشین را تعمیر می‌کند.
+Kannst du mein Fahrrad [reparieren]? | می‌توانی دوچرخه‌ام را تعمیر کنی؟ | d: repariert, reparierst, repariere
+Wir haben die Lampe [repariert]. | ما چراغ را تعمیر کردیم. | d: reparieren, reparierst, repariere
+Der Mann [repariert] den Fernseher. | آن مرد تلویزیون را تعمیر می‌کند.
+[Reparieren] Sie hier auch Handys? | اینجا موبایل هم تعمیر می‌کنید؟
+Ich [repariere] den Stuhl selbst. | صندلی را خودم تعمیر می‌کنم.
+# stellen
+Ich [stelle] die Milch in den Kühlschrank. | شیر را در یخچال می‌گذارم.
+Wohin [stellst] du die Blumen? | گل‌ها را کجا می‌گذاری؟
+Er hat das Fahrrad in den Garten [gestellt]. | او دوچرخه را در حیاط گذاشت. | d: stellen, stellt, stellst
+Die Kinder [stellen] die Teller auf den Tisch. | بچه‌ها بشقاب‌ها را روی میز می‌گذارند. | d: stellt, stelle, stellst
+Wir [stellen] das Sofa ins Wohnzimmer. | مبل را در اتاق نشیمن می‌گذاریم.
+Bitte [stellen] Sie die Stühle in die Küche. | لطفاً صندلی‌ها را در آشپزخانه بگذارید.
+# legen
+Ich [lege] das Buch auf den Tisch. | کتاب را روی میز می‌گذارم.
+Wohin hast du meinen Schlüssel [gelegt]? | کلیدم را کجا گذاشتی؟ | d: legen, legt, legst
+Die Mutter [legt] das Baby ins Bett. | مادر نوزاد را در تخت می‌خواباند.
+[Legen] Sie bitte den Pass auf den Tisch. | لطفاً گذرنامه را روی میز بگذارید.
+Wir [legen] die Hefte in den Schrank. | دفترها را در کمد می‌گذاریم.
+[Legst] du den Käse bitte in den Kühlschrank? | لطفاً پنیر را در یخچال می‌گذاری؟
+# setzen
+Die Mutter [setzt] das Kind auf den Stuhl. | مادر بچه را روی صندلی می‌نشاند. | d: setze, setzen, gesetzt
+Papa [setzt] das Baby ins Auto. | بابا نوزاد را در ماشین می‌نشاند. | d: setze, setzen, gesetzt
+Der Lehrer [setzt] Max neben Anna. | معلم ماکس را کنار آنا می‌نشاند. | d: setze, setzen, gesetzt
+Wir [setzen] Oma ans Fenster. | مادربزرگ را کنار پنجره می‌نشانیم. | d: setze, setzt, gesetzt
+Sie hat die Katze auf das Sofa [gesetzt]. | او گربه را روی مبل گذاشت. | d: setzen, setzt, setze
+[Setzen] Sie das Kind bitte hinten ins Auto. | لطفاً بچه را عقب ماشین بنشانید. | d: Setze, Setzt, Gesetzt
+# sich setzen
+[Setzen] Sie sich bitte, Herr Müller! | آقای مولر، لطفاً بنشینید! | d: Setze, Setzt, Gesetzt
+Ich [setze] mich neben dich. | کنارت می‌نشینم. | d: setzt, setzen, gesetzt
+Darf ich mich zu Ihnen [setzen]? | اجازه هست کنار شما بنشینم؟ | d: setzt, setze, gesetzt
+Er hat sich auf den Stuhl [gesetzt]. | او روی صندلی نشست. | d: setzen, setzt, setze
+Die Kinder [setzen] sich an den Tisch. | بچه‌ها پشت میز می‌نشینند. | d: setze, setzt, gesetzt
+Wohin [setzt] du dich im Kino? | در سینما کجا می‌نشینی؟ | d: setze, setzen, gesetzt
+# hängen
+Das Bild [hängt] im Wohnzimmer. | تابلو در اتاق نشیمن آویزان است.
+Ich [hänge] die Jacke in den Schrank. | کاپشن را در کمد آویزان می‌کنم.
+Deine Jacke [hängt] an der Tür. | کاپشنت به در آویزان است.
+Wohin [hängst] du das Bild? | تابلو را کجا آویزان می‌کنی؟
+Wir haben die Lampe über den Tisch [gehängt]. | چراغ را بالای میز آویزان کردیم. | d: hängen, hängt, hängst
+Die Kleider [hängen] im Schrank. | لباس‌ها در کمد آویزان‌اند. | d: hängt, hänge, hängst
+# stecken
+Ich [stecke] das Handy in die Tasche. | موبایل را توی جیبم می‌گذارم.
+Der Schlüssel [steckt] in der Tür. | کلید توی قفل در است.
+Wo [steckt] Max denn schon wieder? | باز ماکس کجا رفته؟
+Er [steckt] die Hände in die Taschen. | او دست‌هایش را توی جیب‌هایش می‌کند.
+Wohin hast du mein Handy [gesteckt]? | موبایلم را کجا گذاشتی؟ | d: stecken, steckt, steckst
+[Steckst] du die Fahrkarte in die Jacke? | بلیت را توی جیب کاپشنت می‌گذاری؟
+# halten
+Der Bus [hält] hier vor der Schule. | اتوبوس اینجا جلوی مدرسه می‌ایستد.
+[Hältst] du mal meine Tasche? | یک لحظه کیفم را نگه می‌داری؟
+Der Zug [hält] nicht in Leipzig. | قطار در لایپزیگ نمی‌ایستد.
+Das Kind [hält] die Hand von seiner Mutter. | بچه دست مادرش را گرفته است.
+Bitte [halten] Sie hier, ich steige aus! | لطفاً اینجا نگه دارید، پیاده می‌شوم!
+Ich [halte] das Baby, und du kochst. | من بچه را نگه می‌دارم، تو آشپزی کن.
+# ziehen
+Der Arzt [zieht] mir einen Zahn. | دکتر یکی از دندان‌هایم را می‌کشد.
+Diese Tür muss man [ziehen]. | این در را باید کشید. | d: zieht, ziehe, ziehst
+Er [zieht] seine Schwester an den Haaren. | او موی خواهرش را می‌کشد.
+Ich [ziehe] den Koffer zum Bahnhof. | چمدان را تا ایستگاه می‌کشم.
+Max [zieht] den Stuhl an den Tisch. | ماکس صندلی را به سمت میز می‌کشد.
+Wir haben das Auto aus dem Schnee [gezogen]. | ماشین را از توی برف بیرون کشیدیم. | d: ziehen, zieht, ziehst
+# drücken
+Diese Tür muss man [drücken], nicht ziehen. | این در را باید هل داد، نه کشید. | d: drückt, drücke, drückst
+Die neuen Schuhe [drücken] ein bisschen. | کفش‌های نو کمی پایم را می‌زنند. | d: drückt, drücke, drückst
+Ich [drücke] und drücke, aber die Tür bleibt geschlossen. | فشار می‌دهم و فشار می‌دهم، اما در باز نمی‌شود.
+Der Arzt [drückt] auf meinen Bauch. Tut das weh? | دکتر روی شکمم فشار می‌دهد. درد دارد؟
+[Drückst] du bitte die Nummer vier? | لطفاً شمارهٔ چهار را فشار می‌دهی؟
+Er hat mir lange die Hand [gedrückt]. | او مدتی طولانی دستم را فشرد. | d: drücken, drückt, drückst
+# fallen
+Das Glas ist vom Tisch [gefallen]. | لیوان از روی میز افتاد. | d: fallen, fällt, fällst
+Lauf langsam, sonst [fällst] du! | آرام بدو، وگرنه می‌افتی!
+Im Winter [fällt] hier viel Schnee. | زمستان اینجا برف زیادی می‌بارد.
+Das Kind [fällt] vom Fahrrad. | بچه از دوچرخه می‌افتد.
+Mein Handy ist ins Wasser [gefallen]. | موبایلم توی آب افتاد. | d: fallen, fällt, fällst
+Die Äpfel [fallen] vom Baum. | سیب‌ها از درخت می‌افتند. | d: fällt, falle, fällst
+# werfen
+Bitte nichts aus dem Fenster [werfen]! | لطفاً چیزی از پنجره بیرون نیندازید! | d: wirft, wirfst, werfe
+Max [wirft] das Brot für die Vögel ins Wasser. | ماکس نان را برای پرنده‌ها توی آب می‌اندازد.
+Er [wirft] die Tasche auf das Sofa. | او کیفش را روی مبل پرت می‌کند.
+Im Winter [werfen] die Kinder mit Schnee. | زمستان بچه‌ها به هم گلوله برف پرت می‌کنند. | d: wirft, werfe, wirfst
+Wer hat das Papier auf die Straße [geworfen]? | چه کسی کاغذ را توی خیابان انداخت؟ | d: werfen, wirft, wirfst
+[Wirfst] du mir bitte den Schlüssel? | لطفاً کلید را برایم پرت می‌کنی؟
+# lachen
+Mit meiner Schwester [lache] ich immer viel. | با خواهرم همیشه زیاد می‌خندم.
+Warum [lachst] du? Das ist nicht lustig! | چرا می‌خندی؟ خنده‌دار نیست!
+Das Baby [lacht] den ganzen Tag. | نوزاد تمام روز می‌خندد.
+Auf der Party haben wir viel [gelacht]. | در مهمانی خیلی خندیدیم. | d: lachen, lacht, lachst
+Der Film ist lustig, alle [lachen]. | فیلم خنده‌دار است، همه می‌خندند. | d: lacht, lache, lachst
+Mein Opa [lacht] gern und viel. | پدربزرگم خیلی خنده‌روست.
+# weinen
+Das Baby [weint] in der Nacht. | نوزاد شب‌ها گریه می‌کند.
+Warum [weinst] du? Was ist passiert? | چرا گریه می‌کنی؟ چه اتفاقی افتاده؟
+Der Film war so traurig, ich habe [geweint]. | فیلم آن‌قدر غمگین بود که گریه کردم. | d: weinen, weint, weinst
+Bitte nicht [weinen], Mama kommt gleich! | لطفاً گریه نکن، مامان الان می‌آید! | d: weint, weinst, weine
+Das Kind [weint], weil es Hunger hat. | بچه گریه می‌کند، چون گرسنه است.
+Meine Mutter [weint] vor Glück. | مادرم از خوشحالی گریه می‌کند.
+# lächeln
+Die Frau im Café [lächelt] immer. | خانمِ کافه همیشه لبخند می‌زند.
+Für das Foto musst du ein bisschen [lächeln]. | برای عکس باید کمی لبخند بزنی. | d: lächelt, lächelst, lächle
+Der Verkäufer [lächelt] und sagt: Guten Tag! | فروشنده لبخند می‌زند و می‌گوید: روز بخیر!
+Auf dem Foto [lächeln] alle. | توی عکس همه لبخند می‌زنند. | d: lächelt, lächle, lächelst
+Ich [lächle] nicht gern auf Fotos. | دوست ندارم توی عکس‌ها لبخند بزنم.
+Sie hat nichts gesagt, nur [gelächelt]. | او هیچ نگفت، فقط لبخند زد. | d: lächeln, lächelt, lächelst
+# gewinnen
+Wer hat das Spiel [gewonnen]? | چه کسی بازی را برد؟ | d: gewinnen, gewinnt, gewinnst
+Heute [gewinnen] wir, ganz sicher! | امروز حتماً می‌بریم!
+Beim Spiel [gewinnt] immer mein Opa. | در بازی همیشه پدربزرگم می‌برد.
+Sie hat eine Reise [gewonnen]. | او یک سفر برنده شد. | d: gewinnen, gewinnt, gewinnst
+[Gewinnst] du oft gegen deinen Bruder? | اغلب از برادرت می‌بری؟
+Am Sonntag [gewinnt] Köln gegen Berlin. | یکشنبه کلن مقابل برلین می‌برد.
+# verlieren
+Ich habe mein Handy [verloren]. | موبایلم را گم کردم. | d: verlieren, verliert, verlierst
+Ohne Max [verlieren] wir das Spiel. | بدون ماکس بازی را می‌بازیم.
+Er [verliert] nicht gern, dann ist er traurig. | او از باختن خوشش نمی‌آید، آن وقت ناراحت می‌شود.
+Hamburg [verliert] heute gegen München. | هامبورگ امروز مقابل مونیخ می‌بازد.
+Ich [verliere] immer meine Kulis. | من همیشه خودکارهایم را گم می‌کنم.
+[Verlierst] du oft deinen Schlüssel? | اغلب کلیدت را گم می‌کنی؟
+# mitbringen
+Was kann ich zur Party [mitbringen]? | برای مهمانی چه چیزی می‌توانم بیاورم؟ | d: mitbringt, mitbringst, mitbringe
+Zum Kurs müssen Sie ein Heft [mitbringen]. | برای کلاس باید یک دفتر بیاورید. | d: mitbringt, mitbringst, mitbringe
+Kannst du vom Markt Brot [mitbringen]? | می‌توانی از بازار نان بیاوری؟ | d: mitbringt, mitbringst, mitbringe
+Er hat mir ein Geschenk [mitgebracht]. | او برایم هدیه آورد. | d: mitbringen, mitbringt, mitbringst
+Anna ist glücklich, weil Max Blumen [mitbringt]. | آنا خوشحال است، چون ماکس گل می‌آورد. | d: mitbringe, mitbringst, mitbringen
+Darf ich einen Freund [mitbringen]? | می‌توانم یک دوست با خودم بیاورم؟ | d: mitbringt, mitbringst, mitbringe
+# schenken
+Ich [schenke] meiner Mutter Blumen. | به مادرم گل هدیه می‌دهم.
+Was [schenkst] du Max zum Geburtstag? | برای تولد ماکس چه هدیه‌ای می‌دهی؟
+Oma hat mir ein Buch [geschenkt]. | مادربزرگ یک کتاب به من هدیه داد. | d: schenken, schenkt, schenkst
+Wir [schenken] unserem Lehrer einen Kalender. | ما به معلممان یک تقویم هدیه می‌دهیم.
+Mein Bruder [schenkt] mir nie etwas. | برادرم هیچ‌وقت چیزی به من هدیه نمی‌دهد.
+[Schenkt] ihr euren Eltern etwas zu Weihnachten? | برای کریسمس به پدر و مادرتان چیزی هدیه می‌دهید؟
+# gratulieren
+Ich [gratuliere] dir zum Geburtstag! | تولدت را تبریک می‌گویم!
+Wir [gratulieren] euch zum Baby! | تولد نوزادتان را تبریک می‌گوییم!
+Hast du Oma schon [gratuliert]? | به مادربزرگ تبریک گفته‌ای؟ | d: gratulieren, gratulierst, gratuliere
+Heute [gratulieren] ihr{sie} alle Kollegen. | امروز همهٔ همکارها به او تبریک می‌گویند. | d: gratuliert, gratuliere, gratulierst
+Der Chef [gratuliert] mir zum Geburtstag. | رئیس تولدم را به من تبریک می‌گوید.
+Darf ich dir [gratulieren]? Herzlichen Glückwunsch! | اجازه هست به تو تبریک بگویم؟ مبارک باشد! | d: gratuliert, gratulierst, gratuliere
+# vorstellen
+Ich möchte dir meine Schwester [vorstellen]. | می‌خواهم خواهرم را به تو معرفی کنم. | d: vorstellt, vorstellst, vorstelle
+Darf ich Ihnen meinen Mann [vorstellen]? | اجازه هست همسرم را به شما معرفی کنم؟ | d: vorstellt, vorstellst, vorstelle
+Kannst du mich deinen Freunden [vorstellen]? | می‌توانی مرا به دوستانت معرفی کنی؟ | d: vorstellt, vorstellst, vorstelle
+Der Chef hat mir die Kollegen [vorgestellt]. | رئیس همکاران را به من معرفی کرد. | d: vorstellen, vorstellt, vorstellst
+Die Schüler müssen ihr{ihr-det} Buch in der Klasse [vorstellen]. | دانش‌آموزها باید کتابشان را در کلاس معرفی کنند. | d: vorstellt, vorstellst, vorstelle
+Die Lehrerin hat den Schülern ein Buch [vorgestellt]. | معلم یک کتاب به دانش‌آموزها معرفی کرد. | d: vorstellen, vorstellt, vorstellst
+# sich vorstellen
+Darf ich mich [vorstellen]? Mein Name ist Ali Karimi. | اجازه بدهید خودم را معرفی کنم. اسمم علی کریمی است. | d: vorstellt, vorstellst, vorstelle
+Können Sie sich bitte kurz [vorstellen]? | می‌شود لطفاً خودتان را کوتاه معرفی کنید؟ | d: vorstellt, vorstellst, vorstelle
+Im Kurs muss sich jeder [vorstellen]. | در کلاس هر کس باید خودش را معرفی کند. | d: vorstellt, vorstellst, vorstelle
+Der neue Schüler hat sich der Klasse [vorgestellt]. | دانش‌آموز جدید خودش را به کلاس معرفی کرد. | d: vorstellen, vorstellt, vorstellst
+Morgen muss ich mich bei einer Firma [vorstellen]. | فردا باید برای مصاحبهٔ کاری به یک شرکت بروم. | d: vorstellt, vorstellst, vorstelle
+Hast du dich schon [vorgestellt]? | خودت را معرفی کرده‌ای؟ | d: vorstellen, vorstellt, vorstellst
+# begrüßen
+Der Chef [begrüßt] die neuen Kollegen. | رئیس به همکاران جدید خوشامد می‌گوید. | d: begrüße, begrüßen, begrüßtest
+Ich [begrüße] Sie zum Kurs. | به کلاس خوش آمدید. | d: begrüßt, begrüßen, begrüßtest
+Oma [begrüßt] uns an der Tür. | مادربزرگ دم در به ما خوشامد می‌گوید.
+Die Kinder haben den Vater am Bahnhof [begrüßt]. | بچه‌ها در ایستگاه به استقبال پدر رفتند. | d: begrüßen, begrüße, begrüßte
+Wie [begrüßt] man sich in Iran? | در ایران مردم چطور با هم سلام و احوالپرسی می‌کنند؟
+Der Hund [begrüßt] mich jeden Abend. | سگ هر شب به استقبالم می‌آید.
+# die Hand geben
+Er hat mir [die Hand gegeben]. | او با من دست داد. | d: die Hand geben, die Hand gibt, die Hand gibst
+Wir haben uns [die Hand gegeben]. | با هم دست دادیم. | d: die Hand geben, die Hand gibt, die Hand gibst
+Mein Sohn will nicht [die Hand geben]. | پسرم نمی‌خواهد دست بدهد. | d: die Hand gibt, die Hand gibst, die Hand gebe
+Der Chef möchte jedem neuen Kollegen [die Hand geben]. | رئیس می‌خواهد با هر همکار جدید دست بدهد. | d: die Hand gibt, die Hand gibst, die Hand gebe
+Der Lehrer hat allen Eltern [die Hand gegeben]. | معلم با همهٔ والدین دست داد. | d: die Hand geben, die Hand gibt, die Hand gibst
+Ich weiß, dass er nicht gern [die Hand gibt]. | می‌دانم که او دوست ندارد دست بدهد.
+# sich verabschieden
+Ich muss mich jetzt [verabschieden]. | الان باید خداحافظی کنم. | d: verabschiedet, verabschiedest, verabschiede
+Wir [verabschieden] uns von Oma. | از مادربزرگ خداحافظی می‌کنیم.
+Er ist gegangen und hat sich nicht [verabschiedet]. | او رفت و خداحافظی نکرد. | d: verabschieden, verabschiedest, verabschiede
+Am Bahnhof [verabschiedet] sich Lena von ihren Eltern. | لنا در ایستگاه با پدر و مادرش خداحافظی می‌کند.
+[Verabschiedest] du dich nicht von uns? | از ما خداحافظی نمی‌کنی؟
+Die Kinder [verabschieden] sich von der Lehrerin. | بچه‌ها با معلم خداحافظی می‌کنند.
+# schauen
+Wir [schauen] heute Abend einen Film. | امشب فیلم می‌بینیم. | ok: sehen
+Er [schaut] aus dem Fenster. | او از پنجره بیرون را نگاه می‌کند. | ok: sieht
+Ich [schaue] mal im Kalender. | یک نگاهی به تقویم می‌اندازم.
+Hast du schon auf die Uhr [geschaut]? | به ساعت نگاه کرده‌ای؟ | d: schauen, schaut, schaust | ok: gesehen
+[Schauen] Sie bitte hier auf das Bild! | لطفاً اینجا به تصویر نگاه کنید! | ok: Sehen
+Die Kinder [schauen] gern Fußball. | بچه‌ها دوست دارند فوتبال تماشا کنند. | d: schaut, schaue, schaust | ok: sehen
+# ansehen
+Er hat mich nicht [angesehen]. | او به من نگاه نکرد. | d: ansehen, ansieht, ansiehst
+Kannst du dir mal mein Fahrrad [ansehen]? | می‌شود یک نگاهی به دوچرخه‌ام بیندازی؟ | d: ansieht, ansiehst, ansehe
+Gestern haben wir eine Wohnung [angesehen]. | دیروز یک آپارتمان دیدیم. | d: ansehen, ansieht, ansiehst
+Die Kinder wollen die Bilder im Buch [ansehen]. | بچه‌ها می‌خواهند تصویرهای کتاب را نگاه کنند. | d: ansieht, ansiehst, ansehe
+Der Arzt hat sich mein Bein [angesehen]. | دکتر پایم را معاینه کرد. | d: ansehen, ansieht, ansiehst
+Ich möchte mir die Stadt [ansehen]. | می‌خواهم شهر را ببینم. | d: ansieht, ansiehst, ansehe
+# zuhören
+Die Kinder müssen dem Lehrer [zuhören]. | بچه‌ها باید به حرف معلم گوش بدهند. | d: zuhört, zuhörst, zuhöre
+Er ist traurig, weil ihm niemand [zuhört]. | او ناراحت است، چون هیچ‌کس به حرفش گوش نمی‌دهد. | d: zuhöre, zuhörst, zuhören
+Wir haben Opa lange [zugehört]. | مدت زیادی به حرف‌های پدربزرگ گوش دادیم. | d: zuhören, zuhört, zuhörst
+Kinder, jetzt bitte gut [zuhören]! | بچه‌ها، حالا لطفاً خوب گوش کنید! | d: zuhört, zuhörst, zuhöre
+Hast du mir gar nicht [zugehört]? | اصلاً به حرفم گوش ندادی؟ | d: zuhören, zuhört, zuhörst
+Meine Freundin kann sehr gut [zuhören]. | دوستم شنوندهٔ خیلی خوبی است. | d: zuhört, zuhörst, zuhöre
+# riechen
+Mama, das [riecht] aber gut! | مامان، چه بوی خوبی می‌دهد!
+Hier [riecht] es nach Kuchen. | اینجا بوی کیک می‌آید.
+[Riechst] du das? Das ist Kaffee. | بویش را حس می‌کنی؟ قهوه است.
+Die Blumen im Garten [riechen] schön. | گل‌های حیاط بوی خوبی دارند. | d: riecht, rieche, riechst
+Ich [rieche] nichts, ich bin krank. | هیچ بویی حس نمی‌کنم، مریضم.
+Der Fisch [riecht] nicht mehr gut. | ماهی دیگر بوی خوبی نمی‌دهد.
+# aufmachen
+Kannst du bitte das Fenster [aufmachen]? | می‌شود لطفاً پنجره را باز کنی؟ | d: aufmacht, aufmachst, aufmache | ok: öffnen
+Wer hat die Tür [aufgemacht]? | چه کسی در را باز کرد؟ | d: aufmachen, aufmacht, aufmachst | ok: geöffnet
+Darf ich das Geschenk jetzt [aufmachen]? | می‌توانم الان هدیه را باز کنم؟ | d: aufmacht, aufmachst, aufmache | ok: öffnen
+Ich warte, weil die Bäckerei erst um sieben [aufmacht]. | منتظرم، چون نانوایی تازه ساعت هفت باز می‌کند. | d: aufmache, aufmachst, aufmachen | ok: öffnet
+Ich kann die Flasche nicht [aufmachen]. | نمی‌توانم در بطری را باز کنم. | d: aufmacht, aufmachst, aufmache | ok: öffnen
+Hast du den Brief schon [aufgemacht]? | نامه را باز کرده‌ای؟ | d: aufmachen, aufmacht, aufmachst | ok: geöffnet
+# zumachen
+Kannst du bitte die Tür [zumachen]? Es ist kalt. | می‌شود لطفاً در را ببندی؟ هوا سرد است. | d: zumacht, zumachst, zumache | ok: schließen
+Ich habe die Augen [zugemacht]. | چشم‌هایم را بستم. | d: zumachen, zumacht, zumachst | ok: geschlossen
+Wir müssen schnell gehen, weil der Supermarkt um acht [zumacht]. | باید زود برویم، چون سوپرمارکت ساعت هشت می‌بندد. | d: zumache, zumachst, zumachen | ok: schließt
+Hast du das Fenster [zugemacht]? | پنجره را بسته‌ای؟ | d: zumachen, zumacht, zumachst | ok: geschlossen
+Ich kann den Koffer nicht [zumachen]. | نمی‌توانم چمدان را ببندم. | d: zumacht, zumachst, zumache | ok: schließen
+Du musst die Flasche gut [zumachen]. | باید در بطری را خوب ببندی. | d: zumacht, zumachst, zumache | ok: schließen
+# abschließen
+Hast du das Auto [abgeschlossen]? | ماشین را قفل کرده‌ای؟ | d: abschließen, abschließt, abschließe
+Ich muss noch das Fahrrad [abschließen]. | هنوز باید دوچرخه را قفل کنم. | d: abschließt, abschließe, abgeschlossen
+Wir haben das Zimmer [abgeschlossen]. | اتاق را قفل کردیم. | d: abschließen, abschließt, abschließe
+Kannst du den Schrank [abschließen]? | می‌توانی کمد را قفل کنی؟ | d: abschließt, abschließe, abgeschlossen
+Ich gehe zurück, weil ich das Auto nicht [abgeschlossen] habe. | برمی‌گردم، چون ماشین را قفل نکرده‌ام. | d: abschließen, abschließt, abschließe
+Im Hotel muss man das Zimmer immer [abschließen]. | در هتل همیشه باید اتاق را قفل کرد. | d: abschließt, abschließe, abgeschlossen
+# die Tür abschließen
+Hast du [die Tür abgeschlossen]? | در را قفل کرده‌ای؟ | d: die Tür abschließen, die Tür abschließt, die Tür abschließe
+Ich muss noch [die Tür abschließen]. | هنوز باید در را قفل کنم. | d: die Tür abschließt, die Tür abschließe, die Tür abgeschlossen
+Kannst du bitte [die Tür abschließen]? | می‌شود لطفاً در را قفل کنی؟ | d: die Tür abschließt, die Tür abschließe, die Tür abgeschlossen
+Hat jemand [die Tür abgeschlossen]? | کسی در را قفل کرده؟ | d: die Tür abschließen, die Tür abschließt, die Tür abschließe
+Wir warten draußen, weil jemand [die Tür abgeschlossen] hat. | بیرون منتظریم، چون کسی در را قفل کرده. | d: die Tür abschließen, die Tür abschließt, die Tür abschließe
+Mein Vater will abends immer selbst [die Tür abschließen]. | پدرم شب‌ها همیشه می‌خواهد خودش در را قفل کند. | d: die Tür abschließt, die Tür abschließe, die Tür abgeschlossen
+# bauen
+Mein Vater [baut] ein Haus. | پدرم یک خانه می‌سازد.
+Wer hat dieses Haus [gebaut]? | چه کسی این خانه را ساخته؟ | d: bauen, baut, baust
+Wir wollen auf dem Dorf ein Haus [bauen]. | می‌خواهیم در روستا یک خانه بسازیم. | d: baut, baust, baue
+Mein Sohn [baut] gern Flugzeuge aus Papier. | پسرم دوست دارد با کاغذ هواپیما بسازد.
+In unserem Dorf [baut] man ein Krankenhaus. | در روستای ما یک بیمارستان می‌سازند.
+Die Kinder [bauen] im Garten ein Haus für den Hund. | بچه‌ها در حیاط برای سگ یک خانه می‌سازند. | d: baut, baust, baue
+# brennen
+Schau mal, dort [brennt] ein Haus! | نگاه کن، آنجا یک خانه آتش گرفته!
+Im Sommer [brennt] die Sonne in Iran. | تابستان در ایران آفتاب خیلی داغ است.
+Meine Augen [brennen], ich bin so müde. | چشم‌هایم می‌سوزد، خیلی خسته‌ام. | d: brennt, brenne, brennst
+Im Bad [brennt] noch die Lampe. | چراغ حمام هنوز روشن است.
+Es [brennt]! Rufen Sie die Polizei! | آتش‌سوزی شده! پلیس را خبر کنید!
+Die Lampe hat die ganze Nacht [gebrannt]. | چراغ تمام شب روشن بود. | d: brennen, brennt, brennst
+# kontrollieren
+Im Zug [kontrolliert] ein Mann die Fahrkarten. | در قطار یک مرد بلیت‌ها را کنترل می‌کند.
+Die Polizei [kontrolliert] die Autos. | پلیس ماشین‌ها را بازرسی می‌کند.
+Am Flughafen [kontrolliert] man die Koffer. | در فرودگاه چمدان‌ها را بازرسی می‌کنند.
+Die Lehrerin [kontrolliert] die Hausaufgaben. | معلم تکلیف‌ها را بررسی می‌کند.
+Hast du die Rechnung [kontrolliert]? | صورت‌حساب را چک کرده‌ای؟
+Ich [kontrolliere] noch einmal alles. | یک بار دیگر همه‌چیز را بررسی می‌کنم.
+# planen
+Wir [planen] eine Reise nach Iran. | داریم یک سفر به ایران برنامه‌ریزی می‌کنیم.
+Was [planst] du für das Wochenende? | برای آخر هفته چه برنامه‌ای داری؟
+Ich habe alles genau [geplant]. | همه‌چیز را دقیق برنامه‌ریزی کرده‌ام. | d: planen, plant, planst
+Meine Schwester [plant] eine Party für Mama. | خواهرم برای مامان یک مهمانی ترتیب می‌دهد.
+Die Stadt [plant] einen Park im Zentrum. | شهرداری برای مرکز شهر یک پارک در نظر دارد.
+Wir müssen den Urlaub früh [planen]. | باید تعطیلات را زود برنامه‌ریزی کنیم. | d: plant, planst, plane
+# vorbereiten
+Ich muss noch das Essen [vorbereiten]. | هنوز باید غذا را آماده کنم. | d: vorbereitet, vorbereitest, vorbereite
+Hast du dich auf die Prüfung [vorbereitet]? | برای امتحان آماده شده‌ای؟ | d: vorbereiten, vorbereitest, vorbereite
+Mama hat das Frühstück [vorbereitet]. | مامان صبحانه را آماده کرده. | d: vorbereiten, vorbereitest, vorbereite
+Wir müssen das Fest [vorbereiten]. | باید جشن را تدارک ببینیم. | d: vorbereitet, vorbereitest, vorbereite
+Die Lehrerin hat einen Test [vorbereitet]. | معلم یک آزمون آماده کرده. | d: vorbereiten, vorbereitest, vorbereite
+Ich habe keine Zeit, weil ich das Abendessen [vorbereite]. | وقت ندارم، چون دارم شام را آماده می‌کنم. | d: vorbereitest, vorbereitet, vorbereiten
+# abgeben
+Ihr müsst die Hausaufgaben morgen [abgeben]. | باید تکلیف‌ها را فردا تحویل بدهید. | d: abgibt, abgibst, abgebe
+Ich habe den Test schon [abgegeben]. | آزمون را تحویل داده‌ام. | d: abgeben, abgibt, abgibst
+Wo kann ich den Schlüssel [abgeben]? | کلید را کجا می‌توانم تحویل بدهم؟ | d: abgibt, abgibst, abgebe
+Sie hat das Formular im Büro [abgegeben]. | او فرم را در دفتر تحویل داد. | d: abgeben, abgibt, abgibst
+Den Koffer können Sie hier [abgeben]. | چمدان را می‌توانید اینجا تحویل بدهید. | d: abgibt, abgibst, abgebe
+Max ist glücklich, weil er die Hausaufgaben schon [abgegeben] hat. | ماکس خوشحال است، چون تکلیف‌هایش را تحویل داده. | d: abgeben, abgibt, abgibst
+# ausleihen
+Ich möchte das Buch [ausleihen]. | می‌خواهم این کتاب را امانت بگیرم. | d: ausleiht, ausleihst, ausleihe
+Wie lange kann man die Bücher [ausleihen]? | کتاب‌ها را چه مدت می‌شود امانت گرفت؟ | d: ausleiht, ausleihst, ausleihe
+Ich habe mir ein Fahrrad [ausgeliehen]. | یک دوچرخه قرض گرفتم. | d: ausleihen, ausleiht, ausleihst
+Kann ich dein Heft [ausleihen]? | می‌توانم دفترت را قرض بگیرم؟ | d: ausleiht, ausleihst, ausleihe
+Sie hat drei Bücher [ausgeliehen]. | او سه کتاب امانت گرفته. | d: ausleihen, ausleiht, ausleihst
+Anna will sich bei mir ein Kleid [ausleihen]. | آنا می‌خواهد از من یک لباس قرض بگیرد. | d: ausleiht, ausleihst, ausleihe
+# springen
+Die Kinder [springen] ins Wasser. | بچه‌ها توی آب می‌پرند. | d: springt, springst, springe
+Die Katze [springt] auf den Tisch. | گربه روی میز می‌پرد.
+Ich bin schnell aus dem Bus [gesprungen]. | سریع از اتوبوس پایین پریدم. | d: springen, springt, springst
+Max ist vom Stuhl auf das Sofa [gesprungen]. | ماکس از روی صندلی روی مبل پرید. | d: springen, springt, springst
+Meine Söhne [springen] immer auf dem Bett. | پسرهایم همیشه روی تخت بالا و پایین می‌پرند. | d: springt, springst, springe
+[Springst] du mit mir ins Wasser? | با من توی آب می‌پری؟
+# mitnehmen
+Kann ich das Buch [mitnehmen]? | می‌توانم کتاب را با خودم ببرم؟ | d: mitnimmt, mitnimmst, mitnehme
+Ich habe eine Jacke [mitgenommen]. | یک کاپشن با خودم برده‌ام. | d: mitnehmen, mitnimmt, mitnimmst
+Du musst den Pass [mitnehmen]. | باید گذرنامه را با خودت ببری. | d: mitnimmt, mitnimmst, mitnehme
+Wir haben die Kinder [mitgenommen]. | بچه‌ها را با خودمان بردیم. | d: mitnehmen, mitnimmt, mitnimmst
+Kannst du mich zum Bahnhof [mitnehmen]? | می‌توانی مرا تا ایستگاه برسانی؟ | d: mitnimmt, mitnimmst, mitnehme
+Max weint, weil Papa ihn nicht [mitnimmt]. | ماکس گریه می‌کند، چون بابا او را با خودش نمی‌برد. | d: mitnehme, mitnimmst, mitnehmen
+# abholen
+Kannst du mich vom Bahnhof [abholen]? | می‌توانی بیایی ایستگاه دنبالم؟ | d: abholt, abholst, abhole
+Papa hat die Kinder von der Schule [abgeholt]. | بابا بچه‌ها را از مدرسه آورد. | d: abholen, abholt, abholst
+Ich muss um fünf Uhr meine Tochter [abholen]. | ساعت پنج باید بروم دنبال دخترم. | d: abholt, abholst, abhole
+Wann kann ich das Fahrrad [abholen]? | کی می‌توانم دوچرخه را تحویل بگیرم؟ | d: abholt, abholst, abhole
+Ich muss jetzt gehen, weil ich Oma vom Flughafen [abhole]. | الان باید بروم، چون مادربزرگ را از فرودگاه می‌آورم. | d: abholst, abholt, abholen
+Hast du die Fahrkarten schon [abgeholt]? | بلیت‌ها را گرفته‌ای؟ | d: abholen, abholt, abholst
+# zurückkommen
+Wann ist dein Bruder [zurückgekommen]? | برادرت کی برگشت؟ | d: zurückkommen, zurückkommt, zurückkommst
+Sie ist gestern aus dem Urlaub [zurückgekommen]. | او دیروز از تعطیلات برگشت. | d: zurückkommen, zurückkommt, zurückkommst
+Der Chef ist noch nicht [zurückgekommen]. | رئیس هنوز برنگشته. | d: zurückkommen, zurückkommt, zurückkommst
+Ich koche, weil Papa bald [zurückkommt]. | آشپزی می‌کنم، چون بابا به‌زودی برمی‌گردد. | d: zurückkomme, zurückkommst, zurückkommen
+Kannst du in einer Stunde [zurückkommen]? | می‌توانی یک ساعت دیگر برگردی؟ | d: zurückkommt, zurückkommst, zurückkomme
+Ich will nach der Uni nach Iran [zurückkommen]. | می‌خواهم بعد از دانشگاه به ایران برگردم. | d: zurückkommt, zurückkommst, zurückkomme
+# nach Hause kommen
+Papa [kommt nach Hause], das Essen ist fertig. | بابا دارد به خانه می‌آید، غذا آماده است.
+Wann bist du gestern [nach Hause gekommen]? | دیروز کی به خانه رسیدی؟ | d: nach Hause kommen, nach Hause kommt, nach Hause kommst
+Ich bin müde, weil ich spät [nach Hause gekommen] bin. | خسته‌ام، چون دیر به خانه رسیدم. | d: nach Hause kommen, nach Hause kommt, nach Hause kommst
+Max muss um acht [nach Hause kommen]. | ماکس باید ساعت هشت خانه باشد. | d: nach Hause kommt, nach Hause kommst, nach Hause komme
+Wir [kommen nach Hause] und essen zusammen. | به خانه می‌آییم و با هم غذا می‌خوریم.
+Kannst du heute früh [nach Hause kommen]? | می‌توانی امروز زود بیایی خانه؟ | d: nach Hause kommt, nach Hause kommst, nach Hause komme
+# zurückgeben
+Kannst du mir mein Buch [zurückgeben]? | می‌توانی کتابم را پس بدهی؟ | d: zurückgibt, zurückgibst, zurückgebe
+Ich habe ihm das Geld [zurückgegeben]. | پولش را به او پس دادم. | d: zurückgeben, zurückgibt, zurückgibst
+Wann musst du die Bücher [zurückgeben]? | کتاب‌ها را کی باید پس بدهی؟ | d: zurückgibt, zurückgibst, zurückgebe
+Die Lehrerin hat uns den Test [zurückgegeben]. | معلم آزمون را به ما پس داد. | d: zurückgeben, zurückgibt, zurückgibst
+Ich gehe zu Anna, weil ich ihr{sie} den Schlüssel [zurückgebe]. | پیش آنا می‌روم، چون کلیدش را به او پس می‌دهم. | d: zurückgibst, zurückgibt, zurückgeben
+Im Geschäft kann man die Schuhe [zurückgeben]. | در مغازه می‌شود کفش‌ها را پس داد. | d: zurückgibt, zurückgibst, zurückgebe
+# weggehen
+Er ist ohne ein Wort [weggegangen]. | او بدون یک کلمه حرف رفت. | d: weggehen, weggeht, weggehst
+Wann bist du gestern [weggegangen]? | دیروز کی رفتی؟ | d: weggehen, weggeht, weggehst
+Sie will nicht von hier [weggehen]. | او نمی‌خواهد از اینجا برود. | d: weggeht, weggehst, weggehe
+Max ist traurig, weil sein Freund [weggeht]. | ماکس ناراحت است، چون دوستش دارد می‌رود. | d: weggehe, weggehst, weggehen
+Bitte nicht [weggehen], ich bin gleich zurück! | لطفاً نرو، الان برمی‌گردم! | d: weggeht, weggehst, weggehe
+Wir dürfen nicht [weggehen], Mama kommt gleich. | نباید جایی برویم، مامان الان می‌آید. | d: weggeht, weggehst, weggehe
+# vorbeikommen
+Kannst du morgen nach der Arbeit [vorbeikommen]? | می‌توانی فردا بعد از کار یک سر بیایی؟ | d: vorbeikommt, vorbeikommst, vorbeikomme
+Gestern ist Anna mit ihrem Baby [vorbeigekommen]. | دیروز آنا با نوزادش سری زد. | d: vorbeikommen, vorbeikommt, vorbeikommst
+Ich möchte heute Abend kurz bei dir [vorbeikommen]. | می‌خواهم امشب یک سر کوتاه پیشت بیایم. | d: vorbeikommt, vorbeikommst, vorbeikomme
+Ich bleibe zu Hause, weil Oma heute [vorbeikommt]. | خانه می‌مانم، چون مادربزرگ امروز سر می‌زند. | d: vorbeikomme, vorbeikommst, vorbeikommen
+Wann darf ich bei Ihnen [vorbeikommen]? | کی می‌توانم پیش شما بیایم؟ | d: vorbeikommt, vorbeikommst, vorbeikomme
+Du kannst immer bei uns [vorbeikommen]. | هر وقت خواستی می‌توانی به ما سر بزنی. | d: vorbeikommt, vorbeikommst, vorbeikomme
+# ausgehen
+Am Samstag wollen wir [ausgehen]. | شنبه می‌خواهیم برویم بیرون. | d: ausgeht, ausgehst, ausgehe
+Wir sind gestern Abend [ausgegangen]. | دیشب بیرون رفتیم. | d: ausgehen, ausgeht, ausgehst
+Meine Eltern möchten heute Abend [ausgehen]. | پدر و مادرم می‌خواهند امشب بیرون بروند. | d: ausgeht, ausgehst, ausgehe
+Am Wochenende kann ich nicht [ausgehen], ich muss lernen. | آخر هفته نمی‌توانم بیرون بروم، باید درس بخوانم. | d: ausgeht, ausgehst, ausgehe
+Seid ihr am Wochenende [ausgegangen]? | آخر هفته بیرون رفتید؟ | d: ausgehen, ausgeht, ausgehst
+Gestern wollten wir [ausgehen], aber es hat geregnet. | دیروز می‌خواستیم بیرون برویم، اما باران آمد. | d: ausgeht, ausgehst, ausgehe
+# aufhören
+Endlich hat der Regen [aufgehört]. | بالاخره باران بند آمد. | d: aufhören, aufhört, aufhörst
+Ich gehe nach Hause, weil die Arbeit um vier [aufhört]. | به خانه می‌روم، چون کار ساعت چهار تمام می‌شود. | d: aufhöre, aufhörst, aufhören
+Kannst du bitte [aufhören]? Ich muss lernen. | می‌شود لطفاً بس کنی؟ باید درس بخوانم. | d: aufhört, aufhörst, aufhöre
+Die Musik hat plötzlich [aufgehört]. | موسیقی ناگهان قطع شد. | d: aufhören, aufhört, aufhörst
+Wir müssen jetzt [aufhören], es ist spät. | الان باید تمامش کنیم، دیر است. | d: aufhört, aufhörst, aufhöre
+Der Schmerz hat endlich [aufgehört]. | درد بالاخره تمام شد. | d: aufhören, aufhört, aufhörst
+# aufpassen
+Im Kurs musst du gut [aufpassen]. | در کلاس باید خوب حواست را جمع کنی. | d: aufpasst, aufpasse, aufgepasst
+Entschuldigung, ich habe nicht [aufgepasst]. | ببخشید، حواسم نبود. | d: aufpassen, aufpasst, aufpasse
+Kannst du kurz auf meine Tasche [aufpassen]? | می‌توانی یک لحظه مواظب کیفم باشی؟ | d: aufpasst, aufpasse, aufgepasst
+Ich bin vom Fahrrad gefallen, weil ich nicht [aufgepasst] habe. | از دوچرخه افتادم، چون حواسم نبود. | d: aufpassen, aufpasst, aufpasse
+Wenn du nicht [aufpasst], fällst du. | اگر مواظب نباشی، می‌افتی. | d: aufpasse, aufpassen, aufgepasst
+Hier fahren Autos, du musst [aufpassen]! | اینجا ماشین رفت‌وآمد می‌کند، باید مواظب باشی! | d: aufpasst, aufpasse, aufgepasst
+# auf die Kinder aufpassen
+Kannst du heute [auf die Kinder aufpassen]? | می‌توانی امروز مراقب بچه‌ها باشی؟ | d: auf die Kinder aufpasst, auf die Kinder aufpasse, auf die Kinder aufgepasst
+Oma hat gestern [auf die Kinder aufgepasst]. | مادربزرگ دیروز مراقب بچه‌ها بود. | d: auf die Kinder aufpassen, auf die Kinder aufpasst, auf die Kinder aufpasse
+Ich muss am Samstag [auf die Kinder aufpassen]. | شنبه باید مراقب بچه‌ها باشم. | d: auf die Kinder aufpasst, auf die Kinder aufpasse, auf die Kinder aufgepasst
+Ich kann nicht kommen, weil ich [auf die Kinder aufpasse]. | نمی‌توانم بیایم، چون باید مراقب بچه‌ها باشم. | d: auf die Kinder aufpasst, auf die Kinder aufpassen, auf die Kinder aufgepasst
+Meine Schwester will heute Abend [auf die Kinder aufpassen]. | خواهرم می‌خواهد امشب مراقب بچه‌ها باشد. | d: auf die Kinder aufpasst, auf die Kinder aufpasse, auf die Kinder aufgepasst
+Wenn du [auf die Kinder aufpasst], können wir ausgehen. | اگر تو مراقب بچه‌ها باشی، می‌توانیم بیرون برویم. | d: auf die Kinder aufpasse, auf die Kinder aufpassen, auf die Kinder aufgepasst
+# sich beeilen
+Wir müssen uns [beeilen], der Zug fährt gleich. | باید عجله کنیم، قطار الان حرکت می‌کند.
+Ich [beeile] mich, der Bus kommt gleich. | عجله می‌کنم، اتوبوس الان می‌آید.
+Er hat sich sehr [beeilt]. | او خیلی عجله کرد.
+[Beeilt] euch, Kinder, die Schule beginnt! | عجله کنید بچه‌ها، مدرسه شروع می‌شود!
+Warum [beeilst] du dich so? | چرا این‌قدر عجله می‌کنی؟
+Du musst dich nicht [beeilen], wir haben Zeit. | لازم نیست عجله کنی، وقت داریم.
+# sich freuen
+Ich [freue] mich auf die Ferien. | برای تعطیلات لحظه‌شماری می‌کنم.
+Wir [freuen] uns über das Geschenk. | از هدیه خوشحالیم.
+Oma hat sich sehr [gefreut]. | مادربزرگ خیلی خوشحال شد. | d: freuen, freut, freust
+[Freust] du dich auf Weihnachten? | منتظر کریسمس هستی؟
+Die Kinder [freuen] sich, weil es schneit. | بچه‌ها خوشحال‌اند، چون برف می‌بارد.
+Max [freut] sich über den Brief von Oma. | ماکس از نامهٔ مادربزرگ خوشحال است.
+# sich ärgern
+Ich [ärgere] mich über den Fehler. | از این اشتباه حرصم گرفته.
+[Ärgere] dich nicht, das ist nicht wichtig! | حرص نخور، مهم نیست! | ok: Ärger
+Er hat sich sehr [geärgert]. | او خیلی عصبانی شد. | d: ärgern, ärgert, ärgerst
+Papa [ärgert] sich, weil der Bus zu spät kommt. | بابا حرص می‌خورد، چون اتوبوس دیر می‌آید.
+Warum [ärgerst] du dich so über ihn? | چرا این‌قدر از دست او حرص می‌خوری؟
+Die Lehrerin [ärgert] sich, wenn wir zu spät kommen. | معلم عصبانی می‌شود، وقتی ما دیر می‌آییم.
+# sich interessieren
+Ich [interessiere] mich für Musik. | به موسیقی علاقه دارم.
+[Interessierst] du dich für Fußball? | به فوتبال علاقه داری؟
+Mein Bruder [interessiert] sich für Computer. | برادرم به کامپیوتر علاقه دارد.
+Wir [interessieren] uns für die Wohnung. | ما به آن آپارتمان علاقه‌مندیم.
+Sie hat sich schon immer für Sprachen [interessiert]. | او همیشه به زبان‌ها علاقه داشته.
+Die Kinder [interessieren] sich für Tiere. | بچه‌ها به حیوانات علاقه دارند.
+# sich fühlen
+Wie [fühlst] du dich heute, Oma? | مادربزرگ، امروز حالت چطور است؟
+Ich [fühle] mich heute nicht gut. | امروز حالم خوب نیست.
+Er [fühlt] sich in Berlin zu Hause. | او در برلین احساس می‌کند در خانهٔ خودش است.
+Nach dem Urlaub [fühlen] wir uns gut. | بعد از تعطیلات حالمان خوب است.
+Ich habe mich krank [gefühlt]. | احساس کردم مریضم. | d: fühlen, fühlt, fühlst
+Sie [fühlt] sich in der Stadt allein. | او در شهر احساس تنهایی می‌کند.
+# sich ausruhen
+Ich bin müde, ich muss mich [ausruhen]. | خسته‌ام، باید استراحت کنم. | d: ausruht, ausruhst, ausruhe
+Hast du dich gut [ausgeruht]? | خوب استراحت کردی؟ | d: ausruhen, ausruht, ausruhst
+Nach der Arbeit will Papa sich [ausruhen]. | بعد از کار بابا می‌خواهد استراحت کند. | d: ausruht, ausruhst, ausruhe
+Wir haben uns im Garten [ausgeruht]. | در حیاط استراحت کردیم. | d: ausruhen, ausruht, ausruhst
+Die Kinder spielen draußen, weil Mama sich [ausruht]. | بچه‌ها بیرون بازی می‌کنند، چون مامان دارد استراحت می‌کند. | d: ausruhe, ausruhst, ausruhen
+Am Wochenende möchte ich mich nur [ausruhen]. | آخر هفته فقط می‌خواهم استراحت کنم. | d: ausruht, ausruhst, ausruhe
+# Lust
+Keine [Lust]! Ich bleibe zu Hause. | حوصله ندارم! خانه می‌مانم. | d: Freude, Liebe, Ruhe
+[Lust] auf Kino heute Abend? | امشب حوصلهٔ سینما داری؟
+Bei dem Regen ist meine [Lust] auf Sport weg. | با این باران دیگر حوصلهٔ ورزش ندارم. | d: Angst, Liebe, Ruhe
+Ich bekomme [Lust] auf ein Eis. | هوس بستنی کرده‌ام. | d: Angst, Ruhe, Liebe
+Die [Lust] auf Schokolade kommt immer am Abend. | هوس شکلات همیشه شب‌ها سراغم می‌آید.
+Meine [Lust] auf Hausaufgaben ist heute nicht groß. | امروز زیاد حوصلهٔ تکلیف ندارم. | d: Angst, Sorge, Ruhe
+# Sorge
+Keine [Sorge], Mama, ich komme pünktlich. | نگران نباش مامان، سر وقت می‌آیم. | d: Lust, Liebe, Freude
+Ich habe [Sorgen] wegen der Prüfung. | به خاطر امتحان نگرانم. | d: Freuden, Lieben, Launen
+Meine Mutter hat immer [Sorgen] um mich. | مادرم همیشه نگران من است. | d: Freuden, Pausen, Launen
+Das ist nicht deine [Sorge], das mache ich. | این دغدغهٔ تو نیست، خودم انجامش می‌دهم.
+Er hat viele [Sorgen], weil er keine Arbeit hat. | او نگرانی زیادی دارد، چون کار ندارد. | d: Freuden, Feste, Geschenke
+Die [Sorge] um das Kind ist groß. | نگرانی برای بچه زیاد است. | d: Lust, Freude, Liebe

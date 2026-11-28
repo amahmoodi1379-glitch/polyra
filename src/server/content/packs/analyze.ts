@@ -88,6 +88,15 @@ type Phrase = { word: PackWord; pieces: string[]; verb: { index: number; word: P
 
 /** A phrase with a personal subject (je voudrais, ich hätte gern) holds its verb in exactly that form: «je veux» is not «je voudrais». */
 const PERSONAL = /^(je|j|j'|tu|nous|vous|ich|du|wir|ihr)$/u;
+/**
+ * The reflexive pronoun of a phrase of three or more pieces (sich Sorgen machen, se rendre compte) in
+ * another person: «mache mir Sorgen», «je me rends compte». The person's index in a verb's six forms.
+ */
+const REFLEXIVE_PERSON: Record<string, Record<string, number>> = {
+  de: { mich: 0, mir: 0, dich: 1, dir: 1, uns: 3, euch: 4 },
+  fr: { me: 0, m: 0, te: 1, t: 1, nous: 3, vous: 4 },
+};
+const REFLEXIVE_PIECE: Record<string, string> = { de: "sich", fr: "se" };
 /** Phrases that are themselves only before an infinitive: «je viens de manger», not «je viens de Paris». */
 const BEFORE_INFINITIVE = new Set(["venir de"]);
 /** French object pronouns that may stand between a word and its infinitive (vient de lui parler). */
@@ -152,6 +161,7 @@ export class Analyzer {
     const piece = phrase.pieces[k];
     if (surface === piece) return true;
     if (APOSTROPHE.test(unit.surface) && (ELIDED[surface] ?? []).includes(piece)) return true;
+    if (piece === REFLEXIVE_PIECE[this.language] && phrase.pieces.length >= 3 && REFLEXIVE_PERSON[this.language]?.[surface] !== undefined && (surface.length > 1 || APOSTROPHE.test(unit.surface))) return true;
     // A verb is never an elided piece (Lexique lists «n'» under avoir); after je/ich it is the phrase's own form.
     if (phrase.personal && phrase.verb?.index === k && piece !== fold(bareLemma(phrase.verb.word.word.lemma))) return false;
     return phrase.verb?.index === k && !APOSTROPHE.test(unit.surface) && this.morph.candidates(unit.surface).some((candidate) => candidate.word === phrase.verb!.word);
@@ -199,6 +209,7 @@ export class Analyzer {
    * is «come from»), and «avoir mal» not before a participle (j'ai mal dormi is «mal» the adverb).
    */
   private phraseBlocked(phrase: Phrase, at: number[], list: Unit[]): boolean {
+    if (this.reflexiveDisagrees(phrase, at, list)) return true;
     if (this.language === "de") return this.germanPhraseBlocked(phrase, at, list);
     if (this.language !== "fr") return false;
     let after = at[at.length - 1] + 1;
@@ -219,6 +230,31 @@ export class Analyzer {
    * German: a noun of the phrase with its own article is the plain noun (Der Bus fährt is not «Bus fahren»,
    * keinen Hunger haben still is «Hunger haben»); «es gibt» only in the third person (Gib es mir is «geben»).
    */
+  /**
+   * A reflexive phrase read with mir, dich, me, nous …: its verb must be of that person («mache mir Sorgen»,
+   * «nous nous rendons compte»), or an infinitive, participle or imperative; «er macht mir Sorgen» is not the phrase.
+   */
+  private reflexiveDisagrees(phrase: Phrase, at: number[], list: Unit[]): boolean {
+    const persons = REFLEXIVE_PERSON[this.language];
+    if (!persons || !phrase.verb || !phrase.pieces.includes(REFLEXIVE_PIECE[this.language])) return false;
+    const pronoun = at.map((index) => fold(list[index].surface.replace(APOSTROPHE, ""))).find((surface) => persons[surface] !== undefined);
+    if (pronoun === undefined) return false;
+    const verb = at.map((index) => list[index]).find((unit) => this.pieceMatches(phrase, phrase.verb!.index, unit) && fold(unit.surface.replace(APOSTROPHE, "")) !== pronoun);
+    if (!verb) return false;
+    const surface = fold(verb.surface);
+    let finite = false;
+    for (const group of verbFormGroups(this.language, phrase.verb.word.word.lemma)) {
+      const forms = group.forms.map(fold);
+      if (forms.length !== 6) {
+        if (forms.includes(surface)) return false;
+        continue;
+      }
+      if (forms[persons[pronoun]] === surface) return false;
+      if (forms.includes(surface)) finite = true;
+    }
+    return finite;
+  }
+
   private germanPhraseBlocked(phrase: Phrase, at: number[], list: Unit[]): boolean {
     const nouns = new Set(splitPieces(phrase.word.word.lemma).filter((piece) => /^\p{Lu}/u.test(piece.text)).map((piece) => fold(piece.text)));
     for (const index of at) {

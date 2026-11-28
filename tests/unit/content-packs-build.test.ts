@@ -9,7 +9,7 @@ import { buildWriting } from "@/server/content/packs/writing";
 import { buildPhonics } from "@/server/content/packs/phonics";
 import { buildGrammar } from "@/server/content/packs/grammar";
 import { germanAdjectiveForms, Morph } from "@/server/content/packs/morph";
-import { buildSentences } from "@/server/content/packs/sentences";
+import { buildSentences, opensSentence } from "@/server/content/packs/sentences";
 import { buildTables } from "@/server/content/packs/tables";
 import { nearMeaning, verbDistractors } from "@/server/content/packs/distractors";
 import { checkWordPack, frequencyRanks, type PackWord } from "@/server/content/packs/words";
@@ -168,6 +168,25 @@ describe("verb phrases of a pack", () => {
     expect(verbDistractors("fr", "faire", "fait")).toEqual(["fais", "faisons", "faites"]);
     expect(verbDistractors("fr", "faire", "fait", undefined, true)).toEqual(["faire", "faisait", "font"]);
   });
+
+  it("never offers a verb form that is right in another tense, nor an old Präteritum after an auxiliary", () => {
+    expect(verbDistractors("de", "überweisen", "überweise")).not.toContain("überwies");
+    expect(verbDistractors("de", "überweisen", "überweisen")).not.toContain("überwiesen");
+    expect(verbDistractors("de", "überweisen", "überweist")).not.toContain("überwies");
+    expect(verbDistractors("de", "backen", "gebacken", undefined, true)).toEqual(["backen", "backt", "backst"]);
+  });
+});
+
+describe("a gap that opens a sentence inside a line", () => {
+  it("gets capital wrong options after a full stop, a question mark or a dialogue dash", () => {
+    expect(opensSentence("")).toBe(true);
+    expect(opensSentence("Tu viens ? – ")).toBe(true);
+    expect(opensSentence("Danke. ")).toBe(true);
+    expect(opensSentence("– ")).toBe(true);
+    expect(opensSentence("Il a dit : « ")).toBe(false);
+    expect(opensSentence("Elle dit ")).toBe(false);
+    expect(opensSentence("Je ")).toBe(false);
+  });
 });
 
 describe("reading a form in its context", () => {
@@ -307,6 +326,12 @@ describe("reading a form in its context", () => {
     line("aufstehen", "verb", "", "", "برخاستن", "برخاستن", "actions"),
     line("tun", "verb", "", "", "انجام دادن", "انجام دادن", "actions"),
     line("wehtun", "verb", "", "", "درد کردن", "درد کردن", "health"),
+    line("er", "pron", "", "", "او", "er: او", "function", "no_card:1"),
+    line("mir", "pron", "", "", "به من", "mir: به من", "function", "no_card:1"),
+    line("sich", "pron", "", "", "خود", "sich: خود", "function", "no_card:1"),
+    line("machen", "verb", "", "", "کردن", "کردن", "actions"),
+    line("Sorge", "noun", "die", "Sorgen", "نگرانی", "نگرانی", "feelings"),
+    line("sich Sorgen machen", "phrase", "", "", "نگران بودن", "نگران بودن", "feelings", "parts:Sorge machen"),
   ]);
   const de = new Analyzer("de", german, new Morph("de", german), new Set(["Anna"]));
 
@@ -331,6 +356,12 @@ describe("reading a form in its context", () => {
     expect(read(de, "Ich fahre Bus.")).toBe("Ich=ich fahre Bus=Bus fahren");
     expect(read(de, "Hier gibt es kein Wasser.")).toBe("Hier=hier gibt es=es gibt kein=kein Wasser=Wasser");
     expect(read(de, "Gib es Anna.")).toBe("Gib=geben es=es Anna=name");
+  });
+
+  it("reads a reflexive phrase with the pronoun of its verb's person, and not with another person", () => {
+    expect(read(de, "Ich mache mir Sorgen.")).toBe("Ich=ich mache mir Sorgen=sich Sorgen machen");
+    expect(read(de, "Er macht sich Sorgen.")).toBe("Er=er macht sich Sorgen=sich Sorgen machen");
+    expect(read(de, "Er macht mir Sorgen.")).toBe("Er=er macht=machen mir=mir Sorgen=Sorge");
   });
 });
 
