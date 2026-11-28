@@ -136,7 +136,9 @@ export function buildGrammar(analyzer: Analyzer, files: { file: string; text: st
       }
       const surfaces = analysis.gaps.map((gap) => analysis.text.slice(gap.start, gap.end));
       const wrong = listOf(cellOf(more, "d"), "/").map((part) => listOf(part));
-      const ok = listOf(cellOf(more, "ok"), "/").map((part) => listOf(part));
+      // «ok:  / x» is an answer for the second gap only, so an empty part keeps its place.
+      const okCell = cellOf(more, "ok");
+      const ok = okCell ? okCell.split("/").map((part) => listOf(part)) : [];
       if (wrong.length !== blanks || wrong.some((options) => options.length !== 3)) {
         say(item.line, `d: needs three wrong options${blanks === 2 ? " per gap, the two gaps apart with « / »" : ""}`);
         continue;

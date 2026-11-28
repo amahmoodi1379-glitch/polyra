@@ -526,6 +526,15 @@ describe("situational dialogues of a pack", () => {
 });
 
 describe("answers of a unit", () => {
+  it("takes «ok:  / x» as another answer of the second gap only", () => {
+    const analyzer = analyzerOf("fr", pack.words);
+    const text = ["code: fr-a1-x", "title: عنوان", "scope: être", "rule: قاعده", "mistake: اشتباه", "lesson:", "درس", "targets:", "Je [suis] grand et vous [êtes] petit. | من بزرگم و شما کوچکید. | d: es, est, sont / suis, est, sont | ok:  / es"].join("\n");
+    const built = buildGrammar(analyzer, [{ file: "u.txt", text }], "A1");
+    expect(built.errors).toEqual([]);
+    const targets = (built.units[0].answer as { targets: { accepted: string[][] }[] }).targets;
+    expect(targets[0].accepted).toEqual([["suis"], ["êtes", "es"]]);
+  });
+
   it("keeps a {code} mark out of the transforms and translations a learner types", () => {
     const analyzer = analyzerOf("fr", pack.words);
     const text = [
