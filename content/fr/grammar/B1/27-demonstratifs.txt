@@ -28,22 +28,22 @@ cela | این، آن (نوشتاری) | Cela m'étonne.
 examples:
 Ces deux vestes sont jolies, mais celle-ci est plus chaude. | این دو کت قشنگ‌اند، ولی این یکی گرم‌تر است.
 Ce n'est pas ce restaurant, c'est celui où nous avons mangé l'an dernier. | این رستوران نیست، همانی است که پارسال در آن غذا خوردیم.
-Ça ne me dérange pas du tout. | اصلاً برایم مزاحمتی ندارد.
+Ça ne me dérange pas du tout. | اصلاً برایم اشکالی ندارد.
 Merci pour votre lettre, cela m'a fait très plaisir. | از نامه‌تان ممنونم، خیلی خوشحالم کرد.
 Vous êtes madame Dubois ? Oui, c'est cela. | شما خانم دوبوا هستید؟ بله، درست است.
 targets:
 Quel pull tu préfères ? [Celui-ci] ou celui-là ? | کدام پلیور را ترجیح می‌دهی؟ این یکی یا آن یکی؟ | d: Celle-ci, Ce, Celui
-Ces deux robes sont belles, mais [celle-ci] est trop courte. | این دو پیراهن قشنگ‌اند، ولی این یکی زیادی کوتاه است. | d: celui-ci, celle, cette
+Ces deux robes sont belles, mais [celle-ci] est trop courte. | این دو پیراهن قشنگ‌اند، ولی این یکی زیادی کوتاه است. | d: celui-ci, celle, cette | ok: celle-là
 Je n'aime pas ce fauteuil, je préfère [celui-là], près de la fenêtre. | این مبل را دوست ندارم، آن یکی را ترجیح می‌دهم، کنار پنجره. | d: celle-là, celui, celle
-Entre ces deux hôtels, [celui-ci] est le plus proche de la plage. | از این دو هتل، این یکی به ساحل نزدیک‌تر است. | d: celle-ci, celui, cet
+Entre ces deux hôtels, [celui-ci] est le plus proche de la plage. | از این دو هتل، این یکی به ساحل نزدیک‌تر است. | d: celle-ci, celui, cet | ok: celui-là
 Tu veux quelle tasse ? [Celle-là], la bleue. | کدام فنجان را می‌خواهی؟ آن یکی، آبیه. | d: Celui-là, Celle, Cette
-Ce gâteau est bon, mais [celui-ci] est encore meilleur. | این کیک خوب است، ولی این یکی از آن هم بهتر است. | d: celle-ci, celui, celle
+Ce gâteau est bon, mais [celui-ci] est encore meilleur. | این کیک خوب است، ولی این یکی از آن هم بهتر است. | d: celle-ci, celui, celle | ok: celui-là
 Le premier film était long ; [celui-ci] dure seulement une heure. | فیلم اول طولانی بود؛ این یکی فقط یک ساعت طول می‌کشد. | d: celle-ci, celui, ce
 Paul a écrit à son directeur, mais [celui-ci] n'a jamais répondu. | پل به مدیرش نامه نوشت، ولی مدیر هیچ‌وقت جواب نداد. | d: celle-ci, celui, ce
 Marie a appelé sa sœur, et [celle-ci] est venue tout de suite. | ماری به خواهرش زنگ زد و خواهرش فوراً آمد. | d: celui-ci, celle, cette
-Ce n'est pas la bonne adresse. La bonne, c'est [celle-ci]. | این آدرس درست نیست. آدرس درست این است. | d: celui-ci, celle, cette
+Ce n'est pas la bonne adresse. La bonne, c'est [celle-ci]. | این آدرس درست نیست. آدرس درست این است. | d: celui-ci, celle, cette | ok: celle-là
 Tu as deux manteaux ? Prends [celui-là], il est plus chaud. | دو تا پالتو داری؟ آن یکی را بردار، گرم‌تر است. | d: celle-là, celui, ce
-Mon téléphone ne marche plus, mais [celui-ci] est tout neuf. | گوشی‌ام دیگر کار نمی‌کند، ولی این یکی کاملاً نو است. | d: celle-ci, celui, ce
+Mon téléphone ne marche plus, mais [celui-ci] est tout neuf. | گوشی‌ام دیگر کار نمی‌کند، ولی این یکی کاملاً نو است. | d: celle-ci, celui, ce | ok: celui-là
 [Celle-ci] ou celle-là, ça m'est égal, elles sont belles toutes les deux. | این یکی یا آن یکی، برایم فرقی نمی‌کند، هر دو قشنگ‌اند. | d: Celui-ci, Celle, Cette
 Ce n'est pas ce livre, c'est [celui] dont je t'ai parlé. | این کتاب نیست، همانی است که درباره‌اش با تو حرف زدم. | d: celle, ceux, celles
 La ville où je suis née est plus petite que [celle] où tu habites. | شهری که در آن به دنیا آمدم از شهری که تو در آن زندگی می‌کنی کوچک‌تر است. | d: celui, ceux, celles
@@ -56,9 +56,9 @@ Les voisins ? Ce sont [ceux] dont je t'ai parlé hier. | همسایه‌ها؟ �
 Ces photos sont [celles] dont je suis le plus fier. | این عکس‌ها همان‌هایی هستند که بیشتر از همه به آن‌ها افتخار می‌کنم. | d: ceux, celle, ce
 Cette maison ressemble à [celle] où j'ai passé mon enfance. | این خانه شبیه خانه‌ای است که کودکی‌ام را در آن گذراندم. | d: celui, celles, ce
 Tu as vu [ça] ? C'est incroyable ! | این را دیدی؟ باورنکردنی است! | d: le, celui, celle | ok: cela, ceci
-[Ça] ne me dérange pas du tout. | اصلاً برایم مزاحمتی ندارد. | d: Ce, Celui, Celle | ok: Cela, Ceci
+[Ça] ne me dérange pas du tout. | اصلاً برایم اشکالی ندارد. | d: Ce, Celui, Celle | ok: Cela, Ceci
 Vous partez demain matin ? Oui, c'est [ça]. | فردا صبح راه می‌افتید؟ بله، درست است. | d: le, celui, celle | ok: cela
-Merci pour votre réponse rapide : [cela] m'a été très utile. | از جواب سریعتان ممنونم: خیلی به کارم آمد. | d: celui, ce, celle | ok: ça
+Merci pour votre réponse rapide : [cela] m'a été très utile. | از جواب سریعتان ممنونم: خیلی به کارم آمد. | d: celui, ce, celle | ok: ça, elle
 Il pleut depuis trois jours, et [cela] ne va pas s'arrêter avant dimanche. | سه روز است باران می‌آید و تا یکشنبه هم بند نمی‌آید. | d: celui, celle, ce | ok: ça
 Écoutez bien [ceci] : personne ne sort avant la fin de l'examen. | خوب گوش کنید: هیچ‌کس تا آخر امتحان بیرون نمی‌رود. | d: celui-ci, celle-ci, ce | ok: ça
 [Cela] fait longtemps que je ne t'ai pas vu ! | خیلی وقت است ندیدمت! | d: Ce, Celui, Il | ok: Ça

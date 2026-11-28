@@ -48,7 +48,7 @@ Il n'y a [que] deux solutions : partir ou attendre. | فقط دو راه هست:
 Je ne veux dépenser [que] 50 euros pour son cadeau. | فقط پنجاه یورو می‌خواهم برای هدیه‌اش خرج کنم. | d: qu', seulement, rien
 À la maison, ma fille n'écoute que [moi]. | در خانه، دخترم فقط به حرف من گوش می‌دهد. | d: me, je, m'
 Je n'ai invité que [toi] et ta sœur. | فقط تو و خواهرت را دعوت کردم. | d: te, tu, t'
-Au bureau, elle ne parle qu'à [eux]. | او (زن) در اداره فقط با آن‌ها حرف می‌زند. | d: les, ils, leur
+Au bureau, elle ne parle qu'à [eux]. | او (زن) در اداره فقط با آن‌ها حرف می‌زند. | d: les, ils, leur | ok: elles
 Je [n'ai vu que] la fin du{du-contr} film. | فقط آخر فیلم را دیدم. | d: n'ai que vu, ne ai vu que, n'ai vu seulement | hint: (voir)
 Hier, on [n'a mangé qu']une salade. | دیروز فقط یک سالاد خوردیم. | d: n'a que mangé, n'a mangé que, ne a mangé qu' | hint: (manger)
 Elle [n'est restée que] deux jours à Rome. | او (زن) فقط دو روز در رم ماند. | d: n'est que restée, ne est restée que, n'est restée seulement | hint: (rester)

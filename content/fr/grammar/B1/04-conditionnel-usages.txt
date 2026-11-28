@@ -40,7 +40,7 @@ Tu as mal au ventre ? Il [faudrait] demander au médecin. | دل‌درد دار
 Avec ces embouteillages, vous [feriez] mieux de prendre le métro. | با این راه‌بندان‌ها، بهتر است با مترو بروید. | d: fairiez, ferions, feraient | ok: ferez | hint: (faire)
 Tu [pourrais] demander à ton frère de t'aider. | می‌توانی از برادرت بخواهی کمکت کند. | d: pourrions, pourriez, pouvoirais | ok: peux | hint: (pouvoir)
 À ta place{place-2}, je ne [m'inquiéterais] pas. | من جای تو بودم، نگران نمی‌شدم. | d: m'inquiéterai, t'inquiéterais, nous inquiéterions | hint: (s'inquiéter)
-J'[aimerais] tellement voir la mer cet été ! | خیلی دلم می‌خواهد امسال تابستان دریا را ببینم! | d: aimerai, aimerions, aimeriez | ok: voudrais | hint: (aimer)
+J'[aimerais] tellement voir la mer cet été ! | خیلی دلم می‌خواهد امسال تابستان دریا را ببینم! | d: aimerai, aimerions, aimeriez | hint: (aimer)
 Ça me [plairait] beaucoup de travailler avec vous. | خیلی خوشم می‌آمد با شما کار کنم. | d: plairais, plairaient, plairions | hint: (plaire)
 Je [rêverais]{rêver} de vivre au bord de la mer. | آرزویم است که کنار دریا زندگی کنم. | d: rêverions, rêveriez, rêvrais | ok: rêve | hint: (rêver)
 Mon fils [voudrait] devenir pilote. | پسرم دلش می‌خواهد خلبان شود. | d: voudrions, voudriez, vouloirait | ok: veut, aimerait | hint: (vouloir)
@@ -64,7 +64,7 @@ Apparemment, le musée [serait] fermé pendant tout l'été. | ظاهراً مو
 Selon le journal, la ville [voudrait] construire une nouvelle piscine. | به گفتهٔ روزنامه، گویا شهر می‌خواهد یک استخر تازه بسازد. | d: vouloirait, voudrions, voudriez | ok: veut | hint: (vouloir)
 Tu [devrais] te reposer ; à ta place{place-2}, je [prendrais] quelques jours de vacances. | بهتر است استراحت کنی؛ من جای تو بودم، چند روز مرخصی می‌گرفتم. | d: devoirais, devrions, devriez / prendrai, prenderais, prendrions | ok: dois / prendrais
 Selon la police, l'homme [aurait] 40 ans et il [habiterait] à Marseille. | به گفتهٔ پلیس، گویا آن مرد چهل سال دارد و در مارسی زندگی می‌کند. | d: avoirait, aurions, auriez / habiterions, habiteriez, habiteraient | ok: a / habite
-J'[aimerais] faire le tour du monde ; ce [serait] un rêve ! | دلم می‌خواهد دور دنیا را بگردم؛ رؤیا می‌شد! | d: aimerai, aimerions, aimeriez / êtrait, serions, seriez | ok: voudrais / serait
+J'[aimerais] faire le tour du monde ; ce [serait] un rêve ! | دلم می‌خواهد دور دنیا را بگردم؛ رؤیا می‌شد! | d: aimerai, aimerions, aimeriez / êtrait, serions, seriez
 Ça te [dirait] d'aller au cinéma ? On [pourrait] voir le nouveau film. | دلت می‌خواهد برویم سینما؟ می‌توانیم فیلم تازه را ببینیم. | d: dirions, diriez, dirais / pourrions, pourriez, pouvoirait | ok: dit / peut
 Il [vaudrait] mieux partir maintenant, sinon nous [serions] en retard. | بهتر است الان راه بیفتیم، وگرنه دیر می‌رسیم. | d: valoirait, vaudrais, vaudraient / êtrions, seriez, seraient | ok: vaut / serons
 Ma sœur [adorerait] ce restaurant ; tu [devrais] l'{la-pron}inviter un soir. | خواهرم عاشق این رستوران می‌شد؛ بهتر است یک شب دعوتش کنی. | d: adorerions, adoreriez, adorrait / devoirais, devrions, devriez | ok: adorera / dois

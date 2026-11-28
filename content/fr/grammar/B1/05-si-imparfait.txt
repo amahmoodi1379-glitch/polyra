@@ -43,7 +43,7 @@ Si je [pouvais], je t'aiderais avec plaisir. | اگر می‌توانستم، ب
 Si tu [savais] nager, on pourrait aller à la piscine. | اگر شنا بلد بودی، می‌توانستیم به استخر برویم. | d: saurais, sauras, sais | hint: (savoir)
 Si j'avais un chien, je [me promènerais] tous les jours dans le parc. | اگر سگ داشتم، هر روز در پارک قدم می‌زدم. | d: me promènerai, me promène, te promènerais | hint: (se promener)
 Si nous avions de l'argent, nous [ferions] le tour du monde. | اگر پول داشتیم، دور دنیا را می‌گشتیم. | d: ferons, faisons, fairions | hint: (faire)
-Si tu venais avec moi, ce [serait] plus amusant. | اگر با من می‌آمدی، بامزه‌تر می‌شد. | d: sera, est, seraient | hint: (être)
+Si tu venais avec moi, ce [serait] plus amusant. | اگر با من می‌آمدی، بیشتر خوش می‌گذشت. | d: sera, est, seraient | hint: (être)
 Si le train était à l'heure, nous [arriverions] avant midi. | اگر قطار سر وقت بود، قبل از ظهر می‌رسیدیم. | d: arriverons, arrivons, arriverait | hint: (arriver)
 Si tu étais plus patient, tu [comprendrais] mieux tes enfants. | اگر صبورتر بودی، بچه‌هایت را بهتر می‌فهمیدی. | d: comprendras, comprends, comprenderais | hint: (comprendre)
 Si j'étais toi, je [dirais] la vérité. | من اگر جای تو بودم، حقیقت را می‌گفتم. | d: dirai, dis, dirions | hint: (dire)
@@ -59,15 +59,15 @@ Il fait beau ! Et si on [allait] à la plage ? | هوا خوب است! چطور 
 Tu as l'air triste. Et si nous [sortions] un peu ? | ناراحت به نظر می‌رسی. چطور است کمی بیرون برویم؟ | d: sortirions, sortirons, sortiez | hint: (sortir)
 Et si tu [invitais] tes collègues à dîner ? | چطور است همکارهایت را به شام دعوت کنی؟ | d: inviterais, inviteras, invitiez | hint: (inviter)
 Si j'étais à ta place{place-2}, je n'[accepterais] pas ce travail. | اگر جای تو بودم، این کار را قبول نمی‌کردم. | d: accepterai, accepte, accepterions | hint: (accepter)
-Si c'était possible, j'[aimerais] partir une semaine plus tôt. | اگر ممکن بود، دلم می‌خواست یک هفته زودتر بروم. | d: aimerai, aime, aimerions | ok: voudrais | hint: (aimer)
-Si tu [voulais], on pourrait regarder un film ce soir. | اگر می‌خواستی، می‌توانستیم امشب یک فیلم ببینیم. | d: voudrais, voudras, veux | hint: (vouloir)
+Si c'était possible, j'[aimerais] partir une semaine plus tôt. | اگر ممکن بود، دلم می‌خواست یک هفته زودتر بروم. | d: aimerai, aime, aimerions | hint: (aimer)
+Si tu [voulais], on pourrait regarder un film ce soir. | اگر می‌خواستی، می‌توانستیم امشب یک فیلم ببینیم. | d: voudrais, voudras, veuilles | hint: (vouloir)
 Si ma grand-mère [était] encore là, elle serait contente de toi. | اگر مادربزرگم هنوز زنده بود، از تو راضی می‌شد. | d: serait, sera, est | hint: (être)
 Si j'[avais] une voiture, je [viendrais] te chercher. | اگر ماشین داشتم، می‌آمدم دنبالت. | d: aurais, aurai, ai / viendrai, viens, venirais | full: Je viendrais te chercher si j'avais une voiture.
 Si nous [étions] en vacances, nous [dormirions] jusqu'à midi. | اگر در تعطیلات بودیم، تا ظهر می‌خوابیدیم. | d: serions, serons, sommes / dormirons, dormons, dormiriez
 S'{si}il [neigeait], les enfants [seraient] contents. | اگر برف می‌آمد، بچه‌ها خوشحال می‌شدند. | d: neigerait, neigera, neige / seront, sont, serait | full: Les enfants seraient contents s'il neigeait.
 Si tu [travaillais] moins, tu [serais] moins fatigué{fatigué}. | اگر کمتر کار می‌کردی، کمتر خسته بودی. | d: travaillerais, travailleras, travailles / seras, es, seriez
 Si Paul [était] là, il nous [aiderait]. | اگر پل اینجا بود، کمکمان می‌کرد. | d: serait, sera, est / aidera, aide, aiderions | full: Paul nous aiderait s'il était là.
-Si vous [aviez] besoin d'aide, je [serais] là. | اگر به کمک نیاز داشتید، من بودم. | d: auriez, aurez, avez / serai, suis, serait
+Si vous [aviez] besoin d'aide, je [serais] là. | اگر به کمک نیاز داشتید، من هستم. | d: auriez, aurez, avez / serai, suis, serait
 S'{si}il [fait] beau demain, nous [irons] à la plage. | اگر فردا هوا خوب باشد، به ساحل می‌رویم. | d: faisait, ferait, fera / irions, allions, irez | ok: fait / allons | full: Nous irons à la plage s'il fait beau demain.
 transforms:
 S'{si}il fait beau, nous irons à la plage. => S'{si}il faisait beau, nous irions à la plage. | شرط را فرضی کن (ولی هوا خوب نیست).

@@ -35,9 +35,9 @@ targets:
 Ce jour-là, Paul m'a dit qu'il [était] très fatigué. | آن روز پل به من گفت که خیلی خسته است. | d: est, sera, soit | hint: (être)
 Ce soir-là, Marie m'a expliqué qu'elle [avait] mal à la tête. | آن شب ماری برایم توضیح داد که سرش درد می‌کند. | d: a, aura, ait | hint: (avoir)
 Au téléphone, ma mère m'a dit qu'il [faisait] très froid à Lyon ce jour-là. | پشت تلفن مادرم گفت که آن روز در لیون هوا خیلی سرد است. | d: fait, fera, fasse | hint: (faire)
-Le jour de notre mariage, mes cousins m'ont écrit qu'ils ne [pouvaient] pas venir. | روز عروسی‌مان پسرعموهایم برایم نوشتند که نمی‌توانند بیایند. | d: peuvent, pourront, puissent | hint: (pouvoir)
+Le jour de notre mariage, mes cousins m'ont écrit qu'ils ne [pouvaient] pas venir. | روز عروسی‌مان پسرعموهایم برایم نوشتند که نمی‌توانند بیایند. | d: peuvent, pourront, puissent | ok: pourraient | hint: (pouvoir)
 Quand je suis arrivé, le serveur m'a dit que la cuisine [était] déjà fermée{fermé}. | وقتی رسیدم، گارسون گفت که آشپزخانه دیگر بسته است. | d: est, sera, soit
-Ce matin-là, le médecin m'a dit que je [devais] rester au lit. | آن روز صبح پزشک به من گفت که باید در رختخواب بمانم. | d: dois, devrai, doive | hint: (devoir)
+Ce matin-là, le médecin m'a dit que je [devais] rester au lit. | آن روز صبح پزشک به من گفت که باید در رختخواب بمانم. | d: dois, devrai, doive | ok: devrais | hint: (devoir)
 Samedi dernier, Léa m'a dit qu'elle ne [voulait] pas sortir ce soir-là. | شنبهٔ گذشته لئا به من گفت که آن شب نمی‌خواهد بیرون برود. | d: veut, voudra, veuille | hint: (vouloir)
 Pendant les vacances, Hugo m'a écrit qu'il [allait] à la plage tous les jours. | در تعطیلات هوگو برایم نوشت که هر روز به ساحل می‌رود. | d: va, ira, aille | hint: (aller)
 Quand je l'ai appelée, Chloé m'a dit qu'elle [était] dans le métro. | وقتی به کلوئه زنگ زدم، گفت که در مترو است. | d: est, sera, soit
@@ -60,9 +60,9 @@ Le vendeur m'a assuré que le magasin [ouvrirait] le lendemain à huit heures. |
 Il y a dix ans, ma sœur m'a dit qu'elle [voyagerait] au Japon l'année suivante. | ده سال پیش خواهرم به من گفت که سال بعدش به ژاپن سفر می‌کند. | d: voyagera, voyage, voyagerais | hint: (voyager)
 Il y a deux ans, Paul m'a dit qu'il partirait [le lendemain]. | دو سال پیش پل به من گفت که فردای آن روز می‌رود. | d: demain, hier, la veille | ok: le jour suivant
 L'été dernier, Léa m'a raconté qu'elle avait vu ce film [la veille]. | تابستان گذشته لئا برایم تعریف کرد که روز قبلش این فیلم را دیده بود. | d: hier, demain, le lendemain | ok: le jour précédent
-Il y a trois ans, Hugo m'a dit qu'il déménagerait [le mois suivant]. | سه سال پیش هوگو به من گفت که ماه بعدش اسباب‌کشی می‌کند. | d: le mois prochain, le mois dernier, le mois précédent
+Il y a trois ans, Hugo m'a dit qu'il déménagerait [le mois suivant]. | سه سال پیش هوگو به من گفت که ماه بعدش اسباب‌کشی می‌کند. | d: le mois prochain, le mois dernier, le mois précédent | ok: le mois d'après
 Paul m'a appelé un dimanche. Il m'a dit qu'il ne travaillait pas [ce jour-là]. | پل یک یکشنبه به من زنگ زد. گفت که آن روز کار نمی‌کند. | d: aujourd'hui, demain, hier
-En 2018, Léa m'a dit qu'elle s'était mariée [l'année précédente]. | در سال ۲۰۱۸ لئا به من گفت که سال قبلش ازدواج کرده بود. | d: l'année dernière, l'année prochaine, l'année suivante
+En 2018, Léa m'a dit qu'elle s'était mariée [l'année précédente]. | در سال ۲۰۱۸ لئا به من گفت که سال قبلش ازدواج کرده بود. | d: l'année dernière, l'année prochaine, l'année suivante | ok: l'année d'avant
 Ce jour-là, Léa m'a dit que [sa] valise était trop lourde. | آن روز لئا به من گفت که چمدانش خیلی سنگین است. | d: son, ses, lui
 Mes voisins m'ont expliqué que [leur] fils était malade ce jour-là. | همسایه‌هایم برایم توضیح دادند که آن روز پسرشان مریض است. | d: leurs, lui, eux
 Ce soir-là, Paul et Léa m'ont dit [qu'ils] partaient le lendemain. | آن شب پل و لئا به من گفتند که فردایش می‌روند. | d: qu'elles, qu'il, que nous
@@ -77,7 +77,7 @@ Paul a dit : « Je suis fatigué. » => Paul a dit qu'il était fatigué. | حر
 Marie a dit : « J'ai perdu mon sac. » => Marie a dit qu'elle avait perdu son sac. | حرف ماری را در گذشته غیرمستقیم نقل کن.
 Il a dit : « Je viendrai demain. » => Il a dit qu'il viendrait le lendemain. ; Il a dit qu'il viendrait le jour suivant. | حرفش را غیرمستقیم نقل کن و کلمهٔ زمان را هم عوض کن.
 Léa a dit : « J'ai vu ce film hier. » => Léa a dit qu'elle avait vu ce film la veille. ; Léa a dit qu'elle avait vu ce film le jour précédent. | حرف لئا را غیرمستقیم نقل کن و کلمهٔ زمان را هم عوض کن.
-Mes parents ont dit : « Nous partirons la semaine prochaine. » => Mes parents ont dit qu'ils partiraient la semaine suivante. | حرفشان را غیرمستقیم نقل کن و کلمهٔ زمان را هم عوض کن.
+Mes parents ont dit : « Nous partirons la semaine prochaine. » => Mes parents ont dit qu'ils partiraient la semaine suivante. ; Mes parents ont dit qu'ils partiraient la semaine d'après. | حرفشان را غیرمستقیم نقل کن و کلمهٔ زمان را هم عوض کن.
 Le professeur a dit : « L'examen est facile. » => Le professeur a dit que l'examen était facile. | حرف معلم را در گذشته غیرمستقیم نقل کن.
 Sophie a écrit : « Mon frère a trouvé un travail. » => Sophie a écrit que son frère avait trouvé un travail. | نوشتهٔ سوفی را غیرمستقیم نقل کن.
 Hugo a dit : « Je ne peux pas venir aujourd'hui. » => Hugo a dit qu'il ne pouvait pas venir ce jour-là. | حرف هوگو را غیرمستقیم نقل کن و کلمهٔ زمان را هم عوض کن.

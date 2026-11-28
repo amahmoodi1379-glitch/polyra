@@ -46,7 +46,7 @@ Je n'[avais] jamais mangé un fromage aussi bon ! | هیچ‌وقت پنیری �
 Bonsoir, vous [aviez réservé] une table pour combien de personnes ? | شب بخیر، برای چند نفر میز رزرو کرده بودید؟ | d: étiez réservé, aviez réserver, avaient réservé | hint: (réserver)
 On [avait] tout préparé, mais personne n'est venu. | همه‌چیز را آماده کرده بودیم، ولی هیچ‌کس نیامد. | d: était, avions, avaient | hint: (avoir)
 Sophie [s'était habillée] en rouge pour la fête. | سوفی برای جشن لباس قرمز پوشیده بود. | d: s'avait habillée, s'était habillé, s'étaient habillées | hint: (s'habiller)
-Je [m'étais trompé] de jour : la réunion était le mardi. | روز را اشتباه گرفته بودم: جلسه سه‌شنبه بود. | d: m'avais trompé, m'étais trompés, t'étais trompé | ok: m'étais trompée | hint: (se tromper)
+Je [m'étais trompé] de jour : la réunion était mardi. | روز را اشتباه گرفته بودم: جلسه سه‌شنبه بود. | d: m'avais trompé, m'étais trompés, t'étais trompé | ok: m'étais trompée | hint: (se tromper)
 Tu [étais] déjà [venu] à Paris avant ce voyage ? | قبل از این سفر به پاریس آمده بودی؟ | d: avais, étiez, étions / venir, venus, venait | ok: étais / venue | hint: (venir)
 Mes parents [s'étaient rencontrés] à l'université, quand ils avaient vingt ans. | پدر و مادرم وقتی بیست ساله بودند، در دانشگاه با هم آشنا شده بودند. | d: s'avaient rencontrés, s'étaient rencontré, s'était rencontrés | hint: (se rencontrer)
 Il pleuvait, mais heureusement j'[avais pris] mon parapluie. | باران می‌آمد، ولی خوشبختانه چترم را برداشته بودم. | d: étais pris, avais prendu, avions pris | hint: (prendre)

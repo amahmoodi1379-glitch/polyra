@@ -14,7 +14,7 @@ qu'est-ce qui (چه چیزی، وقتی فاعل است) می‌شود ce qui: �
 دستور و خواهش: dire de یا demander de + مصدر: « Reste au lit ! » → Le médecin m'a dit de rester au lit. برای منفی: de ne pas + مصدر: Il nous a dit de ne pas parler.
 vouloir savoir هم مثل demander است: Ma mère voulait savoir si nous avions bien dormi.
 آخر جملهٔ غیرمستقیم علامت سؤال نمی‌آید.
-مواظب باش: «qu'est-ce que» و «est-ce que» و جابه‌جایی فاعل (habitais-je) در سؤال غیرمستقیم نمی‌آیند.
+مواظب باش: «qu'est-ce que» و «est-ce que» و جابه‌جایی فاعلِ ضمیری (habitais-je) در سؤال غیرمستقیم نمی‌آیند. ولی اگر فاعل اسم باشد، فعل می‌تواند قبل از آن بیاید: Il m'a demandé où se trouvait la gare (یا où la gare se trouvait).
 table:
 سؤال یا دستور مستقیم | نقل در گذشته
 « Tu as faim ? » | Il m'a demandé si j'avais faim.
@@ -50,9 +50,9 @@ Elle voulait savoir [comment] j'avais trouvé cet appartement. | می‌خواس
 Le client a demandé [combien] coûtait la chambre. | مشتری پرسید اتاق چند است. | d: qu'est-ce que, combien de, quel
 Le policier voulait savoir [qui] conduisait la voiture. | پلیس می‌خواست بداند چه کسی رانندهٔ ماشین بود. | d: qu'est-ce qui, ce qui, que
 Paul m'a demandé [à quelle heure] le film commençait. | پل از من پرسید فیلم ساعت چند شروع می‌شود. | d: quelle heure, qu'est-ce que, ce que
-Le policier m'a demandé où [j'habitais]. | پلیس از من پرسید کجا زندگی می‌کنم. | d: habitais-je, est-ce que j'habitais, que j'habitais
+Le policier m'a demandé où [j'habitais]. | پلیس از من پرسید کجا زندگی می‌کنم. | d: habitais-je, est-ce que j'habitais, que j'habitais | ok: je vivais
 Elle m'a demandé quand [je partais]. | از من پرسید کی می‌روم. | d: partais-je, est-ce que je partais, que je partais | ok: je partirais
-Ce jour-là, ma voisine m'a demandé si je [pouvais] garder son chat. | آن روز همسایه‌ام از من پرسید که می‌توانم گربه‌اش را نگه دارم یا نه. | d: peux, pourrai, puisse | hint: (pouvoir)
+Ce jour-là, ma voisine m'a demandé si je [pouvais] garder son chat. | آن روز همسایه‌ام از من پرسید که می‌توانم گربه‌اش را نگه دارم یا نه. | d: peux, pourrai, puisse | ok: pourrais | hint: (pouvoir)
 Il nous a demandé ce que nous [avions fait] la veille. | از ما پرسید روز قبلش چه کار کرده بودیم. | d: avons fait, ferons, faisons | hint: (faire)
 Elle voulait savoir si nous [viendrions] le lendemain. | می‌خواست بداند که فردایش می‌آییم یا نه. | d: viendrons, venons, viendriez | ok: venions | hint: (venir)
 Le professeur m'a demandé pourquoi j'[avais] été absent la veille. | معلم از من پرسید چرا روز قبلش غایب بودم. | d: ai, aurai, aie | hint: (avoir)

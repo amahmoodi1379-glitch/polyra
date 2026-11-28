@@ -39,12 +39,12 @@ Il est probable que le train [aura] du retard. | احتمالاً قطار تأ�
 Peut-être qu'il [fera] beau demain. | شاید فردا هوا خوب باشد. | d: fasse, faire, feras | ok: fait | hint: (faire)
 Mon père croit que je [dois] changer de travail. | پدرم فکر می‌کند باید کارم را عوض کنم. | d: doive, devoir, devez | ok: devrais | hint: (devoir)
 Je trouve que tu [fais] trop de sport. | به نظرم زیادی ورزش می‌کنی. | d: fasses, faire, faites | hint: (faire)
-Je ne pense pas qu'il [soit] chez lui ce soir. | فکر نمی‌کنم امشب خانه باشد. | d: être, soyez, sommes | hint: (être)
-Je ne crois pas que vous [ayez] le temps de tout visiter. | فکر نمی‌کنم وقت داشته باشید همه‌جا را ببینید. | d: avoir, ayons, avons | hint: (avoir)
-Elle ne pense pas que son fils [puisse] venir à Noël. | او (زن) فکر نمی‌کند پسرش بتواند کریسمس بیاید. | d: pouvoir, puissions, pouvons | hint: (pouvoir)
+Je ne pense pas qu'il [soit] chez lui ce soir. | فکر نمی‌کنم امشب خانه باشد. | d: est, soyez, sommes | hint: (être)
+Je ne crois pas que vous [ayez] le temps de tout visiter. | فکر نمی‌کنم وقت داشته باشید همه‌جا را ببینید. | d: avez, ayons, avons | hint: (avoir)
+Elle ne pense pas que son fils [puisse] venir à Noël. | او (زن) فکر نمی‌کند پسرش بتواند کریسمس بیاید. | d: peut, puissions, pouvons | hint: (pouvoir)
 Penses-tu qu'elle [sache] la vérité ? | فکر می‌کنی او (زن) حقیقت را می‌داند؟ | d: savoir, sachions, savons | ok: sait | hint: (savoir)
 Crois-tu que ce{ce-pron} [soit] une bonne idée ? | به نظرت این ایدهٔ خوبی است؟ | d: être, soyez, sommes | hint: (être)
-Je ne trouve pas que ce film [soit] si{si-adv} intéressant. | به نظرم این فیلم آن‌قدرها هم جالب نیست. | d: être, sommes, soyez
+Je ne trouve pas que ce film [soit] si{si-adv} intéressant. | به نظرم این فیلم آن‌قدرها هم جالب نیست. | d: est, sommes, soyez
 Il est possible que nous [arrivions] en retard. | ممکن است دیر برسیم. | d: arrivons, arriver, arriverons | hint: (arriver)
 Il est possible que le musée [soit] fermé demain. | ممکن است موزه فردا تعطیل باشد. | d: est, être, sera
 Il se peut que je [parte] à Lyon le mois prochain. | ممکن است ماه آینده به لیون بروم. | d: pars, partir, partirai | hint: (partir)
@@ -57,8 +57,8 @@ Il n'est pas sûr que la réunion [ait] lieu demain. | معلوم نیست جل�
 Je suis sûr que tu [vas] adorer Paris. | مطمئنم عاشق پاریس می‌شوی. | d: ailles, aller, allez | hint: (aller)
 Il est clair que cette solution [est] la meilleure. | معلوم است که این راه‌حل از همه بهتر است. | d: soit, être, sont
 Tout le monde pense que Marie [va] gagner. | همه فکر می‌کنند ماری برنده می‌شود. | d: aille, aller, allons | hint: (aller)
-Je crois que nous [prendrons] le train de 8 heures. | فکر می‌کنم قطار ساعت ۸ را می‌گیریم. | d: prenions, prendre, prendrez | ok: prenons | hint: (prendre)
-Je ne pense pas que tu [doives] t'inquiéter. | فکر نمی‌کنم لازم باشد نگران باشی. | d: devoir, devions, devez | hint: (devoir)
+Je crois que nous [prendrons] le train de 8 heures. | فکر می‌کنم قطار ساعت ۸ را می‌گیریم. | d: prenne, prendre, prendrez | ok: prenons | hint: (prendre)
+Je ne pense pas que tu [doives] t'inquiéter. | فکر نمی‌کنم لازم باشد نگران باشی. | d: dois, devions, devez | hint: (devoir)
 Pensez-vous que le restaurant [soit] ouvert le dimanche ? | فکر می‌کنید رستوران یکشنبه‌ها باز باشد؟ | d: être, soyons, sommes | ok: est
 Il est possible que tu [aies] besoin d'un manteau. | ممکن است به پالتو احتیاج داشته باشی. | d: as, avoir, auras | hint: (avoir)
 Je doute que tu [comprennes] ce texte sans dictionnaire. | شک دارم بدون دیکشنری این متن را بفهمی. | d: comprends, comprendre, comprendras | hint: (comprendre)
