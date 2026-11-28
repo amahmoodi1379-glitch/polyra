@@ -1,0 +1,29 @@
+code: de-a2-t049
+title: Die Mensa am Montag
+band: 1
+kind: menu
+key_words: Mensa, Vorspeise, Hauptgericht, Nachtisch, Portion
+sentences:
+- Mensa: Das Essen am Montag | سلف دانشگاه: غذای دوشنبه
+- Vorspeise: Suppe mit Karotten oder Salat mit Gurken | پیش‌غذا: سوپ هویج یا سالاد خیار
+- Hauptgericht 1: Hähnchen mit Reis und Paprika | غذای اصلی ۱: مرغ با برنج و فلفل دلمه‌ای | tts: Hauptgericht eins: Hähnchen mit Reis und Paprika
+- Hauptgericht 2: Nudeln mit Pilzen, ohne Fleisch | غذای اصلی ۲: ماکارونی با قارچ، بدون گوشت | tts: Hauptgericht zwei: Nudeln mit Pilzen, ohne Fleisch
+- Nachtisch: Joghurt mit Honig oder ein Apfel | دسر: ماست با عسل یا یک سیب
+- Studenten bezahlen 3,50 Euro, Gäste 6 Euro. | دانشجوها ۳٫۵۰ یورو می‌دهند و مهمان‌ها ۶ یورو. | tts: Studenten bezahlen drei Euro fünfzig, Gäste sechs Euro.
+- Eine große Portion kostet 1 Euro mehr. | یک پرس بزرگ یک یورو بیشتر قیمت دارد. | tts: Eine große Portion kostet einen Euro mehr.
+- Die Mensa ist von 11 bis 14:30 Uhr offen. | سلف از ساعت ۱۱ تا ۱۴:۳۰ باز است. | tts: Die Mensa ist von elf bis vierzehn Uhr dreißig offen.
+reading A:
+{"type":"mcq","prompt":"کدام غذای اصلی گوشت ندارد؟","options":["مرغ با برنج","ماکارونی با قارچ","ماهی با سیب‌زمینی","سوسیس با سالاد"],"correct":1,"explanation_fa":"در منو آمده: «Nudeln mit Pilzen, ohne Fleisch»، یعنی ماکارونی با قارچ، بدون گوشت."}
+{"type":"tf","prompt":"مهمان‌ها از دانشجوها بیشتر پول می‌دهند.","correct":true,"explanation_fa":"در منو آمده: «Studenten bezahlen 3,50 Euro, Gäste 6 Euro.»"}
+{"type":"tf","prompt":"دسر امروز بستنی است.","correct":false,"explanation_fa":"در منو آمده: «Nachtisch: Joghurt mit Honig oder ein Apfel»، یعنی ماست با عسل یا یک سیب."}
+reading B:
+{"type":"match","prompt":"هر بخش منو را به غذایش وصل کن.","left":["پیش‌غذا","غذای اصلی ۱","دسر"],"right":["ماهی با سیب‌زمینی","سوپ هویج یا سالاد خیار","ماست با عسل یا یک سیب","مرغ با برنج و فلفل دلمه‌ای"],"pairs":[[0,1],[1,3],[2,2]],"explanation_fa":"در منو آمده: «Vorspeise: Suppe mit Karotten oder Salat mit Gurken»، «Hähnchen mit Reis und Paprika» و «Nachtisch: Joghurt mit Honig oder ein Apfel»."}
+{"type":"find","prompt":"کدام جمله می‌گوید سلف کی باز است؟","correct_sentence":7,"explanation_fa":"در منو آمده: «Die Mensa ist von 11 bis 14:30 Uhr offen.»"}
+listening A:
+{"type":"num","prompt":"دانشجوها برای غذا چند یورو می‌دهند؟","answer":"3,50","accepted":["3,50","3.50","3,50 Euro","3 Euro 50"],"explanation_fa":"در منو آمده: «Studenten bezahlen 3,50 Euro.»"}
+{"type":"mcq","prompt":"یک پرس بزرگ چقدر گران‌تر است؟","options":["پنجاه سنت","یک یورو","دو یورو","سه یورو"],"correct":1,"explanation_fa":"در منو آمده: «Eine große Portion kostet 1 Euro mehr.»"}
+{"type":"tf","prompt":"سلف ساعت ۱۱ باز می‌شود.","correct":true,"explanation_fa":"در منو آمده: «Die Mensa ist von 11 bis 14:30 Uhr offen.»"}
+{"type":"tf","prompt":"در غذای اصلی دوم گوشت هست.","correct":false,"explanation_fa":"در منو آمده: «Nudeln mit Pilzen, ohne Fleisch»، یعنی بدون گوشت."}
+listening B:
+{"type":"dict","sentence":4}
+{"type":"mcq","prompt":"پیش‌غذای امروز چیست؟","options":["سوپ هویج یا سالاد خیار","سوپ قارچ یا سالاد گوجه‌فرنگی","ماست با عسل","مرغ با برنج"],"correct":0,"explanation_fa":"در منو آمده: «Vorspeise: Suppe mit Karotten oder Salat mit Gurken»."}

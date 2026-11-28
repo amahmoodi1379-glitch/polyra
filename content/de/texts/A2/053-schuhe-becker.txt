@@ -1,0 +1,28 @@
+code: de-a2-t053
+title: Schuhe Becker
+band: 1
+kind: ad
+key_words: Angebot, Prozent, Größe, kostenlos, Kassenbon
+sentences:
+- Schuhe Becker: unser Angebot im Januar! | کفش بکر: حراج ماه ژانویه ما!
+- Alle Schuhe für den Winter: 30 Prozent billiger! | همه کفش‌های زمستانی: ۳۰ درصد ارزان‌تر! | tts: Alle Schuhe für den Winter: dreißig Prozent billiger!
+- Schuhe für Kinder: nur 19 Euro! | کفش بچه: فقط ۱۹ یورو! | tts: Schuhe für Kinder: nur neunzehn Euro!
+- Sie{Sie-3} finden Ihre Größe nicht? Unsere Verkäuferinnen helfen Ihnen gern. | سایزتان را پیدا نمی‌کنید؟ فروشنده‌های ما با کمال میل کمکتان می‌کنند.
+- Jede Kundin und jeder Kunde bekommt kostenlos eine Tasche. | هر مشتری، چه زن چه مرد، یک کیف مجانی می‌گیرد.
+- Mit dem Kassenbon können Sie die Schuhe 14 Tage zurückgeben. | با رسید خرید می‌توانید کفش‌ها را تا ۱۴ روز پس بدهید. | tts: Mit dem Kassenbon können Sie die Schuhe vierzehn Tage zurückgeben.
+- Neben der Post: Montag bis Samstag, 9 bis 19 Uhr. | کنار اداره پست: دوشنبه تا شنبه، ساعت ۹ تا ۱۹. | tts: Neben der Post: Montag bis Samstag, neun bis neunzehn Uhr.
+reading A:
+{"type":"mcq","prompt":"کفش‌های زمستانی چقدر ارزان‌تر شده‌اند؟","options":["۱۰ درصد","۲۰ درصد","۳۰ درصد","۵۰ درصد"],"correct":2,"explanation_fa":"در آگهی آمده: «30 Prozent billiger»، یعنی ۳۰ درصد ارزان‌تر."}
+{"type":"tf","prompt":"هر مشتری یک کیف مجانی می‌گیرد.","correct":true,"explanation_fa":"در آگهی آمده: «Jede Kundin und jeder Kunde bekommt kostenlos eine Tasche.»"}
+{"type":"tf","prompt":"مغازه یکشنبه‌ها هم باز است.","correct":false,"explanation_fa":"در آگهی آمده: «Montag bis Samstag»، یعنی یکشنبه باز نیست."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید با رسید خرید چه می‌شود کرد؟","correct_sentence":5,"explanation_fa":"در آگهی آمده: «Mit dem Kassenbon können Sie die Schuhe 14 Tage zurückgeben.»"}
+{"type":"match","prompt":"هر چیز را به اطلاعاتش در آگهی وصل کن.","left":["کفش بچه","کفش زمستانی","پس دادن کفش"],"right":["تا ۱۴ روز","فقط ۱۹ یورو","۳۰ درصد ارزان‌تر","یک کیف مجانی"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"در آگهی آمده: «Schuhe für Kinder: nur 19 Euro!»، «30 Prozent billiger» و «14 Tage zurückgeben»."}
+listening A:
+{"type":"num","prompt":"کفش بچه چند یورو است؟","answer":"19","accepted":["19","19 Euro","neunzehn"],"explanation_fa":"در آگهی آمده: «Schuhe für Kinder: nur 19 Euro!»"}
+{"type":"mcq","prompt":"اگر سایزتان را پیدا نکنید، چه کسی کمک می‌کند؟","options":["فروشنده‌ها","صندوق‌دار","یک مشتری دیگر","مدیر پست"],"correct":0,"explanation_fa":"در آگهی آمده: «Unsere Verkäuferinnen helfen Ihnen gern.»"}
+{"type":"tf","prompt":"مغازه ساعت ۹ باز می‌شود.","correct":true,"explanation_fa":"در آگهی آمده: «9 bis 19 Uhr»."}
+{"type":"tf","prompt":"این حراج برای ماه مارس است.","correct":false,"explanation_fa":"در آگهی آمده: «unser Angebot im Januar»، یعنی ژانویه."}
+listening B:
+{"type":"dict","sentence":4}
+{"type":"mcq","prompt":"مغازه کجاست؟","options":["کنار بانک","کنار ایستگاه قطار","کنار اداره پست","کنار مدرسه"],"correct":2,"explanation_fa":"در آگهی آمده: «Neben der Post»، یعنی کنار اداره پست."}

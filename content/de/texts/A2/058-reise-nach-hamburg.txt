@@ -1,0 +1,37 @@
+code: de-a2-t058
+title: Unsere Klasse fährt nach Hamburg
+band: 2
+kind: schedule
+key_words: überweisen, Geld abheben, Kleingeld, Geld ausgeben, Geld sparen
+sentences:
+- Unsere Klasse fährt nach Hamburg! | کلاس ما به هامبورگ می‌رود!
+- Montag, 8 Uhr: Abfahrt mit dem Zug in Leipzig. | دوشنبه، ساعت ۸: حرکت با قطار از لایپزیگ. | tts: Montag, acht Uhr: Abfahrt mit dem Zug in Leipzig.
+- Montag, 13 Uhr: Ankunft im Hotel in Hamburg. | دوشنبه، ساعت ۱۳: رسیدن به هتل در هامبورگ. | tts: Montag, dreizehn Uhr: Ankunft im Hotel in Hamburg.
+- Dienstag: am Vormittag Museum, am Nachmittag Fußball im Park. | سه‌شنبه: پیش از ظهر موزه، بعدازظهر فوتبال در پارک.
+- Mittwoch: Einkaufen in der Stadt. | چهارشنبه: خرید در شهر.
+- Donnerstag, 20 Uhr: Ankunft am Bahnhof in Leipzig. | پنجشنبه، ساعت ۲۰: رسیدن به ایستگاه قطار لایپزیگ. | tts: Donnerstag, zwanzig Uhr: Ankunft am Bahnhof in Leipzig.
+- Die Reise kostet 190 Euro. Bitte überweisen Sie das Geld bis Freitag. | هزینه سفر ۱۹۰ یورو است. لطفاً پول را تا جمعه واریز کنید. | tts: Die Reise kostet hundertneunzig Euro. Bitte überweisen Sie das Geld bis Freitag.
+- Ihr{Ihr-det} Kind braucht in Hamburg nur 40 Euro. | فرزندتان در هامبورگ فقط ۴۰ یورو لازم دارد. | tts: Ihr Kind braucht in Hamburg nur vierzig Euro.
+- Letztes Jahr haben viele Kinder in Hamburg zu viel Geld ausgegeben. | پارسال خیلی از بچه‌ها در هامبورگ زیادی پول خرج کردند.
+- Die Kinder können in Hamburg kein Geld abheben. | بچه‌ها در هامبورگ نمی‌توانند پول برداشت کنند.
+- Bitte geben Sie Ihrem Kind auch etwas Kleingeld für die Toilette. | لطفاً کمی پول خرد هم برای دستشویی به فرزندتان بدهید.
+- Für den Zug bringen die Kinder ihr{ihr-det} Essen von zu Hause mit. Das spart Geld. | بچه‌ها غذایشان را برای توی قطار از خانه می‌آورند. این‌طوری پول کمتری خرج می‌شود.
+- Ihr{Ihr-det} Lehrer Peter Hoffmann | معلمتان، پتر هوفمان
+reading A:
+{"type":"mcq","prompt":"این متن برای چه کسانی نوشته شده است؟","options":["برای پدر و مادرهای بچه‌ها","برای معلم‌های مدرسه","برای کارکنان هتل","برای مسافرهای قطار"],"correct":0,"explanation_fa":"معلم می‌نویسد: «Bitte überweisen Sie das Geld» و «Ihr Kind braucht in Hamburg nur 40 Euro.»؛ یعنی با پدر و مادرها حرف می‌زند."}
+{"type":"tf","prompt":"بچه‌ها چهارشنبه به موزه می‌روند.","correct":false,"explanation_fa":"در برنامه آمده: «Dienstag: am Vormittag Museum»؛ چهارشنبه «Einkaufen in der Stadt» است."}
+{"type":"tf","prompt":"پول سفر را باید تا جمعه واریز کرد.","correct":true,"explanation_fa":"معلم می‌نویسد: «Bitte überweisen Sie das Geld bis Freitag.»"}
+{"type":"mcq","prompt":"چرا بچه‌ها غذایشان را از خانه می‌آورند؟","options":["چون غذای قطار خوب نیست","چون هتل غذا ندارد","چون پول کمتری خرج می‌شود","چون قطار رستوران ندارد"],"correct":2,"explanation_fa":"معلم می‌نویسد: «Für den Zug bringen die Kinder ihr{ihr-det} Essen von zu Hause mit. Das spart Geld.»"}
+reading B:
+{"type":"match","prompt":"هر روز را به برنامه‌اش وصل کن.","left":["دوشنبه","سه‌شنبه","چهارشنبه"],"right":["خرید در شهر","حرکت با قطار و رسیدن به هتل","موزه و فوتبال","رسیدن به لایپزیگ"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"در برنامه آمده: «Montag … Abfahrt … Ankunft im Hotel»، «Dienstag: … Museum, … Fußball» و «Mittwoch: Einkaufen in der Stadt»."}
+{"type":"find","prompt":"کدام جمله می‌گوید بچه‌ها در هامبورگ نمی‌توانند پول برداشت کنند؟","correct_sentence":9,"explanation_fa":"معلم می‌نویسد: «Die Kinder können in Hamburg kein Geld abheben.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Bitte geben Sie Ihrem Kind auch etwas {{1}} für die {{2}}.","bank":["Kleingeld","Toilette","Bargeld","Küche","Reise"],"answers":["Kleingeld","Toilette"],"explanation_fa":"معلم می‌نویسد: «Bitte geben Sie Ihrem Kind auch etwas Kleingeld für die Toilette.»"}
+listening A:
+{"type":"num","prompt":"سفر چند یورو هزینه دارد؟","answer":"190","accepted":["190","190 Euro","hundertneunzig"],"explanation_fa":"معلم می‌گوید: «Die Reise kostet 190 Euro.»"}
+{"type":"num","prompt":"هر بچه در هامبورگ چند یورو لازم دارد؟","answer":"40","accepted":["40","40 Euro","vierzig"],"explanation_fa":"معلم می‌گوید: «Ihr Kind braucht in Hamburg nur 40 Euro.»"}
+{"type":"tf","prompt":"بچه‌ها با اتوبوس به هامبورگ می‌روند.","correct":false,"explanation_fa":"معلم می‌گوید: «Abfahrt mit dem Zug»، یعنی با قطار می‌روند."}
+{"type":"tf","prompt":"معلم می‌گوید پارسال خیلی از بچه‌ها در هامبورگ زیادی پول خرج کردند.","correct":true,"explanation_fa":"معلم می‌گوید: «Letztes Jahr haben viele Kinder in Hamburg zu viel Geld ausgegeben.»"}
+listening B:
+{"type":"num","prompt":"بچه‌ها پنجشنبه ساعت چند به لایپزیگ می‌رسند؟","answer":"20","accepted":["20","20:00","20 Uhr","zwanzig"],"explanation_fa":"معلم می‌گوید: «Donnerstag, 20 Uhr: Ankunft am Bahnhof in Leipzig.»"}
+{"type":"mcq","prompt":"بچه‌ها سه‌شنبه بعدازظهر چه می‌کنند؟","options":["به موزه می‌روند","خرید می‌کنند","در پارک فوتبال بازی می‌کنند","به هتل برمی‌گردند"],"correct":2,"explanation_fa":"معلم می‌گوید: «am Nachmittag Fußball im Park»."}
+{"type":"order","prompt":"برنامه سفر را به ترتیب بچین.","items":["خرید در شهر","رسیدن به هتل در هامبورگ","رسیدن به ایستگاه لایپزیگ","موزه"],"correct_order":[1,3,0,2],"explanation_fa":"اول «Ankunft im Hotel» دوشنبه، بعد «Museum» سه‌شنبه، بعد «Einkaufen» چهارشنبه و آخر «Ankunft am Bahnhof in Leipzig» پنجشنبه."}

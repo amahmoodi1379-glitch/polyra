@@ -1,0 +1,28 @@
+code: de-a2-t057
+title: Heute nur Bargeld
+band: 1
+kind: announcement
+key_words: Bargeld, Kreditkarte, Geldautomat, Geldbeutel, lila
+sentences:
+- Eine wichtige Information für Sie: | یک اطلاعیه مهم برای شما:
+- Wir haben heute ein Problem mit dem Computer. | امروز با کامپیوتر مشکل داریم.
+- Deshalb können Sie heute nicht mit Karte bezahlen, auch nicht mit Kreditkarte. | برای همین امروز نمی‌توانید با کارت پرداخت کنید، با کارت اعتباری هم نه.
+- Bitte bezahlen Sie Ihre Fahrkarte bar. | لطفاً پول بلیتتان را نقد بپردازید.
+- Sie{Sie-3} haben kein Bargeld? Ein Geldautomat ist neben Gleis 1. | پول نقد ندارید؟ یک خودپرداز کنار سکوی ۱ هست. | tts: Sie haben kein Bargeld? Ein Geldautomat ist neben Gleis eins.
+- Am Gleis 4 haben wir einen lila Geldbeutel gefunden. | روی سکوی ۴ یک کیف پول بنفش پیدا کرده‌ایم. | tts: Am Gleis vier haben wir einen lila Geldbeutel gefunden.
+- Bitte holen Sie ihn bei der Information ab. | لطفاً آن را از باجه اطلاعات تحویل بگیرید.
+reading A:
+{"type":"mcq","prompt":"امروز در ایستگاه چه مشکلی هست؟","options":["قطارها دیر می‌آیند","کامپیوتر مشکل دارد","سکوی ۴ بسته است","خودپرداز کار نمی‌کند"],"correct":1,"explanation_fa":"در اطلاعیه آمده: «Wir haben heute ein Problem mit dem Computer.»"}
+{"type":"tf","prompt":"امروز می‌شود با کارت اعتباری پرداخت کرد.","correct":false,"explanation_fa":"در اطلاعیه آمده: «auch nicht mit Kreditkarte»، یعنی با کارت اعتباری هم نمی‌شود."}
+{"type":"tf","prompt":"یک خودپرداز کنار سکوی ۱ هست.","correct":true,"explanation_fa":"در اطلاعیه آمده: «Ein Geldautomat ist neben Gleis 1.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید کیف پول را از کجا تحویل بگیرند؟","correct_sentence":6,"explanation_fa":"در اطلاعیه آمده: «Bitte holen Sie ihn bei der Information ab.»"}
+{"type":"order","prompt":"این‌ها را به ترتیب اطلاعیه بچین.","items":["از خودپرداز می‌گوید.","از کیف پول پیداشده می‌گوید.","از مشکل کامپیوتر می‌گوید.","می‌گوید بلیت را نقد بپردازید."],"correct_order":[2,3,0,1],"explanation_fa":"اول «ein Problem mit dem Computer»، بعد «bar»، بعد «Geldautomat» و آخر «Geldbeutel»."}
+listening A:
+{"type":"num","prompt":"کیف پول روی کدام سکو پیدا شده است؟","answer":"4","accepted":["4","vier"],"explanation_fa":"در اطلاعیه آمده: «Am Gleis 4 haben wir einen lila Geldbeutel gefunden.»"}
+{"type":"mcq","prompt":"کیف پول چه رنگی است؟","options":["سیاه","قهوه‌ای","بنفش","صورتی"],"correct":2,"explanation_fa":"در اطلاعیه آمده: «einen lila Geldbeutel»، یعنی کیف پول بنفش."}
+{"type":"tf","prompt":"امروز بلیت را باید نقد خرید.","correct":true,"explanation_fa":"در اطلاعیه آمده: «Bitte bezahlen Sie Ihre Fahrkarte bar.»"}
+{"type":"tf","prompt":"خودپرداز کنار سکوی ۴ است.","correct":false,"explanation_fa":"در اطلاعیه آمده: «Ein Geldautomat ist neben Gleis 1.»، یعنی کنار سکوی ۱."}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"mcq","prompt":"صاحب کیف پول کجا باید برود؟","options":["به باجه اطلاعات","به پلیس","به سکوی ۱","به خودپرداز"],"correct":0,"explanation_fa":"در اطلاعیه آمده: «Bitte holen Sie ihn bei der Information ab.»"}

@@ -1,0 +1,29 @@
+code: de-a2-t055
+title: In den Bergen ist es kalt
+band: 1
+kind: voice_message
+key_words: Stiefel, Socke, Mütze, Schal, Handschuh
+sentences:
+- Hallo Tim, hier ist Mama. | سلام تیم، مامان هستم.
+- Morgen fährst du mit Papa in die Berge. Dort ist es kalt. | فردا با بابا به کوه می‌روی. آنجا سرد است.
+- Nimm bitte deine Stiefel und deine dicken Socken mit. | لطفاً چکمه‌ها و جوراب‌های کلفتت را با خودت ببر.
+- Deine Mütze und deinen Schal findest du im Schrank im Flur. | کلاه و شال‌گردنت را در کمد راهرو پیدا می‌کنی.
+- Die Handschuhe liegen in der Küche. | دستکش‌ها در آشپزخانه‌اند.
+- Zieh keine Jeans an, die sind zu dünn. | شلوار جین نپوش، خیلی نازک است.
+- Nimm lieber die warme Hose. | بهتر است شلوار گرم را ببری.
+- Bis heute Abend! | تا امشب!
+reading A:
+{"type":"mcq","prompt":"تیم فردا کجا می‌رود؟","options":["به دریا","به کوه","به مدرسه","پیش مامان‌بزرگ"],"correct":1,"explanation_fa":"مامان می‌گوید: «Morgen fährst du mit Papa in die Berge.»"}
+{"type":"tf","prompt":"کلاه تیم در کمد راهرو است.","correct":true,"explanation_fa":"مامان می‌گوید: «Deine Mütze und deinen Schal findest du im Schrank im Flur.»"}
+{"type":"tf","prompt":"دستکش‌ها در کمد راهرو هستند.","correct":false,"explanation_fa":"مامان می‌گوید: «Die Handschuhe liegen in der Küche.»، یعنی در آشپزخانه."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید تیم شلوار جین نپوشد؟","correct_sentence":5,"explanation_fa":"مامان می‌گوید: «Zieh keine Jeans an, die sind zu dünn.»"}
+{"type":"match","prompt":"هر چیز را به جایش وصل کن.","left":["شال‌گردن","دستکش‌ها"],"right":["در آشپزخانه","در کمد راهرو","در ماشین بابا"],"pairs":[[0,1],[1,0]],"explanation_fa":"مامان می‌گوید شال‌گردن «im Schrank im Flur» است و دستکش‌ها «in der Küche»."}
+listening A:
+{"type":"mcq","prompt":"تیم بهتر است کدام شلوار را ببرد؟","options":["شلوار جین","شلوار ورزشی","شلوار گرم","شلوار کوتاه"],"correct":2,"explanation_fa":"مامان می‌گوید: «Nimm lieber die warme Hose.»"}
+{"type":"tf","prompt":"تیم با مامان به کوه می‌رود.","correct":false,"explanation_fa":"مامان می‌گوید: «Morgen fährst du mit Papa in die Berge.»، یعنی با بابا."}
+{"type":"mcq","prompt":"چرا تیم نباید شلوار جین بپوشد؟","options":["چون کثیف است","چون خیلی نازک است","چون خیلی کوچک است","چون نو است"],"correct":1,"explanation_fa":"مامان می‌گوید: «die sind zu dünn»، یعنی خیلی نازک است."}
+{"type":"tf","prompt":"در کوه هوا سرد است.","correct":true,"explanation_fa":"مامان می‌گوید: «Dort ist es kalt.»"}
+listening B:
+{"type":"dict","sentence":6}
+{"type":"mcq","prompt":"تیم چه جورابی ببرد؟","options":["جوراب کلفت","جوراب نازک","جوراب نو","جوراب سفید"],"correct":0,"explanation_fa":"مامان می‌گوید: «deine dicken Socken»، یعنی جوراب‌های کلفت."}

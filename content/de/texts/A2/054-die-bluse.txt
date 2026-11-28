@@ -1,0 +1,35 @@
+code: de-a2-t054
+title: Die Bluse ist zu klein
+band: 2
+kind: phone_call
+key_words: Bluse, umtauschen, Kassenbon, Größe, anprobieren
+sentences:
+A: Kaufhaus Schulz, guten Tag! | فروشگاه شولتس، روز بخیر!
+B: Guten Tag, hier ist Anna Weber. Ich habe am Samstag bei Ihnen eine Bluse für meine Tochter gekauft. | روز بخیر، آنا وبر هستم. شنبه از فروشگاه شما یک بلوز برای دخترم خریدم.
+B: Aber sie ist zu klein, meine Tochter kann sie nicht anziehen. Kann ich die Bluse umtauschen? | ولی کوچک است و دخترم نمی‌تواند آن را بپوشد. می‌توانم بلوز را عوض کنم؟
+A: Ja, natürlich. Haben Sie noch den Kassenbon? | بله، حتماً. رسید خرید را هنوز دارید؟
+B: Ja, den habe ich noch. | بله، هنوز دارمش.
+A: Gut. Dann bringen Sie die Bluse und den Kassenbon mit. Sie{Sie-3} können eine andere Größe aussuchen. | خوب. پس بلوز و رسید را با خودتان بیاورید. می‌توانید سایز دیگری انتخاب کنید.
+B: Kann meine Tochter mitkommen? Sie möchte die Bluse gleich anprobieren. | دخترم هم می‌تواند بیاید؟ می‌خواهد بلوز را همان‌جا امتحان کند.
+A: Gern. Die Mode für den Frühling ist auch schon da. | با کمال میل. لباس‌های مد بهار هم آمده است.
+B: Und wenn sie keine Bluse möchte? Kann sie dann etwas anderes wählen? | و اگر بلوز نخواهد چه؟ آن‌وقت می‌تواند چیز دیگری انتخاب کند؟
+A: Ja, das geht. Aber wir können Ihnen leider kein Geld zurückgeben. | بله، می‌شود. ولی متأسفانه نمی‌توانیم پول را به شما پس بدهیم.
+B: Gut, dann kommen wir am Freitag. Danke! | خوب، پس جمعه می‌آییم. ممنون!
+reading A:
+{"type":"mcq","prompt":"خانم وبر چرا زنگ می‌زند؟","options":["می‌خواهد یک بلوز تازه سفارش بدهد","رسید خریدش را گم کرده است","می‌خواهد بلوز را عوض کند","می‌پرسد فروشگاه کی باز است"],"correct":2,"explanation_fa":"خانم وبر می‌گوید: «Kann ich die Bluse umtauschen?»، چون بلوز کوچک است."}
+{"type":"tf","prompt":"بلوز برای خود خانم وبر است.","correct":false,"explanation_fa":"خانم وبر می‌گوید: «eine Bluse für meine Tochter»، یعنی بلوز را برای دخترش خریده است."}
+{"type":"tf","prompt":"خانم وبر رسید خرید را هنوز دارد.","correct":true,"explanation_fa":"خانم وبر می‌گوید: «Ja, den habe ich noch.»"}
+{"type":"mcq","prompt":"دختر خانم وبر چه کاری می‌خواهد بکند؟","options":["بلوز را همان‌جا امتحان کند","یک کفش بخرد","پولش را پس بگیرد","مد بهار را ببیند"],"correct":0,"explanation_fa":"خانم وبر می‌گوید: «Sie möchte die Bluse gleich anprobieren.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید فروشگاه پول را پس نمی‌دهد؟","correct_sentence":9,"explanation_fa":"فروشنده می‌گوید: «Aber wir können Ihnen leider kein Geld zurückgeben.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Dann bringen Sie die Bluse und den {{1}} mit. Sie können eine andere {{2}} aussuchen.","bank":["Kassenbon","Größe","Farbe","Geld","Tasche"],"answers":["Kassenbon","Größe"],"explanation_fa":"فروشنده می‌گوید: «Dann bringen Sie die Bluse und den Kassenbon mit. Sie können eine andere Größe aussuchen.»"}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["فروشنده درباره رسید خرید می‌پرسد.","خانم وبر می‌گوید بلوز کوچک است.","خانم وبر می‌گوید جمعه می‌آیند.","خانم وبر می‌پرسد دخترش هم می‌تواند بیاید."],"correct_order":[1,0,3,2],"explanation_fa":"اول «sie ist zu klein»، بعد «Haben Sie noch den Kassenbon?»، بعد «Kann meine Tochter mitkommen?» و آخر «dann kommen wir am Freitag»."}
+listening A:
+{"type":"mcq","prompt":"خانم وبر بلوز را کی خریده است؟","options":["جمعه","شنبه","دیروز","یکشنبه"],"correct":1,"explanation_fa":"خانم وبر می‌گوید: «Ich habe am Samstag bei Ihnen eine Bluse gekauft.»"}
+{"type":"tf","prompt":"بلوز برای دختر خانم وبر خیلی بزرگ است.","correct":false,"explanation_fa":"خانم وبر می‌گوید: «sie ist zu klein»، یعنی بلوز کوچک است."}
+{"type":"tf","prompt":"دختر می‌تواند به‌جای بلوز چیز دیگری انتخاب کند.","correct":true,"explanation_fa":"خانم وبر می‌پرسد «Kann sie dann etwas anderes wählen?» و فروشنده می‌گوید: «Ja, das geht.»"}
+listening B:
+{"type":"mcq","prompt":"خانم وبر و دخترش کی به فروشگاه می‌آیند؟","options":["شنبه","امروز","جمعه","دوشنبه"],"correct":2,"explanation_fa":"خانم وبر می‌گوید: «dann kommen wir am Freitag»."}
+{"type":"mcq","prompt":"فروشنده درباره لباس‌های بهار چه می‌گوید؟","options":["همه حراج‌اند","هنوز نیامده‌اند","خیلی گران‌اند","آمده‌اند"],"correct":3,"explanation_fa":"فروشنده می‌گوید: «Die Mode für den Frühling ist auch schon da.»"}
+{"type":"tf","prompt":"فروشگاه پول بلوز را پس می‌دهد.","correct":false,"explanation_fa":"فروشنده می‌گوید: «Aber wir können Ihnen leider kein Geld zurückgeben.»"}
+{"type":"tf","prompt":"دختر خانم وبر هم به فروشگاه می‌آید.","correct":true,"explanation_fa":"خانم وبر می‌پرسد «Kann meine Tochter mitkommen?» و فروشنده می‌گوید: «Gern.»"}

@@ -1,0 +1,35 @@
+code: de-a2-t056
+title: Die rosa Tüte
+band: 2
+kind: email
+key_words: Tüte, Kette, Ring, Paar, Packung
+sentences:
+- Guten Tag, | روز بخیر،
+- ich war von Freitag bis Sonntag in Ihrem Hotel, in Zimmer 24. | من از جمعه تا یکشنبه در هتل شما بودم، در اتاق ۲۴. | tts: ich war von Freitag bis Sonntag in Ihrem Hotel, in Zimmer vierundzwanzig.
+- Leider habe ich dort eine Tüte vergessen, vielleicht im Schrank. | متأسفانه یک کیسه آنجا جا گذاشتم، شاید در کمد.
+- Die Tüte ist rosa. In der Tüte sind eine Kette und ein Ring. | کیسه صورتی است. در کیسه یک گردنبند و یک انگشتر هست.
+- Beide sind Geschenke von meiner Mutter, deshalb sind sie sehr wichtig für mich. | هر دو هدیه مادرم هستند، برای همین برایم خیلی مهم‌اند.
+- Die Kette ist lang und bunt, der Ring ist klein. | گردنبند بلند و رنگارنگ است و انگشتر کوچک.
+- Außerdem sind in der Tüte zwei Paar Socken und eine Packung Tee. | به‌علاوه در کیسه دو جفت جوراب و یک بسته چای هم هست.
+- Haben Sie die Tüte gefunden? Können Sie sie mir bitte schicken? | کیسه را پیدا کرده‌اید؟ می‌توانید لطفاً آن را برایم بفرستید؟
+- Ich bezahle das natürlich. | البته هزینه‌اش را خودم می‌دهم.
+- Vielen Dank! Julia Neumann | خیلی ممنون! یولیا نویمان
+reading A:
+{"type":"mcq","prompt":"یولیا چرا به هتل ایمیل می‌زند؟","options":["می‌خواهد دوباره اتاق رزرو کند","چیزی را در هتل جا گذاشته است","از اتاقش راضی نبوده است","می‌خواهد صورت‌حسابش را بپردازد"],"correct":1,"explanation_fa":"یولیا می‌نویسد: «Leider habe ich dort eine Tüte vergessen.»"}
+{"type":"tf","prompt":"کیسه یولیا صورتی است.","correct":true,"explanation_fa":"یولیا می‌نویسد: «Die Tüte ist rosa.»"}
+{"type":"tf","prompt":"یولیا فقط یک شب در هتل بود.","correct":false,"explanation_fa":"یولیا می‌نویسد: «ich war von Freitag bis Sonntag in Ihrem Hotel»، یعنی از جمعه تا یکشنبه."}
+{"type":"mcq","prompt":"گردنبند و انگشتر هدیه چه کسی هستند؟","options":["دوست یولیا","خواهر یولیا","هتل","مادر یولیا"],"correct":3,"explanation_fa":"یولیا می‌نویسد: «Beide sind Geschenke von meiner Mutter.»"}
+reading B:
+{"type":"match","prompt":"هر چیز را به توصیفش در ایمیل وصل کن.","left":["کیسه","گردنبند","انگشتر"],"right":["کوچک","صورتی","بلند و رنگارنگ","قرمز و بزرگ"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"یولیا می‌نویسد: «Die Tüte ist rosa.» و «Die Kette ist lang und bunt, der Ring ist klein.»"}
+{"type":"find","prompt":"کدام جمله می‌گوید یولیا هزینه فرستادن را می‌دهد؟","correct_sentence":8,"explanation_fa":"یولیا می‌نویسد: «Ich bezahle das natürlich.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Außerdem sind in der Tüte zwei {{1}} Socken und eine {{2}} Tee.","bank":["Paar","Packung","Kette","Ring","Zimmer"],"answers":["Paar","Packung"],"explanation_fa":"یولیا می‌نویسد: «Außerdem sind in der Tüte zwei Paar Socken und eine Packung Tee.»"}
+listening A:
+{"type":"num","prompt":"یولیا در کدام اتاق بود؟","answer":"24","accepted":["24","vierundzwanzig"],"explanation_fa":"یولیا می‌گوید: «in Zimmer 24»."}
+{"type":"mcq","prompt":"به جز گردنبند و انگشتر، چه چیزهایی در کیسه است؟","options":["یک کتاب و یک خودکار","دو جفت جوراب و یک بسته چای","یک دستکش و یک کلاه","یک بسته قهوه و یک شال‌گردن"],"correct":1,"explanation_fa":"یولیا می‌گوید: «zwei Paar Socken und eine Packung Tee»."}
+{"type":"tf","prompt":"یولیا می‌خواهد هتل کیسه را برایش بفرستد.","correct":true,"explanation_fa":"یولیا می‌پرسد: «Können Sie sie mir bitte schicken?»"}
+{"type":"tf","prompt":"یولیا از شنبه تا دوشنبه در هتل بود.","correct":false,"explanation_fa":"یولیا می‌گوید: «ich war von Freitag bis Sonntag in Ihrem Hotel»، یعنی از جمعه تا یکشنبه."}
+listening B:
+{"type":"mcq","prompt":"یولیا فکر می‌کند کیسه کجای اتاق است؟","options":["زیر تخت","در حمام","در کمد","روی میز"],"correct":2,"explanation_fa":"یولیا می‌گوید: «vielleicht im Schrank»، یعنی شاید در کمد."}
+{"type":"mcq","prompt":"گردنبند و انگشتر چرا برای یولیا مهم‌اند؟","options":["چون خیلی گران‌اند","چون هدیه مادرش هستند","چون آن‌ها را تازه خریده است","چون مال خواهرش هستند"],"correct":1,"explanation_fa":"یولیا می‌گوید: «Beide sind Geschenke von meiner Mutter, deshalb sind sie sehr wichtig für mich.»"}
+{"type":"tf","prompt":"گردنبند کوتاه است.","correct":false,"explanation_fa":"یولیا می‌گوید: «Die Kette ist lang und bunt»، یعنی گردنبند بلند است."}
+{"type":"tf","prompt":"یولیا هزینه را خودش می‌دهد.","correct":true,"explanation_fa":"یولیا می‌گوید: «Ich bezahle das natürlich.»"}

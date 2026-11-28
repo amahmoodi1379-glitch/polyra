@@ -1,0 +1,38 @@
+code: de-a2-t048
+title: Lena wird dreißig
+band: 2
+kind: email
+key_words: Hackfleisch, Gericht, Limonade, Mineralwasser
+sentences:
+- Hallo Felix, hallo Sara, | سلام فلیکس، سلام سارا،
+- am Samstag werde ich 30 Jahre alt! | شنبه سی ساله می‌شوم! | tts: am Samstag werde ich dreißig Jahre alt!
+- Ich feiere bei mir zu Hause, ab 19 Uhr. | از ساعت ۱۹ در خانه خودم جشن می‌گیرم. | tts: Ich feiere bei mir zu Hause, ab neunzehn Uhr.
+- Ich koche Nudeln mit Hackfleisch, das Rezept ist von meiner Oma. | ماکارونی با گوشت چرخ‌کرده می‌پزم؛ دستورش از مامان‌بزرگم است.
+- Sara, du isst kein Fleisch, deshalb mache ich für dich ein Gericht mit Gemüse. | سارا، تو گوشت نمی‌خوری، برای همین برایت یک غذا با سبزیجات درست می‌کنم.
+- Meine Schwester kommt auch, mit ihren{ihr-det} zwei Kindern. | خواهرم هم با دو تا بچه‌اش می‌آید.
+- Die Kinder essen gern Pommes und trinken Kakao. | بچه‌ها سیب‌زمینی سرخ‌کرده دوست دارند و کاکائو می‌نوشند.
+- Könnt ihr mir mit den Getränken helfen? | می‌توانید در نوشیدنی‌ها کمکم کنید؟
+- Felix, bring bitte Bier und Wein mit. | فلیکس، لطفاً آبجو و شراب بیاور.
+- Sara, kannst du Mineralwasser und Limonade kaufen? Ich gebe dir später das Geld. | سارا، می‌توانی آب معدنی و لیموناد بخری؟ بعداً پولش را به تو می‌دهم.
+- Sagt mir bitte bis Donnerstag Bescheid. | لطفاً تا پنجشنبه خبرم کنید.
+- Bis Samstag! Eure Lena | تا شنبه! قربانتان، لنا
+reading A:
+{"type":"mcq","prompt":"لنا چرا این ایمیل را نوشته است؟","options":["برای تولدش مهمانی می‌گیرد","از دوستانش یک دستور پخت می‌خواهد","برای خواهرش هدیه می‌خرد","می‌خواهد با دوستانش به رستوران برود"],"correct":0,"explanation_fa":"لنا می‌نویسد: «am Samstag werde ich 30 Jahre alt!» و «Ich feiere bei mir zu Hause.»"}
+{"type":"tf","prompt":"جشن در یک رستوران است.","correct":false,"explanation_fa":"لنا می‌نویسد: «Ich feiere bei mir zu Hause»، یعنی در خانه خودش."}
+{"type":"tf","prompt":"سارا گوشت نمی‌خورد.","correct":true,"explanation_fa":"لنا می‌نویسد: «Sara, du isst kein Fleisch.»"}
+{"type":"mcq","prompt":"دستور ماکارونی از کیست؟","options":["از سارا","از خواهر لنا","از مامان‌بزرگ لنا","از مادر لنا"],"correct":2,"explanation_fa":"لنا می‌نویسد: «das Rezept ist von meiner Oma»."}
+reading B:
+{"type":"match","prompt":"هر کس را به چیزی که باید بیاورد یا بخرد وصل کن.","left":["فلیکس","سارا"],"right":["آب معدنی و لیموناد","آبجو و شراب","کاکائو و سیب‌زمینی"],"pairs":[[0,1],[1,0]],"explanation_fa":"لنا می‌نویسد: «Felix, bring bitte Bier und Wein mit.» و «Sara, kannst du Mineralwasser und Limonade kaufen?»"}
+{"type":"find","prompt":"کدام جمله می‌گوید لنا پول خریدها را به سارا پس می‌دهد؟","correct_sentence":9,"explanation_fa":"لنا می‌نویسد: «Ich gebe dir später das Geld.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Ich koche Nudeln mit {{1}}, das {{2}} ist von meiner Oma.","bank":["Hackfleisch","Rezept","Gemüse","Gericht","Kakao"],"answers":["Hackfleisch","Rezept"],"explanation_fa":"لنا می‌نویسد: «Ich koche Nudeln mit Hackfleisch, das Rezept ist von meiner Oma.»"}
+listening A:
+{"type":"num","prompt":"لنا شنبه چند ساله می‌شود؟","answer":"30","accepted":["30","dreißig"],"explanation_fa":"لنا می‌گوید: «am Samstag werde ich 30 Jahre alt»."}
+{"type":"num","prompt":"جشن از ساعت چند شروع می‌شود؟","answer":"19","accepted":["19","19:00","19 Uhr","neunzehn"],"explanation_fa":"لنا می‌گوید: «ab 19 Uhr»."}
+{"type":"mcq","prompt":"چه کسی با دو تا بچه می‌آید؟","options":["خواهر لنا","مامان‌بزرگ لنا","سارا","فلیکس"],"correct":0,"explanation_fa":"لنا می‌گوید: «Meine Schwester kommt auch, mit ihren zwei Kindern.»"}
+{"type":"tf","prompt":"لنا برای سارا غذایی با سبزیجات درست می‌کند.","correct":true,"explanation_fa":"لنا می‌گوید: «deshalb mache ich für dich ein Gericht mit Gemüse»."}
+{"type":"tf","prompt":"جشن لنا یکشنبه است.","correct":false,"explanation_fa":"لنا می‌گوید: «am Samstag werde ich 30 Jahre alt»، یعنی جشن شنبه است."}
+listening B:
+{"type":"mcq","prompt":"لنا از دوستانش در چه چیزی کمک می‌خواهد؟","options":["در آشپزی","در نوشیدنی‌ها","در نگه‌داشتن بچه‌ها","در تمیز کردن خانه"],"correct":1,"explanation_fa":"لنا می‌پرسد: «Könnt ihr mir mit den Getränken helfen?»"}
+{"type":"mcq","prompt":"دوستان لنا تا کی باید خبر بدهند؟","options":["تا جمعه","تا شنبه","تا چهارشنبه","تا پنجشنبه"],"correct":3,"explanation_fa":"لنا می‌گوید: «Sagt mir bitte bis Donnerstag Bescheid.»"}
+{"type":"tf","prompt":"فلیکس باید لیموناد بیاورد.","correct":false,"explanation_fa":"لنا می‌گوید: «Felix, bring bitte Bier und Wein mit.»؛ لیموناد را سارا می‌خرد."}
+{"type":"tf","prompt":"لنا پول نوشیدنی‌ها را بعداً به سارا می‌دهد.","correct":true,"explanation_fa":"لنا به سارا می‌گوید: «Ich gebe dir später das Geld.»"}

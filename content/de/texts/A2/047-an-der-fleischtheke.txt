@@ -1,0 +1,29 @@
+code: de-a2-t047
+title: An der Fleischtheke
+band: 1
+kind: dialogue
+key_words: Rindfleisch, Lammfleisch, Schweinefleisch, Schinken
+sentences:
+A: Guten Tag! Was darf es sein? | روز بخیر! چه میل دارید؟
+B: Ich hätte gern ein Kilo Rindfleisch. Ich koche heute für acht Personen. | یک کیلو گوشت گاو می‌خواستم. امروز برای هشت نفر آشپزی می‌کنم.
+A: Gern. Sonst noch etwas? | با کمال میل. چیز دیگری هم می‌خواهید؟
+B: Haben Sie auch Lammfleisch? | گوشت بره هم دارید؟
+A: Leider nicht. Aber das Schweinefleisch ist heute sehr gut. | متأسفانه نه. ولی گوشت خوک امروز خیلی خوب است.
+B: Gut, dann nehme ich 500 Gramm Schweinefleisch und 200 Gramm Schinken. | خوب، پس ۵۰۰ گرم گوشت خوک و ۲۰۰ گرم ژامبون برمی‌دارم. | tts: Gut, dann nehme ich fünfhundert Gramm Schweinefleisch und zweihundert Gramm Schinken.
+A: Das macht zusammen 23 Euro 40. | روی هم می‌شود ۲۳ یورو و ۴۰ سنت. | tts: Das macht zusammen dreiundzwanzig Euro vierzig.
+B: Hier, bitte. Auf Wiedersehen! | بفرمایید. خداحافظ!
+reading A:
+{"type":"mcq","prompt":"مشتری اول چه می‌خواهد؟","options":["یک کیلو گوشت بره","یک کیلو گوشت گاو","۵۰۰ گرم گوشت خوک","۲۰۰ گرم ژامبون"],"correct":1,"explanation_fa":"مشتری می‌گوید: «Ich hätte gern ein Kilo Rindfleisch.»"}
+{"type":"tf","prompt":"فروشنده امروز گوشت بره ندارد.","correct":true,"explanation_fa":"مشتری گوشت بره می‌خواهد و فروشنده می‌گوید: «Leider nicht.»"}
+{"type":"tf","prompt":"مشتری امروز برای دو نفر آشپزی می‌کند.","correct":false,"explanation_fa":"مشتری می‌گوید: «Ich koche heute für acht Personen.»، یعنی برای هشت نفر."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید فروشنده چه گوشتی را پیشنهاد می‌کند؟","correct_sentence":4,"explanation_fa":"فروشنده می‌گوید: «Aber das Schweinefleisch ist heute sehr gut.»"}
+{"type":"match","prompt":"هر چیز را به مقداری که مشتری می‌خرد وصل کن.","left":["گوشت گاو","گوشت خوک","ژامبون"],"right":["یک کیلو","۵۰۰ گرم","۲۰۰ گرم","دو کیلو"],"pairs":[[0,0],[1,1],[2,2]],"explanation_fa":"مشتری «ein Kilo Rindfleisch»، «500 Gramm Schweinefleisch» و «200 Gramm Schinken» می‌خرد."}
+listening A:
+{"type":"num","prompt":"مشتری روی هم چند یورو می‌دهد؟","answer":"23,40","accepted":["23,40","23.40","23,40 Euro","23 Euro 40"],"explanation_fa":"فروشنده می‌گوید: «Das macht zusammen 23 Euro 40.»"}
+{"type":"mcq","prompt":"مشتری امروز برای چند نفر آشپزی می‌کند؟","options":["دو نفر","چهار نفر","هشت نفر","ده نفر"],"correct":2,"explanation_fa":"مشتری می‌گوید: «Ich koche heute für acht Personen.»"}
+{"type":"tf","prompt":"مشتری آخر گوشت خوک هم می‌خرد.","correct":true,"explanation_fa":"مشتری می‌گوید: «dann nehme ich 500 Gramm Schweinefleisch»."}
+{"type":"tf","prompt":"فروشنده می‌گوید گوشت خوک امروز خوب نیست.","correct":false,"explanation_fa":"فروشنده می‌گوید: «das Schweinefleisch ist heute sehr gut»، یعنی خیلی خوب است."}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"mcq","prompt":"مشتری چه چیزی پیدا نمی‌کند؟","options":["گوشت گاو","ژامبون","گوشت خوک","گوشت بره"],"correct":3,"explanation_fa":"مشتری می‌پرسد «Haben Sie auch Lammfleisch?» و فروشنده می‌گوید: «Leider nicht.»"}

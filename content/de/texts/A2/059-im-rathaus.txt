@@ -1,0 +1,28 @@
+code: de-a2-t059
+title: Im Rathaus
+band: 1
+kind: dialogue
+key_words: anmelden, Ausweis, Anmeldung, Rathaus
+sentences:
+A: Guten Morgen! Was kann ich für Sie tun? | صبح بخیر! چه کاری می‌توانم برایتان بکنم؟
+B: Guten Morgen! Mein Name ist Reza Karimi. Ich wohne jetzt in Stuttgart und möchte mich anmelden. | صبح بخیر! اسم من رضا کریمی است. الان در اشتوتگارت زندگی می‌کنم و می‌خواهم محل سکونتم را ثبت کنم.
+A: Gern. Haben Sie Ihren Ausweis? | با کمال میل. کارت شناسایی‌تان را دارید؟
+B: Ich habe nur meinen Pass aus Iran. Geht das auch? | فقط پاسپورت ایرانی‌ام را دارم. آن هم قبول است؟
+A: Ja, das geht. Füllen Sie bitte dieses Formular aus. | بله، قبول است. لطفاً این فرم را پر کنید.
+B: Was kostet die Anmeldung? | ثبت‌نام چقدر هزینه دارد؟
+A: Nichts, die Anmeldung im Rathaus ist kostenlos. | هیچی، ثبت‌نام در شهرداری رایگان است.
+reading A:
+{"type":"mcq","prompt":"رضا برای چه به شهرداری آمده است؟","options":["برای گرفتن پاسپورت","برای ثبت محل سکونتش","برای پرداخت یک صورت‌حساب","برای پیدا کردن خانه"],"correct":1,"explanation_fa":"رضا می‌گوید: «Ich wohne jetzt in Stuttgart und möchte mich anmelden.»"}
+{"type":"tf","prompt":"رضا فقط پاسپورتش را همراه دارد.","correct":true,"explanation_fa":"رضا می‌گوید: «Ich habe nur meinen Pass aus Iran.»"}
+{"type":"tf","prompt":"ثبت‌نام پول دارد.","correct":false,"explanation_fa":"کارمند می‌گوید: «Nichts, die Anmeldung im Rathaus ist kostenlos.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید رضا باید چه کاری بکند؟","correct_sentence":4,"explanation_fa":"کارمند می‌گوید: «Füllen Sie bitte dieses Formular aus.»"}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["کارمند می‌گوید فرم را پر کند.","رضا می‌پرسد ثبت‌نام چقدر هزینه دارد.","کارمند کارت شناسایی می‌خواهد.","رضا می‌گوید می‌خواهد ثبت‌نام کند."],"correct_order":[3,2,0,1],"explanation_fa":"اول «möchte mich anmelden»، بعد «Haben Sie Ihren Ausweis?»، بعد «Füllen Sie bitte dieses Formular aus» و آخر «Was kostet die Anmeldung?»."}
+listening A:
+{"type":"mcq","prompt":"رضا الان در کدام شهر زندگی می‌کند؟","options":["برلین","اشتوتگارت","مونیخ","کلن"],"correct":1,"explanation_fa":"رضا می‌گوید: «Ich wohne jetzt in Stuttgart.»"}
+{"type":"tf","prompt":"کارمند پاسپورت رضا را قبول نمی‌کند.","correct":false,"explanation_fa":"کارمند می‌گوید: «Ja, das geht.»"}
+{"type":"tf","prompt":"رضا باید یک فرم پر کند.","correct":true,"explanation_fa":"کارمند می‌گوید: «Füllen Sie bitte dieses Formular aus.»"}
+listening B:
+{"type":"dict","sentence":5}
+{"type":"mcq","prompt":"پاسپورت رضا مال کدام کشور است؟","options":["آلمان","اتریش","ایران","سوئیس"],"correct":2,"explanation_fa":"رضا می‌گوید: «Ich habe nur meinen Pass aus Iran.»"}
+{"type":"mcq","prompt":"ثبت‌نام چقدر هزینه دارد؟","options":["ده یورو","هیچی","پنج یورو","بیست یورو"],"correct":1,"explanation_fa":"کارمند می‌گوید: «Nichts, die Anmeldung im Rathaus ist kostenlos.»"}

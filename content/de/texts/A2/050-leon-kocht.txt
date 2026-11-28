@@ -1,0 +1,36 @@
+code: de-a2-t050
+title: Leon kocht
+band: 2
+kind: phone_call
+key_words: braten, schneiden, scharf, sauer, süß
+sentences:
+A: Hallo Mama, hier ist Leon. Hast du kurz Zeit? | سلام مامان، لئون هستم. یک لحظه وقت داری؟
+B: Hallo Leon! Ja, klar. Ist etwas passiert? | سلام لئون! آره، حتماً. اتفاقی افتاده؟
+A: Nein. Heute Abend kommen Sara und ihre Eltern zum Essen. Ich koche Hähnchen mit Gemüse. | نه. امشب سارا و پدر و مادرش برای شام می‌آیند. مرغ با سبزیجات می‌پزم.
+A: Wie lange muss ich das Hähnchen braten? | مرغ را چقدر باید سرخ کنم؟
+B: Zuerst schneidest du das Hähnchen und die Zwiebeln. Dann brätst du alles ungefähr 15 Minuten in Öl. | اول مرغ و پیازها را خرد می‌کنی. بعد همه را حدود ۱۵ دقیقه در روغن سرخ می‌کنی. | tts: Zuerst schneidest du das Hähnchen und die Zwiebeln. Dann brätst du alles ungefähr fünfzehn Minuten in Öl.
+B: Das Gemüse muss frisch sein{sein} und braucht nur fünf Minuten. | سبزیجات باید تازه باشند و فقط پنج دقیقه وقت می‌خواهند.
+A: Sara sagt, ihr{ihr-det} Vater isst nicht gern scharf. | سارا می‌گوید پدرش غذای تند دوست ندارد.
+B: Dann nimm nicht zu viel Pfeffer. Etwas Zitrone ist gut, aber nicht zu viel, sonst ist es sauer. | پس زیاد فلفل نریز. کمی لیمو خوب است، ولی نه زیاد، وگرنه ترش می‌شود.
+A: Und zum Nachtisch? Ich kann keinen Kuchen backen. | و برای دسر؟ من کیک پختن بلد نیستم.
+B: Kauf Erdbeeren und Sahne. Die Erdbeeren sind jetzt sehr süß. | توت‌فرنگی و خامه بخر. توت‌فرنگی‌ها الان خیلی شیرین‌اند.
+A: Super, das mache ich! Danke! | عالی، همین کار را می‌کنم! ممنون!
+B: Gern. Viel Glück heute Abend! | خواهش می‌کنم. امشب موفق باشی!
+reading A:
+{"type":"mcq","prompt":"لئون چرا به مادرش زنگ می‌زند؟","options":["مادرش را برای شام دعوت می‌کند","برای آشپزی کمک می‌خواهد","می‌خواهد با سارا به رستوران برود","حالش خوب نیست"],"correct":1,"explanation_fa":"لئون امشب آشپزی می‌کند و می‌پرسد: «Wie lange muss ich das Hähnchen braten?»"}
+{"type":"tf","prompt":"امشب پدر و مادر سارا برای شام می‌آیند.","correct":true,"explanation_fa":"لئون می‌گوید: «Heute Abend kommen Sara und ihre Eltern zum Essen.»"}
+{"type":"tf","prompt":"پدر سارا غذای تند دوست دارد.","correct":false,"explanation_fa":"لئون می‌گوید: «ihr Vater isst nicht gern scharf»، یعنی پدرش غذای تند دوست ندارد."}
+{"type":"mcq","prompt":"مادر لئون برای دسر چه پیشنهادی می‌دهد؟","options":["کیک بپزد","بستنی بخرد","توت‌فرنگی و خامه بخرد","گیلاس بخرد"],"correct":2,"explanation_fa":"مادر می‌گوید: «Kauf Erdbeeren und Sahne.»"}
+reading B:
+{"type":"order","prompt":"کارهای آشپزی را به ترتیبی که مادر می‌گوید بچین.","items":["همه را در روغن سرخ می‌کند","مرغ و پیازها را خرد می‌کند","سبزیجات را پنج دقیقه می‌پزد","توت‌فرنگی و خامه می‌خرد"],"correct_order":[1,0,2,3],"explanation_fa":"مادر اول می‌گوید «Zuerst schneidest du …»، بعد «Dann brätst du alles …»، بعد از سبزیجات می‌گوید و آخر از دسر: «Kauf Erdbeeren und Sahne.»"}
+{"type":"find","prompt":"کدام جمله می‌گوید چرا نباید زیاد لیمو ریخت؟","correct_sentence":7,"explanation_fa":"مادر می‌گوید: «Etwas Zitrone ist gut, aber nicht zu viel, sonst ist es sauer.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Das Gemüse muss {{1}} sein. Die Erdbeeren sind jetzt sehr {{2}}.","bank":["frisch","süß","scharf","sauer","alt"],"answers":["frisch","süß"],"explanation_fa":"مادر می‌گوید: «Das Gemüse muss frisch sein» و «Die Erdbeeren sind jetzt sehr süß.»"}
+listening A:
+{"type":"num","prompt":"لئون مرغ را حدود چند دقیقه سرخ کند؟","answer":"15","accepted":["15","fünfzehn","15 Minuten"],"explanation_fa":"مادر می‌گوید: «Dann brätst du alles ungefähr 15 Minuten in Öl.»"}
+{"type":"mcq","prompt":"لئون امشب چه غذایی می‌پزد؟","options":["ماهی با برنج","مرغ با سبزیجات","گوشت گاو با سیب‌زمینی","ماکارونی با قارچ"],"correct":1,"explanation_fa":"لئون می‌گوید: «Ich koche Hähnchen mit Gemüse.»"}
+{"type":"tf","prompt":"لئون می‌تواند کیک بپزد.","correct":false,"explanation_fa":"لئون می‌گوید: «Ich kann keinen Kuchen backen.»"}
+{"type":"tf","prompt":"مادر می‌گوید کمی لیمو خوب است.","correct":true,"explanation_fa":"مادر می‌گوید: «Etwas Zitrone ist gut, aber nicht zu viel.»"}
+listening B:
+{"type":"mcq","prompt":"مادر درباره فلفل چه می‌گوید؟","options":["زیاد فلفل بریزد","اصلاً فلفل نریزد","زیاد فلفل نریزد","فلفل را آخر بریزد"],"correct":2,"explanation_fa":"مادر می‌گوید: «Dann nimm nicht zu viel Pfeffer.»"}
+{"type":"tf","prompt":"سبزیجات فقط پنج دقیقه وقت لازم دارند.","correct":true,"explanation_fa":"مادر می‌گوید: «braucht nur fünf Minuten»."}
+{"type":"tf","prompt":"سارا امشب تنها می‌آید.","correct":false,"explanation_fa":"لئون می‌گوید: «Heute Abend kommen Sara und ihre Eltern zum Essen.»، یعنی سارا با پدر و مادرش می‌آید."}
