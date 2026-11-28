@@ -6,17 +6,8 @@ lemma	pos	gender	plural	meaning_fa	concept_fa	topic
 # 500 commonest, or a B2 topic word rarer in Lexique than in B2 life. Swear words stay out (DECISIONS.md).
 
 # grammar words without a card
-ceux-ci	pron			این‌ها (این گروه)	این‌ها (این گروه)	function	no_card:1
-ceux-là	pron			آن‌ها (آن گروه)	آن‌ها (آن گروه)	function	no_card:1
-celles-ci	pron			این‌ها (مؤنث)	این‌ها (مؤنث)	function	no_card:1
-celles-là	pron			آن‌ها (اشارهٔ مؤنث)	آن‌ها (اشارهٔ مؤنث)	function	no_card:1
 vous-même	pron			خودتان	خودتان	function	no_card:1
 nous-mêmes	pron			خودمان	خودمان	function	no_card:1
-miens	pron			مال من (جمع)	مال من (جمع)	function	no_card:1
-siens	pron			مال او (جمع)	مال او (جمع)	function	no_card:1
-tienne	pron			مال تو (مؤنث)	مال تو (مؤنث)	function	no_card:1
-auxquelles	pron			که به آن‌ها (مؤنث)	که به آن‌ها (مؤنث)	function	no_card:1
-desquels	pron			که از آن‌ها	که از آن‌ها	function	no_card:1
 quiconque	pron			هر کس که	هر کس که	function	no_card:1
 quelconque	det			هر ... ای (بی‌اهمیت)، معمولی	هر ... ای (بی‌اهمیت)	function	no_card:1
 hum	interj			اوهوم، هوم	اوهوم	function	no_card:1
