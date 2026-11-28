@@ -1,25 +1,25 @@
 // French A2, card words 298–396 (feelings, food and cooking, renting and the home).
 # inquiet
 Ma mère est [inquiète] quand je rentre tard. | وقتی دیر به خانه برمی‌گردم، مادرم نگران می‌شود.
-Ne sois pas [inquiet], tout va bien. | نگران نباش، همه‌چیز خوب است.
+Ne sois pas [inquiet], tout va bien. | نگران نباش، همه‌چیز خوب است. | ok: inquiète
 Les élèves sont [inquiets] : l'exercice est difficile. | دانش‌آموزان نگران‌اند: تمرین سخت است.
-Je suis [inquiet] pour mon grand-père, il est malade. | نگران پدربزرگم هستم، مریض است.
-Tu as l'air [inquiet]. Il y a un problème ? | نگران به نظر می‌رسی. مشکلی هست؟
-Nous étions [inquiets] : le train avait une heure de retard. | نگران بودیم: قطار یک ساعت تأخیر داشت.
+Je suis [inquiet] pour mon grand-père, il est malade. | نگران پدربزرگم هستم، مریض است. | ok: inquiète
+Tu as l'air [inquiet]. Il y a un problème ? | نگران به نظر می‌رسی. مشکلی هست؟ | ok: inquiète
+Nous étions [inquiets] : le train avait une heure de retard. | نگران بودیم: قطار یک ساعت تأخیر داشت. | ok: inquiètes
 # surpris
-Je suis [surpris] : il fait chaud en décembre ! | تعجب کرده‌ام: در دسامبر هوا گرم است!
+Je suis [surpris] : il fait chaud en décembre ! | تعجب کرده‌ام: در دسامبر هوا گرم است! | ok: surprise
 Elle est très [surprise] par le cadeau. | از هدیه خیلی غافلگیر شده است.
 Les enfants sont [surpris] de voir la neige. | بچه‌ها از دیدن برف تعجب کرده‌اند.
-Tu as l'air [surpris] ! Tu ne savais pas ? | متعجب به نظر می‌رسی! نمی‌دانستی؟
-Nous étions [surpris] : le magasin était fermé. | تعجب کردیم: مغازه بسته بود.
+Tu as l'air [surpris] ! Tu ne savais pas ? | متعجب به نظر می‌رسی! نمی‌دانستی؟ | ok: surprise
+Nous étions [surpris] : le magasin était fermé. | تعجب کردیم: مغازه بسته بود. | ok: surprises
 Le professeur est [surpris] : tout le monde a fait l'exercice. | معلم تعجب کرده است: همه تمرین را انجام داده‌اند.
 # fâché
 Mon père est [fâché] parce que j'ai cassé la fenêtre. | پدرم عصبانی است، چون پنجره را شکستم.
-Tu es [fâchée] contre moi ? | از دست من دلخوری؟
+Tu es [fâchée] contre moi ? | از دست من دلخوری؟ | ok: fâché
 Elle n'est pas [fâchée], elle est juste fatiguée. | دلخور نیست، فقط خسته است.
 Les voisins sont [fâchés] à cause de la musique. | همسایه‌ها به خاطر موسیقی عصبانی‌اند.
 Ce matin, ma sœur était [fâchée] et elle ne parlait pas. | امروز صبح خواهرم دلخور بود و حرف نمی‌زد.
-Pourquoi est-ce que vous êtes [fâchés] ? | چرا عصبانی هستید؟
+Pourquoi est-ce que vous êtes [fâchés] ? | چرا عصبانی هستید؟ | ok: fâchées
 # colère
 Mon père parle avec [colère] au téléphone. | پدرم پشت تلفن با عصبانیت حرف می‌زند.
 Sa [colère] passe vite, il n'est pas méchant. | عصبانیتش زود فروکش می‌کند، آدم بدی نیست.
@@ -37,17 +37,17 @@ Je ne veux pas [être en colère] pendant les vacances. | نمی‌خواهم د
 # amoureux
 Mon oncle est [amoureux] de Paris. | عمویم عاشق پاریس است.
 Ma fille est [amoureuse] des{des-contr} chevaux. | دخترم عاشق اسب‌هاست.
-Nous sommes [amoureux] de cette ville. | ما عاشق این شهریم.
+Nous sommes [amoureux] de cette ville. | ما عاشق این شهریم. | ok: amoureuses
 Elle est [amoureuse] de la musique depuis son enfance. | از بچگی عاشق موسیقی است.
 Les touristes sont [amoureux] de la cuisine iranienne. | توریست‌ها عاشق غذای ایرانی‌اند.
 Mon frère est [amoureux] de son nouveau vélo. | برادرم عاشق دوچرخهٔ تازه‌اش است.
 # tomber amoureux
-Je suis [tombé amoureux] de Paris. | عاشق پاریس شدم.
+Je suis [tombé amoureux] de Paris. | عاشق پاریس شدم. | ok: tombée amoureuse
 Mon père est [tombé amoureux] de cette petite maison. | پدرم عاشق این خانهٔ کوچک شد.
 On [tombe amoureux] de cette ville très vite. | آدم خیلی زود عاشق این شهر می‌شود.
 Les enfants sont [tombés amoureux] du{du-contr} chien des{des-contr} voisins. | بچه‌ها عاشق سگ همسایه‌ها شدند.
 Tu vas [tomber amoureux] de la cuisine française ! | عاشق غذای فرانسوی می‌شوی!
-Nous sommes [tombés amoureux] de la montagne. | ما عاشق کوهستان شدیم.
+Nous sommes [tombés amoureux] de la montagne. | ما عاشق کوهستان شدیم. | ok: tombées amoureuses
 # joie
 Les enfants crient de [joie]. | بچه‌ها از خوشحالی جیغ می‌کشند.
 Quelle [joie] de vous voir ! | چه خوشحالم که می‌بینمتان!
@@ -102,7 +102,7 @@ Grosses [bises] à toute la famille ! | کلی بوس برای همهٔ خانو
 Le bébé me donne une [bise] sur la joue. | نوزاد گونه‌ام را می‌بوسد.
 Donne une [bise] à ta grand-mère ! | مادربزرگت را ببوس!
 Je t'envoie des [bises] de Paris. | از پاریس برایت بوس می‌فرستم.
-En France, on dit bonjour avec deux [bises]. | در فرانسه با دو بوس روی گونه سلام می‌کنند.
+En France, on dit bonjour avec deux [bises]. | در فرانسه با دو بوس روی گونه سلام می‌کنند. | ok: bisous
 Je dois partir. À demain, [bises] ! | باید بروم. تا فردا، می‌بوسمت!
 # faire la bise
 En France, on [fait la bise] aux amis. | در فرانسه با دوستان روبوسی می‌کنند.
@@ -193,7 +193,7 @@ En Iran, on mange beaucoup de fruits [secs]. | در ایران خشکبار زی
 # végétarien
 Ma sœur est [végétarienne], comme ma mère. | خواهرم مثل مادرم گیاه‌خوار است.
 Vous avez un plat [végétarien] ? | غذای گیاهی دارید؟
-Je ne mange pas de viande, je suis [végétarien]. | گوشت نمی‌خورم، گیاه‌خوارم.
+Je ne mange pas de viande, je suis [végétarien]. | گوشت نمی‌خورم، گیاه‌خوارم. | ok: végétarienne
 Ce restaurant a un menu [végétarien]. | این رستوران منوی گیاهی دارد.
 Mes amis sont [végétariens] depuis deux ans. | دوستانم دو سال است که گیاه‌خوارند.
 La soupe est [végétarienne] ? Il n'y a pas de poulet ? | سوپ گیاهی است؟ مرغ ندارد؟

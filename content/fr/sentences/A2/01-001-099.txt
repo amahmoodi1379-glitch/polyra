@@ -145,7 +145,7 @@ J'ai [presque] fini mon travail. | کارم تقریباً تمام شده. | d:
 Nous sommes [presque] arrivés. | تقریباً رسیدیم.
 Elle va [presque] tous les jours à la piscine. | او تقریباً هر روز به استخر می‌رود.
 Mon fils est [presque] aussi grand que moi. | پسرم تقریباً هم‌قد من است.
-Ce pull coûte [presque] cent euros. | این پلیور تقریباً صد یورو قیمت دارد.
+Ce pull coûte [presque] cent euros. | این پلیور تقریباً صد یورو قیمت دارد. | ok: environ
 # environ
 Il y a [environ] trente élèves dans la classe. | حدود سی شاگرد در کلاس هست. | d: toujours, souvent, beaucoup
 La gare est à [environ] dix minutes à pied. | ایستگاه حدود ده دقیقه پیاده راه است.
@@ -305,7 +305,7 @@ Le magasin est ouvert tous les jours [sauf] le dimanche. | مغازه هر رو�
 Tout le monde est là [sauf] Paul. | همه اینجا هستند، به جز پل. | d: avec, pour, entre
 J'aime tous les légumes [sauf] les tomates. | همهٔ سبزی‌ها را دوست دارم، به جز گوجه‌فرنگی. | d: avec, pour, entre
 Mon frère mange tout [sauf] le poisson. | برادرم همه چیز می‌خورد، به جز ماهی. | d: avec, pour, entre
-Toute la famille vient, [sauf] mon oncle. | همهٔ خانواده می‌آیند، به جز عمویم. | d: avec, pour, entre
+Toute la famille vient, [sauf] mon oncle. | همهٔ خانواده می‌آیند، به جز عمویم. | d: avec, pour, entre | ok: à part
 Tous les élèves ont compris, [sauf] moi. | همهٔ شاگردها فهمیدند، به جز من. | d: avec, pour, entre
 # à cause de
 Le train est en retard [à cause de] la neige. | قطار به خاطر برف تأخیر دارد.
@@ -365,7 +365,7 @@ Pourquoi tes livres sont [par terre] ? | چرا کتاب‌هایت روی زم�
 Chez ma grand-mère, nous mangeons [par terre]. | خانهٔ مادربزرگم روی زمین غذا می‌خوریم.
 # n'est-ce pas
 Tu viens ce soir, [n'est-ce pas] ? | امشب می‌آیی، مگر نه؟ | d: même, surtout, voilà
-Il fait beau aujourd'hui, [n'est-ce pas] ? | امروز هوا خوب است، نه؟ | d: surtout, voilà, même
+Il fait beau aujourd'hui, [n'est-ce pas] ? | امروز هوا خوب است، نه؟ | d: surtout, voilà, même | ok: non
 Vous êtes français, [n'est-ce pas] ? | شما فرانسوی هستید، این‌طور نیست؟ | d: voilà, même, surtout
 C'est ton frère, [n'est-ce pas] ? | این برادرت است، مگر نه؟ | d: même, voilà, surtout
 Le musée est ouvert le lundi, [n'est-ce pas] ? | موزه دوشنبه‌ها باز است، این‌طور نیست؟ | d: surtout, même, voilà
@@ -613,7 +613,7 @@ Ce soir, je [prépare] le dîner. | امشب من شام درست می‌کنم.
 Tu [prépares] ta valise ? | چمدانت را می‌بندی؟
 Ma mère [prépare] un gâteau pour la fête. | مادرم برای جشن یک کیک درست می‌کند.
 Nous [préparons] le voyage ensemble. | با هم سفر را آماده می‌کنیم.
-Elle a [préparé] du thé pour tout le monde. | او برای همه چای درست کرد.
+Elle a [préparé] du thé pour tout le monde. | او برای همه چای درست کرد. | ok: fait
 Vous [préparez] le petit-déjeuner ? | شما صبحانه را آماده می‌کنید؟
 # décider
 Nous [décidons] de partir demain. | تصمیم می‌گیریم فردا برویم.

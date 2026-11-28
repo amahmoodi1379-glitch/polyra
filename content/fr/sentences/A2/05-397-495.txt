@@ -491,12 +491,12 @@ Je préfère cette [marque] de café. | من این مارک قهوه را تر�
 Les grandes [marques] sont dans le centre commercial. | مارک‌های معروف در مرکز خرید هستند.
 Quelle est ta [marque] préférée ? | مارک مورد علاقه‌ات چیست؟
 # liste
-J'écris la [liste] des courses. | فهرست خرید را می‌نویسم.
+J'écris la [liste] des{des-contr} courses. | فهرست خرید را می‌نویسم.
 Tu as la [liste] ? On va au supermarché. | فهرست را داری؟ داریم می‌رویم سوپرمارکت.
 Ton nom est sur la [liste]. | اسمت توی فهرست است.
-Le professeur lit la [liste] des élèves. | معلم فهرست دانش‌آموزان را می‌خواند.
+Le professeur lit la [liste] des{des-contr} élèves. | معلم فهرست دانش‌آموزان را می‌خواند.
 J'ai une longue [liste] de choses à faire. | یک فهرست طولانی از کارهایی که باید انجام بدهم دارم.
-Voici la [liste] des invités pour la fête. | این هم فهرست مهمان‌های جشن.
+Voici la [liste] des{des-contr} invités pour la fête. | این هم فهرست مهمان‌های جشن.
 # paquet
 J'achète un [paquet] de biscuits. | یک بسته بیسکویت می‌خرم.
 Il y a un [paquet] pour toi sur la table. | روی میز یک بسته برای توست.

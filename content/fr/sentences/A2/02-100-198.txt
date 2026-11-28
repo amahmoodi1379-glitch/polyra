@@ -1,11 +1,11 @@
 // French A2, card words 100–198 (life and feelings, everyday actions, abstract nouns, describing things).
 # naître
-Je suis [née] à Téhéran. | من در تهران به دنیا آمده‌ام.
+Je suis [née] à Téhéran. | من در تهران به دنیا آمده‌ام. | ok: né
 Mon fils est [né] au mois de mars. | پسرم در ماه مارس به دنیا آمد.
 Le bébé de ma sœur est [né] hier soir. | بچهٔ خواهرم دیشب به دنیا آمد.
 Mes parents sont [nés] dans un petit village. | پدر و مادرم در یک روستای کوچک به دنیا آمده‌اند.
 Ma grand-mère est [née] en hiver. | مادربزرگم زمستان به دنیا آمده.
-Où est-ce que tu es [né] ? | تو کجا به دنیا آمده‌ای؟
+Où est-ce que tu es [né] ? | تو کجا به دنیا آمده‌ای؟ | ok: née
 Le bébé va [naître] au mois de mai. | بچه ماه مه به دنیا می‌آید.
 # mourir
 Sans eau, les fleurs [meurent]. | گل‌ها بدون آب می‌میرند.
@@ -310,7 +310,7 @@ Le sport fait [partie] de ma vie. | ورزش بخشی از زندگی من اس�
 Le film a deux [parties]. | فیلم دو قسمت دارد. | d: chances, vies, raisons
 Je passe une grande [partie] de mon temps au travail. | بخش بزرگی از وقتم را سر کار می‌گذرانم.
 # type
-Quel [type] de musique est-ce que tu aimes ? | چه نوع موسیقی‌ای دوست داری؟
+Quel [type] de musique est-ce que tu aimes ? | چه نوع موسیقی‌ای دوست داری؟ | ok: genre
 Ce [type] de chaussures est très cher. | این نوع کفش خیلی گران است.
 Il y a deux [types] de chambres dans cet hôtel. | این هتل دو نوع اتاق دارد.
 Ce n'est pas mon [type] de film. | این جور فیلم‌ها به سلیقهٔ من نیست.
@@ -394,17 +394,17 @@ Après la guerre, c'est enfin la [paix]. | بعد از جنگ، بالاخره �
 Les enfants dorment, on a enfin la [paix] ! | بچه‌ها خوابیده‌اند، بالاخره آرامش داریم!
 Nous voulons vivre en [paix]. | می‌خواهیم در صلح زندگی کنیم.
 # sûr
-Tu es [sûr] ? | مطمئنی؟
-Je suis [sûre] qu'elle va venir. | مطمئنم که او می‌آید.
+Tu es [sûr] ? | مطمئنی؟ | ok: sûre
+Je suis [sûre] qu'elle va venir. | مطمئنم که او می‌آید. | ok: sûr
 Ils ne sont pas [sûrs] de l'heure. | از ساعتش مطمئن نیستند.
-Vous êtes [sûr] de votre réponse ? | از جوابتان مطمئنید؟
+Vous êtes [sûr] de votre réponse ? | از جوابتان مطمئنید؟ | ok: sûre
 C'est [sûr], il va pleuvoir. | حتماً باران می‌آید. | d: fatigué, désolé, content
-Nous sommes [sûrs] de gagner le match ! | مطمئنیم که مسابقه را می‌بریم! | d: désolés, fatigués, tristes
+Nous sommes [sûrs] de gagner le match ! | مطمئنیم که مسابقه را می‌بریم! | d: désolés, fatigués, tristes | ok: sûres
 # prêt
-Tu es [prêt] ? On part ! | آماده‌ای؟ راه می‌افتیم!
+Tu es [prêt] ? On part ! | آماده‌ای؟ راه می‌افتیم! | ok: prête
 Le dîner est [prêt] ! | شام آماده است! | d: grand, facile, autre
 Les enfants sont [prêts] pour l'école. | بچه‌ها برای مدرسه آماده‌اند.
-Je ne suis pas [prête], attends deux minutes. | آماده نیستم، دو دقیقه صبر کن.
+Je ne suis pas [prête], attends deux minutes. | آماده نیستم، دو دقیقه صبر کن. | ok: prêt
 Nos valises sont [prêtes] pour le voyage. | چمدان‌هایمان برای سفر آماده‌اند.
 Vous êtes [prêts] à commander ? | آمادهٔ سفارش دادن هستید؟
 # possible
@@ -440,7 +440,7 @@ Mes deux sœurs sont très [différentes]. | دو خواهرم خیلی با ه�
 C'est [différent] en France. | در فرانسه فرق می‌کند. | d: joli, grand, rapide
 Nous avons des idées [différentes]. | ما ایده‌های متفاوتی داریم.
 Ce restaurant est [différent] des{des-contr} autres. | این رستوران با بقیه فرق دارد.
-Tu as l'air [différent] aujourd'hui. | امروز یک‌جور دیگری به نظر می‌رسی.
+Tu as l'air [différent] aujourd'hui. | امروز یک‌جور دیگری به نظر می‌رسی. | ok: différente
 Chaque jour est [différent]. | هر روز با روز دیگر فرق دارد.
 # pareil
 Nos deux voitures sont [pareilles]. | دو ماشین ما مثل هم‌اند.
@@ -462,7 +462,7 @@ Ce café est trop [fort]. | این قهوه خیلی غلیظ است.
 Elle est [forte] en français. | او در فرانسه قوی است.
 Il y a un vent très [fort] aujourd'hui. | امروز باد خیلی شدیدی می‌وزد.
 Les enfants sont [forts], ils portent les valises. | بچه‌ها قوی‌اند، چمدان‌ها را می‌برند.
-Tu es plus [fort] que moi. | تو از من قوی‌تری. | d: propre, sale, libre
+Tu es plus [fort] que moi. | تو از من قوی‌تری. | d: propre, sale, libre | ok: forte
 # faible
 Je me sens [faible] aujourd'hui. | امروز احساس ضعف می‌کنم.
 Le malade est encore [faible]. | بیمار هنوز ضعیف است.
@@ -471,7 +471,7 @@ Je suis [faible] en anglais. | در انگلیسی ضعیفم.
 Ma grand-mère est vieille et [faible]. | مادربزرگم پیر و ضعیف است.
 Mes yeux sont [faibles], je porte des lunettes. | چشم‌هایم ضعیف است، عینک می‌زنم.
 # fou
-Tu es [fou] ! Il fait trop froid pour nager. | دیوانه‌ای! هوا برای شنا خیلی سرد است.
+Tu es [fou] ! Il fait trop froid pour nager. | دیوانه‌ای! هوا برای شنا خیلی سرد است. | ok: folle
 Cette musique me rend [folle]. | این موسیقی دیوانه‌ام می‌کند.
 Il y a un monde [fou] au marché ! | بازار خیلی شلوغ است!
 Mon fils est [fou] de football. | پسرم دیوانهٔ فوتبال است.
@@ -537,13 +537,13 @@ J'aime le soleil [doux] du{du-contr} matin. | آفتاب ملایم صبح را 
 Le poisson est encore [vivant] ! | ماهی هنوز زنده است!
 Ses grands-parents sont toujours [vivants]. | پدربزرگ و مادربزرگش هنوز زنده‌اند. | d: iraniens, allemands, français
 Je veux voir des animaux [vivants], pas des photos ! | می‌خواهم حیوان زنده ببینم، نه عکس!
-Je suis [vivante], tout va bien ! | زنده‌ام، همه‌چیز خوب است! | d: française, anglaise, allemande
+Je suis [vivante], tout va bien ! | زنده‌ام، همه‌چیز خوب است! | d: française, anglaise, allemande | ok: vivant
 L'oiseau est tombé, mais il est [vivant]. | پرنده افتاد، ولی زنده است.
 Dans ce lac, il n'y a pas de poisson [vivant]. | در این دریاچه ماهی زنده‌ای نیست.
 # mort
 Le poisson est [mort]. | ماهی مرده است.
 Ces fleurs sont [mortes], tu peux les jeter. | این گل‌ها خشک شده‌اند، می‌توانی دورشان بیندازی.
-Je suis [mort] ! Je vais au lit. | از خستگی مُردم! می‌روم بخوابم.
+Je suis [mort] ! Je vais au lit. | از خستگی مُردم! می‌روم بخوابم. | ok: morte
 La ville est [morte] le dimanche. | شهر یکشنبه‌ها مرده است.
 Mon téléphone est [mort]. | گوشی‌ام خاموش شده.
 Il y a un oiseau [mort] dans le jardin. | توی باغ یک پرندهٔ مرده هست.
@@ -591,20 +591,20 @@ Il pleut, mais [ce n'est pas grave] : on reste à la maison. | باران می�
 Le médecin dit que [ce n'est pas grave]. | دکتر می‌گوید چیز مهمی نیست. | d: faire attention, dire la vérité, avoir raison
 # sérieux
 C'est un élève très [sérieux]. | او دانش‌آموز خیلی جدی‌ای است.
-Tu es [sérieux] ? | جدی می‌گویی؟
+Tu es [sérieux] ? | جدی می‌گویی؟ | ok: sérieuse
 Ma sœur est très [sérieuse] au travail. | خواهرم سر کار خیلی جدی است.
-Sois [sérieux], s'il te plaît ! | لطفاً جدی باش!
-Vous êtes [sérieuse] ? C'est trop cher ! | جدی می‌گویید؟ خیلی گران است!
+Sois [sérieux], s'il te plaît ! | لطفاً جدی باش! | ok: sérieuse
+Vous êtes [sérieuse] ? C'est trop cher ! | جدی می‌گویید؟ خیلی گران است! | ok: sérieux
 Mes parents sont des gens [sérieux]. | پدر و مادرم آدم‌های جدی‌ای هستند.
 # parfait
 Ton français est [parfait] ! | فرانسوی‌ات بی‌نقص است!
 Cette robe est [parfaite] pour la fête. | این لباس برای جشن عالی است.
-Tu n'es pas [parfait], et moi non plus. | تو بی‌نقص نیستی، من هم نیستم.
+Tu n'es pas [parfait], et moi non plus. | تو بی‌نقص نیستی، من هم نیستم. | ok: parfaite
 Le temps est [parfait] pour la plage. | هوا برای ساحل عالی است.
 Elle parle un anglais [parfait]. | او انگلیسی را بی‌نقص حرف می‌زند.
 Ce n'est pas [parfait], mais c'est bien. | بی‌نقص نیست، اما خوب است.
 # génial
-C'est [génial] ! | محشر است! | d: long, seul, faible
+Tu viens avec nous ? C'est [génial] ! | با ما می‌آیی؟ محشر است! | d: long, seul, faible | ok: super
 Ton idée est [géniale] ! | ایده‌ات محشر است!
 On a passé une soirée [géniale]. | یک شب فوق‌العاده گذراندیم.
 Mes nouveaux voisins sont [géniaux]. | همسایه‌های جدیدم فوق‌العاده‌اند.

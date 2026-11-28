@@ -40,14 +40,14 @@ Ma mère est [occupée] : elle travaille. | مادرم مشغول است: دار
 Pardon, cette chaise est [occupée] ? | ببخشید، این صندلی اشغال است؟ | ok: prise
 Attends, les toilettes sont [occupées]. | صبر کن، دستشویی اشغال است.
 Le téléphone de Paul est toujours [occupé]. | تلفن پل همیشه اشغال است.
-Nous sommes [occupés] tout le week-end. | ما تمام آخر هفته گرفتاریم.
+Nous sommes [occupés] tout le week-end. | ما تمام آخر هفته گرفتاریم. | ok: occupées
 # pressé
-Je suis [pressé] : mon train part à huit heures. | عجله دارم: قطارم ساعت هشت حرکت می‌کند.
-Excusez-moi, je suis très [pressée]. | ببخشید، خیلی عجله دارم.
+Je suis [pressé] : mon train part à huit heures. | عجله دارم: قطارم ساعت هشت حرکت می‌کند. | ok: pressée
+Excusez-moi, je suis très [pressée]. | ببخشید، خیلی عجله دارم. | ok: pressé
 Le matin, tout le monde est [pressé]. | صبح‌ها همه عجله دارند.
-Tu es [pressé] ? On prend un café ? | عجله داری؟ یک قهوه بخوریم؟ | d: prochain, demi, cher
+Tu es [pressé] ? On prend un café ? | عجله داری؟ یک قهوه بخوریم؟ | d: prochain, demi, cher | ok: pressée
 Les gens sont toujours [pressés] dans le métro. | مردم در مترو همیشه عجله دارند.
-Pourquoi tu es si [pressée] ce matin ? | چرا امروز صبح این‌قدر عجله داری؟
+Pourquoi tu es si [pressée] ce matin ? | چرا امروز صبح این‌قدر عجله داری؟ | ok: pressé
 # dame
 Une [dame] attend le bus devant la poste. | یک خانم جلوی ادارهٔ پست منتظر اتوبوس است. | ok: femme
 La [dame] à côté de moi parle anglais. | خانمِ کنار من انگلیسی حرف می‌زند. | ok: femme | d: nationalité, voix, porte
@@ -247,44 +247,44 @@ Mon frère est [timide] : il ne parle pas en classe. | برادرم خجالتی
 # curieux
 Les enfants sont très [curieux]. | بچه‌ها خیلی کنجکاوند.
 Ma fille est [curieuse] : elle pose beaucoup de questions. | دخترم کنجکاو است: خیلی سؤال می‌پرسد.
-Je suis [curieux] de voir ce film. | کنجکاوم این فیلم را ببینم.
-Ne sois pas si [curieux] ! | این‌قدر کنجکاو نباش!
+Je suis [curieux] de voir ce film. | کنجکاوم این فیلم را ببینم. | ok: curieuse
+Ne sois pas si [curieux] ! | این‌قدر کنجکاو نباش! | ok: curieuse
 Le chat est [curieux], il regarde partout. | گربه کنجکاو است، همه‌جا را نگاه می‌کند.
 Mon grand-père est [curieux] : il lit beaucoup de journaux. | پدربزرگم کنجکاو است: روزنامه‌های زیادی می‌خواند.
 # méchant
 Dans le film, le roi est très [méchant]. | در فیلم، پادشاه خیلی بدجنس است.
 Le chat de mon voisin est très [méchant]. | گربهٔ همسایه‌ام خیلی بدجنس است.
-Ne sois pas [méchant] avec ta sœur ! | با خواهرت بدجنسی نکن!
-Pourquoi tu es si [méchante] avec moi ? | چرا با من این‌قدر بدجنسی؟
+Ne sois pas [méchant] avec ta sœur ! | با خواهرت بدجنسی نکن! | ok: méchante
+Pourquoi tu es si [méchante] avec moi ? | چرا با من این‌قدر بدجنسی؟ | ok: méchant
 Les enfants n'aiment pas les gens [méchants]. | بچه‌ها آدم‌های بدجنس را دوست ندارند.
 Dans cette histoire, la reine est [méchante]. | در این قصه، ملکه بدجنس است.
 # poli
 Votre fils est très [poli]. | پسرتان خیلی مؤدب است.
-Sois [poli] : dis bonjour à la dame. | مؤدب باش: به خانم سلام کن. | d: jeune, fou, blond
+Sois [poli] : dis bonjour à la dame. | مؤدب باش: به خانم سلام کن. | d: jeune, fou, blond | ok: polie
 Les élèves de cette classe sont [polis]. | دانش‌آموزان این کلاس مؤدب‌اند.
 Ce n'est pas [poli] de parler au téléphone pendant le repas. | موقع غذا با تلفن حرف زدن مؤدبانه نیست.
 La vendeuse est toujours [polie] et gentille. | فروشنده همیشه مؤدب و مهربان است.
 Dire « merci », c'est [poli]. | «ممنون» گفتن مؤدبانه است.
 # patient
 Les professeurs doivent être [patients]. | معلم‌ها باید صبور باشند.
-Sois [patient], le bus arrive bientôt. | صبور باش، اتوبوس به‌زودی می‌رسد.
+Sois [patient], le bus arrive bientôt. | صبور باش، اتوبوس به‌زودی می‌رسد. | ok: patiente
 Ma mère est très [patiente] avec les enfants. | مادرم با بچه‌ها خیلی صبور است.
-Je ne suis pas [patient] quand j'attends. | وقتی منتظر می‌مانم، صبور نیستم.
+Je ne suis pas [patient] quand j'attends. | وقتی منتظر می‌مانم، صبور نیستم. | ok: patiente
 Il faut être [patient] pour apprendre une langue. | برای یاد گرفتن یک زبان باید صبور بود.
-Merci, vous êtes très [patiente] ! | ممنون، شما خیلی صبورید!
+Merci, vous êtes très [patiente] ! | ممنون، شما خیلی صبورید! | ok: patient
 # paresseux
-Le dimanche, je suis un peu [paresseux]. | یکشنبه‌ها کمی تنبلم.
+Le dimanche, je suis un peu [paresseux]. | یکشنبه‌ها کمی تنبلم. | ok: paresseuse
 Mon frère est [paresseux] : il dort jusqu'à midi. | برادرم تنبل است: تا ظهر می‌خوابد.
 Les élèves [paresseux] ne font pas leurs exercices. | دانش‌آموزان تنبل تمرین‌هایشان را انجام نمی‌دهند.
 Ma sœur n'est pas [paresseuse], elle travaille beaucoup. | خواهرم تنبل نیست، خیلی کار می‌کند.
 Notre chat est très [paresseux]. | گربه‌مان خیلی تنبل است.
-Ne sois pas [paresseux], prends l'escalier ! | تنبل نباش، از پله‌ها برو!
+Ne sois pas [paresseux], prends l'escalier ! | تنبل نباش، از پله‌ها برو! | ok: paresseuse
 # courageux
 Les policiers sont très [courageux]. | پلیس‌ها خیلی شجاع‌اند.
 Ma fille est très [courageuse] chez le médecin. | دخترم پیش دکتر خیلی شجاع است.
 C'est un garçon [courageux]. | او پسر شجاعی است.
 Il faut être [courageux] pour dire la vérité. | برای گفتن حقیقت باید شجاع بود.
-Tu es [courageux] : tu n'as pas peur du{du-contr} chien. | تو شجاعی: از سگ نمی‌ترسی.
+Tu es [courageux] : tu n'as pas peur du{du-contr} chien. | تو شجاعی: از سگ نمی‌ترسی. | ok: courageuse
 Les femmes de ce village sont très [courageuses]. | زن‌های این روستا خیلی شجاع‌اند.
 # mignon
 Ton bébé est très [mignon] ! | بچه‌ات خیلی ناز است!
@@ -304,9 +304,9 @@ Mon chien n'est pas [laid], il est mignon ! | سگم زشت نیست، ناز ا
 Mon père est très [sportif] : il court tous les jours. | پدرم خیلی اهل ورزش است: هر روز می‌دود.
 Ma sœur n'est pas [sportive], elle préfère lire. | خواهرم اهل ورزش نیست، کتاب خواندن را ترجیح می‌دهد.
 Les élèves de cette école sont très [sportifs]. | دانش‌آموزان این مدرسه خیلی اهل ورزش‌اند.
-Tu es [sportif] ? Tu fais quel sport ? | اهل ورزشی؟ چه ورزشی می‌کنی؟
+Tu es [sportif] ? Tu fais quel sport ? | اهل ورزشی؟ چه ورزشی می‌کنی؟ | ok: sportive
 C'est une femme [sportive] : elle nage et elle court. | او زن ورزشکاری است: شنا می‌کند و می‌دود.
-Nous ne sommes pas très [sportifs]. | ما خیلی اهل ورزش نیستیم.
+Nous ne sommes pas très [sportifs]. | ما خیلی اهل ورزش نیستیم. | ok: sportives
 # roux
 Ma cousine a les cheveux [roux]. | دخترخاله‌ام موهای حنایی دارد.
 Le petit garçon [roux], c'est mon fils. | آن پسر کوچولوی موقرمز پسر من است.
