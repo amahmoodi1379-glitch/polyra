@@ -1,0 +1,31 @@
+code: fr-a2-t057
+title: Tu as la liste ?
+band: 1
+kind: dialogue
+sentences:
+A: Tu as la liste ? | لیست را داری؟
+B: Oui : du lait, un paquet de café et une boîte de thé. | آره: شیر، یک بسته قهوه و یک قوطی چای.
+A: On prend combien de lait ? | چقدر شیر بخریم؟
+B: Deux litres. | دو لیتر.
+A: Regarde, il y a une réduction sur ce café ! | نگاه کن، این قهوه تخفیف دارد!
+B: Oui, mais je n'aime pas cette marque. | آره، ولی این مارک را دوست ندارم.
+A: Mais il est deux fois moins cher ! | ولی نصف قیمت است!
+B: Bon, d'accord. On essaie. | خب، باشد. امتحانش می‌کنیم.
+reading A:
+{"type":"mcq","prompt":"این دو نفر کجا هستند؟","options":["در یک رستوران","در خانه","در یک فروشگاه","در یک کافه"],"correct":2,"explanation_fa":"آن‌ها با لیست خرید هستند و زن می‌گوید: «Regarde, il y a une réduction sur ce café !»، یعنی نگاه کن، این قهوه تخفیف دارد."}
+{"type":"tf","prompt":"روی لیست چای هست.","correct":true,"explanation_fa":"مرد می‌گوید: «une boîte de thé»، یعنی یک قوطی چای روی لیست هست."}
+{"type":"tf","prompt":"مرد مارک این قهوه را دوست دارد.","correct":false,"explanation_fa":"مرد می‌گوید: «je n'aime pas cette marque»، یعنی این مارک را دوست ندارم."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید چقدر شیر می‌خرند؟","correct_sentence":3,"explanation_fa":"مرد می‌گوید: «Deux litres.»، یعنی دو لیتر."}
+{"type":"match","prompt":"هر چیز را به اندازه‌اش روی لیست وصل کن.","left":["شیر","چای","قهوه"],"right":["دو لیتر","یک قوطی","یک بسته","یک کیلو"],"pairs":[[0,0],[1,1],[2,2]],"explanation_fa":"مرد می‌گوید: «un paquet de café et une boîte de thé» و بعد دربارهٔ شیر: «Deux litres.»"}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["مرد می‌گوید این مارک را دوست ندارد.","زن دربارهٔ لیست می‌پرسد.","زن تخفیف قهوه را نشان می‌دهد.","مرد می‌گوید چقدر شیر بخرند."],"correct_order":[1,3,2,0],"explanation_fa":"اول «Tu as la liste ?»، بعد «Deux litres.»، بعد «il y a une réduction sur ce café» و بعد «je n'aime pas cette marque»."}
+listening A:
+{"type":"num","prompt":"چند لیتر شیر می‌خرند؟","answer":"2","accepted":["2","deux"],"explanation_fa":"مرد می‌گوید: «Deux litres.»، یعنی دو لیتر."}
+{"type":"mcq","prompt":"زن چرا این قهوه را می‌خواهد؟","options":["چون مارکش را دوست دارد","چون نصف قیمت است","چون بسته‌اش بزرگ‌تر است","چون بچه‌ها دوستش دارند"],"correct":1,"explanation_fa":"زن می‌گوید: «il est deux fois moins cher !»، یعنی نصف قیمت است."}
+{"type":"tf","prompt":"آخرش قهوهٔ تخفیف‌دار را امتحان می‌کنند.","correct":true,"explanation_fa":"مرد آخر گفتگو می‌گوید: «Bon, d'accord. On essaie.»، یعنی خب، امتحانش می‌کنیم."}
+{"type":"tf","prompt":"زن می‌گوید این قهوه گران‌تر است.","correct":false,"explanation_fa":"زن می‌گوید: «il est deux fois moins cher !»، یعنی ارزان‌تر است، نصف قیمت."}
+listening B:
+{"type":"dict","sentence":5}
+{"type":"mcq","prompt":"روی لیست چه چیزهایی هست؟","options":["شیر، شکر و چای","قهوه، تخم‌مرغ و شیر","چای، قهوه و بیسکویت","شیر، قهوه و چای"],"correct":3,"explanation_fa":"مرد می‌گوید: «du lait, un paquet de café et une boîte de thé»، یعنی شیر، قهوه و چای."}
+{"type":"tf","prompt":"قهوهٔ تخفیف‌دار ارزان‌تر است.","correct":true,"explanation_fa":"زن می‌گوید: «il y a une réduction sur ce café» و «il est deux fois moins cher»."}
+{"type":"tf","prompt":"آن‌ها سه لیتر شیر می‌خرند.","correct":false,"explanation_fa":"مرد می‌گوید: «Deux litres.»، یعنی دو لیتر شیر می‌خرند."}

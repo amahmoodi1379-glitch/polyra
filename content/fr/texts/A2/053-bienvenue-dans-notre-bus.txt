@@ -1,0 +1,30 @@
+code: fr-a2-t053
+title: Bienvenue dans notre bus
+band: 1
+kind: announcement
+sentences:
+- Bienvenue dans notre bus ! | به اتوبوس ما خوش آمدید!
+- À droite, voici le vieux théâtre. | سمت راست، این تئاتر قدیمی است.
+- À gauche, c'est le stade : ce soir, il y a un match de football. | سمت چپ ورزشگاه است: امشب یک مسابقهٔ فوتبال هست.
+- Dans dix minutes, nous arrivons au château. | ده دقیقهٔ دیگر به قلعه می‌رسیم.
+- Vous avez une heure pour le visiter. | یک ساعت وقت دارید که از آن دیدن کنید.
+- Ensuite, nous allons au centre commercial, avec ses boutiques et sa grande librairie. | بعد به مرکز خرید می‌رویم، با مغازه‌هایش و کتاب‌فروشی بزرگش.
+- Attention : le bus part à 16 heures ! | توجه کنید: اتوبوس ساعت ۱۶ حرکت می‌کند! | tts: Attention : le bus part à seize heures !
+reading A:
+{"type":"mcq","prompt":"این اعلام کجا پخش می‌شود؟","options":["در یک قطار","در یک کشتی","در یک هواپیما","در یک اتوبوس"],"correct":3,"explanation_fa":"در اعلام آمده: «Bienvenue dans notre bus !»، یعنی به اتوبوس ما خوش آمدید."}
+{"type":"tf","prompt":"مسافرها دو ساعت برای دیدن قلعه وقت دارند.","correct":false,"explanation_fa":"در اعلام آمده: «Vous avez une heure pour le visiter.»، یعنی یک ساعت وقت دارند."}
+{"type":"tf","prompt":"امشب در ورزشگاه یک مسابقهٔ فوتبال هست.","correct":true,"explanation_fa":"در اعلام آمده: «c'est le stade : ce soir, il y a un match de football»."}
+reading B:
+{"type":"match","prompt":"هر طرف را به چیزی که آنجا دیده می‌شود وصل کن.","left":["سمت راست","سمت چپ"],"right":["تئاتر قدیمی","ورزشگاه","کتاب‌فروشی"],"pairs":[[0,0],[1,1]],"explanation_fa":"در اعلام آمده: «À droite, voici le vieux théâtre.» و «À gauche, c'est le stade»."}
+{"type":"find","prompt":"کدام جمله می‌گوید اتوبوس ساعت چند حرکت می‌کند؟","correct_sentence":6,"explanation_fa":"در اعلام آمده: «le bus part à 16 heures !»، یعنی اتوبوس ساعت ۱۶ حرکت می‌کند."}
+{"type":"order","prompt":"این‌ها را به ترتیب اعلام بچین.","items":["مرکز خرید","تئاتر","قلعه","ورزشگاه"],"correct_order":[1,3,2,0],"explanation_fa":"اول «le vieux théâtre»، بعد «le stade»، بعد «le château» و آخر «le centre commercial»."}
+listening A:
+{"type":"num","prompt":"اتوبوس ساعت چند حرکت می‌کند؟","answer":"16","accepted":["16","16h","16:00","4","seize"],"explanation_fa":"می‌شنویم: «le bus part à 16 heures !»، یعنی ساعت شانزده."}
+{"type":"mcq","prompt":"چند دقیقهٔ دیگر به قلعه می‌رسند؟","options":["پنج دقیقه","ده دقیقه","پانزده دقیقه","بیست دقیقه"],"correct":1,"explanation_fa":"می‌شنویم: «Dans dix minutes, nous arrivons au château.»، یعنی ده دقیقهٔ دیگر."}
+{"type":"tf","prompt":"در مرکز خرید یک کتاب‌فروشی بزرگ هست.","correct":true,"explanation_fa":"می‌شنویم: «le centre commercial, avec ses boutiques et sa grande librairie»."}
+{"type":"tf","prompt":"تئاتر سمت چپ اتوبوس است.","correct":false,"explanation_fa":"می‌شنویم: «À droite, voici le vieux théâtre.»، یعنی تئاتر سمت راست است."}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"mcq","prompt":"بعد از قلعه کجا می‌روند؟","options":["به ورزشگاه","به تئاتر","به مرکز خرید","به باغ‌وحش"],"correct":2,"explanation_fa":"می‌شنویم: «Ensuite, nous allons au centre commercial»، یعنی بعد به مرکز خرید می‌رویم."}
+{"type":"tf","prompt":"تئاتر شهر نوساز است.","correct":false,"explanation_fa":"می‌شنویم: «le vieux théâtre»، یعنی تئاتر قدیمی است."}
+{"type":"tf","prompt":"مسافرها یک ساعت در قلعه وقت دارند.","correct":true,"explanation_fa":"می‌شنویم: «Vous avez une heure pour le visiter.»، یعنی یک ساعت وقت دارید."}

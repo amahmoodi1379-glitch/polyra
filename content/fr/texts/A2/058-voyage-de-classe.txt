@@ -1,0 +1,36 @@
+code: fr-a2-t058
+title: Voyage de classe à Marseille
+band: 2
+kind: schedule
+sentences:
+- Voyage{voyage} de la classe de madame Dubois à Marseille | سفر کلاس خانم دوبوا به مارسی
+- Lundi, 7 heures : rendez-vous devant l'école. | دوشنبه، ساعت ۷: قرار جلوی مدرسه. | tts: Lundi, sept heures : rendez-vous devant l'école.
+- Le bus fait 300 kilomètres : nous arrivons à Marseille vers 11 heures. | اتوبوس ۳۰۰ کیلومتر راه می‌رود: حدود ساعت ۱۱ به مارسی می‌رسیم. | tts: Le bus fait trois cents kilomètres : nous arrivons à Marseille vers onze heures.
+- Lundi après-midi : nous visitons le port et la vieille ville. | دوشنبه بعدازظهر: از بندر و شهر قدیمی دیدن می‌کنیم.
+- Mardi : le musée le matin, la plage l'après-midi. | سه‌شنبه: صبح موزه، بعدازظهر ساحل.
+- Mercredi matin : nous visitons une usine de savon. | چهارشنبه صبح: از یک کارخانهٔ صابون‌سازی دیدن می‌کنیم.
+- Nous rentrons à l'école mercredi soir, vers 19 heures. | چهارشنبه شب، حدود ساعت ۱۹، به مدرسه برمی‌گردیم. | tts: Nous rentrons à l'école mercredi soir, vers dix-neuf heures.
+- Le voyage ne coûte pas cher : 120 euros par élève, avec l'hôtel et les repas. | سفر گران نیست: برای هر دانش‌آموز ۱۲۰ یورو، با هتل و غذا. | tts: Le voyage ne coûte pas cher : cent vingt euros par élève, avec l'hôtel et les repas.
+- Pour les souvenirs{souvenir-2}, 20 euros, c'est assez : ne dépensez pas trop ! | برای سوغاتی ۲۰ یورو کافی است: زیاد خرج نکنید! | tts: Pour les souvenirs, vingt euros, c'est assez : ne dépensez pas trop !
+- Les élèves ne doivent pas emprunter d'argent à leurs amis. | دانش‌آموزها نباید از دوستانشان پول قرض بگیرند.
+- Pas de valise ? L'école prête{prêter} des sacs. | چمدان ندارید؟ مدرسه کیف قرض می‌دهد.
+reading A:
+{"type":"mcq","prompt":"این متن چیست؟","options":["آگهی یک هتل در مارسی","برنامهٔ سفر یک کلاس","برنامهٔ درسی یک هفته","فهرست سوغاتی‌های مارسی"],"correct":1,"explanation_fa":"عنوان متن «Voyage de la classe de madame Dubois à Marseille» است و بعد برنامهٔ هر روز آمده است."}
+{"type":"tf","prompt":"بچه‌ها سه‌شنبه بعدازظهر به ساحل می‌روند.","correct":true,"explanation_fa":"در برنامه آمده: «Mardi : le musée le matin, la plage l'après-midi.»، یعنی بعدازظهر ساحل."}
+{"type":"tf","prompt":"بچه‌ها دوشنبه از کارخانهٔ صابون‌سازی دیدن می‌کنند.","correct":false,"explanation_fa":"در برنامه آمده: «Mercredi matin : nous visitons une usine de savon.»، یعنی چهارشنبه صبح."}
+{"type":"find","prompt":"کدام جمله می‌گوید دانش‌آموزها نباید از دوستانشان پول قرض بگیرند؟","correct_sentence":9,"explanation_fa":"در برنامه آمده: «Les élèves ne doivent pas emprunter d'argent à leurs amis.»"}
+reading B:
+{"type":"match","prompt":"هر زمان را به جایی که بچه‌ها می‌روند وصل کن.","left":["دوشنبه بعدازظهر","سه‌شنبه صبح","چهارشنبه صبح"],"right":["بندر و شهر قدیمی","موزه","کارخانهٔ صابون‌سازی","ساحل"],"pairs":[[0,0],[1,1],[2,2]],"explanation_fa":"در برنامه آمده: «Lundi après-midi : … le port et la vieille ville»، «Mardi : le musée le matin» و «Mercredi matin : … une usine de savon»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Le voyage ne coûte pas {{1}} : 120 euros par élève, avec l'hôtel et les {{2}}.","bank":["cher","repas","souvenirs","valises","kilomètres"],"answers":["cher","repas"],"explanation_fa":"در برنامه آمده: «Le voyage ne coûte pas cher : 120 euros par élève, avec l'hôtel et les repas.»"}
+{"type":"mcq","prompt":"مدرسه برای بچه‌ای که چمدان ندارد چه کار می‌کند؟","options":["برایش چمدان نو می‌خرد","به او کیف قرض می‌دهد","به او بیست یورو می‌دهد","برایش سوغاتی می‌خرد"],"correct":1,"explanation_fa":"در برنامه آمده: «Pas de valise ? L'école prête des sacs.»، یعنی مدرسه کیف قرض می‌دهد."}
+{"type":"order","prompt":"این‌ها را به ترتیب برنامه بچین.","items":["دیدن کارخانهٔ صابون‌سازی","قرار جلوی مدرسه","دیدن موزه","دیدن بندر"],"correct_order":[1,3,2,0],"explanation_fa":"اول «rendez-vous devant l'école»، بعد «nous visitons le port»، بعد «le musée» و بعد «une usine de savon»."}
+listening A:
+{"type":"num","prompt":"راه مدرسه تا مارسی چند کیلومتر است؟","answer":"300","accepted":["300","trois cents"],"explanation_fa":"می‌شنویم: «Le bus fait 300 kilomètres»، یعنی سیصد کیلومتر."}
+{"type":"mcq","prompt":"دوشنبه ساعت چند جلوی مدرسه قرار دارند؟","options":["ساعت ۶","ساعت ۷","ساعت ۸","ساعت ۱۱"],"correct":1,"explanation_fa":"می‌شنویم: «Lundi, 7 heures : rendez-vous devant l'école.»، یعنی ساعت هفت."}
+{"type":"tf","prompt":"پول هتل و غذا در قیمت سفر هست.","correct":true,"explanation_fa":"می‌شنویم: «120 euros par élève, avec l'hôtel et les repas»، یعنی با هتل و غذا."}
+{"type":"tf","prompt":"برای سوغاتی پنجاه یورو لازم است.","correct":false,"explanation_fa":"می‌شنویم: «Pour les souvenirs, 20 euros, c'est assez»، یعنی بیست یورو کافی است."}
+listening B:
+{"type":"num","prompt":"قیمت سفر برای هر دانش‌آموز چند یورو است؟","answer":"120","accepted":["120","cent vingt"],"explanation_fa":"می‌شنویم: «120 euros par élève»، یعنی صد و بیست یورو."}
+{"type":"mcq","prompt":"بچه‌ها کی به مدرسه برمی‌گردند؟","options":["دوشنبه شب","سه‌شنبه شب","چهارشنبه شب","پنجشنبه صبح"],"correct":2,"explanation_fa":"می‌شنویم: «Nous rentrons à l'école mercredi soir»، یعنی چهارشنبه شب."}
+{"type":"tf","prompt":"این سفر گران است.","correct":false,"explanation_fa":"می‌شنویم: «Le voyage ne coûte pas cher»، یعنی سفر گران نیست."}
+{"type":"tf","prompt":"بچه‌ها سه‌شنبه صبح به موزه می‌روند.","correct":true,"explanation_fa":"می‌شنویم: «Mardi : le musée le matin»، یعنی سه‌شنبه صبح موزه."}

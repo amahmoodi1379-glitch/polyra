@@ -1,0 +1,36 @@
+code: fr-a2-t056
+title: Carte perdue
+band: 2
+kind: phone_call
+sentences:
+A: Banque du{du-contr} Centre, bonjour ! | بانک مرکز، سلام!
+B: Bonjour, madame. J'ai perdu ma carte de crédit ! | سلام خانم. کارت بانکی‌ام را گم کرده‌ام!
+A: Vous avez utilisé votre carte quand{quand}, la dernière fois ? | آخرین بار کی از کارتتان استفاده کردید؟
+B: Ce matin, au supermarché. J'ai payé à la caisse, et maintenant, je ne la trouve plus. | امروز صبح، در سوپرمارکت. سر صندوق پول دادم و حالا دیگر پیدایش نمی‌کنم.
+A: D'accord. C'est fait : maintenant, personne ne peut utiliser votre carte. | باشد. انجام شد: حالا هیچ‌کس نمی‌تواند از کارتتان استفاده کند.
+B: Merci. Et je reçois une nouvelle carte quand ? | ممنون. کارت تازه را کی می‌گیرم؟
+A: Dans cinq jours, par la poste. | پنج روز دیگر، با پست.
+B: Mais aujourd'hui, j'ai seulement un billet{billet-2} de 20 euros et un peu de monnaie ! | ولی امروز فقط یک اسکناس ۲۰ یورویی و کمی پول خرد دارم! | tts: Mais aujourd'hui, j'ai seulement un billet de vingt euros et un peu de monnaie !
+A: Pas de problème. Venez à la banque où vous avez ouvert votre compte, avec votre passeport. | مشکلی نیست. با گذرنامه‌تان به بانکی بیایید که در آن حساب باز کرده‌اید.
+A: On vous donne de l'argent là-bas. | آنجا به شما پول می‌دهند.
+B: Parfait, merci beaucoup, madame ! | عالی است، خیلی ممنون خانم!
+reading A:
+{"type":"mcq","prompt":"مرد چرا به بانک زنگ می‌زند؟","options":["می‌خواهد حساب تازه باز کند","پولش را در سوپرمارکت جا گذاشته است","گذرنامه‌اش را گم کرده است","کارت بانکی‌اش را گم کرده است"],"correct":3,"explanation_fa":"مرد می‌گوید: «J'ai perdu ma carte de crédit !»، یعنی کارت بانکی‌ام را گم کرده‌ام."}
+{"type":"tf","prompt":"مرد امروز صبح در سوپرمارکت با کارتش پول داد.","correct":true,"explanation_fa":"مرد می‌گوید: «Ce matin, au supermarché. J'ai payé à la caisse»، یعنی امروز صبح سر صندوق سوپرمارکت پول داد."}
+{"type":"tf","prompt":"کارت تازه فردا می‌رسد.","correct":false,"explanation_fa":"زن می‌گوید: «Dans cinq jours, par la poste.»، یعنی پنج روز دیگر با پست."}
+{"type":"find","prompt":"کدام جمله می‌گوید مرد امروز چقدر پول همراه دارد؟","correct_sentence":7,"explanation_fa":"مرد می‌گوید: «j'ai seulement un billet de 20 euros et un peu de monnaie»، یعنی فقط یک اسکناس ۲۰ یورویی و کمی پول خرد دارم."}
+reading B:
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"J'ai payé à la {{1}}, et maintenant, je ne la {{2}} plus.","bank":["caisse","trouve","banque","donne","poste"],"answers":["caisse","trouve"],"explanation_fa":"مرد می‌گوید: «J'ai payé à la caisse, et maintenant, je ne la trouve plus.»"}
+{"type":"match","prompt":"هر چیز را به چیزی که دربارهٔ آن گفته می‌شود وصل کن.","left":["کارت تازه","گذرنامه"],"right":["پنج روز دیگر با پست می‌رسد","مرد باید آن را به بانک ببرد","مرد آن را در رستوران گم کرده است"],"pairs":[[0,0],[1,1]],"explanation_fa":"زن می‌گوید: «Dans cinq jours, par la poste» و «Venez à la banque … avec votre passeport»."}
+{"type":"mcq","prompt":"زن به مرد می‌گوید کجا برود؟","options":["به سوپرمارکت","به ادارهٔ پست","به بانکی که در آن حساب باز کرده است","به پلیس"],"correct":2,"explanation_fa":"زن می‌گوید: «Venez à la banque où vous avez ouvert votre compte»، یعنی به بانکی بیایید که در آن حساب باز کرده‌اید."}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["زن می‌گوید کارت تازه کی می‌رسد.","مرد می‌گوید کارتش را گم کرده است.","مرد می‌گوید فقط کمی پول دارد.","زن می‌پرسد مرد آخرین بار کی از کارت استفاده کرده است."],"correct_order":[1,3,0,2],"explanation_fa":"اول «J'ai perdu ma carte de crédit»، بعد «Vous avez utilisé votre carte quand…»، بعد «Dans cinq jours» و بعد «j'ai seulement un billet de 20 euros»."}
+listening A:
+{"type":"num","prompt":"اسکناس مرد چند یورویی است؟","answer":"20","accepted":["20","vingt"],"explanation_fa":"مرد می‌گوید: «un billet de 20 euros»، یعنی یک اسکناس بیست یورویی."}
+{"type":"mcq","prompt":"کارت تازه چند روز دیگر می‌رسد؟","options":["سه روز","پنج روز","هفت روز","ده روز"],"correct":1,"explanation_fa":"زن می‌گوید: «Dans cinq jours, par la poste.»، یعنی پنج روز دیگر."}
+{"type":"tf","prompt":"حالا هیچ‌کس نمی‌تواند از کارت مرد استفاده کند.","correct":true,"explanation_fa":"زن می‌گوید: «maintenant, personne ne peut utiliser votre carte»."}
+{"type":"tf","prompt":"مرد کارتش را دیشب در رستوران گم کرد.","correct":false,"explanation_fa":"مرد می‌گوید آخرین بار «Ce matin, au supermarché» از کارتش استفاده کرده است، یعنی امروز صبح در سوپرمارکت."}
+listening B:
+{"type":"mcq","prompt":"مرد آخرین بار کجا از کارتش استفاده کرد؟","options":["در سوپرمارکت","در رستوران","در بانک","در ادارهٔ پست"],"correct":0,"explanation_fa":"مرد می‌گوید: «Ce matin, au supermarché.»، یعنی امروز صبح در سوپرمارکت."}
+{"type":"tf","prompt":"مرد باید گذرنامه‌اش را به بانک ببرد.","correct":true,"explanation_fa":"زن می‌گوید: «Venez à la banque … avec votre passeport.»، یعنی با گذرنامه‌تان به بانک بیایید."}
+{"type":"tf","prompt":"مرد امروز پول زیادی همراهش دارد.","correct":false,"explanation_fa":"مرد می‌گوید: «j'ai seulement un billet de 20 euros et un peu de monnaie»، یعنی فقط کمی پول دارد."}
+{"type":"order","prompt":"این‌ها را به ترتیبی که می‌شنوی بچین.","items":["گذرنامه","سوپرمارکت","اسکناس","پست"],"correct_order":[1,3,2,0],"explanation_fa":"اول «au supermarché»، بعد «par la poste»، بعد «un billet de 20 euros» و آخر «avec votre passeport»."}

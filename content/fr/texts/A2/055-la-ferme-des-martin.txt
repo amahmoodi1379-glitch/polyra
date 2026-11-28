@@ -1,0 +1,29 @@
+code: fr-a2-t055
+title: La ferme des Martin
+band: 1
+kind: ad
+sentences:
+- Visitez la ferme des{des-contr} Martin ! | از مزرعهٔ خانوادهٔ مارتن دیدن کنید!
+- Nous sommes à 20 minutes au nord de Lyon. | ما بیست دقیقه از لیون فاصله داریم، سمت شمال. | tts: Nous sommes à vingt minutes au nord de Lyon.
+- Les enfants peuvent voir les vaches et toucher les petits animaux. | بچه‌ها می‌توانند گاوها را ببینند و به حیوان‌های کوچک دست بزنند.
+- Dans notre boutique : fromage, lait et fruits de la région. | در مغازهٔ ما: پنیر، شیر و میوه‌های منطقه.
+- Ouvert{ouvert} du{du-contr} mercredi au dimanche, de 10 heures à 18 heures. | از چهارشنبه تا یکشنبه باز است، از ساعت ۱۰ تا ۱۸. | tts: Ouvert du mercredi au dimanche, de dix heures à dix-huit heures.
+- 5 euros par personne{personne}, gratuit pour les enfants. | نفری ۵ یورو، برای بچه‌ها رایگان. | tts: Cinq euros par personne, gratuit pour les enfants.
+reading A:
+{"type":"mcq","prompt":"این آگهی برای چیست؟","options":["یک باغ‌وحش","یک رستوران","یک مزرعه","یک سوپرمارکت"],"correct":2,"explanation_fa":"در آگهی آمده: «Visitez la ferme des Martin !»، یعنی از مزرعهٔ خانوادهٔ مارتن دیدن کنید."}
+{"type":"tf","prompt":"مزرعه دوشنبه‌ها باز است.","correct":false,"explanation_fa":"در آگهی آمده: «Ouvert du mercredi au dimanche»، یعنی فقط از چهارشنبه تا یکشنبه باز است."}
+{"type":"tf","prompt":"بچه‌ها می‌توانند به حیوان‌های کوچک دست بزنند.","correct":true,"explanation_fa":"در آگهی آمده: «Les enfants peuvent voir les vaches et toucher les petits animaux.»، یعنی بچه‌ها می‌توانند به حیوان‌های کوچک دست بزنند."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید مزرعه کجاست؟","correct_sentence":1,"explanation_fa":"در آگهی آمده: «Nous sommes à 20 minutes au nord de Lyon.»، یعنی بیست دقیقه از لیون فاصله دارد، سمت شمال."}
+{"type":"match","prompt":"هر مورد را به چیزی که آگهی دربارهٔ آن می‌گوید وصل کن.","left":["مزرعه","مغازهٔ مزرعه"],"right":["در شمال لیون است","پنیر، شیر و میوه دارد","دوشنبه‌ها باز است"],"pairs":[[0,0],[1,1]],"explanation_fa":"در آگهی آمده: «au nord de Lyon» و «Dans notre boutique : fromage, lait et fruits de la région»."}
+{"type":"mcq","prompt":"بلیت بچه‌ها چقدر است؟","options":["۵ یورو","رایگان","۱۰ یورو","۲ یورو"],"correct":1,"explanation_fa":"در آگهی آمده: «gratuit pour les enfants»، یعنی برای بچه‌ها رایگان است."}
+listening A:
+{"type":"num","prompt":"دیدن مزرعه برای هر نفر چند یورو است؟","answer":"5","accepted":["5","cinq"],"explanation_fa":"می‌شنویم: «5 euros par personne»، یعنی نفری پنج یورو."}
+{"type":"mcq","prompt":"مزرعه ساعت چند بسته می‌شود؟","options":["ساعت ۱۶","ساعت ۱۷","ساعت ۱۸","ساعت ۱۹"],"correct":2,"explanation_fa":"می‌شنویم: «de 10 heures à 18 heures»، یعنی تا ساعت هجده باز است."}
+{"type":"tf","prompt":"مزرعه در جنوب لیون است.","correct":false,"explanation_fa":"می‌شنویم: «au nord de Lyon»، یعنی در شمال لیون است."}
+{"type":"tf","prompt":"در مغازهٔ مزرعه پنیر هست.","correct":true,"explanation_fa":"می‌شنویم: «Dans notre boutique : fromage, lait et fruits de la région.»"}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"mcq","prompt":"مزرعه چه روزهایی باز است؟","options":["از دوشنبه تا جمعه","از چهارشنبه تا یکشنبه","از شنبه تا چهارشنبه","فقط آخر هفته"],"correct":1,"explanation_fa":"می‌شنویم: «Ouvert du mercredi au dimanche»، یعنی از چهارشنبه تا یکشنبه باز است."}
+{"type":"tf","prompt":"بچه‌ها برای دیدن مزرعه پول نمی‌دهند.","correct":true,"explanation_fa":"می‌شنویم: «gratuit pour les enfants»، یعنی برای بچه‌ها رایگان است."}
+{"type":"tf","prompt":"مزرعه از ساعت ۸ صبح باز است.","correct":false,"explanation_fa":"می‌شنویم: «de 10 heures à 18 heures»، یعنی از ساعت ده صبح باز است."}

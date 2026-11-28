@@ -1,0 +1,38 @@
+code: fr-a2-t048
+title: Samedi, je déménage !
+band: 2
+kind: email
+sentences:
+- Salut Léa ! | سلام لئا!
+- Samedi, je déménage enfin ! | شنبه بالاخره اسباب‌کشی می‌کنم!
+- Mon nouvel appartement est plus grand que mon studio : il y a même une salle à manger ! | آپارتمان تازه‌ام از سوئیتم بزرگ‌تر است: حتی یک اتاق ناهارخوری هم دارد!
+- Mais j'ai beaucoup de meubles, et mon frère ne peut pas venir. | ولی اثاثیهٔ زیادی دارم و برادرم نمی‌تواند بیاید.
+- Tu peux m'aider ? | می‌توانی کمکم کنی؟
+- Il y a une grande armoire, deux fauteuils, mes étagères et beaucoup de livres. | یک کمد لباس بزرگ هست، دو مبل یک‌نفره، قفسه‌هایم و کلی کتاب.
+- Et attention : le nouvel immeuble n'a pas d'ascenseur ! | و حواست باشد: ساختمان تازه آسانسور ندارد!
+- Mon voisin Thomas a une grande voiture, et il va nous aider aussi. | همسایه‌ام توما یک ماشین بزرگ دارد و او هم به ما کمک می‌کند.
+- On commence à 9 heures. | ساعت ۹ شروع می‌کنیم. | tts: On commence à neuf heures.
+- Le soir, je vous invite au restaurant ! | شب شما را به رستوران دعوت می‌کنم!
+- Dimanche, je vais acheter des rideaux et un tapis pour le salon. | یکشنبه برای اتاق نشیمن پرده و فرش می‌خرم.
+- Ma mère va me donner son vieux miroir. | مادرم آینهٔ قدیمی‌اش را به من می‌دهد.
+- À samedi ! Lucas | تا شنبه! لوکا
+reading A:
+{"type":"mcq","prompt":"لوکا چرا به لئا ایمیل می‌زند؟","options":["می‌خواهد آپارتمانش را بفروشد","از او ماشینش را می‌خواهد","او را به جشن تولدش دعوت می‌کند","برای اسباب‌کشی از او کمک می‌خواهد"],"correct":3,"explanation_fa":"لوکا می‌نویسد: «Samedi, je déménage enfin !» و بعد می‌پرسد: «Tu peux m'aider ?»، یعنی می‌توانی کمکم کنی؟"}
+{"type":"tf","prompt":"آپارتمان تازهٔ لوکا از سوئیتش کوچک‌تر است.","correct":false,"explanation_fa":"لوکا می‌نویسد: «Mon nouvel appartement est plus grand que mon studio»، یعنی آپارتمان تازه بزرگ‌تر است."}
+{"type":"tf","prompt":"ساختمان تازهٔ لوکا آسانسور ندارد.","correct":true,"explanation_fa":"لوکا می‌نویسد: «le nouvel immeuble n'a pas d'ascenseur»، یعنی ساختمان تازه آسانسور ندارد."}
+{"type":"find","prompt":"کدام جمله می‌گوید برادر لوکا نمی‌تواند بیاید؟","correct_sentence":3,"explanation_fa":"لوکا می‌نویسد: «mon frère ne peut pas venir»، یعنی برادرم نمی‌تواند بیاید."}
+reading B:
+{"type":"match","prompt":"هر کس را به چیزی که دربارهٔ او در ایمیل آمده وصل کن.","left":["توما","مادر لوکا","لوکا"],"right":["یک ماشین بزرگ دارد","آینهٔ قدیمی‌اش را به لوکا می‌دهد","یکشنبه پرده و فرش می‌خرد","نمی‌تواند بیاید"],"pairs":[[0,0],[1,1],[2,2]],"explanation_fa":"در ایمیل آمده: «Mon voisin Thomas a une grande voiture»، «Ma mère va me donner son vieux miroir» و «Dimanche, je vais acheter des rideaux et un tapis»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Il y a une grande {{1}}, deux {{2}}, mes étagères et beaucoup de {{3}}.","bank":["armoire","fauteuils","livres","rideaux","voitures"],"answers":["armoire","fauteuils","livres"],"explanation_fa":"لوکا می‌نویسد: «Il y a une grande armoire, deux fauteuils, mes étagères et beaucoup de livres.»"}
+{"type":"mcq","prompt":"لوکا شنبه شب چه کار می‌کند؟","options":["پرده و فرش می‌خرد","پیش مادرش می‌رود","دوستانش را به رستوران دعوت می‌کند","با برادرش شام می‌خورد"],"correct":2,"explanation_fa":"لوکا می‌نویسد: «Le soir, je vous invite au restaurant !»، یعنی شب شما را به رستوران دعوت می‌کنم."}
+{"type":"order","prompt":"این‌ها را به ترتیب ایمیل بچین.","items":["لوکا از اثاثیه‌اش می‌گوید.","لوکا می‌گوید یکشنبه چه می‌خرد.","لوکا می‌گوید آپارتمان تازه‌اش بزرگ‌تر است.","لوکا ساعت شروع کار را می‌گوید."],"correct_order":[2,0,3,1],"explanation_fa":"اول «plus grand que mon studio»، بعد «une grande armoire, deux fauteuils…»، بعد «On commence à 9 heures» و آخر «Dimanche, je vais acheter…»."}
+listening A:
+{"type":"num","prompt":"شنبه ساعت چند کار را شروع می‌کنند؟","answer":"9","accepted":["9","9h","9:00","neuf"],"explanation_fa":"لوکا می‌گوید: «On commence à 9 heures.»، یعنی ساعت نه شروع می‌کنیم."}
+{"type":"mcq","prompt":"لوکا یکشنبه چه می‌خرد؟","options":["پرده و فرش","یک کمد و یک مبل","یک آینه و یک چراغ","قفسه و کتاب"],"correct":0,"explanation_fa":"لوکا می‌گوید: «Dimanche, je vais acheter des rideaux et un tapis»، یعنی یکشنبه پرده و فرش می‌خرم."}
+{"type":"tf","prompt":"آپارتمان تازه یک اتاق ناهارخوری دارد.","correct":true,"explanation_fa":"لوکا می‌گوید: «il y a même une salle à manger !»، یعنی حتی یک اتاق ناهارخوری هم دارد."}
+{"type":"tf","prompt":"برادر لوکا شنبه به او کمک می‌کند.","correct":false,"explanation_fa":"لوکا می‌گوید: «mon frère ne peut pas venir»، یعنی برادرش نمی‌تواند بیاید."}
+listening B:
+{"type":"mcq","prompt":"چه کسی یک ماشین بزرگ دارد؟","options":["برادر لوکا","مادر لوکا","همسایهٔ لوکا","لئا"],"correct":2,"explanation_fa":"لوکا می‌گوید: «Mon voisin Thomas a une grande voiture»، یعنی همسایه‌ام توما یک ماشین بزرگ دارد."}
+{"type":"tf","prompt":"لوکا کتاب زیادی دارد.","correct":true,"explanation_fa":"لوکا می‌گوید: «beaucoup de livres»، یعنی کلی کتاب."}
+{"type":"tf","prompt":"مادر لوکا یک آینهٔ نو برایش می‌خرد.","correct":false,"explanation_fa":"لوکا می‌گوید: «Ma mère va me donner son vieux miroir.»، یعنی مادرش آینهٔ قدیمی خودش را به او می‌دهد."}
+{"type":"mcq","prompt":"لوکا کی اسباب‌کشی می‌کند؟","options":["شنبه","جمعه","یکشنبه","دوشنبه"],"correct":0,"explanation_fa":"لوکا می‌گوید: «Samedi, je déménage enfin !»، یعنی شنبه بالاخره اسباب‌کشی می‌کنم."}

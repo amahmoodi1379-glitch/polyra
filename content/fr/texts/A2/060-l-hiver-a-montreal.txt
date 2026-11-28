@@ -1,0 +1,35 @@
+code: fr-a2-t060
+title: L'hiver à Montréal
+band: 2
+kind: email
+sentences:
+- Salut Léa ! | سلام لئا!
+- Tu arrives à Montréal le 15 janvier : super ! | ۱۵ ژانویه به مونترال می‌رسی: عالی است! | tts: Tu arrives à Montréal le quinze janvier : super !
+- Mais attention : ici, janvier est le mois le plus froid de l'année ! | ولی حواست باشد: اینجا ژانویه سردترین ماه سال است!
+- Apporte un manteau chaud, une écharpe, un bonnet et des gants. | یک پالتوی گرم، یک شال‌گردن، یک کلاه بافتنی و دستکش بیاور.
+- Pas de baskets : il y a beaucoup de neige dans les rues. Prends des bottes ! | کفش ورزشی نیاور: توی خیابان‌ها برف زیادی هست. چکمه بیاور!
+- Tu n'as pas de bottes ? Il y a une boutique bon marché près de chez moi. | چکمه نداری؟ نزدیک خانهٔ من یک مغازهٔ ارزان هست.
+- À midi à Paris, il est six heures du{du-contr} matin à Montréal. | وقتی در پاریس ظهر است، در مونترال ساعت شش صبح است.
+- Change l'heure de ta montre dans l'avion ! | توی هواپیما ساعت مچی‌ات را تنظیم کن!
+- Je t'attends à l'aéroport. | در فرودگاه منتظرت هستم.
+- À bientôt, Sara | به امید دیدار، سارا
+reading A:
+{"type":"mcq","prompt":"سارا چرا این ایمیل را می‌نویسد؟","options":["از لئا می‌خواهد برایش چکمه بخرد","به لئا می‌گوید برای سرمای مونترال چه بیاورد","لئا را برای کریسمس به پاریس دعوت می‌کند","به لئا می‌گوید سفرش را عقب بیندازد"],"correct":1,"explanation_fa":"سارا می‌نویسد: «janvier est le mois le plus froid de l'année» و بعد می‌گوید: «Apporte un manteau chaud, une écharpe, un bonnet et des gants.»"}
+{"type":"tf","prompt":"به گفتهٔ سارا، ژانویه سردترین ماه سال در مونترال است.","correct":true,"explanation_fa":"سارا می‌نویسد: «ici, janvier est le mois le plus froid de l'année !»، یعنی اینجا ژانویه سردترین ماه سال است."}
+{"type":"tf","prompt":"سارا می‌گوید لئا کفش ورزشی بیاورد.","correct":false,"explanation_fa":"سارا می‌نویسد: «Pas de baskets»، یعنی کفش ورزشی نیاور، و می‌گوید: «Prends des bottes !»"}
+{"type":"find","prompt":"کدام جمله می‌گوید لئا کجا می‌تواند چکمهٔ ارزان بخرد؟","correct_sentence":5,"explanation_fa":"سارا می‌نویسد: «Il y a une boutique bon marché près de chez moi.»، یعنی نزدیک خانهٔ من یک مغازهٔ ارزان هست."}
+reading B:
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Apporte un manteau chaud, une {{1}}, un {{2}} et des {{3}}.","bank":["écharpe","bonnet","gants","baskets","montre"],"answers":["écharpe","bonnet","gants"],"explanation_fa":"سارا می‌نویسد: «Apporte un manteau chaud, une écharpe, un bonnet et des gants.»"}
+{"type":"mcq","prompt":"چرا لئا نباید کفش ورزشی بیاورد؟","options":["چون مغازه‌ها گران‌اند","چون سارا کفش ورزشی دارد","چون چمدانش کوچک است","چون توی خیابان‌ها برف زیادی هست"],"correct":3,"explanation_fa":"سارا می‌نویسد: «Pas de baskets : il y a beaucoup de neige dans les rues.»، یعنی چون توی خیابان‌ها برف زیادی هست."}
+{"type":"match","prompt":"هر چیز را به چیزی که سارا دربارهٔ آن می‌گوید وصل کن.","left":["چکمه","ساعت مچی","مغازهٔ نزدیک خانهٔ سارا"],"right":["لئا باید آن را بیاورد","باید آن را در هواپیما تنظیم کرد","ارزان است","گران است"],"pairs":[[0,0],[1,1],[2,2]],"explanation_fa":"سارا می‌نویسد: «Prends des bottes !»، «Change l'heure de ta montre dans l'avion !» و «une boutique bon marché»."}
+{"type":"order","prompt":"این‌ها را به ترتیب ایمیل بچین.","items":["سارا از ساعت مونترال می‌گوید.","سارا می‌گوید ژانویه خیلی سرد است.","سارا می‌گوید در فرودگاه منتظر است.","سارا می‌گوید لئا چه لباس‌هایی بیاورد."],"correct_order":[1,3,0,2],"explanation_fa":"اول «janvier est le mois le plus froid»، بعد «Apporte un manteau chaud…»، بعد «il est six heures du matin à Montréal» و آخر «Je t'attends à l'aéroport»."}
+listening A:
+{"type":"num","prompt":"لئا چندم ژانویه به مونترال می‌رسد؟","answer":"15","accepted":["15","quinze"],"explanation_fa":"سارا می‌گوید: «Tu arrives à Montréal le 15 janvier»، یعنی پانزدهم ژانویه."}
+{"type":"mcq","prompt":"وقتی در پاریس ظهر است، در مونترال ساعت چند است؟","options":["ساعت شش صبح","ساعت شش عصر","ساعت دوازده شب","ساعت نه صبح"],"correct":0,"explanation_fa":"سارا می‌گوید: «À midi à Paris, il est six heures du matin à Montréal.»"}
+{"type":"tf","prompt":"توی خیابان‌های مونترال برف زیادی هست.","correct":true,"explanation_fa":"سارا می‌گوید: «il y a beaucoup de neige dans les rues»، یعنی توی خیابان‌ها برف زیادی هست."}
+{"type":"tf","prompt":"سارا لئا را در ایستگاه قطار می‌بیند.","correct":false,"explanation_fa":"سارا می‌گوید: «Je t'attends à l'aéroport.»، یعنی در فرودگاه منتظرت هستم."}
+listening B:
+{"type":"mcq","prompt":"سارا می‌گوید لئا کدام کفش را بیاورد؟","options":["کفش ورزشی","صندل","چکمه","کفش مهمانی"],"correct":2,"explanation_fa":"سارا می‌گوید: «Pas de baskets … Prends des bottes !»، یعنی چکمه بیاور."}
+{"type":"tf","prompt":"سارا یک مغازهٔ ارزان می‌شناسد.","correct":true,"explanation_fa":"سارا می‌گوید: «Il y a une boutique bon marché près de chez moi.»، یعنی نزدیک خانه‌اش یک مغازهٔ ارزان هست."}
+{"type":"tf","prompt":"به گفتهٔ سارا، ژانویه در مونترال هوای خوبی دارد.","correct":false,"explanation_fa":"سارا می‌گوید: «janvier est le mois le plus froid de l'année»، یعنی ژانویه سردترین ماه سال است."}
+{"type":"mcq","prompt":"لئا کجا باید ساعت مچی‌اش را تنظیم کند؟","options":["در فرودگاه پاریس","در خانهٔ سارا","در مغازه","در هواپیما"],"correct":3,"explanation_fa":"سارا می‌گوید: «Change l'heure de ta montre dans l'avion !»، یعنی توی هواپیما ساعت مچی‌ات را تنظیم کن."}

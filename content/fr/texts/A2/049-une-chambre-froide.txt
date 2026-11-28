@@ -1,0 +1,29 @@
+code: fr-a2-t049
+title: Une chambre froide
+band: 1
+kind: dialogue
+sentences:
+A: Excusez-moi, monsieur. Il fait très froid dans ma chambre ! | ببخشید آقا. اتاقم خیلی سرد است!
+B: Vous avez allumé le chauffage ? | شوفاژ را روشن کرده‌اید؟
+A: Oui, mais il est encore froid. | بله، ولی هنوز سرد است.
+B: Il est peut-être cassé. Je vous donne une autre chambre : la 15. | شاید خراب است. یک اتاق دیگر به شما می‌دهم: اتاق ۱۵. | tts: Il est peut-être cassé. Je vous donne une autre chambre : la quinze.
+A: Merci ! Je pars tôt demain. Il y a un réveil ? | ممنون! فردا زود راه می‌افتم. ساعت زنگ‌دار هست؟
+B: Oui, sur le bureau{bureau-2}. Et le petit-déjeuner commence à 6 heures 30. | بله، روی میز تحریر. صبحانه هم از ساعت ۶:۳۰ شروع می‌شود. | tts: Oui, sur le bureau. Et le petit-déjeuner commence à six heures trente.
+A: Parfait. Bonne nuit ! | عالی است. شب بخیر!
+reading A:
+{"type":"mcq","prompt":"مشکل زن چیست؟","options":["اتاقش خیلی سرد است","کلید اتاقش را گم کرده است","اتاقش خیلی کوچک است","چراغ اتاقش روشن نمی‌شود"],"correct":0,"explanation_fa":"زن می‌گوید: «Il fait très froid dans ma chambre !»، یعنی اتاقم خیلی سرد است."}
+{"type":"tf","prompt":"زن شوفاژ را روشن نکرده است.","correct":false,"explanation_fa":"مرد می‌پرسد «Vous avez allumé le chauffage ?» و زن می‌گوید: «Oui»، یعنی شوفاژ را روشن کرده است."}
+{"type":"tf","prompt":"مرد اتاق دیگری به زن می‌دهد.","correct":true,"explanation_fa":"مرد می‌گوید: «Je vous donne une autre chambre»، یعنی یک اتاق دیگر به شما می‌دهم."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید ساعت زنگ‌دار کجاست؟","correct_sentence":5,"explanation_fa":"مرد می‌گوید: «Oui, sur le bureau.»، یعنی ساعت زنگ‌دار روی میز تحریر است."}
+{"type":"match","prompt":"هر مورد را به عدد درستش وصل کن.","left":["شمارهٔ اتاق تازه","ساعت صبحانه"],"right":["۱۵","۶:۳۰","۱۰"],"pairs":[[0,0],[1,1]],"explanation_fa":"مرد می‌گوید: «une autre chambre : la 15» و «le petit-déjeuner commence à 6 heures 30»."}
+{"type":"mcq","prompt":"زن چرا ساعت زنگ‌دار می‌خواهد؟","options":["چون ساعتش خراب است","چون صبحانه را دوست دارد","چون شب‌ها خوب نمی‌خوابد","چون فردا زود راه می‌افتد"],"correct":3,"explanation_fa":"زن می‌گوید: «Je pars tôt demain.»، یعنی فردا زود راه می‌افتم."}
+listening A:
+{"type":"num","prompt":"شمارهٔ اتاق تازهٔ زن چند است؟","answer":"15","accepted":["15","quinze"],"explanation_fa":"مرد می‌گوید: «Je vous donne une autre chambre : la 15.»، یعنی اتاق پانزده."}
+{"type":"tf","prompt":"ساعت زنگ‌دار روی میز است.","correct":true,"explanation_fa":"مرد می‌گوید: «Oui, sur le bureau.»، یعنی روی میز تحریر."}
+{"type":"tf","prompt":"زن امشب در همان اتاق قبلی می‌خوابد.","correct":false,"explanation_fa":"مرد می‌گوید: «Je vous donne une autre chambre»، یعنی زن به اتاق دیگری می‌رود."}
+listening B:
+{"type":"dict","sentence":1}
+{"type":"mcq","prompt":"صبحانه ساعت چند شروع می‌شود؟","options":["ساعت ۶","ساعت ۶:۳۰","ساعت ۷","ساعت ۷:۳۰"],"correct":1,"explanation_fa":"مرد می‌گوید: «le petit-déjeuner commence à 6 heures 30»، یعنی ساعت شش و نیم."}
+{"type":"tf","prompt":"زن فردا زود راه می‌افتد.","correct":true,"explanation_fa":"زن می‌گوید: «Je pars tôt demain.»، یعنی فردا زود راه می‌افتم."}
+{"type":"tf","prompt":"اتاق زن خیلی گرم است.","correct":false,"explanation_fa":"زن می‌گوید: «Il fait très froid dans ma chambre !»، یعنی اتاقش خیلی سرد است."}

@@ -1,0 +1,28 @@
+code: fr-a2-t051
+title: La machine à laver
+band: 1
+kind: voice_message
+sentences:
+- Bonjour, monsieur Martin. C'est madame Dubois. | سلام آقای مارتن. خانم دوبوا هستم.
+- Ma machine à laver est cassée, et il y a de l'eau partout dans la cuisine ! | ماشین لباسشویی‌ام خراب شده و همه‌جای آشپزخانه آب ریخته است!
+- Vous pouvez venir la réparer demain matin ? | می‌توانید فردا صبح بیایید و درستش کنید؟
+- J'habite dans le grand bâtiment blanc, à côté de l'église. | در ساختمان بزرگ سفید، کنار کلیسا زندگی می‌کنم.
+- Mon nom est sur la boîte aux lettres. | اسمم روی صندوق پست است.
+- Sonnez deux fois, s'il vous plaît. | لطفاً دو بار زنگ بزنید.
+- Merci, à demain ! | ممنون، تا فردا!
+reading A:
+{"type":"mcq","prompt":"خانم دوبوا چرا پیام گذاشته است؟","options":["کلید خانه‌اش را گم کرده است","یخچالش خراب شده است","ماشین لباسشویی‌اش خراب شده است","می‌خواهد آشپزخانه‌اش را عوض کند"],"correct":2,"explanation_fa":"خانم دوبوا می‌گوید: «Ma machine à laver est cassée»، یعنی ماشین لباسشویی‌ام خراب شده است."}
+{"type":"tf","prompt":"خانم دوبوا کنار کلیسا زندگی می‌کند.","correct":true,"explanation_fa":"خانم دوبوا می‌گوید: «J'habite dans le grand bâtiment blanc, à côté de l'église.»، یعنی کنار کلیسا."}
+{"type":"tf","prompt":"خانم دوبوا می‌خواهد آقای مارتن امروز عصر بیاید.","correct":false,"explanation_fa":"خانم دوبوا می‌پرسد: «Vous pouvez venir la réparer demain matin ?»، یعنی فردا صبح."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید اسم خانم دوبوا کجا نوشته شده است؟","correct_sentence":4,"explanation_fa":"خانم دوبوا می‌گوید: «Mon nom est sur la boîte aux lettres.»، یعنی اسمم روی صندوق پست است."}
+{"type":"order","prompt":"این‌ها را به ترتیب پیام بچین.","items":["خانم دوبوا می‌گوید کجا زندگی می‌کند.","خانم دوبوا می‌گوید ماشین لباسشویی‌اش خراب است.","خانم دوبوا می‌گوید چند بار زنگ بزنند.","خانم دوبوا خودش را معرفی می‌کند."],"correct_order":[3,1,0,2],"explanation_fa":"اول «C'est madame Dubois»، بعد «Ma machine à laver est cassée»، بعد «J'habite dans le grand bâtiment blanc» و بعد «Sonnez deux fois»."}
+listening A:
+{"type":"num","prompt":"آقای مارتن چند بار باید زنگ در را بزند؟","answer":"2","accepted":["2","deux"],"explanation_fa":"خانم دوبوا می‌گوید: «Sonnez deux fois, s'il vous plaît.»، یعنی لطفاً دو بار زنگ بزنید."}
+{"type":"tf","prompt":"همه‌جای آشپزخانه آب ریخته است.","correct":true,"explanation_fa":"خانم دوبوا می‌گوید: «il y a de l'eau partout dans la cuisine»، یعنی همه‌جای آشپزخانه آب است."}
+{"type":"tf","prompt":"خانم دوبوا در یک ساختمان کوچک زندگی می‌کند.","correct":false,"explanation_fa":"خانم دوبوا می‌گوید: «J'habite dans le grand bâtiment blanc»، یعنی در ساختمان بزرگ سفید."}
+listening B:
+{"type":"dict","sentence":4}
+{"type":"mcq","prompt":"ساختمان خانم دوبوا کنار کجاست؟","options":["کنار شهرداری","کنار مسجد","کنار کلیسا","کنار پل"],"correct":2,"explanation_fa":"خانم دوبوا می‌گوید: «à côté de l'église»، یعنی کنار کلیسا."}
+{"type":"tf","prompt":"خانم دوبوا فردا صبح منتظر آقای مارتن است.","correct":true,"explanation_fa":"خانم دوبوا می‌پرسد: «Vous pouvez venir la réparer demain matin ?» و آخر پیام می‌گوید: «à demain !»"}
+{"type":"tf","prompt":"آب روی کف حمام ریخته است.","correct":false,"explanation_fa":"خانم دوبوا می‌گوید: «il y a de l'eau partout dans la cuisine»، یعنی آب در آشپزخانه است، نه در حمام."}

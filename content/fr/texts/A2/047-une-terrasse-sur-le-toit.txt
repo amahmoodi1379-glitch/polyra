@@ -1,0 +1,31 @@
+code: fr-a2-t047
+title: Une terrasse sur le toit
+band: 1
+kind: dialogue
+sentences:
+A: Bienvenue chez moi ! Voici l'entrée{entrée-2} et le couloir. | به خانهٔ من خوش آمدی! این ورودی است و این هم راهرو.
+B: C'est joli ! Tu t'es installée quand ? | قشنگ است! کی اینجا ساکن شدی؟
+A: Il y a une semaine. | یک هفته پیش.
+B: Il y a un balcon ? | بالکن دارد؟
+A: Non, mais il y a une terrasse sur le toit ! | نه، ولی یک تراس روی بام هست!
+B: Super ! Et il y a un ascenseur ? | عالی! آسانسور هم هست؟
+A: Oui, heureusement : j'habite au dernier étage ! | آره، خوشبختانه، چون من در طبقهٔ آخر زندگی می‌کنم!
+B: Et ta voiture ? | ماشینت چه؟
+A: Il y a un garage dans la cour. | توی حیاط یک گاراژ هست.
+reading A:
+{"type":"mcq","prompt":"زن اول کدام قسمت‌های خانه را به مرد نشان می‌دهد؟","options":["آشپزخانه و حمام","تراس و بام","ورودی و راهرو","حیاط و گاراژ"],"correct":2,"explanation_fa":"زن می‌گوید: «Voici l'entrée et le couloir.»، یعنی این ورودی است و این هم راهرو."}
+{"type":"tf","prompt":"خانهٔ زن بالکن دارد.","correct":false,"explanation_fa":"مرد می‌پرسد «Il y a un balcon ?» و زن می‌گوید: «Non»، یعنی بالکن ندارد."}
+{"type":"tf","prompt":"ساختمان آسانسور دارد.","correct":true,"explanation_fa":"مرد دربارهٔ آسانسور می‌پرسد و زن می‌گوید: «Oui, heureusement»، یعنی آره، خوشبختانه."}
+reading B:
+{"type":"match","prompt":"هر چیز را به جایش وصل کن.","left":["تراس","گاراژ"],"right":["روی بام","توی حیاط","کنار ورودی"],"pairs":[[0,0],[1,1]],"explanation_fa":"زن می‌گوید: «il y a une terrasse sur le toit» و «Il y a un garage dans la cour.»"}
+{"type":"find","prompt":"کدام جمله می‌گوید زن در طبقهٔ آخر زندگی می‌کند؟","correct_sentence":6,"explanation_fa":"زن می‌گوید: «j'habite au dernier étage !»، یعنی در طبقهٔ آخر زندگی می‌کنم."}
+{"type":"order","prompt":"سؤال‌های مرد را به ترتیب گفتگو بچین.","items":["دربارهٔ ماشین می‌پرسد.","می‌پرسد زن کی آنجا ساکن شده است.","دربارهٔ آسانسور می‌پرسد.","دربارهٔ بالکن می‌پرسد."],"correct_order":[1,3,2,0],"explanation_fa":"مرد اول می‌پرسد «Tu t'es installée quand ?»، بعد «Il y a un balcon ?»، بعد «Et il y a un ascenseur ?» و آخر «Et ta voiture ?»."}
+listening A:
+{"type":"mcq","prompt":"روی بام چه چیزی هست؟","options":["یک باغ کوچک","یک گاراژ","یک بالکن","یک تراس"],"correct":3,"explanation_fa":"زن می‌گوید: «il y a une terrasse sur le toit»، یعنی یک تراس روی بام هست."}
+{"type":"tf","prompt":"زن در طبقهٔ اول زندگی می‌کند.","correct":false,"explanation_fa":"زن می‌گوید: «j'habite au dernier étage»، یعنی در طبقهٔ آخر زندگی می‌کند."}
+{"type":"tf","prompt":"در این ساختمان آسانسور هست.","correct":true,"explanation_fa":"زن دربارهٔ آسانسور می‌گوید: «Oui, heureusement»، یعنی آره، خوشبختانه."}
+listening B:
+{"type":"dict","sentence":1}
+{"type":"mcq","prompt":"گاراژ کجاست؟","options":["توی حیاط","پشت ساختمان","روی بام","کنار راهرو"],"correct":0,"explanation_fa":"زن می‌گوید: «Il y a un garage dans la cour.»، یعنی توی حیاط یک گاراژ هست."}
+{"type":"tf","prompt":"مرد خانه را قشنگ می‌داند.","correct":true,"explanation_fa":"مرد می‌گوید: «C'est joli !»، یعنی قشنگ است."}
+{"type":"tf","prompt":"زن یک ماه پیش به این خانه آمده است.","correct":false,"explanation_fa":"زن می‌گوید: «Il y a une semaine.»، یعنی یک هفته پیش آمده است."}

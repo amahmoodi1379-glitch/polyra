@@ -1,0 +1,37 @@
+code: fr-a2-t054
+title: Près du port
+band: 2
+kind: email
+sentences:
+- Salut Pierre ! | سلام پیر!
+- Je suis à Marseille depuis un mois. | یک ماه است که در مارسی هستم.
+- Je travaille dans une usine près du{du-contr} port. | در کارخانه‌ای نزدیک بندر کار می‌کنم.
+- Le travail est difficile, mais les gens sont sympas. | کار سخت است، ولی آدم‌ها خوب‌اند.
+- Dans ma rue, il y a une épicerie, une boucherie et une pâtisserie. | در خیابانم یک بقالی، یک قصابی و یک شیرینی‌فروشی هست.
+- Le dimanche matin, tout le monde fait la queue devant la pâtisserie ! | یکشنبه‌ها صبح همه جلوی شیرینی‌فروشی صف می‌کشند!
+- Leurs croissants sont délicieux. | کروسان‌هایشان خوشمزه است.
+- Le soir, je vais souvent au port. | عصرها اغلب به بندر می‌روم.
+- Le poisson qu'on mange là-bas est très frais ! | ماهی‌ای که آنجا می‌خوریم خیلی تازه است!
+- Tu viens me voir cet été ? | تابستان به دیدنم می‌آیی؟
+- Tu peux venir en voiture : il y a un grand parking gratuit près de chez moi. | می‌توانی با ماشین بیایی: نزدیک خانه‌ام یک پارکینگ بزرگ رایگان هست.
+- À bientôt, Nicolas | به امید دیدار، نیکولا
+reading A:
+{"type":"mcq","prompt":"نیکولا کجا کار می‌کند؟","options":["در یک کارخانه","در یک شیرینی‌فروشی","در یک رستوران","در یک قصابی"],"correct":0,"explanation_fa":"نیکولا می‌نویسد: «Je travaille dans une usine près du port.»، یعنی در کارخانه‌ای نزدیک بندر کار می‌کنم."}
+{"type":"tf","prompt":"نیکولا یک سال است که در مارسی است.","correct":false,"explanation_fa":"نیکولا می‌نویسد: «Je suis à Marseille depuis un mois.»، یعنی یک ماه است که در مارسی است."}
+{"type":"tf","prompt":"نیکولا کارش را آسان نمی‌داند.","correct":true,"explanation_fa":"نیکولا می‌نویسد: «Le travail est difficile»، یعنی کار سخت است."}
+{"type":"find","prompt":"کدام جمله می‌گوید چرا پیر می‌تواند با ماشین بیاید؟","correct_sentence":10,"explanation_fa":"نیکولا می‌نویسد: «il y a un grand parking gratuit près de chez moi»، یعنی نزدیک خانه‌اش یک پارکینگ رایگان هست."}
+reading B:
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Dans ma rue, il y a une {{1}}, une {{2}} et une pâtisserie. Le dimanche matin, tout le monde fait la {{3}} devant la pâtisserie !","bank":["épicerie","boucherie","queue","usine","cuisine"],"answers":["épicerie","boucherie","queue"],"explanation_fa":"نیکولا می‌نویسد: «il y a une épicerie, une boucherie et une pâtisserie» و «tout le monde fait la queue devant la pâtisserie»."}
+{"type":"mcq","prompt":"یکشنبه‌ها صبح جلوی شیرینی‌فروشی چه خبر است؟","options":["شیرینی‌فروشی بسته است","مردم صف می‌کشند","بازار ماهی است","جای پارک نیست"],"correct":1,"explanation_fa":"نیکولا می‌نویسد: «Le dimanche matin, tout le monde fait la queue devant la pâtisserie !»، یعنی همه صف می‌کشند."}
+{"type":"match","prompt":"هر جا را به چیزی که نیکولا دربارهٔ آن می‌گوید وصل کن.","left":["شیرینی‌فروشی","بندر","پارکینگ"],"right":["کروسان‌هایش خوشمزه است","ماهی‌اش خیلی تازه است","رایگان است","یکشنبه‌ها بسته است"],"pairs":[[0,0],[1,1],[2,2]],"explanation_fa":"نیکولا می‌نویسد: «Leurs croissants sont délicieux»، «Le poisson qu'on mange là-bas est très frais» و «un grand parking gratuit»."}
+{"type":"order","prompt":"این‌ها را به ترتیب ایمیل بچین.","items":["نیکولا از ماهی بندر می‌گوید.","نیکولا از کارش می‌گوید.","نیکولا پیر را دعوت می‌کند.","نیکولا از مغازه‌های خیابانش می‌گوید."],"correct_order":[1,3,0,2],"explanation_fa":"اول «Je travaille dans une usine»، بعد «une épicerie, une boucherie et une pâtisserie»، بعد «Le poisson qu'on mange là-bas» و آخر «Tu viens me voir cet été ?»."}
+listening A:
+{"type":"mcq","prompt":"نیکولا عصرها اغلب کجا می‌رود؟","options":["به شیرینی‌فروشی","به پارکینگ","به بندر","به کارخانه"],"correct":2,"explanation_fa":"نیکولا می‌گوید: «Le soir, je vais souvent au port.»، یعنی عصرها اغلب به بندر می‌روم."}
+{"type":"tf","prompt":"نیکولا می‌گوید آدم‌ها خوب‌اند.","correct":true,"explanation_fa":"نیکولا می‌گوید: «les gens sont sympas»، یعنی آدم‌ها خوب‌اند."}
+{"type":"tf","prompt":"پارکینگ نزدیک خانهٔ نیکولا پولی است.","correct":false,"explanation_fa":"نیکولا می‌گوید: «un grand parking gratuit»، یعنی پارکینگ رایگان است."}
+{"type":"mcq","prompt":"نیکولا از پیر چه می‌خواهد؟","options":["تابستان به دیدنش بیاید","برایش کروسان بفرستد","در کارخانه کار کند","برایش یک ماشین پیدا کند"],"correct":0,"explanation_fa":"نیکولا می‌پرسد: «Tu viens me voir cet été ?»، یعنی تابستان به دیدنم می‌آیی؟"}
+listening B:
+{"type":"mcq","prompt":"کارخانهٔ نیکولا کجاست؟","options":["در مرکز شهر","نزدیک بندر","کنار شیرینی‌فروشی","نزدیک ایستگاه قطار"],"correct":1,"explanation_fa":"نیکولا می‌گوید: «une usine près du port»، یعنی کارخانه‌ای نزدیک بندر."}
+{"type":"tf","prompt":"کروسان‌های شیرینی‌فروشی خوشمزه است.","correct":true,"explanation_fa":"نیکولا می‌گوید: «Leurs croissants sont délicieux.»"}
+{"type":"tf","prompt":"در خیابان نیکولا قصابی نیست.","correct":false,"explanation_fa":"نیکولا می‌گوید: «il y a une épicerie, une boucherie et une pâtisserie»، یعنی قصابی هم هست."}
+{"type":"order","prompt":"این‌ها را به ترتیبی که می‌شنوی بچین.","items":["پارکینگ","کارخانه","ماهی","شیرینی‌فروشی"],"correct_order":[1,3,2,0],"explanation_fa":"اول «une usine»، بعد «une pâtisserie»، بعد «Le poisson» و آخر «un grand parking gratuit»."}

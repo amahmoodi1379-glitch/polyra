@@ -1,0 +1,31 @@
+code: fr-a2-t059
+title: Un costume pour le mariage
+band: 1
+kind: voice_message
+sentences:
+- Salut Louis, c'est Chloé. | سلام لویی، کلوئه هستم.
+- Samedi, c'est le mariage de notre cousin Hugo, et tu n'as pas de costume ! | شنبه عروسی پسرعمویمان هوگو است و تو کت و شلوار نداری!
+- On fait les magasins demain ? | فردا برویم خرید؟
+- Il y a des soldes au centre commercial. | مرکز خرید حراج دارد.
+- Moi, je cherche une robe et un foulard. | من هم دنبال یک پیراهن زنانه و یک روسری هستم.
+- Papa peut te prêter une cravate. | بابا می‌تواند یک کراوات به تو قرض بدهد.
+- Rendez-vous à 14 heures devant la librairie. | ساعت ۱۴ جلوی کتاب‌فروشی قرار بگذاریم. | tts: Rendez-vous à quatorze heures devant la librairie.
+- À demain ! | تا فردا!
+reading A:
+{"type":"mcq","prompt":"شنبه چه خبر است؟","options":["تولد پدرشان","عروسی هوگو","جشن مدرسه","سفر خانواده"],"correct":1,"explanation_fa":"کلوئه می‌گوید: «Samedi, c'est le mariage de notre cousin Hugo»، یعنی شنبه عروسی هوگو است."}
+{"type":"tf","prompt":"لویی کت و شلوار ندارد.","correct":true,"explanation_fa":"کلوئه می‌گوید: «tu n'as pas de costume !»، یعنی کت و شلوار نداری."}
+{"type":"tf","prompt":"کلوئه می‌خواهد برای خودش کراوات بخرد.","correct":false,"explanation_fa":"کلوئه می‌گوید: «je cherche une robe et un foulard»؛ کراوات را بابا به لویی قرض می‌دهد."}
+reading B:
+{"type":"match","prompt":"هر کس را به کارش وصل کن.","left":["کلوئه","بابا"],"right":["دنبال پیراهن و روسری است","کراوات قرض می‌دهد","کت و شلوار قرض می‌دهد"],"pairs":[[0,0],[1,1]],"explanation_fa":"کلوئه می‌گوید: «je cherche une robe et un foulard» و «Papa peut te prêter une cravate»."}
+{"type":"find","prompt":"کدام جمله می‌گوید مرکز خرید حراج دارد؟","correct_sentence":3,"explanation_fa":"کلوئه می‌گوید: «Il y a des soldes au centre commercial.»، یعنی مرکز خرید حراج دارد."}
+{"type":"order","prompt":"این‌ها را به ترتیب پیام بچین.","items":["کلوئه می‌گوید بابا کراوات قرض می‌دهد.","کلوئه از عروسی می‌گوید.","کلوئه ساعت قرار را می‌گوید.","کلوئه از حراج مرکز خرید می‌گوید."],"correct_order":[1,3,0,2],"explanation_fa":"اول «le mariage de notre cousin Hugo»، بعد «Il y a des soldes»، بعد «Papa peut te prêter une cravate» و آخر «Rendez-vous à 14 heures»."}
+listening A:
+{"type":"num","prompt":"قرارشان ساعت چند است؟","answer":"14","accepted":["14","14h","14:00","2","quatorze"],"explanation_fa":"کلوئه می‌گوید: «Rendez-vous à 14 heures»، یعنی ساعت چهارده."}
+{"type":"mcq","prompt":"کجا قرار می‌گذارند؟","options":["جلوی ایستگاه قطار","جلوی سینما","جلوی خانه","جلوی کتاب‌فروشی"],"correct":3,"explanation_fa":"کلوئه می‌گوید: «devant la librairie»، یعنی جلوی کتاب‌فروشی."}
+{"type":"tf","prompt":"عروسی شنبه است.","correct":true,"explanation_fa":"کلوئه می‌گوید: «Samedi, c'est le mariage»، یعنی شنبه عروسی است."}
+{"type":"tf","prompt":"کلوئه می‌خواهد امروز به خرید برود.","correct":false,"explanation_fa":"کلوئه می‌پرسد: «On fait les magasins demain ?»، یعنی فردا برویم خرید؟"}
+listening B:
+{"type":"dict","sentence":5}
+{"type":"mcq","prompt":"کلوئه دنبال چه چیزهایی است؟","options":["یک کت و یک کراوات","یک شال‌گردن و دستکش","یک پیراهن و یک روسری","یک کفش و یک کیف"],"correct":2,"explanation_fa":"کلوئه می‌گوید: «je cherche une robe et un foulard»، یعنی دنبال یک پیراهن زنانه و یک روسری هستم."}
+{"type":"tf","prompt":"در مرکز خرید حراج است.","correct":true,"explanation_fa":"کلوئه می‌گوید: «Il y a des soldes au centre commercial.»"}
+{"type":"tf","prompt":"بابا کت و شلوارش را به لویی قرض می‌دهد.","correct":false,"explanation_fa":"کلوئه می‌گوید: «Papa peut te prêter une cravate.»، یعنی بابا کراوات قرض می‌دهد، نه کت و شلوار."}

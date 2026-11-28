@@ -1,0 +1,35 @@
+code: fr-a2-t050
+title: Qui fait quoi ?
+band: 2
+kind: schedule
+sentences:
+- Qui fait quoi chez les Martin ? | در خانهٔ خانوادهٔ مارتن چه کسی چه کاری می‌کند؟
+- Lundi : Papa fait les courses, et Emma met la table. | دوشنبه: بابا خرید می‌کند و اِما میز را می‌چیند.
+- Mardi : Maman fait la lessive, et Louis s'occupe de la poubelle. | سه‌شنبه: مامان لباس‌ها را می‌شوید و سطل زباله با لویی است.
+- Mercredi : Emma et Louis rangent leurs chambres. | چهارشنبه: اِما و لویی اتاق‌هایشان را مرتب می‌کنند.
+- Jeudi : Papa fait la vaisselle après le dîner. | پنجشنبه: بابا بعد از شام ظرف‌ها را می‌شوید.
+- Vendredi : Maman et Louis nettoient la salle de bain. | جمعه: مامان و لویی حمام را تمیز می‌کنند.
+- Samedi matin : tout le monde fait le ménage ensemble ! | شنبه صبح: همه با هم خانه را تمیز می‌کنند!
+- Samedi après-midi : on va au parc ou au cinéma. | شنبه بعدازظهر: به پارک یا سینما می‌رویم.
+- Dimanche : personne ne travaille ! On se repose. | یکشنبه: هیچ‌کس کار نمی‌کند! استراحت می‌کنیم.
+- Attention : l'enfant qui ne range pas sa chambre ne regarde pas la télé le dimanche ! | حواستان باشد: بچه‌ای که اتاقش را مرتب نکند، یکشنبه تلویزیون نمی‌بیند!
+reading A:
+{"type":"mcq","prompt":"این متن چیست؟","options":["برنامهٔ کلاس‌های یک مدرسه","برنامهٔ سفر یک خانواده","فهرست خرید یک هفته","برنامهٔ کارهای خانهٔ یک خانواده"],"correct":3,"explanation_fa":"عنوان متن «Qui fait quoi chez les Martin ?» است، یعنی در خانهٔ مارتن‌ها چه کسی چه کاری می‌کند، و بعد کار هر روز آمده است."}
+{"type":"tf","prompt":"مامان سه‌شنبه لباس‌ها را می‌شوید.","correct":true,"explanation_fa":"در برنامه آمده: «Mardi : Maman fait la lessive»، یعنی سه‌شنبه مامان لباس‌ها را می‌شوید."}
+{"type":"tf","prompt":"بابا دوشنبه ظرف‌ها را می‌شوید.","correct":false,"explanation_fa":"در برنامه آمده: «Lundi : Papa fait les courses»؛ بابا دوشنبه خرید می‌کند و ظرف‌ها را پنجشنبه می‌شوید."}
+{"type":"find","prompt":"کدام جمله می‌گوید یکشنبه هیچ‌کس کار نمی‌کند؟","correct_sentence":8,"explanation_fa":"در برنامه آمده: «Dimanche : personne ne travaille !»، یعنی یکشنبه هیچ‌کس کار نمی‌کند."}
+reading B:
+{"type":"match","prompt":"هر روز را به یکی از کارهای آن روز وصل کن.","left":["دوشنبه","چهارشنبه","جمعه"],"right":["اِما میز را می‌چیند","بچه‌ها اتاق‌هایشان را مرتب می‌کنند","حمام را تمیز می‌کنند","بابا ظرف‌ها را می‌شوید"],"pairs":[[0,0],[1,1],[2,2]],"explanation_fa":"در برنامه آمده: «Lundi : … Emma met la table»، «Mercredi : Emma et Louis rangent leurs chambres» و «Vendredi : … nettoient la salle de bain»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Mardi : Maman fait la {{1}}, et Louis s'occupe de la {{2}}.","bank":["lessive","poubelle","vaisselle","chambre","table"],"answers":["lessive","poubelle"],"explanation_fa":"در برنامه آمده: «Mardi : Maman fait la lessive, et Louis s'occupe de la poubelle.»"}
+{"type":"mcq","prompt":"چه کسانی حمام را تمیز می‌کنند؟","options":["مامان و لویی","بابا و اِما","اِما و لویی","همهٔ خانواده"],"correct":0,"explanation_fa":"در برنامه آمده: «Vendredi : Maman et Louis nettoient la salle de bain.»"}
+{"type":"order","prompt":"این کارها را به ترتیب روزهای هفته بچین.","items":["اِما و لویی اتاق‌هایشان را مرتب می‌کنند.","بابا ظرف‌ها را می‌شوید.","لویی کار سطل زباله را انجام می‌دهد.","همه با هم خانه را تمیز می‌کنند."],"correct_order":[2,0,1,3],"explanation_fa":"سه‌شنبه «s'occupe de la poubelle»، چهارشنبه «rangent leurs chambres»، پنجشنبه «fait la vaisselle» و شنبه «tout le monde fait le ménage»."}
+listening A:
+{"type":"mcq","prompt":"شنبه صبح چه کسی خانه را تمیز می‌کند؟","options":["همه با هم","فقط مامان","بابا و لویی","فقط بچه‌ها"],"correct":0,"explanation_fa":"می‌شنویم: «Samedi matin : tout le monde fait le ménage ensemble !»، یعنی همه با هم."}
+{"type":"tf","prompt":"اِما و لویی چهارشنبه اتاق‌هایشان را مرتب می‌کنند.","correct":true,"explanation_fa":"می‌شنویم: «Mercredi : Emma et Louis rangent leurs chambres.»"}
+{"type":"tf","prompt":"خانواده شنبه بعدازظهر به باغ‌وحش می‌رود.","correct":false,"explanation_fa":"می‌شنویم: «Samedi après-midi : on va au parc ou au cinéma.»، یعنی به پارک یا سینما می‌روند."}
+{"type":"mcq","prompt":"بچه‌ای که اتاقش را مرتب نکند، یکشنبه چه کاری نمی‌کند؟","options":["به پارک نمی‌رود","با دوستانش بازی نمی‌کند","بستنی نمی‌خورد","تلویزیون نمی‌بیند"],"correct":3,"explanation_fa":"می‌شنویم: «l'enfant qui ne range pas sa chambre ne regarde pas la télé le dimanche»، یعنی یکشنبه تلویزیون نمی‌بیند."}
+listening B:
+{"type":"mcq","prompt":"بابا دوشنبه چه کار می‌کند؟","options":["ظرف‌ها را می‌شوید","میز را می‌چیند","خرید می‌کند","لباس‌ها را می‌شوید"],"correct":2,"explanation_fa":"می‌شنویم: «Lundi : Papa fait les courses»، یعنی دوشنبه بابا خرید می‌کند."}
+{"type":"tf","prompt":"یکشنبه همه استراحت می‌کنند.","correct":true,"explanation_fa":"می‌شنویم: «Dimanche : personne ne travaille ! On se repose.»"}
+{"type":"tf","prompt":"مامان پنجشنبه ظرف‌ها را می‌شوید.","correct":false,"explanation_fa":"می‌شنویم: «Jeudi : Papa fait la vaisselle»؛ پنجشنبه بابا ظرف‌ها را می‌شوید، نه مامان."}
+{"type":"order","prompt":"این کارها را به ترتیب روزهای هفته بچین.","items":["لباس‌شویی","خرید","ظرف‌شویی","تمیز کردن حمام"],"correct_order":[1,0,2,3],"explanation_fa":"دوشنبه «fait les courses»، سه‌شنبه «fait la lessive»، پنجشنبه «fait la vaisselle» و جمعه «nettoient la salle de bain»."}
