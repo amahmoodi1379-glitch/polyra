@@ -1,0 +1,36 @@
+code: fr-a2-t063
+title: En panne
+band: 2
+kind: phone_call
+sentences:
+A: Salut Marie, c'est Pierre. Je vais être en retard ce matin. | سلام ماری، پی‌یر هستم. امروز صبح دیر می‌رسم.
+A: Ma voiture est tombée en panne sur la route. | ماشینم توی جاده خراب شد.
+B: Oh non ! Tu n'as pas eu d'accident, j'espère ? | ای وای! امیدوارم تصادف نکرده باشی؟
+A: Non, ça va. C'est juste une panne d'essence ! | نه، خوبم. فقط بنزین تمام کرده‌ام!
+B: Ah ! Et maintenant, tu fais comment ? | آهان! حالا چه کار می‌کنی؟
+A: Je laisse la voiture ici et je prends le métro. | ماشین را همین‌جا می‌گذارم و با مترو می‌آیم.
+B: Descends à la station Gare{gare} de Lyon. Le matin, il y a beaucoup de passagers sur le quai. | در ایستگاه «گار دو لیون» پیاده شو. صبح‌ها روی سکو مسافر خیلی زیاد است.
+B: Après, tu peux prendre le bus 20 : l'arrêt est juste devant la gare. | بعد می‌توانی اتوبوس ۲۰ را بگیری؛ ایستگاهش درست جلوی ایستگاه قطار است. | tts: Après, tu peux prendre le bus vingt : l'arrêt est juste devant la gare.
+B: Ou tu viens à pied, c'est mieux : dix minutes, pas plus. | یا پیاده بیا، این بهتر است: ده دقیقه، نه بیشتر.
+A: D'accord, à pied ! J'arrive vers 10 heures. Tu peux expliquer ça à Monsieur Dubois ? | باشد، پیاده! حدود ساعت ۱۰ می‌رسم. می‌توانی این را به آقای دوبوا توضیح بدهی؟ | tts: D'accord, à pied ! J'arrive vers dix heures. Tu peux expliquer ça à Monsieur Dubois ?
+B: Pas de problème. À tout à l'heure ! | مشکلی نیست. فعلاً، می‌بینمت!
+reading A:
+{"type":"mcq","prompt":"پی‌یر چرا به ماری زنگ می‌زند؟","options":["چون امروز صبح دیر به اداره می‌رسد","چون می‌خواهد ماشین ماری را قرض بگیرد","چون در مترو گم شده است","چون امروز مریض است و نمی‌آید"],"correct":0,"explanation_fa":"پی‌یر می‌گوید: «Je vais être en retard ce matin.»، یعنی امروز صبح دیر می‌رسم."}
+{"type":"tf","prompt":"پی‌یر تصادف کرده است.","correct":false,"explanation_fa":"وقتی ماری دربارهٔ تصادف می‌پرسد، پی‌یر جواب می‌دهد: «Non, ça va. C'est juste une panne d'essence !»"}
+{"type":"tf","prompt":"ماشین پی‌یر بنزین ندارد.","correct":true,"explanation_fa":"پی‌یر می‌گوید: «C'est juste une panne d'essence !»، یعنی فقط بنزین تمام کرده‌ام."}
+{"type":"find","prompt":"کدام جمله می‌گوید ایستگاه اتوبوس کجاست؟","correct_sentence":7,"explanation_fa":"ماری می‌گوید: «l'arrêt est juste devant la gare»، یعنی ایستگاه اتوبوس درست جلوی ایستگاه قطار است."}
+reading B:
+{"type":"match","prompt":"هر چیز را به چیزی که ماری دربارهٔ آن می‌گوید وصل کن.","left":["ایستگاه گار دو لیون","اتوبوس ۲۰","پیاده رفتن"],"right":["ایستگاهش جلوی ایستگاه قطار است","بهتر است و ده دقیقه طول می‌کشد","صبح‌ها روی سکویش مسافر زیاد است","خیلی گران است"],"pairs":[[0,2],[1,0],[2,1]],"explanation_fa":"ماری می‌گوید روی سکو «beaucoup de passagers» هست، برای اتوبوس «l'arrêt est juste devant la gare» و پیاده رفتن «c'est mieux : dix minutes»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Mais attention : le matin, il y a beaucoup de {{1}} sur le {{2}}.","bank":["passagers","quai","camions","bureau","accidents"],"answers":["passagers","quai"],"explanation_fa":"ماری می‌گوید: «le matin, il y a beaucoup de passagers sur le quai.»"}
+{"type":"mcq","prompt":"پی‌یر آخر چطور از ایستگاه قطار به اداره می‌رود؟","options":["با اتوبوس ۲۰","با ماشین ماری","پیاده","با تاکسی"],"correct":2,"explanation_fa":"وقتی ماری می‌گوید پیاده آمدن بهتر است، پی‌یر جواب می‌دهد: «D'accord, à pied !»، یعنی باشد، پیاده می‌آیم."}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["پی‌یر می‌گوید با مترو می‌آید.","پی‌یر می‌گوید ماشینش خراب شده است.","ماری می‌گوید پیاده رفتن بهتر است.","ماری دربارهٔ تصادف می‌پرسد."],"correct_order":[1,3,0,2],"explanation_fa":"اول «Ma voiture est tombée en panne»، بعد «Tu n'as pas eu d'accident ?»، بعد «je prends le métro» و آخر «c'est mieux»."}
+listening A:
+{"type":"mcq","prompt":"ماشین پی‌یر کجا خراب شد؟","options":["در پارکینگ اداره","توی جاده","جلوی ایستگاه قطار","جلوی خانه‌اش"],"correct":1,"explanation_fa":"پی‌یر می‌گوید: «Ma voiture est tombée en panne sur la route.»، یعنی ماشینم توی جاده خراب شد."}
+{"type":"num","prompt":"پی‌یر حدود ساعت چند به اداره می‌رسد؟","answer":"10","accepted":["10","dix"],"explanation_fa":"پی‌یر می‌گوید: «J'arrive vers 10 heures.»، یعنی حدود ساعت ده می‌رسم."}
+{"type":"tf","prompt":"پی‌یر ماشینش را همان‌جا می‌گذارد و با مترو می‌آید.","correct":true,"explanation_fa":"پی‌یر می‌گوید: «Je laisse la voiture ici et je prends le métro.»"}
+{"type":"tf","prompt":"ماری می‌گوید صبح‌ها مترو خلوت است.","correct":false,"explanation_fa":"ماری می‌گوید: «le matin, il y a beaucoup de passagers sur le quai»، یعنی صبح‌ها مسافر خیلی زیاد است."}
+listening B:
+{"type":"num","prompt":"شمارهٔ اتوبوسی که ماری می‌گوید چند است؟","answer":"20","accepted":["20","vingt"],"explanation_fa":"ماری می‌گوید: «tu peux prendre le bus 20»، یعنی می‌توانی اتوبوس بیست را بگیری."}
+{"type":"mcq","prompt":"پیاده رفتن از ایستگاه تا اداره چقدر طول می‌کشد؟","options":["پنج دقیقه","بیست دقیقه","یک ساعت","ده دقیقه"],"correct":3,"explanation_fa":"ماری می‌گوید: «dix minutes, pas plus»، یعنی ده دقیقه، نه بیشتر."}
+{"type":"tf","prompt":"پی‌یر از ماری می‌خواهد موضوع را به آقای دوبوا توضیح بدهد.","correct":true,"explanation_fa":"پی‌یر می‌پرسد: «Tu peux expliquer ça à Monsieur Dubois ?»، یعنی می‌توانی این را به آقای دوبوا توضیح بدهی؟"}
+{"type":"tf","prompt":"ماری می‌گوید اتوبوس بهتر از پیاده رفتن است.","correct":false,"explanation_fa":"ماری دربارهٔ پیاده رفتن می‌گوید: «c'est mieux»، یعنی پیاده رفتن بهتر است."}

@@ -1,0 +1,36 @@
+code: fr-a2-t069
+title: Première semaine de stage
+band: 2
+kind: schedule
+sentences:
+- Bienvenue, Camille ! Voici votre première semaine de stage. | خوش آمدید، کامی! این هم هفتهٔ اول کارآموزی شما.
+- Lundi, 9 heures : le directeur, Monsieur Dubois, vous attend dans son bureau. | دوشنبه، ساعت ۹: مدیر، آقای دوبوا، در دفترش منتظر شماست. | tts: Lundi, neuf heures : le directeur, Monsieur Dubois, vous attend dans son bureau.
+- Lundi après-midi : vous rencontrez vos collègues du{du-contr} bureau. | دوشنبه بعدازظهر: با همکاران اداره آشنا می‌شوید.
+- Mardi : une journée à l'usine avec les ouvriers. | سه‌شنبه: یک روز در کارخانه با کارگرها.
+- Mercredi, 10 heures : réunion avec les employés du{du-contr} bureau. | چهارشنبه، ساعت ۱۰: جلسه با کارمندان اداره. | tts: Mercredi, dix heures : réunion avec les employés du bureau.
+- Jeudi : vous travaillez sur un nouveau projet avec Julie, qui a beaucoup d'expérience. | پنجشنبه: با ژولی، که تجربهٔ زیادی دارد، روی یک پروژهٔ جدید کار می‌کنید.
+- Vendredi, 16 heures : un café avec le directeur. Vous parlez de votre semaine. | جمعه، ساعت ۱۶: قهوه با مدیر. دربارهٔ هفته‌تان حرف می‌زنید. | tts: Vendredi, seize heures : un café avec le directeur. Vous parlez de votre semaine.
+- Vos horaires : de 9 heures à 17 heures, avec une heure pour le déjeuner. | ساعت‌های کارتان: از ۹ تا ۱۷، با یک ساعت برای ناهار. | tts: Vos horaires : de neuf heures à dix-sept heures, avec une heure pour le déjeuner.
+- Le restaurant de l'entreprise est au rez-de-chaussée. | رستوران شرکت در طبقهٔ همکف است.
+- Votre salaire de stage : 600 euros par mois. | حقوق کارآموزی شما: ماهی ۶۰۰ یورو. | tts: Votre salaire de stage : six cents euros par mois.
+- Bonne semaine ! | هفتهٔ خوبی داشته باشید!
+reading A:
+{"type":"mcq","prompt":"این متن چیست؟","options":["آگهی استخدام یک شرکت","برنامهٔ هفتهٔ اول یک کارآموز","نامهٔ یک کارگر به مدیرش","فهرست غذای رستوران شرکت"],"correct":1,"explanation_fa":"متن با «Voici votre première semaine de stage.» شروع می‌شود، یعنی این هم هفتهٔ اول کارآموزی شما، و بعد برنامهٔ هر روز آمده است."}
+{"type":"tf","prompt":"کامی سه‌شنبه در کارخانه است.","correct":true,"explanation_fa":"در برنامه آمده: «Mardi : une journée à l'usine avec les ouvriers.»، یعنی سه‌شنبه یک روز در کارخانه."}
+{"type":"tf","prompt":"جلسهٔ چهارشنبه با کارگرهای کارخانه است.","correct":false,"explanation_fa":"در برنامه آمده: «réunion avec les employés du bureau»، یعنی جلسه با کارمندان اداره است، نه کارگرها."}
+{"type":"find","prompt":"کدام جمله می‌گوید کامی برای کارآموزی چقدر پول می‌گیرد؟","correct_sentence":9,"explanation_fa":"در برنامه آمده: «Votre salaire de stage : 600 euros par mois.»، یعنی ماهی ششصد یورو."}
+reading B:
+{"type":"match","prompt":"هر روز را به برنامهٔ آن وصل کن.","left":["دوشنبه صبح","سه‌شنبه","پنجشنبه","جمعه"],"right":["یک روز در کارخانه","قهوه با مدیر","کار روی یک پروژهٔ جدید","دیدار با مدیر در دفترش","ناهار در طبقهٔ همکف"],"pairs":[[0,3],[1,0],[2,2],[3,1]],"explanation_fa":"در برنامه آمده: دوشنبه «le directeur… vous attend dans son bureau»، سه‌شنبه «une journée à l'usine»، پنجشنبه «un nouveau projet» و جمعه «un café avec le directeur»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Jeudi : vous travaillez sur un nouveau {{1}} avec Julie, qui a beaucoup d'{{2}}.","bank":["projet","expérience","salaire","stage","usine"],"answers":["projet","expérience"],"explanation_fa":"در برنامه آمده: «Jeudi : vous travaillez sur un nouveau projet avec Julie, qui a beaucoup d'expérience.»"}
+{"type":"mcq","prompt":"دربارهٔ ژولی چه می‌دانیم؟","options":["مدیر شرکت است","در کارخانه کار می‌کند","تازه کارآموز شده است","تجربهٔ زیادی دارد"],"correct":3,"explanation_fa":"در برنامه آمده: «Julie, qui a beaucoup d'expérience»، یعنی ژولی تجربهٔ زیادی دارد."}
+{"type":"mcq","prompt":"رستوران شرکت کجاست؟","options":["در طبقهٔ همکف","روبه‌روی کارخانه","در طبقهٔ آخر","کنار دفتر مدیر"],"correct":0,"explanation_fa":"در برنامه آمده: «Le restaurant de l'entreprise est au rez-de-chaussée.»، یعنی در طبقهٔ همکف."}
+listening A:
+{"type":"num","prompt":"حقوق کارآموزی کامی ماهی چند یورو است؟","answer":"600","accepted":["600","six cents"],"explanation_fa":"می‌شنویم: «Votre salaire de stage : 600 euros par mois.»، یعنی ماهی ششصد یورو."}
+{"type":"mcq","prompt":"کامی دوشنبه بعدازظهر چه کار می‌کند؟","options":["با همکاران اداره آشنا می‌شود","با کارگرها کار می‌کند","با مدیر قهوه می‌خورد","روی پروژهٔ جدید کار می‌کند"],"correct":0,"explanation_fa":"می‌شنویم: «Lundi après-midi : vous rencontrez vos collègues du bureau.»، یعنی با همکاران اداره آشنا می‌شوید."}
+{"type":"tf","prompt":"کامی جمعه با مدیر دربارهٔ هفته‌اش حرف می‌زند.","correct":true,"explanation_fa":"می‌شنویم: «un café avec le directeur. Vous parlez de votre semaine.»، یعنی با مدیر دربارهٔ هفته‌تان حرف می‌زنید."}
+{"type":"tf","prompt":"ساعت کار کامی از ۹ تا ۱۸ است.","correct":false,"explanation_fa":"می‌شنویم: «de 9 heures à 17 heures»، یعنی از ساعت نه تا هفده، نه تا هجده."}
+listening B:
+{"type":"num","prompt":"جلسهٔ چهارشنبه ساعت چند است؟","answer":"10","accepted":["10","dix","10h"],"explanation_fa":"می‌شنویم: «Mercredi, 10 heures : réunion»، یعنی جلسه ساعت ده است."}
+{"type":"mcq","prompt":"کامی برای ناهار چقدر وقت دارد؟","options":["نیم ساعت","دو ساعت","ده دقیقه","یک ساعت"],"correct":3,"explanation_fa":"می‌شنویم: «avec une heure pour le déjeuner»، یعنی با یک ساعت برای ناهار."}
+{"type":"tf","prompt":"اسم مدیر آقای دوبوا است.","correct":true,"explanation_fa":"می‌شنویم: «le directeur, Monsieur Dubois»، یعنی مدیر آقای دوبوا است."}
+{"type":"tf","prompt":"کامی سه‌شنبه در اداره کار می‌کند.","correct":false,"explanation_fa":"می‌شنویم: «Mardi : une journée à l'usine avec les ouvriers.»؛ سه‌شنبه در کارخانه است، نه در اداره."}

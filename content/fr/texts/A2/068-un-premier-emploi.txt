@@ -1,0 +1,37 @@
+code: fr-a2-t068
+title: Un premier emploi
+band: 2
+kind: email
+sentences:
+- Salut Ali ! | سلام علی!
+- J'ai enfin trouvé du travail ! | بالاخره کار پیدا کردم!
+- Depuis lundi, je travaille dans une petite entreprise à Toulouse. | از دوشنبه در یک شرکت کوچک در تولوز کار می‌کنم.
+- C'est mon premier emploi en France, et je suis très content. | این اولین شغلم در فرانسه است و خیلی خوشحالم.
+- Le patron a soixante ans, et il est très gentil. | صاحب‌کارم شصت سال دارد و خیلی مهربان است.
+- Mon chef, Martin, est plus jeune. Il m'aide beaucoup. | رئیسم، مارتن، جوان‌تر است. خیلی کمکم می‌کند.
+- Le travail est intéressant, mais les journées sont longues : je finis à 18 heures. | کار جالب است، ولی روزها طولانی است؛ ساعت ۱۸ کارم تمام می‌شود. | tts: Le travail est intéressant, mais les journées sont longues : je finis à dix-huit heures.
+- À midi, on mange ensemble dans un petit restaurant près du{du-contr} bureau. | ظهرها با هم در یک رستوران کوچک نزدیک اداره غذا می‌خوریم.
+- Après le travail, je fais souvent une promenade en ville. | بعد از کار، اغلب در شهر قدم می‌زنم.
+- Pour moi, Toulouse est la plus belle ville du{du-contr} sud ! | به نظر من، تولوز زیباترین شهر جنوب است!
+- Tu viens me voir bientôt ? On peut faire un tour ensemble ! | به‌زودی به دیدنم می‌آیی؟ می‌توانیم با هم گشتی بزنیم!
+- À bientôt, Reza | به امید دیدار، رضا
+reading A:
+{"type":"mcq","prompt":"رضا در این ایمیل چه خبری می‌دهد؟","options":["خانه‌اش را عوض کرده است","در دانشگاه تولوز درس می‌خواند","بالاخره کار پیدا کرده است","برای تعطیلات به تولوز رفته است"],"correct":2,"explanation_fa":"رضا می‌نویسد: «J'ai enfin trouvé du travail !»، یعنی بالاخره کار پیدا کردم."}
+{"type":"tf","prompt":"این اولین شغل رضا در فرانسه است.","correct":true,"explanation_fa":"رضا می‌نویسد: «C'est mon premier emploi en France»، یعنی این اولین شغلم در فرانسه است."}
+{"type":"tf","prompt":"رئیس رضا از صاحب‌کارش پیرتر است.","correct":false,"explanation_fa":"صاحب‌کار شصت سال دارد و رضا دربارهٔ رئیسش می‌نویسد: «Mon chef, Martin, est plus jeune.»، یعنی جوان‌تر است."}
+{"type":"find","prompt":"کدام جمله می‌گوید کار رضا ساعت چند تمام می‌شود؟","correct_sentence":6,"explanation_fa":"رضا می‌نویسد: «je finis à 18 heures»، یعنی ساعت هجده کارم تمام می‌شود."}
+reading B:
+{"type":"match","prompt":"هر کس یا هر چیز را به چیزی که رضا دربارهٔ آن می‌گوید وصل کن.","left":["صاحب‌کار","مارتن","تولوز"],"right":["خیلی کمکش می‌کند","شصت سال دارد","زیباترین شهر جنوب است","در یک رستوران کار می‌کند"],"pairs":[[0,1],[1,0],[2,2]],"explanation_fa":"رضا می‌نویسد: «Le patron a soixante ans»، دربارهٔ مارتن «Il m'aide beaucoup» و «Toulouse est la plus belle ville du sud»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Depuis lundi, je travaille dans une petite {{1}} à Toulouse. C'est mon premier {{2}} en France.","bank":["entreprise","emploi","promenade","ville","bureau"],"answers":["entreprise","emploi"],"explanation_fa":"رضا می‌نویسد: «Depuis lundi, je travaille dans une petite entreprise à Toulouse. C'est mon premier emploi en France.»"}
+{"type":"mcq","prompt":"رضا ظهرها کجا غذا می‌خورد؟","options":["در خانه، تنهایی","در رستورانی نزدیک اداره","پشت میز کارش در اداره","در پارکی نزدیک اداره"],"correct":1,"explanation_fa":"رضا می‌نویسد: «À midi, on mange ensemble dans un petit restaurant près du bureau.»"}
+{"type":"order","prompt":"این‌ها را به ترتیبی که در ایمیل آمده بچین.","items":["از زیبایی تولوز می‌گوید.","از صاحب‌کارش می‌گوید.","از علی می‌خواهد به دیدنش بیاید.","می‌گوید کار پیدا کرده است."],"correct_order":[3,1,0,2],"explanation_fa":"اول «J'ai enfin trouvé du travail»، بعد «Le patron a soixante ans»، بعد «Toulouse est la plus belle ville du sud» و آخر «Tu viens me voir bientôt ?»."}
+listening A:
+{"type":"mcq","prompt":"رضا از کی در این شرکت کار می‌کند؟","options":["از ماه پیش","از دیروز","از سال پیش","از دوشنبه"],"correct":3,"explanation_fa":"رضا می‌گوید: «Depuis lundi, je travaille dans une petite entreprise»، یعنی از دوشنبه."}
+{"type":"num","prompt":"صاحب‌کار رضا چند سال دارد؟","answer":"60","accepted":["60","soixante"],"explanation_fa":"رضا می‌گوید: «Le patron a soixante ans»، یعنی صاحب‌کارم شصت سال دارد."}
+{"type":"tf","prompt":"به نظر رضا کارش جالب است.","correct":true,"explanation_fa":"رضا می‌گوید: «Le travail est intéressant»، یعنی کار جالب است."}
+{"type":"tf","prompt":"روزهای کاری رضا کوتاه است.","correct":false,"explanation_fa":"رضا می‌گوید: «les journées sont longues»، یعنی روزها طولانی است."}
+listening B:
+{"type":"num","prompt":"رضا ساعت چند کارش را تمام می‌کند؟","answer":"18","accepted":["18","dix-huit","18h"],"explanation_fa":"رضا می‌گوید: «je finis à 18 heures»، یعنی ساعت هجده تمام می‌کنم."}
+{"type":"mcq","prompt":"رضا بعد از کار اغلب چه کار می‌کند؟","options":["در شهر قدم می‌زند","به باشگاه ورزشی می‌رود","به خانه می‌رود و می‌خوابد","با رئیسش شام می‌خورد"],"correct":0,"explanation_fa":"رضا می‌گوید: «Après le travail, je fais souvent une promenade en ville.»، یعنی اغلب در شهر قدم می‌زنم."}
+{"type":"tf","prompt":"رضا در یک شرکت بزرگ کار می‌کند.","correct":false,"explanation_fa":"رضا می‌گوید: «je travaille dans une petite entreprise»، یعنی در یک شرکت کوچک کار می‌کنم."}
+{"type":"tf","prompt":"رضا دوست دارد علی به دیدنش بیاید.","correct":true,"explanation_fa":"رضا می‌پرسد: «Tu viens me voir bientôt ?»، یعنی به‌زودی به دیدنم می‌آیی؟"}

@@ -1,0 +1,40 @@
+code: fr-a2-t075
+title: Je voudrais m'inscrire
+band: 2
+kind: phone_call
+placement: yes
+sentences:
+A: Bonjour madame, je m'appelle Ali Karimi. Je voudrais m'inscrire à un cours de français. | سلام خانم، اسم من علی کریمی است. می‌خواستم در یک کلاس فرانسه ثبت‌نام کنم.
+B: Bonjour ! Vous avez déjà étudié le français ? | سلام! قبلاً فرانسه خوانده‌اید؟
+A: Oui, pendant deux ans, en Iran. Je comprends bien, mais je fais beaucoup de fautes de grammaire. | بله، دو سال، در ایران. خوب می‌فهمم، ولی غلط دستوری زیاد دارم.
+B: Pas de problème ! Les professeurs corrigent vos devoirs avec vous. | مشکلی نیست! معلم‌ها تکلیف‌هایتان را با خودتان تصحیح می‌کنند.
+B: Pour vous, le cours du{du-contr} soir est le meilleur : grammaire, lecture et vocabulaire. | برای شما کلاس شبانه از همه بهتر است: دستور زبان، خواندن و واژگان.
+B: Votre professeur, Madame Martin, enseigne ici depuis dix ans. | معلمتان، خانم مارتن، ده سال است که این‌جا درس می‌دهد.
+A: En classe, on traduit beaucoup ? | سر کلاس زیاد ترجمه می‌کنید؟
+B: Non, on ne traduit pas. Pour Madame Martin, c'est une erreur ! | نه، ترجمه نمی‌کنیم. به نظر خانم مارتن، این کار اشتباه است!
+B: Le jeudi, on choisit un sujet et on parle ensemble. | پنجشنبه‌ها یک موضوع انتخاب می‌کنیم و با هم حرف می‌زنیم.
+A: Ça commence quand ? | کی شروع می‌شود؟
+B: Le 2 octobre : le lundi et le jeudi, de 19 heures à 21 heures. | دوم اکتبر: دوشنبه‌ها و پنجشنبه‌ها، از ساعت ۱۹ تا ۲۱. | tts: Le deux octobre : le lundi et le jeudi, de dix-neuf heures à vingt et une heures.
+B: Pour vous inscrire, venez avec votre passeport. | برای ثبت‌نام، با پاسپورتتان بیایید.
+reading A:
+{"type":"mcq","prompt":"علی چرا زنگ می‌زند؟","options":["برای پیدا کردن کار در یک مدرسه","برای ترجمهٔ پاسپورتش","برای ثبت‌نام در یک کلاس فرانسه","برای حرف زدن با خانم مارتن"],"correct":2,"explanation_fa":"علی می‌گوید: «Je voudrais m'inscrire à un cours de français.»، یعنی می‌خواستم در یک کلاس فرانسه ثبت‌نام کنم."}
+{"type":"tf","prompt":"علی قبلاً در ایران فرانسه خوانده است.","correct":true,"explanation_fa":"علی می‌گوید: «Oui, pendant deux ans, en Iran.»، یعنی بله، دو سال در ایران فرانسه خوانده‌ام."}
+{"type":"tf","prompt":"علی می‌گوید فرانسه را خوب نمی‌فهمد.","correct":false,"explanation_fa":"علی می‌گوید: «Je comprends bien»، یعنی خوب می‌فهمم؛ مشکلش غلط‌های دستوری است."}
+{"type":"find","prompt":"کدام جمله می‌گوید خانم مارتن چند سال است در این مدرسه درس می‌دهد؟","correct_sentence":5,"explanation_fa":"خانم پشت تلفن می‌گوید: «Madame Martin, enseigne ici depuis dix ans»، یعنی ده سال است که این‌جا درس می‌دهد."}
+{"type":"mcq","prompt":"کلاس شبانه چه درس‌هایی دارد؟","options":["دستور زبان، خواندن و واژگان","ترجمه، خواندن و نوشتن","دستور زبان، ترجمه و تاریخ","واژگان، جغرافیا و موسیقی"],"correct":0,"explanation_fa":"خانم پشت تلفن می‌گوید: «le cours du soir est le meilleur : grammaire, lecture et vocabulaire»."}
+reading B:
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Non, on ne {{1}} pas. Pour Madame Martin, c'est une {{2}} !","bank":["traduit","erreur","corrige","sujet","lecture"],"answers":["traduit","erreur"],"explanation_fa":"خانم پشت تلفن می‌گوید: «Non, on ne traduit pas. Pour Madame Martin, c'est une erreur !»"}
+{"type":"match","prompt":"هر زمان را به چیزی که در گفتگو دربارهٔ آن گفته می‌شود وصل کن.","left":["ساعت ۱۹","ساعت ۲۱","۲ اکتبر"],"right":["کلاس تمام می‌شود","کلاس شروع می‌شود","روز اول کلاس","روز امتحان"],"pairs":[[0,1],[1,0],[2,2]],"explanation_fa":"خانم پشت تلفن می‌گوید: «Le 2 octobre : le lundi et le jeudi, de 19 heures à 21 heures.»، یعنی کلاس از دوم اکتبر، از ساعت ۱۹ تا ۲۱ است."}
+{"type":"mcq","prompt":"چرا سر کلاس خانم مارتن ترجمه نمی‌کنند؟","options":["چون شاگردها دیکشنری ندارند","چون خانم مارتن فارسی بلد نیست","چون وقت کلاس خیلی کم است","چون به نظر خانم مارتن ترجمه اشتباه است"],"correct":3,"explanation_fa":"خانم پشت تلفن می‌گوید: «on ne traduit pas. Pour Madame Martin, c'est une erreur !»"}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["علی می‌پرسد کلاس کی شروع می‌شود.","علی می‌گوید غلط دستوری زیاد دارد.","به علی می‌گویند با پاسپورتش بیاید.","علی دربارهٔ ترجمه سر کلاس می‌پرسد."],"correct_order":[1,3,0,2],"explanation_fa":"اول «je fais beaucoup de fautes de grammaire»، بعد «En classe, on traduit beaucoup ?»، بعد «Ça commence quand ?» و آخر «venez avec votre passeport»."}
+listening A:
+{"type":"mcq","prompt":"معلم کلاس کیست؟","options":["آقای دوبوا","خانم مارتن","خانم دوبوا","آقای مارتن"],"correct":1,"explanation_fa":"خانم پشت تلفن می‌گوید: «Votre professeur, Madame Martin»، یعنی معلمتان خانم مارتن است."}
+{"type":"num","prompt":"خانم مارتن چند سال است این‌جا درس می‌دهد؟","answer":"10","accepted":["10","dix"],"explanation_fa":"می‌شنویم: «enseigne ici depuis dix ans»، یعنی ده سال است که این‌جا درس می‌دهد."}
+{"type":"tf","prompt":"سر کلاس زیاد ترجمه می‌کنند.","correct":false,"explanation_fa":"وقتی علی دربارهٔ ترجمه می‌پرسد، جواب می‌شنود: «Non, on ne traduit pas.»، یعنی نه، ترجمه نمی‌کنیم."}
+{"type":"tf","prompt":"معلم‌ها تکلیف‌ها را همراه شاگردها تصحیح می‌کنند.","correct":true,"explanation_fa":"می‌شنویم: «les professeurs corrigent vos devoirs avec vous»، یعنی معلم‌ها تکلیف‌هایتان را با خودتان تصحیح می‌کنند."}
+{"type":"mcq","prompt":"علی برای ثبت‌نام چه چیزی باید همراهش ببرد؟","options":["دفتر کلاسش","یک عکس از خودش","مدرک دانشگاهش","پاسپورتش"],"correct":3,"explanation_fa":"می‌شنویم: «Pour vous inscrire, venez avec votre passeport.»، یعنی برای ثبت‌نام با پاسپورتتان بیایید."}
+listening B:
+{"type":"num","prompt":"کلاس روز چندم اکتبر شروع می‌شود؟","answer":"2","accepted":["2","deux"],"explanation_fa":"می‌شنویم: «Le 2 octobre»، یعنی دوم اکتبر."}
+{"type":"mcq","prompt":"کلاس تا ساعت چند است؟","options":["تا ساعت ۱۹","تا ساعت ۲۰","تا ساعت ۲۱","تا ساعت ۲۲"],"correct":2,"explanation_fa":"می‌شنویم: «de 19 heures à 21 heures»، یعنی تا ساعت بیست‌ویک."}
+{"type":"tf","prompt":"پنجشنبه‌ها یک موضوع انتخاب می‌کنند و با هم حرف می‌زنند.","correct":true,"explanation_fa":"می‌شنویم: «Le jeudi, on choisit un sujet et on parle ensemble.»"}
+{"type":"tf","prompt":"علی دو سال در فرانسه، فرانسه خوانده است.","correct":false,"explanation_fa":"علی می‌گوید: «pendant deux ans, en Iran»؛ یعنی دو سال در ایران فرانسه خوانده، نه در فرانسه."}

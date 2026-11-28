@@ -1,0 +1,36 @@
+code: fr-a2-t062
+title: Sur l'autoroute
+band: 2
+kind: phone_call
+sentences:
+A: Allô, Thomas ? Tu es où ? On t'attend pour le dîner ! | الو، توما؟ کجایی؟ برای شام منتظرت هستیم!
+B: Je suis encore sur l'autoroute, près de Lyon. Il y a un gros embouteillage. | هنوز توی اتوبانم، نزدیک لیون. راه‌بندان بزرگی است.
+A: Encore ? Le vendredi soir, la circulation est toujours difficile. | باز هم؟ جمعه‌شب‌ها رفت‌وآمد ماشین‌ها همیشه سخت است.
+B: Oui. Devant moi, il y a trois camions, et les voitures vont à la vitesse d'un vélo ! | آره. جلوی من سه کامیون است و ماشین‌ها با سرعت یک دوچرخه می‌روند!
+B: Beaucoup de conducteurs sont en colère. | خیلی از راننده‌ها عصبانی‌اند.
+A: Tu arrives vers quelle heure ? | حدود چه ساعتی می‌رسی؟
+B: Vers 21 heures, je pense. Commencez sans moi ! | فکر می‌کنم حدود ساعت ۲۱. بدون من شروع کنید! | tts: Vers vingt et une heures, je pense. Commencez sans moi !
+A: D'accord. Mais tu es fatigué : ne conduis pas trop vite. | باشد. ولی خسته‌ای؛ خیلی تند رانندگی نکن.
+B: Ne t'inquiète pas. Léa est avec moi, et elle a son permis de conduire maintenant. | نگران نباش. لئا با من است و حالا گواهینامهٔ رانندگی دارد.
+A: Très bien ! Et tu peux te garer devant la maison : la rue est calme. | خیلی خوب! می‌توانی جلوی خانه پارک کنی؛ خیابان خلوت است.
+B: Merci. À tout à l'heure ! | ممنون. فعلاً، می‌بینمت!
+reading A:
+{"type":"mcq","prompt":"توما چرا دیر می‌کند؟","options":["چون ماشینش در جاده خراب شده","چون در اتوبان راه‌بندان است","چون گواهینامهٔ رانندگی ندارد","چون جای پارک پیدا نمی‌کند"],"correct":1,"explanation_fa":"توما می‌گوید: «Je suis encore sur l'autoroute… Il y a un gros embouteillage.»، یعنی هنوز توی اتوبانم و راه‌بندان بزرگی است."}
+{"type":"tf","prompt":"جلوی توما سه کامیون است.","correct":true,"explanation_fa":"توما می‌گوید: «Devant moi, il y a trois camions»، یعنی جلوی من سه کامیون است."}
+{"type":"tf","prompt":"لئا گواهینامهٔ رانندگی ندارد.","correct":false,"explanation_fa":"توما می‌گوید: «elle a son permis de conduire maintenant»، یعنی لئا حالا گواهینامه دارد."}
+{"type":"find","prompt":"کدام جمله می‌گوید خیلی از راننده‌ها عصبانی‌اند؟","correct_sentence":4,"explanation_fa":"توما می‌گوید: «Beaucoup de conducteurs sont en colère.»، یعنی خیلی از راننده‌ها عصبانی‌اند."}
+reading B:
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Je suis encore sur l'{{1}}, près de Lyon. Il y a un gros {{2}}.","bank":["autoroute","embouteillage","vitesse","garage","avenue"],"answers":["autoroute","embouteillage"],"explanation_fa":"توما می‌گوید: «Je suis encore sur l'autoroute, près de Lyon. Il y a un gros embouteillage.»"}
+{"type":"mcq","prompt":"ماشین‌ها در اتوبان با چه سرعتی می‌روند؟","options":["با سرعت یک قطار","با سرعت یک هواپیما","با سرعت یک دوچرخه","با سرعت یک موتور"],"correct":2,"explanation_fa":"توما می‌گوید: «les voitures vont à la vitesse d'un vélo»، یعنی ماشین‌ها با سرعت یک دوچرخه می‌روند."}
+{"type":"match","prompt":"هر مورد را به چیزی که در گفتگو دربارهٔ آن گفته می‌شود وصل کن.","left":["سه کامیون","خیلی از راننده‌ها","خیابان جلوی خانه"],"right":["عصبانی‌اند","خلوت است","جلوی توما هستند","خراب شده است"],"pairs":[[0,2],[1,0],[2,1]],"explanation_fa":"در گفتگو آمده: «Devant moi, il y a trois camions»، «Beaucoup de conducteurs sont en colère» و «la rue est calme»."}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["توما می‌گوید حدود ساعت ۲۱ می‌رسد.","توما می‌گوید هنوز در اتوبان است.","توما می‌گوید لئا گواهینامه دارد.","به توما می‌گویند جلوی خانه پارک کند."],"correct_order":[1,0,2,3],"explanation_fa":"اول «Je suis encore sur l'autoroute»، بعد «Vers 21 heures»، بعد «elle a son permis de conduire» و آخر «tu peux te garer devant la maison»."}
+listening A:
+{"type":"mcq","prompt":"توما الان کجاست؟","options":["در اتوبان","در خانه","در ایستگاه قطار","در پارکینگ"],"correct":0,"explanation_fa":"توما می‌گوید: «Je suis encore sur l'autoroute»، یعنی هنوز توی اتوبانم."}
+{"type":"num","prompt":"توما حدود ساعت چند می‌رسد؟","answer":"21","accepted":["21","21h","vingt et une"],"explanation_fa":"توما می‌گوید: «Vers 21 heures, je pense.»، یعنی فکر می‌کنم حدود ساعت بیست‌ویک."}
+{"type":"tf","prompt":"توما می‌گوید شام را بدون او شروع کنند.","correct":true,"explanation_fa":"توما می‌گوید: «Commencez sans moi !»، یعنی بدون من شروع کنید."}
+{"type":"tf","prompt":"جمعه‌شب‌ها رفت‌وآمد ماشین‌ها همیشه راحت است.","correct":false,"explanation_fa":"می‌شنویم: «Le vendredi soir, la circulation est toujours difficile.»، یعنی جمعه‌شب‌ها رفت‌وآمد همیشه سخت است."}
+listening B:
+{"type":"mcq","prompt":"به توما چه توصیه‌ای می‌کنند؟","options":["از اتوبان بیرون برود","با قطار بیاید","خیلی تند رانندگی نکند","کمی در ماشین بخوابد"],"correct":2,"explanation_fa":"به توما می‌گویند: «ne conduis pas trop vite»، یعنی خیلی تند رانندگی نکن."}
+{"type":"num","prompt":"چند کامیون جلوی توماست؟","answer":"3","accepted":["3","trois"],"explanation_fa":"توما می‌گوید: «Devant moi, il y a trois camions»، یعنی جلوی من سه کامیون است."}
+{"type":"tf","prompt":"لئا با توما در ماشین است.","correct":true,"explanation_fa":"توما می‌گوید: «Léa est avec moi»، یعنی لئا با من است."}
+{"type":"tf","prompt":"خیابان جلوی خانه شلوغ است.","correct":false,"explanation_fa":"به توما می‌گویند: «la rue est calme»، یعنی خیابان خلوت است."}

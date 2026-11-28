@@ -1,0 +1,37 @@
+code: fr-a2-t061
+title: Un week-end à Nice
+band: 2
+kind: email
+sentences:
+- Salut Camille ! | سلام کامی!
+- Samedi, on part à Nice pour le week-end ! | شنبه برای آخر هفته به نیس می‌رویم!
+- Mon frère Hugo conduit, et il passe chez toi à 8 heures. | برادرم هوگو رانندگی می‌کند و ساعت ۸ دنبالت می‌آید. | tts: Mon frère Hugo conduit, et il passe chez toi à huit heures.
+- Voici ma liste pour ta valise. | این هم فهرست من برای چمدانت.
+- Prends ton maillot de bain, un short et une casquette pour le soleil. | مایو، یک شلوارک و یک کلاه کپ برای آفتاب بردار.
+- Le soir, il fait un peu froid près de la mer, alors prends aussi un pull en coton. | شب‌ها نزدیک دریا کمی سرد است، پس یک پلیور نخی هم بردار.
+- N'oublie pas ton pyjama ! | پیژامه‌ات را فراموش نکن!
+- Dimanche, il va peut-être pleuvoir : mets un parapluie dans ton sac. | یکشنبه شاید باران ببارد؛ یک چتر توی کیفت بگذار.
+- Mais ne prends pas tes bijoux. | ولی جواهراتت را نیاور.
+- L'été dernier, j'ai perdu ma bague à la plage : elle était dans la poche de mon short ! | تابستان پارسال انگشترم را در ساحل گم کردم؛ توی جیب شلوارکم بود!
+- Et ne pense pas à la mode : là-bas, on va surtout nager et dormir ! | به مُد هم فکر نکن؛ آنجا بیشتر شنا می‌کنیم و می‌خوابیم!
+- À samedi ! Bises, Julie | تا شنبه! می‌بوسمت، ژولی
+reading A:
+{"type":"mcq","prompt":"ژولی چرا این ایمیل را نوشته است؟","options":["تا بگوید انگشترش را در ساحل پیدا کرده","تا بگوید کامی چه چیزهایی با خودش بیاورد","تا از کامی بخواهد آخر هفته رانندگی کند","تا بگوید سفر آخر هفته به نیس لغو شده"],"correct":1,"explanation_fa":"ژولی فهرستی برای چمدان کامی می‌نویسد: «Voici ma liste pour ta valise.»، یعنی این هم فهرست من برای چمدانت."}
+{"type":"tf","prompt":"برادر ژولی ماشین را می‌راند.","correct":true,"explanation_fa":"ژولی می‌نویسد: «Mon frère Hugo conduit»، یعنی برادرم هوگو رانندگی می‌کند."}
+{"type":"tf","prompt":"ژولی از کامی می‌خواهد جواهراتش را بیاورد.","correct":false,"explanation_fa":"ژولی می‌نویسد: «Mais ne prends pas tes bijoux.»، یعنی جواهراتت را نیاور."}
+{"type":"find","prompt":"کدام جمله می‌گوید ژولی انگشترش را کجا گم کرد؟","correct_sentence":9,"explanation_fa":"ژولی می‌نویسد: «j'ai perdu ma bague à la plage»، یعنی انگشترم را در ساحل گم کردم."}
+reading B:
+{"type":"match","prompt":"هر چیز را به دلیلش در ایمیل وصل کن.","left":["کلاه کپ","پلیور نخی","چتر"],"right":["برای باران یکشنبه","برای آفتاب","برای خواب","برای شب‌های کمی سرد"],"pairs":[[0,1],[1,3],[2,0]],"explanation_fa":"ژولی می‌نویسد کلاه کپ «pour le soleil» است، پلیور نخی برای این‌که «le soir, il fait un peu froid» و چتر برای این‌که «Dimanche, il va peut-être pleuvoir»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Le soir, il fait un peu froid près de la {{1}}, alors prends aussi un pull en {{2}}.","bank":["mer","coton","mode","bague","poche"],"answers":["mer","coton"],"explanation_fa":"در ایمیل آمده: «Le soir, il fait un peu froid près de la mer, alors prends aussi un pull en coton.»"}
+{"type":"mcq","prompt":"تابستان پارسال چه اتفاقی برای ژولی افتاد؟","options":["چترش را در ماشین جا گذاشت","پیژامه‌اش را در هتل جا گذاشت","انگشترش را در ساحل گم کرد","شلوارکش را در دریا گم کرد"],"correct":2,"explanation_fa":"ژولی می‌نویسد: «L'été dernier, j'ai perdu ma bague à la plage»؛ انگشتر توی جیب شلوارکش بود، ولی شلوارک گم نشد."}
+{"type":"mcq","prompt":"ژولی دربارهٔ مُد چه می‌گوید؟","options":["به مُد فکر نکن","لباس شیک و گران بیاور","مُد نیس با پاریس فرق دارد","یک کلاه مُد روز بخر"],"correct":0,"explanation_fa":"ژولی می‌نویسد: «ne pense pas à la mode»، یعنی به مُد فکر نکن، چون آنجا بیشتر شنا می‌کنند و می‌خوابند."}
+listening A:
+{"type":"mcq","prompt":"آن‌ها آخر هفته کجا می‌روند؟","options":["به پاریس","به لیون","به نیس","به مارسی"],"correct":2,"explanation_fa":"ژولی می‌گوید: «Samedi, on part à Nice pour le week-end !»، یعنی شنبه به نیس می‌رویم."}
+{"type":"num","prompt":"هوگو ساعت چند دنبال کامی می‌آید؟","answer":"8","accepted":["8","huit"],"explanation_fa":"ژولی می‌گوید: «il passe chez toi à 8 heures»، یعنی ساعت هشت دنبالت می‌آید."}
+{"type":"tf","prompt":"یکشنبه شاید باران ببارد.","correct":true,"explanation_fa":"ژولی می‌گوید: «Dimanche, il va peut-être pleuvoir»، یعنی یکشنبه شاید باران ببارد."}
+{"type":"tf","prompt":"ژولی می‌گوید شب‌ها نزدیک دریا هوا گرم است.","correct":false,"explanation_fa":"ژولی می‌گوید: «Le soir, il fait un peu froid près de la mer»، یعنی شب‌ها نزدیک دریا کمی سرد است."}
+listening B:
+{"type":"order","prompt":"این چیزها را به ترتیبی که می‌شنوی بچین.","items":["پیژامه","مایو","چتر","پلیور نخی"],"correct_order":[1,3,0,2],"explanation_fa":"اول «maillot de bain» می‌آید، بعد «pull en coton»، بعد «pyjama» و آخر «parapluie»."}
+{"type":"mcq","prompt":"ژولی می‌گوید آنجا بیشتر چه کار می‌کنند؟","options":["خرید می‌کنند و قدم می‌زنند","کار می‌کنند و درس می‌خوانند","غذا می‌پزند و مهمانی می‌دهند","شنا می‌کنند و می‌خوابند"],"correct":3,"explanation_fa":"ژولی می‌گوید: «on va surtout nager et dormir»، یعنی بیشتر شنا می‌کنیم و می‌خوابیم."}
+{"type":"tf","prompt":"ژولی پارسال انگشترش را گم کرد.","correct":true,"explanation_fa":"ژولی می‌گوید: «L'été dernier, j'ai perdu ma bague»، یعنی تابستان پارسال انگشترم را گم کردم."}
+{"type":"tf","prompt":"خود ژولی ماشین را می‌راند.","correct":false,"explanation_fa":"ژولی می‌گوید: «Mon frère Hugo conduit»؛ برادرش هوگو رانندگی می‌کند، نه خودش."}
