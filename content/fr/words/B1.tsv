@@ -30,6 +30,10 @@ lui-même	pron			خودِ او (مذکر)	خودِ او (مذکر)	function	no_c
 elle-même	pron			خودِ او (مؤنث)	خودِ او (مؤنث)	function	no_card:1
 eux-mêmes	pron			خودشان	خودشان	function	no_card:1
 soi	pron			خود (برای همه)	خود (برای همه)	function	no_card:1
+nôtre	pron			مال ما	مال ما	function	no_card:1
+vôtre	pron			مال شما	مال شما	function	no_card:1
+quelques-uns	pron			چندتایی (از آن‌ها)	چندتایی (از آن‌ها)	function	no_card:1
+chacune	pron			هر یک (مؤنث)	هر یک (مؤنث)	function	no_card:1
 l'un	pron			یکی (از آن‌ها)	یکی (از آن‌ها)	function	no_card:1	checked:level
 l'une	pron			یکی (از آن‌ها، مؤنث)	یکی (از آن‌ها	function	no_card:1
 quelque	det			یک ... ای، اندکی	یک ... ای	function	no_card:1	checked:level
@@ -45,10 +49,14 @@ lorsque	conj			هنگامی که، زمانی که	وقتی که	time	checked:le
 puisque	conj			از آنجا که، چون که	چون	function
 sinon	conj			وگرنه، در غیر این صورت	وگرنه	function
 tandis que	conj			در حالی که	در حالی که	function
+alors que	conj			در حالی که، با آنکه	در حالی که	function	parts:alors
 afin de	prep			به منظورِ، تا اینکه	به منظورِ	function	register:formal
 c'est-à-dire	conj			یعنی	یعنی	function
 d'ailleurs	adv			در ضمن، از قضا	در ضمن	function
 bref	adv			القصه، خلاصه این‌که	القصه	function
+c'est pourquoi	adv			به همین دلیل	به همین دلیل	function
+par conséquent	adv			در نتیجه، بنابراین	در نتیجه	function	parts:conséquence
+si bien que	conj			در نتیجه، چنان که	در نتیجه	function
 dès	prep			از همان، از (فلان زمان)	از همان	time	checked:level	coll:dès demain → از همین فردا
 dès que	conj			به محض اینکه	به محض اینکه	time	parts:dès
 malgré	prep			با وجودِ، به‌رغمِ	با وجودِ	function
@@ -134,6 +142,7 @@ par contre	adv			در عوض، از آن طرف	در عوض	function
 au lieu de	prep			به جای	به جای	function	parts:lieu
 en train de	prep			در حالِ (انجام کاری)	در حالِ (انجام کاری)	time	parts:train	coll:je suis en train de manger → دارم غذا می‌خورم
 sur le point de	prep			در شرفِ، نزدیک به (انجام کاری)	در شرفِ	time	parts:point
+être sur le point de	phrase			در آستانهٔ (کاری) بودن	در آستانهٔ (کاری) بودن	time	parts:être point
 tout de même	adv			با این همه، به هر جهت	با این همه	function	parts:même-adj
 ça suffit	interj			بس است!	بس است!	feelings	parts:suffire
 en avoir assez	phrase			خسته شدن (از چیزی)، به ستوه آمدن	به ستوه آمدن	feelings	parts:avoir assez
@@ -745,6 +754,9 @@ attaque	noun	f		حمله	حمله	society
 zone	noun	f		ناحیه، محدوده	ناحیه	space
 appareil	noun	m		وسیلهٔ برقی، دستگاه (کوچک)	وسیلهٔ برقی	science
 expression	noun	f		اصطلاح، بیان	اصطلاح	education
+# conjunctions with the subjunctive, placed where the subjunctive units have come (about card word 690)
+pour que	conj			تا اینکه، برای اینکه (کسی)	تا اینکه	function
+afin que	conj			برای اینکه، تا	برای اینکه	function	register:formal
 source	noun	f		منبع، چشمه	منبع	nature
 distance	noun	f		فاصله	فاصله	space
 aile	noun	f		بال	بال	animals
@@ -987,6 +999,8 @@ incapable	adj			ناتوان، ناتوان از	ناتوان	character
 mystérieux	adj			مرموز، اسرارآمیز	مرموز	qualities
 privé	adj			خصوصی	خصوصی	society
 public	adj			عمومی (برای همه)، همگانی	عمومی (برای همه)	society	code:public-adj
+# à condition que comes with the unit on conjunctions with the subjunctive (about card word 930)
+à condition que	conj			به شرطی که	به شرطی که	function	parts:condition
 minuscule	adj			ریز، خیلی کوچک	ریز	qualities
 solide	adj			محکم، مقاوم	محکم	qualities
 fameux	adj			معروف، مشهور (همان که می‌گویند)	معروف	qualities
@@ -997,6 +1011,7 @@ direct	adj			بی‌واسطه، سرراست	بی‌واسطه	qualities
 géant	adj			غول‌آسا، عظیم	غول‌آسا	qualities
 extrême	adj			شدید، افراطی	شدید	qualities
 évident	adj			بدیهی، آشکار	بدیهی	abstract
+probable	adj			محتمل	محتمل	abstract
 sensible	adj			حساس	حساس	character	note:sensible یعنی «حساس»، نه «معقول» (معقول = raisonnable).
 raisonnable	adj			معقول، عاقلانه	معقول	character
 précieux	adj			گران‌بها، ارزشمند	گران‌بها	economy

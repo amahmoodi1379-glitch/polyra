@@ -90,6 +90,11 @@ export type BuildOptions = {
   tenses?: Record<string, string[]>;
   /** Only these levels (the language's `levels.<language>`). */
   levels?: string[];
+  /**
+   * A writer's quick check: only the sentence, text, dialogue, find-the-mistake and writing files whose path holds one
+   * of these. Words, grammar units and tables are always built (the timing check and the units need them).
+   */
+  only?: string[];
 };
 
 export function buildPack(language: LanguageCode, options: BuildOptions = {}): Pack {
@@ -97,6 +102,8 @@ export function buildPack(language: LanguageCode, options: BuildOptions = {}): P
   const contentRoot = options.contentRoot ?? root;
   const tenses = options.tenses ?? (appSettingDefaults[`conjugation.tenses.${language}`] as Record<string, string[]>);
   const levels = PACK_LEVELS.filter((level) => !options.levels || options.levels.includes(level));
+  const only = options.only;
+  const pick = (files: { file: string; text: string }[]) => (only ? files.filter((item) => only.some((part) => item.file.includes(part))) : files);
   const wordPack = checkWordPack(language, readWordFiles(language, contentRoot).filter((file) => levels.includes(file.level as (typeof levels)[number])), frequencyRanks(language, root));
   const words = wordPack.words;
   const names = readNames(contentRoot, language);
@@ -123,15 +130,15 @@ export function buildPack(language: LanguageCode, options: BuildOptions = {}): P
 
   const built = levels.map((level) => {
     const grammar = buildGrammar(analyzer, folder(contentRoot, join("content", language, "grammar", level)), level);
-    const sentences = buildSentences(analyzer, folder(contentRoot, join("content", language, "sentences", level)), level, firstWords);
-    const texts = buildTexts(analyzer, folder(contentRoot, join("content", language, "texts", level)), level);
-    const dialogues = buildDialogues(analyzer, folder(contentRoot, join("content", language, "dialogues", level)), level, language);
+    const sentences = buildSentences(analyzer, pick(folder(contentRoot, join("content", language, "sentences", level))), level, firstWords);
+    const texts = buildTexts(analyzer, pick(folder(contentRoot, join("content", language, "texts", level))), level);
+    const dialogues = buildDialogues(analyzer, pick(folder(contentRoot, join("content", language, "dialogues", level))), level, language);
     pack.errors.push(...grammar.errors, ...sentences.errors, ...texts.errors, ...dialogues.errors);
     pack.notes.push(...grammar.notes, ...sentences.notes, ...texts.notes, ...dialogues.notes);
     return { level, grammar, sentences, texts, dialogues };
   });
 
-  const phonics = buildPhonics(folder(contentRoot, join("content", language, "phonics")), language);
+  const phonics = buildPhonics(pick(folder(contentRoot, join("content", language, "phonics"))), language);
   pack.errors.push(...phonics.errors);
   pack.notes.push(...phonics.notes);
 
@@ -140,8 +147,8 @@ export function buildPack(language: LanguageCode, options: BuildOptions = {}): P
   const unitsSoFar = new Set<string>();
   const production = built.map(({ level, grammar }) => {
     for (const unit of grammar.units) unitsSoFar.add(unit.listItem.unit_code);
-    const errorfix = buildErrorfix(analyzer, folder(contentRoot, join("content", language, "errorfix", level)), level, new Set(unitsSoFar));
-    const writing = buildWriting(analyzer, folder(contentRoot, join("content", language, "writing", level)), level, writingWords[level] ?? [60, 120]);
+    const errorfix = buildErrorfix(analyzer, pick(folder(contentRoot, join("content", language, "errorfix", level))), level, new Set(unitsSoFar));
+    const writing = buildWriting(analyzer, pick(folder(contentRoot, join("content", language, "writing", level))), level, writingWords[level] ?? [60, 120]);
     pack.errors.push(...errorfix.errors, ...writing.errors);
     pack.notes.push(...errorfix.notes, ...writing.notes);
     return { errorfix, writing };

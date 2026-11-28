@@ -12,16 +12,12 @@ celles-ci	pron			این‌ها (مؤنث)	این‌ها (مؤنث)	function	no_c
 celles-là	pron			آن‌ها (اشارهٔ مؤنث)	آن‌ها (اشارهٔ مؤنث)	function	no_card:1
 vous-même	pron			خودتان	خودتان	function	no_card:1
 nous-mêmes	pron			خودمان	خودمان	function	no_card:1
-nôtre	pron			مال ما	مال ما	function	no_card:1
-vôtre	pron			مال شما	مال شما	function	no_card:1
 miens	pron			مال من (جمع)	مال من (جمع)	function	no_card:1
 siens	pron			مال او (جمع)	مال او (جمع)	function	no_card:1
 tienne	pron			مال تو (مؤنث)	مال تو (مؤنث)	function	no_card:1
 auxquelles	pron			که به آن‌ها (مؤنث)	که به آن‌ها (مؤنث)	function	no_card:1
 desquels	pron			که از آن‌ها	که از آن‌ها	function	no_card:1
 quiconque	pron			هر کس که	هر کس که	function	no_card:1
-chacune	pron			هر یک (مؤنث)	هر یک (مؤنث)	function	no_card:1
-quelques-uns	pron			چندتایی (از آن‌ها)	چندتایی (از آن‌ها)	function	no_card:1
 quelconque	det			هر ... ای (بی‌اهمیت)، معمولی	هر ... ای (بی‌اهمیت)	function	no_card:1
 hum	interj			اوهوم، هوم	اوهوم	function	no_card:1
 hop	interj			هوپ! (با حرکت)	هوپ! (با حرکت)	function	no_card:1
@@ -33,13 +29,9 @@ néanmoins	adv			با این وجود، به هر روی	با این وجود	fu
 toutefois	adv			با این همه، اما (رسمی)	با این همه	function	register:formal
 quoique	conj			اگرچه، هرچند که	اگرچه	function	register:formal
 bien que	conj			اگرچه، با اینکه	اگرچه	function
-afin que	conj			برای اینکه، تا	برای اینکه	function	register:formal
-pour que	conj			تا اینکه، برای اینکه (کسی)	تا اینکه	function
 à moins que	conj			مگر اینکه	مگر اینکه	function
 pourvu que	conj			به شرط آنکه، خدا کند که	به شرط آنکه	function
-à condition que	conj			به شرطی که	به شرطی که	function	parts:condition
 de sorte que	conj			به‌طوری که، چنان که	به‌طوری که	function	parts:sorte
-si bien que	conj			در نتیجه، چنان که	در نتیجه	function
 en revanche	adv			در مقابل، در عوض (بر عکسِ آن)	در مقابل	function
 d'une part	adv			از یک سو	از یک سو	function	parts:part
 d'autre part	adv			از سوی دیگر	از سوی دیگر	function	parts:part
@@ -94,7 +86,6 @@ largement	adv			به‌مقدار زیاد، به‌وفور	به‌مقدار �
 amplement	adv			به‌حد وفور، بیش از کافی	به‌حد وفور	numbers	mastery:recognize
 davantage que	conj			بیش از آنکه	بیش از آنکه	function	parts:davantage
 plutôt que	conj			به جای اینکه	به جای اینکه	function	parts:plutôt
-alors que	conj			در حالی که، با آنکه	در حالی که	function	parts:alors
 étant donné que	conj			با توجه به اینکه	با توجه به اینکه	function
 vu que	conj			از آنجا که، با توجه به	از آنجا که	function
 
@@ -225,7 +216,6 @@ avoir une mémoire d'éléphant	phrase			حافظهٔ خیلی قوی داشتن
 être à court de	phrase			کم آوردنِ (چیزی)	کم آوردنِ (چیزی)	actions	parts:être court
 être aux anges	phrase			در پوست خود نگنجیدن	در پوست خود نگنجیدن	feelings	parts:être ange
 être dans le même bateau	phrase			در یک کشتی بودن، گرفتاریِ مشترک داشتن	در یک کشتی بودن	society	parts:être même bateau
-être sur le point de	phrase			در آستانهٔ (کاری) بودن	در آستانهٔ (کاری) بودن	time	parts:être point
 être en jeu	phrase			در میان بودن، در خطر بودن	در میان بودن	abstract	parts:être jeu
 être bien dans sa peau	phrase			با خود راحت بودن	با خود راحت بودن	feelings	parts:être bien peau
 être mal dans sa peau	phrase			با خود کنار نیامدن	با خود کنار نیامدن	feelings	parts:être mal peau
@@ -936,7 +926,6 @@ reconnaissant	adj			سپاسگزار	سپاسگزار	feelings
 hostile	adj			خصمانه	خصمانه	feelings
 maladroit	adj			دست‌وپاچلفتی	دست‌وپاچلفتی	character
 anonyme	adj			بی‌نام، ناشناس	بی‌نام	society
-probable	adj			محتمل	محتمل	abstract
 imaginaire	adj			خیالی	خیالی	abstract
 clandestin	adj			مخفی، غیرقانونی (پنهانی)	مخفی	society
 atroce	adj			وحشیانه، دهشتناک	وحشیانه	qualities
@@ -1463,11 +1452,9 @@ quoi qu'il en soit	adv			هر چه باشد، به هر حال (رسمی)	هر �
 en ce qui concerne	prep			در مورد، در خصوصِ	در مورد	function	parts:concerner
 d'un côté	adv			از یک طرف	از یک طرف	function	parts:côté
 de l'autre côté	adv			از طرف دیگر	از طرف دیگر	function	parts:côté
-par conséquent	adv			در نتیجه، بنابراین	در نتیجه	function	parts:conséquence
 en conclusion	adv			در پایان، در نتیجه‌گیری	در پایان	function	parts:conclusion
 pour conclure	adv			برای جمع‌بندی	برای جمع‌بندی	function	parts:conclure
 tout d'abord	adv			پیش از هر چیز، نخست	پیش از هر چیز	function
-c'est pourquoi	adv			به همین دلیل	به همین دلیل	function
 autrement dit	adv			به عبارت دیگر	به عبارت دیگر	function	parts:autrement dire
 notamment	adv			به‌ویژه، از جمله	به‌ویژه	function
 à savoir	adv			یعنی، از این قرار	یعنی	function	parts:savoir

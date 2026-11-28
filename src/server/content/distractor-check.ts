@@ -110,5 +110,5 @@ export function checkWordDistractors(input: {
 
 const isUpper = (text: string) => {
   const first = text.match(/\p{L}/u)?.[0] ?? "";
-  return first !== "" && first === first.toLocaleUpperCase("und") && first !== first.toLocaleLowerCase("und");
+  return first !== "" && first === first.toUpperCase() && first !== first.toLowerCase();
 };

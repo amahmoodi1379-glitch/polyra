@@ -92,10 +92,12 @@ export function splitPieces(text: string): Piece[] {
 }
 
 /** Case-insensitive comparison form that keeps accents. */
+// toLowerCase() is the root locale's own mapping (the same result as toLocaleLowerCase("und") for every code point);
+// the locale call goes through ICU and was most of a whole content check's time.
 export function fold(text: string) {
   return text
     .normalize("NFC")
-    .toLocaleLowerCase("und")
+    .toLowerCase()
     .replace(/[’ʼ`´]/gu, "'");
 }
 
@@ -104,7 +106,7 @@ export function bare(text: string) {
   return text
     .normalize("NFD")
     .replace(/\p{M}/gu, "")
-    .toLocaleLowerCase("und")
+    .toLowerCase()
     .replace(/œ/gu, "oe")
     .replace(/æ/gu, "ae")
     .replace(/[^\p{L}\p{Nd}]/gu, "");

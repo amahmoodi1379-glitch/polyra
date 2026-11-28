@@ -63,6 +63,8 @@ const articleBefore = (tokens: TimingToken[], index: number, context: TimingCont
 };
 const FR_SUBJECTS = new Set(["je", "j'", "tu", "il", "ils", "elle", "elles", "on", "nous", "vous"]);
 const FR_ETRE_PRESENT = ["suis", "es", "est", "sommes", "êtes", "sont"];
+/** The A2 polite forms (je voudrais, vous pourriez, ce serait …): the conditionnel's own unit is B1. */
+const FR_POLITE_A2 = ["voudrais", "voudrait", "voudrions", "voudriez", "voudraient", "pourrais", "pourrait", "pourriez", "pourrions", "pourraient", "serait", "serais", "seraient", "faudrait", "aimerais", "aimerait", "aimeriez", "aimerions"];
 const DE_MODAL_PAST = ["wollte", "wolltest", "wollten", "wolltet", "konnte", "konntest", "konnten", "konntet", "musste", "musstest", "mussten", "musstet", "durfte", "durftest", "durften", "durftet", "mochte", "mochtest", "mochten", "mochtet"];
 const DE_POLITE = ["hätte", "hättest", "hätten", "hättet", "würde", "würdest", "würden", "würdet", "könnte", "könntest", "könnten", "könntet", "wäre", "wärst", "wären", "wärt"];
 
@@ -175,8 +177,70 @@ export const TIMING_MARKERS: Record<LanguageCode, Marker[]> = {
       label: "avant de، pendant que",
       match: (tokens, index) => (lower(tokens[index]) === "avant" && /^(de|d')$/u.test(lower(tokens[index + 1]))) || (lower(tokens[index]) === "pendant" && /^(que|qu')$/u.test(lower(tokens[index + 1]))),
     },
+    // B1 (DECISIONS.md, 28 Nov 2026). Linking words (puisque, lorsque, malgré …) are words of the list, taught early.
+    { unit: "fr-b1-plus-que-parfait", label: "j'avais mangé، il était parti", match: (tokens, index, context) => pluperfect(tokens, index, context) },
+    { unit: "fr-b1-conditionnel", label: "je ferais، il viendrait", tense: "conditionnel présent", except: FR_POLITE_A2 },
+    { unit: "fr-b1-ne-que", label: "ne … que", match: (tokens, index) => /^(que|qu')$/u.test(lower(tokens[index])) && onlyNegation(tokens, index) },
+    { unit: "fr-b1-relatif-dont", label: "dont", codes: ["dont"] },
+    { unit: "fr-b1-subjonctif", label: "qu'il soit، que je fasse", tense: "subjonctif présent" },
+    {
+      unit: "fr-b1-ce-qui-ce-que",
+      label: "ce qui، ce que",
+      // Not «jusqu'à ce que» (its own unit) and not «est-ce que» (a chunk of A1).
+      match: (tokens, index) => lower(tokens[index]) === "ce" && /^(qui|que|qu'|dont)$/u.test(lower(tokens[index + 1])) && lower(tokens[index - 1]) !== "à",
+    },
+    { unit: "fr-b1-but", label: "pour que، afin que", codes: ["pour que", "afin que"] },
+    {
+      unit: "fr-b1-subjonctif-conjonctions",
+      label: "avant que، sans que، jusqu'à ce que",
+      codes: ["à condition que"],
+      match: (tokens, index) =>
+        (/^(avant|sans)$/u.test(lower(tokens[index])) && /^(que|qu')$/u.test(lower(tokens[index + 1]))) ||
+        (lower(tokens[index]) === "ce" && lower(tokens[index - 1]) === "à" && /^(que|qu')$/u.test(lower(tokens[index + 1]))),
+    },
+    { unit: "fr-b1-aspect", label: "sur le point de", codes: ["sur le point de", "être sur le point de"] },
+    { unit: "fr-b1-gerondif", label: "en marchant", match: (tokens, index, context) => lower(tokens[index]) === "en" && isVerb(tokens[index + 1], context) && /ant$/u.test(lower(tokens[index + 1])) },
+    { unit: "fr-b1-infinitif-passe", label: "après avoir mangé", pairs: [["après"], ["avoir", "être"]] },
+    { unit: "fr-b1-doubles-pronoms", label: "je te le donne، il le lui dit", match: (tokens, index) => doublePronoun(tokens, index) },
+    { unit: "fr-b1-relatif-lequel", label: "lequel، auquel", codes: ["lequel", "laquelle", "lesquels", "lesquelles", "auquel", "duquel", "auxquels"] },
+    { unit: "fr-b1-possessifs", label: "le mien، la tienne", codes: ["mien", "mienne", "tien", "sien", "sienne", "nôtre", "vôtre"] },
+    { unit: "fr-b1-demonstratifs", label: "celui-ci، ceci", codes: ["celui-ci", "celui-là", "celle-ci", "celle-là", "ceci"] },
+    { unit: "fr-b1-indefinis", label: "chacune، quelques-uns", codes: ["chacune", "quelques-uns"] },
+    {
+      unit: "fr-b1-faire-infinitif",
+      label: "faire réparer",
+      // faire + an infinitive (je fais réparer, se faire couper); «faire faire» counts once.
+      match: (tokens, index, context) => tokens[index].code === "faire" && isVerb(tokens[index + 1], context) && lower(tokens[index + 1]) === tokens[index + 1].code,
+    },
   ],
 };
+
+const FR_AUX_IMPARFAIT = new Set(["avais", "avait", "avions", "aviez", "avaient", "étais", "était", "étions", "étiez", "étaient"]);
+/** French plus-que-parfait: an imparfait of avoir or être, then (after ne/pas/déjà …) a participle-shaped verb. */
+function pluperfect(tokens: TimingToken[], index: number, context: TimingContext): boolean {
+  if (!tokens[index].code || !FR_AUX.has(tokens[index].code!) || !FR_AUX_IMPARFAIT.has(lower(tokens[index]).replace(/^\p{L}'/u, ""))) return false;
+  let at = index + 1;
+  while (tokens[at] && FR_PERFECT_GAP.has(lower(tokens[at]))) at++;
+  const next = tokens[at];
+  return !!next && !next.inGap && !!next.code && context.verbs.has(next.code) && FR_PARTICIPLE.test(lower(next));
+}
+/** «ne … que»: ne or n' a few tokens before, with no pas, plus, jamais, rien or personne between. */
+function onlyNegation(tokens: TimingToken[], index: number): boolean {
+  const before = tokens.slice(Math.max(0, index - 4), index).map(lower);
+  const ne = Math.max(before.lastIndexOf("ne"), before.lastIndexOf("n'"));
+  return ne >= 0 && !before.slice(ne + 1).some((surface) => /^(pas|plus|jamais|rien|personne|aucun|aucune|ni)$/u.test(surface));
+}
+/** Two object pronouns side by side: me/te/se/nous/vous + le/la/les (after a subject), le/la/les + lui/leur, m'/t'/lui/leur + en. */
+function doublePronoun(tokens: TimingToken[], index: number): boolean {
+  const here = lower(tokens[index]);
+  const next = lower(tokens[index + 1]);
+  if (!next || tokens[index + 1].inGap) return false;
+  if (/^(le|la|les)$/u.test(here) && /^(lui|leur)$/u.test(next)) return true;
+  if (/^(m'|t'|lui|leur)$/u.test(here) && next === "en") return true;
+  // «nous les avons vus» is a subject and one pronoun: me, te and se are never subjects; nous and vous only after one.
+  if (/^(me|te|se)$/u.test(here) && /^(le|la|les|l')$/u.test(next)) return true;
+  return /^(nous|vous)$/u.test(here) && /^(le|la|les|l')$/u.test(next) && FR_SUBJECTS.has(lower(tokens[index - 1]));
+}
 
 const FR_PERFECT_GAP = new Set(["ne", "n'", "pas", "déjà", "jamais", "bien", "beaucoup", "encore", "tout", "rien", "plus"]);
 const FR_PARTICIPLE = /(é|ée|és|ées|i|ie|is|it|u|ue|us|ert|erte|eint|ort|enu|enue|enus)$/u;

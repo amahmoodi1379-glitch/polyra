@@ -138,6 +138,8 @@ const PLACING_ONLY: Vocabulary = {
   isException: () => true,
 };
 
+const range = (from: number, count: number) => Array.from({ length: count }, (_, k) => from + k);
+
 export class Analyzer {
   private byCode: Map<string, PackWord>;
   private phrases: Phrase[];
@@ -170,8 +172,19 @@ export class Analyzer {
   }
 
   /** Does this word of the text stand for piece `k` of the phrase? */
+  /** Folded surfaces without apostrophes, kept: every phrase looks at every word of a sentence. */
+  private foldedSurfaces = new Map<string, string>();
+  private folded(surface: string) {
+    let value = this.foldedSurfaces.get(surface);
+    if (value === undefined) {
+      value = fold(surface.replace(APOSTROPHE, ""));
+      this.foldedSurfaces.set(surface, value);
+    }
+    return value;
+  }
+
   private pieceMatches(phrase: Phrase, k: number, unit: Unit) {
-    const surface = fold(unit.surface.replace(APOSTROPHE, ""));
+    const surface = this.folded(unit.surface);
     const piece = phrase.pieces[k];
     if (surface === piece) return true;
     if (APOSTROPHE.test(unit.surface) && (ELIDED[surface] ?? []).includes(piece)) return true;
@@ -188,12 +201,18 @@ export class Analyzer {
    * its verb first (German: habe Hunger, gibt es), or its verb here and the rest later in the same clause
    * (hast du morgen Zeit, n'ai pas faim: `split`). Returns the indexes of the words it takes.
    */
+  /** Pieces `order` of the phrase at words `indexes`, never on both sides of a clause end (Wäsche: Waschmaschine is not «Wäsche waschen»). */
+  private fits(phrase: Phrase, list: Unit[], text: string, indexes: number[], order: number[]) {
+    if (indexes.length !== order.length) return false;
+    for (const [k, index] of indexes.entries()) if (index >= list.length || !this.pieceMatches(phrase, order[k], list[index])) return false;
+    return !indexes.some((index, k) => k > 0 && index === indexes[k - 1] + 1 && CLAUSE_END.test(text.slice(list[index - 1].end, list[index].start)));
+  }
+
   private phraseAt(phrase: Phrase, list: Unit[], i: number, text: string): { at: number[]; split: boolean } | null {
     const n = phrase.pieces.length;
-    const range = (from: number, count: number) => Array.from({ length: count }, (_, k) => from + k);
-    // Pieces side by side never stand on both sides of a clause end (Wäsche: Waschmaschine is not «Wäsche waschen»).
-    const apart = (indexes: number[]) => indexes.some((index, k) => k > 0 && index === indexes[k - 1] + 1 && CLAUSE_END.test(text.slice(list[index - 1].end, list[index].start)));
-    const fits = (indexes: number[], order: number[]) => indexes.length === order.length && indexes.every((index, k) => index < list.length && this.pieceMatches(phrase, order[k], list[index])) && !apart(indexes);
+    // Most phrases start with a piece that is not here: a quick look before the full one.
+    if (!phrase.verb && !phrase.plural && !phrase.word.word.lemma.includes("-") && !this.pieceMatches(phrase, 0, list[i])) return null;
+    const fits = (indexes: number[], order: number[]) => this.fits(phrase, list, text, indexes, order);
     const lemmaOrder = range(0, n);
     if (fits(range(i, n), lemmaOrder)) return { at: range(i, n), split: false };
     // A hyphenated noun in another form of the forms data: week-ends, t-shirts, e-mails.
