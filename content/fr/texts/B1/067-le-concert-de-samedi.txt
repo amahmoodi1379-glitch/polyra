@@ -1,0 +1,45 @@
+code: fr-b1-t067
+title: Le concert de samedi
+band: 3
+kind: long_dialogue
+key_words: faire confiance, à condition que, honte, spectateur, critiquer
+sentences:
+A: Papa, tu as deux minutes ? Je voudrais te demander quelque chose. | بابا، دو دقیقه وقت داری؟ می‌خواهم یک چیزی ازت بپرسم.
+B: Quand tu commences comme ça, c'est que ça va me coûter cher. | وقتی این‌طوری شروع می‌کنی، یعنی قرار است برایم گران تمام شود.
+A: Mais non ! Enfin… un peu. Samedi, mon groupe préféré joue à Paris, et Léa a deux places{place-2} pour le concert. | نه بابا! یعنی… یک کم. شنبه گروه مورد علاقه‌ام در پاریس برنامه دارد و لئا دو بلیت برای کنسرت دارد.
+B: À Paris ? Mais nous habitons à Rouen ! Ça finit à quelle heure ? | پاریس؟ ولی ما در روئن زندگی می‌کنیم! ساعت چند تمام می‌شود؟
+A: Vers 23 heures 30. Ensuite, on prendrait le dernier train, celui de minuit. | حدود یازده و نیم شب. بعدش آخرین قطار را می‌گیریم، قطار نیمه‌شب را. | tts: Vers vingt-trois heures trente. Ensuite, on prendrait le dernier train, celui de minuit.
+B: Et vous arriveriez ici à 1 heure et demie du matin ? Toutes seules ? Non, Chloé. | یعنی ساعت یک و نیم صبح می‌رسید اینجا؟ تنهایی؟ نه، کلوئه. | tts: Et vous arriveriez ici à une heure et demie du matin ? Toutes seules ? Non, Chloé.
+A: Tu ne me fais jamais confiance ! J'ai seize ans, je ne suis plus une enfant ! | تو هیچ‌وقت به من اعتماد نمی‌کنی! شانزده سالم است، دیگر بچه نیستم!
+B: Ce n'est pas une question de confiance. La nuit, dans un train presque vide, je préfère que tu ne sois pas seule. | موضوع اعتماد نیست. شب، توی قطاری که تقریباً خالی است، ترجیح می‌دهم تنها نباشی.
+A: Le grand frère de Léa vient aussi. Il a dix-neuf ans. | برادر بزرگ لئا هم می‌آید. نوزده سالش است.
+B: C'est mieux. Mais j'ai une autre idée : je vous emmène en voiture, et je vous attends dans un café. | این بهتر شد. ولی من فکر دیگری دارم: با ماشین می‌برمتان و توی یک کافه منتظرتان می‌مانم.
+A: Tu plaisantes ? Tout le monde va me voir arriver avec mon père ! Quelle honte ! | شوخی می‌کنی؟ همه می‌بینند که با بابام آمده‌ام! چه آبروریزی‌ای!
+B: Je vous laisse à deux rues de la salle. Personne ne me verra, promis. | دو خیابان پایین‌تر از سالن پیاده‌تان می‌کنم. هیچ‌کس مرا نمی‌بیند، قول می‌دهم.
+A: Bon… Et tu ne m'appelles pas pendant le concert ? | خب… و وسط کنسرت به من زنگ نمی‌زنی؟
+B: D'accord, à condition que tu m'envoies un message en arrivant, et un autre à la fin. | باشد، به شرطی که وقتی رسیدی یک پیام برایم بفرستی و یکی هم آخر کنسرت.
+A: Promis. Et le billet ? Il coûte 45 euros… | قول می‌دهم. بلیت چی؟ ۴۵ یورو است… | tts: Promis. Et le billet ? Il coûte quarante-cinq euros…
+B: C'est moi qui paie l'essence, alors c'est toi qui paies ton billet, avec l'argent de ton anniversaire. | بنزین را من می‌دهم، پس بلیتت را خودت می‌دهی، با پول تولدت.
+A: Merci, papa ! Tu sais, ils jouent devant 20 000 spectateurs ! | ممنون بابا! می‌دانی، جلوی بیست هزار تماشاگر برنامه اجرا می‌کنند! | tts: Merci, papa ! Tu sais, ils jouent devant vingt mille spectateurs !
+B: Vingt mille ? Pour cette musique ? Pour moi, c'est du bruit… | بیست هزار نفر؟ برای این موسیقی؟ به نظر من که سروصداست…
+A: Arrête de critiquer ma musique ! Toi, tu écoutes encore les chansons de tes vingt ans. | این‌قدر از موسیقی من ایراد نگیر! تو هنوز آهنگ‌های بیست‌سالگی‌ات را گوش می‌دهی.
+B: Et elles sont très bien, mes chansons ! Allez, samedi, on part à 18 heures. | آهنگ‌های من هم خیلی خوب‌اند! خب، شنبه ساعت شش راه می‌افتیم. | tts: Et elles sont très bien, mes chansons ! Allez, samedi, on part à dix-huit heures.
+reading A:
+{"type":"mcq","prompt":"Que veut Chloé au début de la conversation ?","prompt_fa":"کلوئه اول گفتگو چه می‌خواهد؟","options":["Acheter une place pour le concert de son père.","Inviter Léa à dormir à la maison samedi.","Avoir le droit d'aller à un concert à Paris.","Prendre des cours de musique."],"correct":2,"explanation_fa":"کلوئه می‌گوید: «Samedi, mon groupe préféré joue à Paris, et Léa a deux places pour le concert.»"}
+{"type":"tf","prompt":"Le père ne veut pas que Chloé rentre seule en train la nuit.","prompt_fa":"پدر نمی‌خواهد کلوئه شب تنها با قطار برگردد.","correct":true,"explanation_fa":"پدر می‌گوید: «La nuit, dans un train presque vide, je préfère que tu ne sois pas seule.»"}
+{"type":"tf","prompt":"Chloé est très contente que son père l'emmène en voiture.","prompt_fa":"کلوئه خیلی خوشحال است که پدرش با ماشین می‌بردش.","correct":false,"explanation_fa":"کلوئه می‌گوید: «Tout le monde va me voir arriver avec mon père ! Quelle honte !»"}
+{"type":"find","prompt":"Quelle phrase dit ce que Chloé doit faire pendant la soirée ?","prompt_fa":"کدام جمله می‌گوید کلوئه آن شب باید چه کار کند؟","correct_sentence":13,"explanation_fa":"پدر می‌گوید: «à condition que tu m'envoies un message en arrivant, et un autre à la fin»."}
+reading B:
+{"type":"ctx","word":"Quelle honte","prompt":"« Quelle honte ! » : que pense Chloé ?","prompt_fa":"«Quelle honte !»: کلوئه چه فکری می‌کند؟","options":["Elle a peur de rentrer en train.","Elle n'aimerait pas qu'on la voie avec son père.","Elle trouve le billet trop cher.","Elle est triste de ne pas aller au concert."],"correct":1,"explanation_fa":"«honte» یعنی خجالت؛ کلوئه نمی‌خواهد دیگران ببینند با پدرش آمده: «Tout le monde va me voir arriver avec mon père !»"}
+{"type":"match","prompt":"Qui va payer quoi ?","prompt_fa":"چه کسی پول چه چیزی را می‌دهد؟","left":["le père","Chloé"],"right":["l'essence","le billet","le café de Léa"],"pairs":[[0,0],[1,1]],"explanation_fa":"پدر می‌گوید: «C'est moi qui paie l'essence, alors c'est toi qui paies ton billet»."}
+{"type":"order","prompt":"Mettez ces moments de samedi dans l'ordre.","prompt_fa":"این لحظه‌های شنبه را به ترتیب بچینید.","items":["Chloé envoie un premier message à son père.","Ils partent de la maison en voiture.","Le concert finit.","Chloé envoie un deuxième message."],"correct_order":[1,0,2,3],"explanation_fa":"«samedi, on part à 18 heures»، کلوئه «en arrivant» پیام می‌دهد، کنسرت حدود «23 heures 30» تمام می‌شود و پیام دوم «à la fin» است."}
+listening A:
+{"type":"num","prompt":"Quel âge a Chloé ?","prompt_fa":"کلوئه چند سال دارد؟","answer":"16","accepted":["16","seize"],"explanation_fa":"کلوئه می‌گوید: «J'ai seize ans»."}
+{"type":"mcq","prompt":"Combien coûte le billet du concert ?","prompt_fa":"بلیت کنسرت چند است؟","options":["20 euros.","45 euros.","15 euros.","30 euros."],"correct":1,"explanation_fa":"کلوئه می‌گوید: «Il coûte 45 euros…»"}
+{"type":"tf","prompt":"Le frère de Léa va aussi au concert.","prompt_fa":"برادر لئا هم به کنسرت می‌رود.","correct":true,"explanation_fa":"کلوئه می‌گوید: «Le grand frère de Léa vient aussi.»"}
+{"type":"tf","prompt":"Le concert a lieu à Rouen.","prompt_fa":"کنسرت در روئن برگزار می‌شود.","correct":false,"explanation_fa":"کلوئه می‌گوید: «mon groupe préféré joue à Paris» و پدر جواب می‌دهد: «Mais nous habitons à Rouen !»"}
+listening B:
+{"type":"mcq","prompt":"Où le père va-t-il attendre pendant le concert ?","prompt_fa":"پدر در طول کنسرت کجا منتظر می‌ماند؟","options":["Dans la voiture, devant la salle.","À la gare.","Dans un café.","Chez le frère de Léa."],"correct":2,"explanation_fa":"پدر می‌گوید: «je vous attends dans un café»."}
+{"type":"mcq","prompt":"Que pense le père de la musique de Chloé ?","prompt_fa":"پدر دربارهٔ موسیقی کلوئه چه فکری می‌کند؟","options":["Il la trouve très belle.","Il l'écoutait à vingt ans.","Il ne la connaît pas.","Pour lui, c'est du bruit."],"correct":3,"explanation_fa":"پدر می‌گوید: «Pour moi, c'est du bruit…»"}
+{"type":"tf","prompt":"Chloé va payer son billet avec l'argent de son anniversaire.","prompt_fa":"کلوئه پول بلیتش را با پول تولدش می‌دهد.","correct":true,"explanation_fa":"پدر می‌گوید: «c'est toi qui paies ton billet, avec l'argent de ton anniversaire»."}
+{"type":"tf","prompt":"Ils vont partir de la maison à 20 heures.","prompt_fa":"ساعت هشت شب از خانه راه می‌افتند.","correct":false,"explanation_fa":"پدر می‌گوید: «samedi, on part à 18 heures»."}

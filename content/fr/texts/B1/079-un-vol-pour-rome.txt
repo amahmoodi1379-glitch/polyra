@@ -1,0 +1,46 @@
+code: fr-b1-t079
+title: Un vol pour Rome
+band: 3
+kind: long_dialogue
+key_words: compagnie aérienne, annulation, bagages, récupérer, danseur
+sentences:
+A: Bonjour, monsieur. Mon vol pour Rome devait partir à 14 heures 10, mais l'écran dit maintenant 19 heures 30. | سلام آقا. پروازم به رم قرار بود ساعت ۱۴:۱۰ حرکت کند، ولی حالا صفحه ۱۹:۳۰ را نشان می‌دهد. | tts: Bonjour, monsieur. Mon vol pour Rome devait partir à quatorze heures dix, mais l'écran dit maintenant dix-neuf heures trente.
+B: Je suis désolé, madame : l'avion a un problème technique, et les techniciens sont en train de le réparer. | متأسفم خانم: هواپیما یک مشکل فنی دارد و تکنیسین‌ها در حال تعمیرش هستند.
+A: Plus de cinq heures de retard ! Je suis danseuse, et j'ai un spectacle à Rome demain soir. | بیش از پنج ساعت تأخیر! من رقصنده‌ام و فردا شب در رم اجرا دارم.
+B: Ne vous inquiétez pas, vous serez à l'heure pour votre spectacle. | نگران نباشید، برای اجرایتان سر وقت می‌رسید.
+B: Pendant que vous attendez, la compagnie aérienne vous offre un repas : vous pouvez manger pour 15 euros dans un restaurant de l'aéroport. | تا وقتی منتظرید، شرکت هواپیمایی یک وعده غذا مهمانتان می‌کند: می‌توانید در یکی از رستوران‌های فرودگاه تا ۱۵ یورو غذا بخورید. | tts: Pendant que vous attendez, la compagnie aérienne vous offre un repas : vous pouvez manger pour quinze euros dans un restaurant de l'aéroport.
+B: Et avec plus de trois heures de retard, elle vous doit{devoir-2} aussi 250 euros. | و با بیش از سه ساعت تأخیر، شرکت ۲۵۰ یورو هم به شما بدهکار است. | tts: Et avec plus de trois heures de retard, elle vous doit aussi deux cent cinquante euros.
+A: Vraiment ? Et comment est-ce que je les demande ? | واقعاً؟ چطور درخواستش کنم؟
+B: Il faut remplir une demande en ligne, sur le site de la compagnie. | باید یک درخواست آنلاین در سایت شرکت پر کنید.
+A: Monsieur, c'est encore moi ! Mon vol a disparu de l'écran ! | آقا، باز هم منم! پروازم از روی صفحه ناپدید شده!
+B: Oui, la compagnie vient de l'annuler : les techniciens n'ont pas pu réparer l'avion. | بله، شرکت همین الان لغوش کرد: تکنیسین‌ها نتوانستند هواپیما را تعمیر کنند.
+A: Mais c'est une catastrophe ! Et mon spectacle ? | ولی این فاجعه است! پس اجرایم چه می‌شود؟
+B: Calmez-vous, je vous ai trouvé une place{place-2} dans le vol de 7 heures 05 demain matin, qui arrive à Rome à 9 heures 15. | آرام باشید، برایتان در پرواز ساعت ۷:۰۵ فردا صبح جا پیدا کردم که ساعت ۹:۱۵ به رم می‌رسد. | tts: Calmez-vous, je vous ai trouvé une place dans le vol de sept heures cinq demain matin, qui arrive à Rome à neuf heures quinze.
+A: Et cette nuit, je dors où ? Dans l'aéroport ? | امشب کجا بخوابم؟ توی فرودگاه؟
+B: Pas du tout. La compagnie paie votre hébergement : une chambre dans un hôtel près d'ici, avec le dîner et le petit-déjeuner. | اصلاً. شرکت هزینهٔ اقامتتان را می‌دهد: یک اتاق در هتلی همین نزدیکی، با شام و صبحانه.
+B: Un bus part pour l'hôtel à 19 heures, devant la sortie numéro 4. | ساعت ۱۹ یک اتوبوس از جلوی خروجی شمارهٔ ۴ به هتل می‌رود. | tts: Un bus part pour l'hôtel à dix-neuf heures, devant la sortie numéro quatre.
+A: Et mes bagages{bagages} ? Tous mes vêtements pour le spectacle sont dans ma valise ! | پس چمدان‌هایم چه؟ همهٔ لباس‌هایم برای اجرا توی چمدانم است!
+B: Nous les mettrons dans l'avion de demain, et vous les récupérerez à Rome. | آن‌ها را در هواپیمای فردا می‌گذاریم و در رم تحویلشان می‌گیرید.
+A: Et les 250 euros ? Avec l'annulation, je les ai perdus ? | و آن ۲۵۰ یورو؟ با لغو پرواز، از دستشان داده‌ام؟ | tts: Et les deux cent cinquante euros ? Avec l'annulation, je les ai perdus ?
+B: Non, la compagnie vous les doit{devoir-2} toujours. | نه، شرکت هنوز آن‌ها را به شما بدهکار است.
+A: Merci pour votre patience, monsieur. Et pardon, je n'étais pas très calme tout à l'heure. | ممنون از حوصله‌تان آقا. و ببخشید، کمی پیش زیاد آرام نبودم.
+B: Je vous en prie, c'est normal. Bon spectacle demain ! | خواهش می‌کنم، طبیعی است. فردا اجرای خوبی داشته باشید!
+reading A:
+{"type":"mcq","prompt":"Pourquoi l'avion ne part-il pas à l'heure ?","prompt_fa":"چرا هواپیما سر وقت حرکت نمی‌کند؟","options":["Le temps est très mauvais.","Il y a trop de passagers.","L'avion a un problème technique.","Les techniciens sont en grève."],"correct":2,"explanation_fa":"مأمور می‌گوید: «l'avion a un problème technique, et les techniciens sont en train de le réparer»."}
+{"type":"tf","prompt":"La voyageuse a un spectacle à Rome demain soir.","prompt_fa":"مسافر فردا شب در رم اجرا دارد.","correct":true,"explanation_fa":"مسافر می‌گوید: «Je suis danseuse, et j'ai un spectacle à Rome demain soir.»"}
+{"type":"tf","prompt":"Pour avoir les 250 euros, il faut téléphoner à la compagnie.","prompt_fa":"برای گرفتن ۲۵۰ یورو باید به شرکت تلفن زد.","correct":false,"explanation_fa":"مأمور می‌گوید: «Il faut remplir une demande en ligne, sur le site de la compagnie.»"}
+{"type":"find","prompt":"Quelle phrase explique pourquoi il n'y a plus de vol aujourd'hui ?","prompt_fa":"کدام جمله توضیح می‌دهد چرا امروز دیگر پروازی در کار نیست؟","correct_sentence":9,"explanation_fa":"مأمور می‌گوید: «la compagnie vient de l'annuler : les techniciens n'ont pas pu réparer l'avion»."}
+reading B:
+{"type":"ctx","word":"récupérer","prompt":"« vous les récupérerez à Rome » : que fera la voyageuse à Rome ?","prompt_fa":"«vous les récupérerez à Rome»: مسافر در رم چه کار می‌کند؟","options":["Elle achètera de nouvelles valises.","Elle retrouvera ses bagages.","Elle laissera ses bagages à l'hôtel.","Elle paiera pour ses bagages."],"correct":1,"explanation_fa":"«récupérer» یعنی چیزی را پس گرفتن؛ چمدان‌ها با هواپیمای فردا می‌روند و مسافر در رم تحویلشان می‌گیرد."}
+{"type":"order","prompt":"Mettez ces moments dans l'ordre.","prompt_fa":"این لحظه‌ها را به ترتیب بچینید.","items":["La compagnie annule le vol.","La voyageuse voit 19 heures 30 sur l'écran.","La voyageuse prend le bus pour l'hôtel.","La voyageuse arrive à Rome."],"correct_order":[1,0,2,3],"explanation_fa":"اول صفحه «19 heures 30» را نشان می‌دهد، بعد «la compagnie vient de l'annuler»، مسافر «à 19 heures» با اتوبوس به هتل می‌رود و فردا صبح به رم می‌رسد."}
+{"type":"match","prompt":"Qu'est-ce que la compagnie donne à la voyageuse ?","prompt_fa":"شرکت به مسافر چه می‌دهد؟","left":["à l'aéroport","cette nuit","plus tard"],"right":["une chambre d'hôtel avec le dîner","250 euros, avec une demande en ligne","un billet de train pour Rome","un repas de 15 euros"],"pairs":[[0,3],[1,0],[2,1]],"explanation_fa":"در فرودگاه «vous pouvez manger pour 15 euros»، امشب «une chambre dans un hôtel près d'ici, avec le dîner» و بعداً «250 euros» با «une demande en ligne»."}
+listening A:
+{"type":"num","prompt":"À quelle heure le bus part-il pour l'hôtel ?","prompt_fa":"اتوبوس ساعت چند به هتل می‌رود؟","answer":"19","accepted":["19","dix-neuf"],"explanation_fa":"مأمور می‌گوید: «Un bus part pour l'hôtel à 19 heures»."}
+{"type":"mcq","prompt":"Quel est le métier de la voyageuse ?","prompt_fa":"شغل مسافر چیست؟","options":["Elle est chanteuse.","Elle est technicienne.","Elle est professeur.","Elle est danseuse."],"correct":3,"explanation_fa":"مسافر می‌گوید: «Je suis danseuse»."}
+{"type":"tf","prompt":"La compagnie paie l'hôtel de la voyageuse.","prompt_fa":"شرکت هزینهٔ هتل مسافر را می‌دهد.","correct":true,"explanation_fa":"مأمور می‌گوید: «La compagnie paie votre hébergement»."}
+{"type":"tf","prompt":"Le nouveau vol part demain soir.","prompt_fa":"پرواز تازه فردا شب حرکت می‌کند.","correct":false,"explanation_fa":"مأمور می‌گوید: «le vol de 7 heures 05 demain matin»."}
+listening B:
+{"type":"mcq","prompt":"Où la voyageuse doit-elle prendre le bus ?","prompt_fa":"مسافر کجا باید سوار اتوبوس شود؟","options":["Devant la sortie numéro 4.","Devant l'hôtel.","Devant un restaurant de l'aéroport.","Devant l'avion."],"correct":0,"explanation_fa":"مأمور می‌گوید: «devant la sortie numéro 4»."}
+{"type":"mcq","prompt":"Qu'est-ce qu'il y a dans la valise de la voyageuse ?","prompt_fa":"توی چمدان مسافر چیست؟","options":["Des cadeaux pour sa famille.","Des livres.","Ses vêtements pour le spectacle.","Son billet d'avion."],"correct":2,"explanation_fa":"مسافر می‌گوید: «Tous mes vêtements pour le spectacle sont dans ma valise !»"}
+{"type":"tf","prompt":"À la fin, la voyageuse s'excuse.","prompt_fa":"در آخر، مسافر عذرخواهی می‌کند.","correct":true,"explanation_fa":"مسافر می‌گوید: «Et pardon, je n'étais pas très calme tout à l'heure.»"}
+{"type":"tf","prompt":"Avec l'annulation, la voyageuse n'aura plus les 250 euros.","prompt_fa":"با لغو پرواز، دیگر ۲۵۰ یورو به مسافر نمی‌رسد.","correct":false,"explanation_fa":"مأمور می‌گوید: «la compagnie vous les doit toujours»."}

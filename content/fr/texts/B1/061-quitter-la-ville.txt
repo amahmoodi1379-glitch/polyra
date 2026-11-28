@@ -1,0 +1,43 @@
+code: fr-b1-t061
+title: Quitter la ville ?
+band: 3
+kind: long_dialogue
+key_words: obliger, grève, à condition que
+sentences:
+A: Marc, tu as regardé les photos que je t'ai envoyées ? La maison en Bourgogne ? | مارک، عکس‌هایی را که برایت فرستادم دیدی؟ همان خانه در بورگونی؟
+B: Oui, hier soir. Elle est belle… Mais tu veux vraiment quitter Lyon ? | آره، دیشب. قشنگ است… ولی واقعاً می‌خواهی از لیون برویم؟
+A: Très sérieuse. Depuis que je peux travailler à la maison quatre jours par semaine, rien ne nous oblige à rester ici. | خیلی جدی. از وقتی می‌توانم هفته‌ای چهار روز در خانه کار کنم، هیچ چیز ما را مجبور نمی‌کند اینجا بمانیم.
+B: Et moi ? Mon travail est ici, à vingt minutes à vélo. | پس من چی؟ کار من اینجاست، بیست دقیقه با دوچرخه.
+A: Il y a un train direct : en une heure, tu es à Lyon. Tu pourrais aller au bureau deux jours par semaine. | یک قطار مستقیم هست: یک ساعته به لیون می‌رسی. می‌توانی هفته‌ای دو روز بروی سر کار.
+B: Deux heures de train par jour… Et sans voiture, à la campagne, on ne peut rien faire. | روزی دو ساعت قطار… تازه، بیرون شهر بدون ماشین هیچ کاری نمی‌شود کرد.
+A: On achèterait une petite voiture d'occasion. Avec ce qu'on paie ici pour trois pièces, on aurait une maison de cinq pièces ! | یک ماشین دست‌دوم کوچک می‌خریم. با پولی که اینجا برای سه اتاق می‌دهیم، یک خانهٔ پنج‌اتاقه داریم!
+B: C'est vrai que l'appartement devient petit, surtout depuis la naissance de Louis. | راست است که آپارتمان برایمان کوچک شده، مخصوصاً از وقتی لویی به دنیا آمده.
+A: Et pense à lui : il grandirait en plein air, avec des arbres et des animaux, loin du bruit. | به او هم فکر کن: در هوای آزاد بزرگ می‌شود، با درخت و حیوان، دور از سروصدا.
+B: Je comprends. Mais j'ai peur qu'on se sente seuls là-bas. Ici, nos amis habitent à côté, on va au théâtre… | می‌فهمم. ولی می‌ترسم آنجا احساس تنهایی کنیم. اینجا دوستانمان همین نزدیکی‌اند، تئاتر می‌رویم…
+A: Au théâtre ? On n'y est pas allés depuis le mois de mars, Marc ! | تئاتر؟ از ماه مارس تا حالا تئاتر نرفته‌ایم، مارک!
+B: Ah bon ? Tu as raison… Mais j'aime cette ville, ses marchés, ses rues pleines de vie. | راستی؟ حق با توست… ولی من این شهر را دوست دارم، بازارهایش را، خیابان‌های پر از زندگی‌اش را.
+A: Pourtant, je ne supporte plus les embouteillages, le métro plein et les grèves qui bloquent tout. | با این حال، دیگر راه‌بندان‌ها و متروی شلوغ و اعتصاب‌هایی را که همه‌چیز را می‌خوابانند تحمل نمی‌کنم.
+B: Bon. Avant de tout vendre, j'aimerais essayer. Et si on louait une maison là-bas pendant un mois, cet été ? | خب. قبل از این‌که همه‌چیز را بفروشیم، دلم می‌خواهد امتحان کنیم. اگر تابستان امسال یک ماه آنجا خانه اجاره کنیم چطور است؟
+A: Excellente idée ! Après avoir vécu un mois là-bas, on saura si la campagne est pour nous. | فکر خیلی خوبی است! بعد از این‌که یک ماه آنجا زندگی کردیم، می‌فهمیم بیرون شهر به درد ما می‌خورد یا نه.
+B: D'accord. Mais à condition que tu ne me demandes pas d'élever des poules ! | باشد. ولی به شرطی که از من نخواهی مرغ پرورش بدهم!
+A: Promis. Enfin… pas la première année ! | قول می‌دهم. یعنی… سال اول نه!
+reading A:
+{"type":"mcq","prompt":"Pourquoi Claire pense-t-elle qu'ils peuvent quitter Lyon ?","prompt_fa":"کلر چرا فکر می‌کند می‌توانند از لیون بروند؟","options":["Parce que Marc va bientôt changer de travail.","Parce qu'elle travaille maintenant presque toute la semaine chez elle.","Parce que leurs amis ont quitté la ville.","Parce que leur appartement est vendu."],"correct":1,"explanation_fa":"کلر می‌گوید: «Depuis que je peux travailler à la maison quatre jours par semaine, rien ne nous oblige à rester ici.»"}
+{"type":"tf","prompt":"Pour Marc, on a besoin d'une voiture à la campagne.","prompt_fa":"به نظر مارک، بیرون شهر به ماشین نیاز است.","correct":true,"explanation_fa":"مارک می‌گوید: «sans voiture, à la campagne, on ne peut rien faire»."}
+{"type":"tf","prompt":"Claire et Marc vont souvent au théâtre.","prompt_fa":"کلر و مارک زیاد به تئاتر می‌روند.","correct":false,"explanation_fa":"کلر می‌گوید: «On n'y est pas allés depuis le mois de mars»."}
+{"type":"find","prompt":"Quelle phrase montre que Marc a peur de ne plus voir personne ?","prompt_fa":"کدام جمله نشان می‌دهد مارک می‌ترسد دیگر کسی را نبیند؟","correct_sentence":9,"explanation_fa":"مارک می‌گوید: «Mais j'ai peur qu'on se sente seuls là-bas.»"}
+reading B:
+{"type":"order","prompt":"Mettez ces moments dans l'ordre.","prompt_fa":"این لحظه‌ها را به ترتیب بچینید.","items":["Marc regarde les photos de la maison.","Claire et Marc louent une maison au village.","Claire envoie des photos à Marc.","Claire et Marc savent si la campagne est pour eux."],"correct_order":[2,0,1,3],"explanation_fa":"کلر عکس‌ها را فرستاده، مارک «hier soir» آن‌ها را دیده، تابستان یک ماه خانه اجاره می‌کنند و «Après avoir vécu un mois là-bas, on saura» که بیرون شهر به دردشان می‌خورد یا نه."}
+{"type":"ctx","word":"en plein air","prompt":"« il grandirait en plein air » : qu'est-ce que Claire veut dire ?","prompt_fa":"«il grandirait en plein air»: منظور کلر چیست؟","options":["Louis serait souvent malade.","Louis vivrait beaucoup dehors.","Louis serait plus grand que ses amis.","Louis aurait sa chambre à lui."],"correct":1,"explanation_fa":"«en plein air» یعنی بیرون، در هوای آزاد؛ کلر از «des arbres et des animaux» حرف می‌زند."}
+{"type":"match","prompt":"Qui dit quoi ?","prompt_fa":"چه کسی چه می‌گوید؟","left":["Claire","Marc"],"right":["ne supporte plus le métro plein.","aime les marchés de Lyon.","a déjà acheté une voiture."],"pairs":[[0,0],[1,1]],"explanation_fa":"کلر می‌گوید: «je ne supporte plus … le métro plein» و مارک می‌گوید: «j'aime cette ville, ses marchés»."}
+{"type":"cloze","prompt":"Trouvez les mots qui manquent.","prompt_fa":"کلمه‌های جاافتاده را پیدا کنید.","text_with_gaps":"{{1}}, je ne supporte plus les embouteillages, le métro plein et les {{2}} qui bloquent tout.","bank":["Pourtant","grèves","Ensuite","voitures","fêtes"],"answers":["Pourtant","grèves"],"explanation_fa":"کلر می‌گوید: «Pourtant, je ne supporte plus les embouteillages, le métro plein et les grèves qui bloquent tout.»"}
+listening A:
+{"type":"mcq","prompt":"Combien de temps faut-il pour aller en train du village à Lyon ?","prompt_fa":"با قطار از روستا تا لیون چقدر طول می‌کشد؟","options":["Vingt minutes.","Deux heures.","Une heure.","Une demi-heure."],"correct":2,"explanation_fa":"کلر می‌گوید: «Il y a un train direct : en une heure, tu es à Lyon.»"}
+{"type":"num","prompt":"Combien de pièces aurait leur maison à la campagne ?","prompt_fa":"خانه‌شان بیرون شهر چند اتاق دارد؟","answer":"5","accepted":["5","cinq"],"explanation_fa":"کلر می‌گوید: «on aurait une maison de cinq pièces !»"}
+{"type":"tf","prompt":"Marc va au travail à vélo.","prompt_fa":"مارک با دوچرخه سر کار می‌رود.","correct":true,"explanation_fa":"مارک می‌گوید: «Mon travail est ici, à vingt minutes à vélo.»"}
+{"type":"tf","prompt":"Claire et Marc ont déjà une voiture.","prompt_fa":"کلر و مارک از قبل ماشین دارند.","correct":false,"explanation_fa":"کلر می‌گوید: «On achèterait une petite voiture d'occasion.»"}
+listening B:
+{"type":"mcq","prompt":"Qu'est-ce que Marc propose à la fin ?","prompt_fa":"مارک آخر گفتگو چه پیشنهادی می‌دهد؟","options":["De vendre l'appartement tout de suite.","D'acheter la maison sans la voir.","De passer un mois dans le village avant de choisir.","De rester à Lyon et de chercher un plus grand appartement."],"correct":2,"explanation_fa":"مارک می‌گوید: «Et si on louait une maison là-bas pendant un mois, cet été ?»"}
+{"type":"mcq","prompt":"Pourquoi l'appartement est-il devenu petit ?","prompt_fa":"چرا آپارتمان کوچک شده است؟","options":["Parce que leur fils est né.","Parce que Claire travaille à la maison.","Parce que des amis habitent avec eux.","Parce qu'ils ont acheté des animaux."],"correct":0,"explanation_fa":"مارک می‌گوید: «surtout depuis la naissance de Louis»."}
+{"type":"tf","prompt":"Pour le même prix, la maison serait plus grande que l'appartement.","prompt_fa":"با همان پول، خانه از آپارتمان بزرگ‌تر است.","correct":true,"explanation_fa":"کلر می‌گوید: «Avec ce qu'on paie ici pour trois pièces, on aurait une maison de cinq pièces !»"}
+{"type":"tf","prompt":"Marc a envie d'élever des poules.","prompt_fa":"مارک دلش می‌خواهد مرغ پرورش بدهد.","correct":false,"explanation_fa":"مارک می‌گوید: «à condition que tu ne me demandes pas d'élever des poules !»"}

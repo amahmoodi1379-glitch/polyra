@@ -1,0 +1,41 @@
+code: fr-b1-t074
+title: Grève des bus et du tramway
+band: 3
+kind: news
+key_words: grève, syndicat, embaucher, abonnement, rembourser
+sentences:
+- Demain, jeudi, il sera difficile de se déplacer à Bordeaux : les syndicats des chauffeurs de bus et de tramway appellent à la grève pour toute la journée. | فردا، پنجشنبه، رفت‌وآمد در بوردو سخت خواهد بود: سندیکاهای رانندگان اتوبوس و تراموا برای تمام روز فراخوان اعتصاب داده‌اند.
+- Ils demandent que les salaires augmentent et que l'entreprise embauche de nouveaux chauffeurs. | آن‌ها می‌خواهند حقوق‌ها بالا برود و شرکت رانندهٔ تازه استخدام کند.
+- Voici ce qui va rouler. | این هم فهرست آنچه کار می‌کند.
+- Pour le tramway, il y aura seulement un tramway sur trois, de 6 heures à 20 heures. | از تراموا، از ساعت شش صبح تا هشت شب فقط یکی از هر سه تراموا کار می‌کند. | tts: Pour le tramway, il y aura seulement un tramway sur trois, de six heures à vingt heures.
+- La ligne qui traverse le fleuve vers la rive droite ne fonctionnera pas du tout. | خطی که از رودخانه به ساحل راست می‌رود اصلاً کار نمی‌کند.
+- Pour les bus, seules les lignes 1, 4 et 9 rouleront comme un jour normal. Les bus de nuit resteront au garage. | از اتوبوس‌ها فقط خط‌های ۱، ۴ و ۹ مثل یک روز عادی کار می‌کنند. اتوبوس‌های شبانه در پارکینگ می‌مانند. | tts: Pour les bus, seules les lignes un, quatre et neuf rouleront comme un jour normal. Les bus de nuit resteront au garage.
+- Pour les trains de la région, ce sera plus compliqué : il n'y aura qu'un train sur deux. | قطارهای منطقه‌ای وضع پیچیده‌تری دارند: فقط یکی از هر دو قطار حرکت می‌کند.
+- Les trains rapides vers Paris et Toulouse, eux, rouleront presque tous. | ولی قطارهای سریع به پاریس و تولوز تقریباً همه حرکت می‌کنند.
+- L'entreprise demande aux voyageurs de vérifier leur trajet sur son site ou sur son application avant de partir. | شرکت از مسافران می‌خواهد پیش از راه افتادن، مسیرشان را در سایت یا اپلیکیشن آن بررسی کنند.
+- Elle propose aussi de travailler à la maison quand c'est possible, ou de prendre le vélo. | همچنین پیشنهاد می‌کند هر جا ممکن است در خانه کار کنند یا دوچرخه سوار شوند.
+- Les vélos de la ville seront gratuits toute la journée. Si vous avez un vélo électrique, pensez à recharger la batterie dès ce soir ! | دوچرخه‌های شهری تمام روز رایگان‌اند. اگر دوچرخهٔ برقی دارید، یادتان باشد از همین امشب باتری‌اش را شارژ کنید!
+- Et bonne nouvelle pour ceux qui ont un abonnement : l'entreprise leur remboursera une partie du mois de novembre. | خبر خوب هم برای کسانی که کارت اشتراک دارند: شرکت بخشی از پول ماه نوامبر را به آن‌ها برمی‌گرداند.
+- Nadia, infirmière, commence à 7 heures à l'hôpital et habite à quinze kilomètres. | نادیا پرستار است، ساعت هفت در بیمارستان شروع به کار می‌کند و پانزده کیلومتر دورتر زندگی می‌کند. | tts: Nadia, infirmière, commence à sept heures à l'hôpital et habite à quinze kilomètres.
+- « Demain, je pars à 5 heures et demie en voiture, avec une collègue qui habite à côté de chez moi. » | «فردا ساعت پنج و نیم با ماشین راه می‌افتم، با یکی از همکارانم که نزدیک خانه‌ام زندگی می‌کند.» | tts: « Demain, je pars à cinq heures et demie en voiture, avec une collègue qui habite à côté de chez moi. »
+- Pour Lucas, étudiant, la grève n'est pas un problème : « Mes cours sont en ligne demain, je resterai au lit ! » | برای لوکا که دانشجوست، اعتصاب مشکلی نیست: «کلاس‌هایم فردا آنلاین است، توی تختم می‌مانم!»
+- Selon les syndicats, la grève pourrait continuer vendredi si l'entreprise ne propose rien. | به گفتهٔ سندیکاها، اگر شرکت پیشنهادی ندهد، ممکن است اعتصاب جمعه هم ادامه پیدا کند.
+reading A:
+{"type":"mcq","prompt":"À quoi sert surtout cette nouvelle ?","prompt_fa":"این خبر بیشتر به چه کاری می‌آید؟","options":["À expliquer ce qui va rouler pendant la grève.","À annoncer de nouvelles lignes de tramway.","À parler des salaires des infirmières.","À présenter les vélos électriques de la ville."],"correct":0,"explanation_fa":"خبر می‌گوید «Voici ce qui va rouler» و بعد برای تراموا، اتوبوس و قطار توضیح می‌دهد."}
+{"type":"tf","prompt":"Les syndicats veulent que l'entreprise prenne de nouveaux chauffeurs.","prompt_fa":"سندیکاها می‌خواهند شرکت رانندهٔ تازه بگیرد.","correct":true,"explanation_fa":"خبر می‌گوید: «Ils demandent … que l'entreprise embauche de nouveaux chauffeurs.»"}
+{"type":"tf","prompt":"Tous les bus rouleront demain comme d'habitude.","prompt_fa":"فردا همهٔ اتوبوس‌ها مثل همیشه کار می‌کنند.","correct":false,"explanation_fa":"خبر می‌گوید: «seules les lignes 1, 4 et 9 rouleront comme un jour normal»."}
+{"type":"find","prompt":"Quelle phrase dit ce que l'entreprise va faire pour les voyageurs qui ont un abonnement ?","prompt_fa":"کدام جمله می‌گوید شرکت برای مسافرانی که کارت اشتراک دارند چه کار می‌کند؟","correct_sentence":11,"explanation_fa":"خبر می‌گوید: «l'entreprise leur remboursera une partie du mois de novembre»."}
+reading B:
+{"type":"match","prompt":"Que se passera-t-il demain ?","prompt_fa":"فردا چه اتفاقی می‌افتد؟","left":["le tramway","les trains de la région","les trains rapides vers Paris","les bus de nuit"],"right":["un sur deux","presque tous","un sur trois","aucun"],"pairs":[[0,2],[1,0],[2,1],[3,3]],"explanation_fa":"«un tramway sur trois»، برای قطارهای منطقه «qu'un train sur deux»، قطارهای سریع «rouleront presque tous» و «Les bus de nuit resteront au garage»."}
+{"type":"ctx","word":"se déplacer","prompt":"« il sera difficile de se déplacer » : qu'est-ce que cela veut dire ?","prompt_fa":"«il sera difficile de se déplacer»: یعنی چه؟","options":["Il sera difficile de trouver du travail.","Il sera difficile d'aller d'un endroit à un autre.","Il sera difficile de dormir.","Il sera difficile de payer son abonnement."],"correct":1,"explanation_fa":"«se déplacer» یعنی از جایی به جای دیگر رفتن؛ خبر دربارهٔ تراموا، اتوبوس و قطار است."}
+{"type":"cloze","prompt":"Trouvez les mots qui manquent.","prompt_fa":"کلمه‌های جاافتاده را پیدا کنید.","text_with_gaps":"Si vous avez un vélo {{1}}, pensez à recharger la {{2}} dès ce soir !","bank":["électrique","batterie","rapide","voiture","ligne"],"answers":["électrique","batterie"],"explanation_fa":"خبر می‌گوید: «Si vous avez un vélo électrique, pensez à recharger la batterie dès ce soir !»"}
+listening A:
+{"type":"num","prompt":"Jusqu'à quelle heure le tramway roulera-t-il demain ?","prompt_fa":"فردا تراموا تا ساعت چند کار می‌کند؟","answer":"20","accepted":["20","vingt","20 heures","20h"],"explanation_fa":"می‌شنویم: «de 6 heures à 20 heures»."}
+{"type":"mcq","prompt":"Comment Nadia va-t-elle aller au travail demain ?","prompt_fa":"نادیا فردا چطور سر کار می‌رود؟","options":["En tramway, très tôt.","À vélo.","En voiture, avec une collègue.","Elle va travailler à la maison."],"correct":2,"explanation_fa":"نادیا می‌گوید: «je pars à 5 heures et demie en voiture, avec une collègue»."}
+{"type":"tf","prompt":"Les vélos de la ville seront gratuits demain.","prompt_fa":"فردا دوچرخه‌های شهری رایگان‌اند.","correct":true,"explanation_fa":"می‌شنویم: «Les vélos de la ville seront gratuits toute la journée.»"}
+{"type":"tf","prompt":"La grève durera seulement le matin.","prompt_fa":"اعتصاب فقط صبح است.","correct":false,"explanation_fa":"می‌شنویم: «les syndicats … appellent à la grève pour toute la journée»."}
+listening B:
+{"type":"mcq","prompt":"Pourquoi la grève n'est-elle pas un problème pour Lucas ?","prompt_fa":"چرا اعتصاب برای لوکا مشکلی نیست؟","options":["Parce qu'il habite à côté de l'université.","Parce que ses cours sont en ligne demain.","Parce qu'il prend le train rapide.","Parce qu'il a un vélo électrique."],"correct":1,"explanation_fa":"لوکا می‌گوید: «Mes cours sont en ligne demain»."}
+{"type":"mcq","prompt":"Que pourrait-il se passer vendredi ?","prompt_fa":"جمعه چه ممکن است اتفاق بیفتد؟","options":["Le tramway sera gratuit.","Les chauffeurs recevront leur salaire.","La grève pourrait continuer.","De nouvelles lignes de bus vont ouvrir."],"correct":2,"explanation_fa":"می‌شنویم: «la grève pourrait continuer vendredi si l'entreprise ne propose rien»."}
+{"type":"tf","prompt":"La ligne de tramway vers la rive droite ne roulera pas.","prompt_fa":"خط ترامواییِ ساحل راست کار نمی‌کند.","correct":true,"explanation_fa":"می‌شنویم: «La ligne qui traverse le fleuve vers la rive droite ne fonctionnera pas du tout.»"}
+{"type":"tf","prompt":"Nadia habite à côté de l'hôpital.","prompt_fa":"نادیا نزدیک بیمارستان زندگی می‌کند.","correct":false,"explanation_fa":"می‌شنویم: «Nadia … habite à quinze kilomètres»."}

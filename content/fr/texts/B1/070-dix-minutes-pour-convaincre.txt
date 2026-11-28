@@ -1,0 +1,48 @@
+code: fr-b1-t070
+title: Dix minutes pour convaincre
+band: 3
+kind: long_dialogue
+placement: yes
+key_words: exposé, chiffre, convaincre, imprimer, transpirer
+sentences:
+A: Thomas, tu as regardé le fichier que je t'ai envoyé ? Notre exposé pour demain ? | توماس، فایلی را که برایت فرستادم نگاه کردی؟ ارائه‌مان برای فردا؟
+B: Oui… Julie, il y a vingt-cinq pages ! Et nous n'avons que quinze minutes. | آره… ژولی، بیست‌وپنج صفحه است! ما فقط پانزده دقیقه وقت داریم.
+A: Je sais, mais tout est important : les chiffres de l'année, les questions des clients, le budget… | می‌دانم، ولی همه‌اش مهم است: آمار امسال، سؤال‌های مشتری‌ها، بودجه…
+B: Personne ne va retenir vingt-cinq pages de chiffres. La directrice va s'endormir ! | هیچ‌کس بیست‌وپنج صفحه عدد و رقم یادش نمی‌ماند. خانم مدیر خوابش می‌برد!
+A: Tu exagères ! Les chiffres, c'est ce qui la convainc. Elle adore ça. | اغراق می‌کنی! چیزی که او را قانع می‌کند همین آمار است. عاشقش است.
+B: Peut-être, mais d'abord, il faut qu'elle ait envie d'écouter. Moi, je commencerais par une histoire vraie. | شاید، ولی اول باید دلش بخواهد گوش بدهد. من اگر بودم با یک ماجرای واقعی شروع می‌کردم.
+A: Une histoire ? Laquelle ? | ماجرا؟ کدام ماجرا؟
+B: Celle de Madame Laurent, la cliente qui nous a appelés trois fois parce qu'elle ne trouvait pas comment payer sur notre site. | ماجرای خانم لوران، همان مشتری‌ای که سه بار به ما زنگ زد چون نمی‌فهمید چطور در سایتمان پرداخت کند.
+A: Ah oui, la pauvre ! Elle était furieuse. | آهان، بیچاره! خیلی عصبانی بود.
+B: Exactement. Avec son exemple, tout le monde comprend tout de suite pourquoi notre site doit changer. | دقیقاً. با مثال او همه فوراً می‌فهمند چرا سایتمان باید عوض شود.
+A: D'accord pour l'histoire. Mais sans chiffres, notre idée n'a pas l'air sérieuse. | ماجرا قبول. ولی بدون آمار، فکرمان جدی به نظر نمی‌رسد.
+B: Je suis d'accord. Mais garde seulement les trois chiffres les plus importants. | موافقم. ولی فقط سه رقم مهم‌تر را نگه دار.
+A: Seulement trois ? Ce serait dommage, j'ai travaillé tout le week-end sur ces pages ! | فقط سه تا؟ حیف است، تمام آخر هفته روی این صفحه‌ها کار کردم!
+B: Je sais, et ton travail est excellent. Tu peux imprimer le reste et le donner à la fin. | می‌دانم، کارت هم عالی است. می‌توانی بقیه‌اش را چاپ کنی و آخر جلسه بدهی.
+A: Oh, attends, un message de la directrice : la réunion commence à 9 heures, et nous aurons dix minutes, pas quinze. | اِ، صبر کن، یک پیام از خانم مدیر: جلسه ساعت نه شروع می‌شود و ده دقیقه وقت داریم، نه پانزده دقیقه. | tts: Oh, attends, un message de la directrice : la réunion commence à neuf heures, et nous aurons dix minutes, pas quinze.
+A: D'accord. Tu commences avec ton histoire, deux minutes, pas plus. Ensuite, je présente mes trois chiffres et le budget. | باشد. تو با ماجرایت شروع می‌کنی، دو دقیقه، نه بیشتر. بعد من سه رقمم و بودجه را ارائه می‌کنم.
+B: Et la fin ? Ta partie ou la mienne ? | آخرش چی؟ بخش تو یا بخش من؟
+A: La tienne : tu parles mieux que moi quand il faut convaincre. | بخش تو: وقتی باید کسی را قانع کرد، تو بهتر از من حرف می‌زنی.
+B: Merci ! Bon, on répète une fois, et après, on rentre dormir. | ممنون! خب، یک بار تمرین می‌کنیم و بعد می‌رویم خانه بخوابیم.
+A: Tu as raison. Je suis très stressée… Je transpire déjà ! | حق با توست. خیلی استرس دارم… از همین حالا عرق کرده‌ام!
+B: Moi aussi. Mais à deux, ça va bien se passer. | من هم. ولی دوتایی، همه‌چیز خوب پیش می‌رود.
+reading A:
+{"type":"mcq","prompt":"Sur quoi Julie et Thomas ne sont-ils pas d'accord au début ?","prompt_fa":"ژولی و توماس اول سر چه چیزی با هم موافق نیستند؟","options":["Sur l'heure de la réunion.","Sur ce qu'il faut mettre dans l'exposé.","Sur la cliente qui a appelé trois fois.","Sur le budget de leur projet."],"correct":1,"explanation_fa":"توماس می‌گوید «il y a vingt-cinq pages ! Et nous n'avons que quinze minutes» و ژولی جواب می‌دهد «Les chiffres, c'est ce qui la convainc»."}
+{"type":"tf","prompt":"Thomas pense que l'exposé de Julie est trop long.","prompt_fa":"توماس فکر می‌کند ارائهٔ ژولی زیادی طولانی است.","correct":true,"explanation_fa":"توماس می‌گوید: «Personne ne va retenir vingt-cinq pages de chiffres.»"}
+{"type":"tf","prompt":"Madame Laurent a pu payer sans problème sur le site.","prompt_fa":"خانم لوران بدون مشکل در سایت پرداخت کرد.","correct":false,"explanation_fa":"توماس می‌گوید: «elle ne trouvait pas comment payer sur notre site»."}
+{"type":"find","prompt":"Quelle phrase change le plan de Julie et Thomas ?","prompt_fa":"کدام جمله برنامهٔ ژولی و توماس را عوض می‌کند؟","correct_sentence":14,"explanation_fa":"ژولی می‌گوید: «la réunion commence à 9 heures, et nous aurons dix minutes, pas quinze»."}
+{"type":"mcq","prompt":"Pourquoi Thomas veut-il commencer par l'histoire de Madame Laurent ?","prompt_fa":"توماس چرا می‌خواهد با ماجرای خانم لوران شروع کند؟","options":["Parce qu'elle sera à la réunion.","Parce que la directrice la connaît bien.","Parce qu'elle montre vite pourquoi le site doit changer.","Parce qu'il n'a pas préparé de chiffres."],"correct":2,"explanation_fa":"توماس می‌گوید: «Avec son exemple, tout le monde comprend tout de suite pourquoi notre site doit changer.»"}
+reading B:
+{"type":"ctx","word":"Tu exagères","prompt":"« Tu exagères ! » : que pense Julie de ce que dit Thomas ?","prompt_fa":"«Tu exagères !»: ژولی دربارهٔ حرف توماس چه فکری می‌کند؟","options":["Elle trouve qu'il a tout à fait raison.","Elle pense que ce n'est pas aussi grave.","Elle pense qu'il n'a pas lu le fichier.","Elle trouve qu'il parle trop bas."],"correct":1,"explanation_fa":"«exagérer» یعنی اغراق کردن؛ ژولی قبول ندارد که خانم مدیر «va s'endormir»."}
+{"type":"order","prompt":"Mettez l'exposé de demain dans l'ordre.","prompt_fa":"ارائهٔ فردا را به ترتیب بچینید.","items":["Julie présente trois chiffres.","Thomas termine l'exposé.","Thomas raconte l'histoire d'une cliente.","Julie parle du budget."],"correct_order":[2,0,3,1],"explanation_fa":"ژولی می‌گوید: «Tu commences avec ton histoire … Ensuite, je présente mes trois chiffres et le budget» و پایان را به توماس می‌دهد: «La tienne»."}
+{"type":"match","prompt":"Qui fait quoi ?","prompt_fa":"چه کسی چه کار می‌کند؟","left":["Julie","Thomas","la directrice"],"right":["a envoyé un message.","a travaillé tout le week-end.","veut commencer par une histoire vraie.","a appelé trois fois."],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"ژولی «j'ai travaillé tout le week-end»، توماس «je commencerais par une histoire vraie» و خانم مدیر پیام فرستاده: «un message de la directrice»."}
+listening A:
+{"type":"num","prompt":"Combien de pages y a-t-il dans le fichier de Julie ?","prompt_fa":"فایل ژولی چند صفحه دارد؟","answer":"25","accepted":["25","vingt-cinq"],"explanation_fa":"توماس می‌گوید: «il y a vingt-cinq pages !»"}
+{"type":"mcq","prompt":"Combien de temps auront-ils demain pour leur exposé ?","prompt_fa":"فردا چقدر برای ارائه‌شان وقت دارند؟","options":["Quinze minutes.","Deux minutes.","Dix minutes.","Une heure."],"correct":2,"explanation_fa":"پیام خانم مدیر: «nous aurons dix minutes, pas quinze»."}
+{"type":"mcq","prompt":"Que va faire Julie avec les autres pages ?","prompt_fa":"ژولی با بقیهٔ صفحه‌ها چه کار می‌کند؟","options":["Elle va les imprimer et les donner à la fin.","Elle va les envoyer à la cliente.","Elle va les lire très vite.","Elle va les garder pour une autre réunion."],"correct":0,"explanation_fa":"توماس می‌گوید: «Tu peux imprimer le reste et le donner à la fin.»"}
+{"type":"tf","prompt":"La réunion commence à 9 heures.","prompt_fa":"جلسه ساعت نه شروع می‌شود.","correct":true,"explanation_fa":"پیام خانم مدیر: «la réunion commence à 9 heures»."}
+{"type":"tf","prompt":"À la fin, Julie et Thomas ne sont toujours pas d'accord.","prompt_fa":"آخر گفتگو ژولی و توماس هنوز با هم موافق نیستند.","correct":false,"explanation_fa":"آن‌ها با هم برنامه را می‌چینند و توماس می‌گوید: «Mais à deux, ça va bien se passer.»"}
+listening B:
+{"type":"mcq","prompt":"Pourquoi Julie donne-t-elle la fin de l'exposé à Thomas ?","prompt_fa":"ژولی چرا پایان ارائه را به توماس می‌دهد؟","options":["Parce qu'il connaît mieux les chiffres.","Parce qu'il parle mieux qu'elle pour convaincre.","Parce qu'elle doit partir plus tôt.","Parce que la directrice l'a demandé."],"correct":1,"explanation_fa":"ژولی می‌گوید: «tu parles mieux que moi quand il faut convaincre»."}
+{"type":"tf","prompt":"Thomas trouve le travail de Julie très bon.","prompt_fa":"توماس کار ژولی را خیلی خوب می‌داند.","correct":true,"explanation_fa":"توماس می‌گوید: «ton travail est excellent»."}
+{"type":"tf","prompt":"Julie est calme et pas du tout stressée.","prompt_fa":"ژولی آرام است و اصلاً استرس ندارد.","correct":false,"explanation_fa":"ژولی می‌گوید: «Je suis très stressée… Je transpire déjà !»"}

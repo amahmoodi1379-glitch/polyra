@@ -1,0 +1,43 @@
+code: fr-b1-t062
+title: Retour à la maison après le feu
+band: 3
+kind: news
+key_words: incendie, flamme, fumée, blesser, enquête
+sentences:
+- Bonne nouvelle ce jeudi matin : les pompiers ont enfin arrêté l'incendie qui brûlait depuis mardi au nord de Marseille. | خبر خوب امروز پنجشنبه صبح: آتش‌نشان‌ها بالاخره آتش‌سوزی‌ای را که از سه‌شنبه در شمال مارسی ادامه داشت مهار کردند.
+- Le feu a commencé mardi vers 15 heures, au bord d'une petite route, à côté d'une forêt. | آتش سه‌شنبه حدود ساعت سه بعدازظهر، کنار یک جادهٔ کوچک و نزدیک یک جنگل شروع شد. | tts: Le feu a commencé mardi vers quinze heures, au bord d'une petite route, à côté d'une forêt.
+- À cause d'un vent très fort, les flammes ont avancé très vite. | به خاطر باد خیلی شدید، شعله‌ها خیلی سریع جلو رفتند.
+- Plus de 900 pompiers sont venus de toute la région, avec des avions qui jetaient de l'eau sur le feu. | بیش از ۹۰۰ آتش‌نشان از سراسر منطقه آمدند، با هواپیماهایی که روی آتش آب می‌ریختند. | tts: Plus de neuf cents pompiers sont venus de toute la région, avec des avions qui jetaient de l'eau sur le feu.
+- Des soldats les ont aidés pendant la nuit. | شب سربازها هم کمکشان کردند.
+- Mardi soir, environ 2 000 habitants ont dû quitter leur maison. | سه‌شنبه شب، حدود دو هزار نفر از ساکنان مجبور شدند خانه‌شان را ترک کنند. | tts: Mardi soir, environ deux mille habitants ont dû quitter leur maison.
+- Beaucoup ont dormi chez des amis ; les autres ont passé la nuit dans une école, où la mairie avait préparé des lits. | خیلی‌ها پیش دوستانشان خوابیدند؛ بقیه شب را در مدرسه‌ای گذراندند که شهرداری در آن تخت آماده کرده بود.
+- Heureusement, les flammes n'ont blessé aucun habitant. | خوشبختانه شعله‌ها به هیچ‌کدام از ساکنان آسیبی نزدند.
+- Seuls deux pompiers ont eu besoin d'un médecin, parce qu'ils avaient respiré trop de fumée. | فقط دو آتش‌نشان به دکتر نیاز پیدا کردند، چون دود زیادی تنفس کرده بودند.
+- Trois maisons et plusieurs voitures ont brûlé. | سه خانه و چند ماشین سوختند.
+- Mercredi soir, le vent s'est enfin calmé, et ce matin, le feu ne brûle plus que dans quelques petites zones. | چهارشنبه شب باد بالاخره آرام گرفت و امروز صبح آتش فقط در چند محدودهٔ کوچک می‌سوزد.
+- Les habitants ont donc pu rentrer chez eux vers 10 heures. | برای همین، ساکنان حدود ساعت ده توانستند به خانه‌هایشان برگردند. | tts: Les habitants ont donc pu rentrer chez eux vers dix heures.
+- Sophie, 58 ans, raconte : « Quand nous sommes partis, il y avait de la fumée partout et on ne voyait plus le ciel. » | سوفی، ۵۸ ساله، تعریف می‌کند: «وقتی راه افتادیم، همه‌جا دود بود و دیگر آسمان دیده نمی‌شد.» | tts: Sophie, cinquante-huit ans, raconte : « Quand nous sommes partis, il y avait de la fumée partout et on ne voyait plus le ciel. »
+- « J'avais peur de ne plus la revoir. Les murs sont noirs, mais elle est toujours là ! » | «می‌ترسیدم دیگر نبینمش. دیوارها سیاه شده‌اند، ولی خانه هنوز سر جایش است!»
+- Comment le feu a-t-il commencé ? La police a ouvert une enquête. | آتش چطور شروع شد؟ پلیس تحقیقات را شروع کرده است.
+- Selon des témoins, il serait parti d'une cigarette jetée par la fenêtre d'une voiture. | به گفتهٔ چند شاهد، ظاهراً آتش از سیگاری شروع شده که کسی از پنجرهٔ یک ماشین بیرون انداخته است.
+- Jusqu'à dimanche, il est interdit d'aller se promener dans les forêts autour de Marseille. | تا یکشنبه، رفتن به جنگل‌های اطراف مارسی برای گردش ممنوع است.
+- Les pompiers le répètent : en été, il ne faut jamais faire de feu dehors, même pour un pique-nique. | آتش‌نشان‌ها باز هم تکرار می‌کنند: در تابستان هیچ‌وقت نباید بیرون آتش روشن کرد، حتی برای پیک‌نیک.
+reading A:
+{"type":"mcq","prompt":"Quelle est la nouvelle principale ?","prompt_fa":"خبر اصلی چیست؟","options":["Un nouveau feu a commencé ce matin près de Marseille.","Les pompiers ont arrêté le feu et les habitants rentrent chez eux.","Les forêts autour de Marseille sont fermées pour toujours.","La police a trouvé la personne qui a commencé le feu."],"correct":1,"explanation_fa":"خبر می‌گوید: «les pompiers ont enfin arrêté l'incendie» و «Les habitants ont donc pu rentrer chez eux»."}
+{"type":"tf","prompt":"Le vent a aidé le feu à avancer très vite.","prompt_fa":"باد کمک کرد آتش خیلی سریع جلو برود.","correct":true,"explanation_fa":"خبر می‌گوید: «À cause d'un vent très fort, les flammes ont avancé très vite»."}
+{"type":"tf","prompt":"Les flammes ont blessé des habitants.","prompt_fa":"شعله‌ها به چند نفر از ساکنان آسیب زدند.","correct":false,"explanation_fa":"خبر می‌گوید: «les flammes n'ont blessé aucun habitant»."}
+{"type":"find","prompt":"Quelle phrase explique comment le feu a peut-être commencé ?","prompt_fa":"کدام جمله توضیح می‌دهد آتش احتمالاً چطور شروع شده است؟","correct_sentence":15,"explanation_fa":"خبر می‌گوید: «il serait parti d'une cigarette jetée par la fenêtre d'une voiture»."}
+reading B:
+{"type":"order","prompt":"Mettez ces moments dans l'ordre.","prompt_fa":"این لحظه‌ها را به ترتیب بچینید.","items":["Le vent se calme.","Les habitants quittent leur maison.","Le feu commence près d'une route.","Les habitants rentrent chez eux."],"correct_order":[2,1,0,3],"explanation_fa":"آتش «mardi vers 15 heures» شروع شد، «Mardi soir» ساکنان خانه‌ها را ترک کردند، «Mercredi soir, le vent s'est enfin calmé» و امروز صبح به خانه برگشتند."}
+{"type":"ctx","word":"serait parti","prompt":"« il serait parti d'une cigarette » : que veut dire le journaliste ?","prompt_fa":"«il serait parti d'une cigarette»: منظور خبرنگار چیست؟","options":["C'est sûr : la police a vu la cigarette.","Le feu est parti vers une autre ville.","C'est possible, mais ce n'est pas encore sûr.","Le feu va commencer de nouveau demain."],"correct":2,"explanation_fa":"این شکل شرطی در خبر یعنی هنوز قطعی نیست؛ خبر هم می‌گوید: «La police a ouvert une enquête»."}
+{"type":"cloze","prompt":"Trouvez les mots qui manquent.","prompt_fa":"کلمه‌های جاافتاده را پیدا کنید.","text_with_gaps":"Beaucoup ont dormi chez des amis ; les autres ont passé la nuit dans une {{1}}, où la {{2}} avait préparé des lits.","bank":["école","mairie","forêt","police","maison"],"answers":["école","mairie"],"explanation_fa":"خبر می‌گوید: «les autres ont passé la nuit dans une école, où la mairie avait préparé des lits»."}
+listening A:
+{"type":"num","prompt":"Combien d'habitants ont dû quitter leur maison mardi soir ?","prompt_fa":"سه‌شنبه شب چند نفر از ساکنان مجبور شدند خانه‌شان را ترک کنند؟","answer":"2000","accepted":["2000","2 000","deux mille"],"explanation_fa":"می‌شنویم: «environ 2 000 habitants ont dû quitter leur maison»."}
+{"type":"mcq","prompt":"Qui a aidé les pompiers pendant la nuit ?","prompt_fa":"چه کسانی شب به آتش‌نشان‌ها کمک کردند؟","options":["Des médecins.","Des habitants.","Des policiers.","Des soldats."],"correct":3,"explanation_fa":"می‌شنویم: «Des soldats les ont aidés pendant la nuit.»"}
+{"type":"tf","prompt":"Deux pompiers ont respiré trop de fumée.","prompt_fa":"دو آتش‌نشان دود زیادی تنفس کردند.","correct":true,"explanation_fa":"می‌شنویم: «Seuls deux pompiers ont eu besoin d'un médecin, parce qu'ils avaient respiré trop de fumée.»"}
+{"type":"tf","prompt":"La maison de Sophie a brûlé.","prompt_fa":"خانهٔ سوفی سوخت.","correct":false,"explanation_fa":"سوفی می‌گوید: «Les murs sont noirs, mais elle est toujours là !»"}
+listening B:
+{"type":"mcq","prompt":"Qu'est-ce qui est interdit jusqu'à dimanche ?","prompt_fa":"تا یکشنبه چه چیزی ممنوع است؟","options":["De se promener dans les forêts autour de la ville.","De rouler en voiture au nord de Marseille.","De rentrer dans les maisons noires.","De fumer dans les rues de Marseille."],"correct":0,"explanation_fa":"می‌شنویم: «Jusqu'à dimanche, il est interdit d'aller se promener dans les forêts autour de Marseille.»"}
+{"type":"mcq","prompt":"Quel jour le feu a-t-il commencé ?","prompt_fa":"آتش چه روزی شروع شد؟","options":["Lundi.","Mardi.","Mercredi.","Jeudi."],"correct":1,"explanation_fa":"می‌شنویم: «Le feu a commencé mardi vers 15 heures»."}
+{"type":"tf","prompt":"Les habitants ont pu rentrer chez eux ce matin.","prompt_fa":"ساکنان امروز صبح توانستند به خانه برگردند.","correct":true,"explanation_fa":"می‌شنویم: «Les habitants ont donc pu rentrer chez eux vers 10 heures.»"}
+{"type":"tf","prompt":"Selon les pompiers, on peut faire un feu dehors pour un pique-nique.","prompt_fa":"به گفتهٔ آتش‌نشان‌ها، برای پیک‌نیک می‌شود بیرون آتش روشن کرد.","correct":false,"explanation_fa":"می‌شنویم: «en été, il ne faut jamais faire de feu dehors, même pour un pique-nique»."}

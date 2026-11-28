@@ -1,0 +1,44 @@
+code: fr-b1-t075
+title: Merci à toute l'équipe
+band: 3
+kind: letter
+key_words: chirurgien, opération, prendre soin de, gentillesse, plateau
+sentences:
+- Cher docteur Moreau, chères infirmières, chers infirmiers, | دکتر مورو عزیز، پرستاران عزیز،
+- Il y a deux mois, je suis arrivé aux urgences de votre hôpital avec une forte douleur dans la poitrine. | دو ماه پیش با درد شدیدی در قفسهٔ سینه به اورژانس بیمارستان شما رسیدم.
+- Le soir même, j'étais sur votre table d'opération. | همان شب روی تخت عمل شما بودم.
+- Je vous écris aujourd'hui pour vous dire merci, à vous tous. | امروز برایتان می‌نویسم تا از همه‌تان تشکر کنم.
+- Docteur, vous êtes un chirurgien très occupé, mais avant l'opération, vous avez pris le temps de tout m'expliquer, avec patience, à 2 heures du matin. | آقای دکتر، شما جراحی هستید که سرتان خیلی شلوغ است، ولی پیش از عمل، ساعت دو بامداد، با حوصله وقت گذاشتید و همه‌چیز را برایم توضیح دادید. | tts: Docteur, vous êtes un chirurgien très occupé, mais avant l'opération, vous avez pris le temps de tout m'expliquer, avec patience, à deux heures du matin.
+- J'avais très peur, et vos mots m'ont rassuré. | خیلی می‌ترسیدم و حرف‌هایتان خیالم را راحت کرد.
+- Je n'oublierai jamais non plus les infirmières et les infirmiers du service. | پرستاران بخش را هم هیچ‌وقت فراموش نمی‌کنم.
+- La première nuit, je ne pouvais pas dormir : Claire est restée près de moi et m'a tenu la main pendant une heure. | شب اول خوابم نمی‌برد: کلر پیشم ماند و یک ساعت دستم را گرفت.
+- Pendant dix jours, vous avez pris soin de moi avec une gentillesse incroyable, même quand j'étais de mauvaise humeur. | ده روز با مهربانی‌ای باورنکردنی از من مراقبت کردید، حتی وقتی بدخلق بودم.
+- Et Karim avait toujours un mot drôle en m'apportant mon plateau du matin. | کریم هم وقتی سینی صبحانه‌ام را می‌آورد، همیشه یک حرف بامزه داشت.
+- Aujourd'hui, je vais beaucoup mieux. | امروز حالم خیلی بهتر است.
+- Je marche quarante minutes chaque jour, et je fais de nouveau mes courses tout seul. | هر روز چهل دقیقه پیاده‌روی می‌کنم و دوباره خودم تنهایی خریدهایم را انجام می‌دهم.
+- Le mois prochain, ma femme et moi, nous partons même une semaine en Bretagne chez nos petits-enfants : elle a déjà préparé les bagages ! | ماه آینده من و همسرم حتی یک هفته به برتانی، پیش نوه‌هایمان، می‌رویم: او از حالا چمدان‌ها را بسته است!
+- Je pense encore souvent à cette nuit de mars. J'y pense avec un peu de peur, mais surtout avec le bonheur d'être encore là. | هنوز زیاد به آن شب ماه مارس فکر می‌کنم. با کمی ترس به آن فکر می‌کنم، ولی بیشتر با خوشحالی از این‌که هنوز زنده‌ام.
+- Je sais que votre travail est difficile et que vous manquez souvent de temps. | می‌دانم کارتان سخت است و اغلب وقت کم می‌آورید.
+- Alors, je voulais que vous sachiez une chose : grâce à vous, je suis vivant. | برای همین می‌خواستم یک چیز را بدانید: به لطف شما زنده‌ام.
+- J'ai déposé une boîte de chocolats au service : partagez-la entre vous ! | یک جعبه شکلات به بخش تحویل داده‌ام: بین خودتان تقسیمش کنید!
+- Encore merci à vous tous, | باز هم از همه‌تان ممنونم،
+- Pierre Laurent | پیر لوران
+reading A:
+{"type":"mcq","prompt":"Pourquoi Pierre Laurent écrit-il cette lettre ?","prompt_fa":"پیر لوران چرا این نامه را می‌نویسد؟","options":["Pour se plaindre des repas de l'hôpital.","Pour remercier ceux qui l'ont soigné.","Pour demander un nouveau rendez-vous.","Pour annoncer son départ en Bretagne."],"correct":1,"explanation_fa":"پیر می‌نویسد: «Je vous écris aujourd'hui pour vous dire merci, à vous tous.»"}
+{"type":"tf","prompt":"Pierre a eu son opération le jour où il est arrivé à l'hôpital.","prompt_fa":"پیر همان روزی که به بیمارستان رسید عمل شد.","correct":true,"explanation_fa":"پیر می‌نویسد: «Le soir même, j'étais sur votre table d'opération.»"}
+{"type":"tf","prompt":"Avant l'opération, Pierre n'avait pas peur.","prompt_fa":"پیر پیش از عمل نمی‌ترسید.","correct":false,"explanation_fa":"پیر می‌نویسد: «J'avais très peur, et vos mots m'ont rassuré.»"}
+{"type":"find","prompt":"Quelle phrase dit ce que Claire a fait la première nuit ?","prompt_fa":"کدام جمله می‌گوید کلر شب اول چه کار کرد؟","correct_sentence":7,"explanation_fa":"پیر می‌نویسد: «Claire est restée près de moi et m'a tenu la main pendant une heure.»"}
+reading B:
+{"type":"match","prompt":"Qui a fait quoi ?","prompt_fa":"چه کسی چه کار کرد؟","left":["le docteur Moreau","Claire","Karim"],"right":["avait toujours un mot drôle le matin.","a tout expliqué avant l'opération.","est restée près de Pierre la première nuit.","a préparé les bagages."],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"دکتر «vous avez pris le temps de tout m'expliquer»، کلر «est restée près de moi» و کریم «avait toujours un mot drôle en m'apportant mon plateau»."}
+{"type":"ctx","word":"de mauvaise humeur","prompt":"« même quand j'étais de mauvaise humeur » : comment était Pierre ces jours-là ?","prompt_fa":"«même quand j'étais de mauvaise humeur»: پیر آن روزها چطور بود؟","options":["Il était très fatigué.","Il était triste et voulait rentrer chez lui.","Il était malade.","Il n'était pas agréable avec les autres."],"correct":3,"explanation_fa":"«de mauvaise humeur» یعنی بدخلق؛ پیر می‌گوید پرستاران حتی آن روزها هم «avec une gentillesse incroyable» از او مراقبت کردند."}
+{"type":"order","prompt":"Mettez ces moments dans l'ordre.","prompt_fa":"این لحظه‌ها را به ترتیب بچینید.","items":["Pierre part en Bretagne.","Pierre arrive aux urgences.","Pierre écrit cette lettre.","Pierre passe dix jours dans le service."],"correct_order":[1,3,2,0],"explanation_fa":"پیر «Il y a deux mois» به اورژانس رسید، «Pendant dix jours» در بخش بود، حالا نامه می‌نویسد و «Le mois prochain» به برتانی می‌رود."}
+listening A:
+{"type":"num","prompt":"Combien de minutes Pierre marche-t-il chaque jour ?","prompt_fa":"پیر هر روز چند دقیقه پیاده‌روی می‌کند؟","answer":"40","accepted":["40","quarante"],"explanation_fa":"پیر می‌گوید: «Je marche quarante minutes chaque jour»."}
+{"type":"mcq","prompt":"Pourquoi Pierre est-il venu à l'hôpital ?","prompt_fa":"پیر چرا به بیمارستان آمد؟","options":["Il s'était cassé la jambe.","Il avait très mal à la poitrine.","Il ne pouvait plus dormir.","Il avait un rendez-vous avec le docteur."],"correct":1,"explanation_fa":"پیر می‌گوید: «je suis arrivé aux urgences … avec une forte douleur dans la poitrine»."}
+{"type":"tf","prompt":"Aujourd'hui, Pierre fait ses courses sans aide.","prompt_fa":"پیر امروز بدون کمک خرید می‌کند.","correct":true,"explanation_fa":"پیر می‌گوید: «je fais de nouveau mes courses tout seul»."}
+{"type":"tf","prompt":"Pierre est resté un mois dans le service.","prompt_fa":"پیر یک ماه در بخش ماند.","correct":false,"explanation_fa":"پیر می‌گوید: «Pendant dix jours, vous avez pris soin de moi»."}
+listening B:
+{"type":"mcq","prompt":"Qu'est-ce que Pierre a laissé au service ?","prompt_fa":"پیر چه چیزی در بخش گذاشته است؟","options":["Une boîte de chocolats.","Des fleurs.","Une photo de sa famille.","Un livre."],"correct":0,"explanation_fa":"پیر می‌گوید: «J'ai déposé une boîte de chocolats au service.»"}
+{"type":"mcq","prompt":"Où Pierre et sa femme vont-ils le mois prochain ?","prompt_fa":"پیر و همسرش ماه آینده کجا می‌روند؟","options":["Chez leurs enfants à Paris.","À la mer, à l'hôtel.","Chez leurs petits-enfants en Bretagne.","À l'hôpital pour une visite."],"correct":2,"explanation_fa":"پیر می‌گوید: «nous partons même une semaine en Bretagne chez nos petits-enfants»."}
+{"type":"tf","prompt":"Pierre pense que le travail à l'hôpital est facile.","prompt_fa":"پیر فکر می‌کند کار در بیمارستان آسان است.","correct":false,"explanation_fa":"پیر می‌گوید: «Je sais que votre travail est difficile»."}
+{"type":"tf","prompt":"Pierre pense encore souvent à la nuit de son arrivée.","prompt_fa":"پیر هنوز زیاد به شب رسیدنش فکر می‌کند.","correct":true,"explanation_fa":"پیر می‌گوید: «Je pense encore souvent à cette nuit de mars.»"}

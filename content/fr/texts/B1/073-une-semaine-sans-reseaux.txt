@@ -1,0 +1,46 @@
+code: fr-b1-t073
+title: Une semaine sans réseaux
+band: 3
+kind: long_dialogue
+key_words: réseaux sociaux, moyenne, supprimer, chargeur, placard
+sentences:
+A: Antoine, tu peux poser ton téléphone deux minutes ? Je te parle ! | آنتوان، می‌شود دو دقیقه گوشی‌ات را بگذاری کنار؟ دارم با تو حرف می‌زنم!
+B: Pardon, Manon… Je regardais juste une vidéo. | ببخشید، مانون… فقط داشتم یک ویدئو نگاه می‌کردم.
+A: Depuis vingt minutes ! Tu sais combien de temps tu passes sur ton écran par jour ? | بیست دقیقه است! می‌دانی روزی چقدر وقت پای صفحهٔ گوشی می‌گذرانی؟
+B: Aucune idée. Deux heures ? | هیچ نمی‌دانم. دو ساعت؟
+A: Regarde, ton téléphone le dit : cinq heures par jour, en moyenne ! | ببین، گوشی‌ات خودش می‌گوید: به‌طور میانگین روزی پنج ساعت!
+B: Cinq heures ? Ce n'est pas possible… Et toi, alors ? Montre-moi le tien ! | پنج ساعت؟ امکان ندارد… تو چی؟ مال خودت را نشانم بده!
+A: Le mien… Bon, quatre heures. Surtout les réseaux sociaux, le soir, au lit. | مال من… خب، چهار ساعت. بیشترش شبکه‌های اجتماعی، شب‌ها توی تخت.
+A: Je regarde les photos des autres jusqu'à une heure du matin, et après, je n'arrive pas à dormir. | تا ساعت یک بامداد عکس‌های دیگران را نگاه می‌کنم و بعد خوابم نمی‌برد.
+B: Moi, c'est le matin. Avant même de me lever, je lis tous mes messages et les informations. | من صبح‌ها این‌طوری‌ام. حتی قبل از این‌که از جایم بلند شوم، همهٔ پیام‌ها و خبرها را می‌خوانم.
+A: Tu te souviens du dîner chez Léa samedi ? Nous étions six à table, et tout le monde avait son téléphone à la main. | شام شنبه خانهٔ لئا یادت هست؟ شش نفر سر میز بودیم و همه گوشی دستشان بود.
+B: C'est vrai. Personne n'a écouté Hugo quand il a parlé de son nouveau travail. | راست می‌گویی. وقتی اوگو از کار تازه‌اش حرف زد، هیچ‌کس گوش نداد.
+A: Alors, j'ai une idée : et si on essayait une semaine sans réseaux sociaux ? | پس یک فکری دارم: اگر یک هفته بدون شبکه‌های اجتماعی را امتحان کنیم چطور است؟
+B: Une semaine entière ? Mais comment je vais savoir ce qui se passe ? | یک هفتهٔ کامل؟ آن‌وقت از کجا بفهمم چه خبر است؟
+A: Avec le journal, la radio… et tes amis ! On garde les appels et les messages, mais on supprime les applications pendant sept jours. | با روزنامه، رادیو… و دوستانت! تماس‌ها و پیام‌ها را نگه می‌داریم، ولی اپلیکیشن‌ها را هفت روز پاک می‌کنیم.
+B: Et le soir, au lit, tu feras quoi ? | شب‌ها توی تخت چه کار می‌کنی؟
+A: Je lirai un vrai livre. Et je laisserai mon téléphone avec son chargeur dans le placard de la cuisine. | یک کتاب واقعی می‌خوانم. گوشی‌ام را هم با شارژرش توی کمد آشپزخانه می‌گذارم.
+B: D'accord. Mais celui qui recommence avant dimanche invite l'autre au restaurant. | باشد. ولی هر کس قبل از یکشنبه دوباره شروع کند، دیگری را رستوران دعوت می‌کند.
+A: Parfait ! Je choisis déjà le restaurant : celui-là, en face, le japonais. | عالی است! همین حالا رستوران را انتخاب می‌کنم: آن یکی، روبه‌رو، رستوران ژاپنی.
+B: Tu es bien sûre de toi ! On commence quand ? | چه به خودت مطمئنی! خب، کی شروع کنیم؟
+A: Tout de suite. Donne-moi ton téléphone : c'est moi qui supprime les applications ! | همین حالا. گوشی‌ات را بده: خودم اپلیکیشن‌ها را پاک می‌کنم!
+B: Attends ! Une dernière photo, et après, c'est promis. | صبر کن! یک عکس آخر، بعدش قول می‌دهم.
+reading A:
+{"type":"mcq","prompt":"Que décident Manon et Antoine ?","prompt_fa":"مانون و آنتوان چه تصمیمی می‌گیرند؟","options":["D'acheter des téléphones moins chers.","De ne plus manger au restaurant.","De ne plus utiliser les réseaux sociaux pendant une semaine.","De ne plus envoyer de messages à leurs amis."],"correct":2,"explanation_fa":"مانون می‌گوید: «et si on essayait une semaine sans réseaux sociaux ?» و آنتوان قبول می‌کند."}
+{"type":"tf","prompt":"En moyenne, Antoine utilise son téléphone cinq heures par jour.","prompt_fa":"آنتوان به‌طور میانگین روزی پنج ساعت از گوشی‌اش استفاده می‌کند.","correct":true,"explanation_fa":"مانون می‌گوید: «ton téléphone le dit : cinq heures par jour, en moyenne !»"}
+{"type":"tf","prompt":"Pendant la semaine, ils ne pourront plus téléphoner.","prompt_fa":"در این هفته دیگر نمی‌توانند تلفن بزنند.","correct":false,"explanation_fa":"مانون می‌گوید: «On garde les appels et les messages»."}
+{"type":"find","prompt":"Quelle phrase montre que le téléphone a gâché une soirée entre amis ?","prompt_fa":"کدام جمله نشان می‌دهد گوشی یک شب دوستانه را خراب کرده است؟","correct_sentence":10,"explanation_fa":"آنتوان می‌گوید: «Personne n'a écouté Hugo quand il a parlé de son nouveau travail.»"}
+reading B:
+{"type":"ctx","word":"le tien","prompt":"« Montre-moi le tien ! » : qu'est-ce qu'Antoine veut voir ?","prompt_fa":"«Montre-moi le tien !»: آنتوان می‌خواهد چه چیزی را ببیند؟","options":["Le livre de Manon.","Les photos de Léa.","Le temps que Manon passe sur son téléphone.","Le restaurant japonais."],"correct":2,"explanation_fa":"«le tien» یعنی «مال تو»؛ آنتوان می‌خواهد ببیند گوشی مانون چه زمانی نشان می‌دهد، و مانون جواب می‌دهد: «Le mien… Bon, quatre heures.»"}
+{"type":"match","prompt":"Qui fait quoi ?","prompt_fa":"چه کسی چه کار می‌کند؟","left":["Manon","Antoine","Hugo"],"right":["lit ses messages avant de se lever.","regarde des photos au lit le soir.","a parlé de son nouveau travail.","a oublié son téléphone chez Léa."],"pairs":[[0,1],[1,0],[2,2]],"explanation_fa":"مانون «Je regarde les photos des autres jusqu'à une heure du matin»، آنتوان «Avant même de me lever, je lis tous mes messages» و اوگو «a parlé de son nouveau travail»."}
+{"type":"cloze","prompt":"Trouvez les mots qui manquent.","prompt_fa":"کلمه‌های جاافتاده را پیدا کنید.","text_with_gaps":"On garde les {{1}} et les messages, mais on {{2}} les applications pendant sept jours.","bank":["appels","supprime","photos","achète","regarde"],"answers":["appels","supprime"],"explanation_fa":"مانون می‌گوید: «On garde les appels et les messages, mais on supprime les applications pendant sept jours.»"}
+listening A:
+{"type":"num","prompt":"Combien de personnes étaient à table chez Léa ?","prompt_fa":"خانهٔ لئا چند نفر سر میز بودند؟","answer":"6","accepted":["6","six"],"explanation_fa":"مانون می‌گوید: «Nous étions six à table»."}
+{"type":"mcq","prompt":"Où Manon va-t-elle laisser son téléphone le soir ?","prompt_fa":"مانون شب‌ها گوشی‌اش را کجا می‌گذارد؟","options":["Sur son lit.","Dans le placard de la cuisine.","Chez Antoine.","Dans son sac."],"correct":1,"explanation_fa":"مانون می‌گوید: «je laisserai mon téléphone avec son chargeur dans le placard de la cuisine»."}
+{"type":"tf","prompt":"Le soir, Manon a du mal à dormir à cause de son téléphone.","prompt_fa":"مانون شب‌ها به خاطر گوشی‌اش به‌سختی خوابش می‌برد.","correct":true,"explanation_fa":"مانون می‌گوید: «Je regarde les photos des autres jusqu'à une heure du matin, et après, je n'arrive pas à dormir.»"}
+{"type":"tf","prompt":"Antoine pensait passer cinq heures par jour sur son téléphone.","prompt_fa":"آنتوان فکر می‌کرد روزی پنج ساعت پای گوشی است.","correct":false,"explanation_fa":"آنتوان حدس می‌زند «Deux heures ?» و بعد تعجب می‌کند: «Cinq heures ? Ce n'est pas possible…»"}
+listening B:
+{"type":"mcq","prompt":"Que va faire Manon le soir, au lit, pendant cette semaine ?","prompt_fa":"مانون در این هفته شب‌ها توی تخت چه کار می‌کند؟","options":["Elle va regarder la télévision.","Elle va écouter la radio.","Elle va écrire des messages.","Elle va lire un livre."],"correct":3,"explanation_fa":"مانون می‌گوید: «Je lirai un vrai livre.»"}
+{"type":"mcq","prompt":"Que doit faire celui qui recommence avant dimanche ?","prompt_fa":"کسی که قبل از یکشنبه دوباره شروع کند باید چه کار کند؟","options":["Inviter l'autre au restaurant.","Donner son téléphone à l'autre.","Recommencer la semaine.","Payer un nouveau téléphone."],"correct":0,"explanation_fa":"آنتوان می‌گوید: «celui qui recommence avant dimanche invite l'autre au restaurant»."}
+{"type":"tf","prompt":"C'est Manon qui va supprimer les applications d'Antoine.","prompt_fa":"مانون است که اپلیکیشن‌های آنتوان را پاک می‌کند.","correct":true,"explanation_fa":"مانون می‌گوید: «Donne-moi ton téléphone : c'est moi qui supprime les applications !»"}
+{"type":"tf","prompt":"Antoine donne son téléphone tout de suite, sans rien dire.","prompt_fa":"آنتوان فوراً و بی‌حرف گوشی‌اش را می‌دهد.","correct":false,"explanation_fa":"آنتوان می‌گوید: «Attends ! Une dernière photo, et après, c'est promis.»"}

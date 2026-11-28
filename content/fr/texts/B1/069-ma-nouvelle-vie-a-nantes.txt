@@ -1,0 +1,44 @@
+code: fr-b1-t069
+title: Ma nouvelle vie à Nantes
+band: 3
+kind: letter
+key_words: avouer, informaticien, stressé, bref
+sentences:
+- Chère Nadia, | نادیای عزیز،
+- Ça fait déjà trois mois que je suis à Nantes, et je te dois une vraie lettre ! | سه ماه است که در نانت هستم و یک نامهٔ درست‌وحسابی به تو بدهکارم!
+- Tu te souviens comme j'avais peur, en septembre, de partir seule dans une ville où je ne connaissais personne. | یادت هست سپتامبر چقدر می‌ترسیدم تنها به شهری بروم که هیچ‌کس را در آن نمی‌شناختم.
+- Aujourd'hui, je peux te le dire : j'ai bien fait ! | امروز می‌توانم این را به تو بگویم: کار درستی کردم!
+- Mon nouveau travail me plaît beaucoup. Je suis informaticienne dans une petite entreprise, et mes collègues sont très gentils. | کار تازه‌ام را خیلی دوست دارم. در یک شرکت کوچک برنامه‌نویسم و همکارانم خیلی مهربان‌اند.
+- J'ai trouvé un petit appartement au dernier étage, avec un balcon d'où je vois la Loire. | یک آپارتمان کوچک در طبقهٔ آخر پیدا کردم، با بالکنی که از آن رود لوار را می‌بینم.
+- Le matin, je vais au travail à vélo, au bord du fleuve : vingt minutes, et pas de métro plein comme à Paris ! | صبح‌ها با دوچرخه از کنار رودخانه سر کار می‌روم: بیست دقیقه، بدون متروی شلوغ پاریس!
+- Les premières semaines, c'était dur, je l'avoue : le soir, je rentrais dans un appartement vide, et je parlais à mes plantes. | اعتراف می‌کنم هفته‌های اول سخت بود: شب‌ها به آپارتمانی خالی برمی‌گشتم و با گلدان‌هایم حرف می‌زدم.
+- Alors je me suis inscrite à un cours de théâtre, le mardi soir. | برای همین در یک کلاس تئاتر ثبت‌نام کردم، سه‌شنبه‌شب‌ها.
+- Nous sommes douze, de 20 à 65 ans, et nous préparons un spectacle pour le mois de juin. | دوازده نفریم، از بیست تا شصت‌وپنج ساله، و برای ماه ژوئن یک نمایش آماده می‌کنیم. | tts: Nous sommes douze, de vingt à soixante-cinq ans, et nous préparons un spectacle pour le mois de juin.
+- Après le cours, nous allons souvent boire un verre ensemble, et j'ai déjà deux vraies amies, Claire et Manon. | بعد از کلاس اغلب با هم می‌رویم چیزی بنوشیم و حالا دیگر دو دوست واقعی دارم، کلر و مانون.
+- J'ai aussi appris à aimer être seule. | یاد گرفته‌ام از تنهایی هم لذت ببرم.
+- Le dimanche, je me promène dans la ville, je visite un musée ou je lis au café{café-2} sans regarder l'heure. | یکشنبه‌ها در شهر قدم می‌زنم، به موزه‌ای سر می‌زنم یا بی‌آن‌که به ساعت نگاه کنم توی کافه کتاب می‌خوانم.
+- Il pleut souvent ici, c'est vrai, mais je respire mieux, et je suis beaucoup moins stressée qu'à Paris. | راست است، اینجا زیاد باران می‌آید، ولی راحت‌تر نفس می‌کشم و خیلی کمتر از پاریس استرس دارم.
+- Bref, je crois que j'ai trouvé ma place{place-2} ici. | خلاصه، فکر می‌کنم اینجا جای خودم را پیدا کرده‌ام.
+- Et toi, quand viens-tu me voir ? Il y a un train direct depuis Paris : deux heures seulement ! | تو کی به دیدنم می‌آیی؟ از پاریس قطار مستقیم هست: فقط دو ساعت!
+- Si tu viens en mai, nous irons voir la mer : elle n'est qu'à une heure d'ici. | اگر ماه مه بیایی، می‌رویم دریا را ببینیم: فقط یک ساعت با اینجا فاصله دارد.
+- Je t'embrasse très fort, | محکم می‌بوسمت،
+- Sarah | سارا
+reading A:
+{"type":"mcq","prompt":"Comment Sarah se sent-elle à Nantes aujourd'hui ?","prompt_fa":"سارا امروز در نانت چه حسی دارد؟","options":["Elle regrette d'avoir quitté Paris.","Elle est contente : elle pense avoir fait le bon choix.","Elle se sent encore très seule.","Elle veut changer de travail."],"correct":1,"explanation_fa":"سارا می‌نویسد: «Aujourd'hui, je peux te le dire : j'ai bien fait !» و «je crois que j'ai trouvé ma place ici»."}
+{"type":"tf","prompt":"Quand elle est arrivée à Nantes, Sarah n'y connaissait personne.","prompt_fa":"سارا وقتی به نانت رسید، هیچ‌کس را آنجا نمی‌شناخت.","correct":true,"explanation_fa":"سارا می‌نویسد: «partir seule dans une ville où je ne connaissais personne»."}
+{"type":"tf","prompt":"Sarah prend le métro pour aller au travail.","prompt_fa":"سارا برای رفتن به سر کار مترو سوار می‌شود.","correct":false,"explanation_fa":"سارا می‌نویسد: «Le matin, je vais au travail à vélo»."}
+{"type":"find","prompt":"Quelle phrase montre que Sarah se sentait seule au début ?","prompt_fa":"کدام جمله نشان می‌دهد سارا اول احساس تنهایی می‌کرد؟","correct_sentence":7,"explanation_fa":"سارا می‌نویسد: «le soir, je rentrais dans un appartement vide, et je parlais à mes plantes»."}
+reading B:
+{"type":"ctx","word":"je l'avoue","prompt":"« c'était dur, je l'avoue » : que fait Sarah ici ?","prompt_fa":"«c'était dur, je l'avoue»: سارا اینجا چه کار می‌کند؟","options":["Elle dit une chose vraie qui n'est pas facile à dire.","Elle pose une question à Nadia.","Elle donne un conseil à Nadia.","Elle raconte un rêve."],"correct":0,"explanation_fa":"«avouer» یعنی اعتراف کردن؛ سارا قبول می‌کند که هفته‌های اول برایش سخت بوده است."}
+{"type":"order","prompt":"Mettez ces moments dans l'ordre.","prompt_fa":"این لحظه‌ها را به ترتیب بچینید.","items":["Sarah s'inscrit à un cours de théâtre.","Sarah arrive seule à Nantes.","Sarah et son groupe jouent leur spectacle.","Sarah parle à ses plantes le soir."],"correct_order":[1,3,0,2],"explanation_fa":"سارا «en septembre» تنها به نانت رفت، هفته‌های اول با گلدان‌هایش حرف می‌زد، «Alors» در کلاس تئاتر ثبت‌نام کرد و نمایش «pour le mois de juin» است."}
+{"type":"cloze","prompt":"Trouvez les mots qui manquent.","prompt_fa":"کلمه‌های جاافتاده را پیدا کنید.","text_with_gaps":"Il {{1}} souvent ici, c'est vrai, mais je respire mieux, et je suis beaucoup moins {{2}} qu'à Paris.","bank":["pleut","stressée","neige","seule","contente"],"answers":["pleut","stressée"],"explanation_fa":"سارا می‌نویسد: «Il pleut souvent ici … je suis beaucoup moins stressée qu'à Paris»."}
+listening A:
+{"type":"num","prompt":"Combien de personnes y a-t-il dans le cours de théâtre ?","prompt_fa":"در کلاس تئاتر چند نفرند؟","answer":"12","accepted":["12","douze"],"explanation_fa":"سارا می‌گوید: «Nous sommes douze»."}
+{"type":"mcq","prompt":"Quel est le travail de Sarah ?","prompt_fa":"کار سارا چیست؟","options":["Elle est professeur de théâtre.","Elle travaille dans un musée.","Elle est informaticienne.","Elle travaille dans un café."],"correct":2,"explanation_fa":"سارا می‌گوید: «Je suis informaticienne dans une petite entreprise»."}
+{"type":"tf","prompt":"De son balcon, Sarah voit la Loire.","prompt_fa":"سارا از بالکنش رود لوار را می‌بیند.","correct":true,"explanation_fa":"سارا می‌گوید: «avec un balcon d'où je vois la Loire»."}
+{"type":"tf","prompt":"Il fait souvent beau à Nantes.","prompt_fa":"در نانت هوا اغلب آفتابی است.","correct":false,"explanation_fa":"سارا می‌گوید: «Il pleut souvent ici, c'est vrai»."}
+listening B:
+{"type":"mcq","prompt":"Que fait Sarah le dimanche ?","prompt_fa":"سارا یکشنبه‌ها چه کار می‌کند؟","options":["Elle travaille sur son ordinateur.","Elle prend le train pour Paris.","Elle va à la mer avec ses amies.","Elle se promène et prend son temps."],"correct":3,"explanation_fa":"سارا می‌گوید: «je me promène dans la ville, je visite un musée ou je lis au café sans regarder l'heure»."}
+{"type":"mcq","prompt":"Que propose Sarah à Nadia ?","prompt_fa":"سارا به نادیا چه پیشنهادی می‌دهد؟","options":["De venir habiter à Nantes.","De venir en mai et d'aller voir la mer.","De faire du théâtre avec elle.","De l'appeler le mardi soir."],"correct":1,"explanation_fa":"سارا می‌گوید: «Si tu viens en mai, nous irons voir la mer»."}
+{"type":"tf","prompt":"De Paris à Nantes, il faut deux heures en train.","prompt_fa":"از پاریس تا نانت با قطار دو ساعت راه است.","correct":true,"explanation_fa":"سارا می‌گوید: «Il y a un train direct depuis Paris : deux heures seulement !»"}
+{"type":"tf","prompt":"Sarah n'a pas encore d'amies à Nantes.","prompt_fa":"سارا هنوز در نانت دوستی ندارد.","correct":false,"explanation_fa":"سارا می‌گوید: «j'ai déjà deux vraies amies, Claire et Manon»."}

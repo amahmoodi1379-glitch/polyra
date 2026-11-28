@@ -1,0 +1,45 @@
+code: fr-b1-t076
+title: Une mauvaise année pour le miel
+band: 3
+kind: long_dialogue
+key_words: abeille, élever, nourrir, saveur, passe-temps
+sentences:
+A: Bonjour à tous nos auditeurs ! Aujourd'hui, nous recevons Paul Dupont, qui élève des abeilles depuis vingt-cinq ans près de Montpellier. | سلام به همهٔ شنوندگان! امروز میهمان ما پل دوپون است که بیست‌وپنج سال است نزدیک مونپلیه زنبور عسل پرورش می‌دهد.
+B: Bonjour, Sophie. Merci de m'avoir invité. | سلام سوفی. ممنون که دعوتم کردید.
+A: Comment avez-vous commencé ? | چطور شروع کردید؟
+B: Par hasard : au début, c'était un passe-temps. Aujourd'hui, j'ai environ deux millions d'abeilles ! | تصادفی: اولش فقط یک سرگرمی بود. حالا حدود دو میلیون زنبور دارم!
+A: Deux millions ! Et cette année, comment ça s'est passé ? | دو میلیون! امسال چطور گذشت؟
+B: Mal, très mal. C'est la pire année depuis que je fais ce métier. | بد، خیلی بد. از وقتی این کار را می‌کنم، این بدترین سال بوده.
+B: D'abord, il a plu pendant tout le printemps. Quand il pleut, les abeilles ne sortent pas, et elles mangent le miel qu'elles ont fait. | اول این‌که تمام بهار باران آمد. وقتی باران می‌آید، زنبورها بیرون نمی‌روند و عسلی را که ساخته‌اند می‌خورند.
+B: Ensuite, en juillet, il a fait très chaud et très sec. Les fleurs ont séché en quelques jours. | بعد، در ژوئیه، هوا خیلی گرم و خشک شد. گل‌ها در چند روز خشک شدند.
+A: Et sans fleurs, pas de miel… | و بدون گل، عسلی هم در کار نیست…
+B: Exactement. L'année dernière, j'avais fait 900 kilos de miel. Cette année, à peine 300. | دقیقاً. پارسال ۹۰۰ کیلو عسل گرفته بودم. امسال به زور ۳۰۰ کیلو. | tts: Exactement. L'année dernière, j'avais fait neuf cents kilos de miel. Cette année, à peine trois cents.
+B: J'ai même dû nourrir mes abeilles avec du sucre en été, ce qui n'arrive presque jamais. | حتی مجبور شدم تابستان به زنبورهایم شکر بدهم، چیزی که تقریباً هیچ‌وقت پیش نمی‌آید.
+A: Est-ce que c'est à cause du réchauffement climatique ? | آیا این به خاطر گرمایش زمین است؟
+B: J'en suis sûr. Les saisons changent, et les abeilles ont du mal à suivre. | مطمئنم. فصل‌ها عوض می‌شوند و زنبورها به‌سختی خودشان را با آن هماهنگ می‌کنند.
+B: Il y a aussi les produits que certains agriculteurs mettent dans les champs. | محصولاتی هم هست که بعضی کشاورزها توی مزرعه‌ها می‌ریزند.
+A: Alors, votre miel va coûter plus cher ? | پس عسلتان گران‌تر می‌شود؟
+B: Un peu : 14 euros le kilo au lieu de 12. Mais sa saveur est extraordinaire : cette année, il est un peu amer, avec un goût de forêt. | یک کم: کیلویی ۱۴ یورو به جای ۱۲ یورو. ولی طعمش فوق‌العاده است: امسال کمی تلخ است و مزهٔ جنگل می‌دهد. | tts: Un peu : quatorze euros le kilo au lieu de douze. Mais sa saveur est extraordinaire : cette année, il est un peu amer, avec un goût de forêt.
+A: Que peuvent faire nos auditeurs pour aider les abeilles ? | شنوندگان ما برای کمک به زنبورها چه کار می‌توانند بکنند؟
+B: Planter des fleurs sur leur balcon et ne pas mettre de produits contre les insectes dans le jardin. | روی بالکنشان گل بکارند و در باغچه سم حشره‌کش نریزند.
+B: Et acheter du miel près de chez eux, bien sûr ! Les abeilles ont besoin de nous, et nous en avons besoin aussi : sans elles, il n'y aurait presque plus de fruits. | و البته از نزدیک خانه‌شان عسل بخرند! زنبورها به ما نیاز دارند و ما هم به آن‌ها: بدون آن‌ها تقریباً دیگر میوه‌ای نمی‌ماند.
+A: Merci, Paul, et bon courage pour l'année prochaine ! | ممنون پل، برای سال آینده خسته نباشید!
+reading A:
+{"type":"mcq","prompt":"De quoi Paul parle-t-il surtout ?","prompt_fa":"پل بیشتر دربارهٔ چه حرف می‌زند؟","options":["De son grand-père et de son enfance.","De la façon de faire un bon miel à la maison.","Des fruits qu'il vend au marché de Montpellier.","D'une très mauvaise année pour ses abeilles."],"correct":3,"explanation_fa":"پل می‌گوید: «C'est la pire année depuis que je fais ce métier» و دلیل‌هایش را توضیح می‌دهد."}
+{"type":"tf","prompt":"Au début, Paul élevait des abeilles seulement pour le plaisir.","prompt_fa":"پل اول فقط برای سرگرمی زنبور پرورش می‌داد.","correct":true,"explanation_fa":"پل می‌گوید: «Au début, c'était un passe-temps»."}
+{"type":"tf","prompt":"Cette année, Paul a fait 900 kilos de miel.","prompt_fa":"پل امسال ۹۰۰ کیلو عسل گرفته است.","correct":false,"explanation_fa":"پل می‌گوید: «L'année dernière, j'avais fait 900 kilos de miel. Cette année, à peine 300.»"}
+{"type":"find","prompt":"Quelle phrase explique pourquoi la pluie est un problème pour les abeilles ?","prompt_fa":"کدام جمله توضیح می‌دهد چرا باران برای زنبورها مشکل است؟","correct_sentence":6,"explanation_fa":"پل می‌گوید: «Quand il pleut, les abeilles ne sortent pas, et elles mangent le miel qu'elles ont fait.»"}
+reading B:
+{"type":"ctx","word":"à peine","prompt":"« Cette année, à peine 300 » : que veut dire Paul ?","prompt_fa":"«Cette année, à peine 300»: منظور پل چیست؟","options":["Seulement 300 kilos, et c'est très peu.","Exactement 300 kilos, pas un de moins.","Au moins 300 kilos, peut-être plus.","300 kilos de sucre."],"correct":0,"explanation_fa":"«à peine» یعنی به زور، به‌سختی؛ پل فقط حدود ۳۰۰ کیلو عسل گرفته است."}
+{"type":"order","prompt":"Mettez ces moments de l'année dans l'ordre.","prompt_fa":"این لحظه‌های سال را به ترتیب بچینید.","items":["Il fait très chaud et les fleurs sèchent.","Il pleut pendant tout le printemps.","Paul parle à la radio.","Paul donne du sucre à ses abeilles en été."],"correct_order":[1,0,3,2],"explanation_fa":"اول «il a plu pendant tout le printemps»، بعد «en juillet, il a fait très chaud» و گل‌ها خشک شدند، پل «en été» به زنبورها شکر داد و حالا در رادیو حرف می‌زند."}
+{"type":"match","prompt":"Que propose Paul ?","prompt_fa":"پل چه توصیه‌ای می‌کند؟","left":["sur le balcon","dans le jardin","pour le miel"],"right":["ne pas mettre de produits contre les insectes","l'acheter près de chez soi","planter des fleurs","le garder pour l'hiver"],"pairs":[[0,2],[1,0],[2,1]],"explanation_fa":"پل می‌گوید: «Planter des fleurs sur leur balcon … ne pas mettre de produits contre les insectes dans le jardin» و «acheter du miel près de chez eux»."}
+listening A:
+{"type":"num","prompt":"Depuis combien d'années Paul élève-t-il des abeilles ?","prompt_fa":"پل چند سال است زنبور پرورش می‌دهد؟","answer":"25","accepted":["25","vingt-cinq"],"explanation_fa":"مجری می‌گوید: «qui élève des abeilles depuis vingt-cinq ans»."}
+{"type":"mcq","prompt":"Combien coûte le miel de Paul cette année ?","prompt_fa":"عسل پل امسال چند است؟","options":["12 euros le kilo.","14 euros le kilo.","9 euros le kilo.","30 euros le kilo."],"correct":1,"explanation_fa":"پل می‌گوید: «14 euros le kilo au lieu de 12»."}
+{"type":"tf","prompt":"Paul a dû donner du sucre à ses abeilles.","prompt_fa":"پل مجبور شد به زنبورهایش شکر بدهد.","correct":true,"explanation_fa":"پل می‌گوید: «J'ai même dû nourrir mes abeilles avec du sucre en été»."}
+{"type":"tf","prompt":"Le miel de cette année est très sucré.","prompt_fa":"عسل امسال خیلی شیرین است.","correct":false,"explanation_fa":"پل می‌گوید: «cette année, il est un peu amer, avec un goût de forêt»."}
+listening B:
+{"type":"mcq","prompt":"Pourquoi les fleurs ont-elles séché en juillet ?","prompt_fa":"چرا گل‌ها در ژوئیه خشک شدند؟","options":["À cause de la pluie.","À cause du froid.","À cause de la chaleur.","À cause des produits des agriculteurs."],"correct":2,"explanation_fa":"پل می‌گوید: «en juillet, il a fait très chaud et très sec»."}
+{"type":"mcq","prompt":"Pour Paul, que se passerait-il sans les abeilles ?","prompt_fa":"به نظر پل، بدون زنبورها چه اتفاقی می‌افتاد؟","options":["Il n'y aurait plus d'herbe.","Il n'y aurait presque plus de fruits.","Les fleurs seraient plus belles.","Les agriculteurs seraient contents."],"correct":1,"explanation_fa":"پل می‌گوید: «sans elles, il n'y aurait presque plus de fruits»."}
+{"type":"tf","prompt":"Selon Paul, les saisons ne sont plus les mêmes.","prompt_fa":"به گفتهٔ پل، فصل‌ها دیگر مثل قبل نیستند.","correct":true,"explanation_fa":"پل می‌گوید: «Les saisons changent, et les abeilles ont du mal à suivre.»"}
+{"type":"tf","prompt":"Paul habite près de Paris.","prompt_fa":"پل نزدیک پاریس زندگی می‌کند.","correct":false,"explanation_fa":"مجری می‌گوید: «près de Montpellier»."}

@@ -1,0 +1,46 @@
+code: fr-b1-t063
+title: Internet trop lent
+band: 3
+kind: letter
+key_words: fonctionner, technicien, entretien, perdre patience
+sentences:
+- Madame, Monsieur, | خانم محترم، آقای محترم،
+- Je suis votre client depuis six ans, et je vous écris parce que mon internet est très lent depuis le 3 octobre, c'est-à-dire depuis plus d'un mois. | شش سال است مشتری شما هستم و برایتان می‌نویسم چون اینترنتم از سوم اکتبر خیلی کند شده، یعنی بیش از یک ماه است. | tts: Je suis votre client depuis six ans, et je vous écris parce que mon internet est très lent depuis le trois octobre, c'est-à-dire depuis plus d'un mois.
+- Avant, tout fonctionnait très bien. | قبلاً همه‌چیز خیلی خوب کار می‌کرد.
+- Maintenant, une page met parfois une minute à s'ouvrir, et les vidéos s'arrêtent sans arrêt. | حالا گاهی باز شدن یک صفحه یک دقیقه طول می‌کشد و ویدئوها مدام قطع می‌شوند.
+- C'est un vrai problème pour moi, car je suis professeur de piano et, trois jours par semaine, je donne mes cours en vidéo depuis chez moi. | این برای من مشکل جدی‌ای است، چون معلم پیانو هستم و هفته‌ای سه روز کلاس‌هایم را از خانه و به‌صورت تصویری برگزار می‌کنم.
+- Mardi dernier, j'avais un entretien en vidéo pour un nouveau poste{poste-m} : l'image s'est coupée quatre fois, et j'ai dû finir par téléphone. | سه‌شنبهٔ گذشته یک مصاحبهٔ تصویری برای یک شغل تازه داشتم: تصویر چهار بار قطع شد و مجبور شدم مصاحبه را تلفنی تمام کنم.
+- Je ne sais pas encore si j'ai le poste{poste-m}, mais je n'ai certainement pas fait une bonne impression. | هنوز نمی‌دانم آن شغل را می‌گیرم یا نه، ولی مطمئناً تأثیر خوبی نگذاشتم.
+- J'ai appelé votre service client quatre fois. | چهار بار به بخش خدمات مشتریان شما زنگ زدم.
+- Chaque fois, la personne au téléphone m'a donné le même conseil : éteindre l'appareil, attendre deux minutes et l'allumer de nouveau. | هر بار کسی که پشت تلفن بود همان توصیه را کرد: دستگاه را خاموش کنم، دو دقیقه صبر کنم و دوباره روشنش کنم.
+- Je l'ai fait, bien sûr, mais rien n'a changé. | البته این کار را کردم، ولی هیچ چیز عوض نشد.
+- Le 20 octobre, un technicien est enfin venu chez moi. | بیستم اکتبر بالاخره یک تکنیسین به خانه‌ام آمد. | tts: Le vingt octobre, un technicien est enfin venu chez moi.
+- Selon lui, le problème ne vient pas de mon appartement, mais de la rue. | به گفتهٔ او، مشکل از آپارتمان من نیست، از خیابان است.
+- Il a pris des photos devant l'immeuble, et il vous les a sûrement envoyées. | جلوی ساختمان عکس گرفت و حتماً آن‌ها را برایتان فرستاده است.
+- Depuis, je n'ai aucune nouvelle, et je commence à perdre patience. | از آن موقع هیچ خبری ندارم و کم‌کم دارد حوصله‌ام سر می‌رود.
+- Je paie 35 euros par mois pour un service qui ne fonctionne pas. | ماهی ۳۵ یورو برای سرویسی می‌پردازم که کار نمی‌کند. | tts: Je paie trente-cinq euros par mois pour un service qui ne fonctionne pas.
+- Je vous demande donc de réparer la ligne avant la fin du mois. | پس از شما می‌خواهم تا آخر ماه خط را تعمیر کنید.
+- Je souhaite aussi que vous me rendiez l'argent d'octobre. | همچنین می‌خواهم پول ماه اکتبر را به من برگردانید.
+- Si rien ne change avant le 30 novembre, je quitterai votre entreprise pour une autre. | اگر تا سی‌ام نوامبر چیزی تغییر نکند، شرکت شما را رها می‌کنم و سراغ شرکت دیگری می‌روم. | tts: Si rien ne change avant le trente novembre, je quitterai votre entreprise pour une autre.
+- Dans l'attente de votre réponse, | در انتظار پاسخ شما،
+- Cordialement, | با احترام،
+- Nicolas Girard | نیکولا ژیرار
+reading A:
+{"type":"mcq","prompt":"Pourquoi Nicolas écrit-il cette lettre ?","prompt_fa":"نیکولا چرا این نامه را می‌نویسد؟","options":["Pour demander un nouvel appareil plus rapide.","Pour annoncer qu'il change d'appartement.","Pour se plaindre d'un internet trop lent depuis un mois.","Pour remercier le technicien de sa visite."],"correct":2,"explanation_fa":"نیکولا می‌نویسد: «mon internet est très lent depuis le 3 octobre, c'est-à-dire depuis plus d'un mois»."}
+{"type":"tf","prompt":"Nicolas travaille parfois chez lui.","prompt_fa":"نیکولا گاهی در خانه کار می‌کند.","correct":true,"explanation_fa":"نیکولا می‌نویسد: «trois jours par semaine, je donne mes cours en vidéo depuis chez moi»."}
+{"type":"tf","prompt":"Le conseil du service client a résolu le problème.","prompt_fa":"توصیهٔ بخش خدمات مشتریان مشکل را حل کرد.","correct":false,"explanation_fa":"نیکولا می‌نویسد: «Je l'ai fait, bien sûr, mais rien n'a changé.»"}
+{"type":"find","prompt":"Quelle phrase dit d'où vient le problème ?","prompt_fa":"کدام جمله می‌گوید مشکل از کجاست؟","correct_sentence":11,"explanation_fa":"نیکولا می‌نویسد: «le problème ne vient pas de mon appartement, mais de la rue»."}
+reading B:
+{"type":"ctx","word":"perdre patience","prompt":"« je commence à perdre patience » : comment est Nicolas ?","prompt_fa":"«je commence à perdre patience»: حال نیکولا چطور است؟","options":["Il est de plus en plus énervé.","Il est très fatigué par son travail.","Il est content de la visite du technicien.","Il a peur de perdre son poste."],"correct":0,"explanation_fa":"«perdre patience» یعنی حوصله را از دست دادن؛ نیکولا مدت‌هاست منتظر است: «Depuis, je n'ai aucune nouvelle»."}
+{"type":"order","prompt":"Mettez ces moments dans l'ordre.","prompt_fa":"این لحظه‌ها را به ترتیب بچینید.","items":["Un technicien vient chez Nicolas.","Internet devient très lent.","Nicolas écrit à l'entreprise.","Nicolas quittera peut-être l'entreprise."],"correct_order":[1,0,2,3],"explanation_fa":"اینترنت از «3 octobre» کند شد، تکنیسین «Le 20 octobre» آمد، بیش از یک ماه بعد نیکولا این نامه را می‌نویسد و اگر تا سی‌ام نوامبر چیزی عوض نشود «je quitterai votre entreprise»."}
+{"type":"match","prompt":"Qui a fait quoi ?","prompt_fa":"چه کسی چه کار کرد؟","left":["Nicolas","le technicien","la personne au téléphone"],"right":["a toujours donné le même conseil.","a pris des photos devant l'immeuble.","a appelé le service client quatre fois.","a réparé la ligne."],"pairs":[[0,2],[1,1],[2,0]],"explanation_fa":"نیکولا «J'ai appelé votre service client quatre fois»، تکنیسین «Il a pris des photos devant l'immeuble» و آدم پشت تلفن «m'a donné le même conseil»."}
+listening A:
+{"type":"num","prompt":"Combien Nicolas paie-t-il par mois, en euros ?","prompt_fa":"نیکولا ماهی چند یورو می‌پردازد؟","answer":"35","accepted":["35","trente-cinq"],"explanation_fa":"می‌شنویم: «Je paie 35 euros par mois»."}
+{"type":"mcq","prompt":"Que s'est-il passé pendant l'entretien de Nicolas ?","prompt_fa":"در مصاحبهٔ نیکولا چه اتفاقی افتاد؟","options":["Il est arrivé en retard.","L'image s'est arrêtée plusieurs fois.","Il a oublié l'heure du rendez-vous.","Son téléphone ne marchait plus."],"correct":1,"explanation_fa":"می‌شنویم: «l'image s'est coupée quatre fois»."}
+{"type":"tf","prompt":"Nicolas est client de cette entreprise depuis peu de temps.","prompt_fa":"نیکولا مدت کوتاهی است مشتری این شرکت است.","correct":false,"explanation_fa":"می‌شنویم: «Je suis votre client depuis six ans»."}
+{"type":"tf","prompt":"Nicolas n'a pas eu de nouvelles depuis la visite du technicien.","prompt_fa":"نیکولا از وقتی تکنیسین آمده خبری نگرفته است.","correct":true,"explanation_fa":"می‌شنویم: «Depuis, je n'ai aucune nouvelle»."}
+listening B:
+{"type":"mcq","prompt":"Que demande Nicolas à l'entreprise ?","prompt_fa":"نیکولا از شرکت چه می‌خواهد؟","options":["De lui envoyer un autre technicien demain.","De lui offrir un mois gratuit l'année prochaine.","De lui donner un nouveau numéro de téléphone.","De réparer la ligne et de lui rendre l'argent d'octobre."],"correct":3,"explanation_fa":"می‌شنویم: «Je vous demande donc de réparer la ligne avant la fin du mois» و «que vous me rendiez l'argent d'octobre»."}
+{"type":"mcq","prompt":"Quel est le métier de Nicolas ?","prompt_fa":"شغل نیکولا چیست؟","options":["Il est technicien.","Il est professeur de piano.","Il est journaliste.","Il est vendeur."],"correct":1,"explanation_fa":"می‌شنویم: «je suis professeur de piano»."}
+{"type":"tf","prompt":"Si rien ne change, Nicolas va changer d'entreprise.","prompt_fa":"اگر چیزی عوض نشود، نیکولا شرکتش را عوض می‌کند.","correct":true,"explanation_fa":"می‌شنویم: «je quitterai votre entreprise pour une autre»."}
+{"type":"tf","prompt":"Le technicien est venu le 3 octobre.","prompt_fa":"تکنیسین سوم اکتبر آمد.","correct":false,"explanation_fa":"می‌شنویم: «Le 20 octobre, un technicien est enfin venu chez moi.»"}

@@ -1,0 +1,44 @@
+code: fr-b1-t072
+title: Le français de Montréal
+band: 3
+kind: letter
+key_words: accent, tempête, épais, s'habituer, moustique
+sentences:
+- Salut Emma, | سلام اِما،
+- Me voici à Montréal depuis trois semaines, et j'ai déjà mille choses à te raconter ! | سه هفته است که در مونترال هستم و هزار چیز برای تعریف کردن دارم!
+- D'abord, le français. Je pensais tout comprendre, puisque c'est ma langue… Pas du tout ! | اول از همه، زبان فرانسه. فکر می‌کردم همه‌چیز را می‌فهمم، چون زبان خودم است… اصلاً!
+- Ici, les gens ont un accent très fort, et certains mots n'ont pas le même sens qu'en France. | اینجا مردم لهجهٔ خیلی غلیظی دارند و بعضی کلمه‌ها همان معنایی را که در فرانسه دارند ندارند.
+- Par exemple, on dit « bonjour » aussi quand on quitte un magasin, et quand tu dis « merci », on te répond « bienvenue » ! | مثلاً وقتی از مغازه بیرون می‌روی هم «سلام» می‌گویند و وقتی «ممنون» می‌گویی، جواب می‌دهند «خوش آمدی»!
+- Le plus drôle : ici, le « dîner », c'est le repas de midi. | از همه بامزه‌تر این‌که اینجا «دینه» یعنی ناهار، نه شام.
+- La première semaine, j'ai invité un collègue à dîner, et il m'a attendu au restaurant à midi ! | هفتهٔ اول یکی از همکارانم را به «دینه» دعوت کردم و او ظهر توی رستوران منتظرم ماند!
+- Mais les gens sont très gentils, et on passe très vite au « tu », même au travail. | ولی مردم خیلی مهربان‌اند و خیلی زود، حتی سر کار، «تو» خطاب می‌کنند.
+- Ensuite, l'hiver. Tu trouves qu'il fait froid à Lyon ? Ce n'est rien ! | بعد هم زمستان. فکر می‌کنی لیون سرد است؟ آنجا که چیزی نیست!
+- La semaine dernière, il a fait moins 25 degrés, et une tempête de neige a bloqué la ville pendant deux jours. | هفتهٔ پیش هوا منفی ۲۵ درجه شد و یک طوفان برف دو روز شهر را از کار انداخت. | tts: La semaine dernière, il a fait moins vingt-cinq degrés, et une tempête de neige a bloqué la ville pendant deux jours.
+- Mon manteau de Paris ? Celui-là, je ne peux pas le porter ici : il est beaucoup trop léger. | پالتوی پاریسم؟ آن یکی را اینجا نمی‌شود پوشید: خیلی نازک است.
+- J'en ai acheté un autre, très épais, avec un bonnet et des gants. | یکی دیگر خریدم، خیلی کلفت، با کلاه بافتنی و دستکش.
+- Heureusement, sous le centre-ville, il y a des kilomètres de couloirs avec des magasins, des restaurants et des stations de métro. | خوشبختانه زیر مرکز شهر کیلومترها راهرو هست، با مغازه و رستوران و ایستگاه مترو.
+- Pourtant, les gens d'ici aiment l'hiver : le week-end, ils font du ski et se promènent dans la neige. | با این حال، مردم اینجا زمستان را دوست دارند: آخر هفته‌ها اسکی می‌روند و در برف قدم می‌زنند.
+- Et selon mes collègues, en été, ce sont les moustiques qui attaquent ! | تازه به گفتهٔ همکارانم، تابستان نوبت حملهٔ پشه‌هاست!
+- Bref, je m'habitue peu à peu, et je commence même à parler comme eux. | خلاصه، کم‌کم عادت می‌کنم و حتی دارم مثل آن‌ها حرف می‌زنم.
+- Viens me voir en mai : il fera enfin beau, et je te montrerai la ville. | ماه مه بیا پیشم: بالاخره هوا خوب می‌شود و شهر را نشانت می‌دهم.
+- Je t'embrasse, | می‌بوسمت،
+- Lucas | لوکا
+reading A:
+{"type":"mcq","prompt":"De quoi Lucas parle-t-il surtout dans sa lettre ?","prompt_fa":"لوکا در نامه‌اش بیشتر دربارهٔ چه حرف می‌زند؟","options":["De son nouveau travail et de son chef.","Du français de Montréal et de l'hiver.","Des magasins et des restaurants de la ville.","De ses vacances de ski avec ses collègues."],"correct":1,"explanation_fa":"لوکا اول از زبان می‌نویسد («D'abord, le français») و بعد از زمستان («Ensuite, l'hiver»)."}
+{"type":"tf","prompt":"À Montréal, on peut dire « bonjour » en quittant un magasin.","prompt_fa":"در مونترال می‌شود موقع بیرون رفتن از مغازه «bonjour» گفت.","correct":true,"explanation_fa":"لوکا می‌نویسد: «on dit « bonjour » aussi quand on quitte un magasin»."}
+{"type":"tf","prompt":"Lucas comprend tout le français de Montréal depuis le premier jour.","prompt_fa":"لوکا از روز اول همهٔ فرانسهٔ مونترال را می‌فهمد.","correct":false,"explanation_fa":"لوکا می‌نویسد: «Je pensais tout comprendre … Pas du tout !»"}
+{"type":"find","prompt":"Quelle phrase explique comment on peut éviter le froid ?","prompt_fa":"کدام جمله توضیح می‌دهد چطور می‌شود از سرما فرار کرد؟","correct_sentence":12,"explanation_fa":"لوکا می‌نویسد: «sous le centre-ville, il y a des kilomètres de couloirs avec des magasins, des restaurants et des stations de métro»."}
+reading B:
+{"type":"ctx","word":"Celui-là","prompt":"« Mon manteau de Paris ? Celui-là, je ne peux pas le porter ici » : de quoi parle Lucas ?","prompt_fa":"«Mon manteau de Paris ? Celui-là, je ne peux pas le porter ici»: لوکا از چه چیزی حرف می‌زند؟","options":["De son nouveau manteau.","De son bonnet.","De son vieux manteau de Paris.","De ses gants."],"correct":2,"explanation_fa":"«Celui-là» به «Mon manteau de Paris» برمی‌گردد که برای زمستان مونترال «beaucoup trop léger» است."}
+{"type":"match","prompt":"Que veulent dire ces mots à Montréal ?","prompt_fa":"این کلمه‌ها در مونترال چه معنایی دارند؟","left":["« bienvenue »","« dîner »","« bonjour »"],"right":["le repas de midi","la réponse à « merci »","un mot pour arriver et pour partir","le repas du matin"],"pairs":[[0,1],[1,0],[2,2]],"explanation_fa":"«quand tu dis « merci », on te répond « bienvenue »»، «le « dîner », c'est le repas de midi» و «bonjour» را موقع رفتن هم می‌گویند."}
+{"type":"cloze","prompt":"Trouvez les mots qui manquent.","prompt_fa":"کلمه‌های جاافتاده را پیدا کنید.","text_with_gaps":"La semaine dernière, il a fait moins 25 degrés, et une {{1}} de neige a {{2}} la ville pendant deux jours.","bank":["tempête","bloqué","pluie","ouvert","fête"],"answers":["tempête","bloqué"],"explanation_fa":"لوکا می‌نویسد: «une tempête de neige a bloqué la ville pendant deux jours»."}
+listening A:
+{"type":"num","prompt":"Depuis combien de semaines Lucas est-il à Montréal ?","prompt_fa":"لوکا چند هفته است که در مونترال است؟","answer":"3","accepted":["3","trois"],"explanation_fa":"لوکا می‌گوید: «Me voici à Montréal depuis trois semaines»."}
+{"type":"mcq","prompt":"Pourquoi le collègue de Lucas l'a-t-il attendu à midi ?","prompt_fa":"چرا همکار لوکا ظهر منتظرش ماند؟","options":["Parce que Lucas lui a donné la mauvaise heure.","Parce que le restaurant ferme le soir.","Parce que le collègue travaille la nuit.","Parce qu'à Montréal, le « dîner » est le repas de midi."],"correct":3,"explanation_fa":"لوکا می‌گوید: «ici, le « dîner », c'est le repas de midi»."}
+{"type":"tf","prompt":"À Montréal, on dit « tu » très vite, même au travail.","prompt_fa":"در مونترال خیلی زود، حتی سر کار، «تو» می‌گویند.","correct":true,"explanation_fa":"لوکا می‌گوید: «on passe très vite au « tu », même au travail»."}
+{"type":"tf","prompt":"Les gens de Montréal n'aiment pas l'hiver.","prompt_fa":"مردم مونترال زمستان را دوست ندارند.","correct":false,"explanation_fa":"لوکا می‌گوید: «Pourtant, les gens d'ici aiment l'hiver»."}
+listening B:
+{"type":"mcq","prompt":"Quelle température a-t-il fait la semaine dernière ?","prompt_fa":"هفتهٔ پیش دمای هوا چقدر بود؟","options":["Moins 25 degrés.","Moins 5 degrés.","Moins 15 degrés.","Plus 25 degrés."],"correct":0,"explanation_fa":"لوکا می‌گوید: «il a fait moins 25 degrés»."}
+{"type":"mcq","prompt":"Que propose Lucas à Emma ?","prompt_fa":"لوکا به اِما چه پیشنهادی می‌دهد؟","options":["De venir faire du ski en hiver.","De venir le voir en mai.","De lui envoyer un manteau.","De lui écrire plus souvent."],"correct":1,"explanation_fa":"لوکا می‌گوید: «Viens me voir en mai : il fera enfin beau»."}
+{"type":"tf","prompt":"Selon les collègues de Lucas, il y a beaucoup de moustiques en été.","prompt_fa":"به گفتهٔ همکاران لوکا، تابستان پشه زیاد است.","correct":true,"explanation_fa":"لوکا می‌گوید: «selon mes collègues, en été, ce sont les moustiques qui attaquent !»"}
+{"type":"tf","prompt":"Cet hiver, Lucas porte son manteau de Paris.","prompt_fa":"لوکا این زمستان پالتوی پاریسش را می‌پوشد.","correct":false,"explanation_fa":"لوکا می‌گوید: «Celui-là, je ne peux pas le porter ici» و «J'en ai acheté un autre, très épais»."}

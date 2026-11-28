@@ -1,0 +1,42 @@
+code: fr-b1-t071
+title: Un oiseau revient dans les Alpes
+band: 3
+kind: news
+key_words: espèce, rare, rocher, observer, protection
+sentences:
+- C'est une très belle surprise pour les amis de la nature : un oiseau rare est de retour dans les Alpes, près de Chamonix. | برای دوستداران طبیعت غافلگیری خیلی خوشایندی است: یک پرندهٔ کمیاب به کوه‌های آلپ، نزدیک شامونی، برگشته است.
+- Personne n'avait vu cette espèce aux ailes noires et blanches dans la région depuis trente ans. | سی سال بود که هیچ‌کس این گونهٔ بال‌سیاه‌وسفید را در منطقه ندیده بود.
+- Tout a commencé dimanche dernier. | همه‌چیز از یکشنبهٔ گذشته شروع شد.
+- Marc Lefèvre, 64 ans, ancien professeur de sciences, marchait en montagne quand il a vu deux oiseaux sur un rocher. | مارک لوفور، ۶۴ ساله و معلم بازنشستهٔ علوم، در کوه راه می‌رفت که دو پرنده را روی یک صخره دید. | tts: Marc Lefèvre, soixante-quatre ans, ancien professeur de sciences, marchait en montagne quand il a vu deux oiseaux sur un rocher.
+- « Je les ai observés pendant une heure, sans bouger. Je ne croyais pas ce que je voyais ! » | «یک ساعت بی‌حرکت تماشایشان کردم. چیزی را که می‌دیدم باور نمی‌کردم!»
+- Avec son téléphone, il a pris plusieurs photos. | با گوشی‌اش چند عکس گرفت.
+- De retour chez lui, il les a comparées avec les images de ses vieux livres, puis il les a envoyées au parc national. | وقتی به خانه برگشت، آن‌ها را با تصویرهای کتاب‌های قدیمی‌اش مقایسه کرد و بعد برای پارک ملی فرستاد.
+- Le parc avait seulement quelques vieilles photos de cet oiseau, de 1996 ; les siennes sont beaucoup plus belles. | پارک فقط چند عکس قدیمی از این پرنده داشت، مال سال ۱۹۹۶؛ عکس‌های او خیلی قشنگ‌ترند. | tts: Le parc avait seulement quelques vieilles photos de cet oiseau, de mille neuf cent quatre-vingt-seize ; les siennes sont beaucoup plus belles.
+- Mardi, une équipe du parc est montée au même endroit et a retrouvé les deux oiseaux : deux adultes, sûrement un couple. | سه‌شنبه گروهی از پارک به همان جا رفتند و دو پرنده را دوباره پیدا کردند: دو پرندهٔ بالغ که حتماً یک جفت‌اند.
+- Si tout va bien, ils auront des petits au printemps. | اگر همه‌چیز خوب پیش برود، بهار جوجه می‌آورند.
+- Pourquoi cet oiseau avait-il disparu ? Autrefois, les hommes le chassaient, et les produits qu'on mettait dans les champs tuaient les insectes qu'il mange. | این پرنده چرا ناپدید شده بود؟ قدیم آدم‌ها شکارش می‌کردند و سم‌هایی که در مزرعه‌ها می‌ریختند، حشره‌هایی را که می‌خورد از بین می‌برد.
+- Aujourd'hui, il est interdit de chasser cette espèce, et sa zone est sous protection. | امروز شکار این گونه ممنوع است و منطقه‌اش تحت حفاظت است.
+- Le réchauffement climatique, lui, pourrait poser un problème : avec la chaleur, les insectes montent de plus en plus haut. | ولی گرمایش زمین ممکن است مشکل درست کند: با گرما، حشره‌ها روزبه‌روز بالاتر می‌روند.
+- Pour protéger le couple, l'endroit exact reste un secret. | برای محافظت از این جفت، جای دقیقشان راز می‌ماند.
+- Si vous voyez ces oiseaux pendant une promenade, le parc vous demande de rester loin, de ne pas faire de bruit, et d'envoyer vos photos. | اگر موقع گردش این پرنده‌ها را دیدید، پارک از شما می‌خواهد دور بمانید، سروصدا نکنید و عکس‌هایتان را بفرستید.
+- Marc, lui, est très fier : « Trente ans sans les voir, et c'est moi qui les retrouve ! » | مارک هم خیلی سربلند است: «سی سال کسی آن‌ها را ندیده بود و من پیدایشان کردم!»
+reading A:
+{"type":"mcq","prompt":"Quelle est la nouvelle ?","prompt_fa":"خبر چیست؟","options":["Un oiseau rare est de nouveau dans la région après trente ans.","Le parc national ferme pour protéger les oiseaux.","Un professeur a écrit un livre sur les oiseaux des Alpes.","Les insectes disparaissent des montagnes."],"correct":0,"explanation_fa":"خبر می‌گوید: «un oiseau rare est de retour dans les Alpes» و «Personne n'avait vu cette espèce … dans la région depuis trente ans»."}
+{"type":"tf","prompt":"Marc a vu les oiseaux pendant une promenade en montagne.","prompt_fa":"مارک پرنده‌ها را موقع گردش در کوه دید.","correct":true,"explanation_fa":"خبر می‌گوید: «marchait en montagne quand il a vu deux oiseaux sur un rocher»."}
+{"type":"tf","prompt":"Le parc n'avait aucune photo de cet oiseau.","prompt_fa":"پارک هیچ عکسی از این پرنده نداشت.","correct":false,"explanation_fa":"خبر می‌گوید: «Le parc avait seulement quelques vieilles photos de cet oiseau, de 1996»."}
+{"type":"find","prompt":"Quelle phrase explique pourquoi on ne dit pas où sont les oiseaux ?","prompt_fa":"کدام جمله توضیح می‌دهد چرا نمی‌گویند پرنده‌ها کجا هستند؟","correct_sentence":13,"explanation_fa":"خبر می‌گوید: «Pour protéger le couple, l'endroit exact reste un secret.»"}
+{"type":"mcq","prompt":"Pourquoi l'oiseau avait-il disparu ?","prompt_fa":"پرنده چرا ناپدید شده بود؟","options":["Parce qu'il faisait trop chaud en montagne.","Parce que les gens faisaient trop de bruit.","Parce qu'on le chassait et qu'il manquait d'insectes.","Parce que le parc avait fermé sa zone."],"correct":2,"explanation_fa":"خبر می‌گوید: «les hommes le chassaient, et les produits qu'on mettait dans les champs tuaient les insectes qu'il mange»."}
+reading B:
+{"type":"order","prompt":"Mettez ces moments dans l'ordre.","prompt_fa":"این لحظه‌ها را به ترتیب بچینید.","items":["Marc envoie ses photos au parc.","Une équipe du parc retrouve les oiseaux.","Marc voit deux oiseaux sur un rocher.","Le couple aura peut-être des petits."],"correct_order":[2,0,1,3],"explanation_fa":"مارک «dimanche dernier» پرنده‌ها را دید، بعد عکس‌ها را برای پارک فرستاد، «Mardi» گروه پارک آن‌ها را پیدا کرد و «au printemps» شاید جوجه بیاورند."}
+{"type":"ctx","word":"les siennes","prompt":"« les siennes sont beaucoup plus belles » : de quoi parle-t-on ?","prompt_fa":"«les siennes sont beaucoup plus belles»: از چه چیزی حرف می‌زند؟","options":["Des ailes de l'oiseau.","Des photos de Marc.","Des montagnes de la région.","Des images des vieux livres."],"correct":1,"explanation_fa":"«les siennes» یعنی «مال او»؛ اینجا عکس‌های مارک در برابر عکس‌های قدیمی پارک."}
+{"type":"cloze","prompt":"Trouvez les mots qui manquent.","prompt_fa":"کلمه‌های جاافتاده را پیدا کنید.","text_with_gaps":"Aujourd'hui, il est {{1}} de chasser cette espèce, et sa zone est sous {{2}}.","bank":["interdit","protection","facile","silence","important"],"answers":["interdit","protection"],"explanation_fa":"خبر می‌گوید: «il est interdit de chasser cette espèce, et sa zone est sous protection»."}
+listening A:
+{"type":"num","prompt":"Quel âge a Marc Lefèvre ?","prompt_fa":"مارک لوفور چند سال دارد؟","answer":"64","accepted":["64","soixante-quatre"],"explanation_fa":"می‌شنویم: «Marc Lefèvre, 64 ans»."}
+{"type":"mcq","prompt":"Combien de temps Marc a-t-il observé les oiseaux ?","prompt_fa":"مارک چه مدت پرنده‌ها را تماشا کرد؟","options":["Dix minutes.","Une heure.","Toute la journée.","Trente minutes."],"correct":1,"explanation_fa":"مارک می‌گوید: «Je les ai observés pendant une heure, sans bouger.»"}
+{"type":"tf","prompt":"L'équipe du parc a retrouvé les deux oiseaux.","prompt_fa":"گروه پارک دو پرنده را دوباره پیدا کرد.","correct":true,"explanation_fa":"می‌شنویم: «une équipe du parc est montée au même endroit et a retrouvé les deux oiseaux»."}
+{"type":"tf","prompt":"Le parc demande aux gens de s'approcher des oiseaux.","prompt_fa":"پارک از مردم می‌خواهد به پرنده‌ها نزدیک شوند.","correct":false,"explanation_fa":"می‌شنویم: «le parc vous demande de rester loin, de ne pas faire de bruit»."}
+listening B:
+{"type":"mcq","prompt":"Comment sont les ailes de cet oiseau ?","prompt_fa":"بال‌های این پرنده چه شکلی است؟","options":["Grises et rouges.","Toutes noires.","Noires et blanches.","Blanches et grises."],"correct":2,"explanation_fa":"می‌شنویم: «cette espèce aux ailes noires et blanches»."}
+{"type":"mcq","prompt":"Quel problème le réchauffement climatique pourrait-il poser ?","prompt_fa":"گرمایش زمین چه مشکلی ممکن است درست کند؟","options":["Les rochers vont tomber.","Il y aura trop de monde en montagne.","Les oiseaux auront trop chaud l'hiver.","Les insectes montent de plus en plus haut."],"correct":3,"explanation_fa":"می‌شنویم: «avec la chaleur, les insectes montent de plus en plus haut»."}
+{"type":"tf","prompt":"Marc est fier d'avoir retrouvé ces oiseaux.","prompt_fa":"مارک از این‌که این پرنده‌ها را پیدا کرده سربلند است.","correct":true,"explanation_fa":"مارک می‌گوید: «Trente ans sans les voir, et c'est moi qui les retrouve !»"}
+{"type":"tf","prompt":"Marc a pris les photos avec un appareil très cher.","prompt_fa":"مارک عکس‌ها را با یک دوربین خیلی گران گرفت.","correct":false,"explanation_fa":"می‌شنویم: «Avec son téléphone, il a pris plusieurs photos.»"}

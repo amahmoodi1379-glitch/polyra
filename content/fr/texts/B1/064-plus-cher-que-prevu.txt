@@ -1,0 +1,46 @@
+code: fr-b1-t064
+title: Plus cher que prévu
+band: 3
+kind: long_dialogue
+key_words: radiateur, atelier, accord, faire un effort
+sentences:
+A: Bonjour ! Je viens chercher ma voiture. Elle devait être prête ce soir, non ? | سلام! آمده‌ام ماشینم را ببرم. قرار بود امشب آماده باشد، درست است؟
+B: Bonjour, Madame Rousseau. Euh… il y a un problème. Je vous ai appelée deux fois. | سلام خانم روسو. اِم… یک مشکلی هست. دو بار به شما زنگ زدم.
+A: Désolée, j'étais en réunion et mon téléphone était éteint. Qu'est-ce qui se passe ? | ببخشید، جلسه داشتم و گوشی‌ام خاموش بود. چه شده؟
+B: Votre voiture perdait de l'eau, et on avait parlé de 280 euros pour changer le radiateur. | ماشینتان آب می‌داد و صحبتمان این بود که عوض کردن رادیاتور ۲۸۰ یورو می‌شود. | tts: Votre voiture perdait de l'eau, et on avait parlé de deux cent quatre-vingts euros pour changer le radiateur.
+A: Oui, c'est ce que vous avez écrit. | بله، همین را نوشتید.
+B: Mais en ouvrant le moteur, nous avons vu qu'une autre partie ne marchait{marcher-2} plus très bien. | ولی موتور را که باز کردیم، دیدیم یک قسمت دیگرش هم دیگر خوب کار نمی‌کند.
+B: C'est pour ça que le moteur chauffait. Sur l'autoroute, vous risquiez une panne grave. | برای همین بود که موتور داغ می‌کرد. توی اتوبان ممکن بود خرابی جدی پیدا کنید.
+A: Et ça coûte combien, en tout ? | خب، روی هم چقدر می‌شود؟
+B: 540 euros, avec le travail. | ۵۴۰ یورو، با دستمزد. | tts: Cinq cent quarante euros, avec le travail.
+A: 540 euros ? Presque le double ! Vous plaisantez ? | ۵۴۰ یورو؟ تقریباً دو برابر! شوخی می‌کنید؟ | tts: Cinq cent quarante euros ? Presque le double ! Vous plaisantez ?
+B: Je sais. Mais je n'ai rien fait sans votre accord : votre voiture est à l'atelier, et je n'ai encore rien changé. | می‌دانم. ولی بدون موافقت شما کاری نکرده‌ام: ماشینتان توی کارگاه است و هنوز چیزی را عوض نکرده‌ام.
+A: Et si vous changez seulement le radiateur ? | اگر فقط رادیاتور را عوض کنید چه؟
+B: Je peux le faire, mais ce serait une erreur : dans deux mois, vous reviendriez avec une panne plus grave. | می‌توانم این کار را بکنم، ولی اشتباه است: دو ماه دیگر با یک خرابی جدی‌تر برمی‌گردید.
+A: Écoutez, je pars en Bretagne samedi avec mes enfants : six heures d'autoroute. Je ne veux pas tomber en panne. | ببینید، شنبه با بچه‌هایم به برتانی می‌روم: شش ساعت اتوبان. نمی‌خواهم ماشین وسط راه خراب شود.
+B: Alors il vaut mieux tout réparer. | پس بهتر است همه‌اش را تعمیر کنیم.
+A: Bon… Mais c'est beaucoup pour moi ce mois-ci. Vous ne pouvez pas faire un effort ? | خب… ولی این ماه برایم زیاد است. نمی‌توانید یک کم کوتاه بیایید؟
+B: Je peux baisser le prix du travail : ça fait 500 euros. Et vous pouvez payer en deux fois. | می‌توانم دستمزد را کم کنم: می‌شود ۵۰۰ یورو. می‌توانید دو قسط هم بپردازید. | tts: Je peux baisser le prix du travail : ça fait cinq cents euros. Et vous pouvez payer en deux fois.
+A: En deux fois, c'est déjà mieux. Et la voiture sera prête quand ? | دو قسط، خب بهتر شد. ماشین کی آماده می‌شود؟
+B: Il faut que je commande ce qui manque. Je vous la rends jeudi soir, avant 18 heures. | باید چیزی را که لازم است سفارش بدهم. پنجشنبه عصر قبل از ساعت شش تحویلتان می‌دهم. | tts: Il faut que je commande ce qui manque. Je vous la rends jeudi soir, avant dix-huit heures.
+A: Parfait. Mais cette fois, si quelque chose change, envoyez-moi un message ! | عالی است. ولی این دفعه اگر چیزی عوض شد، برایم پیام بفرستید!
+B: Promis. Et en plus, je vous la lave : c'est gratuit. | قول می‌دهم، خانم. تازه، می‌شویمش هم: مجانی.
+reading A:
+{"type":"mcq","prompt":"Pourquoi Madame Rousseau n'a-t-elle pas répondu au téléphone ?","prompt_fa":"خانم روسو چرا تلفن را جواب نداد؟","options":["Elle était sur l'autoroute.","Elle était en réunion, avec son téléphone éteint.","Elle avait perdu son téléphone.","Elle était chez ses enfants."],"correct":1,"explanation_fa":"خانم روسو می‌گوید: «j'étais en réunion et mon téléphone était éteint»."}
+{"type":"tf","prompt":"Au début, changer le radiateur devait coûter 280 euros.","prompt_fa":"اول قرار بود تعمیر ۲۸۰ یورو بشود.","correct":true,"explanation_fa":"مکانیک می‌گوید: «on avait parlé de 280 euros pour changer le radiateur»."}
+{"type":"tf","prompt":"Le mécanicien a déjà fait tout le travail.","prompt_fa":"مکانیک همهٔ کار را انجام داده است.","correct":false,"explanation_fa":"مکانیک می‌گوید: «je n'ai encore rien changé»."}
+{"type":"find","prompt":"Quelle phrase explique pourquoi Madame Rousseau a besoin de sa voiture ce week-end ?","prompt_fa":"کدام جمله توضیح می‌دهد چرا خانم روسو این آخر هفته به ماشینش نیاز دارد؟","correct_sentence":13,"explanation_fa":"خانم روسو می‌گوید: «je pars en Bretagne samedi avec mes enfants : six heures d'autoroute»."}
+reading B:
+{"type":"ctx","word":"faire un effort","prompt":"« Vous ne pouvez pas faire un effort ? » : que demande Madame Rousseau ?","prompt_fa":"«Vous ne pouvez pas faire un effort ?»: خانم روسو چه می‌خواهد؟","options":["Avoir sa voiture plus tôt.","Avoir sa voiture propre.","Payer moins cher.","Recevoir plus de messages."],"correct":2,"explanation_fa":"خانم روسو می‌گوید «c'est beaucoup pour moi ce mois-ci» و مکانیک جواب می‌دهد: «Je peux baisser le prix du travail»."}
+{"type":"order","prompt":"Mettez ces moments dans l'ordre.","prompt_fa":"این لحظه‌ها را به ترتیب بچینید.","items":["Madame Rousseau part en Bretagne.","Le mécanicien ouvre le moteur.","Madame Rousseau vient chercher sa voiture.","Le mécanicien rend la voiture."],"correct_order":[1,2,3,0],"explanation_fa":"مکانیک موتور را باز کرد («en ouvrant le moteur»)، امشب خانم روسو آمده، ماشین «jeudi soir» تحویل داده می‌شود و او «samedi» به برتانی می‌رود."}
+{"type":"match","prompt":"Que veut dire chaque prix ?","prompt_fa":"قیمت‌ها را به هم وصل کنید.","left":["280 euros","540 euros","500 euros"],"right":["le prix pour changer le radiateur","le dernier prix, après l'effort du mécanicien","le prix de tout le travail, annoncé ce soir","le prix d'une nouvelle voiture"],"pairs":[[0,0],[1,2],[2,1]],"explanation_fa":"۲۸۰ یورو برای «changer le radiateur» بود، ۵۴۰ یورو قیمت کل تعمیر «en tout» و بعد از کم کردن دستمزد «ça fait 500 euros»."}
+listening A:
+{"type":"num","prompt":"Combien de fois le mécanicien a-t-il appelé Madame Rousseau ?","prompt_fa":"مکانیک چند بار به خانم روسو زنگ زد؟","answer":"2","accepted":["2","deux"],"explanation_fa":"مکانیک می‌گوید: «Je vous ai appelée deux fois.»"}
+{"type":"mcq","prompt":"Quel problème avait la voiture au début ?","prompt_fa":"ماشین اول چه مشکلی داشت؟","options":["Elle perdait de l'eau.","Elle ne démarrait plus.","Elle faisait trop de bruit.","Ses lumières ne marchaient plus."],"correct":0,"explanation_fa":"مکانیک می‌گوید: «Votre voiture perdait de l'eau»."}
+{"type":"tf","prompt":"Madame Rousseau trouve le nouveau prix normal.","prompt_fa":"خانم روسو قیمت تازه را عادی می‌داند.","correct":false,"explanation_fa":"خانم روسو می‌گوید: «Presque le double ! Vous plaisantez ?»"}
+{"type":"tf","prompt":"Madame Rousseau va payer en deux fois.","prompt_fa":"خانم روسو در دو قسط پرداخت می‌کند.","correct":true,"explanation_fa":"مکانیک می‌گوید «vous pouvez payer en deux fois» و خانم روسو جواب می‌دهد: «En deux fois, c'est déjà mieux.»"}
+listening B:
+{"type":"mcq","prompt":"Pourquoi le mécanicien ne veut-il pas changer seulement le radiateur ?","prompt_fa":"چرا مکانیک نمی‌خواهد فقط رادیاتور را عوض کند؟","options":["Parce que le radiateur coûte trop cher.","Parce qu'il n'a pas le temps avant jeudi.","Parce que Madame Rousseau va vendre la voiture.","Parce qu'une panne plus grave arriverait bientôt."],"correct":3,"explanation_fa":"مکانیک می‌گوید: «dans deux mois, vous reviendriez ici avec une panne plus grave»."}
+{"type":"mcq","prompt":"Quand la voiture sera-t-elle prête ?","prompt_fa":"ماشین کی آماده می‌شود؟","options":["Ce soir.","Jeudi soir.","Samedi matin.","Dans deux mois."],"correct":1,"explanation_fa":"مکانیک می‌گوید: «Je vous la rends jeudi soir, avant 18 heures.»"}
+{"type":"tf","prompt":"Le mécanicien va laver la voiture sans demander d'argent.","prompt_fa":"مکانیک ماشین را بدون گرفتن پول می‌شوید.","correct":true,"explanation_fa":"مکانیک می‌گوید: «je vous la lave : c'est gratuit»."}
+{"type":"tf","prompt":"Le voyage en Bretagne dure trois heures.","prompt_fa":"سفر به برتانی سه ساعت طول می‌کشد.","correct":false,"explanation_fa":"خانم روسو می‌گوید: «six heures d'autoroute»."}

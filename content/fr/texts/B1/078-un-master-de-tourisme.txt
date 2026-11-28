@@ -1,0 +1,45 @@
+code: fr-b1-t078
+title: Un master de tourisme
+band: 3
+kind: letter
+key_words: master, licence, tourisme, hébergement, destination
+sentences:
+- Madame, Monsieur, | خانم محترم، آقای محترم،
+- Je souhaite m'inscrire en première année du master Tourisme de votre université, à la rentrée de septembre. | می‌خواهم برای سال اول کارشناسی ارشد گردشگری دانشگاه شما، از سال تحصیلی‌ای که سپتامبر شروع می‌شود، ثبت‌نام کنم.
+- Je m'appelle Shirin Karimi, j'ai 26 ans et je suis iranienne. | اسمم شیرین کریمی است، ۲۶ سال دارم و ایرانی‌ام. | tts: Je m'appelle Shirin Karimi, j'ai vingt-six ans et je suis iranienne.
+- J'ai obtenu une licence de français à l'université d'Ispahan, puis j'ai travaillé pendant trois ans comme guide pour des touristes qui parlent français. | از دانشگاه اصفهان لیسانس زبان فرانسه گرفتم و بعد سه سال راهنمای گردشگران فرانسوی‌زبان بودم.
+- Ce travail m'a beaucoup appris. | این کار خیلی چیزها به من یاد داد.
+- J'ai organisé des voyages de deux semaines entre Téhéran, Ispahan et Chiraz : les trains, les hôtels, les repas et les visites. | سفرهای دوهفته‌ای بین تهران، اصفهان و شیراز را برنامه‌ریزی می‌کردم: قطارها، هتل‌ها، غذاها و بازدیدها.
+- J'ai dû apprendre à résoudre des problèmes très vite : un bus en panne, l'annulation d'un vol, un voyageur malade. | مجبور بودم یاد بگیرم مشکلات را خیلی سریع حل کنم: اتوبوسی که خراب می‌شد، پروازی که لغو می‌شد، مسافری که بیمار می‌شد.
+- C'est en accompagnant ces groupes que j'ai découvert ma passion : aider les gens à comprendre un pays et sa culture. | با همراهی همین گروه‌ها بود که علاقهٔ واقعی‌ام را پیدا کردم: کمک به آدم‌ها برای شناختن یک کشور و فرهنگش.
+- Depuis un an, je vis à Grenoble, où je travaille dans une auberge de jeunesse. | یک سال است که در گرونوبل زندگی می‌کنم و در یک هاستل کار می‌کنم.
+- Chaque jour, je parle persan, français et anglais avec des clients de tous les pays. | هر روز با مشتری‌هایی از همهٔ کشورها فارسی، فرانسه و انگلیسی حرف می‌زنم.
+- Votre master m'intéresse particulièrement pour deux raisons. | دورهٔ ارشد شما به دو دلیل به‌خصوص برایم جالب است.
+- D'abord, il prépare aux métiers de l'hébergement et de l'organisation de voyages, ceux que je veux faire plus tard. | اول این‌که برای شغل‌های حوزهٔ اقامت و برنامه‌ریزی سفر آماده می‌کند، همان شغل‌هایی که بعدها می‌خواهم داشته باشم.
+- Ensuite, il propose un stage de six mois dans une entreprise, et j'aimerais avoir une expérience professionnelle en France. | دوم این‌که یک دورهٔ کارآموزی شش‌ماهه در یک شرکت دارد و دلم می‌خواهد در فرانسه تجربهٔ حرفه‌ای پیدا کنم.
+- Mon objectif est d'ouvrir un jour une agence de voyages qui proposera aux Européens des destinations que peu de gens connaissent en Iran, comme le désert ou les villages du nord. | هدفم این است که روزی یک آژانس مسافرتی باز کنم که به اروپایی‌ها مقصدهایی از ایران را پیشنهاد کند که کمتر کسی می‌شناسد، مثل کویر یا روستاهای شمال.
+- Je suis sûre que le tourisme peut rapprocher les gens. | مطمئنم که گردشگری می‌تواند آدم‌ها را به هم نزدیک کند.
+- Vous trouverez avec cette lettre mon CV et mes notes de licence. | رزومه و نمره‌های دورهٔ لیسانسم را همراه این نامه می‌فرستم.
+- Je serais très heureuse de vous présenter mon projet lors d'un entretien. | بسیار خوشحال می‌شوم که در یک مصاحبه طرحم را به شما معرفی کنم.
+- Je vous remercie de votre attention. | از توجهتان سپاسگزارم.
+- Cordialement, | با احترام،
+- Shirin Karimi | شیرین کریمی
+reading A:
+{"type":"mcq","prompt":"Pourquoi Shirin écrit-elle cette lettre ?","prompt_fa":"شیرین چرا این نامه را می‌نویسد؟","options":["Pour demander un travail dans une auberge de jeunesse.","Pour entrer dans un master de tourisme.","Pour organiser un voyage en Iran.","Pour demander ses notes de licence."],"correct":1,"explanation_fa":"شیرین می‌نویسد: «Je souhaite m'inscrire en première année du master Tourisme de votre université»."}
+{"type":"tf","prompt":"Shirin a déjà travaillé avec des touristes.","prompt_fa":"شیرین قبلاً با گردشگرها کار کرده است.","correct":true,"explanation_fa":"شیرین می‌نویسد: «j'ai travaillé pendant trois ans comme guide pour des touristes qui parlent français»."}
+{"type":"tf","prompt":"Shirin habite en France depuis trois ans.","prompt_fa":"شیرین سه سال است که در فرانسه زندگی می‌کند.","correct":false,"explanation_fa":"شیرین می‌نویسد: «Depuis un an, je vis à Grenoble»."}
+{"type":"find","prompt":"Quelle phrase donne le grand projet de Shirin pour plus tard ?","prompt_fa":"کدام جمله برنامهٔ بزرگ شیرین برای آینده را می‌گوید؟","correct_sentence":13,"explanation_fa":"شیرین می‌نویسد: «Mon objectif est d'ouvrir un jour une agence de voyages»."}
+reading B:
+{"type":"ctx","word":"résoudre","prompt":"« J'ai dû apprendre à résoudre des problèmes très vite » : qu'est-ce que Shirin devait faire ?","prompt_fa":"«J'ai dû apprendre à résoudre des problèmes très vite»: شیرین باید چه کار می‌کرد؟","options":["Trouver vite une solution.","Écrire les problèmes dans un cahier.","Appeler la police.","Rentrer chez elle."],"correct":0,"explanation_fa":"«résoudre un problème» یعنی مشکلی را حل کردن؛ مثلاً وقتی «un bus en panne» بود."}
+{"type":"match","prompt":"Pourquoi ce master intéresse-t-il Shirin ?","prompt_fa":"چرا این دورهٔ ارشد برای شیرین جالب است؟","left":["la première raison","la deuxième raison"],"right":["il propose un stage de six mois.","il prépare aux métiers de l'hébergement et des voyages.","il est gratuit pour les étudiants iraniens."],"pairs":[[0,1],[1,0]],"explanation_fa":"«D'abord, il prépare aux métiers de l'hébergement et de l'organisation de voyages» و «Ensuite, il propose un stage de six mois»."}
+{"type":"order","prompt":"Mettez la vie de Shirin dans l'ordre.","prompt_fa":"زندگی شیرین را به ترتیب بچینید.","items":["Elle travaille comme guide.","Elle arrive à Grenoble.","Elle obtient sa licence à Ispahan.","Elle fera peut-être un stage en France."],"correct_order":[2,0,1,3],"explanation_fa":"اول «J'ai obtenu une licence»، بعد «puis j'ai travaillé pendant trois ans comme guide»، «Depuis un an, je vis à Grenoble» و در آینده دورهٔ ارشد با «un stage de six mois»."}
+listening A:
+{"type":"num","prompt":"Quel âge a Shirin ?","prompt_fa":"شیرین چند سال دارد؟","answer":"26","accepted":["26","vingt-six"],"explanation_fa":"شیرین می‌گوید: «j'ai 26 ans»."}
+{"type":"mcq","prompt":"Où Shirin travaille-t-elle aujourd'hui ?","prompt_fa":"شیرین امروز کجا کار می‌کند؟","options":["Dans une agence de voyages à Ispahan.","Dans une université.","Dans une auberge de jeunesse à Grenoble.","Dans un hôtel à Téhéran."],"correct":2,"explanation_fa":"شیرین می‌گوید: «je vis à Grenoble, où je travaille dans une auberge de jeunesse»."}
+{"type":"tf","prompt":"Shirin parle trois langues avec les clients.","prompt_fa":"شیرین با مشتری‌ها به سه زبان حرف می‌زند.","correct":true,"explanation_fa":"شیرین می‌گوید: «je parle persan, français et anglais avec des clients de tous les pays»."}
+{"type":"tf","prompt":"Le stage du master dure un an.","prompt_fa":"کارآموزی دورهٔ ارشد یک سال طول می‌کشد.","correct":false,"explanation_fa":"شیرین می‌گوید: «il propose un stage de six mois»."}
+listening B:
+{"type":"mcq","prompt":"Qu'est-ce que Shirin voudrait montrer aux Européens ?","prompt_fa":"شیرین می‌خواهد چه چیزی را به اروپایی‌ها نشان دهد؟","options":["Les grandes villes d'Iran.","Les plus beaux hôtels de Téhéran.","Les universités d'Iran.","Des endroits d'Iran que peu de gens connaissent."],"correct":3,"explanation_fa":"شیرین می‌گوید: «des destinations que peu de gens connaissent en Iran, comme le désert ou les villages du nord»."}
+{"type":"mcq","prompt":"Qu'est-ce que Shirin envoie avec sa lettre ?","prompt_fa":"شیرین همراه نامه‌اش چه می‌فرستد؟","options":["Des photos de ses voyages.","Son CV et ses notes.","Une lettre de son ancien chef.","Le programme de ses voyages."],"correct":1,"explanation_fa":"شیرین می‌گوید: «Vous trouverez avec cette lettre mon CV et mes notes de licence.»"}
+{"type":"tf","prompt":"Pour Shirin, le tourisme peut rapprocher les gens.","prompt_fa":"به نظر شیرین، گردشگری می‌تواند آدم‌ها را به هم نزدیک کند.","correct":true,"explanation_fa":"شیرین می‌گوید: «Je suis sûre que le tourisme peut rapprocher les gens.»"}
+{"type":"tf","prompt":"Shirin a organisé des voyages en France.","prompt_fa":"شیرین در فرانسه سفر برنامه‌ریزی کرده است.","correct":false,"explanation_fa":"شیرین می‌گوید: «J'ai organisé des voyages de deux semaines entre Téhéran, Ispahan et Chiraz»."}
