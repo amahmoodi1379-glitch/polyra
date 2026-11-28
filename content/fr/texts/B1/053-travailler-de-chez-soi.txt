@@ -1,0 +1,47 @@
+code: fr-b1-t053
+title: Travailler de chez soi
+band: 3
+kind: long_dialogue
+key_words: se concentrer, limite, avouer, à condition que, idéal
+sentences:
+A: Karim ! Ça me fait plaisir de te voir au bureau ! Tu ne viens presque plus. | کریم! چه خوشحالم که در دفتر می‌بینمت! دیگر تقریباً نمی‌آیی.
+B: Salut Sarah ! Eh oui, depuis le mois de mars, je travaille presque toujours de chez moi. | سلام سارا! آره، از ماه مارس تقریباً همیشه از خانه کار می‌کنم.
+A: Et alors, tu aimes ça ? | خب، دوستش داری؟
+B: Franchement, oui. Je ne perds plus deux heures par jour dans les embouteillages. | راستش، آره. دیگر روزی دو ساعت در ترافیک هدر نمی‌دهم.
+B: Le matin, je dors une heure de plus, et je commence à 8 heures, en pyjama. | صبح‌ها یک ساعت بیشتر می‌خوابم و ساعت ۸ با پیژامه کار را شروع می‌کنم. | tts: Le matin, je dors une heure de plus, et je commence à huit heures, en pyjama.
+A: En pyjama ? Même pendant les réunions ? | با پیژامه؟ حتی وقت جلسه‌ها؟
+B: Non, pour les réunions, je mets une chemise. Mais personne ne voit mon pantalon ! | نه، برای جلسه‌ها پیراهن می‌پوشم. ولی شلوارم را که کسی نمی‌بیند!
+A: Tu es fou ! Moi, j'ai essayé pendant un mois, et j'ai détesté. | دیوانه‌ای! من یک ماه امتحان کردم و از آن متنفر شدم.
+B: Ah bon ? Pourquoi ? | جدی؟ چرا؟
+A: Je n'arrivais pas à me concentrer : il y avait toujours la vaisselle, la lessive, le chat… | نمی‌توانستم تمرکز کنم: همیشه ظرف‌ها بود، رخت‌ها، گربه…
+A: Et surtout, il n'y avait plus de limite entre le travail et la maison. Je lisais mes e-mails jusqu'à minuit ! | و از همه بدتر، دیگر مرزی بین کار و خانه نبود. تا نیمه‌شب ایمیل‌هایم را می‌خواندم!
+B: C'est vrai que c'est un risque. Moi, j'éteins mon ordinateur à 18 heures, pas une minute de plus. | درست است که این خطر هست. من ساعت شش کامپیوترم را خاموش می‌کنم، نه یک دقیقه بیشتر. | tts: C'est vrai que c'est un risque. Moi, j'éteins mon ordinateur à dix-huit heures, pas une minute de plus.
+A: Et tu ne te sens pas seul ? | احساس تنهایی نمی‌کنی؟
+B: Un peu, je dois l'avouer. Les pauses café avec vous me manquent, et les discussions du déjeuner aussi. | باید اعتراف کنم کمی. جای استراحت‌های قهوه با شما و حرف‌های وقت ناهار برایم خالی است.
+A: Tu vois ! Le bureau, ce n'est pas seulement le travail, c'est aussi les gens. | دیدی! دفتر فقط کار نیست، آدم‌ها هم هستند.
+B: Tu as raison. Et puis, quand je suis seul, les idées viennent moins vite. | حق با توست. تازه، وقتی تنها هستم، فکرها دیرتر به ذهنم می‌رسد.
+A: Alors pourquoi tu ne viens pas plus souvent ? | پس چرا بیشتر نمی‌آیی؟
+B: À cause du trajet… et j'avoue que je suis devenu un peu paresseux. | به خاطر رفت‌وآمد… و اعتراف می‌کنم که کمی تنبل شده‌ام.
+A: Pour moi, deux jours au bureau et trois jours à la maison, ce serait idéal. Viens le mardi et le jeudi, et on déjeune ensemble ! | به نظر من دو روز دفتر و سه روز خانه ایده‌آل است. سه‌شنبه‌ها و پنجشنبه‌ها بیا و با هم ناهار بخوریم!
+B: D'accord, à condition que tu ne me parles pas de travail pendant le déjeuner ! | باشد، به شرطی که وقت ناهار با من از کار حرف نزنی!
+A: Promis ! Et si tu arrives avant que la réunion commence, je t'offre un café. | قول می‌دهم! و اگر پیش از شروع جلسه برسی، یک قهوه مهمانم.
+B: Ça marche ! À mardi, alors. | قبول! پس تا سه‌شنبه.
+reading A:
+{"type":"mcq","prompt":"De quoi Sarah et Karim parlent-ils ?","prompt_fa":"سارا و کریم دربارهٔ چه حرف می‌زنند؟","options":["D'une nouvelle réunion au bureau.","Du travail à la maison et au bureau.","D'un voyage pour le travail.","Des vacances de Karim."],"correct":1,"explanation_fa":"کریم می‌گوید: «je travaille presque toujours de chez moi» و سارا از تجربهٔ خودش در خانه و از دفتر حرف می‌زند."}
+{"type":"tf","prompt":"Sarah a aimé travailler chez elle.","prompt_fa":"سارا کار کردن در خانه را دوست داشت.","correct":false,"explanation_fa":"سارا می‌گوید: «j'ai essayé pendant un mois, et j'ai détesté»."}
+{"type":"tf","prompt":"Karim ne perd plus de temps dans les embouteillages.","prompt_fa":"کریم دیگر در ترافیک وقت هدر نمی‌دهد.","correct":true,"explanation_fa":"کریم می‌گوید: «Je ne perds plus deux heures par jour dans les embouteillages.»"}
+{"type":"find","prompt":"Quelle phrase dit ce qui manque à Karim ?","prompt_fa":"کدام جمله می‌گوید کریم دلش برای چه چیزی تنگ شده است؟","correct_sentence":13,"explanation_fa":"کریم می‌گوید: «Les pauses café avec vous me manquent, et les discussions du déjeuner aussi.»"}
+reading B:
+{"type":"ctx","word":"limite","prompt":"« il n'y avait plus de limite entre le travail et la maison » : pour Sarah…","prompt_fa":"«il n'y avait plus de limite entre le travail et la maison»: برای سارا…","options":["la maison était trop loin du bureau.","le travail entrait partout dans sa vie à la maison.","elle n'avait plus de travail.","sa maison était trop petite."],"correct":1,"explanation_fa":"«limite» یعنی مرز؛ سارا در خانه هم کار می‌کرد: «Je lisais mes e-mails jusqu'à minuit !»"}
+{"type":"match","prompt":"Qui dit quoi ?","prompt_fa":"چه کسی چه می‌گوید؟","left":["Karim","Sarah"],"right":["Il éteint son ordinateur à 18 heures.","Elle n'arrivait pas à se concentrer.","Il a acheté un nouveau bureau."],"pairs":[[0,0],[1,1]],"explanation_fa":"کریم می‌گوید «j'éteins mon ordinateur à 18 heures» و سارا «Je n'arrivais pas à me concentrer»."}
+{"type":"cloze","prompt":"Complétez la réponse de Karim.","prompt_fa":"جواب کریم را کامل کنید.","text_with_gaps":"D'accord, à {{1}} que tu ne me {{2}} pas de travail pendant le déjeuner !","bank":["condition","parles","cause","parler","côté"],"answers":["condition","parles"],"explanation_fa":"کریم می‌گوید: «D'accord, à condition que tu ne me parles pas de travail pendant le déjeuner !»"}
+listening A:
+{"type":"num","prompt":"À quelle heure Karim commence-t-il à travailler le matin ?","prompt_fa":"کریم صبح‌ها ساعت چند کار را شروع می‌کند؟","answer":"8","accepted":["8","huit","8 heures","huit heures"],"explanation_fa":"کریم می‌گوید: «je commence à 8 heures, en pyjama»."}
+{"type":"mcq","prompt":"Que met Karim pour les réunions ?","prompt_fa":"کریم برای جلسه‌ها چه می‌پوشد؟","options":["Un pantalon.","Une chemise.","Un pyjama.","Une veste."],"correct":1,"explanation_fa":"کریم می‌گوید: «pour les réunions, je mets une chemise»."}
+{"type":"tf","prompt":"Karim se sent parfois seul.","prompt_fa":"کریم گاهی احساس تنهایی می‌کند.","correct":true,"explanation_fa":"کریم می‌گوید: «Un peu, je dois l'avouer.»"}
+{"type":"tf","prompt":"Sarah veut parler de travail pendant le déjeuner.","prompt_fa":"سارا می‌خواهد وقت ناهار دربارهٔ کار حرف بزند.","correct":false,"explanation_fa":"کریم شرط می‌گذارد «à condition que tu ne me parles pas de travail» و سارا می‌گوید: «Promis !»"}
+listening B:
+{"type":"mcq","prompt":"Quels jours Karim va-t-il venir au bureau ?","prompt_fa":"کریم چه روزهایی به دفتر می‌آید؟","options":["Le lundi et le mercredi.","Le mercredi et le vendredi.","Le lundi et le jeudi.","Le mardi et le jeudi."],"correct":3,"explanation_fa":"سارا می‌گوید: «Viens le mardi et le jeudi» و کریم قبول می‌کند."}
+{"type":"mcq","prompt":"Pourquoi Karim ne vient-il pas plus souvent ?","prompt_fa":"کریم چرا بیشتر نمی‌آید؟","options":["À cause du trajet, et parce qu'il est devenu un peu paresseux.","Parce que son chef ne veut pas.","Parce qu'il n'aime pas ses collègues.","Parce qu'il doit garder son chat."],"correct":0,"explanation_fa":"کریم می‌گوید: «À cause du trajet… et j'avoue que je suis devenu un peu paresseux.»"}
+{"type":"tf","prompt":"Sarah offrira un café à Karim s'il arrive avant la réunion.","prompt_fa":"اگر کریم قبل از جلسه برسد، سارا یک قهوه مهمانش می‌کند.","correct":true,"explanation_fa":"سارا می‌گوید: «si tu arrives avant que la réunion commence, je t'offre un café»."}
+{"type":"tf","prompt":"Quand il est seul, Karim a des idées plus vite.","prompt_fa":"کریم وقتی تنهاست، فکرها زودتر به ذهنش می‌رسد.","correct":false,"explanation_fa":"کریم می‌گوید: «quand je suis seul, les idées viennent moins vite»."}

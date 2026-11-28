@@ -1,0 +1,43 @@
+code: fr-b1-t057
+title: Une note qui manque
+band: 3
+kind: letter
+key_words: apparaître, s'agir de, résultat, dossier, impatient
+sentences:
+- Madame, Monsieur, | خانم، آقا،
+- Je m'appelle Nima Karimi, et je suis étudiant en deuxième année d'histoire. | اسم من نیما کریمی است و دانشجوی سال دوم تاریخ هستم.
+- Je vous écris parce qu'une de mes notes de janvier n'apparaît pas sur mon espace étudiant. | برایتان می‌نویسم چون یکی از نمره‌های ژانویه‌ام در صفحهٔ دانشجویی‌ام نیامده است.
+- Il s'agit de l'examen d'histoire de l'art du professeur Moreau, que j'ai passé le 14 janvier. | منظورم امتحان تاریخ هنر استاد مورو است که ۱۴ ژانویه دادم. | tts: Il s'agit de l'examen d'histoire de l'art du professeur Moreau, que j'ai passé le quatorze janvier.
+- En regardant mes résultats le 3 février, j'ai vu toutes mes autres notes, sauf celle d'histoire de l'art. | سوم فوریه که نتیجه‌هایم را نگاه کردم، همهٔ نمره‌های دیگرم را دیدم جز نمرهٔ تاریخ هنر. | tts: En regardant mes résultats le trois février, j'ai vu toutes mes autres notes, sauf celle d'histoire de l'art.
+- J'ai d'abord pensé à un simple retard, et j'ai attendu. | اول فکر کردم فقط دیر شده و صبر کردم.
+- Mais aujourd'hui, nous sommes le 28 février, et je n'ai toujours rien. | ولی امروز ۲۸ فوریه است و هنوز هیچ خبری نیست. | tts: Mais aujourd'hui, nous sommes le vingt-huit février, et je n'ai toujours rien.
+- La semaine dernière, j'ai écrit au professeur Moreau. Il m'a répondu : « J'ai envoyé toutes les notes à votre bureau le 25 janvier. » | هفتهٔ پیش به استاد مورو نامه نوشتم. جواب داد: «همهٔ نمره‌ها را ۲۵ ژانویه به دفتر شما فرستادم.» | tts: La semaine dernière, j'ai écrit au professeur Moreau. Il m'a répondu : « J'ai envoyé toutes les notes à votre bureau le vingt-cinq janvier. »
+- Je pense qu'il y a peut-être une erreur avec mon nom, car on écrit souvent mal mon prénom. | فکر می‌کنم شاید با اسمم اشتباهی پیش آمده، چون نام کوچکم را اغلب اشتباه می‌نویسند.
+- Cette note est très importante pour moi. | این نمره برایم خیلی مهم است.
+- L'année prochaine, je voudrais partir étudier six mois à Montréal, et je dois envoyer mon dossier complet avant le 15 mars. | سال آینده می‌خواهم شش ماه برای درس به مونترال بروم و باید تا ۱۵ مارس پرونده‌ام را کامل بفرستم. | tts: L'année prochaine, je voudrais partir étudier six mois à Montréal, et je dois envoyer mon dossier complet avant le quinze mars.
+- Sans cette note, je ne pourrai pas l'envoyer. | بدون این نمره نمی‌توانم آن را بفرستم.
+- Je ne veux pas être pessimiste, mais je commence à être un peu impatient. | نمی‌خواهم بدبین باشم، ولی کم‌کم دارم بی‌تاب می‌شوم.
+- Pourriez-vous vérifier, s'il vous plaît, et me dire ce que je dois faire ? | ممکن است لطفاً بررسی کنید و به من بگویید چه کار باید بکنم؟
+- Je peux aussi passer à votre bureau mardi ou jeudi après-midi, avec ma carte d'étudiant. | می‌توانم سه‌شنبه یا پنجشنبه بعدازظهر با کارت دانشجویی‌ام به دفترتان بیایم.
+- Je vous remercie beaucoup pour votre aide. | از کمکتان خیلی ممنونم.
+- Cordialement, | با احترام،
+- Nima Karimi | نیما کریمی
+reading A:
+{"type":"mcq","prompt":"Pourquoi Nima écrit-il au bureau de l'université ?","prompt_fa":"نیما چرا به دفتر دانشگاه نامه می‌نویسد؟","options":["Parce qu'il a raté un examen.","Parce qu'il ne trouve pas une de ses notes.","Parce qu'il veut changer de professeur.","Parce qu'il a perdu sa carte d'étudiant."],"correct":1,"explanation_fa":"نیما می‌نویسد: «une de mes notes de janvier n'apparaît pas sur mon espace étudiant»."}
+{"type":"tf","prompt":"Le professeur Moreau dit qu'il a envoyé les notes.","prompt_fa":"استاد مورو می‌گوید که نمره‌ها را فرستاده است.","correct":true,"explanation_fa":"استاد جواب داده: «J'ai envoyé toutes les notes à votre bureau le 25 janvier.»"}
+{"type":"tf","prompt":"Nima peut envoyer son dossier pour Montréal sans cette note.","prompt_fa":"نیما بدون این نمره می‌تواند پرونده‌اش را برای مونترال بفرستد.","correct":false,"explanation_fa":"نیما می‌نویسد: «Sans cette note, je ne pourrai pas l'envoyer.»"}
+{"type":"find","prompt":"Quelle phrase donne une raison possible de l'erreur ?","prompt_fa":"کدام جمله یک دلیل احتمالی برای این اشتباه می‌آورد؟","correct_sentence":8,"explanation_fa":"نیما می‌نویسد: «il y a peut-être une erreur avec mon nom, car on écrit souvent mal mon prénom»."}
+reading B:
+{"type":"ctx","word":"impatient","prompt":"« je commence à être un peu impatient » : Nima…","prompt_fa":"«je commence à être un peu impatient»: نیما…","options":["n'a plus envie d'attendre longtemps.","est très content.","a beaucoup de temps.","est malade."],"correct":0,"explanation_fa":"«impatient» یعنی بی‌تاب؛ نیما از سوم فوریه منتظر است و تا ۱۵ مارس وقت دارد."}
+{"type":"order","prompt":"Mettez ces moments dans l'ordre.","prompt_fa":"این لحظه‌ها را به ترتیب بچینید.","items":["Nima regarde ses résultats.","Nima passe l'examen d'histoire de l'art.","Nima écrit au professeur Moreau.","Le professeur envoie les notes au bureau."],"correct_order":[1,3,0,2],"explanation_fa":"امتحان «le 14 janvier» بود، استاد نمره‌ها را «le 25 janvier» فرستاد، نیما «le 3 février» نتیجه‌ها را دید و «La semaine dernière» به استاد نوشت."}
+{"type":"cloze","prompt":"Complétez la phrase de Nima.","prompt_fa":"جملهٔ نیما را کامل کنید.","text_with_gaps":"En {{1}} mes résultats le 3 février, j'ai vu toutes mes autres notes, {{2}} celle d'histoire de l'art.","bank":["regardant","sauf","écrivant","avec","après"],"answers":["regardant","sauf"],"explanation_fa":"نیما می‌نویسد: «En regardant mes résultats le 3 février, j'ai vu toutes mes autres notes, sauf celle d'histoire de l'art.»"}
+listening A:
+{"type":"num","prompt":"Avant quelle date de mars Nima doit-il envoyer son dossier ? (le … mars)","prompt_fa":"نیما باید پیش از چندم مارس پرونده‌اش را بفرستد؟","answer":"15","accepted":["15","quinze"],"explanation_fa":"نیما می‌گوید: «je dois envoyer mon dossier complet avant le 15 mars»."}
+{"type":"mcq","prompt":"Quelle note manque à Nima ?","prompt_fa":"کدام نمرهٔ نیما نیامده است؟","options":["La note d'histoire de l'art.","La note de géographie.","La note d'anglais.","La note de français."],"correct":0,"explanation_fa":"نیما می‌گوید: «Il s'agit de l'examen d'histoire de l'art du professeur Moreau»."}
+{"type":"tf","prompt":"Nima veut étudier six mois à Montréal.","prompt_fa":"نیما می‌خواهد شش ماه در مونترال درس بخواند.","correct":true,"explanation_fa":"نیما می‌گوید: «je voudrais partir étudier six mois à Montréal»."}
+{"type":"tf","prompt":"Nima est en première année d'histoire.","prompt_fa":"نیما دانشجوی سال اول تاریخ است.","correct":false,"explanation_fa":"نیما می‌گوید: «je suis étudiant en deuxième année d'histoire»."}
+listening B:
+{"type":"mcq","prompt":"Quand Nima peut-il passer au bureau ?","prompt_fa":"نیما کی می‌تواند به دفتر بیاید؟","options":["Lundi matin.","Vendredi après-midi.","Mardi ou jeudi après-midi.","Mercredi toute la journée."],"correct":2,"explanation_fa":"نیما می‌گوید: «Je peux aussi passer à votre bureau mardi ou jeudi après-midi»."}
+{"type":"mcq","prompt":"Qu'a fait Nima quand il n'a pas vu sa note ?","prompt_fa":"نیما وقتی نمره‌اش را ندید چه کار کرد؟","options":["Il a tout de suite appelé le bureau.","Il est allé voir le professeur.","Il a refait l'examen.","Il a d'abord attendu."],"correct":3,"explanation_fa":"نیما می‌گوید: «J'ai d'abord pensé à un simple retard, et j'ai attendu.»"}
+{"type":"tf","prompt":"On écrit souvent mal le prénom de Nima.","prompt_fa":"نام کوچک نیما را اغلب اشتباه می‌نویسند.","correct":true,"explanation_fa":"نیما می‌گوید: «on écrit souvent mal mon prénom»."}
+{"type":"tf","prompt":"Nima a reçu sa note le 28 février.","prompt_fa":"نیما ۲۸ فوریه نمره‌اش را گرفت.","correct":false,"explanation_fa":"نیما می‌گوید: «nous sommes le 28 février, et je n'ai toujours rien»."}

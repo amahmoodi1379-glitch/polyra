@@ -1,0 +1,45 @@
+code: fr-b1-t060
+title: Mon premier voyage à Paris
+band: 3
+kind: letter
+key_words: ramener, immense, assis, profiter
+sentences:
+- Mon cher Lucas, | لوکای عزیزم،
+- Ta maman m'a appris la grande nouvelle : en septembre, tu pars faire tes études à Paris ! | مامانت خبر بزرگ را به من داد: سپتامبر برای درس خواندن به پاریس می‌روی!
+- Ça m'a rappelé mon premier voyage là-bas, et j'ai eu envie de te raconter cette histoire. | این مرا یاد اولین سفرم به آنجا انداخت و دلم خواست این ماجرا را برایت تعریف کنم.
+- C'était en 1966. J'avais dix-sept ans, et je n'étais jamais sorti de notre village de Bretagne. | سال ۱۹۶۶ بود. هفده سالم بود و هیچ‌وقت از روستایمان در برتانی بیرون نرفته بودم. | tts: C'était en mille neuf cent soixante-six. J'avais dix-sept ans, et je n'étais jamais sorti de notre village de Bretagne.
+- Mon oncle Louis avait un café près de la gare, et il m'avait proposé de travailler chez lui pendant l'été. | عمویم لویی نزدیک ایستگاه قطار یک کافه داشت و به من پیشنهاد داده بود تابستان پیش او کار کنم.
+- Après avoir dit au revoir à ma mère, qui pleurait sur le quai, je suis monté dans le train avec une petite valise. | بعد از خداحافظی با مادرم که روی سکو گریه می‌کرد، با یک چمدان کوچک سوار قطار شدم.
+- Le voyage a duré presque neuf heures. | سفر نزدیک نه ساعت طول کشید.
+- En arrivant à Paris, j'ai eu peur : la ville était immense, il y avait du monde partout et des voitures dans tous les sens. | وقتی به پاریس رسیدم، ترسیدم: شهر خیلی بزرگ بود، همه‌جا آدم بود و ماشین‌ها از هر طرف می‌آمدند.
+- Le premier jour, je me suis perdu dans le métro, et une vieille dame m'a ramené jusqu'au café. | روز اول در مترو گم شدم و یک خانم مسن مرا تا کافه رساند.
+- Je travaillais de six heures du matin à huit heures du soir, mais je ne me sentais jamais fatigué{fatigué}. | از شش صبح تا هشت شب کار می‌کردم، ولی هیچ‌وقت احساس خستگی نمی‌کردم.
+- Un jour de grève, j'ai traversé tout Paris à pied pour aller au café. | یک روز که اعتصاب بود، تمام پاریس را پیاده رفتم تا به کافه برسم.
+- Le dimanche, je me promenais dans la ville avec un peu d'argent dans la poche. | یکشنبه‌ها با کمی پول در جیبم در شهر قدم می‌زدم.
+- J'ai vu la tour Eiffel et la Seine, mais surtout, j'ai découvert le cinéma : dans mon village, nous n'en avions pas ! | برج ایفل و رود سن را دیدم، ولی از همه مهم‌تر سینما را کشف کردم: در روستای ما سینما نبود!
+- Je me souviens encore de mon premier film : j'étais assis tout devant, la bouche ouverte. | هنوز اولین فیلمم یادم است: درست جلو نشسته بودم، با دهان باز.
+- À la fin de l'été, je suis rentré en Bretagne, mais je n'étais plus le même garçon. | آخر تابستان به برتانی برگشتم، ولی دیگر همان پسر قبلی نبودم.
+- J'avais compris que le monde était bien plus grand que notre village. | فهمیده بودم که دنیا خیلی بزرگ‌تر از روستای ماست.
+- Tu verras, Paris va te faire peur au début, puis tu ne voudras plus partir. | خواهی دید، پاریس اولش تو را می‌ترساند، بعد دیگر نمی‌خواهی از آنجا بروی.
+- Profite de chaque jour, et n'oublie pas d'écrire à ton vieux grand-père ! | از هر روزش لذت ببر و نوشتن برای پدربزرگ پیرت را فراموش نکن!
+- Je t'embrasse très fort, | محکم می‌بوسمت،
+- Ton grand-père Pierre | پدربزرگت، پیر
+reading A:
+{"type":"mcq","prompt":"Pourquoi le grand-père écrit-il à Lucas ?","prompt_fa":"پدربزرگ چرا به لوکا نامه می‌نویسد؟","options":["Pour l'inviter dans son village.","Pour lui raconter son premier voyage à Paris.","Pour lui demander de l'argent.","Pour lui parler de son oncle Louis."],"correct":1,"explanation_fa":"پدربزرگ می‌نویسد: «Ça m'a rappelé mon premier voyage là-bas, et j'ai eu envie de te raconter cette histoire.»"}
+{"type":"tf","prompt":"Avant ce voyage, le grand-père n'avait jamais quitté son village.","prompt_fa":"پدربزرگ پیش از این سفر هیچ‌وقت از روستایش بیرون نرفته بود.","correct":true,"explanation_fa":"او می‌نویسد: «je n'étais jamais sorti de notre village de Bretagne»."}
+{"type":"tf","prompt":"Le grand-père était souvent fatigué à cause de son travail.","prompt_fa":"پدربزرگ به خاطر کارش اغلب خسته بود.","correct":false,"explanation_fa":"او می‌نویسد: «je ne me sentais jamais fatigué»."}
+{"type":"find","prompt":"Quelle phrase dit ce que le grand-père a compris pendant cet été ?","prompt_fa":"کدام جمله می‌گوید پدربزرگ در آن تابستان چه چیزی را فهمید؟","correct_sentence":15,"explanation_fa":"او می‌نویسد: «J'avais compris que le monde était bien plus grand que notre village.»"}
+reading B:
+{"type":"ctx","word":"ramené","prompt":"« une vieille dame m'a ramené jusqu'au café » : la vieille dame…","prompt_fa":"«une vieille dame m'a ramené jusqu'au café»: آن خانم مسن…","options":["l'a accompagné jusqu'au café.","lui a acheté un café.","l'a invité chez elle.","lui a montré le métro."],"correct":0,"explanation_fa":"«ramener» یعنی کسی را برگرداندن یا رساندن؛ پدربزرگ گم شده بود و آن خانم او را تا کافه برد."}
+{"type":"order","prompt":"Mettez l'été du grand-père dans l'ordre.","prompt_fa":"تابستان پدربزرگ را به ترتیب بچینید.","items":["Il se perd dans le métro.","Il dit au revoir à sa mère sur le quai.","Il rentre en Bretagne.","Il voit son premier film."],"correct_order":[1,0,3,2],"explanation_fa":"اول روی سکو خداحافظی کرد، روز اول در مترو گم شد، یکشنبه‌ها سینما را کشف کرد و «À la fin de l'été, je suis rentré en Bretagne»."}
+{"type":"cloze","prompt":"Complétez la phrase de la lettre.","prompt_fa":"جملهٔ نامه را کامل کنید.","text_with_gaps":"{{1}} à Paris, j'ai eu peur : la ville était {{2}}, il y avait du monde partout.","bank":["En arrivant","immense","En partant","vide","petite"],"answers":["En arrivant","immense"],"explanation_fa":"او می‌نویسد: «En arrivant à Paris, j'ai eu peur : la ville était immense, il y avait du monde partout»."}
+listening A:
+{"type":"num","prompt":"Quel âge avait le grand-père pendant ce voyage ?","prompt_fa":"پدربزرگ در این سفر چند سال داشت؟","answer":"17","accepted":["17","dix-sept"],"explanation_fa":"او می‌گوید: «J'avais dix-sept ans»."}
+{"type":"mcq","prompt":"Combien de temps le voyage en train a-t-il duré ?","prompt_fa":"سفر با قطار چقدر طول کشید؟","options":["Presque six heures.","Presque huit heures.","Presque neuf heures.","Presque dix-sept heures."],"correct":2,"explanation_fa":"او می‌گوید: «Le voyage a duré presque neuf heures.»"}
+{"type":"tf","prompt":"L'oncle Louis avait un café à Paris.","prompt_fa":"عمو لویی در پاریس کافه داشت.","correct":true,"explanation_fa":"او می‌گوید: «Mon oncle Louis avait un café près de la gare»."}
+{"type":"tf","prompt":"Il y avait un cinéma dans le village du grand-père.","prompt_fa":"در روستای پدربزرگ سینما بود.","correct":false,"explanation_fa":"او می‌گوید: «dans mon village, nous n'en avions pas !»"}
+listening B:
+{"type":"mcq","prompt":"Que faisait le grand-père le dimanche ?","prompt_fa":"پدربزرگ یکشنبه‌ها چه کار می‌کرد؟","options":["Il travaillait au café.","Il écrivait à sa mère.","Il prenait le train pour la Bretagne.","Il se promenait dans Paris."],"correct":3,"explanation_fa":"او می‌گوید: «Le dimanche, je me promenais dans la ville»."}
+{"type":"mcq","prompt":"Qu'est-ce que le grand-père pense de Lucas à Paris ?","prompt_fa":"پدربزرگ دربارهٔ لوکا در پاریس چه فکری می‌کند؟","options":["Lucas aura peur au début, puis il aimera la ville.","Lucas ne restera pas longtemps.","Lucas va se perdre dans le métro.","Lucas va travailler dans un café."],"correct":0,"explanation_fa":"او می‌گوید: «Paris va te faire peur au début, puis tu ne voudras plus partir»."}
+{"type":"tf","prompt":"La mère du grand-père pleurait quand il est parti.","prompt_fa":"مادر پدربزرگ وقتی او رفت گریه می‌کرد.","correct":true,"explanation_fa":"او می‌گوید: «ma mère, qui pleurait sur le quai»."}
+{"type":"tf","prompt":"Lucas va faire ses études à Paris en juin.","prompt_fa":"لوکا ژوئن برای درس خواندن به پاریس می‌رود.","correct":false,"explanation_fa":"او می‌گوید: «en septembre, tu pars faire tes études à Paris !»"}

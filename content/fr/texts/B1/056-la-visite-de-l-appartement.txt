@@ -1,0 +1,47 @@
+code: fr-b1-t056
+title: La visite de l'appartement
+band: 3
+kind: long_dialogue
+key_words: à l'avance, dossier, discret, honnête, dispute
+sentences:
+A: Bonjour, Monsieur Rousseau ? Je suis Madame Girard, de l'agence. Entrez ! | سلام، آقای روسو؟ من خانم ژیرار هستم، از بنگاه. بفرمایید تو!
+B: Bonjour. Oh, c'est plus grand que sur les photos ! | سلام. اوه، از عکس‌ها بزرگ‌تر است!
+A: Oui, l'appartement fait 48 mètres carrés : un salon, une chambre, une cuisine et une salle de bain. | بله، آپارتمان ۴۸ متر مربع است: یک پذیرایی، یک اتاق خواب، یک آشپزخانه و یک حمام. | tts: Oui, l'appartement fait quarante-huit mètres carrés : un salon, une chambre, une cuisine et une salle de bain.
+B: Et il y a beaucoup de lumière. Les fenêtres donnent sur la rue ? | نور هم زیاد است. پنجره‌ها رو به خیابان است؟
+A: Non, sur une cour avec des arbres. C'est très calme, même le samedi soir. | نه، رو به حیاطی با چند درخت. خیلی آرام است، حتی شنبه‌شب‌ها.
+B: Parfait, je travaille souvent la nuit. Et le loyer, c'est bien 750 euros ? | عالی است، من اغلب شب‌ها کار می‌کنم. اجاره هم همان ۷۵۰ یورو است؟ | tts: Parfait, je travaille souvent la nuit. Et le loyer, c'est bien sept cent cinquante euros ?
+A: 750 euros, plus 60 euros par mois pour l'eau et le chauffage. | ۷۵۰ یورو، به‌اضافهٔ ماهی ۶۰ یورو برای آب و گرمایش. | tts: Sept cent cinquante euros, plus soixante euros par mois pour l'eau et le chauffage.
+B: Et qu'est-ce qu'il faut payer en entrant ? | موقع اسباب‌کشی چه چیزهایی باید پرداخت؟
+A: Le premier mois de loyer, un autre mois à l'avance, et 400 euros pour l'agence. | اجارهٔ ماه اول، یک ماه دیگر پیش‌پیش، و ۴۰۰ یورو برای بنگاه. | tts: Le premier mois de loyer, un autre mois à l'avance, et quatre cents euros pour l'agence.
+B: Et le quartier, il est comment ? Il y a des magasins ? | محله چطور است؟ مغازه دارد؟
+A: Il y a une boulangerie en bas, un supermarché à deux minutes, et le métro est au bout de la rue. | پایین یک نانوایی هست، یک سوپرمارکت در دو دقیقه‌ای، و مترو هم سر خیابان است.
+A: C'est un quartier familial, avec une école et un grand parc. | محلهٔ خانوادگی است، با یک مدرسه و یک پارک بزرگ.
+B: Et les voisins ? Je ne voudrais pas vivre à côté de gens qui font la fête toute la nuit. | همسایه‌ها چطور؟ نمی‌خواهم کنار کسانی زندگی کنم که تمام شب مهمانی می‌گیرند.
+A: En dessous, c'est un vieux couple très discret. Au-dessus, une jeune femme joue du piano, mais jamais après 20 heures. | طبقهٔ پایین یک زن و شوهر مسن خیلی بی‌سروصدا هستند. طبقهٔ بالا یک خانم جوان پیانو می‌زند، ولی هیچ‌وقت بعد از ساعت هشت شب. | tts: En dessous, c'est un vieux couple très discret. Au-dessus, une jeune femme joue du piano, mais jamais après vingt heures.
+A: En dix ans, il n'y a jamais eu de dispute dans l'immeuble. | در ده سال گذشته هیچ‌وقت در این ساختمان دعوایی پیش نیامده است.
+B: Est-ce que je peux réfléchir jusqu'à demain ? | می‌توانم تا فردا فکر کنم؟
+A: Vous pouvez, mais je dois être honnête avec vous : trois autres personnes visitent l'appartement aujourd'hui. | می‌توانید، ولی باید با شما روراست باشم: امروز سه نفر دیگر هم آپارتمان را می‌بینند.
+A: Le propriétaire choisira le premier dossier complet. | صاحب‌خانه اولین پروندهٔ کامل را انتخاب می‌کند.
+B: Qu'est-ce qu'il faut mettre dans le dossier ? | در پرونده چه باید گذاشت؟
+A: Votre carte d'identité, votre contrat de travail et la preuve de vos trois derniers salaires. | کارت شناسایی، قرارداد کار و مدرک سه حقوق آخرتان.
+B: J'ai tout dans mon téléphone. Je vous envoie tout ça dès que je rentrerai chez moi. | همه را توی گوشی‌ام دارم. به محض این‌که به خانه برسم، همه را برایتان می‌فرستم.
+A: Très bien. Si votre dossier arrive avant demain midi, vous avez de bonnes chances ! | خیلی خب. اگر پرونده‌تان تا فردا ظهر برسد، شانس خوبی دارید!
+reading A:
+{"type":"mcq","prompt":"Que fait Monsieur Rousseau ?","prompt_fa":"آقای روسو چه کار می‌کند؟","options":["Il vend son appartement.","Il visite un appartement à louer.","Il cherche un travail à l'agence.","Il rend visite à ses voisins."],"correct":1,"explanation_fa":"خانم ژیرار از بنگاه آپارتمان را نشان می‌دهد و آقای روسو دربارهٔ «le loyer» می‌پرسد."}
+{"type":"tf","prompt":"Les fenêtres de l'appartement donnent sur une cour.","prompt_fa":"پنجره‌های آپارتمان رو به حیاط است.","correct":true,"explanation_fa":"خانم ژیرار می‌گوید: «Non, sur une cour avec des arbres.»"}
+{"type":"tf","prompt":"Monsieur Rousseau est la seule personne qui visite l'appartement aujourd'hui.","prompt_fa":"آقای روسو تنها کسی است که امروز آپارتمان را می‌بیند.","correct":false,"explanation_fa":"خانم ژیرار می‌گوید: «trois autres personnes visitent l'appartement aujourd'hui»."}
+{"type":"find","prompt":"Quelle phrase dit ce qu'il faut mettre dans le dossier ?","prompt_fa":"کدام جمله می‌گوید در پرونده چه باید گذاشت؟","correct_sentence":19,"explanation_fa":"خانم ژیرار می‌گوید: «Votre carte d'identité, votre contrat de travail et la preuve de vos trois derniers salaires.»"}
+reading B:
+{"type":"ctx","word":"discret","prompt":"« En dessous, c'est un vieux couple très discret » : ce couple…","prompt_fa":"«En dessous, c'est un vieux couple très discret»: این زن و شوهر…","options":["fait souvent la fête.","ne fait pas de bruit.","joue du piano le soir.","parle beaucoup avec les voisins."],"correct":1,"explanation_fa":"«discret» یعنی آرام و بی‌سروصدا؛ آقای روسو نگران سروصدای همسایه‌هاست."}
+{"type":"match","prompt":"Combien faut-il payer ?","prompt_fa":"چقدر باید پرداخت؟","left":["le loyer","l'eau et le chauffage","l'agence"],"right":["400 euros","60 euros par mois","750 euros par mois","48 euros"],"pairs":[[0,2],[1,1],[2,0]],"explanation_fa":"اجاره «750 euros»، آب و گرمایش «60 euros par mois» و بنگاه «400 euros pour l'agence»."}
+{"type":"order","prompt":"Mettez la visite dans l'ordre.","prompt_fa":"بازدید را به ترتیب بچینید.","items":["Ils parlent des voisins.","Madame Girard parle des autres visites.","Monsieur Rousseau dit que l'appartement est grand.","Ils parlent du loyer."],"correct_order":[2,3,0,1],"explanation_fa":"اول «c'est plus grand que sur les photos»، بعد اجاره، بعد همسایه‌ها و آخر «trois autres personnes visitent l'appartement»."}
+listening A:
+{"type":"num","prompt":"L'appartement fait combien de mètres carrés ?","prompt_fa":"آپارتمان چند متر مربع است؟","answer":"48","accepted":["48","quarante-huit"],"explanation_fa":"خانم ژیرار می‌گوید: «l'appartement fait 48 mètres carrés»."}
+{"type":"mcq","prompt":"Qu'est-ce qu'il y a au bout de la rue ?","prompt_fa":"سر خیابان چه چیزی هست؟","options":["Une école.","Un supermarché.","Le métro.","Une boulangerie."],"correct":2,"explanation_fa":"خانم ژیرار می‌گوید: «le métro est au bout de la rue»."}
+{"type":"tf","prompt":"La jeune femme du dessus joue du piano tard la nuit.","prompt_fa":"خانم جوان طبقهٔ بالا دیروقت شب پیانو می‌زند.","correct":false,"explanation_fa":"خانم ژیرار می‌گوید: «mais jamais après 20 heures»."}
+{"type":"tf","prompt":"Monsieur Rousseau travaille souvent la nuit.","prompt_fa":"آقای روسو اغلب شب‌ها کار می‌کند.","correct":true,"explanation_fa":"آقای روسو می‌گوید: «je travaille souvent la nuit»."}
+listening B:
+{"type":"mcq","prompt":"Quel dossier le propriétaire va-t-il choisir ?","prompt_fa":"صاحب‌خانه کدام پرونده را انتخاب می‌کند؟","options":["Le dossier de la personne la plus riche.","Le premier dossier complet.","Le dossier de Monsieur Rousseau.","Le dernier dossier arrivé."],"correct":1,"explanation_fa":"خانم ژیرار می‌گوید: «Le propriétaire choisira le premier dossier complet.»"}
+{"type":"mcq","prompt":"Quand Monsieur Rousseau va-t-il envoyer ses papiers ?","prompt_fa":"آقای روسو کی مدارکش را می‌فرستد؟","options":["Demain midi.","Dans une semaine.","Tout de suite, à l'agence.","Quand il rentrera chez lui."],"correct":3,"explanation_fa":"آقای روسو می‌گوید: «Je vous envoie tout ça dès que je rentrerai chez moi.»"}
+{"type":"tf","prompt":"Au-dessus de l'appartement, il y a un vieux couple.","prompt_fa":"طبقهٔ بالای آپارتمان یک زن و شوهر مسن زندگی می‌کنند.","correct":false,"explanation_fa":"خانم ژیرار می‌گوید: «En dessous, c'est un vieux couple» و «Au-dessus, une jeune femme joue du piano»."}
+{"type":"tf","prompt":"Le quartier a une école et un grand parc.","prompt_fa":"محله یک مدرسه و یک پارک بزرگ دارد.","correct":true,"explanation_fa":"خانم ژیرار می‌گوید: «C'est un quartier familial, avec une école et un grand parc.»"}

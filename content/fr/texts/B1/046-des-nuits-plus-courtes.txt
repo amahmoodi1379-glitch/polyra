@@ -1,0 +1,42 @@
+code: fr-b1-t046
+title: Des nuits plus courtes
+band: 3
+kind: news
+key_words: étude, empêcher, pression, inquiétude, éviter
+sentences:
+- Les nuits des Français sont plus courtes qu'avant : c'est le résultat d'une grande étude publiée mardi, qui a interrogé 12 000 adultes. | شب‌های فرانسوی‌ها کوتاه‌تر از قبل شده است: این نتیجهٔ پژوهش بزرگی است که سه‌شنبه منتشر شد و از ۱۲ هزار بزرگسال پرسش کرده است. | tts: Les nuits des Français sont plus courtes qu'avant : c'est le résultat d'une grande étude publiée mardi, qui a interrogé douze mille adultes.
+- Aujourd'hui, en semaine, ils dorment en général 6 heures 40 par nuit. | امروز در روزهای هفته معمولاً شبی ۶ ساعت و ۴۰ دقیقه می‌خوابند. | tts: Aujourd'hui, en semaine, ils dorment en général six heures quarante par nuit.
+- Il y a vingt ans, ce chiffre était de 7 heures 05. | بیست سال پیش این عدد ۷ ساعت و ۵ دقیقه بود. | tts: Il y a vingt ans, ce chiffre était de sept heures cinq.
+- Et un Français sur trois dormirait moins de six heures, ce qui est trop peu pour être en forme. | ظاهراً از هر سه فرانسوی یکی کمتر از شش ساعت می‌خوابد، که برای سرحال بودن خیلی کم است.
+- Pourquoi ? D'abord, à cause des écrans. | چرا؟ اول به خاطر صفحه‌های نمایش.
+- Beaucoup de gens regardent des séries ou lisent leurs messages au lit, parfois jusqu'à une heure du matin. | خیلی‌ها توی رختخواب سریال تماشا می‌کنند یا پیام‌هایشان را می‌خوانند، گاهی تا ساعت یک بامداد.
+- Et la lumière des téléphones empêche le cerveau de comprendre que c'est la nuit. | نور گوشی‌ها هم نمی‌گذارد مغز بفهمد که شب شده است.
+- Ensuite, les trajets sont plus longs : beaucoup de personnes habitent loin de leur travail et se lèvent très tôt. | بعد این‌که مسیرها طولانی‌تر شده: خیلی‌ها دور از محل کارشان زندگی می‌کنند و خیلی زود بیدار می‌شوند.
+- Enfin, l'étude parle de la pression au travail et de l'inquiétude pour l'argent. | آخر این‌که پژوهش از فشار کاری و نگرانی برای پول حرف می‌زند.
+- « Les gens se couchent avec leurs problèmes dans la tête », explique le docteur Claire Moreau, qui a dirigé l'étude. | دکتر کلر مورو، که این پژوهش را هدایت کرده، توضیح می‌دهد: «مردم با مشکلاتشان در سر به رختخواب می‌روند.»
+- Les jeunes de 18 à 25 ans sont les plus fatigués : un jeune sur deux a du mal à se lever le matin. | جوان‌های ۱۸ تا ۲۵ ساله از همه خسته‌ترند: از هر دو جوان یکی صبح‌ها به سختی از خواب بلند می‌شود. | tts: Les jeunes de dix-huit à vingt-cinq ans sont les plus fatigués : un jeune sur deux a du mal à se lever le matin.
+- « Je ne pense pas que les jeunes soient paresseux, dit-elle. Ils ont simplement du mal à éteindre leur téléphone. » | او می‌گوید: «فکر نمی‌کنم جوان‌ها تنبل باشند. فقط سخت می‌توانند گوشی‌شان را خاموش کنند.»
+- Dormir trop peu n'est pas sans danger : cela peut causer de la mauvaise humeur, des difficultés à se concentrer et même des accidents sur la route. | کم‌خوابی بی‌خطر نیست: می‌تواند باعث بدخلقی، سختی در تمرکز و حتی تصادف در جاده شود.
+- Les conseils du docteur Moreau sont simples. | توصیه‌های دکتر مورو ساده است.
+- Il faut éteindre les écrans une heure avant de dormir, et se coucher à la même heure tous les soirs, même le week-end. | باید یک ساعت پیش از خواب صفحه‌ها را خاموش کرد و هر شب، حتی آخر هفته، در یک ساعت مشخص خوابید.
+- Il vaut mieux aussi éviter le café après 16 heures. | همچنین بهتر است بعد از ساعت ۴ بعدازظهر قهوه نخورید. | tts: Il vaut mieux aussi éviter le café après seize heures.
+- Et la sieste ? « C'est une bonne idée, mais pas plus de vingt minutes ! » | و چرت بعد از ناهار؟ «فکر خوبی است، ولی نه بیشتر از بیست دقیقه!»
+reading A:
+{"type":"mcq","prompt":"Qu'est-ce que l'étude a découvert ?","prompt_fa":"پژوهش به چه چیزی رسیده است؟","options":["Les jeunes dorment mieux que les adultes.","Les nuits des Français sont plus courtes qu'il y a vingt ans.","Les Français se couchent plus tôt qu'avant.","Les écrans aident à mieux dormir."],"correct":1,"explanation_fa":"خبر می‌گوید: «Les nuits des Français sont plus courtes qu'avant» و «Il y a vingt ans, ce chiffre était de 7 heures 05»."}
+{"type":"tf","prompt":"Selon l'étude, la lumière des téléphones aide à s'endormir.","prompt_fa":"طبق این پژوهش، نور گوشی به خوابیدن کمک می‌کند.","correct":false,"explanation_fa":"خبر می‌گوید: «la lumière des téléphones empêche le cerveau de comprendre que c'est la nuit»."}
+{"type":"tf","prompt":"Les jeunes de 18 à 25 ans sont très fatigués.","prompt_fa":"جوان‌های ۱۸ تا ۲۵ ساله خیلی خسته‌اند.","correct":true,"explanation_fa":"خبر می‌گوید: «Les jeunes de 18 à 25 ans sont les plus fatigués»."}
+{"type":"find","prompt":"Quelle phrase dit ce qu'il faut faire le soir pour mieux dormir ?","prompt_fa":"کدام جمله می‌گوید شب‌ها برای بهتر خوابیدن چه باید کرد؟","correct_sentence":14,"explanation_fa":"خبر می‌گوید: «Il faut éteindre les écrans une heure avant de dormir, et se coucher à la même heure tous les soirs»."}
+reading B:
+{"type":"ctx","word":"empêche","prompt":"« la lumière des téléphones empêche le cerveau de comprendre que c'est la nuit » : la lumière…","prompt_fa":"«la lumière des téléphones empêche le cerveau de comprendre que c'est la nuit»: نور…","options":["aide le cerveau à comprendre.","ne permet pas au cerveau de comprendre.","fait mal à la tête.","réveille les gens à une heure du matin."],"correct":1,"explanation_fa":"«empêcher» یعنی نگذاشتن؛ نور گوشی نمی‌گذارد مغز بفهمد که شب است."}
+{"type":"order","prompt":"Mettez ces parties du texte dans l'ordre.","prompt_fa":"این بخش‌های متن را به ترتیب بچینید.","items":["les longs trajets","la pression au travail et l'inquiétude pour l'argent","les écrans au lit","les conseils du docteur Moreau"],"correct_order":[2,0,1,3],"explanation_fa":"خبر اول می‌گوید «D'abord, à cause des écrans»، بعد «Ensuite, les trajets»، بعد «Enfin, … la pression au travail» و آخر توصیه‌های دکتر مورو."}
+{"type":"match","prompt":"Que veut dire chaque chiffre ?","prompt_fa":"هر عدد چه معنایی دارد؟","left":["6 heures 40","7 heures 05","16 heures","vingt minutes"],"right":["l'heure du dernier café","une bonne sieste","le sommeil d'aujourd'hui en semaine","l'heure du coucher","le sommeil d'il y a vingt ans"],"pairs":[[0,2],[1,4],[2,0],[3,1]],"explanation_fa":"امروز «6 heures 40 par nuit»، بیست سال پیش «7 heures 05»، قهوه نه «après 16 heures» و چرت «pas plus de vingt minutes»."}
+listening A:
+{"type":"num","prompt":"Combien d'adultes l'étude a-t-elle interrogés ?","prompt_fa":"پژوهش از چند بزرگسال پرسش کرده است؟","answer":"12000","accepted":["12000","12 000","douze mille"],"explanation_fa":"می‌شنویم: «qui a interrogé 12 000 adultes»."}
+{"type":"mcq","prompt":"Combien de temps les Français dorment-ils aujourd'hui en semaine ?","prompt_fa":"فرانسوی‌ها امروز در روزهای هفته چقدر می‌خوابند؟","options":["7 heures 05.","6 heures 40.","6 heures.","7 heures 40."],"correct":1,"explanation_fa":"می‌شنویم: «ils dorment en général 6 heures 40 par nuit»."}
+{"type":"tf","prompt":"Le docteur Moreau pense que les jeunes sont paresseux.","prompt_fa":"دکتر مورو فکر می‌کند جوان‌ها تنبل‌اند.","correct":false,"explanation_fa":"دکتر مورو می‌گوید: «Je ne pense pas que les jeunes soient paresseux»."}
+{"type":"tf","prompt":"Beaucoup de gens lisent leurs messages au lit.","prompt_fa":"خیلی‌ها پیام‌هایشان را در رختخواب می‌خوانند.","correct":true,"explanation_fa":"می‌شنویم: «Beaucoup de gens regardent des séries ou lisent leurs messages au lit»."}
+listening B:
+{"type":"mcq","prompt":"Selon le docteur Moreau, comment les gens se couchent-ils ?","prompt_fa":"به گفتهٔ دکتر مورو، مردم چطور به رختخواب می‌روند؟","options":["Avec leurs problèmes dans la tête.","Avec un livre à la main.","Après un grand dîner.","Trop tôt le soir."],"correct":0,"explanation_fa":"دکتر مورو می‌گوید: «Les gens se couchent avec leurs problèmes dans la tête»."}
+{"type":"mcq","prompt":"Que dit le docteur Moreau sur le café ?","prompt_fa":"دکتر مورو دربارهٔ قهوه چه می‌گوید؟","options":["Il ne faut plus jamais en boire.","Une tasse le soir aide à dormir.","Il vaut mieux ne pas en boire après 16 heures.","Il faut en boire le matin."],"correct":2,"explanation_fa":"می‌شنویم: «Il vaut mieux aussi éviter le café après 16 heures.»"}
+{"type":"tf","prompt":"Dormir trop peu peut causer des accidents sur la route.","prompt_fa":"کم‌خوابی می‌تواند باعث تصادف در جاده شود.","correct":true,"explanation_fa":"می‌شنویم: «cela peut causer … même des accidents sur la route»."}
+{"type":"tf","prompt":"Il y a vingt ans, les nuits des Français étaient plus courtes qu'aujourd'hui.","prompt_fa":"بیست سال پیش شب‌های فرانسوی‌ها کوتاه‌تر از امروز بود.","correct":false,"explanation_fa":"بیست سال پیش «7 heures 05» بود و امروز «6 heures 40»، پس آن موقع بیشتر می‌خوابیدند."}

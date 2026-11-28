@@ -1,0 +1,44 @@
+code: fr-b1-t048
+title: Trop de devoirs le soir
+band: 3
+kind: letter
+key_words: se mettre à, nul
+sentences:
+- Madame Lefèvre, | خانم لوفور،
+- Je suis la mère de Hugo Bernard, qui est dans votre classe depuis septembre. | من مادر هوگو برنار هستم که از سپتامبر در کلاس شماست.
+- Je vous écris parce que je m'inquiète un peu pour lui. | برایتان می‌نویسم چون کمی نگرانش هستم.
+- Depuis que l'école a recommencé, Hugo passe deux heures chaque soir sur ses devoirs. | از وقتی مدرسه دوباره شروع شده، هوگو هر شب دو ساعت مشغول تکالیفش است.
+- Dès qu'il rentre, à 17 heures, il se met au travail, et souvent, il n'a pas fini à 19 heures. | به محض این‌که ساعت ۵ به خانه می‌رسد، دست به کار می‌شود و اغلب تا ساعت ۷ هم تمام نکرده است. | tts: Dès qu'il rentre, à dix-sept heures, il se met au travail, et souvent, il n'a pas fini à dix-neuf heures.
+- Il n'a plus le temps de jouer ni de voir ses amis. | دیگر وقت بازی کردن و دیدن دوستانش را ندارد.
+- Le mercredi, il a même arrêté le football, alors qu'il adorait ça. | حتی فوتبال چهارشنبه‌ها را هم کنار گذاشته، در حالی که عاشقش بود.
+- Le soir, il est fatigué et nerveux, et il dort mal. | شب‌ها خسته و عصبی است و بد می‌خوابد.
+- Hier, il a pleuré devant un exercice de mathématiques, et il m'a dit : « Je suis nul, maman. » | دیروز جلوی یک تمرین ریاضی گریه کرد و به من گفت: «مامان، من خیلی بی‌عرضه‌ام.»
+- Ce n'est pas vrai : il a de bonnes notes, et il aime beaucoup votre classe. | این درست نیست: نمره‌هایش خوب است و کلاس شما را خیلی دوست دارد.
+- Je sais que vous voulez que vos élèves réussissent, et c'est une bonne chose. | می‌دانم که می‌خواهید شاگردانتان موفق شوند و این چیز خوبی است.
+- Mais je ne crois pas qu'un enfant de dix ans doive travailler deux heures après une longue journée d'école. | ولی فکر نمی‌کنم یک بچهٔ ده‌ساله بعد از یک روز طولانی مدرسه باید دو ساعت کار کند.
+- Peut-être que des parents de la classe ont le même problème ? | شاید پدر و مادرهایی در کلاس هم همین مشکل را داشته باشند؟
+- Serait-il possible de donner des devoirs plus courts, ou de les donner le vendredi pour le lundi ? | ممکن است تکلیف‌های کوتاه‌تری بدهید، یا آن‌ها را جمعه برای دوشنبه بدهید؟
+- J'aimerais aussi vous rencontrer, pour que nous trouvions ensemble une solution. | دوست دارم شما را ببینم تا با هم راه‌حلی پیدا کنیم.
+- Je suis libre le mardi et le jeudi après 17 heures 30. | سه‌شنبه‌ها و پنجشنبه‌ها بعد از ساعت پنج و نیم وقتم آزاد است. | tts: Je suis libre le mardi et le jeudi après dix-sept heures trente.
+- Je vous remercie beaucoup pour votre aide. | خیلی از کمکتان ممنونم.
+- Bien à vous, | با احترام،
+- Sophie Bernard | سوفی برنار
+reading A:
+{"type":"mcq","prompt":"Pourquoi Sophie écrit-elle à Madame Lefèvre ?","prompt_fa":"سوفی چرا به خانم لوفور نامه می‌نویسد؟","options":["Parce que Hugo a de mauvaises notes.","Parce que Hugo a trop de devoirs le soir.","Parce que Hugo veut changer de classe.","Parce que Hugo s'est disputé avec un ami."],"correct":1,"explanation_fa":"سوفی می‌نویسد: «Hugo passe deux heures chaque soir sur ses devoirs» و از تکلیف‌های کوتاه‌تر حرف می‌زند."}
+{"type":"tf","prompt":"Hugo a de bonnes notes.","prompt_fa":"نمره‌های هوگو خوب است.","correct":true,"explanation_fa":"سوفی می‌نویسد: «il a de bonnes notes»."}
+{"type":"tf","prompt":"Hugo joue encore au football le mercredi.","prompt_fa":"هوگو هنوز چهارشنبه‌ها فوتبال بازی می‌کند.","correct":false,"explanation_fa":"سوفی می‌نویسد: «Le mercredi, il a même arrêté le football»."}
+{"type":"find","prompt":"Quelle phrase dit ce que Sophie propose pour les devoirs ?","prompt_fa":"کدام جمله می‌گوید سوفی دربارهٔ تکلیف‌ها چه پیشنهادی دارد؟","correct_sentence":13,"explanation_fa":"سوفی می‌نویسد: «Serait-il possible de donner des devoirs plus courts, ou de les donner le vendredi pour le lundi ?»"}
+reading B:
+{"type":"ctx","word":"nul","prompt":"« Je suis nul, maman. » : Hugo pense qu'il…","prompt_fa":"«Je suis nul, maman.»: هوگو فکر می‌کند که…","options":["est très fatigué.","n'est pas bon à l'école.","a trop de travail.","veut jouer avec ses amis."],"correct":1,"explanation_fa":"«nul» یعنی بی‌عرضه و ضعیف؛ هوگو جلوی تمرین ریاضی فکر می‌کند در درس خوب نیست، ولی مادرش می‌گوید «il a de bonnes notes»."}
+{"type":"cloze","prompt":"Complétez la phrase de la lettre.","prompt_fa":"جملهٔ نامه را کامل کنید.","text_with_gaps":"Le mercredi, il a même {{1}} le football, {{2}} qu'il adorait ça.","bank":["arrêté","alors","gagné","pendant","joué"],"answers":["arrêté","alors"],"explanation_fa":"سوفی می‌نویسد: «Le mercredi, il a même arrêté le football, alors qu'il adorait ça.»"}
+{"type":"order","prompt":"Mettez ces moments dans l'ordre.","prompt_fa":"این لحظه‌ها را به ترتیب بچینید.","items":["Hugo pleure devant un exercice.","L'école recommence.","Sophie écrit à Madame Lefèvre.","Sophie rencontre Madame Lefèvre."],"correct_order":[1,0,2,3],"explanation_fa":"اول «l'école a recommencé»، بعد «Hier, il a pleuré»، امروز سوفی نامه می‌نویسد و بعد می‌خواهد خانم لوفور را ببیند: «J'aimerais aussi vous rencontrer»."}
+listening A:
+{"type":"num","prompt":"Combien d'heures Hugo passe-t-il chaque soir sur ses devoirs ?","prompt_fa":"هوگو هر شب چند ساعت مشغول تکالیفش است؟","answer":"2","accepted":["2","deux"],"explanation_fa":"سوفی می‌گوید: «Hugo passe deux heures chaque soir sur ses devoirs»."}
+{"type":"mcq","prompt":"Quand Sophie est-elle libre ?","prompt_fa":"سوفی کی وقت آزاد دارد؟","options":["Le lundi et le mercredi.","Le mardi et le jeudi.","Le vendredi soir.","Le samedi matin."],"correct":1,"explanation_fa":"سوفی می‌گوید: «Je suis libre le mardi et le jeudi après 17 heures 30.»"}
+{"type":"tf","prompt":"Hugo aime beaucoup la classe de Madame Lefèvre.","prompt_fa":"هوگو کلاس خانم لوفور را خیلی دوست دارد.","correct":true,"explanation_fa":"سوفی می‌گوید: «il aime beaucoup votre classe»."}
+{"type":"tf","prompt":"Pour Sophie, un enfant de dix ans peut travailler deux heures le soir.","prompt_fa":"از نظر سوفی، یک بچهٔ ده‌ساله می‌تواند شب‌ها دو ساعت کار کند.","correct":false,"explanation_fa":"سوفی می‌گوید: «je ne crois pas qu'un enfant de dix ans doive travailler deux heures»."}
+listening B:
+{"type":"mcq","prompt":"Comment est Hugo le soir ?","prompt_fa":"هوگو شب‌ها چه حالی دارد؟","options":["Content et calme.","Malade et triste.","Fatigué et nerveux.","En colère contre sa mère."],"correct":2,"explanation_fa":"سوفی می‌گوید: «Le soir, il est fatigué et nerveux»."}
+{"type":"mcq","prompt":"Que veut faire Sophie avec Madame Lefèvre ?","prompt_fa":"سوفی می‌خواهد با خانم لوفور چه کار کند؟","options":["La rencontrer pour trouver une solution.","Lui demander de changer Hugo de classe.","Parler avec elle des notes de Hugo.","Lui donner les devoirs de Hugo."],"correct":0,"explanation_fa":"سوفی می‌گوید: «J'aimerais aussi vous rencontrer, pour que nous trouvions ensemble une solution.»"}
+{"type":"tf","prompt":"Hugo rentre de l'école à 17 heures.","prompt_fa":"هوگو ساعت ۵ بعدازظهر از مدرسه برمی‌گردد.","correct":true,"explanation_fa":"سوفی می‌گوید: «Dès qu'il rentre, à 17 heures»."}
+{"type":"tf","prompt":"Hugo a encore le temps de voir ses amis.","prompt_fa":"هوگو هنوز وقت دیدن دوستانش را دارد.","correct":false,"explanation_fa":"سوفی می‌گوید: «Il n'a plus le temps de jouer ni de voir ses amis.»"}

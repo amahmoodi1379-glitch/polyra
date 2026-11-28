@@ -1,0 +1,48 @@
+code: fr-b1-t059
+title: Je dors mal, docteur
+band: 3
+kind: long_dialogue
+key_words: pression, tenir debout, décevoir, optimiste
+sentences:
+A: Bonjour, Monsieur Lefèvre. Asseyez-vous. Qu'est-ce qui ne va pas ? | سلام آقای لوفور. بفرمایید بنشینید. چه مشکلی دارید؟
+B: Bonjour, docteur. Je suis tout le temps fatigué{fatigué}, et je dors très mal depuis deux mois. | سلام دکتر. همیشه خسته‌ام و دو ماه است که خیلی بد می‌خوابم.
+A: Vous avez du mal à vous endormir, ou vous vous réveillez la nuit ? | سخت خوابتان می‌برد یا شب‌ها بیدار می‌شوید؟
+B: Je m'endors facilement, mais je me réveille vers 3 heures du matin, et après, je n'arrive plus à dormir. | راحت خوابم می‌برد، ولی حدود ساعت سه صبح بیدار می‌شوم و بعد دیگر خوابم نمی‌برد. | tts: Je m'endors facilement, mais je me réveille vers trois heures du matin, et après, je n'arrive plus à dormir.
+B: Je pense au travail, aux e-mails, aux réunions du lendemain… | به کار فکر می‌کنم، به ایمیل‌ها، به جلسه‌های فردا…
+A: Et votre travail, ça se passe comment ? | کارتان چطور پیش می‌رود؟
+B: Pas très bien. Depuis que deux collègues sont partis, je fais aussi leur travail, et il y a beaucoup de pression. | خیلی خوب نه. از وقتی دو تا از همکارانم رفته‌اند، کار آن‌ها را هم انجام می‌دهم و فشار زیادی هست.
+B: Je rentre à 20 heures, et mon chef m'envoie encore des messages pendant le dîner. | ساعت هشت شب به خانه می‌رسم و رئیسم هنوز وقت شام برایم پیام می‌فرستد. | tts: Je rentre à vingt heures, et mon chef m'envoie encore des messages pendant le dîner.
+A: Et vous lui répondez ? | و شما جوابش را می‌دهید؟
+B: Oui, toujours. J'ai peur qu'il soit déçu. | بله، همیشه. می‌ترسم ناامید شود.
+A: Je vois. Vous buvez beaucoup de café ? | متوجهم. زیاد قهوه می‌خورید؟
+B: Cinq ou six tasses par jour. Sans café, je ne tiens pas debout ! | روزی پنج شش فنجان. بدون قهوه سرپا نمی‌مانم!
+A: Je ne pense pas que vous ayez besoin de médicaments pour le moment. Je vous propose d'abord de changer quelques habitudes. | فکر نمی‌کنم فعلاً به دارو احتیاج داشته باشید. پیشنهاد می‌کنم اول چند عادت را عوض کنید.
+A: Plus de café après midi, et pas d'écran une heure avant de vous coucher. | از ظهر به بعد دیگر قهوه نه، و یک ساعت قبل از خواب هم صفحه‌نمایش نه.
+A: Et marchez trente minutes par jour. En marchant, on oublie un peu ses problèmes. | و روزی سی دقیقه پیاده‌روی کنید. وقتی آدم راه می‌رود، مشکلاتش را کمی فراموش می‌کند.
+B: Marcher ? Mais je n'ai pas le temps ! | پیاده‌روی؟ ولی وقت ندارم!
+A: Descendez du bus deux arrêts plus tôt, par exemple. Vous marcherez en allant au travail. | مثلاً دو ایستگاه زودتر از اتوبوس پیاده شوید. در راه رفتن به سر کار پیاده‌روی می‌کنید.
+A: Mais le plus important, c'est votre chef : vous devriez lui dire que vous ne répondrez plus aux messages après 19 heures. | ولی از همه مهم‌تر رئیستان است: باید به او بگویید که بعد از ساعت هفت شب دیگر جواب پیام‌ها را نمی‌دهید. | tts: Mais le plus important, c'est votre chef : vous devriez lui dire que vous ne répondrez plus aux messages après dix-neuf heures.
+B: Ce ne sera pas facile… Il est très impatient. | آسان نیست… خیلی بی‌حوصله است.
+A: Je comprends. Mais si vous continuez comme ça, vous tomberez malade, et il perdra un collègue de plus. | می‌فهمم. ولی اگر همین‌طور ادامه بدهید، بیمار می‌شوید و او یک همکار دیگر را هم از دست می‌دهد.
+B: Vu comme ça… Vous avez raison. | از این زاویه… حق با شماست.
+A: Parlez-lui cette semaine, puis revenez me voir dans trois semaines. Et soyez optimiste ! | این هفته با او حرف بزنید، بعد سه هفتهٔ دیگر دوباره پیش من بیایید. و خوش‌بین باشید!
+B: D'accord. Je commence ce soir : pas de café après le déjeuner ! | باشد. از امشب شروع می‌کنم: بعد از ناهار قهوه نه!
+reading A:
+{"type":"mcq","prompt":"Pourquoi Monsieur Lefèvre va-t-il chez le médecin ?","prompt_fa":"آقای لوفور چرا پیش دکتر می‌رود؟","options":["Parce qu'il a mal au dos.","Parce qu'il dort mal et qu'il est fatigué.","Parce qu'il a besoin d'un papier pour son chef.","Parce qu'il a trop mangé."],"correct":1,"explanation_fa":"او می‌گوید: «Je suis tout le temps fatigué, et je dors très mal depuis deux mois.»"}
+{"type":"tf","prompt":"Monsieur Lefèvre se réveille au milieu de la nuit.","prompt_fa":"آقای لوفور نیمه‌شب بیدار می‌شود.","correct":true,"explanation_fa":"او می‌گوید: «je me réveille vers 3 heures du matin»."}
+{"type":"tf","prompt":"Le médecin lui donne tout de suite des médicaments.","prompt_fa":"دکتر فوراً به او دارو می‌دهد.","correct":false,"explanation_fa":"دکتر می‌گوید: «Je ne pense pas que vous ayez besoin de médicaments pour le moment.»"}
+{"type":"find","prompt":"Quelle phrase explique pourquoi Monsieur Lefèvre a plus de travail ?","prompt_fa":"کدام جمله توضیح می‌دهد چرا کار آقای لوفور بیشتر شده است؟","correct_sentence":6,"explanation_fa":"او می‌گوید: «Depuis que deux collègues sont partis, je fais aussi leur travail»."}
+reading B:
+{"type":"ctx","word":"je ne tiens pas debout","prompt":"« Sans café, je ne tiens pas debout ! » : Monsieur Lefèvre veut dire que, sans café…","prompt_fa":"«Sans café, je ne tiens pas debout !»: منظور آقای لوفور این است که بدون قهوه…","options":["il ne peut pas s'asseoir.","il a mal aux jambes.","il est trop fatigué pour faire quelque chose.","il n'aime pas le matin."],"correct":2,"explanation_fa":"«ne pas tenir debout» یعنی آن‌قدر خسته بودن که نتوانی سرپا بمانی؛ او «tout le temps fatigué» است."}
+{"type":"match","prompt":"Quels sont les conseils du médecin ?","prompt_fa":"توصیه‌های دکتر چیست؟","left":["le café","les écrans","la marche","le chef"],"right":["pas après midi","trente minutes par jour","pas une heure avant de se coucher","pas de messages après 19 heures","deux fois par semaine"],"pairs":[[0,0],[1,2],[2,1],[3,3]],"explanation_fa":"دکتر می‌گوید «Plus de café après midi»، «pas d'écran une heure avant de vous coucher»، «marchez trente minutes par jour» و «vous ne répondrez plus aux messages après 19 heures»."}
+{"type":"cloze","prompt":"Complétez le conseil du médecin.","prompt_fa":"توصیهٔ دکتر را کامل کنید.","text_with_gaps":"Et marchez trente minutes par jour. En {{1}}, on {{2}} un peu ses problèmes.","bank":["marchant","oublie","dormant","mange","mangeant"],"answers":["marchant","oublie"],"explanation_fa":"دکتر می‌گوید: «En marchant, on oublie un peu ses problèmes.»"}
+listening A:
+{"type":"num","prompt":"Vers quelle heure Monsieur Lefèvre se réveille-t-il la nuit ?","prompt_fa":"آقای لوفور شب‌ها حدود ساعت چند بیدار می‌شود؟","answer":"3","accepted":["3","trois","3 heures","trois heures"],"explanation_fa":"او می‌گوید: «je me réveille vers 3 heures du matin»."}
+{"type":"mcq","prompt":"Dans combien de temps doit-il revenir voir le médecin ?","prompt_fa":"چه مدت بعد باید دوباره پیش دکتر برود؟","options":["Dans deux mois.","Dans une semaine.","Dans trois semaines.","Dans trois jours."],"correct":2,"explanation_fa":"دکتر می‌گوید: «revenez me voir dans trois semaines»."}
+{"type":"tf","prompt":"Le chef de Monsieur Lefèvre lui envoie des messages le soir.","prompt_fa":"رئیس آقای لوفور شب‌ها برایش پیام می‌فرستد.","correct":true,"explanation_fa":"او می‌گوید: «mon chef m'envoie encore des messages pendant le dîner»."}
+{"type":"tf","prompt":"Monsieur Lefèvre a beaucoup de temps pour marcher.","prompt_fa":"آقای لوفور برای پیاده‌روی وقت زیادی دارد.","correct":false,"explanation_fa":"او می‌گوید: «Mais je n'ai pas le temps !»"}
+listening B:
+{"type":"mcq","prompt":"Comment Monsieur Lefèvre peut-il marcher sans perdre de temps ?","prompt_fa":"آقای لوفور چطور می‌تواند بدون هدر دادن وقت پیاده‌روی کند؟","options":["En descendant du bus deux arrêts plus tôt.","En marchant pendant le déjeuner.","En se levant à 5 heures.","En allant au travail à vélo."],"correct":0,"explanation_fa":"دکتر می‌گوید: «Descendez du bus deux arrêts plus tôt»."}
+{"type":"mcq","prompt":"De quoi Monsieur Lefèvre a-t-il peur ?","prompt_fa":"آقای لوفور از چه می‌ترسد؟","options":["De tomber dans la rue.","De perdre son téléphone.","De ne pas trouver de travail.","Que son chef soit déçu."],"correct":3,"explanation_fa":"او می‌گوید: «J'ai peur qu'il soit déçu»."}
+{"type":"tf","prompt":"À la fin, Monsieur Lefèvre accepte les conseils du médecin.","prompt_fa":"آخرش آقای لوفور توصیه‌های دکتر را می‌پذیرد.","correct":true,"explanation_fa":"او می‌گوید: «Vous avez raison» و «Je commence ce soir»."}
+{"type":"tf","prompt":"Le médecin pense que le café de l'après-midi n'est pas un problème.","prompt_fa":"دکتر فکر می‌کند قهوهٔ بعدازظهر مشکلی نیست.","correct":false,"explanation_fa":"دکتر می‌گوید: «Plus de café après midi»."}

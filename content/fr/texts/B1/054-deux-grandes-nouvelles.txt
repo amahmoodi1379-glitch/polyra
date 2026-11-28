@@ -1,0 +1,44 @@
+code: fr-b1-t054
+title: Deux grandes nouvelles
+band: 3
+kind: letter
+key_words: enceinte, annoncer, obtenir, émotion
+sentences:
+- Chère tante Anne, | خاله آن عزیز،
+- J'espère que tu vas bien et que ton genou est moins douloureux depuis l'opération. | امیدوارم حالت خوب باشد و زانویت از بعد از عمل کمتر درد کند.
+- J'ai deux grandes nouvelles à t'annoncer, et je voulais que tu sois une des premières à les connaître. | دو خبر بزرگ دارم که باید به تو بدهم و می‌خواستم تو جزو اولین کسانی باشی که می‌شنوی.
+- La première : je suis enceinte ! Le bébé doit naître à la fin du mois de mai. | اولی: باردارم! بچه قرار است آخر ماه مه به دنیا بیاید.
+- Nous ne savons pas encore si c'est une fille ou un garçon, et nous préférons attendre la naissance pour le découvrir. | هنوز نمی‌دانیم دختر است یا پسر، و ترجیح می‌دهیم صبر کنیم تا موقع تولد بفهمیم.
+- Quand je l'ai dit à Thomas, il a pleuré d'émotion, puis il a tout de suite appelé sa mère ! | وقتی به توما گفتم، از خوشحالی گریه کرد و بعد بلافاصله به مادرش زنگ زد!
+- Il est déjà en train de peindre la petite chambre en jaune, une couleur qui convient aux deux. | از همین حالا مشغول رنگ کردن اتاق کوچک به رنگ زرد است، رنگی که به هر دو می‌خورد.
+- La deuxième nouvelle est moins simple : nous allons quitter Lyon. | خبر دوم به این سادگی نیست: قرار است از لیون برویم.
+- Thomas a obtenu un travail dans un hôpital de Dijon, et il commence le premier mars. | توما در یک بیمارستان در دیژون کار گرفته و اول مارس شروع می‌کند.
+- Au début, je n'avais pas envie de partir, parce que toute ma vie est ici : mes amis, mon travail et toi. | اولش دلم نمی‌خواست بروم، چون همهٔ زندگی‌ام اینجاست: دوستانم، کارم و تو.
+- Mais à Dijon, nous pourrons louer une maison avec un jardin pour le prix de notre petit appartement. | ولی در دیژون می‌توانیم با پول اجارهٔ همین آپارتمان کوچکمان یک خانهٔ حیاط‌دار اجاره کنیم.
+- Et je pourrai travailler de chez moi trois jours par semaine. | من هم می‌توانم سه روز در هفته از خانه کار کنم.
+- Je suis triste que nous soyons loin l'une de l'autre, mais Dijon n'est qu'à deux heures de train. | ناراحتم که از هم دور می‌شویم، ولی دیژون فقط دو ساعت با قطار راه است.
+- J'ai aussi une question à te poser : est-ce que tu as encore le petit lit en bois où maman dormait quand elle était bébé ? | یک سؤال هم از تو دارم: هنوز آن تخت چوبی کوچکی را که مامان بچگی‌اش در آن می‌خوابید داری؟
+- J'aimerais beaucoup que notre bébé dorme dedans, lui aussi. | خیلی دوست دارم بچهٔ ما هم در آن بخوابد.
+- Avant que le bébé arrive, viens passer quelques jours chez nous à Dijon ! | پیش از آن‌که بچه به دنیا بیاید، بیا چند روزی پیش ما در دیژون بمان!
+- Il y aura une chambre pour toi, et Thomas promet de faire sa célèbre tarte aux pommes. | یک اتاق برای تو هست و توما قول می‌دهد کیک سیب معروفش را درست کند.
+- Je t'embrasse très fort, | محکم می‌بوسمت،
+- Camille | کامی
+reading A:
+{"type":"mcq","prompt":"Pourquoi Camille écrit-elle à sa tante ?","prompt_fa":"کامی چرا به خاله‌اش نامه می‌نویسد؟","options":["Pour lui demander de l'argent.","Pour lui annoncer un bébé et un départ.","Pour l'inviter à son mariage.","Pour lui parler de son nouveau travail à l'hôpital."],"correct":1,"explanation_fa":"کامی می‌نویسد: «je suis enceinte !» و «nous allons quitter Lyon»."}
+{"type":"tf","prompt":"Camille sait déjà si le bébé est une fille ou un garçon.","prompt_fa":"کامی از حالا می‌داند بچه دختر است یا پسر.","correct":false,"explanation_fa":"کامی می‌نویسد: «Nous ne savons pas encore si c'est une fille ou un garçon»."}
+{"type":"tf","prompt":"À Dijon, la famille aura une maison avec un jardin.","prompt_fa":"خانواده در دیژون خانهٔ حیاط‌دار خواهد داشت.","correct":true,"explanation_fa":"کامی می‌نویسد: «nous pourrons louer une maison avec un jardin»."}
+{"type":"find","prompt":"Quelle phrase explique pourquoi la famille va quitter Lyon ?","prompt_fa":"کدام جمله توضیح می‌دهد خانواده چرا از لیون می‌رود؟","correct_sentence":8,"explanation_fa":"کامی می‌نویسد: «Thomas a obtenu un travail dans un hôpital de Dijon»."}
+reading B:
+{"type":"ctx","word":"convient","prompt":"« une couleur qui convient aux deux » : le jaune est une couleur…","prompt_fa":"«une couleur qui convient aux deux»: زرد رنگی است که…","options":["que Camille n'aime pas.","qui va bien pour une fille et pour un garçon.","que Thomas a choisie pour lui.","qui coûte moins cher."],"correct":1,"explanation_fa":"چون نمی‌دانند بچه دختر است یا پسر، رنگی انتخاب کرده‌اند که برای هر دو مناسب باشد."}
+{"type":"order","prompt":"Mettez ces moments dans l'ordre.","prompt_fa":"این لحظه‌ها را به ترتیب بچینید.","items":["Le bébé naît.","Thomas commence à l'hôpital de Dijon.","Camille écrit cette lettre.","Camille dit la nouvelle à Thomas."],"correct_order":[3,2,1,0],"explanation_fa":"اول کامی خبر را به توما گفت، بعد این نامه را می‌نویسد، توما «le premier mars» شروع می‌کند و بچه «à la fin du mois de mai» به دنیا می‌آید."}
+{"type":"cloze","prompt":"Complétez la phrase de Camille.","prompt_fa":"جملهٔ کامی را کامل کنید.","text_with_gaps":"Je suis {{1}} que nous soyons loin l'une de l'autre, mais Dijon n'est qu'à deux heures de {{2}}.","bank":["triste","train","prête","maison","jardin"],"answers":["triste","train"],"explanation_fa":"کامی می‌نویسد: «Je suis triste que nous soyons loin l'une de l'autre, mais Dijon n'est qu'à deux heures de train.»"}
+listening A:
+{"type":"num","prompt":"Combien de jours par semaine Camille pourra-t-elle travailler de chez elle ?","prompt_fa":"کامی در هفته چند روز می‌تواند از خانه کار کند؟","answer":"3","accepted":["3","trois"],"explanation_fa":"کامی می‌گوید: «je pourrai travailler de chez moi trois jours par semaine»."}
+{"type":"mcq","prompt":"Quand le bébé doit-il naître ?","prompt_fa":"بچه قرار است کی به دنیا بیاید؟","options":["Au début du mois de mars.","À la fin du mois de mai.","En juin.","À la fin de l'année."],"correct":1,"explanation_fa":"کامی می‌گوید: «Le bébé doit naître à la fin du mois de mai.»"}
+{"type":"tf","prompt":"Thomas a pleuré quand il a appris la nouvelle.","prompt_fa":"توما وقتی خبر را شنید گریه کرد.","correct":true,"explanation_fa":"کامی می‌گوید: «il a pleuré d'émotion»."}
+{"type":"tf","prompt":"Au début, Camille avait très envie de partir de Lyon.","prompt_fa":"کامی اولش خیلی دلش می‌خواست از لیون برود.","correct":false,"explanation_fa":"کامی می‌گوید: «Au début, je n'avais pas envie de partir»."}
+listening B:
+{"type":"mcq","prompt":"Que demande Camille à sa tante ?","prompt_fa":"کامی از خاله‌اش چه می‌خواهد؟","options":["Si elle peut garder le bébé.","Si elle a une maison à Dijon.","Si elle a encore le petit lit en bois de sa mère.","Si elle peut faire une tarte aux pommes."],"correct":2,"explanation_fa":"کامی می‌پرسد: «est-ce que tu as encore le petit lit en bois où maman dormait quand elle était bébé ?»"}
+{"type":"mcq","prompt":"Combien de temps faut-il en train pour aller de Lyon à Dijon ?","prompt_fa":"از لیون تا دیژون با قطار چقدر راه است؟","options":["Deux heures.","Une heure.","Trois heures.","Quatre heures."],"correct":0,"explanation_fa":"کامی می‌گوید: «Dijon n'est qu'à deux heures de train»."}
+{"type":"tf","prompt":"Camille invite sa tante à venir à Dijon.","prompt_fa":"کامی خاله‌اش را به دیژون دعوت می‌کند.","correct":true,"explanation_fa":"کامی می‌گوید: «viens passer quelques jours chez nous à Dijon !»"}
+{"type":"tf","prompt":"Thomas va peindre la chambre en bleu.","prompt_fa":"توما اتاق را آبی رنگ می‌کند.","correct":false,"explanation_fa":"کامی می‌گوید: «Il est déjà en train de peindre la petite chambre en jaune»."}

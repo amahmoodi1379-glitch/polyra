@@ -1,0 +1,49 @@
+code: fr-b1-t050
+title: Le dernier panier
+band: 3
+kind: long_dialogue
+key_words: être sur le point de, rater, nul, défense
+sentences:
+A: Lucas, attends ! Tu ne viens pas manger avec l'équipe ? | لوکا، صبر کن! با تیم برای غذا نمی‌آیی؟
+B: Non, je n'ai pas faim. Je préfère rentrer chez moi. | نه، گرسنه نیستم. ترجیح می‌دهم بروم خانه.
+A: Assieds-toi deux minutes avec moi. C'est à cause de la fin du match ? | دو دقیقه پیش من بنشین. به خاطر آخر بازی است؟
+B: Évidemment. Il restait trois secondes, on avait un point de retard, et j'avais le ballon. | معلوم است. سه ثانیه مانده بود، یک امتیاز عقب بودیم و توپ دست من بود.
+B: Il me fallait un seul panier pour qu'on gagne, et je l'ai raté. | فقط یک سبد لازم داشتم تا ببریم، و آن را از دست دادم.
+B: On était sur le point de gagner, et à cause de moi, tout est fini. | داشتیم می‌بردیم، و به خاطر من همه‌چیز تمام شد.
+A: Je sais, j'étais juste à côté du terrain. | می‌دانم، درست کنار زمین بودم.
+B: Tout le monde me regardait. Je suis nul, voilà la vérité. | همه نگاهم می‌کردند. من به درد نمی‌خورم، حقیقت همین است.
+A: Je ne pense pas que tu sois nul. Tu viens de jouer le meilleur match de ta saison ! | فکر نمی‌کنم به درد نخور باشی. همین الان بهترین بازی فصلت را کردی!
+A: En défense, tu as été excellent, et tu as pris le ballon à leur meilleur joueur au moins cinq fois. | در دفاع عالی بودی و دست‌کم پنج بار توپ را از بهترین بازیکنشان گرفتی.
+B: Peut-être, mais les gens ne se souviendront que de la fin. | شاید، ولی مردم فقط آخرش را یادشان می‌ماند.
+A: Les gens, peut-être. Pas moi, et pas l'équipe. | مردم شاید. ولی من نه، تیم هم نه.
+A: Tu sais, à ton âge, j'ai vécu exactement la même chose. | می‌دانی، من هم هم‌سن تو که بودم، دقیقاً همین را تجربه کردم.
+B: Toi ? Tu plaisantes ! | تو؟ شوخی می‌کنی!
+A: Pas du tout. J'avais seize ans, c'était un match très important, et j'ai raté le dernier panier, moi aussi. | اصلاً. شانزده سالم بود، بازی خیلی مهمی بود و من هم سبد آخر را از دست دادم.
+A: J'ai pleuré toute la nuit, et j'ai voulu arrêter le sport. | تمام شب گریه کردم و خواستم ورزش را کنار بگذارم.
+B: Et pourquoi tu n'as pas arrêté ? | پس چرا کنار نگذاشتی؟
+A: Mon père m'a dit : « Tu rates parce que tu essaies. Ceux qui n'essaient pas ne ratent jamais. » | پدرم به من گفت: «چون تلاش می‌کنی، اشتباه می‌کنی. آن‌هایی که تلاش نمی‌کنند هیچ‌وقت اشتباه نمی‌کنند.»
+B: C'est joli, mais ça ne change pas le résultat. | قشنگ است، ولی نتیجه را عوض نمی‌کند.
+A: Non. Mais samedi prochain, il y a un autre match. Si on a encore besoin d'un panier à la fin, je te donnerai de nouveau le ballon. | نه. ولی شنبهٔ آینده یک بازی دیگر هست. اگر آخر بازی باز هم به یک سبد احتیاج داشتیم، دوباره توپ را به تو می‌دهم.
+B: Vraiment ? Même après ce soir ? | واقعاً؟ حتی بعد از امشب؟
+A: Surtout après ce soir. Mardi, viens une heure plus tôt, et on travaillera ensemble, toi et moi. | مخصوصاً بعد از امشب. سه‌شنبه یک ساعت زودتر بیا تا با هم کار کنیم، من و تو.
+B: D'accord. Merci, Nadia. Finalement, je viens manger avec vous. | باشد. ممنون نادیا. آخرش با شماها برای غذا می‌آیم.
+A: Bonne idée. Et ce soir, on ne parle plus du match ! | فکر خوبی است. امشب هم دیگر از بازی حرف نمی‌زنیم!
+reading A:
+{"type":"mcq","prompt":"Pourquoi Lucas ne veut-il pas manger avec l'équipe ?","prompt_fa":"لوکا چرا نمی‌خواهد با تیم غذا بخورد؟","options":["Parce qu'il est malade.","Parce qu'il a raté le dernier panier.","Parce qu'il doit travailler.","Parce qu'il est en colère contre Nadia."],"correct":1,"explanation_fa":"لوکا می‌گوید: «Il me fallait un seul panier pour qu'on gagne, et je l'ai raté.»"}
+{"type":"tf","prompt":"L'équipe de Lucas a perdu le match d'un point.","prompt_fa":"تیم لوکا بازی را با یک امتیاز اختلاف باخت.","correct":true,"explanation_fa":"لوکا می‌گوید: «on avait un point de retard» و سبد آخر را از دست داد."}
+{"type":"tf","prompt":"Pour Nadia, Lucas a mal joué pendant tout le match.","prompt_fa":"از نظر نادیا، لوکا در تمام بازی بد بازی کرد.","correct":false,"explanation_fa":"نادیا می‌گوید: «Tu viens de jouer le meilleur match de ta saison !»"}
+{"type":"find","prompt":"Quelle phrase dit ce que Nadia a vécu à seize ans ?","prompt_fa":"کدام جمله می‌گوید نادیا در شانزده‌سالگی چه تجربه‌ای داشت؟","correct_sentence":14,"explanation_fa":"نادیا می‌گوید: «J'avais seize ans, c'était un match très important, et j'ai raté le dernier panier, moi aussi.»"}
+reading B:
+{"type":"ctx","word":"sur le point de","prompt":"« On était sur le point de gagner » : l'équipe…","prompt_fa":"«On était sur le point de gagner»: تیم…","options":["avait déjà gagné.","allait presque gagner.","ne pouvait pas gagner.","gagnait tous ses matchs."],"correct":1,"explanation_fa":"«être sur le point de» یعنی چیزی نمانده بود که اتفاقی بیفتد؛ سه ثانیه مانده بود و تیم نزدیک بردن بود."}
+{"type":"order","prompt":"Mettez ces moments dans l'ordre.","prompt_fa":"این لحظه‌ها را به ترتیب بچینید.","items":["Lucas rate le dernier panier.","Nadia rate un panier important.","Lucas décide de manger avec l'équipe.","Nadia parle avec Lucas de la fin du match."],"correct_order":[1,0,3,2],"explanation_fa":"اول نادیا در شانزده‌سالگی سبد آخر را از دست داد، بعد لوکا امشب، بعد گفتگوی آن دو، و آخر «je viens manger avec vous»."}
+{"type":"match","prompt":"Qui a fait quoi ?","prompt_fa":"چه کسی چه کار کرد؟","left":["Lucas","Nadia","le père de Nadia"],"right":["a dit une phrase importante à sa fille.","a pris le ballon cinq fois au meilleur joueur.","a gagné le match ce soir.","a voulu arrêter le sport à seize ans."],"pairs":[[0,1],[1,3],[2,0]],"explanation_fa":"نادیا به لوکا می‌گوید «tu as pris le ballon à leur meilleur joueur au moins cinq fois»، خودش «j'ai voulu arrêter le sport» و پدرش جملهٔ «Tu rates parce que tu essaies» را گفت."}
+listening A:
+{"type":"num","prompt":"Combien de secondes restait-il quand Lucas avait le ballon ?","prompt_fa":"وقتی توپ دست لوکا بود، چند ثانیه مانده بود؟","answer":"3","accepted":["3","trois"],"explanation_fa":"لوکا می‌گوید: «Il restait trois secondes»."}
+{"type":"mcq","prompt":"Quand est le prochain match ?","prompt_fa":"بازی بعدی کی است؟","options":["Mardi.","Samedi prochain.","Demain soir.","Dans un mois."],"correct":1,"explanation_fa":"نادیا می‌گوید: «samedi prochain, il y a un autre match»."}
+{"type":"tf","prompt":"Lucas pense que les gens vont se souvenir seulement de la fin.","prompt_fa":"لوکا فکر می‌کند مردم فقط آخر بازی را به یاد می‌آورند.","correct":true,"explanation_fa":"لوکا می‌گوید: «les gens ne se souviendront que de la fin»."}
+{"type":"tf","prompt":"Nadia ne donnera plus le ballon à Lucas à la fin d'un match.","prompt_fa":"نادیا دیگر آخر بازی توپ را به لوکا نمی‌دهد.","correct":false,"explanation_fa":"نادیا می‌گوید: «je te donnerai de nouveau le ballon»."}
+listening B:
+{"type":"mcq","prompt":"Que doit faire Lucas mardi ?","prompt_fa":"لوکا سه‌شنبه چه کار باید بکند؟","options":["Rester à la maison.","Parler avec le père de Nadia.","Venir une heure plus tôt.","Jouer un match important."],"correct":2,"explanation_fa":"نادیا می‌گوید: «Mardi, viens une heure plus tôt»."}
+{"type":"mcq","prompt":"Que pensait le père de Nadia ?","prompt_fa":"پدر نادیا چه فکری داشت؟","options":["Il faut arrêter quand on rate.","Le sport n'est pas important.","Il faut toujours gagner.","On rate parce qu'on essaie."],"correct":3,"explanation_fa":"پدر نادیا گفت: «Tu rates parce que tu essaies.»"}
+{"type":"tf","prompt":"À la fin, Lucas va manger avec l'équipe.","prompt_fa":"آخرش لوکا با تیم غذا می‌خورد.","correct":true,"explanation_fa":"لوکا می‌گوید: «Finalement, je viens manger avec vous.»"}
+{"type":"tf","prompt":"Pendant le match, Nadia était loin du terrain.","prompt_fa":"نادیا در طول بازی دور از زمین بود.","correct":false,"explanation_fa":"نادیا می‌گوید: «j'étais juste à côté du terrain»."}

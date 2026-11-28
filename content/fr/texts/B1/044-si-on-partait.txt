@@ -1,0 +1,47 @@
+code: fr-b1-t044
+title: Et si on partait ?
+band: 3
+kind: long_dialogue
+key_words: tandis que, au lieu de, mettre de côté, imagination
+sentences:
+A: Regarde-moi ce ciel gris… Ça fait trois semaines qu'il pleut ! | این آسمان خاکستری را ببین… سه هفته است که باران می‌آید!
+B: Je sais, Sarah. Si j'avais deux semaines de vacances, je partirais demain matin. | می‌دانم سارا. اگر دو هفته مرخصی داشتم، فردا صبح راه می‌افتادم.
+A: Ah oui, Marc ? Et tu irais où ? | جدی مارک؟ کجا می‌رفتی؟
+B: À la montagne, sans hésiter, près de Chamonix. | بی‌معطلی کوهستان، نزدیک شامونی.
+B: Je marcherais toute la journée et je dormirais dans une petite maison en bois, loin de tout. | تمام روز پیاده‌روی می‌کردم و در یک خانهٔ چوبی کوچک، دور از همه‌چیز، می‌خوابیدم.
+A: Toute la journée ? Tu plaisantes ! Moi, je passerais mes journées sur une plage à Biarritz, avec un bon livre. | تمام روز؟ شوخی می‌کنی! من روزهایم را با یک کتاب خوب روی یک ساحل در بیاریتز می‌گذراندم.
+B: Au lieu de lire sur le sable, tu pourrais découvrir des paysages magnifiques ! | به جای کتاب خواندن روی شن، می‌توانستی منظره‌های فوق‌العاده‌ای را کشف کنی!
+A: Mais j'ai besoin de chaleur, pas de neige ! Tu sais bien que j'ai toujours froid. | ولی من گرما لازم دارم، نه برف! خودت خوب می‌دانی که همیشه سردم است.
+B: En été, il ne neige pas ! Il fait chaud dans la journée, tandis que les nuits restent fraîches. | تابستان که برف نمی‌آید! روزها گرم است، در حالی که شب‌ها خنک می‌ماند.
+B: Et puis, la montagne est calme, alors qu'en août, les plages sont pleines de touristes. | تازه، کوهستان آرام است، در حالی که در اوت ساحل‌ها پر از توریست است.
+A: C'est vrai… L'année dernière, à Nice, je ne trouvais même pas un coin pour ma serviette ! | راست می‌گویی… پارسال در نیس حتی یک گوشه برای حوله‌ام پیدا نمی‌کردم!
+B: Et le soir, on regarderait les étoiles, sans bruit et sans voitures. | شب‌ها هم ستاره‌ها را تماشا می‌کردیم، بی‌سروصدا و بی‌ماشین.
+A: « On » ? Tu veux dire que tu m'emmènerais avec toi ? | «ما»؟ یعنی مرا هم با خودت می‌بردی؟
+B: Pourquoi pas ? Mais tu devrais marcher six heures par jour. | چرا که نه؟ ولی باید روزی شش ساعت پیاده‌روی می‌کردی.
+A: Six heures ! Je n'ai pas assez d'énergie pour ça. | شش ساعت! این‌قدر انرژی ندارم.
+A: Attends… Et si on allait en Corse ensemble ? Là-bas, il y a la mer et la montagne. | صبر کن… اگر با هم برویم کرس چطور است؟ آنجا هم دریا هست، هم کوه.
+B: Bonne idée ! Je marcherais le matin, et je te rejoindrais à la plage l'après-midi. | فکر خوبی است! صبح پیاده‌روی می‌کردم و بعدازظهر در ساحل پیشت می‌آمدم.
+A: Parfait ! Moi, je t'attendrais sur le sable avec une glace. | عالی! من هم با یک بستنی روی شن منتظرت می‌ماندم.
+B: Toi et ton imagination… Mais pour ça, il faudrait de l'argent. | تو و این خیال‌پردازی‌ات… ولی برای این کار پول لازم است.
+A: Si on mettait 50 euros de côté chaque mois, on aurait assez en juillet. | اگر هر ماه ۵۰ یورو کنار بگذاریم، تا ژوئیه به اندازهٔ کافی پول داریم. | tts: Si on mettait cinquante euros de côté chaque mois, on aurait assez en juillet.
+B: D'accord ! Ce soir, je regarde le prix des bateaux pour la Corse. | قبول! امشب قیمت کشتی‌ها به کرس را نگاه می‌کنم.
+A: Et moi, je cherche une petite maison près de la mer… et près de la montagne ! | من هم دنبال یک خانهٔ کوچک نزدیک دریا می‌گردم… و نزدیک کوه!
+reading A:
+{"type":"mcq","prompt":"De quoi Sarah et Marc parlent-ils ?","prompt_fa":"سارا و مارک دربارهٔ چه حرف می‌زنند؟","options":["D'un voyage qu'ils aimeraient faire.","D'un voyage qu'ils ont fait l'année dernière.","D'un travail qu'ils doivent finir.","D'une maison qu'ils veulent acheter."],"correct":0,"explanation_fa":"مارک می‌گوید: «Si j'avais deux semaines de vacances, je partirais demain matin» و آخرش تصمیم می‌گیرند به کرس بروند."}
+{"type":"tf","prompt":"Marc préfère la montagne.","prompt_fa":"مارک کوهستان را ترجیح می‌دهد.","correct":true,"explanation_fa":"مارک می‌گوید: «À la montagne, sans hésiter.»"}
+{"type":"tf","prompt":"Sarah aime marcher pendant des heures.","prompt_fa":"سارا دوست دارد ساعت‌ها پیاده‌روی کند.","correct":false,"explanation_fa":"سارا می‌گوید: «Six heures ! Je n'ai pas assez d'énergie pour ça.»"}
+{"type":"find","prompt":"Quelle phrase donne une idée bonne pour les deux amis ?","prompt_fa":"کدام جمله فکری را می‌گوید که برای هر دو دوست خوب است؟","correct_sentence":15,"explanation_fa":"سارا می‌گوید: «Et si on allait en Corse ensemble ? Là-bas, il y a la mer et la montagne.»"}
+reading B:
+{"type":"ctx","word":"de côté","prompt":"« Si on mettait 50 euros de côté chaque mois » : qu'est-ce que Sarah propose ?","prompt_fa":"«Si on mettait 50 euros de côté chaque mois»: سارا چه پیشنهادی می‌دهد؟","options":["De dépenser 50 euros par mois.","De garder 50 euros chaque mois pour le voyage.","De prêter 50 euros à Marc.","De payer le bateau en juillet."],"correct":1,"explanation_fa":"«mettre de côté» یعنی پس‌انداز کردن؛ سارا می‌خواهد هر ماه پول نگه دارند تا «on aurait assez en juillet»."}
+{"type":"order","prompt":"Mettez la conversation dans l'ordre.","prompt_fa":"گفتگو را به ترتیب بچینید.","items":["Sarah propose d'aller en Corse.","Marc dit qu'il partirait à la montagne.","Marc va regarder le prix des bateaux.","Sarah parle de ses vacances à Nice."],"correct_order":[1,3,0,2],"explanation_fa":"اول مارک «À la montagne» را می‌گوید، بعد سارا از نیس می‌گوید، بعد «Et si on allait en Corse» و آخر «je regarde le prix des bateaux»."}
+{"type":"match","prompt":"Qui ferait quoi ?","prompt_fa":"چه کسی چه کار می‌کرد؟","left":["À la montagne, Marc…","À la plage, Sarah…","Le soir, les deux amis…"],"right":["regarderaient les étoiles.","lirait un bon livre.","marcherait toute la journée.","feraient du vélo."],"pairs":[[0,2],[1,1],[2,0]],"explanation_fa":"مارک می‌گوید «Je marcherais toute la journée»، سارا «sur une plage à Biarritz, avec un bon livre» و «le soir, on regarderait les étoiles»."}
+listening A:
+{"type":"num","prompt":"Combien d'euros Sarah veut-elle mettre de côté chaque mois ?","prompt_fa":"سارا می‌خواهد هر ماه چند یورو کنار بگذارد؟","answer":"50","accepted":["50","cinquante"],"explanation_fa":"سارا می‌گوید: «Si on mettait 50 euros de côté chaque mois»."}
+{"type":"mcq","prompt":"Depuis combien de temps pleut-il ?","prompt_fa":"چند وقت است که باران می‌آید؟","options":["Depuis deux semaines.","Depuis trois semaines.","Depuis six jours.","Depuis un mois."],"correct":1,"explanation_fa":"سارا می‌گوید: «Ça fait trois semaines qu'il pleut !»"}
+{"type":"tf","prompt":"Sarah a souvent froid.","prompt_fa":"سارا اغلب سردش است.","correct":true,"explanation_fa":"سارا می‌گوید: «Tu sais bien que j'ai toujours froid.»"}
+{"type":"tf","prompt":"L'année dernière, la plage de Nice était presque vide.","prompt_fa":"پارسال ساحل نیس تقریباً خالی بود.","correct":false,"explanation_fa":"سارا می‌گوید: «je ne trouvais même pas un coin pour ma serviette !»"}
+listening B:
+{"type":"mcq","prompt":"Pourquoi Marc aime-t-il la montagne en été ?","prompt_fa":"مارک چرا کوهستان را در تابستان دوست دارد؟","options":["Parce qu'il y fait très chaud la nuit.","Parce qu'il y a beaucoup de touristes.","Parce que c'est calme.","Parce qu'il aime la neige."],"correct":2,"explanation_fa":"مارک می‌گوید: «la montagne est calme, alors qu'en août, les plages sont pleines de touristes»."}
+{"type":"mcq","prompt":"En Corse, que ferait Sarah l'après-midi ?","prompt_fa":"سارا در کرس بعدازظهرها چه کار می‌کرد؟","options":["Elle chercherait une maison.","Elle marcherait avec Marc.","Elle dormirait dans une maison en bois.","Elle attendrait Marc sur le sable."],"correct":3,"explanation_fa":"سارا می‌گوید: «je t'attendrais sur le sable avec une glace»."}
+{"type":"tf","prompt":"Ce soir, Marc va regarder le prix des bateaux.","prompt_fa":"مارک امشب قیمت کشتی‌ها را نگاه می‌کند.","correct":true,"explanation_fa":"مارک می‌گوید: «Ce soir, je regarde le prix des bateaux pour la Corse.»"}
+{"type":"tf","prompt":"Marc ne veut pas partir avec Sarah.","prompt_fa":"مارک نمی‌خواهد با سارا برود.","correct":false,"explanation_fa":"مارک به پیشنهاد سارا می‌گوید: «Bonne idée !»"}

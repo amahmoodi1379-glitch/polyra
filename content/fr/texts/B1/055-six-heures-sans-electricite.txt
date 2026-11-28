@@ -1,0 +1,40 @@
+code: fr-b1-t055
+title: Six heures sans électricité
+band: 3
+kind: news
+key_words: courant, creuser, fil, libérer, généreux
+sentences:
+- Mardi, dans le quartier de la gare, à Rennes, plus de 4 000 habitants sont restés sans électricité pendant six heures. | سه‌شنبه، در محلهٔ ایستگاه قطار در رن، بیش از ۴ هزار نفر شش ساعت بی‌برق ماندند. | tts: Mardi, dans le quartier de la gare, à Rennes, plus de quatre mille habitants sont restés sans électricité pendant six heures.
+- Tout a commencé vers 14 heures : une machine qui creusait la rue a coupé un gros fil électrique sous la route. | همه‌چیز حدود ساعت دو بعدازظهر شروع شد: دستگاهی که خیابان را می‌کند، یک کابل برق بزرگ زیر جاده را برید. | tts: Tout a commencé vers quatorze heures : une machine qui creusait la rue a coupé un gros fil électrique sous la route.
+- En quelques secondes, les lumières, les feux rouges et les ascenseurs se sont arrêtés. | در چند ثانیه، چراغ‌ها، چراغ‌های راهنمایی و آسانسورها از کار افتادند.
+- Deux personnes sont restées bloquées dans un ascenseur pendant quarante minutes, avant que les pompiers viennent les libérer. | دو نفر چهل دقیقه در یک آسانسور گیر افتادند تا آتش‌نشان‌ها آمدند و آزادشان کردند.
+- Dans les magasins, les caisses ne marchaient{marcher-2} plus, et beaucoup ont dû fermer leurs portes. | در مغازه‌ها صندوق‌ها دیگر کار نمی‌کرد و خیلی‌ها مجبور شدند در را ببندند.
+- La boulangerie de la place a eu une autre idée : comme ses fours étaient en panne, elle a donné tout son pain aux habitants. | نانوایی میدان فکر دیگری کرد: چون تنورهایش خراب بود، همهٔ نانش را به اهالی داد.
+- « Je n'allais pas jeter tout ce pain ! », dit en riant la boulangère, Julie Martin. | ژولی مارتن، نانوای محله، با خنده می‌گوید: «نمی‌خواستم این همه نان را دور بریزم!»
+- Beaucoup d'habitants ont aussi aidé leurs voisins âgés. | خیلی از اهالی به همسایه‌های مسنشان هم کمک کردند.
+- Au dernier étage d'un immeuble, Karim, 35 ans, a monté des bouteilles d'eau à une dame de 88 ans qui ne pouvait pas descendre. | در طبقهٔ آخر یک ساختمان، کریم، ۳۵ ساله، برای خانمی ۸۸ ساله که نمی‌توانست پایین بیاید بطری آب برد. | tts: Au dernier étage d'un immeuble, Karim, trente-cinq ans, a monté des bouteilles d'eau à une dame de quatre-vingt-huit ans qui ne pouvait pas descendre.
+- « Elle avait peur, toute seule dans le noir. Je suis resté avec elle en attendant le retour du courant. » | «تنها در تاریکی ترسیده بود. تا برگشتن برق پیشش ماندم.»
+- Le soir, de nombreuses familles ont dîné à la lumière des bougies. | شب، خانواده‌های زیادی زیر نور شمع شام خوردند.
+- « C'était comme autrefois ! On a joué aux cartes, et personne n'a regardé son téléphone », raconte Hugo, 9 ans. | هوگو، ۹ ساله، تعریف می‌کند: «مثل قدیم‌ها بود! ورق بازی کردیم و هیچ‌کس سراغ گوشی‌اش نرفت.» | tts: « C'était comme autrefois ! On a joué aux cartes, et personne n'a regardé son téléphone », raconte Hugo, neuf ans.
+- Les techniciens ont travaillé sans arrêt, et le courant est revenu vers 20 heures. | تکنیسین‌ها یکسره کار کردند و برق حدود ساعت هشت شب برگشت. | tts: Les techniciens ont travaillé sans arrêt, et le courant est revenu vers vingt heures.
+- L'entreprise qui creusait la rue devra payer pour les magasins qui ont perdu de l'argent. | شرکتی که خیابان را می‌کند باید پول مغازه‌هایی را که ضرر کرده‌اند بپردازد.
+- Mais pour beaucoup d'habitants, cette panne a surtout montré une chose : les gens du quartier savent être généreux. | ولی برای خیلی از اهالی، این قطعی برق بیشتر یک چیز را نشان داد: مردم محله اهل بخشش‌اند.
+reading A:
+{"type":"mcq","prompt":"Qu'est-ce qui a causé la panne ?","prompt_fa":"علت قطعی برق چه بود؟","options":["Un incendie dans un immeuble.","Une machine qui a coupé un fil sous la route.","Un orage très violent.","Un problème à la gare."],"correct":1,"explanation_fa":"خبر می‌گوید: «une machine qui creusait la rue a coupé un gros fil électrique sous la route»."}
+{"type":"tf","prompt":"Deux personnes sont restées dans un ascenseur jusqu'à l'arrivée des pompiers.","prompt_fa":"دو نفر تا رسیدن آتش‌نشان‌ها در آسانسور ماندند.","correct":true,"explanation_fa":"خبر می‌گوید: «Deux personnes sont restées bloquées dans un ascenseur … avant que les pompiers viennent les libérer»."}
+{"type":"tf","prompt":"La boulangerie a vendu son pain plus cher pendant la panne.","prompt_fa":"نانوایی در زمان قطعی برق نانش را گران‌تر فروخت.","correct":false,"explanation_fa":"خبر می‌گوید: «elle a donné tout son pain aux habitants»."}
+{"type":"find","prompt":"Quelle phrase dit qui va payer pour les magasins ?","prompt_fa":"کدام جمله می‌گوید چه کسی پول مغازه‌ها را می‌پردازد؟","correct_sentence":13,"explanation_fa":"خبر می‌گوید: «L'entreprise qui creusait la rue devra payer pour les magasins qui ont perdu de l'argent.»"}
+reading B:
+{"type":"ctx","word":"généreux","prompt":"« les gens du quartier savent être généreux » : les gens du quartier…","prompt_fa":"«les gens du quartier savent être généreux»: مردم محله…","options":["ont peur du noir.","aiment beaucoup le pain.","donnent et aident facilement.","travaillent sans arrêt."],"correct":2,"explanation_fa":"«généreux» یعنی دست‌ودل‌باز؛ نانوا نانش را داد و کریم به خانم مسن کمک کرد."}
+{"type":"order","prompt":"Mettez l'après-midi et la soirée dans l'ordre.","prompt_fa":"اتفاق‌های بعدازظهر و شب را به ترتیب بچینید.","items":["Le courant revient.","Une machine coupe un fil électrique.","Les pompiers libèrent deux personnes.","Des familles dînent à la lumière des bougies."],"correct_order":[1,2,3,0],"explanation_fa":"ساعت دو کابل بریده شد، بعد آتش‌نشان‌ها دو نفر را آزاد کردند، شب خانواده‌ها با شمع شام خوردند و «le courant est revenu vers 20 heures»."}
+{"type":"match","prompt":"Qui a fait quoi ?","prompt_fa":"چه کسی چه کار کرد؟","left":["Julie Martin","Karim","les techniciens"],"right":["ont travaillé sans arrêt.","a donné son pain.","a monté de l'eau à une dame.","a fermé son magasin."],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"نانوا ژولی مارتن «a donné tout son pain»، کریم «a monté des bouteilles d'eau à une dame» و «Les techniciens ont travaillé sans arrêt»."}
+listening A:
+{"type":"num","prompt":"Combien d'heures les habitants sont-ils restés sans électricité ?","prompt_fa":"اهالی چند ساعت بی‌برق ماندند؟","answer":"6","accepted":["6","six"],"explanation_fa":"می‌شنویم: «sont restés sans électricité pendant six heures»."}
+{"type":"mcq","prompt":"À quelle heure le courant est-il revenu ?","prompt_fa":"برق ساعت چند برگشت؟","options":["Vers 14 heures.","Vers 18 heures.","Vers 20 heures.","Vers minuit."],"correct":2,"explanation_fa":"می‌شنویم: «le courant est revenu vers 20 heures»."}
+{"type":"tf","prompt":"Karim est resté avec la vieille dame.","prompt_fa":"کریم پیش خانم مسن ماند.","correct":true,"explanation_fa":"کریم می‌گوید: «Je suis resté avec elle en attendant le retour du courant.»"}
+{"type":"tf","prompt":"Hugo a passé la soirée sur son téléphone.","prompt_fa":"هوگو شب را با گوشی‌اش گذراند.","correct":false,"explanation_fa":"هوگو می‌گوید: «personne n'a regardé son téléphone»."}
+listening B:
+{"type":"mcq","prompt":"Pourquoi la dame de 88 ans avait-elle besoin d'aide ?","prompt_fa":"خانم ۸۸ ساله چرا به کمک احتیاج داشت؟","options":["Elle était malade.","Elle ne pouvait pas descendre de son étage.","Elle avait perdu ses clés.","Elle n'avait plus de pain."],"correct":1,"explanation_fa":"می‌شنویم: «une dame de 88 ans qui ne pouvait pas descendre»."}
+{"type":"mcq","prompt":"Qu'est-ce qu'Hugo a fait le soir ?","prompt_fa":"هوگو شب چه کار کرد؟","options":["Il a regardé la télévision.","Il a aidé les pompiers.","Il est allé à la boulangerie.","Il a joué aux cartes."],"correct":3,"explanation_fa":"هوگو می‌گوید: «On a joué aux cartes»."}
+{"type":"tf","prompt":"Les caisses des magasins ne marchaient plus.","prompt_fa":"صندوق مغازه‌ها دیگر کار نمی‌کرد.","correct":true,"explanation_fa":"می‌شنویم: «les caisses ne marchaient plus»."}
+{"type":"tf","prompt":"La panne a commencé le matin.","prompt_fa":"قطعی برق صبح شروع شد.","correct":false,"explanation_fa":"می‌شنویم: «Tout a commencé vers 14 heures»."}

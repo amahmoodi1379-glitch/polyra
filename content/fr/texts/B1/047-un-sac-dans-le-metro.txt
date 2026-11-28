@@ -1,0 +1,49 @@
+code: fr-b1-t047
+title: Un sac oublié dans le métro
+band: 3
+kind: long_dialogue
+key_words: déclarer, perte, siège, bloquer, prévenir
+sentences:
+A: Bonjour Monsieur. Je viens déclarer une perte : j'ai perdu mon sac dans le métro ce matin. | سلام آقا. آمده‌ام گم شدن چیزی را اعلام کنم: امروز صبح کیفم را در مترو گم کردم.
+B: Vous savez où et quand, exactement ? | دقیقاً می‌دانید کجا و کی؟
+A: Sur la ligne 4, vers 8 heures 15. | در خط ۴، حدود ساعت ۸ و ربع. | tts: Sur la ligne quatre, vers huit heures quinze.
+A: Il y avait beaucoup de monde, alors j'avais posé mon sac sur le siège à côté de moi. | خیلی شلوغ بود، برای همین کیفم را روی صندلی کنارم گذاشته بودم.
+B: Et vous êtes descendue sans lui ? | و بدون آن پیاده شدید؟
+A: Oui… Au moment où les portes se sont ouvertes, mon téléphone a sonné. J'ai répondu et je suis sortie très vite. | بله… درست وقتی درها باز شد، گوشی‌ام زنگ زد. جواب دادم و با عجله بیرون رفتم.
+A: Je me suis rendu compte de mon erreur sur le quai, quand le métro était déjà parti. | روی سکو، وقتی مترو رفته بود، فهمیدم چه اشتباهی کرده‌ام.
+B: Pouvez-vous me décrire le sac ? | می‌توانید کیف را برایم توصیف کنید؟
+A: C'est un sac marron, avec une petite fleur jaune dessus. | یک کیف قهوه‌ای است، با یک گل زرد کوچک رویش.
+B: Et qu'est-ce qu'il y avait dedans ? | داخلش چه بود؟
+A: Mon portefeuille avec 40 euros, ma carte d'identité, ma carte de crédit et les clés de mon appartement. | کیف پولم با ۴۰ یورو، کارت شناسایی‌ام، کارت اعتباری‌ام و کلیدهای آپارتمانم. | tts: Mon portefeuille avec quarante euros, ma carte d'identité, ma carte de crédit et les clés de mon appartement.
+B: Vous avez déjà appelé votre banque pour bloquer votre carte ? | به بانکتان زنگ زده‌اید که کارتتان را مسدود کنند؟
+A: Pas encore. Je ne pense pas que ce soit un vol, mais vous avez raison. | هنوز نه. فکر نمی‌کنم دزدی باشد، ولی حق با شماست.
+B: Il vaut mieux le faire tout de suite, c'est la meilleure méthode. Dès que la carte est bloquée, personne ne peut l'utiliser. | بهتر است همین حالا این کار را بکنید، بهترین راه همین است. وقتی کارت مسدود شد، هیچ‌کس نمی‌تواند از آن استفاده کند.
+A: J'appellerai la banque dès que je sortirai d'ici. | به محض این‌که از اینجا بیرون بروم، به بانک زنگ می‌زنم.
+B: Bon, je note l'incident. Et vous pouvez rentrer chez vous ce soir, sans vos clés ? | خب، ماجرا را یادداشت می‌کنم. امشب بدون کلیدهایتان می‌توانید به خانه بروید؟
+A: Oui, ma voisine a aussi mes clés. | بله، همسایه‌ام هم کلیدهایم را دارد.
+B: Signez ici. Si quelqu'un trouve votre sac, il le rapportera sans doute aux objets trouvés. | اینجا را امضا کنید. اگر کسی کیفتان را پیدا کند، احتمالاً آن را به بخش اشیای پیداشده می‌برد.
+B: Une fois que votre sac sera là-bas, on vous préviendra par téléphone. | وقتی کیفتان آنجا برسد، تلفنی خبرتان می‌کنند.
+A: Attendez… mon téléphone sonne. | صبر کنید… گوشی‌ام زنگ می‌زند.
+A: Monsieur, c'était un agent du métro : un homme a trouvé mon sac sur le siège et l'a donné à la station d'après ! | آقا، یکی از مأموران مترو بود: یک مرد کیفم را روی صندلی پیدا کرده و در ایستگاه بعدی تحویل داده است!
+B: Il y a encore des gens gentils dans cette ville ! | هنوز آدم‌های مهربان در این شهر هستند!
+A: Est-ce que je dois encore signer ce papier ? | هنوز باید این کاغذ را امضا کنم؟
+B: Non, je le déchire. Allez vite chercher votre sac, et vérifiez qu'il ne manque rien. | نه، پاره‌اش می‌کنم. زود بروید کیفتان را بگیرید و ببینید چیزی کم نباشد.
+reading A:
+{"type":"mcq","prompt":"Pourquoi la femme vient-elle voir le policier ?","prompt_fa":"آن زن چرا پیش پلیس می‌آید؟","options":["Pour dire qu'on lui a volé sa voiture.","Pour déclarer la perte de son sac.","Pour chercher son téléphone.","Pour rapporter un sac qu'elle a trouvé."],"correct":1,"explanation_fa":"زن می‌گوید: «Je viens déclarer une perte : j'ai perdu mon sac dans le métro ce matin.»"}
+{"type":"tf","prompt":"La femme avait mis son sac sur le siège à côté d'elle.","prompt_fa":"زن کیفش را روی صندلی کنارش گذاشته بود.","correct":true,"explanation_fa":"زن می‌گوید: «j'avais posé mon sac sur le siège à côté de moi»."}
+{"type":"tf","prompt":"La femme est sûre que quelqu'un a volé son sac.","prompt_fa":"زن مطمئن است که کسی کیفش را دزدیده است.","correct":false,"explanation_fa":"زن می‌گوید: «Je ne pense pas que ce soit un vol»."}
+{"type":"find","prompt":"Quelle phrase explique pourquoi la femme est sortie sans son sac ?","prompt_fa":"کدام جمله توضیح می‌دهد که زن چرا بدون کیفش بیرون رفت؟","correct_sentence":5,"explanation_fa":"زن می‌گوید: «Au moment où les portes se sont ouvertes, mon téléphone a sonné. J'ai répondu et je suis sortie très vite.»"}
+reading B:
+{"type":"ctx","word":"dedans","prompt":"« Et qu'est-ce qu'il y avait dedans ? » : ici, « dedans » veut dire…","prompt_fa":"در «Et qu'est-ce qu'il y avait dedans ?»، «dedans» یعنی…","options":["dans le métro","dans le sac","dans la banque","dans l'appartement"],"correct":1,"explanation_fa":"پلیس دربارهٔ کیف می‌پرسد و زن جواب می‌دهد: «Mon portefeuille avec 40 euros, ma carte d'identité…»."}
+{"type":"order","prompt":"Mettez l'histoire dans l'ordre.","prompt_fa":"ماجرا را به ترتیب بچینید.","items":["Un agent du métro appelle la femme.","La femme pose son sac sur le siège.","Le téléphone de la femme sonne dans le métro.","Le policier déchire le papier."],"correct_order":[1,2,0,3],"explanation_fa":"اول زن «j'avais posé mon sac sur le siège»، بعد گوشی‌اش زنگ می‌زند، در کلانتری مأمور مترو زنگ می‌زند و آخر پلیس می‌گوید «je le déchire»."}
+{"type":"match","prompt":"De quoi parle-t-on ?","prompt_fa":"دربارهٔ چه چیزی حرف می‌زنند؟","left":["le portefeuille","les clés","la carte de crédit"],"right":["Il faut appeler la banque pour elle.","La voisine en a aussi.","Il y a 40 euros dedans.","Elle est restée à la maison."],"pairs":[[0,2],[1,1],[2,0]],"explanation_fa":"«Mon portefeuille avec 40 euros»، «ma voisine a aussi mes clés» و پلیس دربارهٔ کارت می‌پرسد: «Vous avez déjà appelé votre banque pour bloquer votre carte ?»"}
+listening A:
+{"type":"num","prompt":"Combien d'euros y avait-il dans le portefeuille ?","prompt_fa":"در کیف پول چند یورو بود؟","answer":"40","accepted":["40","quarante"],"explanation_fa":"زن می‌گوید: «Mon portefeuille avec 40 euros»."}
+{"type":"mcq","prompt":"Sur quelle ligne de métro la femme a-t-elle perdu son sac ?","prompt_fa":"زن کیفش را در کدام خط مترو گم کرد؟","options":["La ligne 2.","La ligne 4.","La ligne 8.","La ligne 14."],"correct":1,"explanation_fa":"زن می‌گوید: «Sur la ligne 4»."}
+{"type":"tf","prompt":"Le sac est marron, avec une fleur jaune.","prompt_fa":"کیف قهوه‌ای است، با یک گل زرد.","correct":true,"explanation_fa":"زن می‌گوید: «C'est un sac marron, avec une petite fleur jaune dessus.»"}
+{"type":"tf","prompt":"Ce soir, la femme ne pourra pas rentrer chez elle.","prompt_fa":"زن امشب نمی‌تواند به خانه‌اش برگردد.","correct":false,"explanation_fa":"زن می‌گوید: «Oui, ma voisine a aussi mes clés.»"}
+listening B:
+{"type":"mcq","prompt":"Qui a trouvé le sac ?","prompt_fa":"چه کسی کیف را پیدا کرد؟","options":["La voisine de la femme.","Un policier.","Un homme dans le métro.","Quelqu'un de la banque."],"correct":2,"explanation_fa":"زن می‌گوید: «un homme a trouvé mon sac sur le siège»."}
+{"type":"mcq","prompt":"Que fait le policier à la fin ?","prompt_fa":"پلیس آخر کار چه می‌کند؟","options":["Il appelle la banque.","Il va chercher le sac.","Il signe le papier.","Il déchire le papier."],"correct":3,"explanation_fa":"پلیس می‌گوید: «Non, je le déchire.»"}
+{"type":"tf","prompt":"Pour le policier, il faut bloquer la carte tout de suite.","prompt_fa":"از نظر پلیس، باید فوراً کارت را مسدود کرد.","correct":true,"explanation_fa":"پلیس می‌گوید: «Il vaut mieux le faire tout de suite.»"}
+{"type":"tf","prompt":"La femme a déjà appelé sa banque.","prompt_fa":"زن قبلاً به بانکش زنگ زده است.","correct":false,"explanation_fa":"زن می‌گوید: «Pas encore.»"}

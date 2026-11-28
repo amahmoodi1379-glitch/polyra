@@ -1,0 +1,42 @@
+code: fr-b1-t045
+title: J'accepte avec plaisir
+band: 3
+kind: letter
+key_words: convenir, s'adresser, contrat, responsabilité
+sentences:
+- Monsieur Girard, | آقای ژیرار،
+- Je vous remercie pour votre appel d'hier et pour votre e-mail de ce matin. | از تماس دیروز و ایمیل امروز صبحتان ممنونم.
+- J'accepte avec un grand plaisir l'emploi de vendeuse dans votre librairie, et je suis très heureuse de rejoindre votre équipe. | با کمال میل کار فروشندگی در کتاب‌فروشی‌تان را می‌پذیرم و خیلی خوشحالم که به گروه شما می‌پیوندم.
+- Pendant notre rendez-vous, j'ai beaucoup aimé votre coin pour les enfants, et je serais contente de travailler dans cette partie du magasin. | در جلسه‌مان گوشهٔ کودکان را خیلی دوست داشتم و خوشحال می‌شوم در آن بخش مغازه کار کنم.
+- Dans votre e-mail, vous proposez de commencer le lundi 3 avril. | در ایمیلتان پیشنهاد می‌کنید که دوشنبه سوم آوریل شروع کنم. | tts: Dans votre e-mail, vous proposez de commencer le lundi trois avril.
+- Malheureusement, je dois rester dans le magasin où je travaille aujourd'hui jusqu'au 8 avril, car mon patron a besoin de temps pour trouver quelqu'un. | متأسفانه باید تا هشتم آوریل در مغازه‌ای که الان در آن کار می‌کنم بمانم، چون رئیسم برای پیدا کردن کسی وقت لازم دارد. | tts: Malheureusement, je dois rester dans le magasin où je travaille aujourd'hui jusqu'au huit avril, car mon patron a besoin de temps pour trouver quelqu'un.
+- Serait-il possible de commencer le lundi 10 avril ? | ممکن است دوشنبه دهم آوریل شروع کنم؟ | tts: Serait-il possible de commencer le lundi dix avril ?
+- J'espère que ce changement ne posera pas de problème, mais dites-moi si cette date ne vous convient pas. | امیدوارم این تغییر مشکلی پیش نیاورد، ولی اگر این تاریخ برایتان مناسب نیست، به من بگویید.
+- J'aurais aussi quelques questions sur mon premier jour. | چند سؤال هم دربارهٔ روز اولم دارم.
+- À quelle heure dois-je arriver, et à qui dois-je m'adresser à mon arrivée ? | ساعت چند باید برسم و وقتی رسیدم سراغ چه کسی بروم؟
+- Faut-il apporter des papiers pour le contrat, par exemple mon diplôme ou ma carte d'identité ? | باید برای قرارداد مدرکی بیاورم، مثلاً دیپلمم یا کارت شناسایی‌ام را؟
+- Est-ce que les vendeurs portent un t-shirt de la librairie, ou est-ce que je peux venir avec mes vêtements ? | فروشنده‌ها تی‌شرت کتاب‌فروشی را می‌پوشند یا می‌توانم با لباس‌های خودم بیایم؟
+- Enfin, je viendrai en voiture : y a-t-il un parking près de la librairie ? | آخر این‌که با ماشین می‌آیم: نزدیک کتاب‌فروشی پارکینگ هست؟
+- Je suis prête à prendre des responsabilités, et j'ai hâte de commencer. | آماده‌ام مسئولیت قبول کنم و برای شروع کار لحظه‌شماری می‌کنم.
+- Je vous remercie encore pour votre confiance. | باز هم از اعتمادتان ممنونم.
+- Cordialement, | با احترام،
+- Nadia Rousseau | نادیا روسو
+reading A:
+{"type":"mcq","prompt":"Pourquoi Nadia écrit-elle à Monsieur Girard ?","prompt_fa":"نادیا چرا به آقای ژیرار نامه می‌نویسد؟","options":["Pour demander un rendez-vous.","Pour refuser l'emploi.","Pour accepter l'emploi et poser des questions.","Pour se plaindre de son patron."],"correct":2,"explanation_fa":"نادیا می‌نویسد: «J'accepte avec un grand plaisir l'emploi de vendeuse» و بعد «J'aurais aussi quelques questions»."}
+{"type":"tf","prompt":"Nadia ne peut pas commencer le 3 avril.","prompt_fa":"نادیا نمی‌تواند سوم آوریل شروع کند.","correct":true,"explanation_fa":"نادیا می‌نویسد: «je dois rester dans le magasin où je travaille aujourd'hui jusqu'au 8 avril»."}
+{"type":"tf","prompt":"Nadia viendra au travail en bus.","prompt_fa":"نادیا با اتوبوس سر کار می‌آید.","correct":false,"explanation_fa":"نادیا می‌نویسد: «je viendrai en voiture»."}
+{"type":"find","prompt":"Quelle phrase explique pourquoi Nadia veut commencer plus tard ?","prompt_fa":"کدام جمله توضیح می‌دهد که نادیا چرا می‌خواهد دیرتر شروع کند؟","correct_sentence":5,"explanation_fa":"نادیا می‌نویسد: «je dois rester dans le magasin où je travaille aujourd'hui jusqu'au 8 avril, car mon patron a besoin de temps pour trouver quelqu'un»."}
+reading B:
+{"type":"ctx","word":"convient","prompt":"« dites-moi si cette date ne vous convient pas » : Nadia veut savoir si la date…","prompt_fa":"«dites-moi si cette date ne vous convient pas»: نادیا می‌خواهد بداند که آیا این تاریخ…","options":["est trop tard pour elle.","est possible pour Monsieur Girard.","est un jour de fête.","est écrite dans le contrat."],"correct":1,"explanation_fa":"«convenir» یعنی مناسب بودن؛ نادیا می‌پرسد آیا دهم آوریل برای آقای ژیرار مناسب است."}
+{"type":"cloze","prompt":"Complétez la fin de la lettre.","prompt_fa":"پایان نامه را کامل کنید.","text_with_gaps":"Je suis prête à prendre des {{1}}, et j'ai {{2}} de commencer.","bank":["responsabilités","hâte","librairies","prête","dates"],"answers":["responsabilités","hâte"],"explanation_fa":"نادیا می‌نویسد: «Je suis prête à prendre des responsabilités, et j'ai hâte de commencer.»"}
+{"type":"order","prompt":"Mettez ces moments dans l'ordre.","prompt_fa":"این لحظه‌ها را به ترتیب بچینید.","items":["Nadia écrit cette lettre.","Nadia commence à la librairie.","Nadia a un rendez-vous avec Monsieur Girard.","Monsieur Girard appelle Nadia."],"correct_order":[2,3,0,1],"explanation_fa":"اول «notre rendez-vous» بود، بعد «votre appel d'hier»، امروز نادیا نامه می‌نویسد و در آوریل کارش را شروع می‌کند."}
+listening A:
+{"type":"num","prompt":"Nadia voudrait commencer le lundi … avril. Quelle date ?","prompt_fa":"نادیا می‌خواهد دوشنبه … آوریل شروع کند. چه تاریخی؟","answer":"10","accepted":["10","dix"],"explanation_fa":"نادیا می‌نویسد: «Serait-il possible de commencer le lundi 10 avril ?»"}
+{"type":"mcq","prompt":"Quel travail Nadia va-t-elle faire ?","prompt_fa":"نادیا چه کاری خواهد کرد؟","options":["Secrétaire dans une école.","Vendeuse dans une librairie.","Serveuse dans un café.","Professeur pour les enfants."],"correct":1,"explanation_fa":"نادیا می‌نویسد: «l'emploi de vendeuse dans votre librairie»."}
+{"type":"tf","prompt":"Nadia a aimé le coin des enfants de la librairie.","prompt_fa":"نادیا گوشهٔ کودکان کتاب‌فروشی را دوست داشت.","correct":true,"explanation_fa":"نادیا می‌نویسد: «j'ai beaucoup aimé votre coin pour les enfants»."}
+{"type":"tf","prompt":"Le patron de Nadia veut qu'elle parte tout de suite.","prompt_fa":"رئیس نادیا می‌خواهد که او فوراً برود.","correct":false,"explanation_fa":"نادیا می‌نویسد: «mon patron a besoin de temps pour trouver quelqu'un»."}
+listening B:
+{"type":"mcq","prompt":"Qu'est-ce que Nadia demande sur les vêtements ?","prompt_fa":"نادیا دربارهٔ لباس چه می‌پرسد؟","options":["Si elle doit acheter des vêtements neufs.","Si les vendeurs portent un t-shirt de la librairie.","Si elle peut venir en robe.","Où elle peut laisser son manteau."],"correct":1,"explanation_fa":"نادیا می‌پرسد: «Est-ce que les vendeurs portent un t-shirt de la librairie»."}
+{"type":"mcq","prompt":"Comment Nadia viendra-t-elle au travail ?","prompt_fa":"نادیا چطور سر کار می‌آید؟","options":["À pied.","En bus.","À vélo.","En voiture."],"correct":3,"explanation_fa":"نادیا می‌نویسد: «je viendrai en voiture»."}
+{"type":"tf","prompt":"Monsieur Girard a appelé Nadia hier.","prompt_fa":"آقای ژیرار دیروز به نادیا زنگ زد.","correct":true,"explanation_fa":"نادیا می‌نویسد: «Je vous remercie pour votre appel d'hier»."}
+{"type":"tf","prompt":"Pour Nadia, changer la date est un grand problème.","prompt_fa":"از نظر نادیا، عوض کردن تاریخ مشکل بزرگی است.","correct":false,"explanation_fa":"نادیا می‌نویسد: «J'espère que ce changement ne posera pas de problème»."}

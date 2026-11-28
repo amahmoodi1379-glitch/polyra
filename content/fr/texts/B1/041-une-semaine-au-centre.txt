@@ -1,0 +1,47 @@
+code: fr-b1-t041
+title: Une semaine pas comme les autres
+band: 3
+kind: letter
+key_words: attente, se rendre compte, avoir du mal à
+sentences:
+- Chère Léa, | لئای عزیز،
+- Merci pour ta carte de Noël ! J'ai vécu une semaine pas comme les autres. | ممنون برای کارت کریسمست! هفته‌ای داشتم که با هفته‌های دیگر فرق داشت.
+- Comme je suis en vacances jusqu'au 8 janvier, j'ai décidé de faire quelque chose d'utile. | چون تا هشتم ژانویه تعطیلم، تصمیم گرفتم کار مفیدی بکنم. | tts: Comme je suis en vacances jusqu'au huit janvier, j'ai décidé de faire quelque chose d'utile.
+- Toute la semaine, j'ai aidé dans un centre de mon quartier qui donne de la nourriture aux gens qui n'ont pas assez d'argent. | تمام هفته در مرکزی در محله‌مان کمک کردم که به آدم‌هایی که پول کافی ندارند غذا می‌دهد.
+- Le lundi, nous avons rangé les paquets de pâtes et de riz que les supermarchés avaient apportés. | دوشنبه بسته‌های ماکارونی و برنجی را که سوپرمارکت‌ها آورده بودند مرتب کردیم.
+- À partir du mardi, les gens sont venus chercher leurs colis. | از سه‌شنبه، مردم آمدند بسته‌هایشان را ببرند.
+- Dehors, il faisait moins 6 degrés, et pourtant, la queue commençait dès 7 heures du matin. | بیرون منفی شش درجه بود، با این حال صف از ساعت هفت صبح شروع می‌شد. | tts: Dehors, il faisait moins six degrés, et pourtant, la queue commençait dès sept heures du matin.
+- Nous servions du café chaud pour que l'attente soit moins dure dans le froid. | قهوهٔ داغ می‌دادیم تا انتظار در آن سرما کمتر سخت باشد.
+- J'ai été surprise : je pensais voir surtout des personnes âgées. | تعجب کردم: فکر می‌کردم بیشتر آدم‌های مسن را می‌بینم.
+- En réalité, il y avait aussi des étudiants, des mères seules avec leur bébé et même des gens qui travaillent, mais dont le salaire ne suffit pas. | در واقع دانشجو هم بود، مادرهای تنها با بچه‌شان، و حتی آدم‌هایی که کار می‌کنند ولی حقوقشان کافی نیست.
+- Jeudi, j'ai parlé avec un monsieur qui a été professeur de piano pendant trente ans. | پنجشنبه با آقایی حرف زدم که سی سال معلم پیانو بوده است.
+- Il venait pour la première fois, et il avait du mal à me regarder dans les yeux. | اولین بار بود که می‌آمد و برایش سخت بود توی چشم‌هایم نگاه کند.
+- Nous avons parlé de musique pendant dix minutes, et quand il est parti, il souriait. | ده دقیقه دربارهٔ موسیقی حرف زدیم و وقتی رفت، لبخند می‌زد.
+- Le plus dur, c'était vendredi : il n'y avait plus de lait, et j'ai dû dire non à une jeune maman. | سخت‌ترین روز جمعه بود: دیگر شیر نداشتیم و مجبور شدم به یک مادر جوان نه بگویم.
+- J'ai pleuré dans le bus, le soir. | شب توی اتوبوس گریه کردم.
+- Mais samedi matin, une boulangerie nous a apporté 200 croissants, et un supermarché, un camion plein de lait. | ولی شنبه صبح یک نانوایی دویست کروسان برایمان آورد و یک سوپرمارکت یک کامیون پر از شیر. | tts: Mais samedi matin, une boulangerie nous a apporté deux cents croissants, et un supermarché, un camion plein de lait.
+- Je me suis rendu compte qu'une petite chose peut changer la journée de quelqu'un. | فهمیدم که یک کار کوچک می‌تواند روز یک نفر را عوض کند.
+- Je vais continuer le samedi, même après les vacances. | شنبه‌ها ادامه می‌دهم، حتی بعد از تعطیلات.
+- Si tu venais un samedi avec moi, je serais très contente ! | اگر یک شنبه با من بیایی، خیلی خوشحال می‌شوم!
+- Je t'embrasse, | می‌بوسمت،
+- Alice | آلیس
+reading A:
+{"type":"mcq","prompt":"Pourquoi Alice écrit-elle cette lettre ?","prompt_fa":"آلیس چرا این نامه را می‌نویسد؟","options":["Pour inviter Léa à passer Noël chez elle.","Pour demander de l'argent pour le centre.","Pour raconter une semaine où elle a aidé des gens.","Pour dire qu'elle a trouvé un nouveau travail."],"correct":2,"explanation_fa":"آلیس می‌نویسد: «j'ai vécu une semaine pas comme les autres» و بعد از کمک در مرکز تعریف می‌کند."}
+{"type":"tf","prompt":"Pendant cette semaine, il faisait très froid dehors.","prompt_fa":"در آن هفته بیرون خیلی سرد بود.","correct":true,"explanation_fa":"آلیس می‌نویسد: «Dehors, il faisait moins 6 degrés»."}
+{"type":"tf","prompt":"Au centre, Alice a vu seulement des personnes âgées.","prompt_fa":"آلیس در مرکز فقط آدم‌های مسن دید.","correct":false,"explanation_fa":"آلیس می‌نویسد: «il y avait aussi des étudiants, des mères seules avec leur bébé et même des gens qui travaillent»."}
+{"type":"find","prompt":"Quelle phrase dit quel jour a été le plus difficile pour Alice, et pourquoi ?","prompt_fa":"کدام جمله می‌گوید کدام روز برای آلیس از همه سخت‌تر بود و چرا؟","correct_sentence":13,"explanation_fa":"آلیس می‌نویسد: «Le plus dur, c'était vendredi : il n'y avait plus de lait»."}
+reading B:
+{"type":"order","prompt":"Mettez la semaine d'Alice dans l'ordre.","prompt_fa":"هفتهٔ آلیس را به ترتیب بچینید.","items":["Un camion plein de lait arrive.","Alice parle de musique avec un monsieur.","Alice range des paquets de pâtes et de riz.","Il n'y a plus de lait au centre."],"correct_order":[2,1,3,0],"explanation_fa":"دوشنبه «nous avons rangé les paquets»، پنجشنبه با آقای معلم پیانو حرف می‌زند، جمعه «il n'y avait plus de lait» و شنبه کامیون شیر می‌رسد."}
+{"type":"ctx","word":"avait du mal à","prompt":"« il avait du mal à me regarder dans les yeux » : qu'est-ce que cela veut dire ?","prompt_fa":"«il avait du mal à me regarder dans les yeux» یعنی چه؟","options":["Il ne voulait pas venir au centre.","Il avait mal aux yeux.","C'était difficile pour lui de regarder Alice.","Il regardait Alice avec colère."],"correct":2,"explanation_fa":"«avoir du mal à» یعنی برای کسی سخت بودن؛ آن آقا «pour la première fois» آمده بود و برایش سخت بود به آلیس نگاه کند."}
+{"type":"cloze","prompt":"Complétez la phrase d'Alice.","prompt_fa":"جملهٔ آلیس را کامل کنید.","text_with_gaps":"Je me suis {{1}} compte qu'une petite chose peut {{2}} la journée de quelqu'un.","bank":["rendu","changer","donné","finir","pris"],"answers":["rendu","changer"],"explanation_fa":"آلیس می‌نویسد: «Je me suis rendu compte qu'une petite chose peut changer la journée de quelqu'un.»"}
+{"type":"match","prompt":"Qu'est-ce qui se passe quel jour ?","prompt_fa":"هر روز چه اتفاقی می‌افتد؟","left":["le lundi","le jeudi","le vendredi","le samedi"],"right":["Alice parle avec un ancien professeur de piano.","Alice range les paquets.","Il n'y a plus de lait.","Une boulangerie apporte des croissants.","Alice rentre chez ses parents."],"pairs":[[0,1],[1,0],[2,2],[3,3]],"explanation_fa":"«Le lundi, nous avons rangé les paquets»، «Jeudi, j'ai parlé avec un monsieur»، جمعه «il n'y avait plus de lait» و «samedi matin, une boulangerie nous a apporté 200 croissants»."}
+listening A:
+{"type":"num","prompt":"Combien de croissants la boulangerie a-t-elle apportés ?","prompt_fa":"نانوایی چند کروسان آورد؟","answer":"200","accepted":["200","deux cents"],"explanation_fa":"می‌شنویم: «une boulangerie nous a apporté 200 croissants»."}
+{"type":"mcq","prompt":"À quelle heure la queue commençait-elle ?","prompt_fa":"صف ساعت چند شروع می‌شد؟","options":["À 6 heures.","À 8 heures.","À 7 heures.","À 10 heures."],"correct":2,"explanation_fa":"می‌شنویم: «la queue commençait dès 7 heures du matin»."}
+{"type":"tf","prompt":"Alice va continuer à aider au centre.","prompt_fa":"آلیس به کمک در مرکز ادامه می‌دهد.","correct":true,"explanation_fa":"آلیس می‌گوید: «Je vais continuer le samedi, même après les vacances.»"}
+{"type":"tf","prompt":"Le monsieur de jeudi venait au centre depuis longtemps.","prompt_fa":"آقای پنجشنبه از مدت‌ها پیش به مرکز می‌آمد.","correct":false,"explanation_fa":"آلیس می‌گوید: «Il venait pour la première fois»."}
+listening B:
+{"type":"mcq","prompt":"Qu'est-ce qu'Alice a compris pendant cette semaine ?","prompt_fa":"آلیس در این هفته چه چیزی را فهمید؟","options":["Qu'il faut beaucoup d'argent pour aider.","Qu'une petite chose peut aider quelqu'un.","Que le travail au centre est trop dur pour elle.","Que les gens du centre n'ont pas besoin d'elle."],"correct":1,"explanation_fa":"آلیس می‌گوید: «une petite chose peut changer la journée de quelqu'un»."}
+{"type":"mcq","prompt":"Qu'est-ce que le centre donne aux gens ?","prompt_fa":"مرکز به مردم چه می‌دهد؟","options":["Des vêtements chauds.","Des cours de piano.","De la nourriture.","Un travail."],"correct":2,"explanation_fa":"می‌شنویم: «un centre de mon quartier qui donne de la nourriture aux gens qui n'ont pas assez d'argent»."}
+{"type":"tf","prompt":"Parmi les gens du centre, il y avait aussi des étudiants.","prompt_fa":"در میان آدم‌های مرکز دانشجو هم بود.","correct":true,"explanation_fa":"آلیس می‌گوید: «il y avait aussi des étudiants»."}
+{"type":"tf","prompt":"Le vendredi, Alice a pu donner du lait à toutes les mamans.","prompt_fa":"جمعه آلیس توانست به همهٔ مادرها شیر بدهد.","correct":false,"explanation_fa":"آلیس می‌گوید: «il n'y avait plus de lait, et j'ai dû dire non à une jeune maman»."}

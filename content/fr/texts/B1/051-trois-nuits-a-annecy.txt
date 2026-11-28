@@ -1,0 +1,45 @@
+code: fr-b1-t051
+title: Trois nuits à Annecy
+band: 3
+kind: letter
+key_words: personnel, lendemain, remarquer, malgré
+sentences:
+- Madame, Monsieur, | خانم، آقا،
+- Ma femme et moi avons passé trois nuits dans votre hôtel, du 12 au 15 octobre, dans la chambre 24. | من و همسرم از ۱۲ تا ۱۵ اکتبر سه شب در هتل شما، در اتاق ۲۴، اقامت داشتیم. | tts: Ma femme et moi avons passé trois nuits dans votre hôtel, du douze au quinze octobre, dans la chambre vingt-quatre.
+- Je voudrais vous donner mon avis sur ce séjour, car il y a eu de très bons moments, mais aussi quelques problèmes. | می‌خواهم نظرم را دربارهٔ این اقامت به شما بگویم، چون لحظه‌های خیلی خوبی داشت، ولی چند مشکل هم پیش آمد.
+- D'abord, les bons points. | اول، نکته‌های خوب.
+- Votre personnel a été charmant du début à la fin, en particulier la jeune femme de la réception, qui nous a donné l'adresse d'un excellent restaurant. | کارکنان شما از اول تا آخر بسیار دلنشین بودند، به‌خصوص خانم جوان پذیرش، که نشانی یک رستوران عالی را به ما داد.
+- La chambre était propre et calme, et la vue sur le lac depuis le balcon était superbe. | اتاق تمیز و آرام بود و منظرهٔ دریاچه از بالکن فوق‌العاده بود.
+- Le petit-déjeuner était formidable : du pain frais, des confitures de la région et de très bons fromages. | صبحانه هم عالی بود: نان تازه، مرباهای محلی و پنیرهای خیلی خوب.
+- Malheureusement, il y avait un problème avec la douche. | متأسفانه دوش مشکل داشت.
+- Le premier soir, l'eau est restée froide pendant vingt minutes, et le deuxième soir, il n'y avait pas d'eau chaude du tout. | شب اول آب بیست دقیقه سرد ماند و شب دوم اصلاً آب گرم نبود.
+- La réception nous a promis un technicien pour le lendemain matin, mais personne n'est venu. | پذیرش قول داد فردا صبح یک تکنیسین بیاید، ولی کسی نیامد.
+- Ensuite, il y avait une erreur sur la facture. | بعد، صورت‌حساب اشتباه داشت.
+- Votre site internet dit que le parking est gratuit pour les clients, alors que nous avons payé 15 euros par nuit. | سایت اینترنتی شما می‌گوید پارکینگ برای مهمان‌ها رایگان است، در حالی که ما شبی ۱۵ یورو پرداختیم. | tts: Votre site internet dit que le parking est gratuit pour les clients, alors que nous avons payé quinze euros par nuit.
+- Je venais de payer quand j'ai remarqué l'erreur, mais la réception ne pouvait pas me rendre l'argent sans l'accord du directeur. | تازه پول را داده بودم که متوجه اشتباه شدم، ولی پذیرش بدون موافقت مدیر نمی‌توانست پولم را پس بدهد.
+- Je ne pense pas que ce soit à nous de payer ce parking. | فکر نمی‌کنم پرداخت این پارکینگ با ما باشد.
+- Pourriez-vous donc me rendre ces 45 euros sur ma carte ? | پس ممکن است این ۴۵ یورو را به کارتم برگردانید؟ | tts: Pourriez-vous donc me rendre ces quarante-cinq euros sur ma carte ?
+- Je vous envoie une photo de la facture et de la page de votre site. | عکس صورت‌حساب و صفحهٔ سایتتان را برایتان می‌فرستم.
+- Malgré ces problèmes, nous avons beaucoup aimé Annecy et votre hôtel. | با وجود این مشکلات، آنسی و هتل شما را خیلی دوست داشتیم.
+- Nous reviendrions avec plaisir l'été prochain, mais nous choisirions sans doute une autre chambre ! | با کمال میل تابستان آینده برمی‌گردیم، ولی احتمالاً اتاق دیگری انتخاب می‌کنیم!
+- Cordialement, | با احترام،
+- Antoine Moreau | آنتوان مورو
+reading A:
+{"type":"mcq","prompt":"Pourquoi Antoine Moreau écrit-il à l'hôtel ?","prompt_fa":"آنتوان مورو چرا به هتل نامه می‌نویسد؟","options":["Pour réserver une chambre pour l'été.","Pour donner son avis et demander de l'argent.","Pour remercier seulement le personnel.","Pour dire qu'il a oublié un objet dans la chambre."],"correct":1,"explanation_fa":"او می‌نویسد: «Je voudrais vous donner mon avis sur ce séjour» و «Pourriez-vous donc me rendre ces 45 euros»."}
+{"type":"tf","prompt":"Le couple a aimé la vue depuis la chambre.","prompt_fa":"این زن و شوهر منظرهٔ اتاق را دوست داشتند.","correct":true,"explanation_fa":"او می‌نویسد: «la vue sur le lac depuis le balcon était superbe»."}
+{"type":"tf","prompt":"Un technicien est venu réparer la douche le lendemain.","prompt_fa":"فردای آن روز یک تکنیسین آمد و دوش را تعمیر کرد.","correct":false,"explanation_fa":"او می‌نویسد: «La réception nous a promis un technicien pour le lendemain matin, mais personne n'est venu.»"}
+{"type":"find","prompt":"Quelle phrase explique l'erreur sur la facture ?","prompt_fa":"کدام جمله اشتباه صورت‌حساب را توضیح می‌دهد؟","correct_sentence":11,"explanation_fa":"او می‌نویسد: «Votre site internet dit que le parking est gratuit pour les clients, alors que nous avons payé 15 euros par nuit.»"}
+reading B:
+{"type":"ctx","word":"Malgré","prompt":"« Malgré ces problèmes, nous avons beaucoup aimé Annecy » : « malgré » veut dire ici…","prompt_fa":"در «Malgré ces problèmes, nous avons beaucoup aimé Annecy»، «malgré» یعنی…","options":["à cause de","avant","même avec","grâce à"],"correct":2,"explanation_fa":"«malgré» یعنی «با وجود»: مشکل‌ها بود، ولی آن‌ها باز هم آنسی و هتل را دوست داشتند."}
+{"type":"match","prompt":"Qu'est-ce qu'Antoine dit de chaque chose ?","prompt_fa":"آنتوان دربارهٔ هر چیز چه می‌گوید؟","left":["le personnel","la douche","le parking","le petit-déjeuner"],"right":["Il était formidable.","Il a été charmant.","L'eau est restée froide.","Il n'était pas gratuit.","Il était trop petit."],"pairs":[[0,1],[1,2],[2,3],[3,0]],"explanation_fa":"«Votre personnel a été charmant»، دربارهٔ دوش «l'eau est restée froide»، پارکینگ را پول دادند و «Le petit-déjeuner était formidable»."}
+{"type":"cloze","prompt":"Complétez la phrase de la lettre.","prompt_fa":"جملهٔ نامه را کامل کنید.","text_with_gaps":"Je {{1}} de payer quand j'ai remarqué l'erreur, mais la réception ne pouvait pas me rendre l'argent sans l'{{2}} du directeur.","bank":["venais","accord","allais","adresse","avis"],"answers":["venais","accord"],"explanation_fa":"او می‌نویسد: «Je venais de payer quand j'ai remarqué l'erreur, mais la réception ne pouvait pas me rendre l'argent sans l'accord du directeur.»"}
+listening A:
+{"type":"num","prompt":"Combien d'euros Antoine demande-t-il à l'hôtel ?","prompt_fa":"آنتوان چند یورو از هتل می‌خواهد؟","answer":"45","accepted":["45","quarante-cinq"],"explanation_fa":"او می‌گوید: «Pourriez-vous donc me rendre ces 45 euros sur ma carte ?»"}
+{"type":"mcq","prompt":"Combien de nuits le couple est-il resté à l'hôtel ?","prompt_fa":"این زن و شوهر چند شب در هتل ماندند؟","options":["Deux nuits.","Trois nuits.","Quatre nuits.","Quinze nuits."],"correct":1,"explanation_fa":"او می‌گوید: «Ma femme et moi avons passé trois nuits dans votre hôtel»."}
+{"type":"tf","prompt":"La jeune femme de la réception leur a donné l'adresse d'un restaurant.","prompt_fa":"خانم جوان پذیرش نشانی یک رستوران را به آن‌ها داد.","correct":true,"explanation_fa":"او می‌گوید: «la jeune femme de la réception, qui nous a donné l'adresse d'un excellent restaurant»."}
+{"type":"tf","prompt":"Le deuxième soir, l'eau de la douche était chaude.","prompt_fa":"شب دوم آب دوش گرم بود.","correct":false,"explanation_fa":"او می‌گوید: «le deuxième soir, il n'y avait pas d'eau chaude du tout»."}
+listening B:
+{"type":"mcq","prompt":"Que pense Antoine du parking ?","prompt_fa":"آنتوان دربارهٔ پارکینگ چه فکری می‌کند؟","options":["Qu'il était trop loin de l'hôtel.","Qu'il était trop petit.","Que ce n'est pas à lui de le payer.","Qu'il était trop cher pour une nuit."],"correct":2,"explanation_fa":"او می‌گوید: «Je ne pense pas que ce soit à nous de payer ce parking.»"}
+{"type":"mcq","prompt":"Que ferait le couple l'été prochain ?","prompt_fa":"این زن و شوهر تابستان آینده چه کار می‌کردند؟","options":["Il choisirait un autre hôtel à Annecy.","Il reviendrait, mais dans une autre chambre.","Il ne viendrait plus jamais à Annecy.","Il resterait plus longtemps dans la chambre 24."],"correct":1,"explanation_fa":"او می‌گوید: «Nous reviendrions avec plaisir l'été prochain, mais nous choisirions sans doute une autre chambre !»"}
+{"type":"tf","prompt":"Antoine envoie une photo de la facture.","prompt_fa":"آنتوان عکس صورت‌حساب را می‌فرستد.","correct":true,"explanation_fa":"او می‌گوید: «Je vous envoie une photo de la facture»."}
+{"type":"tf","prompt":"Antoine n'a pas aimé Annecy.","prompt_fa":"آنتوان آنسی را دوست نداشت.","correct":false,"explanation_fa":"او می‌گوید: «nous avons beaucoup aimé Annecy et votre hôtel»."}

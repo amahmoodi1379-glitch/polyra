@@ -1,0 +1,45 @@
+code: fr-b1-t042
+title: Ouvrir un compte à la banque
+band: 3
+kind: long_dialogue
+key_words: preuve, verser, retirer, sécurité
+sentences:
+A: Bonjour Monsieur, je suis Madame Laurent. Asseyez-vous. | سلام آقا، من خانم لوران هستم. بفرمایید بنشینید.
+B: Bonjour Madame. Je suis Arash Karimi. Je viens d'arriver d'Iran, et je voudrais ouvrir un compte. | سلام خانم. من آرش کریمی هستم. تازه از ایران آمده‌ام و می‌خواهم حساب باز کنم.
+B: Je commence un travail dans un hôtel le mois prochain, et mon patron a besoin d'un compte pour me verser mon salaire. | ماه بعد کاری را در یک هتل شروع می‌کنم و رئیسم برای واریز حقوقم به یک حساب احتیاج دارد.
+A: Vous avez votre passeport et une preuve de votre adresse ? | پاسپورت و مدرکی برای نشانی‌تان دارید؟
+B: Voilà mon passeport, avec mon visa. Pour l'adresse, j'ai une lettre de ma propriétaire. | این پاسپورتم، با ویزایم. برای نشانی هم نامه‌ای از صاحب‌خانه‌ام دارم.
+A: Malheureusement, une lettre ne suffit pas. Il me faut une facture d'électricité ou d'internet. | متأسفانه یک نامه کافی نیست. یک قبض برق یا اینترنت لازم دارم.
+B: Mais je n'ai pas encore de facture : j'habite dans cet appartement depuis dix jours seulement. | ولی هنوز قبضی ندارم: فقط ده روز است که در این آپارتمان زندگی می‌کنم.
+A: Dans ce cas, il faut que votre propriétaire écrive une lettre et qu'elle vous donne aussi une de ses factures. | در این صورت، صاحب‌خانه‌تان باید نامه‌ای بنویسد و یکی از قبض‌هایش را هم به شما بدهد.
+B: D'accord, je lui demande ce soir. Et la carte, je la reçois quand ? | باشد، امشب از او می‌خواهم. کارت را کی می‌گیرم؟
+A: Elle arrivera chez vous par la poste dans une semaine environ. Le code arrivera deux jours après, dans une autre lettre. | حدود یک هفتهٔ دیگر با پست به خانه‌تان می‌رسد. رمزش دو روز بعد در نامهٔ دیگری می‌رسد.
+A: C'est pour votre sécurité. Si quelqu'un volait la première lettre, il ne pourrait pas utiliser la carte sans le code. | برای امنیت خودتان است. اگر کسی نامهٔ اول را بدزدد، بدون رمز نمی‌تواند از کارت استفاده کند.
+B: Ah, je n'avais pas pensé à ça ! Et je peux voir mon argent sur mon téléphone ? | آهان، به این فکر نکرده بودم! می‌توانم پولم را روی گوشی‌ام ببینم؟
+A: Bien sûr. Vous téléchargez notre application et vous choisissez un mot de passe. | البته. اپلیکیشن ما را دانلود می‌کنید و یک رمز عبور انتخاب می‌کنید.
+B: Et tout ça coûte combien ? | این‌ها روی هم چقدر خرج دارد؟
+A: D'habitude, 2 euros par mois, mais c'est gratuit la première année pour les nouveaux clients. | معمولاً ماهی دو یورو، ولی برای مشتری‌های تازه سال اول رایگان است. | tts: D'habitude, deux euros par mois, mais c'est gratuit la première année pour les nouveaux clients.
+B: Et je peux retirer de l'argent dans tous les distributeurs ? | می‌توانم از همهٔ دستگاه‌های خودپرداز پول بگیرم؟
+A: Oui, mais pas plus de 500 euros par semaine. Et à l'étranger, vous paierez un euro à chaque fois. | بله، ولی نه بیشتر از هفته‌ای ۵۰۰ یورو. در خارج از کشور هم هر بار یک یورو می‌پردازید. | tts: Oui, mais pas plus de cinq cents euros par semaine. Et à l'étranger, vous paierez un euro à chaque fois.
+A: Bon, signez ici. Je vous donne aussi une liste des papiers, pour que vous n'oubliiez rien demain. | خب، اینجا را امضا کنید. یک فهرست از مدارک هم به شما می‌دهم تا فردا چیزی را فراموش نکنید.
+B: Merci, Madame. En France, les papiers, c'est vraiment mon angoisse ! | ممنون خانم. در فرانسه کاغذبازی واقعاً کابوس من است!
+A: Vous n'êtes pas le seul ! Bienvenue en France ! | فقط شما نیستید! به فرانسه خوش آمدید!
+reading A:
+{"type":"mcq","prompt":"Pourquoi Arash veut-il ouvrir un compte ?","prompt_fa":"آرش چرا می‌خواهد حساب باز کند؟","options":["Pour acheter un appartement.","Pour recevoir son salaire de l'hôtel.","Pour payer ses études en France.","Pour envoyer de l'argent en Iran."],"correct":1,"explanation_fa":"آرش می‌گوید: «mon patron a besoin d'un compte pour me verser mon salaire»."}
+{"type":"tf","prompt":"Arash a apporté tous les papiers dont la banque a besoin.","prompt_fa":"آرش همهٔ مدارکی را که بانک لازم دارد آورده است.","correct":false,"explanation_fa":"خانم لوران می‌گوید: «une lettre ne suffit pas. Il me faut une facture»."}
+{"type":"tf","prompt":"La première année, Arash ne paiera rien pour son compte.","prompt_fa":"آرش سال اول برای حسابش پولی نمی‌پردازد.","correct":true,"explanation_fa":"خانم لوران می‌گوید: «c'est gratuit la première année pour les nouveaux clients»."}
+{"type":"find","prompt":"Quelle phrase explique pourquoi la carte et le code arrivent dans deux lettres ?","prompt_fa":"کدام جمله توضیح می‌دهد چرا کارت و رمز در دو نامه می‌رسند؟","correct_sentence":10,"explanation_fa":"خانم لوران می‌گوید: «C'est pour votre sécurité. Si quelqu'un volait la première lettre, il ne pourrait pas utiliser la carte sans le code.»"}
+reading B:
+{"type":"ctx","word":"ne suffit pas","prompt":"« une lettre ne suffit pas » : pour Madame Laurent, la lettre de la propriétaire…","prompt_fa":"«une lettre ne suffit pas»: از نظر خانم لوران، نامهٔ صاحب‌خانه…","options":["est arrivée en retard.","est trop longue.","ne peut pas remplacer une facture.","doit être écrite en français."],"correct":2,"explanation_fa":"«ne suffit pas» یعنی کافی نیست؛ خانم لوران می‌گوید: «Il me faut une facture d'électricité ou d'internet»."}
+{"type":"order","prompt":"Mettez ces moments dans l'ordre.","prompt_fa":"این لحظه‌ها را به ترتیب بچینید.","items":["Arash recevra le code de la carte.","Arash reviendra avec la lettre de sa propriétaire.","Arash signe un papier à la banque.","Arash recevra sa carte."],"correct_order":[2,1,3,0],"explanation_fa":"امروز «signez ici»، فردا آرش با نامه برمی‌گردد، کارت «dans une semaine environ» و رمز «deux jours après» می‌رسد."}
+{"type":"match","prompt":"De quoi parle-t-on ?","prompt_fa":"دربارهٔ چه چیزی حرف می‌زنند؟","left":["le passeport","la lettre de la propriétaire","le code de la carte"],"right":["Il arrivera dans une autre lettre.","Arash l'a apporté aujourd'hui.","Il est gratuit pour les nouveaux clients.","Elle ne suffit pas."],"pairs":[[0,1],[1,3],[2,0]],"explanation_fa":"آرش می‌گوید: «Voilà mon passeport»، خانم لوران دربارهٔ نامه می‌گوید «une lettre ne suffit pas» و «Le code arrivera deux jours après, dans une autre lettre»."}
+listening A:
+{"type":"num","prompt":"Arash ne peut pas retirer plus de combien d'euros par semaine ?","prompt_fa":"آرش در هفته حداکثر چند یورو می‌تواند از خودپرداز بگیرد؟","answer":"500","accepted":["500","cinq cents"],"explanation_fa":"خانم لوران می‌گوید: «pas plus de 500 euros par semaine»."}
+{"type":"mcq","prompt":"Quand la carte arrivera-t-elle chez Arash ?","prompt_fa":"کارت کی به خانهٔ آرش می‌رسد؟","options":["Demain matin.","Dans deux jours.","Dans un mois.","Dans une semaine environ."],"correct":3,"explanation_fa":"خانم لوران می‌گوید: «Elle arrivera chez vous par la poste dans une semaine environ.»"}
+{"type":"tf","prompt":"Arash va travailler dans un hôtel.","prompt_fa":"آرش قرار است در یک هتل کار کند.","correct":true,"explanation_fa":"آرش می‌گوید: «Je commence un travail dans un hôtel le mois prochain»."}
+{"type":"tf","prompt":"À l'étranger, Arash ne paiera rien quand il retire de l'argent.","prompt_fa":"آرش در خارج از کشور برای گرفتن پول چیزی نمی‌پردازد.","correct":false,"explanation_fa":"خانم لوران می‌گوید: «à l'étranger, vous paierez un euro à chaque fois»."}
+listening B:
+{"type":"mcq","prompt":"Que doit faire Arash pour voir son argent sur son téléphone ?","prompt_fa":"آرش برای دیدن پولش روی گوشی چه کار باید بکند؟","options":["Appeler la banque chaque mois.","Télécharger l'application de la banque.","Aller à un distributeur.","Envoyer un message à Madame Laurent."],"correct":1,"explanation_fa":"خانم لوران می‌گوید: «Vous téléchargez notre application et vous choisissez un mot de passe.»"}
+{"type":"mcq","prompt":"Depuis combien de temps Arash habite-t-il dans son appartement ?","prompt_fa":"آرش چند وقت است که در آپارتمانش زندگی می‌کند؟","options":["Depuis deux ans.","Depuis un mois.","Depuis dix jours.","Depuis une semaine."],"correct":2,"explanation_fa":"آرش می‌گوید: «j'habite dans cet appartement depuis dix jours seulement»."}
+{"type":"tf","prompt":"Madame Laurent donne à Arash une liste des papiers.","prompt_fa":"خانم لوران فهرست مدارک را به آرش می‌دهد.","correct":true,"explanation_fa":"خانم لوران می‌گوید: «Je vous donne aussi une liste des papiers»."}
+{"type":"tf","prompt":"Pour Arash, les papiers en France, c'est facile.","prompt_fa":"از نظر آرش، کارهای اداری در فرانسه آسان است.","correct":false,"explanation_fa":"آرش می‌گوید: «En France, les papiers, c'est vraiment mon angoisse !»"}

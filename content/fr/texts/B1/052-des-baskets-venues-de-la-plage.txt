@@ -1,0 +1,41 @@
+code: fr-b1-t052
+title: Des baskets venues de la plage
+band: 3
+kind: news
+key_words: ramasser, méthode, transformer, commande, solide
+sentences:
+- Près de Brest, une petite entreprise de sept personnes fabrique des baskets avec de vieilles bouteilles ramassées sur les plages de Bretagne. | نزدیک برست، یک شرکت کوچک هفت‌نفره با بطری‌های کهنه‌ای که از ساحل‌های برتانی جمع شده کفش ورزشی می‌سازد.
+- L'idée est née il y a quatre ans, après une nuit de grand vent. | این فکر چهار سال پیش، بعد از یک شب طوفانی، به وجود آمد.
+- Ce matin-là, Manon et Julien, deux amis qui passaient leurs week-ends sur les vagues, ont trouvé plus de 300 bouteilles sur le sable. | آن روز صبح، مانون و ژولین، دو دوست که آخر هفته‌هایشان را روی موج‌ها می‌گذراندند، بیش از ۳۰۰ بطری روی شن پیدا کردند. | tts: Ce matin-là, Manon et Julien, deux amis qui passaient leurs week-ends sur les vagues, ont trouvé plus de trois cents bouteilles sur le sable.
+- « Nous ne pouvions pas les laisser là, alors nous les avons ramassées », raconte Manon. | مانون تعریف می‌کند: «نمی‌توانستیم آن‌ها را همان‌جا رها کنیم، برای همین جمعشان کردیم.»
+- « Puis nous avons cherché une idée pour les utiliser. » | «بعد دنبال راهی گشتیم که از آن‌ها استفاده کنیم.»
+- Julien, ingénieur, a mis un an à trouver la bonne méthode : on lave les bouteilles, on les coupe en petits morceaux, puis on les transforme en fil. | ژولین که مهندس است، یک سال وقت گذاشت تا روش درست را پیدا کند: بطری‌ها را می‌شویند، تکه‌تکه می‌کنند و بعد به نخ تبدیلشان می‌کنند.
+- Avec ce fil, une usine de la région fabrique ensuite le haut des chaussures. | بعد یک کارخانه در همان منطقه با این نخ رویهٔ کفش‌ها را می‌سازد.
+- Il faut à peu près 12 bouteilles pour une paire. | برای هر جفت کفش حدود ۱۲ بطری لازم است. | tts: Il faut à peu près douze bouteilles pour une paire.
+- Au début, personne ne croyait à leur projet, et les banques ont refusé de leur prêter de l'argent. | اوایل هیچ‌کس به طرحشان باور نداشت و بانک‌ها حاضر نشدند به آن‌ها وام بدهند.
+- Ils ont travaillé le soir et le week-end, sans salaire, jusqu'à ce que les premières commandes arrivent. | آن‌ها شب‌ها و آخر هفته‌ها بدون حقوق کار کردند، تا وقتی که اولین سفارش‌ها رسید.
+- Aujourd'hui, c'est un vrai succès : l'entreprise a vendu 20 000 paires l'année dernière, en France, mais aussi au Japon et au Canada. | امروز کارشان واقعاً گرفته است: شرکت پارسال ۲۰ هزار جفت فروخت، در فرانسه و همین‌طور در ژاپن و کانادا. | tts: Aujourd'hui, c'est un vrai succès : l'entreprise a vendu vingt mille paires l'année dernière, en France, mais aussi au Japon et au Canada.
+- Une paire coûte 120 euros. Ce n'est pas bon marché, mais les chaussures sont solides et légères. | هر جفت ۱۲۰ یورو است. ارزان نیست، ولی کفش‌ها محکم و سبک‌اند. | tts: Une paire coûte cent vingt euros. Ce n'est pas bon marché, mais les chaussures sont solides et légères.
+- « Nos clients veulent de belles chaussures, mais ils veulent aussi protéger la mer », explique Julien. | ژولین توضیح می‌دهد: «مشتری‌هایمان کفش قشنگ می‌خواهند، ولی می‌خواهند از دریا هم محافظت کنند.»
+- Les écoles de la région participent aussi : chaque printemps, des élèves ramassent les bouteilles avec l'équipe. | مدرسه‌های منطقه هم همکاری می‌کنند: هر بهار، دانش‌آموزان همراه گروه بطری‌ها را جمع می‌کنند.
+- L'entreprise cherche maintenant cinq nouveaux employés, et elle va ouvrir une boutique à Rennes en septembre. | شرکت حالا دنبال پنج کارمند تازه است و قرار است سپتامبر یک فروشگاه در رن باز کند.
+- Manon, elle, a déjà un nouveau rêve : fabriquer des maillots de bain avec les mêmes bouteilles. | مانون هم از حالا رؤیای تازه‌ای دارد: ساختن مایوی شنا با همین بطری‌ها.
+reading A:
+{"type":"mcq","prompt":"Que fabrique l'entreprise ?","prompt_fa":"این شرکت چه چیزی می‌سازد؟","options":["Des bouteilles pour l'eau de la mer.","Des chaussures avec de vieilles bouteilles.","Des sacs avec le sable de la plage.","Des maillots de bain pour les enfants."],"correct":1,"explanation_fa":"خبر می‌گوید: «une petite entreprise … fabrique des baskets avec de vieilles bouteilles»."}
+{"type":"tf","prompt":"Au début, les banques ont aidé Manon et Julien.","prompt_fa":"اوایل بانک‌ها به مانون و ژولین کمک کردند.","correct":false,"explanation_fa":"خبر می‌گوید: «les banques ont refusé de leur prêter de l'argent»."}
+{"type":"tf","prompt":"Des élèves aident à ramasser les bouteilles.","prompt_fa":"دانش‌آموزان در جمع کردن بطری‌ها کمک می‌کنند.","correct":true,"explanation_fa":"خبر می‌گوید: «des élèves ramassent les bouteilles avec l'équipe»."}
+{"type":"find","prompt":"Quelle phrase explique ce qu'on fait avec les bouteilles pour avoir du fil ?","prompt_fa":"کدام جمله توضیح می‌دهد که با بطری‌ها چه می‌کنند تا نخ به دست بیاید؟","correct_sentence":5,"explanation_fa":"خبر می‌گوید: «on lave les bouteilles, on les coupe en petits morceaux, puis on les transforme en fil»."}
+reading B:
+{"type":"ctx","word":"solides","prompt":"« les chaussures sont solides et légères » : « solides » veut dire qu'elles…","prompt_fa":"«les chaussures sont solides et légères»: «solides» یعنی کفش‌ها…","options":["coûtent cher.","durent longtemps.","sont très lourdes.","sont faciles à laver."],"correct":1,"explanation_fa":"«solide» یعنی محکم؛ چیزی که محکم است زود خراب نمی‌شود و مدت زیادی دوام می‌آورد."}
+{"type":"order","prompt":"Mettez l'histoire de l'entreprise dans l'ordre.","prompt_fa":"داستان شرکت را به ترتیب بچینید.","items":["L'entreprise vend 20 000 paires.","Julien trouve la bonne méthode.","L'entreprise ouvre une boutique à Rennes.","Manon et Julien trouvent des bouteilles sur la plage."],"correct_order":[3,1,0,2],"explanation_fa":"اول «ont trouvé plus de 300 bouteilles»، بعد ژولین «a mis un an à trouver la bonne méthode»، پارسال «a vendu 20 000 paires» و در سپتامبر «elle va ouvrir une boutique à Rennes»."}
+{"type":"cloze","prompt":"Complétez la phrase du texte.","prompt_fa":"جملهٔ متن را کامل کنید.","text_with_gaps":"Ils ont travaillé le soir et le week-end, sans salaire, {{1}} ce que les premières {{2}} arrivent.","bank":["jusqu'à","commandes","après","bouteilles","banques"],"answers":["jusqu'à","commandes"],"explanation_fa":"خبر می‌گوید: «Ils ont travaillé le soir et le week-end, sans salaire, jusqu'à ce que les premières commandes arrivent.»"}
+listening A:
+{"type":"num","prompt":"Combien de bouteilles faut-il à peu près pour une paire ?","prompt_fa":"برای یک جفت کفش حدوداً چند بطری لازم است؟","answer":"12","accepted":["12","douze"],"explanation_fa":"می‌شنویم: «Il faut à peu près 12 bouteilles pour une paire.»"}
+{"type":"mcq","prompt":"Où l'entreprise va-t-elle ouvrir une boutique ?","prompt_fa":"شرکت کجا فروشگاه باز می‌کند؟","options":["À Brest.","À Rennes.","À Nantes.","Au Japon."],"correct":1,"explanation_fa":"می‌شنویم: «elle va ouvrir une boutique à Rennes en septembre»."}
+{"type":"tf","prompt":"Julien est ingénieur.","prompt_fa":"ژولین مهندس است.","correct":true,"explanation_fa":"می‌شنویم: «Julien, ingénieur, a mis un an à trouver la bonne méthode»."}
+{"type":"tf","prompt":"Les chaussures de l'entreprise sont lourdes.","prompt_fa":"کفش‌های این شرکت سنگین‌اند.","correct":false,"explanation_fa":"می‌شنویم: «les chaussures sont solides et légères»."}
+listening B:
+{"type":"mcq","prompt":"Quand l'idée est-elle née ?","prompt_fa":"این فکر کی به وجود آمد؟","options":["Pendant un voyage au Japon.","Dans une usine de la région.","Après une nuit de grand vent.","Pendant un cours à l'école."],"correct":2,"explanation_fa":"می‌شنویم: «L'idée est née il y a quatre ans, après une nuit de grand vent.»"}
+{"type":"mcq","prompt":"Quel est le nouveau rêve de Manon ?","prompt_fa":"رؤیای تازهٔ مانون چیست؟","options":["Ouvrir une boutique au Canada.","Acheter une usine.","Habiter près de la mer.","Fabriquer des maillots de bain."],"correct":3,"explanation_fa":"می‌شنویم: «fabriquer des maillots de bain avec les mêmes bouteilles»."}
+{"type":"tf","prompt":"L'année dernière, l'entreprise a vendu des chaussures seulement en France.","prompt_fa":"شرکت پارسال فقط در فرانسه کفش فروخت.","correct":false,"explanation_fa":"می‌شنویم: «en France, mais aussi au Japon et au Canada»."}
+{"type":"tf","prompt":"L'entreprise cherche de nouveaux employés.","prompt_fa":"شرکت دنبال کارمندهای تازه است.","correct":true,"explanation_fa":"می‌شنویم: «L'entreprise cherche maintenant cinq nouveaux employés»."}
