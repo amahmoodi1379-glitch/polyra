@@ -1,0 +1,27 @@
+code: de-a2-t041
+title: Ein Zimmer in der WG
+band: 1
+kind: dialogue
+key_words: WG, Haushalt, putzen, spülen, aufräumen
+sentences:
+A: Hallo, ich bin Jonas. Ist das Zimmer in eurer WG noch frei? | سلام، من یوناس هستم. اتاق خانهٔ مشترکتان هنوز خالی است؟
+B: Ja! Aber zuerst eine Frage: Was machst du im Haushalt gern? | آره! ولی اول یک سؤال: از کارهای خانه چه کاری را دوست داری؟
+A: Ich koche gern und räume oft auf. | آشپزی را دوست دارم و زیاد خانه را مرتب می‌کنم.
+B: Und putzen? Jeder putzt einmal pro Woche das Bad. | تمیزکاری چه؟ هر کسی هفته‌ای یک بار حمام را تمیز می‌کند.
+A: Das ist okay. Aber ich spüle nicht so gern. | این مشکلی نیست. ولی ظرف شستن را زیاد دوست ندارم.
+B: Wir haben keine Spülmaschine, deshalb spült jeder selbst. | ما ماشین ظرف‌شویی نداریم، برای همین هر کسی ظرف‌هایش را خودش می‌شوید.
+A: Gut, das lerne ich! | باشد، یادش می‌گیرم!
+reading A:
+{"type":"mcq","prompt":"یوناس چرا آمده است؟","options":["می‌خواهد حمام را تمیز کند","دنبال اتاقی در این خانهٔ مشترک است","می‌خواهد ماشین ظرف‌شویی بفروشد","مهمان یکی از هم‌خانه‌هاست"],"correct":1,"explanation_fa":"یوناس می‌پرسد: «Ist das Zimmer in eurer WG noch frei?»"}
+{"type":"tf","prompt":"یوناس آشپزی را دوست دارد.","correct":true,"explanation_fa":"یوناس می‌گوید: «Ich koche gern.»"}
+{"type":"tf","prompt":"در این خانه ماشین ظرف‌شویی هست.","correct":false,"explanation_fa":"گفته می‌شود: «Wir haben keine Spülmaschine.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید هر کسی چند وقت یک بار حمام را تمیز می‌کند؟","correct_sentence":3,"explanation_fa":"گفته می‌شود: «Jeder putzt einmal pro Woche das Bad.»"}
+{"type":"match","prompt":"هر کار را به نظر یوناس دربارهٔ آن وصل کن.","left":["آشپزی","ظرف شستن"],"right":["دوست دارد","زیاد دوست ندارد","هیچ‌وقت نمی‌کند"],"pairs":[[0,0],[1,1]],"explanation_fa":"یوناس می‌گوید: «Ich koche gern» و «ich spüle nicht so gern»."}
+listening A:
+{"type":"mcq","prompt":"هر کسی هفته‌ای یک بار چه کار می‌کند؟","options":["خرید می‌کند","آشپزی می‌کند","آشپزخانه را مرتب می‌کند","حمام را تمیز می‌کند"],"correct":3,"explanation_fa":"گفته می‌شود: «Jeder putzt einmal pro Woche das Bad.»"}
+{"type":"tf","prompt":"یوناس زیاد خانه را مرتب می‌کند.","correct":true,"explanation_fa":"یوناس می‌گوید: «Ich koche gern und räume oft auf.»"}
+{"type":"tf","prompt":"یوناس ظرف شستن را خیلی دوست دارد.","correct":false,"explanation_fa":"یوناس می‌گوید: «Aber ich spüle nicht so gern.»"}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"mcq","prompt":"چرا هر کسی خودش ظرف می‌شوید؟","options":["ماشین ظرف‌شویی ندارند","ماشین ظرف‌شویی خراب است","هیچ‌کس وقت ندارد","آب گرم ندارند"],"correct":0,"explanation_fa":"گفته می‌شود: «Wir haben keine Spülmaschine, deshalb spült jeder selbst.»"}

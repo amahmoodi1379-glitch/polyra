@@ -1,0 +1,36 @@
+code: de-a2-t032
+title: Ich heirate!
+band: 2
+kind: email
+key_words: heiraten, Hochzeit, Ehemann, in Kontakt bleiben
+sentences:
+- Liebe{lieb} Sophie, wie geht es dir? | سوفی عزیز، حالت چطور است؟
+- Wir hatten lange keinen Kontakt. | مدت زیادی است که از هم خبر نداریم.
+- Ich muss dir etwas erzählen: Ich heirate! | باید چیزی برایت تعریف کنم: دارم ازدواج می‌کنم!
+- Felix ist meine große Liebe, und wir sind schon vier Jahre zusammen. | فلیکس عشق بزرگ من است و چهار سال است که با هم هستیم.
+- Die Hochzeit ist im Juni in Leipzig. | عروسی در ماه ژوئن در لایپزیگ است.
+- Um 14 Uhr heiraten wir, danach feiern wir mit Familie und Freunden bei meinen Eltern im Garten. | ساعت ۱۴ ازدواج می‌کنیم و بعد با خانواده و دوستان در باغ پدر و مادرم جشن می‌گیریم. | tts: Um vierzehn Uhr heiraten wir, danach feiern wir mit Familie und Freunden bei meinen Eltern im Garten.
+- Du warst in der Schule meine beste Freundin, und ich möchte dich auf meiner Hochzeit sehen! | تو در مدرسه بهترین دوستم بودی و دلم می‌خواهد تو را در عروسی‌ام ببینم!
+- Bring natürlich auch deinen Ehemann mit! | البته همسرت را هم با خودت بیاور!
+- Kannst du mir bis Ende April Bescheid sagen? | می‌توانی تا آخر آوریل خبرم کنی؟
+- Ich hoffe, wir bleiben jetzt wieder in Kontakt! | امیدوارم از حالا دوباره با هم در تماس بمانیم!
+- Bis bald, deine Laura | به امید دیدار، لورا
+reading A:
+{"type":"mcq","prompt":"لورا چرا این ایمیل را می‌نویسد؟","options":["تا سوفی را به تولدش دعوت کند","تا سوفی را به عروسی‌اش دعوت کند","تا از سفرش به لایپزیگ بگوید","تا از مدرسه قدیمی‌شان بگوید"],"correct":1,"explanation_fa":"لورا می‌نویسد: «Ich heirate!» و «ich möchte dich auf meiner Hochzeit sehen!»"}
+{"type":"tf","prompt":"لورا و سوفی مدت زیادی از هم خبر نداشته‌اند.","correct":true,"explanation_fa":"لورا می‌نویسد: «Wir hatten lange keinen Kontakt.»"}
+{"type":"tf","prompt":"عروسی در ماه آوریل است.","correct":false,"explanation_fa":"لورا می‌نویسد: «Die Hochzeit ist im Juni»؛ آوریل فقط مهلت جواب دادن سوفی است."}
+{"type":"mcq","prompt":"جشن عروسی کجاست؟","options":["در یک رستوران در لایپزیگ","در خانه سوفی","در مدرسه قدیمی‌شان","در باغ پدر و مادر لورا"],"correct":3,"explanation_fa":"لورا می‌نویسد: «danach feiern wir … bei meinen Eltern im Garten»."}
+reading B:
+{"type":"cloze","prompt":"جای خالی را با کلمه درست پر کن.","text_with_gaps":"Felix ist meine große {{1}}, und wir sind schon vier Jahre zusammen. Die {{2}} ist im Juni in Leipzig.","bank":["Liebe","Hochzeit","Kontakt","Leben","Ehemann"],"answers":["Liebe","Hochzeit"],"explanation_fa":"در ایمیل آمده: «Felix ist meine große Liebe» و «Die Hochzeit ist im Juni in Leipzig»."}
+{"type":"find","prompt":"کدام جمله می‌گوید سوفی تا کی باید جواب بدهد؟","correct_sentence":8,"explanation_fa":"لورا می‌پرسد: «Kannst du mir bis Ende April Bescheid sagen?»"}
+{"type":"match","prompt":"هر زمان را به چیزی که در ایمیل آمده وصل کن.","left":["ساعت ۱۴","ژوئن","آخر آوریل"],"right":["ساعت ازدواج","ماه عروسی","مهلت جواب سوفی","ماه تولد لورا"],"pairs":[[0,0],[1,1],[2,2]],"explanation_fa":"لورا می‌نویسد: «Um 14 Uhr heiraten wir»، «im Juni» و «bis Ende April Bescheid sagen»."}
+listening A:
+{"type":"num","prompt":"لورا و فلیکس ساعت چند ازدواج می‌کنند؟","answer":"14","accepted":["14","14 Uhr","vierzehn"],"explanation_fa":"لورا می‌گوید: «Um 14 Uhr heiraten wir.»"}
+{"type":"tf","prompt":"لورا و سوفی در مدرسه با هم دوست بودند.","correct":true,"explanation_fa":"لورا می‌گوید: «Du warst in der Schule meine beste Freundin.»"}
+{"type":"tf","prompt":"لورا نمی‌خواهد شوهر سوفی به عروسی بیاید.","correct":false,"explanation_fa":"لورا می‌گوید: «Bring natürlich auch deinen Ehemann mit!»"}
+{"type":"mcq","prompt":"عروسی در کدام شهر است؟","options":["لایپزیگ","برلین","درسدن","هامبورگ"],"correct":0,"explanation_fa":"لورا می‌گوید: «Die Hochzeit ist im Juni in Leipzig.»"}
+listening B:
+{"type":"num","prompt":"چند سال است که لورا و فلیکس با هم هستند؟","answer":"4","accepted":["4","vier"],"explanation_fa":"لورا می‌گوید: «wir sind schon vier Jahre zusammen»."}
+{"type":"mcq","prompt":"لورا در آخر ایمیل چه امیدی دارد؟","options":["سوفی زود ازدواج کند","سوفی به لایپزیگ بیاید و آنجا بماند","از حالا دوباره با سوفی در تماس بماند","سوفی برای عروسی کیک بپزد"],"correct":2,"explanation_fa":"لورا می‌گوید: «Ich hoffe, wir bleiben jetzt wieder in Kontakt!»"}
+{"type":"tf","prompt":"جشن عروسی در یک رستوران است.","correct":false,"explanation_fa":"لورا می‌گوید جشن «bei meinen Eltern im Garten» است، یعنی در باغ پدر و مادرش."}
+{"type":"tf","prompt":"لورا با فلیکس ازدواج می‌کند.","correct":true,"explanation_fa":"لورا می‌گوید: «Felix ist meine große Liebe» و «Ich heirate!»"}

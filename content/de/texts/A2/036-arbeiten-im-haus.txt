@@ -1,0 +1,33 @@
+code: de-a2-t036
+title: Arbeiten im Haus
+band: 2
+kind: schedule
+key_words: Aufzug, Heizung, Keller, Flur, Erdgeschoss
+sentences:
+- Arbeiten{Arbeit} im Haus: Was passiert nächste Woche? | کارهای ساختمان: هفتهٔ آینده چه خبر است؟
+- Montag, 8 bis 12 Uhr: Der Aufzug funktioniert nicht. Bitte nehmen Sie die Treppe. | دوشنبه، ساعت ۸ تا ۱۲: آسانسور کار نمی‌کند. لطفاً از پله‌ها بروید. | tts: Montag, acht bis zwölf Uhr: Der Aufzug funktioniert nicht. Bitte nehmen Sie die Treppe.
+- Dienstag, 9 bis 15 Uhr: Das ganze Haus hat keine Heizung. | سه‌شنبه، ساعت ۹ تا ۱۵: کل ساختمان شوفاژ ندارد. | tts: Dienstag, neun bis fünfzehn Uhr: Das ganze Haus hat keine Heizung.
+- Mittwoch: Arbeiten{Arbeit} auf dem Dach. Die Garage ist den ganzen Tag geschlossen. | چهارشنبه: کار روی پشت‌بام. پارکینگ تمام روز بسته است.
+- Donnerstag: Arbeiten{Arbeit} im Keller. Der Keller ist von 8 bis 16 Uhr geschlossen. | پنجشنبه: کار در زیرزمین. زیرزمین از ساعت ۸ تا ۱۶ بسته است. | tts: Donnerstag: Arbeiten im Keller. Der Keller ist von acht bis sechzehn Uhr geschlossen.
+- Freitag: Der Flur im Erdgeschoss bekommt eine neue Farbe. | جمعه: راهروی طبقهٔ همکف رنگ تازه می‌خورد.
+- Die Farbe riecht ein bisschen, bitte öffnen Sie die Fenster im Flur. | رنگ کمی بو می‌دهد، لطفاً پنجره‌های راهرو را باز کنید.
+- Fragen{Frage}? Rufen Sie Herrn Wagner an: 0341 56 78 90. | سؤالی دارید؟ به آقای واگنر زنگ بزنید: ۰۳۴۱ ۵۶ ۷۸ ۹۰. | tts: Fragen? Rufen Sie Herrn Wagner an: null drei vier eins, sechsundfünfzig, achtundsiebzig, neunzig.
+reading A:
+{"type":"mcq","prompt":"این برنامه دربارهٔ چیست؟","options":["جشن ساختمان در هفتهٔ آینده","کارهای ساختمان در هفتهٔ آینده","کلاس‌های مدرسه در هفتهٔ آینده","ساعت‌های کار مغازه در هفتهٔ آینده"],"correct":1,"explanation_fa":"برنامه با «Arbeiten im Haus: Was passiert nächste Woche?» شروع می‌شود."}
+{"type":"tf","prompt":"سه‌شنبه شوفاژ چند ساعت کار نمی‌کند.","correct":true,"explanation_fa":"در برنامه آمده: «Dienstag, 9 bis 15 Uhr: Das ganze Haus hat keine Heizung.»"}
+{"type":"tf","prompt":"دوشنبه آسانسور تمام روز کار نمی‌کند.","correct":false,"explanation_fa":"در برنامه آمده: «Montag, 8 bis 12 Uhr: Der Aufzug funktioniert nicht»، یعنی فقط تا ظهر."}
+{"type":"mcq","prompt":"چهارشنبه چه چیزی تمام روز بسته است؟","options":["زیرزمین","راهرو","آسانسور","پارکینگ"],"correct":3,"explanation_fa":"در برنامه آمده: «Die Garage ist den ganzen Tag geschlossen.»"}
+reading B:
+{"type":"match","prompt":"هر روز را به کار همان روز وصل کن.","left":["دوشنبه","چهارشنبه","جمعه"],"right":["آسانسور کار نمی‌کند","کار روی پشت‌بام","راهروی طبقهٔ همکف رنگ می‌خورد","شوفاژ خاموش است"],"pairs":[[0,0],[1,1],[2,2]],"explanation_fa":"در برنامه آمده: «Montag … Der Aufzug funktioniert nicht»، «Mittwoch: Arbeiten auf dem Dach» و «Freitag: Der Flur im Erdgeschoss bekommt eine neue Farbe»."}
+{"type":"find","prompt":"کدام جمله می‌گوید برای سؤال با چه کسی تماس بگیرید؟","correct_sentence":7,"explanation_fa":"در برنامه آمده: «Fragen? Rufen Sie Herrn Wagner an.»"}
+{"type":"cloze","prompt":"جای خالی را با کلمه درست پر کن.","text_with_gaps":"Montag, 8 bis 12 Uhr: Der {{1}} funktioniert nicht. Bitte nehmen Sie die {{2}}.","bank":["Aufzug","Treppe","Garage","Dach","Heizung"],"answers":["Aufzug","Treppe"],"explanation_fa":"در برنامه آمده: «Der Aufzug funktioniert nicht. Bitte nehmen Sie die Treppe.»"}
+listening A:
+{"type":"num","prompt":"سه‌شنبه شوفاژ از ساعت چند خاموش است؟","answer":"9","accepted":["9","9 Uhr","neun"],"explanation_fa":"در برنامه آمده: «Dienstag, 9 bis 15 Uhr: Das ganze Haus hat keine Heizung.»"}
+{"type":"mcq","prompt":"دوشنبه از ساکنان چه خواسته می‌شود؟","options":["از پله‌ها بروند","از آسانسور استفاده کنند","پنجره‌ها را باز کنند","در خانه بمانند"],"correct":0,"explanation_fa":"در برنامه آمده: «Bitte nehmen Sie die Treppe.»"}
+{"type":"tf","prompt":"چهارشنبه پارکینگ باز است.","correct":false,"explanation_fa":"در برنامه آمده: «Die Garage ist den ganzen Tag geschlossen.»"}
+{"type":"tf","prompt":"پنجشنبه در زیرزمین کار می‌کنند.","correct":true,"explanation_fa":"در برنامه آمده: «Donnerstag: Arbeiten im Keller.»"}
+listening B:
+{"type":"num","prompt":"پنجشنبه زیرزمین تا ساعت چند بسته است؟","answer":"16","accepted":["16","16 Uhr","sechzehn"],"explanation_fa":"در برنامه آمده: «Der Keller ist von 8 bis 16 Uhr geschlossen.»"}
+{"type":"mcq","prompt":"جمعه راهروی کدام طبقه رنگ می‌خورد؟","options":["طبقهٔ اول","طبقهٔ دوم","طبقهٔ همکف","زیرزمین"],"correct":2,"explanation_fa":"در برنامه آمده: «Freitag: Der Flur im Erdgeschoss bekommt eine neue Farbe.»"}
+{"type":"tf","prompt":"رنگ تازه کمی بو می‌دهد.","correct":true,"explanation_fa":"در برنامه آمده: «Die Farbe riecht ein bisschen.»"}
+{"type":"tf","prompt":"سه‌شنبه فقط در طبقهٔ اول شوفاژ نیست.","correct":false,"explanation_fa":"در برنامه آمده: «Das ganze Haus hat keine Heizung»، یعنی کل ساختمان."}

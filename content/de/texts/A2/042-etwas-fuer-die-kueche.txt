@@ -1,0 +1,35 @@
+code: de-a2-t042
+title: Etwas für die Küche
+band: 2
+kind: email
+key_words: Topf, Pfanne, Gabel, Staubsauger, Wäsche
+sentences:
+- Lieber{lieb} Leon, wie ist deine neue Wohnung? | لئون عزیز، آپارتمان تازه‌ات چطور است؟
+- Papa und ich kommen am Samstag und bringen dir etwas für die Küche. | من و بابا شنبه می‌آییم و برایت چیزهایی برای آشپزخانه می‌آوریم.
+- Wir haben zwei Töpfe, eine Pfanne, vier Messer und vier Gabeln für dich. | برایت دو قابلمه، یک ماهیتابه، چهار کارد و چهار چنگال داریم.
+- Löffel hast du schon, oder? | قاشق که داری، نه؟
+- Oma gibt dir auch ihren alten Staubsauger. | مادربزرگ هم جاروبرقی قدیمی‌اش را به تو می‌دهد.
+- Dann kannst du einmal pro Woche staubsaugen. | آن وقت می‌توانی هفته‌ای یک بار جاروبرقی بکشی.
+- Und noch etwas zur Wäsche. | یک چیز دیگر هم دربارهٔ لباس‌شویی.
+- Wasch deine weißen Hemden nicht mit den roten T-Shirts! | پیراهن‌های سفیدت را با تی‌شرت‌های قرمز نشوی!
+- Spül auch dein Geschirr jeden Tag! | ظرف‌هایت را هم هر روز بشور!
+- Wir freuen uns schon sehr! | از همین حالا خیلی خوشحالیم!
+- Bis Samstag, deine Mama | تا شنبه، مامانت
+reading A:
+{"type":"mcq","prompt":"مامان در این ایمیل چه خبری می‌دهد؟","options":["لئون باید شنبه به خانه بیاید","مادربزرگ بیمار است","آن‌ها شنبه وسایل آشپزخانه می‌آورند","آن‌ها برای لئون آپارتمان پیدا کرده‌اند"],"correct":2,"explanation_fa":"مامان می‌نویسد: «Papa und ich kommen am Samstag und bringen dir etwas für die Küche.»"}
+{"type":"tf","prompt":"مادربزرگ جاروبرقی قدیمی‌اش را به لئون می‌دهد.","correct":true,"explanation_fa":"مامان می‌نویسد: «Oma gibt dir auch ihren alten Staubsauger.»"}
+{"type":"tf","prompt":"مامان و بابا برای لئون قاشق هم می‌آورند.","correct":false,"explanation_fa":"قاشق در فهرست وسایل نیست و مامان می‌پرسد: «Löffel hast du schon, oder?»"}
+reading B:
+{"type":"cloze","prompt":"جای خالی را با کلمه درست پر کن.","text_with_gaps":"Wir haben zwei {{1}}, eine {{2}}, vier Messer und vier Gabeln für dich.","bank":["Töpfe","Pfanne","Geschirr","Haushalt","Herd"],"answers":["Töpfe","Pfanne"],"explanation_fa":"مامان می‌نویسد: «Wir haben zwei Töpfe, eine Pfanne, vier Messer und vier Gabeln für dich.»"}
+{"type":"find","prompt":"کدام جمله نکته‌ای دربارهٔ لباس شستن می‌گوید؟","correct_sentence":7,"explanation_fa":"مامان می‌نویسد: «Wasch deine weißen Hemden nicht mit den roten T-Shirts!»"}
+{"type":"match","prompt":"هر کس را به کاری که می‌کند وصل کن.","left":["مامان و بابا","مادربزرگ"],"right":["وسایل آشپزخانه می‌آورند","جاروبرقی‌اش را می‌دهد","لباس‌های لئون را می‌شویند"],"pairs":[[0,0],[1,1]],"explanation_fa":"مامان می‌نویسد: «Papa und ich … bringen dir etwas für die Küche» و «Oma gibt dir auch ihren alten Staubsauger»."}
+listening A:
+{"type":"num","prompt":"مامان و بابا چند چنگال برای لئون می‌آورند؟","answer":"4","accepted":["4","vier"],"explanation_fa":"مامان می‌گوید: «vier Messer und vier Gabeln»."}
+{"type":"mcq","prompt":"مامان و بابا کی می‌آیند؟","options":["جمعه","شنبه","یکشنبه","دوشنبه"],"correct":1,"explanation_fa":"مامان می‌گوید: «Papa und ich kommen am Samstag.»"}
+{"type":"tf","prompt":"مامان می‌گوید لئون هر روز ظرف‌هایش را بشوید.","correct":true,"explanation_fa":"مامان می‌گوید: «Spül auch dein Geschirr jeden Tag!»"}
+{"type":"tf","prompt":"مامان می‌گوید پیراهن‌های سفید را با تی‌شرت‌های قرمز بشوید.","correct":false,"explanation_fa":"مامان می‌گوید: «Wasch deine weißen Hemden nicht mit den roten T-Shirts!»"}
+listening B:
+{"type":"num","prompt":"مامان و بابا چند قابلمه برای لئون می‌آورند؟","answer":"2","accepted":["2","zwei"],"explanation_fa":"مامان می‌گوید: «Wir haben zwei Töpfe … für dich.»"}
+{"type":"mcq","prompt":"لئون با جاروبرقی چند وقت یک بار می‌تواند جارو بکشد؟","options":["هر روز","هفته‌ای دو بار","هفته‌ای یک بار","ماهی یک بار"],"correct":2,"explanation_fa":"مامان می‌گوید: «Dann kannst du einmal pro Woche staubsaugen.»"}
+{"type":"tf","prompt":"مامان فکر می‌کند لئون قاشق دارد.","correct":true,"explanation_fa":"مامان می‌پرسد: «Löffel hast du schon, oder?»"}
+{"type":"tf","prompt":"مادربزرگ برای لئون جاروبرقی نو می‌خرد.","correct":false,"explanation_fa":"مامان می‌گوید: «Oma gibt dir auch ihren alten Staubsauger»، یعنی جاروبرقی قدیمی خودش را می‌دهد."}

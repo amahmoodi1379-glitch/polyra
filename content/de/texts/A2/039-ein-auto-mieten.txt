@@ -1,0 +1,28 @@
+code: de-a2-t039
+title: Ein Auto für Freitag
+band: 1
+kind: voice_message
+key_words: ein Auto mieten, vermieten, Hof, klingeln, Haustür
+sentences:
+- Guten Tag, Frau Neumann, hier ist Auto Weber. | روز بخیر خانم نویمان، از کرایهٔ ماشین وبر تماس می‌گیریم.
+- Sie{Sie-3} möchten am Freitag ein Auto mieten. | شما می‌خواهید جمعه ماشین کرایه کنید.
+- Leider ist das kleine Auto schon weg. | متأسفانه ماشین کوچک دیگر نیست.
+- Wir vermieten Ihnen das große Auto, und es kostet nicht mehr als das kleine. | ماشین بزرگ را به شما کرایه می‌دهیم و گران‌تر از ماشین کوچک نیست.
+- Das Auto steht hinten im Hof. | ماشین پشت ساختمان، در حیاط است.
+- Wenn das Büro geschlossen ist, klingeln Sie bitte an der Haustür. | اگر دفتر بسته بود، لطفاً زنگ در ورودی خانه را بزنید.
+- Ich wohne oben. | من طبقهٔ بالا زندگی می‌کنم.
+- Bis Freitag! | تا جمعه!
+reading A:
+{"type":"mcq","prompt":"این پیام برای چیست؟","options":["خانم نویمان هنوز پول نداده است","ماشین بزرگ خراب است","ماشین کوچک دیگر نیست","دفتر جمعه بسته است"],"correct":2,"explanation_fa":"در پیام آمده: «Leider ist das kleine Auto schon weg.»"}
+{"type":"tf","prompt":"ماشین بزرگ از ماشین کوچک گران‌تر نیست.","correct":true,"explanation_fa":"در پیام آمده: «es kostet nicht mehr als das kleine»."}
+{"type":"tf","prompt":"ماشین جلوی دفتر است.","correct":false,"explanation_fa":"در پیام آمده: «Das Auto steht hinten im Hof»، یعنی پشت ساختمان در حیاط."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید اگر دفتر بسته بود چه کار کند؟","correct_sentence":5,"explanation_fa":"در پیام آمده: «Wenn das Büro geschlossen ist, klingeln Sie bitte an der Haustür.»"}
+{"type":"order","prompt":"این‌ها را به ترتیب پیام مرتب کن.","items":["می‌گوید ماشین کجاست.","می‌گوید ماشین کوچک دیگر نیست.","می‌گوید اگر دفتر بسته بود زنگ در را بزند.","ماشین بزرگ را پیشنهاد می‌کند."],"correct_order":[1,3,0,2],"explanation_fa":"اول «das kleine Auto schon weg»، بعد «das große Auto»، بعد «hinten im Hof» و آخر «klingeln Sie bitte an der Haustür»."}
+listening A:
+{"type":"mcq","prompt":"خانم نویمان کی ماشین می‌خواهد؟","options":["پنجشنبه","جمعه","شنبه","یکشنبه"],"correct":1,"explanation_fa":"در پیام آمده: «Sie möchten am Freitag ein Auto mieten.»"}
+{"type":"tf","prompt":"گوینده طبقهٔ بالا زندگی می‌کند.","correct":true,"explanation_fa":"گوینده می‌گوید: «Ich wohne oben.»"}
+{"type":"tf","prompt":"ماشین کوچک برای خانم نویمان آماده است.","correct":false,"explanation_fa":"گوینده می‌گوید: «Leider ist das kleine Auto schon weg.»"}
+listening B:
+{"type":"dict","sentence":4}
+{"type":"mcq","prompt":"اگر دفتر بسته بود، خانم نویمان چه کار کند؟","options":["زنگ در ورودی خانه را بزند","فردا دوباره بیاید","در حیاط منتظر بماند","به دفتر ایمیل بزند"],"correct":0,"explanation_fa":"گوینده می‌گوید: «klingeln Sie bitte an der Haustür»."}

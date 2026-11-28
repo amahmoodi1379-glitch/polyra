@@ -1,0 +1,34 @@
+code: de-a2-t038
+title: Probleme in Zimmer 12
+band: 2
+kind: phone_call
+key_words: Licht, Strom, ausschalten, einschalten, Mülleimer
+sentences:
+A: Guten Abend, hier ist Frau Karimi aus Zimmer 12. | عصر بخیر، کریمی هستم از اتاق ۱۲. | tts: Guten Abend, hier ist Frau Karimi aus Zimmer zwölf.
+B: Guten Abend, Frau Karimi! Was kann ich für Sie tun? | عصر بخیر خانم کریمی! چه کاری می‌توانم برایتان انجام دهم؟
+A: Im Bad funktioniert das Licht nicht, und der Fernseher geht auch nicht. | چراغ حمام کار نمی‌کند و تلویزیون هم روشن نمی‌شود.
+B: Schalten Sie den Fernseher bitte aus. Dann schalten Sie ihn wieder ein. | لطفاً تلویزیون را خاموش کنید. بعد دوباره روشنش کنید.
+A: Das habe ich schon gemacht, aber er bleibt dunkel. | این کار را کرده‌ام، ولی صفحه‌اش تاریک می‌ماند.
+B: Dann gibt es in Ihrem Zimmer vielleicht keinen Strom. Ich schicke sofort einen Kollegen. | پس شاید اتاقتان برق ندارد. همین الان یکی از همکارانم را می‌فرستم.
+A: Danke! Und noch etwas: Ich habe meine Zahnbürste vergessen. | ممنون! یک چیز دیگر: مسواکم را جا گذاشته‌ام.
+B: Kein Problem, der Kollege bringt Ihnen eine Zahnbürste und Zahnpasta. | مشکلی نیست، همکارم برایتان مسواک و خمیردندان می‌آورد.
+A: Super. Und im Zimmer gibt es keinen Mülleimer. | عالی است. در اتاق سطل زباله هم نیست.
+B: Oh, Entschuldigung! Der Kollege bringt auch einen Mülleimer mit. | اوه، ببخشید! همکارم یک سطل زباله هم با خودش می‌آورد.
+A: Vielen Dank! | خیلی ممنون!
+reading A:
+{"type":"mcq","prompt":"خانم کریمی چرا زنگ می‌زند؟","options":["اتاقش خیلی سرد است","کلید اتاقش را گم کرده است","چراغ حمام و تلویزیون کار نمی‌کنند","می‌خواهد شام سفارش بدهد"],"correct":2,"explanation_fa":"خانم کریمی می‌گوید: «Im Bad funktioniert das Licht nicht, und der Fernseher geht auch nicht.»"}
+{"type":"tf","prompt":"خانم کریمی مسواکش را جا گذاشته است.","correct":true,"explanation_fa":"خانم کریمی می‌گوید: «Ich habe meine Zahnbürste vergessen.»"}
+{"type":"tf","prompt":"در اتاق خانم کریمی سطل زباله هست.","correct":false,"explanation_fa":"خانم کریمی می‌گوید: «im Zimmer gibt es keinen Mülleimer»."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید شاید اتاق برق ندارد؟","correct_sentence":5,"explanation_fa":"کارمند هتل می‌گوید: «Dann gibt es in Ihrem Zimmer vielleicht keinen Strom.»"}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو مرتب کن.","items":["خانم کریمی می‌گوید مسواک ندارد.","خانم کریمی می‌گوید چراغ حمام کار نمی‌کند.","کارمند هتل می‌گوید تلویزیون را خاموش و روشن کند.","خانم کریمی می‌گوید سطل زباله نیست."],"correct_order":[1,2,0,3],"explanation_fa":"اول «Im Bad funktioniert das Licht nicht»، بعد «Schalten Sie den Fernseher bitte aus»، بعد «Ich habe meine Zahnbürste vergessen» و آخر «im Zimmer gibt es keinen Mülleimer»."}
+{"type":"cloze","prompt":"جای خالی را با کلمه درست پر کن.","text_with_gaps":"Dann gibt es in Ihrem Zimmer vielleicht keinen {{1}}. Ich schicke sofort einen {{2}}.","bank":["Strom","Kollegen","Licht","Zahnpasta","Zimmer"],"answers":["Strom","Kollegen"],"explanation_fa":"کارمند هتل می‌گوید: «vielleicht keinen Strom. Ich schicke sofort einen Kollegen.»"}
+listening A:
+{"type":"num","prompt":"خانم کریمی در اتاق شمارهٔ چند است؟","answer":"12","accepted":["12","zwölf"],"explanation_fa":"خانم کریمی می‌گوید: «hier ist Frau Karimi aus Zimmer 12»."}
+{"type":"tf","prompt":"کارمند هتل می‌گوید تلویزیون را خاموش و دوباره روشن کند.","correct":true,"explanation_fa":"کارمند هتل می‌گوید: «Schalten Sie den Fernseher bitte aus. Dann schalten Sie ihn wieder ein.»"}
+{"type":"tf","prompt":"بعد از آن، تلویزیون کار می‌کند.","correct":false,"explanation_fa":"خانم کریمی می‌گوید: «Das habe ich schon gemacht, aber er bleibt dunkel.»"}
+listening B:
+{"type":"mcq","prompt":"چه کسی برای خانم کریمی مسواک می‌آورد؟","options":["خانم کریمی خودش می‌خرد","یکی از همکاران کارمند هتل","مدیر هتل","دوست خانم کریمی"],"correct":1,"explanation_fa":"کارمند هتل می‌گوید: «der Kollege bringt Ihnen eine Zahnbürste und Zahnpasta»."}
+{"type":"mcq","prompt":"همکار هتل غیر از مسواک و خمیردندان چه چیزی می‌آورد؟","options":["یک تلویزیون دیگر","یک لامپ تازه","یک حولهٔ تمیز","یک سطل زباله"],"correct":3,"explanation_fa":"کارمند هتل می‌گوید: «Der Kollege bringt auch einen Mülleimer mit.»"}
+{"type":"tf","prompt":"کارمند هتل همین الان کسی را می‌فرستد.","correct":true,"explanation_fa":"کارمند هتل می‌گوید: «Ich schicke sofort einen Kollegen.»"}
+{"type":"tf","prompt":"کارمند هتل می‌گوید فردا صبح کسی می‌آید.","correct":false,"explanation_fa":"کارمند هتل می‌گوید: «Ich schicke sofort einen Kollegen»، یعنی همین الان."}

@@ -1,0 +1,34 @@
+code: de-a2-t034
+title: Möbel zu verkaufen
+band: 2
+kind: phone_call
+key_words: Möbel, Schreibtisch, Regal, sterben, sich kümmern
+sentences:
+A: Guten Tag, hier ist Tim Becker. Ich habe im Internet gelesen, dass Sie Möbel verkaufen. | روز بخیر، تیم بکر هستم. در اینترنت خواندم که اثاثیه می‌فروشید.
+B: Ja, richtig. Die Möbel haben meinem Vater gehört{gehören}. Er ist im Februar gestorben. | بله، درست است. این اثاثیه مال پدرم بوده. او در ماه فوریه فوت کرد.
+A: Oh, das tut mir leid. | اوه، متأسفم.
+B: Danke. Jetzt kümmere ich mich um seine Wohnung. | ممنون. حالا من به کارهای آپارتمانش رسیدگی می‌کنم.
+A: Ich suche einen Schreibtisch und ein Regal für mein Zimmer. | دنبال یک میز تحریر و یک قفسه برای اتاقم هستم.
+B: Beide sind noch da. Der Schreibtisch kostet 40 Euro und das Regal 15 Euro. | هر دو هنوز هستند. میز تحریر ۴۰ یورو است و قفسه ۱۵ یورو. | tts: Beide sind noch da. Der Schreibtisch kostet vierzig Euro und das Regal fünfzehn Euro.
+A: Ist der Schreibtisch groß? Mein Zimmer ist ziemlich klein. | میز تحریر بزرگ است؟ اتاق من نسبتاً کوچک است.
+B: Nein, er ist nicht so groß. Er passt bestimmt. | نه، خیلی بزرگ نیست. حتماً جا می‌شود.
+A: Super! Kann ich am Samstag um 10 Uhr kommen? | عالی است! می‌توانم شنبه ساعت ۱۰ بیایم؟ | tts: Super! Kann ich am Samstag um zehn Uhr kommen?
+B: Ja, gern. Ich schicke Ihnen die Adresse. | بله، حتماً. آدرس را برایتان می‌فرستم.
+A: Danke, bis Samstag! | ممنون، تا شنبه!
+reading A:
+{"type":"mcq","prompt":"تیم چرا زنگ می‌زند؟","options":["می‌خواهد آپارتمانی اجاره کند","می‌خواهد اثاثیهٔ خودش را بفروشد","می‌خواهد اثاثیه بخرد","می‌خواهد به این خانم کمک کند"],"correct":2,"explanation_fa":"تیم می‌گوید: «Ich suche einen Schreibtisch und ein Regal für mein Zimmer.»"}
+{"type":"tf","prompt":"این اثاثیه مال پدر خانم بوده است.","correct":true,"explanation_fa":"خانم می‌گوید: «Die Möbel haben meinem Vater gehört{gehören}.»"}
+{"type":"tf","prompt":"تیم دنبال یک کمد و یک مبل است.","correct":false,"explanation_fa":"تیم می‌گوید: «Ich suche einen Schreibtisch und ein Regal»، یعنی یک میز تحریر و یک قفسه."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید اتاق تیم بزرگ نیست؟","correct_sentence":6,"explanation_fa":"تیم می‌گوید: «Mein Zimmer ist ziemlich klein.»"}
+{"type":"match","prompt":"هر چیز را به قیمتش وصل کن.","left":["میز تحریر","قفسه"],"right":["۴۰ یورو","۱۵ یورو","۵۰ یورو"],"pairs":[[0,0],[1,1]],"explanation_fa":"خانم می‌گوید: «Der Schreibtisch kostet 40 Euro und das Regal 15 Euro.»"}
+{"type":"mcq","prompt":"خانم حالا به چه چیزی رسیدگی می‌کند؟","options":["مغازهٔ پدرش","آپارتمان پدرش","باغ پدرش","ماشین پدرش"],"correct":1,"explanation_fa":"خانم می‌گوید: «Jetzt kümmere ich mich um seine Wohnung.»"}
+listening A:
+{"type":"num","prompt":"میز تحریر چند یورو است؟","answer":"40","accepted":["40","40 Euro","vierzig"],"explanation_fa":"خانم می‌گوید: «Der Schreibtisch kostet 40 Euro.»"}
+{"type":"tf","prompt":"پدر خانم در ماه فوریه فوت کرده است.","correct":true,"explanation_fa":"خانم می‌گوید: «Er ist im Februar gestorben.»"}
+{"type":"tf","prompt":"تیم می‌خواهد یکشنبه بیاید.","correct":false,"explanation_fa":"تیم می‌پرسد: «Kann ich am Samstag um 10 Uhr kommen?»، یعنی شنبه."}
+listening B:
+{"type":"num","prompt":"تیم ساعت چند می‌آید؟","answer":"10","accepted":["10","10 Uhr","zehn"],"explanation_fa":"تیم می‌گوید: «Kann ich am Samstag um 10 Uhr kommen?» و خانم قبول می‌کند."}
+{"type":"mcq","prompt":"خانم چه چیزی برای تیم می‌فرستد؟","options":["عکس اثاثیه","شماره تلفنش","فهرست قیمت‌ها","آدرس"],"correct":3,"explanation_fa":"خانم می‌گوید: «Ich schicke Ihnen die Adresse.»"}
+{"type":"tf","prompt":"خانم می‌گوید میز تحریر حتماً در اتاق تیم جا می‌شود.","correct":true,"explanation_fa":"خانم می‌گوید: «Er passt bestimmt.»"}
+{"type":"tf","prompt":"قفسه دیگر فروخته شده است.","correct":false,"explanation_fa":"خانم می‌گوید: «Beide sind noch da»، یعنی میز تحریر و قفسه هر دو هنوز هستند."}

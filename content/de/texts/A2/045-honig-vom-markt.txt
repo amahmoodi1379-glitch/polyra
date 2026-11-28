@@ -1,0 +1,29 @@
+code: de-a2-t045
+title: Honig vom Markt
+band: 1
+kind: ad
+key_words: Honig, Marmelade, Keks, Sahne, Bonbon
+sentences:
+- Jeden Samstag auf dem Markt: Familie Schmidt ist da! | هر شنبه در بازار: خانوادهٔ اشمیت اینجاست!
+- Wir verkaufen Honig, Marmelade, Joghurt und Müsli. | ما عسل، مربا، ماست و موسلی می‌فروشیم.
+- Alles machen wir selbst. | همه را خودمان درست می‌کنیم.
+- Ein Glas Honig kostet 6 Euro, ein Glas Marmelade 4 Euro. | یک شیشه عسل ۶ یورو است و یک شیشه مربا ۴ یورو. | tts: Ein Glas Honig kostet sechs Euro, ein Glas Marmelade vier Euro.
+- Neu bei uns: Kekse mit Schokolade! | تازه پیش ما: بیسکویت شکلاتی!
+- Probieren Sie auch unseren Joghurt mit Sahne. | ماست خامه‌ای ما را هم امتحان کنید.
+- Alle Kinder bekommen ein Bonbon. | همهٔ بچه‌ها یک آب‌نبات می‌گیرند.
+- Sie{Sie-3} finden uns neben der Bäckerei. | ما را کنار نانوایی پیدا می‌کنید.
+reading A:
+{"type":"mcq","prompt":"این آگهی دربارهٔ چیست؟","options":["یک نانوایی تازه","یک غرفه در بازار","یک کافه کنار بازار","یک کلاس آشپزی"],"correct":1,"explanation_fa":"در آگهی آمده: «Jeden Samstag auf dem Markt: Familie Schmidt ist da!» و «Wir verkaufen Honig, Marmelade, Joghurt und Müsli.»"}
+{"type":"tf","prompt":"خانوادهٔ اشمیت همه چیز را خودش درست می‌کند.","correct":true,"explanation_fa":"در آگهی آمده: «Alles machen wir selbst.»"}
+{"type":"tf","prompt":"یک شیشه مربا ۶ یورو است.","correct":false,"explanation_fa":"در آگهی آمده: «ein Glas Marmelade 4 Euro»؛ ۶ یورو قیمت عسل است."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید بچه‌ها چه می‌گیرند؟","correct_sentence":6,"explanation_fa":"در آگهی آمده: «Alle Kinder bekommen ein Bonbon.»"}
+{"type":"match","prompt":"هر چیز را به قیمتش وصل کن.","left":["یک شیشه عسل","یک شیشه مربا"],"right":["۶ یورو","۴ یورو","۵ یورو"],"pairs":[[0,0],[1,1]],"explanation_fa":"در آگهی آمده: «Ein Glas Honig kostet 6 Euro, ein Glas Marmelade 4 Euro.»"}
+listening A:
+{"type":"num","prompt":"یک شیشه عسل چند یورو است؟","answer":"6","accepted":["6","6 Euro","sechs"],"explanation_fa":"در آگهی آمده: «Ein Glas Honig kostet 6 Euro.»"}
+{"type":"mcq","prompt":"چه چیزی تازه به این غرفه آمده است؟","options":["ماست خامه‌ای","موسلی","بیسکویت شکلاتی","عسل"],"correct":2,"explanation_fa":"در آگهی آمده: «Neu bei uns: Kekse mit Schokolade!»"}
+{"type":"tf","prompt":"غرفه کنار نانوایی است.","correct":true,"explanation_fa":"در آگهی آمده: «Sie finden uns neben der Bäckerei.»"}
+{"type":"tf","prompt":"خانوادهٔ اشمیت هر یکشنبه در بازار است.","correct":false,"explanation_fa":"در آگهی آمده: «Jeden Samstag auf dem Markt»، یعنی هر شنبه."}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"mcq","prompt":"هر بچه چه می‌گیرد؟","options":["یک آب‌نبات","یک بیسکویت","یک ماست","یک تکه کیک"],"correct":0,"explanation_fa":"در آگهی آمده: «Alle Kinder bekommen ein Bonbon.»"}

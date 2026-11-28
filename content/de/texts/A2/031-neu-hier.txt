@@ -1,0 +1,26 @@
+code: de-a2-t031
+title: Neu hier
+band: 1
+kind: dialogue
+key_words: fremd, berühmt, Kontakt, Heimat
+sentences:
+A: Hallo, ich bin Lukas. Bist du neu hier? | سلام، من لوکاس هستم. تو اینجا تازه‌واردی؟
+B: Ja, ich heiße Mina. Ich komme aus Schiras. | آره، اسمم میناست. اهل شیرازم.
+A: Schiras ist berühmt für seine Gärten! Wie findest du es hier? | شیراز به خاطر باغ‌هایش معروف است! اینجا را چطور می‌بینی؟
+B: Zuerst war alles fremd, aber jetzt habe ich viel Kontakt mit Deutschen. | اولش همه چیز غریب بود، ولی حالا با آلمانی‌ها زیاد رفت‌وآمد دارم.
+A: Toll! Komm am Samstag zu uns, wir kochen zusammen. | عالی است! شنبه بیا پیش ما، با هم آشپزی می‌کنیم.
+B: Gern! Dann koche ich etwas aus meiner Heimat. | با کمال میل! پس من یک غذا از وطنم درست می‌کنم.
+reading A:
+{"type":"mcq","prompt":"مینا اهل کدام شهر است؟","options":["تهران","اصفهان","شیراز","هامبورگ"],"correct":2,"explanation_fa":"مینا می‌گوید: «Ich komme aus Schiras.»"}
+{"type":"tf","prompt":"اولش همه چیز برای مینا غریب بود.","correct":true,"explanation_fa":"مینا می‌گوید: «Zuerst war alles fremd»."}
+{"type":"tf","prompt":"مینا حالا با آلمانی‌ها کم رفت‌وآمد دارد.","correct":false,"explanation_fa":"مینا می‌گوید: «jetzt habe ich viel Kontakt mit Deutschen»، یعنی حالا زیاد رفت‌وآمد دارد."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید شیراز به چه چیزی معروف است؟","correct_sentence":2,"explanation_fa":"لوکاس می‌گوید: «Schiras ist berühmt für seine Gärten!»"}
+{"type":"mcq","prompt":"لوکاس مینا را به چه کاری دعوت می‌کند؟","options":["شنبه با هم فوتبال بازی کنند","شنبه با هم آشپزی کنند","یکشنبه با هم به سینما بروند","یکشنبه با هم به شیراز سفر کنند"],"correct":1,"explanation_fa":"لوکاس می‌گوید: «Komm am Samstag zu uns, wir kochen zusammen.»"}
+listening A:
+{"type":"mcq","prompt":"شیراز به چه چیزی معروف است؟","options":["کوه‌هایش","موزه‌هایش","غذاهایش","باغ‌هایش"],"correct":3,"explanation_fa":"لوکاس می‌گوید: «Schiras ist berühmt für seine Gärten!»"}
+{"type":"tf","prompt":"مینا اینجا تازه‌وارد است.","correct":true,"explanation_fa":"لوکاس می‌پرسد «Bist du neu hier?» و مینا می‌گوید: «Ja»."}
+{"type":"tf","prompt":"لوکاس مینا را برای یکشنبه دعوت می‌کند.","correct":false,"explanation_fa":"لوکاس می‌گوید: «Komm am Samstag zu uns»، یعنی شنبه."}
+listening B:
+{"type":"dict","sentence":0}
+{"type":"mcq","prompt":"مینا شنبه چه کار می‌کند؟","options":["غذایی از وطنش درست می‌کند","برای لوکاس کیک می‌خرد","با خانواده‌اش تلفنی حرف می‌زند","به شیراز برمی‌گردد"],"correct":0,"explanation_fa":"مینا می‌گوید: «Dann koche ich etwas aus meiner Heimat.»"}

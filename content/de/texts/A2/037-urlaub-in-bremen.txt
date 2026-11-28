@@ -1,0 +1,28 @@
+code: de-a2-t037
+title: Urlaub in Bremen
+band: 1
+kind: ad
+key_words: Herd, Ofen, Spülmaschine, Badewanne, Handtuch
+sentences:
+- Eine schöne Wohnung für Ihren Urlaub in Bremen! | یک آپارتمان زیبا برای تعطیلاتتان در برمن!
+- Die Wohnung hat zwei Zimmer und eine Küche. | آپارتمان دو اتاق و یک آشپزخانه دارد.
+- In der Küche gibt es einen Herd, einen Ofen und eine Spülmaschine. | در آشپزخانه اجاق گاز، فر و ماشین ظرف‌شویی هست.
+- Im Bad gibt es eine Badewanne. | در حمام وان هست.
+- Handtücher und Seife bekommen Sie von uns. | حوله و صابون را ما به شما می‌دهیم.
+- Die Wohnung kostet 70 Euro pro Nacht. | آپارتمان شبی ۷۰ یورو است. | tts: Die Wohnung kostet siebzig Euro pro Nacht.
+- Kinder unter 6 Jahren bezahlen nichts. | بچه‌های زیر ۶ سال هیچ پولی نمی‌دهند. | tts: Kinder unter sechs Jahren bezahlen nichts.
+- Schreiben Sie uns eine E-Mail! | به ما ایمیل بزنید!
+reading A:
+{"type":"mcq","prompt":"این آگهی دربارهٔ چیست؟","options":["یک آپارتمان برای فروش","یک هتل در مرکز برمن","یک آپارتمان برای تعطیلات","یک آشپزخانهٔ تازه برای فروش"],"correct":2,"explanation_fa":"در آگهی آمده: «Eine schöne Wohnung für Ihren Urlaub in Bremen!»"}
+{"type":"tf","prompt":"آپارتمان وان دارد.","correct":true,"explanation_fa":"در آگهی آمده: «Im Bad gibt es eine Badewanne.»"}
+{"type":"tf","prompt":"مهمان‌ها باید حوله با خودشان بیاورند.","correct":false,"explanation_fa":"در آگهی آمده: «Handtücher und Seife bekommen Sie von uns»، یعنی حوله را صاحبان آپارتمان می‌دهند."}
+reading B:
+{"type":"find","prompt":"کدام جمله قیمت آپارتمان را می‌گوید؟","correct_sentence":5,"explanation_fa":"در آگهی آمده: «Die Wohnung kostet 70 Euro pro Nacht.»"}
+{"type":"match","prompt":"هر جای آپارتمان را به چیزی که در آن هست وصل کن.","left":["آشپزخانه","حمام"],"right":["اجاق گاز، فر و ماشین ظرف‌شویی","وان","ماشین لباس‌شویی و تخت"],"pairs":[[0,0],[1,1]],"explanation_fa":"در آگهی آمده: «In der Küche gibt es einen Herd, einen Ofen und eine Spülmaschine» و «Im Bad gibt es eine Badewanne»."}
+listening A:
+{"type":"num","prompt":"آپارتمان شبی چند یورو است؟","answer":"70","accepted":["70","70 Euro","siebzig"],"explanation_fa":"در آگهی آمده: «Die Wohnung kostet 70 Euro pro Nacht.»"}
+{"type":"tf","prompt":"آپارتمان در برمن است.","correct":true,"explanation_fa":"در آگهی آمده: «für Ihren Urlaub in Bremen»."}
+{"type":"tf","prompt":"بچه‌های زیر ۶ سال نصف قیمت را می‌دهند.","correct":false,"explanation_fa":"در آگهی آمده: «Kinder unter 6 Jahren bezahlen nichts»، یعنی هیچ پولی نمی‌دهند."}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"mcq","prompt":"آگهی می‌گوید برای این آپارتمان چه کار کنید؟","options":["زنگ بزنید","ایمیل بزنید","به دفتر بیایید","نامه بنویسید"],"correct":1,"explanation_fa":"در آگهی آمده: «Schreiben Sie uns eine E-Mail!»"}

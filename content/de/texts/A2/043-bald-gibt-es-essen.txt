@@ -1,0 +1,29 @@
+code: de-a2-t043
+title: Bald gibt es Essen
+band: 1
+kind: announcement
+key_words: den Tisch decken, sauber, schmutzig, Ordnung machen, gemütlich
+sentences:
+- Hallo Kinder, hier ist Tom! | سلام بچه‌ها، تام هستم!
+- Um 19 Uhr gibt es Abendessen. | ساعت ۱۹ شام داریم. | tts: Um neunzehn Uhr gibt es Abendessen.
+- Die Gruppe Blau muss heute den Tisch decken. | امروز گروه آبی باید میز را بچیند.
+- Eure Hände müssen sauber sein! | دست‌هایتان باید تمیز باشد!
+- Sind eure Schuhe schmutzig? Dann lasst sie{sie-2} bitte draußen. | کفش‌هایتان کثیف است؟ پس لطفاً بیرون بگذاریدشان.
+- Es gibt Nudeln und eine große Schüssel Salat. | ماکارونی داریم و یک کاسهٔ بزرگ سالاد.
+- Nach dem Essen macht die Gruppe Rot Ordnung in der Küche. | بعد از غذا گروه قرمز آشپزخانه را مرتب می‌کند.
+- Danach gibt es einen gemütlichen Abend im Garten. | بعد از آن یک شب دنج و دلچسب در باغ داریم.
+reading A:
+{"type":"mcq","prompt":"امروز کدام گروه میز را می‌چیند؟","options":["گروه قرمز","گروه سبز","گروه آبی","گروه زرد"],"correct":2,"explanation_fa":"تام می‌گوید: «Die Gruppe Blau muss heute den Tisch decken.»"}
+{"type":"tf","prompt":"شام ساعت ۱۹ است.","correct":true,"explanation_fa":"تام می‌گوید: «Um 19 Uhr gibt es Abendessen.»"}
+{"type":"tf","prompt":"بچه‌ها باید کفش‌های کثیفشان را داخل بیاورند.","correct":false,"explanation_fa":"تام می‌گوید: «Dann lasst sie bitte draußen»، یعنی کفش‌ها بیرون بمانند."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید بعد از غذا چه کسی آشپزخانه را مرتب می‌کند؟","correct_sentence":6,"explanation_fa":"تام می‌گوید: «Nach dem Essen macht die Gruppe Rot Ordnung in der Küche.»"}
+{"type":"order","prompt":"کارهای امشب را به ترتیب زمانی مرتب کن.","items":["گروه قرمز آشپزخانه را مرتب می‌کند.","گروه آبی میز را می‌چیند.","یک شب دنج در باغ است.","بچه‌ها شام می‌خورند."],"correct_order":[1,3,0,2],"explanation_fa":"اول گروه آبی میز را می‌چیند، بعد شام است، «Nach dem Essen» گروه قرمز آشپزخانه را مرتب می‌کند و «Danach» شب دنج در باغ است."}
+listening A:
+{"type":"mcq","prompt":"شام چیست؟","options":["سوپ و نان","ماکارونی و سالاد","پیتزا و سالاد","مرغ و برنج"],"correct":1,"explanation_fa":"تام می‌گوید: «Es gibt Nudeln und eine große Schüssel Salat.»"}
+{"type":"tf","prompt":"بچه‌ها باید دست‌های تمیز داشته باشند.","correct":true,"explanation_fa":"تام می‌گوید: «Eure Hände müssen sauber sein!»"}
+{"type":"tf","prompt":"گروه آبی بعد از غذا آشپزخانه را مرتب می‌کند.","correct":false,"explanation_fa":"تام می‌گوید: «Nach dem Essen macht die Gruppe Rot Ordnung in der Küche»؛ گروه آبی میز را می‌چیند."}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"mcq","prompt":"بعد از مرتب کردن آشپزخانه چه برنامه‌ای هست؟","options":["تماشای فیلم","بازی فوتبال","رفتن به رختخواب","یک شب دنج در باغ"],"correct":3,"explanation_fa":"تام می‌گوید: «Danach gibt es einen gemütlichen Abend im Garten.»"}
+{"type":"num","prompt":"شام ساعت چند است؟","answer":"19","accepted":["19","19 Uhr","neunzehn"],"explanation_fa":"تام می‌گوید: «Um 19 Uhr gibt es Abendessen.»"}

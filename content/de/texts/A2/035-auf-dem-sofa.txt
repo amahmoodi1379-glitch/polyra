@@ -1,0 +1,29 @@
+code: de-a2-t035
+title: Eine Nacht auf dem Sofa
+band: 1
+kind: dialogue
+key_words: Teppich, Spiegel, Decke, Kissen, Treppe
+sentences:
+A: Hallo Mia! Du schläfst heute hier auf dem Sofa. | سلام میا! امشب اینجا روی کاناپه می‌خوابی.
+B: Super, danke! Ist der Teppich neu? | عالی است، ممنون! این فرش تازه است؟
+A: Ja, ein Geschenk von meiner Tante. | آره، هدیهٔ خاله‌ام است.
+B: Schön! Und der Spiegel an der Wand gefällt mir auch. | قشنگ است! آینهٔ روی دیوار را هم دوست دارم.
+A: Hier sind eine Decke und ein Kissen für dich. | این هم یک پتو و یک بالش برای تو.
+B: Danke! Wo ist das Bad? | ممنون! حمام کجاست؟
+A: Oben, rechts neben der Treppe. | طبقهٔ بالا، سمت راست پله‌ها.
+B: Gut. Dann gute Nacht! | باشه. پس شب بخیر!
+A: Gute Nacht und schlaf gut! | شب بخیر، خوب بخوابی!
+reading A:
+{"type":"mcq","prompt":"میا امشب کجا می‌خوابد؟","options":["در اتاق خواب","روی کاناپه","روی زمین","در اتاق مهمان"],"correct":1,"explanation_fa":"میزبان می‌گوید: «Du schläfst heute hier auf dem Sofa.»"}
+{"type":"tf","prompt":"فرش هدیهٔ خالهٔ میزبان است.","correct":true,"explanation_fa":"میزبان می‌گوید: «ein Geschenk von meiner Tante»."}
+{"type":"tf","prompt":"حمام در طبقهٔ پایین است.","correct":false,"explanation_fa":"میزبان می‌گوید: «Oben, rechts neben der Treppe»، یعنی طبقهٔ بالا."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید میزبان به میا پتو و بالش می‌دهد؟","correct_sentence":4,"explanation_fa":"میزبان می‌گوید: «Hier sind eine Decke und ein Kissen für dich.»"}
+{"type":"match","prompt":"هر چیز را به چیزی که دربارهٔ آن گفته می‌شود وصل کن.","left":["فرش","آینه","حمام"],"right":["هدیهٔ خاله","روی دیوار","طبقهٔ بالا","زیر پله‌ها"],"pairs":[[0,0],[1,1],[2,2]],"explanation_fa":"در گفتگو آمده: «ein Geschenk von meiner Tante»، «der Spiegel an der Wand» و برای حمام «Oben»."}
+listening A:
+{"type":"mcq","prompt":"میا می‌پرسد کدام چیز تازه است؟","options":["آینه","کاناپه","فرش","پتو"],"correct":2,"explanation_fa":"میا می‌پرسد: «Ist der Teppich neu?»"}
+{"type":"tf","prompt":"میا آینه را دوست دارد.","correct":true,"explanation_fa":"میا می‌گوید: «der Spiegel an der Wand gefällt mir auch»."}
+{"type":"tf","prompt":"میزبان به میا دو پتو می‌دهد.","correct":false,"explanation_fa":"میزبان می‌گوید: «eine Decke und ein Kissen»، یعنی یک پتو و یک بالش."}
+listening B:
+{"type":"dict","sentence":5}
+{"type":"mcq","prompt":"حمام کجاست؟","options":["طبقهٔ پایین، کنار آشپزخانه","طبقهٔ پایین، کنار در","طبقهٔ بالا، سمت چپ پله‌ها","طبقهٔ بالا، سمت راست پله‌ها"],"correct":3,"explanation_fa":"میزبان می‌گوید: «Oben, rechts neben der Treppe.»"}
