@@ -182,7 +182,13 @@ export const TIMING_MARKERS: Record<LanguageCode, Marker[]> = {
     { unit: "fr-b1-conditionnel", label: "je ferais، il viendrait", tense: "conditionnel présent", except: FR_POLITE_A2 },
     { unit: "fr-b1-ne-que", label: "ne … que", match: (tokens, index) => /^(que|qu')$/u.test(lower(tokens[index])) && onlyNegation(tokens, index) },
     { unit: "fr-b1-relatif-dont", label: "dont", codes: ["dont"] },
-    { unit: "fr-b1-subjonctif", label: "qu'il soit، que je fasse", tense: "subjonctif présent" },
+    {
+      unit: "fr-b1-subjonctif",
+      label: "qu'il soit، que je fasse",
+      // Always after a que (il faut que, pour que …): «Sois sage», «Sachez que …» are imperatives.
+      match: (tokens, index, context) =>
+        isVerb(tokens[index], context) && !!context.tenseForms.get("subjonctif présent")?.has(lower(tokens[index]).split(" ")[0]) && tokens.slice(0, index).some((token) => /^(que|qu')$/u.test(lower(token))),
+    },
     {
       unit: "fr-b1-ce-qui-ce-que",
       label: "ce qui، ce que",
