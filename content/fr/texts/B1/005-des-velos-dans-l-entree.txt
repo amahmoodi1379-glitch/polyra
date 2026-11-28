@@ -1,0 +1,44 @@
+code: fr-b1-t005
+title: Des vélos dans l'entrée
+band: 3
+kind: letter
+sentences:
+- Madame, Monsieur, | خانم‌ها و آقایان محترم،
+- J'habite au troisième étage du 12, rue de la Gare, et je vous écris au sujet des vélos dans l'entrée{entrée-2} de notre immeuble. | در طبقهٔ سوم ساختمان شمارهٔ ۱۲ خیابان گار زندگی می‌کنم و دربارهٔ دوچرخه‌های ورودی ساختمانمان برایتان می‌نویسم. | tts: J'habite au troisième étage du douze, rue de la Gare, et je vous écris au sujet des vélos dans l'entrée de notre immeuble.
+- Depuis le mois de septembre, il y a de plus en plus de vélos devant les boîtes aux lettres et près de l'ascenseur. | از ماه سپتامبر، جلوی صندوق‌های نامه و کنار آسانسور هر روز دوچرخه‌های بیشتری هست.
+- Le soir, j'en compte souvent huit ou neuf. | شب‌ها اغلب هشت نه تا می‌شمارم.
+- Je comprends bien le problème : les appartements sont petits, et les vélos sont trop lourds pour l'escalier. | مشکل را خوب می‌فهمم: آپارتمان‌ها کوچک‌اند و دوچرخه‌ها برای بالا بردن از پله‌ها زیادی سنگین‌اند.
+- Pourtant, l'entrée{entrée-2} devient dangereuse. | با این حال، ورودی دارد خطرناک می‌شود.
+- La semaine dernière, Madame Martin, ma voisine de 84 ans, est tombée à cause d'un vélo. | هفتهٔ پیش، خانم مارتن، همسایهٔ ۸۴ ساله‌ام، به خاطر یک دوچرخه زمین خورد. | tts: La semaine dernière, Madame Martin, ma voisine de quatre-vingt-quatre ans, est tombée à cause d'un vélo.
+- Heureusement, elle ne s'est pas fait mal. | خوشبختانه آسیبی ندید.
+- Le monsieur du deuxième étage a aussi du mal à passer le matin, avec son bébé et ses courses. | آقای طبقهٔ دوم هم صبح‌ها با بچهٔ کوچکش و خریدهایش به‌سختی رد می‌شود.
+- Et s'il y a un incendie, les pompiers ne pourront pas entrer facilement. | و اگر آتش‌سوزی شود، آتش‌نشان‌ها نمی‌توانند به‌راحتی وارد شوند.
+- J'ai une idée : au rez-de-chaussée, à côté du garage, il y a une petite salle vide depuis deux ans. | یک فکری دارم: در طبقهٔ همکف، کنار پارکینگ، یک اتاق کوچک هست که دو سال است خالی مانده.
+- À mon avis, elle serait parfaite pour les vélos. | به نظر من، برای دوچرخه‌ها عالی است.
+- Avec une porte qui ferme à clé, chaque habitant pourrait y laisser son vélo. | با دری که قفل می‌شود، هر کدام از ساکنان می‌توانند دوچرخه‌شان را آنجا بگذارند.
+- Plusieurs voisins sont d'accord avec moi, et nous sommes prêts à nettoyer la salle. | چند نفر از همسایه‌ها با من موافق‌اند و حاضریم خودمان اتاق را تمیز کنیم.
+- Pourriez-vous présenter cette idée lors de la prochaine réunion des habitants ? | ممکن است این پیشنهاد را در جلسهٔ بعدی ساکنان مطرح کنید؟
+- Pour le moment, un petit panneau dans l'entrée{entrée-2} serait déjà très utile : « Merci de ne pas laisser les vélos devant les boîtes aux lettres. » | فعلاً یک تابلوی کوچک در ورودی هم خیلی به درد می‌خورد: «لطفاً دوچرخه‌ها را جلوی صندوق‌های نامه نگذارید.»
+- Je vous remercie de votre aide. | از کمکتان ممنونم.
+- Bien à vous, | با احترام،
+- Anne Dubois | آن دوبوا
+reading A:
+{"type":"mcq","prompt":"Que demande surtout Anne Dubois ?","prompt_fa":"آن دوبوا بیشتر از همه چه می‌خواهد؟","options":["Une nouvelle boîte aux lettres pour chaque habitant.","Une réunion pour changer le prix du loyer.","Un ascenseur plus grand pour les vélos.","Une salle pour ranger les vélos des habitants."],"correct":3,"explanation_fa":"آن پیشنهاد می‌کند: «il y a une petite salle vide depuis deux ans. À mon avis, elle serait parfaite pour les vélos.»"}
+{"type":"tf","prompt":"Les vélos sont un problème depuis quelques mois.","prompt_fa":"دوچرخه‌ها از چند ماه پیش مشکل شده‌اند.","correct":true,"explanation_fa":"آن می‌نویسد: «Depuis le mois de septembre, il y a de plus en plus de vélos»."}
+{"type":"tf","prompt":"Madame Martin s'est fait mal à la jambe.","prompt_fa":"خانم مارتن پایش آسیب دید.","correct":false,"explanation_fa":"آن می‌نویسد: «Heureusement, elle ne s'est pas fait mal.»"}
+{"type":"find","prompt":"Quelle phrase dit où se trouve la salle vide ?","prompt_fa":"کدام جمله می‌گوید اتاق خالی کجاست؟","correct_sentence":10,"explanation_fa":"آن می‌نویسد: «au rez-de-chaussée, à côté du garage, il y a une petite salle vide»."}
+reading B:
+{"type":"order","prompt":"Dans quel ordre Anne parle-t-elle de ces choses ?","prompt_fa":"آن به چه ترتیبی دربارهٔ این‌ها می‌نویسد؟","items":["Elle propose une solution.","Elle explique le problème.","Elle raconte un accident.","Elle demande un petit panneau."],"correct_order":[1,2,0,3],"explanation_fa":"اول مشکل دوچرخه‌ها را می‌گوید، بعد زمین خوردن خانم مارتن، بعد «J'ai une idée» و آخر «un petit panneau dans l'entrée»."}
+{"type":"ctx","word":"lors de","prompt":"Dans « présenter cette idée lors de la prochaine réunion », « lors de » veut dire…","prompt_fa":"در این جمله «lors de» یعنی…","options":["avant","pendant","après","sans"],"correct":1,"explanation_fa":"آن می‌خواهد پیشنهادش «lors de la prochaine réunion»، یعنی در همان جلسه، مطرح شود."}
+{"type":"cloze","prompt":"Complétez la phrase de la lettre.","prompt_fa":"جملهٔ نامه را کامل کنید.","text_with_gaps":"Avec une porte qui {{1}} à clé, chaque habitant {{2}} y laisser son vélo.","bank":["ferme","pourrait","ouvre","sont","avons"],"answers":["ferme","pourrait"],"explanation_fa":"آن می‌نویسد: «Avec une porte qui ferme à clé, chaque habitant pourrait y laisser son vélo.»"}
+{"type":"match","prompt":"Qui fait quoi dans la lettre ?","prompt_fa":"در نامه، چه کسی چه می‌کند؟","left":["Madame Martin","le monsieur du deuxième étage","les pompiers"],"right":["a du mal à passer avec son bébé.","ne pourront pas entrer facilement.","est tombée à cause d'un vélo.","vont nettoyer la salle."],"pairs":[[0,2],[1,0],[2,1]],"explanation_fa":"خانم مارتن «est tombée à cause d'un vélo»، آقای طبقهٔ دوم «a aussi du mal à passer» و آتش‌نشان‌ها «ne pourront pas entrer facilement»."}
+listening A:
+{"type":"num","prompt":"Madame Martin a quel âge ?","prompt_fa":"خانم مارتن چند سال دارد؟","answer":"84","accepted":["84","quatre-vingt-quatre"],"explanation_fa":"می‌شنویم: «Madame Martin, ma voisine de 84 ans»."}
+{"type":"mcq","prompt":"Pourquoi les habitants laissent-ils leurs vélos dans l'entrée ?","prompt_fa":"چرا ساکنان دوچرخه‌هایشان را در ورودی می‌گذارند؟","options":["Parce que l'entrée est grande et vide.","Parce qu'il n'y a pas d'ascenseur.","Parce que les vélos sont lourds et les appartements petits.","Parce que les pompiers le demandent."],"correct":2,"explanation_fa":"آن می‌گوید: «les appartements sont petits, et les vélos sont trop lourds pour l'escalier»."}
+{"type":"tf","prompt":"Anne n'est pas la seule à vouloir cette salle pour les vélos.","prompt_fa":"آن تنها کسی نیست که این اتاق را برای دوچرخه‌ها می‌خواهد.","correct":true,"explanation_fa":"آن می‌گوید: «Plusieurs voisins sont d'accord avec moi»."}
+{"type":"tf","prompt":"Anne habite au rez-de-chaussée.","prompt_fa":"آن در طبقهٔ همکف زندگی می‌کند.","correct":false,"explanation_fa":"آن می‌گوید: «J'habite au troisième étage»."}
+listening B:
+{"type":"mcq","prompt":"Combien de vélos Anne compte-t-elle souvent le soir ?","prompt_fa":"آن شب‌ها اغلب چند دوچرخه می‌شمارد؟","options":["Deux ou trois.","Cinq ou six.","Huit ou neuf.","Douze."],"correct":2,"explanation_fa":"آن می‌گوید: «Le soir, j'en compte souvent huit ou neuf.»"}
+{"type":"mcq","prompt":"Pour le moment, qu'est-ce qu'Anne demande ?","prompt_fa":"آن فعلاً چه چیزی می‌خواهد؟","options":["Un petit panneau dans l'entrée.","Une réunion ce soir.","Une porte pour l'ascenseur.","Des clés pour les boîtes aux lettres."],"correct":0,"explanation_fa":"آن می‌گوید: «Pour le moment, un petit panneau dans l'entrée serait déjà très utile»."}
+{"type":"tf","prompt":"Selon Anne, les vélos sont un danger s'il y a un incendie.","prompt_fa":"به نظر آن، اگر آتش‌سوزی شود دوچرخه‌ها خطرناک‌اند.","correct":true,"explanation_fa":"آن می‌گوید: «s'il y a un incendie, les pompiers ne pourront pas entrer facilement»."}
+{"type":"tf","prompt":"La salle du rez-de-chaussée sert déjà aux vélos.","prompt_fa":"از اتاق طبقهٔ همکف همین حالا برای دوچرخه‌ها استفاده می‌شود.","correct":false,"explanation_fa":"آن می‌گوید این اتاق «vide depuis deux ans» است."}

@@ -1,0 +1,47 @@
+code: fr-b1-t016
+title: Une fête surprise
+band: 3
+kind: long_dialogue
+sentences:
+A: Reza, tu as cinq minutes ? Il faut organiser la fête de Chloé. | رضا، پنج دقیقه وقت داری؟ باید جشن کلوئه را راه بیندازیم.
+B: Ah oui, Emma, samedi, elle a vingt ans ! On fait toujours la surprise chez moi ? | آهان آره اِما، شنبه بیست ساله می‌شود! هنوز قرار است سورپرایز خانهٔ من باشد؟
+A: Oui, chez toi, c'est plus grand. | آره، خانهٔ تو بزرگ‌تر است.
+A: J'ai déjà invité quinze personnes par message, sans rien dire à Chloé, évidemment. | تا حالا پانزده نفر را با پیام دعوت کرده‌ام، البته بدون این‌که چیزی به کلوئه بگویم.
+B: Parfait. Moi, je m'occupe de la musique et des boissons. | عالی. من هم موسیقی و نوشیدنی‌ها را به عهده می‌گیرم.
+A: Et moi, je prépare un gâteau au chocolat, son dessert préféré. | من هم کیک شکلاتی درست می‌کنم، دسر محبوبش.
+B: Mais comment est-ce que Chloé va venir chez moi ? Elle ne doit rien savoir. | ولی کلوئه چطور باید بیاید خانهٔ من؟ نباید چیزی بفهمد.
+A: Facile : tu l'invites à dîner, juste vous deux, pour réviser l'examen de lundi. | ساده است: دعوتش می‌کنی برای شام، فقط خودتان دو نفر، که برای امتحان دوشنبه درس بخوانید.
+B: Pas mal ! Elle ne se doutera de rien. | بد نیست! به هیچ چیز شک نمی‌کند.
+A: Attends… je viens de recevoir un message de Chloé. Oh non ! | صبر کن… همین الان از کلوئه پیام گرفتم. ای وای!
+B: Quoi ? Elle a tout découvert ? | چی شده؟ همه‌چیز را فهمیده؟
+A: Non, c'est pire : ses parents l'emmènent à Lyon pour son anniversaire. Elle part vendredi soir et elle rentre dimanche. | نه، بدتر: پدر و مادرش برای تولدش او را به لیون می‌برند. جمعه شب می‌رود و یکشنبه برمی‌گردد.
+B: Tu plaisantes ! Et les quinze invités ? | شوخی می‌کنی! پس پانزده تا مهمان چه؟
+A: Je ne sais pas… Tout le monde a déjà dit oui pour samedi. | نمی‌دانم… همه برای شنبه قبول کرده‌اند.
+B: Attends, j'ai une idée. Et si on faisait la fête vendredi, avant son départ ? | صبر کن، یک فکری دارم. چطور است جشن را جمعه، قبل از رفتنش بگیریم؟
+A: Vendredi ? Mais son train part à 21 heures ! | جمعه؟ ولی قطارش ساعت نه شب حرکت می‌کند! | tts: Vendredi ? Mais son train part à vingt et une heures !
+B: Alors on commence à 18 heures : une petite fête de deux heures, et après, on l'accompagne tous à la gare ! | پس ساعت شش شروع می‌کنیم: یک جشن کوچک دوساعته، بعد هم همه با هم تا ایستگاه همراهش می‌رویم! | tts: Alors on commence à dix-huit heures : une petite fête de deux heures, et après, on l'accompagne tous à la gare !
+A: C'est génial ! Mais il faut prévenir tout le monde, et vite. | عالی است! ولی باید زود به همه خبر بدهیم.
+B: Je vais écrire aux invités ce soir. | خودم امشب به مهمان‌ها پیام می‌دهم.
+A: Et moi, je vais appeler sa mère, pour savoir si vendredi lui convient. Je lui confie notre secret. | من هم به مادرش زنگ می‌زنم که ببینم جمعه برایش مناسب است یا نه. رازمان را به او می‌سپارم.
+B: Bonne idée. Et le gâteau ? Tu auras le temps ? | فکر خوبی است. کیک چه می‌شود؟ وقت داری؟
+A: Si je le prépare jeudi soir, oui. Mais toi, ne dis rien à Chloé ! | اگر پنجشنبه شب درستش کنم، آره. ولی تو به کلوئه هیچ چیز نگو!
+B: Moi ? Je sais garder un secret ! Bon… je ne lui parle plus jusqu'à vendredi, c'est plus sûr. | من؟ من رازدارم! خب… تا جمعه دیگر با او حرف نمی‌زنم، این‌طوری مطمئن‌تر است.
+reading A:
+{"type":"mcq","prompt":"Quel problème arrive pendant la conversation ?","prompt_fa":"در وسط گفتگو چه مشکلی پیش می‌آید؟","options":["Chloé découvre le secret de la fête.","Reza ne peut pas faire la fête chez lui.","Chloé ne sera pas là samedi.","Les invités ne veulent pas venir."],"correct":2,"explanation_fa":"اِما پیامی از کلوئه می‌گیرد: «ses parents l'emmènent à Lyon pour son anniversaire. Elle part vendredi soir»."}
+{"type":"tf","prompt":"La fête aura lieu chez Reza.","prompt_fa":"جشن در خانهٔ رضا برگزار می‌شود.","correct":true,"explanation_fa":"رضا می‌پرسد: «On fait toujours la surprise chez moi ?» و اِما می‌گوید: «Oui»."}
+{"type":"tf","prompt":"Chloé sait déjà tout sur la fête.","prompt_fa":"کلوئه از قبل همه‌چیز را دربارهٔ جشن می‌داند.","correct":false,"explanation_fa":"رضا می‌پرسد «Elle a tout découvert ?» و اِما جواب می‌دهد: «Non»."}
+{"type":"find","prompt":"Quelle phrase donne la solution de Reza ?","prompt_fa":"کدام جمله راه‌حل رضا را می‌گوید؟","correct_sentence":14,"explanation_fa":"رضا می‌گوید: «Et si on faisait la fête vendredi, avant son départ ?»"}
+reading B:
+{"type":"match","prompt":"Qui va faire quoi ?","prompt_fa":"چه کسی چه کاری می‌کند؟","left":["Emma","Reza","la mère de Chloé"],"right":["s'occupe de la musique et des boissons.","va connaître le secret.","va préparer le gâteau.","va réviser l'examen avec Chloé."],"pairs":[[0,2],[1,0],[2,1]],"explanation_fa":"اِما می‌گوید: «je prépare un gâteau au chocolat»، رضا «je m'occupe de la musique et des boissons» و اِما دربارهٔ مادر کلوئه می‌گوید: «Je lui confie notre secret.»"}
+{"type":"ctx","word":"se doutera","prompt":"« Elle ne se doutera de rien » veut dire…","prompt_fa":"«Elle ne se doutera de rien» یعنی…","options":["Elle ne pensera pas qu'il y a une fête.","Elle ne viendra pas.","Elle ne mangera rien.","Elle ne sera pas contente."],"correct":0,"explanation_fa":"«se douter de» یعنی بو بردن؛ کلوئه فکر می‌کند فقط برای شام و درس می‌آید."}
+{"type":"cloze","prompt":"Complétez la phrase de Reza.","prompt_fa":"جملهٔ رضا را کامل کنید.","text_with_gaps":"Et si on {{1}} la fête vendredi, {{2}} son départ ?","bank":["faisait","avant","fera","sans","ferait"],"answers":["faisait","avant"],"explanation_fa":"رضا می‌گوید: «Et si on faisait la fête vendredi, avant son départ ?»"}
+listening A:
+{"type":"num","prompt":"Combien de personnes Emma a-t-elle invitées ?","prompt_fa":"اِما چند نفر را دعوت کرده است؟","answer":"15","accepted":["15","quinze"],"explanation_fa":"اِما می‌گوید: «J'ai déjà invité quinze personnes par message»."}
+{"type":"mcq","prompt":"Où Chloé va-t-elle passer le week-end ?","prompt_fa":"کلوئه آخر هفته را کجا می‌گذراند؟","options":["Chez Reza.","Chez Emma.","À la gare.","À Lyon, avec ses parents."],"correct":3,"explanation_fa":"اِما می‌گوید: «ses parents l'emmènent à Lyon pour son anniversaire»."}
+{"type":"tf","prompt":"Le train de Chloé part vendredi à 21 heures.","prompt_fa":"قطار کلوئه جمعه ساعت نه شب حرکت می‌کند.","correct":true,"explanation_fa":"اِما می‌گوید: «Mais son train part à 21 heures !»"}
+{"type":"tf","prompt":"Emma va préparer le gâteau samedi matin.","prompt_fa":"اِما کیک را شنبه صبح درست می‌کند.","correct":false,"explanation_fa":"اِما می‌گوید: «Si je le prépare jeudi soir, oui.»"}
+listening B:
+{"type":"mcq","prompt":"À quelle heure la fête de vendredi va-t-elle commencer ?","prompt_fa":"جشن جمعه ساعت چند شروع می‌شود؟","options":["À 16 heures.","À 18 heures.","À 20 heures.","À 21 heures."],"correct":1,"explanation_fa":"رضا می‌گوید: «Alors on commence à 18 heures»."}
+{"type":"order","prompt":"Mettez ces moments dans l'ordre.","prompt_fa":"این لحظه‌ها را به ترتیب بچینید.","items":["Emma reçoit un message de Chloé.","Emma et Reza parlent de la musique et du gâteau.","Reza propose de faire la fête vendredi.","Reza va écrire aux invités."],"correct_order":[1,0,2,3],"explanation_fa":"اول از موسیقی و کیک حرف می‌زنند، بعد پیام کلوئه می‌رسد، بعد رضا می‌گوید «Et si on faisait la fête vendredi» و آخر «Je vais écrire aux invités ce soir»."}
+{"type":"tf","prompt":"Après la fête, tout le monde va accompagner Chloé à la gare.","prompt_fa":"بعد از جشن، همه کلوئه را تا ایستگاه همراهی می‌کنند.","correct":true,"explanation_fa":"رضا می‌گوید: «on l'accompagne tous à la gare !»"}
+{"type":"tf","prompt":"Reza va appeler la mère de Chloé.","prompt_fa":"رضا به مادر کلوئه زنگ می‌زند.","correct":false,"explanation_fa":"اِما است که می‌گوید: «je vais appeler sa mère»؛ رضا به مهمان‌ها پیام می‌دهد."}

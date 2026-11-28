@@ -1,0 +1,40 @@
+code: fr-b1-t020
+title: La musique dans la rue
+band: 3
+kind: news
+sentences:
+- Pendant tout le week-end, la vieille ville s'est transformée en grande salle de concert. | تمام آخر هفته، شهر قدیمی به یک سالن کنسرت بزرگ تبدیل شد.
+- Pour son festival de musique dans la rue, la mairie avait invité trente groupes, de la musique classique à la chanson française. | شهرداری برای جشنوارهٔ موسیقی خیابانی‌اش سی گروه را دعوت کرده بود، از موسیقی کلاسیک تا ترانهٔ فرانسوی.
+- Vendredi soir, les élèves de l'école de musique ont ouvert le festival sur la place de la mairie. | جمعه شب، هنرجوهای آموزشگاه موسیقی جشنواره را در میدان شهرداری افتتاح کردند.
+- Samedi, de 14 heures à minuit, il y avait de la musique à chaque coin de rue. | شنبه، از ساعت دو بعدازظهر تا نیمه‌شب، سر هر کوچه‌ای موسیقی بود. | tts: Samedi, de quatorze heures à minuit, il y avait de la musique à chaque coin de rue.
+- On pouvait écouter du piano devant l'église, de la guitare au marché et un groupe de jeunes au bord de la rivière. | می‌شد جلوی کلیسا پیانو گوش داد، در بازار گیتار و کنار رودخانه یک گروه جوان را.
+- Dimanche matin, les enfants ont essayé des instruments dans le parc. | صبح یکشنبه، بچه‌ها در پارک سازهای مختلف را امتحان کردند.
+- Tous les concerts étaient gratuits. | همهٔ کنسرت‌ها رایگان بودند.
+- Environ 8 000 personnes sont venues : c'est beaucoup pour une ville de 12 000 habitants ! | حدود ۸ هزار نفر آمدند: برای شهری با ۱۲ هزار نفر جمعیت خیلی است! | tts: Environ huit mille personnes sont venues : c'est beaucoup pour une ville de douze mille habitants !
+- Mais la grande surprise est arrivée dimanche soir. | ولی غافلگیری بزرگ یکشنبه شب بود.
+- Vers 21 heures, on a soudain entendu une voix célèbre sur la place : celle de la chanteuse Camille Martin. | حدود ساعت نه شب، ناگهان صدای آشنایی در میدان پیچید: صدای کامی مارتن خواننده. | tts: Vers vingt et une heures, on a soudain entendu une voix célèbre sur la place : celle de la chanteuse Camille Martin.
+- La chanteuse est née ici il y a 35 ans, et elle n'avait rien dit à personne avant de venir. | این خواننده ۳۵ سال پیش همین‌جا به دنیا آمده و پیش از آمدنش به هیچ‌کس چیزی نگفته بود. | tts: La chanteuse est née ici il y a trente-cinq ans, et elle n'avait rien dit à personne avant de venir.
+- « Ma première chanson, je l'ai chantée dans cette rue, à 12 ans. Je voulais remercier ma ville », a raconté Camille Martin. | کامی مارتن تعریف کرد: «اولین ترانه‌ام را دوازده سالگی توی همین خیابان خواندم. می‌خواستم از شهرم تشکر کنم.» | tts: « Ma première chanson, je l'ai chantée dans cette rue, à douze ans. Je voulais remercier ma ville », a raconté Camille Martin.
+- Elle a chanté pendant une heure, avec les musiciens de l'école de musique. | یک ساعت همراه نوازنده‌های آموزشگاه موسیقی آواز خواند.
+- Sur la place, beaucoup de gens pleuraient de joie. | در میدان خیلی‌ها از خوشحالی گریه می‌کردند.
+- « Je l'ai vue à la télé toute ma vie, et ce soir, elle était à deux mètres de moi ! », raconte Marie, 64 ans. | ماری، ۶۴ ساله، تعریف می‌کند: «تمام عمرم او را در تلویزیون دیده‌ام و امشب دو متر با من فاصله داشت!» | tts: « Je l'ai vue à la télé toute ma vie, et ce soir, elle était à deux mètres de moi ! », raconte Marie, soixante-quatre ans.
+- La mairie pense déjà à l'année prochaine, mais elle ne veut rien dire sur le prochain invité surprise… | شهرداری از حالا به فکر سال آینده است، ولی دربارهٔ مهمان غافلگیرکنندهٔ بعدی هیچ چیز نمی‌گوید…
+reading A:
+{"type":"mcq","prompt":"De quoi parle cette nouvelle ?","prompt_fa":"این خبر دربارهٔ چیست؟","options":["De l'ouverture d'une nouvelle école de musique.","D'un concert payant dans une grande salle.","D'un week-end de musique dans les rues de la ville.","De la vie d'une chanteuse célèbre à Paris."],"correct":2,"explanation_fa":"خبر می‌گوید: «Pour son festival de musique dans la rue, la mairie avait invité trente groupes»."}
+{"type":"tf","prompt":"On ne payait pas pour écouter les concerts.","prompt_fa":"برای گوش دادن به کنسرت‌ها پول نمی‌دادند.","correct":true,"explanation_fa":"خبر می‌گوید: «Tous les concerts étaient gratuits.»"}
+{"type":"tf","prompt":"Camille Martin avait annoncé sa visite une semaine avant.","prompt_fa":"کامی مارتن یک هفته قبل آمدنش را اعلام کرده بود.","correct":false,"explanation_fa":"خبر می‌گوید: «elle n'avait rien dit à personne avant de venir»."}
+{"type":"find","prompt":"Quelle phrase dit qui a ouvert le festival ?","prompt_fa":"کدام جمله می‌گوید چه کسانی جشنواره را افتتاح کردند؟","correct_sentence":2,"explanation_fa":"خبر می‌گوید: «les élèves de l'école de musique ont ouvert le festival»."}
+reading B:
+{"type":"match","prompt":"Quand est-ce que c'était ?","prompt_fa":"هر کدام کی بود؟","left":["vendredi soir","samedi","dimanche matin","dimanche soir"],"right":["les enfants essaient des instruments.","Camille Martin chante sur la place.","les élèves de l'école de musique jouent.","il y a de la musique à chaque coin de rue.","la mairie donne le nom du prochain invité."],"pairs":[[0,2],[1,3],[2,0],[3,1]],"explanation_fa":"«Vendredi soir» هنرجوها، «Samedi» موسیقی «à chaque coin de rue»، «Dimanche matin» بچه‌ها و سازها، و «dimanche soir» کامی مارتن."}
+{"type":"cloze","prompt":"Complétez la phrase du texte.","prompt_fa":"جملهٔ متن را کامل کنید.","text_with_gaps":"La chanteuse est née ici il y a 35 ans, et elle n'avait {{1}} dit à {{2}} avant de venir.","bank":["rien","personne","pas","tout"],"answers":["rien","personne"],"explanation_fa":"خبر می‌گوید: «elle n'avait rien dit à personne avant de venir»."}
+{"type":"ctx","word":"soudain","prompt":"« on a soudain entendu une voix célèbre » : « soudain » veut dire…","prompt_fa":"در این جمله «soudain» یعنی…","options":["lentement","plus tard","chaque jour","tout à coup"],"correct":3,"explanation_fa":"آمدن خواننده غافلگیری بود و کسی منتظرش نبود؛ «soudain» یعنی ناگهان."}
+listening A:
+{"type":"num","prompt":"Combien de personnes sont venues au festival ?","prompt_fa":"چند نفر به جشنواره آمدند؟","answer":"8000","accepted":["8000","8 000","huit mille"],"explanation_fa":"می‌شنویم: «Environ 8 000 personnes sont venues»."}
+{"type":"mcq","prompt":"Où pouvait-on écouter du piano ?","prompt_fa":"کجا می‌شد پیانو گوش داد؟","options":["Devant l'église.","Au marché.","Au bord de la rivière.","Dans le parc."],"correct":0,"explanation_fa":"می‌شنویم: «On pouvait écouter du piano devant l'église»."}
+{"type":"tf","prompt":"La ville a environ 12 000 habitants.","prompt_fa":"شهر حدود ۱۲ هزار نفر جمعیت دارد.","correct":true,"explanation_fa":"می‌شنویم: «une ville de 12 000 habitants»."}
+{"type":"tf","prompt":"Camille Martin a chanté seule, sans musiciens.","prompt_fa":"کامی مارتن تنها و بدون نوازنده خواند.","correct":false,"explanation_fa":"می‌شنویم: «Elle a chanté pendant une heure, avec les musiciens de l'école de musique.»"}
+listening B:
+{"type":"mcq","prompt":"À quel âge Camille Martin a-t-elle chanté pour la première fois dans cette rue ?","prompt_fa":"کامی مارتن چند سالش بود که برای اولین بار در این خیابان آواز خواند؟","options":["À 8 ans.","À 35 ans.","À 21 ans.","À 12 ans."],"correct":3,"explanation_fa":"خواننده می‌گوید: «Ma première chanson, je l'ai chantée dans cette rue, à 12 ans.»"}
+{"type":"mcq","prompt":"Comment étaient beaucoup de gens sur la place ?","prompt_fa":"خیلی از مردم در میدان چه حالی داشتند؟","options":["Ils étaient fâchés.","Ils étaient fatigués.","Ils pleuraient de joie.","Ils voulaient partir."],"correct":2,"explanation_fa":"می‌شنویم: «Sur la place, beaucoup de gens pleuraient de joie.»"}
+{"type":"tf","prompt":"Marie a vu Camille Martin de très près.","prompt_fa":"ماری کامی مارتن را از خیلی نزدیک دید.","correct":true,"explanation_fa":"ماری می‌گوید: «elle était à deux mètres de moi !»"}
+{"type":"tf","prompt":"La mairie a déjà donné le nom du prochain invité.","prompt_fa":"شهرداری اسم مهمان بعدی را اعلام کرده است.","correct":false,"explanation_fa":"می‌شنویم: «elle ne veut rien dire sur le prochain invité surprise…»"}

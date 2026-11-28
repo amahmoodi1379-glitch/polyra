@@ -1,0 +1,40 @@
+code: fr-b1-t006
+title: Une nuit de pluie à Toulouse
+band: 3
+kind: news
+sentences:
+- De très fortes pluies sont tombées sur Toulouse dans la nuit de mardi à mercredi. | شب سه‌شنبه به چهارشنبه باران‌های بسیار شدیدی در تولوز بارید.
+- En six heures, il a plu comme pendant tout un mois. | در شش ساعت، به اندازهٔ یک ماه کامل باران آمد.
+- Mercredi matin, plusieurs rues du centre et du sud de la ville étaient sous l'eau. | صبح چهارشنبه چند خیابان در مرکز و جنوب شهر زیر آب بود.
+- Dans certains quartiers, l'eau arrivait aux genoux. | در بعضی محله‌ها آب تا زانو می‌رسید.
+- Les pompiers ont travaillé toute la nuit : ils sont allés dans 150 maisons et garages pour sortir l'eau. | آتش‌نشان‌ها تمام شب کار کردند: به ۱۵۰ خانه و پارکینگ رفتند تا آب را بیرون بکشند. | tts: Les pompiers ont travaillé toute la nuit : ils sont allés dans cent cinquante maisons et garages pour sortir l'eau.
+- Dans la nuit, un homme de 70 ans a eu très peur : sa voiture s'est arrêtée au milieu d'une route sous l'eau. | در همان شب، مردی ۷۰ ساله خیلی ترسید: ماشینش وسط جاده‌ای که زیر آب بود خاموش شد. | tts: Dans la nuit, un homme de soixante-dix ans a eu très peur : sa voiture s'est arrêtée au milieu d'une route sous l'eau.
+- Il a attendu les pompiers pendant deux heures, sur le toit de sa voiture. | دو ساعت روی سقف ماشینش منتظر آتش‌نشان‌ها ماند.
+- Il a expliqué à la radio : « J'ai fait une erreur, je voulais rentrer vite chez moi. » | او در رادیو توضیح داد: «اشتباه کردم، می‌خواستم زود به خانه برگردم.»
+- Le matin, beaucoup de bus des écoles étaient en retard, parfois d'une heure. | صبح، خیلی از اتوبوس‌های مدرسه دیر کردند، گاهی تا یک ساعت.
+- « Mon fils est arrivé à l'école à 10 heures au lieu de 8 heures », raconte Julie, une mère du quartier. | ژولی، یکی از مادرهای محله، تعریف می‌کند: «پسرم به جای ساعت هشت، ساعت ده به مدرسه رسید.» | tts: « Mon fils est arrivé à l'école à dix heures au lieu de huit heures », raconte Julie, une mère du quartier.
+- « Mais les professeurs ont été très gentils, et les enfants ont trouvé ça plutôt amusant ! » | «ولی معلم‌ها خیلی مهربان بودند و بچه‌ها این ماجرا را نسبتاً بامزه دیدند!»
+- Certaines écoles ont quand même fermé à midi, et les parents sont venus chercher leurs enfants. | با این حال بعضی مدرسه‌ها ظهر تعطیل کردند و پدر و مادرها آمدند دنبال بچه‌هایشان.
+- Heureusement, personne ne s'est blessé. | خوشبختانه کسی آسیب ندید.
+- La mairie demande aux habitants de prendre au sérieux les messages de la météo et de ne pas prendre la voiture pendant les orages. | شهرداری از اهالی می‌خواهد هشدارهای هواشناسی را جدی بگیرند و موقع طوفان با ماشین بیرون نروند.
+- Selon la météo, la pluie va revenir jeudi soir, mais elle sera moins forte. | به گفتهٔ هواشناسی، پنجشنبه شب باز باران می‌آید، ولی کمتر شدید است.
+- Toutes les écoles seront ouvertes jeudi. | پنجشنبه همهٔ مدرسه‌ها باز خواهند بود.
+reading A:
+{"type":"mcq","prompt":"De quoi parle cette nouvelle ?","prompt_fa":"این خبر دربارهٔ چیست؟","options":["D'un accident grave sur une route de Toulouse.","Des nouvelles écoles du centre de Toulouse.","D'une nuit de pluie très forte et de ses problèmes.","Du travail de nuit des chauffeurs de bus."],"correct":2,"explanation_fa":"خبر با این جمله شروع می‌شود: «De très fortes pluies sont tombées sur Toulouse» و بعد از خیابان‌های زیر آب و اتوبوس‌های دیرکرده می‌گوید."}
+{"type":"tf","prompt":"Des écoles ont fermé avant la fin de la journée.","prompt_fa":"بعضی مدرسه‌ها قبل از آخر روز تعطیل کردند.","correct":true,"explanation_fa":"خبر می‌گوید: «Certaines écoles ont quand même fermé à midi»."}
+{"type":"tf","prompt":"Plusieurs personnes se sont blessées pendant la nuit.","prompt_fa":"چند نفر در آن شب آسیب دیدند.","correct":false,"explanation_fa":"خبر می‌گوید: «Heureusement, personne ne s'est blessé.»"}
+{"type":"find","prompt":"Quelle phrase donne le conseil de la mairie aux habitants ?","prompt_fa":"کدام جمله توصیهٔ شهرداری به اهالی را می‌گوید؟","correct_sentence":13,"explanation_fa":"خبر می‌گوید: «La mairie demande aux habitants de prendre au sérieux les messages de la météo»."}
+reading B:
+{"type":"ctx","word":"au lieu de","prompt":"Dans « à 10 heures au lieu de 8 heures », « au lieu de » veut dire…","prompt_fa":"در این جمله «au lieu de» یعنی…","options":["à la place de","en plus de","avant","vers"],"correct":0,"explanation_fa":"پسر ژولی باید ساعت هشت می‌رسید، ولی «à 10 heures au lieu de 8 heures» رسید، یعنی ساعت ده به جای هشت."}
+{"type":"cloze","prompt":"Complétez la phrase du texte.","prompt_fa":"جملهٔ متن را کامل کنید.","text_with_gaps":"Dans {{1}} quartiers, l'eau arrivait aux {{2}}.","bank":["certains","genoux","chaque","yeux"],"answers":["certains","genoux"],"explanation_fa":"خبر می‌گوید: «Dans certains quartiers, l'eau arrivait aux genoux.»"}
+{"type":"order","prompt":"Mettez ces moments dans l'ordre.","prompt_fa":"این لحظه‌ها را به ترتیب بچینید.","items":["Un homme attend sur le toit de sa voiture.","La pluie commence à tomber.","La pluie va revenir.","Les bus des écoles arrivent en retard."],"correct_order":[1,0,3,2],"explanation_fa":"باران «dans la nuit de mardi à mercredi» می‌بارد، در همان شب مرد ۷۰ ساله روی سقف ماشینش منتظر می‌ماند، صبح اتوبوس‌ها دیر می‌کنند و باران «jeudi soir» برمی‌گردد."}
+listening A:
+{"type":"num","prompt":"Les pompiers sont allés dans combien de maisons et de garages ?","prompt_fa":"آتش‌نشان‌ها به چند خانه و پارکینگ رفتند؟","answer":"150","accepted":["150","cent cinquante"],"explanation_fa":"می‌شنویم: «ils sont allés dans 150 maisons et garages pour sortir l'eau»."}
+{"type":"mcq","prompt":"Où l'homme de 70 ans a-t-il attendu les pompiers ?","prompt_fa":"مرد ۷۰ ساله کجا منتظر آتش‌نشان‌ها ماند؟","options":["Dans un café du centre.","Au milieu d'un pont.","Devant l'école de son fils.","Sur le toit de sa voiture."],"correct":3,"explanation_fa":"می‌شنویم: «Il a attendu les pompiers pendant deux heures, sur le toit de sa voiture.»"}
+{"type":"tf","prompt":"La pluie de jeudi soir sera moins forte.","prompt_fa":"باران پنجشنبه شب کمتر شدید خواهد بود.","correct":true,"explanation_fa":"می‌شنویم: «la pluie va revenir jeudi soir, mais elle sera moins forte»."}
+{"type":"tf","prompt":"Julie est fâchée contre les professeurs.","prompt_fa":"ژولی از دست معلم‌ها عصبانی است.","correct":false,"explanation_fa":"ژولی می‌گوید: «les professeurs ont été très gentils»."}
+listening B:
+{"type":"mcq","prompt":"À quelle heure le fils de Julie est-il arrivé à l'école ?","prompt_fa":"پسر ژولی ساعت چند به مدرسه رسید؟","options":["À 8 heures.","À 9 heures.","À 10 heures.","À midi."],"correct":2,"explanation_fa":"ژولی می‌گوید: «Mon fils est arrivé à l'école à 10 heures au lieu de 8 heures»."}
+{"type":"mcq","prompt":"Quelle erreur l'homme de 70 ans a-t-il faite ?","prompt_fa":"مرد ۷۰ ساله چه اشتباهی کرد؟","options":["Il a pris sa voiture pour rentrer vite.","Il n'a pas appelé les pompiers.","Il est sorti à pied sous la pluie.","Il est parti sans son téléphone."],"correct":0,"explanation_fa":"مرد می‌گوید: «J'ai fait une erreur, je voulais rentrer vite chez moi»، و ماشینش وسط جادهٔ زیر آب خاموش شد."}
+{"type":"tf","prompt":"Les enfants ont trouvé cette journée assez drôle.","prompt_fa":"بچه‌ها آن روز را نسبتاً بامزه دیدند.","correct":true,"explanation_fa":"ژولی می‌گوید: «les enfants ont trouvé ça plutôt amusant !»"}
+{"type":"tf","prompt":"Les écoles seront fermées jeudi.","prompt_fa":"مدرسه‌ها پنجشنبه تعطیل خواهند بود.","correct":false,"explanation_fa":"خبر می‌گوید: «Toutes les écoles seront ouvertes jeudi.»"}

@@ -1,0 +1,47 @@
+code: fr-b1-t019
+title: Mal au dos
+band: 3
+kind: long_dialogue
+sentences:
+A: Bonjour docteur. | سلام آقای دکتر.
+B: Bonjour madame Dubois, asseyez-vous. Alors, où avez-vous mal ? | سلام خانم دوبوا، بفرمایید بنشینید. خب، کجایتان درد می‌کند؟
+A: Au dos, en bas. Ça a commencé lundi. J'ai déménagé ce week-end. | کمرم، پایینش. از دوشنبه شروع شد. آخر هفته اسباب‌کشی کردم.
+B: Je vois. Vous avez porté des choses lourdes ? | متوجهم. چیزهای سنگین بلند کرده‌اید؟
+A: Oui, surtout des boîtes de livres. Trois amis devaient venir m'aider, mais deux étaient malades. | بله، بیشتر جعبه‌های کتاب. قرار بود سه تا از دوستانم بیایند کمکم، ولی دو نفرشان مریض بودند.
+A: Alors j'ai tout monté seule, au troisième étage, sans ascenseur. | برای همین همه را تنهایی تا طبقهٔ سوم بالا بردم، بدون آسانسور.
+B: Au troisième, sans ascenseur ! Et comment avez-vous soulevé les boîtes ? Avec le dos ou avec les jambes ? | طبقهٔ سوم، بدون آسانسور! جعبه‌ها را چطور بلند کردید؟ با کمر یا با پاها؟
+A: Euh… avec le dos, je crois. Je n'ai pas fait attention. | اِ… با کمر، فکر کنم. دقت نکردم.
+B: C'est l'erreur classique. Vous pouvez toucher vos pieds ? | این اشتباه همیشگی است. می‌توانید دستتان را به پاهایتان برسانید؟
+A: Non, impossible ! Et la nuit, je ne peux dormir ni sur le dos ni sur le côté. | نه، امکان ندارد! شب‌ها هم نه می‌توانم به پشت بخوابم نه به پهلو.
+B: Bon, ce n'est pas grave : votre dos est fatigué, c'est tout. | خب، چیز مهمی نیست: کمرتان خسته است، همین.
+B: Je vous donne des comprimés contre la douleur, pour cinq jours. | برای درد به شما قرص می‌دهم، برای پنج روز.
+B: Mettez aussi une serviette chaude sur le dos, le soir. | شب‌ها هم یک حولهٔ گرم روی کمرتان بگذارید.
+B: Mais surtout, ne restez pas au lit toute la journée : marchez un peu, doucement. | ولی مهم‌تر از همه، تمام روز در رختخواب نمانید: کمی آرام راه بروید.
+A: Et pour le travail ? Je passe mes journées devant un ordinateur. | کارم چه می‌شود؟ تمام روز پشت کامپیوترم.
+B: Restez à la maison trois jours. Je vous donne un papier pour votre patron. | سه روز در خانه بمانید. یک برگه برای رئیستان می‌نویسم.
+A: Merci. Ah, et samedi, je voulais peindre ma nouvelle chambre… | ممنون. آهان، شنبه هم می‌خواستم اتاق خواب جدیدم را رنگ کنم…
+B: Peindre ? Avec ce dos ? Certainement pas ! | رنگ کردن؟ با این کمر؟ به هیچ وجه!
+B: Demandez plutôt aux deux amis qui étaient malades : ils vous doivent bien ça ! | بهتر است از آن دو دوستی که مریض بودند بخواهید: این را به شما بدهکارند!
+A: Vous avez raison, docteur. Je vais les appeler ce soir. | حق با شماست، آقای دکتر. امشب به آن‌ها زنگ می‌زنم.
+B: Et la prochaine fois, portez avec les jambes, pas avec le dos ! | دفعهٔ بعد هم با پاهایتان بار بلند کنید، نه با کمرتان!
+A: Promis. Mais j'espère ne pas déménager de nouveau avant longtemps ! | قول می‌دهم. ولی امیدوارم حالا حالاها دوباره اسباب‌کشی نکنم!
+reading A:
+{"type":"mcq","prompt":"Pourquoi Madame Dubois a-t-elle mal au dos ?","prompt_fa":"چرا کمر خانم دوبوا درد می‌کند؟","options":["Elle a monté seule des boîtes lourdes.","Elle est tombée dans l'escalier.","Elle a peint sa nouvelle chambre.","Elle dort mal dans son nouveau lit."],"correct":0,"explanation_fa":"خانم دوبوا می‌گوید: «surtout des boîtes de livres» و «j'ai tout monté seule, au troisième étage, sans ascenseur»."}
+{"type":"tf","prompt":"Madame Dubois a porté les boîtes sans l'aide de ses amis.","prompt_fa":"خانم دوبوا جعبه‌ها را بدون کمک دوستانش جابه‌جا کرد.","correct":true,"explanation_fa":"خانم دوبوا می‌گوید: «Alors j'ai tout monté seule»."}
+{"type":"tf","prompt":"Le médecin pense que c'est très grave.","prompt_fa":"دکتر فکر می‌کند مشکل خیلی جدی است.","correct":false,"explanation_fa":"دکتر می‌گوید: «ce n'est pas grave : votre dos est fatigué, c'est tout»."}
+{"type":"find","prompt":"Quelle phrase montre comment Madame Dubois a soulevé les boîtes ?","prompt_fa":"کدام جمله نشان می‌دهد خانم دوبوا جعبه‌ها را چطور بلند کرد؟","correct_sentence":7,"explanation_fa":"خانم دوبوا می‌گوید: «Euh… avec le dos, je crois. Je n'ai pas fait attention.»"}
+reading B:
+{"type":"ctx","word":"Certainement pas","prompt":"« Peindre ? Avec ce dos ? Certainement pas ! » : que pense le médecin ?","prompt_fa":"«Peindre ? Avec ce dos ? Certainement pas !»: نظر دکتر چیست؟","options":["Peut-être, si elle va mieux.","Oui, bien sûr.","Absolument pas.","Oui, mais plus tard dans la journée."],"correct":2,"explanation_fa":"«Certainement pas» یعنی به هیچ وجه؛ دکتر رنگ کردن را برای خانم دوبوا ممنوع می‌داند."}
+{"type":"cloze","prompt":"Complétez la phrase du médecin.","prompt_fa":"جملهٔ دکتر را کامل کنید.","text_with_gaps":"Je vous donne des {{1}} contre la {{2}}, pour cinq jours.","bank":["comprimés","douleur","serviettes","porte"],"answers":["comprimés","douleur"],"explanation_fa":"دکتر می‌گوید: «Je vous donne des comprimés contre la douleur, pour cinq jours.»"}
+{"type":"match","prompt":"Quel conseil pour quand ?","prompt_fa":"کدام توصیه برای چه وقتی است؟","left":["pour la douleur","le soir","pendant la journée"],"right":["marcher un peu, doucement","des comprimés pour cinq jours","une serviette chaude sur le dos","peindre la chambre"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"دکتر می‌گوید: «des comprimés contre la douleur»، «une serviette chaude sur le dos, le soir» و «ne restez pas au lit toute la journée : marchez un peu»."}
+{"type":"order","prompt":"Mettez ces moments dans l'ordre.","prompt_fa":"این لحظه‌ها را به ترتیب بچینید.","items":["Madame Dubois a mal au dos.","Madame Dubois déménage.","Madame Dubois va voir le médecin.","Les amis vont peut-être peindre la chambre."],"correct_order":[1,0,2,3],"explanation_fa":"اول اسباب‌کشی «ce week-end»، بعد درد «Ça a commencé lundi»، بعد دیدن دکتر، و شاید شنبه دوستانش اتاق را رنگ کنند."}
+listening A:
+{"type":"num","prompt":"Madame Dubois doit rester combien de jours à la maison ?","prompt_fa":"خانم دوبوا چند روز باید در خانه بماند؟","answer":"3","accepted":["3","trois"],"explanation_fa":"دکتر می‌گوید: «Restez à la maison trois jours.»"}
+{"type":"mcq","prompt":"À quel étage est le nouvel appartement ?","prompt_fa":"آپارتمان جدید در کدام طبقه است؟","options":["Au premier.","Au deuxième.","Au troisième.","Au rez-de-chaussée."],"correct":2,"explanation_fa":"خانم دوبوا می‌گوید: «au troisième étage, sans ascenseur»."}
+{"type":"tf","prompt":"L'immeuble n'a pas d'ascenseur.","prompt_fa":"ساختمان آسانسور ندارد.","correct":true,"explanation_fa":"خانم دوبوا می‌گوید: «sans ascenseur»."}
+{"type":"tf","prompt":"Selon le médecin, il faut rester au lit toute la journée.","prompt_fa":"به گفتهٔ دکتر، باید تمام روز در رختخواب ماند.","correct":false,"explanation_fa":"دکتر می‌گوید: «ne restez pas au lit toute la journée : marchez un peu»."}
+listening B:
+{"type":"mcq","prompt":"Que voulait faire Madame Dubois samedi ?","prompt_fa":"خانم دوبوا می‌خواست شنبه چه کار کند؟","options":["Déménager de nouveau.","Voir ses amis malades.","Aller au travail.","Peindre sa chambre."],"correct":3,"explanation_fa":"خانم دوبوا می‌گوید: «samedi, je voulais peindre ma nouvelle chambre…»"}
+{"type":"mcq","prompt":"Combien d'amis devaient venir l'aider ?","prompt_fa":"قرار بود چند نفر از دوستانش برای کمک بیایند؟","options":["Deux.","Trois.","Cinq.","Aucun."],"correct":1,"explanation_fa":"خانم دوبوا می‌گوید: «Trois amis devaient venir m'aider»."}
+{"type":"tf","prompt":"Madame Dubois travaille devant un ordinateur.","prompt_fa":"خانم دوبوا پشت کامپیوتر کار می‌کند.","correct":true,"explanation_fa":"خانم دوبوا می‌گوید: «Je passe mes journées devant un ordinateur.»"}
+{"type":"tf","prompt":"Le médecin lui donne des comprimés pour un mois.","prompt_fa":"دکتر برای یک ماه به او قرص می‌دهد.","correct":false,"explanation_fa":"دکتر می‌گوید: «des comprimés contre la douleur, pour cinq jours»."}

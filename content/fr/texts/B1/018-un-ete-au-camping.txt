@@ -1,0 +1,44 @@
+code: fr-b1-t018
+title: Un été au camping
+band: 3
+kind: letter
+sentences:
+- Madame, Monsieur, | خانم‌ها و آقایان محترم،
+- J'ai lu sur votre site que votre camping cherche des employés pour l'été, et j'aimerais beaucoup travailler avec vous. | در سایتتان خواندم که کمپینگ شما برای تابستان کارمند می‌خواهد و خیلی دوست دارم با شما کار کنم.
+- Je m'appelle Léa Martin, j'ai 20 ans et je suis étudiante en langues à l'université de Lyon. | اسمم لئا مارتن است، ۲۰ سال دارم و در دانشگاه لیون زبان می‌خوانم. | tts: Je m'appelle Léa Martin, j'ai vingt ans et je suis étudiante en langues à l'université de Lyon.
+- Je connais déjà votre camping : j'y suis venue avec mes parents il y a dix ans, et je n'ai jamais oublié le lac et les montagnes autour. | کمپینگ شما را از قبل می‌شناسم: ده سال پیش با پدر و مادرم آنجا آمدم و دریاچه و کوه‌های دور و برش را هیچ‌وقت فراموش نکرده‌ام.
+- Je parle français, anglais et espagnol, et j'apprends l'allemand depuis un an. | فرانسه، انگلیسی و اسپانیایی حرف می‌زنم و یک سال است آلمانی یاد می‌گیرم.
+- L'été dernier, j'ai travaillé deux mois comme serveuse dans un restaurant au bord de la mer, à Nice. | تابستان گذشته دو ماه در یک رستوران کنار دریا در نیس پیشخدمت بودم.
+- J'y ai appris à garder mon calme quand il y a beaucoup de monde, et à rester polie avec les clients difficiles. | آنجا یاد گرفتم وقتی خیلی شلوغ است خونسردی‌ام را حفظ کنم و با مشتری‌های سخت‌گیر مؤدب بمانم.
+- Depuis trois ans, je m'occupe aussi d'enfants le mercredi, dans un club de sport de mon quartier. | سه سال است که چهارشنبه‌ها در یک باشگاه ورزشی محله‌مان از بچه‌ها هم مراقبت می‌کنم.
+- Je sais organiser des jeux, des promenades et des soirées. | بلدم بازی، گردش و برنامه‌های شبانه ترتیب بدهم.
+- Je pourrais donc travailler à la réception, au petit magasin du camping ou avec les enfants. | پس می‌توانم در پذیرش، در فروشگاه کوچک کمپینگ یا با بچه‌ها کار کنم.
+- Je n'ai peur ni du travail ni des horaires difficiles : je peux travailler le soir et le week-end. | نه از کار می‌ترسم نه از ساعت‌های کاری سخت: می‌توانم شب‌ها و آخر هفته‌ها کار کنم.
+- Je serais libre du premier juillet au 31 août, si ces dates vous conviennent. | اگر این تاریخ‌ها برایتان مناسب باشد، از اول ژوئیه تا ۳۱ اوت آزادم. | tts: Je serais libre du premier juillet au trente et un août, si ces dates vous conviennent.
+- Je n'ai pas de voiture, mais je peux venir en train et en bus jusqu'au village. | ماشین ندارم، ولی می‌توانم با قطار و اتوبوس تا روستا بیایم.
+- Si c'est possible, j'aimerais dormir au camping, dans une tente ou une petite chambre. | اگر ممکن باشد، دوست دارم در خود کمپینگ بخوابم، توی یک چادر یا یک اتاق کوچک.
+- Mon ancien patron, au restaurant, peut vous écrire une lettre sur mon travail. | رئیس سابقم در رستوران می‌تواند دربارهٔ کارم برایتان نامه بنویسد.
+- Vous pouvez m'appeler quand vous voulez au 07 45 18 22 90. | هر وقت خواستید می‌توانید با شمارهٔ ۰۷ ۴۵ ۱۸ ۲۲ ۹۰ با من تماس بگیرید. | tts: Vous pouvez m'appeler quand vous voulez au zéro sept, quarante-cinq, dix-huit, vingt-deux, quatre-vingt-dix.
+- Je vous remercie de votre attention, et j'espère avoir bientôt de vos nouvelles. | از توجهتان سپاسگزارم و امیدوارم به زودی از شما خبر بگیرم.
+- Bien à vous, | با احترام،
+- Léa Martin | لئا مارتن
+reading A:
+{"type":"mcq","prompt":"Pourquoi Léa écrit-elle cette lettre ?","prompt_fa":"لئا چرا این نامه را می‌نویسد؟","options":["Pour demander un travail pour l'été.","Pour réserver une place au camping.","Pour se plaindre du camping.","Pour inviter ses parents au lac."],"correct":0,"explanation_fa":"لئا می‌نویسد: «votre camping cherche des employés pour l'été, et j'aimerais beaucoup travailler avec vous»."}
+{"type":"tf","prompt":"Léa est déjà allée dans ce camping.","prompt_fa":"لئا قبلاً به این کمپینگ رفته است.","correct":true,"explanation_fa":"لئا می‌نویسد: «j'y suis venue avec mes parents il y a dix ans»."}
+{"type":"tf","prompt":"Léa a une voiture pour venir au camping.","prompt_fa":"لئا برای آمدن به کمپینگ ماشین دارد.","correct":false,"explanation_fa":"لئا می‌نویسد: «Je n'ai pas de voiture, mais je peux venir en train et en bus»."}
+{"type":"find","prompt":"Quelle phrase dit quand Léa peut travailler au camping ?","prompt_fa":"کدام جمله می‌گوید لئا کی می‌تواند در کمپینگ کار کند؟","correct_sentence":11,"explanation_fa":"لئا می‌نویسد: «Je serais libre du premier juillet au 31 août»"}
+reading B:
+{"type":"match","prompt":"Où Léa fait-elle ou voudrait-elle faire ces choses ?","prompt_fa":"لئا این کارها را کجا کرده یا می‌خواهد بکند؟","left":["à Nice","dans son quartier","au camping"],"right":["Léa voudrait dormir dans une tente.","Léa a été serveuse.","Léa étudie les langues.","Léa s'occupe d'enfants."],"pairs":[[0,1],[1,3],[2,0]],"explanation_fa":"در نیس «j'ai travaillé deux mois comme serveuse»، در محله‌اش «je m'occupe aussi d'enfants» و در کمپینگ «j'aimerais dormir … dans une tente»."}
+{"type":"ctx","word":"garder mon calme","prompt":"« J'y ai appris à garder mon calme » : qu'est-ce que Léa a appris ?","prompt_fa":"«J'y ai appris à garder mon calme»: لئا چه یاد گرفت؟","options":["À parler très fort.","À partir vite.","À travailler moins.","À rester calme."],"correct":3,"explanation_fa":"«garder son calme» یعنی خونسرد ماندن؛ لئا این را «quand il y a beaucoup de monde» یاد گرفت."}
+{"type":"cloze","prompt":"Complétez la phrase de Léa.","prompt_fa":"جملهٔ لئا را کامل کنید.","text_with_gaps":"Je n'ai peur {{1}} du travail {{2}} des horaires difficiles.","bank":["ni","pas","que","plus"],"answers":["ni","ni"],"explanation_fa":"لئا می‌نویسد: «Je n'ai peur ni du travail ni des horaires difficiles»."}
+{"type":"order","prompt":"Mettez ces moments de la vie de Léa dans l'ordre.","prompt_fa":"این لحظه‌های زندگی لئا را به ترتیب بچینید.","items":["Léa travaille dans un restaurant à Nice.","Léa vient au camping avec ses parents.","Léa écrit cette lettre.","Léa va peut-être commencer au camping en juillet."],"correct_order":[1,0,2,3],"explanation_fa":"اول «il y a dix ans» با پدر و مادرش آمد، بعد «L'été dernier» در نیس کار کرد، حالا نامه می‌نویسد و «du premier juillet» آزاد است."}
+listening A:
+{"type":"num","prompt":"Quel âge a Léa ?","prompt_fa":"لئا چند سال دارد؟","answer":"20","accepted":["20","vingt"],"explanation_fa":"لئا می‌گوید: «j'ai 20 ans»."}
+{"type":"mcq","prompt":"Quelles langues Léa parle-t-elle déjà ?","prompt_fa":"لئا الان چه زبان‌هایی حرف می‌زند؟","options":["Français, anglais et allemand.","Seulement anglais et espagnol.","Français et allemand.","Français, anglais et espagnol."],"correct":3,"explanation_fa":"لئا می‌گوید: «Je parle français, anglais et espagnol, et j'apprends l'allemand»."}
+{"type":"tf","prompt":"Léa sait organiser des activités pour les enfants.","prompt_fa":"لئا بلد است برای بچه‌ها برنامه ترتیب بدهد.","correct":true,"explanation_fa":"لئا می‌گوید: «je m'occupe aussi d'enfants» و «Je sais organiser des jeux, des promenades et des soirées.»"}
+{"type":"tf","prompt":"Léa ne veut pas travailler le week-end.","prompt_fa":"لئا نمی‌خواهد آخر هفته‌ها کار کند.","correct":false,"explanation_fa":"لئا می‌گوید: «je peux travailler le soir et le week-end»."}
+listening B:
+{"type":"mcq","prompt":"Où Léa aimerait-elle dormir ?","prompt_fa":"لئا دوست دارد کجا بخوابد؟","options":["Dans un hôtel du village.","Chez ses parents.","Au camping.","Chez son ancien patron."],"correct":2,"explanation_fa":"لئا می‌گوید: «j'aimerais dormir au camping, dans une tente ou une petite chambre»."}
+{"type":"mcq","prompt":"Qui peut écrire une lettre sur le travail de Léa ?","prompt_fa":"چه کسی می‌تواند دربارهٔ کار لئا نامه بنویسد؟","options":["Son professeur d'allemand.","Son ancien patron.","Ses parents.","Le directeur du club de sport."],"correct":1,"explanation_fa":"لئا می‌گوید: «Mon ancien patron, au restaurant, peut vous écrire une lettre sur mon travail.»"}
+{"type":"tf","prompt":"Léa peut commencer en juillet.","prompt_fa":"لئا می‌تواند از ژوئیه شروع کند.","correct":true,"explanation_fa":"لئا می‌گوید: «Je serais libre du premier juillet au 31 août»"}
+{"type":"tf","prompt":"Léa a travaillé dans ce camping l'été dernier.","prompt_fa":"لئا تابستان گذشته در همین کمپینگ کار کرد.","correct":false,"explanation_fa":"لئا تابستان گذشته «dans un restaurant au bord de la mer, à Nice» کار کرد."}

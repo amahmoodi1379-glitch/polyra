@@ -1,0 +1,46 @@
+code: fr-b1-t010
+title: Les bureaux déménagent
+band: 3
+kind: long_dialogue
+sentences:
+A: Nicolas, tu as lu le message du directeur ? On déménage en mars ! | نیکولا، پیام مدیر را خواندی؟ ماه مارس جابه‌جا می‌شویم!
+B: Oui, Sophie, je l'ai lu ce matin. Les nouveaux bureaux sont dans le quartier de la gare, de l'autre côté de la ville. | آره سوفی، امروز صبح خواندمش. دفترهای جدید در محلهٔ ایستگاه قطارند، آن سر شهر.
+A: Pour moi, c'est un vrai problème. Aujourd'hui, je viens à pied en dix minutes. | برای من این یک مشکل واقعی است. الان ده دقیقه‌ای پیاده می‌آیم.
+A: Là-bas, il faudra prendre le métro, puis le bus : au moins quarante-cinq minutes ! | آنجا باید مترو و بعد اتوبوس سوار شوم: دست‌کم چهل و پنج دقیقه!
+B: Moi, ça me plaît. J'habite en banlieue, juste à côté de la gare. | من که خوشم می‌آید. من در حومه زندگی می‌کنم، درست کنار ایستگاه.
+B: Aujourd'hui, je passe une heure dans les embouteillages chaque matin. Désormais, je viendrai en train : douze minutes ! | الان هر روز صبح یک ساعت توی ترافیک می‌مانم. از این به بعد با قطار می‌آیم: دوازده دقیقه!
+A: Tant mieux pour toi ! Mais moi, je vais perdre presque une heure et demie par jour. | چه بهتر برای تو! ولی من روزی نزدیک یک ساعت و نیم از دست می‌دهم.
+B: Tu as pensé au vélo ? Il y a un nouveau chemin pour les vélos au bord du fleuve. | به دوچرخه فکر کرده‌ای؟ کنار رودخانه یک مسیر تازهٔ دوچرخه هست.
+A: À vélo ? Je n'ose pas rouler en ville, il y a trop de voitures. | با دوچرخه؟ جرئت نمی‌کنم توی شهر رکاب بزنم، ماشین خیلی زیاد است.
+B: Pas sur ce chemin : il va de ton quartier jusqu'à la gare, sans voitures. | توی این مسیر نه: از محلهٔ تو تا ایستگاه می‌رود، بدون ماشین.
+A: Ah bon ? Je ne savais pas. Ça fait combien de kilomètres ? | جدی؟ نمی‌دانستم. چند کیلومتر می‌شود؟
+B: À peu près six. À vélo, vingt-cinq minutes, pas plus. | حدوداً شش تا. با دوچرخه بیست و پنج دقیقه، نه بیشتر.
+A: Et quand il pleut ? Et l'hiver, quand il fait nuit à 17 heures ? | وقتی باران می‌آید چی؟ زمستان که ساعت پنج هوا تاریک می‌شود چی؟ | tts: Et quand il pleut ? Et l'hiver, quand il fait nuit à dix-sept heures ?
+B: Quand il pleut, tu prends le métro, c'est tout. | وقتی باران می‌آید، مترو سوار می‌شوی، همین.
+B: Et il y a une autre bonne nouvelle : le nouveau bâtiment a des douches au rez-de-chaussée. | یک خبر خوب دیگر هم هست: ساختمان جدید در طبقهٔ همکف دوش دارد.
+A: Des douches ? Alors je n'ai plus de raison de dire non ! | دوش؟ پس دیگر بهانه‌ای برای نه گفتن ندارم!
+A: Si j'avais un bon vélo, j'essaierais le chemin dès ce week-end. | اگر یک دوچرخهٔ خوب داشتم، همین آخر هفته مسیر را امتحان می‌کردم.
+B: Mon frère vend un vélo presque neuf, pas cher. Je lui demande ? | برادرم یک دوچرخهٔ تقریباً نو می‌فروشد، ارزان. ازش بپرسم؟
+A: Oui, demande-lui ! Il le vend combien ? | آره، بپرس! چند می‌فروشدش؟
+B: Cent euros, je crois. Et le premier lundi, je t'attends devant la gare et on arrive ensemble au bureau. | فکر کنم صد یورو. اولین دوشنبه هم جلوی ایستگاه منتظرت می‌مانم و با هم به دفتر می‌رسیم.
+A: C'est promis ! Mais si j'arrive en retard, tu ne dis rien au directeur ! | قول! ولی اگر دیر رسیدم، به مدیر چیزی نمی‌گویی‌ها!
+reading A:
+{"type":"mcq","prompt":"De quoi Sophie et Nicolas parlent-ils ?","prompt_fa":"سوفی و نیکولا دربارهٔ چه حرف می‌زنند؟","options":["Du nouveau trajet pour aller au bureau.","Du nouveau directeur de l'entreprise.","D'un voyage en train pour le week-end.","D'un accident de vélo près du fleuve."],"correct":0,"explanation_fa":"دفترها جابه‌جا می‌شوند («On déménage en mars !») و آن دو دربارهٔ راه رفتن به دفتر جدید حرف می‌زنند."}
+{"type":"tf","prompt":"Pour Nicolas, le changement de bureau est une bonne chose.","prompt_fa":"برای نیکولا عوض شدن جای دفتر چیز خوبی است.","correct":true,"explanation_fa":"نیکولا می‌گوید: «Moi, ça me plaît.» چون کنار ایستگاه زندگی می‌کند."}
+{"type":"tf","prompt":"Sophie aime rouler à vélo au milieu des voitures.","prompt_fa":"سوفی دوست دارد وسط ماشین‌ها دوچرخه‌سواری کند.","correct":false,"explanation_fa":"سوفی می‌گوید: «Je n'ose pas rouler en ville, il y a trop de voitures.»"}
+{"type":"find","prompt":"Quelle phrase dit combien de temps Nicolas passe en voiture aujourd'hui ?","prompt_fa":"کدام جمله می‌گوید نیکولا الان چقدر در ماشین می‌گذراند؟","correct_sentence":5,"explanation_fa":"نیکولا می‌گوید: «je passe une heure dans les embouteillages chaque matin»."}
+reading B:
+{"type":"cloze","prompt":"Complétez la phrase de Sophie.","prompt_fa":"جملهٔ سوفی را کامل کنید.","text_with_gaps":"{{1}} j'avais un bon vélo, j'{{2}} le chemin dès ce week-end.","bank":["Si","essaierais","Quand","essaierai","Pourtant"],"answers":["Si","essaierais"],"explanation_fa":"سوفی می‌گوید: «Si j'avais un bon vélo, j'essaierais le chemin dès ce week-end.»"}
+{"type":"ctx","word":"ose","prompt":"« Je n'ose pas rouler en ville » veut dire…","prompt_fa":"«Je n'ose pas rouler en ville» یعنی…","options":["Je n'ai pas le temps de rouler en ville.","Je n'ai pas le droit de rouler en ville.","Je n'ai pas le courage de rouler en ville.","Je n'ai pas de vélo pour rouler en ville."],"correct":2,"explanation_fa":"«oser» یعنی جرئت کردن؛ سوفی از ماشین‌ها می‌ترسد: «il y a trop de voitures»."}
+{"type":"order","prompt":"Mettez ces moments de la conversation dans l'ordre.","prompt_fa":"این لحظه‌های گفتگو را به ترتیب بچینید.","items":["Nicolas parle d'un chemin au bord du fleuve.","Sophie parle du message du directeur.","Nicolas propose le vélo de son frère.","Nicolas parle des douches."],"correct_order":[1,0,3,2],"explanation_fa":"اول پیام مدیر، بعد «un nouveau chemin pour les vélos au bord du fleuve»، بعد «des douches au rez-de-chaussée» و آخر «Mon frère vend un vélo»."}
+{"type":"match","prompt":"Qui vient au bureau comment ?","prompt_fa":"چه کسی چطور به دفتر می‌آید؟","left":["Sophie aujourd'hui","Nicolas aujourd'hui","Nicolas en mars"],"right":["en voiture","à pied","en train","en bus"],"pairs":[[0,1],[1,0],[2,2]],"explanation_fa":"سوفی می‌گوید: «je viens à pied»، نیکولا الان در «embouteillages» است، پس با ماشین می‌آید، و بعداً «je viendrai en train»."}
+listening A:
+{"type":"num","prompt":"Le chemin au bord du fleuve fait combien de kilomètres ?","prompt_fa":"مسیر کنار رودخانه چند کیلومتر است؟","answer":"6","accepted":["6","six"],"explanation_fa":"نیکولا می‌گوید: «À peu près six.»"}
+{"type":"mcq","prompt":"Combien de temps Sophie va-t-elle mettre en métro et en bus ?","prompt_fa":"سوفی با مترو و اتوبوس چقدر در راه خواهد بود؟","options":["Dix minutes.","Vingt-cinq minutes.","Au moins quarante-cinq minutes.","Douze minutes."],"correct":2,"explanation_fa":"سوفی می‌گوید: «il faudra prendre le métro, puis le bus : au moins quarante-cinq minutes !»"}
+{"type":"tf","prompt":"Le frère de Nicolas vend un vélo.","prompt_fa":"برادر نیکولا یک دوچرخه می‌فروشد.","correct":true,"explanation_fa":"نیکولا می‌گوید: «Mon frère vend un vélo presque neuf, pas cher.»"}
+{"type":"tf","prompt":"Le nouveau bâtiment n'a pas de douches.","prompt_fa":"ساختمان جدید دوش ندارد.","correct":false,"explanation_fa":"نیکولا می‌گوید: «le nouveau bâtiment a des douches au rez-de-chaussée»."}
+listening B:
+{"type":"mcq","prompt":"Combien coûte le vélo du frère de Nicolas ?","prompt_fa":"دوچرخهٔ برادر نیکولا چند است؟","options":["50 euros.","200 euros.","150 euros.","100 euros."],"correct":3,"explanation_fa":"نیکولا می‌گوید: «Cent euros, je crois.»"}
+{"type":"mcq","prompt":"Que fera Nicolas le premier lundi ?","prompt_fa":"نیکولا اولین دوشنبه چه کار می‌کند؟","options":["Il viendra au bureau à vélo.","Il prendra le métro avec Sophie.","Il parlera au directeur.","Il attendra Sophie devant la gare."],"correct":3,"explanation_fa":"نیکولا می‌گوید: «le premier lundi, je t'attends devant la gare»."}
+{"type":"tf","prompt":"Les jours de pluie, Sophie pourra prendre le métro.","prompt_fa":"روزهای بارانی، سوفی می‌تواند مترو سوار شود.","correct":true,"explanation_fa":"نیکولا می‌گوید: «Quand il pleut, tu prends le métro, c'est tout.»"}
+{"type":"tf","prompt":"Sophie habite en banlieue.","prompt_fa":"سوفی در حومهٔ شهر زندگی می‌کند.","correct":false,"explanation_fa":"نیکولا است که می‌گوید: «J'habite en banlieue»؛ سوفی الان پیاده به دفتر می‌آید."}

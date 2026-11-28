@@ -1,0 +1,40 @@
+code: fr-b1-t002
+title: Le marché est de retour
+band: 3
+kind: news
+sentences:
+- Ce samedi, le marché du centre-ville a ouvert ses portes, après deux ans de travaux. | این شنبه، بازار مرکز شهر بعد از دو سال تعمیرات درهایش را باز کرد.
+- Le vieux bâtiment de 1890 avait besoin d'un nouveau toit et de nouveaux murs. | ساختمان قدیمی سال ۱۸۹۰ به سقف و دیوارهای تازه احتیاج داشت. | tts: Le vieux bâtiment de mille huit cent quatre-vingt-dix avait besoin d'un nouveau toit et de nouveaux murs.
+- Aujourd'hui, il a également de grandes fenêtres et beaucoup de lumière. | حالا پنجره‌های بزرگ و نور زیادی هم دارد.
+- Dès 7 heures du matin, des gens faisaient déjà la queue devant les portes. | از ساعت هفت صبح، عده‌ای جلوی درها صف کشیده بودند. | tts: Dès sept heures du matin, des gens faisaient déjà la queue devant les portes.
+- À l'intérieur, trente vendeurs proposent des fruits et des légumes, du fromage, du poisson, de la viande et des fleurs. | داخل بازار، سی فروشنده میوه و سبزی، پنیر، ماهی، گوشت و گل می‌فروشند.
+- Pendant les travaux, ils vendaient dehors, sur la place de l'église, sous de grandes tentes. | در مدت تعمیرات، بیرون، در میدان کلیسا و زیر چادرهای بزرگ، جنس می‌فروختند.
+- « En hiver, c'était très dur, avec le froid et la pluie », raconte Marie, qui vend des légumes depuis vingt ans. | ماری که بیست سال است سبزی می‌فروشد، تعریف می‌کند: «زمستان خیلی سخت بود، با آن سرما و باران.»
+- « Aujourd'hui, je suis simplement heureuse d'être au chaud ! » | «امروز فقط خوشحالم که جایم گرم است!»
+- Pourtant, tout le monde n'est pas content. | با این حال، همه راضی نیستند.
+- Pour les vendeurs, le loyer est maintenant plus cher qu'avant. | برای فروشنده‌ها، اجاره حالا از قبل گران‌تر است.
+- Paul, le boulanger, a peur de devoir vendre son pain plus cher. | پل، نانوا، نگران است که مجبور شود نانش را گران‌تر بفروشد.
+- Et pour les clients, il est difficile de garer sa voiture autour du marché. | مشتری‌ها هم به‌سختی دور و بر بازار جای پارک پیدا می‌کنند.
+- Mais samedi, les clients étaient surtout contents de retrouver leurs vendeurs. | ولی شنبه، مشتری‌ها بیشتر از هر چیز خوشحال بودند که فروشنده‌هایشان را دوباره می‌بینند.
+- « Ici, tout le monde connaît tout le monde. Le marché, c'est le cœur de la ville », explique Sophie, 72 ans. | سوفی، ۷۲ ساله، می‌گوید: «اینجا همه همدیگر را می‌شناسند. بازار قلب شهر است.» | tts: « Ici, tout le monde connaît tout le monde. Le marché, c'est le cœur de la ville », explique Sophie, soixante-douze ans.
+- Le marché est ouvert du mardi au dimanche, de 7 heures à 13 heures. | بازار از سه‌شنبه تا یکشنبه، از ساعت هفت تا یک بعدازظهر باز است. | tts: Le marché est ouvert du mardi au dimanche, de sept heures à treize heures.
+reading A:
+{"type":"mcq","prompt":"De quoi parle surtout ce texte ?","prompt_fa":"این متن بیشتر دربارهٔ چیست؟","options":["Du nouveau parking du centre-ville.","Du retour du marché après de longs travaux.","D'un boulanger qui vend son pain moins cher.","D'une fête sur la place de l'église."],"correct":1,"explanation_fa":"متن با این جمله شروع می‌شود: «le marché du centre-ville a ouvert ses portes, après deux ans de travaux»."}
+{"type":"tf","prompt":"Pendant les travaux, les vendeurs travaillaient sur une place de la ville.","prompt_fa":"در مدت تعمیرات، فروشنده‌ها در یکی از میدان‌های شهر کار می‌کردند.","correct":true,"explanation_fa":"متن می‌گوید: «ils vendaient dehors, sur la place de l'église»."}
+{"type":"tf","prompt":"Le loyer des vendeurs est moins cher qu'avant.","prompt_fa":"اجارهٔ فروشنده‌ها از قبل ارزان‌تر است.","correct":false,"explanation_fa":"متن می‌گوید: «le loyer est maintenant plus cher qu'avant»، یعنی گران‌تر شده است."}
+{"type":"find","prompt":"Quelle phrase montre que les gens sont venus très tôt ?","prompt_fa":"کدام جمله نشان می‌دهد که مردم خیلی زود آمدند؟","correct_sentence":3,"explanation_fa":"متن می‌گوید: «Dès 7 heures du matin, des gens faisaient déjà la queue»، یعنی از ساعت هفت صبح صف کشیده بودند."}
+reading B:
+{"type":"match","prompt":"Qui dit ou fait quoi ?","prompt_fa":"چه کسی چه می‌گوید یا چه می‌کند؟","left":["Marie","Paul","Sophie"],"right":["pense que le marché est le cœur de la ville.","vend des légumes depuis longtemps.","vend du poisson depuis dix ans.","a peur de vendre son pain plus cher."],"pairs":[[0,1],[1,3],[2,0]],"explanation_fa":"ماری «vend des légumes depuis vingt ans»، پل «a peur de devoir vendre son pain plus cher» و سوفی می‌گوید: «Le marché, c'est le cœur de la ville»."}
+{"type":"cloze","prompt":"Complétez la phrase de Marie.","prompt_fa":"جملهٔ ماری را کامل کنید.","text_with_gaps":"« En hiver, c'était très {{1}}, avec le froid et la {{2}} »","bank":["dur","pluie","agréable","lumière","facile"],"answers":["dur","pluie"],"explanation_fa":"ماری می‌گوید: «En hiver, c'était très dur, avec le froid et la pluie»."}
+{"type":"ctx","word":"simplement","prompt":"Dans « je suis simplement heureuse d'être au chaud », que veut dire « simplement » ?","prompt_fa":"در این جمله «simplement» یعنی چه؟","options":["seulement","rarement","presque","jamais"],"correct":0,"explanation_fa":"ماری می‌گوید فقط از گرم بودن جایش خوشحال است: «je suis simplement heureuse d'être au chaud»."}
+{"type":"order","prompt":"Mettez ces moments dans l'ordre.","prompt_fa":"این لحظه‌ها را به ترتیب بچینید.","items":["Les vendeurs travaillent sous des tentes.","Le marché ouvre ses portes un samedi.","Des gens font la queue devant le marché.","Les travaux commencent."],"correct_order":[3,0,2,1],"explanation_fa":"اول تعمیرات شروع شد، در این مدت فروشنده‌ها «sous de grandes tentes» کار می‌کردند، بعد «des gens faisaient déjà la queue» و بازار باز شد."}
+listening A:
+{"type":"num","prompt":"Le vieux bâtiment est de quelle année ?","prompt_fa":"ساختمان قدیمی مال چه سالی است؟","answer":"1890","accepted":["1890","mille huit cent quatre-vingt-dix"],"explanation_fa":"گوینده می‌گوید: «Le vieux bâtiment de 1890»."}
+{"type":"mcq","prompt":"Quand le marché est-il ouvert ?","prompt_fa":"بازار کی باز است؟","options":["Tous les jours, de 7 heures à 13 heures.","Du lundi au samedi, toute la journée.","Seulement le samedi et le dimanche.","Du mardi au dimanche, le matin."],"correct":3,"explanation_fa":"گوینده می‌گوید: «du mardi au dimanche, de 7 heures à 13 heures»، یعنی صبح‌ها."}
+{"type":"tf","prompt":"Marie est contente de travailler dans un endroit chaud.","prompt_fa":"ماری خوشحال است که در جای گرمی کار می‌کند.","correct":true,"explanation_fa":"ماری می‌گوید: «je suis simplement heureuse d'être au chaud !»"}
+{"type":"tf","prompt":"Tout le monde est content du nouveau marché.","prompt_fa":"همه از بازار جدید راضی‌اند.","correct":false,"explanation_fa":"گوینده می‌گوید: «Pourtant, tout le monde n'est pas content.»"}
+listening B:
+{"type":"num","prompt":"Combien de vendeurs y a-t-il dans le marché ?","prompt_fa":"در بازار چند فروشنده هست؟","answer":"30","accepted":["30","trente"],"explanation_fa":"گوینده می‌گوید: «À l'intérieur, trente vendeurs proposent…»"}
+{"type":"mcq","prompt":"Quel est le problème des clients ?","prompt_fa":"مشکل مشتری‌ها چیست؟","options":["Ils ne savent pas où laisser leur voiture.","Le poisson est devenu très cher.","Le marché ouvre trop tard le matin.","Il n'y a plus de pain au marché."],"correct":0,"explanation_fa":"گوینده می‌گوید: «pour les clients, il est difficile de garer sa voiture autour du marché»."}
+{"type":"tf","prompt":"Les travaux ont duré deux ans.","prompt_fa":"تعمیرات دو سال طول کشید.","correct":true,"explanation_fa":"گوینده می‌گوید: «après deux ans de travaux»."}
+{"type":"tf","prompt":"Pour Sophie, le marché n'est pas très important dans la ville.","prompt_fa":"از نظر سوفی، بازار در شهر چندان مهم نیست.","correct":false,"explanation_fa":"سوفی می‌گوید: «Le marché, c'est le cœur de la ville»، یعنی برایش خیلی مهم است."}

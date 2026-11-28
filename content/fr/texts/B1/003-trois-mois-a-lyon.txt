@@ -1,0 +1,45 @@
+code: fr-b1-t003
+title: Trois mois à Lyon
+band: 3
+kind: letter
+sentences:
+- Chère Madame Karimi, | خانم کریمی عزیز،
+- Je suis à Lyon depuis trois mois, et je pense souvent à vos cours de français à Téhéran. | سه ماه است که در لیون هستم و اغلب به کلاس‌های فرانسهٔ شما در تهران فکر می‌کنم.
+- Les premières semaines, j'avais du mal à comprendre les gens. | هفته‌های اول، به‌سختی حرف مردم را می‌فهمیدم.
+- Ils parlent très vite, et ils mangent la moitié des mots ! | خیلی تند حرف می‌زنند و نصف کلمه‌ها را می‌خورند!
+- À l'université, je faisais semblant de comprendre et je souriais. | در دانشگاه وانمود می‌کردم که می‌فهمم و لبخند می‌زدم.
+- Puis je me suis souvenue de votre conseil : écouter la radio française tous les jours. | بعد توصیهٔ شما یادم آمد: هر روز رادیوی فرانسوی گوش دادن.
+- Maintenant, je l'écoute dans le bus, et je comprends beaucoup plus facilement. | حالا توی اتوبوس گوشش می‌دهم و خیلی راحت‌تر می‌فهمم.
+- Je me suis aussi rendu compte d'une chose : ici, personne ne parle comme dans les livres ! | یک چیز دیگر هم فهمیدم: اینجا هیچ‌کس مثل کتاب‌ها حرف نمی‌زند!
+- Les étudiants disent « ouais » et pas « oui », et « super » pour tout. | دانشجوها به جای «oui» می‌گویند «ouais» و برای همه‌چیز می‌گویند «super».
+- Et la première fois, quand un garçon de ma classe m'a fait la bise, je ne savais pas quoi faire ! | اولین بار هم که یکی از پسرهای کلاسم گونه‌ام را بوسید، نمی‌دانستم چه کار کنم!
+- Je fais partie d'un club de théâtre à l'université. | در دانشگاه عضو یک گروه تئاتر هستم.
+- Nous préparons un spectacle pour le mois de mars, et je joue une vieille dame très drôle. | داریم برای ماه مارس یک نمایش آماده می‌کنیم و من نقش یک پیرزن خیلی بامزه را بازی می‌کنم.
+- Dans le club, j'ai rencontré Chloé, une fille de Marseille, et maintenant c'est ma meilleure amie. | در همین گروه با کلوئه آشنا شدم که اهل مارسی است و حالا بهترین دوستم است.
+- Le dimanche, nous prenons l'air au bord du fleuve et nous parlons pendant des heures. | یکشنبه‌ها کنار رودخانه هوایی می‌خوریم و ساعت‌ها حرف می‌زنیم.
+- La seule chose difficile, c'est l'hiver : il fait froid et gris, et j'ai déjà pris froid deux fois ! | تنها چیز سخت زمستان است: هوا سرد و ابری است و تا حالا دو بار سرما خورده‌ام!
+- La cuisine iranienne me manque aussi, surtout le riz de ma mère. | دلم برای غذای ایرانی هم تنگ شده، مخصوصاً برای برنج مادرم.
+- Je tiens à vous remercier encore pour vos cours et pour vos conseils. | می‌خواهم باز هم برای کلاس‌ها و توصیه‌هایتان از شما تشکر کنم.
+- Je rentre à Téhéran en juillet, et je passerai à l'école pour vous voir. | ژوئیه به تهران برمی‌گردم و به مدرسه سر می‌زنم تا شما را ببینم.
+- Avec toute mon amitié, | با همهٔ محبتم،
+- Sara | سارا
+reading A:
+{"type":"mcq","prompt":"Pourquoi Sara écrit-elle à Madame Karimi ?","prompt_fa":"سارا چرا به خانم کریمی نامه می‌نویسد؟","options":["Pour lui demander de venir à Lyon.","Pour lui raconter sa nouvelle vie et la remercier.","Pour lui demander des livres de français.","Pour lui dire qu'elle ne rentre plus en Iran."],"correct":1,"explanation_fa":"سارا از زندگی‌اش در لیون تعریف می‌کند و می‌نویسد: «Je tiens à vous remercier encore pour vos cours et pour vos conseils.»"}
+{"type":"tf","prompt":"Les premières semaines, Sara comprenait mal les gens de Lyon.","prompt_fa":"هفته‌های اول، سارا حرف مردم لیون را خوب نمی‌فهمید.","correct":true,"explanation_fa":"سارا می‌نویسد: «Les premières semaines, j'avais du mal à comprendre les gens.»"}
+{"type":"tf","prompt":"Sara n'a pas encore d'amis à Lyon.","prompt_fa":"سارا هنوز در لیون دوستی ندارد.","correct":false,"explanation_fa":"سارا دربارهٔ کلوئه می‌نویسد: «maintenant c'est ma meilleure amie»."}
+{"type":"find","prompt":"Quelle phrase donne le conseil de Madame Karimi ?","prompt_fa":"کدام جمله توصیهٔ خانم کریمی را می‌گوید؟","correct_sentence":5,"explanation_fa":"سارا می‌نویسد: «je me suis souvenue de votre conseil : écouter la radio française tous les jours»."}
+reading B:
+{"type":"order","prompt":"Mettez ces moments dans l'ordre du temps.","prompt_fa":"این لحظه‌ها را به ترتیب زمان بچینید.","items":["Sara rentre à Téhéran.","Sara arrive à Lyon.","Le club joue son spectacle.","Sara écrit cette lettre."],"correct_order":[1,3,2,0],"explanation_fa":"سارا «depuis trois mois» در لیون است و حالا نامه می‌نویسد؛ نمایش «pour le mois de mars» است و او «en juillet» برمی‌گردد."}
+{"type":"ctx","word":"faisais semblant","prompt":"« Je faisais semblant de comprendre » : qu'est-ce que Sara faisait ?","prompt_fa":"«je faisais semblant de comprendre»: سارا چه کار می‌کرد؟","options":["Elle comprenait vraiment tout.","Elle demandait souvent de répéter.","Elle avait l'air de comprendre, sans comprendre.","Elle refusait d'écouter les autres."],"correct":2,"explanation_fa":"سارا می‌نویسد که حرف مردم را به‌سختی می‌فهمید و «je faisais semblant de comprendre et je souriais»، یعنی وانمود می‌کرد که می‌فهمد."}
+{"type":"cloze","prompt":"Complétez avec les mots de la lettre.","prompt_fa":"جاهای خالی را با کلمه‌های نامه پر کنید.","text_with_gaps":"La seule chose difficile, c'est l'{{1}} : il fait froid et gris, et j'ai déjà {{2}} froid deux fois !","bank":["hiver","pris","été","mis","donné"],"answers":["hiver","pris"],"explanation_fa":"سارا می‌نویسد: «c'est l'hiver : il fait froid et gris, et j'ai déjà pris froid deux fois !»"}
+{"type":"match","prompt":"Qui est qui ?","prompt_fa":"چه کسی کیست؟","left":["Chloé","Madame Karimi","Sara"],"right":["a donné un bon conseil à Sara.","est la meilleure amie de Sara.","joue une vieille dame au théâtre.","vend du riz au marché."],"pairs":[[0,1],[1,0],[2,2]],"explanation_fa":"کلوئه «ma meilleure amie» است، توصیه از خانم کریمی است («votre conseil») و خود سارا می‌نویسد: «je joue une vieille dame très drôle»."}
+listening A:
+{"type":"num","prompt":"Sara est à Lyon depuis combien de mois ?","prompt_fa":"سارا چند ماه است که در لیون است؟","answer":"3","accepted":["3","trois"],"explanation_fa":"سارا می‌گوید: «Je suis à Lyon depuis trois mois»."}
+{"type":"mcq","prompt":"Où Sara écoute-t-elle la radio ?","prompt_fa":"سارا کجا رادیو گوش می‌دهد؟","options":["Dans le bus.","À l'université.","Au club de théâtre.","Au bord du fleuve."],"correct":0,"explanation_fa":"سارا می‌گوید: «Maintenant, je l'écoute dans le bus»."}
+{"type":"tf","prompt":"Sara a déjà été malade deux fois à cause du froid.","prompt_fa":"سارا تا حالا دو بار به خاطر سرما مریض شده است.","correct":true,"explanation_fa":"سارا می‌گوید: «j'ai déjà pris froid deux fois !»، یعنی دو بار سرما خورده است."}
+{"type":"tf","prompt":"Dans le spectacle, Sara joue une jeune étudiante.","prompt_fa":"سارا در نمایش نقش یک دانشجوی جوان را بازی می‌کند.","correct":false,"explanation_fa":"سارا می‌گوید: «je joue une vieille dame très drôle»."}
+listening B:
+{"type":"mcq","prompt":"Qu'est-ce qui manque à Sara ?","prompt_fa":"سارا دلش برای چه تنگ شده است؟","options":["La radio iranienne.","Ses cours à l'université.","La cuisine de sa mère.","Les livres de Madame Karimi."],"correct":2,"explanation_fa":"سارا می‌گوید: «La cuisine iranienne me manque aussi, surtout le riz de ma mère.»"}
+{"type":"mcq","prompt":"Que fait Sara le dimanche ?","prompt_fa":"سارا یکشنبه‌ها چه کار می‌کند؟","options":["Elle va au théâtre avec Chloé.","Elle prépare du riz pour la classe.","Elle étudie à la bibliothèque.","Elle se promène et parle avec son amie."],"correct":3,"explanation_fa":"سارا می‌گوید: «Le dimanche, nous prenons l'air au bord du fleuve et nous parlons pendant des heures.»"}
+{"type":"tf","prompt":"Sara va voir Madame Karimi cet été.","prompt_fa":"سارا این تابستان خانم کریمی را می‌بیند.","correct":true,"explanation_fa":"سارا می‌گوید: «Je rentre à Téhéran en juillet, et je passerai à l'école pour vous voir.»"}
+{"type":"tf","prompt":"Pour Sara, les étudiants parlent comme dans les livres.","prompt_fa":"به نظر سارا، دانشجوها مثل کتاب‌ها حرف می‌زنند.","correct":false,"explanation_fa":"سارا می‌گوید: «ici, personne ne parle comme dans les livres !»"}

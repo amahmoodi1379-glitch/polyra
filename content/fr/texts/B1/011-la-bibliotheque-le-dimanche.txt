@@ -1,0 +1,41 @@
+code: fr-b1-t011
+title: La bibliothèque ouvre le dimanche
+band: 3
+kind: news
+sentences:
+- Bonne nouvelle pour les habitants de Marseille : dès le mois prochain, la grande bibliothèque du centre-ville sera ouverte le dimanche. | خبر خوب برای اهالی مارسی: از ماه آینده، کتابخانهٔ بزرگ مرکز شهر یکشنبه‌ها هم باز است.
+- La mairie l'a annoncé lundi : les portes ouvriront de 13 heures à 18 heures, comme dans plusieurs grandes villes de France. | شهرداری روز دوشنبه این را اعلام کرد: درها از ساعت یک تا شش بعدازظهر باز می‌شوند، مثل چند شهر بزرگ دیگر فرانسه. | tts: La mairie l'a annoncé lundi : les portes ouvriront de treize heures à dix-huit heures, comme dans plusieurs grandes villes de France.
+- Jusqu'à maintenant, la bibliothèque fermait le samedi à 17 heures et restait fermée tout le dimanche. | تا حالا کتابخانه شنبه‌ها ساعت پنج بعدازظهر می‌بست و تمام یکشنبه بسته می‌ماند. | tts: Jusqu'à maintenant, la bibliothèque fermait le samedi à dix-sept heures et restait fermée tout le dimanche.
+- « C'est le jour où les familles et les étudiants ont du temps libre », explique la mairie. | شهرداری توضیح می‌دهد: «این روزی است که خانواده‌ها و دانشجوها وقت آزاد دارند.»
+- Emma, 21 ans, étudiante en histoire{histoire-2}, est très contente. | اِما، ۲۱ ساله و دانشجوی تاریخ، خیلی خوشحال است. | tts: Emma, vingt et un ans, étudiante en histoire, est très contente.
+- « En semaine, je travaille dans un café après mes cours, et chez moi, il y a toujours du bruit. » | «روزهای هفته بعد از کلاس‌هایم در یک کافه کار می‌کنم و خانه‌مان هم همیشه شلوغ و پرسروصداست.»
+- « Désormais, je pourrai réviser au calme le dimanche ! » | «از این به بعد می‌توانم یکشنبه‌ها در آرامش درس بخوانم!»
+- Pierre, père de deux enfants, est content lui aussi : « Le dimanche, quand il pleut, on ne sait jamais quoi faire. » | پیر، پدر دو بچه، او هم راضی است: «یکشنبه‌ها وقتی باران می‌آید، هیچ‌وقت نمی‌دانیم چه کار کنیم.»
+- « Si la bibliothèque proposait aussi des activités pour les enfants, ce serait parfait. » | «اگر کتابخانه برای بچه‌ها هم برنامه داشت، دیگر عالی می‌شد.»
+- Du côté des employés, c'est plus compliqué. | از طرف کارمندها، ماجرا پیچیده‌تر است.
+- « Nous aussi, nous avons une famille », dit Julie, qui travaille à la bibliothèque depuis quinze ans. | ژولی که پانزده سال است در کتابخانه کار می‌کند، می‌گوید: «ما هم خانواده داریم.»
+- « Le dimanche, c'est le seul jour où toute ma famille est à la maison. » | «یکشنبه تنها روزی است که همهٔ خانواده‌ام در خانه‌اند.»
+- Pour éviter les problèmes, la mairie promet que chaque employé pourra choisir de travailler le dimanche ou non. | شهرداری برای پیشگیری از مشکل قول می‌دهد که هر کارمندی بتواند انتخاب کند یکشنبه کار کند یا نه.
+- Les employés qui viendront le dimanche auront un meilleur salaire pour ces heures. | کارمندهایی که یکشنبه بیایند، برای این ساعت‌ها حقوق بهتری می‌گیرند.
+- La ville cherche aussi dix étudiants pour les aider. | شهر دنبال ده دانشجو هم هست تا به آن‌ها کمک کنند.
+- La mairie va tenter l'expérience pendant six mois. | شهرداری این کار را شش ماه امتحان می‌کند.
+- Si beaucoup de gens viennent, la bibliothèque ouvrira peut-être aussi le jeudi soir. | اگر آدم‌های زیادی بیایند، کتابخانه شاید پنجشنبه شب‌ها هم باز شود.
+reading A:
+{"type":"mcq","prompt":"Quelle est la nouvelle ?","prompt_fa":"خبر چیست؟","options":["La bibliothèque va fermer le samedi.","La bibliothèque va ouvrir aussi le dimanche.","La bibliothèque cherche un nouveau directeur.","La bibliothèque déménage dans le centre-ville."],"correct":1,"explanation_fa":"خبر می‌گوید: «dès le mois prochain, la grande bibliothèque du centre-ville sera ouverte le dimanche»."}
+{"type":"tf","prompt":"Aujourd'hui, la bibliothèque est fermée le dimanche.","prompt_fa":"الان کتابخانه یکشنبه‌ها بسته است.","correct":true,"explanation_fa":"خبر می‌گوید: «Jusqu'à maintenant, la bibliothèque … restait fermée tout le dimanche.»"}
+{"type":"tf","prompt":"Tous les employés de la bibliothèque sont contents de ce changement.","prompt_fa":"همهٔ کارمندان کتابخانه از این تغییر راضی‌اند.","correct":false,"explanation_fa":"خبر می‌گوید: «Du côté des employés, c'est plus compliqué.» و ژولی می‌گوید: «Nous aussi, nous avons une famille»."}
+{"type":"find","prompt":"Quelle phrase donne les heures du dimanche ?","prompt_fa":"کدام جمله ساعت‌های یکشنبه را می‌گوید؟","correct_sentence":1,"explanation_fa":"خبر می‌گوید: «les portes ouvriront de 13 heures à 18 heures»."}
+reading B:
+{"type":"match","prompt":"Qui pense quoi ?","prompt_fa":"چه کسی چه فکری دارد؟","left":["Emma","Pierre","Julie"],"right":["voudrait des activités pour les enfants.","pourra réviser au calme.","veut rester en famille le dimanche.","cherche dix étudiants."],"pairs":[[0,1],[1,0],[2,2]],"explanation_fa":"اِما می‌گوید: «je pourrai réviser au calme»، پیر از «des activités pour les enfants» حرف می‌زند و ژولی می‌گوید یکشنبه «toute ma famille est à la maison»."}
+{"type":"ctx","word":"tenter","prompt":"« La mairie va tenter l'expérience pendant six mois. » Ici, « tenter » veut dire…","prompt_fa":"در این جمله «tenter» یعنی…","options":["refuser","oublier","essayer","payer"],"correct":2,"explanation_fa":"شهرداری می‌خواهد کار تازه را «pendant six mois» امتحان کند؛ «tenter» یعنی سعی کردن و امتحان کردن."}
+{"type":"cloze","prompt":"Complétez la phrase du texte.","prompt_fa":"جملهٔ متن را کامل کنید.","text_with_gaps":"Pour {{1}} les problèmes, la mairie promet que chaque employé {{2}} choisir de travailler le dimanche ou non.","bank":["éviter","pourra","aimer","sont"],"answers":["éviter","pourra"],"explanation_fa":"خبر می‌گوید: «Pour éviter les problèmes, la mairie promet que chaque employé pourra choisir»."}
+listening A:
+{"type":"num","prompt":"Le dimanche, la bibliothèque ouvrira à quelle heure ?","prompt_fa":"کتابخانه یکشنبه‌ها ساعت چند باز می‌شود؟","answer":"13","accepted":["13","13h","13 heures","treize"],"explanation_fa":"می‌شنویم: «les portes ouvriront de 13 heures à 18 heures»."}
+{"type":"mcq","prompt":"Pourquoi Emma a-t-elle du mal à étudier chez elle ?","prompt_fa":"چرا اِما در خانه به‌سختی درس می‌خواند؟","options":["Il y a toujours du bruit.","Elle n'a pas de livres.","Elle travaille le dimanche.","Sa chambre est trop petite."],"correct":0,"explanation_fa":"اِما می‌گوید: «chez moi, il y a toujours du bruit»."}
+{"type":"tf","prompt":"La mairie veut essayer pendant six mois.","prompt_fa":"شهرداری می‌خواهد شش ماه امتحان کند.","correct":true,"explanation_fa":"می‌شنویم: «La mairie va tenter l'expérience pendant six mois.»"}
+{"type":"tf","prompt":"La ville cherche dix employés pour le samedi.","prompt_fa":"شهر برای شنبه‌ها ده کارمند می‌خواهد.","correct":false,"explanation_fa":"می‌شنویم: «La ville cherche aussi dix étudiants pour les aider»، برای یکشنبه‌ها، نه شنبه‌ها."}
+listening B:
+{"type":"mcq","prompt":"Combien d'étudiants la ville cherche-t-elle ?","prompt_fa":"شهر دنبال چند دانشجوست؟","options":["Deux.","Six.","Dix.","Quinze."],"correct":2,"explanation_fa":"می‌شنویم: «La ville cherche aussi dix étudiants pour les aider.»"}
+{"type":"mcq","prompt":"Si beaucoup de gens viennent, que fera peut-être la bibliothèque ?","prompt_fa":"اگر آدم‌های زیادی بیایند، کتابخانه شاید چه کار کند؟","options":["Elle ouvrira aussi le jeudi soir.","Elle fermera le samedi.","Elle cherchera un nouveau bâtiment.","Elle sera gratuite pour les familles."],"correct":0,"explanation_fa":"می‌شنویم: «la bibliothèque ouvrira peut-être aussi le jeudi soir»."}
+{"type":"tf","prompt":"Julie travaille à la bibliothèque depuis longtemps.","prompt_fa":"ژولی مدت زیادی است که در کتابخانه کار می‌کند.","correct":true,"explanation_fa":"ژولی «travaille à la bibliothèque depuis quinze ans»."}
+{"type":"tf","prompt":"Pierre n'a pas d'enfants.","prompt_fa":"پیر بچه ندارد.","correct":false,"explanation_fa":"می‌شنویم: «Pierre, père de deux enfants»."}

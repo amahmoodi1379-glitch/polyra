@@ -1,0 +1,46 @@
+code: fr-b1-t007
+title: Un rhume qui ne passe pas
+band: 3
+kind: long_dialogue
+sentences:
+A: Bonjour monsieur, je peux vous aider ? | سلام آقا، کمکی از من برمی‌آید؟
+B: Bonjour madame. J'ai un rhume depuis une semaine, et ça ne passe pas. | سلام خانم. یک هفته است سرما خورده‌ام و خوب نمی‌شوم.
+A: Vous avez de la fièvre ? | تب دارید؟
+B: Non, je ne crois pas. Mais je tousse beaucoup, surtout la nuit, et j'ai mal à la gorge. | نه، فکر نمی‌کنم. ولی زیاد سرفه می‌کنم، مخصوصاً شب‌ها، و گلویم درد می‌کند.
+B: Alors je dors très mal, quatre heures par nuit, à peu près. | برای همین خیلی بد می‌خوابم، شبی حدوداً چهار ساعت.
+A: C'est vrai, vous avez mauvaise mine. Vous pouvez rester chez vous quelques jours ? | راست می‌گویید، رنگتان پریده. می‌توانید چند روز در خانه بمانید؟
+B: Impossible, je suis serveur dans un restaurant, et nous sommes seulement trois. | غیرممکن است، من در یک رستوران گارسونم و فقط سه نفریم.
+B: Je ne peux pas garder le lit. | نمی‌توانم در رختخواب بمانم.
+A: Je comprends. Vous avez déjà pris quelque chose ? | می‌فهمم. تا حالا چیزی مصرف کرده‌اید؟
+B: Des comprimés pour la gorge, et beaucoup de café pour tenir le coup au travail. | قرص گلو، و کلی قهوه که سر کار دوام بیاورم.
+A: Du café ? Combien de tasses par jour ? | قهوه؟ روزی چند فنجان؟
+B: Six, je crois. La dernière vers 22 heures, pendant le service du soir. | شش تا، فکر کنم. آخری حدود ساعت ده شب، وسط کار شب. | tts: Six, je crois. La dernière vers vingt-deux heures, pendant le service du soir.
+A: Ah, voilà une partie du problème ! Le café, le soir, c'est très mauvais pour le sommeil. | آهان، این بخشی از مشکل است! قهوه آن هم شب، برای خواب خیلی بد است.
+B: Ah bon ? Je n'avais jamais fait attention à ça. | جدی؟ هیچ‌وقت به این دقت نکرده بودم.
+A: Il faut arrêter le café après 16 heures. Buvez plutôt de l'eau chaude avec du miel et du citron. | بعد از ساعت چهار بعدازظهر دیگر نباید قهوه بخورید. به جایش آب گرم با عسل و لیمو بنوشید. | tts: Il faut arrêter le café après seize heures. Buvez plutôt de l'eau chaude avec du miel et du citron.
+A: Pour la toux, je vous donne ce médicament : une cuillère le soir, avant de dormir. | برای سرفه این دارو را به شما می‌دهم: شب‌ها قبل از خواب یک قاشق.
+B: Et pour dormir, vous avez quelque chose ? | برای خواب چی، چیزی دارید؟
+A: Je préfère vous donner des conseils : pas d'écran au lit, une chambre pas trop chaude et une douche avant de vous coucher. | ترجیح می‌دهم چند توصیه بکنم: توی رختخواب گوشی و صفحه نه، اتاقی که زیادی گرم نباشد و یک دوش قبل از خواب.
+A: Mais si vous avez de la fièvre, ou si vous toussez encore dans cinq jours, allez voir votre médecin. | ولی اگر تب کردید، یا پنج روز دیگر هنوز سرفه داشتید، پیش پزشکتان بروید.
+B: D'accord. Je vous dois combien ? | باشد. چقدر باید بدهم؟
+A: 8,50 euros. Et pas de café ce soir, hein ! | ۸٫۵۰ یورو. امشب هم قهوه ممنوع، ها! | tts: Huit euros cinquante. Et pas de café ce soir, hein !
+B: Promis. Mais ce soir, le restaurant est complet… ça va être une longue soirée ! | قول می‌دهم. ولی امشب رستوران پر است… شب درازی در پیش دارم!
+A: Alors, de l'eau chaude au citron, et bon courage ! | پس آب گرم با لیمو، و خسته نباشید!
+reading A:
+{"type":"mcq","prompt":"Pourquoi le client vient-il à la pharmacie ?","prompt_fa":"مشتری برای چه به داروخانه آمده است؟","options":["Il a mal au dos depuis une semaine.","Il a un rhume qui ne passe pas et il dort mal.","Il veut acheter du café pour son restaurant.","Il cherche un médecin près de chez lui."],"correct":1,"explanation_fa":"مشتری می‌گوید: «J'ai un rhume depuis une semaine, et ça ne passe pas» و «je dors très mal»."}
+{"type":"tf","prompt":"Le client ne peut pas arrêter de travailler.","prompt_fa":"مشتری نمی‌تواند کار را تعطیل کند.","correct":true,"explanation_fa":"مشتری می‌گوید: «Impossible, je suis serveur dans un restaurant» و «Je ne peux pas garder le lit.»"}
+{"type":"tf","prompt":"La pharmacienne lui donne des comprimés pour dormir.","prompt_fa":"داروساز به او قرص خواب می‌دهد.","correct":false,"explanation_fa":"داروساز می‌گوید: «Je préfère vous donner des conseils»، یعنی برای خواب فقط توصیه می‌کند."}
+{"type":"find","prompt":"Quelle phrase montre que le client ne connaissait pas le problème du café ?","prompt_fa":"کدام جمله نشان می‌دهد که مشتری مشکل قهوه را نمی‌دانست؟","correct_sentence":13,"explanation_fa":"مشتری می‌گوید: «Je n'avais jamais fait attention à ça.»"}
+reading B:
+{"type":"ctx","word":"tenir le coup","prompt":"« beaucoup de café pour tenir le coup au travail » : pourquoi le client boit-il du café ?","prompt_fa":"«beaucoup de café pour tenir le coup au travail»: مشتری چرا قهوه می‌خورد؟","options":["Pour rester fort et continuer.","Pour dormir au travail.","Pour manger moins.","Pour parler plus vite."],"correct":0,"explanation_fa":"«tenir le coup» یعنی دوام آوردن؛ مشتری با بی‌خوابی سر کار می‌رود و می‌گوید: «beaucoup de café pour tenir le coup au travail»."}
+{"type":"match","prompt":"Quel conseil pour quel problème ?","prompt_fa":"کدام توصیه برای کدام مشکل است؟","left":["la toux","le sommeil","la fièvre"],"right":["aller voir le médecin","un médicament le soir","du café après 16 heures","pas d'écran au lit"],"pairs":[[0,1],[1,3],[2,0]],"explanation_fa":"برای سرفه «une cuillère le soir»، برای خواب «pas d'écran au lit» و برای تب «allez voir votre médecin»."}
+{"type":"cloze","prompt":"Complétez la phrase de la pharmacienne.","prompt_fa":"جملهٔ داروساز را کامل کنید.","text_with_gaps":"C'est vrai, vous avez mauvaise {{1}}. Vous pouvez rester chez vous quelques {{2}} ?","bank":["mine","jours","voix","nez"],"answers":["mine","jours"],"explanation_fa":"داروساز می‌گوید: «vous avez mauvaise mine. Vous pouvez rester chez vous quelques jours ?»"}
+listening A:
+{"type":"num","prompt":"Combien de tasses de café le client boit-il par jour ?","prompt_fa":"مشتری روزی چند فنجان قهوه می‌خورد؟","answer":"6","accepted":["6","six"],"explanation_fa":"مشتری می‌گوید: «Six, je crois.»"}
+{"type":"mcq","prompt":"Que conseille la pharmacienne à la place du café ?","prompt_fa":"داروساز به جای قهوه چه توصیه می‌کند؟","options":["Un thé très fort.","Un verre de lait chaud.","Un jus d'orange froid.","De l'eau chaude avec du miel."],"correct":3,"explanation_fa":"داروساز می‌گوید: «Buvez plutôt de l'eau chaude avec du miel et du citron.»"}
+{"type":"tf","prompt":"Le client tousse surtout la nuit.","prompt_fa":"مشتری بیشتر شب‌ها سرفه می‌کند.","correct":true,"explanation_fa":"مشتری می‌گوید: «je tousse beaucoup, surtout la nuit»."}
+{"type":"tf","prompt":"Le client a de la fièvre.","prompt_fa":"مشتری تب دارد.","correct":false,"explanation_fa":"وقتی داروساز دربارهٔ تب می‌پرسد، مشتری می‌گوید: «Non, je ne crois pas.»"}
+listening B:
+{"type":"mcq","prompt":"Combien le client doit-il payer ?","prompt_fa":"مشتری چقدر باید بپردازد؟","options":["5,80 euros.","8,50 euros.","15 euros.","18,50 euros."],"correct":1,"explanation_fa":"داروساز می‌گوید: «8,50 euros.»"}
+{"type":"mcq","prompt":"Quand le client doit-il aller voir son médecin ?","prompt_fa":"مشتری کی باید پیش پزشکش برود؟","options":["S'il tousse encore dans cinq jours.","S'il boit encore du café.","Si le restaurant est complet.","Si le médicament coûte trop cher."],"correct":0,"explanation_fa":"داروساز می‌گوید: «si vous toussez encore dans cinq jours, allez voir votre médecin»."}
+{"type":"order","prompt":"Mettez ces moments dans l'ordre.","prompt_fa":"این لحظه‌ها را به ترتیب بچینید.","items":["La pharmacienne parle du café.","Le client explique son problème.","Le client paie.","La pharmacienne donne un médicament pour la toux."],"correct_order":[1,0,3,2],"explanation_fa":"اول مشتری از سرماخوردگی‌اش می‌گوید، بعد داروساز «Le café, le soir, c'est très mauvais pour le sommeil» را می‌گوید، بعد دارو می‌دهد و آخر مشتری می‌پرسد: «Je vous dois combien ?»"}

@@ -1,0 +1,44 @@
+code: fr-b1-t015
+title: Ton petit frère cuisine !
+band: 3
+kind: letter
+sentences:
+- Salut Paul, | سلام پل،
+- Ça fait longtemps que je ne t'ai pas écrit, alors voilà des nouvelles de ton petit frère ! | خیلی وقت است برایت ننوشته‌ام، پس این هم خبرهایی از برادر کوچکت!
+- Tu te souviens ? Quand je suis parti de chez nos parents en septembre, je ne savais même pas cuire des pâtes. | یادت هست؟ وقتی سپتامبر از خانهٔ پدر و مادرمان رفتم، حتی بلد نبودم ماکارونی بپزم.
+- Les premières semaines, je ne mangeais ni légumes ni fruits : seulement des pizzas et des sandwichs. | هفته‌های اول نه سبزی می‌خوردم نه میوه: فقط پیتزا و ساندویچ.
+- Au bout d'un mois, j'étais toujours fatigué, et j'avais pris trois kilos ! | بعد از یک ماه همیشه خسته بودم و سه کیلو هم چاق شده بودم!
+- Alors j'ai appelé maman. Elle m'a dit : « Il faut mieux te nourrir ! », et elle m'a donné quelques recettes faciles. | برای همین به مامان زنگ زدم. گفت: «باید بهتر غذا بخوری!» و چند دستور آشپزی ساده به من داد.
+- Mais ma vraie professeure, c'est Madame Karimi, ma voisine du dessous, une dame iranienne de 70 ans. | ولی معلم واقعی‌ام خانم کریمی است، همسایهٔ طبقهٔ پایینم، یک خانم ایرانی هفتادساله. | tts: Mais ma vraie professeure, c'est Madame Karimi, ma voisine du dessous, une dame iranienne de soixante-dix ans.
+- Un soir, dans l'escalier, elle a vu mes trois pizzas dans mon sac, et elle a ri. | یک شب توی راه‌پله سه تا پیتزا را توی کیسه‌ام دید و خندید.
+- Depuis, le mercredi soir, je descends chez elle, et nous cuisinons ensemble. | از آن موقع، چهارشنبه‌شب‌ها پایین پیشش می‌روم و با هم آشپزی می‌کنیم.
+- Elle m'a appris à faire un vrai riz iranien et une soupe de légumes délicieuse. | به من یاد داده یک برنج ایرانی درست‌وحسابی و یک سوپ سبزیجات خوشمزه درست کنم.
+- Bien sûr, j'ai fait des erreurs : la semaine dernière, j'ai mis du sel à la place du sucre dans un gâteau ! | البته اشتباه هم کرده‌ام: هفتهٔ پیش توی کیک به جای شکر نمک ریختم!
+- Personne n'a pu le manger, même pas moi. | هیچ‌کس نتوانست بخوردش، حتی خودم.
+- Mais maintenant, je ne jette plus rien : avec un reste de légumes, je fais une soupe, et avec du vieux pain, une soupe à l'oignon. | ولی حالا دیگر هیچ چیز را دور نمی‌ریزم: با ته‌ماندهٔ سبزی‌ها سوپ درست می‌کنم و با نان بیات سوپ پیاز.
+- Je fais mes courses au marché le samedi : c'est moins cher, et les légumes sont meilleurs. | شنبه‌ها از بازار خرید می‌کنم: ارزان‌تر است و سبزی‌هایش بهترند.
+- Samedi prochain, je vais inviter trois amis à dîner chez moi pour la première fois. | شنبهٔ آینده برای اولین بار سه تا از دوستانم را برای شام به خانه‌ام دعوت می‌کنم.
+- Je vais préparer un poulet au citron avec du riz. J'ai un peu peur, mais Madame Karimi m'a promis de m'aider. | می‌خواهم مرغ با لیمو و برنج درست کنم. یک کم می‌ترسم، ولی خانم کریمی قول داده کمکم کند.
+- Et toi, quand est-ce que tu viens me voir ? Si tu venais le mois prochain, je te ferais mon plat préféré ! | تو کی به دیدنم می‌آیی؟ اگر ماه بعد می‌آمدی، غذای محبوبم را برایت درست می‌کردم!
+- Tu ne vas pas me reconnaître : ton petit frère est devenu un vrai cuisinier ! | نمی‌شناسی‌ام: برادر کوچکت یک آشپز واقعی شده!
+- Je t'embrasse, | قربانت،
+- Lucas | لوکا
+reading A:
+{"type":"mcq","prompt":"De quoi parle surtout la lettre de Lucas ?","prompt_fa":"موضوع اصلی نامهٔ لوکا چیست؟","options":["Ses problèmes avec sa voisine.","Comment il a appris à cuisiner.","Son nouveau travail dans un restaurant.","Le dîner de ses parents en septembre."],"correct":1,"explanation_fa":"لوکا تعریف می‌کند که اول «je ne savais même pas cuire des pâtes» و حالا «ton petit frère est devenu un vrai cuisinier !»"}
+{"type":"tf","prompt":"Les premières semaines, Lucas mangeait mal.","prompt_fa":"هفته‌های اول، لوکا بد غذا می‌خورد.","correct":true,"explanation_fa":"لوکا می‌نویسد: «je ne mangeais ni légumes ni fruits : seulement des pizzas et des sandwichs»."}
+{"type":"tf","prompt":"Les amis de Lucas ont adoré son gâteau.","prompt_fa":"دوستان لوکا کیکش را خیلی دوست داشتند.","correct":false,"explanation_fa":"لوکا در کیک نمک ریخت و می‌نویسد: «Personne n'a pu le manger, même pas moi.»"}
+{"type":"find","prompt":"Quelle phrase explique comment Lucas a rencontré sa professeure de cuisine ?","prompt_fa":"کدام جمله می‌گوید لوکا چطور با معلم آشپزی‌اش آشنا شد؟","correct_sentence":7,"explanation_fa":"لوکا می‌نویسد: «Un soir, dans l'escalier, elle a vu mes trois pizzas dans mon sac, et elle a ri.»"}
+reading B:
+{"type":"cloze","prompt":"Complétez la phrase de Lucas.","prompt_fa":"جملهٔ لوکا را کامل کنید.","text_with_gaps":"Les premières semaines, je ne mangeais {{1}} légumes {{2}} fruits.","bank":["ni","pas","que","jamais"],"answers":["ni","ni"],"explanation_fa":"لوکا می‌نویسد: «je ne mangeais ni légumes ni fruits»."}
+{"type":"ctx","word":"à la place du","prompt":"« j'ai mis du sel à la place du sucre » : qu'est-ce que Lucas a fait ?","prompt_fa":"«j'ai mis du sel à la place du sucre»: لوکا چه کار کرد؟","options":["Il a mis du sel, et pas de sucre.","Il a mis du sel et du sucre.","Il a oublié le sel et le sucre.","Il a acheté du sucre au marché."],"correct":0,"explanation_fa":"«à la place de» یعنی به جای؛ لوکا به جای شکر نمک ریخت."}
+{"type":"order","prompt":"Mettez l'histoire de Lucas dans l'ordre.","prompt_fa":"ماجرای لوکا را به ترتیب بچینید.","items":["Madame Karimi voit ses pizzas.","Lucas quitte la maison de ses parents.","Lucas invite trois amis à dîner.","Lucas met du sel dans un gâteau."],"correct_order":[1,0,3,2],"explanation_fa":"اول «Quand je suis parti de chez nos parents»، بعد خانم کریمی پیتزاها را دید، «la semaine dernière» ماجرای کیک بود و «Samedi prochain» دوستانش را دعوت می‌کند."}
+listening A:
+{"type":"num","prompt":"Combien de kilos Lucas avait-il pris après un mois ?","prompt_fa":"لوکا بعد از یک ماه چند کیلو چاق شده بود؟","answer":"3","accepted":["3","trois"],"explanation_fa":"لوکا می‌گوید: «j'avais pris trois kilos !»"}
+{"type":"mcq","prompt":"Quand Lucas cuisine-t-il avec Madame Karimi ?","prompt_fa":"لوکا کی با خانم کریمی آشپزی می‌کند؟","options":["Le samedi matin.","Le dimanche midi.","Tous les soirs.","Le mercredi soir."],"correct":3,"explanation_fa":"لوکا می‌گوید: «le mercredi soir, je descends chez elle, et nous cuisinons ensemble»."}
+{"type":"tf","prompt":"Lucas va au marché parce que c'est moins cher.","prompt_fa":"لوکا به بازار می‌رود چون جنس‌ها آنجا ارزان‌ترند.","correct":true,"explanation_fa":"لوکا می‌گوید: «c'est moins cher, et les légumes sont meilleurs»."}
+{"type":"tf","prompt":"Madame Karimi habite dans un autre quartier.","prompt_fa":"خانم کریمی در محلهٔ دیگری زندگی می‌کند.","correct":false,"explanation_fa":"لوکا می‌گوید: «Madame Karimi, ma voisine du dessous»، یعنی طبقهٔ پایین خودش."}
+listening B:
+{"type":"mcq","prompt":"Que va préparer Lucas pour ses amis ?","prompt_fa":"لوکا برای دوستانش چه می‌پزد؟","options":["Une soupe à l'oignon.","Des pizzas.","Un poulet au citron avec du riz.","Un gâteau au chocolat."],"correct":2,"explanation_fa":"لوکا می‌گوید: «Je vais préparer un poulet au citron avec du riz.»"}
+{"type":"mcq","prompt":"Que fait Lucas avec du vieux pain ?","prompt_fa":"لوکا با نان بیات چه می‌کند؟","options":["Il le jette.","Il en fait une soupe à l'oignon.","Il le donne à sa voisine.","Il en fait des sandwichs."],"correct":1,"explanation_fa":"لوکا می‌گوید: «avec du vieux pain, une soupe à l'oignon»."}
+{"type":"tf","prompt":"Lucas voudrait voir son frère bientôt.","prompt_fa":"لوکا دوست دارد برادرش را به زودی ببیند.","correct":true,"explanation_fa":"لوکا می‌پرسد: «quand est-ce que tu viens me voir ?»"}
+{"type":"tf","prompt":"Lucas n'a pas peur de son premier dîner avec des amis.","prompt_fa":"لوکا از اولین مهمانی شامش نمی‌ترسد.","correct":false,"explanation_fa":"لوکا می‌گوید: «J'ai un peu peur»."}

@@ -1,0 +1,49 @@
+code: fr-b1-t013
+title: La vie au village
+band: 3
+kind: long_dialogue
+sentences:
+A: Louis, qu'est-ce que tu fais avec ton téléphone ? | لویی، با گوشی‌ات چه کار می‌کنی؟
+B: Un devoir pour l'école, grand-mère. Je dois poser des questions à une personne âgée sur sa vie d'autrefois. | یک تکلیف مدرسه، مادربزرگ. باید از یک آدم مسن دربارهٔ زندگی قدیمش سؤال کنم.
+A: Une personne âgée ? Merci beaucoup ! Bon, vas-y, je t'écoute. | یک آدم مسن؟ خیلی ممنون! خب، بپرس، گوش می‌دهم.
+B: Tu as grandi où, exactement ? | دقیقاً کجا بزرگ شدی؟
+A: Dans un petit village à la montagne, à deux heures de Lyon. Mes parents avaient une ferme et ils élevaient des vaches. | در یک روستای کوچک کوهستانی، دو ساعت دورتر از لیون. پدر و مادرم مزرعه داشتند و گاو پرورش می‌دادند.
+B: Et l'école, c'était comment ? | مدرسه چطور بود؟
+A: Il n'y avait qu'une classe pour tous les enfants du village, de six à quatorze ans. | فقط یک کلاس برای همهٔ بچه‌های روستا بود، از شش تا چهارده ساله.
+A: Nous y allions à pied : trois kilomètres le matin, trois kilomètres le soir, même sous la neige. | پیاده می‌رفتیم: سه کیلومتر صبح، سه کیلومتر عصر، حتی زیر برف.
+B: Trois kilomètres ! Moi, je prends le bus pour cinq minutes… | سه کیلومتر! من برای پنج دقیقه راه اتوبوس سوار می‌شوم…
+A: Autrefois, personne n'avait de voiture au village, sauf le médecin. | آن قدیم‌ها هیچ‌کس در روستا ماشین نداشت، جز دکتر.
+B: Et le soir, vous faisiez quoi, sans télé ? | شب‌ها بدون تلویزیون چه کار می‌کردید؟
+A: On jouait aux cartes, on chantait, et mon père racontait des histoires près du feu. | ورق‌بازی می‌کردیم، آواز می‌خواندیم و پدرم کنار آتش قصه تعریف می‌کرد.
+A: La seule télévision du village était au café. Le samedi soir, tout le monde allait la regarder là-bas ! | تنها تلویزیون روستا توی کافه بود. شنبه‌شب‌ها همه می‌رفتند آنجا تماشایش کنند!
+B: C'est drôle ! Et grand-père, tu l'as rencontré où ? | چه بامزه! پدربزرگ را کجا دیدی؟
+A: À la fête du 14 juillet, sur la place du village. J'avais seize ans. | در جشن چهاردهم ژوئیه، توی میدان روستا. شانزده سالم بود. | tts: À la fête du quatorze juillet, sur la place du village. J'avais seize ans.
+A: Il m'a invitée à danser, et j'ai hésité : il marchait sur les pieds de toutes les filles ! | مرا به رقص دعوت کرد و من دودل بودم: پا روی پای همهٔ دخترها می‌گذاشت!
+B: Et finalement, tu as dit oui ? | آخرش قبول کردی؟
+A: Finalement, oui. Et nous avons dansé ensemble pendant cinquante ans ! | آخرش آره. و پنجاه سال با هم رقصیدیم!
+B: Tu regrettes cette époque ? | دلت برای آن دوران تنگ می‌شود؟
+A: Un peu, parfois. La vie était plus dure, mais on prenait le temps de parler avec ses voisins. | گاهی یک کم. زندگی سخت‌تر بود، ولی آدم برای حرف زدن با همسایه‌هایش وقت می‌گذاشت.
+A: Aujourd'hui, je profite d'autres choses. Avec ce téléphone, par exemple, je vois ta cousine au Canada tous les dimanches ! | امروز از چیزهای دیگری لذت می‌برم. مثلاً با همین گوشی، هر یکشنبه دخترخاله‌ات را در کانادا می‌بینم!
+B: Et si tu avais mon âge aujourd'hui, tu aimerais ta vie ? | اگر الان هم‌سن من بودی، زندگی‌ات را دوست داشتی؟
+A: Sûrement… Mais je serais très mauvaise aux jeux vidéo ! | حتماً… ولی توی بازی‌های ویدئویی خیلی بد بودم!
+B: Ça, c'est sûr ! Merci, grand-mère, j'ai assez de réponses pour mon devoir. | این که معلوم است! ممنون مادربزرگ، برای تکلیفم به اندازهٔ کافی جواب دارم.
+reading A:
+{"type":"mcq","prompt":"Pourquoi Louis pose-t-il des questions à sa grand-mère ?","prompt_fa":"لویی چرا از مادربزرگش سؤال می‌کند؟","options":["Pour un travail qu'il doit faire pour l'école.","Pour écrire un livre sur le village.","Parce qu'il veut habiter à la montagne.","Parce que sa cousine lui a demandé."],"correct":0,"explanation_fa":"لویی می‌گوید: «Un devoir pour l'école, grand-mère.»"}
+{"type":"tf","prompt":"Au village, tous les enfants étaient dans la même classe.","prompt_fa":"در روستا همهٔ بچه‌ها در یک کلاس بودند.","correct":true,"explanation_fa":"مادربزرگ می‌گوید: «Il n'y avait qu'une classe pour tous les enfants du village»."}
+{"type":"tf","prompt":"La grand-mère allait à l'école en bus.","prompt_fa":"مادربزرگ با اتوبوس به مدرسه می‌رفت.","correct":false,"explanation_fa":"مادربزرگ می‌گوید: «Nous y allions à pied»."}
+{"type":"find","prompt":"Quelle phrase dit où était la télévision du village ?","prompt_fa":"کدام جمله می‌گوید تلویزیون روستا کجا بود؟","correct_sentence":12,"explanation_fa":"مادربزرگ می‌گوید: «La seule télévision du village était au café.»"}
+reading B:
+{"type":"order","prompt":"Mettez la vie de la grand-mère dans l'ordre.","prompt_fa":"زندگی مادربزرگ را به ترتیب بچینید.","items":["Elle rencontre le grand-père.","Elle va à l'école à pied.","Elle parle avec sa petite-fille du Canada.","Elle danse avec le grand-père pendant des années."],"correct_order":[1,0,3,2],"explanation_fa":"اول بچگی و مدرسه («Nous y allions à pied»)، بعد شانزده‌سالگی و جشن، بعد «nous avons dansé ensemble pendant cinquante ans» و حالا هر یکشنبه با گوشی."}
+{"type":"ctx","word":"j'ai hésité","prompt":"« Il m'a invitée à danser, et j'ai hésité » : qu'est-ce que la grand-mère veut dire ?","prompt_fa":"«Il m'a invitée à danser, et j'ai hésité»: منظور مادربزرگ چیست؟","options":["Elle a tout de suite dit oui.","Elle a beaucoup ri.","Elle est rentrée chez elle.","Elle ne savait pas quoi répondre."],"correct":3,"explanation_fa":"«hésiter» یعنی دودل بودن؛ مادربزرگ مطمئن نبود، چون «il marchait sur les pieds de toutes les filles»."}
+{"type":"cloze","prompt":"Complétez la phrase de la grand-mère.","prompt_fa":"جملهٔ مادربزرگ را کامل کنید.","text_with_gaps":"{{1}}, personne n'avait de voiture au village, {{2}} le médecin.","bank":["Autrefois","sauf","Désormais","Demain","sous"],"answers":["Autrefois","sauf"],"explanation_fa":"مادربزرگ می‌گوید: «Autrefois, personne n'avait de voiture au village, sauf le médecin.»"}
+{"type":"match","prompt":"Qui faisait quoi ?","prompt_fa":"چه کسی چه کار می‌کرد؟","left":["le père de la grand-mère","le médecin","le grand-père"],"right":["avait une voiture.","racontait des histoires près du feu.","marchait sur les pieds des filles.","vendait des vaches au marché."],"pairs":[[0,1],[1,0],[2,2]],"explanation_fa":"پدر «racontait des histoires près du feu»، فقط دکتر ماشین داشت («sauf le médecin») و پدربزرگ «marchait sur les pieds de toutes les filles»."}
+listening A:
+{"type":"num","prompt":"Combien de kilomètres la grand-mère faisait-elle le matin pour aller à l'école ?","prompt_fa":"مادربزرگ صبح‌ها برای رفتن به مدرسه چند کیلومتر راه می‌رفت؟","answer":"3","accepted":["3","trois"],"explanation_fa":"مادربزرگ می‌گوید: «trois kilomètres le matin»."}
+{"type":"mcq","prompt":"Quel âge avait la grand-mère quand elle a rencontré le grand-père ?","prompt_fa":"مادربزرگ وقتی پدربزرگ را دید چند سالش بود؟","options":["Quatorze ans.","Seize ans.","Six ans.","Cinquante ans."],"correct":1,"explanation_fa":"مادربزرگ می‌گوید: «J'avais seize ans.»"}
+{"type":"tf","prompt":"Le soir, la famille jouait aux cartes et chantait.","prompt_fa":"شب‌ها خانواده ورق‌بازی می‌کرد و آواز می‌خواند.","correct":true,"explanation_fa":"مادربزرگ می‌گوید: «On jouait aux cartes, on chantait»."}
+{"type":"tf","prompt":"Pour la grand-mère, la vie d'autrefois était plus facile.","prompt_fa":"به نظر مادربزرگ، زندگی قدیم آسان‌تر بود.","correct":false,"explanation_fa":"مادربزرگ می‌گوید: «La vie était plus dure»."}
+listening B:
+{"type":"mcq","prompt":"Où la grand-mère a-t-elle rencontré le grand-père ?","prompt_fa":"مادربزرگ پدربزرگ را کجا دید؟","options":["Au café du village.","À l'école.","À une fête sur la place.","À la ferme de ses parents."],"correct":2,"explanation_fa":"مادربزرگ می‌گوید: «À la fête du 14 juillet, sur la place du village.»"}
+{"type":"mcq","prompt":"Que fait la grand-mère tous les dimanches avec son téléphone ?","prompt_fa":"مادربزرگ هر یکشنبه با گوشی‌اش چه کار می‌کند؟","options":["Elle joue aux jeux vidéo.","Elle regarde la télévision.","Elle voit sa petite-fille qui vit au Canada.","Elle appelle ses voisins."],"correct":2,"explanation_fa":"مادربزرگ می‌گوید: «je vois ta cousine au Canada tous les dimanches !»"}
+{"type":"tf","prompt":"Le village de la grand-mère est à la montagne.","prompt_fa":"روستای مادربزرگ در کوهستان است.","correct":true,"explanation_fa":"مادربزرگ می‌گوید: «Dans un petit village à la montagne»."}
+{"type":"tf","prompt":"Les parents de la grand-mère avaient un café.","prompt_fa":"پدر و مادر مادربزرگ کافه داشتند.","correct":false,"explanation_fa":"مادربزرگ می‌گوید: «Mes parents avaient une ferme»."}

@@ -1,0 +1,42 @@
+code: fr-b1-t008
+title: La meilleure baguette de la région
+band: 3
+kind: news
+sentences:
+- Dans un petit village de 600 habitants, à 60 kilomètres de Toulouse, tout le monde parle de la boulangerie de Nicolas et Anne Martin. | در یک روستای کوچک ۶۰۰ نفری، در ۶۰ کیلومتری تولوز، همه از نانوایی نیکولا و آن مارتن حرف می‌زنند. | tts: Dans un petit village de six cents habitants, à soixante kilomètres de Toulouse, tout le monde parle de la boulangerie de Nicolas et Anne Martin.
+- Samedi, à Toulouse, quarante boulangers de la région ont présenté leurs baguettes. | شنبه، در تولوز، چهل نانوای منطقه باگت‌هایشان را عرضه کردند.
+- Cinq boulangers et deux cuisiniers ont goûté chaque baguette. | پنج نانوا و دو آشپز همهٔ باگت‌ها را یکی‌یکی چشیدند.
+- Ils ne savaient pas de quelle boulangerie elle venait. | نمی‌دانستند هر باگت از کدام نانوایی آمده است.
+- Leur choix : la baguette de Nicolas Martin, 38 ans. | انتخاب آن‌ها: باگت نیکولا مارتن، ۳۸ ساله. | tts: Leur choix : la baguette de Nicolas Martin, trente-huit ans.
+- « À vrai dire, je n'avais pas envie d'y aller, mais Anne voulait essayer », raconte le boulanger. | نانوا تعریف می‌کند: «راستش را بخواهید، دلم نمی‌خواست بروم، ولی آن می‌خواست امتحان کنیم.»
+- Son secret ? De la farine de la région, de l'eau, du sel, et surtout du temps. | رازش؟ آرد همین منطقه، آب، نمک و از همه مهم‌تر، زمان.
+- Nicolas prend son temps : il commence sa baguette dix-huit heures avant de la cuire. | نیکولا عجله نمی‌کند: باگتش را هجده ساعت قبل از پختن شروع می‌کند.
+- Tous les jours, il se lève de bonne heure, à 3 heures du matin. | هر روز صبح زود، ساعت سه صبح، بیدار می‌شود. | tts: Tous les jours, il se lève de bonne heure, à trois heures du matin.
+- Depuis dimanche, le téléphone de la boulangerie sonne sans arrêt. | از یکشنبه تلفن نانوایی یکسره زنگ می‌زند.
+- Des clients arrivent de Toulouse et même de Bordeaux pour acheter une baguette. | مشتری‌ها از تولوز و حتی از بوردو می‌آیند تا یک باگت بخرند.
+- Lundi, à 8 heures, il n'y avait déjà plus de pain ! | دوشنبه ساعت هشت صبح دیگر نانی نمانده بود! | tts: Lundi, à huit heures, il n'y avait déjà plus de pain !
+- « D'habitude, nous faisons 300 baguettes par jour. Lundi, nous en avons fait 900 ! », explique Anne. | آن توضیح می‌دهد: «معمولاً روزی ۳۰۰ باگت می‌پزیم. دوشنبه ۹۰۰ تا پختیم!» | tts: « D'habitude, nous faisons trois cents baguettes par jour. Lundi, nous en avons fait neuf cents ! », explique Anne.
+- Mais est-ce que la baguette va coûter plus cher ? | ولی آیا باگت گران‌تر می‌شود؟
+- « Non, elle reste à 1,10 euro. Nos clients de tous les jours sont plus importants que les photos dans le journal », dit Nicolas. | نیکولا می‌گوید: «نه، همان ۱٫۱۰ یورو می‌ماند. مشتری‌های هر روزمان از عکس‌های روزنامه مهم‌ترند.» | tts: « Non, elle reste à un euro dix. Nos clients de tous les jours sont plus importants que les photos dans le journal », dit Nicolas.
+- En mars, il va présenter sa baguette à Paris, devant des boulangers de toute la France. | در ماه مارس، او باگتش را در پاریس جلوی نانواهایی از سراسر فرانسه عرضه می‌کند.
+- Au-dessus de la porte de la boulangerie, il y a maintenant une photo de samedi, à côté d'une photo de son grand-père, boulanger lui aussi. | بالای در نانوایی حالا یک عکس از روز شنبه هست، کنار عکس پدربزرگش که او هم نانوا بود.
+- « Il m'a tout appris. Et je crois qu'il me porte bonheur », dit Nicolas. | نیکولا می‌گوید: «همه‌چیز را او به من یاد داد. فکر می‌کنم برایم خوش‌یمن است.»
+reading A:
+{"type":"mcq","prompt":"Pourquoi tout le monde parle-t-il de cette boulangerie ?","prompt_fa":"چرا همه از این نانوایی حرف می‌زنند؟","options":["Elle a fermé après cent ans.","Elle vend son pain moins cher qu'avant.","Sa baguette est la meilleure de la région.","Elle va ouvrir une boutique à Paris."],"correct":2,"explanation_fa":"از میان چهل نانوای منطقه، انتخاب داورها این بود: «Leur choix : la baguette de Nicolas Martin»."}
+{"type":"tf","prompt":"Les gens qui ont goûté les baguettes ne savaient pas d'où elles venaient.","prompt_fa":"کسانی که باگت‌ها را چشیدند نمی‌دانستند از کجا آمده‌اند.","correct":true,"explanation_fa":"متن می‌گوید: «Ils ne savaient pas de quelle boulangerie elle venait.»"}
+{"type":"tf","prompt":"Nicolas avait très envie d'aller à Toulouse.","prompt_fa":"نیکولا خیلی دلش می‌خواست به تولوز برود.","correct":false,"explanation_fa":"نیکولا می‌گوید: «je n'avais pas envie d'y aller, mais Anne voulait essayer»."}
+{"type":"find","prompt":"Quelle phrase donne le secret de la baguette de Nicolas ?","prompt_fa":"کدام جمله راز باگت نیکولا را می‌گوید؟","correct_sentence":6,"explanation_fa":"متن می‌گوید: «Son secret ? De la farine de la région, de l'eau, du sel, et surtout du temps.»"}
+reading B:
+{"type":"cloze","prompt":"Complétez la phrase du texte.","prompt_fa":"جملهٔ متن را کامل کنید.","text_with_gaps":"Tous les jours, il se lève de {{1}} heure, à 3 heures du {{2}}.","bank":["bonne","matin","mauvaise","soir"],"answers":["bonne","matin"],"explanation_fa":"متن می‌گوید: «il se lève de bonne heure, à 3 heures du matin»."}
+{"type":"ctx","word":"À vrai dire","prompt":"« À vrai dire, je n'avais pas envie d'y aller » : « À vrai dire » veut dire…","prompt_fa":"«À vrai dire» در این جمله یعنی…","options":["Pour finir","Par exemple","Pour dire la vérité","Au contraire"],"correct":2,"explanation_fa":"نیکولا با «À vrai dire» حقیقت را می‌گوید: دلش نمی‌خواست برود."}
+{"type":"order","prompt":"Mettez ces moments dans l'ordre.","prompt_fa":"این لحظه‌ها را به ترتیب بچینید.","items":["Des clients arrivent de loin.","Quarante boulangers présentent leurs baguettes.","Nicolas va présenter sa baguette à Paris.","Le groupe choisit la baguette de Nicolas."],"correct_order":[1,3,0,2],"explanation_fa":"شنبه نانواها باگت‌هایشان را عرضه می‌کنند، بعد «Leur choix : la baguette de Nicolas Martin»، از یکشنبه مشتری‌ها از دور می‌آیند و «En mars» نیکولا به پاریس می‌رود."}
+listening A:
+{"type":"num","prompt":"À quelle heure Nicolas se lève-t-il ?","prompt_fa":"نیکولا ساعت چند بیدار می‌شود؟","answer":"3","accepted":["3","3h","3 heures","trois"],"explanation_fa":"می‌شنویم: «il se lève de bonne heure, à 3 heures du matin»."}
+{"type":"mcq","prompt":"Combien d'habitants y a-t-il dans le village ?","prompt_fa":"روستا چند نفر جمعیت دارد؟","options":["60.","300.","600.","900."],"correct":2,"explanation_fa":"می‌شنویم: «Dans un petit village de 600 habitants»."}
+{"type":"tf","prompt":"Lundi matin, la boulangerie n'avait plus de pain très tôt.","prompt_fa":"دوشنبه صبح، نانوایی خیلی زود نانش تمام شد.","correct":true,"explanation_fa":"می‌شنویم: «Lundi, à 8 heures, il n'y avait déjà plus de pain !»"}
+{"type":"tf","prompt":"Le prix de la baguette va changer.","prompt_fa":"قیمت باگت عوض می‌شود.","correct":false,"explanation_fa":"نیکولا می‌گوید: «Non, elle reste à 1,10 euro.»"}
+listening B:
+{"type":"num","prompt":"Combien de baguettes la boulangerie a-t-elle faites lundi ?","prompt_fa":"نانوایی دوشنبه چند باگت پخت؟","answer":"900","accepted":["900","neuf cents"],"explanation_fa":"آن می‌گوید: «Lundi, nous en avons fait 900 !»"}
+{"type":"mcq","prompt":"Pour Nicolas, qu'est-ce qui est le plus important ?","prompt_fa":"برای نیکولا چه چیزی از همه مهم‌تر است؟","options":["Les gens qui achètent son pain chaque jour.","Les photos dans le journal.","Son voyage à Paris en mars.","La photo au-dessus de la porte."],"correct":0,"explanation_fa":"نیکولا می‌گوید: «Nos clients de tous les jours sont plus importants que les photos dans le journal»."}
+{"type":"tf","prompt":"Le grand-père de Nicolas était boulanger.","prompt_fa":"پدربزرگ نیکولا نانوا بود.","correct":true,"explanation_fa":"می‌شنویم: «une photo de son grand-père, boulanger lui aussi»."}
+{"type":"tf","prompt":"Nicolas commence sa baguette une heure avant de la cuire.","prompt_fa":"نیکولا یک ساعت قبل از پختن، باگتش را شروع می‌کند.","correct":false,"explanation_fa":"می‌شنویم: «il commence sa baguette dix-huit heures avant de la cuire»."}

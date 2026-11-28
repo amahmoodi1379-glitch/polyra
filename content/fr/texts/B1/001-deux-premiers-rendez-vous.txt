@@ -1,0 +1,49 @@
+code: fr-b1-t001
+title: Deux premiers rendez-vous
+band: 3
+kind: long_dialogue
+sentences:
+A: Alors, Hugo, comment s'est passé ton premier rendez-vous avec un patron ? | خب هوگو، اولین مصاحبهٔ کاری‌ات چطور گذشت؟
+B: Mal, je crois. D'abord, je suis arrivé en retard. | بد، فکر کنم. اول این‌که دیر رسیدم.
+A: Ah bon ? Pourtant, tu étais parti de chez toi très tôt ! | جدی؟ تو که خیلی زود از خانه راه افتاده بودی!
+B: Oui, mais le métro s'est arrêté vingt minutes entre deux stations. | آره، ولی مترو بیست دقیقه بین دو ایستگاه ایستاد.
+A: Et tu as appelé l'entreprise ? | به شرکت زنگ زدی؟
+B: Non, je n'avais pas leur numéro sur moi. | نه، شماره‌شان همراهم نبود.
+B: Bref, lorsque je suis arrivé, la directrice m'attendait depuis un quart d'heure. | خلاصه، وقتی رسیدم، خانم مدیر یک ربع بود که منتظرم بود.
+A: Elle était fâchée ? | عصبانی بود؟
+B: Non, elle a été très gentille. | نه، خیلی مهربان بود.
+B: Mais j'étais très nerveux et j'ai oublié le nom de l'entreprise ! | ولی خیلی مضطرب بودم و اسم شرکت یادم رفت!
+A: Oh non ! Ce n'est pas vrai ! | ای وای! باورم نمی‌شود!
+B: Si, si. Et toi, Léa, ton premier rendez-vous, il s'est bien passé ? | چرا، واقعاً. تو چی لئا، اولین مصاحبه‌ات خوب گذشت؟
+A: Pas du tout ! C'était il y a trois ans, dans une agence de voyages. | اصلاً! سه سال پیش بود، توی یک آژانس مسافرتی.
+A: J'avais préparé des réponses pour tout, alors j'ai parlé, parlé, parlé… | برای همه‌چیز جواب آماده کرده بودم، برای همین حرف زدم و حرف زدم و حرف زدم…
+A: Après vingt minutes, le patron m'a dit : « Merci, mais moi aussi, j'avais des questions ! » | بعد از بیست دقیقه، رئیس به من گفت: «ممنون، ولی من هم سؤال داشتم!»
+B: C'est drôle ! Et tu as eu le travail ? | بامزه است! کار را گرفتی؟
+A: Non, bien sûr. Mais j'ai compris une chose : il faut aussi écouter. | نه، معلوم است. ولی یک چیز را فهمیدم: باید گوش هم داد.
+A: Et maintenant, je regarde toujours le site de l'entreprise avant. Tu l'avais regardé, toi ? | و حالا همیشه قبلش سایت شرکت را نگاه می‌کنم. تو نگاهش کرده بودی؟
+B: Oui, et d'ailleurs, la directrice m'a posé beaucoup de questions là-dessus. | آره، اتفاقاً خانم مدیر کلی دربارهٔ همین از من سؤال کرد.
+B: Attends, j'ai un message… C'est elle ! | صبر کن، یک پیام دارم… خودش است!
+B: Elle veut me revoir jeudi à 10 heures ! | می‌خواهد پنجشنبه ساعت ده دوباره مرا ببیند! | tts: Elle veut me revoir jeudi à dix heures !
+A: Tu vois ! Désormais, pars toujours une heure plus tôt ! | دیدی! از این به بعد همیشه یک ساعت زودتر راه بیفت!
+B: Promis. Et cette fois, je n'oublierai pas le nom de l'entreprise ! | قول می‌دهم. این دفعه دیگر اسم شرکت یادم نمی‌رود!
+reading A:
+{"type":"mcq","prompt":"De quoi parlent les deux amis ?","prompt_fa":"این دو دوست دربارهٔ چه حرف می‌زنند؟","options":["Du nouveau travail de Léa dans une agence.","Des problèmes du métro dans leur ville.","De la première fois qu'ils ont parlé à un patron.","D'un voyage qu'ils veulent faire ensemble."],"correct":2,"explanation_fa":"لئا اول می‌پرسد: «comment s'est passé ton premier rendez-vous avec un patron ?» و بعد از اولین مصاحبهٔ خودش هم تعریف می‌کند."}
+{"type":"tf","prompt":"Hugo était parti de chez lui assez tôt.","prompt_fa":"هوگو نسبتاً زود از خانه راه افتاده بود.","correct":true,"explanation_fa":"لئا می‌گوید: «Pourtant, tu étais parti de chez toi très tôt !» و هوگو می‌گوید: «Oui»."}
+{"type":"tf","prompt":"La directrice était en colère contre Hugo.","prompt_fa":"خانم مدیر از دست هوگو عصبانی بود.","correct":false,"explanation_fa":"هوگو می‌گوید: «Non, elle a été très gentille.»، یعنی عصبانی نبود و خیلی مهربان بود."}
+{"type":"find","prompt":"Quelle phrase dit la leçon que Léa a apprise ?","prompt_fa":"کدام جمله درسی را که لئا یاد گرفت می‌گوید؟","correct_sentence":16,"explanation_fa":"لئا می‌گوید: «j'ai compris une chose : il faut aussi écouter»، یعنی فهمیدم که باید گوش هم داد."}
+reading B:
+{"type":"order","prompt":"Mettez l'histoire de Hugo dans l'ordre.","prompt_fa":"ماجرای هوگو را به ترتیب بچینید.","items":["Hugo arrive à l'entreprise.","Le métro s'arrête entre deux stations.","Hugo oublie le nom de l'entreprise.","Hugo reçoit un message de la directrice."],"correct_order":[1,0,2,3],"explanation_fa":"اول «le métro s'est arrêté»، بعد «lorsque je suis arrivé»، بعد «j'ai oublié le nom de l'entreprise» و آخر «j'ai un message… C'est elle !»."}
+{"type":"cloze","prompt":"Complétez avec les mots du texte.","prompt_fa":"جاهای خالی را با کلمه‌های متن پر کنید.","text_with_gaps":"Bref, {{1}} je suis arrivé, la directrice m'{{2}} depuis un quart d'heure.","bank":["lorsque","attendait","pourtant","attend","désormais"],"answers":["lorsque","attendait"],"explanation_fa":"هوگو می‌گوید: «Bref, lorsque je suis arrivé, la directrice m'attendait depuis un quart d'heure.»"}
+{"type":"ctx","word":"là-dessus","prompt":"Dans « la directrice m'a posé beaucoup de questions là-dessus », que veut dire « là-dessus » ?","prompt_fa":"در این جمله «là-dessus» یعنی چه؟","options":["sur ce sujet","sur cette table","dans ce bureau","après ce moment"],"correct":0,"explanation_fa":"هوگو دربارهٔ کار شرکت حرف می‌زند و می‌گوید مدیر «beaucoup de questions là-dessus» پرسید، یعنی دربارهٔ همین موضوع."}
+{"type":"match","prompt":"Qui a fait quoi ?","prompt_fa":"چه کسی چه کاری کرده است؟","left":["Hugo","Léa","la directrice"],"right":["a trop parlé pendant son rendez-vous.","a oublié le nom de l'entreprise.","a envoyé un message.","a travaillé dans le métro."],"pairs":[[0,1],[1,0],[2,2]],"explanation_fa":"هوگو می‌گوید: «j'ai oublié le nom de l'entreprise»، لئا می‌گوید: «j'ai parlé, parlé, parlé» و پیام از طرف مدیر است: «j'ai un message… C'est elle !»."}
+listening A:
+{"type":"num","prompt":"Le métro s'est arrêté combien de minutes ?","prompt_fa":"مترو چند دقیقه ایستاد؟","answer":"20","accepted":["20","vingt"],"explanation_fa":"هوگو می‌گوید: «le métro s'est arrêté vingt minutes entre deux stations»."}
+{"type":"mcq","prompt":"Quel a été le problème de Léa pendant son premier rendez-vous ?","prompt_fa":"مشکل لئا در اولین مصاحبه‌اش چه بود؟","options":["Elle est arrivée une heure en retard.","Elle a oublié toutes ses réponses.","Elle a trop parlé, sans écouter le patron.","Elle n'a pas trouvé l'agence."],"correct":2,"explanation_fa":"لئا می‌گوید: «j'ai parlé, parlé, parlé…» و رئیس به او گفت: «moi aussi, j'avais des questions !»."}
+{"type":"tf","prompt":"Hugo n'a pas pu appeler l'entreprise.","prompt_fa":"هوگو نتوانست به شرکت زنگ بزند.","correct":true,"explanation_fa":"هوگو می‌گوید: «je n'avais pas leur numéro sur moi»، یعنی شماره‌شان همراهش نبود."}
+{"type":"tf","prompt":"Léa a eu le travail à l'agence de voyages.","prompt_fa":"لئا کار آژانس مسافرتی را گرفت.","correct":false,"explanation_fa":"هوگو می‌پرسد: «Et tu as eu le travail ?» و لئا جواب می‌دهد: «Non, bien sûr.»"}
+listening B:
+{"type":"mcq","prompt":"Quand la directrice veut-elle revoir Hugo ?","prompt_fa":"خانم مدیر کی می‌خواهد هوگو را دوباره ببیند؟","options":["Mardi à 10 heures.","Vendredi à 10 heures.","Jeudi à 2 heures.","Jeudi à 10 heures."],"correct":3,"explanation_fa":"هوگو می‌گوید: «Elle veut me revoir jeudi à 10 heures !»"}
+{"type":"mcq","prompt":"Comment est Hugo à la fin de la conversation ?","prompt_fa":"هوگو آخر گفتگو چه حالی دارد؟","options":["Il est triste et fatigué.","Il est fâché contre Léa.","Il est inquiet pour le métro.","Il est content et prêt pour jeudi."],"correct":3,"explanation_fa":"مدیر می‌خواهد دوباره او را ببیند و هوگو با خوشحالی می‌گوید: «Promis. Et cette fois, je n'oublierai pas le nom de l'entreprise !»"}
+{"type":"tf","prompt":"La directrice a posé des questions sur le travail de l'entreprise.","prompt_fa":"خانم مدیر دربارهٔ کار شرکت سؤال کرد.","correct":true,"explanation_fa":"هوگو می‌گوید: «la directrice m'a posé beaucoup de questions là-dessus»، یعنی دربارهٔ چیزی که در سایت شرکت بود."}
+{"type":"tf","prompt":"Le premier rendez-vous de Léa, c'était l'année dernière.","prompt_fa":"اولین مصاحبهٔ لئا پارسال بود.","correct":false,"explanation_fa":"لئا می‌گوید: «C'était il y a trois ans»، یعنی سه سال پیش بود، نه پارسال."}
+{"type":"order","prompt":"Dans quel ordre parlent-ils de ces choses ?","prompt_fa":"به چه ترتیبی دربارهٔ این‌ها حرف می‌زنند؟","items":["le message de la directrice","le retard de Hugo","le premier rendez-vous de Léa","la leçon de Léa"],"correct_order":[1,2,3,0],"explanation_fa":"اول دیر رسیدن هوگو، بعد «C'était il y a trois ans» دربارهٔ مصاحبهٔ لئا، بعد «il faut aussi écouter» و آخر «j'ai un message… C'est elle !»."}

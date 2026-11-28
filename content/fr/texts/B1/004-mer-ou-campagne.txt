@@ -1,0 +1,46 @@
+code: fr-b1-t004
+title: Mer ou campagne ?
+band: 3
+kind: long_dialogue
+sentences:
+A: Thomas, pour le long week-end de mai, on part quelque part, pas trop loin de Paris ? | توماس، برای تعطیلات آخر هفتهٔ طولانی ماه مه برویم یک جایی نه‌چندان دور از پاریس؟
+B: Bonne idée, Chloé ! Mais où, exactement ? | فکر خوبی است، کلوئه! ولی دقیقاً کجا؟
+A: Au bord de la mer, évidemment ! Je veux marcher sur la plage et manger du poisson. | معلوم است، کنار دریا! می‌خواهم روی ساحل قدم بزنم و ماهی بخورم.
+B: Moi, j'ai plutôt envie de campagne. | من بیشتر دلم بیرون شهر را می‌خواهد.
+B: Une petite maison près d'une ferme, des vaches, du bon fromage, et surtout le calme. | یک خانهٔ کوچک نزدیک یک مزرعه، چند تا گاو، پنیر خوب و از همه مهم‌تر آرامش.
+A: Le calme ? Tu en as assez de Paris ? | آرامش؟ از پاریس خسته شده‌ای؟
+B: Un peu, oui. Au bureau, c'est de plus en plus difficile. | یک کم، آره. سر کار هر روز سخت‌تر می‌شود.
+A: Je comprends. Par contre, à la campagne, il n'y a rien à faire le soir ! | می‌فهمم. ولی بیرون شهر شب‌ها هیچ کاری نمی‌شود کرد!
+B: Mais c'est parfait ! On va lire, dormir, faire du vélo… | ولی همین عالی است! کتاب می‌خوانیم، می‌خوابیم، دوچرخه‌سواری می‌کنیم…
+A: Et s'il pleut ? Au bord de la mer, il y a au moins des cafés et des musées. | اگر باران بیاید چی؟ کنار دریا دست‌کم کافه و موزه هست.
+B: Tu as vu la météo ? Il va pleuvoir samedi sur toute la région. | پیش‌بینی هوا را دیده‌ای؟ شنبه در کل منطقه باران می‌آید.
+A: Ah bon ? Bon, tant pis pour la plage… | جدی؟ خب، چه می‌شود کرد، ساحل بماند برای یک وقت دیگر…
+B: Attends, regarde cette maison : elle est à la campagne, mais à quinze minutes à pied de la mer ! | صبر کن، این خانه را ببین: بیرون شهر است، ولی تا دریا پانزده دقیقه پیاده راه است!
+A: Elle est jolie ! Et le prix ? | قشنگ است! قیمتش چند است؟
+B: Quatre-vingt-dix euros la nuit, à peu près le prix d'un hôtel. | شبی نود یورو، تقریباً قیمت یک هتل.
+A: Pour trois nuits, ça fait 270 euros. C'est un peu cher… | برای سه شب می‌شود ۲۷۰ یورو. یک کم گران است… | tts: Pour trois nuits, ça fait deux cent soixante-dix euros. C'est un peu cher…
+B: Oui, mais il y a une cuisine : on peut préparer nos repas et ne pas aller au restaurant tous les soirs. | آره، ولی آشپزخانه دارد: می‌توانیم خودمان غذا درست کنیم و هر شب رستوران نرویم.
+A: Et un jardin, avec des vélos ! D'accord, comme ça, on a à la fois la mer et la campagne. | یک باغ هم دارد، با دوچرخه! باشد، این‌طوری هم دریا را داریم هم بیرون شهر را.
+B: Exactement. Je réserve tout de suite, il reste peu de dates libres. | دقیقاً. همین الان رزرو می‌کنم، تاریخ خالی زیادی نمانده.
+A: Et samedi, avec la pluie, on fera quoi ? | شنبه با این باران چه کار کنیم؟
+B: On restera au lit avec un bon livre. C'est ça, des vacances ! | توی تخت می‌مانیم با یک کتاب خوب. تعطیلات یعنی همین!
+A: Toi, tu as vraiment besoin de vacances… | تو واقعاً به تعطیلات احتیاج داری…
+reading A:
+{"type":"mcq","prompt":"Au début, sur quoi Chloé et Thomas ne sont-ils pas d'accord ?","prompt_fa":"اول گفتگو، کلوئه و توماس سر چه چیزی هم‌نظر نیستند؟","options":["Sur la date du week-end.","Sur le prix de l'hôtel.","Sur l'endroit où ils vont aller.","Sur le temps qu'il va faire."],"correct":2,"explanation_fa":"کلوئه می‌خواهد برود «Au bord de la mer» ولی توماس می‌گوید: «Moi, j'ai plutôt envie de campagne.»"}
+{"type":"tf","prompt":"Thomas est fatigué de son travail.","prompt_fa":"توماس از کارش خسته است.","correct":true,"explanation_fa":"توماس می‌گوید: «Au bureau, c'est de plus en plus difficile.»"}
+{"type":"tf","prompt":"La maison est loin de la mer.","prompt_fa":"خانه از دریا دور است.","correct":false,"explanation_fa":"توماس می‌گوید خانه «à quinze minutes à pied de la mer» است."}
+{"type":"find","prompt":"Quelle phrase donne le prix de la maison pour une nuit ?","prompt_fa":"کدام جمله قیمت یک شب خانه را می‌گوید؟","correct_sentence":14,"explanation_fa":"توماس می‌گوید: «Quatre-vingt-dix euros la nuit»."}
+reading B:
+{"type":"ctx","word":"tant pis","prompt":"« Bon, tant pis pour la plage… » : que veut dire Chloé ?","prompt_fa":"«Bon, tant pis pour la plage…»: منظور کلوئه چیست؟","options":["Elle est très contente pour la plage.","Elle accepte de ne pas aller à la plage.","Elle veut aller à la plage avant la pluie.","Elle ne connaît pas cette plage."],"correct":1,"explanation_fa":"کلوئه بعد از شنیدن خبر باران می‌گوید «tant pis pour la plage»، یعنی چه می‌شود کرد، از ساحل می‌گذرد."}
+{"type":"cloze","prompt":"Complétez la phrase de Chloé.","prompt_fa":"جملهٔ کلوئه را کامل کنید.","text_with_gaps":"Par {{1}}, à la campagne, il n'y a {{2}} à faire le soir !","bank":["contre","rien","fin","jamais"],"answers":["contre","rien"],"explanation_fa":"کلوئه می‌گوید: «Par contre, à la campagne, il n'y a rien à faire le soir !»"}
+{"type":"order","prompt":"Mettez ces moments de la conversation dans l'ordre.","prompt_fa":"این لحظه‌های گفتگو را به ترتیب بچینید.","items":["Thomas trouve une maison près de la mer.","Chloé propose un week-end au bord de la mer.","Thomas parle de la météo.","Thomas va réserver la maison."],"correct_order":[1,2,0,3],"explanation_fa":"اول کلوئه می‌گوید «Au bord de la mer»، بعد توماس از «la météo» حرف می‌زند، بعد خانه را پیدا می‌کند و آخر می‌گوید: «Je réserve tout de suite»."}
+listening A:
+{"type":"num","prompt":"Combien coûte la maison pour trois nuits, en euros ?","prompt_fa":"خانه برای سه شب چند یورو می‌شود؟","answer":"270","accepted":["270","deux cent soixante-dix"],"explanation_fa":"کلوئه می‌گوید: «Pour trois nuits, ça fait 270 euros.»"}
+{"type":"mcq","prompt":"Pourquoi Chloé change-t-elle d'avis sur la plage ?","prompt_fa":"چرا کلوئه دربارهٔ ساحل نظرش عوض می‌شود؟","options":["Parce que la plage est trop loin.","Parce que l'hôtel est trop cher.","Parce que Thomas est malade.","Parce qu'il va pleuvoir samedi."],"correct":3,"explanation_fa":"توماس می‌گوید: «Il va pleuvoir samedi sur toute la région.» و کلوئه جواب می‌دهد: «tant pis pour la plage…»"}
+{"type":"tf","prompt":"Dans la maison, on peut faire la cuisine.","prompt_fa":"در این خانه می‌شود آشپزی کرد.","correct":true,"explanation_fa":"توماس می‌گوید: «il y a une cuisine : on peut préparer nos repas»."}
+{"type":"tf","prompt":"Thomas veut manger au restaurant tous les soirs.","prompt_fa":"توماس می‌خواهد هر شب در رستوران غذا بخورد.","correct":false,"explanation_fa":"توماس می‌گوید: «on peut préparer nos repas et ne pas aller au restaurant tous les soirs»."}
+listening B:
+{"type":"mcq","prompt":"Que veut faire Thomas à la campagne ?","prompt_fa":"توماس می‌خواهد بیرون شهر چه کار کند؟","options":["Visiter des musées et des cafés.","Travailler dans une ferme.","Lire, dormir et faire du vélo.","Manger du poisson tous les soirs."],"correct":2,"explanation_fa":"توماس می‌گوید: «On va lire, dormir, faire du vélo…»"}
+{"type":"mcq","prompt":"Samedi, avec la pluie, que vont-ils faire ?","prompt_fa":"شنبه با باران چه کار می‌کنند؟","options":["Lire sans sortir du lit.","Aller voir un musée.","Rentrer à Paris.","Marcher sur la plage."],"correct":0,"explanation_fa":"توماس می‌گوید: «On restera au lit avec un bon livre.»"}
+{"type":"tf","prompt":"Ils vont passer trois nuits dans la maison.","prompt_fa":"آن‌ها سه شب در این خانه می‌مانند.","correct":true,"explanation_fa":"کلوئه حساب می‌کند: «Pour trois nuits, ça fait 270 euros.»"}
+{"type":"tf","prompt":"Chloé n'aime pas la maison.","prompt_fa":"کلوئه از خانه خوشش نمی‌آید.","correct":false,"explanation_fa":"کلوئه می‌گوید: «Elle est jolie !»"}

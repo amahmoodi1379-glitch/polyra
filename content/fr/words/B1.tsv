@@ -20,6 +20,11 @@ celle-ci	pron			این یکی (مؤنث)	این یکی (مؤنث)	function	no_ca
 celle-là	pron			آن یکی (مؤنث)	آن یکی (مؤنث)	function	no_card:1
 ceci	pron			این (چیز)	این (چیز)	function	no_card:1
 ci	adv			این (ce mois-ci: این ماه)	این	function	no_card:1
+t	pron			(حرف t بی‌معنی، فقط برای راحتی تلفظ: a-t-il)	حرف t میان فعل و ضمیر	function	no_card:1	checked:level
+cordialement	adv			با احترام (پایان نامه رسمی)	با احترام	function	no_card:1	checked:level
+radiateur	noun	m		رادیاتور (شوفاژ)	رادیاتور	home	no_card:1	checked:level
+technicien	noun	m		تکنیسین	تکنیسین	work	no_card:1	checked:level
+tramway	noun	m		تراموا	تراموا	transport	no_card:1	checked:level
 mien	pron			مال من	مال من	function	no_card:1
 mienne	pron			مال من (مؤنث)	مال من (مؤنث)	function	no_card:1
 tien	pron			مال تو	مال تو	function	no_card:1

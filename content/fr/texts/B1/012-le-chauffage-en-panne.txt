@@ -1,0 +1,41 @@
+code: fr-b1-t012
+title: Le chauffage en panne
+band: 3
+kind: letter
+sentences:
+- Bonjour Monsieur Martin, | سلام آقای مارتن،
+- Je vous écris parce que le chauffage de l'appartement ne marche{marcher-2} plus depuis lundi matin, c'est-à-dire depuis trois jours. | برایتان می‌نویسم چون شوفاژ آپارتمان از دوشنبه صبح کار نمی‌کند، یعنی سه روز است.
+- Je vous ai appelé lundi et mardi, et je vous ai laissé deux messages, mais je n'ai pas eu de réponse. | دوشنبه و سه‌شنبه به شما زنگ زدم و دو پیغام گذاشتم، ولی جوابی نگرفتم.
+- Dehors, il fait 2 degrés la nuit, et dans l'appartement, il fait seulement 15 degrés. | بیرون شب‌ها دو درجه است و داخل آپارتمان فقط ۱۵ درجه. | tts: Dehors, il fait deux degrés la nuit, et dans l'appartement, il fait seulement quinze degrés.
+- Pour mon fils de huit mois, c'est vraiment trop froid. | برای پسر هشت‌ماهه‌ام واقعاً زیادی سرد است.
+- Depuis mardi, il tousse, et le médecin veut une chambre bien chaude pour lui. | از سه‌شنبه سرفه می‌کند و دکتر می‌گوید اتاقش باید حسابی گرم باشد.
+- Ma voisine m'a prêté un petit chauffage, mais il ne suffit pas pour tout l'appartement. | همسایه‌ام یک بخاری کوچک به من قرض داده، ولی برای کل آپارتمان کافی نیست.
+- J'ai regardé le chauffage dans la cuisine : une petite lumière rouge s'allume et s'éteint sans arrêt. | دستگاه شوفاژ توی آشپزخانه را نگاه کردم: یک چراغ قرمز کوچک یکسره روشن و خاموش می‌شود.
+- Je suppose qu'il est en panne, mais je ne sais pas le réparer moi-même. | فکر می‌کنم خراب شده، ولی خودم بلد نیستم تعمیرش کنم.
+- Pourriez-vous envoyer quelqu'un le plus vite possible ? | ممکن است هر چه زودتر کسی را بفرستید؟
+- Je suis à la maison tous les jours après 16 heures, et le mercredi toute la journée. | هر روز بعد از ساعت چهار بعدازظهر و چهارشنبه‌ها تمام روز خانه هستم. | tts: Je suis à la maison tous les jours après seize heures, et le mercredi toute la journée.
+- Vous pouvez aussi fixer un rendez-vous par message à ce numéro : 06 12 34 56 78. | می‌توانید با پیامک به این شماره هم وقت بگذارید: ۰۶ ۱۲ ۳۴ ۵۶ ۷۸. | tts: Vous pouvez aussi fixer un rendez-vous par message à ce numéro : zéro six, douze, trente-quatre, cinquante-six, soixante-dix-huit.
+- Je sais que ce n'est pas facile de trouver quelqu'un en ce moment. | می‌دانم این روزها پیدا کردن کسی آسان نیست.
+- Mais si personne ne vient avant vendredi, je devrai appeler une entreprise moi-même et vous envoyer la facture. | ولی اگر تا جمعه کسی نیاید، باید خودم به یک شرکت زنگ بزنم و صورت‌حسابش را برای شما بفرستم.
+- J'espère que nous trouverons vite une solution. | امیدوارم زود راه‌حلی پیدا کنیم.
+- Bien à vous, | با احترام،
+- Camille Dubois | کامی دوبوا
+reading A:
+{"type":"mcq","prompt":"Pourquoi Camille écrit-elle à Monsieur Martin ?","prompt_fa":"کامی چرا به آقای مارتن نامه می‌نویسد؟","options":["Pour payer son loyer avec du retard.","Pour annoncer qu'elle quitte l'appartement.","Pour parler d'un problème avec sa voisine.","Pour lui demander de réparer vite le chauffage."],"correct":3,"explanation_fa":"کامی می‌نویسد: «le chauffage de l'appartement ne marche plus» و «Pourriez-vous envoyer quelqu'un le plus vite possible ?»"}
+{"type":"tf","prompt":"Camille a déjà essayé de téléphoner à Monsieur Martin.","prompt_fa":"کامی قبلاً سعی کرده به آقای مارتن تلفن بزند.","correct":true,"explanation_fa":"کامی می‌نویسد: «Je vous ai appelé lundi et mardi»."}
+{"type":"tf","prompt":"Le petit chauffage de la voisine suffit pour tout l'appartement.","prompt_fa":"بخاری کوچک همسایه برای کل آپارتمان کافی است.","correct":false,"explanation_fa":"کامی می‌نویسد: «il ne suffit pas pour tout l'appartement»."}
+{"type":"find","prompt":"Quelle phrase donne la température dans l'appartement ?","prompt_fa":"کدام جمله دمای داخل آپارتمان را می‌گوید؟","correct_sentence":3,"explanation_fa":"کامی می‌نویسد: «dans l'appartement, il fait seulement 15 degrés»."}
+reading B:
+{"type":"ctx","word":"c'est-à-dire","prompt":"« depuis lundi matin, c'est-à-dire depuis trois jours » : « c'est-à-dire » veut dire…","prompt_fa":"در این جمله «c'est-à-dire» یعنی…","options":["sinon","pourtant","plus exactement","par contre"],"correct":2,"explanation_fa":"کامی با «c'est-à-dire» همان «lundi matin» را دقیق‌تر می‌گوید: سه روز."}
+{"type":"cloze","prompt":"Complétez avec les mots de la lettre.","prompt_fa":"جاهای خالی را با کلمه‌های نامه پر کنید.","text_with_gaps":"Ma voisine m'a {{1}} un petit chauffage, mais il ne {{2}} pas pour tout l'appartement.","bank":["prêté","suffit","demandé","marche","fait"],"answers":["prêté","suffit"],"explanation_fa":"کامی می‌نویسد: «Ma voisine m'a prêté un petit chauffage, mais il ne suffit pas pour tout l'appartement.»"}
+{"type":"order","prompt":"Mettez ces moments dans l'ordre.","prompt_fa":"این لحظه‌ها را به ترتیب بچینید.","items":["Camille écrit ce message.","Le chauffage s'arrête.","Camille téléphone une première fois.","Camille appellera peut-être une entreprise."],"correct_order":[1,2,0,3],"explanation_fa":"شوفاژ «depuis lundi matin» کار نمی‌کند، کامی «lundi» زنگ زد، سه روز بعد این نامه را می‌نویسد و اگر تا جمعه کسی نیاید «je devrai appeler une entreprise»."}
+listening A:
+{"type":"num","prompt":"Le fils de Camille a quel âge, en mois ?","prompt_fa":"پسر کامی چند ماهه است؟","answer":"8","accepted":["8","huit"],"explanation_fa":"کامی می‌گوید: «Pour mon fils de huit mois»."}
+{"type":"mcq","prompt":"Que fait la petite lumière rouge ?","prompt_fa":"چراغ قرمز کوچک چه می‌کند؟","options":["Elle reste allumée toute la nuit.","Elle s'allume et s'éteint tout le temps.","Elle ne s'allume plus du tout.","Elle s'allume seulement le matin."],"correct":1,"explanation_fa":"کامی می‌گوید: «une petite lumière rouge s'allume et s'éteint sans arrêt»."}
+{"type":"tf","prompt":"Le mercredi, Camille est chez elle toute la journée.","prompt_fa":"کامی چهارشنبه‌ها تمام روز خانه است.","correct":true,"explanation_fa":"کامی می‌گوید: «et le mercredi toute la journée»."}
+{"type":"tf","prompt":"Monsieur Martin a déjà répondu à Camille.","prompt_fa":"آقای مارتن قبلاً به کامی جواب داده است.","correct":false,"explanation_fa":"کامی می‌گوید: «je n'ai pas eu de réponse»."}
+listening B:
+{"type":"num","prompt":"Le chauffage ne marche plus depuis combien de jours ?","prompt_fa":"چند روز است که شوفاژ کار نمی‌کند؟","answer":"3","accepted":["3","trois"],"explanation_fa":"کامی می‌گوید: «c'est-à-dire depuis trois jours»."}
+{"type":"mcq","prompt":"Que fera Camille si personne ne vient avant vendredi ?","prompt_fa":"اگر تا جمعه کسی نیاید، کامی چه کار می‌کند؟","options":["Elle quittera l'appartement.","Elle ira dormir chez sa voisine.","Elle ne paiera pas son loyer.","Elle appellera une entreprise elle-même."],"correct":3,"explanation_fa":"کامی می‌گوید: «je devrai appeler une entreprise moi-même et vous envoyer la facture»."}
+{"type":"tf","prompt":"La nuit, dehors, il fait 2 degrés.","prompt_fa":"شب‌ها بیرون دو درجه است.","correct":true,"explanation_fa":"کامی می‌گوید: «Dehors, il fait 2 degrés la nuit»."}
+{"type":"tf","prompt":"Le fils de Camille est en bonne santé.","prompt_fa":"پسر کامی سالم است.","correct":false,"explanation_fa":"کامی می‌گوید: «Depuis mardi, il tousse»."}
