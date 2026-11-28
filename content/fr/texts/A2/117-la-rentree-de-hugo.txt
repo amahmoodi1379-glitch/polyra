@@ -1,0 +1,39 @@
+code: fr-a2-t117
+title: La rentrée de Hugo
+band: 2
+kind: phone_call
+placement: yes
+sentences:
+A: Allô, Hugo ? C'est ta grand-mère. Alors, cette rentrée au collège ? | الو، هوگو؟ مادربزرگت هستم. خب، شروع مدرسهٔ راهنمایی چطور بود؟
+B: Super ! Le collège est grand, mais je connais déjà trois élèves. | عالی! مدرسه بزرگ است، ولی از قبل سه تا از بچه‌ها را می‌شناسم.
+A: Et les cours ? | درس‌ها چطور؟
+B: Ce matin, on a eu le programme de l'année : il y a beaucoup de nouvelles matières. | امروز صبح برنامهٔ سال را به ما دادند: کلی درس جدید داریم.
+B: On a aussi un carnet pour les messages aux parents. | یک دفترچه هم داریم برای پیام به پدر و مادرها.
+A: Et ton inscription au club de musique ? | ثبت‌نامت در باشگاه موسیقی چه شد؟
+B: C'est fait ! Je vais jouer de la guitare le mercredi. | انجام شد! چهارشنبه‌ها گیتار می‌زنم.
+A: Bravo ! Et le soir, tu regardes toujours tes dessins animés ? | آفرین! شب‌ها هنوز کارتون‌هایت را تماشا می‌کنی؟
+B: Non, je ne suis plus un bébé ! Maintenant, je regarde une série avec papa. | نه، من دیگر بچه‌کوچولو نیستم! حالا با بابا یک سریال تماشا می‌کنم.
+A: Pardon ! Et elle parle de quoi, cette série ? | ببخشید! حالا این سریال دربارهٔ چیست؟
+B: C'est l'histoire d'une famille qui habite sur une île. | داستان خانواده‌ای است که روی یک جزیره زندگی می‌کند.
+A: Bon, travaille bien, mon chéri. Je t'embrasse ! | خب، خوب درس بخوان، عزیزم. می‌بوسمت!
+reading A:
+{"type":"mcq","prompt":"این گفتگو دربارهٔ چیست؟","options":["سفر هوگو با پدرش","اولین روزهای هوگو در مدرسهٔ تازه","جشن تولد مادربزرگ","کلاس گیتار مادربزرگ"],"correct":1,"explanation_fa":"مادربزرگ می‌پرسد: «Alors, cette rentrée au collège ?»، یعنی شروع مدرسهٔ راهنمایی چطور بود، و هوگو از مدرسه و درس‌ها می‌گوید."}
+{"type":"tf","prompt":"هوگو در مدرسهٔ تازه هیچ‌کس را نمی‌شناسد.","correct":false,"explanation_fa":"هوگو می‌گوید: «je connais déjà trois élèves»، یعنی از قبل سه تا از بچه‌ها را می‌شناسم."}
+{"type":"tf","prompt":"هوگو در باشگاه موسیقی ثبت‌نام کرده است.","correct":true,"explanation_fa":"مادربزرگ دربارهٔ «ton inscription au club de musique» می‌پرسد و هوگو می‌گوید: «C'est fait !»، یعنی انجام شد."}
+{"type":"find","prompt":"کدام جمله می‌گوید دفترچه برای چیست؟","correct_sentence":4,"explanation_fa":"هوگو می‌گوید: «On a aussi un carnet pour les messages aux parents.»، یعنی یک دفترچه برای پیام به پدر و مادرها داریم."}
+{"type":"mcq","prompt":"هوگو حالا شب‌ها چه تماشا می‌کند؟","options":["کارتون با خواهرش","فوتبال با مادربزرگش","فیلم با دوستانش","یک سریال با پدرش"],"correct":3,"explanation_fa":"هوگو می‌گوید: «Maintenant, je regarde une série avec papa.»، یعنی حالا با بابا یک سریال تماشا می‌کنم."}
+reading B:
+{"type":"match","prompt":"هر چیز را به توضیحش در گفتگو وصل کن.","left":["برنامهٔ سال","دفترچه","گیتار"],"right":["چهارشنبه‌ها","برای پیام به پدر و مادرها","کلی درس جدید","یک خانواده روی یک جزیره"],"pairs":[[0,2],[1,1],[2,0]],"explanation_fa":"هوگو می‌گوید در برنامهٔ سال «il y a beaucoup de nouvelles matières»، دفترچه «pour les messages aux parents» است و گیتار را «le mercredi» می‌زند."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Non, je ne suis plus un {{1}} ! Maintenant, je regarde une {{2}} avec papa.","bank":["bébé","série","carnet","programme","guitare"],"answers":["bébé","série"],"explanation_fa":"هوگو می‌گوید: «Non, je ne suis plus un bébé ! Maintenant, je regarde une série avec papa.»"}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["هوگو از برنامهٔ سال می‌گوید","هوگو از باشگاه موسیقی می‌گوید","هوگو از سریال می‌گوید","هوگو می‌گوید سه تا از بچه‌ها را می‌شناسد"],"correct_order":[3,0,1,2],"explanation_fa":"اول هوگو می‌گوید: «je connais déjà trois élèves»، بعد از «le programme de l'année»، بعد از گیتار در باشگاه موسیقی و آخر از «une série» حرف می‌زند."}
+listening A:
+{"type":"mcq","prompt":"مادربزرگ چرا زنگ می‌زند؟","options":["تا هوگو را به خانه‌اش دعوت کند","تا بگوید سریال تازه‌ای دیده است","تا از شروع مدرسهٔ هوگو بپرسد","تا هوگو را در باشگاه ثبت‌نام کند"],"correct":2,"explanation_fa":"مادربزرگ می‌پرسد: «Alors, cette rentrée au collège ?»، یعنی شروع مدرسه چطور بود."}
+{"type":"num","prompt":"هوگو چند نفر از بچه‌های مدرسه را از قبل می‌شناسد؟","answer":"3","accepted":["3","trois"],"explanation_fa":"هوگو می‌گوید: «je connais déjà trois élèves»، یعنی سه نفر."}
+{"type":"tf","prompt":"هوگو چهارشنبه‌ها گیتار می‌زند.","correct":true,"explanation_fa":"هوگو می‌گوید: «Je vais jouer de la guitare le mercredi.»، یعنی چهارشنبه‌ها گیتار می‌زنم."}
+{"type":"tf","prompt":"هوگو هنوز هر شب کارتون تماشا می‌کند.","correct":false,"explanation_fa":"هوگو می‌گوید: «Non, je ne suis plus un bébé !»؛ او حالا شب‌ها سریال تماشا می‌کند، نه کارتون."}
+{"type":"mcq","prompt":"سریال دربارهٔ چیست؟","options":["بچه‌هایی که در یک مدرسهٔ بزرگ درس می‌خوانند","خانواده‌ای که روی یک جزیره زندگی می‌کند","یک گروه موسیقی جوان","یک پدر و پسر در سفر"],"correct":1,"explanation_fa":"هوگو می‌گوید: «C'est l'histoire d'une famille qui habite sur une île.»، یعنی داستان خانواده‌ای است که روی یک جزیره زندگی می‌کند."}
+listening B:
+{"type":"mcq","prompt":"امروز صبح در مدرسه چه چیزی به بچه‌ها دادند؟","options":["یک گیتار","برنامهٔ سال","یک کتاب داستان","کارت باشگاه"],"correct":1,"explanation_fa":"هوگو می‌گوید: «Ce matin, on a eu le programme de l'année»، یعنی امروز صبح برنامهٔ سال را به ما دادند."}
+{"type":"tf","prompt":"مدرسهٔ تازهٔ هوگو کوچک است.","correct":false,"explanation_fa":"هوگو می‌گوید: «Le collège est grand»، یعنی مدرسه بزرگ است."}
+{"type":"tf","prompt":"هوگو سریال را با پدرش تماشا می‌کند.","correct":true,"explanation_fa":"هوگو می‌گوید: «je regarde une série avec papa»، یعنی با بابا سریال تماشا می‌کنم."}
+{"type":"mcq","prompt":"دفترچهٔ هوگو برای چیست؟","options":["برای نوشتن تکلیف‌ها","برای کشیدن نقاشی","برای پیام به پدر و مادرها","برای نوشتن اسم سریال‌ها"],"correct":2,"explanation_fa":"هوگو می‌گوید: «On a aussi un carnet pour les messages aux parents.»، یعنی یک دفترچه برای پیام به پدر و مادرها داریم."}

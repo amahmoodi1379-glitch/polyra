@@ -1,0 +1,35 @@
+code: fr-a2-t113
+title: La maison du lac
+band: 2
+kind: phone_call
+sentences:
+A: Bonsoir, monsieur Dubois. C'est madame Martin, de la maison du{du-contr} lac. | عصر بخیر، آقای دوبوا. خانم مارتن هستم، از خانهٔ کنار دریاچه.
+B: Bonsoir, madame ! Il y a un problème ? | عصر بخیر، خانم! مشکلی پیش آمده؟
+A: Oui. D'abord, le robinet de la cuisine est cassé. | بله. اول اینکه شیر آب آشپزخانه خراب است.
+B: Ah, je suis désolé. Demain matin, je viens le réparer. | آه، متأسفم. فردا صبح می‌آیم درستش می‌کنم.
+A: Merci. Et ce soir, il fait froid. Il y a d'autres couvertures ? | ممنون. امشب هم هوا سرد است. پتوی دیگری هست؟
+B: Oui, dans l'armoire. Et il y a aussi des oreillers dans le tiroir, sous le lit. | بله، توی کمد. توی کشوی زیر تخت هم بالش هست.
+A: Parfait ! Et le chauffage ? Quand je l'allume, il fait un bruit horrible ! | عالی! شوفاژ چی؟ وقتی روشنش می‌کنم، صدای وحشتناکی می‌دهد!
+B: C'est normal, il est vieux. Après dix minutes, le bruit s'arrête. | عادی است، قدیمی است. بعد از ده دقیقه صدایش قطع می‌شود.
+A: D'accord. Et dans la salle de bain, la lampe du{du-contr} plafond ne marche{marcher-2} plus. | باشه. توی حمام هم لامپ سقف دیگر کار نمی‌کند.
+B: Pas de problème, je la répare aussi demain. | مشکلی نیست، آن را هم فردا درست می‌کنم.
+A: Merci beaucoup, et bonne soirée ! | خیلی ممنون، شب خوبی داشته باشید!
+reading A:
+{"type":"mcq","prompt":"خانم مارتن چرا زنگ می‌زند؟","options":["برای رزرو خانه برای سال بعد","برای گفتن چند مشکل خانه","برای پرسیدن راه دریاچه","چون کلید خانه را گم کرده است"],"correct":1,"explanation_fa":"آقای دوبوا می‌پرسد: «Il y a un problème ?» و خانم مارتن از شیر آب، پتو، شوفاژ و لامپ می‌گوید."}
+{"type":"tf","prompt":"شیر آب آشپزخانه خراب است.","correct":true,"explanation_fa":"خانم مارتن می‌گوید: «le robinet de la cuisine est cassé»، یعنی شیر آب آشپزخانه خراب است."}
+{"type":"tf","prompt":"پتوهای دیگر توی کشوی زیر تخت هستند.","correct":false,"explanation_fa":"آقای دوبوا می‌گوید پتوها «dans l'armoire» هستند، یعنی توی کمد؛ توی کشو «des oreillers» است، یعنی بالش."}
+{"type":"find","prompt":"کدام جمله می‌گوید صدای شوفاژ کی قطع می‌شود؟","correct_sentence":7,"explanation_fa":"آقای دوبوا می‌گوید: «Après dix minutes, le bruit s'arrête.»، یعنی بعد از ده دقیقه صدایش قطع می‌شود."}
+reading B:
+{"type":"match","prompt":"هر چیز را به جایش در خانه وصل کن.","left":["پتوها","بالش‌ها","لامپ خراب"],"right":["توی حمام","توی کمد","توی کشوی زیر تخت","توی آشپزخانه"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"آقای دوبوا می‌گوید پتوها «dans l'armoire» و بالش‌ها «dans le tiroir, sous le lit» هستند؛ لامپ خراب «dans la salle de bain» است."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Et il y a aussi des {{1}} dans le {{2}}, sous le lit.","bank":["oreillers","tiroir","plafond","chauffage","robinets"],"answers":["oreillers","tiroir"],"explanation_fa":"آقای دوبوا می‌گوید: «il y a aussi des oreillers dans le tiroir, sous le lit»، یعنی توی کشوی زیر تخت هم بالش هست."}
+{"type":"mcq","prompt":"آقای دوبوا دربارهٔ صدای شوفاژ چه می‌گوید؟","options":["که شوفاژ نو است و صدا ندارد","که باید فوراً خاموشش کرد","که فردا یک شوفاژ نو می‌آورد","که عادی است، چون شوفاژ قدیمی است"],"correct":3,"explanation_fa":"آقای دوبوا می‌گوید: «C'est normal, il est vieux.»، یعنی عادی است، قدیمی است."}
+listening A:
+{"type":"mcq","prompt":"آقای دوبوا کی می‌آید شیر آب را درست کند؟","options":["امشب","فردا صبح","فردا عصر","آخر هفته"],"correct":1,"explanation_fa":"آقای دوبوا می‌گوید: «Demain matin, je viens le réparer.»، یعنی فردا صبح می‌آیم درستش می‌کنم."}
+{"type":"tf","prompt":"امشب هوا سرد است.","correct":true,"explanation_fa":"خانم مارتن می‌گوید: «ce soir, il fait froid»، یعنی امشب هوا سرد است."}
+{"type":"tf","prompt":"آقای دوبوا می‌گوید شوفاژ را روشن نکند.","correct":false,"explanation_fa":"آقای دوبوا می‌گوید صدای شوفاژ عادی است: «Après dix minutes, le bruit s'arrête.»؛ نمی‌گوید آن را روشن نکند."}
+{"type":"num","prompt":"صدای شوفاژ بعد از چند دقیقه قطع می‌شود؟","answer":"10","accepted":["10","dix"],"explanation_fa":"می‌شنویم: «Après dix minutes, le bruit s'arrête.»، یعنی بعد از ده دقیقه."}
+listening B:
+{"type":"mcq","prompt":"لامپ خراب کجاست؟","options":["توی آشپزخانه","توی اتاق خواب","توی حمام","توی راهرو"],"correct":2,"explanation_fa":"خانم مارتن می‌گوید: «dans la salle de bain, la lampe du plafond ne marche plus»، یعنی لامپ سقف حمام کار نمی‌کند."}
+{"type":"tf","prompt":"خانم مارتن پتوی بیشتری می‌خواهد.","correct":true,"explanation_fa":"خانم مارتن می‌پرسد: «Il y a d'autres couvertures ?»، یعنی پتوی دیگری هست؟"}
+{"type":"tf","prompt":"آقای دوبوا لامپ را درست نمی‌کند.","correct":false,"explanation_fa":"آقای دوبوا می‌گوید: «je la répare aussi demain»، یعنی آن را هم فردا درست می‌کنم."}
+{"type":"order","prompt":"مشکل‌ها را به ترتیبی که خانم مارتن می‌گوید بچین.","items":["پتوهای کم","لامپ حمام","شیر آب آشپزخانه","صدای شوفاژ"],"correct_order":[2,0,3,1],"explanation_fa":"اول خانم مارتن از «le robinet de la cuisine» می‌گوید، بعد از «couvertures»، بعد از «le chauffage» و آخر از «la lampe du plafond»."}

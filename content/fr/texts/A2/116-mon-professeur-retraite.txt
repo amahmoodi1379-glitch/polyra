@@ -1,0 +1,33 @@
+code: fr-a2-t116
+title: Mon professeur retraité
+band: 2
+kind: email
+sentences:
+- Salut Sara ! | سلام سارا!
+- Tu te souviens de mon voisin, monsieur Dubois ? Il est retraité. Avant, il était instituteur. | همسایه‌ام، آقای دوبوا، یادت هست؟ بازنشسته است. قبلاً آموزگار دبستان بود.
+- Maintenant, il m'aide avec mon français, le mardi et le vendredi. | حالا سه‌شنبه‌ها و جمعه‌ها در فرانسه کمکم می‌کند.
+- Il dit que ma prononciation est bonne, mais que mon orthographe est horrible ! | می‌گوید تلفظم خوب است، ولی املایم افتضاح است!
+- Alors, chaque semaine, il me donne un petit texte à écrire. | برای همین هر هفته یک متن کوتاه به من می‌دهد که بنویسم.
+- Il corrige mes fautes et il m'explique les verbes difficiles. | غلط‌هایم را درست می‌کند و فعل‌های سخت را برایم توضیح می‌دهد.
+- Avant, je faisais toujours la traduction en persan dans ma tête. | قبلاً همیشه توی ذهنم به فارسی ترجمه می‌کردم.
+- Maintenant, monsieur Dubois me demande de penser en français, et ça marche{marcher-2} ! | حالا آقای دوبوا از من می‌خواهد به فرانسه فکر کنم، و جواب می‌دهد!
+- Pour le remercier, je lui fais des gâteaux iraniens : il est très gourmand ! | برای تشکر، برایش شیرینی ایرانی درست می‌کنم: خیلی شکموست!
+- Bises, Maryam | می‌بوسمت، مریم
+reading A:
+{"type":"mcq","prompt":"آقای دوبوا کیست؟","options":["معلم کلاس فرانسهٔ سارا","همسایهٔ بازنشستهٔ مریم","پدربزرگ مریم","یک دانشجوی فرانسوی"],"correct":1,"explanation_fa":"مریم می‌نویسد: «mon voisin, monsieur Dubois ? Il est retraité.»، یعنی همسایه‌ام، آقای دوبوا، بازنشسته است."}
+{"type":"tf","prompt":"آقای دوبوا قبلاً آموزگار دبستان بود.","correct":true,"explanation_fa":"مریم می‌نویسد: «Avant, il était instituteur.»، یعنی قبلاً آموزگار دبستان بود."}
+{"type":"tf","prompt":"به نظر آقای دوبوا، تلفظ مریم بد است.","correct":false,"explanation_fa":"مریم می‌نویسد: «Il dit que ma prononciation est bonne»، یعنی می‌گوید تلفظم خوب است."}
+{"type":"find","prompt":"کدام جمله می‌گوید آقای دوبوا هر هفته به مریم چه می‌دهد؟","correct_sentence":4,"explanation_fa":"مریم می‌نویسد: «chaque semaine, il me donne un petit texte à écrire»، یعنی هر هفته یک متن کوتاه به من می‌دهد که بنویسم."}
+reading B:
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Il dit que ma {{1}} est bonne, mais que mon {{2}} est horrible !","bank":["prononciation","orthographe","traduction","texte","verbe"],"answers":["prononciation","orthographe"],"explanation_fa":"مریم می‌نویسد: «Il dit que ma prononciation est bonne, mais que mon orthographe est horrible !»، یعنی تلفظم خوب است، ولی املایم افتضاح است."}
+{"type":"mcq","prompt":"مریم برای تشکر از آقای دوبوا چه کار می‌کند؟","options":["برایش گل می‌خرد","به او فارسی یاد می‌دهد","او را به شام دعوت می‌کند","برایش شیرینی ایرانی درست می‌کند"],"correct":3,"explanation_fa":"مریم می‌نویسد: «Pour le remercier, je lui fais des gâteaux iraniens»، یعنی برای تشکر برایش شیرینی ایرانی درست می‌کنم."}
+{"type":"match","prompt":"هر زمان را به چیزی که مریم دربارهٔ آن می‌نویسد وصل کن.","left":["سه‌شنبه و جمعه","هر هفته","قبلاً"],"right":["یک متن کوتاه برای نوشتن","کلاس با آقای دوبوا","ترجمه به فارسی توی ذهن","کلاس گیتار"],"pairs":[[0,1],[1,0],[2,2]],"explanation_fa":"مریم می‌نویسد آقای دوبوا «le mardi et le vendredi» کمکش می‌کند، «chaque semaine» یک متن می‌دهد و «Avant, je faisais toujours la traduction en persan dans ma tête»."}
+listening A:
+{"type":"mcq","prompt":"آقای دوبوا چه روزهایی به مریم کمک می‌کند؟","options":["دوشنبه و پنجشنبه","شنبه و یکشنبه","سه‌شنبه و جمعه","هر روز صبح"],"correct":2,"explanation_fa":"می‌شنویم: «il m'aide avec mon français, le mardi et le vendredi»، یعنی سه‌شنبه‌ها و جمعه‌ها."}
+{"type":"tf","prompt":"آقای دوبوا فعل‌های سخت را توضیح می‌دهد.","correct":true,"explanation_fa":"می‌شنویم: «il m'explique les verbes difficiles»، یعنی فعل‌های سخت را برایم توضیح می‌دهد."}
+{"type":"tf","prompt":"مریم هنوز توی ذهنش به فارسی ترجمه می‌کند.","correct":false,"explanation_fa":"می‌شنویم: «Avant, je faisais toujours la traduction en persan» و «Maintenant, monsieur Dubois me demande de penser en français, et ça marche !»؛ پس حالا به فرانسه فکر می‌کند."}
+{"type":"mcq","prompt":"آقای دوبوا دربارهٔ املای مریم چه می‌گوید؟","options":["که افتضاح است","که خیلی خوب است","که کمی بهتر شده است","که مثل املای یک فرانسوی است"],"correct":0,"explanation_fa":"می‌شنویم: «mon orthographe est horrible !»، یعنی املایم افتضاح است."}
+listening B:
+{"type":"mcq","prompt":"چرا مریم شیرینی ایرانی درست می‌کند؟","options":["برای تولد سارا","برای تشکر از آقای دوبوا","برای کلاس آشپزی","برای فروش در بازار"],"correct":1,"explanation_fa":"می‌شنویم: «Pour le remercier, je lui fais des gâteaux iraniens»، یعنی برای تشکر از او."}
+{"type":"tf","prompt":"آقای دوبوا خیلی شکموست.","correct":true,"explanation_fa":"می‌شنویم: «il est très gourmand !»، یعنی خیلی شکموست."}
+{"type":"tf","prompt":"آقای دوبوا هنوز در مدرسه کار می‌کند.","correct":false,"explanation_fa":"می‌شنویم: «Il est retraité. Avant, il était instituteur.»، یعنی بازنشسته است و دیگر در مدرسه کار نمی‌کند."}

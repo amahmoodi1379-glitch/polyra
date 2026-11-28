@@ -1,0 +1,35 @@
+code: fr-a2-t112
+title: Votre réservation
+band: 2
+kind: email
+sentences:
+- Bonjour Madame Karimi, | سلام خانم کریمی،
+- Merci pour votre réservation à l'Hôtel du{du-contr} Port, à Nice, du{du-contr} 3 au 6 juin. | از رزرو شما در هتل دو پور در نیس، از ۳ تا ۶ ژوئن، متشکریم. | tts: Merci pour votre réservation à l'Hôtel du Port, à Nice, du trois au six juin.
+- Votre chambre est au troisième étage, avec un balcon sur la mer. | اتاق شما در طبقهٔ سوم است، با یک بالکن رو به دریا.
+- La réception est ouverte de 7 heures à 23 heures. | پذیرش از ساعت ۷ تا ۲۳ باز است. | tts: La réception est ouverte de sept heures à vingt-trois heures.
+- Vous arrivez plus tard ? Envoyez-nous un message : nous vous donnerons un code pour la porte. | دیرتر می‌رسید؟ به ما پیام بدهید: یک رمز برای در به شما می‌دهیم.
+- À votre arrivée, il faut montrer votre carte d'identité ou votre passeport. | موقع رسیدن باید کارت شناسایی یا گذرنامه‌تان را نشان بدهید.
+- De la gare, le trajet dure{durer} dix minutes à pied. | از ایستگاه قطار تا اینجا پیاده ده دقیقه راه است.
+- Nous proposons aussi la location de vélos : 12 euros par jour. | کرایهٔ دوچرخه هم داریم: روزی ۱۲ یورو. | tts: Nous proposons aussi la location de vélos : douze euros par jour.
+- Le petit-déjeuner est servi au restaurant de l'hôtel, de 7 heures à 10 heures. | صبحانه در رستوران هتل سرو می‌شود، از ساعت ۷ تا ۱۰. | tts: Le petit-déjeuner est servi au restaurant de l'hôtel, de sept heures à dix heures.
+- À bientôt ! | به امید دیدار!
+- L'équipe de l'Hôtel du{du-contr} Port | گروه هتل دو پور
+reading A:
+{"type":"mcq","prompt":"این ایمیل را چه کسی نوشته است؟","options":["خانم کریمی","کارمندهای هتل","یک مغازهٔ دوچرخه","ایستگاه قطار نیس"],"correct":1,"explanation_fa":"آخر ایمیل آمده: «L'équipe de l'Hôtel du Port»، یعنی گروه هتل دو پور، و آن‌ها از رزرو خانم کریمی تشکر می‌کنند."}
+{"type":"tf","prompt":"اتاق خانم کریمی بالکنی رو به دریا دارد.","correct":true,"explanation_fa":"در ایمیل آمده: «avec un balcon sur la mer»، یعنی با یک بالکن رو به دریا."}
+{"type":"tf","prompt":"پذیرش هتل همهٔ شب باز است.","correct":false,"explanation_fa":"در ایمیل آمده: «La réception est ouverte de 7 heures à 23 heures.»، یعنی پذیرش فقط تا ساعت ۲۳ باز است."}
+{"type":"find","prompt":"کدام جمله می‌گوید موقع رسیدن چه مدرکی لازم است؟","correct_sentence":5,"explanation_fa":"در ایمیل آمده: «il faut montrer votre carte d'identité ou votre passeport»، یعنی باید کارت شناسایی یا گذرنامه را نشان داد."}
+reading B:
+{"type":"match","prompt":"هر چیز را به اطلاعات آن وصل کن.","left":["پذیرش","صبحانه","کرایهٔ دوچرخه"],"right":["روزی ۱۲ یورو","از ساعت ۷ تا ۲۳","از ساعت ۷ تا ۱۰","ده دقیقه پیاده"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"در ایمیل آمده: «La réception est ouverte de 7 heures à 23 heures»، صبحانه «de 7 heures à 10 heures» و «la location de vélos : 12 euros par jour»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"De la gare, le {{1}} dure dix minutes à {{2}}.","bank":["trajet","pied","code","balcon","réception"],"answers":["trajet","pied"],"explanation_fa":"در ایمیل آمده: «De la gare, le trajet dure dix minutes à pied.»، یعنی از ایستگاه تا هتل پیاده ده دقیقه راه است."}
+{"type":"mcq","prompt":"اگر خانم کریمی بعد از ساعت ۲۳ برسد، چه کار باید بکند؟","options":["تا صبح در ایستگاه بماند","به هتل دیگری برود","قبلش برای هتل پیام بفرستد","کلید را از همسایه بگیرد"],"correct":2,"explanation_fa":"در ایمیل آمده: «Vous arrivez plus tard ? Envoyez-nous un message»، یعنی دیرتر می‌رسید؟ به ما پیام بدهید."}
+listening A:
+{"type":"num","prompt":"کرایهٔ دوچرخه روزی چند یوروست؟","answer":"12","accepted":["12","douze"],"explanation_fa":"می‌شنویم: «la location de vélos : 12 euros par jour»، یعنی روزی دوازده یورو."}
+{"type":"mcq","prompt":"اتاق خانم کریمی در کدام طبقه است؟","options":["طبقهٔ اول","طبقهٔ دوم","طبقهٔ سوم","همکف"],"correct":2,"explanation_fa":"می‌شنویم: «Votre chambre est au troisième étage»، یعنی اتاق شما در طبقهٔ سوم است."}
+{"type":"tf","prompt":"از ایستگاه تا هتل پیاده ده دقیقه راه است.","correct":true,"explanation_fa":"می‌شنویم: «De la gare, le trajet dure dix minutes à pied.»، یعنی پیاده ده دقیقه."}
+{"type":"tf","prompt":"صبحانه تا ظهر سرو می‌شود.","correct":false,"explanation_fa":"می‌شنویم: «Le petit-déjeuner est servi… de 7 heures à 10 heures.»، یعنی صبحانه فقط تا ساعت ده است."}
+listening B:
+{"type":"mcq","prompt":"هتل برای مهمانی که دیر می‌رسد چه کار می‌کند؟","options":["کلید را پیش همسایه می‌گذارد","یک رمز برای در به او می‌دهد","یک تاکسی به ایستگاه می‌فرستد","یک اتاق دیگر به او می‌دهد"],"correct":1,"explanation_fa":"می‌شنویم: «nous vous donnerons un code pour la porte»، یعنی یک رمز برای در به شما می‌دهیم."}
+{"type":"num","prompt":"خانم کریمی تا چندم ژوئن در هتل است؟","answer":"6","accepted":["6","six"],"explanation_fa":"می‌شنویم: «du 3 au 6 juin»، یعنی از سوم تا ششم ژوئن."}
+{"type":"tf","prompt":"موقع رسیدن باید کارت شناسایی یا گذرنامه نشان داد.","correct":true,"explanation_fa":"می‌شنویم: «il faut montrer votre carte d'identité ou votre passeport»، یعنی باید کارت شناسایی یا گذرنامه نشان داد."}
+{"type":"tf","prompt":"هتل دوچرخه کرایه نمی‌دهد.","correct":false,"explanation_fa":"می‌شنویم: «Nous proposons aussi la location de vélos»، یعنی کرایهٔ دوچرخه هم داریم."}

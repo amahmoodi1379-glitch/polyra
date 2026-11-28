@@ -1,0 +1,33 @@
+code: fr-a2-t114
+title: Les repas chez nous
+band: 2
+kind: email
+sentences:
+- Bonjour Reza, | سلام رضا،
+- Nous sommes très contents de vous recevoir chez nous le mois prochain ! | خیلی خوشحالیم که ماه بعد مهمان ما هستید!
+- Vous avez des questions sur nos repas ? Voici quelques réponses ! | دربارهٔ غذاهای ما سؤال دارید؟ این هم چند جواب!
+- Le matin, nous prenons un petit-déjeuner simple : du pain, du beurre et de la confiture. | صبح‌ها صبحانهٔ ساده‌ای می‌خوریم: نان، کره و مربا.
+- À 16 heures, les enfants prennent leur goûter{goûter-noun} : un fruit ou du pain avec du chocolat. | ساعت ۱۶ بچه‌ها عصرانه‌شان را می‌خورند: یک میوه یا نان با شکلات. | tts: À seize heures, les enfants prennent leur goûter : un fruit ou du pain avec du chocolat.
+- Le soir, mon mari fait souvent la cuisine. Il adore les épices et il met de l'ail partout ! | شب‌ها شوهرم اغلب آشپزی می‌کند. عاشق ادویه است و همه‌جا سیر می‌ریزد!
+- Le dimanche, je prépare une omelette aux champignons ou un poulet avec une sauce à la crème. | یکشنبه‌ها من املت قارچ یا مرغ با سس خامه درست می‌کنم.
+- Si vous ne mangez pas quelque chose, écrivez-moi ! | اگر چیزی را نمی‌خورید، برایم بنویسید!
+- Et vous, vous savez faire un plat iranien ? Les enfants sont très curieux ! | شما هم بلدید یک غذای ایرانی درست کنید؟ بچه‌ها خیلی کنجکاوند!
+- À bientôt, Sophie Martin | به امید دیدار، سوفی مارتن
+reading A:
+{"type":"mcq","prompt":"سوفی چرا این ایمیل را می‌نویسد؟","options":["تا رضا را به یک رستوران دعوت کند","تا یک دستور پخت ایرانی بخواهد","تا بگوید ماه بعد خانه نیستند","تا دربارهٔ غذا در خانه‌شان به رضا بگوید"],"correct":3,"explanation_fa":"سوفی می‌نویسد: «Vous avez des questions sur nos repas ? Voici quelques réponses !» و بعد از صبحانه و عصرانه و شام خانه‌شان می‌گوید."}
+{"type":"tf","prompt":"شوهر سوفی ادویه دوست ندارد.","correct":false,"explanation_fa":"سوفی می‌نویسد: «Il adore les épices»، یعنی شوهرش عاشق ادویه است."}
+{"type":"tf","prompt":"بچه‌ها ساعت ۱۶ عصرانه می‌خورند.","correct":true,"explanation_fa":"سوفی می‌نویسد: «À 16 heures, les enfants prennent leur goûter»، یعنی ساعت ۱۶ بچه‌ها عصرانه می‌خورند."}
+{"type":"find","prompt":"کدام جمله می‌گوید یکشنبه‌ها چه غذایی درست می‌شود؟","correct_sentence":6,"explanation_fa":"سوفی می‌نویسد: «Le dimanche, je prépare une omelette aux champignons ou un poulet avec une sauce à la crème.»"}
+reading B:
+{"type":"match","prompt":"هر وعده را به غذایش وصل کن.","left":["صبحانه","عصرانه","یکشنبه"],"right":["املت قارچ یا مرغ با سس","نان، کره و مربا","میوه یا نان با شکلات","پیتزا در رستوران"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"سوفی می‌نویسد صبحانه «du pain, du beurre et de la confiture» است، عصرانه «un fruit ou du pain avec du chocolat» و یکشنبه‌ها «une omelette aux champignons ou un poulet avec une sauce à la crème»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Il adore les {{1}} et il met de l'{{2}} partout !","bank":["épices","ail","fruits","sel","confiture"],"answers":["épices","ail"],"explanation_fa":"سوفی دربارهٔ شوهرش می‌نویسد: «Il adore les épices et il met de l'ail partout !»، یعنی عاشق ادویه است و همه‌جا سیر می‌ریزد."}
+{"type":"mcq","prompt":"سوفی از رضا چه می‌پرسد؟","options":["آیا صبحانه می‌خورد","آیا با بچه‌ها بازی می‌کند","آیا بلد است یک غذای ایرانی درست کند","آیا با قطار می‌آید"],"correct":2,"explanation_fa":"سوفی می‌پرسد: «vous savez faire un plat iranien ?»، یعنی بلدید یک غذای ایرانی درست کنید؟"}
+listening A:
+{"type":"mcq","prompt":"صبحانه در خانهٔ سوفی چیست؟","options":["نان، کره و مربا","تخم‌مرغ و پنیر","املت و قهوه","میوه و شکلات"],"correct":0,"explanation_fa":"می‌شنویم: «un petit-déjeuner simple : du pain, du beurre et de la confiture»، یعنی نان، کره و مربا."}
+{"type":"num","prompt":"بچه‌ها ساعت چند عصرانه می‌خورند؟","answer":"16","accepted":["16","16h","seize","4"],"explanation_fa":"می‌شنویم: «À 16 heures, les enfants prennent leur goûter»، یعنی ساعت شانزده."}
+{"type":"tf","prompt":"شب‌ها شوهر سوفی اغلب آشپزی می‌کند.","correct":true,"explanation_fa":"می‌شنویم: «Le soir, mon mari fait souvent la cuisine.»، یعنی شب‌ها شوهرم اغلب آشپزی می‌کند."}
+{"type":"tf","prompt":"رضا هفتهٔ بعد به خانهٔ آن‌ها می‌آید.","correct":false,"explanation_fa":"می‌شنویم: «vous recevoir chez nous le mois prochain»، یعنی رضا ماه بعد می‌آید، نه هفتهٔ بعد."}
+listening B:
+{"type":"mcq","prompt":"سوفی یکشنبه‌ها چه درست می‌کند؟","options":["سوپ سبزی یا ماهی","املت قارچ یا مرغ با سس","پیتزا یا پاستا","کیک شکلاتی"],"correct":1,"explanation_fa":"می‌شنویم: «Le dimanche, je prépare une omelette aux champignons ou un poulet avec une sauce à la crème.»"}
+{"type":"tf","prompt":"شوهر سوفی همه‌جا سیر می‌ریزد.","correct":true,"explanation_fa":"می‌شنویم: «il met de l'ail partout !»، یعنی همه‌جا سیر می‌ریزد."}
+{"type":"tf","prompt":"بچه‌ها به غذای ایرانی علاقه‌ای ندارند.","correct":false,"explanation_fa":"می‌شنویم: «Les enfants sont très curieux !»، یعنی بچه‌ها خیلی کنجکاوند."}

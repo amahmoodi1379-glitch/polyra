@@ -1,0 +1,36 @@
+code: fr-a2-t111
+title: On m'a volé mon vélo !
+band: 2
+kind: phone_call
+sentences:
+A: Allô, Thomas ? C'est Julie. On m'a volé{voler-2} mon vélo ! | الو، توما؟ ژولی‌ام. دوچرخه‌ام را دزدیدند!
+B: Quoi ? Où ça ? | چی؟ کجا؟
+A: Devant la banque, près de la gare. | جلوی بانک، نزدیک ایستگاه قطار.
+A: J'ai laissé mon vélo sur le trottoir, contre un panneau, et je suis allée au distributeur. | دوچرخه‌ام را روی پیاده‌رو، کنار یک تابلو گذاشتم و رفتم سراغ عابربانک.
+A: Je suis restée deux minutes, et après, il n'était plus là ! | دو دقیقه آنجا ماندم و بعد دیگر نبود!
+B: Il était fermé à clé ? | قفل بود؟
+A: Non, malheureusement. Pour deux minutes, je pensais que ce n'était pas nécessaire. | نه، متأسفانه. برای دو دقیقه فکر می‌کردم لازم نیست.
+B: Il faut aller au commissariat. Il y en a un dans la rue de la gare. | باید بروی کلانتری. یکی توی خیابان ایستگاه هست.
+A: Oui, mais je dois retourner au travail : notre agence ouvre à 14 heures. | آره، ولی باید برگردم سر کار: آژانس ما ساعت ۱۴ باز می‌شود. | tts: Oui, mais je dois retourner au travail : notre agence ouvre à quatorze heures.
+B: Alors j'y vais avec toi ce soir. Tu as une photo de ton vélo ? | پس امشب با تو می‌آیم. از دوچرخه‌ات عکس داری؟
+A: Oui, sur mon portable. | آره، توی گوشی‌ام.
+B: Parfait. Je passe te chercher à 18 heures. | عالی. ساعت ۱۸ می‌آیم دنبالت. | tts: Parfait. Je passe te chercher à dix-huit heures.
+reading A:
+{"type":"mcq","prompt":"ژولی چرا به توما زنگ می‌زند؟","options":["چون کارت بانکی‌اش را گم کرده است","چون در یک آژانس کار پیدا کرده است","چون دوچرخه‌اش را دزدیده‌اند","چون دیرش شده و همکارهایش منتظرند"],"correct":2,"explanation_fa":"ژولی می‌گوید: «On m'a volé mon vélo !»، یعنی دوچرخه‌ام را دزدیدند."}
+{"type":"tf","prompt":"دوچرخهٔ ژولی قفل بود.","correct":false,"explanation_fa":"توما می‌پرسد: «Il était fermé à clé ?» و ژولی جواب می‌دهد: «Non, malheureusement.»، یعنی نه، متأسفانه."}
+{"type":"tf","prompt":"ژولی از دوچرخه‌اش عکس دارد.","correct":true,"explanation_fa":"توما می‌پرسد: «Tu as une photo de ton vélo ?» و ژولی جواب می‌دهد: «Oui, sur mon portable.»، یعنی آره، توی گوشی‌ام."}
+{"type":"find","prompt":"کدام جمله می‌گوید ژولی دوچرخه را کجا گذاشته بود؟","correct_sentence":3,"explanation_fa":"ژولی می‌گوید: «J'ai laissé mon vélo sur le trottoir, contre un panneau»، یعنی دوچرخه را روی پیاده‌رو، کنار یک تابلو گذاشتم."}
+reading B:
+{"type":"order","prompt":"اتفاق‌ها را به ترتیب درست بچین.","items":["ژولی دوچرخه را کنار یک تابلو گذاشت","ژولی به توما زنگ زد","ژولی دو دقیقه سراغ عابربانک رفت","دوچرخه دیگر آنجا نبود"],"correct_order":[0,2,3,1],"explanation_fa":"ژولی می‌گوید: «J'ai laissé mon vélo sur le trottoir… et je suis allée au distributeur. Je suis restée deux minutes, et après, il n'était plus là !» و بعد به توما زنگ می‌زند."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"J'ai laissé mon vélo sur le {{1}}, contre un {{2}}, et je suis allée au distributeur.","bank":["trottoir","panneau","balcon","toit","quai"],"answers":["trottoir","panneau"],"explanation_fa":"ژولی می‌گوید: «J'ai laissé mon vélo sur le trottoir, contre un panneau»، یعنی دوچرخه را روی پیاده‌رو، کنار یک تابلو گذاشتم."}
+{"type":"mcq","prompt":"توما چه پیشنهادی می‌کند؟","options":["که ژولی یک دوچرخهٔ نو بخرد","که امشب با ژولی به کلانتری برود","که ژولی با اتوبوس سر کار برود","که دوچرخهٔ خودش را به ژولی قرض بدهد"],"correct":1,"explanation_fa":"توما می‌گوید: «Il faut aller au commissariat.» و بعد: «Alors j'y vais avec toi ce soir.»، یعنی امشب با تو به کلانتری می‌آیم."}
+listening A:
+{"type":"mcq","prompt":"دوچرخه را کجا دزدیدند؟","options":["جلوی آژانس ژولی","جلوی کلانتری","توی پارکینگ خانهٔ ژولی","جلوی بانک، نزدیک ایستگاه قطار"],"correct":3,"explanation_fa":"ژولی می‌گوید: «Devant la banque, près de la gare.»، یعنی جلوی بانک، نزدیک ایستگاه قطار."}
+{"type":"num","prompt":"توما ساعت چند دنبال ژولی می‌آید؟","answer":"18","accepted":["18","18h","dix-huit","6"],"explanation_fa":"توما می‌گوید: «Je passe te chercher à 18 heures.»، یعنی ساعت هجده دنبالت می‌آیم."}
+{"type":"tf","prompt":"ژولی دو دقیقه سراغ عابربانک رفت.","correct":true,"explanation_fa":"ژولی می‌گوید: «Je suis restée deux minutes»، یعنی دو دقیقه آنجا ماندم."}
+{"type":"tf","prompt":"ژولی الان وقت دارد به کلانتری برود.","correct":false,"explanation_fa":"ژولی می‌گوید: «je dois retourner au travail»، یعنی باید برگردم سر کار و الان وقت ندارد."}
+listening B:
+{"type":"num","prompt":"آژانس ژولی ساعت چند باز می‌شود؟","answer":"14","accepted":["14","14h","quatorze","2"],"explanation_fa":"ژولی می‌گوید: «notre agence ouvre à 14 heures»، یعنی آژانس ما ساعت چهارده باز می‌شود."}
+{"type":"mcq","prompt":"کلانتری کجاست؟","options":["کنار بانک","در خیابان ایستگاه قطار","روبه‌روی آژانس ژولی","نزدیک خانهٔ توما"],"correct":1,"explanation_fa":"توما می‌گوید: «Il y en a un dans la rue de la gare.»، یعنی یکی توی خیابان ایستگاه هست."}
+{"type":"tf","prompt":"ژولی در یک آژانس کار می‌کند.","correct":true,"explanation_fa":"ژولی می‌گوید: «je dois retourner au travail : notre agence ouvre à 14 heures»، یعنی سر کار برمی‌گردد و آژانس آن‌ها ساعت ۱۴ باز می‌شود."}
+{"type":"tf","prompt":"توما می‌گوید لازم نیست به کلانتری بروند.","correct":false,"explanation_fa":"توما می‌گوید: «Il faut aller au commissariat.»، یعنی باید به کلانتری بروی."}

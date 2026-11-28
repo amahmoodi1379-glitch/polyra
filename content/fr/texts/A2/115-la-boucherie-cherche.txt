@@ -1,0 +1,26 @@
+code: fr-a2-t115
+title: La boucherie Martin cherche…
+band: 1
+kind: ad
+sentences:
+- La boucherie Martin cherche un caissier ou une caissière. | قصابی مارتن دنبال یک صندوق‌دار است، مرد یا زن.
+- Vous êtes poli et patient ? Vous savez bien compter ? | مؤدب و صبور هستید؟ خوب حساب کردن بلدید؟
+- Le travail : du{du-contr} mardi au samedi, de 8 heures à 13 heures. | کار: سه‌شنبه تا شنبه، از ساعت ۸ تا ۱۳. | tts: Le travail : du mardi au samedi, de huit heures à treize heures.
+- Pas besoin d'expérience : notre boucher vous explique tout ! | تجربه لازم نیست: قصاب ما همه‌چیز را برایتان توضیح می‌دهد!
+- Le magasin est en face de la mairie. | مغازه روبه‌روی شهرداری است.
+- Le lundi, nous sommes fermés : venez nous voir mardi matin ! | دوشنبه‌ها بسته‌ایم: سه‌شنبه صبح پیش ما بیایید!
+reading A:
+{"type":"mcq","prompt":"این آگهی برای چیست؟","options":["فروش گوشت ارزان","پیدا کردن یک صندوق‌دار","باز شدن یک قصابی تازه","یک کلاس آشپزی با گوشت"],"correct":1,"explanation_fa":"در آگهی آمده: «La boucherie Martin cherche un caissier ou une caissière.»، یعنی قصابی مارتن دنبال صندوق‌دار است."}
+{"type":"tf","prompt":"برای این کار تجربه لازم است.","correct":false,"explanation_fa":"در آگهی آمده: «Pas besoin d'expérience»، یعنی تجربه لازم نیست."}
+{"type":"tf","prompt":"مغازه روبه‌روی شهرداری است.","correct":true,"explanation_fa":"در آگهی آمده: «Le magasin est en face de la mairie.»، یعنی مغازه روبه‌روی شهرداری است."}
+reading B:
+{"type":"find","prompt":"کدام جمله روزها و ساعت‌های کار را می‌گوید؟","correct_sentence":2,"explanation_fa":"در آگهی آمده: «du mardi au samedi, de 8 heures à 13 heures»، یعنی سه‌شنبه تا شنبه، از ساعت ۸ تا ۱۳."}
+{"type":"match","prompt":"هر چیز را به اطلاعات آن در آگهی وصل کن.","left":["روزهای کار","ساعت‌های کار","روز بسته"],"right":["دوشنبه","سه‌شنبه تا شنبه","از ۸ تا ۱۳","از ۸ تا ۱۸"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"در آگهی آمده: «du mardi au samedi, de 8 heures à 13 heures» و «Le lundi, nous sommes fermés»."}
+listening A:
+{"type":"num","prompt":"کار ساعت چند تمام می‌شود؟","answer":"13","accepted":["13","13h","treize","1"],"explanation_fa":"می‌شنویم: «de 8 heures à 13 heures»، یعنی کار ساعت سیزده تمام می‌شود."}
+{"type":"tf","prompt":"مغازه دوشنبه‌ها بسته است.","correct":true,"explanation_fa":"می‌شنویم: «Le lundi, nous sommes fermés»، یعنی دوشنبه‌ها بسته‌ایم."}
+{"type":"tf","prompt":"کار از دوشنبه شروع می‌شود.","correct":false,"explanation_fa":"می‌شنویم: «du mardi au samedi»، یعنی کار از سه‌شنبه تا شنبه است."}
+listening B:
+{"type":"dict","sentence":4}
+{"type":"mcq","prompt":"چه کسی کار را به صندوق‌دار تازه توضیح می‌دهد؟","options":["یک صندوق‌دار قدیمی","یکی از مشتری‌ها","قصاب مغازه","یک کارمند شهرداری"],"correct":2,"explanation_fa":"می‌شنویم: «notre boucher vous explique tout !»، یعنی قصاب ما همه‌چیز را برایتان توضیح می‌دهد."}
+{"type":"mcq","prompt":"کِی باید به مغازه رفت؟","options":["سه‌شنبه صبح","دوشنبه صبح","شنبه عصر","یکشنبه ظهر"],"correct":0,"explanation_fa":"می‌شنویم: «venez nous voir mardi matin !»، یعنی سه‌شنبه صبح پیش ما بیایید."}

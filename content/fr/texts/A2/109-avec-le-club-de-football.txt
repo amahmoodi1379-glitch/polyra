@@ -1,0 +1,34 @@
+code: fr-a2-t109
+title: Avec le club de football
+band: 2
+kind: phone_call
+sentences:
+A: Allô, Hugo ? C'est ta grand-mère. Alors, ton séjour avec le club de football, ça se passe bien ? | الو، هوگو؟ مادربزرگت هستم. خب، اردویت با باشگاه فوتبال خوب پیش می‌رود؟
+B: Très bien ! Il y a beaucoup d'activités : du football le matin et de la natation l'après-midi. | خیلی خوب! کلی برنامه داریم: صبح‌ها فوتبال و بعدازظهرها شنا.
+A: Et avec cette chaleur, ce n'est pas trop difficile ? | با این گرما خیلی سخت نیست؟
+B: Un peu. Le soir, avec la fatigue, je m'endors tout de suite ! | یک کم. شب‌ها از خستگی فوراً خوابم می‌برد!
+A: Et les autres garçons ? | بقیهٔ پسرها چطورند؟
+B: Ils sont sympas. On n'a pas tous le même niveau, mais tout le monde s'entend bien. | خوب‌اند. همه هم‌سطح نیستیم، ولی همه با هم خوب کنار می‌آییم.
+B: Mon nouvel ami, Ali, a un très bon caractère. Il raconte tout le temps des blagues ! | دوست جدیدم، علی، خیلی خوش‌اخلاق است. همه‌اش جوک تعریف می‌کند!
+A: Une amitié de vacances, c'est un beau souvenir ! | دوستیِ تعطیلات خاطرهٔ قشنگی است!
+B: Grand-mère, je dois y aller : le match commence dans cinq minutes ! | مادربزرگ، باید بروم: مسابقه پنج دقیقهٔ دیگر شروع می‌شود!
+A: D'accord, mon chéri. Mets ta casquette et bois{boire} beaucoup d'eau ! | باشه، عزیزم. کلاهت را سرت بگذار و زیاد آب بخور!
+reading A:
+{"type":"mcq","prompt":"هوگو کجاست؟","options":["در خانهٔ مادربزرگش","در اردوی باشگاه فوتبالش","در یک کلاس شنا در شهر","در سفر با پدر و مادرش"],"correct":1,"explanation_fa":"مادربزرگ می‌پرسد: «ton séjour avec le club de football, ça se passe bien ?»، یعنی هوگو در اردوی باشگاه فوتبال است."}
+{"type":"tf","prompt":"هوگو شب‌ها دیر خوابش می‌برد.","correct":false,"explanation_fa":"هوگو می‌گوید: «Le soir, avec la fatigue, je m'endors tout de suite !»، یعنی شب‌ها از خستگی فوراً خوابش می‌برد."}
+{"type":"tf","prompt":"پسرهای گروه همه یک سطح ندارند.","correct":true,"explanation_fa":"هوگو می‌گوید: «On n'a pas tous le même niveau»، یعنی همه هم‌سطح نیستیم."}
+{"type":"find","prompt":"کدام جمله می‌گوید علی چه اخلاقی دارد؟","correct_sentence":6,"explanation_fa":"هوگو می‌گوید: «Mon nouvel ami, Ali, a un très bon caractère.»، یعنی دوست جدیدم، علی، خیلی خوش‌اخلاق است."}
+reading B:
+{"type":"match","prompt":"هر وقت روز را به کاری که هوگو آن وقت می‌کند وصل کن.","left":["صبح","بعدازظهر","شب"],"right":["شنا","فوتبال","از خستگی خوابیدن","تماشای فیلم"],"pairs":[[0,1],[1,0],[2,2]],"explanation_fa":"هوگو می‌گوید: «du football le matin et de la natation l'après-midi» و «Le soir, avec la fatigue, je m'endors tout de suite»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Mon nouvel ami, Ali, a un très bon {{1}}. Il raconte tout le temps des {{2}} !","bank":["caractère","blagues","niveau","activités","matchs"],"answers":["caractère","blagues"],"explanation_fa":"هوگو می‌گوید: «Ali, a un très bon caractère. Il raconte tout le temps des blagues !»، یعنی علی خیلی خوش‌اخلاق است و همه‌اش جوک تعریف می‌کند."}
+{"type":"mcq","prompt":"مادربزرگ آخر گفتگو به هوگو چه می‌گوید؟","options":["که زودتر بخوابد","که بیشتر شنا کند","که به پدر و مادرش زنگ بزند","که کلاه سرش بگذارد و زیاد آب بخورد"],"correct":3,"explanation_fa":"مادربزرگ می‌گوید: «Mets ta casquette et bois beaucoup d'eau !»، یعنی کلاهت را سرت بگذار و زیاد آب بخور."}
+listening A:
+{"type":"mcq","prompt":"هوا آنجا چطور است؟","options":["خیلی سرد است","خیلی گرم است","بارانی است","پر از باد است"],"correct":1,"explanation_fa":"مادربزرگ می‌گوید: «avec cette chaleur»، یعنی با این گرما؛ پس هوا خیلی گرم است."}
+{"type":"tf","prompt":"هوگو در اردو یک دوست جدید پیدا کرده است.","correct":true,"explanation_fa":"هوگو می‌گوید: «Mon nouvel ami, Ali»، یعنی دوست جدیدم، علی."}
+{"type":"tf","prompt":"مادربزرگ می‌گوید هوگو کمتر آب بخورد.","correct":false,"explanation_fa":"مادربزرگ می‌گوید: «bois beaucoup d'eau !»، یعنی زیاد آب بخور."}
+{"type":"mcq","prompt":"چرا هوگو باید گفتگو را تمام کند؟","options":["چون خیلی خسته است","چون شام آماده است","چون باید شنا کند","چون مسابقه به‌زودی شروع می‌شود"],"correct":3,"explanation_fa":"هوگو می‌گوید: «je dois y aller : le match commence dans cinq minutes»، یعنی باید بروم، مسابقه پنج دقیقهٔ دیگر شروع می‌شود."}
+listening B:
+{"type":"num","prompt":"مسابقه چند دقیقهٔ دیگر شروع می‌شود؟","answer":"5","accepted":["5","cinq"],"explanation_fa":"می‌شنویم: «le match commence dans cinq minutes»، یعنی پنج دقیقهٔ دیگر."}
+{"type":"mcq","prompt":"هوگو دربارهٔ علی چه می‌گوید؟","options":["که همه‌اش فوتبال بازی می‌کند","که همه‌اش جوک تعریف می‌کند","که همه‌اش می‌خوابد","که همه‌اش به خانه زنگ می‌زند"],"correct":1,"explanation_fa":"هوگو می‌گوید: «Il raconte tout le temps des blagues !»، یعنی همه‌اش جوک تعریف می‌کند."}
+{"type":"tf","prompt":"بعدازظهرها در اردو شنا دارند.","correct":true,"explanation_fa":"هوگو می‌گوید: «de la natation l'après-midi»، یعنی بعدازظهرها شنا."}
+{"type":"tf","prompt":"هوگو با پسرهای دیگر کنار نمی‌آید.","correct":false,"explanation_fa":"هوگو می‌گوید: «tout le monde s'entend bien»، یعنی همه با هم خوب کنار می‌آییم."}

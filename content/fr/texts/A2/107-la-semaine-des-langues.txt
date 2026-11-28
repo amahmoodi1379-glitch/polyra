@@ -1,0 +1,33 @@
+code: fr-a2-t107
+title: La semaine des langues
+band: 2
+kind: schedule
+sentences:
+- Au lycée : la semaine des{des-contr} langues, du{du-contr} lundi 9 au vendredi 13 mars | در دبیرستان: هفتهٔ زبان‌ها، از دوشنبه ۹ تا جمعه ۱۳ مارس | tts: Au lycée : la semaine des langues, du lundi neuf au vendredi treize mars
+- Lundi, 12 heures : au restaurant du{du-contr} lycée, repas italien avec pâtes et pizza. | دوشنبه، ساعت ۱۲: در رستوران دبیرستان، ناهار ایتالیایی با پاستا و پیتزا. | tts: Lundi, douze heures : au restaurant du lycée, repas italien avec pâtes et pizza.
+- Mardi, 10 heures : un professeur espagnol parle de sa ville, Madrid, avec des photos. | سه‌شنبه، ساعت ۱۰: یک معلم اسپانیایی با چند عکس دربارهٔ شهرش، مادرید، حرف می‌زند. | tts: Mardi, dix heures : un professeur espagnol parle de sa ville, Madrid, avec des photos.
+- Mercredi, 14 heures : un film japonais à la bibliothèque du{du-contr} lycée. | چهارشنبه، ساعت ۱۴: یک فیلم ژاپنی در کتابخانهٔ دبیرستان. | tts: Mercredi, quatorze heures : un film japonais à la bibliothèque du lycée.
+- Jeudi, 16 heures : cours{cours} de cuisine chinoise. On prépare du riz aux légumes. | پنجشنبه، ساعت ۱۶: کلاس آشپزی چینی. برنج با سبزی درست می‌کنیم. | tts: Jeudi, seize heures : cours de cuisine chinoise. On prépare du riz aux légumes.
+- Vendredi, 18 heures : grande fête dans la cour, avec de la musique arabe et des danses turques. | جمعه، ساعت ۱۸: جشن بزرگ در حیاط، با موسیقی عربی و رقص‌های ترکی. | tts: Vendredi, dix-huit heures : grande fête dans la cour, avec de la musique arabe et des danses turques.
+- Tous les jours, de 13 heures à 14 heures, une étudiante russe donne un petit cours de russe. | هر روز، از ساعت ۱۳ تا ۱۴، یک دانشجوی روس یک کلاس کوتاه روسی می‌گذارد. | tts: Tous les jours, de treize heures à quatorze heures, une étudiante russe donne un petit cours de russe.
+- Les parents sont invités à la fête de vendredi. | پدر و مادرها به جشن جمعه دعوت‌اند.
+- Cette semaine, pas besoin de voyager : le monde vient au lycée ! | این هفته لازم نیست سفر کنید: دنیا به دبیرستان می‌آید!
+reading A:
+{"type":"mcq","prompt":"این برنامه دربارهٔ چیست؟","options":["یک سفر دبیرستان به چند کشور","یک هفته برنامه دربارهٔ زبان‌ها و کشورها","یک کلاس آشپزی برای پدر و مادرها","یک جشن آخر سال در دبیرستان"],"correct":1,"explanation_fa":"عنوان برنامه «la semaine des langues» است، یعنی هفتهٔ زبان‌ها، و هر روز برنامه‌ای از یک کشور دارد: «le monde vient au lycée !»."}
+{"type":"tf","prompt":"فیلم ژاپنی روز چهارشنبه است.","correct":true,"explanation_fa":"در برنامه آمده: «Mercredi, 14 heures : un film japonais»، یعنی چهارشنبه ساعت چهارده یک فیلم ژاپنی هست."}
+{"type":"tf","prompt":"کلاس آشپزی چینی صبح است.","correct":false,"explanation_fa":"در برنامه آمده: «Jeudi, 16 heures : cours de cuisine chinoise.»، یعنی کلاس آشپزی ساعت شانزده است، نه صبح."}
+{"type":"match","prompt":"هر روز را به برنامهٔ آن وصل کن.","left":["دوشنبه","سه‌شنبه","پنجشنبه","جمعه"],"right":["کلاس آشپزی چینی","ناهار ایتالیایی","جشن با موسیقی عربی","حرف‌های یک معلم اسپانیایی","فیلم ژاپنی"],"pairs":[[0,1],[1,3],[2,0],[3,2]],"explanation_fa":"در برنامه آمده: دوشنبه «repas italien»، سه‌شنبه «un professeur espagnol parle de sa ville»، پنجشنبه «cours de cuisine chinoise» و جمعه «grande fête… avec de la musique arabe»."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید کلاس کوتاه روسی کی است؟","correct_sentence":6,"explanation_fa":"در برنامه آمده: «Tous les jours, de 13 heures à 14 heures, une étudiante russe donne un petit cours de russe.»، یعنی هر روز از ساعت ۱۳ تا ۱۴."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Vendredi, 18 heures : grande fête dans la {{1}}, avec de la musique {{2}} et des danses turques.","bank":["cour","arabe","bibliothèque","russe","cuisine"],"answers":["cour","arabe"],"explanation_fa":"در برنامه آمده: «grande fête dans la cour, avec de la musique arabe et des danses turques»، یعنی جشن بزرگ در حیاط با موسیقی عربی."}
+{"type":"mcq","prompt":"چه کسانی به جشن جمعه دعوت شده‌اند؟","options":["فقط معلم‌های زبان","فقط دانشجوهای روس","پدر و مادرهای دانش‌آموزان","آشپزهای رستوران دبیرستان"],"correct":2,"explanation_fa":"در برنامه آمده: «Les parents sont invités à la fête de vendredi.»، یعنی پدر و مادرها به جشن جمعه دعوت‌اند."}
+listening A:
+{"type":"num","prompt":"ناهار ایتالیایی ساعت چند است؟","answer":"12","accepted":["12","12h","douze","midi"],"explanation_fa":"می‌شنویم: «Lundi, 12 heures : au restaurant du lycée, repas italien»، یعنی دوشنبه ساعت دوازده ناهار ایتالیایی است."}
+{"type":"mcq","prompt":"معلم اسپانیایی دربارهٔ چه حرف می‌زند؟","options":["دربارهٔ غذاهای اسپانیا","دربارهٔ شهرش، مادرید","دربارهٔ رقص‌های اسپانیایی","دربارهٔ دبیرستانش در اسپانیا"],"correct":1,"explanation_fa":"می‌شنویم: «un professeur espagnol parle de sa ville, Madrid»، یعنی دربارهٔ شهرش، مادرید، حرف می‌زند."}
+{"type":"tf","prompt":"در جشن جمعه موسیقی عربی هست.","correct":true,"explanation_fa":"می‌شنویم: «grande fête dans la cour, avec de la musique arabe»، یعنی جشن با موسیقی عربی است."}
+{"type":"tf","prompt":"کلاس روسی فقط روز دوشنبه است.","correct":false,"explanation_fa":"می‌شنویم: «Tous les jours… une étudiante russe donne un petit cours de russe»، یعنی کلاس روسی هر روز است."}
+listening B:
+{"type":"mcq","prompt":"پنجشنبه در کلاس آشپزی چه درست می‌کنند؟","options":["پیتزا با پنیر","پاستا با گوجه","برنج با سبزی","کیک شکلاتی"],"correct":2,"explanation_fa":"می‌شنویم: «cours de cuisine chinoise. On prépare du riz aux légumes.»، یعنی برنج با سبزی درست می‌کنند."}
+{"type":"num","prompt":"جشن جمعه ساعت چند است؟","answer":"18","accepted":["18","18h","dix-huit"],"explanation_fa":"می‌شنویم: «Vendredi, 18 heures : grande fête dans la cour»، یعنی جمعه ساعت هجده."}
+{"type":"tf","prompt":"فیلم ژاپنی در کتابخانهٔ دبیرستان نشان داده می‌شود.","correct":true,"explanation_fa":"می‌شنویم: «un film japonais à la bibliothèque du lycée»، یعنی فیلم ژاپنی در کتابخانهٔ دبیرستان است."}
+{"type":"tf","prompt":"کلاس روسی را یکی از معلم‌های دبیرستان می‌دهد.","correct":false,"explanation_fa":"می‌شنویم: «une étudiante russe donne un petit cours de russe»، یعنی یک دانشجوی روس کلاس را می‌دهد، نه معلم دبیرستان."}

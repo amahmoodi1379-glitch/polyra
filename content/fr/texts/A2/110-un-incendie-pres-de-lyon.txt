@@ -1,0 +1,26 @@
+code: fr-a2-t110
+title: Un incendie près de Lyon
+band: 1
+kind: announcement
+sentences:
+- Mesdames et messieurs, votre attention, s'il vous plaît. | خانم‌ها و آقایان، لطفاً توجه کنید.
+- À cause d'un incendie dans une forêt près de la ligne, notre train s'arrête à Lyon pendant une demi-heure. | به خاطر آتش‌سوزی در جنگلی نزدیک خط، قطار ما نیم ساعت در لیون می‌ایستد.
+- Les pompiers sont déjà là. | آتش‌نشان‌ها همین حالا آنجا هستند.
+- Personne n'est en danger. | هیچ‌کس در خطر نیست.
+- Notre équipe passe dans le train avec de l'eau fraîche. | همکاران ما با آب خنک در قطار پیش شما می‌آیند.
+- Nous partons à 15 heures 30. | ساعت ۱۵:۳۰ راه می‌افتیم. | tts: Nous partons à quinze heures trente.
+- Nous sommes désolés pour ce retard. | بابت این تأخیر متأسفیم.
+reading A:
+{"type":"mcq","prompt":"چرا قطار می‌ایستد؟","options":["چون برف روی خط است","چون یک مسافر حالش بد است","به خاطر آتش‌سوزی در جنگلی نزدیک خط","چون راننده دیر کرده است"],"correct":2,"explanation_fa":"در اعلام آمده: «À cause d'un incendie dans une forêt près de la ligne»، یعنی به خاطر آتش‌سوزی در جنگلی نزدیک خط."}
+{"type":"tf","prompt":"یکی از مسافرها در خطر است.","correct":false,"explanation_fa":"در اعلام آمده: «Personne n'est en danger.»، یعنی هیچ‌کس در خطر نیست."}
+{"type":"tf","prompt":"آتش‌نشان‌ها همین حالا آنجا هستند.","correct":true,"explanation_fa":"در اعلام آمده: «Les pompiers sont déjà là.»، یعنی آتش‌نشان‌ها همین حالا آنجا هستند."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید قطار چقدر می‌ایستد؟","correct_sentence":1,"explanation_fa":"در اعلام آمده: «notre train s'arrête à Lyon pendant une demi-heure»، یعنی قطار نیم ساعت در لیون می‌ایستد."}
+{"type":"mcq","prompt":"کارکنان قطار به مسافرها چه می‌دهند؟","options":["ساندویچ","آب خنک","قهوهٔ داغ","بلیت تازه"],"correct":1,"explanation_fa":"در اعلام آمده: «Notre équipe passe dans le train avec de l'eau fraîche.»، یعنی همکاران ما با آب خنک در قطار پیش شما می‌آیند."}
+listening A:
+{"type":"num","prompt":"قطار ساعت چند راه می‌افتد؟","answer":"15:30","accepted":["15:30","15h30","15 h 30","15.30"],"explanation_fa":"می‌شنویم: «Nous partons à 15 heures 30.»، یعنی ساعت پانزده و سی دقیقه راه می‌افتیم."}
+{"type":"tf","prompt":"قطار نیم ساعت می‌ایستد.","correct":true,"explanation_fa":"می‌شنویم: «pendant une demi-heure»، یعنی نیم ساعت."}
+{"type":"tf","prompt":"قطار در پاریس می‌ایستد.","correct":false,"explanation_fa":"می‌شنویم: «notre train s'arrête à Lyon»، یعنی قطار در لیون می‌ایستد، نه پاریس."}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"mcq","prompt":"آتش‌سوزی کجاست؟","options":["در ایستگاه لیون","در خود قطار","در یک خانه نزدیک ایستگاه","در جنگلی نزدیک خط"],"correct":3,"explanation_fa":"می‌شنویم: «un incendie dans une forêt près de la ligne»، یعنی آتش‌سوزی در جنگلی نزدیک خط است."}

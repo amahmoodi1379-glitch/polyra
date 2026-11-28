@@ -1,0 +1,35 @@
+code: fr-a2-t106
+title: Ta famille canadienne
+band: 2
+kind: phone_call
+sentences:
+A: Bonsoir, mon chéri ! Alors, ta première journée au Canada ? | سلام عزیزم! خب، اولین روزت در کانادا چطور بود؟
+B: Super, maman ! Mais ici, il est seulement trois heures de l'après-midi ! | عالی بود، مامان! ولی اینجا تازه ساعت سه بعدازظهر است!
+A: Ah oui, c'est vrai. Et ta famille canadienne{canadien}, elle est comment ? | آه، راست می‌گویی. خانوادهٔ کانادایی‌ات چطورند؟
+B: Très sympa ! Le père, Paul, est grand et un peu chauve. Il est très drôle. | خیلی خوب‌اند! پدرشان، پل، قدبلند و کمی کچل است. خیلی بامزه است.
+B: Sa femme, Sophie, a les cheveux frisés. Elle est médecin et très travailleuse. | همسرش، سوفی، موهای فرفری دارد. پزشک است و خیلی سخت‌کوش.
+B: Ils ont aussi un fils de mon âge, Louis. Il est très bavard ! | یک پسر هم‌سن من هم دارند، لویی. خیلی پرحرف است!
+A: Et tu manges bien ? Tu es déjà tellement maigre ! | خوب غذا می‌خوری؟ تو همین حالا هم خیلی لاغری!
+B: Ne t'inquiète pas ! Ici, tout le monde est gourmand : il y a toujours des gâteaux. | نگران نباش! اینجا همه شکمو هستند: همیشه کیک هست.
+B: Demain, je vais faire du ski avec Louis. | فردا با لویی می‌روم اسکی.
+A: Alors il faut mettre ton bonnet et tes gants ! | پس باید کلاه و دستکش‌هایت را بپوشی!
+B: Oui, maman... Bonne nuit ! | باشه، مامان... شب بخیر!
+reading A:
+{"type":"mcq","prompt":"این گفتگو دربارهٔ چیست؟","options":["سفر کاری مادر به کانادا","یک مسابقهٔ اسکی در کانادا","اولین روز پسر پیش یک خانوادهٔ کانادایی","همسایه‌های جدید مادر در فرانسه"],"correct":2,"explanation_fa":"مادر می‌پرسد: «ta première journée au Canada ?» و بعد: «Et ta famille canadienne, elle est comment ?»؛ پس گفتگو دربارهٔ اولین روز پسر پیش خانوادهٔ کانادایی است."}
+{"type":"tf","prompt":"لویی خیلی کم‌حرف است.","correct":false,"explanation_fa":"پسر دربارهٔ لویی می‌گوید: «Il est très bavard !»، یعنی خیلی پرحرف است، نه کم‌حرف."}
+{"type":"tf","prompt":"لویی هم‌سن پسر است.","correct":true,"explanation_fa":"پسر می‌گوید: «Ils ont aussi un fils de mon âge, Louis.»، یعنی یک پسر هم‌سن من دارند."}
+{"type":"find","prompt":"کدام جمله می‌گوید سوفی چه کاره است؟","correct_sentence":4,"explanation_fa":"پسر دربارهٔ سوفی می‌گوید: «Elle est médecin et très travailleuse.»، یعنی پزشک است و خیلی سخت‌کوش."}
+reading B:
+{"type":"match","prompt":"هر آدم را به چیزی که پسر دربارهٔ او می‌گوید وصل کن.","left":["پل","سوفی","لویی"],"right":["خیلی پرحرف است","کمی کچل است","خیلی لاغر است","موهای فرفری دارد"],"pairs":[[0,1],[1,3],[2,0]],"explanation_fa":"پسر می‌گوید پل «un peu chauve» است، سوفی «a les cheveux frisés» و لویی «très bavard» است."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Ici, tout le monde est {{1}} : il y a toujours des {{2}}.","bank":["gourmand","gâteaux","maigre","chauve","gants"],"answers":["gourmand","gâteaux"],"explanation_fa":"پسر می‌گوید: «Ici, tout le monde est gourmand : il y a toujours des gâteaux.»، یعنی اینجا همه شکمو هستند و همیشه کیک هست."}
+{"type":"mcq","prompt":"مادر آخر گفتگو به پسرش چه می‌گوید؟","options":["که کمتر کیک بخورد","که زودتر به خانه برگردد","که کلاه و دستکش بپوشد","که فردا به او زنگ بزند"],"correct":2,"explanation_fa":"مادر می‌گوید: «il faut mettre ton bonnet et tes gants !»، یعنی باید کلاه و دستکش‌هایت را بپوشی."}
+listening A:
+{"type":"num","prompt":"در کانادا ساعت چند بعدازظهر است؟","answer":"3","accepted":["3","15","trois","15h"],"explanation_fa":"پسر می‌گوید: «ici, il est seulement trois heures de l'après-midi»، یعنی اینجا تازه ساعت سه بعدازظهر است."}
+{"type":"tf","prompt":"پسر فردا با لویی اسکی می‌رود.","correct":true,"explanation_fa":"پسر می‌گوید: «Demain, je vais faire du ski avec Louis.»، یعنی فردا با لویی اسکی می‌روم."}
+{"type":"tf","prompt":"سوفی معلم است.","correct":false,"explanation_fa":"پسر دربارهٔ سوفی می‌گوید: «Elle est médecin»، یعنی پزشک است، نه معلم."}
+{"type":"mcq","prompt":"مادر نگران چیست؟","options":["که پسرش خوب غذا نخورد","که پسرش دوستی پیدا نکند","که پسرش زیاد بیرون برود","که پسرش زیاد حرف بزند"],"correct":0,"explanation_fa":"مادر می‌پرسد: «Et tu manges bien ? Tu es déjà tellement maigre !»، یعنی خوب غذا می‌خوری؟ تو همین حالا هم خیلی لاغری."}
+listening B:
+{"type":"mcq","prompt":"پسر دربارهٔ لویی چه می‌گوید؟","options":["که خیلی خجالتی است","که خیلی پرحرف است","که خیلی ورزشکار است","که خیلی سخت‌کوش است"],"correct":1,"explanation_fa":"پسر دربارهٔ لویی می‌گوید: «Il est très bavard !»، یعنی خیلی پرحرف است."}
+{"type":"tf","prompt":"پسر می‌گوید پل خیلی بامزه است.","correct":true,"explanation_fa":"پسر دربارهٔ پل می‌گوید: «Il est très drôle.»، یعنی خیلی بامزه است."}
+{"type":"tf","prompt":"پسر می‌گوید در این خانه کسی شیرینی دوست ندارد.","correct":false,"explanation_fa":"پسر می‌گوید: «tout le monde est gourmand : il y a toujours des gâteaux»، یعنی همه شکمو هستند و همیشه کیک هست."}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["پسر از غذا و کیک‌ها حرف می‌زند","مادر دربارهٔ خانوادهٔ کانادایی می‌پرسد","مادر می‌گوید کلاه و دستکش بپوشد","پسر می‌گوید فردا اسکی می‌رود"],"correct_order":[1,0,3,2],"explanation_fa":"اول مادر می‌پرسد: «Et ta famille canadienne, elle est comment ?»، بعد پسر از «des gâteaux» حرف می‌زند، بعد می‌گوید: «Demain, je vais faire du ski» و آخر مادر می‌گوید: «il faut mettre ton bonnet et tes gants»."}

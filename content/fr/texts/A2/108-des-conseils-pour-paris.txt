@@ -1,0 +1,34 @@
+code: fr-a2-t108
+title: Des conseils pour Paris
+band: 2
+kind: email
+sentences:
+- Salut Sara ! | سلام سارا!
+- Tu arrives à Paris samedi : voici quelques conseils pour ton séjour. | شنبه به پاریس می‌رسی: این هم چند توصیه برای سفرت.
+- De l'aéroport, le meilleur moyen pour aller au centre, c'est le train : c'est rapide et pas cher. | از فرودگاه، بهترین راه برای رفتن به مرکز شهر قطار است: سریع است و گران نیست.
+- Ensuite, prends la ligne 4 du{du-contr} métro : j'habite à deux minutes de la station. | بعد خط ۴ مترو را بگیر: خانهٔ من دو دقیقه با ایستگاه فاصله دارد. | tts: Ensuite, prends la ligne quatre du métro : j'habite à deux minutes de la station.
+- Dans le métro, laisse ta place{place-2} aux personnes âgées : c'est important. | توی مترو جایت را به آدم‌های مسن بده: این کار مهم است.
+- Attention à ton sac : le métro est souvent plein. | مراقب کیفت باش: مترو اغلب پر است.
+- Au restaurant, le service est déjà dans l'addition, alors le pourboire n'est pas nécessaire. | در رستوران هزینهٔ سرویس از قبل در صورت‌حساب هست، پس انعام لازم نیست.
+- Mais si le serveur est très gentil, tu peux laisser un ou deux euros. | ولی اگر پیشخدمت خیلی مهربان بود، می‌توانی یکی دو یورو بگذاری.
+- Et le matin, va à la boulangerie du{du-contr} coin : l'odeur du{du-contr} pain chaud, c'est le meilleur souvenir de Paris ! | صبح‌ها هم برو نانوایی سر کوچه: بوی نان داغ بهترین خاطرهٔ پاریس است!
+- Bises, Camille | می‌بوسمت، کامی
+reading A:
+{"type":"mcq","prompt":"کامی چرا این ایمیل را می‌نویسد؟","options":["تا سارا را به یک رستوران دعوت کند","تا برای سفر سارا به پاریس توصیه بدهد","تا از سفر خودش به پاریس تعریف کند","تا بگوید برای سارا بلیت قطار خریده است"],"correct":1,"explanation_fa":"کامی می‌نویسد: «voici quelques conseils pour ton séjour»، یعنی این هم چند توصیه برای سفرت."}
+{"type":"tf","prompt":"به نظر کامی، بهترین راه از فرودگاه تا مرکز شهر تاکسی است.","correct":false,"explanation_fa":"کامی می‌نویسد: «le meilleur moyen pour aller au centre, c'est le train»، یعنی بهترین راه قطار است، نه تاکسی."}
+{"type":"tf","prompt":"خانهٔ کامی نزدیک ایستگاه متروست.","correct":true,"explanation_fa":"کامی می‌نویسد: «j'habite à deux minutes de la station»، یعنی خانه‌اش دو دقیقه با ایستگاه فاصله دارد."}
+{"type":"find","prompt":"کدام جمله می‌گوید در مترو برای آدم‌های مسن چه کار باید کرد؟","correct_sentence":4,"explanation_fa":"کامی می‌نویسد: «laisse ta place aux personnes âgées»، یعنی جایت را به آدم‌های مسن بده."}
+reading B:
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Ensuite, prends la {{1}} 4 du métro : j'habite à deux minutes de la {{2}}.","bank":["ligne","station","place","boulangerie","porte"],"answers":["ligne","station"],"explanation_fa":"کامی می‌نویسد: «prends la ligne 4 du métro : j'habite à deux minutes de la station»، یعنی خط ۴ مترو را بگیر؛ خانه‌ام دو دقیقه با ایستگاه فاصله دارد."}
+{"type":"mcq","prompt":"کامی دربارهٔ انعام در رستوران چه می‌گوید؟","options":["که همیشه باید ده یورو انعام داد","که انعام فقط برای شام لازم است","که انعام لازم نیست، چون سرویس در صورت‌حساب است","که در پاریس هیچ‌کس انعام نمی‌دهد"],"correct":2,"explanation_fa":"کامی می‌نویسد: «le service est déjà dans l'addition, alors le pourboire n'est pas nécessaire»، یعنی سرویس در صورت‌حساب هست و انعام لازم نیست."}
+{"type":"match","prompt":"هر چیز را به توصیهٔ کامی دربارهٔ آن وصل کن.","left":["قطار","مترو","نانوایی"],"right":["برای رفتن از فرودگاه به مرکز شهر","بوی نان داغ صبح","مراقب کیف بودن","یکی دو یورو انعام"],"pairs":[[0,0],[1,2],[2,1]],"explanation_fa":"کامی می‌نویسد قطار «le meilleur moyen pour aller au centre» است، در مترو «Attention à ton sac» و در نانوایی «l'odeur du pain chaud»."}
+listening A:
+{"type":"mcq","prompt":"کامی چه وسیله‌ای را برای رفتن از فرودگاه به مرکز شهر پیشنهاد می‌کند؟","options":["تاکسی","اتوبوس","قطار","دوچرخه"],"correct":2,"explanation_fa":"می‌شنویم: «le meilleur moyen pour aller au centre, c'est le train»، یعنی بهترین راه قطار است."}
+{"type":"num","prompt":"سارا باید کدام خط مترو را بگیرد؟","answer":"4","accepted":["4","quatre"],"explanation_fa":"می‌شنویم: «prends la ligne 4 du métro»، یعنی خط چهار مترو را بگیر."}
+{"type":"tf","prompt":"کامی می‌گوید مترو اغلب پر است.","correct":true,"explanation_fa":"می‌شنویم: «le métro est souvent plein»، یعنی مترو اغلب پر است."}
+{"type":"tf","prompt":"سارا جمعه به پاریس می‌رسد.","correct":false,"explanation_fa":"می‌شنویم: «Tu arrives à Paris samedi»، یعنی سارا شنبه می‌رسد، نه جمعه."}
+listening B:
+{"type":"mcq","prompt":"اگر پیشخدمت خیلی مهربان باشد، سارا چه کار می‌تواند بکند؟","options":["یکی دو یورو بگذارد","یک قهوهٔ دیگر سفارش بدهد","صورت‌حساب را دوباره ببیند","از او یک توصیه بخواهد"],"correct":0,"explanation_fa":"می‌شنویم: «si le serveur est très gentil, tu peux laisser un ou deux euros»، یعنی اگر پیشخدمت خیلی مهربان بود، می‌توانی یکی دو یورو بگذاری."}
+{"type":"tf","prompt":"کامی می‌گوید صبح‌ها به نانوایی برود.","correct":true,"explanation_fa":"می‌شنویم: «Et le matin, va à la boulangerie du coin»، یعنی صبح‌ها برو نانوایی سر کوچه."}
+{"type":"tf","prompt":"به نظر کامی، قطار فرودگاه خیلی گران است.","correct":false,"explanation_fa":"می‌شنویم: «c'est rapide et pas cher»، یعنی قطار سریع است و گران نیست."}
+{"type":"order","prompt":"توصیه‌های کامی را به ترتیبی که می‌شنوی بچین.","items":["توصیه دربارهٔ انعام در رستوران","توصیه دربارهٔ قطار فرودگاه","توصیه دربارهٔ نانوایی","توصیه دربارهٔ خط ۴ مترو"],"correct_order":[1,3,0,2],"explanation_fa":"اول کامی از «le train» می‌گوید، بعد از «la ligne 4 du métro»، بعد از «le pourboire» در رستوران و آخر از «la boulangerie du coin»."}

@@ -1,0 +1,25 @@
+code: fr-a2-t120
+title: À votre santé !
+band: 1
+kind: dialogue
+sentences:
+A: Nicolas ? Notre dernier café ensemble, c'était il y a longtemps ! | نیکولا؟ آخرین قهوه‌ای که با هم خوردیم، خیلی وقت پیش بود!
+B: Julie ! Dix ans, je crois ! | ژولی! فکر کنم ده سال!
+A: Il y a du monde, mais il reste une place{place-2} à notre table. Viens ! | شلوغ است، ولی سر میز ما یک جا مانده. بیا!
+B: Je voulais rentrer, mais j'ai changé d'avis ! | می‌خواستم برگردم خانه، ولی نظرم عوض شد!
+A: Voici mon mari, Paul. Nous habitons tous les deux à Lyon. | این شوهرم، پل است. ما هر دو در لیون زندگی می‌کنیم.
+B: Enchanté ! Alors, à votre santé ! | خوشوقتم! خب، به سلامتی‌تان!
+reading A:
+{"type":"mcq","prompt":"ژولی و نیکولا آخرین بار کی با هم قهوه خوردند؟","options":["هفتهٔ پیش","خیلی وقت پیش","دیروز","ماه پیش"],"correct":1,"explanation_fa":"ژولی می‌گوید: «Notre dernier café ensemble, c'était il y a longtemps !»، یعنی آخرین قهوه‌ای که با هم خوردیم خیلی وقت پیش بود."}
+{"type":"tf","prompt":"آنجا خلوت است.","correct":false,"explanation_fa":"ژولی می‌گوید: «Il y a du monde»، یعنی شلوغ است."}
+{"type":"tf","prompt":"ژولی و شوهرش هر دو در لیون زندگی می‌کنند.","correct":true,"explanation_fa":"ژولی می‌گوید: «Nous habitons tous les deux à Lyon.»، یعنی ما هر دو در لیون زندگی می‌کنیم."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید نیکولا نظرش را عوض کرد؟","correct_sentence":3,"explanation_fa":"نیکولا می‌گوید: «Je voulais rentrer, mais j'ai changé d'avis !»، یعنی می‌خواستم برگردم خانه، ولی نظرم عوض شد."}
+{"type":"mcq","prompt":"ژولی به نیکولا چه پیشنهادی می‌دهد؟","options":["که فردا به لیون بیاید","که با هم به خانه بروند","که یک قهوهٔ دیگر بخرد","که سر میز آن‌ها بنشیند"],"correct":3,"explanation_fa":"ژولی می‌گوید: «il reste une place à notre table. Viens !»، یعنی سر میز ما یک جا مانده، بیا."}
+listening A:
+{"type":"num","prompt":"به نظر نیکولا، چند سال است که همدیگر را ندیده‌اند؟","answer":"10","accepted":["10","dix"],"explanation_fa":"نیکولا می‌گوید: «Dix ans, je crois !»، یعنی فکر کنم ده سال."}
+{"type":"tf","prompt":"ژولی شوهرش را به نیکولا معرفی می‌کند.","correct":true,"explanation_fa":"ژولی می‌گوید: «Voici mon mari, Paul.»، یعنی این شوهرم، پل است."}
+{"type":"tf","prompt":"نیکولا از اول می‌خواست آنجا بماند.","correct":false,"explanation_fa":"نیکولا می‌گوید: «Je voulais rentrer»، یعنی می‌خواستم برگردم خانه؛ بعد نظرش عوض شد."}
+listening B:
+{"type":"dict","sentence":5}
+{"type":"mcq","prompt":"نیکولا آخر گفتگو چه می‌گوید؟","options":["شب بخیر","به سلامتی","خداحافظ","ببخشید"],"correct":1,"explanation_fa":"نیکولا می‌گوید: «à votre santé !»، یعنی به سلامتی‌تان."}

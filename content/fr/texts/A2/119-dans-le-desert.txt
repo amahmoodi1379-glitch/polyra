@@ -1,0 +1,34 @@
+code: fr-a2-t119
+title: Dans le désert
+band: 2
+kind: email
+sentences:
+- Salut Léa ! | سلام لئا!
+- Je suis en vacances au Maroc avec Paul, pour dix jours. | با پل ده روز برای تعطیلات به مراکش آمده‌ام.
+- Avant-hier, nous sommes partis dans le désert avec un guide. | پریروز با یک راهنما به صحرا رفتیم.
+- Nous avons fait une promenade à dos de chameau : c'était magnifique, mais pas très confortable ! | سوار شتر گردش کردیم: فوق‌العاده بود، ولی خیلی راحت نبود!
+- La nuit, nous avons dormi sous une tente, et le ciel était plein d'étoiles. | شب زیر چادر خوابیدیم و آسمان پر از ستاره بود.
+- Avant de partir, le guide nous a demandé de garder nos déchets dans un sac : le désert doit rester propre. | قبل از راه افتادن، راهنما از ما خواست زباله‌هایمان را توی یک کیسه نگه داریم: صحرا باید تمیز بماند.
+- Nous avons eu de la chance : il n'y avait pas de vent. | شانس آوردیم: باد نمی‌آمد.
+- Demain, nous allons au bord de la mer. La météo dit qu'il va faire 30 degrés ! | فردا می‌رویم کنار دریا. هواشناسی می‌گوید هوا ۳۰ درجه می‌شود! | tts: Demain, nous allons au bord de la mer. La météo dit qu'il va faire trente degrés !
+- Je t'envoie des photos ce soir. | امشب برایت عکس می‌فرستم.
+- Bises, Camille | می‌بوسمت، کامی
+reading A:
+{"type":"mcq","prompt":"کامی کجاست؟","options":["در سفر کاری در مراکش","در خانهٔ لئا","در تعطیلات در مراکش","در یک کلاس عکاسی"],"correct":2,"explanation_fa":"کامی می‌نویسد: «Je suis en vacances au Maroc avec Paul»، یعنی با پل در تعطیلات در مراکش هستم."}
+{"type":"tf","prompt":"گردش با شتر خیلی راحت بود.","correct":false,"explanation_fa":"کامی می‌نویسد: «c'était magnifique, mais pas très confortable !»، یعنی فوق‌العاده بود، ولی خیلی راحت نبود."}
+{"type":"tf","prompt":"شب در صحرا آسمان پر از ستاره بود.","correct":true,"explanation_fa":"کامی می‌نویسد: «le ciel était plein d'étoiles»، یعنی آسمان پر از ستاره بود."}
+{"type":"find","prompt":"کدام جمله می‌گوید راهنما از آن‌ها چه خواست؟","correct_sentence":5,"explanation_fa":"کامی می‌نویسد: «le guide nous a demandé de garder nos déchets dans un sac»، یعنی راهنما از ما خواست زباله‌هایمان را توی یک کیسه نگه داریم."}
+reading B:
+{"type":"order","prompt":"کارهای کامی و پل را به ترتیب درست بچین.","items":["رفتن به صحرا با راهنما","خوابیدن زیر چادر","گردش با شتر","رفتن به کنار دریا"],"correct_order":[0,2,1,3],"explanation_fa":"کامی می‌نویسد: «nous sommes partis dans le désert avec un guide»، بعد «une promenade à dos de chameau»، بعد «La nuit, nous avons dormi sous une tente» و «Demain, nous allons au bord de la mer»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Avant de partir, le guide nous a demandé de garder nos {{1}} dans un sac : le {{2}} doit rester propre.","bank":["déchets","désert","chameaux","photos","ciel"],"answers":["déchets","désert"],"explanation_fa":"کامی می‌نویسد: «garder nos déchets dans un sac : le désert doit rester propre»، یعنی زباله‌هایمان را توی کیسه نگه داریم، صحرا باید تمیز بماند."}
+{"type":"mcq","prompt":"کامی چرا می‌گوید شانس آوردند؟","options":["چون راهنما پولی نگرفت","چون شتر تند نمی‌رفت","چون باران آمد","چون باد نمی‌آمد"],"correct":3,"explanation_fa":"کامی می‌نویسد: «Nous avons eu de la chance : il n'y avait pas de vent.»، یعنی شانس آوردیم، باد نمی‌آمد."}
+listening A:
+{"type":"num","prompt":"کامی چند روز در مراکش است؟","answer":"10","accepted":["10","dix"],"explanation_fa":"می‌شنویم: «au Maroc avec Paul, pour dix jours»، یعنی برای ده روز."}
+{"type":"mcq","prompt":"کامی با چه کسی سفر می‌کند؟","options":["با لئا","با پل","با پدر و مادرش","با یک گروه دانشجو"],"correct":1,"explanation_fa":"می‌شنویم: «Je suis en vacances au Maroc avec Paul»، یعنی با پل."}
+{"type":"tf","prompt":"آن‌ها شب را در یک هتل گذراندند.","correct":false,"explanation_fa":"می‌شنویم: «La nuit, nous avons dormi sous une tente»، یعنی شب زیر چادر خوابیدند، نه در هتل."}
+{"type":"tf","prompt":"فردا به کنار دریا می‌روند.","correct":true,"explanation_fa":"می‌شنویم: «Demain, nous allons au bord de la mer.»، یعنی فردا می‌رویم کنار دریا."}
+listening B:
+{"type":"num","prompt":"هواشناسی می‌گوید هوا چند درجه می‌شود؟","answer":"30","accepted":["30","trente"],"explanation_fa":"می‌شنویم: «La météo dit qu'il va faire 30 degrés !»، یعنی سی درجه."}
+{"type":"mcq","prompt":"کامی کی برای لئا عکس می‌فرستد؟","options":["فردا صبح","آخر سفر","امشب","وقتی به فرانسه برگردد"],"correct":2,"explanation_fa":"می‌شنویم: «Je t'envoie des photos ce soir.»، یعنی امشب برایت عکس می‌فرستم."}
+{"type":"tf","prompt":"راهنما گفت زباله‌ها را در صحرا بگذارند.","correct":false,"explanation_fa":"می‌شنویم: «garder nos déchets dans un sac : le désert doit rester propre»، یعنی باید زباله‌ها را توی کیسه نگه دارند."}
+{"type":"tf","prompt":"کامی و پل پریروز به صحرا رفتند.","correct":true,"explanation_fa":"می‌شنویم: «Avant-hier, nous sommes partis dans le désert»، یعنی پریروز به صحرا رفتیم."}

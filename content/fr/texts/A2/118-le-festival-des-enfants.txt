@@ -1,0 +1,32 @@
+code: fr-a2-t118
+title: Le festival des enfants
+band: 2
+kind: schedule
+sentences:
+- Festival des{des-contr} enfants au parc du{du-contr} lac, dimanche 8 juin, de 10 heures à 18 heures. Entrée{entrée-2} gratuite ! | جشنوارهٔ بچه‌ها در پارک کنار دریاچه، یکشنبه ۸ ژوئن، از ساعت ۱۰ تا ۱۸. ورود رایگان! | tts: Festival des enfants au parc du lac, dimanche huit juin, de dix heures à dix-huit heures. Entrée gratuite !
+- 10 heures : jouets en bois. Chaque enfant construit son petit bateau. | ساعت ۱۰: اسباب‌بازی‌های چوبی. هر بچه قایق کوچک خودش را می‌سازد. | tts: Dix heures : jouets en bois. Chaque enfant construit son petit bateau.
+- 11 heures 30 : venez écouter et essayer les instruments de l'école de musique. | ساعت ۱۱:۳۰: بیایید سازهای مدرسهٔ موسیقی را بشنوید و امتحان کنید. | tts: Onze heures trente : venez écouter et essayer les instruments de l'école de musique.
+- 13 heures : pique-nique sous les arbres. Apportez votre repas ! | ساعت ۱۳: پیک‌نیک زیر درخت‌ها. غذایتان را بیاورید! | tts: Treize heures : pique-nique sous les arbres. Apportez votre repas !
+- 14 heures 30 : spectacle « La poupée qui ne voulait pas dormir », pour les enfants de 3 à 6 ans. | ساعت ۱۴:۳۰: نمایش «عروسکی که نمی‌خواست بخوابد»، برای بچه‌های ۳ تا ۶ ساله. | tts: Quatorze heures trente : spectacle « La poupée qui ne voulait pas dormir », pour les enfants de trois à six ans.
+- 15 heures 30 : promenade à vélo autour du lac. N'oubliez pas votre casque ! | ساعت ۱۵:۳۰: گردش با دوچرخه دور دریاچه. کلاه ایمنی‌تان را فراموش نکنید! | tts: Quinze heures trente : promenade à vélo autour du lac. N'oubliez pas votre casque !
+- 17 heures : les enfants font un bouquet de fleurs pour leurs parents. | ساعت ۱۷: بچه‌ها برای پدر و مادرشان دسته‌گل درست می‌کنند. | tts: Dix-sept heures : les enfants font un bouquet de fleurs pour leurs parents.
+- S'il pleut, on mange dans la grande salle de la mairie. | اگر باران بیاید، در سالن بزرگ شهرداری غذا می‌خوریم.
+reading A:
+{"type":"mcq","prompt":"این برنامه برای کیست؟","options":["فقط برای معلم‌های موسیقی","برای بچه‌ها و خانواده‌هایشان","برای دوچرخه‌سوارهای حرفه‌ای","برای فروشنده‌های اسباب‌بازی"],"correct":1,"explanation_fa":"برنامه «Festival des enfants» است، یعنی جشنوارهٔ بچه‌ها، و آخرش بچه‌ها برای «leurs parents» دسته‌گل درست می‌کنند."}
+{"type":"tf","prompt":"ورود به جشنواره پولی است.","correct":false,"explanation_fa":"در برنامه آمده: «Entrée gratuite !»، یعنی ورود رایگان است."}
+{"type":"tf","prompt":"نمایش عروسک برای بچه‌های ۳ تا ۶ ساله است.","correct":true,"explanation_fa":"در برنامه آمده: «pour les enfants de 3 à 6 ans»، یعنی برای بچه‌های سه تا شش ساله."}
+{"type":"find","prompt":"کدام جمله می‌گوید اگر باران بیاید، کجا غذا می‌خورند؟","correct_sentence":7,"explanation_fa":"در برنامه آمده: «S'il pleut, on mange dans la grande salle de la mairie.»، یعنی اگر باران بیاید، در سالن بزرگ شهرداری غذا می‌خوریم."}
+reading B:
+{"type":"match","prompt":"هر ساعت را به برنامهٔ آن وصل کن.","left":["ساعت ۱۰","ساعت ۱۱:۳۰","ساعت ۱۵:۳۰","ساعت ۱۷"],"right":["گردش با دوچرخه دور دریاچه","ساختن قایق چوبی","درست کردن دسته‌گل","امتحان کردن سازها","تماشای یک فیلم"],"pairs":[[0,1],[1,3],[2,0],[3,2]],"explanation_fa":"در برنامه آمده: ساعت ۱۰ «Chaque enfant construit son petit bateau»، ساعت ۱۱:۳۰ «essayer les instruments»، ساعت ۱۵:۳۰ «promenade à vélo autour du lac» و ساعت ۱۷ «un bouquet de fleurs»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"N'oubliez pas votre {{1}} ! 17 heures : les enfants font un {{2}} de fleurs pour leurs parents.","bank":["casque","bouquet","jouet","piano","bateau"],"answers":["casque","bouquet"],"explanation_fa":"در برنامه آمده: «N'oubliez pas votre casque !» و «les enfants font un bouquet de fleurs pour leurs parents»."}
+{"type":"mcq","prompt":"برای پیک‌نیک چه کار باید کرد؟","options":["از رستوران پارک غذا خرید","ساعت ۱۲ ثبت‌نام کرد","غذای خود را آورد","به شهرداری زنگ زد"],"correct":2,"explanation_fa":"در برنامه آمده: «pique-nique sous les arbres. Apportez votre repas !»، یعنی غذایتان را بیاورید."}
+listening A:
+{"type":"mcq","prompt":"جشنواره کجاست؟","options":["در مدرسهٔ موسیقی","در شهرداری","در موزهٔ شهر","در پارک کنار دریاچه"],"correct":3,"explanation_fa":"می‌شنویم: «Festival des enfants au parc du lac»، یعنی در پارک کنار دریاچه."}
+{"type":"num","prompt":"جشنواره ساعت چند تمام می‌شود؟","answer":"18","accepted":["18","18h","dix-huit","6"],"explanation_fa":"می‌شنویم: «de 10 heures à 18 heures»، یعنی جشنواره ساعت هجده تمام می‌شود."}
+{"type":"tf","prompt":"بچه‌ها برای پدر و مادرشان دسته‌گل درست می‌کنند.","correct":true,"explanation_fa":"می‌شنویم: «les enfants font un bouquet de fleurs pour leurs parents»، یعنی بچه‌ها برای پدر و مادرشان دسته‌گل درست می‌کنند."}
+{"type":"tf","prompt":"گردش با دوچرخه صبح است.","correct":false,"explanation_fa":"می‌شنویم: «15 heures 30 : promenade à vélo»، یعنی گردش با دوچرخه ساعت پانزده و سی دقیقه است، نه صبح."}
+listening B:
+{"type":"mcq","prompt":"اسم نمایش چیست؟","options":["عروسکی که نمی‌خواست غذا بخورد","بچه‌ای که عروسکش را گم کرد","عروسکی که نمی‌خواست بخوابد","عروسکی که می‌خواست برقصد"],"correct":2,"explanation_fa":"می‌شنویم: «spectacle « La poupée qui ne voulait pas dormir »»، یعنی نمایش «عروسکی که نمی‌خواست بخوابد»."}
+{"type":"num","prompt":"پیک‌نیک ساعت چند است؟","answer":"13","accepted":["13","13h","treize","1"],"explanation_fa":"می‌شنویم: «13 heures : pique-nique sous les arbres»، یعنی ساعت سیزده."}
+{"type":"tf","prompt":"ساعت ۱۱:۳۰ بچه‌ها می‌توانند سازها را امتحان کنند.","correct":true,"explanation_fa":"می‌شنویم: «11 heures 30 : venez écouter et essayer les instruments»، یعنی بیایید سازها را بشنوید و امتحان کنید."}
+{"type":"tf","prompt":"اگر باران بیاید، جشنواره تعطیل می‌شود.","correct":false,"explanation_fa":"می‌شنویم: «S'il pleut, on mange dans la grande salle de la mairie.»؛ جشنواره تعطیل نمی‌شود و غذا را در سالن شهرداری می‌خورند."}
