@@ -6,10 +6,10 @@ key_words: Nebel, bewölkt, windig, Gewitter, Temperatur
 sentences:
 A: Hallo Lena, hier ist Tim. Ich habe gerade das Wetter für Samstag gehört. | سلام لنا، تیم هستم. همین الان پیش‌بینی هوای شنبه را شنیدم.
 B: Und? Wie wird es? | خب؟ هوا چطور می‌شود؟
-A: Am Morgen gibt es Nebel, und danach wird es bewölkt und sehr windig. | صبح مه است و بعدش هوا ابری و خیلی بادی می‌شود.
+A: Am Morgen gibt es Nebel, und danach wird es bewölkt und sehr windig. | صبح هوا مه‌آلود است و بعدش ابری و خیلی بادی می‌شود.
 A: Am Nachmittag kommt vielleicht sogar ein Gewitter mit Sturm. | بعدازظهر شاید حتی رعد و برق و توفان هم بیاید.
 B: Oh nein! Wir wollen am Samstag im Park grillen! | ای وای! ما می‌خواهیم شنبه در پارک کباب درست کنیم!
-A: Und bei Gewitter ist das zu gefährlich. | و وقتی رعد و برق است، این کار خیلی خطرناک است.
+A: Ja, bei Gewitter ist das zu gefährlich. | آره، موقع رعد و برق این کار خیلی خطرناک است.
 B: Und wie ist das Wetter am Sonntag? | هوای یکشنبه چطور است؟
 A: Am Sonntag wird es sonnig, und die Temperatur ist ungefähr 24 Grad. | یکشنبه هوا آفتابی می‌شود و دما حدود ۲۴ درجه است. | tts: Am Sonntag wird es sonnig, und die Temperatur ist ungefähr vierundzwanzig Grad.
 B: Dann grillen wir am Sonntag. Ich sage den anderen Bescheid. | پس یکشنبه کباب درست می‌کنیم. به بقیه خبر می‌دهم.
@@ -24,7 +24,7 @@ reading A:
 {"type":"mcq","prompt":"اگر یکشنبه هم باران بیاید، کجا کباب درست می‌کنند؟","options":["در پارک","در خانه لنا","در بالکن خانه تیم","در حیاط مدرسه"],"correct":2,"explanation_fa":"تیم می‌گوید: «Dann grillen wir bei mir auf dem Balkon.»"}
 reading B:
 {"type":"match","prompt":"هر زمان را به هوایش وصل کن.","left":["شنبه صبح","شنبه بعدازظهر","یکشنبه"],"right":["آفتابی، حدود ۲۴ درجه","مه","شاید رعد و برق و توفان","برف"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"در متن آمده: «Am Morgen gibt es Nebel»، «Am Nachmittag kommt vielleicht sogar ein Gewitter mit Sturm» و «Am Sonntag wird es sonnig»."}
-{"type":"find","prompt":"کدام جمله می‌گوید چرا شنبه کباب کردن در پارک خوب نیست؟","correct_sentence":5,"explanation_fa":"تیم می‌گوید: «Und bei Gewitter ist das zu gefährlich.»، یعنی موقع رعد و برق این کار خطرناک است."}
+{"type":"find","prompt":"کدام جمله می‌گوید چرا شنبه کباب کردن در پارک خوب نیست؟","correct_sentence":5,"explanation_fa":"تیم می‌گوید: «Ja, bei Gewitter ist das zu gefährlich.»، یعنی موقع رعد و برق این کار خطرناک است."}
 {"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Am Sonntag wird es {{1}}, und die {{2}} ist ungefähr 24 Grad.","bank":["sonnig","Temperatur","bewölkt","Wetter","Nebel"],"answers":["sonnig","Temperatur"],"explanation_fa":"تیم می‌گوید: «Am Sonntag wird es sonnig, und die Temperatur ist ungefähr 24 Grad.»"}
 listening A:
 {"type":"num","prompt":"یکشنبه دما حدود چند درجه است؟","answer":"24","accepted":["24","24 Grad","vierundzwanzig"],"explanation_fa":"مرد می‌گوید: «die Temperatur ist ungefähr 24 Grad»."}
@@ -32,7 +32,7 @@ listening A:
 {"type":"tf","prompt":"زن به بقیه دوستان خبر می‌دهد.","correct":true,"explanation_fa":"زن می‌گوید: «Ich sage den anderen Bescheid.»"}
 {"type":"tf","prompt":"مرد می‌گوید شنبه بعدازظهر هوا آفتابی می‌شود.","correct":false,"explanation_fa":"مرد می‌گوید: «Am Nachmittag kommt vielleicht sogar ein Gewitter mit Sturm.»؛ هوای آفتابی برای یکشنبه است."}
 listening B:
-{"type":"mcq","prompt":"آخر سر کی کباب درست می‌کنند؟","options":["شنبه صبح","شنبه بعدازظهر","شنبه شب","یکشنبه"],"correct":3,"explanation_fa":"زن می‌گوید: «Dann grillen wir am Sonntag.»"}
+{"type":"mcq","prompt":"آخر سر چه زمانی کباب درست می‌کنند؟","options":["شنبه صبح","شنبه بعدازظهر","شنبه شب","یکشنبه"],"correct":3,"explanation_fa":"زن می‌گوید: «Dann grillen wir am Sonntag.»"}
 {"type":"tf","prompt":"بالکن خانه مرد سقف دارد.","correct":true,"explanation_fa":"مرد درباره بالکنش می‌گوید: «Er hat ein Dach.»"}
-{"type":"tf","prompt":"مرد می‌گوید کباب کردن موقع رعد و برق مشکلی ندارد.","correct":false,"explanation_fa":"مرد می‌گوید: «Und bei Gewitter ist das zu gefährlich.»، یعنی موقع رعد و برق خطرناک است."}
+{"type":"tf","prompt":"مرد می‌گوید کباب کردن موقع رعد و برق مشکلی ندارد.","correct":false,"explanation_fa":"مرد می‌گوید: «Ja, bei Gewitter ist das zu gefährlich.»، یعنی موقع رعد و برق خطرناک است."}
 {"type":"order","prompt":"این‌ها را به ترتیبی که در گفتگو می‌آید بچین.","items":["مرد می‌گوید سالاد و نان می‌آورد.","مرد هوای شنبه را تعریف می‌کند.","زن می‌پرسد اگر یکشنبه هم باران بیاید چه می‌شود.","زن درباره هوای یکشنبه می‌پرسد."],"correct_order":[1,3,0,2],"explanation_fa":"اول مرد از «Nebel» و «Gewitter» شنبه می‌گوید، بعد زن می‌پرسد «Und wie ist das Wetter am Sonntag?»، بعد مرد می‌گوید «Ich bringe Salat und Brot mit.» و آخر زن می‌پرسد «Und wenn es am Sonntag auch regnet?»"}

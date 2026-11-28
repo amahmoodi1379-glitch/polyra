@@ -11,8 +11,8 @@ sentences:
 - Bitte laden Sie vorher unsere App herunter. Sie finden sie auf unserer Internetseite. | لطفاً از قبل اپلیکیشن ما را دانلود کنید. آن را در سایت ما پیدا می‌کنید.
 - Das Passwort für den Kurs schicke ich Ihnen morgen. | رمز عبور کلاس را فردا برایتان می‌فرستم.
 - Am Montag um 18 Uhr öffnen Sie die App und klicken auf unseren Kurs. | دوشنبه ساعت ۱۸ اپلیکیشن را باز می‌کنید و روی کلاس ما کلیک می‌کنید. | tts: Am Montag um achtzehn Uhr öffnen Sie die App und klicken auf unseren Kurs.
-- Ihr{Ihr-det} WLAN zu Hause muss gut funktionieren. Bitte denken Sie auch an den Akku! | وای‌فای خانه‌تان باید خوب کار کند. لطفاً به باتری هم فکر کنید!
-- Die Hausaufgaben finden Sie als Datei in der App. Bitte speichern Sie sie auf Ihrem{Ihr-det} Laptop. | تکلیف‌ها را به شکل فایل در اپلیکیشن پیدا می‌کنید. لطفاً آن‌ها را روی لپ‌تاپتان ذخیره کنید.
+- Ihr{Ihr-det} WLAN zu Hause muss gut funktionieren. Bitte denken Sie auch an den Akku! | وای‌فای خانه‌تان باید خوب کار کند. لطفاً حواستان به باتری هم باشد!
+- Die Hausaufgaben finden Sie als Datei in der App. Bitte speichern Sie sie auf Ihrem{Ihr-det} Laptop oder Handy. | تکلیف‌ها را به شکل فایل در اپلیکیشن پیدا می‌کنید. لطفاً آن‌ها را روی لپ‌تاپ یا موبایلتان ذخیره کنید.
 - Bei Fragen{Frage} rufen Sie mich an. | اگر سؤالی داشتید، به من زنگ بزنید.
 - Ihre{Ihr-det} Lehrerin Laura Schmidt | معلمتان، لاورا اشمیت
 reading A:
@@ -21,7 +21,7 @@ reading A:
 {"type":"tf","prompt":"برای کلاس حتماً لپ‌تاپ لازم است.","correct":false,"explanation_fa":"معلم می‌نویسد: «einen Laptop oder ein Handy» و «ein Handy geht auch»."}
 {"type":"mcq","prompt":"تکلیف‌ها را کجا می‌شود پیدا کرد؟","options":["در سایت مدرسه","در ایمیل فردا","در کتاب کلاس","در اپلیکیشن، به شکل فایل"],"correct":3,"explanation_fa":"معلم می‌نویسد: «Die Hausaufgaben finden Sie als Datei in der App.»"}
 reading B:
-{"type":"match","prompt":"هر چیز را به کاری که باید با آن کرد وصل کن.","left":["اپلیکیشن","تکلیف‌ها","وای‌فای خانه"],"right":["باید خوب کار کند","باید آن را از قبل دانلود کرد","باید آن‌ها را روی لپ‌تاپ ذخیره کرد","باید آن را چاپ کرد"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"معلم می‌نویسد: «laden Sie vorher unsere App herunter»، «Bitte speichern Sie sie auf Ihrem Laptop» و «Ihr WLAN zu Hause muss gut funktionieren»."}
+{"type":"match","prompt":"هر چیز را به کاری که باید با آن کرد وصل کن.","left":["اپلیکیشن","تکلیف‌ها","وای‌فای خانه"],"right":["باید خوب کار کند","باید آن را از قبل دانلود کرد","باید آن‌ها را روی لپ‌تاپ یا موبایل ذخیره کرد","باید آن را چاپ کرد"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"معلم می‌نویسد: «laden Sie vorher unsere App herunter»، «Bitte speichern Sie sie auf Ihrem Laptop oder Handy» و «Ihr WLAN zu Hause muss gut funktionieren»."}
 {"type":"find","prompt":"کدام جمله می‌گوید کلاس دوشنبه ساعت چند شروع می‌شود؟","correct_sentence":6,"explanation_fa":"معلم می‌نویسد: «Am Montag um 18 Uhr öffnen Sie die App und klicken auf unseren Kurs.»"}
 {"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Das {{1}} für den Kurs schicke ich Ihnen morgen. … Ihr {{2}} zu Hause muss gut funktionieren.","bank":["Passwort","WLAN","Kamera","Datei","App"],"answers":["Passwort","WLAN"],"explanation_fa":"معلم می‌نویسد: «Das Passwort für den Kurs schicke ich Ihnen morgen.» و «Ihr WLAN zu Hause muss gut funktionieren.»"}
 listening A:
@@ -31,6 +31,6 @@ listening A:
 {"type":"tf","prompt":"شرکت‌کننده‌ها اپلیکیشن را سر کلاس دانلود می‌کنند.","correct":false,"explanation_fa":"معلم می‌گوید: «Bitte laden Sie vorher unsere App herunter.»، یعنی باید از قبل دانلود کنند."}
 listening B:
 {"type":"num","prompt":"کلاس چند هفته آنلاین است؟","answer":"2","accepted":["2","zwei","2 Wochen"],"explanation_fa":"معلم می‌گوید: «ab nächster Woche ist unser Kurs zwei Wochen lang online»."}
-{"type":"mcq","prompt":"معلم می‌گوید به چه چیزی هم فکر کنند؟","options":["به کتاب","به دفتر","به باتری","به هدفون"],"correct":2,"explanation_fa":"معلم می‌گوید: «Bitte denken Sie auch an den Akku!»"}
+{"type":"mcq","prompt":"معلم می‌گوید حواسشان به چه چیزی هم باشد؟","options":["به کتاب","به دفتر","به باتری","به هدفون"],"correct":2,"explanation_fa":"معلم می‌گوید: «Bitte denken Sie auch an den Akku!»، یعنی حواسشان به باتری هم باشد."}
 {"type":"tf","prompt":"اگر سؤالی بود، باید به معلم زنگ زد.","correct":true,"explanation_fa":"معلم می‌گوید: «Bei Fragen rufen Sie mich an.»"}
-{"type":"tf","prompt":"تکلیف‌ها را باید روی موبایل ذخیره کرد.","correct":false,"explanation_fa":"معلم می‌گوید: «Bitte speichern Sie sie auf Ihrem Laptop.»"}
+{"type":"tf","prompt":"معلم تکلیف‌ها را با ایمیل می‌فرستد.","correct":false,"explanation_fa":"معلم می‌گوید: «Die Hausaufgaben finden Sie als Datei in der App.»، یعنی تکلیف‌ها در اپلیکیشن است."}

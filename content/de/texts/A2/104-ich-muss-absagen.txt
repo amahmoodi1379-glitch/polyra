@@ -4,7 +4,7 @@ band: 2
 kind: phone_call
 key_words: besetzt, Einladung, absagen, Video, zurückrufen
 sentences:
-A: Hallo Sophie, endlich! Ich habe heute oft angerufen, aber es war immer besetzt. | سلام سوفی، بالاخره! امروز چند بار زنگ زدم، ولی همیشه اشغال بود.
+A: Hallo Sophie, hier ist Peter. Endlich! Ich habe heute oft angerufen, aber es war immer besetzt. | سلام سوفی، پیتر هستم. بالاخره! امروز چند بار زنگ زدم، ولی همیشه اشغال بود.
 B: Entschuldige, ich habe mit meiner Mutter telefoniert. | ببخشید، داشتم با مادرم تلفنی حرف می‌زدم.
 A: Ich wollte dir sagen, dass ich am Samstag leider nicht kommen kann. | می‌خواستم بگویم که متأسفانه شنبه نمی‌توانم بیایم.
 B: Oh nein! Was ist passiert? | ای وای! چه شده؟
@@ -18,13 +18,13 @@ A: Das habe ich schon versucht, aber dort war auch besetzt! | امتحان کر�
 B: Dann schreib ihnen eine Nachricht. Sie rufen dich bestimmt zurück. | پس برایشان پیام بنویس. حتماً به تو زنگ می‌زنند.
 A: Okay. Tschüss, Sophie, und viel Spaß am Samstag! | باشد. خداحافظ سوفی، شنبه خوش بگذرد!
 reading A:
-{"type":"mcq","prompt":"فلیکس چرا زنگ می‌زند؟","options":["چون می‌خواهد سوفی را دعوت کند","چون شنبه نمی‌تواند به مهمانی بیاید","چون دخترش تولد دارد","چون وقت آرایشگاه گرفته است"],"correct":1,"explanation_fa":"فلیکس می‌گوید: «Ich wollte dir sagen, dass ich am Samstag leider nicht kommen kann.»"}
-{"type":"tf","prompt":"تلفن سوفی امروز اشغال بود.","correct":true,"explanation_fa":"فلیکس می‌گوید: «Ich habe heute oft angerufen, aber es war immer besetzt.»"}
-{"type":"tf","prompt":"سوفی مریض است.","correct":false,"explanation_fa":"فلیکس می‌گوید: «Meine Tochter ist krank.»؛ دختر فلیکس مریض است، نه سوفی."}
-{"type":"mcq","prompt":"سوفی آخر سر به فلیکس چه پیشنهادی می‌دهد؟","options":["فردا به آرایشگاه برود","وقت آرایشگاه را نگه دارد","برای آرایشگاه پیام بنویسد","با دخترش به آرایشگاه برود"],"correct":2,"explanation_fa":"سوفی می‌گوید: «Dann schreib ihnen eine Nachricht.»"}
+{"type":"mcq","prompt":"پیتر چرا زنگ می‌زند؟","options":["چون می‌خواهد سوفی را دعوت کند","چون شنبه نمی‌تواند به مهمانی بیاید","چون دخترش تولد دارد","چون دنبال یک آرایشگاه خوب است"],"correct":1,"explanation_fa":"پیتر می‌گوید: «Ich wollte dir sagen, dass ich am Samstag leider nicht kommen kann.»"}
+{"type":"tf","prompt":"تلفن سوفی امروز اشغال بود.","correct":true,"explanation_fa":"پیتر می‌گوید: «Ich habe heute oft angerufen, aber es war immer besetzt.»"}
+{"type":"tf","prompt":"سوفی مریض است.","correct":false,"explanation_fa":"پیتر می‌گوید: «Meine Tochter ist krank.»؛ دختر پیتر مریض است، نه سوفی."}
+{"type":"mcq","prompt":"سوفی آخر سر به پیتر چه پیشنهادی می‌دهد؟","options":["فردا به آرایشگاه برود","وقت آرایشگاه را نگه دارد","برای آرایشگاه پیام بنویسد","با دخترش به آرایشگاه برود"],"correct":2,"explanation_fa":"سوفی می‌گوید: «Dann schreib ihnen eine Nachricht.»"}
 reading B:
 {"type":"find","prompt":"کدام جمله می‌گوید چرا تلفن سوفی اشغال بود؟","correct_sentence":1,"explanation_fa":"سوفی می‌گوید: «Entschuldige, ich habe mit meiner Mutter telefoniert.»"}
-{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["فلیکس می‌گوید دخترش مریض است.","سوفی می‌گوید یک ویدیو می‌فرستد.","فلیکس می‌گوید تلفن همیشه اشغال بود.","فلیکس می‌گوید آرایشگاه هم اشغال بود."],"correct_order":[2,0,1,3],"explanation_fa":"اول «es war immer besetzt»، بعد «Meine Tochter ist krank»، بعد «Ich schicke dir am Samstag ein Video» و آخر «aber dort war auch besetzt»."}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["پیتر می‌گوید دخترش مریض است.","سوفی می‌گوید یک ویدیو می‌فرستد.","پیتر می‌گوید تلفن همیشه اشغال بود.","پیتر می‌گوید آرایشگاه هم اشغال بود."],"correct_order":[2,0,1,3],"explanation_fa":"اول «es war immer besetzt»، بعد «Meine Tochter ist krank»، بعد «Ich schicke dir am Samstag ein Video» و آخر «aber dort war auch besetzt»."}
 {"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Und vielen Dank für die {{1}}. … Ich schicke dir am Samstag ein {{2}} von der Party.","bank":["Einladung","Video","Friseur","Termin","Fieber"],"answers":["Einladung","Video"],"explanation_fa":"در متن آمده: «Und vielen Dank für die Einladung.» و «Ich schicke dir am Samstag ein Video von der Party.»"}
 listening A:
 {"type":"mcq","prompt":"دختر مرد چه مشکلی دارد؟","options":["سرش درد می‌کند","تب دارد","پایش درد می‌کند","دندانش درد می‌کند"],"correct":1,"explanation_fa":"مرد می‌گوید: «Meine Tochter ist krank. Sie hat Fieber.»"}

@@ -17,14 +17,14 @@ B: Und du? Gehst du heute Abend wieder ins Fitnessstudio? | تو چه؟ امشب
 A: Nein, heute bin ich zu müde. Aber du solltest mehr Sport treiben! | نه، امروز خیلی خسته‌ام. ولی تو باید بیشتر ورزش کنی!
 B: Ja, du hast Recht. Ich komme jetzt nach Hause. Bis gleich! | آره، حق با توست. الان می‌آیم خانه. تا چند دقیقه دیگر!
 reading A:
-{"type":"mcq","prompt":"تیم میا با چه نتیجه‌ای بازی را برد؟","options":["سه بر دو","چهار بر سه","دو بر یک","چهار بر دو"],"correct":1,"explanation_fa":"مردی که زنگ می‌زند می‌گوید: «Ja, vier zu drei!»"}
+{"type":"mcq","prompt":"تیم میا با چه نتیجه‌ای بازی را برد؟","options":["سه بر دو","چهار بر سه","دو بر یک","چهار بر دو"],"correct":1,"explanation_fa":"کسی که زنگ می‌زند می‌گوید: «Ja, vier zu drei!»"}
 {"type":"tf","prompt":"میا دو گل زد.","correct":true,"explanation_fa":"در متن آمده: «Und Mia hat zwei Tore gemacht.»"}
 {"type":"tf","prompt":"لیزا امروز بازی میا را دید.","correct":false,"explanation_fa":"لیزا می‌گوید: «Es tut mir so leid, dass ich heute nicht da war.»"}
 {"type":"mcq","prompt":"میا کدام روزها سر تمرین می‌رود؟","options":["دوشنبه و پنجشنبه","سه‌شنبه و جمعه","دوشنبه و چهارشنبه","شنبه و یکشنبه"],"correct":0,"explanation_fa":"لیزا می‌گوید: «Jeden Montag und Donnerstag geht sie zum Training.»"}
 reading B:
 {"type":"find","prompt":"کدام جمله می‌گوید میا امروز بهترین بازیکن بود؟","correct_sentence":3,"explanation_fa":"در متن آمده: «Alle sagen, dass Mia heute die beste Spielerin war.»"}
 {"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Sie {{1}} auch sehr viel. Jeden Montag und Donnerstag geht sie zum {{2}}.","bank":["trainiert","Training","Mannschaft","Tore","stark"],"answers":["trainiert","Training"],"explanation_fa":"لیزا می‌گوید: «Sie trainiert auch sehr viel. Jeden Montag und Donnerstag geht sie zum Training.»"}
-{"type":"match","prompt":"هر آدم را به چیزی که درباره‌اش در متن آمده وصل کن.","left":["میا","مردی که زنگ می‌زند","لیزا"],"right":["باید بیشتر ورزش کند","دو گل زد","در تیم برمن بازی می‌کند","امروز خیلی خسته است"],"pairs":[[0,1],[1,3],[2,0]],"explanation_fa":"در متن آمده: «Mia hat zwei Tore gemacht»، مرد می‌گوید «heute bin ich zu müde» و به لیزا می‌گوید «du solltest mehr Sport treiben»."}
+{"type":"match","prompt":"هر آدم را به چیزی که درباره‌اش در متن آمده وصل کن.","left":["میا","کسی که زنگ می‌زند","لیزا"],"right":["باید بیشتر ورزش کند","دو گل زد","در تیم برمن بازی می‌کند","امروز خیلی خسته است"],"pairs":[[0,1],[1,3],[2,0]],"explanation_fa":"در متن آمده: «Mia hat zwei Tore gemacht»، کسی که زنگ می‌زند می‌گوید «heute bin ich zu müde» و به لیزا می‌گوید «du solltest mehr Sport treiben»."}
 listening A:
 {"type":"mcq","prompt":"بازی بعدی کی است؟","options":["جمعه","شنبه","یکشنبه","دوشنبه"],"correct":1,"explanation_fa":"مرد می‌گوید: «Das nächste Spiel ist am Samstag.»"}
 {"type":"num","prompt":"میا چند گل زد؟","answer":"2","accepted":["2","zwei"],"explanation_fa":"مرد می‌گوید: «Mia hat zwei Tore gemacht.»"}

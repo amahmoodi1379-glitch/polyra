@@ -4,7 +4,7 @@ band: 2
 kind: schedule
 key_words: Meter, Zentimeter, Hälfte, Kilometer, Ding
 sentences:
-- Sport im Park: das Programm der Grundschule am Freitag | ورزش در پارک: برنامهٔ دبستان برای جمعه
+- Sport im Park mit der Grundschule: das Programm am Freitag | ورزش در پارک با دبستان: برنامهٔ روز جمعه
 - 8:30 Uhr: Alle Klassen treffen sich am Eingang vom Park. | ساعت ۸:۳۰: همهٔ کلاس‌ها دم در پارک جمع می‌شوند. | tts: Acht Uhr dreißig: Alle Klassen treffen sich am Eingang vom Park.
 - 9 Uhr: Die Klassen 1 und 2 laufen 50 Meter, die Klassen 3 und 4 laufen 100 Meter. | ساعت ۹: کلاس‌های اول و دوم ۵۰ متر می‌دوند، کلاس‌های سوم و چهارم ۱۰۰ متر. | tts: Neun Uhr: Die Klassen eins und zwei laufen fünfzig Meter, die Klassen drei und vier laufen hundert Meter.
 - 10 Uhr: Wer springt am weitesten? Letztes Jahr ist ein Mädchen aus der zweiten Klasse zwei Meter und 80 Zentimeter gesprungen! | ساعت ۱۰: چه کسی از همه دورتر می‌پرد؟ پارسال یک دختر از کلاس دوم دو متر و ۸۰ سانتی‌متر پرید! | tts: Zehn Uhr: Wer springt am weitesten? Letztes Jahr ist ein Mädchen aus der zweiten Klasse zwei Meter und achtzig Zentimeter gesprungen!
@@ -13,7 +13,7 @@ sentences:
 - Bitte geben Sie Ihrem Kind diese Dinge mit: bequeme Schuhe, eine Mütze und eine Flasche Wasser. | لطفاً این چیزها را به بچه‌تان بدهید که با خودش بیاورد: کفش راحت، کلاه و یک بطری آب.
 - Und schreiben Sie bitte den Namen von Ihrem Kind auf alle Sachen! | و لطفاً اسم بچه‌تان را روی همهٔ وسایلش بنویسید!
 reading A:
-{"type":"mcq","prompt":"کلاس‌های سوم و چهارم چند متر می‌دوند؟","options":["۵۰ متر","۸۰ متر","۱۰۰ متر","۲۰۰ متر"],"correct":2,"explanation_fa":"در برنامه آمده: «die Klassen 3 und 4 laufen 100 Meter»."}
+{"type":"mcq","prompt":"ساعت ۹ کلاس‌های سوم و چهارم چند متر می‌دوند؟","options":["۵۰ متر","۸۰ متر","۱۰۰ متر","۲۰۰ متر"],"correct":2,"explanation_fa":"در برنامه آمده: «die Klassen 3 und 4 laufen 100 Meter»."}
 {"type":"tf","prompt":"همهٔ کلاس‌ها ساعت ۸:۳۰ دم در پارک جمع می‌شوند.","correct":true,"explanation_fa":"در برنامه آمده: «8:30 Uhr: Alle Klassen treffen sich am Eingang vom Park.»"}
 {"type":"tf","prompt":"معلم‌ها در دویدن دور دریاچه شرکت نمی‌کنند.","correct":false,"explanation_fa":"در برنامه آمده: «Alle laufen zusammen zwei Kilometer um den See, auch die Lehrer!»"}
 {"type":"mcq","prompt":"نصف پول کیک‌ها برای چیست؟","options":["برای سفر کلاس سوم","برای کتابخانهٔ مدرسه","برای معلم‌های ورزش","برای پارک شهر"],"correct":0,"explanation_fa":"در برنامه آمده: «Die dritte Klasse verkauft Kuchen. Die Hälfte vom Geld ist für ihre Reise nach Hamburg.»"}
@@ -27,7 +27,7 @@ listening A:
 {"type":"tf","prompt":"کلاس‌های اول و دوم ۱۰۰ متر می‌دوند.","correct":false,"explanation_fa":"در برنامه آمده: «Die Klassen 1 und 2 laufen 50 Meter»، یعنی ۵۰ متر."}
 {"type":"mcq","prompt":"پدر و مادرها باید چه چیزهایی به بچه‌ها بدهند؟","options":["کیک، پول و آب","کفش راحت، کیف و کتاب","کفش راحت، کلاه و آب","کلاه، دستکش و آب"],"correct":2,"explanation_fa":"در برنامه آمده: «bequeme Schuhe, eine Mütze und eine Flasche Wasser»."}
 listening B:
-{"type":"num","prompt":"کلاس‌های اول و دوم چند متر می‌دوند؟","answer":"50","accepted":["50","50 Meter","fünfzig"],"explanation_fa":"در برنامه آمده: «Die Klassen 1 und 2 laufen 50 Meter.»"}
+{"type":"num","prompt":"ساعت ۹ کلاس‌های اول و دوم چند متر می‌دوند؟","answer":"50","accepted":["50","50 Meter","fünfzig"],"explanation_fa":"در برنامه آمده: «Die Klassen 1 und 2 laufen 50 Meter.»"}
 {"type":"mcq","prompt":"پارسال چه کسی دو متر و ۸۰ سانتی‌متر پرید؟","options":["پسری از کلاس سوم","دختری از کلاس دوم","دختری از کلاس چهارم","یکی از معلم‌ها"],"correct":1,"explanation_fa":"در برنامه آمده: «Letztes Jahr ist ein Mädchen aus der zweiten Klasse zwei Meter und 80 Zentimeter gesprungen!»"}
-{"type":"tf","prompt":"این برنامهٔ ورزشی روز جمعه است.","correct":true,"explanation_fa":"در برنامه آمده: «das Programm der Grundschule am Freitag»."}
+{"type":"tf","prompt":"این برنامهٔ ورزشی روز جمعه است.","correct":true,"explanation_fa":"در برنامه آمده: «das Programm am Freitag»، یعنی برنامهٔ روز جمعه."}
 {"type":"tf","prompt":"کلاس سوم با پول کیک‌ها به برلین سفر می‌کند.","correct":false,"explanation_fa":"در برنامه آمده: «für ihre Reise nach Hamburg»، یعنی سفر به هامبورگ است."}

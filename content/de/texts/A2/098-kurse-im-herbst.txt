@@ -8,7 +8,7 @@ sentences:
 - Montag, 18 Uhr: Wir malen{malen} Landschaften und Blumen. Sie brauchen keine Erfahrung. | دوشنبه، ساعت ۱۸: منظره و گل نقاشی می‌کنیم. لازم نیست تجربه داشته باشید. | tts: Montag, achtzehn Uhr: Wir malen Landschaften und Blumen. Sie brauchen keine Erfahrung.
 - Dienstag, 17 Uhr: Wir zeichnen Menschen und Tiere. Bitte bringen Sie einen Bleistift mit. | سه‌شنبه، ساعت ۱۷: از آدم‌ها و حیوان‌ها طراحی می‌کنیم. لطفاً یک مداد با خودتان بیاورید. | tts: Dienstag, siebzehn Uhr: Wir zeichnen Menschen und Tiere. Bitte bringen Sie einen Bleistift mit.
 - Mittwoch, 19 Uhr: Gitarre. Wir spielen einfache Lieder. | چهارشنبه، ساعت ۱۹: گیتار. آهنگ‌های ساده می‌زنیم. | tts: Mittwoch, neunzehn Uhr: Gitarre. Wir spielen einfache Lieder.
-- Donnerstag, 18.30 Uhr: Klavier. Sie haben nie ein Instrument gespielt? Kein Problem! | پنجشنبه، ساعت ۱۸:۳۰: پیانو. تا حالا هیچ سازی نزده‌اید؟ اشکالی ندارد! | tts: Donnerstag, achtzehn Uhr dreißig: Klavier. Sie haben nie ein Instrument gespielt? Kein Problem!
+- Donnerstag, 18.30 Uhr: Klavier. Sie spielen kein Instrument? Kein Problem! | پنجشنبه، ساعت ۱۸:۳۰: پیانو. هیچ سازی نمی‌زنید؟ اشکالی ندارد! | tts: Donnerstag, achtzehn Uhr dreißig: Klavier. Sie spielen kein Instrument? Kein Problem!
 - Freitag, 19 Uhr: Wir machen zusammen Musik. Bringen Sie Ihr{Ihr-det} Instrument mit! | جمعه، ساعت ۱۹: با هم موسیقی اجرا می‌کنیم. سازتان را با خودتان بیاورید! | tts: Freitag, neunzehn Uhr: Wir machen zusammen Musik. Bringen Sie Ihr Instrument mit!
 - Samstag, 10 Uhr: für Eltern und Kinder. Wir sammeln im Park bunte Blätter und malen sie. | شنبه، ساعت ۱۰: برای پدر و مادرها و بچه‌ها. در پارک برگ‌های رنگارنگ جمع می‌کنیم و نقاشی‌شان را می‌کشیم. | tts: Samstag, zehn Uhr: für Eltern und Kinder. Wir sammeln im Park bunte Blätter und malen sie.
 - Jeder Kurs hat zehn Termine und kostet 60 Euro. | هر دوره ده جلسه دارد و ۶۰ یورو هزینه دارد. | tts: Jeder Kurs hat zehn Termine und kostet sechzig Euro.
@@ -26,7 +26,7 @@ listening A:
 {"type":"num","prompt":"هر دوره چند یورو هزینه دارد؟","answer":"60","accepted":["60","60 Euro","sechzig"],"explanation_fa":"در برنامه می‌شنویم: «Jeder Kurs hat zehn Termine und kostet 60 Euro.»"}
 {"type":"mcq","prompt":"در دوره دوشنبه چه چیزهایی نقاشی می‌کنند؟","options":["آدم‌ها و حیوان‌ها","منظره و گل","برگ‌های پارک","عکس‌های قدیمی"],"correct":1,"explanation_fa":"در برنامه می‌شنویم: «Montag, 18 Uhr: Wir malen Landschaften und Blumen.»"}
 {"type":"tf","prompt":"دوره گیتار چهارشنبه ساعت ۱۹ است.","correct":true,"explanation_fa":"در برنامه می‌شنویم: «Mittwoch, 19 Uhr: Gitarre.»"}
-{"type":"tf","prompt":"دوره پیانو فقط برای کسانی است که قبلاً ساز زده‌اند.","correct":false,"explanation_fa":"در برنامه می‌شنویم: «Sie haben nie ein Instrument gespielt? Kein Problem!»"}
+{"type":"tf","prompt":"دوره پیانو فقط برای کسانی است که ساز می‌زنند.","correct":false,"explanation_fa":"در برنامه دربارهٔ دوره پیانو می‌شنویم: «Sie spielen kein Instrument? Kein Problem!»"}
 listening B:
 {"type":"num","prompt":"دوره پیانو ساعت چند شروع می‌شود؟","answer":"18.30","accepted":["18.30","18:30","18.30 Uhr","18:30 Uhr","achtzehn Uhr dreißig","halb sieben"],"explanation_fa":"در برنامه می‌شنویم: «Donnerstag, 18.30 Uhr: Klavier.»"}
 {"type":"mcq","prompt":"شنبه در پارک چه کار می‌کنند؟","options":["گیتار می‌زنند","برگ‌های رنگارنگ جمع می‌کنند","از حیوان‌ها طراحی می‌کنند","با هم آواز می‌خوانند"],"correct":1,"explanation_fa":"در برنامه می‌شنویم: «Wir sammeln im Park bunte Blätter und malen sie.»"}

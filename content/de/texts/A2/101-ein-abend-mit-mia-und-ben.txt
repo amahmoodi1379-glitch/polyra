@@ -6,13 +6,13 @@ key_words: auf die Kinder aufpassen, Kaninchen, Sendung, sich umziehen, sich die
 sentences:
 - Liebe{lieb} Sara, danke, dass du heute Abend auf die Kinder aufpasst! | سارای عزیز، ممنون که امشب مراقب بچه‌ها هستی!
 - 18 Uhr: Abendessen. Das Essen steht im Kühlschrank. | ساعت ۱۸: شام. غذا توی یخچال است. | tts: Achtzehn Uhr: Abendessen. Das Essen steht im Kühlschrank.
-- Vorher sollen die Kinder sich die Hände waschen. | قبلش بچه‌ها باید دست‌هایشان را بشویند.
+- Vorher sollen sich die Kinder die Hände waschen. | قبلش بچه‌ها باید دست‌هایشان را بشویند.
 - 18.30 Uhr: Mia und Ben geben dem Kaninchen Wasser und Salat. | ساعت ۱۸:۳۰: میا و بن به خرگوش آب و کاهو می‌دهند. | tts: Achtzehn Uhr dreißig: Mia und Ben geben dem Kaninchen Wasser und Salat.
 - 19 Uhr: Beide dürfen eine Sendung für Kinder sehen, aber nur eine halbe Stunde. | ساعت ۱۹: هر دو می‌توانند یک برنامه کودک ببینند، ولی فقط نیم ساعت. | tts: Neunzehn Uhr: Beide dürfen eine Sendung für Kinder sehen, aber nur eine halbe Stunde.
 - 19.30 Uhr: Sie ziehen sich um und putzen sich die Zähne. | ساعت ۱۹:۳۰: لباسشان را عوض می‌کنند و مسواک می‌زنند. | tts: Neunzehn Uhr dreißig: Sie ziehen sich um und putzen sich die Zähne.
 - 20 Uhr: Ins Bett! Ben möchte immer eine Geschichte hören. Mia schläft meistens sofort ein. | ساعت ۲۰: وقت خواب! بن همیشه دلش می‌خواهد یک قصه بشنود. میا معمولاً زود خوابش می‌برد. | tts: Zwanzig Uhr: Ins Bett! Ben möchte immer eine Geschichte hören. Mia schläft meistens sofort ein.
 - Die Kleidung für morgen liegt schon auf dem Stuhl. | لباس‌های فردا از قبل روی صندلی است.
-- Wenn die Kinder schlafen, kannst du gern fernsehen oder Nachrichten sehen. | وقتی بچه‌ها خوابیدند، اگر خواستی می‌توانی تلویزیون یا اخبار ببینی.
+- Wenn die Kinder schlafen, kannst du gern fernsehen oder Musik hören. | وقتی بچه‌ها خوابیدند، اگر خواستی می‌توانی تلویزیون ببینی یا موسیقی گوش کنی.
 - Wir sind um 23 Uhr zurück. Danke! Julia | ما ساعت ۲۳ برمی‌گردیم. ممنون! جولیا | tts: Wir sind um dreiundzwanzig Uhr zurück. Danke! Julia
 reading A:
 {"type":"mcq","prompt":"سارا امشب چه کار می‌کند؟","options":["با جولیا به سینما می‌رود","مراقب بچه‌های جولیا است","به مدرسه بچه‌ها می‌رود","برای جولیا خرید می‌کند"],"correct":1,"explanation_fa":"جولیا می‌نویسد: «danke, dass du heute Abend auf die Kinder aufpasst!»"}
@@ -25,7 +25,7 @@ reading B:
 {"type":"match","prompt":"هر بچه را به چیزی که درباره‌اش آمده وصل کن.","left":["بن","میا"],"right":["معمولاً زود خوابش می‌برد","همیشه می‌خواهد قصه بشنود","از تاریکی می‌ترسد"],"pairs":[[0,1],[1,0]],"explanation_fa":"جولیا می‌نویسد: «Ben möchte immer eine Geschichte hören. Mia schläft meistens sofort ein.»"}
 listening A:
 {"type":"num","prompt":"پدر و مادر بچه‌ها ساعت چند برمی‌گردند؟","answer":"23","accepted":["23","23 Uhr","23:00","23.00","dreiundzwanzig"],"explanation_fa":"جولیا می‌گوید: «Wir sind um 23 Uhr zurück.»"}
-{"type":"mcq","prompt":"بچه‌ها قبل از شام باید چه کار کنند؟","options":["دست‌هایشان را بشویند","لباسشان را عوض کنند","به خرگوش غذا بدهند","مسواک بزنند"],"correct":0,"explanation_fa":"جولیا می‌گوید: «Vorher sollen die Kinder sich die Hände waschen.»"}
+{"type":"mcq","prompt":"بچه‌ها قبل از شام باید چه کار کنند؟","options":["دست‌هایشان را بشویند","لباسشان را عوض کنند","به خرگوش غذا بدهند","مسواک بزنند"],"correct":0,"explanation_fa":"جولیا می‌گوید: «Vorher sollen sich die Kinder die Hände waschen.»"}
 {"type":"tf","prompt":"میا معمولاً زود خوابش می‌برد.","correct":true,"explanation_fa":"جولیا می‌گوید: «Mia schläft meistens sofort ein.»"}
 {"type":"tf","prompt":"سارا وقتی بچه‌ها خوابیدند نباید تلویزیون ببیند.","correct":false,"explanation_fa":"جولیا می‌گوید: «Wenn die Kinder schlafen, kannst du gern fernsehen.»"}
 listening B:

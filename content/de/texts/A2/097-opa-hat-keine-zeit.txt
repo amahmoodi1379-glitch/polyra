@@ -6,7 +6,7 @@ key_words: Rentner, joggen, wandern, Ski fahren, Schach
 sentences:
 - Liebe{lieb} Emma, | امای عزیز،
 - danke für deine E-Mail! Du fragst, was ich jetzt als Rentner den ganzen Tag mache. | ممنون از ایمیلت! می‌پرسی که حالا که بازنشسته‌ام، تمام روز چه کار می‌کنم.
-- Seit einem Jahr bin ich in Rente, aber ich habe mehr Termine als früher! | یک سال است که بازنشسته‌ام، ولی از قبل بیشتر برنامه دارم!
+- Seit einem Jahr bin ich in Rente, aber ich habe mehr Termine als früher! | یک سال است که بازنشسته‌ام، ولی بیشتر از قبل برنامه دارم!
 - Jeden Montag gehe ich mit meinem Nachbarn joggen. | هر دوشنبه با همسایه‌ام به دویدن می‌روم.
 - Jeden Dienstag spielen Oma und ich Tennis. | هر سه‌شنبه من و مادربزرگ تنیس بازی می‌کنیم.
 - Am Mittwoch spiele ich im Verein Schach. Das ist gut für den Kopf. | چهارشنبه‌ها در باشگاه شطرنج بازی می‌کنم. این برای ذهن خوب است.
@@ -19,7 +19,7 @@ sentences:
 - Dein Opa | پدربزرگت
 reading A:
 {"type":"mcq","prompt":"پدربزرگ در این ایمیل به چه سؤالی جواب می‌دهد؟","options":["کی به دیدن اما می‌آید","حالا تمام روز چه کار می‌کند","چرا بازنشسته شده است","کجا به تعطیلات می‌رود"],"correct":1,"explanation_fa":"پدربزرگ می‌نویسد: «Du fragst, was ich jetzt als Rentner den ganzen Tag mache.»"}
-{"type":"tf","prompt":"پدربزرگ یک سال است که بازنشسته است.","correct":true,"explanation_fa":"پدربزرگ می‌نویسد: «Seit einem Jahr bin ich in Rente.»"}
+{"type":"tf","prompt":"پدربزرگ یک سال است که بازنشسته است.","correct":true,"explanation_fa":"پدربزرگ می‌نویسد: «Seit einem Jahr bin ich in Rente»، یعنی یک سال است که بازنشسته است."}
 {"type":"tf","prompt":"پدربزرگ دوست دارد صخره‌نوردی کند.","correct":false,"explanation_fa":"پدربزرگ می‌نویسد: «Klettern möchte ich nicht, das finde ich zu gefährlich.»"}
 {"type":"mcq","prompt":"پدربزرگ با چه کسی تنیس بازی می‌کند؟","options":["با همسایه‌اش","با اما","با دوستانش در باشگاه","با مادربزرگ"],"correct":3,"explanation_fa":"پدربزرگ می‌نویسد: «Jeden Dienstag spielen Oma und ich Tennis.»"}
 reading B:

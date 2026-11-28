@@ -8,8 +8,8 @@ sentences:
 - seit einer Woche sind wir in Österreich, bei einem Bauern in den Bergen. | یک هفته است که در اتریش هستیم، پیش یک کشاورز در کوهستان.
 - Die Landschaft hier ist sehr schön, mit grünen Wiesen und großen Wäldern. | منظره اینجا خیلی زیباست، با چمنزارهای سبز و جنگل‌های بزرگ.
 - Der Bauer heißt Herr Wagner. Er hat zwanzig Kühe und viele Schafe. | اسم کشاورز آقای واگنر است. او بیست گاو و تعداد زیادی گوسفند دارد.
-- Jeden Morgen helfen unsere Kinder: Mia bringt den Schafen frisches Gras, und Ben sucht die Eier von den Hühnern. | بچه‌هایمان هر روز صبح کمک می‌کنند: میا برای گوسفندها علف تازه می‌برد و بن دنبال تخم‌مرغ‌های مرغ‌ها می‌گردد.
-- Im Wald findet Ben schöne Steine und bunte Blätter. | بن در جنگل سنگ‌های قشنگ و برگ‌های رنگارنگ پیدا می‌کند.
+- Jeden Morgen helfen unsere Kinder: Anna bringt den Schafen frisches Gras, und Lukas sucht die Eier von den Hühnern. | بچه‌هایمان هر روز صبح کمک می‌کنند: آنا برای گوسفندها علف تازه می‌برد و لوکاس دنبال تخم‌های مرغ‌ها می‌گردد.
+- Im Wald findet Lukas schöne Steine und bunte Blätter. | لوکاس در جنگل سنگ‌های قشنگ و برگ‌های رنگارنگ پیدا می‌کند.
 - Frau Wagner hat einen großen Garten mit vielen Pflanzen: Tomaten, Kartoffeln und Blumen. | خانم واگنر یک باغچه بزرگ با گیاهان زیادی دارد: گوجه، سیب‌زمینی و گل.
 - Am Abend machen wir oft ein Feuer im Garten und grillen Würste. | شب‌ها اغلب در باغ آتش روشن می‌کنیم و سوسیس کباب می‌کنیم.
 - Die Luft ist sauber, und es ist ganz{ganz-adv} ruhig. | هوا تمیز است و همه جا خیلی آرام است.
@@ -18,18 +18,18 @@ sentences:
 reading A:
 {"type":"mcq","prompt":"لیزا و خانواده‌اش کجا تعطیلات را می‌گذرانند؟","options":["در یک هتل در وین","کنار یک دریاچه","پیش یک کشاورز در کوهستان","در خانه مادربزرگ"],"correct":2,"explanation_fa":"لیزا می‌نویسد: «seit einer Woche sind wir in Österreich, bei einem Bauern in den Bergen»."}
 {"type":"tf","prompt":"آقای واگنر بیست گاو دارد.","correct":true,"explanation_fa":"لیزا می‌نویسد: «Er hat zwanzig Kühe und viele Schafe.»"}
-{"type":"tf","prompt":"بن برای گوسفندها علف می‌برد.","correct":false,"explanation_fa":"لیزا می‌نویسد: «Mia bringt den Schafen frisches Gras»؛ بن دنبال تخم‌مرغ‌ها می‌گردد."}
+{"type":"tf","prompt":"لوکاس برای گوسفندها علف می‌برد.","correct":false,"explanation_fa":"لیزا می‌نویسد: «Anna bringt den Schafen frisches Gras»؛ لوکاس دنبال تخم‌مرغ‌ها می‌گردد."}
 {"type":"mcq","prompt":"خانواده شب‌ها اغلب چه کار می‌کنند؟","options":["در باغ آتش روشن می‌کنند","به رستوران روستا می‌روند","در جنگل قدم می‌زنند","با کشاورز کارت بازی می‌کنند"],"correct":0,"explanation_fa":"لیزا می‌نویسد: «Am Abend machen wir oft ein Feuer im Garten und grillen Würste.»"}
 reading B:
-{"type":"match","prompt":"هر آدم را به کارش وصل کن.","left":["میا","بن","خانم واگنر"],"right":["دنبال تخم‌مرغ‌ها می‌گردد","برای گوسفندها علف می‌برد","یک باغچه بزرگ دارد","گاوها را به چمنزار می‌برد"],"pairs":[[0,1],[1,0],[2,2]],"explanation_fa":"در متن آمده: «Mia bringt den Schafen frisches Gras»، «Ben sucht die Eier von den Hühnern» و «Frau Wagner hat einen großen Garten»."}
+{"type":"match","prompt":"هر آدم را به کارش وصل کن.","left":["آنا","لوکاس","خانم واگنر"],"right":["دنبال تخم‌مرغ‌ها می‌گردد","برای گوسفندها علف می‌برد","یک باغچه بزرگ دارد","گاوها را به چمنزار می‌برد"],"pairs":[[0,1],[1,0],[2,2]],"explanation_fa":"در متن آمده: «Anna bringt den Schafen frisches Gras»، «Lukas sucht die Eier von den Hühnern» و «Frau Wagner hat einen großen Garten»."}
 {"type":"find","prompt":"کدام جمله می‌گوید هوای آنجا تمیز است؟","correct_sentence":8,"explanation_fa":"لیزا می‌نویسد: «Die Luft ist sauber, und es ist ganz ruhig.»"}
-{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Im Wald findet Ben schöne {{1}} und bunte {{2}}.","bank":["Steine","Blätter","Kühe","Schafe","Würste"],"answers":["Steine","Blätter"],"explanation_fa":"لیزا می‌نویسد: «Im Wald findet Ben schöne Steine und bunte Blätter.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Im Wald findet Lukas schöne {{1}} und bunte {{2}}.","bank":["Steine","Blätter","Kühe","Schafe","Würste"],"answers":["Steine","Blätter"],"explanation_fa":"لیزا می‌نویسد: «Im Wald findet Lukas schöne Steine und bunte Blätter.»"}
 listening A:
 {"type":"num","prompt":"آقای واگنر چند گاو دارد؟","answer":"20","accepted":["20","zwanzig"],"explanation_fa":"لیزا می‌گوید: «Er hat zwanzig Kühe und viele Schafe.»"}
 {"type":"mcq","prompt":"لیزا و خانواده‌اش کی به خانه برمی‌گردند؟","options":["جمعه","شنبه","یکشنبه","دوشنبه"],"correct":1,"explanation_fa":"لیزا می‌گوید: «Am Samstag fahren wir leider wieder nach Hause.»"}
 {"type":"tf","prompt":"لیزا و خانواده‌اش یک هفته است که در اتریش هستند.","correct":true,"explanation_fa":"لیزا می‌گوید: «seit einer Woche sind wir in Österreich»."}
 {"type":"tf","prompt":"در باغچه خانم واگنر فقط گل هست.","correct":false,"explanation_fa":"لیزا می‌گوید در باغچه «Tomaten, Kartoffeln und Blumen» هست، یعنی گوجه و سیب‌زمینی هم هست."}
 listening B:
-{"type":"mcq","prompt":"بن صبح‌ها چه کار می‌کند؟","options":["برای گوسفندها علف می‌برد","دنبال تخم‌مرغ‌ها می‌گردد","به گاوها آب می‌دهد","در باغچه کار می‌کند"],"correct":1,"explanation_fa":"لیزا می‌گوید: «Ben sucht die Eier von den Hühnern.»"}
+{"type":"mcq","prompt":"لوکاس صبح‌ها چه کار می‌کند؟","options":["برای گوسفندها علف می‌برد","دنبال تخم‌مرغ‌ها می‌گردد","به گاوها آب می‌دهد","در باغچه کار می‌کند"],"correct":1,"explanation_fa":"لیزا می‌گوید: «Lukas sucht die Eier von den Hühnern.»"}
 {"type":"tf","prompt":"آنجا خیلی آرام است.","correct":true,"explanation_fa":"لیزا می‌گوید: «es ist ganz ruhig»."}
 {"type":"tf","prompt":"لیزا از منظره آنجا خوشش نمی‌آید.","correct":false,"explanation_fa":"لیزا می‌گوید: «Die Landschaft hier ist sehr schön»."}
