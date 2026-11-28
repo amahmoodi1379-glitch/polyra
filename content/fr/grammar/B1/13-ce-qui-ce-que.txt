@@ -1,0 +1,91 @@
+code: fr-b1-ce-qui-ce-que
+title: «آنچه، چیزی که»: ce qui، ce que، ce dont
+scope: ce qui، ce que (ce qu') و ce dont به معنی «آنچه، چیزی که»: در جملهٔ معمولی (Ce qui me plaît، c'est la mer)، بعد از je sais، je ne sais pas، dis-moi، je me demande (qu'est-ce que → ce que، qu'est-ce qui → ce qui)، tout ce qui و tout ce que، و ce qui که به یک جملهٔ کامل برمی‌گردد (…, ce qui m'a surpris)؛ سؤال غیرمستقیم در گذشته در واحد ۳۳ و تأکید با c'est … qui در واحد ۲۵ می‌آیند.
+can_do: حالا می‌توانی بگویی چه چیزی را دوست داری، چه لازم داری و چه نمی‌دانی، بی‌آنکه اسم چیز را بیاوری: Je ne sais pas ce que tu veux. Dis-moi ce dont tu as besoin.
+rule: «آن چیزی که» = ce + qui / que / dont، با همان قاعدهٔ ضمیرهای موصولی: ce qui + فعل (ce qui me plaît)، ce que + فاعل (ce que tu dis، ce qu'il veut)، ce dont برای فعل با de (ce dont j'ai besoin)؛ در سؤال غیرمستقیم qu'est-ce que می‌شود ce que.
+mistake: فارسی‌زبان‌ها «چه» را در سؤال غیرمستقیم مستقیم ترجمه می‌کنند و qu'est-ce que یا quoi می‌گذارند («Je ne sais pas qu'est-ce que tu veux»، «Je ne sais pas quoi tu veux»)؛ درست: Je ne sais pas ce que tu veux. «آن چیزی که لازم دارم» را هم با ce que می‌سازند («ce que j'ai besoin»)؛ درست: ce dont j'ai besoin.
+lesson:
+فارسی برای «آنچه» یا «چیزی که» کلمهٔ جدایی دارد. فرانسوی آن را با ce + همان ضمیرهای موصولی می‌سازد: ce یعنی «آن چیز» و بعدش qui، que یا dont.
+قاعده همان قاعدهٔ qui، que و dont است، فقط اسمی قبلش نیست: la chose qui → ce qui، la chose que → ce que، la chose dont → ce dont.
+ce qui وقتی است که «آن چیز» فاعلِ فعلِ بعدی است، پس بعدش فعل می‌آید: Ce qui me plaît, c'est la mer (چیزی که خوشم می‌آید دریاست).
+ce que وقتی است که «آن چیز» مفعول است، پس بعدش فاعل می‌آید: Je ne comprends pas ce que tu dis. قبل از صدادار ce qu': ce qu'il veut، ce qu'on mange.
+ce dont برای فعل یا صفتی است که با de می‌آید، مثل dont در واحد ۸: Dis-moi ce dont tu as besoin.
+سؤال غیرمستقیم: بعد از je sais، je ne sais pas، dis-moi، explique-moi و je me demande، qu'est-ce qui می‌شود ce qui و qu'est-ce que می‌شود ce que: Qu'est-ce que tu veux ? → Je ne sais pas ce que tu veux.
+در این جمله‌ها «چه» را با quoi یا qu'est-ce que ترجمه نکن: «Je ne sais pas qu'est-ce que tu veux» و «Je ne sais pas quoi tu veux» غلط‌اند. quoi فقط پیش از مصدر می‌آید: Je ne sais pas quoi faire.
+بعد از dis-moi و je ne sais pas، به‌جای ce dont می‌شود de quoi هم گفت: Dis-moi de quoi tu as besoin. ولی در C'est ce dont j'ai besoin فقط ce dont درست است.
+tout ce qui و tout ce que یعنی «هر چه، همهٔ چیزهایی که»: Merci pour tout ce que tu as fait. Il a mangé tout ce qui restait.
+ce qui می‌تواند به یک جملهٔ کامل برگردد، مثل «و این…» در فارسی: Il est parti sans rien dire, ce qui m'a surpris (بی‌آنکه چیزی بگوید رفت، و این تعجبم را برانگیخت).
+برای تأکید، جمله را با Ce qui … یا Ce que … شروع کن و بعد c'est بگو: Ce que je préfère, c'est dormir tard. این را در واحد ۲۵ بیشتر تمرین می‌کنیم.
+با چند فعل مثل se passer و rester هر دو درست‌اند: ce qui se passe و ce qu'il se passe.
+table:
+«آن چیز» | شکل | مثال
+فاعل (بعدش فعل) | ce qui | Ce qui me plaît, c'est la mer.
+مفعول (بعدش فاعل) | ce que، ce qu' | Je sais ce que tu veux.
+بعد از فعل یا صفت با de | ce dont | Dis-moi ce dont tu as besoin.
+سؤال → سؤال غیرمستقیم | qu'est-ce qui → ce qui | Je ne sais pas ce qui se passe.
+سؤال → سؤال غیرمستقیم | qu'est-ce que → ce que | Dis-moi ce que tu fais.
+examples:
+Ce qui me plaît à Lyon, ce sont les petits restaurants. | چیزی که در لیون خوشم می‌آید رستوران‌های کوچکش است.
+Je ne sais pas ce qu'il veut. | نمی‌دانم او (مرد) چه می‌خواهد.
+Voilà tout ce dont nous avons besoin pour le pique-nique. | این هم همهٔ چیزهایی که برای پیک‌نیک لازم داریم.
+Merci pour tout ce que vous avez fait. | برای همهٔ کارهایی که کردید ممنونم.
+Il a plu toute la journée, ce qui arrive rarement en juillet. | تمام روز باران آمد، چیزی که در ماه ژوئیه کم پیش می‌آید.
+targets:
+Je ne comprends pas [ce que] tu veux dire. | نمی‌فهمم منظورت چیست. | d: ce qui, ce dont, qu'est-ce que
+Dis-moi [ce qui] ne va pas, je peux peut-être t'aider. | بگو چه مشکلی هست، شاید بتوانم کمکت کنم. | d: ce que, ce dont, qu'est-ce qui
+[Ce qui] est bien dans ce travail, c'est l'équipe. | چیزی که در این کار خوب است تیمش است. | d: Ce que, Ce dont, Qu'est-ce qui
+[Ce que] je préfère le dimanche, c'est dormir tard. | چیزی که یکشنبه‌ها از همه بیشتر دوست دارم این است که تا دیروقت بخوابم. | d: Ce qui, Ce dont, Qu'est-ce que
+Tu sais [ce qui] est arrivé à Paul hier soir ? | می‌دانی دیشب چه اتفاقی برای پل افتاد؟ | d: ce que, ce dont, qu'est-ce qui | ok: ce qu'il
+Je ne sais pas encore [ce que] je vais faire cet été. | هنوز نمی‌دانم این تابستان چه کار می‌کنم. | d: ce qui, ce dont, qu'est-ce que
+C'est exactement [ce dont] j'avais besoin. | این دقیقاً همان چیزی است که لازم داشتم. | d: ce que, ce qui, dont
+Dis-moi [ce dont] tu as besoin pour la fête. | بگو برای مهمانی چه چیزهایی لازم داری. | d: ce que, ce qui, dont | ok: de quoi
+Merci pour tout [ce que] tu as fait pour nous. | برای همهٔ کارهایی که برای ما کردی ممنونم. | d: ce qui, ce dont, que
+Il a mangé tout [ce qui] restait dans le frigo. | هر چه در یخچال مانده بود خورد. | d: ce que, ce dont, que | ok: ce qu'il
+Il est parti sans dire au revoir, [ce qui] m'a un peu surpris. | بی‌خداحافظی رفت و این کمی متعجبم کرد. | d: ce que, ce dont, qui
+Le train avait deux heures de retard, [ce qui] arrive rarement. | قطار دو ساعت تأخیر داشت، چیزی که کم پیش می‌آید. | d: ce que, ce dont, qui
+Je ne crois pas tout [ce qu']on dit à la télévision. | هر چیزی را که در تلویزیون می‌گویند باور نمی‌کنم. | d: ce qui, ce dont, qu'
+Tu peux me dire [ce qu']il a dit au téléphone ? | می‌توانی به من بگویی پشت تلفن چه گفت؟ | d: ce qui, ce dont, qu'est-ce qu'
+Je me demande [ce qui] se passe chez les voisins. | کنجکاوم بدانم خانهٔ همسایه‌ها چه خبر است. | d: ce que, ce dont, qu'est-ce qui | ok: ce qu'il
+[Ce dont] je me souviens le mieux, c'est la maison de mes grands-parents. | چیزی که از همه بهتر یادم مانده خانهٔ پدربزرگ و مادربزرگم است. | d: Ce que, Ce qui, Dont
+[Ce qui] me fait peur, c'est le prix du{du-contr} voyage. | چیزی که مرا می‌ترساند هزینهٔ سفر است. | d: Ce que, Ce dont, Qu'est-ce qui
+Fais [ce que] tu veux, c'est ta décision. | هر کاری دلت می‌خواهد بکن، تصمیمش با خودت است. | d: ce qui, ce dont, qu'est-ce que
+On ne sait jamais [ce qui] peut arriver en montagne. | آدم هیچ‌وقت نمی‌داند در کوهستان چه پیش می‌آید. | d: ce que, ce dont, qu'est-ce qui | ok: ce qu'il
+Explique-moi [ce que] tu as compris. | برایم توضیح بده چه فهمیدی. | d: ce qui, ce dont, qu'est-ce que
+Le supermarché d'à côté a tout [ce dont] on a besoin. | سوپرمارکت بغلی هر چیزی که لازم داریم دارد. | d: ce que, ce qui, dont
+[Ce que] tu m'as raconté hier m'a beaucoup étonné. | چیزی که دیروز برایم تعریف کردی خیلی متعجبم کرد. | d: Ce qui, Ce dont, Qu'est-ce que
+Je n'ai pas entendu [ce que] le professeur a dit à la fin. | نشنیدم استاد آخر کلاس چه گفت. | d: ce qui, ce dont, qu'est-ce que
+Il fait toujours [ce qu']il veut, sans demander l'avis de personne. | او (مرد) همیشه هر کاری دلش بخواهد می‌کند، بی‌آنکه نظر کسی را بپرسد. | d: ce qui, ce dont, qu'est-ce qu'
+Raconte-moi [ce dont] vous avez parlé pendant le dîner. | تعریف کن سر شام دربارهٔ چه حرف زدید. | d: ce que, ce qui, dont | ok: de quoi
+[Ce dont] il rêve, c'est d'une petite maison à la campagne. | چیزی که آرزویش را دارد یک خانهٔ کوچک بیرون شهر است. | d: Ce que, Ce qui, Dont
+Je ne sais pas [ce dont] il a peur exactement. | نمی‌دانم دقیقاً از چه می‌ترسد. | d: ce que, ce qui, dont | ok: de quoi
+Je voudrais que tu m'expliques [ce qui] s'est passé. | دلم می‌خواهد برایم توضیح بدهی چه اتفاقی افتاد. | d: ce que, ce dont, qu'est-ce qui | ok: ce qu'il
+Si tu savais [ce que] j'ai vu ce matin ! | کاش می‌دانستی امروز صبح چه دیدم! | d: ce qui, ce dont, qu'est-ce que
+Choisis [ce qui] te plaît, je t'invite. | هر چه خوشت می‌آید انتخاب کن، مهمان منی. | d: ce que, ce dont, qu'est-ce qui | ok: ce qu'il
+Puisque tu connais bien la ville, dis-nous [ce qu']il faut visiter. | حالا که شهر را خوب می‌شناسی، به ما بگو کجاها را باید دید. | d: ce qui, ce dont, qu'est-ce qu'
+Le médecin m'a expliqué [ce que] je devais faire. | پزشک برایم توضیح داد چه کار باید بکنم. | d: ce qui, ce dont, qu'est-ce que
+Tu as noté tout [ce qu']il nous faut pour le voyage ? | همهٔ چیزهایی را که برای سفر لازم داریم یادداشت کردی؟ | d: ce qui, ce dont, qu'
+Je ne sais ni [ce qui] s'est passé ni [ce qu']il a dit. | نه می‌دانم چه اتفاقی افتاد و نه می‌دانم او (مرد) چه گفت. | d: ce que, ce dont, qu'est-ce qui / ce qui, ce dont, qu'est-ce qu' | ok: ce qu'il
+Dis-moi [ce dont] tu as besoin et [ce que] tu veux manger. | بگو چه لازم داری و چه می‌خواهی بخوری. | d: ce que, ce qui, dont / ce qui, ce dont, qu'est-ce que | ok: de quoi
+[Ce qui] est important, ce n'est pas l'argent, c'est [ce que] tu aimes faire. | چیزی که مهم است پول نیست، کاری است که دوست داری انجامش بدهی. | d: Ce que, Ce dont, Qu'est-ce qui / ce qui, ce dont, qu'est-ce que
+J'ai acheté tout [ce dont] on avait besoin, mais j'ai oublié [ce que] tu m'avais demandé. | هر چه لازم داشتیم خریدم، ولی چیزی را که از من خواسته بودی فراموش کردم. | d: ce que, ce qui, dont / ce qui, ce dont, qu'est-ce que
+[Ce que] j'aime à Paris, ce sont les cafés, et [ce qui] m'énerve{énerver}, c'est le bruit. | چیزی که در پاریس دوست دارم کافه‌هاست و چیزی که کلافه‌ام می‌کند سروصداست. | d: Ce qui, Ce dont, Qu'est-ce que / ce que, ce dont, qu'est-ce qui
+Je comprends [ce que] tu veux dire, mais [ce qui] est fait est fait. | می‌فهمم منظورت چیست، ولی کاری است که شده. | d: ce qui, ce dont, qu'est-ce que / ce que, ce dont, qui
+Il a raconté [ce qui] lui était arrivé et [ce dont] il avait peur. | تعریف کرد چه بلایی سرش آمده بود و از چه می‌ترسید. | d: ce que, ce dont, qu'est-ce qui / ce que, ce qui, dont | ok: ce qu'il / de quoi
+transforms:
+Qu'est-ce que tu veux ? => Je ne sais pas ce que tu veux. | سؤال را بعد از «Je ne sais pas» بیاور.
+Qu'est-ce qui se passe ? => Je ne sais pas ce qui se passe. ; Je ne sais pas ce qu'il se passe. | سؤال را بعد از «Je ne sais pas» بیاور.
+Qu'est-ce qu'il a dit ? => Dis-moi ce qu'il a dit. | سؤال را بعد از «Dis-moi» بیاور.
+De quoi as-tu besoin ? => Dis-moi ce dont tu as besoin. ; Dis-moi de quoi tu as besoin. | سؤال را بعد از «Dis-moi» بیاور.
+J'aime la mer. => Ce que j'aime, c'est la mer. | جمله را با «Ce que …, c'est …» بنویس.
+La musique me plaît. => Ce qui me plaît, c'est la musique. | جمله را با «Ce qui …, c'est …» بنویس.
+J'ai besoin de vacances. => Ce dont j'ai besoin, c'est de vacances. ; Ce dont j'ai besoin, ce sont des vacances. | جمله را با «Ce dont …, c'est …» بنویس.
+Il est arrivé en retard. Ça m'a énervé{énerver}. => Il est arrivé en retard, ce qui m'a énervé{énerver}. | دو جمله را با «ce qui» یکی کن.
+translations:
+نمی‌دانم چه می‌خواهی. => Je ne sais pas ce que tu veux.
+بگو چه چیزی لازم داری. => Dis-moi ce dont tu as besoin. ; Dis-moi de quoi tu as besoin.
+چیزی که در این شهر خوشم می‌آید سکوتش است. => Ce qui me plaît dans cette ville, c'est le silence. ; Ce que j'aime dans cette ville, c'est le silence. ; Ce qui me plaît dans cette ville, c'est son silence. ; Ce que j'aime dans cette ville, c'est son silence.
+هر چه گفت راست بود. => Tout ce qu'il a dit était vrai. ; Tout ce qu'elle a dit était vrai.
+می‌دانی چه اتفاقی افتاد؟ => Tu sais ce qui s'est passé ? ; Est-ce que tu sais ce qui s'est passé ? ; Sais-tu ce qui s'est passé ? ; Tu sais ce qu'il s'est passé ? ; Est-ce que tu sais ce qu'il s'est passé ? ; Sais-tu ce qu'il s'est passé ? ; Tu sais ce qui est arrivé ? ; Est-ce que tu sais ce qui est arrivé ? ; Sais-tu ce qui est arrivé ?
+این دقیقاً همان چیزی است که لازم داشتم. => C'est exactement ce dont j'avais besoin. ; C'est exactement ce qu'il me fallait.
+هر کاری دلت می‌خواهد بکن. => Fais ce que tu veux. ; Fais tout ce que tu veux. ; Fais ce qui te plaît. ; Fais ce qu'il te plaît.
+برایم توضیح بده چه فهمیدی. => Explique-moi ce que tu as compris.

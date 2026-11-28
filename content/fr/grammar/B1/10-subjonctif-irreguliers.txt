@@ -1,0 +1,112 @@
+code: fr-b1-subjonctif-irreguliers
+title: subjonctif بی‌قاعده: que je sois، que j'aie، que j'aille، que je fasse
+scope: subjonctif présent فعل‌های بی‌قاعده: être (sois، soit، soyons)، avoir (aie، ait، ayons)، aller (aille، allions)، faire (fasse)، pouvoir (puisse)، savoir (sache)، vouloir (veuille، voulions)، و فعل‌های دوریشه‌ای venir (vienne، venions)، prendre (prenne، prenions)، boire، devoir، recevoir، voir، croire، با هم‌خانواده‌هایشان (comprendre، revenir)، همه بعد از il faut que؛ subjonctif بعد از خواستن، احساس و نظر در درس‌های بعد می‌آید.
+can_do: حالا می‌توانی با پرکاربردترین فعل‌ها بگویی کسی باید چه کند یا کجا باشد: Il faut que tu sois là. Il faut que j'aille à la banque. Il faut que vous veniez.
+rule: این فعل‌ها را حفظ کن: sois، aie، aille، fasse، puisse، sache، veuille؛ و در فعل‌های دوریشه‌ای je، tu، il و ils از شکل ils می‌آیند (que je vienne) و nous و vous از شکل imparfait (que nous venions).
+mistake: فارسی‌زبان‌ها بعد از il faut que زمان حال این فعل‌ها را می‌آورند («il faut que tu es là»، «il faut que je vais»، «il faut que je fais») یا nous را از شکل ils می‌سازند («que nous viennions»)؛ درست: il faut que tu sois là، que j'aille، que je fasse، que nous venions.
+tables: subjonctif présent | être
+tables: subjonctif présent | avoir
+tables: subjonctif présent | aller
+tables: subjonctif présent | faire
+tables: subjonctif présent | refaire
+tables: subjonctif présent | satisfaire
+tables: subjonctif présent | défaire
+tables: subjonctif présent | pouvoir
+tables: subjonctif présent | savoir
+tables: subjonctif présent | vouloir
+tables: subjonctif présent | valoir
+tables: subjonctif présent | falloir
+tables: subjonctif présent | pleuvoir
+lesson:
+در درس قبل دیدی که subjonctif را از شکل ils می‌سازیم. چند فعل خیلی پرکاربرد از این قاعده پیروی نمی‌کنند و باید حفظشان کرد. در فارسی هم «بودن» و «داشتن» شکل خاص خودشان را دارند: «باید آنجا باشی»، «باید وقت داشته باشی».
+être: que je sois، que tu sois، qu'il soit، que nous soyons، que vous soyez، qu'ils soient. Il faut que tu sois là (باید آنجا باشی).
+avoir: que j'aie، que tu aies، qu'il ait، que nous ayons، que vous ayez، qu'ils aient. aie، aies، ait و aient یک‌جور تلفظ می‌شوند و فقط در نوشتن فرق دارند.
+در soyons، soyez، ayons و ayez حرف i نیست: «soyions» و «ayiez» غلط‌اند.
+faire، pouvoir و savoir برای همهٔ شخص‌ها یک ریشهٔ تازه دارند: que je fasse، que nous fassions؛ que je puisse، que vous puissiez؛ que je sache، que nous sachions.
+aller و vouloir دو ریشه دارند: que j'aille، qu'ils aillent ولی que nous allions، que vous alliez؛ que je veuille، qu'ils veuillent ولی que nous voulions.
+فعل‌های دوریشه‌ای در واقع همان قاعدهٔ درس قبل را دارند: je، tu، il و ils از شکل ils (ils viennent → que je vienne) و nous و vous مثل imparfait (nous venions → que nous venions).
+همین‌طور: prendre → que je prenne، que nous prenions؛ boire → que tu boives، que vous buviez؛ devoir → qu'il doive، que nous devions؛ recevoir → qu'il reçoive، que nous recevions.
+voir و croire: que je voie، que nous voyions؛ que tu croies، que vous croyiez. در nous و vous، y و i کنار هم می‌آیند.
+هم‌خانواده‌ها همان شکل را دارند: comprendre و apprendre مثل prendre (que tu comprennes)، revenir و devenir مثل venir (qu'il revienne).
+مواظب باش: بعد از il faut que زمان حال این فعل‌ها را نیاور؛ «il faut que tu es là» و «il faut que je vais» غلط‌اند و درستشان il faut que tu sois là و il faut que j'aille است. avoir و être را هم قاطی نکن: que j'aie (داشته باشم)، que je sois (باشم).
+table:
+مصدر | que je (j') | que nous | qu'ils
+être | sois | soyons | soient
+avoir | aie | ayons | aient
+aller | aille | allions | aillent
+faire | fasse | fassions | fassent
+pouvoir | puisse | puissions | puissent
+savoir | sache | sachions | sachent
+vouloir | veuille | voulions | veuillent
+venir | vienne | venions | viennent
+prendre | prenne | prenions | prennent
+boire | boive | buvions | boivent
+devoir | doive | devions | doivent
+recevoir | reçoive | recevions | reçoivent
+voir | voie | voyions | voient
+croire | croie | croyions | croient
+examples:
+Il faut que tu sois à l'heure demain. | باید فردا سر وقت باشی.
+Il faut que nous ayons nos billets avant samedi. | باید تا شنبه بلیت‌هایمان را داشته باشیم.
+Il faudrait que j'aille chez le dentiste. | بهتر است پیش دندان‌پزشک بروم.
+Il faut que vous veniez dîner chez nous. | باید برای شام به خانهٔ ما بیایید.
+Il ne faut pas qu'il boive avant de conduire. | نباید قبل از رانندگی مشروب بخورد.
+targets:
+Il faut que tu [sois] à la gare à huit heures. | باید ساعت هشت در ایستگاه قطار باشی. | d: es, être, soyez | hint: (être)
+Il faut qu'il [soit] à l'heure demain matin. | او (مرد) باید فردا صبح سر وقت باشد. | d: est, être, soyons | hint: (être)
+Il ne faut pas que vous [soyez] en retard à l'examen. | نباید سر امتحان دیر کنید. | d: êtes, être, soyons
+Il faut que nous [soyons] prêts avant l'arrivée des{des-contr} invités. | باید قبل از رسیدن مهمان‌ها آماده باشیم. | d: sommes, être, soyez
+Il faudrait que les enfants [soient] au lit à neuf heures. | بهتر است بچه‌ها ساعت نه در رختخواب باشند. | d: sont, être, soyez
+Il faut que j'[aie] mon passeport pour prendre l'avion. | برای سوار شدن به هواپیما باید پاسپورتم همراهم باشد. | d: avoir, ayons, aurai | hint: (avoir)
+Il faut que tu [aies] une bonne raison pour partir. | برای رفتن باید دلیل خوبی داشته باشی. | d: as, avoir, ayez | hint: (avoir)
+Il faut qu'elle [ait] son diplôme pour trouver ce travail. | او (زن) برای پیدا کردن این کار باید مدرکش را داشته باشد. | d: a, avoir, ayons
+Il faut que vous [ayez] votre billet à la main. | باید بلیتتان را در دست داشته باشید. | d: avez, avoir, ayons
+Il ne faut pas qu'ils [aient] peur du{du-contr} chien, il est gentil. | نباید از سگ بترسند، مهربان است. | d: ont, avoir, ayez
+Il faut que j'[aille] à la banque avant midi. | باید قبل از ظهر به بانک بروم. | d: aller, allions, irai | hint: (aller)
+Il faut que nous [allions] voir ta grand-mère ce week-end. | باید این آخر هفته به دیدن مادربزرگت برویم. | d: allons, aller, aillons | hint: (aller)
+Il faudrait que tu [ailles] chez le médecin, tu as l'air malade. | بهتر است پیش پزشک بروی، مریض به نظر می‌آیی. | d: vas, aller, alliez
+Il ne faut pas qu'elle [aille] seule à la montagne. | او (زن) نباید تنها به کوه برود. | d: va, aller, allions
+Il faut que je [fasse] les courses avant ce soir. | باید تا امشب خرید کنم. | d: fais, faire, fassions | hint: (faire)
+Il faut que tu [fasses] attention à ton sac dans le métro. | باید در مترو مواظب کیفت باشی. | d: fais, faire, fassiez | hint: (faire)
+Il faut que vous [fassiez] du sport deux fois par semaine. | باید هفته‌ای دو بار ورزش کنید. | d: faites, faire, fassions
+Il faudra qu'on [fasse] une fête pour son anniversaire. | باید برای تولدش جشن بگیریم. | d: fait, faire, fera
+Il faut que je [puisse] travailler à la maison le vendredi. | باید بتوانم جمعه‌ها در خانه کار کنم. | d: peux, pouvoir, puissions | hint: (pouvoir)
+Il faut que les étudiants [puissent] poser des questions. | دانشجوها باید بتوانند سؤال بپرسند. | d: peuvent, pouvoir, puissiez | hint: (pouvoir)
+Il faut que tu [saches] la vérité. | باید حقیقت را بدانی. | d: sais, savoir, sachiez | hint: (savoir)
+Il faut que vous [sachiez] nager pour faire ce voyage en bateau. | برای این سفر با قایق باید شنا بلد باشید. | d: savez, savoir, sachions | hint: (savoir)
+Pour réussir, il faut qu'il le [veuille] vraiment. | برای موفق شدن، او (مرد) باید واقعاً این را بخواهد. | d: veut, vouloir, voulions | hint: (vouloir)
+Il faut que tu [viennes] avec nous samedi soir. | باید شنبه شب با ما بیایی. | d: viens, venir, venions | hint: (venir)
+Il faut que vous [veniez] au bureau lundi matin. | باید دوشنبه صبح به دفتر بیایید. | d: venez, venir, viendrez | hint: (venir)
+Il faut qu'on [prenne] un taxi, il est déjà tard. | باید تاکسی بگیریم، دیر شده. | d: prend, prendre, prenait | hint: (prendre)
+Il faut que nous [prenions] le train de 7 heures. | باید قطار ساعت ۷ را بگیریم. | d: prenons, prendre, preniez | hint: (prendre)
+Il faut que tu [comprennes] une chose : je ne peux pas rester. | باید یک چیز را بفهمی: نمی‌توانم بمانم. | d: comprends, comprendre, comprenions | hint: (comprendre)
+Il faut que vous [buviez] beaucoup d'eau quand il fait chaud. | وقتی هوا گرم است، باید زیاد آب بنوشید. | d: buvez, boire, boiviez | hint: (boire)
+Il faut que tout le monde [reçoive] le message avant ce soir. | همه باید تا امشب پیام را دریافت کنند. | d: reçoit, recevoir, recevions | hint: (recevoir)
+Il faut que tu [voies]{voir} ce film, il est génial. | باید این فیلم را ببینی، محشر است. | d: voir, voyiez, verras | hint: (voir)
+Il faut que nous [voyions]{voir} le médecin cette semaine. | باید این هفته پیش پزشک برویم. | d: voir, voyiez, verrons | hint: (voir)
+Il faut que tu me [croies], je dis la vérité. | باید حرفم را باور کنی، راست می‌گویم. | d: croire, croyiez, croiras | hint: (croire)
+Il faut que tu [sois] prêt à huit heures et que tu [aies] ton passeport. | باید ساعت هشت آماده باشی و پاسپورتت همراهت باشد. | d: es, être, soyez / as, avoir, ayez
+Il faut que nous [allions] au marché et que nous [fassions] la cuisine. | باید به بازار برویم و آشپزی کنیم. | d: allons, aller, aillons / faisons, faire, fassiez
+Il faudrait qu'il [vienne] plus tôt et qu'il [prenne] le métro. | بهتر است او (مرد) زودتر بیاید و مترو سوار شود. | d: vient, venir, venions / prend, prendre, prenions
+Il faut qu'elles [sachent] la vérité et qu'elles [puissent] choisir. | آن‌ها (زن‌ها) باید حقیقت را بدانند و بتوانند انتخاب کنند. | d: savent, savoir, sachiez / peuvent, pouvoir, puissiez
+Il ne faut pas que vous [ayez] froid : il faut que vous [preniez] un manteau. | نباید سردتان بشود: باید یک پالتو بردارید. | d: avez, avoir, ayons / prenez, prendre, prenions
+Il faut que tu [boives] moins de café et que tu [sois] plus calme. | باید کمتر قهوه بنوشی و آرام‌تر باشی. | d: bois, boire, buviez / es, être, soyez
+Il faut que vous [voyiez]{voir} ce musée et que vous [alliez] aussi au château. | باید این موزه را ببینید و به قصر هم بروید. | d: voir, voyions, verrez / allez, aller, ailliez
+transforms:
+Tu dois être patient. => Il faut que tu sois patient. | جمله را با il faut que بنویس.
+Nous devons aller à la banque. => Il faut que nous allions à la banque. ; Il faut qu'on aille à la banque. | جمله را با il faut que بنویس.
+Vous devez faire attention. => Il faut que vous fassiez attention. | جمله را با il faut que بنویس.
+Il doit venir demain. => Il faut qu'il vienne demain. | جمله را با il faut que بنویس.
+Je dois prendre le bus. => Il faut que je prenne le bus. | جمله را با il faut que بنویس.
+Tu dois avoir ton passeport. => Il faut que tu aies ton passeport. | جمله را با il faut que بنویس.
+Ils doivent savoir la vérité. => Il faut qu'ils sachent la vérité. | جمله را با il faut que بنویس.
+Il faut que je sois prêt. => Il faut que nous soyons prêts. ; Il faut qu'on soit prêts. | فاعل را nous کن.
+translations:
+باید آنجا باشی. => Il faut que tu sois là. ; Tu dois être là. ; Il faut que tu sois là-bas. ; Tu dois être là-bas.
+باید به بانک بروم. => Il faut que j'aille à la banque. ; Je dois aller à la banque.
+باید با ما بیایید. => Il faut que vous veniez avec nous. ; Vous devez venir avec nous.
+او (زن) باید حقیقت را بداند. => Il faut qu'elle sache la vérité. ; Elle doit savoir la vérité.
+باید تاکسی بگیریم. => Il faut que nous prenions un taxi. ; Il faut qu'on prenne un taxi. ; Nous devons prendre un taxi. ; On doit prendre un taxi.
+باید مواظب باشی. => Il faut que tu fasses attention. ; Tu dois faire attention.
+بچه‌ها باید وقت داشته باشند. => Il faut que les enfants aient du temps. ; Il faut que les enfants aient le temps. ; Les enfants doivent avoir du temps. ; Les enfants doivent avoir le temps.
+باید زیاد آب بنوشید. => Il faut que vous buviez beaucoup d'eau. ; Vous devez boire beaucoup d'eau.

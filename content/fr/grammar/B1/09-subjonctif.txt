@@ -1,0 +1,92 @@
+code: fr-b1-subjonctif
+title: subjonctif بعد از il faut que: il faut que tu partes
+scope: ساختن subjonctif présent فعل‌های باقاعده (گروه -er، گروه -ir مثل finir، فعل‌های -re مثل attendre)، partir، sortir، dormir و فعل‌هایی مثل écrire، lire، dire و mettre که از شکل ils ساخته می‌شوند؛ کاربردش بعد از il faut que (il faudra que، il fallait que، il faudrait que، il ne faut pas que) در برابر il faut + مصدر. subjonctif فعل‌های بی‌قاعده (être، avoir، aller، faire، venir، prendre …) در درس بعد می‌آید و subjonctif بعد از خواستن، احساس، نظر و حرف‌های ربط در درس‌های بعد.
+can_do: حالا می‌توانی بگویی یک نفرِ مشخص باید چه کاری بکند: Il faut que tu partes. Il faut que nous finissions ce travail.
+rule: il faut que + فاعل + subjonctif؛ subjonctif = ریشهٔ شکل ils در زمان حال + -e، -es، -e، -ent، و برای nous و vous مثل imparfait: -ions، -iez (que nous partions).
+mistake: فارسی‌زبان‌ها بعد از il faut que زمان حال معمولی می‌آورند («il faut que tu pars»، «il faut que nous finissons») یا que را می‌اندازند («il faut tu partes»)؛ درست: il faut que tu partes، il faut que nous finissions.
+tables: subjonctif présent
+lesson:
+فارسی برای «باید» دو راه دارد: «باید رفت» برای همه، بی‌آنکه بگوید چه کسی، و «باید بروی» برای یک نفر مشخص، با فعل التزامی (بروم، بروی، برود). فرانسوی هم دقیقاً همین دو راه را دارد.
+برای همه، il faut + مصدر (درس A2): Il faut partir. برای یک نفر مشخص، il faut que + فاعل + subjonctif: Il faut que tu partes (باید بروی).
+subjonctif همان «التزامی» فرانسوی است: برای کاری که هنوز انجام نشده و لازم است، خواسته می‌شود یا ممکن است. همیشه بعد از que می‌آید و que پیش از صدادار می‌شود qu': qu'il parte، qu'on attende.
+ساختن برای je، tu، il و ils: شکل ils در زمان حال را بردار، -ent را بینداز و -e، -es، -e، -ent بگذار: ils partent → que je parte، que tu partes، qu'il parte، qu'ils partent.
+برای nous و vous شکلش همان imparfait است، با -ions و -iez: que nous partions، que vous partiez.
+گروه -er: ils parlent → que je parle، que tu parles، que nous parlions. شکل‌های je، tu، il و ils مثل زمان حال‌اند و فرق فقط در nous و vous دیده می‌شود.
+گروه -ir مثل finir: ils finissent → que je finisse، que nous finissions. فعل‌های -re مثل attendre: ils attendent → que j'attende، que vous attendiez.
+partir، sortir و dormir هم همین‌طورند: ils sortent → que tu sortes، ils dorment → qu'il dorme. خیلی از فعل‌های دیگر هم: ils écrivent → que j'écrive، ils lisent → que tu lises، ils disent → qu'il dise، ils mettent → que je mette.
+il faut در زمان‌های دیگر هم همین را می‌خواهد: il faudra que (آینده)، il fallait que (گذشته)، il faudrait que (بهتر است): Il faudrait que tu appelles ta mère.
+منفی: il ne faut pas que tu sortes یعنی «نباید بیرون بروی» (ممنوع است)، نه «لازم نیست».
+مواظب باش: بعد از il faut que هیچ‌وقت زمان حال معمولی (indicatif) نیاور؛ «il faut que tu pars» غلط است و درستش il faut que tu partes. فعل‌های بی‌قاعده مثل être و avoir را در درس بعد می‌بینی.
+table:
+ضمیر | parler | finir | attendre | partir
+que je | parle | finisse | attende | parte
+que tu | parles | finisses | attendes | partes
+qu'il، qu'elle، qu'on | parle | finisse | attende | parte
+que nous | parlions | finissions | attendions | partions
+que vous | parliez | finissiez | attendiez | partiez
+qu'ils، qu'elles | parlent | finissent | attendent | partent
+examples:
+Il faut que tu partes avant six heures. | باید قبل از ساعت شش راه بیفتی.
+Il faut que nous finissions ce travail ce soir. | باید امشب این کار را تمام کنیم.
+Il ne faut pas que vous attendiez dehors, il fait froid. | نباید بیرون منتظر بمانید، هوا سرد است.
+Il faut partir tôt, mais il faut d'abord que j'écrive à Marie. | باید زود راه افتاد، ولی اول باید به ماری نامه بنویسم.
+Il faudra qu'on réponde à ce message demain. | باید فردا به این پیام جواب بدهیم.
+targets:
+Il faut que tu [partes] avant la nuit, la route est longue. | باید قبل از شب راه بیفتی، راه طولانی است. | d: pars, partir, partiez | hint: (partir)
+Il faut que je [parle] à mon directeur demain matin. | باید فردا صبح با مدیرم صحبت کنم. | d: parler, parlais, parlerai | hint: (parler)
+Il faut que nous [finissions] ce travail avant vendredi. | باید این کار را قبل از جمعه تمام کنیم. | d: finissons, finir, finissiez | hint: (finir)
+Il faut que vous [attendiez] ici, le médecin arrive. | باید اینجا منتظر بمانید، پزشک دارد می‌آید. | d: attendez, attendre, attendions | hint: (attendre)
+Il faut qu'elle [choisisse] une université avant juillet. | او (زن) باید تا قبل از ژوئیه یک دانشگاه انتخاب کند. | d: choisit, choisir, choisissiez | hint: (choisir)
+Ils ont besoin d'argent : il faut qu'ils [vendent] leur voiture. | پول لازم دارند: باید ماشینشان را بفروشند. | d: vendre, vendront, vendiez | hint: (vendre)
+Il ne faut pas que tu [oublies] ton passeport à l'hôtel. | نباید پاسپورتت را در هتل جا بگذاری. | d: oublier, oubliais, oublieras | hint: (oublier)
+Il faut que je [sorte] le chien avant le dîner. | باید قبل از شام سگ را بیرون ببرم. | d: sors, sortir, sortions | hint: (sortir)
+Il faut que vous [répondiez] à ce message avant midi. | باید تا ظهر به این پیام جواب بدهید. | d: répondez, répondre, répondions | hint: (répondre)
+Il faut qu'on [mange] quelque chose avant le film. | باید قبل از فیلم چیزی بخوریم. | d: manger, mangeait, mangera | hint: (manger)
+Le médecin dit qu'il faut que nous [mangions] moins de sucre. | پزشک می‌گوید باید کمتر شکر بخوریم. | d: mangeons, manger, mangiez
+Le taxi est là, il faut que tu [descendes] tout de suite. | تاکسی رسیده، باید همین حالا بیایی پایین. | d: descends, descendre, descendiez | hint: (descendre)
+Il faut qu'il [réfléchisse] avant de répondre. | او (مرد) باید قبل از جواب دادن فکر کند. | d: réfléchit, réfléchir, réfléchissiez | hint: (réfléchir)
+Il faut que vous [dormiez] au moins huit heures par nuit. | باید دست‌کم شبی هشت ساعت بخوابید. | d: dormez, dormir, dormions | hint: (dormir)
+Il faut que tu [rendes] ce livre à la bibliothèque lundi. | باید دوشنبه این کتاب را به کتابخانه پس بدهی. | d: rends, rendre, rendiez | hint: (rendre)
+Il faudra que nous [partions] très tôt demain matin. | فردا صبح باید خیلی زود راه بیفتیم. | d: partons, partir, partiez
+Il fallait que je [finisse] mon travail, alors je suis resté au bureau. | باید کارم را تمام می‌کردم، برای همین در دفتر ماندم. | d: finis, finir, finissais
+Il faudrait que tu [appelles] ta grand-mère, elle est seule. | بهتر است به مادربزرگت زنگ بزنی، تنهاست. | d: appeler, appelais, appelleras | hint: (appeler)
+Il ne faut pas que vous [perdiez] votre billet pendant le voyage. | نباید بلیتتان را در طول سفر گم کنید. | d: perdez, perdre, perdions | hint: (perdre)
+Est-ce qu'il faut que je [remplisse] ce formulaire ? | باید این فرم را پر کنم؟ | d: remplis, remplir, remplissiez | hint: (remplir)
+Il faut qu'on [écrive] à la mairie pour avoir une réponse. | باید به شهرداری نامه بنویسیم تا جواب بگیریم. | d: écrit, écrire, écrivait | hint: (écrire)
+Il faut que tu [lises] ce roman, il est magnifique. | باید این رمان را بخوانی، فوق‌العاده است. | d: lis, lire, lisais | hint: (lire)
+Il faut que vous [disiez] la vérité à vos parents. | باید حقیقت را به پدر و مادرتان بگویید. | d: dites, dire, disions | hint: (dire)
+Il faut que je [mette] un costume pour le mariage de samedi ? | باید برای عروسی شنبه کت‌وشلوار بپوشم؟ | d: mets, mettre, mettais | hint: (mettre)
+Il faut que les enfants [rentrent] avant sept heures. | بچه‌ها باید قبل از ساعت هفت به خانه برگردند. | d: rentrer, rentreront, rentriez | hint: (rentrer)
+Il ne faut pas qu'elle [reste]{rester} seule ce soir. | او (زن) نباید امشب تنها بماند. | d: rester, restait, restera | hint: (rester)
+Il a fallu que nous [vendions] la maison de mes grands-parents. | مجبور شدیم خانهٔ پدربزرگ و مادربزرگم را بفروشیم. | d: vendons, vendre, vendiez | hint: (vendre)
+Il faut que vous [choisissiez] entre le train et l'avion. | باید بین قطار و هواپیما یکی را انتخاب کنید. | d: choisissez, choisir, choisissions
+Il faut qu'ils [réussissent] cet examen pour entrer à l'université. | باید در این امتحان قبول شوند تا وارد دانشگاه شوند. | d: réussir, réussiront, réussissiez | hint: (réussir)
+Il faut que tu [expliques] le problème à ton patron. | باید مشکل را برای کارفرمایت توضیح بدهی. | d: expliquer, expliquais, expliqueras | hint: (expliquer)
+Pour être en forme, il faut [dormir] et bien manger. | برای سرحال بودن باید خوابید و خوب غذا خورد. | d: dormes, dorme, dormons | hint: (dormir)
+Il ne faut pas [sortir] seul la nuit dans ce quartier. | در این محله نباید شب‌ها تنها بیرون رفت. | d: sortes, sorte, sortions | hint: (sortir)
+Le bus est plein : il faut [attendre] le prochain. | اتوبوس پر است: باید منتظر بعدی ماند. | d: attendes, attende, attendions | hint: (attendre)
+Il faut que tu [partes] maintenant et que tu m'[appelles] ce soir. | باید همین حالا راه بیفتی و امشب به من زنگ بزنی. | d: pars, partir, partions / appeler, appelais, appelleras
+Il faut que nous [parlions] et que vous m'[écoutiez] vraiment. | باید حرف بزنیم و شما واقعاً به حرفم گوش بدهید. | d: parlons, parler, parliez / écoutez, écouter, écoutions | hint: (parler) / (écouter)
+Ici, il ne faut pas [courir] : il faut que les enfants [marchent]{marcher}. | اینجا نباید دوید: بچه‌ها باید راه بروند. | d: coures, coure, courions / marcher, marcheront, marchiez
+Il faut que je [finisse] ce livre et que je [réponde] à mes messages. | باید این کتاب را تمام کنم و به پیام‌هایم جواب بدهم. | d: finis, finir, finissais / réponds, répondre, répondais
+Il faudrait qu'on [sorte] un peu et qu'on [oublie] le travail. | خوب است کمی بیرون برویم و کار را فراموش کنیم. | d: sort, sortir, sortait / oublier, oubliait, oubliera
+Il faut que vous [remplissiez] ce papier et que vous [attendiez] la réponse. | باید این برگه را پر کنید و منتظر جواب بمانید. | d: remplissez, remplir, remplissions / attendez, attendre, attendions
+Il faut beaucoup [travailler], mais il faut aussi que tu [dormes]. | باید زیاد کار کرد، ولی تو هم باید بخوابی. | d: travailles, travaille, travaillions / dormir, dors, dormais
+transforms:
+Tu dois partir. => Il faut que tu partes. | جمله را با il faut que بنویس.
+Nous devons finir ce travail. => Il faut que nous finissions ce travail. ; Il faut qu'on finisse ce travail. | جمله را با il faut que بنویس.
+Vous devez attendre ici. => Il faut que vous attendiez ici. | جمله را با il faut que بنویس.
+Elle doit choisir une robe. => Il faut qu'elle choisisse une robe. | جمله را با il faut que بنویس.
+Ils doivent répondre vite. => Il faut qu'ils répondent vite. | جمله را با il faut que بنویس.
+Il faut partir. => Il faut que je parte. | جمله را با il faut que و فاعل je بنویس.
+Il faut que je sorte. => Il faut que nous sortions. ; Il faut qu'on sorte. | فاعل را nous کن.
+Il faut que tu dormes ici. => Il ne faut pas que tu dormes ici. | جمله را منفی کن.
+translations:
+باید بروی. => Il faut que tu partes. ; Tu dois partir.
+باید این کار را تمام کنیم. => Il faut que nous finissions ce travail. ; Il faut qu'on finisse ce travail. ; Nous devons finir ce travail. ; On doit finir ce travail.
+شما نباید منتظر بمانید. => Il ne faut pas que vous attendiez. ; Vous ne devez pas attendre.
+او (مرد) باید به این پیام جواب بدهد. => Il faut qu'il réponde à ce message. ; Il doit répondre à ce message.
+باید به مادرم زنگ بزنم. => Il faut que j'appelle ma mère. ; Je dois appeler ma mère. ; Il faut que je téléphone à ma mère. ; Je dois téléphoner à ma mère.
+باید زود بخوابی. => Il faut que tu te couches tôt. ; Tu dois te coucher tôt. ; Il faut que tu dormes tôt. ; Tu dois dormir tôt.
+بچه‌ها باید قبل از شام برگردند. => Il faut que les enfants rentrent avant le dîner. ; Les enfants doivent rentrer avant le dîner.
+باید این کتاب را بخوانی. => Il faut que tu lises ce livre. ; Tu dois lire ce livre.

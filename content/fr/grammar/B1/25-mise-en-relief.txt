@@ -1,0 +1,91 @@
+code: fr-b1-mise-en-relief
+title: تأکید: C'est Paul qui…، C'est demain que…
+scope: برجسته کردن یک بخش جمله با c'est … qui (فاعل) و c'est … que (مفعول، زمان، جا، دلیل، حرف اضافه + اسم): C'est Paul qui a appelé، C'est demain que je pars، C'est à Lyon que…؛ ce sont … qui برای جمع؛ ضمیر تأکیدی بعد از c'est (C'est moi qui…) و جور شدن فعل با آن (C'est moi qui suis، c'est toi qui as)؛ در منفی (Ce n'est pas moi qui…)؛ و Ce qui … / Ce que … / Ce dont …, c'est … (از واحد ۱۳).
+can_do: حالا می‌توانی بگویی دقیقاً چه کسی، کی یا کجا، و چیزی را که مهم است برجسته کنی: C'est moi qui paie ! C'est demain que je pars, pas aujourd'hui.
+rule: برای تأکید روی فاعل: C'est + کلمه + qui + فعل (C'est Paul qui a appelé)؛ روی هر چیز دیگر: C'est + کلمه + que (C'est demain que je pars)؛ با ضمیر، شکل تأکیدی (moi، toi، lui، nous، eux) و فعلِ بعد از qui با همان ضمیر جور می‌شود: C'est moi qui suis en retard.
+mistake: فارسی‌زبان‌ها فعل بعد از c'est moi qui را با c'est جور می‌کنند و سوم‌شخص می‌گذارند («C'est moi qui est en retard»، «C'est toi qui a raison»)، یا ضمیر فاعلی می‌آورند («C'est je qui…»)، یا حرف اضافه را جا می‌اندازند («C'est toi que je parle»)؛ درست: C'est moi qui suis en retard، C'est toi qui as raison، C'est à toi que je parle.
+lesson:
+در فارسی برای تأکید صدا را بالا می‌بریم یا می‌گوییم «پل بود که زنگ زد». فرانسوی هم همین ساختار را دارد: C'est … qui و C'est … que.
+وقتی کلمهٔ مهم فاعل است: C'est + آن کلمه + qui + فعل: Paul a appelé → C'est Paul qui a appelé (پل بود که زنگ زد).
+وقتی چیز دیگری است (مفعول، زمان، جا، دلیل)، que می‌آید: Je pars demain → C'est demain que je pars. J'ai rencontré ma femme à Lyon → C'est à Lyon que j'ai rencontré ma femme.
+قاعدهٔ qui و que همان قاعدهٔ همیشگی است: بعد از جای خالی فعل آمد qui (C'est Paul qui parle)، فاعل آمد que (C'est Paul que je vois).
+حرف اضافه همراه کلمه می‌ماند: Je parle à toi → C'est à toi que je parle. «C'est toi que je parle» غلط است.
+با ضمیر، شکل تأکیدی می‌آید: moi، toi، lui، elle، nous، vous، eux، elles: C'est moi qui…، C'est lui qui…، Ce sont eux qui…؛ «C'est je qui» غلط است.
+مهم‌ترین تله: فعل بعد از qui با همان ضمیر جور می‌شود، نه با c'est: C'est moi qui suis en retard. C'est toi qui as raison. C'est nous qui avons gagné. C'est vous qui êtes responsables.
+پس «C'est moi qui est…» غلط است، همان‌طور که «je est» غلط است. سر میز رستوران می‌شنوی: Laisse, c'est moi qui paie !
+برای جمع ce sont می‌آید: Ce sont mes parents qui ont payé. در گفتار C'est eux qui… هم می‌گویند.
+در منفی: Ce n'est pas moi qui ai pris ton stylo. Ce n'est pas demain que je pars, c'est lundi.
+راه دیگر تأکید روی یک چیز، ce qui، ce que و ce dont است (واحد ۱۳): Ce qui me plaît, c'est la mer. Ce que je veux, c'est dormir. Ce dont j'ai besoin, c'est de silence.
+table:
+تأکید روی | ساختار | مثال
+فاعل | C'est … qui + فعل | C'est Paul qui a appelé.
+مفعول | C'est … que + فاعل | C'est ce film que je veux voir.
+زمان، جا، دلیل | C'est … que | C'est demain que je pars.
+ضمیر | C'est moi، toi، lui، nous… qui | C'est moi qui suis en retard.
+جمع | Ce sont … qui / que | Ce sont mes parents qui ont payé.
+یک چیز | Ce qui / Ce que …, c'est … | Ce que j'aime, c'est la mer.
+examples:
+C'est Marie qui a préparé ce délicieux gâteau. | ماری بود که این کیک خوشمزه را درست کرد.
+C'est samedi que nous partons, pas dimanche. | شنبه است که راه می‌افتیم، نه یکشنبه.
+Laisse, c'est moi qui paie ! | بگذار، من حساب می‌کنم!
+Ce n'est pas toi qui as cassé la tasse ? | تو نبودی که فنجان را شکستی؟
+Ce que je préfère en hiver, c'est rester à la maison avec un bon livre. | چیزی که در زمستان از همه بیشتر دوست دارم این است که با یک کتاب خوب در خانه بمانم.
+targets:
+C'est Paul [qui] t'a appelé ce matin, pas Pierre. | امروز صبح پل بود که به تو زنگ زد، نه پیر. | d: que, dont, où
+C'est ma sœur [qui] fait les meilleurs gâteaux de la famille. | خواهرم است که بهترین کیک‌های خانواده را می‌پزد. | d: que, dont, où
+Ce sont les voisins [qui] font tout ce bruit. | همسایه‌ها هستند که این همه سروصدا می‌کنند. | d: que, dont, où
+C'est le directeur [qui] décide, pas nous. | مدیر است که تصمیم می‌گیرد، نه ما. | d: que, dont, où
+C'est demain [que] je pars en vacances, pas aujourd'hui. | فرداست که به تعطیلات می‌روم، نه امروز. | d: qui, dont, quand
+C'est à Lyon [que] j'ai rencontré ma femme. | در لیون بود که با همسرم آشنا شدم. | d: qui, dont, quoi
+C'est ce livre [que] je cherchais depuis des semaines. | این همان کتابی است که هفته‌ها دنبالش بودم. | d: qui, dont, où
+C'est pour toi [que] j'ai acheté ces fleurs. | برای تو بود که این گل‌ها را خریدم. | d: qui, dont, quoi
+C'est en 2010 [que] nous sommes arrivés en France. | سال ۲۰۱۰ بود که به فرانسه آمدیم. | d: qui, quand, dont
+C'est parce qu'il pleuvait [que] nous sommes restés à la maison. | به خاطر باران بود که در خانه ماندیم. | d: qui, donc, dont
+C'est avec Sara [que] je vais au concert samedi. | با سارا است که شنبه به کنسرت می‌روم. | d: qui, dont, quoi
+C'est en travaillant beaucoup [qu']elle a réussi. | با کار زیاد بود که او (زن) موفق شد. | d: qui, dont, quand
+Ce n'est pas Marie [que] j'ai vue au marché, c'est sa sœur. | کسی که در بازار دیدم ماری نبود، خواهرش بود. | d: qui, dont, où
+Est-ce que c'est ici [que] le bus s'arrête ? | اتوبوس همین‌جا می‌ایستد؟ | d: qui, dont, quand
+C'est à toi [que] je parle, pas à lui ! | با تو هستم، نه با او! | d: qui, dont, quoi
+C'est grâce à toi [que] j'ai trouvé ce travail. | به لطف تو بود که این کار را پیدا کردم. | d: qui, dont, quoi
+C'est moi qui [suis] en retard, désolé. | من‌ام که دیر کرده‌ام، ببخشید. | d: est, es, sont | hint: (être)
+C'est toi qui [as] raison, je me suis trompé. | حق با توست، من اشتباه کردم. | d: a, ai, avez | hint: (avoir)
+C'est nous qui [avons] préparé ce repas. | ما بودیم که این غذا را درست کردیم. | d: ont, a, avez | hint: (avoir)
+C'est vous qui [êtes] responsables de ce projet ? | شما هستید که مسئول این پروژه‌اید؟ | d: sont, est, sommes | hint: (être)
+Ce soir, c'est moi qui [fais] la cuisine. | امشب من آشپزی می‌کنم. | d: fait, faites, font | hint: (faire)
+C'est toi qui [vas] conduire ou c'est moi ? | تو رانندگی می‌کنی یا من؟ | d: va, vais, allez | hint: (aller)
+C'est moi qui [ai] cassé ton verre, je suis désolé. | من بودم که لیوانت را شکستم، متأسفم. | d: a, as, avons | hint: (avoir)
+C'est nous qui [payons] l'addition ce soir. | امشب ما صورت‌حساب را می‌پردازیم. | d: paient, payez, paie | hint: (payer)
+Ce sont eux qui [ont] trouvé la solution. | آن‌ها بودند که راه‌حل را پیدا کردند. | d: a, avons, avez | hint: (avoir)
+C'est moi qui [dois] partir le premier, mon train est à six heures. | من باید اول بروم، قطارم ساعت شش است. | d: doit, devons, doivent | hint: (devoir)
+C'est [lui] qui a gagné la course. | او (مرد) بود که مسابقه را برد. | d: il, le, son
+Ce n'est pas [moi] qui ai pris ton stylo ! | من نبودم که خودکارت را برداشتم! | d: je, me, mon
+Ce sont [eux] qui ont réservé l'hôtel. | آن‌ها بودند که هتل را رزرو کردند. | d: ils, leur, les | ok: elles
+C'est [elle] qui a organisé tout le voyage. | او (زن) بود که همهٔ سفر را ترتیب داد. | d: la, sa, se
+C'est [toi] qui as choisi ce restaurant, alors ne te plains pas ! | تو بودی که این رستوران را انتخاب کردی، پس غر نزن! | d: tu, ton, ta
+[Ce que] je veux, c'est un peu de silence. | چیزی که می‌خواهم کمی سکوت است. | d: Ce qui, Ce dont, Qu'est-ce que
+[Ce qui] m'énerve{énerver}, c'est qu'il ne répond jamais au téléphone. | چیزی که کلافه‌ام می‌کند این است که هیچ‌وقت تلفن را جواب نمی‌دهد. | d: Ce que, Ce dont, Qu'est-ce qui
+[Ce dont] j'ai besoin, c'est de dormir. | چیزی که لازم دارم خواب است. | d: Ce que, Ce qui, Dont
+C'est moi qui [suis] arrivé le premier, mais c'est toi qui [as] gagné. | من اول رسیدم، ولی تو بردی. | d: est, es, sont / a, ai, avez
+Ce sont [eux] qui ont commencé, ce n'est pas [moi] ! | آن‌ها شروع کردند، نه من! | d: ils, leur, les / je, me, mon | ok: elles
+C'est ici [que] j'ai grandi et c'est là-bas [que] mes parents habitent encore. | من اینجا بزرگ شدم و پدر و مادرم هنوز آنجا زندگی می‌کنند. | d: qui, dont, quand / qui, dont, quand
+[Ce qui] me plaît, c'est le soleil, et [ce que] je déteste, c'est le vent. | چیزی که خوشم می‌آید آفتاب است و چیزی که از آن بدم می‌آید باد است. | d: Ce que, Ce dont, Qu'est-ce qui / ce qui, ce dont, qu'est-ce que
+C'est toi qui [choisis] le film, et c'est nous qui [payons] le dîner. | تو فیلم را انتخاب می‌کنی و ما پول شام را می‌دهیم. | d: choisit, choisissent, choisissons / paient, payez, paie | hint: (choisir)
+Ce sont tes parents [qui] t'ont appelé, et c'est demain [qu']ils arrivent. | پدر و مادرت بودند که به تو زنگ زدند، و فردا می‌رسند. | d: que, dont, où / qui, dont, quand
+transforms:
+Paul a appelé. => C'est Paul qui a appelé. | روی «Paul» تأکید کن.
+Je pars demain. => C'est demain que je pars. | روی «demain» تأکید کن.
+J'ai rencontré Marie à Lyon. => C'est à Lyon que j'ai rencontré Marie. | روی «à Lyon» تأکید کن.
+Je paie. => C'est moi qui paie. ; C'est moi qui paye. | با «c'est moi qui» تأکید کن.
+Nous avons raison. => C'est nous qui avons raison. | روی «nous» تأکید کن.
+Tu as choisi ce film. => C'est toi qui as choisi ce film. | روی «tu» تأکید کن.
+J'aime le cinéma. => Ce que j'aime, c'est le cinéma. | با «Ce que …, c'est …» تأکید کن.
+Ils ont fait ce gâteau. => Ce sont eux qui ont fait ce gâteau. ; C'est eux qui ont fait ce gâteau. | روی «ils» تأکید کن.
+translations:
+من بودم که زنگ زدم. => C'est moi qui ai appelé. ; C'est moi qui ai téléphoné.
+فرداست که راه می‌افتیم، نه امروز. => C'est demain que nous partons, pas aujourd'hui. ; C'est demain qu'on part, pas aujourd'hui.
+حق با توست، نه با من. => C'est toi qui as raison, pas moi. ; Tu as raison, pas moi.
+چیزی که لازم دارم کمی استراحت است. => Ce dont j'ai besoin, c'est d'un peu de repos. ; Ce dont j'ai besoin, c'est un peu de repos.
+آن‌ها بودند که پول شام را دادند. => Ce sont eux qui ont payé le dîner. ; C'est eux qui ont payé le dîner. ; Ce sont elles qui ont payé le dîner. ; C'est elles qui ont payé le dîner.
+من نبودم که در را باز گذاشتم. => Ce n'est pas moi qui ai laissé la porte ouverte.
+در پاریس بود که با هم آشنا شدیم. => C'est à Paris que nous nous sommes rencontrés. ; C'est à Paris que nous nous sommes rencontrées. ; C'est à Paris qu'on s'est rencontrés. ; C'est à Paris qu'on s'est rencontrées. ; C'est à Paris qu'on s'est rencontré.
+چیزی که دوست دارم سفر کردن است. => Ce que j'aime, c'est voyager. ; Ce qui me plaît, c'est voyager.

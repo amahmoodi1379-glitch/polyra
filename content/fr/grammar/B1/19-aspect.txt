@@ -1,0 +1,92 @@
+code: fr-b1-aspect
+title: مرحله‌های یک کار: être en train de، venir de، être sur le point de
+scope: گفتن مرحلهٔ یک کار با مصدر: être sur le point de (در آستانهٔ)، commencer à و se mettre à (شروع کردن)، être en train de (در حال)، continuer à (ادامه دادن)، finir de و arrêter de (تمام کردن، دست کشیدن)، venir de (تازه … کرده)، در زمان حال و در گذشته (j'étais en train de manger quand …، il venait de partir، il s'est mis à pleuvoir)؛ آیندهٔ نزدیک aller + مصدر را از A1 می‌شناسی.
+can_do: حالا می‌توانی بگویی کاری در چه مرحله‌ای است: Je suis en train de cuisiner. Le train vient de partir. Le film est sur le point de commencer. Il s'est mis à pleuvoir.
+rule: être sur le point de، être en train de، venir de + مصدر؛ commencer à، se mettre à، continuer à، finir de، arrêter de + مصدر؛ در ماجرای گذشته: j'étais en train de …، il venait de … (با imparfait).
+mistake: فارسی برای کاری که همین الان تمام شده فعل گذشته می‌آورد («قطار همین الان رفت»)، برای همین فارسی‌زبان‌ها می‌گویند «le train est parti maintenant» یا «le train est venu de partir»؛ درست: Le train vient de partir، با venir در زمان حال، و در گذشته: le train venait de partir. «داشتم … می‌کردم» را هم با avoir نساز («j'avais en train de manger»)؛ درست: j'étais en train de manger.
+lesson:
+فارسی برای مرحلهٔ یک کار فعل کمکی دارد: «دارم می‌خورم»، «تازه خوردم»، «نزدیک است شروع شود». فرانسوی برای هر مرحله یک ساخت دارد که بعدش مصدر می‌آید.
+در حال انجام: être en train de + مصدر یعنی «دارم … می‌کنم»: Je suis en train de cuisiner. زمان حال ساده (je cuisine) هم همین معنی را دارد، ولی en train de روی «همین الان، وسط کار» تأکید می‌کند.
+تازه تمام‌شده: venir de + مصدر یعنی «همین الان، تازه»: Le train vient de partir (قطار همین الان رفت). venir در زمان حال است، هرچند فارسی فعل گذشته دارد. پیش از صدادار de می‌شود d': Nous venons d'arriver.
+در آستانه: être sur le point de + مصدر یعنی «نزدیک است، دارد …»: Le film est sur le point de commencer. این از aller + مصدر (le film va commencer) نزدیک‌تر است: همین چند لحظهٔ دیگر.
+شروع: commencer à + مصدر (Il commence à pleuvoir) و se mettre à + مصدر برای شروعی ناگهانی (Le bébé s'est mis à pleurer). se mettre à در passé composé با être است و جور می‌شود: elle s'est mise à rire.
+ادامه: continuer à + مصدر؛ continuer de هم درست است: Elle continue à travailler.
+پایان: finir de + مصدر یعنی کاری را تمام کردن (J'ai fini de manger) و arrêter de + مصدر یعنی دست کشیدن از یک کار یا عادت (Il a arrêté de fumer).
+در ماجرای گذشته، être en train de و venir de در imparfait می‌آیند: J'étais en train de dormir quand tu as appelé. Le train venait de partir quand je suis arrivé.
+«il est venu de partir» هیچ‌وقت درست نیست: برای «تازه رفته بود» بگو il venait de partir.
+فعل بعد از همهٔ این ساخت‌ها مصدر است و ضمیرش پیش از همان مصدر می‌آید: Je suis en train de le lire. Elle vient de m'appeler.
+مواظب باش: «داشتم» فارسی را با avoir ترجمه نکن؛ «داشتم می‌خواندم» یعنی j'étais en train de lire یا je lisais.
+table:
+مرحله | ساخت | مثال
+پیش از شروع | être sur le point de | Le film est sur le point de commencer.
+شروع | commencer à، se mettre à | Il s'est mis à pleuvoir.
+در حال انجام | être en train de | Je suis en train de cuisiner.
+ادامه | continuer à | Elle continue à travailler.
+پایان | finir de، arrêter de | Il a arrêté de fumer.
+تازه تمام‌شده | venir de | Le train vient de partir.
+examples:
+Je ne peux pas répondre, je suis en train de cuisiner. | نمی‌توانم جواب بدهم، دارم آشپزی می‌کنم.
+Le directeur vient de partir. | مدیر همین الان رفت.
+Le concert est sur le point de commencer. | کنسرت دارد شروع می‌شود.
+J'étais en train de dormir quand tu as appelé{appeler}. | خواب بودم که زنگ زدی.
+Il s'est mis{se mettre à} à pleuvoir au milieu du match. | وسط مسابقه باران گرفت.
+Mon père a arrêté de fumer. | پدرم سیگار را ترک کرد.
+targets:
+Ne fais pas de bruit, le bébé [est en train de] s'endormir. | سروصدا نکن، بچه دارد خوابش می‌برد. | d: a en train de, est en train à, était en train de
+Je ne peux pas te parler, je [suis en train de] conduire. | نمی‌توانم با تو حرف بزنم، دارم رانندگی می‌کنم. | d: ai en train de, suis en train à, étais en train de
+Tu peux m'appeler{appeler} plus tard ? Nous [sommes en train de] manger. | می‌توانی بعداً به من زنگ بزنی؟ داریم غذا می‌خوریم. | d: avons en train de, sommes en train à, étions en train de
+Qu'est-ce que tu [es en train de] faire ? | داری چه کار می‌کنی؟ | d: as en train de, es en train à, est en train de
+J'[étais en train de] prendre ma douche quand le téléphone a sonné. | داشتم دوش می‌گرفتم که تلفن زنگ زد. | d: avais en train de, suis en train de, étais en train à | full: Quand le téléphone a sonné, j'étais en train de prendre ma douche.
+Les enfants [étaient en train de] jouer dehors quand il a commencé à pleuvoir. | بچه‌ها داشتند بیرون بازی می‌کردند که باران شروع شد. | d: avaient en train de, sont en train de, était en train de
+Quand je suis{être} entré, ils [étaient en train de] se disputer. | وقتی وارد شدم، داشتند با هم دعوا می‌کردند. | d: avaient en train de, sont en train de, étaient en train à | full: Ils étaient en train de se disputer quand je suis entré.
+Au moment où je l'ai vu, il [était en train de] parler avec le directeur. | همان لحظه که دیدمش، داشت با مدیر حرف می‌زد. | d: avait en train de, est en train de, était en train à
+Désolé, le directeur [vient de] partir. | متأسفم، مدیر همین الان رفت. | d: est venu de, viendra de, va de
+Je t'appelle{appeler} plus tard : nous [venons d']arriver à l'hôtel. | بعداً زنگ می‌زنم: همین الان به هتل رسیدیم. | d: sommes venus d', venions d', allons d'
+Le bus [vient de] passer, il faut attendre le prochain. | اتوبوس همین الان رد شد، باید منتظر بعدی بمانیم. | d: est venu de, venait de, viendra de
+Je [viens de] recevoir ton message, merci ! | همین الان پیامت به دستم رسید، ممنون! | d: suis venu de, venais de, vais de
+Bonne nouvelle{nouvelle} : Julie [vient d']avoir un bébé ! | خبر خوب: ژولی تازه بچه‌دار شده! | d: est venue d', venait d', va d'
+Bravo ! Vous [venez de] gagner un voyage à Rome. | تبریک! شما برندهٔ یک سفر به رم شدید. | d: êtes venus de, veniez de, allez de
+Ils [viennent de] s'installer dans le quartier, ils ne connaissent personne. | تازه به این محله آمده‌اند، هیچ‌کس را نمی‌شناسند. | d: sont venus de, venaient de, vont de
+Quand je suis{être} arrivé à la gare, le train [venait de] partir. | وقتی به ایستگاه رسیدم، قطار تازه رفته بود. | d: vient de, est venu de, viendrait de | full: Le train venait de partir quand je suis arrivé à la gare.
+Elle [venait de] finir l'université quand elle a trouvé ce travail. | تازه دانشگاه را تمام کرده بود که این کار را پیدا کرد. | d: vient de, est venue de, allait de
+Nous [venions de] nous coucher quand on a frappé à la porte. | تازه به رختخواب رفته بودیم که کسی در زد. | d: venons de, sommes venus de, étions venus de
+Dépêche-toi, le film [est sur le point de] commencer ! | عجله کن، فیلم دارد شروع می‌شود! | d: a sur le point de, est sur le point à, était sur le point de | ok: va
+J'[étais sur le point de] partir quand Paul m'a appelé{appeler}. | داشتم راه می‌افتادم که پل به من زنگ زد. | d: avais sur le point de, suis sur le point de, étais sur le point à | ok: allais
+Bonne nouvelle{nouvelle} : nous [sommes sur le point de] signer le contrat. | خبر خوب: داریم قرارداد را امضا می‌کنیم. | d: avons sur le point de, sommes sur le point à, sommes sur la point de | ok: allons
+Il [a commencé à] pleuvoir pendant le match. | وسط مسابقه باران شروع شد. | d: a commencé, est commencé à, a commencé en | ok: s'est mis à, a commencé de
+Le bébé [s'est mis à]{se mettre à} pleurer au milieu de la nuit. | بچه نصف شب زد زیر گریه. | d: a mis à, s'est mis de, s'est mise à | ok: a commencé à
+Quand elle a vu le cadeau, Léa [s'est mise à]{se mettre à} rire. | وقتی لئا هدیه را دید، زد زیر خنده. | d: a mise à, s'est mis à, s'est mise de | ok: a commencé à
+Depuis le mois dernier, je [me suis mis à]{se mettre à} courir le matin. | از ماه پیش، صبح‌ها دویدن را شروع کرده‌ام. | d: m'ai mis à, me suis mis de, se suis mis à | ok: me suis mise à
+Après quelques semaines, les étudiants [commencent à] mieux comprendre. | بعد از چند هفته، دانشجوها کم‌کم بهتر می‌فهمند. | d: commencent, commencent en, commence à | ok: commencent de
+Malgré la pluie, les enfants [ont continué à] jouer dehors. | با وجود باران، بچه‌ها به بازی در بیرون ادامه دادند. | d: ont continué, sont continués à, a continué à | ok: ont continué de
+Tu [continues à] travailler le samedi ? | هنوز شنبه‌ها کار می‌کنی؟ | d: continues, continue à, continues en | ok: continues de
+Même à 70 ans, mon grand-père [continuait à] aller au bureau tous les jours. | پدربزرگم حتی در هفتاد سالگی هم هر روز به اداره می‌رفت. | d: continuait, continuais à, est continué à | ok: continuait de
+Mon oncle [a arrêté de] fumer il y a deux ans. | عمویم دو سال پیش سیگار را ترک کرد. | d: a arrêté, est arrêté de, a arrêté à | ok: a cessé de
+[Arrête de] crier, tout le monde nous regarde ! | داد نزن، همه دارند نگاهمان می‌کنند! | d: Arrête, Arrête à, Arrêtes de | ok: Cesse de
+Tu peux prendre l'ordinateur, j'[ai fini de] travailler. | می‌توانی کامپیوتر را برداری، کارم تمام شد. | d: ai fini, suis fini de, ai fini à | ok: ai terminé de
+Nous [finissons de] ranger la cuisine et nous arrivons. | داریم آشپزخانه را مرتب می‌کنیم و بعد می‌آییم. | d: finissons, finissons à, sommes finis de | ok: terminons de
+J'[étais en train de] lire quand le téléphone [s'est mis à]{se mettre à} sonner. | داشتم کتاب می‌خواندم که تلفن زنگ زد. | d: avais en train de, suis en train de, étais en train à / a mis à, s'est mis de, s'est mise à | ok: étais en train de / a commencé à
+Le dernier bus [venait de] passer, alors nous [avons commencé à] marcher. | آخرین اتوبوس تازه رد شده بود، پس راه افتادیم که پیاده برویم. | d: vient de, est venu de, va de / avons commencé, sommes commencés à, avons commencé en | ok: venait de / avons commencé de
+Je [viens de] terminer mon projet et je [suis sur le point de] l'envoyer à mon chef. | همین الان پروژه‌ام را تمام کردم و می‌خواهم آن را برای رئیسم بفرستم. | d: suis venu de, venais de, vais de / ai sur le point de, suis sur le point à, étais sur le point de | ok: viens de / vais
+Elle [venait de] sortir quand il [a commencé à] neiger. | تازه بیرون رفته بود که برف شروع شد. | d: vient de, est venue de, allait de / a commencé, est commencé à, a commencé en | ok: venait de / s'est mis à, a commencé de
+Il [a arrêté de] travailler à 60 ans, mais il [continue à] aider son fils. | در شصت سالگی کار را کنار گذاشت، ولی هنوز به پسرش کمک می‌کند. | d: a arrêté, est arrêté de, a arrêté à / continue, continue en, continues à | ok: a cessé de / continue de
+Nous [étions sur le point de] sortir quand il [s'est mis à]{se mettre à} pleuvoir. | داشتیم بیرون می‌رفتیم که باران گرفت. | d: avions sur le point de, sommes sur le point de, étions sur le point à / a mis à, s'est mis de, s'est mise à | ok: allions / a commencé à
+Tu [es en train de] lire quoi ? — Je [viens de] commencer un nouveau roman. | داری چه می‌خوانی؟ — تازه یک رمان جدید را شروع کرده‌ام. | d: as en train de, es en train à, est en train de / suis venu de, venais de, vais de 
+transforms:
+Je mange. => Je suis en train de manger. | با être en train de بگو «دارم … می‌کنم».
+Il est parti il y a une minute. => Il vient de partir. | با venir de بگو «همین الان».
+Nous sommes arrivés il y a cinq minutes. => Nous venons d'arriver. ; On vient d'arriver. | با venir de بگو «همین الان».
+Le film va commencer dans une minute. => Le film est sur le point de commencer. | با être sur le point de بگو.
+Il fume encore. => Il continue à fumer. ; Il continue de fumer. | با continuer بگو.
+Elle ne fume plus. => Elle a arrêté de fumer. ; Elle a cessé de fumer. | با arrêter de بگو.
+Je dormais quand tu as appelé{appeler}. => J'étais en train de dormir quand tu as appelé{appeler}. | با être en train de بگو.
+Quand je suis{être} arrivé, il est venu de partir. => Quand je suis{être} arrivé, il venait de partir. | غلط جمله را درست کن.
+translations:
+دارم شام درست می‌کنم. => Je suis en train de préparer le dîner. ; Je prépare le dîner. ; Je suis en train de faire le dîner. ; Je fais le dîner.
+قطار همین الان رفت. => Le train vient de partir.
+وقتی رسیدم، قطار تازه رفته بود. => Quand je suis{être} arrivé, le train venait de partir. ; Quand je suis{être} arrivée, le train venait de partir. ; Lorsque je suis{être} arrivé, le train venait de partir. ; Lorsque je suis{être} arrivée, le train venait de partir. ; Le train venait de partir quand je suis{être} arrivé. ; Le train venait de partir quand je suis{être} arrivée.
+فیلم دارد شروع می‌شود. => Le film est sur le point de commencer. ; Le film va commencer. ; Le film est en train de commencer.
+ناگهان زد زیر گریه. => Soudain, il s'est mis{se mettre à} à pleurer. ; Tout à coup, il s'est mis{se mettre à} à pleurer. ; Brusquement, il s'est mis{se mettre à} à pleurer. ; Soudain, elle s'est mise{se mettre à} à pleurer. ; Tout à coup, elle s'est mise{se mettre à} à pleurer. ; Brusquement, elle s'est mise{se mettre à} à pleurer.
+پدرم دو سال پیش سیگار را ترک کرد. => Mon père a arrêté de fumer il y a deux ans. ; Il y a deux ans, mon père a arrêté de fumer. ; Mon père a cessé de fumer il y a deux ans. ; Il y a deux ans, mon père a cessé de fumer.
+باران همچنان می‌بارد. => Il continue à pleuvoir. ; Il continue de pleuvoir. ; Il pleut encore. ; Il pleut toujours.
+داشتم کتاب می‌خواندم که تلفن زنگ زد. => J'étais en train de lire quand le téléphone a sonné. ; Je lisais quand le téléphone a sonné. ; J'étais en train de lire un livre quand le téléphone a sonné. ; Je lisais un livre quand le téléphone a sonné. ; Quand le téléphone a sonné, j'étais en train de lire. ; Quand le téléphone a sonné, je lisais. ; Quand le téléphone a sonné, j'étais en train de lire un livre. ; Quand le téléphone a sonné, je lisais un livre.

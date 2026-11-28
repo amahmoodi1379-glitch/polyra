@@ -1,0 +1,89 @@
+code: fr-b1-si-imparfait
+title: «اگر … بود»: si + imparfait، conditionnel
+scope: جملهٔ شرطیِ فرضی: si + imparfait و در جملهٔ دیگر conditionnel présent (Si j'avais le temps, je voyagerais)، هرگز conditionnel یا futur بعد از si، فرقش با si + présent در A2 (S'il fait beau demain, on ira à la plage)، Si j'étais toi / à ta place برای نصیحت، و Et si + imparfait برای پیشنهاد (Et si on allait au cinéma ?)؛ شرط در گذشته (si j'avais su …) در B2 می‌آید.
+can_do: حالا می‌توانی بگویی اگر چیزی جور دیگری بود چه می‌کردی و چیزی را پیشنهاد کنی: Si j'avais le temps, je voyagerais. Si j'étais toi, je dirais la vérité. Et si on allait au cinéma ?
+rule: si + imparfait، و در جملهٔ دیگر conditionnel: Si j'avais le temps, je voyagerais؛ بعد از si هرگز conditionnel و futur نمی‌آید.
+mistake: فارسی در هر دو بخش ماضی می‌گذارد («اگر وقت داشتم، سفر می‌کردم»)، برای همین فارسی‌زبان‌ها در جملهٔ دوم هم imparfait می‌گذارند («Si j'avais le temps, je voyageais»)؛ بعضی هم conditionnel را بعد از si می‌برند («Si j'aurais le temps»). درست: Si j'avais le temps, je voyagerais: imparfait فقط بعد از si، و conditionnel در جملهٔ دیگر.
+lesson:
+در A2 یاد گرفتی که si + présent برای شرطی است که ممکن است واقعاً پیش بیاید: S'il fait beau demain, on ira à la plage.
+حالا شرطِ فرضی، یعنی چیزی که الان درست نیست یا بعید است. فارسی می‌گوید «اگر وقت داشتم، سفر می‌کردم» و فرانسوی: si + imparfait، و در جملهٔ دیگر conditionnel: Si j'avais le temps, je voyagerais.
+معنی‌اش این است که الان وقت ندارم و سفر نمی‌کنم. imparfait بعد از si اینجا دربارهٔ گذشته نیست؛ دربارهٔ حالا یا آینده است.
+قاعدهٔ اصلی: بعد از si هرگز conditionnel یا futur نمی‌آید: «Si j'aurais le temps» و «Si j'aurai le temps» غلط‌اند؛ درست: Si j'avais le temps.
+conditionnel فقط در جملهٔ دیگر می‌آید: Si tu venais, je serais content.
+فارسی در هر دو بخش ماضی می‌گذارد (داشتم، می‌کردم)، ولی فرانسوی در جملهٔ دوم conditionnel می‌خواهد: je voyagerais، نه je voyageais.
+ترتیب دو جمله آزاد است: Si j'étais riche, j'achèterais une maison = J'achèterais une maison si j'étais riche. وقتی جملهٔ si اول بیاید، بعدش ویرگول می‌گذاریم.
+سؤال هم همین‌طور است: Qu'est-ce que tu ferais si tu gagnais beaucoup d'argent ?
+Si j'étais toi یا Si j'étais à ta place برای نصیحت به کار می‌رود: Si j'étais toi, je dirais la vérité.
+مقایسه کن: S'il fait beau demain, nous irons à la plage (شاید واقعاً هوا خوب شود)؛ S'il faisait beau, nous irions à la plage (ولی هوا خوب نیست).
+Et si + imparfait، بدون جملهٔ دوم، یک پیشنهاد است: Et si on allait au cinéma ? (چطور است برویم سینما؟)
+یادت باشد: si فقط پیش از il و ils کوتاه می‌شود: s'il faisait، s'ils venaient؛ ولی si elle avait، si on partait.
+table:
+نوع شرط | بعد از si | جملهٔ دیگر | مثال
+ممکن (A2) | présent | futur، présent یا امر | S'il fait beau, on ira au parc.
+فرضی | imparfait | conditionnel | S'il faisait beau, on irait au parc.
+پیشنهاد | Et si + imparfait ? | — | Et si on allait au cinéma ?
+examples:
+Si j'avais le temps, je voyagerais plus souvent. | اگر وقت داشتم، بیشتر سفر می‌کردم.
+S'{si}il faisait beau, on irait à la plage. | اگر هوا خوب بود، به ساحل می‌رفتیم.
+Qu'est-ce que tu ferais si tu gagnais beaucoup d'argent ? | اگر پول زیادی می‌بردی، چه کار می‌کردی؟
+Si j'étais toi, je dirais la vérité. | من اگر جای تو بودم، حقیقت را می‌گفتم.
+Et si on allait au cinéma ce soir ? | چطور است امشب برویم سینما؟
+targets:
+Si j'[avais] le temps, je ferais du sport tous les jours. | اگر وقت داشتم، هر روز ورزش می‌کردم. | d: aurais, aurai, ai | hint: (avoir) | full: Je ferais du sport tous les jours si j'avais le temps.
+Si nous [habitions] à Paris, nous irions au musée chaque semaine. | اگر در پاریس زندگی می‌کردیم، هر هفته به موزه می‌رفتیم. | d: habiterions, habiterons, habitons | ok: vivions | hint: (habiter)
+S'{si}il [faisait] beau, on mangerait dans le jardin. | اگر هوا خوب بود، در باغچه غذا می‌خوردیم. | d: ferait, fera, fait | hint: (faire) | full: On mangerait dans le jardin s'il faisait beau.
+Si tu [parlais] plus lentement, je comprendrais mieux. | اگر آهسته‌تر حرف می‌زدی، بهتر می‌فهمیدم. | d: parlerais, parleras, parles | hint: (parler)
+Si j'étais riche, j'[achèterais] une maison au bord de la mer. | اگر پولدار بودم، یک خانه کنار دریا می‌خریدم. | d: achèterai, achète, achèterions | hint: (acheter)
+Si elle [avait] une voiture, elle viendrait plus souvent. | اگر ماشین داشت، بیشتر می‌آمد. | d: aurait, aura, a | hint: (avoir)
+Si vous [étiez] à ma place{place-2}, que feriez-vous ? | اگر جای من بودید، چه کار می‌کردید؟ | d: seriez, serez, êtes | hint: (être)
+Si mes parents [vivaient] plus près, je les verrais plus souvent. | اگر پدر و مادرم نزدیک‌تر زندگی می‌کردند، بیشتر می‌دیدمشان. | d: vivraient, vivront, vivent | ok: habitaient | hint: (vivre)
+S'{si}il [pleuvait] moins, la ville serait plus agréable. | اگر کمتر باران می‌آمد، شهر دلپذیرتر می‌شد. | d: pleuvrait, pleuvra, pleut | hint: (pleuvoir)
+Si on [partait] tôt, on éviterait les embouteillages. | اگر زود راه می‌افتادیم، به راه‌بندان نمی‌خوردیم. | d: partirait, partira, part | hint: (partir)
+Si je [pouvais], je t'aiderais avec plaisir. | اگر می‌توانستم، با کمال میل کمکت می‌کردم. | d: pourrais, pourrai, peux | hint: (pouvoir)
+Si tu [savais] nager, on pourrait aller à la piscine. | اگر شنا بلد بودی، می‌توانستیم به استخر برویم. | d: saurais, sauras, sais | hint: (savoir)
+Si j'avais un chien, je [me promènerais] tous les jours dans le parc. | اگر سگ داشتم، هر روز در پارک قدم می‌زدم. | d: me promènerai, me promène, te promènerais | hint: (se promener)
+Si nous avions de l'argent, nous [ferions] le tour du monde. | اگر پول داشتیم، دور دنیا را می‌گشتیم. | d: ferons, faisons, fairions | hint: (faire)
+Si tu venais avec moi, ce [serait] plus amusant. | اگر با من می‌آمدی، بامزه‌تر می‌شد. | d: sera, est, seraient | hint: (être)
+Si le train était à l'heure, nous [arriverions] avant midi. | اگر قطار سر وقت بود، قبل از ظهر می‌رسیدیم. | d: arriverons, arrivons, arriverait | hint: (arriver)
+Si tu étais plus patient, tu [comprendrais] mieux tes enfants. | اگر صبورتر بودی، بچه‌هایت را بهتر می‌فهمیدی. | d: comprendras, comprends, comprenderais | hint: (comprendre)
+Si j'étais toi, je [dirais] la vérité. | من اگر جای تو بودم، حقیقت را می‌گفتم. | d: dirai, dis, dirions | hint: (dire)
+Si elle avait le choix, elle [vivrait] à la campagne. | اگر حق انتخاب داشت، در روستا زندگی می‌کرد. | d: vivra, vit, vivrais | ok: habiterait | hint: (vivre)
+Qu'est-ce que tu [ferais] si tu gagnais beaucoup d'argent ? | اگر پول زیادی می‌بردی، چه کار می‌کردی؟ | d: feras, fais, fairais | hint: (faire)
+Si vous pouviez changer une chose, qu'est-ce que vous [changeriez] ? | اگر می‌توانستید یک چیز را عوض کنید، چه چیزی را عوض می‌کردید؟ | d: changerez, changez, changerions | hint: (changer)
+Si les magasins étaient ouverts le dimanche, j'[irais] faire les courses. | اگر مغازه‌ها یکشنبه‌ها باز بودند، خرید می‌رفتم. | d: irai, allerais, irions | hint: (aller)
+Si tu [as] faim, il y a du fromage dans le frigo. | اگر گرسنه‌ای، توی یخچال پنیر هست. | d: avais, aurais, auras | hint: (avoir)
+S'{si}il [pleut] demain, nous resterons à la maison. | اگر فردا باران بیاید، خانه می‌مانیم. | d: pleuvait, pleuvrait, pleuvra | hint: (pleuvoir) | full: Nous resterons à la maison s'il pleut demain.
+Si vous [venez] samedi, je vous présenterai ma famille. | اگر شنبه بیایید، خانواده‌ام را به شما معرفی می‌کنم. | d: veniez, viendriez, viendrez | hint: (venir)
+Si j'ai le temps ce soir, je t'[appellerai]{appeler}. | اگر امشب وقت داشته باشم، به تو زنگ می‌زنم. | d: appellerais, appelais, appellerons | ok: appelle | hint: (appeler)
+Il fait beau ! Et si on [allait] à la plage ? | هوا خوب است! چطور است برویم ساحل؟ | d: irait, ira, allions | hint: (aller)
+Tu as l'air triste. Et si nous [sortions] un peu ? | ناراحت به نظر می‌رسی. چطور است کمی بیرون برویم؟ | d: sortirions, sortirons, sortiez | hint: (sortir)
+Et si tu [invitais] tes collègues à dîner ? | چطور است همکارهایت را به شام دعوت کنی؟ | d: inviterais, inviteras, invitiez | hint: (inviter)
+Si j'étais à ta place{place-2}, je n'[accepterais] pas ce travail. | اگر جای تو بودم، این کار را قبول نمی‌کردم. | d: accepterai, accepte, accepterions | hint: (accepter)
+Si c'était possible, j'[aimerais] partir une semaine plus tôt. | اگر ممکن بود، دلم می‌خواست یک هفته زودتر بروم. | d: aimerai, aime, aimerions | ok: voudrais | hint: (aimer)
+Si tu [voulais], on pourrait regarder un film ce soir. | اگر می‌خواستی، می‌توانستیم امشب یک فیلم ببینیم. | d: voudrais, voudras, veux | hint: (vouloir)
+Si ma grand-mère [était] encore là, elle serait contente de toi. | اگر مادربزرگم هنوز زنده بود، از تو راضی می‌شد. | d: serait, sera, est | hint: (être)
+Si j'[avais] une voiture, je [viendrais] te chercher. | اگر ماشین داشتم، می‌آمدم دنبالت. | d: aurais, aurai, ai / viendrai, viens, venirais | full: Je viendrais te chercher si j'avais une voiture.
+Si nous [étions] en vacances, nous [dormirions] jusqu'à midi. | اگر در تعطیلات بودیم، تا ظهر می‌خوابیدیم. | d: serions, serons, sommes / dormirons, dormons, dormiriez
+S'{si}il [neigeait], les enfants [seraient] contents. | اگر برف می‌آمد، بچه‌ها خوشحال می‌شدند. | d: neigerait, neigera, neige / seront, sont, serait | full: Les enfants seraient contents s'il neigeait.
+Si tu [travaillais] moins, tu [serais] moins fatigué{fatigué}. | اگر کمتر کار می‌کردی، کمتر خسته بودی. | d: travaillerais, travailleras, travailles / seras, es, seriez
+Si Paul [était] là, il nous [aiderait]. | اگر پل اینجا بود، کمکمان می‌کرد. | d: serait, sera, est / aidera, aide, aiderions | full: Paul nous aiderait s'il était là.
+Si vous [aviez] besoin d'aide, je [serais] là. | اگر به کمک نیاز داشتید، من بودم. | d: auriez, aurez, avez / serai, suis, serait
+S'{si}il [fait] beau demain, nous [irons] à la plage. | اگر فردا هوا خوب باشد، به ساحل می‌رویم. | d: faisait, ferait, fera / irions, allions, irez | ok: fait / allons | full: Nous irons à la plage s'il fait beau demain.
+transforms:
+S'{si}il fait beau, nous irons à la plage. => S'{si}il faisait beau, nous irions à la plage. | شرط را فرضی کن (ولی هوا خوب نیست).
+Si j'ai le temps, je viendrai. => Si j'avais le temps, je viendrais. | شرط را فرضی کن.
+Si tu viens, je serai content. => Si tu venais, je serais content. | شرط را فرضی کن.
+Si nous avons de l'argent, nous partirons en vacances. => Si nous avions de l'argent, nous partirions en vacances. | شرط را فرضی کن.
+Si elle peut, elle t'aidera. => Si elle pouvait, elle t'aiderait. | شرط را فرضی کن.
+Si j'aurais une voiture, je viendrais te chercher. => Si j'avais une voiture, je viendrais te chercher. | غلط جمله را درست کن.
+Je ne suis pas riche, alors je n'achète pas cette maison. => Si j'étais riche, j'achèterais cette maison. ; J'achèterais cette maison si j'étais riche. | با si بگو اگر جور دیگری بود چه می‌شد.
+On va au cinéma ? => Et si on allait au cinéma ? ; Et si nous allions au cinéma ? ; Si on allait au cinéma ? | پیشنهاد را با Et si بگو.
+translations:
+اگر وقت داشتم، بیشتر سفر می‌کردم. => Si j'avais le temps, je voyagerais plus. ; Si j'avais le temps, je voyagerais plus souvent. ; Je voyagerais plus si j'avais le temps. ; Je voyagerais plus souvent si j'avais le temps. ; Si j'avais du temps, je voyagerais plus. ; Si j'avais du temps, je voyagerais plus souvent. ; Je voyagerais plus si j'avais du temps. ; Je voyagerais plus souvent si j'avais du temps.
+اگر هوا خوب بود، به ساحل می‌رفتیم. => S'{si}il faisait beau, nous irions à la plage. ; S'{si}il faisait beau, on irait à la plage. ; Nous irions à la plage s'{si}il faisait beau. ; On irait à la plage s'{si}il faisait beau.
+اگر پولدار بودم، یک خانه می‌خریدم. => Si j'étais riche, j'achèterais une maison. ; J'achèterais une maison si j'étais riche.
+چطور است برویم سینما؟ => Et si on allait au cinéma ? ; Et si nous allions au cinéma ? ; Si on allait au cinéma ? ; Si nous allions au cinéma ?
+اگر جای تو بودم، حقیقت را می‌گفتم. => Si j'étais toi, je dirais la vérité. ; Si j'étais à ta place{place-2}, je dirais la vérité. ; À ta place{place-2}, je dirais la vérité. ; Moi, à ta place{place-2}, je dirais la vérité. ; Je dirais la vérité si j'étais toi. ; Je dirais la vérité si j'étais à ta place{place-2}.
+اگر فردا باران بیاید، خانه می‌مانیم. => S'{si}il pleut demain, nous resterons à la maison. ; S'{si}il pleut demain, on restera à la maison. ; Nous resterons à la maison s'{si}il pleut demain. ; On restera à la maison s'{si}il pleut demain. ; S'{si}il pleut demain, nous restons à la maison. ; S'{si}il pleut demain, on reste à la maison.
+اگر با من می‌آمدی، خوشحال می‌شدم. => Si tu venais avec moi, je serais content. ; Si tu venais avec moi, je serais contente. ; Si tu venais avec moi, je serais heureux. ; Si tu venais avec moi, je serais heureuse. ; Je serais content si tu venais avec moi. ; Je serais contente si tu venais avec moi. ; Je serais heureux si tu venais avec moi. ; Je serais heureuse si tu venais avec moi.
+اگر شنا بلد بودی، به استخر می‌رفتیم. => Si tu savais nager, nous irions à la piscine. ; Si tu savais nager, on irait à la piscine. ; Nous irions à la piscine si tu savais nager. ; On irait à la piscine si tu savais nager.

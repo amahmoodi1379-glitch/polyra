@@ -1,0 +1,91 @@
+code: fr-b1-cause
+title: گفتن علت: puisque، comme، grâce à، en effet
+scope: گفتن علت در B1: puisque برای علتی که طرف مقابل هم می‌داند، comme فقط در اول جمله، grâce à + اسم برای علتی که نتیجهٔ خوب دارد در برابر à cause de برای نتیجهٔ بد، en effet برای توضیح جملهٔ قبل، و مرور parce que و car؛ جواب Pourquoi ? همچنان فقط Parce que است. گفتن نتیجه (c'est pourquoi، par conséquent، si bien que) در درس ۳۱ می‌آید.
+can_do: حالا می‌توانی علت کارها و اتفاق‌ها را دقیق‌تر بگویی و علت خوب را از بد جدا کنی: Comme il pleuvait, nous avons pris un taxi. J'ai trouvé ce travail grâce à toi.
+rule: puisque + جمله: علتی که روشن است یا طرف مقابل هم می‌داند؛ comme + جمله: فقط اول جمله؛ grâce à + اسم: علتِ نتیجهٔ خوب، à cause de + اسم: علتِ نتیجهٔ بد؛ en effet: جملهٔ قبل را توضیح می‌دهد؛ جواب Pourquoi ? فقط با Parce que.
+mistake: فارسی برای همهٔ این‌ها «چون» یا «به خاطرِ» می‌گوید، برای همین فارسی‌زبان‌ها برای اتفاق خوب هم à cause de می‌گذارند («J'ai réussi à cause de mon professeur») و به Pourquoi ? با Puisque یا Comme جواب می‌دهند؛ درست: J'ai réussi grâce à mon professeur. Pourquoi tu pars ? – Parce que je suis fatigué.
+lesson:
+در فارسی برای علت تقریباً همیشه «چون» یا «به خاطرِ» می‌گوییم. فرانسوی چند کلمه دارد و هر کدام جای خودش را دارد.
+مرور A2: parce que + جمله (در گفتار و نوشتار)، car + جمله (بیشتر در نوشتن و هیچ‌وقت اول جمله)، à cause de + اسم (à cause de la pluie).
+puisque یعنی «حالا که، از آنجا که»: علتی که روشن است یا طرف مقابل هم آن را می‌داند: Puisque tu es là, aide-moi ! قبل از il، elle، on و صدادار می‌شود puisqu': puisqu'il pleut.
+comme هم یعنی «چون»، ولی وقتی معنی علت می‌دهد فقط اول جمله می‌آید و علت را پیش از نتیجه می‌گوید: Comme il pleuvait, nous avons pris un taxi.
+جواب Pourquoi ? همیشه با Parce que شروع می‌شود؛ puisque، comme و car جواب پرسش نیستند: Pourquoi tu ris ? – Parce que ce film est drôle.
+grâce à + اسم یا ضمیر یعنی «به لطفِ، به کمکِ» و برای علتی است که نتیجهٔ خوب دارد: Grâce à toi, j'ai trouvé un travail.
+à cause de برای علتی است که نتیجهٔ بد دارد: Le concert n'a pas eu lieu à cause de la pluie. «J'ai réussi à cause de toi» یعنی موفقیتم تقصیر توست!
+à در grâce à مثل همیشه با le و les می‌چسبد: grâce au silence، grâce aux voisins؛ de در à cause de هم: à cause du bruit.
+en effet یک جملهٔ جدا را شروع می‌کند و جملهٔ قبل را توضیح می‌دهد، مثل «آخر…» در فارسی: Paul est fatigué. En effet, il a travaillé toute la nuit.
+مواظب باش: بعد از grâce à و à cause de فقط اسم یا ضمیر (toi، lui، eux) می‌آید و بعد از parce que، puisque و comme یک جملهٔ کامل.
+table:
+کلمه | بعدش | کجا و کی | مثال
+parce que | جمله | هر جا؛ جواب Pourquoi ? | Parce que je suis malade.
+car | جمله | فقط بعد از جملهٔ اصلی | Je pars, car il est tard.
+puisque | جمله | علتِ روشن، اول یا وسط | Puisque tu es là, aide-moi.
+comme | جمله | فقط اول جمله | Comme il pleut, je reste ici.
+grâce à | اسم، ضمیر | نتیجهٔ خوب | grâce à ton aide
+à cause de | اسم، ضمیر | نتیجهٔ بد | à cause de la neige
+en effet | جملهٔ جدا | توضیح جملهٔ قبل | En effet, il a travaillé.
+examples:
+Puisque tu es libre ce soir, viens dîner avec nous. | حالا که امشب آزادی، بیا با ما شام بخور.
+Comme il pleuvait, nous avons pris un taxi. | چون باران می‌آمد، تاکسی گرفتیم.
+J'ai trouvé ce travail grâce à mon professeur. | این کار را به لطف استادم پیدا کردم.
+Le match n'a pas eu lieu à cause de l'orage. | مسابقه به خاطر طوفان برگزار نشد.
+Sophie est très contente. En effet, elle a eu son diplôme. | سوفی خیلی خوشحال است. آخر مدرکش را گرفته است.
+targets:
+J'ai trouvé cet appartement [grâce à] ma tante. | این آپارتمان را به کمک خاله‌ام پیدا کردم. | d: à cause de, parce que, puisque
+[Grâce à] ton aide, j'ai fini mon travail à l'heure. | به کمک تو کارم را سر وقت تمام کردم. | d: À cause de, Parce que, Puisque
+Nous sommes arrivés en retard [à cause de] la neige. | به خاطر برف دیر رسیدیم. | d: grâce à, parce que, puisque
+Le concert n'a pas eu lieu [à cause de] la pluie. | کنسرت به خاطر باران برگزار نشد. | d: grâce à, parce que, car
+Elle parle très bien anglais [grâce à] son année à Londres. | او (زن) به لطف یک سالی که در لندن بود خیلی خوب انگلیسی حرف می‌زند. | d: à cause de, parce que, car
+Je n'ai pas pu dormir [à cause de] mes voisins. | به خاطر همسایه‌هایم نتوانستم بخوابم. | d: grâce à, parce que, puisque
+Mon grand-père ne peut plus conduire [à cause de] ses yeux. | پدربزرگم به خاطر چشم‌هایش دیگر نمی‌تواند رانندگی کند. | d: grâce à, parce que, car
+[Grâce à] cette carte, les étudiants paient moins cher au musée. | به لطف این کارت، دانشجوها در موزه کمتر پول می‌دهند. | d: À cause de, Parce que, Puisque
+On a très bien dormi [grâce au] silence de la campagne. | به لطف سکوت روستا خیلی خوب خوابیدیم. | d: à cause du, grâce à le, parce que le
+[À cause de] la chaleur, nous ne sortons pas l'après-midi. | به خاطر گرما بعدازظهرها بیرون نمی‌رویم. | d: Grâce à, Parce que, Car
+Les enfants lisent beaucoup mieux [grâce à] leur nouveau professeur. | بچه‌ها به لطف معلم جدیدشان خیلی بهتر می‌خوانند. | d: à cause de, parce que, car
+J'ai réussi mon examen [grâce à] toi ! Merci ! | به لطف تو امتحانم را قبول شدم! ممنون! | d: à cause de, parce que, car
+Le prix des{des-contr} fruits a augmenté [à cause du] mauvais temps. | قیمت میوه به خاطر بدی هوا بالا رفته است. | d: grâce au, à cause de le, parce que le
+[Comme] nous étions fatigués, nous sommes rentrés tôt. | چون خسته بودیم، زود برگشتیم. | d: Car, Grâce à, Pourtant | ok: Puisque, Parce que
+[Comme] ma voiture était en panne, je suis venu à pied. | چون ماشینم خراب بود، پیاده آمدم. | d: Car, À cause de, Pourtant | ok: Puisque, Parce que
+[Comme] Léa ne mange pas de viande, j'ai fait un plat de légumes. | چون لئا گوشت نمی‌خورد، یک غذای سبزیجات درست کردم. | d: Car, Grâce à, Malgré | ok: Puisque, Parce que
+[Comme] le musée était fermé{fermé}, nous sommes allés au parc. | چون موزه بسته بود، به پارک رفتیم. | d: Car, Malgré, Pour | ok: Puisque, Parce que
+[Comme] personne ne répondait, j'ai laissé un message. | چون کسی جواب نمی‌داد، پیغام گذاشتم. | d: Car, Grâce à, Malgré | ok: Puisque, Parce que
+[Puisque] tu connais bien Lyon, tu peux nous montrer la ville. | حالا که لیون را خوب می‌شناسی، می‌توانی شهر را به ما نشان بدهی. | d: Car, Grâce à, Pour | ok: Comme, Parce que
+[Puisque] tu as faim, on va manger tout de suite. | حالا که گرسنه‌ای، همین الان غذا می‌خوریم. | d: Car, À cause de, Malgré | ok: Comme, Parce que
+[Puisque] vous êtes d'accord, nous commençons lundi. | حالا که موافقید، از دوشنبه شروع می‌کنیم. | d: Car, Grâce à, Pour | ok: Comme, Parce que
+On peut partir, [puisque] tout le monde est là. | حالا که همه آمده‌اند، می‌توانیم راه بیفتیم. | d: grâce à, malgré, pour | ok: parce que, car
+Tu peux prendre ma voiture, [puisque] je ne pars pas ce week-end. | می‌توانی ماشینم را ببری، چون این آخر هفته جایی نمی‌روم. | d: grâce à, à cause de, pourtant | ok: parce que, car
+Prends ton manteau, [car] la nuit sera froide. | پالتویت را بردار، چون شب هوا سرد می‌شود. | d: grâce à, à cause de, pour | ok: parce que, puisque
+Nous avons dormi chez Paul, [car] l'hôtel n'avait plus de chambre. | شب را خانهٔ پل خوابیدیم، چون هتل دیگر اتاق خالی نداشت. | d: grâce à, malgré, pour | ok: parce que, puisque
+Je préfère le train, [parce que] je peux lire pendant le voyage. | قطار را ترجیح می‌دهم، چون در طول سفر می‌توانم کتاب بخوانم. | d: grâce à, à cause de, pourtant | ok: car, puisque
+Pourquoi tu apprends le français ? [Parce que] je vais travailler à Paris. | چرا فرانسوی یاد می‌گیری؟ چون قرار است در پاریس کار کنم. | d: Puisque, Comme, Car
+Pourquoi tu n'es pas venu hier ? [Parce que] j'étais malade. | چرا دیروز نیامدی؟ چون مریض بودم. | d: Puisque, Comme, Car
+Pourquoi Paul est-il si{si-adv} triste ? [Parce que] son chien est malade. | چرا پل این‌قدر ناراحت است؟ چون سگش مریض است. | d: Puisque, Comme, Car
+Si je ne t'ai pas appelé, c'est [parce que] j'avais perdu mon téléphone. | اگر به تو زنگ نزدم، برای این بود که گوشی‌ام را گم کرده بودم. | d: puisque, car, comme
+Le restaurant est fermé{fermé} ce soir. [En effet], le patron est en vacances. | رستوران امشب بسته است. آخر صاحبش به تعطیلات رفته. | d: Pourtant, Grâce à, Puisque
+Je ne bois jamais de café le soir. [En effet], le café m'empêche de dormir. | من هیچ‌وقت شب‌ها قهوه نمی‌خورم. آخر قهوه نمی‌گذارد بخوابم. | d: Pourtant, Grâce à, Comme
+Marie a l'air très fatiguée{fatigué}. [En effet], son bébé pleure toute la nuit. | ماری خیلی خسته به نظر می‌رسد. آخر بچه‌اش تمام شب گریه می‌کند. | d: Pourtant, À cause de, Puisque
+Il fait vraiment froid ce matin. [En effet], il a neigé toute la nuit. | امروز صبح هوا واقعاً سرد است. آخر تمام شب برف آمده. | d: Pourtant, Grâce à, Comme
+[Grâce à] ma sœur, j'ai trouvé un travail, [car] son mari connaît le directeur. | به کمک خواهرم کار پیدا کردم، چون شوهرش مدیر را می‌شناسد. | d: À cause de, Parce que, Puisque / grâce à, à cause de, pour | ok: Grâce à / parce que, puisque
+[Comme] je n'avais pas de voiture, je suis rentré [grâce à] mon collègue. | چون ماشین نداشتم، به لطف همکارم به خانه برگشتم. | d: Car, Grâce à, Pourtant / à cause de, parce que, car | ok: Puisque, Parce que
+Pourquoi tu souris ? [Parce que] j'ai réussi mon examen [grâce à] tes conseils ! | چرا لبخند می‌زنی؟ چون به لطف توصیه‌های تو امتحانم را قبول شدم! | d: Puisque, Comme, Car / à cause de, parce que, car
+Je suis resté au lit [parce que] j'avais de la fièvre, et [à cause de] ça, j'ai raté mon cours. | چون تب داشتم در رختخواب ماندم و به خاطر همین کلاسم را از دست دادم. | d: grâce à, à cause de, pourtant / grâce à, parce que, car | ok: car, puisque
+Paul ne viendra pas ce soir. [En effet], il doit rester au bureau [à cause de] son nouveau projet. | پل امشب نمی‌آید. آخر به خاطر پروژهٔ جدیدش باید در دفتر بماند. | d: Pourtant, Grâce à, Puisque / grâce à, parce que, car
+[Puisque] tu es là, aide{aider}-moi à porter{porter-2} ces sacs, [car] mon dos me fait mal. | حالا که اینجایی، کمکم کن این کیسه‌ها را ببرم، چون کمرم درد می‌کند. | d: Car, Grâce à, Malgré / grâce à, à cause de, pour | ok: Comme, Parce que / parce que, puisque
+transforms:
+Il pleuvait, donc nous sommes restés à la maison. => Comme il pleuvait, nous sommes restés à la maison. | با comme علت را اول جمله بگو.
+J'ai trouvé un travail à cause de mon oncle. => J'ai trouvé un travail grâce à mon oncle. | نتیجه خوب است: کلمهٔ علت را درست کن.
+Le match n'a pas eu lieu grâce à la pluie. => Le match n'a pas eu lieu à cause de la pluie. | نتیجه بد است: کلمهٔ علت را درست کن.
+Tu es là. Aide{aider}-moi ! => Puisque tu es là, aide{aider}-moi ! | دو جمله را با puisque به هم وصل کن.
+Je reste à la maison parce que je suis malade. => Comme je suis malade, je reste à la maison. | جمله را با comme شروع کن.
+Il est fatigué parce qu'il a travaillé toute la nuit. => Il est fatigué. En effet, il a travaillé toute la nuit. | علت را در جملهٔ جدا با En effet بگو.
+Pourquoi tu pars ? Puisque je suis fatigué. => Pourquoi tu pars ? Parce que je suis fatigué. | جواب را درست کن.
+J'ai réussi parce que tu m'as aidé. => J'ai réussi grâce à toi. ; J'ai réussi grâce à ton aide. | به‌جای جملهٔ علت، grâce à بگذار.
+translations:
+حالا که اینجایی، کمکم کن! => Puisque tu es là, aide{aider}-moi ! ; Comme tu es là, aide{aider}-moi ! ; Puisque tu es ici, aide{aider}-moi ! ; Comme tu es ici, aide{aider}-moi !
+به لطف تو این آپارتمان را پیدا کردم. => J'ai trouvé cet appartement grâce à toi. ; Grâce à toi, j'ai trouvé cet appartement.
+به خاطر برف، مسابقه برگزار نشد. => Le match n'a pas eu lieu à cause de la neige. ; À cause de la neige, le match n'a pas eu lieu.
+چون مغازه بسته بود، نان نخریدم. => Comme le magasin était fermé{fermé}, je n'ai pas acheté de pain. ; Puisque le magasin était fermé{fermé}, je n'ai pas acheté de pain. ; Parce que le magasin était fermé{fermé}, je n'ai pas acheté de pain. ; Je n'ai pas acheté de pain parce que le magasin était fermé{fermé}. ; Je n'ai pas acheté de pain car le magasin était fermé{fermé}. ; Je n'ai pas acheté de pain puisque le magasin était fermé{fermé}.
+چرا می‌خندی؟ چون این فیلم خنده‌دار است. => Pourquoi tu ris ? Parce que ce film est drôle. ; Pourquoi ris-tu ? Parce que ce film est drôle. ; Pourquoi est-ce que tu ris ? Parce que ce film est drôle. ; Tu ris pourquoi ? Parce que ce film est drôle.
+او (مرد) خسته است. آخر تمام شب کار کرده است. => Il est fatigué. En effet, il a travaillé toute la nuit. ; Il est fatigué, car il a travaillé toute la nuit. ; Il est fatigué parce qu'il a travaillé toute la nuit.
+حالا که گرسنه‌ای، یک چیزی بخور! => Puisque tu as faim, mange quelque chose ! ; Comme tu as faim, mange quelque chose !
+به خاطر همسایه‌هایم نتوانستم بخوابم. => Je n'ai pas pu dormir à cause de mes voisins. ; À cause de mes voisins, je n'ai pas pu dormir.

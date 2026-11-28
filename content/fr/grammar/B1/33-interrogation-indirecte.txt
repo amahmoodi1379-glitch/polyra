@@ -1,0 +1,91 @@
+code: fr-b1-interrogation-indirecte
+title: نقل سؤال و دستور در گذشته: Il m'a demandé ce que je voulais
+scope: نقل سؤال و دستور وقتی فعل اصلی در گذشته است: il m'a demandé si / où / quand / pourquoi / comment / combien / qui با همان جابه‌جایی زمان‌های درس ۳۲، qu'est-ce que → ce que، qu'est-ce qui → ce qui، ترتیب معمولی جمله بعد از کلمهٔ پرسشی، elle voulait savoir si…، و دستور با dire de یا demander de + مصدر (Il m'a dit de rester، de ne pas parler).
+can_do: حالا می‌توانی سؤال‌ها و دستورهایی را که کسی در گذشته به تو داده برای دیگری تعریف کنی: Le serveur m'a demandé ce que je voulais. Le médecin m'a dit de rester au lit.
+rule: سؤال بله و نه: si + جمله؛ سؤال با کلمهٔ پرسشی: همان کلمه + فاعل + فعل، بدون est-ce que و بدون جابه‌جایی؛ qu'est-ce que → ce que، qu'est-ce qui → ce qui؛ زمان‌ها مثل درس ۳۲ عقب می‌روند؛ دستور: dire / demander de + مصدر.
+mistake: فارسی سؤال را همان‌طور که بود نقل می‌کند («پرسید چه می‌خواهی؟»)، برای همین فارسی‌زبان‌ها می‌نویسند «Il m'a demandé qu'est-ce que je voulais» یا «Il m'a demandé où habitais-je»؛ درست: Il m'a demandé ce que je voulais، Il m'a demandé où j'habitais. برای دستور هم «Il m'a dit que rester» غلط است؛ درست: Il m'a dit de rester.
+lesson:
+در درس A2 دیدی: Il demande si tu viens، Il demande où tu habites. حالا فعل اصلی در گذشته است: il m'a demandé، elle voulait savoir.
+مثل درس ۳۲، زمان‌ها یک قدم عقب می‌روند: « Tu as faim ? » → Il m'a demandé si j'avais faim. « Où iras-tu ? » → Il m'a demandé où j'irais.
+سؤال بله و نه: si + جمله: Elle m'a demandé si j'avais faim. قبل از il و ils می‌شود s': Il a demandé s'il pouvait entrer.
+سؤال با کلمهٔ پرسشی (où، quand، pourquoi، comment، combien، qui): همان کلمه و بعد ترتیب معمولی جمله، بدون جابه‌جایی و بدون est-ce que: « Où habites-tu ? » → Il m'a demandé où j'habitais.
+qu'est-ce que (چه چیزی را) در نقل غیرمستقیم می‌شود ce que: « Qu'est-ce que tu fais ? » → Elle m'a demandé ce que je faisais.
+qu'est-ce qui (چه چیزی، وقتی فاعل است) می‌شود ce qui: « Qu'est-ce qui s'est passé ? » → Il m'a demandé ce qui s'était passé.
+دستور و خواهش: dire de یا demander de + مصدر: « Reste au lit ! » → Le médecin m'a dit de rester au lit. برای منفی: de ne pas + مصدر: Il nous a dit de ne pas parler.
+vouloir savoir هم مثل demander است: Ma mère voulait savoir si nous avions bien dormi.
+آخر جملهٔ غیرمستقیم علامت سؤال نمی‌آید.
+مواظب باش: «qu'est-ce que» و «est-ce que» و جابه‌جایی فاعل (habitais-je) در سؤال غیرمستقیم نمی‌آیند.
+table:
+سؤال یا دستور مستقیم | نقل در گذشته
+« Tu as faim ? » | Il m'a demandé si j'avais faim.
+« Où habites-tu ? » | Il m'a demandé où j'habitais.
+« Qu'est-ce que tu fais ? » | Il m'a demandé ce que je faisais.
+« Qu'est-ce qui se passe ? » | Il m'a demandé ce qui se passait.
+« Quand partiras-tu ? » | Il m'a demandé quand je partirais.
+« Reste au lit ! » | Il m'a dit de rester au lit.
+« Ne parle pas ! » | Il m'a dit de ne pas parler.
+examples:
+Ma voisine m'a demandé si j'avais besoin d'aide. | همسایه‌ام از من پرسید که کمک لازم دارم یا نه.
+Il m'a demandé où j'avais acheté ce manteau. | از من پرسید این پالتو را کجا خریده‌ام.
+Elle voulait savoir ce que je ferais pendant les vacances. | می‌خواست بداند در تعطیلات چه کار می‌کنم.
+Le médecin m'a dit de boire beaucoup d'eau. | پزشک به من گفت زیاد آب بخورم.
+Je lui ai demandé ce qui s'était passé. | از او پرسیدم چه اتفاقی افتاده بود.
+targets:
+Le serveur m'a demandé [si] je voulais du sucre. | گارسون از من پرسید که شکر می‌خواهم یا نه. | d: est-ce que, que, ce que
+Ma mère voulait savoir [si] nous avions bien dormi. | مادرم می‌خواست بداند که خوب خوابیده‌ایم یا نه. | d: est-ce que, que, ce que
+Le petit garçon a demandé [s']il pouvait jouer dehors. | پسر کوچک پرسید که می‌تواند بیرون بازی کند یا نه. | d: si, qu', est-ce qu'
+Je voulais savoir [si] tu viendrais à la fête. | می‌خواستم بدانم به جشن می‌آیی یا نه. | d: est-ce que, que, ce que
+Le policier m'a demandé [si] j'avais vu l'accident. | پلیس از من پرسید که تصادف را دیده‌ام یا نه. | d: est-ce que, que, qu'est-ce que
+Elle m'a demandé [ce que] je faisais le week-end. | از من پرسید آخر هفته‌ها چه کار می‌کنم. | d: qu'est-ce que, que, ce qui
+Le vendeur m'a demandé [ce que] je cherchais. | فروشنده از من پرسید دنبال چه می‌گردم. | d: qu'est-ce que, que, ce qui
+Mes parents voulaient savoir [ce que] j'avais acheté. | پدر و مادرم می‌خواستند بدانند چه خریده‌ام. | d: qu'est-ce que, que, ce qui
+Il m'a demandé [ce qui] s'était passé. | از من پرسید چه اتفاقی افتاده بود. | d: qu'est-ce qui, ce que, que
+Le médecin m'a demandé [ce qui] n'allait pas. | پزشک از من پرسید چه مشکلی دارم. | d: qu'est-ce qui, ce que, que
+Je voulais savoir [ce qui] te faisait peur. | می‌خواستم بدانم از چه می‌ترسی. | d: qu'est-ce qui, ce que, que
+Elle m'a demandé [ce que] je pensais de son nouveau travail. | از من پرسید دربارهٔ کار جدیدش چه فکر می‌کنم. | d: qu'est-ce que, que, ce qui
+Le touriste m'a demandé [où] se trouvait la gare. | توریست از من پرسید ایستگاه کجاست. | d: qu'est-ce que, ce que, que
+Ma grand-mère m'a demandé [quand]{quand} je reviendrais. | مادربزرگم از من پرسید کی برمی‌گردم. | d: qu'est-ce que, ce que, que
+Mon chef m'a demandé [pourquoi] j'étais en retard. | رئیسم از من پرسید چرا دیر کرده‌ام. | d: qu'est-ce que, ce que, que
+Elle voulait savoir [comment] j'avais trouvé cet appartement. | می‌خواست بداند این آپارتمان را چطور پیدا کرده‌ام. | d: qu'est-ce que, ce que, que
+Le client a demandé [combien] coûtait la chambre. | مشتری پرسید اتاق چند است. | d: qu'est-ce que, combien de, quel
+Le policier voulait savoir [qui] conduisait la voiture. | پلیس می‌خواست بداند چه کسی رانندهٔ ماشین بود. | d: qu'est-ce qui, ce qui, que
+Paul m'a demandé [à quelle heure] le film commençait. | پل از من پرسید فیلم ساعت چند شروع می‌شود. | d: quelle heure, qu'est-ce que, ce que
+Le policier m'a demandé où [j'habitais]. | پلیس از من پرسید کجا زندگی می‌کنم. | d: habitais-je, est-ce que j'habitais, que j'habitais
+Elle m'a demandé quand [je partais]. | از من پرسید کی می‌روم. | d: partais-je, est-ce que je partais, que je partais | ok: je partirais
+Ce jour-là, ma voisine m'a demandé si je [pouvais] garder son chat. | آن روز همسایه‌ام از من پرسید که می‌توانم گربه‌اش را نگه دارم یا نه. | d: peux, pourrai, puisse | hint: (pouvoir)
+Il nous a demandé ce que nous [avions fait] la veille. | از ما پرسید روز قبلش چه کار کرده بودیم. | d: avons fait, ferons, faisons | hint: (faire)
+Elle voulait savoir si nous [viendrions] le lendemain. | می‌خواست بداند که فردایش می‌آییم یا نه. | d: viendrons, venons, viendriez | ok: venions | hint: (venir)
+Le professeur m'a demandé pourquoi j'[avais] été absent la veille. | معلم از من پرسید چرا روز قبلش غایب بودم. | d: ai, aurai, aie | hint: (avoir)
+Ce matin-là, ma mère m'a demandé où [était] mon frère. | آن روز صبح مادرم از من پرسید برادرم کجاست. | d: est, sera, soit | hint: (être)
+Le soir de Noël, les enfants m'ont demandé quand ils [pourraient] ouvrir leurs cadeaux. | شب کریسمس بچه‌ها از من پرسیدند کی می‌توانند کادوهایشان را باز کنند. | d: pourront, peuvent, puissent | ok: pouvaient | hint: (pouvoir)
+Le médecin m'a dit [de] rester au lit. | پزشک به من گفت در رختخواب بمانم. | d: que, à, pour
+Ma mère m'a demandé [de] ranger ma chambre. | مادرم از من خواست اتاقم را مرتب کنم. | d: que, à, pour
+Le professeur nous a dit de ne pas [parler] pendant l'examen. | معلم به ما گفت سر امتحان حرف نزنیم. | d: parlons, parlez, parlions | hint: (parler)
+Mon chef m'a demandé de lui [envoyer] les photos. | رئیسم از من خواست عکس‌ها را برایش بفرستم. | d: envoie, envoyais, enverrais | hint: (envoyer)
+Le policier nous a dit [de] montrer nos passeports. | پلیس به ما گفت پاسپورت‌هایمان را نشان بدهیم. | d: que, à, pour
+Paul m'a dit de [fermer] la fenêtre. | پل به من گفت پنجره را ببندم. | d: ferme, fermais, fermé | hint: (fermer)
+Le guide nous a demandé de ne pas [prendre] de photos dans le musée. | راهنما از ما خواست در موزه عکس نگیریم. | d: prenons, prenions, pris | hint: (prendre)
+Elle m'a demandé [si] j'avais faim et [ce que] je voulais manger. | از من پرسید گرسنه‌ام یا نه و چه می‌خواهم بخورم. | d: est-ce que, que, ce que / qu'est-ce que, que, ce qui
+Il voulait savoir [où] j'étais et [pourquoi] je ne répondais pas. | می‌خواست بداند کجا هستم و چرا جواب نمی‌دهم. | d: qu'est-ce que, ce que, que / qu'est-ce que, ce que, que
+Le médecin m'a demandé [ce qui] n'allait pas et m'a dit [de] me reposer. | پزشک از من پرسید چه مشکلی دارم و به من گفت استراحت کنم. | d: qu'est-ce qui, ce que, que / que, à, pour
+Ma mère m'a demandé [quand]{quand} je rentrerais et m'a dit [de] l'appeler{appeler}. | مادرم از من پرسید کی برمی‌گردم و گفت به او زنگ بزنم. | d: qu'est-ce que, ce que, que / que, à, pour
+Le policier m'a demandé [qui] conduisait et [si] j'avais vu l'accident. | پلیس از من پرسید چه کسی رانندگی می‌کرد و تصادف را دیده‌ام یا نه. | d: qu'est-ce qui, ce qui, que / est-ce que, que, qu'est-ce que
+Ce jour-là, le serveur m'a demandé [si] j'avais choisi et [ce que] je voulais boire. | آن روز گارسون از من پرسید که انتخاب کرده‌ام یا نه و چه می‌خواهم بنوشم. | d: est-ce que, que, ce que / qu'est-ce que, que, ce qui
+transforms:
+Il m'a demandé : « Tu as faim ? » => Il m'a demandé si j'avais faim. | سؤال را غیرمستقیم نقل کن.
+Elle m'a demandé : « Où habites-tu ? » => Elle m'a demandé où j'habitais. | سؤال را غیرمستقیم نقل کن.
+Il m'a demandé : « Qu'est-ce que tu fais ? » => Il m'a demandé ce que je faisais. | سؤال را غیرمستقیم نقل کن.
+Elle m'a demandé : « Qu'est-ce qui se passe ? » => Elle m'a demandé ce qui se passait. | سؤال را غیرمستقیم نقل کن.
+Le médecin m'a dit : « Reste au lit ! » => Le médecin m'a dit de rester au lit. | دستور را غیرمستقیم نقل کن.
+Ma mère m'a dit : « Ne rentre pas tard ! » => Ma mère m'a dit de ne pas rentrer tard. | دستور را غیرمستقیم نقل کن.
+Paul m'a demandé : « Quand partiras-tu ? » => Paul m'a demandé quand je partirais. ; Paul m'a demandé quand je partais. | سؤال را غیرمستقیم نقل کن.
+Il m'a demandé : « Pourquoi est-ce que tu es triste ? » => Il m'a demandé pourquoi j'étais triste. | سؤال را غیرمستقیم نقل کن.
+translations:
+از من پرسید که گرسنه‌ام یا نه. => Il m'a demandé si j'avais faim. ; Elle m'a demandé si j'avais faim. ; Il m'a demandé si j'avais faim ou non. ; Elle m'a demandé si j'avais faim ou non. ; Il m'a demandé si j'avais faim ou pas. ; Elle m'a demandé si j'avais faim ou pas.
+از من پرسید کجا زندگی می‌کنم. => Il m'a demandé où j'habitais. ; Elle m'a demandé où j'habitais. ; Il m'a demandé où je vivais. ; Elle m'a demandé où je vivais.
+پرسیدم چه اتفاقی افتاده است. => J'ai demandé ce qui s'était passé. ; J'ai demandé ce qui se passait. ; J'ai demandé ce qui était arrivé.
+پزشک به من گفت زیاد آب بخورم. => Le médecin m'a dit de boire beaucoup d'eau. ; Le docteur m'a dit de boire beaucoup d'eau.
+مادرم از من خواست اتاقم را مرتب کنم. => Ma mère m'a demandé de ranger ma chambre. ; Ma mère m'a dit de ranger ma chambre.
+فروشنده از من پرسید دنبال چه می‌گردم. => Le vendeur m'a demandé ce que je cherchais.
+معلم به ما گفت که حرف نزنیم. => Le professeur nous a dit de ne pas parler. ; Le professeur nous a demandé de ne pas parler.
+می‌خواست بداند کی برمی‌گردم. => Il voulait savoir quand{quand} je rentrerais. ; Elle voulait savoir quand{quand} je rentrerais. ; Il voulait savoir quand{quand} je reviendrais. ; Elle voulait savoir quand{quand} je reviendrais. ; Il voulait savoir quand{quand} je rentrais. ; Elle voulait savoir quand{quand} je rentrais. ; Il voulait savoir quand{quand} je revenais. ; Elle voulait savoir quand{quand} je revenais.

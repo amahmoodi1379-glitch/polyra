@@ -1,0 +1,89 @@
+code: fr-b1-plus-que-parfait-recit
+title: plus-que-parfait در ماجرا: le film avait commencé
+scope: کاربرد plus-que-parfait برای کاری که پیش از کار دیگری در گذشته انجام شده بود (Quand je suis arrivé, le film avait commencé)، با déjà، pas encore، avant، parce que و je me suis souvenu que، و کنار هم آمدن سه زمان گذشته در یک ماجرا: passé composé برای اتفاق، imparfait برای صحنه و حال، plus-que-parfait برای کارِ پیش‌تر؛ گفتهٔ نقل‌شده در گذشته (il a dit qu'il avait …) در واحدهای بعد می‌آید.
+can_do: حالا می‌توانی ماجرایی را تعریف کنی و بگویی چه چیزی پیش‌تر اتفاق افتاده بود: Quand je suis arrivé à la gare, le train était déjà parti. J'étais fatigué parce que j'avais mal dormi.
+rule: در ماجرای گذشته: اتفاق ← passé composé (je suis arrivé)، صحنه و حال ← imparfait (il pleuvait)، کاری که پیش از آن تمام شده بود ← plus-que-parfait (le train était parti).
+mistake: فارسیِ محاوره گاهی برای یک کار سادهٔ گذشته هم ماضی بعید می‌گوید («دیروز رفته بودم بانک»)، و فارسی‌زبان‌ها همین را به فرانسوی می‌برند («Hier, j'étais allé à la banque»)؛ وقتی لحظهٔ دیگری در ماجرا نیست، درست: Hier, je suis allé à la banque. برعکسش هم مهم است: «Quand je suis arrivé, le film a commencé» یعنی فیلم همان لحظه شروع شد؛ برای «شروع شده بود» بگو: le film avait commencé.
+lesson:
+در یک ماجرای گذشته همه‌چیز هم‌زمان نیست: بعضی کارها پیش‌تر تمام شده بودند. فارسی برای این‌ها ماضی بعید دارد («قطار رفته بود») و فرانسوی plus-que-parfait.
+سه زمان گذشته کنار هم کار می‌کنند: passé composé برای اتفاقی که در ماجرا می‌افتد (je suis arrivé)، imparfait برای صحنه و حال (il pleuvait، j'étais fatigué) و plus-que-parfait برای کاری که پیش از آن تمام شده بود (le train était parti).
+با هم: Quand je suis arrivé à la gare, il pleuvait et le train était déjà parti. یعنی «وقتی به ایستگاه رسیدم، باران می‌آمد و قطار رفته بود».
+ببین زمان فعل چطور معنی را عوض می‌کند: Quand je suis arrivé, le film a commencé (همان وقت شروع شد)؛ le film commençait (داشت شروع می‌شد)؛ le film avait commencé (پیش‌تر شروع شده بود).
+déjà خیلی وقت‌ها کنار plus-que-parfait می‌آید: Il était déjà parti. برای «هنوز نـ… بود» هم ne … pas encore: Elle n'était pas encore arrivée.
+parce que + plus-que-parfait دلیلی را می‌گوید که پیش‌تر پیش آمده بود: J'étais fatigué parce que j'avais mal dormi.
+بعد از j'ai compris que (فهمیدم که) یا je me suis souvenu que (یادم آمد که)، کاری که پیش‌تر شده بود plus-que-parfait می‌گیرد: Je me suis souvenu que j'avais oublié mon sac.
+در جملهٔ موصولی هم همین‌طور: J'ai lu le livre que tu m'avais offert (کتابی را که به من هدیه داده بودی خواندم).
+avant به‌تنهایی، آخر جمله، یعنی «پیش از آن، قبلش»: Ils s'étaient rencontrés deux ans avant (دو سال قبلش با هم آشنا شده بودند).
+با depuis هم می‌شود گفت از کِی: Le film avait commencé depuis dix minutes (ده دقیقه از شروع فیلم گذشته بود).
+وقتی کارها را پشت سر هم و به همان ترتیب تعریف می‌کنی، plus-que-parfait لازم نیست؛ همه passé composé‌اند: Je me suis levé, j'ai pris un café et je suis parti.
+یادت باشد: plus-que-parfait همیشه به یک لحظهٔ دیگرِ گذشته تکیه دارد؛ اگر چنین لحظه‌ای در ماجرا نیست، passé composé بگو.
+table:
+زمان | کارش در ماجرا | مثال
+passé composé | اتفاق، کار بعدی | je suis arrivé à la gare
+imparfait | صحنه، حال، کار در جریان | il pleuvait، j'étais fatigué
+plus-que-parfait | کاری که پیش‌تر تمام شده بود | le train était déjà parti
+examples:
+Quand je suis{être} arrivé à la gare, le train était déjà parti. | وقتی به ایستگاه رسیدم، قطار رفته بود.
+J'étais fatigué parce que j'avais mal dormi. | خسته بودم، چون بد خوابیده بودم.
+J'ai cherché mon sac partout : je l'avais oublié dans le métro. | همه‌جا دنبال کیفم گشتم: آن را در مترو جا گذاشته بودم.
+J'ai lu le livre que tu m'avais offert. | کتابی را که به من هدیه داده بودی خواندم.
+Nous sommes rentrés à pied, parce que le dernier bus était déjà passé. | پیاده به خانه برگشتیم، چون آخرین اتوبوس رفته بود.
+targets:
+Quand nous sommes arrivés au cinéma, le film [avait commencé] depuis dix minutes. | وقتی به سینما رسیدیم، ده دقیقه از شروع فیلم گذشته بود. | d: commence, commencera, avaient commencé | hint: (commencer)
+Dans le bus, j'ai cherché mon portable, mais je l'[avais oublié] à la maison. | توی اتوبوس دنبال موبایلم گشتم، ولی آن را در خانه جا گذاشته بودم. | d: oublie, oublierai, étais oublié | hint: (oublier)
+Le train [était parti] quand je suis{être} arrivé à la gare. | وقتی به ایستگاه رسیدم، قطار رفته بود. | d: part, partira, avait parti | hint: (partir) | full: Quand je suis arrivé à la gare, le train était parti.
+Hier, Paul m'a rendu le livre que je lui [avais prêté] en mai. | دیروز پل کتابی را که در ماه مه به او قرض داده بودم پس داد. | d: prête, prêterai, étais prêté | hint: (prêter)
+Je n'avais plus faim parce que [j'avais mangé] un gros sandwich à quatre heures. | دیگر گرسنه نبودم، چون ساعت چهار یک ساندویچ بزرگ خورده بودم. | d: je mangerai, j'étais mangé, j'avais manger | hint: (manger)
+Le professeur était fâché : Lucas [avait perdu] son cahier pour la deuxième fois. | معلم عصبانی بود: لوکاس برای بار دوم دفترش را گم کرده بود. | d: perd, perdra, était perdu | hint: (perdre)
+Ce matin, ma sœur m'a appelé{appeler} : elle [avait reçu] une réponse de l'université. | امروز صبح خواهرم به من زنگ زد: از دانشگاه جواب گرفته بود. | d: recevra, était reçu, avaient reçu | hint: (recevoir)
+Quand la police est arrivée, les voleurs [étaient] déjà [partis]. | وقتی پلیس رسید، دزدها رفته بودند. | d: seront, avaient, était / partir, partait, parti | full: Les voleurs étaient déjà partis quand la police est arrivée.
+Nous avons visité la maison où notre grand-père [était né]. | خانه‌ای را که پدربزرگمان در آن به دنیا آمده بود دیدیم. | d: naît, naîtra, avait né | hint: (naître)
+Au début, je ne le reconnaissais pas : il [avait] beaucoup changé. | اولش او (مرد) را نمی‌شناختم: خیلی عوض شده بود. | d: avais, avaient, aviez | hint: (avoir)
+Elle a enfin acheté le manteau qu'elle [avait vu] dans un magazine. | بالاخره پالتویی را که در یک مجله دیده بود خرید. | d: verra, était vu, avaient vu | hint: (voir)
+Quand je me suis{être} levé, il [avait neigé] toute la nuit et la ville était blanche. | وقتی از خواب بلند شدم، تمام شب برف آمده بود و شهر سفید بود. | d: neige, neigera, était neigé | hint: (neiger)
+Quand nous sommes sortis, il faisait froid : il [avait plu] toute la journée. | وقتی بیرون رفتیم، هوا سرد بود: تمام روز باران آمده بود. | d: pleut, pleuvra, était plu | hint: (pleuvoir)
+Je suis{être} allé chez le médecin parce que [j'avais pris] froid. | پیش دکتر رفتم، چون سرما خورده بودم. | d: je prendrai, j'étais pris, j'avais prendu | hint: (prendre)
+Sophie était triste parce que sa meilleure amie [était partie] vivre au Canada. | سوفی غمگین بود، چون بهترین دوستش برای زندگی به کانادا رفته بود. | d: avait partie, était parti, étaient parties | hint: (partir)
+Le serveur nous a apporté un plat que nous n'[avions] pas [commandé]. | گارسون غذایی برایمان آورد که سفارش نداده بودیم. | d: étions, aurons, aviez / commander, commandions, commandée
+Quand Reza est arrivé en France, il [avait étudié] le français pendant deux ans à Téhéran. | وقتی رضا به فرانسه رسید، دو سال در تهران فرانسوی خوانده بود. | d: étudie, étudiera, était étudié | hint: (étudier)
+Ils se sont mariés en 2015 ; ils [s'étaient rencontrés] deux ans avant, à une fête. | سال ۲۰۱۵ ازدواج کردند؛ دو سال قبلش در یک مهمانی با هم آشنا شده بودند. | d: se rencontrent, se rencontreront, s'avaient rencontrés | hint: (se rencontrer)
+Elle n'a pas pu ouvrir la porte : elle [avait laissé] ses clés dans la voiture. | نتوانست در را باز کند: کلیدهایش را در ماشین جا گذاشته بود. | d: laisse, laissera, était laissé | hint: (laisser)
+Mes parents ont vendu la maison où ils [avaient vécu] trente ans. | پدر و مادرم خانه‌ای را که سی سال در آن زندگی کرده بودند فروختند. | d: vivent, vivront, étaient vécu | hint: (vivre)
+Quand le médecin est arrivé, le bébé [s'était] déjà [endormi]. | وقتی دکتر رسید، بچه خوابش برده بود. | d: s'avait, s'étaient, s'étais / endormir, endormie, endormait | full: Le bébé s'était déjà endormi quand le médecin est arrivé.
+Tout le monde riait, mais moi, je n'[avais] rien compris. | همه می‌خندیدند، ولی من هیچ‌چیز نفهمیده بودم. | d: étais, avions, aviez | hint: (avoir)
+Soudain, je me suis{être} souvenu que [j'avais promis] d'appeler{appeler} ma mère. | ناگهان یادم آمد که قول داده بودم به مادرم زنگ بزنم. | d: je promets, je promettrai, j'étais promis | hint: (promettre)
+Nous étions contents : notre équipe [avait gagné] le match. | خوشحال بودیم: تیممان مسابقه را برده بود. | d: gagne, gagnera, était gagné | hint: (gagner)
+Quand nous sommes rentrés de vacances, quelqu'un [avait cassé] la fenêtre de la cuisine. | وقتی از تعطیلات برگشتیم، کسی پنجرهٔ آشپزخانه را شکسته بود. | d: casse, cassera, était cassé | hint: (casser)
+J'avais peur : je n'[avais] jamais [chanté] devant cent personnes. | می‌ترسیدم: هیچ‌وقت جلوی صد نفر آواز نخوانده بودم. | d: étais, avions, aviez / chanter, chantais, chantée
+Finalement, nous avons pris le bus, parce que la voiture [était tombée] en panne. | آخرش با اتوبوس رفتیم، چون ماشین خراب شده بود. | d: avait tombé, était tombé, étaient tombées | hint: (tomber)
+Le musée était fermé : nous [étions venus] pour rien. | موزه بسته بود: بی‌خودی آمده بودیم. | d: venons, viendrons, avions venus | ok: étions venues | hint: (venir)
+Elle m'a montré le cadeau qu'elle [avait acheté] pour son père. | هدیه‌ای را که برای پدرش خریده بود به من نشان داد. | d: était acheté, avaient acheté, avait acheter | hint: (acheter)
+Le directeur était en colère : personne [n'avait lu] son message. | مدیر عصبانی بود: هیچ‌کس پیامش را نخوانده بود. | d: n'était lu, n'avaient lu, n'avait lire | hint: (lire)
+J'ai eu du mal à trouver la rue, parce que je n'y [étais] jamais [allé]. | به‌سختی خیابان را پیدا کردم، چون هیچ‌وقت آنجا نرفته بودم. | d: avais, serai, étions / aller, allais, allés | ok: étais / allée
+Léa a fait semblant d'être surprise, mais elle [avait trouvé] le cadeau dans l'armoire. | لئا وانمود کرد که غافلگیر شده، ولی هدیه را در کمد پیدا کرده بود. | d: trouve, trouvera, était trouvé | hint: (trouver)
+Je n'ai pas répondu à Camille ; pourtant, elle m'[avait envoyé] trois messages. | به کامی جواب ندادم؛ با این حال، او سه پیام برایم فرستاده بود. | d: enverra, était envoyé, avaient envoyé | hint: (envoyer)
+Il ne restait plus de gâteau : les enfants [l'avaient fini] pendant la nuit. | دیگر کیکی نمانده بود: بچه‌ها شب تمامش کرده بودند. | d: le finissent, le finiront, l'étaient fini | hint: (finir)
+À la fin du repas, il n'y avait pas de dessert : personne [n'y avait pensé]. | آخر غذا دسری در کار نبود: هیچ‌کس به فکرش نیفتاده بود. | d: n'y pensera, n'y était pensé, n'y avaient pensé | hint: (penser)
+Mon grand-père nous a montré l'usine où il [avait travaillé] pendant quarante ans. | پدربزرگم کارخانه‌ای را که چهل سال در آن کار کرده بود به ما نشان داد. | d: était travaillé, avaient travaillé, avait travailler | hint: (travailler)
+Je suis{être} arrivé en retard au travail parce que mon réveil n'[avait] pas sonné. | دیر سر کار رسیدم، چون ساعتم زنگ نزده بود. | d: avaient, aviez, avais | hint: (avoir)
+Quand [je suis{être} arrivé] chez Marie, elle [était partie]. | وقتی به خانهٔ ماری رسیدم، او رفته بود. | d: j'arrive, j'arriverai, j'ai arrivé / part, partira, avait partie | ok: je suis arrivée / était partie
+Il [pleuvait] et nous [avions oublié] nos parapluies. | باران می‌آمد و ما چترهایمان را جا گذاشته بودیم. | d: pleut, pleuvra, pleuvais / oublions, oublierons, étions oublié
+Nous [étions] très fatigués parce que nous [avions marché] toute la journée. | خیلی خسته بودیم، چون تمام روز راه رفته بودیم. | d: serons, étaient, étiez / avaient marché, marcherons, étions marché
+transforms:
+Je suis{être} arrivé. Le film a commencé avant. => Quand je suis{être} arrivé, le film avait commencé. ; Quand je suis{être} arrivé, le film avait déjà commencé. ; Le film avait commencé quand je suis{être} arrivé. ; Le film avait déjà commencé quand je suis{être} arrivé. | دو جمله را با quand یکی کن؛ کار دوم پیش‌تر انجام شده بود.
+J'étais fatigué. J'ai mal dormi avant. => J'étais fatigué parce que j'avais mal dormi. | دو جمله را با parce que یکی کن.
+Elle n'a pas pu entrer. Elle a perdu ses clés avant. => Elle n'a pas pu entrer parce qu'elle avait perdu ses clés. | دو جمله را با parce que یکی کن.
+J'ai lu le livre. Tu m'as offert ce livre avant. => J'ai lu le livre que tu m'avais offert. | دو جمله را با que یکی کن.
+Nous sommes arrivés à la gare. Le train est parti avant. => Quand nous sommes arrivés à la gare, le train était parti. ; Quand nous sommes arrivés à la gare, le train était déjà parti. ; Le train était parti quand nous sommes arrivés à la gare. ; Le train était déjà parti quand nous sommes arrivés à la gare. | دو جمله را با quand یکی کن؛ کار دوم پیش‌تر انجام شده بود.
+Hier, j'étais allé à la banque. => Hier, je suis{être} allé à la banque. | این جمله به لحظهٔ دیگری از گذشته تکیه ندارد: فعل را به passé composé ببر.
+Je me suis{être} souvenu que j'ai oublié mon sac. => Je me suis{être} souvenu que j'avais oublié mon sac. | کار دوم پیش‌تر انجام شده بود: آن را به plus-que-parfait ببر.
+Quand Léa est arrivée, nous sommes déjà partis. => Quand Léa est arrivée, nous étions déjà partis. | کار دوم پیش‌تر انجام شده بود: آن را به plus-que-parfait ببر.
+translations:
+خسته بودم، چون بد خوابیده بودم. => J'étais fatigué parce que j'avais mal dormi. ; J'étais fatiguée parce que j'avais mal dormi. ; J'étais fatigué car j'avais mal dormi. ; J'étais fatiguée car j'avais mal dormi.
+وقتی به ایستگاه رسیدم، قطار رفته بود. => Quand je suis{être} arrivé à la gare, le train était parti. ; Quand je suis{être} arrivée à la gare, le train était parti. ; Quand je suis{être} arrivé à la gare, le train était déjà parti. ; Quand je suis{être} arrivée à la gare, le train était déjà parti. ; Lorsque je suis{être} arrivé à la gare, le train était parti. ; Lorsque je suis{être} arrivée à la gare, le train était parti. ; Lorsque je suis{être} arrivé à la gare, le train était déjà parti. ; Lorsque je suis{être} arrivée à la gare, le train était déjà parti. ; Le train était parti quand je suis{être} arrivé à la gare. ; Le train était parti quand je suis{être} arrivée à la gare. ; Le train était déjà parti quand je suis{être} arrivé à la gare. ; Le train était déjà parti quand je suis{être} arrivée à la gare.
+بچه‌ها قبل از باران برگشته بودند. => Les enfants étaient rentrés avant la pluie. ; Les enfants étaient revenus avant la pluie.
+کتابی را که به من هدیه داده بودی خواندم. => J'ai lu le livre que tu m'avais offert. ; J'ai lu le livre que tu m'avais donné.
+رضا قبل از آمدن به فرانسه فرانسوی خوانده بود. => Reza avait étudié le français avant de venir en France. ; Reza avait appris le français avant de venir en France. ; Avant de venir en France, Reza avait étudié le français. ; Avant de venir en France, Reza avait appris le français.
+موزه بسته بود؛ بی‌خودی آمده بودیم. => Le musée était fermé : nous étions venus pour rien. ; Le musée était fermé : nous étions venues pour rien. ; Le musée était fermé : on était venus pour rien. ; Le musée était fermé : on était venues pour rien. ; Le musée était fermé : on était venu pour rien.
+کسی پنجره را شکسته بود. => Quelqu'un avait cassé la fenêtre.
+پل همه‌چیز را فهمیده بود، ولی چیزی نگفت. => Paul avait tout compris, mais il n'a rien dit.

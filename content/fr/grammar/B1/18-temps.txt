@@ -1,0 +1,90 @@
+code: fr-b1-temps
+title: جمله‌های زمانی: lorsque، dès que، depuis que، au moment où
+scope: کلمه‌های زمانی که جمله می‌خواهند: lorsque (= quand، رسمی‌تر)، dès que، depuis que، au moment où، une fois que و مرور pendant que؛ و futur بعد از quand، lorsque، dès que، une fois que و pendant que وقتی کار در آینده است (Quand tu arriveras, je t'appellerai)، نه subjonctif و نه conditionnel؛ avant que و jusqu'à ce que با subjonctif در درس ۲۰ می‌آیند.
+can_do: حالا می‌توانی دقیق بگویی کارها کی و به چه ترتیبی انجام می‌شوند، در گذشته و در آینده: Dès que j'aurai des nouvelles, je t'écrirai. Depuis qu'il fait du sport, il dort mieux.
+rule: quand، lorsque، dès que، depuis que، au moment où، une fois que و pendant que + جملهٔ کامل؛ برای کاری در آینده، فعل بعد از آن‌ها هم futur است: Quand tu viendras, je te montrerai la ville.
+mistake: فارسی بعد از «وقتی» برای آینده فعل گذشته یا التزامی می‌آورد («وقتی رسیدی»، «وقتی برسی»)، برای همین فارسی‌زبان‌ها می‌نویسند «Quand tu sois à Paris…» یا «Quand tu arrives demain, je t'appellerai»؛ درست: Quand tu seras à Paris…، Quand tu arriveras demain, je t'appellerai. «depuis» و «dès» تنها هم جلوی جمله نمی‌آیند: «depuis il travaille» غلط است؛ درست: depuis qu'il travaille.
+lesson:
+در فارسی برای آینده می‌گوییم «وقتی رسیدی، زنگ بزن» یا «وقتی برسی…». فرانسوی اینجا دقیق‌تر است: وقتی کار در آینده است، فعل بعد از quand هم futur است.
+Quand tu arriveras à Paris, je viendrai te chercher. Dès que j'aurai des nouvelles, je t'écrirai. نه subjonctif («quand tu sois» غلط است) و نه conditionnel (quand tu arriveras، نه arriverais).
+lorsque همان quand است، فقط کمی رسمی‌تر و بیشتر در نوشتن: Lorsque le professeur est entré, les élèves se sont levés.
+dès que یعنی «به محض اینکه»: Je prends une douche dès que je rentre.
+depuis que یعنی «از وقتی که»: چیزی از یک لحظه شروع شده و هنوز ادامه دارد: Depuis que nous habitons à la campagne, nous sommes plus calmes.
+au moment où یعنی «درست همان لحظه که» و بیشتر با imparfait و passé composé می‌آید: Au moment où je sortais, le téléphone a sonné.
+une fois que یعنی «همین که، وقتی دیگر»: اول کار اول تمام می‌شود و بعد دومی: Une fois qu'on a payé, on peut entrer.
+pendant que (A2) یعنی «در حالی که»: دو کار هم‌زمان: Pendant que je fais la cuisine, tu mets la table. برای آینده: Pendant que tu seras au travail, je ferai les courses.
+depuis، pendant و dès بدون que فقط جلوی اسم یا زمان می‌آیند: depuis 2020، pendant le film، dès demain؛ جلوی جمله همیشه با que: depuis qu'il travaille.
+lorsque و depuis que قبل از il، elle، on و صدادار می‌شوند lorsqu' و depuis qu'.
+table:
+کلمه | معنی | مثال
+quand، lorsque | وقتی (که) | Lorsque tu viendras, je te montrerai la ville.
+dès que | به محض اینکه | Dès que j'aurai des nouvelles, je t'écrirai.
+depuis que | از وقتی که | Depuis qu'il fait du sport, il dort mieux.
+au moment où | درست وقتی که | Au moment où je sortais, le téléphone a sonné.
+une fois que | همین که، وقتی دیگر | Une fois qu'on a payé, on peut entrer.
+pendant que | در حالی که | Pendant que tu dors, je travaille.
+examples:
+Quand tu arriveras à Paris, appelle-moi. | وقتی به پاریس رسیدی، به من زنگ بزن.
+Dès que j'aurai des nouvelles, je t'écrirai. | به محض اینکه خبری بگیرم، برایت می‌نویسم.
+Depuis qu'il fait du sport, il dort beaucoup mieux. | از وقتی ورزش می‌کند، خیلی بهتر می‌خوابد.
+Au moment où nous sommes arrivés, le film commençait. | درست وقتی رسیدیم، فیلم داشت شروع می‌شد.
+Une fois qu'on a payé, on peut entrer. | همین که پول را بدهی، می‌توانی وارد شوی.
+targets:
+Quand tu [arriveras] à Paris, je viendrai te chercher à la gare. | وقتی به پاریس برسی، می‌آیم دنبالت به ایستگاه. | d: arriverais, arrivais, arrivera | hint: (arriver)
+Je t'appellerai dès que le médecin [aura] les résultats. | به محض اینکه پزشک جواب آزمایش‌ها را بگیرد، به تو زنگ می‌زنم. | d: aurait, ait, avait | hint: (avoir)
+Lorsque nous [serons] à Rome, nous visiterons les musées. | وقتی در رم باشیم، از موزه‌ها دیدن می‌کنیم. | d: serions, soyons, étions | hint: (être)
+Dès qu'il [fera] beau, on ira se promener au bord de la mer. | به محض اینکه هوا خوب شود، می‌رویم کنار دریا قدم بزنیم. | d: ferait, fasse, faisait | hint: (faire)
+Une fois que vous [aurez] votre diplôme, vous pourrez travailler à l'étranger. | همین که مدرکتان را بگیرید، می‌توانید در خارج از کشور کار کنید. | d: auriez, ayez, aviez
+Quand les enfants [dormiront], nous pourrons regarder le film. | وقتی بچه‌ها خوابیدند، می‌توانیم فیلم را تماشا کنیم. | d: dormiraient, dormaient, ont dormi | hint: (dormir)
+Lorsque tu [viendras] chez nous, je te montrerai mes photos. | وقتی به خانهٔ ما بیایی، عکس‌هایم را نشانت می‌دهم. | d: viendrais, viennes, venais | hint: (venir)
+Dès que nous [saurons] la date de l'examen, nous t'écrirons. | به محض اینکه تاریخ امتحان را بفهمیم، برایت می‌نویسیم. | d: saurions, sachions, savions | hint: (savoir)
+Quand nous [aurons] assez d'argent, nous achèterons une maison. | وقتی پول کافی داشته باشیم، یک خانه می‌خریم. | d: aurions, ayons, avions
+Mes parents partiront en vacances quand ils [pourront]. | پدر و مادرم هر وقت بتوانند به تعطیلات می‌روند. | d: pourraient, puissent, pouvaient | hint: (pouvoir)
+Tu me téléphoneras quand tu [seras] chez toi ? | وقتی رسیدی خانه، به من زنگ می‌زنی؟ | d: serais, sois, étais | hint: (être)
+Dès que le magasin [ouvrira], j'irai acheter du pain. | به محض اینکه مغازه باز شود، می‌روم نان بخرم. | d: ouvrirait, ouvrait, ouvriront | hint: (ouvrir)
+Quand vous [verrez] Marie, dites-lui bonjour. | وقتی ماری را دیدید، به او سلام برسانید. | d: verriez, voyiez, avez vu | hint: (voir)
+Tu pourras emprunter ma voiture quand tu [voudras]. | هر وقت بخواهی می‌توانی ماشینم را قرض بگیری. | d: voudrais, veuilles, voulais | hint: (vouloir)
+Lorsque Paul [apprendra] la nouvelle, il sera très triste. | وقتی پل این خبر را بشنود، خیلی ناراحت می‌شود. | d: apprendrait, apprenne, apprenait | hint: (apprendre)
+Nous partirons dès que tout le monde [sera] prêt. | به محض اینکه همه آماده باشند، راه می‌افتیم. | d: serait, soit, était
+Une fois que tu [connaîtras] la ville, tu ne te perdras plus. | همین که شهر را بشناسی، دیگر گم نمی‌شوی. | d: connaîtrais, connaisses, connaissais | hint: (connaître)
+Qu'est-ce que tu feras quand tu [auras] ton diplôme ? | وقتی مدرکت را بگیری چه کار می‌کنی؟ | d: aurais, aies, avais
+[Depuis que] ma sœur travaille à Lyon, je la vois moins souvent. | از وقتی خواهرم در لیون کار می‌کند، کمتر می‌بینمش. | d: Depuis, Pendant, Dès
+Mon grand-père va beaucoup mieux [depuis que] nous habitons près de chez lui. | از وقتی نزدیک خانهٔ پدربزرگم زندگی می‌کنیم، حالش خیلی بهتر است. | d: depuis, pendant, avant de
+Il pleut [depuis que] nous sommes arrivés à Nice. | از وقتی به نیس رسیده‌ایم باران می‌آید. | d: depuis, pendant que, dès
+Ma tante a beaucoup changé [depuis que] son fils est né. | خاله‌ام از وقتی پسرش به دنیا آمده خیلی تغییر کرده. | d: depuis, pendant que, avant de
+[Depuis que] Paul a un chien, il se promène tous les jours. | از وقتی پل سگ دارد، هر روز پیاده‌روی می‌کند. | d: Depuis, Pendant, Dès
+Les enfants sont sortis [dès que] la pluie s'est arrêtée. | به محض اینکه باران بند آمد، بچه‌ها بیرون رفتند. | d: depuis que, pendant que, avant de | ok: quand, lorsque, une fois que, aussitôt que, au moment où
+Je prends une douche [dès que] je rentre du{du-contr} sport. | به محض اینکه از ورزش برمی‌گردم، دوش می‌گیرم. | d: depuis que, pendant que, avant de | ok: quand, lorsque, une fois que, aussitôt que
+[Au moment où] je sortais, le téléphone a sonné. | درست وقتی داشتم بیرون می‌رفتم، تلفن زنگ زد. | d: Depuis que, Une fois que, Pendant | ok: Quand, Lorsque, Pendant que, Alors que
+Le bus est parti [au moment où] je suis arrivé à l'arrêt. | درست وقتی به ایستگاه رسیدم، اتوبوس رفت. | d: depuis que, pendant que, dès | ok: quand, lorsque, dès que, aussitôt que
+[Lorsque] le professeur est entré, tous les élèves se sont levés. | وقتی معلم وارد شد، همهٔ دانش‌آموزان بلند شدند. | d: Depuis que, Pendant que, Dès | ok: Quand, Dès que, Au moment où, Aussitôt que, Une fois que
+[Lorsque] mes parents étaient jeunes, il n'y avait pas de portable. | وقتی پدر و مادرم جوان بودند، تلفن همراه وجود نداشت. | d: Depuis que, Dès que, Pendant | ok: Quand, Pendant que
+Je ne regarde jamais mon téléphone [lorsque] je conduis. | وقتی رانندگی می‌کنم، هیچ‌وقت به گوشی‌ام نگاه نمی‌کنم. | d: depuis, dès, avant de | ok: quand, pendant que
+[Une fois que] tu as compris l'exercice, tout devient facile. | همین که تمرین را بفهمی، همه چیز آسان می‌شود. | d: Pendant que, Pendant, Avant de | ok: Quand, Lorsque, Dès que
+[Pendant que] je fais la cuisine, tu peux mettre la table. | در حالی که من آشپزی می‌کنم، تو می‌توانی میز را بچینی. | d: Pendant, Depuis que, Dès | ok: Tandis que, Quand, Lorsque
+Le voleur est entré [pendant que] nous dormions. | دزد وقتی ما خواب بودیم وارد شد. | d: pendant, depuis que, avant de | ok: alors que, tandis que, quand, lorsque
+Ils ont parlé tout le temps [pendant que] le professeur expliquait. | در تمام مدتی که معلم توضیح می‌داد، آن‌ها حرف زدند. | d: pendant, depuis que, dès | ok: tandis que, alors que, quand, lorsque
+[Dès que] nous [serons] à Paris, nous t'écrirons. | به محض اینکه به پاریس برسیم، برایت می‌نویسیم. | d: Depuis que, Dès, Pendant / serions, soyons, étions | ok: Quand, Lorsque, Une fois que, Aussitôt que
+[Quand] nous [aurons] des enfants, nous habiterons à la campagne. | وقتی بچه‌دار شویم، بیرون شهر زندگی می‌کنیم. | d: Depuis que, Pendant, Dès / aurions, ayons, avions | ok: Lorsque, Dès que, Une fois que
+[Lorsque] tu [seras] en France, tu pourras visiter les châteaux. | وقتی در فرانسه باشی، می‌توانی از قلعه‌ها دیدن کنی. | d: Depuis que, Pendant, Dès / serais, sois, étais | ok: Quand, Dès que, Une fois que
+[Depuis que] nous [habitons] à la campagne, nous sommes beaucoup plus calmes. | از وقتی بیرون شهر زندگی می‌کنیم، خیلی آرام‌تریم. | d: Depuis, Pendant, Dès / habiterons, habiterions, habitions
+[Au moment où] nous [allions] partir, il a commencé à pleuvoir. | درست وقتی می‌خواستیم راه بیفتیم، باران شروع شد. | d: Depuis que, Une fois que, Pendant / irions, irons, allons | ok: Quand, Lorsque, Alors que
+[Pendant que] tu [seras] au travail, je ferai les courses. | وقتی تو سر کار هستی، من خرید می‌کنم. | d: Depuis que, Pendant, Avant de / serais, sois, étais | ok: Quand, Lorsque, Tandis que
+transforms:
+Quand tu arrives demain, je t'appellerai. => Quand tu arriveras demain, je t'appellerai. | کار در آینده است: فعل بعد از quand را futur کن.
+J'aurai mon diplôme. Ensuite, je chercherai du travail. => Quand j'aurai mon diplôme, je chercherai du travail. ; Dès que j'aurai mon diplôme, je chercherai du travail. ; Lorsque j'aurai mon diplôme, je chercherai du travail. ; Une fois que j'aurai mon diplôme, je chercherai du travail. | دو جمله را با quand یا dès que وصل کن.
+Il fait du sport depuis un an. Maintenant, il dort bien. => Depuis qu'il fait du sport, il dort bien. ; Il dort bien depuis qu'il fait du sport. | با depuis que یک جمله بساز.
+Je sortais. Le téléphone a sonné. => Au moment où je sortais, le téléphone a sonné. ; Quand je sortais, le téléphone a sonné. ; Lorsque je sortais, le téléphone a sonné. | دو جمله را با au moment où وصل کن.
+Je fais la cuisine. Toi, tu mets la table. => Pendant que je fais la cuisine, tu mets la table. ; Tu mets la table pendant que je fais la cuisine. | دو جمله را با pendant que وصل کن.
+Quand le professeur est entré, les élèves se sont levés. => Lorsque le professeur est entré, les élèves se sont levés. | quand را با lorsque عوض کن.
+Tu viendras chez nous. Je te montrerai mes photos. => Quand tu viendras chez nous, je te montrerai mes photos. ; Lorsque tu viendras chez nous, je te montrerai mes photos. ; Je te montrerai mes photos quand tu viendras chez nous. | دو جمله را با quand وصل کن.
+D'abord on paie, ensuite on peut entrer. => Une fois qu'on a payé, on peut entrer. ; On peut entrer une fois qu'on a payé. | با une fois que یک جمله بساز.
+translations:
+وقتی به پاریس رسیدی، به من زنگ بزن. => Quand tu arriveras à Paris, appelle-moi. ; Lorsque tu arriveras à Paris, appelle-moi. ; Appelle-moi quand tu arriveras à Paris. ; Appelle-moi lorsque tu arriveras à Paris. ; Quand tu arriveras à Paris, téléphone-moi. ; Lorsque tu arriveras à Paris, téléphone-moi. ; Téléphone-moi quand tu arriveras à Paris. ; Téléphone-moi lorsque tu arriveras à Paris.
+به محض اینکه خبری بگیرم، برایت می‌نویسم. => Dès que j'aurai des nouvelles, je t'écrirai. ; Je t'écrirai dès que j'aurai des nouvelles. ; Dès que j'aurai des nouvelles, je vais t'écrire. ; Je vais t'écrire dès que j'aurai des nouvelles.
+از وقتی ماری در لیون زندگی می‌کند، خوشحال‌تر است. => Depuis que Marie habite à Lyon, elle est plus heureuse. ; Depuis que Marie vit à Lyon, elle est plus heureuse. ; Marie est plus heureuse depuis qu'elle habite à Lyon. ; Marie est plus heureuse depuis qu'elle vit à Lyon. ; Depuis que Marie habite à Lyon, elle est plus contente. ; Depuis que Marie vit à Lyon, elle est plus contente. ; Marie est plus contente depuis qu'elle habite à Lyon. ; Marie est plus contente depuis qu'elle vit à Lyon.
+درست وقتی داشتم بیرون می‌رفتم، تلفن زنگ زد. => Au moment où je sortais, le téléphone a sonné. ; Quand je sortais, le téléphone a sonné. ; Lorsque je sortais, le téléphone a sonné. ; Alors que je sortais, le téléphone a sonné. ; Au moment où j'allais sortir, le téléphone a sonné.
+وقتی بچه‌ها خوابیدند، فیلم را تماشا می‌کنیم. => Quand les enfants dormiront, nous regarderons le film. ; Quand les enfants dormiront, on regardera le film. ; Lorsque les enfants dormiront, nous regarderons le film. ; Lorsque les enfants dormiront, on regardera le film. ; Nous regarderons le film quand les enfants dormiront. ; On regardera le film quand les enfants dormiront. ; Nous regarderons le film lorsque les enfants dormiront. ; On regardera le film lorsque les enfants dormiront.
+در حالی که آشپزی می‌کنم، تو میز را بچین. => Pendant que je fais la cuisine, mets la table. ; Pendant que je cuisine, mets la table. ; Mets la table pendant que je fais la cuisine. ; Mets la table pendant que je cuisine.
+همین که پول را بدهی، می‌توانی وارد شوی. => Une fois que tu as payé, tu peux entrer. ; Dès que tu as payé, tu peux entrer. ; Tu peux entrer une fois que tu as payé. ; Tu peux entrer dès que tu as payé.
+وقتی پدر و مادرم جوان بودند، تلفن همراه وجود نداشت. => Quand mes parents étaient jeunes, il n'y avait pas de portable. ; Lorsque mes parents étaient jeunes, il n'y avait pas de portable. ; Il n'y avait pas de portable quand mes parents étaient jeunes. ; Il n'y avait pas de portable lorsque mes parents étaient jeunes. ; Quand mes parents étaient jeunes, le portable n'existait pas. ; Lorsque mes parents étaient jeunes, le portable n'existait pas.

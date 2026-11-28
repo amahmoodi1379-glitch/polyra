@@ -1,0 +1,93 @@
+code: fr-b1-doubles-pronoms
+title: دو ضمیر با هم: il me le donne، je le lui dis
+scope: دو ضمیر مفعولی کنار هم و ترتیبشان (me، te، se، nous، vous → le، la، les → lui، leur → y → en): il me le donne، je le lui dis، je leur en achète، il y en a، je t'y emmène؛ در passé composé (je le lui ai dit، il me les a rendues)، با فعل + مصدر (je vais te le montrer)، در امر مثبت (donne-le-moi، donne-m'en) و امر منفی (ne me le dis pas)؛ y و en با فعل‌های à و de (j'y pense، j'en ai besoin) در واحد ۲۸ می‌آیند.
+can_do: حالا می‌توانی بی‌آنکه اسم چیز و آدم را تکرار کنی بگویی چه چیزی را به چه کسی می‌دهی، نشان می‌دهی یا می‌گویی: Ton livre ? Je te le rends demain. Donne-le-moi !
+rule: دو ضمیر قبل از فعل با این ترتیب می‌آیند: me، te، se، nous، vous → le، la، les → lui، leur → y → en (il me le donne، je le lui dis، je leur en donne)؛ فقط در امر مثبت بعد از فعل می‌روند: اول le، la، les و بعد moi، lui، nous، leur (donne-le-moi)، و با en: donne-m'en.
+mistake: در فارسی ضمیرها به آخر فعل می‌چسبند («بدهش به من»، «به او گفتمش») و ترتیب ثابتی ندارند، برای همین فارسی‌زبان‌ها ترتیب را جابه‌جا می‌کنند («il le me donne»، «je lui le dis»، «il en y a») یا در امر مثبت moi را اول می‌گذارند («donne-moi-le»)؛ درست: il me le donne، je le lui dis، il y en a، donne-le-moi.
+lesson:
+در فارسی می‌گوییم «بدهش به من» یا «به او گفتمش» و ضمیرها را آخر فعل می‌چسبانیم. در فرانسوی وقتی هر دو مفعول ضمیرند، هر دو قبل از فعل می‌آیند و ترتیبشان همیشه ثابت است.
+ترتیب این است: ۱) me، te، se، nous، vous ۲) le، la، les ۳) lui، leur ۴) y ۵) en.
+Il me donne le livre → Il me le donne. Je donne la clé à Paul → Je la lui donne. Je donne des bonbons aux enfants → Je leur en donne.
+راه ساده برای یادگرفتن: me، te، nous و vous قبل از le می‌آیند (je te le dis)، ولی lui و leur بعد از le (je le lui dis). en همیشه آخر است: il y en a، je t'en donne.
+me و lui (یا te و leur) با هم نمی‌آیند، چون هر دو یعنی «به کسی».
+در passé composé هر دو ضمیر قبل از avoir می‌آیند: Il me l'a donné. Je le lui ai dit. Je leur en ai acheté.
+با la و les پیش از avoir، اسم مفعول جور می‌شود (مثل A2): La lettre ? Je la lui ai donnée. Mes clés ? Paul me les a rendues. با en جور نمی‌شود: Des pommes ? Je lui en ai donné.
+با فعل + مصدر، هر دو قبل از مصدر می‌آیند: Je vais te le montrer. Tu peux me les envoyer ?
+در منفی ne قبل از دو ضمیر و pas بعد از فعل یا بعد از avoir: Il ne me l'a pas dit. Je ne le lui ai pas encore dit.
+امر مثبت: هر دو ضمیر بعد از فعل با خط تیره، اول le، la، les و بعد moi، toi، lui، nous، leur: Donne-le-moi ! Montre-la-lui ! Envoyez-les-nous !
+با en در امر مثبت، moi و toi می‌شوند m' و t': Donne-m'en ! (نه «donne-moi-en»)؛ با lui و leur: Donne-lui-en ! Donne-leur-en !
+امر منفی همان ترتیب جملهٔ معمولی را دارد: Ne me le dis pas ! Ne le lui montre pas ! Ne leur en donne pas !
+table:
+کجا | ترتیب | مثال
+جملهٔ معمولی | me، te، nous، vous + le، la، les | Il me le donne.
+جملهٔ معمولی | le، la، les + lui، leur | Je le lui dis.
+با y و en | … + y + en | Il y en a. Je leur en donne.
+passé composé | دو ضمیر + avoir | Je le lui ai dit. Il me les a rendues.
+فعل + مصدر | دو ضمیر قبل از مصدر | Je vais te le montrer.
+امر مثبت | فعل-le، la، les-moi، lui، nous، leur | Donne-le-moi ! Donne-m'en !
+امر منفی | ne + دو ضمیر + فعل + pas | Ne me le dis pas !
+examples:
+Ton vélo ? Je te le rends demain. | دوچرخه‌ات؟ فردا پسش می‌دهم.
+Marie voulait savoir la vérité, alors je la lui ai dite. | ماری می‌خواست حقیقت را بداند، برای همین به او گفتمش.
+Mes parents adorent les fleurs, je leur en apporte toujours. | پدر و مادرم عاشق گل‌اند، همیشه برایشان گل می‌برم.
+Ce gâteau est délicieux, donne-m'en encore un peu ! | این کیک خیلی خوشمزه است، باز هم کمی به من بده!
+Les photos ? Je vais te les envoyer ce soir. | عکس‌ها؟ امشب برایت می‌فرستمشان.
+targets:
+Ton vélo est super. Tu [me le] prêtes demain ? | دوچرخه‌ات عالی است. فردا قرضش می‌دهی به من؟ | d: le me, me la, me lui
+Cette histoire, mon grand-père [nous la] raconte à chaque Noël. | این داستان را پدربزرگم هر کریسمس برایمان تعریف می‌کند. | d: la nous, nous le, nous lui
+Marie attend sa lettre ? Je [la lui] donne ce soir. | ماری منتظر نامه‌اش است؟ امشب به او می‌دهمش. | d: lui la, la leur, le lui
+Les enfants veulent des bonbons ? Je [leur en] achète deux paquets. | بچه‌ها آب‌نبات می‌خواهند؟ دو بسته برایشان می‌خرم. | d: en leur, les en, leur les
+Des taxis ? À minuit, il n'[y en] a plus. | تاکسی؟ نصفه‌شب دیگر پیدا نمی‌شود. | d: en y, y les, en lui
+Le directeur veut le dossier. Je vais [le lui] envoyer ce soir. | مدیر پرونده را می‌خواهد. امشب برایش می‌فرستمش. | d: lui le, le leur, la lui
+Ces photos sont belles ! Tu peux [me les] envoyer ? | این عکس‌ها قشنگ‌اند! می‌توانی برایم بفرستی‌شان؟ | d: les me, me leur, me la
+Mes parents ne connaissent pas mon copain. Je vais [le leur] présenter dimanche. | پدر و مادرم دوست‌پسرم را نمی‌شناسند. یکشنبه به آن‌ها معرفی‌اش می‌کنم. | d: leur le, les leur, le lui
+Tu as besoin d'argent ? Je peux [t'en] prêter un peu. | پول لازم داری؟ می‌توانم کمی به تو قرض بدهم. | d: en te, te le, te les
+Ce restaurant est génial, je [t'y] emmène samedi soir. | این رستوران عالی است، شنبه شب می‌برمت آنجا. | d: y te, t'en, lui y
+Mes clés ? Paul [me les] a rendues ce matin. | کلیدهایم؟ پل امروز صبح پسشان داد. | d: les me, me leur, m'en
+Ses parents ne savent pas qu'il part : Paul ne [le leur] a pas encore dit. | پدر و مادرش نمی‌دانند که دارد می‌رود: پل هنوز به آن‌ها نگفته. | d: leur le, les leur, le lui
+Léa n'avait pas de billet pour le concert, alors je [lui en] ai donné un. | لئا بلیت کنسرت نداشت، برای همین یکی به او دادم. | d: en lui, leur en, lui y
+J'ai besoin de ton stylo : [donne-le-moi], s'il te plaît. | خودکارت را لازم دارم: لطفاً بدهش به من. | d: donne-moi-le, me le donne, donne-le-me
+Tu as des photos de la fête ? [Montre-les-moi] ! | از جشن عکس داری؟ نشانم بده! | d: Montre-moi-les, Me les montre, Montre-les-me
+Ta grand-mère adore cette chanson : [chante-la-lui] ! | مادربزرگت عاشق این آهنگ است: برایش بخوانش! | d: chante-lui-la, la lui chante, chante-la-leur
+Il reste de la soupe ? [Donne-m'en] un peu, j'ai faim. | سوپ مانده؟ کمی به من بده، گرسنه‌ام. | d: Donne-moi-en, M'en donne, Donne-en-moi
+Les enfants ont faim et il y a des pommes : [donne-leur-en] ! | بچه‌ها گرسنه‌اند و سیب هست: کمی به آن‌ها بده! | d: donne-en-leur, leur en donne, donne-lui-en
+Ce secret, Paul ne doit pas le savoir{savoir} : ne [le lui] dis pas ! | این راز را پل نباید بداند: به او نگو! | d: lui le, le-lui, la lui
+Les photos de l'accident ? Non, ne [me les] montre pas ! | عکس‌های تصادف؟ نه، نشانم نده! | d: les me, moi les, me la
+Les fleurs sur la table ? Mon mari [me les] a offertes pour mon anniversaire. | گل‌های روی میز؟ شوهرم برای تولدم آن‌ها را به من هدیه داده. | d: les me, me leur, m'en
+Les enfants adorent le zoo, je [les y] emmène souvent. | بچه‌ها عاشق باغ‌وحش‌اند، اغلب می‌برمشان آنجا. | d: y les, leur y, lui y
+Les invités voulaient du café, alors je [leur en] ai servi. | مهمان‌ها قهوه می‌خواستند، برای همین برایشان قهوه ریختم. | d: en leur, lui en, leur les
+Paul voulait ton numéro : je [le lui] ai donné hier. | پل شماره‌ات را می‌خواست: دیروز به او دادمش. | d: lui le, le leur, la lui
+Tu cherches tes lunettes ? Je [te les] ai apportées, elles étaient dans la voiture. | دنبال عینکت می‌گردی؟ برایت آوردمشان، توی ماشین بودند. | d: les te, te leur, t'en
+Si tu voulais mon avis, je [te le] donnerais. | اگر نظرم را می‌خواستی، به تو می‌گفتمش. | d: le te, te la, te lui
+Je te prête ma voiture, mais il faut que tu [me la] rendes avant vendredi. | ماشینم را قرض می‌دهم، ولی باید تا قبل از جمعه پسش بدهی. | d: la me, me le, me lui
+Après [le lui] avoir expliqué deux fois, j'ai compris qu'il ne m'écoutait pas. | بعد از اینکه دو بار برایش توضیح دادم، فهمیدم که به حرفم گوش نمی‌دهد. | d: lui le, le leur, la lui
+Tu pars au Canada ? Tu [le leur] as dit, à tes parents ? | داری به کانادا می‌روی؟ به پدر و مادرت گفته‌ای؟ | d: leur le, les leur, le lui
+Vous cherchez la gare ? Je vais [vous la] montrer sur le plan. | دنبال ایستگاه قطار می‌گردید؟ روی نقشه نشانتان می‌دهم. | d: la vous, vous le, vous lui
+Tes chaussures sont belles ! Qui [te les] a offertes ? | کفش‌هایت قشنگ‌اند! چه کسی به تو هدیه داده؟ | d: les te, te leur, t'en
+Tu veux des cerises ? Mon voisin [nous en] a apporté un kilo. | گیلاس می‌خواهی؟ همسایه‌مان یک کیلو برایمان آورده. | d: en nous, nous les, nous y
+Il y a encore des fraises ? Oui, il [y en] a dans le frigo. | باز هم توت‌فرنگی هست؟ آره، توی یخچال هست. | d: en y, y les, lui en
+Tu as fini le livre ? Tu [me le] prêtes ? Oui, je [te le] prête volontiers. | کتاب را تمام کردی؟ قرضش می‌دهی به من؟ آره، با کمال میل قرضش می‌دهم. | d: le me, me la, me lui / le te, te la, te lui
+Mes skis ? Je [les lui] ai prêtés, mais elle ne [me les] a pas rendus. | اسکی‌هایم؟ به او (زن) قرضشان دادم، ولی پسشان نداده. | d: lui les, les leur, le lui / les me, me leur, m'en
+Tu veux voir les photos ? Je [te les] montre et après tu [me les] rends. | می‌خواهی عکس‌ها را ببینی؟ نشانت می‌دهم و بعد پسشان می‌دهی. | d: les te, te leur, t'en / les me, me leur, m'en
+Cette lettre est pour moi, pas pour Paul : [donne-la-moi] et ne [la lui] montre pas ! | این نامه برای من است، نه برای پل: بدهش به من و به او نشانش نده! | d: donne-moi-la, me la donne, donne-la-me / lui la, la leur, le lui
+Il y a du gâteau ? Oui, il [y en] a. [Donne-m'en] un morceau, s'il te plaît. | کیک هست؟ آره، هست. لطفاً یک تکه به من بده. | d: en y, y le, lui en / Donne-moi-en, M'en donne, Donne-en-moi
+Paul adore les cerises : je [lui en] ai acheté et je [les lui] apporte ce soir. | پل عاشق گیلاس است: برایش گیلاس خریده‌ام و امشب برایش می‌برمشان. | d: en lui, leur en, lui y / lui les, les leur, la lui
+Tu as encore des billets ? Oui, il [m'en] reste deux. Je [te les] donne ? | هنوز بلیت داری؟ آره، دوتا برایم مانده. بدهمشان به تو؟ | d: en me, me les, m'y / les te, te leur, t'en
+transforms:
+Il me donne le livre. => Il me le donne. | هر دو مفعول را با ضمیر عوض کن.
+Je dis la vérité à Paul. => Je la lui dis. | هر دو مفعول را با ضمیر عوض کن.
+Elle a envoyé les photos à ses parents. => Elle les leur a envoyées. | هر دو مفعول را با ضمیر عوض کن.
+Tu me prêtes ta voiture ? => Tu me la prêtes ? | «ta voiture» را با ضمیر عوض کن.
+Donne-moi le sel ! => Donne-le-moi ! | «le sel» را با ضمیر عوض کن.
+Ne donne pas les clés à Paul ! => Ne les lui donne pas ! | هر دو مفعول را با ضمیر عوض کن.
+Il a donné des bonbons aux enfants. => Il leur en a donné. | هر دو مفعول را با ضمیر عوض کن.
+Je vais montrer la ville à mes amis. => Je vais la leur montrer. | هر دو مفعول را با ضمیر عوض کن.
+translations:
+کتاب؟ فردا به تو می‌دهمش. => Le livre ? Je te le donne demain. ; Le livre ? Je te le donnerai demain. ; Le livre ? Je vais te le donner demain.
+کلید؟ بدهش به من! => La clé ? Donne-la-moi !
+این راز است: به او نگو! => C'est un secret : ne le lui dis pas ! ; C'est un secret : ne lui dis pas !
+نامه؟ دیروز به آن‌ها نشانش دادم. => La lettre ? Je la leur ai montrée hier. ; La lettre ? Hier, je la leur ai montrée.
+نان هست؟ آره، هست. => Il y a du pain ? Oui, il y en a. ; Est-ce qu'il y a du pain ? Oui, il y en a.
+پول لازم داری؟ می‌توانم کمی به تو قرض بدهم. => Tu as besoin d'argent ? Je peux t'en prêter un peu. ; Est-ce que tu as besoin d'argent ? Je peux t'en prêter un peu. ; As-tu besoin d'argent ? Je peux t'en prêter un peu.
+عکس‌ها؟ می‌توانی برایم بفرستی‌شان؟ => Les photos ? Tu peux me les envoyer ? ; Les photos ? Est-ce que tu peux me les envoyer ? ; Les photos ? Peux-tu me les envoyer ? ; Les photos ? Tu pourrais me les envoyer ? ; Les photos ? Pourrais-tu me les envoyer ?
+بچه‌ها آب‌نبات می‌خواستند، برای همین برایشان خریدم. => Les enfants voulaient des bonbons, alors je leur en ai acheté. ; Les enfants voulaient des bonbons, donc je leur en ai acheté. ; Les enfants voulaient des bonbons, c'est pourquoi je leur en ai acheté.

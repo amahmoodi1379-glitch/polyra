@@ -1,0 +1,92 @@
+code: fr-b1-discours-indirect-passe
+title: نقل قول در گذشته: Il a dit qu'il était fatigué
+scope: نقل حرف دیگران وقتی فعل اصلی در گذشته است (il a dit، elle m'a expliqué، ils ont promis): présent → imparfait، passé composé → plus-que-parfait، futur → conditionnel؛ عوض شدن کلمه‌های زمان (ce jour-là، la veille، le lendemain، la semaine suivante، la semaine précédente) و ضمیرها و صفت‌های ملکی؛ نقل سؤال و دستور در گذشته (il m'a demandé si، il m'a dit de) در درس ۳۳ می‌آید.
+can_do: حالا می‌توانی حرفی را که کسی در گذشته زده برای دیگری تعریف کنی: Paul m'a dit qu'il était malade et qu'il ne viendrait pas. Léa m'a écrit qu'elle avait vu ce film la veille.
+rule: وقتی فعل اصلی در گذشته است، زمان جملهٔ نقل‌شده یک قدم عقب می‌رود: présent → imparfait، passé composé → plus-que-parfait، futur → conditionnel؛ و demain → le lendemain، hier → la veille، aujourd'hui → ce jour-là.
+mistake: فارسی در نقل قول زمان را عوض نمی‌کند («گفت که خسته است»، «گفت که فردا می‌آید»)، برای همین فارسی‌زبان‌ها می‌نویسند «Ce jour-là, il m'a dit qu'il est fatigué et qu'il viendra demain»؛ درست: Ce jour-là, il m'a dit qu'il était fatigué et qu'il viendrait le lendemain.
+lesson:
+در فارسی وقتی حرف کسی را نقل می‌کنیم، زمان فعل را عوض نمی‌کنیم: «گفت که خسته است»، «گفت که فردا می‌آید».
+در فرانسوی وقتی فعل اصلی در گذشته است (il a dit، elle m'a expliqué، il disait)، زمان جملهٔ نقل‌شده یک قدم به عقب می‌رود.
+présent → imparfait: « Je suis fatigué. » → Il a dit qu'il était fatigué.
+passé composé → plus-que-parfait: « J'ai perdu mes clés. » → Elle a dit qu'elle avait perdu ses clés.
+futur → conditionnel: « Je viendrai demain. » → Il a dit qu'il viendrait le lendemain.
+imparfait و plus-que-parfait عوض نمی‌شوند: « J'étais malade. » → Il a dit qu'il était malade.
+کلمه‌های زمان هم عوض می‌شوند، چون آن روز دیگر گذشته است: aujourd'hui → ce jour-là، hier → la veille، demain → le lendemain، la semaine prochaine → la semaine suivante، la semaine dernière → la semaine précédente.
+ضمیرها و صفت‌های ملکی، مثل A2، از دید کسی که نقل می‌کند عوض می‌شوند: « Mon frère est malade. » → Elle a dit que son frère était malade.
+اگر فعل اصلی در زمان حال باشد (il dit)، زمان‌ها عوض نمی‌شوند (درس A2). بعد از dire que هم همیشه indicatif می‌آید، نه subjonctif.
+وقتی چیزی که گفته شده هنوز هم درست است، در گفتار گاهی présent را نگه می‌دارند (Il m'a dit qu'il habite à Lyon)، ولی برای چیزی که به آن روز گذشته مربوط است، جابه‌جایی زمان لازم است.
+table:
+گفتهٔ مستقیم | نقل در گذشته
+présent: « Je suis fatigué. » | imparfait: Il a dit qu'il était fatigué.
+passé composé: « J'ai fini. » | plus-que-parfait: Il a dit qu'il avait fini.
+futur: « Je viendrai. » | conditionnel: Il a dit qu'il viendrait.
+aujourd'hui | ce jour-là
+hier | la veille
+demain | le lendemain
+la semaine prochaine | la semaine suivante
+la semaine dernière | la semaine précédente
+examples:
+Ce jour-là, Paul m'a dit qu'il était malade. | آن روز پل به من گفت که مریض است.
+Elle m'a expliqué qu'elle avait raté le train la veille. | برایم توضیح داد که روز قبلش قطار را از دست داده بود.
+Ils nous ont promis qu'ils viendraient le lendemain. | به ما قول دادند که فردای آن روز بیایند.
+Ma mère m'a dit que mon oncle était à l'hôpital. | مادرم به من گفت که عمویم در بیمارستان است.
+Léa m'a écrit qu'elle avait vu Paul la semaine précédente. | لئا برایم نوشت که هفتهٔ قبلش پل را دیده بود.
+targets:
+Ce jour-là, Paul m'a dit qu'il [était] très fatigué. | آن روز پل به من گفت که خیلی خسته است. | d: est, sera, soit | hint: (être)
+Ce soir-là, Marie m'a expliqué qu'elle [avait] mal à la tête. | آن شب ماری برایم توضیح داد که سرش درد می‌کند. | d: a, aura, ait | hint: (avoir)
+Au téléphone, ma mère m'a dit qu'il [faisait] très froid à Lyon ce jour-là. | پشت تلفن مادرم گفت که آن روز در لیون هوا خیلی سرد است. | d: fait, fera, fasse | hint: (faire)
+Le jour de notre mariage, mes cousins m'ont écrit qu'ils ne [pouvaient] pas venir. | روز عروسی‌مان پسرعموهایم برایم نوشتند که نمی‌توانند بیایند. | d: peuvent, pourront, puissent | hint: (pouvoir)
+Quand je suis arrivé, le serveur m'a dit que la cuisine [était] déjà fermée{fermé}. | وقتی رسیدم، گارسون گفت که آشپزخانه دیگر بسته است. | d: est, sera, soit
+Ce matin-là, le médecin m'a dit que je [devais] rester au lit. | آن روز صبح پزشک به من گفت که باید در رختخواب بمانم. | d: dois, devrai, doive | hint: (devoir)
+Samedi dernier, Léa m'a dit qu'elle ne [voulait] pas sortir ce soir-là. | شنبهٔ گذشته لئا به من گفت که آن شب نمی‌خواهد بیرون برود. | d: veut, voudra, veuille | hint: (vouloir)
+Pendant les vacances, Hugo m'a écrit qu'il [allait] à la plage tous les jours. | در تعطیلات هوگو برایم نوشت که هر روز به ساحل می‌رود. | d: va, ira, aille | hint: (aller)
+Quand je l'ai appelée, Chloé m'a dit qu'elle [était] dans le métro. | وقتی به کلوئه زنگ زدم، گفت که در مترو است. | d: est, sera, soit
+Elle m'a dit qu'elle [avait perdu] ses clés la veille. | به من گفت که روز قبلش کلیدهایش را گم کرده بود. | d: a perdu, perdra, perd | hint: (perdre)
+Paul m'a expliqué qu'il [avait raté] son train la veille. | پل برایم توضیح داد که روز قبلش به قطارش نرسیده بود. | d: a raté, ratera, rate | hint: (rater)
+Sophie m'a raconté qu'elle [était allée] au concert la veille. | سوفی برایم تعریف کرد که روز قبلش به کنسرت رفته بود. | d: est allée, ira, va | hint: (aller)
+Mon voisin m'a dit qu'il [avait vendu] sa voiture la semaine précédente. | همسایه‌ام به من گفت که هفتهٔ قبلش ماشینش را فروخته بود. | d: a vendu, vendra, vend | hint: (vendre)
+Les enfants ont dit qu'ils [avaient fini] leurs devoirs deux heures plus tôt. | بچه‌ها گفتند که دو ساعت قبلش تکالیفشان را تمام کرده بودند. | d: ont fini, finiront, finissent | hint: (finir)
+Julie m'a écrit qu'elle [s'était mariée] le mois précédent. | ژولی برایم نوشت که ماه قبلش ازدواج کرده بود. | d: s'est mariée, se mariera, se marie | hint: (se marier)
+Thomas m'a avoué qu'il [avait oublié] mon anniversaire l'année précédente. | توما به من اعتراف کرد که سال قبلش تولدم را فراموش کرده بود. | d: a oublié, oubliera, oublie | hint: (oublier)
+Le chauffeur nous a expliqué qu'il y [avait eu] un accident ce matin-là. | راننده برایمان توضیح داد که آن روز صبح تصادفی شده بود. | d: a eu, aura, a | ok: avait | hint: (avoir)
+Mes amis m'ont dit qu'ils [étaient partis] en Espagne l'été précédent. | دوستانم به من گفتند که تابستان قبلش به اسپانیا رفته بودند. | d: sont partis, partiront, partent | hint: (partir)
+Il y a deux ans, Paul m'a dit qu'il [partirait] au Canada le mois suivant. | دو سال پیش پل به من گفت که ماه بعدش به کانادا می‌رود. | d: partira, part, partirais | ok: partait | hint: (partir)
+En 2015, mes parents m'ont annoncé qu'ils [achèteraient] une maison l'année suivante. | در سال ۲۰۱۵ پدر و مادرم به من خبر دادند که سال بعدش خانه می‌خرند. | d: achèteront, achètent, achèterions | hint: (acheter)
+Quand j'étais petit, ma mère me promettait qu'on [irait] à la mer l'été suivant. | وقتی بچه بودم، مادرم قول می‌داد که تابستان بعد به دریا می‌رویم. | d: ira, va, irais | ok: allait | hint: (aller)
+Il y a un an, mon chef a dit à Hugo qu'il [commencerait] la semaine suivante. | یک سال پیش رئیسم به هوگو گفت که از هفتهٔ بعدش شروع می‌کند. | d: commencera, commence, commencerais | ok: commençait | hint: (commencer)
+Il y a trois ans, Marie nous a dit qu'elle [aurait] son diplôme l'année suivante. | سه سال پیش ماری به ما گفت که سال بعدش مدرکش را می‌گیرد. | d: aura, a, aurais | hint: (avoir)
+Ce jour-là, la météo a annoncé qu'il [pleuvrait] le lendemain. | آن روز هواشناسی اعلام کرد که فردایش باران می‌آید. | d: pleuvra, pleut, pleuve | hint: (pleuvoir)
+Le vendeur m'a assuré que le magasin [ouvrirait] le lendemain à huit heures. | فروشنده به من اطمینان داد که مغازه فردایش ساعت هشت باز می‌شود. | d: ouvrira, ouvre, ouvrirais | ok: ouvrait | hint: (ouvrir)
+Il y a dix ans, ma sœur m'a dit qu'elle [voyagerait] au Japon l'année suivante. | ده سال پیش خواهرم به من گفت که سال بعدش به ژاپن سفر می‌کند. | d: voyagera, voyage, voyagerais | hint: (voyager)
+Il y a deux ans, Paul m'a dit qu'il partirait [le lendemain]. | دو سال پیش پل به من گفت که فردای آن روز می‌رود. | d: demain, hier, la veille | ok: le jour suivant
+L'été dernier, Léa m'a raconté qu'elle avait vu ce film [la veille]. | تابستان گذشته لئا برایم تعریف کرد که روز قبلش این فیلم را دیده بود. | d: hier, demain, le lendemain | ok: le jour précédent
+Il y a trois ans, Hugo m'a dit qu'il déménagerait [le mois suivant]. | سه سال پیش هوگو به من گفت که ماه بعدش اسباب‌کشی می‌کند. | d: le mois prochain, le mois dernier, le mois précédent
+Paul m'a appelé un dimanche. Il m'a dit qu'il ne travaillait pas [ce jour-là]. | پل یک یکشنبه به من زنگ زد. گفت که آن روز کار نمی‌کند. | d: aujourd'hui, demain, hier
+En 2018, Léa m'a dit qu'elle s'était mariée [l'année précédente]. | در سال ۲۰۱۸ لئا به من گفت که سال قبلش ازدواج کرده بود. | d: l'année dernière, l'année prochaine, l'année suivante
+Ce jour-là, Léa m'a dit que [sa] valise était trop lourde. | آن روز لئا به من گفت که چمدانش خیلی سنگین است. | d: son, ses, lui
+Mes voisins m'ont expliqué que [leur] fils était malade ce jour-là. | همسایه‌هایم برایم توضیح دادند که آن روز پسرشان مریض است. | d: leurs, lui, eux
+Ce soir-là, Paul et Léa m'ont dit [qu'ils] partaient le lendemain. | آن شب پل و لئا به من گفتند که فردایش می‌روند. | d: qu'elles, qu'il, que nous
+Ce jour-là, Paul m'a dit qu'il [était] malade et qu'il ne [viendrait] pas. | آن روز پل به من گفت که مریض است و نمی‌آید. | d: est, sera, soit / viendra, vient, viendrais | ok: était / venait
+Hugo m'a dit qu'il [avait trouvé] un travail la veille et qu'il [commencerait] le lendemain. | هوگو گفت که روز قبلش کار پیدا کرده بود و فردایش شروع می‌کند. | d: a trouvé, trouvera, trouve / commencera, commence, commencerais | ok: avait trouvé / commençait
+L'été dernier, Léa m'a écrit qu'elle [était] à Rome et qu'elle [rentrerait] la semaine suivante. | تابستان گذشته لئا برایم نوشت که در رم است و هفتهٔ بعدش برمی‌گردد. | d: est, sera, soit / rentrera, rentre, rentrerais | ok: était / rentrait
+Ce jour-là, Marie m'a dit que [sa] sœur [avait eu] un bébé la veille. | آن روز ماری به من گفت که خواهرش روز قبلش بچه‌دار شده بود. | d: son, ses, lui / a eu, aura, a
+Ce soir-là, mes parents m'ont dit qu'ils [étaient] fatigués et qu'ils [rentreraient] tôt. | آن شب پدر و مادرم به من گفتند که خسته‌اند و زود برمی‌گردند. | d: sont, seront, soient / rentreront, rentrent, rentrerions | ok: étaient / rentraient
+Il y a deux ans, Paul m'a dit qu'il [avait déménagé] [la veille]. | دو سال پیش پل به من گفت که روز قبلش اسباب‌کشی کرده بود. | d: a déménagé, déménagera, déménage / hier, demain, le lendemain | ok: avait déménagé / le jour précédent
+transforms:
+Paul a dit : « Je suis fatigué. » => Paul a dit qu'il était fatigué. | حرف پل را در گذشته غیرمستقیم نقل کن.
+Marie a dit : « J'ai perdu mon sac. » => Marie a dit qu'elle avait perdu son sac. | حرف ماری را در گذشته غیرمستقیم نقل کن.
+Il a dit : « Je viendrai demain. » => Il a dit qu'il viendrait le lendemain. ; Il a dit qu'il viendrait le jour suivant. | حرفش را غیرمستقیم نقل کن و کلمهٔ زمان را هم عوض کن.
+Léa a dit : « J'ai vu ce film hier. » => Léa a dit qu'elle avait vu ce film la veille. ; Léa a dit qu'elle avait vu ce film le jour précédent. | حرف لئا را غیرمستقیم نقل کن و کلمهٔ زمان را هم عوض کن.
+Mes parents ont dit : « Nous partirons la semaine prochaine. » => Mes parents ont dit qu'ils partiraient la semaine suivante. | حرفشان را غیرمستقیم نقل کن و کلمهٔ زمان را هم عوض کن.
+Le professeur a dit : « L'examen est facile. » => Le professeur a dit que l'examen était facile. | حرف معلم را در گذشته غیرمستقیم نقل کن.
+Sophie a écrit : « Mon frère a trouvé un travail. » => Sophie a écrit que son frère avait trouvé un travail. | نوشتهٔ سوفی را غیرمستقیم نقل کن.
+Hugo a dit : « Je ne peux pas venir aujourd'hui. » => Hugo a dit qu'il ne pouvait pas venir ce jour-là. | حرف هوگو را غیرمستقیم نقل کن و کلمهٔ زمان را هم عوض کن.
+translations:
+پل گفت که خسته است. => Paul a dit qu'il était fatigué.
+ماری گفت که کلیدهایش را گم کرده است. => Marie a dit qu'elle avait perdu ses clés.
+گفتند که فردای آن روز می‌آیند. => Ils ont dit qu'ils viendraient le lendemain. ; Elles ont dit qu'elles viendraient le lendemain. ; Ils ont dit qu'ils venaient le lendemain. ; Elles ont dit qu'elles venaient le lendemain.
+لئا برایم نوشت که در رم است. => Léa m'a écrit qu'elle était à Rome.
+پسرم گفت که تکالیفش را تمام کرده است. => Mon fils a dit qu'il avait fini ses devoirs. ; Mon fils a dit qu'il avait terminé ses devoirs.
+معلم گفت که امتحان آسان است. => Le professeur a dit que l'examen était facile.
+به من قول داد که هفتهٔ بعدش به من زنگ بزند. => Il m'a promis qu'il m'appellerait la semaine suivante. ; Elle m'a promis qu'elle m'appellerait la semaine suivante. ; Il m'a promis qu'il me téléphonerait la semaine suivante. ; Elle m'a promis qu'elle me téléphonerait la semaine suivante.
+هوگو گفت که آن روز نمی‌تواند بیاید. => Hugo a dit qu'il ne pouvait pas venir ce jour-là.

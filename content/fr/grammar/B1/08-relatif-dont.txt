@@ -1,0 +1,91 @@
+code: fr-b1-relatif-dont
+title: «که … ـَش» با de: dont (le film dont je parle)
+scope: ضمیر موصولی dont به‌جای de + اسم: بعد از فعل‌هایی که با de می‌آیند (parler de، avoir besoin de، se souvenir de، rêver de، avoir peur de، avoir envie de، s'occuper de)، بعد از صفت‌هایی که با de می‌آیند (content de، amoureux de، sûr de) و برای مالکیت (la fille dont le père est médecin)؛ و انتخاب بین dont، que، qui و où. ce dont در واحد ۱۳ و حرف اضافه + lequel در واحد ۲۴ می‌آیند.
+can_do: حالا می‌توانی دربارهٔ چیزی که لازم داری، یادت هست یا آرزویش را داری، و دربارهٔ آدمی که پدر یا کارش را می‌شناسی دقیق حرف بزنی: C'est le livre dont j'ai besoin. J'ai une amie dont le frère est pilote.
+rule: وقتی فعل یا صفتِ جملهٔ دوم با de می‌آید (parler de، avoir besoin de، content de)، به‌جای que می‌گوییم dont: le film dont je parle؛ برای «ـَش» مالکیت هم dont + حرف تعریف: la fille dont le père est médecin.
+mistake: فارسی همه‌جا «که» می‌گوید و بعد «ـَش» را می‌آورد («فیلمی که درباره‌اش حرف می‌زنم»، «دختری که پدرش…»)، برای همین فارسی‌زبان‌ها que می‌گذارند («le film que je parle»)، بعد از dont دوباره en می‌آورند («le livre dont j'en ai besoin») یا برای مالکیت son و sa می‌گذارند («la fille dont son père est médecin»)؛ درست: le film dont je parle، le livre dont j'ai besoin، la fille dont le père est médecin.
+lesson:
+در فارسی می‌گوییم «فیلمی که درباره‌اش حرف می‌زنم» یا «کتابی که لازمش دارم»: اول «که» و بعد یک «ـَش» که به همان اسم برمی‌گردد. فرانسوی هر دو را در یک کلمه می‌گوید: dont.
+dont جای de + اسم را می‌گیرد. دو جمله را یکی کن: Je parle d'un film. Ce film est génial. → Le film dont je parle est génial.
+پس اول ببین فعلِ جملهٔ دوم با چه می‌آید. اگر با de می‌آید، dont بگذار: parler de، avoir besoin de، se souvenir de، rêver de، avoir peur de، avoir envie de، s'occuper de.
+La maison dont je rêve (خانه‌ای که آرزویش را دارم)، les enfants dont elle s'occupe (بچه‌هایی که از آن‌ها نگهداری می‌کند).
+صفت‌هایی که با de می‌آیند هم همین‌طورند: être content de، être amoureux de، être sûr de: C'est un travail dont il est content.
+dont برای «ـَش» مالکیت هم هست: Le père de cette fille est médecin → la fille dont le père est médecin (دختری که پدرش پزشک است).
+بعد از dont حرف تعریف می‌آید (le، la، les)، نه son و sa: «la fille dont son père» غلط است، چون dont خودش همان «ـَش» است.
+اسمِ مالکیت می‌تواند مفعول هم باشد: un écrivain dont j'ai lu tous les livres (نویسنده‌ای که همهٔ کتاب‌هایش را خوانده‌ام).
+بعد از dont، de یا en را دوباره نیاور: «le livre dont j'en ai besoin» غلط است؛ درست: le livre dont j'ai besoin.
+فرق dont و que: فعلِ بدون de مفعول مستقیم می‌گیرد و que می‌خواهد (le film que j'ai vu)؛ فعلِ با de، dont می‌خواهد (le film dont j'ai parlé).
+dont برای آدم و چیز، مذکر و مؤنث، مفرد و جمع یکی است و هیچ‌وقت کوتاه نمی‌شود: l'homme dont je parle، les villes dont je me souviens.
+table:
+فعل یا صفت با de | جملهٔ ساده | با dont
+parler de | Je parle de ce film. | le film dont je parle
+avoir besoin de | J'ai besoin de ce livre. | le livre dont j'ai besoin
+se souvenir de | Je me souviens de cette ville. | la ville dont je me souviens
+être content de | Il est content de ce travail. | le travail dont il est content
+مالکیت («ـَش») | Le père de cette fille est médecin. | la fille dont le père est médecin
+بدون de → que | J'ai vu ce film. | le film que j'ai vu
+examples:
+Voici le livre dont je t'ai parlé. | این همان کتابی است که درباره‌اش با تو حرف زدم.
+C'est exactement l'appartement dont nous rêvions. | این دقیقاً همان آپارتمانی است که آرزویش را داشتیم.
+J'ai une amie dont le frère est pilote. | دوستی دارم که برادرش خلبان است.
+C'est une ville dont je me souviens très bien. | شهری است که خیلی خوب یادم هست.
+Ce sont des choses dont on ne parle pas à table. | این‌ها چیزهایی است که سر میز غذا درباره‌شان حرف نمی‌زنیم.
+targets:
+Le film [dont] tout le monde parle sort mercredi au cinéma. | فیلمی که همه درباره‌اش حرف می‌زنند چهارشنبه روی پرده می‌آید. | d: que, qui, quoi
+C'est le collègue [dont] je t'ai parlé hier. | این همان همکاری است که دیروز درباره‌اش با تو حرف زدم. | d: que, qui, où | ok: de qui
+Tu as trouvé le livre [dont] tu avais besoin pour ton examen ? | کتابی را که برای امتحانت لازم داشتی پیدا کردی؟ | d: que, qui, où
+Voilà exactement l'aide [dont] nous avons besoin en ce moment. | این دقیقاً همان کمکی است که الان لازم داریم. | d: que, qui, où
+C'est une soirée [dont] je me souviendrai toute ma vie. | شبی است که تا آخر عمر یادم می‌ماند. | d: que, qui, quoi
+Le village [dont] ma grand-mère se souvient n'existe plus. | روستایی که مادربزرگم به یاد دارد دیگر وجود ندارد. | d: que, qui, quoi
+Elle a enfin trouvé le travail [dont] elle rêvait depuis longtemps. | او (زن) بالاخره کاری را که مدت‌ها آرزویش را داشت پیدا کرد. | d: qu', qui, quoi
+La maison [dont] ils rêvent a un grand jardin près de la mer. | خانه‌ای که آرزویش را دارند یک باغ بزرگ نزدیک دریا دارد. | d: qu', qui, quoi
+Le chien [dont] tu as peur est en fait très gentil. | سگی که از آن می‌ترسی در واقع خیلی مهربان است. | d: que, qui, où
+J'ai enfin acheté la robe [dont] j'avais envie depuis l'été. | بالاخره پیراهنی را خریدم که از تابستان دلم می‌خواست. | d: que, qui, où
+Les enfants [dont] elle s'occupe ont entre trois et cinq ans. | بچه‌هایی که او (زن) از آن‌ها نگهداری می‌کند سه تا پنج ساله‌اند. | d: qu', qui, où | ok: de qui
+C'est un travail [dont] le professeur est très content. | این کاری است که استاد خیلی از آن راضی است. | d: que, qui, quoi
+La fille [dont] Lucas est amoureux habite dans notre rue. | دختری که لوکاس عاشقش است در خیابان ما زندگی می‌کند. | d: que, qui, où | ok: de qui
+C'est la seule chose [dont] je suis vraiment sûr. | این تنها چیزی است که واقعاً از آن مطمئنم. | d: que, qui, où
+J'ai une voisine [dont] le fils joue de la guitare tous les soirs. | همسایه‌ای (زن) دارم که پسرش هر شب گیتار می‌زند. | d: que, qui, où
+C'est un écrivain [dont] j'ai lu tous les livres. | نویسنده‌ای است که همهٔ کتاب‌هایش را خوانده‌ام. | d: que, qui, où
+Nous avons des amis [dont] la fille parle cinq langues. | دوستانی داریم که دخترشان پنج زبان حرف می‌زند. | d: que, qui, où
+Le restaurant [dont] je t'avais donné l'adresse a fermé. | رستورانی که آدرسش را به تو داده بودم بسته شده. | d: que, qui, quoi
+Le gâteau [dont] Marie nous a donné la recette est délicieux. | کیکی که ماری دستورش را به ما داد خیلی خوشمزه است. | d: que, qui, où
+C'est un sujet [dont] on ne parle jamais à la maison. | موضوعی است که در خانه هیچ‌وقت درباره‌اش حرف نمی‌زنیم. | d: que, qui, où
+C'est un problème [dont] il n'a parlé qu'à sa femme. | مشکلی است که فقط با همسرش درباره‌اش حرف زده. | d: que, qui, où
+J'ai enfin lu le roman [dont] tu m'avais parlé l'année dernière. | بالاخره رمانی را که سال گذشته درباره‌اش با من حرف زده بودی خواندم. | d: que, qui, où
+Mon ami Reza, [dont] la femme est française, habite à Lyon. | دوستم رضا که همسرش فرانسوی است در لیون زندگی می‌کند. | d: que, qui, où
+C'est un chanteur [dont] tout le monde connaît le visage. | خواننده‌ای است که همه چهره‌اش را می‌شناسند. | d: que, qui, où
+Quel est le papier [dont] vous avez besoin pour vous inscrire ? | برگه‌ای که برای ثبت‌نام لازم دارید کدام است؟ | d: que, qui, où
+Le bruit [dont] les voisins se plaignent vient du{du-contr} café d'à côté. | سروصدایی که همسایه‌ها از آن شکایت می‌کنند از کافهٔ بغلی می‌آید. | d: que, qui, où
+Voici Sophie, une amie [dont] je t'ai souvent parlé. | این سوفی است، دوستی که اغلب درباره‌اش با تو حرف زده‌ام. | d: que, qui, où | ok: de qui
+C'est une maladie [dont] beaucoup de gens souffrent en hiver. | بیماری‌ای است که در زمستان خیلی‌ها از آن رنج می‌برند. | d: que, qui, quoi
+Le voyage [dont] nous avons parlé coûterait trop cher. | سفری که درباره‌اش حرف زدیم زیادی گران تمام می‌شد. | d: que, qui, quoi
+Le film [que] nous avons vu hier soir était un peu long. | فیلمی که دیشب دیدیم کمی طولانی بود. | d: dont, qui, où
+La lettre [qu']il a reçue ce matin venait de sa banque. | نامه‌ای که او (مرد) امروز صبح گرفت از طرف بانکش بود. | d: dont, qui, où
+Les gens [qui] habitent dans cet immeuble se connaissent tous. | آدم‌هایی که در این ساختمان زندگی می‌کنند همه همدیگر را می‌شناسند. | d: dont, que, où
+Le quartier [où] j'ai grandi a beaucoup changé. | محله‌ای که در آن بزرگ شدم خیلی عوض شده. | d: dont, que, qui
+Le livre [dont] tu m'as parlé et [que] j'ai acheté samedi est vraiment génial. | کتابی که درباره‌اش با من حرف زدی و شنبه خریدمش واقعاً عالی است. | d: que, qui, où / dont, qui, où
+C'est un ami [qui] habite à Rome et [dont] le père est italien. | دوستی است که در رم زندگی می‌کند و پدرش ایتالیایی است. | d: que, dont, où / que, qui, où
+Voici la clé [dont] tu as besoin et le plan [que] je t'ai dessiné. | این کلیدی است که لازم داری و این هم نقشه‌ای که برایت کشیدم. | d: que, qui, où / dont, qui, où
+Elle a deux fils [dont] elle s'occupe seule et [qui] vont à la même école. | او (زن) دو پسر دارد که تنهایی از آن‌ها نگهداری می‌کند و هر دو به یک مدرسه می‌روند. | d: que, qui, où / que, dont, où | ok: de qui
+Le médecin [que] j'ai vu lundi m'a donné le médicament [dont] j'avais besoin. | پزشکی که دوشنبه پیشش رفتم دارویی را که لازم داشتم به من داد. | d: dont, qui, où / que, qui, où
+C'est le quartier [où] nous vivons, et la boulangerie [dont] je t'ai parlé est juste là. | این محله‌ای است که در آن زندگی می‌کنیم، و نانوایی‌ای که درباره‌اش با تو حرف زدم همین‌جاست. | d: dont, que, qui / que, qui, quoi
+Tu te souviens de Léa, [dont] le frère était pilote, et [qui] chantait très bien ? | لئا را یادت هست که برادرش خلبان بود و خیلی قشنگ آواز می‌خواند؟ | d: que, qui, où / que, dont, où
+transforms:
+Je parle d'un film. Ce film est génial. => Le film dont je parle est génial. | دو جمله را با dont یکی کن.
+J'ai besoin de ce livre. Le livre est cher. => Le livre dont j'ai besoin est cher. | دو جمله را با dont یکی کن.
+Voici la ville. Je me souviens de cette ville. => Voici la ville dont je me souviens. | دو جمله را با dont یکی کن.
+C'est la maison. Nous rêvons de cette maison. => C'est la maison dont nous rêvons. | دو جمله را با dont یکی کن.
+J'ai une amie. Le frère de cette amie est pilote. => J'ai une amie dont le frère est pilote. | دو جمله را با dont یکی کن.
+C'est un chien. Mon fils a peur de ce chien. => C'est un chien dont mon fils a peur. | دو جمله را با dont یکی کن.
+Voici le travail. Il est content de ce travail. => Voici le travail dont il est content. | دو جمله را با dont یکی کن.
+C'est le film. J'ai vu ce film hier. => C'est le film que j'ai vu hier. | دو جمله را با dont یا que یکی کن.
+translations:
+این همان کتابی است که لازم دارم. => C'est le livre dont j'ai besoin. ; Voici le livre dont j'ai besoin. ; Voilà le livre dont j'ai besoin.
+فیلمی را که درباره‌اش حرف می‌زنی دیده‌ام. => J'ai vu le film dont tu parles.
+دوستی دارم که پدرش پزشک است. => J'ai un ami dont le père est médecin. ; J'ai une amie dont le père est médecin.
+خانه‌ای که آرزویش را داریم خیلی گران است. => La maison dont nous rêvons est très chère. ; La maison dont on rêve est très chère.
+همکاری که درباره‌اش با تو حرف زدم امروز می‌آید. => Le collègue dont je t'ai parlé vient aujourd'hui. ; Le collègue dont je t'ai parlé arrive aujourd'hui. ; Le collègue dont je t'ai parlé viendra aujourd'hui. ; Le collègue dont je t'ai parlé arrivera aujourd'hui. ; Le collègue dont je t'ai parlé va venir aujourd'hui. ; La collègue dont je t'ai parlé vient aujourd'hui. ; La collègue dont je t'ai parlé arrive aujourd'hui. ; La collègue dont je t'ai parlé viendra aujourd'hui. ; La collègue dont je t'ai parlé arrivera aujourd'hui. ; La collègue dont je t'ai parlé va venir aujourd'hui.
+سگی که بچه‌ها از آن می‌ترسند مال همسایه است. => Le chien dont les enfants ont peur est au voisin. ; Le chien dont les enfants ont peur est à la voisine. ; Le chien dont les enfants ont peur est celui du{du-contr} voisin. ; Le chien dont les enfants ont peur est celui de la voisine. ; Le chien dont les enfants ont peur appartient au voisin. ; Le chien dont les enfants ont peur appartient à la voisine.
+این چیزی است که هیچ‌وقت درباره‌اش حرف نمی‌زنیم. => C'est une chose dont nous ne parlons jamais. ; C'est une chose dont on ne parle jamais. ; C'est quelque chose dont nous ne parlons jamais. ; C'est quelque chose dont on ne parle jamais.
+نویسنده‌ای است که همهٔ کتاب‌هایش را خوانده‌ام. => C'est un écrivain dont j'ai lu tous les livres.

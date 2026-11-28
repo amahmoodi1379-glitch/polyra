@@ -1,0 +1,88 @@
+code: fr-b1-subjonctif-volonte
+title: subjonctif بعد از خواستن: je veux que tu viennes
+scope: subjonctif بعد از فعل‌ها و عبارت‌های خواستن و آرزو: vouloir que، souhaiter que، préférer que، aimer que و j'aimerais que / je voudrais que، demander que، exiger que، refuser que، il est important que، il est nécessaire que، il vaut mieux que؛ مصدر وقتی فاعل دو فعل یکی است (je veux partir / je veux que tu partes)؛ و espérer que + indicatif در برابر souhaiter que + subjonctif. subjonctif بعد از احساس‌ها و نظرها در درس‌های بعد می‌آید.
+can_do: حالا می‌توانی بگویی از دیگران چه می‌خواهی، چه آرزویی برایشان داری و چه چیزی را ترجیح می‌دهی: Je veux que tu viennes. Je préfère que vous restiez. Il vaut mieux que tu partes.
+rule: بعد از vouloir، souhaiter، préférer، aimer، demander، exiger، il est important / nécessaire que و il vaut mieux que، فعل دوم subjonctif است؛ اگر فاعل دو فعل یکی باشد، مصدر می‌آید: je veux partir، je veux que tu partes.
+mistake: فارسی‌زبان‌ها چون می‌گویند «می‌خواهم بروم»، با فاعل یکسان هم que می‌آورند («je veux que je parte»)؛ درست: je veux partir. بعد از espérer هم مثل فارسی التزامی می‌آورند («j'espère que tu viennes»)؛ درست: j'espère que tu viendras.
+lesson:
+فارسی بعد از «خواستن» فعل التزامی می‌آورد: «می‌خواهم بیایی». فرانسوی هم بعد از فعل‌های خواستن subjonctif می‌آورد: Je veux que tu viennes.
+این فعل‌ها همه que + subjonctif می‌خواهند: vouloir que، souhaiter que (آرزو کردن)، préférer que، aimer que، demander que، exiger que (با تأکید خواستن)، refuser que (قبول نکردن): Ma mère refuse que nous sortions.
+j'aimerais que و je voudrais que (conditionnel) هم subjonctif présent می‌خواهند: Je voudrais que vous m'aidiez.
+عبارت‌های «مهم است، لازم است، بهتر است» هم همین‌طورند: il est important que، il est nécessaire que، il vaut mieux que: Il vaut mieux que tu partes.
+فرق مهم با فارسی: وقتی فاعل دو فعل یکی است، فرانسوی مصدر می‌آورد، نه que: Je veux partir (می‌خواهم بروم). «je veux que je parte» غلط است.
+que + subjonctif فقط وقتی است که فاعل دوم کس دیگری است: Je veux que tu partes (می‌خواهم تو بروی). Elle préfère rester / Elle préfère que nous restions.
+برای «مهم است» بدون فاعل، de + مصدر: Il est important de dormir. با فاعل: Il est important que tu dormes.
+منفی و سؤالی هم همین‌طور است: Je ne veux pas que tu sortes seul. Tu veux qu'on aille au cinéma ?
+demander que و exiger que بیشتر در زبان رسمی می‌آیند: Le directeur demande que tout le monde soit à l'heure.
+دام اصلی: espérer! در فارسی «امیدوارم بیایی» التزامی است، ولی بعد از espérer que فعل indicatif می‌آید، معمولاً futur: J'espère que tu viendras. در عوض souhaiter que + subjonctif: Je souhaite que tu viennes.
+table:
+فاعل یکی: مصدر | فاعل دیگر: que + subjonctif
+Je veux partir. | Je veux que tu partes.
+Elle préfère rester. | Elle préfère que nous restions.
+J'aimerais venir. | J'aimerais que tu viennes.
+Il est important de dormir. | Il est important que tu dormes.
+examples:
+Je veux que tu viennes avec moi. | می‌خواهم با من بیایی.
+Je veux venir avec toi. | می‌خواهم با تو بیایم.
+Mes parents préfèrent que je travaille à Paris. | پدر و مادرم ترجیح می‌دهند در پاریس کار کنم.
+Il vaut mieux que vous preniez un taxi. | بهتر است تاکسی بگیرید.
+J'espère que tu viendras demain. | امیدوارم فردا بیایی.
+targets:
+Je veux que tu [viennes] à mon anniversaire samedi. | می‌خواهم شنبه به جشن تولدم بیایی. | d: viens, venir, viendras | hint: (venir)
+Mes parents veulent que je [devienne] médecin. | پدر و مادرم می‌خواهند پزشک بشوم. | d: deviens, devenir, deviendrai | hint: (devenir)
+Tu veux que je t'[aide] à porter ces valises ? | می‌خواهی کمکت کنم این چمدان‌ها را ببری؟ | d: aider, aidais, aiderai | hint: (aider)
+Le professeur veut que nous [lisions] ce livre pour lundi. | استاد می‌خواهد این کتاب را تا دوشنبه بخوانیم. | d: lisons, lire, lisiez | hint: (lire)
+Je ne veux pas que vous [partiez] si{si-adv} tôt. | نمی‌خواهم به این زودی بروید. | d: partez, partir, partions | hint: (partir)
+Elle souhaite que ses enfants [soient] heureux. | او (زن) آرزو دارد بچه‌هایش خوشبخت باشند. | d: sont, être, soyez | hint: (être)
+Nous souhaitons que vous [passiez] de bonnes vacances. | آرزو می‌کنیم تعطیلات خوبی داشته باشید. | d: passez, passer, passions | hint: (passer)
+Je préfère que tu [prennes] le train, c'est moins cher. | ترجیح می‌دهم با قطار بروی، ارزان‌تر است. | d: prends, prendre, prendras | hint: (prendre)
+Vous préférez qu'on [parle] en français ou en anglais ? | ترجیح می‌دهید فرانسوی حرف بزنیم یا انگلیسی؟ | d: parler, parlait, parlera | hint: (parler)
+Mon père préfère que nous [restions] à la maison ce soir. | پدرم ترجیح می‌دهد امشب در خانه بمانیم. | d: restons, rester, restiez | hint: (rester)
+J'aimerais que tu [sois] plus patient avec ta sœur. | دلم می‌خواهد با خواهرت صبورتر باشی. | d: es, être, seras | hint: (être)
+Elle aimerait que son mari [cuisine]{cuisiner} plus souvent. | او (زن) دلش می‌خواهد شوهرش بیشتر آشپزی کند. | d: cuisiner, cuisinait, cuisinera | hint: (cuisiner)
+Les voisins demandent que nous [fassions] moins de bruit le soir. | همسایه‌ها می‌خواهند شب‌ها کمتر سروصدا کنیم. | d: faisons, faire, fassiez | hint: (faire)
+Le directeur demande que tout le monde [soit] à la réunion à neuf heures. | مدیر می‌خواهد همه ساعت نه در جلسه باشند. | d: est, être, soient
+Le client exige qu'on lui [rende] son argent. | مشتری اصرار دارد پولش را به او پس بدهند. | d: rend, rendre, rendra | hint: (rendre)
+Mon patron exige que je [réponde] à ses e-mails tout de suite. | کارفرمایم اصرار دارد فوراً به ایمیل‌هایش جواب بدهم. | d: réponds, répondre, répondrai | hint: (répondre)
+Il est important que vous [dormiez] bien avant l'examen. | مهم است که قبل از امتحان خوب بخوابید. | d: dormez, dormir, dormirez | hint: (dormir)
+Il est important que les enfants [apprennent] à nager. | مهم است که بچه‌ها شنا یاد بگیرند. | d: apprendre, apprendront, appreniez | hint: (apprendre)
+Pour ce voyage, il est nécessaire que tu [aies] un visa. | برای این سفر لازم است ویزا داشته باشی. | d: as, avoir, auras | hint: (avoir)
+Il est nécessaire qu'on [sache] la date avant lundi. | لازم است تا دوشنبه تاریخ را بدانیم. | d: sait, savoir, saura | hint: (savoir)
+Il vaut mieux que tu [ailles] te coucher, tu es fatigué. | بهتر است بروی بخوابی، خسته‌ای. | d: vas, aller, iras | hint: (aller)
+Il vaut mieux qu'elle [attende] la réponse du{du-contr} médecin. | بهتر است او (زن) منتظر جواب پزشک بماند. | d: attend, attendre, attendra | hint: (attendre)
+Je veux [partir] tôt demain matin. | می‌خواهم فردا صبح زود راه بیفتم. | d: parte, partes, pars | hint: (partir)
+Nous préférons [rester] ici, il fait trop froid dehors. | ترجیح می‌دهیم اینجا بمانیم، بیرون خیلی سرد است. | d: restions, restons, reste | hint: (rester)
+J'aimerais [voir] ce film avec toi. | دلم می‌خواهد این فیلم را با تو ببینم. | d: voie, vois, voyions | hint: (voir)
+Elle souhaite [travailler] à l'étranger. | او (زن) آرزو دارد در خارج از کشور کار کند. | d: travaille, travailles, travaillions | hint: (travailler)
+J'espère que tu [viendras] à la fête samedi. | امیدوارم شنبه به جشن بیایی. | d: viennes, venir, viendrais | ok: viens | hint: (venir)
+Nous espérons que vous [passerez] de bonnes vacances. | امیدواریم تعطیلات خوبی داشته باشید. | d: passer, passions, passeriez | ok: passez | hint: (passer)
+Je ne veux pas que mon fils [sorte] seul le soir. | نمی‌خواهم پسرم شب‌ها تنها بیرون برود. | d: sort, sortir, sortira | hint: (sortir)
+Tu veux qu'on [aille] au cinéma ce soir ? | می‌خواهی امشب برویم سینما؟ | d: va, aller, ira | hint: (aller)
+Le médecin veut que je [boive] plus d'eau. | پزشک می‌خواهد بیشتر آب بنوشم. | d: bois, boire, boirai | hint: (boire)
+Mes amis voudraient que je [vienne] vivre à Lyon. | دوستانم دلشان می‌خواهد بیایم و در لیون زندگی کنم. | d: viens, venir, viendrai
+Ma mère refuse que nous [mangions] devant la télévision. | مادرم اجازه نمی‌دهد جلوی تلویزیون غذا بخوریم. | d: mangeons, manger, mangerons | hint: (manger)
+Je veux [partir] en vacances, mais je veux que tu [viennes] avec moi. | می‌خواهم به تعطیلات بروم، ولی می‌خواهم تو هم با من بیایی. | d: parte, partes, pars / viens, venir, viendras
+Elle aimerait que vous [restiez] et que vous [mangiez] avec nous. | او (زن) دلش می‌خواهد بمانید و با ما غذا بخورید. | d: restez, rester, resterez / mangez, manger, mangerez
+Le patron exige que nous [soyons] à l'heure et que nous [finissions] tôt. | کارفرما اصرار دارد سر وقت باشیم و کار را زود تمام کنیم. | d: sommes, être, serons / finissons, finir, finirons
+Il est important que tu [fasses] du sport et que tu [manges] bien. | مهم است که ورزش کنی و خوب غذا بخوری. | d: fais, faire, feras / manger, mangeais, mangeras
+Je préfère [conduire], je ne veux pas que tu [sois] fatigué. | ترجیح می‌دهم خودم رانندگی کنم، نمی‌خواهم تو خسته بشوی. | d: conduise, conduises, conduis / es, être, seras
+Nous souhaitons que tu [réussisses] et que tu [trouves] un bon travail. | آرزو می‌کنیم موفق شوی و یک کار خوب پیدا کنی. | d: réussis, réussir, réussiras / trouver, trouvais, trouveras
+Tu veux que je [fasse] le dîner ou tu préfères qu'on [aille] au restaurant ? | می‌خواهی شام درست کنم یا ترجیح می‌دهی برویم رستوران؟ | d: fais, faire, ferai / va, aller, ira
+transforms:
+Je veux partir. => Je veux que tu partes. | جمله را طوری بنویس که «تو» بروی.
+Elle veut sortir. => Elle veut que nous sortions. ; Elle veut qu'on sorte. | جمله را طوری بنویس که «ما» بیرون برویم.
+Tu dois venir, je le veux. => Je veux que tu viennes. | با je veux que یک جمله بساز.
+Vous devez être à l'heure, le directeur l'exige. => Le directeur exige que vous soyez à l'heure. | با exiger que یک جمله بساز.
+Il est important de dormir. => Il est important que tu dormes. | جمله را برای tu بنویس.
+Je préfère que tu restes. => Je préfère rester. | جمله را طوری بنویس که خودت (je) بمانی.
+Je souhaite que tu réussisses. => J'espère que tu réussiras. | به‌جای souhaiter، espérer بیاور.
+Tu fais du sport ? C'est important. => Il est important que tu fasses du sport. ; C'est important que tu fasses du sport. | با il est important que یک جمله بساز.
+translations:
+می‌خواهم بیایی. => Je veux que tu viennes. ; Je voudrais que tu viennes. ; J'aimerais que tu viennes.
+می‌خواهم بیایم. => Je veux venir. ; Je voudrais venir. ; J'aimerais venir.
+ترجیح می‌دهیم اینجا بمانید. => Nous préférons que vous restiez ici. ; On préfère que vous restiez ici.
+بهتر است تاکسی بگیری. => Il vaut mieux que tu prennes un taxi. ; Il faudrait que tu prennes un taxi. ; Tu devrais prendre un taxi.
+امیدوارم فردا بیایی. => J'espère que tu viendras demain. ; J'espère que tu viens demain.
+مهم است که خوب بخوابی. => Il est important que tu dormes bien. ; C'est important que tu dormes bien.
+پدرم نمی‌خواهد تنها بیرون بروم. => Mon père ne veut pas que je sorte seul. ; Mon père ne veut pas que je sorte seule.
+پدر و مادرم می‌خواهند پزشک بشوم. => Mes parents veulent que je devienne médecin. ; Mes parents voudraient que je devienne médecin. ; Mes parents aimeraient que je devienne médecin.

@@ -1,0 +1,93 @@
+code: fr-b1-negation
+title: منفی‌های بیشتر: ne … ni … ni، ne … aucun، nulle part، sans
+scope: ne … ni … ni («نه … نه»: je ne bois ni café ni thé، و در جای فاعل: Ni Paul ni Marie ne sont venus)، ne … aucun / aucune + اسم مفرد و به‌شکل ضمیر (aucun de mes amis، je n'en ai aucune، Aucun.)، ne … nulle part («هیچ‌جا»)، sans + اسم بی‌حرف تعریف و sans + مصدر (sans sucre، sans dire au revoir، sans rien dire، sans voir personne)، non plus و moi non plus، و چند منفی با هم (je ne vois plus personne، il ne dit jamais rien، plus jamais)؛ ne … plus، jamais، rien و personne را از A2 می‌شناسی و ne … que در واحد قبل آمد.
+can_do: حالا می‌توانی بگویی نه این را می‌خواهی نه آن، هیچ ایده‌ای نداری یا هیچ‌جا نرفتی، و به یک جملهٔ منفی با «من هم نه» جواب بدهی: Je ne bois ni café ni thé. Je n'ai aucune idée. — Moi non plus.
+rule: ni، aucun و nulle part مثل rien و personne جای pas می‌نشینند و pas با آن‌ها نمی‌آید: je ne bois ni café ni thé، je n'ai aucune idée، je ne vais nulle part؛ بعد از ni اسم بی du و des می‌آید؛ aucun با اسمش جور می‌شود و مفرد است؛ «من هم» بعد از جملهٔ منفی می‌شود moi non plus.
+mistake: در فارسی «نه … نه» با فعل مثبت می‌آید («نه چای می‌خورم نه قهوه») و «من هم» برای جملهٔ مثبت و منفی یکی است، برای همین فارسی‌زبان‌ها pas را کنار ni و aucun نگه می‌دارند («je ne bois pas ni café ni thé»، «je n'ai pas aucune idée») و بعد از جملهٔ منفی می‌گویند «moi aussi»؛ درست: je ne bois ni café ni thé، je n'ai aucune idée، و Je n'aime pas l'hiver. — Moi non plus.
+lesson:
+از A2 می‌دانی که plus، jamais، rien و personne جای pas می‌نشینند (je ne mange plus de viande، je n'ai vu personne). این واحد چند منفی دیگر را به همین شکل اضافه می‌کند؛ با هیچ‌کدامشان pas نمی‌آید.
+ne … ni … ni یعنی «نه … نه»: Je ne bois ni café ni thé. فارسی فعل را مثبت می‌گوید («نه چای می‌خورم نه قهوه»)، ولی فرانسوی ne را قبل از فعل لازم دارد.
+بعد از ni، un، du، de la و des نمی‌آیند: Je n'ai ni frère ni sœur. Il ne boit ni vin ni bière. ولی le، la و les می‌مانند: Je n'aime ni l'hiver ni la pluie.
+ni … ni در جای فاعل هم می‌آید و ne قبل از فعل لازم است: Ni Paul ni Marie ne sont venus. در passé composé، ni بعد از اسم مفعول می‌آید: Je n'ai vu ni Paul ni Marie.
+ne … aucun یعنی «هیچ … ای»: Je n'ai aucune idée. Il n'y a aucun problème. aucun با اسمش مذکر یا مؤنث می‌شود (aucun problème، aucune idée) و مفرد می‌ماند، حتی وقتی در فارسی به جمع فکر می‌کنی.
+aucun در جای فاعل: Aucun train ne part ce soir. در passé composé، aucun بعد از اسم مفعول می‌آید: Je n'ai reçu aucun message.
+aucun به‌شکل ضمیر: Aucun de mes amis n'est venu. (هیچ‌کدام از دوستانم نیامد؛ فعل مفرد.) با en: Des questions ? Je n'en ai aucune. در جواب کوتاه: Aucun.
+ne … nulle part یعنی «هیچ‌جا»: Je ne trouve mes clés nulle part. در passé composé، مثل personne بعد از اسم مفعول: Je ne suis allé nulle part.
+sans («بدون») خودش منفی است و ne نمی‌خواهد. sans + اسم بی‌حرف تعریف: un café sans sucre، partir sans argent. sans + مصدر: Il est parti sans dire au revoir.
+بعد از sans، rien قبل از مصدر می‌آید و personne بعد از آن: Elle est partie sans rien dire. Je suis passé sans voir personne.
+non plus جای aussi را در جملهٔ منفی می‌گیرد: J'aime le café. — Moi aussi. ولی: Je n'aime pas l'hiver. — Moi non plus. (من هم دوست ندارم.) در جملهٔ کامل: Léa ne vient pas non plus.
+چند منفی با هم: اول plus یا jamais، بعد rien یا personne: Je ne vois plus personne. Il ne dit jamais rien. Je ne ferai plus jamais ça. باز هم pas نمی‌آید.
+مواظب باش: «je ne vois pas personne»، «je n'ai pas aucune idée» و «je ne vais pas nulle part» غلط‌اند؛ آن منفی دیگر جای pas را گرفته است.
+table:
+منفی | معنی | مثال
+ne … ni … ni | نه … نه | Je ne bois ni café ni thé.
+ne … aucun / aucune | هیچ … ای | Je n'ai aucune idée.
+ne … nulle part | هیچ‌جا | Je ne vais nulle part.
+sans + اسم / مصدر | بدون | sans sucre، sans rien dire
+moi non plus | من هم نه | Je n'aime pas ça. — Moi non plus.
+ne … plus personne / jamais rien | دیگر هیچ‌کس / هیچ‌وقت هیچ چیز | Je ne vois plus personne{personne-pron}.
+examples:
+Je n'ai ni le temps ni l'argent pour partir en vacances. | نه وقتش را دارم نه پولش را که به تعطیلات بروم.
+Il n'y a aucun problème, je peux venir. | هیچ مشکلی نیست، می‌توانم بیایم.
+Je ne trouve mes lunettes nulle part. | عینکم را هیچ‌جا پیدا نمی‌کنم.
+Elle est partie sans rien dire. | او (زن) بدون اینکه چیزی بگوید رفت.
+Je ne mange pas de viande. — Moi non plus. | من گوشت نمی‌خورم. — من هم نمی‌خورم.
+targets:
+Le soir, je ne bois [ni] café ni thé. | شب‌ها نه قهوه می‌خورم نه چای. | d: pas, plus, jamais
+Mon grand-père [n'a ni] portable ni ordinateur. | پدربزرگم نه موبایل دارد نه کامپیوتر. | d: n'a pas ni, ne ni a, ne a ni | hint: (avoir)
+Je [n'aime ni] l'hiver ni la pluie. | نه زمستان را دوست دارم نه باران را. | d: n'aime pas ni, ne ni aime, ne aime ni | hint: (aimer)
+Cet été, je n'ai vu ni la mer [ni] la montagne. | این تابستان نه دریا را دیدم نه کوه را. | d: et, ou, pas
+Elle [ne parle ni] anglais ni espagnol. | او (زن) نه انگلیسی حرف می‌زند نه اسپانیایی. | d: ne parle pas ni, ne ni parle, ne parlent ni | hint: (parler)
+Hier, je [n'ai mangé ni] viande ni poisson. | دیروز نه گوشت خوردم نه ماهی. | d: n'ai ni mangé, n'ai pas mangé ni, ne ai mangé ni | hint: (manger)
+Où est Paul ? Je n'ai [aucune] idée. | پل کجاست؟ هیچ نمی‌دانم. | d: aucun, aucunes, aucuns
+Ne t'inquiète pas, il n'y a [aucun] problème. | نگران نباش، هیچ مشکلی نیست. | d: aucune, aucuns, pas
+[Aucun] train ne part ce soir à cause de la neige. | امشب به خاطر برف هیچ قطاری حرکت نمی‌کند. | d: Aucune, Aucuns, Pas
+Je [n'ai reçu aucun] message de lui depuis lundi. | از دوشنبه هیچ پیامی از او (مرد) نگرفته‌ام. | d: n'ai aucun reçu, n'ai pas reçu aucun, n'ai reçu aucune | hint: (recevoir)
+Aucun de mes collègues [n'est venu] à la réunion. | هیچ‌کدام از همکارانم به جلسه نیامد. | d: n'est pas venu, ne sont venus, ne sont pas venus | hint: (venir)
+Tu as des questions ? Non, je [n'en ai aucune]. | سؤالی داری؟ نه، هیچ سؤالی ندارم. | d: n'ai aucune, n'en ai pas aucune, n'en ai aucun
+[Aucune] de ces solutions n'est parfaite. | هیچ‌کدام از این راه‌حل‌ها بی‌نقص نیست. | d: Aucun, Aucunes, Aucuns
+Cette chambre n'a [aucune] fenêtre ! | این اتاق هیچ پنجره‌ای ندارد! | d: aucun, aucunes, pas
+Il y a combien de restaurants dans ton village ? [Aucun]. | در روستایتان چند تا رستوران هست؟ هیچ. | d: Aucune, Aucuns, Pas
+Je ne trouve mes clés [nulle part]. | کلیدهایم را هیچ‌جا پیدا نمی‌کنم. | d: partout, quelque part, ailleurs
+Cet été, je [ne suis allé] nulle part. | این تابستان هیچ‌جا نرفتم. | d: ne suis pas allé, n'ai allé, ne suis allés | ok: ne suis allée | hint: (aller)
+Sans voiture, on [ne va] nulle part ici. | اینجا بدون ماشین به هیچ‌جا نمی‌شود رفت. | d: ne va pas, ne vas, ne pas va | hint: (aller)
+Je prends mon café [sans] sucre, merci. | قهوه‌ام را بدون شکر می‌خورم، ممنون. | d: pas, ni, aucun
+Il est parti [sans dire] au revoir. | او (مرد) بدون خداحافظی رفت. | d: sans dit, sans ne dire, sans pas dire | hint: (dire)
+Elle est sortie [sans rien dire]. | او (زن) بدون اینکه چیزی بگوید بیرون رفت. | d: sans rien dit, sans pas rien dire, sans rien ne dire | hint: (dire)
+Je suis passé au bureau [sans voir personne{personne-pron}]. | بدون اینکه کسی را ببینم به اداره سر زدم. | d: sans personne voir, sans pas voir personne, sans voir pas personne | hint: (voir)
+Ne pars pas [sans] ton parapluie ! | بدون چترت نرو! | d: pas, ni, aucun
+Je n'aime pas l'hiver. — Moi [non plus]. | من زمستان را دوست ندارم. — من هم دوست ندارم. | d: aussi, plus non, non aussi
+Paul ne vient pas ce soir, et Léa ne vient pas [non plus]. | پل امشب نمی‌آید و لئا هم نمی‌آید. | d: aussi, plus non, pas plus
+Tu n'as pas faim ? [Moi] non plus. | گرسنه نیستی؟ من هم نیستم. | d: Je, Me, Mon
+Je n'ai pas compris l'exercice. — [Nous non plus]. | من تمرین را نفهمیدم. — ما هم نفهمیدیم. | d: Nous aussi, On non plus, Nous plus non
+Ils ne sont jamais allés au Japon, et nous [non plus]. | آن‌ها هیچ‌وقت ژاپن نرفته‌اند، ما هم نرفته‌ایم. | d: aussi, plus non, jamais plus
+Mon grand-père est très seul : il [ne voit plus personne{personne-pron}]. | پدربزرگم خیلی تنهاست: دیگر هیچ‌کس را نمی‌بیند. | d: ne voit pas plus personne, ne voit personne plus, ne plus voit personne | hint: (voir)
+Dans ce village, il [n'y a jamais rien] à faire. | در این روستا هیچ‌وقت هیچ کاری برای انجام دادن نیست. | d: n'y a pas jamais rien, n'y a rien jamais, n'y a jamais pas rien
+Elle est fâchée : depuis ce matin, elle [ne dit plus rien]. | او (زن) دلخور است: از امروز صبح دیگر هیچ چیز نمی‌گوید. | d: ne dit pas plus rien, ne dit rien plus, ne plus dit rien | hint: (dire)
+Je te promets que je [ne ferai plus jamais] ça. | قول می‌دهم دیگر هیچ‌وقت این کار را نکنم. | d: ne ferai pas plus jamais, ne plus ferai jamais, ne ferai plus pas jamais | hint: (faire)
+Mon fils [ne mange jamais rien] le matin. | پسرم صبح‌ها هیچ‌وقت هیچ چیز نمی‌خورد. | d: ne mange pas jamais rien, ne mange rien jamais, ne jamais mange rien | hint: (manger)
+Après l'accident, il [n'a plus jamais conduit]. | بعد از تصادف، او (مرد) دیگر هیچ‌وقت رانندگی نکرد. | d: n'a pas plus jamais conduit, n'a conduit plus jamais, ne plus a jamais conduit | hint: (conduire)
+Je n'ai [ni] frère [ni] sœur. | نه برادر دارم نه خواهر. | d: pas, plus, sans / et, ou, pas
+[Ni] Paul [ni] Marie ne sont venus à la fête. | نه پل به مهمانی آمد نه ماری. | d: Pas, Non, Sans / et, ou, pas
+Je [ne trouve] mon portable [nulle part] ! | موبایلم را هیچ‌جا پیدا نمی‌کنم! | d: ne trouve pas, ne pas trouve, ne trouvent / partout, quelque part, ailleurs
+Je n'ai [aucune] envie de sortir, et Paul [non plus]. | اصلاً دلم نمی‌خواهد بیرون بروم، پل هم همین‌طور. | d: aucun, aucunes, aucuns / aussi, plus non, pas plus
+Il est sorti [sans] manteau et [sans] parapluie. | بدون پالتو و بدون چتر بیرون رفت. | d: pas, ni, aucun / pas, ni, aucun
+Il [ne dit jamais rien] et il [ne voit plus personne{personne-pron}]. | او (مرد) هیچ‌وقت هیچ چیز نمی‌گوید و دیگر هیچ‌کس را نمی‌بیند. | d: ne dit pas jamais rien, ne dit rien jamais, ne jamais dit rien / ne voit pas plus personne, ne voit personne plus, ne plus voit personne
+transforms:
+Je bois du café et du thé. => Je ne bois ni café ni thé. | جمله را با ne … ni … ni منفی کن.
+J'ai un frère et une sœur. => Je n'ai ni frère ni sœur. | جمله را با ne … ni … ni منفی کن.
+J'ai une idée. => Je n'ai aucune idée. | جمله را با ne … aucun منفی کن.
+Il y a un problème. => Il n'y a aucun problème. | جمله را با ne … aucun منفی کن.
+Je vais quelque part ce week-end. => Je ne vais nulle part ce week-end. | منفی کن و بگو «هیچ‌جا».
+Il est parti et il n'a pas dit au revoir. => Il est parti sans dire au revoir. | با sans + مصدر یک جمله بساز.
+Je vois encore quelqu'un. => Je ne vois plus personne{personne-pron}. | منفی کن و بگو «دیگر هیچ‌کس».
+Il dit toujours quelque chose. => Il ne dit jamais rien. | منفی کن و بگو «هیچ‌وقت هیچ چیز».
+translations:
+نه چای می‌خورم نه قهوه. => Je ne bois ni thé ni café. ; Je ne bois ni café ni thé. ; Je ne prends ni thé ni café. ; Je ne prends ni café ni thé.
+هیچ ایده‌ای ندارم. => Je n'ai aucune idée.
+هیچ مشکلی نیست. => Il n'y a aucun problème. ; Il n'y a pas de problème. ; Aucun problème. ; Pas de problème.
+این تابستان هیچ‌جا نرفتیم. => Cet été, nous ne sommes allés nulle part. ; Cet été, nous ne sommes allées nulle part. ; Cet été, on n'est allés nulle part. ; Cet été, on n'est allées nulle part. ; Cet été, on n'est allé nulle part. ; Nous ne sommes allés nulle part cet été. ; Nous ne sommes allées nulle part cet été. ; On n'est allés nulle part cet été. ; On n'est allées nulle part cet été. ; On n'est allé nulle part cet été.
+او (مرد) بدون خداحافظی رفت. => Il est parti sans dire au revoir.
+قهوه‌ام را بدون شکر می‌خورم. => Je bois mon café sans sucre. ; Je prends mon café sans sucre.
+پل نمی‌آید و من هم نمی‌آیم. => Paul ne vient pas, et moi non plus. ; Paul ne vient pas et moi non plus. ; Paul ne vient pas, et je ne viens pas non plus. ; Paul ne vient pas et je ne viens pas non plus.
+دیگر هیچ‌کس را نمی‌بینم. => Je ne vois plus personne{personne-pron}.

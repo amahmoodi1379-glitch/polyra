@@ -1,0 +1,92 @@
+code: fr-b1-demonstratifs
+title: celui-ci، celle-là، ceci، cela و ça
+scope: ضمیرهای اشاره برای انتخاب و مقایسه: celui-ci، celui-là، celle-ci، celle-là (مفرد)؛ celui-ci در نوشتار به معنی «دومی، همانی که آخر آمد»؛ celui، celle، ceux و celles با dont و où (celui dont je parle، celle où j'habite)؛ و ceci، cela، ça برای «این، آن» بدون اسم مشخص (cela در نوشتار، ça در گفتار) و C'est ça / C'est cela. شکل‌های جمع ceux-ci و celles-là در B2 می‌آیند.
+can_do: حالا می‌توانی در مغازه بین دو چیز انتخاب کنی، بی‌آنکه اسم را تکرار کنی دربارهٔ «همانی که…» حرف بزنی و در گفتار و نوشتار درست بگویی «این»: Je prends celle-ci. C'est celui dont je t'ai parlé. Ça me plaît.
+rule: celui-ci و celle-ci یعنی «این یکی»، celui-là و celle-là یعنی «آن یکی» و با اسمِ قبلی جور می‌شوند (cette robe → celle-ci)؛ celui، celle، ceux، celles + dont یا où یعنی «همانی که…»؛ برای «این، آن» بدون اسم: ça در گفتار، cela در نوشتار، ceci برای چیزی که بعد می‌آید.
+mistake: فارسی برای «این یکی» جنس ندارد، برای همین فارسی‌زبان‌ها برای اسم مؤنث هم celui-ci می‌گویند یا از cette شکل می‌سازند («cette robe ou cette-ci»)، celui را بی‌دنباله به کار می‌برند («Je prends celui»)، و برای «این» در جمله‌هایی مثل «بستگی دارد» il می‌گذارند («Il dépend»)؛ درست: cette robe ou celle-ci، Je prends celui-ci، Ça dépend.
+lesson:
+در A2 دیدی که celui، celle، ceux و celles جای اسم می‌نشینند و تنها نمی‌آیند: celui de Paul، celle qui chante. حالا چند کاربرد تازه می‌بینیم.
+برای انتخاب و مقایسه، -ci و -là به celui و celle می‌چسبند: celui-ci (این یکی)، celui-là (آن یکی)؛ برای مؤنث celle-ci و celle-là: Quel pull tu préfères ? Celui-ci ou celui-là ?
+جنس را اسمِ قبلی تعیین می‌کند: ce pull → celui-ci، cette robe → celle-ci. «cette-ci» وجود ندارد و celui تنها هم غلط است: «Je prends celui» نه، Je prends celui-ci.
+وقتی دو چیز را کنار هم مقایسه می‌کنی، -ci نزدیک‌تر است و -là دورتر. در گفتار روزمره celui-là خیلی بیشتر شنیده می‌شود و گاهی همان «این یکی» است.
+در نوشتار، celui-ci یعنی «دومی، همانی که آخر از همه گفتیم»: Paul a écrit à son directeur, mais celui-ci n'a pas répondu (مدیر جواب نداد، نه پل).
+celui، celle، ceux و celles با dont و où هم می‌آیند، مثل qui و que در A2: C'est celui dont je t'ai parlé. Cette ville est plus grande que celle où j'habite.
+برای «این، آن» وقتی اسم مشخصی در کار نیست (یک کار، یک حرف، یک موقعیت) ça، cela و ceci داریم: Qui a dit ça ? Cela m'étonne.
+ça و cela یک معنی دارند: ça گفتاری است و cela نوشتاری‌تر و رسمی‌تر: Ça me plaît (در حرف زدن)، Cela me plaît (در نامه).
+ceci کمتر می‌آید و بیشتر چیزی را معرفی می‌کند که بعدش می‌گوییم: Écoutez bien ceci : … ؛ cela به چیزی برمی‌گردد که گفته شد.
+C'est ça (گفتار) و C'est cela (رسمی) یعنی «درست است، همین است»: Vous partez demain ? Oui, c'est ça.
+ça را با il قاطی نکن: Ça dépend (بستگی دارد)، Cela fait longtemps (خیلی وقت است)، Ça ne me dérange pas؛ اینجا il غلط است.
+table:
+شکل | کاربرد | مثال
+celui-ci، celle-ci | این یکی | Je prends celui-ci.
+celui-là، celle-là | آن یکی | Pas celle-ci, celle-là !
+celui-ci در نوشتار | دومی، همانی که آخر آمد | Il a écrit à Paul, mais celui-ci n'a pas répondu.
+celui dont، celle où | همانی که … | C'est celui dont je parle.
+ceci | این (چیزی که بعد می‌آید) | Écoutez bien ceci.
+cela | این، آن (نوشتاری) | Cela m'étonne.
+ça | این، آن (گفتاری) | Ça me plaît.
+examples:
+Ces deux vestes sont jolies, mais celle-ci est plus chaude. | این دو کت قشنگ‌اند، ولی این یکی گرم‌تر است.
+Ce n'est pas ce restaurant, c'est celui où nous avons mangé l'an dernier. | این رستوران نیست، همانی است که پارسال در آن غذا خوردیم.
+Ça ne me dérange pas du tout. | اصلاً برایم مزاحمتی ندارد.
+Merci pour votre lettre, cela m'a fait très plaisir. | از نامه‌تان ممنونم، خیلی خوشحالم کرد.
+Vous êtes madame Dubois ? Oui, c'est cela. | شما خانم دوبوا هستید؟ بله، درست است.
+targets:
+Quel pull tu préfères ? [Celui-ci] ou celui-là ? | کدام پلیور را ترجیح می‌دهی؟ این یکی یا آن یکی؟ | d: Celle-ci, Ce, Celui
+Ces deux robes sont belles, mais [celle-ci] est trop courte. | این دو پیراهن قشنگ‌اند، ولی این یکی زیادی کوتاه است. | d: celui-ci, celle, cette
+Je n'aime pas ce fauteuil, je préfère [celui-là], près de la fenêtre. | این مبل را دوست ندارم، آن یکی را ترجیح می‌دهم، کنار پنجره. | d: celle-là, celui, celle
+Entre ces deux hôtels, [celui-ci] est le plus proche de la plage. | از این دو هتل، این یکی به ساحل نزدیک‌تر است. | d: celle-ci, celui, cet
+Tu veux quelle tasse ? [Celle-là], la bleue. | کدام فنجان را می‌خواهی؟ آن یکی، آبیه. | d: Celui-là, Celle, Cette
+Ce gâteau est bon, mais [celui-ci] est encore meilleur. | این کیک خوب است، ولی این یکی از آن هم بهتر است. | d: celle-ci, celui, celle
+Le premier film était long ; [celui-ci] dure seulement une heure. | فیلم اول طولانی بود؛ این یکی فقط یک ساعت طول می‌کشد. | d: celle-ci, celui, ce
+Paul a écrit à son directeur, mais [celui-ci] n'a jamais répondu. | پل به مدیرش نامه نوشت، ولی مدیر هیچ‌وقت جواب نداد. | d: celle-ci, celui, ce
+Marie a appelé sa sœur, et [celle-ci] est venue tout de suite. | ماری به خواهرش زنگ زد و خواهرش فوراً آمد. | d: celui-ci, celle, cette
+Ce n'est pas la bonne adresse. La bonne, c'est [celle-ci]. | این آدرس درست نیست. آدرس درست این است. | d: celui-ci, celle, cette
+Tu as deux manteaux ? Prends [celui-là], il est plus chaud. | دو تا پالتو داری؟ آن یکی را بردار، گرم‌تر است. | d: celle-là, celui, ce
+Mon téléphone ne marche plus, mais [celui-ci] est tout neuf. | گوشی‌ام دیگر کار نمی‌کند، ولی این یکی کاملاً نو است. | d: celle-ci, celui, ce
+[Celle-ci] ou celle-là, ça m'est égal, elles sont belles toutes les deux. | این یکی یا آن یکی، برایم فرقی نمی‌کند، هر دو قشنگ‌اند. | d: Celui-ci, Celle, Cette
+Ce n'est pas ce livre, c'est [celui] dont je t'ai parlé. | این کتاب نیست، همانی است که درباره‌اش با تو حرف زدم. | d: celle, ceux, celles
+La ville où je suis née est plus petite que [celle] où tu habites. | شهری که در آن به دنیا آمدم از شهری که تو در آن زندگی می‌کنی کوچک‌تر است. | d: celui, ceux, celles
+De tous mes professeurs, Martin est [celui] dont je me souviens le mieux. | از میان همهٔ معلم‌هایم، مارتن همانی است که از همه بهتر یادم مانده. | d: celle, ceux, celles
+Ce restaurant est [celui] où nous avons mangé le soir de notre mariage. | این رستوران همانی است که شب عروسی‌مان در آن غذا خوردیم. | d: celle, ceux, celles
+Tu as la clé ? Pas celle-là, [celle] dont j'ai besoin pour la voiture. | کلید را داری؟ آن یکی نه، آنی که برای ماشین لازم دارم. | d: celui, celles, ce
+Cet été, nous retournons au village, celui [où] mes grands-parents sont nés. | این تابستان به روستا برمی‌گردیم، همانی که پدربزرگ و مادربزرگم در آن به دنیا آمدند. | d: dont, que, qui
+Ce film ? C'est celui [dont] tout le monde parle en ce moment. | این فیلم؟ همانی است که این روزها همه درباره‌اش حرف می‌زنند. | d: que, qui, quoi
+Les voisins ? Ce sont [ceux] dont je t'ai parlé hier. | همسایه‌ها؟ همان‌هایی هستند که دیروز درباره‌شان با تو حرف زدم. | d: celles, celui, celle
+Ces photos sont [celles] dont je suis le plus fier. | این عکس‌ها همان‌هایی هستند که بیشتر از همه به آن‌ها افتخار می‌کنم. | d: ceux, celle, ce
+Cette maison ressemble à [celle] où j'ai passé mon enfance. | این خانه شبیه خانه‌ای است که کودکی‌ام را در آن گذراندم. | d: celui, celles, ce
+Tu as vu [ça] ? C'est incroyable ! | این را دیدی؟ باورنکردنی است! | d: le, celui, celle | ok: cela, ceci
+[Ça] ne me dérange pas du tout. | اصلاً برایم مزاحمتی ندارد. | d: Ce, Celui, Celle | ok: Cela, Ceci
+Vous partez demain matin ? Oui, c'est [ça]. | فردا صبح راه می‌افتید؟ بله، درست است. | d: le, celui, celle | ok: cela
+Merci pour votre réponse rapide : [cela] m'a été très utile. | از جواب سریعتان ممنونم: خیلی به کارم آمد. | d: celui, ce, celle | ok: ça
+Il pleut depuis trois jours, et [cela] ne va pas s'arrêter avant dimanche. | سه روز است باران می‌آید و تا یکشنبه هم بند نمی‌آید. | d: celui, celle, ce | ok: ça
+Écoutez bien [ceci] : personne ne sort avant la fin de l'examen. | خوب گوش کنید: هیچ‌کس تا آخر امتحان بیرون نمی‌رود. | d: celui-ci, celle-ci, ce | ok: ça
+[Cela] fait longtemps que je ne t'ai pas vu ! | خیلی وقت است ندیدمت! | d: Ce, Celui, Il | ok: Ça
+Qui a dit [ça] ? Ce n'est pas vrai ! | کی این را گفت؟ راست نیست! | d: le, celui, celle | ok: cela, ceci
+[Cela] dépend surtout du{du-contr} prix des{des-contr} billets. | بیشتر بستگی به قیمت بلیت‌ها دارد. | d: Ce, Celui, Il | ok: Ça
+Je ne comprends pas pourquoi il a fait [ça]. | نمی‌فهمم چرا این کار را کرد. | d: ce, celui, celle | ok: cela
+Ah, c'est [ça] que tu voulais dire ! | آهان، منظورت این بود! | d: le, celui, celle | ok: cela
+Quelle valise est à toi, [celle-ci] ou [celle-là] ? | کدام چمدان مال توست، این یکی یا آن یکی؟ | d: celui-ci, celle, cette / celui-là, celle, cette
+J'hésite entre deux vestes : [celle-ci] est jolie, mais [celle-là] est moins chère. | بین دو کت مردّدم: این یکی قشنگ است، ولی آن یکی ارزان‌تر است. | d: celui-ci, celle, cette / celui-là, celle, cette
+Sur cette photo, [celui-ci], c'est mon frère, et [celle-là], c'est ma sœur. | توی این عکس، این برادرم است و آن یکی خواهرم. | d: celle-ci, celui, celle / celui-là, celle, celui
+[Ça] ne m'étonne{étonner} pas : ce film est [celui] dont tout le monde parle. | تعجبی ندارد: این فیلم همانی است که همه درباره‌اش حرف می‌زنند. | d: Celle, Celle-ci, Ceux / celle, ceux, celles | ok: Cela
+Entre ces deux appartements, [celui-ci] est plus grand, mais [celui-là] a un balcon. | از این دو آپارتمان، این یکی بزرگ‌تر است، ولی آن یکی بالکن دارد. | d: celle-ci, celui, cet / celle-là, celui, cet
+Lis [ceci] et dis-moi si [cela] te convient. | این را بخوان و بگو برایت مناسب است یا نه. | d: celui-ci, celle-ci, ce / celui, celle, ce | ok: ça / ça
+transforms:
+Je préfère cette robe. => Je préfère celle-ci. ; Je préfère celle-là. | به‌جای «cette robe» ضمیر اشاره بگذار.
+Tu veux ce livre ? => Tu veux celui-ci ? ; Tu veux celui-là ? | به‌جای «ce livre» ضمیر اشاره بگذار.
+Ce n'est pas le film dont je parle. => Ce n'est pas celui dont je parle. | به‌جای «le film» ضمیر اشاره بگذار.
+La ville où j'habite est plus petite que la ville où tu habites. => La ville où j'habite est plus petite que celle où tu habites. | اسم تکراری را با ضمیر اشاره عوض کن.
+Les voisins dont je t'ai parlé arrivent ce soir. => Ceux dont je t'ai parlé arrivent ce soir. | به‌جای «Les voisins» ضمیر اشاره بگذار.
+Paul a écrit à Pierre. Pierre n'a pas répondu. => Paul a écrit à Pierre, mais celui-ci n'a pas répondu. ; Paul a écrit à Pierre. Celui-ci n'a pas répondu. | «Pierre» دوم را با ضمیر اشاره عوض کن.
+Ça me plaît beaucoup. => Cela me plaît beaucoup. | جمله را نوشتاری کن.
+Cela ne m'étonne{étonner} pas. => Ça ne m'étonne{étonner} pas. | جمله را گفتاری کن.
+translations:
+کدام کیک را می‌خواهی، این یکی یا آن یکی؟ => Quel gâteau tu veux, celui-ci ou celui-là ? ; Quel gâteau veux-tu, celui-ci ou celui-là ? ; Tu veux quel gâteau, celui-ci ou celui-là ? ; Quel gâteau est-ce que tu veux, celui-ci ou celui-là ?
+این را دیدی؟ => Tu as vu ça ? ; Tu as vu cela ? ; Tu as vu ceci ? ; Est-ce que tu as vu ça ? ; Est-ce que tu as vu cela ? ; Est-ce que tu as vu ceci ? ; As-tu vu ça ? ; As-tu vu cela ? ; As-tu vu ceci ?
+بستگی دارد. => Ça dépend. ; Cela dépend.
+بله، درست است. => Oui, c'est ça. ; Oui, c'est cela. ; Oui, c'est vrai.
+این پیراهن را دوست ندارم، آن یکی را ترجیح می‌دهم. => Je n'aime pas cette robe, je préfère celle-là. ; Je n'aime pas cette robe, je préfère l'autre.
+این کتاب همانی نیست که درباره‌اش با تو حرف زدم. => Ce livre n'est pas celui dont je t'ai parlé. ; Ce n'est pas le livre dont je t'ai parlé.
+پل به برادرش زنگ زد، ولی برادرش جواب نداد. => Paul a appelé son frère, mais celui-ci n'a pas répondu. ; Paul a appelé son frère, mais il n'a pas répondu. ; Paul a téléphoné à son frère, mais celui-ci n'a pas répondu. ; Paul a téléphoné à son frère, mais il n'a pas répondu.
+این خانه شبیه خانه‌ای است که در آن بزرگ شدم. => Cette maison ressemble à celle où j'ai grandi. ; Cette maison ressemble à la maison où j'ai grandi. ; Cette maison ressemble à celle dans laquelle j'ai grandi.

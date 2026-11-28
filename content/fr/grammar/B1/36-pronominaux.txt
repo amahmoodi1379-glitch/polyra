@@ -1,0 +1,90 @@
+code: fr-b1-pronominaux
+title: فعل‌های ضمیری: ils se téléphonent، ça se mange، je m'en vais
+scope: سه کار دیگر ضمیرهای se، nous، vous غیر از «خود»: «همدیگر» (ils s'aiment، on se voit demain، elles se téléphonent)، معنی مجهول برای چیزها (ce vin se boit frais، ce mot ne se dit pas، ça se vend bien، comment ça s'écrit ?)، و فعل‌هایی که فقط ضمیری‌اند (se souvenir de، se moquer de، se méfier de، s'en aller، s'enfuir، se taire، se rendre compte de)؛ در زمان حال، امری و passé composé با être، با جور شدن اسم مفعول (ils se sont rencontrés، elle s'est moquée de moi) و بی‌تغییر ماندنش وقتی se یعنی «به همدیگر» (elles se sont téléphoné، ils se sont parlé، nous nous sommes écrit). فعل‌های ضمیری ساده (se lever، se laver) را از A1 و گذشته‌شان را از A2 می‌شناسی.
+can_do: حالا می‌توانی از کارهایی بگویی که آدم‌ها با هم یا برای هم می‌کنند، بگویی چیزی معمولاً چطور خورده یا گفته می‌شود، و این‌ها را در گذشته درست بنویسی: Nous nous écrivons souvent. Ce fromage se mange avec du pain. Elles se sont rencontrées au lycée, et hier elles se sont téléphoné.
+rule: با فاعل جمع، se یعنی «همدیگر» (ils s'aiment)؛ با فاعلی که چیز است، یعنی «… می‌شود، … می‌کنند» (ce mot ne se dit pas)؛ در passé composé همه با être می‌آیند و اسم مفعول با فاعل جور می‌شود (ils se sont rencontrés)، مگر وقتی se یعنی «به همدیگر» با فعل‌های à (elles se sont téléphoné، ils se sont parlé).
+mistake: در فارسی «همدیگر» و «با هم» کلمه‌های جدا هستند («به هم زنگ می‌زنند»)، برای همین فارسی‌زبان‌ها se را جا می‌اندازند («ils téléphonent tous les soirs» به‌جای ils se téléphonent) و در passé composé اسم مفعول را همیشه با فاعل جور می‌کنند («elles se sont téléphonées»، «ils se sont parlés»)؛ درست: elles se sont téléphoné، ils se sont parlé، ولی elles se sont rencontrées. معنی مجهول هم برایشان غریب است: «ce vin boit frais» غلط است؛ درست: Ce vin se boit frais.
+lesson:
+در A1 فعل‌هایی مثل se lever و se laver را دیدی و در A2 گذشته‌شان را (je me suis levé). آنجا se یعنی «خود»: کار به خود آدم برمی‌گردد. این ضمیرها سه کار دیگر هم دارند.
+۱) «همدیگر»: با فاعل جمع (nous، vous، ils، elles، on) معنی‌اش «همدیگر را» یا «به همدیگر» است: Ils s'aiment. Nous nous écrivons. On se voit demain ? Mes sœurs se téléphonent tous les soirs. فارسی «همدیگر» یا «با هم» می‌گوید؛ فرانسوی فقط همین ضمیر را می‌آورد.
+در فرانسه دوستان و خانواده موقع سلام همدیگر را روی گونه می‌بوسند: on se fait la bise.
+۲) معنی مجهول: وقتی فاعل یک چیز است، se می‌گوید آن کار معمولاً یا درستش چطور انجام می‌شود: Ce vin se boit frais. (این شراب را خنک می‌نوشند.) Ce mot ne se dit pas. Comment ça s'écrit ? Ce livre se vend bien. Ça ne se fait pas. (این کار درست نیست.)
+۳) فعل‌هایی که فقط ضمیری‌اند و بی se یا نیستند یا معنی دیگری دارند: se souvenir de، se moquer de، se méfier de، s'en aller، s'enfuir، se taire، se rendre compte de: Je me souviens de lui. Méfie-toi de lui ! Arrête de te moquer de moi !
+s'en aller یعنی «رفتن، از جایی رفتن»: je m'en vais، tu t'en vas، vous vous en allez؛ امری: Va-t'en ! (برو!)
+همهٔ این فعل‌ها در passé composé با être صرف می‌شوند: Ils se sont rencontrés. Elle s'est souvenue de tout. Toutes les places se sont vendues.
+اسم مفعول معمولاً مثل فاعل مؤنث یا جمع می‌شود: Elles se sont disputées. Marie s'est moquée de moi. Nous nous sommes souvenus de son anniversaire.
+ولی وقتی se یعنی «به همدیگر»، یعنی فعل بدون se حرف اضافهٔ à می‌گیرد (téléphoner à، parler à، écrire à، dire à، sourire à)، اسم مفعول عوض نمی‌شود: Elles se sont téléphoné. Ils se sont parlé. Nous nous sommes écrit. Ils se sont dit au revoir.
+راه ساده: فعل را بدون se بگو. rencontrer quelqu'un (بی حرف اضافه) → ils se sont rencontrés؛ téléphoner à quelqu'un → elles se sont téléphoné.
+با on به‌معنای «ما»، اسم مفعول معمولاً جمع می‌شود (On s'est rencontrés au lycée)؛ مفرد هم پذیرفته است.
+در se rendre compte هم rendu عوض نمی‌شود، چون compte مفعول است: Elle s'est rendu compte de son erreur. ولی s'en aller جور می‌شود: Elle s'en est allée.
+table:
+نوع | معنی | زمان حال | passé composé
+همدیگر را (rencontrer qqn) | همدیگر را | Ils se rencontrent. | Ils se sont rencontrés.
+به همدیگر (téléphoner à qqn) | به همدیگر | Elles se téléphonent. | Elles se sont téléphoné.
+مجهول | … می‌شود | Ce livre se vend bien. | Les places se sont vendues.
+فقط ضمیری | — | Je me souviens de lui. | Elle s'est souvenue de lui.
+examples:
+En France, on se fait la bise pour se dire bonjour. | در فرانسه برای سلام کردن روبوسی می‌کنند.
+Ce fromage se mange avec du pain. | این پنیر را با نان می‌خورند.
+Nous nous sommes téléphoné hier soir. | دیشب به هم زنگ زدیم.
+Tu te souviens de cette chanson ? | این آهنگ یادت هست؟
+Il est tard, je m'en vais. | دیر است، من می‌روم.
+targets:
+Mes sœurs [se téléphonent] tous les soirs. | خواهرهایم هر شب به هم زنگ می‌زنند. | d: se téléphone, les téléphonent, se téléphonez | hint: (se téléphoner)
+Paul et Léa [s'aiment] depuis le lycée. | پل و لئا از دبیرستان همدیگر را دوست دارند. | d: s'aime, se aiment, s'aimons | hint: (s'aimer)
+Nous [nous écrivons] souvent depuis qu'elle habite à Montréal. | از وقتی او (زن) در مونترال زندگی می‌کند، زیاد برای هم نامه می‌نویسیم. | d: nous écrit, se écrivons, s'écrivons | hint: (s'écrire)
+Tu crois qu'ils [se parlent] encore après leur dispute ? | فکر می‌کنی بعد از دعوایشان هنوز با هم حرف می‌زنند؟ | d: se parle, se parlons, se parlez
+On [se voit] demain au café ? | فردا همدیگر را در کافه می‌بینیم؟ | d: se voyons, se vois, se voient | hint: (se voir)
+Elles [se ressemblent] beaucoup, mais elles ne sont pas sœurs. | خیلی شبیه هم‌اند، ولی خواهر نیستند. | d: se ressemble, ressemblent, se ressemblez | hint: (se ressembler)
+Mes grands-parents se sont [rencontrés] à un mariage. | پدربزرگ و مادربزرگم در یک عروسی با هم آشنا شدند. | d: rencontré, rencontrées, rencontrer | hint: (se rencontrer)
+Marie et Sophie se sont [téléphoné] hier soir. | ماری و سوفی دیشب به هم زنگ زدند. | d: téléphonées, téléphonés, téléphoner | hint: (se téléphoner)
+Nous nous sommes [écrit] pendant des années. | سال‌ها برای هم نامه نوشتیم. | d: écrits, écrites, écrire | hint: (s'écrire)
+Elles se sont [parlé] pendant des heures au téléphone. | ساعت‌ها پای تلفن با هم حرف زدند. | d: parlées, parlés, parler | hint: (se parler)
+Ils se sont [disputés] pour une histoire d'argent. | سر یک ماجرای پولی با هم دعوا کردند. | d: disputé, disputées, disputer | hint: (se disputer)
+Les deux sœurs se sont [embrassées] à la gare. | دو خواهر در ایستگاه همدیگر را بوسیدند. | d: embrassé, embrassés, embrasser | hint: (s'embrasser)
+On s'est [rencontrés] dans un café, il y a cinq ans. | پنج سال پیش در یک کافه با هم آشنا شدیم. | d: rencontrer, rencontre, rencontrait | ok: rencontré, rencontrées
+Ils se sont [dit] au revoir devant la gare. | جلوی ایستگاه از هم خداحافظی کردند. | d: dits, dites, dire | hint: (se dire)
+Paul et moi, nous nous sommes [séparés] l'année dernière. | من و پل پارسال از هم جدا شدیم. | d: séparé, séparer, séparons | hint: (se séparer)
+Ce vin [se boit] frais. | این شراب را خنک می‌نوشند. | d: boit, se boivent, se bois | hint: (se boire)
+Ce mot [ne se dit pas] devant les enfants. | این کلمه را جلوی بچه‌ها نمی‌گویند. | d: se ne dit pas, ne dit pas se, ne se disent pas | hint: (se dire)
+Comment ça [s'écrit] ? | این چطور نوشته می‌شود؟ | d: s'écrivent, se écrit, s'écris | hint: (s'écrire)
+Ce livre [se vend] très bien depuis sa sortie. | این کتاب از وقتی بیرون آمده خیلی خوب فروش می‌رود. | d: se vendent, se vends, se vendez | hint: (se vendre)
+Le français [se parle] dans beaucoup de pays. | در خیلی از کشورها به فرانسوی حرف می‌زنند. | d: parle, se parlent, se parles | hint: (se parler)
+Ça [ne se fait pas] de parler la bouche pleine. | با دهان پر حرف زدن کار درستی نیست. | d: ne fait pas, se ne fait pas, ne se fais pas | hint: (se faire)
+Toutes les places se sont [vendues] en une heure. | همهٔ جاها در یک ساعت فروش رفت. | d: vendu, vendus, vendre | hint: (se vendre)
+Comment ça [se prononce] ? | این چطور تلفظ می‌شود؟ | d: prononce, se prononcent, se prononces | hint: (se prononcer)
+Ce pull [se lave] à la main. | این پلیور را باید با دست شست. | d: lave, se lavent, se laves | hint: (se laver)
+Tu [te souviens] de notre premier rendez-vous ? | اولین قرارمان یادت هست؟ | d: souviens, te souvient, se souviens | hint: (se souvenir)
+Arrête de [te moquer] de ton frère ! | دست از مسخره کردن برادرت بردار! | d: moquer, te moques, me moquer | hint: (se moquer)
+Vous [vous en allez] déjà ? | به این زودی دارید می‌روید؟ | d: vous allez en, en vous allez, vous en va | hint: (s'en aller)
+Hier, Léa [s'en est allée] sans dire au revoir. | دیروز لئا بی‌خداحافظی رفت. | d: s'est en allée, en s'est allée, s'en a allée
+[Méfie-toi] de lui, il ment souvent. | به او (مرد) اعتماد نکن، زیاد دروغ می‌گوید. | d: Méfie-te, Te méfie, Méfie-lui | hint: (se méfier)
+Elle s'est [moquée] de moi devant tout le monde. | او (زن) جلوی همه مسخره‌ام کرد. | d: moqué, moqués, moquer
+Le voleur s'est [enfui] par la fenêtre. | دزد از پنجره فرار کرد. | d: enfuit, enfuie, enfuir | hint: (s'enfuir)
+Nous nous sommes [souvenus] de son anniversaire au dernier moment. | لحظهٔ آخر تولدش یادمان آمد. | d: souvenu, souvenir, souvenons | ok: souvenues
+Elle [s'est rendu compte] de son erreur trop tard. | او (زن) خیلی دیر متوجه اشتباهش شد. | d: s'est rendue compte, s'a rendu compte, est rendu compte | hint: (se rendre compte)
+Les élèves [se sont tus] quand le directeur est entré. | وقتی مدیر وارد شد، دانش‌آموزان ساکت شدند. | d: s'ont tus, se sont tait, se sont taire | ok: se sont tues | hint: (se taire)
+Ils se sont [rencontrés] en 2015 et ils se sont [mariés] un an après. | سال ۲۰۱۵ با هم آشنا شدند و یک سال بعد ازدواج کردند. | d: rencontré, rencontrées, rencontrer / marié, mariées, marier
+Elles se sont [regardées] et elles se sont [souri]. | به هم نگاه کردند و به هم لبخند زدند. | d: regardé, regardés, regarder / souries, souris, sourire
+Nous nous sommes [écrit] pendant des mois, puis nous nous sommes [vus] à Paris. | ماه‌ها برای هم نامه نوشتیم، بعد در پاریس همدیگر را دیدیم. | d: écrits, écrites, écrire / vu, voir, voyons | ok: écrit / vues
+Ce plat [se mange] froid et il [se prépare] en dix minutes. | این غذا را سرد می‌خورند و در ده دقیقه آماده می‌شود. | d: mange, se mangent, se manges / prépare, se préparent, se prépares
+Tu [te souviens] de Paul ? On [se moquait] de lui à l'école. | پل یادت هست؟ در مدرسه مسخره‌اش می‌کردیم. | d: souviens, te souvient, se souviens / moquait, se moquions, se moquaient
+Marie et Paul [se disent] bonjour, mais ils ne [se parlent] jamais. | ماری و پل به هم سلام می‌کنند، ولی هیچ‌وقت با هم حرف نمی‌زنند. | d: se dit, se disons, se dites / se parle, se parlons, se parlez
+transforms:
+Paul téléphone à Marie, et Marie téléphone à Paul. => Paul et Marie se téléphonent. ; Ils se téléphonent. | با se («همدیگر») یک جمله بساز.
+Je vois Léa, et Léa me voit. => Léa et moi, nous nous voyons. ; Léa et moi, on se voit. ; Nous nous voyons. ; On se voit. | با «همدیگر» یک جمله بساز.
+Ils se rencontrent au café. => Ils se sont rencontrés au café. | جمله را به passé composé ببر.
+Elles se téléphonent le soir. => Elles se sont téléphoné le soir. | جمله را به passé composé ببر.
+Elle se moque de son frère. => Elle s'est moquée de son frère. | جمله را به passé composé ببر.
+On boit ce vin frais. => Ce vin se boit frais. | با se بگو.
+On ne dit pas ce mot. => Ce mot ne se dit pas. | با se بگو.
+On vend bien ce livre. => Ce livre se vend bien. | با se بگو.
+translations:
+هر روز به هم زنگ می‌زنیم. => On se téléphone tous les jours. ; Nous nous téléphonons tous les jours. ; On s'appelle tous les jours. ; Nous nous appelons tous les jours.
+سال ۲۰۱۰ با هم آشنا شدند. => Ils se sont rencontrés en 2010. ; Elles se sont rencontrées en 2010. ; En 2010, ils se sont rencontrés. ; En 2010, elles se sont rencontrées.
+این کلمه را چطور می‌نویسند؟ => Comment ce mot s'écrit ? ; Comment s'écrit ce mot ? ; Comment est-ce qu'on écrit ce mot ? ; Comment on écrit ce mot ? ; Comment écrit-on ce mot ?
+این شراب را خنک می‌نوشند. => Ce vin se boit frais. ; On boit ce vin frais.
+اسمش را یادم نیست. => Je ne me souviens pas de son nom.
+او (زن) جلوی همه مسخره‌ام کرد. => Elle s'est moquée de moi devant tout le monde.
+دیر است، من می‌روم. => Il est tard, je m'en vais. ; Il est tard, je pars. ; Il est tard, j'y vais.
+دیشب ساعت‌ها با هم حرف زدیم. => Hier soir, nous nous sommes parlé pendant des heures. ; Hier soir, on s'est parlé pendant des heures. ; Hier soir, nous avons parlé pendant des heures. ; Hier soir, on a parlé pendant des heures.

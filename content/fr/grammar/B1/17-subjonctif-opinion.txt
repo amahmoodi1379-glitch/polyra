@@ -1,0 +1,89 @@
+code: fr-b1-subjonctif-opinion
+title: نظر و اطمینان: je pense qu'il vient / je ne pense pas qu'il vienne
+scope: فعل بعد از نظر، اطمینان، احتمال و شک: je pense / crois / trouve que، je suis sûr que، il est évident / clair / probable que و peut-être que + indicatif؛ je ne pense pas / ne crois pas / ne trouve pas que، je ne suis pas sûr que، سؤال با inversion (penses-tu que، crois-tu que)، il est possible que، il se peut que، je doute que و ça m'étonnerait que + subjonctif. حرف‌های ربط با subjonctif (avant que، sans que …) در درس‌های بعد می‌آیند.
+can_do: حالا می‌توانی نظرت را بگویی و نشان بدهی چقدر مطمئنی: Je pense qu'il viendra. Je ne pense pas qu'il vienne. Il se peut qu'il soit en retard. Je doute qu'elle sache la vérité.
+rule: نظر مثبت و اطمینان (je pense / crois / trouve que، je suis sûr que، il est évident / probable que، peut-être que) + indicatif؛ نظر منفی، سؤال با inversion، احتمال و شک (je ne pense pas que، penses-tu que، il est possible que، il se peut que، je doute que) + subjonctif.
+mistake: چون در فارسی می‌گوییم «فکر می‌کنم بیاید» و «شاید بیاید»، فارسی‌زبان‌ها بعد از je pense que و peut-être que subjonctif می‌آورند («je pense qu'il vienne»، «peut-être qu'il vienne»)؛ درست: je pense qu'il viendra، peut-être qu'il viendra. بعد از je ne pense pas que هم گاهی indicatif می‌آورند («je ne pense pas qu'il est là»)؛ درست: je ne pense pas qu'il soit là.
+lesson:
+در فارسی بعد از «فکر می‌کنم» هم فعل معمولی می‌آید و هم التزامی: «فکر می‌کنم می‌آید» یا «فکر می‌کنم بیاید». فرانسوی این‌جا قاعدهٔ روشنی دارد: وقتی نظرت را می‌گویی یا مطمئنی، فعل معمولی (indicatif)؛ وقتی شک داری یا نظر را منفی می‌کنی، subjonctif.
+نظر مثبت و اطمینان + indicatif: je pense que، je crois que، je trouve que (به نظرم)، je suis sûr que، il est évident que و il est clair que (معلوم است که)، il est probable que (احتمالش زیاد است): Je pense qu'il viendra.
+پس «فکر می‌کنم بیاید» را «je pense qu'il vienne» نگو؛ درستش Je pense qu'il viendra یا Je pense qu'il vient است.
+نظر منفی + subjonctif: je ne pense pas que، je ne crois pas que، je ne trouve pas que، je ne suis pas sûr que: Je ne pense pas qu'il vienne. این‌جا فارسی هم التزامی دارد: «فکر نمی‌کنم بیاید».
+سؤال با inversion (Penses-tu que … ? Crois-tu que … ?) معمولاً subjonctif می‌گیرد، ولی indicatif هم درست است: Crois-tu qu'il vienne ? / Crois-tu qu'il viendra ? در سؤال ساده (Tu crois que … ?) indicatif می‌آید.
+احتمال و شک + subjonctif: il est possible que و il se peut que (ممکن است)، je doute que (شک دارم)، ça m'étonnerait que (بعید می‌دانم): Il se peut qu'il soit en retard.
+ولی il est probable que، یعنی احتمال زیاد، indicatif می‌خواهد: Il est probable que le train aura du retard.
+دام فارسی: «شاید بیاید» التزامی است، ولی بعد از peut-être que همیشه indicatif می‌آید: Peut-être qu'il viendra.
+subjonctif زمان آینده ندارد؛ برای آینده هم همان subjonctif présent را می‌آوری: Je doute qu'il vienne demain.
+خلاصه: مطمئنی → indicatif؛ مطمئن نیستی یا نفی می‌کنی → subjonctif.
+table:
+indicatif (مطمئن) | subjonctif (نامطمئن یا منفی)
+je pense que، je crois que، je trouve que | je ne pense pas que، je ne crois pas que، penses-tu que
+je suis sûr que | je ne suis pas sûr que
+il est probable que، il est évident que، il est clair que | il est possible que، il se peut que
+peut-être que | je doute que، ça m'étonnerait que
+Je pense qu'il viendra. | Je ne pense pas qu'il vienne.
+examples:
+Je pense que tu as raison. | فکر می‌کنم حق با توست.
+Je ne pense pas qu'il soit chez lui. | فکر نمی‌کنم خانه باشد.
+Il se peut que je change de travail. | ممکن است کارم را عوض کنم.
+Je doute qu'elle vienne ce soir. | شک دارم امشب بیاید.
+Peut-être que Paul viendra avec nous. | شاید پل با ما بیاید.
+targets:
+Je pense que Paul [est] malade, il ne répond pas. | فکر می‌کنم پل مریض است، جواب نمی‌دهد. | d: soit, être, sont | hint: (être)
+Je crois que le film [finit] à minuit. | فکر می‌کنم فیلم نیمه‌شب تمام می‌شود. | d: finisse, finir, finissent | ok: finira | hint: (finir)
+Tu trouves que ce restaurant [est] trop cher ? | به نظرت این رستوران زیادی گران است؟ | d: soit, être, sont | hint: (être)
+Nous pensons que vous [avez] raison. | فکر می‌کنیم حق با شماست. | d: ayez, avoir, ont | hint: (avoir)
+Je suis sûr qu'elle [viendra] à la fête. | مطمئنم که او (زن) به جشن می‌آید. | d: vienne, venir, viendras | ok: vient | hint: (venir)
+Il est évident que tu [peux] réussir. | معلوم است که می‌توانی موفق شوی. | d: puisses, pouvoir, pouvez | ok: pourras | hint: (pouvoir)
+Il est probable que le train [aura] du retard. | احتمالاً قطار تأخیر خواهد داشت. | d: avoir, aies, auras | ok: a | hint: (avoir)
+Peut-être qu'il [fera] beau demain. | شاید فردا هوا خوب باشد. | d: fasse, faire, feras | ok: fait | hint: (faire)
+Mon père croit que je [dois] changer de travail. | پدرم فکر می‌کند باید کارم را عوض کنم. | d: doive, devoir, devez | ok: devrais | hint: (devoir)
+Je trouve que tu [fais] trop de sport. | به نظرم زیادی ورزش می‌کنی. | d: fasses, faire, faites | hint: (faire)
+Je ne pense pas qu'il [soit] chez lui ce soir. | فکر نمی‌کنم امشب خانه باشد. | d: être, soyez, sommes | hint: (être)
+Je ne crois pas que vous [ayez] le temps de tout visiter. | فکر نمی‌کنم وقت داشته باشید همه‌جا را ببینید. | d: avoir, ayons, avons | hint: (avoir)
+Elle ne pense pas que son fils [puisse] venir à Noël. | او (زن) فکر نمی‌کند پسرش بتواند کریسمس بیاید. | d: pouvoir, puissions, pouvons | hint: (pouvoir)
+Penses-tu qu'elle [sache] la vérité ? | فکر می‌کنی او (زن) حقیقت را می‌داند؟ | d: savoir, sachions, savons | ok: sait | hint: (savoir)
+Crois-tu que ce{ce-pron} [soit] une bonne idée ? | به نظرت این ایدهٔ خوبی است؟ | d: être, soyez, sommes | hint: (être)
+Je ne trouve pas que ce film [soit] si{si-adv} intéressant. | به نظرم این فیلم آن‌قدرها هم جالب نیست. | d: être, sommes, soyez
+Il est possible que nous [arrivions] en retard. | ممکن است دیر برسیم. | d: arrivons, arriver, arriverons | hint: (arriver)
+Il est possible que le musée [soit] fermé demain. | ممکن است موزه فردا تعطیل باشد. | d: est, être, sera
+Il se peut que je [parte] à Lyon le mois prochain. | ممکن است ماه آینده به لیون بروم. | d: pars, partir, partirai | hint: (partir)
+Il se peut qu'elle [ait] raison. | ممکن است حق با او (زن) باشد. | d: a, avoir, aura | hint: (avoir)
+Je doute qu'il [fasse] ses devoirs{devoir-noun} tout seul. | شک دارم که تکلیف‌هایش را تنهایی انجام بدهد. | d: fait, faire, fera | hint: (faire)
+Nous doutons que ce projet [réussisse]. | شک داریم که این پروژه موفق شود. | d: réussit, réussir, réussira | hint: (réussir)
+Ça m'étonnerait qu'ils [viennent] ce soir. | بعید می‌دانم امشب بیایند. | d: viendront, venir, venaient | hint: (venir)
+Je ne suis pas sûr que ce{ce-pron} [soit] le bon chemin. | مطمئن نیستم این راه درست باشد. | d: être, sommes, soyez
+Il n'est pas sûr que la réunion [ait] lieu demain. | معلوم نیست جلسه فردا برگزار شود. | d: avoir, ayez, avons
+Je suis sûr que tu [vas] adorer Paris. | مطمئنم عاشق پاریس می‌شوی. | d: ailles, aller, allez | hint: (aller)
+Il est clair que cette solution [est] la meilleure. | معلوم است که این راه‌حل از همه بهتر است. | d: soit, être, sont
+Tout le monde pense que Marie [va] gagner. | همه فکر می‌کنند ماری برنده می‌شود. | d: aille, aller, allons | hint: (aller)
+Je crois que nous [prendrons] le train de 8 heures. | فکر می‌کنم قطار ساعت ۸ را می‌گیریم. | d: prenions, prendre, prendrez | ok: prenons | hint: (prendre)
+Je ne pense pas que tu [doives] t'inquiéter. | فکر نمی‌کنم لازم باشد نگران باشی. | d: devoir, devions, devez | hint: (devoir)
+Pensez-vous que le restaurant [soit] ouvert le dimanche ? | فکر می‌کنید رستوران یکشنبه‌ها باز باشد؟ | d: être, soyons, sommes | ok: est
+Il est possible que tu [aies] besoin d'un manteau. | ممکن است به پالتو احتیاج داشته باشی. | d: as, avoir, auras | hint: (avoir)
+Je doute que tu [comprennes] ce texte sans dictionnaire. | شک دارم بدون دیکشنری این متن را بفهمی. | d: comprends, comprendre, comprendras | hint: (comprendre)
+Je pense qu'il [vient] ce soir, mais je ne pense pas qu'il [reste]{rester}. | فکر می‌کنم امشب می‌آید، ولی فکر نمی‌کنم بماند. | d: vienne, venir, venons / rester, restions, restez | ok: viendra
+Je suis sûr que tu [as] raison, mais je doute qu'elle [soit] d'accord. | مطمئنم که حق با توست، ولی شک دارم او (زن) موافق باشد. | d: aies, avoir, avez / est, être, sera
+Je crois qu'il [sera] là, mais il se peut qu'il [soit] en retard. | فکر می‌کنم می‌آید، ولی ممکن است دیر کند. | d: soit, être, seras / sera, être, est | ok: est
+Ma sœur trouve que Paris [est] cher ; moi, je doute que ce{ce-pron} [soit] vrai. | خواهرم فکر می‌کند پاریس گران است؛ من شک دارم این درست باشد. | d: soit, être, sont / être, sommes, soyez
+Il est évident que tu [travailles] trop et il est possible que tu [sois] malade. | معلوم است که زیادی کار می‌کنی و ممکن است مریض باشی. | d: travailler, travailliez, travaillons / es, être, seras
+Je ne crois pas qu'il [veuille] partir, je pense qu'il [aime] son travail. | فکر نمی‌کنم بخواهد برود، فکر می‌کنم کارش را دوست دارد. | d: vouloir, voulions, voulez / aimer, aimiez, aimons
+Peut-être qu'elle [viendra], mais ça m'étonnerait qu'elle [puisse] rester. | شاید بیاید، ولی بعید می‌دانم بتواند بماند. | d: vienne, venir, viendras / peut, pouvoir, pourra | ok: vient
+transforms:
+Je pense qu'il viendra. => Je ne pense pas qu'il vienne. | جمله را منفی کن.
+Je crois que tu as raison. => Je ne crois pas que tu aies raison. | جمله را منفی کن.
+Je suis sûr qu'elle sait la vérité. => Je ne suis pas sûr qu'elle sache la vérité. | جمله را منفی کن.
+Il viendra peut-être. => Il est possible qu'il vienne. ; Il se peut qu'il vienne. | با il est possible que بنویس.
+Je ne pense pas qu'il soit malade. => Je pense qu'il est malade. | جمله را مثبت کن.
+Il est possible que nous partions demain. => Il est probable que nous partirons demain. ; Il est probable que nous partons demain. | به‌جای possible، probable بیاور.
+Tu peux venir ? J'en doute. => Je doute que tu puisses venir. | با je doute que یک جمله بساز.
+Il est possible qu'elle vienne. => Peut-être qu'elle viendra. ; Peut-être qu'elle vient. ; Elle viendra peut-être. | با peut-être بنویس.
+translations:
+فکر می‌کنم حق با توست. => Je pense que tu as raison. ; Je crois que tu as raison.
+فکر نمی‌کنم او (مرد) امشب بیاید. => Je ne pense pas qu'il vienne ce soir. ; Je ne crois pas qu'il vienne ce soir.
+ممکن است دیر برسیم. => Il est possible que nous arrivions en retard. ; Il est possible qu'on arrive en retard. ; Il se peut que nous arrivions en retard. ; Il se peut qu'on arrive en retard.
+شاید فردا هوا خوب باشد. => Peut-être qu'il fera beau demain. ; Il fera peut-être beau demain. ; Demain, il fera peut-être beau. ; Il est possible qu'il fasse beau demain. ; Il se peut qu'il fasse beau demain.
+شک دارم که او (مرد) حقیقت را بداند. => Je doute qu'il sache la vérité.
+مطمئنم که او (زن) می‌آید. => Je suis sûr qu'elle viendra. ; Je suis sûre qu'elle viendra. ; Je suis sûr qu'elle vient. ; Je suis sûre qu'elle vient.
+به نظرم این فیلم خیلی خوب است. => Je trouve que ce film est très bon. ; Je trouve que ce film est très bien. ; Je pense que ce film est très bon. ; Je trouve ce film très bon.
+بعید می‌دانم که قبول کنند. => Ça m'étonnerait qu'ils acceptent. ; Ça m'étonnerait qu'elles acceptent. ; Je doute qu'ils acceptent. ; Je doute qu'elles acceptent.

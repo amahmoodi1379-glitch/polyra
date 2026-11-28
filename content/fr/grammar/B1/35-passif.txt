@@ -1,0 +1,91 @@
+code: fr-b1-passif
+title: مجهول: La maison a été construite en 1900
+scope: جملهٔ مجهول با être + participe passé و مطابقت participe با فاعل، در présent (est réparée)، passé composé (a été réparée)، imparfait (était réparée) و futur (sera réparée)؛ کننده با par (par la police) و با فعل‌های احساس و حالت با de (aimé de tous، entouré de montagnes)؛ on به‌جای مجهول در گفتار روزمره (On a volé mon vélo). مجهول با se (ça se vend bien) در درس ۳۶ می‌آید.
+can_do: حالا می‌توانی بگویی چه کاری روی چیزی انجام شده، حتی وقتی کننده‌اش مهم نیست: Cette maison a été construite en 1900. Le voleur a été arrêté par la police. On m'a volé mon vélo.
+rule: مجهول = être در زمانِ لازم + participe passé که مثل صفت با فاعل مطابقت می‌کند: La route est réparée، a été réparée، était réparée، sera réparée. کننده با par می‌آید؛ با aimer، respecter، entourer و couvrir معمولاً با de.
+mistake: فارسی‌زبان‌ها در passé composé مجهول été را جا می‌اندازند یا participe را با فاعل مطابقت نمی‌دهند: «Cette maison a construit en 1900» یا «Cette maison a été construit en 1900»؛ درست: Cette maison a été construite en 1900.
+lesson:
+در فارسی مجهول را با «شدن» می‌سازیم: «ساخته شد»، «دزدیده شد». در فرانسوی مجهول = être + participe passé: La route est réparée.
+مفعولِ جملهٔ معلوم، فاعلِ جملهٔ مجهول می‌شود: On répare la route. → La route est réparée.
+participe مثل صفت با فاعل مطابقت می‌کند: Le pont est construit. La maison est construite. Les maisons sont construites.
+زمان را فقط être نشان می‌دهد: est (حال)، a été (passé composé)، était (imparfait)، sera (futur).
+در passé composé مجهول هم a été می‌آید و هم participe: Cette maison a été construite en 1900. «est été» در فرانسوی وجود ندارد.
+imparfait مجهول برای عادت یا توصیف در گذشته است: Autrefois, le pain était fait à la main.
+کننده با par می‌آید: Le voleur a été arrêté par la police. اگر کننده مهم نیست، اصلاً نمی‌آید: Mon vélo a été volé.
+با فعل‌های احساس (aimer، respecter، admirer) و حالت (entourer، couvrir) معمولاً de می‌آید: Il est aimé de tous. Le village est entouré de montagnes. با aimer و respecter، par هم درست است.
+de با le و les مثل همیشه du و des می‌شود: Il est aimé des enfants.
+فرانسوی‌ها در گفتار، وقتی کننده معلوم نیست، بیشتر از on استفاده می‌کنند: On a volé mon vélo = Mon vélo a été volé. با on فعل معلوم و سوم‌شخص مفرد است.
+وقتی کار «به کسی» انجام شده (دزدیدن چیزی از کسی، گفتن چیزی به کسی)، فقط با on بگو: On m'a volé mon sac. On nous a dit de partir.
+مجهول با se (Ça se vend bien) در درس ۳۶ می‌آید.
+table:
+زمان | معلوم با on | مجهول
+présent | On répare la route. | La route est réparée.
+passé composé | On a réparé la route. | La route a été réparée.
+imparfait | On réparait la route. | La route était réparée.
+futur | On réparera la route. | La route sera réparée.
+examples:
+Cette maison a été construite en 1900. | این خانه در سال ۱۹۰۰ ساخته شد.
+Le voleur a été arrêté{arrêter-2} par la police. | دزد به دست پلیس دستگیر شد.
+Autrefois, le pain était fait à la main. | قدیم‌ها نان با دست درست می‌شد.
+La nouvelle bibliothèque sera ouverte en mai. | کتابخانهٔ جدید اردیبهشت باز می‌شود.
+Ma grand-mère est aimée de toute la famille. | همهٔ خانواده مادربزرگم را دوست دارند.
+On m'a volé{voler-2} mon vélo. | دوچرخه‌ام را دزدیدند.
+targets:
+Ce pont [a été construit] pendant la guerre. | این پل در دوران جنگ ساخته شد. | d: a construit, a été construite, est été construit | hint: (construire)
+Hier, la voiture [a été lavée] par mon fils. | دیروز ماشین را پسرم شست. | d: a lavé, avait lavé, lavait | hint: (laver)
+Ce livre [a été traduit] en vingt langues. | این کتاب به بیست زبان ترجمه شده است. | d: a traduit, est été traduit, traduisait | ok: est traduit | hint: (traduire)
+Ces photos [ont été prises] pendant le mariage. | این عکس‌ها در عروسی گرفته شدند. | d: ont pris, ont été pris, sont été prises | hint: (prendre)
+Le concert [a été annulé] à cause de la grève. | کنسرت به خاطر اعتصاب لغو شد. | d: a annulé, avait annulé, annulait | hint: (annuler)
+Après l'accident, les blessés [ont été transportés] à l'hôpital. | بعد از تصادف، زخمی‌ها به بیمارستان برده شدند. | d: ont transporté, avaient transporté, transportaient | hint: (transporter)
+Nous [avons été invités] au mariage de Julie. | ما به عروسی ژولی دعوت شدیم. | d: avons invité, sommes été invités, invitions | ok: avons été invitées | hint: (inviter)
+Hier soir, deux voleurs [ont été arrêtés{arrêter-2}] à la gare. | دیشب دو دزد در ایستگاه قطار دستگیر شدند. | d: sont été arrêtés, seront arrêtés, arrêteront | hint: (arrêter)
+Le français [est parlé] dans beaucoup de pays. | در خیلی از کشورها به فرانسوی صحبت می‌کنند. | d: parle, a parlé, sont parlés | ok: se parle | hint: (parler)
+Chaque année, ce musée [est visité] par beaucoup de touristes. | هر سال گردشگرهای زیادی از این موزه بازدید می‌کنند. | d: visite, a visité, sont visités | hint: (visiter)
+Le matin, les enfants [sont accompagnés] à l'école par leurs parents. | صبح‌ها پدر و مادرها بچه‌ها را تا مدرسه همراهی می‌کنند. | d: accompagnent, accompagnaient, ont accompagné | hint: (accompagner)
+Chaque matin, les journaux [sont livrés] à six heures. | هر روز صبح روزنامه‌ها ساعت شش تحویل داده می‌شوند. | d: livrent, livraient, ont livré | hint: (livrer)
+Ce professeur est aimé [de] tous ses élèves. | همهٔ شاگردهای این معلم دوستش دارند. | d: à, sur, dans | ok: par
+Notre directeur est respecté [de] tout le monde. | همه به مدیرمان احترام می‌گذارند. | d: à, sur, pour | ok: par
+Le village était entouré [de] montagnes. | دور روستا را کوه گرفته بود. | d: par, à, avec
+En hiver, le jardin est couvert [de] neige. | زمستان‌ها باغچه پوشیده از برف است. | d: par, à, avec
+Autrefois, cette maison [était utilisée] comme école. | قدیم‌ها از این خانه به‌عنوان مدرسه استفاده می‌شد. | d: utilisait, sera utilisée, est utilisée | ok: a été utilisée | hint: (utiliser)
+Avant, ce château [était habité] par une famille riche. | قبلاً یک خانوادهٔ ثروتمند در این قصر زندگی می‌کرد. | d: habitait, sera habité, habite | ok: a été habité | hint: (habiter)
+À cette époque, les rues [étaient nettoyées] tous les jours. | در آن دوران، خیابان‌ها هر روز تمیز می‌شدند. | d: nettoyaient, seront nettoyées, sont nettoyées | hint: (nettoyer)
+Quand j'étais petit, les repas [étaient préparés] par ma grand-mère. | وقتی بچه بودم، غذاها را مادربزرگم درست می‌کرد. | d: préparaient, seront préparés, ont préparé | hint: (préparer)
+La nouvelle route [sera terminée] l'année prochaine. | جادهٔ جدید سال آینده تمام می‌شود. | d: a été terminée, était terminée, est été terminée | ok: va être terminée | hint: (terminer)
+Les résultats [seront publiés] lundi. | نتیجه‌ها دوشنبه منتشر می‌شوند. | d: publieront, ont publié, publiaient | ok: sont publiés, vont être publiés | hint: (publier)
+À votre arrivée, vous [serez reçus] par notre équipe. | وقتی برسید، گروه ما از شما پذیرایی می‌کند. | d: recevrez, avez reçu, receviez | ok: serez reçu, serez reçue, serez reçues | hint: (recevoir)
+Le colis [sera envoyé] demain matin. | بسته فردا صبح فرستاده می‌شود. | d: enverra, a été envoyé, envoyait | ok: est envoyé, va être envoyé | hint: (envoyer)
+Samedi, les billets [seront vendus] devant le cinéma. | شنبه بلیت‌ها جلوی سینما فروخته می‌شوند. | d: vendront, ont vendu, vendaient | ok: sont vendus, vont être vendus | hint: (vendre)
+Cette décision a été prise [par] notre maire. | این تصمیم را شهردارمان گرفت. | d: de, dans, sur
+Mon vélo a été réparé [par] mon père. | دوچرخه‌ام را پدرم تعمیر کرد. | d: de, à, dans
+On m'[a volé{voler-2}] mon sac dans le bus. | در اتوبوس کیفم را دزدیدند. | d: a été volé, est volé, ont volé | hint: (voler)
+On [a fermé] la piscine pendant l'été. | تابستان استخر را بستند. | d: a été fermée, est fermée, ont fermé | hint: (fermer)
+Demain, on [parlera] de ce problème à la réunion. | فردا در جلسه دربارهٔ این مشکل صحبت می‌شود. | d: sera parlé, parleront, est parlé | ok: va parler, parle | hint: (parler)
+En France, on [mange] beaucoup de fromage. | در فرانسه پنیر زیاد خورده می‌شود. | d: est mangé, mangent, sont mangés | hint: (manger)
+Ce médicament [a été découvert] par hasard. | این دارو تصادفی کشف شد. | d: a découvert, est été découvert, découvrait | hint: (découvrir)
+Cette loi [a été votée] l'année dernière. | این قانون سال گذشته تصویب شد. | d: a voté, votait, avait voté | hint: (voter)
+Ce chocolat [est produit] en Belgique. | این شکلات در بلژیک تولید می‌شود. | d: produisait, a produit, produira | hint: (produire)
+La maison [a été vendue] et les meubles [ont été donnés] à une association. | خانه فروخته شد و اثاثیه‌اش به یک انجمن داده شد. | d: a vendu, avait vendu, vendait / ont donné, avaient donné, donnaient | hint: (vendre) / (donner)
+Ce tableau{tableau-2} [a été peint] en 1890 et il [sera exposé] au musée l'année prochaine. | این تابلو در سال ۱۸۹۰ کشیده شده و سال آینده در موزه به نمایش گذاشته می‌شود. | d: a peint, avait peint, peignait / exposera, a été exposé, exposait | ok: a été peint / va être exposé | hint: (peindre) / (exposer)
+Autrefois, les vêtements [étaient faits] à la main ; aujourd'hui, ils [sont fabriqués] par des machines. | قدیم‌ها لباس‌ها با دست دوخته می‌شدند؛ امروز با ماشین ساخته می‌شوند. | d: faisaient, seront faits, sont faits / fabriquent, fabriquaient, seront fabriqués | hint: (faire) / (fabriquer)
+Le facteur a été [mordu] [par] notre chien. | نامه‌رسان را سگمان گاز گرفت. | d: mordait, mord, mordra / de, à, dans | hint: (mordre)
+Hier, mon portefeuille [a été volé{voler-2}] dans le métro, mais il [a été retrouvé] par la police. | دیروز کیف پولم در مترو دزدیده شد، ولی پلیس پیدایش کرد. | d: est été volé, ont été volé, sera volé / a retrouvé, retrouvait, est été retrouvé | hint: (voler) / (retrouver)
+Demain, les invités [seront accueillis] à l'entrée{entrée-2} et le dîner [sera servi] à huit heures. | فردا دمِ در از مهمان‌ها استقبال می‌شود و شام ساعت هشت سرو می‌شود. | d: accueilleront, ont été accueillis, accueillaient / servira, a été servi, servait | ok: vont être accueillis / va être servi | hint: (accueillir) / (servir)
+transforms:
+On a construit cette maison en 1900. => Cette maison a été construite en 1900. | جمله را مجهول کن.
+La police a arrêté le voleur. => Le voleur a été arrêté par la police. | جمله را مجهول کن و کننده را با par بیاور.
+Mon vélo a été volé. => On a volé mon vélo. | جمله را با on بنویس.
+On vend ce journal dans toutes les gares. => Ce journal est vendu dans toutes les gares. | جمله را مجهول کن.
+Le directeur accueillera les invités. => Les invités seront accueillis par le directeur. | جمله را مجهول کن و کننده را با par بیاور.
+Tous les élèves aiment ce professeur. => Ce professeur est aimé de tous les élèves. ; Ce professeur est aimé par tous les élèves. | جمله را مجهول کن.
+On fermera le musée lundi. => Le musée sera fermé lundi. | جمله را مجهول کن.
+Autrefois, on écrivait les lettres à la main. => Autrefois, les lettres étaient écrites à la main. | جمله را مجهول کن.
+translations:
+این خانه صد سال پیش ساخته شد. => Cette maison a été construite il y a cent ans. ; On a construit cette maison il y a cent ans.
+دوچرخه‌ام دزدیده شد. => Mon vélo a été volé. ; On a volé mon vélo. ; On m'a volé mon vélo.
+دزد به دست پلیس دستگیر شد. => Le voleur a été arrêté par la police. ; La police a arrêté le voleur.
+نتیجه‌ها دوشنبه اعلام می‌شوند. => Les résultats seront annoncés lundi. ; Les résultats sont annoncés lundi. ; Les résultats vont être annoncés lundi. ; On annoncera les résultats lundi. ; On annonce les résultats lundi. ; On va annoncer les résultats lundi.
+این معلم را همه دوست دارند. => Ce professeur est aimé de tous. ; Ce professeur est aimé de tout le monde. ; Ce professeur est aimé par tous. ; Ce professeur est aimé par tout le monde. ; Tout le monde aime ce professeur.
+در سوئیس به فرانسوی صحبت می‌کنند. => En Suisse, on parle français. ; On parle français en Suisse. ; Le français est parlé en Suisse. ; En Suisse, le français est parlé.
+این نامه را پدربزرگم نوشته است. => Cette lettre a été écrite par mon grand-père. ; Mon grand-père a écrit cette lettre.
+جاده فردا تعمیر می‌شود. => La route sera réparée demain. ; La route va être réparée demain. ; On réparera la route demain. ; On va réparer la route demain. ; On répare la route demain.

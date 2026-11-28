@@ -1,0 +1,92 @@
+code: fr-b1-conditionnel
+title: conditionnel présent: je parlerais، il viendrait
+scope: ساخت conditionnel présent برای همهٔ فعل‌ها: ریشهٔ futur + پایانه‌های imparfait (je parlerais، tu finirais، il prendrait، nous serions، vous auriez، ils iraient، ferait، viendrait، verrait، devrait، saurait …)، فرقش با futur (je parlerai / je parlerais، nous partirons / nous partirions) و با imparfait (je partais / je partirais)، فراتر از شکل‌های ثابت مؤدبانهٔ A2؛ کاربردهای آن (نصیحت، آرزو، خبرِ تأییدنشده) در واحد بعد و si + imparfait دو واحد بعد می‌آیند.
+can_do: حالا می‌توانی هر فعلی را در conditionnel présent صرف کنی و بگویی چه کاری «می‌کردی» یا چه چیزی «می‌شد»: À ta place, je prendrais le train. Ce serait génial. Nous viendrions volontiers.
+rule: ریشهٔ futur + ‎-ais، ‎-ais، ‎-ait، ‎-ions، ‎-iez، ‎-aient: je parlerais، nous ferions، ils viendraient؛ فعل‌های بی‌قاعده همان ریشهٔ futur را دارند (ser-، aur-، ir-، fer-، viendr-، verr-، pourr-، devr-، saur-).
+mistake: فارسی برای کاری فرضی ماضی استمراری می‌گوید («جای تو بودم، با قطار می‌رفتم»)، برای همین فارسی‌زبان‌ها imparfait می‌گذارند («À ta place, je partais»)؛ درست: À ta place, je partirais. ریشهٔ فعل‌های بی‌قاعده را هم از مصدر می‌سازند («je voirais»، «il venirait»، «nous allerions»)؛ درست: je verrais، il viendrait، nous irions.
+tables: conditionnel présent
+lesson:
+در A2 چند شکل مؤدبانه را یاد گرفتی: je voudrais، vous pourriez، ce serait، il faudrait. همهٔ این‌ها conditionnel présent‌اند؛ حالا این زمان را برای همهٔ فعل‌ها می‌سازیم.
+conditionnel معمولاً با «…می‌کردم» یا «…می‌شد» در فارسی جور درمی‌آید، وقتی کاری فرضی است و واقعاً انجام نمی‌شود: je partirais (می‌رفتم)، ce serait bien (خوب می‌شد).
+ساختنش دو تکه دارد: ریشهٔ futur + پایانه‌های imparfait (‎-ais، ‎-ais، ‎-ait، ‎-ions، ‎-iez، ‎-aient).
+فعل‌های باقاعده: خود مصدر ریشه است: parler → je parlerais، finir → tu finirais؛ در فعل‌های ‎-re، e آخر می‌افتد: prendre → il prendrait، attendre → nous attendrions.
+فعل‌های بی‌قاعده همان ریشهٔ futur را دارند: être → ser-، avoir → aur-، aller → ir-، faire → fer-، venir → viendr-، voir → verr-، pouvoir → pourr-، vouloir → voudr-، devoir → devr-، savoir → saur-، envoyer → enverr-، recevoir → recevr-، falloir → faudr-.
+پس: je serais، tu aurais، il irait، nous ferions، vous viendriez، ils verraient، il faudrait.
+تغییر املایی فعل‌های ‎-er هم مثل futur است: acheter → j'achèterais، appeler → j'appellerais.
+با futur فقط یک حرف فرق دارد: je parlerai (حرف خواهم زد) ولی je parlerais (حرف می‌زدم)؛ nous partirons (خواهیم رفت) ولی nous partirions (می‌رفتیم).
+با imparfait هم قاطی‌اش نکن: je partais یعنی «(در گذشته) می‌رفتم»، ولی je partirais یعنی «(اگر می‌شد) می‌رفتم»؛ conditionnel همیشه r ریشهٔ futur را دارد.
+‎-ais، ‎-ait و ‎-aient یک‌جور خوانده می‌شوند، مثل imparfait؛ در نوشتن به فاعل نگاه کن: je serais، il serait، ils seraient.
+مواظب باش: ریشه را از مصدرِ فعل بی‌قاعده نساز: «je voirais»، «il venirait» و «nous allerions» غلط‌اند؛ درست: je verrais، il viendrait، nous irions.
+table:
+ضمیر | parler | finir | prendre | être | aller
+je | parlerais | finirais | prendrais | serais | irais
+tu | parlerais | finirais | prendrais | serais | irais
+il، elle، on | parlerait | finirait | prendrait | serait | irait
+nous | parlerions | finirions | prendrions | serions | irions
+vous | parleriez | finiriez | prendriez | seriez | iriez
+ils، elles | parleraient | finiraient | prendraient | seraient | iraient
+examples:
+À ta place{place-2}, je prendrais le train. | من جای تو بودم، با قطار می‌رفتم.
+Ce serait génial de vivre à Paris. | زندگی در پاریس محشر می‌شد.
+Tu saurais où est la pharmacie ? | می‌دانی داروخانه کجاست؟
+Avec une voiture, nous irions plus souvent à la campagne. | با یک ماشین، بیشتر به روستا می‌رفتیم.
+Mes parents viendraient volontiers avec nous. | پدر و مادرم با کمال میل با ما می‌آمدند.
+targets:
+Est-ce que vous [auriez] un stylo à me prêter ? | خودکاری دارید که به من قرض بدهید؟ | d: aurions, auraient, avoiriez | ok: avez | hint: (avoir)
+Tu [pourrais] m'aider à porter cette valise ? | می‌شود کمکم کنی این چمدان را ببرم؟ | d: pourrions, pourriez, pouvoirais | ok: peux | hint: (pouvoir)
+J'[aimerais] bien visiter le Japon un jour. | خیلی دلم می‌خواهد یک روز به ژاپن بروم. | d: aimerions, aimeriez, aimeront | ok: voudrais | hint: (aimer)
+À ta place{place-2}, je [prendrais] le train. | من جای تو بودم، با قطار می‌رفتم. | d: prendrai, prenderais, prendrions | hint: (prendre)
+Avec un peu de temps libre, je [ferais] du sport tous les jours. | با کمی وقت آزاد، هر روز ورزش می‌کردم. | d: fairais, ferions, feriez | ok: ferai, fais | hint: (faire)
+Ce [serait] génial de passer Noël à la montagne. | محشر می‌شد کریسمس را در کوه بگذرانیم. | d: êtrait, serions, seriez | ok: sera | hint: (être)
+Nous [voudrions] réserver une chambre pour deux nuits. | می‌خواستیم یک اتاق برای دو شب رزرو کنیم. | d: vouloirions, voudriez, voudraient | ok: aimerions, voulons, voulions | hint: (vouloir)
+Vous [devriez] vous reposer un peu, vous avez l'air fatigué{fatigué}. | بهتر است کمی استراحت کنید، خسته به نظر می‌رسید. | d: devoiriez, devrions, devraient | ok: devez | hint: (devoir)
+Il [faudrait] acheter du pain pour ce soir. | باید برای امشب نان بخریم. | d: fallerait, faudrais, faudraient | ok: faut | hint: (falloir)
+Mes grands-parents [viendraient] volontiers avec nous. | پدربزرگ و مادربزرگم با کمال میل با ما می‌آمدند. | d: veniraient, viendrions, viendriez | ok: viendront | hint: (venir)
+Tu [saurais] où se trouve la pharmacie ? | می‌دانی داروخانه کجاست؟ | d: savoirais, saurions, sauriez | ok: sais | hint: (savoir)
+On [pourrait] se retrouver devant le cinéma à huit heures ? | می‌شود ساعت هشت جلوی سینما همدیگر را ببینیم؟ | d: pouvoirait, pourrions, pourriez | ok: peut | hint: (pouvoir)
+Je [serais] content de te revoir. | خوشحال می‌شدم دوباره ببینمت. | d: êtrais, serions, seriez | ok: suis | hint: (être)
+Sans toi, je ne [saurais] pas quoi faire. | بدون تو نمی‌دانستم چه کار کنم. | d: savoirais, saurions, sauriez | ok: sais | hint: (savoir)
+Elle [aimerait] travailler à l'étranger. | او (زن) دلش می‌خواهد در خارج از کشور کار کند. | d: aimerions, aimeriez, aimerai | ok: voudrait, veut | hint: (aimer)
+Avec des lunettes, il [verrait] mieux. | با عینک بهتر می‌دید. | d: voirait, verrions, verriez | ok: voit, verra | hint: (voir)
+Nous [aurions] besoin d'une plus grande voiture. | به یک ماشین بزرگ‌تر نیاز داشتیم. | d: avoirions, auriez, auraient | ok: avons | hint: (avoir)
+Vous [voudriez] une table à l'intérieur ou dehors ? | میزی داخل می‌خواستید یا بیرون؟ | d: vouloiriez, voudrions, voudraient | ok: préféreriez, préfèreriez, aimeriez, voulez, préférez | hint: (vouloir)
+À votre place{place-2}, je ne [dirais] rien. | من جای شما بودم، چیزی نمی‌گفتم. | d: dirai, dirions, diriez | hint: (dire)
+Tu [mettrais] quelle robe pour le mariage ? | برای عروسی کدام لباس را می‌پوشیدی؟ | d: mettrai, metterais, mettrions | ok: mettras, mets | hint: (mettre)
+Ça me [ferait] plaisir de vous inviter. | خوشحال می‌شدم شما را دعوت کنم. | d: fairait, ferions, feraient | ok: fait, fera | hint: (faire)
+Tu [devrais] appeler{appeler} ta mère, elle est inquiète. | بهتر است به مادرت زنگ بزنی، نگران است. | d: devoirais, devrions, devriez | ok: dois | hint: (devoir)
+Est-ce qu'il y [aurait] encore des places{place-2} pour ce soir ? | برای امشب هنوز جا هست؟ | d: avoirait, aurions, auriez | ok: a, aura | hint: (avoir)
+Les enfants [seraient] contents d'aller à la plage. | بچه‌ها از رفتن به ساحل خوشحال می‌شدند. | d: êtraient, serions, seriez | ok: sont, seront | hint: (être)
+À ta place{place-2}, je n'[achèterais] pas cette voiture. | من جای تو بودم، این ماشین را نمی‌خریدم. | d: achèterai, achèterions, achèteriez | hint: (acheter)
+Je [boirais] bien un café. | دلم یک قهوه می‌خواهد. | d: buverais, boirions, boiriez | ok: prendrais | hint: (boire)
+Tu m'[enverrais] les photos de la fête ? | عکس‌های مهمانی را برایم می‌فرستی؟ | d: envoyerais, enverrions, enverriez | ok: envoies, enverras | hint: (envoyer)
+Avec un plus grand appartement, nous [recevrions] nos amis plus souvent. | با یک آپارتمان بزرگ‌تر، دوستانمان را بیشتر مهمان می‌کردیم. | d: recevoirions, recevriez, recevraient | ok: recevrons | hint: (recevoir)
+Ce [serait] dommage de partir si tôt. | حیف می‌شد این‌قدر زود برویم. | d: êtrait, serions, seriez | ok: sera | hint: (être)
+Nous [partirions] bien en vacances, mais nous n'avons pas d'argent. | خیلی دلمان می‌خواست به تعطیلات برویم، ولی پول نداریم. | d: partrions, partiriez, partiraient | hint: (partir)
+Mon père [vendrait] volontiers sa vieille voiture. | پدرم با کمال میل ماشین قدیمی‌اش را می‌فروخت. | d: venderait, vendrions, vendriez | ok: vendra | hint: (vendre)
+Regarde le ciel : on [dirait] qu'il va pleuvoir. | آسمان را نگاه کن: انگار می‌خواهد باران بیاید. | d: dirions, diriez, diraient | hint: (dire)
+Vous [iriez] où, vous, pour un week-end au soleil ? | شما برای یک آخر هفتهٔ آفتابی کجا می‌رفتید؟ | d: alleriez, irions, iraient | ok: allez, irez | hint: (aller)
+Tu [pourrais] venir samedi ? Ça me [ferait] plaisir. | می‌توانی شنبه بیایی؟ خوشحال می‌شوم. | d: pourrions, pourriez, pouvoirais / fairait, ferions, feraient | ok: peux / fait, fera
+Nous [aimerions] partir tôt, il [faudrait] donc réserver un taxi. | دلمان می‌خواهد زود راه بیفتیم، پس باید یک تاکسی رزرو کنیم. | d: aimeriez, aimeraient, aimerez / fallerait, faudrais, faudraient | ok: voudrions, voulons / faut
+À ta place{place-2}, je [resterais] à la maison et je [dormirais]. | من جای تو بودم، خانه می‌ماندم و می‌خوابیدم. | d: resterai, resterions, resteriez / dormirai, dormirions, dormiriez
+Vous [auriez] le temps de m'aider ? Ce [serait] très gentil. | وقت دارید کمکم کنید؟ خیلی لطف می‌کنید. | d: aurions, auraient, avoiriez / êtrait, serions, seriez | ok: avez / serait
+Mes parents [voudraient] te rencontrer ; ils [seraient] très contents. | پدر و مادرم دوست دارند با تو آشنا شوند؛ خیلی خوشحال می‌شوند. | d: voudrions, voudriez, vouloiraient / êtraient, serions, seriez | ok: aimeraient, veulent / seront, sont
+Je [viendrais] avec plaisir, mais je [devrais] partir avant minuit. | با کمال میل می‌آمدم، ولی باید قبل از نیمه‌شب می‌رفتم. | d: venirais, viendrions, viendriez / devoirais, devrions, devriez | ok: viens, viendrai / dois, devrai
+Il pleut, sinon on [irait] à la plage et on [mangerait] au restaurant. | باران می‌آید، وگرنه به ساحل می‌رفتیم و در رستوران غذا می‌خوردیم. | d: irions, allerait, iriez / mangerions, mangeriez, mangerais
+transforms:
+Je viendrais avec plaisir. => Nous viendrions avec plaisir. | جمله را با nous بنویس.
+Tu pourrais m'aider ? => Vous pourriez m'aider ? | جمله را با vous بنویس.
+Il serait content. => Ils seraient contents. | جمله را با ils بنویس.
+On irait à la plage. => Nous irions à la plage. | جمله را با nous بنویس.
+Je fais du sport. => Je ferais du sport. | فعل را به conditionnel présent ببر.
+Elle voit mieux avec des lunettes. => Elle verrait mieux avec des lunettes. | فعل را به conditionnel présent ببر.
+Nous partirons en Italie. => Nous partirions en Italie. | فعل را از futur به conditionnel présent ببر.
+Vous devez vous reposer. => Vous devriez vous reposer. | فعل را به conditionnel présent ببر تا نرم‌تر شود.
+translations:
+من جای تو بودم، با قطار می‌رفتم. => À ta place{place-2}, je prendrais le train. ; À ta place{place-2}, j'irais en train. ; Moi, à ta place{place-2}, je prendrais le train. ; Moi, à ta place{place-2}, j'irais en train.
+زندگی در پاریس محشر می‌شد. => Ce serait génial de vivre à Paris. ; Ça serait génial de vivre à Paris. ; Vivre à Paris, ce serait génial.
+می‌دانی داروخانه کجاست؟ => Tu saurais où est la pharmacie ? ; Est-ce que tu saurais où est la pharmacie ? ; Saurais-tu où est la pharmacie ? ; Tu sais où est la pharmacie ? ; Est-ce que tu sais où est la pharmacie ? ; Sais-tu où est la pharmacie ? ; Tu saurais où se trouve la pharmacie ? ; Est-ce que tu saurais où se trouve la pharmacie ? ; Saurais-tu où se trouve la pharmacie ? ; Tu sais où se trouve la pharmacie ? ; Est-ce que tu sais où se trouve la pharmacie ? ; Sais-tu où se trouve la pharmacie ?
+با کمال میل می‌آمدیم. => Nous viendrions volontiers. ; On viendrait volontiers. ; Nous viendrions avec plaisir. ; On viendrait avec plaisir.
+او (زن) دلش می‌خواهد در خارج از کشور کار کند. => Elle aimerait travailler à l'étranger. ; Elle voudrait travailler à l'étranger.
+با کمی وقت آزاد، هر روز ورزش می‌کردم. => Avec un peu de temps libre, je ferais du sport tous les jours. ; Avec un peu de temps libre, je ferais du sport chaque jour.
+پدر و مادرم خیلی خوشحال می‌شدند. => Mes parents seraient très contents. ; Mes parents seraient très heureux.
+من جای شما بودم، چیزی نمی‌گفتم. => À votre place{place-2}, je ne dirais rien. ; Moi, à votre place{place-2}, je ne dirais rien.

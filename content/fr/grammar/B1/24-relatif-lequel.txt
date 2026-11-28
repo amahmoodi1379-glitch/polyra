@@ -1,0 +1,91 @@
+code: fr-b1-relatif-lequel
+title: حرف اضافه + ضمیر موصولی: avec qui، sur laquelle، auquel
+scope: حرف اضافه + ضمیر موصولی: برای آدم avec qui، pour qui، chez qui، à qui؛ برای چیز avec lequel، sur laquelle، dans lesquels، pour lesquelles؛ à + lequel → auquel، à laquelle، auxquels؛ de + lequel بعد از عبارت‌هایی مثل à côté de و près de (à côté duquel، près de laquelle)؛ و lequel سؤالی (Lequel tu préfères ?). ضمیرهای ملکی (le mien) در واحد ۲۶ و celui-ci در واحد ۲۷ می‌آیند.
+can_do: حالا می‌توانی دربارهٔ آدمی که با او کار می‌کنی، چیزی که با آن یا روی آن کاری می‌کنی و جایی که کنارش زندگی می‌کنی دقیق حرف بزنی و بپرسی «کدام یکی؟»: La collègue avec qui je travaille est sympa. Il y a deux robes : laquelle tu préfères ?
+rule: حرف اضافه + qui برای آدم (l'ami avec qui je voyage)، حرف اضافه + lequel، laquelle، lesquels، lesquelles برای چیز (la table sur laquelle je travaille)؛ à + lequel → auquel، à + lesquels → auxquels، de + lequel → duquel (le parc à côté duquel j'habite)؛ lequel تنها یعنی «کدام یکی؟».
+mistake: در فارسی حرف اضافه بعد از «که» می‌آید («میزی که رویش کار می‌کنم»)، برای همین فارسی‌زبان‌ها حرف اضافه را آخر جمله می‌گذارند یا que می‌گویند («la table que je travaille dessus»)، برای چیز هم qui می‌گذارند («le stylo avec qui j'écris») یا dont را جای duquel می‌آورند («le parc à côté dont j'habite»)؛ درست: la table sur laquelle je travaille، le stylo avec lequel j'écris، le parc à côté duquel j'habite.
+lesson:
+در فارسی می‌گوییم «میزی که رویش کار می‌کنم» یا «دوستی که با او سفر می‌کنم»: حرف اضافه («رویِ»، «با») بعد از «که» می‌آید. در فرانسوی حرف اضافه اول می‌آید و بعد ضمیر موصولی: la table sur laquelle je travaille، l'ami avec qui je voyage.
+برای آدم: حرف اضافه + qui: l'ami avec qui je voyage، la femme pour qui il travaille، les amis chez qui nous dormons.
+برای چیز: حرف اضافه + lequel، و lequel با اسم جور می‌شود: lequel (مذکر مفرد)، laquelle (مؤنث مفرد)، lesquels (مذکر جمع)، lesquelles (مؤنث جمع).
+Le stylo avec lequel j'écris، la table sur laquelle je mange، les raisons pour lesquelles il est parti.
+برای آدم هم lequel درست است (la collègue avec laquelle je travaille)، ولی qui رایج‌تر است. برای چیز qui غلط است: «le stylo avec qui j'écris» درست نیست.
+بعد از حرف اضافه هیچ‌وقت que نمی‌آید: «la table sur que je mange» غلط است.
+با à، حرف تعریفِ lequel به à می‌چسبد، مثل au و aux: à + lequel → auquel، à + lesquels → auxquels؛ ولی à laquelle جدا می‌ماند: le projet auquel je pense، la question à laquelle je réponds.
+عبارت‌هایی که با de تمام می‌شوند (à côté de، près de، en face de، au bord de) با lequel این‌طور می‌شوند: de + lequel → duquel؛ de laquelle جدا می‌ماند: le parc à côté duquel j'habite، la gare près de laquelle se trouve l'hôtel.
+اینجا dont درست نیست: «le parc à côté dont j'habite» غلط است، چون dont فقط جای de تنها را می‌گیرد (واحد ۸).
+بعد از dans برای جا، où هم درست است: la maison dans laquelle j'ai grandi = la maison où j'ai grandi.
+lequel سؤالی هم هست، یعنی «کدام یکی؟»، و با اسمی که پیش‌تر آمده جور می‌شود: Il y a deux robes : laquelle tu préfères ? J'ai trois livres : lequel tu veux ?
+فرق quel و lequel: quel همیشه با اسم می‌آید (Quel livre ?)، lequel تنها و به‌جای اسم می‌آید (Lequel ?).
+table:
+شکل | مذکر | مؤنث
+مفرد | lequel | laquelle
+جمع | lesquels | lesquelles
+با à | auquel، auxquels | à laquelle
+با de بعد از à côté de، près de … | duquel | de laquelle
+آدم (همه) | avec qui، pour qui، chez qui، à qui | avec qui، pour qui، chez qui، à qui
+examples:
+Voici l'ami avec qui je pars en vacances. | این دوستی است که با او به تعطیلات می‌روم.
+C'est la chaise sur laquelle mon grand-père s'asseyait. | این صندلی‌ای است که پدربزرگم رویش می‌نشست.
+Voici le projet sur lequel je travaille depuis un an. | این پروژه‌ای است که یک سال است رویش کار می‌کنم.
+Le café en face duquel j'habite ouvre très tôt. | کافه‌ای که روبه‌رویش زندگی می‌کنم خیلی زود باز می‌کند.
+Il y a deux gâteaux : lequel tu veux ? | دو کیک هست: کدام را می‌خواهی؟
+targets:
+Voici le couteau avec [lequel] je coupe le pain. | این چاقویی است که با آن نان را می‌بُرم. | d: laquelle, lesquels, qui
+La table sur [laquelle] tu as posé tes clés est très ancienne. | میزی که کلیدهایت را رویش گذاشتی خیلی قدیمی است. | d: lequel, lesquelles, qui
+Je ne connais pas les raisons pour [lesquelles] elle a quitté son travail. | نمی‌دانم به چه دلیل‌هایی کارش را ول کرد. | d: lesquels, laquelle, qui
+C'est une entreprise dans [laquelle] j'aimerais beaucoup travailler. | شرکتی است که خیلی دلم می‌خواهد در آن کار کنم. | d: lequel, lesquelles, qui
+La boîte dans [laquelle] je garde mes photos est sous mon lit. | جعبه‌ای که عکس‌هایم را در آن نگه می‌دارم زیر تختم است. | d: lequel, lesquelles, que
+Voici le sac dans [lequel] j'ai trouvé ton portefeuille. | این کیفی است که کیف پولت را در آن پیدا کردم. | d: laquelle, lesquels, que
+Les chaussures avec [lesquelles] je cours sont trop vieilles. | کفش‌هایی که با آن‌ها می‌دوم زیادی کهنه‌اند. | d: lesquels, laquelle, qui
+C'est une question à [laquelle] je ne sais pas répondre. | سؤالی است که بلد نیستم جوابش را بدهم. | d: lequel, lesquelles, qui
+C'est un projet [auquel] je pense depuis longtemps. | پروژه‌ای است که مدت‌هاست به آن فکر می‌کنم. | d: à lequel, à laquelle, dont
+Les musées [auxquels] nous nous intéressons sont fermés le lundi. | موزه‌هایی که به آن‌ها علاقه داریم دوشنبه‌ها بسته‌اند. | d: à lesquels, auquel, dont
+La réunion [à laquelle] j'ai participé a duré trois heures. | جلسه‌ای که در آن شرکت کردم سه ساعت طول کشید. | d: auquel, à lequel, dont
+Le concours [auquel] elle s'est inscrite est très difficile. | کنکوری که او (زن) در آن ثبت‌نام کرده خیلی سخت است. | d: à lequel, à laquelle, dont
+Le parc à côté [duquel] j'habite est très calme. | پارکی که کنارش زندگی می‌کنم خیلی آرام است. | d: dont, de lequel, de laquelle
+La gare près de [laquelle] se trouve notre hôtel est toute neuve. | ایستگاه قطاری که هتل ما نزدیکش است کاملاً نوساز است. | d: lequel, dont, qui
+C'est la rivière au bord de [laquelle] nous avons fait un pique-nique. | این رودخانه‌ای است که کنارش پیک‌نیک کردیم. | d: lequel, dont, qui
+L'immeuble en face [duquel] je travaille est très vieux. | ساختمانی که روبه‌رویش کار می‌کنم خیلی قدیمی است. | d: dont, de lequel, de laquelle
+La collègue avec [qui] je partage mon bureau est très sympa. | همکاری که دفترم را با او شریکم خیلی خوش‌برخورد است. | d: que, dont, lequel | ok: laquelle
+Le garçon à [qui] tu as prêté ton vélo ne te l'a pas rendu. | پسری که دوچرخه‌ات را به او قرض دادی پسش نداده. | d: que, dont, lequel
+Les amis chez [qui] nous avons dormi habitent à Marseille. | دوستانی که خانه‌شان خوابیدیم در مارسی زندگی می‌کنند. | d: que, dont, où | ok: lesquels
+C'est quelqu'un pour [qui] j'ai beaucoup de respect. | کسی است که برایش احترام زیادی قائلم. | d: que, dont, quoi
+La personne à [qui] vous devez vous adresser est absente aujourd'hui. | کسی که باید به او مراجعه کنید امروز نیست. | d: que, dont, quoi | ok: laquelle
+Le professeur avec [qui] j'ai parlé m'a donné un bon conseil. | استادی که با او حرف زدم توصیهٔ خوبی به من کرد. | d: que, dont, quoi | ok: lequel
+J'ai deux billets pour ce soir. [Lequel] tu veux ? | دو تا بلیت برای امشب دارم. کدام یکی را می‌خواهی؟ | d: Laquelle, Lesquels, Quel
+Il y a trois robes dans ce magasin. [Laquelle] te plaît le plus ? | در این مغازه سه پیراهن هست. کدامش را بیشتر دوست داری؟ | d: Lequel, Lesquelles, Quelle
+Parmi tous ces films, [lesquels] as-tu déjà vus ? | از میان همهٔ این فیلم‌ها، کدام‌ها را دیده‌ای؟ | d: lesquelles, lequel, quels
+Les deux sœurs de Paul ? Je ne sais plus [laquelle] est médecin. | دو خواهر پل؟ یادم نیست کدامشان پزشک است. | d: lequel, lesquelles, lesquels
+De ces deux ordinateurs, [lequel] est le moins cher ? | از این دو کامپیوتر، کدام ارزان‌تر است؟ | d: laquelle, lesquels, qui
+Tu as vu mes clés ? [Lesquelles] ? Celles de la voiture ? | کلیدهایم را دیدی؟ کدام‌ها؟ کلیدهای ماشین؟ | d: Lesquels, Laquelle, Quelles
+C'est la raison pour [laquelle] je suis en retard. | دلیل دیر کردنم همین است. | d: lequel, lesquelles, qui
+Le quartier dans [lequel] ils ont acheté un appartement est très cher. | محله‌ای که در آن آپارتمان خریده‌اند خیلی گران است. | d: laquelle, lesquels, que
+Le film pendant [lequel] tu t'es endormi a duré trois heures. | فیلمی که وسطش خوابت برد سه ساعت طول کشید. | d: laquelle, lesquels, qui
+Il a perdu la clé sans [laquelle] il ne peut pas entrer chez lui. | کلیدی را گم کرده که بدون آن نمی‌تواند وارد خانه‌اش شود. | d: lequel, lesquelles, qui
+Les cousins [auxquels] j'ai écrit ne m'ont pas encore répondu. | پسرعموهایی که برایشان نامه نوشتم هنوز جوابم را نداده‌اند. | d: à lesquels, auquel, dont | ok: à qui
+Les clients [auxquels] nous avons envoyé les billets habitent tous en France. | مشتری‌هایی که بلیت‌ها را برایشان فرستادیم همه در فرانسه زندگی می‌کنند. | d: à lesquels, auquel, dont | ok: à qui
+Voici la chaise sur [laquelle] je m'assois et le bureau sur [lequel] je travaille. | این صندلی‌ای است که رویش می‌نشینم و این هم میزی که پشتش کار می‌کنم. | d: lequel, lesquelles, qui / laquelle, lesquels, qui
+L'amie avec [qui] je voyage et l'hôtel dans [lequel] nous dormons sont parfaits. | دوستی که با او سفر می‌کنم و هتلی که در آن می‌خوابیم هر دو عالی‌اند. | d: que, dont, lequel / laquelle, lesquels, que | ok: laquelle
+[Lequel] de ces deux appartements avez-vous choisi ? Celui à côté [duquel] il y a un parc. | کدام یک از این دو آپارتمان را انتخاب کردید؟ آن که کنارش یک پارک هست. | d: Laquelle, Lesquels, Quel / dont, de lequel, de laquelle
+Les amis avec [qui] je jouais et la rue dans [laquelle] j'habitais ont changé. | دوستانی که با آن‌ها بازی می‌کردم و کوچه‌ای که در آن زندگی می‌کردم عوض شده‌اند. | d: que, dont, laquelle / lequel, lesquelles, que | ok: lesquels
+Le projet [auquel] tu penses et l'équipe avec [laquelle] tu travailles me plaisent beaucoup. | پروژه‌ای که به آن فکر می‌کنی و تیمی که با آن کار می‌کنی خیلی به دلم نشسته‌اند. | d: à lequel, à laquelle, dont / lequel, lesquelles, que
+Où sont le stylo avec [lequel] j'écris et le cahier dans [lequel] je note tout ? | خودکاری که با آن می‌نویسم و دفتری که همه چیز را در آن یادداشت می‌کنم کجا هستند؟ | d: laquelle, lesquels, qui / laquelle, lesquels, que
+transforms:
+Voici le stylo. J'écris avec ce stylo. => Voici le stylo avec lequel j'écris. | دو جمله را با حرف اضافه + lequel یکی کن.
+C'est une table. Je mange sur cette table. => C'est une table sur laquelle je mange. | دو جمله را با حرف اضافه + lequel یکی کن.
+C'est une amie. Je pars en vacances avec elle. => C'est une amie avec qui je pars en vacances. ; C'est une amie avec laquelle je pars en vacances. | دو جمله را با حرف اضافه + qui یکی کن.
+C'est un projet. Je pense à ce projet. => C'est un projet auquel je pense. | دو جمله را با auquel یا à laquelle یکی کن.
+C'est une question. Je ne peux pas répondre à cette question. => C'est une question à laquelle je ne peux pas répondre. | دو جمله را با auquel یا à laquelle یکی کن.
+Le parc est beau. J'habite à côté de ce parc. => Le parc à côté duquel j'habite est beau. | دو جمله را با duquel یکی کن.
+Quel livre tu préfères ? => Lequel tu préfères ? ; Lequel préfères-tu ? ; Tu préfères lequel ? | به‌جای «Quel livre» فقط lequel بگو.
+Quelles chaussures tu veux ? => Lesquelles tu veux ? ; Lesquelles veux-tu ? ; Tu veux lesquelles ? | به‌جای «Quelles chaussures» فقط lesquelles بگو.
+translations:
+این چاقویی است که با آن نان را می‌بُرم. => C'est le couteau avec lequel je coupe le pain. ; Voici le couteau avec lequel je coupe le pain. ; C'est un couteau avec lequel je coupe le pain.
+همکاری که با او کار می‌کنم خیلی مهربان است. => Le collègue avec qui je travaille est très gentil. ; Le collègue avec lequel je travaille est très gentil. ; La collègue avec qui je travaille est très gentille. ; La collègue avec laquelle je travaille est très gentille.
+دو کتاب هست: کدام را ترجیح می‌دهی؟ => Il y a deux livres : lequel tu préfères ? ; Il y a deux livres : lequel préfères-tu ? ; Il y a deux livres : tu préfères lequel ? ; Il y a deux livres : lequel est-ce que tu préfères ?
+دلیل دیر کردنم همین است. => C'est la raison pour laquelle je suis en retard. ; Voilà la raison pour laquelle je suis en retard. ; C'est pour ça que je suis en retard. ; C'est pour cela que je suis en retard.
+پارکی که کنارش زندگی می‌کنم خیلی آرام است. => Le parc à côté duquel j'habite est très calme. ; Le parc à côté duquel je vis est très calme. ; Le parc près duquel j'habite est très calme. ; Le parc près duquel je vis est très calme.
+سؤالی است که نمی‌توانم به آن جواب بدهم. => C'est une question à laquelle je ne peux pas répondre. ; C'est une question à laquelle je ne sais pas répondre.
+دوستانی که خانه‌شان خوابیدیم در لیون زندگی می‌کنند. => Les amis chez qui nous avons dormi habitent à Lyon. ; Les amis chez qui on a dormi habitent à Lyon. ; Les amis chez qui nous avons dormi vivent à Lyon. ; Les amis chez qui on a dormi vivent à Lyon. ; Les amies chez qui nous avons dormi habitent à Lyon. ; Les amies chez qui on a dormi habitent à Lyon. ; Les amies chez qui nous avons dormi vivent à Lyon. ; Les amies chez qui on a dormi vivent à Lyon. ; Les amis chez lesquels nous avons dormi habitent à Lyon. ; Les amis chez lesquels on a dormi habitent à Lyon. ; Les amies chez lesquelles nous avons dormi habitent à Lyon. ; Les amies chez lesquelles on a dormi habitent à Lyon.
+جلسه‌ای که در آن شرکت کردم طولانی بود. => La réunion à laquelle j'ai participé était longue. ; La réunion à laquelle j'ai participé a été longue.

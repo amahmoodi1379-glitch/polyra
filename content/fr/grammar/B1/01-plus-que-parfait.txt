@@ -1,0 +1,93 @@
+code: fr-b1-plus-que-parfait
+title: ساخت plus-que-parfait: j'avais fini، elle était partie
+scope: ساخت plus-que-parfait (ماضی بعید): imparfait فعل کمکی avoir یا être + اسم مفعول (j'avais fini، elle était partie، nous nous étions levés)، انتخاب avoir یا être و جور شدن اسم مفعول درست مثل passé composé، منفی (je n'avais pas vu) و جای ضمیرها و déjà و jamais؛ کاربردش در تعریف ماجرا، یعنی کاری پیش از کاری دیگر در گذشته، در واحد بعد می‌آید.
+can_do: حالا می‌توانی بگویی چه کاری را پیش‌تر کرده بودی یا نکرده بودی: J'avais oublié mes clés. Elle était déjà partie. Je ne l'avais pas vu.
+rule: imparfait فعل avoir یا être + اسم مفعول: j'avais fini، elle était partie؛ هر فعلی که در passé composé با être است اینجا هم با être است و اسم مفعولش با فاعل جور می‌شود.
+mistake: فارسی ماضی بعید را همیشه با «بودن» می‌سازد («خورده بودم»)، برای همین فارسی‌زبان‌ها در فرانسوی هم همیشه être می‌گذارند («j'étais mangé»، «tu étais fini tes devoirs»)؛ درست: j'avais mangé، tu avais fini tes devoirs. فعل‌های être هم همان فعل‌های passé composé‌اند و جور شدن را فراموش نکن: «elle avait parti» و «elle était parti» غلط است؛ درست: elle était partie.
+tables: plus-que-parfait
+lesson:
+در فارسی وقتی کاری پیش از کار دیگری در گذشته انجام شده، ماضی بعید می‌گوییم: «وقتی رسیدم، فیلم شروع شده بود». فرانسوی هم همین زمان را دارد و اسمش plus-que-parfait است.
+ساختنش آسان است: همان passé composé است، فقط فعل کمکی avoir یا être به‌جای زمان حال در imparfait می‌آید: j'ai fini → j'avais fini، elle est partie → elle était partie.
+imparfait فعل avoir: j'avais، tu avais، il avait، nous avions، vous aviez، ils avaient. imparfait فعل être: j'étais، tu étais، il était، nous étions، vous étiez، ils étaient.
+فارسی ماضی بعید را همیشه با «بودن» می‌سازد («خورده بودم»)، ولی فرانسوی بیشتر فعل‌ها را با avoir می‌سازد: j'avais mangé یعنی «خورده بودم»؛ «j'étais mangé» غلط است.
+فعل‌هایی که در passé composé با être می‌آیند اینجا هم با être می‌آیند: aller، venir، partir، arriver، entrer، sortir، rester، tomber، monter، descendre، rentrer، naître، mourir، devenir. مثلاً il était arrivé، nous étions restés.
+با être، اسم مفعول مثل passé composé با فاعل جور می‌شود: elle était partie، ils étaient venus، elles étaient tombées.
+فعل‌های ضمیری (se lever، se tromper، s'endormir …) همیشه با être می‌آیند و ضمیرشان پیش از فعل کمکی است: je m'étais levé، nous nous étions trompés، elle s'était endormie.
+منفی: ne … pas دور فعل کمکی می‌آید: je n'avais pas fini، elle n'était pas encore arrivée.
+ضمیرهای مفعولی (le، la، lui، y، en …) هم پیش از فعل کمکی می‌آیند: je l'avais vu، il m'avait appelé، nous y étions allés.
+déjà، jamais، bien، tout و trop بین فعل کمکی و اسم مفعول می‌نشینند: j'avais déjà mangé، on avait tout préparé.
+مثل passé composé، اگر ضمیر مفعولی مستقیم پیش از avoir بیاید، اسم مفعول با آن جور می‌شود: La lettre ? Je l'avais lue.
+مواظب باش: «بودنِ» فارسی را مستقیم ترجمه نکن؛ اول از خودت بپرس این فعل در passé composé با avoir است یا با être.
+table:
+ضمیر | finir (با avoir) | partir (با être) | se lever
+je | avais fini | étais parti(e) | m'étais levé(e)
+tu | avais fini | étais parti(e) | t'étais levé(e)
+il، elle، on | avait fini | était parti(e) | s'était levé(e)
+nous | avions fini | étions parti(e)s | nous étions levé(e)s
+vous | aviez fini | étiez parti(e)(s) | vous étiez levé(e)(s)
+ils، elles | avaient fini | étaient parti(e)s | s'étaient levé(e)s
+examples:
+J'avais oublié mes clés, alors j'ai attendu devant la porte. | کلیدهایم را جا گذاشته بودم، برای همین جلوی در منتظر ماندم.
+Quand nous sommes arrivés, le film avait déjà commencé. | وقتی رسیدیم، فیلم شروع شده بود.
+Elle était partie avant la fin de la fête. | او (زن) قبل از تمام شدن جشن رفته بود.
+Nous nous étions levés très tôt pour voir la mer. | خیلی زود از خواب بلند شده بودیم تا دریا را ببینیم.
+Je ne l'avais pas vu depuis dix ans. | ده سال بود که او (مرد) را ندیده بودم.
+targets:
+Je ne pouvais pas entrer : j'[avais oublié] mes clés au bureau. | نمی‌توانستم وارد شوم: کلیدهایم را در اداره جا گذاشته بودم. | d: étais oublié, avions oublié, avais oublier | hint: (oublier)
+Marie était fatiguée parce qu'elle [avait travaillé] toute la nuit. | ماری خسته بود، چون تمام شب کار کرده بود. | d: était travaillé, avaient travaillé, avait travailler | hint: (travailler)
+Quand nous sommes arrivés à la gare, le train [était parti]. | وقتی به ایستگاه رسیدیم، قطار رفته بود. | d: avait parti, était partie, étaient partis | hint: (partir) | full: Le train était parti quand nous sommes arrivés à la gare.
+Nous nous [étions levés] à cinq heures pour prendre le premier train. | ساعت پنج از خواب بلند شده بودیم تا اولین قطار را بگیریم. | d: avions levés, étions levé, étaient levés | ok: étions levées | hint: (se lever)
+Tu [avais] déjà vu ce film avant de venir avec moi ? | قبل از اینکه با من بیایی، این فیلم را دیده بودی؟ | d: étais, avions, aviez | hint: (avoir)
+Paul ne trouvait plus son portable : il l'[avait laissé] dans le taxi. | پل موبایلش را پیدا نمی‌کرد: آن را در تاکسی جا گذاشته بود. | d: était laissé, avaient laissé, avait laisser | hint: (laisser)
+Les enfants [étaient rentrés] de l'école avant la pluie. | بچه‌ها قبل از باران از مدرسه برگشته بودند. | d: avaient rentrés, étaient rentré, était rentrés | hint: (rentrer)
+La lettre ? Je l'{la-pron}[avais lue] deux fois avant de répondre. | نامه؟ قبل از اینکه جواب بدهم، دو بار خوانده بودمش. | d: étais lue, avais lu, avais lus | hint: (lire)
+Ils [étaient allés] en Italie l'année d'avant, alors cette fois ils ont choisi l'Espagne. | سال قبلش به ایتالیا رفته بودند، برای همین این بار اسپانیا را انتخاب کردند. | d: avaient allés, étaient allé, étions allés | hint: (aller)
+Je n'[avais] jamais mangé un fromage aussi bon ! | هیچ‌وقت پنیری به این خوبی نخورده بودم! | d: étais, avions, aviez | hint: (avoir)
+Bonsoir, vous [aviez réservé] une table pour combien de personnes ? | شب بخیر، برای چند نفر میز رزرو کرده بودید؟ | d: étiez réservé, aviez réserver, avaient réservé | hint: (réserver)
+On [avait] tout préparé, mais personne n'est venu. | همه‌چیز را آماده کرده بودیم، ولی هیچ‌کس نیامد. | d: était, avions, avaient | hint: (avoir)
+Sophie [s'était habillée] en rouge pour la fête. | سوفی برای جشن لباس قرمز پوشیده بود. | d: s'avait habillée, s'était habillé, s'étaient habillées | hint: (s'habiller)
+Je [m'étais trompé] de jour : la réunion était le mardi. | روز را اشتباه گرفته بودم: جلسه سه‌شنبه بود. | d: m'avais trompé, m'étais trompés, t'étais trompé | ok: m'étais trompée | hint: (se tromper)
+Tu [étais] déjà [venu] à Paris avant ce voyage ? | قبل از این سفر به پاریس آمده بودی؟ | d: avais, étiez, étions / venir, venus, venait | ok: étais / venue | hint: (venir)
+Mes parents [s'étaient rencontrés] à l'université, quand ils avaient vingt ans. | پدر و مادرم وقتی بیست ساله بودند، در دانشگاه با هم آشنا شده بودند. | d: s'avaient rencontrés, s'étaient rencontré, s'était rencontrés | hint: (se rencontrer)
+Il pleuvait, mais heureusement j'[avais pris] mon parapluie. | باران می‌آمد، ولی خوشبختانه چترم را برداشته بودم. | d: étais pris, avais prendu, avions pris | hint: (prendre)
+Quand je suis{être} rentré, ma femme [avait] déjà [préparé] le dîner. | وقتی به خانه برگشتم، همسرم شام را آماده کرده بود. | d: était, avais, avaient / préparer, préparait, préparée | full: Ma femme avait déjà préparé le dîner quand je suis rentré.
+Je n'ai pas dormi : les voisins [avaient fait] la fête jusqu'à trois heures du matin. | نتوانستم بخوابم: همسایه‌ها تا ساعت سه صبح مهمانی گرفته بودند. | d: étaient fait, avions fait, avaient faire | hint: (faire)
+Nous [avions] bien aimé ce restaurant, alors nous y sommes retournés. | از این رستوران خیلی خوشمان آمده بود، برای همین دوباره به آنجا رفتیم. | d: étions, aviez, avaient | hint: (avoir)
+Elle n'[était] pas encore [arrivée] quand le cours a commencé. | وقتی کلاس شروع شد، او (زن) هنوز نرسیده بود. | d: avait, étais, étaient / arrivé, arrivés, arriver | full: Quand le cours a commencé, elle n'était pas encore arrivée.
+Ils [avaient vendu] leur maison et ils étaient partis vivre à la campagne. | خانه‌شان را فروخته بودند و برای زندگی به روستا رفته بودند. | d: étaient vendu, avaient vendre, avions vendu | hint: (vendre)
+Vous [étiez] déjà [partis] quand Léa est arrivée ? | وقتی لئا رسید، شما رفته بودید؟ | d: aviez, étions, étaient / partir, partait, partaient | ok: étiez / parti, partie, parties | full: Quand Léa est arrivée, vous étiez déjà partis ?
+Je ne l'[avais] pas vu depuis dix ans, mais je l'ai reconnu tout de suite. | ده سال بود او (مرد) را ندیده بودم، ولی فوراً شناختمش. | d: étais, avions, aviez | hint: (avoir)
+Le gâteau était délicieux : ta mère l'[avait fait] elle-même ? | کیک خوشمزه بود: مادرت خودش آن را پخته بود؟ | d: était fait, aviez fait, avait faite | hint: (faire)
+Le professeur était content : les étudiants [avaient lu] le livre avant le cours. | استاد راضی بود: دانشجوها قبل از کلاس کتاب را خوانده بودند. | d: étaient lu, avaient lire, avaient lisé | hint: (lire)
+Ma grand-mère [était tombée] dans la rue, alors nous l'{la-pron}avons emmenée chez le médecin. | مادربزرگم در خیابان زمین خورده بود، برای همین او را پیش دکتر بردیم. | d: avait tombé, était tombé, étaient tombées | hint: (tomber)
+Tu m'[avais promis] de venir ! | به من قول داده بودی بیایی! | d: étais promis, aviez promis, avions promis | hint: (promettre)
+Avant ce voyage, Ali n'[était] jamais [monté] dans un avion. | قبل از این سفر، علی هیچ‌وقت سوار هواپیما نشده بود. | d: avait, étais, étaient / monter, montait, montée | hint: (monter)
+Nous [avions] déjà [mangé] quand nos amis sont arrivés. | وقتی دوستانمان رسیدند، ما غذا خورده بودیم. | d: étions, aviez, avaient / manger, mangés, mangeait | full: Quand nos amis sont arrivés, nous avions déjà mangé.
+Je [m'étais endormi] devant la télé, alors je n'ai pas entendu le téléphone. | جلوی تلویزیون خوابم برده بود، برای همین صدای تلفن را نشنیدم. | d: m'avais endormi, m'étais endormis, s'était endormi | ok: m'étais endormie | hint: (s'endormir)
+Elles [étaient venues] à pied parce que leur voiture était en panne. | آن‌ها (زن‌ها) پیاده آمده بودند، چون ماشینشان خراب بود. | d: avaient venues, étaient venue, étaient venus | hint: (venir)
+Le professeur nous [avait expliqué] l'exercice, mais nous l'avions oublié. | استاد تمرین را برایمان توضیح داده بود، ولی ما فراموشش کرده بودیم. | d: était expliqué, avions expliqué, avait expliquée | hint: (expliquer)
+Quelqu'un est entré chez toi ? Tu [avais fermé] la porte à clé ? | کسی وارد خانه‌ات شده؟ در را قفل کرده بودی؟ | d: étais fermé, aviez fermé, avais fermer | hint: (fermer)
+J'étais très en retard : mes amis m'[avaient attendu] une heure devant le cinéma. | خیلی دیر کرده بودم: دوستانم یک ساعت جلوی سینما منتظرم مانده بودند. | d: étaient attendu, avions attendu, avaient attendre | ok: avaient attendue | hint: (attendre)
+Il y avait des fleurs partout : quelqu'un [avait préparé] la salle pour nous. | همه‌جا گل بود: کسی سالن را برایمان آماده کرده بود. | d: était préparé, avaient préparé, avait préparer | hint: (préparer)
+Les enfants [s'étaient perdus] dans le marché, mais un policier les a retrouvés. | بچه‌ها در بازار گم شده بودند، ولی یک پلیس پیدایشان کرد. | d: s'avaient perdus, s'étaient perdu, s'était perdus | hint: (se perdre)
+Je n'avais pas faim : j'[avais] trop mangé à midi. | گرسنه نبودم: ظهر زیادی خورده بودم. | d: étais, aviez, avions
+Nous [étions restés] à la maison parce que le bébé était malade. | در خانه مانده بودیم، چون بچه مریض بود. | d: avions restés, étions resté, étaient restés | ok: étions restées | hint: (rester)
+Léa [avait] tout [compris], mais elle n'avait rien dit. | لئا همه‌چیز را فهمیده بود، ولی چیزی نگفته بود. | d: était, avais, avaient / comprendre, comprenu, comprenait
+transforms:
+J'ai fini mon travail. => J'avais fini mon travail. | فعل را به plus-que-parfait ببر.
+Elle est partie à huit heures. => Elle était partie à huit heures. | فعل را به plus-que-parfait ببر.
+Nous nous sommes levés tôt. => Nous nous étions levés tôt. | فعل را به plus-que-parfait ببر.
+Ils ne sont pas venus. => Ils n'étaient pas venus. | فعل را به plus-que-parfait ببر.
+Tu as oublié ton sac. => Tu avais oublié ton sac. | فعل را به plus-que-parfait ببر.
+Je l'ai vue au marché. => Je l'avais vue au marché. | فعل را به plus-que-parfait ببر.
+On a tout préparé. => On avait tout préparé. | فعل را به plus-que-parfait ببر.
+Vous êtes arrivés en retard. => Vous étiez arrivés en retard. | فعل را به plus-que-parfait ببر.
+translations:
+ماری تمام شب کار کرده بود. => Marie avait travaillé toute la nuit.
+قطار رفته بود. => Le train était parti. ; Le train était déjà parti.
+این فیلم را قبلاً دیده بودم. => J'avais déjà vu ce film.
+او (زن) زود از خواب بیدار شده بود. => Elle s'était réveillée tôt. ; Elle s'était levée tôt.
+هیچ‌وقت سوار هواپیما نشده بودیم. => Nous n'étions jamais montés dans un avion. ; Nous n'étions jamais montées dans un avion. ; On n'était jamais monté dans un avion. ; On n'était jamais montés dans un avion. ; On n'était jamais montées dans un avion. ; Nous n'avions jamais pris l'avion. ; On n'avait jamais pris l'avion.
+آن‌ها (مردها) به ایتالیا رفته بودند. => Ils étaient allés en Italie. ; Ils étaient partis en Italie.
+کلیدهایم را جا گذاشته بودم. => J'avais oublié mes clés. ; J'avais laissé mes clés.
+به من قول داده بودی که بیایی! => Tu m'avais promis de venir !

@@ -1,0 +1,89 @@
+code: fr-b1-conditionnel-usages
+title: کاربرد conditionnel: tu devrais، j'aimerais، il y aurait
+scope: کاربردهای conditionnel présent: نصیحت (tu devrais، vous pourriez، vous feriez mieux de، à ta place je …، il vaudrait mieux)، آرزو و رؤیا (j'aimerais، j'adorerais، ça me plairait، je rêverais de)، درخواست مؤدبانه (vous auriez …? ça vous dérangerait de …? ça te dirait de …?) و خبرِ تأییدنشده با selon و d'après (Selon la police, le voleur serait …)؛ جملهٔ شرطی با si + imparfait در واحد بعد می‌آید.
+can_do: حالا می‌توانی نصیحت کنی، آرزویت را بگویی، مؤدبانه چیزی بخواهی و خبری را که قطعی نیست نقل کنی: Tu devrais te reposer. J'aimerais voir la mer. Selon la radio, il y aurait des embouteillages.
+rule: نصیحت: tu devrais، à ta place je …، il vaudrait mieux + مصدر؛ آرزو: j'aimerais، ça me plairait؛ خبرِ تأییدنشده: selon / d'après … + conditionnel (il y aurait).
+mistake: فارسی‌زبان‌ها «باید» را مستقیم ترجمه می‌کنند و برای نصیحت می‌گویند «Tu dois te reposer» که مثل دستور به گوش می‌رسد؛ نرم‌تر: Tu devrais te reposer. در خبر هم «گفته می‌شود» یا «ظاهراً» را جا می‌اندازند و چیزی را که هنوز قطعی نیست مثل یک واقعیت می‌گویند؛ برای خبرِ تأییدنشده: Selon la police, le voleur serait un jeune homme. بعد از à ta place هم futur نگذار: «À ta place, j'irai» غلط است؛ درست: À ta place, j'irais.
+lesson:
+حالا که conditionnel را می‌سازی، ببینیم فرانسوی‌ها کجا آن را به کار می‌برند. چهار جای اصلی دارد: نصیحت، آرزو، درخواست مؤدبانه و خبری که هنوز قطعی نیست.
+نصیحت: tu devrais یا vous devriez + مصدر یعنی «بهتر است …»: Tu devrais dormir un peu. این نرم‌تر از tu dois است که مثل دستور به گوش می‌رسد.
+tu pourrais یا vous pourriez + مصدر هم پیشنهاد است: Vous pourriez essayer une autre taille. و vous feriez mieux de + مصدر یعنی «بهتر است …»: Vous feriez mieux de prendre le métro.
+à ta place یا à votre place، je + conditionnel یعنی «من جای تو بودم …»: À ta place, j'irais voir un médecin. بعد از آن futur نمی‌آید.
+il vaudrait mieux + مصدر و il faudrait + مصدر یعنی «بهتر است، لازم است»: Il vaudrait mieux partir tôt. شکل il vaut mieux هم درست است و کمی محکم‌تر.
+آرزو و رؤیا: j'aimerais، j'adorerais، je voudrais، ça me plairait (خوشم می‌آمد)، je rêverais de (آرزویم است که …): J'aimerais tellement voir la mer !
+درخواست مؤدبانه را از A2 می‌شناسی: Vous auriez l'heure ? Pourriez-vous m'aider ? و چند شکل تازه: Ça vous dérangerait de fermer la fenêtre ? (اشکالی ندارد …؟)، Tu serais gentil de m'aider (لطف می‌کنی اگر …)، Ça te dirait d'aller au cinéma ? (دلت می‌خواهد …؟).
+خبرِ تأییدنشده: روزنامه و رادیو برای چیزی که هنوز مطمئن نیست conditionnel می‌گذارند، بیشتر با selon (به گفتهٔ) یا d'après: Selon la police, le voleur serait un jeune homme.
+فارسی این را با «گفته می‌شود»، «ظاهراً» یا «گویا» می‌گوید، ولی فرانسوی آن را در خود فعل نشان می‌دهد: il y a یعنی خودت مطمئنی؛ il y aurait یعنی این را شنیده‌ای و هنوز قطعی نیست.
+مواظب باش: در آرزو و نصیحت futur نگذار: j'aimerais (دلم می‌خواهد)، نه j'aimerai (خوشم خواهد آمد)؛ و بعد از à ta place همیشه conditionnel.
+table:
+کاربرد | شکل | مثال
+نصیحت | tu devrais، vous pourriez، à ta place je … | Tu devrais te reposer.
+نصیحت | il vaudrait mieux، vous feriez mieux de | Il vaudrait mieux partir tôt.
+آرزو | j'aimerais، ça me plairait، je rêverais de | J'aimerais voir la mer.
+درخواست | vous auriez …? ça vous dérangerait de …? | Vous auriez l'heure ?
+خبرِ تأییدنشده | selon …، d'après … + conditionnel | Selon la police, il y aurait …
+examples:
+Tu devrais te reposer un peu. | بهتر است کمی استراحت کنی.
+À ta place{place-2}, j'irais voir un médecin. | من جای تو بودم، پیش دکتر می‌رفتم.
+Ça me plairait de vivre à la campagne. | خوشم می‌آمد در روستا زندگی کنم.
+Ça vous dérangerait de fermer la fenêtre ? | اشکالی ندارد پنجره را ببندید؟
+Selon la radio, il y aurait des embouteillages sur l'autoroute. | به گفتهٔ رادیو، گویا در بزرگراه راه‌بندان است.
+targets:
+Tu as l'air fatigué{fatigué}, tu [devrais] te coucher plus tôt. | خسته به نظر می‌رسی، بهتر است زودتر بخوابی. | d: devoirais, devrions, devriez | ok: dois | hint: (devoir)
+À ta place{place-2}, j'[irais] voir un médecin. | من جای تو بودم، پیش دکتر می‌رفتم. | d: irai, allerais, irions | hint: (aller)
+Il [vaudrait] mieux partir avant les embouteillages. | بهتر است قبل از راه‌بندان راه بیفتیم. | d: valoirait, vaudrais, vaudraient | ok: vaut | hint: (valoir)
+Cette robe est trop petite : vous [pourriez] essayer une autre taille. | این لباس زیادی کوچک است: می‌توانید یک سایز دیگر امتحان کنید. | d: pouvoiriez, pourrions, pourraient | ok: pouvez | hint: (pouvoir)
+Tu ne [devrais] pas boire trop de café le soir. | بهتر است شب‌ها زیاد قهوه نخوری. | d: devoirais, devrions, devriez | ok: dois | hint: (devoir)
+À votre place{place-2}, je [réserverais]{réserver} l'hôtel dès maintenant. | من جای شما بودم، از همین حالا هتل را رزرو می‌کردم. | d: réserverai, réserverions, réserveriez | hint: (réserver)
+À ta place{place-2}, je ne [dirais] rien à ton patron. | من جای تو بودم، چیزی به رئیست نمی‌گفتم. | d: dirai, dirions, diriez | hint: (dire)
+Tu as mal au ventre ? Il [faudrait] demander au médecin. | دل‌درد داری؟ باید از دکتر بپرسیم. | d: fallerait, faudrais, faudraient | ok: faut | hint: (falloir)
+Avec ces embouteillages, vous [feriez] mieux de prendre le métro. | با این راه‌بندان‌ها، بهتر است با مترو بروید. | d: fairiez, ferions, feraient | ok: ferez | hint: (faire)
+Tu [pourrais] demander à ton frère de t'aider. | می‌توانی از برادرت بخواهی کمکت کند. | d: pourrions, pourriez, pouvoirais | ok: peux | hint: (pouvoir)
+À ta place{place-2}, je ne [m'inquiéterais] pas. | من جای تو بودم، نگران نمی‌شدم. | d: m'inquiéterai, t'inquiéterais, nous inquiéterions | hint: (s'inquiéter)
+J'[aimerais] tellement voir la mer cet été ! | خیلی دلم می‌خواهد امسال تابستان دریا را ببینم! | d: aimerai, aimerions, aimeriez | ok: voudrais | hint: (aimer)
+Ça me [plairait] beaucoup de travailler avec vous. | خیلی خوشم می‌آمد با شما کار کنم. | d: plairais, plairaient, plairions | hint: (plaire)
+Je [rêverais]{rêver} de vivre au bord de la mer. | آرزویم است که کنار دریا زندگی کنم. | d: rêverions, rêveriez, rêvrais | ok: rêve | hint: (rêver)
+Mon fils [voudrait] devenir pilote. | پسرم دلش می‌خواهد خلبان شود. | d: voudrions, voudriez, vouloirait | ok: veut, aimerait | hint: (vouloir)
+Tu [aimerais] habiter dans une grande ville ? | دوست داشتی در یک شهر بزرگ زندگی کنی؟ | d: aimerai, aimeriez, aimerions | ok: voudrais | hint: (aimer)
+Ce [serait] un rêve de passer un an au Canada. | یک سال زندگی در کانادا رؤیا می‌شد. | d: êtrait, serions, seriez | ok: sera | hint: (être)
+Elles [aimeraient] bien partir en vacances ensemble. | آن‌ها (زن‌ها) خیلی دلشان می‌خواهد با هم به تعطیلات بروند. | d: aimerions, aimeriez, aimerait | ok: voudraient | hint: (aimer)
+Les enfants [voudraient] un chien pour Noël. | بچه‌ها برای کریسمس یک سگ می‌خواهند. | d: voudrions, voudriez, vouloiraient | ok: veulent, aimeraient | hint: (vouloir)
+Excusez-moi, vous [auriez] l'heure, s'il vous plaît ? | ببخشید، ساعت دارید؟ | d: aurions, auraient, avoiriez | ok: avez | hint: (avoir)
+[Pourriez]-vous m'envoyer les billets avant midi ? | می‌توانید بلیت‌ها را قبل از ظهر برایم بفرستید؟ | d: Pourrions, Pourraient, Pouvoiriez | ok: Pouvez | hint: (pouvoir)
+Bonjour, nous [aimerions] parler au directeur, s'il vous plaît. | سلام، لطفاً می‌خواستیم با مدیر صحبت کنیم. | d: aimeriez, aimeraient, aimerais | ok: voudrions | hint: (aimer)
+Tu [serais] gentil de m'aider à porter ces sacs. | لطف می‌کنی اگر کمکم کنی این کیسه‌ها را ببرم. | d: êtrais, seriez, serions | ok: es | hint: (être)
+Ça vous [dérangerait] de parler un peu moins vite ? | اشکالی ندارد کمی آهسته‌تر حرف بزنید؟ | d: dérangerions, dérangeriez, dérangeraient | ok: dérange | hint: (déranger)
+Est-ce que tu [pourrais] me prêter ton vélo demain ? | می‌شود فردا دوچرخه‌ات را به من قرض بدهی؟ | d: pourrions, pourriez, pouvoirais | ok: peux | hint: (pouvoir)
+Vous [accepteriez] de répondre à quelques questions ? | حاضرید به چند سؤال جواب بدهید؟ | d: accepterions, accepteraient, acceptriez | ok: acceptez | hint: (accepter)
+Selon la police, le voleur [serait] un jeune homme de 20 ans. | به گفتهٔ پلیس، گویا دزد یک مرد جوان بیست‌ساله است. | d: êtrait, serions, seraient | ok: est | hint: (être)
+D'après la radio, il y [aurait] beaucoup de voitures sur les routes ce week-end. | به گفتهٔ رادیو، گویا این آخر هفته ماشین‌های زیادی در جاده‌ها هست. | d: avoirait, aurions, auraient | ok: aura, a | hint: (avoir)
+Selon le journal, l'usine [fermerait] à la fin de l'année. | به گفتهٔ روزنامه، گویا کارخانه آخر سال بسته می‌شود. | d: fermerions, fermeraient, fermrait | ok: fermera, ferme | hint: (fermer)
+D'après les médecins, ce médicament [aiderait] à mieux dormir. | به گفتهٔ پزشک‌ها، ظاهراً این دارو به بهتر خوابیدن کمک می‌کند. | d: aiderions, aideraient, aidrait | ok: aide, aidera | hint: (aider)
+Selon un journaliste, le célèbre chanteur [viendrait] à Lyon en{en} juin. | به گفتهٔ یک روزنامه‌نگار، گویا آن خوانندهٔ معروف در ماه ژوئن به لیون می‌آید. | d: venirait, viendrions, viendraient | ok: viendra, vient | hint: (venir)
+Apparemment, le musée [serait] fermé pendant tout l'été. | ظاهراً موزه تمام تابستان بسته است. | d: êtrait, serions, seraient | ok: est, sera | hint: (être)
+Selon le journal, la ville [voudrait] construire une nouvelle piscine. | به گفتهٔ روزنامه، گویا شهر می‌خواهد یک استخر تازه بسازد. | d: vouloirait, voudrions, voudriez | ok: veut | hint: (vouloir)
+Tu [devrais] te reposer ; à ta place{place-2}, je [prendrais] quelques jours de vacances. | بهتر است استراحت کنی؛ من جای تو بودم، چند روز مرخصی می‌گرفتم. | d: devoirais, devrions, devriez / prendrai, prenderais, prendrions | ok: dois / prendrais
+Selon la police, l'homme [aurait] 40 ans et il [habiterait] à Marseille. | به گفتهٔ پلیس، گویا آن مرد چهل سال دارد و در مارسی زندگی می‌کند. | d: avoirait, aurions, auriez / habiterions, habiteriez, habiteraient | ok: a / habite
+J'[aimerais] faire le tour du monde ; ce [serait] un rêve ! | دلم می‌خواهد دور دنیا را بگردم؛ رؤیا می‌شد! | d: aimerai, aimerions, aimeriez / êtrait, serions, seriez | ok: voudrais / serait
+Ça te [dirait] d'aller au cinéma ? On [pourrait] voir le nouveau film. | دلت می‌خواهد برویم سینما؟ می‌توانیم فیلم تازه را ببینیم. | d: dirions, diriez, dirais / pourrions, pourriez, pouvoirait | ok: dit / peut
+Il [vaudrait] mieux partir maintenant, sinon nous [serions] en retard. | بهتر است الان راه بیفتیم، وگرنه دیر می‌رسیم. | d: valoirait, vaudrais, vaudraient / êtrions, seriez, seraient | ok: vaut / serons
+Ma sœur [adorerait] ce restaurant ; tu [devrais] l'{la-pron}inviter un soir. | خواهرم عاشق این رستوران می‌شد؛ بهتر است یک شب دعوتش کنی. | d: adorerions, adoreriez, adorrait / devoirais, devrions, devriez | ok: adorera / dois
+Nous [voudrions] une chambre calme ; ce [serait] possible ? | یک اتاق آرام می‌خواستیم؛ ممکن است؟ | d: vouloirions, voudriez, voudraient / êtrait, serions, seriez | ok: voulons, aimerions / serait
+transforms:
+Tu dois te reposer. => Tu devrais te reposer. | نصیحت را نرم‌تر کن.
+Vous devez prendre le métro. => Vous devriez prendre le métro. ; Vous feriez mieux de prendre le métro. | نصیحت را نرم‌تر کن.
+Il vaut mieux partir tôt. => Il vaudrait mieux partir tôt. | جمله را نرم‌تر کن.
+Je veux voir la mer. => J'aimerais voir la mer. ; Je voudrais voir la mer. | آرزو را با conditionnel بگو.
+Selon la police, le voleur est un jeune homme. => Selon la police, le voleur serait un jeune homme. | خبر هنوز قطعی نیست: فعل را عوض کن.
+D'après la radio, il y a des embouteillages. => D'après la radio, il y aurait des embouteillages. | خبر هنوز قطعی نیست: فعل را عوض کن.
+Vous avez l'heure ? => Vous auriez l'heure ? ; Auriez-vous l'heure ? | سؤال را مؤدبانه‌تر کن.
+Ça me plaît de travailler ici. => Ça me plairait de travailler ici. | آرزو را با conditionnel بگو.
+translations:
+بهتر است کمی استراحت کنی. => Tu devrais te reposer un peu. ; Tu devrais un peu te reposer. ; Tu ferais mieux de te reposer un peu. ; Tu ferais mieux de te reposer. ; Il vaudrait mieux te reposer un peu.
+من جای تو بودم، پیش دکتر می‌رفتم. => À ta place{place-2}, j'irais voir un médecin. ; À ta place{place-2}, j'irais voir le médecin. ; À ta place{place-2}, j'irais chez le médecin. ; Moi, à ta place{place-2}, j'irais voir un médecin. ; Moi, à ta place{place-2}, j'irais voir le médecin. ; Moi, à ta place{place-2}, j'irais chez le médecin.
+خیلی دلم می‌خواهد دور دنیا را بگردم. => J'aimerais beaucoup faire le tour du monde. ; J'aimerais vraiment faire le tour du monde. ; J'aimerais tellement faire le tour du monde. ; Je voudrais vraiment faire le tour du monde. ; J'adorerais faire le tour du monde. ; Je rêverais{rêver} de faire le tour du monde.
+ببخشید، ساعت دارید؟ => Excusez-moi, vous auriez l'heure ? ; Excusez-moi, auriez-vous l'heure ? ; Excusez-moi, vous avez l'heure ? ; Excusez-moi, avez-vous l'heure ? ; Pardon, vous auriez l'heure ? ; Pardon, auriez-vous l'heure ? ; Pardon, vous avez l'heure ? ; Pardon, avez-vous l'heure ?
+به گفتهٔ پلیس، گویا دزد یک مرد جوان است. => Selon la police, le voleur serait un jeune homme. ; D'après la police, le voleur serait un jeune homme.
+دلت می‌خواهد امشب برویم سینما؟ => Ça te dirait d'aller au cinéma ce soir ? ; Tu aimerais aller au cinéma ce soir ? ; Tu voudrais aller au cinéma ce soir ? ; Tu veux aller au cinéma ce soir ? ; Est-ce que tu aimerais aller au cinéma ce soir ? ; Est-ce que tu voudrais aller au cinéma ce soir ? ; Est-ce que tu veux aller au cinéma ce soir ? ; Aimerais-tu aller au cinéma ce soir ? ; Voudrais-tu aller au cinéma ce soir ? ; Veux-tu aller au cinéma ce soir ?
+بهتر است زود راه بیفتیم. => Il vaudrait mieux partir tôt. ; Il vaut mieux partir tôt. ; Nous devrions partir tôt. ; On devrait partir tôt. ; Nous ferions mieux de partir tôt. ; On ferait mieux de partir tôt.
+به گفتهٔ روزنامه، گویا کارخانه آخر سال بسته می‌شود. => Selon le journal, l'usine fermerait à la fin de l'année. ; D'après le journal, l'usine fermerait à la fin de l'année.

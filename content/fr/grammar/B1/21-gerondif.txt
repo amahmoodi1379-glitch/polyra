@@ -1,0 +1,95 @@
+code: fr-b1-gerondif
+title: gérondif: en + -ant (en parlant، en faisant)
+scope: gérondif یعنی en + شکل -ant فعل (از ریشهٔ nous: en parlant، en finissant، en prenant؛ سه استثنا: en étant، en ayant، en sachant) برای دو کار هم‌زمان با یک فاعل (Il chante en conduisant)، برای «چطور، با چه راهی» (en travaillant beaucoup)، برای شرط (En partant tôt, tu arriveras à l'heure) و tout en + -ant برای «در عین حال که، با اینکه»؛ participe présent به‌عنوان صفت در B2 می‌آید.
+can_do: حالا می‌توانی بگویی دو کار را هم‌زمان انجام می‌دهی و کاری را با چه راهی انجام داده‌ای: Il chante en conduisant. J'ai appris le français en regardant des films.
+rule: gérondif = en + ریشهٔ nous در زمان حال + -ant (nous prenons → en prenant)؛ استثناها: en étant، en ayant، en sachant؛ فاعلش همیشه همان فاعل جملهٔ اصلی است و شکلش با زمان جمله عوض نمی‌شود.
+mistake: فارسی برای این کار «موقعِ» یا «با» + مصدر می‌گوید («موقع رانندگی»، «با کار کردن»)، برای همین فارسی‌زبان‌ها بعد از en مصدر می‌گذارند («Il chante en conduire») یا شکل -ant را از مصدر می‌سازند («en prendant»، «en choisant»)؛ درست: en conduisant، en prenant، en choisissant.
+lesson:
+در فارسی برای دو کار هم‌زمان می‌گوییم «موقع رانندگی آواز می‌خواند» یا «با کار کردنِ زیاد موفق شد». فرانسوی برای این یک شکل کوتاه دارد: gérondif یعنی en + فعل با پایان -ant.
+ساختن: شکل nous زمان حال را بردار، -ons را بینداز و -ant بگذار: nous parlons → en parlant، nous finissons → en finissant، nous prenons → en prenant، nous faisons → en faisant، nous buvons → en buvant.
+فقط سه فعل استثنا هستند: être → en étant، avoir → en ayant، savoir → en sachant.
+املای -ger و -cer را مثل nous نگه دار: en mangeant (با e)، en commençant (با ç).
+کاربرد ۱، دو کار هم‌زمان با یک فاعل: Il chante en conduisant (هم آواز می‌خواند و هم رانندگی می‌کند).
+کاربرد ۲، «چطور؟ با چه راهی؟»: Il a appris le français en regardant des films.
+کاربرد ۳، شرط، به معنی «اگر…»: En partant tôt, tu arriveras à l'heure.
+tout en + -ant یعنی «در عین حال که» یا «با اینکه»: Elle travaille tout en étudiant. Tout en étant riche, il vit simplement.
+فاعل gérondif همیشه فاعل جملهٔ اصلی است: J'ai vu Paul en sortant du métro یعنی «من» داشتم از مترو بیرون می‌آمدم، نه پل.
+شکل gérondif با زمان جمله عوض نمی‌شود: en parlant برای حال، گذشته و آینده یکی است. ضمیر بین en و فعل می‌آید: en la parlant، en l'appelant.
+مواظب باش: بعد از en مصدر نمی‌آید: «en conduire» غلط است؛ درست: en conduisant.
+table:
+مصدر | nous | gérondif
+parler | nous parlons | en parlant
+finir | nous finissons | en finissant
+prendre | nous prenons | en prenant
+faire | nous faisons | en faisant
+boire | nous buvons | en buvant
+manger | nous mangeons | en mangeant
+commencer | nous commençons | en commençant
+être | — | en étant
+avoir | — | en ayant
+savoir | — | en sachant
+examples:
+Il chante toujours en prenant sa douche. | همیشه موقع دوش گرفتن آواز می‌خواند.
+Elle a perdu ses clés en courant{courir} pour attraper le bus. | وقتی برای رسیدن به اتوبوس می‌دوید، کلیدهایش را گم کرد.
+En prenant le train de huit heures, tu arriveras à midi. | اگر قطار ساعت هشت را بگیری، ظهر می‌رسی.
+Tout en étant fatigué, il a fini son travail. | با اینکه خسته بود، کارش را تمام کرد.
+Mon oncle gagne sa vie en donnant des cours de piano. | عمویم با کلاس پیانو گذاشتن خرجش را درمی‌آورد.
+targets:
+Mon père chante toujours en [conduisant]. | پدرم همیشه موقع رانندگی آواز می‌خواند. | d: conduire, conduit, conduiant | hint: (conduire)
+Ne regarde pas ton téléphone en [mangeant] ! | موقع غذا خوردن به گوشی‌ات نگاه نکن! | d: manger, mange, mangant | hint: (manger)
+Elle fait ses devoirs en [écoutant] de la musique. | او (زن) در حالی که موسیقی گوش می‌دهد تکالیفش را انجام می‌دهد. | d: écouter, écoute, écoutait | hint: (écouter)
+Je lis le journal en [buvant] mon café. | موقع خوردن قهوه‌ام روزنامه می‌خوانم. | d: boire, boit, boivant | hint: (boire)
+Les enfants sont rentrés de l'école en [courant]{courir}. | بچه‌ها دوان‌دوان از مدرسه برگشتند. | d: courir, courait, courrant | hint: (courir)
+Il s'est coupé le doigt en [préparant] le dîner. | موقع درست کردن شام انگشتش را برید. | d: préparer, prépare, préparé | hint: (préparer)
+J'ai rencontré Sophie en [sortant] du{du-contr} métro. | موقع بیرون آمدن از مترو سوفی را دیدم. | d: sortir, sort, sorti | hint: (sortir)
+Elle souriait en [pensant] à ses vacances. | به تعطیلاتش فکر می‌کرد و لبخند می‌زد. | d: penser, pense, pensé
+Il est tombé en [descendant] l'escalier. | موقع پایین آمدن از پله‌ها افتاد. | d: descendre, descend, descendu | hint: (descendre)
+Nous avons beaucoup parlé en [attendant] le bus. | در حالی که منتظر اتوبوس بودیم، خیلی حرف زدیم. | d: attendre, attend, attendu
+Il a appris le français en [regardant] des films. | با تماشای فیلم فرانسوی یاد گرفت. | d: regarder, regarde, regardé
+On apprend une langue en la [parlant] tous les jours. | آدم یک زبان را با هر روز حرف زدن به آن یاد می‌گیرد. | d: parler, parle, parlé
+Elle a trouvé cet appartement en [lisant] le journal. | این آپارتمان را با خواندن روزنامه پیدا کرد. | d: lire, lit, lirant | hint: (lire)
+Paul a réussi en [faisant] beaucoup d'efforts. | پل با تلاش زیاد موفق شد. | d: faire, fait, faisait | hint: (faire)
+Tu iras plus vite en [prenant] le vélo. | با دوچرخه زودتر می‌رسی. | d: prendre, prend, prendant | hint: (prendre)
+Mon voisin gagne sa vie en [vendant] des fruits au marché. | همسایه‌ام با میوه‌فروشی در بازار خرجش را درمی‌آورد. | d: vendre, vend, vendu | hint: (vendre)
+Tu feras plaisir à ta mère en l'[appelant]{appeler} ce soir. | اگر امشب به مادرت زنگ بزنی، خوشحالش می‌کنی. | d: appeler, appelle, appellant | hint: (appeler)
+En [partant] tôt, tu arriveras à l'heure. | اگر زود راه بیفتی، سر وقت می‌رسی. | d: partir, pars, parti | hint: (partir)
+En [réservant] maintenant, vous paierez moins cher. | اگر الان رزرو کنید، ارزان‌تر پرداخت می‌کنید. | d: réserver, réservez, réservé | hint: (réserver)
+En [choisissant] le train, vous pourrez travailler pendant le voyage. | اگر قطار را انتخاب کنید، می‌توانید در طول سفر کار کنید. | d: choisir, choisit, choisant | hint: (choisir)
+En [finissant] ton travail ce soir, tu seras libre demain. | اگر کارت را امشب تمام کنی، فردا آزادی. | d: finir, finis, finant | hint: (finir)
+En [étant] plus patient, tu comprendrais mieux tes enfants. | اگر صبورتر بودی، بچه‌هایت را بهتر می‌فهمیدی. | d: être, soyant, êtant | hint: (être)
+En [ayant] un bon diplôme, on trouve plus facilement du travail. | با یک مدرک خوب، راحت‌تر کار پیدا می‌کنی. | d: avoir, ayons, aurant | hint: (avoir)
+En [sachant] parler anglais, tu trouveras plus facilement un emploi. | اگر انگلیسی بلد باشی، راحت‌تر شغل پیدا می‌کنی. | d: savoir, sait, sachent | hint: (savoir)
+[Tout en] étant très riche, il vit très simplement. | با اینکه خیلی ثروتمند است، خیلی ساده زندگی می‌کند. | d: Malgré, Même si, Pendant
+Elle travaille dans un café tout en [étudiant]{étudier} à l'université. | او (زن) در عین حال که در دانشگاه درس می‌خواند، در یک کافه کار می‌کند. | d: étudier, étudie, étudié | hint: (étudier)
+Tout en [disant] qu'il déteste le chocolat, il en mange tous les jours. | با اینکه می‌گوید از شکلات بدش می‌آید، هر روز شکلات می‌خورد. | d: dire, dit, disait | hint: (dire)
+[Tout en] restant poli, il a refusé l'invitation. | با حفظ ادب، دعوت را رد کرد. | d: Malgré, Au lieu de, Pendant
+Il a eu un accident en [traversant] la rue. | موقع رد شدن از خیابان تصادف کرد. | d: traverser, traverse, traversé
+En [commençant] tôt le matin, on finit avant midi. | اگر صبح زود شروع کنیم، قبل از ظهر تمام می‌کنیم. | d: commencer, commence, commencant | hint: (commencer)
+En [voyant] son père, le garçon a couru vers lui. | پسر تا پدرش را دید، به طرفش دوید. | d: voir, voit, voiant | hint: (voir)
+Il est parti en [croyant] que la réunion était finie. | به خیال اینکه جلسه تمام شده، رفت. | d: croire, croit, croiant | hint: (croire)
+J'ai fait des fautes en [écrivant] trop vite. | چون خیلی تند نوشتم، غلط داشتم. | d: écrire, écrit, écrivait | hint: (écrire)
+En [allant] au travail, j'ai vu un accident. | سر راه رفتن به سر کار، یک تصادف دیدم. | d: aller, va, allé | hint: (aller)
+Il mange en [regardant] la télé et en [parlant] au téléphone. | هم‌زمان که غذا می‌خورد تلویزیون تماشا می‌کند و با تلفن حرف می‌زند. | d: regarder, regarde, regardé / parler, parle, parlé
+En [partant] maintenant et en [prenant] un taxi, tu arriveras à l'heure. | اگر الان راه بیفتی و تاکسی بگیری، سر وقت می‌رسی. | d: partir, pars, parti / prendre, prends, prendant
+En [travaillant] le soir et en [dormant] peu, tu vas tomber malade. | اگر شب‌ها کار کنی و کم بخوابی، مریض می‌شوی. | d: travailler, travailles, travaillé / dormir, dors, dormi
+Mon grand-père lit le journal en [buvant] son café et en [écoutant] la radio. | پدربزرگم موقع خوردن قهوه و گوش دادن به رادیو روزنامه می‌خواند. | d: boire, boit, boivant / écouter, écoute, écouté
+Elle est entrée en [riant] et en [chantant]. | خندان و آوازخوان وارد شد. | d: rire, rit, rirant / chanter, chante, chanté
+On apprend mieux en [lisant] beaucoup et en [écrivant] chaque jour. | با زیاد خواندن و هر روز نوشتن بهتر یاد می‌گیریم. | d: lire, lit, lirant / écrire, écrit, écrivait
+transforms:
+Il conduit et il chante en même temps. => Il chante en conduisant. ; Il conduit en chantant. | با gérondif یک جمله بساز.
+Si tu pars tôt, tu arriveras à l'heure. => En partant tôt, tu arriveras à l'heure. ; Tu arriveras à l'heure en partant tôt. | به‌جای si، gérondif بگذار.
+Pendant qu'il faisait la cuisine, il s'est coupé. => Il s'est coupé en faisant la cuisine. ; En faisant la cuisine, il s'est coupé. | با gérondif بنویس.
+Elle travaille et en même temps elle étudie. => Elle travaille tout en étudiant{étudier}. ; Elle étudie tout en travaillant. | با tout en یک جمله بساز.
+Si vous prenez le métro, vous gagnerez du temps. => En prenant le métro, vous gagnerez du temps. ; Vous gagnerez du temps en prenant le métro. | به‌جای si، gérondif بگذار.
+Quand je suis sorti du{du-contr} cinéma, j'ai vu Marie. => En sortant du{du-contr} cinéma, j'ai vu Marie. ; J'ai vu Marie en sortant du{du-contr} cinéma. | با gérondif بنویس.
+Il est riche, mais il vit simplement. => Tout en étant riche, il vit simplement. ; Il vit simplement tout en étant riche. | با tout en بنویس.
+Je lis et je bois mon café en même temps. => Je lis en buvant mon café. ; Je bois mon café en lisant. | با gérondif یک جمله بساز.
+translations:
+او موقع رانندگی آواز می‌خواند. => Il chante en conduisant. ; Elle chante en conduisant. ; Il chante pendant qu'il conduit. ; Elle chante pendant qu'elle conduit. ; Il chante quand il conduit. ; Elle chante quand elle conduit.
+اگر زود راه بیفتی، سر وقت می‌رسی. => En partant tôt, tu arriveras à l'heure. ; Tu arriveras à l'heure en partant tôt. ; Si tu pars tôt, tu arriveras à l'heure. ; Tu arriveras à l'heure si tu pars tôt.
+فرانسوی را با تماشای فیلم یاد گرفتم. => J'ai appris le français en regardant des films.
+با اینکه ثروتمند است، ساده زندگی می‌کند. => Tout en étant riche, il vit simplement. ; Tout en étant riche, elle vit simplement. ; Il vit simplement tout en étant riche. ; Elle vit simplement tout en étant riche. ; Même s'il est riche, il vit simplement. ; Même si elle est riche, elle vit simplement.
+موقع غذا خوردن تلویزیون تماشا نکن! => Ne regarde pas la télé en mangeant ! ; Ne regarde pas la télévision en mangeant ! ; Ne regarde pas la télé pendant que tu manges ! ; Ne regarde pas la télévision pendant que tu manges !
+موقع بیرون آمدن از مترو ماری را دیدم. => En sortant du{du-contr} métro, j'ai vu Marie. ; J'ai vu Marie en sortant du{du-contr} métro. ; En sortant du{du-contr} métro, j'ai rencontré Marie. ; J'ai rencontré Marie en sortant du{du-contr} métro. ; En sortant du{du-contr} métro, j'ai croisé Marie. ; J'ai croisé Marie en sortant du{du-contr} métro.
+او (زن) در عین حال که درس می‌خواند، کار می‌کند. => Elle travaille tout en étudiant{étudier}. ; Elle travaille en étudiant{étudier}. ; Elle travaille tout en faisant des études. ; Elle travaille en faisant des études.
+موقع پایین آمدن از پله‌ها افتادم. => Je suis tombé en descendant l'escalier. ; Je suis tombée en descendant l'escalier. ; Je suis tombé en descendant les escaliers. ; Je suis tombée en descendant les escaliers.

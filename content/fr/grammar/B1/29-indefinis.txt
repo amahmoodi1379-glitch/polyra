@@ -1,0 +1,91 @@
+code: fr-b1-indefinis
+title: chacun، certains، d'autres، la plupart، n'importe qui
+scope: ضمیرهای نامعین: chacun / chacune (با فعل مفرد، در برابر chaque + اسم)، certains / certaines و d'autres (و فرق d'autres با les autres)، quelques-uns / quelques-unes (در برابر quelques + اسم، و با en: j'en ai quelques-unes)، la plupart des + اسم، la plupart de mes …، la plupart du temps و la plupart تنها (با فعل جمع)، n'importe qui / quoi / où / quand / comment، و tout le monde (فعل مفرد) در برابر tous / toutes به‌شکل ضمیر (ils sont tous venus، tous sont là)؛ chaque، quelques، plusieurs و tout / tous + اسم را از A2 می‌شناسی.
+can_do: حالا می‌توانی دربارهٔ بخشی از یک گروه یا همهٔ آن حرف بزنی و بگویی «هر کسی» یا «هر وقتی»: Certains aiment la mer, d'autres préfèrent la montagne. La plupart des gens travaillent le lundi. Tu peux venir n'importe quand.
+rule: chacun و tout le monde فعل مفرد می‌گیرند (Chacun a son avis. Tout le monde est là.)؛ certains، d'autres، quelques-uns، la plupart و tous فعل جمع (La plupart des gens pensent …)؛ chaque و quelques بدون اسم نمی‌آیند و بی‌اسم می‌شوند chacun و quelques-uns.
+mistake: فارسی «هر» و «همه» را برای اسم و بی‌اسم یکی می‌گوید و بعد از «بیشترِ» فعل مفرد هم درست است («بیشترِ مردم فکر می‌کنند»)، برای همین فارسی‌زبان‌ها chaque و quelques را بی‌اسم می‌آورند («chaque a son avis»، «j'en ai quelques») و می‌گویند «la plupart de les gens» یا «des autres préfèrent»؛ درست: Chacun a son avis. J'en ai quelques-uns. La plupart des gens pensent … D'autres préfèrent le thé.
+lesson:
+در A2، chaque + اسم (chaque jour)، quelques + اسم (quelques amis)، plusieurs و tout le monde را دیدی. این واحد شکل‌هایی را یاد می‌دهد که بدون اسم، مثل ضمیر، می‌آیند.
+chacun / chacune یعنی «هر کدام، هر کس» و فعلش مفرد است: Chacun a son avis. Chacune de mes sœurs a un enfant. chaque همیشه اسم می‌خواهد (chaque enfant)؛ بدون اسم chacun بگو: «chaque a» غلط است.
+certains / certaines یعنی «بعضی‌ها» و فعلش جمع است: Certains pensent que c'est trop cher. Certaines de mes amies habitent à Lyon.
+d'autres یعنی «بعضی‌های دیگر، چند تای دیگر»: Certains aiment la mer, d'autres préfèrent la montagne. Vous en avez d'autres ? اینجا «des autres» غلط است. les autres یعنی «بقیه، همهٔ بقیه»: Paul est parti, mais les autres sont là.
+quelques-uns / quelques-unes یعنی «چند تایی (از آن‌ها)»: J'ai lu quelques-uns de ses livres. Des photos ? J'en ai quelques-unes. quelques بدون اسم نمی‌آید: «j'en ai quelques» غلط است.
+la plupart des + اسم جمع یعنی «بیشترِ … » و فعلش جمع است: La plupart des gens travaillent le lundi. با صفت ملکی: la plupart de mes amis. تنها هم می‌آید: Les étudiants ? La plupart ont réussi. و la plupart du temps یعنی «بیشتر وقت‌ها».
+n'importe یعنی «فرقی نمی‌کند کدام»: n'importe qui (هر کسی)، n'importe quoi (هر چیزی، و «چرت و پرت»)، n'importe où (هر جایی)، n'importe quand (هر وقتی)، n'importe comment (هر جوری، سرسری): Tu peux venir n'importe quand. Il dit n'importe quoi.
+tout le monde یعنی «همه، همهٔ آدم‌ها» و فعلش مفرد است: Tout le monde est là. tous و toutes به آدم‌ها یا چیزهایی برمی‌گردند که گفته شده و فعلشان جمع است: Mes amis ? Ils sont tous venus. Tous sont contents. tous تنها با s آخرش خوانده می‌شود.
+در passé composé، tous بین فعل کمکی و اسم مفعول می‌آید: Ils sont tous partis. Nous avons tous compris.
+مواظب باش: chacun و tout le monde مفردند؛ certains، d'autres، quelques-uns، la plupart و tous جمع. فارسی این فرق را نمی‌گذارد، ولی فرانسوی می‌گذارد.
+table:
+کلمه | معنی | فعل | مثال
+chacun / chacune | هر کدام، هر کس | مفرد | Chacun a son avis.
+certains / certaines | بعضی‌ها | جمع | Certains pensent que c'est cher.
+d'autres | بعضی‌های دیگر | جمع | D'autres préfèrent le thé.
+quelques-uns / quelques-unes | چند تایی | جمع | J'en ai quelques-unes.
+la plupart (des) | بیشترِ | جمع | La plupart des gens pensent ça.
+tout le monde | همه | مفرد | Tout le monde est là.
+tous / toutes | همه‌شان | جمع | Ils sont tous là.
+examples:
+Chacun a apporté quelque chose pour le pique-nique. | هر کس برای پیک‌نیک چیزی آورد.
+Certains de mes collègues viennent au travail à vélo. | بعضی از همکارانم با دوچرخه سر کار می‌آیند.
+La plupart des magasins sont fermés le dimanche. | بیشتر مغازه‌ها یکشنبه‌ها بسته‌اند.
+Tu as des questions ? J'en ai quelques-unes{quelques-uns}. | سؤالی داری؟ چند تایی دارم.
+Ne t'inquiète pas, tu peux m'appeler{appeler} n'importe quand. | نگران نباش، هر وقت خواستی می‌توانی به من زنگ بزنی.
+targets:
+Pour la fête, [chacun] a apporté un plat. | برای مهمانی، هر کس یک غذا آورد. | d: chaque, tous, certains | ok: chacune
+Les enfants ont reçu [chacun] un cadeau. | بچه‌ها هر کدام یک هدیه گرفتند. | d: chaque, certains, quelques-uns
+[Chacune] de mes sœurs a deux enfants. | هر کدام از خواهرهایم دو بچه دارد. | d: Chacun, Chaque, Certaines
+Il faut que [chacun] apporte quelque chose à manger. | لازم است هر کس چیزی برای خوردن بیاورد. | d: chaque, tous, certains
+Dans cette équipe, [chacun] fait son travail sans se plaindre. | در این تیم، هر کس کارش را بی‌آنکه شکایت کند انجام می‌دهد. | d: chaque, tous, quelques-uns
+Ces chambres sont grandes et [chacune] a un balcon. | این اتاق‌ها بزرگ‌اند و هر کدام یک بالکن دارد. | d: chacun, chaque, toutes
+[Certains] pensent que le film est trop long. | بعضی‌ها فکر می‌کنند فیلم خیلی طولانی است. | d: Chacun, Quelqu'un, Chaque
+[Certaines] de mes amies ne mangent pas de viande. | بعضی از دوستانم (زن) گوشت نمی‌خورند. | d: Certains, Chacune, Quelques
+Les hôtels ne sont pas tous chers : [certains] sont même bon marché. | همهٔ هتل‌ها گران نیستند: بعضی‌هایشان حتی ارزان‌اند. | d: chacun, quelques, tout
+J'ai vu ses films ; [certains] m'ont beaucoup plu. | فیلم‌هایش را دیده‌ام؛ بعضی‌هایشان خیلی به دلم نشستند. | d: chacun, quelques, chaque
+Ce pull est trop petit, vous en avez [d'autres] ? | این پلیور خیلی کوچک است، چند تای دیگر هم دارید؟ | d: des autres, autres, d'autre
+Paul est parti, mais [les autres] sont encore là. | پل رفته، ولی بقیه هنوز اینجا هستند. | d: des autres, autres, l'autre
+J'ai lu [quelques-uns] de ses romans. | چند تا از رمان‌هایش را خوانده‌ام. | d: quelques, quelques-unes, quelqu'un
+Tu as des photos de tes vacances ? Oui, j'en ai [quelques-unes]{quelques-uns}. | از تعطیلاتت عکس داری؟ آره، چند تایی دارم. | d: quelques, quelques-uns, chacune
+[Quelques-uns] de mes amis viendront m'aider samedi. | چند تا از دوستانم شنبه برای کمک می‌آیند. | d: Quelques, Quelques-unes, Quelqu'un
+Ces gâteaux sont délicieux ; je peux en prendre [quelques-uns] ? | این کیک‌ها خوشمزه‌اند؛ می‌توانم چند تایی بردارم؟ | d: quelques, quelques-unes, chacun
+La plupart [des]{des-contr} gens travaillent du{du-contr} lundi au vendredi. | بیشتر مردم از دوشنبه تا جمعه کار می‌کنند. | d: de, de les, les
+La plupart de mes amis [habitent] en banlieue. | بیشتر دوستانم در حومهٔ شهر زندگی می‌کنند. | d: habite, habitons, habitez | hint: (habiter)
+La plupart [du]{du-contr} temps, je travaille chez moi. | بیشتر وقت‌ها در خانه کار می‌کنم. | d: des, de, de le
+Quand je suis arrivé, la plupart [des]{des-contr} invités étaient déjà partis. | وقتی رسیدم، بیشتر مهمان‌ها رفته بودند. | d: d', de les, les
+Les étudiants ? [La plupart] ont réussi l'examen. | دانشجوها؟ بیشترشان امتحان را قبول شدند. | d: La plupart des, Chacun, Tout le monde
+Ne parle pas à [n'importe qui] dans la rue. | توی خیابان با هر کسی حرف نزن. | d: n'importe où, n'importe quand, personne
+Mon fils dit souvent [n'importe quoi]. | پسرم اغلب چرت و پرت می‌گوید. | d: n'importe qui, n'importe où, rien
+Avec ce billet, tu peux voyager [n'importe quand]. | با این بلیت هر وقت بخواهی می‌توانی سفر کنی. | d: n'importe qui, n'importe quoi, quelqu'un
+Il y a de la place partout : asseyez-vous [n'importe où]. | همه‌جا جا هست: هر جا خواستید بنشینید. | d: n'importe qui, n'importe quoi, personne
+Ce n'est pas difficile : [n'importe qui] peut le faire. | سخت نیست: هر کسی می‌تواند انجامش بدهد. | d: n'importe où, n'importe quand, personne
+[Tout le monde] est arrivé à l'heure ce matin. | امروز صبح همه سر وقت رسیدند. | d: Tous, Chaque, Toutes
+Mes oncles sont venus, et ils sont [tous] restés jusqu'à minuit. | عموهایم آمدند و همه‌شان تا نیمه‌شب ماندند. | d: tout, toutes, tout le monde
+J'ai invité tous mes voisins et [tous] sont venus. | همهٔ همسایه‌هایم را دعوت کردم و همه‌شان آمدند. | d: tout le monde, chacun, tout
+Les filles ? Elles sont [toutes] parties{partir} à la plage. | دخترها؟ همه‌شان به ساحل رفته‌اند. | d: tous, tout, toute
+Dans ce village, [tout le monde] se connaît. | در این روستا همه همدیگر را می‌شناسند. | d: tous, toutes, certains
+Nous avons [tous] compris l'exercice. | همه‌مان تمرین را فهمیدیم. | d: tout, tout le monde, chaque | ok: toutes
+Si [chacun] faisait un petit effort, ce serait plus simple. | اگر هر کس کمی تلاش می‌کرد، ساده‌تر می‌شد. | d: chaque, tous, certains
+Je voudrais que [tout le monde] soit content. | دلم می‌خواهد همه راضی باشند. | d: tous, chaque, toutes
+[Certains] aiment le café, [d'autres] préfèrent le thé. | بعضی‌ها قهوه دوست دارند، بعضی‌های دیگر چای را ترجیح می‌دهند. | d: Chacun, Quelqu'un, Chaque / des autres, autres, d'autre
+La plupart [des]{des-contr} invités sont partis, mais [quelques-uns] sont restés pour danser. | بیشتر مهمان‌ها رفتند، ولی چند نفری ماندند تا برقصند. | d: de, de les, les / quelques, quelques-unes, quelqu'un
+[Chacun] a choisi un dessert et [tout le monde] était content. | هر کس یک دسر انتخاب کرد و همه راضی بودند. | d: Chaque, Tous, Certains / tous, toutes, tout
+Tu peux inviter [n'importe qui], mais ne dis pas [n'importe quoi] ! | هر کسی را می‌توانی دعوت کنی، ولی چرت و پرت نگو! | d: n'importe quoi, quelque chose, personne / n'importe qui, n'importe où, rien
+Mes amies ? [Certaines] habitent à Lyon, [d'autres] à Marseille. | دوستانم (زن)؟ بعضی‌شان در لیون زندگی می‌کنند، بعضی دیگر در مارسی. | d: Certains, Chacune, Quelques / des autres, autres, d'autre
+Mes élèves ? [Chacun] a un cahier, et [la plupart] ont aussi un ordinateur. | شاگردانم؟ هر کدام یک دفتر دارد، و بیشترشان کامپیوتر هم دارند. | d: Chaque, Tous, Certains / la plupart des, chacun, tout le monde | ok: Chacune
+transforms:
+Chaque enfant a reçu un cadeau. => Chacun a reçu un cadeau. ; Chacun des enfants a reçu un cadeau. | به‌جای chaque + اسم، ضمیر بگذار.
+Chaque fille a son téléphone. => Chacune a son téléphone. ; Chacune des filles a son téléphone. | به‌جای chaque + اسم، ضمیر بگذار.
+Tu as des photos ? Oui, j'ai quelques photos. => Oui, j'en ai quelques-unes{quelques-uns}. | اسم را با en و ضمیر بگو.
+Tu as des amis à Paris ? Oui, j'ai quelques amis. => Oui, j'en ai quelques-uns. | اسم را با en و ضمیر بگو.
+Ils sont tous là. => Tout le monde est là. | با tout le monde بگو.
+Tout le monde est parti. => Ils sont tous partis. ; Tous sont partis. | با tous بگو.
+Certaines personnes pensent que c'est cher. => Certains pensent que c'est{être} cher. | به‌جای certaines personnes ضمیر بگذار.
+Viens quand tu veux. => Viens n'importe quand. | با n'importe بگو.
+translations:
+همه اینجا هستند. => Tout le monde est là. ; Tout le monde est ici. ; Ils sont tous là. ; Ils sont tous ici. ; Elles sont toutes là. ; Elles sont toutes ici.
+بیشتر مردم یکشنبه کار نمی‌کنند. => La plupart des gens ne travaillent pas le dimanche.
+هر کدام یک هدیه گرفت. => Chacun a reçu un cadeau. ; Chacune a reçu un cadeau.
+بعضی‌ها دریا را دوست دارند، بعضی دیگر کوه را. => Certains aiment la mer, d'autres la montagne. ; Certains aiment la mer, d'autres aiment la montagne. ; Certains aiment la mer, d'autres préfèrent la montagne. ; Certains aiment la mer et d'autres la montagne. ; Certains aiment la mer et d'autres aiment la montagne.
+چرت و پرت نگو! => Ne dis pas n'importe quoi ! ; Arrête de dire n'importe quoi !
+هر وقت خواستی می‌توانی بیایی. => Tu peux venir n'importe quand. ; Tu peux venir quand tu veux.
+چند تا از کتاب‌هایش را خوانده‌ام. => J'ai lu quelques-uns de ses livres. ; J'ai lu certains de ses livres. ; J'ai lu plusieurs de ses livres.
+بیشتر وقت‌ها در خانه کار می‌کنم. => La plupart du{du-contr} temps, je travaille à la maison. ; La plupart du{du-contr} temps, je travaille chez moi. ; Je travaille à la maison la plupart du{du-contr} temps. ; Je travaille chez moi la plupart du{du-contr} temps.

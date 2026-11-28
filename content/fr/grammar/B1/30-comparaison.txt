@@ -1,0 +1,89 @@
+code: fr-b1-comparaison
+title: مقایسهٔ مقدار و کار: plus de، autant que، de plus en plus، plus … plus
+scope: مقایسهٔ مقدار با اسم: plus de / moins de / autant de + اسم بی‌حرف تعریف (… que)، و plus de / moins de پیش از عدد (plus de 100 personnes)؛ مقایسهٔ کار با فعل: فعل + plus / moins / autant (que)، در زمان حال، گذشته و منفی (je ne travaille pas autant qu'avant)؛ de plus en plus و de moins en moins با صفت، فعل و de + اسم؛ و plus … plus … / moins … moins … / plus … moins … (Plus je travaille, plus je suis fatigué)؛ مقایسهٔ صفت (plus grand que، aussi … que) را از A1 و meilleur و mieux را از A2 می‌شناسی.
+can_do: حالا می‌توانی مقدارها و کارها را با هم مقایسه کنی و از چیزی بگویی که روزبه‌روز بیشتر یا کمتر می‌شود: J'ai plus de travail que toi. Elle lit autant que moi. Il y a de plus en plus de touristes. Plus je travaille, plus je suis fatigué.
+rule: با اسم: plus de / moins de / autant de + اسم بی‌حرف تعریف + que (plus de travail que toi)؛ با فعل: فعل + plus / moins / autant + que (il mange plus que moi)؛ با صفت و قید aussi، ولی با فعل و اسم autant؛ «هر چه بیشتر …، بیشتر …» می‌شود Plus …, plus … بی le.
+mistake: فارسی می‌گوید «بیشتر از تو» و «به اندازهٔ تو»، برای همین فارسی‌زبان‌ها بعد از مقایسه de می‌گذارند («il mange plus de moi»)، aussi را برای فعل به کار می‌برند («il travaille aussi que moi») و بعد از plus de حرف تعریف می‌آورند («plus du travail»)؛ درست: il mange plus que moi، il travaille autant que moi، plus de travail. «هر چه بیشتر» هم «le plus je travaille» نیست؛ درست: Plus je travaille, plus je suis fatigué.
+lesson:
+در A1 صفت‌ها را مقایسه کردی (plus grand que، aussi cher que) و در A2 meilleur و mieux را دیدی. این واحد مقدارها و کارها را مقایسه می‌کند: «کار بیشتری دارم»، «کمتر می‌خوابم».
+با اسم: plus de، moins de یا autant de + اسم بدون حرف تعریف، و بعد que: J'ai plus de travail que toi. Il y a moins de voitures qu'avant. Elle a autant de livres que moi.
+بعد از این de، حرف تعریف نمی‌آید: plus de travail (نه «plus du travail»)، autant de livres (نه «autant des livres»)؛ قبل از صدادار: moins d'argent.
+با فعل: فعل + plus، moins یا autant + que: Mon frère mange plus que moi. Je dors moins qu'avant. Elle lit autant que son père. plus اینجا s آخرش را دارد (پْلوس).
+در passé composé، plus، moins و autant معمولاً بین فعل کمکی و اسم مفعول می‌آیند: Cette année, nous avons plus voyagé. On a moins dépensé que l'année dernière.
+aussi فقط با صفت و قید می‌آید (aussi grand، aussi vite)؛ با فعل و اسم autant: Il travaille autant que moi (نه «aussi que moi»)، autant de travail (نه «aussi de travail»).
+فارسی «بیشتر از تو» می‌گوید، ولی فرانسوی در مقایسه que می‌گذارد، نه de: plus que toi («plus de toi» غلط است). فقط پیش از عدد، de می‌آید: plus de 100 personnes، moins de 20 euros.
+de plus en plus یعنی «روزبه‌روز بیشتر» و de moins en moins «روزبه‌روز کمتر»؛ با صفت (Il fait de plus en plus chaud)، با فعل (Je lis de moins en moins) و با de + اسم (Il y a de plus en plus de touristes).
+Plus …, plus … یعنی «هر چه بیشتر …، بیشتر …»: Plus je travaille, plus je suis fatigué. با moins هم: Moins tu dors, moins tu as d'énergie. و ترکیبی: Plus on attend, moins il y a de places.
+در این ساختار، le نمی‌آید و ترتیب جمله عادی می‌ماند: «Le plus je travaille» غلط است؛ plus دوم را هم نینداز: Plus je travaille, plus je suis fatigué.
+table:
+مقایسه | با اسم | با فعل
+بیشتر | J'ai plus de travail que toi. | Il mange plus que moi.
+کمتر | Il y a moins de voitures qu'avant. | Je dors moins qu'avant.
+به همان اندازه | Elle a autant de livres que moi. | Elle lit autant que lui.
+روزبه‌روز | de plus en plus de touristes | Je lis de moins en moins.
+هر چه … | Plus on attend, moins il y a de places. | Plus je travaille, plus je suis fatigué.
+examples:
+Dans mon nouveau travail, je gagne plus, mais j'ai moins de temps libre. | در کار جدیدم بیشتر درآمد دارم، ولی وقت آزاد کمتری دارم.
+Il y a de plus en plus de vélos à Paris. | در پاریس روزبه‌روز دوچرخه‌های بیشتری هست.
+Mon mari cuisine{cuisiner} autant que moi. | شوهرم به اندازهٔ من آشپزی می‌کند.
+Plus je le connais, plus je l'apprécie. | هر چه بیشتر می‌شناسمش، بیشتر از او خوشم می‌آید.
+Il y avait plus de 200 personnes au mariage. | بیشتر از دویست نفر در عروسی بودند.
+targets:
+Cette année, j'ai [plus de] travail que l'année dernière. | امسال بیشتر از پارسال کار دارم. | d: plus du, plus que, plus des
+Le lundi, il y a [moins de] monde au marché. | دوشنبه‌ها بازار خلوت‌تر است. | d: moins du, moins que, moins le
+Ma sœur a [autant de] livres que moi. | خواهرم به اندازهٔ من کتاب دارد. | d: aussi de, autant des, aussi des
+Il y a [moins de] voitures qu'avant dans le centre-ville. | در مرکز شهر ماشین‌ها کمتر از قبل است. | d: moins des, moins que, moins les
+Tu manges [moins de] sucre maintenant ? | حالا کمتر شکر می‌خوری؟ | d: moins du, moins le, moins que
+Je n'ai pas [autant de] temps libre que toi. | به اندازهٔ تو وقت آزاد ندارم. | d: aussi de, autant du, aussi du
+Dans cette école, il y a [plus de] filles que de garçons. | در این مدرسه دخترها بیشتر از پسرها هستند. | d: plus des, plus que, plus les
+Il y avait [plus de] 300 personnes au concert. | بیشتر از سیصد نفر در کنسرت بودند. | d: plus des, plus du, aussi de
+Ce billet coûte [moins de] 20 euros. | این بلیت کمتر از بیست یورو قیمت دارد. | d: moins des, moins du, aussi de
+Il y a [autant de] touristes en hiver qu'en été. | زمستان هم به اندازهٔ تابستان توریست هست. | d: aussi de, autant des, autant que
+Je voudrais passer [plus de] temps avec mes enfants. | دلم می‌خواهد وقت بیشتری را با بچه‌هایم بگذرانم. | d: plus du, plus le, plus que
+Si j'avais [plus de] temps, je ferais du sport. | اگر وقت بیشتری داشتم، ورزش می‌کردم. | d: plus du, plus que, plus des
+Le médecin veut que je mange [moins de] sel. | پزشک می‌خواهد کمتر نمک بخورم. | d: moins du, moins le, moins que
+En prenant le train, on dépense [moins d']argent qu'en voiture. | با قطار کمتر از ماشین پول خرج می‌کنیم. | d: moins de, moins des, moins que
+Ce restaurant est bon, mais il y a [autant de] bruit qu'à la gare. | این رستوران خوب است، ولی به اندازهٔ ایستگاه قطار سروصدا دارد. | d: aussi de, autant du, aussi du
+Mon frère mange [plus que] moi. | برادرم بیشتر از من غذا می‌خورد. | d: plus de, aussi que, le plus que
+Depuis que j'ai un bébé, je dors [moins qu']avant. | از وقتی بچه‌دار شده‌ام، کمتر از قبل می‌خوابم. | d: moins d', moins que, aussi qu'
+Ma fille lit [autant que] son père. | دخترم به اندازهٔ پدرش کتاب می‌خواند. | d: aussi que, autant de, si que
+Je ne travaille pas [autant qu']avant. | به اندازهٔ قبل کار نمی‌کنم. | d: aussi qu', autant d', autant que
+Je t'aime [autant qu']au premier jour. | به اندازهٔ روز اول دوستت دارم. | d: aussi qu', autant d', autant que
+Cette année, nous avons [plus] voyagé que l'année dernière. | امسال بیشتر از پارسال سفر کردیم. | d: plus de, le plus, aussi
+Pendant les vacances, on a [moins] dépensé que prévu. | در تعطیلات کمتر از آنچه فکر می‌کردیم خرج کردیم. | d: moins de, le moins, aussi
+Elle gagne [plus que] son mari. | او (زن) بیشتر از شوهرش درآمد دارد. | d: plus de, aussi que, plus comme
+Chaque été, il fait [de plus en plus] chaud. | هر تابستان هوا گرم‌تر از قبل می‌شود. | d: plus en plus, de plus à plus, le plus en plus
+Il y a de plus en plus [de] touristes dans notre village. | در روستای ما روزبه‌روز توریست‌های بیشتری هست. | d: des, les, du
+Les jeunes lisent [de moins en moins] de journaux. | جوان‌ها روزبه‌روز کمتر روزنامه می‌خوانند. | d: moins en moins, de moins à moins, le moins en moins
+Mon grand-père marche [de moins en moins] vite. | پدربزرگم روزبه‌روز آهسته‌تر راه می‌رود. | d: de moins et moins, du moins en moins, moins et moins
+En ville, on utilise [de moins en moins] la voiture. | در شهر روزبه‌روز کمتر از ماشین استفاده می‌کنیم. | d: de moins à moins, du moins en moins, moins en moins
+Ma grand-mère oublie [de plus en plus] de choses. | مادربزرگم روزبه‌روز چیزهای بیشتری را فراموش می‌کند. | d: plus en plus, du plus en plus, de plus et plus
+Depuis qu'il habite à la campagne, il est [de plus en plus] calme. | از وقتی در روستا زندگی می‌کند، روزبه‌روز آرام‌تر می‌شود. | d: plus en plus, de plus à plus, le plus en plus
+[Plus] on attend, plus c'est{être} cher. | هر چه بیشتر صبر کنیم، گران‌تر می‌شود. | d: Le plus, Plus de, De plus
+Plus tu travailleras, [plus] tu réussiras. | هر چه بیشتر کار کنی، موفق‌تر می‌شوی. | d: le plus, plus de, de plus
+[Moins] tu dors, plus tu es fatigué. | هر چه کمتر بخوابی، خسته‌تر می‌شوی. | d: Le moins, Moins de, De moins
+Plus je regarde ce film, [moins] je le comprends. | هر چه بیشتر این فیلم را تماشا می‌کنم، کمتر از آن سر در می‌آورم. | d: le moins, moins de, de moins
+[Plus] je travaille, [plus] je suis fatiguée. | هر چه بیشتر کار می‌کنم، خسته‌تر می‌شوم. | d: Le plus, Plus de, De plus / le plus, plus de, de plus
+Tu devrais manger [moins de] sucre et [plus de] légumes. | باید کمتر شکر و بیشتر سبزیجات بخوری. | d: moins du, moins le, moins que / plus des, plus les, plus que
+Mon mari travaille [plus que] moi, mais il gagne [moins d']argent. | شوهرم بیشتر از من کار می‌کند، ولی پول کمتری درمی‌آورد. | d: plus de, aussi que, plus comme / moins de, moins des, moins que
+Ici, il y a de plus en plus [de] vélos et [moins de] voitures. | اینجا روزبه‌روز دوچرخه‌ها بیشتر و ماشین‌ها کمتر می‌شوند. | d: des, les, du / moins des, moins que, moins les
+[Moins] on dort, [moins] on a d'énergie. | هر چه کمتر بخوابیم، انرژی کمتری داریم. | d: Le moins, Moins de, De moins / le moins, moins de, de moins
+Ma fille ne lit pas [autant que] son frère, mais elle écrit [plus que] lui. | دخترم به اندازهٔ برادرش کتاب نمی‌خواند، ولی بیشتر از او می‌نویسد. | d: aussi que, autant de, si que / plus de, aussi que, plus comme
+transforms:
+J'ai beaucoup de travail. Tu as peu de travail. => J'ai plus de travail que toi. ; Tu as moins de travail que moi. | با plus de … que یا moins de … que مقایسه کن.
+Paul a trois livres. Marie a trois livres. => Paul a autant de livres que Marie. ; Marie a autant de livres que Paul. | با autant de … que مقایسه کن.
+Je dors huit heures, mon fils dort dix heures. => Mon fils dort plus que moi. ; Je dors moins que mon fils. | با فعل + plus یا moins … que مقایسه کن.
+Il lit beaucoup. Sa sœur lit beaucoup aussi. => Il lit autant que sa sœur. ; Sa sœur lit autant que lui. | با autant que مقایسه کن.
+Chaque jour, il fait plus chaud. => Il fait de plus en plus chaud. | با de plus en plus بگو.
+Chaque année, il y a plus de touristes. => Il y a de plus en plus de touristes. | با de plus en plus de بگو.
+Je travaille beaucoup, alors je suis très fatigué. => Plus je travaille, plus je suis fatigué. | با Plus …, plus … بگو.
+Tu dors peu, alors tu es très fatigué. => Moins tu dors, plus tu es fatigué. | با Moins …, plus … بگو.
+translations:
+بیشتر از تو کار دارم. => J'ai plus de travail que toi.
+او (زن) به اندازهٔ من کتاب دارد. => Elle a autant de livres que moi.
+هوا روزبه‌روز گرم‌تر می‌شود. => Il fait de plus en plus chaud.
+هر چه بیشتر کار می‌کنم، خسته‌تر می‌شوم. => Plus je travaille, plus je suis fatigué. ; Plus je travaille, plus je suis fatiguée. ; Plus je travaille, plus je me fatigue.
+برادرم کمتر از من غذا می‌خورد. => Mon frère mange moins que moi.
+به اندازهٔ تو کار نمی‌کنم. => Je ne travaille pas autant que toi. ; Je ne travaille pas tant que toi.
+از قبل کمتر می‌خوابم. => Je dors moins qu'avant.
+روزبه‌روز توریست‌های بیشتری به اینجا می‌آیند. => De plus en plus de touristes viennent ici. ; Il y a de plus en plus de touristes qui viennent ici.

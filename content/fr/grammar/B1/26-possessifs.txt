@@ -1,0 +1,91 @@
+code: fr-b1-possessifs
+title: ضمیر ملکی: le mien، la tienne، les nôtres
+scope: ضمیرهای ملکی به‌جای صفت ملکی + اسم: le mien، la mienne، les miens، les miennes، le tien، le sien، le nôtre، le vôtre، le leur و جمع‌هایشان (les nôtres، les leurs)؛ جور شدن با جنس و شمار خودِ چیز؛ چسبیدن à و de به حرف تعریف (au mien، du sien، aux siens، des tiens)؛ و être à + ضمیر تأکیدی برای «مالِ کسی بودن» (C'est à moi). ضمیرهای اشارهٔ celui-ci و ceci در واحد ۲۷ می‌آیند.
+can_do: حالا می‌توانی بی‌آنکه اسم را تکرار کنی بگویی چیزی مال کیست و چیزهای خودت و دیگران را مقایسه کنی: Ta voiture est rouge, la mienne est bleue. Ce stylo est à moi.
+rule: ضمیر ملکی = le، la یا les + mien، tien، sien، nôtre، vôtre، leur؛ صاحب کلمه را انتخاب می‌کند (mien، tien…) و خودِ چیز جنس و شمار را (ma clé → la mienne، mes livres → les miens)؛ à le → au، de le → du (au mien، du sien)؛ برای «مالِ کسی» être à moi، à toi، à Paul.
+mistake: فارسی برای همه «مال من» می‌گوید، برای همین فارسی‌زبان‌ها ضمیر را با صاحب جور می‌کنند نه با چیز («Paul a perdu sa clé, il cherche le sien»)، حرف تعریف را می‌اندازند («Cette clé est mienne»)، یا «مالِ» را با de می‌گویند («C'est de moi»)؛ درست: il cherche la sienne، Cette clé est la mienne، C'est à moi.
+lesson:
+در فارسی «مال من»، «مال تو» برای همه چیز یکی است، چه ماشین باشد چه کتاب‌ها. در فرانسوی ضمیر ملکی هم با صاحب عوض می‌شود و هم با جنس و شمار خودِ چیز.
+ضمیر ملکی جای «صفت ملکی + اسم» می‌نشیند تا اسم تکرار نشود: ma voiture → la mienne، mon livre → le mien، mes clés → les miennes.
+حرف تعریف همیشه همراهش است: le mien، la tienne، les nôtres. «mienne» تنها یا «ma mienne» غلط است.
+جنس و شمار را خودِ چیز تعیین می‌کند، نه صاحب: Paul a perdu sa clé, il cherche la sienne (کلید مؤنث است، هرچند Paul مرد است).
+le sien یعنی «مال او»، هم برای مرد هم برای زن: le vélo de Paul → le sien، le vélo de Léa → le sien.
+برای nous و vous: le nôtre، la nôtre، les nôtres و le vôtre، la vôtre، les vôtres. در ضمیر روی o کلاه (ˆ) هست و o بسته‌تر تلفظ می‌شود: notre maison، ولی la nôtre.
+برای ils و elles: le leur، la leur، les leurs: leur maison → la leur، leurs enfants → les leurs.
+با à و de، le و les مثل همیشه به آن‌ها می‌چسبند: à + le mien → au mien، à + les miens → aux miens، de + le sien → du sien، de + les siens → des siens.
+Ton téléphone ressemble au mien. J'ai besoin de mon vélo, et Paul a besoin du sien.
+برای «مالِ کسی بودن» راه ساده‌تری هم هست: être à + ضمیر تأکیدی یا اسم: Ce stylo est à moi (= c'est le mien). Ce sac est à Léa. C'est à qui ? C'est à toi ?
+در «c'est à moi» حرف اضافه à است: «c'est de moi» و «c'est mon» غلط‌اند.
+table:
+صاحب | مذکر مفرد | مؤنث مفرد | مذکر جمع | مؤنث جمع
+je | le mien | la mienne | les miens | les miennes
+tu | le tien | la tienne | les tiens | les tiennes
+il، elle | le sien | la sienne | les siens | les siennes
+nous | le nôtre | la nôtre | les nôtres | les nôtres
+vous | le vôtre | la vôtre | les vôtres | les vôtres
+ils، elles | le leur | la leur | les leurs | les leurs
+examples:
+Ce n'est pas mon manteau, le mien est noir. | این پالتوی من نیست، مال من سیاه است.
+Tes enfants sont plus âgés que les nôtres{nôtre}. | بچه‌های تو از بچه‌های ما بزرگ‌ترند.
+Elle a oublié son livre, alors je lui ai prêté le mien. | او (زن) کتابش را جا گذاشت، برای همین مال خودم را به او قرض دادم.
+À qui est ce sac ? Il est à moi. | این کیف مال کیست؟ مال من است.
+Ton jardin ressemble beaucoup au nôtre. | باغچه‌ات خیلی شبیه باغچهٔ ماست.
+targets:
+Ta voiture est rouge, [la mienne] est bleue. | ماشین تو قرمز است، مال من آبی است. | d: le mien, les miens, les miennes
+Mon ordinateur ne marche plus. Je peux utiliser [le tien] ? | کامپیوترم دیگر کار نمی‌کند. می‌توانم از مال تو استفاده کنم؟ | d: la tienne, les tiens, les tiennes
+Ce ne sont pas mes clés, ce sont [les tiennes{tien}]. | این‌ها کلیدهای من نیستند، مال تو هستند. | d: les tiens, la tienne, le tien
+Paul a oublié son parapluie, et Marie a oublié [le sien] aussi. | پل چترش را جا گذاشت و ماری هم چترش را. | d: la sienne, les siens, les siennes
+Léa cherche sa montre. C'est [la sienne], sur la table ? | لئا دنبال ساعتش می‌گردد. آن که روی میز است مال اوست؟ | d: le sien, les siens, les siennes | ok: à elle
+Nos voisins ont deux enfants, et nos enfants jouent souvent avec [les leurs]. | همسایه‌هایمان دو بچه دارند و بچه‌های ما اغلب با بچه‌های آن‌ها بازی می‌کنند. | d: le leur, la leur, leurs
+Votre maison est plus grande que [la nôtre]. | خانهٔ شما از خانهٔ ما بزرگ‌تر است. | d: le nôtre, les nôtres, notre
+Notre train part à huit heures. Et [le vôtre] ? | قطار ما ساعت هشت حرکت می‌کند. قطار شما چطور؟ | d: la vôtre, les vôtres, votre
+Leur appartement est petit, mais [le nôtre] est encore plus petit. | آپارتمانشان کوچک است، ولی مال ما از آن هم کوچک‌تر است. | d: la nôtre, les nôtres, notre
+Mes parents habitent à Lyon. Et [les tiens{tien}] ? | پدر و مادرم در لیون زندگی می‌کنند. پدر و مادر تو چطور؟ | d: le tien, la tienne, les tiennes
+Ce n'est pas ton sac, c'est [le mien] ! | این کیف تو نیست، مال من است! | d: la mienne, les miens, mon | ok: à moi
+Tu as tes billets ? Moi, j'ai oublié [les miens{mien}] à la maison. | بلیت‌هایت را داری؟ من مال خودم را در خانه جا گذاشتم. | d: le mien, les miennes, la mienne
+Ton idée est meilleure que [la mienne]. | ایدهٔ تو از ایدهٔ من بهتر است. | d: le mien, les miennes, ma
+Ton téléphone ressemble beaucoup [au mien]. | گوشی‌ات خیلی شبیه گوشی من است. | d: à le mien, à la mienne, du mien
+Il pense souvent à sa famille, et moi, je pense [à la mienne]. | او (مرد) اغلب به خانواده‌اش فکر می‌کند، و من به خانوادهٔ خودم. | d: au mien, aux miennes, à le mien
+Je m'occupe de mes enfants, et elle s'occupe [des{des-contr} siens{sien}]. | من از بچه‌هایم مراقبت می‌کنم و او (زن) از بچه‌های خودش. | d: du sien, de la sienne, de les siens
+J'ai besoin de mon vélo, et Paul a besoin [du{du-contr} sien]. | من دوچرخه‌ام را لازم دارم و پل هم دوچرخهٔ خودش را. | d: de le sien, de la sienne, des siens
+Ce stylo est [à moi], tu peux me le rendre ? | این خودکار مال من است، می‌توانی پسش بدهی؟ | d: à je, de moi, mon | ok: le mien
+À qui sont ces gants ? Ils sont [à toi] ? | این دستکش‌ها مال کیست؟ مال توست؟ | d: à tu, de toi, tes | ok: les tiens
+Ce chien n'est pas à nous, il est [à eux]. | این سگ مال ما نیست، مال آن‌هاست. | d: à ils, d'eux, leur | ok: le leur, à elles
+Prends ma voiture, [la tienne] est au garage. | ماشین مرا ببر، مال تو در تعمیرگاه است. | d: le tien, les tiennes, ta
+Mes résultats sont bons, mais [les siens{sien}] sont excellents. | نتیجه‌هایم خوب‌اند، ولی نتیجه‌های او عالی‌اند. | d: le sien, la sienne, les siennes
+Nos vacances commencent en juillet. Quand commencent [les vôtres{vôtre}] ? | تعطیلات ما در ژوئیه شروع می‌شود. تعطیلات شما کی شروع می‌شود؟ | d: le vôtre, la vôtre, vos
+Je connais bien tes parents, mais je n'ai jamais vu [les siens{sien}]. | پدر و مادر تو را خوب می‌شناسم، ولی پدر و مادر او را هیچ‌وقت ندیده‌ام. | d: le sien, la sienne, ses
+Si tu n'as pas de stylo, je peux te prêter [le mien]. | اگر خودکار نداری، می‌توانم مال خودم را به تو قرض بدهم. | d: la mienne, les miens, mien
+Ils ont vendu leur maison, mais nous avons gardé [la nôtre]. | آن‌ها خانه‌شان را فروختند، ولی ما خانهٔ خودمان را نگه داشتیم. | d: le nôtre, les nôtres, notre
+Nous avons un jardin, mais [le leur] est beaucoup plus grand. | ما باغچه داریم، ولی باغچهٔ آن‌ها خیلی بزرگ‌تر است. | d: la leur, les leurs, leur
+Votre chambre est prête. [La leur] sera prête dans une heure. | اتاق شما آماده است. اتاق آن‌ها یک ساعت دیگر آماده می‌شود. | d: Le leur, Les leurs, Leur
+Ma mère et [la tienne] se connaissent depuis l'école. | مادر من و مادر تو از دوران مدرسه همدیگر را می‌شناسند. | d: le tien, les tiennes, ta
+Elle préfère mes gâteaux [aux siens{sien}]. | او (زن) کیک‌های مرا به کیک‌های خودش ترجیح می‌دهد. | d: à les siens, au sien, des siens
+C'est mon problème, pas [le tien] ! | مشکل من است، نه مال تو! | d: la tienne, les tiens, ton
+Ton chat est plus calme que [le nôtre]. | گربهٔ تو از گربهٔ ما آرام‌تر است. | d: la nôtre, les nôtres, notre
+Je suis content de mon travail. Et toi, tu es content [du{du-contr} tien] ? | من از کارم راضی‌ام. تو از کار خودت راضی هستی؟ | d: de le tien, de la tienne, des tiens
+Ta robe est jolie, mais je préfère [la sienne]. | پیراهن تو قشنگ است، ولی من مال او را ترجیح می‌دهم. | d: le sien, les siennes, sa
+Ces lunettes sont [les miennes{mienne}], mais ce livre n'est pas [le mien]. | این عینک مال من است، ولی این کتاب مال من نیست. | d: les miens, la mienne, le mien / la mienne, les miens, mon | ok: à moi / à moi
+Ma valise est noire, [la tienne] est rouge et [la sienne] est verte. | چمدان من سیاه است، مال تو قرمز و مال او سبز. | d: le tien, les tiennes, ta / le sien, les siennes, sa
+Votre fille et [la nôtre] sont dans la même classe, comme vos fils et [les nôtres{nôtre}]. | دختر شما و دختر ما در یک کلاس‌اند، پسرهای شما و پسرهای ما هم. | d: le nôtre, les nôtres, notre / le nôtre, la nôtre, nos
+Tu as ton passeport ? Moi, j'ai [le mien], mais Paul a oublié [le sien]. | پاسپورتت را داری؟ من مال خودم را دارم، ولی پل مال خودش را جا گذاشته. | d: la mienne, les miens, mon / la sienne, les siens, son
+Ce parapluie n'est pas [à moi], c'est [le tien] ? | این چتر مال من نیست، مال توست؟ | d: à je, de moi, mon / la tienne, les tiens, ton | ok: le mien / à toi
+Leurs enfants vont à l'école à pied, [les nôtres{nôtre}] prennent le bus, et [les vôtres{vôtre}] ? | بچه‌های آن‌ها پیاده به مدرسه می‌روند، بچه‌های ما با اتوبوس، بچه‌های شما چطور؟ | d: le nôtre, la nôtre, nos / le vôtre, la vôtre, vos
+transforms:
+C'est ma voiture. => C'est la mienne. | به‌جای «ma voiture» ضمیر ملکی بگذار.
+Ce sont tes livres. => Ce sont les tiens{tien}. | به‌جای «tes livres» ضمیر ملکی بگذار.
+C'est son vélo. => C'est le sien. | به‌جای «son vélo» ضمیر ملکی بگذار.
+Ce sont nos enfants. => Ce sont les nôtres{nôtre}. | به‌جای «nos enfants» ضمیر ملکی بگذار.
+C'est votre maison ? => C'est la vôtre ? | به‌جای «votre maison» ضمیر ملکی بگذار.
+Ce sont leurs valises. => Ce sont les leurs. | به‌جای «leurs valises» ضمیر ملکی بگذار.
+Ce stylo est à moi. => Ce stylo est le mien. ; C'est le mien. | جمله را با le mien بنویس.
+Ton idée ressemble à mon idée. => Ton idée ressemble à la mienne. | اسم تکراری را با ضمیر ملکی عوض کن.
+translations:
+این کتاب مال من است. => Ce livre est à moi. ; Ce livre est le mien. ; C'est mon livre.
+ماشین من قدیمی است، مال تو نو است. => Ma voiture est vieille, la tienne est neuve. ; Ma voiture est ancienne, la tienne est neuve. ; Ma voiture est vieille et la tienne est neuve. ; Ma voiture est ancienne et la tienne est neuve.
+کلیدهایت را پیدا کردم، ولی مال خودم را نه. => J'ai trouvé tes clés, mais pas les miennes{mienne}.
+خانهٔ ما از خانهٔ آن‌ها بزرگ‌تر است. => Notre maison est plus grande que la leur. ; Notre maison est plus grande que leur maison.
+این چتر مال توست؟ => Ce parapluie est à toi ? ; Est-ce que ce parapluie est à toi ? ; C'est ton parapluie ? ; Est-ce que c'est ton parapluie ? ; Ce parapluie est le tien ? ; Est-ce que ce parapluie est le tien ?
+پل پاسپورتش را جا گذاشت، ولی من مال خودم را دارم. => Paul a oublié son passeport, mais moi, j'ai le mien. ; Paul a oublié son passeport, mais j'ai le mien.
+بچه‌های شما با بچه‌های ما بازی می‌کنند. => Vos enfants jouent avec les nôtres{nôtre}. ; Vos enfants jouent avec nos enfants.
+گوشی‌ات شبیه گوشی من است. => Ton téléphone ressemble au mien. ; Ton portable ressemble au mien.

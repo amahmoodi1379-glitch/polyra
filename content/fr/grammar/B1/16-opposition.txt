@@ -1,0 +1,92 @@
+code: fr-b1-opposition
+title: تضاد: pourtant، alors que، malgré، même si، au lieu de
+scope: گفتن تضاد و «با این حال»: mais (مرور، و «بلکه» بعد از منفی)، pourtant و cependant، alors que و tandis que برای مقایسهٔ دو چیز یا دو آدم، par contre (گفتاری)، au lieu de + مصدر، malgré + اسم، و même si + indicatif (Même s'il pleut, je sors) و même si + imparfait با conditionnel؛ bien que با subjonctif در B2 می‌آید.
+can_do: حالا می‌توانی بگویی کاری را با وجود یک مشکل انجام می‌دهی و دو چیز را با هم مقایسه کنی: Malgré la pluie, nous sommes sortis. Paul aime la mer, alors que sa femme préfère la montagne.
+rule: malgré + اسم؛ même si + جملهٔ indicatif (هیچ‌وقت subjonctif، futur یا conditionnel بعد از même si نمی‌آید)؛ au lieu de + مصدر؛ pourtant، cependant، alors que، tandis que، par contre و mais + جمله.
+mistake: فارسی «با وجودِ» و «با اینکه» را هم جلوی اسم و هم جلوی جمله می‌گذارد، برای همین فارسی‌زبان‌ها می‌نویسند «Malgré il pleut, je sors»؛ درست: Malgré la pluie, je sors یا Même s'il pleut, je sors. بعد از même si هم مثل si آینده نمی‌آید: «Même s'il pleuvra» غلط است؛ درست: Même s'il pleut demain, je sortirai.
+lesson:
+در فارسی برای تضاد می‌گوییم «ولی، با این حال، در حالی که، با وجودِ، حتی اگر، به جای». فرانسوی برای هر کدام کلمهٔ خودش را دارد و مهم است بعدش چه بیاید: جمله، اسم یا مصدر.
+mais (ولی، اما) دو جمله را به هم وصل می‌کند: J'aime ce manteau, mais il est trop cher. بعد از جملهٔ منفی یعنی «بلکه»: Ce n'est pas mon frère, mais mon cousin.
+pourtant و cependant یعنی «با این حال»: چیزی که انتظارش را نداشتیم: Il a beaucoup révisé. Pourtant, il a raté son examen. cependant رسمی‌تر است و et pourtant در گفتار خیلی رایج است.
+alors que و tandis que یعنی «در حالی که» و دو آدم یا دو چیز را مقایسه می‌کنند: Paul aime la mer, alors que sa femme préfère la montagne.
+par contre یعنی «در عوض، از آن طرف» و بیشتر در گفتار می‌آید: Le centre-ville est beau. Par contre, il est difficile de garer sa voiture.
+malgré یعنی «با وجودِ» و بعدش فقط اسم یا ضمیر می‌آید: Malgré la pluie, nous sommes sortis. «malgré il pleut» غلط است.
+même si یعنی «حتی اگر» و بعدش جملهٔ معمولی (indicatif) می‌آید، نه subjonctif: Même si tu es fatigué, viens ! قبل از il و ils می‌شود s': même s'il pleut.
+بعد از même si هم مثل si آینده و conditionnel نمی‌آید: Même s'il pleut demain, je sortirai. برای فرضِ غیرواقعی: même si + imparfait و بعد conditionnel: Même si j'avais le temps, je n'irais pas.
+au lieu de یعنی «به جای» و بعدش مصدر می‌آید: Au lieu de regarder la télé, lis un livre. قبل از صدادار می‌شود au lieu d': au lieu d'attendre.
+bien que (با اینکه) هم هست، ولی subjonctif می‌خواهد و در B2 می‌آید.
+مواظب باش: malgré + اسم، même si + جمله، au lieu de + مصدر؛ اگر این‌ها را جابه‌جا کنی جمله غلط می‌شود.
+table:
+کلمه | معنی | بعدش | مثال
+mais | ولی، بلکه | جمله | Il est riche, mais il n'est pas heureux.
+pourtant، cependant | با این حال | جمله | Pourtant, il a raté son examen.
+alors que، tandis que | در حالی که | جمله | Paul aime la mer, alors que Léa préfère la montagne.
+par contre | در عوض (گفتاری) | جمله | Par contre, c'est cher.
+malgré | با وجودِ | اسم | malgré la pluie
+même si | حتی اگر | جمله (indicatif) | même si tu es fatigué
+au lieu de | به جای | مصدر | au lieu de regarder la télé
+examples:
+Malgré la pluie, nous avons fait une longue promenade. | با وجود باران، یک پیاده‌روی طولانی کردیم.
+Même si tu es fatigué, viens à la fête ! | حتی اگر خسته‌ای، به جشن بیا!
+Mon frère adore le sport, alors que moi, je préfère lire. | برادرم عاشق ورزش است، در حالی که من کتاب خواندن را ترجیح می‌دهم.
+Il a beaucoup révisé. Pourtant, il a raté son examen. | خیلی درس خواند. با این حال در امتحانش رد شد.
+Au lieu de prendre la voiture, prends ton vélo. | به جای ماشین، دوچرخه‌ات را بردار.
+targets:
+[Malgré] la pluie, nous sommes allés à la plage. | با وجود باران، به ساحل رفتیم. | d: Grâce à, Même si, Pourtant
+Il est venu travailler [malgré] sa fièvre. | با وجود تبش سر کار آمد. | d: grâce à, à cause de, même si
+[Malgré] ses efforts, Paul n'a pas réussi son examen. | با وجود همهٔ تلاشش، پل در امتحانش قبول نشد. | d: Grâce à, Même si, Alors que
+Nous avons passé une bonne soirée [malgré] le bruit. | با وجود سر و صدا، شب خوبی را گذراندیم. | d: même si, alors que, pourtant
+Elle sourit toujours [malgré] ses problèmes. | او (زن) با وجود مشکلاتش همیشه لبخند می‌زند. | d: grâce à, à cause de, même si
+[Malgré] le vent, les enfants jouent dehors. | با وجود باد، بچه‌ها بیرون بازی می‌کنند. | d: Même si, Alors que, Pourtant
+Le train est parti à l'heure [malgré] la neige. | قطار با وجود برف سر وقت حرکت کرد. | d: grâce à, à cause de, même si
+[Même si] tu es fatigué, tu dois finir ce travail. | حتی اگر خسته‌ای، باید این کار را تمام کنی. | d: Malgré, Au lieu de, Grâce à
+Je sortirai ce soir, [même si] tu n'es pas d'accord. | امشب بیرون می‌روم، حتی اگر تو موافق نباشی. | d: malgré, au lieu de, grâce à
+Même si tu [pars] maintenant, tu vas rater ton train. | حتی اگر الان راه بیفتی، به قطارت نمی‌رسی. | d: partes, partirais, partiras | hint: (partir)
+Même s'il [pleut] demain, nous ferons la fête dans le jardin. | حتی اگر فردا باران بیاید، جشن را در باغ می‌گیریم. | d: pleuve, pleuvrait, pleuvra | hint: (pleuvoir)
+[Même si] nous ne gagnons pas, nous serons contents de notre équipe. | حتی اگر نبریم، از تیممان راضی خواهیم بود. | d: Malgré, Au lieu de, Pourtant
+Même si elle [est] malade, elle va toujours au travail. | حتی وقتی مریض است، باز هم سر کار می‌رود. | d: soit, serait, sera | hint: (être)
+J'aime beaucoup ce manteau, [mais] il est trop cher. | این پالتو را خیلی دوست دارم، ولی زیادی گران است. | d: donc, car, en effet | ok: pourtant, cependant
+Je voulais venir, [mais] j'étais malade. | می‌خواستم بیایم، ولی مریض بودم. | d: donc, car, sinon | ok: cependant
+Ce n'est pas mon frère, [mais] mon cousin. | او برادرم نیست، بلکه پسرعمویم است. | d: donc, car, pourtant
+Il a beaucoup travaillé. [Pourtant], il a raté son examen. | خیلی درس خواند. با این حال در امتحانش رد شد. | d: Donc, En effet, Puisque | ok: Cependant, Mais
+Ce restaurant est toujours plein, [pourtant] les plats ne sont pas très bons. | این رستوران همیشه پر است، با این حال غذاهایش خیلی خوب نیستند. | d: donc, car, c'est-à-dire | ok: mais, cependant
+J'avais mis mon réveil, et [pourtant] je ne me suis pas réveillé. | ساعتم را کوک کرده بودم، با این حال بیدار نشدم. | d: donc, en effet, car | ok: cependant
+Le musée est gratuit le dimanche. [Cependant], il faut réserver. | موزه یکشنبه‌ها مجانی است. با این حال باید رزرو کرد. | d: En effet, Car, Grâce à | ok: Pourtant, Mais, Par contre
+Paul dit qu'il n'a pas faim. [Pourtant], il a mangé trois croissants ! | پل می‌گوید گرسنه نیست. با این حال سه تا کروسان خورده! | d: Donc, En effet, Car | ok: Cependant, Mais
+Paul aime la mer, [alors que] sa femme préfère la montagne. | پل دریا را دوست دارد، در حالی که همسرش کوهستان را ترجیح می‌دهد. | d: parce que, donc, pour que | ok: tandis que, mais, par contre
+Moi, je me lève à six heures, [tandis que] mon mari dort jusqu'à neuf heures. | من ساعت شش بیدار می‌شوم، در حالی که شوهرم تا ساعت نه می‌خوابد. | d: parce que, donc, afin que | ok: alors que, mais
+Il fait 30 degrés à Nice, [alors que] Paris est sous la neige. | در نیس هوا سی درجه است، در حالی که پاریس زیر برف است. | d: car, donc, afin que | ok: tandis que, mais
+Les enfants jouent au football, [alors que] demain ils ont un examen. | بچه‌ها فوتبال بازی می‌کنند، در حالی که فردا امتحان دارند. | d: parce que, donc, pour que | ok: tandis que, mais, même si
+Tout le monde dit que ce film est génial, [alors que] moi, je l'ai trouvé ennuyeux. | همه می‌گویند این فیلم محشر است، در حالی که من به نظرم کسل‌کننده بود. | d: parce que, donc, pour que | ok: tandis que, mais
+Le centre-ville est très beau. [Par contre], il est difficile de garer sa voiture. | مرکز شهر خیلی قشنگ است. در عوض پارک کردن ماشین سخت است. | d: En effet, Car, Grâce à | ok: Mais, Cependant, Pourtant
+Moi, je déteste le café. Ma sœur, [par contre], en boit cinq tasses par jour. | من از قهوه بدم می‌آید. در عوض خواهرم روزی پنج فنجان می‌خورد. | d: donc, en effet, car | ok: cependant
+Je ne parle pas allemand. [Par contre], je parle très bien italien. | من آلمانی بلد نیستم. در عوض ایتالیایی را خیلی خوب حرف می‌زنم. | d: Donc, En effet, Car | ok: Mais, Cependant
+[Au lieu de] regarder la télé, tu devrais lire un livre. | به جای تلویزیون دیدن، بهتر است کتاب بخوانی. | d: Malgré, Même si, Alors que
+Il est venu en voiture [au lieu de] prendre le train. | به جای اینکه با قطار بیاید، با ماشین آمد. | d: malgré, même si, tandis que
+Viens nous aider [au lieu de] rester sur ton téléphone ! | به جای اینکه سرت توی گوشی باشد، بیا کمکمان کن! | d: malgré, même si, alors que
+[Au lieu de] te plaindre, cherche une solution ! | به جای گله کردن، دنبال یک راه‌حل بگرد! | d: Malgré, Même si, Pourtant
+Même si j'[avais] le temps, je n'[irais] pas à cette fête. | حتی اگر وقت داشتم، به این جشن نمی‌رفتم. | d: aurais, aie, aurai / irai, aille, vais
+[Malgré] la pluie, le match a eu lieu, [mais] il y avait très peu de gens. | با وجود باران مسابقه برگزار شد، ولی آدم‌های خیلی کمی آمده بودند. | d: Grâce à, Même si, Pourtant / car, pour, grâce à | ok: Malgré / cependant, pourtant
+Mon frère est très sportif, [alors que] moi, je préfère rester à la maison [au lieu de] courir. | برادرم خیلی اهل ورزش است، در حالی که من ترجیح می‌دهم به جای دویدن در خانه بمانم. | d: parce que, donc, pour que / malgré, même si, pourtant | ok: tandis que, mais
+[Malgré] son âge, ma grand-mère fait du sport tous les jours, [alors que] moi, je ne bouge pas. | مادربزرگم با وجود سنش هر روز ورزش می‌کند، در حالی که من تکان نمی‌خورم. | d: Même si, Alors que, Pourtant / parce que, donc, pour que | ok: Malgré / tandis que, mais
+[Même si] le restaurant est cher, j'y vais souvent, [car] les plats sont très bons. | هرچند آن رستوران گران است، اغلب آنجا می‌روم، چون غذاهایش خیلی خوب است. | d: Malgré, Au lieu de, Grâce à / pour, pourtant, alors que | ok: Même si / parce que, puisque
+[Au lieu de] prendre l'avion, nous avons voyagé en train, [même si] c'était plus long. | به جای هواپیما با قطار سفر کردیم، هرچند طولانی‌تر بود. | d: Malgré, Même si, Alors que / malgré, au lieu de, grâce à | ok: Au lieu de / alors que
+Il fait beau. [Pourtant], Léa reste à la maison [au lieu de] sortir. | هوا خوب است. با این حال لئا به جای بیرون رفتن در خانه می‌ماند. | d: Donc, En effet, Car / malgré, même si, alors que | ok: Cependant, Mais
+transforms:
+Il pleut, mais nous sortons. => Malgré la pluie, nous sortons. ; Nous sortons malgré la pluie. | به‌جای جملهٔ اول، malgré + اسم بگذار.
+Paul était fatigué, mais il a continué. => Malgré sa fatigue, Paul a continué. ; Paul a continué malgré sa fatigue. | با malgré + اسم بنویس.
+Tu regardes la télé. Fais tes devoirs ! => Au lieu de regarder la télé, fais tes devoirs ! ; Fais tes devoirs au lieu de regarder la télé ! | دو جمله را با au lieu de به هم وصل کن.
+Paul aime le thé. Sa femme préfère le café. => Paul aime le thé, alors que sa femme préfère le café. ; Paul aime le thé, tandis que sa femme préfère le café. | دو جمله را با alors que یا tandis que وصل کن.
+Il a beaucoup travaillé, mais il a raté son examen. => Il a beaucoup travaillé. Pourtant, il a raté son examen. ; Il a beaucoup travaillé, pourtant il a raté son examen. ; Il a beaucoup travaillé, et pourtant il a raté son examen. | به‌جای mais، pourtant بگذار.
+Même s'il pleuvra demain, je sortirai. => Même s'il pleut demain, je sortirai. | جمله را درست کن.
+Malgré il fait froid, je sors. => Même s'il fait froid, je sors. | جمله را درست کن.
+Même si j'aurais de l'argent, je n'achèterais pas cette voiture. => Même si j'avais de l'argent, je n'achèterais pas cette voiture. | جمله را درست کن.
+translations:
+با وجود باران، مسابقه برگزار شد. => Malgré la pluie, le match a eu lieu. ; Le match a eu lieu malgré la pluie.
+حتی اگر خسته‌ای، بیا! => Même si tu es fatigué, viens ! ; Même si tu es fatiguée, viens !
+من چای دوست دارم، در حالی که برادرم قهوه را ترجیح می‌دهد. => J'aime le thé, alors que mon frère préfère le café. ; J'aime le thé, tandis que mon frère préfère le café. ; Moi, j'aime le thé, alors que mon frère préfère le café. ; Moi, j'aime le thé, tandis que mon frère préfère le café. ; J'aime le thé, mais mon frère préfère le café.
+به جای تلویزیون دیدن، کتاب بخوان! => Au lieu de regarder la télé, lis un livre ! ; Au lieu de regarder la télévision, lis un livre ! ; Lis un livre au lieu de regarder la télé ! ; Lis un livre au lieu de regarder la télévision !
+این پالتو خیلی گران است، با این حال می‌خرمش. => Ce manteau est très cher, pourtant je l'achète. ; Ce manteau est très cher. Pourtant, je l'achète. ; Ce manteau est très cher, et pourtant je l'achète. ; Ce manteau est très cher, cependant je l'achète. ; Ce manteau est très cher. Cependant, je l'achète. ; Ce manteau est très cher, mais je l'achète.
+حتی اگر فردا باران بیاید، بیرون می‌روم. => Même s'il pleut demain, je sors. ; Même s'il pleut demain, je sortirai. ; Même s'il pleut demain, je vais sortir. ; Je sors même s'il pleut demain. ; Je sortirai même s'il pleut demain. ; Je vais sortir même s'il pleut demain.
+پل با وجود خستگی‌اش به کار ادامه داد. => Malgré sa fatigue, Paul a continué à travailler. ; Paul a continué à travailler malgré sa fatigue. ; Malgré sa fatigue, Paul a continué de travailler. ; Paul a continué de travailler malgré sa fatigue.
+من آلمانی حرف نمی‌زنم، در عوض ایتالیایی حرف می‌زنم. => Je ne parle pas allemand. Par contre, je parle italien. ; Je ne parle pas allemand, par contre je parle italien. ; Je ne parle pas allemand, mais je parle italien. ; Je ne parle pas allemand. Mais je parle italien.

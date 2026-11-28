@@ -1,0 +1,92 @@
+code: fr-b1-subjonctif-conjonctions
+title: حرف‌های ربط با subjonctif: avant que، sans que، jusqu'à ce que
+scope: حرف‌های ربطی که subjonctif می‌خواهند: avant que (در برابر avant de + مصدر)، sans que (در برابر sans + مصدر)، jusqu'à ce que، à condition que و en attendant que؛ با فاعل یکسان مصدر؛ après que فقط به‌عنوان استثنا (با indicatif) گفته می‌شود و تمرین ندارد. bien que و quoique در B2 می‌آیند.
+can_do: حالا می‌توانی ترتیب کارها، شرط و انتظار را با subjonctif بگویی: Je veux te parler avant que tu partes. Attends jusqu'à ce que je revienne. Tu peux venir à condition que tu sois à l'heure.
+rule: avant que، sans que، jusqu'à ce que، à condition que و en attendant que + subjonctif؛ با فاعل یکسان avant de / sans + مصدر (avant de partir، sans dire bonjour)؛ après que برعکس indicatif می‌خواهد.
+mistake: فارسی‌زبان‌ها چون می‌گویند «قبل از اینکه بخورم»، برای خودشان هم avant que می‌آورند («je me lave les mains avant que je mange»)؛ درست: avant de manger. بعد از jusqu'à ce que و à condition que هم گاهی فعل معمولی می‌آورند («jusqu'à ce que tu reviens»)؛ درست: jusqu'à ce que tu reviennes.
+lesson:
+در فارسی بعد از «قبل از اینکه»، «بدون اینکه»، «تا وقتی که» و «به شرطی که» فعل التزامی می‌آید: «قبل از اینکه بروی»، «به شرطی که بیایی». فرانسوی هم بعد از همین حرف‌های ربط subjonctif می‌آورد.
+avant que (قبل از اینکه): Je veux te parler avant que tu partes.
+sans que (بدون اینکه): Il est parti sans que nous le sachions.
+jusqu'à ce que (تا وقتی که، تا اینکه): Je resterai ici jusqu'à ce que tu reviennes.
+à condition que (به شرطی که): Je te prête ma voiture à condition que tu sois prudent.
+en attendant que (تا وقتی که، تا آن موقع): On boit un café en attendant que le magasin ouvre.
+با فاعل یکسان مصدر می‌آید: avant de + مصدر (Lave-toi les mains avant de manger)، sans + مصدر (Il est entré sans dire bonjour). «je mange avant que je parte» غلط است؛ درست: je mange avant de partir.
+que پیش از صدادار qu' می‌شود: avant qu'il parte، jusqu'à ce qu'elle revienne، sans qu'on le sache.
+زمان جملهٔ اول هر چه باشد، subjonctif présent می‌آید: Nous avons marché jusqu'à ce que la nuit tombe.
+در نوشتهٔ رسمی گاهی بعد از avant que یک ne می‌بینی (avant qu'il ne parte)؛ این ne منفی نیست و لازم هم نیست.
+فقط بدان: après que (بعد از اینکه) برعکس، فعل معمولی (indicatif) می‌خواهد: Il est arrivé après que tu es parti.
+مواظب باش: بعد از این حرف‌های ربط فعل معمولی نیاور؛ «avant que tu pars» غلط است و درستش avant que tu partes است.
+table:
+حرف ربط | معنی | با فاعل یکسان | مثال
+avant que | قبل از اینکه | avant de + مصدر | Je mange avant que tu partes. / Je mange avant de partir.
+sans que | بدون اینکه | sans + مصدر | Il part sans que je le sache. / Il part sans dire au revoir.
+jusqu'à ce que | تا وقتی که | — | Attends jusqu'à ce que je revienne.
+à condition que | به شرطی که | — | Tu peux venir à condition que tu sois à l'heure.
+en attendant que | تا آن موقع که | — | Lis un peu en attendant que je finisse.
+après que | بعد از اینکه | indicatif | Il est arrivé après que tu es parti.
+examples:
+Téléphone-moi avant que je parte. | قبل از اینکه بروم به من زنگ بزن.
+Il est sorti sans que je le voie{voir}. | بدون اینکه من ببینمش بیرون رفت.
+Attends ici jusqu'à ce que je revienne. | همین‌جا صبر کن تا برگردم.
+Tu peux venir à condition que tu sois à l'heure. | می‌توانی بیایی به شرطی که سر وقت باشی.
+Mange quelque chose avant de partir. | قبل از رفتن چیزی بخور.
+targets:
+Rentrons avant qu'il [fasse] nuit. | تا هوا تاریک نشده برگردیم. | d: fait, faire, fera | hint: (faire)
+Je veux te parler avant que tu [partes]. | می‌خواهم قبل از اینکه بروی با تو حرف بزنم. | d: pars, partir, partiras | hint: (partir)
+Range ta chambre avant que tes parents [reviennent]. | قبل از اینکه پدر و مادرت برگردند اتاقت را مرتب کن. | d: revenir, reviendront, revenaient | hint: (revenir)
+On doit finir avant que le directeur [arrive]. | باید قبل از اینکه مدیر برسد کار را تمام کنیم. | d: arriver, arrivait, arrivera | hint: (arriver)
+Achète du pain avant que la boulangerie [ferme]{fermer}. | قبل از اینکه نانوایی ببندد نان بخر. | d: fermer, fermait, fermera | hint: (fermer)
+Je vais prendre une douche avant que les invités [soient] là. | قبل از اینکه مهمان‌ها برسند دوش می‌گیرم. | d: sont, être, seront | hint: (être)
+Lave-toi les mains avant de [manger]. | قبل از غذا خوردن دست‌هایت را بشوی. | d: manges, mange, mangions | hint: (manger)
+Il a réfléchi longtemps [avant de] répondre. | او (مرد) قبل از جواب دادن مدت زیادی فکر کرد. | d: avant que, sans que, jusqu'à ce que
+Couvre le plat [avant que] le chat le mange. | قبل از اینکه گربه غذا را بخورد رویش را بپوشان. | d: avant de, sans, jusqu'à
+Il est parti sans que nous le [sachions]. | او (مرد) بدون اینکه ما بدانیم رفت. | d: savons, savoir, saurons | hint: (savoir)
+Elle sort le soir sans que ses parents la [voient]{voir}. | او (زن) شب‌ها بیرون می‌رود بدون اینکه پدر و مادرش بفهمند. | d: voir, voyiez, verront | hint: (voir)
+Je ne peux pas parler sans que tu m'[interrompes]. | نمی‌توانم حرف بزنم بدون اینکه حرفم را قطع کنی. | d: interromps, interrompre, interrompras | hint: (interrompre)
+Il est entré [sans] dire bonjour. | بدون اینکه سلام کند وارد شد. | d: sans que, avant que, jusqu'à ce que
+Le voleur est entré [sans qu']on l'entende. | دزد وارد شد بدون اینکه کسی صدایش را بشنود. | d: sans, avant d', jusqu'à
+Il a traversé la rue sans [regarder]. | بدون اینکه نگاه کند از خیابان رد شد. | d: regarde, regardes, regardions | hint: (regarder)
+Je resterai ici jusqu'à ce que tu [reviennes]. | تا وقتی برگردی همین‌جا می‌مانم. | d: reviens, revenir, reviendras | hint: (revenir)
+Attends ici jusqu'à ce que le médecin t'[appelle]. | همین‌جا صبر کن تا پزشک صدایت کند. | d: appeler, appelait, appellera | hint: (appeler)
+Nous avons marché jusqu'à ce que la nuit [tombe]. | آن‌قدر راه رفتیم تا شب شد. | d: tomber, tombait, tombera | hint: (tomber)
+Le bébé pleure jusqu'à ce que sa mère le [prenne] dans ses bras. | بچه گریه می‌کند تا مادرش بغلش کند. | d: prend, prendre, prendra | hint: (prendre)
+Je vais lire [en attendant que] tu sois prêt. | تا تو آماده شوی، کتاب می‌خوانم. | d: avant de, sans, jusqu'à | ok: jusqu'à ce que
+Je te prête ma voiture à condition que tu [sois] prudent. | ماشینم را به تو قرض می‌دهم به شرطی که مواظب باشی. | d: es, être, seras | hint: (être)
+Tu peux sortir à condition que tu [rentres] avant minuit. | می‌توانی بیرون بروی به شرطی که قبل از نیمه‌شب برگردی. | d: rentrer, rentrais, rentreras | hint: (rentrer)
+On ira à la plage à condition qu'il [fasse] beau. | به ساحل می‌رویم به شرطی که هوا خوب باشد. | d: fait, faire, fera | hint: (faire)
+J'accepte [à condition que] vous payiez la moitié. | قبول می‌کنم به شرطی که نصفش را شما بدهید. | d: avant de, sans, pour
+On boit un café en attendant que le magasin [ouvre]. | تا مغازه باز شود یک قهوه می‌خوریم. | d: ouvrir, ouvrait, ouvrira | hint: (ouvrir)
+Je lis un livre en attendant que mon frère [finisse] ses devoirs{devoir-noun}. | تا برادرم تکلیف‌هایش را تمام کند کتاب می‌خوانم. | d: finit, finir, finira | hint: (finir)
+En attendant que tu [trouves] un appartement, tu peux dormir chez nous. | تا وقتی آپارتمان پیدا کنی، می‌توانی خانهٔ ما بخوابی. | d: trouver, trouvais, trouveras | hint: (trouver)
+Je dois partir avant que la réunion [commence]. | باید قبل از شروع جلسه بروم. | d: commencer, commençait, commencera | hint: (commencer)
+Dis-lui la vérité avant qu'il [soit] trop tard. | قبل از اینکه خیلی دیر شود حقیقت را به او بگو. | d: est, être, sera
+Elle a fini le projet sans que son chef l'[aide]. | او (زن) پروژه را تمام کرد بدون اینکه رئیسش کمکش کند. | d: aider, aidait, aidera | hint: (aider)
+Je ne partirai pas avant que tu [ailles] mieux. | تا حالت بهتر نشود نمی‌روم. | d: vas, aller, iras | hint: (aller)
+Les enfants peuvent jouer dehors à condition qu'ils [mettent] un manteau. | بچه‌ها می‌توانند بیرون بازی کنند به شرطی که پالتو بپوشند. | d: mettre, mettront, mettaient | hint: (mettre)
+Je prépare le dîner en attendant que vous [veniez]. | تا شما بیایید شام را آماده می‌کنم. | d: venez, venir, viendrez | hint: (venir)
+Finis tes devoirs{devoir-noun} [avant de] sortir, et rentre [avant qu']il fasse nuit. | قبل از بیرون رفتن تکلیف‌هایت را تمام کن و قبل از اینکه هوا تاریک شود برگرد. | d: avant que, sans que, jusqu'à ce que / avant d', sans, jusqu'à
+Il est parti [sans] dire au revoir et [sans que] personne{personne-pron} le remarque. | او (مرد) بدون خداحافظی رفت، بی‌آنکه کسی متوجه شود. | d: sans que, avant que, jusqu'à ce que / sans, avant de, pour
+Je resterai jusqu'à ce que tu [dormes], à condition que tu [fermes] les yeux. | می‌مانم تا خوابت ببرد، به شرطی که چشم‌هایت را ببندی. | d: dors, dormir, dormiras / fermer, fermais, fermeras
+Il faut réserver [avant que] l'hôtel [soit] complet. | باید قبل از اینکه هتل پر شود رزرو کرد. | d: avant de, sans, jusqu'à / est, être, sera
+Mets la table en attendant que le gâteau [cuise] et que les invités [arrivent]. | تا کیک بپزد و مهمان‌ها برسند، میز را بچین. | d: cuit, cuire, cuira / arriver, arrivaient, arriveront
+On sortira à condition que tu [puisses] venir et qu'il [fasse] beau. | بیرون می‌رویم به شرطی که تو بتوانی بیایی و هوا خوب باشد. | d: peux, pouvoir, pourras / fait, faire, fera
+Appelle-moi [avant de] partir, [avant que] je me couche. | قبل از رفتن به من زنگ بزن، قبل از اینکه بخوابم. | d: avant que, sans que, jusqu'à ce que / avant de, sans, jusqu'à
+transforms:
+Tu pars. Avant, je veux te voir. => Je veux te voir avant que tu partes. | با avant que یک جمله بساز.
+Je mange, puis je pars. => Je mange avant de partir. | با avant de یک جمله بساز.
+Il est parti. Nous ne le savions pas. => Il est parti sans que nous le sachions. ; Il est parti sans qu'on le sache. | با sans que یک جمله بساز.
+Il est entré. Il n'a pas dit bonjour. => Il est entré sans dire bonjour. | با sans + مصدر یک جمله بساز.
+Attends ici. Je reviens. => Attends ici jusqu'à ce que je revienne. | با jusqu'à ce que یک جمله بساز.
+Je te prête mon vélo si tu fais attention. => Je te prête mon vélo à condition que tu fasses attention. | به‌جای si، à condition que بیاور.
+Le magasin ouvre bientôt. On boit un café. => On boit un café en attendant que le magasin ouvre. ; En attendant que le magasin ouvre, on boit un café. | با en attendant que یک جمله بساز.
+Je veux te parler avant de partir. => Je veux te parler avant que tu partes. | جمله را طوری بنویس که «تو» بروی.
+translations:
+قبل از اینکه بروی به من زنگ بزن. => Appelle-moi avant de partir. ; Téléphone-moi avant de partir.
+او (زن) بدون اینکه کسی ببیند بیرون رفت. => Elle est sortie sans que personne{personne-pron} la voie{voir}. ; Elle est partie sans que personne{personne-pron} la voie{voir}.
+همین‌جا صبر کن تا برگردم. => Attends ici jusqu'à ce que je revienne. ; Attends-moi ici jusqu'à ce que je revienne.
+می‌توانی بیایی به شرطی که سر وقت باشی. => Tu peux venir à condition que tu sois à l'heure.
+قبل از غذا خوردن دست‌هایت را بشوی. => Lave-toi les mains avant de manger. ; Lave tes mains avant de manger.
+تا وقتی آپارتمان پیدا کنی، می‌توانی پیش ما بمانی. => Tu peux rester chez nous jusqu'à ce que tu trouves un appartement. ; Jusqu'à ce que tu trouves un appartement, tu peux rester chez nous. ; Tu peux rester chez nous en attendant que tu trouves un appartement. ; En attendant que tu trouves un appartement, tu peux rester chez nous. ; Tu peux rester chez nous en attendant de trouver un appartement.
+قبل از اینکه خیلی دیر شود، برگردیم. => Rentrons avant qu'il soit trop tard. ; Rentrons avant qu'il ne soit trop tard.
+او (مرد) بدون خداحافظی رفت. => Il est parti sans dire au revoir.

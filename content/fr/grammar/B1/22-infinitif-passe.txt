@@ -1,0 +1,91 @@
+code: fr-b1-infinitif-passe
+title: «بعد از … کردن»: après avoir mangé، après être arrivée
+scope: مصدر گذشته بعد از après: après avoir + اسم مفعول (Après avoir mangé, il est sorti) و après être + اسم مفعول با جور شدن (après être arrivée، après être rentrés)، فعل‌های ضمیری (après s'être levé، après nous être promenés)، جای ضمیر مفعولی (après l'avoir lu)، فقط وقتی فاعل دو بخش یکی است، sans avoir + اسم مفعول (sans avoir payé)، و یادآوری avant de + مصدر و sans + مصدر؛ après que فقط اشاره‌ای است.
+can_do: حالا می‌توانی بگویی بعد از انجام دادن یک کار چه کردی: Après avoir fini mon travail, je suis rentré. Après être arrivée, elle a appelé sa mère. Il est parti sans dire au revoir.
+rule: après avoir + اسم مفعول (après avoir mangé)؛ با فعل‌های être و فعل‌های ضمیری: après être + اسم مفعولِ جورشده (après être arrivée، après s'être levé)؛ فاعل هر دو بخش یکی است.
+mistake: فارسی بعد از «بعد از» اسم مصدر ساده می‌آورد («بعد از تمام کردن»، «بعد از رسیدن»)، برای همین فارسی‌زبان‌ها می‌گویند «après finir le travail» یا «après arriver»؛ درست: après avoir fini le travail، après être arrivé. فاعل را هم عوض نکن: «Après avoir mangé, le téléphone a sonné» یعنی تلفن غذا خورده است؛ درست: Après avoir mangé, j'ai entendu le téléphone.
+lesson:
+فارسی بعد از «بعد از» اسم مصدر می‌آورد: «بعد از خوردن»، «بعد از رسیدن». فرانسوی بعد از après مصدر ساده نمی‌گذارد؛ مصدر گذشته می‌خواهد: après avoir یا après être + اسم مفعول.
+Après avoir mangé, il est sorti (بعد از غذا خوردن، بیرون رفت). «après finir» و «après arriver» غلط‌اند.
+avoir یا être؟ درست مثل passé composé: فعل‌هایی که با être می‌آیند (aller، venir، partir، arriver، rentrer، sortir، rester، devenir …) اینجا هم être می‌گیرند: après être arrivé.
+با être، اسم مفعول با فاعلِ جملهٔ اصلی جور می‌شود: Après être arrivée, Marie a appelé sa mère. Après être rentrés, ils ont mangé.
+در فعل‌های ضمیری، ضمیر با فاعل عوض می‌شود: après m'être levé، après nous être promenés، après s'être disputés.
+ضمیر مفعولی پیش از avoir یا être می‌آید: après l'avoir lu، après lui avoir parlé. اگر ضمیر مفعولی مستقیم مؤنث یا جمع باشد، اسم مفعول مثل passé composé جور می‌شود: après l'avoir cherchée.
+فاعل دو بخش باید یکی باشد: Après avoir fini, j'ai appelé Paul (من تمام کردم و من زنگ زدم). اگر فاعل‌ها فرق دارند، après que + یک جملهٔ کامل لازم است: Après que tu es parti, j'ai dormi.
+یک اشتباه بامزه: «Après avoir mangé, le téléphone a sonné» یعنی تلفن غذا خورده! بگو: Après avoir mangé, j'ai entendu le téléphone.
+یادآوری: avant de + مصدر ساده (Avant de partir, ferme la porte) و sans + مصدر (Il est parti sans dire au revoir).
+بعد از sans هم می‌شود مصدر گذشته آورد، برای کاری که باید پیش‌تر انجام می‌شد: Il est parti sans avoir payé (رفت، بی‌آنکه پول بدهد).
+après + اسم هم مثل A2 درست است: après le repas یعنی همان après avoir mangé.
+مواظب باش: بعد از après فعل دو تکه است (avoir یا être + اسم مفعول)، ولی بعد از avant de فقط مصدر می‌آید: avant de partir، après être parti.
+table:
+ساخت | بعدش | مثال
+après | avoir + اسم مفعول | après avoir mangé
+après | être + اسم مفعولِ جورشده | après être arrivée
+après | ضمیر + être + اسم مفعول | après nous être levés
+sans | مصدر یا avoir + اسم مفعول | sans dire، sans avoir payé
+avant de | مصدر | avant de partir
+examples:
+Après avoir mangé, il est sorti. | بعد از غذا خوردن، بیرون رفت.
+Après être arrivée, elle a appelé{appeler} sa mère. | بعد از رسیدن، به مادرش زنگ زد.
+Après nous être levés, nous avons pris le petit-déjeuner. | بعد از بیدار شدن، صبحانه خوردیم.
+Avant de partir, ferme la porte à clé. | قبل از رفتن، در را قفل کن.
+Il est parti sans dire au revoir. | بدون خداحافظی رفت.
+targets:
+Après [avoir fini] ses devoirs, Lucas est allé jouer au foot. | لوکاس بعد از تمام کردن تکلیف‌هایش رفت فوتبال بازی کند. | d: être fini, finir, avoir finit | ok: avoir terminé | hint: (finir)
+Après [avoir fait] la vaisselle, nous sommes allés nous promener. | بعد از شستن ظرف‌ها، رفتیم قدم بزنیم. | d: être fait, faire, avoir faite | hint: (faire)
+Après [avoir lu] ce livre, j'ai eu envie de visiter l'Italie. | بعد از خواندن این کتاب، دلم خواست به ایتالیا سفر کنم. | d: être lu, lire, avoir lit | hint: (lire)
+Elle a pris une douche après [avoir couru] dix kilomètres. | بعد از ده کیلومتر دویدن، دوش گرفت. | d: être couru, courir, avoir couri | hint: (courir)
+Après [avoir vu] le film, ils en ont parlé pendant des heures. | بعد از دیدن فیلم، ساعت‌ها درباره‌اش حرف زدند. | d: être vu, voir, avoir vus | ok: avoir regardé | hint: (voir)
+Après [avoir payé], nous sommes sortis du restaurant. | بعد از پرداخت پول، از رستوران بیرون آمدیم. | d: être payé, payer, avoir payés | hint: (payer)
+Il s'est senti mieux après [avoir pris] ses médicaments. | بعد از خوردن داروهایش حالش بهتر شد. | d: être pris, prendre, avoir prendu | hint: (prendre)
+Après [avoir travaillé] dix ans à Paris, Sara est rentrée en Iran. | سارا بعد از ده سال کار در پاریس به ایران برگشت. | d: être travaillée, travailler, avoir travaillée | hint: (travailler)
+Après [avoir entendu] la nouvelle, elle a appelé{appeler} toute sa famille. | بعد از شنیدن خبر، به همهٔ خانواده‌اش زنگ زد. | d: être entendu, entendre, avoir entendue | hint: (entendre)
+Après [être arrivée] à l'hôtel, Marie a appelé{appeler} sa mère. | ماری بعد از رسیدن به هتل به مادرش زنگ زد. | d: avoir arrivé, être arrivé, être arrivées | hint: (arriver)
+Après [être rentrés] du travail, mes parents regardent souvent la télé. | پدر و مادرم بعد از برگشتن از سر کار، اغلب تلویزیون تماشا می‌کنند. | d: avoir rentré, être rentré, être rentrées | hint: (rentrer)
+Après [être sortie] de l'hôpital, ma grand-mère est venue vivre chez nous. | مادربزرگم بعد از مرخص شدن از بیمارستان آمد پیش ما زندگی کند. | d: avoir sorti, être sorti, être sorties | hint: (sortir)
+Après [être allés] au marché, nous avons préparé un grand repas. | بعد از رفتن به بازار، یک غذای مفصل درست کردیم. | d: avoir allés, être allé, aller | ok: être allées | hint: (aller)
+Après [être restée] trois jours au lit, Julie va beaucoup mieux. | ژولی بعد از سه روز ماندن در رختخواب، حالش خیلی بهتر است. | d: avoir resté, être resté, rester | hint: (rester)
+Après [être devenu] père, Thomas a changé de travail. | توما بعد از پدر شدن، کارش را عوض کرد. | d: avoir devenu, être devenue, devenir | hint: (devenir)
+Après [s'être levé], Paul a bu un café. | پل بعد از بیدار شدن یک قهوه نوشید. | d: s'avoir levé, se être levé, s'être levée | hint: (se lever)
+Après [nous être promenés], nous sommes rentrés à la maison. | بعد از قدم زدن، به خانه برگشتیم. | d: s'être promenés, nous avoir promenés, nous être promené | hint: (se promener)
+Après [s'être disputés], les deux frères ne se parlaient plus. | آن دو برادر بعد از دعوا دیگر با هم حرف نمی‌زدند. | d: s'avoir disputés, se être disputés, s'être disputé | hint: (se disputer)
+Après [m'être reposé] un peu, j'ai repris le travail. | بعد از کمی استراحت، دوباره کارم را شروع کردم. | d: m'avoir reposé, s'être reposé, me être reposé | ok: m'être reposée | hint: (se reposer)
+Après [l'avoir lu], je t'ai rendu ton livre. | بعد از اینکه خواندمش، کتابت را پس دادم. | d: avoir le lu, le avoir lu, l'avoir lue | hint: (lire)
+Après [l'avoir cherchée] partout, j'ai enfin retrouvé ma clé. | بعد از اینکه همه‌جا دنبالش گشتم، بالاخره کلیدم را پیدا کردم. | d: avoir la cherchée, la avoir cherchée, l'être cherchée | hint: (chercher)
+Je les ai trouvés très sympas après [les avoir rencontrés]. | بعد از آشنایی با آن‌ها، به نظرم خیلی خوش‌برخورد آمدند. | d: avoir les rencontrés, les être rencontrés, leur avoir rencontrés | hint: (rencontrer)
+Après [lui avoir parlé], je me suis{être} senti beaucoup mieux. | بعد از حرف زدن با او، حالم خیلی بهتر شد. | d: avoir lui parlé, lui être parlé, l'avoir parlé | hint: (parler)
+[Avant de] partir, n'oublie pas de fermer la fenêtre. | قبل از رفتن، یادت نرود پنجره را ببندی. | d: Avant, Avant que, Après de
+Lave-toi les mains [avant de] manger. | قبل از غذا خوردن دست‌هایت را بشوی. | d: avant, avant que, avant à
+Il est parti [sans] dire au revoir. | بدون خداحافظی رفت. | d: sans de, sans que, sans à
+Je ne pars jamais en voyage [sans] vérifier mon passeport. | هیچ‌وقت بدون چک کردن گذرنامه‌ام به سفر نمی‌روم. | d: sans de, sans que, sans à
+Il est parti [sans avoir payé] l'addition. | بدون اینکه صورت‌حساب را بپردازد رفت. | d: sans être payé, sans payé, sans avoir payée | ok: sans payer | hint: (payer)
+Tu ne peux pas partir [sans avoir dit] au revoir à ta grand-mère ! | نمی‌توانی بدون خداحافظی با مادربزرگت بروی! | d: sans être dit, sans avoir dire, sans avoir dite | ok: sans dire | hint: (dire)
+Après [avoir visité] le musée, vous pourrez déjeuner au restaurant du parc. | بعد از بازدید از موزه، می‌توانید در رستوران پارک ناهار بخورید. | d: être visité, visiter, avoir visités | hint: (visiter)
+Après [avoir perdu] son travail, il a ouvert un restaurant avec un ami. | بعد از اینکه کارش را از دست داد، با یک دوست رستورانی باز کرد. | d: être perdu, perdre, avoir perdus | hint: (perdre)
+Après [avoir écouté] la météo, nous avons décidé de rester à la maison. | بعد از گوش دادن به پیش‌بینی هوا، تصمیم گرفتیم خانه بمانیم. | d: être écouté, écouter, avoir écoutée | ok: avoir entendu | hint: (écouter)
+Après [avoir attendu] une heure, nous sommes partis. | بعد از یک ساعت انتظار، رفتیم. | d: être attendu, attendre, avoir attendus | hint: (attendre)
+Après [avoir mangé], il a fait la vaisselle [avant de] partir. | بعد از غذا خوردن، پیش از رفتن ظرف‌ها را شست. | d: être mangé, avoir mangés, ayant mangé / avant, avant que, après de
+Hier soir, elle s'est endormie{s'endormir} [sans] éteindre la lumière, juste après [s'être couchée]. | دیشب درست بعد از اینکه به رختخواب رفت، بدون خاموش کردن چراغ خوابش برد. | d: sans de, sans que, sans à / s'avoir couchée, s'être couché, se être couchée
+Après [être arrivés] à Paris, nous avons cherché un hôtel [sans] perdre de temps. | بعد از رسیدن به پاریس، بی‌معطلی دنبال هتل گشتیم. | d: avoir arrivés, être arrivé, arriver / sans de, sans que, sans à | ok: être arrivées / sans
+Après [s'être reposés], les enfants [ont recommencé à] jouer. | بچه‌ها بعد از استراحت، دوباره شروع کردند به بازی. | d: s'avoir reposés, s'être reposé, se être reposés / ont recommencé, sont recommencés à, ont recommencé en
+Elle a dit oui [sans] hésiter, juste après [avoir lu] le contrat. | درست بعد از خواندن قرارداد، بی‌معطلی گفت بله. | d: sans de, sans que, sans à / être lu, lire, avoir lit
+Après [être sortis] du cinéma, nous [sommes allés] manger une pizza. | بعد از بیرون آمدن از سینما، رفتیم پیتزا بخوریم. | d: avoir sortis, être sorti, sortir / avons allés, sommes allé, sommes aller | ok: être sorties / sommes allées
+Prends ton parapluie [avant de] sortir, et ne pars pas [sans] ta veste. | قبل از بیرون رفتن چترت را بردار، و بدون کتت نرو. | d: avant, avant que, après de / sans de, sans que, sans à
+transforms:
+Il a mangé, puis il est sorti. => Après avoir mangé, il est sorti. | دو جمله را با après + مصدر گذشته یکی کن.
+Elle est arrivée, puis elle a appelé{appeler} sa mère. => Après être arrivée, elle a appelé{appeler} sa mère. | دو جمله را با après + مصدر گذشته یکی کن.
+Nous nous sommes levés, puis nous avons pris un café. => Après nous être levés, nous avons pris un café. | دو جمله را با après + مصدر گذشته یکی کن.
+J'ai lu le livre, puis je l'ai rendu. => Après avoir lu le livre, je l'ai rendu. | دو جمله را با après + مصدر گذشته یکی کن.
+Ils sont rentrés, puis ils ont mangé. => Après être rentrés, ils ont mangé. | دو جمله را با après + مصدر گذشته یکی کن.
+Il est parti et il n'a pas payé. => Il est parti sans payer. ; Il est parti sans avoir payé. | با sans بگو.
+Elle ferme la porte, puis elle part. => Avant de partir, elle ferme la porte. ; Elle ferme la porte avant de partir. | با avant de بگو.
+Après finir le travail, je suis{être} rentré. => Après avoir fini le travail, je suis{être} rentré. | غلط جمله را درست کن.
+translations:
+بعد از تمام کردن کارم، به خانه برگشتم. => Après avoir fini mon travail, je suis{être} rentré à la maison. ; Après avoir fini mon travail, je suis{être} rentrée à la maison. ; Après avoir terminé mon travail, je suis{être} rentré à la maison. ; Après avoir terminé mon travail, je suis{être} rentrée à la maison. ; Après avoir fini mon travail, je suis{être} rentré chez moi. ; Après avoir fini mon travail, je suis{être} rentrée chez moi. ; Après avoir terminé mon travail, je suis{être} rentré chez moi. ; Après avoir terminé mon travail, je suis{être} rentrée chez moi.
+او (زن) بعد از رسیدن به هتل به مادرش زنگ زد. => Après être arrivée à l'hôtel, elle a appelé{appeler} sa mère. ; Après être arrivée à l'hôtel, elle a téléphoné à sa mère.
+قبل از رفتن، در را ببند. => Avant de partir, ferme la porte. ; Ferme la porte avant de partir.
+او (مرد) بدون خداحافظی رفت. => Il est parti sans dire au revoir. ; Il est parti sans avoir dit au revoir.
+او (مرد) بعد از بیدار شدن یک قهوه نوشید. => Après s'être levé, il a bu un café. ; Après s'être levé, il a pris un café. ; Il a bu un café après s'être levé. ; Il a pris un café après s'être levé. ; Après s'être réveillé, il a bu un café. ; Après s'être réveillé, il a pris un café. ; Il a bu un café après s'être réveillé. ; Il a pris un café après s'être réveillé.
+بعد از دیدن فیلم، درباره‌اش حرف زدیم. => Après avoir vu le film, nous en avons parlé. ; Après avoir vu le film, on en a parlé. ; Après avoir regardé le film, nous en avons parlé. ; Après avoir regardé le film, on en a parlé.
+او (زن) بدون پول دادن رفت. => Elle est partie sans payer. ; Elle est partie sans avoir payé.
+بعد از خواندنش، کتاب را به تو پس دادم. => Après l'avoir lu, je t'ai rendu le livre. ; Je t'ai rendu le livre après l'avoir lu.

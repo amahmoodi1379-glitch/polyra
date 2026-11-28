@@ -1,0 +1,89 @@
+code: fr-b1-but
+title: هدف: pour / afin de + مصدر، pour que / afin que + subjonctif
+scope: گفتن هدف: pour و afin de + مصدر وقتی فاعل یکی است (Je travaille pour gagner de l'argent)، pour que و afin que + subjonctif وقتی فاعل دوم کس دیگری است (Je parle lentement pour que tu comprennes)، منفی آن‌ها (pour ne pas oublier، pour que tu n'aies pas froid) و فرق pour que با parce que؛ ساختارهای دیگر هدف (de façon à، de sorte que) در این سطح نمی‌آیند.
+can_do: حالا می‌توانی بگویی کاری را برای چه می‌کنی، برای خودت یا برای دیگری: Je travaille pour payer mes études. Je parle lentement pour que tu comprennes.
+rule: فاعل یکی: pour / afin de + مصدر (pour partir، afin d'arriver)؛ فاعل دیگر: pour que / afin que + subjonctif (pour que tu partes)؛ منفی: pour ne pas + مصدر، pour que … ne … pas.
+mistake: فارسی بعد از «تا» همیشه فعل صرف‌شده می‌آورد («کار می‌کنم تا پول دربیاورم»)، برای همین فارسی‌زبان‌ها با فاعل یکسان هم pour que می‌گویند («je travaille pour que je gagne») یا بعد از pour que فعل معمولی می‌آورند («pour que tu comprends»)؛ درست: je travaille pour gagner، pour que tu comprennes.
+lesson:
+در فارسی برای هدف می‌گوییم «تا» یا «برای اینکه» و بعدش فعل التزامی می‌آید: «آهسته حرف می‌زنم تا بفهمی». فرانسوی دو راه دارد و انتخابش به فاعل بستگی دارد.
+اگر فاعل دو قسمت یکی باشد، pour یا afin de + مصدر: Je travaille pour gagner de l'argent (کار می‌کنم تا پول دربیاورم).
+اگر فاعل دوم کس دیگری باشد، pour que یا afin que + subjonctif: Je parle lentement pour que tu comprennes (آهسته حرف می‌زنم تا تو بفهمی).
+afin de و afin que همان معنی pour و pour que را دارند، فقط کمی رسمی‌ترند و بیشتر در نوشتن می‌آیند.
+de و que پیش از صدادار کوتاه می‌شوند: afin d'arriver، pour qu'il vienne، afin qu'elle sache.
+منفیِ مصدر: ne pas یا ne rien با هم پیش از مصدر: pour ne pas oublier، afin de ne pas être en retard، pour ne rien oublier.
+منفی با que: ne … pas دور فعل subjonctif: Je ferme la fenêtre pour que le bébé n'ait pas froid.
+زمان جملهٔ اول هر چه باشد، subjonctif présent می‌آید: J'ai laissé la clé chez le voisin pour que tu puisses entrer.
+جواب کوتاه به pourquoi هم با pour یا pour que است: — Pourquoi tu cries ? — Pour que tu m'écoutes !
+pour que را با parce que قاطی نکن: parce que علت را می‌گوید و فعل معمولی می‌خواهد (Je reste parce que tu es seul)، pour que هدف را می‌گوید و subjonctif می‌خواهد (Je reste pour que tu ne sois pas seul).
+مواظب باش: با فاعل یکسان pour que نیاور؛ «je travaille pour que je gagne» غلط است و درستش je travaille pour gagner است.
+table:
+فاعل | ساختار | مثال
+یکی | pour / afin de + مصدر | Je pars tôt pour arriver à l'heure.
+دیگری | pour que / afin que + subjonctif | Je pars tôt pour que tu sois à l'heure.
+یکی، منفی | pour ne pas + مصدر | Je prends un taxi pour ne pas être en retard.
+دیگری، منفی | pour que … ne … pas | Je ferme la fenêtre pour que tu n'aies pas froid.
+examples:
+Je parle lentement pour que tu comprennes. | آهسته حرف می‌زنم تا بفهمی.
+Elle travaille le soir pour payer ses études. | او (زن) شب‌ها کار می‌کند تا خرج درسش را بدهد.
+Nous partons tôt afin d'arriver avant la nuit. | زود راه می‌افتیم تا قبل از شب برسیم.
+J'ai laissé la clé chez le voisin pour que tu puisses entrer. | کلید را پیش همسایه گذاشتم تا بتوانی وارد شوی.
+Il fait du sport pour ne pas grossir. | او (مرد) ورزش می‌کند تا چاق نشود.
+targets:
+Je parle lentement pour que tu [comprennes] bien. | آهسته حرف می‌زنم تا خوب بفهمی. | d: comprends, comprendre, comprendras | hint: (comprendre)
+Répète ta question pour que tout le monde l'[entende]. | سؤالت را تکرار کن تا همه آن را بشنوند. | d: entend, entendre, entendra | hint: (entendre)
+Je ferme la fenêtre pour que le bébé n'[ait] pas froid. | پنجره را می‌بندم تا بچه سردش نشود. | d: a, avoir, aura | hint: (avoir)
+Mes parents travaillent beaucoup pour que nous [puissions] faire des études. | پدر و مادرم زیاد کار می‌کنند تا ما بتوانیم درس بخوانیم. | d: pouvons, pouvoir, pourrons | hint: (pouvoir)
+Je te donne mon numéro pour que tu m'[appelles] ce soir. | شماره‌ام را به تو می‌دهم تا امشب به من زنگ بزنی. | d: appeler, appelais, appelleras | hint: (appeler)
+Le professeur répète la phrase afin que tous les élèves la [retiennent]. | معلم جمله را تکرار می‌کند تا همهٔ دانش‌آموزان آن را به خاطر بسپارند. | d: retenir, retiendront, reteniez | hint: (retenir)
+Nous partons tôt afin que les enfants [soient] à l'école à huit heures. | زود راه می‌افتیم تا بچه‌ها ساعت هشت در مدرسه باشند. | d: sont, être, seront | hint: (être)
+Laisse la porte ouverte pour que le chat [puisse] sortir. | در را باز بگذار تا گربه بتواند بیرون برود. | d: peut, pouvoir, pourra | hint: (pouvoir)
+Explique-moi ton problème pour que je [sache] quoi faire. | مشکلت را برایم توضیح بده تا بدانم چه کار کنم. | d: sais, savoir, saurai | hint: (savoir)
+Elle écrit la liste des{des-contr} courses pour que son mari n'[oublie] rien. | او (زن) فهرست خرید را می‌نویسد تا شوهرش چیزی را فراموش نکند. | d: oublier, oubliait, oubliera | hint: (oublier)
+On a acheté une grande table pour que toute la famille [mange] ensemble à Noël. | یک میز بزرگ خریدیم تا همهٔ خانواده کریسمس با هم غذا بخورند. | d: manger, mangeait, mangera | hint: (manger)
+Je vous envoie le plan afin que vous [trouviez] facilement l'hôtel. | نقشه را برایتان می‌فرستم تا هتل را راحت پیدا کنید. | d: trouvez, trouver, trouverez | hint: (trouver)
+Il fait du sport tous les matins pour [maigrir]. | او (مرد) هر روز صبح ورزش می‌کند تا لاغر شود. | d: maigrisse, maigris, maigrissions | hint: (maigrir)
+Il travaille le samedi pour [gagner] plus d'argent. | او (مرد) شنبه‌ها کار می‌کند تا پول بیشتری دربیاورد. | d: gagne, gagnes, gagnions | hint: (gagner)
+Elle apprend le français afin de [trouver] du travail à Paris. | او (زن) فرانسوی یاد می‌گیرد تا در پاریس کار پیدا کند. | d: trouve, trouves, trouvions | hint: (trouver)
+Je mets de l'argent de côté [pour] acheter une voiture. | پول کنار می‌گذارم تا یک ماشین بخرم. | d: pour que, afin que, parce que | ok: afin d'
+Je t'explique la route [pour que] tu ne te perdes pas. | راه را برایت توضیح می‌دهم تا گم نشوی. | d: pour, afin de, parce que | ok: afin que
+Nous sommes partis tôt [afin d']arriver à l'heure. | زود راه افتادیم تا سر وقت برسیم. | d: afin qu', pour qu', parce qu'
+Le musée ouvre le dimanche [afin que] les familles puissent le visiter. | موزه یکشنبه‌ها باز است تا خانواده‌ها بتوانند از آن دیدن کنند. | d: afin de, pour, parce que | ok: pour que
+J'écris tout [pour] ne rien oublier. | همه‌چیز را می‌نویسم تا چیزی یادم نرود. | d: pour que, afin que, parce que | ok: afin de
+Va chez le médecin [pour qu']il te dise ce que tu as. | برو پیش پزشک تا به تو بگوید چه مشکلی داری. | d: pour, afin d', parce qu' | ok: afin qu'
+Je me lève tôt [pour] avoir le temps de lire. | زود بیدار می‌شوم تا وقت داشته باشم کتاب بخوانم. | d: pour que, afin que, parce que | ok: afin d'
+Je travaille beaucoup [pour que] mes enfants aient une bonne vie. | زیاد کار می‌کنم تا بچه‌هایم زندگی خوبی داشته باشند. | d: pour, afin de, parce que | ok: afin que
+Il a éteint la télé pour que les enfants [lisent] un peu. | تلویزیون را خاموش کرد تا بچه‌ها کمی کتاب بخوانند. | d: lire, lisaient, liront | hint: (lire)
+Pourquoi tu cries ? Pour que tu m'[écoutes] enfin ! | چرا داد می‌زنی؟ تا بالاخره به حرفم گوش بدهی! | d: écouter, écoutais, écouteras | hint: (écouter)
+Je vais t'aider pour que tu [finisses] plus vite. | کمکت می‌کنم تا زودتر تمام کنی. | d: finis, finir, finiras | hint: (finir)
+Le guide parle anglais afin que tout le monde [puisse] le suivre. | راهنما انگلیسی حرف می‌زند تا همه بتوانند حرفش را دنبال کنند. | d: peut, pouvoir, pourra
+On met un dessin animé pour que les enfants [soient] calmes. | یک کارتون می‌گذاریم تا بچه‌ها آرام باشند. | d: sont, être, seront
+Nous avons déménagé pour que nos enfants [aillent] dans une meilleure école. | اسباب‌کشی کردیم تا بچه‌هایمان به مدرسهٔ بهتری بروند. | d: vont, aller, iront | hint: (aller)
+Je te prête mon vélo pour que tu [viennes] plus vite. | دوچرخه‌ام را به تو قرض می‌دهم تا زودتر بیایی. | d: viens, venir, viendras | hint: (venir)
+Elle prend un taxi afin de ne pas [être] en retard. | او (زن) تاکسی می‌گیرد تا دیر نکند. | d: soit, est, sois | hint: (être)
+J'appelle le voisin pour qu'il [nourrisse] le chat pendant les vacances. | به همسایه زنگ می‌زنم تا در تعطیلات به گربه غذا بدهد. | d: nourrit, nourrir, nourrira | hint: (nourrir)
+Je vais acheter du pain pour que nous [ayons] quelque chose à manger. | نان می‌خرم تا چیزی برای خوردن داشته باشیم. | d: avons, avoir, aurons | hint: (avoir)
+Je travaille [pour] payer mon loyer et [pour que] mes enfants soient heureux. | کار می‌کنم تا اجاره‌ام را بدهم و بچه‌هایم خوشبخت باشند. | d: pour que, afin que, parce que / pour, afin de, parce que | ok: afin de / afin que
+Parle doucement pour que le bébé [dorme] et que je [puisse] travailler. | آرام حرف بزن تا بچه بخوابد و من بتوانم کار کنم. | d: dort, dormir, dormira / peux, pouvoir, pourrai
+Nous partons tôt pour [arriver] avant midi et pour que les enfants [voient]{voir} la mer. | زود راه می‌افتیم تا قبل از ظهر برسیم و بچه‌ها دریا را ببینند. | d: arrive, arrivions, arrives / voir, voyiez, verront
+Je t'envoie l'adresse [pour que] tu [puisses] venir directement. | آدرس را برایت می‌فرستم تا بتوانی مستقیم بیایی. | d: pour, afin de, parce que / pouvoir, puissent, puissiez | ok: afin que
+Elle travaille la nuit [afin que] ses enfants [fassent] des études. | او (زن) شب‌ها کار می‌کند تا بچه‌هایش تحصیل کنند. | d: afin de, pour, parce que / faire, fasse, fassiez | ok: pour que
+Prends un manteau pour ne pas [avoir] froid et pour que je [sois] tranquille. | پالتو بردار تا سردت نشود و من خیالم راحت باشد. | d: aies, as, ait / suis, être, serai
+La ville a construit un parc pour que les enfants [jouent] et que les parents se [reposent]. | شهر یک پارک ساخت تا بچه‌ها بازی کنند و پدر و مادرها استراحت کنند. | d: jouer, jouaient, joueront / reposer, reposaient, reposeront
+transforms:
+Je parle lentement. Tu comprends. => Je parle lentement pour que tu comprennes. ; Je parle lentement afin que tu comprennes. | دو جمله را با pour que یک جمله کن.
+Je travaille. Je veux gagner de l'argent. => Je travaille pour gagner de l'argent. ; Je travaille afin de gagner de l'argent. | فاعل یکی است: با pour + مصدر یک جمله کن.
+Je ferme la fenêtre. Le bébé n'a pas froid. => Je ferme la fenêtre pour que le bébé n'ait pas froid. ; Je ferme la fenêtre afin que le bébé n'ait pas froid. | با pour que یک جمله کن.
+Nous partons tôt pour arriver à l'heure. => Nous partons tôt pour que vous arriviez à l'heure. ; Nous partons tôt afin que vous arriviez à l'heure. | جمله را طوری بنویس که «شما» سر وقت برسید.
+Je te donne mon numéro pour que tu m'appelles. => Je te donne mon numéro afin que tu m'appelles. | به‌جای pour que، afin que بیاور.
+Il étudie afin de réussir. => Il étudie pour réussir. | به‌جای afin de، pour بیاور.
+Je prends un taxi. Je ne veux pas être en retard. => Je prends un taxi pour ne pas être en retard. ; Je prends un taxi afin de ne pas être en retard. | با pour ne pas + مصدر یک جمله کن.
+Explique-moi. Je veux comprendre. => Explique-moi pour que je comprenne. ; Explique-moi afin que je comprenne. | با pour que یک جمله کن.
+translations:
+آهسته حرف بزن تا بفهمم. => Parle lentement pour que je comprenne. ; Parle lentement afin que je comprenne.
+کار می‌کنم تا پول دربیاورم. => Je travaille pour gagner de l'argent. ; Je travaille afin de gagner de l'argent.
+کلید را به تو می‌دهم تا بتوانی وارد شوی. => Je te donne la clé pour que tu puisses entrer. ; Je te donne la clé afin que tu puisses entrer.
+زود راه می‌افتیم تا دیر نکنیم. => Nous partons tôt pour ne pas être en retard. ; Nous partons tôt afin de ne pas être en retard. ; On part tôt pour ne pas être en retard. ; On part tôt afin de ne pas être en retard.
+پنجره را می‌بندم تا بچه سردش نشود. => Je ferme la fenêtre pour que le bébé n'ait pas froid. ; Je ferme la fenêtre afin que le bébé n'ait pas froid. ; Je ferme la fenêtre pour que l'enfant n'ait pas froid. ; Je ferme la fenêtre afin que l'enfant n'ait pas froid.
+او (زن) فرانسوی یاد می‌گیرد تا در پاریس کار کند. => Elle apprend le français pour travailler à Paris. ; Elle apprend le français afin de travailler à Paris.
+شماره‌ات را به من بده تا به تو زنگ بزنم. => Donne-moi ton numéro pour que je t'appelle. ; Donne-moi ton numéro afin que je t'appelle. ; Donne-moi ton numéro de téléphone pour que je t'appelle. ; Donne-moi ton numéro de téléphone afin que je t'appelle.
+برای اینکه موفق شوی، باید کار کنی. => Pour réussir, il faut que tu travailles. ; Pour réussir, tu dois travailler. ; Il faut que tu travailles pour réussir. ; Tu dois travailler pour réussir.

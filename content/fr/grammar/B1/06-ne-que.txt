@@ -1,0 +1,90 @@
+code: fr-b1-ne-que
+title: «فقط» با ne … que: je n'ai qu'une sœur
+scope: ne … que به‌معنای «فقط» (مثل seulement) در زمان حال، passé composé و plus-que-parfait (je n'ai vu que la fin، il n'avait fait que la moitié)، conditionnel، با مصدر (de ne manger que des fruits، je ne veux dépenser que 50 euros)، il n'y a que، ضمیر جدا بعد از que (que moi، que toi)، ne … qu'à + ساعت («تازه ساعت …») و tu n'as qu'à + مصدر؛ و فرقش با ne … pas؛ ne … ni … ni و ne … aucun در واحد بعد می‌آیند.
+can_do: حالا می‌توانی بگویی فقط چه چیزی داری، می‌خواهی یا دیدی، بدون اینکه هر بار seulement بگویی: Je n'ai qu'une sœur. Il n'y a que deux places.
+rule: ne قبل از فعل صرف‌شده و que درست قبل از همان چیزی که «فقط» به آن برمی‌گردد: je ne bois que de l'eau، je n'ai vu que la fin؛ قبل از صدادار qu' (je n'ai qu'une heure). معنی جمله منفی نیست؛ یعنی seulement.
+mistake: «فقط» در فارسی هیچ نشانهٔ منفی ندارد، برای همین فارسی‌زبان‌ها Je ne mange que des légumes را منفی می‌فهمند («سبزی نمی‌خورم») یا pas را هم اضافه می‌کنند («je ne mange pas que des légumes» که یعنی «فقط سبزی نمی‌خورم»)؛ در passé composé هم que را مثل pas بعد از فعل کمکی می‌گذارند («je n'ai que vu la fin»)؛ درست: je ne mange que des légumes (فقط سبزی می‌خورم)، je n'ai vu que la fin.
+lesson:
+در فارسی «فقط» یک کلمهٔ ساده است و جمله مثبت می‌ماند: «فقط آب می‌خورم». فرانسوی غیر از seulement، که در A2 دیدی، برای این معنی ساختار ne … que را دارد که در حرف زدن و نوشتن خیلی رایج است.
+Je bois seulement de l'eau. = Je ne bois que de l'eau. (فقط آب می‌خورم.) ظاهر جمله منفی است، ولی معنی‌اش منفی نیست.
+ne مثل همیشه قبل از فعل صرف‌شده می‌آید (قبل از صدادار n')، و que درست قبل از همان چیزی که «فقط» به آن برمی‌گردد: Il ne travaille que le matin. (فقط صبح‌ها کار می‌کند.) Je ne pense qu'à mes vacances.
+قبل از صدادار، que می‌شود qu': Je n'ai qu'une sœur. Il n'a qu'un euro.
+چون جمله واقعاً منفی نیست، du، de la و des بعد از que عوض نمی‌شوند: Je ne mange pas de viande (گوشت نمی‌خورم)، ولی Je ne mange que de la viande (فقط گوشت می‌خورم).
+در passé composé، pas بعد از فعل کمکی می‌آید (je n'ai pas vu)، ولی que بعد از اسم مفعول: Je n'ai vu que la fin du{du-contr} film. Elle n'est restée que deux jours.
+ضمیر بعد از que شکل جدا دارد (moi، toi، lui، elle، nous، vous، eux): Elle n'écoute que moi. Je n'ai invité que toi.
+با مصدر، ne قبل از مصدر می‌آید و que بعد از آن؛ مثل ne pas نیست که هر دو قبل از مصدرند: J'ai décidé de ne manger que des fruits. با فعل + مصدر، ne قبل از فعل اول: Je ne veux dépenser que 50 euros.
+il n'y a que یعنی «فقط … هست»: Il n'y a que deux places. در گذشته: Il n'y avait que trois personnes.
+با ساعت و زمان، ne … que یعنی «تازه، نه زودتر»: Le premier bus ne part qu'à 10 heures. (اولین اتوبوس تازه ساعت ده راه می‌افتد.)
+یک ساختار رایج: tu n'as qu'à + مصدر یعنی «کافی است …»: Si tu as faim, tu n'as qu'à prendre un sandwich.
+مواظب باش pas را کنار que نگذاری: Je ne mange pas que des légumes یعنی «فقط سبزی نمی‌خورم» (چیزهای دیگر هم می‌خورم)، که معنی دیگری است.
+table:
+زمان | با seulement | با ne … que
+حال | Je bois seulement de l'eau. | Je ne bois que de l'eau.
+passé composé | J'ai vu seulement la fin. | Je n'ai vu que la fin.
+مصدر | Je veux manger seulement des fruits. | Je ne veux manger que des fruits.
+il y a | Il y a seulement deux places. | Il n'y a que deux places.
+examples:
+Je n'ai qu'une sœur, elle habite à Lyon. | فقط یک خواهر دارم که در لیون زندگی می‌کند.
+Hier soir, je n'ai mangé qu'une salade. | دیشب فقط یک سالاد خوردم.
+Il n'y a que trois personnes devant nous. | جلوی ما فقط سه نفر هستند.
+Mon père ne lit que le journal du{du-contr} dimanche. | پدرم فقط روزنامهٔ یکشنبه را می‌خواند.
+Si j'avais le choix, je ne travaillerais que le matin. | اگر حق انتخاب داشتم، فقط صبح‌ها کار می‌کردم.
+targets:
+Le soir, je [ne bois que] de l'eau. | شب‌ها فقط آب می‌خورم. | d: ne que bois, ne bois seulement, ne bois qu' | hint: (boire)
+Mon frère [ne travaille que] le matin. | برادرم فقط صبح‌ها کار می‌کند. | d: ne que travaille, ne travaille seulement, ne travaille qu' | hint: (travailler)
+Nous [n'avons qu']une voiture pour toute la famille. | ما برای کل خانواده فقط یک ماشین داریم. | d: n'avons que, ne avons qu', n'avons seulement | hint: (avoir)
+Ma voisine [ne sort qu']avec son chien. | همسایه‌ام (زن) فقط با سگش بیرون می‌رود. | d: ne sort que, ne que sort, ne sort seulement | hint: (sortir)
+En ce moment, les enfants [ne veulent que] des pâtes. | این روزها بچه‌ها فقط ماکارونی می‌خواهند. | d: ne que veulent, ne veulent seulement, ne veulent qu' | hint: (vouloir)
+Tu [ne penses qu']à tes vacances ! | تو فقط به تعطیلاتت فکر می‌کنی! | d: ne penses que, ne que penses, ne penses seulement | hint: (penser)
+Ici, il [ne neige qu']en janvier. | اینجا فقط در ژانویه برف می‌بارد. | d: ne neige que, ne que neige, ne neige seulement | hint: (neiger)
+Vous [ne restez qu']une nuit ? C'est{être} dommage ! | فقط یک شب می‌مانید؟ حیف است! | d: ne restez que, ne que restez, ne restez seulement | hint: (rester)
+Le week-end, mon fils [ne fait que] dormir. | پسرم آخر هفته‌ها کاری جز خوابیدن نمی‌کند. | d: ne que fait, ne fait seulement, ne fait qu'
+Paul [ne mange que] des légumes, jamais de viande. | پل فقط سبزیجات می‌خورد، هیچ‌وقت گوشت نمی‌خورد. | d: ne que mange, ne mange seulement, ne mange qu'
+Je n'ai [qu']une sœur et elle habite au Canada. | فقط یک خواهر دارم و او در کانادا زندگی می‌کند. | d: que, seulement, aucune
+Il ne reste [que] deux places pour le concert de samedi. | برای کنسرت شنبه فقط دو جا مانده است. | d: qu', seulement, aucune
+Je ne bois du café [que] le matin. | فقط صبح‌ها قهوه می‌خورم. | d: qu', seulement, jamais
+Elle n'a [que] vingt ans, mais elle dirige déjà une équipe. | او (زن) فقط بیست سال دارد، ولی همین حالا یک تیم را اداره می‌کند. | d: qu', seulement, aucun
+Il n'y a [que] deux solutions : partir ou attendre. | فقط دو راه هست: رفتن یا صبر کردن. | d: qu', seulement, aucune
+Je ne veux dépenser [que] 50 euros pour son cadeau. | فقط پنجاه یورو می‌خواهم برای هدیه‌اش خرج کنم. | d: qu', seulement, rien
+À la maison, ma fille n'écoute que [moi]. | در خانه، دخترم فقط به حرف من گوش می‌دهد. | d: me, je, m'
+Je n'ai invité que [toi] et ta sœur. | فقط تو و خواهرت را دعوت کردم. | d: te, tu, t'
+Au bureau, elle ne parle qu'à [eux]. | او (زن) در اداره فقط با آن‌ها حرف می‌زند. | d: les, ils, leur
+Je [n'ai vu que] la fin du{du-contr} film. | فقط آخر فیلم را دیدم. | d: n'ai que vu, ne ai vu que, n'ai vu seulement | hint: (voir)
+Hier, on [n'a mangé qu']une salade. | دیروز فقط یک سالاد خوردیم. | d: n'a que mangé, n'a mangé que, ne a mangé qu' | hint: (manger)
+Elle [n'est restée que] deux jours à Rome. | او (زن) فقط دو روز در رم ماند. | d: n'est que restée, ne est restée que, n'est restée seulement | hint: (rester)
+Tu [n'as lu que] le début du{du-contr} livre ? | فقط اول کتاب را خواندی؟ | d: n'as que lu, ne as lu que, n'as lu seulement | hint: (lire)
+Ils [ne sont partis qu']une semaine en Espagne. | آن‌ها فقط یک هفته به اسپانیا رفتند. | d: ne sont que partis, ne sont partis que, ne sont partis seulement | hint: (partir)
+Je [ne l'ai rencontré qu']une fois, à une fête. | فقط یک بار او (مرد) را دیده‌ام، در یک مهمانی. | d: ne l'ai que rencontré, ne l'ai rencontré que, ne l'ai rencontré seulement | hint: (rencontrer)
+Quand je suis arrivé, il [n'avait fait que] la moitié du{du-contr} travail. | وقتی رسیدم، او (مرد) فقط نصف کار را انجام داده بود. | d: n'avait que fait, ne avait fait que, n'avait fait seulement | hint: (faire)
+J'étais fatiguée parce que je [n'avais dormi que] trois heures. | خسته بودم چون فقط سه ساعت خوابیده بودم. | d: n'avais que dormi, ne avais dormi que, n'avais dormi seulement | hint: (dormir)
+À ta place, je [ne prendrais qu']une petite valise. | من جای تو بودم فقط یک چمدان کوچک برمی‌داشتم. | d: ne prendrais que, ne que prendrais, ne prendrais seulement | hint: (prendre)
+Si j'avais le choix, je [ne travaillerais que] quatre jours par semaine. | اگر حق انتخاب داشتم، فقط هفته‌ای چهار روز کار می‌کردم. | d: ne que travaillerais, ne travaillerais seulement, ne travaillerais qu' | hint: (travailler)
+J'ai décidé de [ne manger que] des fruits le soir. | تصمیم گرفته‌ام شب‌ها فقط میوه بخورم. | d: ne que manger, ne manger seulement, ne manger qu' | hint: (manger)
+Si tu as faim, tu [n'as qu'à] prendre un sandwich. | اگر گرسنه‌ای، کافی است یک ساندویچ برداری. | d: n'as que à, ne as qu'à, n'as qu'de | hint: (avoir)
+Il [n'y a qu']une boulangerie dans mon village. | در روستای ما فقط یک نانوایی هست. | d: n'y a que, ne y a qu', n'a y qu'
+Dans le frigo, il [n'y a que] du lait et des œufs. | در یخچال فقط شیر و تخم‌مرغ هست. | d: n'y a qu', ne y a que, n'a y que
+Il [n'y avait que] trois personnes à la réunion. | در جلسه فقط سه نفر بودند. | d: n'y avait qu', ne y avait que, n'avait y que
+Je [n']ai [qu']une heure pour déjeuner. | فقط یک ساعت برای ناهار وقت دارم. | d: ne, pas, non / que, seulement, aucune
+Je [ne parle que] français et mon mari [ne parle qu']anglais. | من فقط فرانسوی حرف می‌زنم و شوهرم فقط انگلیسی. | d: ne que parle, ne parle seulement, ne parle qu' / ne parle que, ne que parle, ne parle seulement
+Ce matin, je [n'ai bu qu']un café et je [n'ai pris qu']un croissant. | امروز صبح فقط یک قهوه خوردم و فقط یک کروسان. | d: n'ai que bu, ne ai bu qu', n'ai bu que / n'ai que pris, ne ai pris qu', n'ai pris que
+Il [n'y a que] deux bus par jour et le premier [ne part qu']à 10 heures. | روزی فقط دو اتوبوس هست و اولی تازه ساعت ده راه می‌افتد. | d: n'y a qu', ne y a que, n'a y que / ne part que, ne que part, ne part seulement
+Elle [n'a qu']un frère et elle [ne le voit qu']à Noël. | او (زن) فقط یک برادر دارد و فقط کریسمس‌ها می‌بیندش. | d: n'a que, ne a qu', n'a seulement / ne le voit que, ne que le voit, ne le voit seulement
+Nous [ne sommes restés que] trois jours, mais nous [n'avons vu que] la pluie ! | فقط سه روز ماندیم، ولی جز باران چیزی ندیدیم! | d: ne sommes que restés, ne sommes restés seulement, ne que sommes restés / n'avons que vu, ne avons vu que, n'avons vu seulement | ok: ne sommes restées que
+transforms:
+Je bois seulement de l'eau. => Je ne bois que de l'eau. | جمله را با ne … que بنویس.
+J'ai seulement une sœur. => Je n'ai qu'une sœur. | جمله را با ne … que بنویس.
+Il y a seulement deux places. => Il n'y a que deux places. | جمله را با ne … que بنویس.
+J'ai vu seulement la fin du{du-contr} film. => Je n'ai vu que la fin du{du-contr} film. | جمله را با ne … que بنویس.
+Nous sommes restés seulement deux jours. => Nous ne sommes restés que deux jours. | جمله را با ne … que بنویس.
+Je veux dépenser seulement 50 euros. => Je ne veux dépenser que 50 euros. ; Je veux ne dépenser que 50 euros. | جمله را با ne … que بنویس.
+Il mange seulement des légumes. => Il ne mange que des légumes. | جمله را با ne … que بنویس.
+Tu ne penses qu'à toi. => Tu penses seulement à toi. | جمله را با seulement بنویس.
+translations:
+فقط یک خواهر دارم. => Je n'ai qu'une sœur. ; J'ai seulement une sœur. ; Je n'ai qu'une seule sœur. ; J'ai une seule sœur.
+فقط آب می‌خورم. => Je ne bois que de l'eau. ; Je bois seulement de l'eau.
+فقط آخر فیلم را دیدم. => Je n'ai vu que la fin du{du-contr} film. ; J'ai vu seulement la fin du{du-contr} film. ; J'ai seulement vu la fin du{du-contr} film.
+او (زن) فقط صبح‌ها کار می‌کند. => Elle ne travaille que le matin. ; Elle travaille seulement le matin. ; Elle travaille le matin seulement.
+در یخچال فقط شیر هست. => Il n'y a que du lait dans le frigo. ; Dans le frigo, il n'y a que du lait. ; Il y a seulement du lait dans le frigo. ; Dans le frigo, il y a seulement du lait.
+فقط به تو فکر می‌کنم. => Je ne pense qu'à toi. ; Je pense seulement à toi.
+فقط یک ساعت وقت داریم. => Nous n'avons qu'une heure. ; On n'a qu'une heure. ; Nous avons seulement une heure. ; On a seulement une heure.
+او (زن) فقط دو روز در رم ماند. => Elle n'est restée que deux jours à Rome. ; Elle est restée seulement deux jours à Rome. ; À Rome, elle n'est restée que deux jours. ; Elle est restée deux jours seulement à Rome.

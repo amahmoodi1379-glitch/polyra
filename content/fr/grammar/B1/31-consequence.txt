@@ -1,0 +1,91 @@
+code: fr-b1-consequence
+title: نتیجه: c'est pourquoi، si bien que، tellement … que
+scope: گفتن نتیجه: donc و alors (مرور)، c'est pourquoi، par conséquent (رسمی)، si bien que (همیشه بعد از جملهٔ اول)، و «آن‌قدر … که»: tellement یا si + صفت یا قید + que، فعل + tellement یا tant + que، tellement de یا tant de + اسم + que؛ de sorte que در B2 می‌آید.
+can_do: حالا می‌توانی نتیجهٔ یک اتفاق را بگویی و بگویی چیزی آن‌قدر زیاد بود که کاری پیش آمد: Le train avait du retard, si bien que j'ai raté mon rendez-vous. Il était tellement fatigué qu'il s'est endormi.
+rule: نتیجه بعد از donc، alors، c'est pourquoi، par conséquent و si bien que می‌آید؛ «آن‌قدر … که»: tellement / si + صفت یا قید + que، فعل + tellement / tant + que، tellement de / tant de + اسم + que.
+mistake: فارسی «خیلی» و «آن‌قدر» را نزدیک هم به کار می‌برد، برای همین فارسی‌زبان‌ها می‌نویسند «Il était très fatigué qu'il s'est endormi» یا «trop fatigué qu'il…»؛ درست: Il était tellement fatigué qu'il s'est endormi (یا si fatigué). بعد از de هم حرف تعریف نمی‌آید: «tellement des gens» غلط است؛ درست: tellement de gens.
+lesson:
+در فارسی برای نتیجه می‌گوییم «برای همین، در نتیجه، پس» و برای شدت «آن‌قدر … که». فرانسوی برای هر دو چند راه دارد.
+مرور A2: donc و alors یعنی «پس»: Il pleut, donc je prends le bus. donc وسط جمله هم می‌آید: Tu as donc fini ?
+c'est pourquoi یعنی «به همین دلیل، برای همین»، کمی رسمی‌تر از c'est pour ça que: Je n'avais pas d'argent, c'est pourquoi je ne suis pas venu.
+par conséquent یعنی «در نتیجه» و بیشتر در نوشتن و اخبار می‌آید: Il a beaucoup neigé ; par conséquent, les routes sont fermées.
+si bien que یعنی «طوری که، در نتیجه» و همیشه بعد از جملهٔ اول می‌آید، نه اول جمله: Le train avait du retard, si bien que j'ai raté mon rendez-vous.
+«آن‌قدر … که» با صفت یا قید: tellement یا si + صفت یا قید + que: Il était tellement fatigué qu'il s'est endormi. Elle parle si vite que je ne comprends rien.
+با فعل: فعل + tellement یا tant + que: Il a tellement mangé qu'il a mal au ventre. si با فعل نمی‌آید.
+با اسم: tellement de یا tant de + اسم + que: Il y avait tellement de gens que nous ne sommes pas entrés. بعد از de حرف تعریف نمی‌آید.
+مواظب باش: très و trop با que نمی‌آیند: «très fatigué qu'il…» غلط است. trop یعنی «بیش از حد» و با pour می‌آید: trop fatigué pour sortir.
+یادت باشد: نتیجه بعد از donc، c'est pourquoi و si bien que می‌آید و علت بعد از parce que؛ اگر جایشان را عوض کنی، معنی برعکس می‌شود.
+table:
+ساختار | معنی | مثال
+donc، alors | پس | Il pleut, donc je reste ici.
+c'est pourquoi | به همین دلیل | c'est pourquoi je ne suis pas venu
+par conséquent | در نتیجه (رسمی) | par conséquent, les routes sont fermées
+si bien que | طوری که، در نتیجه | si bien que j'ai raté le train
+tellement / si + صفت یا قید + que | آن‌قدر … که | si vite que je ne comprends rien
+فعل + tellement / tant + que | آن‌قدر … که | Il a tant mangé qu'il est malade.
+tellement de / tant de + اسم + que | آن‌قدر … که | tellement de gens que…
+examples:
+Il a raté le bus, c'est pourquoi il est arrivé en retard. | اتوبوس را از دست داد، برای همین دیر رسید.
+La route était fermée{fermé} ; par conséquent, nous avons pris un autre chemin. | جاده بسته بود؛ در نتیجه از راه دیگری رفتیم.
+Elle était si heureuse qu'elle a pleuré. | آن‌قدر خوشحال بود که گریه کرد.
+J'ai tellement de travail que je ne dors presque plus. | آن‌قدر کار دارم که دیگر تقریباً نمی‌خوابم.
+Nous avons tant marché{marcher} que nous avions mal aux pieds. | آن‌قدر راه رفتیم که پاهایمان درد می‌کرد.
+targets:
+Le train avait deux heures de retard, [si bien que] j'ai raté mon rendez-vous. | قطار دو ساعت تأخیر داشت، در نتیجه به قرارم نرسیدم. | d: parce que, pourtant, alors que | ok: donc, alors, c'est pourquoi, par conséquent
+Il a beaucoup neigé cette nuit ; [par conséquent], les routes sont fermées{fermé}. | دیشب خیلی برف آمد؛ در نتیجه جاده‌ها بسته‌اند. | d: pourtant, car, puisque | ok: donc, alors, c'est pourquoi
+Je n'avais pas d'argent, [c'est pourquoi] je ne suis pas venu. | پول نداشتم، برای همین نیامدم. | d: parce que, pourtant, puisque | ok: donc, alors, par conséquent, si bien que, c'est pour ça que
+Paul est malade, [donc] nous irons au cinéma sans lui. | پل مریض است، پس بدون او به سینما می‌رویم. | d: car, afin que, puisque | ok: alors, c'est pourquoi, par conséquent, si bien que
+Tu as fini tes devoirs ? [Alors] tu peux aller jouer. | تکالیفت را تمام کردی؟ پس می‌توانی بروی بازی کنی. | d: Pourtant, Car, Puisque | ok: Donc
+Elle a raté le dernier métro, [si bien que] nous avons dû la ramener en voiture. | آخرین مترو را از دست داد، طوری که مجبور شدیم با ماشین برش گردانیم. | d: parce que, pourtant, alors que | ok: donc, alors, c'est pourquoi, par conséquent
+Les prix ont beaucoup augmenté ; [par conséquent], les gens achètent moins. | قیمت‌ها خیلی بالا رفته؛ در نتیجه مردم کمتر خرید می‌کنند. | d: pourtant, car, puisque | ok: donc, alors, c'est pourquoi
+Mon fils n'a pas révisé, [c'est pourquoi] ses notes sont mauvaises. | پسرم درس نخوانده، برای همین نمره‌هایش بد است. | d: parce que, alors que, puisque | ok: donc, alors, par conséquent, si bien que, c'est pour ça que
+Nous sommes partis très tôt, [si bien que] nous avons évité les embouteillages. | خیلی زود راه افتادیم، طوری که به ترافیک نخوردیم. | d: parce que, pourtant, afin que | ok: donc, alors, c'est pourquoi, par conséquent
+Il y a une grève des trains demain ; [c'est pourquoi] je travaillerai de chez moi. | فردا قطارها اعتصاب‌اند؛ برای همین از خانه کار می‌کنم. | d: parce que, pourtant, puisque | ok: donc, alors, par conséquent, c'est pour ça que
+La réunion n'aura pas lieu ; vous pouvez [donc] rester chez vous. | جلسه برگزار نمی‌شود؛ پس می‌توانید در خانه بمانید. | d: pourtant, car, puisque | ok: alors, par conséquent
+Ma sœur ne mange pas de viande ; j'ai [donc] préparé un plat de légumes. | خواهرم گوشت نمی‌خورد؛ پس یک غذای سبزیجات درست کردم. | d: pourtant, car, puisque | ok: alors, par conséquent
+Mon vol avait six heures de retard. [C'est pourquoi] j'ai dormi à l'aéroport. | پروازم شش ساعت تأخیر داشت. برای همین در فرودگاه خوابیدم. | d: Parce que, Pourtant, Car | ok: Donc, Alors, Par conséquent, C'est pour ça que
+Le restaurant était complet. [Alors] nous avons mangé une pizza à la maison. | رستوران جا نداشت. پس در خانه پیتزا خوردیم. | d: Pourtant, Car, Puisque | ok: Donc, C'est pourquoi, Par conséquent
+Il était [tellement] fatigué{fatigué} qu'il s'est endormi dans le train. | آن‌قدر خسته بود که در قطار خوابش برد. | d: très, trop, beaucoup | ok: si
+Ce film est [si] drôle que toute la salle rit. | این فیلم آن‌قدر خنده‌دار است که همهٔ سالن می‌خندند. | d: très, trop, beaucoup | ok: tellement
+Elle parle [tellement] vite que je ne comprends rien. | آن‌قدر تند حرف می‌زند که هیچ‌چیز نمی‌فهمم. | d: très, trop, beaucoup | ok: si
+Il fait [si] chaud que nous restons à la maison. | هوا آن‌قدر گرم است که در خانه می‌مانیم. | d: très, trop, plus | ok: tellement
+La soupe était [tellement] salée que personne ne l'a mangée. | سوپ آن‌قدر شور بود که هیچ‌کس آن را نخورد. | d: très, trop, beaucoup | ok: si
+Le musée était [si] grand que nous n'avons pas pu tout voir. | موزه آن‌قدر بزرگ بود که نتوانستیم همه‌اش را ببینیم. | d: très, trop, aussi | ok: tellement
+J'étais [tellement] content que j'en ai pleuré. | آن‌قدر خوشحال بودم که گریه‌ام گرفت. | d: très, trop, plus | ok: si
+Ce livre est [tellement] intéressant que je l'ai lu en deux jours. | این کتاب آن‌قدر جالب است که در دو روز خواندمش. | d: très, trop, beaucoup | ok: si
+Il conduit [si] mal que personne ne veut monter avec lui. | آن‌قدر بد رانندگی می‌کند که هیچ‌کس نمی‌خواهد سوار ماشینش شود. | d: très, trop, aussi | ok: tellement
+Il a [tellement] mangé qu'il a mal au ventre. | آن‌قدر خورده که دلش درد می‌کند. | d: très, si, trop | ok: tant
+Elle a [tant] travaillé qu'elle est tombée malade. | آن‌قدر کار کرد که مریض شد. | d: très, si, trop | ok: tellement
+Mon fils a [tellement] grandi que ses vêtements sont trop petits. | پسرم آن‌قدر قد کشیده که لباس‌هایش برایش کوچک شده‌اند. | d: très, si, trop | ok: tant
+Il y avait [tellement de] gens que nous ne sommes pas entrés. | آن‌قدر آدم بود که وارد نشدیم. | d: très de, trop de, beaucoup de | ok: tant de
+J'ai [tant de] travail que je ne peux pas partir en vacances. | آن‌قدر کار دارم که نمی‌توانم به تعطیلات بروم. | d: très de, trop de, si de | ok: tellement de
+Elle a [tellement d']amis qu'elle sort tous les soirs. | آن‌قدر دوست دارد که هر شب بیرون می‌رود. | d: très d', trop d', si d' | ok: tant d'
+Il y a [tant de] bruit dans ce café qu'on ne peut pas parler. | در این کافه آن‌قدر سر و صدا هست که نمی‌شود حرف زد. | d: très de, trop de, si de | ok: tellement de
+Nous avons [tellement de] valises qu'il faut prendre deux taxis. | آن‌قدر چمدان داریم که باید دو تا تاکسی بگیریم. | d: très de, trop de, beaucoup de | ok: tant de
+Les voisins faisaient tellement de bruit [que] nous avons appelé la police. | همسایه‌ها آن‌قدر سر و صدا می‌کردند که به پلیس زنگ زدیم. | d: pour, comme, dont
+Il faisait tellement froid [que] les rues étaient vides. | هوا آن‌قدر سرد بود که خیابان‌ها خالی بودند. | d: pour, comme, dont
+Le film était [si] long [que] la moitié de la salle est partie avant la fin. | فیلم آن‌قدر طولانی بود که نصف سالن قبل از آخرش رفتند. | d: très, trop, aussi / pour, comme, dont | ok: tellement
+Il a [tellement] plu [que] les routes sont fermées{fermé}. | آن‌قدر باران آمده که جاده‌ها بسته‌اند. | d: très, si, trop / pour, comme, dont | ok: tant
+J'avais [tant de] choses à faire [que] je n'ai pas vu le temps passer. | آن‌قدر کار داشتم که نفهمیدم وقت چطور گذشت. | d: très de, trop de, si de / pour, comme, dont | ok: tellement de
+[Comme] le dernier train était parti, nous avons dormi à l'hôtel, [si bien que] nous sommes arrivés le lendemain. | چون آخرین قطار رفته بود، در هتل خوابیدیم، و در نتیجه فردای آن روز رسیدیم. | d: Car, Grâce à, Pourtant / parce que, pourtant, alors que | ok: Puisque, Parce que / donc, alors, c'est pourquoi, par conséquent
+Il a fait [tellement de] bruit [que] le bébé s'est réveillé. | آن‌قدر سر و صدا کرد که بچه بیدار شد. | d: très de, trop de, si de / pour, comme, dont | ok: tant de
+Je suis [tellement] occupé que je n'ai pas le temps de déjeuner ; [c'est pourquoi] j'achète un sandwich. | آن‌قدر سرم شلوغ است که وقت ناهار خوردن ندارم؛ برای همین یک ساندویچ می‌خرم. | d: très, trop, beaucoup / parce que, pourtant, puisque | ok: si / donc, alors, par conséquent, c'est pour ça que
+Nous avons [tellement] marché{marcher} [que] nous avions mal aux pieds. | آن‌قدر راه رفتیم که پاهایمان درد می‌کرد. | d: très, si, trop / pour, comme, dont | ok: tant
+transforms:
+Il pleuvait. Nous sommes restés à la maison. => Il pleuvait, si bien que nous sommes restés à la maison. ; Il pleuvait, c'est pourquoi nous sommes restés à la maison. | دو جمله را با si bien que یا c'est pourquoi وصل کن.
+Il était très fatigué{fatigué}. Il s'est endormi. => Il était tellement fatigué{fatigué} qu'il s'est endormi. ; Il était si fatigué{fatigué} qu'il s'est endormi. | با tellement … que یک جمله بساز.
+Il y avait beaucoup de gens. Nous ne sommes pas entrés. => Il y avait tellement de gens que nous ne sommes pas entrés. ; Il y avait tant de gens que nous ne sommes pas entrés. | با tellement de … que یک جمله بساز.
+Il a beaucoup mangé. Il a mal au ventre. => Il a tellement mangé qu'il a mal au ventre. ; Il a tant mangé qu'il a mal au ventre. | با tellement یا tant یک جمله بساز.
+Je suis resté à la maison parce que j'étais malade. => J'étais malade, c'est pourquoi je suis resté à la maison. ; J'étais malade, donc je suis resté à la maison. ; J'étais malade, alors je suis resté à la maison. ; J'étais malade, si bien que je suis resté à la maison. ; J'étais malade ; par conséquent, je suis resté à la maison. | علت را اول بیاور و نتیجه را با c'est pourquoi بگو.
+Elle parle très vite et je ne comprends rien. => Elle parle si vite que je ne comprends rien. ; Elle parle tellement vite que je ne comprends rien. | با si … que یک جمله بساز.
+Il était trop fatigué{fatigué} qu'il s'est couché. => Il était tellement fatigué{fatigué} qu'il s'est couché. ; Il était si fatigué{fatigué} qu'il s'est couché. | جمله را درست کن.
+Il y a une grève, donc je prends mon vélo. => Il y a une grève ; par conséquent, je prends mon vélo. ; Il y a une grève, par conséquent je prends mon vélo. | donc را با par conséquent عوض کن.
+translations:
+آن‌قدر خسته بودم که زود خوابیدم. => J'étais tellement fatigué{fatigué} que je me suis couché tôt. ; J'étais tellement fatiguée{fatigué} que je me suis couchée tôt. ; J'étais si fatigué{fatigué} que je me suis couché tôt. ; J'étais si fatiguée{fatigué} que je me suis couchée tôt. ; J'étais tellement fatigué{fatigué} que je me suis endormi tôt. ; J'étais tellement fatiguée{fatigué} que je me suis endormie tôt. ; J'étais si fatigué{fatigué} que je me suis endormi tôt. ; J'étais si fatiguée{fatigué} que je me suis endormie tôt.
+پل پول نداشت، برای همین نیامد. => Paul n'avait pas d'argent, c'est pourquoi il n'est pas venu. ; Paul n'avait pas d'argent, c'est pour ça qu'il n'est pas venu. ; Paul n'avait pas d'argent, donc il n'est pas venu. ; Paul n'avait pas d'argent, alors il n'est pas venu. ; Paul n'avait pas d'argent, si bien qu'il n'est pas venu. ; Paul n'avait pas d'argent ; par conséquent, il n'est pas venu.
+آن‌قدر کار دارم که نمی‌توانم بیایم. => J'ai tellement de travail que je ne peux pas venir. ; J'ai tant de travail que je ne peux pas venir.
+او (زن) آن‌قدر تند حرف می‌زند که هیچ‌چیز نمی‌فهمم. => Elle parle tellement vite que je ne comprends rien. ; Elle parle si vite que je ne comprends rien.
+قطار تأخیر داشت، در نتیجه پل دیر رسید. => Le train avait du retard, si bien que Paul est arrivé en retard. ; Le train avait du retard ; par conséquent, Paul est arrivé en retard. ; Le train avait du retard, par conséquent Paul est arrivé en retard. ; Le train avait du retard, donc Paul est arrivé en retard. ; Le train était en retard, si bien que Paul est arrivé en retard. ; Le train était en retard ; par conséquent, Paul est arrivé en retard. ; Le train était en retard, par conséquent Paul est arrivé en retard. ; Le train était en retard, donc Paul est arrivé en retard.
+آن‌قدر خورد که دلش درد گرفت. => Il a tellement mangé qu'il a eu mal au ventre. ; Il a tant mangé qu'il a eu mal au ventre. ; Elle a tellement mangé qu'elle a eu mal au ventre. ; Elle a tant mangé qu'elle a eu mal au ventre.
+فیلم آن‌قدر جالب بود که دو بار دیدمش. => Le film était tellement intéressant que je l'ai vu deux fois. ; Le film était si intéressant que je l'ai vu deux fois.
+دیشب خیلی برف آمد؛ در نتیجه مدرسه‌ها تعطیل‌اند. => Il a beaucoup neigé cette nuit ; par conséquent, les écoles sont fermées{fermé}. ; Il a beaucoup neigé cette nuit, par conséquent les écoles sont fermées{fermé}. ; Il a beaucoup neigé cette nuit, si bien que les écoles sont fermées{fermé}. ; Il a beaucoup neigé cette nuit, donc les écoles sont fermées{fermé}. ; Il a beaucoup neigé cette nuit, c'est pourquoi les écoles sont fermées{fermé}.

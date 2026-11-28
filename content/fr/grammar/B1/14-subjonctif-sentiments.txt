@@ -1,0 +1,88 @@
+code: fr-b1-subjonctif-sentiments
+title: subjonctif بعد از احساس‌ها: je suis content que tu sois là
+scope: subjonctif بعد از صفت‌ها و عبارت‌های احساس: être content / heureux / triste / désolé / surpris / fâché que، avoir peur que، regretter que، c'est dommage que، ça m'étonne que، ça m'énerve que، c'est bizarre que؛ با فاعل یکسان de + مصدر (je suis content de venir / que tu viennes)، فقط برای حال و آینده؛ subjonctif گذشته (que tu sois venu) در B2 می‌آید و subjonctif بعد از نظر و شک در درس‌های بعد.
+can_do: حالا می‌توانی بگویی از کار دیگران خوشحالی، ناراحتی، می‌ترسی یا تعجب می‌کنی: Je suis content que tu sois là. C'est dommage que vous partiez. J'ai peur qu'il fasse mauvais.
+rule: بعد از احساس‌ها (être content / triste / désolé / surpris que، avoir peur que، regretter que، c'est dommage que، ça m'étonne que) فعل دوم subjonctif است؛ با فاعل یکسان de + مصدر: je suis content de venir / je suis content que tu viennes.
+mistake: در فارسی بعد از «خوشحالم که» فعل معمولی می‌آید، برای همین فارسی‌زبان‌ها می‌گویند «je suis content que tu es là» یا «c'est dommage que tu ne peux pas venir»؛ درست: que tu sois là، que tu ne puisses pas venir. با فاعل یکسان هم que می‌آورند («je suis désolé que je suis en retard»)؛ درست: je suis désolé d'être en retard.
+lesson:
+در فارسی بعد از احساس‌ها معمولاً فعل معمولی می‌آید: «خوشحالم که اینجایی»، «حیف است که نمی‌آیی». فرانسوی این‌جا subjonctif می‌آورد: Je suis content que tu sois là.
+صفت‌های احساس با être و que: être content، heureux، triste، désolé، surpris، fâché que: Elle est triste que son fils parte.
+فعل‌ها و عبارت‌ها: avoir peur que (ترسیدن)، regretter que (متأسف بودن)، c'est dommage que (حیف است که)، ça m'étonne que (تعجب می‌کنم که)، ça m'énerve que (اعصابم خرد می‌شود که)، c'est bizarre que (عجیب است که).
+حتی وقتی کار واقعاً دارد انجام می‌شود، subjonctif می‌آید، چون جمله دربارهٔ احساس ماست: C'est dommage que le musée soit fermé.
+اگر فاعل دو قسمت یکی باشد، de + مصدر: Je suis content de partir (خوشحالم که می‌روم)، در برابر Je suis content que tu partes (خوشحالم که تو می‌روی).
+همین‌طور: J'ai peur de perdre / J'ai peur que tu perdes؛ Je regrette de partir / Je regrette que vous partiez.
+در منفیِ مصدر، ne pas با هم پیش از مصدر می‌آیند: Je regrette de ne pas pouvoir venir. de پیش از صدادار d' می‌شود: Je suis content d'être ici.
+در نوشتهٔ رسمی گاهی بعد از avoir peur que یک ne می‌بینی (J'ai peur qu'il ne pleuve)؛ این ne منفی نیست و لازم هم نیست.
+این درس فقط دربارهٔ حال و آینده است: Je suis content que tu viennes demain. برای کاری که گذشته («خوشحالم که آمدی») شکل دیگری از subjonctif لازم است که در سطح B2 می‌آید.
+مواظب باش: «je suis content que tu es là» غلط است و درستش je suis content que tu sois là است؛ «je suis content que je parte» هم غلط است و درستش je suis content de partir.
+table:
+احساس | فاعل یکی: de + مصدر | فاعل دیگر: que + subjonctif
+être content | Je suis content de venir. | Je suis content que tu viennes.
+avoir peur | J'ai peur de perdre. | J'ai peur que tu perdes.
+regretter | Je regrette de partir. | Je regrette que vous partiez.
+c'est dommage | C'est dommage de rester ici. | C'est dommage qu'il reste ici.
+examples:
+Je suis content que tu sois là. | خوشحالم که اینجایی.
+C'est dommage que vous ne puissiez pas venir. | حیف است که نمی‌توانید بیایید.
+J'ai peur que le train parte sans nous. | می‌ترسم قطار بدون ما برود.
+Je suis désolé d'être en retard. | ببخشید که دیر کردم.
+Ça m'étonne que Paul ne réponde pas. | تعجب می‌کنم که پل جواب نمی‌دهد.
+targets:
+Je suis content que tu [sois] là ce soir. | خوشحالم که امشب اینجایی. | d: es, être, seras | hint: (être)
+Nous sommes heureux que vous [veniez] à notre mariage. | خوشحالیم که به عروسی‌مان می‌آیید. | d: venez, venir, viendrez | hint: (venir)
+Elle est triste que son fils [parte] vivre au Canada. | او (زن) ناراحت است که پسرش برای زندگی به کانادا می‌رود. | d: part, partir, partira | hint: (partir)
+Je suis désolé que tu [aies] tant de travail cette semaine. | متأسفم که این هفته این‌قدر کار داری. | d: as, avoir, auras | hint: (avoir)
+Ses parents sont heureux qu'il [réussisse] si{si-adv} bien à l'université. | پدر و مادرش خوشحال‌اند که در دانشگاه این‌قدر موفق است. | d: réussit, réussir, réussira | hint: (réussir)
+Je suis surpris que Paul ne [veuille] pas venir. | تعجب کرده‌ام که پل نمی‌خواهد بیاید. | d: veut, vouloir, voudra | hint: (vouloir)
+J'ai peur qu'il [fasse] mauvais ce week-end. | می‌ترسم این آخر هفته هوا بد باشد. | d: fait, faire, fera | hint: (faire)
+Tu as peur que tes collègues [sachent] la vérité ? | می‌ترسی همکارانت حقیقت را بفهمند؟ | d: savent, savoir, sauront | hint: (savoir)
+C'est dommage que vous ne [puissiez] pas rester plus longtemps. | حیف است که نمی‌توانید بیشتر بمانید. | d: pouvez, pouvoir, pourrez | hint: (pouvoir)
+C'est dommage que le musée [soit] fermé le lundi. | حیف است که موزه دوشنبه‌ها تعطیل است. | d: est, être, sera | hint: (être)
+Je regrette que tu ne [connaisses] pas mes parents. | متأسفم که پدر و مادرم را نمی‌شناسی. | d: connais, connaître, connaîtras | hint: (connaître)
+Nous regrettons que le magasin [ferme]{fermer} si{si-adv} tôt. | متأسفیم که مغازه این‌قدر زود می‌بندد. | d: fermer, fermait, fermera | hint: (fermer)
+Ça m'étonne que Marie ne [réponde] pas au téléphone. | تعجب می‌کنم که ماری تلفن را جواب نمی‌دهد. | d: répond, répondre, répondra | hint: (répondre)
+Ça m'étonne qu'ils [vendent] leur maison. | تعجب می‌کنم که دارند خانه‌شان را می‌فروشند. | d: vendre, vendront, vendiez | hint: (vendre)
+Je suis content de [partir] en vacances demain. | خوشحالم که فردا به تعطیلات می‌روم. | d: parte, partes, pars | hint: (partir)
+Elle est triste de [quitter] ses amis. | او (زن) ناراحت است که از دوستانش جدا می‌شود. | d: quitte, quittes, quittions | hint: (quitter)
+Nous avons peur de [perdre] le train. | می‌ترسیم قطار را از دست بدهیم. | d: perdions, perdons, perde | hint: (perdre)
+Tu n'as pas peur de [conduire] la nuit ? | نمی‌ترسی شب‌ها رانندگی کنی؟ | d: conduises, conduis, conduise | hint: (conduire)
+Je regrette de ne pas [pouvoir] venir samedi. | متأسفم که نمی‌توانم شنبه بیایم. | d: puisse, peux, puissions | hint: (pouvoir)
+Je suis heureux que nous [soyons] enfin ensemble. | خوشحالم که بالاخره با هم هستیم. | d: sommes, être, serons
+Mon grand-père est content que je lui [rende] visite chaque semaine. | پدربزرگم خوشحال است که هر هفته به دیدنش می‌روم. | d: rends, rendre, rendrai | hint: (rendre)
+Les professeurs sont surpris que les élèves [aient] de si{si-adv} bonnes notes. | معلم‌ها تعجب کرده‌اند که دانش‌آموزان این‌قدر نمره‌های خوبی دارند. | d: ont, avoir, auront | hint: (avoir)
+J'ai peur que les enfants [prennent] froid dehors. | می‌ترسم بچه‌ها بیرون سرما بخورند. | d: prendre, prendront, preniez | hint: (prendre)
+Ça m'énerve que mon voisin [mette] sa musique toute la nuit. | اعصابم خرد می‌شود که همسایه‌ام تمام شب موسیقی‌اش را می‌گذارد. | d: met, mettre, mettra | hint: (mettre)
+Ça me gêne que tu [dises] ça devant tout le monde. | ناراحتم می‌کند که این را جلوی همه می‌گویی. | d: dis, dire, diras | hint: (dire)
+C'est bizarre que le bus n'[arrive] pas. | عجیب است که اتوبوس نمی‌آید. | d: arriver, arrivait, arrivera | hint: (arriver)
+Je suis fâché que tu ne m'[écoutes] jamais. | دلخورم که هیچ‌وقت به حرفم گوش نمی‌دهی. | d: écouter, écoutais, écouteras | hint: (écouter)
+Elle est contente que son frère [vienne] la voir à Lyon. | او (زن) خوشحال است که برادرش به دیدنش در لیون می‌آید. | d: vient, venir, viendra
+Je suis désolé que vous [deviez] attendre si{si-adv} longtemps. | متأسفم که باید این‌قدر منتظر بمانید. | d: devez, devoir, devrez | hint: (devoir)
+Nous sommes contents que notre fille [aille] à l'université. | خوشحالیم که دخترمان به دانشگاه می‌رود. | d: va, aller, ira | hint: (aller)
+Le médecin a peur que ma mère ne [boive] pas assez d'eau. | پزشک نگران است که مادرم به اندازهٔ کافی آب ننوشد. | d: boit, boire, boira | hint: (boire)
+C'est dommage qu'on ne [voie]{voir} plus Thomas. | حیف است که دیگر توما را نمی‌بینیم. | d: voir, voyiez, verra | hint: (voir)
+Je suis triste que tu ne me [croies] pas. | ناراحتم که حرفم را باور نمی‌کنی. | d: croire, croyiez, croiras | hint: (croire)
+Je suis content de te [voir] et je suis heureux que tu [sois] en bonne santé. | از دیدنت خوشحالم و خوشحالم که سالمی. | d: voie, vois, voies / es, être, seras
+Elle est triste de [partir], mais elle est contente que nous [venions] la voir. | او (زن) ناراحت است که می‌رود، ولی خوشحال است که به دیدنش می‌آییم. | d: parte, partes, part / venons, venir, viendrons
+J'ai peur que la réunion [finisse] tard et que je [sois] fatigué demain. | می‌ترسم جلسه دیر تمام شود و فردا خسته باشم. | d: finit, finir, finira / suis, être, serai
+C'est dommage que tu [doives] partir et que nous ne [puissions] pas manger ensemble. | حیف است که باید بروی و نمی‌توانیم با هم غذا بخوریم. | d: dois, devoir, devras / pouvons, pouvoir, pourrons
+Ça m'étonne que Léa [fasse] ce travail et qu'elle ne [dise] rien. | تعجب می‌کنم که لئا این کار را می‌کند و چیزی نمی‌گوید. | d: fait, faire, fera / dit, dire, dira
+Je regrette que vous [partiez] et que je ne [puisse] pas vous accompagner. | متأسفم که می‌روید و نمی‌توانم همراهتان بیایم. | d: partez, partir, partirez / peux, pouvoir, pourrai
+Nous sommes surpris qu'il [soit] malade et qu'il ne [prenne] pas de médicaments. | تعجب کرده‌ایم که مریض است و دارو نمی‌خورد. | d: est, être, sera / prend, prendre, prendra
+transforms:
+Tu es là. Je suis content. => Je suis content que tu sois là. | دو جمله را با que یک جمله کن.
+Vous ne pouvez pas venir. C'est dommage. => C'est dommage que vous ne puissiez pas venir. | با c'est dommage que یک جمله کن.
+Il part demain. Elle est triste. => Elle est triste qu'il parte demain. | دو جمله را با que یک جمله کن.
+Le train est en retard. Ça m'étonne. => Ça m'étonne que le train soit en retard. | با ça m'étonne que یک جمله کن.
+Je pars. Je suis content. => Je suis content de partir. | فاعل یکی است: با de + مصدر یک جمله کن.
+J'ai peur que tu perdes ton travail. => J'ai peur de perdre mon travail. | جمله را برای خودت (je) بنویس.
+Tu ne m'écoutes pas. Je regrette. => Je regrette que tu ne m'écoutes pas. | با je regrette que یک جمله کن.
+Ils vendent leur maison. Nous sommes surpris. => Nous sommes surpris qu'ils vendent leur maison. | با que یک جمله کن.
+translations:
+خوشحالم که اینجایی. => Je suis content que tu sois là. ; Je suis contente que tu sois là. ; Je suis heureux que tu sois là. ; Je suis heureuse que tu sois là. ; Je suis content que tu sois ici. ; Je suis contente que tu sois ici. ; Je suis heureux que tu sois ici. ; Je suis heureuse que tu sois ici.
+حیف است که نمی‌توانی بیایی. => C'est dommage que tu ne puisses pas venir. ; Dommage que tu ne puisses pas venir.
+می‌ترسم دیر برسیم. => J'ai peur que nous arrivions en retard. ; J'ai peur qu'on arrive en retard. ; J'ai peur que nous soyons en retard. ; J'ai peur qu'on soit en retard.
+تعجب می‌کنم که او (مرد) جواب نمی‌دهد. => Ça m'étonne qu'il ne réponde pas. ; Je suis surpris qu'il ne réponde pas. ; Je suis surprise qu'il ne réponde pas.
+متأسفم که باید بروید. => Je suis désolé que vous deviez partir. ; Je suis désolée que vous deviez partir. ; Je regrette que vous deviez partir.
+خوشحالم که فردا به تعطیلات می‌روم. => Je suis content de partir en vacances demain. ; Je suis contente de partir en vacances demain. ; Je suis heureux de partir en vacances demain. ; Je suis heureuse de partir en vacances demain.
+ناراحتم که حرفم را باور نمی‌کنی. => Je suis triste que tu ne me croies pas.
+پدر و مادرش خوشحال‌اند که او (زن) به دانشگاه می‌رود. => Ses parents sont contents qu'elle aille à l'université. ; Ses parents sont heureux qu'elle aille à l'université.
