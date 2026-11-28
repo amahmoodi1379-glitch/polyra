@@ -21,7 +21,7 @@ reading B:
 listening A:
 {"type":"mcq","prompt":"مادربزرگ می‌خواهد لئا با چه کسی بیاید؟","options":["با مادرش","با دوستش","با برادرش","با خواهرش"],"correct":2,"explanation_fa":"مادربزرگ می‌گوید: «avec ton frère»، یعنی با برادرت."}
 {"type":"tf","prompt":"مادربزرگ می‌گوید گیلاس‌ها برای او زیادی است.","correct":true,"explanation_fa":"مادربزرگ می‌گوید: «J'en ai trop pour moi.»، یعنی برای من زیادی است."}
-{"type":"tf","prompt":"مادربزرگ لئا را برای شنبه دعوت می‌کند.","correct":false,"explanation_fa":"مادربزرگ می‌گوید: «Tu veux venir dimanche ?» و «À dimanche»، یعنی یکشنبه."}
+{"type":"tf","prompt":"مادربزرگ لئا را برای شنبه دعوت می‌کند.","correct":false,"explanation_fa":"مادربزرگ می‌گوید: «Tu veux venir dimanche avec ton frère ?» و «À dimanche»، یعنی یکشنبه."}
 listening B:
 {"type":"dict","sentence":3}
 {"type":"mcq","prompt":"پدربزرگ از بازار چه خریده است؟","options":["یک طالبی بزرگ","گیلاس","یک کیک","یک کیسهٔ بزرگ"],"correct":0,"explanation_fa":"مادربزرگ می‌گوید: «ton grand-père a acheté un gros melon au marché»، یعنی یک طالبی بزرگ."}

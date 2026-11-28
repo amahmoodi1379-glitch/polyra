@@ -1,10 +1,10 @@
 code: fr-a2-t032
-title: Vacances à Nice
+title: Trop de soleil
 band: 2
 kind: email
 sentences:
-- Salut Camille ! | سلام کامی!
-- Je suis à Nice avec mes parents pour une semaine. | یک هفته با پدر و مادرم در نیس هستم.
+- Salut Camille ! | سلام کامیل!
+- Je suis en Espagne avec mes parents pour une semaine. | یک هفته با پدر و مادرم در اسپانیا هستم.
 - Il fait très chaud et la mer est très belle. | هوا خیلی گرم است و دریا خیلی زیباست.
 - Mais le premier jour, je suis restée trois heures au soleil, sans chapeau. | ولی روز اول سه ساعت بدون کلاه زیر آفتاب ماندم.
 - Le soir, ma peau était très rouge, surtout le front, les joues et les épaules. | شب پوستم خیلی قرمز بود، مخصوصاً پیشانی، گونه‌ها و شانه‌هایم.
@@ -19,18 +19,18 @@ reading A:
 {"type":"mcq","prompt":"روز اول چه اتفاقی برای ژولی افتاد؟","options":["کلاهش را در ساحل گم کرد","سه ساعت بی‌کلاه زیر آفتاب ماند","در دریا خیلی زیاد شنا کرد","در شهر قدیمی گم شد"],"correct":1,"explanation_fa":"ژولی می‌نویسد: «le premier jour, je suis restée trois heures au soleil, sans chapeau»، یعنی سه ساعت بدون کلاه زیر آفتاب ماند."}
 {"type":"tf","prompt":"پیشانی ژولی قرمز شد.","correct":true,"explanation_fa":"ژولی می‌نویسد: «ma peau était très rouge, surtout le front»، یعنی مخصوصاً پیشانی‌اش قرمز بود."}
 {"type":"tf","prompt":"ژولی حالا تمام روز در ساحل می‌ماند.","correct":false,"explanation_fa":"ژولی می‌نویسد: «je vais à la plage seulement le matin et le soir»، یعنی فقط صبح‌ها و عصرها به ساحل می‌رود."}
-{"type":"mcq","prompt":"مادر ژولی دربارهٔ آفتاب چه می‌گوید؟","options":["برای پوست و سلامتی خطرناک است","برای بچه‌ها خیلی خوب است","فقط صبح‌ها خطرناک است","در نیس زیاد داغ نیست"],"correct":0,"explanation_fa":"مادرش می‌گوید: «Le soleil est dangereux pour la peau et pour la santé !»، یعنی آفتاب برای پوست و سلامتی خطرناک است."}
+{"type":"mcq","prompt":"مادر ژولی دربارهٔ آفتاب چه می‌گوید؟","options":["برای پوست و سلامتی خطرناک است","برای بچه‌ها خیلی خوب است","فقط صبح‌ها خطرناک است","اینجا زیاد داغ نیست"],"correct":0,"explanation_fa":"مادرش می‌گوید: «Le soleil est dangereux pour la peau et pour la santé !»، یعنی آفتاب برای پوست و سلامتی خطرناک است."}
 reading B:
 {"type":"order","prompt":"این‌ها را به ترتیب اتفاق‌ها بچین.","items":["پوست ژولی قرمز شد.","ژولی و پدر و مادرش شهر قدیمی را دیدند.","ژولی سه ساعت زیر آفتاب ماند.","ژولی شنبه به خانه برمی‌گردد."],"correct_order":[2,0,1,3],"explanation_fa":"اول «je suis restée trois heures au soleil»، بعد «ma peau était très rouge»، بعد «Hier, nous avons visité la vieille ville» و آخر «Je rentre samedi»."}
-{"type":"find","prompt":"کدام جمله می‌گوید ژولی کی به کامی زنگ می‌زند؟","correct_sentence":10,"explanation_fa":"ژولی می‌نویسد: «Je t'appelle dimanche ?»، یعنی یکشنبه به تو زنگ بزنم؟"}
+{"type":"find","prompt":"کدام جمله می‌گوید ژولی کی به کامیل زنگ می‌زند؟","correct_sentence":10,"explanation_fa":"ژولی می‌نویسد: «Je t'appelle dimanche ?»، یعنی یکشنبه به تو زنگ بزنم؟"}
 {"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Le soir, ma {{1}} était très rouge, surtout le {{2}}, les joues et les épaules.","bank":["peau","front","bouche","dos","tête"],"answers":["peau","front"],"explanation_fa":"ژولی می‌نویسد: «ma peau était très rouge, surtout le front»، یعنی پوستم قرمز بود، مخصوصاً پیشانی."}
 listening A:
 {"type":"num","prompt":"ژولی روز اول چند ساعت زیر آفتاب ماند؟","answer":"3","accepted":["3","trois"],"explanation_fa":"ژولی می‌گوید: «je suis restée trois heures au soleil»، یعنی سه ساعت."}
 {"type":"tf","prompt":"ژولی سردرد هم داشت.","correct":true,"explanation_fa":"ژولی می‌گوید: «J'avais aussi mal à la tête.»، یعنی سرم هم درد می‌کرد."}
-{"type":"tf","prompt":"ژولی تنها به نیس رفته است.","correct":false,"explanation_fa":"ژولی می‌گوید: «Je suis à Nice avec mes parents»، یعنی با پدر و مادرش آنجاست."}
+{"type":"tf","prompt":"ژولی تنها به اسپانیا رفته است.","correct":false,"explanation_fa":"ژولی می‌گوید: «Je suis en Espagne avec mes parents»، یعنی با پدر و مادرش آنجاست."}
 {"type":"mcq","prompt":"ژولی حالا برای آفتاب چه کار می‌کند؟","options":["تمام روز در هتل می‌ماند","یک کلاه بزرگ سرش می‌گذارد","دیگر به ساحل نمی‌رود","فقط ظهرها به ساحل می‌رود"],"correct":1,"explanation_fa":"ژولی می‌گوید: «je porte un grand chapeau»، یعنی یک کلاه بزرگ سرم می‌گذارم."}
 listening B:
 {"type":"mcq","prompt":"ژولی کی به خانه برمی‌گردد؟","options":["جمعه","یکشنبه","شنبه","دوشنبه"],"correct":2,"explanation_fa":"ژولی می‌گوید: «Je rentre samedi.»، یعنی شنبه برمی‌گردم."}
 {"type":"tf","prompt":"دیروز بستنی خوردند.","correct":true,"explanation_fa":"ژولی می‌گوید: «Hier, … nous avons mangé une glace délicieuse.»، یعنی دیروز بستنی خوردیم."}
-{"type":"tf","prompt":"هوای نیس سرد است.","correct":false,"explanation_fa":"ژولی می‌گوید: «Il fait très chaud»، یعنی هوا خیلی گرم است."}
+{"type":"tf","prompt":"آنجا هوا سرد است.","correct":false,"explanation_fa":"ژولی می‌گوید: «Il fait très chaud»، یعنی هوا خیلی گرم است."}
 {"type":"order","prompt":"این‌ها را به ترتیبی که می‌شنوی بچین.","items":["مادر ژولی از خطر آفتاب می‌گوید.","ژولی از گرمای هوا و دریا می‌گوید.","ژولی می‌پرسد یکشنبه زنگ بزند یا نه.","ژولی از پوست قرمزش می‌گوید."],"correct_order":[1,3,0,2],"explanation_fa":"اول «Il fait très chaud»، بعد «ma peau était très rouge»، بعد حرف مادر دربارهٔ آفتاب و آخر «Je t'appelle dimanche ?»."}

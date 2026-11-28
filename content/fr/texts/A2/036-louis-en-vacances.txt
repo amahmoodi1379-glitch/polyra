@@ -1,5 +1,5 @@
 code: fr-a2-t036
-title: À la montagne
+title: Louis en vacances
 band: 2
 kind: email
 sentences:
@@ -23,7 +23,7 @@ reading A:
 reading B:
 {"type":"match","prompt":"هر وقت روز را به کارش وصل کن.","left":["صبح","بعدازظهر"],"right":["شنا در دریاچه","راه رفتن در جنگل","تماشای تلویزیون"],"pairs":[[0,1],[1,0]],"explanation_fa":"لویی می‌نویسد: «Après, on marche dans la forêt, et l'après-midi, on nage dans le lac.»، یعنی صبح در جنگل راه می‌روند و بعدازظهر شنا می‌کنند."}
 {"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Je m'amuse beaucoup avec les autres {{1}} de ma {{2}}.","bank":["garçons","chambre","filles","classe","maison"],"answers":["garçons","chambre"],"explanation_fa":"لویی می‌نویسد: «avec les autres garçons de ma chambre»، یعنی با پسرهای دیگر اتاقم."}
-{"type":"mcq","prompt":"لویی از پدر و مادرش چه می‌خواهد؟","options":["برایش حوله بفرستند","برایش مسواک بفرستند","شنبه زودتر بیایند","به لوکا زنگ بزنند"],"correct":1,"explanation_fa":"لویی می‌نویسد: «Vous pouvez m'envoyer une brosse à dents ?»؛ برای حوله می‌گوید «ce n'est pas grave»، چون لوکا دو تا دارد."}
+{"type":"mcq","prompt":"لویی از پدر و مادرش چه می‌خواهد؟","options":["برایش حوله بفرستند","برایش مسواک بفرستند","شنبه زودتر بیایند","به لوکا زنگ بزنند"],"correct":1,"explanation_fa":"لویی می‌نویسد: «Vous pouvez m'envoyer une brosse à dents, s'il vous plaît ?»؛ برای حوله می‌گوید «ce n'est pas grave»، چون لوکا دو تا دارد."}
 listening A:
 {"type":"num","prompt":"بچه‌ها صبح چند دقیقه برای شستن وقت دارند؟","answer":"10","accepted":["10","dix"],"explanation_fa":"لویی می‌گوید: «on a seulement dix minutes pour se laver»، یعنی فقط ده دقیقه."}
 {"type":"mcq","prompt":"لویی کجاست؟","options":["کنار دریا","در یک شهر بزرگ","پیش مادربزرگش","در کوهستان"],"correct":3,"explanation_fa":"لویی می‌گوید: «Ici, à la montagne, ça va très bien.»، یعنی اینجا در کوهستان."}

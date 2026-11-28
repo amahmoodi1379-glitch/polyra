@@ -1,0 +1,27 @@
+code: fr-a2-t031
+title: Le samedi à vélo
+band: 1
+kind: ad
+sentences:
+- Vous avez mal aux genoux quand vous courez ? | وقتی می‌دوید، زانوهایتان درد می‌کند؟
+- Vous voulez perdre du poids ? | می‌خواهید وزن کم کنید؟
+- Essayez le vélo avec notre groupe : c'est bon pour les genoux ! | دوچرخه‌سواری را با گروه ما امتحان کنید: برای زانوها خوب است!
+- Le samedi, rendez-vous à 9 heures devant la gare. | شنبه‌ها ساعت ۹ جلوی ایستگاه قطار قرار داریم. | tts: Le samedi, rendez-vous à neuf heures devant la gare.
+- On fait deux heures de vélo à la campagne et on mange ensemble. | دو ساعت بیرون شهر دوچرخه‌سواری می‌کنیم و با هم غذا می‌خوریم.
+- Pas de vélo ? Nous en avons pour vous. | دوچرخه ندارید؟ ما برایتان داریم.
+- Le premier mois est gratuit ! | ماه اول رایگان است!
+reading A:
+{"type":"mcq","prompt":"این آگهی دربارهٔ چیست؟","options":["کلاس دویدن در پارک","مغازهٔ دوچرخه‌فروشی","گروه دوچرخه‌سواری","سفر با قطار به روستا"],"correct":2,"explanation_fa":"در آگهی آمده: «Essayez le vélo avec notre groupe»، یعنی دوچرخه‌سواری را با گروه ما امتحان کنید."}
+{"type":"tf","prompt":"برای ماه اول پولی نمی‌دهید.","correct":true,"explanation_fa":"در آگهی آمده: «Le premier mois est gratuit !»، یعنی ماه اول رایگان است."}
+{"type":"tf","prompt":"گروه یکشنبه‌ها دوچرخه‌سواری می‌کند.","correct":false,"explanation_fa":"در آگهی آمده: «Le samedi, rendez-vous à 9 heures»، یعنی قرار شنبه‌هاست، نه یکشنبه‌ها."}
+reading B:
+{"type":"match","prompt":"هر کار را به جایش وصل کن.","left":["قرار ساعت ۹","دوچرخه‌سواری"],"right":["بیرون شهر","جلوی ایستگاه قطار","در پارک"],"pairs":[[0,1],[1,0]],"explanation_fa":"در آگهی آمده: «rendez-vous à 9 heures devant la gare» و «deux heures de vélo à la campagne»، یعنی قرار جلوی ایستگاه است و دوچرخه‌سواری بیرون شهر."}
+{"type":"find","prompt":"کدام جمله دربارهٔ کسانی است که دوچرخه ندارند؟","correct_sentence":5,"explanation_fa":"در آگهی آمده: «Pas de vélo ? Nous en avons pour vous.»، یعنی دوچرخه ندارید؟ ما برایتان داریم."}
+listening A:
+{"type":"num","prompt":"قرار شنبه‌ها ساعت چند است؟","answer":"9","accepted":["9","9h","9:00","neuf"],"explanation_fa":"در آگهی می‌شنویم: «rendez-vous à 9 heures devant la gare»؛ قرار ساعت ۹ است."}
+{"type":"mcq","prompt":"آگهی می‌گوید دوچرخه‌سواری برای چه خوب است؟","options":["برای کمر","برای گردن","برای زانوها","برای دندان‌ها"],"correct":2,"explanation_fa":"در آگهی می‌شنویم: «c'est bon pour les genoux !»، یعنی برای زانوها خوب است."}
+{"type":"tf","prompt":"گروه دو ساعت دوچرخه‌سواری می‌کند.","correct":true,"explanation_fa":"در آگهی می‌شنویم: «On fait deux heures de vélo à la campagne»، یعنی دو ساعت بیرون شهر دوچرخه‌سواری می‌کنیم."}
+{"type":"tf","prompt":"کسی که دوچرخه ندارد نمی‌تواند بیاید.","correct":false,"explanation_fa":"در آگهی می‌شنویم: «Pas de vélo ? Nous en avons pour vous.»، یعنی گروه برای کسی که دوچرخه ندارد دوچرخه دارد."}
+listening B:
+{"type":"dict","sentence":1}
+{"type":"mcq","prompt":"گروه غیر از دوچرخه‌سواری چه کار دیگری با هم می‌کند؟","options":["با هم شنا می‌کنند","با هم غذا می‌خورند","با هم فیلم می‌بینند","با هم می‌دوند"],"correct":1,"explanation_fa":"در آگهی می‌شنویم: «et on mange ensemble»، یعنی و با هم غذا می‌خوریم."}

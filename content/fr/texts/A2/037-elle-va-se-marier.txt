@@ -3,28 +3,28 @@ title: Elle va se marier !
 band: 1
 kind: dialogue
 sentences:
-A: Emma, tu sais quoi ? Ma sœur Chloé va se marier ! | اِما، می‌دانی چه شده؟ خواهرم کلوئه می‌خواهد ازدواج کند!
-B: Avec Pierre ? Je suis vraiment surprise ! | با پی‌یر؟ واقعاً تعجب کردم!
+A: Lucas, tu sais quoi ? Ma sœur Léa va se marier ! | لوکا، می‌دانی چه شده؟ خواهرم لئا می‌خواهد ازدواج کند!
+B: Avec Pierre ? Je suis vraiment surpris ! | با پی‌یر؟ واقعاً تعجب کردم!
 A: Oui ! Ils sont tombés amoureux à l'université. | آره! در دانشگاه عاشق هم شدند.
 B: Et tes parents ? | پدر و مادرت چه؟
 A: Ma mère pleure de joie, mais mon père est un peu fâché. | مادرم از خوشحالی گریه می‌کند، ولی پدرم کمی دلخور است.
 B: Pourquoi ? | چرا؟
 A: Il trouve Pierre trop jeune : il a seulement 22 ans. | به نظرش پی‌یر خیلی جوان است: فقط ۲۲ سال دارد. | tts: Il trouve Pierre trop jeune : il a seulement vingt-deux ans.
 B: Et le mariage, c'est quand ? | عروسی کی است؟
-A: En juin. Et tu es invitée ! | در ژوئن. تو هم دعوتی!
+A: En septembre. Et tu es invité ! | در سپتامبر. تو هم دعوتی!
 reading A:
-{"type":"mcq","prompt":"خبر مهم چیست؟","options":["کلوئه به دانشگاه می‌رود","کلوئه ازدواج می‌کند","پی‌یر کار تازه‌ای دارد","پدر کلوئه بیمار است"],"correct":1,"explanation_fa":"گفته می‌شود: «Ma sœur Chloé va se marier !»، یعنی خواهرم کلوئه می‌خواهد ازدواج کند."}
-{"type":"tf","prompt":"اِما از این خبر تعجب کرده است.","correct":true,"explanation_fa":"اِما می‌گوید: «Je suis vraiment surprise !»، یعنی واقعاً تعجب کردم."}
-{"type":"tf","prompt":"کلوئه و پی‌یر سر کار عاشق هم شدند.","correct":false,"explanation_fa":"گفته می‌شود: «Ils sont tombés amoureux à l'université.»، یعنی در دانشگاه عاشق هم شدند."}
+{"type":"mcq","prompt":"خبر مهم چیست؟","options":["لئا به شهر دیگری می‌رود","لئا ازدواج می‌کند","پی‌یر کار تازه‌ای دارد","پدر لئا بیمار است"],"correct":1,"explanation_fa":"گفته می‌شود: «Ma sœur Léa va se marier !»، یعنی خواهرم لئا می‌خواهد ازدواج کند."}
+{"type":"tf","prompt":"لوکا از این خبر تعجب کرده است.","correct":true,"explanation_fa":"لوکا می‌گوید: «Je suis vraiment surpris !»، یعنی واقعاً تعجب کردم."}
+{"type":"tf","prompt":"لئا و پی‌یر سر کار عاشق هم شدند.","correct":false,"explanation_fa":"گفته می‌شود: «Ils sont tombés amoureux à l'université.»، یعنی در دانشگاه عاشق هم شدند."}
 reading B:
 {"type":"match","prompt":"هر کس را به حالش وصل کن.","left":["مادر","پدر"],"right":["از خوشحالی گریه می‌کند","کمی دلخور است","خیلی نگران است"],"pairs":[[0,0],[1,1]],"explanation_fa":"گفته می‌شود: «Ma mère pleure de joie, mais mon père est un peu fâché.»"}
-{"type":"find","prompt":"کدام جمله می‌گوید عروسی کی است؟","correct_sentence":8,"explanation_fa":"گفته می‌شود: «En juin.»، یعنی عروسی در ژوئن است."}
-{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["اِما می‌پرسد عروسی کی است.","دوست اِما می‌گوید خواهرش ازدواج می‌کند.","دوست اِما می‌گوید پدرش کمی دلخور است.","اِما تعجب می‌کند."],"correct_order":[1,3,2,0],"explanation_fa":"اول خبر ازدواج، بعد «Je suis vraiment surprise !»، بعد «mon père est un peu fâché» و آخر «c'est quand ?»."}
+{"type":"find","prompt":"کدام جمله می‌گوید عروسی کی است؟","correct_sentence":8,"explanation_fa":"گفته می‌شود: «En septembre.»، یعنی عروسی در سپتامبر است."}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["لوکا می‌پرسد عروسی کی است.","دوست لوکا می‌گوید خواهرش ازدواج می‌کند.","دوست لوکا می‌گوید پدرش کمی دلخور است.","لوکا تعجب می‌کند."],"correct_order":[1,3,2,0],"explanation_fa":"اول خبر ازدواج، بعد «Je suis vraiment surpris !»، بعد «mon père est un peu fâché» و آخر «c'est quand ?»."}
 listening A:
 {"type":"num","prompt":"پی‌یر چند سال دارد؟","answer":"22","accepted":["22","vingt-deux"],"explanation_fa":"گفته می‌شود: «il a seulement 22 ans»، یعنی فقط ۲۲ سال دارد."}
-{"type":"mcq","prompt":"چرا پدر کلوئه دلخور است؟","options":["عروسی خیلی گران است","عروسی در شهر دیگری است","به نظرش پی‌یر خیلی جوان است","کلوئه هنوز درس می‌خواند"],"correct":2,"explanation_fa":"گفته می‌شود: «Il trouve Pierre trop jeune»، یعنی به نظرش پی‌یر خیلی جوان است."}
-{"type":"tf","prompt":"مادر کلوئه خوشحال است.","correct":true,"explanation_fa":"گفته می‌شود: «Ma mère pleure de joie»، یعنی مادرم از خوشحالی گریه می‌کند."}
-{"type":"tf","prompt":"اِما به عروسی دعوت نشده است.","correct":false,"explanation_fa":"آخر گفتگو گفته می‌شود: «Et tu es invitée !»، یعنی تو هم دعوتی."}
+{"type":"mcq","prompt":"چرا پدر لئا دلخور است؟","options":["عروسی خیلی گران است","عروسی در شهر دیگری است","به نظرش پی‌یر خیلی جوان است","لئا هنوز درس می‌خواند"],"correct":2,"explanation_fa":"گفته می‌شود: «Il trouve Pierre trop jeune»، یعنی به نظرش پی‌یر خیلی جوان است."}
+{"type":"tf","prompt":"مادر لئا خوشحال است.","correct":true,"explanation_fa":"گفته می‌شود: «Ma mère pleure de joie»، یعنی مادرم از خوشحالی گریه می‌کند."}
+{"type":"tf","prompt":"لوکا به عروسی دعوت نشده است.","correct":false,"explanation_fa":"آخر گفتگو گفته می‌شود: «Et tu es invité !»، یعنی تو هم دعوتی."}
 listening B:
 {"type":"dict","sentence":2}
-{"type":"mcq","prompt":"عروسی کی است؟","options":["در مه","در ژوئن","در ژوئیه","در اوت"],"correct":1,"explanation_fa":"گفته می‌شود: «En juin.»، یعنی در ژوئن."}
+{"type":"mcq","prompt":"عروسی کی است؟","options":["در ژوئن","در سپتامبر","در ژوئیه","در اوت"],"correct":1,"explanation_fa":"گفته می‌شود: «En septembre.»، یعنی در سپتامبر."}

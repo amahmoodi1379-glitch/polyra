@@ -1,0 +1,27 @@
+code: fr-a2-t039
+title: Restaurant Chiraz
+band: 1
+kind: menu
+sentences:
+- Chiraz : restaurant iranien | شیراز: رستوران ایرانی
+- Plat du jour : poulet au riz, 13 euros. | غذای روز: مرغ با برنج، ۱۳ یورو. | tts: Plat du jour : poulet au riz, treize euros.
+- Plat végétarien : riz aux légumes et soupe, 11 euros. | غذای گیاهی: برنج با سبزیجات و سوپ، ۱۱ یورو. | tts: Plat végétarien : riz aux légumes et soupe, onze euros.
+- Nos plats ne sont pas épicés. | غذاهای ما تند نیستند.
+- Dessert : une glace ou un gâteau aux fruits, 5 euros. | دسر: بستنی یا کیک میوه، ۵ یورو. | tts: Dessert : une glace ou un gâteau aux fruits, cinq euros.
+- Avec le dessert, le thé iranien est gratuit ! | با دسر، چای ایرانی رایگان است!
+- Ouvert{ouvert} du mardi au dimanche, de 12 heures à 23 heures. | از سه‌شنبه تا یکشنبه باز است، از ساعت ۱۲ تا ۲۳. | tts: Ouvert du mardi au dimanche, de douze heures à vingt-trois heures.
+reading A:
+{"type":"mcq","prompt":"غذای روز چیست؟","options":["برنج با سبزیجات","مرغ با برنج","سوپ سبزیجات","کیک میوه"],"correct":1,"explanation_fa":"در منو آمده: «Plat du jour : poulet au riz»، یعنی غذای روز مرغ با برنج است."}
+{"type":"tf","prompt":"در غذای گیاهی سوپ هم هست.","correct":true,"explanation_fa":"در منو آمده: «Plat végétarien : riz aux légumes et soupe»، یعنی غذای گیاهی برنج با سبزیجات و سوپ است."}
+{"type":"tf","prompt":"رستوران دوشنبه‌ها باز است.","correct":false,"explanation_fa":"در منو آمده: «Ouvert du mardi au dimanche»، یعنی از سه‌شنبه تا یکشنبه باز است و دوشنبه بسته است."}
+reading B:
+{"type":"match","prompt":"هر غذا را به قیمتش وصل کن.","left":["غذای روز","غذای گیاهی","دسر"],"right":["۵ یورو","۱۳ یورو","۸ یورو","۱۱ یورو"],"pairs":[[0,1],[1,3],[2,0]],"explanation_fa":"در منو آمده: «poulet au riz, 13 euros»، «riz aux légumes et soupe, 11 euros» و «Dessert : … 5 euros»."}
+{"type":"find","prompt":"کدام جمله می‌گوید غذاها تند نیستند؟","correct_sentence":3,"explanation_fa":"در منو آمده: «Nos plats ne sont pas épicés.»، یعنی غذاهای ما تند نیستند."}
+listening A:
+{"type":"num","prompt":"غذای گیاهی چند یورو است؟","answer":"11","accepted":["11","onze"],"explanation_fa":"می‌شنویم: «Plat végétarien : riz aux légumes et soupe, 11 euros.»، یعنی یازده یورو."}
+{"type":"mcq","prompt":"با دسر چه چیزی رایگان است؟","options":["قهوه","آب‌میوه","سوپ","چای"],"correct":3,"explanation_fa":"می‌شنویم: «Avec le dessert, le thé iranien est gratuit !»، یعنی با دسر چای ایرانی رایگان است."}
+{"type":"tf","prompt":"این رستوران غذای ایرانی دارد.","correct":true,"explanation_fa":"می‌شنویم: «Chiraz : restaurant iranien»، یعنی رستوران ایرانی است."}
+{"type":"tf","prompt":"رستوران ساعت ۱۰ صبح باز می‌شود.","correct":false,"explanation_fa":"می‌شنویم: «de 12 heures à 23 heures»، یعنی رستوران از ساعت ۱۲ باز است."}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"mcq","prompt":"رستوران کدام روزها باز است؟","options":["از دوشنبه تا جمعه","از سه‌شنبه تا یکشنبه","فقط آخر هفته‌ها","هر روز هفته"],"correct":1,"explanation_fa":"می‌شنویم: «Ouvert du mardi au dimanche»، یعنی از سه‌شنبه تا یکشنبه باز است."}

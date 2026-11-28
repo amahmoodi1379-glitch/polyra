@@ -6,7 +6,7 @@ key_words: garder, sportif, patient
 sentences:
 - Nous cherchons une personne pour garder nos deux enfants. | دنبال کسی هستیم که از دو بچه‌مان نگهداری کند.
 - C'est le mercredi, de 13 heures à 18 heures. | چهارشنبه‌هاست، از ساعت ۱۳ تا ۱۸. | tts: C'est le mercredi, de treize heures à dix-huit heures.
-- Hugo a 6 ans et Léa a 9 ans. | هوگو شش سال دارد و لئا نه سال. | tts: Hugo a six ans et Léa a neuf ans.
+- Hugo a 5 ans et Léa a 8 ans. | هوگو پنج سال دارد و لئا هشت سال. | tts: Hugo a cinq ans et Léa a huit ans.
 - Ils adorent le football et le vélo. | عاشق فوتبال و دوچرخه‌سواری هستند.
 - Vous êtes sportif et très patient ? | اهل ورزش و خیلی صبور هستید؟
 - Vous aimez jouer dehors, au parc ? | دوست دارید بیرون، در پارک، بازی کنید؟
@@ -20,9 +20,9 @@ reading B:
 {"type":"find","prompt":"کدام جمله می‌گوید برای هر ساعت چقدر پول می‌دهند؟","correct_sentence":6,"explanation_fa":"در آگهی آمده: «Nous payons 12 euros de l'heure.»، یعنی ساعتی ۱۲ یورو می‌دهند."}
 {"type":"mcq","prompt":"آن‌ها چه جور آدمی می‌خواهند؟","options":["آرام و اهل کتاب","اهل ورزش و صبور","جدی و کم‌حرف","اهل آشپزی و مهربان"],"correct":1,"explanation_fa":"در آگهی آمده: «Vous êtes sportif et très patient ?»، یعنی اهل ورزش و خیلی صبور هستید؟"}
 listening A:
-{"type":"num","prompt":"لئا چند سال دارد؟","answer":"9","accepted":["9","neuf"],"explanation_fa":"در آگهی می‌شنویم: «Léa a 9 ans»، یعنی لئا نه سال دارد."}
+{"type":"num","prompt":"لئا چند سال دارد؟","answer":"8","accepted":["8","huit"],"explanation_fa":"در آگهی می‌شنویم: «Léa a 8 ans»، یعنی لئا هشت سال دارد."}
 {"type":"num","prompt":"کار تا ساعت چند است؟","answer":"18","accepted":["18","18h","6","dix-huit"],"explanation_fa":"در آگهی می‌شنویم: «de 13 heures à 18 heures»، یعنی از ساعت ۱۳ تا ۱۸."}
-{"type":"tf","prompt":"هوگو از لئا کوچک‌تر است.","correct":true,"explanation_fa":"در آگهی می‌شنویم: «Hugo a 6 ans et Léa a 9 ans.»، یعنی هوگو شش سال دارد و لئا نه سال."}
+{"type":"tf","prompt":"هوگو از لئا کوچک‌تر است.","correct":true,"explanation_fa":"در آگهی می‌شنویم: «Hugo a 5 ans et Léa a 8 ans.»، یعنی هوگو پنج سال دارد و لئا هشت سال."}
 {"type":"tf","prompt":"آن‌ها برای سه بچه کسی را می‌خواهند.","correct":false,"explanation_fa":"در آگهی می‌شنویم: «garder nos deux enfants»، یعنی دو بچه، نه سه بچه."}
 listening B:
 {"type":"dict","sentence":3}
