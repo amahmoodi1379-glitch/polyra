@@ -1,0 +1,26 @@
+code: fr-a2-t005
+title: Le temps de demain
+kind: announcement
+sentences:
+- Bonjour ! Voici le temps{temps-2} de demain, samedi. | سلام! این هم وضع هوای فردا، شنبه.
+- Le matin, il va faire beau jusqu'à midi. | صبح تا ظهر هوا خوب است.
+- Malheureusement, l'après-midi, il va pleuvoir, surtout à la montagne. | متأسفانه بعدازظهر باران می‌آید، مخصوصاً در کوهستان.
+- Et il va faire plutôt froid. | هوا هم نسبتاً سرد می‌شود.
+- D'habitude, en mai, il fait chaud, mais pas demain ! | معمولاً در ماه مه هوا گرم است، ولی فردا نه!
+- À la mer, il va y avoir beaucoup de vent. | کنار دریا باد زیادی می‌آید.
+- Dimanche, heureusement, il va faire beau et chaud. | خوشبختانه یکشنبه هوا خوب و گرم است.
+- Bonne soirée ! | شب خوبی داشته باشید!
+reading A:
+{"type":"mcq","prompt":"فردا صبح هوا چطور است؟","options":["خوب است","بارانی است","برفی است","طوفانی است"],"correct":0,"explanation_fa":"در اعلام آمده: «Le matin, il va faire beau jusqu'à midi.»"}
+{"type":"tf","prompt":"فردا بعدازظهر در کوهستان باران می‌آید.","correct":true,"explanation_fa":"در اعلام آمده: «l'après-midi, il va pleuvoir, surtout à la montagne»."}
+{"type":"tf","prompt":"معمولاً ماه مه هوا سرد است.","correct":false,"explanation_fa":"در اعلام آمده: «D'habitude, en mai, il fait chaud»، یعنی معمولاً گرم است."}
+reading B:
+{"type":"find","prompt":"کدام جمله هوای یکشنبه را می‌گوید؟","correct_sentence":6,"explanation_fa":"در اعلام آمده: «Dimanche, heureusement, il va faire beau et chaud.»"}
+{"type":"match","prompt":"هر زمان را به هوایش وصل کن.","left":["شنبه صبح","شنبه بعدازظهر","یکشنبه"],"right":["هوای خوب تا ظهر","باران، مخصوصاً در کوهستان","گرم و آفتابی","برف در شهر"],"pairs":[[0,0],[1,1],[2,2]],"explanation_fa":"صبح «beau jusqu'à midi»، بعدازظهر «il va pleuvoir, surtout à la montagne» و یکشنبه «beau et chaud»."}
+listening A:
+{"type":"mcq","prompt":"این اعلام درباره چیست؟","options":["قیمت‌های یک فروشگاه","وضع هوا","ساعت قطارها","یک مسابقه فوتبال"],"correct":1,"explanation_fa":"گوینده می‌گوید «Voici le temps de demain» و از آفتاب و باران و باد حرف می‌زند."}
+{"type":"tf","prompt":"کنار دریا باد زیادی می‌آید.","correct":true,"explanation_fa":"گوینده می‌گوید: «À la mer, il va y avoir beaucoup de vent.»"}
+{"type":"tf","prompt":"یکشنبه هم باران می‌آید.","correct":false,"explanation_fa":"گوینده می‌گوید: «Dimanche, heureusement, il va faire beau et chaud.»"}
+listening B:
+{"type":"dict","sentence":1}
+{"type":"mcq","prompt":"این خبر هوا برای کدام روزهاست؟","options":["جمعه و شنبه","دوشنبه و سه‌شنبه","شنبه و یکشنبه","فقط یکشنبه"],"correct":2,"explanation_fa":"گوینده می‌گوید «demain, samedi» و بعد از «Dimanche» هم حرف می‌زند."}

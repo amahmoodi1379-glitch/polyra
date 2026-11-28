@@ -1,0 +1,26 @@
+code: fr-a2-t004
+title: Je suis malade
+kind: voice_message
+sentences:
+- Salut Julie, c'est Sophie. | سلام ژولی، سوفی هستم.
+- Désolée, ce soir, je ne viens pas au cinéma. | ببخشید، امشب به سینما نمی‌آیم.
+- J'ai mal à la tête, je suis complètement fatiguée. | سرم درد می‌کند و کاملاً خسته‌ام.
+- Heureusement, mon frère fait les courses pour moi. | خوشبختانه برادرم برایم خرید می‌کند.
+- Je reste au lit deux jours, au moins. | دست‌کم دو روز در رختخواب می‌مانم.
+- Va au cinéma quand même, avec Thomas ! | تو با این حال با توما به سینما برو!
+- En fait, je ne suis pas du tout triste : j'ai un bon livre ! | راستش اصلاً ناراحت نیستم: یک کتاب خوب دارم!
+- Salut ! | خداحافظ!
+reading A:
+{"type":"mcq","prompt":"سوفی چرا امشب به سینما نمی‌رود؟","options":["کار دارد","فیلم را دیده است","سرش درد می‌کند","پول ندارد"],"correct":2,"explanation_fa":"سوفی می‌گوید: «J'ai mal à la tête, je suis complètement fatiguée.»"}
+{"type":"tf","prompt":"برادر سوفی برای او خرید می‌کند.","correct":true,"explanation_fa":"سوفی می‌گوید: «mon frère fait les courses pour moi»."}
+{"type":"tf","prompt":"سوفی خیلی ناراحت است.","correct":false,"explanation_fa":"سوفی می‌گوید: «je ne suis pas du tout triste»، یعنی اصلاً ناراحت نیست."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید سوفی چند روز در خانه می‌ماند؟","correct_sentence":4,"explanation_fa":"سوفی می‌گوید: «Je reste au lit deux jours, au moins.»"}
+{"type":"order","prompt":"این‌ها را به ترتیب پیام بچین.","items":["سوفی از کتاب خوبش می‌گوید.","سوفی می‌گوید امشب به سینما نمی‌آید.","سوفی می‌گوید ژولی با توما به سینما برود.","سوفی می‌گوید سرش درد می‌کند."],"correct_order":[1,3,2,0],"explanation_fa":"اول «je ne viens pas au cinéma»، بعد «J'ai mal à la tête»، بعد «Va au cinéma quand même» و آخر «j'ai un bon livre»."}
+listening A:
+{"type":"num","prompt":"سوفی دست‌کم چند روز در رختخواب می‌ماند؟","answer":"2","accepted":["2","deux"],"explanation_fa":"سوفی می‌گوید: «Je reste au lit deux jours, au moins.»"}
+{"type":"mcq","prompt":"سوفی به ژولی چه پیشنهادی می‌دهد؟","options":["فردا به خانه‌اش بیاید","برایش دارو بخرد","فیلم را تنها ببیند","با توما به سینما برود"],"correct":3,"explanation_fa":"سوفی می‌گوید: «Va au cinéma quand même, avec Thomas !»"}
+listening B:
+{"type":"dict","sentence":1}
+{"type":"tf","prompt":"سوفی سردرد دارد.","correct":true,"explanation_fa":"سوفی می‌گوید: «J'ai mal à la tête»، یعنی سرش درد می‌کند."}
+{"type":"tf","prompt":"سوفی تنهاست و کسی به او کمک نمی‌کند.","correct":false,"explanation_fa":"سوفی می‌گوید: «mon frère fait les courses pour moi»، پس برادرش به او کمک می‌کند."}

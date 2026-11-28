@@ -1,0 +1,26 @@
+code: fr-a2-t006
+title: Chez Paul
+kind: menu
+sentences:
+- Chez Paul : menu d'été | «پیش پل»: منوی تابستانی
+- Ici, on mange dehors, dans le jardin. | اینجا بیرون، توی باغ، غذا می‌خوریم.
+- Les tables sont autour d'un grand arbre, avec des fleurs partout. | میزها دور یک درخت بزرگ چیده شده‌اند و همه‌جا گل هست.
+- Menu à 18 euros : salade de tomates, poulet aux légumes et glace. | منوی ۱۸ یورویی: سالاد گوجه‌فرنگی، مرغ با سبزیجات و بستنی. | tts: Menu à dix-huit euros : salade de tomates, poulet aux légumes et glace.
+- Ouvert{ouvert} tous les jours sauf le lundi, jusqu'à 23 heures. | هر روز به جز دوشنبه باز است، تا ساعت ۲۳. | tts: Ouvert tous les jours sauf le lundi, jusqu'à vingt-trois heures.
+- À cause de la pluie, le jardin est parfois fermé{fermé}. | گاهی به خاطر باران باغ بسته است.
+- Nous vous attendons ! | منتظر شما هستیم!
+reading A:
+{"type":"mcq","prompt":"میزهای رستوران کجا هستند؟","options":["کنار یک دریاچه","دور یک درخت بزرگ","توی یک سالن بزرگ","روی پشت‌بام"],"correct":1,"explanation_fa":"در منو آمده: «Les tables sont autour d'un grand arbre»."}
+{"type":"tf","prompt":"رستوران دوشنبه‌ها باز است.","correct":false,"explanation_fa":"در منو آمده: «Ouvert tous les jours sauf le lundi»، یعنی هر روز به جز دوشنبه."}
+{"type":"tf","prompt":"در منوی ۱۸ یورویی بستنی هم هست.","correct":true,"explanation_fa":"در منو آمده: «salade de tomates, poulet aux légumes et glace»."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید رستوران چه روزی بسته است؟","correct_sentence":4,"explanation_fa":"در منو آمده: «Ouvert tous les jours sauf le lundi»."}
+{"type":"match","prompt":"هر قسمت غذا را به چیزی که در منوست وصل کن.","left":["پیش‌غذا","غذای اصلی","دسر"],"right":["سالاد گوجه‌فرنگی","مرغ با سبزیجات","بستنی","سوپ ماهی"],"pairs":[[0,0],[1,1],[2,2]],"explanation_fa":"در منو آمده: «salade de tomates, poulet aux légumes et glace»."}
+listening A:
+{"type":"num","prompt":"منوی تابستانی چند یورو است؟","answer":"18","accepted":["18","dix-huit"],"explanation_fa":"گفته می‌شود: «Menu à 18 euros»."}
+{"type":"mcq","prompt":"چرا باغ رستوران گاهی بسته است؟","options":["به خاطر باد","به خاطر سرما","به خاطر باران","به خاطر برف"],"correct":2,"explanation_fa":"گفته می‌شود: «À cause de la pluie, le jardin est parfois fermé.»"}
+{"type":"tf","prompt":"در این رستوران بیرون غذا می‌خورند.","correct":true,"explanation_fa":"گفته می‌شود: «Ici, on mange dehors, dans le jardin.»"}
+{"type":"tf","prompt":"رستوران تا ساعت ۲۱ باز است.","correct":false,"explanation_fa":"گفته می‌شود «jusqu'à 23 heures»، یعنی تا ساعت ۲۳."}
+listening B:
+{"type":"dict","sentence":1}
+{"type":"mcq","prompt":"در باغ رستوران همه‌جا چه هست؟","options":["گل","چراغ","درخت میوه","صندلی"],"correct":0,"explanation_fa":"گفته می‌شود: «avec des fleurs partout»، یعنی همه‌جا گل هست."}

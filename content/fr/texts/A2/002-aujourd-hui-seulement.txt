@@ -1,0 +1,26 @@
+code: fr-a2-t002
+title: Aujourd'hui seulement
+kind: announcement
+sentences:
+- Bonjour et bienvenue dans votre magasin ! | سلام و به فروشگاه ما خوش آمدید!
+- Aujourd'hui seulement, le kilo de tomates coûte 1 euro. | فقط امروز، هر کیلو گوجه‌فرنگی یک یورو است. | tts: Aujourd'hui seulement, le kilo de tomates coûte un euro.
+- Les pommes et les oranges sont à 2 euros le kilo. | سیب و پرتقال کیلویی دو یورو است. | tts: Les pommes et les oranges sont à deux euros le kilo.
+- Certains fromages français{français} sont aussi moins chers cette semaine. | بعضی از پنیرهای فرانسوی هم این هفته ارزان‌ترند.
+- À la boulangerie, il reste juste quelques baguettes. | در نانوایی فقط چند تا باگت مانده است.
+- Ce soir, le magasin ferme tôt, à 19 heures. | امشب فروشگاه زود بسته می‌شود، ساعت ۱۹. | tts: Ce soir, le magasin ferme tôt, à dix-neuf heures.
+- Merci et bonne journée ! | ممنون و روز خوبی داشته باشید!
+reading A:
+{"type":"mcq","prompt":"فقط امروز چه چیزی کیلویی یک یورو است؟","options":["سیب","گوجه‌فرنگی","پرتقال","پنیر"],"correct":1,"explanation_fa":"در اعلام آمده: «Aujourd'hui seulement, le kilo de tomates coûte 1 euro.»"}
+{"type":"tf","prompt":"این هفته همه پنیرها ارزان‌ترند.","correct":false,"explanation_fa":"در اعلام آمده «Certains fromages»، یعنی فقط بعضی از پنیرها ارزان‌ترند، نه همه."}
+{"type":"tf","prompt":"سیب و پرتقال یک قیمت دارند.","correct":true,"explanation_fa":"در اعلام آمده: «Les pommes et les oranges sont à 2 euros le kilo.»، یعنی هر دو کیلویی دو یورو."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید فروشگاه امروز زودتر بسته می‌شود؟","correct_sentence":5,"explanation_fa":"در اعلام آمده: «Ce soir, le magasin ferme tôt, à 19 heures.»"}
+{"type":"match","prompt":"هر میوه یا سبزی را به قیمتش وصل کن.","left":["گوجه‌فرنگی","سیب و پرتقال"],"right":["کیلویی ۱ یورو","کیلویی ۲ یورو","کیلویی ۳ یورو"],"pairs":[[0,0],[1,1]],"explanation_fa":"گوجه‌فرنگی «1 euro» و سیب و پرتقال «2 euros le kilo» است."}
+listening A:
+{"type":"num","prompt":"فروشگاه امشب ساعت چند بسته می‌شود؟","answer":"19","accepted":["19","dix-neuf","7"],"explanation_fa":"در اعلام گفته می‌شود: «le magasin ferme tôt, à 19 heures»."}
+{"type":"mcq","prompt":"این اعلام کجا پخش می‌شود؟","options":["در ایستگاه قطار","در فرودگاه","در یک رستوران","در یک فروشگاه"],"correct":3,"explanation_fa":"گوینده می‌گوید «bienvenue dans votre magasin» و از قیمت میوه و پنیر حرف می‌زند."}
+{"type":"tf","prompt":"قیمت ارزان گوجه‌فرنگی فقط برای امروز است.","correct":true,"explanation_fa":"گوینده می‌گوید: «Aujourd'hui seulement»، یعنی فقط امروز."}
+{"type":"tf","prompt":"امشب فروشگاه تا دیروقت باز است.","correct":false,"explanation_fa":"گوینده می‌گوید: «Ce soir, le magasin ferme tôt»، یعنی امشب زود بسته می‌شود."}
+listening B:
+{"type":"dict","sentence":4}
+{"type":"num","prompt":"هر کیلو سیب چند یورو است؟","answer":"2","accepted":["2","deux"],"explanation_fa":"گوینده می‌گوید: «Les pommes et les oranges sont à 2 euros le kilo.»"}

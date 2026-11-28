@@ -1,0 +1,25 @@
+code: fr-a2-t007
+title: Une place à Lyon
+kind: dialogue
+sentences:
+A: Papa, regarde ! J'ai une place à l'université de Lyon ! | بابا، ببین! در دانشگاه لیون قبول شدم!
+B: Bravo, Camille ! Tu veux toujours devenir médecin ? | آفرین، کامی! هنوز می‌خواهی پزشک بشوی؟
+A: Oui ! Et Lyon, c'est à deux heures en train. | آره! لیون هم با قطار دو ساعت راه است.
+B: C'est loin, n'est-ce pas ? | دور است، نه؟
+A: Pas trop. Je reviens chaque week-end, d'accord ? | نه خیلی. هر آخر هفته برمی‌گردم، باشه؟
+B: Et tu retournes à Lyon le dimanche soir ? | و یکشنبه شب‌ها به لیون برمی‌گردی؟
+A: Oui. Mais ma chambre, en haut, reste ma chambre ! | آره. ولی اتاقم، طبقه بالا، اتاق خودم می‌ماند!
+reading A:
+{"type":"mcq","prompt":"کامی می‌خواهد چه کاره شود؟","options":["پزشک","مهندس","معلم","پرستار"],"correct":0,"explanation_fa":"پدرش می‌پرسد «Tu veux toujours devenir médecin ?» و کامی می‌گوید «Oui !»."}
+{"type":"tf","prompt":"لیون با قطار دو ساعت راه است.","correct":true,"explanation_fa":"کامی می‌گوید: «Lyon, c'est à deux heures en train.»"}
+{"type":"tf","prompt":"کامی هر روز به خانه برمی‌گردد.","correct":false,"explanation_fa":"کامی می‌گوید: «Je reviens chaque week-end»، یعنی هر آخر هفته، نه هر روز."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید کامی کجا قبول شده است؟","correct_sentence":0,"explanation_fa":"کامی می‌گوید: «J'ai une place à l'université de Lyon !»"}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["پدر به کامی آفرین می‌گوید.","کامی از اتاقش حرف می‌زند.","کامی خبر دانشگاه را می‌دهد.","پدر می‌پرسد لیون دور است یا نه."],"correct_order":[2,0,3,1],"explanation_fa":"اول خبر دانشگاه، بعد «Bravo»، بعد «C'est loin, n'est-ce pas ?» و آخر حرف کامی درباره اتاقش."}
+listening A:
+{"type":"mcq","prompt":"اتاق کامی کجای خانه است؟","options":["طبقه پایین","کنار آشپزخانه","توی باغ","طبقه بالا"],"correct":3,"explanation_fa":"کامی می‌گوید: «ma chambre, en haut»، یعنی اتاقش طبقه بالاست."}
+{"type":"tf","prompt":"پدر کامی از خبر او خوشحال است.","correct":true,"explanation_fa":"پدرش می‌گوید: «Bravo, Camille !»"}
+{"type":"tf","prompt":"کامی شنبه شب‌ها به لیون برمی‌گردد.","correct":false,"explanation_fa":"پدرش می‌پرسد «tu retournes à Lyon le dimanche soir ?» و کامی می‌گوید «Oui»، یعنی یکشنبه شب."}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"num","prompt":"لیون با قطار چند ساعت راه است؟","answer":"2","accepted":["2","deux"],"explanation_fa":"کامی می‌گوید: «c'est à deux heures en train»."}

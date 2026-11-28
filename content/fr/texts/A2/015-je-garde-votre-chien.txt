@@ -1,0 +1,27 @@
+code: fr-a2-t015
+title: Je garde votre chien
+kind: ad
+sentences:
+- Vous partez en vacances cet été ? | تابستان امسال به مسافرت می‌روید؟
+- Je garde votre chien ou votre chat ! | من از سگ یا گربه‌تان نگهداری می‌کنم!
+- J'ai 20 ans et j'adore les animaux. | بیست سالم است و عاشق حیوان‌ها هستم. | tts: J'ai vingt ans et j'adore les animaux.
+- Je n'ai pas peur des{des-contr} gros chiens. | از سگ‌های بزرگ نمی‌ترسم.
+- Je prépare leur repas et je joue avec eux. | غذایشان را آماده می‌کنم و با آن‌ها بازی می‌کنم.
+- Je propose un petit prix : 10 euros par jour. | قیمت کمی پیشنهاد می‌کنم: روزی ۱۰ یورو. | tts: Je propose un petit prix : dix euros par jour.
+- J'accepte aussi les oiseaux ! | پرنده هم قبول می‌کنم!
+- Julie : 06 12 34 56 78 | ژولی: ۰۶ ۱۲ ۳۴ ۵۶ ۷۸ | tts: Julie : zéro six, douze, trente-quatre, cinquante-six, soixante-dix-huit.
+reading A:
+{"type":"mcq","prompt":"ژولی در این آگهی چه کاری پیشنهاد می‌کند؟","options":["درس دادن زبان","تمیز کردن خانه","نگهداری از حیوان‌ها","فروختن حیوان‌ها"],"correct":2,"explanation_fa":"ژولی می‌گوید: «Je garde votre chien ou votre chat !»"}
+{"type":"tf","prompt":"ژولی از سگ‌های بزرگ می‌ترسد.","correct":false,"explanation_fa":"ژولی می‌گوید: «Je n'ai pas peur des gros chiens.»"}
+{"type":"tf","prompt":"ژولی از پرنده هم نگهداری می‌کند.","correct":true,"explanation_fa":"ژولی می‌گوید: «J'accepte aussi les oiseaux !»"}
+reading B:
+{"type":"find","prompt":"کدام جمله قیمت کار ژولی را می‌گوید؟","correct_sentence":5,"explanation_fa":"ژولی می‌گوید: «Je propose un petit prix : 10 euros par jour.»"}
+{"type":"match","prompt":"هر مورد را به جوابش در آگهی وصل کن.","left":["سن ژولی","قیمت هر روز"],"right":["۲۰ سال","۱۰ یورو","۱۶ سال"],"pairs":[[0,0],[1,1]],"explanation_fa":"ژولی می‌گوید «J'ai 20 ans» و «10 euros par jour»."}
+listening A:
+{"type":"num","prompt":"ژولی چند سال دارد؟","answer":"20","accepted":["20","vingt"],"explanation_fa":"ژولی می‌گوید: «J'ai 20 ans et j'adore les animaux.»"}
+{"type":"mcq","prompt":"ژولی برای حیوان‌ها چه کار می‌کند؟","options":["آن‌ها را می‌شوید","غذایشان را آماده می‌کند","آن‌ها را پیش دکتر می‌برد","برایشان اسباب‌بازی می‌خرد"],"correct":1,"explanation_fa":"ژولی می‌گوید: «Je prépare leur repas et je joue avec eux.»"}
+{"type":"tf","prompt":"ژولی حیوان‌ها را دوست دارد.","correct":true,"explanation_fa":"ژولی می‌گوید: «j'adore les animaux»."}
+{"type":"tf","prompt":"ژولی فقط از گربه نگهداری می‌کند.","correct":false,"explanation_fa":"ژولی می‌گوید: «Je garde votre chien ou votre chat !» و «J'accepte aussi les oiseaux !»"}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"num","prompt":"کار ژولی روزی چند یورو است؟","answer":"10","accepted":["10","dix"],"explanation_fa":"ژولی می‌گوید: «10 euros par jour»."}

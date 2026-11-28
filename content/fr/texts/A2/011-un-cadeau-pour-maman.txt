@@ -1,0 +1,27 @@
+code: fr-a2-t011
+title: Un cadeau pour maman
+kind: dialogue
+sentences:
+A: Thomas, dimanche, c'est l'anniversaire de maman. On lui offre quoi ? | توما، یکشنبه تولد مامان است. چه هدیه‌ای به او بدهیم؟
+B: Un livre ? Elle adore lire. | یک کتاب؟ عاشق کتاب خواندن است.
+A: Elle a déjà beaucoup de livres. Un joli sac ? | خودش کلی کتاب دارد. یک کیف قشنگ چطور؟
+B: Oui, elle porte{porter-2} toujours son vieux sac noir. | آره، همیشه همان کیف مشکی قدیمی‌اش را دستش می‌گیرد.
+A: On a combien d'argent ? | چقدر پول داریم؟
+B: Je compte : 45 euros. | بگذار بشمارم: ۴۵ یورو. | tts: Je compte : quarante-cinq euros.
+A: C'est assez ! Et moi, je prépare un gâteau au chocolat. | کافی است! من هم یک کیک شکلاتی درست می‌کنم.
+B: Super, Léa ! J'espère qu'elle va aimer le sac. | عالی است، لئا! امیدوارم کیف را دوست داشته باشد.
+reading A:
+{"type":"mcq","prompt":"تولد مادرشان کی است؟","options":["شنبه","جمعه","یکشنبه","دوشنبه"],"correct":2,"explanation_fa":"لئا می‌گوید: «dimanche, c'est l'anniversaire de maman»."}
+{"type":"tf","prompt":"مادرشان کتاب زیادی ندارد.","correct":false,"explanation_fa":"لئا می‌گوید: «Elle a déjà beaucoup de livres.»"}
+{"type":"tf","prompt":"لئا کیک درست می‌کند.","correct":true,"explanation_fa":"لئا می‌گوید: «Et moi, je prépare un gâteau au chocolat.»"}
+reading B:
+{"type":"find","prompt":"کدام جمله نشان می‌دهد که مادر یک کیف تازه لازم دارد؟","correct_sentence":3,"explanation_fa":"توما می‌گوید: «elle porte toujours son vieux sac noir»، یعنی کیفش قدیمی است."}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["پول‌هایشان را می‌شمارند.","توما کتاب پیشنهاد می‌کند.","لئا می‌گوید کیک درست می‌کند.","لئا کیف پیشنهاد می‌کند."],"correct_order":[1,3,0,2],"explanation_fa":"اول «Un livre ?»، بعد «Un joli sac ?»، بعد «Je compte» و آخر «je prépare un gâteau»."}
+listening A:
+{"type":"num","prompt":"لئا و توما چند یورو پول دارند؟","answer":"45","accepted":["45","quarante-cinq"],"explanation_fa":"توما می‌گوید: «Je compte : 45 euros.»"}
+{"type":"mcq","prompt":"چرا کتاب نمی‌خرند؟","options":["مادر کتاب زیادی دارد","کتاب خیلی گران است","مادر کتاب نمی‌خواند","کتاب‌فروشی بسته است"],"correct":0,"explanation_fa":"لئا می‌گوید: «Elle a déjà beaucoup de livres.»"}
+{"type":"tf","prompt":"پولشان برای خرید کیف کافی است.","correct":true,"explanation_fa":"لئا می‌گوید: «C'est assez !»"}
+{"type":"tf","prompt":"کیف قدیمی مادر قرمز است.","correct":false,"explanation_fa":"توما می‌گوید «son vieux sac noir»، یعنی کیفش مشکی است."}
+listening B:
+{"type":"dict","sentence":1}
+{"type":"mcq","prompt":"آخر گفتگو چه هدیه‌ای را انتخاب می‌کنند؟","options":["یک کتاب","یک کیف","گل","یک روسری"],"correct":1,"explanation_fa":"توما می‌گوید: «J'espère qu'elle va aimer le sac.»"}

@@ -1,0 +1,24 @@
+code: fr-a2-t009
+title: Ça sent bon !
+kind: dialogue
+sentences:
+A: Bonjour, madame Dubois ! Vous avez toujours ma deuxième clé ? | سلام خانم دوبوا! کلید دوم من هنوز پیش شماست؟
+B: Bonjour, Paul ! Oui, je la garde dans la cuisine. | سلام پل! بله، توی آشپزخانه نگهش می‌دارم.
+A: Merci ! Ma clé est tombée dans la rue, et je ne la trouve pas. | ممنون! کلیدم توی خیابان افتاده و پیدایش نمی‌کنم.
+B: Voilà ! Vous me rendez la clé demain, d'accord ? | بفرمایید! فردا کلید را به من پس می‌دهید، باشه؟
+A: Bien sûr. Oh, ça sent bon chez vous ! | حتماً. اوه، خانه‌تان چه بوی خوبی می‌دهد!
+B: Je fais un gâteau aux pommes. Vous voulez entrer ? | دارم کیک سیب می‌پزم. می‌خواهید بیایید تو؟
+reading A:
+{"type":"mcq","prompt":"مشکل پل چیست؟","options":["آدرس را نمی‌داند","در خانه‌اش خراب است","تلفنش گم شده است","کلیدش را پیدا نمی‌کند"],"correct":3,"explanation_fa":"پل می‌گوید: «Ma clé est tombée dans la rue, et je ne la trouve pas.»"}
+{"type":"tf","prompt":"خانم دوبوا کلید دوم پل را در آشپزخانه نگه می‌دارد.","correct":true,"explanation_fa":"خانم دوبوا می‌گوید: «je la garde dans la cuisine»."}
+{"type":"tf","prompt":"پل باید کلید را امروز پس بدهد.","correct":false,"explanation_fa":"خانم دوبوا می‌گوید: «Vous me rendez la clé demain»، یعنی فردا."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید خانم دوبوا چه می‌پزد؟","correct_sentence":5,"explanation_fa":"خانم دوبوا می‌گوید: «Je fais un gâteau aux pommes.»"}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["پل از بوی خوب خانه می‌گوید.","پل کلید دومش را می‌خواهد.","خانم دوبوا پل را به خانه‌اش دعوت می‌کند.","خانم دوبوا کلید را به پل می‌دهد."],"correct_order":[1,3,0,2],"explanation_fa":"اول پل کلید را می‌خواهد، بعد «Voilà !»، بعد «ça sent bon chez vous» و آخر «Vous voulez entrer ?»."}
+listening A:
+{"type":"mcq","prompt":"چه چیزی بوی خوب می‌دهد؟","options":["سوپ سبزی","کیک سیب","قهوه","نان تازه"],"correct":1,"explanation_fa":"خانم دوبوا می‌گوید: «Je fais un gâteau aux pommes.»"}
+{"type":"tf","prompt":"کلید پل توی خیابان افتاده است.","correct":true,"explanation_fa":"پل می‌گوید: «Ma clé est tombée dans la rue»."}
+{"type":"tf","prompt":"پل کلیدش را توی پارک گم کرده است.","correct":false,"explanation_fa":"پل می‌گوید «dans la rue»، یعنی توی خیابان، نه پارک."}
+listening B:
+{"type":"dict","sentence":4}
+{"type":"mcq","prompt":"خانم دوبوا کی کلید را پس می‌خواهد؟","options":["امشب","یکشنبه","هفته بعد","فردا"],"correct":3,"explanation_fa":"خانم دوبوا می‌گوید: «Vous me rendez la clé demain, d'accord ?»"}

@@ -1,0 +1,26 @@
+code: fr-a2-t013
+title: Le bébé est né !
+kind: dialogue
+sentences:
+A: Ma sœur a eu son bébé hier soir ! | بچهٔ خواهرم دیشب به دنیا آمد!
+B: C'est super ! C'est un garçon ou une fille ? | چه عالی! پسر است یا دختر؟
+A: Une fille, Chloé ! Elle est née à 23 heures. | دختر است، اسمش کلوئه! ساعت ۲۳ به دنیا آمد. | tts: Une fille, Chloé ! Elle est née à vingt-trois heures.
+B: Et elle va bien ? | حالش خوب است؟
+A: Oui, mais elle pleure et elle crie beaucoup la nuit ! | آره، ولی شب‌ها خیلی گریه می‌کند و جیغ می‌زند!
+B: Elle sourit déjà ? | از حالا لبخند هم می‌زند؟
+A: Non, elle est trop petite ! Je vais la voir samedi. Tu viens ? | نه، هنوز خیلی کوچک است! شنبه به دیدنش می‌روم. تو هم می‌آیی؟
+reading A:
+{"type":"mcq","prompt":"بچه کی به دنیا آمد؟","options":["دیروز صبح","دیشب","امروز صبح","شنبه"],"correct":1,"explanation_fa":"گوینده می‌گوید: «Ma sœur a eu son bébé hier soir !»، یعنی دیشب."}
+{"type":"tf","prompt":"بچه پسر است.","correct":false,"explanation_fa":"گوینده می‌گوید: «Une fille, Chloé !»، یعنی بچه دختر است."}
+{"type":"tf","prompt":"بچه شب‌ها زیاد گریه می‌کند.","correct":true,"explanation_fa":"گوینده می‌گوید: «elle pleure et elle crie beaucoup la nuit»."}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید گوینده کی به دیدن بچه می‌رود؟","correct_sentence":6,"explanation_fa":"گوینده می‌گوید: «Je vais la voir samedi.»"}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["دوستش می‌پرسد بچه لبخند می‌زند یا نه.","گوینده می‌گوید بچه شب‌ها گریه می‌کند.","گوینده خبر تولد بچه را می‌دهد.","دوستش می‌پرسد بچه پسر است یا دختر."],"correct_order":[2,3,1,0],"explanation_fa":"اول خبر تولد، بعد «un garçon ou une fille ?»، بعد «elle pleure» و بعد «Elle sourit déjà ?»."}
+listening A:
+{"type":"num","prompt":"بچه ساعت چند به دنیا آمد؟","answer":"23","accepted":["23","vingt-trois","11"],"explanation_fa":"گوینده می‌گوید: «Elle est née à 23 heures.»"}
+{"type":"mcq","prompt":"اسم بچه چیست؟","options":["لئا","امّا","کلوئه","سوفی"],"correct":2,"explanation_fa":"گوینده می‌گوید: «Une fille, Chloé !»"}
+{"type":"tf","prompt":"بچه از حالا لبخند می‌زند.","correct":false,"explanation_fa":"دوستش می‌پرسد «Elle sourit déjà ?» و جواب این است: «Non, elle est trop petite !»"}
+{"type":"tf","prompt":"گوینده دوستش را دعوت می‌کند که با او بیاید.","correct":true,"explanation_fa":"گوینده می‌گوید: «Je vais la voir samedi. Tu viens ?»"}
+listening B:
+{"type":"dict","sentence":1}
+{"type":"mcq","prompt":"حال بچه چطور است؟","options":["مریض است و در بیمارستان است","خوب است، ولی شب‌ها گریه می‌کند","خوب است و شب‌ها راحت می‌خوابد","خیلی خسته است و غذا نمی‌خورد"],"correct":1,"explanation_fa":"گوینده می‌گوید: «Oui, mais elle pleure et elle crie beaucoup la nuit !»"}

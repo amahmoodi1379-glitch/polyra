@@ -1,0 +1,26 @@
+code: fr-a2-t012
+title: Vacances à Nice
+kind: voice_message
+sentences:
+- Salut Sophie, c'est Emma ! | سلام سوفی، امّا هستم!
+- Les vacances à Nice se passent très bien. | تعطیلات در نیس خیلی خوب می‌گذرد.
+- Notre hôtel se trouve à côté de la plage. | هتل ما کنار ساحل است.
+- La ville me plaît beaucoup ! | از این شهر خیلی خوشم می‌آید!
+- Mon mari regarde toujours son portable, mais il se trompe souvent de rue ! | شوهرم همیشه به گوشی‌اش نگاه می‌کند، ولی باز هم اغلب خیابان را اشتباهی می‌رود!
+- Tu te souviens du{du-contr} petit restaurant dans la vieille ville ? | آن رستوران کوچک توی شهر قدیمی یادت هست؟
+- On mange là-bas ce soir ! | امشب آنجا غذا می‌خوریم!
+- Je t'envoie des photos ! | برایت عکس می‌فرستم!
+reading A:
+{"type":"mcq","prompt":"هتل امّا کجاست؟","options":["در مرکز شهر","نزدیک ایستگاه","در شهر قدیمی","کنار ساحل"],"correct":3,"explanation_fa":"امّا می‌گوید: «Notre hôtel se trouve à côté de la plage.»"}
+{"type":"tf","prompt":"امّا از شهر نیس خوشش می‌آید.","correct":true,"explanation_fa":"امّا می‌گوید: «La ville me plaît beaucoup !»"}
+{"type":"tf","prompt":"شوهر امّا همیشه راه را درست پیدا می‌کند.","correct":false,"explanation_fa":"امّا می‌گوید: «il se trompe souvent de rue»، یعنی اغلب خیابان را اشتباه می‌رود."}
+reading B:
+{"type":"find","prompt":"کدام جمله نشان می‌دهد سوفی آن رستوران را می‌شناسد؟","correct_sentence":5,"explanation_fa":"امّا می‌پرسد: «Tu te souviens du petit restaurant dans la vieille ville ?»، یعنی سوفی آن رستوران را دیده است."}
+{"type":"match","prompt":"هر جا را به چیزی که درباره‌اش گفته می‌شود وصل کن.","left":["هتل","رستوران کوچک"],"right":["کنار ساحل","در شهر قدیمی","نزدیک فرودگاه"],"pairs":[[0,0],[1,1]],"explanation_fa":"امّا می‌گوید «hôtel… à côté de la plage» و «petit restaurant dans la vieille ville»."}
+listening A:
+{"type":"mcq","prompt":"امّا امشب کجا غذا می‌خورد؟","options":["در رستوران هتل","در رستورانی در شهر قدیمی","در کافه‌ای کنار ساحل","در خانه دوستشان"],"correct":1,"explanation_fa":"امّا از «petit restaurant dans la vieille ville» می‌گوید و بعد: «On mange là-bas ce soir !»"}
+{"type":"tf","prompt":"تعطیلات امّا خوب پیش می‌رود.","correct":true,"explanation_fa":"امّا می‌گوید: «Les vacances à Nice se passent très bien.»."}
+{"type":"tf","prompt":"شوهر امّا گوشی همراهش ندارد.","correct":false,"explanation_fa":"امّا می‌گوید: «Mon mari regarde toujours son portable»، یعنی شوهرش گوشی دارد و همیشه به آن نگاه می‌کند."}
+listening B:
+{"type":"dict","sentence":3}
+{"type":"mcq","prompt":"امّا چه قولی به سوفی می‌دهد؟","options":["برایش عکس بفرستد","فردا به او زنگ بزند","برایش هدیه بخرد","زود برگردد"],"correct":0,"explanation_fa":"امّا می‌گوید: «Je t'envoie des photos !»"}

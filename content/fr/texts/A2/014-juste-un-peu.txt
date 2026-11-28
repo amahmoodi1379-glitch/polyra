@@ -1,0 +1,27 @@
+code: fr-a2-t014
+title: Juste un peu
+kind: dialogue
+sentences:
+A: Bonjour, madame ! Vous pouvez enlever vos lunettes, s'il vous plaît ? | سلام خانم! لطفاً عینکتان را برمی‌دارید؟
+B: Bien sûr. | البته.
+A: Alors, je coupe combien ? | خب، چقدر کوتاه کنم؟
+B: Juste un peu. Je veux garder mes cheveux longs. | فقط کمی. می‌خواهم موهایم بلند بماند.
+A: D'accord. | باشه.
+A: Voilà, c'est terminé ! Ça vous plaît ? | بفرمایید، تمام شد! خوشتان می‌آید؟
+B: Oh oui, c'est très joli ! Je peux vous poser une question ? | اوه بله، خیلی قشنگ شده! می‌توانم یک سؤال از شما بپرسم؟
+B: C'est ouvert le samedi ? | شنبه‌ها باز هستید؟
+A: Oui, jusqu'à 18 heures. | بله، تا ساعت ۱۸. | tts: Oui, jusqu'à dix-huit heures.
+reading A:
+{"type":"mcq","prompt":"این گفتگو کجاست؟","options":["در یک فروشگاه عینک","در یک آرایشگاه","پیش پزشک","در یک رستوران"],"correct":1,"explanation_fa":"آرایشگر می‌پرسد «je coupe combien ?» و خانم می‌گوید «Je veux garder mes cheveux longs.»"}
+{"type":"tf","prompt":"خانم می‌خواهد موهایش خیلی کوتاه شود.","correct":false,"explanation_fa":"خانم می‌گوید: «Juste un peu. Je veux garder mes cheveux longs.»"}
+{"type":"tf","prompt":"خانم از موهایش خوشش می‌آید.","correct":true,"explanation_fa":"خانم می‌گوید: «Oh oui, c'est très joli !»"}
+reading B:
+{"type":"find","prompt":"کدام جمله می‌گوید آرایشگاه شنبه‌ها تا کی باز است؟","correct_sentence":8,"explanation_fa":"آرایشگر می‌گوید: «Oui, jusqu'à 18 heures.»"}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["آرایشگر می‌گوید کار تمام شد.","خانم درباره شنبه سؤال می‌کند.","آرایشگر از خانم می‌خواهد عینکش را بردارد.","خانم می‌گوید فقط کمی کوتاه کند."],"correct_order":[2,3,0,1],"explanation_fa":"اول «enlever vos lunettes»، بعد «Juste un peu»، بعد «c'est terminé» و آخر «C'est ouvert le samedi ?»."}
+listening A:
+{"type":"num","prompt":"آرایشگاه شنبه‌ها تا ساعت چند باز است؟","answer":"18","accepted":["18","dix-huit","6"],"explanation_fa":"آرایشگر می‌گوید: «jusqu'à 18 heures»."}
+{"type":"mcq","prompt":"آرایشگر اول از خانم چه می‌خواهد؟","options":["عینکش را بردارد","کلاهش را بردارد","پالتویش را بدهد","کمی صبر کند"],"correct":0,"explanation_fa":"آرایشگر می‌گوید: «Vous pouvez enlever vos lunettes, s'il vous plaît ?»"}
+listening B:
+{"type":"dict","sentence":2}
+{"type":"tf","prompt":"خانم یک سؤال از آرایشگر می‌پرسد.","correct":true,"explanation_fa":"خانم می‌گوید: «Je peux vous poser une question ?» و بعد می‌پرسد: «C'est ouvert le samedi ?»"}
+{"type":"tf","prompt":"آرایشگاه شنبه‌ها بسته است.","correct":false,"explanation_fa":"آرایشگر می‌گوید: «Oui, jusqu'à 18 heures.»، یعنی شنبه‌ها باز است."}
