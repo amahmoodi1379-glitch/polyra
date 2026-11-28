@@ -121,7 +121,7 @@ faire de son mieux	phrase			تمام تلاشش را کردن	تمام تلاش�
 faire partie de	phrase			جزءِ ... بودن، عضوِ ... بودن	جزءِ ... بودن	abstract	parts:faire partie
 faire la tête	phrase			قهر کردن، اخم کردن	قهر کردن	feelings	parts:faire tête	register:familier
 mettre fin à	phrase			پایان دادن به	پایان دادن به	abstract	parts:mettre fin
-se rendre compte	phrase			متوجه شدن، پی بردن (به چیزی)	متوجه شدن	abstract	parts:compte
+se rendre compte	phrase			متوجه شدن، پی بردن (به چیزی)	متوجه شدن	abstract	parts:rendre compte
 tenir à	phrase			اهمیت دادن به، اصرار داشتن به	اهمیت دادن به	feelings	parts:tenir	coll:je tiens à toi → برایم مهمی
 tenir compte de	phrase			در نظر گرفتن، به حساب آوردن (چیزی)	در نظر گرفتن	abstract	parts:tenir compte
 prendre froid	phrase			سرما خوردن	سرما خوردن	health	parts:prendre froid
@@ -564,7 +564,7 @@ nier	verb			انکار کردن	انکار کردن	abstract
 
 # the commonest nouns of B1, with the phrases built on them
 accord	noun	m		توافق، موافقت	توافق	abstract	checked:level
-se mettre d'accord	phrase			به توافق رسیدن	به توافق رسیدن	abstract	parts:accord
+se mettre d'accord	phrase			به توافق رسیدن	به توافق رسیدن	abstract	parts:mettre accord
 tomber d'accord	phrase			هم‌نظر شدن، به توافق رسیدن	به توافق رسیدن	abstract	parts:tomber accord
 fait	noun	m		امر واقع، واقعیت (رخ‌داده)	امر واقع	abstract	checked:level
 au fait	adv			راستی (برای عوض کردن موضوع)	راستی	function	parts:fait
@@ -639,7 +639,7 @@ public	noun	m		تماشاگران، مخاطبان	تماشاگران	culture
 loi	noun	f		قانون	قانون	society
 présence	noun	f		حضور	حضور	society
 effort	noun	m		تلاش، کوشش	تلاش	actions
-faire un effort	phrase			تلاش کردن، به خود زحمت دادن	تلاش کردن	actions	parts:effort
+faire un effort	phrase			تلاش کردن، به خود زحمت دادن	تلاش کردن	actions	parts:faire effort
 larme	noun	f		اشک	اشک	body
 avoir les larmes aux yeux	phrase			اشک در چشم داشتن	اشک در چشم داشتن	feelings	parts:avoir larme œil
 lendemain	noun	m		روز بعد، فردای آن روز	روز بعد	time
@@ -698,7 +698,7 @@ souffle	noun	m		نفس، دم	نفس	body
 conscience	noun	f		وجدان، آگاهی	وجدان	abstract
 voie	noun	f		راه (اصلی)، خط (جاده)	راه (اصلی)	transport
 décision	noun	f		تصمیم	تصمیم	abstract
-prendre une décision	phrase			تصمیم گرفتن	تصمیم گرفتن	abstract	parts:décision
+prendre une décision	phrase			تصمیم گرفتن	تصمیم گرفتن	abstract	parts:prendre décision
 position	noun	f		جایگاه، حالت (بدن)	جایگاه	space
 système	noun	m		سیستم، نظام	سیستم	abstract
 sortie	noun	f		خروجی، خروج	خروجی	space
@@ -726,11 +726,11 @@ souci	noun	m		دغدغه، گرفتاری	دغدغه	feelings
 se faire du souci	phrase			نگران بودن، غصه خوردن	نگران بودن	feelings	parts:faire souci
 pas de souci	interj			مشکلی نیست، خیالت راحت	مشکلی نیست	function	parts:souci	register:familier
 connaissance	noun	f		آشنایی، شناخت	آشنایی	education
-faire la connaissance de	phrase			آشنا شدن با	آشنا شدن با	people	parts:connaissance
+faire la connaissance de	phrase			آشنا شدن با	آشنا شدن با	people	parts:faire connaissance
 perdre connaissance	phrase			بیهوش شدن	غش کردن	health	parts:perdre connaissance
 autorité	noun	f		اقتدار، مقامات	اقتدار	society
 étude	noun	f		پژوهش (علمی)، بررسی	پژوهش (علمی)	science	note:«اتود» در فارسی طرح اولیه است، ولی étude یعنی «پژوهش».
-faire des études	phrase			تحصیل کردن	تحصیل کردن	education	parts:étude
+faire des études	phrase			تحصیل کردن	تحصیل کردن	education	parts:faire étude
 demande	noun	f		درخواست	درخواست	actions
 faire une demande	phrase			درخواست دادن	درخواست دادن	work	parts:faire demande
 base	noun	f		پایه، اساس	پایه	abstract
@@ -793,7 +793,7 @@ contrôle	noun	m		کنترل، بازرسی	کنترل	society
 repos	noun	m		استراحت	استراحت	health
 haine	noun	f		نفرت	نفرت	feelings
 excuse	noun	f		عذر، دلیل (برای کاری)	عذر	feelings
-faire des excuses	phrase			عذرخواهی کردن	عذرخواهی کردن	feelings	parts:excuse
+faire des excuses	phrase			عذرخواهی کردن	عذرخواهی کردن	feelings	parts:faire excuse
 fortune	noun	f		ثروت	ثروت	economy
 faire fortune	phrase			ثروتمند شدن	ثروتمند شدن	economy	parts:faire fortune
 trésor	noun	m		گنج	گنج	culture
@@ -1066,7 +1066,7 @@ honte	noun	f		شرم، خجالت	شرم	feelings
 avoir honte	phrase			خجالت کشیدن	خجالت کشیدن	feelings	parts:honte
 fierté	noun	f		غرور، سربلندی	غرور	feelings
 jalousie	noun	f		حسادت	حسادت	feelings
-se mettre en colère	phrase			عصبانی شدن (به‌شدت)، از کوره در رفتن	عصبانی شدن (به‌شدت)	feelings	parts:colère
+se mettre en colère	phrase			عصبانی شدن (به‌شدت)، از کوره در رفتن	عصبانی شدن (به‌شدت)	feelings	parts:mettre colère
 gentillesse	noun	f		مهربانی	مهربانی	character
 politesse	noun	f		ادب	ادب	character
 générosité	noun	f		بخشندگی	بخشندگی	character
@@ -1179,7 +1179,7 @@ fric	noun	m		پول، مایه	پول	economy	register:familier
 poste	noun	m		سِمت، جایگاه شغلی	سِمت	work	code:poste-m	note:در فارسی هم «پست» (مثل پست مدیریت) می‌گوییم.
 candidat	noun	m		متقاضی، کاندیدا	متقاضی	work
 candidature	noun	f		درخواست (کار)، نامزدی	درخواست (کار)	work	checked:level
-poser sa candidature	phrase			درخواست کار دادن	درخواست کار دادن	work	parts:candidature
+poser sa candidature	phrase			درخواست کار دادن	درخواست کار دادن	work	parts:poser candidature
 entretien	noun	m		مصاحبه (کاری)	مصاحبه (کاری)	work
 CV	noun	m		رزومه، سی‌وی	رزومه	work	checked:level
 compétence	noun	f		مهارت، صلاحیت	مهارت	work
@@ -1195,7 +1195,7 @@ tâche	noun	f		کار روزمره (در خانه)	کار روزمره (در خ�
 embaucher	verb			استخدام کردن	استخدام کردن	work
 licencier	verb			اخراج کردن (از کار)	اخراج کردن (از کار)	work
 démissionner	verb			استعفا دادن	استعفا دادن	work
-prendre sa retraite	phrase			بازنشسته شدن	بازنشسته شدن	work	parts:retraite
+prendre sa retraite	phrase			بازنشسته شدن	بازنشسته شدن	work	parts:prendre retraite
 comptable	noun	mf		حسابدار	حسابدار	work
 informaticien	noun	m		کارشناس کامپیوتر، برنامه‌نویس	کارشناس کامپیوتر	work	checked:level
 électricien	noun	m		برق‌کار	برق‌کار	work
@@ -1207,7 +1207,7 @@ atelier	noun	m		کارگاه	کارگاه	work	note:در فارسی «آتلیه
 économie	noun	f		اقتصاد	اقتصاد	economy
 économique	adj			اقتصادی	اقتصادی	economy
 économies	noun	f		پس‌انداز	پس‌انداز	economy	number:pl_only
-faire des économies	phrase			پول پس‌انداز کردن	پول پس‌انداز کردن	economy	parts:économies
+faire des économies	phrase			پول پس‌انداز کردن	پول پس‌انداز کردن	economy	parts:faire économies
 épargner	verb			پس‌انداز کردن	پس‌انداز کردن	economy
 budget	noun	m		بودجه	بودجه	economy
 dépense	noun	f		خرج، هزینه	خرج	economy
@@ -1250,7 +1250,7 @@ apprentissage	noun	m		یادگیری، کارآموزی	یادگیری	education
 connaissances	noun	f		دانسته‌ها، معلومات	دانسته‌ها	education	number:pl_only
 savoir	noun	m		دانایی	دانایی	education	code:savoir-n	checked:level
 progrès	noun	m		پیشرفت	پیشرفت	education
-faire des progrès	phrase			پیشرفت کردن	پیشرفت کردن	education	parts:progrès
+faire des progrès	phrase			پیشرفت کردن	پیشرفت کردن	education	parts:faire progrès
 résumé	noun	m		خلاصه	خلاصه	education	note:«رزومه» در فارسی سابقهٔ کاری است، ولی résumé یعنی «خلاصه».
 résumer	verb			خلاصه کردن	خلاصه کردن	education
 exposé	noun	m		ارائه (کلاسی)، کنفرانس	ارائه (کلاسی)	education

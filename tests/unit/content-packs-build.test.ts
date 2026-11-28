@@ -525,6 +525,28 @@ describe("situational dialogues of a pack", () => {
   });
 });
 
+describe("a French reflexive phrase in a compound tense", () => {
+  it("finds s'est rendu compte and ne s'est pas rendu compte, with être as its own word", () => {
+    const list = words("fr", [
+      "être\tverb\t\t\tبودن\tبودن\tactions",
+      "elle\tpron\t\t\tاو (زن)\tاو\tpeople",
+      "se\tpron\t\t\tخود\tخود\tfunction",
+      "ne\tadv\t\t\tنه\tنه\tfunction",
+      "pas\tadv\t\t\tنه\tنه\tfunction",
+      "rendre\tverb\t\t\tپس دادن\tپس دادن\tactions",
+      "compte\tnoun\tm\t\tحساب\tحساب\tabstract",
+      "se rendre compte\tphrase\t\t\tمتوجه شدن\tمتوجه شدن\tabstract\tparts:rendre compte",
+    ]);
+    const analyzer = analyzerOf("fr", list);
+    for (const text of ["Elle s'est rendu compte.", "Elle ne s'est pas rendu compte."]) {
+      const codes = analyzer.analyze(text, { level: "A1" }).tokens.map((token) => token.code);
+      expect(codes).toContain("se rendre compte");
+      expect(codes).toContain("être");
+      expect(codes).not.toContain("rendre");
+    }
+  });
+});
+
 describe("answers of a unit", () => {
   it("takes «ok:  / x» as another answer of the second gap only", () => {
     const analyzer = analyzerOf("fr", pack.words);

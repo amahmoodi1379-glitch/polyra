@@ -115,6 +115,8 @@ const ELIDED: Record<string, string[]> = { d: ["de"], l: ["le", "la"], qu: ["que
 const CONTRACTED: Record<string, string[]> = { du: ["de"], des: ["de"], au: ["à", "a"], aux: ["à", "a"] };
 /** Words that may stand between a phrase's verb and the rest of it in one clause (hast du morgen Zeit, n'ai pas faim). */
 const SPLIT_GAP = 4;
+/** Words between the auxiliary and the participle of a French compound tense (s'est pas encore rendu compte). */
+const FR_BETWEEN_AUX = new Set(["pas", "jamais", "plus", "déjà", "bien", "vite", "enfin", "tout", "encore", "rien", "vraiment"]);
 const CLAUSE_END = /[.,;:!?]/;
 const foldedPieces = (text: string) => splitPieces(text).map((piece) => fold(piece.text));
 
@@ -215,6 +217,16 @@ export class Analyzer {
     const fits = (indexes: number[], order: number[]) => this.fits(phrase, list, text, indexes, order);
     const lemmaOrder = range(0, n);
     if (fits(range(i, n), lemmaOrder)) return { at: range(i, n), split: false };
+    // A French reflexive phrase in a compound tense: s'est rendu compte, se sont mis à, ne s'est pas rendu compte,
+    // après s'être rendu compte. The form of être stays its own word.
+    if (this.language === "fr" && phrase.verb?.index === 1 && phrase.pieces[0] === REFLEXIVE_PIECE.fr && n >= 3 && i + 2 < list.length && this.pieceMatches(phrase, 0, list[i])) {
+      if (this.morph.candidates(list[i + 1].surface).some((candidate) => candidate.word.word.lemma === "être" && candidate.word.word.pos === "verb")) {
+        let j = i + 2;
+        while (j < list.length && FR_BETWEEN_AUX.has(fold(list[j].surface))) j++;
+        const rest = range(j, n - 1);
+        if (!CLAUSE_END.test(text.slice(list[i].end, list[Math.min(j, list.length - 1)].start)) && fits(rest, range(1, n - 1))) return { at: [i, ...rest], split: true };
+      }
+    }
     // A hyphenated noun in another form of the forms data: week-ends, t-shirts, e-mails.
     if (i + n <= list.length && phrase.word.word.lemma.includes("-")) {
       const joined = text.slice(list[i].start, list[i + n - 1].end);
