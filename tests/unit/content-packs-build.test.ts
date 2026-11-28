@@ -73,6 +73,12 @@ describe("sentences of a pack", () => {
     const built = buildSentences(analyzer, [{ file: "s.txt", text: "# chat\nLe [chat] et le chien. | گربه و سگ. | d: a, b, c" }], "A1", new Set());
     expect(built.errors.map((item) => item.text).join()).toMatch(/«chien» .* is taught after/);
   });
+
+  it("refuses a wrong option that is also an accepted answer", () => {
+    const list = words("fr", ["le\tdet\t\t\tحرف تعریف\tحرف تعریف\tfunction\tno_card:1", "chat\tnoun\tm\t\tگربه\tگربه\tanimals", "minou\tnoun\tm\t\tگربه\tپیشی\tanimals"]);
+    const built = buildSentences(analyzerOf("fr", list), [{ file: "s.txt", text: "# chat\nLe [chat]. | گربه. | d: minou, chien, lit | ok: minou" }], "A1", new Set(list));
+    expect(built.errors.map((item) => item.text).join()).toMatch(/«minou» is also a right answer/);
+  });
 });
 
 describe("verb phrases of a pack", () => {
