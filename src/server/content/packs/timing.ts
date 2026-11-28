@@ -193,7 +193,7 @@ export const TIMING_MARKERS: Record<LanguageCode, Marker[]> = {
       unit: "fr-b1-ce-qui-ce-que",
       label: "ce qui، ce que",
       // Not «jusqu'à ce que» (its own unit) and not «est-ce que» (a chunk of A1).
-      match: (tokens, index) => lower(tokens[index]) === "ce" && /^(qui|que|qu'|dont)$/u.test(lower(tokens[index + 1])) && lower(tokens[index - 1]) !== "à",
+      match: (tokens, index) => lower(tokens[index]) === "ce" && /^(qui|que|qu'|dont)$/u.test(lower(tokens[index + 1])) && !untilBefore(tokens, index),
     },
     { unit: "fr-b1-but", label: "pour que، afin que", codes: ["pour que", "afin que"] },
     {
@@ -202,7 +202,7 @@ export const TIMING_MARKERS: Record<LanguageCode, Marker[]> = {
       codes: ["à condition que"],
       match: (tokens, index) =>
         (/^(avant|sans)$/u.test(lower(tokens[index])) && /^(que|qu')$/u.test(lower(tokens[index + 1]))) ||
-        (lower(tokens[index]) === "ce" && lower(tokens[index - 1]) === "à" && /^(que|qu')$/u.test(lower(tokens[index + 1]))),
+        (lower(tokens[index]) === "ce" && untilBefore(tokens, index) && /^(que|qu')$/u.test(lower(tokens[index + 1]))),
     },
     { unit: "fr-b1-gerondif", label: "en marchant", match: (tokens, index, context) => lower(tokens[index]) === "en" && isVerb(tokens[index + 1], context) && /ant$/u.test(lower(tokens[index + 1])) },
     { unit: "fr-b1-infinitif-passe", label: "après avoir mangé", pairs: [["après"], ["avoir", "être"]] },
@@ -229,6 +229,8 @@ function pluperfect(tokens: TimingToken[], index: number, context: TimingContext
   const next = tokens[at];
   return !!next && !next.inGap && !!next.code && context.verbs.has(next.code) && FR_PARTICIPLE.test(lower(next));
 }
+/** «jusqu'à» right before `index` (one token when the list's jusqu'à is read, else jusqu' + à): jusqu'à ce que, not «pense à ce que». */
+const untilBefore = (tokens: TimingToken[], index: number) => lower(tokens[index - 1]) === "jusqu'à" || (lower(tokens[index - 1]) === "à" && lower(tokens[index - 2]) === "jusqu'");
 /** «ne … que»: ne or n' a few tokens before, with no pas, plus, jamais, rien or personne between. */
 function onlyNegation(tokens: TimingToken[], index: number): boolean {
   const before = tokens.slice(Math.max(0, index - 4), index).map(lower);

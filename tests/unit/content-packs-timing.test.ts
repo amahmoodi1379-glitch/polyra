@@ -102,7 +102,7 @@ describe("grammar before its unit", () => {
     const [cuisine] = words("fr", ["cuisine\tnoun\tf\t\tآشپزخانه\tآشپزخانه\thome"], "A2");
     const [valise] = words("fr", ["valise\tnoun\tf\t\tچمدان\tچمدان\ttravel"], "B1");
     const cards = [cuisine, valise];
-    const units = ["plus-que-parfait", "conditionnel", "ne-que", "relatif-dont", "subjonctif", "ce-qui-ce-que", "gerondif", "doubles-pronoms", "faire-infinitif"].map((name, k) => ({ unit_code: `fr-b1-${name}`, level: "B1", order: k + 1 }));
+    const units = ["plus-que-parfait", "conditionnel", "ne-que", "relatif-dont", "subjonctif", "ce-qui-ce-que", "subjonctif-conjonctions", "gerondif", "doubles-pronoms", "faire-infinitif"].map((name, k) => ({ unit_code: `fr-b1-${name}`, level: "B1", order: k + 1 }));
     const forms = tenseForms("fr", [
       { tense: "conditionnel présent", forms: { je: "ferais", tu: "voudrais" } },
       { tense: "subjonctif présent", forms: { je: "que je fasse" } },
@@ -120,6 +120,8 @@ describe("grammar before its unit", () => {
       b1(9, "Je=je te=te la=le donne=donner ta=ton [valise]=valise"),
       b1(10, "Nous=nous les=le avons=avoir mis=mettre dans=dans la=le [valise]=valise"),
       b1(11, "Je=je fais=faire réparer=réparer ma=mon [valise]=valise"),
+      b1(13, "Je=je pense=penser à=à ce=ce que=que tu=tu as=avoir dit=dire de=de ma=mon [valise]=valise"),
+      b1(14, "J'=je attends=attendre jusqu'à=jusqu'à ce=ce que=que tu=tu fermes=fermer ta=ton [valise]=valise"),
       { file: "f", line: 12, target: cuisine, text: "", tokens: tokens("Il=il avait=avoir fait=faire la=le [cuisine]=cuisine") },
     ];
     // Gate 5: every unit arrives after word 6, so each B1 mark in a sentence of word 2 is early; word 1 is A2.
@@ -134,6 +136,8 @@ describe("grammar before its unit", () => {
       [8, "fr-b1-gerondif"],
       [9, "fr-b1-doubles-pronoms"],
       [11, "fr-b1-faire-infinitif"],
+      [13, "fr-b1-ce-qui-ce-que"],
+      [14, "fr-b1-subjonctif-conjonctions"],
     ]);
   });
 
