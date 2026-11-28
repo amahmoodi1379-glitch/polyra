@@ -1,0 +1,47 @@
+code: fr-b1-t036
+title: Un appartement à Biarritz
+band: 3
+kind: long_dialogue
+key_words: mettre à jour, réalité, souci
+sentences:
+A: Allô, bonjour Monsieur. Je vous appelle pour l'appartement à louer à Biarritz, près de la plage. | الو، سلام آقا. برای آپارتمان اجاره‌ای بیاریتز، نزدیک ساحل، زنگ می‌زنم.
+B: Ah oui, bonjour Madame. Vous voulez venir quand ? | آهان بله، سلام خانم. کی می‌خواهید بیایید؟
+A: Du samedi 12 au samedi 19 juillet, pour deux adultes et deux enfants. | از شنبه ۱۲ تا شنبه ۱۹ ژوئیه، برای دو بزرگسال و دو بچه. | tts: Du samedi douze au samedi dix-neuf juillet, pour deux adultes et deux enfants.
+B: Attendez, je regarde… En juillet, je loue seulement du dimanche au dimanche. | صبر کنید، نگاه می‌کنم… ژوئیه فقط یکشنبه تا یکشنبه اجاره می‌دهم.
+A: Ah bon ? Pourtant, sur internet, c'est écrit « du samedi au samedi ». | جدی؟ ولی در اینترنت نوشته «شنبه تا شنبه».
+B: Oui, c'était l'année dernière. Je n'ai pas mis le site à jour. | بله، مال پارسال بود. سایت را به‌روز نکرده‌ام.
+A: Bon, nous pouvons arriver le dimanche. Et le prix ? Sur le site, c'est 600 euros la semaine. | خب، می‌توانیم یکشنبه برسیم. قیمتش چه؟ در سایت نوشته هفته‌ای ۶۰۰ یورو. | tts: Bon, nous pouvons arriver le dimanche. Et le prix ? Sur le site, c'est six cents euros la semaine.
+B: 600 euros, c'est en juin. En juillet, c'est 850. | ۶۰۰ یورو برای ژوئن است. ژوئیه ۸۵۰ است. | tts: Six cents euros, c'est en juin. En juillet, c'est huit cent cinquante.
+A: 850 ! C'est beaucoup plus cher. Et le ménage, il est dans le prix ? | ۸۵۰! خیلی گران‌تر است. نظافت هم جزو قیمت است؟ | tts: Huit cent cinquante ! C'est beaucoup plus cher. Et le ménage, il est dans le prix ?
+B: Non, le ménage, c'est 60 euros de plus, et les serviettes aussi : 10 euros par personne. | نه، نظافت ۶۰ یورو جداست، حوله‌ها هم همین‌طور: نفری ۱۰ یورو. | tts: Non, le ménage, c'est soixante euros de plus, et les serviettes aussi : dix euros par personne.
+A: Et la place{place-2} de parking qu'on voit sur les photos ? | جای پارکی که توی عکس‌ها دیده می‌شود چه؟
+B: Euh… La place{place-2} est à mon voisin. Vous pouvez laisser la voiture dans la rue, mais en été, ce n'est pas facile. | اِ… آن جای پارک مال همسایه‌ام است. می‌توانید ماشین را توی خیابان بگذارید، ولی تابستان آسان نیست.
+A: Et la terrasse avec vue sur la mer ? | تراس رو به دریا چه؟
+B: La terrasse, oui. La mer, on la voit… un peu, entre deux immeubles. | تراس هست. دریا را هم… یک کم می‌شود دید، بین دو ساختمان.
+A: Franchement, Monsieur, les photos et la réalité, ce n'est pas du tout la même chose ! | راستش آقا، عکس‌ها با واقعیت اصلاً یکی نیست!
+B: Vous avez raison, je comprends. Écoutez, je vous propose 750 euros, avec le ménage et les serviettes. | حق با شماست، متوجهم. ببینید، ۷۵۰ یورو پیشنهاد می‌کنم، همراه با نظافت و حوله. | tts: Vous avez raison, je comprends. Écoutez, je vous propose sept cent cinquante euros, avec le ménage et les serviettes.
+A: Bon… Et si nous changeons d'avis ? | خب… اگر نظرمان عوض شد چه؟
+B: Jusqu'à un mois avant, je vous rends tout l'argent. Après, je garde la moitié. | تا یک ماه قبل، همهٔ پول را پس می‌دهم. بعد از آن، نصفش را نگه می‌دارم.
+A: D'accord. Mais je voudrais que vous m'envoyiez un message avec tout ce que nous avons dit. | باشه. ولی می‌خواهم پیامی با همهٔ چیزهایی که گفتیم برایم بفرستید.
+B: Aucun souci, je l'envoie ce soir. | مشکلی نیست، امشب می‌فرستمش.
+A: Et changez aussi votre site, pour les prochains clients ! | سایتتان را هم برای مشتری‌های بعدی درست کنید!
+B: C'est promis, Madame. | قول می‌دهم، خانم.
+reading A:
+{"type":"mcq","prompt":"Pourquoi la femme téléphone-t-elle ?","prompt_fa":"زن چرا تلفن می‌زند؟","options":["Pour vendre sa voiture.","Pour se plaindre de son voisin.","Pour réserver une table au restaurant.","Pour louer un appartement pour les vacances."],"correct":3,"explanation_fa":"زن می‌گوید: «Je vous appelle pour l'appartement à louer à Biarritz»."}
+{"type":"tf","prompt":"Le prix écrit sur internet est le bon prix pour juillet.","prompt_fa":"قیمتی که در اینترنت نوشته شده، قیمت درست ژوئیه است.","correct":false,"explanation_fa":"مرد می‌گوید: «600 euros, c'est en juin. En juillet, c'est 850.»"}
+{"type":"tf","prompt":"L'homme n'a pas changé son site depuis l'année dernière.","prompt_fa":"مرد از پارسال سایتش را عوض نکرده است.","correct":true,"explanation_fa":"مرد می‌گوید: «c'était l'année dernière. Je n'ai pas mis le site à jour.»"}
+{"type":"find","prompt":"Quelle phrase donne le nouveau prix que l'homme propose ?","prompt_fa":"کدام جمله قیمت تازه‌ای را که مرد پیشنهاد می‌کند می‌گوید؟","correct_sentence":15,"explanation_fa":"مرد می‌گوید: «je vous propose 750 euros, avec le ménage et les serviettes»."}
+reading B:
+{"type":"ctx","word":"réalité","prompt":"« les photos et la réalité, ce n'est pas du tout la même chose ! » : la femme veut dire que…","prompt_fa":"«les photos et la réalité, ce n'est pas du tout la même chose !»: منظور زن این است که…","options":["l'appartement est plus beau que sur les photos.","l'appartement n'est pas comme sur les photos.","elle n'aime pas les photos de vacances.","elle veut voir d'autres photos."],"correct":1,"explanation_fa":"«réalité» یعنی واقعیت؛ جای پارک مال همسایه است و دریا فقط «un peu, entre deux immeubles» دیده می‌شود."}
+{"type":"match","prompt":"Associez.","prompt_fa":"به هم وصل کنید.","left":["Le ménage","Les serviettes","La place de parking"],"right":["est à un voisin.","coûte 60 euros de plus.","coûtent 10 euros par personne.","est gratuite en juillet."],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"مرد می‌گوید: «le ménage, c'est 60 euros de plus»، «les serviettes aussi : 10 euros par personne» و «La place est à mon voisin»."}
+{"type":"cloze","prompt":"Complétez avec les mots du dialogue.","prompt_fa":"جاهای خالی را با کلمه‌های گفتگو پر کنید.","text_with_gaps":"Jusqu'à un mois avant, je vous rends tout l'{{1}}. Après, je garde la {{2}}.","bank":["argent","moitié","appartement","plage","site"],"answers":["argent","moitié"],"explanation_fa":"مرد می‌گوید: «Jusqu'à un mois avant, je vous rends tout l'argent. Après, je garde la moitié.»"}
+listening A:
+{"type":"num","prompt":"En juillet, combien coûte la semaine, d'après le premier prix de l'homme, en euros ?","prompt_fa":"طبق قیمت اولی که مرد می‌گوید، یک هفته در ژوئیه چند یورو است؟","answer":"850","accepted":["850","huit cent cinquante","850 euros"],"explanation_fa":"مرد می‌گوید: «En juillet, c'est 850.»"}
+{"type":"mcq","prompt":"Pour combien de personnes la femme cherche-t-elle un appartement ?","prompt_fa":"زن برای چند نفر آپارتمان می‌خواهد؟","options":["Deux.","Trois.","Quatre.","Six."],"correct":2,"explanation_fa":"زن می‌گوید: «pour deux adultes et deux enfants»."}
+{"type":"tf","prompt":"En juillet, l'homme loue du dimanche au dimanche.","prompt_fa":"مرد در ژوئیه از یکشنبه تا یکشنبه اجاره می‌دهد.","correct":true,"explanation_fa":"مرد می‌گوید: «En juillet, je loue seulement du dimanche au dimanche.»"}
+{"type":"tf","prompt":"On voit très bien la mer de la terrasse.","prompt_fa":"از تراس، دریا خیلی خوب دیده می‌شود.","correct":false,"explanation_fa":"مرد می‌گوید: «La mer, on la voit… un peu, entre deux immeubles.»"}
+listening B:
+{"type":"mcq","prompt":"Quel prix l'homme propose-t-il à la fin ?","prompt_fa":"مرد در آخر چه قیمتی پیشنهاد می‌کند؟","options":["600 euros.","750 euros.","850 euros.","910 euros."],"correct":1,"explanation_fa":"مرد می‌گوید: «je vous propose 750 euros, avec le ménage et les serviettes»."}
+{"type":"mcq","prompt":"Que se passe-t-il si la famille change d'avis moins d'un mois avant ?","prompt_fa":"اگر خانواده کمتر از یک ماه مانده نظرش عوض شود، چه می‌شود؟","options":["L'homme rend tout l'argent.","La famille paie 60 euros de plus.","L'homme garde la moitié de l'argent.","L'homme garde tout l'argent."],"correct":2,"explanation_fa":"مرد می‌گوید: «Jusqu'à un mois avant, je vous rends tout l'argent. Après, je garde la moitié.»"}
+{"type":"tf","prompt":"La femme demande un message avec tout ce qu'ils ont dit.","prompt_fa":"زن پیامی با همهٔ حرف‌هایی که زدند می‌خواهد.","correct":true,"explanation_fa":"زن می‌گوید: «je voudrais que vous m'envoyiez un message avec tout ce que nous avons dit»."}
+{"type":"tf","prompt":"La place de parking est dans le prix.","prompt_fa":"جای پارک جزو قیمت است.","correct":false,"explanation_fa":"مرد می‌گوید: «La place est à mon voisin.»"}

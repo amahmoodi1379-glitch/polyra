@@ -1,0 +1,41 @@
+code: fr-b1-t035
+title: Biscuit est rentré
+band: 3
+kind: news
+key_words: disparaître, membre, aventure
+sentences:
+- Belle fin d'histoire près d'Annecy : Biscuit, un petit chien de cinq ans, a retrouvé sa famille après deux semaines dans la forêt. | پایانی خوش در نزدیکی آنسی: بیسکویت، سگ کوچک پنج‌ساله، بعد از دو هفته سرگردانی در جنگل به خانواده‌اش برگشت.
+- Le 3 octobre, Sophie Dupont se promenait avec lui dans la forêt, à côté du lac. | روز ۳ اکتبر، سوفی دوپون با او در جنگل کنار دریاچه قدم می‌زد. | tts: Le trois octobre, Sophie Dupont se promenait avec lui dans la forêt, à côté du lac.
+- Soudain, le chien a vu un lapin, il a couru derrière lui, et il a disparu entre les arbres. | ناگهان سگ خرگوشی دید، دنبالش دوید و میان درخت‌ها ناپدید شد.
+- Pendant deux semaines, Sophie et sa famille l'ont cherché tous les jours, avec l'aide de leurs voisins et des membres d'un club de randonnée. | سوفی و خانواده‌اش دو هفته هر روز با کمک همسایه‌ها و اعضای یک باشگاه کوه‌پیمایی دنبالش گشتند.
+- Ils ont mis des photos de Biscuit dans les villages et sur internet, mais personne ne l'avait vu. | عکس بیسکویت را در روستاها و اینترنت گذاشتند، ولی هیچ‌کس او را ندیده بود.
+- « Je ne dormais plus. J'avais peur qu'il ait froid la nuit, ou qu'il ne trouve rien à manger », raconte Sophie. | سوفی تعریف می‌کند: «دیگر خواب نداشتم. می‌ترسیدم شب‌ها سردش باشد یا چیزی برای خوردن پیدا نکند.»
+- Samedi dernier, deux personnes qui faisaient une promenade ont entendu un petit bruit près d'une vieille maison vide. | شنبهٔ گذشته، دو نفر که پیاده‌روی می‌کردند کنار یک خانهٔ قدیمی خالی صدای ضعیفی شنیدند.
+- Biscuit était là, derrière la maison : très maigre et sale, mais vivant. | بیسکویت آنجا بود، پشت خانه: خیلی لاغر و کثیف، ولی زنده.
+- Ils ont reconnu le chien grâce aux photos, et ils ont tout de suite appelé le numéro écrit dessous. | از روی عکس‌ها سگ را شناختند و فوراً به شماره‌ای که زیرش نوشته شده بود زنگ زدند.
+- « Quand j'ai entendu leur voix au téléphone, j'ai fondu en larmes », dit Sophie. | سوفی می‌گوید: «وقتی صدایشان را پشت تلفن شنیدم، زدم زیر گریه.»
+- Le vétérinaire a examiné le chien : il a perdu trois kilos, mais il est en bonne santé. | دامپزشک سگ را معاینه کرد: سه کیلو وزن کم کرده، ولی سالم است.
+- « Il a sans doute bu l'eau de la rivière et mangé ce qu'il trouvait », explique-t-il. | دامپزشک توضیح می‌دهد: «احتمالاً آب رودخانه را نوشیده و هر چه پیدا می‌کرده خورده است.»
+- Sophie est très contente que l'histoire finisse bien, et elle remercie tous les gens qui ont cherché avec elle. | سوفی خیلی خوشحال است که ماجرا خوب تمام شده و از همهٔ کسانی که با او گشتند تشکر می‌کند.
+- Elle a invité à dîner les deux personnes qui ont trouvé Biscuit. | او دو نفری را که بیسکویت را پیدا کردند به شام دعوت کرده است.
+- Après cette aventure, Biscuit ne quitte plus Sophie, même dans la maison. | بعد از این ماجرا، بیسکویت حتی توی خانه هم از سوفی جدا نمی‌شود.
+- Et dans la forêt, Sophie ne le lâchera plus ! | و سوفی دیگر توی جنگل ولش نمی‌کند!
+reading A:
+{"type":"mcq","prompt":"Que raconte cet article ?","prompt_fa":"این خبر چه چیزی را تعریف می‌کند؟","options":["Un chien qui a sauvé deux personnes en forêt.","Une famille qui cherche un nouveau chien.","Un chien perdu en forêt qui retrouve sa famille.","Un vétérinaire qui soigne les animaux de la forêt."],"correct":2,"explanation_fa":"خبر می‌گوید: «Biscuit, un petit chien de cinq ans, a retrouvé sa famille après deux semaines dans la forêt»."}
+{"type":"tf","prompt":"Biscuit a disparu parce qu'il a couru derrière un lapin.","prompt_fa":"بیسکویت گم شد چون دنبال یک خرگوش دوید.","correct":true,"explanation_fa":"خبر می‌گوید: «le chien a vu un lapin, il a couru derrière lui, et il a disparu entre les arbres»."}
+{"type":"tf","prompt":"Selon le vétérinaire, le chien est malade.","prompt_fa":"به گفتهٔ دامپزشک، سگ بیمار است.","correct":false,"explanation_fa":"دامپزشک می‌گوید سگ «a perdu trois kilos, mais il est en bonne santé»."}
+{"type":"find","prompt":"Quelle phrase dit comment les deux personnes ont su que c'était Biscuit ?","prompt_fa":"کدام جمله می‌گوید آن دو نفر از کجا فهمیدند که این سگ بیسکویت است؟","correct_sentence":8,"explanation_fa":"خبر می‌گوید: «Ils ont reconnu le chien grâce aux photos»."}
+reading B:
+{"type":"ctx","word":"fondu en larmes","prompt":"« j'ai fondu en larmes » : Sophie…","prompt_fa":"«j'ai fondu en larmes»: سوفی…","options":["a beaucoup ri.","s'est mise à pleurer.","a eu très froid.","a perdu sa voix."],"correct":1,"explanation_fa":"«fondre en larmes» یعنی ناگهان زیر گریه زدن؛ سوفی از خوشحالی گریه کرد."}
+{"type":"match","prompt":"Qui a fait quoi ?","prompt_fa":"چه کسی چه کار کرد؟","left":["Sophie","Les deux personnes","Le vétérinaire"],"right":["a examiné le chien.","ne dormait plus.","ont entendu un petit bruit.","ont acheté un nouveau chien."],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"سوفی می‌گوید «Je ne dormais plus»، آن دو نفر «ont entendu un petit bruit» و «Le vétérinaire a examiné le chien»."}
+{"type":"cloze","prompt":"Complétez avec les mots de l'article.","prompt_fa":"جاهای خالی را با کلمه‌های خبر پر کنید.","text_with_gaps":"Ils ont reconnu le chien {{1}} aux photos, et ils ont tout de suite {{2}} le numéro écrit dessous.","bank":["grâce","appelé","malgré","dormi","couru"],"answers":["grâce","appelé"],"explanation_fa":"خبر می‌گوید: «Ils ont reconnu le chien grâce aux photos, et ils ont tout de suite appelé le numéro écrit dessous.»"}
+listening A:
+{"type":"num","prompt":"Combien de kilos le chien a-t-il perdus ?","prompt_fa":"سگ چند کیلو وزن کم کرده است؟","answer":"3","accepted":["3","trois","3 kilos","trois kilos"],"explanation_fa":"می‌شنویم: «il a perdu trois kilos»."}
+{"type":"mcq","prompt":"Où Sophie se promenait-elle avec son chien ?","prompt_fa":"سوفی با سگش کجا قدم می‌زد؟","options":["Au bord de la rivière, en ville.","Dans un parc d'Annecy.","Dans la montagne, sous la neige.","Dans la forêt, à côté du lac."],"correct":3,"explanation_fa":"می‌شنویم: «Sophie Dupont se promenait avec lui dans la forêt, à côté du lac»."}
+{"type":"tf","prompt":"Biscuit a cinq ans.","prompt_fa":"بیسکویت پنج سال دارد.","correct":true,"explanation_fa":"می‌شنویم: «un petit chien de cinq ans»."}
+{"type":"tf","prompt":"La famille a cherché le chien pendant un mois.","prompt_fa":"خانواده یک ماه دنبال سگ گشت.","correct":false,"explanation_fa":"می‌شنویم: «Pendant deux semaines, Sophie et sa famille l'ont cherché tous les jours»."}
+listening B:
+{"type":"mcq","prompt":"De quoi Sophie avait-elle peur ?","prompt_fa":"سوفی از چه می‌ترسید؟","options":["Que quelqu'un prenne son chien.","Que le chien ait froid ou ne trouve rien à manger.","Que le chien attaque un lapin.","Que le chien ne la reconnaisse plus."],"correct":1,"explanation_fa":"سوفی می‌گوید: «J'avais peur qu'il ait froid la nuit, ou qu'il ne trouve rien à manger»."}
+{"type":"mcq","prompt":"Qu'a fait Sophie pour remercier les deux personnes ?","prompt_fa":"سوفی برای تشکر از آن دو نفر چه کار کرد؟","options":["Elle leur a donné de l'argent.","Elle leur a offert un chien.","Elle a écrit un livre sur Biscuit.","Elle les a invitées à dîner."],"correct":3,"explanation_fa":"می‌شنویم: «Elle a invité à dîner les deux personnes qui ont trouvé Biscuit.»"}
+{"type":"tf","prompt":"Le vétérinaire pense que le chien a bu l'eau de la rivière.","prompt_fa":"دامپزشک فکر می‌کند سگ از آب رودخانه خورده است.","correct":true,"explanation_fa":"دامپزشک می‌گوید: «Il a sans doute bu l'eau de la rivière»."}
+{"type":"tf","prompt":"Maintenant, Biscuit reste souvent loin de Sophie.","prompt_fa":"حالا بیسکویت اغلب از سوفی دور می‌ماند.","correct":false,"explanation_fa":"می‌شنویم: «Biscuit ne quitte plus Sophie, même dans la maison»."}

@@ -1,0 +1,45 @@
+code: fr-b1-t024
+title: On n'a pas vu le même film
+band: 3
+kind: long_dialogue
+key_words: gâcher, se détendre, exprès
+sentences:
+A: Alors, Hugo, tu as aimé ? Moi, j'ai adoré ! | خب هوگو، خوشت آمد؟ من که عاشقش شدم!
+B: Franchement, Chloé ? Je me suis ennuyé du début à la fin. | راستش را بخواهی، کلوئه؟ از اول تا آخر حوصله‌ام سر رفت.
+A: Tu plaisantes ! Les acteurs étaient géniaux, et la musique… | شوخی می‌کنی! بازیگرها محشر بودند، و موسیقی‌اش…
+B: La musique, d'accord. Mais l'histoire est beaucoup trop lente : il ne se passe rien pendant une heure ! | موسیقی، قبول. ولی داستانش خیلی کند است: یک ساعت تمام هیچ اتفاقی نمی‌افتد!
+A: Il ne se passe rien ? Elle quitte son mari, elle part seule en Corse, elle retrouve son père après trente ans… | هیچ اتفاقی نمی‌افتد؟ شوهرش را ول می‌کند، تنهایی می‌رود کرس، بعد از سی سال پدرش را پیدا می‌کند…
+B: Oui, en deux heures et demie ! J'ai regardé ma montre au moins dix fois. | آره، در دو ساعت و نیم! دست‌کم ده بار به ساعتم نگاه کردم.
+A: Je sais, je t'ai vu. Et tu as mangé tes bonbons avec beaucoup de bruit. Tu m'as un peu gâché la fin ! | می‌دانم، دیدمت. آب‌نبات‌هایت را هم با کلی سروصدا خوردی. آخر فیلم را یک کم برایم خراب کردی!
+B: Pardon… Mais la fin, je ne l'ai pas comprise. Pourquoi est-ce qu'elle reste sur l'île ? | ببخشید… ولی آخرش را نفهمیدم. چرا توی جزیره می‌ماند؟
+A: Parce qu'elle est enfin heureuse là-bas ! Elle avait tout perdu à Paris, et en Corse, elle commence une nouvelle vie. | چون بالاخره آنجا خوشبخت است! در پاریس همه‌چیزش را از دست داده بود و در کرس زندگی تازه‌ای را شروع می‌کند.
+B: Peut-être, mais le film ne le dit pas. On ne sait même pas si elle revoit son fils. | شاید، ولی فیلم این را نمی‌گوید. حتی نمی‌فهمیم پسرش را دوباره می‌بیند یا نه.
+A: C'est exprès ! Chacun imagine la fin qu'il veut. | عمداً این‌طوری است! هر کس پایانی را که دلش می‌خواهد تصور می‌کند.
+B: Moi, au cinéma, je ne veux pas réfléchir. Je veux me détendre, rire un peu, et rentrer content. | من توی سینما نمی‌خواهم فکر کنم. می‌خواهم استراحت کنم، یک کم بخندم و راضی برگردم خانه.
+A: Alors pourquoi tu as choisi ce film ? C'était ton idée ! | پس چرا این فیلم را انتخاب کردی؟ ایدهٔ خودت بود!
+B: À cause de l'actrice ! Je la trouve magnifique. | به‌خاطر بازیگر زنش! به نظرم فوق‌العاده است.
+A: Ah, voilà la vraie raison ! | آهان، پس دلیل اصلی این است!
+B: Bon… La prochaine fois, je choisis un film drôle, d'accord ? | خب… دفعهٔ بعد من یک فیلم خنده‌دار انتخاب می‌کنم، باشه؟
+A: D'accord, mais il faut que tu choisisses quelque chose d'intelligent ! | باشه، ولی باید یک چیز درست‌وحسابی انتخاب کنی!
+B: Drôle et intelligent à la fois ? Tu demandes beaucoup ! | هم خنده‌دار، هم درست‌وحسابی؟ زیادی توقع داری!
+A: Allez, viens, on va boire un chocolat au café en face du cinéma, et je te raconte le roman : la fin y est beaucoup plus claire ! | بیا برویم کافهٔ روبه‌روی سینما یک شکلات داغ بخوریم و رمانش را برایت تعریف کنم: آخر داستان آنجا خیلی واضح‌تر است!
+B: Il y a un roman ? Bon, raconte, mais pas trop lentement ! | رمان هم دارد؟ باشد، تعریف کن، ولی نه خیلی آهسته!
+reading A:
+{"type":"mcq","prompt":"Qu'est-ce que Chloé et Hugo pensent du film ?","prompt_fa":"کلوئه و هوگو دربارهٔ فیلم چه فکری می‌کنند؟","options":["Ils l'ont aimé tous les deux.","Hugo l'a adoré, mais Chloé s'est ennuyée.","Ils l'ont trouvé trop drôle tous les deux.","Chloé l'a adoré, mais Hugo s'est ennuyé."],"correct":3,"explanation_fa":"کلوئه می‌گوید: «Moi, j'ai adoré !» و هوگو جواب می‌دهد: «Je me suis ennuyé du début à la fin.»"}
+{"type":"tf","prompt":"Le film dure deux heures et demie.","prompt_fa":"فیلم دو ساعت و نیم طول می‌کشد.","correct":true,"explanation_fa":"هوگو می‌گوید: «Oui, en deux heures et demie !»"}
+{"type":"tf","prompt":"Hugo a bien compris la fin du film.","prompt_fa":"هوگو آخر فیلم را خوب فهمید.","correct":false,"explanation_fa":"هوگو می‌گوید: «la fin, je ne l'ai pas comprise»."}
+{"type":"find","prompt":"Quelle phrase donne la vraie raison du choix de Hugo ?","prompt_fa":"کدام جمله دلیل اصلی انتخاب هوگو را می‌گوید؟","correct_sentence":13,"explanation_fa":"هوگو می‌گوید: «À cause de l'actrice ! Je la trouve magnifique.»"}
+reading B:
+{"type":"ctx","word":"gâché","prompt":"« Tu m'as un peu gâché la fin ! » : Chloé veut dire que Hugo…","prompt_fa":"«Tu m'as un peu gâché la fin !»: منظور کلوئه این است که هوگو…","options":["l'a aidée à comprendre la fin.","a rendu la fin moins agréable pour elle.","lui a raconté la fin avant le film.","est parti avant la fin du film."],"correct":1,"explanation_fa":"هوگو آب‌نبات‌هایش را «avec beaucoup de bruit» خورد و آخر فیلم را برای او خراب کرد."}
+{"type":"match","prompt":"Qui fait quoi ?","prompt_fa":"چه کسی چه کار می‌کند؟","left":["La femme du film","Hugo","Chloé"],"right":["veut se détendre au cinéma.","part seule en Corse.","propose de raconter le roman.","a déjà vu le film deux fois."],"pairs":[[0,1],[1,0],[2,2]],"explanation_fa":"زن فیلم «part seule en Corse»، هوگو می‌گوید «Je veux me détendre» و کلوئه پیشنهاد می‌کند: «je te raconte le roman»."}
+{"type":"cloze","prompt":"Complétez la phrase de Hugo.","prompt_fa":"جملهٔ هوگو را کامل کنید.","text_with_gaps":"Moi, au cinéma, je ne veux pas {{1}}. Je veux me {{2}}, rire un peu, et rentrer content.","bank":["réfléchir","détendre","quitter","bonbons","montre"],"answers":["réfléchir","détendre"],"explanation_fa":"هوگو می‌گوید: «je ne veux pas réfléchir. Je veux me détendre, rire un peu, et rentrer content.»"}
+listening A:
+{"type":"num","prompt":"Combien de fois, au moins, Hugo a-t-il regardé sa montre ?","prompt_fa":"هوگو دست‌کم چند بار به ساعتش نگاه کرد؟","answer":"10","accepted":["10","dix","10 fois","dix fois"],"explanation_fa":"هوگو می‌گوید: «J'ai regardé ma montre au moins dix fois.»"}
+{"type":"mcq","prompt":"Où la femme du film part-elle ?","prompt_fa":"زنِ فیلم کجا می‌رود؟","options":["À Paris.","Chez son fils.","En Corse.","Au Canada."],"correct":2,"explanation_fa":"می‌شنویم: «elle part seule en Corse»."}
+{"type":"tf","prompt":"Hugo a choisi ce film.","prompt_fa":"هوگو این فیلم را انتخاب کرده است.","correct":true,"explanation_fa":"کلوئه به هوگو می‌گوید: «C'était ton idée !»"}
+{"type":"tf","prompt":"Hugo n'aime pas la musique du film.","prompt_fa":"هوگو موسیقی فیلم را دوست ندارد.","correct":false,"explanation_fa":"هوگو می‌گوید: «La musique, d'accord.»"}
+listening B:
+{"type":"mcq","prompt":"Que veut Hugo quand il va au cinéma ?","prompt_fa":"هوگو وقتی به سینما می‌رود چه می‌خواهد؟","options":["Réfléchir longtemps à la fin.","Voir des films très longs.","Lire le roman après le film.","Se détendre et rire un peu."],"correct":3,"explanation_fa":"هوگو می‌گوید: «Je veux me détendre, rire un peu, et rentrer content.»"}
+{"type":"mcq","prompt":"Où vont-ils aller après le film ?","prompt_fa":"بعد از فیلم کجا می‌روند؟","options":["Au café en face du cinéma.","Chez Hugo.","Dans un restaurant en Corse.","Dans une autre salle de cinéma."],"correct":0,"explanation_fa":"کلوئه می‌گوید: «on va boire un chocolat au café en face du cinéma»."}
+{"type":"tf","prompt":"Pour Chloé, la fin est plus claire dans le roman.","prompt_fa":"به نظر کلوئه، آخر داستان در رمان واضح‌تر است.","correct":true,"explanation_fa":"کلوئه می‌گوید: «je te raconte le roman : la fin y est beaucoup plus claire !»"}
+{"type":"tf","prompt":"Hugo ne veut pas entendre l'histoire du roman.","prompt_fa":"هوگو نمی‌خواهد داستان رمان را بشنود.","correct":false,"explanation_fa":"هوگو می‌گوید: «Bon, raconte, mais pas trop lentement !»"}

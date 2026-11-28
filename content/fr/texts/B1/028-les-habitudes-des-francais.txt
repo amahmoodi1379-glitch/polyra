@@ -1,0 +1,44 @@
+code: fr-b1-t028
+title: Les habitudes des Français
+band: 3
+kind: letter
+key_words: reculer, impressionner, protester
+sentences:
+- Chers maman et papa, | مامان و بابای عزیزم،
+- Voilà déjà deux mois que je suis à Grenoble, et je commence enfin à comprendre les habitudes des Français. | دو ماه است که در گرونوبل هستم و بالاخره دارم کم‌کم عادت‌های فرانسوی‌ها را می‌فهمم.
+- D'abord, la bise ! Ici, on embrasse sur les deux joues les gens qu'on connaît, et parfois même ceux qu'on ne connaît pas. | اول از همه، روبوسی! اینجا آدم‌هایی را که می‌شناسند از دو طرف گونه می‌بوسند، و گاهی حتی کسانی را که نمی‌شناسند.
+- Le premier jour, à l'université, une fille a voulu me faire la bise, et j'ai reculé sans réfléchir ! | روز اول، در دانشگاه، دختری خواست با من روبوسی کند و من بی‌اختیار عقب رفتم!
+- Elle a ri, et aujourd'hui, c'est ma meilleure amie : elle s'appelle Camille. | خندید، و حالا بهترین دوستم است: اسمش کامی است.
+- Camille dit qu'à Grenoble, on se fait deux bises, mais que dans sa région, en Provence, on en fait trois ! | کامی می‌گوید در گرونوبل دو بار روبوسی می‌کنند، ولی در منطقهٔ خودشان، پرووانس، سه بار!
+- Ensuite, les repas. Dimanche dernier, les parents de Camille m'ont invitée à déjeuner chez eux. | بعد، غذا خوردن. یکشنبهٔ گذشته پدر و مادر کامی مرا برای ناهار به خانه‌شان دعوت کردند.
+- Le repas a commencé à midi et demi, et nous avons quitté la table à cinq heures de l'après-midi ! | ناهار ساعت دوازده و نیم شروع شد و ما ساعت پنج بعدازظهر از سر میز بلند شدیم!
+- Entrée, plat, fromage, dessert, café : je n'ai jamais autant mangé de ma vie ! | پیش‌غذا، غذای اصلی، پنیر، دسر، قهوه: در عمرم این‌قدر غذا نخورده بودم!
+- Mais le plus important, ce n'est pas la nourriture : à table, on parle de tout, de livres, de voyages, de cinéma. | ولی مهم‌ترین چیز غذا نیست: سر میز از همه‌چیز حرف می‌زنند، از کتاب، از سفر، از سینما.
+- Le père de Camille voulait que je raconte comment nous fêtons le Nouvel An en Iran. | پدر کامی می‌خواست برایشان تعریف کنم که ما در ایران سال نو را چطور جشن می‌گیریم.
+- Quand j'ai décrit notre table du Nouvel An, avec ses sept choses, ça les a beaucoup impressionnés. | وقتی سفرهٔ هفت‌سین را با آن هفت چیزش برایشان توصیف کردم، خیلی تحت تأثیر قرار گرفتند.
+- Enfin, la poste ! Pour envoyer votre colis, j'ai attendu quarante minutes, parce qu'il n'y avait qu'un seul guichet ouvert. | آخر از همه، اداره پست! برای فرستادن بسته‌تان چهل دقیقه منتظر ماندم، چون فقط یک باجه باز بود.
+- À Téhéran, les gens se plaindraient tout de suite ; ici, personne ne proteste, tout le monde attend sans rien dire. | در تهران مردم فوراً اعتراض می‌کردند؛ اینجا هیچ‌کس اعتراض نمی‌کند و همه بی‌آنکه چیزی بگویند صبر می‌کنند.
+- Et le samedi, la poste ferme à midi ! | تازه شنبه‌ها اداره پست ظهر تعطیل می‌شود!
+- Au fait, avez-vous reçu le colis ? Il y a du chocolat de Grenoble pour Darius. | راستی، بسته را گرفتید؟ تویش برای داریوش شکلات گرونوبل هست.
+- Ne vous inquiétez pas pour moi : je mange bien (même trop !), je dors bien, et mes cours me plaisent beaucoup. | نگران من نباشید: خوب غذا می‌خورم (حتی زیادی!)، خوب می‌خوابم و از کلاس‌هایم خیلی خوشم می‌آید.
+- Je vous embrasse fort, deux fois chacun, à la française ! | از دور می‌بوسمتان، هر کدام را دو بار، به رسم فرانسوی‌ها!
+- Shirin | شیرین
+reading A:
+{"type":"mcq","prompt":"De quoi Shirin parle-t-elle surtout dans sa lettre ?","prompt_fa":"شیرین در نامه‌اش بیشتر از چه چیزی حرف می‌زند؟","options":["De ses examens à l'université.","De son nouvel appartement à Grenoble.","Des habitudes des Français qui la surprennent.","D'un voyage en Provence avec Camille."],"correct":2,"explanation_fa":"شیرین می‌نویسد: «je commence enfin à comprendre les habitudes des Français» و بعد از روبوسی، غذا و اداره پست می‌گوید."}
+{"type":"tf","prompt":"Le premier jour, Shirin a tout de suite fait la bise à Camille.","prompt_fa":"روز اول، شیرین فوراً با کامی روبوسی کرد.","correct":false,"explanation_fa":"شیرین می‌نویسد: «j'ai reculé sans réfléchir !»"}
+{"type":"tf","prompt":"Le déjeuner chez les parents de Camille a duré tout l'après-midi.","prompt_fa":"ناهار در خانهٔ پدر و مادر کامی تمام بعدازظهر طول کشید.","correct":true,"explanation_fa":"شیرین می‌نویسد: «Le repas a commencé à midi et demi, et nous avons quitté la table à cinq heures de l'après-midi !»"}
+{"type":"find","prompt":"Quelle phrase explique pourquoi Shirin a attendu longtemps à la poste ?","prompt_fa":"کدام جمله توضیح می‌دهد چرا شیرین در اداره پست مدت زیادی منتظر ماند؟","correct_sentence":12,"explanation_fa":"شیرین می‌نویسد: «parce qu'il n'y avait qu'un seul guichet ouvert»."}
+reading B:
+{"type":"ctx","word":"reculé","prompt":"« j'ai reculé sans réfléchir » : qu'a fait Shirin ?","prompt_fa":"«j'ai reculé sans réfléchir»: شیرین چه کار کرد؟","options":["Elle a embrassé la fille.","Elle s'est éloignée un peu.","Elle a dit bonjour en persan.","Elle a quitté la salle."],"correct":1,"explanation_fa":"«reculer» یعنی عقب رفتن؛ شیرین به روبوسی عادت نداشت و خودش را کمی کنار کشید."}
+{"type":"match","prompt":"Associez les lieux et les habitudes.","prompt_fa":"جاها را به عادت‌ها وصل کنید.","left":["À Grenoble","En Provence","À la poste"],"right":["on fait trois bises.","on se fait deux bises.","il n'y avait qu'un guichet ouvert.","on mange à cinq heures."],"pairs":[[0,1],[1,0],[2,2]],"explanation_fa":"کامی می‌گوید: «à Grenoble, on se fait deux bises» و در پرووانس «on en fait trois»؛ در اداره پست هم «il n'y avait qu'un seul guichet ouvert»."}
+{"type":"cloze","prompt":"Complétez avec les mots de la lettre.","prompt_fa":"جاهای خالی را با کلمه‌های نامه پر کنید.","text_with_gaps":"Entrée, plat, {{1}}, dessert, café : je n'ai jamais {{2}} mangé de ma vie !","bank":["fromage","autant","bonbons","chaque","bises"],"answers":["fromage","autant"],"explanation_fa":"شیرین می‌نویسد: «Entrée, plat, fromage, dessert, café : je n'ai jamais autant mangé de ma vie !»"}
+listening A:
+{"type":"num","prompt":"À quelle heure de l'après-midi ont-ils quitté la table ?","prompt_fa":"ساعت چند بعدازظهر از سر میز بلند شدند؟","answer":"5","accepted":["5","cinq","5 heures","cinq heures","17","17 heures","dix-sept heures","17h"],"explanation_fa":"شیرین می‌گوید: «nous avons quitté la table à cinq heures de l'après-midi»."}
+{"type":"mcq","prompt":"Combien de temps Shirin a-t-elle attendu à la poste ?","prompt_fa":"شیرین چقدر در اداره پست منتظر ماند؟","options":["Vingt minutes.","Une heure.","Quarante minutes.","Deux heures."],"correct":2,"explanation_fa":"شیرین می‌گوید: «j'ai attendu quarante minutes»."}
+{"type":"tf","prompt":"Shirin est à Grenoble depuis deux mois.","prompt_fa":"شیرین دو ماه است که در گرونوبل است.","correct":true,"explanation_fa":"شیرین می‌گوید: «Voilà déjà deux mois que je suis à Grenoble»."}
+{"type":"tf","prompt":"Le samedi, la poste est ouverte toute la journée.","prompt_fa":"شنبه‌ها اداره پست تمام روز باز است.","correct":false,"explanation_fa":"شیرین می‌گوید: «le samedi, la poste ferme à midi !»"}
+listening B:
+{"type":"mcq","prompt":"Qu'est-ce que le père de Camille a demandé à Shirin ?","prompt_fa":"پدر کامی از شیرین چه خواست؟","options":["De cuisiner un plat iranien.","De parler persan à table.","De rester dîner avec eux.","De raconter comment on fête le Nouvel An en Iran."],"correct":3,"explanation_fa":"شیرین می‌گوید: «Le père de Camille voulait que je raconte comment nous fêtons le Nouvel An en Iran.»"}
+{"type":"mcq","prompt":"Qu'est-ce qu'il y a dans le colis pour Darius ?","prompt_fa":"در بسته برای داریوش چه هست؟","options":["Un livre.","Du chocolat de Grenoble.","Du fromage de Provence.","Une carte postale."],"correct":1,"explanation_fa":"شیرین می‌گوید: «Il y a du chocolat de Grenoble pour Darius.»"}
+{"type":"tf","prompt":"À la poste, les gens se plaignent beaucoup.","prompt_fa":"در اداره پست مردم خیلی شکایت می‌کنند.","correct":false,"explanation_fa":"شیرین می‌گوید: «ici, personne ne proteste, tout le monde attend sans rien dire»."}
+{"type":"tf","prompt":"Shirin aime ses cours à l'université.","prompt_fa":"شیرین کلاس‌هایش را در دانشگاه دوست دارد.","correct":true,"explanation_fa":"شیرین می‌گوید: «mes cours me plaisent beaucoup»."}

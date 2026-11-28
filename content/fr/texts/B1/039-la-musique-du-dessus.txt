@@ -1,0 +1,44 @@
+code: fr-b1-t039
+title: La musique du dessus
+band: 3
+kind: long_dialogue
+key_words: épuiser, respect, taper
+sentences:
+A: Bonsoir, excusez-moi de vous déranger. Je suis votre voisine du dessous, Leila. | شب بخیر، ببخشید مزاحم شدم. من همسایهٔ طبقهٔ پایینتان هستم، لیلا.
+B: Ah, bonsoir ! Moi, c'est Thomas. Il y a un problème ? | آهان، شب بخیر! من توما هستم. مشکلی پیش آمده؟
+A: Un peu, oui. Depuis deux semaines, j'entends de la musique chez vous presque toutes les nuits, jusqu'à deux heures du matin. | راستش، بله. دو هفته است که تقریباً هر شب تا ساعت دو صبح صدای موسیقی از خانهٔ شما می‌شنوم.
+B: Vraiment ? Je suis désolé, je ne savais pas que vous entendiez tout. | واقعاً؟ ببخشید، نمی‌دانستم همه‌چیز را می‌شنوید.
+B: Je suis musicien. Je joue du piano le soir, quand je rentre du restaurant où je travaille. | من نوازنده‌ام. شب‌ها وقتی از رستورانی که در آن کار می‌کنم برمی‌گردم، پیانو می‌زنم.
+A: C'est très beau, d'ailleurs. Mais je me lève à cinq heures et demie : je suis boulangère. | اتفاقاً خیلی هم قشنگ است. ولی من ساعت پنج و نیم صبح بیدار می‌شوم: نانوا هستم.
+B: À cinq heures et demie ! Je comprends mieux. | پنج و نیم! حالا بهتر می‌فهمم.
+A: Et samedi, vos amis ont parlé et ri sur le balcon jusqu'à trois heures. | شنبه هم دوست‌هایتان تا ساعت سه روی بالکن حرف زدند و خندیدند.
+B: Oui, c'était mon anniversaire… Je suis vraiment désolé. | بله، تولدم بود… واقعاً متأسفم.
+A: Un anniversaire, ce n'est pas grave, ça arrive. Mais toutes les nuits, ce n'est plus possible : je suis épuisée. | یک تولد که مهم نیست، پیش می‌آید. ولی هر شب دیگر نمی‌شود: از پا افتاده‌ام.
+B: Vous avez raison. Le respect des voisins, c'est important. Qu'est-ce qu'on pourrait faire ? | حق با شماست. احترام به همسایه‌ها مهم است. چه کار می‌توانیم بکنیم؟
+B: Je ne peux pas jouer pendant la journée, je travaille. | روزها نمی‌توانم بزنم، سر کارم.
+A: Vous pourriez arrêter à 22 heures en semaine ? | می‌توانید در روزهای هفته ساعت ده شب تمامش کنید؟ | tts: Vous pourriez arrêter à vingt-deux heures en semaine ?
+B: 22 heures, c'est un peu tôt pour moi… 23 heures ? Et je mets un gros tapis sous le piano. | ده شب برای من یک کم زود است… یازده چطور؟ یک فرش کلفت هم زیر پیانو می‌اندازم. | tts: Vingt-deux heures, c'est un peu tôt pour moi… Vingt-trois heures ? Et je mets un gros tapis sous le piano.
+A: D'accord pour 23 heures. Et le vendredi soir, vous pouvez jouer plus tard : je ne travaille pas le samedi. | قبول، ساعت یازده. جمعه‌شب‌ها هم می‌توانید دیرتر بزنید: من شنبه‌ها کار نمی‌کنم. | tts: D'accord pour vingt-trois heures. Et le vendredi soir, vous pouvez jouer plus tard : je ne travaille pas le samedi.
+B: C'est très gentil. Et si un soir c'est trop fort, vous tapez au plafond ? | خیلی لطف دارید. اگر شبی صدا خیلی بلند بود، به سقف بکوبید؟
+A: Non, je préfère vous envoyer un message. Je vous donne mon numéro. | نه، ترجیح می‌دهم پیام بدهم. شماره‌ام را به شما می‌دهم.
+B: Et moi, je vous invite à mon prochain petit concert, ici, un dimanche après-midi. | من هم شما را به کنسرت کوچک بعدی‌ام دعوت می‌کنم، همین‌جا، یک یکشنبه بعدازظهر.
+A: Avec plaisir ! Je suis contente qu'on trouve une solution aussi facilement. | با کمال میل! خوشحالم که این‌قدر راحت به راه‌حل رسیدیم.
+reading A:
+{"type":"mcq","prompt":"Pourquoi Leila vient-elle voir Thomas ?","prompt_fa":"لیلا چرا به دیدن توما می‌آید؟","options":["Pour l'inviter à son anniversaire.","Pour lui acheter un piano.","Parce que sa musique l'empêche de dormir.","Pour lui apporter du pain."],"correct":2,"explanation_fa":"لیلا می‌گوید: «j'entends de la musique chez vous presque toutes les nuits, jusqu'à deux heures du matin» و «je me lève à cinq heures et demie»."}
+{"type":"tf","prompt":"Thomas savait que Leila entendait sa musique.","prompt_fa":"توما می‌دانست که لیلا صدای موسیقی‌اش را می‌شنود.","correct":false,"explanation_fa":"توما می‌گوید: «je ne savais pas que vous entendiez tout»."}
+{"type":"tf","prompt":"Leila trouve que la musique de Thomas est belle.","prompt_fa":"لیلا به نظرش موسیقی توما قشنگ است.","correct":true,"explanation_fa":"لیلا می‌گوید: «C'est très beau, d'ailleurs.»"}
+{"type":"find","prompt":"Quelle phrase explique pourquoi Leila se lève très tôt ?","prompt_fa":"کدام جمله توضیح می‌دهد چرا لیلا خیلی زود بیدار می‌شود؟","correct_sentence":5,"explanation_fa":"لیلا می‌گوید: «je me lève à cinq heures et demie : je suis boulangère»."}
+reading B:
+{"type":"ctx","word":"épuisée","prompt":"« je suis épuisée » : Leila veut dire qu'elle…","prompt_fa":"«je suis épuisée»: منظور لیلا این است که…","options":["est très contente.","est malade.","est en retard.","est très fatiguée."],"correct":3,"explanation_fa":"لیلا هر شب تا دیروقت صدای پیانو می‌شنود و صبح زود بیدار می‌شود؛ «épuisé» یعنی خیلی خسته، از پا افتاده."}
+{"type":"order","prompt":"Mettez ces moments du dialogue dans l'ordre.","prompt_fa":"این لحظه‌های گفتگو را به ترتیب بچینید.","items":["Thomas propose 23 heures.","Leila dit son nom.","Thomas parle de son anniversaire.","Leila donne son numéro."],"correct_order":[1,2,0,3],"explanation_fa":"اول لیلا خودش را معرفی می‌کند، بعد توما می‌گوید «c'était mon anniversaire»، بعد «23 heures ?» را پیشنهاد می‌کند و آخر لیلا می‌گوید «Je vous donne mon numéro»."}
+{"type":"cloze","prompt":"Complétez la phrase de Thomas.","prompt_fa":"جملهٔ توما را کامل کنید.","text_with_gaps":"22 heures, c'est un peu {{1}} pour moi… 23 heures ? Et je mets un gros {{2}} sous le piano.","bank":["tôt","tapis","piano","balcon","message"],"answers":["tôt","tapis"],"explanation_fa":"توما می‌گوید: «22 heures, c'est un peu tôt pour moi… 23 heures ? Et je mets un gros tapis sous le piano.»"}
+listening A:
+{"type":"num","prompt":"Jusqu'à quelle heure du matin Leila entend-elle la musique ?","prompt_fa":"لیلا تا ساعت چند صبح صدای موسیقی را می‌شنود؟","answer":"2","accepted":["2","deux","2 heures","deux heures","2h"],"explanation_fa":"لیلا می‌گوید: «jusqu'à deux heures du matin»."}
+{"type":"mcq","prompt":"Quel est le métier de Leila ?","prompt_fa":"شغل لیلا چیست؟","options":["Musicienne.","Boulangère.","Serveuse.","Infirmière."],"correct":1,"explanation_fa":"لیلا می‌گوید: «je suis boulangère»."}
+{"type":"tf","prompt":"Samedi, c'était l'anniversaire de Thomas.","prompt_fa":"شنبه تولد توما بود.","correct":true,"explanation_fa":"توما می‌گوید: «Oui, c'était mon anniversaire…»"}
+{"type":"tf","prompt":"Thomas travaille dans une boulangerie.","prompt_fa":"توما در یک نانوایی کار می‌کند.","correct":false,"explanation_fa":"توما می‌گوید: «quand je rentre du restaurant où je travaille»."}
+listening B:
+{"type":"mcq","prompt":"Jusqu'à quelle heure Thomas pourra-t-il jouer en semaine ?","prompt_fa":"توما در روزهای هفته تا ساعت چند می‌تواند بزند؟","options":["22 heures.","Minuit.","23 heures.","Deux heures du matin."],"correct":2,"explanation_fa":"لیلا قبول می‌کند: «D'accord pour 23 heures.»"}
+{"type":"mcq","prompt":"Que va mettre Thomas sous le piano ?","prompt_fa":"توما زیر پیانو چه می‌گذارد؟","options":["Un vieux lit.","Une grande table.","Des livres.","Un gros tapis."],"correct":3,"explanation_fa":"توما می‌گوید: «je mets un gros tapis sous le piano»."}
+{"type":"tf","prompt":"Le vendredi soir, Thomas peut jouer plus tard.","prompt_fa":"جمعه‌شب‌ها توما می‌تواند دیرتر بزند.","correct":true,"explanation_fa":"لیلا می‌گوید: «le vendredi soir, vous pouvez jouer plus tard»."}
+{"type":"tf","prompt":"Leila va taper au plafond si la musique est trop forte.","prompt_fa":"اگر موسیقی خیلی بلند باشد، لیلا به سقف می‌کوبد.","correct":false,"explanation_fa":"لیلا می‌گوید: «Non, je préfère vous envoyer un message.»"}

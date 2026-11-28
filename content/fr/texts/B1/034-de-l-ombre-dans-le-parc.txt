@@ -1,0 +1,44 @@
+code: fr-b1-t034
+title: De l'ombre dans le parc
+band: 3
+kind: letter
+key_words: espace, importance, au-dessus
+sentences:
+- Madame, Monsieur, | خانم‌ها، آقایان،
+- Je m'appelle Louis Bernard, j'ai 76 ans, et j'habite depuis quarante ans dans le quartier de la gare, à Dijon. | اسمم لویی برنار است، ۷۶ سال دارم و چهل سال است که در محلهٔ ایستگاه قطار، در دیژون، زندگی می‌کنم. | tts: Je m'appelle Louis Bernard, j'ai soixante-seize ans, et j'habite depuis quarante ans dans le quartier de la gare, à Dijon.
+- Depuis ma retraite, je vais tous les matins au petit parc qui se trouve derrière l'église. | از وقتی بازنشسته شده‌ام، هر روز صبح به پارک کوچکی می‌روم که پشت کلیساست.
+- C'est le seul espace vert du quartier, et il est très agréable, mais il lui manque deux choses importantes : des places{place-2} pour s'asseoir et de l'ombre. | این تنها فضای سبز محله است و خیلی دلپذیر است، ولی دو چیز مهم کم دارد: جای نشستن و سایه.
+- Il n'y a que deux chaises pour tout le parc, et elles sont près de l'entrée{entrée-2}, en plein soleil. | برای کل پارک فقط دو صندلی هست که آن هم نزدیک در ورودی و زیر آفتاب است.
+- L'année dernière, la ville a coupé les vieux arbres du grand chemin, parce qu'ils étaient malades. | پارسال شهرداری درخت‌های قدیمی مسیر اصلی را برید، چون بیمار بودند.
+- Depuis, il n'y a plus aucune ombre, et les nouveaux petits arbres ne donneront pas d'ombre avant dix ans. | از آن موقع دیگر هیچ سایه‌ای نیست و درخت‌های کوچک تازه تا ده سال دیگر سایه نمی‌دهند.
+- Pour les personnes âgées comme moi, c'est un vrai problème : je ne peux pas marcher plus de vingt minutes sans m'asseoir. | برای سالمندانی مثل من این یک مشکل واقعی است: نمی‌توانم بیشتر از بیست دقیقه بدون نشستن راه بروم.
+- En juillet, avec la chaleur, plusieurs de mes voisins ont arrêté de venir au parc, et ils restent seuls chez eux toute la journée. | در ژوئیه، با آن گرما، چند نفر از همسایه‌هایم دیگر به پارک نیامدند و حالا تمام روز تنها در خانه می‌مانند.
+- Pourtant, ce parc est le seul endroit où nous voyons nos amis et où nous parlons avec les jeunes familles du quartier. | با این حال، این پارک تنها جایی است که دوست‌هایمان را می‌بینیم و با خانواده‌های جوان محله حرف می‌زنیم.
+- Vous connaissez sans doute l'importance de ces moments pour les gens qui vivent seuls. | حتماً می‌دانید این لحظه‌ها برای کسانی که تنها زندگی می‌کنند چقدر اهمیت دارد.
+- Je voudrais donc vous demander deux choses. | برای همین می‌خواهم دو چیز از شما خواهش کنم.
+- D'abord, mettre des chaises en bois tous les cinquante mètres sur le grand chemin. | اول اینکه هر پنجاه متر روی مسیر اصلی صندلی چوبی بگذارید.
+- Ensuite, construire un petit toit en bois au-dessus de quelques chaises, pour avoir de l'ombre en été. | بعد اینکه بالای چند تا از صندلی‌ها سقف چوبی کوچکی بسازید تا تابستان سایه داشته باشیم.
+- Je sais que la ville a beaucoup de projets, mais ce que je demande ne coûte pas très cher. | می‌دانم شهرداری طرح‌های زیادی دارد، ولی چیزی که من می‌خواهم خیلی گران تمام نمی‌شود.
+- Avec mes voisins, nous avons écrit une lettre que 85 habitants du quartier ont signée. Je la joins à ce courrier. | با همسایه‌هایم نامه‌ای نوشته‌ایم که ۸۵ نفر از اهالی محله امضایش کرده‌اند. آن را ضمیمهٔ این نامه می‌کنم. | tts: Avec mes voisins, nous avons écrit une lettre que quatre-vingt-cinq habitants du quartier ont signée. Je la joins à ce courrier.
+- Je serais très heureux de vous présenter notre idée, si vous voulez bien me recevoir. | اگر وقتی به من بدهید، خیلی خوشحال می‌شوم ایده‌مان را حضوری برایتان توضیح بدهم.
+- Cordialement, | با احترام،
+- Louis Bernard | لویی برنار
+reading A:
+{"type":"mcq","prompt":"Pourquoi Louis Bernard écrit-il à la mairie ?","prompt_fa":"لویی برنار چرا به شهرداری نامه می‌نویسد؟","options":["Pour se plaindre du bruit des jeunes familles.","Pour demander des chaises et de l'ombre dans le parc.","Pour proposer de couper les vieux arbres.","Pour inviter la mairie à une fête de quartier."],"correct":1,"explanation_fa":"لویی می‌نویسد پارک «des places pour s'asseoir et de l'ombre» کم دارد و بعد دو درخواستش را می‌گوید."}
+{"type":"tf","prompt":"Il y a beaucoup de places pour s'asseoir dans le parc.","prompt_fa":"در پارک جای نشستن زیاد است.","correct":false,"explanation_fa":"لویی می‌نویسد: «Il n'y a que deux chaises pour tout le parc»."}
+{"type":"tf","prompt":"La ville a coupé les vieux arbres parce qu'ils étaient malades.","prompt_fa":"شهرداری درخت‌های قدیمی را برید، چون بیمار بودند.","correct":true,"explanation_fa":"لویی می‌نویسد: «la ville a coupé les vieux arbres du grand chemin, parce qu'ils étaient malades»."}
+{"type":"find","prompt":"Quelle phrase explique pourquoi Louis doit s'asseoir souvent ?","prompt_fa":"کدام جمله توضیح می‌دهد چرا لویی باید زود به زود بنشیند؟","correct_sentence":7,"explanation_fa":"لویی می‌نویسد: «je ne peux pas marcher plus de vingt minutes sans m'asseoir»."}
+reading B:
+{"type":"ctx","word":"l'importance","prompt":"« Vous connaissez sans doute l'importance de ces moments » : Louis veut dire que ces moments…","prompt_fa":"«Vous connaissez sans doute l'importance de ces moments»: منظور لویی این است که این لحظه‌ها…","options":["ne servent à rien.","sont trop courts.","comptent beaucoup pour les gens seuls.","coûtent cher à la ville."],"correct":2,"explanation_fa":"«importance» یعنی اهمیت؛ برای کسانی که تنها زندگی می‌کنند، دیدن دوست‌ها در پارک خیلی مهم است."}
+{"type":"order","prompt":"Mettez ces moments dans l'ordre.","prompt_fa":"این لحظه‌ها را به ترتیب بچینید.","items":["Louis écrit à la mairie.","La ville coupe les vieux arbres.","85 habitants signent une lettre.","Des voisins arrêtent de venir au parc."],"correct_order":[1,3,2,0],"explanation_fa":"اول «L'année dernière» درخت‌ها بریده شدند، بعد «En juillet» همسایه‌ها دیگر نیامدند، بعد ۸۵ نفر نامه را امضا کردند و حالا لویی آن را ضمیمهٔ نامه‌اش می‌کند."}
+{"type":"cloze","prompt":"Complétez avec les mots de la lettre.","prompt_fa":"جاهای خالی را با کلمه‌های نامه پر کنید.","text_with_gaps":"Il n'y a que deux {{1}} pour tout le parc, et elles sont près de l'entrée, en plein {{2}}.","bank":["chaises","soleil","arbres","ombre","voisins"],"answers":["chaises","soleil"],"explanation_fa":"لویی می‌نویسد: «Il n'y a que deux chaises pour tout le parc, et elles sont près de l'entrée, en plein soleil.»"}
+listening A:
+{"type":"num","prompt":"Quel âge a Louis Bernard ?","prompt_fa":"لویی برنار چند سال دارد؟","answer":"76","accepted":["76","soixante-seize","76 ans","soixante-seize ans"],"explanation_fa":"لویی می‌گوید: «j'ai 76 ans»."}
+{"type":"mcq","prompt":"Combien de temps Louis peut-il marcher sans s'asseoir ?","prompt_fa":"لویی چقدر می‌تواند بدون نشستن راه برود؟","options":["Deux heures.","Cinq minutes.","Une heure.","Vingt minutes."],"correct":3,"explanation_fa":"لویی می‌گوید: «je ne peux pas marcher plus de vingt minutes sans m'asseoir»."}
+{"type":"tf","prompt":"Le parc est le seul espace vert du quartier.","prompt_fa":"این پارک تنها فضای سبز محله است.","correct":true,"explanation_fa":"لویی می‌گوید: «C'est le seul espace vert du quartier»."}
+{"type":"tf","prompt":"Louis habite dans le quartier depuis dix ans.","prompt_fa":"لویی ده سال است در این محله زندگی می‌کند.","correct":false,"explanation_fa":"لویی می‌گوید: «j'habite depuis quarante ans dans le quartier de la gare»."}
+listening B:
+{"type":"mcq","prompt":"Que demande Louis en premier ?","prompt_fa":"لویی اول چه چیزی می‌خواهد؟","options":["Mettre des chaises en bois sur le grand chemin.","Planter de grands arbres.","Fermer le parc en été.","Ouvrir un café dans le parc."],"correct":0,"explanation_fa":"لویی می‌گوید: «D'abord, mettre des chaises en bois tous les cinquante mètres sur le grand chemin.»"}
+{"type":"num","prompt":"Combien d'habitants du quartier ont signé la lettre ?","prompt_fa":"چند نفر از اهالی محله نامه را امضا کرده‌اند؟","answer":"85","accepted":["85","quatre-vingt-cinq"],"explanation_fa":"لویی می‌گوید: «une lettre que 85 habitants du quartier ont signée»."}
+{"type":"tf","prompt":"En juillet, des voisins de Louis sont restés chez eux.","prompt_fa":"در ژوئیه، چند نفر از همسایه‌های لویی در خانه ماندند.","correct":true,"explanation_fa":"لویی می‌گوید: «plusieurs de mes voisins ont arrêté de venir au parc, et ils restent seuls chez eux»."}
+{"type":"tf","prompt":"Louis pense que ses demandes coûtent très cher.","prompt_fa":"لویی فکر می‌کند درخواست‌هایش خیلی گران است.","correct":false,"explanation_fa":"لویی می‌گوید: «ce que je demande ne coûte pas très cher»."}

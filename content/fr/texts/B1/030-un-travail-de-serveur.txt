@@ -1,0 +1,46 @@
+code: fr-b1-t030
+title: Un travail de serveur
+band: 3
+kind: long_dialogue
+key_words: se débrouiller, par rapport à, en effet
+sentences:
+A: Bonjour, asseyez-vous. Vous êtes Karim, c'est ça ? Vous venez pour le travail de serveur ? | سلام، بفرمایید بنشینید. شما کریم هستید، درست است؟ برای کار پیشخدمتی آمده‌اید؟
+B: Oui, bonjour Madame Laurent. J'ai vu votre message sur internet. | بله، سلام خانم لوران. پیامتان را در اینترنت دیدم.
+A: Vous avez déjà travaillé comme serveur ? | قبلاً پیشخدمت بوده‌اید؟
+B: Oui, pendant deux étés, dans un café à Nice, au bord de la mer. | بله، دو تابستان در یک کافه در نیس، کنار دریا.
+A: Ici, c'est très différent. À midi, nous servons deux cents repas en une heure et demie. | اینجا خیلی فرق دارد. ظهرها در یک ساعت و نیم دویست وعده غذا سرو می‌کنیم.
+A: Nos clients travaillent dans les bureaux du quartier, et ils sont toujours pressés. | مشتری‌هایمان در اداره‌های این محله کار می‌کنند و همیشه عجله دارند.
+B: Ça ne me fait pas peur. J'aime quand ça bouge ! | این مرا نمی‌ترساند. دوست دارم کار پرتحرک باشد!
+A: Bon. Un client attend son plat depuis quarante minutes, et il commence à crier. Que faites-vous ? | خب. مشتری‌ای چهل دقیقه است منتظر غذایش است و شروع می‌کند به داد زدن. چه کار می‌کنید؟
+B: D'abord, je garde mon calme et je m'excuse. Ensuite, je vais voir en cuisine, et je lui offre un café, si vous êtes d'accord. | اول آرامشم را حفظ می‌کنم و عذرخواهی می‌کنم. بعد به آشپزخانه سر می‌زنم و اگر شما موافق باشید یک قهوه مهمانش می‌کنم.
+A: Bonne réponse. Vous parlez des langues étrangères ? Nous avons beaucoup de touristes : en effet, nous sommes à deux minutes de la gare. | جواب خوبی بود. زبان خارجی بلدید؟ گردشگر زیاد داریم، آخر دو دقیقه با ایستگاه قطار فاصله داریم.
+B: L'anglais, assez bien, et l'arabe, grâce à mes parents. | انگلیسی را نسبتاً خوب، و عربی را به لطف پدر و مادرم.
+A: Très bien. Par rapport à votre café de Nice, les horaires sont durs : du mardi au samedi, de 11 heures à 15 heures, puis de 18 heures 30 à 23 heures. | خیلی خوب. در مقایسه با کافهٔ نیس، ساعت‌های کار سخت است: سه‌شنبه تا شنبه، از ۱۱ صبح تا ۳ بعدازظهر و بعد از شش و نیم تا یازده شب. | tts: Très bien. Par rapport à votre café de Nice, les horaires sont durs : du mardi au samedi, de onze heures à quinze heures, puis de dix-huit heures trente à vingt-trois heures.
+B: Ça me convient. J'habite à dix minutes à vélo. | برایم مناسب است. با دوچرخه ده دقیقه تا اینجا راه است.
+A: Le salaire est de 1 800 euros par mois, plus les pourboires. | حقوق ماهی ۱۸۰۰ یورو است، به‌علاوهٔ انعام‌ها. | tts: Le salaire est de mille huit cents euros par mois, plus les pourboires.
+B: Et les pourboires sont bons, ici ? | انعام‌ها اینجا خوب است؟
+A: Oui, plutôt bons : nos serveurs gagnent souvent 200 euros de plus par mois. | بله، نسبتاً خوب: پیشخدمت‌هایمان اغلب ماهی ۲۰۰ یورو بیشتر درمی‌آورند. | tts: Oui, plutôt bons : nos serveurs gagnent souvent deux cents euros de plus par mois.
+B: Puisque vous parlez d'argent… Quand est-ce que je pourrais commencer ? | حالا که صحبت پول شد… کی می‌توانم شروع کنم؟
+A: Doucement ! Je dois encore voir deux autres personnes cet après-midi. | یواش‌تر! امروز بعدازظهر باید دو نفر دیگر را هم ببینم.
+A: Mais vous pourriez revenir demain à midi, pour travailler deux heures avec l'équipe ? On verra comment vous vous débrouillez. | ولی می‌توانید فردا ظهر برگردید و دو ساعت با بقیه کار کنید؟ می‌بینیم چطور از پسش برمی‌آیید.
+B: Bien sûr ! Je serai là à 11 heures. Je vous donne ma parole. | حتماً! ساعت ۱۱ اینجا هستم. قول می‌دهم. | tts: Bien sûr ! Je serai là à onze heures. Je vous donne ma parole.
+A: Parfait. Et venez avec une chemise blanche et un pantalon noir. | عالی. با پیراهن سفید و شلوار مشکی بیایید.
+reading A:
+{"type":"mcq","prompt":"Pourquoi Karim rencontre-t-il Madame Laurent ?","prompt_fa":"کریم چرا با خانم لوران دیدار می‌کند؟","options":["Pour trouver un travail de serveur.","Pour réserver une table pour midi.","Pour se plaindre d'un plat.","Pour lui vendre des chemises."],"correct":0,"explanation_fa":"خانم لوران می‌پرسد: «Vous venez pour le travail de serveur ?» و کریم جواب می‌دهد: «Oui»."}
+{"type":"tf","prompt":"Karim n'a jamais travaillé comme serveur.","prompt_fa":"کریم هیچ‌وقت پیشخدمت نبوده است.","correct":false,"explanation_fa":"کریم می‌گوید: «Oui, pendant deux étés, dans un café à Nice»."}
+{"type":"tf","prompt":"Le restaurant a beaucoup de touristes parce qu'il est près de la gare.","prompt_fa":"رستوران گردشگر زیادی دارد چون نزدیک ایستگاه قطار است.","correct":true,"explanation_fa":"خانم لوران می‌گوید: «Nous avons beaucoup de touristes : en effet, nous sommes à deux minutes de la gare.»"}
+{"type":"find","prompt":"Quelle phrase donne le salaire de Karim ?","prompt_fa":"کدام جمله حقوق کریم را می‌گوید؟","correct_sentence":13,"explanation_fa":"خانم لوران می‌گوید: «Le salaire est de 1 800 euros par mois, plus les pourboires.»"}
+reading B:
+{"type":"ctx","word":"débrouillez","prompt":"« On verra comment vous vous débrouillez » : Madame Laurent veut voir si Karim…","prompt_fa":"«On verra comment vous vous débrouillez»: خانم لوران می‌خواهد ببیند آیا کریم…","options":["arrive à l'heure le matin.","sait bien faire ce travail.","parle bien anglais.","connaît le quartier."],"correct":1,"explanation_fa":"کریم باید «deux heures avec l'équipe» کار کند؛ «se débrouiller» یعنی از پس کاری برآمدن."}
+{"type":"match","prompt":"Associez.","prompt_fa":"به هم وصل کنید.","left":["Les clients du midi","Karim","Les serveurs du restaurant"],"right":["gagnent souvent 200 euros de plus par mois.","sont toujours pressés.","habite à dix minutes à vélo.","travaillent seulement le soir."],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"مشتری‌ها «sont toujours pressés»، کریم «J'habite à dix minutes à vélo» و پیشخدمت‌ها «gagnent souvent 200 euros de plus par mois»."}
+{"type":"cloze","prompt":"Complétez avec les mots du dialogue.","prompt_fa":"جاهای خالی را با کلمه‌های گفتگو پر کنید.","text_with_gaps":"Un client attend son {{1}} depuis quarante minutes, et il commence à {{2}}.","bank":["plat","crier","vélo","danser","pantalon"],"answers":["plat","crier"],"explanation_fa":"خانم لوران می‌گوید: «Un client attend son plat depuis quarante minutes, et il commence à crier.»"}
+listening A:
+{"type":"num","prompt":"Combien de repas le restaurant sert-il à midi ?","prompt_fa":"رستوران ظهرها چند وعده غذا سرو می‌کند؟","answer":"200","accepted":["200","deux cents"],"explanation_fa":"خانم لوران می‌گوید: «À midi, nous servons deux cents repas en une heure et demie.»"}
+{"type":"mcq","prompt":"Quelles langues Karim parle-t-il bien ?","prompt_fa":"کریم چه زبان‌هایی را خوب بلد است؟","options":["L'espagnol et l'anglais.","L'arabe et l'italien.","L'anglais et l'arabe.","Seulement le français."],"correct":2,"explanation_fa":"کریم می‌گوید: «L'anglais, assez bien, et l'arabe, grâce à mes parents.»"}
+{"type":"tf","prompt":"Karim travaillera du mardi au samedi.","prompt_fa":"کریم سه‌شنبه تا شنبه کار خواهد کرد.","correct":true,"explanation_fa":"خانم لوران می‌گوید: «du mardi au samedi»."}
+{"type":"tf","prompt":"Karim habite loin du restaurant.","prompt_fa":"کریم دور از رستوران زندگی می‌کند.","correct":false,"explanation_fa":"کریم می‌گوید: «J'habite à dix minutes à vélo.»"}
+listening B:
+{"type":"mcq","prompt":"Que fait Karim si un client attend trop longtemps ?","prompt_fa":"اگر مشتری خیلی منتظر بماند، کریم چه کار می‌کند؟","options":["Il appelle Madame Laurent.","Il lui demande de partir.","Il prépare le plat lui-même.","Il garde son calme et lui offre un café."],"correct":3,"explanation_fa":"کریم می‌گوید: «je garde mon calme et je m'excuse … et je lui offre un café»."}
+{"type":"num","prompt":"Quel est le salaire par mois, sans les pourboires, en euros ?","prompt_fa":"حقوق ماهانه بدون انعام چند یورو است؟","answer":"1800","accepted":["1800","1 800","mille huit cents"],"explanation_fa":"خانم لوران می‌گوید: «Le salaire est de 1 800 euros par mois, plus les pourboires.»"}
+{"type":"tf","prompt":"Madame Laurent donne le travail à Karim tout de suite.","prompt_fa":"خانم لوران همان موقع کار را به کریم می‌دهد.","correct":false,"explanation_fa":"خانم لوران می‌گوید: «Je dois encore voir deux autres personnes» و از او می‌خواهد فردا برگردد."}
+{"type":"tf","prompt":"Karim doit venir demain avec une chemise blanche.","prompt_fa":"کریم باید فردا با پیراهن سفید بیاید.","correct":true,"explanation_fa":"خانم لوران می‌گوید: «venez avec une chemise blanche et un pantalon noir»."}

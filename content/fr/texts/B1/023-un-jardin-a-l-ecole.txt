@@ -1,0 +1,41 @@
+code: fr-b1-t023
+title: Un jardin à l'école
+band: 3
+kind: news
+key_words: planter, noter, participer
+sentences:
+- Depuis le mois de mars, les élèves d'une école de Rennes ont un nouveau cours : le jardin. | از ماه مارس، دانش‌آموزان یکی از مدرسه‌های رن یک درس تازه دارند: باغچه.
+- Derrière l'école, il y avait un coin d'herbe où personne n'allait jamais. | پشت مدرسه گوشه‌ای پر از علف بود که هیچ‌کس هیچ‌وقت آنجا نمی‌رفت.
+- Avec l'aide de quelques parents, les instituteurs l'ont transformé en un jardin de 200 mètres carrés. | معلم‌ها با کمک چند نفر از پدر و مادرها آنجا را به باغچه‌ای ۲۰۰ متری تبدیل کردند. | tts: Avec l'aide de quelques parents, les instituteurs l'ont transformé en un jardin de deux cents mètres carrés.
+- Les huit classes de l'école participent, et chaque classe a sa partie du jardin. | هر هشت کلاس مدرسه در این کار شرکت دارند و هر کلاس قسمت خودش را در باغچه دارد.
+- Les plus petits ont planté des fraises et des fleurs, les plus grands des tomates, des salades et des pommes de terre. | کوچک‌ترها توت‌فرنگی و گل کاشته‌اند و بزرگ‌ترها گوجه‌فرنگی، کاهو و سیب‌زمینی.
+- Deux fois par semaine, ils donnent de l'eau aux plantes et ils notent dans un cahier comment elles grandissent. | آن‌ها هفته‌ای دو بار به گیاه‌ها آب می‌دهند و در یک دفتر می‌نویسند که چطور رشد می‌کنند.
+- « Au début, certains enfants n'avaient jamais vu une carotte avec ses feuilles », raconte Claire Moreau, la directrice de l'école. | کلر مورو، مدیر مدرسه، تعریف می‌کند: «اوایل، بعضی از بچه‌ها هیچ‌وقت هویج را با برگ‌هایش ندیده بودند.»
+- « Aujourd'hui, ils veulent tout goûter, même les légumes qu'ils détestaient avant ! » | «حالا می‌خواهند همه‌چیز را بچشند، حتی سبزی‌هایی را که قبلاً از آن‌ها بدشان می‌آمد!»
+- Les élèves apprennent aussi à attendre : il faut parfois trois mois pour voir une tomate rouge. | دانش‌آموزان صبر کردن را هم یاد می‌گیرند: گاهی سه ماه طول می‌کشد تا یک گوجه‌فرنگی قرمز ببینند.
+- Lucas, 9 ans, montre ses salades avec un grand sourire : « Je les ai plantées moi-même, et maman les a mangées hier soir ! » | لوکا، ۹ ساله، با لبخندی بزرگ کاهوهایش را نشان می‌دهد: «خودم کاشتمشان و مامانم دیشب خوردشان!» | tts: Lucas, neuf ans, montre ses salades avec un grand sourire : « Je les ai plantées moi-même, et maman les a mangées hier soir ! »
+- Mais le jardin pose une question : qui va s'occuper des plantes pendant les vacances d'été ? | ولی باغچه یک مسئله هم دارد: در تعطیلات تابستان چه کسی به گیاه‌ها می‌رسد؟
+- « En juillet et en août, il faut que chaque famille choisisse une semaine pour venir donner de l'eau aux plantes », explique la directrice. | مدیر مدرسه توضیح می‌دهد: «در ژوئیه و اوت، هر خانواده باید یک هفته را انتخاب کند تا بیاید و به گیاه‌ها آب بدهد.»
+- Quinze familles ont déjà dit oui. | پانزده خانواده تا حالا قبول کرده‌اند.
+- En juin, les élèves ont vendu une partie de leurs légumes aux parents, devant l'école, et ils ont gagné 180 euros. | در ژوئن، دانش‌آموزان بخشی از سبزی‌هایشان را جلوی مدرسه به پدر و مادرها فروختند و ۱۸۰ یورو درآمد داشتند. | tts: En juin, les élèves ont vendu une partie de leurs légumes aux parents, devant l'école, et ils ont gagné cent quatre-vingts euros.
+- Avec cet argent, ils vont acheter de nouvelles plantes et un petit arbre pour l'année prochaine. | قرار است با این پول برای سال بعد گیاه‌های تازه و یک درخت کوچک بخرند.
+- Des employés de la mairie de Rennes sont venus voir le jardin, et ils aimeraient proposer la même idée à d'autres écoles de la ville. | چند نفر از کارمندان شهرداری رن آمدند باغچه را ببینند و دوست دارند همین ایده را به مدرسه‌های دیگر شهر هم پیشنهاد کنند.
+reading A:
+{"type":"mcq","prompt":"De quoi parle cet article ?","prompt_fa":"این خبر دربارهٔ چیست؟","options":["D'un nouveau marché de légumes à Rennes.","D'une famille qui vend des légumes devant une école.","D'une école qui fait un jardin avec ses élèves.","D'une école qui ferme pendant l'été."],"correct":2,"explanation_fa":"خبر می‌گوید معلم‌ها گوشهٔ پشت مدرسه را «en un jardin» تبدیل کردند و دانش‌آموزان در آن کار می‌کنند."}
+{"type":"tf","prompt":"Avant, les enfants jouaient souvent dans le coin derrière l'école.","prompt_fa":"قبلاً بچه‌ها اغلب در گوشهٔ پشت مدرسه بازی می‌کردند.","correct":false,"explanation_fa":"خبر می‌گوید: «un coin d'herbe où personne n'allait jamais»."}
+{"type":"tf","prompt":"Toutes les classes de l'école travaillent dans le jardin.","prompt_fa":"همهٔ کلاس‌های مدرسه در باغچه کار می‌کنند.","correct":true,"explanation_fa":"خبر می‌گوید: «Les huit classes de l'école participent»."}
+{"type":"find","prompt":"Quelle phrase montre que le jardin a changé les enfants ?","prompt_fa":"کدام جمله نشان می‌دهد باغچه بچه‌ها را عوض کرده است؟","correct_sentence":7,"explanation_fa":"مدیر مدرسه می‌گوید: «Aujourd'hui, ils veulent tout goûter, même les légumes qu'ils détestaient avant !»"}
+reading B:
+{"type":"ctx","word":"notent","prompt":"« ils notent dans un cahier comment elles grandissent » : « noter » veut dire ici…","prompt_fa":"«ils notent dans un cahier comment elles grandissent»: «noter» اینجا یعنی…","options":["dessiner","lire","écrire","oublier"],"correct":2,"explanation_fa":"بچه‌ها در یک دفتر «notent»، یعنی می‌نویسند که گیاه‌ها چطور رشد می‌کنند."}
+{"type":"order","prompt":"Mettez ces moments dans l'ordre.","prompt_fa":"این لحظه‌ها را به ترتیب بچینید.","items":["Les élèves vendent des légumes aux parents.","Le coin d'herbe devient un jardin.","Les enfants plantent des fraises et des tomates.","Les élèves achètent un petit arbre."],"correct_order":[1,2,0,3],"explanation_fa":"اول گوشهٔ پشت مدرسه باغچه می‌شود، بعد بچه‌ها می‌کارند، «En juin» سبزی‌ها را می‌فروشند و با پولش «ils vont acheter … un petit arbre»."}
+{"type":"cloze","prompt":"Complétez avec les mots de l'article.","prompt_fa":"جاهای خالی را با کلمه‌های خبر پر کنید.","text_with_gaps":"Avec l'aide de quelques {{1}}, les instituteurs l'ont {{2}} en un jardin de 200 mètres carrés.","bank":["parents","transformé","fraises","vendu","goûté"],"answers":["parents","transformé"],"explanation_fa":"خبر می‌گوید: «Avec l'aide de quelques parents, les instituteurs l'ont transformé en un jardin»."}
+listening A:
+{"type":"num","prompt":"Combien d'euros les élèves ont-ils gagnés en juin ?","prompt_fa":"دانش‌آموزان در ژوئن چند یورو درآمد داشتند؟","answer":"180","accepted":["180","cent quatre-vingts","cent quatre-vingt"],"explanation_fa":"می‌شنویم: «ils ont gagné 180 euros»."}
+{"type":"mcq","prompt":"Que font les élèves deux fois par semaine ?","prompt_fa":"دانش‌آموزان هفته‌ای دو بار چه کار می‌کنند؟","options":["Ils vendent des légumes aux parents.","Ils donnent de l'eau aux plantes.","Ils mangent les fraises du jardin.","Ils vont voir les employés de la mairie."],"correct":1,"explanation_fa":"می‌شنویم: «Deux fois par semaine, ils donnent de l'eau aux plantes»."}
+{"type":"tf","prompt":"La directrice de l'école s'appelle Claire Moreau.","prompt_fa":"اسم مدیر مدرسه کلر مورو است.","correct":true,"explanation_fa":"می‌شنویم: «raconte Claire Moreau, la directrice de l'école»."}
+{"type":"tf","prompt":"Le jardin fait 500 mètres carrés.","prompt_fa":"باغچه ۵۰۰ متر مربع است.","correct":false,"explanation_fa":"می‌شنویم: «un jardin de 200 mètres carrés»."}
+listening B:
+{"type":"mcq","prompt":"Que doivent faire les familles en juillet et en août ?","prompt_fa":"خانواده‌ها در ژوئیه و اوت باید چه کار کنند؟","options":["Acheter les légumes de l'école.","Planter de nouveaux arbres.","Garder les enfants à la maison.","Venir une semaine pour donner de l'eau aux plantes."],"correct":3,"explanation_fa":"مدیر می‌گوید: «il faut que chaque famille choisisse une semaine pour venir donner de l'eau aux plantes»."}
+{"type":"mcq","prompt":"Qu'est-ce que Lucas a fait ?","prompt_fa":"لوکا چه کار کرده است؟","options":["Il a mangé toutes les fraises.","Il a planté des salades.","Il a vendu un petit arbre.","Il a perdu son cahier."],"correct":1,"explanation_fa":"لوکا می‌گوید: «Je les ai plantées moi-même»، یعنی کاهوها را خودش کاشته."}
+{"type":"tf","prompt":"Quinze familles ont accepté d'aider pendant l'été.","prompt_fa":"پانزده خانواده قبول کرده‌اند در تابستان کمک کنند.","correct":true,"explanation_fa":"می‌شنویم: «Quinze familles ont déjà dit oui.»"}
+{"type":"tf","prompt":"Les élèves vont garder l'argent pour une fête.","prompt_fa":"دانش‌آموزان پول را برای یک جشن نگه می‌دارند.","correct":false,"explanation_fa":"می‌شنویم: «Avec cet argent, ils vont acheter de nouvelles plantes et un petit arbre»."}

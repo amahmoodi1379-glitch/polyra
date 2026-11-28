@@ -1,0 +1,43 @@
+code: fr-b1-t031
+title: Des cours du soir
+band: 3
+kind: letter
+key_words: à propos de, avoir l'impression, tenir au courant
+sentences:
+- Madame, Monsieur, | خانم‌ها، آقایان،
+- Je vous écris à propos de vos cours de français du soir, que j'ai vus sur votre site internet. | دربارهٔ کلاس‌های عصرانهٔ زبان فرانسه‌تان که در وب‌سایتتان دیدم، برایتان می‌نویسم.
+- Je m'appelle Maryam Karimi, je suis iranienne et j'habite à Lyon depuis un an et demi. | اسمم مریم کریمی است، ایرانی‌ام و یک سال و نیم است که در لیون زندگی می‌کنم.
+- Je travaille comme ingénieur dans une entreprise de trains, du lundi au vendredi, de 9 heures à 18 heures. | مهندس یک شرکت راه‌آهن هستم و دوشنبه تا جمعه، از ساعت ۹ صبح تا ۶ عصر کار می‌کنم. | tts: Je travaille comme ingénieur dans une entreprise de trains, du lundi au vendredi, de neuf heures à dix-huit heures.
+- J'ai appris le français à Téhéran pendant deux ans, et au travail, je comprends maintenant presque tout. | دو سال در تهران فرانسه خواندم و حالا سر کار تقریباً همه‌چیز را می‌فهمم.
+- Pourtant, quand je parle, j'ai souvent l'impression de chercher mes mots, et j'écris encore avec beaucoup d'erreurs. | با این حال، وقتی حرف می‌زنم اغلب حس می‌کنم دنبال کلمه می‌گردم و هنوز با کلی غلط می‌نویسم.
+- J'aimerais donc suivre un cours du soir, deux fois par semaine si possible. | برای همین دوست دارم در یک کلاس عصرانه شرکت کنم، اگر بشود هفته‌ای دو بار.
+- J'aurais quelques questions. | چند سؤال دارم.
+- D'abord, à quelle heure commencent les cours du soir ? Comme je finis à 18 heures, je ne peux pas arriver avant 19 heures. | اول اینکه کلاس‌های عصر ساعت چند شروع می‌شوند؟ چون ساعت ۶ کارم تمام می‌شود، نمی‌توانم قبل از ۷ برسم. | tts: D'abord, à quelle heure commencent les cours du soir ? Comme je finis à dix-huit heures, je ne peux pas arriver avant dix-neuf heures.
+- Ensuite, combien coûtent trois mois de cours ? Y a-t-il une réduction pour deux cours par semaine ? | بعد اینکه سه ماه کلاس چقدر هزینه دارد؟ برای دو جلسه در هفته تخفیفی هست؟
+- Enfin, comment choisissez-vous le niveau des élèves ? Faut-il passer un petit examen avant l'inscription ? | آخر اینکه سطح زبان‌آموزها را چطور تعیین می‌کنید؟ باید قبل از ثبت‌نام امتحان کوچکی بدهم؟
+- Je pense avoir un niveau moyen, mais je ne suis pas sûre. | فکر می‌کنم سطحم متوسط است، ولی مطمئن نیستم.
+- Je préfère un petit groupe, où chacun peut prendre la parole. | گروه کوچک را ترجیح می‌دهم که هر کس فرصت حرف زدن داشته باشد.
+- Je suis libre le samedi matin pour venir à l'école, si c'est nécessaire. | اگر لازم باشد، شنبه‌ها صبح آزادم که به آموزشگاه بیایم.
+- Pourriez-vous aussi me tenir au courant des dates de la rentrée ? | ممکن است از تاریخ شروع دوره‌ها هم باخبرم کنید؟
+- Je vous remercie pour votre aide. | از کمکتان ممنونم.
+- Cordialement, | با احترام،
+- Maryam Karimi | مریم کریمی
+reading A:
+{"type":"mcq","prompt":"Pourquoi Maryam écrit-elle à l'école ?","prompt_fa":"مریم چرا به آموزشگاه نامه می‌نویسد؟","options":["Pour s'inscrire à un cours de persan.","Pour trouver un travail de professeur.","Pour changer l'heure de son examen.","Pour poser des questions sur les cours du soir."],"correct":3,"explanation_fa":"مریم می‌نویسد: «Je vous écris à propos de vos cours de français du soir» و بعد «J'aurais quelques questions»."}
+{"type":"tf","prompt":"Au travail, Maryam comprend presque tout.","prompt_fa":"مریم سر کار تقریباً همه‌چیز را می‌فهمد.","correct":true,"explanation_fa":"مریم می‌نویسد: «au travail, je comprends maintenant presque tout»."}
+{"type":"tf","prompt":"Maryam peut arriver à l'école à 18 heures.","prompt_fa":"مریم می‌تواند ساعت ۶ عصر به آموزشگاه برسد.","correct":false,"explanation_fa":"مریم می‌نویسد: «je ne peux pas arriver avant 19 heures»."}
+{"type":"find","prompt":"Quelle phrase dit quel genre de groupe Maryam préfère ?","prompt_fa":"کدام جمله می‌گوید مریم چه جور گروهی را ترجیح می‌دهد؟","correct_sentence":12,"explanation_fa":"مریم می‌نویسد: «Je préfère un petit groupe, où chacun peut prendre la parole.»"}
+reading B:
+{"type":"ctx","word":"l'impression","prompt":"« j'ai souvent l'impression de chercher mes mots » : Maryam veut dire que…","prompt_fa":"«j'ai souvent l'impression de chercher mes mots»: منظور مریم این است که…","options":["elle parle toujours très vite.","elle a perdu son livre de français.","elle sent qu'elle ne trouve pas vite les mots.","elle écrit sans faire d'erreurs."],"correct":2,"explanation_fa":"«avoir l'impression» یعنی حس کردن؛ مریم حس می‌کند وقتی حرف می‌زند کلمه‌ها زود به ذهنش نمی‌آیند."}
+{"type":"order","prompt":"Mettez les questions de Maryam dans l'ordre de sa lettre.","prompt_fa":"سؤال‌های مریم را به ترتیبی که در نامه آمده بچینید.","items":["Le prix des cours.","L'heure des cours.","Le choix du niveau.","Les dates de la rentrée."],"correct_order":[1,0,2,3],"explanation_fa":"مریم اول می‌پرسد «à quelle heure commencent les cours»، بعد «combien coûtent trois mois de cours»، بعد «comment choisissez-vous le niveau» و آخر «les dates de la rentrée»."}
+{"type":"cloze","prompt":"Complétez avec les mots de la lettre.","prompt_fa":"جاهای خالی را با کلمه‌های نامه پر کنید.","text_with_gaps":"Je préfère un petit {{1}}, où chacun peut prendre la {{2}}.","bank":["groupe","parole","train","porte","semaine"],"answers":["groupe","parole"],"explanation_fa":"مریم می‌نویسد: «Je préfère un petit groupe, où chacun peut prendre la parole.»"}
+listening A:
+{"type":"num","prompt":"Pendant combien d'années Maryam a-t-elle appris le français à Téhéran ?","prompt_fa":"مریم چند سال در تهران فرانسه خواند؟","answer":"2","accepted":["2","deux","2 ans","deux ans"],"explanation_fa":"مریم می‌گوید: «J'ai appris le français à Téhéran pendant deux ans»."}
+{"type":"mcq","prompt":"Quel est le travail de Maryam ?","prompt_fa":"شغل مریم چیست؟","options":["Elle est professeur de français.","Elle est ingénieur dans une entreprise de trains.","Elle travaille dans une école de langues.","Elle est étudiante à l'université."],"correct":1,"explanation_fa":"مریم می‌گوید: «Je travaille comme ingénieur dans une entreprise de trains»."}
+{"type":"tf","prompt":"Maryam voudrait suivre des cours deux fois par semaine.","prompt_fa":"مریم دوست دارد هفته‌ای دو بار کلاس برود.","correct":true,"explanation_fa":"مریم می‌گوید: «deux fois par semaine si possible»."}
+{"type":"tf","prompt":"Maryam travaille le samedi matin.","prompt_fa":"مریم شنبه‌ها صبح کار می‌کند.","correct":false,"explanation_fa":"مریم «du lundi au vendredi» کار می‌کند و می‌گوید: «Je suis libre le samedi matin»."}
+listening B:
+{"type":"mcq","prompt":"Pourquoi Maryam ne peut-elle pas arriver avant 19 heures ?","prompt_fa":"چرا مریم نمی‌تواند قبل از ساعت ۷ عصر برسد؟","options":["Parce qu'elle finit son travail à 18 heures.","Parce qu'elle a cours à l'université.","Parce qu'elle habite loin de l'école.","Parce qu'elle va chercher ses enfants."],"correct":0,"explanation_fa":"مریم می‌گوید: «Comme je finis à 18 heures, je ne peux pas arriver avant 19 heures.»"}
+{"type":"mcq","prompt":"Qu'est-ce que Maryam demande à la fin de sa lettre ?","prompt_fa":"مریم در آخر نامه‌اش چه می‌خواهد؟","options":["Le nom du professeur.","Les dates de la rentrée.","L'adresse de l'école.","Le prix des livres."],"correct":1,"explanation_fa":"مریم می‌گوید: «Pourriez-vous aussi me tenir au courant des dates de la rentrée ?»"}
+{"type":"tf","prompt":"Maryam pense qu'elle a un niveau moyen.","prompt_fa":"مریم فکر می‌کند سطحش متوسط است.","correct":true,"explanation_fa":"مریم می‌گوید: «Je pense avoir un niveau moyen, mais je ne suis pas sûre.»"}
+{"type":"tf","prompt":"Maryam préfère un grand groupe.","prompt_fa":"مریم گروه بزرگ را ترجیح می‌دهد.","correct":false,"explanation_fa":"مریم می‌گوید: «Je préfère un petit groupe»."}

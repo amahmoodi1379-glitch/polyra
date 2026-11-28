@@ -1,0 +1,46 @@
+code: fr-b1-t027
+title: Une liste sur le frigo
+band: 3
+kind: long_dialogue
+key_words: exagérer, balayer
+sentences:
+A: Lucas, tu as deux minutes ? Il faut qu'on parle de l'appartement. | لوکا، دو دقیقه وقت داری؟ باید دربارهٔ آپارتمان حرف بزنیم.
+B: Encore, Inès ? Quel est le problème, cette fois ? | باز هم، اینس؟ این دفعه چه مشکلی هست؟
+A: Regarde la cuisine : la vaisselle de trois jours, et la poubelle qui est pleine depuis dimanche ! | آشپزخانه را ببین: ظرف‌های سه روز مانده و سطل آشغال از یکشنبه پر است!
+B: Je ne suis pas le seul ! Sarah mange ici aussi. | فقط من که نیستم! سارا هم اینجا غذا می‌خورد.
+A: Sarah a fait le ménage samedi, et moi, j'ai nettoyé la salle de bain hier. Et toi, tu as fait quoi cette semaine ? | سارا شنبه خانه را تمیز کرد و من دیروز حمام را شستم. تو این هفته چه کار کردی؟
+B: Euh… J'ai acheté du lait ? | اِ… شیر خریدم؟
+A: Tu exagères, Lucas. Depuis septembre, tu n'as jamais balayé le salon, pas une seule fois. | دیگر شورش را درآوردی، لوکا. از سپتامبر تا حالا یک بار هم هال را جارو نکرده‌ای.
+B: C'est vrai, je sais. Mais en ce moment, avec mes examens, je n'ai pas une minute. | راست می‌گویی، می‌دانم. ولی این روزها با امتحان‌هایم یک دقیقه هم وقت ندارم.
+A: Nous aussi, on a des examens ! Et Sarah travaille trois soirs par semaine dans un restaurant. | ما هم امتحان داریم! تازه سارا هفته‌ای سه شب در یک رستوران کار می‌کند.
+B: D'accord, d'accord, tu as raison. Qu'est-ce que tu proposes ? | باشه، باشه، حق با توست. چه پیشنهادی داری؟
+A: Une liste sur le frigo, avec le travail de chacun pour la semaine. On change tous les lundis. | یک فهرست روی یخچال، با کار هر کس برای آن هفته. هر دوشنبه کارها را جابه‌جا می‌کنیم.
+B: Comme chez mes parents, quand j'avais dix ans ? | مثل خانهٔ پدر و مادرم، وقتی ده سالم بود؟
+A: Exactement. Et si quelqu'un oublie son travail, il paie les courses de la semaine pour tout le monde. | دقیقاً. و اگر کسی کارش را فراموش کند، خرید آن هفتهٔ همه را او می‌دهد.
+B: Les courses pour trois ? Mais ça coûte au moins 80 euros ! | خرید سه نفر؟ ولی دست‌کم ۸۰ یورو می‌شود! | tts: Les courses pour trois ? Mais ça coûte au moins quatre-vingts euros !
+A: C'est l'idée ! Il faut que tu prennes ça au sérieux. | هدف همین است! باید این را جدی بگیری.
+B: Bon, d'accord. Je commence quand ? | خب، باشه. از کی شروع کنم؟
+A: Ce soir. Tu fais la vaisselle, et demain matin, tu descends la poubelle. | امشب. ظرف‌ها را می‌شویی و فردا صبح سطل آشغال را می‌بری پایین.
+B: Et si je prépare aussi le dîner ce soir, je suis libre demain ? | اگر امشب شام را هم درست کنم، فردا آزادم؟
+A: N'importe quoi ! Mais d'accord pour le dîner : j'ai faim. | حرف مفت نزن! ولی با شام موافقم: گرسنه‌ام.
+B: Des pâtes au fromage, ça te va ? | ماکارونی با پنیر، خوب است؟
+A: Parfait. Et après, tu laves aussi la casserole, hein ! | عالی. بعدش قابلمه را هم می‌شویی، ها!
+reading A:
+{"type":"mcq","prompt":"Pourquoi Inès veut-elle parler à Lucas ?","prompt_fa":"چرا اینس می‌خواهد با لوکا حرف بزند؟","options":["Parce que Lucas ne fait presque rien dans l'appartement.","Parce que Sarah veut quitter l'appartement.","Parce que Lucas a oublié de payer les courses.","Parce qu'elle a des examens et ne peut pas cuisiner."],"correct":0,"explanation_fa":"اینس به لوکا می‌گوید: «Depuis septembre, tu n'as jamais balayé le salon, pas une seule fois.»"}
+{"type":"tf","prompt":"Inès a nettoyé la salle de bain hier.","prompt_fa":"اینس دیروز حمام را تمیز کرد.","correct":true,"explanation_fa":"اینس می‌گوید: «moi, j'ai nettoyé la salle de bain hier»."}
+{"type":"tf","prompt":"Sarah ne fait jamais le ménage.","prompt_fa":"سارا هیچ‌وقت خانه را تمیز نمی‌کند.","correct":false,"explanation_fa":"اینس می‌گوید: «Sarah a fait le ménage samedi»."}
+{"type":"find","prompt":"Quelle phrase dit qui paie les courses si quelqu'un oublie son travail ?","prompt_fa":"کدام جمله می‌گوید اگر کسی کارش را فراموش کند، چه کسی پول خرید را می‌دهد؟","correct_sentence":12,"explanation_fa":"اینس می‌گوید: «si quelqu'un oublie son travail, il paie les courses de la semaine pour tout le monde»."}
+reading B:
+{"type":"ctx","word":"exagères","prompt":"« Tu exagères, Lucas. » : Inès veut dire que Lucas…","prompt_fa":"«Tu exagères, Lucas.»: منظور اینس این است که لوکا…","options":["parle trop vite.","va trop loin, il a tort.","travaille trop pour ses examens.","mange trop de pâtes."],"correct":1,"explanation_fa":"لوکا فقط «du lait» خریده و هیچ‌وقت جارو نکرده؛ اینس با «Tu exagères» می‌گوید که لوکا زیاده‌روی کرده است."}
+{"type":"order","prompt":"Mettez ces moments dans l'ordre.","prompt_fa":"این لحظه‌ها را به ترتیب بچینید.","items":["Lucas propose de préparer le dîner.","Inès montre la cuisine à Lucas.","Inès propose une liste sur le frigo.","Lucas parle de ses examens."],"correct_order":[1,3,2,0],"explanation_fa":"اول اینس می‌گوید «Regarde la cuisine»، بعد لوکا از «mes examens» حرف می‌زند، بعد اینس «Une liste sur le frigo» را پیشنهاد می‌کند و آخر لوکا می‌گوید «si je prépare aussi le dîner»."}
+{"type":"cloze","prompt":"Complétez avec les mots du dialogue.","prompt_fa":"جاهای خالی را با کلمه‌های گفتگو پر کنید.","text_with_gaps":"Ce soir. Tu fais la {{1}}, et demain matin, tu descends la {{2}}.","bank":["vaisselle","poubelle","casserole","liste","semaine"],"answers":["vaisselle","poubelle"],"explanation_fa":"اینس می‌گوید: «Tu fais la vaisselle, et demain matin, tu descends la poubelle.»"}
+listening A:
+{"type":"mcq","prompt":"Qu'est-ce que Lucas a fait cette semaine pour l'appartement ?","prompt_fa":"لوکا این هفته برای آپارتمان چه کار کرده است؟","options":["Il a balayé le salon.","Il a fait la vaisselle.","Il a acheté du lait.","Il a descendu la poubelle."],"correct":2,"explanation_fa":"لوکا می‌گوید: «J'ai acheté du lait ?»"}
+{"type":"num","prompt":"Combien de soirs par semaine Sarah travaille-t-elle au restaurant ?","prompt_fa":"سارا هفته‌ای چند شب در رستوران کار می‌کند؟","answer":"3","accepted":["3","trois"],"explanation_fa":"اینس می‌گوید: «Sarah travaille trois soirs par semaine dans un restaurant»."}
+{"type":"tf","prompt":"Lucas dit qu'il n'a pas le temps à cause de ses examens.","prompt_fa":"لوکا می‌گوید به‌خاطر امتحان‌هایش وقت ندارد.","correct":true,"explanation_fa":"لوکا می‌گوید: «avec mes examens, je n'ai pas une minute»."}
+{"type":"tf","prompt":"La liste change tous les vendredis.","prompt_fa":"فهرست هر جمعه عوض می‌شود.","correct":false,"explanation_fa":"اینس می‌گوید: «On change tous les lundis.»"}
+listening B:
+{"type":"mcq","prompt":"Que va préparer Lucas ce soir ?","prompt_fa":"لوکا امشب چه درست می‌کند؟","options":["Une salade.","Une soupe.","Un gâteau au chocolat.","Des pâtes au fromage."],"correct":3,"explanation_fa":"لوکا می‌گوید: «Des pâtes au fromage, ça te va ?»"}
+{"type":"mcq","prompt":"Combien coûtent les courses de la semaine pour trois, d'après Lucas ?","prompt_fa":"به گفتهٔ لوکا، خرید یک هفتهٔ سه نفر چقدر می‌شود؟","options":["Au moins 80 euros.","Moins de 30 euros.","Exactement 60 euros.","Plus de 200 euros."],"correct":0,"explanation_fa":"لوکا می‌گوید: «ça coûte au moins 80 euros !»"}
+{"type":"tf","prompt":"À la fin, Lucas accepte de commencer ce soir.","prompt_fa":"در آخر، لوکا قبول می‌کند از امشب شروع کند.","correct":true,"explanation_fa":"لوکا می‌پرسد «Je commence quand ?» و اینس می‌گوید «Ce soir.»؛ بعد لوکا شام را هم درست می‌کند."}
+{"type":"tf","prompt":"Inès n'a pas faim ce soir.","prompt_fa":"اینس امشب گرسنه نیست.","correct":false,"explanation_fa":"اینس می‌گوید: «j'ai faim»."}

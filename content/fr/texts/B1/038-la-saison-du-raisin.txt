@@ -1,0 +1,41 @@
+code: fr-b1-t038
+title: La saison du raisin
+band: 3
+kind: news
+key_words: parmi, faire partie de, résultat
+sentences:
+- En Bourgogne, la saison du raisin a commencé lundi, une semaine plus tôt que l'année dernière. | در بورگونی فصل انگورچینی دوشنبه شروع شد، یک هفته زودتر از پارسال.
+- À cause de la chaleur de l'été, le raisin est prêt plus tôt. | به‌خاطر گرمای تابستان، انگورها زودتر رسیده‌اند.
+- Comme chaque année, les familles qui font du vin ont besoin de beaucoup de bras. | مثل هر سال، خانواده‌هایی که شراب درست می‌کنند به نیروی کار زیادی نیاز دارند.
+- Dans la région, près de 5 000 personnes vont couper le raisin à la main pendant trois semaines. | در منطقه نزدیک به ۵۰۰۰ نفر سه هفته با دست انگور می‌چینند. | tts: Dans la région, près de cinq mille personnes vont couper le raisin à la main pendant trois semaines.
+- Parmi elles, il y a beaucoup d'étudiants, qui veulent gagner un peu d'argent avant la rentrée. | در میانشان دانشجوهای زیادی هستند که می‌خواهند پیش از شروع سال تحصیلی کمی پول دربیاورند.
+- Inès, 21 ans, étudiante à Lyon, est venue pour la troisième fois. | اینس، ۲۱ ساله، دانشجوی لیون، برای سومین بار آمده است. | tts: Inès, vingt et un ans, étudiante à Lyon, est venue pour la troisième fois.
+- « Le travail est dur : on commence à 7 heures, on a mal au dos, et le soir, on a du jus de raisin partout ! » | «کار سخت است: ساعت هفت شروع می‌کنیم، کمرمان درد می‌گیرد و شب‌ها همه‌جایمان آب انگوری است!» | tts: « Le travail est dur : on commence à sept heures, on a mal au dos, et le soir, on a du jus de raisin partout ! »
+- « Mais on rit beaucoup. Le midi, on mange tous ensemble dans la cour, et le soir, on chante. » | «ولی خیلی می‌خندیم. ظهرها همه با هم توی حیاط غذا می‌خوریم و شب‌ها آواز می‌خوانیم.»
+- Les étudiants gagnent environ 12 euros de l'heure, et on leur offre souvent le repas et une chambre. | دانشجوها ساعتی حدود ۱۲ یورو درمی‌آورند و اغلب غذا و اتاق هم به آن‌ها می‌دهند. | tts: Les étudiants gagnent environ douze euros de l'heure, et on leur offre souvent le repas et une chambre.
+- Antoine Moreau fait du vin depuis trente ans près de Dijon. | آنتوان مورو سی سال است که نزدیک دیژون شراب درست می‌کند.
+- « Dans les villages, je ne trouve plus assez de gens pour ce travail. Sans les jeunes, je ne pourrais pas finir à temps. » | «در روستاها دیگر برای این کار به اندازهٔ کافی آدم پیدا نمی‌کنم. بدون جوان‌ها نمی‌توانستم کار را به‌موقع تمام کنم.»
+- Il est content que les mêmes étudiants reviennent chaque année : « Ils connaissent le travail, et maintenant, ils font partie de la famille ! » | او خوشحال است که همان دانشجوها هر سال برمی‌گردند: «کار را بلدند و حالا دیگر جزو خانواده‌اند!»
+- Cette année, il n'y aura pas beaucoup de raisin, car il n'a presque pas plu en août. | امسال انگور زیادی نخواهد بود، چون در اوت تقریباً باران نبارید.
+- Mais le raisin est très bon, et Antoine espère un très bon résultat. | ولی انگورها خیلی خوب‌اند و آنتوان امیدوار است نتیجه خیلی خوب باشد.
+- « Ce sera peut-être une grande année pour notre vin ! », dit-il avec un sourire. | با لبخند می‌گوید: «شاید امسال سال بزرگی برای شراب ما باشد!»
+- Le travail va durer jusqu'à la fin du mois. | کار تا آخر ماه ادامه دارد.
+reading A:
+{"type":"mcq","prompt":"De quoi parle cet article ?","prompt_fa":"این خبر دربارهٔ چیست؟","options":["D'une fête du vin à Dijon.","Du début de la saison du raisin en Bourgogne.","D'un nouveau vin de Lyon.","Des examens des étudiants à la rentrée."],"correct":1,"explanation_fa":"خبر می‌گوید: «En Bourgogne, la saison du raisin a commencé lundi»."}
+{"type":"tf","prompt":"Cette année, la saison du raisin a commencé plus tard que d'habitude.","prompt_fa":"امسال فصل انگورچینی دیرتر از همیشه شروع شد.","correct":false,"explanation_fa":"خبر می‌گوید: «une semaine plus tôt que l'année dernière»."}
+{"type":"tf","prompt":"Antoine Moreau a besoin des étudiants pour finir le travail.","prompt_fa":"آنتوان مورو برای تمام کردن کار به دانشجوها نیاز دارد.","correct":true,"explanation_fa":"آنتوان می‌گوید: «Sans les jeunes, je ne pourrais pas finir à temps.»"}
+{"type":"find","prompt":"Quelle phrase explique pourquoi il n'y aura pas beaucoup de raisin cette année ?","prompt_fa":"کدام جمله توضیح می‌دهد چرا امسال انگور زیادی نخواهد بود؟","correct_sentence":12,"explanation_fa":"خبر می‌گوید: «car il n'a presque pas plu en août»."}
+reading B:
+{"type":"ctx","word":"font partie de la famille","prompt":"« ils font partie de la famille ! » : Antoine veut dire que les étudiants…","prompt_fa":"«ils font partie de la famille !»: منظور آنتوان این است که دانشجوها…","options":["sont ses enfants.","habitent toute l'année chez lui.","sont comme des membres de sa famille.","viennent avec leur famille."],"correct":2,"explanation_fa":"«faire partie de» یعنی جزو چیزی بودن؛ دانشجوها هر سال برمی‌گردند و برای آنتوان مثل خانواده شده‌اند."}
+{"type":"match","prompt":"Associez.","prompt_fa":"به هم وصل کنید.","left":["Inès","Antoine Moreau","Les étudiants"],"right":["gagnent environ 12 euros de l'heure.","fait du vin depuis trente ans.","est venue pour la troisième fois.","vendent le vin au marché."],"pairs":[[0,2],[1,1],[2,0]],"explanation_fa":"اینس «est venue pour la troisième fois»، آنتوان «fait du vin depuis trente ans» و دانشجوها «gagnent environ 12 euros de l'heure»."}
+{"type":"cloze","prompt":"Complétez la phrase d'Inès.","prompt_fa":"جملهٔ اینس را کامل کنید.","text_with_gaps":"Le midi, on mange tous ensemble dans la {{1}}, et le soir, on {{2}}.","bank":["cour","chante","raisin","dos","vin"],"answers":["cour","chante"],"explanation_fa":"اینس می‌گوید: «Le midi, on mange tous ensemble dans la cour, et le soir, on chante.»"}
+listening A:
+{"type":"num","prompt":"Combien de personnes vont couper le raisin dans la région ?","prompt_fa":"در منطقه چند نفر انگور می‌چینند؟","answer":"5000","accepted":["5000","5 000","cinq mille"],"explanation_fa":"می‌شنویم: «près de 5 000 personnes vont couper le raisin à la main»."}
+{"type":"mcq","prompt":"À quelle heure commence le travail ?","prompt_fa":"کار ساعت چند شروع می‌شود؟","options":["À 6 heures.","À 8 heures.","À midi.","À 7 heures."],"correct":3,"explanation_fa":"اینس می‌گوید: «on commence à 7 heures»."}
+{"type":"tf","prompt":"Inès est étudiante à Lyon.","prompt_fa":"اینس دانشجوی لیون است.","correct":true,"explanation_fa":"می‌شنویم: «Inès, 21 ans, étudiante à Lyon»."}
+{"type":"tf","prompt":"Il a beaucoup plu en août.","prompt_fa":"در اوت باران زیادی بارید.","correct":false,"explanation_fa":"می‌شنویم: «il n'a presque pas plu en août»."}
+listening B:
+{"type":"mcq","prompt":"Pourquoi le raisin est-il prêt plus tôt cette année ?","prompt_fa":"چرا امسال انگورها زودتر رسیده‌اند؟","options":["À cause de la pluie.","Parce que les étudiants sont arrivés tôt.","Parce que la rentrée est plus tôt.","À cause de la chaleur de l'été."],"correct":3,"explanation_fa":"می‌شنویم: «À cause de la chaleur de l'été, le raisin est prêt plus tôt.»"}
+{"type":"mcq","prompt":"Que dit Antoine du vin de cette année ?","prompt_fa":"آنتوان دربارهٔ شراب امسال چه می‌گوید؟","options":["Il sera trop cher.","Il n'y aura pas de vin.","Ce sera peut-être une grande année.","Il sera moins bon que l'année dernière."],"correct":2,"explanation_fa":"آنتوان می‌گوید: «Ce sera peut-être une grande année pour notre vin !»"}
+{"type":"tf","prompt":"On offre souvent le repas aux étudiants.","prompt_fa":"اغلب به دانشجوها غذا می‌دهند.","correct":true,"explanation_fa":"می‌شنویم: «on leur offre souvent le repas et une chambre»."}
+{"type":"tf","prompt":"Antoine trouve facilement des gens dans les villages.","prompt_fa":"آنتوان در روستاها به‌راحتی آدم پیدا می‌کند.","correct":false,"explanation_fa":"آنتوان می‌گوید: «Dans les villages, je ne trouve plus assez de gens pour ce travail.»"}

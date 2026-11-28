@@ -1,0 +1,40 @@
+code: fr-b1-t032
+title: Strasbourg à vélo
+band: 3
+kind: news
+key_words: rassurer, se plaindre, avoir l'occasion de
+sentences:
+- Strasbourg, déjà célèbre en France pour ses vélos, a ouvert cette semaine 12 kilomètres de nouveaux couloirs réservés aux vélos. | استراسبورگ که همین حالا هم در فرانسه به دوچرخه‌هایش معروف است، این هفته ۱۲ کیلومتر مسیر تازهٔ مخصوص دوچرخه باز کرد. | tts: Strasbourg, déjà célèbre en France pour ses vélos, a ouvert cette semaine douze kilomètres de nouveaux couloirs réservés aux vélos.
+- Ces couloirs vont de la gare au centre-ville et aux quartiers du sud. | این مسیرها از ایستگاه قطار تا مرکز شهر و محله‌های جنوبی کشیده شده‌اند.
+- Ils font deux mètres de large, et un petit mur les sépare des voitures, ce qui rassure beaucoup les parents. | دو متر پهنا دارند و دیوار کوتاهی آن‌ها را از ماشین‌ها جدا می‌کند، و همین خیال پدر و مادرها را خیلی راحت می‌کند.
+- Pour les construire, la ville a enlevé 400 places{place-2} de parking et fermé une partie de l'avenue de la gare aux voitures. | شهر برای ساختن آن‌ها ۴۰۰ جای پارک را برداشته و بخشی از خیابان ایستگاه را به روی ماشین‌ها بسته است. | tts: Pour les construire, la ville a enlevé quatre cents places de parking et fermé une partie de l'avenue de la gare aux voitures.
+- « Nous voulons que les gens puissent aller au travail à vélo sans avoir peur », explique la mairie. | شهرداری توضیح می‌دهد: «می‌خواهیم مردم بتوانند بدون ترس با دوچرخه سر کار بروند.»
+- Les gens qui roulent à vélo sont très contents. | دوچرخه‌سوارها خیلی راضی‌اند.
+- « Avant, je mettais 25 minutes pour aller au travail ; maintenant, je mets 15 minutes », raconte Julie, infirmière à l'hôpital. | ژولی، پرستار بیمارستان، تعریف می‌کند: «قبلاً ۲۵ دقیقه طول می‌کشید تا سر کار بروم؛ حالا ۱۵ دقیقه.» | tts: « Avant, je mettais vingt-cinq minutes pour aller au travail ; maintenant, je mets quinze minutes », raconte Julie, infirmière à l'hôpital.
+- « Et surtout, je n'ai plus peur des camions le matin. » | «و از همه مهم‌تر، دیگر صبح‌ها از کامیون‌ها نمی‌ترسم.»
+- Les conducteurs, eux, sont moins contents. | ولی راننده‌ها کمتر راضی‌اند.
+- Marc, chauffeur de taxi, se plaint des embouteillages : « Le matin, il faut maintenant vingt minutes de plus pour traverser le centre. » | مارک، رانندهٔ تاکسی، از ترافیک گله دارد: «حالا صبح‌ها بیست دقیقه بیشتر طول می‌کشد تا از مرکز شهر رد شوی.»
+- « Je ne comprends pas ce que la ville veut : on ne peut pas tous venir à vélo ! » | «نمی‌فهمم شهرداری چه می‌خواهد: همه که نمی‌توانند با دوچرخه بیایند!»
+- Les patrons des magasins de l'avenue ont peur de perdre des clients. | صاحبان مغازه‌های آن خیابان می‌ترسند مشتری‌هایشان را از دست بدهند.
+- La mairie, elle, pense que les gens à vélo s'arrêtent plus souvent dans les petits magasins. | ولی شهرداری فکر می‌کند دوچرخه‌سوارها بیشتر در مغازه‌های کوچک توقف می‌کنند.
+- Le lendemain, on a déjà compté 3 000 vélos sur l'avenue. | فردای آن روز، روی آن خیابان ۳۰۰۰ دوچرخه شمرده شد. | tts: Le lendemain, on a déjà compté trois mille vélos sur l'avenue.
+- Les habitants auront l'occasion de donner leur avis lors d'une grande réunion à la mairie, le 15 mai. | اهالی فرصت خواهند داشت روز ۱۵ مه در یک جلسهٔ بزرگ در شهرداری نظرشان را بگویند. | tts: Les habitants auront l'occasion de donner leur avis lors d'une grande réunion à la mairie, le quinze mai.
+reading A:
+{"type":"mcq","prompt":"Quelle est la nouvelle ?","prompt_fa":"خبر چیست؟","options":["Strasbourg a ouvert de nouveaux couloirs pour les vélos.","Strasbourg ferme son centre aux vélos.","Strasbourg construit 400 places de parking.","Les taxis sont maintenant gratuits à Strasbourg."],"correct":0,"explanation_fa":"خبر می‌گوید: «a ouvert cette semaine 12 kilomètres de nouveaux couloirs réservés aux vélos»."}
+{"type":"tf","prompt":"Un petit mur sépare les vélos des voitures.","prompt_fa":"یک دیوار کوتاه دوچرخه‌ها را از ماشین‌ها جدا می‌کند.","correct":true,"explanation_fa":"خبر می‌گوید: «un petit mur les sépare des voitures»."}
+{"type":"tf","prompt":"Tout le monde est content des nouveaux couloirs.","prompt_fa":"همه از مسیرهای تازه راضی‌اند.","correct":false,"explanation_fa":"خبر می‌گوید: «Les conducteurs, eux, sont moins contents» و مغازه‌دارها «ont peur de perdre des clients»."}
+{"type":"find","prompt":"Quelle phrase dit ce que la ville a dû enlever pour faire les couloirs ?","prompt_fa":"کدام جمله می‌گوید شهر برای ساختن مسیرها چه چیزی را مجبور شد بردارد؟","correct_sentence":3,"explanation_fa":"خبر می‌گوید: «la ville a enlevé 400 places de parking»."}
+reading B:
+{"type":"ctx","word":"rassure","prompt":"« un petit mur les sépare des voitures, ce qui rassure beaucoup les parents » : les parents…","prompt_fa":"«… ce qui rassure beaucoup les parents»: پدر و مادرها…","options":["sont fâchés contre la mairie.","ont moins peur pour leurs enfants.","ne veulent plus prendre le vélo.","achètent des voitures."],"correct":1,"explanation_fa":"«rassurer» یعنی خیال کسی را راحت کردن؛ با آن دیوار، پدر و مادرها کمتر نگران بچه‌هایشان هستند."}
+{"type":"match","prompt":"Qui dit ou pense quoi ?","prompt_fa":"چه کسی چه می‌گوید یا چه فکری می‌کند؟","left":["Julie","Marc","Les patrons des magasins"],"right":["ont peur de perdre des clients.","met 15 minutes pour aller au travail.","se plaint des embouteillages.","a construit le petit mur."],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"ژولی «maintenant, je mets 15 minutes»، مارک «se plaint des embouteillages» و مغازه‌دارها «ont peur de perdre des clients»."}
+{"type":"cloze","prompt":"Complétez la phrase de Marc.","prompt_fa":"جملهٔ مارک را کامل کنید.","text_with_gaps":"Je ne comprends pas {{1}} la ville veut : on ne peut pas tous venir à {{2}} !","bank":["ce que","vélo","ce qui","quand","parking"],"answers":["ce que","vélo"],"explanation_fa":"مارک می‌گوید: «Je ne comprends pas ce que la ville veut : on ne peut pas tous venir à vélo !»"}
+listening A:
+{"type":"num","prompt":"Combien de kilomètres de nouveaux couloirs la ville a-t-elle ouverts ?","prompt_fa":"شهر چند کیلومتر مسیر تازه باز کرده است؟","answer":"12","accepted":["12","douze","12 kilomètres","douze kilomètres"],"explanation_fa":"می‌شنویم: «a ouvert cette semaine 12 kilomètres de nouveaux couloirs»."}
+{"type":"mcq","prompt":"Combien de minutes Julie met-elle maintenant pour aller au travail ?","prompt_fa":"ژولی حالا چند دقیقه طول می‌کشد تا سر کار برود؟","options":["25 minutes.","20 minutes.","15 minutes.","40 minutes."],"correct":2,"explanation_fa":"ژولی می‌گوید: «maintenant, je mets 15 minutes»."}
+{"type":"tf","prompt":"Marc est chauffeur de bus.","prompt_fa":"مارک رانندهٔ اتوبوس است.","correct":false,"explanation_fa":"می‌شنویم: «Marc, chauffeur de taxi»."}
+{"type":"tf","prompt":"La grande réunion à la mairie aura lieu le 15 mai.","prompt_fa":"جلسهٔ بزرگ شهرداری ۱۵ مه برگزار می‌شود.","correct":true,"explanation_fa":"می‌شنویم: «lors d'une grande réunion à la mairie, le 15 mai»."}
+listening B:
+{"type":"mcq","prompt":"De quoi Julie n'a-t-elle plus peur le matin ?","prompt_fa":"ژولی صبح‌ها دیگر از چه نمی‌ترسد؟","options":["Des taxis.","De la pluie.","Des camions.","Du petit mur."],"correct":2,"explanation_fa":"ژولی می‌گوید: «je n'ai plus peur des camions le matin»."}
+{"type":"mcq","prompt":"Combien de vélos a-t-on comptés sur l'avenue le lendemain ?","prompt_fa":"فردای آن روز چند دوچرخه روی خیابان شمرده شد؟","options":["300.","400.","1 500.","3 000."],"correct":3,"explanation_fa":"می‌شنویم: «Le lendemain, on a déjà compté 3 000 vélos sur l'avenue.»"}
+{"type":"tf","prompt":"La ville a enlevé des places de parking.","prompt_fa":"شهر چند جای پارک را برداشته است.","correct":true,"explanation_fa":"می‌شنویم: «la ville a enlevé 400 places de parking»."}
+{"type":"tf","prompt":"Selon la mairie, les gens à vélo ne s'arrêtent jamais dans les magasins.","prompt_fa":"به گفتهٔ شهرداری، دوچرخه‌سوارها هیچ‌وقت در مغازه‌ها توقف نمی‌کنند.","correct":false,"explanation_fa":"می‌شنویم: «les gens à vélo s'arrêtent plus souvent dans les petits magasins»."}

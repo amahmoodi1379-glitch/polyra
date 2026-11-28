@@ -1,0 +1,48 @@
+code: fr-b1-t022
+title: Le téléphone ne s'allume plus
+band: 3
+kind: long_dialogue
+key_words: joindre, échanger, récupérer
+sentences:
+A: Bonjour Monsieur. J'ai un problème avec ce téléphone : je l'ai acheté ici il y a trois semaines. | سلام آقا. با این گوشی مشکل دارم: سه هفته پیش از همین‌جا خریدمش.
+B: Bonjour Madame. Quel est le problème ? | سلام خانم. چه مشکلی دارد؟
+A: Depuis ce matin, il ne s'allume plus. L'écran reste noir, et rien ne marche{marcher-2}. | از امروز صبح دیگر روشن نمی‌شود. صفحه‌اش سیاه می‌ماند و هیچ‌چیزش کار نمی‌کند.
+B: Il est tombé ? Il a pris l'eau, peut-être ? | افتاده؟ شاید آب خورده؟
+A: Non, pas du tout, je fais très attention. Hier soir, je l'avais laissé à côté de mon lit pour le charger, comme d'habitude. | نه، اصلاً، خیلی مراقبم. دیشب مثل همیشه گذاشته بودمش کنار تختم تا شارژ شود.
+B: Je peux le voir ? Ah oui, rien ne s'allume. | می‌توانم ببینمش؟ آره، هیچ چیزش روشن نمی‌شود.
+B: Bon, votre téléphone a moins de deux ans, donc on le répare, et ça ne vous coûte rien. | خب، گوشی‌تان کمتر از دو سال دارد، پس تعمیرش می‌کنیم و هیچ هزینه‌ای برایتان ندارد.
+A: Très bien. Et ça prend combien de temps ? | خیلی خوب. چقدر طول می‌کشد؟
+B: En général, nous l'envoyons à Lyon, et vous le récupérez dix ou quinze jours plus tard. | معمولاً آن را به لیون می‌فرستیم و ده پانزده روز بعد تحویلش می‌گیرید.
+A: Quinze jours ! Mais je ne peux pas rester deux semaines sans téléphone. | پانزده روز! ولی نمی‌توانم دو هفته بی‌گوشی بمانم.
+A: Je travaille dans une agence de voyages, et mes clients doivent pouvoir me joindre toute la journée. | در یک آژانس مسافرتی کار می‌کنم و مشتری‌هایم باید بتوانند تمام روز با من تماس بگیرند.
+B: Je comprends. Je vous propose deux solutions. | متوجهم. پس دو راه به شما پیشنهاد می‌کنم.
+B: D'abord, je peux vous prêter un vieux téléphone pendant ces deux semaines. Il n'est pas très beau, mais il marche{marcher-2} bien. | اول اینکه می‌توانم در این دو هفته یک گوشی قدیمی به شما قرض بدهم. خیلی قشنگ نیست، ولی خوب کار می‌کند.
+B: Ou alors, j'échange votre téléphone contre un neuf, tout de suite. | یا اینکه همین الان گوشی‌تان را با یک گوشی نو عوض می‌کنم.
+A: Un neuf ? Le même ? | یک گوشی نو؟ همین مدل؟
+B: Oui, mais nous n'avons plus que le blanc. Le noir revient en magasin le mois prochain. | بله، ولی فقط سفیدش را داریم. مشکی‌اش ماه بعد دوباره به فروشگاه می‌آید.
+A: Le blanc… Et mes photos ? Toutes les photos de mes enfants sont dans ce téléphone ! | سفید… عکس‌هایم چه می‌شود؟ همهٔ عکس‌های بچه‌هایم توی این گوشی است!
+B: Ne vous inquiétez pas. Notre technicien peut récupérer vos photos et les mettre sur le nouveau téléphone. | نگران نباشید. تعمیرکار ما می‌تواند عکس‌هایتان را بیرون بیاورد و روی گوشی جدید بریزد.
+A: Ah, très bien. Alors je prends le blanc : la couleur, ce n'est pas le plus important. | آهان، چه خوب. پس سفید را برمی‌دارم: رنگ مهم‌ترین چیز نیست.
+B: Très bien. Vous avez gardé votre ticket de caisse ? | بسیار خب. رسید خریدتان را نگه داشته‌اید؟
+A: Le voici. Je garde toujours tout, on ne sait jamais ! | بفرمایید. من همیشه همه‌چیز را نگه می‌دارم، آدم چه می‌داند!
+B: Parfait. Revenez vers midi, votre nouveau téléphone sera prêt. | عالی. حدود ظهر برگردید، گوشی جدیدتان آماده است.
+A: Merci beaucoup, Monsieur, vous me sauvez la journée ! | خیلی ممنون آقا، روزم را نجات دادید!
+reading A:
+{"type":"mcq","prompt":"Quel est le problème du téléphone ?","prompt_fa":"مشکل گوشی چیست؟","options":["Son écran est cassé depuis hier soir.","Il est tombé dans l'eau ce matin.","Il ne s'allume plus depuis le matin.","Il ne garde plus les photos."],"correct":2,"explanation_fa":"مشتری می‌گوید: «Depuis ce matin, il ne s'allume plus.»"}
+{"type":"tf","prompt":"La cliente doit payer pour réparer son téléphone.","prompt_fa":"مشتری باید برای تعمیر گوشی‌اش پول بدهد.","correct":false,"explanation_fa":"فروشنده می‌گوید: «on le répare, et ça ne vous coûte rien»."}
+{"type":"tf","prompt":"La cliente a besoin de son téléphone pour son travail.","prompt_fa":"مشتری برای کارش به گوشی‌اش احتیاج دارد.","correct":true,"explanation_fa":"مشتری می‌گوید: «mes clients doivent pouvoir me joindre toute la journée»."}
+{"type":"find","prompt":"Quelle phrase explique pourquoi la cliente ne peut pas attendre quinze jours ?","prompt_fa":"کدام جمله توضیح می‌دهد چرا مشتری نمی‌تواند پانزده روز صبر کند؟","correct_sentence":10,"explanation_fa":"مشتری می‌گوید: «Je travaille dans une agence de voyages, et mes clients doivent pouvoir me joindre toute la journée.»"}
+reading B:
+{"type":"match","prompt":"Associez chaque chose à ce que le vendeur en dit.","prompt_fa":"هر چیز را به حرفی که فروشنده دربارهٔ آن می‌زند وصل کنید.","left":["Le vieux téléphone","Le téléphone noir","Le technicien"],"right":["revient en magasin le mois prochain.","peut récupérer les photos.","coûte très cher.","n'est pas très beau, mais il marche bien."],"pairs":[[0,3],[1,0],[2,1]],"explanation_fa":"فروشنده می‌گوید گوشی قدیمی «n'est pas très beau, mais il marche bien»، «Le noir revient en magasin le mois prochain» و «Notre technicien peut récupérer vos photos»."}
+{"type":"ctx","word":"joindre","prompt":"« mes clients doivent pouvoir me joindre toute la journée » : « joindre » veut dire ici…","prompt_fa":"«mes clients doivent pouvoir me joindre toute la journée»: «joindre» اینجا یعنی…","options":["m'envoyer des photos","venir à l'agence","m'appeler et me parler","me payer"],"correct":2,"explanation_fa":"مشتری بدون گوشی نمی‌ماند، چون مشتری‌هایش باید بتوانند با او تماس بگیرند: «joindre» یعنی به کسی دسترسی پیدا کردن، مثلاً با تلفن."}
+{"type":"cloze","prompt":"Complétez avec les mots du dialogue.","prompt_fa":"جاهای خالی را با کلمه‌های گفتگو پر کنید.","text_with_gaps":"Oui, mais nous n'avons plus {{1}} le blanc. Le noir {{2}} en magasin le mois prochain.","bank":["que","revient","pas","part","rien"],"answers":["que","revient"],"explanation_fa":"فروشنده می‌گوید: «nous n'avons plus que le blanc. Le noir revient en magasin le mois prochain.»"}
+listening A:
+{"type":"mcq","prompt":"Quand la cliente a-t-elle acheté son téléphone ?","prompt_fa":"مشتری کی گوشی‌اش را خریده است؟","options":["Il y a deux ans.","Il y a trois semaines.","Hier soir.","Le mois dernier."],"correct":1,"explanation_fa":"مشتری می‌گوید: «je l'ai acheté ici il y a trois semaines»."}
+{"type":"tf","prompt":"Le téléphone est tombé par terre.","prompt_fa":"گوشی روی زمین افتاده است.","correct":false,"explanation_fa":"وقتی فروشنده می‌پرسد «Il est tombé ?»، مشتری جواب می‌دهد: «Non, pas du tout»."}
+{"type":"tf","prompt":"Le vendeur propose deux solutions à la cliente.","prompt_fa":"فروشنده دو راه‌حل به مشتری پیشنهاد می‌کند.","correct":true,"explanation_fa":"فروشنده می‌گوید: «je vous propose deux solutions»."}
+{"type":"num","prompt":"Le téléphone de la cliente a moins de combien d'années ?","prompt_fa":"گوشی مشتری کمتر از چند سال دارد؟","answer":"2","accepted":["2","deux","2 ans","deux ans"],"explanation_fa":"فروشنده می‌گوید: «Votre téléphone a moins de deux ans»."}
+listening B:
+{"type":"mcq","prompt":"Pourquoi la cliente prend-elle le téléphone blanc ?","prompt_fa":"چرا مشتری گوشی سفید را برمی‌دارد؟","options":["Parce qu'elle préfère le blanc au noir.","Parce que la couleur n'est pas importante pour elle.","Parce que le blanc est moins cher.","Parce que ses enfants aiment le blanc."],"correct":1,"explanation_fa":"مشتری می‌گوید: «la couleur, ce n'est pas le plus important»."}
+{"type":"mcq","prompt":"Que va faire le technicien ?","prompt_fa":"تعمیرکار چه کار می‌کند؟","options":["Changer l'écran de l'ancien téléphone.","Charger le téléphone au bureau.","Appeler les clients de l'agence.","Mettre les photos sur le nouveau téléphone."],"correct":3,"explanation_fa":"فروشنده می‌گوید: «Notre technicien peut récupérer vos photos et les mettre sur le nouveau téléphone.»"}
+{"type":"tf","prompt":"La cliente garde toujours ses tickets de caisse.","prompt_fa":"مشتری همیشه رسیدهای خریدش را نگه می‌دارد.","correct":true,"explanation_fa":"مشتری می‌گوید: «Je garde toujours tout, on ne sait jamais !»"}
+{"type":"tf","prompt":"Le nouveau téléphone sera prêt le soir.","prompt_fa":"گوشی جدید عصر آماده می‌شود.","correct":false,"explanation_fa":"فروشنده می‌گوید: «Revenez vers midi, votre nouveau téléphone sera prêt.»"}

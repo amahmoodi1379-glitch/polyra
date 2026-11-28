@@ -1,0 +1,44 @@
+code: fr-b1-t033
+title: Paris ou Toulouse ?
+band: 3
+kind: long_dialogue
+key_words: scène, faire confiance, espoir
+sentences:
+A: Papa, tu as cinq minutes ? J'ai reçu les réponses des écoles. | بابا، پنج دقیقه وقت داری؟ جواب مدرسه‌ها آمده.
+B: Alors, Emma ? L'école d'ingénieurs de Toulouse a dit oui ? | خب، اِما؟ مدرسهٔ مهندسی تولوز قبولت کرد؟
+A: Oui. Mais l'école de théâtre de Paris aussi. Et moi, je préfère Paris. | آره. ولی مدرسهٔ تئاتر پاریس هم قبولم کرد. و من پاریس را ترجیح می‌دهم.
+B: Le théâtre ? Mais tu as toujours eu de bonnes notes en mathématiques ! | تئاتر؟ ولی تو همیشه در ریاضی نمره‌های خوبی داشتی!
+A: Les mathématiques, c'était ton idée, papa. Moi, depuis le lycée, je rêve de monter sur scène. | ریاضی ایدهٔ تو بود، بابا. من از دبیرستان آرزو دارم روی صحنه بروم.
+B: Je sais, je sais. Mais ingénieur, c'est un vrai métier, avec un bon salaire. Actrice, c'est beaucoup plus difficile. | می‌دانم، می‌دانم. ولی مهندسی یک شغل واقعی است، با حقوق خوب. بازیگری خیلی سخت‌تر است.
+A: C'est vrai, mais je ne veux pas passer ma vie dans un bureau. | درست است، ولی نمی‌خواهم عمرم را پشت میز اداره بگذرانم.
+B: Et Paris ? Tu ne connais personne là-bas, et tout est cher. | پاریس چه؟ آنجا کسی را نمی‌شناسی و همه‌چیز گران است.
+A: J'ai regardé : une chambre d'étudiant coûte 500 euros par mois, et je travaillerai dans un café le week-end. | نگاه کرده‌ام: یک اتاق دانشجویی ماهی ۵۰۰ یورو است و آخر هفته‌ها در یک کافه کار می‌کنم. | tts: J'ai regardé : une chambre d'étudiant coûte cinq cents euros par mois, et je travaillerai dans un café le week-end.
+B: Tu as tout prévu, on dirait. | انگار همه‌چیز را از قبل حساب کرده‌ای.
+B: Ta mère et moi, nous préférerions que tu restes près de nous. Toulouse, c'est à une heure de la maison. | من و مادرت ترجیح می‌دادیم نزدیک ما بمانی. تولوز تا خانه یک ساعت راه است.
+A: Je sais. Mais je veux que tu me fasses confiance, papa. | می‌دانم. ولی می‌خواهم به من اعتماد کنی، بابا.
+B: Je te fais confiance, ma chérie. J'avais d'autres espoirs pour toi, c'est tout. | به تو اعتماد دارم، عزیزم. فقط برایت آرزوهای دیگری داشتم، همین.
+B: Tu sais, à ton âge, j'ai choisi mon métier pour faire plaisir à mon père. | می‌دانی، هم‌سن تو که بودم، شغلم را برای دل پدرم انتخاب کردم.
+B: Moi, je voulais être musicien. Je ne l'ai jamais dit à personne, mais je l'ai regretté pendant des années. | من می‌خواستم نوازنده شوم. هیچ‌وقت به کسی نگفتم، ولی سال‌ها پشیمان بودم.
+A: Vraiment ? Tu ne m'avais jamais raconté ça. | واقعاً؟ هیچ‌وقت این را برایم تعریف نکرده بودی.
+B: Eh bien, voilà. Alors choisis ce que tu aimes. Mais tu m'appelles tous les dimanches ! | خب، حالا می‌دانی. پس چیزی را که دوست داری انتخاب کن. ولی هر یکشنبه به من زنگ می‌زنی!
+A: Promis ! Et tu viendras me voir sur scène. | قول می‌دهم! و تو هم می‌آیی من را روی صحنه ببینی.
+B: Bien sûr. C'est la meilleure partie de ton projet ! | حتماً. این بهترین بخش برنامه‌ات است!
+reading A:
+{"type":"mcq","prompt":"De quoi Emma et son père parlent-ils ?","prompt_fa":"اِما و پدرش دربارهٔ چه حرف می‌زنند؟","options":["Du choix de l'école d'Emma.","D'un voyage à Paris en famille.","Du nouveau travail du père.","D'un film qu'ils ont vu ensemble."],"correct":0,"explanation_fa":"اِما می‌گوید: «J'ai reçu les réponses des écoles» و بعد بین مدرسهٔ مهندسی تولوز و مدرسهٔ تئاتر پاریس حرف می‌زنند."}
+{"type":"tf","prompt":"Les deux écoles ont dit oui à Emma.","prompt_fa":"هر دو مدرسه اِما را قبول کرده‌اند.","correct":true,"explanation_fa":"پدر می‌پرسد تولوز قبول کرد یا نه و اِما می‌گوید: «Oui. Mais l'école de théâtre de Paris aussi.»"}
+{"type":"tf","prompt":"Quand il était jeune, le père d'Emma voulait devenir ingénieur.","prompt_fa":"پدر اِما در جوانی می‌خواست مهندس شود.","correct":false,"explanation_fa":"پدر می‌گوید: «Moi, je voulais être musicien.»"}
+{"type":"find","prompt":"Quelle phrase montre que le père laisse Emma choisir ?","prompt_fa":"کدام جمله نشان می‌دهد پدر انتخاب را به اِما می‌سپارد؟","correct_sentence":16,"explanation_fa":"پدر می‌گوید: «Alors choisis ce que tu aimes.»"}
+reading B:
+{"type":"ctx","word":"prévu","prompt":"« Tu as tout prévu, on dirait. » : le père veut dire qu'Emma…","prompt_fa":"«Tu as tout prévu, on dirait.»: منظور پدر این است که اِما…","options":["n'a pas réfléchi.","a déjà pensé à tout.","a peur de partir.","a changé d'avis."],"correct":1,"explanation_fa":"اِما قیمت اتاق را نگاه کرده و می‌خواهد آخر هفته‌ها کار کند؛ «prévoir» یعنی از قبل به چیزی فکر کردن."}
+{"type":"order","prompt":"Mettez ces moments du dialogue dans l'ordre.","prompt_fa":"این لحظه‌های گفتگو را به ترتیب بچینید.","items":["Le père raconte qu'il voulait être musicien.","Emma dit qu'elle préfère Paris.","Le père demande si Toulouse a dit oui.","Emma promet d'appeler tous les dimanches."],"correct_order":[2,1,0,3],"explanation_fa":"اول پدر دربارهٔ تولوز می‌پرسد، بعد اِما می‌گوید «je préfère Paris»، بعد پدر از آرزوی نوازندگی‌اش می‌گوید و آخر اِما می‌گوید «Promis !»."}
+{"type":"cloze","prompt":"Complétez avec les mots du dialogue.","prompt_fa":"جاهای خالی را با کلمه‌های گفتگو پر کنید.","text_with_gaps":"Une chambre d'étudiant coûte 500 euros par {{1}}, et je travaillerai dans un {{2}} le week-end.","bank":["mois","café","mère","scène","chérie"],"answers":["mois","café"],"explanation_fa":"اِما می‌گوید: «une chambre d'étudiant coûte 500 euros par mois, et je travaillerai dans un café le week-end»."}
+listening A:
+{"type":"num","prompt":"Combien coûte une chambre d'étudiant par mois, en euros ?","prompt_fa":"یک اتاق دانشجویی ماهی چند یورو است؟","answer":"500","accepted":["500","cinq cents","500 euros","cinq cents euros"],"explanation_fa":"اِما می‌گوید: «une chambre d'étudiant coûte 500 euros par mois»."}
+{"type":"mcq","prompt":"Où se trouve l'école d'ingénieurs ?","prompt_fa":"مدرسهٔ مهندسی کجاست؟","options":["À Paris.","À Lyon.","À Toulouse.","À Marseille."],"correct":2,"explanation_fa":"پدر می‌پرسد: «L'école d'ingénieurs de Toulouse a dit oui ?»"}
+{"type":"tf","prompt":"Toulouse est à une heure de la maison.","prompt_fa":"تولوز یک ساعت با خانه فاصله دارد.","correct":true,"explanation_fa":"پدر می‌گوید: «Toulouse, c'est à une heure de la maison.»"}
+{"type":"tf","prompt":"Emma veut travailler dans un bureau.","prompt_fa":"اِما می‌خواهد در اداره کار کند.","correct":false,"explanation_fa":"اِما می‌گوید: «je ne veux pas passer ma vie dans un bureau»."}
+listening B:
+{"type":"mcq","prompt":"Que voulait faire le père quand il avait l'âge d'Emma ?","prompt_fa":"پدر وقتی هم‌سن اِما بود، می‌خواست چه کاره شود؟","options":["Être ingénieur.","Être acteur.","Être professeur.","Être musicien."],"correct":3,"explanation_fa":"پدر می‌گوید: «Moi, je voulais être musicien.»"}
+{"type":"mcq","prompt":"Que demande le père à Emma à la fin ?","prompt_fa":"پدر در آخر از اِما چه می‌خواهد؟","options":["De rester à Toulouse.","De l'appeler tous les dimanches.","De travailler dans un café.","D'étudier les mathématiques."],"correct":1,"explanation_fa":"پدر می‌گوید: «Mais tu m'appelles tous les dimanches !»"}
+{"type":"tf","prompt":"Le père dit qu'il fait confiance à Emma.","prompt_fa":"پدر می‌گوید به اِما اعتماد دارد.","correct":true,"explanation_fa":"پدر می‌گوید: «Je te fais confiance, ma chérie.»"}
+{"type":"tf","prompt":"Les parents d'Emma préfèrent qu'elle parte à Paris.","prompt_fa":"پدر و مادر اِما ترجیح می‌دهند او به پاریس برود.","correct":false,"explanation_fa":"پدر می‌گوید: «nous préférerions que tu restes près de nous»."}

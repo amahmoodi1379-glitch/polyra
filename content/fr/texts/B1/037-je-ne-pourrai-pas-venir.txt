@@ -1,0 +1,41 @@
+code: fr-b1-t037
+title: Je ne pourrai pas venir
+band: 3
+kind: letter
+key_words: hésiter, rencontre, absence
+sentences:
+- Chère Julie, cher Nicolas, | ژولی عزیز، نیکلای عزیز،
+- Merci mille fois pour votre belle invitation ! Je l'ai trouvée hier dans ma boîte aux lettres, et j'ai crié de joie dans l'escalier. | هزار بار ممنون برای دعوت‌نامهٔ قشنگتان! دیروز آن را در صندوق پستم پیدا کردم و توی راه‌پله از خوشحالی جیغ کشیدم.
+- Vous marier en Bourgogne, dans le village de vos grands-parents, au milieu des champs : quelle belle idée ! | ازدواج در بورگونی، در روستای پدربزرگ و مادربزرگتان، وسط کشتزارها: چه فکر قشنگی!
+- Malheureusement, je ne pourrai pas venir le 14 juin, et je suis vraiment triste de ne pas être avec vous pour ce grand jour. | متأسفانه ۱۴ ژوئن نمی‌توانم بیایم و واقعاً ناراحتم که در این روز بزرگ کنارتان نیستم. | tts: Malheureusement, je ne pourrai pas venir le quatorze juin, et je suis vraiment triste de ne pas être avec vous pour ce grand jour.
+- Je vous explique : il y a trois semaines, mon entreprise m'a proposé un travail à Montréal pour un an. | توضیح می‌دهم: سه هفته پیش شرکتم یک کار یک‌ساله در مونترال به من پیشنهاد داد.
+- J'ai longtemps hésité, et finalement, j'ai accepté. Je pars le 2 juin, et je commence le lundi d'après. | مدت زیادی دودل بودم و آخرش قبول کردم. ۲ ژوئن راه می‌افتم و از دوشنبهٔ بعدش کار را شروع می‌کنم. | tts: J'ai longtemps hésité, et finalement, j'ai accepté. Je pars le deux juin, et je commence le lundi d'après.
+- J'ai demandé à mon chef de partir une semaine plus tard, mais pour lui, c'était impossible. | از رئیسم خواستم یک هفته دیرتر بروم، ولی از نظر او ممکن نبود.
+- C'est vraiment dommage que je ne puisse pas être là : vous êtes mes plus vieux amis ! | واقعاً حیف است که نمی‌توانم آنجا باشم: شما قدیمی‌ترین دوست‌های من هستید!
+- Je me souviens encore de votre première rencontre, à ma fête d'anniversaire, il y a sept ans. | هنوز اولین آشنایی‌تان را یادم هست، در جشن تولدم، هفت سال پیش.
+- Nicolas avait renversé un verre de vin rouge sur ta robe blanche, Julie, et tu avais beaucoup ri ! | نیکلا یک لیوان شراب قرمز روی پیراهن سفیدت ریخته بود، ژولی، و تو کلی خندیده بودی!
+- Pour votre mariage, j'ai déjà choisi un cadeau, et je vous enverrai une petite vidéo de Montréal pour la soirée. | برای عروسی‌تان یک هدیه انتخاب کرده‌ام و برای جشن شب هم یک ویدئوی کوتاه از مونترال برایتان می‌فرستم.
+- Pardonnez-moi mon absence, et dansez un peu pour moi ! | غیبتم را ببخشید، و کمی هم به جای من برقصید!
+- Je vous souhaite tout le bonheur du monde, et beaucoup de beaux voyages ensemble. | برایتان همهٔ خوشبختی دنیا و کلی سفر قشنگ با هم آرزو می‌کنم.
+- Je reviens en France pour Noël : on fêtera ça tous les trois, promis ! | برای کریسمس به فرانسه برمی‌گردم: سه‌تایی جشن می‌گیریم، قول می‌دهم!
+- Je vous embrasse très fort, | خیلی محکم می‌بوسمتان،
+- Alice | آلیس
+reading A:
+{"type":"mcq","prompt":"Pourquoi Alice écrit-elle à Julie et Nicolas ?","prompt_fa":"آلیس چرا به ژولی و نیکلا نامه می‌نویسد؟","options":["Pour leur dire qu'elle viendra au mariage avec un ami.","Pour les inviter à Montréal pour Noël.","Pour leur demander une vidéo du mariage.","Pour répondre à leur invitation : elle ne peut pas venir."],"correct":3,"explanation_fa":"آلیس می‌نویسد: «Merci mille fois pour votre belle invitation !» و «je ne pourrai pas venir le 14 juin»."}
+{"type":"tf","prompt":"Le mariage aura lieu dans le village des grands-parents.","prompt_fa":"عروسی در روستای پدربزرگ و مادربزرگ برگزار می‌شود.","correct":true,"explanation_fa":"آلیس می‌نویسد: «Vous marier en Bourgogne, dans le village de vos grands-parents»."}
+{"type":"tf","prompt":"Le chef d'Alice a accepté qu'elle parte une semaine plus tard.","prompt_fa":"رئیس آلیس قبول کرد که او یک هفته دیرتر برود.","correct":false,"explanation_fa":"آلیس می‌نویسد: «mais pour lui, c'était impossible»."}
+{"type":"find","prompt":"Quelle phrase explique pourquoi Alice ne peut pas venir ?","prompt_fa":"کدام جمله توضیح می‌دهد چرا آلیس نمی‌تواند بیاید؟","correct_sentence":4,"explanation_fa":"آلیس می‌نویسد: «mon entreprise m'a proposé un travail à Montréal pour un an»."}
+reading B:
+{"type":"ctx","word":"hésité","prompt":"« J'ai longtemps hésité » : Alice…","prompt_fa":"«J'ai longtemps hésité»: آلیس…","options":["a tout de suite dit oui.","ne savait pas quoi décider.","a refusé le travail.","a oublié de répondre."],"correct":1,"explanation_fa":"«hésiter» یعنی دودل بودن؛ آلیس مدتی نمی‌دانست چه تصمیمی بگیرد و «finalement» قبول کرد."}
+{"type":"order","prompt":"Mettez ces moments dans l'ordre.","prompt_fa":"این لحظه‌ها را به ترتیب بچینید.","items":["Alice part à Montréal.","Nicolas renverse du vin sur la robe de Julie.","Alice revient en France pour Noël.","Alice reçoit l'invitation."],"correct_order":[1,3,0,2],"explanation_fa":"اول هفت سال پیش ماجرای شراب، بعد «Je l'ai trouvée hier»، بعد «Je pars le 2 juin» و آخر «Je reviens en France pour Noël»."}
+{"type":"cloze","prompt":"Complétez avec les mots de la lettre.","prompt_fa":"جاهای خالی را با کلمه‌های نامه پر کنید.","text_with_gaps":"Pardonnez-moi mon {{1}}, et {{2}} un peu pour moi !","bank":["absence","dansez","robe","joie","escalier"],"answers":["absence","dansez"],"explanation_fa":"آلیس می‌نویسد: «Pardonnez-moi mon absence, et dansez un peu pour moi !»"}
+listening A:
+{"type":"num","prompt":"Pendant combien d'années Alice va-t-elle travailler à Montréal ?","prompt_fa":"آلیس چند سال در مونترال کار می‌کند؟","answer":"1","accepted":["1","un","une","un an","1 an"],"explanation_fa":"آلیس می‌گوید: «un travail à Montréal pour un an»."}
+{"type":"mcq","prompt":"Quel jour est le mariage ?","prompt_fa":"عروسی چه روزی است؟","options":["Le 2 juin.","Le 14 juin.","Le 7 juillet.","À Noël."],"correct":1,"explanation_fa":"آلیس می‌گوید: «je ne pourrai pas venir le 14 juin»."}
+{"type":"tf","prompt":"Alice a trouvé l'invitation dans sa boîte aux lettres.","prompt_fa":"آلیس دعوت‌نامه را در صندوق پستش پیدا کرد.","correct":true,"explanation_fa":"آلیس می‌گوید: «Je l'ai trouvée hier dans ma boîte aux lettres»."}
+{"type":"tf","prompt":"Julie et Nicolas vont se marier à Montréal.","prompt_fa":"ژولی و نیکلا در مونترال ازدواج می‌کنند.","correct":false,"explanation_fa":"آلیس می‌گوید: «Vous marier en Bourgogne»."}
+listening B:
+{"type":"mcq","prompt":"Qu'est-ce que Nicolas avait fait à la fête d'anniversaire d'Alice ?","prompt_fa":"نیکلا در جشن تولد آلیس چه کار کرده بود؟","options":["Il avait renversé du vin sur la robe de Julie.","Il avait chanté pour Julie.","Il avait oublié son cadeau.","Il avait dansé toute la nuit."],"correct":0,"explanation_fa":"آلیس می‌گوید: «Nicolas avait renversé un verre de vin rouge sur ta robe blanche, Julie»."}
+{"type":"mcq","prompt":"Qu'est-ce qu'Alice va envoyer pour la soirée du mariage ?","prompt_fa":"آلیس برای جشن شب عروسی چه می‌فرستد؟","options":["Une lettre.","Des fleurs.","Une vidéo.","Du vin."],"correct":2,"explanation_fa":"آلیس می‌گوید: «je vous enverrai une petite vidéo de Montréal pour la soirée»."}
+{"type":"tf","prompt":"Alice et ses amis vont fêter le mariage ensemble à Noël.","prompt_fa":"آلیس و دوست‌هایش در کریسمس با هم عروسی را جشن می‌گیرند.","correct":true,"explanation_fa":"آلیس می‌گوید: «Je reviens en France pour Noël : on fêtera ça tous les trois»."}
+{"type":"tf","prompt":"Alice connaît Julie et Nicolas depuis peu de temps.","prompt_fa":"آلیس مدت کوتاهی است که ژولی و نیکلا را می‌شناسد.","correct":false,"explanation_fa":"آلیس می‌گوید: «vous êtes mes plus vieux amis !»"}

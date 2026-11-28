@@ -1,0 +1,43 @@
+code: fr-b1-t025
+title: Un train qui n'est jamais parti
+band: 3
+kind: letter
+key_words: se plaindre, informer, estimer
+sentences:
+- Madame, Monsieur, | خانم‌ها، آقایان،
+- Je vous écris pour me plaindre du train de Lyon à Paris de 7 heures 04, le mardi 14 octobre. | برای شکایت از قطار ساعت ۷:۰۴ لیون به پاریس در روز سه‌شنبه ۱۴ اکتبر به شما نامه می‌نویسم. | tts: Je vous écris pour me plaindre du train de Lyon à Paris de sept heures quatre, le mardi quatorze octobre.
+- J'avais acheté mon billet trois semaines avant, pour 64 euros. | بلیتم را سه هفته قبل، به قیمت ۶۴ یورو خریده بودم. | tts: J'avais acheté mon billet trois semaines avant, pour soixante-quatre euros.
+- Je devais être à Paris à 9 heures pour un rendez-vous très important avec un client de mon entreprise. | باید ساعت ۹ برای یک قرار خیلی مهم با یکی از مشتری‌های شرکتم در پاریس می‌بودم. | tts: Je devais être à Paris à neuf heures pour un rendez-vous très important avec un client de mon entreprise.
+- À 6 heures 55, l'écran de la gare annonçait encore le train à l'heure. | ساعت ۶:۵۵ صفحهٔ ایستگاه هنوز قطار را سر وقت نشان می‌داد. | tts: À six heures cinquante-cinq, l'écran de la gare annonçait encore le train à l'heure.
+- Puis, à 7 heures, il a disparu de l'écran. | بعد، ساعت ۷، از روی صفحه ناپدید شد. | tts: Puis, à sept heures, il a disparu de l'écran.
+- Il n'y avait aucun employé sur le quai, et pendant vingt minutes, personne ne nous a informés. | هیچ کارمندی روی سکو نبود و تا بیست دقیقه هیچ‌کس به ما خبری نداد.
+- Finalement, une voix a annoncé : « Le train de 7 heures 04 ne partira pas. » | سرانجام صدایی اعلام کرد: «قطار ساعت ۷:۰۴ حرکت نخواهد کرد.» | tts: Finalement, une voix a annoncé : « Le train de sept heures quatre ne partira pas. »
+- J'ai dû prendre le train d'après, à 8 heures 34, et je suis arrivée à Paris avec une heure et demie de retard. | مجبور شدم قطار بعدی را ساعت ۸:۳۴ بگیرم و با یک ساعت و نیم تأخیر به پاریس رسیدم. | tts: J'ai dû prendre le train d'après, à huit heures trente-quatre, et je suis arrivée à Paris avec une heure et demie de retard.
+- Mon client n'avait pas pu m'attendre, et le rendez-vous n'a jamais eu lieu. | مشتری‌ام نتوانسته بود منتظرم بماند و آن قرار هیچ‌وقت برگزار نشد.
+- Je comprends qu'un train peut avoir un problème. | می‌فهمم که ممکن است برای یک قطار مشکلی پیش بیاید.
+- Mais j'estime que vous devez informer les voyageurs tout de suite. | ولی به نظرم شما باید فوراً به مسافران خبر بدهید.
+- Il faut qu'un employé soit présent sur le quai et qu'il puisse répondre à nos questions. | باید یک کارمند روی سکو باشد و بتواند به سؤال‌های ما جواب بدهد.
+- Je vous demande donc de me rendre le prix de mon billet, c'est-à-dire 64 euros. | بنابراین از شما می‌خواهم پول بلیتم، یعنی ۶۴ یورو، را به من برگردانید. | tts: Je vous demande donc de me rendre le prix de mon billet, c'est-à-dire soixante-quatre euros.
+- Je joins à ce courrier mon billet et ma carte de réduction. | بلیت و کارت تخفیفم را ضمیمهٔ این نامه می‌کنم.
+- J'espère recevoir votre réponse rapidement. | امیدوارم به‌زودی پاسختان به دستم برسد.
+- Cordialement, | با احترام،
+- Claire Lefèvre | کلر لوفور
+reading A:
+{"type":"mcq","prompt":"Pourquoi Claire Lefèvre écrit-elle cette lettre ?","prompt_fa":"کلر لوفور چرا این نامه را می‌نویسد؟","options":["Pour réserver un billet pour Paris.","Pour remercier un employé de la gare.","Pour se plaindre d'un train qui n'est pas parti.","Pour changer la date de son rendez-vous."],"correct":2,"explanation_fa":"کلر می‌نویسد: «Je vous écris pour me plaindre du train de Lyon à Paris» و آن قطار «ne partira pas»."}
+{"type":"tf","prompt":"Claire a acheté son billet le matin du voyage.","prompt_fa":"کلر بلیتش را صبح روز سفر خرید.","correct":false,"explanation_fa":"کلر می‌نویسد: «J'avais acheté mon billet trois semaines avant»."}
+{"type":"tf","prompt":"Pendant vingt minutes, personne n'a parlé aux voyageurs.","prompt_fa":"تا بیست دقیقه هیچ‌کس با مسافران حرف نزد.","correct":true,"explanation_fa":"کلر می‌نویسد: «pendant vingt minutes, personne ne nous a informés»."}
+{"type":"find","prompt":"Quelle phrase dit combien d'argent Claire veut récupérer ?","prompt_fa":"کدام جمله می‌گوید کلر چقدر پول می‌خواهد پس بگیرد؟","correct_sentence":13,"explanation_fa":"کلر می‌نویسد: «Je vous demande donc de me rendre le prix de mon billet, c'est-à-dire 64 euros.»"}
+reading B:
+{"type":"order","prompt":"Mettez ces moments dans l'ordre.","prompt_fa":"این لحظه‌ها را به ترتیب بچینید.","items":["Claire prend le train de 8 heures 34.","Claire achète son billet.","Le train disparaît de l'écran.","Une voix annonce que le train ne partira pas."],"correct_order":[1,2,3,0],"explanation_fa":"کلر بلیت را «trois semaines avant» خرید، ساعت ۷ قطار «a disparu de l'écran»، بعد صدایی اعلام کرد و آخر سر قطار ساعت ۸:۳۴ را گرفت."}
+{"type":"ctx","word":"j'estime","prompt":"« j'estime que vous devez informer les voyageurs » : « j'estime » veut dire ici…","prompt_fa":"«j'estime que vous devez informer les voyageurs»: «j'estime» اینجا یعنی…","options":["je refuse","je pense","j'oublie","je regrette"],"correct":1,"explanation_fa":"کلر با «j'estime que» نظرش را می‌گوید، یعنی «je pense que»."}
+{"type":"cloze","prompt":"Complétez avec les mots de la lettre.","prompt_fa":"جاهای خالی را با کلمه‌های نامه پر کنید.","text_with_gaps":"Il faut qu'un employé {{1}} présent sur le quai et qu'il {{2}} répondre à nos questions.","bank":["soit","puisse","est","peut","sera"],"answers":["soit","puisse"],"explanation_fa":"کلر می‌نویسد: «Il faut qu'un employé soit présent sur le quai et qu'il puisse répondre à nos questions.» بعد از «il faut que» فعل به شکل subjonctif می‌آید."}
+listening A:
+{"type":"num","prompt":"Combien Claire a-t-elle payé son billet, en euros ?","prompt_fa":"کلر برای بلیتش چند یورو پرداخت؟","answer":"64","accepted":["64","soixante-quatre","64 euros","soixante-quatre euros"],"explanation_fa":"کلر می‌گوید: «pour 64 euros»."}
+{"type":"mcq","prompt":"À quelle heure Claire devait-elle être à Paris ?","prompt_fa":"کلر باید ساعت چند در پاریس می‌بود؟","options":["À 7 heures.","À 9 heures.","À 8 heures 34.","À 6 heures 55."],"correct":1,"explanation_fa":"کلر می‌گوید: «Je devais être à Paris à 9 heures»."}
+{"type":"tf","prompt":"Il y avait un employé sur le quai pour aider les voyageurs.","prompt_fa":"روی سکو کارمندی بود که به مسافران کمک کند.","correct":false,"explanation_fa":"کلر می‌گوید: «Il n'y avait aucun employé sur le quai»."}
+{"type":"tf","prompt":"Claire est arrivée à Paris en retard.","prompt_fa":"کلر با تأخیر به پاریس رسید.","correct":true,"explanation_fa":"کلر می‌گوید: «je suis arrivée à Paris avec une heure et demie de retard»."}
+listening B:
+{"type":"mcq","prompt":"Que s'est-il passé avec le client ?","prompt_fa":"ماجرای مشتری چه شد؟","options":["Il a attendu Claire toute la matinée.","Il a pris le même train que Claire.","Il a appelé Claire pour changer l'heure.","Il n'a pas pu attendre, et il n'y a pas eu de rendez-vous."],"correct":3,"explanation_fa":"کلر می‌گوید: «Mon client n'avait pas pu m'attendre, et le rendez-vous n'a jamais eu lieu.»"}
+{"type":"mcq","prompt":"Qu'est-ce que Claire joint à sa lettre ?","prompt_fa":"کلر چه چیزی را ضمیمهٔ نامه‌اش می‌کند؟","options":["Une photo de l'écran de la gare.","La lettre de son client.","Son billet et sa carte de réduction.","Son numéro de téléphone."],"correct":2,"explanation_fa":"کلر می‌گوید: «Je joins à ce courrier mon billet et ma carte de réduction.»"}
+{"type":"tf","prompt":"Claire veut récupérer l'argent de son billet.","prompt_fa":"کلر می‌خواهد پول بلیتش را پس بگیرد.","correct":true,"explanation_fa":"کلر می‌گوید: «Je vous demande donc de me rendre le prix de mon billet»."}
+{"type":"tf","prompt":"Pour Claire, un train ne doit jamais avoir de problème.","prompt_fa":"به نظر کلر، قطار هیچ‌وقت نباید مشکلی داشته باشد.","correct":false,"explanation_fa":"کلر می‌گوید: «Je comprends qu'un train peut avoir un problème.»"}

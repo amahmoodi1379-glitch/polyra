@@ -1,0 +1,40 @@
+code: fr-b1-t040
+title: Tout vient de près
+band: 3
+kind: news
+key_words: autour, apprécier, respect
+sentences:
+- À 27 ans, Julien Martin a ouvert le mois dernier son premier restaurant à Rouen, avec une idée simple : tout ce qu'il cuisine vient de moins de 50 kilomètres. | ژولین مارتن، ۲۷ ساله، ماه گذشته نخستین رستورانش را در روآن باز کرد، با ایده‌ای ساده: هر چه می‌پزد از فاصلهٔ کمتر از ۵۰ کیلومتری می‌آید. | tts: À vingt-sept ans, Julien Martin a ouvert le mois dernier son premier restaurant à Rouen, avec une idée simple : tout ce qu'il cuisine vient de moins de cinquante kilomètres.
+- La viande, les légumes, le fromage, la farine du pain : tout vient de fermes de Normandie, dans les villages autour. | گوشت، سبزی، پنیر، آرد نان: همه از مزرعه‌های نورماندی می‌آید، در روستاهای اطراف.
+- Il n'y a donc pas de citron, pas de chocolat et pas de poivre dans sa cuisine. | پس در آشپزخانه‌اش نه لیمو هست، نه شکلات، نه فلفل.
+- « Le plus dur, c'était le café ! Maintenant, à la fin du repas, je sers une boisson chaude aux plantes du jardin. » | «سخت‌ترین قسمتش قهوه بود! حالا آخر غذا یک نوشیدنی داغ از گیاهان باغ سرو می‌کنم.»
+- Julien travaille avec quinze fermiers de la région, et il les connaît tous. | ژولین با پانزده کشاورز منطقه کار می‌کند و همه‌شان را می‌شناسد.
+- Chaque matin, il reçoit les légumes du jour, et il décide à ce moment-là ce qu'il va cuisiner. | هر روز صبح سبزی‌های همان روز به دستش می‌رسد و همان موقع تصمیم می‌گیرد چه بپزد.
+- Le menu change donc tous les jours, et parfois même deux fois dans la journée. | پس منو هر روز عوض می‌شود، گاهی حتی دو بار در روز.
+- « En hiver, c'est plus difficile : il y a surtout des carottes, des pommes de terre et des champignons. Il faut avoir des idées ! » | «زمستان سخت‌تر است: بیشتر هویج و سیب‌زمینی و قارچ هست. باید ایده داشته باشی!»
+- Avant, Julien travaillait dans un grand restaurant à Paris, où le poisson arrivait parfois d'Asie en avion. | ژولین قبلاً در یک رستوران بزرگ در پاریس کار می‌کرد که ماهی‌اش گاهی با هواپیما از آسیا می‌آمد.
+- « Ça n'avait plus de sens pour moi. Cuisiner, c'est aussi une question de respect, pour la nature et pour les gens qui travaillent la terre. » | «دیگر برایم معنایی نداشت. آشپزی یک جور احترام هم هست، به طبیعت و به کسانی که روی زمین کار می‌کنند.»
+- Les clients semblent apprécier : le restaurant est complet presque tous les soirs. | به نظر می‌رسد مشتری‌ها می‌پسندند: رستوران تقریباً هر شب پر است.
+- Le menu du midi coûte 22 euros, celui du soir 38 euros. | منوی ظهر ۲۲ یورو است و منوی شب ۳۸ یورو. | tts: Le menu du midi coûte vingt-deux euros, celui du soir trente-huit euros.
+- « C'est un peu plus cher qu'ailleurs, mais on sait ce qu'on mange », explique Nadia, une cliente qui vient chaque semaine. | نادیا، یکی از مشتری‌ها که هر هفته می‌آید، توضیح می‌دهد: «کمی از جاهای دیگر گران‌تر است، ولی آدم می‌داند چه می‌خورد.»
+- Les fermiers aussi sont contents : Julien leur donne un bon prix, et il les paie tout de suite. | کشاورزها هم راضی‌اند: ژولین قیمت خوبی به آن‌ها می‌دهد و فوراً پولشان را می‌پردازد.
+- Son prochain projet ? Un jardin derrière le restaurant, pour avoir des légumes juste à côté de la cuisine. | برنامهٔ بعدی‌اش؟ یک باغچه پشت رستوران، تا سبزی‌ها درست کنار آشپزخانه باشند.
+reading A:
+{"type":"mcq","prompt":"Quelle est l'idée du restaurant de Julien ?","prompt_fa":"ایدهٔ رستوران ژولین چیست؟","options":["Cuisiner seulement du poisson d'Asie.","Servir les mêmes plats tous les jours.","Cuisiner seulement ce qui vient de moins de 50 kilomètres.","Proposer des repas très bon marché."],"correct":2,"explanation_fa":"خبر می‌گوید: «tout ce qu'il cuisine vient de moins de 50 kilomètres»."}
+{"type":"tf","prompt":"Julien met du citron dans ses plats.","prompt_fa":"ژولین در غذاهایش لیمو می‌ریزد.","correct":false,"explanation_fa":"خبر می‌گوید: «Il n'y a donc pas de citron … dans sa cuisine»."}
+{"type":"tf","prompt":"Le menu change tous les jours.","prompt_fa":"منو هر روز عوض می‌شود.","correct":true,"explanation_fa":"خبر می‌گوید: «Le menu change donc tous les jours»."}
+{"type":"find","prompt":"Quelle phrase explique pourquoi Julien ne voulait plus travailler comme à Paris ?","prompt_fa":"کدام جمله توضیح می‌دهد چرا ژولین دیگر نمی‌خواست مثل پاریس کار کند؟","correct_sentence":9,"explanation_fa":"ژولین می‌گوید: «Ça n'avait plus de sens pour moi. Cuisiner, c'est aussi une question de respect»."}
+reading B:
+{"type":"ctx","word":"complet","prompt":"« le restaurant est complet presque tous les soirs » : « complet » veut dire ici que…","prompt_fa":"«le restaurant est complet presque tous les soirs»: «complet» اینجا یعنی…","options":["le restaurant est fermé.","il y a peu de clients.","il n'y a plus de table libre.","le menu est très long."],"correct":2,"explanation_fa":"«complet» یعنی پر؛ مشتری‌ها رستوران را می‌پسندند و تقریباً هر شب میز خالی نمی‌ماند."}
+{"type":"match","prompt":"Associez.","prompt_fa":"به هم وصل کنید.","left":["Le menu du midi","Le menu du soir","Les fermiers"],"right":["coûte 38 euros.","coûte 22 euros.","reçoivent un bon prix.","viennent de Paris."],"pairs":[[0,1],[1,0],[2,2]],"explanation_fa":"خبر می‌گوید: «Le menu du midi coûte 22 euros, celui du soir 38 euros» و «Julien leur donne un bon prix»."}
+{"type":"cloze","prompt":"Complétez la phrase de Nadia.","prompt_fa":"جملهٔ نادیا را کامل کنید.","text_with_gaps":"C'est un peu plus cher {{1}}, mais on sait ce qu'on {{2}}.","bank":["qu'ailleurs","mange","jamais","fermes","matin"],"answers":["qu'ailleurs","mange"],"explanation_fa":"نادیا می‌گوید: «C'est un peu plus cher qu'ailleurs, mais on sait ce qu'on mange»."}
+listening A:
+{"type":"num","prompt":"Quel âge a Julien Martin ?","prompt_fa":"ژولین مارتن چند سال دارد؟","answer":"27","accepted":["27","vingt-sept","27 ans","vingt-sept ans"],"explanation_fa":"می‌شنویم: «À 27 ans, Julien Martin a ouvert … son premier restaurant»."}
+{"type":"mcq","prompt":"Avec combien de fermiers Julien travaille-t-il ?","prompt_fa":"ژولین با چند کشاورز کار می‌کند؟","options":["Cinq.","Quinze.","Cinquante.","Vingt-deux."],"correct":1,"explanation_fa":"می‌شنویم: «Julien travaille avec quinze fermiers de la région»."}
+{"type":"tf","prompt":"Avant, Julien travaillait dans un restaurant à Paris.","prompt_fa":"ژولین قبلاً در رستورانی در پاریس کار می‌کرد.","correct":true,"explanation_fa":"می‌شنویم: «Avant, Julien travaillait dans un grand restaurant à Paris»."}
+{"type":"tf","prompt":"Julien a ouvert son restaurant il y a cinq ans.","prompt_fa":"ژولین پنج سال پیش رستورانش را باز کرد.","correct":false,"explanation_fa":"می‌شنویم: «a ouvert le mois dernier son premier restaurant»."}
+listening B:
+{"type":"mcq","prompt":"Pour Julien, qu'est-ce qui était le plus dur ?","prompt_fa":"برای ژولین سخت‌ترین چیز چه بود؟","options":["Le pain.","La viande.","Le café.","Le fromage."],"correct":2,"explanation_fa":"ژولین می‌گوید: «Le plus dur, c'était le café !»"}
+{"type":"mcq","prompt":"Que veut faire Julien derrière le restaurant ?","prompt_fa":"ژولین می‌خواهد پشت رستوران چه بسازد؟","options":["Un parking pour les clients.","Une terrasse pour l'été.","Une petite boulangerie.","Un jardin pour avoir des légumes."],"correct":3,"explanation_fa":"می‌شنویم: «Un jardin derrière le restaurant, pour avoir des légumes juste à côté de la cuisine»."}
+{"type":"tf","prompt":"Nadia vient au restaurant chaque semaine.","prompt_fa":"نادیا هر هفته به رستوران می‌آید.","correct":true,"explanation_fa":"می‌شنویم: «Nadia, une cliente qui vient chaque semaine»."}
+{"type":"tf","prompt":"En hiver, Julien a beaucoup de légumes différents.","prompt_fa":"ژولین در زمستان سبزی‌های جورواجور زیادی دارد.","correct":false,"explanation_fa":"ژولین می‌گوید: «En hiver, c'est plus difficile : il y a surtout des carottes, des pommes de terre et des champignons.»"}

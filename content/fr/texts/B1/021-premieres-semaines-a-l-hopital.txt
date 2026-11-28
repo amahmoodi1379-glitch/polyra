@@ -1,0 +1,46 @@
+code: fr-b1-t021
+title: Mes premières semaines à l'hôpital
+band: 3
+kind: letter
+key_words: soigner, urgence
+sentences:
+- Chère Léa, | لئای عزیز،
+- Merci pour ton long message, et pardon pour mon retard : j'ai eu trois semaines folles ! | ممنون از پیام بلندت، و ببخش که دیر جواب می‌دهم: سه هفتهٔ دیوانه‌وار داشتم!
+- Tu le sais, je travaille depuis le début du mois comme infirmière aux urgences de l'hôpital de Nantes. | خودت می‌دانی، از اول ماه در اورژانس بیمارستان نانت پرستارم.
+- La nuit avant mon premier jour, je n'ai presque pas dormi : j'avais très peur de faire une erreur. | شب قبل از روز اولم تقریباً نخوابیدم: خیلی می‌ترسیدم اشتباه کنم.
+- Heureusement, une collègue plus âgée, Nadia, m'a beaucoup aidée. | خوشبختانه یکی از همکارهای باسابقه‌تر، نادیا، خیلی کمکم کرد.
+- Elle travaille ici depuis vingt ans et elle connaît tout le monde, des médecins aux gens qui font le ménage. | بیست سال است اینجا کار می‌کند و همه را می‌شناسد، از دکترها گرفته تا کسانی که نظافت می‌کنند.
+- Elle m'a tout expliqué, même les choses les plus simples, sans jamais se moquer de moi. | همه‌چیز را برایم توضیح داد، حتی ساده‌ترین چیزها را، و یک بار هم مسخره‌ام نکرد.
+- Aux urgences, aucune nuit ne ressemble à une autre. | در اورژانس هیچ شبی شبیه شب دیگر نیست.
+- Mardi dernier, par exemple, un vieux monsieur est arrivé à minuit parce qu'il était tombé dans sa salle de bain. | مثلاً سه‌شنبهٔ گذشته، پیرمردی نیمه‌شب آمد، چون توی حمام خانه‌اش زمین خورده بود.
+- Il avait très mal au bras, mais il racontait des blagues pendant que je le soignais ! | دستش خیلی درد می‌کرد، ولی وقتی داشتم به دستش می‌رسیدم، برایم جوک تعریف می‌کرد!
+- Le plus dur, ce sont les horaires : je travaille une semaine le matin, puis une semaine la nuit. | سخت‌ترین بخش کار ساعت‌هایش است: یک هفته صبح کار می‌کنم، بعد یک هفته شب.
+- Quand je rentre à 7 heures du matin, je ne dors que quatre ou cinq heures, alors je suis souvent fatiguée. | وقتی ساعت هفت صبح برمی‌گردم خانه، فقط چهار پنج ساعت می‌خوابم، برای همین اغلب خسته‌ام. | tts: Quand je rentre à sept heures du matin, je ne dors que quatre ou cinq heures, alors je suis souvent fatiguée.
+- Pourtant, je n'ai jamais regretté mon choix. | با این حال، هیچ‌وقت از انتخابم پشیمان نشده‌ام.
+- Hier, une dame dont le mari est à l'hôpital depuis une semaine m'a apporté des chocolats pour me remercier. | دیروز خانمی که شوهرش یک هفته است در بیمارستان بستری است، برای تشکر برایم شکلات آورد.
+- Ce petit cadeau m'a donné envie de continuer, même les jours difficiles. | این هدیهٔ کوچک به من انگیزه داد که ادامه بدهم، حتی در روزهای سخت.
+- Et toi, comment va ta nouvelle vie à Lyon ? Tu as trouvé un appartement ? | تو چطور؟ زندگی تازه‌ات در لیون چطور پیش می‌رود؟ آپارتمان پیدا کردی؟
+- Si j'avais plus de temps, je viendrais te voir tout de suite. | اگر وقت بیشتری داشتم، همین حالا می‌آمدم پیشت.
+- Mais je suis libre le dernier week-end de novembre : tu pourrais venir à Nantes ? | ولی آخرین آخر هفتهٔ نوامبر آزادم: می‌توانی بیایی نانت؟
+- On irait se promener au bord de la Loire, et je te présenterais Nadia ! | کنار رود لوار قدم می‌زدیم و نادیا را هم به تو معرفی می‌کردم!
+- Je t'embrasse fort, | می‌بوسمت،
+- Manon | مانون
+reading A:
+{"type":"mcq","prompt":"Pourquoi Manon écrit-elle à Léa ?","prompt_fa":"مانون چرا به لئا نامه می‌نویسد؟","options":["Pour lui demander de l'aide pour trouver un appartement.","Pour lui raconter ses débuts dans son nouveau travail.","Pour lui annoncer qu'elle quitte l'hôpital de Nantes.","Pour l'inviter à une fête à Lyon en novembre."],"correct":1,"explanation_fa":"مانون از کار تازه‌اش در اورژانس می‌نویسد: «je travaille depuis le début du mois comme infirmière aux urgences»."}
+{"type":"tf","prompt":"Nadia est une nouvelle infirmière, comme Manon.","prompt_fa":"نادیا هم مثل مانون پرستار تازه‌کار است.","correct":false,"explanation_fa":"مانون دربارهٔ نادیا می‌نویسد: «Elle travaille ici depuis vingt ans»."}
+{"type":"tf","prompt":"Après une nuit de travail, Manon ne dort pas beaucoup.","prompt_fa":"مانون بعد از یک شب کار زیاد نمی‌خوابد.","correct":true,"explanation_fa":"مانون می‌نویسد: «je ne dors que quatre ou cinq heures»."}
+{"type":"find","prompt":"Quelle phrase dit pourquoi le vieux monsieur est venu aux urgences ?","prompt_fa":"کدام جمله می‌گوید پیرمرد چرا به اورژانس آمد؟","correct_sentence":8,"explanation_fa":"مانون می‌نویسد: «parce qu'il était tombé dans sa salle de bain»."}
+reading B:
+{"type":"ctx","word":"soignais","prompt":"« il racontait des blagues pendant que je le soignais » : que faisait Manon ?","prompt_fa":"«il racontait des blagues pendant que je le soignais»: مانون چه کار می‌کرد؟","options":["Elle l'écoutait raconter sa vie.","Elle appelait sa famille.","Elle s'occupait de son bras.","Elle cherchait un médecin."],"correct":2,"explanation_fa":"«soigner» یعنی مداوا کردن؛ پیرمرد «avait très mal au bras» و مانون به دستش می‌رسید."}
+{"type":"cloze","prompt":"Complétez avec les mots de la lettre.","prompt_fa":"جاهای خالی را با کلمه‌های نامه پر کنید.","text_with_gaps":"Le plus dur, ce sont les {{1}} : je travaille une semaine le matin, puis une semaine la {{2}}.","bank":["horaires","nuit","collègues","malades","matin"],"answers":["horaires","nuit"],"explanation_fa":"مانون می‌نویسد: «Le plus dur, ce sont les horaires : je travaille une semaine le matin, puis une semaine la nuit.»"}
+{"type":"order","prompt":"Mettez ces moments dans l'ordre.","prompt_fa":"این لحظه‌ها را به ترتیب بچینید.","items":["Manon commence à travailler aux urgences.","Manon dort très mal.","Une dame apporte des chocolats à Manon.","Un vieux monsieur arrive à minuit."],"correct_order":[1,0,3,2],"explanation_fa":"اول «La nuit avant mon premier jour, je n'ai presque pas dormi»، بعد کار شروع می‌شود، بعد «Mardi dernier» پیرمرد می‌آید و «Hier» آن خانم شکلات می‌آورد."}
+listening A:
+{"type":"mcq","prompt":"Depuis combien de temps Nadia travaille-t-elle à l'hôpital ?","prompt_fa":"نادیا چند وقت است در بیمارستان کار می‌کند؟","options":["Depuis trois semaines.","Depuis vingt ans.","Depuis le début du mois.","Depuis une semaine."],"correct":1,"explanation_fa":"می‌شنویم: «Elle travaille ici depuis vingt ans»."}
+{"type":"num","prompt":"À quelle heure du matin Manon rentre-t-elle après une nuit de travail ?","prompt_fa":"مانون بعد از یک شب کار، ساعت چند صبح به خانه برمی‌گردد؟","answer":"7","accepted":["7","sept","7 heures","sept heures","7h"],"explanation_fa":"می‌شنویم: «Quand je rentre à 7 heures du matin»."}
+{"type":"tf","prompt":"Le vieux monsieur était triste et ne parlait pas.","prompt_fa":"پیرمرد غمگین بود و حرف نمی‌زد.","correct":false,"explanation_fa":"مانون می‌گوید: «il racontait des blagues pendant que je le soignais»."}
+{"type":"tf","prompt":"Manon est libre le dernier week-end de novembre.","prompt_fa":"مانون آخرین آخر هفتهٔ نوامبر آزاد است.","correct":true,"explanation_fa":"می‌شنویم: «je suis libre le dernier week-end de novembre»."}
+listening B:
+{"type":"mcq","prompt":"Qu'est-ce que la dame a apporté à Manon ?","prompt_fa":"آن خانم برای مانون چه آورد؟","options":["Des fleurs.","Un livre.","Des chocolats.","Un gâteau."],"correct":2,"explanation_fa":"می‌شنویم: «une dame … m'a apporté des chocolats pour me remercier»."}
+{"type":"mcq","prompt":"Que propose Manon à Léa ?","prompt_fa":"مانون به لئا چه پیشنهادی می‌دهد؟","options":["De chercher un appartement ensemble à Lyon.","De travailler avec elle à l'hôpital.","De partir en vacances au mois de novembre.","De venir la voir à Nantes pour un week-end."],"correct":3,"explanation_fa":"مانون می‌پرسد: «tu pourrais venir à Nantes ?»"}
+{"type":"tf","prompt":"Manon pense qu'elle a fait un mauvais choix.","prompt_fa":"مانون فکر می‌کند انتخاب بدی کرده است.","correct":false,"explanation_fa":"مانون می‌گوید: «je n'ai jamais regretté mon choix»."}
+{"type":"tf","prompt":"Nadia a aidé Manon pendant ses premiers jours.","prompt_fa":"نادیا در روزهای اول به مانون کمک کرد.","correct":true,"explanation_fa":"می‌شنویم: «une collègue plus âgée, Nadia, m'a beaucoup aidée»."}
