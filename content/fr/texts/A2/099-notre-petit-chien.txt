@@ -7,7 +7,7 @@ sentences:
 - Depuis dix jours, nous avons un petit chien noir ! | ده روز است که یک سگ کوچولوی سیاه داریم!
 - Il est très mignon, mais il ne reste pas tranquille une seconde. | خیلی ناز است، ولی یک ثانیه هم آرام نمی‌گیرد.
 - Il emporte mes chaussures dans le jardin et il les cache sous les arbres ! | کفش‌هایم را با خودش به باغچه می‌برد و زیر درخت‌ها قایمشان می‌کند!
-- La nuit, il pleure et il ne se tait pas. | شب‌ها ناله می‌کند و ساکت نمی‌شود.
+- La nuit, il n'arrête pas de pleurer. | شب‌ها یک‌ریز ناله می‌کند.
 - Et le matin, il me réveille à six heures ! | و صبح‌ها ساعت شش بیدارم می‌کند!
 - Au parc, je lance un ballon et il l'attrape : c'est son jeu préféré{préféré}. | توی پارک یک توپ پرت می‌کنم و او آن را می‌گیرد: بازی مورد علاقه‌اش است.
 - Dans la rue, c'est plus difficile : il s'assoit et il n'avance plus. | توی خیابان سخت‌تر است: می‌نشیند و دیگر جلو نمی‌رود.
@@ -17,16 +17,16 @@ sentences:
 reading A:
 {"type":"mcq","prompt":"سارا در این ایمیل دربارهٔ چه چیزی می‌نویسد؟","options":["دربارهٔ باغچهٔ تازه‌شان","دربارهٔ ماشین تازه‌شان","دربارهٔ پارک محله‌شان","دربارهٔ سگ تازه‌شان"],"correct":3,"explanation_fa":"سارا می‌نویسد: «Depuis dix jours, nous avons un petit chien noir !»، یعنی ده روز است که یک سگ کوچولوی سیاه داریم."}
 {"type":"tf","prompt":"سگ کفش‌های سارا را زیر درخت‌ها قایم می‌کند.","correct":true,"explanation_fa":"سارا می‌نویسد: «il les cache sous les arbres !»، یعنی آن‌ها را زیر درخت‌ها قایم می‌کند."}
-{"type":"tf","prompt":"سگ شب‌ها آرام می‌خوابد.","correct":false,"explanation_fa":"سارا می‌نویسد: «La nuit, il pleure et il ne se tait pas.»، یعنی شب‌ها ناله می‌کند و ساکت نمی‌شود."}
+{"type":"tf","prompt":"سگ شب‌ها آرام می‌خوابد.","correct":false,"explanation_fa":"سارا می‌نویسد: «La nuit, il n'arrête pas de pleurer.»، یعنی شب‌ها یک‌ریز ناله می‌کند."}
 {"type":"find","prompt":"کدام جمله می‌گوید سگ صبح‌ها سارا را کی بیدار می‌کند؟","correct_sentence":5,"explanation_fa":"سارا می‌نویسد: «Et le matin, il me réveille à six heures !»، یعنی صبح‌ها ساعت شش بیدارم می‌کند."}
 reading B:
-{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Au parc, je {{1}} un ballon et il l'{{2}} : c'est son jeu préféré.","bank":["lance","attrape","cache","emporte","réveille"],"answers":["lance","attrape"],"explanation_fa":"سارا می‌نویسد: «Au parc, je lance un ballon et il l'attrape : c'est son jeu préféré.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Au parc, je {{1}} un ballon et il l'{{2}} : c'est son jeu préféré.","bank":["lance","attrape","cache","pleure","réveille"],"answers":["lance","attrape"],"explanation_fa":"سارا می‌نویسد: «Au parc, je lance un ballon et il l'attrape : c'est son jeu préféré.»"}
 {"type":"match","prompt":"هر جا را به کاری که سگ آن‌جا می‌کند وصل کن.","left":["توی پارک","توی خیابان","توی ماشین"],"right":["می‌نشیند و جلو نمی‌رود","توپ را می‌گیرد","کفش‌ها را قایم می‌کند","اول می‌ترسد و بعد خوابش می‌برد"],"pairs":[[0,1],[1,0],[2,3]],"explanation_fa":"سارا می‌نویسد: «Au parc … il l'attrape»، «Dans la rue … il s'assoit et il n'avance plus» و «En voiture, il a peur … il s'endort tout de suite»."}
 {"type":"order","prompt":"این‌ها را به ترتیبی که در ایمیل آمده بچین.","items":["سگ کفش‌ها را قایم می‌کند.","سگ توی پارک توپ را می‌گیرد.","سگ توی ماشین خوابش می‌برد.","سگ صبح زود سارا را بیدار می‌کند."],"correct_order":[0,3,1,2],"explanation_fa":"اول «il les cache sous les arbres»، بعد «il me réveille à six heures»، بعد «il l'attrape» و آخر «il s'endort tout de suite»."}
 listening A:
 {"type":"num","prompt":"سگ صبح‌ها ساعت چند سارا را بیدار می‌کند؟","answer":"6","accepted":["6","6h","six"],"explanation_fa":"می‌شنویم: «il me réveille à six heures !»، یعنی ساعت شش بیدارم می‌کند."}
 {"type":"mcq","prompt":"سارا از لئا چه می‌خواهد؟","options":["که شنبه سگ را نگه دارد","که با سگ به پارک برود","که شنبه برای دیدن سگ بیاید","که برای سگ یک توپ بخرد"],"correct":2,"explanation_fa":"سارا آخر ایمیل می‌گوید: «Viens le voir samedi !»، یعنی شنبه بیا ببینیش."}
-{"type":"tf","prompt":"سگ شب‌ها ناله می‌کند.","correct":true,"explanation_fa":"می‌شنویم: «La nuit, il pleure»، یعنی شب‌ها ناله می‌کند."}
+{"type":"tf","prompt":"سگ شب‌ها ناله می‌کند.","correct":true,"explanation_fa":"می‌شنویم: «La nuit, il n'arrête pas de pleurer.»، یعنی شب‌ها یک‌ریز ناله می‌کند."}
 {"type":"tf","prompt":"توی خیابان سگ خوب راه می‌رود.","correct":false,"explanation_fa":"می‌شنویم: «Dans la rue, c'est plus difficile : il s'assoit et il n'avance plus.»، یعنی می‌نشیند و دیگر جلو نمی‌رود."}
 listening B:
 {"type":"num","prompt":"سگ چند روز است پیش سارا و خانواده‌اش است؟","answer":"10","accepted":["10","dix"],"explanation_fa":"می‌شنویم: «Depuis dix jours, nous avons un petit chien noir !»، یعنی ده روز است که یک سگ داریم."}

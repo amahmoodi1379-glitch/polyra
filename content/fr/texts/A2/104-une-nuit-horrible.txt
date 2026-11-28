@@ -13,6 +13,7 @@ sentences:
 - Nous avons demandé une autre chambre, mais l'hôtel était complet. | یک اتاق دیگر خواستیم، ولی هتل پر بود.
 - Nous aimerions une réduction sur le prix de la deuxième nuit. | خواهش می‌کنیم برای شب دوم به ما تخفیف بدهید.
 - Ce n'est pas urgent, mais nous attendons votre réponse. | فوری نیست، ولی منتظر جوابتان هستیم.
+- Bonne journée, | روز خوبی داشته باشید،
 - Léa Dubois | لئا دوبوا
 reading A:
 {"type":"mcq","prompt":"لئا چرا این ایمیل را نوشته است؟","options":["تا یک اتاق برای ماه بعد رزرو کند","تا از سروصدای اتاقش شکایت کند","تا از غذای رستوران تشکر کند","تا بپرسد هتل کی باز می‌شود"],"correct":1,"explanation_fa":"لئا می‌نویسد: «elle est très bruyante»، «c'était horrible» و «Nous aimerions une réduction»؛ یعنی از سروصدای اتاق شکایت می‌کند."}

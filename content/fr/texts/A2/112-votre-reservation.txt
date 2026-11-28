@@ -17,7 +17,7 @@ sentences:
 reading A:
 {"type":"mcq","prompt":"این ایمیل را چه کسی نوشته است؟","options":["خانم کریمی","کارمندهای هتل","یک مغازهٔ دوچرخه","ایستگاه قطار نیس"],"correct":1,"explanation_fa":"آخر ایمیل آمده: «L'équipe de l'Hôtel du Port»، یعنی گروه هتل دو پور، و آن‌ها از رزرو خانم کریمی تشکر می‌کنند."}
 {"type":"tf","prompt":"اتاق خانم کریمی بالکنی رو به دریا دارد.","correct":true,"explanation_fa":"در ایمیل آمده: «avec un balcon sur la mer»، یعنی با یک بالکن رو به دریا."}
-{"type":"tf","prompt":"پذیرش هتل همهٔ شب باز است.","correct":false,"explanation_fa":"در ایمیل آمده: «La réception est ouverte de 7 heures à 23 heures.»، یعنی پذیرش فقط تا ساعت ۲۳ باز است."}
+{"type":"tf","prompt":"پذیرش هتل تمام شب باز است.","correct":false,"explanation_fa":"در ایمیل آمده: «La réception est ouverte de 7 heures à 23 heures.»، یعنی پذیرش فقط تا ساعت ۲۳ باز است."}
 {"type":"find","prompt":"کدام جمله می‌گوید موقع رسیدن چه مدرکی لازم است؟","correct_sentence":5,"explanation_fa":"در ایمیل آمده: «il faut montrer votre carte d'identité ou votre passeport»، یعنی باید کارت شناسایی یا گذرنامه را نشان داد."}
 reading B:
 {"type":"match","prompt":"هر چیز را به اطلاعات آن وصل کن.","left":["پذیرش","صبحانه","کرایهٔ دوچرخه"],"right":["روزی ۱۲ یورو","از ساعت ۷ تا ۲۳","از ساعت ۷ تا ۱۰","ده دقیقه پیاده"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"در ایمیل آمده: «La réception est ouverte de 7 heures à 23 heures»، صبحانه «de 7 heures à 10 heures» و «la location de vélos : 12 euros par jour»."}

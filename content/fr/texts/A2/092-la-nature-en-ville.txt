@@ -30,4 +30,4 @@ listening B:
 {"type":"num","prompt":"هفتهٔ طبیعت تا چندم ژوئن است؟","answer":"8","accepted":["8","huit"],"explanation_fa":"می‌شنویم: «du 2 au 8 juin»، یعنی از دوم تا هشتم ژوئن."}
 {"type":"mcq","prompt":"جلسهٔ پنجشنبه دربارهٔ چیست؟","options":["پارک‌های شهر","بچه‌ها و طبیعت","آلودگی هوا","دوچرخه‌سواری در شهر"],"correct":2,"explanation_fa":"می‌شنویم: «réunion à la mairie sur la pollution de l'air»، یعنی جلسه دربارهٔ آلودگی هوا."}
 {"type":"tf","prompt":"شنبه بعدازظهر مردم با هم پارک را تمیز می‌کنند.","correct":true,"explanation_fa":"می‌شنویم: «Samedi après-midi : on nettoie ensemble le parc.»، یعنی شنبه بعدازظهر با هم پارک را تمیز می‌کنیم."}
-{"type":"tf","prompt":"پیک‌نیک یکشنبه در مرکز شهر است.","correct":false,"explanation_fa":"می‌شنویم: «grand pique-nique au parc»، یعنی پیک‌نیک در پارک است، نه در مرکز شهر."}
+{"type":"tf","prompt":"پیک‌نیک یکشنبه شب است.","correct":false,"explanation_fa":"می‌شنویم: «Dimanche, 12 heures : grand pique-nique au parc.»، یعنی پیک‌نیک یکشنبه ساعت دوازده ظهر است، نه شب."}

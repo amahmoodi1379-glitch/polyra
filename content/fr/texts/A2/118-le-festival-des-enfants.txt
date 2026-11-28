@@ -3,7 +3,7 @@ title: Le festival des enfants
 band: 2
 kind: schedule
 sentences:
-- Festival des{des-contr} enfants au parc du{du-contr} lac, dimanche 8 juin, de 10 heures à 18 heures. Entrée{entrée-2} gratuite ! | جشنوارهٔ بچه‌ها در پارک کنار دریاچه، یکشنبه ۸ ژوئن، از ساعت ۱۰ تا ۱۸. ورود رایگان! | tts: Festival des enfants au parc du lac, dimanche huit juin, de dix heures à dix-huit heures. Entrée gratuite !
+- Festival des{des-contr} enfants au parc du{du-contr} lac, dimanche 22 juin, de 10 heures à 18 heures. Entrée{entrée-2} gratuite ! | جشنوارهٔ بچه‌ها در پارک کنار دریاچه، یکشنبه ۲۲ ژوئن، از ساعت ۱۰ تا ۱۸. ورود رایگان! | tts: Festival des enfants au parc du lac, dimanche vingt-deux juin, de dix heures à dix-huit heures. Entrée gratuite !
 - 10 heures : jouets en bois. Chaque enfant construit son petit bateau. | ساعت ۱۰: اسباب‌بازی‌های چوبی. هر بچه قایق کوچک خودش را می‌سازد. | tts: Dix heures : jouets en bois. Chaque enfant construit son petit bateau.
 - 11 heures 30 : venez écouter et essayer les instruments de l'école de musique. | ساعت ۱۱:۳۰: بیایید سازهای مدرسهٔ موسیقی را بشنوید و امتحان کنید. | tts: Onze heures trente : venez écouter et essayer les instruments de l'école de musique.
 - 13 heures : pique-nique sous les arbres. Apportez votre repas ! | ساعت ۱۳: پیک‌نیک زیر درخت‌ها. غذایتان را بیاورید! | tts: Treize heures : pique-nique sous les arbres. Apportez votre repas !

@@ -12,9 +12,9 @@ sentences:
 reading A:
 {"type":"mcq","prompt":"این اعلامیه کجا پخش می‌شود؟","options":["در یک مزرعه","در یک باغ‌وحش","در یک مدرسه","در یک رستوران"],"correct":1,"explanation_fa":"در اعلامیه آمده: «bienvenue au zoo de Lyon !»، یعنی به باغ‌وحش لیون خوش آمدید."}
 {"type":"tf","prompt":"بچه‌ها می‌توانند به خرگوش‌ها دست بزنند.","correct":true,"explanation_fa":"در اعلامیه آمده: «les enfants peuvent toucher les lapins et les chèvres»، یعنی بچه‌ها می‌توانند به خرگوش‌ها و بزها دست بزنند."}
-{"type":"tf","prompt":"اردک‌ها کنار شیرها هستند.","correct":false,"explanation_fa":"در اعلامیه آمده: «Les poules et les canards sont près du lac.»، یعنی مرغ‌ها و اردک‌ها نزدیک دریاچه هستند."}
+{"type":"tf","prompt":"ساعت ۱۵ بازدیدکننده‌ها به شیرها غذا می‌دهند.","correct":false,"explanation_fa":"در اعلامیه آمده: «venez voir le repas des lions et des tigres» و «ne donnez pas à manger aux animaux !»؛ یعنی بازدیدکننده‌ها فقط غذا خوردن شیرها را تماشا می‌کنند و نباید به حیوان‌ها غذا بدهند."}
 reading B:
-{"type":"match","prompt":"هر ساعت را به چیزی که آن ساعت هست وصل کن.","left":["ساعت ۱۵","ساعت ۱۷","ساعت ۱۸"],"right":["باغ‌وحش بسته می‌شود","غذای شیرها و ببرها","مزرعهٔ کوچک تمام می‌شود","غذای مرغ‌ها و اردک‌ها"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"در اعلامیه آمده: «À 15 heures, venez voir le repas des lions»، «Jusqu'à 17 heures … la petite ferme» و «Le zoo ferme à 18 heures.»"}
+{"type":"match","prompt":"هر ساعت را به چیزی که آن ساعت هست وصل کن.","left":["ساعت ۱۵","ساعت ۱۷","ساعت ۱۸"],"right":["باغ‌وحش بسته می‌شود","غذای شیرها و ببرها","وقت دست زدن به بزها تمام می‌شود","غذای مرغ‌ها و اردک‌ها"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"در اعلامیه آمده: «À 15 heures, venez voir le repas des lions»، «Jusqu'à 17 heures … la petite ferme» و «Le zoo ferme à 18 heures.»"}
 {"type":"find","prompt":"کدام جمله می‌گوید نباید به حیوان‌ها غذا داد؟","correct_sentence":2,"explanation_fa":"در اعلامیه آمده: «ne donnez pas à manger aux animaux !»، یعنی به حیوان‌ها غذا ندهید."}
 listening A:
 {"type":"num","prompt":"غذای شیرها و ببرها ساعت چند است؟","answer":"15","accepted":["15","15h","quinze"],"explanation_fa":"می‌شنویم: «À 15 heures, venez voir le repas des lions et des tigres.»، یعنی ساعت پانزده."}

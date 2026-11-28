@@ -3,7 +3,7 @@ title: Une fête surprise
 band: 2
 kind: phone_call
 sentences:
-A: Salut Louis ! C'est pour la fête de papa. | سلام لویی! زنگ زدم برای جشن بابا.
+A: Salut Louis ! Je t'appelle pour la fête de papa. | سلام لویی! برای جشن بابا زنگ زدم.
 B: Oui, Chloé. Il ne sait rien, j'espère ? | آره، کلویی. امیدوارم بابا چیزی نداند!
 A: Non, rien. C'est une surprise ! | نه، هیچ‌چیز. قرار است غافلگیر شود!
 A: Samedi soir, tu l'emmènes au cinéma, et moi, je prépare la maison avec maman. | شنبه شب تو او را به سینما می‌بری و من با مامان خانه را آماده می‌کنم.
@@ -30,6 +30,6 @@ listening A:
 {"type":"tf","prompt":"به نظر کلویی کیک شکلاتی از همه بهتر است.","correct":true,"explanation_fa":"کلویی می‌گوید: «je trouve que le chocolat, c'est le meilleur»، یعنی به نظر من شکلاتی از همه بهتر است."}
 {"type":"tf","prompt":"ژولی هم به جشن می‌آید.","correct":false,"explanation_fa":"لویی می‌گوید: «Dommage, Julie ne peut pas venir.»، یعنی حیف که ژولی نمی‌تواند بیاید."}
 listening B:
-{"type":"mcq","prompt":"ژولی چطور در جشن هست؟","options":["یک نامه برای بابا می‌فرستد","کمی دیرتر به جشن می‌رسد","با بابا تماس تصویری می‌گیرد","یک کادو برای بابا می‌فرستد"],"correct":2,"explanation_fa":"کلویی می‌گوید: «elle va appeler papa en vidéo»، یعنی با بابا تماس تصویری می‌گیرد."}
+{"type":"mcq","prompt":"ژولی به جای آمدن به جشن چه کار می‌کند؟","options":["یک نامه برای بابا می‌فرستد","کمی دیرتر به جشن می‌رسد","با بابا تماس تصویری می‌گیرد","یک کادو برای بابا می‌فرستد"],"correct":2,"explanation_fa":"کلویی می‌گوید: «elle va appeler papa en vidéo»، یعنی با بابا تماس تصویری می‌گیرد."}
 {"type":"tf","prompt":"شنبه شب لویی بابا را به سینما می‌برد.","correct":true,"explanation_fa":"کلویی به لویی می‌گوید: «Samedi soir, tu l'emmènes au cinéma»، یعنی شنبه شب تو او را به سینما می‌بری."}
 {"type":"tf","prompt":"کلویی خانه را تنهایی آماده می‌کند.","correct":false,"explanation_fa":"کلویی می‌گوید: «je prépare la maison avec maman»، یعنی خانه را با مامان آماده می‌کنم."}

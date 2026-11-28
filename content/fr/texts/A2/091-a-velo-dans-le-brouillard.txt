@@ -1,0 +1,36 @@
+code: fr-a2-t091
+title: À vélo dans le brouillard
+band: 2
+kind: phone_call
+sentences:
+A: Allô, Nicolas ? Tu arrives quand ? Il est déjà six heures du{du-contr} soir ! | الو، نیکولا؟ کی می‌رسی؟ ساعت شش عصر شده!
+B: Je suis encore sur mon vélo, Sophie. Il y a beaucoup de brouillard, je ne vois presque rien. | سوفی، هنوز سوار دوچرخه‌ام. مه خیلی زیاد است، تقریباً هیچ‌چیز نمی‌بینم.
+A: Ici, à Paris, il y a eu un gros orage cet après-midi. C'est le troisième cette semaine ! | این‌جا در پاریس، امروز بعدازظهر یک توفان شدید آمد. این سومین توفان این هفته است!
+B: Oui, j'ai vu ça sur mon portable. Ici, la température est très basse : seulement 2 degrés ! | آره، توی گوشی‌ام دیدم. این‌جا دما خیلی پایین است: فقط ۲ درجه! | tts: Oui, j'ai vu ça sur mon portable. Ici, la température est très basse : seulement deux degrés !
+A: Tu as fait combien de kilomètres ? | تا حالا چند کیلومتر آمده‌ای؟
+B: J'ai fait la moitié du{du-contr} chemin. Encore 40 kilomètres ! | نصف راه را آمده‌ام. هنوز ۴۰ کیلومتر مانده! | tts: J'ai fait la moitié du chemin. Encore quarante kilomètres !
+A: Avec ce brouillard, tu vas arriver très tard. Fais une pause ! | با این مه خیلی دیر می‌رسی. کمی استراحت کن!
+B: D'accord. Je vais m'arrêter dans le prochain village et boire un café. | باشه. در روستای بعدی می‌ایستم و یک قهوه می‌خورم.
+A: Et fais attention aux voitures ! | و مراقب ماشین‌ها باش!
+B: Ne t'inquiète pas. Je préfère arriver tard, mais arriver ! | نگران نباش. ترجیح می‌دهم دیر برسم، ولی سالم برسم!
+A: Rappelle-moi après ton café ! | بعد از قهوه‌ات دوباره به من زنگ بزن!
+reading A:
+{"type":"mcq","prompt":"نیکولا الان کجاست؟","options":["در خانه، پیش سوفی در پاریس","در راه، سوار دوچرخه‌اش","در یک کافه، کنار ایستگاه قطار","در یک هتل، توی یک روستا"],"correct":1,"explanation_fa":"نیکولا می‌گوید: «Je suis encore sur mon vélo»، یعنی هنوز سوار دوچرخه‌ام."}
+{"type":"tf","prompt":"امروز بعدازظهر در پاریس توفان آمد.","correct":true,"explanation_fa":"سوفی می‌گوید: «Ici, à Paris, il y a eu un gros orage cet après-midi.»، یعنی امروز بعدازظهر در پاریس یک توفان شدید آمد."}
+{"type":"tf","prompt":"نیکولا هنوز نصف راه را هم نیامده است.","correct":false,"explanation_fa":"نیکولا می‌گوید: «J'ai fait la moitié du chemin.»، یعنی نصف راه را آمده‌ام."}
+{"type":"find","prompt":"کدام جمله می‌گوید نیکولا کجا می‌ایستد و چه کار می‌کند؟","correct_sentence":7,"explanation_fa":"نیکولا می‌گوید: «Je vais m'arrêter dans le prochain village et boire un café.»، یعنی در روستای بعدی می‌ایستم و یک قهوه می‌خورم."}
+reading B:
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Il y a beaucoup de {{1}}, je ne vois presque {{2}}.","bank":["brouillard","rien","orage","café","chemin"],"answers":["brouillard","rien"],"explanation_fa":"نیکولا می‌گوید: «Il y a beaucoup de brouillard, je ne vois presque rien.»، یعنی مه خیلی زیاد است و تقریباً هیچ‌چیز نمی‌بینم."}
+{"type":"mcq","prompt":"چرا سوفی فکر می‌کند نیکولا خیلی دیر می‌رسد؟","options":["چون دوچرخهٔ نیکولا خراب شده است","چون جاده به خاطر توفان بسته است","چون نیکولا می‌خواهد شب در هتل بماند","چون توی راه مه خیلی زیاد است"],"correct":3,"explanation_fa":"سوفی می‌گوید: «Avec ce brouillard, tu vas arriver très tard.»، یعنی با این مه خیلی دیر می‌رسی."}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["نیکولا می‌گوید نصف راه را آمده است.","سوفی می‌پرسد نیکولا کی می‌رسد.","نیکولا می‌گوید ترجیح می‌دهد دیر برسد.","سوفی از توفان پاریس می‌گوید."],"correct_order":[1,3,0,2],"explanation_fa":"اول «Tu arrives quand ?»، بعد «il y a eu un gros orage»، بعد «J'ai fait la moitié du chemin» و آخر «Je préfère arriver tard»."}
+{"type":"match","prompt":"هر عدد یا ساعت را به چیزی که در گفتگو دربارهٔ آن گفته می‌شود وصل کن.","left":["۲ درجه","۴۰ کیلومتر","ساعت شش عصر"],"right":["راهی که هنوز مانده","ساعتی که سوفی زنگ می‌زند","دمای هوا آن‌جا که نیکولا هست","ساعتی که نیکولا به خانه می‌رسد"],"pairs":[[0,2],[1,0],[2,1]],"explanation_fa":"نیکولا می‌گوید: «seulement 2 degrés» و «Encore 40 kilomètres»؛ سوفی هم در اول تلفن می‌گوید: «Il est déjà six heures du soir»."}
+listening A:
+{"type":"mcq","prompt":"سوفی از نیکولا چه می‌خواهد؟","options":["که شب را در یک هتل بماند","که با قطار به خانه برگردد","که کمی بایستد و استراحت کند","که به اخبار رادیو گوش کند"],"correct":2,"explanation_fa":"سوفی می‌گوید: «Fais une pause !»، یعنی کمی استراحت کن."}
+{"type":"num","prompt":"نیکولا هنوز چند کیلومتر راه دارد؟","answer":"40","accepted":["40","quarante"],"explanation_fa":"نیکولا می‌گوید: «Encore 40 kilomètres !»، یعنی هنوز چهل کیلومتر مانده."}
+{"type":"tf","prompt":"نیکولا خبر توفان را توی گوشی‌اش دیده است.","correct":true,"explanation_fa":"وقتی سوفی از توفان می‌گوید، نیکولا جواب می‌دهد: «Oui, j'ai vu ça sur mon portable.»، یعنی آره، توی گوشی‌ام دیدم."}
+{"type":"tf","prompt":"آن‌جا که نیکولا هست، هوا گرم است.","correct":false,"explanation_fa":"نیکولا می‌گوید: «la température est très basse : seulement 2 degrés !»، یعنی دما خیلی پایین است، فقط دو درجه."}
+listening B:
+{"type":"num","prompt":"آن‌جا که نیکولا هست، دما چند درجه است؟","answer":"2","accepted":["2","deux"],"explanation_fa":"نیکولا می‌گوید: «seulement 2 degrés !»، یعنی فقط دو درجه."}
+{"type":"mcq","prompt":"نیکولا در روستای بعدی چه کار می‌کند؟","options":["یک قهوه می‌خورد","کمی توی هتل می‌خوابد","دوچرخه‌اش را درست می‌کند","با سوفی تماس تصویری می‌گیرد"],"correct":0,"explanation_fa":"نیکولا می‌گوید: «Je vais m'arrêter dans le prochain village et boire un café.»، یعنی در روستای بعدی می‌ایستم و یک قهوه می‌خورم."}
+{"type":"tf","prompt":"نیکولا می‌گوید ترجیح می‌دهد زود برسد.","correct":false,"explanation_fa":"نیکولا می‌گوید: «Je préfère arriver tard, mais arriver !»، یعنی ترجیح می‌دهم دیر برسم، ولی سالم برسم."}
+{"type":"tf","prompt":"سوفی می‌خواهد نیکولا بعد از قهوه دوباره زنگ بزند.","correct":true,"explanation_fa":"سوفی آخر تلفن می‌گوید: «Rappelle-moi après ton café !»، یعنی بعد از قهوه‌ات دوباره به من زنگ بزن."}

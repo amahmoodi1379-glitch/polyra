@@ -4,31 +4,31 @@ band: 2
 kind: email
 sentences:
 - Salut Hugo ! | سلام هوگو!
-- Je passe deux semaines chez mes grands-parents, à la montagne. | دو هفته را پیش پدربزرگ و مادربزرگم در کوهستان می‌گذرانم.
-- Tous les jours, le soleil brille et nous allons au lac. | هر روز آفتاب می‌درخشد و به دریاچه می‌رویم.
+- Je passe deux semaines chez mes grands-parents, dans une petite maison près d'un lac. | دو هفته را پیش پدربزرگ و مادربزرگم می‌گذرانم، در یک خانهٔ کوچک نزدیک یک دریاچه.
+- Tous les jours, le soleil brille et nous allons sur le lac avec le bateau de mon grand-père. | هر روز آفتاب می‌درخشد و با قایق پدربزرگم روی دریاچه می‌رویم.
 - L'eau est très claire, mais froide ! Je me baigne quand même. | آب خیلی زلال است، ولی سرد! با این حال آب‌تنی می‌کنم.
-- Mardi, nous avons fait une randonnée et nous nous sommes perdus dans la forêt ! | سه‌شنبه کوه‌پیمایی کردیم و توی جنگل گم شدیم!
+- Mardi, nous avons fait le tour{tour-m} du{du-contr} lac à vélo : trente kilomètres ! | سه‌شنبه با دوچرخه دور دریاچه را گشتیم: سی کیلومتر!
 - Ma petite sœur est tombée et elle s'est blessée au genou, mais ce n'est pas grave. | خواهر کوچکم زمین خورد و زانویش آسیب دید، ولی چیز مهمی نیست.
 - L'après-midi, je dois réviser : j'ai un examen de mathématiques en septembre. | بعدازظهرها باید درس‌هایم را مرور کنم: در سپتامبر امتحان ریاضی دارم.
 - Le soir, nous nous préparons et nous allons dîner au village. | شب‌ها آماده می‌شویم و برای شام به روستا می‌رویم.
 - Avec le soleil, mes cheveux sont plus clairs et ma peau est plus foncée ! | با این آفتاب، موهایم روشن‌تر شده و پوستم تیره‌تر!
-- À bientôt ! Lucas | به‌زودی می‌بینمت! لوکا
+- À bientôt ! Emma | به‌زودی می‌بینمت! اِما
 reading A:
-{"type":"mcq","prompt":"لوکا کجاست؟","options":["در یک کمپ کنار دریا","در خانهٔ هوگو در روستا","پیش پدربزرگ و مادربزرگش در کوهستان","در یک هتل نزدیک دریاچه"],"correct":2,"explanation_fa":"لوکا می‌نویسد: «Je passe deux semaines chez mes grands-parents, à la montagne.»، یعنی دو هفته را پیش پدربزرگ و مادربزرگم در کوهستان می‌گذرانم."}
-{"type":"tf","prompt":"آب دریاچه گرم است.","correct":false,"explanation_fa":"لوکا می‌نویسد: «L'eau est très claire, mais froide !»، یعنی آب خیلی زلال است، ولی سرد."}
-{"type":"tf","prompt":"آن‌ها توی جنگل گم شدند.","correct":true,"explanation_fa":"لوکا می‌نویسد: «nous nous sommes perdus dans la forêt !»، یعنی توی جنگل گم شدیم."}
-{"type":"find","prompt":"کدام جمله می‌گوید لوکا چرا بعدازظهرها درس می‌خواند؟","correct_sentence":6,"explanation_fa":"لوکا می‌نویسد: «je dois réviser : j'ai un examen de mathématiques en septembre»، یعنی باید درس مرور کنم، چون در سپتامبر امتحان ریاضی دارم."}
+{"type":"mcq","prompt":"اِما کجاست؟","options":["در یک کمپ کنار دریا","در خانهٔ هوگو در روستا","پیش پدربزرگ و مادربزرگش، نزدیک یک دریاچه","در یک هتل در کوهستان"],"correct":2,"explanation_fa":"اِما می‌نویسد: «Je passe deux semaines chez mes grands-parents, dans une petite maison près d'un lac.»، یعنی دو هفته را پیش پدربزرگ و مادربزرگم، در یک خانهٔ کوچک نزدیک یک دریاچه می‌گذرانم."}
+{"type":"tf","prompt":"آب دریاچه گرم است.","correct":false,"explanation_fa":"اِما می‌نویسد: «L'eau est très claire, mais froide !»، یعنی آب خیلی زلال است، ولی سرد."}
+{"type":"tf","prompt":"پدربزرگ اِما یک قایق دارد.","correct":true,"explanation_fa":"اِما می‌نویسد: «nous allons sur le lac avec le bateau de mon grand-père»، یعنی با قایق پدربزرگم روی دریاچه می‌رویم."}
+{"type":"find","prompt":"کدام جمله می‌گوید اِما چرا بعدازظهرها درس می‌خواند؟","correct_sentence":6,"explanation_fa":"اِما می‌نویسد: «je dois réviser : j'ai un examen de mathématiques en septembre»، یعنی باید درس مرور کنم، چون در سپتامبر امتحان ریاضی دارم."}
 reading B:
-{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"L'eau est très {{1}}, mais froide ! Je me {{2}} quand même.","bank":["claire","baigne","foncée","perds","prépare"],"answers":["claire","baigne"],"explanation_fa":"لوکا می‌نویسد: «L'eau est très claire, mais froide ! Je me baigne quand même.»"}
-{"type":"mcq","prompt":"برای خواهر کوچک لوکا چه اتفاقی افتاد؟","options":["توی جنگل گم شد","زمین خورد و زانویش آسیب دید","توی دریاچه سرما خورد","از آفتاب سوخت"],"correct":1,"explanation_fa":"لوکا می‌نویسد: «Ma petite sœur est tombée et elle s'est blessée au genou»، یعنی خواهر کوچکم زمین خورد و زانویش آسیب دید."}
-{"type":"order","prompt":"این‌ها را به ترتیبی که در ایمیل آمده بچین.","items":["لوکا از امتحانش می‌گوید.","لوکا از آب دریاچه می‌گوید.","لوکا از گم شدن در جنگل می‌گوید.","لوکا از موها و پوستش می‌گوید."],"correct_order":[1,2,0,3],"explanation_fa":"اول «L'eau est très claire»، بعد «nous nous sommes perdus dans la forêt»، بعد «un examen de mathématiques» و آخر «mes cheveux sont plus clairs»."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"L'eau est très {{1}}, mais froide ! Je me {{2}} quand même.","bank":["claire","baigne","foncée","blesse","prépare"],"answers":["claire","baigne"],"explanation_fa":"اِما می‌نویسد: «L'eau est très claire, mais froide ! Je me baigne quand même.»"}
+{"type":"mcq","prompt":"برای خواهر کوچک اِما چه اتفاقی افتاد؟","options":["توی روستا گم شد","زمین خورد و زانویش آسیب دید","توی دریاچه سرما خورد","از آفتاب سوخت"],"correct":1,"explanation_fa":"اِما می‌نویسد: «Ma petite sœur est tombée et elle s'est blessée au genou»، یعنی خواهر کوچکم زمین خورد و زانویش آسیب دید."}
+{"type":"order","prompt":"این‌ها را به ترتیبی که در ایمیل آمده بچین.","items":["اِما از امتحانش می‌گوید.","اِما از آب دریاچه می‌گوید.","اِما از دوچرخه‌سواری دور دریاچه می‌گوید.","اِما از موها و پوستش می‌گوید."],"correct_order":[1,2,0,3],"explanation_fa":"اول «L'eau est très claire»، بعد «nous avons fait le tour du lac à vélo»، بعد «un examen de mathématiques» و آخر «mes cheveux sont plus clairs»."}
 listening A:
-{"type":"mcq","prompt":"سه‌شنبه چه اتفاقی افتاد؟","options":["برای شام به روستا رفتند","امتحان ریاضی لوکا بود","کوه‌پیمایی کردند و گم شدند","کنار دریاچه آب‌تنی کردند"],"correct":2,"explanation_fa":"می‌شنویم: «Mardi, nous avons fait une randonnée et nous nous sommes perdus dans la forêt !»"}
-{"type":"tf","prompt":"لوکا با این‌که آب سرد است، آب‌تنی می‌کند.","correct":true,"explanation_fa":"می‌شنویم: «mais froide ! Je me baigne quand même.»، یعنی آب سرد است، ولی با این حال آب‌تنی می‌کنم."}
-{"type":"tf","prompt":"زانوی خواهر لوکا آسیب جدی دیده است.","correct":false,"explanation_fa":"می‌شنویم: «elle s'est blessée au genou, mais ce n'est pas grave»، یعنی زانویش آسیب دید، ولی چیز مهمی نیست."}
-{"type":"mcq","prompt":"امتحان لوکا کی است؟","options":["در ژوئن","در سپتامبر","سه‌شنبه","آخر همین هفته"],"correct":1,"explanation_fa":"می‌شنویم: «j'ai un examen de mathématiques en septembre»، یعنی در سپتامبر امتحان ریاضی دارم."}
+{"type":"mcq","prompt":"سه‌شنبه آن‌ها دور دریاچه را چطور گشتند؟","options":["پیاده","با اتوبوس","با دوچرخه","با ماشین پدربزرگ"],"correct":2,"explanation_fa":"می‌شنویم: «Mardi, nous avons fait le tour du lac à vélo»، یعنی سه‌شنبه با دوچرخه دور دریاچه را گشتیم."}
+{"type":"tf","prompt":"اِما با این‌که آب سرد است، آب‌تنی می‌کند.","correct":true,"explanation_fa":"می‌شنویم: «mais froide ! Je me baigne quand même.»، یعنی آب سرد است، ولی با این حال آب‌تنی می‌کنم."}
+{"type":"tf","prompt":"زانوی خواهر اِما آسیب جدی دیده است.","correct":false,"explanation_fa":"می‌شنویم: «elle s'est blessée au genou, mais ce n'est pas grave»، یعنی زانویش آسیب دید، ولی چیز مهمی نیست."}
+{"type":"mcq","prompt":"امتحان اِما کی است؟","options":["در ژوئن","در سپتامبر","سه‌شنبه","آخر همین هفته"],"correct":1,"explanation_fa":"می‌شنویم: «j'ai un examen de mathématiques en septembre»، یعنی در سپتامبر امتحان ریاضی دارم."}
 listening B:
-{"type":"num","prompt":"لوکا چند هفته پیش پدربزرگ و مادربزرگش می‌ماند؟","answer":"2","accepted":["2","deux"],"explanation_fa":"می‌شنویم: «Je passe deux semaines chez mes grands-parents»، یعنی دو هفته."}
-{"type":"mcq","prompt":"آن‌ها شب‌ها کجا شام می‌خورند؟","options":["کنار دریاچه","توی جنگل","توی روستا","خانهٔ پدربزرگ"],"correct":2,"explanation_fa":"می‌شنویم: «nous allons dîner au village»، یعنی برای شام به روستا می‌رویم."}
-{"type":"tf","prompt":"با آفتاب، موهای لوکا روشن‌تر شده است.","correct":true,"explanation_fa":"می‌شنویم: «Avec le soleil, mes cheveux sont plus clairs»، یعنی با این آفتاب موهایم روشن‌تر شده است."}
-{"type":"tf","prompt":"لوکا صبح‌ها درس می‌خواند.","correct":false,"explanation_fa":"می‌شنویم: «L'après-midi, je dois réviser»، یعنی بعدازظهرها باید درس مرور کنم، نه صبح‌ها."}
+{"type":"num","prompt":"اِما چند هفته پیش پدربزرگ و مادربزرگش می‌ماند؟","answer":"2","accepted":["2","deux"],"explanation_fa":"می‌شنویم: «Je passe deux semaines chez mes grands-parents»، یعنی دو هفته."}
+{"type":"mcq","prompt":"آن‌ها شب‌ها کجا شام می‌خورند؟","options":["کنار دریاچه","توی قایق","توی روستا","خانهٔ پدربزرگ"],"correct":2,"explanation_fa":"می‌شنویم: «nous allons dîner au village»، یعنی برای شام به روستا می‌رویم."}
+{"type":"tf","prompt":"با آفتاب، موهای اِما روشن‌تر شده است.","correct":true,"explanation_fa":"می‌شنویم: «Avec le soleil, mes cheveux sont plus clairs»، یعنی با این آفتاب موهایم روشن‌تر شده است."}
+{"type":"tf","prompt":"پوست اِما با آفتاب روشن‌تر شده است.","correct":false,"explanation_fa":"می‌شنویم: «ma peau est plus foncée»، یعنی پوستم تیره‌تر شده، نه روشن‌تر."}

@@ -9,7 +9,7 @@ sentences:
 - Mercredi, 14 heures : un film japonais à la bibliothèque du{du-contr} lycée. | چهارشنبه، ساعت ۱۴: یک فیلم ژاپنی در کتابخانهٔ دبیرستان. | tts: Mercredi, quatorze heures : un film japonais à la bibliothèque du lycée.
 - Jeudi, 16 heures : cours{cours} de cuisine chinoise. On prépare du riz aux légumes. | پنجشنبه، ساعت ۱۶: کلاس آشپزی چینی. برنج با سبزی درست می‌کنیم. | tts: Jeudi, seize heures : cours de cuisine chinoise. On prépare du riz aux légumes.
 - Vendredi, 18 heures : grande fête dans la cour, avec de la musique arabe et des danses turques. | جمعه، ساعت ۱۸: جشن بزرگ در حیاط، با موسیقی عربی و رقص‌های ترکی. | tts: Vendredi, dix-huit heures : grande fête dans la cour, avec de la musique arabe et des danses turques.
-- Tous les jours, de 13 heures à 14 heures, une étudiante russe donne un petit cours de russe. | هر روز، از ساعت ۱۳ تا ۱۴، یک دانشجوی روس یک کلاس کوتاه روسی می‌گذارد. | tts: Tous les jours, de treize heures à quatorze heures, une étudiante russe donne un petit cours de russe.
+- Tous les jours, de 13 heures à 14 heures, une étudiante russe donne un petit cours de russe. | هر روز، از ساعت ۱۳ تا ۱۴، یک دانشجوی روس کلاس کوتاهی برای زبان روسی برگزار می‌کند. | tts: Tous les jours, de treize heures à quatorze heures, une étudiante russe donne un petit cours de russe.
 - Les parents sont invités à la fête de vendredi. | پدر و مادرها به جشن جمعه دعوت‌اند.
 - Cette semaine, pas besoin de voyager : le monde vient au lycée ! | این هفته لازم نیست سفر کنید: دنیا به دبیرستان می‌آید!
 reading A:
