@@ -7,13 +7,13 @@ sentences:
 - Guten Tag, Frau Neumann, hier ist Auto Weber. | روز بخیر خانم نویمان، از کرایهٔ ماشین وبر تماس می‌گیریم.
 - Sie{Sie-3} möchten am Freitag ein Auto mieten. | شما می‌خواهید جمعه ماشین کرایه کنید.
 - Leider ist das kleine Auto schon weg. | متأسفانه ماشین کوچک دیگر نیست.
-- Wir vermieten Ihnen das große Auto, und es kostet nicht mehr als das kleine. | ماشین بزرگ را به شما کرایه می‌دهیم و گران‌تر از ماشین کوچک نیست.
+- Wir können Ihnen das große Auto vermieten, und es kostet nicht mehr als das kleine. | می‌توانیم ماشین بزرگ را به شما کرایه بدهیم و گران‌تر از ماشین کوچک هم نیست.
 - Das Auto steht hinten im Hof. | ماشین پشت ساختمان، در حیاط است.
 - Wenn das Büro geschlossen ist, klingeln Sie bitte an der Haustür. | اگر دفتر بسته بود، لطفاً زنگ در ورودی خانه را بزنید.
 - Ich wohne oben. | من طبقهٔ بالا زندگی می‌کنم.
 - Bis Freitag! | تا جمعه!
 reading A:
-{"type":"mcq","prompt":"این پیام برای چیست؟","options":["خانم نویمان هنوز پول نداده است","ماشین بزرگ خراب است","ماشین کوچک دیگر نیست","دفتر جمعه بسته است"],"correct":2,"explanation_fa":"در پیام آمده: «Leider ist das kleine Auto schon weg.»"}
+{"type":"mcq","prompt":"خبر اصلی این پیام چیست؟","options":["خانم نویمان هنوز پول نداده است","ماشین بزرگ خراب است","ماشین کوچک دیگر نیست","دفتر جمعه بسته است"],"correct":2,"explanation_fa":"در پیام آمده: «Leider ist das kleine Auto schon weg.»"}
 {"type":"tf","prompt":"ماشین بزرگ از ماشین کوچک گران‌تر نیست.","correct":true,"explanation_fa":"در پیام آمده: «es kostet nicht mehr als das kleine»."}
 {"type":"tf","prompt":"ماشین جلوی دفتر است.","correct":false,"explanation_fa":"در پیام آمده: «Das Auto steht hinten im Hof»، یعنی پشت ساختمان در حیاط."}
 reading B:

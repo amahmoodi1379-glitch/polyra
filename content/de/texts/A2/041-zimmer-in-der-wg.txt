@@ -5,12 +5,12 @@ kind: dialogue
 key_words: WG, Haushalt, putzen, spülen, aufräumen
 sentences:
 A: Hallo, ich bin Jonas. Ist das Zimmer in eurer WG noch frei? | سلام، من یوناس هستم. اتاق خانهٔ مشترکتان هنوز خالی است؟
-B: Ja! Aber zuerst eine Frage: Was machst du im Haushalt gern? | آره! ولی اول یک سؤال: از کارهای خانه چه کاری را دوست داری؟
+B: Ja! Aber eine Frage: Was machst du im Haushalt gern? | آره! ولی یک سؤال: از کارهای خانه چه کاری را دوست داری؟
 A: Ich koche gern und räume oft auf. | آشپزی را دوست دارم و زیاد خانه را مرتب می‌کنم.
-B: Und putzen? Jeder putzt einmal pro Woche das Bad. | تمیزکاری چه؟ هر کسی هفته‌ای یک بار حمام را تمیز می‌کند.
-A: Das ist okay. Aber ich spüle nicht so gern. | این مشکلی نیست. ولی ظرف شستن را زیاد دوست ندارم.
+B: Putzt du auch gern? Jeder putzt einmal pro Woche das Bad. | تمیزکاری را هم دوست داری؟ هر کسی هفته‌ای یک بار حمام را تمیز می‌کند.
+A: Ja, das geht. Aber ich spüle nicht so gern. | بدم نمی‌آید. ولی ظرف شستن را زیاد دوست ندارم.
 B: Wir haben keine Spülmaschine, deshalb spült jeder selbst. | ما ماشین ظرف‌شویی نداریم، برای همین هر کسی ظرف‌هایش را خودش می‌شوید.
-A: Gut, das lerne ich! | باشد، یادش می‌گیرم!
+A: Okay, kein Problem! | باشه، مشکلی نیست!
 reading A:
 {"type":"mcq","prompt":"یوناس چرا آمده است؟","options":["می‌خواهد حمام را تمیز کند","دنبال اتاقی در این خانهٔ مشترک است","می‌خواهد ماشین ظرف‌شویی بفروشد","مهمان یکی از هم‌خانه‌هاست"],"correct":1,"explanation_fa":"یوناس می‌پرسد: «Ist das Zimmer in eurer WG noch frei?»"}
 {"type":"tf","prompt":"یوناس آشپزی را دوست دارد.","correct":true,"explanation_fa":"یوناس می‌گوید: «Ich koche gern.»"}

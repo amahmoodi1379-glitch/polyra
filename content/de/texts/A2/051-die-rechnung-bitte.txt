@@ -5,17 +5,17 @@ kind: dialogue
 key_words: salzig, Köchin, empfehlen, satt, Trinkgeld
 sentences:
 A: Hat es Ihnen geschmeckt? | غذا خوشمزه بود؟
-B: Sehr gut! Die Suppe war nur ein bisschen salzig. | خیلی خوب! فقط سوپ کمی شور بود.
+B: Sehr gut! Die Suppe war nur ein bisschen salzig. | خیلی خوب بود! فقط سوپ کمی شور بود.
 A: Das tut mir leid. Ich sage es der Köchin. | متأسفم. به آشپز می‌گویم.
 A: Möchten Sie einen Nachtisch? Ich empfehle den Kuchen mit Kirschen. | دسر میل دارید؟ کیک گیلاس را پیشنهاد می‌کنم.
 B: Nein danke, ich bin satt. Die Rechnung, bitte. | نه ممنون، سیرم. لطفاً صورت‌حساب را بیاورید.
 A: Das macht 18 Euro 40. | می‌شود ۱۸ یورو و ۴۰ سنت. | tts: Das macht achtzehn Euro vierzig.
 B: Hier sind 20 Euro. Stimmt so! | بفرمایید ۲۰ یورو. بقیه‌اش مال شما! | tts: Hier sind zwanzig Euro. Stimmt so!
-A: Danke für das Trinkgeld und einen schönen Abend! | ممنون بابت انعام، شب خوبی داشته باشید!
+A: Danke für das Trinkgeld! Einen schönen Abend noch! | ممنون بابت انعام! شب خوبی داشته باشید!
 reading A:
 {"type":"mcq","prompt":"مشکل سوپ چه بود؟","options":["کمی شور بود","خیلی تند بود","سرد بود","ترش بود"],"correct":0,"explanation_fa":"مشتری می‌گوید: «Die Suppe war nur ein bisschen salzig.»"}
 {"type":"tf","prompt":"مشتری کیک گیلاس می‌خورد.","correct":false,"explanation_fa":"مشتری می‌گوید: «Nein danke, ich bin satt.»"}
-{"type":"tf","prompt":"گارسون درباره سوپ با آشپز حرف می‌زند.","correct":true,"explanation_fa":"گارسون می‌گوید: «Ich sage es der Köchin.»"}
+{"type":"tf","prompt":"گارسون قول می‌دهد شوری سوپ را به آشپز بگوید.","correct":true,"explanation_fa":"گارسون می‌گوید: «Ich sage es der Köchin.»"}
 reading B:
 {"type":"find","prompt":"کدام جمله می‌گوید گارسون یک دسر پیشنهاد می‌کند؟","correct_sentence":3,"explanation_fa":"گارسون می‌گوید: «Ich empfehle den Kuchen mit Kirschen.»"}
 {"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["گارسون دسر پیشنهاد می‌کند.","مشتری صورت‌حساب را می‌خواهد.","مشتری می‌گوید سوپ کمی شور بود.","مشتری ۲۰ یورو می‌دهد."],"correct_order":[2,0,1,3],"explanation_fa":"اول «ein bisschen salzig»، بعد «Ich empfehle den Kuchen mit Kirschen»، بعد «Die Rechnung, bitte» و آخر «Hier sind 20 Euro»."}

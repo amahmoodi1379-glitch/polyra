@@ -13,7 +13,7 @@ sentences:
 - Außerdem sind in der Tüte zwei Paar Socken und eine Packung Tee. | به‌علاوه در کیسه دو جفت جوراب و یک بسته چای هم هست.
 - Haben Sie die Tüte gefunden? Können Sie sie mir bitte schicken? | کیسه را پیدا کرده‌اید؟ می‌توانید لطفاً آن را برایم بفرستید؟
 - Ich bezahle das natürlich. | البته هزینه‌اش را خودم می‌دهم.
-- Vielen Dank! Julia Neumann | خیلی ممنون! یولیا نویمان
+- Vielen Dank und freundliche Grüße, Julia Neumann | با تشکر و احترام، یولیا نویمان
 reading A:
 {"type":"mcq","prompt":"یولیا چرا به هتل ایمیل می‌زند؟","options":["می‌خواهد دوباره اتاق رزرو کند","چیزی را در هتل جا گذاشته است","از اتاقش راضی نبوده است","می‌خواهد صورت‌حسابش را بپردازد"],"correct":1,"explanation_fa":"یولیا می‌نویسد: «Leider habe ich dort eine Tüte vergessen.»"}
 {"type":"tf","prompt":"کیسه یولیا صورتی است.","correct":true,"explanation_fa":"یولیا می‌نویسد: «Die Tüte ist rosa.»"}

@@ -25,4 +25,4 @@ listening A:
 {"type":"tf","prompt":"بچه‌های زیر ۶ سال نصف قیمت را می‌دهند.","correct":false,"explanation_fa":"در آگهی آمده: «Kinder unter 6 Jahren bezahlen nichts»، یعنی هیچ پولی نمی‌دهند."}
 listening B:
 {"type":"dict","sentence":3}
-{"type":"mcq","prompt":"آگهی می‌گوید برای این آپارتمان چه کار کنید؟","options":["زنگ بزنید","ایمیل بزنید","به دفتر بیایید","نامه بنویسید"],"correct":1,"explanation_fa":"در آگهی آمده: «Schreiben Sie uns eine E-Mail!»"}
+{"type":"mcq","prompt":"آگهی می‌گوید برای این آپارتمان چه کار کنید؟","options":["زنگ بزنید","ایمیل بزنید","به دفتر بیایید","پیامک بفرستید"],"correct":1,"explanation_fa":"در آگهی آمده: «Schreiben Sie uns eine E-Mail!»"}

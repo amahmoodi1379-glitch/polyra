@@ -6,7 +6,7 @@ key_words: Rindfleisch, Lammfleisch, Schweinefleisch, Schinken
 sentences:
 A: Guten Tag! Was darf es sein? | روز بخیر! چه میل دارید؟
 B: Ich hätte gern ein Kilo Rindfleisch. Ich koche heute für acht Personen. | یک کیلو گوشت گاو می‌خواستم. امروز برای هشت نفر آشپزی می‌کنم.
-A: Gern. Sonst noch etwas? | با کمال میل. چیز دیگری هم می‌خواهید؟
+A: Gern. Sonst noch etwas? | حتماً. چیز دیگری هم می‌خواهید؟
 B: Haben Sie auch Lammfleisch? | گوشت بره هم دارید؟
 A: Leider nicht. Aber das Schweinefleisch ist heute sehr gut. | متأسفانه نه. ولی گوشت خوک امروز خیلی خوب است.
 B: Gut, dann nehme ich 500 Gramm Schweinefleisch und 200 Gramm Schinken. | خوب، پس ۵۰۰ گرم گوشت خوک و ۲۰۰ گرم ژامبون برمی‌دارم. | tts: Gut, dann nehme ich fünfhundert Gramm Schweinefleisch und zweihundert Gramm Schinken.
@@ -26,4 +26,4 @@ listening A:
 {"type":"tf","prompt":"فروشنده می‌گوید گوشت خوک امروز خوب نیست.","correct":false,"explanation_fa":"فروشنده می‌گوید: «das Schweinefleisch ist heute sehr gut»، یعنی خیلی خوب است."}
 listening B:
 {"type":"dict","sentence":3}
-{"type":"mcq","prompt":"مشتری چه چیزی پیدا نمی‌کند؟","options":["گوشت گاو","ژامبون","گوشت خوک","گوشت بره"],"correct":3,"explanation_fa":"مشتری می‌پرسد «Haben Sie auch Lammfleisch?» و فروشنده می‌گوید: «Leider nicht.»"}
+{"type":"mcq","prompt":"مشتری چه چیزی را نمی‌تواند بخرد؟","options":["گوشت گاو","ژامبون","گوشت خوک","گوشت بره"],"correct":3,"explanation_fa":"مشتری می‌پرسد «Haben Sie auch Lammfleisch?» و فروشنده می‌گوید: «Leider nicht.»"}

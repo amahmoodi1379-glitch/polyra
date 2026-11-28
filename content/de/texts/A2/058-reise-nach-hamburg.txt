@@ -25,7 +25,7 @@ reading A:
 reading B:
 {"type":"match","prompt":"هر روز را به برنامه‌اش وصل کن.","left":["دوشنبه","سه‌شنبه","چهارشنبه"],"right":["خرید در شهر","حرکت با قطار و رسیدن به هتل","موزه و فوتبال","رسیدن به لایپزیگ"],"pairs":[[0,1],[1,2],[2,0]],"explanation_fa":"در برنامه آمده: «Montag … Abfahrt … Ankunft im Hotel»، «Dienstag: … Museum, … Fußball» و «Mittwoch: Einkaufen in der Stadt»."}
 {"type":"find","prompt":"کدام جمله می‌گوید بچه‌ها در هامبورگ نمی‌توانند پول برداشت کنند؟","correct_sentence":9,"explanation_fa":"معلم می‌نویسد: «Die Kinder können in Hamburg kein Geld abheben.»"}
-{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Bitte geben Sie Ihrem Kind auch etwas {{1}} für die {{2}}.","bank":["Kleingeld","Toilette","Bargeld","Küche","Reise"],"answers":["Kleingeld","Toilette"],"explanation_fa":"معلم می‌نویسد: «Bitte geben Sie Ihrem Kind auch etwas Kleingeld für die Toilette.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Bitte geben Sie Ihrem Kind auch etwas {{1}} für die {{2}}.","bank":["Kleingeld","Toilette","Essen","Küche","Klasse"],"answers":["Kleingeld","Toilette"],"explanation_fa":"معلم می‌نویسد: «Bitte geben Sie Ihrem Kind auch etwas Kleingeld für die Toilette.»"}
 listening A:
 {"type":"num","prompt":"سفر چند یورو هزینه دارد؟","answer":"190","accepted":["190","190 Euro","hundertneunzig"],"explanation_fa":"معلم می‌گوید: «Die Reise kostet 190 Euro.»"}
 {"type":"num","prompt":"هر بچه در هامبورگ چند یورو لازم دارد؟","answer":"40","accepted":["40","40 Euro","vierzig"],"explanation_fa":"معلم می‌گوید: «Ihr Kind braucht in Hamburg nur 40 Euro.»"}

@@ -22,7 +22,7 @@ reading A:
 {"type":"tf","prompt":"پدر سارا غذای تند دوست دارد.","correct":false,"explanation_fa":"لئون می‌گوید: «ihr Vater isst nicht gern scharf»، یعنی پدرش غذای تند دوست ندارد."}
 {"type":"mcq","prompt":"مادر لئون برای دسر چه پیشنهادی می‌دهد؟","options":["کیک بپزد","بستنی بخرد","توت‌فرنگی و خامه بخرد","گیلاس بخرد"],"correct":2,"explanation_fa":"مادر می‌گوید: «Kauf Erdbeeren und Sahne.»"}
 reading B:
-{"type":"order","prompt":"کارهای آشپزی را به ترتیبی که مادر می‌گوید بچین.","items":["همه را در روغن سرخ می‌کند","مرغ و پیازها را خرد می‌کند","سبزیجات را پنج دقیقه می‌پزد","توت‌فرنگی و خامه می‌خرد"],"correct_order":[1,0,2,3],"explanation_fa":"مادر اول می‌گوید «Zuerst schneidest du …»، بعد «Dann brätst du alles …»، بعد از سبزیجات می‌گوید و آخر از دسر: «Kauf Erdbeeren und Sahne.»"}
+{"type":"order","prompt":"این کارها را به ترتیبی که مادر می‌گوید بچین.","items":["همه را در روغن سرخ می‌کند","مرغ و پیازها را خرد می‌کند","سبزیجات را پنج دقیقه می‌پزد","توت‌فرنگی و خامه می‌خرد"],"correct_order":[1,0,2,3],"explanation_fa":"مادر اول می‌گوید «Zuerst schneidest du …»، بعد «Dann brätst du alles …»، بعد از سبزیجات می‌گوید و آخر از دسر: «Kauf Erdbeeren und Sahne.»"}
 {"type":"find","prompt":"کدام جمله می‌گوید چرا نباید زیاد لیمو ریخت؟","correct_sentence":7,"explanation_fa":"مادر می‌گوید: «Etwas Zitrone ist gut, aber nicht zu viel, sonst ist es sauer.»"}
 {"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Das Gemüse muss {{1}} sein. Die Erdbeeren sind jetzt sehr {{2}}.","bank":["frisch","süß","scharf","sauer","alt"],"answers":["frisch","süß"],"explanation_fa":"مادر می‌گوید: «Das Gemüse muss frisch sein» و «Die Erdbeeren sind jetzt sehr süß.»"}
 listening A:

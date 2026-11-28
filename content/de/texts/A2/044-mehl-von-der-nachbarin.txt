@@ -4,31 +4,31 @@ band: 2
 kind: phone_call
 key_words: stören, Rezept, Mehl, Öl, Lärm
 sentences:
-A: Hallo Anna, hier ist Sara, deine Nachbarin. Störe ich? | سلام آنا، سارا هستم، همسایه‌ات. مزاحم نیستم؟
-B: Nein, gar nicht! Was kann ich für dich tun? | نه، اصلاً! چه کاری برایت می‌توانم بکنم؟
+A: Hallo Anna, hier ist Paul, dein Nachbar. Störe ich? | سلام آنا، پاول هستم، همسایه‌ات. مزاحم نیستم؟
+B: Nein, gar nicht! Was kann ich für dich tun? | نه، اصلاً! چه کاری می‌توانم برایت بکنم؟
 A: Ich mache gerade einen Kuchen nach einem Rezept von meiner Oma. | دارم یک کیک با دستور پخت مادربزرگم درست می‌کنم.
 B: Lecker! Und was brauchst du? | به‌به! خب، چه لازم داری؟
-A: Ich habe nicht genug Mehl. Hast du vielleicht 200 Gramm für mich? | آرد کافی ندارم. شاید ۲۰۰ گرم برایم داشته باشی؟ | tts: Ich habe nicht genug Mehl. Hast du vielleicht zweihundert Gramm für mich?
+A: Ich habe nicht genug Mehl. Hast du vielleicht 200 Gramm für mich? | آرد کافی ندارم. می‌شود ۲۰۰ گرم به من بدهی؟ | tts: Ich habe nicht genug Mehl. Hast du vielleicht zweihundert Gramm für mich?
 B: Klar! Brauchst du noch etwas? | حتماً! چیز دیگری هم لازم داری؟
 A: Ja, ein bisschen Öl, bitte. Morgen kaufe ich Lebensmittel und gebe dir alles zurück. | آره، کمی روغن، لطفاً. فردا مواد غذایی می‌خرم و همه را پس می‌دهم.
 B: Das musst du nicht. Komm einfach vorbei! | لازم نیست. فقط یک سر بیا اینجا!
-A: Danke! Und was ist das für ein Lärm bei dir? | ممنون! راستی این سروصدای خانه‌تان چیست؟
+A: Danke! Und woher kommt der Lärm bei dir? | ممنون! راستی، این سروصدای خانه‌ات از چیست؟
 B: Zwei Männer bringen gerade unser neues Sofa. Es ist modern und sehr bequem! | دو نفر دارند کاناپهٔ تازه‌مان را می‌آورند. مدرن است و خیلی راحت!
-A: Super, dann sehe ich es gleich! | عالی است، پس الان می‌بینمش!
+A: Super, dann sehe ich es gleich! | عالی است، پس الان می‌آیم و می‌بینمش!
 reading A:
-{"type":"mcq","prompt":"سارا چرا زنگ می‌زند؟","options":["می‌خواهد آنا را برای کیک دعوت کند","آرد و روغن لازم دارد","از سروصدای خانهٔ آنا ناراحت است","دستور پخت یک کیک را می‌خواهد"],"correct":1,"explanation_fa":"سارا می‌گوید: «Ich habe nicht genug Mehl» و «ein bisschen Öl, bitte»."}
-{"type":"tf","prompt":"دستور پخت کیک از مادربزرگ ساراست.","correct":true,"explanation_fa":"سارا می‌گوید: «nach einem Rezept von meiner Oma»."}
-{"type":"tf","prompt":"سارا به اندازهٔ کافی آرد دارد.","correct":false,"explanation_fa":"سارا می‌گوید: «Ich habe nicht genug Mehl.»"}
+{"type":"mcq","prompt":"پاول چرا زنگ می‌زند؟","options":["می‌خواهد آنا را برای کیک دعوت کند","آرد و روغن لازم دارد","از سروصدای خانهٔ آنا ناراحت است","دستور پخت یک کیک را می‌خواهد"],"correct":1,"explanation_fa":"پاول می‌گوید: «Ich habe nicht genug Mehl» و «ein bisschen Öl, bitte»."}
+{"type":"tf","prompt":"دستور پخت کیک از مادربزرگ پاول است.","correct":true,"explanation_fa":"پاول می‌گوید: «nach einem Rezept von meiner Oma»."}
+{"type":"tf","prompt":"پاول به اندازهٔ کافی آرد دارد.","correct":false,"explanation_fa":"پاول می‌گوید: «Ich habe nicht genug Mehl.»"}
 reading B:
 {"type":"find","prompt":"کدام جمله می‌گوید سروصدای خانهٔ آنا از چیست؟","correct_sentence":9,"explanation_fa":"آنا می‌گوید: «Zwei Männer bringen gerade unser neues Sofa.»"}
-{"type":"match","prompt":"هر چیز را به مقداری که سارا می‌خواهد وصل کن.","left":["آرد","روغن"],"right":["۲۰۰ گرم","کمی","یک لیتر"],"pairs":[[0,0],[1,1]],"explanation_fa":"سارا می‌گوید: «Hast du vielleicht 200 Gramm für mich?» و «ein bisschen Öl»."}
+{"type":"match","prompt":"هر چیز را به مقداری که پاول می‌خواهد وصل کن.","left":["آرد","روغن"],"right":["۲۰۰ گرم","کمی","یک لیتر"],"pairs":[[0,0],[1,1]],"explanation_fa":"پاول می‌گوید: «Hast du vielleicht 200 Gramm für mich?» و «ein bisschen Öl»."}
 {"type":"cloze","prompt":"جای خالی را با کلمه درست پر کن.","text_with_gaps":"Zwei Männer bringen gerade unser neues {{1}}. Es ist {{2}} und sehr bequem!","bank":["Sofa","modern","Küche","Lärm","Lebensmittel"],"answers":["Sofa","modern"],"explanation_fa":"آنا می‌گوید: «Zwei Männer bringen gerade unser neues Sofa. Es ist modern und sehr bequem!»"}
 listening A:
-{"type":"num","prompt":"سارا چند گرم آرد می‌خواهد؟","answer":"200","accepted":["200","200 Gramm","zweihundert"],"explanation_fa":"سارا می‌گوید: «Hast du vielleicht 200 Gramm für mich?»"}
-{"type":"tf","prompt":"آنا می‌گوید سارا مزاحمش نیست.","correct":true,"explanation_fa":"سارا می‌پرسد «Störe ich?» و آنا می‌گوید: «Nein, gar nicht!»"}
-{"type":"tf","prompt":"سارا امروز مواد غذایی می‌خرد.","correct":false,"explanation_fa":"سارا می‌گوید: «Morgen kaufe ich Lebensmittel»، یعنی فردا."}
+{"type":"num","prompt":"پاول چند گرم آرد می‌خواهد؟","answer":"200","accepted":["200","200 Gramm","zweihundert"],"explanation_fa":"پاول می‌گوید: «Hast du vielleicht 200 Gramm für mich?»"}
+{"type":"tf","prompt":"آنا می‌گوید پاول مزاحمش نیست.","correct":true,"explanation_fa":"پاول می‌پرسد «Störe ich?» و آنا می‌گوید: «Nein, gar nicht!»"}
+{"type":"tf","prompt":"پاول امروز مواد غذایی می‌خرد.","correct":false,"explanation_fa":"پاول می‌گوید: «Morgen kaufe ich Lebensmittel»، یعنی فردا."}
 listening B:
 {"type":"mcq","prompt":"سروصدای خانهٔ آنا از چیست؟","options":["شوهر آنا آشپزی می‌کند","بچه‌ها بازی می‌کنند","دو مرد کاناپهٔ تازه را می‌آورند","تلویزیون روشن است"],"correct":2,"explanation_fa":"آنا می‌گوید: «Zwei Männer bringen gerade unser neues Sofa.»"}
 {"type":"mcq","prompt":"آنا دربارهٔ کاناپه چه می‌گوید؟","options":["قدیمی است ولی راحت است","گران است و بزرگ است","کوچک است و ارزان است","مدرن است و خیلی راحت است"],"correct":3,"explanation_fa":"آنا می‌گوید: «Es ist modern und sehr bequem!»"}
-{"type":"tf","prompt":"آنا می‌خواهد سارا فردا آرد را پس بدهد.","correct":false,"explanation_fa":"آنا می‌گوید: «Das musst du nicht»، یعنی لازم نیست پس بدهد."}
-{"type":"tf","prompt":"آنا از سارا می‌خواهد به خانه‌اش بیاید.","correct":true,"explanation_fa":"آنا می‌گوید: «Komm einfach vorbei!»"}
+{"type":"tf","prompt":"آنا می‌خواهد پاول فردا آرد را پس بدهد.","correct":false,"explanation_fa":"آنا می‌گوید: «Das musst du nicht»، یعنی لازم نیست پس بدهد."}
+{"type":"tf","prompt":"آنا از پاول می‌خواهد به خانه‌اش بیاید.","correct":true,"explanation_fa":"آنا می‌گوید: «Komm einfach vorbei!»"}

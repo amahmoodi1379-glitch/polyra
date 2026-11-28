@@ -18,18 +18,18 @@ sentences:
 reading A:
 {"type":"mcq","prompt":"چرا بسته برگشت؟","options":["چون کد پستی غلط بود","چون تمبر نداشت","چون لاورا خانه نبود","چون فرم را امضا نکرده بود"],"correct":0,"explanation_fa":"ماکس می‌نویسد: «gestern kam das Paket zurück, denn die Postleitzahl war falsch!»"}
 {"type":"tf","prompt":"ماکس امروز بسته را دوباره فرستاد.","correct":true,"explanation_fa":"ماکس می‌نویسد: «Heute habe ich es noch einmal geschickt.»"}
-{"type":"tf","prompt":"لاورا می‌تواند بسته را همین امروز باز کند.","correct":false,"explanation_fa":"ماکس می‌نویسد: «Bitte mach es erst am Sonntag auf!»، یعنی تا یکشنبه بازش نکند."}
+{"type":"tf","prompt":"لاورا می‌تواند بسته را هر وقت رسید باز کند.","correct":false,"explanation_fa":"ماکس می‌نویسد: «Bitte mach es erst am Sonntag auf!»، یعنی تا یکشنبه بازش نکند."}
 {"type":"mcq","prompt":"ماکس پشت باجه چه کار کرد؟","options":["پول برداشت","یک فرم پر کرد و امضا کرد","یک بسته خرید","نامه‌ای خواند"],"correct":1,"explanation_fa":"ماکس می‌نویسد: «Am Schalter musste ich ein Formular ausfüllen und unterschreiben.»"}
 reading B:
 {"type":"order","prompt":"این‌ها را به ترتیبی که اتفاق افتاده بچین.","items":["بسته برگشت.","ماکس بسته را به پست برد.","ماکس بسته را دوباره فرستاد.","ماکس فرم را پر کرد."],"correct_order":[1,3,0,2],"explanation_fa":"اول «letzte Woche zur Post gebracht»، بعد «ein Formular ausfüllen»، بعد «gestern kam das Paket zurück» و آخر «Heute habe ich es noch einmal geschickt»."}
 {"type":"find","prompt":"کدام جمله می‌گوید کارت کجاست؟","correct_sentence":9,"explanation_fa":"ماکس می‌نویسد: «die Karte ist schon im Briefkasten»."}
-{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Die {{1}} habe ich am Schalter gekauft, und die Karte ist schon im {{2}}.","bank":["Briefmarke","Briefkasten","Postleitzahl","Paket","Formular"],"answers":["Briefmarke","Briefkasten"],"explanation_fa":"ماکس می‌نویسد: «Die Briefmarke habe ich am Schalter gekauft, und die Karte ist schon im Briefkasten.»"}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Die {{1}} habe ich am Schalter gekauft, und die Karte ist schon im {{2}}.","bank":["Briefmarke","Briefkasten","Postleitzahl","Schalter","Formular"],"answers":["Briefmarke","Briefkasten"],"explanation_fa":"ماکس می‌نویسد: «Die Briefmarke habe ich am Schalter gekauft, und die Karte ist schon im Briefkasten.»"}
 listening A:
 {"type":"mcq","prompt":"بسته برای چه مناسبتی است؟","options":["عید پاک","کریسمس","تولد لاورا","عروسی لاورا"],"correct":2,"explanation_fa":"ماکس می‌گوید: «Das Paket ist ein Geschenk für deinen Geburtstag.»"}
 {"type":"tf","prompt":"ماکس یک عدد از کد پستی را اشتباه نوشته بود.","correct":true,"explanation_fa":"ماکس می‌گوید: «Ich habe eine Zahl falsch geschrieben.»"}
 {"type":"tf","prompt":"ماکس بسته را دیروز به پست برد.","correct":false,"explanation_fa":"ماکس می‌گوید: «Ich habe es letzte Woche zur Post gebracht.»؛ دیروز بسته برگشت."}
 listening B:
-{"type":"mcq","prompt":"لاورا کی می‌تواند بسته را باز کند؟","options":["امروز","شنبه","یکشنبه","فردا"],"correct":2,"explanation_fa":"ماکس می‌گوید: «Bitte mach es erst am Sonntag auf!»"}
+{"type":"mcq","prompt":"لاورا کی می‌تواند بسته را باز کند؟","options":["جمعه","شنبه","یکشنبه","دوشنبه"],"correct":2,"explanation_fa":"ماکس می‌گوید: «Bitte mach es erst am Sonntag auf!»"}
 {"type":"mcq","prompt":"ماکس به جز بسته چه چیزی برای لاورا فرستاده است؟","options":["یک کارت","یک عکس","یک کتاب","یک نامه بلند"],"correct":0,"explanation_fa":"ماکس می‌گوید: «Ich habe dir auch eine Karte geschrieben.»"}
 {"type":"tf","prompt":"ماکس تمبر را از سوپرمارکت خرید.","correct":false,"explanation_fa":"ماکس می‌گوید: «Die Briefmarke habe ich am Schalter gekauft.»"}
 {"type":"tf","prompt":"ماکس برادر لاورا است.","correct":true,"explanation_fa":"ماکس می‌گوید: «dein Bruder Max»."}

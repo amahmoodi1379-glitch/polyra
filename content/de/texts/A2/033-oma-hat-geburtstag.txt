@@ -2,26 +2,26 @@ code: de-a2-t033
 title: Oma hat Geburtstag
 band: 1
 kind: voice_message
-key_words: Cousine, Verwandte, Enkel, Kindheit
+key_words: Cousin, Verwandte, Enkel, Kindheit
 sentences:
-- Hallo Ben, hier ist Julia, deine Cousine. | سلام بن، جولیا هستم، دخترخاله‌ات.
+- Hallo Ben, hier ist Tom, dein Cousin. | سلام بن، تام هستم، پسرخاله‌ات.
 - Am Sonntag feiert Oma Geburtstag. | یکشنبه مادربزرگ تولدش را جشن می‌گیرد.
 - Alle Verwandten kommen, sogar Onkel Peter aus Wien. | همه فامیل می‌آیند، حتی دایی پیتر از وین.
 - Oma möchte alle Enkel sehen, also komm bitte auch! | مادربزرگ می‌خواهد همه نوه‌هایش را ببیند، پس تو هم لطفاً بیا!
 - Wir feiern in Dresden, im Haus aus unserer Kindheit. | در درسدن جشن می‌گیریم، در خانهٔ دوران کودکی‌مان.
 - Bring bitte deine alten Fotos mit! | لطفاً عکس‌های قدیمی‌ات را با خودت بیاور!
-- Ruf mich an, wenn du Zeit hast. | هر وقت وقت داشتی به من زنگ بزن.
+- Ruf mich an, wenn du Zeit hast. | هر وقت فرصت داشتی به من زنگ بزن.
 reading A:
-{"type":"mcq","prompt":"یکشنبه چه خبر است؟","options":["عروسی جولیا است","تولد دایی پیتر است","جشن تولد مادربزرگ است","جشن کریسمس است"],"correct":2,"explanation_fa":"جولیا می‌گوید: «Am Sonntag feiert Oma Geburtstag.»"}
-{"type":"tf","prompt":"دایی پیتر هم به جشن می‌آید.","correct":true,"explanation_fa":"جولیا می‌گوید: «sogar Onkel Peter aus Wien»."}
-{"type":"tf","prompt":"جشن در وین است.","correct":false,"explanation_fa":"جولیا می‌گوید: «Wir feiern in Dresden»؛ دایی پیتر از وین می‌آید."}
+{"type":"mcq","prompt":"یکشنبه چه خبر است؟","options":["عروسی تام است","تولد دایی پیتر است","جشن تولد مادربزرگ است","جشن کریسمس است"],"correct":2,"explanation_fa":"تام می‌گوید: «Am Sonntag feiert Oma Geburtstag.»"}
+{"type":"tf","prompt":"دایی پیتر هم به جشن می‌آید.","correct":true,"explanation_fa":"تام می‌گوید: «sogar Onkel Peter aus Wien»."}
+{"type":"tf","prompt":"جشن در وین است.","correct":false,"explanation_fa":"تام می‌گوید: «Wir feiern in Dresden»؛ دایی پیتر از وین می‌آید."}
 reading B:
-{"type":"find","prompt":"کدام جمله می‌گوید بن چه چیزی با خودش بیاورد؟","correct_sentence":5,"explanation_fa":"جولیا می‌گوید: «Bring bitte deine alten Fotos mit!»"}
-{"type":"order","prompt":"این‌ها را به ترتیب پیام مرتب کن.","items":["جولیا از عکس‌ها حرف می‌زند.","جولیا خودش را معرفی می‌کند.","جولیا می‌گوید جشن کجاست.","جولیا می‌گوید همه فامیل می‌آیند."],"correct_order":[1,3,2,0],"explanation_fa":"اول «hier ist Julia»، بعد «Alle Verwandten kommen»، بعد «Wir feiern in Dresden» و آخر «Bring bitte deine alten Fotos mit!»"}
+{"type":"find","prompt":"کدام جمله می‌گوید بن چه چیزی با خودش بیاورد؟","correct_sentence":5,"explanation_fa":"تام می‌گوید: «Bring bitte deine alten Fotos mit!»"}
+{"type":"order","prompt":"این‌ها را به ترتیب پیام مرتب کن.","items":["تام از عکس‌ها حرف می‌زند.","تام خودش را معرفی می‌کند.","تام می‌گوید جشن کجاست.","تام می‌گوید همه فامیل می‌آیند."],"correct_order":[1,3,2,0],"explanation_fa":"اول «hier ist Tom»، بعد «Alle Verwandten kommen»، بعد «Wir feiern in Dresden» و آخر «Bring bitte deine alten Fotos mit!»"}
 listening A:
-{"type":"mcq","prompt":"جشن کجاست؟","options":["در یک رستوران در وین","در خانهٔ دوران کودکی‌شان","در خانهٔ بن","در یک رستوران در درسدن"],"correct":1,"explanation_fa":"جولیا می‌گوید: «Wir feiern in Dresden, im Haus aus unserer Kindheit.»"}
-{"type":"tf","prompt":"جولیا و بن با هم فامیل‌اند.","correct":true,"explanation_fa":"جولیا می‌گوید: «hier ist Julia, deine Cousine»."}
-{"type":"tf","prompt":"فقط چند نفر از فامیل به جشن می‌آیند.","correct":false,"explanation_fa":"جولیا می‌گوید: «Alle Verwandten kommen»، یعنی همه فامیل می‌آیند."}
+{"type":"mcq","prompt":"جشن کجاست؟","options":["در یک رستوران در وین","در خانهٔ دوران کودکی‌شان","در خانهٔ بن","در یک رستوران در درسدن"],"correct":1,"explanation_fa":"تام می‌گوید: «Wir feiern in Dresden, im Haus aus unserer Kindheit.»"}
+{"type":"tf","prompt":"تام و بن با هم فامیل‌اند.","correct":true,"explanation_fa":"تام می‌گوید: «hier ist Tom, dein Cousin»."}
+{"type":"tf","prompt":"فقط چند نفر از فامیل به جشن می‌آیند.","correct":false,"explanation_fa":"تام می‌گوید: «Alle Verwandten kommen»، یعنی همه فامیل می‌آیند."}
 listening B:
 {"type":"dict","sentence":1}
-{"type":"mcq","prompt":"جولیا آخر پیام از بن چه می‌خواهد؟","options":["هر وقت وقت داشت زنگ بزند","برای مادربزرگ نامه بنویسد","زودتر به درسدن بیاید","برای دایی پیتر ایمیل بفرستد"],"correct":0,"explanation_fa":"جولیا می‌گوید: «Ruf mich an, wenn du Zeit hast.»"}
+{"type":"mcq","prompt":"تام آخر پیام از بن چه می‌خواهد؟","options":["هر وقت فرصت داشت زنگ بزند","برای مادربزرگ نامه بنویسد","زودتر به درسدن بیاید","برای دایی پیتر ایمیل بفرستد"],"correct":0,"explanation_fa":"تام می‌گوید: «Ruf mich an, wenn du Zeit hast.»"}

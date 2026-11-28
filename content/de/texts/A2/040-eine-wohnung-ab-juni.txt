@@ -1,18 +1,19 @@
 code: de-a2-t040
-title: Die Wohnung ist frei
+title: Eine Wohnung ab Juni
 band: 2
 kind: email
 key_words: Quadratmeter, Nebenkosten, Mieter, ausziehen, einziehen
 sentences:
 - Guten Tag, Herr Ahmadi, vielen Dank für Ihre E-Mail. | روز بخیر آقای احمدی، خیلی ممنون از ایمیلتان.
 - Sie{Sie-3} möchten eine Wohnung mieten, und unsere Wohnung im 1. Stock ist noch frei. | شما می‌خواهید آپارتمانی اجاره کنید و آپارتمان ما در طبقهٔ اول هنوز خالی است. | tts: Sie möchten eine Wohnung mieten, und unsere Wohnung im ersten Stock ist noch frei.
-- Die Wohnung hat 65 Quadratmeter, zwei Zimmer, eine Küche und ein Bad. | آپارتمان ۶۵ متر مربع است و دو اتاق، یک آشپزخانه و یک حمام دارد. | tts: Die Wohnung hat fünfundsechzig Quadratmeter, zwei Zimmer, eine Küche und ein Bad.
+- Die Wohnung hat 65 Quadratmeter, drei Zimmer, eine Küche und ein Bad. | آپارتمان ۶۵ متر مربع است و سه اتاق، یک آشپزخانه و یک حمام دارد. | tts: Die Wohnung hat fünfundsechzig Quadratmeter, drei Zimmer, eine Küche und ein Bad.
 - Die Miete ist 690 Euro, und die Nebenkosten sind 150 Euro im Monat. | اجاره ۶۹۰ یورو است و هزینه‌های جانبی ماهی ۱۵۰ یورو. | tts: Die Miete ist sechshundertneunzig Euro, und die Nebenkosten sind hundertfünfzig Euro im Monat.
 - Unser Mieter zieht Ende Mai aus, weil er in München einen neuen Job hat. | مستأجر ما آخر ماه مه از آپارتمان می‌رود، چون در مونیخ کار تازه‌ای دارد.
-- Sie{Sie-3} können also im Juni einziehen. | پس می‌توانید در ماه ژوئن به آپارتمان بیایید.
-- Für den Umzug gibt es einen Aufzug. | برای اسباب‌کشی آسانسور هست.
+- Sie{Sie-3} können also im Juni einziehen. | پس می‌توانید در ماه ژوئن به آپارتمان اسباب‌کشی کنید.
+- Das Haus hat einen Aufzug, das ist gut für den Umzug. | ساختمان آسانسور دارد و این برای اسباب‌کشی خوب است.
 - Möchten Sie die Wohnung vorher sehen? Am Samstag um 11 Uhr bin ich dort. | می‌خواهید آپارتمان را قبلش ببینید؟ شنبه ساعت ۱۱ آنجا هستم. | tts: Möchten Sie die Wohnung vorher sehen? Am Samstag um elf Uhr bin ich dort.
-- Bitte sagen Sie mir Bescheid. Lisa Hoffmann | لطفاً خبرم کنید. لیزا هوفمان
+- Bitte sagen Sie mir Bescheid. | لطفاً خبرم کنید.
+- Freundliche Grüße, Lisa Hoffmann | با احترام، لیزا هوفمان
 reading A:
 {"type":"mcq","prompt":"لیزا هوفمان کیست؟","options":["همکار آقای احمدی","مستأجر فعلی آپارتمان","صاحب آپارتمان","همسایهٔ آقای احمدی"],"correct":2,"explanation_fa":"لیزا هوفمان می‌نویسد: «unsere Wohnung» و «Unser Mieter»، پس آپارتمان مال اوست."}
 {"type":"tf","prompt":"آپارتمان ۶۵ متر مربع است.","correct":true,"explanation_fa":"در ایمیل آمده: «Die Wohnung hat 65 Quadratmeter.»"}
@@ -24,9 +25,9 @@ reading B:
 {"type":"match","prompt":"هر چیز را به عددش وصل کن.","left":["اجاره","هزینه‌های جانبی","اندازهٔ آپارتمان"],"right":["۶۹۰ یورو","۱۵۰ یورو","۶۵ متر مربع","۹۶۰ یورو"],"pairs":[[0,0],[1,1],[2,2]],"explanation_fa":"در ایمیل آمده: «Die Miete ist 690 Euro»، «die Nebenkosten sind 150 Euro» و «65 Quadratmeter»."}
 listening A:
 {"type":"num","prompt":"اجاره چند یورو است؟","answer":"690","accepted":["690","690 Euro","sechshundertneunzig"],"explanation_fa":"در ایمیل آمده: «Die Miete ist 690 Euro.»"}
-{"type":"tf","prompt":"آقای احمدی می‌تواند در ماه ژوئن به آپارتمان بیاید.","correct":true,"explanation_fa":"در ایمیل آمده: «Sie können also im Juni einziehen.»"}
-{"type":"tf","prompt":"ساختمان آسانسور ندارد.","correct":false,"explanation_fa":"در ایمیل آمده: «Für den Umzug gibt es einen Aufzug.»"}
-{"type":"mcq","prompt":"آپارتمان چند اتاق دارد؟","options":["یک اتاق","سه اتاق","چهار اتاق","دو اتاق"],"correct":3,"explanation_fa":"در ایمیل آمده: «zwei Zimmer, eine Küche und ein Bad»."}
+{"type":"tf","prompt":"آقای احمدی می‌تواند در ماه ژوئن به آپارتمان اسباب‌کشی کند.","correct":true,"explanation_fa":"در ایمیل آمده: «Sie können also im Juni einziehen.»"}
+{"type":"tf","prompt":"ساختمان آسانسور ندارد.","correct":false,"explanation_fa":"در ایمیل آمده: «Das Haus hat einen Aufzug.»"}
+{"type":"mcq","prompt":"آپارتمان چند اتاق دارد؟","options":["یک اتاق","سه اتاق","چهار اتاق","دو اتاق"],"correct":1,"explanation_fa":"در ایمیل آمده: «drei Zimmer, eine Küche und ein Bad»."}
 listening B:
 {"type":"num","prompt":"خانم هوفمان شنبه ساعت چند آنجاست؟","answer":"11","accepted":["11","11 Uhr","elf"],"explanation_fa":"در ایمیل آمده: «Am Samstag um 11 Uhr bin ich dort.»"}
 {"type":"mcq","prompt":"مستأجر فعلی کی از آپارتمان می‌رود؟","options":["اول ماه مه","آخر ماه مه","اول ماه ژوئن","آخر ماه ژوئن"],"correct":1,"explanation_fa":"در ایمیل آمده: «Unser Mieter zieht Ende Mai aus.»"}

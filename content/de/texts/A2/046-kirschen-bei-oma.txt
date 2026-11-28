@@ -1,35 +1,35 @@
 code: de-a2-t046
-title: Kirschen bei Oma
+title: Kirschen bei Oma und Opa
 band: 2
 kind: phone_call
 key_words: Kirsche, Zitrone, Knoblauch
 sentences:
-A: Hallo Jonas, hier ist Oma! | سلام یوناس، مامان‌بزرگ هستم!
-B: Hallo Oma! Wie geht es euch? | سلام مامان‌بزرگ! حالتان چطور است؟
+A: Hallo Sophie, hier ist Opa! | سلام سوفی، بابابزرگ هستم!
+B: Hallo Opa! Wie geht es euch? | سلام بابابزرگ! حالتان چطور است؟
 A: Gut, danke. Im Garten gibt es jetzt sehr viele Kirschen. | خوب، ممنون. الان توی باغچه کلی گیلاس هست.
 A: Kommst du am Samstag zu uns? Wir machen zusammen Marmelade. | شنبه پیش ما می‌آیی؟ با هم مربا درست می‌کنیم.
 B: Gern! Aber Mia kann nicht mitkommen, denn sie hat am Montag eine Prüfung. | با کمال میل! ولی میا نمی‌تواند بیاید، چون دوشنبه امتحان دارد.
 B: Ich komme allein. Mein Zug kommt um 10 Uhr in Bremen an. | تنها می‌آیم. قطارم ساعت ۱۰ به برمن می‌رسد. | tts: Ich komme allein. Mein Zug kommt um zehn Uhr in Bremen an.
-A: Super, dann holt dich Opa am Bahnhof ab. | عالی، پس بابابزرگ به ایستگاه دنبالت می‌آید.
+A: Super, dann holt dich Oma am Bahnhof ab. | عالی، پس مامان‌بزرگ به ایستگاه دنبالت می‌آید.
 A: Kannst du bitte zwei Zitronen mitbringen? Für die Marmelade brauchen wir Zitronen und Zucker. | می‌توانی لطفاً دو تا لیمو بیاوری؟ برای مربا لیمو و شکر لازم داریم.
 B: Klar. Brauchst du sonst noch etwas? | حتماً. چیز دیگری هم لازم داری؟
 A: Nein. Aber am Abend nimmst du dann Zwiebeln und Knoblauch aus dem Garten für deine Mutter mit. | نه. ولی عصر برای مادرت از باغچه پیاز و سیر می‌بری.
-B: Danke, Oma! Bis Samstag! | ممنون مامان‌بزرگ! تا شنبه!
+B: Danke, Opa! Bis Samstag! | ممنون بابابزرگ! تا شنبه!
 reading A:
-{"type":"mcq","prompt":"مامان‌بزرگ چرا زنگ می‌زند؟","options":["یوناس را برای شنبه دعوت می‌کند","برای مادر یوناس پیاز می‌خواهد","می‌خواهد به برمن سفر کند","می‌گوید پدربزرگ بیمار است"],"correct":0,"explanation_fa":"مامان‌بزرگ می‌پرسد: «Kommst du am Samstag zu uns?»، یعنی شنبه پیش ما می‌آیی؟"}
-{"type":"tf","prompt":"میا هم شنبه پیش مامان‌بزرگ می‌آید.","correct":false,"explanation_fa":"یوناس می‌گوید: «Mia kann nicht mitkommen»، چون میا امتحان دارد."}
-{"type":"tf","prompt":"یوناس با قطار می‌آید.","correct":true,"explanation_fa":"یوناس می‌گوید: «Mein Zug kommt um 10 Uhr in Bremen an.»"}
-{"type":"mcq","prompt":"یوناس باید چه چیزی با خودش بیاورد؟","options":["شکر","دو تا لیمو","پیاز و سیر","یک شیشه مربا"],"correct":1,"explanation_fa":"مامان‌بزرگ می‌گوید: «Kannst du bitte zwei Zitronen mitbringen?»"}
+{"type":"mcq","prompt":"بابابزرگ چرا زنگ می‌زند؟","options":["سوفی را برای شنبه دعوت می‌کند","برای مادر سوفی پیاز می‌خواهد","می‌خواهد به برمن سفر کند","می‌گوید مامان‌بزرگ بیمار است"],"correct":0,"explanation_fa":"بابابزرگ می‌پرسد: «Kommst du am Samstag zu uns?»، یعنی شنبه پیش ما می‌آیی؟"}
+{"type":"tf","prompt":"میا هم شنبه پیش بابابزرگ و مامان‌بزرگ می‌آید.","correct":false,"explanation_fa":"سوفی می‌گوید: «Mia kann nicht mitkommen»، چون میا امتحان دارد."}
+{"type":"tf","prompt":"سوفی با قطار می‌آید.","correct":true,"explanation_fa":"سوفی می‌گوید: «Mein Zug kommt um 10 Uhr in Bremen an.»"}
+{"type":"mcq","prompt":"سوفی باید چه چیزی با خودش بیاورد؟","options":["شکر","دو تا لیمو","پیاز و سیر","یک شیشه مربا"],"correct":1,"explanation_fa":"بابابزرگ می‌گوید: «Kannst du bitte zwei Zitronen mitbringen?»"}
 reading B:
-{"type":"find","prompt":"کدام جمله می‌گوید چه کسی دنبال یوناس می‌رود؟","correct_sentence":6,"explanation_fa":"مامان‌بزرگ می‌گوید: «dann holt dich Opa am Bahnhof ab»، یعنی بابابزرگ دنبالش می‌رود."}
-{"type":"match","prompt":"هر کس را به کاری که در گفتگو می‌کند یا باید بکند وصل کن.","left":["میا","بابابزرگ","یوناس"],"right":["دوشنبه امتحان دارد","دنبال یوناس به ایستگاه می‌رود","لیمو با خودش می‌آورد","مربا می‌خرد"],"pairs":[[0,0],[1,1],[2,2]],"explanation_fa":"میا «am Montag eine Prüfung» دارد، «dann holt dich Opa am Bahnhof ab» و یوناس باید «zwei Zitronen» بیاورد."}
-{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Für die {{1}} brauchen wir Zitronen und {{2}}.","bank":["Marmelade","Zucker","Knoblauch","Salz","Suppe"],"answers":["Marmelade","Zucker"],"explanation_fa":"مامان‌بزرگ می‌گوید: «Für die Marmelade brauchen wir Zitronen und Zucker.»"}
+{"type":"find","prompt":"کدام جمله می‌گوید چه کسی دنبال سوفی می‌رود؟","correct_sentence":6,"explanation_fa":"بابابزرگ می‌گوید: «dann holt dich Oma am Bahnhof ab»، یعنی مامان‌بزرگ دنبالش می‌رود."}
+{"type":"match","prompt":"هر کس را به کاری که در گفتگو می‌کند یا باید بکند وصل کن.","left":["میا","مامان‌بزرگ","سوفی"],"right":["لیمو با خودش می‌آورد","دوشنبه امتحان دارد","مربا می‌خرد","دنبال سوفی به ایستگاه می‌رود"],"pairs":[[0,1],[1,3],[2,0]],"explanation_fa":"میا «am Montag eine Prüfung» دارد، «dann holt dich Oma am Bahnhof ab» و سوفی باید «zwei Zitronen» بیاورد."}
+{"type":"cloze","prompt":"جاهای خالی را با کلمه‌های متن پر کن.","text_with_gaps":"Für die {{1}} brauchen wir Zitronen und {{2}}.","bank":["Marmelade","Zucker","Knoblauch","Salz","Zwiebeln"],"answers":["Marmelade","Zucker"],"explanation_fa":"بابابزرگ می‌گوید: «Für die Marmelade brauchen wir Zitronen und Zucker.»"}
 listening A:
-{"type":"num","prompt":"قطار یوناس ساعت چند به برمن می‌رسد؟","answer":"10","accepted":["10","10:00","10 Uhr","zehn"],"explanation_fa":"یوناس می‌گوید: «Mein Zug kommt um 10 Uhr in Bremen an.»"}
-{"type":"mcq","prompt":"الان در باغچه مامان‌بزرگ چه چیزی زیاد است؟","options":["توت‌فرنگی","گلابی","گیلاس","انگور"],"correct":2,"explanation_fa":"مامان‌بزرگ می‌گوید: «Im Garten gibt es jetzt sehr viele Kirschen.»"}
-{"type":"tf","prompt":"میا دوشنبه امتحان دارد.","correct":true,"explanation_fa":"یوناس می‌گوید: «sie hat am Montag eine Prüfung»."}
-{"type":"tf","prompt":"مامان‌بزرگ به جز لیمو چیز دیگری هم می‌خواهد.","correct":false,"explanation_fa":"یوناس می‌پرسد «Brauchst du sonst noch etwas?» و مامان‌بزرگ می‌گوید: «Nein.»"}
+{"type":"num","prompt":"قطار سوفی ساعت چند به برمن می‌رسد؟","answer":"10","accepted":["10","10:00","10 Uhr","zehn"],"explanation_fa":"سوفی می‌گوید: «Mein Zug kommt um 10 Uhr in Bremen an.»"}
+{"type":"mcq","prompt":"الان در باغچهٔ بابابزرگ و مامان‌بزرگ چه چیزی زیاد است؟","options":["توت‌فرنگی","گلابی","گیلاس","انگور"],"correct":2,"explanation_fa":"بابابزرگ می‌گوید: «Im Garten gibt es jetzt sehr viele Kirschen.»"}
+{"type":"tf","prompt":"میا دوشنبه امتحان دارد.","correct":true,"explanation_fa":"سوفی می‌گوید: «sie hat am Montag eine Prüfung»."}
+{"type":"tf","prompt":"بابابزرگ می‌خواهد سوفی غیر از لیمو چیز دیگری هم بیاورد.","correct":false,"explanation_fa":"سوفی می‌پرسد «Brauchst du sonst noch etwas?» و بابابزرگ می‌گوید: «Nein.»"}
 listening B:
-{"type":"mcq","prompt":"شنبه با گیلاس‌ها چه می‌کنند؟","options":["کیک می‌پزند","آن‌ها را در بازار می‌فروشند","مربا درست می‌کنند","آن‌ها را برای میا می‌برند"],"correct":2,"explanation_fa":"مامان‌بزرگ می‌گوید: «Wir machen zusammen Marmelade.»"}
-{"type":"mcq","prompt":"یوناس عصر برای مادرش چه می‌برد؟","options":["گیلاس و مربا","پیاز و سیر","لیمو و شکر","گلابی و گردو"],"correct":1,"explanation_fa":"مامان‌بزرگ می‌گوید: «am Abend nimmst du Zwiebeln und Knoblauch aus dem Garten für deine Mutter mit»."}
-{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["یوناس می‌گوید ساعت رسیدن قطارش چند است.","مامان‌بزرگ از گیلاس‌های باغچه می‌گوید.","مامان‌بزرگ می‌گوید پیاز و سیر را برای مادرش ببرد.","مامان‌بزرگ لیمو می‌خواهد."],"correct_order":[1,0,3,2],"explanation_fa":"اول «viele Kirschen»، بعد «um 10 Uhr»، بعد «zwei Zitronen» و آخر «Zwiebeln und Knoblauch»."}
+{"type":"mcq","prompt":"شنبه با گیلاس‌ها چه می‌کنند؟","options":["کیک می‌پزند","آن‌ها را در بازار می‌فروشند","مربا درست می‌کنند","آن‌ها را برای میا می‌برند"],"correct":2,"explanation_fa":"بابابزرگ می‌گوید: «Wir machen zusammen Marmelade.»"}
+{"type":"mcq","prompt":"سوفی عصر برای مادرش چه می‌برد؟","options":["گیلاس و مربا","پیاز و سیر","لیمو و شکر","گلابی و گردو"],"correct":1,"explanation_fa":"بابابزرگ می‌گوید: «am Abend nimmst du dann Zwiebeln und Knoblauch aus dem Garten für deine Mutter mit»."}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["سوفی می‌گوید ساعت رسیدن قطارش چند است.","بابابزرگ از گیلاس‌های باغچه می‌گوید.","بابابزرگ می‌گوید پیاز و سیر را برای مادرش ببرد.","بابابزرگ لیمو می‌خواهد."],"correct_order":[1,0,3,2],"explanation_fa":"اول «viele Kirschen»، بعد «um 10 Uhr»، بعد «zwei Zitronen» و آخر «Zwiebeln und Knoblauch»."}

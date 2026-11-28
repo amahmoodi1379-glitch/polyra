@@ -9,14 +9,14 @@ sentences:
 - 10.00 Uhr: Wir gehen in die Buchhandlung am Markt. Dort bekommen alle Kunden am Samstag einen Kaffee. | ساعت ۱۰: به کتاب‌فروشی کنار بازار می‌رویم. آنجا شنبه همه مشتری‌ها یک قهوه می‌گیرند. | tts: Zehn Uhr: Wir gehen in die Buchhandlung am Markt. Dort bekommen alle Kunden am Samstag einen Kaffee.
 - 11.00 Uhr: das Kaufhaus am Bahnhof. Sie{Sie-3} haben eine Stunde Zeit für Kleidung und Schuhe. | ساعت ۱۱: فروشگاه بزرگ کنار ایستگاه. برای لباس و کفش یک ساعت وقت دارید. | tts: Elf Uhr: das Kaufhaus am Bahnhof. Sie haben eine Stunde Zeit für Kleidung und Schuhe.
 - 12.30 Uhr: Mittagessen. Ich habe im Restaurant am Park einen Tisch für 14 Personen reserviert. | ساعت ۱۲:۳۰: ناهار. در رستوران کنار پارک یک میز برای ۱۴ نفر رزرو کرده‌ام. | tts: Zwölf Uhr dreißig: Mittagessen. Ich habe im Restaurant am Park einen Tisch für vierzehn Personen reserviert.
-- Jeder bezahlt getrennt. | هر کس جدا حساب می‌کند.
+- Wir bezahlen getrennt. | هر کس پول غذای خودش را جدا می‌دهد.
 - 14.00 Uhr: Sie{Sie-3} können in die Drogerie oder in die anderen Läden am Markt gehen. | ساعت ۱۴: می‌توانید به فروشگاه لوازم بهداشتی یا مغازه‌های دیگر کنار بازار بروید. | tts: Vierzehn Uhr: Sie können in die Drogerie oder in die anderen Läden am Markt gehen.
 - 15.30 Uhr: Wir treffen uns wieder am Kiosk und fahren zusammen nach Hause. | ساعت ۱۵:۳۰: دوباره کنار کیوسک همدیگر را می‌بینیم و با هم به خانه برمی‌گردیم. | tts: Fünfzehn Uhr dreißig: Wir treffen uns wieder am Kiosk und fahren zusammen nach Hause.
 - Bitte nehmen Sie Geld und Ihr Handy mit! | لطفاً پول و تلفن همراهتان را با خودتان بیاورید!
 - Ihre{Ihr-det} Lehrerin Lisa Wagner | معلمتان، لیزا واگنر
 reading A:
 {"type":"mcq","prompt":"کلاس اول کجا همدیگر را می‌بیند؟","options":["در کتاب‌فروشی","در رستوران کنار پارک","کنار کیوسک جلوی ایستگاه","جلوی فروشگاه بزرگ"],"correct":2,"explanation_fa":"در برنامه آمده: «Wir treffen uns am Kiosk vor dem Bahnhof.»"}
-{"type":"tf","prompt":"هر کس پول غذای خودش را می‌دهد.","correct":true,"explanation_fa":"در برنامه آمده: «Jeder bezahlt getrennt.»"}
+{"type":"tf","prompt":"هر کس پول غذای خودش را می‌دهد.","correct":true,"explanation_fa":"در برنامه آمده: «Wir bezahlen getrennt.»"}
 {"type":"tf","prompt":"زبان‌آموزها در فروشگاه بزرگ دو ساعت وقت دارند.","correct":false,"explanation_fa":"در برنامه آمده: «Sie haben eine Stunde Zeit»، یعنی یک ساعت."}
 {"type":"mcq","prompt":"این متن را چه کسی نوشته است؟","options":["فروشنده کتاب‌فروشی","معلم کلاس","صاحب رستوران","یک زبان‌آموز"],"correct":1,"explanation_fa":"آخر برنامه آمده: «Ihre Lehrerin Lisa Wagner»، یعنی معلمتان."}
 reading B:
