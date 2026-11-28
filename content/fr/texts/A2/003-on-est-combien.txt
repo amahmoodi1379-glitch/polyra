@@ -2,26 +2,26 @@ code: fr-a2-t003
 title: On est combien ?
 kind: dialogue
 sentences:
-A: Chloé, on est combien samedi soir ? | کلوئه، شنبه شب چند نفریم؟
+A: Hugo, on est combien samedi soir ? | هوگو، شنبه شب چند نفریم؟
 B: Environ quinze. | حدود پانزده نفر.
 A: Quinze ? L'appartement est plutôt petit, et on n'a pas assez de chaises ! | پانزده نفر؟ آپارتمان نسبتاً کوچک است و صندلی هم به اندازه کافی نداریم!
 B: Pas de problème : chacun vient avec sa chaise ! | مشکلی نیست: هر کس صندلی خودش را می‌آورد!
 A: Et pour manger ? | برای خوردن چی؟
 B: Des sandwichs et ton gâteau au chocolat. Tout le monde l'adore ! | ساندویچ و کیک شکلاتی تو. همه عاشقش هستند!
 A: D'accord, je le fais vendredi soir. | باشه، جمعه شب درستش می‌کنم.
-B: Super, merci Hugo ! Et moi, je fais les courses. | عالی است، ممنون هوگو! من هم خرید می‌کنم.
+B: Super, merci Chloé ! Et moi, je fais les courses. | عالی است، ممنون کلوئه! من هم خرید می‌کنم.
 reading A:
-{"type":"mcq","prompt":"شنبه شب حدوداً چند نفرند؟","options":["ده نفر","پانزده نفر","بیست نفر","پنج نفر"],"correct":1,"explanation_fa":"کلوئه می‌گوید: «Environ quinze.»، یعنی حدود پانزده نفر."}
-{"type":"tf","prompt":"آپارتمان برای پانزده نفر بزرگ است.","correct":false,"explanation_fa":"هوگو می‌گوید: «L'appartement est plutôt petit»، یعنی آپارتمان نسبتاً کوچک است."}
-{"type":"tf","prompt":"صندلی به اندازه کافی ندارند.","correct":true,"explanation_fa":"هوگو می‌گوید: «on n'a pas assez de chaises !»"}
+{"type":"mcq","prompt":"شنبه شب حدوداً چند نفرند؟","options":["ده نفر","پانزده نفر","بیست نفر","پنج نفر"],"correct":1,"explanation_fa":"هوگو می‌گوید: «Environ quinze.»، یعنی حدود پانزده نفر."}
+{"type":"tf","prompt":"آپارتمان برای پانزده نفر بزرگ است.","correct":false,"explanation_fa":"کلوئه می‌گوید: «L'appartement est plutôt petit»، یعنی آپارتمان نسبتاً کوچک است."}
+{"type":"tf","prompt":"صندلی به اندازه کافی ندارند.","correct":true,"explanation_fa":"کلوئه می‌گوید: «on n'a pas assez de chaises !»"}
 reading B:
-{"type":"find","prompt":"کدام جمله راه حل کلوئه برای مشکل صندلی را می‌گوید؟","correct_sentence":3,"explanation_fa":"کلوئه می‌گوید: «chacun vient avec sa chaise !»، یعنی هر کس صندلی خودش را می‌آورد."}
-{"type":"match","prompt":"هر کار را به کسی که آن را انجام می‌دهد وصل کن.","left":["درست کردن کیک","خرید کردن"],"right":["هوگو","کلوئه","مهمان‌ها"],"pairs":[[0,0],[1,1]],"explanation_fa":"هوگو می‌گوید «je le fais vendredi soir» و کلوئه می‌گوید «Et moi, je fais les courses.»"}
+{"type":"find","prompt":"کدام جمله راه‌حل هوگو برای مشکل صندلی را می‌گوید؟","correct_sentence":3,"explanation_fa":"هوگو می‌گوید: «chacun vient avec sa chaise !»، یعنی هر کس صندلی خودش را می‌آورد."}
+{"type":"match","prompt":"هر کار را به کسی که آن را انجام می‌دهد وصل کن.","left":["درست کردن کیک","خرید کردن"],"right":["کلوئه","هوگو","مهمان‌ها"],"pairs":[[0,0],[1,1]],"explanation_fa":"کلوئه می‌گوید «je le fais vendredi soir» و هوگو می‌گوید «Et moi, je fais les courses.»"}
 listening A:
-{"type":"mcq","prompt":"هوگو کیک را کی درست می‌کند؟","options":["شنبه صبح","شنبه شب","جمعه شب","یکشنبه"],"correct":2,"explanation_fa":"هوگو می‌گوید: «je le fais vendredi soir»، یعنی جمعه شب."}
-{"type":"num","prompt":"در مهمانی شنبه شب حدوداً چند نفر خواهند بود؟","answer":"15","accepted":["15","quinze"],"explanation_fa":"کلوئه می‌گوید: «Environ quinze.»"}
-{"type":"mcq","prompt":"برای خوردن چه دارند؟","options":["پیتزا و سالاد","سوپ و نان","مرغ و برنج","ساندویچ و کیک"],"correct":3,"explanation_fa":"کلوئه می‌گوید: «Des sandwichs et ton gâteau au chocolat.»"}
+{"type":"mcq","prompt":"کلوئه کیک را کی درست می‌کند؟","options":["شنبه صبح","شنبه شب","جمعه شب","یکشنبه"],"correct":2,"explanation_fa":"کلوئه می‌گوید: «je le fais vendredi soir»، یعنی جمعه شب."}
+{"type":"num","prompt":"در مهمانی شنبه شب حدوداً چند نفر خواهند بود؟","answer":"15","accepted":["15","quinze"],"explanation_fa":"هوگو می‌گوید: «Environ quinze.»"}
+{"type":"mcq","prompt":"برای خوردن چه دارند؟","options":["پیتزا و سالاد","سوپ و نان","مرغ و برنج","ساندویچ و کیک"],"correct":3,"explanation_fa":"هوگو می‌گوید: «Des sandwichs et ton gâteau au chocolat.»"}
 listening B:
 {"type":"dict","sentence":6}
-{"type":"tf","prompt":"همه کیک شکلاتی هوگو را دوست دارند.","correct":true,"explanation_fa":"کلوئه می‌گوید: «Tout le monde l'adore !»، یعنی همه عاشق کیک او هستند."}
-{"type":"tf","prompt":"مهمانی جمعه شب است.","correct":false,"explanation_fa":"هوگو می‌پرسد «on est combien samedi soir ?»، پس مهمانی شنبه شب است؛ جمعه شب فقط کیک را درست می‌کند."}
+{"type":"tf","prompt":"همه کیک شکلاتی کلوئه را دوست دارند.","correct":true,"explanation_fa":"هوگو می‌گوید: «Tout le monde l'adore !»، یعنی همه عاشق کیک او هستند."}
+{"type":"tf","prompt":"مهمانی جمعه شب است.","correct":false,"explanation_fa":"کلوئه می‌پرسد «on est combien samedi soir ?»، پس مهمانی شنبه شب است؛ جمعه شب فقط کیک را درست می‌کند."}

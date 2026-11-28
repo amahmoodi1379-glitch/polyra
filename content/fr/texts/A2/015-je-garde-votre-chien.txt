@@ -7,7 +7,7 @@ sentences:
 - J'ai 20 ans et j'adore les animaux. | بیست سالم است و عاشق حیوان‌ها هستم. | tts: J'ai vingt ans et j'adore les animaux.
 - Je n'ai pas peur des{des-contr} gros chiens. | از سگ‌های بزرگ نمی‌ترسم.
 - Je prépare leur repas et je joue avec eux. | غذایشان را آماده می‌کنم و با آن‌ها بازی می‌کنم.
-- Je propose un petit prix : 10 euros par jour. | قیمت کمی پیشنهاد می‌کنم: روزی ۱۰ یورو. | tts: Je propose un petit prix : dix euros par jour.
+- Je propose un petit prix : 10 euros par jour. | قیمتم ارزان است: روزی ۱۰ یورو. | tts: Je propose un petit prix : dix euros par jour.
 - J'accepte aussi les oiseaux ! | پرنده هم قبول می‌کنم!
 - Julie : 06 12 34 56 78 | ژولی: ۰۶ ۱۲ ۳۴ ۵۶ ۷۸ | tts: Julie : zéro six, douze, trente-quatre, cinquante-six, soixante-dix-huit.
 reading A:

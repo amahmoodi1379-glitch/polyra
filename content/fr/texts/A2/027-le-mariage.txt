@@ -4,7 +4,7 @@ band: 1
 kind: voice_message
 key_words: se marier, mariage, couple
 sentences:
-- Salut Thomas, c'est Anne ! | سلام توما، آن هستم!
+- Salut Thomas, c'est Marie ! | سلام توما، ماری هستم!
 - Écoute ! Ma fille Chloé se marie le 14 juin ! | گوش کن! دخترم کلوئه ۱۴ ژوئن ازدواج می‌کند! | tts: Écoute ! Ma fille Chloé se marie le quatorze juin !
 - Chloé et Louis, c'est un très beau couple. | کلوئه و لویی زوج خیلی قشنگی هستند.
 - Le mariage est à Nice, près de la mer. | عروسی در نیس است، نزدیک دریا.
@@ -13,17 +13,17 @@ sentences:
 - Tu peux m'appeler avant vendredi ? | می‌توانی تا قبل از جمعه به من زنگ بزنی؟
 - À bientôt ! | به امید دیدار!
 reading A:
-{"type":"mcq","prompt":"آن چرا به توما پیام می‌دهد؟","options":["برای دعوت به یک عروسی","برای دعوت به یک تولد","برای خبر یک سفر","برای خبر یک کار تازه"],"correct":0,"explanation_fa":"آن می‌گوید: «Ma fille Chloé se marie» و «Tu es invité»."}
-{"type":"tf","prompt":"عروسی در نیس است.","correct":true,"explanation_fa":"آن می‌گوید: «Le mariage est à Nice, près de la mer.»"}
-{"type":"tf","prompt":"توما باید تنها به عروسی بیاید.","correct":false,"explanation_fa":"آن می‌گوید: «Tu es invité, bien sûr, avec ta femme !»"}
+{"type":"mcq","prompt":"ماری چرا به توما پیام می‌دهد؟","options":["برای دعوت به یک عروسی","برای دعوت به یک تولد","برای خبر یک سفر","برای خبر یک کار تازه"],"correct":0,"explanation_fa":"ماری می‌گوید: «Ma fille Chloé se marie» و «Tu es invité»."}
+{"type":"tf","prompt":"عروسی در نیس است.","correct":true,"explanation_fa":"ماری می‌گوید: «Le mariage est à Nice, près de la mer.»"}
+{"type":"tf","prompt":"توما باید تنها به عروسی بیاید.","correct":false,"explanation_fa":"ماری می‌گوید: «Tu es invité, bien sûr, avec ta femme !»"}
 reading B:
-{"type":"find","prompt":"کدام جمله می‌گوید شب چه برنامه‌ای هست؟","correct_sentence":5,"explanation_fa":"آن می‌گوید: «Le soir, il y a une grande fête avec de la musique.»"}
-{"type":"match","prompt":"هر چیز را به جوابش وصل کن.","left":["تاریخ عروسی","جای عروسی"],"right":["۱۴ ژوئن","نیس، نزدیک دریا","پاریس، نزدیک موزه"],"pairs":[[0,0],[1,1]],"explanation_fa":"آن می‌گوید: «le 14 juin» و «à Nice, près de la mer»."}
+{"type":"find","prompt":"کدام جمله می‌گوید شب چه برنامه‌ای هست؟","correct_sentence":5,"explanation_fa":"ماری می‌گوید: «Le soir, il y a une grande fête avec de la musique.»"}
+{"type":"match","prompt":"هر چیز را به جوابش وصل کن.","left":["تاریخ عروسی","جای عروسی"],"right":["۱۴ ژوئن","نیس، نزدیک دریا","پاریس، نزدیک موزه"],"pairs":[[0,0],[1,1]],"explanation_fa":"ماری می‌گوید: «le 14 juin» و «à Nice, près de la mer»."}
 listening A:
-{"type":"num","prompt":"عروسی چندم ژوئن است؟","answer":"14","accepted":["14","quatorze"],"explanation_fa":"آن می‌گوید: «Ma fille Chloé se marie le 14 juin !»"}
-{"type":"mcq","prompt":"چه کسی ازدواج می‌کند؟","options":["خواهر آن","دختر آن","دوست آن","پسر آن"],"correct":1,"explanation_fa":"آن می‌گوید: «Ma fille Chloé se marie»."}
-{"type":"tf","prompt":"آن می‌خواهد توما قبل از جمعه به او زنگ بزند.","correct":true,"explanation_fa":"آن می‌پرسد: «Tu peux m'appeler avant vendredi ?»"}
-{"type":"tf","prompt":"عروسی در کوه است.","correct":false,"explanation_fa":"آن می‌گوید عروسی «près de la mer» است، یعنی نزدیک دریا."}
+{"type":"num","prompt":"عروسی چندم ژوئن است؟","answer":"14","accepted":["14","quatorze"],"explanation_fa":"ماری می‌گوید: «Ma fille Chloé se marie le 14 juin !»"}
+{"type":"mcq","prompt":"چه کسی ازدواج می‌کند؟","options":["خواهر ماری","دختر ماری","دوست ماری","پسر ماری"],"correct":1,"explanation_fa":"ماری می‌گوید: «Ma fille Chloé se marie»."}
+{"type":"tf","prompt":"ماری می‌خواهد توما قبل از جمعه به او زنگ بزند.","correct":true,"explanation_fa":"ماری می‌پرسد: «Tu peux m'appeler avant vendredi ?»"}
+{"type":"tf","prompt":"عروسی در کوه است.","correct":false,"explanation_fa":"ماری می‌گوید عروسی «près de la mer» است، یعنی نزدیک دریا."}
 listening B:
 {"type":"dict","sentence":5}
-{"type":"mcq","prompt":"آن دربارهٔ کلوئه و لویی چه می‌گوید؟","options":["خیلی جوان‌اند","در پاریس زندگی می‌کنند","زوج خیلی قشنگی‌اند","موسیقی دوست دارند"],"correct":2,"explanation_fa":"آن می‌گوید: «Chloé et Louis, c'est un très beau couple.»"}
+{"type":"mcq","prompt":"ماری دربارهٔ کلوئه و لویی چه می‌گوید؟","options":["خیلی جوان‌اند","در پاریس زندگی می‌کنند","زوج خیلی قشنگی‌اند","موسیقی دوست دارند"],"correct":2,"explanation_fa":"ماری می‌گوید: «Chloé et Louis, c'est un très beau couple.»"}

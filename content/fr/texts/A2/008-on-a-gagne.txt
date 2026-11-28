@@ -2,24 +2,24 @@ code: fr-a2-t008
 title: On a gagné !
 kind: voice_message
 sentences:
-- Salut maman, c'est Hugo ! | سلام مامان، هوگو هستم!
+- Salut maman, c'est Chloé ! | سلام مامان، کلوئه هستم!
 - Aujourd'hui, on a joué deux matchs de football. | امروز دو تا مسابقه فوتبال بازی کردیم.
 - On a perdu le premier, mais on a gagné le deuxième contre Lyon, 3 à 2 ! | اولی را باختیم، ولی دومی را سه بر دو از لیون بردیم! | tts: On a perdu le premier, mais on a gagné le deuxième contre Lyon, trois à deux !
-- Je suis très content ! | خیلی خوشحالم!
+- Je suis très contente ! | خیلی خوشحالم!
 - Maintenant, je suis devant le parc avec Lucas. | الان با لوکا جلوی پارک هستم.
 - Le bus ne s'arrête pas ici le dimanche. | یکشنبه‌ها اتوبوس اینجا نمی‌ایستد.
 - Tu peux venir en voiture ? Je t'attends ! | می‌توانی با ماشین بیایی؟ منتظرت هستم!
 reading A:
-{"type":"mcq","prompt":"تیم هوگو امروز چند مسابقه بازی کرد؟","options":["یک مسابقه","سه مسابقه","چهار مسابقه","دو مسابقه"],"correct":3,"explanation_fa":"هوگو می‌گوید: «on a joué deux matchs de football»."}
-{"type":"tf","prompt":"تیم هوگو هر دو مسابقه را برد.","correct":false,"explanation_fa":"هوگو می‌گوید: «On a perdu le premier, mais on a gagné le deuxième»، یعنی اولی را باختند."}
-{"type":"tf","prompt":"هوگو الان جلوی پارک است.","correct":true,"explanation_fa":"هوگو می‌گوید: «je suis devant le parc avec Lucas»."}
+{"type":"mcq","prompt":"تیم کلوئه امروز چند مسابقه بازی کرد؟","options":["یک مسابقه","سه مسابقه","چهار مسابقه","دو مسابقه"],"correct":3,"explanation_fa":"کلوئه می‌گوید: «on a joué deux matchs de football»."}
+{"type":"tf","prompt":"تیم کلوئه هر دو مسابقه را برد.","correct":false,"explanation_fa":"کلوئه می‌گوید: «On a perdu le premier, mais on a gagné le deuxième»، یعنی اولی را باختند."}
+{"type":"tf","prompt":"کلوئه الان جلوی پارک است.","correct":true,"explanation_fa":"کلوئه می‌گوید: «je suis devant le parc avec Lucas»."}
 reading B:
-{"type":"find","prompt":"کدام جمله می‌گوید چرا هوگو با اتوبوس برنمی‌گردد؟","correct_sentence":5,"explanation_fa":"هوگو می‌گوید: «Le bus ne s'arrête pas ici le dimanche.»"}
-{"type":"match","prompt":"هر مسابقه را به نتیجه‌اش وصل کن.","left":["مسابقه اول","مسابقه دوم"],"right":["باختند","بردند","مساوی شد"],"pairs":[[0,0],[1,1]],"explanation_fa":"هوگو می‌گوید: «On a perdu le premier, mais on a gagné le deuxième»."}
+{"type":"find","prompt":"کدام جمله می‌گوید چرا کلوئه با اتوبوس برنمی‌گردد؟","correct_sentence":5,"explanation_fa":"کلوئه می‌گوید: «Le bus ne s'arrête pas ici le dimanche.»"}
+{"type":"match","prompt":"هر مسابقه را به نتیجه‌اش وصل کن.","left":["مسابقه اول","مسابقه دوم"],"right":["باختند","بردند","مساوی شد"],"pairs":[[0,0],[1,1]],"explanation_fa":"کلوئه می‌گوید: «On a perdu le premier, mais on a gagné le deuxième»."}
 listening A:
-{"type":"mcq","prompt":"هوگو از مادرش چه می‌خواهد؟","options":["برایش غذا درست کند","به لوکا زنگ بزند","با ماشین دنبالش بیاید","با اتوبوس بیاید"],"correct":2,"explanation_fa":"هوگو می‌گوید: «Tu peux venir en voiture ? Je t'attends !»"}
-{"type":"tf","prompt":"هوگو از روزش خوشحال است.","correct":true,"explanation_fa":"هوگو می‌گوید: «Je suis très content !»"}
-{"type":"tf","prompt":"هوگو تنهاست.","correct":false,"explanation_fa":"هوگو می‌گوید: «je suis devant le parc avec Lucas»، یعنی با لوکاست."}
+{"type":"mcq","prompt":"کلوئه از مادرش چه می‌خواهد؟","options":["برایش غذا درست کند","به لوکا زنگ بزند","با ماشین دنبالش بیاید","با اتوبوس بیاید"],"correct":2,"explanation_fa":"کلوئه می‌گوید: «Tu peux venir en voiture ? Je t'attends !»"}
+{"type":"tf","prompt":"کلوئه از روزش خوشحال است.","correct":true,"explanation_fa":"کلوئه می‌گوید: «Je suis très contente !»"}
+{"type":"tf","prompt":"کلوئه تنهاست.","correct":false,"explanation_fa":"کلوئه می‌گوید: «je suis devant le parc avec Lucas»، یعنی با لوکاست."}
 listening B:
 {"type":"dict","sentence":5}
-{"type":"num","prompt":"تیم هوگو در مسابقه دوم چند گل زد؟","answer":"3","accepted":["3","trois"],"explanation_fa":"هوگو می‌گوید: «on a gagné le deuxième contre Lyon, 3 à 2»؛ آن‌ها بردند، پس سه گل زدند."}
+{"type":"num","prompt":"تیم کلوئه در مسابقه دوم چند گل زد؟","answer":"3","accepted":["3","trois"],"explanation_fa":"کلوئه می‌گوید: «on a gagné le deuxième contre Lyon, 3 à 2»؛ آن‌ها بردند، پس سه گل زدند."}

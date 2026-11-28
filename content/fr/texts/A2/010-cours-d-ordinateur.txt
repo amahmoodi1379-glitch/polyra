@@ -5,8 +5,8 @@ sentences:
 - Vous ne savez pas utiliser un ordinateur ? | بلد نیستید با کامپیوتر کار کنید؟
 - Vous voulez écrire un e-mail à votre famille ? | می‌خواهید برای خانواده‌تان ایمیل بنویسید؟
 - Venez à notre cours, à la bibliothèque du{du-contr} quartier ! | به کلاس ما در کتابخانه محله بیایید!
-- Anne, notre professeur, explique bien et répond à vos questions. | آن، معلم ما، خوب توضیح می‌دهد و به سؤال‌هایتان جواب می‌دهد.
-- Avec elle, vous recevez et vous envoyez votre premier e-mail ! | با او اولین ایمیلتان را می‌گیرید و می‌فرستید!
+- Sophie, notre professeur, explique bien et répond à vos questions. | سوفی، معلم ما، خوب توضیح می‌دهد و به سؤال‌هایتان جواب می‌دهد.
+- Avec elle, vous envoyez et vous recevez votre premier e-mail ! | با او اولین ایمیلتان را می‌فرستید و می‌گیرید!
 - On se retrouve chaque mardi, de 10 heures à midi. | هر سه‌شنبه، از ساعت ۱۰ تا ظهر، دور هم جمع می‌شویم. | tts: On se retrouve chaque mardi, de dix heures à midi.
 - Chaque cours coûte 5 euros. | هر جلسه ۵ یورو است. | tts: Chaque cours coûte cinq euros.
 reading A:
@@ -15,12 +15,12 @@ reading A:
 {"type":"tf","prompt":"کلاس هر روز برگزار می‌شود.","correct":false,"explanation_fa":"در آگهی آمده: «chaque mardi»، یعنی فقط سه‌شنبه‌ها."}
 reading B:
 {"type":"find","prompt":"کدام جمله می‌گوید کلاس چه روزی است؟","correct_sentence":5,"explanation_fa":"در آگهی آمده: «On se retrouve chaque mardi, de 10 heures à midi.»"}
-{"type":"match","prompt":"هر مورد را به جوابش در آگهی وصل کن.","left":["معلم","روز کلاس","قیمت هر جلسه"],"right":["آن","سه‌شنبه","۵ یورو","شنبه"],"pairs":[[0,0],[1,1],[2,2]],"explanation_fa":"در آگهی آمده: «Anne, notre professeur»، «chaque mardi» و «Chaque cours coûte 5 euros.»"}
+{"type":"match","prompt":"هر مورد را به جوابش در آگهی وصل کن.","left":["معلم","روز کلاس","قیمت هر جلسه"],"right":["سوفی","سه‌شنبه","۵ یورو","شنبه"],"pairs":[[0,0],[1,1],[2,2]],"explanation_fa":"در آگهی آمده: «Sophie, notre professeur»، «chaque mardi» و «Chaque cours coûte 5 euros.»"}
 listening A:
 {"type":"num","prompt":"هر جلسه کلاس چند یورو است؟","answer":"5","accepted":["5","cinq"],"explanation_fa":"گفته می‌شود: «Chaque cours coûte 5 euros.»"}
 {"type":"mcq","prompt":"کلاس تا ساعت چند است؟","options":["تا ظهر","تا ساعت ده","تا ساعت دو","تا شب"],"correct":0,"explanation_fa":"گفته می‌شود: «de 10 heures à midi»، یعنی از ساعت ده تا ظهر."}
-{"type":"tf","prompt":"معلم کلاس به سؤال‌ها جواب می‌دهد.","correct":true,"explanation_fa":"گفته می‌شود: «Anne… répond à vos questions»."}
+{"type":"tf","prompt":"معلم کلاس به سؤال‌ها جواب می‌دهد.","correct":true,"explanation_fa":"گفته می‌شود: «Sophie… répond à vos questions»."}
 {"type":"tf","prompt":"کلاس در مدرسه محله است.","correct":false,"explanation_fa":"گفته می‌شود «à la bibliothèque du quartier»، یعنی در کتابخانه محله، نه مدرسه."}
 listening B:
 {"type":"dict","sentence":0}
-{"type":"mcq","prompt":"در این کلاس چه کاری یاد می‌گیرید؟","options":["نوشتن نامه با دست","خواندن روزنامه","عکس گرفتن با تلفن","گرفتن و فرستادن ایمیل"],"correct":3,"explanation_fa":"گفته می‌شود: «vous recevez et vous envoyez votre premier e-mail»."}
+{"type":"mcq","prompt":"در این کلاس چه کاری یاد می‌گیرید؟","options":["نوشتن نامه با دست","خواندن روزنامه","عکس گرفتن با تلفن","فرستادن و گرفتن ایمیل"],"correct":3,"explanation_fa":"گفته می‌شود: «vous envoyez et vous recevez votre premier e-mail»."}

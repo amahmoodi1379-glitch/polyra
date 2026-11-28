@@ -15,7 +15,7 @@ reading A:
 {"type":"tf","prompt":"برادر سوفی برای او خرید می‌کند.","correct":true,"explanation_fa":"سوفی می‌گوید: «mon frère fait les courses pour moi»."}
 {"type":"tf","prompt":"سوفی خیلی ناراحت است.","correct":false,"explanation_fa":"سوفی می‌گوید: «je ne suis pas du tout triste»، یعنی اصلاً ناراحت نیست."}
 reading B:
-{"type":"find","prompt":"کدام جمله می‌گوید سوفی چند روز در خانه می‌ماند؟","correct_sentence":4,"explanation_fa":"سوفی می‌گوید: «Je reste au lit deux jours, au moins.»"}
+{"type":"find","prompt":"کدام جمله می‌گوید سوفی چند روز در رختخواب می‌ماند؟","correct_sentence":4,"explanation_fa":"سوفی می‌گوید: «Je reste au lit deux jours, au moins.»"}
 {"type":"order","prompt":"این‌ها را به ترتیب پیام بچین.","items":["سوفی از کتاب خوبش می‌گوید.","سوفی می‌گوید امشب به سینما نمی‌آید.","سوفی می‌گوید ژولی با توما به سینما برود.","سوفی می‌گوید سرش درد می‌کند."],"correct_order":[1,3,2,0],"explanation_fa":"اول «je ne viens pas au cinéma»، بعد «J'ai mal à la tête»، بعد «Va au cinéma quand même» و آخر «j'ai un bon livre»."}
 listening A:
 {"type":"num","prompt":"سوفی دست‌کم چند روز در رختخواب می‌ماند؟","answer":"2","accepted":["2","deux"],"explanation_fa":"سوفی می‌گوید: «Je reste au lit deux jours, au moins.»"}

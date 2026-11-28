@@ -1,11 +1,11 @@
 code: fr-a2-t029
-title: Je garde votre chien
+title: Votre chien reste seul ?
 band: 1
 kind: ad
 key_words: garder, sportif, patient
 sentences:
 - Vous partez en vacances ? Votre chien reste seul ? | به تعطیلات می‌روید؟ سگتان تنها می‌ماند؟
-- Moi, je peux le garder ! | من می‌توانم از او نگه‌داری کنم!
+- Moi, je peux le garder ! | من می‌توانم نگهش دارم!
 - Je m'appelle Emma, j'ai 25 ans et j'adore les animaux. | اسمم اِما است، ۲۵ سال دارم و عاشق حیوان‌ها هستم. | tts: Je m'appelle Emma, j'ai vingt-cinq ans et j'adore les animaux.
 - Je suis sportive et très patiente. | اهل ورزشم و خیلی صبورم.
 - Les gros chiens ne me font pas peur ! | سگ‌های درشت مرا نمی‌ترسانند!

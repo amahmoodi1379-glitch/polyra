@@ -4,7 +4,7 @@ band: 1
 kind: dialogue
 key_words: amour, avoir raison, faire peur
 sentences:
-A: Tu as envie d'aller au cinéma ce soir, Léa ? | لئا، امشب دلت می‌خواهد به سینما بروی؟
+A: Tu as envie d'aller au cinéma ce soir, Lucas ? | لوکا، امشب دلت می‌خواهد به سینما بروی؟
 B: Oui ! Il y a un nouveau film d'amour. | آره! یک فیلم عاشقانهٔ تازه آمده.
 A: Un film d'amour ? Non, moi, j'aime avoir peur au cinéma ! | فیلم عاشقانه؟ نه، من دوست دارم در سینما بترسم!
 B: Ah non, ces films me font peur ! Après, je ne dors pas. | نه، این فیلم‌ها مرا می‌ترسانند! بعدش خوابم نمی‌برد.
@@ -12,18 +12,18 @@ A: Bon, tu as raison. D'accord pour ton film. | خب، حق با توست. قب�
 B: Super ! On y va à 20 heures ? | عالی! ساعت ۲۰ برویم؟ | tts: Super ! On y va à vingt heures ?
 A: Oui, je prends les billets. | باشد، بلیت‌ها را من می‌گیرم.
 reading A:
-{"type":"mcq","prompt":"لئا چه فیلمی را پیشنهاد می‌کند؟","options":["یک فیلم ترسناک","یک فیلم عاشقانه","یک فیلم ورزشی","یک فیلم خانوادگی"],"correct":1,"explanation_fa":"لئا می‌گوید: «Il y a un nouveau film d'amour.»، یعنی یک فیلم عاشقانهٔ تازه."}
-{"type":"tf","prompt":"دوست لئا دوست دارد در سینما بترسد.","correct":true,"explanation_fa":"دوست لئا می‌گوید: «j'aime avoir peur au cinéma»."}
-{"type":"tf","prompt":"لئا از فیلم‌های ترسناک خوشش می‌آید.","correct":false,"explanation_fa":"لئا می‌گوید: «ces films me font peur»، یعنی این فیلم‌ها او را می‌ترسانند."}
+{"type":"mcq","prompt":"لوکا چه فیلمی را پیشنهاد می‌کند؟","options":["یک فیلم ترسناک","یک فیلم عاشقانه","یک فیلم ورزشی","یک فیلم خانوادگی"],"correct":1,"explanation_fa":"لوکا می‌گوید: «Il y a un nouveau film d'amour.»، یعنی یک فیلم عاشقانهٔ تازه."}
+{"type":"tf","prompt":"دوست لوکا دوست دارد در سینما بترسد.","correct":true,"explanation_fa":"دوست لوکا می‌گوید: «j'aime avoir peur au cinéma»."}
+{"type":"tf","prompt":"لوکا از فیلم‌های ترسناک خوشش می‌آید.","correct":false,"explanation_fa":"لوکا می‌گوید: «ces films me font peur»، یعنی این فیلم‌ها او را می‌ترسانند."}
 reading B:
-{"type":"find","prompt":"کدام جمله می‌گوید لئا بعد از فیلم ترسناک خوابش نمی‌برد؟","correct_sentence":3,"explanation_fa":"لئا می‌گوید: «Après, je ne dors pas.»، یعنی بعدش خوابش نمی‌برد."}
-{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["لئا یک فیلم عاشقانه پیشنهاد می‌کند.","دوستش می‌گوید بلیت‌ها را می‌گیرد.","لئا می‌گوید این فیلم‌ها او را می‌ترسانند.","دوستش می‌پرسد لئا دلش سینما می‌خواهد یا نه."],"correct_order":[3,0,2,1],"explanation_fa":"اول سؤال دربارهٔ سینما، بعد پیشنهاد فیلم عاشقانه، بعد ترس لئا و آخر هم بلیت‌ها."}
-{"type":"mcq","prompt":"آخر گفتگو چه تصمیمی می‌گیرند؟","options":["فیلم ترسناک ببینند","در خانه بمانند","فیلم عاشقانه ببینند","فردا به سینما بروند"],"correct":2,"explanation_fa":"دوست لئا می‌گوید: «D'accord pour ton film.»، و فیلمِ لئا عاشقانه است."}
+{"type":"find","prompt":"کدام جمله می‌گوید لوکا بعد از فیلم ترسناک خوابش نمی‌برد؟","correct_sentence":3,"explanation_fa":"لوکا می‌گوید: «Après, je ne dors pas.»، یعنی بعدش خوابش نمی‌برد."}
+{"type":"order","prompt":"این‌ها را به ترتیب گفتگو بچین.","items":["لوکا یک فیلم عاشقانه پیشنهاد می‌کند.","دوستش می‌گوید بلیت‌ها را می‌گیرد.","لوکا می‌گوید این فیلم‌ها او را می‌ترسانند.","دوستش می‌پرسد لوکا دلش سینما می‌خواهد یا نه."],"correct_order":[3,0,2,1],"explanation_fa":"اول سؤال دربارهٔ سینما، بعد پیشنهاد فیلم عاشقانه، بعد ترس لوکا و آخر هم بلیت‌ها."}
+{"type":"mcq","prompt":"آخر گفتگو چه تصمیمی می‌گیرند؟","options":["فیلم ترسناک ببینند","در خانه بمانند","فیلم عاشقانه ببینند","فردا به سینما بروند"],"correct":2,"explanation_fa":"دوست لوکا می‌گوید: «D'accord pour ton film.»، و فیلمِ لوکا عاشقانه است."}
 listening A:
-{"type":"mcq","prompt":"دوست لئا چه پیشنهادی می‌دهد؟","options":["رفتن به سینما","رفتن به رستوران","دیدن فیلم در خانه","رفتن به پارک"],"correct":0,"explanation_fa":"دوست لئا می‌پرسد: «Tu as envie d'aller au cinéma ce soir ?»"}
-{"type":"num","prompt":"ساعت چند به سینما می‌روند؟","answer":"20","accepted":["20","20h","20:00","vingt","8"],"explanation_fa":"لئا می‌پرسد: «On y va à 20 heures ?» و دوستش می‌گوید بله."}
-{"type":"tf","prompt":"لئا بعد از فیلم‌های ترسناک خوب می‌خوابد.","correct":false,"explanation_fa":"لئا می‌گوید: «Après, je ne dors pas.»"}
-{"type":"tf","prompt":"دوست لئا بلیت‌ها را می‌گیرد.","correct":true,"explanation_fa":"دوست لئا می‌گوید: «je prends les billets»."}
+{"type":"mcq","prompt":"دوست لوکا چه پیشنهادی می‌دهد؟","options":["رفتن به سینما","رفتن به رستوران","دیدن فیلم در خانه","رفتن به پارک"],"correct":0,"explanation_fa":"دوست لوکا می‌پرسد: «Tu as envie d'aller au cinéma ce soir ?»"}
+{"type":"num","prompt":"ساعت چند به سینما می‌روند؟","answer":"20","accepted":["20","20h","20:00","vingt","8"],"explanation_fa":"لوکا می‌پرسد: «On y va à 20 heures ?» و دوستش می‌گوید بله."}
+{"type":"tf","prompt":"لوکا بعد از فیلم‌های ترسناک خوب می‌خوابد.","correct":false,"explanation_fa":"لوکا می‌گوید: «Après, je ne dors pas.»"}
+{"type":"tf","prompt":"دوست لوکا بلیت‌ها را می‌گیرد.","correct":true,"explanation_fa":"دوست لوکا می‌گوید: «je prends les billets»."}
 listening B:
 {"type":"dict","sentence":4}
-{"type":"mcq","prompt":"چرا لئا فیلم ترسناک نمی‌خواهد؟","options":["چون بلیتش گران است","چون بعدش خوابش نمی‌برد","چون فیلم خیلی طولانی است","چون فردا امتحان دارد"],"correct":1,"explanation_fa":"لئا می‌گوید این فیلم‌ها او را می‌ترسانند و «Après, je ne dors pas.»"}
+{"type":"mcq","prompt":"چرا لوکا فیلم ترسناک نمی‌خواهد؟","options":["چون بلیتش گران است","چون بعدش خوابش نمی‌برد","چون فیلم خیلی طولانی است","چون فردا امتحان دارد"],"correct":1,"explanation_fa":"لوکا می‌گوید این فیلم‌ها او را می‌ترسانند و «Après, je ne dors pas.»"}

@@ -4,7 +4,7 @@ band: 1
 kind: voice_message
 key_words: roux, barbe
 sentences:
-- Salut Léa, c'est Pierre. | سلام لئا، پیر هستم.
+- Salut Léa, c'est Sophie. | سلام لئا، سوفی هستم.
 - Hier soir, tu as appelé, mais j'étais sous la douche ! | دیشب زنگ زدی، ولی من زیر دوش بودم!
 - Demain, je travaille, alors mon ami Nicolas vient te chercher à l'aéroport. | فردا کار دارم، برای همین دوستم نیکلا به فرودگاه دنبالت می‌آید.
 - Il est grand et roux, avec une barbe. | او قدبلند و موقرمز است و ریش دارد.
@@ -12,18 +12,18 @@ sentences:
 - Il t'attend devant la porte 3, à 18 heures. | ساعت ۱۸ جلوی در شمارهٔ ۳ منتظرت است. | tts: Il t'attend devant la porte trois, à dix-huit heures.
 - Bon voyage et à demain soir ! | سفر به خیر، تا فردا شب!
 reading A:
-{"type":"mcq","prompt":"چرا پیر فردا به فرودگاه نمی‌رود؟","options":["چون بیمار است","چون کار دارد","چون ماشین ندارد","چون در سفر است"],"correct":1,"explanation_fa":"پیر می‌گوید: «Demain, je travaille»."}
-{"type":"tf","prompt":"نیکلا ریش دارد.","correct":true,"explanation_fa":"پیر می‌گوید: «avec une barbe»."}
-{"type":"tf","prompt":"دیشب پیر به لئا زنگ زد.","correct":false,"explanation_fa":"پیر می‌گوید: «Hier soir, tu as appelé»، یعنی لئا زنگ زد."}
+{"type":"mcq","prompt":"چرا سوفی فردا به فرودگاه نمی‌رود؟","options":["چون بیمار است","چون کار دارد","چون ماشین ندارد","چون در سفر است"],"correct":1,"explanation_fa":"سوفی می‌گوید: «Demain, je travaille»."}
+{"type":"tf","prompt":"نیکلا ریش دارد.","correct":true,"explanation_fa":"سوفی می‌گوید: «avec une barbe»."}
+{"type":"tf","prompt":"دیشب سوفی به لئا زنگ زد.","correct":false,"explanation_fa":"سوفی می‌گوید: «Hier soir, tu as appelé»، یعنی لئا زنگ زد."}
 reading B:
-{"type":"find","prompt":"کدام جمله می‌گوید نیکلا چه می‌پوشد؟","correct_sentence":4,"explanation_fa":"پیر می‌گوید: «Il va porter une veste verte.»"}
-{"type":"match","prompt":"هر چیز را به جوابش وصل کن.","left":["رنگ موی نیکلا","رنگ کت نیکلا","جای قرار"],"right":["قرمز","سبز","جلوی در شمارهٔ ۳","کنار کافه"],"pairs":[[0,0],[1,1],[2,2]],"explanation_fa":"پیر می‌گوید نیکلا «roux» است، «une veste verte» می‌پوشد و «devant la porte 3» منتظر است."}
+{"type":"find","prompt":"کدام جمله می‌گوید نیکلا چه می‌پوشد؟","correct_sentence":4,"explanation_fa":"سوفی می‌گوید: «Il va porter une veste verte.»"}
+{"type":"match","prompt":"هر چیز را به جوابش وصل کن.","left":["رنگ موی نیکلا","رنگ کت نیکلا","جای قرار"],"right":["قرمز","سبز","جلوی در شمارهٔ ۳","کنار کافه"],"pairs":[[0,0],[1,1],[2,2]],"explanation_fa":"سوفی می‌گوید نیکلا «roux» است، «une veste verte» می‌پوشد و «devant la porte 3» منتظر است."}
 listening A:
-{"type":"num","prompt":"نیکلا ساعت چند منتظر لئاست؟","answer":"18","accepted":["18","18h","18:00","dix-huit","6"],"explanation_fa":"پیر می‌گوید: «à 18 heures»."}
-{"type":"mcq","prompt":"دیشب وقتی لئا زنگ زد، پیر کجا بود؟","options":["سر کار","در فرودگاه","در رستوران","زیر دوش"],"correct":3,"explanation_fa":"پیر می‌گوید: «j'étais sous la douche !»"}
-{"type":"tf","prompt":"نیکلا کوتاه‌قد است.","correct":false,"explanation_fa":"پیر می‌گوید: «Il est grand»، یعنی قدبلند است."}
-{"type":"tf","prompt":"نیکلا یک کت سبز می‌پوشد.","correct":true,"explanation_fa":"پیر می‌گوید: «une veste verte»."}
+{"type":"num","prompt":"نیکلا ساعت چند منتظر لئاست؟","answer":"18","accepted":["18","18h","18:00","dix-huit","6"],"explanation_fa":"سوفی می‌گوید: «à 18 heures»."}
+{"type":"mcq","prompt":"دیشب وقتی لئا زنگ زد، سوفی کجا بود؟","options":["سر کار","در فرودگاه","در رستوران","زیر دوش"],"correct":3,"explanation_fa":"سوفی می‌گوید: «j'étais sous la douche !»"}
+{"type":"tf","prompt":"نیکلا کوتاه‌قد است.","correct":false,"explanation_fa":"سوفی می‌گوید: «Il est grand»، یعنی قدبلند است."}
+{"type":"tf","prompt":"نیکلا یک کت سبز می‌پوشد.","correct":true,"explanation_fa":"سوفی می‌گوید: «une veste verte»."}
 listening B:
-{"type":"num","prompt":"نیکلا جلوی در شمارهٔ چند منتظر است؟","answer":"3","accepted":["3","trois"],"explanation_fa":"پیر می‌گوید: «devant la porte 3»."}
+{"type":"num","prompt":"نیکلا جلوی در شمارهٔ چند منتظر است؟","answer":"3","accepted":["3","trois"],"explanation_fa":"سوفی می‌گوید: «devant la porte 3»."}
 {"type":"dict","sentence":3}
-{"type":"mcq","prompt":"چه کسی فردا به فرودگاه دنبال لئا می‌رود؟","options":["پیر","نیکلا","برادر لئا","خواهر پیر"],"correct":1,"explanation_fa":"پیر می‌گوید: «mon ami Nicolas vient te chercher à l'aéroport»."}
+{"type":"mcq","prompt":"چه کسی فردا به فرودگاه دنبال لئا می‌رود؟","options":["سوفی","نیکلا","برادر لئا","خواهر سوفی"],"correct":1,"explanation_fa":"سوفی می‌گوید: «mon ami Nicolas vient te chercher à l'aéroport»."}

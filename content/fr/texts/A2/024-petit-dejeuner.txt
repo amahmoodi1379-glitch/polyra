@@ -8,7 +8,7 @@ sentences:
 - Petit-déjeuner de 7 heures à 11 heures. | صبحانه از ساعت ۷ تا ۱۱. | tts: Petit-déjeuner de sept heures à onze heures.
 - Petit-déjeuner simple, à 4 euros : café ou thé, avec un croissant. | صبحانهٔ ساده، ۴ یورو: قهوه یا چای، با یک کروسان. | tts: Petit-déjeuner simple, à quatre euros : café ou thé, avec un croissant.
 - Grand petit-déjeuner, à 9 euros : jus d'orange, café, pain, beurre et deux œufs. | صبحانهٔ کامل، ۹ یورو: آب پرتقال، قهوه، نان، کره و دو تخم‌مرغ. | tts: Grand petit-déjeuner, à neuf euros : jus d'orange, café, pain, beurre et deux œufs.
-- Pour les enfants, à 5 euros : un chocolat chaud et des petits gâteaux. | برای بچه‌ها، ۵ یورو: یک شکلات داغ و چند کیک کوچک. | tts: Pour les enfants, à cinq euros : un chocolat chaud et des petits gâteaux.
+- Pour les enfants, à 5 euros : un chocolat chaud et des petits gâteaux. | برای بچه‌ها، ۵ یورو: یک شکلات داغ و چند شیرینی کوچک. | tts: Pour les enfants, à cinq euros : un chocolat chaud et des petits gâteaux.
 - Le deuxième café est gratuit ! | قهوهٔ دوم مجانی است!
 reading A:
 {"type":"mcq","prompt":"صبحانهٔ ساده چند یورو است؟","options":["۹ یورو","۵ یورو","۴ یورو","۷ یورو"],"correct":2,"explanation_fa":"در منو آمده: «Petit-déjeuner simple, à 4 euros»."}

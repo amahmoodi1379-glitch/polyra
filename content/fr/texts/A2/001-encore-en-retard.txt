@@ -2,8 +2,8 @@ code: fr-a2-t001
 title: Encore en retard
 kind: dialogue
 sentences:
-A: Allô, Léa ? Tu es où ? Tout le monde est là, même le professeur ! | الو، لئا؟ کجایی؟ همه اینجا هستند، حتی استاد!
-B: Désolée, j'attends le bus. Il est encore{encore-2} en retard ! | ببخشید، منتظر اتوبوسم. باز هم دیر کرده!
+A: Allô, Thomas ? Tu es où ? Tout le monde est là, même le professeur ! | الو، توما؟ کجایی؟ همه اینجا هستند، حتی استاد!
+B: Désolé, j'attends le bus. Il est encore{encore-2} en retard ! | ببخشید، منتظر اتوبوسم. باز هم دیر کرده!
 A: Encore{encore-2} ? C'est toujours le même bus ? | باز هم؟ همیشه همان اتوبوس است؟
 B: Oui, le bus de 8 heures. | آره، اتوبوس ساعت هشت. | tts: Oui, le bus de huit heures.
 A: Tu peux prendre le métro, non ? | می‌توانی با مترو بیایی، نه؟
@@ -11,17 +11,17 @@ B: Le métro est loin de chez moi. | مترو از خانه‌ام دور است
 A: Alors, achète un vélo ! | پس یک دوچرخه بخر!
 B: Un vélo, sous la pluie ? Non, merci ! | دوچرخه، زیر باران؟ نه، ممنون!
 reading A:
-{"type":"mcq","prompt":"چرا لئا هنوز نرسیده است؟","options":["اتوبوس دیر کرده است","مترو بسته است","خواب مانده است","دوچرخه‌اش خراب است"],"correct":0,"explanation_fa":"لئا می‌گوید: «j'attends le bus. Il est encore en retard !»، یعنی منتظر اتوبوس است و اتوبوس دیر کرده."}
-{"type":"tf","prompt":"این اولین بار است که اتوبوس لئا دیر می‌کند.","correct":false,"explanation_fa":"لئا می‌گوید «Il est encore en retard !»؛ encore یعنی «باز هم»، پس قبلاً هم دیر کرده."}
+{"type":"mcq","prompt":"چرا توما هنوز نرسیده است؟","options":["اتوبوس دیر کرده است","مترو بسته است","خواب مانده است","دوچرخه‌اش خراب است"],"correct":0,"explanation_fa":"توما می‌گوید: «j'attends le bus. Il est encore en retard !»، یعنی منتظر اتوبوس است و اتوبوس دیر کرده."}
+{"type":"tf","prompt":"این اولین بار است که اتوبوس توما دیر می‌کند.","correct":false,"explanation_fa":"توما می‌گوید «Il est encore en retard !»؛ encore یعنی «باز هم»، پس قبلاً هم دیر کرده."}
 {"type":"tf","prompt":"استاد هم آمده است.","correct":true,"explanation_fa":"دوستش می‌گوید: «Tout le monde est là, même le professeur !»، یعنی حتی استاد هم آمده."}
 reading B:
-{"type":"find","prompt":"کدام جمله می‌گوید مترو برای لئا راحت نیست؟","correct_sentence":5,"explanation_fa":"لئا می‌گوید: «Le métro est loin de chez moi.»، یعنی مترو از خانه‌اش دور است."}
-{"type":"match","prompt":"هر وسیله را به چیزی که درباره‌اش گفته می‌شود وصل کن.","left":["اتوبوس","مترو"],"right":["ساعت هشت می‌آید","از خانه لئا دور است","همیشه پر است"],"pairs":[[0,0],[1,1]],"explanation_fa":"لئا می‌گوید «le bus de 8 heures» و «Le métro est loin de chez moi.»"}
+{"type":"find","prompt":"کدام جمله می‌گوید مترو برای توما راحت نیست؟","correct_sentence":5,"explanation_fa":"توما می‌گوید: «Le métro est loin de chez moi.»، یعنی مترو از خانه‌اش دور است."}
+{"type":"match","prompt":"هر وسیله را به چیزی که درباره‌اش گفته می‌شود وصل کن.","left":["اتوبوس","مترو"],"right":["مال ساعت هشت است","از خانهٔ توما دور است","همیشه پر است"],"pairs":[[0,0],[1,1]],"explanation_fa":"توما می‌گوید «le bus de 8 heures» و «Le métro est loin de chez moi.»"}
 listening A:
-{"type":"num","prompt":"لئا منتظر اتوبوس ساعت چند است؟","answer":"8","accepted":["8","huit"],"explanation_fa":"لئا می‌گوید: «le bus de 8 heures»، یعنی اتوبوس ساعت هشت."}
-{"type":"mcq","prompt":"لئا درباره دوچرخه چه می‌گوید؟","options":["فردا یکی می‌خرد","زیر باران آن را نمی‌خواهد","یک دوچرخه قدیمی دارد","با آن دیرتر می‌رسد"],"correct":1,"explanation_fa":"لئا می‌گوید: «Un vélo, sous la pluie ? Non, merci !»، یعنی زیر باران دوچرخه نمی‌خواهد."}
-{"type":"tf","prompt":"لئا می‌تواند راحت با مترو بیاید.","correct":false,"explanation_fa":"لئا می‌گوید: «Le métro est loin de chez moi.»، یعنی مترو از خانه‌اش دور است."}
-{"type":"tf","prompt":"لئا الان منتظر اتوبوس است.","correct":true,"explanation_fa":"لئا می‌گوید: «j'attends le bus»، یعنی منتظر اتوبوس است."}
+{"type":"num","prompt":"توما منتظر اتوبوس ساعت چند است؟","answer":"8","accepted":["8","huit"],"explanation_fa":"توما می‌گوید: «le bus de 8 heures»، یعنی اتوبوس ساعت هشت."}
+{"type":"mcq","prompt":"توما درباره دوچرخه چه می‌گوید؟","options":["فردا یکی می‌خرد","زیر باران آن را نمی‌خواهد","یک دوچرخه قدیمی دارد","با آن دیرتر می‌رسد"],"correct":1,"explanation_fa":"توما می‌گوید: «Un vélo, sous la pluie ? Non, merci !»، یعنی زیر باران دوچرخه نمی‌خواهد."}
+{"type":"tf","prompt":"توما می‌تواند راحت با مترو بیاید.","correct":false,"explanation_fa":"توما می‌گوید: «Le métro est loin de chez moi.»، یعنی مترو از خانه‌اش دور است."}
+{"type":"tf","prompt":"توما الان منتظر اتوبوس است.","correct":true,"explanation_fa":"توما می‌گوید: «j'attends le bus»، یعنی منتظر اتوبوس است."}
 listening B:
 {"type":"dict","sentence":2}
-{"type":"mcq","prompt":"حالا هوا چطور است؟","options":["آفتابی است","برفی است","گرم است","بارانی است"],"correct":3,"explanation_fa":"لئا می‌گوید «Un vélo, sous la pluie ?»، یعنی حالا باران می‌آید."}
+{"type":"mcq","prompt":"حالا هوا چطور است؟","options":["آفتابی است","برفی است","گرم است","بارانی است"],"correct":3,"explanation_fa":"توما می‌گوید «Un vélo, sous la pluie ?»، یعنی حالا باران می‌آید."}

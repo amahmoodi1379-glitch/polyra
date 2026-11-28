@@ -15,11 +15,11 @@ reading A:
 {"type":"tf","prompt":"امّا از شهر نیس خوشش می‌آید.","correct":true,"explanation_fa":"امّا می‌گوید: «La ville me plaît beaucoup !»"}
 {"type":"tf","prompt":"شوهر امّا همیشه راه را درست پیدا می‌کند.","correct":false,"explanation_fa":"امّا می‌گوید: «il se trompe souvent de rue»، یعنی اغلب خیابان را اشتباه می‌رود."}
 reading B:
-{"type":"find","prompt":"کدام جمله نشان می‌دهد سوفی آن رستوران را می‌شناسد؟","correct_sentence":5,"explanation_fa":"امّا می‌پرسد: «Tu te souviens du petit restaurant dans la vieille ville ?»، یعنی سوفی آن رستوران را دیده است."}
+{"type":"find","prompt":"کدام جمله نشان می‌دهد سوفی آن رستوران را می‌شناسد؟","correct_sentence":5,"explanation_fa":"امّا می‌پرسد: «Tu te souviens du petit restaurant dans la vieille ville ?»، یعنی سوفی هم آن رستوران را می‌شناسد."}
 {"type":"match","prompt":"هر جا را به چیزی که درباره‌اش گفته می‌شود وصل کن.","left":["هتل","رستوران کوچک"],"right":["کنار ساحل","در شهر قدیمی","نزدیک فرودگاه"],"pairs":[[0,0],[1,1]],"explanation_fa":"امّا می‌گوید «hôtel… à côté de la plage» و «petit restaurant dans la vieille ville»."}
 listening A:
 {"type":"mcq","prompt":"امّا امشب کجا غذا می‌خورد؟","options":["در رستوران هتل","در رستورانی در شهر قدیمی","در کافه‌ای کنار ساحل","در خانه دوستشان"],"correct":1,"explanation_fa":"امّا از «petit restaurant dans la vieille ville» می‌گوید و بعد: «On mange là-bas ce soir !»"}
-{"type":"tf","prompt":"تعطیلات امّا خوب پیش می‌رود.","correct":true,"explanation_fa":"امّا می‌گوید: «Les vacances à Nice se passent très bien.»."}
+{"type":"tf","prompt":"تعطیلات امّا خوب پیش می‌رود.","correct":true,"explanation_fa":"امّا می‌گوید: «Les vacances à Nice se passent très bien.»"}
 {"type":"tf","prompt":"شوهر امّا گوشی همراهش ندارد.","correct":false,"explanation_fa":"امّا می‌گوید: «Mon mari regarde toujours son portable»، یعنی شوهرش گوشی دارد و همیشه به آن نگاه می‌کند."}
 listening B:
 {"type":"dict","sentence":3}
